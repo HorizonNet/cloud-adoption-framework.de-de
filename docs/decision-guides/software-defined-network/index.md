@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ac8d65ab897ddeac94305c9d2c365281808b36c3
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: bbe9815b12226c193073bff3c2298d4124034935
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817960"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023757"
 ---
 # <a name="software-defined-networking-decision-guide"></a>Leitfaden zur Entscheidungsfindung für softwaredefinierte Netzwerke
 
@@ -22,9 +22,9 @@ Software-Defined Networking (SDN) ist eine Netzwerkarchitektur, die entwickelt w
 
 ## <a name="networking-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Netzwerke
 
-![Abbildung der Netzwerkoptionen mit zunehmender Komplexität entsprechend den nachstehenden weiterführenden Links](../../_images/discovery-guides/discovery-guide-sdn.png)
+![Abbildung der Netzwerkoptionen mit zunehmender Komplexität entsprechend den nachstehenden weiterführenden Links](../../_images/decision-guides/decision-guide-software-defined-network.png)
 
-Wechseln Sie zu: [Nur PaaS](paas-only.md) | [Cloudnativ](cloud-native.md) | [Cloud-DMZ](cloud-dmz.md) [Hybrid](hybrid.md) | [Hub-and-Spoke-Modell](hub-spoke.md) | [Weitere Informationen](#learn-more)
+Wechseln Sie zu: [Nur PaaS](./paas-only.md) | [Cloudnativ](./cloud-native.md) | [Cloud-DMZ](./cloud-dmz.md) [Hybrid](./hybrid.md) | [Hub-and-Spoke-Modell](./hub-spoke.md) | [Weitere Informationen](#learn-more)
 
 SDN bietet mehrere Optionen mit unterschiedlicher Preisgestaltung und Komplexität. Dieser Leitfaden zur Entscheidungsfindung bietet eine Referenz, um diese Optionen schnell zu personalisieren und so optimal auf spezifische Geschäfts- und Technologiestrategien abzustimmen.
 
@@ -53,18 +53,18 @@ Bei der Festlegung der virtuellen Netzwerkarchitektur oder einer Kombination von
 
 Erfahren Sie mehr über die wichtigsten Software-Defined Networking-Architekturen:
 
-- **[Reine PaaS-Lösung](paas-only.md):** Die meisten PaaS-Produkte (Platform as a Service) unterstützen eine begrenzte Anzahl integrierter Netzwerkfunktionen und erfordern möglicherweise kein explizit definiertes softwaredefiniertes Netzwerk zur Unterstützung der Anforderungen der Workload.
-- **[Cloudnativ](cloud-native.md):** Eine cloudnative Architektur unterstützt cloudbasierte Workloads über virtuelle Netzwerke, die auf den von der Cloudplattform standardmäßig definierten Netzwerkfunktionen basieren, ohne auf lokale oder andere externe Ressourcen angewiesen zu sein.
-- **[Cloud-DMZ](cloud-dmz.md):** Unterstützt eingeschränkte Konnektivität zwischen Ihrem lokalen und Cloudnetzwerk, die durch die Implementierung einer DMZ geschützt ist, die den Datenverkehr zwischen den beiden Umgebungen sorgfältig kontrolliert.
-- **[Hybrid](hybrid.md):** Die hybride Cloud-Netzwerkarchitektur ermöglicht es virtuellen Netzwerken in vertrauenswürdigen Cloudumgebungen, auf Ihre lokalen Ressourcen zuzugreifen und umgekehrt.
-- **[Hub-and-Spoke-Modell](hub-spoke.md):** Die Hub-and-Spoke-Architektur ermöglicht Ihnen, externe Konnektivität und gemeinsam genutzte Dienste zentral zu verwalten, einzelne Workloads zu isolieren und mögliche Abonnementgrenzen zu umgehen.
+- **[Reine PaaS-Lösung](./paas-only.md):** Die meisten PaaS-Produkte (Platform as a Service) unterstützen eine begrenzte Anzahl integrierter Netzwerkfunktionen und erfordern möglicherweise kein explizit definiertes softwaredefiniertes Netzwerk zur Unterstützung der Anforderungen der Workload.
+- **[Cloudnativ](./cloud-native.md):** Eine cloudnative Architektur unterstützt cloudbasierte Workloads über virtuelle Netzwerke, die auf den von der Cloudplattform standardmäßig definierten Netzwerkfunktionen basieren, ohne auf lokale oder andere externe Ressourcen angewiesen zu sein.
+- **[Cloud-DMZ](./cloud-dmz.md):** Unterstützt eingeschränkte Konnektivität zwischen Ihrem lokalen und Cloudnetzwerk, die durch die Implementierung einer DMZ geschützt ist, die den Datenverkehr zwischen den beiden Umgebungen sorgfältig kontrolliert.
+- **[Hybrid](./hybrid.md):** Die hybride Cloud-Netzwerkarchitektur ermöglicht es virtuellen Netzwerken in vertrauenswürdigen Cloudumgebungen, auf Ihre lokalen Ressourcen zuzugreifen und umgekehrt.
+- **[Hub-and-Spoke-Modell](./hub-spoke.md):** Die Hub-and-Spoke-Architektur ermöglicht Ihnen, externe Konnektivität und gemeinsam genutzte Dienste zentral zu verwalten, einzelne Workloads zu isolieren und mögliche Abonnementgrenzen zu umgehen.
 
 ## <a name="learn-more"></a>Weitere Informationen
 
 Weitere Informationen zu softwaredefinierten Netzwerken (SDN) in Azure finden Sie hier:
 
-- [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview). In Azure wird die zentrale SDN-Funktionalität von Azure Virtual Network bereitgestellt, das als Cloud analog zu physischen lokalen Netzwerken fungiert. Virtuelle Netzwerke fungieren auch als Standardisolationsgrenze zwischen Ressourcen auf der Plattform.
-- [Bewährte Methoden für die Netzwerksicherheit in Azure](/azure/security/azure-security-network-security-best-practices). Empfehlungen des Azure Security-Teams zum Konfigurieren Ihrer virtuellen Netzwerke, um Sicherheitsrisiken zu minimieren.
+- [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview). In Azure wird die zentrale SDN-Funktionalität von Azure Virtual Network bereitgestellt, das als Cloud analog zu physischen lokalen Netzwerken fungiert. Virtuelle Netzwerke fungieren auch als Standardisolationsgrenze zwischen Ressourcen auf der Plattform.
+- [Bewährte Methoden für die Netzwerksicherheit in Azure](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices). Empfehlungen des Azure Security-Teams zum Konfigurieren Ihrer virtuellen Netzwerke, um Sicherheitsrisiken zu minimieren.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

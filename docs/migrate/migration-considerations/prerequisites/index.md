@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 96ab62dc2adf17890989160c0af4fb80636b31b9
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 7ec216152adb4ed55b2a1eab03a8a98cd2ce8332
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818164"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022614"
 ---
 # <a name="prerequisites-for-migration"></a>Voraussetzungen für die Migration
 
@@ -25,10 +25,10 @@ Stellen Sie die geschäftliche, kulturelle und technische Bereitschaft sicher, b
 
 ## <a name="review-business-drivers"></a>Überprüfen der geschäftlichen Faktoren
 
-Bevor Sie mit der Cloudmigration beginnen, lesen Sie die Anleitung [Plan](../../../business-strategy/index.md) (Planen) und [Ready](../../../ready/index.md) (Bereit) im Cloud Adoption Framework, um sicherzustellen, dass Ihr Unternehmen auf Einführungs- und Migrationsprozesse für die Cloud vorbereitet ist. Überprüfen Sie insbesondere die Unternehmensanforderungen und die erwarteten Ergebnisse, die die Migration unterstützen:
+Bevor Sie mit der Cloudmigration beginnen, lesen Sie die Anleitung [Plan](../../../strategy/index.md) (Planen) und [Ready](../../../ready/index.md) (Bereit) im Cloud Adoption Framework, um sicherzustellen, dass Ihr Unternehmen auf Einführungs- und Migrationsprozesse für die Cloud vorbereitet ist. Überprüfen Sie insbesondere die Unternehmensanforderungen und die erwarteten Ergebnisse, die die Migration unterstützen:
 
 - [Erste Schritte: Migrieren](../../../getting-started/migrate.md)
-- [„Warum wechseln wir in die Cloud?“](../../../business-strategy/motivations-why-are-we-moving-to-the-cloud.md)
+- [„Warum wechseln wir in die Cloud?“](../../../strategy/motivations.md)
 
 ## <a name="definition-of-done"></a>Definition von *Fertig*.
 
@@ -56,7 +56,7 @@ Ein einzelnes Mitglied jedes Teams sollte für jede der drei Definitionen von er
 
 Zusätzlich zur Verantwortlichkeit auf hoher Ebene gibt es Maßnahmen, für die eine Person oder Gruppe direkt verantwortlich sein muss. Im Folgenden sind einige dieser Verantwortlichkeiten aufgeführt, die diese Aktivitäten betreffen:
 
-- **Geschäftspriorisierung** Treffen von Geschäftsentscheidungen in Bezug auf die zu migrierenden Workloads und allgemeine Zeitvorgaben. Weitere Informationen finden Sie unter [Geschäftliche Gründe für die Cloudmigration](../../../business-strategy/motivations-why-are-we-moving-to-the-cloud.md).
+- **Geschäftspriorisierung** Treffen von Geschäftsentscheidungen in Bezug auf die zu migrierenden Workloads und allgemeine Zeitvorgaben. Weitere Informationen finden Sie unter [Geschäftliche Gründe für die Cloudmigration](../../../strategy/motivations.md).
 - **Change Management-Bereitschaft** Erstellen und kommunizieren Sie den Plan zur Nachverfolgung technischer Änderungen während der Migration. Weitere Informationen zu diesem Thema werden im dritten Quartal 2019 verfügbar sein.
 - **Ausrichtung der Geschäftskunden** Erstellen Sie einen Plan zur Vorbereitung der Geschäftskundencommunity auf die Durchführung der Migration. Weitere Informationen zu diesem Thema werden im dritten Quartal 2019 verfügbar sein.
 - **Bestandsaufnahme und Analyse des digitalen Bestands** Die Ausführung der zur Bestandsaufnahme und Analyse des digitalen Bestands erforderlichen Tools. Weitere Informationen finden Sie im Framework für die Cloudeinführung in der Diskussion zu [digitalen Ressourcen](../../../digital-estate/index.md).

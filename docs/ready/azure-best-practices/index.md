@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f1d4423e230d2eeff524a864f163e0cb13dc065b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 275342d452c3f9c47c004014d6e2831c88aa91df
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818266"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022238"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Bewährte Methoden für die Azure-Bereitschaft
 
@@ -24,7 +24,7 @@ Mitarbeitern die notwendigen technischen Kenntnisse für die Cloudeinführung zu
 Die folgenden Artikel enthalten hilfreiche Informationen zur Strukturierung und Bereitstellung von Ressourcen in der Azure-Umgebung:
 
 - [Grundlegende Konzepte in Azure](../considerations/fundamental-concepts.md). Hier finden Sie Informationen zu grundlegenden Konzepten und Begriffen in Azure. Außerdem erfahren Sie hier, wie diese Konzepte zusammenhängen.
-- [Empfohlene Namens- und Kennzeichnungskonventionen](../considerations/name-and-tag.md). Sehen Sie sich detaillierte Empfehlungen zur Benennung und Kennzeichnung Ihrer Ressourcen an. Diese Empfehlungen unterstützen Cloudeinführungsprojekte im Unternehmen.
+- [Empfohlene Namens- und Kennzeichnungskonventionen](../considerations/naming-and-tagging.md). Sehen Sie sich detaillierte Empfehlungen zur Benennung und Kennzeichnung Ihrer Ressourcen an. Diese Empfehlungen unterstützen Cloudeinführungsprojekte im Unternehmen.
 - [Skalieren mit mehreren Azure-Abonnements](../considerations/scaling-subscriptions.md). Hier werden Strategien für die Skalierung mit mehreren Azure-Abonnements erläutert.
 - [Organisieren Ihrer Ressourcen mit Azure-Verwaltungsgruppen](https://docs.microsoft.com/azure/governance/management-groups/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json) Hier erfahren Sie, wie Azure-Verwaltungsgruppen zum Verwalten von Ressourcen, Rollen, Richtlinien und Bereitstellungen für mehrere Abonnements verwendet werden können.
 - [Schaffen von Hybrid Cloud-Konsistenz](../../infrastructure/misc/hybrid-consistency.md). Hier erfahren Sie, wie Sie Hybrid Cloud-Lösungen erstellen, die die Vorteile innovativer Cloudfeatures mit vielen praktischen Features der lokalen Verwaltung kombinieren.

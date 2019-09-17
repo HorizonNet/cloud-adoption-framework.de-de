@@ -8,18 +8,18 @@ layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
 ms.date: 07/04/2019
-ms.openlocfilehash: 888d45eacf15150586eda0e6ace771b1802ac673
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: f7928418f583528cd08a0eeb5d7c77c724abe675
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816668"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024439"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Framework für die Einführung der Microsoft Cloud (Microsoft Cloud Adoption Framework)
 
 Das Framework für die Cloudeinführung ist der zentrale Ansatz für die Cloudeinführung in Azure von Microsoft. Hier werden bewährte Methoden von Microsoft-Mitarbeitern, Partnern und Kunden zusammengeführt und bereitgestellt. Über das Framework erhalten Unternehmenskunden Zugang zu einer Reihe von Tools, Anleitungen und Inhalten, die bei der Entwicklung von Technologie-, Geschäfts- und Personalstrategien herangezogen werden können, um mit ihren Maßnahmen für die Cloudeinführung die gewünschten Geschäftsergebnisse zu erzielen. Dieser Leitfaden ist auf verschiedene Phasen und Iterationen des typischen Lebenszyklus einer Cloudeinführung ausgerichtet, damit jederzeit auf die passenden Informationen zugegriffen werden kann.
 
-![Übersicht über das Framework für die Cloudeinführung](./_images/cloud-adoption-framework-overview.png)
+![Übersicht über das Framework für die Cloudeinführung](./_images/caf-overview.png)
 
 ## <a name="getting-started-executive-summaries"></a>Erste Schritte: Kurzfassungen
 
@@ -35,7 +35,7 @@ Die einzelnen Abschnitte des Frameworks für die Cloudeinführung basieren jewei
 
 <ul class="panelContent cardsF">
     <li style="display: flex; flex-direction: column;">
-        <a href="./business-strategy/index.md">
+        <a href="./strategy/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -111,7 +111,7 @@ Hier erfahren Sie, wie Sie bereits vorhandene Workloads migrieren und modernisie
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./governance/index.md">
+        <a href="./govern/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -130,7 +130,7 @@ Hier finden Sie Informationen zur Governance für die Umgebung und die Workloads
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./organization/index.md">
+        <a href="./organize/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -154,12 +154,12 @@ Hier erfahren Sie, wie Sie Mitarbeiter für die Einführung und den Betrieb der 
 
 Das Framework für die Cloudeinführung befindet sich momentan in der Public Preview-Phase. Es wird allgemein verfügbar gemacht (General Availability, GA), sobald das im nächsten Abschnitt beschriebene Ziel vollständig erreicht wurde. In dieser Vorschauversion stehen folgende Bereiche im Mittelpunkt:
 
-- [Strategie für die Cloudeinführung](./business-strategy/index.md)
+- [Strategie für die Cloudeinführung](./strategy/index.md)
 - [Planung der Cloudeinführung](./plan/index.md)
 - [Cloudmigration](./migrate/index.md)
-- [Cloud Governance](./governance/journeys/index.md)
+- [Cloud Governance](./govern/guides/index.md)
 
-Wir erweitern das Framework für die Cloudeinführung auf dem Weg zur allgemeinen Verfügbarkeit (GA-Release) häufig. Mit der Erweiterung werden sowohl die einzelnen Abschnitte vertieft als auch neue Abschnitte mit Inhalten hinzugefügt. Weitere Informationen finden Sie in der [Roadmap für das Framework für die Einführung der Cloud](./appendix/roadmap.md).
+Wir erweitern das Framework für die Cloudeinführung auf dem Weg zur allgemeinen Verfügbarkeit (GA-Release) häufig. Mit der Erweiterung werden sowohl die einzelnen Abschnitte vertieft als auch neue Abschnitte mit Inhalten hinzugefügt. Weitere Informationen finden Sie in der [Roadmap für das Framework für die Einführung der Cloud](./reference/roadmap.md).
 
 ## <a name="intent"></a>Absicht
 
@@ -181,7 +181,7 @@ Jeder Abschnitt des Frameworks für die Einführung der Cloud stellt eine andere
 
 Falls Ihr Unternehmen noch keine Erfahrung mit Azure hat, sollten Sie zunächst [Erste Schritte auf Ihrem Weg zur Cloudmigration](./getting-started/migrate.md) lesen. Diese Übersicht enthält eine Anleitung für die digitale Transformation Ihres Unternehmens, und die einzelnen Schritte des Prozesses werden beschrieben.
 
-Falls Ihr Unternehmen bereits mit Azure vertraut ist und Sie ausführlichere Informationen sowie bewährte Methoden für bestimmte Bereiche benötigen, helfen Ihnen die Informationen unter [Governance für die Einführung der Microsoft Cloud für Azure (Microsoft Cloud Adoption Framework)](./governance/index.md) und [Leitfaden zur architekturbezogenen Entscheidungsfindung](./decision-guides/index.md) weiter. Wir fügen weitere Abschnitte hinzu, während das GA-Release näher rückt.
+Falls Ihr Unternehmen bereits mit Azure vertraut ist und Sie ausführlichere Informationen sowie bewährte Methoden für bestimmte Bereiche benötigen, helfen Ihnen die Informationen unter [Governance für die Einführung der Microsoft Cloud für Azure (Microsoft Cloud Adoption Framework)](./govern/index.md) und [Leitfaden zur architekturbezogenen Entscheidungsfindung](./decision-guides/index.md) weiter. Wir fügen weitere Abschnitte hinzu, während das GA-Release näher rückt.
 
 > [!div class="nextstepaction"]
 > [Erste Schritte](./getting-started/migrate.md)

@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 276718f4a0fba49949db1b29f4ecfeee1238ad9c
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: db21fb74e09e57f542a7a90f546afe01c68f7a81
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817246"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025388"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>Einrichten eines Betriebsmodells für die Cloud
 
@@ -26,13 +26,13 @@ Aktuelle Betriebsmodelle können skaliert werden, um die Einführung der Cloud z
 
 Dieser Abschnitt des Frameworks für die Cloudeinführung stellt ein umsetzbares Betriebsmodell bereit, um Sie bei nicht technischen Entscheidungen zu unterstützen. Dieses Betriebsmodell umfasst drei hilfreiche Methodiken für die Erstellung eines eigenen Cloudbetriebsmodells:
 
-- [Steuern](../governance/index.md): Sorgen Sie für Konsistenz während der gesamten Einführung. Orientieren Sie sich an Governance- oder Complianceanforderungen, um eine optimale Verwaltung Ihrer cloudübergreifenden Umgebung zu gewährleisten.
-- [Organisieren](../organization/index.md): Richten Sie Ihre Organisation entsprechend aus, um den Erfolg des Betriebsmodells und der verschiedenen Cloudeinführungsaufgaben sicherzustellen.
-- [Verwalten](../operations/index.md): Gestalten Sie laufende Prozesse für die Verwaltung des Technologiebetriebs so, dass sie zur Nutzenmaximierung und zur Vermeidung von Störungen beitragen.
+- [Steuern](../govern/index.md): Sorgen Sie für Konsistenz während der gesamten Einführung. Orientieren Sie sich an Governance- oder Complianceanforderungen, um eine optimale Verwaltung Ihrer cloudübergreifenden Umgebung zu gewährleisten.
+- [Organisieren](../organize/index.md): Richten Sie Ihre Organisation entsprechend aus, um den Erfolg des Betriebsmodells und der verschiedenen Cloudeinführungsaufgaben sicherzustellen.
+- [Verwalten](../manage/index.md): Gestalten Sie laufende Prozesse für die Verwaltung des Technologiebetriebs so, dass sie zur Nutzenmaximierung und zur Vermeidung von Störungen beitragen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 Governance ist ein gängiger erster Schritt zur Einrichtung eines Betriebsmodells für die Cloud.
 
 > [!div class="nextstepaction"]
-> [Informationen zur Cloudgovernance](../governance/index.md)
+> [Informationen zur Cloudgovernance](../govern/index.md)
