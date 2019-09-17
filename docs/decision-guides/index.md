@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a1522713ccc96bdaf713d9a72b49dc4815823eb2
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 2ca59288d74b8a7578a91a160f3c3960ac3cedda
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817977"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023862"
 ---
 # <a name="architectural-decision-guides"></a>Leitfaden zur architekturbezogenen Entscheidungsfindung
 
@@ -42,11 +42,11 @@ Jede der folgenden Kategorien stellt eine grundlegende Technologie aller Cloudbe
 
 [Verschlüsselung](./encryption/index.md): Schützen Sie Ihre sensiblen Daten mittels Verschlüsselung, um den Complianceanforderungen und Sicherheitsrichtlinien Ihrer Organisation gerecht zu werden.
 
-[Protokolle und Berichterstellung](./log-and-report/index.md): Überwachen Sie von cloudbasierten Ressourcen generierte Protokolldaten. Die Analyse von Daten liefert integritätsbezogene Erkenntnisse über den Betriebs-, Wartungs- und Compliancestatus von Workloads.
+[Protokolle und Berichterstellung](./logging-and-reporting/index.md): Überwachen Sie von cloudbasierten Ressourcen generierte Protokolldaten. Die Analyse von Daten liefert integritätsbezogene Erkenntnisse über den Betriebs-, Wartungs- und Compliancestatus von Workloads.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 Erfahren Sie, wie Abonnements und Konten als Grundlage einer Cloudbereitstellung dienen.
 
 > [!div class="nextstepaction"]
-> [Abonnementmodell](subscriptions/index.md)
+> [Abonnementmodell](./subscriptions/index.md)

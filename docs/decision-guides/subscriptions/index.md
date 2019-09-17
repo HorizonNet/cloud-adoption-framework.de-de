@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 0997698660f19ff47a2eebe6dcdccb122e7f20b5
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 209de4c03474a956edf629c9c24f6b29f492284b
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906097"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023633"
 ---
 # <a name="subscription-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Abonnements
 
@@ -37,7 +37,8 @@ Da jede Organisation anders ist, sind Azure-Verwaltungsgruppen auf Flexibilität
 
 Berücksichtigen Sie vor der Fertigstellung Ihres Abonnemententwurfs auch den Einfluss der [Ressourcenkonsistenz](../resource-consistency/index.md) auf Ihre Gestaltungsmöglichkeiten.
 
-> ![HINWEIS] Dank Azure Enterprise Agreements (EAs) können Sie zu Abrechnungszwecken eine weitere Organisationshierarchie definieren. Diese Hierarchie ist von Ihrer Verwaltungsgruppenhierarchie getrennt, die in erster Linie dazu dient, ein Vererbungsmodell bereitzustellen, mit dem Sie komfortabel geeignete Richtlinien und eine Zugriffssteuerung für Ihre Ressourcen implementieren können.
+> [!NOTE]
+> Dank Azure Enterprise Agreements (EAs) können Sie zu Abrechnungszwecken eine weitere Organisationshierarchie definieren. Diese Hierarchie ist von Ihrer Verwaltungsgruppenhierarchie getrennt, die in erster Linie dazu dient, ein Vererbungsmodell bereitzustellen, mit dem Sie komfortabel geeignete Richtlinien und eine Zugriffssteuerung für Ihre Ressourcen implementieren können.
 
 Die folgenden Abonnementmuster spiegeln eine anfängliche Komplexitätszunahme beim Abonnemententwurf wider – gefolgt von einigen erweiterten Hierarchien, die sich ggf. gut für Ihre Organisation eignen:
 
@@ -94,9 +95,9 @@ Verwaltungsgruppenhierarchien können bis zu sechs Ebenen umfassen. Dieses Maß 
 
 ## <a name="related-resources"></a>Zugehörige Ressourcen
 
-- [Ressourcenzugriffsverwaltung in Azure](../../governance/resource-consistency/azure-resource-access.md)
-- [Große Unternehmen: mehrere Governance-Ebenen in großen Unternehmen](/azure/architecture/cloud-adoption/governance/journeys/large-enterprise/multiple-layers-of-governance)
-- [Mehrere geografische Regionen](/azure/architecture/cloud-adoption/migrate/expanded-scope/multiple-regions)
+- [Ressourcenzugriffsverwaltung in Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Große Unternehmen: mehrere Governance-Ebenen in großen Unternehmen](../../govern/guides/complex/multiple-layers-of-governance.md)
+- [Mehrere geografische Regionen](../../migrate/expanded-scope/multiple-regions.md)
 
 ## <a name="next-steps"></a>Nächste Schritte
 

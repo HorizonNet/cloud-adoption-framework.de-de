@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d370f8e868be1186aad17b89915f52ad0413d04d
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 9b77b8fbbe6479b716d9b9f91d6e0154db8c0db7
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816430"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022803"
 ---
 ::: zone target="chromeless"
 
@@ -67,7 +67,7 @@ Dieser Leitfaden hilft bei der Beantwortung dieser Fragen. Er schlägt die Aufga
 
 ::: zone target="docs"
 
-Weitere Informationen zum Organisieren und Strukturieren Ihrer Abonnements, zur Verwaltung Ihrer bereitgestellten Ressourcen und zur Einhaltung Ihrer Unternehmensrichtlinien finden Sie unter [Governance in Azure](/azure/security/governance-in-azure).
+Weitere Informationen zum Organisieren und Strukturieren Ihrer Abonnements, zur Verwaltung Ihrer bereitgestellten Ressourcen und zur Einhaltung Ihrer Unternehmensrichtlinien finden Sie unter [Governance in Azure](https://docs.microsoft.com/azure/security/governance-in-azure).
 
 ::: zone-end
 
@@ -112,8 +112,8 @@ Diese Methoden schließen sich nicht gegenseitig aus. Während Ihre anfängliche
 
 ::: zone target="docs"
 
-Diese Methoden schließen sich nicht gegenseitig aus. Während Ihre anfängliche Migration z. B. ein **Zuweisen eines neuen Hosts**-Modell verwenden könnte, wählen Sie möglicherweise ein **Refactoring**- oder **Überarbeiten**-Modell für die Implementierung im Rahmen der Optimierungsphase nach der Migration aus. Dies wird im Abschnitt [Optimieren und Transformieren](optimize-and-transform.md) dieses Leitfadens nochmals aufgegriffen.
+Diese Methoden schließen sich nicht gegenseitig aus. Während Ihre anfängliche Migration z. B. ein **Zuweisen eines neuen Hosts**-Modell verwenden könnte, wählen Sie möglicherweise ein **Refactoring**- oder **Überarbeiten**-Modell für die Implementierung im Rahmen der Optimierungsphase nach der Migration aus. Dies wird im Abschnitt [Optimieren und Transformieren](./optimize-and-transform.md) dieses Leitfadens nochmals aufgegriffen.
 
 ::: zone-end
 
-![Infografik zu den Migrationsoptionen](../../_images/migration/migration-options.png)
+![Infografik zu den Migrationsoptionen](../../_images/migrate/migration-options.png)

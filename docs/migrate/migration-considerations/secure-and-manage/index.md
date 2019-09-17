@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 14bd697a3332466fb97043d3420d80b1dca50679
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 652637905f9de09972eed199f85245e99fb60e29
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818130"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022587"
 ---
 # <a name="secure-monitoring-and-management-tools"></a>Tools für sichere Überwachung und Verwaltung
 
@@ -26,7 +26,7 @@ Unter *Überwachung* wird das Erfassen und Analysieren von Daten verstanden, um 
 - **Kernüberwachung** Unter der Kernüberwachung versteht man die grundlegende, erforderliche Überwachung aller Azure-Ressourcen. Diese Dienste benötigen nur eine minimale Konfiguration und sammeln die von den Premium-Überwachungsdiensten genutzten Telemetriedaten.
 - **Umfassende Anwendungs- und Infrastrukturüberwachung** Azure-Dienste bieten umfassende Funktionen für das Sammeln und Analysieren von Überwachungsdaten auf einer tieferen Ebene. Diese Dienste bauen auf der Kernüberwachung auf und nutzen allgemeine Funktionen in Azure. Sie bieten leistungsstarke Analysen der gesammelten Daten und somit einzigartige Einblicke Ihre Anwendungen und Infrastrukturen.
 
-Erfahren Sie mehr über [Azure Monitor](/azure/azure-monitor/overview) zur Überwachung migrierter Ressourcen.
+Erfahren Sie mehr über [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) zur Überwachung migrierter Ressourcen.
 
 ## <a name="security-monitoring"></a>Sicherheitsüberwachung
 
@@ -39,7 +39,7 @@ Verlassen Sie sich auf die einheitliche Sicherheitsüberwachung und die erweiter
 - **Priorisierte Warnungen und Vorfälle** Konzentrieren Sie sich mittels priorisierter Warnungen und Vorfälle auf die größten Bedrohungen.
 - **Integrierte Sicherheitslösungen** Sammeln, durchsuchen und analysieren Sie Sicherheitsdaten aus verschiedensten Quellen (einschließlich verbundener Partnerlösungen).
 
-Weitere Informationen zum Sichern von migrierten Ressourcen finden Sie unter [Azure Security Center](/azure/security-center).
+Weitere Informationen zum Sichern von migrierten Ressourcen finden Sie unter [Azure Security Center](https://docs.microsoft.com/azure/security-center).
 
 ## <a name="protect-assets-and-data"></a>Schützen von Ressourcen und Daten
 
@@ -50,4 +50,4 @@ Azure Backup bietet eine Möglichkeit, VMs, Dateien und Daten zu schützen. Azur
 - Sichern von SQL Server-Datenbanken
 - Wiederherstellen von geschützten Ressourcen
 
-Weitere Informationen zum Schützen migrierter Ressourcen finden Sie unter [Azure Backup](/azure/backup).
+Weitere Informationen zum Schützen migrierter Ressourcen finden Sie unter [Azure Backup](https://docs.microsoft.com/azure/backup).

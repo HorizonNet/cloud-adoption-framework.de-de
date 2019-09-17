@@ -8,12 +8,12 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 082db3cb266c428d371687ebb32a4d7d52c4663a
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 9a5b7c3eb1a831b9bf15540550d1c2005114a820
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817841"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023462"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -44,10 +44,10 @@ Eine Analyse der digitalen Ressourcen ist bei Cloudeinführungsaktivitäten hilf
 
 Führen Sie die folgenden Schritte aus, um die Analyse der digitalen Ressourcen durchzuführen:
 
-1. [Bestimmen Sie den Analyseansatz](approach.md).
-1. [Erfassen Sie den aktuellen Bestand](inventory.md).
-1. [Rationalisieren Sie die digitalen Ressourcen](rationalize.md).
-1. [Gleichen Sie zur Preisberechnung Ressourcen mit Cloudangeboten ab](calculate.md).
+1. [Bestimmen Sie den Analyseansatz](./approach.md).
+1. [Erfassen Sie den aktuellen Bestand](./inventory.md).
+1. [Rationalisieren Sie die digitalen Ressourcen](./rationalize.md).
+1. [Gleichen Sie zur Preisberechnung Ressourcen mit Cloudangeboten ab](./calculate.md).
 
 Finanzmodelle und Migrationsbacklogs können geändert werden, um die rationalisierten Ressourcen und die entsprechenden Preisangaben zu berücksichtigen.
 
@@ -56,4 +56,4 @@ Finanzmodelle und Migrationsbacklogs können geändert werden, um die rationalis
 Bestimmen Sie vor Beginn der Planung der digitalen Ressourcen, welcher Ansatz verwendet werden soll.
 
 > [!div class="nextstepaction"]
-> [Ansätze für die Planung eines digitalen Umfelds](approach.md)
+> [Ansätze für die Planung eines digitalen Umfelds](./approach.md)
