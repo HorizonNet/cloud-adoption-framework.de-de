@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 3c519de24d6c7ac83240d1b1e14b0a21c67f67df
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 383f2d6a2443c70c8e082183f601b8186fc98870
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817654"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023723"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Leitfaden zur Entscheidungsfindung für die Richtlinienerzwingung
 
 Die Definition einer organisationsweiten Richtlinie ist nur sinnvoll, wenn sie in Ihrer gesamten Organisation durchgesetzt werden kann. Ein wichtiger Aspekt bei der Planung einer Cloudmigration ist die Festlegung, wie die in der Cloudplattform enthaltenen Tools am besten mit Ihren vorhandenen IT-Prozessen kombiniert werden können, um die Richtlinienkonformität in der gesamten Cloudinfrastruktur zu maximieren.
 
-![Abbildung der Optionen zur Richtlinienerzwingung mit zunehmender Komplexität entsprechend den nachstehenden weiterführenden Links](../../_images/discovery-guides/discovery-guide-policy-enforcement.png)
+![Abbildung der Optionen zur Richtlinienerzwingung mit zunehmender Komplexität entsprechend den nachstehenden weiterführenden Links](../../_images/decision-guides/decision-guide-policy-enforcement.png)
 
 Wechseln Sie zu: [Grundlegende empfohlene Vorgehensweisen](#baseline-recommended-practices) | [Überwachung der Richtlinienkonformität](#policy-compliance-monitoring) | [Richtlinienerzwingung](#policy-enforcement) | [ Organisationsübergreifende Richtlinie](#cross-organization-policy) | [Automatisierte Durchsetzung](#automated-enforcement)
 
@@ -28,7 +28,7 @@ Mit zunehmender Größe Ihrer Cloudumgebung müssen Richtlinien für ein größe
 
 Für kleinere Cloudumgebungen sind in der Regel die von der Plattform bereitgestellten Mechanismen für die Richtlinienerzwingung ausreichend. Größere Bereitstellungen rechtfertigen ein breiteres Erzwingungsspektrum und erfordern ggf. komplexere Erzwingungsmechanismen mit Bereitstellungsstandards und Ressourcengruppierung/-strukturierung sowie die Integration der Richtlinienerzwingung in Ihre Protokollierungs- und Berichterstellungssysteme.
 
-Bei der Bestimmung des Umfangs Ihrer Richtlinienerzwingungsprozesse sind in erster Linie die [Cloud Governance-Anforderungen](/azure/architecture/cloud-adoption/governance/overview) Ihrer Organisation, die Größe und Art Ihrer Cloudumgebung sowie die Darstellung Ihrer Organisation in Ihrem [Abonnemententwurf](../subscriptions/index.md) ausschlaggebend. Die Vergrößerung Ihrer Umgebung sowie der gestiegene Bedarf für eine zentrale Verwaltung der Richtlinienerzwingung können eine Erweiterung des Erzwingungsspektrums rechtfertigen.
+Bei der Bestimmung des Umfangs Ihrer Richtlinienerzwingungsprozesse sind in erster Linie die [Cloud Governance-Anforderungen](../../govern/index.md) Ihrer Organisation, die Größe und Art Ihrer Cloudumgebung sowie die Darstellung Ihrer Organisation in Ihrem [Abonnemententwurf](../subscriptions/index.md) ausschlaggebend. Die Vergrößerung Ihrer Umgebung sowie der gestiegene Bedarf für eine zentrale Verwaltung der Richtlinienerzwingung können eine Erweiterung des Erzwingungsspektrums rechtfertigen.
 
 ## <a name="baseline-recommended-practices"></a>Grundlegende empfohlene Vorgehensweisen
 
@@ -43,15 +43,15 @@ Bei Einzelabonnements und einfachen Cloudbereitstellungen lassen sich viele Unte
 
 ## <a name="policy-compliance-monitoring"></a>Überwachung der Richtlinienkonformität
 
-Ein erster Schritt, der über die einfache Nutzung der Richtlinienerzwingungsmechanismen der Azure-Plattform hinausgeht, besteht darin, die Überprüfung der Einhaltung von Organisationsrichtlinien für cloudbasierte Anwendungen und Dienste zu ermöglichen. Dies beinhaltet unter anderem die Implementierung von Benachrichtigungsfunktionen, um Verantwortliche auf nicht mehr konforme Ressourcen aufmerksam zu machen. Die wirksame [Protokollierung und Berichterstellung](../log-and-report/index.md) des Konformitätsstatus Ihrer Cloudworkloads ist ein wichtiger Bestandteil einer Unternehmensstrategie zur Richtlinienerzwingung.
+Ein erster Schritt, der über die einfache Nutzung der Richtlinienerzwingungsmechanismen der Azure-Plattform hinausgeht, besteht darin, die Überprüfung der Einhaltung von Organisationsrichtlinien für cloudbasierte Anwendungen und Dienste zu ermöglichen. Dies beinhaltet unter anderem die Implementierung von Benachrichtigungsfunktionen, um Verantwortliche auf nicht mehr konforme Ressourcen aufmerksam zu machen. Die wirksame [Protokollierung und Berichterstellung](../logging-and-reporting/index.md) des Konformitätsstatus Ihrer Cloudworkloads ist ein wichtiger Bestandteil einer Unternehmensstrategie zur Richtlinienerzwingung.
 
-Wenn Ihre Cloudinfrastruktur wächst, können Sie mithilfe zusätzlicher Tools, z.B. [Azure Security Center](/azure/security-center), die integrierte Sicherheit und Bedrohungserkennung verwenden und die zentrale Richtlinienverwaltung sowie Warnungen für Ihre lokalen und Cloudressourcen nutzen.
+Wenn Ihre Cloudinfrastruktur wächst, können Sie mithilfe zusätzlicher Tools, z.B. [Azure Security Center](https://docs.microsoft.com/azure/security-center), die integrierte Sicherheit und Bedrohungserkennung verwenden und die zentrale Richtlinienverwaltung sowie Warnungen für Ihre lokalen und Cloudressourcen nutzen.
 
 ## <a name="policy-enforcement"></a>Durchsetzung von Richtlinien
 
 In Azure können Konfigurationseinstellungen und Ressourcenerstellungsregeln auf der Verwaltungsgruppen-, Abonnement- oder Ressourcengruppenebene angewendet werden, um die Richtlinieneinhaltung sicherzustellen.
 
-[Azure Policy](/azure/governance/policy/overview) ist ein Azure-Dienst zum Erstellen, Zuweisen und Verwalten von Richtlinien. Mit diesen Richtlinien werden unterschiedliche Regeln und Auswirkungen für Ihre Ressourcen erzwungen, damit diese stets mit Ihren Unternehmensstandards und Vereinbarungen zum Servicelevel konform bleiben. Mit Azure Policy werden Ihre Ressourcen auf Nichteinhaltung der zugewiesenen Richtlinien überprüft. Angenommen, Sie möchten beispielsweise die SKU-Größe von virtuellen Computern in der Umgebung beschränken. Nachdem eine entsprechende Richtlinie implementiert wurde, wird die Konformität der neuen und vorhandenen Ressourcen dahin gehend geprüft. Mit der richtigen Richtlinie können vorhandene Ressourcen in Konformität gebracht werden.
+[Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) ist ein Azure-Dienst zum Erstellen, Zuweisen und Verwalten von Richtlinien. Mit diesen Richtlinien werden unterschiedliche Regeln und Auswirkungen für Ihre Ressourcen erzwungen, damit diese stets mit Ihren Unternehmensstandards und Vereinbarungen zum Servicelevel konform bleiben. Mit Azure Policy werden Ihre Ressourcen auf Nichteinhaltung der zugewiesenen Richtlinien überprüft. Angenommen, Sie möchten beispielsweise die SKU-Größe von virtuellen Computern in der Umgebung beschränken. Nachdem eine entsprechende Richtlinie implementiert wurde, wird die Konformität der neuen und vorhandenen Ressourcen dahin gehend geprüft. Mit der richtigen Richtlinie können vorhandene Ressourcen in Konformität gebracht werden.
 
 ## <a name="cross-organization-policy"></a>Organisationsübergreifende Richtlinie
 
@@ -61,7 +61,7 @@ Die Richtlinie muss in Ihrem [Abonnemententwurf](../subscriptions/index.md) ber�
 
 ## <a name="automated-enforcement"></a>Automatisierte Erzwingung
 
-Während standardisierte Bereitstellungsvorlagen in kleinerem Umfang wirksam sind, ermöglicht [Azure Blueprints](/azure/governance/blueprints/overview) eine umfassende standardisierte Bereitstellung und Bereitstellungsorchestrierung von Azure-Lösungen. Workloads in mehreren Abonnements können mit konsistenten Richtlinieneinstellungen für alle erstellten Ressourcen bereitgestellt werden.
+Während standardisierte Bereitstellungsvorlagen in kleinerem Umfang wirksam sind, ermöglicht [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview) eine umfassende standardisierte Bereitstellung und Bereitstellungsorchestrierung von Azure-Lösungen. Workloads in mehreren Abonnements können mit konsistenten Richtlinieneinstellungen für alle erstellten Ressourcen bereitgestellt werden.
 
 Für IT-Umgebungen mit Integration von lokalen und Cloudressourcen müssen Sie möglicherweise Protokollierungs- und Berichterstellungssysteme verwenden, um Funktionen für die Hybridüberwachung bereitzustellen. Operative Überwachungssysteme von Drittanbietern oder benutzerdefinierte operative Überwachungssysteme umfassen möglicherweise weitere Funktionen zur Richtlinienerzwingung. Bei größeren oder schon länger bestehenden Cloudumgebungen sollten Sie sich Gedanken dazu machen, wie Sie diese Systeme am besten mit Ihren Cloudressourcen integrieren.
 
