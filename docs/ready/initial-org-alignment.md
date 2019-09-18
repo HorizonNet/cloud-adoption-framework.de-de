@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: governance
-ms.openlocfilehash: a3e819cdd726e3df6edb4cbe0c20a7d652fde152
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5e425a61f6b9da7fed044d06ac9323306d728261
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70834680"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71021989"
 ---
 # <a name="initial-organization-alignment"></a>Erstausrichtung der Organisation
 
@@ -43,7 +43,7 @@ Ein Cloudstrategieteam kann beispielsweise vom CTO geleitet werden und Mitgliede
 
 Darüber hinaus müssen noch zwei weitere übergeordnete Teams gebildet werden: ein Governance-Team und Sicherheitsteam. Diese Teams sind zuständig für die Gestaltung, die Implementierung und die fortlaufende Überwachung der Governance- und Sicherheitsrichtlinien des Unternehmens. Das Governance-Team muss Personen enthalten, die mit Ressourcenschutz, Kostenverwaltung, Gruppenrichtlinien und Ähnlichem vertraut sind. Die Mitglieder des Sicherheitsteams müssen bestens mit aktuellen branchenspezifischen Sicherheitsstandards sowie mit den Sicherheitsanforderungen des Unternehmens vertraut sein.
 
-![Cloudstrategieteam, mit Governance- und Sicherheitsteams](../_images/getting-started-overview-1.png)
+![Cloudstrategieteam, mit Governance- und Sicherheitsteams](../_images/ready/getting-started-overview-1.png)
 
 Das Governance-Team ist dafür zuständig, das Governance-Modell des Unternehmens zu entwerfen und in der Cloud zu implementieren sowie die Ressourcen der freigegebenen Infrastruktur, die Teil der digitalen Transformation sind, bereitzustellen und zu verwalten. Hierzu zählen Hardware-, Software- und Cloudressourcen, die benötigt werden, um eine Verbindung zwischen dem lokalen Netzwerk und dem virtuellen Netzwerk in der Cloud herzustellen.
 
@@ -53,9 +53,9 @@ Die Aufgabe des Sicherheitsteams besteht darin, die Sicherheitsrichtlinie des Un
 
 Im nächsten Schritt der digitalen Transformation Ihres Unternehmens müssen sich die Mitglieder des Cloudstrategieteams darüber informieren, inwiefern sich die Cloudtechnologie auf die geschäftlichen Abläufe des Unternehmens auswirkt. Dieser Schritt dient zur Vorbereitung und Planung von Veränderungen für das Unternehmen, die Mitarbeiter und die Technologie. Die Mitglieder des Cloudstrategieteams müssen die Neuerungen und Unterschiede der Cloud im Vergleich zur lokalen Umgebung kennen.
 
-![Cloudstrategie-, Governance- und Sicherheitsteams machen sich mit den Best Practices für die Cloud vertraut.](../_images/getting-started-overview-2.png)
+![Cloudstrategie-, Governance- und Sicherheitsteams machen sich mit den Best Practices für die Cloud vertraut.](../_images/ready/getting-started-overview-2.png)
 
-Dazu müssen sie sich zunächst ganz allgemein mit der [Funktionsweise von Azure](../getting-started/what-is-azure.md) vertraut machen. Danach müssen sie sich über die [Grundlagen der Governance in Azure](../governance/resource-consistency/what-is-governance.md) informieren, bevor sie sich schließlich mit den [Grundlagen der Ressourcenzugriffsverwaltung](../governance/resource-consistency/azure-resource-access.md) befassen.
+Dazu müssen sie sich zunächst ganz allgemein mit der [Funktionsweise von Azure](../getting-started/what-is-azure.md) vertraut machen. Danach müssen sie sich über die [Grundlagen der Governance in Azure](../govern/resource-consistency/what-is-governance.md) informieren, bevor sie sich schließlich mit den [Grundlagen der Ressourcenzugriffsverwaltung](../govern/resource-consistency/resource-access-management.md) befassen.
 
 Darüber hinaus sollte sich das Governance-Team mit den Konzepten und Entwurfshandbüchern beschäftigen, die im Inhaltsverzeichnis im Abschnitt zu Governance zu finden sind. Die Abschnitte zu Infrastruktur und Workloads enthalten hilfreiche Informationen zu gängigen Architekturen und Workloads in der Cloud.
 
@@ -93,7 +93,7 @@ Nachdem es eine Liste mit den Zielen der digitalen Transformation erstellt sowie
 
 Die Teams arbeiten sich anhand der priorisierten Listen durch die einzelnen allgemeinen Lösungen, um einen entsprechenden Entwurf zu erarbeiten. Der Entwurfsprozess umfasst unter anderem Angaben zu neuer Infrastruktur und neuen Workloads. Unter Umständen verändern sich auch die Rollen der Mitarbeiter sowie die Prozesse, mit denen sie arbeiten. In dieser Phase ist es zudem wichtig, dass jedes Entwurfsteam sowohl das Governance- als auch das Sicherheitsteam in die Prüfung der jeweiligen Entwürfe mit einbezieht. Jeder Entwurf muss sich innerhalb der Richtlinien und Verfahren bewegen, die das Governance- und das Sicherheitsteam definiert haben, und diese Teams müssen in die endgültige Genehmigung des jeweiligen Entwurfs eingebunden werden.
 
-![Cloudstrategieteam übergibt die allgemeinen Lösungen an Entwurfs- und Implementierungsteams.](../_images/getting-started-overview-3.png)
+![Cloudstrategieteam übergibt die allgemeinen Lösungen an Entwurfs- und Implementierungsteams.](../_images/ready/getting-started-overview-3.png)
 
 Der Entwurf der einzelnen Lösungen ist eine komplexe Aufgabe. Beim Erstellen von Entwürfen müssen diese im Kontext mit anderen Lösungsentwürfen anderer Teams betrachtet werden. Wenn beispielsweise mehrere der Entwürfe die Migration bereits vorhandener lokaler Anwendungen und Dienste in die Cloud vorsehen, ist es unter Umständen effizienter, diese zusammenzufassen und eine allgemeine Migrationsstrategie zu erarbeiten. In einem anderen Fall können beispielsweise einige vorhandene lokale Anwendungen und Dienste nicht migriert werden, und die Lösung besteht darin, sie entweder durch Neuentwicklungen oder durch Dienste von Drittanbietern zu ersetzen. In diesem Fall ist es ggf. effizienter, sie zusammenzufassen und die Überschneidung zwischen ihnen zu ermitteln, um zu bestimmen, ob ein Drittanbieterdienst für mehrere Lösungen verwendet werden kann.
 

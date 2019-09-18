@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 060672fb65b983c4ba520dab24097508ba78367d
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 96eb90f5761fd53ab0c4e6b128c77e441c7b36cd
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839212"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025338"
 ---
 # <a name="adapt-existing-roles-skills-and-processes-for-the-cloud"></a>Anpassen vorhandener Rollen, Qualifikationen und Prozesse für die Cloud
 
@@ -54,7 +54,7 @@ Verfolgen Sie diese Abhängigkeiten, und notieren Sie die Prozesse, die ihnen zu
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Die Sicherstellung einer angemessenen Unterstützung für die übersetzten Rollen ist eine Teamaufgabe. Sie können basierend auf diesem Leitfaden aktiv werden, indem Sie die [Einführung in die Bereitschaft von Organisationen](../organization/index.md) lesen. Darin erhalten Sie Hilfe beim Identifizieren der richtigen Teamstrukturen und -mitglieder.
+Die Sicherstellung einer angemessenen Unterstützung für die übersetzten Rollen ist eine Teamaufgabe. Sie können basierend auf diesem Leitfaden aktiv werden, indem Sie die [Einführung in die Bereitschaft von Organisationen](../organize/index.md) lesen. Darin erhalten Sie Hilfe beim Identifizieren der richtigen Teamstrukturen und -mitglieder.
 
 > [!div class="nextstepaction"]
 > [Identifizieren der richtigen Teamstrukturen](./index.md)

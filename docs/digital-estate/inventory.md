@@ -8,16 +8,16 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 616bf15db1fac01966573cd5822717c59286434b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 6b6bbfef4f9e404433119d412cd4bf625cd3b480
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837796"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023498"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>Erfassen von Bestandsdaten für digitale Ressourcen
 
-Die Erstellung eines Bestandsverzeichnisses ist der erste Schritt bei der [Planung für digitale Ressourcen](index.md). Hierzu wird eine Liste mit IT-Ressourcen, die bestimmte Geschäftsfunktionen unterstützen, zur späteren Analyse und Rationalisierung erfasst. In diesem Artikel wird davon ausgegangen, dass für die Planung ein Bottom-up-Analyseansatz am besten geeignet ist. Weitere Informationen finden Sie unter [Enterprise Cloud Adoption: Approaches to digital estate planning](./approach.md) (Enterprise Cloud-Einführung: Ansätze für die Planung digitaler Ressourcen).
+Die Erstellung eines Bestandsverzeichnisses ist der erste Schritt bei der [Planung für digitale Ressourcen](./index.md). Hierzu wird eine Liste mit IT-Ressourcen, die bestimmte Geschäftsfunktionen unterstützen, zur späteren Analyse und Rationalisierung erfasst. In diesem Artikel wird davon ausgegangen, dass für die Planung ein Bottom-up-Analyseansatz am besten geeignet ist. Weitere Informationen finden Sie unter [Enterprise Cloud Adoption: Approaches to digital estate planning](./approach.md) (Enterprise Cloud-Einführung: Ansätze für die Planung digitaler Ressourcen).
 
 ## <a name="take-inventory-of-a-digital-estate"></a>Erfassen von Bestandsdaten für ein digitales Umfeld
 
@@ -38,4 +38,4 @@ Eine Bestandsaufnahme ist selten im ersten Anlauf vollständig. Wir empfehlen dr
 Nach Abschluss und Überprüfung der Bestandsaufnahme kann der Bestand rationalisiert werden. Die Rationalisierung des Bestands ist der nächste Schritt bei der Planung für digitale Ressourcen.
 
 > [!div class="nextstepaction"]
-> [Rationalisieren der digitalen Ressourcen](rationalize.md)
+> [Rationalisieren der digitalen Ressourcen](./rationalize.md)

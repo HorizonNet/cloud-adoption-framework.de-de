@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8d216d65685c7e58fc622a5d7f820f0c23097fa4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d2366e4b5fad3344f324f9ff6f1b7dda0cc0b8c6
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839028"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022594"
 ---
 # <a name="migration-environment-planning-checklist---validate-environmental-readiness-prior-to-migration"></a>Planungscheckliste für die Migrationsumgebung – Überprüfen der Umgebungsbereitschaft vor der Migration
 
@@ -33,7 +33,7 @@ Die erste und wichtigste Entscheidung in Bezug auf eine migrationsbereite Umgebu
 
 Unabhängig davon, ob Sie sich bei Ihrer ersten Migration für eine umfassendere Cloud-Governance-Strategie entscheiden oder nicht, müssen Sie sicherstellen, dass Ihre Cloudbereitstellungsumgebung für die Unterstützung Ihrer Workloads konfiguriert ist.
 
-Wenn Sie planen, die Migration von Anfang an auf eine Cloud-Governance-Strategie auszurichten, müssen Sie die [Fünf Disziplinen der Cloud Governance](../../../governance/governance-disciplines.md) anwenden, um auf Informationen basierende Entscheidungen zu Richtlinien, Toolketten und Erzwingungsmechanismen treffen zu können, mit denen Ihre Cloudumgebung an die allgemeinen Unternehmensanforderungen angepasst wird. In den [Governance-Entwurfshandbüchern](../../../governance/journeys/index.md) des Framework für die Cloudeinführung finden Sie Beispiele dafür, wie dieses Modell mit Azure-Diensten implementiert wird.
+Wenn Sie planen, die Migration von Anfang an auf eine Cloud-Governance-Strategie auszurichten, müssen Sie die [Fünf Disziplinen der Cloud Governance](../../../govern/governance-disciplines.md) anwenden, um auf Informationen basierende Entscheidungen zu Richtlinien, Toolketten und Erzwingungsmechanismen treffen zu können, mit denen Ihre Cloudumgebung an die allgemeinen Unternehmensanforderungen angepasst wird. In den [Governance-Entwurfshandbüchern](../../../govern/guides/index.md) des Framework für die Cloudeinführung finden Sie Beispiele dafür, wie dieses Modell mit Azure-Diensten implementiert wird.
 
 Wenn Ihre anfänglichen Migrationen nicht eng mit einer umfassenderen Cloud-Governance-Strategie verbunden sind, müssen noch die allgemeinen Fragen der Organisations-, Zugriffs- und Infrastrukturplanung geklärt werden. Unterstützung bei diesen Entscheidungen für die Cloudbereitschaft finden Sie im [Leitfaden für die Azure-Bereitschaft](../../../ready/azure-readiness-guide/index.md).
 
@@ -64,7 +64,7 @@ Cloudbasierte Identitätsdienste sind eine Voraussetzung für das Anbieten von I
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Wenn die Umgebung die Mindestanforderungen erfüllt, kann sie als genehmigt für die Migrationsbereitschaft betrachtet werden. [Kulturelle Komplexität und Change Management](./culture-complexity.md) hilft, Rollen und Verantwortlichkeiten aufeinander abzustimmen, um entsprechende Erwartungen während der Ausführung des Plans sicherzustellen.
+Wenn die Umgebung die Mindestanforderungen erfüllt, kann sie als genehmigt für die Migrationsbereitschaft betrachtet werden. [Kulturelle Komplexität und Change Management](./cultural-complexity.md) hilft, Rollen und Verantwortlichkeiten aufeinander abzustimmen, um entsprechende Erwartungen während der Ausführung des Plans sicherzustellen.
 
 > [!div class="nextstepaction"]
-> [Kulturelle Komplexität und Change Management](./culture-complexity.md)
+> [Kulturelle Komplexität und Change Management](./cultural-complexity.md)

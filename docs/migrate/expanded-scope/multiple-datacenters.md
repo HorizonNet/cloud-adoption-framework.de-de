@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e58dd50417ec6377774f07ee613a5fc69f74f0ea
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: b2491d349628d2c9640097ddd2c94b79505a0921
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839112"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024788"
 ---
 # <a name="multiple-datacenters"></a>Mehrere Rechenzentren
 
@@ -37,7 +37,7 @@ Bei einer Umfangserweiterung auf mehrere Rechenzentren steht die größte Änder
 
 ### <a name="suggested-action-during-the-assess-process"></a>Empfohlene Aktion während des Bewertungsprozesses
 
-**Evaluieren von rechenzentrumsübergreifenden Abhängigkeiten**: Die [Tools für die Visualisierung von Abhängigkeiten in Azure Migrate](/azure/migrate/concepts-dependency-visualization) helfen bei der Ermittlung von Abhängigkeiten. Die Verwendung dieser Tools vor der Migration ist eine allgemeine bewährte Methode. Wenn es aber um globale Komplexität geht, wird diese Verwendung zu einem notwendigen Schritt im Bewertungsprozess. Die Visualisierung durch die [Gruppierung von Abhängigkeiten](/azure/migrate/how-to-create-group-machine-dependencies) kann dabei helfen, die IP-Adressen und Ports aller Assets zu ermitteln, die zur Unterstützung der Workload erforderlich sind.
+**Evaluieren von rechenzentrumsübergreifenden Abhängigkeiten**: Die [Tools für die Visualisierung von Abhängigkeiten in Azure Migrate](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization) helfen bei der Ermittlung von Abhängigkeiten. Die Verwendung dieser Tools vor der Migration ist eine allgemeine bewährte Methode. Wenn es aber um globale Komplexität geht, wird diese Verwendung zu einem notwendigen Schritt im Bewertungsprozess. Die Visualisierung durch die [Gruppierung von Abhängigkeiten](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies) kann dabei helfen, die IP-Adressen und Ports aller Assets zu ermitteln, die zur Unterstützung der Workload erforderlich sind.
 
 > [!IMPORTANT]
 > Zwei wichtige Hinweise: Erstens muss ein Experte, der über Kenntnisse zu Assetplatzierung und IP-Adressschemas verfügt, Assets identifizieren, die sich in einem sekundären Rechenzentrum befinden. Zweitens müssen sowohl Downstreamabhängigkeiten als auch Clients in der Visualisierung evaluiert werden, um bidirektionale Abhängigkeiten zu verstehen.

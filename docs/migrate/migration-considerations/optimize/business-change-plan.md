@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 44296faa9b5be56988babe9e0a847564d51148c3
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3bfb26e97d35bc3ace4b150045633ac2773d647f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839060"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025471"
 ---
 # <a name="business-change-plan"></a>Geschäftsbezogener Änderungsplan
 
@@ -25,7 +25,7 @@ Pläne für die Benutzereinführung konzentrieren sich meist darauf, wie Benutze
 
 Obwohl Ansätze variieren können, sind allgemeine Schemas in den meisten Plänen zur Benutzereinführung enthalten. Diese Schemas basieren in der Regel auf einer Risikokontrolle und einem Ansatz zur Vereinfachung der Übernahme von inkrementeller Verbesserung. Die Eason-Matrix in der folgenden Abbildung stellt die Ideen hinter diesen Schemas für verschiedene Einführungsarten dar.
 
-![Eason-Matrix mit Fragen zur Benutzereinführung](../../../_images/eason-matrix.jpg)
+![Eason-Matrix mit Fragen zur Benutzereinführung](../../../_images/migrate/eason-matrix.jpg)
 
 *Eason-Matrix der Arten von Benutzereinführungen*
 
@@ -37,8 +37,8 @@ Bei einem geschäftsbezogenen Änderungsplan wird über die technischen Änderun
 
 **Upstreamfragen:** Upstreamfragen beschäftigen sich mit den Auswirkungen oder Änderungen vor der Benutzereinführung:
 
-- Wurde ein erwartetes [Geschäftsergebnis](../../../business-strategy/business-outcomes/index.md) quantifiziert?
-- Entsprechen die geschäftlichen Auswirkungen den definierten [Lernmetriken](../../../business-strategy/learning-metrics.md)?
+- Wurde ein erwartetes [Geschäftsergebnis](../../../strategy/business-outcomes/index.md) quantifiziert?
+- Entsprechen die geschäftlichen Auswirkungen den definierten [Lernmetriken](../../../strategy/learning-metrics.md)?
 - Welche Geschäftsprozesse und Teams profitieren von dieser technischen Lösung?
 - Welche Personen im Unternehmen eignen sich am ehesten als Poweruser und für Feedback?
 - Wurden die betroffenen Führungskräfte in die Priorisierung und Planung der Migration einbezogen?

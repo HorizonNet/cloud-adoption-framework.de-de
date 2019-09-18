@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9be3818dd12dff913aae6a2eef86587d869ce5a1
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: fd046fadbc7be08aa1064427fbef5b9e38f55a8c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837612"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025316"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Erste Schritte mit dem Pfad für die Qualifikationsbereitschaft
 
@@ -24,7 +24,7 @@ IT-Mitarbeiter machen sich möglicherweise Sorgen um ihre Rollen und Positionen,
 
 Das Cloud Adoption Framework führt den Leser durch den gesamten Einführungszyklus. In diesem Framework erhalten die Leser die Möglichkeit, die erforderlichen Qualifikationen zu erwerben. Um Ihnen die ersten Schritte auf diesem Weg zu erleichtern, sind Artikel zur Qualifikationsbereitschaft in der folgenden Übersicht enthalten, um den Zugriff zu vereinfachen. Jeder der folgenden Links zeigt die Qualifikationen, die erforderlich sind, um in jeder dieser Einführungsphasen erfolgreich zu sein.
 
-- **[Strategie](../business-strategy/suggested-skills.md):** Entwickeln Sie die Qualifikationen, die zum Vorbereiten eines umsetzbaren Migrationsplans erforderlich sind. Dies umfasst die geschäftliche Begründung und andere erforderliche Geschäftsplanungsqualifikationen.
+- **[Strategie](../strategy/suggested-skills.md):** Entwickeln Sie die Qualifikationen, die zum Vorbereiten eines umsetzbaren Migrationsplans erforderlich sind. Dies umfasst die geschäftliche Begründung und andere erforderliche Geschäftsplanungsqualifikationen.
 - **[Planen](./suggested-skills.md):** Entwickeln Sie die Qualifikationen, die zum Vorbereiten eines umsetzbaren Migrationsplans erforderlich sind. Dies umfasst die geschäftliche Begründung und andere erforderliche Geschäftsplanungsqualifikationen.
 - **[Bereit](../ready/suggested-skills.md):** Entwickeln Sie die Qualifikationen, die erforderlich sind, um das Unternehmen, die Kultur, die Personen und die Umgebung auf kommende Veränderungen vorzubereiten.
 

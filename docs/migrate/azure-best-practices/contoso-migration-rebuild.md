@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: d98d24e6b2645adf03a94a41b0391b89d5eb2852
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: cbe5de4242baedfa704bd90baa7fa3ca0f0aa026
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70835296"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025129"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Neuerstellen einer lokalen App in Azure
 
@@ -109,7 +109,7 @@ Für dieses Szenario benötigt Contoso Folgendes:
 **Anforderungen** | **Details**
 --- | ---
 **Azure-Abonnement** | Contoso hat in einem früheren Artikel Abonnements erstellt. Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/pricing/free-trial) erstellen.<br/><br/> Wenn Sie ein kostenloses Konto erstellen, sind Sie der Administrator Ihres Abonnements und können alle Aktionen durchführen.<br/><br/> Falls Sie ein vorhandenes Abonnement verwenden und nicht der Administrator sind, müssen Sie mit dem Administrator zusammenarbeiten, damit er Ihnen Berechtigungen vom Typ „Besitzer“ oder „Mitwirkender“ zuweist.
-**Azure-Infrastruktur** | [Weitere Informationen](contoso-migration-infrastructure.md) zur Vorgehensweise von Contoso beim Einrichten einer Azure-Infrastruktur.
+**Azure-Infrastruktur** | [Weitere Informationen](./contoso-migration-infrastructure.md) zur Vorgehensweise von Contoso beim Einrichten einer Azure-Infrastruktur.
 **Voraussetzungen für Entwickler** | Contoso benötigt die folgenden Tools auf einer Entwicklerarbeitsstation:<br/><br/> - [Visual Studio 2017 Community Edition: Version 15.5](https://www.visualstudio.com)<br/><br/> .NET-Workload aktiviert<br/><br/> [Git-Client](https://git-scm.com)<br/><br/> [Azure PowerShell](https://azure.microsoft.com/downloads)<br/><br/> [Azure-Befehlszeilenschnittstelle](/cli/azure/install-azure-cli?view=azure-cli-latest)<br/><br/> [Docker CE (Windows 10) oder Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install) für die Verwendung von Windows-Containern festgelegt
 
 <!-- markdownlint-enable MD033 -->
@@ -150,7 +150,7 @@ Die Contoso-Administratoren führen die Bereitstellung wie folgt durch:
     ![AKS](./media/contoso-migration-rebuild/aks2.png)
 4. Sie wählen die Optionen **Ansicht** > **Integriertes Terminal** aus, um das integrierte Terminal in Visual Studio Code zu öffnen.
     ![AKS](./media/contoso-migration-rebuild/aks3.png)
-5. In dem in PowerShell integrierten Terminal meldet Contoso sich bei Azure mit dem Befehl „Connect-AzureRmAccount“ an. Weitere Informationen zu den ersten Schritten mit PowerShell finden Sie [hier](/powershell/azure/get-started-azureps).
+5. In dem in PowerShell integrierten Terminal meldet Contoso sich bei Azure mit dem Befehl „Connect-AzureRmAccount“ an. Weitere Informationen zu den ersten Schritten mit PowerShell finden Sie [hier](https://docs.microsoft.com/powershell/azure/get-started-azureps).
     ![AKS](./media/contoso-migration-rebuild/aks4.png)
 6. Contoso authentifiziert die Azure CLI, indem es den Befehl **az login** ausführt und die Anweisungen für die Authentifizierung mithilfe eines Webbrowsers befolgt. Weitere Informationen zur Anmeldung bei der Azure CLI finden Sie [hier](/cli/azure/authenticate-azure-cli?view=azure-cli-latest).
     ![AKS](./media/contoso-migration-rebuild/aks5.png)
@@ -585,22 +585,22 @@ Da die migrierten Ressourcen in Azure enthalten sind, muss Contoso nun die neue 
 
 ### <a name="security"></a>Sicherheit
 
-- Contoso muss sicherstellen, dass die neuen Datenbanken geschützt sind. [Weitere Informationen](/azure/sql-database/sql-database-security-overview)
+- Contoso muss sicherstellen, dass die neuen Datenbanken geschützt sind. [Weitere Informationen](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)
 - Die App muss für die Verwendung von SSL mit Zertifikaten aktualisiert werden. Die Containerinstanz sollte erneut bereitgestellt werden, um auf 443 zu antworten.
-- Zum Schutz von Geheimnissen für die Service Fabric-Apps sollte Contoso die Verwendung von Key Vault in Erwägung ziehen. [Weitere Informationen](/azure/service-fabric/service-fabric-application-secret-management)
+- Zum Schutz von Geheimnissen für die Service Fabric-Apps sollte Contoso die Verwendung von Key Vault in Erwägung ziehen. [Weitere Informationen](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-secret-management)
 
 ### <a name="backups-and-disaster-recovery"></a>Sicherungen und Notfallwiederherstellung
 
-- Contoso muss die Sicherungsanforderungen für Azure SQL-Datenbank überprüfen. [Weitere Informationen](/azure/sql-database/sql-database-automated-backups)
-- Contoso sollte die Implementierung von SQL-Failovergruppen berücksichtigen, um ein regionales Failover für die Datenbank bereitzustellen. [Weitere Informationen](/azure/sql-database/sql-database-geo-replication-overview)
-- Contoso kann die Georeplikation für die Premium-SKU von ACR nutzen. [Weitere Informationen](/azure/container-registry/container-registry-geo-replication)
-- Cosmos DB führt automatisch Sicherungen durch. Contoso kann sich über diesen Prozess [informieren](/azure/cosmos-db/online-backup-and-restore).
+- Contoso muss die Sicherungsanforderungen für Azure SQL-Datenbank überprüfen. [Weitere Informationen](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)
+- Contoso sollte die Implementierung von SQL-Failovergruppen berücksichtigen, um ein regionales Failover für die Datenbank bereitzustellen. [Weitere Informationen](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview)
+- Contoso kann die Georeplikation für die Premium-SKU von ACR nutzen. [Weitere Informationen](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)
+- Cosmos DB führt automatisch Sicherungen durch. Contoso kann sich über diesen Prozess [informieren](https://docs.microsoft.com/azure/cosmos-db/online-backup-and-restore).
 
 ### <a name="licensing-and-cost-optimization"></a>Lizenzierung und Kostenoptimierung
 
-- Nachdem alle Ressourcen bereitgestellt wurden, sollte Contoso Azure-Tags basierend auf seiner [Infrastrukturplanung](contoso-migration-infrastructure.md#set-up-tagging) zuweisen.
+- Nachdem alle Ressourcen bereitgestellt wurden, sollte Contoso Azure-Tags basierend auf seiner [Infrastrukturplanung](./contoso-migration-infrastructure.md#set-up-tagging) zuweisen.
 - Die gesamte Lizenzierung ist in die Kosten für die PaaS-Dienste integriert, die Contoso verwendet. Dies wird über EA verrechnet.
-- Contoso aktiviert Azure Cost Management. Es ist durch Cloudyn lizenziert, ein Tochterunternehmen von Microsoft. Dabei handelt es sich um eine Cost Management-Lösung mit mehreren Clouds, die Ihnen das Verwenden und Verwalten von Azure und anderen Cloudressourcen erleichtert. [Erfahren Sie mehr](/azure/cost-management/overview) über die Azure Cost Management.
+- Contoso aktiviert Azure Cost Management. Es ist durch Cloudyn lizenziert, ein Tochterunternehmen von Microsoft. Dabei handelt es sich um eine Cost Management-Lösung mit mehreren Clouds, die Ihnen das Verwenden und Verwalten von Azure und anderen Cloudressourcen erleichtert. [Erfahren Sie mehr](https://docs.microsoft.com/azure/cost-management/overview) über die Azure Cost Management.
 
 ## <a name="conclusion"></a>Zusammenfassung
 

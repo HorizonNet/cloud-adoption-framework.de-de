@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c95134909838f11377b16e90c5deb68850388938
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 19c3d6861ddb4ad87255233fae1a7f535538324b
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818828"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022837"
 ---
 # <a name="assess-the-digital-estate"></a>Bewerten der digitalen Ressourcen
 
@@ -58,8 +58,8 @@ Führen Sie diese Schritte aus, um mit Azure Migrate mit einer Servermigrationsb
 
 ### <a name="read-more"></a>Weitere Informationen
 
-- [Übersicht über Azure Migrate](/azure/migrate/migrate-services-overview)
-- [Migrieren von physischen oder virtuellen Servern zu Azure](/azure/migrate/tutorial-migrate-physical-virtual-machines)
+- [Übersicht über Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview)
+- [Migrieren von physischen oder virtuellen Servern zu Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
 - [Azure Migrate im Azure-Portal](https://portal.azure.com/#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview)
 
 ::: zone-end
@@ -68,22 +68,22 @@ Führen Sie diese Schritte aus, um mit Azure Migrate mit einer Servermigrationsb
 
 Service Map ermittelt automatisch Anwendungskomponenten auf Windows- und Linux-Systemen und stellt die Kommunikation zwischen Diensten dar. Mit Service Map können Sie die Server Ihrer Vorstellung gemäß anzeigen – als verbundene Systeme, die wichtige Dienste bereitstellen. Dienstzuordnung zeigt Verbindungen zwischen Servern, Prozessen, ein- und ausgehende Verbindungslatenz und Ports über die gesamte TCP-Verbindungsarchitektur an. Außer der Installation eines Agents ist keine weitere Konfiguration erforderlich.
 
-Für Azure Migrate wird die Dienstzuordnung verwendet, um die Berichterstellungsfunktionen und Abhängigkeiten für die Umgebung zu verbessern. Diese Integration ist unter [Visualisierung von Abhängigkeiten](/azure/migrate/concepts-dependency-visualization) ausführlich beschrieben. Wenn Sie den Azure Migrate-Dienst verwenden, können Sie ohne weitere Schritte die Dienstzuordnung konfigurieren und ihre Vorteile nutzen. Die folgenden Anweisungen dienen als Referenz, falls Sie die Dienstzuordnung für andere Zwecke oder Projekte verwenden möchten.
+Für Azure Migrate wird die Dienstzuordnung verwendet, um die Berichterstellungsfunktionen und Abhängigkeiten für die Umgebung zu verbessern. Diese Integration ist unter [Visualisierung von Abhängigkeiten](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization) ausführlich beschrieben. Wenn Sie den Azure Migrate-Dienst verwenden, können Sie ohne weitere Schritte die Dienstzuordnung konfigurieren und ihre Vorteile nutzen. Die folgenden Anweisungen dienen als Referenz, falls Sie die Dienstzuordnung für andere Zwecke oder Projekte verwenden möchten.
 
 ### <a name="enable-dependency-visualization-using-service-map"></a>Aktivieren der Visualisierung von Abhängigkeiten mithilfe der Dienstzuordnung
 
 Zur Verwendung der Abhängigkeitsvisualisierung müssen Sie Agents auf alle lokalen Computer, die Sie analysieren möchten, herunterladen und dort installieren.
 
-- Der [Microsoft Monitoring Agent (MMA)](/azure/log-analytics/log-analytics-agent-windows) muss auf jedem Computer installiert werden.
-- Der [Dependency-Agent](/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) muss auf jedem Computer installiert werden.
+- Der [Microsoft Monitoring Agent (MMA)](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows) muss auf jedem Computer installiert werden.
+- Der [Dependency-Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) muss auf jedem Computer installiert werden.
 - Falls Sie über Computer ohne Internetverbindung verfügen, ist es außerdem erforderlich, auf diesen das Log Analytics-Gateway herunterzuladen und zu installieren.
 
 <!-- markdownlint-disable MD024 -->
 
 ### <a name="read-more"></a>Weitere Informationen
 
-- [Verwenden der Dienstzuordnungslösung in Azure](/azure/azure-monitor/insights/service-map)
-- [Azure Migrate und Dienstzuordnung: Visualisierung von Abhängigkeiten](/azure/migrate/concepts-dependency-visualization)
+- [Verwenden der Dienstzuordnungslösung in Azure](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
+- [Azure Migrate und Dienstzuordnung: Visualisierung von Abhängigkeiten](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
 
 
 # <a name="scenarios-and-stakeholderstabscenarios"></a>[Szenarien und Beteiligte](#tab/Scenarios)

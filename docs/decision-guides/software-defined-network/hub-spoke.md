@@ -9,25 +9,25 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: f47bf0256e00eafe37ebf71ed2da9b64f0b07484
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d2337ea5fdcd18fc2f56c60c64a35ee878710e65
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837872"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023566"
 ---
 # <a name="software-defined-networking-hub-and-spoke"></a>Softwaredefiniertes Netzwerk: Hub-and-Spoke-Modell
 
 Im Hub-and-Spoke-Netzwerkmodell wird Ihre auf Azure basierende Cloud-Netzwerkinfrastruktur in mehreren verbundenen virtuellen Netzwerken organisiert. Mithilfe dieses Modells können Sie gängige Kommunikations- oder Sicherheitsanforderungen effizienter bewältigen und mögliche Einschränkungen des Abonnements berücksichtigen.
 
-Im Hub-and-Spoke-Modell ist der _Hub_ ein virtuelles Netzwerk, das als Zentrale für die Verwaltung externer Konnektivitäts- und Hostingdienste dient, die von mehreren Workloads genutzt werden. Die _Spokes_ sind virtuelle Netzwerke, die Workloads hosten und sich über [Peering virtueller Netzwerke](/azure/virtual-network/virtual-network-peering-overview) mit dem zentralen Hub verbinden.
+Im Hub-and-Spoke-Modell ist der _Hub_ ein virtuelles Netzwerk, das als Zentrale für die Verwaltung externer Konnektivitäts- und Hostingdienste dient, die von mehreren Workloads genutzt werden. Die _Spokes_ sind virtuelle Netzwerke, die Workloads hosten und sich über [Peering virtueller Netzwerke](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview) mit dem zentralen Hub verbinden.
 
 Der gesamte Datenverkehr, der in die oder aus den Spoke-Netzwerken der Workload geleitet wird, wird über das Hub-Netzwerk geleitet, wo er weitergeleitet, inspiziert oder anderweitig von zentral verwalteten IT-Regeln oder -Prozessen verwaltet werden kann.
 
 Dieses Modell zielt darauf ab, die folgenden Probleme zu lösen:
 
 - **Kosteneinsparungen und Effizienz der Verwaltung.** Zentralisierung von Diensten, die von mehreren Workloads, z.B. Network Virtual Appliances (NVAs) und DNS-Servern an einem zentralen Standort gemeinsam genutzt werden können. Auf diese Weise kann die IT-Abteilung redundante Ressourcen und den Verwaltungsaufwand für mehrere Workloads minimieren.
-- **Umgehen von Abonnementgrenzen.** Große cloudbasierte Workloads können den Einsatz von mehr Ressourcen erfordern, als innerhalb eines einzelnen Azure-Abonnements zulässig ist (siehe [Abonnementgrenzen](/azure/azure-subscription-service-limits)). Durch ein Peering virtueller Netzwerke für eine Workload aus verschiedenen Abonnements zu einem zentralen Hub können diese Grenzwerte umgangen werden.
+- **Umgehen von Abonnementgrenzen.** Große cloudbasierte Workloads können den Einsatz von mehr Ressourcen erfordern, als innerhalb eines einzelnen Azure-Abonnements zulässig ist (siehe [Abonnementgrenzen](https://docs.microsoft.com/azure/azure-subscription-service-limits)). Durch ein Peering virtueller Netzwerke für eine Workload aus verschiedenen Abonnements zu einem zentralen Hub können diese Grenzwerte umgangen werden.
 - **Trennung von Zuständigkeiten.** Die Fähigkeit, einzelne Workloads zwischen zentralen IT-Teams und für Workloads zuständige Teams bereitzustellen.
 
 Das folgende Diagramm zeigt eine exemplarische Hub-and-Spoke-Architektur mit zentral verwalteter Hybridkonnektivität.
@@ -47,7 +47,7 @@ Für die Implementieren einer virtuellen Netzwerkarchitektur gemäß Hub-and-Spo
 
 ## <a name="global-hub-and-spoke"></a>Globales Hub-and-Spoke-Modell
 
-Hub-and-Spoke-Architekturen werden häufig mit virtuellen Netzwerken implementiert, die in derselben Azure-Region bereitgestellt werden, um die Wartezeiten zwischen Netzwerken zu minimieren. Große Unternehmen mit globaler Reichweite müssen jedoch möglicherweise Workloads in mehreren Regionen bereitstellen, um Verfügbarkeit, Notfallwiederherstellung oder die Erfüllung gesetzlicher Anforderungen zu gewährleisten. Das Hub-and-Spoke-Modell kann ein [globalen Peerings virtueller Netzwerke](/azure/virtual-network/virtual-network-peering-overview) in Azure nutzen, um die zentralisierte Verwaltung und die gemeinsamen Dienste regionsübergreifend erweitern, um die über die ganze Welt verteilten Workloads zu unterstützen.
+Hub-and-Spoke-Architekturen werden häufig mit virtuellen Netzwerken implementiert, die in derselben Azure-Region bereitgestellt werden, um die Wartezeiten zwischen Netzwerken zu minimieren. Große Unternehmen mit globaler Reichweite müssen jedoch möglicherweise Workloads in mehreren Regionen bereitstellen, um Verfügbarkeit, Notfallwiederherstellung oder die Erfüllung gesetzlicher Anforderungen zu gewährleisten. Das Hub-and-Spoke-Modell kann ein [globalen Peerings virtueller Netzwerke](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview) in Azure nutzen, um die zentralisierte Verwaltung und die gemeinsamen Dienste regionsübergreifend erweitern, um die über die ganze Welt verteilten Workloads zu unterstützen.
 
 ## <a name="learn-more"></a>Weitere Informationen
 

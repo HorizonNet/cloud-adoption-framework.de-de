@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 30f50a6f4d965834de1de354b3149c559f071f72
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d98d8ea586d76c583ab22670ac310a9f5bf36fc1
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839108"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024723"
 ---
 # <a name="skills-readiness-path-during-the-migrate-phase-of-a-migration-journey"></a>Pfad für die Qualifikationsbereitschaft während der Phase „Migration“ einer Migrationsreise
 
@@ -23,16 +23,16 @@ Es gibt vier verschiedene Prozesse, die während der Phase „Migration“ einer
 
 ## <a name="prerequisites-skilling-resources"></a>Voraussetzungen betreffende Ressourcen zur Befähigung
 
-Die Implementierung von „Migration“-Prozessen baut auf den Qualifikationen auf, die in den Phasen „[Planung](../../business-strategy/suggested-skills.md)“ und „[Bereitschaft](../../organization/suggested-skills.md)“ der Migrationsreise erworben wurden.
+Die Implementierung von „Migration“-Prozessen baut auf den Qualifikationen auf, die in den Phasen „[Planung](../../strategy/suggested-skills.md)“ und „[Bereitschaft](../../organize/suggested-skills.md)“ der Migrationsreise erworben wurden.
 
 ## <a name="assess-skilling-resources"></a>Ressourcen zur Befähigung zum Bewerten
 
 Die folgenden Tools können dem Team dabei helfen, Bewertungen auszuführen:
 
 - [Ausgewogenheit des Portfolios](./balance-the-portfolio.md): Sicherstellen von Ausgewogenheit und richtigen Investitionszuordnungen innerhalb eines Anwendungsportfolios.
-- [Erstellen einer geschäftlichen Begründung](../../business-strategy/cloud-migration-business-case.md): Erstellen und Verstehen der geschäftlichen Begründung für die Cloudmigrationsaktivitäten.
+- [Erstellen einer geschäftlichen Begründung](../../strategy/cloud-migration-business-case.md): Erstellen und Verstehen der geschäftlichen Begründung für die Cloudmigrationsaktivitäten.
 - [Rationalisieren der digitalen Ressourcen](../../digital-estate/rationalize.md): Rationalisieren von Assets in den digitalen Ressourcen.
-- [Bewertung des Anwendungsportfolios](/learn/modules/app-and-infra-migration-and-modernization): Kriterien zum Treffen von Entscheidungen in Bezug auf Migrations- oder Innovationsoptionen innerhalb des Anwendungsportfolios.
+- [Bewertung des Anwendungsportfolios](https://docs.microsoft.com/learn/modules/app-and-infra-migration-and-modernization): Kriterien zum Treffen von Entscheidungen in Bezug auf Migrations- oder Innovationsoptionen innerhalb des Anwendungsportfolios.
 - [Bewerten und Planen der Microsoft Azure-Migration](https://www.pluralsight.com/courses/microsoft-azure-migration-assessing-planning): PluralSight-Kurs zur Unterstützung bei der Bewertung von lokalen Workloads
 
 Während der Bewertungsprozesse werden die Architekten aufgefordert, Lösungen für die einzelnen Workloads zu entwickeln. Die folgenden Ressourcen zur Befähigung können Architekten auf diese Aufgaben vorbereiten:
@@ -45,7 +45,7 @@ Während der Bewertungsprozesse werden die Architekten aufgefordert, Lösungen f
 
 Das folgende Tutorial kann das Team auf Migrationsaktivitäten vorbereiten:
 
-- [Migrieren von lokalen Computern zu Azure](/azure/site-recovery/migrate-tutorial-on-premises-azure): Verwenden von Azure Site Recovery, um VMs zu Azure migrieren.
+- [Migrieren von lokalen Computern zu Azure](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure): Verwenden von Azure Site Recovery, um VMs zu Azure migrieren.
 - [Rehosten von Workloads für Azure](https://aka.ms/rehostcourse): PluralSight-Kurs, der den Teilnehmern vermittelt, wie das Rehosten von Workloads für Azure erfolgt
 - [Migrieren von physischen und virtuellen Servern zu Azure](https://app.pluralsight.com/library/courses/microsoft-azure-migrating-physical-virtual-servers/table-of-contents): PluralSight-Kurs zum Migrieren von Servern zu Azure
 - [Importieren und Exportieren von Daten für Azure](https://app.pluralsight.com/library/courses/microsoft-azure-import-export-data/table-of-contents): PluralSight-Kurs zur Datenübertragung von und zu Azure

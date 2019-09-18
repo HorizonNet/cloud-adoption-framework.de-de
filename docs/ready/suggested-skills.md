@@ -8,12 +8,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2d5444b340dbb0252f3aaf70b9cfca88126234e4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3936307ec1062d36e890b65d8687ad0acbb5b129
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70834676"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025112"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>Pfad für die Qualifikationsbereitschaft während der Phase „Bereitschaft“ eines Migrationspfads
 
@@ -24,7 +24,7 @@ Während der Phase „Bereitschaft“ eines Migrationspfads ist das Ziel die Vor
 Abhängig von den Motivationen und Geschäftsergebnissen, die mit einer Cloudeinführung verbunden sind, kann es notwendig sein, dass Führungskräfte neue Organisationsstrukturen oder virtuelle Teams (v-Teams) aufbauen, um verschiedene Funktionen zu ermöglichen. Die folgenden Artikel helfen dabei, die Qualifikationen zu entwickeln, die notwendig sind, um diese Teams in Übereinstimmung mit den gewünschten Ergebnissen zu strukturieren:
 
 - [Erstausrichtung der Organisation](./index.md): Übersicht über die organisatorische Ausrichtung und verschiedene Teamstrukturen zum Erreichen bestimmter Ziele.
-- [Aufschlüsseln von Silos und Machtbereichen](../organization/fiefdoms-silos.md): Grundlegendes zu zwei gängigen organisatorischen Antimustern und Möglichkeiten, das Team zur produktiven Zusammenarbeit zu führen.
+- [Aufschlüsseln von Silos und Machtbereichen](../organize/fiefdoms-silos.md): Grundlegendes zu zwei gängigen organisatorischen Antimustern und Möglichkeiten, das Team zur produktiven Zusammenarbeit zu führen.
 
 ## <a name="environmental-technical-readiness-learning-paths"></a>Lernpfade für die (technische) Bereitschaft der Umgebung
 

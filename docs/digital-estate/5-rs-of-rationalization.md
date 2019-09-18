@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 12373dea4bffaaa1b4894e4a34f291d190caab7e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 40962b8c658c40e4a27e3c025bc42b3aa5acd0f3
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837820"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023617"
 ---
 # <a name="cloud-rationalization"></a>Cloudrationalisierung
 
-Cloudrationalisierung bezeichnet die Untersuchung von Ressourcen, um die bestmögliche Migrations- oder Modernisierungsmethode für die jeweilige Ressource in der Cloud zu ermitteln. Weitere Informationen zum Rationalisierungsprozess finden Sie unter [Worum handelt es sich bei digitalen Ressourcen?](index.md).
+Cloudrationalisierung bezeichnet die Untersuchung von Ressourcen, um die bestmögliche Migrations- oder Modernisierungsmethode für die jeweilige Ressource in der Cloud zu ermitteln. Weitere Informationen zum Rationalisierungsprozess finden Sie unter [Worum handelt es sich bei digitalen Ressourcen?](./index.md).
 
 ## <a name="rationalization-context"></a>Rationalisierungskontext
 
@@ -161,4 +161,4 @@ Faktoren für die qualitative Analyse:
 Gemeinsam können Sie diese fünf Phasen der Rationalisierung auf digitale Ressourcen anwenden, damit Sie Rationalisierungsentscheidungen zum zukünftigen Status der einzelnen Anwendungen einfacher treffen können.
 
 > [!div class="nextstepaction"]
-> [Worum handelt es sich bei digitalen Ressourcen?](index.md)
+> [Worum handelt es sich bei digitalen Ressourcen?](./index.md)

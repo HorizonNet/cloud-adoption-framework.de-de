@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8f1d622401eff58710e016b690292e81d9b7f1d7
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 47148153d63137e6281b37bcb2be28e63bc6586c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905283"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025168"
 ---
 # <a name="azure-fundamental-concepts"></a>Grundlegende Konzepte in Azure
 
@@ -69,7 +69,7 @@ Wenn Sie ein Azure-Abonnement erstellen, können Sie es einem vorhandenen Azure 
 
 Ein E-Mail-Konto kann mehreren Azure-Abonnements zugeordnet sein. Der Kontoadministrator kann ein Abonnement in ein anderes Konto übertragen.
 
-Eine detaillierte Beschreibung der Rollen in Azure finden Sie unter [Administratorrollen für klassische Abonnements, Azure RBAC-Rollen und Azure AD-Administratorrollen](/azure/role-based-access-control/rbac-and-directory-admin-roles).
+Eine detaillierte Beschreibung der Rollen in Azure finden Sie unter [Administratorrollen für klassische Abonnements, Azure RBAC-Rollen und Azure AD-Administratorrollen](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles).
 
 ## <a name="subscriptions-and-regions"></a>Abonnements und Regionen
 
@@ -84,13 +84,13 @@ Ein Abonnement ist nicht an eine bestimmte Azure-Region gebunden. Allerdings wir
 
 Die folgenden Ressourcen bieten detaillierte Informationen über die Konzepte, die in diesem Artikel vorgestellt wurden:
 
-- [Wie funktioniert Azure?](/azure/architecture/cloud-adoption/getting-started/what-is-azure)
-- [Ressourcenzugriffsverwaltung in Azure](../../governance/resource-consistency/azure-resource-access.md)
-- [Übersicht über den Azure Resource Manager](/azure/azure-resource-manager/resource-group-overview)
-- [Rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC) für Azure-Ressourcen](/azure/role-based-access-control/overview)
-- [Was ist Azure Active Directory?](/azure/active-directory/fundamentals/active-directory-whatis)
-- [Zuordnen oder Hinzufügen eines Azure-Abonnements zu Ihrem Azure Active Directory-Mandanten](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
-- [Topologien für Azure AD Connect](/azure/active-directory/hybrid/plan-connect-topologies)
+- [Wie funktioniert Azure?](../../getting-started/what-is-azure.md)
+- [Ressourcenzugriffsverwaltung in Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Übersicht über den Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)
+- [Rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC) für Azure-Ressourcen](https://docs.microsoft.com/azure/role-based-access-control/overview)
+- [Was ist Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
+- [Zuordnen oder Hinzufügen eines Azure-Abonnements zu Ihrem Azure Active Directory-Mandanten](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
+- [Topologien für Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies)
 - [Abonnements, Lizenzen, Konten und Mandanten für die Microsoft-Cloudangebote](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
 
 ## <a name="next-steps"></a>Nächste Schritte

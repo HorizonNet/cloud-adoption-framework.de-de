@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3709b37e1604ff966d043c142e86a1dbb78ecffb
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 13a18db6a074f73b962d29f4d5963571a49869d4
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70836628"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022648"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>Benchmarking und Größenänderung von Cloudressourcen
 
@@ -36,7 +36,7 @@ Verwenden Sie während der Migration fundierte Vermutungen, und experimentieren 
 
 ## <a name="benchmark-and-optimize-with-azure-cost-management"></a>Benchmarking und Optimierung mit Azure Cost Management
 
-[Azure Cost Management](/azure/cost-management/overview) ist durch Cloudyn, einem Tochterunternehmen von Microsoft, lizenziert und verwaltet Cloudausgaben transparent und präzise. Dieser Dienst sorgt für Überwachung, Benchmarking, Zuteilung und Optimierung von Cloudkosten.
+[Azure Cost Management](https://docs.microsoft.com/azure/cost-management/overview) ist durch Cloudyn, einem Tochterunternehmen von Microsoft, lizenziert und verwaltet Cloudausgaben transparent und präzise. Dieser Dienst sorgt für Überwachung, Benchmarking, Zuteilung und Optimierung von Cloudkosten.
 
 Verlaufsdaten können beim Verwalten von Kosten helfen, indem Nutzung und Kosten im zeitlichen Verlauf analysiert werden, um Trends zu erkennen, die dann zur Prognose zukünftiger Ausgaben verwendet werden. Die Kostenverwaltung enthält ebenfalls nützliche projizierte Kostenberichte. Die Kostenzuteilung verwaltet Kosten, indem diese basierend auf Tagrichtlinien analysiert werden. Verwenden Sie die Kostenzuteilung für Showback und die verbrauchsbasierte Kostenzuteilung, um die Ressourcennutzung und die zugehörigen Kosten anzuzeigen und das Nutzungsverhalten zu beeinflussen oder diese Mandantenkunden in Rechnung zu stellen. Die Zugriffssteuerung unterstützt Sie beim Verwalten der Kosten, indem sichergestellt wird, dass Benutzer und Teams nur auf die Cost Management-Daten zugreifen können, die sie benötigen. Warnungen unterstützen Sie beim Verwalten der Kosten durch eine automatische Benachrichtigung, wenn ungewöhnliche Ausgaben oder eine Budgetüberschreitung auftreten. Durch Warnungen können auch andere Beteiligte automatisch über Anomalien bei den Ausgaben und das Risiko einer Budgetüberschreitung benachrichtigt werden. Verschiedene Berichte unterstützen Warnungen, die auf dem Budget und auf Kostenschwellenwerten basieren.
 

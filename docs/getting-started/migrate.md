@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 83518d5b6bfdd0572161847e505569dc63da60a7
-ms.sourcegitcommit: 5846ed4d0bf1b6440f5e87bc34ef31ec8b40b338
+ms.openlocfilehash: 7c35d64e3106c2a34670d4dc05614de087f5d5c3
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70906025"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023413"
 ---
 # <a name="getting-started-with-a-cloud-migration-journey"></a>Erste Schritte auf Ihrem Weg zur Cloudmigration
 
@@ -70,7 +70,7 @@ Cloudmigrationen werden oft als ein einzelnes Projekt innerhalb eines umfassende
 
 Die Cloudstrategie und -planung ist eine Methodik, die sich auf die Abstimmung von Geschäftsergebnissen, Prioritäten und Einschränkungen konzentriert, um eine eindeutige Migrationsstrategie und einen klaren Migrationsplan zu entwickeln. Der daraus resultierende Plan (oder Migrationsbacklog) beschreibt den Ansatz für die Migration und Modernisierung des gesamten IT-Portfolios, das ganze Rechenzentren, mehrere Workloads oder verschiedene Sammlungen von Infrastrukturen, Anwendungen und Daten umfassen kann. Die richtige Verwaltung des IT-Portfolios während des gesamten Cloudimplementierungsprozesses trägt dazu bei, die gewünschten Geschäftsergebnisse zu erzielen.
 
-![Übersicht über das Framework für die Cloudeinführung](../_images/cloud-adoption-framework-overview.png)
+![Übersicht über das Framework für die Cloudeinführung](../_images/caf-overview.png)
 
 **Erste Schritte:** Im weiteren Verlauf dieses Artikels wird der Leser auf die richtige Anwendung der Cloudstrategie- und -planungsmethodik des Cloud Adoption Framework vorbereitet. Außerdem werden zusätzliche Ressourcen und Links aufgeführt, die den Leser beim Verfolgen dieses Ansatzes zur Durchführung der Cloudimplementierungsaktivitäten unterstützen können.
 
@@ -80,14 +80,14 @@ Die Cloudstrategie- und -planungsmethodik des Cloud Adoption Framework basiert a
 
 Wie in der obigen Abbildung dargestellt, richtet dieses Framework strategische Entscheidungen auf eine kleine Anzahl von enthaltenen Prozessen aus, die innerhalb eines iterativen Modells ausgeführt werden. Die Beschreibung erfolgt zwar in einem linearen Dokument, aber es wird erwartet, dass jeder der folgenden Prozesse parallel zu den Iterationen der Cloudimplementierung reift. Mithilfe der Links für jeden Prozess können Sie den Endzustand und die Mittel zur Reifung zum gewünschten Endzustand definieren:
 
-- **[Planen](../business-strategy/index.md):** Wenn die technische Implementierung auf klare Geschäftsziele ausgerichtet ist, kann der Erfolg über mehrere Cloudimplementierungsaktivitäten hinweg viel einfacher gemessen und ausgerichtet werden, unabhängig von technischen Entscheidungen.
+- **[Planen](../strategy/index.md):** Wenn die technische Implementierung auf klare Geschäftsziele ausgerichtet ist, kann der Erfolg über mehrere Cloudimplementierungsaktivitäten hinweg viel einfacher gemessen und ausgerichtet werden, unabhängig von technischen Entscheidungen.
 - **[Bereitmachen](../ready/index.md):** Die Vorbereitung von Unternehmen, Kultur, Mitarbeitern und Umgebung auf anstehende Änderungen führt bei allen Aktivitäten zum Erfolg und beschleunigt Implementierungs- und Änderungsprojekte.
 - **Übernehmen:** Sicherstellen der ordnungsgemäßen Implementierung der gewünschten Änderungen über alle IT- und Geschäftsprozesse hinweg, um die gewünschten Geschäftsergebnisse zu erzielen.
   - **[Migrieren](../migrate/index.md):** Iterative Ausführung der [Cloudimplementierungsmethodik](#cloud-implementation) unter Einhaltung des getesteten Prozesses zum Bewerten, Migrieren, Optimieren, Sichern und Verwalten, um einen wiederholbaren Prozess zum Migrieren von Workloads zu erstellen.
 - **[Ausführen](../operating-model/index.md):** Definieren Sie ein verwaltbares Betriebsmodell, um die Aktivitäten während und lange nach der Einführung zu steuern.
-  - **[Organisation](../organization/index.md):** Richten Sie Mitarbeiter und Teams so aus, dass sie einen reibungslosen Cloudbetrieb und eine problemlose Einführung sicherstellen.
-  - **[Steuern](../governance/index.md):** Ausrichten der Unternehmensrichtlinie auf konkrete Risiken, die durch richtlinien-, prozess- und cloudbasierte Governancetools gemindert werden können.
-  - **[Verwaltung](../operations/index.md):** Erweitern des IT-Betriebs, um sicherzustellen, dass cloudbasierte Lösungen über sichere und kostengünstige Prozesse mit modernen, primär für die Cloud konzipierten Tools ausgeführt werden können.
+  - **[Organisation](../organize/index.md):** Richten Sie Mitarbeiter und Teams so aus, dass sie einen reibungslosen Cloudbetrieb und eine problemlose Einführung sicherstellen.
+  - **[Steuern](../govern/index.md):** Ausrichten der Unternehmensrichtlinie auf konkrete Risiken, die durch richtlinien-, prozess- und cloudbasierte Governancetools gemindert werden können.
+  - **[Verwaltung](../manage/index.md):** Erweitern des IT-Betriebs, um sicherzustellen, dass cloudbasierte Lösungen über sichere und kostengünstige Prozesse mit modernen, primär für die Cloud konzipierten Tools ausgeführt werden können.
 
 Während dieses gesamten Migrationsvorgangs wird dieses Framework verwendet, um Unklarheiten zu beseitigen, Änderungen zu meistern und funktionsübergreifende Teams durch die Realisierung von Geschäftsergebnissen zu führen.
 
@@ -140,6 +140,6 @@ Das Cloud Adoption Framework ist eine Lebenszykluslösung. Es soll sowohl Leser 
 >
 > [Migrieren](../migrate/index.md)
 >
-> [Ausführen](../operations/index.md)
+> [Verwalten](../manage/index.md)
 >
-> [Steuern](../governance/index.md)
+> [Steuern](../govern/index.md)

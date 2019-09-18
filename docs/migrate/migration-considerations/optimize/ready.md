@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7d3e7f408e38634a9472ce75542d9e0ae1fdc38b
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: b7f526cbf2b7efba981058d5614b4378adc8c6f6
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70836624"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022624"
 ---
 # <a name="prepare-a-migrated-application-for-production-promotion"></a>Vorbereiten einer migrierten Anwendung für das Höherstufen zur Produktion
 
@@ -21,7 +21,7 @@ Nach dem Höherstufen einer Workload wird Datenverkehr von Produktionsbenutzern 
 
 ## <a name="validate-the-business-change-plan"></a>Überprüfen des geschäftsbezogenen Änderungsplans
 
-Transformation geschieht, wenn geschäftliche Benutzer und Kunden von einer technischen Lösung profitieren, die Prozesse ausführt, die das Unternehmen steuern. Bereitschaft ist eine gute Gelegenheit, den [geschäftsbezogenen Änderungsplan](business-change-plan.md) zu überprüfen und sicherzustellen, dass damit angemessenes Training für geschäftliche und technische Teams verbunden ist. Stellen Sie insbesondere sicher, dass die folgenden technologiebezogenen Aspekte des Plans ordnungsgemäß kommuniziert werden:
+Transformation geschieht, wenn geschäftliche Benutzer und Kunden von einer technischen Lösung profitieren, die Prozesse ausführt, die das Unternehmen steuern. Bereitschaft ist eine gute Gelegenheit, den [geschäftsbezogenen Änderungsplan](./business-change-plan.md) zu überprüfen und sicherzustellen, dass damit angemessenes Training für geschäftliche und technische Teams verbunden ist. Stellen Sie insbesondere sicher, dass die folgenden technologiebezogenen Aspekte des Plans ordnungsgemäß kommuniziert werden:
 
 - Training der Endbenutzer ist abgeschlossen (oder zumindest geplant).
 - Ausfallzeitenfenster wurden ggf. kommuniziert und genehmigt.

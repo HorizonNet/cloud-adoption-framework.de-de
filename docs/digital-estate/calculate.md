@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: c1fb4224c7a8865785b795ad8f28bfa04779ce89
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e46c045d51bd4961f1cf355352cb84b110a81d81
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837816"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023534"
 ---
 # <a name="align-cost-models-with-the-digital-estate-to-forecast-cloud-costs"></a>Abstimmen von Kostenmodellen mit digitalen Ressourcen zur Prognose von Cloudkosten
 
@@ -22,9 +22,9 @@ Nachdem Sie eine digitale Ressource rationalisiert haben, können Sie sie mit de
 
 Azure-Preistools ermöglichen Ihnen eine transparente und exakte Verwaltung von Cloudausgaben, um von Azure und anderen Clouds bestmöglich profitieren zu können. Mithilfe der bereitgestellten Tools zur Überwachung, Zuteilung und Optimierung von Cloudausgaben können Kunden zukünftige Investitionen beschleunigen.
 
-- [Azure Migrate](/azure/migrate/migrate-overview): Azure Migrate ist wahrscheinlich der kostengünstigste Ansatz für die Kostenmodellabstimmung. Dieses Tool bietet eine [Bestandserfassung](inventory.md), [begrenzte Rationalisierung](rationalize.md) und Kostenkalkulationen für digitale Ressourcen in einem einzigen Tool.
+- [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview): Azure Migrate ist wahrscheinlich der kostengünstigste Ansatz für die Kostenmodellabstimmung. Dieses Tool bietet eine [Bestandserfassung](./inventory.md), [begrenzte Rationalisierung](./rationalize.md) und Kostenkalkulationen für digitale Ressourcen in einem einzigen Tool.
 
-- [Gesamtkostenrechner:](https://azure.com/tco) Senken Sie mithilfe der Azure-Cloudplattform die Gesamtkosten Ihrer lokalen Infrastruktur. Verwenden Sie den Azure-Gesamtkostenrechner, um die voraussichtlichen Kosteneinsparungen zu berechnen, die durch eine Migration Ihrer Anwendungsworkloads zu Azure möglich sind. Beschreiben Sie kurz Ihre lokale Umgebung, und Sie erhalten sofort ein Ergebnis.
+- [Gesamtkostenrechner:](https://azure.microsoft.com/pricing/tco/calculator/) Senken Sie mithilfe der Azure-Cloudplattform die Gesamtkosten Ihrer lokalen Infrastruktur. Verwenden Sie den Azure-Gesamtkostenrechner, um die voraussichtlichen Kosteneinsparungen zu berechnen, die durch eine Migration Ihrer Anwendungsworkloads zu Azure möglich sind. Beschreiben Sie kurz Ihre lokale Umgebung, und Sie erhalten sofort ein Ergebnis.
 
 - [Azure-Preisrechner](https://azure.microsoft.com/pricing): Berechnen Sie mit unserem Preisrechner Ihre voraussichtlichen monatlichen Kosten. Über das Abrechnungsportal können Sie jederzeit Ihre tatsächliche Kontonutzung und Rechnung überprüfen. Richten Sie automatische Abrechnungswarnungen per E-Mail ein, damit Sie informiert werden, wenn Ihre Ausgaben einen von Ihnen festgelegten Betrag übersteigen.
 

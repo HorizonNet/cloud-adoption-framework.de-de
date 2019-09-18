@@ -8,16 +8,16 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: dc567c80b6193d651c8bf3884476728a8d3daa7f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d2dddb4893a2781da38969949972fa516e32b46c
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839084"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025398"
 ---
 # <a name="manage-change-in-an-incremental-migration-effort"></a>Verwalten von Änderungen bei einer inkrementellen Migration
 
-In diesem Artikel wird davon ausgegangen, dass Migrationsprozesse inkrementell sind und parallel zum [Governanceprozess](../../../governance/index.md) ausgeführt werden. Dieselben Anleitungen können aber auch verwendet werden, um erste Aufgaben in einem Projektstrukturplan für herkömmliche Change Management-Ansätze des Wasserfalltyps auszufüllen.
+In diesem Artikel wird davon ausgegangen, dass Migrationsprozesse inkrementell sind und parallel zum [Governanceprozess](../../../govern/index.md) ausgeführt werden. Dieselben Anleitungen können aber auch verwendet werden, um erste Aufgaben in einem Projektstrukturplan für herkömmliche Change Management-Ansätze des Wasserfalltyps auszufüllen.
 
 ## <a name="release-backlog"></a>Releasebacklog
 

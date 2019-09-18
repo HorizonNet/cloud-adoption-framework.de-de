@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 6b9d2e5f4b230358985d04aca075cb89e8214422
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 22dc2f69f1b7e1541a9556fc8b8802cbb2d5e878
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837996"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71024475"
 ---
 # <a name="rearchitect-an-on-premises-app-to-an-azure-container-and-azure-sql-database"></a>Umstrukturieren einer lokalen App zu einem Azure-Container und einer Azure SQL-Datenbank-Instanz
 
@@ -61,7 +61,7 @@ Nachdem die Ziele und Anforderungen formuliert wurden, entwirft und überprüft 
 
 ### <a name="proposed-architecture"></a>Vorgeschlagene Architektur
 
-- Für die Datenbankebene der App verglich Contoso mithilfe [dieses Artikels](/azure/sql-database/sql-database-features) Azure SQL-Datenbank mit SQL Server. Die Entscheidung für Azure SQL-Datenbank hat verschiedene Gründe:
+- Für die Datenbankebene der App verglich Contoso mithilfe [dieses Artikels](https://docs.microsoft.com/azure/sql-database/sql-database-features) Azure SQL-Datenbank mit SQL Server. Die Entscheidung für Azure SQL-Datenbank hat verschiedene Gründe:
   - Azure SQL-Datenbank ist ein verwalteter Dienst für relationale Datenbanken. Er bietet eine vorhersagbare Leistung auf mehreren Serviceleveln bei nahezu keinem Administrationsaufwand. Zu den Vorteilen gehören dynamische Skalierbarkeit ohne Ausfallzeiten, integrierte intelligente Optimierung sowie globale Skalierbarkeit und Verfügbarkeit.
   - Contoso nutzt den einfachen Datenmigrations-Assistenten (DMA), um die lokale Datenbank zu bewerten und zu Azure SQL-Datenbank zu migrieren.
   - Mit der Software Assurance kann Contoso seine vorhandenen Lizenzen mit dem Azure-Hybridvorteil für SQL Server zu ermäßigten Preisen für eine SQL-Datenbank-Instanz austauschen. So sind Einsparungen von bis zu 30 % möglich.
@@ -103,7 +103,7 @@ Contoso bewertet den vorgeschlagen Entwurf anhand einer Liste mit Vor- und Nacht
 [Azure SQL-Datenbank](https://azure.microsoft.com/services/sql-database) | Bietet einen intelligenten, vollständig verwalteten Dienst für relationale Clouddatenbanken. | Die Kosten ergeben sich durch Features, Durchsatz und Größe. [Weitere Informationen](https://azure.microsoft.com/pricing/details/sql-database/managed)
 [Azure Container Registry](https://azure.microsoft.com/services/container-registry) | Speichert Images für alle Arten von Containerbereitstellungen. | Die Kosten ergeben sich aus Features, Speicher und Nutzungsdauer. [Weitere Informationen](https://azure.microsoft.com/pricing/details/container-registry)
 [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric) | Dient zum Erstellen und Betreiben skalierbarer, verteilter Always On-Apps. | Die Kosten ergeben sich aus Größe, Standort und Dauer der Computeknoten. [Weitere Informationen](https://azure.microsoft.com/pricing/details/service-fabric)
-[Azure DevOps](/azure/azure-portal/tutorial-azureportal-devops) | Stellt die Pipeline für Continuous Integration und Continuous Deployment (CI/CD) für die App-Entwicklung bereit. Die Pipeline beginnt bei einem Git-Repository für die Verwaltung von App-Code, einem Buildsystem zum Erstellen von Paketen und anderen Buildartefakten sowie einem Releaseverwaltungssystem zum Bereitstellen von Änderungen in Entwicklungs-, Test- und Produktionsumgebungen.
+[Azure DevOps](https://docs.microsoft.com/azure/azure-portal/tutorial-azureportal-devops) | Stellt die Pipeline für Continuous Integration und Continuous Deployment (CI/CD) für die App-Entwicklung bereit. Die Pipeline beginnt bei einem Git-Repository für die Verwaltung von App-Code, einem Buildsystem zum Erstellen von Paketen und anderen Buildartefakten sowie einem Releaseverwaltungssystem zum Bereitstellen von Änderungen in Entwicklungs-, Test- und Produktionsumgebungen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -114,8 +114,8 @@ Für dieses Szenarios benötigt Contoso Folgendes:
 **Anforderungen** | **Details**
 --- | ---
 **Azure-Abonnement** | Abonnements wurden in einem früheren Artikel dieser Reihe erstellt. Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/pricing/free-trial) erstellen.<br/><br/> Wenn Sie ein kostenloses Konto erstellen, sind Sie der Administrator Ihres Abonnements und können alle Aktionen durchführen.<br/><br/> Falls Sie ein vorhandenes Abonnement verwenden und nicht der Administrator sind, müssen Sie mit dem Administrator zusammenarbeiten, damit er Ihnen Berechtigungen vom Typ „Besitzer“ oder „Mitwirkender“ zuweist.
-**Azure-Infrastruktur** | Contoso hat bereits eine Azure-Infrastruktur eingerichtet. Weitere Informationen finden Sie [hier](contoso-migration-infrastructure.md).
-**Voraussetzungen für Entwickler** | Contoso benötigt die folgenden Tools auf einer Entwicklerarbeitsstation:<br/><br/> - [Visual Studio 2017 Community Edition: Version 15.5](https://www.visualstudio.com)<br/><br/> – .NET-Workload aktiviert.<br/><br/> - [Git](https://git-scm.com)<br/><br/> - [Service Fabric-SDK-Version 3.0 oder höher](/azure/service-fabric/service-fabric-get-started)<br/><br/> - [Docker CE (Windows 10) oder Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install) festgelegt für die Verwendung von Windows-Containern.
+**Azure-Infrastruktur** | Contoso hat bereits eine Azure-Infrastruktur eingerichtet. Weitere Informationen finden Sie [hier](./contoso-migration-infrastructure.md).
+**Voraussetzungen für Entwickler** | Contoso benötigt die folgenden Tools auf einer Entwicklerarbeitsstation:<br/><br/> - [Visual Studio 2017 Community Edition: Version 15.5](https://www.visualstudio.com)<br/><br/> – .NET-Workload aktiviert.<br/><br/> - [Git](https://git-scm.com)<br/><br/> - [Service Fabric-SDK-Version 3.0 oder höher](https://docs.microsoft.com/azure/service-fabric/service-fabric-get-started)<br/><br/> - [Docker CE (Windows 10) oder Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install) festgelegt für die Verwendung von Windows-Containern.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -166,8 +166,8 @@ Die Contoso-Administratoren stellen eine Azure SQL-Datenbank bereit.
 
 **Benötigen Sie weitere Hilfe?**
 
-- [Erhalten Sie Hilfe](/azure/sql-database/sql-database-get-started-portal) bei der Bereitstellung einer SQL-Datenbank-Instanz.
-- [Erfahren Sie mehr](/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools) zu Ressourcengrenzwerten des auf virtuellen Kernen basierenden Kaufmodells.
+- [Erhalten Sie Hilfe](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal) bei der Bereitstellung einer SQL-Datenbank-Instanz.
+- [Erfahren Sie mehr](https://docs.microsoft.com/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools) zu Ressourcengrenzwerten des auf virtuellen Kernen basierenden Kaufmodells.
 
 ## <a name="step-2-create-an-acr-and-provision-an-azure-container"></a>Schritt 2: Erstellen einer ACR und Bereitstellen eines Azure-Containers
 
@@ -298,7 +298,7 @@ Für die Verbindungsherstellung mit Azure SQL-Datenbank richten die Administrato
 
 **Benötigen Sie weitere Hilfe?**
 
-[Erfahren Sie mehr](/azure/sql-database/sql-database-firewall-configure) über das Erstellen und Verwalten von Firewallregeln für Azure SQL-Datenbank.
+[Erfahren Sie mehr](https://docs.microsoft.com/azure/sql-database/sql-database-firewall-configure) über das Erstellen und Verwalten von Firewallregeln für Azure SQL-Datenbank.
 
 ### <a name="migrate"></a>Migrieren
 
@@ -582,23 +582,23 @@ Da die migrierten Ressourcen in Azure enthalten sind, muss Contoso die neue Infr
 
 ### <a name="security"></a>Sicherheit
 
-- Die Administratoren von Contoso müssen die Sicherheit der neuen Datenbank **SmartHotel-Registration** gewährleisten. [Weitere Informationen](/azure/sql-database/sql-database-security-overview)
+- Die Administratoren von Contoso müssen die Sicherheit der neuen Datenbank **SmartHotel-Registration** gewährleisten. [Weitere Informationen](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)
 - Insbesondere sollte es den Container aktualisieren, sodass dieser SSL mit Zertifikaten verwendet.
-- Zum Schutz von Geheimnissen für die Service Fabric-Apps sollte die Verwendung des Schlüsseltresors in Erwägung gezogen werden. [Weitere Informationen](/azure/service-fabric/service-fabric-application-secret-management)
+- Zum Schutz von Geheimnissen für die Service Fabric-Apps sollte die Verwendung des Schlüsseltresors in Erwägung gezogen werden. [Weitere Informationen](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-secret-management)
 
 ### <a name="backups"></a>Backups
 
-- Contoso muss die Sicherungsanforderungen für Azure SQL-Datenbank überprüfen. [Weitere Informationen](/azure/sql-database/sql-database-automated-backups)
-- Die Administratoren von Contoso sollten die Implementierung von Failovergruppen in Betracht ziehen, um ein regionales Failover für die Datenbank bereitzustellen. [Weitere Informationen](/azure/sql-database/sql-database-geo-replication-overview)
-- Die geografische Replikation für die Premium-SKU von ACR kann genutzt werden. [Weitere Informationen](/azure/container-registry/container-registry-geo-replication)
+- Contoso muss die Sicherungsanforderungen für Azure SQL-Datenbank überprüfen. [Weitere Informationen](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)
+- Die Administratoren von Contoso sollten die Implementierung von Failovergruppen in Betracht ziehen, um ein regionales Failover für die Datenbank bereitzustellen. [Weitere Informationen](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview)
+- Die geografische Replikation für die Premium-SKU von ACR kann genutzt werden. [Weitere Informationen](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)
 - Contoso muss den Einsatz der Web-App in der Hauptregion „USA, Osten 2“ und „USA, Mitte“ in Erwägung ziehen, wenn die Web-App für Container verfügbar wird. Die Administratoren von Contoso können Traffic Manager konfigurieren, um ein Failover bei regionalen Ausfällen sicherzustellen.
-- Cosmos DB führt automatisch Sicherungen durch. Weitere Informationen zu diesem Prozess finden Sie [hier](/azure/cosmos-db/online-backup-and-restore).
+- Cosmos DB führt automatisch Sicherungen durch. Weitere Informationen zu diesem Prozess finden Sie [hier](https://docs.microsoft.com/azure/cosmos-db/online-backup-and-restore).
 
 ### <a name="licensing-and-cost-optimization"></a>Lizenzierung und Kostenoptimierung
 
-- Nachdem alle Ressourcen bereitgestellt wurden, sollte Contoso Azure-Tags basierend auf der [Infrastrukturplanung](contoso-migration-infrastructure.md#set-up-tagging) zuweisen.
+- Nachdem alle Ressourcen bereitgestellt wurden, sollte Contoso Azure-Tags basierend auf der [Infrastrukturplanung](./contoso-migration-infrastructure.md#set-up-tagging) zuweisen.
 - Die gesamte Lizenzierung ist in die Kosten für die PaaS-Dienste integriert, die Contoso verwendet. Dies wird über EA verrechnet.
-- Contoso aktiviert Azure Cost Management. Es ist durch Cloudyn lizenziert, ein Tochterunternehmen von Microsoft. Dabei handelt es sich um eine Kostenverwaltungslösung mit mehreren Clouds, die Ihnen das Verwenden und Verwalten von Azure und anderen Cloudressourcen erleichtert. [Erfahren Sie mehr](/azure/cost-management/overview) über die Azure Cost Management.
+- Contoso aktiviert Azure Cost Management. Es ist durch Cloudyn lizenziert, ein Tochterunternehmen von Microsoft. Dabei handelt es sich um eine Kostenverwaltungslösung mit mehreren Clouds, die Ihnen das Verwenden und Verwalten von Azure und anderen Cloudressourcen erleichtert. [Erfahren Sie mehr](https://docs.microsoft.com/azure/cost-management/overview) über die Azure Cost Management.
 
 ## <a name="conclusion"></a>Zusammenfassung
 

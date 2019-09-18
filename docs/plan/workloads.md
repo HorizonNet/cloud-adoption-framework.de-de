@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: d77a17af60c8ed4540b2c40ddf8d75a4e4f6f306
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e7582df81e305ab602c8172b5e93531eb8112432
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839164"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022267"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Priorisierung und Definition von Workloads für einen Cloudeinführungsplan
 
@@ -44,7 +44,7 @@ Wenn die Entscheidung gegen eine Rationalisierung der digitalen Ressourcen fäll
 
 Im vorherigen Artikel, [Cloudeinführungsplan und Azure DevOps](./template.md), haben Sie einen Cloudeinführungsplan in Azure DevOps erstellt.
 
-Die Workloads in der Liste des 10er-Ansatzes können jetzt in Ihrem Cloudeinführungsplan dargestellt werden. Die einfachste Möglichkeit hierzu ist die Massenbearbeitung in Microsoft Excel. Um Ihre Arbeitsstation für die Massenbearbeitung vorzubereiten, lesen Sie [Massenhinzufügen oder -bearbeiten von Arbeitselementen mit Excel](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
+Die Workloads in der Liste des 10er-Ansatzes können jetzt in Ihrem Cloudeinführungsplan dargestellt werden. Die einfachste Möglichkeit hierzu ist die Massenbearbeitung in Microsoft Excel. Um Ihre Arbeitsstation für die Massenbearbeitung vorzubereiten, lesen Sie [Massenhinzufügen oder -bearbeiten von Arbeitselementen mit Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
 
 In Schritt 5 dieses Artikels werden Sie angewiesen, **Eingabeliste** auszuwählen. Wählen Sie stattdessen **Abfrageliste** aus. Wählen Sie dann aus der Dropdownlist **Abfrage auswählen** die Abfrage **Workloadvorlage** aus. Diese Abfrage lädt alle Arbeitselemente im Zusammenhang mit der Migration eines einzelnen Workloads in Ihre Tabellenkalkulation.
 

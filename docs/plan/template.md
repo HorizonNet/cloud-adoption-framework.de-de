@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 91c1433f300efc3950cb54852a00b5020a992e8f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: f7634f15735c68296a96d997d3bf8e915d03e6b7
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839160"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022309"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Cloudeinführungsplan und Azure DevOps
 
@@ -59,7 +59,7 @@ Die übersichtlichste Darstellung des Cloudeinführungsplans stammt aus der **Ep
 
 ## <a name="align-the-cloud-adoption-plan"></a>Ausrichten des Cloudeinführungsplans
 
-Die Übersichtsseiten für die Strategie- und Planungsphasen des Lebenszyklus der Cloudeinführung verweisen jeweils auf die [Strategie- und Planungsvorlage des Cloud Adoption Framework](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx). Diese Vorlage organisiert die Entscheidungen und Datenpunkte, die die Vorlage für den Cloudeinführungsplan auf Ihre spezifischen Einführungspläne abstimmen. Wenn dies noch nicht geschehen ist, sollten Sie die Übungen zu [Strategie](../business-strategy/index.md) und [Planung](../plan/index.md) durchführen, bevor Sie Ihr neues Projekt ausrichten.
+Die Übersichtsseiten für die Strategie- und Planungsphasen des Lebenszyklus der Cloudeinführung verweisen jeweils auf die [Strategie- und Planungsvorlage des Cloud Adoption Framework](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx). Diese Vorlage organisiert die Entscheidungen und Datenpunkte, die die Vorlage für den Cloudeinführungsplan auf Ihre spezifischen Einführungspläne abstimmen. Wenn dies noch nicht geschehen ist, sollten Sie die Übungen zu [Strategie](../strategy/index.md) und [Planung](../plan/index.md) durchführen, bevor Sie Ihr neues Projekt ausrichten.
 
 Die folgenden Artikel bieten Informationen zur Ausrichtung des Cloudeinführungsplans:
 

@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 19265b154a239fb4a01d8b4f468eab7e5e4f04cd
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: e670391bd475445b195e73f996fe999d32953232
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837608"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022318"
 ---
 # <a name="prerequisites-checklist-for-an-effective-cloud-adoption-plan"></a>Checkliste der Voraussetzungen für einen effektiven Cloudeinführungsplan
 
@@ -21,7 +21,7 @@ Ein Plan ist nur so effektiv wie die Daten, die in ihn Eingang finden. Damit ein
 
 ## <a name="strategic-inputs"></a>Strategische Eingaben
 
-Genaue strategische Eingaben stellen sicher, dass die geleistete Arbeit zur Realisierung von Geschäftsergebnissen beiträgt. Der [Abschnitt zur Strategie des Cloud Adoption Framework](../business-strategy/index.md) bietet eine Reihe von Übungen zur Entwicklung einer eindeutigen Strategie. Die Ergebnisse dieser Übungen fließen in den Cloudeinführungsplan ein. Bevor Sie den Plan entwickeln, stellen Sie sicher, dass die folgenden Elemente als Ergebnis dieser Übungen genau definiert sind:
+Genaue strategische Eingaben stellen sicher, dass die geleistete Arbeit zur Realisierung von Geschäftsergebnissen beiträgt. Der [Abschnitt zur Strategie des Cloud Adoption Framework](../strategy/index.md) bietet eine Reihe von Übungen zur Entwicklung einer eindeutigen Strategie. Die Ergebnisse dieser Übungen fließen in den Cloudeinführungsplan ein. Bevor Sie den Plan entwickeln, stellen Sie sicher, dass die folgenden Elemente als Ergebnis dieser Übungen genau definiert sind:
 
 - **Eindeutige Beweggründe**: Warum wird die Cloud eingeführt?
 - **Definierte Geschäftsergebnisse**: Welche Ergebnisse erwarten wir von der Einführung der Cloud?

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: ce8338fbcd0e21cf0875a207633ce7c9ddf2ff9e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4947f980bbcaa153e55af835c2e6892cf4e2dab3
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818760"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022786"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrieren von Objekten (Infrastruktur, Apps und Daten)
 
@@ -50,7 +50,7 @@ Führen Sie die folgenden Schritte aus, um eine Migration mit Azure Migrate durc
 
 ### <a name="read-more"></a>Weitere Informationen
 
-- [Azure Migrate-Tutorial: Migrieren von physischen oder virtualisierten Servern zu Azure](/azure/migrate/tutorial-migrate-physical-virtual-machines)
+- [Azure Migrate-Tutorial: Migrieren von physischen oder virtualisierten Servern zu Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
 
 ## <a name="azure-site-recovery"></a>Azure Site Recovery
 
@@ -59,7 +59,7 @@ Mit dem Azure Site Recovery-Dienst können Sie die Migration lokaler Ressourcen 
 Die folgenden Schritte beschreiben, wie Sie Site Recovery zur Migration verwenden:
 
 > [!TIP]
-> Abhängig von Ihrem Szenario können sich diese Schritte leicht unterscheiden. Weitere Informationen finden Sie im Artikel [Migrieren von lokalen Computern zu Azure](/azure/site-recovery/migrate-tutorial-on-premises-azure).
+> Abhängig von Ihrem Szenario können sich diese Schritte leicht unterscheiden. Weitere Informationen finden Sie im Artikel [Migrieren von lokalen Computern zu Azure](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure).
 
 ### <a name="prepare-azure-site-recovery-service"></a>Vorbereiten des Azure Site Recovery-Diensts
 
@@ -102,7 +102,7 @@ Die folgenden Schritte beschreiben, wie Sie Site Recovery zur Migration verwende
 
 Weitere Informationen finden Sie unter
 
-- [Migrieren von lokalen Computern zu Azure](/azure/site-recovery/migrate-tutorial-on-premises-azure)
+- [Migrieren von lokalen Computern zu Azure](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure)
 
 ::: zone-end
 
@@ -141,8 +141,8 @@ Der Dienst ist nun bereit, die unterstützten Quelldatenbanken (z.B. SQL Server,
 
 Weitere Informationen finden Sie unter
 
-- [Übersicht über Azure Database Migration Service](/azure/dms/dms-overview)
-- [Erstellen einer Instanz von Azure Database Migration Service](/azure/dms/quickstart-create-data-migration-service-portal)
+- [Übersicht über Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview)
+- [Erstellen einer Instanz von Azure Database Migration Service](https://docs.microsoft.com/azure/dms/quickstart-create-data-migration-service-portal)
 - [Azure Migrate im Azure-Portal](https://portal.azure.com/#blade/Microsoft_Azure_ManagementGroups/HierarchyBlade)
 - [Azure-Portal: Erstellen eines Migrationsprojekts](https://portal.azure.com/#create/Microsoft.AzureMigrate)
 
@@ -166,21 +166,21 @@ Um den Datenmigrations-Assistenten zu verwenden, führen Sie zunächst folgende 
 1. Klicken Sie auf **Weiter**, um die Bewertung zu starten.
 1. Zeigen Sie die Ergebnisse im Data Migration Assistant-Toolset an.
 
-Unternehmen empfehlen wir, dem unter [Bewerten eines Unternehmens und Konsolidieren der Bewertungsberichte mit DMA](/sql/dma/dma-consolidatereports) beschriebenen Ansatz zu folgen, um mehrere Server zu bewerten, die Berichte zu kombinieren und dann die bereitgestellten Power BI-Berichte zur Analyse der Ergebnisse zu verwenden.
+Unternehmen empfehlen wir, dem unter [Bewerten eines Unternehmens und Konsolidieren der Bewertungsberichte mit DMA](https://docs.microsoft.com/sql/dma/dma-consolidatereports) beschriebenen Ansatz zu folgen, um mehrere Server zu bewerten, die Berichte zu kombinieren und dann die bereitgestellten Power BI-Berichte zur Analyse der Ergebnisse zu verwenden.
 
 Weitere Informationen und ausführliche Verwendungsschritte finden Sie unter:
 
-- [Übersicht über den Datenmigrations-Assistenten](/sql/dma/dma-overview)
-- [Bewerten eines Unternehmens und Konsolidieren der Bewertungsberichte mit DMA](/sql/dma/dma-consolidatereports)
-- [Analysieren der vom Datenmigrations-Assistenten erstellten konsolidierten Bewertungsberichte mit Power BI](/sql/dma/dma-powerbiassesreport)
+- [Übersicht über den Datenmigrations-Assistenten](https://docs.microsoft.com/sql/dma/dma-overview)
+- [Bewerten eines Unternehmens und Konsolidieren der Bewertungsberichte mit DMA](https://docs.microsoft.com/sql/dma/dma-consolidatereports)
+- [Analysieren der vom Datenmigrations-Assistenten erstellten konsolidierten Bewertungsberichte mit Power BI](https://docs.microsoft.com/sql/dma/dma-powerbiassesreport)
 
 ## <a name="sql-server-migration-assistant"></a>SQL Server Migration Assistant
 
-Microsoft SQL Server Migration Assistant (SSMA) ist ein Tool zur Automatisierung der Datenbankmigration von Microsoft Access, DB2, MySQL, Oracle und SAP ASE zu SQL Server. Das allgemeine Konzept besteht in der Erfassung, Bewertung und Überprüfung mit diesen Tools. Aufgrund der unterschiedlichen Prozesse für die einzelnen Quellsysteme empfehlen wir Ihnen, die detaillierte [Dokumentation zu SQL Server Migration Assistant](/sql/ssma/sql-server-migration-assistant) zu lesen.
+Microsoft SQL Server Migration Assistant (SSMA) ist ein Tool zur Automatisierung der Datenbankmigration von Microsoft Access, DB2, MySQL, Oracle und SAP ASE zu SQL Server. Das allgemeine Konzept besteht in der Erfassung, Bewertung und Überprüfung mit diesen Tools. Aufgrund der unterschiedlichen Prozesse für die einzelnen Quellsysteme empfehlen wir Ihnen, die detaillierte [Dokumentation zu SQL Server Migration Assistant](https://docs.microsoft.com/sql/ssma/sql-server-migration-assistant) zu lesen.
 
 Weitere Informationen finden Sie unter
 
-- [Übersicht über SQL Server Migration Assistant](/sql/ssma/sql-server-migration-assistant)
+- [Übersicht über SQL Server Migration Assistant](https://docs.microsoft.com/sql/ssma/sql-server-migration-assistant)
 
 ## <a name="database-experimentation-assistant"></a>Assistent für Datenbankexperimente
 
@@ -194,7 +194,7 @@ Der Assistent für Datenbankexperimente enthält die folgenden Workflowaktivitä
 
 Weitere Informationen finden Sie unter
 
-- [Übersicht über den Assistenten für Datenbankexperimente](/sql/dea/database-experimentation-assistant-overview)
+- [Übersicht über den Assistenten für Datenbankexperimente](https://docs.microsoft.com/sql/dea/database-experimentation-assistant-overview)
 
 # <a name="third-party-migration-toolstabthird-party-tools"></a>[Migrationstool von einem Drittanbieter](#tab/third-party-tools)
 
@@ -245,4 +245,4 @@ Die Migration in Cloudtechnologien bietet eine großartige Gelegenheit, Ihre Org
 
 # <a name="cost-managementtabmanagecost"></a>[Kostenmanagement](#tab/ManageCost)
 
-Bei der Migration von Ressourcen in Ihre Cloudumgebung ist es wichtig, eine regelmäßige Kostenanalyse durchzuführen. Dadurch können Sie unerwartete Nutzungsgebühren vermeiden, denn der Migrationsprozess stellt möglicherweise zusätzliche Nutzungsanforderungen an Ihre Dienste. Sie können zudem die Größe der Ressourcen nach Bedarf anpassen, um Kosten und Workload auszugleichen (weitere Details finden Sie im Abschnitt **[Optimierung und Transformation](optimize-and-transform.md)** ).
+Bei der Migration von Ressourcen in Ihre Cloudumgebung ist es wichtig, eine regelmäßige Kostenanalyse durchzuführen. Dadurch können Sie unerwartete Nutzungsgebühren vermeiden, denn der Migrationsprozess stellt möglicherweise zusätzliche Nutzungsanforderungen an Ihre Dienste. Sie können zudem die Größe der Ressourcen nach Bedarf anpassen, um Kosten und Workload auszugleichen (weitere Details finden Sie im Abschnitt **[Optimierung und Transformation](./optimize-and-transform.md)** ).

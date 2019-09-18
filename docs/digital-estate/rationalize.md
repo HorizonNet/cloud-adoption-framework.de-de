@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 7bb9eb697beb44aa5bf4e9eec736a5be4b575eb7
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5cee6318edd04e219b33bce6b72a78c7aa21ba4f
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837784"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023433"
 ---
 # <a name="rationalize-the-digital-estate"></a>Rationalisieren der digitalen Ressourcen
 
-Bei der Rationalisierung der Cloud werden Ressourcen evaluiert, um die beste Vorgehensweise für das Hosten in der Cloud zu ermitteln. Nachdem Sie einen [Ansatz](approach.md) ermittelt und einen [Bestand](inventory.md) aggregiert haben, kann die Cloudrationalisierung beginnen. Unter [Cloudrationalisierung](rationalize.md) werden die häufigsten Rationalisierungsoptionen beschrieben.
+Bei der Rationalisierung der Cloud werden Ressourcen evaluiert, um die beste Vorgehensweise für das Hosten in der Cloud zu ermitteln. Nachdem Sie einen [Ansatz](./approach.md) ermittelt und einen [Bestand](./inventory.md) aggregiert haben, kann die Cloudrationalisierung beginnen. Unter [Cloudrationalisierung](./rationalize.md) werden die häufigsten Rationalisierungsoptionen beschrieben.
 
 ## <a name="traditional-view-of-rationalization"></a>Herkömmlicher Rationalisierungsansatz
 
@@ -30,7 +30,7 @@ Die Rationalisierung ist leicht verständlich, wenn Sie sich den herkömmlichen 
 
 **Qualitative Analyse:** Für die nächsten Entscheidungen wird menschliche Intelligenz in Form einer qualitativen Analyse benötigt. Oft gelten die hier gestellten Fragen nur speziell für die Lösung und können nur von Projektbeteiligten des Unternehmens und Hauptbenutzern beantwortet werden. Diese Entscheidungen verzögern den Prozess normalerweise, wodurch die Dinge erheblich verlangsamt werden. Bei dieser Analyse werden in der Regel 40 bis 80 Vollzeitmitarbeiter-Stunden pro Anwendung verbraucht.
 
-Eine Anleitung zum Erstellen einer Liste mit Fragen zur qualitativen Analyse finden Sie unter [Ansätze für die Planung digitaler Ressourcen](approach.md).
+Eine Anleitung zum Erstellen einer Liste mit Fragen zur qualitativen Analyse finden Sie unter [Ansätze für die Planung digitaler Ressourcen](./approach.md).
 
 **Rationalisierungsentscheidung:** In den Händen eines erfahrenen Rationalisierungsteams können anhand der qualitativen und quantitativen Daten klare Entscheidungen getroffen werden. Leider ist die Einstellung und Schulung von Teams mit viel Erfahrung im Bereich der Rationalisierung ein teurer bzw. mehrere Monate dauernder Prozess.
 
@@ -60,7 +60,7 @@ Bei einem inkrementellen Rationalisierungsprozess kann eine Lösung ohne Agents 
 
 ### <a name="quantitative-analysis-streamline-decisions"></a>Quantitative Analyse: Optimieren von Entscheidungen
 
-Unabhängig vom Ansatz zur Ermittlung des Bestands kann die quantitative Analyse als Grundlage für erste Entscheidungen und Annahmen dienen. Dies ist vor allem beim Identifizieren der ersten Workload der Fall, oder wenn das Ziel der Rationalisierung ein allgemeiner Kostenvergleich ist. Bei einem inkrementellen Rationalisierungsprozess beschränken das Cloudstrategieteam und die Cloudeinführungsteams die [fünf „R“ der Rationalisierung](5-rs-of-rationalization.md) auf zwei präzise Entscheidungen und wenden nur diese quantitativen Faktoren an. Dadurch wird die Analyse optimiert, und die Menge an anfänglichen Daten, die für die Laufwerksänderung erforderlich sind, wird verringert.
+Unabhängig vom Ansatz zur Ermittlung des Bestands kann die quantitative Analyse als Grundlage für erste Entscheidungen und Annahmen dienen. Dies ist vor allem beim Identifizieren der ersten Workload der Fall, oder wenn das Ziel der Rationalisierung ein allgemeiner Kostenvergleich ist. Bei einem inkrementellen Rationalisierungsprozess beschränken das Cloudstrategieteam und die Cloudeinführungsteams die [fünf „R“ der Rationalisierung](./5-rs-of-rationalization.md) auf zwei präzise Entscheidungen und wenden nur diese quantitativen Faktoren an. Dadurch wird die Analyse optimiert, und die Menge an anfänglichen Daten, die für die Laufwerksänderung erforderlich sind, wird verringert.
 
 Wenn sich eine Organisation beispielsweise mitten in einer IaaS-Migration zur Cloud befindet, können Sie davon ausgehen, dass die meisten Workloads entweder außer Betrieb genommen oder neu gehostet werden.
 
@@ -116,7 +116,7 @@ Die erste Workload wird häufig in einer Experimentierumgebung ohne Betriebs- od
 
 ### <a name="qualitative-analysis"></a>Qualitative Analyse
 
-Die Cloudeinführungsteams und das Cloudstrategieteam können zusammenarbeiten, um diese kleine Workload zu analysieren. Durch diese Zusammenarbeit wird eine kontrollierte Möglichkeit zum Erstellen und Testen der Kriterien für die qualitative Analyse geschaffen. Aufgrund des geringeren Umfangs können die betroffenen Benutzer überwacht werden, und es kann innerhalb eines Zeitraums von maximal einer Woche eine ausführliche qualitative Analyse durchgeführt werden. Informationen zu häufigen Faktoren bei der qualitativen Analyse finden Sie unter dem jeweiligen Rationalisierungsziel im Artikel [5 Rs of Rationalization](5-rs-of-rationalization.md) (Die fünf R der Rationalisierung).
+Die Cloudeinführungsteams und das Cloudstrategieteam können zusammenarbeiten, um diese kleine Workload zu analysieren. Durch diese Zusammenarbeit wird eine kontrollierte Möglichkeit zum Erstellen und Testen der Kriterien für die qualitative Analyse geschaffen. Aufgrund des geringeren Umfangs können die betroffenen Benutzer überwacht werden, und es kann innerhalb eines Zeitraums von maximal einer Woche eine ausführliche qualitative Analyse durchgeführt werden. Informationen zu häufigen Faktoren bei der qualitativen Analyse finden Sie unter dem jeweiligen Rationalisierungsziel im Artikel [5 Rs of Rationalization](./5-rs-of-rationalization.md) (Die fünf R der Rationalisierung).
 
 ### <a name="migration"></a>Migration
 
@@ -161,4 +161,4 @@ In einigen Fällen ist das Finanzmodell möglicherweise zu eng gefasst, um ohne 
 Das Ergebnis eines Rationalisierungsprozesses ist ein priorisiertes Backlog mit allen Ressourcen, die von der ausgewählten Transformation betroffen sind. Dieses Backlog kann dann als Grundlage für Kostenmodelle von Clouddiensten dienen.
 
 > [!div class="nextstepaction"]
-> [Align cost models with the digital estate](calculate.md) (Ausrichten von Kostenmodellen auf die digitalen Ressourcen)
+> [Align cost models with the digital estate](./calculate.md) (Ausrichten von Kostenmodellen auf die digitalen Ressourcen)

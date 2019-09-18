@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit
-ms.openlocfilehash: 8fccc60eb9944aca6801deb79310ebf07e10b109
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 9b6c526f407a50327aad8dd2fb2639cb7172cb8d
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70834772"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025219"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Bereitstellen einer Landezone für die Migration
 
@@ -33,7 +33,7 @@ Die folgende Abbildung zeigt die Blaupause für eine Landezone für die Migratio
 ![Einordnung der Blaupause](../../_images/ready/blueprint-overview.png)
 
 - Der Buchstabe „A“ befindet sich innerhalb einer Kurvenlinie, die den Geltungsbereich dieser Blaupause kennzeichnet. Dieser Bereich macht deutlich, dass diese Blaupause sich nur für Architekturen mit geringer Komplexität eignet, aber im Hinblick auf Complianceanforderungen etwa in der Mitte liegt.
-- Kunden mit einem hohen Maß an Komplexität und strikten Complianceanforderungen sind sicherlich besser bedient, wenn sie eine erweiterte Blaupause eines Partners oder eines der [standardbasierten Blaupausenbeispiele](/azure/governance/blueprints/samples/) verwenden.
+- Kunden mit einem hohen Maß an Komplexität und strikten Complianceanforderungen sind sicherlich besser bedient, wenn sie eine erweiterte Blaupause eines Partners oder eines der [standardbasierten Blaupausenbeispiele](https://docs.microsoft.com/azure/governance/blueprints/samples/) verwenden.
 - Die meisten Kunden liegen wahrscheinlich irgendwo zwischen diesen beiden Extremen. Der Buchstabe B repräsentiert den Prozess, der in den Artikeln zu [Überlegungen zu Landezonen](../considerations/index.md) skizziert wird. Kunden in diesem Bereich können die Entscheidungshilfen in diesen Artikeln verwenden, um Knoten zu ermitteln, die zur Blaupause für eine Landezone für die Migration von Cloud Adoption Framework hinzugefügt werden sollen. Dieser Ansatz ermöglicht Ihnen das Anpassen der Blaupause an Ihre Anforderungen.
 
 ## <a name="use-this-blueprint"></a>Verwenden dieser Blaupause
@@ -67,7 +67,7 @@ Die folgenden Entscheidungen werden in der Blaupause für die Landezone widerges
 |Ressourcengruppen|N/V: wurde für ein einzelnes Produktionsabonnement entworfen.|[Skalieren von Abonnements](../considerations/scaling-subscriptions.md)         |
 |Data|–|[Auswählen der richtigen SQL Server-Option in Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)         |
 |Storage|–|[Leitfaden zu Azure Storage](../considerations/storage-guidance.md)         |
-|Standards für Benennung und Kennzeichnung|–|[Best Practices zur Benennung und Kennzeichnung](../considerations/name-and-tag.md)         |
+|Standards für Benennung und Kennzeichnung|–|[Best Practices zur Benennung und Kennzeichnung](../considerations/naming-and-tagging.md)         |
 |Kostenverwaltung|–|[Nachverfolgen von Kosten](../azure-best-practices/track-costs.md)|
 |Compute|–|[Computeoptionen](../considerations/compute-decisions.md)|
 

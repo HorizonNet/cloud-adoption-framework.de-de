@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 1c30e57761b12d00617296fb3f9d5a87b8b6cce7
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d9dda8b5cb91b97da2da50bc747cb3bd6b31947e
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837500"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023580"
 ---
 # <a name="software-defined-networking-cloud-native"></a>Softwaredefiniertes Netzwerk: Cloudnativ
 
@@ -41,5 +41,5 @@ Zusätzliche Aspekte, die Ihr für den Umstieg auf die Cloud zuständiges Team b
 
 Weitere Informationen zu cloudnativen virtuellen Netzwerken in Azure finden Sie hier:
 
-- [Azure Virtual Network: Anleitungen](/azure/virtual-network/virtual-network-vnet-plan-design-arm). Neu erstellte Azure Virtual Networks sind standardmäßig cloudnativ. Befolgen Sie diese Anleitungen bei der Planung des Entwurfs und der Bereitstellung Ihrer virtuellen Netzwerke.
-- [Grenzwerte für Abonnements: Netzwerk](/azure/azure-subscription-service-limits?toc=%2fazure%2fvirtual-network%2ftoc.json#networking-limits) aus. Alle zu einem einzelnen virtuellen Netzwerk gehörenden Ressourcen können nur innerhalb eines Einzelabonnements vorhanden sein und unterliegen Abonnementgrenzen.
+- [Azure Virtual Network: Anleitungen](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm). Neu erstellte Azure Virtual Networks sind standardmäßig cloudnativ. Befolgen Sie diese Anleitungen bei der Planung des Entwurfs und der Bereitstellung Ihrer virtuellen Netzwerke.
+- [Grenzwerte für Abonnements: Netzwerk](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=%2fazure%2fvirtual-network%2ftoc.json#networking-limits) aus. Alle zu einem einzelnen virtuellen Netzwerk gehörenden Ressourcen können nur innerhalb eines Einzelabonnements vorhanden sein und unterliegen Abonnementgrenzen.

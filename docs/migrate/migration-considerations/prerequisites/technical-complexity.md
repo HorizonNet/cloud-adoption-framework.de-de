@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7895094ea0297f725ae4f0451989055cb1afab93
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: ba799c8634fc6eeda70507ae85464506103e44ff
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70836584"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025360"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Vorbereiten der technischen Komplexität: Agile Change Management
 
@@ -46,7 +46,7 @@ Mit dem Migrationsbacklog können Sie das Portfolio der wichtigsten Workloads f�
 
 Anfangs entsprechen die Workloads im Migrationsbacklog den im vorherigen Abschnitt beschriebenen INVEST-Kriterien sicherlich noch nicht. Sie dienen stattdessen als eine logische Gruppierung von Ressourcen aus einem anfänglichen Bestand als Platzhalter für die künftige Arbeit. Diese Platzhalter sind technisch möglicherweise noch nicht präzise, können aber als Grundlage für die Koordination mit dem Unternehmen dienen.
 
-![Beziehungen zwischen Migrations-, Release- und Iterationsbacklogs während der Migration](../../../_images/migration/migrate-release-iteration-backlog-relationship.png)
+![Beziehungen zwischen Migrations-, Release- und Iterationsbacklogs während der Migration](../../../_images/migrate/backlog-relationships.png)
 
 *Migration-, Release- und Iterationsbacklogs verfolgen verschiedene Ebenen von Aktivitäten während der Migrationsprozesse.*
 

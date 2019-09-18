@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: governance
-ms.openlocfilehash: 6aabf9545aa6774b63d3dbd201373273c3f8f1ab
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 0b561415d8038c41e1ea36624529a765bfa1105a
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837752"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023330"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -36,7 +36,7 @@ Innerhalb jedes Racks oder Clusters haben die meisten Server die Aufgabe, diese 
 
 Jede Instanz des Fabric Controllers ist mit einem anderen Satz von Servern verbunden, auf denen Software für die Cloudorchestrierung ausgeführt wird, die normalerweise als **Front-End** bezeichnet wird. Auf dem Front-End werden die Webdienste, RESTful-APIs und internen Azure-Datenbanken gehostet, die für alle Funktionen der Cloud verwendet werden.
 
-Beispielsweise hostet das Front-End die Dienste, mit denen Kundenanforderungen zur Zuteilung von Azure-Ressourcen verarbeitet werden. Hierzu zählen beispielsweise [virtuelle Computer](/azure/virtual-machines) (VMs) und Dienste wie [Cosmos DB](/azure/cosmos-db/introduction). Zuerst überprüft das Front-End den Benutzer und stellt sicher, dass der Benutzer zur Zuordnung der angeforderten Ressourcen berechtigt ist. Falls ja, zieht das Front-End eine Datenbank heran, um ein Serverrack mit ausreichender Kapazität zu ermitteln. Anschließend weist es den Fabric Controller im Rack an, die Ressource zuzuteilen.
+Beispielsweise hostet das Front-End die Dienste, mit denen Kundenanforderungen zur Zuteilung von Azure-Ressourcen verarbeitet werden. Hierzu zählen beispielsweise [virtuelle Computer](https://docs.microsoft.com/azure/virtual-machines) (VMs) und Dienste wie [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction). Zuerst überprüft das Front-End den Benutzer und stellt sicher, dass der Benutzer zur Zuordnung der angeforderten Ressourcen berechtigt ist. Falls ja, zieht das Front-End eine Datenbank heran, um ein Serverrack mit ausreichender Kapazität zu ermitteln. Anschließend weist es den Fabric Controller im Rack an, die Ressource zuzuteilen.
 
 Azure ist also im Wesentlichen eine riesige Sammlung von Servern und Netzwerkhardware-Komponenten, auf denen ein komplexer Satz verteilter Anwendungen ausgeführt wird, um Konfiguration und Betrieb der virtualisierten Hardware und Software auf diesen Servern zu orchestrieren. Diese Orchestrierung macht Azure so leistungsstark. Benutzer müssen sich nicht mehr um die Wartung und Upgrades von Hardware kümmern, da diese Aufgaben von Azure im Hintergrund durchgeführt werden.
 
@@ -45,8 +45,4 @@ Azure ist also im Wesentlichen eine riesige Sammlung von Servern und Netzwerkhar
 Nachdem Sie sich mit den internen Zusammenhängen von Azure vertraut gemacht haben, können Sie sich über Cloudressourcenkontrolle informieren.
 
 > [!div class="nextstepaction"]
-> [Informationen zur Ressourcenkontrolle](../governance/resource-consistency/what-is-governance.md)
-
-<!-- links -->
-
-[docs-add-users-to-aad]: /azure/active-directory/add-users-azure-active-directory?toc=/azure/architecture/cloud-adoption-guide/toc.json
+> [Informationen zur Ressourcenkontrolle](../govern/resource-consistency/what-is-governance.md)
