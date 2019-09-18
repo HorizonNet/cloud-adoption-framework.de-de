@@ -1,7 +1,7 @@
 <!-- TEMPLATE FILE - DO NOT ADD METADATA -->
 <!-- markdownlint-disable MD002 MD041 -->
 > [!NOTE]
->Im Falle von Änderungen an Ihren Geschäftsanforderungen ermöglichen Ihnen Azure-Verwaltungsgruppen eine einfache Reorganisation Ihrer Verwaltungshierarchie und Abonnementgruppenzuweisungen. Beachten Sie jedoch, dass Richtlinien- und Rollenzuweisungen, die auf eine Verwaltungsgruppe angewendet werden, an alle Abonnements unterhalb dieser Gruppe in der Hierarchie vererbt werden. Wenn Sie beabsichtigen, Abonnements zwischen Verwaltungsgruppen neu zuzuweisen, stellen Sie sicher, dass Ihnen alle Änderungen der Richtlinien und Rollenzuweisungen bekannt sind, die sich daraus ergeben können. Weitere Informationen finden Sie in der [Dokumentation zu Azure-Verwaltungsgruppen](/azure/governance/management-groups).
+>Im Falle von Änderungen an Ihren Geschäftsanforderungen ermöglichen Ihnen Azure-Verwaltungsgruppen eine einfache Reorganisation Ihrer Verwaltungshierarchie und Abonnementgruppenzuweisungen. Beachten Sie jedoch, dass Richtlinien- und Rollenzuweisungen, die auf eine Verwaltungsgruppe angewendet werden, an alle Abonnements unterhalb dieser Gruppe in der Hierarchie vererbt werden. Wenn Sie beabsichtigen, Abonnements zwischen Verwaltungsgruppen neu zuzuweisen, stellen Sie sicher, dass Ihnen alle Änderungen der Richtlinien und Rollenzuweisungen bekannt sind, die sich daraus ergeben können. Weitere Informationen finden Sie in der [Dokumentation zu Azure-Verwaltungsgruppen](https://docs.microsoft.com/azure/governance/management-groups).
 
 ### <a name="governance-of-resources"></a>Governance von Ressourcen
 
@@ -19,15 +19,15 @@ Benutzerdefinierte Richtliniendefinitionen werden entweder in einer Verwaltungsg
 
 Da die für das Governance-MVP erforderlichen Richtlinien für alle aktuellen Abonnements gelten sollen, werden die folgenden Geschäftsanforderungen mithilfe einer Kombination aus integrierten Definitionen und benutzerdefinierten, in der Stammverwaltungsgruppe erstellten Definitionen implementiert:
 
-1. Schränken Sie die Liste der verfügbaren Rollenzuweisungen auf eine Reihe von integrierten Azure-Rollen ein, die von Ihrem Cloudgovernanceteam genehmigt wurden. Hierzu wird eine [benutzerdefinierte Richtliniendefinition](https://github.com/Azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions) benötigt. 
+1. Schränken Sie die Liste der verfügbaren Rollenzuweisungen auf eine Reihe von integrierten Azure-Rollen ein, die von Ihrem Cloudgovernanceteam genehmigt wurden. Hierzu wird eine [benutzerdefinierte Richtliniendefinition](https://github.com/Azure/azure-policy/tree/master/samples/Authorization/allowed-role-definitions) benötigt.
 2. Erfordern Sie die Verwendung der folgenden Tags für alle Ressourcen: *Abrechnung/Kostenstelle*, *Geografie*, *Datenklassifizierung*, *Kritikalität*, *SLA*, *Umgebung*, *Anwendungsarchetyp*, *Anwendung* und *Anwendungsbesitzer*. Dies kann mithilfe der integrierten Definition „Angegebenes Tag erforderlich“ erreicht werden.
 3. Erfordern Sie, dass das Tag *Anwendung* für Ressourcen mit dem Namen der betreffenden Ressourcengruppe übereinstimmt. Dies kann mithilfe der integrierten Definition „Tag und zugehörigen Wert erzwingen“ erreicht werden.
 
-Informationen zur Definition benutzerdefinierter Richtlinien finden Sie in der [Dokumentation zu Azure Policy](/azure/governance/policy/tutorials/create-custom-policy-definition). Anleitungen und Beispiele für benutzerdefinierte Richtlinien finden Sie auf der [Website für Azure Policy-Beispiele](/azure/governance/policy/samples) und im zugehörigen [GitHub-Repository](https://github.com/Azure/azure-policy).
+Informationen zur Definition benutzerdefinierter Richtlinien finden Sie in der [Dokumentation zu Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/create-custom-policy-definition). Anleitungen und Beispiele für benutzerdefinierte Richtlinien finden Sie auf der [Website für Azure Policy-Beispiele](https://docs.microsoft.com/azure/governance/policy/samples) und im zugehörigen [GitHub-Repository](https://github.com/Azure/azure-policy).
 
 #### <a name="assign-azure-policy-and-rbac-roles-using-azure-blueprints"></a>Zuweisen von Azure Policy- und RBAC-Rollen mithilfe von Azure Blueprints
 
-Azure-Richtlinien können auf Ressourcengruppen-, Abonnement- und Verwaltungsgruppenebene zugewiesen und in [Azure Blueprints](/azure/governance/blueprints/overview)-Definitionen integriert werden. Obwohl die in diesem Governance-MVP definierten Richtlinienanforderungen für alle aktuellen Abonnements gelten, ist es sehr wahrscheinlich, dass zukünftige Bereitstellungen Ausnahmen oder alternative Richtlinien erfordern werden. Infolgedessen ist die Zuweisung von Richtlinien über Verwaltungsgruppen, wobei alle untergeordneten Abonnements diese Zuordnungen erben, möglicherweise nicht ausreichend flexibel, um diese Szenarien zu unterstützen.
+Azure-Richtlinien können auf Ressourcengruppen-, Abonnement- und Verwaltungsgruppenebene zugewiesen und in [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview)-Definitionen integriert werden. Obwohl die in diesem Governance-MVP definierten Richtlinienanforderungen für alle aktuellen Abonnements gelten, ist es sehr wahrscheinlich, dass zukünftige Bereitstellungen Ausnahmen oder alternative Richtlinien erfordern werden. Infolgedessen ist die Zuweisung von Richtlinien über Verwaltungsgruppen, wobei alle untergeordneten Abonnements diese Zuordnungen erben, möglicherweise nicht ausreichend flexibel, um diese Szenarien zu unterstützen.
 
 Azure Blueprints ermöglicht die konsistente Zuweisung von Richtlinien und Rollen, die Anwendung von Resource Manager-Vorlagen und die Bereitstellung von Ressourcengruppen für mehrere Abonnements. Wie bei den Richtliniendefinitionen werden Blaupausendefinitionen in Verwaltungsgruppen oder Abonnements gespeichert und sind durch Vererbung für alle untergeordneten Elemente in der Verwaltungsgruppenhierarchie verfügbar.
 
@@ -41,7 +41,7 @@ Das Cloudgovernanceteam hat entschieden, dass die Durchsetzung der erforderliche
 3. Veröffentlichen Sie die Blaupausendefinition.
 4. Weisen Sie allen Abonnements die Blaupausendefinition `governance-baseline` zu.
 
-Weitere Informationen zum Erstellen und Verwenden von Blaupausendefinitionen finden Sie in der [Dokumentation zu Azure Blueprints](/azure/governance/blueprints/overview).
+Weitere Informationen zum Erstellen und Verwenden von Blaupausendefinitionen finden Sie in der [Dokumentation zu Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview).
 
 ### <a name="secure-hybrid-vnet"></a>Sicheres Hybrid-VNET
 
@@ -50,9 +50,9 @@ Bestimmte Abonnements erfordern häufig eine bestimmte Zugriffsebene für lokale
 Bis das Vertrauen in die Cloudumgebung vollständig hergestellt ist, ist es wichtig, jede zulässige Kommunikation zwischen der lokalen Umgebung und den Cloudworkloads streng zu kontrollieren und zu überwachen, und dass das lokale Netzwerk gegen potenziell unbefugten Zugriff von cloudbasierten Ressourcen geschützt ist. Um diese Szenarien zu unterstützen, fügt das Governance-MVP die folgenden bewährten Methoden hinzu:
 
 1. Richten Sie ein cloudbasiertes, sicheres Hybrid-VNET ein.
-    1. Die [VPN-Referenzarchitektur](/azure/architecture/reference-architectures/hybrid-networking/vpn) richtet ein Muster und ein Bereitstellungsmodell zur Erstellung einer VPN Gateway-Instanz in Azure ein.
+    1. Die [VPN-Referenzarchitektur](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn) richtet ein Muster und ein Bereitstellungsmodell zur Erstellung einer VPN Gateway-Instanz in Azure ein.
     2. Vergewissern Sie sich, dass verbundene Cloudnetzwerke durch lokale Mechanismen für die Sicherheits- und Datenverkehrsverwaltung als nicht vertrauenswürdig eingestuft werden. In der Cloud gehostete Ressourcen und Dienste sollten nur Zugriff auf autorisierte lokale Dienste erhalten.
-    3. Überprüfen Sie, ob das lokale Edgegerät im lokalen Rechenzentrum mit den [Azure VPN Gateway-Anforderungen](/azure/vpn-gateway/vpn-gateway-about-vpn-devices) kompatibel ist und für den Zugriff auf das öffentliche Internet konfiguriert ist.
+    3. Überprüfen Sie, ob das lokale Edgegerät im lokalen Rechenzentrum mit den [Azure VPN Gateway-Anforderungen](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices) kompatibel ist und für den Zugriff auf das öffentliche Internet konfiguriert ist.
 1. Erstellen Sie in der Stammverwaltungsgruppe eine zweite Blaupausendefinition namens `secure-hybrid-vnet`.
     1. Fügen Sie der Blaupausendefinition die Resource Manager-Vorlage für VPN Gateway als Artefakt hinzu.
     2. Fügen Sie der Blaupausendefinition die Resource Manager-Vorlage für das virtuelle Netzwerk als Artefakt hinzu.
