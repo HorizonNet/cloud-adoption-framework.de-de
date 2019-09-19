@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: dbfc365f874b9ad6045454c53270275a5008935d
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 19299c5855600524f3335b00272974790d83c8fa
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818743"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71022775"
 ---
 # <a name="organize-your-azure-resources"></a>Organisieren Ihrer Azure-Ressourcen
 
@@ -76,9 +76,9 @@ Erstellen Sie eine Ressourcengruppe für Ressourcen wie Web-Apps, Datenbanken un
 
 Weitere Informationen finden Sie unter:
 
-- [Grundlegendes zur Ressourcenzugriffsverwaltung in Azure](../../governance/resource-consistency/azure-resource-access.md)
-- [Organisieren Ihrer Ressourcen mit Azure-Verwaltungsgruppen](/azure/azure-resource-manager/management-groups-overview)
-- [Einschränkungen bei Abonnementdiensten](/azure/azure-subscription-service-limits)
+- [Grundlegendes zur Ressourcenzugriffsverwaltung in Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Organisieren Ihrer Ressourcen mit Azure-Verwaltungsgruppen](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
+- [Einschränkungen bei Abonnementdiensten](https://docs.microsoft.com/azure/azure-subscription-service-limits)
 
 ::: zone-end
 
@@ -124,7 +124,7 @@ Mit einem durchdachten Benennungsstandard lassen sich Ressourcen im Portal, auf 
 
 ::: zone target="docs"
 
-Wir empfehlen, den [Leitfaden mit Mustern und Verfahren](/azure/architecture/best-practices/naming-conventions) zu lesen und anzuwenden.
+Wir empfehlen, den [Leitfaden mit Mustern und Verfahren](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions) zu lesen und anzuwenden.
 
 >[!TIP]
 >Verwenden Sie möglichst keine Sonderzeichen (`-` oder `_`) als erstes oder letztes Zeichen eines Namens. Diese Zeichen führen bei den meisten Validierungsregeln zu einem Fehler.
@@ -151,7 +151,7 @@ Sie können Tags auch für viele andere Dinge verwenden. Sie werden häufig für
 
 Jede Ressource oder Ressourcengruppe kann maximal 15 Tagname-Wert-Paare besitzen. Diese Einschränkung gilt jedoch nur für Tags, die direkt auf die Ressourcengruppe oder auf die Ressource angewendet werden.
 
-Weitere Informationen zum Tagging finden Sie unter [Namenskonventionen für Azure-Ressourcen im Azure Architecture Center](../../ready/considerations/name-and-tag.md#metadata-tags).
+Weitere Informationen zum Tagging finden Sie unter [Namenskonventionen für Azure-Ressourcen im Azure Architecture Center](../../ready/considerations/naming-and-tagging.md#metadata-tags).
 
 ::: zone target="docs"
 
@@ -166,7 +166,7 @@ So wenden Sie ein Tag auf eine Ressourcengruppe an:
 
 ## <a name="learn-more"></a>Weitere Informationen
 
-Weitere Informationen finden Sie unter [Verwenden von Tags zum Organisieren von Azure-Ressourcen](/azure/azure-resource-manager/resource-group-using-tags).
+Weitere Informationen finden Sie unter [Verwenden von Tags zum Organisieren von Azure-Ressourcen](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
 
 ::: zone-end
 

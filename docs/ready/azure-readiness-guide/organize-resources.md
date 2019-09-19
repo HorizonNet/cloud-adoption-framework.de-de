@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2951c3049a22036199e2bc73a6d3f9283582e7e1
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 8be46c21a009b7dca11cfc628476ae46315b23e5
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818505"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71025233"
 ---
 # <a name="organize-your-azure-resources"></a>Organisieren Ihrer Azure-Ressourcen
 
@@ -80,9 +80,9 @@ Weitere Informationen finden Sie unter:
 
 - [Azure-Grundlagen](../considerations/fundamental-concepts.md)
 - [Skalieren mit mehreren Azure-Abonnements](../considerations/scaling-subscriptions.md)
-- [Grundlegendes zur Ressourcenzugriffsverwaltung in Azure](../../governance/resource-consistency/azure-resource-access.md)
-- [Organisieren Ihrer Ressourcen mit Azure-Verwaltungsgruppen](/azure/azure-resource-manager/management-groups-overview)
-- [Einschränkungen bei Abonnementdiensten](/azure/azure-subscription-service-limits)
+- [Grundlegendes zur Ressourcenzugriffsverwaltung in Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Organisieren Ihrer Ressourcen mit Azure-Verwaltungsgruppen](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
+- [Einschränkungen bei Abonnementdiensten](https://docs.microsoft.com/azure/azure-subscription-service-limits)
 
 ::: zone-end
 
@@ -130,7 +130,7 @@ Mit einem durchdachten Benennungsstandard lassen sich Ressourcen im Azure-Portal
 
 - Auf der operativen Seite sollte sichergestellt werden, dass die Namen von IT-Teams benötigte Informationen enthalten. Verwenden Sie die Details, die die Workload, Anwendung, Umgebung, Wichtigkeit und andere Informationen identifizieren, die für die Verwaltung von Ressourcen nützlich sind.
 
-Verschiedene Ressourcentypen können unterschiedliche Längenbeschränkungen und zulässige Zeichen aufweisen, von denen viele im Artikel zu den bewährten Methoden für [Azure-Namenskonventionen](/azure/architecture/best-practices/naming-conventions) aufgeführt sind. Weitere Informationen und Empfehlungen, die speziell auf die Unterstützung von Bemühungen zur Einführung von Enterprise Clouds abzielen, finden Sie in der [Anleitung zu Benennung und Tagging](../considerations/name-and-tag.md) für das Framework für die Cloudeinführung (Cloud Adoption Framework).
+Verschiedene Ressourcentypen können unterschiedliche Längenbeschränkungen und zulässige Zeichen aufweisen, von denen viele im Artikel zu den bewährten Methoden für [Azure-Namenskonventionen](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions) aufgeführt sind. Weitere Informationen und Empfehlungen, die speziell auf die Unterstützung von Bemühungen zur Einführung von Enterprise Clouds abzielen, finden Sie in der [Anleitung zu Benennung und Tagging](../considerations/naming-and-tagging.md) für das Framework für die Cloudeinführung (Cloud Adoption Framework).
 
 Die folgende Tabelle enthält Namensmuster für einige Beispieltypen von Azure-Ressourcen.
 
@@ -161,7 +161,7 @@ Sie können Tags auch für viele andere Dinge verwenden. Sie werden häufig für
 
 Jede Ressource oder Ressourcengruppe kann maximal 15 Tagname-Wert-Paare besitzen. Diese Einschränkung gilt nur für Tags, die direkt auf die Ressourcengruppe oder die Ressource angewendet werden.
 
-Weitere Empfehlungen und Beispiele zum Tagging finden Sie in der [Anleitung zum Tagging](../considerations/name-and-tag.md) für das Framework für die Cloudeinführung (Cloud Adoption Framework).
+Weitere Empfehlungen und Beispiele zum Tagging finden Sie in der [Anleitung zum Tagging](../considerations/naming-and-tagging.md) für das Framework für die Cloudeinführung (Cloud Adoption Framework).
 
 ::: zone target="docs"
 
@@ -176,7 +176,7 @@ So wenden Sie ein Tag auf eine Ressourcengruppe an:
 
 ## <a name="learn-more"></a>Weitere Informationen
 
-Weitere Informationen finden Sie unter [Verwenden von Tags zum Organisieren von Azure-Ressourcen](/azure/azure-resource-manager/resource-group-using-tags).
+Weitere Informationen finden Sie unter [Verwenden von Tags zum Organisieren von Azure-Ressourcen](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
 
 ::: zone-end
 
