@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: f36e524fea15df572df8ef74c6b5c81f5fa08932
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5e1b1c24b076c56fdf6e42a8340589ee58bd69dc
+ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837780"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71023442"
 ---
 # <a name="enable-success-across-any-cloud-adoption-journey"></a>Ermöglichen des Erfolgs über jede Cloudeinführungsreise hinweg
 
@@ -22,12 +22,12 @@ Das Framework für die Einführung der Microsoft Cloud für Azure (Microsoft Clo
 
 In diesem Framework ist „Enablement“ (Befähigung, Ermöglichen) ein Kernthema. Die folgende Checkliste enthält eine Reihe von Themen, die in jede Cloudeinführungsmaßnahme eingebettet werden sollten, um sicherzustellen, dass die Reise sowohl für die IT als auch für das Unternehmen ein Erfolg wird:
 
-- **Planung:** Festlegen klarer [Geschäftsergebnisse](../business-strategy/business-outcomes/index.md), eines definierten [Plans für digitale Ressourcen](../digital-estate/index.md) und gut durchdachter [Einführungsbacklogs](../migrate/migration-considerations/prerequisites/migration-backlog-review.md).
+- **Planung:** Festlegen klarer [Geschäftsergebnisse](../strategy/business-outcomes/index.md), eines definierten [Plans für digitale Ressourcen](../digital-estate/index.md) und gut durchdachter [Einführungsbacklogs](../migrate/migration-considerations/prerequisites/migration-backlog-review.md).
 - **Bereit:** Sicherstellen der Bereitschaft der Mitarbeiter durch [Qualifikationen und Lernpläne](../ready/technical-skills.md).
 - **Betrieb:** Definieren Sie ein verwaltbares Betriebsmodell, um die Aktivitäten während und lange nach der Einführung zu steuern.
-  - **[Organisation](../organization/index.md):** Richten Sie Mitarbeiter und Teams so aus, dass sie einen reibungslosen Cloudbetrieb und eine problemlose Einführung sicherstellen.
-  - **Governance:** Definieren geeigneter [Governancedisziplinen](../governance/index.md) zur konsequenten Anwendung von Kostenmanagement-, Risikominderungs-, Compliance- und Sicherheitsbaselines über die gesamte Cloudeinführung hinweg.
-  - **Verwalten:** Sicherstellen des fortlaufenden [Betriebs](../operations/index.md) des IT-Portfolios, um Unterbrechungen der Geschäftsprozesse zu minimieren und die Stabilität des IT-Portfolios zu gewährleisten.
+  - **[Organisation](../organize/index.md):** Richten Sie Mitarbeiter und Teams so aus, dass sie einen reibungslosen Cloudbetrieb und eine problemlose Einführung sicherstellen.
+  - **Governance:** Definieren geeigneter [Governancedisziplinen](../govern/index.md) zur konsequenten Anwendung von Kostenmanagement-, Risikominderungs-, Compliance- und Sicherheitsbaselines über die gesamte Cloudeinführung hinweg.
+  - **Verwalten:** Fortlaufende [Betriebsverwaltung](../manage/index.md) des IT-Portfolios, um Unterbrechungen der Geschäftsprozesse zu minimieren und die Stabilität des IT-Portfolios zu gewährleisten.
   - **Support:** Ausrichten der [Optionen für Partnerschaften und Unterstützung](../migrate/migration-considerations/assess/partnership-options.md).
 
 ## <a name="additional-tools"></a>Weitere Tools
@@ -38,7 +38,7 @@ Zusätzlich zum Framework für die Cloudeinführung (Cloud Adoption Framework) d
 
 <ul class="panelContent cardsH">
 <li style="display: flex; flex-direction: column;">
-    <a href="../governance/journeys/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
+    <a href="../govern/guides/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
         <div class="cardSize" style="flex: 1 0 auto; display: flex;">
             <div class="cardPadding" style="display: flex;">
                 <div class="card">
