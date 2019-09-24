@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: e4b0ab9c886ec8868cd1f630db6c193cadaff234
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 82ad7e2c4e7e7eac375e99daa0815c8482492e15
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023910"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223898"
 ---
 # <a name="encryption-decision-guide"></a>Leitfaden zur Entscheidungsfindung für die Verschlüsselung
 
@@ -123,7 +123,7 @@ Weitere Informationen zur Verschlüsselung und Schlüsselverwaltung in Azure fin
 - [Übersicht über die Azure-Verschlüsselung:](https://docs.microsoft.com/azure/security/security-azure-encryption-overview) Eine ausführliche Beschreibung zur Verwendung der Verschlüsselung in Azure zum Schutz sowohl ruhender Daten als auch von Daten bei der Übertragung.
 - [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-overview). Key Vault ist das primäre Schlüsselverwaltungssystem zum Speichern und Verwalten von kryptografischen Schlüsseln, Geheimnissen und Zertifikaten in Azure.
 - [Bewährte Methoden für Datensicherheit und Datenverschlüsselung in Azure:](https://docs.microsoft.com/azure/security/azure-security-data-encryption-best-practices) Eine Diskussion über die bewährten Methoden von Azure zur Datensicherheit und Datenverschlüsselung.
-- [Confidential Computing in Azure:](https://azure.microsoft.com/solutions/confidential-compute/) Die Confidential Computing-Initiative von Azure stellt Tools und Technologien zum Erstellen von vertrauenswürdigen Ausführungsumgebungen und anderen Verschlüsselungsmechanismen zum Schützen von Daten in Gebrauch bereit.
+- [Confidential Computing in Azure:](https://azure.microsoft.com/solutions/confidential-compute) Die Confidential Computing-Initiative von Azure stellt Tools und Technologien zum Erstellen von vertrauenswürdigen Ausführungsumgebungen und anderen Verschlüsselungsmechanismen zum Schützen von Daten in Gebrauch bereit.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

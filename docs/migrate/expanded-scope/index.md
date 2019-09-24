@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Checkliste für die Cloudmigration mit erweitertem Umfang
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 125c6d044fd766896971aced5bedbc515c14417f
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 4daf4b01a2fde83de1040f224b8096475a24fe60
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70817331"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224358"
 ---
 # <a name="expanded-scope-for-cloud-migration"></a>Erweiterter Umfang für die Cloudmigration
 
@@ -27,7 +27,7 @@ Die folgende Checkliste beschreibt die allgemeinen Komplexitätsbereiche, die ei
 
 - **Geschäftsorientierte Bereichsänderungen:**
   - [Ausgewogenheit des Portfolios](./balance-the-portfolio.md)
-  - [Unterstützung globaler Märkte](./multiple-regions.md)
+  - [Unterstützung globaler Märkte](../../decision-guides/regions/index.md)
   - Kostenbewusstsein während einer Migration *(ab Q3 2019 verfügbar)*
 - **Kulturbedingte Bereichsänderungen:**
   - Change Management und Genehmigungsprozesse *(ab Q3 2019 verfügbar)*

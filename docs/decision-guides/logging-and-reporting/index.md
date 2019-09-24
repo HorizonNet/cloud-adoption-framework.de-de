@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 5a2ce2529073c40abf73432d562d241890a8d805
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9d2f4a6c8541d8967f26db1a38591c7ce775d5e8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025607"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223626"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Protokollierung und Berichterstellung
 
@@ -69,7 +69,7 @@ Rein lokale Annahmen:
 
 ### <a name="gateway-aggregation"></a>Gatewayaggregation
 
-Für Szenarien, in denen die Menge der cloudbasierten Telemetriedaten groß ist oder Protokolldaten für bestehende lokale Überwachungssysteme geändert werden müssen, bevor sie verarbeitet werden können, kann ein Dienst zur [Gatewayaggregation](https://docs.microsoft.com/azure/architecture/patterns/gateway-aggregation.md) von Protokolldaten erforderlich sein.
+Für Szenarien, in denen die Menge der cloudbasierten Telemetriedaten groß ist oder Protokolldaten für bestehende lokale Überwachungssysteme geändert werden müssen, bevor sie verarbeitet werden können, kann ein Dienst zur [Gatewayaggregation](/azure/architecture/patterns/gateway-aggregation) von Protokolldaten erforderlich sein.
 
 Ein Gatewaydienst wird bei Ihrem Cloudanbieter bereitgestellt. Anschließend werden relevante Anwendungen und Dienste so konfiguriert, dass Telemetriedaten anstatt an ein Standardprotokollierungssystem an das Gateway übertragen werden. Das Gateway kann anschließend die Daten verarbeiten, indem es sie aggregiert, kombiniert oder anderweitig formatiert, bevor es sie dann zur Erfassung und Analyse an Ihren Überwachungsdienst übermittelt.
 
