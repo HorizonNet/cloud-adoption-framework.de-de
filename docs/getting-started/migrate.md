@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7c35d64e3106c2a34670d4dc05614de087f5d5c3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ab637312535f1497b8f506cb9636025460a7905b
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023413"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223071"
 ---
 # <a name="getting-started-with-a-cloud-migration-journey"></a>Erste Schritte auf Ihrem Weg zur Cloudmigration
 
@@ -84,7 +84,7 @@ Wie in der obigen Abbildung dargestellt, richtet dieses Framework strategische E
 - **[Bereitmachen](../ready/index.md):** Die Vorbereitung von Unternehmen, Kultur, Mitarbeitern und Umgebung auf anstehende Änderungen führt bei allen Aktivitäten zum Erfolg und beschleunigt Implementierungs- und Änderungsprojekte.
 - **Übernehmen:** Sicherstellen der ordnungsgemäßen Implementierung der gewünschten Änderungen über alle IT- und Geschäftsprozesse hinweg, um die gewünschten Geschäftsergebnisse zu erzielen.
   - **[Migrieren](../migrate/index.md):** Iterative Ausführung der [Cloudimplementierungsmethodik](#cloud-implementation) unter Einhaltung des getesteten Prozesses zum Bewerten, Migrieren, Optimieren, Sichern und Verwalten, um einen wiederholbaren Prozess zum Migrieren von Workloads zu erstellen.
-- **[Ausführen](../operating-model/index.md):** Definieren Sie ein verwaltbares Betriebsmodell, um die Aktivitäten während und lange nach der Einführung zu steuern.
+- **[Ausführen](../operate/index.md):** Definieren Sie ein verwaltbares Betriebsmodell, um die Aktivitäten während und lange nach der Einführung zu steuern.
   - **[Organisation](../organize/index.md):** Richten Sie Mitarbeiter und Teams so aus, dass sie einen reibungslosen Cloudbetrieb und eine problemlose Einführung sicherstellen.
   - **[Steuern](../govern/index.md):** Ausrichten der Unternehmensrichtlinie auf konkrete Risiken, die durch richtlinien-, prozess- und cloudbasierte Governancetools gemindert werden können.
   - **[Verwaltung](../manage/index.md):** Erweitern des IT-Betriebs, um sicherzustellen, dass cloudbasierte Lösungen über sichere und kostengünstige Prozesse mit modernen, primär für die Cloud konzipierten Tools ausgeführt werden können.

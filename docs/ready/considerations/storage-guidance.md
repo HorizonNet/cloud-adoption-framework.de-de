@@ -8,12 +8,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e32d85fb16ec68eba0896bfb2cf2087c436c050e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: c4733dbb77d7feb8fd2a0fdd289105cd5e112327
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71021914"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224204"
 ---
 # <a name="storage-design-decisions"></a>Entscheidungen zum Speicherentwurf
 
@@ -39,7 +39,7 @@ Die Beantwortung der folgenden Fragen zu Ihren Workloads ist hilfreich, um basie
 - **Müssen Sie Big Data-Analyseworkloads unterstützen?** [Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction) baut auf Azure Blob Storage auf. Data Lake Storage Gen2 unterstützt Funktionen für umfangreiche Data Lakes auf Unternehmensniveau. Der Dienst kann auch für das Speichern von Petabyte an Daten genutzt werden und gleichzeitig einen Durchsatz von Hunderten von Gigabit gewährleisten.
 - **Müssen Sie cloudnative Dateifreigaben bereitstellen?** Azure verfügt über zwei Hauptdienste, mit denen in der Cloud gehostete Dateifreigaben bereitgestellt werden: Azure NetApp Files und Azure Files. [Azure NetApp Files](https://docs.microsoft.com/azure/azure-netapp-files/azure-netapp-files-introduction) stellt NFS-Hochleistungsfreigaben bereit, die gut für gängige Workloads von Unternehmen geeignet sind, z. B. SAP. [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) verfügt über Dateifreigaben, auf die per SMB 3.0 und HTTPS zugegriffen werden kann.
 - **Müssen Sie Hybridcloudspeicher für lokale HPC-Workloads (High Performance Computing) unterstützen?** [Avere vFXT for Azure](https://docs.microsoft.com/azure/avere-vfxt/avere-vfxt-overview) ist eine Hybridcachelösung, mit der Sie Ihre lokalen Speicherfunktionen erweitern können, indem Sie cloudbasierten Speicher nutzen. Avere vFXT for Azure ist für HPC-Workloads mit hohem Leseaufwand optimiert, die Computefarmen mit 1.000 bis 40.000 CPU-Kernen umfassen. Avere vFXT for Azure kann mit dem lokalen Hardware-NAS (Network Attached Storage) und/oder Azure Blob Storage integriert werden.
-- **Müssen Sie in größerem Umfang die Archivierung und Synchronisierung Ihrer lokalen Daten in die Cloud durchführen?** [Azure Data Box](https://docs.microsoft.com/azure/databox-family/)-Produkte sind dafür ausgelegt, das Verschieben von großen Datenmengen aus Ihrer lokalen Umgebung in die Cloud zu unterstützen. [Azure Data Box Gateway](https://docs.microsoft.com/azure/databox-online/data-box-gateway-overview) ist ein virtuelles Gerät, das lokal ausgeführt wird. Data Box Gateway unterstützt Sie bei der Verwaltung einer umfangreichen Datenmigrationen zur Cloud. Wenn Sie Daten vor dem Verschieben in die Cloud analysieren, transformieren oder filtern müssen, können Sie [Azure Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-overview) nutzen. Dies ist ein KI-fähiges physisches Gerät für Edgecomputing, das in Ihrer lokalen Umgebung bereitgestellt wird. Data Box Edge beschleunigt die Verarbeitung und die sichere Übertragung von Daten nach Azure.
+- **Müssen Sie in größerem Umfang die Archivierung und Synchronisierung Ihrer lokalen Daten in die Cloud durchführen?** [Azure Data Box](https://docs.microsoft.com/azure/databox-family)-Produkte sind dafür ausgelegt, das Verschieben von großen Datenmengen aus Ihrer lokalen Umgebung in die Cloud zu unterstützen. [Azure Data Box Gateway](https://docs.microsoft.com/azure/databox-online/data-box-gateway-overview) ist ein virtuelles Gerät, das lokal ausgeführt wird. Data Box Gateway unterstützt Sie bei der Verwaltung einer umfangreichen Datenmigrationen zur Cloud. Wenn Sie Daten vor dem Verschieben in die Cloud analysieren, transformieren oder filtern müssen, können Sie [Azure Data Box Edge](https://docs.microsoft.com/azure/databox-online/data-box-edge-overview) nutzen. Dies ist ein KI-fähiges physisches Gerät für Edgecomputing, das in Ihrer lokalen Umgebung bereitgestellt wird. Data Box Edge beschleunigt die Verarbeitung und die sichere Übertragung von Daten nach Azure.
 - **Möchten Sie eine vorhandene lokale Dateifreigabe erweitern, um Cloudspeicher zu nutzen?** Mit der [Azure-Dateisynchronisierung](https://docs.microsoft.com/azure/storage/files/storage-sync-files-deployment-guide) können Sie den Azure Files-Dienst als Erweiterung von Dateifreigaben verwenden, die auf Ihren lokalen Windows Server-Computern gehostet werden. Durch den Synchronisierungsdienst werden Ihre Windows Server-Computer zu einem schnellen Cache für Ihre Azure-Dateifreigabe. Dadurch können Ihre lokalen Computer, die auf die Freigabe zugreifen, ein beliebiges Protokoll verwenden, das unter Windows Server verfügbar ist.
 
 ## <a name="common-storage-scenarios"></a>Häufige Speicherszenarien

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0c17f9043dd88f401b07293a6b93e50ccefe0137
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ea4596c734e5bef03179569e537aacbca430d77e
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031985"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222316"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Identitätsbaseline“
 
@@ -79,14 +79,14 @@ Dies sind die neuen Best Practices:
 - **Sicheres Hybrid-VNET – Blaupause**: Die lokale Seite des Hybridnetzwerks sollte so konfiguriert werden, dass sie Kommunikation zwischen der folgenden Lösung und den lokalen Active Directory-Servern zulässt. Für diese Best Practices ist es erforderlich, dass eine DMZ Active Directory Domain Services über Netzwerkgrenzen hinweg aktiviert.
 - **Azure Resource Manager-Vorlagen**:
     1. Definieren Sie eine Netzwerksicherheitsgruppe, um externen Datenverkehr zu blockieren und internen Datenverkehr zuzulassen.
-    1. Stellen Sie zwei virtuelle Active Directory-Computer als Paar mit Lastenausgleich auf der Grundlage eines Golden Image bereit. Beim ersten Start führt dieses Image ein PowerShell-Skript aus, um den Domänenbeitritt und die Registrierung bei den Domänendiensten vorzunehmen. Weitere Informationen finden Sie unter [Erweitern von Active Directory Domain Services (AD DS) auf Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain).
+    2. Stellen Sie zwei virtuelle Active Directory-Computer als Paar mit Lastenausgleich auf der Grundlage eines Golden Image bereit. Beim ersten Start führt dieses Image ein PowerShell-Skript aus, um den Domänenbeitritt und die Registrierung bei den Domänendiensten vorzunehmen. Weitere Informationen finden Sie unter [Erweitern von Active Directory Domain Services (AD DS) auf Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain).
 - Azure Policy: Wenden Sie die NSG auf alle Ressourcen an.
 - Azure-Blaupause:
     1. Erstellen Sie eine Blaupause mit dem Namen `active-directory-virtual-machines`.
-    1. Fügen Sie der Blaupause jede der Active Directory-Vorlagen und -Richtlinien hinzu.
-    1. Veröffentlichen Sie die Blaupause in jeder betroffenen Verwaltungsgruppe.
-    1. Wenden Sie die Blaupause auf alle Abonnements an, für die Legacy- oder Multi-Factor Authentication-Drittanbieterauthentifizierung erforderlich ist.
-    1. Die Instanz von Active Directory, die in Azure ausgeführt wird, kann nun als Erweiterung der lokalen Active Directory-Lösung verwendet werden, was ihr die Integration des vorhandenen Multi-Factor Authentication-Tools und das Anbieten von anspruchsbasierter Authentifizierung ermöglicht, beides mithilfe vorhandener Active Directory-Funktionen.
+    2. Fügen Sie der Blaupause jede der Active Directory-Vorlagen und -Richtlinien hinzu.
+    3. Veröffentlichen Sie die Blaupause in jeder betroffenen Verwaltungsgruppe.
+    4. Wenden Sie die Blaupause auf alle Abonnements an, für die Legacy- oder Multi-Factor Authentication-Drittanbieterauthentifizierung erforderlich ist.
+    5. Die Instanz von Active Directory, die in Azure ausgeführt wird, kann nun als Erweiterung der lokalen Active Directory-Lösung verwendet werden, was ihr die Integration des vorhandenen Multi-Factor Authentication-Tools und das Anbieten von anspruchsbasierter Authentifizierung ermöglicht, beides mithilfe vorhandener Active Directory-Funktionen.
 
 ## <a name="conclusion"></a>Zusammenfassung
 

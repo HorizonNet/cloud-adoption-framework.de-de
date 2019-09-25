@@ -4,18 +4,18 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: In diesem Artikel erfahren Sie, wie Sie die erste Grundlage für die Cloud Governance inkrementell verbessern können.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 01/03/2019
+ms.date: 09/13/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: d4a0338daa65ea4269077f15acee05cd99a5fb10
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d7e4c0516e1c52f1fc6ddd8b42485902cb24d58e
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031651"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223637"
 ---
 # <a name="improve-your-initial-cloud-governance-foundation"></a>Verbessern der ersten Grundlage für die Cloud Governance
 
@@ -28,14 +28,14 @@ Der folgende ausführliche Leitfaden kann jederzeit auf die ursprüngliche erste
 > [!IMPORTANT]
 > Die Ressourcen Organisation kann sich darauf auswirken, wie dieser ausführliche Leitfaden angewendet wird. Es ist wichtig, mit den Empfehlungen zu beginnen, die am besten für die erste Governancegrundlage geeignet sind, die Sie im vorherigen Schritt implementiert haben.
 
-|Risiko/Bedarf | Kleine und mittlere Unternehmen | Großes Unternehmen |
+|Risiko/Bedarf | Standardunternehmen | Komplexes Unternehmen |
 |---|---|---|
 |Vertrauliche Daten in der Cloud|[Ausführlicher Leitfaden](./guides/standard/security-baseline-improvement.md)|[Ausführlicher Leitfaden](./guides/complex/security-baseline-improvement.md)|
 |Unternehmenskritische Apps in der Cloud|[Ausführlicher Leitfaden](./guides/standard/resource-consistency-improvement.md)|[Ausführlicher Leitfaden](./guides/complex/resource-consistency-improvement.md)|
 |Kostenmanagement für die Cloud|[Ausführlicher Leitfaden](./guides/standard/cost-management-improvement.md)|[Ausführlicher Leitfaden](./guides/complex/cost-management-improvement.md)|
 |Verwenden mehrerer Clouds|[Ausführlicher Leitfaden](./guides/standard/multicloud-improvement.md)|[Ausführlicher Leitfaden](./guides/complex/multicloud-improvement.md)|
-|Komplexe/Legacy-Identitätsverwaltung|         |[Ausführlicher Leitfaden](./guides/complex/identity-baseline-improvement.md)|
-|Mehrere Governance-Ebenen|         |[Ausführlicher Leitfaden](./guides/complex/multiple-layers-of-governance.md)|
+|Komplexe/Legacy-Identitätsverwaltung|–|[Ausführlicher Leitfaden](./guides/complex/identity-baseline-improvement.md)|
+|Mehrere Governance-Ebenen|–|[Ausführlicher Leitfaden](./guides/complex/multiple-layers-of-governance.md)|
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d51cef67c96057b1929ed8cc86396f20338e932b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: c43d07c6cfdea0152559d7a13fec7dde148b1530
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031655"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221572"
 ---
 # <a name="guest-configuration-policy"></a>Gastkonfigurationsrichtlinie
 
@@ -47,21 +47,23 @@ Sie können das folgende PowerShell-Beispielskript verwenden, um diese Richtlini
  Bevor Sie dieses Skript ausführen, müssen Sie sich mit dem Cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) anmelden. Wenn Sie das Skript ausführen, müssen Sie den Namen des Abonnements angeben, auf das Sie die Richtlinien anwenden möchten.
 
 ```powershell
-#Assign Guest Configuration policy.
-param (
-    [Parameter(Mandatory=$true)]
-    [string]$SubscriptionName
-)
 
-$Subscription = Get-AzSubscription -SubscriptionName $SubscriptionName
-$scope = "/subscriptions/" + $Subscription.Id
+    #Assign Guest Configuration policy.
+    param (
+        [Parameter(Mandatory=$true)]
+        [string]$SubscriptionName
+    )
 
-$PasswordPolicy = Get-AzPolicySetDefinition -Name "3fa7cbf5-c0a4-4a59-85a5-cca4d996d5a6"
-$CertExpirePolicy = Get-AzPolicySetDefinition -Name "b6f5e05c-0aaa-4337-8dd4-357c399d12ae"
+    $Subscription = Get-AzSubscription -SubscriptionName $SubscriptionName
+    $scope = "/subscriptions/" + $Subscription.Id
 
-New-AzPolicyAssignment -Name "PasswordPolicy" -DisplayName "[Preview]: Audit that password security settings are set correctly inside Linux and Windows machines" -Scope $scope -PolicySetDefinition $PasswordPolicy -AssignIdentity -Location eastus
+    $PasswordPolicy = Get-AzPolicySetDefinition -Name "3fa7cbf5-c0a4-4a59-85a5-cca4d996d5a6"
+    $CertExpirePolicy = Get-AzPolicySetDefinition -Name "b6f5e05c-0aaa-4337-8dd4-357c399d12ae"
 
-New-AzPolicyAssignment -Name "CertExpirePolicy" -DisplayName "[Preview]: Audit that certificates are not expiring on Windows VMs" -Scope $scope -PolicySetDefinition $CertExpirePolicy -AssignIdentity -Location eastus
+    New-AzPolicyAssignment -Name "PasswordPolicy" -DisplayName "[Preview]: Audit that password security settings are set correctly inside Linux and Windows machines" -Scope $scope -PolicySetDefinition $PasswordPolicy -AssignIdentity -Location eastus
+
+    New-AzPolicyAssignment -Name "CertExpirePolicy" -DisplayName "[Preview]: Audit that certificates are not expiring on Windows VMs" -Scope $scope -PolicySetDefinition $CertExpirePolicy -AssignIdentity -Location eastus
+
 ```
 
 ## <a name="next-steps"></a>Nächste Schritte

@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 854653882b8a07662da092ee4ec0006644000f56
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: dbb00a411eb7905ad557e1acdc2a98d4d03cff49
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032508"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221422"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Azure-Serververwaltungstools und -dienste
 
@@ -96,4 +96,4 @@ Informationen über die Preisgestaltung für Azure-Verwaltungsdienste finden Sie
 - [Azure-Dateisynchronisierungsdienst](https://azure.microsoft.com/pricing/details/storage/blobs)
 
 > [!NOTE]
-> Die Lösung für die Azure-Updateverwaltung ist kostenlos, es fallen jedoch geringe Kosten für die Datenerfassung an. Als Faustregel gilt, dass die ersten 5 GB pro Monat der Datenerfassung kostenlos sind. Wir beobachten im Allgemeinen, dass jeder Computer etwa 25 MB pro Monat verbraucht. So sind etwa 200 Computer pro Monat kostenlos abgedeckt. Multiplizieren Sie für jeden zusätzlichen Server die Anzahl zusätzlicher Server mit 25 MB pro Monat. Multiplizieren Sie dies mit den Speicherkosten für die Gesamtmenge des benötigten Speichers. [Die Speicherkosten sind hier verfügbar.](https://azure.microsoft.com/pricing/details/storage/) Jeder zusätzliche Server sollte einen nominalen Einfluss auf die Kosten haben.
+> Die Lösung für die Azure-Updateverwaltung ist kostenlos, es fallen jedoch geringe Kosten für die Datenerfassung an. Als Faustregel gilt, dass die ersten 5 GB pro Monat der Datenerfassung kostenlos sind. Wir beobachten im Allgemeinen, dass jeder Computer etwa 25 MB pro Monat verbraucht. So sind etwa 200 Computer pro Monat kostenlos abgedeckt. Multiplizieren Sie für jeden zusätzlichen Server die Anzahl zusätzlicher Server mit 25 MB pro Monat. Multiplizieren Sie dies mit den Speicherkosten für die Gesamtmenge des benötigten Speichers. [Die Speicherkosten sind hier verfügbar.](https://azure.microsoft.com/pricing/details/storage) Jeder zusätzliche Server sollte einen nominalen Einfluss auf die Kosten haben.

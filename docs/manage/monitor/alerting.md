@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 76fb8084aad799d3bbfdaf3bd2ef4330fd080ac0
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 554bfdaf0a21fac50cafe9c510c4fd83c6702b81
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031467"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221382"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>Leitfaden zur Cloudüberwachung: Warnungen
 
@@ -94,7 +94,7 @@ Allerdings gibt es einige wichtige Hinweise zu dieser Regel.
 
 **Telemetriedaten zum Gastbetriebssystem** werden auf verschiedene Weise im System erfasst.
 
-- Die schnellste Methode, um Warnungen zu diesen Daten auszulösen, besteht darin, sie als benutzerdefinierte Metriken zu importieren. Verwenden Sie dazu die Azure-Diagnoseerweiterung und dann eine Metrikwarnung. Einige benutzerdefinierte Metriken befinden sich jedoch aktuell in der Vorschau und sind [kostenintensiver als andere Optionen](https://azure.microsoft.com/pricing/details/monitor/).
+- Die schnellste Methode, um Warnungen zu diesen Daten auszulösen, besteht darin, sie als benutzerdefinierte Metriken zu importieren. Verwenden Sie dazu die Azure-Diagnoseerweiterung und dann eine Metrikwarnung. Einige benutzerdefinierte Metriken befinden sich jedoch aktuell in der Vorschau und sind [kostenintensiver als andere Optionen](https://azure.microsoft.com/pricing/details/monitor).
 
 - Die günstigste, aber langsamste Methode ist die, Daten an den Azure Kusto-Protokollspeicher zu senden. Die Ausführung des Log Analytics-Agents auf der VM ist die beste Möglichkeit, alle Gastbetriebssystemmetriken und Protokolldaten in diesem Speicher abzurufen.
 
@@ -113,9 +113,9 @@ Wenn Sie Azure Monitor für VMs nicht verwenden, sollten Sie die folgenden Featu
 
 - [Dynamische Schwellwerte](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-dynamic-thresholds): Dynamische Schwellwerte überprüfen die Aktivität der Ressource über einen festgelegten Zeitraum und erstellen Ober- und Untergrenzen für das „Normalverhalten“. Wenn die überwachte Metrik diese Schwellwerte unter- oder überschreitet, erhalten Sie eine Warnung.
 
-- [Multisignalwarnungen:](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts/) Sie können eine Metrikwarnung erstellen, die eine Kombination aus zwei verschiedenen Eingaben für zwei verschiedene Ressourcentypen verwendet. Wenn Sie z. B. einen Alarm auslösen möchten, wenn die CPU-Auslastung einer VM über 90 Prozent beträgt und die Nachrichten in einer bestimmten Azure Service Bus-Warteschlange zur Einspeisung in diese VM eine bestimmte Anzahl überschreiten, können Sie dies ohne Erstellung einer Protokollabfrage erreichen. Dies funktioniert nur für zwei Signale. Wenn Sie eine komplexere Abfrage verwenden möchten, müssen Sie Ihre Metrikdaten im Azure Monitor-Protokollspeicher erfassen und eine Protokollabfrage erstellen.
+- [Multisignalwarnungen:](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts) Sie können eine Metrikwarnung erstellen, die eine Kombination aus zwei verschiedenen Eingaben für zwei verschiedene Ressourcentypen verwendet. Wenn Sie z. B. einen Alarm auslösen möchten, wenn die CPU-Auslastung einer VM über 90 Prozent beträgt und die Nachrichten in einer bestimmten Azure Service Bus-Warteschlange zur Einspeisung in diese VM eine bestimmte Anzahl überschreiten, können Sie dies ohne Erstellung einer Protokollabfrage erreichen. Dies funktioniert nur für zwei Signale. Wenn Sie eine komplexere Abfrage verwenden möchten, müssen Sie Ihre Metrikdaten im Azure Monitor-Protokollspeicher erfassen und eine Protokollabfrage erstellen.
 
-- [Warnungen zu mehreren Ressourcen:](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts/) Azure Monitor ermöglicht die Verwendung einer einzelnen Metrikwarnungsregel, die auf alle VM-Ressourcen angewendet wird. Mit diesem Feature können Sie Zeit sparen, da Sie nicht für jede VM einzeln Warnungen erstellen müssen. Der Preis für diesen Warnungstyp ist gleich. Wenn Sie 50 Warnungen zur Überwachung der CPU-Auslastung für 50 VMs erstellen oder eine Warnung konfigurieren, mit der die CPU-Auslastung für alle 50 VMs überwacht wird, sind die Kosten jeweils gleich hoch. Sie können diese Art von Warnungen auch in Kombination mit dynamischen Schwellenwerten verwenden.
+- [Warnungen zu mehreren Ressourcen:](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts) Azure Monitor ermöglicht die Verwendung einer einzelnen Metrikwarnungsregel, die auf alle VM-Ressourcen angewendet wird. Mit diesem Feature können Sie Zeit sparen, da Sie nicht für jede VM einzeln Warnungen erstellen müssen. Der Preis für diesen Warnungstyp ist gleich. Wenn Sie 50 Warnungen zur Überwachung der CPU-Auslastung für 50 VMs erstellen oder eine Warnung konfigurieren, mit der die CPU-Auslastung für alle 50 VMs überwacht wird, sind die Kosten jeweils gleich hoch. Sie können diese Art von Warnungen auch in Kombination mit dynamischen Schwellenwerten verwenden.
 
 Bei einer gemeinsamen Verwendung dieser Features können Sie Zeit sparen, indem Sie die Anzahl von Warnungsbenachrichtigungen und die Verwaltung der zugrunde liegenden Warnungen minimieren.
 

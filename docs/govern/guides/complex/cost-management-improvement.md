@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f8b78ab958f732920d7282ade80e9da421e5b0e5
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5dbb92053e12ec9aee795c54271ab45d56d6722c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031376"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220180"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Cost Management“
 
@@ -66,14 +66,14 @@ Die folgenden Änderungen an der Richtlinie verringern die neuen Risiken und ver
 In diesem Abschnitt des Artikels wird der Governance-MVP-Entwurf so verbessert, dass er neue Azure-Richtlinien und eine Implementierung von Azure Cost Management umfasst. Zusammen erfüllen diese beiden Entwurfsänderungen die neuen Richtlinienanweisungen des Unternehmens.
 
 1. Nehmen Sie Änderungen im Azure Enterprise-Portal vor, um die Bereitstellung in Kanada dem Abteilungsadministrator in Rechnung zu stellen.
-1. Implementieren von Azure Cost Management.
+2. Implementieren von Azure Cost Management.
     1. Festlegen des richtigen Zugriffsumfangs, um ihn mit dem Abonnementmuster und dem Ressourcengruppierungsmuster abzustimmen. Unter der Annahme der Angleichung an das in früheren Artikeln definierte Governance-MVP sollte dies Zugriff im Geltungsbereich des **Registrierungskontos** für das Cloudgovernanceteam erfordern, das die Berichterstellung auf hoher Ebene durchführt. Zusätzliche Teams außerhalb der Governance, wie etwa das kanadische Beschaffungsteam, benötigen Zugriff im **Ressourcengruppenumfang**.
-    1. Einrichten eines Budgets in Azure Cost Management.
-    1. Überprüfen Sie die anfänglichen Empfehlungen, und reagieren Sie entsprechend. Es empfiehlt sich, zur Unterstützung des Berichterstellungsprozesses einen sich wiederholenden Prozess einzurichten.
-    1. Konfigurieren Sie Azure Cost Management-Berichterstellung mit anfänglicher und regelmäßiger Ausführung.
-1. Aktualisieren von Azure Policy.
+    2. Einrichten eines Budgets in Azure Cost Management.
+    3. Überprüfen Sie die anfänglichen Empfehlungen, und reagieren Sie entsprechend. Es empfiehlt sich, zur Unterstützung des Berichterstellungsprozesses einen sich wiederholenden Prozess einzurichten.
+    4. Konfigurieren Sie Azure Cost Management-Berichterstellung mit anfänglicher und regelmäßiger Ausführung.
+3. Aktualisieren von Azure Policy.
     1. Überwachen Sie die Tagging-, Verwaltungsgruppen-, Abonnement- und Ressourcengruppenwerte, um Abweichungen zu identifizieren.
-    1. Legen Sie Optionen für die SKU-Größe fest, um die Bereitstellung auf die in der Dokumentation zur Bereitstellungsplanung aufgeführten SKUs zu beschränken.
+    2. Legen Sie Optionen für die SKU-Größe fest, um die Bereitstellung auf die in der Dokumentation zur Bereitstellungsplanung aufgeführten SKUs zu beschränken.
 
 ## <a name="conclusion"></a>Zusammenfassung
 

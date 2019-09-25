@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a7a0212f3fa4ceda5d02fadaee70c4f50bd04fd3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9e6e078859bb580794477328099b66d14009bdca
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031330"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221395"
 ---
 # <a name="create-update-schedules"></a>Erstellen von Zeitplänen für Updates
 
@@ -42,73 +42,74 @@ Bevor Sie das Beispielskript ausführen, müssen Sie sich mit dem Cmdlet [Connec
 - Azure Automation-Kontoname
 
 ```powershell
-<#
-    .SYNOPSIS
-        This script orchestrates the deployment of the solutions and the agents.
-    .Parameter SubscriptionName
-    .Parameter WorkspaceName
-    .Parameter AutomationAccountName
-    .Parameter ResourceGroupName
 
-#>
+    <#
+        .SYNOPSIS
+            This script orchestrates the deployment of the solutions and the agents.
+        .Parameter SubscriptionName
+        .Parameter WorkspaceName
+        .Parameter AutomationAccountName
+        .Parameter ResourceGroupName
 
-param (
-    [Parameter(Mandatory=$true)]
-    [string]$SubscriptionId,
+    #>
 
-    [Parameter(Mandatory=$true)]
-    [string]$ResourceGroupName,
+    param (
+        [Parameter(Mandatory=$true)]
+        [string]$SubscriptionId,
 
-    [Parameter(Mandatory=$true)]
-    [string]$WorkspaceName,
+        [Parameter(Mandatory=$true)]
+        [string]$ResourceGroupName,
 
-    [Parameter(Mandatory=$true)]
-    [string]$AutomationAccountName,
+        [Parameter(Mandatory=$true)]
+        [string]$WorkspaceName,
 
-    [Parameter(Mandatory=$false)]
-    [string]$scheduleName = "SaturdayCritialSecurity"
-)
+        [Parameter(Mandatory=$true)]
+        [string]$AutomationAccountName,
 
-Import-Module Az.Automation
+        [Parameter(Mandatory=$false)]
+        [string]$scheduleName = "SaturdayCritialSecurity"
+    )
 
-$startTime = ([DateTime]::Now).AddMinutes(10)
-$schedule = New-AzAutomationSchedule -ResourceGroupName $ResourceGroupName `
-                                     -AutomationAccountName $AutomationAccountName `
-                                     -StartTime $startTime `
-                                     -Name $scheduleName `
-                                     -Description "Saturday patches" `
-                                     -DaysOfWeek Saturday `
-                                     -WeekInterval 1 `
-                                     -ForUpdateConfiguration
+    Import-Module Az.Automation
 
-# Using AzAutomationUpdateManagementAzureQuery to create dynamic groups.
+    $startTime = ([DateTime]::Now).AddMinutes(10)
+    $schedule = New-AzAutomationSchedule -ResourceGroupName $ResourceGroupName `
+        -AutomationAccountName $AutomationAccountName `
+        -StartTime $startTime `
+        -Name $scheduleName `
+        -Description "Saturday patches" `
+        -DaysOfWeek Saturday `
+        -WeekInterval 1 `
+        -ForUpdateConfiguration
 
-$queryScope = @("/subscriptions/$SubscriptionID/resourceGroups/")
+    # Using AzAutomationUpdateManagementAzureQuery to create dynamic groups.
 
-$query1Location =@("westus", "eastus", "eastus2")
-$query1FilterOperator = "Any"
-$ownerTag = @{"Owner"= @("JaneSmith")}
-$ownerTag.add("Production", "true")
+    $queryScope = @("/subscriptions/$SubscriptionID/resourceGroups/")
 
-$DGQuery = New-AzAutomationUpdateManagementAzureQuery -ResourceGroupName $ResourceGroupName `
-                                       -AutomationAccountName $AutomationAccountName `
-                                       -Scope $queryScope `
-                                       -Tag $ownerTag
+    $query1Location =@("westus", "eastus", "eastus2")
+    $query1FilterOperator = "Any"
+    $ownerTag = @{"Owner"= @("JaneSmith")}
+    $ownerTag.add("Production", "true")
 
-$AzureQueries = @($DGQuery)
+    $DGQuery = New-AzAutomationUpdateManagementAzureQuery -ResourceGroupName $ResourceGroupName `
+        -AutomationAccountName $AutomationAccountName `
+        -Scope $queryScope `
+        -Tag $ownerTag
 
-$UpdateConfig = New-AzAutomationSoftwareUpdateConfiguration -ResourceGroupName $ResourceGroupName `
-                                                             -AutomationAccountName $AutomationAccountName `
-                                                             -Schedule $schedule `
-                                                             -Windows `
-                                                             -Duration (New-TimeSpan -Hours 2) `
-                                                             -AzureQuery $AzureQueries `
-                                                             -IncludedUpdateClassification Security,Critical
-```
+    $AzureQueries = @($DGQuery)
 
-## <a name="next-steps"></a>Nächste Schritte
+    $UpdateConfig = New-AzAutomationSoftwareUpdateConfiguration -ResourceGroupName $ResourceGroupName `
+        -AutomationAccountName $AutomationAccountName `
+        -Schedule $schedule `
+        -Windows `
+        -Duration (New-TimeSpan -Hours 2) `
+        -AzureQuery $AzureQueries `
+        -IncludedUpdateClassification Security,Critical
+    ```
 
-Hier finden Sie Beispiele für die Implementierung von [allgemeinen Richtlinien in Azure](./common-policies.md), die Ihnen bei der Verwaltung Ihrer Server helfen können.
+## Next steps
+
+See examples of how to implement [common policies in Azure](./common-policies.md) that can help manage your servers.
 
 > [!div class="nextstepaction"]
-> [Allgemeine Richtlinien in Azure](./common-policies.md)
+> [Common policies in Azure](./common-policies.md)

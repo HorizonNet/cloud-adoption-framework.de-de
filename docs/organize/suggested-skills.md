@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 7b450165c1356e5297a3424ea8f699dced0422a4
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 75aa65f9a39576eb807e7b147c2c4a658f693619
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032323"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224289"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>Pfad für die Qualifikationsbereitschaft während der Phase „Bereitschaft“ einer Migration
 
@@ -44,9 +44,9 @@ Während der Bereitschaftsphase müssen technische Mitarbeiter eine Migrationsla
 
 Während der Phase „Bereitschaft“ müssen Architekten Lösungen entwickeln, die alle Azure-Umgebungen umfassen. Die folgenden Ressourcen können Architekten auf diese Aufgaben vorbereiten:
 
-- [Grundlagen der Cloudarchitektur](https://app.pluralsight.com/library/courses/cloud-architecture-foundations/): Ein PluralSight-Kurs zur Unterstützung bei der Entwicklung der richtigen grundlegenden Lösungen.
-- [Microsoft Azure-Architektur](https://app.pluralsight.com/library/courses/cloud-architecture-foundations/): Ein PluralSight-Kurs zum Einführen von Architekten in die Azure-Architektur.
-- [Entwerfen von Migrationsvorgängen für Microsoft Azure](https://app.pluralsight.com/library/courses/cloud-architecture-foundations/): Ein PluralSight-Kurs zur Unterstützung von Architekten beim Entwurf einer Migrationslösung.
+- [Grundlagen der Cloudarchitektur](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): Ein PluralSight-Kurs zur Unterstützung bei der Entwicklung der richtigen grundlegenden Lösungen.
+- [Microsoft Azure-Architektur](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): Ein PluralSight-Kurs zum Einführen von Architekten in die Azure-Architektur.
+- [Entwerfen von Migrationsvorgängen für Microsoft Azure](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): Ein PluralSight-Kurs zur Unterstützung von Architekten beim Entwurf einer Migrationslösung.
 
 ## <a name="deeper-skills-exploration"></a>Ausführlichere Untersuchung von Fähigkeiten
 
@@ -75,4 +75,4 @@ Im Folgenden lernen Sie einige Beispiele für rollenspezifische Lernpfade unter 
 
 - [Entwickler](/learn/browse/?roles=developer&term=infrastructure) können Learn-Ressourcen verwenden, um mehr über die Möglichkeiten zur Unterstützung bei Architektur-, Governance- und Modernisierungaktivitäten zu erfahren.
 
-Weitere Lernpfade finden Sie im [Learn-Katalog](/learn/browse/). Verwenden Sie den Filter „Rollen“, um Lernpfade an ihrer Rolle auszurichten.
+Weitere Lernpfade finden Sie im [Learn-Katalog](/learn/browse). Verwenden Sie den Filter „Rollen“, um Lernpfade an ihrer Rolle auszurichten.
