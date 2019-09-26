@@ -4,18 +4,18 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Übersicht über die Disziplin „Sicherheitsbaseline“
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 3d193a2fd71ffcda2b117d722603b08c27144aa3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 1338fb14ed39915dc9e55c855dd5bbf00ba7a6eb
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026221"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221751"
 ---
 # <a name="security-baseline-discipline-overview"></a>Übersicht über die Disziplin „Sicherheitsbaseline“
 
@@ -54,7 +54,7 @@ Die folgenden sechs Schritte enthalten Beispiele und mögliche Optionen, die bei
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Vorlage für Sicherheitsbaseline</h3>
-                        <p class="x-hidden-focus">Laden Sie die Vorlage zur Dokumentation einer Disziplin „Sicherheitsbaseline“ herunter.</p>
+                        <p class="x-hidden-focus">Laden Sie die Vorlage zur Dokumentation einer Disziplin vom Typ „Sicherheitsbaseline“ herunter.</p>
                     </div>
                 </div>
             </div>
@@ -91,7 +91,7 @@ Die folgenden sechs Schritte enthalten Beispiele und mögliche Optionen, die bei
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Indikatoren und Metriken</h3>
-                        <p class="x-hidden-focus">Indikatoren, um zu verstehen, ob es der richtige Zeitpunkt ist, in die Disziplin „Sicherheitsbaseline“ zu investieren.</p>
+                        <p class="x-hidden-focus">Indikatoren, die Aufschluss darüber geben, ob jetzt der richtige Zeitpunkt ist, in die Disziplin „Sicherheitsbaseline“ zu investieren.</p>
                     </div>
                 </div>
             </div>
@@ -129,7 +129,7 @@ Die folgenden sechs Schritte enthalten Beispiele und mögliche Optionen, die bei
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Einsatzreife</h3>
-                        <p class="x-hidden-focus">Stimmen Sie die Einsatzreife der Cloudverwaltung mit den Phasen der Cloudeinführung ab.</p>
+                        <p class="x-hidden-focus">Abstimmung der Einsatzreife der Cloudverwaltung mit den Phasen der Cloudeinführung.</p>
                     </div>
                 </div>
             </div>

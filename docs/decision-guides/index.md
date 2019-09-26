@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 2ca59288d74b8a7578a91a160f3c3960ac3cedda
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 1ddb65153cde9fac7426c8ef9b10f58a60918b82
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023862"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223875"
 ---
 # <a name="architectural-decision-guides"></a>Leitfaden zur architekturbezogenen Entscheidungsfindung
 
@@ -42,7 +42,9 @@ Jede der folgenden Kategorien stellt eine grundlegende Technologie aller Cloudbe
 
 [Verschlüsselung](./encryption/index.md): Schützen Sie Ihre sensiblen Daten mittels Verschlüsselung, um den Complianceanforderungen und Sicherheitsrichtlinien Ihrer Organisation gerecht zu werden.
 
-[Protokolle und Berichterstellung](./logging-and-reporting/index.md): Überwachen Sie von cloudbasierten Ressourcen generierte Protokolldaten. Die Analyse von Daten liefert integritätsbezogene Erkenntnisse über den Betriebs-, Wartungs- und Compliancestatus von Workloads.
+[Protokollierung und Berichterstellung](./logging-and-reporting/index.md): Überwachen Sie von cloudbasierten Ressourcen generierte Protokolldaten. Die Analyse von Daten liefert integritätsbezogene Erkenntnisse über den Betriebs-, Wartungs- und Compliancestatus von Workloads.
+
+[Regionaler Leitfaden](./regions/index.md): Eine Besprechung der geeigneten Entscheidungskriterien für die regionale Platzierung von Ressourcen im Rahmen der Azure-Plattform.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Erfahren Sie mehr über Cloudplattformabonnements als Basisdienst in Azure-Migrationen.
 author: alexbuckgit
 ms.author: abuck
-ms.date: 06/07/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 209de4c03474a956edf629c9c24f6b29f492284b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a5774cc1f22265c532bc9d885aab354cc1b2d297
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023633"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221007"
 ---
 # <a name="subscription-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Abonnements
 
@@ -67,13 +67,8 @@ Mit zunehmender Cloudnutzung einer Organisation werden in der Regel weitere Abon
 Jede Organisation kategorisiert ihre Anwendungen anders. Oftmals werden Abonnements basierend auf bestimmten Anwendungen oder Diensten oder nach Anwendungsarchetypen getrennt. Diese Kategorisierung dient häufig zur Unterstützung von Workloads, die voraussichtlich einen Großteil der begrenzten Ressourcen eines Abonnements beanspruchen, oder zur Trennung unternehmenskritischer Workloads, um sicherzustellen, dass sie nicht mit anderen Workloads um diese begrenzten Ressourcen konkurrieren. In Anschluss folgen einige Workloads, die ein separates Abonnement im Rahmen dieses Musters rechtfertigen:
 
 - Unternehmenskritische Workloads
-- Anwendungen mit geschützten Daten
-- Experimentelle Anwendungen
-- Anwendungen, die behördlichen Anforderungen unterliegen (z. B. HIPAA oder FedRAMP)
-- Batchworkloads
-- Big Data-Workloads wie Hadoop
-- Containerworkloads mit Bereitstellungsorchestratoren wie Kubernetes
-- Analyseworkloads
+- Anwendungen, die in Ihrem Unternehmen Teil der Umsatzkosten (Cost Of Goods Sold, COGS) sind. Beispiel: Jede Instanz des Widgets von Unternehmen X enthält ein Azure IoT-Modul, das Telemetriedaten sendet. Dies erfordert unter Umständen ein dediziertes Abonnement zu Buchhaltungs-/Governancezwecken im Rahmen von COGS.
+- Anwendungen, die behördlichen Anforderungen wie HIPAA oder FedRAMP unterliegen.
 
 ### <a name="functional-pattern"></a>Auf Funktionen basierendes Muster
 
@@ -97,7 +92,7 @@ Verwaltungsgruppenhierarchien können bis zu sechs Ebenen umfassen. Dieses Maß 
 
 - [Ressourcenzugriffsverwaltung in Azure](../../govern/resource-consistency/resource-access-management.md)
 - [Große Unternehmen: mehrere Governance-Ebenen in großen Unternehmen](../../govern/guides/complex/multiple-layers-of-governance.md)
-- [Mehrere geografische Regionen](../../migrate/expanded-scope/multiple-regions.md)
+- [Mehrere geografische Regionen](../regions/index.md)
 
 ## <a name="next-steps"></a>Nächste Schritte
 

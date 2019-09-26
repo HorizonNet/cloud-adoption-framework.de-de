@@ -9,16 +9,16 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: 982451c9043f775c2e211d9b166ca2d094479ca9
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 3734a9b692dd345f45ee6a2987abf773b3391c63
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816396"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224380"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Cloudmigration im Cloud Adoption Framework
 
-Jeder [Cloudeinführungsplan](../plan/index.md) eines Unternehmens beinhaltet Workloads, die keine umfangreichen Investitionen in die Erstellung neuer Geschäftslogik rechtfertigen. Diese Workloads können mithilfe verschiedener Methoden in die Cloud migriert werden: per Lift & Shift, per Lift & Optimize oder mittels Modernisierung. Jede dieser Methoden wird als Migration betrachtet. In den folgenden Aufgaben werden die iterativen Prozesse zum Bewerten, Migrieren, Optimieren, Schützen und Verwalten dieser Workloads vermittelt.
+Jeder [Cloudeinführungsplan](../plan/index.md) eines Unternehmens beinhaltet Workloads, die keine umfangreichen Investitionen in die Erstellung neuer Geschäftslogik rechtfertigen. Diese Workloads können mithilfe verschiedener Methoden in die Cloud migriert werden: per Lift & Shift, per Lift & Optimize oder mittels Modernisierung. Jeder diese Methoden wird als Migration betrachtet. In den folgenden Aufgaben werden die iterativen Prozesse zum Bewerten, Migrieren, Optimieren, Schützen und Verwalten dieser Workloads vermittelt.
 
 ## <a name="getting-started"></a>Erste Schritte
 
@@ -126,7 +126,7 @@ Die Migration ist stark prozessorientiert. Nutzen Sie den Abschnitt mit den Übe
 
 ## <a name="iterative-migration-process"></a>Iterativer Migrationsprozess
 
-Die Migration zur Cloud umfasst im Grunde vier einfache Phasen: Bewerten, Migrieren, Optimieren und Schützen/Verwalten. In diesem Abschnitt des CAF erfahren Sie, wie Sie den größtmöglichen Nutzen aus der jeweiligen Prozessphase ziehen und diese Phasen auf Ihren Cloudeinführungsplan abstimmen. Die folgende Grafik zeigt diese Phasen in einem iterativen Ansatz:
+Die Migration zur Cloud umfasst im Grunde vier einfache Phasen: Bewerten, Migrieren, Optimieren und Schützen/Verwalten. In diesem Abschnitt des Frameworks für die Cloudeinführung erfahren Sie, wie Sie den größtmöglichen Nutzen aus der jeweiligen Prozessphase ziehen und diese Phasen auf Ihren Cloudeinführungsplan abstimmen. Die folgende Grafik zeigt diese Phasen in einem iterativen Ansatz:
 
 ![Cloud Adoption Framework-Migrationsmodell](../_images/operational-transformation-migrate.png)
 

@@ -4,18 +4,18 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Übersicht über die Disziplin „Ressourcenkonsistenz“
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 652405257f50b0ee5f1edb5d634c999feeecf72e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5e7da35bb2b88c8f24abf09f8d3d2a708f732c1c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025603"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222092"
 ---
 # <a name="resource-consistency-discipline-overview"></a>Übersicht über die Disziplin „Ressourcenkonsistenz“
 
@@ -54,7 +54,7 @@ Die folgenden sechs Schritte enthalten Beispiele und mögliche Optionen, die bei
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Vorlage für Ressourcenkonsistenz</h3>
-                        <p class="x-hidden-focus">Laden Sie die Vorlage zur Dokumentation einer Disziplin „Ressourcenkonsistenz“ herunter.</p>
+                        <p class="x-hidden-focus">Laden Sie die Vorlage zur Dokumentation einer Disziplin vom Typ „Ressourcenkonsistenz“ herunter.</p>
                     </div>
                 </div>
             </div>
@@ -91,7 +91,7 @@ Die folgenden sechs Schritte enthalten Beispiele und mögliche Optionen, die bei
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Indikatoren und Metriken</h3>
-                        <p class="x-hidden-focus">Indikatoren, um zu verstehen, ob es der richtige Zeitpunkt ist, in die Disziplin „Ressourcenkonsistenz“ zu investieren.</p>
+                        <p class="x-hidden-focus">Indikatoren, die Aufschluss darüber geben, ob jetzt der richtige Zeitpunkt ist, in die Disziplin „Ressourcenkonsistenz“ zu investieren.</p>
                     </div>
                 </div>
             </div>
@@ -129,7 +129,7 @@ Die folgenden sechs Schritte enthalten Beispiele und mögliche Optionen, die bei
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Einsatzreife</h3>
-                        <p class="x-hidden-focus">Stimmen Sie die Einsatzreife der Cloudverwaltung mit den Phasen der Cloudeinführung ab.</p>
+                        <p class="x-hidden-focus">Abstimmung der Einsatzreife der Cloudverwaltung mit den Phasen der Cloudeinführung.</p>
                     </div>
                 </div>
             </div>

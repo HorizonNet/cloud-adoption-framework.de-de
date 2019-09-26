@@ -2,19 +2,19 @@
 title: Leitfaden zur Entscheidungsfindung bei der Ressourcenkonsistenz
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Erfahren Sie mehr zur Ressourcenkonsistenz bei der Planung einer Azure-Migration.
-author: rotycenh
-ms.author: v-tyhopk
-ms.date: 02/11/2019
+author: doodlemania2
+ms.author: dermar
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 04d0a1e2ed63145baf94010fdf071a271461e7d0
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 58fc2c1f3ac08fb38fcbd71e6dc1d91db768284e
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023788"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221109"
 ---
 # <a name="resource-consistency-decision-guide"></a>Leitfaden zur Entscheidungsfindung bei der Ressourcenkonsistenz
 
@@ -32,16 +32,22 @@ Mit zunehmender Bedeutung dieser Faktoren wird es auch immer wichtiger, eine kon
 
 In Azure sind [Ressourcengruppen](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) ein zentraler Mechanismus der Ressourcenorganisation, um Ressourcen innerhalb eines Abonnements logisch zu gruppieren.
 
-Ressourcengruppen fungieren als Container für Ressourcen mit einem gemeinsamen Lebenszyklus oder gemeinsamen Verwaltungseinschränkungen wie Richtlinien oder Anforderungen an die rollenbasierte Zugriffssteuerung (RBAC). Ressourcengruppen dürfen nicht geschachtelt sein, und Ressourcen dürfen nur zu einer einzigen Ressourcengruppe gehören. Einige Aktionen gelten für alle Ressourcen in einer Ressourcengruppe. Durch das Löschen einer Ressourcengruppe werden beispielsweise alle Ressourcen aus dieser Gruppe entfernt. Die gängigen Muster zum Erstellen von Ressourcengruppen werden häufig in zwei Kategorien unterteilt:
+Ressourcengruppen fungieren als Container für Ressourcen mit einem gemeinsamen Lebenszyklus UND gemeinsamen Verwaltungseinschränkungen wie Richtlinien- oder RBAC-Anforderungen (Role-Based Access Control,rollenbasierte Zugriffssteuerung). Ressourcengruppen dürfen nicht geschachtelt sein, und Ressourcen dürfen nur einer einzelnen Ressourcengruppe angehören. Alle Aktionen auf der Steuerungsebene wirken sich auf alle Ressourcen in einer Ressourcengruppe aus. Beim Löschen einer Ressourcengruppe werden beispielsweise auch alle Ressourcen in dieser Gruppe entfernt. Bei der Ressourcengruppenverwaltung sollten folgende Punkte berücksichtigt werden:
 
-- **Herkömmliche IT-Workloads:** Werden meist nach Elementen innerhalb des gleichen Lebenszyklus gruppiert (z.B. Anwendung). Eine Gruppierung nach Anwendung ermöglicht die Verwaltung einzelner Anwendungen.
-- **Agile IT-Workloads:** Konzentrieren sich auf Cloudanwendungen, die externen Kunden zugänglich sind. Diese Ressourcengruppen spiegeln häufig die Funktionsebenen der Bereitstellung (z.B. Webschicht, App-Schicht) und der Verwaltung wider.
+1. Werden die Inhalte der Ressourcengruppe gemeinsam entwickelt?
+1. Werden die Inhalte der Ressourcengruppe gemeinsam und von den gleichen Personen oder Teams verwaltet, aktualisiert und überwacht?
+1. Werden die Inhalte der Ressourcengruppe gemeinsam ausgemustert?
+
+Falls Sie eine der obigen Fragen mit _NEIN_ beantwortet haben, sollte die betreffende Ressource in einer anderen Ressourcengruppe platziert werden.
+
+> [!IMPORTANT]
+> Ressourcengruppen sind auch regionsspezifisch. Nicht selten befinden sich Ressourcen innerhalb der gleichen Ressourcengruppe jedoch in unterschiedlichen Regionen, da sie wie oben beschrieben gemeinsam verwaltet werden. Weitere Informationen zur Regionswahl finden Sie [hier](../regions/index.md).
 
 ## <a name="deployment-consistency"></a>Bereitstellungskonsistenz
 
 Aufbauend auf dem grundlegenden Mechanismus zur Gruppierung von Ressourcen bietet die Azure-Plattform ein System zur Verwendung von Vorlagen für die Bereitstellung Ihrer Ressourcen in der Cloudumgebung. Sie können Vorlagen verwenden, um konsistente Organisations- und Benennungskonventionen bei der Bereitstellung von Workloads zu erstellen und diese Aspekte der Ressourcenbereitstellung und des Verwaltungskonzepts zu erzwingen.
 
-[Azure Resource Manager-Vorlagen](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#template-deployment) ermöglichen Ihnen, Ihre Ressourcen unter Verwendung einer vorgegebenen Konfigurations- und Ressourcengruppenstruktur wiederholt in konsistentem Zustand bereitzustellen. Resource Manager-Vorlagen helfen Ihnen, eine Reihe von Standards als Grundlage für Ihre Bereitstellungen zu definieren.
+[Azure Resource Manager-Vorlagen](/azure/azure-resource-manager/template-deployment-overview) ermöglichen Ihnen, Ihre Ressourcen unter Verwendung einer vorgegebenen Konfigurations- und Ressourcengruppenstruktur wiederholt in konsistentem Zustand bereitzustellen. Resource Manager-Vorlagen helfen Ihnen, eine Reihe von Standards als Grundlage für Ihre Bereitstellungen zu definieren.
 
 Beispielsweise können Sie eine Standardvorlage für die Bereitstellung einer Webserver-Workload nutzen, die zwei virtuelle Computer als Webserver sowie einen Lastenausgleich enthält, der den Datenverkehr auf die Server verteilt. Auf der Grundlage dieser Vorlage können Sie dann jedes Mal, wenn eine solche Art von Workload benötigt wird, eine strukturell identische Gruppe mit virtuellen Computern und Lastenausgleich erstellen und müssen lediglich den Bereitstellungsnamen und die verwendeten IP-Adressen ändern.
 

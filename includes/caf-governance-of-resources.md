@@ -53,6 +53,7 @@ Bis das Vertrauen in die Cloudumgebung vollständig hergestellt ist, ist es wich
     1. Die [VPN-Referenzarchitektur](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn) richtet ein Muster und ein Bereitstellungsmodell zur Erstellung einer VPN Gateway-Instanz in Azure ein.
     2. Vergewissern Sie sich, dass verbundene Cloudnetzwerke durch lokale Mechanismen für die Sicherheits- und Datenverkehrsverwaltung als nicht vertrauenswürdig eingestuft werden. In der Cloud gehostete Ressourcen und Dienste sollten nur Zugriff auf autorisierte lokale Dienste erhalten.
     3. Überprüfen Sie, ob das lokale Edgegerät im lokalen Rechenzentrum mit den [Azure VPN Gateway-Anforderungen](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices) kompatibel ist und für den Zugriff auf das öffentliche Internet konfiguriert ist.
+    4. VPN-Tunnel dürfen nur für besonders einfache Workloads als produktionsbereite Verbindungen betrachtet werden. Für alles, was über wenige einfache Workloads hinausgeht, die lokale Konnektivität erfordern, sollte Azure ExpressRoute verwendet werden.
 1. Erstellen Sie in der Stammverwaltungsgruppe eine zweite Blaupausendefinition namens `secure-hybrid-vnet`.
     1. Fügen Sie der Blaupausendefinition die Resource Manager-Vorlage für VPN Gateway als Artefakt hinzu.
     2. Fügen Sie der Blaupausendefinition die Resource Manager-Vorlage für das virtuelle Netzwerk als Artefakt hinzu.

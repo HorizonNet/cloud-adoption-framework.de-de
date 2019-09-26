@@ -4,18 +4,18 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Erläuterung der Beschleunigung der Bereitstellung in Bezug auf Cloudgovernance.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 55dc7554e72f5ca1e2a19a29cf93f8b075b93c9b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f96ada5b1c43694d0ea1af10524f3c344db62356
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71026052"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222707"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>Übersicht über die Disziplin der Beschleunigung der Bereitstellung
 
@@ -54,7 +54,7 @@ Die folgenden sechs Schritte helfen Ihnen dabei, Governancerichtlinien zum Steue
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Vorlage zur Beschleunigung der Bereitstellung</h3>
-                        <p class="x-hidden-focus">Laden Sie die Vorlage zum Dokumentieren einer Disziplin der Beschleunigung der Bereitstellung herunter.</p>
+                        <p class="x-hidden-focus">Laden Sie die Vorlage zum Dokumentieren einer Disziplin vom Typ „Beschleunigung der Bereitstellung“ herunter.</p>
                     </div>
                 </div>
             </div>
@@ -72,7 +72,7 @@ Die folgenden sechs Schritte helfen Ihnen dabei, Governancerichtlinien zum Steue
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Geschäftsrisiken</h3>
-                        <p class="x-hidden-focus">Machen Sie sich mit den Motiven und Risiken vertraut, die häufig mit der Disziplin der Beschleunigung der Bereitstellung verbunden sind.</p>
+                        <p class="x-hidden-focus">Machen Sie sich mit den Motiven und Risiken vertraut, die häufig mit der Disziplin „Beschleunigung der Bereitstellung“ verbunden sind.</p>
                     </div>
                 </div>
             </div>
@@ -91,7 +91,7 @@ Die folgenden sechs Schritte helfen Ihnen dabei, Governancerichtlinien zum Steue
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Indikatoren und Metriken</h3>
-                        <p class="x-hidden-focus">Indikatoren zum Erkennen des richtigen Zeitpunkts für eine Investition in die Disziplin der Beschleunigung der Bereitstellung</p>
+                        <p class="x-hidden-focus">Indikatoren, die Aufschluss darüber geben, ob jetzt der richtige Zeitpunkt ist, in die Disziplin „Beschleunigung der Bereitstellung“ zu investieren.</p>
                     </div>
                 </div>
             </div>
@@ -110,7 +110,7 @@ Die folgenden sechs Schritte helfen Ihnen dabei, Governancerichtlinien zum Steue
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Prozesse zur Einhaltung von Richtlinien</h3>
-                        <p class="x-hidden-focus">Empfohlene Prozesse zur Unterstützung der Richtlinieneinhaltung in der Disziplin der Beschleunigung der Bereitstellung.</p>
+                        <p class="x-hidden-focus">Empfohlene Prozesse zur Unterstützung der Richtlinieneinhaltung in der Disziplin „Beschleunigung der Bereitstellung“.</p>
                     </div>
                 </div>
             </div>
@@ -129,7 +129,7 @@ Die folgenden sechs Schritte helfen Ihnen dabei, Governancerichtlinien zum Steue
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Einsatzreife</h3>
-                        <p class="x-hidden-focus">Stimmen Sie die Einsatzreife der Cloudverwaltung mit den Phasen der Cloudeinführung ab.</p>
+                        <p class="x-hidden-focus">Abstimmung der Einsatzreife der Cloudverwaltung mit den Phasen der Cloudeinführung.</p>
                     </div>
                 </div>
             </div>
@@ -148,7 +148,7 @@ Die folgenden sechs Schritte helfen Ihnen dabei, Governancerichtlinien zum Steue
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Toolkette</h3>
-                        <p class="x-hidden-focus">Azure-Dienste, die zur Unterstützung der Disziplin der Beschleunigung der Bereitstellung implementiert werden können.</p>
+                        <p class="x-hidden-focus">Azure-Dienste, die zur Unterstützung der Disziplin „Beschleunigung der Bereitstellung“ implementiert werden können.</p>
                     </div>
                 </div>
             </div>

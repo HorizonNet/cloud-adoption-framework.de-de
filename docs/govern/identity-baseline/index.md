@@ -4,18 +4,18 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Erläuterung der Identitätsbaseline in Bezug auf Cloudgovernance
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 888e9e7381f5dba0dd2b3797bb4cc06e79a2c9b8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 7b670f2159784fdb948c95ea45b70adfd6a5fe2d
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025688"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222243"
 ---
 # <a name="identity-baseline-discipline-overview"></a>Übersicht über die Disziplin „Identitätsbaseline“
 
@@ -26,7 +26,7 @@ ms.locfileid: "71025688"
 
 In diesem Abschnitt des CAF-Leitfadens (Cloud Adoption Framework) wird der Ansatz zur Entwicklung einer Disziplin der Identitätsbaseline als Teil Ihrer Cloudgovernancestrategie beschrieben. Die Hauptzielgruppe für diesen Leitfaden sind die Cloudarchitekten Ihrer Organisation und andere Mitglieder Ihres Cloudgovernanceteams. Die Entscheidungen, Richtlinien und Prozesse, die sich aus dieser Disziplin ergeben, sollten jedoch die Einbeziehung von und Diskussion mit relevanten Mitgliedern des IT-Teams beinhalten, die für die Implementierung und Verwaltung der Identitätsverwaltungslösungen Ihrer Organisation verantwortlich sind.
 
-Wenn Ihre Organisation nicht über internes Fachwissen zur Identitätsbaseline und Sicherheit verfügt, können Sie im Rahmen dieser Disziplin externe Berater hinzuziehen. Sie können auch [Microsoft Consulting Services](https://www.microsoft.com/enterprise/services), den Cloudeinführungsdienst [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) oder andere externe Experten für die Cloudeinführung einbeziehen, um Probleme im Zusammenhang mit dieser Disziplin zu besprechen.
+Wenn Ihre Organisation nicht über internes Fachwissen zur Identitätsbaseline und Sicherheit verfügt, können Sie im Rahmen dieser Disziplin externe Berater hinzuziehen. Sie können auch [Microsoft Consulting Services](https://www.microsoft.com/enterprise/services), den Cloudeinführungsdienst [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) oder andere externe Partner für die Cloudeinführung einbeziehen, um Probleme im Zusammenhang mit dieser Disziplin zu besprechen.
 
 ## <a name="policy-statements"></a>Richtlinienanweisungen
 
@@ -91,7 +91,7 @@ Die folgenden sechs Schritte enthalten Beispiele und mögliche Optionen, die bei
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Indikatoren und Metriken</h3>
-                        <p class="x-hidden-focus">Indikatoren, um zu verstehen, ob es der richtige Zeitpunkt ist, in die Disziplin „Identitätsbaseline“ zu investieren.</p>
+                        <p class="x-hidden-focus">Indikatoren, die Aufschluss darüber geben, ob jetzt der richtige Zeitpunkt ist, in die Disziplin „Identitätsbaseline“ zu investieren.</p>
                     </div>
                 </div>
             </div>
@@ -129,7 +129,7 @@ Die folgenden sechs Schritte enthalten Beispiele und mögliche Optionen, die bei
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Einsatzreife</h3>
-                        <p class="x-hidden-focus">Stimmen Sie die Einsatzreife der Cloudverwaltung mit den Phasen der Cloudeinführung ab.</p>
+                        <p class="x-hidden-focus">Abstimmung der Einsatzreife der Cloudverwaltung mit den Phasen der Cloudeinführung.</p>
                     </div>
                 </div>
             </div>
