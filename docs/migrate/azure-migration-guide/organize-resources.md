@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 19299c5855600524f3335b00272974790d83c8fa
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fc0f91ac6c2a4476786935555c4c4305f33a0980
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022775"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224050"
 ---
 # <a name="organize-your-azure-resources"></a>Organisieren Ihrer Azure-Ressourcen
 
@@ -66,7 +66,7 @@ Verwenden Sie Abonnements, um Kosten und Ressourcen zu verwalten, die von Benutz
 
 Erstellen Sie eine Ressourcengruppe für Ressourcen wie Web-Apps, Datenbanken und Speicherkonten mit gleichem Lebenszyklus, gleichen Berechtigungen und gleichen Richtlinien.
 
-1. Wechseln Sie zu [Ressourcengruppen](https://portal.azure.com/#create/Microsoft.ResourceGroup).
+1. Navigieren Sie zu [Ressourcengruppen](https://portal.azure.com/#create/Microsoft.ResourceGroup).
 1. Wählen Sie **Hinzufügen**.
 1. Wählen Sie das **Abonnement** aus, unter dem Sie Ihre Ressourcengruppe erstellen möchten.
 1. Geben Sie einen Namen für die **Ressourcengruppe** ein.
