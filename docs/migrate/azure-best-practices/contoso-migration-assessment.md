@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 5e6d77a86d1e3d928913e47c5781411f1973b3cc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b3ec947b841c36bcd28bdbd02615182fd25a158a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025022"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221452"
 ---
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Bewerten lokaler Workloads für die Migration zu Azure
 
@@ -242,8 +242,8 @@ Richten Sie wie folgt ein neues Azure Migrate-Projekt ein:
 
 6. Geben Sie unter **Projektdetails* den Projektnamen und die geografische Region an, in der Sie das Projekt erstellen möchten. USA, Asien, Europa, Australien, Vereinigtes Königreich, Kanada, Indien und Japan werden unterstützt.
 
-    * Die geografische Region des Projekts dient nur zum Speichern der Metadaten, die von den lokalen VMs erfasst werden.
-    * Beim Ausführen einer Migration kann eine beliebige Zielregion ausgewählt werden.
+    - Die geografische Region des Projekts dient nur zum Speichern der Metadaten, die von den lokalen VMs erfasst werden.
+    - Beim Ausführen einer Migration kann eine beliebige Zielregion ausgewählt werden.
 
 7. Klicken Sie auf **Weiter**.
 
@@ -312,14 +312,13 @@ Contoso führt jetzt den Collector aus, um VMs zu ermitteln. Derzeit unterstütz
 
     ![Azure Migrate-Collector – Überprüfen der erforderlichen Komponenten](./media/contoso-migration-assessment/collector-verify-prereqs-v2.png)
 
-6. Melden Sie sich bei Ihrem **Azure**-Konto an, und wählen Sie das Abonnement- und Migrationsprojekt aus, das Sie zuvor erstellt haben. Geben Sie auch einen Namen für die **Appliance** ein, damit Sie sie im Azure-Portal identifizieren können. 
-7. Unter **vCenter Server-Details angeben** gibt Contoso den Namen (FQDN) oder die IP-Adresse der vCenter Server-Instanz und die schreibgeschützten Anmeldeinformationen für die Ermittlung ein.
-8. Contoso wählt einen Bereich für die VM-Ermittlung aus. Der Collector kann nur virtuelle Computer ermitteln, die sich innerhalb des angegebenen Bereichs befinden. Der Bereich kann auf einen bestimmten Ordner, ein Rechenzentrum oder einen Cluster festgelegt werden. 
+5. Melden Sie sich bei Ihrem **Azure**-Konto an, und wählen Sie das Abonnement- und Migrationsprojekt aus, das Sie zuvor erstellt haben. Geben Sie auch einen Namen für die **Appliance** ein, damit Sie sie im Azure-Portal identifizieren können.
+6. Unter **vCenter Server-Details angeben** gibt Contoso den Namen (FQDN) oder die IP-Adresse der vCenter Server-Instanz und die schreibgeschützten Anmeldeinformationen für die Ermittlung ein.
+7. Contoso wählt einen Bereich für die VM-Ermittlung aus. Der Collector kann nur virtuelle Computer ermitteln, die sich innerhalb des angegebenen Bereichs befinden. Der Bereich kann auf einen bestimmten Ordner, ein Rechenzentrum oder einen Cluster festgelegt werden.
 
     ![vCenter Server-Details angeben](./media/contoso-migration-assessment/collector-connect-vcenter.png)
 
-
-8. Der Collector beginnt nun mit der Ermittlung und Erfassung von Informationen zur Contoso-Umgebung. 
+8. Der Collector beginnt nun mit der Ermittlung und Erfassung von Informationen zur Contoso-Umgebung.
 
     ![Sammlungsfortschritt anzeigen](./media/contoso-migration-assessment/migrate-disccovery.png)
 
@@ -349,8 +348,8 @@ Contoso erstellt vor der Installation der Agents eine Momentaufnahme, damit eine
 
 1. Unter **Computer** wählt Contoso den Computer aus. In der Spalte **Abhängigkeiten** wählt Contoso die Option **Installation erforderlich**.
 2. Im Bereich **Computer ermitteln** führt Contoso folgende Schritte aus:
-    - Der Microsoft Monitoring Agent (MMA) und der Abhängigkeits-Agent werden für jede Windows-VM heruntergeladen.
-    - Der MMA und der Abhängigkeits-Agent werden für jede Linux-VM heruntergeladen.
+    - Der Microsoft Monitoring Agent (MMA) und der Microsoft Dependency-Agent werden für jeden virtuellen Windows-Computer heruntergeladen.
+    - Der MMA und der Dependency-Agent werden für jeden virtuellen Linux-Computer heruntergeladen.
 3. Contoso kopiert die ID und den Schlüssel des Arbeitsbereichs. Contoso benötigt für die MMA-Installation die Arbeitsbereichs-ID und den zugehörigen Schlüssel.
 
     ![Agent-Download](./media/contoso-migration-assessment/download-agents.png)
@@ -375,10 +374,10 @@ Contoso führt die Installation auf jeder VM durch.
 
 #### <a name="install-the-dependency-agent-on-windows-vms"></a>Installieren des Abhängigkeits-Agents unter Windows-VMs
 
-1. Contoso doppelklickt auf den heruntergeladenen Abhängigkeits-Agent.
+1. Contoso doppelklickt auf den heruntergeladenen Dependency-Agent.
 2. Contoso akzeptiert die Lizenzbedingungen und wartet, bis die Installation abgeschlossen wurde.
 
-    ![Setup des Abhängigkeits-Agents – Installation](./media/contoso-migration-assessment/dependency-agent.png)
+    ![Einrichtung des Dependency-Agents: Installation](./media/contoso-migration-assessment/dependency-agent.png)
 
 ### <a name="install-the-agents-on-linux-vms"></a>Installieren des Agents auf Linux-VMs
 
@@ -389,9 +388,11 @@ Contoso führt die Installation auf jeder VM durch.
 1. Contoso installiert die Python-Bibliothek „ctypes“ auf jeder VM mit dem folgenden Befehl:
 
     `sudo apt-get install python-ctypeslib`
+
 2. Contoso muss den Befehl zur Installation des MMA-Agents als Root-Benutzer ausführen. Um zum Root-Benutzer zu werden, führt Contoso den folgenden Befehl aus und gibt dann das Kennwort für den Root-Benutzer ein:
 
     `sudo -i`
+
 3. Contoso installiert den MMA:
     - Contoso gibt die Arbeitsbereichs-ID und den Schlüssel für den Befehl ein.
     - Die Befehle sind für 64-Bit.
@@ -404,11 +405,11 @@ Contoso führt die Installation auf jeder VM durch.
 
 #### <a name="install-the-dependency-agent-on-linux-vms"></a>Installieren des Abhängigkeits-Agents auf Linux-VMs
 
-Nach der MMA-Installation führt Contoso die Installation des Abhängigkeits-Agents auf den Linux-VMs durch:
+Nach der MMA-Installation installiert Contoso den Dependency-Agent auf den virtuellen Linux-Computern:
 
-1. Der Abhängigkeits-Agent wird mit „InstallDependencyAgent-Linux64.bin“ auf den Linux-Computern installiert. Hierbei handelt es sich um ein Shellskript mit einer selbstextrahierenden Binärdatei. Contoso führt die Datei mit „sh“ aus oder fügt der Datei selbst Ausführungsberechtigungen hinzu.
+1. Der Dependency-Agent wird mithilfe von „InstallDependencyAgent-Linux64.bin“ auf den Linux-Computern installiert. Hierbei handelt es sich um ein Shellskript mit einer selbstextrahierenden Binärdatei. Contoso führt die Datei mit „sh“ aus oder fügt der Datei selbst Ausführungsberechtigungen hinzu.
 
-2. Contoso installiert den Abhängigkeits-Agent für Linux als Root-Benutzer:
+2. Contoso installiert den Dependency-Agent für Linux als Root-Benutzer:
 
     ```console
     wget --content-disposition https://aka.ms/dependencyagentlinux -O InstallDependencyAgent-Linux64.bin && sudo sh InstallDependencyAgent-Linux64.bin -s
