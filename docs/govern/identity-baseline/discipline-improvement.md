@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Verbesserung der Disziplin „Identitätsbaseline“
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c044e4af0560fe21229cb1790ce0eff6340d2a58
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 256242f90e45719994a12cdb209202a18bba830c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031197"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220488"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>Verbesserung der Disziplin „Identitätsbaseline“
 
@@ -46,7 +46,7 @@ Diese Entwicklungsphase der Governance überbrückt die Lücke zwischen Geschäf
 - Definieren Sie Rollen und Zuweisungen, die die Identitäts- und Zugriffsverwaltung in der Cloud steuern.
 - Definieren Sie Ihre lokalen Gruppen, und ordnen Sie sie entsprechenden cloudbasierten Rollen zu.
 - Inventarisieren Sie Identitätsanbieter (einschließlich datenbankgestützter Identitäten, die in benutzerdefinierten Anwendungen verwendet werden).
-- Berücksichtigen Sie Optionen zur Konsolidierung oder Integration von Identitätsanbietern bei vorhandener Duplizierung, um die gesamte Identitätslösung zu vereinfachen.
+- Konsolidieren und integrieren Sie Identitätsanbieter bei vorhandener Duplizierung, um die Identitätslösung zu vereinfachen und Risiken zu minimieren.
 - Bewerten Sie die Hybridkompatibilität vorhandener Identitätsanbieter.
 - Prüfen Sie für Identitätsanbieter, die nicht hybridkompatibel sind, Konsolidierungs- oder Ersetzungsoptionen.
 
@@ -98,7 +98,7 @@ Migration ist ein inkrementeller Prozess, bei dem der Schwerpunkt auf der Verlag
 - Überprüfen und/oder optimieren Sie Ihre [Hybrididentitätsstrategie](../../decision-guides/identity/index.md).
 - Stellen Sie vor der Freigabe sicher, dass jede Anwendung oder Workload noch der Identitätsstrategie entspricht.
 - Vergewissern Sie sich, dass das einmalige Anmelden (SSO) und das nahtlose einmalige Anmelden für Ihre Anwendungen wie erwartet funktionieren.
-- Verringern oder entfernen Sie wenn möglich alternative Identitätsspeicher.
+- Verringern oder entfernen Sie alternative Identitätsspeicher.
 - Überprüfen Sie die Notwendigkeit von Identitätsspeichern in Apps oder Datenbanken. Identitäten, die außerhalb eines geeigneten Identitätsanbieters (von Erstanbietern oder Drittanbietern) liegen, können ein Risiko für die Anwendung und die Benutzer darstellen.
 - Aktivieren Sie den bedingten Zugriff für [lokale Verbundanwendungen](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-on-premises-setup).
 - Verteilen Sie Identitäten auf globale Regionen in mehreren Hubs mit Synchronisierung zwischen den Regionen.
@@ -120,6 +120,7 @@ Nachdem die Transformation abgeschlossen ist, müssen Governance und Betrieb wä
 **Potenzielle Aktivitäten:**
 
 - Führen Sie regelmäßige Überprüfungen der Identitätsrichtlinien und deren Einhaltung durch.
+- Stellen Sie sicher, dass für sensible Benutzerkonten (CEO, CFO, VP usw.) immer die mehrstufige Authentifizierung und die Erkennung ungewöhnlicher Anmeldungen aktiviert sind.
 - Führen Sie regelmäßig Überprüfungen auf böswillige Akteure und Datenschutzverletzungen durch, insbesondere im Zusammenhang mit Identitätsbetrug, z.B. mögliche Übernahmen von Administratorkonten.
 - Konfigurieren Sie ein Überwachungs- und Berichterstellungstool.
 - Ziehen Sie eine engere Integration in Sicherheits- und Betrugspräventionssysteme in Betracht.

@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: In diesem Artikel erfahren Sie, wie Sie eine Überprüfung von Cloudrichtlinien durchführen.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 167613bd304505bc53128c2864250e5cae80b281
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 7ce392797cf21d9f69ae791eb2db6a6d38c38dfc
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031718"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223851"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -31,7 +31,7 @@ Während Unternehmen für ausgereiftere IT-Unternehmensrichtlinien sorgen, gibt 
 Cloudtransformationen schaffen einen natürlichen Wendepunkt, um die Entscheidungen zu Legacyrichtlinien aus der Vergangenheit zu überdenken. Technische Funktionen und Standardprozesse ändern sich in der Cloud erheblich, genauso wie die Vererbungsrisiken. Im vorherigen Beispiel ist die Bandsicherungsrichtlinie auf das Risiko eines Single Point of Failure zurückzuführen, der sich durch die Speicherung der Daten an einem einzelnen Ort ergab und das Unternehmen dazu veranlasste, das Risikoprofil durch die Minderung dieses Risikos zu verbessern. In einer Cloudbereitstellung gibt es mehrere Optionen, die dieselbe Risikominderung mit viel geringeren RTOs (Recovery Time Objectives) bieten. Beispiel:
 
 - Eine cloudnative Lösung könnte die Georeplikation von Azure SQL-Datenbank aktivieren.
-- Eine Hybridlösung kann beispielsweise Azure Site Recovery nutzen, um eine IaaS-Workload in mehreren Datencentern zu replizieren.
+- Eine Hybridlösung kann beispielsweise Azure Site Recovery nutzen, um eine IaaS-Workload in Azure zu replizieren.
 
 Bei Ausführung einer Cloudtransformation steuern Richtlinien oft viele der Tools, Dienste und Prozesse, die für die Cloudeinführungsteams zur Verfügung stehen. Wenn diese Richtlinien auf älteren Technologien basieren, können sie die Bemühungen des Teams behindern, für Änderungen zu sorgen. Im schlimmsten Fall werden wichtige Richtlinien vom Migrationsteam vollständig ignoriert, um Problemumgehungen zu ermöglichen. Keines davon ist ein akzeptables Ergebnis.
 
@@ -43,8 +43,8 @@ Bei jeder dieser Disziplinen besteht der Überprüfungsprozess aus folgenden Sch
 
 1. Überprüfung vorhandener lokaler Richtlinien im Hinblick auf die jeweilige Disziplin, wobei nach zwei wichtigen Datenpunkten gesucht wird: Legacyabhängigkeiten und identifizierte Geschäftsrisiken.
 2. Auswertung jedes Geschäftsrisikos, indem eine einfache Frage gestellt wird: „Ist das Geschäftsrisiko in einem Cloudmodell weiterhin vorhanden?“
-3. Wenn das zutrifft, schreiben Sie die Richtlinie um, indem Sie die erforderliche Risikominderung (nicht die technische Lösung) dokumentieren.
-4. Überprüfen Sie die aktualisierte Richtlinie zusammen mit den Cloudeinführungsteams, um mögliche Lösungen für die erforderliche Risikominderung zu verstehen.
+3. Falls ja, schreiben Sie die Richtlinie um, indem Sie die erforderliche Maßnahme (nicht die technische Lösung) dokumentieren.
+4. Überprüfen Sie die aktualisierte Richtlinie zusammen mit den Cloudeinführungsteams, um mögliche technische Lösungen für die erforderliche Maßnahme zu verstehen.
 
 ## <a name="example-of-a-policy-review-for-a-legacy-policy"></a>Beispiel für eine Richtlinienüberprüfung bei einer Legacyrichtlinie
 
@@ -55,6 +55,7 @@ Als Beispiel für den erforderlichen Prozess wird die Bandsicherungsrichtlinie a
   - Ein angenommenes Geschäftsrisiko im Zusammenhang mit der Speicherung von Sicherungen an demselben physischen Ort wie die Produktionsgeräte.
 - Ist das Risiko weiterhin vorhanden? Ja. Sogar in der Cloud ist die Abhängigkeit von einem einzigen Standort mit einem gewissen Risiko verbunden. Zwar ist es weniger wahrscheinlich, dass sich dieses Risiko auf das Geschäft auswirkt, wie es bei der lokalen Lösung der Fall war, doch das Risiko besteht weiterhin.
 - Schreiben Sie die Richtlinie um. Bei einem Notfall, der ein gesamtes Datencenter betrifft, muss es innerhalb von 24 Stunden nach dem Ausfall eine Möglichkeit zur Wiederherstellung von Produktionssystemen in einem anderen Datencenter und an einem anderen geografischen Standort geben.
+  - Beachten Sie außerdem, dass der in der obigen Anforderung angegebene Zeitplan möglicherweise aufgrund von technischen Einschränkungen festgelegt wurde, die in der Cloud nicht mehr vorhanden sind. Machen Sie sich mit den technischen Einschränkungen und Funktionen der Cloud vertraut, bevor Sie einfach eine Legacy-RTO/RPO anwenden.
 - Überprüfen Sie dies mit den Cloudeinführungsteams. Je nach implementierter Lösung gibt es mehrere Möglichkeiten zur Einhaltung dieser Richtlinie zur Ressourcenkonsistenz.
 
 ## <a name="next-steps"></a>Nächste Schritte

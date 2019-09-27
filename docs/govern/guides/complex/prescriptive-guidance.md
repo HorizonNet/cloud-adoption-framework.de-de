@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 651144a519103c1a35f6a189af88e2f3690ecbfc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9992d4ee6fbd955eea44e13a7f4f31c5836ce83a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031923"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220654"
 ---
 # <a name="governance-guide-for-complex-enterprises-prescriptive-guidance-explained"></a>Governanceleitfaden für komplexe Unternehmen: Ausführlicher Leitfaden mit Erläuterung
 
@@ -59,13 +59,17 @@ Die Entscheidung über den Abonnemententwurf bestimmt, wie Azure-Abonnements str
 
 ### <a name="resource-consistency"></a>Ressourcenkonsistenz
 
-Entscheidungen zur Ressourcenkonsistenz bestimmen die Tools, Prozesse und Aufgaben, die erforderlich sind, um sicherzustellen, dass Azure-Ressourcen innerhalb eines Abonnements konsistent bereitgestellt, konfiguriert und verwaltet werden. Im vorliegenden Beispielfall wurde **[hierarchische Konsistenz](../../../decision-guides/resource-consistency/index.md#hierarchical-consistency)** als primäres Muster für die Ressourcenkonsistenz ausgewählt.
+Entscheidungen zur Ressourcenkonsistenz bestimmen die Tools, Prozesse und Aufgaben, die erforderlich sind, um sicherzustellen, dass Azure-Ressourcen innerhalb eines Abonnements konsistent bereitgestellt, konfiguriert und verwaltet werden. Im vorliegenden Beispielfall wurde **[Bereitstellungskonsistenz](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** als primäres Muster für die Ressourcenkonsistenz ausgewählt.
 
-- Für jede Anwendung sollten Ressourcengruppen erstellt werden. Für jeden Anwendungsarchetyp sollten Verwaltungsgruppen erstellt werden. Azure Policy sollte auf alle Abonnements in der zugehörigen Verwaltungsgruppe angewendet werden.
-- Im Rahmen des Bereitstellungsprozesses sollten Ressourcenkonsistenzvorlagen für alle Ressourcen in der Quellcodeverwaltung gespeichert werden.
-- Jede Ressourcengruppe sollte an einer bestimmten Workload oder Anwendung ausgerichtet werden.
-- Die definierte Hierarchie der Azure-Verwaltungsgruppen sollte die Abrechnungszuständigkeit und den Anwendungsbesitz mithilfe von verschachtelten Gruppen darstellen.
-- Eine umfassende Implementierung von Azure Policy könnte die zeitlichen Verpflichtungen des Teams überschreiten und bietet an diesem Punkt möglicherweise keinen großen Mehrwert. Allerdings sollte eine einfache Standardrichtlinie erstellt und auf jede Ressourcengruppe angewendet werden, um die wenigen ersten Richtlinienerklärungen zur Cloud-Governance durchzusetzen. Diese dient dazu, die Implementierung spezifischer Governanceanforderungen zu definieren. Diese Implementierungen können dann auf alle bereitgestellten Ressourcen angewendet werden.
+- Ressourcengruppen werden für Anwendungen unter Verwendung des Lebenszyklusansatzes erstellt. Das bedeutet, dass alles, was zusammen erstellt, verwaltet und ausgemustert wird, in einer einzelnen Ressourcengruppe zusammengefasst werden sollte. Weitere Informationen zu Ressourcengruppen finden Sie [hier](../../../decision-guides/resource-consistency/index.md#basic-grouping).
+- Azure Policy sollte auf alle Abonnements aus der zugehörigen Verwaltungsgruppe angewendet werden.
+- Im Rahmen des Bereitstellungsprozesses sollten Azure Resource Consistency-Vorlagen für die Ressourcengruppe in der Quellcodeverwaltung gespeichert werden.
+- Jede Ressourcengruppe ist basierend auf dem oben beschriebenen Lebenszyklusansatz einer bestimmten Workload oder Anwendung zugeordnet.
+- Azure-Verwaltungsgruppen ermöglichen das Aktualisieren der Governanceentwürfe, wenn sich die Unternehmensrichtlinie weiterentwickelt.
+- Eine umfassende Implementierung von Azure Policy könnte die zeitlichen Verpflichtungen des Teams überschreiten und zu diesem Zeitpunkt möglicherweise keinen großen Mehrwert bieten. Allerdings sollte eine einfache Standardrichtlinie erstellt und auf jede Verwaltungsgruppe angewendet werden, um die geringe Anzahl der aktuellen Richtlinienerklärungen zur Cloud-Governance durchzusetzen. In dieser Richtlinie wird die Implementierung spezifischer Governanceanforderungen definiert. Diese Implementierungen können dann auf alle bereitgestellten Ressourcen angewendet werden.
+
+>[!IMPORTANT]
+>Wann immer eine Ressource in einer Ressourcengruppe nicht mehr den gleichen Lebenszyklus hat, sollte sie in eine andere Ressourcengruppe verschoben werden. Beispiele hierfür sind allgemeine Datenbanken und Netzwerkkomponenten. Diese unterstützen zwar die Anwendung, die entwickelt wird, dienen aber auch anderen Zwecke und sollten daher in anderen Ressourcengruppen vorhanden sein.
 
 ### <a name="resource-tagging"></a>Tags für Ressourcen
 
@@ -122,7 +126,7 @@ Wenn eines der in diesem Governanceleitfaden ausgewählten Muster nicht mit den 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Sobald dieser Leitfaden implementiert wurde, kann jedes Cloudeinführungsteam seine Arbeit mit einer soliden Governancebasis fortsetzen. Das Cloudgovernanceteam arbeitet parallel daran, die Unternehmensrichtlinien und Governanceverfahren kontinuierlich zu aktualisieren.
+Sobald dieser Leitfaden implementiert wurde, kann jedes Cloudeinführungsteam seine Arbeit mit einer soliden Governancebasis fortsetzen. Gleichzeitig werden die Unternehmensrichtlinien und Governanceverfahren kontinuierlich durch das Cloudgovernanceteam aktualisiert.
 
 Beide Teams verwenden die Toleranzindikatoren, um die nächsten Verbesserungen zu identifizieren, die erforderlich sind, um die Einführung der Cloud weiterhin zu unterstützen. Der nächste Schritt für dieses Unternehmen ist die inkrementelle Verbesserung seiner Governancebaseline zur Unterstützung von Anwendungen mit Legacy- oder Drittanbieterlösungen für die mehrstufige Authentifizierung.
 

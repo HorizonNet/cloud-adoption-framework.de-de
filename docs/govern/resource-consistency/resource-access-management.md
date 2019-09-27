@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Erläuterung der Konstrukte für die Verwaltung des Ressourcenzugriffs in Azure: Azure Resource Manager, Abonnements, Ressourcengruppen und Ressourcen'
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 46c6de1ecaba5b8278138114b6aa27a2608bfb74
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 87e0918f4d1dad896576d322c8754bc2f6c56fb3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031383"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223036"
 ---
 # <a name="resource-access-management-in-azure"></a>Ressourcenzugriffsverwaltung in Azure
 
@@ -33,7 +33,7 @@ In Azure bezieht sich der Begriff _Ressource_ auf eine von Azure verwaltete Enti
 
 ## <a name="what-is-an-azure-resource-group"></a>Was ist eine Azure-Ressourcengruppe?
 
-In Azure muss jede Ressource zu einer [Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) gehören. Eine Ressourcengruppe ist einfach ein logisches Konstrukt, mit dem mehrere Ressourcen gruppiert werden, damit sie zusammen als Entität verwaltet werden können. Beispielsweise können Ressourcen, die über einen ähnlichen Lebenszyklus verfügen, z.B. die Ressourcen für eine [n-schichtige Anwendung](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier), als Gruppe erstellt oder gelöscht werden.
+In Azure muss jede Ressource zu einer [Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) gehören. Eine Ressourcengruppe ist einfach ein logisches Konstrukt, mit dem mehrere Ressourcen gruppiert werden, damit sie gemeinsam als einzelne Entität _auf der Grundlage von Lebenszyklus und Sicherheit_ verwaltet werden können. Beispielsweise können Ressourcen, die über einen ähnlichen Lebenszyklus verfügen, z.B. die Ressourcen für eine [n-schichtige Anwendung](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier), als Gruppe erstellt oder gelöscht werden. Anders ausgedrückt: Alles, was zusammen erstellt, verwaltet und ausgemustert wird, gehört in eine gemeinsame Ressourcengruppe.
 
 ![Diagramm einer Ressourcengruppe, die eine Ressource enthält](../../_images/govern/design/governance-1-10.png)
 *Abbildung 2: Eine Ressourcengruppe enthält eine Ressource.*
@@ -42,7 +42,7 @@ Ressourcengruppen und die darin enthaltenen Ressourcen sind einem Azure-**Abonne
 
 ## <a name="what-is-an-azure-subscription"></a>Was ist ein Azure-Abonnement?
 
-Ein Azure-Abonnement ähnelt einer Ressourcengruppe darin, dass es sich um ein logisches Konstrukt handelt, unter dem Ressourcengruppen und die zugehörigen Ressourcen gruppiert werden. Darüber hinaus ist ein Azure-Abonnement aber auch noch den Kontrollen zugeordnet, die von Azure Resource Manager genutzt werden. Was bedeutet dies? Sehen Sie sich Azure Resource Manager genauer an, um sich über die Beziehung dieses Diensts zu einem Azure-Abonnement zu informieren.
+Ein Azure-Abonnement ähnelt einer Ressourcengruppe darin, dass es sich um ein logisches Konstrukt handelt, unter dem Ressourcengruppen und die zugehörigen Ressourcen gruppiert werden. Darüber hinaus ist ein Azure-Abonnement aber auch noch den Kontrollen zugeordnet, die von Azure Resource Manager genutzt werden. Sehen Sie sich Azure Resource Manager genauer an, um sich über die Beziehung dieses Diensts zu einem Azure-Abonnement zu informieren.
 
 ![Diagramm eines Azure-Abonnements](../../_images/govern/design/governance-1-11.png)
 *Abbildung 3: Ein Azure-Abonnement.*

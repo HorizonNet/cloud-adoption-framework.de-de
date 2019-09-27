@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Beschleunigung der Bereitstellung – Beispiele für Richtlinienanweisungen
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4a2b1666332ca884dfb95b2b2372f3b5518bd635
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 4de6cced9bb387f2955d644f93523ac4f26931da
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031851"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222663"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Beschleunigung der Bereitstellung – Beispiele für Richtlinienanweisungen
 
@@ -32,7 +32,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine konfigu
 
 **Richtlinienanweisung:** Alle Ressourcen, die in der Cloud bereitgestellt werden, sollten nach Möglichkeit mithilfe von Vorlagen oder Automatisierungsskripts bereitgestellt werden.
 
-**Potenzielle Entwurfsoptionen:** [Azure Resource Manager-Vorlagen](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#template-deployment) stellen für die Bereitstellung von Ressourcen in Azure das Konzept „Infrastructure-as-Code“ bereit. Die [Azure-Bausteine](https://github.com/mspnp/template-building-blocks/wiki) enthalten ein Befehlszeilentool und eine Reihe von Resource Manager-Vorlagen, die die Bereitstellung von Azure-Ressourcen vereinfachen sollen.
+**Potenzielle Entwurfsoptionen:** [Azure Resource Manager-Vorlagen](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#template-deployment) stellen für die Bereitstellung von Ressourcen in Azure das Konzept „Infrastructure-as-Code“ bereit. Sie können aber auch [Terraform](https://docs.microsoft.com/azure/terraform/terraform-overview) als konsistentes lokales und cloudbasiertes Bereitstellungstool verwenden.
 
 ## <a name="lack-of-visibility-into-system-issues"></a>Mangelnde Transparenz von Systemproblemen
 
@@ -43,21 +43,21 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine konfigu
 - Wichtige Metriken und Diagnosemaßnahmen werden für alle Produktionssysteme und Komponenten identifiziert. Überwachungs- und Diagnosetools werden auf diese Systeme angewendet und regelmäßig von Mitarbeitern im Betrieb überwacht.
 - Der Betrieb kann auch den Einsatz von Überwachungs- und Diagnosetools in produktionsfernen Umgebungen wie Staging und Qualitätskontrolle erwägen, um Systemprobleme bereits zu identifizieren, bevor sie in der Produktionsumgebung auftreten.
 
-**Potenzielle Entwurfsoptionen:** [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor) mit Log Analytics und Application Insights stellt Tools zum Sammeln und Analysieren von Telemetriedaten bereit, damit Sie die Leistung Ihrer Anwendungen besser verstehen und proaktiv Probleme identifizieren können, die sich auf die Anwendungen und die zugehörigen Ressourcen auswirken.
+**Potenzielle Entwurfsoptionen:** [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor) mit Log Analytics und Application Insights stellt Tools zum Sammeln und Analysieren von Telemetriedaten bereit, damit Sie die Leistung Ihrer Anwendungen besser verstehen und proaktiv Probleme identifizieren können, die sich auf die Anwendungen und die zugehörigen Ressourcen auswirken. Darüber hinaus werden im [Azure-Aktivitätsprotokoll](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) alle auf der Plattformebene vorgenommenen Änderungen erfasst, weshalb das Protokoll auf nicht konforme Änderungen überwacht/überprüft werden sollte.
 
 ## <a name="configuration-security-reviews"></a>Sicherheitsüberprüfungen der Konfiguration
 
 **Technisches Risiko:** Im Laufe der Zeit kann sich durch neue Sicherheitsbedrohungen oder -risiken das Risiko eines unberechtigten Zugriffs auf sichere Ressourcen erhöhen.
 
-**Richtlinienanweisung:** Cloud Governance-Prozesse müssen eine vierteljährliche Überprüfung durch Konfigurationsverwaltungsteams umfassen, um böswillige Akteure oder Nutzungsmuster zu identifizieren, die durch die Konfiguration der Cloudressourcen verhindert werden sollten.
+**Richtlinienanweisung:** Cloud Governance-Prozesse müssen eine monatliche Überprüfung durch Konfigurationsverwaltungsteams umfassen, um böswillige Akteure oder Nutzungsmuster zu identifizieren, die durch die Konfiguration der Cloudressourcen verhindert werden sollten.
 
-**Potenzielle Entwurfsoptionen:** Etablieren Sie vierteljährliche Besprechungen zur Sicherheitsüberprüfung, an denen sowohl Mitglieder des Governance-Teams als auch IT-Mitarbeiter teilnehmen, die für die Konfiguration von Anwendungen und Ressourcen in der Cloud verantwortlich sind. Überprüfen Sie vorhandene Sicherheitsdaten und -metriken, um Lücken in der aktuellen Richtlinie für die Beschleunigung der Bereitstellung und bei den entsprechenden Tools zu definieren. Aktualisieren Sie dann die Richtlinie, um neue Risiken zu beheben.
+**Potenzielle Entwurfsoptionen:** Etablieren Sie monatliche Besprechungen zur Sicherheitsüberprüfung, an denen sowohl Mitglieder des Governanceteams als auch IT-Mitarbeiter teilnehmen, die für die Konfiguration von Anwendungen und Ressourcen in der Cloud verantwortlich sind. Überprüfen Sie vorhandene Sicherheitsdaten und -metriken, um Lücken in der aktuellen Richtlinie für die Beschleunigung der Bereitstellung und bei den entsprechenden Tools zu definieren. Aktualisieren Sie dann die Richtlinie, um neue Risiken zu beheben.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 Verwenden Sie die in diesem Artikel erwähnten Beispiele als Ausgangspunkt für die Entwicklung von Richtlinien, die bestimmte Geschäftsrisiken behandeln, die Ihren Plänen für die Einführung der Cloud entsprechen.
 
-Laden Sie die Vorlage [Identitätsbaseline](./template.md) herunter, um mit der Entwicklung eigener, benutzerdefinierter Richtlinienanweisungen im Zusammenhang mit der Identitätsverwaltung zu beginnen.
+Laden Sie die Vorlage [Identitätsbaseline](../identity-baseline/template.md) herunter, um mit der Entwicklung eigener, benutzerdefinierter Richtlinienanweisungen im Zusammenhang mit der Identitätsverwaltung zu beginnen.
 
 Um die Einführung dieser Disziplin zu beschleunigen, wählen Sie den [umsetzbaren Governanceleitfaden](../guides/index.md) aus, der am besten zu Ihrer Umgebung passt. Ändern Sie dann den Entwurf, um Ihre speziellen Entscheidungen für Unternehmensrichtlinien zu integrieren.
 

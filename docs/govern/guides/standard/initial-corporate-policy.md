@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4da4899038ca86bec2f1d003f9eaaee293119a09
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ec184cc41608452c945e7665eae845a773b7cfbd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031497"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223662"
 ---
 # <a name="standard-enterprise-guide-initial-corporate-policy-behind-the-governance-strategy"></a>Standardunternehmensleitfaden: Anfängliche Unternehmensrichtlinie hinter der Governancestrategie
 
@@ -33,7 +33,7 @@ In dieser Schilderung besteht das Cloudgovernanceteam aus zwei Systemadministrat
 
 Die aktuelle Risikotoleranz ist hoch, und das Interesse an der Investition in die Cloudgovernance ist niedrig. Daher fungieren die Toleranzindikatoren als Frühwarnsystem, um weitere Investitionen von Zeit und Energie auszulösen. Wenn die nachfolgend aufgeführten Indikatoren festgestellt werden, sollten Sie die Governancestrategie iterativ verbessern.
 
-- **Kostenmanagement:** Das Ausmaß der Bereitstellung übersteigt 100 Ressourcen in der Cloud, oder die monatlichen Ausgaben überschreiten 1.000 USD pro Monat.
+- **Kostenmanagement:** Der Umfang der Bereitstellung übersteigt die vorgegebenen Grenzwerte für Ressourcenanzahl oder monatliche Kosten.
 - **Sicherheitsbaseline:** Die Aufnahme der geschützten Daten in definierte Cloudeinführungspläne.
 - **Ressourcenkonsistenz:** Die Aufnahme der unternehmenskritischen Anwendungen in definierte Cloudeinführungspläne.
 

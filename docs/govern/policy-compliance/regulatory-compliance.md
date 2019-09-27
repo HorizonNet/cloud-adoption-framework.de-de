@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Einführung in die Einhaltung gesetzlicher Bestimmungen
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b0bc28f46671c4ccf62bba9f3fa68f14e2b79aee
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b38b52fc6899000bf5f452425a8b6f26070af7dc
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031137"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222027"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>Einführung in die Einhaltung gesetzlicher Bestimmungen
 
-Dies ist ein einführender Artikel zur Einhaltung gesetzlicher Bestimmungen, der nicht für die Implementierung einer Compliancestrategie vorgesehen ist. Er dient lediglich zur allgemeinen Information. Ausführlichere Informationen zu [Azure-Complianceangeboten](https://aka.ms/allcompliance) sind im [Microsoft Trust Center](https://www.microsoft.com/trustcenter/default.aspx) verfügbar. Alle heruntergeladenen Dokumente sind zudem für bestimmte Azure-Kunden über das [Microsoft Service Trust-Portal](https://servicetrust.microsoft.com) verfügbar.
+Dies ist ein einführender Artikel zur Einhaltung gesetzlicher Bestimmungen, der nicht für die Implementierung einer Compliancestrategie vorgesehen ist. Ausführlichere Informationen zu [Azure-Complianceangeboten](https://aka.ms/allcompliance) sind im [Microsoft Trust Center](https://www.microsoft.com/trustcenter/default.aspx) verfügbar. Alle heruntergeladenen Dokumente sind zudem für bestimmte Azure-Kunden über das [Microsoft Service Trust-Portal](https://servicetrust.microsoft.com) verfügbar.
 
 Die Einhaltung von Vorschriften bezieht sich auf die Disziplin und den Prozess, mit dem sichergestellt wird, dass ein Unternehmen die Gesetze befolgt, die von den Regierungsstellen in ihrer Region durchgesetzt werden, oder die Regeln, die durch freiwillig übernommene Industriestandards erforderlich sind. Im Rahmen der Einhaltung gesetzlicher Bestimmungen in der IT überwachen Personen oder Prozesse Unternehmenssysteme, um Verletzungen der durch geltende Gesetze, Bestimmungen und Standards festgelegten Richtlinien und Verfahren zu erkennen und zu verhindern. Dies betrifft wiederum einen großen Bereich von Überwachungs- und Erzwingungsprozessen. Je nach Branche und Region können sich diese Prozesse langwierig und komplex gestalten.
 
@@ -42,7 +42,7 @@ Personenbezogene Informationen sind Informationen, anhand derer ein Kunde, Mitar
 
 ## <a name="gdpr"></a>GDPR
 
-Eine der wichtigsten Entwicklungen in diesem Bereich ist das kürzliche Inkrafttreten der allgemeinen Datenschutzgrundverordnung (DSGVO) der Europäischen Kommission, die speziell entwickelt wurde, um den Schutz von Daten für Einzelpersonen innerhalb der Europäischen Union zu stärken. Die DSGVO erfordert, dass Daten über Einzelpersonen, (wie Namen, Privatadressen, Fotos, E-Mail-Adressen, Bankdaten, Beiträge in sozialen Netzwerken, medizinische Informationen oder IP-Adressen eines Computers) auf Servern innerhalb der EU verwaltet und nicht an einen Ort außerhalb der EU übertragen werden. Sie erfordert auch, dass Unternehmen Personen über Datenschutzverletzungen benachrichtigen, und fordert, dass Unternehmen einen Datenschutzbeauftragten (DSB) haben müssen. Andere Länder haben ähnliche Arten von Vorschriften oder entwickeln diese derzeit.
+Eine der wichtigsten Entwicklungen in diesem Bereich ist die Datenschutz-Grundverordnung (DSGVO) der Europäischen Kommission, die speziell entwickelt wurde, um den Schutz von Daten für Einzelpersonen innerhalb der Europäischen Union zu verbessern. Die DSGVO erfordert, dass Daten über Einzelpersonen, (wie Namen, Privatadressen, Fotos, E-Mail-Adressen, Bankdaten, Beiträge in sozialen Netzwerken, medizinische Informationen oder IP-Adressen eines Computers) auf Servern innerhalb der EU verwaltet und nicht an einen Ort außerhalb der EU übertragen werden. Sie erfordert auch, dass Unternehmen Personen über Datenschutzverletzungen benachrichtigen, und fordert, dass Unternehmen einen Datenschutzbeauftragten (DSB) haben müssen. Andere Länder haben ähnliche Arten von Vorschriften oder entwickeln diese derzeit.
 
 ## <a name="compliant-foundation-in-azure"></a>Konformitätsbasis in Azure
 

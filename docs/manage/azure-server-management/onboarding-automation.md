@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a3a1ae1f49fea514ce2ab194f7e959e428b37ad6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 242c8a1a054507c3b1134b1126ea95e3ead74d84
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031146"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221373"
 ---
 # <a name="automate-onboarding"></a>Automatisieren des Onboardings
 
@@ -21,7 +21,7 @@ Um die Effizienz der Bereitstellung von Azure-Serververwaltungsdiensten zu verbe
 
 ## <a name="onboarding-by-using-automation"></a>Durchführen des Onboardings mithilfe der Automatisierung
 
-Dieser Leitfaden enthält ein unterstützendes GitHub-Repository mit Beispielcode, [CloudAdoptionFramework](https://aka.ms/CAF/manage/automation-samples), das Beispielskripte und Azure Resource Manager-Vorlagen enthält, die Ihnen bei der Automatisierung der Bereitstellung von Azure-Serververwaltungsdiensten helfen.
+Dieser Leitfaden enthält ein unterstützendes GitHub-Repository mit Beispielcode, [CloudAdoptionFramework](https://aka.ms/caf/manage/automation-samples), das Beispielskripte und Azure Resource Manager-Vorlagen enthält, die Ihnen bei der Automatisierung der Bereitstellung von Azure-Serververwaltungsdiensten helfen.
 
 Diese Beispieldateien veranschaulichen, wie Sie Azure PowerShell-Cmdlets verwenden können, um folgende Aufgaben zu automatisieren:
 
@@ -33,7 +33,7 @@ Diese Beispieldateien veranschaulichen, wie Sie Azure PowerShell-Cmdlets verwend
 
 4. Aktivieren Sie die Updateverwaltung und die Änderungsnachverfolgung sowie die Inventarisierung für den Arbeitsbereich.
 
-5. Führen Sie das Onboarding für virtuelle Azure-Computer mit Azure Policy durch (eine Richtlinie installiert den Log Analytics- und den Dependency-Agent auf den virtuellen Azure-Computern).
+5. Führen Sie das Onboarding für virtuelle Azure-Computer unter Verwendung von Azure Policy durch. (Eine Richtlinie installiert den Log Analytics- und den Dependency-Agent auf den virtuellen Azure-Computern.)
 
 6. Führen Sie das Onboarding auf lokalen Servern durch, indem Sie den Log Analytics-Agent auf ihnen installieren.
 

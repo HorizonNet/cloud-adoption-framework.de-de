@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Beschreibt die Optionen, bei der Rationalisierung eines digitales Umfelds zur Verfügung stehen.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 12/10/2018
+ms.date: 09/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 40962b8c658c40e4a27e3c025bc42b3aa5acd0f3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 35709a6208de54f43cdb51aadb1e32f34a0ba844
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023617"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223873"
 ---
 # <a name="cloud-rationalization"></a>Cloudrationalisierung
 
@@ -69,7 +69,7 @@ Häufige Motive können Folgendes umfassen:
 
 - Schnellere und kürzere Updates
 - Codeportabilität
-- Höhere Cloudeffizienz (Ressourcen, Geschwindigkeit, Kosten)
+- Höhere Cloudeffizienz (Ressourcen, Geschwindigkeit, Kosten, verwaltete Vorgänge)
 
 Faktoren für die quantitative Analyse:
 
@@ -77,6 +77,7 @@ Faktoren für die quantitative Analyse:
 - Abhängigkeiten (Netzwerkdatenverkehr)
 - Benutzerdatenverkehr (Seitenaufrufe, Verweildauer auf der Seite, Ladezeit)
 - Entwicklungsplattform (Sprachen, Datenplattform, Dienste der mittleren Ebene)
+- Datenbank (CPU, Arbeitsspeicher, Speicherplatz, Version)
 
 Faktoren für die qualitative Analyse:
 
@@ -102,6 +103,7 @@ Faktoren für die quantitative Analyse:
 - Abhängigkeiten (Netzwerkdatenverkehr)
 - Benutzerdatenverkehr (Seitenaufrufe, Verweildauer auf der Seite, Ladezeit)
 - Entwicklungsplattform (Sprachen, Datenplattform, Dienste der mittleren Ebene)
+- Datenbank (CPU, Arbeitsspeicher, Speicherplatz, Version)
 
 Faktoren für die qualitative Analyse:
 
@@ -125,6 +127,7 @@ Faktoren für die quantitative Analyse:
 - Abhängigkeiten (Netzwerkdatenverkehr)
 - Benutzerdatenverkehr (Seitenaufrufe, Verweildauer auf der Seite, Ladezeit)
 - Entwicklungsplattform (Sprachen, Datenplattform, Dienste der mittleren Ebene)
+- Datenbank (CPU, Arbeitsspeicher, Speicherplatz, Version)
 
 Faktoren für die qualitative Analyse:
 
@@ -148,6 +151,7 @@ Faktoren für die quantitative Analyse:
 - VM-Größe (CPU, Arbeitsspeicher, Speicherplatz)
 - Abhängigkeiten (Netzwerkdatenverkehr)
 - Auszumusternde Ressourcen
+- Datenbank (CPU, Arbeitsspeicher, Speicherplatz, Version)
 
 Faktoren für die qualitative Analyse:
 

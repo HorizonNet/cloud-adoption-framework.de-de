@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Enthält eine Anleitung zum Konfigurieren von Azure-Governancekontrollen für mehrere Teams, mehrere Workloads und mehrere Umgebungen.
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d9b1dddff5cadd9219e6dffad87690145214b162
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d6a21e852ff44a9036f2fbb9d0d0e60a0f4c930f
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032441"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223953"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Governance-Entwurf für mehrere Teams
 
@@ -26,16 +26,17 @@ Folgende Anforderungen müssen erfüllt sein:
   - Die Person, die in Ihrer Organisation für den Besitz von **Abonnements** zuständig ist.
   - Die Person, die in Ihrer Organisation für die **Ressourcen der freigegebenen Infrastruktur** zuständig ist, über die Ihr lokales Netzwerk mit einem virtuellen Azure-Netzwerk verbunden wird.
   - Zwei Personen, die in Ihrer Organisation für die Verwaltung einer **Workload** verantwortlich sind.
-- Unterstützung für mehrere **Umgebungen**. Bei einer Umgebung handelt es sich um eine logische Gruppierung von Ressourcen. Hierzu zählen beispielsweise virtuelle Computer und Netzwerke sowie Routingdienste für Netzwerkdatenverkehr. Diese Ressourcengruppen haben ähnliche Verwaltungs- und Sicherheitsanforderungen und werden in der Regel für einen bestimmten Zweck verwendet – etwa für Tests oder für die Produktion. In diesem Beispiel werden drei Umgebungen benötigt:
+- Unterstützung für mehrere **Umgebungen**. Bei einer Umgebung handelt es sich um eine logische Gruppierung von Ressourcen. Hierzu zählen beispielsweise virtuelle Computer und Netzwerke sowie Routingdienste für Netzwerkdatenverkehr. Diese Ressourcengruppen haben ähnliche Verwaltungs- und Sicherheitsanforderungen und werden in der Regel für einen bestimmten Zweck verwendet – etwa für Tests oder für die Produktion. In diesem Beispiel werden vier Umgebungen benötigt:
   - Eine **Umgebung mit freigegebener Infrastruktur** mit Ressourcen, die von Workloads in anderen Umgebungen freigegeben werden. Beispiel: Ein virtuelles Netzwerk mit einem Gatewaysubnetz, das die Konnektivität für die lokale Umgebung bereitstellt.
   - Eine **Produktionsumgebung** mit den restriktivsten Sicherheitsrichtlinien. Sie kann interne oder externe Workloads umfassen.
-  - Eine **Entwicklungsumgebung** für Proof-of-Concept- und Testarbeiten. Diese Umgebung verfügt über Richtlinien für die Bereiche Sicherheit, Konformität und Kosten, die sich von den Richtlinien in der Produktionsumgebung unterscheiden.
+  - Eine **produktionsfremde Umgebung** zu Entwicklungs- und Testzwecken. Diese Umgebung verfügt über Richtlinien für die Bereiche Sicherheit, Konformität und Kosten, die sich von den Richtlinien in der Produktionsumgebung unterscheiden. In Azure wird hierzu ein Enterprise Dev/Test-Abonnement verwendet.
+  - Eine **Sandbox-Umgebung** zu Proof of Concept- und Weiterbildungszwecken. Diese Umgebung wird in der Regel individuellen Mitarbeitern zugewiesen, die sich an Entwicklungsaktivitäten beteiligen, und verfügt über strikte prozedurale und betriebliche Sicherheitskontrollen, um die Einbringung von Unternehmensdaten zu verhindern. In Azure werden hierzu Visual Studio-Abonnements verwendet. Diese Abonnements dürfen auch _nicht_ mit der Azure Active Directory-Instanz des Unternehmens verknüpft werden.
 - Ein **Berechtigungsmodell der geringsten Berechtigung**, bei dem Benutzer standardmäßig nicht über Berechtigungen verfügen. Das Modell muss Folgendes unterstützen:
-  - Einen einzelnen vertrauenswürdigen Benutzer im Abonnementbereich mit Berechtigung zum Zuweisen von Ressourcenzugriffsrechten.
-  - Für jeden Workloadbesitzer wird der Zugriff auf Ressourcen standardmäßig erst einmal verweigert. Ressourcenzugriffsrechte werden explizit jeweils vom alleinigen vertrauenswürdigen Benutzer des Abonnementbereichs gewährt.
-  - Der Verwaltungszugriff für die Ressourcen der freigegebenen Infrastruktur ist auf den Besitzer der freigegebenen Infrastruktur beschränkt.
-  - Der Verwaltungszugriff für jede Workload ist jeweils auf den Workloadbesitzer beschränkt.
-  - Das Unternehmen möchte die Rollen nicht in jeder der drei Umgebungen separat verwalten müssen und benötigt daher nur die [integrierten Rollen](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles), die in der rollenbasierten Zugriffssteuerung (RBAC) verfügbar sind. Würde das Unternehmen benutzerdefinierte RBAC-Rollen verwenden, müssten die benutzerdefinierten Rollen in einem zusätzlichen Prozess zwischen den drei Umgebungen synchronisiert werden.
+  - Einen einzelnen vertrauenswürdigen Benutzer (ein Quasi-Dienstkonto) im Abonnementbereich mit Berechtigung zum Zuweisen von Ressourcenzugriffsrechten.
+  - Für jeden Workloadbesitzer wird der Zugriff auf Ressourcen standardmäßig erst einmal verweigert. Ressourcenzugriffsrechte werden jeweils explizit vom alleinigen vertrauenswürdigen Benutzer im Ressourcengruppenbereich gewährt.
+  - Der Verwaltungszugriff für die Ressourcen der freigegebenen Infrastruktur ist auf die Besitzer der freigegebenen Infrastruktur beschränkt.
+  - Der Verwaltungszugriff für die einzelnen Workloads ist (in der Produktion) jeweils auf den Workloadbesitzer beschränkt, wobei die Kontrolle mit fortschreitender Entwicklung (Entwicklung > Tests > Staging > Produktion) weiter zunimmt.
+  - Das Unternehmen möchte die Rollen nicht in jeder der drei Hauptumgebungen separat verwalten müssen und benötigt daher nur die [integrierten Rollen](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles), die in der rollenbasierten Zugriffssteuerung (Role-Based Access Control, RBAC) verfügbar sind. Falls das Unternehmen unbedingt benutzerdefinierte RBAC-Rollen benötigt, müssen die benutzerdefinierten Rollen mithilfe zusätzlicher Prozesse zwischen den drei Umgebungen synchronisiert werden.
 - Nachverfolgung von Kosten nach Name des Workloadbesitzers, Umgebung oder beidem.
 
 ## <a name="identity-management"></a>Identitätsverwaltung
@@ -54,7 +55,7 @@ Wenn sich Ihre Organisation für ein Azure-Konto registriert hat, wurde mindeste
 Die Benutzeridentitäten für den Azure-Kontobesitzer und den globalen Azure AD-Administrator werden in einem hochgradig sicheren Identitätssystem gespeichert, das von Microsoft verwaltet wird. Der Azure-Kontobesitzer ist dazu berechtigt, Abonnements zu erstellen, zu aktualisieren und zu löschen. Der globale Azure AD-Administrator ist zur Durchführung von vielen Aktionen in Azure AD berechtigt, aber in diesem Entwurfshandbuch konzentrieren Sie sich auf das Erstellen und Löschen der Benutzeridentität.
 
 > [!NOTE]
-> Unter Umständen verfügt Ihre Organisation bereits über einen Azure AD-Mandanten, falls Ihrem Konto eine vorhandene Office 365- oder Intune-Lizenz zugeordnet ist.
+> Unter Umständen verfügt Ihre Organisation bereits über einen Azure AD-Mandanten, falls Ihrem Konto eine vorhandene Office 365-, Intune- oder Dynamics-Lizenz zugeordnet ist.
 
 Der Azure-Kontobesitzer verfügt über die Berechtigung zum Erstellen, Aktualisieren und Löschen von Abonnements:
 
@@ -135,10 +136,10 @@ Wenn Sie die Beispiele jeweils mit den Anforderungen vergleichen, sehen Sie, das
 Nachdem Sie nun ein Berechtigungsmodell der geringsten Berechtigung entworfen haben, werfen wir einen Blick auf einige praktische Anwendungen dieser Governance-Modelle. Gemäß den Anforderungen müssen Sie die drei folgenden Umgebungen unterstützen:
 
 1. **Freigegebene Infrastruktur:** Eine Gruppe von Ressourcen, die von allen Workloads genutzt wird. Beispiele für diese Ressourcen sind Netzwerkgateways, Firewalls und Sicherheitsdienste.
-2. **Entwicklung:** Mehrere Gruppen von Ressourcen, die für mehrere, nicht für die Produktion bereite Workloads stehen. Diese Ressourcen werden für Proof-of-Concept, Testing und andere Entwickleraktivitäten verwendet. Für diese Ressourcen kann ggf. ein weniger striktes Governance-Modell verwendet werden, um die Flexibilität für Entwickler zu erhöhen.
-3. **Produktion:** Mehrere Gruppen von Ressourcen, die mehrere Produktionsworkloads darstellen. Diese Ressourcen werden verwendet, um die Anwendungselemente für den privaten und öffentlichen Bereich zu hosten. Diese Ressourcen verfügen normalerweise über die striktesten Governance- und Sicherheitsmodelle, um die Ressourcen, den Anwendungscode und die Daten vor unberechtigtem Zugriff zu schützen.
+2. **Produktion:** Mehrere Gruppen von Ressourcen, die mehrere Produktionsworkloads darstellen. Diese Ressourcen werden verwendet, um die Anwendungselemente für den privaten und öffentlichen Bereich zu hosten. Diese Ressourcen verfügen normalerweise über die striktesten Governance- und Sicherheitsmodelle, um die Ressourcen, den Anwendungscode und die Daten vor unberechtigtem Zugriff zu schützen.
+3. **Produktionsfremd:** Mehrere Gruppen von Ressourcen, die für mehrere, nicht für die Produktion bereite Workloads stehen. Diese Ressourcen werden zu Entwicklungs- und Testzwecken verwendet. Für diese Ressourcen kann ggf. ein weniger striktes Governancemodell verwendet werden, um die Flexibilität für Entwickler zu erhöhen. Die Sicherheit innerhalb dieser Gruppen sollte nach und nach erhöht werden, je mehr sich ein Anwendungsentwicklungsprozess der Produktion nähert.
 
-Für jede dieser drei Umgebungen besteht die Anforderung zum Nachverfolgen der Kostendaten nach **Workloadbesitzer**, **Umgebung** oder beidem. Sie möchten also die laufenden Kosten der **freigegebenen Infrastruktur**, die in den Umgebungen für die **Entwicklung** und **Produktion** anfallenden Kosten für Personen und schließlich die Gesamtkosten für die **Entwicklung** und die **Produktion** ermitteln.
+Für jede dieser drei Umgebungen besteht die Anforderung zum Nachverfolgen der Kostendaten nach **Workloadbesitzer**, **Umgebung** oder beidem. Sie möchten also die laufenden Kosten der **freigegebenen Infrastruktur**, die Kosten, die in der **produktionsfremden Umgebung** und der **Produktionsumgebung** durch Personen anfallen, und schließlich die Gesamtkosten für die **produktionsfremde Umgebung** und die **Produktionsumgebung** ermitteln.
 
 Sie haben bereits erfahren, dass diese Ressourcen in zwei Ebenen unterteilt sind: **Abonnement** und **Ressourcengruppe**. Als Erstes müssen wir entscheiden, wie die Umgebungen nach **Abonnement** organisiert werden sollen. Es gibt nur zwei Möglichkeiten: ein einzelnes Abonnement oder mehrere Abonnements.
 

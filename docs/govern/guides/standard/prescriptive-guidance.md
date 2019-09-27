@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8cc3c5564d51a096f2794ec62e50c19a2a8e740c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8f9bd9d7dadbd880265cc441b1e927ab835165cb
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031140"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223833"
 ---
 # <a name="standard-enterprise-guide-prescriptive-guidance-explained"></a>Standardunternehmensleitfaden: Ausführlicher Leitfaden mit Erläuterung
 
@@ -61,7 +61,7 @@ Die Entscheidung über den Abonnemententwurf bestimmt, wie Azure-Abonnements str
 
 Entscheidungen zur Ressourcenkonsistenz bestimmen die Tools, Prozesse und Aufgaben, die erforderlich sind, um sicherzustellen, dass Azure-Ressourcen innerhalb eines Abonnements konsistent bereitgestellt, konfiguriert und verwaltet werden. Im vorliegenden Beispielfall wurde **[Bereitstellungskonsistenz](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** als primäres Muster für die Ressourcenkonsistenz ausgewählt.
 
-- Ressourcengruppen für Anwendungen werden per Lebenszyklusansatz erstellt: Alle Einzelteile, die zusammen erstellt, verwaltet und außer Betrieb genommen werden können, werden in einer einzelnen Ressourcengruppe zusammengefasst.
+- Ressourcengruppen werden für Anwendungen unter Verwendung des Lebenszyklusansatzes erstellt. Das bedeutet, dass alles, was zusammen erstellt, verwaltet und ausgemustert wird, in einer einzelnen Ressourcengruppe zusammengefasst werden sollte. Weitere Informationen zu Ressourcengruppen finden Sie [hier](../../../decision-guides/resource-consistency/index.md#basic-grouping).
 - Azure Policy sollte auf alle Abonnements aus der zugehörigen Verwaltungsgruppe angewendet werden.
 - Im Rahmen des Bereitstellungsprozesses sollten Azure Resource Consistency-Vorlagen für die Ressourcengruppe in der Quellcodeverwaltung gespeichert werden.
 - Jede Ressourcengruppe ist basierend auf dem oben beschriebenen Lebenszyklusansatz einer bestimmten Workload oder Anwendung zugeordnet.
@@ -116,7 +116,7 @@ Wenn eines der in diesem Governanceleitfaden ausgewählten Muster nicht mit den 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Sobald dieser Leitfaden implementiert wurde, kann jedes Cloudeinführungsteam seine Arbeit mit einer soliden Governancebasis fortsetzen. Das Cloudgovernanceteam arbeitet parallel daran, die Unternehmensrichtlinien und Governanceverfahren kontinuierlich zu aktualisieren.
+Sobald dieser Leitfaden implementiert wurde, kann jedes Cloudeinführungsteam seine Arbeit mit einer soliden Governancebasis fortsetzen. Gleichzeitig werden die Unternehmensrichtlinien und Governanceverfahren kontinuierlich durch das Cloudgovernanceteam aktualisiert.
 
 Die beiden Teams verwenden die Toleranzindikatoren, um die nächsten Verbesserungen zu identifizieren, die erforderlich sind, um die Einführung der Cloud weiterhin zu unterstützen. Für das fiktive Unternehmen in diesem Leitfaden ist der nächste Schritt die Verbesserung der Sicherheitsbaseline zur Unterstützung des Verschiebens geschützter Daten in die Cloud.
 

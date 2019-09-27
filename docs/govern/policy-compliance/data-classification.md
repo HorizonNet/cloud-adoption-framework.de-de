@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Was ist die Datenklassifizierung?
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d293aa5b4427b8f714175b85c6bb5197b53f107a
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 86c57efed1be2760aca607197eb8d28f0151097a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031845"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223571"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -40,7 +40,7 @@ In der nachstehenden Liste sind die von Microsoft verwendeten Klassifizierungen 
 
 ## <a name="tagging-data-classification-in-azure"></a>Kennzeichnen der Datenklassifizierung in Azure
 
-Jeder Cloud-Dienstanbieter sollte einen Mechanismus zum Aufzeichnen von Metadaten zu einem Objekt anbieten. Im Fall von Azure stellen Ressourcentags die empfohlene Vorgehensweise für die Speicherung von Metadaten dar. Diese Tags können verwendet werden, um Datenklassifizierungen auf bereitgestellte Ressourcen anzuwenden. Auch wenn das Kennzeichnen von Cloudressourcen keinen Ersatz für eine formale Datenklassifizierung darstellt, ist es ein wertvolles Hilfsmittel für das Verwalten von Ressourcen und das Anwenden von Richtlinien.
+Für die Speicherung von Metadaten wird die Verwendung von Ressourcentags empfohlen. Mithilfe dieser Tags können Datenklassifizierungen auf bereitgestellte Ressourcen angewendet werden. Auch wenn das Kennzeichnen von Cloudressourcen keinen Ersatz für eine formale Datenklassifizierung darstellt, ist es ein wertvolles Hilfsmittel für das Verwalten von Ressourcen und das Anwenden von Richtlinien. [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) ist eine hervorragende Lösung, die Sie bei der Klassifizierung von _Daten_ unterstützt – ganz gleich, ob sich diese in der lokalen Umgebung, in Azure oder an einem anderen Ort befinden. Diese Lösung sollte als Teil einer allgemeinen Klassifizierungsstrategie in Betracht gezogen werden.
 
 Zusätzliche Informationen zu Tags für Ressourcen in Azure finden Sie im Artikel zu [Verwenden von Tags zum Organisieren Ihrer Azure-Ressourcen](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
 

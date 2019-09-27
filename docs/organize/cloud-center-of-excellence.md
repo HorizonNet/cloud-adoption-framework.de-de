@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 9726cc5bea1d8f7852dbb8831fc211dda2f4f4f7
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ac1fe4cac44d4a1f830be1faba7f2d50ddbd98f0
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031308"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224341"
 ---
 # <a name="cloud-center-of-excellence"></a>Cloudkompetenzzentrum
 
@@ -32,7 +32,7 @@ Bei einem Cloudkompetenzzentrum müssen die folgenden Funktionsbereiche zusammen
 
 ## <a name="impact-and-cultural-change"></a>Auswirkungen und kulturelle Veränderungen
 
-Wenn diese Funktion richtig strukturiert ist und unterstützt wird, können die Teilnehmer ihre Innovations- und Migrationsaufgaben schneller erledigen, während gleichzeitig die Gesamtkosten für Veränderungen reduziert werden und die geschäftliche Flexibilität gesteigert wird. Bei einer erfolgreichen Implementierung kann die Zeit bis zur Markteinführung mit dieser Funktion merklich verkürzt werden. Wenn Teams mehr Erfahrungen mit den Abläufen gesammelt haben, lässt sich eine Verbesserung der Qualitätsindikatoren erkennen, z. B. in den Bereichen Zuverlässigkeit, Leistungseffizienz, Sicherheit, Verwaltbarkeit und Kundenzufriedenheit. Dieser Zugewinn an Effizienz, Flexibilität und Qualität ist besonders wichtig, wenn das Unternehmen die Implementierung einer Cloudmigration in größerem Umfang plant oder Innovationen in Bezug auf die Marktspezialisierung vorantreiben möchte.
+Wenn diese Funktion richtig strukturiert ist und unterstützt wird, können die Teilnehmer ihre Innovations- und Migrationsaufgaben schneller erledigen, während gleichzeitig die Gesamtkosten für Veränderungen reduziert werden und die geschäftliche Flexibilität gesteigert wird. Bei einer erfolgreichen Implementierung kann die Zeit bis zur Markteinführung mit dieser Funktion merklich verkürzt werden. Wenn Teams besser mit den Abläufen vertraut sind, verbessern sich auch die Qualitätsindikatoren. Hierzu zählen beispielsweise Zuverlässigkeit, Leistungseffizienz, Sicherheit, Verwaltbarkeit und Kundenzufriedenheit. Dieser Zugewinn an Effizienz, Flexibilität und Qualität ist besonders wichtig, wenn das Unternehmen die Implementierung einer Cloudmigration in größerem Umfang plant oder Innovationen in Bezug auf die Marktspezialisierung vorantreiben möchte.
 
 Bei erfolgreicher Umsetzung kommt es mit einem CCoE-Modell zu einer signifikanten kulturellen Veränderung im IT-Bereich. Grundvoraussetzung eines CCoE-Ansatzes ist, dass der IT-Bereich für das Unternehmen als Broker, Partner oder Repräsentant fungiert. Dieses Modell stellt einen Paradigmenwechsel gegenüber der herkömmlichen Funktion des IT-Bereichs als Betriebseinheit oder Abstraktionsschicht zwischen dem Unternehmen und den IT-Ressourcen dar.
 

@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Verstehen des Geschäftsrisikos während der Cloudmigration
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 26f110e808039fe17ac4186cdafa9e6a200f6fee
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 078ba561384c07cee6ce3a174d1663f7590e228c
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031570"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220400"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -35,7 +35,7 @@ Während einer Transformation sind dieselben relativen Risiken vorhanden.
 
 - In der frühen Experimentierphase werden einige Ressourcen mit wenigen oder gar keinen relevanten Daten bereitgestellt. Das Risiko ist gering.
 - Wenn die erste Workload bereitgestellt wird, steigt das Risiko ein wenig an. Dieses Risiko kann einfach verringert werden, indem Sie eine Anwendung mit von Natur aus geringem Risiko und einer geringen Benutzeranzahl auswählen.
-- Während weitere Workloads online geschaltet werden, ändern sich die Risiken mit jedem neuen Release. Neue Apps gehen online, Risiken ändern sich.
+- Während weitere Workloads online geschaltet werden, ändern sich die Risiken mit jedem neuen Release. Neue Apps werden live geschaltet, und Risiken verändern sich.
 - Wenn ein Unternehmen die ersten 10 bis 20 Anwendungen online schaltet, liegt ein wesentlich anderes Risikoprofil vor, als wenn die tausendste Anwendung in die Produktion in der Cloud wechselt.
 
 Die Ressourcen, die sich in der herkömmlichen lokalen Umgebung angesammelt haben, haben sich wahrscheinlich im Laufe der Zeit angehäuft. Das Unternehmen und das IT-Team reiften wahrscheinlich in ähnlicher Weise. Dieses parallele Wachstum bringt häufig einige unnötige Richtlinien mit sich.
@@ -54,10 +54,10 @@ Im Gegensatz dazu kann ein MVP-Ansatz es dem Team ermöglichen, einen anfänglic
 
 Nachfolgend sind einige grundlegende Beispiele für Geschäftsrisiken aufgeführt, die im Rahmen eines MVP berücksichtigt werden können:
 
-- Alle Ressourcen könnten beendet werden (durch Fehler, Versehen oder Wartung).
+- Alle Ressourcen könnten gelöscht werden (durch Fehler, Irrtum oder Wartung).
 - Alle Ressourcen könnten zu viele Ausgaben generieren.
-- Alle Ressourcen könnten durch schwache Kennwörter kompromittiert werden.
-- Alle Ressourcen, deren geöffnete Ports vom Internet aus zugänglich sind, könnten kompromittiert werden.
+- Alle Ressourcen könnten durch unsichere Kennwörter oder Einstellungen kompromittiert werden.
+- Ressourcen, deren geöffnete Ports über das Internet zugänglich sind, könnten kompromittiert werden.
 
 Die oben aufgeführten Beispiele sollen die MVP-Geschäftsrisiken als Theorie aufstellen. Die tatsächliche Liste ist für jede Umgebung individuell.
 Sobald das Geschäftsrisiko-MVP eingerichtet wurde, kann die Umwandlung in [Richtlinien](./index.md) erfolgen, um die einzelnen Risiken zu mindern.

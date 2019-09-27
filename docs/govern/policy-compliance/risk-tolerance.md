@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Erläuterung der geschäftlichen Risiken bei einer Cloudtransformation
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: cd8bee6cf7cf0ff06cb2846b440263cc83757f5f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2b8bc595377b2748bd00f306659a46196115e91d
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032496"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223539"
 ---
 # <a name="evaluate-risk-tolerance"></a>Evaluieren der Risikotoleranz
 
@@ -47,7 +47,7 @@ Die Identifikation von Risiken ist ein relativ direkter Prozess. IT-bezogene Ris
 Um die Risikotoleranz zu verstehen, untersuchen wir die Kundendaten. Wenn ein Unternehmen in einer beliebigen Branche Kundendaten auf einem ungesicherten Server ablegt, bleibt das technische Risiko, ob diese Daten kompromittiert oder gestohlen werden, mehr oder weniger gleich. Wie ein Unternehmen dieses Risiko jedoch toleriert, hängt stark von Art und potenziellem Wert der Daten ab.
 
 - Unternehmen im Gesundheits- und Finanzwesen in den Vereinigten Staaten unterliegen strikten Konformitätsanforderungen von Drittanbietern. Es wird vorausgesetzt, dass personenbezogene Daten sowie gesundheitsbezogene Daten extrem vertraulich zu behandeln sind. Für diese Arten von Unternehmen gibt es schwerwiegende Konsequenzen, wenn sie an dem oben beschriebenen Risikoszenario beteiligt sind. Ihre Toleranz wird dementsprechend extrem gering sein. Alle innerhalb oder außerhalb des Netzwerks veröffentlichten Kundendaten müssen durch diese Drittanbieter-Konformitätsrichtlinien verwaltet werden.
-- Ein Spieleunternehmen, dessen Kundendaten sich auf Benutzernamen, Spielzeiten und Bestenlisten beschränken, muss wahrscheinlich keine schwerwiegenden Folgen befürchten, wenn es das oben beschriebene riskante Verhalten zeigt. Ungeschützte Daten sind zwar gefährdet, die Auswirkungen sind jedoch gering. Daher ist die Risikotoleranz in diesem Fall hoch.
+- Ein Spieleunternehmen, dessen Kundendaten sich auf Benutzernamen, Spielzeiten und Bestenlisten beschränken, muss abgesehen von einem Imageschaden wahrscheinlich keine schwerwiegenden Folgen befürchten, wenn es das oben beschriebene riskante Verhalten an den Tag legt. Ungeschützte Daten sind zwar gefährdet, die Auswirkungen sind jedoch gering. Daher ist die Risikotoleranz in diesem Fall hoch.
 - Ein mittelständisches Unternehmen, das Tausenden von Kunden einen Teppichreinigungsdienst anbietet, fällt zwischen diese beiden Toleranzextreme. Kundendaten sind möglicherweise ausführlicher und enthalten Details wie Adresse oder Telefonnummer. Beide können als personenbezogene Informationen betrachtet werden, die zu schützen sind. Allerdings gibt es möglicherweise keine spezifische Governanceanforderung, die vorschreibt, dass die Daten abgesichert werden müssen. Aus der IT-Perspektive ist die Antwort einfach: Die Daten müssen geschützt werden. Aus geschäftlicher Sicht ist die Sache möglicherweise nicht so einfach. Das Unternehmen benötigt weitere Details, bevor es ein Maß an Toleranz für dieses Risiko ermitteln kann.
 
 Der nächste Abschnitt enthält einige Beispielfragen, anhand derer das Unternehmen ein Maß an Risikotoleranz für den obigen und andere Anwendungsfälle festlegen kann.
@@ -56,12 +56,13 @@ Der nächste Abschnitt enthält einige Beispielfragen, anhand derer das Unterneh
 
 In diesem Abschnitt werden Fragen mit Gesprächsbedarf in drei Kategorien aufgelistet: Wahrscheinlichkeit von Datenverlust, Auswirkung von Datenverlust und Kosten für die Wiederherstellung. Wenn Fachbereiche und IT sich gemeinsam mit diesen Bereichen befassen, kann die Entscheidung, den Aufwand für das Risikomanagement und die allgemeine Toleranz gegenüber einem bestimmten Risiko zu erhöhen, mühelos getroffen werden.
 
-**Auswirkungen von Datenverlust:** Fragen zum Ermitteln der Auswirkungen eines Risikos. Diese Fragen können schwierig (sogar unmöglich) zu beantworten sein. Ideal ist es, die Auswirkungen in Zahlen auszudrücken, aber oft reicht die Diskussion allein bereits aus, um die Risikotoleranz zu verstehen. Auch Spannen sind zulässig, insbesondere dann, wenn sie mit den Annahmen präsentiert werden, anhand derer sie ermittelt wurden.
+**Auswirkungen von Datenverlust:** Fragen zum Ermitteln der Auswirkungen eines Risikos. Diese Fragen können schwer zu beantworten sein. Ideal ist es, die Auswirkungen in Zahlen auszudrücken, aber oft reicht die Diskussion allein bereits aus, um die Risikotoleranz zu verstehen. Auch Spannen sind zulässig, insbesondere dann, wenn sie mit den Annahmen präsentiert werden, anhand derer sie ermittelt wurden.
 
-- Werden Drittanbieter-Konformitätsanforderungen durch dieses Risiko verletzt?
-- Verletzt dieses Risiko interne Unternehmensrichtlinien?
+- Verstößt dieses Risiko möglicherweise gegen Drittanbieter-Konformitätsanforderungen?
+- Verstößt dieses Risiko möglicherweise gegen interne Unternehmensrichtlinien?
+- Kann dieses Risiko eine Gefahr für Leib und Leben darstellen oder zu Sachschäden führen?
 - Kann dieses Risiko Kunden oder Marktanteile kosten? Falls ja, sind diese Kosten quantifizierbar?
-- Kann dieses Risiko zu negativen Kundenerlebnissen führen? Beeinträchtigen diese Erlebnisse ggf. den Umsatz oder die Ertragsrealisierung?
+- Kann dieses Risiko zu negativen Kundenerlebnissen führen? Beeinträchtigen diese Erlebnisse ggf. den Absatz oder Umsatz?
 - Kann dieses Risiko eine gesetzliche Haftung herbeiführen? Falls ja, gibt es hierfür einen Präzendenzfall für zu leistenden Schadenersatz?
 - Können die Geschäftsvorgänge durch dieses Risiko zum Erliegen kommen? Falls ja, wie lang wäre der Betriebsausfall?
 - Kann dieses Risiko die Geschäftsvorgänge verlangsamen? Falls ja, inwieweit und für wie lange?
@@ -74,7 +75,7 @@ Diese grundlegenden Fragen führen zu vielen weiteren Fragen. Nachdem Sie einen 
 
 **Kosten für die Wiederherstellung:** Fragen zum Ermitteln der Kosten zur Beseitigung oder sonstigen Minimierung des Risikos. Diese Fragen können sehr direkt sein, insbesondere, wenn sie geballt präsentiert werden.
 
-- Gibt es eine klare Lösung? Was kostet sie?
+- Gibt es eine klare Lösung, und was kostet sie?
 - Gibt es Möglichkeiten, dieses Risiko zu vermeiden oder zu minimieren? In welchem Bereich liegen die Kosten für diese Lösungen?
 - Was wird vom Unternehmen benötigt, um eine optimale, klare Lösung auswählen zu können?
 - Was wird vom Unternehmen benötigt, um die Kosten zu überprüfen?

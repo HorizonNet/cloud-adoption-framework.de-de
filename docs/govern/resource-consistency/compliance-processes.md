@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Prozesse für die Compliance der Ressourcenkonsistenzrichtlinie
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5daec332aa4fdbc75e15bfd9948fe6db52935d20
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fd44ae6fcdc84efd42ea3f79719475a32ead3111
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032330"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223707"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>Prozesse für die Compliance der Ressourcenkonsistenzrichtlinie
 
@@ -60,6 +60,7 @@ Die folgenden Auslöser und Durchsetzungsmaßnahmen sind Beispiele, auf die Sie 
 - **Unterdimensionierte Ressource erkannt.** Ressourcen, bei denen erkannt wird, dass sie mehr als 80 % der CPU- oder Arbeitsspeicherkapazität nutzen, sollten automatisch zentral hochskaliert werden oder zusätzliche Ressourcen bereitstellen, um zusätzliche Kapazitäten bereitzustellen.
 - **Ressourcenerstellung ohne Tags.** Jede Anforderungen zum Erstellen einer Ressource ohne erforderliche Metatags wird automatisch abgelehnt.
 - **Ausfall kritischer Ressource erkannt.** IT-Mitarbeiter werden bei allen erkannten Ausfällen unternehmenskritischer Ressourcen benachrichtigt. Wenn sich der Ausfall nicht sofort beheben lässt, eskalieren Mitarbeiter das Problem und benachrichtigen Besitzer von Workloads und das Cloudgovernanceteam. Das Cloudgovernanceteam verfolgt das Problem bis zu seiner Lösung und aktualisiert die Anleitung, falls eine Richtlinienüberarbeitung erforderlich ist, um zukünftige Vorfälle zu verhindern.
+- **Konfigurationsabweichung.** Bei Erkennung von Ressourcen, die nicht den festgelegten Baselines entsprechen, sollten Warnungen ausgelöst sowie automatische Maßnahmen mithilfe von Konfigurationsverwaltungstools wie etwa Azure Automation, Chef, Puppet oder Ansible ergriffen werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 055c50ca2a934000b7e8d11927bc5ba1d4f95494
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d545b977a4c98692ba8503d5512b8cb0d0b7dd0d
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031782"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224195"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>Erstellen einer geschäftlichen Begründung für die Cloudmigration
 
@@ -22,7 +22,7 @@ Bei Cloudmigrationen können mit Maßnahmen zur Cloudtransformation frühzeitig 
 
 ## <a name="dispelling-cloud-migration-myths"></a>Ausräumen von Mythen zur Cloudmigration
 
-**Mythos: Cloud ist immer günstiger.** Es herrscht allgemein die Auffassung, dass der Betrieb eines Rechenzentrums in der Cloud immer kostengünstiger als der lokale Betrieb ist. Obwohl diese Annahme im allgemeinen zutreffen kann, ist dies nicht immer der Fall. Manchmal sind die Betriebskosten der Cloud höher. Diese höheren Kosten sind auf unzureichende Kostengovernance, falsch ausgerichtete Systemarchitekturen, Prozessduplizierung, ungewöhnliche Systemkonfigurationen oder höhere Personalkosten zurückzuführen. Glücklicherweise können Sie viele dieser Probleme beheben, um frühzeitig eine Rendite zu erzielen. Die Anleitung unter [Erstellen der geschäftlichen Begründung](#building-the-business-justification) enthält Informationen dazu, wie Sie diese Abstimmungsfehler erkennen und vermeiden können. Es kann auch hilfreich sein, wenn Sie sich die hier angegebenen weiteren Informationen zur Ausräumung von Mythen durchlesen.
+**Mythos: Die Cloud ist immer günstiger.** Es herrscht allgemein die Auffassung, dass der Betrieb eines Rechenzentrums in der Cloud immer kostengünstiger als der lokale Betrieb ist. Obwohl diese Annahme im allgemeinen zutreffen kann, ist dies nicht immer der Fall. Manchmal sind die Betriebskosten der Cloud höher. Diese höheren Kosten sind auf unzureichende Kostengovernance, falsch ausgerichtete Systemarchitekturen, Prozessduplizierung, ungewöhnliche Systemkonfigurationen oder höhere Personalkosten zurückzuführen. Glücklicherweise können Sie viele dieser Probleme beheben, um frühzeitig eine Rendite zu erzielen. Die Anleitung unter [Erstellen der geschäftlichen Begründung](#building-the-business-justification) enthält Informationen dazu, wie Sie diese Abstimmungsfehler erkennen und vermeiden können. Es kann auch hilfreich sein, wenn Sie sich die hier angegebenen weiteren Informationen zur Ausräumung von Mythen durchlesen.
 
 **Mythos: Alles sollte in die Cloud verlagert werden.** Es gibt einige geschäftliche Faktoren, die dazu führen können, dass Sie eine Hybridlösung wählen. Es ist ratsam, vor der Fertigstellung eines Geschäftsmodells zunächst eine erste quantitative Analyse durchzuführen. Dies ist in den [Artikeln zu digitalen Ressourcen](../digital-estate/5-rs-of-rationalization.md) beschrieben. Weitere Informationen zu den einzelnen quantitativen Faktoren der Rationalisierung finden Sie unter [Die fünf R der Rationalisierung](../digital-estate/5-rs-of-rationalization.md). Bei beiden Ansätzen werden einfach zu beschaffende Bestandsdaten und eine kurze quantitative Analyse verwendet, um Workloads oder Anwendungen zu identifizieren, die zu höheren Kosten in der Cloud führen können. Mit diesen Ansätzen können auch Abhängigkeiten oder Datenverkehrsmuster identifiziert werden, für die eine Hybridlösung erforderlich ist.
 

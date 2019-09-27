@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: c367bb500cf9271603cab07ac07649607bfc04a4
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 35a7d62236203dd916d99aea8bf67853c86df10a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024344"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224154"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Bereitstellen einer Migrationsinfrastruktur
 
@@ -496,7 +496,7 @@ Die VNETs in USA, Mitte sind in der folgenden Tabelle zusammengefasst.
 
 #### <a name="subnets-in-the-central-us-production-network-vnet-prod-cus"></a>Subnetze im Produktionsnetzwerk USA, Mitte (VNET-PROD-CUS)
 
-Parallel zum Produktionsnetzwerk in der primären Region USA, Osten 2 gibt es ein Produktionsnetzwerk in der sekundären Region USA, Mitte.
+Parallel zum Produktionsnetzwerk in der primären Region „USA, Osten 2“ gibt es ein Produktionsnetzwerk in der sekundären Region „USA, Mitte“.
 
 **Subnetz** | **CIDR** | **Adressen** | **In Subnetz**
 --- | --- | --- | ---

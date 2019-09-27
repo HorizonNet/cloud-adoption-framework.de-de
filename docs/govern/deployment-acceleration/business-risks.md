@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Lernen Sie als Bestandteil einer Cloud Governance-Strategie die Disziplin „Beschleunigung der Bereitstellung“ kennen.
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: feaf5a7f0f2622c2b2289fe81315ea9ccf2ada4e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d827b4de1c938180579303e60c6808d65fcd14a8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032448"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220724"
 ---
 # <a name="deployment-acceleration-motivations-and-business-risks"></a>Beschleunigung der Bereitstellung – Motivation und Geschäftsrisiken
 
@@ -22,7 +22,7 @@ In diesem Artikel werden die Gründe behandelt, die Kunden in der Regel im Rahme
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-deployment-acceleration-relevant"></a>Ist die Beschleunigung der Bereitstellung relevant?
+## <a name="deployment-acceleration-relevancy"></a>Relevanz der Bereitstellungsbeschleunigung
 
 Lokale Systeme werden häufig mit Basisimages oder Installationsskripts bereitgestellt. In der Regel ist eine weitere Konfiguration erforderlich, die möglicherweise aus mehreren Schritten besteht oder manuelle Eingriffe erfordert. Diese manuellen Prozesse sind fehleranfällig und verursachen oftmals „Konfigurationsabweichungen“, die eine zeitintensive Problembehandlung und Korrekturmaßnahmen erfordern.
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ec9263b1e1ab47e2018d86093a5198cdb1ac7b67
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: bede887bcb4589b286920a79016701961a04b8b6
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032504"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222241"
 ---
 # <a name="standard-enterprise-guide-improving-resource-consistency"></a>Standardunternehmensleitfaden: Verbessern der Ressourcenkonsistenz
 
@@ -84,31 +84,31 @@ Die folgenden Änderungen an der Richtlinie verringern die neuen Risiken und ver
 In diesem Abschnitt des Artikels wird der Governance-MVP-Entwurf so geändert, dass er neue Azure-Richtlinien und eine Implementierung von Azure Cost Management umfasst. Zusammen erfüllen diese beiden Entwurfsänderungen die neuen Richtlinienanweisungen des Unternehmens.
 
 1. Das Cloud Operations-Team definiert operative Überwachungstools und automatisierte Korrekturtools. Das Cloudgovernanceteam unterstützt diese Ermittlungsprozesse. In diesem Anwendungsfall hat das Cloud Operations-Team Azure Monitor als primäres Tool für die Überwachung unternehmenskritischer Anwendungen ausgewählt.
-1. Erstellen Sie in Azure DevOps ein Repository zur Speicherung und Versionsverwaltung für alle relevanten Resource Manager-Vorlagen und Skriptkonfigurationen.
-1. Azure -Tresorimplementierung:
-    1. Definieren Sie den Azure-Tresor für Sicherungs- und Wiederherstellungsvorgänge, und stellen Sie ihn bereit.
-    1. Erstellen Sie eine Resource Manager-Vorlage zum Erstellen eines Tresors in jedem Abonnement.
-1. Aktualisieren Sie Azure Policy für alle Abonnements:
+2. Erstellen Sie in Azure DevOps ein Repository zur Speicherung und Versionsverwaltung für alle relevanten Resource Manager-Vorlagen und Skriptkonfigurationen.
+3. Azure Recovery Services-Tresorimplementierung:
+    1. Definieren Sie einen Azure Recovery Services-Tresor für Sicherungs- und Wiederherstellungsvorgänge, und stellen Sie ihn bereit.
+    2. Erstellen Sie eine Resource Manager-Vorlage zum Erstellen eines Tresors in jedem Abonnement.
+4. Aktualisieren Sie Azure Policy für alle Abonnements:
     1. Überprüfen und erzwingen Sie die Wichtigkeits- und Datenklassifizierung für alle Abonnements, um Abonnements mit unternehmenskritischen Ressourcen zu identifizieren.
-    1. Überwachen und erzwingen Sie die ausschließliche Verwendung genehmigter Images.
-1. Azure Monitor-Implementierung:
-    1. Nachdem ein unternehmenskritisches Abonnement identifiziert wurde, erstellen Sie mit PowerShell einen Azure Monitor-Arbeitsbereich. Dies ist ein Prozess vor der Bereitstellung.
-    1. Während der Bereitstellungstests stellt das Cloud Operations-Team die erforderlichen Agents bereit und testet die Ermittlung.
-1. Aktualisieren Sie Azure Policy für alle Abonnements, die unternehmenskritische Anwendungen enthalten.
+    2. Überwachen und erzwingen Sie die ausschließliche Verwendung genehmigter Images.
+5. Azure Monitor-Implementierung:
+    1. Nachdem eine unternehmenskritische Workload identifiziert wurde, erstellen Sie einen Azure Monitor-Arbeitsbereich.
+    2. Während der Bereitstellungstests stellt das Cloud Operations-Team die erforderlichen Agents bereit und testet die Ermittlung.
+6. Aktualisieren Sie Azure Policy für alle Abonnements, die unternehmenskritische Anwendungen enthalten.
     1. Überwachen und erzwingen Sie die Anwendung einer NSG auf alle NICs und Subnetze. Netzwerke und IT-Sicherheit definieren die NSG.
-    1. Überwachen und erzwingen Sie die Verwendung genehmigter Netzwerksubnetze und VNETs für jede Netzwerkschnittstelle.
-    1. Überwachen und erzwingen Sie die Einschränkung benutzerdefinierter Routingtabellen.
-    1. Überwachen und erzwingen Sie die Bereitstellung von Azure Monitor-Agents für alle virtuellen Computer.
-    1. Überwachen und erzwingen Sie, dass der Azure-Tresor im Abonnement vorhanden ist.
-1. Firewallkonfiguration:
+    2. Überwachen und erzwingen Sie die Verwendung genehmigter Netzwerksubnetze und VNETs für jede Netzwerkschnittstelle.
+    3. Überwachen und erzwingen Sie die Einschränkung benutzerdefinierter Routingtabellen.
+    4. Überwachen und erzwingen Sie die Bereitstellung von Azure Monitor-Agents für alle virtuellen Computer.
+    5. Überprüfen Sie, ob Azure Recovery Services-Tresore im Abonnement vorhanden sind, und erzwingen Sie deren Bereitstellung.
+7. Firewallkonfiguration:
     1. Identifizieren Sie eine Konfiguration von Azure Firewall, die die Sicherheitsanforderungen erfüllt. Identifizieren Sie alternativ eine Appliance eines Drittanbieters, die mit Azure kompatibel ist.
     1. Erstellen Sie eine Resource Manager-Vorlage, um die Firewall mit den erforderlichen Konfigurationen bereitzustellen.
-1. Azure-Blaupause:
+8. Azure-Blaupause:
     1. Erstellen Sie eine neue Azure-Blaupause namens `protected-data`.
-    1. Fügen Sie der Blaupause die Firewall und die Azure-Tresorvorlagen hinzu.
-    1. Fügen Sie die neuen Richtlinien für Abonnements geschützter Daten hinzu.
-    1. Veröffentlichen Sie die Blaupause für alle Verwaltungsgruppen, die zum Hosten unternehmenskritischer Anwendungen bestimmt sind.
-    1. Wenden Sie die neue Blaupause zusammen mit vorhandenen Blaupausen auf die betroffenen Abonnements an.
+    2. Fügen Sie der Blaupause die Firewall und die Azure-Tresorvorlagen hinzu.
+    3. Fügen Sie die neuen Richtlinien für Abonnements geschützter Daten hinzu.
+    4. Veröffentlichen Sie die Blaupause für alle Verwaltungsgruppen, die zum Hosten unternehmenskritischer Anwendungen verwendet werden.
+    5. Wenden Sie die neue Blaupause zusammen mit vorhandenen Blaupausen auf die betroffenen Abonnements an.
 
 ## <a name="conclusion"></a>Zusammenfassung
 

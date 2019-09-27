@@ -4,25 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Erfahren Sie, wie Sie Prozesse festlegen, um die Einhaltung von Unternehmensrichtlinien sicherzustellen.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: eff80cb530141a64f706d046bb9f76319f03e3c1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f6104a3b2f5f2e68016623029ac0e7b71a5e35f1
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031430"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222048"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="establish-policy-adherence-processes"></a>Festlegen von Prozessen zur Einhaltung von Richtlinien
-
-<!---
-I've defined policies, I've provided an architecture guide. Now how do I monitor adherence to policy? If there is a violation, how do I enforce the policy?
---->
 
 Nachdem Sie Ihre Cloudrichtlinienanweisungen eingerichtet und ein erstes Entwurfshandbuch geschrieben haben, müssen Sie eine Strategie entwickeln, die sicherstellt, dass die Cloudbereitstellung konform zu Ihren Richtlinienanforderungen bleibt. Diese Strategie muss die fortlaufenden Überprüfungs- und Kommunikationsprozesse Ihres Cloudgovernanceteams einschließen, Kriterien für Handlungen bei Richtlinienverstößen festlegen und die Anforderungen für automatisierte Überwachungs- und Compliancesysteme definieren, die Verstöße erkennen und Aktionen zur Problembehebung auslösen.
 
@@ -57,6 +53,8 @@ Planen Sie, neue potenzielle Risiken auszuwerten, und aktualisieren Sie die Rich
 Zur Einhaltung der Richtlinien müssen die IT-Mitarbeiter und Entwickler die Richtlinienanforderungen, die ihre Zuständigkeitsbereiche betreffen, verstehen. Planen Sie Ressourcen für die Dokumentation von Entscheidungen und Anforderungen ein, und informieren Sie alle relevanten Teams über Entwurfshandbücher, die Ihre Richtlinienanforderungen unterstützen.
 
 Wenn sich Richtlinien ändern, aktualisieren Sie regelmäßig die Dokumentation und Schulungsmaterialien, und stellen Sie sicher, dass in den Schulungen der relevanten IT-Mitarbeiter aktualisierte Anforderungen und Anleitungen angesprochen werden.
+
+Auf Ihrem Weg in die Cloud empfiehlt es sich, von Zeit zu Zeit den Rat von Partnern einzuholen und professionelle Schulungsprogramme zu nutzen, um Ihr Team sowohl technisch als auch in Bezug auf Prozesse weiterzubilden. Darüber hinaus werden formale Zertifizierungen häufig als wertvolle Ergänzung Ihres Schulungsportfolios betrachtet und sollten daher in Betracht gezogen werden.
 
 ### <a name="establish-escalation-paths"></a>Einrichten von Eskalationspfaden
 

@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Beschleunigung der Bereitstellung – Metriken, Indikatoren und Risikotoleranz
 author: alexbuckgit
 ms.author: abuck
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5049b41abc03c5f59d0d750373b48a39b0638084
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d7a7965acb7b1ace74983c7d0e1e65c3d47b2cc5
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032201"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220710"
 ---
 # <a name="deployment-acceleration-metrics-indicators-and-risk-tolerance"></a>Beschleunigung der Bereitstellung – Metriken, Indikatoren und Risikotoleranz
 
-Dieser Artikel soll Ihnen bei der Quantifizierung der Geschäftsrisikotoleranz im Zusammenhang mit der Beschleunigung der Bereitstellung helfen. Das Definieren von Metriken und Indikatoren ermöglicht das Erstellen eines Geschäftsszenarios, mit dem Sie verstärkt auf die Ausgereiftheit der Disziplin „Beschleunigung der Bereitstellung“ setzen können.
+Dieser Artikel unterstützt Sie bei der Quantifizierung der Geschäftsrisikotoleranz im Zusammenhang mit der Beschleunigung der Bereitstellung. Das Definieren von Metriken und Indikatoren ermöglicht das Erstellen eines Geschäftsszenarios, mit dem Sie verstärkt auf die Ausgereiftheit der Disziplin „Beschleunigung der Bereitstellung“ setzen können.
 
 ## <a name="metrics"></a>metrics
 
@@ -34,7 +34,7 @@ Risiken im Zusammenhang mit der Beschleunigung der Bereitstellung beziehen sich 
 
 <!-- "en-us" location is required for the URL below. -->
 
-Denken Sie zu einem frühen Zeitpunkt der Entwicklung Ihrer Cloudeinführungsstrategie über eine Organisationskultur mit DevOps- oder [DevSecOps](https://www.microsoft.com/en-us/securityengineering/devsecops)-Vorgehensweisen nach. Herkömmliche IT-Organisationen in Unternehmen bilden oftmals siloartige Teams für Betrieb, Sicherheit und Entwicklung, die häufig nicht gut zusammenarbeiten, gelegentlich sogar kontraproduktiv oder den anderen feindlich gesinnt sind. Wenn Sie diese Herausforderungen zu einem frühen Zeitpunkt erkennen und wichtige Mitglieder der einzelnen Teams einbinden, können Sie für Flexibilität, aber auch für Sicherheit und eine gute Steuerung bei der Cloudeinführung sorgen.
+Herkömmliche IT-Organisationen in Unternehmen bilden oftmals siloartige Teams für Betrieb, Sicherheit und Entwicklung, die häufig nicht gut zusammenarbeiten, gelegentlich sogar kontraproduktiv oder den anderen feindlich gesinnt sind. Wenn Sie diese Herausforderungen zu einem frühen Zeitpunkt erkennen und wichtige Mitglieder der einzelnen Teams einbinden, können Sie für Flexibilität, aber auch für Sicherheit und eine gute Steuerung bei der Cloudeinführung sorgen. Denken Sie daher bei der Entwicklung Ihrer Cloudeinführungsstrategie frühzeitig über eine Organisationskultur mit DevOps- oder [DevSecOps](https://www.microsoft.com/en-us/securityengineering/devsecops)-Vorgehensweisen nach. 
 
 Identifizieren Sie zusammen mit Ihrem DevSecOps-Team und der Unternehmensführung die [Geschäftsrisiken](./business-risks.md) im Zusammenhang mit der Konfiguration, und bestimmen Sie anschließend eine akzeptable Baseline für die entsprechende Risikotoleranz. Dieser Abschnitt der Anleitungen aus dem Framework für die Cloudeinführung (Cloud Adoption Framework) enthält einige Beispiele. Die Risiken und Baselines in Ihrem Unternehmen bzw. bei Ihren Bereitstellungen weichen im Detail wahrscheinlich davon ab.
 

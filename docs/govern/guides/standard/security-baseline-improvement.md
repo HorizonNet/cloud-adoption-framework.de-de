@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Standardunternehmensleitfaden: Verbessern der Disziplin „Sicherheitsbaseline“'
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a9b67b20f0f9169f5da7f941615612218ef29f94
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 37d47b0a190506f84ed2b973b44ca731e70ad664
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032503"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223784"
 ---
 # <a name="standard-enterprise-guide-improve-the-security-baseline-discipline"></a>Standardunternehmensleitfaden: Verbessern der Disziplin „Sicherheitsbaseline“
 
@@ -71,7 +71,7 @@ Die folgenden Änderungen an der Richtlinie verringern die neuen Risiken und ver
 
 1. Alle bereitgestellten Ressourcen müssen nach Wichtigkeit und Datenklassifizierung kategorisiert werden. Vor der Bereitstellung in der Cloud müssen die Klassifizierungen durch das Cloudgovernanceteam und die Besitzer der Anwendung überprüft werden.
 2. Anwendungen, die geschützte Daten speichern oder darauf zugreifen, sind anders zu verwalten als Anwendungen, die nicht mit geschützten Daten arbeiten. Zumindest müssen sie segmentiert werden, um einen unbeabsichtigten Zugriff auf geschützte Daten zu vermeiden.
-3. Alle geschützten Daten müssen im Ruhezustand verschlüsselt sein.
+3. Alle geschützten Daten müssen im Ruhezustand verschlüsselt sein. Hierbei handelt es sich um die Standardeinstellung für alle Azure Storage-Konten. Unter Umständen sind jedoch weitere Verschlüsselungsstrategien erforderlich – einschließlich Verschlüsselung der Daten im Speicherkonto, Verschlüsselung von virtuellen Computern sowie Verschlüsselung auf Datenbankebene bei Verwendung von SQL auf einem virtuellen Computer (TDE und Spaltenverschlüsselung).
 4. Erhöhte Berechtigungen in einem Segment mit geschützten Daten müssen eine Ausnahme bleiben. Solche Ausnahmen werden vom Cloudgovernanceteam erfasst und regelmäßig überwacht.
 5. Netzwerksubnetze mit geschützten Daten müssen von allen anderen Subnetzen isoliert werden. Der Netzwerkdatenverkehr zwischen Subnetzen mit geschützten Daten wird regelmäßig überwacht.
 6. Kein Subnetz mit geschützten Daten ist direkt über das öffentliche Internet oder datencenterübergreifend zugänglich. Der Zugriff auf diese Subnetze muss über zwischengeschaltete Subnetze geroutet werden. Der gesamte Zugriff auf diese Subnetze muss über eine Firewalllösung erfolgen, die Funktionen zur Paketüberprüfung und Sperrfunktionen durchführen kann.
@@ -93,35 +93,35 @@ Die folgenden Änderungen an der Richtlinie verringern die neuen Risiken und ver
 Der Governance-MVP-Entwurf wird so geändert, dass er neue Azure-Richtlinien und eine Azure Cost Management-Implementierung umfasst. Zusammen erfüllen diese beiden Entwurfsänderungen die neuen Richtlinienanweisungen des Unternehmens.
 
 1. Die Netzwerk- und IT-Sicherheitsteams definieren die Netzwerkanforderungen. Das Cloudgovernanceteam unterstützt die Kommunikation.
-1. Das Identitäts- und IT-Sicherheitsteam definiert die Identitätsanforderungen und nimmt alle erforderlichen Änderungen an der lokalen Active Directory-Implementierung vor. Das Cloudgovernanceteam überprüft die Änderungen.
-1. Erstellen Sie in Azure DevOps ein Repository zur Speicherung und Versionsverwaltung für alle relevanten Azure Resource Manager-Vorlagen und Skriptkonfigurationen.
-1. Implementierung von Azure Security Center:
+2. Das Identitäts- und IT-Sicherheitsteam definiert die Identitätsanforderungen und nimmt alle erforderlichen Änderungen an der lokalen Active Directory-Implementierung vor. Das Cloudgovernanceteam überprüft die Änderungen.
+3. Erstellen Sie in Azure DevOps ein Repository zur Speicherung und Versionsverwaltung für alle relevanten Azure Resource Manager-Vorlagen und Skriptkonfigurationen.
+4. Implementierung von Azure Security Center:
     1. Konfigurieren Sie Azure Security Center für jede Verwaltungsgruppe, die Klassifizierungen geschützter Daten enthält.
-    1. Legen Sie automatische Bereitstellung standardmäßig auf „Aktiviert“ fest, um Patchingkompatibilität zu gewährleisten.
-    1. Richten Sie Sicherheitskonfigurationen von Betriebssystemen ein. Das IT-Sicherheitsteam definiert die Konfiguration.
-    1. Unterstützen Sie das IT-Sicherheitsteam bei der anfänglichen Verwendung von Security Center. Überführen Sie die Nutzung von Security Center in das IT-Sicherheitsteam, behalten Sie jedoch den Zugriff, um die Governance kontinuierlich zu verbessern.
-    1. Erstellen Sie eine Resource Manager-Vorlage, die die erforderlichen Änderungen für die Security Center-Konfiguration in einem Abonnement widerspiegelt.
-1. Aktualisieren Sie Azure-Richtlinien für alle Abonnements:
+    2. Legen Sie automatische Bereitstellung standardmäßig auf „Aktiviert“ fest, um Patchingkompatibilität zu gewährleisten.
+    3. Richten Sie Sicherheitskonfigurationen von Betriebssystemen ein. Das IT-Sicherheitsteam definiert die Konfiguration.
+    4. Unterstützen Sie das IT-Sicherheitsteam bei der anfänglichen Verwendung von Security Center. Überführen Sie die Nutzung von Security Center in das IT-Sicherheitsteam, behalten Sie jedoch den Zugriff, um die Governance kontinuierlich zu verbessern.
+    5. Erstellen Sie eine Resource Manager-Vorlage, die die erforderlichen Änderungen für die Security Center-Konfiguration in einem Abonnement widerspiegelt.
+5. Aktualisieren Sie Azure-Richtlinien für alle Abonnements:
     1. Überprüfen und erzwingen Sie die Wichtigkeits- und Datenklassifizierung für alle Verwaltungsgruppen und Abonnements, um Abonnements mit Klassifizierungen geschützter Daten zu identifizieren.
-    1. Überwachen und erzwingen Sie die ausschließliche Verwendung genehmigter Images.
-1. Aktualisieren Sie Azure-Richtlinien für alle Abonnements, die Klassifizierungen geschützter Daten enthalten:
+    2. Überwachen und erzwingen Sie die ausschließliche Verwendung genehmigter Images.
+6. Aktualisieren Sie Azure-Richtlinien für alle Abonnements, die Klassifizierungen geschützter Daten enthalten:
     1. Überwachen und erzwingen Sie die ausschließliche Verwendung von Azure RBAC-Standardrollen.
-    1. Überwachen und erzwingen Sie die Verschlüsselung für alle Speicherkonten und Dateien im Ruhezustand auf einzelnen Knoten.
-    1. Überwachen und erzwingen Sie die Anwendung einer NSG auf alle NICs und Subnetze. Die Netzwerk- und IT-Sicherheitsteams definieren die NSG.
-    1. Überwachen und erzwingen Sie die Verwendung eines genehmigten Netzwerksubnetzes und VNETs pro Netzwerkschnittstelle.
-    1. Überwachen und erzwingen Sie die Einschränkung benutzerdefinierter Routingtabellen.
-    1. Wenden Sie die integrierten Richtlinien für die Gastkonfiguration wie folgt an:
+    2. Überwachen und erzwingen Sie die Verschlüsselung für alle Speicherkonten und Dateien im Ruhezustand auf einzelnen Knoten.
+    3. Überwachen und erzwingen Sie die Anwendung einer NSG auf alle NICs und Subnetze. Die Netzwerk- und IT-Sicherheitsteams definieren die NSG.
+    4. Überwachen und erzwingen Sie die Verwendung eines genehmigten Netzwerksubnetzes und VNETs pro Netzwerkschnittstelle.
+    5. Überwachen und erzwingen Sie die Einschränkung benutzerdefinierter Routingtabellen.
+    6. Wenden Sie die integrierten Richtlinien für die Gastkonfiguration wie folgt an:
         1. Überwachen Sie die Verwendung sicherer Kommunikationsprotokolle auf Windows-Webservern.
-        1. Überwachen Sie die korrekte Festlegung der Kennwortsicherheitseinstellungen auf Linux- und Windows-Computern.
-1. Firewallkonfiguration:
+        2. Überwachen Sie die korrekte Festlegung der Kennwortsicherheitseinstellungen auf Linux- und Windows-Computern.
+7. Firewallkonfiguration:
     1. Identifizieren Sie eine Konfiguration von Azure Firewall, die die erforderlichen Sicherheitsanforderungen erfüllt. Identifizieren Sie alternativ eine kompatible Appliance eines Drittanbieters, die mit Azure kompatibel ist.
-    1. Erstellen Sie eine Resource Manager-Vorlage, um die Firewall mit den erforderlichen Konfigurationen bereitzustellen.
-1. Azure-Blaupause:
+    2. Erstellen Sie eine Resource Manager-Vorlage, um die Firewall mit den erforderlichen Konfigurationen bereitzustellen.
+8. Azure-Blaupause:
     1. Erstellen Sie eine neue Blaupause mit dem Namen `protected-data`.
-    1. Fügen Sie der Blaupause die Firewall und die Azure Security Center-Vorlagen hinzu.
-    1. Fügen Sie die neuen Richtlinien für Abonnements geschützter Daten hinzu.
-    1. Veröffentlichen Sie die Blaupause für jede Verwaltungsgruppe, die aktuell plant, geschützte Daten zu hosten.
-    1. Wenden Sie die neue Blaupause auf jedes betroffene Abonnement zusätzlich zu den vorhandenen Blaupausen an.
+    2. Fügen Sie der Blaupause die Firewall und die Azure Security Center-Vorlagen hinzu.
+    3. Fügen Sie die neuen Richtlinien für Abonnements geschützter Daten hinzu.
+    4. Veröffentlichen Sie die Blaupause für jede Verwaltungsgruppe, die aktuell plant, geschützte Daten zu hosten.
+    5. Wenden Sie die neue Blaupause auf jedes betroffene Abonnement zusätzlich zu den vorhandenen Blaupausen an.
 
 ## <a name="conclusion"></a>Zusammenfassung
 

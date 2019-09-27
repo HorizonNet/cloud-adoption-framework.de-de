@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Vorlage für Ressourcenkonsistenz
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 372f9ca64b87b51b1404d4c47e07e7aa638191b6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 831c40b2bf8f7e8fb64fc6cddcf8d6817376be00
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031286"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221905"
 ---
 # <a name="resource-consistency-template"></a>Vorlage für Ressourcenkonsistenz
 
-Der erste Schritt zum Implementieren einer Änderung ist das Kommunizieren der gewünschten Änderung. Dasselbe gilt für Änderungen der Governancemethoden. Die nachstehende Vorlage dient als Ausgangspunkt für das Dokumentieren und Kommunizieren von Richtlinienanweisungen, mit denen die IT-Vorgänge und die Verwaltung in der Cloud gesteuert werden.
+Der erste Schritt bei der Implementierung einer Änderung besteht darin, das gewünschte Ergebnis zu kommunizieren. Dasselbe gilt für Änderungen der Governancemethoden. Die nachstehende Vorlage dient als Ausgangspunkt für das Dokumentieren und Kommunizieren von Richtlinienanweisungen, mit denen die IT-Vorgänge und die Verwaltung in der Cloud gesteuert werden.
 
 Während Ihre Planung voranschreitet, verwenden Sie die Struktur dieser Vorlage als Modell für die Erfassung der Geschäftsrisiken, Risikotoleranzen, Complianceprozesse und Tools, die für die Definition der Richtlinienanweisungen zur Ressourcenkonsistenz Ihres Unternehmens erforderlich sind.
 

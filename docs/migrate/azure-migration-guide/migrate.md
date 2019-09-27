@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 4947f980bbcaa153e55af835c2e6892cf4e2dab3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d14ee6491e4fc804d6545c6708f1d27a44c83501
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022786"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71224078"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrieren von Objekten (Infrastruktur, Apps und Daten)
 
@@ -196,6 +196,14 @@ Weitere Informationen finden Sie unter
 
 - [Übersicht über den Assistenten für Datenbankexperimente](https://docs.microsoft.com/sql/dea/database-experimentation-assistant-overview)
 
+## <a name="cosmos-db-data-migration-tool"></a>Datenmigrationstool von Cosmos DB
+
+Das Datenmigrationstool von Azure Cosmos DB kann Daten aus verschiedenen Quellen in Azure Cosmos DB-Sammlungen und -Tabellen importieren. Sie können Daten aus JSON-Dateien, CSV-Dateien, SQL-, MongoDB-, Azure Table Storage-, Amazon DynamoDB- und sogar Azure Cosmos DB-SQL-API-Sammlungen importieren. Das Datenmigrationstool kann auch für die Migration von einer Sammlung mit einer einzelnen Partition zu einer Sammlung mit mehreren Partitionen für die SQL-API verwendet werden.
+
+Weitere Informationen finden Sie unter
+
+- [Migrieren Ihrer Daten zu Azure Cosmos DB mithilfe des Datenmigrationstools](https://docs.microsoft.com/en-us/azure/cosmos-db/import-data)
+
 # <a name="third-party-migration-toolstabthird-party-tools"></a>[Migrationstool von einem Drittanbieter](#tab/third-party-tools)
 
 Verschiedene Migrationstools von Drittanbietern und ISV-Dienste können während der Migration hilfreich sein. Alle bieten unterschiedliche Vorteile und Stärken. Zu diesen Tools zählen:
@@ -224,16 +232,28 @@ Movere ist eine Ermittlungslösung, die die notwendigen Daten und Erkenntnisse l
 
 [Weitere Informationen](https://www.movere.io)
 
+## <a name="cosmos-db-partners"></a>Cosmos DB-Partner
+
+Sie können aus einer Vielzahl erfahrener Systemintegratorpartner und Tools wählen, die Sie bei Ihren Azure Cosmos DB-Migrationen für Ihre NoSQL-Datenbankanforderungen unterstützen.
+
+[Weitere Informationen](https://docs.microsoft.com/en-us/azure/cosmos-db/partners-migration-cosmosdb#migration-tools)
+
 Besuchen Sie das [Azure Migration Center](https://azure.microsoft.com/migration/support), um Organisationen zu ermitteln, die verwendungsbereite Partnertechnologielösungen anbieten, die zu Ihren Migrationsszenarien passen, und erfahren Sie mehr über zusätzliche Migrationstools und Supportdienste von Drittanbietern.
+
+Im [Leitfaden zur Azure-Datenbankmigration](https://datamigration.microsoft.com) finden Sie Informationen zu verschiedenen Datenbankmigrationsoptionen sowie Schritt-für-Schritt-Anleitungen für native Tools und Partner.
 
 # <a name="project-management-toolstabproject-management-tools"></a>[Projektmanagementtools](#tab/project-management-tools)
 
-Bei Projekten, die nicht nachverfolgt und verwaltet werden, treten eher Probleme auf. Um ein erfolgreiches Ergebnis zu gewährleisten, empfehlen wir dringend, ein Projektmanagementtool zu verwenden. Es gibt viele verschiedene Tools, und Projektmanager in Ihrer Organisation haben möglicherweise bereits einen Favoriten. Microsoft bietet die folgenden Projektmanagementtools, die zusammenarbeiten können, um ein breiteres Funktionsspektrum bereitzustellen:
+Bei Projekten, die nicht nachverfolgt und verwaltet werden, treten eher Probleme auf. Um ein erfolgreiches Ergebnis zu gewährleisten, empfehlen wir dringend, ein Projektmanagementtool zu verwenden. Es gibt viele verschiedene Tools, und Projektmanager in Ihrer Organisation haben möglicherweise bereits einen Favoriten.
+
+Als Tool für die Projektverwaltung während einer Cloudmigration wird Azure DevOps empfohlen. Das Framework für die Cloudeinführung enthält ein Tool zur automatischen Bereitstellung einer Projektvorlage, um die Verwendung von Azure DevOps zu beschleunigen. Diese Vorlage umfasst die Aufgaben, die bei einer Migration üblicherweise ausgeführt werden. Stellen Sie die Vorlage wie [hier](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/template) beschrieben bereit. Anschließend können Sie die Vorlage ändern, um sie auf die zu migrierenden [Workloads](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/workloads) und [Ressourcen](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/assets) abzustimmen.
+
+Microsoft bietet außerdem folgende Projektverwaltungstools zur Erweiterung des Funktionsspektrums an:
 
 - [Microsoft Planner](https://tasks.office.com): Eine einfache, visuelle Möglichkeit zum Organisieren von Teamwork.
 - [Microsoft Project](https://products.office.com/project/project-and-portfolio-management-software): Projekt- und Portfolioverwaltung, Ressourcenkapazitätsverwaltung, Finanzmanagement, Timesheet- und Zeitplanverwaltung.
 - [Microsoft Teams](https://products.office.com/microsoft-teams): Tool für Zusammenarbeit und Kommunikation im Team. Teams integriert auch Planner und andere Tools, um die Zusammenarbeit zu verbessern.
-- [Azure DevOps](https://dev.azure.com): Mit Azure DevOps können Sie Ihre Infrastruktur als Code verwalten oder die Arbeitselemente und Boards für das Projektmanagement verwenden. Mit steigender Erfahrung können Sie die CI/CD-Funktionen nutzen.
+- [Azure DevOps](https://dev.azure.com): Die Planungsvorlage des Frameworks für die Cloudeinführung ist zur Verwendung von Azure DevOps nicht erforderlich. Sie können den Dienst ohne die Vorlage verwenden, um Ihre Infrastruktur als Code zu verwalten, oder die Projektverwaltung mithilfe der Arbeitselemente und Boards durchführen. Mit steigender Erfahrung können Sie die CI/CD-Funktionen nutzen.
 
 Dies sind nicht die einzigen verfügbaren Tools. Viele weitere Tools von Drittanbietern sind in der Projektmanagementcommunity weit verbreitet.
 

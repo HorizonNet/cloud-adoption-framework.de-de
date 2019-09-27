@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Kostenverwaltung: Motivationen und Geschäftsrisiken'
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 328352ac7ccd8cacbc92cc09ce0c07e2843afcf1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 72d97057484ff757c94ab24a886d1232f01e5ee3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031143"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223608"
 ---
 # <a name="cost-management-motivations-and-business-risks"></a>Kostenverwaltung: Motivationen und Geschäftsrisiken
 
@@ -37,9 +37,9 @@ Mit der Disziplin „Kostenverwaltung“ wird versucht, die wichtigsten Geschäf
 Die Risiken werden je nach Organisation unterschiedlich sein, aber die folgenden allgemeinen kostenbezogenen Risiken können als Ausgangspunkt für Diskussionen innerhalb Ihres Cloudgovernanceteams verwendet werden:
 
 - **Budgetkontrolle:** Wird die Budgetkontrolle vernachlässigt, kann dies zu überhöhten Ausgaben bei einem Cloudanbieter führen.
-- **Auslastungsverluste:** Nicht genutzte Vorabkäufe oder Vorabverpflichtungen können zu vergeudeten Investitionen führen.
+- **Auslastungsverluste:** Nicht genutzte Vorabkäufe oder Vorabverpflichtungen können zu Investitionsverlusten führen.
 - **Anomalien bei der Nutzung:** Unerwartete Spitzen in beide Richtungen können ein Hinweis auf unsachgemäße Nutzung sein.
-- **Überdimensionierte Ressourcen:** Wenn Ressourcen in einer Konfiguration bereitgestellt werden, die die Anforderungen einer Anwendung oder eines virtuellen Computers (VM) übersteigen, kann dies zu erhöhten Kosten und Verschwendung führen.
+- **Überdimensionierte Ressourcen:** Wenn Ressourcen in einer Konfiguration bereitgestellt werden, die die Anforderungen einer Anwendung oder eines virtuellen Computers (virtual machine, VM) übersteigen, kann dies zu Verschwendung führen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

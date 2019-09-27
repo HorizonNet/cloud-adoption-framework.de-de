@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Beispiele für Richtlinienanweisungen der Identitätsbaseline
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fae5bb8283487ef7724f872fc293def2c1a80071
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 39742436ab6c4a176e40ce8188c13cca55f23521
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031322"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222137"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>Beispiele für Richtlinienanweisungen der Identitätsbaseline
 
@@ -67,11 +67,11 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine identit
 
 **Richtlinienanweisung:** Die Bereitstellung von Anwendungen, für die eine Kundenauthentifizierung erforderlich ist, erfordert einen genehmigten Identitätsanbieter, der mit dem primären Identitätsanbieter für interne Benutzer kompatibel ist.
 
-**Potenzielle Entwurfsoptionen:** Implementieren Sie einen [Verbund mit Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed) zwischen Ihren internen Identitätsanbietern und den Identitätsanbietern von Kunden.
+**Potenzielle Entwurfsoptionen:** Implementieren Sie einen [Verbund mit Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed) zwischen Ihren internen Identitätsanbietern und den Identitätsanbietern von Kunden, oder nutzen Sie [Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b).
 
 ## <a name="identity-reviews"></a>Identitätsüberprüfungen
 
-**Technisches Risiko:** Im Laufe der Zeit können Geschäftsveränderungen, das Hinzufügen neuer Cloudbereitstellungen oder andere Sicherheitsaspekte die Risiken von autorisiertem Zugriff auf gesicherte Ressourcen erhöhen.
+**Technisches Risiko:** Im Zuge geschäftlicher Veränderungen können neu hinzugefügte Cloudbereitstellungen oder andere Sicherheitsaspekte das Risiko nicht autorisierter Zugriffe auf geschützte Ressourcen erhöhen.
 
 **Richtlinienanweisung:** Cloudgovernanceprozesse müssen vierteljährliche Überprüfungen durch Identitätsverwaltungsteams umfassen, um böswillige Akteure oder Nutzungsmuster zu identifizieren, die durch die Cloudressourcenkonfiguration verhindert werden sollten.
 

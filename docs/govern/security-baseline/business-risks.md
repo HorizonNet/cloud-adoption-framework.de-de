@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Sicherheitsbaseline: Motivationen und Geschäftsrisiken'
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a77df6b190db7f9fd5f44e233e175670ff7f4855
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 937eb35c07996e57bc51f85090f8e1fd136848f8
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031855"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222286"
 ---
 # <a name="security-baseline-motivations-and-business-risks"></a>Sicherheitsbaseline: Motivationen und Geschäftsrisiken
 
@@ -22,7 +22,7 @@ In diesem Artikel werden die Gründe beschrieben, warum Kunden typischerweise ei
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="is-a-security-baseline-relevant"></a>Ist eine Sichertheitsbaseline relevant?
+## <a name="security-baseline-relevancy"></a>Relevanz der Sicherheitsbaseline
 
 Sicherheit ist ein Hauptanliegen jeder IT-Organisation. Cloudbereitstellungen weisen viele der gleichen Sicherheitsrisiken auf wie Workloads, die in herkömmlichen lokalen Rechenzentren gehostet werden. Aufgrund der Art der öffentlichen Cloudplattformen, bei denen kein direktes Eigentum an der physischen Hardware zum Speichern und Ausführen Ihrer Workloads besteht, erfordert die Cloudsicherheit eigene Richtlinien und Prozesse.
 

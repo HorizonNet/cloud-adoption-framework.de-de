@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Ressourcenkonsistenz“'
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/05/2019
+ms.date: 09/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7e10f9262e7b29df98e2341cbae0ef05f85cd954
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9875fb2ebc6948d22ac6eaf350f9784b61fd4dc3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032391"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71223818"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Ressourcenkonsistenz“
 
@@ -65,7 +65,7 @@ Die folgenden Änderungen an der Richtlinie verringern die neuen Risiken und ver
 5. Ferner muss mit den Governancetools überprüft werden, ob für alle unternehmenskritischen Anwendungen oder geschützten Daten Protokolldaten mit dem passenden Protokolliergrad erfasst werden.
 6. Der Governanceprozess muss überprüfen, ob für unternehmenskritische Anwendungen und geschützte Daten die Sicherung, Wiederherstellung und Einhaltung von SLAs ordnungsgemäß implementiert sind.
 7. Mit den Governancetools muss die Bereitstellung virtueller Computer ausschließlich auf genehmigte Images eingeschränkt werden.
-8. Die Governancetools müssen erzwingen, dass für alle bereitgestellten Ressourcen, die unternehmenskritische Anwendungen unterstützen, automatische Updates **verhindert** werden. Verstöße müssen von Betriebsmanagementteams überprüft und in Übereinstimmung mit den Betriebsrichtlinien beseitigt werden. Ressourcen, die nicht automatisch aktualisiert werden, müssen in Prozesse einbezogen werden, die IT Operations unterstehen.
+8. Die Governancetools müssen erzwingen, dass für alle bereitgestellten Ressourcen, die unternehmenskritische Anwendungen unterstützen, automatische Updates **verhindert** werden. Verstöße müssen von Betriebsmanagementteams überprüft und in Übereinstimmung mit den Betriebsrichtlinien beseitigt werden. Ressourcen, die nicht automatisch aktualisiert werden, müssen in Prozesse des IT-Betriebs einbezogen werden, um eine schnelle und effektive Aktualisierung dieser Server zu gewährleisten.
 9. Mit Governancetools muss die Kennzeichnung (Tagging) im Hinblick auf Kosten, Kritikalität, SLA, Anwendung und Datenklassifizierung überprüft werden. Alle Werte müssen sich an vordefinierten Werten ausrichten, die vom Cloudgovernanceteam verwaltet werden.
 10. Governanceprozesse müssen Überwachungen zum Bereitstellungszeitpunkt und nachfolgend in regelmäßigen Zyklen umfassen, um für alle Ressourcen Konsistenz zu gewährleisten.
 11. Trends und Exploits, die mögliche Auswirkungen auf Cloudbereitstellungen haben, müssen vom Sicherheitsteam regelmäßig überprüft werden, damit Updates für in der Cloud verwendete Sicherheitsbaselinetools bereitgestellt werden.
@@ -85,25 +85,25 @@ Nach den Erfahrungen mit diesem fiktiven Beispiel wird davon ausgegangen, dass d
 
 1. Als externe Abhängigkeit muss das Cloud Operations-Team Tools für die Betriebsüberwachung, BCDR-Tools (Business Continuity/Disaster Recovery) und Tools zur automatisierten Wartung definieren. Damit kann das Cloudgovernanceteam die erforderlichen Ermittlungsvorgänge unterstützen.
     1. In diesem Anwendungsfall hat das Cloud Operations-Team Azure Monitor als primäres Tool für die Überwachung unternehmenskritischer Anwendungen ausgewählt.
-    1. Das Team sich ferner für Azure Site Recovery als primäres BCDR-Tool entschieden.
-1. Azure Site Recovery-Implementierung:
-    1. Definieren Sie den Azure-Tresor für Sicherungs- und Wiederherstellungsvorgänge, und stellen Sie ihn bereit.
-    1. Erstellen Sie eine Vorlage der Azure-Ressourcenverwaltung zur Erstellung eines Tresors in jedem Abonnement.
-1. Azure Monitor-Implementierung:
-    1. Nachdem ein unternehmenskritisches Abonnement ermittelt wurde, kann mit PowerShell ein Log Analytics-Arbeitsbereich erstellt werden. Dies ist ein Prozess vor der Bereitstellung.
+    2. Das Team sich ferner für Azure Site Recovery als primäres BCDR-Tool entschieden.
+2. Azure Site Recovery-Implementierung:
+    1. Definieren Sie einen Azure  Site Recovery-Tresor für Sicherungs- und Wiederherstellungsvorgänge, und stellen Sie ihn bereit.
+    2. Erstellen Sie eine Vorlage der Azure-Ressourcenverwaltung zur Erstellung eines Tresors in jedem Abonnement.
+3. Azure Monitor-Implementierung:
+    1. Nachdem ein unternehmenskritisches Abonnement ermittelt wurde, kann ein Log Analytics-Arbeitsbereich erstellt werden.
 
 **Individuelles Abonnement zur Cloudeinführung:** Mit den folgenden Maßnahmen stellen Sie sicher, dass jedes Abonnement von der Überwachungslösung ermittelbar und zur Aufnahme in BCDR-Praktiken bereit ist.
 
 1. Azure-Richtlinie für unternehmenskritische Knoten:
     1. Überwachen und erzwingen Sie die ausschließliche Verwendung von Standardrollen.
-    1. Überwachen und erzwingen Sie die Anwendung von Verschlüsselung für alle Speicherkonten.
-    1. Überwachen und erzwingen Sie die Verwendung eines genehmigten Netzwerksubnetzes und VNets pro Netzwerkschnittstelle.
-    1. Überwachen und erzwingen Sie die Einschränkung benutzerdefinierter Routingtabellen.
-    1. Überwachen und erzwingen Sie die Bereitstellung von Log Analytics-Agents für virtuelle Windows- und Linux-Computer.
+    2. Überwachen und erzwingen Sie die Anwendung von Verschlüsselung für alle Speicherkonten.
+    3. Überwachen und erzwingen Sie die Verwendung eines genehmigten Netzwerksubnetzes und VNets pro Netzwerkschnittstelle.
+    4. Überwachen und erzwingen Sie die Einschränkung benutzerdefinierter Routingtabellen.
+    5. Überwachen und erzwingen Sie die Bereitstellung von Log Analytics-Agents für virtuelle Windows- und Linux-Computer.
 2. Azure-Blaupause:
     1. Erstellen Sie eine Blaupause mit dem Namen `mission-critical-workloads-and-protected-data`. Diese Blaupause betrifft Ressourcen, in Ergänzung zur Blaupause der geschützten Daten.
-    1. Fügen Sie der Blaupause die neuen Azure-Richtlinien hinzu.
-    1. Wenden Sie die Blaupause auf jedes Abonnement an, von dem angenommen wird, dass es eine unternehmenskritische Anwendung hostet.
+    2. Fügen Sie der Blaupause die neuen Azure-Richtlinien hinzu.
+    3. Wenden Sie die Blaupause auf jedes Abonnement an, von dem angenommen wird, dass es eine unternehmenskritische Anwendung hostet.
 
 ## <a name="conclusion"></a>Zusammenfassung
 

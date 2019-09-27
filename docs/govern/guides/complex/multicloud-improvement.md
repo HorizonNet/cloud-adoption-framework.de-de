@@ -4,23 +4,23 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Leitfaden für große Unternehmen: Multi-Cloud-Verbesserung'
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6f015fcc7a0cb4000502d90ff971341fd6d26ca5
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9e7b968683e2ab7295b4178cb8b7f9fbf43e33b1
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031435"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220610"
 ---
 # <a name="large-enterprise-guide-multicloud-improvement"></a>Leitfaden für große Unternehmen: Multi-Cloud-Verbesserung
 
 ## <a name="advancing-the-narrative"></a>Fortführen der Geschichte
 
-Microsoft ist sich bewusst, dass Kunden für bestimmte Zwecke mehrere Clouds nutzen. Das fiktive Unternehmen in diesem Leitfaden bildet da keine Ausnahme. Parallel zur Einführung von Azure hat der geschäftliche Erfolg zur Übernahme eines kleinen, aber ergänzenden Unternehmens geführt. Das Unternehmen führt sämtliche IT-Vorgänge bei einem anderen Cloudanbieter aus.
+Microsoft ist sich bewusst, dass Kunden unter Umständen mehrere Clouds für bestimmte Zwecke einführen. Das fiktive Unternehmen in diesem Leitfaden bildet da keine Ausnahme. Parallel zur Einführung von Azure hat der geschäftliche Erfolg zur Übernahme eines kleinen, aber ergänzenden Unternehmens geführt. Das Unternehmen führt sämtliche IT-Vorgänge bei einem anderen Cloudanbieter aus.
 
 In diesem Artikel wird beschrieben, wie sich die Dinge ändern, wenn die neue Organisation integriert wird. Im Rahmen der Geschichte wird davon ausgegangen, dass dieses Unternehmen alle Governanceiterationen abgeschlossen hat, die in diesem Governanceleitfaden beschrieben wurden.
 
@@ -64,23 +64,23 @@ In diesem Abschnitt des Artikels wird der Governance-MVP-Entwurf so verbessert, 
 
 1. Verbinden der Netzwerke: Vom Netzwerk- und IT-Sicherheitsteam mit Unterstützung durch Governance durchgeführt.
     1. Das Hinzufügen einer Verbindung vom MPLS- oder Mietleitungsanbieter zur neuen Cloud bewirkt die Integration der Netzwerke. Über das Hinzufügen von Routingtabellen und Firewallkonfigurationen werden der Zugriff und der Datenverkehr zwischen den Umgebungen gesteuert.
-1. Konsolidieren der Identitätsanbieter: Abhängig von den Workloads, die in der sekundären Cloud gehostet werden, gibt es mehrere Optionen für das Zusammenführen der Identitätsanbieter. Im Folgenden finden Sie einige Beispiele:
+2. Konsolidieren der Identitätsanbieter: Abhängig von den Workloads, die in der sekundären Cloud gehostet werden, gibt es mehrere Optionen für das Zusammenführen der Identitätsanbieter. Im Folgenden finden Sie einige Beispiele:
     1. Für Anwendungen mit einer Authentifizierung per OAuth 2 können Benutzer von Active Directory in der sekundären Cloud einfach zum vorhandenen Azure AD-Mandanten repliziert werden.
-    1. Im anderen Extremfall würde ein Partnerverbund zwischen den zwei lokalen Identitätsanbietern die Replikation der Benutzer aus den neuen Active Directory-Domänen nach Azure ermöglichen.
-1. Hinzufügen von Ressourcen zu Azure Site Recovery:
+    2. Im anderen Extremfall würde ein Partnerverbund zwischen den zwei lokalen Identitätsanbietern die Replikation der Benutzer aus den neuen Active Directory-Domänen nach Azure ermöglichen.
+3. Hinzufügen von Ressourcen zu Azure Site Recovery:
     1. Azure Site Recovery wurde von Anfang an als Hybrid Cloud- und Multi-Cloud-Tool entwickelt.
-    1. Virtuelle Computer in der sekundären Cloud können möglicherweise über die gleichen Azure Site Recovery-Prozesse geschützt werden, die auch für lokale Ressourcen verwendet werden.
-1. Fügen Sie Azure Cost Management Ressourcen hinzu.
+    2. Virtuelle Computer in der sekundären Cloud können möglicherweise über die gleichen Azure Site Recovery-Prozesse geschützt werden, die auch für lokale Ressourcen verwendet werden.
+4. Fügen Sie Azure Cost Management Ressourcen hinzu.
     1. Azure Cost Management wurde von Anfang an als Multi-Cloud-Tool entwickelt.
-    1. Virtuelle Computer in der sekundären Cloud sind bei einigen Cloudanbietern eventuell mit Azure Cost Management kompatibel. Es können zusätzliche Kosten anfallen.
-1. Hinzufügen von Ressourcen zu Azure Monitor:
+    2. Virtuelle Computer in der sekundären Cloud sind bei einigen Cloudanbietern eventuell mit Azure Cost Management kompatibel. Es können zusätzliche Kosten anfallen.
+5. Hinzufügen von Ressourcen zu Azure Monitor:
     1. Azure Monitor wurde von Anfang an als ein Hybrid Cloud-Tool konzipiert.
-    1. Virtuelle Computer in der sekundären Cloud sind möglicherweise mit Azure Monitor-Agents kompatibel, sodass sie für die Überwachung der Abläufe in Azure Monitor eingebunden werden können.
-1. Tools für die Durchsetzung von Governance.
+    2. Virtuelle Computer in der sekundären Cloud sind möglicherweise mit Azure Monitor-Agents kompatibel, sodass sie für die Überwachung der Abläufe in Azure Monitor eingebunden werden können.
+6. Tools für die Durchsetzung von Governance.
     1. Die Durchsetzung von Governance ist cloudspezifisch.
-    1. Die Unternehmensrichtlinien, die im Governanceleitfaden etabliert wurden, sind hingegen nicht cloudspezifisch. Obwohl die Implementierung von Cloud zu Cloud variieren kann, können die Richtlinienanweisungen auf den sekundären Anbieter angewandt werden.
+    2. Die Unternehmensrichtlinien, die im Governanceleitfaden etabliert wurden, sind hingegen nicht cloudspezifisch. Obwohl die Implementierung von Cloud zu Cloud variieren kann, können die Richtlinienanweisungen auf den sekundären Anbieter angewandt werden.
 
-Mit zunehmender Einführung der Multi-Cloud-Umgebung schreitet auch der oben beschriebene Governanceentwurf voran.
+Die Einführung mehrerer Clouds sollte auf Bereiche beschränkt werden, in denen dies aus technischen oder speziellen geschäftlichen Gründen erforderlich ist. Eine zunehmende Einführung mehrerer Clouds hat nämlich auch eine höhere Komplexität sowie höhere Sicherheitsrisiken zur Folge.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

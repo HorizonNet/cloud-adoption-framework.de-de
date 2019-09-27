@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Erläuterung des Konzepts „Sicherheitsbaseline“ in Bezug auf Cloud Governance.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 03d8e9cf2a5e4679b61a318aeee41b982f08ac51
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2a691223ccb3e6264b53fbf0e018d303cbcf091a
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031928"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222809"
 ---
 # <a name="security-baseline-template"></a>Vorlage für Sicherheitsbaseline
 
-Der erste Schritt zum Implementieren einer Änderung ist das Kommunizieren der gewünschten Änderung. Dasselbe gilt für Änderungen der Governancemethoden. Die generische Vorlage unten dient als Ausgangspunkt für das Dokumentieren und Kommunizieren von Richtlinienanweisungen, die für sicherheitsbezogene Probleme in der Cloud gelten.
+Der erste Schritt bei der Implementierung einer Änderung besteht darin, das gewünschte Ergebnis zu kommunizieren. Dasselbe gilt für Änderungen der Governancemethoden. Die Vorlage weiter unten dient als Ausgangspunkt für das Dokumentieren und Kommunizieren von Richtlinienanweisungen, die für sicherheitsbezogene Probleme in der Cloud gelten.
 
 Während Ihre Planung voranschreitet, verwenden Sie die Struktur dieser Vorlage als Modell für die Erfassung der Geschäftsrisiken, Risikotoleranzen, Complianceprozesse und Tools, die für die Definition der Richtlinienanweisungen zur Sicherheitsbaseline Ihres Unternehmens erforderlich sind.
 

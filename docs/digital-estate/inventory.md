@@ -8,12 +8,12 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 6b6bbfef4f9e404433119d412cd4bf625cd3b480
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5c7473fd5966f871bbbeef7dd2e42826b42cecf3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023498"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222603"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>Erfassen von Bestandsdaten für digitale Ressourcen
 
@@ -28,6 +28,9 @@ Die Bestandsdaten zur Unterstützung eines digitalen Umfelds sind abhängig von 
 - **Anwendungsinnovationen:** Auch bei aktivierter Cloud beginnen Anwendungsinnovationen immer mit dem Kunden. Dabei hat es sich bewährt, zunächst die gesamte Benutzererfahrung zu erfassen. Durch den Abgleich dieser Erfassung mit Anwendungen, APIs, Daten und anderen Ressourcen entsteht ein detaillierter Bestand für die Analyse.
 
 - **Dateninnovationen:** Bei cloudfähigen Dateninnovationen liegt der Fokus auf dem Produkt oder Dienst. Eine Bestandsaufnahme umfasst auch eine Zuordnung der Möglichkeiten zur Unterbrechung des Markts sowie der benötigten Funktionen.
+
+- **Sicherheit**: Auf der Grundlage des Bestands können die Ressourcen der Organisation bewertet, geschützt und überwacht werden.
+
 
 ## <a name="accuracy-and-completeness-of-an-inventory"></a>Genauigkeit und Vollständigkeit eines Bestands
 

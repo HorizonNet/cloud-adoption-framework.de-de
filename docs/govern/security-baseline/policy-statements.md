@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Beispiele für Richtlinienanweisungen der Sicherheitsbaseline
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 253646b16d98a35c8cae8eb7f5c57aa60d55d580
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f92f3846f0282123fab8049dd47227db0843d955
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032146"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221654"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Beispiele für Richtlinienanweisungen der Sicherheitsbaseline
 
@@ -40,7 +40,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine sicherh
 
 **Richtlinienanweisung:** Alle geschützten Daten müssen im Ruhezustand verschlüsselt sein.
 
-**Potenzielle Entwurfsoption:** Im Artikel [Übersicht über die Azure-Verschlüsselung](https://docs.microsoft.com/azure/security/security-azure-encryption-overview) finden Sie Informationen darüber, wie die Verschlüsselung für ruhende Daten auf der Azure-Plattform ausgeführt wird.
+**Potenzielle Entwurfsoption:** Im Artikel [Übersicht über die Azure-Verschlüsselung](https://docs.microsoft.com/azure/security/security-azure-encryption-overview) finden Sie Informationen darüber, wie die Verschlüsselung für ruhende Daten auf der Azure-Plattform ausgeführt wird. Ziehen Sie außerdem weitere Steuerungsoptionen in Betracht – etwa im Zusammenhang mit der Kontodatenverschlüsselung oder der Kontrolle über die Änderungsmöglichkeiten für Speicherkontoeinstellungen.
 
 ## <a name="network-isolation"></a>Netzwerkisolation
 
@@ -56,15 +56,15 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine sicherh
 
 **Richtlinienanweisung:** Kein Subnetz mit geschützten Daten ist direkt über das öffentliche Internet oder rechenzentrumsübergreifend zugänglich. Der Zugriff auf diese Subnetze muss über zwischengeschaltete Subnetze geroutet werden. Der gesamte Zugriff auf diese Subnetze muss über eine Firewalllösung erfolgen, die Funktionen zur Paketüberprüfung und Sperrfunktionen durchführen kann.
 
-**Potenzielle Entwurfsoption:** Sichern Sie in Azure öffentliche Endpunkte durch Bereitstellen einer [DMZ zwischen dem öffentlichen Internet und Ihrem cloudbasierten Netzwerk](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz).
+**Potenzielle Entwurfsoption:** Sichern Sie in Azure öffentliche Endpunkte durch Bereitstellen einer [DMZ zwischen dem öffentlichen Internet und Ihrem cloudbasierten Netzwerk](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz). Erwägen Sie die Bereitstellung, Konfiguration und Automatisierung von [Azure Firewall](https://docs.microsoft.com/azure/firewall).
 
 ## <a name="ddos-protection"></a>DDoS-Schutz
 
 **Technisches Risiko:** Verteilte DoS-Angriffe (Distributed denial of service, DDoS) können zu einer Unterbrechung des Geschäftsbetriebs führen.
 
-**Richtlinienanweisung:** Stellen Sie automatisierte DDoS-Entschärfungsmechanismen für alle öffentlich zugänglichen Netzwerkendpunkte bereit.
+**Richtlinienanweisung:** Stellen Sie automatisierte DDoS-Entschärfungsmechanismen für alle öffentlich zugänglichen Netzwerkendpunkte bereit. Öffentlich zugängliche, IaaS-basierte Websites sollten nicht ohne DDoS-Schutz im Internet verfügbar gemacht werden.
 
-**Potenzielle Entwurfsoption:** Minimieren Sie durch DDoS-Angriffe verursachte Unterbrechungen mit [Azure DDoS Protection](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview).
+**Potenzielle Entwurfsoption:** Minimieren Sie durch DDoS-Angriffe verursachte Unterbrechungen mithilfe von [Azure DDoS Protection](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) Standard.
 
 ## <a name="secure-on-premises-connectivity"></a>Absichern der lokalen Konnektivität
 
@@ -88,7 +88,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine sicherh
 
 **Richtlinienanweisung:** Trends und potenzielle Exploits, die mögliche Auswirkungen auf Cloudbereitstellungen haben, müssen vom Sicherheitsteam regelmäßig überprüft werden, damit Updates für in der Cloud verwendete Sicherheitsbaselinetools bereitgestellt werden.
 
-**Potenzielle Entwurfsoption:** Legen Sie ein regelmäßiges Meeting zur Sicherheitsüberprüfung fest, an dem relevante IT- und Governanceteammitglieder teilnehmen. Überprüfen Sie vorhandene Sicherheitsdaten und Metriken, um Lücken in den aktuellen Richtlinien- und Sicherheitsbaselinetools zu ermitteln, und aktualisieren Sie die Richtlinie, um alle neuen Risiken zu beseitigen.
+**Potenzielle Entwurfsoption:** Legen Sie ein regelmäßiges Meeting zur Sicherheitsüberprüfung fest, an dem relevante IT- und Governanceteammitglieder teilnehmen. Überprüfen Sie vorhandene Sicherheitsdaten und Metriken, um Lücken in den aktuellen Richtlinien- und Sicherheitsbaselinetools zu ermitteln, und aktualisieren Sie die Richtlinie, um alle neuen Risiken zu beseitigen. Nutzen Sie [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) und [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro), um verwertbare Erkenntnisse zu spezifischen neuen Bedrohungen für Ihre Bereitstellungen zu gewinnen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

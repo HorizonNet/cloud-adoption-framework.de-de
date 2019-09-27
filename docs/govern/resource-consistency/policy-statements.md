@@ -4,17 +4,17 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Beispiele für Richtlinienanweisungen der Ressourcenkonsistenz
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 654ec56f2196af4d16b3e19a47ae117b9936b38f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f2e15ad1640bec4e289c49a1f9dcf83de7c04ec3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032194"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71221982"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>Beispiele für Richtlinienanweisungen der Ressourcenkonsistenz
 
@@ -74,8 +74,8 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine Geschä
 
 **Richtlinienanweisung:** Die folgenden Richtlinien werden implementiert:
 
-- Mit den Governancetools muss überprüft werden, ob alle Ressourcen, die in einem Zusammenhang mit unternehmenskritischen Anwendungen oder geschützten Daten stehen, in die Überwachung auf Ressourcenschwund und -optimierung einbezogen sind.
-- Ferner muss mit den Governancetools überprüft werden, ob für alle unternehmenskritischen Anwendungen oder geschützten Daten Protokolldaten mit dem passenden Protokolliergrad erfasst werden.
+- Mit den Governancetools muss überprüft werden, ob alle Ressourcen in die Überwachung auf Ressourcenschwund, Sicherheit, Compliance und Optimierung einbezogen werden.
+- Ferner muss mit den Governancetools überprüft werden, ob für alle Anwendungen und Daten Protokolldaten mit geeignetem Protokolliergrad erfasst werden.
 
 **Potenzielle Entwurfsoptionen:** [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) ist der Standardüberwachungsdienst in Azure, und konsistente Überwachung kann durch die Verwendung von [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints) beim Bereitstellen von Ressourcen erzwungen werden.
 
@@ -85,7 +85,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine Geschä
 
 **Richtlinienanweisung:** Für alle unternehmenskritischen Anwendungen und geschützten Daten müssen Sicherungs- und Wiederherstellungslösungen implementiert sein, um die geschäftlichen Auswirkungen von Ausfällen oder Systemfehlern zu minimieren.
 
-**Potenzielle Entwurfsoptionen:** Der [Azure Site Recovery]-Dienst bietet Funktionen für Sicherung, Wiederherstellung und Replikation, die die Ausfalldauer in Business Continuity und Notfallwiederherstellungsszenarien (BCDR) minimieren sollen.
+**Potenzielle Entwurfsoptionen:** Der [Azure Site Recovery-Dienst](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) bietet Funktionen für die Sicherung, Wiederherstellung und Replikation, um die Ausfalldauer in BCDR-Szenarien (Business Continuity & Disaster Recovery) zu minimieren.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

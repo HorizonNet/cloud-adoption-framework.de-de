@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Metriken, Indikatoren und Risikotoleranz in der Ressourcenkonsistenz
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e4ec7b4700f80a8ad7b46900ed0f3f869ccfbb94
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 387cc7b320e50628e2f10c25ab49f200878d3636
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031135"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222948"
 ---
 # <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>Metriken, Indikatoren und Risikotoleranz in der Ressourcenkonsistenz
 
-Dieser Artikel soll Ihnen bei der Quantifizierung der Geschäftsrisikotoleranz im Zusammenhang mit der Ressourcenkonsistenz helfen. Das Definieren von Metriken und Indikatoren ermöglicht das Erstellen eines Geschäftsszenarios, mit dem Sie in die Weiterentwicklung der Disziplin „Ressourcenkonsistenz“ investieren können.
+Dieser Artikel unterstützt Sie bei der Quantifizierung der Geschäftsrisikotoleranz im Zusammenhang mit der Ressourcenkonsistenz. Das Definieren von Metriken und Indikatoren ermöglicht das Erstellen eines Geschäftsszenarios, mit dem Sie in die Weiterentwicklung der Disziplin „Ressourcenkonsistenz“ investieren können.
 
 ## <a name="metrics"></a>metrics
 
@@ -33,7 +33,7 @@ Jede Organisation verfügt über die verschiedenen Betriebsszenarien, aber die f
 - **Ressourcenalter.** Die Zeit, seit die Ressource zuletzt bereitgestellt oder geändert wurde.
 - **Virtuelle Computer in kritischem Zustand.** Die Anzahl der bereitgestellten virtuellen Computer, auf denen mindestens ein kritischer Fehler entdeckt wurde, der behandelt werden muss, um die normale Funktionsweise wiederherzustellen.
 - **Warnungen nach Schweregrad.** Die Gesamtanzahl von Warnungen für eine bereitgestellte Ressource, aufgeschlüsselt nach Schweregrad.
-- **Fehlerhafte Subnetzlinks.** Die Anzahl der Ressourcen mit Netzwerkkonnektivitätsproblemen.
+- **Fehlerhafte Netzwerkverbindungen.** Die Anzahl der Ressourcen mit Netzwerkkonnektivitätsproblemen.
 - **Fehlerhafte Dienstendpunkte.** Die Anzahl von Problemen mit externen Netzwerkendpunkten.
 - **Cloudanbieter-Dienstintegritätsvorfälle.** Die Anzahl von Unterbrechungen oder Leistungsvorfällen, die vom Cloudanbieter verursacht wurden.
 - **Vereinbarungen zum Servicelevel (SLAs).** Diese können sowohl Microsoft-Verpflichtungen für Verfügbarkeit und Konnektivität von Azure-Diensten sowie Verpflichtungen des Unternehmens gegenüber externen und internen Kunden beinhalten.

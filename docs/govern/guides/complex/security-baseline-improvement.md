@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 58dcbc125f0f4b65b4f4e4f2b292bbe1a4890ec0
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: dc045d26dd855240700341748c189a985f1f6758
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031374"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220558"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Sicherheitsbaseline“
 
@@ -105,26 +105,26 @@ Die neuen bewährten Methoden lassen sich in zwei Kategorien unterteilen: Untern
 **Einrichten eines Hub-and-Spoke-Abonnements für die Unternehmens-IT zum Zentralisieren der Sicherheitsbaseline**: In dieser bewährten Methode wird die vorhandene Governancekapazität von einer [Hub-and-Spoke-Topologie mit Shared Services](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services) umschlossen, mit einigen wichtigen Ergänzungen des Cloudgovernanceteams.
 
 1. Azure DevOps-Repository. Erstellen Sie in Azure DevOps ein Repository zur Speicherung und Versionsverwaltung für alle relevanten Azure Resource Manager-Vorlagen und Skriptkonfigurationen.
-1. Hub-and-Spoke-Vorlage:
+2. Hub-and-Spoke-Vorlage:
     1. Die Anleitung in der [Hub-and-Spoke-Topologie mit Shared Services](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services) kann zum Generieren von Resource Manager-Vorlagen für die Ressourcen verwendet werden, die in einem Unternehmens-IT-Hub erforderlich sind.
-    1. Mit diesen Vorlagen kann diese Struktur im Rahmen einer zentralen Governancestrategie wiederholbar gemacht werden.
-    1. Zusätzlich zur aktuellen Referenzarchitektur wird empfohlen, eine NSG-Vorlage (Netzwerksicherheitsgruppe) zu erstellen, die alle Anforderungen zu Portsperren oder Whitelists für das VNET erfasst, das die Firewall hosten soll. Diese Netzwerksicherheitsgruppe unterscheidet sich von früheren Gruppen, da sie die erste Netzwerksicherheitsgruppe ist, die öffentlichen Verkehr in ein VNET zulässt.
-1. Erstellen von Azure-Richtlinien. Erstellen Sie eine Richtlinie namens `Hub NSG Enforcement`, um die Konfiguration der Netzwerksicherheitsgruppe durchzusetzen, die einem in diesem Abonnement erstellten VNET zugewiesen ist. Wenden Sie die integrierten Richtlinien für die Gastkonfiguration wie folgt an:
+    2. Mit diesen Vorlagen kann diese Struktur im Rahmen einer zentralen Governancestrategie wiederholbar gemacht werden.
+    3. Zusätzlich zur aktuellen Referenzarchitektur wird empfohlen, eine NSG-Vorlage (Netzwerksicherheitsgruppe) zu erstellen, die alle Anforderungen zu Portsperren oder Whitelists für das VNET erfasst, das die Firewall hosten soll. Diese Netzwerksicherheitsgruppe unterscheidet sich von früheren Gruppen, da sie die erste Netzwerksicherheitsgruppe ist, die öffentlichen Verkehr in ein VNET zulässt.
+3. Erstellen von Azure-Richtlinien. Erstellen Sie eine Richtlinie namens `Hub NSG Enforcement`, um die Konfiguration der Netzwerksicherheitsgruppe durchzusetzen, die einem in diesem Abonnement erstellten VNET zugewiesen ist. Wenden Sie die integrierten Richtlinien für die Gastkonfiguration wie folgt an:
     1. Überwachen Sie die Verwendung sicherer Kommunikationsprotokolle auf Windows-Webservern.
-    1. Überwachen Sie die korrekte Festlegung der Kennwortsicherheitseinstellungen auf Linux- und Windows-Computern.
-1. Unternehmens-IT-Blaupause.
+    2. Überwachen Sie die korrekte Festlegung der Kennwortsicherheitseinstellungen auf Linux- und Windows-Computern.
+4. Unternehmens-IT-Blaupause.
     1. Erstellen Sie eine Azure-Blaupause namens `corporate-it-subscription`.
-    1. Fügen Sie die Hub-and-Spoke-Vorlagen und die `Hub NSG Enforcement`-Richtlinie hinzu.
-1. Erweitern der anfänglichen Verwaltungsgruppenhierarchie.
+    2. Fügen Sie die Hub-and-Spoke-Vorlagen und die `Hub NSG Enforcement`-Richtlinie hinzu.
+5. Erweitern der anfänglichen Verwaltungsgruppenhierarchie.
     1. Für jede Verwaltungsgruppe, die Unterstützung für geschützte Daten angefordert hat, bietet die Blaupause `corporate-it-subscription-blueprint` eine beschleunigte Hublösung.
-    1. Da Verwaltungsgruppen in diesem fiktiven Beispiel neben einer Geschäftseinheitshierarchie auch eine regionale Hierarchie umfassen, wird diese Blaupause in jeder Region bereitgestellt.
-    1. Erstellen Sie für jede Region in der Verwaltungsgruppenhierarchie ein Abonnement namens `Corporate IT Subscription`.
-    1. Wenden Sie die Blaupause `corporate-it-subscription-blueprint` auf die einzelnen regionalen Instanzen an.
-    1. Dadurch wird für jede Geschäftseinheit in jeder Region ein Hub eingerichtet. Hinweis: Weitere Kosteneinsparungen können durch die Freigabe von Hubs für Geschäftseinheiten in den einzelnen Regionen erzielt werden.
-1. Integrieren von Gruppenrichtlinienobjekten (GPO) über DSC (Desired State Configuration):
+    2. Da Verwaltungsgruppen in diesem fiktiven Beispiel neben einer Geschäftseinheitshierarchie auch eine regionale Hierarchie umfassen, wird diese Blaupause in jeder Region bereitgestellt.
+    3. Erstellen Sie für jede Region in der Verwaltungsgruppenhierarchie ein Abonnement namens `Corporate IT Subscription`.
+    4. Wenden Sie die Blaupause `corporate-it-subscription-blueprint` auf die einzelnen regionalen Instanzen an.
+    5. Dadurch wird für jede Geschäftseinheit in jeder Region ein Hub eingerichtet. Hinweis: Weitere Kosteneinsparungen können durch die Freigabe von Hubs für Geschäftseinheiten in den einzelnen Regionen erzielt werden.
+6. Integrieren von Gruppenrichtlinienobjekten (GPO) über DSC (Desired State Configuration):
     1. Konvertieren Sie ein GPO in DSC. Das Projekt zur [Microsoft-Basislinienverwaltung](https://github.com/Microsoft/BaselineManagement) auf GitHub kann diese Aufgabe beschleunigen. * Stellen Sie sicher, dass DSC im Repository parallel zu den Resource Manager-Vorlagen gespeichert wird.
-    1. Stellen Sie Azure Automation DSC für alle Instanzen des Unternehmens-IT-Abonnements bereit. Mit Azure Automation kann DSC auf virtuelle Computer angewendet werden, die in unterstützten Abonnements innerhalb der Verwaltungsgruppe bereitgestellt werden.
-    1. In der aktuellen Roadmap ist die Aktivierung benutzerdefinierter Gastkonfigurationsrichtlinien geplant. Wenn dieses Feature veröffentlicht wird, ist die Verwendung von Azure Automation in dieser bewährten Methode nicht mehr erforderlich.
+    2. Stellen Sie Azure Automation DSC für alle Instanzen des Unternehmens-IT-Abonnements bereit. Mit Azure Automation kann DSC auf virtuelle Computer angewendet werden, die in unterstützten Abonnements innerhalb der Verwaltungsgruppe bereitgestellt werden.
+    3. In der aktuellen Roadmap ist die Aktivierung benutzerdefinierter Gastkonfigurationsrichtlinien geplant. Wenn dieses Feature veröffentlicht wird, ist die Verwendung von Azure Automation in dieser bewährten Methode nicht mehr erforderlich.
 
 **Anwenden zusätzlicher Governance auf ein Cloudeinführungsabonnement (Spoke):** Aufbauend auf dem `Corporate IT Subscription` können geringfügige Änderungen am Governance-MVP, die auf die einzelnen Abonnements zur Unterstützung von Anwendungsarchetypen angewendet werden, für eine schnelle Verbesserung sorgen.
 
@@ -132,38 +132,38 @@ In früheren iterativen Änderungen der bewährten Methoden haben wir Netzwerksi
 
 1. Vorlage zum Netzwerkpeering. Mit dieser Vorlage wird das VNET in den einzelnen Abonnements mit dem Hub-VNET im Unternehmens-IT-Abonnement gekoppelt.
     1. Die Referenzarchitektur aus dem vorherigen Abschnitt [Hub-and-Spoke-Topologie mit Shared Services](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services) generierte eine Resource Manager-Vorlage für die Aktivierung von VNET-Peering.
-    1. Diese Vorlage kann als Anleitung zum Ändern der DMZ-Vorlage aus der vorherigen Governanceiteration verwendet werden.
-    1. Im Wesentlichen fügen wir jetzt VNET-Peering dem DMZ-VNET hinzu, das zuvor mit dem lokalen Edge-Gerät über VPN verbunden war.
-    1. *** Es empfiehlt sich außerdem, das VPN aus dieser Vorlage zu entfernen und sicherzustellen, dass kein Datenverkehr direkt an das lokale Rechenzentrum weitergeleitet wird, ohne das Unternehmens-IT-Abonnement und die Firewalllösung zu passieren.
-    1. Es ist noch eine zusätzliche [Netzwerkkonfiguration](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) erforderlich, damit Azure Automation DSC auf gehostete virtuelle Computer anwendet.
-1. Ändern Sie die Netzwerksicherheitsgruppe. Blockieren Sie den gesamten öffentlichen **und** den direkten lokalen Datenverkehr in der Netzwerksicherheitsgruppe. Der einzige eingehende Datenverkehr sollte über den VNET-Peer im Unternehmens-IT-Abonnement eintreffen.
+    2. Diese Vorlage kann als Anleitung zum Ändern der DMZ-Vorlage aus der vorherigen Governanceiteration verwendet werden.
+    3. Als Nächstes fügen wir dem DMZ-VNET, das zuvor per VPN mit dem lokalen Edge-Gerät verbunden war, VNET-Peering hinzu.
+    4. *** Es empfiehlt sich außerdem, das VPN aus dieser Vorlage zu entfernen und sicherzustellen, dass kein Datenverkehr direkt an das lokale Rechenzentrum weitergeleitet wird, ohne das Unternehmens-IT-Abonnement und die Firewalllösung zu passieren. Dieses VPN kann auch als Failoververbindung im Falle eines ExpressRoute-Verbindungsausfalls festgelegt werden.
+    5. Es ist noch eine zusätzliche [Netzwerkkonfiguration](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) erforderlich, damit Azure Automation DSC auf gehostete virtuelle Computer anwendet.
+2. Ändern Sie die Netzwerksicherheitsgruppe. Blockieren Sie den gesamten öffentlichen **und** den direkten lokalen Datenverkehr in der Netzwerksicherheitsgruppe. Der einzige eingehende Datenverkehr sollte über den VNET-Peer im Unternehmens-IT-Abonnement eintreffen.
     1. In der vorherigen Iteration wurde eine Netzwerksicherheitsgruppe erstellt, die den gesamten öffentlichen Datenverkehr blockiert und den gesamten internen Datenverkehr über eine Whitelist zulässt. Jetzt möchten wir diese Netzwerksicherheitsgruppe etwas verschieben.
-    1. In der neuen Konfiguration der Netzwerksicherheitsgruppe wird der gesamte öffentliche Datenverkehr sowie der gesamte Datenverkehr aus dem lokalen Datencenter blockiert.
-    1. Bei diesem VNET eingehender Datenverkehr darf nur von dem VNET auf der anderen Seite des VNET-Peers stammen.
-1. Implementierung von Azure Security Center:
+    2. In der neuen Konfiguration der Netzwerksicherheitsgruppe wird der gesamte öffentliche Datenverkehr sowie der gesamte Datenverkehr aus dem lokalen Datencenter blockiert.
+    3. Bei diesem VNET eingehender Datenverkehr darf nur von dem VNET auf der anderen Seite des VNET-Peers stammen.
+3. Implementierung von Azure Security Center:
     1. Konfigurieren Sie Azure Security Center für jede Verwaltungsgruppe, die Klassifizierungen geschützter Daten enthält.
-    1. Legen Sie automatische Bereitstellung standardmäßig auf „Aktiviert“ fest, um Patchingkonformität zu gewährleisten.
-    1. Richten Sie Sicherheitskonfigurationen von Betriebssystemen ein. Das IT-Sicherheitsteam definiert die Konfiguration.
-    1. Unterstützen Sie das IT-Sicherheitsteam bei der anfänglichen Verwendung von Azure Security Center. Übertragen Sie die Verwendung von Security Center an das IT-Sicherheitsteam, aber behalten Sie den Zugriff, um die Governance stetig zu verbessern.
-    1. Erstellen Sie eine Resource Manager-Vorlage, die die erforderlichen Änderungen für die Azure Security Center-Konfiguration in einem Abonnement widerspiegelt.
-1. Aktualisieren Sie Azure Policy für alle Abonnements.
+    2. Legen Sie automatische Bereitstellung standardmäßig auf „Aktiviert“ fest, um Patchingkonformität zu gewährleisten.
+    3. Richten Sie Sicherheitskonfigurationen von Betriebssystemen ein. Das IT-Sicherheitsteam definiert die Konfiguration.
+    4. Unterstützen Sie das IT-Sicherheitsteam bei der anfänglichen Verwendung von Azure Security Center. Übertragen Sie die Verwendung von Security Center an das IT-Sicherheitsteam, aber behalten Sie den Zugriff, um die Governance stetig zu verbessern.
+    5. Erstellen Sie eine Resource Manager-Vorlage, die die erforderlichen Änderungen für die Azure Security Center-Konfiguration in einem Abonnement widerspiegelt.
+4. Aktualisieren Sie Azure Policy für alle Abonnements.
     1. Überprüfen und erzwingen Sie die Wichtigkeits- und Datenklassifizierung für alle Verwaltungsgruppen und Abonnements, um Abonnements mit Klassifizierungen geschützter Daten zu identifizieren.
-    1. Überwachen und erzwingen Sie die ausschließliche Verwendung genehmigter Betriebssystemimages.
-    1. Überwachen und erzwingen Sie Gastkonfigurationen basierend auf den Sicherheitsanforderungen für die einzelnen Knoten.
-1. Aktualisieren Sie Azure Policy für alle Abonnements, die Klassifizierungen geschützter Daten enthalten.
+    2. Überwachen und erzwingen Sie die ausschließliche Verwendung genehmigter Betriebssystemimages.
+    3. Überwachen und erzwingen Sie Gastkonfigurationen basierend auf den Sicherheitsanforderungen für die einzelnen Knoten.
+5. Aktualisieren Sie Azure Policy für alle Abonnements, die Klassifizierungen geschützter Daten enthalten.
     1. Überwachen und erzwingen Sie die ausschließliche Verwendung von Standardrollen.
-    1. Überwachen und erzwingen Sie die Anwendung der Verschlüsselung für alle Speicherkonten und Dateien, die sich auf den einzelnen Knoten im Ruhezustand befinden.
-    1. Überwachen und erzwingen Sie die Anwendung der neuen Version der DMZ-Netzwerksicherheitsgruppe.
-    1. Überwachen und erzwingen Sie die Verwendung eines genehmigten Netzwerksubnetzes und VNets pro Netzwerkschnittstelle.
-    1. Überwachen und erzwingen Sie die Einschränkung benutzerdefinierter Routingtabellen.
-1. Azure-Blaupause:
+    2. Überwachen und erzwingen Sie die Anwendung der Verschlüsselung für alle Speicherkonten und Dateien, die sich auf den einzelnen Knoten im Ruhezustand befinden.
+    3. Überwachen und erzwingen Sie die Anwendung der neuen Version der DMZ-Netzwerksicherheitsgruppe.
+    4. Überwachen und erzwingen Sie die Verwendung eines genehmigten Netzwerksubnetzes und VNets pro Netzwerkschnittstelle.
+    5. Überwachen und erzwingen Sie die Einschränkung benutzerdefinierter Routingtabellen.
+6. Azure-Blaupause:
     1. Erstellen Sie eine Azure-Blaupause namens `protected-data`.
-    1. Fügen Sie der Blaupause die VNET-Peer-, Netzwerksicherheitsgruppe- und Azure Security Center-Vorlagen hinzu.
-    1. Stellen Sie sicher, dass die Vorlage für Active Directory aus der vorherigen Iteration **nicht** in der Blaupause enthalten ist. Alle Abhängigkeiten von Active Directory werden vom Unternehmens-IT-Abonnement bereitgestellt.
-    1. Beenden Sie alle vorhandenen Active Directory-VMs, die in der vorherigen Iteration bereitgestellt wurden.
-    1. Fügen Sie die neuen Richtlinien für Abonnements geschützter Daten hinzu.
-    1. Veröffentlichen Sie die Blaupause für alle Verwaltungsgruppen, die zum Hosten geschützter Daten bestimmt sind.
-    1. Wenden Sie die neue Blaupause zusammen mit vorhandenen Blaupausen auf die betroffenen Abonnements an.
+    2. Fügen Sie der Blaupause die VNET-Peer-, Netzwerksicherheitsgruppe- und Azure Security Center-Vorlagen hinzu.
+    3. Stellen Sie sicher, dass die Vorlage für Active Directory aus der vorherigen Iteration **nicht** in der Blaupause enthalten ist. Alle Abhängigkeiten von Active Directory werden vom Unternehmens-IT-Abonnement bereitgestellt.
+    4. Beenden Sie alle vorhandenen Active Directory-VMs, die in der vorherigen Iteration bereitgestellt wurden.
+    5. Fügen Sie die neuen Richtlinien für Abonnements geschützter Daten hinzu.
+    6. Veröffentlichen Sie die Blaupause für alle Verwaltungsgruppen, die zum Hosten geschützter Daten verwendet werden.
+    7. Wenden Sie die neue Blaupause zusammen mit vorhandenen Blaupausen auf die betroffenen Abonnements an.
 
 ## <a name="conclusion"></a>Zusammenfassung
 

@@ -4,23 +4,23 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Welchen Sicherheitsleitfaden bietet Microsoft?
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6a4b256c665e0f4a86bca5a538de9ae950ccd400
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: daad23e411b48414a0eb7ca535345fbd5e64fabd
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031990"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71222912"
 ---
 <!-- markdownlint-disable MD026 -->
 
-# <a name="what-security-guidance-does-microsoft-provide"></a>Welchen Sicherheitsleitfaden bietet Microsoft?
+# <a name="microsoft-security-guidance"></a>Microsoft Azure-Sicherheitsleitfaden
 
-## <a name="security-guidance-and-tools"></a>Sicherheitsleitfaden und -tools
+## <a name="tools"></a>Tools
 
 Microsoft hat die [Service Trust Platform](https://servicetrust.microsoft.com) und den Compliance-Manager zur Unterstützung in folgenden Bereichen eingeführt:
 
@@ -52,7 +52,7 @@ Die **Service Trust Platform (STP)** enthält ausführliche Informationen und To
 
 ## <a name="unique-intelligent-insights"></a>Spezifische Intelligent Insights
 
-Mit zunehmendem Maße des Volumens und der Komplexität von Sicherheitssignalen dauert es viel zu lange, festzustellen, ob es sich bei den Signalen um glaubwürdige Bedrohungen handelt. Microsoft bietet eine beispiellose Bandbreite der Security Intelligence auf Cloudebene, sodass Sie Bedrohungen schnell erkennen und beheben können.
+Mit zunehmendem Maße des Volumens und der Komplexität von Sicherheitssignalen dauert es viel zu lange, festzustellen, ob es sich bei den Signalen um glaubwürdige Bedrohungen handelt. Microsoft bietet eine beispiellose Bandbreite der Security Intelligence auf Cloudebene, sodass Sie Bedrohungen schnell erkennen und beheben können. [Weitere Informationen](https://docs.microsoft.com/azure/security-center/security-center-intro)
 
 ## <a name="azure-threat-intelligence"></a>Azure Threat Intelligence
 

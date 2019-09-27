@@ -4,21 +4,21 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Metriken, Indikatoren und Risikotoleranz für die Identitätsbaseline
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/11/2019
+ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ad0b06cad7aefc70eea6366eb9ef2b5844c871a6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: bf929fe5f1addbb27da77b865dfbdc71253c62a3
+ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031433"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71220431"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>Metriken, Indikatoren und Risikotoleranz für die Identitätsbaseline
 
-Dieser Artikel soll Ihnen bei der Quantifizierung der Geschäftsrisikotoleranz im Zusammenhang mit der Identitätsbaseline helfen. Das Definieren von Metriken und Indikatoren ermöglicht das Erstellen eines Geschäftsszenarios, mit dem Sie in die Weiterentwicklung der Disziplin „Identitätsbaseline“ investieren können.
+Dieser Artikel unterstützt Sie bei der Quantifizierung der Geschäftsrisikotoleranz im Zusammenhang mit der Identitätsbaseline. Das Definieren von Metriken und Indikatoren ermöglicht das Erstellen eines Geschäftsszenarios, mit dem Sie in die Weiterentwicklung der Disziplin „Identitätsbaseline“ investieren können.
 
 ## <a name="metrics"></a>metrics
 
@@ -28,13 +28,13 @@ Es folgen Beispiele für nützliche Metriken, die Sie erfassen sollten, um die R
 
 - **Größe von Identitätssystemen.** Die Gesamtanzahl von Benutzern, Gruppen oder anderen Objekte, die über Ihre Identitätssysteme verwaltet werden.
 - **Gesamtgröße der Verzeichnisdienstinfrastruktur.** Die Anzahl von Verzeichnisgesamtstrukturen, Domänen und Mandanten, die von Ihrer Organisation verwendet werden.
-- **Abhängigkeit von älteren oder lokalen Authentifizierungsmechanismen.** Die Anzahl von Workloads, die von veralteten Authentifizierungsmechanismen oder MFA-Diensten von Drittanbietern (Multi-Factor Authentication, mehrstufige Authentifizierung) abhängig sind.
+- **Abhängigkeit von älteren oder lokalen Authentifizierungsmechanismen.** Die Anzahl von Workloads, die von Legacy- oder Drittanbieter-MFA-Mechanismen (Multi-Factor Authentication, mehrstufige Authentifizierung) abhängig sind.
 - **Umfang der in der Cloud bereitgestellten Verzeichnisdienste.** Die Anzahl von Verzeichnisgesamtstrukturen, Domänen und Mandanten, die Sie in der Cloud bereitstellen.
 - **In der Cloud bereitgestellte Active Directory-Server.** Die Anzahl von Active Directory-Servern, die in der Cloud bereitgestellt werden.
 - **In der Cloud bereitgestellte Organisationseinheiten.** Die Anzahl der in der Cloud bereitgestellten Active Directory-Organisationseinheiten (OUs).
 - **Verbundumfang.** Die Anzahl der Identitätsbaselinesysteme, die sich mit den Systemen Ihrer Organisation im Verbund befinden.
 - **Benutzer mit erhöhten Rechten.** Die Anzahl von Benutzerkonten mit erhöhten Zugriffsrechten für Ressourcen oder Verwaltungstools.
-- **Verwenden der rollenbasierten Zugriffssteuerung.** Die Anzahl von Abonnements, Ressourcengruppen oder einzelnen Ressourcen, die nicht über die rollenbasierte Zugriffssteuerung (RBAC) verwaltet werden.
+- **Verwenden der rollenbasierten Zugriffssteuerung.** Die Anzahl von Abonnements, Ressourcengruppen oder einzelnen Ressourcen, die nicht durch die rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC) über Gruppen verwaltet werden.
 - **Authentifizierungsansprüche.** Die Anzahl erfolgreicher und fehlerhafter Versuche zur Benutzerauthentifizierung.
 - **Autorisierungsansprüche.** Die Anzahl erfolgreicher und fehlerhafter Versuche von Benutzern, auf Ressourcen zuzugreifen.
 - **Kompromittierte Konten.** Die Anzahl von Benutzerkonten, die kompromittiert wurden.
@@ -56,7 +56,7 @@ Legen Sie nach der Einigung auf eine Baseline minimale Benchmarks fest, die eine
 - **Trigger durch RBAC.** Ein Unternehmen, in dem weniger als _x %_ der Ressourcen die Methoden der rollenbasierten Zugriffssteuerung verwenden, sollte eine Investition in die Disziplin „Identitätsbaseline“ in Betracht ziehen, um optimierte Möglichkeiten für die Zuweisung des Benutzerzugriffs für Ressourcen zu identifizieren.
 - **Trigger durch Authentifizierungsfehler.** Ein Unternehmen, in dem bei mehr als _x %_ der Versuche Authentifizierungsfehler auftreten, sollten in die Disziplin „Identitätsbaseline“ investieren, um sicherzustellen, dass die Authentifizierungsmethoden keinen externen Angriffen ausgesetzt sind und dass Benutzer die Methoden der Benutzerauthentifizierung ordnungsgemäß verwenden können.
 - **Trigger durch Autorisierungsfehler.** Ein Unternehmen, in dem Zugriffsversuche in mehr als _x %_ der Zeit abgelehnt werden, sollten in die Disziplin „Identitätsbaseline“ investieren, um die Anwendung und Aktualisierung der Zugangssteuerung zu verbessern und potenziell böswillige Zugriffsversuche zu identifizieren.
-- **Trigger durch kompromittierte Konten.** Ein Unternehmen mit mehr als _x_ kompromittierten Konten sollte in die Disziplin „Identitätsbaseline“ investieren, um Authentifizierungsmechanismen zu stärken und abzusichern, die Mechanismen zu verbessern und auf diese Weise Risiken im Zusammenhang mit kompromittierten Konten zu verringern.
+- **Trigger durch kompromittierte Konten.** Ein Unternehmen mit mehreren kompromittierten Konten sollte in die Disziplin „Identitätsbaseline“ investieren, um sowohl die Sicherheit von Authentifizierungsmechanismen zu erhöhen als auch die Mechanismen zur Minimierung von Risiken im Zusammenhang mit kompromittierten Konten zu verbessern.
 
 Die genauen Metriken und Auslöser, die Sie zum Bemessen der Risikotoleranz verwenden, und die Höhe der Investitionen in die Disziplin „Identitätsbaseline“ sind für Ihre Organisation spezifisch. Die oben genannten Beispiele sollten jedoch eine hilfreiche Diskussionsgrundlage für Ihr Cloudgovernanceteam darstellen.
 
