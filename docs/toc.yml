@@ -678,6 +678,8 @@
                   href: manage/monitor/platform-overview.md
             - name: Einrichten einer Überprüfung der Einsatztauglichkeit
               href: manage/operational-fitness-review.md
+            - name: Zentralisieren von Verwaltungsvorgängen
+              href: manage/centralize-operations.md
     - name: Verweis
       items:
         - name: 'Framework für die Cloudeinführung (Cloud Adoption Framework, CAF): Roadmap'
