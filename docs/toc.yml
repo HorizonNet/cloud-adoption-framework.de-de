@@ -66,8 +66,6 @@
               href: digital-estate/calculate.md
         - name: Erstausrichtung der Organisation
           href: plan/initial-org-alignment.md
-        - name: 'Qualifikationsbereitschaft: Anpassen von Rollen, Qualifikationen und Prozessen'
-          href: plan/adapt-roles-skills-processes.md
         - name: Cloudeinführungsplan
           items:
             - name: Einführung
@@ -426,7 +424,7 @@
               items:
                 - name: Übersicht
                   href: govern/guides/index.md
-                - name: Leitfaden für kleine bis mittlere Unternehmen
+                - name: Governanceleitfaden für Standardunternehmen
                   items:
                     - name: Übersicht
                       href: govern/guides/standard/index.md
@@ -444,7 +442,7 @@
                       href: govern/guides/standard/cost-management-improvement.md
                     - name: Szenarien mit mehreren Clouds
                       href: govern/guides/standard/multicloud-improvement.md
-                - name: Leitfaden für große Unternehmen
+                - name: Governanceleitfaden für komplexe Unternehmen
                   items:
                     - name: Übersicht
                       href: govern/guides/complex/index.md
@@ -685,8 +683,9 @@
         - name: 'Framework für die Cloudeinführung (Cloud Adoption Framework, CAF): Roadmap'
           href: reference/roadmap.md
         - name: Leitfaden zur Entscheidungsfindung
-          href: decision-guides/index.md
           items:
+            - name: Übersicht
+              href: decision-guides/index.md
             - name: Abonnements
               href: decision-guides/subscriptions/index.md
             - name: Identity

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 041e1ccaf6ec0e928b6868f4e8c90849c8d4dea8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 8323a8bded4f2cc1d24407fa3326abf3b96ef810
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224591"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967707"
 ---
 # <a name="azure-regions"></a>Azure-Regionen
 
@@ -110,7 +110,7 @@ Diese Vorgehensweise wird durch quantifizierbare Informationen gesteuert. Daher 
 Wenn der Umfang einer Migration mehrere Regionen umfasst, sollte das Cloudeinführungsteam folgende Überlegungen zur Bereitschaft berücksichtigen:
 
 - Zur Sicherstellung der Datenhoheit müssen einige Assets möglicherweise an bestimmten Standorten bereitgestellt werden, es gibt aber viele Assets, für die diese Complianceeinschränkungen nicht gelten. Aspekte wie Protokollierung, Berichterstellung, Netzwerkrouting, Identität und weitere zentrale IT-Dienste können möglicherweise als freigegebene Dienste über mehrere Abonnements oder sogar Regionen hinweg gehostet werden. Es empfiehlt sich, dass das Cloudeinführungsteam für diese Dienste ein Freigabemodell evaluiert, wie in der [Referenzarchitektur für eine Hub-and-Spoke-Topologie mit freigegebenen Diensten](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services) beschrieben.
-- Wenn mehrere Instanzen ähnlicher Umgebungen bereitgestellt werden müssen, könnte eine Umgebungsfactory für Konsistenz sorgen, die Governance verbessern und die Bereitstellung beschleunigen. Die [Governance Journey für große Unternehmen](../../govern/guides/complex/index.md) etabliert eine Vorgehensweise, bei der eine Umgebung erstellt wird, die sich über mehrere Regionen hinweg skalieren lässt.
+- Wenn mehrere Instanzen ähnlicher Umgebungen bereitgestellt werden müssen, könnte eine Umgebungsfactory für Konsistenz sorgen, die Governance verbessern und die Bereitstellung beschleunigen. Der [Governanceleitfaden für komplexe Unternehmen](../../govern/guides/complex/index.md) etabliert eine Vorgehensweise, bei der eine Umgebung erstellt wird, die sich über mehrere Regionen hinweg skalieren lässt.
 
 Sobald das Team mit dem grundlegenden Ansatz zufrieden und die Bereitschaft entsprechend vorhanden ist, müssen einige Voraussetzungen in Bezug auf die Daten berücksichtigt werden:
 

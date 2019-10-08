@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: b5d5bca79d08a0084026c027a242086cefb0100f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: c7d019cc7264ba972252b6182d4f2c10d7b91f43
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025961"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967603"
 ---
 # <a name="cloud-governance-guides"></a>Cloudgovernance-Leitfäden
 
@@ -76,27 +76,27 @@ Um mit einer Governancelösung zu beginnen, wählen Sie eine der beiden folgende
 
 ### <a name="business-characteristics"></a>Geschäftsmerkmale
 
-| Merkmal | Standardorganisation                                                                              | Komplexes Unternehmen                                                                                               |
-|--------------------------------------------|---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Geografie (Land oder geopolitische Region) | Kunden oder Mitarbeiter befinden sich hauptsächlich an einem geografischen Standort                                                      | Kunden oder Mitarbeiter befinden sich an mehreren geografischen Standorten oder benötigen Sovereign Clouds                                                             |
-| Betroffene Geschäftseinheiten                    | Geschäftseinheiten, die eine gemeinsame IT-Infrastruktur verwenden                                                                                    | Mehrere Geschäftseinheiten, die keine gemeinsame IT-Infrastruktur verwenden                                                                                        |
-| IT-Budget                                  | Einzelnes IT-Budget                                                                                        | Budget verteilt auf Geschäftseinheiten und Währungen                                                                         |
-| IT-Investitionen                             | Kapitalkostengesteuerte Investitionen werden jährlich geplant und decken in der Regel nur die Grundwartung ab. | Kapitalkostengesteuerte Investitionen werden jährlich geplant und beinhalten oft Wartung und einen Aktualisierungszyklus von drei bis fünf Jahren. |
+| Merkmal | Standardorganisation | Komplexes Unternehmen |
+|---|---|---|
+| Geografie (Land oder geopolitische Region) | Kunden oder Mitarbeiter befinden sich hauptsächlich an einem geografischen Standort | Kunden oder Mitarbeiter befinden sich an mehreren geografischen Standorten oder benötigen Sovereign Clouds |
+| Betroffene Geschäftseinheiten | Geschäftseinheiten, die eine gemeinsame IT-Infrastruktur verwenden | Mehrere Geschäftseinheiten, die keine gemeinsame IT-Infrastruktur verwenden |
+| IT-Budget | Einzelnes IT-Budget | Budget verteilt auf Geschäftseinheiten und Währungen |
+| IT-Investitionen | Kapitalkostengesteuerte Investitionen werden jährlich geplant und decken in der Regel nur die Grundwartung ab. | Kapitalkostengesteuerte Investitionen werden jährlich geplant und beinhalten oft Wartung und einen Aktualisierungszyklus von drei bis fünf Jahren. |
 
 ### <a name="current-state-before-adopting-cloud-governance"></a>Aktueller Status vor der Einführung von Cloud Governance
 
-| State | Standardunternehmen                                                                               | Komplexes Unternehmen                                                                                                          |
-|---------------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Datencenter oder Drittanbieter-Hostinganbieter | Weniger als fünf Datencenter                                                                                  | Mehr als fünf Datencenter                                                                                                   |
-| Netzwerk                                  | Kein WAN oder 1 &ndash; 2 WAN-Anbieter                                                                             | Komplexes Netzwerk oder globales WAN                                                                                             |
-| Identity                                    | Einzelne Gesamtstruktur, einzelne Domäne. | Komplex, mehrere Gesamtstrukturen, mehrere Domänen.  |
+| State | Standardunternehmen | Komplexes Unternehmen |
+|---|---|---|
+| Datencenter oder Drittanbieter-Hostinganbieter | Weniger als fünf Datencenter | Mehr als fünf Datencenter |
+| Netzwerk | Kein WAN oder 1 &ndash; 2 WAN-Anbieter | Komplexes Netzwerk oder globales WAN |
+| Identity | Einzelne Gesamtstruktur, einzelne Domäne. | Komplex, mehrere Gesamtstrukturen, mehrere Domänen. |
 
 ### <a name="desired-future-state-after-incremental-improvement-of-cloud-governance"></a>Gewünschter zukünftiger Zustand nach inkrementeller Verbesserung der Cloudgovernance
 
-| State | Standardorganisation                                                                        | Komplexes Unternehmen                                                                                        |
-|----------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Kostenverwaltung – Cloudabrechnung           | Showbackmodell Abrechnung wird über IT zentralisiert.                                                | Chargebackmodell Die Abrechnung kann durch IT-Beschaffung verteilt werden.                                  |
-| Sicherheitsbaseline – geschützte Daten           | Unternehmensfinanzdaten und IP. Eingeschränkte Kundendaten. Keine Complianceanforderungen von Drittanbietern.     | Mehrere Sammlungen von Finanzdaten und personenbezogenen Daten von Kunden. Möglicherweise muss Drittanbietercompliance berücksichtigt werden. |
+| State | Standardorganisation | Komplexes Unternehmen |
+|---|---|---|
+| Kostenverwaltung – Cloudabrechnung | Showbackmodell Abrechnung wird über IT zentralisiert. | Chargebackmodell Die Abrechnung kann durch IT-Beschaffung verteilt werden. |
+| Sicherheitsbaseline – geschützte Daten | Unternehmensfinanzdaten und IP. Eingeschränkte Kundendaten. Keine Complianceanforderungen von Drittanbietern. | Mehrere Sammlungen von Finanzdaten und personenbezogenen Daten von Kunden. Möglicherweise muss Drittanbietercompliance berücksichtigt werden. |
 
 ## <a name="azure-virtual-datacenter"></a>Virtuelles Azure-Rechenzentrum
 
@@ -124,6 +124,6 @@ Weitere Informationen finden Sie im Artikel zum Framework für die Cloudeinführ
 Wählen Sie einen der Leitfäden aus:
 
 > [!div class="nextstepaction"]
-> [Standardgovernanceleitfaden](./standard/index.md)
+> [Governanceleitfaden für Standardunternehmen](./standard/index.md)
 >
 > [Governanceleitfaden für komplexe Unternehmen](./complex/index.md)
