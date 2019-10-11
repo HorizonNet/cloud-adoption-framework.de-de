@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4de6cced9bb387f2955d644f93523ac4f26931da
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 1a4a82893535228e84defc8918be6e5fa884ca16
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222663"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967692"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Beschleunigung der Bereitstellung – Beispiele für Richtlinienanweisungen
 
@@ -32,7 +32,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine konfigu
 
 **Richtlinienanweisung:** Alle Ressourcen, die in der Cloud bereitgestellt werden, sollten nach Möglichkeit mithilfe von Vorlagen oder Automatisierungsskripts bereitgestellt werden.
 
-**Potenzielle Entwurfsoptionen:** [Azure Resource Manager-Vorlagen](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#template-deployment) stellen für die Bereitstellung von Ressourcen in Azure das Konzept „Infrastructure-as-Code“ bereit. Sie können aber auch [Terraform](https://docs.microsoft.com/azure/terraform/terraform-overview) als konsistentes lokales und cloudbasiertes Bereitstellungstool verwenden.
+**Potenzielle Entwurfsoptionen:** [Azure Resource Manager-Vorlagen](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview) stellen für die Bereitstellung von Ressourcen in Azure das Konzept „Infrastructure-as-Code“ bereit. Sie können aber auch [Terraform](https://docs.microsoft.com/azure/terraform/terraform-overview) als konsistentes lokales und cloudbasiertes Bereitstellungstool verwenden.
 
 ## <a name="lack-of-visibility-into-system-issues"></a>Mangelnde Transparenz von Systemproblemen
 

@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a5b1d551f52ae8800e9a29d4c8a92c14965645cc
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 7144e772da10cd6c7d581fba61c11677524b60c2
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221496"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967297"
 ---
 # <a name="configure-azure-management-services-at-scale"></a>Bedarfsabhängiges Konfigurieren von Azure-Verwaltungsdiensten
 
@@ -30,7 +30,7 @@ Das Onboarding der Azure-Verwaltungsdienste für Ihre Server umfasst zwei Aufgab
 
 Für alle Verwaltungslösungen, die unter [Azure-Verwaltungstools und -dienste](./tools-services.md) beschrieben sind, muss der Log Analytics-Agent auf virtuellen Azure-Computern (VMs) und lokalen Servern installiert sein. Sie können das Onboarding für Ihre Azure-VMs mit Azure Policy bedarfsabhängig durchführen. Weisen Sie eine Richtlinie zu, um sicherzustellen, dass der Agent auf Ihren gesamten Azure-VMs installiert ist und eine Verbindung mit dem richtigen Log Analytics-Arbeitsbereich besteht.
 
-Azure Policy verfügt über eine integrierte [Richtlinieninitiative](/azure/governance/policy/index#initiative-definition), die sowohl den Log Analytics-Agent als auch den [Microsoft Dependency-Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent) umfasst, der für Azure Monitor für VMs benötigt wird.
+Azure Policy verfügt über eine integrierte [Richtlinieninitiative](/azure/governance/policy/concepts/definition-structure#initiatives), die sowohl den Log Analytics-Agent als auch den [Microsoft Dependency-Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent) umfasst, der für Azure Monitor für VMs benötigt wird.
 
 <!-- TODO: Add these when available.
 - [Preview]: Enable Azure Monitor for virtual machine scale sets.

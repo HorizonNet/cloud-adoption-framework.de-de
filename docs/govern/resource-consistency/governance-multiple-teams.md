@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d6a21e852ff44a9036f2fbb9d0d0e60a0f4c930f
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 8c052b5a9c3745a1d253b533086a9fdf4d86eae9
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223953"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967811"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Governance-Entwurf für mehrere Teams
 
@@ -255,7 +255,7 @@ Folgen Sie diesen Schritten:
     - Ein Abonnement für die **gemeinsame Infrastruktur**.
     - Ein Abonnement für die **Produktionsumgebung**.
     - Ein Abonnement für die **Entwicklungsumgebung**
-5. Der Azure-Kontoadministrator [fügt den Abonnements jeweils den Abonnementdienstbesitzer hinzu](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-user-as-an-administrator-of-a-subscription).
+5. Der Azure-Kontoadministrator [fügt den Abonnements jeweils den Abonnementdienstbesitzer hinzu](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#to-assign-a-user-as-an-administrator).
 6. Erstellen Sie einen Genehmigungsprozess, damit **Workloadbesitzer** die Erstellung von Ressourcengruppen anfordern können. Der Genehmigungsprozess kann auf verschiedene Arten (beispielsweise per E-Mail) implementiert werden. Alternativ können Sie ein Prozessverwaltungstool wie [SharePoint-Workflows](https://support.office.com/article/introduction-to-sharepoint-workflow-07982276-54e8-4e17-8699-5056eff4d9e3) verwenden. Der Genehmigungsprozess kann wie folgt aussehen:
     - Der **Workloadbesitzer** erstellt eine Stückliste mit Azure-Ressourcen, die in der **Entwicklungsumgebung**, in der **Produktionsumgebung** oder in beiden benötigt werden, und übermittelt sie an den **Abonnementbesitzer**.
     - Der **Abonnementbesitzer** prüft die Stückliste und die angeforderten Ressourcen, um sicherzustellen, dass sie für die geplante Verwendung angemessen sind (etwa durch Überprüfung, ob die angeforderten [VM-Größen](https://docs.microsoft.com/azure/virtual-machines/windows/sizes) korrekt sind).
