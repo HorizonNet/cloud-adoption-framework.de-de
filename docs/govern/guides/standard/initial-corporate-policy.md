@@ -1,7 +1,7 @@
 ---
-title: 'Standardunternehmensleitfaden: Anfängliche Unternehmensrichtlinie hinter der Governancestrategie'
+title: 'Governanceleitfaden für Standardunternehmen: Anfängliche Unternehmensrichtlinie hinter der Governancestrategie'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Standardunternehmensleitfaden: Anfängliche Unternehmensrichtlinie hinter der Governancestrategie'
+description: 'Governanceleitfaden für Standardunternehmen: Anfängliche Unternehmensrichtlinie hinter der Governancestrategie'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ec184cc41608452c945e7665eae845a773b7cfbd
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 5e269e623f22fa976f85c75c130ef0b19e4e9620
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223662"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967530"
 ---
-# <a name="standard-enterprise-guide-initial-corporate-policy-behind-the-governance-strategy"></a>Standardunternehmensleitfaden: Anfängliche Unternehmensrichtlinie hinter der Governancestrategie
+# <a name="standard-enterprise-governance-guide-initial-corporate-policy-behind-the-governance-strategy"></a>Governanceleitfaden für Standardunternehmen: Anfängliche Unternehmensrichtlinie hinter der Governancestrategie
 
 Die folgende Unternehmensrichtlinie definiert eine anfängliche Governanceposition, die der Ausgangspunkt für diesen Leitfaden ist. In diesem Artikel werden Risiken in einem frühen Stadium, anfängliche Richtlinienanweisungen und frühe Prozesse zum Durchsetzen von Richtlinienanweisungen definiert.
 
