@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 7b80d61aea9f713de422b5575e7cb3617314857f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 4a1135ec23d508cdd0f013439bb034ff66cf0c4d
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022491"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967790"
 ---
 # <a name="initial-organization-alignment"></a>Erstausrichtung der Organisation
 
@@ -43,9 +43,11 @@ Vorausgesetzt, die empfohlene Struktur passt zu Ihrem Cloudeinführungsplan, ist
 - Welche Person ist für die Definition dieser Governancekontrollen verantwortlich?
 - Gibt es noch andere Funktionen oder Personen, die im Rahmen des Cloudeinführungsplans Verantwortung tragen?
 
+Nachdem Sie die Antworten auf diese Fragen dokumentiert haben, können Sie [Pläne für die Qualifikationsbereitschaft](./adapt-roles-skills-processes.md) definieren, um diese Personen auf die bevorstehende Arbeit zu vorzubereiten.
+
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nachdem Sie die Antworten auf diese Fragen dokumentiert haben, fahren Sie mit dem [Artikel zur Qualifikationsbereitschaft](./adapt-roles-skills-processes.md) fort, um Pläne für die Vorbereitung dieser Personen auf die bevorstehende Arbeit zu definieren.
+Finden Sie heraus, wie Sie die Cloudeinführung planen.
 
 > [!div class="nextstepaction"]
-> [Definieren eines Plans für die Qualifikationsbereitschaft](./adapt-roles-skills-processes.md)
+> [Planen der Cloudeinführung](./plan-intro.md)

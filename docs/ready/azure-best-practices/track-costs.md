@@ -8,12 +8,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e026ac8c46fd8c39d2c6ff36c3612fed2bed7e82
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 67313af2166fbd8dab0f66abb8c6477079a049ad
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022157"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967755"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Nachverfolgen von Kosten für Geschäftseinheiten, Umgebungen oder Projekte
 
@@ -40,7 +40,7 @@ Um Kosteninformationen übergreifend für Geschäftseinheiten, Umgebungen und Pr
 
 ### <a name="resource-organization"></a>Ressourcenorganisation
 
-Es gibt mehrere Ansätze zum Organisieren von Ressourcen. In diesem folgenden Abschnitt wird eine bewährte Methode anhand der Anforderungen eines großen Unternehmens beschrieben, dessen Kostenstrukturen auf Geschäftseinheiten, geografische Regionen und IT-Organisationen verteilt sind. Eine ähnliche bewährte Methode für eine kleinere, weniger komplexe Organisation finden Sie unter [Governancelösung für kleine bis mittlere Unternehmen](../../govern/guides/standard/index.md).
+Es gibt mehrere Ansätze zum Organisieren von Ressourcen. In diesem folgenden Abschnitt wird eine bewährte Methode anhand der Anforderungen eines großen Unternehmens beschrieben, dessen Kostenstrukturen auf Geschäftseinheiten, geografische Regionen und IT-Organisationen verteilt sind. Eine ähnliche bewährte Methode für eine kleinere, weniger komplexe Organisation finden Sie unter [Governanceleitfaden für Standardunternehmen](../../govern/guides/standard/index.md).
 
 Bei einem großen Unternehmen erstellt das folgende Modell für Verwaltungsgruppen, Abonnements und Ressourcengruppen eine Hierarchie, die jedem Team die richtige Transparenz zum Ausführen seiner Aufgaben ermöglicht. Wenn das Unternehmen Kostenkontrolle benötigt, um eine Budgetüberschreitung zu verhindern, kann es Governancetools wie Azure Blueprints oder Azure Policy auf die Abonnements der Struktur anwenden, um zukünftige Fehler bei den Kosten zu vermeiden.
 

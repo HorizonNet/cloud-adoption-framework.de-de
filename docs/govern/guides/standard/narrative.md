@@ -1,5 +1,5 @@
 ---
-title: 'Standardunternehmensleitfaden: Die Geschichte hinter der Governancestrategie'
+title: 'Governanceleitfaden für Standardunternehmen: Die Geschichte hinter der Governancestrategie'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Diese Geschichte schildert einen Anwendungsfall für die Governance während der Journey zur Cloudeinführung eines Standardunternehmens.
 author: BrianBlanchard
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 434a4d0238a4633210d31013e9787c3a0a92fc7a
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: be679c1265907f2b4a6be86d82ce287dc94d4b70
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032258"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967469"
 ---
-# <a name="standard-enterprise-guide-the-narrative-behind-the-governance-strategy"></a>Standardunternehmensleitfaden: Die Geschichte hinter der Governancestrategie
+# <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>Governanceleitfaden für Standardunternehmen: Die Geschichte hinter der Governancestrategie
 
 Die folgende Geschichte schildert einen Anwendungsfall für die Governance während der [Journey zur Cloudeinführung eines Standardunternehmens](./index.md). Vor der Implementierung der Vorgehensweise ist es wichtig, die Annahmen und die Logik zu verstehen, die in dieser Geschichte dargestellt werden. So können Sie die Governancestrategie besser auf die Journey in Ihrer eigenen Organisation ausrichten.
 

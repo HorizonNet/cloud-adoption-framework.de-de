@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0d1aaa76f36125819ebb8f5c6225dc74bb60aabf
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: acc82a629adf32cd9a7bfe638b0ad176f1de7933
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032505"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967668"
 ---
 # <a name="governance-guide-for-complex-enterprises-the-supporting-narrative"></a>Governanceleitfaden für komplexe Unternehmen: Unterstützende Geschichte
 
-Die folgende Geschichte schildert einen Anwendungsfall für die [Governance während der Journey zur Cloudeinführung eines großen Unternehmens](./index.md). Bevor Sie die Empfehlungen in diesem Leitfaden umsetzen, müssen Sie die Annahmen und die Logik verstehen, die in dieser Geschichte dargestellt werden. So können Sie die Governancestrategie besser auf die Journey zur Cloudeinführung in Ihrer eigenen Organisation ausrichten.
+Die folgende Geschichte schildert einen Anwendungsfall für die [Governance während der Journey zur Cloudeinführung eines komplexen Unternehmens](./index.md). Bevor Sie die Empfehlungen in diesem Leitfaden umsetzen, müssen Sie die Annahmen und die Logik verstehen, die in dieser Geschichte dargestellt werden. So können Sie die Governancestrategie besser auf die Journey zur Cloudeinführung in Ihrer eigenen Organisation ausrichten.
 
 ## <a name="back-story"></a>Hintergrund
 

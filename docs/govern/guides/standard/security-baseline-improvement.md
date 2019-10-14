@@ -1,7 +1,7 @@
 ---
-title: 'Standardunternehmensleitfaden: Verbessern der Disziplin „Sicherheitsbaseline“'
+title: 'Governanceleitfaden für Standardunternehmen: Verbessern der Disziplin „Sicherheitsbaseline“'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Standardunternehmensleitfaden: Verbessern der Disziplin „Sicherheitsbaseline“'
+description: 'Governanceleitfaden für Standardunternehmen: Verbessern der Disziplin „Sicherheitsbaseline“'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 37d47b0a190506f84ed2b973b44ca731e70ad664
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 2e9a913ce0d27e2f15cb83bb842630fcc039f6cc
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223784"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967330"
 ---
-# <a name="standard-enterprise-guide-improve-the-security-baseline-discipline"></a>Standardunternehmensleitfaden: Verbessern der Disziplin „Sicherheitsbaseline“
+# <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Governanceleitfaden für Standardunternehmen: Verbessern der Disziplin „Sicherheitsbaseline“
 
 In diesem Artikel wird die Geschichte fortgeführt. Es werden Sicherheitskontrollen hinzugefügt, die das Verschieben geschützter Daten in die Cloud unterstützen.
 

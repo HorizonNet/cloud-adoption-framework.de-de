@@ -1,5 +1,5 @@
 ---
-title: 'Standardunternehmensleitfaden: Ausführlicher Leitfaden mit Erläuterung'
+title: 'Governanceleitfaden für Standardunternehmen: Ausführlicher Leitfaden mit Erläuterung'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: In diesem Artikel wird der ausführliche Leitfaden für Governance in Standardunternehmen erläutert.
 author: BrianBlanchard
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8f9bd9d7dadbd880265cc441b1e927ab835165cb
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 3f9149c3edc90a12b0e9dd1f99e20172cf277fb2
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223833"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967498"
 ---
-# <a name="standard-enterprise-guide-prescriptive-guidance-explained"></a>Standardunternehmensleitfaden: Ausführlicher Leitfaden mit Erläuterung
+# <a name="standard-enterprise-governance-guide-prescriptive-guidance-explained"></a>Governanceleitfaden für Standardunternehmen: Ausführlicher Leitfaden mit Erläuterung
 
 Der Governanceleitfaden beginnt mit einer Sammlung von anfänglichen [Unternehmensrichtlinien](./initial-corporate-policy.md). Diese Richtlinien werden verwendet, um ein Governance-MVP einzurichten, das [empfohlene Verfahren](./index.md) berücksichtigt.
 

@@ -1,7 +1,7 @@
 ---
-title: 'Standardunternehmensleitfaden: Verbessern der Ressourcenkonsistenz'
+title: 'Governanceleitfaden für Standardunternehmen: Verbessern der Ressourcenkonsistenz'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: 'Standardunternehmensleitfaden: Verbessern der Ressourcenkonsistenz'
+description: 'Governanceleitfaden für Standardunternehmen: Verbessern der Ressourcenkonsistenz'
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: bede887bcb4589b286920a79016701961a04b8b6
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d501f976613eae869228dfd75e4612f974997558
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222241"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967446"
 ---
-# <a name="standard-enterprise-guide-improving-resource-consistency"></a>Standardunternehmensleitfaden: Verbessern der Ressourcenkonsistenz
+# <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>Governanceleitfaden für Standardunternehmen: Verbessern der Ressourcenkonsistenz
 
 Dieser Artikel führt die Geschichte fort, indem Steuerelemente für Ressourcenkonsistenz hinzugefügt werden, um unternehmenskritische Apps zu unterstützen.
 

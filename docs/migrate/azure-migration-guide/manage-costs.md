@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c6b195a69622a4934f257090650a8ba6ce884025
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 7a5f3b3f9a50cf4a989d268788279f132a42efb7
+ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024805"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71967215"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Auf Migration ausgerichtete Kostenkontrollmechanismen
 
@@ -71,7 +71,7 @@ Die unten abgebildete resultierende Schätzung identifiziert die monatlichen Kos
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 - [Einrichten und Überprüfen einer Bewertung mit Azure Migrate](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
-- Einen umfassenderen Plan zur Kostenverwaltung für eine größere Anzahl von Ressourcen (Infrastruktur, Apps und Daten) bietet das [Governancemodell für das Framework für die Cloudeinführung (Cloud Adoption Framework)](../../govern/guides/index.md). Es enthält insbesondere Hinweise zur [Disziplin „Kostenverwaltung“](../../govern/cost-management/index.md) und den [Leitfaden zur Cost Management-Verbesserung im großen Unternehmen](../../govern/guides/complex/cost-management-improvement.md).
+- Einen umfassenderen Plan zur Kostenverwaltung für eine größere Anzahl von Ressourcen (Infrastruktur, Apps und Daten) bietet das [Governancemodell für das Framework für die Cloudeinführung (Cloud Adoption Framework)](../../govern/guides/index.md). Hierzu gehören insbesondere die Hinweise zur [Disziplin „Kostenverwaltung“](../../govern/cost-management/index.md) und der [Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Cost Management](../../govern/guides/complex/cost-management-improvement.md).
 
 # <a name="estimate-and-optimize-vm-costs-during-and-after-migrationtabestimateoptimize"></a>[Schätzen und Optimieren der VM-Kosten während und nach der Migration](#tab/EstimateOptimize)
 
@@ -104,7 +104,7 @@ Anhand dieser Analyse können Sie die Gesamtkosten, das Budget (falls vorhanden)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-- Einen umfassenderen Plan zur Kostenverwaltung für eine größere Anzahl von Ressourcen (Infrastruktur, Apps und Daten) bietet das [Governancemodell für das Framework für die Cloudeinführung (Cloud Adoption Framework)](../../govern/guides/index.md). Es enthält insbesondere Hinweise zur [Disziplin „Kostenverwaltung“](../../govern/cost-management/index.md) und den [Leitfaden zur inkrementellen Cost Management-Verbesserung im großen Unternehmen](../../govern/guides/complex/cost-management-improvement.md).
+- Einen umfassenderen Plan zur Kostenverwaltung für eine größere Anzahl von Ressourcen (Infrastruktur, Apps und Daten) bietet das [Governancemodell für das Framework für die Cloudeinführung (Cloud Adoption Framework)](../../govern/guides/index.md). Hierzu gehören insbesondere die Hinweise zur [Disziplin „Kostenverwaltung“](../../govern/cost-management/index.md) und der [Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Cost Management“](../../govern/guides/complex/cost-management-improvement.md).
 - Weitere Informationen zu Azure Advisor finden Sie unter [Reduzieren der Dienstkosten mit Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations).
 - Weitere Informationen zu Azure Cost Management finden Sie unter [Verstehen von und Arbeiten mit Bereichen](https://docs.microsoft.com/azure/cost-management/understand-work-scopes) und [Ermitteln und Analysieren von Kosten mit der Kostenanalyse](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis).
 
@@ -142,4 +142,4 @@ Für Hintergrundprozesse mit niedrigerer Priorität stellt Batch eine Möglichke
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-Einen umfassenderen Plan zur Kostenverwaltung für eine größere Anzahl von Ressourcen (Infrastruktur, Apps und Daten) bietet das [Governancemodell für das Framework für die Cloudeinführung (Cloud Adoption Framework)](../../govern/guides/index.md). Es enthält insbesondere Hinweise zur [Disziplin „Kostenverwaltung“](../../govern/cost-management/index.md) und den [Governance-Leitfaden zu inkrementellen Cost Management-Verbesserungen im großen Unternehmen](../../govern/guides/complex/cost-management-improvement.md).
+Einen umfassenderen Plan zur Kostenverwaltung für eine größere Anzahl von Ressourcen (Infrastruktur, Apps und Daten) bietet das [Governancemodell für das Framework für die Cloudeinführung (Cloud Adoption Framework)](../../govern/guides/index.md). Hierzu gehören insbesondere die Hinweise zur [Disziplin „Kostenverwaltung“](../../govern/cost-management/index.md) und der [Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Cost Management“](../../govern/guides/complex/cost-management-improvement.md).
