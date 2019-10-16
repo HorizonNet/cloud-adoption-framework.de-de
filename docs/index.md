@@ -8,12 +8,12 @@ layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
 ms.date: 07/04/2019
-ms.openlocfilehash: f7928418f583528cd08a0eeb5d7c77c724abe675
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 19a0b45359fb271d5d4d1355f0bf147f396dc976
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024439"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72377941"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Framework für die Einführung der Microsoft Cloud (Microsoft Cloud Adoption Framework)
 
@@ -159,7 +159,7 @@ Das Framework für die Cloudeinführung befindet sich momentan in der Public Pr
 - [Cloudmigration](./migrate/index.md)
 - [Cloud Governance](./govern/guides/index.md)
 
-Wir erweitern das Framework für die Cloudeinführung auf dem Weg zur allgemeinen Verfügbarkeit (GA-Release) häufig. Mit der Erweiterung werden sowohl die einzelnen Abschnitte vertieft als auch neue Abschnitte mit Inhalten hinzugefügt. Weitere Informationen finden Sie in der [Roadmap für das Framework für die Einführung der Cloud](./reference/roadmap.md).
+Wir erweitern das Framework für die Cloudeinführung auf dem Weg zur allgemeinen Verfügbarkeit (GA-Release) häufig. Mit der Erweiterung werden sowohl die einzelnen Abschnitte vertieft als auch neue Abschnitte mit Inhalten hinzugefügt. Weitere Informationen finden Sie in der [Roadmap für das Framework für die Einführung der Cloud](./reference/index.md).
 
 ## <a name="intent"></a>Absicht
 

@@ -92,24 +92,24 @@
       items:
         - name: Übersicht
           href: ready/index.md
-        - name: Leitfaden für die Azure-Bereitschaft
+        - name: Azure-Einrichtungsleitfaden
           items:
             - name: Vorbereitung
-              href: ready/azure-readiness-guide/index.md
+              href: ready/azure-setup-guide/index.md
             - name: Organisieren Ihrer Ressourcen
-              href: ready/azure-readiness-guide/organize-resources.md
+              href: ready/azure-setup-guide/organize-resources.md
             - name: Verwalten des Zugriffs
-              href: ready/azure-readiness-guide/manage-access.md
+              href: ready/azure-setup-guide/manage-access.md
             - name: Verwalten von Kosten und Abrechnung
-              href: ready/azure-readiness-guide/manage-costs.md
+              href: ready/azure-setup-guide/manage-costs.md
             - name: 'Planen von Governance, Sicherheit und Konformität'
-              href: ready/azure-readiness-guide/govern-org-compliance.md
+              href: ready/azure-setup-guide/govern-org-compliance.md
             - name: Verwenden der Überwachung und Berichterstellung
-              href: ready/azure-readiness-guide/monitoring-reporting.md
+              href: ready/azure-setup-guide/monitoring-reporting.md
             - name: Sicherstellen des aktuellen Stands von Azure
-              href: ready/azure-readiness-guide/staying-current.md
+              href: ready/azure-setup-guide/staying-current.md
             - name: Bereitstellen einer Landezone für die Migration
-              href: ready/azure-readiness-guide/migration-landing-zone.md
+              href: ready/azure-setup-guide/migration-landing-zone.md
         - name: Überlegungen zu Landezonen
           items:
             - name: Übersicht
@@ -404,196 +404,196 @@
           items:
             - name: Übersicht
               href: innovate/index.md
+    - name: Steuern
+      items:
+        - name: Übersicht
+          href: govern/index.md
+        - name: Methodik
+          href: govern/methodology.md
+        - name: Vergleichstest
+          href: govern/benchmark.md
+        - name: Anfängliche Governancegrundlage
+          href: govern/initial-foundation.md
+        - name: Verbesserungen der Governancegrundlage
+          href: govern/foundation-improvements.md
+        - name: Governance-Leitfäden
+          items:
+            - name: Übersicht
+              href: govern/guides/index.md
+            - name: Governanceleitfaden für Standardunternehmen
+              items:
+                - name: Übersicht
+                  href: govern/guides/standard/index.md
+                - name: Erzählung
+                  href: govern/guides/standard/narrative.md
+                - name: Anfängliche Unternehmensrichtlinie
+                  href: govern/guides/standard/initial-corporate-policy.md
+                - name: Ausführlicher Leitfaden
+                  href: govern/guides/standard/prescriptive-guidance.md
+                - name: Verbessern der Disziplin „Sicherheitsbaseline“
+                  href: govern/guides/standard/security-baseline-improvement.md
+                - name: Verbessern der Disziplin „Ressourcenkonsistenz“
+                  href: govern/guides/standard/resource-consistency-improvement.md
+                - name: Verbessern der Disziplin „Kostenverwaltung“
+                  href: govern/guides/standard/cost-management-improvement.md
+                - name: Szenarien mit mehreren Clouds
+                  href: govern/guides/standard/multicloud-improvement.md
+            - name: Governanceleitfaden für komplexe Unternehmen
+              items:
+                - name: Übersicht
+                  href: govern/guides/complex/index.md
+                - name: Erzählung
+                  href: govern/guides/complex/narrative.md
+                - name: Anfängliche Unternehmensrichtlinie
+                  href: govern/guides/complex/initial-corporate-policy.md
+                - name: Ausführlicher Leitfaden
+                  href: govern/guides/complex/prescriptive-guidance.md
+                - name: Verbessern der Disziplin „Identitätsbaseline“
+                  href: govern/guides/complex/identity-baseline-improvement.md
+                - name: Verbessern der Disziplin „Sicherheitsbaseline“
+                  href: govern/guides/complex/security-baseline-improvement.md
+                - name: Verbessern der Disziplin „Ressourcenkonsistenz“
+                  href: govern/guides/complex/resource-consistency-improvement.md
+                - name: Verbessern der Disziplin „Kostenverwaltung“
+                  href: govern/guides/complex/cost-management-improvement.md
+                - name: Szenarien mit mehreren Clouds
+                  href: govern/guides/complex/multicloud-improvement.md
+                - name: Mehrere Governance-Ebenen
+                  href: govern/guides/complex/multiple-layers-of-governance.md
+        - name: Governanceüberlegungen
+          items:
+            - name: Auswerten der Unternehmensrichtlinie
+              href: govern/corporate-policy.md
+            - name: Cloudkompatible Unternehmensrichtlinie und Compliance
+              items:
+                - name: Bereitmachen der Unternehmensrichtlinie für die Cloud
+                  href: govern/policy-compliance/index.md
+                - name: Grundlegendes zu Geschäftsrisiken
+                  href: govern/policy-compliance/business-risk.md
+                - name: Evaluieren der Risikotoleranz
+                  href: govern/policy-compliance/risk-tolerance.md
+                - name: Definieren der Unternehmensrichtlinie
+                  href: govern/policy-compliance/policy-definition.md
+                - name: Anpassen eines Entwurfs an die Richtlinie
+                  href: govern/policy-compliance/governance-alignment.md
+                - name: Festlegen von Prozessen zur Einhaltung von Richtlinien
+                  href: govern/policy-compliance/processes.md
+                - name: Compliance
+                  href: govern/policy-compliance/regulatory-compliance.md
+                - name: Bereitschaft der Cloudsicherheit
+                  href: govern/policy-compliance/cloud-security-readiness.md
+                - name: Überprüfung von Cloudrichtlinien
+                  href: govern/policy-compliance/cloud-policy-review.md
+                - name: Datenklassifizierung
+                  href: govern/policy-compliance/data-classification.md
+        - name: Disziplinen von Cloudgovernance
+          href: govern/governance-disciplines.md
+        - name: Implementieren der Disziplinen der Cloudgovernance
+          items:
+            - name: Kostenverwaltung
+              items:
+                - name: Übersicht über das Kostenmanagement
+                  href: govern/cost-management/index.md
+                - name: Herunterladen der Vorlage
+                  href: govern/cost-management/template.md
+                - name: Grundlegendes zu Geschäftsrisiken
+                  href: govern/cost-management/business-risks.md
+                - name: 'Risikotoleranz: Metriken und Indikatoren'
+                  href: govern/cost-management/metrics-tolerance.md
+                - name: Beispiele für Kostenmanagementrichtlinien
+                  href: govern/cost-management/policy-statements.md
+                - name: Prozesse für Richtlinienkonformität
+                  href: govern/cost-management/compliance-processes.md
+                - name: Verbessern des Kostenmanagements
+                  href: govern/cost-management/discipline-improvement.md
+                - name: Azure-Tools für das Kostenmanagement
+                  href: govern/cost-management/toolchain.md
+            - name: Sicherheitsbaseline
+              items:
+                - name: Übersicht über die Disziplin „Sicherheitsbaseline“
+                  href: govern/security-baseline/index.md
+                - name: Herunterladen der Vorlage
+                  href: govern/security-baseline/template.md
+                - name: Grundlegendes zu Geschäftsrisiken
+                  href: govern/security-baseline/business-risks.md
+                - name: 'Risikotoleranz: Metriken und Indikatoren'
+                  href: govern/security-baseline/metrics-tolerance.md
+                - name: Beispiel für Sicherheitsbaseline-Richtlinien
+                  href: govern/security-baseline/policy-statements.md
+                - name: Prozesse für Richtlinienkonformität
+                  href: govern/security-baseline/compliance-processes.md
+                - name: Verbessern der Sicherheitsbaseline
+                  href: govern/security-baseline/discipline-improvement.md
+                - name: Cloudnative Sicherheitsbaseline
+                  href: govern/security-baseline/cloud-native-policy.md
+                - name: Zusätzlicher Azure-Sicherheitsleitfaden
+                  href: govern/security-baseline/azure-security-guidance.md
+                - name: Azure-Tools für die Sicherheitsbaseline
+                  href: govern/security-baseline/toolchain.md
+            - name: Identitätsbaseline
+              items:
+                - name: Übersicht über die Identitätsbaseline
+                  href: govern/identity-baseline/index.md
+                - name: Herunterladen der Vorlage
+                  href: govern/identity-baseline/template.md
+                - name: Grundlegendes zu Geschäftsrisiken
+                  href: govern/identity-baseline/business-risks.md
+                - name: 'Risikotoleranz: Metriken und Indikatoren'
+                  href: govern/identity-baseline/metrics-tolerance.md
+                - name: Beispiel für Identitätsbaseline-Richtlinien
+                  href: govern/identity-baseline/policy-statements.md
+                - name: Prozesse für Richtlinienkonformität
+                  href: govern/identity-baseline/compliance-processes.md
+                - name: Verbessern der Identitätsbaseline
+                  href: govern/identity-baseline/discipline-improvement.md
+                - name: Azure-Tools für die Identitätsbaseline
+                  href: govern/identity-baseline/toolchain.md
+            - name: Ressourcenkonsistenz
+              items:
+                - name: Übersicht über Ressourcenkonsistenz
+                  href: govern/resource-consistency/index.md
+                - name: Herunterladen der Vorlage
+                  href: govern/resource-consistency/template.md
+                - name: Grundlegendes zu Geschäftsrisiken
+                  href: govern/resource-consistency/business-risks.md
+                - name: 'Risikotoleranz: Metriken und Indikatoren'
+                  href: govern/resource-consistency/metrics-tolerance.md
+                - name: Beispiele für Ressourcenkonsistenz-Richtlinien
+                  href: govern/resource-consistency/policy-statements.md
+                - name: Prozesse für Richtlinienkonformität
+                  href: govern/resource-consistency/compliance-processes.md
+                - name: Verbessern der Ressourcenkonsistenz
+                  href: govern/resource-consistency/discipline-improvement.md
+                - name: Azure-Tools für Ressourcenkonsistenz
+                  href: govern/resource-consistency/toolchain.md
+                - name: Ressourcenzugriffsverwaltung
+                  href: govern/resource-consistency/resource-access-management.md
+                - name: Governance-Entwurf für eine einfache Workload
+                  href: govern/resource-consistency/governance-simple-workload.md
+                - name: Governance-Entwurf für mehrere Teams
+                  href: govern/resource-consistency/governance-multiple-teams.md
+            - name: Beschleunigung der Bereitstellung
+              items:
+                - name: Übersicht über die Beschleunigung der Bereitstellung
+                  href: govern/deployment-acceleration/index.md
+                - name: Herunterladen der Vorlage
+                  href: govern/deployment-acceleration/template.md
+                - name: Grundlegendes zu Geschäftsrisiken
+                  href: govern/deployment-acceleration/business-risks.md
+                - name: 'Risikotoleranz: Metriken und Indikatoren'
+                  href: govern/deployment-acceleration/metrics-tolerance.md
+                - name: Beispiel für Richtlinien für die Beschleunigung der Bereitstellung
+                  href: govern/deployment-acceleration/policy-statements.md
+                - name: Prozesse für Richtlinienkonformität
+                  href: govern/deployment-acceleration/compliance-processes.md
+                - name: Verbessern der Beschleunigung der Bereitstellung
+                  href: govern/deployment-acceleration/discipline-improvement.md
+                - name: Azure-Tools für die Beschleunigung der Bereitstellung
+                  href: govern/deployment-acceleration/toolchain.md
     - name: Betrieb
       items:
         - name: Übersicht
           href: operate/index.md
-        - name: Steuern
-          items:
-            - name: Übersicht
-              href: govern/index.md
-            - name: Methodik
-              href: govern/methodology.md
-            - name: Vergleichstest
-              href: govern/benchmark.md
-            - name: Anfängliche Governancegrundlage
-              href: govern/initial-foundation.md
-            - name: Verbesserungen der Governancegrundlage
-              href: govern/foundation-improvements.md
-            - name: Governance-Leitfäden
-              items:
-                - name: Übersicht
-                  href: govern/guides/index.md
-                - name: Governanceleitfaden für Standardunternehmen
-                  items:
-                    - name: Übersicht
-                      href: govern/guides/standard/index.md
-                    - name: Erzählung
-                      href: govern/guides/standard/narrative.md
-                    - name: Anfängliche Unternehmensrichtlinie
-                      href: govern/guides/standard/initial-corporate-policy.md
-                    - name: Ausführlicher Leitfaden
-                      href: govern/guides/standard/prescriptive-guidance.md
-                    - name: Verbessern der Disziplin „Sicherheitsbaseline“
-                      href: govern/guides/standard/security-baseline-improvement.md
-                    - name: Verbessern der Disziplin „Ressourcenkonsistenz“
-                      href: govern/guides/standard/resource-consistency-improvement.md
-                    - name: Verbessern der Disziplin „Kostenverwaltung“
-                      href: govern/guides/standard/cost-management-improvement.md
-                    - name: Szenarien mit mehreren Clouds
-                      href: govern/guides/standard/multicloud-improvement.md
-                - name: Governanceleitfaden für komplexe Unternehmen
-                  items:
-                    - name: Übersicht
-                      href: govern/guides/complex/index.md
-                    - name: Erzählung
-                      href: govern/guides/complex/narrative.md
-                    - name: Anfängliche Unternehmensrichtlinie
-                      href: govern/guides/complex/initial-corporate-policy.md
-                    - name: Ausführlicher Leitfaden
-                      href: govern/guides/complex/prescriptive-guidance.md
-                    - name: Verbessern der Disziplin „Identitätsbaseline“
-                      href: govern/guides/complex/identity-baseline-improvement.md
-                    - name: Verbessern der Disziplin „Sicherheitsbaseline“
-                      href: govern/guides/complex/security-baseline-improvement.md
-                    - name: Verbessern der Disziplin „Ressourcenkonsistenz“
-                      href: govern/guides/complex/resource-consistency-improvement.md
-                    - name: Verbessern der Disziplin „Kostenverwaltung“
-                      href: govern/guides/complex/cost-management-improvement.md
-                    - name: Szenarien mit mehreren Clouds
-                      href: govern/guides/complex/multicloud-improvement.md
-                    - name: Mehrere Governance-Ebenen
-                      href: govern/guides/complex/multiple-layers-of-governance.md
-            - name: Governanceüberlegungen
-              items:
-                - name: Auswerten der Unternehmensrichtlinie
-                  href: govern/corporate-policy.md
-                - name: Cloudkompatible Unternehmensrichtlinie und Compliance
-                  items:
-                    - name: Bereitmachen der Unternehmensrichtlinie für die Cloud
-                      href: govern/policy-compliance/index.md
-                    - name: Grundlegendes zu Geschäftsrisiken
-                      href: govern/policy-compliance/business-risk.md
-                    - name: Evaluieren der Risikotoleranz
-                      href: govern/policy-compliance/risk-tolerance.md
-                    - name: Definieren der Unternehmensrichtlinie
-                      href: govern/policy-compliance/policy-definition.md
-                    - name: Anpassen eines Entwurfs an die Richtlinie
-                      href: govern/policy-compliance/governance-alignment.md
-                    - name: Festlegen von Prozessen zur Einhaltung von Richtlinien
-                      href: govern/policy-compliance/processes.md
-                    - name: Compliance
-                      href: govern/policy-compliance/regulatory-compliance.md
-                    - name: Bereitschaft der Cloudsicherheit
-                      href: govern/policy-compliance/cloud-security-readiness.md
-                    - name: Überprüfung von Cloudrichtlinien
-                      href: govern/policy-compliance/cloud-policy-review.md
-                    - name: Datenklassifizierung
-                      href: govern/policy-compliance/data-classification.md
-                - name: Disziplinen von Cloudgovernance
-                  href: govern/governance-disciplines.md
-                - name: Implementieren der Disziplinen der Cloudgovernance
-                  items:
-                    - name: Kostenverwaltung
-                      items:
-                        - name: Übersicht über das Kostenmanagement
-                          href: govern/cost-management/index.md
-                        - name: Herunterladen der Vorlage
-                          href: govern/cost-management/template.md
-                        - name: Grundlegendes zu Geschäftsrisiken
-                          href: govern/cost-management/business-risks.md
-                        - name: 'Risikotoleranz: Metriken und Indikatoren'
-                          href: govern/cost-management/metrics-tolerance.md
-                        - name: Beispiele für Kostenmanagementrichtlinien
-                          href: govern/cost-management/policy-statements.md
-                        - name: Prozesse für Richtlinienkonformität
-                          href: govern/cost-management/compliance-processes.md
-                        - name: Verbessern des Kostenmanagements
-                          href: govern/cost-management/discipline-improvement.md
-                        - name: Azure-Tools für das Kostenmanagement
-                          href: govern/cost-management/toolchain.md
-                    - name: Sicherheitsbaseline
-                      items:
-                        - name: Übersicht über die Disziplin „Sicherheitsbaseline“
-                          href: govern/security-baseline/index.md
-                        - name: Herunterladen der Vorlage
-                          href: govern/security-baseline/template.md
-                        - name: Grundlegendes zu Geschäftsrisiken
-                          href: govern/security-baseline/business-risks.md
-                        - name: 'Risikotoleranz: Metriken und Indikatoren'
-                          href: govern/security-baseline/metrics-tolerance.md
-                        - name: Beispiel für Sicherheitsbaseline-Richtlinien
-                          href: govern/security-baseline/policy-statements.md
-                        - name: Prozesse für Richtlinienkonformität
-                          href: govern/security-baseline/compliance-processes.md
-                        - name: Verbessern der Sicherheitsbaseline
-                          href: govern/security-baseline/discipline-improvement.md
-                        - name: Cloudnative Sicherheitsbaseline
-                          href: govern/security-baseline/cloud-native-policy.md
-                        - name: Zusätzlicher Azure-Sicherheitsleitfaden
-                          href: govern/security-baseline/azure-security-guidance.md
-                        - name: Azure-Tools für die Sicherheitsbaseline
-                          href: govern/security-baseline/toolchain.md
-                    - name: Identitätsbaseline
-                      items:
-                        - name: Übersicht über die Identitätsbaseline
-                          href: govern/identity-baseline/index.md
-                        - name: Herunterladen der Vorlage
-                          href: govern/identity-baseline/template.md
-                        - name: Grundlegendes zu Geschäftsrisiken
-                          href: govern/identity-baseline/business-risks.md
-                        - name: 'Risikotoleranz: Metriken und Indikatoren'
-                          href: govern/identity-baseline/metrics-tolerance.md
-                        - name: Beispiel für Identitätsbaseline-Richtlinien
-                          href: govern/identity-baseline/policy-statements.md
-                        - name: Prozesse für Richtlinienkonformität
-                          href: govern/identity-baseline/compliance-processes.md
-                        - name: Verbessern der Identitätsbaseline
-                          href: govern/identity-baseline/discipline-improvement.md
-                        - name: Azure-Tools für die Identitätsbaseline
-                          href: govern/identity-baseline/toolchain.md
-                    - name: Ressourcenkonsistenz
-                      items:
-                        - name: Übersicht über Ressourcenkonsistenz
-                          href: govern/resource-consistency/index.md
-                        - name: Herunterladen der Vorlage
-                          href: govern/resource-consistency/template.md
-                        - name: Grundlegendes zu Geschäftsrisiken
-                          href: govern/resource-consistency/business-risks.md
-                        - name: 'Risikotoleranz: Metriken und Indikatoren'
-                          href: govern/resource-consistency/metrics-tolerance.md
-                        - name: Beispiele für Ressourcenkonsistenz-Richtlinien
-                          href: govern/resource-consistency/policy-statements.md
-                        - name: Prozesse für Richtlinienkonformität
-                          href: govern/resource-consistency/compliance-processes.md
-                        - name: Verbessern der Ressourcenkonsistenz
-                          href: govern/resource-consistency/discipline-improvement.md
-                        - name: Azure-Tools für Ressourcenkonsistenz
-                          href: govern/resource-consistency/toolchain.md
-                        - name: Ressourcenzugriffsverwaltung
-                          href: govern/resource-consistency/resource-access-management.md
-                        - name: Governance-Entwurf für eine einfache Workload
-                          href: govern/resource-consistency/governance-simple-workload.md
-                        - name: Governance-Entwurf für mehrere Teams
-                          href: govern/resource-consistency/governance-multiple-teams.md
-                    - name: Beschleunigung der Bereitstellung
-                      items:
-                        - name: Übersicht über die Beschleunigung der Bereitstellung
-                          href: govern/deployment-acceleration/index.md
-                        - name: Herunterladen der Vorlage
-                          href: govern/deployment-acceleration/template.md
-                        - name: Grundlegendes zu Geschäftsrisiken
-                          href: govern/deployment-acceleration/business-risks.md
-                        - name: 'Risikotoleranz: Metriken und Indikatoren'
-                          href: govern/deployment-acceleration/metrics-tolerance.md
-                        - name: Beispiel für Richtlinien für die Beschleunigung der Bereitstellung
-                          href: govern/deployment-acceleration/policy-statements.md
-                        - name: Prozesse für Richtlinienkonformität
-                          href: govern/deployment-acceleration/compliance-processes.md
-                        - name: Verbessern der Beschleunigung der Bereitstellung
-                          href: govern/deployment-acceleration/discipline-improvement.md
-                        - name: Azure-Tools für die Beschleunigung der Bereitstellung
-                          href: govern/deployment-acceleration/toolchain.md
         - name: Organisieren
           items:
             - name: Verwalten der Organisationsausrichtung
@@ -681,7 +681,7 @@
     - name: Verweis
       items:
         - name: 'Framework für die Cloudeinführung (Cloud Adoption Framework, CAF): Roadmap'
-          href: reference/roadmap.md
+          href: reference/index.md
         - name: Leitfaden zur Entscheidungsfindung
           items:
             - name: Übersicht

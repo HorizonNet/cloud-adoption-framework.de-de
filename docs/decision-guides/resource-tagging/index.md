@@ -2,19 +2,19 @@
 title: Leitfaden zur Entscheidungsfindung für Ressourcenbenennung und -markierung
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Erfahren Sie mehr über Ressourcenorganisation und -markierung als Hauptdienst in Azure-Migrationen.
-author: rotycenh
-ms.author: v-tyhopk
+author: alexbuckgit
+ms.author: abuck
 ms.date: 02/11/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 4d28e0ec6dea61a96e463df8fd2717ed0a8c8f02
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ef226d55d6b16c69b35c57734de25efec6abaa00
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023643"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378032"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Ressourcenbenennung und -markierung
 
@@ -40,7 +40,7 @@ Bei Markierungsschemas mit geschäftlichem Fokus (beispielsweise Buchhaltung, Un
 
 Eine standardisierte Namenskonvention ist der Ausgangspunkt für die Organisation Ihrer in der Cloud gehosteten Ressourcen. Mit einem ordnungsgemäß strukturierten Benennungssystem können Sie Ressourcen sowohl zu Verwaltungs- als auch zu Abrechnungszwecken schnell identifizieren. Wenn in anderen Teilen Ihrer Organisation bereits IT-Namenskonventionen vorhanden sind, wägen Sie ab, ob Sie Ihre Namenskonventionen für die Cloud darauf abstimmen oder separate cloudbasierte Standards einrichten möchten.
 
-Beachten Sie auch, dass unterschiedliche Azure-Ressourcentypen unterschiedliche [Benennungsanforderungen](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions#naming-rules-and-restrictions) aufweisen. Ihre Namenskonventionen müssen mit diesen Benennungsanforderungen kompatibel sein.
+Beachten Sie auch, dass unterschiedliche Azure-Ressourcentypen unterschiedliche [Benennungsanforderungen](../../ready/considerations/naming-and-tagging.md) aufweisen. Ihre Namenskonventionen müssen mit diesen Benennungsanforderungen kompatibel sein.
 
 ## <a name="resource-tagging-patterns"></a>Ressourcenmarkierungsmuster
 
