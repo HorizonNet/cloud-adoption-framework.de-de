@@ -8,17 +8,17 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 6e5a9b00ff7cb6a2f8b16ee62f9e61f4ecae3906
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: b7a2ae0457550189df66b8aa290fd9835cb11904
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223989"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378160"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure-Unternehmensgerüst: Präskriptive Abonnementgovernance
 
 > [!NOTE]
-> Azure-Unternehmensgerüste wurden in das Microsoft Cloud Adoption Framework integriert. Der Inhalt dieses Artikels wird jetzt im Abschnitt zur [Bereitschaft](../ready/index.md) des neuen Frameworks dargestellt. Dieser Artikel wird Anfang 2020 zurückgezogen. Informationen zur Verwendung des neuen Prozesses finden Sie unter [Übersicht zur Bereitschaft](../ready/index.md), [Erstellen Ihrer ersten Landezone](../ready/azure-readiness-guide/migration-landing-zone.md) und/oder [Überlegungen zur Landezone](../ready/considerations/index.md).
+> Azure-Unternehmensgerüste wurden in das Microsoft Cloud Adoption Framework integriert. Der Inhalt dieses Artikels wird jetzt im Abschnitt zur [Bereitschaft](../ready/index.md) des neuen Frameworks dargestellt. Dieser Artikel wird Anfang 2020 zurückgezogen. Informationen zur Verwendung des neuen Prozesses finden Sie unter [Übersicht zur Bereitschaft](../ready/index.md), [Erstellen Ihrer ersten Landezone](../ready/azure-setup-guide/migration-landing-zone.md) und/oder [Überlegungen zur Landezone](../ready/considerations/index.md).
 
 Immer mehr Unternehmen führen für Mobilität und Flexibilität eine öffentliche Cloud ein. Sie setzen auf die Stärken der Cloud, um Umsatz zu generieren und die Ressourcennutzung im Unternehmen zu optimieren. Microsoft Azure bietet eine Vielzahl von Diensten und Funktionen, die Unternehmen wie Bausteine zusammenstellen können, um ein umfangreiches Spektrum an Workloads und Anwendungen zu berücksichtigen.
 

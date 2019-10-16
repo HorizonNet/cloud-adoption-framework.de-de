@@ -8,12 +8,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8fbdd20c435d4aed8a284174d813abc8d391171b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 632ba4f74046636a2a41d9666c5c58784290c9b4
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022849"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378348"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Bewährte Methoden zum Einrichten von Netzwerken für zu Azure migrierte Workloads
 
@@ -120,7 +120,7 @@ Azure fügt standardmäßig einen DNS-Server hinzu, wenn Sie ein VNET bereitstel
 **Weitere Informationen:**
 
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/migrate/contoso-migration-infrastructure) über die Namensauflösung, wenn Sie einen eigenen DNS-Server verwenden.
-- [Erfahren Sie mehr](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions?toc=%2fazure%2fvirtual-network%2ftoc.json#naming-subscriptions) über DNS-Benennungsregeln und -Einschränkungen.
+- [Erfahren Sie mehr](../../ready/considerations/naming-and-tagging.md) über DNS-Benennungsregeln und -Einschränkungen.
 
 ## <a name="best-practice-set-up-availability-zones"></a>Bewährte Methode: Einrichten von Verfügbarkeitszonen
 

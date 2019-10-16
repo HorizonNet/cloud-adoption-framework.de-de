@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7ec216152adb4ed55b2a1eab03a8a98cd2ce8332
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 96752e360442c2532ce48d61dd69b84ae3641ddd
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022614"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378393"
 ---
 # <a name="prerequisites-for-migration"></a>Voraussetzungen für die Migration
 
@@ -60,7 +60,7 @@ Zusätzlich zur Verantwortlichkeit auf hoher Ebene gibt es Maßnahmen, für die 
 - **Change Management-Bereitschaft** Erstellen und kommunizieren Sie den Plan zur Nachverfolgung technischer Änderungen während der Migration. Weitere Informationen zu diesem Thema werden im dritten Quartal 2019 verfügbar sein.
 - **Ausrichtung der Geschäftskunden** Erstellen Sie einen Plan zur Vorbereitung der Geschäftskundencommunity auf die Durchführung der Migration. Weitere Informationen zu diesem Thema werden im dritten Quartal 2019 verfügbar sein.
 - **Bestandsaufnahme und Analyse des digitalen Bestands** Die Ausführung der zur Bestandsaufnahme und Analyse des digitalen Bestands erforderlichen Tools. Weitere Informationen finden Sie im Framework für die Cloudeinführung in der Diskussion zu [digitalen Ressourcen](../../../digital-estate/index.md).
-- **Cloudbereitschaft** Bewerten Sie die Zielbereitstellungsumgebung, um sicherzustellen, dass sie den Anforderungen der ersten wenigen Workloadkandidaten entspricht. Weitere Informationen finden Sie im [Leitfaden für die Azure-Bereitschaft](../../../ready/azure-readiness-guide/index.md).
+- **Cloudbereitschaft** Bewerten Sie die Zielbereitstellungsumgebung, um sicherzustellen, dass sie den Anforderungen der ersten wenigen Workloadkandidaten entspricht. Weitere Informationen finden Sie im [Leitfaden für die Azure-Einrichtung](../../../ready/azure-setup-guide/index.md).
 
 Die restlichen Artikel dieser Reihe helfen bei der Durchführung der einzelnen Artikel.
 
