@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 layout: LandingPage
-ms.openlocfilehash: fa7777f0c6be9c3cd93cfb24cac4ee8e87bee553
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: d5fada848418093b4d1ac7ae3ccc08b492544567
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816158"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378336"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -30,7 +30,7 @@ Die folgenden Aufgaben unterstützen Sie bei der Erstellung einer Landezone für
 
 <ul class="panelContent cardsF">
     <li style="display: flex; flex-direction: column;">
-        <a href="./azure-readiness-guide/index.md">
+        <a href="./azure-setup-guide/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -40,8 +40,8 @@ Die folgenden Aufgaben unterstützen Sie bei der Erstellung einer Landezone für
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>Leitfaden für die Azure-Bereitschaft</h3>
-Machen Sie sich anhand des Leitfadens für die Azure-Bereitschaft mit den Tools und Ansätzen vertraut, die Sie für die Erstellung einer Landezone benötigen.
+                            <h3>Azure-Einrichtungsleitfaden</h3>
+Machen Sie sich anhand des Leitfadens für die Azure-Einrichtung mit den Tools und Ansätzen vertraut, die Sie für die Erstellung einer Landezone benötigen.
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ Machen Sie sich anhand des Leitfadens für die Azure-Bereitschaft mit den Tools 
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./azure-readiness-guide/migration-landing-zone.md">
+        <a href="./azure-setup-guide/migration-landing-zone.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -111,7 +111,7 @@ Nutzen Sie die Überlegungen zu Landezonen, um die richtige Blaupause zu ermitte
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Bereiten Sie sich mithilfe des [Leitfadens für die Azure-Bereitschaft](./azure-readiness-guide/index.md) auf die Cloudeinführung vor.
+Bereiten Sie sich mithilfe des [Leitfadens für die Azure-Einrichtung](./azure-setup-guide/index.md) auf die Cloudeinführung vor.
 
 > [!div class="nextstepaction"]
-> [Einführung in das Azure-Setup](./azure-readiness-guide/index.md)
+> [Azure-Einrichtungsleitfaden](./azure-setup-guide/index.md)
