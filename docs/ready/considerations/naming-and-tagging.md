@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: fc4d337f844cef3408c9bc073e3848ee4612fca3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 003e212326959b593071f8230d2ddc0dba646909
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031993"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378282"
 ---
 # <a name="ready-recommended-naming-and-tagging-conventions"></a>Bereit: Empfohlene Namens- und Kennzeichnungskonventionen
 
 Das Verwalten von cloudbasierten Ressourcen in einer Weise, die das operative Management und die Buchhaltungsanforderungen unterstützt, ist eine häufige Herausforderung, die große Anstrengungen bei der Einführung von Cloudaktivitäten bedingt. Indem Sie klar definierte Benennungs- und Metadatentaggingkonventionen auf in der Cloud gehostete Ressourcen anwenden, können IT-Mitarbeiter Ressourcen schnell finden und verwalten. Klar definierte Namen und Tags helfen auch, Cloudressourcenkosten mithilfe von Mechanismen zur Rückbuchung und verbrauchsbasierter Kostenzuteilung an Geschäftsteams auszurichten.
 
-In dem für Azure Architecture Center geltenden Leitfaden [Namenskonventionen für Azure-Ressourcen](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions) finden Sie allgemeine Empfehlungen für Namenskonventionen sowie Erläuterungen zu Namenseinschränkungen und Plattformregeln. In den folgenden Erläuterungen wird dieser allgemeine Leitfaden um detailliertere Empfehlungen erweitert, die speziell zur Unterstützung bei Aktivitäten zur Einführung von Unternehmensclouds vorgesehen sind.
+In dem für Azure Architecture Center geltenden Leitfaden [Benennungsregeln und -einschränkungen für Azure-Ressourcen](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) finden Sie allgemeine Empfehlungen für Namenskonventionen sowie Erläuterungen zu Namenseinschränkungen und Plattformregeln. In den folgenden Erläuterungen wird dieser allgemeine Leitfaden um detailliertere Empfehlungen erweitert, die speziell zur Unterstützung bei Aktivitäten zur Einführung von Unternehmensclouds vorgesehen sind.
 
 Das Ändern von Ressourcennamen kann schwierig sein. Daher sollten Sie das Einführen einer umfassenden Namenskonvention zu einer Priorität für Ihre Cloudeinführungsteams erklären, bevor Sie mit jeder größeren Cloudbereitstellung beginnen.
 
@@ -141,6 +141,8 @@ Welche Tags Sie für Ressourcen anwenden und welche Tags erforderlich oder optio
 ## <a name="sample-naming-convention"></a>Beispielnamenskonvention
 
 Der folgende Abschnitt enthält Beispiele zu Namensschemas für gängige Azure-Ressourcentypen, die während der Bereitstellung einer Unternehmenscloud bereitgestellt werden.
+
+<!-- markdownlint-disable MD033 -->
 
 ### <a name="subscriptions"></a>Abonnements
 

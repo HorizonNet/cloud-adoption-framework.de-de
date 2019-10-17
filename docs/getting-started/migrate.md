@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: ab637312535f1497b8f506cb9636025460a7905b
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: fb521115d0a59af123bd78fdc2f4cc7c72939fb6
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223071"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378005"
 ---
 # <a name="getting-started-with-a-cloud-migration-journey"></a>Erste Schritte auf Ihrem Weg zur Cloudmigration
 
@@ -64,7 +64,7 @@ Der Fokus liegt hierbei auf der Migration oder Modernisierung von Workloads. Ein
 
 Cloudmigrationen werden oft als ein einzelnes Projekt innerhalb eines umfassenderen, Programms angesehen, um den IT-Betrieb zu optimieren und die Kosten oder die Komplexität zu reduzieren. Die Cloudimplementierungsmethodik hilft dabei, die technischen Aktivitäten in einer Reihe von Workloadmigrationen auf übergeordnete Unternehmenswerte abzustimmen, die in der Cloudstrategie und dem Cloudplan beschrieben sind.
 
-**Erste Schritte:** Informationen zu den ersten Schritten bei einer Cloudimplementierung finden Sie im [Azure-Migrationsleitfaden](../migrate/azure-migration-guide/index.md) und im [Leitfaden für die Azure-Bereitschaft](../ready/azure-readiness-guide/index.md). Darin werden die Tools und allgemeinen Prozesse beschrieben, die für eine erfolgreiche Ausführung einer Cloudimplementierung erforderlich sind. Wenn Sie Ihre erste Workload anhand dieser Leitfäden migrieren, hilft dies dem Team, erste Lernkurven bereits frühzeitig im Planungsprozess zu überwinden. Anschließend sollten Sie zusätzlich die [Checkliste für den erweiterten Umfang](../migrate/expanded-scope/index.md), die [bewährten Methoden für die Migration](../migrate/azure-best-practices/index.md) und [Überlegungen zur Migration](../migrate/migration-considerations/index.md) berücksichtigen, um die Basisleitlinien an die individuellen Einschränkungen, Prozesse, Teamstrukturen und Ziele Ihrer Bemühungen anzupassen.
+**Erste Schritte:** Informationen zu den ersten Schritten bei einer Cloudimplementierung finden Sie im [Azure-Migrationsleitfaden](../migrate/azure-migration-guide/index.md) und im [Leitfaden für die Azure-Einrichtung](../ready/azure-setup-guide/index.md). Darin werden die Tools und allgemeinen Prozesse beschrieben, die für eine erfolgreiche Ausführung einer Cloudimplementierung erforderlich sind. Wenn Sie Ihre erste Workload anhand dieser Leitfäden migrieren, hilft dies dem Team, erste Lernkurven bereits frühzeitig im Planungsprozess zu überwinden. Anschließend sollten Sie zusätzlich die [Checkliste für den erweiterten Umfang](../migrate/expanded-scope/index.md), die [bewährten Methoden für die Migration](../migrate/azure-best-practices/index.md) und [Überlegungen zur Migration](../migrate/migration-considerations/index.md) berücksichtigen, um die Basisleitlinien an die individuellen Einschränkungen, Prozesse, Teamstrukturen und Ziele Ihrer Bemühungen anzupassen.
 
 ## <a name="cloud-strategy-and-planning"></a>Cloudstrategie und -planung
 

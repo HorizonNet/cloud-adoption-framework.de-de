@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 590875a336b8af23723ab122e2af8f2290404ab3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 46c7d77aecc93f5c129f098145bfec97820995a2
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224138"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378072"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -49,7 +49,7 @@ Zur Unterstützung der obigen Kriterien enthält diese Liste ein Beispiel für e
 
 - **Wichtige Unternehmensereignisse:** Wenn ein wichtiges Unternehmensereignis der primäre Beweggrund ist, könnte die Implementierung eines Tools wie [Azure Site Recovery](../migrate/azure-migration-guide/migrate.md?tabs=Tools#azure-site-recovery) ein gutes erstes Projekt sein. Während der Migration können Sie dieses Tool zur schnellen Migration von Rechenzentrumsressourcen verwenden. Im ersten Projekt könnten Sie es jedoch ausschließlich als reines Tool für die Notfallwiederherstellung einsetzen, um die Abhängigkeit von Notfallwiederherstellungsressourcen im Rechenzentrum zu reduzieren.
 
-- **Beweggründe für Migration:** Wenn eine Migration der primäre Beweggrund ist, ist es ratsam, mit der Migration einer unkritischen Workload zu beginnen. Für die Migration Ihrer ersten Workload können der [Leitfaden für die Azure-Bereitschaft](../ready/azure-readiness-guide/index.md) und der [Leitfaden zur Azure-Migration](../migrate/azure-migration-guide/index.md) als Anleitung herangezogen werden.
+- **Beweggründe für Migration:** Wenn eine Migration der primäre Beweggrund ist, ist es ratsam, mit der Migration einer unkritischen Workload zu beginnen. Für die Migration Ihrer ersten Workload können der [Leitfaden für die Azure-Einrichtung](../ready/azure-setup-guide/index.md) und der [Leitfaden zur Azure-Migration](../migrate/azure-migration-guide/index.md) als Anleitung herangezogen werden.
 
 - **Beweggründe für Innovation:** Wenn Innovationen der primäre Beweggrund sind, könnte die Erstellung einer gezielten Entwicklungs-/Testumgebung ein ideales erstes Projekt sein.
 

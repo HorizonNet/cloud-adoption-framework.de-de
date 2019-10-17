@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d2366e4b5fad3344f324f9ff6f1b7dda0cc0b8c6
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5b4e192aac3cf73aca704ed2c04116cd0d2a972b
+ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022594"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72378383"
 ---
 # <a name="migration-environment-planning-checklist---validate-environmental-readiness-prior-to-migration"></a>Planungscheckliste für die Migrationsumgebung – Überprüfen der Umgebungsbereitschaft vor der Migration
 
@@ -35,7 +35,7 @@ Unabhängig davon, ob Sie sich bei Ihrer ersten Migration für eine umfassendere
 
 Wenn Sie planen, die Migration von Anfang an auf eine Cloud-Governance-Strategie auszurichten, müssen Sie die [Fünf Disziplinen der Cloud Governance](../../../govern/governance-disciplines.md) anwenden, um auf Informationen basierende Entscheidungen zu Richtlinien, Toolketten und Erzwingungsmechanismen treffen zu können, mit denen Ihre Cloudumgebung an die allgemeinen Unternehmensanforderungen angepasst wird. In den [Governance-Entwurfshandbüchern](../../../govern/guides/index.md) des Framework für die Cloudeinführung finden Sie Beispiele dafür, wie dieses Modell mit Azure-Diensten implementiert wird.
 
-Wenn Ihre anfänglichen Migrationen nicht eng mit einer umfassenderen Cloud-Governance-Strategie verbunden sind, müssen noch die allgemeinen Fragen der Organisations-, Zugriffs- und Infrastrukturplanung geklärt werden. Unterstützung bei diesen Entscheidungen für die Cloudbereitschaft finden Sie im [Leitfaden für die Azure-Bereitschaft](../../../ready/azure-readiness-guide/index.md).
+Wenn Ihre anfänglichen Migrationen nicht eng mit einer umfassenderen Cloud-Governance-Strategie verbunden sind, müssen noch die allgemeinen Fragen der Organisations-, Zugriffs- und Infrastrukturplanung geklärt werden. Unterstützung bei diesen Entscheidungen für die Cloudbereitschaft finden Sie im [Leitfaden für die Azure-Einrichtung](../../../ready/azure-setup-guide/index.md).
 
 > [!CAUTION]
 > Es wird dringend empfohlen, eine Governancestrategie für alles zu entwickeln, was über die anfängliche Workloadmigration hinausgeht.
