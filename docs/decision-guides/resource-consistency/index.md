@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 58fc2c1f3ac08fb38fcbd71e6dc1d91db768284e
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c32bbb180bc7b78a74681dc4a2554fd449bb21dc
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221109"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547886"
 ---
 # <a name="resource-consistency-decision-guide"></a>Leitfaden zur Entscheidungsfindung bei der Ressourcenkonsistenz
 
@@ -32,7 +32,7 @@ Mit zunehmender Bedeutung dieser Faktoren wird es auch immer wichtiger, eine kon
 
 In Azure sind [Ressourcengruppen](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) ein zentraler Mechanismus der Ressourcenorganisation, um Ressourcen innerhalb eines Abonnements logisch zu gruppieren.
 
-Ressourcengruppen fungieren als Container für Ressourcen mit einem gemeinsamen Lebenszyklus UND gemeinsamen Verwaltungseinschränkungen wie Richtlinien- oder RBAC-Anforderungen (Role-Based Access Control,rollenbasierte Zugriffssteuerung). Ressourcengruppen dürfen nicht geschachtelt sein, und Ressourcen dürfen nur einer einzelnen Ressourcengruppe angehören. Alle Aktionen auf der Steuerungsebene wirken sich auf alle Ressourcen in einer Ressourcengruppe aus. Beim Löschen einer Ressourcengruppe werden beispielsweise auch alle Ressourcen in dieser Gruppe entfernt. Bei der Ressourcengruppenverwaltung sollten folgende Punkte berücksichtigt werden:
+Ressourcengruppen fungieren als Container für Ressourcen mit einem gemeinsamen Lebenszyklus UND gemeinsamen Verwaltungseinschränkungen wie Richtlinien- oder RBAC-Anforderungen (Role-Based Access Control,rollenbasierte Zugriffssteuerung). Ressourcengruppen dürfen nicht geschachtelt sein, und Ressourcen dürfen nur zu einer einzigen Ressourcengruppe gehören. Alle Aktionen auf der Steuerungsebene wirken sich auf alle Ressourcen in einer Ressourcengruppe aus. Beim Löschen einer Ressourcengruppe werden beispielsweise auch alle Ressourcen in dieser Gruppe entfernt. Bei der Ressourcengruppenverwaltung sollten folgende Punkte berücksichtigt werden:
 
 1. Werden die Inhalte der Ressourcengruppe gemeinsam entwickelt?
 1. Werden die Inhalte der Ressourcengruppe gemeinsam und von den gleichen Personen oder Teams verwaltet, aktualisiert und überwacht?
@@ -47,7 +47,7 @@ Falls Sie eine der obigen Fragen mit _NEIN_ beantwortet haben, sollte die betref
 
 Aufbauend auf dem grundlegenden Mechanismus zur Gruppierung von Ressourcen bietet die Azure-Plattform ein System zur Verwendung von Vorlagen für die Bereitstellung Ihrer Ressourcen in der Cloudumgebung. Sie können Vorlagen verwenden, um konsistente Organisations- und Benennungskonventionen bei der Bereitstellung von Workloads zu erstellen und diese Aspekte der Ressourcenbereitstellung und des Verwaltungskonzepts zu erzwingen.
 
-[Azure Resource Manager-Vorlagen](/azure/azure-resource-manager/template-deployment-overview) ermöglichen Ihnen, Ihre Ressourcen unter Verwendung einer vorgegebenen Konfigurations- und Ressourcengruppenstruktur wiederholt in konsistentem Zustand bereitzustellen. Resource Manager-Vorlagen helfen Ihnen, eine Reihe von Standards als Grundlage für Ihre Bereitstellungen zu definieren.
+[Azure Resource Manager-Vorlagen](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview) ermöglichen Ihnen, Ihre Ressourcen unter Verwendung einer vorgegebenen Konfigurations- und Ressourcengruppenstruktur wiederholt in konsistentem Zustand bereitzustellen. Resource Manager-Vorlagen helfen Ihnen, eine Reihe von Standards als Grundlage für Ihre Bereitstellungen zu definieren.
 
 Beispielsweise können Sie eine Standardvorlage für die Bereitstellung einer Webserver-Workload nutzen, die zwei virtuelle Computer als Webserver sowie einen Lastenausgleich enthält, der den Datenverkehr auf die Server verteilt. Auf der Grundlage dieser Vorlage können Sie dann jedes Mal, wenn eine solche Art von Workload benötigt wird, eine strukturell identische Gruppe mit virtuellen Computern und Lastenausgleich erstellen und müssen lediglich den Bereitstellungsnamen und die verwendeten IP-Adressen ändern.
 
