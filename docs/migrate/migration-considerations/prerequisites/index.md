@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 96752e360442c2532ce48d61dd69b84ae3641ddd
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: ce4cf827f391c5fb15f6b9e78997dd0f02e1751b
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378393"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683778"
 ---
 # <a name="prerequisites-for-migration"></a>Voraussetzungen für die Migration
 
@@ -57,8 +57,8 @@ Ein einzelnes Mitglied jedes Teams sollte für jede der drei Definitionen von er
 Zusätzlich zur Verantwortlichkeit auf hoher Ebene gibt es Maßnahmen, für die eine Person oder Gruppe direkt verantwortlich sein muss. Im Folgenden sind einige dieser Verantwortlichkeiten aufgeführt, die diese Aktivitäten betreffen:
 
 - **Geschäftspriorisierung** Treffen von Geschäftsentscheidungen in Bezug auf die zu migrierenden Workloads und allgemeine Zeitvorgaben. Weitere Informationen finden Sie unter [Geschäftliche Gründe für die Cloudmigration](../../../strategy/motivations.md).
-- **Change Management-Bereitschaft** Erstellen und kommunizieren Sie den Plan zur Nachverfolgung technischer Änderungen während der Migration. Weitere Informationen zu diesem Thema werden im dritten Quartal 2019 verfügbar sein.
-- **Ausrichtung der Geschäftskunden** Erstellen Sie einen Plan zur Vorbereitung der Geschäftskundencommunity auf die Durchführung der Migration. Weitere Informationen zu diesem Thema werden im dritten Quartal 2019 verfügbar sein.
+- **Change Management-Bereitschaft** Erstellen und kommunizieren Sie den Plan zur Nachverfolgung technischer Änderungen während der Migration.
+- **Ausrichtung der Geschäftskunden** Erstellen Sie einen Plan zur Vorbereitung der Geschäftskundencommunity auf die Durchführung der Migration.
 - **Bestandsaufnahme und Analyse des digitalen Bestands** Die Ausführung der zur Bestandsaufnahme und Analyse des digitalen Bestands erforderlichen Tools. Weitere Informationen finden Sie im Framework für die Cloudeinführung in der Diskussion zu [digitalen Ressourcen](../../../digital-estate/index.md).
 - **Cloudbereitschaft** Bewerten Sie die Zielbereitstellungsumgebung, um sicherzustellen, dass sie den Anforderungen der ersten wenigen Workloadkandidaten entspricht. Weitere Informationen finden Sie im [Leitfaden für die Azure-Einrichtung](../../../ready/azure-setup-guide/index.md).
 
