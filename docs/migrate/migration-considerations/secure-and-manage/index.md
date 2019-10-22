@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 652637905f9de09972eed199f85245e99fb60e29
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 86a88183b7743a4fb326d325e97f90c4f4a5aa24
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022587"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683760"
 ---
 # <a name="secure-monitoring-and-management-tools"></a>Tools für sichere Überwachung und Verwaltung
 
@@ -41,6 +41,16 @@ Verlassen Sie sich auf die einheitliche Sicherheitsüberwachung und die erweiter
 
 Weitere Informationen zum Sichern von migrierten Ressourcen finden Sie unter [Azure Security Center](https://docs.microsoft.com/azure/security-center).
 
+## <a name="service-health-monitoring"></a>Überwachung der Dienstintegrität
+
+Mit Azure Service Health werden personalisierte Benachrichtigungen und Anleitungen bereitgestellt, wenn bei Ihnen Probleme mit Azure-Diensten auftreten. Dieser Dienst kann Sie benachrichtigen, die Auswirkungen von Problemen verdeutlichen und Sie über die Lösung eines Problem auf dem Laufenden halten. Er kann Sie auch bei der Vorbereitung auf geplante Wartungsmaßnahmen und Änderungen unterstützen, die sich u.U. auf die Verfügbarkeit Ihrer Ressourcen auswirken.
+
+- **Dashboard zur Dienstintegrität:** Überprüfen Sie die allgemeine Integrität Ihrer Azure-Dienste und -Regionen, und erhalten Sie detaillierte Aktualisierungen zu aktuellen Dienstproblemen, anstehenden geplanten Wartungsarbeiten und Dienstübergängen.
+- **Warnungen zur Dienstintegrität:** Konfigurieren Sie Warnungen, mit denen Sie und Ihre Teams über ein Dienstproblem (etwa einen Ausfall oder eine anstehende geplante Wartung) benachrichtigt werden.
+- **Verlauf der Dienstintegrität:** Sehen Sie sich frühere Dienstprobleme an, und laden Sie offizielle Zusammenfassungen und Berichte von Microsoft herunter.
+
+Erfahren Sie mehr über [Azure Service Health ](https://docs.microsoft.com/azure/service-health), um stets die Integrität Ihrer migrierten Ressourcen im Blick zu haben.
+
 ## <a name="protect-assets-and-data"></a>Schützen von Ressourcen und Daten
 
 Azure Backup bietet eine Möglichkeit, VMs, Dateien und Daten zu schützen. Azure Backup kann bei vielen Funktionen helfen, einschließlich:
@@ -51,3 +61,13 @@ Azure Backup bietet eine Möglichkeit, VMs, Dateien und Daten zu schützen. Azur
 - Wiederherstellen von geschützten Ressourcen
 
 Weitere Informationen zum Schützen migrierter Ressourcen finden Sie unter [Azure Backup](https://docs.microsoft.com/azure/backup).
+
+## <a name="optimize-resources"></a>Optimieren von Ressourcen
+
+Azure Advisor ist Ihr personalisierter Berater zu Best Practices in Azure. Azure Advisor analysiert Ihre Konfigurationen und Ihre Nutzungstelemetriedaten und bietet Empfehlungen zum Optimieren Ihrer Azure-Ressourcen im Hinblick auf Hochverfügbarkeit, Sicherheit, Leistung und Kosten. Die Inlineaktionen des Advisor helfen Ihnen, schnell und einfach Empfehlungen umzusetzen und Ihre Bereitstellungen zu optimieren.
+
+- **Best Practices in Azure:** Optimieren Sie migrierte Ressourcen im Hinblick auf Hochverfügbarkeit, Sicherheit, Leistung und Kosten.
+- **Ausführliche Anweisungen:** Mit Quicklinks können Sie Empfehlungen effizient umsetzen.
+- **Warnungen für neue Empfehlungen:** Bleiben Sie im Hinblick auf neue Empfehlungen auf dem Laufenden, etwa bei zusätzlichen Möglichkeiten zum richtigen Dimensionieren von VMs und zur Kostensenkung.
+
+Erfahren Sie mehr darüber, wie Sie mit [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) Ihre migrierten Ressourcen optimieren können.
