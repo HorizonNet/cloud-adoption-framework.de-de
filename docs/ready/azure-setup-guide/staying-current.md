@@ -10,18 +10,22 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 29241833514a205c08f311fc57156e70603948ba
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: fef411923327fe9f3318c4cb20c6dd456aa112d5
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378964"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72698496"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>Mit Microsoft Azure auf dem neuesten Stand
 
 Cloudplattformen wie Microsoft Azure verändern sich schneller, als es viele Unternehmen gewohnt sind. Dieses Tempo beim Wandel bedeutet, dass Unternehmen ihre Mitarbeiter und Prozesse an einen neuen Rhythmus anpassen müssen. Wenn Sie Ihre Organisation dabei unterstützen, mit den Veränderungen Schritt zu halten, können Sie dabei bisweilen an Ihre Grenzen stoßen. Die in diesem Abschnitt aufgeführten Ressourcen können Sie dabei unterstützen, auf dem neuesten Stand zu bleiben.
 
+<!-- markdownlint-disable MD025 -->
+
 # <a name="top-resourcestabtopresources"></a>[Wichtigste Ressourcen](#tab/TopResources)
+
+<!-- markdownlint-enable MD025 -->
 
 Die folgenden Ressourcen können Ihnen dabei helfen, mit Azure auf dem Laufenden zu bleiben:
 
@@ -29,10 +33,10 @@ Die folgenden Ressourcen können Ihnen dabei helfen, mit Azure auf dem Laufenden
   - Service Health und Warnungen stellen zeitnah Benachrichtigungen über bestehende Dienstprobleme, geplante Wartungsmaßnahmen und Integritätsempfehlungen bereit. Diese Ressource enthält auch Informationen zu den Features, die aus Azure entfernt werden.
 - [Azure-Updates](https://azure.microsoft.com/updates)
   - Abonnieren Sie Azure-Updates, um Ankündigungen zu Produktupdates zu erhalten. Kurze Zusammenfassungen enthalten Links zu ausführlicheren Informationen, wodurch Updates leicht nachvollziehbar sind.
-  - Führen Sie das Abonnieren per [RSS](https://azurecomcdn.azureedge.net/en-us/updates/feed) durch.
+  - Führen Sie das Abonnieren per [RSS](https://azurecomcdn.azureedge.net/updates/feed) durch.
 - [Azure-Blog](https://azure.microsoft.com/blog)
   - Der Azure-Blog kommuniziert die wichtigsten Ankündigungen für die Azure-Plattform. Folgen Sie diesen Blog, um wichtige Informationen zu erhalten auf dem neuesten Stand zu bleiben.
-  - Führen Sie das Abonnieren per [RSS](https://azurecomcdn.azureedge.net/en-us/blog/feed) durch.
+  - Führen Sie das Abonnieren per [RSS](https://azurecomcdn.azureedge.net/blog/feed) durch.
 - Dienstspezifische Blogs
   - Einzelne Azure-Dienste veröffentlichen Blogs, denen Sie folgen sollten, wenn Sie diese Dienste verwenden.
   - Es sind viele Azure-Dienstblogs verfügbar. Anhand einer Websuche können Sie die Dienste ermitteln, die für Sie interessant sind.
@@ -40,7 +44,11 @@ Die folgenden Ressourcen können Ihnen dabei helfen, mit Azure auf dem Laufenden
   - Diese Website ist eine inoffizielle Ressource, in der die meisten hier aufgeführten Ressourcen zusammenführt werden. Nutzen Sie Links zu einzelnen Diensten, um ausführliche Informationen zu erhalten und dienstspezifischen Blogs zu finden.
   - Führen Sie das Abonnieren per [RSS](https://azureinfohub.azurewebsites.net/Feed?serviceTitle=Azure) durch.
 
+<!-- markdownlint-disable MD025 -->
+
 # <a name="additional-resourcestabadditionalresources"></a>[Weitere Ressourcen](#tab/AdditionalResources)
+
+<!-- markdownlint-enable MD025 -->
 
 Unter den folgenden Ressourcen finden Sie weitere Inhalte, die Ihnen helfen, bezüglich Azure auf dem neuesten Stand zu bleiben:
 

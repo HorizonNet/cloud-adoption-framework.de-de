@@ -8,16 +8,16 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c43d07c6cfdea0152559d7a13fec7dde148b1530
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 16d67f628ff99f971d2d79127b25698987cc8977
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221572"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547269"
 ---
 # <a name="guest-configuration-policy"></a>Gastkonfigurationsrichtlinie
 
-Die Erweiterung für die [Gastkonfiguration](/azure/governance/policy/concepts/guest-configuration) von Azure Policy ermöglicht es Ihnen, Konfigurationseinstellungen in einem virtuellen Computer zu überprüfen. Die Gastkonfiguration wird derzeit nur auf virtuellen Azure-Computern unterstützt.
+Die Erweiterung für die [Gastkonfiguration](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration) von Azure Policy ermöglicht es Ihnen, Konfigurationseinstellungen in einem virtuellen Computer zu überprüfen. Die Gastkonfiguration wird derzeit nur auf virtuellen Azure-Computern unterstützt.
 
 Sie können die Liste der Gastkonfigurationsrichtlinien finden, indem Sie nach der Kategorie „Gastkonfiguration“ auf der Portalseite von Azure Policy suchen. Sie können auch das folgende Cmdlet in einem PowerShell-Fenster ausführen, um die Liste zu finden:
 

@@ -1,6 +1,6 @@
 ---
 title: Zuordnen von Zuständigkeiten zu Teams
-titleSuffix: Microsoft Cloud adoption Framework for Azure
+titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Erfahren Sie, wie Sie Zuständigkeiten zu Teams zuordnen.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 818d2fa74c480b8aee36c4d268ae7a83cb93fab3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 40ccd0c17a55a87c84d40abd749bf8e61f891e6c
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032160"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549073"
 ---
 # <a name="align-responsibilities-across-teams"></a>Zuordnen von Zuständigkeiten zu Teams
 

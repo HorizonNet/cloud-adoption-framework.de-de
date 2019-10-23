@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 62d6ab27e127f9d954989465838cd7c328db0573
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: d9b51b7bb67a58d3a41818b1c51138c2e1c9c43a
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967773"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548984"
 ---
 # <a name="role-based-access-control"></a>Rollenbasierte Zugriffssteuerung
 
@@ -28,7 +28,7 @@ Einen Überblick über die empfohlenen RBAC-Methoden als Teil einer Identitäts-
 
 Mit der [rollenbasierten Zugriffssteuerung](https://docs.microsoft.com/azure/role-based-access-control/overview) können Sie Aufgaben innerhalb Ihres Teams aufteilen und nur bestimmten Benutzern, Gruppen, Dienstprinzipalen oder verwalteten Identitäten in Azure Active Directory (Azure AD) genügend Zugriff gewähren, um ihre Aufgaben zu erfüllen. Anstatt allen uneingeschränkten Zugriff auf Ihr Azure-Abonnement oder Ihre Ressourcen zu gewähren, können Sie die Berechtigungen für jede Ressourcengruppe einschränken.
 
-[RBAC-Rollendefinitionen](https://docs.microsoft.com/azure/role-based-access-control/role-definitions) listen Operationen auf, die für Benutzer oder Gruppen, die dieser Rolle zugeordnet sind, erlaubt oder verboten sind. Der [Bereich](/azure/role-based-access-control/overview#scope) einer Rolle gibt an, auf welche Ressourcen sich diese definierten Berechtigungen beziehen. Bereiche können auf mehreren Ebenen angegeben werden: Verwaltungsgruppe, Abonnement, Ressourcengruppe oder Ressource. Bereiche sind in einer Beziehung zwischen über- und untergeordneten Elementen strukturiert.
+[RBAC-Rollendefinitionen](https://docs.microsoft.com/azure/role-based-access-control/role-definitions) listen Operationen auf, die für Benutzer oder Gruppen, die dieser Rolle zugeordnet sind, erlaubt oder verboten sind. Der [Bereich](https://docs.microsoft.com/azure/role-based-access-control/overview#scope) einer Rolle gibt an, auf welche Ressourcen sich diese definierten Berechtigungen beziehen. Bereiche können auf mehreren Ebenen angegeben werden: Verwaltungsgruppe, Abonnement, Ressourcengruppe oder Ressource. Bereiche sind in einer Beziehung zwischen über- und untergeordneten Elementen strukturiert.
 
 ![RBAC-Bereichshierarchie](../../_images/azure-best-practices/rbac-scope.png)
 

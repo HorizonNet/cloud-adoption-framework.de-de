@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit
-ms.openlocfilehash: 82e011355363eb0483914b01185a739ab847a997
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: cb4b14da5b7f9e934a6597fb0fc4e1c8b3d656ff
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378251"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548910"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Bereitstellen einer Landezone für die Migration
 
@@ -60,12 +60,12 @@ Die folgenden Entscheidungen werden in der Blaupause für die Landezone widerges
 |Migrationstools|Azure Site Recovery wird bereitgestellt, und ein Azure Migrate-Projekt wird erstellt.|[Entscheidungsleitfaden zur Wahl von Migrationstools](../../decision-guides/migrate-decision-guide/index.md)|
 |Protokollierung und Überwachung|Ein Operational Insights-Arbeitsbereich und ein Speicherkonto für die Diagnose werden bereitgestellt.|         |
 |Netzwerk|Es wird ein virtuelles Netzwerk mit Subnetzen für Gateway, Firewall, Jumpbox und Landezone erstellt.|[Netzwerkentscheidungen](../considerations/network-decisions.md)|
-|Identity|Es wird angenommen, dass das Abonnement bereits einer Azure Active Directory-Instanz zugeordnet ist.|[Bewährte Methoden für die Identitätsverwaltung](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/bread/toc.json)         |
+|Identity|Es wird angenommen, dass das Abonnement bereits einer Azure Active Directory-Instanz zugeordnet ist.|[Bewährte Methoden für die Identitätsverwaltung](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)         |
 |Richtlinie|Bei dieser Blaupause wird derzeit davon ausgegangen, dass keine Azure-Richtlinien angewendet werden müssen.|         |
 |Abonnemententwurf|N/V: wurde für ein einzelnes Produktionsabonnement entworfen.|[Skalieren von Abonnements](../considerations/scaling-subscriptions.md)|
 |Verwaltungsgruppen|N/V: wurde für ein einzelnes Produktionsabonnement entworfen.|[Skalieren von Abonnements](../considerations/scaling-subscriptions.md)         |
 |Ressourcengruppen|N/V: wurde für ein einzelnes Produktionsabonnement entworfen.|[Skalieren von Abonnements](../considerations/scaling-subscriptions.md)         |
-|Data|–|[Auswählen der richtigen Bereitstellungsoption in Azure SQL](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/architecture/toc.json&bc=https://docs.microsoft.com/azure/architecture/bread/toc.json) und [Auswählen des richtigen Datenspeichers](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
+|Data|–|[Auswählen der richtigen Bereitstellungsoption in Azure SQL](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/architecture/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) und [Auswählen des richtigen Datenspeichers](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
 |Storage|–|[Leitfaden zu Azure Storage](../considerations/storage-guidance.md)         |
 |Standards für Benennung und Kennzeichnung|–|[Best Practices zur Benennung und Kennzeichnung](../considerations/naming-and-tagging.md)         |
 |Kostenverwaltung|–|[Nachverfolgen von Kosten](../azure-best-practices/track-costs.md)|
