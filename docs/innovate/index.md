@@ -1,35 +1,122 @@
 ---
-title: Cloudinnovation
+title: Cloudinnovationen im Cloud Adoption Framework
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Einführung in Inhalte der Cloudinnovation
+description: Erfahren Sie mehr über Cloudinnovationen im Cloud Adoption Framework.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
-ms.topic: guide
+ms.date: 10/14/2019
+ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 4dbdaeecc094afd90df078a59774d886fd909924
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+layout: LandingPage
+ms.openlocfilehash: f3ede236dc0abc59dbf6e250c319185dda4e11e6
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816600"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72545118"
 ---
-# <a name="innovation-in-the-cloud-adoption-framework"></a>Innovation im Cloud Adoption Framework
+# <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Cloudinnovationen im Cloud Adoption Framework
 
-Die Cloud schafft neue Möglichkeiten für Kundeninnovationen.
+Jedes IT-Portfolio verfügt über eine kleine Sammlung von Workloads und Ideen, welche die Position des Unternehmens auf dem Markt deutlich verbessern können. Während sich die meisten Bemühungen zur Cloudeinführung auf die Migration und Modernisierung vorhandener Workloads konzentrieren, kommt der größte sich aus der Cloudeinführung ergebende Geschäftswert aus Innovationsaktivitäten, die neue technische Fertigkeiten und erweiterte Geschäftsfunktionen eröffnen. In diesem Abschnitt des Cloud Adoption Framework liegt der Schwerpunkt auf dem Teil des Portfolios, der die größte Rendite bringt.
 
-> [!NOTE]
-> Im dritten Quartal 2019 wird das Cloud Adoption Framework um Richtlinien für Modernisierungs- und cloudnative Ansätze zur Innovationsförderung im gesamten digitalen Bestands- und Anwendungsportfolio erweitert.
+## <a name="getting-started"></a>Erste Schritte
 
-## <a name="application-modernization-and-innovation"></a>Anwendungsmodernisierung und Innovation
+Zur Vorbereitung auf diese Phase des Cloudeinführungszyklus empfiehlt das Framework die folgenden Aufgaben:
 
-Cloudnative Apps und Daten beschleunigen Entwicklungs- und Experimentierzyklen. Ältere Apps können viele derselben cloudnativen Vorteile nutzen, indem sie die Lösung oder die Komponenten der Lösung modernisieren. Moderne DevOps- und SDLC-Ansätze, die Cloudtechnologie nutzen, verkürzen die Zeit von der Idee bis zur Produktänderung. In Kombination bieten diese Tools dem Kunden die Möglichkeit, in den Prozess einzusteigen, um kürzere Feedbackschleifen zu schaffen und die Benutzerfreundlichkeit zu erhöhen.
+<!-- markdownlint-disable MD033 -->
 
-## <a name="data-platform-modernization-and-innovation"></a>Datenplattformmodernisierung und Innovation
+<ul class="panelContent cardsF">
+    <li style="display: flex; flex-direction: column;">
+        <a href="./business-value.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/1.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Einigkeit über den Geschäftswert</h3>
+Bevor Sie sich für technische Lösungen entscheiden, müssen Sie den gewünschten Geschäftswert festlegen. Dieser Wert sollte an die Cloudstrategie angepasst werden. Bei dieser inkrementellen Methodik kommt der Geschäftswert durch eine Hypothese über Kundenanforderungen zum Ausdruck.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./innovation-guide/index.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Azure-Innovationsleitfaden</h3>
+Viele in Azure verfügbare cloudbasierte Tools können die Entwicklung innovativer Lösungen beschleunigen. Abhängig von der Kundenhypothese sind verschiedene Toolkombinationen möglich. Empfohlen wird die Entwicklung eines minimal anwendungsfähigen Produkts (Minimum Viable Product, MVP) mit grundlegenden Tools.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./best-practices/index.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Bewährte Methoden</h3>
+Überprüfen Sie, ob die architektonischen Entscheidungen den bewährten Methoden für jedes Tool in der Toolkette entsprechen. Diese bewährten Methoden unterstützen die Beschleunigung der Lösungsentwicklung und dienen als Referenz für solide Architekturentwürfe.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./considerations/adoption.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Feedbackschleifen</h3>
+Während jeder Entwicklungsiteration bieten die zu entwickelnden Lösungen den Teams die Möglichkeit, gemeinsam mit den Kunden zu lernen. Schnelle und präzise Feedbackschleifen mit Kunden unterstützen Sie beim Testen, Messen und Lernen, um die Zeit bis zur Markteinführung zu verkürzen. Erfahren Sie, wie Azure und GitHub Feedbackschleifen beschleunigen.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>
+<!-- markdownlint-enable MD033 -->
 
-Die Cloud ermöglicht neue Formen von Daten auf gängigen Plattformen. Die zunehmende Geschwindigkeit, Richtigkeit, Vielfalt und Menge der Daten ermöglicht es Datenexperten, Erkenntnisse und Vorhersagen über umfassendere Datasets hinweg zu entwickeln. Erweiterte Ingressionstools wie IoT und Azure Data Factory ermöglichen es größeren Teams, Daten bidirektional mit physischen und virtuellen Produkten zu integrieren.
+## <a name="methodology-summary"></a>Zusammenfassung der Methodik
 
-## <a name="infrastructure-modernization-and-innovation"></a>Infrastrukturmodernisierung und Innovation
+Der [Abschnitt „Überlegungen“ der Innovationsmethodik](./considerations/index.md) schafft eine Basis für Innovationen in allen Entwicklungs-, DevOps-, IT- und Business-Teams. Durch die obigen Aufgaben wird diese Methodik bei der Entwicklung innovativer Lösungen umsetzbar.
 
-Moderne Ansätze für die Bereitstellung, den Betrieb und die Verwaltung von Infrastrukturen schließen schnell die Lücken zwischen Entwicklung und Betrieb. Die Einrichtung von Umgebungsfactorys mit gemeinsamen Vorlagen für verschiedene Anwendungsmuster ermöglicht es IT- und Betriebsteams, die Bereitstellung zu beschleunigen und gleichzeitig Risiken zu verringern. Die Integration von Abläufen befreit DevOps von der Wartung von Konfigurationsveränderungen, von der Implementierung von Sicherheitsrichtlinien, von der betrieblichen Überwachung sowie von anderen IT-Diensten. Modernisierung und Innovation im IT-Portfolio führen zu einer engeren Abstimmung mit DevOps und beschleunigen Innovationen im gesamten Portfolio aus digitalem Bestand und Anwendungen.
+![Die Innovationsmethodik des Cloud Adoption Framework](../_images/innovate/innovate-methodology.png)
+
+Zur Entwicklung einer cloubasierten Konversation zur Kundenakzeptanz und eines wissenschaftlichen Modells für die Schaffung des Geschäftswerts basiert diese Methodik auf vorhandenen Lean-Methoden. Außerdem werden vorhandene Azure-Dienste mit verwaltbaren Entscheidungsprozessen ausgerichtet, sodass Sie die richtige Technik für einen bestimmten Kundenwunsch oder eine bestimmte Kundenhypothese leichter finden können.
+
+## <a name="next-steps"></a>Nächste Schritte
+
+Während der Cloudinnovation muss zunächst [Einigkeit im Hinblick auf den Geschäftswert geschaffen werden](./business-value.md).
+
+> [!div class="nextstepaction"]
+> [Einigkeit über den Geschäftswert](./business-value.md)

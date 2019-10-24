@@ -7,29 +7,17 @@ ms.custom: homepage
 layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
-ms.date: 07/04/2019
-ms.openlocfilehash: 19a0b45359fb271d5d4d1355f0bf147f396dc976
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.date: 10/14/2019
+ms.openlocfilehash: 73012184e5eab2592cfbeac1e9b5f294284ae270
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72377941"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547982"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Framework für die Einführung der Microsoft Cloud (Microsoft Cloud Adoption Framework)
 
-Das Framework für die Cloudeinführung ist der zentrale Ansatz für die Cloudeinführung in Azure von Microsoft. Hier werden bewährte Methoden von Microsoft-Mitarbeitern, Partnern und Kunden zusammengeführt und bereitgestellt. Über das Framework erhalten Unternehmenskunden Zugang zu einer Reihe von Tools, Anleitungen und Inhalten, die bei der Entwicklung von Technologie-, Geschäfts- und Personalstrategien herangezogen werden können, um mit ihren Maßnahmen für die Cloudeinführung die gewünschten Geschäftsergebnisse zu erzielen. Dieser Leitfaden ist auf verschiedene Phasen und Iterationen des typischen Lebenszyklus einer Cloudeinführung ausgerichtet, damit jederzeit auf die passenden Informationen zugegriffen werden kann.
-
-![Übersicht über das Framework für die Cloudeinführung](./_images/caf-overview.png)
-
-## <a name="getting-started-executive-summaries"></a>Erste Schritte: Kurzfassungen
-
-Für Kunden, die noch nicht mit dem Framework für die Cloudeinführung vertraut sind, stehen drei Einführungsartikel zur Verfügung: [Erste Schritte auf Ihrem Weg zur Cloudmigration](./getting-started/migrate.md), [Innovation durch Einführung der Cloud – Cloud Adoption Framework](./getting-started/innovate.md) und [Ermöglichen des Erfolgs über jede Cloudeinführungsreise hinweg](./getting-started/enable.md). Jeder Artikel enthält eine kurze Zusammenfassung und eine allgemeine Beschreibung des Einführungslebenszyklus eines Unternehmens.
-
-Im weiteren Verlauf finden Sie Links zu den einzelnen Phasen des Einführungslebenszyklus mit spezifischeren Informationen.
-
-## <a name="use-the-cloud-adoption-framework-throughout-the-adoption-lifecycle"></a>Verwenden des Frameworks für die Cloudeinführung während des gesamten Einführungslebenszyklus
-
-Die einzelnen Abschnitte des Frameworks für die Cloudeinführung basieren jeweils auf dem obigen Übersichtsdiagramm. Anhand dieser Liste können Sie den Abschnitt ermitteln, der am besten zu Ihrer derzeitigen Lebenszyklusphase für die Cloudeinführung passt.
+Das Framework für die Cloudeinführung ist der zentrale Ansatz für die Cloudeinführung in Azure von Microsoft. Hier werden bewährte Methoden von Microsoft-Mitarbeitern, Partnern und Kunden zusammengeführt und bereitgestellt. Über das Framework erhalten Kunden Zugang zu einer Reihe von Tools, Anleitungen und Inhalten, die bei der Entwicklung von Technologie-, Geschäfts- und Personalstrategien herangezogen werden können, um mit ihren Maßnahmen für die Cloudeinführung die gewünschten Geschäftsergebnisse zu erzielen. Dieser Leitfaden ist auf die folgenden Phasen des Lebenszyklus einer Cloudeinführung ausgerichtet, damit jederzeit auf die passenden Informationen zugegriffen werden kann:
 
 <!-- markdownlint-disable MD033 -->
 
@@ -98,12 +86,31 @@ Hier erfahren Sie, wie Sie die Cloudumgebung für die geplanten Änderungen vorb
                     <div class="card" style="padding-bottom:10px;">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img alt="" src="./_images/caf-adopt.png" data-linktype="external">
+                                <img alt="" src="./_images/caf-migrate.png" data-linktype="external">
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Migrieren</h3>
 Hier erfahren Sie, wie Sie bereits vorhandene Workloads migrieren und modernisieren.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./innovate/index.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="./_images/caf-adopt.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Innovation</h3>
+Entwickeln Sie neue cloudnative Lösungen oder Hybridlösungen.
                         </div>
                     </div>
                 </div>
@@ -130,13 +137,32 @@ Hier finden Sie Informationen zur Governance für die Umgebung und die Workloads
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./organize/index.md">
+        <a href="./manage/index.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
                         <div class="cardImageOuter">
                             <div class="cardImage">
                                 <img alt="" src="./_images/caf-manage.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Verwalten</h3>
+Vorgangsverwaltung für Cloud- und Hybridlösungen
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./organize/index.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="./_images/caf-organize.png" data-linktype="external">
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
@@ -150,16 +176,11 @@ Hier erfahren Sie, wie Sie Mitarbeiter für die Einführung und den Betrieb der 
     </li>
 </ul>
 
-## <a name="product-roadmap"></a>Produktroadmap
+## <a name="understanding-the-lifecycle"></a>Grundlegendes zum Lebenszyklus
 
-Das Framework für die Cloudeinführung befindet sich momentan in der Public Preview-Phase. Es wird allgemein verfügbar gemacht (General Availability, GA), sobald das im nächsten Abschnitt beschriebene Ziel vollständig erreicht wurde. In dieser Vorschauversion stehen folgende Bereiche im Mittelpunkt:
+Jede der oben genannten Phasen ist Teil eines umfassenden Cloudeinführungs-Lebenszyklus. In der folgenden Abbildung werden die einzelnen Phasen miteinander verknüpft, um den gesamten Lebenszyklus zu veranschaulichen. Das Framework für die Cloudeinführung ist ein vollständiges Lebenszyklus-Framework, das Kunden in jeder Phase unterstützt.
 
-- [Strategie für die Cloudeinführung](./strategy/index.md)
-- [Planung der Cloudeinführung](./plan/index.md)
-- [Cloudmigration](./migrate/index.md)
-- [Cloud Governance](./govern/guides/index.md)
-
-Wir erweitern das Framework für die Cloudeinführung auf dem Weg zur allgemeinen Verfügbarkeit (GA-Release) häufig. Mit der Erweiterung werden sowohl die einzelnen Abschnitte vertieft als auch neue Abschnitte mit Inhalten hinzugefügt. Weitere Informationen finden Sie in der [Roadmap für das Framework für die Einführung der Cloud](./reference/index.md).
+![Übersicht über das Framework für die Cloudeinführung](./_images/caf-overview.png)
 
 ## <a name="intent"></a>Absicht
 
@@ -179,9 +200,7 @@ Jeder Abschnitt des Frameworks für die Einführung der Cloud stellt eine andere
 
 ## <a name="how-to-use-the-microsoft-cloud-adoption-framework-for-azure"></a>Verwenden des Frameworks für die Einführung der Microsoft Cloud für Azure (Microsoft Cloud Adoption Framework)
 
-Falls Ihr Unternehmen noch keine Erfahrung mit Azure hat, sollten Sie zunächst [Erste Schritte auf Ihrem Weg zur Cloudmigration](./getting-started/migrate.md) lesen. Diese Übersicht enthält eine Anleitung für die digitale Transformation Ihres Unternehmens, und die einzelnen Schritte des Prozesses werden beschrieben.
-
-Falls Ihr Unternehmen bereits mit Azure vertraut ist und Sie ausführlichere Informationen sowie bewährte Methoden für bestimmte Bereiche benötigen, helfen Ihnen die Informationen unter [Governance für die Einführung der Microsoft Cloud für Azure (Microsoft Cloud Adoption Framework)](./govern/index.md) und [Leitfaden zur architekturbezogenen Entscheidungsfindung](./decision-guides/index.md) weiter. Wir fügen weitere Abschnitte hinzu, während das GA-Release näher rückt.
+Falls Ihr Unternehmen noch keine Erfahrung mit Azure hat, sollten Sie zunächst [Erste Schritte auf Ihrem Weg zur Cloudmigration](./getting-started/migrate.md) lesen. Diese Übersicht enthält bewährte Methoden für die digitale Transformation Ihres Unternehmens, und die einzelnen Schritte des Prozesses werden beschrieben.
 
 > [!div class="nextstepaction"]
 > [Erste Schritte](./getting-started/migrate.md)

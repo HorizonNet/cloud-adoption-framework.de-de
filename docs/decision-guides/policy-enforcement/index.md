@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 383f2d6a2443c70c8e082183f601b8186fc98870
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5dba9732220d5219b7d58a60ba93aec68792a24f
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023723"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547862"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Leitfaden zur Entscheidungsfindung für die Richtlinienerzwingung
 
@@ -22,7 +22,7 @@ Die Definition einer organisationsweiten Richtlinie ist nur sinnvoll, wenn sie i
 
 ![Abbildung der Optionen zur Richtlinienerzwingung mit zunehmender Komplexität entsprechend den nachstehenden weiterführenden Links](../../_images/decision-guides/decision-guide-policy-enforcement.png)
 
-Wechseln Sie zu: [Grundlegende empfohlene Vorgehensweisen](#baseline-recommended-practices) | [Überwachung der Richtlinienkonformität](#policy-compliance-monitoring) | [Richtlinienerzwingung](#policy-enforcement) | [ Organisationsübergreifende Richtlinie](#cross-organization-policy) | [Automatisierte Durchsetzung](#automated-enforcement)
+Wechseln Sie zu: [Grundlegende bewährte Methoden](#baseline-best-practices) | [Überwachung der Richtlinienkonformität](#policy-compliance-monitoring) | [Richtlinienerzwingung](#policy-enforcement) | [Organisationsübergreifende Richtlinie](#cross-organization-policy) | [Automatisierte Durchsetzung](#automated-enforcement)
 
 Mit zunehmender Größe Ihrer Cloudumgebung müssen Richtlinien für ein größeres Spektrum von Ressourcen und Abonnements verwaltet und erzwungen werden. Die Vergrößerung Ihrer Umgebung sowie die steigenden Richtlinienanforderungen Ihrer Organisation machen eine Erweiterung Ihrer Richtlinienerzwingungsprozesse erforderlich, um eine konsistente Einhaltung der Richtlinien sowie eine schnelle Erkennung von Verstößen zu gewährleisten.
 
@@ -30,7 +30,7 @@ Für kleinere Cloudumgebungen sind in der Regel die von der Plattform bereitgest
 
 Bei der Bestimmung des Umfangs Ihrer Richtlinienerzwingungsprozesse sind in erster Linie die [Cloud Governance-Anforderungen](../../govern/index.md) Ihrer Organisation, die Größe und Art Ihrer Cloudumgebung sowie die Darstellung Ihrer Organisation in Ihrem [Abonnemententwurf](../subscriptions/index.md) ausschlaggebend. Die Vergrößerung Ihrer Umgebung sowie der gestiegene Bedarf für eine zentrale Verwaltung der Richtlinienerzwingung können eine Erweiterung des Erzwingungsspektrums rechtfertigen.
 
-## <a name="baseline-recommended-practices"></a>Grundlegende empfohlene Vorgehensweisen
+## <a name="baseline-best-practices"></a>Bewährte Baseline-Methoden
 
 Bei Einzelabonnements und einfachen Cloudbereitstellungen lassen sich viele Unternehmensrichtlinien mithilfe nativer Ressourcen- und Abonnementfeatures in Azure erzwingen. Die konsistente Verwendung der Muster aus den [CAF-Leitfäden (Cloud Adoption Framework) zur Entscheidungsfindung](../index.md) trägt zur Etablierung einer grundlegenden Richtlinienkonformität ohne spezielle Investitionen in die Richtlinienerzwingung bei. Zu den Features zählen:
 

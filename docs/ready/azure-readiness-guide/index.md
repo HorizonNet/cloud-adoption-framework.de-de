@@ -10,18 +10,25 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 124b308538161423c3f1b0c34f9834f4454c1e69
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: c344751d8db08a84efdcaddc32a48f6326d1ac3f
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378364"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72698503"
 ---
-# <a name="before-you-start"></a>Vorbereitung
+::: zone target="docs"
+
+# <a name="azure-setup-guide-before-you-start"></a>Azure-Einrichtungsleitfaden: Vorbereitung
+
+> [!NOTE]
+> Dieser Leitfaden dient als Ausgangspunkt für Innovationsleitlinien im Cloud Adoption Framework. Er ist auch im Azure Quickstart Center verfügbar. Einen Link zum Azure Quickstart Center finden Sie im Tipp weiter unten in diesem Artikel.
+
+::: zone-end
 
 ::: zone target="docs"
-> [!NOTE]
-> Dieser Leitfaden stellt einen Ausgangspunkt für die Leitlinien zur Bereitschaft im Framework für die Cloudeinführung dar und ist auch im Azure Quickstart Center verfügbar. Einen Link finden Sie im Hinweis im Artikel.
+
+# <a name="before-you-start"></a>Vorbereitung
 
 ::: zone-end
 
@@ -29,8 +36,6 @@ Bevor Sie mit der Erstellung und Bereitstellung von Lösungen mit Azure-Diensten
 
 Sie lernen Folgendes:
 
-::: zone target="chromeless"
-
 > [!div class="checklist"]
 >
 > - **Organisieren von Ressourcen:** Richten Sie eine Verwaltungshierarchie ein, um Optionen für Zugriffssteuerung, Richtlinien und Konformität einheitlich auf Ressourcengruppen anzuwenden und verwandte Ressourcen mithilfe von Tags nachzuverfolgen.
@@ -39,19 +44,8 @@ Sie lernen Folgendes:
 > - **Planen für Governance, Sicherheit und Konformität:** Erzwingen und automatisieren Sie Richtlinien und Sicherheitseinstellungen, um die geltenden rechtlichen Anforderungen zu erfüllen.
 > - **Verwenden der Überwachung und Berichterstellung:** Profitieren Sie von ressourcenübergreifender Transparenz, um Probleme finden und beheben, die Leistung optimieren oder Erkenntnisse zum Kundenverhalten gewinnen zu können.
 > - **Sicherstellen des aktuellen Stands von Azure:** Bleiben Sie bei Produktupdates auf dem Laufenden, um ein proaktives Change Management zu ermöglichen.
-
-::: zone-end
 
 ::: zone target="docs"
-
-> [!div class="checklist"]
->
-> - **Organisieren von Ressourcen:** Richten Sie eine Verwaltungshierarchie ein, um Optionen für Zugriffssteuerung, Richtlinien und Konformität einheitlich auf Ressourcengruppen anzuwenden und verwandte Ressourcen mithilfe von Tags nachzuverfolgen.
-> - **Verwalten des Zugriffs:** Verwenden Sie die rollenbasierte Zugriffssteuerung, um sicherzustellen, dass Benutzer nur über die Berechtigungen verfügen, die sie wirklich benötigen.
-> - **Verwalten von Kosten und Abrechnung:** Ermitteln Sie Ihren Abonnementtyp, und machen Sie sich mit der Abrechnung sowie mit Möglichkeiten zur Kostenkontrolle vertraut.
-> - **Planen für Governance, Sicherheit und Konformität:** Erzwingen und automatisieren Sie Richtlinien und Sicherheitseinstellungen, um die geltenden rechtlichen Anforderungen zu erfüllen.
-> - **Verwenden der Überwachung und Berichterstellung:** Profitieren Sie von ressourcenübergreifender Transparenz, um Probleme finden und beheben, die Leistung optimieren oder Erkenntnisse zum Kundenverhalten gewinnen zu können.
-> - **Sicherstellen des aktuellen Stands von Azure:** Bleiben Sie bei Produktupdates auf dem Laufenden, um ein proaktives Change Management zu ermöglichen.
 
 > [!TIP]
 > Dieser Leitfaden steht im Azure-Portal als interaktive Umgebung zur Verfügung. Navigieren Sie im Azure-Portal zum [Azure Quickstart Center](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade), und wählen Sie **Einführung in das Azure-Setup** aus. Befolgen Sie dann die Schrittanleitungen.
@@ -62,6 +56,6 @@ Nächste Schritte: [Organisieren Ihrer Ressourcen zur Vereinfachung der Anwendun
 
 ::: zone target="chromeless"
 
-Dieser Leitfaden enthält die interaktiven Schritte, mit denen Sie Features nach ihrer Einführung testen können. Nutzen Sie die Brotkrümelnavigation, damit Sie zum Ausgangsort zurückfinden.
+Dieser Leitfaden enthält interaktive Schritte, mit denen Sie Features nach ihrer Einführung testen können. Nutzen Sie die Brotkrümelnavigation, damit Sie zum Ausgangsort zurückfinden.
 
 ::: zone-end

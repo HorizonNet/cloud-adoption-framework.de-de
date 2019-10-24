@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: c7d019cc7264ba972252b6182d4f2c10d7b91f43
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: d6e95ebec986d0a4af29ec70332f1c6fcb3518f2
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967603"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547572"
 ---
 # <a name="cloud-governance-guides"></a>Cloudgovernance-Leitfäden
 
@@ -70,6 +70,8 @@ Um mit einer Governancelösung zu beginnen, wählen Sie eine der beiden folgende
 
 > [!WARNING]
 > Ein robusterer Governance-Startpunkt kann erforderlich sein. Beachten Sie in solchen Fällen das Modell des [virtuellen Azure-Rechenzentrums](#azure-virtual-datacenter), das [weiter unten](#azure-virtual-datacenter) kurz beschrieben wird. Dieser Ansatz wird häufig bei der Einführung in Unternehmen vorgeschlagen, insbesondere bei einem Aufwand von über 10.000 Objekten. Er ist im Allgemeinen auch die erste Wahl für komplexe Governanceszenarien, wenn eine der folgenden Anforderungen erfüllt sein muss: umfangreiche Complianceanforderungen von Drittanbietern, tiefgreifendes Fachwissen oder Parität mit ausgereiften IT-Governancerichtlinien und Complianceanforderungen.
+
+<!-- markdownlint-disable MD028 -->
 
 > [!NOTE]
 > Es ist unwahrscheinlich, dass ein Leitfaden vollständig auf Ihre Situation abgestimmt ist. Wählen Sie den Leitfaden aus, der Ihrer Situation am nächsten kommt, und nutzen Sie ihn als Ausgangspunkt. Im gesamten Leitfaden werden zusätzliche Informationen bereitgestellt, die Ihnen helfen, Entscheidungen an bestimmte Kriterien anzupassen.

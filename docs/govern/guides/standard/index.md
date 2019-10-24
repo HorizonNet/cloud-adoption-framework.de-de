@@ -9,20 +9,20 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 492415da236ad54b66d6aeb6b1571f623793db0a
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 059e60e44ccf393bb731005bd4a579f3e3e41951
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967635"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547600"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Governanceleitfaden für Standardunternehmen
 
 ## <a name="overview-of-best-practices"></a>Übersicht über bewährte Methoden
 
-Dieser Governanceleitfaden folgt den Erfahrungen eines fiktiven Unternehmens in verschiedenen Phasen der Governancereife. Er basiert auf echten Kundenerfahrungen. Die empfohlenen Methoden basieren auf den Einschränkungen und Anforderungen des fiktiven Unternehmens.
+Dieser Governanceleitfaden folgt den Erfahrungen eines fiktiven Unternehmens in verschiedenen Phasen der Governancereife. Er basiert auf echten Kundenerfahrungen. Die bewährten Methoden basieren auf den Einschränkungen und Anforderungen des fiktiven Unternehmens.
 
-Als Schnellstartpunkt definiert diese Übersicht ein auf einem ausführlichen Leitfaden basierendes Minimum Viable Product (MVP) für Governance. Sie enthält außerdem Links zu einigen Governanceverbesserungen, die weitere empfohlene Methoden hinzufügen, wenn neue Geschäftsrisiken oder technische Risiken entstehen.
+Als Schnellstartpunkt definiert diese Übersicht ein auf bewährten Methoden basierendes Minimum Viable Product (MVP) für die Governance. Sie enthält außerdem Links zu einigen Governanceverbesserungen, die weitere bewährte Methoden hinzufügen, wenn neue Geschäftsrisiken oder technische Risiken entstehen.
 
 > [!WARNING]
 > Dieses MVP ist ein Baselineausgangspunkt, der auf einer Reihe von Annahmen basiert. Auch dieser minimale Satz bewährter Methoden basiert auf Unternehmensrichtlinien, die von beispiellosen geschäftlichen Risiken und Risikotoleranzen bestimmt werden. Um festzustellen, ob diese Annahmen auf Sie zutreffen, lesen Sie die [längere Schilderung](./narrative.md), die diesem Artikel folgt.

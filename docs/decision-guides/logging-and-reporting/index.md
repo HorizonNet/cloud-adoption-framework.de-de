@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 9d2f4a6c8541d8967f26db1a38591c7ce775d5e8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 082b9ccdcc94548b46a5a220cfe83768f7c4cbf6
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223626"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547895"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Protokollierung und Berichterstellung
 
@@ -58,7 +58,7 @@ Es kann einen erheblichen Neuentwicklungsaufwand für Anwendungen und Dienste er
 
 Um diesen Ansatz zu unterstützen, müssen Ihre Cloudressourcen in der Lage sein, über eine Kombination aus [Hybridnetzwerken](../software-defined-network/hybrid.md) und [in der Cloud gehosteten Domänendiensten](../identity/index.md#cloud-hosted-domain-services) direkt mit Ihren lokalen Systemen zu kommunizieren. Bei dieser Konfiguration fungiert das virtuelle Cloudnetzwerk als Netzwerkerweiterung der lokalen Umgebung. Daher können in der Cloud gehostete Workloads direkt mit Ihrem lokalen Protokollierungs- und Berichterstellungssystem kommunizieren.
 
-Dieser Ansatz macht sich Ihre bereits getätigten Investitionen in Überwachungstools zunutze, wobei nur geringfügige Änderungen an allen in der Cloud bereitgestellten Anwendungen oder Diensten vorgenommen werden. Dies ist während einer Migration per „Lift & Shift“ oft der schnellste Ansatz zur Unterstützung der Überwachung. Allerdings werden keine Protokolldaten erfasst, die von cloudbasierten PaaS- und SaaS-Ressourcen generiert werden, und es werden alle VM-bezogenen Protokolle ausgeklammert, die von der Cloudplattform selbst erstellt werden, wie z.B. der VM-Status. Daher sollte dieses Muster nur eine temporäre Lösung sein, bis eine umfassendere hybride Überwachungslösung implementiert ist.
+Dieser Ansatz macht sich Ihre bereits getätigten Investitionen in Überwachungstools zunutze, wobei nur geringfügige Änderungen an allen in der Cloud bereitgestellten Anwendungen oder Diensten vorgenommen werden. Dies ist während einer Migration per „Lift & Shift“ oft der schnellste Ansatz zur Unterstützung der Überwachung. Allerdings werden keine Protokolldaten erfasst, die von cloudbasierten PaaS- und SaaS-Ressourcen generiert werden, und es werden alle VM-bezogenen Protokolle ausgeklammert, die von der Cloudplattform selbst erstellt werden, wie z. B. der VM-Status. Daher sollte dieses Muster nur eine temporäre Lösung sein, bis eine umfassendere hybride Überwachungslösung implementiert ist.
 
 Rein lokale Annahmen:
 
@@ -69,7 +69,7 @@ Rein lokale Annahmen:
 
 ### <a name="gateway-aggregation"></a>Gatewayaggregation
 
-Für Szenarien, in denen die Menge der cloudbasierten Telemetriedaten groß ist oder Protokolldaten für bestehende lokale Überwachungssysteme geändert werden müssen, bevor sie verarbeitet werden können, kann ein Dienst zur [Gatewayaggregation](/azure/architecture/patterns/gateway-aggregation) von Protokolldaten erforderlich sein.
+Für Szenarien, in denen die Menge der cloudbasierten Telemetriedaten groß ist oder Protokolldaten für bestehende lokale Überwachungssysteme geändert werden müssen, bevor sie verarbeitet werden können, kann ein Dienst zur [Gatewayaggregation](https://docs.microsoft.com/azure/architecture/patterns/gateway-aggregation) von Protokolldaten erforderlich sein.
 
 Ein Gatewaydienst wird bei Ihrem Cloudanbieter bereitgestellt. Anschließend werden relevante Anwendungen und Dienste so konfiguriert, dass Telemetriedaten anstatt an ein Standardprotokollierungssystem an das Gateway übertragen werden. Das Gateway kann anschließend die Daten verarbeiten, indem es sie aggregiert, kombiniert oder anderweitig formatiert, bevor es sie dann zur Erfassung und Analyse an Ihren Überwachungsdienst übermittelt.
 

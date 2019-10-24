@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 8323a8bded4f2cc1d24407fa3326abf3b96ef810
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 65c7d342aa201f06e3b38ed25e933ba7d6a471b1
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967707"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547844"
 ---
 # <a name="azure-regions"></a>Azure-Regionen
 
@@ -52,8 +52,8 @@ Jede robuste Cloudbereitstellung ist auf ein sorgfältig durchdachtes Netzwerk a
     > Verwenden Sie Azure-GRS nicht für VM-Sicherungen oder -Wiederherstellungen. Nutzen Sie stattdessen [Azure Backup](https://azure.microsoft.com/services/backup) und [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery) in Kombination mit [Managed Disks](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview), um die Resilienz Ihrer IaaS-Workloads zu unterstützen.
 2. Azure Backup und Azure Site Recovery arbeiten mit Ihrem Netzwerkentwurf zusammen, um regionale Resilienz für Ihre IaaS- und Datensicherungsanforderungen bereitzustellen. Stellen Sie sicher, dass das Netzwerk optimiert ist, damit Datenübertragungen ausschließlich über den Microsoft-Backbone abgewickelt werden, und verwenden Sie nach Möglichkeit [VNET-Peering](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview). Größere Organisationen mit globalen Bereitstellungen können für regionsübergreifendes Routing stattdessen [ExpressRoute Premium](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) nutzen, um regionale Gebühren für ausgehenden Datenverkehr zu sparen.
 3. Azure-Ressourcengruppen sind regionsspezifische Konstrukte. Es ist jedoch normal, dass sich Ressourcen in einer Ressourcengruppe über mehrere Regionen erstrecken. Berücksichtigen Sie in diesem Fall, dass bei einem regionalen Ausfall Vorgänge der Steuerungsebene für eine Ressourcengruppe in der betroffenen Region nicht erfolgreich sind, auch wenn die Ressourcen in anderen Regionen (innerhalb dieser Ressourcengruppe) weiterhin aktiv sind. Dies kann sich sowohl auf Ihre Netzwerk- als auch auf Ihre Ressourcengruppengestaltung auswirken.
-4. Viele PaaS-Dienste in Azure unterstützen [Dienstendpunkte](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) und/oder [Private Link](https://docs.microsoft.com/azure/private-link/private-link-overview). Beide Lösungen haben erhebliche Auswirkungen auf Ihre Netzwerküberlegungen im Zusammenhang mit regionaler Resilienz, Migration und Governance.
-5. Viele PaaS-Dienste basieren auf eigenen Lösungen für regionale Resilienz. So ermöglicht beispielsweise Azure SQL-Datenbank eine problemlose Migration zu N zusätzlichen Regionen – ebenso wie CosmosDB. Einige Dienste, etwa Azure DNS, sind regionsunabhängig. Für Ihre Überlegungen hinsichtlich der Dienste, die Sie im Rahmen Ihres Einführungsprozess nutzen möchten, ist es wichtig, die genauen Failoverfunktionen und Wiederherstellungsschritte zu kennen, die ggf. für die jeweiligen Azure-Dienste erforderlich sind.
+4. Viele PaaS-Dienste in Azure unterstützen [Dienstendpunkte](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) oder [Private Link](https://docs.microsoft.com/azure/private-link/private-link-overview). Beide Lösungen haben erhebliche Auswirkungen auf Ihre Netzwerküberlegungen im Zusammenhang mit regionaler Resilienz, Migration und Governance.
+5. Viele PaaS-Dienste basieren auf eigenen Lösungen für regionale Resilienz. So ermöglicht beispielsweise Azure SQL-Datenbank eine problemlose Replikation in N zusätzlichen Regionen – ebenso wie CosmosDB. Einige Dienste, etwa Azure DNS, sind regionsunabhängig. Für Ihre Überlegungen hinsichtlich der Dienste, die Sie im Rahmen Ihres Einführungsprozess nutzen möchten, ist es wichtig, die genauen Failoverfunktionen und Wiederherstellungsschritte zu kennen, die ggf. für die jeweiligen Azure-Dienste erforderlich sind.
 6. Neben der Bereitstellung in mehreren Regionen für die Notfallwiederherstellung entscheiden sich viele Organisationen für eine Bereitstellung mit Aktiv/Aktiv-Muster, sodass kein Failover erforderlich ist. Dies hat außerdem den Vorteil eines globalen Lastenausgleichs, einer höheren Fehlertoleranz und einer höheren Netzwerkleistung. Wenn Sie dieses Muster nutzen möchten, müssen Ihre Anwendungen die Aktiv/Aktiv-Ausführung in mehreren Regionen unterstützen.
 
 > [!WARNING]
@@ -63,9 +63,9 @@ Nachdem Sie sich mit der Netzwerktopologie auseinandergesetzt haben, die zur Gew
 
 - Ziehen Sie eine stabilere Implementierung von Bereitschaft und Governance in Betracht.
 - Erstellen Sie ein Inventar der betroffenen Geografien. Stellen Sie eine Liste der betroffenen Regionen und Länder zusammen.
-- Dokumentieren Sie Anforderungen an die Datenhoheit: Liegen in den ermittelten Ländern Complianceanforderungen vor, die die Datenhoheit regulieren?
-- Dokumentieren Sie die Benutzerbasis: Wird sich die Cloudmigration auf Mitarbeiter, Partner oder Kunden im ermittelten Land auswirken?
-- Dokumentieren Sie Rechenzentren und Assets: Sind im ermittelten Land Assets vorhanden, die in das Migrationsprojekt aufgenommen werden sollten?
+- Dokumentieren Sie Anforderungen an die Datenhoheit. Liegen in den ermittelten Ländern Complianceanforderungen vor, die die Datenhoheit regulieren?
+- Dokumentieren Sie die Benutzerbasis. Wird sich die Cloudmigration auf Mitarbeiter, Partner oder Kunden im ermittelten Land auswirken?
+- Dokumentieren Sie Rechenzentren und Assets. Sind im ermittelten Land Assets vorhanden, die in das Migrationsprojekt aufgenommen werden sollten?
 - Dokumentieren Sie die regionale SKU-Verfügbarkeit sowie Failoveranforderungen.
 
 Stimmen Sie Änderungen im gesamten Migrationsprozess ab, um das anfängliche Inventar zu aktualisieren.

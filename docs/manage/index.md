@@ -1,48 +1,146 @@
 ---
-title: Einführung in die Betriebsverwaltung
+title: Cloudverwaltung
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Grundlegendes zur Betriebsverwaltung im Framework für die Cloudeinführung (Cloud Adoption Framework)
+description: Cloudverwaltung im Framework für die Cloudeinführung
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 05/19/2019
-ms.topic: article
+ms.date: 10/07/2019
+ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.custom: manage
-ms.openlocfilehash: 96f87583f50783fa0c6a8c947aa8b34ae440fc95
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+layout: LandingPage
+ms.openlocfilehash: 2ae964d2b145a9d241cc647b939771f219b0379e
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221441"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547291"
 ---
-# <a name="establishing-operational-management-practices-in-the-cloud"></a>Einrichten von Betriebsverwaltungsverfahren in der Cloud
+# <a name="cloud-management-in-the-cloud-adoption-framework"></a>Cloudverwaltung im Framework für die Cloudeinführung
 
-Die Cloudeinführung trägt zum geschäftlichen Nutzen bei. Der tatsächliche geschäftliche Nutzen entsteht jedoch durch einen kontinuierlichen, stabilen Betrieb der in der Cloud bereitgestellten Technologieressourcen. Dieser Abschnitt des Frameworks für die Cloudeinführung führt den Leser durch verschiedene Übergänge in die cloudbasierte Betriebsverwaltung.
+Die Bereitstellung einer [Cloudstrategie ](../strategy/index.md) erfordert eine solide Planung, Bereitschaft und Einführung. Konkrete Geschäftsergebnisse werden jedoch beim laufenden Betrieb der digitalen Ressourcen erzeugt. Ohne einen Plan für zuverlässige, gut verwaltete Vorgänge der Cloudlösungen haben diese Bemühungen jedoch nur einen geringen Nutzen. Die folgenden Übungen unterstützen Sie dabei, die geschäftlichen und technischen Ansätze zu entwickeln, die für die Bereitstellung einer Cloudverwaltung erforderlich sind, die laufende Vorgänge unterstützt.
 
-## <a name="actionable-best-practices"></a>Umsetzbare bewährte Methoden
+## <a name="getting-started"></a>Erste Schritte
 
-Moderne Betriebsverwaltungslösungen bieten eine Multi-Cloud-Sicht auf den Betrieb. Ressourcen, die mit den folgenden empfohlenen Methoden verwaltet werden, können sich in der Cloud, in einem vorhandenen Datencenter oder sogar bei einem konkurrierenden Cloudanbieter befinden. Derzeit umfasst das Framework zwei empfohlene Referenzmethoden, um die Betriebsverwaltung in der Cloud zu verbessern:
+Zur Vorbereitung auf diese Phase des Cloudeinführungszyklus empfiehlt das Framework die folgenden Übungen:
 
-- [Azure-Serververwaltung](./azure-server-management/index.md): Onboardingleitfaden für die Integration der cloudbasierten Tools und Dienste, die zur Verwaltung des Betriebs erforderlich sind.
-- [Hybridüberwachung](./monitor/index.md): Viele Kunden haben bereits eine beträchtliche Investition in System Center Operations Manager getätigt. Diesen Kunden hilft dieser Leitfaden zur Hybridüberwachung, die cloudnativen Berichtstools mit den Operations Manager-Tools zu vergleichen und gegenüberzustellen. Dieser Vergleich erleichtert die Entscheidung, welche Tools für die Betriebsverwaltung eingesetzt werden sollen.
+<!-- markdownlint-disable MD033 -->
+<ul class="panelContent cardsF">
+    <li style="display: flex; flex-direction: column;">
+        <a href="./azure-management-guide/index.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/1.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Einrichten einer Verwaltungsbasislinie</h3>
+Definieren Sie die wichtigen Klassifizierungen, Cloudverwaltungstools und Prozesse, die für die Bereitstellung Ihrer Mindestverpflichtung zur Betriebsverwaltung erforderlich sind.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./considerations/business-alignment.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Definieren von geschäftlichen Verpflichtungen</h3>
+Dokumentieren Sie die unterstützten Workloads, um betriebliche Verpflichtungen beim Unternehmen herzustellen und Investitionen für die Cloudverwaltung für jede Workload zu vereinbaren.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./best-practices.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Erweitern der Verwaltungsbaseline</h3>
+Ausgehend von geschäftlichen Verpflichtungen und Betriebsentscheidungen nutzen Sie die mitgelieferten bewährten Methoden, um die erforderlichen Cloudverwaltungstools zu implementieren.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li style="display: flex; flex-direction: column;">
+        <a href="./design-principles.md">
+            <div class="cardSize">
+                <div class="cardPadding" style="padding-bottom:10px;">
+                    <div class="card" style="padding-bottom:10px;">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
+                            </div>
+                        </div>
+                        <div class="cardText" style="padding-left:0px;">
+                            <h3>Erweiterte Vorgänge und Entwurfsprinzipien</h3>
+Plattformen oder Workloads, die ein höheres Maß an Geschäftsverpflichtungen erfordern, erfordern möglicherweise eine umfassendere Architekturüberprüfung, um die Verpflichtungen in Bezug auf Resilienz und Zuverlässigkeit zu gewährleisten.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>
+<!-- markdownlint-enable MD033 -->
 
-## <a name="cloud-operations"></a>Cloudvorgänge
+## <a name="scalable-cloud-management-methodology"></a>Skalierbare Cloudverwaltungsmethoden
 
-Mit beiden Best Practices wird auf eine künftige angestrebte Methodik für die Betriebsverwaltung hingearbeitet.
+Mit den oben beschriebenen Schritten erstellen Sie Handlungsansätze, um die Verwaltungsmethoden des Frameworks für die Cloudeinführung bereitzustellen.
 
-![CAF-Verwaltungsmethodik](../_images/manage/caf-manage.png)
+![Verwalten der Methoden im Framework für die Cloudeinführung](../_images/manage/caf-manage.png)
 
-**Geschäftliche Ausrichtung:** In der Verwaltungsmethodik werden alle Workloads nach Wichtigkeit und Geschäftswert klassifiziert. Diese Klassifizierung kann dann durch eine Auswirkungsanalyse gemessen werden, die den mit Leistungseinbußen oder Betriebsunterbrechungen verbundenen Verlustwert berechnet. Mit diesen konkreten Umsatzauswirkungen können Cloudbetriebsteams mit dem Unternehmen zusammenarbeiten, um eine Zusage zu machen, die Kosten und Leistung in Einklang bringt.
+## <a name="creating-a-balanced-cloud-portfolio"></a>Erstellen eines ausgewogenen Cloudportfolios
 
-**Disziplinen für den Cloudbetrieb:** Sobald das Unternehmen ausgerichtet ist, ist es viel einfacher, die richtigen Disziplinen des Cloudbetriebs für die einzelnen Workloads nachzuverfolgen und Berichte dazu zu erstellen. Entscheidungen im Zusammenhang mit den einzelnen Disziplinen können in Verpflichtungen resultieren, die für das Unternehmen gut verständlich sind. Dieser kooperative Ansatz macht den Geschäftsbeteiligten zu einem Partner bei der Suche nach dem richtigen Verhältnis zwischen Kosten und Leistung.
+Wie im Artikel [Geschäftliche Ausrichtung](./considerations/business-alignment.md) erläutert, sind nicht alle Workloads von entscheidender Bedeutung. Innerhalb eines Portfolios gibt es verschiedene Abstufungen für betriebliche Verwaltungsanforderungen. Die geschäftliche Ausrichtung unterstützt Sie beim Erfassen der geschäftlichen Auswirkungen und beim Aushandeln von Verwaltungskosten für das Unternehmen, um die am besten geeigneten Prozesse und Tools für die operative Verwaltung sicherzustellen.
 
-- **Bestand und Transparenz:** Eine Betriebsverwaltung benötigt mindestens eine Möglichkeit zur Bestandsaufnahme von Ressourcen sowie zur Schaffung von Transparenz im Hinblick auf den Ausführungszustand der einzelnen Ressourcen.
-- **Betriebsbezogene Compliance:** Eine regelmäßige Verwaltung von Konfiguration, Größe, Kosten und Leistung von Ressourcen ist für die Erfüllung der Leistungserwartungen unverzichtbar.
-- **Schutz und Wiederherstellung:** Die Minimierung von Betriebsunterbrechungen und die Beschleunigung der Wiederherstellung tragen dazu bei, Leistungsverluste und Umsatzauswirkungen zu vermeiden. Erkennung und Wiederherstellung sind wesentliche Aspekte dieser Disziplin.
-- **Plattformbetrieb:** Alle IT-Umgebungen umfassen eine Reihe von gemeinsam genutzten Plattformen. Diese Plattformen können Datenspeicher wie SQL Server oder HDInsight beinhalten. Andere gängige Plattformen sind Containerlösungen wie Kubernetes oder AKS. Unabhängig von den Plattformen liegt der Schwerpunkt bezüglich des Reifegrads des Plattformbetriebs auf der Anpassung von Vorgängen basierend darauf, wie diese gemeinsam genutzten Plattformen bereitgestellt, konfiguriert und durch Workloads genutzt werden.
-- **Workloadbetrieb:** Auf der höchsten Stufe der betrieblichen Reife haben Cloudbetriebsteams die Möglichkeit, den Betrieb auf Workloads abzustimmen, die für den geschäftlichen Erfolg entscheidend sind. Bei diesen kritischen Workloads können verfügbare Daten zur Automatisierung der Problembehandlung, der Größenanpassung oder des Schutzes von Workloads auf der Grundlage ihrer Auslastung genutzt werden.
+## <a name="objective-of-this-content"></a>Ziel dieses Inhalts
 
-Zusätzliche Anleitungen wie der [Entwurf eines Überprüfungsframeworks (Codename: Cloudentwurfsprinzipien)](https://docs.microsoft.com/azure/architecture/reliability) können dabei helfen, detaillierte architekturbezogene Entscheidungen zu jeder Workload innerhalb der oben genannten Disziplinen zu treffen.
+Die Anleitungen in diesem Abschnitt zum Framework für die Cloudeinführung haben zwei Funktionen:
 
-Dieser Abschnitt des Frameworks für die Cloudeinführung baut auf diesen Themen auf, um den Cloudbetrieb in Ihrem Unternehmen zu verbessern.
+- Sie liefern Beispiele für umsetzbare Vorgehensweisen für die Betriebsverwaltung, die gängige Kundenerfahrungen widerspiegeln.
+- Sie unterstützen Sie beim Erstellen personalisierter Verwaltungslösungen basierend auf Geschäftsverpflichtungen.
+
+Diese Inhalte sind für das Cloudbetriebsteam konzipiert. Sie sind auch für Cloudarchitekten relevant, die eine solide Grundlage für den Cloudbetrieb oder Entwurfsprinzipien für die Cloud entwickeln müssen.
+
+## <a name="intended-audience"></a>Zielpublikum
+
+Die Inhalte im CAF (Cloud Adoption Framework) beeinflussen das Geschäft, die Technologie und die Kultur von Unternehmen. Dieser Abschnitt des Frameworks für die Cloudeinführung erfordert eine intensive Interaktion mit den Teams für IT-Abläufe und IT-Governance, der Finanzabteilung, Geschäftsbereichsleitern sowie den Netzwerk-, Identitäts- und Cloudeinführungsteams. Verschiedene Abhängigkeiten zwischen diesen Rollen erfordern einen vermittelnden Ansatz der Cloudarchitekten unter Verwendung dieser Leitlinien. Eine solche Vermittlung zwischen den Teams ist selten nur ein einziges Mal erforderlich.
+
+Der Cloudarchitekt dient als innovative Führungsperson und Vermittler, um diese Zielgruppen zusammenzubringen. Diese Anleitungen sind darauf ausgelegt, Cloudarchitekten die richtige Kommunikation mit der richtigen Zielgruppe zu erleichtern, um notwendige Entscheidungen zu fördern. Um eine durch die Cloud ermöglichte Transformation der Geschäftsabläufe umzusetzen, müssen Cloudarchitekten die betroffenen Teams in allen Geschäfts- und IT-Abteilungen bei ihren Entscheidungen unterstützen.
+
+**Spezialisierungen des Cloudarchitekten in diesem Abschnitt**: Jeder Abschnitt des Frameworks für die Cloudeinführung stellt eine andere Spezialisierung oder Variante der Rolle des Cloudarchitekten dar. Dieser Abschnitt des Frameworks für die Cloudeinführung richtet sich beispielsweise an Cloudarchitekten mit Schwerpunkt auf Betrieb und Verwaltung von Bereitstellungslösungen. Innerhalb dieses Frameworks wird dies als *Cloudbetrieb* oder kollektiv als *Cloudbetriebsteam* bezeichnet.
+
+## <a name="use-this-guide"></a>Verwenden dieses Leitfadens
+
+Wenn Sie dem Leitfaden vom Anfang bis zum Ende folgen, helfen diese Inhalte Ihnen dabei, eine robuste Cloudbetriebsstrategie zu entwickeln. Sie werden detailliert durch die Theorie und Implementierung einer solchen Strategie geleitet.
+
+<!-- For a crash course on the theory and quick access to Azure implementation, get started with the [governance guides overview](./guide/index.md). Using this guidance, you can start small and iteratively improve your governance needs in parallel with cloud adoption efforts. -->
+
+## <a name="next-steps"></a>Nächste Schritte
+
+Wenden Sie die Methode zum [Festlegen klarer Geschäftsverpflichtungen](./considerations/business-alignment.md) an.
+
+> [!div class="nextstepaction"]
+> [Festlegen klarer Geschäftsverpflichtungen](./considerations/business-alignment.md)
