@@ -10,19 +10,25 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: fdd33cff299991172fb173e9ab6ae719bec5cc37
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8d30001a3ee97783dca2709c33e7bebb9ab9a889
+ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72556478"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72769323"
 ---
-# <a name="before-you-start"></a>Vorbereitung
-
 ::: zone target="docs"
+
+# <a name="azure-innovation-guide-before-you-start"></a>Azure-Innovationsleitfaden: Vorbereitung
 
 > [!NOTE]
 > Dieser Leitfaden dient als Ausgangspunkt für Innovationsleitlinien im Cloud Adoption Framework. Er ist auch im Azure Quickstart Center verfügbar. Einen Link zum Azure Quickstart Center finden Sie im Tipp weiter unten in diesem Artikel.
+
+::: zone-end
+
+::: zone target="chromeless"
+
+# <a name="before-you-start"></a>Vorbereitung
 
 ::: zone-end
 

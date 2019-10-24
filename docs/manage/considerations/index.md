@@ -4,16 +4,16 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Cloudverwaltung und -vorgänge: Leittheorie'
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/07/2019
+ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 889f03fd6d766c1c5e096e9bc3f163a128b5445d
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 74f79fa03aba9585fca4ae391394c4a1b1138945
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72556546"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72682466"
 ---
 # <a name="it-management-and-operations-in-the-cloud"></a>IT-Verwaltung und -Vorgänge in der Cloud
 
