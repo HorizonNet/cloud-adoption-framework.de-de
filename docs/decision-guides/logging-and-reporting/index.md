@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 082b9ccdcc94548b46a5a220cfe83768f7c4cbf6
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3254cf195c001f7ce575bf067cd434649293b970
+ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547895"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915040"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Protokollierung und Berichterstellung
 
@@ -26,7 +26,7 @@ Wechseln Sie zu: [Planen der Überwachungsinfrastruktur](#planning-your-monitori
 
 Der Wendepunkt bei der Bestimmung einer cloudbasierten Protokollierungs- und Berichterstellungsstrategie basiert in erster Linie auf bereits getätigten Investitionen Ihres Unternehmens in betriebliche Prozesse und zu einem gewissen Grad auf den Anforderungen, die Sie an die Unterstützung einer Strategie mit mehreren Clouds haben.
 
-Es gibt mehrere Möglichkeiten, Aktivitäten in der Cloud zu protokollieren und zu dokumentieren. „Cloudnativ“ und „Zentrale Protokollierung“ sind zwei übliche SaaS-Optionen (Software-as-a-Service), die dem Abonnementmodell und der Anzahl der Abonnements unterliegen.
+Es gibt mehrere Möglichkeiten, Aktivitäten in der Cloud zu protokollieren und zu dokumentieren. „Cloudnativ“ und „Zentrale Protokollierung“ sind zwei übliche Optionen für verwaltete Dienste, die dem Abonnementmodell und der Anzahl von Abonnements unterliegen.
 
 ## <a name="planning-your-monitoring-infrastructure"></a>Planen der Überwachungsinfrastruktur
 
