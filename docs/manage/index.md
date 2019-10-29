@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 layout: LandingPage
-ms.openlocfilehash: 3f66a3ef43c16c9a331fabdaf718c85f9f131d8a
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 5a53b72747d20e8b7b2d3ca25a6ffc29b46e1203
+ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72682707"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72979896"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>Cloudverwaltung im Framework für die Cloudeinführung
 
@@ -95,7 +95,7 @@ Ausgehend von geschäftlichen Verpflichtungen und Betriebsentscheidungen nutzen 
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Erweiterte Vorgänge und Entwurfsprinzipien</h3>
-Plattformen oder Workloads, die ein höheres Maß an Geschäftsverpflichtungen erfordern, erfordern möglicherweise eine umfassendere Architekturüberprüfung, um die Verpflichtungen in Bezug auf Resilienz und Zuverlässigkeit zu gewährleisten.
+Für Plattformen oder Workloads, die ein höheres Maß an Geschäftsverpflichtungen erfordern, ist möglicherweise eine umfassendere Architekturüberprüfung erforderlich, damit die Verpflichtungen in Bezug auf Resilienz und Zuverlässigkeit gewährleistet sind.
                         </div>
                     </div>
                 </div>
@@ -130,7 +130,7 @@ Die Inhalte im CAF (Cloud Adoption Framework) beeinflussen das Geschäft, die Te
 
 Der Cloudarchitekt dient als innovative Führungsperson und Vermittler, um diese Zielgruppen zusammenzubringen. Diese Anleitungen sind darauf ausgelegt, Cloudarchitekten die richtige Kommunikation mit der richtigen Zielgruppe zu erleichtern, um notwendige Entscheidungen zu fördern. Um eine durch die Cloud ermöglichte Transformation der Geschäftsabläufe umzusetzen, müssen Cloudarchitekten die betroffenen Teams in allen Geschäfts- und IT-Abteilungen bei ihren Entscheidungen unterstützen.
 
-**Spezialisierungen des Cloudarchitekten in diesem Abschnitt**: Jeder Abschnitt des Frameworks für die Cloudeinführung stellt eine andere Spezialisierung oder Variante der Rolle des Cloudarchitekten dar. Dieser Abschnitt des Frameworks für die Cloudeinführung richtet sich beispielsweise an Cloudarchitekten mit Schwerpunkt auf Betrieb und Verwaltung von Bereitstellungslösungen. Innerhalb dieses Frameworks wird dies als *Cloudbetrieb* oder kollektiv als *Cloudbetriebsteam* bezeichnet.
+**Spezialisierungen des Cloudarchitekten in diesem Abschnitt**: Jeder Abschnitt des Frameworks für die Cloudeinführung stellt eine andere Spezialisierung oder Variante der Rolle des Cloudarchitekten dar. Dieser Abschnitt des Cloud Adoption Frameworks richtet sich beispielsweise an Cloudarchitekten mit Schwerpunkt auf Betrieb und Verwaltung von Bereitstellungslösungen. Innerhalb dieses Frameworks wird dies als *Cloudbetrieb* oder kollektiv als *Cloudbetriebsteam* bezeichnet.
 
 ## <a name="use-this-guide"></a>Verwenden dieses Leitfadens
 
@@ -140,7 +140,7 @@ Wenn Sie dem Leitfaden vom Anfang bis zum Ende folgen, helfen diese Inhalte Ihne
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Wenden Sie die Methode zum [Festlegen klarer Geschäftsverpflichtungen](./considerations/business-alignment.md) an.
+Wenden Sie die Methode zum Festlegen klarer Geschäftsverpflichtungen an.
 
 > [!div class="nextstepaction"]
 > [Festlegen klarer Geschäftsverpflichtungen](./considerations/business-alignment.md)
