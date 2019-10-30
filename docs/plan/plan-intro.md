@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 74fd1f02455d822ae8f8266bc3f6deb5935c09fe
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 027b685b2c75edc59e03cca9f9d2614422684bf0
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839172"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048286"
 ---
 # <a name="plan-for-cloud-adoption"></a>Planen der Cloudeinführung
 
@@ -35,11 +35,11 @@ Die Erwerbsmodelle der Cloud verändern die Kernabhängigkeiten, die ein sequenz
 
 Diese Artikelreihe führt Sie durch jeden Schritt der Übersetzung der Strategie und der Bemühungen in den umsetzbaren Cloudeinführungsplan:
 
-1. **Voraussetzungen**: Bestätigen Sie, dass alle Voraussetzungsschritte abgeschlossen sind, bevor Sie Ihren Plan erstellen.
-2. **Definieren und Priorisieren von Workloads**: Priorisieren Sie Ihre ersten 10 Workloads, um einen ersten Einführungsbacklog einzurichten.
-3. **Ausrichten von Ressourcen**: Ermitteln Sie, welche Ressourcen (vorgeschlagen oder vorhanden) zur Unterstützung der priorisierten Workloads erforderlich sind.
-4. **Überprüfen der Rationalisierung**: Überprüfen Sie Rationalisierungsentscheidungen, um die Entscheidungen zum Einführungspfad zu optimieren: Migration oder Innovation.
-5. **Definieren von Iterationen und Releases**: *Iterationen* sind die zum Durchführen von Arbeit reservierten Zeitblöcke. *Releases* sind die Definition der Arbeit, die geleistet werden muss, bevor eine Änderung der Produktionsprozesse ausgelöst wird.
+1. **Voraussetzungen:** Bestätigen Sie, dass alle Voraussetzungsschritte abgeschlossen sind, bevor Sie Ihren Plan erstellen.
+2. **Definieren und Priorisieren von Workloads:** Priorisieren Sie Ihre ersten 10 Workloads, um einen ersten Einführungsbacklog einzurichten.
+3. **Ausrichten von Ressourcen:** Ermitteln Sie, welche Ressourcen (vorgeschlagen oder vorhanden) zur Unterstützung der priorisierten Workloads erforderlich sind.
+4. **Überprüfen der Rationalisierung:** Überprüfen Sie Rationalisierungsentscheidungen, um die Entscheidungen zum Einführungspfad zu optimieren: Migration oder Innovation.
+5. **Definieren von Iterationen und Releases:** *Iterationen* sind die zum Durchführen von Arbeit reservierten Zeitblöcke. *Releases* sind die Definition der Arbeit, die geleistet werden muss, bevor eine Änderung der Produktionsprozesse ausgelöst wird.
 6. **Schätzen von Zeitachsen:** Richten Sie auf der Grundlage erster Schätzungen grobe Zeitachsen für die Releaseplanung ein.
 
 ## <a name="next-steps"></a>Nächste Schritte

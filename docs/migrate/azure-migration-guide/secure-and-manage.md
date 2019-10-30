@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d16af8b5b9c70dfdaf08f7bfe280dbd42ed4f8c7
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: aaa00910fb37545949087c71d6300918a3435cc2
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022754"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058760"
 ---
 # <a name="secure-and-manage"></a>Sichern und Verwalten
 
@@ -39,7 +39,7 @@ Azure Monitor maximiert die Verfügbarkeit und Leistung Ihrer Anwendungen durch 
 
 ::: zone target="docs"
 
-## <a name="read-more"></a>Weitere Informationen
+## <a name="learn-more"></a>Weitere Informationen
 
 - [Azure Monitor – Übersicht](https://docs.microsoft.com/azure/azure-monitor/overview).
 
@@ -70,7 +70,7 @@ Kombiniert bieten diese Oberflächen einen umfassenden Überblick über die Azur
 
 ::: zone target="docs"
 
-## <a name="read-more"></a>Weitere Informationen
+## <a name="learn-more"></a>Weitere Informationen
 
 Weitere Informationen finden Sie in der [Azure Service Health-Dokumentation](https://docs.microsoft.com/azure/service-health).
 
@@ -93,7 +93,7 @@ Bei Azure Advisor handelt es sich um einen personalisierten Cloudberater, der Si
 
 ::: zone target="docs"
 
-## <a name="read-more"></a>Weitere Informationen
+## <a name="learn-more"></a>Weitere Informationen
 
 [Übersicht](https://docs.microsoft.com/azure/advisor/advisor-overview).
 
@@ -116,7 +116,7 @@ Azure Security Center ist ein vereinheitlichtes Sicherheitsverwaltungssystem fü
 
 ::: zone target="docs"
 
-## <a name="read-more"></a>Weitere Informationen
+## <a name="learn-more"></a>Weitere Informationen
 
 [Übersicht](https://docs.microsoft.com/azure/security-center/security-center-intro)
 

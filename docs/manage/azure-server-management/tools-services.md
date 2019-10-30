@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: dbb00a411eb7905ad557e1acdc2a98d4d03cff49
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: e365cca30b5fe98e0737beb3005a13544844dc41
+ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221422"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888867"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Azure-Serververwaltungstools und -dienste
 
@@ -60,7 +60,7 @@ Für Ihre Dateiserverdaten ist die [Azure-Dateisynchronisierung](https://docs.mi
 
 In diese Kategorie fallen mehrere Dienste. Sie können Sie dabei unterstützen, betriebliche Aufgaben zu automatisieren, Serverkonfigurationen zu verwalten, die Konformität von Updates zu messen, Updates zu planen und Änderungen an Ihren Servern zu erkennen. Diese Dienste sind von zentraler Bedeutung für die Unterstützung der laufenden Vorgänge.
 
-- Die [Updateverwaltung](https://docs.microsoft.com/azure/automation/automation-update-management#viewing-update-assessments) automatisiert die Bereitstellung von Patches in Ihrer Umgebung, einschließlich der Bereitstellung auf Betriebssysteminstanzen, die außerhalb von Azure ausgeführt werden. Sie unterstützt sowohl Windows- als auch Linux-Betriebssysteme und verfolgt wichtige Schwachstellen und Nichtkonformitäten im Betriebssystem, die durch fehlende Patches verursacht werden.
+- Die [Updateverwaltung](https://docs.microsoft.com/azure/automation/automation-update-management#view-update-assessments) automatisiert die Bereitstellung von Patches in Ihrer Umgebung, einschließlich der Bereitstellung auf Betriebssysteminstanzen, die außerhalb von Azure ausgeführt werden. Sie unterstützt sowohl Windows- als auch Linux-Betriebssysteme und verfolgt wichtige Schwachstellen und Nichtkonformitäten im Betriebssystem, die durch fehlende Patches verursacht werden.
 - [Änderungsnachverfolgung und Bestand](https://docs.microsoft.com/azure/automation/change-tracking) bietet einen Einblick in die Software, die in Ihrer Umgebung ausgeführt wird, und zeigt alle aufgetretenen Änderungen an.
 - [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) bietet die Möglichkeit, Python- und PowerShell-Skripte oder Runbooks auszuführen, um Aufgaben in Ihrer Umgebung zu automatisieren. Wenn Sie es mit dem [Hybrid Runbook Worker](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker) verwenden, können Sie Ihre Runbooks außerdem auf lokale Ressourcen erweitern.
 - [Azure Automation State Configuration](https://docs.microsoft.com/azure/automation/automation-dsc-overview) bietet die Möglichkeit, PowerShell DSC-Konfigurationen (Desired State Configuration) direkt aus Azure zu pushen. DSC wiederum bietet die Möglichkeit, Betriebssystem- und Workloadkonfigurationen im Gastbetriebssystem zu überwachen und beizubehalten.

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: governance
-ms.openlocfilehash: 0b561415d8038c41e1ea36624529a765bfa1105a
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 1f627dcba8db040ea212f151f216428b724c90d0
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023330"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048448"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -26,15 +26,15 @@ Azure ist die öffentliche Cloudplattform von Microsoft. Azure umfasst eine gro�
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2ixGo]
 
-Wie andere Cloudplattformen auch, basiert Azure auf einer Technologie, die als **Virtualisierung** bezeichnet wird. Ein Großteil der Computerhardware kann per Software emuliert werden, da es sich bei Computerhardware in den meisten Fällen lediglich um einen Satz mit Anweisungen handelt, die permanent oder semipermanent in Silizium codiert sind. Indem eine Emulationsebene verwendet wird, mit der Softwareanweisungen Hardwareanweisungen zugeordnet werden, kann virtualisierte Hardware so per Software ausgeführt werden, als ob es sich wirklich um Hardware handeln würde.
+Wie andere Cloudplattformen auch, basiert Azure auf einer Technologie, die als _Virtualisierung_ bezeichnet wird. Ein Großteil der Computerhardware kann per Software emuliert werden, da es sich bei Computerhardware in den meisten Fällen lediglich um einen Satz mit Anweisungen handelt, die permanent oder semipermanent in Silizium codiert sind. Indem eine Emulationsebene verwendet wird, mit der Softwareanweisungen Hardwareanweisungen zugeordnet werden, kann virtualisierte Hardware so per Software ausgeführt werden, als ob es sich wirklich um Hardware handeln würde.
 
 Im Wesentlichen umfasst die Cloud eine Gruppe von physischen Servern in einem oder mehreren Rechenzentren, auf denen virtualisierte Hardware im Namen der Kunden ausgeführt wird. Wie wird es also für die Cloud erreicht, dass Millionen von Instanzen virtualisierter Hardware für Millionen von Kunden gleichzeitig erstellt, gestartet, beendet und gelöscht werden können?
 
-Wir sehen uns die Architektur der Hardware im Rechenzentrum an. Jedes Rechenzentrum verfügt über eine Sammlung von Servern, die in Serverracks angeordnet sind. Jedes Serverrack enthält viele Server**blades** sowie einen Netzwerkswitch für die Netzwerkkonnektivität und eine Stromversorgungseinheit für die Stromversorgung. Racks werden auch in größeren Einheiten gruppiert, die als **Cluster** bezeichnet werden.
+Wir sehen uns die Architektur der Hardware im Rechenzentrum an. Jedes Rechenzentrum verfügt über eine Sammlung von Servern, die in Serverracks angeordnet sind. Jedes Serverrack enthält viele Server**blades** sowie einen Netzwerkswitch für die Netzwerkkonnektivität und eine Stromversorgungseinheit für die Stromversorgung. Racks werden auch in größeren Einheiten gruppiert, die als _Cluster_ bezeichnet werden.
 
-Innerhalb jedes Racks oder Clusters haben die meisten Server die Aufgabe, diese virtualisierten Hardwareinstanzen im Namen des Benutzers auszuführen. Auf einigen Servern wird jedoch Software für die Cloudverwaltung ausgeführt, die als Fabric Controller bezeichnet wird. Der **Fabric Controller** ist eine verteilte Anwendung mit vielen Aufgaben. Er dient zum Zuordnen von Diensten, Überwachen der Integrität des Servers und der darauf ausgeführten Dienste und Wiederherstellen der Serverintegrität nach einem Ausfall.
+Innerhalb jedes Racks oder Clusters haben die meisten Server die Aufgabe, diese virtualisierten Hardwareinstanzen im Namen des Benutzers auszuführen. Auf einigen Servern wird jedoch Software für die Cloudverwaltung ausgeführt, die als Fabric Controller bezeichnet wird. Der _Fabric Controller_ ist eine verteilte Anwendung mit vielen Aufgaben. Er dient zum Zuordnen von Diensten, Überwachen der Integrität des Servers und der darauf ausgeführten Dienste und Wiederherstellen der Serverintegrität nach einem Ausfall.
 
-Jede Instanz des Fabric Controllers ist mit einem anderen Satz von Servern verbunden, auf denen Software für die Cloudorchestrierung ausgeführt wird, die normalerweise als **Front-End** bezeichnet wird. Auf dem Front-End werden die Webdienste, RESTful-APIs und internen Azure-Datenbanken gehostet, die für alle Funktionen der Cloud verwendet werden.
+Jede Instanz des Fabric Controllers ist mit einem anderen Satz von Servern verbunden, auf denen Software für die Cloudorchestrierung ausgeführt wird, die normalerweise als _Front-End_ bezeichnet wird. Auf dem Front-End werden die Webdienste, RESTful-APIs und internen Azure-Datenbanken gehostet, die für alle Funktionen der Cloud verwendet werden.
 
 Beispielsweise hostet das Front-End die Dienste, mit denen Kundenanforderungen zur Zuteilung von Azure-Ressourcen verarbeitet werden. Hierzu zählen beispielsweise [virtuelle Computer](https://docs.microsoft.com/azure/virtual-machines) (VMs) und Dienste wie [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction). Zuerst überprüft das Front-End den Benutzer und stellt sicher, dass der Benutzer zur Zuordnung der angeforderten Ressourcen berechtigt ist. Falls ja, zieht das Front-End eine Datenbank heran, um ein Serverrack mit ausreichender Kapazität zu ermitteln. Anschließend weist es den Fabric Controller im Rack an, die Ressource zuzuteilen.
 

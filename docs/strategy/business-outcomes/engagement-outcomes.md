@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: f0349afd5507300588df9b10628d3b28b25827c3
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 45c4f22613a559add109c1fbfd608452911d0c86
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032433"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047942"
 ---
 # <a name="examples-of-customer-engagement-outcomes"></a>Beispiele für Kundenbindungsergebnisse
 
@@ -29,7 +29,7 @@ Im Folgenden finden Sie Beispiele und Ergebnisse im Zusammenhang mit der Kundenb
 
 Während kundenorientierter Transformationen wie cloudfähiger Anwendungsinnovationen profitieren Kunden von der direkten Bindung, und sie können sehen, dass ihre Wünsche vom Entwicklungsteam schnell erfüllt werden. Zykluszeit ist ein Six Sigma-Begriff, der die Dauer vom Anfang bis zum Ende einer Funktion meint. Für Führungskräfte mit starker Kundenorientierung, die große Anstrengungen zur Verbesserung der Kundenbindung unternehmen, kann die Zykluszeit ein wichtiges Geschäftsergebnis sein.
 
-- **Beispiel**: Ein Dienstleistungsunternehmen, das B2B-Dienste (Business-to-Business) bereitstellt, versucht, auf einem wettbewerbsintensiven Markt im Geschäft zu bleiben. Kunden, die zu einem Konkurrenten gewechselt sind, haben angegeben, dass die übermäßig komplexe technische Lösung die eigenen Geschäftsprozesse beeinträchtigt und der Hauptgrund für den Wechsel ist. In diesem Fall ist Zykluszeit eine unbedingte Notwendigkeit. Heutzutage dauert es 12 Monate, bis ein Feature von der Anforderung bis zum Release gelangt. Wenn es vom Führungsteam priorisiert wird, kann dieser Zyklus auf sechs bis neun Monate verkürzt werden. Das Team konnte die Zykluszeit über eine cloudfähige Anwendungsinnovation, cloudnative Anwendungsmodelle und die Integration mit Azure DevOps auf einen Monat verkürzen. So können das Unternehmen und die Anwendungsentwicklungsteams viel direkter mit den Kunden interagieren.
+- **Beispiel:** Ein Dienstleistungsunternehmen, das B2B-Dienste (Business-to-Business) bereitstellt, versucht, auf einem wettbewerbsintensiven Markt im Geschäft zu bleiben. Kunden, die zu einem Konkurrenten gewechselt sind, haben angegeben, dass die übermäßig komplexe technische Lösung die eigenen Geschäftsprozesse beeinträchtigt und der Hauptgrund für den Wechsel ist. In diesem Fall ist Zykluszeit eine unbedingte Notwendigkeit. Heutzutage dauert es 12 Monate, bis ein Feature von der Anforderung bis zum Release gelangt. Wenn es vom Führungsteam priorisiert wird, kann dieser Zyklus auf sechs bis neun Monate verkürzt werden. Das Team konnte die Zykluszeit über eine cloudfähige Anwendungsinnovation, cloudnative Anwendungsmodelle und die Integration mit Azure DevOps auf einen Monat verkürzen. So können das Unternehmen und die Anwendungsentwicklungsteams viel direkter mit den Kunden interagieren.
 
 > **ExakTime**
 >
