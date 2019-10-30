@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: e67d3e0ed1e13fc4c7a5cfdca1bb2f6c138601ba
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 58891a3afcafc9ac160f90027c35aa459ca7636a
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548723"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048007"
 ---
-<!-- markdownlint-disable -->
+<!-- markdownlint-disable MD026 -->
 
 # <a name="what-business-outcomes-are-associated-with-transformation-journeys"></a>Welche Geschäftsergebnisse sind mit Transformationsprozessen verbunden?
 
@@ -34,37 +34,37 @@ Nachfolgend sind einige Geschäftsergebnisse aufgeführt, die häufig Gespräche
 - **Vertrieb:** Steigern Sie den Umsatz, verbessern Sie den Lebenszykluswert Ihrer Kunden.
 - **Personalverwaltung:** Binden, gewinnen und stärken Sie Ihre Mitarbeiter.
 
-# <a name="sample-outcomes-by-category"></a>Beispielergebnisse nach Kategorien
+## <a name="sample-outcomes-by-category"></a>Beispielergebnisse nach Kategorien
 
 Die Formulierung von Geschäftsergebnissen kann sich für viele technisch orientierte Menschen wie eine Fremdsprache anfühlen. Um die Übersetzung zu erleichtern, stellt Microsoft eine Reihe von Beispielen für Geschäftsergebnisse im [Rahmenplan für Geschäftsergebnisse](../index.md) (Business Outcome Framework) zur Verfügung. Verwenden Sie diese Beispiele, um Geschäftsergebnisse, die auf tatsächlichen Transformationsprozessen basieren, anzuregen und darzustellen.
 
 Damit Sie die Geschäftsergebnisse leichter finden, haben wir sie in die folgenden Kategorien unterteilt. Mit diesem Ansatz werden Gespräche zur Konsensbildung zwischen Geschäftseinheiten gefördert.
 
-## <a name="fiscal-outcomes"></a>Finanzergebnisse
+### <a name="fiscal-outcomes"></a>Finanzergebnisse
 
 Die finanzielle oder fiskalische Leistung ist für viele Führungskräfte das eindeutigste Geschäftsergebnis, aber nicht das einzige.
 
 Zeigen Sie [Beispiele für Finanzergebnisse](./fiscal-outcomes.md) an.
 
-## <a name="agility-outcomes"></a>Agilitätsergebnisse
+### <a name="agility-outcomes"></a>Agilitätsergebnisse
 
 Das sich schnell verändernde Geschäftsumfeld von heute setzt einen hohen Grad an Termintreue voraus. Die Fähigkeit, schnell auf Marktveränderungen zu reagieren und diese voranzutreiben, ist das wichtigste Maß für die Agilität des Unternehmens.
 
 Zeigen Sie [Beispiele für Agilitätsergebnisse](./agility-outcomes.md) an.
 
-## <a name="reach-outcomes"></a>Reichweitenergebnisse
+### <a name="reach-outcomes"></a>Reichweitenergebnisse
 
 In einem ständig schrumpfenden Markt lässt sich die globale Reichweite (Fähigkeit zur Unterstützung globaler Kunden und Benutzer) an der Compliance in den für das Unternehmen relevanten Regionen messen.
 
 Zeigen Sie die Ergebnisse in Bezug auf die [globale Reichweite](./reach-outcomes.md) an.
 
-## <a name="customer-engagement-outcomes"></a>Kundenbindungsergebnisse
+### <a name="customer-engagement-outcomes"></a>Kundenbindungsergebnisse
 
 Soziale Marktplätze definieren Gewinner und Verlierer in einem nie dagewesenen Tempo neu. Die Reaktion auf die Bedürfnisse der Benutzer ist ein wichtiger Maßstab für die Kundenbindung.
 
 Erfahren Sie mehr über [Kundenbindungsergebnisse](./engagement-outcomes.md).
 
-## <a name="performance-outcomes"></a>Leistungsergebnisse
+### <a name="performance-outcomes"></a>Leistungsergebnisse
 
 Leistung und Zuverlässigkeit werden vorausgesetzt. Wenn einer der beiden Faktoren ins Stocken gerät, kann der Imageverlust unangenehm und nachhaltig sein.
 

@@ -10,19 +10,19 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8d30001a3ee97783dca2709c33e7bebb9ab9a889
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 2e624ad1ede3546d4babb232f7bd4b974afadaaa
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769323"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047451"
 ---
 ::: zone target="docs"
 
 # <a name="azure-innovation-guide-before-you-start"></a>Azure-Innovationsleitfaden: Vorbereitung
 
 > [!NOTE]
-> Dieser Leitfaden dient als Ausgangspunkt für Innovationsleitlinien im Cloud Adoption Framework. Er ist auch im Azure Quickstart Center verfügbar. Einen Link zum Azure Quickstart Center finden Sie im Tipp weiter unten in diesem Artikel.
+> Dieser Leitfaden dient als Ausgangspunkt für Innovationsleitlinien im Cloud Adoption Framework. Er ist auch im [Azure Quickstart Center](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade) verfügbar.
 
 ::: zone-end
 
@@ -32,9 +32,9 @@ ms.locfileid: "72769323"
 
 ::: zone-end
 
-Bevor Sie mit der Entwicklung innovativer Lösungen mithilfe von Azure-Diensten beginnen, müssen Sie Ihre Umgebung vorbereiten. Dazu gehört auch die Verwaltung von Kundenfeedbackschleifen. In diesem Leitfaden werden Features vorgestellt, mit denen Sie die Kundenbindung stärken, Lösungen erstellen und die Akzeptanz fördern können. Weitere Informationen, bewährte Methoden und Überlegungen im Zusammenhang mit der Vorbereitung Ihrer Cloudumgebung finden Sie im [Abschnitt zur Innovation des Cloud Adoption Framework](../index.md).
+Bevor Sie mit der Entwicklung innovativer Lösungen mithilfe von Azure-Diensten beginnen, müssen Sie Ihre Umgebung vorbereiten. Dazu gehört auch die Vorbereitung der Verwaltung von Kundenfeedbackschleifen. In diesem Leitfaden werden Features vorgestellt, mit denen Sie die Kundenbindung stärken, Lösungen erstellen und die Akzeptanz fördern können. Weitere Informationen, bewährte Methoden und Überlegungen im Zusammenhang mit der Vorbereitung Ihrer Cloudumgebung finden Sie im [Abschnitt zur Innovation des Cloud Adoption Framework](../index.md).
 
-Sie lernen Folgendes:
+In diesem Leitfaden lernen Sie Folgendes:
 
 > [!div class="checklist"]
 >
@@ -48,7 +48,7 @@ Sie lernen Folgendes:
 ::: zone target="docs"
 
 > [!TIP]
-> Dieser Leitfaden steht im Azure-Portal als interaktive Umgebung zur Verfügung. Navigieren Sie im Azure-Portal zum [Azure Quickstart Center](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade), und wählen Sie **Einführung in das Azure-Setup** aus. Befolgen Sie dann die Schrittanleitungen.
+> Dieser Leitfaden steht im Azure-Portal als interaktive Umgebung zur Verfügung. Navigieren Sie im Azure-Portal zum [Azure Quickstart Center](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade), wählen Sie **Azure-Innovationsleitfaden** aus, und befolgen Sie dann die Schritt-für-Schritt-Anleitung.
 
 Nächste Schritte: [Bereiten Sie sich auf Innovationen mit einem gemeinsamen Repository und Ideenmanagementtools vor.](./adoption.md)
 

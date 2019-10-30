@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: 85d284494a6fd9ca95b9566c939015a0a57b6f78
-ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
+ms.openlocfilehash: cdfa8ffe64ac7af6d545f9706f8f0652a4d583c4
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888911"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047717"
 ---
 # <a name="migration-tools-decision-guide"></a>Entscheidungsleitfaden zur Wahl des Migrationstools
 
@@ -40,7 +40,7 @@ Im Einklang mit der Schwerpunktsetzung des Cloud Adoption Frameworks auf die [in
 
 ## <a name="learn-more"></a>Weitere Informationen
 
-- **[Cloudgrundlagen: Übersicht über Azure-Computeoptionen](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview)** . Bietet Informationen über die Möglichkeiten der Azure IaaS- und PaaS-Computeoptionen.
-- **[Cloudgrundlagen: Auswählen des richtigen Datenspeichers](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)** . Erläutert die auf der Azure-Plattform verfügbaren PaaS-Speicheroptionen.
-- **[Migration für erweiterten Bereich: Speicheranforderungen überschreiten Netzwerkkapazität während einer Migration](../../migrate/expanded-scope/network-capacity-exceeded.md)** . Erläutert alternative Datenmigrationsmechanismen für Szenarien, in denen die Datenmigration durch die verfügbare Netzwerkbandbreite beeinträchtigt wird.
-- **[SQL-Datenbank: Auswählen der richtigen SQL Server-Option in Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines)** . Erläuterung der Optionen und geschäftlichen Gründe für die Entscheidung, Ihre SQL Server-Workloads in einer gehosteten Infrastruktur- (IaaS) oder einer gehosteten Dienstumgebung (PaaS) bereitzustellen.
+- **[Cloudgrundlagen: Übersicht über Azure-Computeoptionen](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview).** Bietet Informationen über die Möglichkeiten der Azure IaaS- und PaaS-Computeoptionen.
+- **[Cloudgrundlagen: Auswählen des richtigen Datenspeichers](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview).** Erläutert die auf der Azure-Plattform verfügbaren PaaS-Speicheroptionen.
+- **[Migration für erweiterten Bereich: Speicheranforderungen überschreiten Netzwerkkapazität während einer Migration](../../migrate/expanded-scope/network-capacity-exceeded.md).** Erläutert alternative Datenmigrationsmechanismen für Szenarien, in denen die Datenmigration durch die verfügbare Netzwerkbandbreite beeinträchtigt wird.
+- **[SQL-Datenbank: Auswählen der richtigen SQL Server-Option in Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines).** Erläuterung der Optionen und geschäftlichen Gründe für die Entscheidung, Ihre SQL Server-Workloads in einer gehosteten Infrastruktur- (IaaS) oder einer gehosteten Dienstumgebung (PaaS) bereitzustellen.
