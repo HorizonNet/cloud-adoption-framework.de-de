@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 118279ca768507471dbdddf9f499a592d34a477e
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0933474aef96d01862f0f230073e275ac262cd83
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549038"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048508"
 ---
 # <a name="prerequisites-checklist-for-an-effective-cloud-adoption-plan"></a>Checkliste der Voraussetzungen für einen effektiven Cloudeinführungsplan
 
@@ -23,9 +23,9 @@ Ein Plan ist nur so effektiv wie die Daten, die in ihn Eingang finden. Damit ein
 
 Genaue strategische Eingaben stellen sicher, dass die geleistete Arbeit zur Realisierung von Geschäftsergebnissen beiträgt. Der [Abschnitt zur Strategie des Cloud Adoption Framework](../strategy/index.md) bietet eine Reihe von Übungen zur Entwicklung einer eindeutigen Strategie. Die Ergebnisse dieser Übungen fließen in den Cloudeinführungsplan ein. Bevor Sie den Plan entwickeln, stellen Sie sicher, dass die folgenden Elemente als Ergebnis dieser Übungen genau definiert sind:
 
-- **Eindeutige Beweggründe**: Warum wird die Cloud eingeführt?
-- **Definierte Geschäftsergebnisse**: Welche Ergebnisse erwarten wir von der Einführung der Cloud?
-- **Geschäftliche Begründung**: Wie wird der Erfolg des Unternehmens gemessen?
+- **Eindeutige Beweggründe:** Warum wird die Cloud eingeführt?
+- **Definierte Geschäftsergebnisse:** Welche Ergebnisse erwarten wir von der Einführung der Cloud?
+- **Geschäftliche Begründung:** Wie wird der Erfolg des Unternehmens gemessen?
 
 Jedes Mitglied des Teams, das den Cloudeinführungsplan implementiert, sollte in der Lage sein, diese drei strategischen Fragen zu beantworten. Manager und Führungskräfte, die für die Implementierung des Plans verantwortlich sind, sollten die Metriken kennen, die sich hinter den einzelnen Fragen verbergen, und jeden Fortschritt bei der Realisierung dieser Metriken verstehen.
 
@@ -33,9 +33,9 @@ Jedes Mitglied des Teams, das den Cloudeinführungsplan implementiert, sollte in
 
 Genaue taktische Eingaben stellen sicher, dass die Arbeiten exakt geplant und effektiv verwaltet werden können. Vor der Erstellung des eigentlichen Plans bietet der [Abschnitt zur Planung des Cloud Adoption Framework](./index.md) eine Reihe von Übungen zur Entwicklung von Planungsartefakten. Diese Artefakte bieten Antworten auf die folgenden Fragen:
 
-- **Bewertung der digitalen Ressourcen**: Welches sind die 10 vorrangigsten Workloads im Einführungsplan? Wie viele zusätzliche Workloads werden voraussichtlich im Plan enthalten sein? Wie viele Ressourcen werden als Kandidaten für die Einführung der Cloud betrachtet? Konzentrieren sich die ersten Bemühungen mehr auf Migrations- oder Innovationsaktivitäten?
-- **Organisationsausrichtung**: Wer wird die technischen Arbeiten im Einführungsplan durchführen? Wer ist für die Einhaltung der Governance- und Complianceanforderungen verantwortlich?
-- **Qualifikationsbereitschaft**: Wie viele Personen sind für die Durchführung der erforderlichen Aufgaben vorgesehen? Wie gut sind ihre Qualifikationen auf die Cloudeinführung ausgerichtet? Sind die Partner so ausgerichtet, dass sie die technische Implementierung unterstützen?
+- **Bewertung der digitalen Ressourcen:** Welches sind die 10 vorrangigsten Workloads im Einführungsplan? Wie viele zusätzliche Workloads werden voraussichtlich im Plan enthalten sein? Wie viele Ressourcen werden als Kandidaten für die Einführung der Cloud betrachtet? Konzentrieren sich die ersten Bemühungen mehr auf Migrations- oder Innovationsaktivitäten?
+- **Organisationsausrichtung:** Wer wird die technischen Arbeiten im Einführungsplan durchführen? Wer ist für die Einhaltung der Governance- und Complianceanforderungen verantwortlich?
+- **Qualifikationsbereitschaft:** Wie viele Personen sind für die Durchführung der erforderlichen Aufgaben vorgesehen? Wie gut sind ihre Qualifikationen auf die Cloudeinführung ausgerichtet? Sind die Partner so ausgerichtet, dass sie die technische Implementierung unterstützen?
 
 Diese Fragen sind für die Genauigkeit des Cloudeinführungsplans von entscheidender Bedeutung. Zumindest die Fragen zur Bewertung der digitalen Ressourcen müssen beantwortet werden, um einen Plan zu erstellen. Damit präzise Zeitpläne erstellt werden können, sind auch die Fragen zur Organisation und zu Qualifikationen von großer Bedeutung.
 

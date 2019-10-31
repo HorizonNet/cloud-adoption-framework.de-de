@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: dda348b5e0707a949df0171d718b8615918d9dff
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: b8c28314037e023423d48c604a1dd9bd6c4ad381
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548649"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047917"
 ---
 # <a name="examples-of-global-reach-outcomes"></a>Beispiele für globale Reichweitenergebnisse
 
@@ -27,13 +27,13 @@ Bei Cloudlösungen werden die Kosten für die Globalisierung an den Cloudanbiete
 
 Die Erschließung eines neuen Markts kann während einer Transformation eines der wichtigsten Geschäftsergebnisse sein. Durch die Möglichkeit einer schnellen Bereitstellung von Ressourcen ohne längerfristige Verpflichtung in einem Markt können leitende Vertriebs- und Betriebsmitarbeiter Optionen erkunden, die in der Vergangenheit nicht einmal in Erwägung gezogen worden wären.
 
-- **Beispiel**: Ein Kosmetikhersteller hat einen Trend entdeckt. Einige Produkte werden in die Region Asien-Pazifik geliefert, obwohl dort keine Vertriebsteams arbeiten. Die Mindestanforderungen an die Systeme für Außendienstmitarbeiter sind zwar niedrig, aber die Latenz verhindert eine RAS-Lösung. Um trotzdem von diesem Trend profitieren zu können, möchte der Vertriebsleiter ein Experiment mit Vertriebsteams in Japan und Südkorea starten. Da das Unternehmen bereits zur Cloud migriert ist, konnte es die erforderlichen Systeme in Japan und Südkorea innerhalb weniger Tage bereitstellen. So konnte der Vertriebsleiter den Umsatz in der Region innerhalb von drei Monaten um _x Prozent_ steigern. Diese beiden Märkte übertreffen andere Regionen auf der Welt auch weiterhin und führen zu Vertriebschancen in der gesamten Region.
+- **Beispiel:** Ein Kosmetikhersteller hat einen Trend entdeckt. Einige Produkte werden in die Region Asien-Pazifik geliefert, obwohl dort keine Vertriebsteams arbeiten. Die Mindestanforderungen an die Systeme für Außendienstmitarbeiter sind zwar niedrig, aber die Latenz verhindert eine RAS-Lösung. Um trotzdem von diesem Trend profitieren zu können, möchte der Vertriebsleiter ein Experiment mit Vertriebsteams in Japan und Südkorea starten. Da das Unternehmen bereits zur Cloud migriert ist, konnte es die erforderlichen Systeme in Japan und Südkorea innerhalb weniger Tage bereitstellen. So konnte der Vertriebsleiter den Umsatz in der Region innerhalb von drei Monaten um _x Prozent_ steigern. Diese beiden Märkte übertreffen andere Regionen auf der Welt auch weiterhin und führen zu Vertriebschancen in der gesamten Region.
 
 ## <a name="data-sovereignty"></a>Datenhoheit
 
 Die Erschließung neuer Märkte führt auch zu neuen Governanceeinschränkungen. Die DSGVO ist ein Beispiel für Governancekriterien, die einen erheblichen finanziellen Regress verursachen können. Azure bietet Complianceangebote, die Kunden dabei helfen, Compliancevorgaben in regulierten Branchen und globalen Märkten zu erfüllen. Weitere Informationen finden Sie in der [Übersicht über Microsoft Azure-Compliance](https://aka.ms/AzureCompliance).
 
-- **Beispiel**: Ein US-Versorgungsunternehmen erhielt einen Vertrag für Einrichtungen in Kanada. Die kanadischen Gesetze zur Datenhoheit erfordern, dass kanadische Daten in Kanada bleiben. Das Unternehmen hatte schon seit Jahren an cloudfähigen Anwendungsinnovationen gearbeitet. Daher konnte seine Software über vollständig skriptgesteuerte DevOps-Prozesse bereitgestellt werden. Mit wenigen kleinen Änderungen an der Codebasis konnten sie eine Arbeitskopie des Codes in einem Azure-Rechenzentrum in Kanada bereitstellen und damit die Complianceanforderung zur Datenhoheit erfüllen – und den Kunden behalten.
+- **Beispiel:** Ein US-Versorgungsunternehmen erhielt einen Vertrag für Einrichtungen in Kanada. Die kanadischen Gesetze zur Datenhoheit erfordern, dass kanadische Daten in Kanada bleiben. Das Unternehmen hatte schon seit Jahren an cloudfähigen Anwendungsinnovationen gearbeitet. Daher konnte seine Software über vollständig skriptgesteuerte DevOps-Prozesse bereitgestellt werden. Mit wenigen kleinen Änderungen an der Codebasis konnten sie eine Arbeitskopie des Codes in einem Azure-Rechenzentrum in Kanada bereitstellen und damit die Complianceanforderung zur Datenhoheit erfüllen – und den Kunden behalten.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
