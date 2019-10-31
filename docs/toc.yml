@@ -127,6 +127,12 @@
           href: ready/azure-best-practices/roles.md
         - name: Schaffen von Hybrid Cloud-Konsistenz
           href: infrastructure/misc/hybrid-consistency.md
+    - name: Erweiterter Bereich
+      items:
+        - name: Terraform-Zielzonen
+          href: ready/expanded-scope/terraform-landing-zone.md
+        - name: Sicherheit von Netzwerkgrenzen
+          href: reference/networking-vdc.md
     - name: Bewährte Methoden
       items:
         - name: Übersicht
@@ -437,8 +443,6 @@
                   href: migrate/azure-best-practices/migrate-best-practices-security-management.md
                 - name: Weitere Best Practices
                   items:
-                    - name: Bewährte Methoden für die Sicherheit von Azure-Grenzen
-                      href: reference/networking-vdc.md
                     - name: Bewährte Methoden für die Azure-Datenbanksicherheit
                       href: 'https://docs.microsoft.com/azure/security/fundamentals/database-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Bewährte Methoden für Datensicherheit und Datenverschlüsselung in Azure
@@ -707,7 +711,7 @@
                       items:
                         - name: 'Entwerfen, Erstellen und Betreiben von Microservices in Azure'
                           href: 'https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                        - name: Referenzarchitektur für Microservices mit Azure Kubernetes Services (AKS)
+                        - name: Referenzarchitektur für Microservices mit Azure Kubernetes Service (AKS)
                           href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/microservices/aks?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                         - name: 'Referenzarchitektur: Beispiel für serverlose Microservices'
                           href: 'https://docs.microsoft.com/samples/azure-samples/serverless-microservices-reference-architecture/serverless-microservices-reference-architecture/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7542fafccd5b1ef4c5e944db8c14322c76772ed4
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: be75f4315d90c09c277846f8608ca0552f1d9853
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683559"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058702"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>Governanceleitfaden für komplexe Unternehmen
 
@@ -39,7 +39,7 @@ Die folgende Abbildung zeigt die Governance-MVP-Hierarchie zum Organisieren von 
 
 Jede Anwendung sollte im richtigen Bereich der Verwaltungsgruppen-, Abonnement- und Ressourcengruppenhierarchie bereitgestellt werden. Während der Bereitstellungsplanung erstellt das Cloudgovernanceteam die erforderlichen Knoten in der Hierarchie, um die für die Cloudeinführung zuständigen Teams zu unterstützen.
 
-1. Legen Sie eine Verwaltungsgruppe für die einzelnen Geschäftseinheiten mit einer detaillierten Hierarchie fest, die die Geografie und den Umgebungstyp (z. B. Produktion oder produktionsfremd) wiedergibt.
+1. Legen Sie eine Verwaltungsgruppe für die einzelnen Geschäftseinheiten mit einer detaillierten Hierarchie fest, die die Geografie und den Umgebungstyp (z. B. Produktions- oder Präproduktionsumgebungen) wiedergibt.
 2. Erstellen Sie für jede individuelle Kombination aus separater Geschäftseinheit oder Geografie ein produktionsbezogenes und ein produktionsfremdes Abonnement. Bei der Erstellung mehrerer Abonnements ist Vorsicht geboten. Weitere Informationen finden Sie [hier](../../../decision-guides/subscriptions/index.md).
 3. Wenden Sie [konsistente Benennung](../../../ready/considerations/naming-and-tagging.md) jeder Ebene dieser Gruppierungshierarchie an.
 4. Bei der Ressourcengruppenbereitstellung muss der Lebenszyklus der Inhalte berücksichtigt werden: Alle Inhalte, die gemeinsam entwickelt, verwaltet und ausgemustert werden, gehören zusammen. Weitere Informationen zu bewährten Methoden für Ressourcengruppen finden Sie [hier](../../../decision-guides/resource-consistency/index.md).

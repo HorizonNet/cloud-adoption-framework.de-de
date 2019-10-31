@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 059e60e44ccf393bb731005bd4a579f3e3e41951
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: ea7d9c51ced367734b28fd550ec1caa69ffe1f27
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547600"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058682"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Governanceleitfaden für Standardunternehmen
 
@@ -40,7 +40,7 @@ Die folgende Abbildung zeigt die Governance-MVP-Hierarchie zum Organisieren von 
 Jede Anwendung sollte im richtigen Bereich der Verwaltungsgruppen-, Abonnement- und Ressourcengruppenhierarchie bereitgestellt werden. Während der Bereitstellungsplanung erstellt das Cloudgovernanceteam die erforderlichen Knoten in der Hierarchie, um die für die Cloudeinführung zuständigen Teams zu unterstützen.
 
 1. Eine Verwaltungsgruppe für jeden Typ von Umgebung (z. B. Produktion, Entwicklung und Test)
-2. Zwei Abonnements: eins für die Produktion und eins für produktionsfremde Zwecke
+2. Zwei Abonnements, eins für die Produktionsworkloads und eins für Nichtproduktionsworkloads
 3. [Konsistente Benennung](../../../ready/considerations/naming-and-tagging.md) sollte auf jeder Ebene dieser Gruppierungshierarchie angewendet werden.
 4. Bei der Ressourcengruppenbereitstellung muss der Lebenszyklus der Inhalte berücksichtigt werden: Alle Inhalte, die gemeinsam entwickelt, verwaltet und ausgemustert werden, gehören zusammen. Weitere Informationen zu bewährten Methoden für Ressourcengruppen finden Sie [hier](../../../decision-guides/resource-consistency/index.md).
 5. Die [Regionswahl](../../../decision-guides/regions/index.md) ist äußerst wichtig und muss berücksichtigt werden, damit sowohl Netzwerk- und Überwachungsfunktionen für Failover-/Failbackvorgänge als auch die [erforderlichen SKUs in den bevorzugten Regionen](https://azure.microsoft.com/global-infrastructure/services) zur Verfügung stehen.

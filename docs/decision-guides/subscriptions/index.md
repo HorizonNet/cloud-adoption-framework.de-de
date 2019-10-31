@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 000d1aba1ec496e7b6583c84351e2d6ca29b3e1f
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: a6ee53355313a0f0c277d7b1c69e77494cdf8e1c
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683514"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058718"
 ---
 # <a name="subscription-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Abonnements
 
@@ -26,7 +26,7 @@ Mit zunehmendem Umfang Ihrer digitalen Ressourcen in Azure müssen nach und nach
 
 Im Anschluss folgen einige einfache Beispiele für die Trennung verschiedener Workloads mithilfe von Verwaltungsgruppen:
 
-- **Produktionsbezogen bzw. nicht produktionsbezogen:** Einige Unternehmen erstellen Verwaltungsgruppen, um Abonnements danach zu trennen, ob sie produktionsbezogen sind oder nicht. Verwaltungsgruppen ermöglichen es diesen Kunden, Rollen und Richtlinien einfacher zu verwalten. Beispielsweise kann ein nicht produktionsbezogenes Abonnement Entwicklern den **Mitwirkender**-Zugriff ermöglichen, aber in der Produktion haben sie nur **Leser**-Zugriff.
+- **Produktions- und Nichtproduktionsworkloads:** Einige Unternehmen erstellen Verwaltungsgruppen, um Abonnements danach zu trennen, ob sie produktionsbezogen sind oder nicht. Verwaltungsgruppen ermöglichen es diesen Kunden, Rollen und Richtlinien einfacher zu verwalten. Beispielsweise kann ein nicht produktionsbezogenes Abonnement Entwicklern den **Mitwirkender**-Zugriff ermöglichen, aber in der Produktion haben sie nur **Leser**-Zugriff.
 - **Interne Dienste bzw. externe Dienste:** Ähnlich wie bei produktionsbezogenen und nicht produktionsbezogenen Workloads haben Unternehmen häufig unterschiedliche Anforderungen, Richtlinien und Rollen für interne und externe kundenorientierte Dienste.
 
 In diesem Entscheidungsleitfaden werden verschiedene Ansätze für die Strukturierung Ihrer Verwaltungsgruppenhierarchie vorgestellt.
