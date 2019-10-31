@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 186aa4d4dc5218e2166e7dfb4c9834917e647a02
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 34d9cd3252849353b0fe765db4d84f7e9f2e5ea7
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024649"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549148"
 ---
 # <a name="evaluate-workload-readiness"></a>Bewerten der Bereitschaft einer Workload
 
@@ -36,7 +36,7 @@ Achten Sie darauf, alle Abweichungen bei der Hostkonfiguration, der replizierten
 
 - Dokumentieren Sie die Recovery Point Objectives (RPO) und Recovery Time Objectives (RTO) der aktuellen Datenbankbereitstellung. Diese werden bei [Architekturaktivitäten](./architect.md) als Hilfe zur Entscheidungsfindung verwendet.
 - Dokumentieren Sie alle Anforderungen für die Hochverfügbarkeitskonfiguration. Informationen zum Verständnis der SQL Server-Anforderungen finden Sie im [Leitfaden zu SQL Server-Lösungen mit hoher Verfügbarkeit](https://docs.microsoft.com/sql/sql-server/failover-clusters/high-availability-solutions-sql-server).
-- Bewerten Sie die PaaS-Kompatibilität. Im [Leitfaden für die Azure-Datenmigration](https://datamigration.microsoft.com) werden lokale Datenbanken den kompatiblen Azure-PaaS-Lösungen zugeordnet, z.B. [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db) oder [Azure DB](https://docs.microsoft.com/azure/sql-database) für [MySQL](https://docs.microsoft.com/azure/mysql), [Postgres](https://docs.microsoft.com/azure/postgresql) oder [MariaDB](https://docs.microsoft.com/azure/mariadb).
+- Bewerten Sie die PaaS-Kompatibilität. Im [Leitfaden für die Azure-Datenmigration](https://datamigration.microsoft.com) werden lokale Datenbanken den kompatiblen Azure-PaaS-Lösungen zugeordnet, z. B. [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db) oder [Azure DB](https://docs.microsoft.com/azure/sql-database) für [MySQL](https://docs.microsoft.com/azure/mysql), [PostgreSQL](https://docs.microsoft.com/azure/postgresql) oder [MariaDB](https://docs.microsoft.com/azure/mariadb).
 - Wenn PaaS-Kompatibilität möglich ist, ohne dass eine Problembehandlung erforderlich ist, wenden Sie sich an das für [Architekturaktivitäten](./architect.md) verantwortliche Team. PaaS-Migrationen können bei den meisten Cloudlösungen zu erheblichen Zeiteinsparungen und Reduzierungen der Gesamtbetriebskosten führen.
 - Wenn PaaS-Kompatibilität möglich ist, jedoch eine Problembehandlung erforderlich ist, wenden Sie sich an die für [Architekturaktivitäten](./architect.md) und [Problembehandlungsaktivitäten](../migrate/remediate.md) verantwortlichen Teams. In vielen Szenarien können die Vorteile von PaaS-Migrationen für Datenbanklösungen die längere Problembehandlungszeit aufwiegen.
 - Dokumentieren Sie Änderungsumfang und -rate für jede zu migrierende Datenbank.

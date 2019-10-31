@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 387cc7b320e50628e2f10c25ab49f200878d3636
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 2a6f59c09533fc400871d549e32c9b7d56024551
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222948"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548073"
 ---
 # <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>Metriken, Indikatoren und Risikotoleranz in der Ressourcenkonsistenz
 
@@ -36,7 +36,7 @@ Jede Organisation verfügt über die verschiedenen Betriebsszenarien, aber die f
 - **Fehlerhafte Netzwerkverbindungen.** Die Anzahl der Ressourcen mit Netzwerkkonnektivitätsproblemen.
 - **Fehlerhafte Dienstendpunkte.** Die Anzahl von Problemen mit externen Netzwerkendpunkten.
 - **Cloudanbieter-Dienstintegritätsvorfälle.** Die Anzahl von Unterbrechungen oder Leistungsvorfällen, die vom Cloudanbieter verursacht wurden.
-- **Vereinbarungen zum Servicelevel (SLAs).** Diese können sowohl Microsoft-Verpflichtungen für Verfügbarkeit und Konnektivität von Azure-Diensten sowie Verpflichtungen des Unternehmens gegenüber externen und internen Kunden beinhalten.
+- **Vereinbarungen zum Servicelevel (SLAs).** Hierzu können sowohl Verpflichtungen von Microsoft im Hinblick auf die Verfügbarkeit und Konnektivität von Azure-Diensten als auch Verpflichtungen des Unternehmens gegenüber externen und internen Kunden gehören.
 - **Dienstverfügbarkeit.** Der Prozentsatz der tatsächlichen Verfügbarkeit der in der Cloud gehosteten Workloads im Vergleich zur erwarteten Verfügbarkeit.
 - **Recovery Time Objective (RTO).** Gibt den maximal zulässigen Zeitraum an, den eine Anwendung nach einem Vorfall nicht verfügbar sein darf.
 - **Recovery Point Objective (RPO).** Gibt den maximalen Zeitraum für den Datenverlust an, der bei einem Notfall akzeptabel ist. Wenn Sie Daten beispielsweise in einer einzelnen Datenbank ohne Replikation in anderen Datenbanken speichern und stündliche Sicherungen durchführen, können Daten für bis zu eine Stunde verloren gehen.

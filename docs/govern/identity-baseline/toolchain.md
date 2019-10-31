@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 72060f16add37d62a4747c5fe9d5aef49fe04c58
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 348bcc8a98585efb4b4b1dddef1499d4c4958424
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222115"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547414"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Tools für Identitätsbaseline in Azure
 
@@ -45,7 +45,7 @@ Wenn Sie diese Methode wählen, übernimmt Azure AD die Anmeldung für Benutzer.
 
 **Verbundauthentifizierung:**
 
-Wenn Sie diese Methode wählen, übergibt Azure AD den Authentifizierungsprozess zur Validierung des Benutzerkennworts an ein separates vertrauenswürdiges Authentifizierungssystem, z.B. an eine lokale Instanz von Active Directory-Verbunddienste (AD FS) oder einen vertrauenswürdigen Drittanbieter von Verbunddiensten.
+Wenn Sie diese Methode wählen, übergibt Azure AD den Authentifizierungsprozess zur Validierung des Benutzerkennworts an ein separates vertrauenswürdiges Authentifizierungssystem, z. B. an eine lokale Instanz der Active Directory-Verbunddienste (AD FS) oder einen vertrauenswürdigen Drittanbieter von Verbunddiensten.
 
 Der Artikel [Auswählen der richtigen Authentifizierungsmethode für Azure Active Directory](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) enthält eine Entscheidungsstruktur, die Ihnen bei der Auswahl der besten Lösung für Ihr Unternehmen hilft.
 

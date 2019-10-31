@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1bf9497684c1043d23eec48b1ab5d5f1f12ef752
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 6bbd3ffe401a3e886ee1f91072a715002ab5e836
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70838000"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547240"
 ---
 # <a name="cloud-migration-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Cloudmigration im Framework für die Microsoft Cloud-Einführung (Microsoft Cloud Adoption Framework) für Azure
 
@@ -38,7 +38,7 @@ Der Cloudarchitekt dient als innovative Führungsperson und Vermittler, um diese
 
 **Aufgabentrennung:** In vielen Unternehmen besteht Aufgabentrennung, um den Zugriff auf Produktionssysteme oder Bereiche der Unternehmensumgebung zu beschränken. In diesem Fall wird der Migrationsprozess komplexer. In einigen Fällen können diese Rollen und Zuständigkeiten erfordern, dass mehrere Cloudarchitekten den gesamten Migrationsprozess abdecken.
 
-**Optionen für Partnerschaften:** In jedem dieser Prozesse lernen die Teams neue Fähigkeiten und Ansätze für die technische Ausführung. Eine Option während der Ausführung ist die Erweiterung der technischen Fähigkeiten der Teammitglieder. Die Einstellung zusätzlicher Mitarbeiter ist eine weitere. Partnerschaften mit Dritten können häufig zu erheblicher Beschleunigung und Risikominderung führen. [Optionen für Partnerschaften](./migration-considerations/assess/partnership-options.md) bietet Entscheidungshilfe bei der Wahl der besten Option.
+**Optionen für Partnerschaften:** In jedem dieser Prozesse lernen die Teams neue Fähigkeiten und Ansätze für die technische Ausführung. Der Ausbau der technischen Fähigkeiten der Teammitglieder ist eine Option bei der Durchführung. Die Einstellung zusätzlicher Mitarbeiter ist eine weitere. Partnerschaften mit Dritten können häufig zu erheblicher Beschleunigung und Risikominderung führen. [Optionen für Partnerschaften](./migration-considerations/assess/partnership-options.md) bietet Entscheidungshilfe bei der Wahl der besten Option.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

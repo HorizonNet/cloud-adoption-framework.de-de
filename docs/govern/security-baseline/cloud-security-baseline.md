@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 40bcd90d632bedd4e924942ac6efae5034cc0af8
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 216614c06f1638bf25149dac99f9bd258e9364aa
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221780"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548012"
 ---
 # <a name="understand-the-cloud-security-baseline"></a>Grundlegendes zur Cloudsicherheitsbaseline
 
@@ -40,7 +40,7 @@ Für Organisationen weltweit &mdash; ob Regierungsbehörden, gemeinnützige Orga
 
 Da Unternehmen weiterhin die Vorteile von Clouddiensten wie größere Auswahl und Flexibilität nutzen und gleichzeitig die Effizienz steigern und IT-Kosten senken möchten, muss überlegt werden, wie sich die Einführung von Clouddiensten auf Datenschutz, Sicherheit und Konformitätsstatus auswirkt. Microsoft arbeitet daran, seine Cloudangebote nicht nur skalierbar, zuverlässig und verwaltbar zu machen, sondern auch sicherzustellen, dass die Daten der Kunden geschützt und auf transparente Weise genutzt werden.
 
-Sicherheit ist ein wesentlicher Bestandteil starker Datenschutzmaßnahmen in allen Online-Computingumgebungen. Aber Sicherheit allein reicht nicht aus. Die Bereitschaft von Kunden und Unternehmen, ein bestimmtes Cloud Computing-Produkt zu verwenden, hängt auch davon ab, ob sie darauf vertrauen können, dass ihre Informationen geschützt werden und ihre Daten nur entsprechend den Erwartungen der Kunden verwendet werden. Erfahren Sie mehr über den Ansatz von Microsoft zum [Schutz von Daten und Privatsphäre in der Cloud](https://go.microsoft.com/fwlink/?LinkId=808242&clcid=0x409).
+Sicherheit ist ein wesentlicher Bestandteil starker Datenschutzmaßnahmen in allen Online-Computingumgebungen. Aber Sicherheit allein reicht nicht aus. Die Bereitschaft von Verbrauchern und Unternehmen, ein bestimmtes Cloud Computing-Produkt zu verwenden, hängt auch davon ab, ob sie darauf vertrauen können, dass ihre Informationen geschützt und ihre Daten nur entsprechend den Erwartungen der Kunden verwendet werden. Erfahren Sie mehr über den Ansatz von Microsoft zum [Schutz von Daten und Privatsphäre in der Cloud](https://go.microsoft.com/fwlink/?LinkId=808242&clcid=0x409).
 
 ## <a name="risk-mitigation"></a>Risikominderung
 

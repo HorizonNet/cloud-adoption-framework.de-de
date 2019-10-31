@@ -1,7 +1,7 @@
 ---
-title: 'Governanceleitfaden für Standardunternehmen: Ausführlicher Leitfaden mit Erläuterung'
+title: 'Governanceleitfaden für Standardunternehmen: Beschreibung der bewährten Methoden'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: In diesem Artikel wird der ausführliche Leitfaden für Governance in Standardunternehmen erläutert.
+description: In diesem Artikel werden die bewährten Methoden für Governance in Standardunternehmen erläutert.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3f9149c3edc90a12b0e9dd1f99e20172cf277fb2
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 0f7a6b76ba348414b4aed7b40aaffa4867e62c02
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967498"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547489"
 ---
-# <a name="standard-enterprise-governance-guide-prescriptive-guidance-explained"></a>Governanceleitfaden für Standardunternehmen: Ausführlicher Leitfaden mit Erläuterung
+# <a name="standard-enterprise-governance-guide-best-practices-explained"></a>Governanceleitfaden für Standardunternehmen: Beschreibung der bewährten Methoden
 
-Der Governanceleitfaden beginnt mit einer Sammlung von anfänglichen [Unternehmensrichtlinien](./initial-corporate-policy.md). Diese Richtlinien werden verwendet, um ein Governance-MVP einzurichten, das [empfohlene Verfahren](./index.md) berücksichtigt.
+Der Governanceleitfaden beginnt mit einer Sammlung von anfänglichen [Unternehmensrichtlinien](./initial-corporate-policy.md). Diese Richtlinien werden verwendet, um ein Governance-MVP einzurichten, das [bewährte Methoden](./index.md) berücksichtigt.
 
 In diesem Artikel werden die allgemeinen Strategien behandelt, die zum Erstellen eines Governance-MVP erforderlich sind. Der Kern des Governance-MVP ist das Verfahren zur [Beschleunigung der Bereitstellung](../../deployment-acceleration/index.md). Die in dieser Phase angewandten Tools und Muster ermöglichen die inkrementellen Verbesserungen, die für die zukünftige Erweiterung von Governance erforderlich sind.
 
@@ -61,12 +61,12 @@ Die Entscheidung über den Abonnemententwurf bestimmt, wie Azure-Abonnements str
 
 Entscheidungen zur Ressourcenkonsistenz bestimmen die Tools, Prozesse und Aufgaben, die erforderlich sind, um sicherzustellen, dass Azure-Ressourcen innerhalb eines Abonnements konsistent bereitgestellt, konfiguriert und verwaltet werden. Im vorliegenden Beispielfall wurde **[Bereitstellungskonsistenz](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** als primäres Muster für die Ressourcenkonsistenz ausgewählt.
 
-- Ressourcengruppen werden für Anwendungen unter Verwendung des Lebenszyklusansatzes erstellt. Das bedeutet, dass alles, was zusammen erstellt, verwaltet und ausgemustert wird, in einer einzelnen Ressourcengruppe zusammengefasst werden sollte. Weitere Informationen zu Ressourcengruppen finden Sie [hier](../../../decision-guides/resource-consistency/index.md#basic-grouping).
+- Ressourcengruppen werden mit dem Lebenszyklusansatz für Anwendungen erstellt. Alle Elemente, die gemeinsam erstellt, verwaltet und außer Betrieb genommen werden, sollten sich in einer einzigen Ressourcengruppe befinden. Weitere Informationen zu Ressourcengruppen finden Sie [hier](../../../decision-guides/resource-consistency/index.md#basic-grouping).
 - Azure Policy sollte auf alle Abonnements aus der zugehörigen Verwaltungsgruppe angewendet werden.
 - Im Rahmen des Bereitstellungsprozesses sollten Azure Resource Consistency-Vorlagen für die Ressourcengruppe in der Quellcodeverwaltung gespeichert werden.
 - Jede Ressourcengruppe ist basierend auf dem oben beschriebenen Lebenszyklusansatz einer bestimmten Workload oder Anwendung zugeordnet.
 - Azure-Verwaltungsgruppen ermöglichen das Aktualisieren der Governanceentwürfe, wenn sich die Unternehmensrichtlinie weiterentwickelt.
-- Eine umfassende Implementierung von Azure Policy könnte die zeitlichen Verpflichtungen des Teams überschreiten und zu diesem Zeitpunkt möglicherweise keinen großen Mehrwert bieten. Allerdings sollte eine einfache Standardrichtlinie erstellt und auf jede Verwaltungsgruppe angewendet werden, um die geringe Anzahl der aktuellen Richtlinienerklärungen zur Cloud-Governance durchzusetzen. In dieser Richtlinie wird die Implementierung spezifischer Governanceanforderungen definiert. Diese Implementierungen können dann auf alle bereitgestellten Ressourcen angewendet werden.
+- Eine umfassende Implementierung von Azure Policy könnte den Zeitrahmen für das Team überschreiten und bietet zu diesem Zeitpunkt möglicherweise keinen großen Mehrwert. Allerdings sollte eine einfache Standardrichtlinie erstellt und auf jede Verwaltungsgruppe angewendet werden, um die geringe Anzahl der aktuellen Richtlinienerklärungen zur Cloud-Governance durchzusetzen. In dieser Richtlinie wird die Implementierung spezifischer Governanceanforderungen definiert. Diese Implementierungen können dann auf alle bereitgestellten Ressourcen angewendet werden.
 
 >[!IMPORTANT]
 >Wann immer eine Ressource in einer Ressourcengruppe nicht mehr den gleichen Lebenszyklus hat, sollte sie in eine andere Ressourcengruppe verschoben werden. Beispiele hierfür sind allgemeine Datenbanken und Netzwerkkomponenten. Diese unterstützen zwar die Anwendung, die entwickelt wird, dienen aber auch anderen Zwecke und sollten daher in anderen Ressourcengruppen vorhanden sein.
@@ -89,7 +89,7 @@ Entscheidungen zu Protokollierung und Berichterstellung bestimmen, wie Ihr Speic
 
 ## <a name="incremental-improvement-of-governance-processes"></a>Inkrementelle Verbesserung der Governanceprozesse
 
-Im Zuge von Governanceänderungen können oder sollten einige Richtlinienerklärungen nicht durch automatisierte Tools kontrolliert werden. Andere Richtlinien werden im Laufe der Zeit zu einem erhöhten Aufwand für das IT-Sicherheitsteam und das lokale Identity Management-Team führen. Um neu auftretende Risiken einzudämmen, wird das Cloudgovernanceteam die folgenden Prozesse überwachen.
+Im Zuge von Governanceänderungen können oder sollen einige Richtlinienanweisungen nicht durch automatisierte Tools kontrolliert werden. Andere Richtlinien werden im Laufe der Zeit zu einem erhöhten Aufwand für das IT-Sicherheitsteam und das lokale Identity Management-Team führen. Um neu auftretende Risiken einzudämmen, wird das Cloudgovernanceteam die folgenden Prozesse überwachen.
 
 **Schnellere Einführung:** Das Cloudgovernanceteam hat Bereitstellungsskripts in mehreren Teams überprüft. Es verwaltet eine Reihe von Skripts, die als Bereitstellungsvorlagen dienen. Diese Vorlagen werden von den Cloudeinführungs- und DevOps-Teams verwendet, um Bereitstellungen schneller zu definieren. Jedes dieser Skripts enthält die erforderlichen Anforderungen, um eine Reihe von Governancerichtlinien durchzusetzen, und zwar ohne zusätzlichen Aufwand für die Techniker, die für die Cloudeinführung zuständig sind. Als Kurator dieser Skripts kann das Cloudgovernanceteam Richtlinienänderungen schneller umsetzen. Als Ergebnis der Skriptkuratierung wird das Cloudgovernanceteam als Quelle der Beschleunigung der Einführung angesehen. Dies schafft Konsistenz zwischen den Bereitstellungen, ohne die Einhaltung streng zu erzwingen.
 

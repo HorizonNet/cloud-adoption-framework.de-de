@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: dc2df86dae7e820527d5f4b1d26fa69366b55b59
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5cb88bba1b82bf4255fb13f9ac9d415018316dec
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022074"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548886"
 ---
 # <a name="monitoring-and-reporting-in-azure"></a>Überwachung und Berichterstellung in Azure
 
@@ -139,7 +139,7 @@ Azure Security Center wird in zwei Tarifen angeboten: Free und Standard. Feature
 
 **Testen Sie den Standard-Tarif in den ersten 30 Tagen kostenlos.**
 
-Nachdem Sie Sicherheitsrichtlinien für die Ressourcen eines Abonnements aktiviert und eingerichtet haben, können Sie den Sicherheitsstatus Ihrer Ressourcen sowie alle Probleme im Abschnitt **Prävention** anzeigen. Eine Liste mit diesen Problemen steht auch auf der Kachel **Empfehlungen** zur Verfügung.
+Nachdem Sie Sicherheitsrichtlinien für die Ressourcen eines Abonnements aktiviert und eingerichtet haben, können Sie den Sicherheitsstatus Ihrer Ressourcen sowie eventuelle Probleme im Abschnitt **Prävention** anzeigen. Eine Liste mit diesen Problemen steht auch auf der Kachel **Empfehlungen** zur Verfügung.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Security/SecurityMenuBlade/SecurityMenuBlade/0]" submitText="Explore Azure Security Center" :::
 

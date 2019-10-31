@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 13a18db6a074f73b962d29f4d5963571a49869d4
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 53ff6f0d32b80ef9c89d4ebd0234dd3442412907
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022648"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548425"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>Benchmarking und Größenänderung von Cloudressourcen
 
@@ -30,7 +30,7 @@ In der Cloud entfallen durch die Kostenrechnungs- und Bereitstellungsmodelle die
 Wann sollte eine Ressource optimiert werden &mdash; während oder nach der Migration? Die einfache Antwort lautet: *in beiden Fällen*. Das ist aber nicht ganz zutreffend. Zur Erläuterung sind nachfolgend zwei grundlegende Szenarien für die Optimierung der Ressourcengröße angegeben:
 
 - **Geplante Größenänderung.** Häufig ist eine Ressource deutlich zu groß und nicht ausgelastet, und ihre Größe sollte während der Bereitstellung geändert werden. Um festzustellen, ob die Größe einer Ressource erfolgreich geändert wurde, ist in diesem Fall ein Benutzerakzeptanztest nach der Migration erforderlich. Wenn ein Poweruser keine Leistungs- oder Funktionalitätsverluste während des Tests feststellt, kann davon ausgegangen werden, dass die Größe der Ressource erfolgreich geändert wurde.
-- **Optimierung.** In Fällen, in denen der Optimierungsbedarf unklar ist, sollten IT-Teams einen datengesteuerten Ansatz zur Verwaltung der Ressourcengröße verwenden. Anhand von Benchmarks der Ressourcenleistung kann ein IT-Team fundierte Entscheidungen in Bezug auf die am besten geeignete Größe, Dienste, Skalierung und Architektur einer Lösung treffen. Es können dann nach der Migration Größenänderungen vorgenommen und Leistungstheorien getestet werden.
+- **Optimierung.** In Fällen, in denen der Optimierungsbedarf unklar ist, sollten IT-Teams einen datengesteuerten Ansatz zur Verwaltung der Ressourcengröße verwenden. Anhand von Benchmarks der Ressourcenleistung kann ein IT-Team fundierte Entscheidungen zu den Aspekten Größe, Dienste, Skalierung und Architektur einer Lösung treffen, die sich am besten für diese Lösung eignen. Es können dann nach der Migration Größenänderungen vorgenommen und Leistungstheorien getestet werden.
 
 Verwenden Sie während der Migration fundierte Vermutungen, und experimentieren Sie mit der Größe. Für eine echte Ressourcenoptimierung sind jedoch Daten erforderlich, die auf der tatsächlichen Leistung in einer Cloudumgebung basieren. Damit eine echte Optimierung stattfinden kann, muss das IT-Team zunächst Methoden zur Überwachung von Leistung und Ressourcennutzung implementieren.
 

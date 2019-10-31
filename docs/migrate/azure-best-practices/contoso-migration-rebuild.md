@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: cbe5de4242baedfa704bd90baa7fa3ca0f0aa026
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 258b5a656293001228aab51dd1319fe6a89780a9
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025129"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548224"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Neuerstellen einer lokalen App in Azure
 
@@ -143,7 +143,7 @@ Contoso-Administratoren führen ein Bereitstellungsskript zum Erstellen des Mana
 
 Die Contoso-Administratoren führen die Bereitstellung wie folgt durch:
 
-1. Sie öffnen den Ordner mit Visual Studio Code und verschieben diesen in das Verzeichnis **/deploy/k8s**, das das Skript **gen-aks-env.ps1** enthält.
+1. Sie öffnen den Ordner mit Visual Studio Code und wechseln zum Verzeichnis **/deploy/k8s**, das das Skript **gen-aks-env.ps1** enthält.
 2. Sie führen das Skript zum Erstellen des Managed Kubernetes-Clusters mit AKS und ACR aus.
     ![AKS](./media/contoso-migration-rebuild/aks1.png)
 3. Bei geöffneter Datei aktualisiert Contoso den $location-Parameter in **eastus2** und speichert die Datei.

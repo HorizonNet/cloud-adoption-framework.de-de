@@ -8,18 +8,18 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 819d0c058acf48402296bbac8d4cb4837271259e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5b2de64af3d7e48a38fd1f125fc5f8b37b190dd2
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70835444"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547197"
 ---
 # <a name="create-hybrid-cloud-consistency"></a>Schaffen von Hybrid Cloud-Konsistenz
 
 Dieser Artikel führt Sie durch allgemeine Ansätze zum Erzeugen von Hybrid Cloud-Konsistenz.
 
-Hybridbereitstellungsmodelle können während der Migration das Risiko minimieren und zu einem problemlosen Übergang der Infrastruktur beitragen. Cloudplattformen bieten das höchste verfügbare Maß an Flexibilität bei Geschäftsprozessen. Viele Organisationen zögern damit, den Schritt in die Cloud zu wagen. Stattdessen bevorzugen sie, die vollständige Kontrolle über ihre vertraulichsten Daten zu behalten. Leider bieten lokale Server nicht die gleichen Innovationen wie die Cloud. Eine Hybrid Cloud-Lösung bietet die Geschwindigkeit von Innovationen in der Cloud und die Kontrolle einer lokalen Verwaltung.
+Hybridbereitstellungsmodelle können während der Migration das Risiko minimieren und zu einem problemlosen Übergang der Infrastruktur beitragen. Cloudplattformen bieten das höchste verfügbare Maß an Flexibilität bei Geschäftsprozessen. Viele Organisationen zögern damit, den Schritt in die Cloud zu wagen. Stattdessen bevorzugen sie, die vollständige Kontrolle über ihre vertraulichsten Daten zu behalten. Leider ermöglichen lokale Server nicht das gleiche Maß an Innovationen wie die Cloud. Eine Hybrid Cloud-Lösung bietet die Geschwindigkeit von Innovationen in der Cloud und die Kontrolle einer lokalen Verwaltung.
 
 ## <a name="integrate-hybrid-cloud-consistency"></a>Integrieren von Hybrid Cloud-Konsistenz
 

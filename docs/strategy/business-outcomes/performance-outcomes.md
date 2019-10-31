@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: d6c52336f6bf02641cefd6d848ed319e8d3cc100
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a4f8c76abb36d0b3f410ed4d2027f9307d6c1f0c
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031307"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548674"
 ---
 # <a name="examples-of-performance-outcomes"></a>Beispiele für Leistungsergebnisse
 
@@ -33,13 +33,13 @@ Transformieren Sie Ihr Business, und senken Sie die Kosten – mit einer energie
 
 ## <a name="reliability"></a>Zuverlässigkeit
 
-Mithilfe von Cloud Computing werden Datensicherung, Notfallwiederherstellung und Geschäftskontinuität vereinfacht, und die zugehörigen Kosten werden gesenkt, da Daten an mehreren redundanten Standorten im Netzwerk des Cloudanbieters gespiegelt werden können.
+Cloud Computing vereinfacht Datensicherung, Notfallwiederherstellung und Geschäftskontinuität und senkt die zugehörigen Kosten, da Daten an mehreren redundanten Standorten im Netzwerk des Cloudanbieters gespiegelt werden können.
 
-Eine der wichtigen Funktionen der IT ist es, sicherzustellen, dass Unternehmensdaten niemals verloren gehen und dass Anwendungen auch dann verfügbar sind, wenn es zu Serverabstürzen, Stromausfällen oder Naturkatastrophen kommt. Indem Sie Ihre Daten in Azure sichern, können Sie dafür sorgen, dass Ihre Daten sicher und wiederherstellbar bleiben.
+Eine der wichtigsten Funktionen der IT ist es, sicherzustellen, dass Unternehmensdaten niemals verloren gehen und Anwendungen auch bei Serverabstürzen, Stromausfällen oder Naturkatastrophen verfügbar bleiben. Indem Sie Ihre Daten in Azure sichern, können Sie dafür sorgen, dass Ihre Daten sicher und wiederherstellbar bleiben.
 
 Azure Backup ist eine einfache Lösung, mit der Sie Ihre Infrastrukturkosten senken können, während Sie gleichzeitig Sicherheitsmechanismen zum Schutz Ihrer Daten vor Ransomware einrichten. Sie können mit einer einzigen Lösung in Azure und lokal unter Linux, Windows, VMware oder Hyper-V ausgeführte Workloads schützen. Sie können für Geschäftskontinuität sorgen, indem Sie Ihre Anwendungen in Azure ausführen.
 
-Azure Site Recovery vereinfacht das Testen der Notfallwiederherstellung, indem Sie Anwendungen zwischen Azure-Regionen replizieren. Sie können auch lokale VMware- und Hyper-V-VMs und physische Server in Azure replizieren, damit diese verfügbar bleiben, wenn der primäre Standort ausfällt. Und Sie können Workloads am primären Standort wiederherstellen, wenn er wieder betriebsbereit ist.
+Azure Site Recovery vereinfacht das Testen der Notfallwiederherstellung, indem Sie Anwendungen zwischen Azure-Regionen replizieren. Sie können auch lokale VMware- und Hyper-V-VMs und physische Server in Azure replizieren, damit diese verfügbar bleiben, wenn der primäre Standort ausfällt. Und Sie können Workloads am primären Standort wiederherstellen, wenn dieser wieder betriebsbereit ist.
 
 - **Beispiel**: Ein Unternehmen der Öl- und Gasindustrie verwendet Azure-Technologien, um eine vollständige Sitewiederherstellung zu implementieren. Das Unternehmen entschied sich gegen einen vollständige Cloudumstieg für die tägliche Arbeit, aber die BCDR-Funktionen (Business Continuity & Disaster Recovery) in der Cloud dienen weiterhin dem Schutz des eigenen Rechenzentrums. Als sich Hunderte Meilen entfernt ein Orkan bildete, begann der Implementierungspartner mit einer Wiederherstellung des Standorts in Azure. Bevor der Sturm das Unternehmen überhaupt erreichen konnte, wurden schon alle geschäftskritischen Ressourcen in Azure ausgeführt, sodass es zu keinerlei Ausfallzeit kam.
 

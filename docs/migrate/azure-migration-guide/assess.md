@@ -10,18 +10,20 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 78c82a2cb8793f8b5f0b90b1958fb4a83e3da935
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 0d1918f60f6bfe2a6d458b83b5838a8776af51a7
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224386"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549270"
 ---
 # <a name="assess-the-digital-estate"></a>Bewerten der digitalen Ressourcen
 
 Bei einer idealen Migration wäre jede Ressource (Infrastruktur, App oder Daten) mit einer Cloudplattform kompatibel und migrationsfähig. In der Praxis sollte jedoch nicht alles in die Cloud migriert werden. Außerdem ist nicht jede Ressource mit Cloudplattformen kompatibel. Vor der Migration einer Workload in die Cloud ist es wichtig, die Workload und alle zugehörigen Ressourcen (Infrastruktur, Apps und Daten) zu bewerten.
 
 Anhand der Ressourcen in diesem Abschnitt können Sie Ihre Umgebung bewerten, um die Eignung für die Migration und die zu berücksichtigenden Methoden zu bestimmen.
+
+<!-- markdownlint-disable MD025 -->
 
 # <a name="toolstabtools"></a>[Tools](#tab/Tools)
 
@@ -39,7 +41,7 @@ Führen Sie diese Schritte aus, um mit Azure Migrate mit einer Servermigrationsb
 
 1. Wählen Sie **Azure Migrate** aus.
 1. Klicken Sie in der **Übersicht** auf **Server bewerten und migrieren**.
-1. Wählen Sie **Tools hinzufügen**.
+1. Wählen Sie **Hinzufügen** aus.
 1. Klicken Sie unter **Server ermitteln, bewerten und migrieren** auf **Tools hinzufügen**.
 1. Wählen Sie unter **Projekt migrieren** Ihr Azure-Abonnement aus, und erstellen Sie bei Bedarf eine Ressourcengruppe.
 1. Geben Sie unter **Projektdetails** den Projektnamen und die geografische Region an, in der Sie das Projekt erstellen möchten. Klicken Sie anschließend auf **Weiter**.

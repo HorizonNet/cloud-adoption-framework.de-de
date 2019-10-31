@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 22dc2f69f1b7e1541a9556fc8b8802cbb2d5e878
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 0efdd1a42ae7ff161c29f37365d0a14d4d869496
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024475"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547363"
 ---
 # <a name="rearchitect-an-on-premises-app-to-an-azure-container-and-azure-sql-database"></a>Umstrukturieren einer lokalen App zu einem Azure-Container und einer Azure SQL-Datenbank-Instanz
 
@@ -82,7 +82,7 @@ Contoso bewertet den vorgeschlagen Entwurf anhand einer Liste mit Vor- und Nacht
 **Aspekt** | **Details**
 --- | ---
 **Vorteile** | Der Code der SmartHotel360-App muss für die Migration zu Azure Service Fabric geändert werden. Der Aufwand ist jedoch minimal, da die Service Fabric-SDK Tools für die Änderungen verwendet werden.<br/><br/> Durch den Umstieg auf Service Fabric kann Contoso mit der Entwicklung von Microservices beginnen, um die App im Laufe der Zeit schnell und ohne Gefahr für die ursprüngliche Codebasis zu erweitern.<br/><br/> Windows-Container bieten die gleichen Vorteile wie Container im Allgemeinen. Sie verbessern die Flexibilität, die Portabilität und die Steuerungsmöglichkeiten.<br/><br/> Contoso kann seine Investition in die Software Assurance mit dem Azure-Hybridvorteil für SQL Server und Windows Server nutzen.<br/><br/> Nach der Migration ist die Unterstützung von Windows Server 2008 R2 nicht mehr erforderlich. [Weitere Informationen](https://support.microsoft.com/lifecycle)<br/><br/> Contoso kann die Webebene der App mit mehreren Instanzen konfigurieren, sodass sie kein Single Point of Failure mehr ist.<br/><br/> Sie ist nicht mehr auf das veraltete SQL Server 2008 R2 angewiesen.<br/><br/> SQL-Datenbank unterstützt die technischen Anforderungen von Contoso. Die Administratoren von Contoso haben die lokale Datenbank mithilfe des Datenmigrations-Assistenten bewertet und festgestellt, dass sie kompatibel ist.<br/><br/> SQL-Datenbank verfügt über eine integrierte Fehlertoleranz, die Contoso nicht einrichten muss. Dadurch wird sichergestellt, dass die Datenschicht kein Single Point of Failover mehr ist.
-**Nachteile** | Container sind komplexer als andere Migrationsoptionen. Die Lernkurve bei Containern könnte für Contoso ein Problem darstellen. Der Grad der Komplexität steigt und bietet trotz der Kurve einen hohen Nutzen.<br/><br/> Das Betriebsteam von Contoso muss eingearbeitet werden, um Azure, Container und Microservices für die App verstehen und unterstützen zu können.<br/><br/> Wenn Contoso anstelle des Azure Database Migration Service den Datenmigrations-Assistenten zur Migration seiner Datenbank verwendet, verfügt das Unternehmen nicht über die entsprechende Infrastruktur für die Migration umfangreicher Datenbanken.
+**Nachteile** | Container sind komplexer als andere Migrationsoptionen. Die Lernkurve bei Containern könnte für Contoso ein Problem darstellen. Der Grad der Komplexität steigt und bietet trotz der Kurve einen hohen Nutzen.<br/><br/> Das Betriebsteam von Contoso muss eingearbeitet werden, um Azure, Container und Microservices für die App verstehen und unterstützen zu können.<br/><br/> Wenn Contoso anstelle des Azure Database Migration Service den Datenmigrations-Assistenten zur Migration der Datenbank verwendet, verfügt das Unternehmen nicht über die entsprechende Infrastruktur für die Migration umfangreicher Datenbanken.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -484,7 +484,7 @@ Als Nächstes konfigurieren die Contoso-Administratoren Azure DevOps Services f�
 
 Nachdem die SmartHotel360-App und die SmartHotel360-Datenbank in Azure ausgeführt werden, möchte Contoso die App erweitern.
 
-- Die Contoso-Entwickler erstellen gerade den Prototypen einer neuen .NET Core-Anwendung, die auf dem Service Fabric-Cluster ausgeführt werden soll.
+- Die Contoso-Entwickler erstellen gerade den Prototyp einer neuen .NET Core-Anwendung, die im Service Fabric-Cluster ausgeführt werden soll.
 - Die App wird dann zum Pullen von Stimmungsdaten aus Cosmos DB verwendet.
 - Diese Daten werden in Form von Tweets vorliegen, die mit einer serverlosen Azure-Funktion und der Azure Cognitive Services-Textanalyse-API verarbeitet werden.
 

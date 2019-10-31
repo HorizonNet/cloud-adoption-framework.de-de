@@ -8,19 +8,16 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 096d6756c1d2b4713b6a464cbcc05785e96bc5cc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 718835335103130418f9fe75284adb7ceb94821c
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023390"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683476"
 ---
 # <a name="innovation-through-cloud-adoption-in-the-cloud-adoption-framework"></a>Innovation durch Einführung der Cloud – Cloud Adoption Framework
 
-Innovation ist eng mit Migration verbunden. Wenn Workloads Marktdifferenzierungsmöglichkeiten schaffen, ist es üblich, dass diese Workloads in die Cloud migriert werden und dann einen Modernisierungsprozess durchlaufen. In der Cloud kann die Modernisierung dann durch moderne cloudbasierte Ansätze beschleunigt werden, die auch die Entwicklung neuer Innovationen ermöglichen.
-
-> [!NOTE]
-> Dieser Leitfaden wird für die Q3/2019-Version des Cloud Adoption Framework entwickelt. Die Taxonomie und der nachstehende Ansatz werden sich wahrscheinlich ändern. Im Folgenden wird die allgemeine Richtung von Innovationsleitlinien aufgezeigt.
+Die Cloudmigration ist eine hervorragende Option für die Workloads, die in einer Umgebung bereits vorhanden sind. Das Erstellen neuer Produkte und Dienste erfordert einen ganz anderen Ansatz. Die innovative Methodik in diesem Framework etabliert einen Ansatz, der als Leitfaden für die Entwicklung neuer Produkte und Dienste dienen kann.
 
 ## <a name="motivations-behind-innovation"></a>Die Motivation hinter der Innovation
 
@@ -34,17 +31,6 @@ Innovation sollte nicht automatisch der ausgewählte Einführungspfad für alle 
 - Transformieren von Produkten oder Diensten
 - Revolutionieren des Markts mit neuen Produkten oder Diensten
 
-## <a name="innovation-guidance"></a>Innovationsleitlinien
-
-Im Zuge der Entwicklung der Innovationsinhalte innerhalb des Cloud Adoption Framework werden Leitlinien zu den folgenden Themen bereitgestellt:
-
-- Modernisieren vorhandener Ressourcen
-- Erstellen neuer Apps
-- Befolgen von Praktiken, die eine wachstumsorientierte Denkweise fördern
-- Integrieren von DevOps-Strategien
-
-![Übersicht über das Framework für die Cloudeinführung](../_images/caf-overview.png)
-
 ## <a name="common-workload-examples-associated-with-a-cloud-innovation"></a>Beispiele für häufige Workloads, die mit Cloudinnovationen verbunden sind
 
 - Benutzerdefinierte Anwendungen
@@ -52,3 +38,10 @@ Im Zuge der Entwicklung der Innovationsinhalte innerhalb des Cloud Adoption Fram
 - IoT: Integration physischer Produkte und Technologien
 - Umgebungsintelligenz: Integration von nicht-intrusiven Technologien in eine Umgebung
 - Cognitive Services: Big Data-, KI-, Machine Learning- und Vorhersagelösungen
+
+## <a name="next-steps"></a>Nächste Schritte
+
+Starten Sie Ihre Journey mit der [innovativen Methodik](../innovate/index.md).
+
+> [!div class="nextstepaction"]
+> [Starten der Innovation Journey](../innovate/index.md)

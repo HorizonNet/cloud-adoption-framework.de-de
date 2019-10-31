@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3a14603574430272004d9fe40654409409dd563e
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 78ffb3b3d91f1f00fb92d70147fd7177ffa9f1b0
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967308"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547509"
 ---
 # <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>Governanceleitfaden für Standardunternehmen: Multi-Cloud-Verbesserung
 
@@ -81,7 +81,7 @@ In diesem Abschnitt des Artikels wird der Governance-MVP-Entwurf so geändert, d
     1. Die Durchsetzung von Governance ist cloudspezifisch.
     2. Die Unternehmensrichtlinien, die im Governanceleitfaden etabliert wurden, sind hingegen nicht cloudspezifisch. Obwohl die Implementierung von Cloud zu Cloud variieren kann, können die Richtlinien auf den sekundären Anbieter angewandt werden.
 
-Die Einführung mehrerer Clouds sollte auf Bereiche beschränkt werden, in denen dies aus technischen oder speziellen geschäftlichen Gründen erforderlich ist. Eine zunehmende Einführung mehrerer Clouds hat nämlich auch eine höhere Komplexität sowie höhere Sicherheitsrisiken zur Folge.
+Die Einführung mehrerer Clouds sollte auf Bereiche beschränkt werden, in denen dies aus technischen oder speziellen geschäftlichen Gründen erforderlich ist. Je mehr Clouds eingeführt werden, desto mehr steigen auch Komplexität und Sicherheitsrisiken.
 
 ## <a name="conclusion"></a>Zusammenfassung
 

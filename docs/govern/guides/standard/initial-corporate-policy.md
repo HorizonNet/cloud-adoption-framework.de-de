@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5e269e623f22fa976f85c75c130ef0b19e4e9620
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 20dc2136f997f69cafbbff241994de90e942c7db
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967530"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547535"
 ---
 # <a name="standard-enterprise-governance-guide-initial-corporate-policy-behind-the-governance-strategy"></a>Governanceleitfaden für Standardunternehmen: Anfängliche Unternehmensrichtlinie hinter der Governancestrategie
 
@@ -44,4 +44,4 @@ Die aktuelle Risikotoleranz ist hoch, und das Interesse an der Investition in di
 Diese Unternehmensrichtlinie bereitet das Cloudgovernanceteam auf die Implementierung des Governance-MVP vor, das die Grundlage für die Einführung bildet. Der nächste Schritt ist das Implementieren dieses MVP.
 
 > [!div class="nextstepaction"]
-> [Ausführlicher Leitfaden mit Erläuterung](./prescriptive-guidance.md)
+> [Beschreibung der bewährten Methoden](./prescriptive-guidance.md)

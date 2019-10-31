@@ -9,18 +9,18 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 54e08a42a64d06005620b450b1458288316df74e
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d1d59b105dd6d75b0c5b5ed12d711473fd4995c8
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224012"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549117"
 ---
 # <a name="central-it-capabilities"></a>Funktionen der zentralen IT
 
 Wenn die Cloudeinführung hochskaliert wird, reichen Cloudgovernancefunktionen allein möglicherweise nicht mehr aus, um das gesamte Einführungsprojekt zu regulieren. Wenn diese Einführung schrittweise erfolgt, entwickeln Teams meist nach und nach die Fähigkeiten und Prozesse, die sie für die Arbeit in der Cloud benötigen.
 
-Wenn jedoch ein Cloudeinführungsteam die Cloud nutzt, um ein wichtiges und prestigeträchtiges Geschäftsergebnis zu erzielen, ist eine sukzessive Einführung selten der Fall. Erfolg zieht Erfolg nach sich. Dies gilt auch für die Cloudeinführung, dann aber im Maßstab der Cloud. Wenn mehrere Teams in relativ kurzer Zeit diesem einen Team bei der Cloudeinführung folgen, ist zusätzliche Unterstützung von den vorhandenen IT-Mitarbeitern erforderlich. Diese Mitarbeiter verfügen aber möglicherweise nicht über die Kenntnisse und Erfahrung, um die Cloud mit cloudnativen Tools zu unterstützen. So wird häufig ein zentrales IT-Team gebildet, das die Cloudnutzung reguliert.
+Wenn jedoch ein Cloudeinführungsteam die Cloud nutzt, um ein wichtiges und prestigeträchtiges Geschäftsergebnis zu erzielen, ist eine sukzessive Einführung selten der Fall. Erfolg zieht Erfolg nach sich. Dies gilt auch für die Cloudeinführung, dann aber im Maßstab der Cloud. Wenn mehrere Teams diesem einen Team relativ schnell bei der Cloudeinführung folgen, ist zusätzliche Unterstützung durch die vorhandenen IT-Mitarbeiter erforderlich. Diese Mitarbeiter verfügen aber möglicherweise nicht über die Kenntnisse und Erfahrung, um die Cloud mit cloudnativen Tools zu unterstützen. So wird häufig ein zentrales IT-Team gebildet, das die Cloudnutzung reguliert.
 
 > [!CAUTION]
 > Dies ist zwar ein gängiger Schritt im Reifeprozess, kann jedoch ein hohes Risiko für die Einführung bergen und Innovationen und Migrationsaufgaben blockieren, wenn er nicht effektiv ausgeführt wird. Im Abschnitt zu Risiken weiter unten in diesem Artikel erfahren Sie, wie Sie das Risiko minimieren, dass die Zentralisierung ein kulturelles Antimuster wird.

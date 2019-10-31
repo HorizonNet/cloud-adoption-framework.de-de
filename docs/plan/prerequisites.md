@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e670391bd475445b195e73f996fe999d32953232
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 118279ca768507471dbdddf9f499a592d34a477e
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022318"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549038"
 ---
 # <a name="prerequisites-checklist-for-an-effective-cloud-adoption-plan"></a>Checkliste der Voraussetzungen für einen effektiven Cloudeinführungsplan
 
@@ -27,7 +27,7 @@ Genaue strategische Eingaben stellen sicher, dass die geleistete Arbeit zur Real
 - **Definierte Geschäftsergebnisse**: Welche Ergebnisse erwarten wir von der Einführung der Cloud?
 - **Geschäftliche Begründung**: Wie wird der Erfolg des Unternehmens gemessen?
 
-Jedes Mitglied des Teams, das den Cloudeinführungsplan implementiert, sollte in der Lage sein, diese drei strategischen Fragen zu beantworten. Manager und Führungskräfte, die für die Implementierung dieses Plans verantwortlich sind, sollten die Metriken hinter den einzelnen Fragen und jeden Fortschritt bei der Realisierung dieser Metriken verstehen.
+Jedes Mitglied des Teams, das den Cloudeinführungsplan implementiert, sollte in der Lage sein, diese drei strategischen Fragen zu beantworten. Manager und Führungskräfte, die für die Implementierung des Plans verantwortlich sind, sollten die Metriken kennen, die sich hinter den einzelnen Fragen verbergen, und jeden Fortschritt bei der Realisierung dieser Metriken verstehen.
 
 ## <a name="tactical-inputs"></a>Taktische Eingaben
 

@@ -8,18 +8,18 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: cd58f4e369100ab55556b7c492c0a46d7c543b92
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 881f8f396d40ca189267d6dbf50eac65abf0b56d
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70836616"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548371"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="how-do-retrospectives-help-build-a-growth-mindset"></a>Wie helfen Retrospektiven beim Entwickeln einer wachstumsorientierten Mentalität?
 
-„Die Kultur isst die Strategie zum Frühstück.“ Der beste Migrationsplan kann leicht zunichte gemacht werden, wenn er nicht auf höchster Ebene unterstützt und von Führungskräften dazu ermutigt wird. Lernen, Wachsen und sogar Scheitern sind die Kernstücke einer wachstumsorientierten Mentalität. Sie stehen auch im Mittelpunkt jeder Transformation.
+„Die Kultur isst die Strategie zum Frühstück.“ Der beste Migrationsplan kann leicht zunichte gemacht werden, wenn er nicht auf höchster Ebene unterstützt wird. Lernen, Wachsen und sogar Scheitern sind die Kernstücke einer wachstumsorientierten Mentalität. Sie stehen auch im Mittelpunkt jeder Transformation.
 
 Bescheidenheit und Neugierde waren noch niemals so wichtig wie während einer Unternehmenstransformation. Und die digitale Transformation erfordert beides in hohem Maße. Diese Eigenschaften werden durch eine regelmäßige Selbstprüfung und ein Umfeld der Ermutigung verstärkt. Wenn die Mitarbeiter ermutigt werden, Risiken einzugehen, finden sie bessere Lösungen. Wenn Mitarbeitern die Gelegenheit gegeben wird zu scheitern und zu lernen, sind sie erfolgreich. Retrospektiven bieten die Möglichkeit für solche Untersuchungen und Wachstum.
 

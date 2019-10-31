@@ -8,12 +8,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 47460a4099011cd96a75af9e8f99e3a6cccabb0c
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ba2d68a2b382ccccf0d124a57d33d1344476c3dc
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024412"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547941"
 ---
 # <a name="mainframe-application-migration"></a>Migration von Mainframeanwendungen
 
@@ -27,7 +27,7 @@ Die Anwendungsmigration umfasst üblicherweise eine oder mehrere der folgenden S
 
 - **Außerbetriebnahme:** Alle Anwendungen, die nicht mehr benötigt werden, sollten vor der Migration außer Betrieb genommen werden.
 
-- **Neuerstellung:** Einige Organisationen entscheiden sich dazu, Programme mithilfe moderner Techniken vollständig umzuschreiben. Angesichts der zusätzlichen Kosten und Komplexität dieses Ansatzes ist er nicht so verbreitet wie ein Ausgliederungsansatz („Lift & Shift“-Ansatz). Nach dieser Art der Migration ist es häufig sinnvoll, Module und Code mithilfe von Codetransformations-Engines zu ersetzen.
+- **Neuerstellung:** Einige Organisationen entscheiden sich dazu, Programme mithilfe moderner Techniken vollständig umzuschreiben. Angesichts der zusätzlichen Kosten und Komplexität dieses Ansatzes ist er nicht so verbreitet wie ein Lift & Shift-Ansatz. Nach dieser Art der Migration ist es häufig sinnvoll, Module und Code mithilfe von Codetransformations-Engines zu ersetzen.
 
 - **Ersetzung:** Bei diesem Ansatz wird die Mainframefunktionalität durch entsprechende Features in der Cloud ersetzt. Software-as-a-Service (SaaS) ist eine Möglichkeit, bei der eine speziell für Unternehmensbelange erstellte Lösung verwendet wird, darunter Finanzen, Personalwesen, Fertigung oder Unternehmensressourcenplanung. Darüber hinaus stehen jetzt viele branchenspezifische Apps zur Verfügung, um Probleme zu lösen, die zuvor durch benutzerdefinierte Mainframelösungen gelöst wurden.
 
@@ -109,7 +109,7 @@ Verwendung:
 
 ## <a name="migrate-development-environments"></a>Migrieren von Entwicklungsumgebungen
 
-Die verteilten Architekturen der Cloud basieren auf einer anderen Reihe von Entwicklungstools, die den Vorteil moderner Methoden und Programmiersprachen bieten. Um diesen Übergang zu erleichtern, können Sie eine Entwicklungsumgebung mit anderen Tools verwenden, die zum Emulieren von IBM z/OS-Umgebungen entwickelt wurden. Die folgende Liste enthält Optionen von Microsoft und anderen Anbietern:
+Die verteilten Architekturen der Cloud basieren auf einem anderen Satz aus Entwicklungstools, die den Vorteil moderner Methoden und Programmiersprachen bieten. Um diesen Übergang zu erleichtern, können Sie eine Entwicklungsumgebung mit anderen Tools verwenden, die zum Emulieren von IBM z/OS-Umgebungen entwickelt wurden. Die folgende Liste enthält Optionen von Microsoft und anderen Anbietern:
 
 | Komponente        | Azure-Optionen                                                                                                                                  |
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|

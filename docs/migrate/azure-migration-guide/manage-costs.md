@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 38e412bda80e68b0c5cb7e53ad52c078fa39f8fb
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 219f5868f8fa8f3f5d26fa4c3c63db7786479a2c
+ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378413"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72683835"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Auf Migration ausgerichtete Kostenkontrollmechanismen
 
@@ -31,7 +31,7 @@ In diesem Artikel werden folgende Tool behandelt:
 > - Azure Cost Management
 > - Azure Advisor
 
-Die in diesem Artikel beschriebenen Prozesse können auch eine Partnerschaft mit IT-Managern, Finanzexperten oder Branchenanwendungen erfordern. Hinweise zur Partnerschaft mit diesen Rollen finden Sie im Artikel „Framework für die Cloudeinführung (Cloud Adoption Framework)“ über den Aufbau einer kostenbewussten Organisation (erscheint im 3. Quartal 2019).
+Die in diesem Artikel beschriebenen Prozesse können auch eine Partnerschaft mit IT-Managern, Finanzexperten oder Branchenanwendungen erfordern.
 
 <!-- markdownlint-disable MD024 MD025 -->
 
@@ -54,14 +54,14 @@ Diese manuellen Kostenrechner können einzeln verwendet werden, um potenzielle A
 
 Azure Migrate berechnet **monatliche Kostenschätzungen** basierend auf Daten, die vom Collector und der Dienstzuordnung erfasst wurden. Mit den folgenden Schritten werden die Kostenschätzungen geladen:
 
-1. Navigieren Sie zum Blatt „Azure Migrate-Bewertung“ im Portal.
-1. Wählen Sie auf der Seite **Übersicht** des Projekts die Option **+ Bewertung erstellen** aus.
-1. Klicken Sie auf **Alle anzeigen**, um die Eigenschaften für die Bewertung zu überprüfen.
-1. Erstellen Sie die Gruppe, und geben Sie einen Gruppennamen an.
-1. Wählen Sie die Computer aus, die der Gruppe hinzugefügt werden sollen.
-1. Klicken Sie auf **Bewertung erstellen**, um die Gruppe und die Bewertung zu erstellen.
-1. Zeigen Sie die Bewertung nach der Erstellung in „Übersicht“ > „Dashboard“ an.
-1. Wählen Sie im Abschnitt „Bewertungsdetails“ der Blattnavigation **Kostendetails** aus.
+1. Navigieren Sie im Portal zu „Azure Migrate-Bewertung“.
+2. Wählen Sie auf der Seite **Übersicht** des Projekts die Option **+ Bewertung erstellen** aus.
+3. Klicken Sie auf **Alle anzeigen**, um die Eigenschaften für die Bewertung zu überprüfen.
+4. Erstellen Sie die Gruppe, und geben Sie einen Gruppennamen an.
+5. Wählen Sie die Computer aus, die der Gruppe hinzugefügt werden sollen.
+6. Klicken Sie auf **Bewertung erstellen**, um die Gruppe und die Bewertung zu erstellen.
+7. Zeigen Sie die Bewertung nach der Erstellung in „Übersicht“ > „Dashboard“ an.
+8. Wählen Sie im Abschnitt „Bewertungsdetails“ der Portalnavigation die Option **Kostendetails** aus.
 
 Die unten abgebildete resultierende Schätzung identifiziert die monatlichen Kosten für Computing und Speicherung, die oft den größten Teil der Cloudkosten ausmachen.
 
@@ -83,9 +83,9 @@ Innerhalb von 24 Stunden nach der Migration von Ressourcen (Infrastruktur, Apps 
 
 Die folgenden Schritte stellen Kostenempfehlungen für Ressourcen (Infrastruktur, Apps und Daten) innerhalb Ihrer aktuellen Abonnements bereit:
 
-1. Navigieren Sie zum Blatt **Azure Advisor** im Portal. Wählen Sie dazu im linken Navigationsbereich des Azure-Portals **Advisor** aus. Wird „Advisor“ im linken Bereich nicht angezeigt, wählen Sie **Alle Dienste** aus. Wählen Sie im Dienstmenübereich unter **Überwachung und Verwaltung** die Option **Advisor** aus.
-1. Das Advisor-Dashboard zeigt eine Zusammenfassung Ihrer Empfehlungen für alle ausgewählten Abonnements an. Sie können mithilfe der Abonnementfilter-Dropdownliste die Abonnements auswählen, für die Empfehlungen angezeigt werden sollen.
-1. Um Empfehlungen zu Kosten anzuzeigen, wählen Sie die Registerkarte „Kosten“ aus.
+1. Navigieren Sie im Portal zu **Azure Advisor**. Wählen Sie dazu im linken Navigationsbereich des Azure-Portals **Advisor** aus. Wird „Advisor“ im linken Bereich nicht angezeigt, wählen Sie **Alle Dienste** aus. Wählen Sie im Dienstmenübereich unter **Überwachung und Verwaltung** die Option **Advisor** aus.
+2. Das Advisor-Dashboard zeigt eine Zusammenfassung Ihrer Empfehlungen für alle ausgewählten Abonnements an. Sie können mithilfe der Abonnementfilter-Dropdownliste die Abonnements auswählen, für die Empfehlungen angezeigt werden sollen.
+3. Um Empfehlungen zu Kosten anzuzeigen, wählen Sie die Registerkarte „Kosten“ aus.
 
 ## <a name="azure-cost-management"></a>Azure Cost Management
 
@@ -95,10 +95,10 @@ Voraussetzungen: Beim Rest dieser Registerkarte wird davon ausgegangen, dass der
 
 Mit den folgenden Schritten werden die Azure Cost Management-Kostenanalysedaten für Ihre Abonnements geladen:
 
-1. Navigieren Sie zum Blatt **Kostenverwaltung + Abrechnung** im Portal. Wird „Kostenverwaltung + Abrechnung“ im linken Bereich nicht angezeigt, klicken Sie auf **Alle Dienste**. Klicken Sie im Dienstmenübereich unter **Überwachung und Verwaltung** auf **Kostenverwaltung + Abrechnung**.
-1. Wählen Sie im Blatt „Kostenverwaltung + Abrechnung“ in der linken Navigation die Option **Kostenverwaltung** aus, damit das geöffnete Blatt mit der Analyse und Optimierung der Cloudkosten beginnt.
-1. Wählen Sie im Blatt „Kostenverwaltung“ die Option **Kostenanalyse** aus.
-    1. Verwenden Sie **Bereich**, um in einen anderen Bereich der Kostenanalyse zu wechseln.
+1. Navigieren Sie im Portal zu **Cost Management + Abrechnung**. Wird „Kostenverwaltung + Abrechnung“ im linken Bereich nicht angezeigt, klicken Sie auf **Alle Dienste**. Klicken Sie im Dienstmenübereich unter **Überwachung und Verwaltung** auf **Kostenverwaltung + Abrechnung**.
+2. Wählen Sie auf dem Blatt „Cost Management + Abrechnung“ im linken Navigationsbereich die Option **Kostenverwaltung** aus, um mit der Analyse und Optimierung der Cloudkosten zu beginnen.
+3. Wählen Sie auf dem Blatt „Cost Management“ die Option **Kostenanalyse** aus.
+    a. Verwenden Sie **Bereich**, um in einen anderen Bereich der Kostenanalyse zu wechseln.
 
 Anhand dieser Analyse können Sie die Gesamtkosten, das Budget (falls vorhanden) und die kumulierten Kosten überprüfen. Jede Berechnung kann nach Dienst, nach Ressource und im Zeitverlauf angezeigt werden. Und was am Wichtigsten ist: Die Kosten können nach Tags analysiert werden. Korrekte Namen und ein ordnungsgemäßes Tagging von Ressourcen (Infrastruktur, Apps und Daten) stellen den grundlegenden Ausgangspunkt für solide Governance- und Kostenverwaltungsprozesse dar. Geeignete Tags ermöglichen eine bessere Kostenverwaltung und deutlicheren Einfluss auf Leistungs- und Kostenoptimierungen.
 

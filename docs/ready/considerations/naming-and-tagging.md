@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: 003e212326959b593071f8230d2ddc0dba646909
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 242b397312fe466670d3f1a315059f72447b300b
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378282"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548842"
 ---
 # <a name="ready-recommended-naming-and-tagging-conventions"></a>Bereit: Empfohlene Namens- und Kennzeichnungskonventionen
 
 Das Verwalten von cloudbasierten Ressourcen in einer Weise, die das operative Management und die Buchhaltungsanforderungen unterstützt, ist eine häufige Herausforderung, die große Anstrengungen bei der Einführung von Cloudaktivitäten bedingt. Indem Sie klar definierte Benennungs- und Metadatentaggingkonventionen auf in der Cloud gehostete Ressourcen anwenden, können IT-Mitarbeiter Ressourcen schnell finden und verwalten. Klar definierte Namen und Tags helfen auch, Cloudressourcenkosten mithilfe von Mechanismen zur Rückbuchung und verbrauchsbasierter Kostenzuteilung an Geschäftsteams auszurichten.
 
-In dem für Azure Architecture Center geltenden Leitfaden [Benennungsregeln und -einschränkungen für Azure-Ressourcen](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) finden Sie allgemeine Empfehlungen für Namenskonventionen sowie Erläuterungen zu Namenseinschränkungen und Plattformregeln. In den folgenden Erläuterungen wird dieser allgemeine Leitfaden um detailliertere Empfehlungen erweitert, die speziell zur Unterstützung bei Aktivitäten zur Einführung von Unternehmensclouds vorgesehen sind.
+In dem für Azure Architecture Center geltenden Leitfaden [Benennungsregeln und -einschränkungen für Azure-Ressourcen](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) finden Sie allgemeine Empfehlungen sowie Informationen zu Einschränkungen bei Plattformen. In den folgenden Erläuterungen wird dieser allgemeine Leitfaden um detailliertere Empfehlungen erweitert, die speziell zur Unterstützung bei Aktivitäten zur Einführung von Unternehmensclouds vorgesehen sind.
 
 Das Ändern von Ressourcennamen kann schwierig sein. Daher sollten Sie das Einführen einer umfassenden Namenskonvention zu einer Priorität für Ihre Cloudeinführungsteams erklären, bevor Sie mit jeder größeren Cloudbereitstellung beginnen.
 
@@ -46,7 +46,7 @@ Anhand des Namens können Sie schnell den Typ der Ressource, deren zugehörige W
 
 #### <a name="naming-scope"></a>Namensbereich
 
-Für alle Azure-Ressourcentypen gibt es einen Bereich, über den definiert wird, wie diese Ressourcen relativ zu anderen Ressourcentypen verwaltet werden können. Hinsichtlich der Namenskonventionen bedeutet dies, dass eine Ressource einen eindeutigen Namen innerhalb ihres Bereichs haben muss.
+Alle Azure-Ressourcentypen weisen einen Bereich auf, der die Ebene definiert, auf der Ressourcennamen eindeutig sein müssen. Eine Ressource muss einen eindeutigen Namen innerhalb ihres Bereichs aufweisen.
 
 Ein virtuelles Netzwerk hat beispielsweise einen Ressourcengruppenbereich, was bedeutet, dass es in einer bestimmten Ressourcengruppe nur ein Netzwerk namens `vnet-prod-westus-001` geben darf. Andere Ressourcengruppen können ihr eigenes virtuelles Netzwerk namens `vnet-prod-westus-001` haben. Subnetze, um ein weiteres Beispiel zu nennen, gehören in den Bereich eines virtuellen Netzwerks. Daher muss jedes Subnetz innerhalb eines virtuellen Netzwerks eindeutig benannt sein.
 
@@ -77,45 +77,48 @@ Die folgende Liste enthält empfohlene Azure-Ressourcentypenpräfixe, die Sie ve
 | Ressourcentyp                       | Präfix für Ressourcenname |
 | ----------------------------------- | -------------------- |
 | Resource group                      | rg-                  |
-| Virtuelles Azure-Netzwerk                     | vnet-                |
+| Virtuelles Azure-Netzwerk               | vnet-                |
 | Gateway des virtuellen Netzwerks             | vnet-gw-             |
 | Gatewayverbindung                  | cn-                  |
 | Subnet                              | snet-                |
 | Netzwerksicherheitsgruppe              | nsg-                 |
-| Azure Virtual Machines                    | vm-                  |
+| Routingtabelle                         | route-               |
+| Azure Virtual Machines              | vm-                  |
 | VM-Speicherkonto                  | spvm                 |
 | Öffentliche IP-Adresse                           | pip-                 |
-| Azure Load Balancer                       | lb-                  |
+| Azure Load Balancer                 | lb-                  |
 | NIC                                 | nic-                 |
-| Azure-Servicebus                         | sb-                  |
-| Azure Service Bus-Warteschlangen                  | sbw-                 |
-| Azure App Service-Apps                    | azapp-               |
-| Azure Functions-Apps                       | azfun-               |
-| Azure Cloud Services                      | azcs-                |
+| Azure Key Vault                     | kv-                  |
+| Azure Kubernetes Service            | aks-                 |
+| Azure-Servicebus                   | sb-                  |
+| Azure Service Bus-Warteschlangen            | sbw-                 |
+| Azure App Service-Apps              | azapp-               |
+| Azure Functions-Apps                | azfun-               |
+| Azure Cloud Services                | azcs-                |
 | Azure SQL-Datenbank                  | sqldb-               |
 | Azure Cosmos DB (ehemals Azure DocumentDB) | cosdb-               |
 | Azure Cache for Redis               | redis-               |
 | Azure Database for MySQL            | mysql-               |
-| Azure SQL Data Warehouse                  | sqldw-               |
+| Azure SQL Data Warehouse            | sqldw-               |
 | SQL Server Stretch Database         | sqlstrdb-            |
 | Azure Storage                       | stor                 |
-| Azure StorSimple                          | ssimp                |
+| Azure StorSimple                    | ssimp                |
 | Azure Search                        | srch-                |
-| Azure Cognitive Services                  | cs-                  |
+| Azure Cognitive Services            | cs-                  |
 | Azure Machine Learning-Arbeitsbereich    | aml-                 |
 | Azure Data Lake Store             | dls                  |
 | Azure Data Lake Analytics           | dla                  |
-| Azure HDInsight: Spark                   | hdis-                |
-| Azure HDInsight: Hadoop                  | hdihd-               |
-| Azure HDInsight: R Server                | hdir-                |
-| Azure HDInsight: HBase                   | hdihb-               |
+| Azure HDInsight: Spark             | hdis-                |
+| Azure HDInsight: Hadoop            | hdihd-               |
+| Azure HDInsight: R Server          | hdir-                |
+| Azure HDInsight: HBase             | hdihb-               |
 | Power BI Embedded                   | pbiemb               |
-| Azure Stream Analytics                    | asa-                 |
-| Azure Data Factory                        | df-                  |
-| Azure Event Hubs                           | evh-                 |
+| Azure Stream Analytics              | asa-                 |
+| Azure Data Factory                  | df-                  |
+| Azure Event Hubs                    | evh-                 |
 | Azure IoT Hub                       | aih-                 |
-| Azure Notification Hubs                   | anh-                 |
-| Azure Notification Hubs-Namespace          | anhns-               |
+| Azure Notification Hubs             | anh-                 |
+| Azure Notification Hubs-Namespace   | anhns-               |
 
 ### <a name="metadata-tags"></a>Metadatentags
 

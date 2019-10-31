@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2e9a913ce0d27e2f15cb83bb842630fcc039f6cc
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: b1f43bdf0e0d58c40f11e45caf0221f7983c9624
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967330"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547525"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Governanceleitfaden für Standardunternehmen: Verbessern der Disziplin „Sicherheitsbaseline“
 
@@ -28,7 +28,7 @@ IT- und Unternehmensführung waren mit den Ergebnissen der frühen Experimente d
 
 Angesichts der Auswirkungen der sich verändernden Darstellung und der bisher geleisteten Unterstützung wird das Cloudgovernanceteam nun anders beurteilt. Die beiden Systemadministratoren, die das Team gegründet haben, gelten heute als erfahrene Cloudarchitekten. Während sich dieser Geschichte entwickelt, wird sich die Wahrnehmung von ihnen verschieben: aus einer Cloudverwalter- zu einer Cloudwächterrolle.
 
-Obwohl der Unterschied subtil ist, ist dies eine wichtige Unterscheidung beim Erstellen einer governanceorientierten IT-Kultur. Ein Cloudverwalter bereinigt die Unordnung, die innovative Cloudarchitekten hinterlassen haben. Die beiden Rollen besitzen eine natürliche Reibung und gegensätzliche Ziele. Auf der anderen Seite trägt ein Cloudwächter zur Sicherheit der Cloud bei, sodass andere Cloudarchitekten schneller und mit weniger Unordnung arbeiten können. Darüber hinaus ist ein Cloudwächter an der Erstellung von Vorlagen beteiligt, die die Bereitstellung und Einführung beschleunigen. Er wird daher zu einem Innovationsbeschleuniger sowie zu einem Verteidiger der fünf Disziplinen der Cloud-Governance.
+Der Unterschied mag geringfügig erscheinen, ist aber beim Erstellen einer governancebezogenen IT-Kultur von großer Bedeutung. Ein Cloudverwalter bereinigt die Unordnung, die innovative Cloudarchitekten hinterlassen haben. Die beiden Rollen besitzen eine natürliche Reibung und gegensätzliche Ziele. Auf der anderen Seite trägt ein Cloudwächter zur Sicherheit der Cloud bei, sodass andere Cloudarchitekten schneller und mit weniger Unordnung arbeiten können. Darüber hinaus ist ein Cloudwächter an der Erstellung von Vorlagen beteiligt, die die Bereitstellung und Einführung beschleunigen. Er wird daher zu einem Innovationsbeschleuniger sowie zu einem Verteidiger der fünf Disziplinen der Cloud-Governance.
 
 ### <a name="changes-in-the-current-state"></a>Änderungen des aktuellen Status
 
@@ -36,7 +36,7 @@ Zu Beginn dieser Geschichte arbeiteten die Anwendungsentwicklungsteams noch mit 
 
 Seit diesem Zeitpunkt haben sich einige Dinge geändert, die sich auf die Governance auswirken:
 
-- Das Anwendungsentwicklungsteam hat eine CI/CD-Pipeline implementiert, um eine cloudnative Anwendung mit einer verbesserten Benutzeroberfläche bereitzustellen. Diese Anwendung interagiert noch nicht mit geschützten Daten, daher ist sie nicht für die Produktion bereit.
+- Das Anwendungsentwicklungsteam hat eine CI/CD-Pipeline implementiert, um eine cloudnative Anwendung mit einer verbesserten Benutzeroberfläche bereitzustellen. Diese App interagiert noch nicht mit geschützten Daten und ist daher nicht für die Produktion bereit.
 - Das Business Intelligence-Team innerhalb der IT-Abteilung stellt aktiv Daten aus Logistik, Inventar und Drittanbieterquellen in der Cloud zusammen. Diese Daten werden verwendet, um neue Vorhersagen zu treffen, die Geschäftsprozesse beeinflussen könnten. Diese Vorhersagen und Erkenntnisse sind jedoch erst dann umsetzbar, wenn Kunden- und Finanzdaten in die Datenplattform integriert werden können.
 - Das IT-Team setzt zurzeit die Pläne des CIO und des CFO um, um das DR-Datencenter außer Betrieb zu nehmen. Mehr als 1.000 der 2.000 Ressourcen im DR-Datencenter wurden außer Betrieb genommen oder migriert.
 - Die lose definierten Richtlinien für personenbezogene Informationen und Finanzdaten wurden modernisiert. Allerdings sind die neuen Unternehmensrichtlinien abhängig von der Implementierung der entsprechenden Sicherheits- und Governancerichtlinien. Teams können noch nicht weiterarbeiten.
@@ -70,7 +70,7 @@ Dieses Unternehmensrisiko lässt sich auf einige technische Risiken erweitern:
 Die folgenden Änderungen an der Richtlinie verringern die neuen Risiken und vereinfachen die Implementierung. Die Liste wirkt lang, aber die Einführung dieser Richtlinien ist möglicherweise einfacher, als es den Anschein hat.
 
 1. Alle bereitgestellten Ressourcen müssen nach Wichtigkeit und Datenklassifizierung kategorisiert werden. Vor der Bereitstellung in der Cloud müssen die Klassifizierungen durch das Cloudgovernanceteam und die Besitzer der Anwendung überprüft werden.
-2. Anwendungen, die geschützte Daten speichern oder darauf zugreifen, sind anders zu verwalten als Anwendungen, die nicht mit geschützten Daten arbeiten. Zumindest müssen sie segmentiert werden, um einen unbeabsichtigten Zugriff auf geschützte Daten zu vermeiden.
+2. Anwendungen, die geschützte Daten speichern oder darauf zugreifen, müssen anders verwaltet werden als Anwendungen, auf die das nicht zutrifft. Zumindest müssen sie segmentiert werden, um einen unbeabsichtigten Zugriff auf geschützte Daten zu vermeiden.
 3. Alle geschützten Daten müssen im Ruhezustand verschlüsselt sein. Hierbei handelt es sich um die Standardeinstellung für alle Azure Storage-Konten. Unter Umständen sind jedoch weitere Verschlüsselungsstrategien erforderlich – einschließlich Verschlüsselung der Daten im Speicherkonto, Verschlüsselung von virtuellen Computern sowie Verschlüsselung auf Datenbankebene bei Verwendung von SQL auf einem virtuellen Computer (TDE und Spaltenverschlüsselung).
 4. Erhöhte Berechtigungen in einem Segment mit geschützten Daten müssen eine Ausnahme bleiben. Solche Ausnahmen werden vom Cloudgovernanceteam erfasst und regelmäßig überwacht.
 5. Netzwerksubnetze mit geschützten Daten müssen von allen anderen Subnetzen isoliert werden. Der Netzwerkdatenverkehr zwischen Subnetzen mit geschützten Daten wird regelmäßig überwacht.

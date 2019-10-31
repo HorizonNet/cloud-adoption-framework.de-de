@@ -1,23 +1,23 @@
 ---
 title: Ausgewogenheit des Portfolios
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Ausgewogenheit des Portfolios
+description: Erfahren Sie, wie Sie für die richtige Ausgewogenheit Ihres Cloudportfolios sorgen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1227b798972ce7e139181c9267a1a1e860390029
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 2b26f8c763d477d95b21e302158c318e3ab4b101
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70836708"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548583"
 ---
 # <a name="balance-the-portfolio"></a>Ausgewogenheit des Portfolios
 
-Die Cloudeinführung ist ein Portfolioverwaltungsaufwand, der sich raffiniert als technische Implementierung tarnt. Wie bei jeder Form der Portfolioverwaltung ist die Ausgewogenheit des Portfolios ausschlaggebend für den Erfolg. Auf strategischer Ebene bedeutet dies, Migration, Innovation und Experimentieren so in Einklang zu bringen, dass die Cloud optimal genutzt wird. Wenn der Aufwand zur Cloudeinführung zu weit in die eine oder andere Richtung tendiert, schleicht sich die Komplexität in die Migrationsaktivitäten ein. Dieser Artikel führt den Leser durch Methoden, mit denen die Ausgewogenheit des Portfolios erzielt wird.
+Die Cloudeinführung ist ein Portfolioverwaltungsaufwand, der sich raffiniert als technische Implementierung tarnt. Wie bei jeder Form der Portfolioverwaltung ist die Ausgewogenheit des Portfolios von entscheidender Bedeutung. Auf strategischer Ebene bedeutet dies, Migration, Innovation und Experimentieren so in Einklang zu bringen, dass die Cloud optimal genutzt wird. Wenn der Aufwand zur Cloudeinführung zu weit in die eine oder andere Richtung tendiert, schleicht sich die Komplexität in die Migrationsaktivitäten ein. Dieser Artikel führt den Leser durch Methoden, mit denen die Ausgewogenheit des Portfolios erzielt wird.
 
 ## <a name="general-scope-expansion"></a>Allgemeine Bereichserweiterung
 

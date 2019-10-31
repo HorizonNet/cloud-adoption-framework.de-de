@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 33942811554556b1f67dc6515a8c679b09bfa983
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 4613a8f4a4bdfc065f6c8e48eda609f6d1703130
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224010"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549098"
 ---
 # <a name="cloud-governance-capabilities"></a>Funktionen für Cloudgovernance
 
@@ -73,7 +73,7 @@ Einige große Organisationen verfügen über vorhandene dedizierte Teams speziel
 
 **Keine Governance:** Es kommt häufig vor, dass Organisationen die Umstellung auf die Cloud ohne klare Planung für die Governance durchführen. Nach kurzer Zeit führen dann Bedenken in Bezug auf Sicherheit, Kosten, Skalierung und Abläufe zu Diskussionen über ein Governancemodell sowie über Personal für die Prozesse, die für dieses Modell erforderlich sind. Ein wichtiger erster Schritt besteht immer darin, mit dieser Diskussion zu beginnen, bevor es zu diesen Bedenken kommt. Auf diese Weise kann das Antimuster „Keine Governance“ vermieden werden. Der Abschnitt zum Thema [Definieren der Unternehmensrichtlinie](../govern/corporate-policy.md) enthält Informationen zu dieser Diskussion.
 
-**Blockade der Governance:** Wenn Bedenken in Bezug auf Sicherheit, Kosten, Skalierung und Abläufe nicht beachtet werden, kann es passieren, dass Projekte und Geschäftsziele blockiert werden. Ohne richtige Governance wird bei Projektbeteiligten und Technikern das Entstehen von Angst, Unsicherheit und Zweifeln gefördert. Verhindern Sie dies, indem Sie rechtzeitig Maßnahmen ergreifen. Die beiden Governanceleitfäden im Framework für die Cloudeinführung (Cloud Adoption Framework) dienen Ihnen als Hilfe beim Festlegen von ersten einschränkenden Richtlinien, um Angst, Unsicherheit und Zweifel zu reduzieren und die Governance im Laufe der Zeit weiterzuentwickeln. Sie können zwischen dem [Leitfaden für komplexe Unternehmen](../govern/guides/complex/index.md) und dem [Standardunternehmensleitfaden](../govern/guides/standard/index.md) wählen.
+**Blockade der Governance:** Wenn Bedenken in Bezug auf Sicherheit, Kosten, Skalierung und Abläufe nicht beachtet werden, kann es passieren, dass Projekte und Geschäftsziele blockiert werden. Ohne richtige Governance entstehen Zweifel, Unsicherheiten und sogar Ängste bei Projektbeteiligten und Technikern. Verhindern Sie dies, indem Sie rechtzeitig Maßnahmen ergreifen. Die beiden Governanceleitfäden im Framework für die Cloudeinführung (Cloud Adoption Framework) dienen Ihnen als Hilfe beim Festlegen von ersten einschränkenden Richtlinien, um Angst, Unsicherheit und Zweifel zu reduzieren und die Governance im Laufe der Zeit weiterzuentwickeln. Sie können zwischen dem [Leitfaden für komplexe Unternehmen](../govern/guides/complex/index.md) und dem [Standardunternehmensleitfaden](../govern/guides/standard/index.md) wählen.
 
 **Freiwillige Governance:** Es gibt in jedem Unternehmen mutige Menschen. Diese wenigen tapferen Personen, die einspringen und dem Team helfen, lernen aus ihren Fehlern. Häufig ist dies der Beginn von Governance. Dies gilt vor allem für kleinere Unternehmen. Diese Personen wenden freiwillig Zeit auf, um Probleme zu beheben und Cloudeinführungsteams zur Verwendung von gut verwalteten bewährten Methoden zu bewegen.
 

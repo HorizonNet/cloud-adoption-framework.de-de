@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: be679c1265907f2b4a6be86d82ce287dc94d4b70
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 8bf9b65c71defd57c319f46a83b5d4540967b012
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967469"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547445"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>Governanceleitfaden für Standardunternehmen: Die Geschichte hinter der Governancestrategie
 
-Die folgende Geschichte schildert einen Anwendungsfall für die Governance während der [Journey zur Cloudeinführung eines Standardunternehmens](./index.md). Vor der Implementierung der Vorgehensweise ist es wichtig, die Annahmen und die Logik zu verstehen, die in dieser Geschichte dargestellt werden. So können Sie die Governancestrategie besser auf die Journey in Ihrer eigenen Organisation ausrichten.
+Die folgende Geschichte schildert einen Anwendungsfall für die Governance während der [Journey zur Cloudeinführung eines Standardunternehmens](./index.md). Vor der Implementierung dieser Journey ist es wichtig, die Annahmen und die Logik zu verstehen, die in dieser Geschichte dargestellt werden. So können Sie die Governancestrategie besser auf die Vorgehensweise in Ihrer eigenen Organisation ausrichten.
 
 ## <a name="back-story"></a>Hintergrund
 
@@ -34,9 +34,9 @@ Das Unternehmen besitzt das folgende Geschäftsprofil:
 - Das Unternehmen wird als einzelne Geschäftseinheit geführt, den einzelnen Funktionen – z.B. Vertrieb, Marketing, Betrieb und IT – sind Budgets zugeordnet.
 - Das Unternehmen betrachtet den größten Teil der IT als Kostenverursacher oder Kostenstelle.
 
-## <a name="current-state"></a>Aktueller Status
+## <a name="current-state"></a>Aktueller Zustand
 
-Aktuell weisen IT und Cloudbetrieb des Unternehmens folgenden Status auf:
+Aktuell befinden sich IT und Cloudbetrieb des Unternehmens in folgendem Zustand:
 
 - Die IT-Abteilung betreibt zwei gehostete Infrastrukturumgebungen. Eine Umgebung enthält Produktionsassets. Die zweite Umgebung enthält Funktionen für die Notfallwiederherstellung und einige Dev/Test-Assets. Diese Umgebungen werden von zwei verschiedenen Anbietern gehostet. Die IT bezeichnet diese beiden Rechenzentren als „Prod“ bzw. „DR“.
 - Die IT hat die Cloud eingeführt, indem alle E-Mail-Konten der Endbenutzer zu Office 365 migriert wurden. Diese Migration wurde vor sechs Monaten abgeschlossen. Es wurden nur wenige andere IT-Ressourcen in der Cloud bereitgestellt.

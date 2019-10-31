@@ -8,12 +8,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c5600fb06aefb40764117639b7d856f753c3372e
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f7782aeedf794441a7ba4e1f6a97f162fa33abfb
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024970"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548556"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Best Practices für die Sicherung und Verwaltung von zu Azure migrierten Workloads
 
@@ -280,7 +280,7 @@ Genau wie eine Blaupause, mit der Ingenieure oder Architekten die Entwurfsparame
 
 Das Erstellen sicherer, skalierbarer und verwaltbarer Workloads in Azure kann eine große Herausforderung sein. Angesichts fortlaufender Änderungen kann es schwierig sein, bei verschiedenen Features auf dem Laufenden zu bleiben, um eine optimale Umgebung sicherzustellen. Beim Entwerfen und Migrieren Ihrer Workloads kann es nützlich sein, über eine Referenz zu verfügen, aus der Sie nützliche Informationen erhalten können. Azure und die Azure-Partner haben verschiedene Referenzarchitekturen als Muster für verschiedene Arten von Umgebungen erstellt. Diese Muster bieten Anregungen, aus denen Sie lernen und auf denen Sie aufbauen können.
 
-Die Referenzarchitekturen sind nach Szenario sortiert. Sie enthalten empfohlene Vorgehensweisen und Ratschläge zu Verwaltung, Verfügbarkeit, Skalierbarkeit und Sicherheit.
+Die Referenzarchitekturen sind nach Szenario sortiert. Sie enthalten Best Practices und Ratschläge zu Verwaltung, Verfügbarkeit, Skalierbarkeit und Sicherheit.
 Die Azure App Service-Umgebung stellt eine vollständig isolierte und dedizierte Umgebung bereit, in der App Service-Apps wie Windows- und Linux-Web-Apps, Docker-Container, mobile Apps und Funktionen ausgeführt werden können. App Service ergänzt Ihre Anwendung um leistungsfähige Azure-Features, z.B. Sicherheit, Lastenausgleich, automatische Skalierung und automatisierte Verwaltung. Sie können auch die Vorteile der DevOps-Funktionen des Diensts nutzen, z.B. Continuous Deployment über Azure DevOps und GitHub, Paketverwaltung, Stagingumgebungen, benutzerdefinierte Domäne und SSL-Zertifikate. App Service ist hilfreich bei Apps, die Isolierung und sicheren Netzwerkzugriff erfordern, sowie für solche Apps, die eine große Menge an Arbeitsspeicher sowie weitere skalierbare Ressourcen nutzen.
 
 **Weitere Informationen**:

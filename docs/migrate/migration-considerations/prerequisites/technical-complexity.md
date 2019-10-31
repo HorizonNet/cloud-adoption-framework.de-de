@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ba799c8634fc6eeda70507ae85464506103e44ff
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: d669d720d1bf56a5adc0df42a505608ab76b02ec
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025360"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548268"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Vorbereiten der technischen Komplexität: Agile Change Management
 
@@ -86,7 +86,7 @@ In enger Zusammenarbeit zwischen dem Cloudstrategieteam und dem Cloudeinführung
 
 ### <a name="release-backlog-cadence"></a>Intervalle im Releasebacklog
 
-Bei umfassend geplanten Migrationsvorgängen erfolgen Releases in regelmäßigen Abständen. Die Geschwindigkeit wird vom Cloudeinführungsteam häufig angepasst, um alle zwei bis vier Iterationen ein Release zu erstellen (etwa alle ein bis zwei Monate). Dies sollte jedoch ohne Zwang erfolgen. Das künstliche Erzwingen von Releaseintervallen kann verhindern, dass das Cloudeinführungsteam einen konsistenten Durchsatz erzielt.
+Bei umfassend geplanten Migrationsvorgängen erfolgen Releases in regelmäßigen Abständen. Die Geschwindigkeit wird vom Cloudeinführungsteam häufig angepasst, um alle zwei bis vier Iterationen ein Release zu erstellen (etwa alle ein bis zwei Monate). Dies sollte jedoch ohne Zwang erfolgen. Das künstliche Erzwingen von Releaserhythmen kann verhindern, dass das Cloudeinführungsteam einen konsistenten Durchsatz erzielt.
 
 Um die Auswirkungen auf den Geschäftsbetrieb zu minimieren, sollte das Cloudstrategieteam einen monatlichen Releaseprozess für das Unternehmen einrichten und so einen regelmäßigen Austausch aufrechterhalten. Gleichzeitig sollte es aber auch die Erwartung fördern, dass es mehrere Monate dauern kann, bis ein regelmäßiges Releaseintervall vorhergesagt werden kann.
 

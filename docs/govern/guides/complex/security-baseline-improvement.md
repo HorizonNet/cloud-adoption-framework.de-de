@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: dc045d26dd855240700341748c189a985f1f6758
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 2e2e075b6f051af003d4c8d542e592943084c1e7
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220558"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547606"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Sicherheitsbaseline“
 
@@ -39,7 +39,7 @@ In der vorherigen Phase dieser Geschichte hatte das Unternehmen damit begonnen, 
 Seit diesem Zeitpunkt haben sich einige Dinge geändert, die sich auf die Governance auswirken:
 
 - Tausende von IT- und Unternehmensressourcen werden in der Cloud bereitgestellt.
-- Das Team für die Anwendungsentwicklung hat eine CI/CD-Pipeline (Continuous Integration/Continuous Deployment) implementiert, um eine native Cloudanwendung mit einer verbesserten Benutzeroberfläche bereitzustellen. Diese Anwendung interagiert noch nicht mit geschützten Daten, daher ist sie nicht für die Produktion bereit.
+- Das Team für die Anwendungsentwicklung hat eine CI/CD-Pipeline (Continuous Integration/Continuous Deployment) implementiert, um eine native Cloudanwendung mit einer verbesserten Benutzeroberfläche bereitzustellen. Diese Anwendung interagiert noch nicht mit geschützten Daten und ist daher nicht für die Produktion bereit.
 - Das Business Intelligence-Team innerhalb der IT-Abteilung stellt aktiv Daten aus Logistik, Inventur und Drittanbieterdaten in der Cloud zusammen. Diese Daten werden für neue Vorhersagen verwendet, die zum Gestalten von Geschäftsprozessen dienen können. Allerdings sind diese Vorhersagen und Erkenntnisse erst umsetzbar, wenn Kunden- und Finanzdaten in die Datenplattform integriert werden können.
 - Das IT-Team setzt zurzeit die Pläne des CIO und des CFO um, zwei Rechenzentren außer Betrieb zu nehmen. Fast 3.500 Ressourcen in den beiden Rechenzentren wurden außer Betrieb genommen oder migriert.
 - Die Richtlinien im Hinblick auf vertrauliche personenbezogene Informationen und Finanzdaten wurden modernisiert. Allerdings sind die neuen Unternehmensrichtlinien abhängig von der Implementierung der entsprechenden Sicherheits- und Governancerichtlinien. Teams können noch nicht weiterarbeiten.
@@ -75,7 +75,7 @@ Dieses Geschäftsrisiko lässt sich auf eine Reihe von technischen Risiken auswe
 Die folgenden Änderungen an der Richtlinie verringern die neuen Risiken und vereinfachen die Implementierung. Die Liste wirkt lang, aber die Einführung dieser Richtlinien ist möglicherweise einfacher, als es den Anschein hat.
 
 1. Alle bereitgestellten Ressourcen müssen nach Wichtigkeit und Datenklassifizierung kategorisiert werden. Vor der Bereitstellung in der Cloud müssen die Klassifizierungen durch das Cloudgovernanceteam und die Anwendung überprüft werden.
-2. Anwendungen, die geschützte Daten speichern oder darauf zugreifen, sind anders zu verwalten als Anwendungen, die nicht mit geschützten Daten arbeiten. Zumindest müssen sie segmentiert werden, um einen unbeabsichtigten Zugriff auf geschützte Daten zu vermeiden.
+2. Anwendungen, die geschützte Daten speichern oder darauf zugreifen, müssen anders verwaltet werden als Anwendungen, auf die das nicht zutrifft. Zumindest müssen sie segmentiert werden, um einen unbeabsichtigten Zugriff auf geschützte Daten zu vermeiden.
 3. Alle geschützten Daten müssen im Ruhezustand verschlüsselt sein.
 4. Erhöhte Berechtigungen in einem Segment mit geschützten Daten müssen eine Ausnahme bleiben. Solche Ausnahmen werden vom Cloudgovernanceteam erfasst und regelmäßig überwacht.
 5. Netzwerksubnetze mit geschützten Daten müssen von allen anderen Subnetzen isoliert werden. Der Netzwerkdatenverkehr zwischen Subnetzen mit geschützten Daten wird regelmäßig überwacht.

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 8b0aebe00d987ac49ba965fc1982c1615372ba92
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 3d8d6b656f6bfe8072b53dccc05a67479aa36f24
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031857"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548562"
 ---
 # <a name="cloud-monitoring-guide-collecting-the-right-data"></a>Leitfaden zur Cloudüberwachung: Sammeln der richtigen Daten
 
@@ -34,7 +34,7 @@ Ihre Antworten auf diese Fragen bestimmen zusammen mit den Kriterien für die Wa
 
 ## <a name="develop-a-monitoring-configuration"></a>Entwickeln einer Überwachungskonfiguration
 
-Der Besitzer und das Team des Überwachungsdiensts folgen in der Regel einem allgemeinen Satz von Aktivitäten, um eine Überwachungskonfiguration zu entwickeln. Diese Aktivitäten beginnen bei der ersten Planung und reichen über Tests und Validierungen in einer Nichtproduktionsumgebung bis hin zum Einsatz in der Produktionsumgebung. Überwachungskonfigurationen werden aus bekannten Fehlermodi, Testergebnissen simulierter Ausfälle und Erfahrungen mehrerer Personen in dem Unternehmen (Service Desk, Betrieb, Ingenieure und Entwickler) abgeleitet. Bei diesen Konfigurationen wird angenommen, dass der Dienst bereits existiert, in die Cloud migriert und nicht neu strukturiert wurde.
+Der Besitzer und das Team des Überwachungsdiensts folgen in der Regel einem allgemeinen Satz von Aktivitäten, um eine Überwachungskonfiguration zu entwickeln. Diese Aktivitäten beginnen bei der ersten Planung und reichen über Tests und Validierungen in einer Nichtproduktionsumgebung bis hin zum Einsatz in der Produktionsumgebung. Überwachungskonfigurationen werden aus bekannten Fehlermodi, Testergebnissen simulierter Ausfälle und Erfahrungen mehrerer Personen in dem Unternehmen (Service Desk, Betrieb, Ingenieure und Entwickler) abgeleitet. Bei solchen Konfigurationen wird angenommen, dass der Dienst bereits existiert, in die Cloud migriert und nicht neu aufgebaut wurde.
 
 Überwachen Sie die Integrität und Verfügbarkeit dieser Dienste in einem frühen Stadium des Entwicklungsprozesses, um Ergebnisse in Servicelevelqualität zu erhalten. Wenn Sie den Entwurf dieses Diensts oder dieser Anwendung nachträglich überwachen, werden Ihre Ergebnisse weniger erfolgreich sein.
 

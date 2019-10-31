@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5dbb92053e12ec9aee795c54271ab45d56d6722c
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 3a6e2effbd47c3516e3663d3c0f1f75d9db924e8
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220180"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547688"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Cost Management“
 
@@ -24,7 +24,7 @@ Dieser Artikel führt die Geschichte fort, indem dem Minimum Viable Product-Gove
 
 Die Einführung hat sich über den im Governance-MVP definierten Toleranzindikator hinaus entwickelt. Die Steigerung in den Ausgaben rechtfertigt jetzt den Aufwand an Zeit seitens des Cloudgovernanceteams für die Überwachung und Kontrolle von Ausgabenmustern.
 
-Als treibende Kraft der Innovation wird IT nicht mehr in erster Linie als Kostenstelle betrachtet. Da die IT-Organisation Mehrwert generiert, stimmen der CIO und CFO überein, dass jetzt die Zeit gekommen ist, die Rolle der IT im Unternehmen zu verändern. Unter anderem will der CFO einen Direktvergütungsansatz für die Cloud-Rechnungslegung der kanadischen Niederlassung einer der Geschäftseinheiten testen. Eins der beiden stillgelegten Rechenzentren hostete exklusiv Ressourcen für den kanadischen Betrieb der besagten Geschäftseinheit. In diesem Modell werden der kanadischen Niederlassung der Geschäftseinheit die Betriebsausgaben im Zusammenhang mit den gehosteten Ressourcen direkt in Rechnung gestellt. Dieses Modell ermöglicht der IT, sich weniger auf die Verwaltung der Ausgaben anderer als vielmehr auf die Wertschöpfung zu konzentrieren. Bevor dieser Übergang erfolgen kann, müssen jedoch Kostenverwaltungstools implementiert worden sein.
+Als treibende Kraft der Innovation wird IT nicht mehr in erster Linie als Kostenstelle betrachtet. Da die IT-Organisation Mehrwert generiert, stimmen der CIO und CFO überein, dass jetzt die Zeit gekommen ist, die Rolle der IT im Unternehmen zu verändern. Unter anderem will der CFO einen Direktvergütungsansatz bei der cloudbasierten Abrechnung für die kanadische Niederlassung einer der Geschäftseinheiten testen. Eins der beiden stillgelegten Rechenzentren hostete exklusiv Ressourcen für den operativen Betrieb der besagten Geschäftseinheit in Kanada. In diesem Modell werden der kanadischen Niederlassung der Geschäftseinheit die Betriebsausgaben im Zusammenhang mit den gehosteten Ressourcen direkt in Rechnung gestellt. Dieses Modell ermöglicht der IT, sich weniger auf die Verwaltung der Ausgaben anderer als vielmehr auf die Wertschöpfung zu konzentrieren. Bevor dieser Übergang erfolgen kann, müssen jedoch Kostenverwaltungstools implementiert worden sein.
 
 ### <a name="changes-in-the-current-state"></a>Änderungen des aktuellen Status
 

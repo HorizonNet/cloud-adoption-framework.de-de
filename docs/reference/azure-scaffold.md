@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: b7a2ae0457550189df66b8aa290fd9835cb11904
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 2e605766e06b106fab61576e64bd5059569c8b38
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378160"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548766"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure-Unternehmensgerüst: Präskriptive Abonnementgovernance
 
@@ -129,7 +129,7 @@ Ressourcentags sind eng an Benennungsstandards gekoppelt. Je mehr Ressourcen den
 > [!IMPORTANT]
 > Tags können persönliche Informationen enthalten und fallen möglicherweise unter die DSGVO. Planen Sie die Verwaltung Ihrer Tags sorgfältig. Allgemeine Informationen zur DSGVO finden Sie im Abschnitt [DSGVO im Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
-Tags dienen neben der Abrechnung und Verwaltung zu vielen weiteren Zwecken. Sie werden häufig im Rahmen der Automatisierung verwendet (siehe Abschnitt weiter unten). Dies kann bei unzureichender Vorausplanung zu Konflikten führen. Die empfohlene Vorgehensweise besteht darin, alle gemeinsamen Tags auf Unternehmensebene (z.B. ApplicationOwner und CostCenter) zu identifizieren und sie konsistent anzuwenden, wenn Ressourcen automatisiert bereitgestellt werden.
+Tags dienen neben der Abrechnung und Verwaltung zu vielen weiteren Zwecken. Sie werden häufig im Rahmen der Automatisierung verwendet (siehe Abschnitt weiter unten). Dies kann bei unzureichender Vorausplanung zu Konflikten führen. Die bewährte Methode besteht darin, alle gängigen Tags auf Unternehmensebene (z. B. ApplicationOwner und CostCenter) zu identifizieren und sie konsistent anzuwenden, wenn Ressourcen automatisiert bereitgestellt werden.
 
 ## <a name="azure-policy-and-initiatives"></a>Azure Policy und Azure-Initiativen
 
@@ -267,7 +267,7 @@ Sie können diese Daten auf verschiedenen Ebenen betrachten und Aktionen daraus 
 
 ## <a name="cost-management"></a>Kostenverwaltung
 
-Eine der wichtigsten Veränderungen, die ein Umstieg von der lokalen in die öffentliche Cloud mit sich bringt, ist die Art der Finanzierung: Diese verlagert sich vom Kapitalaufwand (Hardwarekauf) hin zum Betriebsaufwand (Zahlung nur für tatsächlich genutzte Dienste). Dieser Wechsel erfordert auch eine sorgfältigere Verwaltung Ihrer Kosten. Der große Vorteil der Cloud besteht darin, dass Sie die Kosten eines von Ihnen genutzten Diensts grundlegend und positiv beeinflussen können, indem Sie den Dienst einfach deaktivieren oder herunterskalieren, wenn Sie ihn nicht benötigen. Die Verwaltung der Kosten in der Cloud ist eine empfohlene Vorgehensweise, die erfahrene Kunden bereits täglich befolgen.
+Eine der wichtigsten Veränderungen, die ein Umstieg von der lokalen in die öffentliche Cloud mit sich bringt, ist die Art der Finanzierung: Diese verlagert sich vom Kapitalaufwand (Hardwarekauf) hin zum Betriebsaufwand (Zahlung nur für tatsächlich genutzte Dienste). Dieser Wechsel erfordert auch eine sorgfältigere Verwaltung Ihrer Kosten. Der große Vorteil der Cloud besteht darin, dass Sie die Kosten eines von Ihnen genutzten Diensts grundlegend und positiv beeinflussen können, indem Sie den Dienst einfach deaktivieren oder herunterskalieren, wenn Sie ihn nicht benötigen. Die Verwaltung der Kosten in der Cloud ist eine bewährte Methode, die erfahrene Kunden bereits täglich anwenden.
 
 Microsoft stellt Ihnen verschiedene Tools zur Verfügung, mit denen Sie Ihre Kosten visualisieren, nachverfolgen und verwalten können. Wir bieten Ihnen auch einen vollständigen Satz APIs, mit denen Sie das Kostenmanagement anpassen und in Ihre eigenen Tools und Dashboards integrieren können. Diese Tools sind locker in zwei Gruppen zusammengefasst: Azure-Portal-Funktionen und externe Funktionen.
 
@@ -286,7 +286,7 @@ Diese Tools stellen Ihnen sofortige Informationen zu Kosten bereit und bieten di
 
 - **Nutzungs-API:** Die [Nutzungs-API](/rest/api/consumption) bietet programmgesteuerten Zugriff auf die Kosten- und Nutzungsdaten sowie Informationen zu Budgets, reservierten Instanzen und Marketplace-Gebühren. Diese APIs sind nur für Enterprise-Registrierungen und einige Web Direct-Abonnements zugänglich, bieten Ihnen aber die Möglichkeit, Ihre Kostendaten in Ihre eigenen Tools und Data Warehouses zu integrieren. Sie können auch über die [Azure CLI auf diese APIs zugreifen](/cli/azure/consumption?view=azure-cli-latest).
 
-Kunden, die langfristige und erfahrene Cloudanwender sind, befolgen einige der dringend empfohlenen Vorgehensweisen:
+Kunden, die langfristige und erfahrene Cloudanwender sind, befolgen bestimmte Best Practices:
 
 - **Aktive Überwachung der Kosten.** Organisationen, die bereits über viel Erfahrung mit Azure verfügen, überwachen die Kosten fortlaufend und ergreifen bei Bedarf Maßnahmen. Einige Organisationen setzen sogar dediziertes Personal ein, das Analysen durchführt und Änderungen an der Nutzung vorschlägt. Dies macht sich in dem Moment mehr als bezahlt, wenn ein HDInsight-Cluster ermittelt wird, der bereits seit mehreren Monaten ungenutzt ausgeführt wird.
 - **Reservierte VM-Instanzen verwenden.** Ein weiterer wichtiger Faktor für das Kostenmanagement in der Cloud ist die Verwendung des am besten geeigneten Tools für jeden Auftrag. Wenn Sie über eine IaaS-VM verfügen, die rund um die Uhr aktiv bleiben muss, können Sie mit einer reservierten VM-Instanz viel Geld sparen. Um das richtige Gleichgewicht zwischen dem automatischen Herunterfahren von VMs und der Verwendung von reservierten VM-Instanzen zu finden, sind viel Erfahrung und sorgfältige Analysen erforderlich.

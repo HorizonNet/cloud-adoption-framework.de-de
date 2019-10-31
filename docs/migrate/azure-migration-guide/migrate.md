@@ -10,16 +10,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d14ee6491e4fc804d6545c6708f1d27a44c83501
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 345811e62442341091cf91b3e52870ec454784bf
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224078"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549243"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrieren von Objekten (Infrastruktur, Apps und Daten)
 
 In dieser Phase verwenden Sie die Ausgabe der Bewertungsphase, um die Migration der Umgebung einzuleiten. Dieser Leitfaden hilft Ihnen, die geeigneten Tools zu identifizieren, um den Zustand "Fertig" zu erreichen, einschließlich nativer Tools, Tools von Drittanbietern und Projektmanagementtools.
+
+<!-- markdownlint-disable MD025 -->
 
 # <a name="native-migration-toolstabtools"></a>[Native Migrationstools](#tab/Tools)
 
@@ -202,7 +204,9 @@ Das Datenmigrationstool von Azure Cosmos DB kann Daten aus verschiedenen Quelle
 
 Weitere Informationen finden Sie unter
 
-- [Migrieren Ihrer Daten zu Azure Cosmos DB mithilfe des Datenmigrationstools](https://docs.microsoft.com/en-us/azure/cosmos-db/import-data)
+- [Migrieren Ihrer Daten zu Azure Cosmos DB mithilfe des Datenmigrationstools](https://docs.microsoft.com/azure/cosmos-db/import-data)
+
+<!-- markdownlint-disable MD025 -->
 
 # <a name="third-party-migration-toolstabthird-party-tools"></a>[Migrationstool von einem Drittanbieter](#tab/third-party-tools)
 
@@ -236,7 +240,7 @@ Movere ist eine Ermittlungslösung, die die notwendigen Daten und Erkenntnisse l
 
 Sie können aus einer Vielzahl erfahrener Systemintegratorpartner und Tools wählen, die Sie bei Ihren Azure Cosmos DB-Migrationen für Ihre NoSQL-Datenbankanforderungen unterstützen.
 
-[Weitere Informationen](https://docs.microsoft.com/en-us/azure/cosmos-db/partners-migration-cosmosdb#migration-tools)
+[Weitere Informationen](https://docs.microsoft.com/azure/cosmos-db/partners-migration-cosmosdb#migration-tools)
 
 Besuchen Sie das [Azure Migration Center](https://azure.microsoft.com/migration/support), um Organisationen zu ermitteln, die verwendungsbereite Partnertechnologielösungen anbieten, die zu Ihren Migrationsszenarien passen, und erfahren Sie mehr über zusätzliche Migrationstools und Supportdienste von Drittanbietern.
 

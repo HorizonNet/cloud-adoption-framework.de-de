@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 360565a9d42dadc25c5ddcce5e8f1b3941d9ee42
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: cdc6abe2be94bb0d91047d4d64a0774bac6a8e0e
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839100"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549221"
 ---
 # <a name="approve-architecture-changes-before-migration"></a>Genehmigen von Änderungen an der Architektur vor der Migration
 
@@ -21,9 +21,9 @@ Während des Bewertungsprozesses der Migration wird jede Workload beurteilt, ent
 
 ## <a name="business-impact-and-approval"></a>Geschäftliche Auswirkungen und Genehmigung
 
-Während der Migration ergeben sich wahrscheinlich Änderungen, die sich auch auf das Geschäft auswirken. Zwar lassen sich Änderungen manchmal nicht vermeiden, doch sollte es keine Überraschungen aufgrund nicht offengelegter oder nicht dokumentierter Änderungen geben. Damit die Unterstützung von Beteiligten während der gesamten Migration aufrechterhalten bleibt, ist es wichtig, Überraschungen zu vermeiden. Überraschungen für Anwendungsbesitzer oder Beteiligte im Unternehmen können eine Cloudeinführung verlangsamen oder stoppen.
+Während der Migration ergeben sich wahrscheinlich Änderungen, die sich auch auf das Geschäft auswirken. Zwar lassen sich Änderungen manchmal nicht vermeiden, doch sollte es keine Überraschungen aufgrund nicht offengelegter oder nicht dokumentierter Änderungen geben. Um die Unterstützung der Beteiligten während der gesamten Migration aufrechtzuerhalten, ist es wichtig, Überraschungen zu vermeiden. Überraschungen für Anwendungsbesitzer oder Beteiligte im Unternehmen können eine Cloudeinführung verlangsamen oder stoppen.
 
-Vor der Migration ist es wichtig, den Besitzer der Workload auf Änderungen vorzubereiten, die sich auf Geschäftsprozesse auswirken können. Dazu gehören z.B. Änderungen in Bezug auf:
+Vor der Migration ist es wichtig, den geschäftlichen Besitzer der Workload auf Änderungen vorzubereiten, die sich auf Geschäftsprozesse auswirken können. Dazu gehören z. B. Änderungen in Bezug auf Folgendes:
 
 - Vereinbarungen zum Servicelevel
 - Zugriffsmuster oder Sicherheitsanforderungen, die sich auf den Endbenutzer auswirken

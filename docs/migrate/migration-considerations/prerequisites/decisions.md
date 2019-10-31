@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4bc84ad8bd2d0a0521399c1762585db6f9a5a6ab
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 01380bdd795fac0fc2740e4e41c3638a8b8d93f3
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025415"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548311"
 ---
 # <a name="decisions-that-affect-migrations"></a>Entscheidungen, die sich auf Migrationen auswirken
 
@@ -88,9 +88,9 @@ Dokumentieren Sie vor dem Fortfahren die folgenden Annahmen, und teilen Sie dies
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nachdem der Prozess im Team verstanden wurde, ist es an der Zeit, die technischen Voraussetzungen zu überprüfen. Mithilfe der [Planungscheckliste für die Migrationsumgebung](./planning-checklist.md) kann sichergestellt werden, dass die technischen Grundlagen für die Migration bereitstehen.
+Wenn das Team den Prozess vollständig verstanden hat, ist es an der Zeit, die technischen Voraussetzungen zu überprüfen. Mithilfe der [Planungscheckliste für die Migrationsumgebung](./planning-checklist.md) kann sichergestellt werden, dass die technischen Grundlagen für die Migration bereitstehen.
 
-Sobald der Prozess im Team verstanden wurde, ist es an der Zeit, die technischen Voraussetzungen zu überprüfen. Mithilfe der [Planungscheckliste für die Migration] kann sichergestellt werden, dass die technischen Grundlagen für die Migration bereitstehen.
+Wenn das Team den Prozess vollständig verstanden hat, ist es an der Zeit, die technischen Voraussetzungen zu überprüfen. Mithilfe der [Planungscheckliste für die Migration] kann sichergestellt werden, dass die technischen Grundlagen für die Migration bereitstehen.
 
 > [!div class="nextstepaction"]
 > [Überprüfen der Planungscheckliste für die Migration](./planning-checklist.md)

@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3e65631f0adf2584bbf0ee24b10d20df73ece715
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 62c12796abf8921c13cebe471fe555d012bab15c
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839064"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549132"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -36,7 +36,7 @@ Eine *Toolkette*, die der neuen Plattform und den Quellbinärdateien entspricht,
 Beim Planen der Replikation einer Binärquelle an einem neuen Ziel sind einige wesentliche Grundsätze während der Planung und Ausführung zu berücksichtigen.
 
 - **Lichtgeschwindigkeit.** Bei der Übertragung großer Datenmengen sind Glasfaserkabel immer noch die schnellste Option. Leider können diese Kabel Daten nur mit zwei Dritteln der Lichtgeschwindigkeit übertragen. Das bedeutet, dass es keine Methode zur sofortigen oder unbegrenzten Replikation von Daten gibt.
-- **Geschwindigkeit der WAN-Pipeline.** Folgenreicher als die Geschwindigkeit der Datenübertragung ist die Uplink-Bandbreite, die das Datenvolumen pro Sekunde definiert, das über das bestehende WAN eines Unternehmens in das Zielrechenzentrum übertragen werden kann.
+- **Geschwindigkeit der WAN-Pipeline.** Folgenreicher als die Geschwindigkeit der Datenverschiebung ist die Uplinkbandbreite, die das Datenvolumen pro Sekunde definiert, das über das bestehende WAN eines Unternehmens in das Zielrechenzentrum übertragen werden kann.
 - **Geschwindigkeit der WAN-Erweiterung.** Wenn es das Budget erlaubt, kann der WAN-Lösung eines Unternehmens zusätzliche Bandbreite hinzugefügt werden. Es kann jedoch Wochen oder Monate dauern, bis zusätzliche Glasfaserverbindungen beschafft, bereitgestellt und integriert sind.
 - **Geschwindigkeit von Datenträgern.** Wenn Daten schneller übertragen werden könnten und es keine Begrenzung der Bandbreite zwischen der Binärquelle und dem Zielort gäbe, würden immer noch die Gesetze der Physik eine Beschränkung darstellen. Daten können nur so schnell repliziert werden, wie sie von Quelldatenträgern gelesen werden können. Das Lesen jeder Eins oder Null von jedem rotierenden Datenträger in einem Rechenzentrum braucht Zeit.
 - **Geschwindigkeit der menschlichen Berechnungen.** Datenträger und Licht sind schneller als menschliche Entscheidungsprozesse. Wenn eine Gruppe von Menschen zusammenarbeiten und gemeinsam Entscheidungen treffen muss, lassen die Ergebnisse noch länger auf sich warten. Die Replikation kann niemals Verzögerungen ausgleichen, die sich durch das menschliche Denken ergeben.

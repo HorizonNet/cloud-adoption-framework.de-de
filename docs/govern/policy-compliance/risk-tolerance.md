@@ -8,12 +8,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 2b8bc595377b2748bd00f306659a46196115e91d
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 61f661a167b9a38a54a51dc9612a0b17df0bd0c3
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223539"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547173"
 ---
 # <a name="evaluate-risk-tolerance"></a>Evaluieren der Risikotoleranz
 
@@ -30,7 +30,7 @@ Echte Geschäftsrisiken basieren auf den Details spezifischer Transformationen. 
 > [!IMPORTANT]
 > Bevor Sie weiterlesen, sollten Sie wissen, dass jedes dieser Risiken entschärft werden kann. Ziel dieses Artikels ist es, die Leser zu informieren und auf produktivere Diskussionen zum Risikomanagement vorzubereiten.
 
-- **Verletzung des Schutzes personenbezogener Daten:** Das Risiko Nummer 1 im Zusammenhang mit jeder Transformation ist der Schutz von Daten. Datenlecks in Ihrem Unternehmen können erhebliche Schäden verursachen, die zum Verlust von Kunden, zu Geschäftseinbrüchen oder sogar zur gesetzlichen Haftung führen. Alle Änderungen an der Speicherung, Verarbeitung oder Verwendung der Daten stellen ein Risiko dar. Cloudtransformationen sorgen für umfangreiche Änderungen im Bereich der Datenverwaltung, daher sollte das Risiko nicht auf die leichte Schulter genommen werden. [Sicherheitbaseline](../security-baseline/index.md), [Datenklassifizierung](./data-classification.md) und [inkrementelle Rationalisierung](../../digital-estate/rationalize.md#incremental-rationalization) können bei der Bewältigung dieses Risikos hilfreich sein.
+- **Verletzung des Datenschutzes:** Datenpannen stellen das größte Risiko bei jeder Transformation dar. Datenlecks in Ihrem Unternehmen können erhebliche Schäden verursachen, die zum Verlust von Kunden, zu Geschäftseinbrüchen oder sogar zur gesetzlichen Haftung führen. Alle Änderungen an der Speicherung, Verarbeitung oder Verwendung der Daten stellen ein Risiko dar. Cloudtransformationen sorgen für umfangreiche Änderungen im Bereich der Datenverwaltung, daher sollte das Risiko nicht auf die leichte Schulter genommen werden. [Sicherheitbaseline](../security-baseline/index.md), [Datenklassifizierung](./data-classification.md) und [inkrementelle Rationalisierung](../../digital-estate/rationalize.md#incremental-rationalization) können bei der Bewältigung dieses Risikos hilfreich sein.
 
 - **Dienstunterbrechung:** Geschäftsvorgänge und Kundenerlebnis hängen stark von technischen Vorgängen ab. Cloudtransformationen führen zu Änderungen in IT-Vorgängen. In einigen Organisationen ist die Veränderung gering und leicht anzupassen. In anderen Organisationen sind für diese Änderungen möglicherweise neue Tools, neues Fachwissen oder neue Ansätze für die Unterstützung von Cloudvorgängen erforderlich. Je umfangreicher die Änderung, desto größer die potenziellen Auswirkungen auf Geschäftsvorgänge und das Kundenerlebnis. Zur Bewältigung dieses Risikos müssen die Fachbereiche in die Transformationsplanung einbezogen werden. Die Abschnitte „Releaseplanung“ und „Auswählen der ersten Workload“ im Artikel [Inkrementelle Rationalisierung](../../digital-estate/rationalize.md#incremental-rationalization) erörtern Möglichkeiten zur Auswahl von Workloads für Transformationsprojekte. Das Unternehmen muss bei dieser Aktivität das Risiko für Geschäftsvorgänge kommunizieren, das von der Änderung priorisierter Workloads ausgeht. Wird die IT bei der Auswahl von Workloads unterstützt, die geringere Auswirkungen auf Vorgänge haben, verringert sich das Gesamtrisiko.
 
@@ -66,7 +66,7 @@ In diesem Abschnitt werden Fragen mit Gesprächsbedarf in drei Kategorien aufgel
 - Kann dieses Risiko eine gesetzliche Haftung herbeiführen? Falls ja, gibt es hierfür einen Präzendenzfall für zu leistenden Schadenersatz?
 - Können die Geschäftsvorgänge durch dieses Risiko zum Erliegen kommen? Falls ja, wie lang wäre der Betriebsausfall?
 - Kann dieses Risiko die Geschäftsvorgänge verlangsamen? Falls ja, inwieweit und für wie lange?
-- Ist dieses Risiko zu diesem Zeitpunkt in der Transformation einmalig, oder kann es sich wiederholen?
+- Tritt dieses Risiko in dieser Phase in der Transformation einmalig auf, oder kann es sich wiederholen?
 - Nimmt die Häufigkeit des Risikos im Verlauf der Transformation zu oder ab?
 - Nimmt die Wahrscheinlichkeit des Risikos im Laufe der Zeit zu oder ab?
 - Ist das Risiko von der Natur her zeitkritisch? Geht das Risiko vorüber, oder wird es schlimmer, wenn es nicht behandelt wird?

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: ac62364b6117e4744b0432a5c4fbb46b7ee914b8
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 1a0c1bfe2943176d647e53e8f91c8d92e168af12
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031534"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548693"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>Beispiele für Finanzergebnisse
 
@@ -59,7 +59,7 @@ Cloud Computing kann die Investitionskosten für Hardware und Software, das Einr
 
 ### <a name="example-coverdell"></a>Beispiel: Coverdell
 
-Coverdell modernisiert seine Infrastruktur und erzielt mit Azure rekordverdächtige Kosteneinsparungen. Die Entscheidung von Coverdell, in Azure zu investieren und sein Netzwerk von Websites, Anwendungen, Daten und Infrastruktur in dieser Umgebung zu vereinen, führte zu höheren Kosteneinsparungen als das Unternehmen jemals erwartet hätte. Durch die Migration zu einer reinen Azure-Umgebung entfielen 54.000 US-Dollar an monatlichen Kosten für Co-Location-Dienste. Allein durch die neue, vereinte Infrastruktur des Unternehmens erwartet Coverdell in den nächsten zwei bis drei Jahren Einsparungen von etwa einer Million US-Dollar.
+Coverdell modernisiert seine Infrastruktur und erzielt mit Azure rekordverdächtige Kosteneinsparungen. Die Entscheidung von Coverdell, in Azure zu investieren und sein Netzwerk aus Websites, Anwendungen, Daten und Infrastruktur in dieser Umgebung zu vereinen, führte zu höheren Kosteneinsparungen, als das Unternehmen jemals erwartet hätte. Durch die Migration zu einer reinen Azure-Umgebung entfielen 54.000 US-Dollar an monatlichen Kosten für Co-Location-Dienste. Allein durch die neue, vereinte Infrastruktur erwartet Coverdell in den nächsten zwei bis drei Jahren Einsparungen von etwa einer Million US-Dollar.
 
 > „Der Zugang zum Azure-Technologiestapel ebnet den Weg für skalierbare, einfach zu implementierende und hoch verfügbare Lösungen, die kostengünstig sind. Dadurch können unsere Architekten die von ihnen bereitgestellten Lösungen deutlich kreativer gestalten.“  
 > Ryan Sorensen  
@@ -70,7 +70,7 @@ Coverdell modernisiert seine Infrastruktur und erzielt mit Azure rekordverdächt
 
 Durch die Stilllegung eines Datencenters lassen sich auch zukünftige Aktualisierungszyklen und somit Kosten vermeiden. Der Kauf neuer Hardware und Software, um veraltete lokale Systeme zu ersetzen, wird als Aktualisierungszyklus bezeichnet. In Azure werden die Hardware und das Betriebssystem ohne zusätzliche Kosten für den Kunden regelmäßig gewartet, gepatcht und aktualisiert. Dies versetzt einen CFO in die Lage, geplante zukünftige Ausgaben aus langfristigen finanziellen Prognosen zu streichen. Die Kostenvermeidung wird in Euro gemessen. Sie unterscheidet sich von der Kostensenkung, indem sie grundsätzlich auf ein zukünftiges Budget fokussiert, das noch nicht vollständig genehmigt wurde.
 
-- **Beispiel**: Für das Datencenter eines Unternehmens steht in sechs Monaten eine Verlängerung des Mietvertrags an. Das Datencenter ist seit acht Jahren in Betrieb. Vor vier Jahren hat das Unternehmen mehrere Millionen US-Dollar in die Aktualisierung und Virtualisierung aller Server investiert. Im nächsten Jahr sollen die Hardware und Software erneut aktualisiert werden. Durch Migrieren der Ressourcen in diesem Datencenter im Rahmen einer Cloudmigration würde eine Kostenvermeiung ermöglicht, da die geplante Aktualisierung im prognostizierten Budget des nächsten Jahres wegfallen würde. Zudem könnte sie zu einer Kostensenkung führen, da die Mietkosten verringert oder entfallen würden.
+- **Beispiel**: Für das Rechenzentrum eines Unternehmens steht in sechs Monaten eine Verlängerung des Mietvertrags an. Das Datencenter ist seit acht Jahren in Betrieb. Vor vier Jahren hat das Unternehmen mehrere Millionen US-Dollar in die Aktualisierung und Virtualisierung aller Server investiert. Im nächsten Jahr sollen die Hardware und Software erneut aktualisiert werden. Durch Migrieren der Ressourcen in diesem Rechenzentrum im Rahmen einer Cloudmigration könnten Kosten vermieden werden, da die geplante Aktualisierung im prognostizierten Budget des nächsten Jahres wegfallen würde. Zudem könnte sie zu einer Kostensenkung führen, da die Mietkosten verringert oder entfallen würden.
 
 ### <a name="capital-expenses-vs-operating-expenses"></a>Kapitalkosten und Betriebskosten
 
@@ -83,7 +83,7 @@ Mit den folgenden Begriffe werden die Unterschiede zwischen Kapital- und Betrieb
 - **Betriebskosten** sind laufende Kosten für die Geschäftstätigkeiten. Die Nutzung von Clouddiensten in einem nutzungsbasierten Bezahlungsmodell kann als Betriebskosten eingestuft werden.
 - **Vermögenswerte** sind wirtschaftliche Ressourcen, die zum Generieren von Mehrwert dienen oder genutzt werden. Server, Data Lakes und Anwendungen können als Vermögenswerte eingestuft werden.
 - **Abschreibung** ist eine Verringerung des Werts eines Vermögenswerts im Laufe der Zeit. Von größerer Bedeutung für die Überlegungen hinsichtlich Kapitalkosten im Vergleich zu Betriebskosten ist, dass die Abschreibung die Art und Weise angibt, wie die Kosten eines Vermögenswerts über die Zeiträume verteilt werden, in denen er genutzt wird. Wenn Sie beispielsweise in diesem Jahr eine Anwendung erstellen, deren erwartete durchschnittliche Lebensdauer fünf Jahre beträgt (wie bei den meisten kommerziellen Apps), werden die Kosten für das Entwicklungsteam und die erforderlichen Tools zum Entwickeln und Bereitstellen der Codebasis gleichmäßig über fünf Jahre abgeschrieben.
-- **Bewertung** ist der Prozess, durch den der Wert eines Unternehmens geschätzt wird. In den meisten Branchen beruht die Bewertung auf der Fähigkeit des Unternehmens, unter Berücksichtigung der erforderlichen Betriebskosten für die Erzeugung der entsprechenden Waren Umsatz und Gewinn zu generieren. In manchen Branchen, beispielsweise im Einzelhandel, oder bei Transaktionstypen wie Private Equity können Vermögenswerte und die Abschreibung eine wichtige Rolle bei der Bewertung des Unternehmens spielen.
+- **Bewertung** ist der Prozess, durch den der Wert eines Unternehmens geschätzt wird. In den meisten Branchen beruht die Bewertung auf der Fähigkeit des Unternehmens, unter Berücksichtigung der erforderlichen Betriebskosten für die Herstellung der entsprechenden Waren Umsatz und Gewinn zu generieren. In manchen Branchen – wie etwa dem Einzelhandel – oder bei Transaktionstypen wie Private Equity können Vermögenswerte und Abschreibung bei der Bewertung des Unternehmens eine wichtige Rolle spielen.
 
 Fast immer ist davon auszugehen, dass verschiedene Führungskräfte – einschließlich des CIO (Chief Information Officer) – darüber debattieren, wie das Kapital optimal genutzt werden sollte, um das Unternehmen in der gewünschten Richtung voranzubringen. Dem CIO ein Mittel an die Hand zu geben, umstrittene Kapitalkostengespräche in klare Zurechenbarkeit für Betriebskosten umzuwandeln, könnte an sich schon ein attraktives Ergebnis sein. In vielen Branchen suchen CFOs aktiv nach Möglichkeiten zur besseren Zuordnung der finanziellen Verantwortlichkeit zu den Kosten der verkauften Waren.
 
@@ -91,7 +91,7 @@ Bevor Sie jedoch einen Transformationsvorschlag mit dieser Art von Überlegungen
 
 Ist ein Betriebskostenmodell gewünscht, kann das folgende Beispiel ein tragfähiges Geschäftsergebnis sein:
 
-- **Beispiel**: Das Datencenter eines Unternehmens wird derzeit jährlich mit _x US-Dollar_ für die nächsten drei Jahre abgeschrieben. Im nächsten Jahr wird für eine Aktualisierung der Hardware ein zusätzlicher Kostenaufwand von _y US-Dollar_ erwartet. Wir können die Kapitalkosten in ein Betriebskostenmodell mit einer gleichmäßigen Rate von _z US-Dollar_ pro Monat umwandeln, wodurch eine bessere Verwaltung und Zurechenbarkeit der Betriebskosten für die Technologie möglich wird.
+- **Beispiel**: Das Rechenzentrum eines Unternehmens wird derzeit jährlich mit _x US-Dollar_ für die nächsten drei Jahre abgeschrieben. Im nächsten Jahr wird für eine Aktualisierung der Hardware ein zusätzlicher Kostenaufwand von _y US-Dollar_ erwartet. Wir können die Kapitalkosten in ein Betriebskostenmodell mit einer gleichmäßigen Rate von _z US-Dollar_ pro Monat umwandeln, wodurch eine bessere Verwaltung und Zurechenbarkeit der Betriebskosten für die Technologie möglich wird.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

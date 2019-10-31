@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 554bfdaf0a21fac50cafe9c510c4fd83c6702b81
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 0157cf5c50cd676478b28889b565c7f3f6952e32
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221382"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548602"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>Leitfaden zur Cloudüberwachung: Warnungen
 
@@ -35,7 +35,7 @@ Berücksichtigen Sie die folgenden Grundsätze, um festzustellen, ob ein Symptom
 
 Stellen Sie diese Fragen, wenn Sie zu Beginn eine Überwachungskonfiguration entwickeln. Testen und validieren Sie die Annahmen in einer Nichtproduktionsumgebung, und fahren Sie dann mit der Bereitstellung in der Produktionsumgebung fort. Die Überwachungskonfigurationen werden aus bekannten Fehlermodi, den Testergebnissen simulierter Ausfälle und Erfahrungen verschiedener Teammitglieder abgeleitet.
 
-Nach der Freigabe Ihrer Überwachungskonfiguration können Sie viel darüber erfahren, was funktioniert und was nicht. Berücksichtigen Sie ein hohes Warnungsvolumen, durch die Überwachung unbemerkte, aber von den Endbenutzern wahrgenommene Probleme und welche Maßnahmen sich bewährten, die im Rahmen dieser Bewertung ergriffen wurden. Identifizieren Sie Änderungen, die zur Verbesserung der Dienstbereitstellung implementiert werden sollen, als Teil eines kontinuierlichen, kontinuierlichen Optimierungsprozesses. Es geht nicht nur um die Bewertung von überflüssigen oder verpassten Warnungen, sondern auch um die Effektivität der Überwachung der Workload. Es geht um die Effektivität Ihrer Warnungsrichtlinien, Prozesse und der gesamten Kultur, um festzustellen, ob sich Ihre Ergebnisse verbessern.
+Nach der Freigabe Ihrer Überwachungskonfiguration können Sie viel darüber erfahren, was funktioniert und was nicht. Berücksichtigen Sie ein hohes Warnungsvolumen, durch die Überwachung unbemerkte, aber von den Endbenutzern wahrgenommene Probleme und welche Maßnahmen sich bewährten, die im Rahmen dieser Bewertung ergriffen wurden. Identifizieren Sie Änderungen, die zur Verbesserung der Dienstbereitstellung implementiert werden sollen, als Teil eines kontinuierlichen, kontinuierlichen Optimierungsprozesses. Es geht nicht nur um die Bewertung von überflüssigen oder verpassten Warnungen, sondern auch um eine effiziente Überwachung der Workload. Es geht um die Effektivität Ihrer Warnungsrichtlinien, Prozesse und der gesamten Kultur, um festzustellen, ob sich Ihre Ergebnisse verbessern.
 
 Sowohl System Center Operations Manager als auch Azure Monitor unterstützen Warnungen, die auf statischen oder dynamischen Schwellwerten sowie auf den daraufhin eingerichteten Maßnahmen basieren. Beispiele hierfür sind Warnungen für E-Mails, SMS und Sprachanrufe für einfache Benachrichtigungen. Beide Dienste unterstützen auch die ITSM-Integration, um das Erstellen von Incidents zu automatisieren und über einen Webhook für eine Eskalation an das richtige Supportteam oder ein beliebiges anderes System zur Warnungsverwaltung zu sorgen.
 
@@ -61,7 +61,7 @@ Abhängig vom Feature und der verwendeten Konfiguration gibt es sechs Repository
 
 Es gibt vier Arten von Warnungen in Azure Monitor, die auf gewisse Weise an das Repository gebunden sind, in denen die Daten gespeichert werden.
 
-- [Metrikwarnung](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric): Warnungen zu Daten in der Azure Monitor-Metrikdatenbank. Warnungen werden ausgelöst, wenn ein Überwachungswert einen benutzerdefinierten Schwellwert überschreitet. Dann werden sie erneut ausgelöst, wenn der Wert in den Zustand „Normal“ zurückkehrt.
+- [Metrikwarnung](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric): Warnungen zu Daten in der Azure Monitor-Metrikdatenbank. Warnungen werden ausgelöst, wenn ein überwachter Wert einen benutzerdefinierten Schwellwert überschreitet. Es wird erneut eine Warnung ausgelöst, wenn der Wert in den Zustand „Normal“ zurückkehrt.
 
 - [Protokollabfragewarnung](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-log-query): Verfügbar für Warnmeldungen zu Inhalten in den Application Insights- oder Azure-Protokollspeichern. Das Auslösen von Warnungen basierend auf arbeitsbereichsübergreifenden Abfragen ist ebenfalls möglich.
 
@@ -81,7 +81,7 @@ Azure Monitor bietet Unterstützung für die Integration mit anderen Überwachun
 
 Lösung| Datentyp | Warnungsverhalten
 :---|:---|:---
-Azure Monitor für Container | Berechnete durchschnittliche Leistungsdaten von Knoten und Pods werden in den Metrikspeicher geschrieben. | Erstellen Sie Metrikwarnungen, wenn Sie basierend auf Abweichungen der über einen bestimmten Zeitraum gemessenen aggregierten Nutzungsleistung benachrichtigt werden möchten.
+Azure Monitor für Container | Berechnete durchschnittliche Leistungsdaten von Knoten und Pods werden in den Metrikspeicher geschrieben. | Erstellen Sie Metrikwarnungen, wenn Sie basierend auf Abweichungen der im Zeitverlauf gemessenen aggregierten Nutzungsleistung benachrichtigt werden möchten.
 || Anhand von Perzentilen aus Knoten, Controllern, Containern und Pods berechnete Leistungsdaten werden in den Protokollspeicher geschrieben. Containerprotokolle und Bestandsinformationen werden ebenfalls in den Protokollspeicher geschrieben. | Erstellen Sie Protokollabfragewarnungen, wenn Sie basierend auf Abweichungen der gemessenen Auslastung von Clustern und Containern benachrichtigt werden möchten. Protokollabfragewarnungen können auch basierend auf Podphasen- und Statusknotenzählungen konfiguriert werden.
 Azure Monitor für VMs | Metriken zu Integritätskriterien werden in den Metrikspeicher geschrieben. | Warnungen werden generiert, wenn sich der Integritätsstatus von „Fehlerfrei“ in „Fehlerhaft“ ändert. Es werden nur Aktionsgruppen unterstützt, die zum Senden von SMS- oder E-Mail-Benachrichtigungen konfiguriert sind.
 || Zuordnungsdaten und Leistungsprotokolldaten zum Gastbetriebssystem werden in den Protokollspeicher geschrieben. | Es werden Protokollabfragewarnungen erstellt.
@@ -104,9 +104,9 @@ Allerdings gibt es einige wichtige Hinweise zu dieser Regel.
 
 ### <a name="minimize-alerts"></a>Minimieren von Warnungen
 
-Wenn Sie eine Lösung wie Azure Monitor für VMs verwenden und die standardmäßigen Integritätskriterien zur Überwachung der Leistungsauslastung für Sie akzeptabel sind, sollten Sie keine sich überschneidenden Metrik- oder Protokollabfragewarnungen erstellen, die auf denselben Leistungsindikatoren basieren.
+Wenn Sie eine Lösung wie Azure Monitor für VMs verwenden und die standardmäßigen Integritätskriterien zur Überwachung der Leistung für Sie akzeptabel sind, sollten Sie keine sich überschneidenden Metrik- oder Protokollabfragewarnungen erstellen, die auf denselben Leistungsindikatoren basieren.
 
-Wenn Sie Azure Monitor für VMs nicht verwenden, sollten Sie die folgenden Features erkunden, die Ihnen das Erstellen und Verwalten von Benachrichtigungen erleichtern.  
+Wenn Sie Azure Monitor für VMs nicht verwenden, erkunden Sie die folgenden Features, die Ihnen das Erstellen und Verwalten von Warnungen erleichtern:
 
 > [!NOTE]
 > Diese Features gelten nur für Metrikwarnungen, d. h. die Warnungen basieren auf Daten, die an die Azure Monitor-Metrikdatenbank gesendet werden. Sie gelten nicht für andere Warnungstypen. Wie bereits erwähnt, ist das Hauptziel von Metrikwarnungen die Geschwindigkeit. Wenn es nicht entscheidend ist, dass eine Warnung in weniger als 5 Minuten ausgelöst wird, können Sie stattdessen Protokollabfragewarnungen verwenden.
@@ -125,4 +125,4 @@ Beachten Sie die geltenden [Einschränkungen](https://docs.microsoft.com/azure/a
 
 ### <a name="best-query-experience"></a>Optimales Abfrageverhalten
 
-Wenn Sie nach Trends in sämtlichen Ihrer Daten suchen, ist es sinnvoll, all Ihre Daten in Azure Logs zu importieren – es sei denn, sie befinden sich bereits in Application Insights. Sie können Abfragen über beide Arbeitsbereiche hinweg erstellen, deshalb ist eine Verschiebung von Daten zwischen diesen Tools nicht erforderlich. Sie können außerdem Aktivitätsprotokoll- und Service Health-Daten in Ihren Log Analytics-Arbeitsbereich importieren. Sie bezahlen für diese Erfassung und Speicherung, aber alle Ihre Daten werden zur Analyse und Abfrage an einem Ort gesammelt. Dies gibt Ihnen auch die Möglichkeit, komplexe Abfragebedingungen zu erstellen und bei diesen zu warnen.
+Wenn Sie nach Trends in Ihrem gesamten Datenbestand suchen, ist es sinnvoll, sämtliche Ihrer Daten in Azure-Protokolle zu importieren – es sei denn, die Daten befinden sich bereits in Application Insights. Sie können Abfragen über beide Arbeitsbereiche hinweg erstellen, deshalb ist eine Verschiebung von Daten zwischen diesen Tools nicht erforderlich. Sie können außerdem Aktivitätsprotokoll- und Service Health-Daten in Ihren Log Analytics-Arbeitsbereich importieren. Sie bezahlen für diese Erfassung und Speicherung, aber alle Ihre Daten werden zur Analyse und Abfrage an einem Ort gesammelt. Dies gibt Ihnen auch die Möglichkeit, komplexe Abfragebedingungen zu erstellen und bei diesen zu warnen.

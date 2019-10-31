@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 35750064b0a88c65796f662d20dc51e9a38e77ac
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: fcbcda63ff080de234075f0a8784731e591ca0f3
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022358"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549012"
 ---
 # <a name="hub-and-spoke-network-topology"></a>Hub-and-Spoke-Netzwerktopologie
 
@@ -75,7 +75,7 @@ Innerhalb eines einzelnen Spokes ist es möglich, komplexe Workloads mit mehrere
 
 Ein Architekt möchte vielleicht eine Workload mit mehreren Ebenen in mehreren virtuellen Netzwerken bereitstellen. Mittels Peering in virtuellen Netzwerken können Spokes Verbindungen mit anderen Spokes im gleichen Hub oder in anderen Hubs herstellen.
 
-Ein typisches Beispiel für dieses Szenario ist die Platzierung von Anwendungsverarbeitungsservern in einem Spoke oder virtuellen Netzwerk. Die Datenbank wird dann in einem anderen Spoke oder virtuellen Netzwerk bereitgestellt. In diesem Fall ist es einfach, die Spokes mittels Peering in virtuellen Netzwerken zu verbinden und das Durchlaufen des Hubs dabei zu vermeiden. Die Lösung besteht darin, die Architektur und Sicherheit sorgfältig zu überprüften, um sicherzustellen, dass bei der Umgehung des Hubs keine wichtigen Sicherheits- oder Überwachungspunkte umgangen werden, die nur im Hub vorhanden sind.
+Ein typisches Beispiel für dieses Szenario ist die Platzierung von Anwendungsverarbeitungsservern in einem Spoke oder virtuellen Netzwerk. Die Datenbank wird dann in einem anderen Spoke oder virtuellen Netzwerk bereitgestellt. In diesem Fall ist es einfach, die Spokes mittels Peering in virtuellen Netzwerken zu verbinden und das Durchlaufen des Hubs dabei zu vermeiden. Die Lösung besteht darin, Architektur und Sicherheit sorgfältig zu überprüfen, um sicherzustellen, dass durch die Umgehung des Hubs keine wichtigen Sicherheits- oder Überwachungspunkte umgangen werden, die nur im Hub vorhanden sind.
 
 ![Spokes, die eine Verbindung untereinander und mit einem Hub herstellen][3]
 

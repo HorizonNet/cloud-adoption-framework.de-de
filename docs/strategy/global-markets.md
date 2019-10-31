@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: ca1e18bdc8da300667b721e673bb1fc0388b4bdf
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 36f0d5ccf826746370054ed213b83968babdee6b
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031469"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548622"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -33,7 +33,7 @@ Es ist wichtig zu wissen, welche Geschäftseinheiten im Ausland eingesetzt werde
 
 ## <a name="employee-usage-patterns"></a>Verwendungsmuster der Mitarbeiter
 
-Es ist wichtig zu verstehen, wie globale Benutzer auf Anwendungen zugreifen, die nicht im Land des jeweiligen Benutzers gehostet werden. Häufig leiten globale WANs (Wide Area Networks) Benutzer basierend auf bestehenden Netzwerkvereinbarungen weiter. In einer herkömmlichen lokalen Umgebung gelten einige Einschränkungen für das WAN-Layout. Diese Einschränkungen können zu einer schlechten Benutzererfahrung führen, wenn sie vor der Cloudeinführung nicht richtig verstanden wurden.
+Es ist wichtig zu verstehen, wie globale Benutzer auf Anwendungen zugreifen, die nicht im Land des jeweiligen Benutzers gehostet werden. Globale WANs (Wide Area Networks) leiten Benutzer basierend auf bestehenden Netzwerkvereinbarungen weiter. In einer herkömmlichen lokalen Umgebung gelten einige Einschränkungen für das WAN-Layout. Diese Einschränkungen können zu einer schlechten Benutzererfahrung führen, wenn sie vor der Cloudeinführung nicht richtig verstanden wurden.
 
 In einem Cloudmodell eröffnet auch das kommerzielle Internet viele neue Optionen. Das Kommunizieren der Verteilung der Mitarbeiter auf die verschiedenen Geografien hilft dem Cloudeinführungsteam beim Entwerfen von WAN-Lösungen, die für eine hohe Benutzerfreundlichkeit sorgen **und** auch die Netzwerkkosten senken können.
 

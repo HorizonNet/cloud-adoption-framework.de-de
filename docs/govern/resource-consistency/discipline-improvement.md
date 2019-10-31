@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 84c7a45b52c541ad9efbec4594db022947b3ff40
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 9d465716784d125edebaf44d8a1bae2f369b9d5a
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223010"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548082"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>Verbesserung der Disziplin „Ressourcenkonsistenz“
 
@@ -107,9 +107,9 @@ Migration ist ein inkrementeller Prozess, bei dem der Schwerpunkt auf der Verlag
 
 Nachdem die Transformation abgeschlossen ist, müssen Governance und Betrieb während des natürlichen Lebenszyklus einer Anwendung oder Workload bestehen bleiben. In dieser Entwicklungsphase der Governance geht es um die Aktivitäten, die üblicherweise ausgeführt werden, nachdem die Lösung implementiert wurde und der Transformationszyklus sich zu stabilisieren beginnt.
 
-**Mindestens empfohlene Aktivitäten**:
+**Mindestens empfohlene Aktivitäten:**
 
-- Passen Sie Ihre [Ressourcenkonsistenz-Toolkette](./toolchain.md) basierend auf Aktualisierungen der veränderten Anforderungen Ihres Unternehmens an das Kostenmanagement an.
+- Passen Sie Ihre [Ressourcenkonsistenz-Toolkette](./toolchain.md) basierend auf Aktualisierungen der veränderten Anforderungen Ihrer Organisation an das Kostenmanagement an.
 - Erwägen Sie die Automatisierung von Benachrichtigungen und Berichten, um die tatsächliche Ressourcennutzung widerzuspiegeln.
 - Optimieren Sie die Architekturrichtlinien, um zukünftige Einführungsprozesse zu unterstützen.
 - Schulen Sie die betroffenen Teams regelmäßig, um die kontinuierliche Einhaltung der Architekturrichtlinien sicherzustellen.

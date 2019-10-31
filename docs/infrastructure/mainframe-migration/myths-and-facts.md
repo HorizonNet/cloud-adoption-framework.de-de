@@ -8,12 +8,12 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 42981c9d3e8a87579033fbd0bd01c912d79c937f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 4adf229b1ffca1d1360d197ab09a04f0d9584ef8
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024398"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547920"
 ---
 # <a name="mainframe-myths-and-facts"></a>Mainframe: Mythen und Fakten
 
@@ -29,7 +29,7 @@ Mainframes bleiben auch anfällig für Notfälle und Katastrophen wie jeder ande
 
 ## <a name="myth-mainframes-have-limitless-scalability"></a>Mythos: Mainframes besitzen unbegrenzte Skalierbarkeit.
 
-Die Skalierbarkeit eines Mainframes hängt von der Kapazität seiner Systemsoftware ab, z. B. dem Kundeninformations-Kontrollsystem (Customer Informationen Control System, CICS) und der Kapazität neuer Instanzen von Mainframe-Engines und -Speicher. Einige große Unternehmen, die Mainframes verwenden, haben ihr CICS hinsichtlich der Leistung angepasst und sind ansonsten den Möglichkeiten des größten verfügbaren Mainframes entwachsen.
+Die Skalierbarkeit eines Mainframes hängt von der Kapazität seiner Systemsoftware ab, z. B. dem Customer Informationen Control System (CICS) und der Kapazität neuer Instanzen von Mainframe-Engines und -Speichern. Einige große Unternehmen, die Mainframes verwenden, haben ihr CICS hinsichtlich der Leistung angepasst und sind ansonsten den Möglichkeiten des größten verfügbaren Mainframes entwachsen.
 
 ## <a name="myth-intel-based-servers-are-not-as-powerful-as-mainframes"></a>Mythos: Intel-basierte Servern sind nicht so leistungsfähig wie Mainframes.
 
@@ -41,7 +41,7 @@ Es mag zwar vereinzelte Fälle geben, in denen Cloudlösungen nicht ausreichen, 
 
 ## <a name="summary"></a>Zusammenfassung
 
-Azure bietet im Vergleich dazu eine alternative Plattform, die in der Lage ist, gleichwertige Mainframefunktionen und -features bereitzustellen, und dies bei wesentlich geringeren Kosten. Darüber hinaus sind die Gesamtbetriebskosten (TCO) des Kostenmodells der Cloud, das abonnementbasiert und nutzungsabhängig ist, weit weniger kostspielig als Mainframecomputer.
+Azure bietet im Vergleich dazu eine alternative Plattform, die in der Lage ist, gleichwertige Mainframefunktionen und -features bereitzustellen, und dies bei wesentlich geringeren Kosten. Darüber hinaus sind die Gesamtbetriebskosten (TCO) des abonnementbasierten und nutzungsabhängigen Kostenmodells der Cloud weit niedriger als bei Mainframecomputern.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

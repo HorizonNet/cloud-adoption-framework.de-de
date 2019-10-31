@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: cc4567495d60f76be760d532dc16a66274834396
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 431895263473481fbd43fc9c63d832a538a499db
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031432"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547391"
 ---
 # <a name="cloud-governance-methodology"></a>Cloudgovernance-Methodik
 
@@ -24,7 +24,7 @@ Das Framework für die Cloudeinführung (Cloud Adoption Framework) bietet Govern
 
 ## <a name="envision-an-end-state"></a>Planen des Endzustands
 
-Eine Reise ohne Zielort ist nur eine Wanderung. Es ist wichtig, eine grobe Vorstellung vom Endzustand zu bekommen, bevor man den ersten Schritt macht. Die folgende Infografik stellt einen Bezugsrahmen für den Endzustand dar. Dies ist nicht Ihr Ausgangspunkt, zeigt aber Ihr potentielles Ziel.
+Eine Reise ohne Zielort ist nur eine Wanderung. Es ist wichtig, eine ungefähre Vorstellung vom Endzustand zu erhalten, bevor der erste Schritt unternommen wird. Die folgende Infografik stellt einen Bezugsrahmen für den Endzustand dar. Dies ist nicht Ihr Ausgangspunkt, sondern zeigt Ihr potenzielles Ziel.
 
 ![Infografik des Cloud Adoption Framework-Governancemodells](../_images/operational-transformation-govern-highres.png)
 
@@ -50,7 +50,7 @@ Unternehmensrichtlinien dienen im Wesentlichen als Frühwarnsystem zur Erkennung
 
 Da sich die Governanceanforderungen im Lauf der Cloudeinführung ändern, ist ein anderer Ansatz für Governance erforderlich. Unternehmen können nicht länger warten, bis ein kleines Team bildlich gesprochen auf jeder Autobahn Leitplanken anbringt und Landkarten erstellt, *bevor sie den ersten Schritt machen*. Geschäftsergebnisse werden schneller und reibungsloser erwartet. Die IT-Governance muss sich zudem schnell weiterentwickeln und mit den Geschäftsanforderungen Schritt halten, um bei der Einführung der Cloud relevant zu bleiben und „Schatten-IT“ zu vermeiden.
 
-Ein **inkrementeller Governance**ansatz stärkt diese Eigenschaften. Inkrementelle Governance basiert auf einer kleinen Sammlung von Unternehmensrichtlinien, -prozessen und -tools, um eine Grundlage für die Einführung und Governance zu schaffen. Diese Grundlage wird als **Minimum Viable Product (MVP)** bezeichnet. Ein MVP ermöglicht es dem Governance-Team, Governance schnell in Implementierungen während des gesamten Einführungszyklus zu integrieren. Ein MVP kann zu jedem Zeitpunkt während des Cloudeinführungsprozesses eingerichtet werden. Es ist allerdings eine bewährte Methode, ein MVP so früh wie möglich einzuführen.
+Ein **inkrementeller Governance**ansatz stärkt diese Eigenschaften. Inkrementelle Governance basiert auf einer kleinen Sammlung von Unternehmensrichtlinien, -prozessen und -tools, um eine Grundlage für die Einführung und Governance zu schaffen. Diese Grundlage wird als **Minimum Viable Product (MVP)** bezeichnet. Ein MVP ermöglicht es dem Governance-Team, Governance schnell in Implementierungen während des gesamten Einführungszyklus zu integrieren. Ein MVP kann zu jedem Zeitpunkt während des Cloudeinführungsprozesses eingerichtet werden. Es hat sich allerdings bewährt, ein MVP so früh wie möglich einzuführen.
 
 Die Fähigkeit, schnell auf Risikoveränderungen zu reagieren, eröffnet dem Cloudgovernanceteam neue Möglichkeiten. Das Cloudgovernanceteam kann sich dem Cloudstrategieteam als Scouts anschließen und den Cloudeinführungsteams vorauseilen, Routen planen und schnell Absicherungen einrichten, um Risiken im Zusammenhang mit den Einführungsplänen zu managen. Diese Just-in-time-Governanceebenen werden als **Governanceiterationen** bezeichnet. Mit diesem Ansatz ist die Governancestrategie den Cloudeinführungsteams einen Schritt voraus.
 

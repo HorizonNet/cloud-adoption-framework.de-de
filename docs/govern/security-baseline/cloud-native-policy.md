@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8768f1f9c1496fa53bec7e10432854d5ad16b747
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 037cfa2a10ecce9bc56d747eb658824014758827
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222901"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548037"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Richtlinie zur cloudnativen Sicherheitsbaseline
 
@@ -78,7 +78,7 @@ Die Sicherheitsüberwachung ist eine proaktive Strategie, bei der Ihre Ressource
 - Kontinuierliche Überwachung und Sicherheitsbewertungen zum Sicherstellen der Konformität und zur Behebung aller Sicherheitsrisiken.
 - Interaktive Tools und kontextbezogene Informationen zu Bedrohungen für optimierte Untersuchungen.
 - Umfassende Protokollierung und Integration in vorhandenen Sicherheitsinformationen.
-- Verringert den Bedarf für teure, nicht integrierte, einmalig verwendete Sicherheitslösungen.
+- Verringert den Bedarf an teuren, nicht integrierten, einmalig verwendeten Sicherheitslösungen.
 
 ### <a name="extending-cloud-native-policies"></a>Erweitern von cloudnativen Richtlinien.
 
@@ -90,7 +90,7 @@ Selbst bei dieser Investition in die cloudnative Sicherheitsbaseline empfiehlt e
 - **Schützen der Inhalte von virtuellen Computern:** Die Einrichtung regelmäßiger automatisierter Sicherungen ist zum Schutz vor Benutzerfehlern unerlässlich. Dies genügt jedoch nicht: Sie müssen außerdem sicherstellen, dass die Sicherungen vor Cyberangriffen geschützt und jederzeit verfügbar sind.
 - **Überwachen von Anwendungen:** Dieses Muster umfasst mehrere Aufgaben, z.B. Einblick in den Integritätsstatus der virtuellen Computer, Verständnis der Interaktionen zwischen den virtuellen Computern und Festlegung von Möglichkeiten zur Überwachung der Anwendungen, die auf den virtuellen Computern ausgeführt werden. Alle diese Aufgaben sind unerlässlich, damit die Anwendungen rund um die Uhr ausgeführt werden.
 - **Schützen und Überwachen des Datenzugriffs:** Organisationen sollten den gesamten Datenzugriff überwachen und erweiterte Machine Learning-Funktionen nutzen, um Abweichungen von regulären Zugriffsmustern zu erkennen.
-- **Durchführen von Failoverübungen:** Für Cloudvorgänge mit geringer Fehlertoleranz muss im Falle eines Vorfalls im Zusammenhang mit der Cybersicherheit oder der Plattform ein Failover und/oder eine Wiederherstellung ausgeführt werden können. Diese Prozeduren sollten nicht einfach nur dokumentiert, sondern vierteljährlich geübt werden.
+- **Durchführen von Failoverübungen:** Für Cloudvorgänge mit geringer Fehlertoleranz muss nach einem Vorfall im Zusammenhang mit der Cybersicherheit oder der Plattform ein Failover oder eine Wiederherstellung ausgeführt werden können. Diese Prozeduren sollten nicht einfach nur dokumentiert, sondern vierteljährlich geübt werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

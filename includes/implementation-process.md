@@ -8,9 +8,9 @@ Die folgenden Entscheidungen stammen von Teams außerhalb des Cloudgovernancetea
 ### <a name="identity-baseline"></a>Identitätsbaseline
 
 Die Identitätsbaseline ist der grundlegende Ausgangspunkt für die gesamte Governance. Bevor Sie versuchen, Governance anzuwenden, muss eine Identität eingerichtet werden. Die eingerichtete Identitätsstrategie wird anschließend durch die Governancelösungen erzwungen.
-In diesem Governanceleitfaden implementiert das Identitätsverwaltungsteam das Muster für die **[Verzeichnissynchronisierung](../../../../decision-guides/identity/index.md#directory-synchronization)** :
+In diesem Governanceleitfaden implementiert das Identitätsverwaltungsteam das Muster für die **[Verzeichnissynchronisierung](~/decision-guides/identity/index.md#directory-synchronization)** :
 
-- RBAC wird von Azure Active Directory (Azure AD) über die Verzeichnissynchronisierung oder dieselbe Anmeldung bereitgestellt, die während der Migration des Unternehmens zu Office 365 implementiert wurde. Einen Implementierungsleitfaden finden Sie unter [Referenzarchitektur für die Azure AD-Integration](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad).
+- RBAC wird von Azure Active Directory (Azure AD) über die Verzeichnissynchronisierung oder die Funktionalität „Dieselbe Anmeldung“ bereitgestellt, die während der Migration des Unternehmens zu Office 365 implementiert wurde. Einen Implementierungsleitfaden finden Sie unter [Referenzarchitektur für die Azure AD-Integration](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad).
 - Der Azure AD-Mandanten steuert außerdem die Authentifizierung und den Zugriff für Ressourcen, die in Azure bereitgestellt werden.
 
 Im Governance-MVP erzwingt das Governanceteam die Anwendung des replizierten Mandanten über Tools für die Abonnementgovernance, die weiter unten in diesem Artikel erläutert werden. In zukünftigen Iterationen kann das Governanceteam auch umfassende Tools in Azure AD durchsetzen, um diese Funktion zu erweitern.
@@ -19,7 +19,7 @@ Im Governance-MVP erzwingt das Governanceteam die Anwendung des replizierten Man
 
 Ein softwaredefiniertes Netzwerk ist ein wichtiger Anfangsaspekt der Sicherheitsbaseline. Die Einrichtung des Governance-MVP hängt von frühen Entscheidungen aus dem Team zur Sicherheitsverwaltung ab, das die sichere Konfiguration von Netzwerken definiert.
 
-Da keine Anforderungen bestehen, geht die IT-Sicherheit auf Nummer sicher und erfordert ein **[Cloud-DMZ](../../../../decision-guides/software-defined-network/cloud-dmz.md)** -Muster. Das bedeutet, dass die Governance der Azure-Bereitstellungen selbst sehr gering sein wird.
+Da keine Anforderungen bestehen, geht die IT-Sicherheit auf Nummer sicher und erfordert ein **[Cloud-DMZ](~/decision-guides/software-defined-network/cloud-dmz.md)** -Muster. Das bedeutet, dass die Governance der Azure-Bereitstellungen selbst sehr gering sein wird.
 
 - Azure-Abonnements können per VPN eine Verbindung mit einem vorhandenen Rechenzentrum herstellen, müssen aber alle vorhandenen lokalen Richtlinien der IT-Governance in Bezug auf die Verbindung einer demilitarisierte Zone mit geschützten Ressourcen befolgen. Eine Implementierungsanleitung in Bezug auf die VPN-Konnektivität finden Sie unter [VPN-Referenzarchitektur](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn).
 - Entscheidungen in Bezug auf das Subnetz, die Firewall und das Routing werden derzeit auf die einzelnen Anwendungs-/Workloadleads verschoben.
@@ -32,14 +32,14 @@ Das Cloudgovernanceteam hat Mitglieder der Netzwerk- und IT-Sicherheitsteams pro
 ### <a name="security-baseline-encryption"></a>Sicherheitsbaseline: Verschlüsselung
 
 Die Verschlüsselung ist eine weitere grundlegende Entscheidung innerhalb der Disziplin „Sicherheitsbaseline“. Da das Unternehmen derzeit noch keine geschützten Daten in der Cloud speichert, hat das Sicherheitsteam sich für ein weniger aggressives Muster für die Verschlüsselung entschieden.
-An dieser Stelle wird ein **[cloudnatives](../../../../decision-guides/encryption/index.md#key-management)** Muster für die Verschlüsselung vorgeschlagen, aber von keinem Entwicklungsteam verlangt.
+An dieser Stelle wird ein **[cloudnatives](~/decision-guides/encryption/index.md#key-management)** Muster für die Verschlüsselung vorgeschlagen, aber von keinem Entwicklungsteam verlangt.
 
 - Im Hinblick auf den Einsatz der Verschlüsselung wurden keine Governanceanforderungen festgelegt, weil die aktuelle Unternehmensrichtlinie keine unternehmenswichtigen oder geschützten Daten in der Cloud zulässt.
 - Vor der Freigabe geschützter Daten oder unternehmenskritischer Workloads sind zusätzliche Analysen erforderlich.
 
 ## <a name="policy-enforcement"></a>Durchsetzung von Richtlinien
 
-Die erste Entscheidung in Bezug auf die Beschleunigung der Bereitstellung ist das Muster für die Erzwingung. In diesem Beispiel hat sich das Governanceteam dafür entschieden, das Muster **[Automatisierte Erzwingung](../../../../decision-guides/policy-enforcement/index.md#automated-enforcement)** zu implementieren.
+Die erste Entscheidung in Bezug auf die Beschleunigung der Bereitstellung ist das Muster für die Erzwingung. In diesem Beispiel hat sich das Governanceteam dafür entschieden, das Muster **[Automatisierte Erzwingung](~/decision-guides/policy-enforcement/index.md#automated-enforcement)** zu implementieren.
 
 - Azure Security Center wird den Teams für Sicherheit und Identität zur Überwachung von Sicherheitsrisiken zur Verfügung gestellt. Außerdem verwenden beide Teams wahrscheinlich Security Center, um neue Risiken zu identifizieren und die Unternehmensrichtlinien zu verbessern.
 - RBAC ist in allen Abonnements erforderlich, um die Durchsetzung der Authentifizierung zu erzwingen.

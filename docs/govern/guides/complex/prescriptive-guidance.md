@@ -1,7 +1,7 @@
 ---
-title: 'Governanceleitfaden für komplexe Unternehmen: Ausführlicher Leitfaden mit Erläuterung'
+title: 'Governanceleitfaden für komplexe Unternehmen: Beschreibung der bewährten Methoden'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: In diesem Artikel wird der ausführliche Leitfaden für Governance in komplexen Unternehmen erläutert.
+description: In diesem Artikel werden die bewährten Methoden für Governance in komplexen Unternehmen erläutert.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -9,14 +9,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9992d4ee6fbd955eea44e13a7f4f31c5836ce83a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 543f4e59645fb389b00508fbd9d6426ded6f41f9
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220654"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547648"
 ---
-# <a name="governance-guide-for-complex-enterprises-prescriptive-guidance-explained"></a>Governanceleitfaden für komplexe Unternehmen: Ausführlicher Leitfaden mit Erläuterung
+# <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>Governanceleitfaden für komplexe Unternehmen: Beschreibung der bewährten Methoden
 
 Der Governanceleitfaden beginnt mit einer Sammlung von anfänglichen [Unternehmensrichtlinien](./initial-corporate-policy.md). Diese Richtlinien werden verwendet, um ein Miminum Viable-Product (MVP, minimal brauchbares Produkt) für die Governance einzurichten, das [bewährte Methoden](./index.md) berücksichtigt.
 
@@ -61,12 +61,12 @@ Die Entscheidung über den Abonnemententwurf bestimmt, wie Azure-Abonnements str
 
 Entscheidungen zur Ressourcenkonsistenz bestimmen die Tools, Prozesse und Aufgaben, die erforderlich sind, um sicherzustellen, dass Azure-Ressourcen innerhalb eines Abonnements konsistent bereitgestellt, konfiguriert und verwaltet werden. Im vorliegenden Beispielfall wurde **[Bereitstellungskonsistenz](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** als primäres Muster für die Ressourcenkonsistenz ausgewählt.
 
-- Ressourcengruppen werden für Anwendungen unter Verwendung des Lebenszyklusansatzes erstellt. Das bedeutet, dass alles, was zusammen erstellt, verwaltet und ausgemustert wird, in einer einzelnen Ressourcengruppe zusammengefasst werden sollte. Weitere Informationen zu Ressourcengruppen finden Sie [hier](../../../decision-guides/resource-consistency/index.md#basic-grouping).
+- Ressourcengruppen werden mit dem Lebenszyklusansatz für Anwendungen erstellt. Alle Elemente, die gemeinsam erstellt, verwaltet und außer Betrieb genommen werden, sollten sich in einer einzigen Ressourcengruppe befinden. Weitere Informationen zu Ressourcengruppen finden Sie [hier](../../../decision-guides/resource-consistency/index.md#basic-grouping).
 - Azure Policy sollte auf alle Abonnements aus der zugehörigen Verwaltungsgruppe angewendet werden.
 - Im Rahmen des Bereitstellungsprozesses sollten Azure Resource Consistency-Vorlagen für die Ressourcengruppe in der Quellcodeverwaltung gespeichert werden.
 - Jede Ressourcengruppe ist basierend auf dem oben beschriebenen Lebenszyklusansatz einer bestimmten Workload oder Anwendung zugeordnet.
 - Azure-Verwaltungsgruppen ermöglichen das Aktualisieren der Governanceentwürfe, wenn sich die Unternehmensrichtlinie weiterentwickelt.
-- Eine umfassende Implementierung von Azure Policy könnte die zeitlichen Verpflichtungen des Teams überschreiten und zu diesem Zeitpunkt möglicherweise keinen großen Mehrwert bieten. Allerdings sollte eine einfache Standardrichtlinie erstellt und auf jede Verwaltungsgruppe angewendet werden, um die geringe Anzahl der aktuellen Richtlinienerklärungen zur Cloud-Governance durchzusetzen. In dieser Richtlinie wird die Implementierung spezifischer Governanceanforderungen definiert. Diese Implementierungen können dann auf alle bereitgestellten Ressourcen angewendet werden.
+- Eine umfassende Implementierung von Azure Policy könnte den Zeitrahmen für das Team überschreiten und bietet zu diesem Zeitpunkt möglicherweise keinen großen Mehrwert. Allerdings sollte eine einfache Standardrichtlinie erstellt und auf jede Verwaltungsgruppe angewendet werden, um die geringe Anzahl der aktuellen Richtlinienerklärungen zur Cloud-Governance durchzusetzen. In dieser Richtlinie wird die Implementierung spezifischer Governanceanforderungen definiert. Diese Implementierungen können dann auf alle bereitgestellten Ressourcen angewendet werden.
 
 >[!IMPORTANT]
 >Wann immer eine Ressource in einer Ressourcengruppe nicht mehr den gleichen Lebenszyklus hat, sollte sie in eine andere Ressourcengruppe verschoben werden. Beispiele hierfür sind allgemeine Datenbanken und Netzwerkkomponenten. Diese unterstützen zwar die Anwendung, die entwickelt wird, dienen aber auch anderen Zwecke und sollten daher in anderen Ressourcengruppen vorhanden sein.

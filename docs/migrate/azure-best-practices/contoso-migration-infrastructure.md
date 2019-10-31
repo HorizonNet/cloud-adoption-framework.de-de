@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 35a7d62236203dd916d99aea8bf67853c86df10a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 93c0bb52159b4573ed796ca3a1aa7cb0ac2d8149
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224154"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72547349"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Bereitstellen einer Migrationsinfrastruktur
 
@@ -102,7 +102,7 @@ Lizenzmobilität durch SA bietet Microsoft-Volumenlizenz-Kunden wie Contoso die 
 
 #### <a name="reserve-instances-for-predictable-workloads"></a>Reservieren von Instanzen für vorhersehbare Workloads
 
-Vorhersehbare Workloads sind solche, die bei laufenden VMs jederzeit verfügbar sein müssen. Beispielsweise Branchenanwendungen wie ein SAP-ERP-System. Andererseits sind unvorhersehbare Workloads solche, die variabel sind, z.B. VMs, die bei hoher Nachfrage aktiviert und bei geringer Nachfrage deaktiviert sind.
+Vorhersehbare Workloads sind solche, die bei laufenden VMs jederzeit verfügbar sein müssen. Dies gilt beispielsweise für Branchenanwendungen wie SAP-ERP-Systeme. Andererseits sind unvorhersehbare Workloads solche, die variabel sind, z.B. VMs, die bei hoher Nachfrage aktiviert und bei geringer Nachfrage deaktiviert sind.
 
 ![Reservierte Instanz](./media/contoso-migration-infrastructure/reserved-instance.png)
 
@@ -780,9 +780,9 @@ Die den ASGs zugeordneten NSGs werden mit geringsten Rechten konfiguriert, um si
 
 **Aktion** | **Name** | **Quelle** | **Ziel** | **Port**
 --- | --- | --- | --- | ---
-ZULASSEN | AllowiInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
-ZULASSEN | AllowWebToApp | APP1-FE | APP1-APP | 80, 443
-ZULASSEN | AllowAppToDB | APP1-APP | APP1-DB | 1433
+Allow | AllowiInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
+Allow | AllowWebToApp | APP1-FE | APP1-APP | 80, 443
+Allow | AllowAppToDB | APP1-APP | APP1-DB | 1433
 Verweigern | DenyAllInbound | Any | Any | Any
 
 ### <a name="encrypt-data"></a>Verschlüsseln von Daten

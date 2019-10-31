@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: ad32490cd732888ca2fc78a39b3f33d88828776b
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: be35763ea3beeec5977073dab8ef98c2e441b537
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378314"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72548791"
 ---
 # <a name="scaling-with-multiple-azure-subscriptions"></a>Skalieren mit mehreren Azure-Abonnements
 
@@ -45,7 +45,7 @@ Auch in anderen Situationen können zusätzliche Abonnements erforderlich sein. 
 
 - Für Abonnements in Regionen mit öffentlicher Cloud und Sovereign Cloud- oder Government Cloud-Regionen gelten unterschiedliche Einschränkungen. Diese werden häufig von unterschiedlichen Datenklassifizierungsebenen zwischen Umgebungen gesteuert.
 
-- Wenn Sie verschiedene Gruppen von Benutzern aus Sicherheits- oder Compliancegründen vollständig isolieren, sind möglicherweise separate Abonnements erforderlich. Nationale Behördenorganisationen müssen z.B. möglicherweise den Zugriff eines Abonnements auf Staatsangehörige beschränken.
+- Wenn Sie verschiedene Gruppen von Benutzern aus Sicherheits- oder Compliancegründen vollständig isolieren, sind möglicherweise separate Abonnements erforderlich. Nationale Behördenorganisationen müssen z. B. möglicherweise den Zugriff eines Abonnements auf Staatsangehörige beschränken.
 
 - Verschiedene Abonnements können unterschiedliche Arten von Angeboten haben, die jeweils über eigene Nutzungsbedingungen und Vorteile verfügen.
 
@@ -67,7 +67,7 @@ Wenn Sie nur über wenige Abonnements verfügen, ist deren unabhängige Verwaltu
 
 Verwaltungsgruppen ermöglichen eine effiziente Verwaltung von Zugriff, Richtlinien und Compliance für die Abonnements einer Organisation. Jede Verwaltungsgruppe ist ein Container für ein oder mehrere Abonnements.
 
-Verwaltungsgruppen werden in einer einzigen Hierarchie angeordnet. Sie definieren diese in Ihrem Azure AD-Mandanten, um sie an der Struktur und den Anforderungen Ihrer Organisation auszurichten. Die oberste Ebene wird als *Stammverwaltungsgruppe* bezeichnet. Sie können bis zu sechs Ebenen von Verwaltungsgruppen in der Hierarchie definieren. Jedes Abonnement gehört nur zu einer einzigen Verwaltungsgruppe.
+Verwaltungsgruppen werden in einer einzigen Hierarchie angeordnet. Sie definieren diese Hierarchie in Ihrem Azure AD-Mandanten, um sie an der Struktur und den Anforderungen Ihrer Organisation auszurichten. Die oberste Ebene wird als *Stammverwaltungsgruppe* bezeichnet. Sie können bis zu sechs Ebenen von Verwaltungsgruppen in der Hierarchie definieren. Jedes Abonnement gehört nur zu einer einzigen Verwaltungsgruppe.
 
 Azure bietet vier Verwaltungsebenen: Verwaltungsgruppen, Abonnements, Ressourcengruppen und Ressourcen. Alle Zugriffsrichtlinien oder anderen Richtlinien, die auf einer bestimmten Hierarchieebene angewendet werden, werden von den darunter liegenden Ebenen geerbt. Ein Ressourcen- oder Abonnementbesitzer kann eine geerbte Richtlinie nicht ändern. Diese Einschränkung trägt zur Verbesserung der Governance bei.
 

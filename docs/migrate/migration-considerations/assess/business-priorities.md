@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 05d9441eb8867ff47ad23ccc44a9b58d8e010499
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: a609dbc1c8779452c5dfc9e4fdf67eb407e6c787
+ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839092"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72549193"
 ---
-# <a name="business-priorities---maintaining-alignment"></a>Geschäftliche Prioritäten – Beibehalten der Ausrichtung
+# <a name="business-priorities-maintaining-alignment"></a>Geschäftliche Prioritäten: Ausrichten auf die Beibehaltung
 
 *Transformation* wird häufig als eine drastische oder spontane Änderung definiert. Auf Boardebene kann die Änderung wie eine erhebliche Transformation erscheinen. Für diejenigen aber, die den Änderungsprozess in einer Organisation schrittweise durchlaufen, ist der Begriff Transformation etwas irreführend. Im Kern wird Transformation besser als eine Reihe sorgfältig ausgeführter Übergänge von einem Zustand in einen anderen beschrieben.
 
