@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ef226d55d6b16c69b35c57734de25efec6abaa00
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 77fe8ba38b2ebf79ddceeb9fe2df940e8e333cc6
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378032"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238840"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Ressourcenbenennung und -markierung
 
@@ -40,7 +40,7 @@ Bei Markierungsschemas mit geschäftlichem Fokus (beispielsweise Buchhaltung, Un
 
 Eine standardisierte Namenskonvention ist der Ausgangspunkt für die Organisation Ihrer in der Cloud gehosteten Ressourcen. Mit einem ordnungsgemäß strukturierten Benennungssystem können Sie Ressourcen sowohl zu Verwaltungs- als auch zu Abrechnungszwecken schnell identifizieren. Wenn in anderen Teilen Ihrer Organisation bereits IT-Namenskonventionen vorhanden sind, wägen Sie ab, ob Sie Ihre Namenskonventionen für die Cloud darauf abstimmen oder separate cloudbasierte Standards einrichten möchten.
 
-Beachten Sie auch, dass unterschiedliche Azure-Ressourcentypen unterschiedliche [Benennungsanforderungen](../../ready/considerations/naming-and-tagging.md) aufweisen. Ihre Namenskonventionen müssen mit diesen Benennungsanforderungen kompatibel sein.
+Beachten Sie auch, dass unterschiedliche Azure-Ressourcentypen unterschiedliche [Benennungsanforderungen](../../ready/azure-best-practices/naming-and-tagging.md) aufweisen. Ihre Namenskonventionen müssen mit diesen Benennungsanforderungen kompatibel sein.
 
 ## <a name="resource-tagging-patterns"></a>Ressourcenmarkierungsmuster
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ea7d9c51ced367734b28fd550ec1caa69ffe1f27
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 1f0db9ecd49973c769d74a5357e56406e3bce3cf
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058682"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239691"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Governanceleitfaden für Standardunternehmen
 
@@ -41,7 +41,7 @@ Jede Anwendung sollte im richtigen Bereich der Verwaltungsgruppen-, Abonnement- 
 
 1. Eine Verwaltungsgruppe für jeden Typ von Umgebung (z. B. Produktion, Entwicklung und Test)
 2. Zwei Abonnements, eins für die Produktionsworkloads und eins für Nichtproduktionsworkloads
-3. [Konsistente Benennung](../../../ready/considerations/naming-and-tagging.md) sollte auf jeder Ebene dieser Gruppierungshierarchie angewendet werden.
+3. [Konsistente Benennung](../../../ready/azure-best-practices/naming-and-tagging.md) sollte auf jeder Ebene dieser Gruppierungshierarchie angewendet werden.
 4. Bei der Ressourcengruppenbereitstellung muss der Lebenszyklus der Inhalte berücksichtigt werden: Alle Inhalte, die gemeinsam entwickelt, verwaltet und ausgemustert werden, gehören zusammen. Weitere Informationen zu bewährten Methoden für Ressourcengruppen finden Sie [hier](../../../decision-guides/resource-consistency/index.md).
 5. Die [Regionswahl](../../../decision-guides/regions/index.md) ist äußerst wichtig und muss berücksichtigt werden, damit sowohl Netzwerk- und Überwachungsfunktionen für Failover-/Failbackvorgänge als auch die [erforderlichen SKUs in den bevorzugten Regionen](https://azure.microsoft.com/global-infrastructure/services) zur Verfügung stehen.
 

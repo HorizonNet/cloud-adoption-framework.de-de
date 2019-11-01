@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a3c824b3f36a3252de0c43ff420096c48eda5fc1
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 775e41b0bc671756f372ed4ce382f1b8c91db6f5
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224242"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239802"
 ---
 # <a name="landing-zone-considerations"></a>Überlegungen zu Landezonen
 
@@ -27,10 +27,10 @@ Diese Abbildung zeigt die wichtigsten Überlegungen bei der Implementierung eine
 
 Landezonen stellen eine Struktur für Hostingoptionen bereit. Die Struktur wird explizit über Governancekontrollen oder organisch durch die Einführung von Diensten innerhalb der Landezone erstellt. Die Informationen in den folgenden Artikeln helfen Ihnen beim Treffen von Entscheidungen, die in die Blaupause oder in andere Automatisierungsskripts zur Erstellung Ihrer Landezone einfließen:
 
-- **[Entscheidungen zum Computeentwurf](./compute-decisions.md)** . Richten Sie Computeoptionen auf den Zweck der Landezone aus, um die operative Komplexität zu minimieren. Diese Entscheidung kann mithilfe von Automatisierungstoolketten wie Azure Policy-Initiativen und Landezonenblaupausen erzwungen werden.
-- **[Entscheidungen zum Speicherentwurf](./storage-guidance.md)** . Wählen Sie die richtige Azure Storage-Lösung für Ihre Workloadanforderungen aus.
-- **[Networking design decisions](./network-decisions.md)** (Entscheidungen im Zusammenhang mit dem Netzwerkentwurf): Wählen Sie die Netzwerkdienste, -tools und -architekturen aus, die die Workload-, Governance- und Konnektivitätsanforderungen Ihrer Organisation unterstützen.
-- **[Entscheidungen zum Datenbankentwurf](./data-decisions.md)** . Hier erfahren Sie, welche Datenbanktechnologie am besten für Ihre Workloadanforderungen geeignet ist.
+- **[Entscheidungen zum Computeentwurf](./compute-options.md)** . Richten Sie Computeoptionen auf den Zweck der Landezone aus, um die operative Komplexität zu minimieren. Diese Entscheidung kann mithilfe von Automatisierungstoolketten wie Azure Policy-Initiativen und Landezonenblaupausen erzwungen werden.
+- **[Entscheidungen zum Speicherentwurf](./storage-options.md)** . Wählen Sie die richtige Azure Storage-Lösung für Ihre Workloadanforderungen aus.
+- **[Networking design decisions](./networking-options.md)** (Entscheidungen im Zusammenhang mit dem Netzwerkentwurf): Wählen Sie die Netzwerkdienste, -tools und -architekturen aus, die die Workload-, Governance- und Konnektivitätsanforderungen Ihrer Organisation unterstützen.
+- **[Entscheidungen zum Datenbankentwurf](./data-options.md)** . Hier erfahren Sie, welche Datenbanktechnologie am besten für Ihre Workloadanforderungen geeignet ist.
 
 ## <a name="azure-fundamentals"></a>Azure-Grundlagen
 
@@ -47,6 +47,6 @@ Die folgenden Artikel unterstützen Sie beim Treffen governancebezogener Entsche
 
 - **Kostenanforderungen**. Abhängig von den Beweggründen für die Cloudeinführung und den betrieblichen Verpflichtungen, die für diese Umgebung bestehen, müssen möglicherweise verschiedene Kostenverwaltungskonfigurationen für die Landezone geändert werden.
 - **Überwachungsentscheidungen**. Abhängig von den betrieblichen Anforderungen für eine Landezone können verschiedene Überwachungstools bereitgestellt werden. Der Artikel zu Überwachungsentscheidungen unterstützt Sie bei der Ermittlung der hierfür am besten geeigneten Tools.
-- **Verwendung der rollenbasierten Zugriffssteuerung**. Die [rollenbasierte Zugriffssteuerung](../azure-best-practices/roles.md) (Role-Based Access Control, RBAC) in Azure ermöglicht eine präzise gruppenbasierte Zugriffsverwaltung für Ressourcen, deren Struktur auf Benutzerrollen basiert.
+- **Verwendung der rollenbasierten Zugriffssteuerung**. Die [rollenbasierte Zugriffssteuerung](../considerations/roles.md) (Role-Based Access Control, RBAC) in Azure ermöglicht eine präzise gruppenbasierte Zugriffsverwaltung für Ressourcen, deren Struktur auf Benutzerrollen basiert.
 - **Richtlinienentscheidungen:** [Azure Blueprints-Beispiele](https://docs.microsoft.com/azure/governance/blueprints/samples) bieten vorgefertigte Complianceblaupausen, die jeweils vordefinierte Richtlinieninitiativen enthalten. Richtlinienentscheidungen dienen zur Ermittlung der am besten geeigneten Blaupause oder Richtlinieninitiative, basierend auf Ihren Anforderungen und Einschränkungen.
-- **[Schaffen von Hybrid Cloud-Konsistenz](../../infrastructure/misc/hybrid-consistency.md):** Erstellen Sie Hybrid Cloud-Lösungen, mit denen Ihre Organisation sowohl von den Vorteilen innovativer Cloudfeatures als auch von vielen praktischen Features der lokalen Verwaltung profitiert.
+- **[Schaffen von Hybrid Cloud-Konsistenz](./hybrid-consistency.md):** Erstellen Sie Hybrid Cloud-Lösungen, mit denen Ihre Organisation sowohl von den Vorteilen innovativer Cloudfeatures als auch von vielen praktischen Features der lokalen Verwaltung profitiert.

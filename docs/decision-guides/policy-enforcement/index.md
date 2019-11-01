@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 5dba9732220d5219b7d58a60ba93aec68792a24f
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 10af3ade249bcc115d5b273b2610c093e48bf9a2
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547862"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238873"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Leitfaden zur Entscheidungsfindung für die Richtlinienerzwingung
 
@@ -57,7 +57,7 @@ In Azure können Konfigurationseinstellungen und Ressourcenerstellungsregeln auf
 
 Wenn Ihre Cloudumgebung wächst und viele Abonnements umfasst, die eine Richtlinienerzwingung erforderlich machen, benötigen Sie eine Erzwingungsstrategie für die gesamte Cloudumgebung, um die Richtlinienkonsistenz zu gewährleisten.
 
-Die Richtlinie muss in Ihrem [Abonnemententwurf](../subscriptions/index.md) berücksichtigt werden, da sie sich auf Ihre Organisationsstruktur bezieht. Zusätzlich zur Berücksichtigung der komplexen Organisation in Ihrem Abonnemententwurf können [Azure-Verwaltungsgruppen](../../ready/considerations/scaling-subscriptions.md#managing-multiple-subscriptions) verwendet werden, um Azure Policy-Regeln in mehreren Abonnements zuzuweisen.
+Die Richtlinie muss in Ihrem [Abonnemententwurf](../subscriptions/index.md) berücksichtigt werden, da sie sich auf Ihre Organisationsstruktur bezieht. Zusätzlich zur Berücksichtigung der komplexen Organisation in Ihrem Abonnemententwurf können [Azure-Verwaltungsgruppen](../../ready/azure-best-practices/scaling-subscriptions.md#managing-multiple-subscriptions) verwendet werden, um Azure Policy-Regeln in mehreren Abonnements zuzuweisen.
 
 ## <a name="automated-enforcement"></a>Automatisierte Erzwingung
 
