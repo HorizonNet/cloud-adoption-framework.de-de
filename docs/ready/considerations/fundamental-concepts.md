@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 02d4cf1218c6b00dd0d42dfb877af49a92498115
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 7b635ea417502a175b7fe308e5faeee1ff8a65a5
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548830"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048403"
 ---
 # <a name="azure-fundamental-concepts"></a>Grundlegende Konzepte in Azure
 
@@ -24,15 +24,15 @@ Lernen Sie grundlegende Konzepte und Begriffe kennen, die in Azure verwendet wer
 Es ist hilfreich, die folgenden Definitionen zu kennen, wenn Sie mit der Einführung der Azure-Cloud beginnen:
 
 - **Ressource:** Eine Entität, die von Azure verwaltet wird. Hierzu gehören beispielsweise virtuelle Azure-Computer, virtuelle Netzwerke und Speicherkonten.
-- **Abonnement**: Ein logischer Container für Ihre Ressourcen. Jede Azure-Ressource ist nur einem Abonnement zugeordnet. Das Erstellen eines Abonnements ist der erste Schritt beim Einstieg in Azure.
+- **Abonnement:** Ein logischer Container für Ihre Ressourcen. Jede Azure-Ressource ist nur einem Abonnement zugeordnet. Das Erstellen eines Abonnements ist der erste Schritt beim Einstieg in Azure.
 - **Azure-Konto:** Die E-Mail-Adresse, die Sie beim Erstellen eines Azure-Abonnements angeben, ist das Azure-Konto für das Abonnement. Die Partei, die dem E-Mail-Konto zugeordnet ist, ist für die monatlichen Kosten zuständig, die durch die Ressourcen im Abonnement anfallen. Wenn Sie ein Azure-Konto erstellen, geben Sie Kontaktinformationen sowie Abrechnungsinformationen wie z.B. eine Kreditkarte an. Sie können für mehrere Abonnements dasselbe Azure-Konto (E-Mail-Adresse) verwenden. Jedes Abonnement ist nur einem Azure-Konto zugeordnet.
-- **Kontoadministrator**: Die Partei, die der E-Mail-Adresse zugeordnet ist, die zum Erstellen eines Azure-Abonnements verwendet wird. Der Kontoadministrator ist für die Begleichung aller Kosten verantwortlich, die durch die Ressourcen des Abonnements verursacht werden.
-- **Azure Active Directory** (Azure AD): Der cloudbasierte Identitäts- und Zugriffsverwaltungsdienst von Microsoft. Azure AD ermöglicht Ihren Mitarbeitern die Anmeldung und den Zugriff auf Ressourcen.
-- **Azure AD-Mandant**: Eine dedizierte und vertrauenswürdige Instanz von Azure AD. Ein Azure AD-Mandant wird automatisch erstellt, wenn sich Ihre Organisation zum ersten Mal für das Abonnement eines Microsoft-Clouddiensts wie Microsoft Azure, Microsoft Intune oder Office 365 registriert. Ein Azure-Mandant stellt eine einzelne Organisation dar.
-- **Azure AD-Verzeichnis**: Jeder Azure AD-Mandant verfügt über ein einzelnes dediziertes und vertrauenswürdiges Verzeichnis. Das Verzeichnis enthält die Benutzer, Gruppen und Apps des Mandanten. Das Verzeichnis wird zum Ausführen von Funktionen zur Identitäts- und Zugriffsverwaltung für Mandantenressourcen verwendet. Einem Verzeichnis können mehrere Abonnements zugeordnet werden, aber jedes Abonnement ist nur einem Verzeichnis zugeordnet.
+- **Kontoadministrator:** Die Partei, die der E-Mail-Adresse zugeordnet ist, die zum Erstellen eines Azure-Abonnements verwendet wird. Der Kontoadministrator ist für die Begleichung aller Kosten verantwortlich, die durch die Ressourcen des Abonnements verursacht werden.
+- **Azure Active Directory (Azure AD):** Der cloudbasierte Identitäts- und Zugriffsverwaltungsdienst von Microsoft. Azure AD ermöglicht Ihren Mitarbeitern die Anmeldung und den Zugriff auf Ressourcen.
+- **Azure AD-Mandant:** Eine dedizierte und vertrauenswürdige Instanz von Azure AD. Ein Azure AD-Mandant wird automatisch erstellt, wenn sich Ihre Organisation zum ersten Mal für das Abonnement eines Microsoft-Clouddiensts wie Microsoft Azure, Microsoft Intune oder Office 365 registriert. Ein Azure-Mandant stellt eine einzelne Organisation dar.
+- **Azure AD-Verzeichnis:** Jeder Azure AD-Mandant verfügt über ein einzelnes dediziertes und vertrauenswürdiges Verzeichnis. Das Verzeichnis enthält die Benutzer, Gruppen und Apps des Mandanten. Das Verzeichnis wird zum Ausführen von Funktionen zur Identitäts- und Zugriffsverwaltung für Mandantenressourcen verwendet. Einem Verzeichnis können mehrere Abonnements zugeordnet werden, aber jedes Abonnement ist nur einem Verzeichnis zugeordnet.
 - **Ressourcengruppen**: Logische Container, in denen verwandte Ressourcen innerhalb eines Abonnements gruppiert werden. Jede Ressource kann nur in einer Ressourcengruppe vorhanden sein.
 - **Verwaltungsgruppen**: Logische Container, die Sie für mindestens ein Abonnement verwenden. Sie können eine Hierarchie mit Verwaltungsgruppen, Abonnements, Ressourcengruppe und Ressourcen definieren, um Zugriff, Richtlinien und Compliance über Vererbung effizient zu verwalten.
-- **Region**: Eine Reihe von Azure-Datencentern, die innerhalb eines durch Latenzzeiten definierten Umkreises bereitgestellt werden. Die Datencenter sind über ein dediziertes, regionales Netzwerk mit geringer Latenz verbunden. Die meisten Azure-Ressourcen werden in einer bestimmten Azure-Region ausgeführt.
+- **Region:** Eine Reihe von Azure-Datencentern, die innerhalb eines durch Latenzzeiten definierten Umkreises bereitgestellt werden. Die Datencenter sind über ein dediziertes, regionales Netzwerk mit geringer Latenz verbunden. Die meisten Azure-Ressourcen werden in einer bestimmten Azure-Region ausgeführt.
 
 ## <a name="azure-subscription-purposes"></a>Zwecke eines Azure Abonnements
 

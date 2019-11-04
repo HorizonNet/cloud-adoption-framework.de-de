@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: d0fff6d3c88d62ed3efc9f4cf2140981e8be331a
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0bfadba7f6cefc5cd597d002c3cb18b0cfcc8c3d
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547213"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058186"
 ---
 # <a name="rehost-an-on-premises-app-to-azure-vms"></a>Rehosten einer lokalen App auf Azure-VMs
 
@@ -283,7 +283,7 @@ Das Sicherheitsteam von Contoso überprüft die Azure-VMs auf eventuell vorhande
 - Zur Steuerung des Zugriffs überprüft das Team die Netzwerksicherheitsgruppen (NSGs) für die virtuellen Computer. Mithilfe von Netzwerksicherheitsgruppen wird sichergestellt, dass nur für die App zulässiger Datenverkehr die App erreichen kann.
 - Das Team zieht darüber hinaus in Erwägung, die Daten mit Azure Disk Encryption und Key Vault zu sichern.
 
-[Erfahren Sie mehr](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) über Sicherheitsverfahren für VMs.
+Weitere Informationen finden Sie unter [Bewährte Sicherheitsmethoden für IaaS-Workloads in Azure](https://docs.microsoft.com/azure/security/fundamentals/iaas).
 
 ## <a name="bcdr"></a>BCDR
 

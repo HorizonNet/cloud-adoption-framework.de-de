@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9988141c1f0133a0a18c11c46e09d7285d988e5e
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3bd26321eca1747e5ed579e4394b0a4b7b713294
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549184"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048215"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Cloudeinführungsplan und Azure DevOps
 
@@ -45,10 +45,10 @@ Um Ihre Arbeitsstation für die Massenbearbeitung vorzubereiten, lesen Sie [Mass
 
 Der Cloudeinführungsplan organisiert die Aktivitäten nach Aktivitätsarten:
 
-- **Epics**: Ein *Epic* repräsentiert eine vollständige Phase des Lebenszyklus der Cloudeinführung.
-- **Features**: Features werden verwendet, um bestimmte Ziele innerhalb einer Phase zu organisieren. Beispielsweise wäre die Migration einer bestimmten Workload ein Feature.
-- **User Storys**: User Storys gruppieren Arbeit in logische Sammlungen von Aktivitäten, die auf einem bestimmten Ziel basieren.
-- **Tasks**: Aufgaben stellen die eigentlich zu erledigenden Arbeiten dar.
+- **Epics:** Ein *Epic* repräsentiert eine vollständige Phase des Lebenszyklus der Cloudeinführung.
+- **Funktionen:** Features werden verwendet, um bestimmte Ziele innerhalb einer Phase zu organisieren. Beispielsweise wäre die Migration einer bestimmten Workload ein Feature.
+- **User Storys:** User Storys gruppieren Arbeit in logische Sammlungen von Aktivitäten, die auf einem bestimmten Ziel basieren.
+- **Aufgaben:** Aufgaben stellen die eigentlich zu erledigenden Arbeiten dar.
 
 Auf jeder Ebene werden die Aktivitäten dann basierend auf den Abhängigkeiten sequenziert. Aktivitäten sind mit Artikeln im Cloud Adoption Framework verknüpft, um das vorliegende Ziel oder die Aufgabe zu verdeutlichen.
 

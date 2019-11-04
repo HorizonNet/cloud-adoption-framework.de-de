@@ -1,5 +1,5 @@
 ---
-title: Leitfaden zur Cloudüberwachung – Sammeln der richtigen Daten
+title: 'Leitfaden zur Cloudüberwachung: Erfassen der richtigen Daten'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Auswahlhilfe: Verwendung von Azure Monitor oder System Center Operations Manager in Microsoft Azure'
 author: MGoedtel
@@ -9,18 +9,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 3d8d6b656f6bfe8072b53dccc05a67479aa36f24
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0328ea8487817b9c8b74bda2200af9353a56e047
+ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548562"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72979834"
 ---
-# <a name="cloud-monitoring-guide-collecting-the-right-data"></a>Leitfaden zur Cloudüberwachung: Sammeln der richtigen Daten
+# <a name="cloud-monitoring-guide-collect-the-right-data"></a>Leitfaden zur Cloudüberwachung: Erfassen der richtigen Daten
 
 Dieser Artikel beschreibt einige Überlegungen zum Sammeln von Überwachungsdaten in einer Cloudanwendung.
 
-Um den Zustand und die Verfügbarkeit Ihrer Cloudlösung zu beobachten, müssen Sie die Überwachungstools so konfigurieren, dass sie unter Verwendung von Metriken eine Menge von Signalen sammeln, die auf vorhersehbaren Fehlerzuständen basieren. Diese Signale sind die Symptome des Fehlers, nicht die Ursache. Die Überwachungstools verwenden Metriken und im Falle einer erweiterten Diagnose und Grundursachenanalyse auch Protokolle.
+Um den Zustand und die Verfügbarkeit Ihrer Cloudlösung zu beobachten, müssen Sie die Überwachungstools so konfigurieren, dass sie unter Verwendung von Metriken eine Menge von Signalen sammeln, die auf vorhersehbaren Fehlerzuständen basieren. Diese Signale sind die Symptome des Fehlers, nicht die Ursache. Die Überwachungstools verwenden Metriken und für erweiterte Diagnose und Grundursachenanalyse auch Protokolle.
 
 Planen Sie die Überwachung und Migration sorgfältig. Starten Sie mit dem Einbeziehen des Besitzers des Überwachungsdiensts, des Verantwortlichen für den Betriebsablauf und anderer beteiligter Personen während der Planungsphase und beteiligen Sie sie am gesamten Entwicklungs- und Freigabezyklus. Im Mittelpunkt steht die Entwicklung einer Überwachungskonfiguration, die auf den folgenden Kriterien basiert:
 
@@ -34,18 +34,18 @@ Ihre Antworten auf diese Fragen bestimmen zusammen mit den Kriterien für die Wa
 
 ## <a name="develop-a-monitoring-configuration"></a>Entwickeln einer Überwachungskonfiguration
 
-Der Besitzer und das Team des Überwachungsdiensts folgen in der Regel einem allgemeinen Satz von Aktivitäten, um eine Überwachungskonfiguration zu entwickeln. Diese Aktivitäten beginnen bei der ersten Planung und reichen über Tests und Validierungen in einer Nichtproduktionsumgebung bis hin zum Einsatz in der Produktionsumgebung. Überwachungskonfigurationen werden aus bekannten Fehlermodi, Testergebnissen simulierter Ausfälle und Erfahrungen mehrerer Personen in dem Unternehmen (Service Desk, Betrieb, Ingenieure und Entwickler) abgeleitet. Bei solchen Konfigurationen wird angenommen, dass der Dienst bereits existiert, in die Cloud migriert und nicht neu aufgebaut wurde.
+Der Besitzer und das Team des Überwachungsdiensts folgen in der Regel einem allgemeinen Satz von Aktivitäten, um eine Überwachungskonfiguration zu entwickeln. Diese Aktivitäten beginnen bei der ersten Planung und reichen über Tests und Validierungen in einer Nichtproduktionsumgebung bis hin zum Einsatz in der Produktionsumgebung. Überwachungskonfigurationen werden aus bekannten Fehlermodi, Testergebnissen simulierter Ausfälle und Erfahrungen mehrerer Personen in dem Unternehmen (Service Desk, Betrieb, Ingenieure und Entwickler) abgeleitet. Solche Konfigurationen gehen davon aus, dass der Dienst bereits vorhanden ist, zur Cloud migriert wird und nicht neu strukturiert wurde.
 
 Überwachen Sie die Integrität und Verfügbarkeit dieser Dienste in einem frühen Stadium des Entwicklungsprozesses, um Ergebnisse in Servicelevelqualität zu erhalten. Wenn Sie den Entwurf dieses Diensts oder dieser Anwendung nachträglich überwachen, werden Ihre Ergebnisse weniger erfolgreich sein.
 
 Um eine schnellere Lösung des Vorfalls zu erreichen, beachten Sie die folgenden Empfehlungen:
 
 - Definieren Sie für jede Dienstkomponente ein Dashboard.
-- Verwenden Sie Metriken, um die weitere Diagnose zu erleichtern, eine Lösung oder einen Workaround für das Problem zu finden, wenn eine Grundursache nicht ermittelt werden kann.
+- Verwenden Sie Metriken, um die weitere Diagnose zu erleichtern, eine Lösung oder eine Problemumgehung für das Problem zu finden, wenn eine Grundursache nicht ermittelt werden kann.
 - Nutzen Sie die Drilldownfunktionen des Dashboards, oder unterstützen Sie das Anpassen der Ansicht, um sie zu verfeinern.
-- Wenn ausführliche Protokolle erforderlich sind, sollten Metriken das Präzisieren der Suchkriterien unterstützen. Wenn dies nicht der Fall ist, verbessern Sie Ihre Metriken für den nächsten Vorfall.
+- Wenn ausführliche Protokolle erforderlich sind, sollten Metriken das Präzisieren der Suchkriterien unterstützen. Wenn die Metriken nicht hilfreich waren, sollten Sie diese für den nächsten Incident verbessern.
 
-Die Übernahme dieses Prinzipienleitfadens verhilft Ihnen zu Einblicken nahezu in Echtzeit und einem besseren Dienstmanagement.
+Die Übernahme dieses Prinzipienleitfadens kann Ihnen zu Einblicken nahezu in Echtzeit und einem besseren Dienstmanagement verhelfen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -9,20 +9,20 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a6ee53355313a0f0c277d7b1c69e77494cdf8e1c
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 4f024a95afcb993bd0fe314737ee4d2f97daffb0
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058718"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238789"
 ---
 # <a name="subscription-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Abonnements
 
-Ein effektiver Abonnemententwurf hilft Organisationen in der Cloudeinführungsphase dabei, eine Struktur für die Organisationsressourcen in Azure einzurichten.
+Ein effektiver Abonnemententwurf hilft Organisationen in der Cloudeinführungsphase dabei, eine Struktur für die Ressourcenorganisation in Azure einzurichten.
 
 Jede Ressource in Azure (etwa ein virtueller Computer oder eine Datenbank) wird einem Abonnement zugeordnet. Die Einführung von Azure beginnt mit der Erstellung eines Azure-Abonnements, der Zuordnung dieses Abonnements zu einem Konto und der anschließenden Bereitstellung von Ressourcen für das Abonnement. Eine Übersicht über diese Konzepte finden Sie unter [Azure fundamental concepts](../../ready/considerations/fundamental-concepts.md) (Grundlegende Konzepte in Azure).
 
-Mit zunehmendem Umfang Ihrer digitalen Ressourcen in Azure müssen nach und nach wahrscheinlich weitere Abonnements erstellt werden, um Ihren Bedarf zu decken. In Azure können Sie eine Verwaltungsgruppenhierarchie definieren, um Ihre Abonnements zu strukturieren und mühelos die passende Richtlinie auf die gewünschten Ressourcen anzuwenden. Weitere Informationen finden Sie unter [Scaling with multiple Azure subscriptions](../../ready/considerations/scaling-subscriptions.md) (Skalieren mit mehreren Azure-Abonnements).
+Mit zunehmendem Umfang Ihrer digitalen Ressourcen in Azure müssen nach und nach wahrscheinlich weitere Abonnements erstellt werden, um Ihren Bedarf zu decken. In Azure können Sie eine Verwaltungsgruppenhierarchie definieren, um Ihre Abonnements zu strukturieren und mühelos die passende Richtlinie auf die gewünschten Ressourcen anzuwenden. Weitere Informationen finden Sie unter [Scaling with multiple Azure subscriptions](../../ready/azure-best-practices/scaling-subscriptions.md) (Skalieren mit mehreren Azure-Abonnements).
 
 Im Anschluss folgen einige einfache Beispiele für die Trennung verschiedener Workloads mithilfe von Verwaltungsgruppen:
 

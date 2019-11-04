@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8449878d46c939c58f690e585aac07fa0e827484
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 18fce98055f72e43ea7ecc2565ab859845cea356
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548047"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058826"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -52,7 +52,7 @@ Die **Service Trust Platform (STP)** enthält ausführliche Informationen und To
 
 ## <a name="unique-intelligent-insights"></a>Spezifische Intelligent Insights
 
-Mit zunehmendem Maße des Volumens und der Komplexität von Sicherheitssignalen dauert es viel zu lange, festzustellen, ob es sich bei den Signalen um glaubwürdige Bedrohungen handelt. Microsoft bietet eine beispiellose Bandbreite der Security Intelligence auf Cloudebene, sodass Sie Bedrohungen schnell erkennen und beheben können. [Weitere Informationen](https://docs.microsoft.com/azure/security-center/security-center-intro)
+Mit zunehmendem Maße des Volumens und der Komplexität von Sicherheitssignalen dauert es viel zu lange, festzustellen, ob es sich bei den Signalen um glaubwürdige Bedrohungen handelt. Microsoft bietet eine beispiellose Bandbreite der Security Intelligence auf Cloudebene, sodass Sie Bedrohungen schnell erkennen und beheben können. Weitere Informationen finden Sie unter [Übersicht über Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro).
 
 ## <a name="azure-threat-intelligence"></a>Azure Threat Intelligence
 

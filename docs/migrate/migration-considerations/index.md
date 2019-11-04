@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 15c4be90354e30333384023e67090ef6103464e2
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8087c67d07a17475e49d70a2b70b78d8af20460a
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548468"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240278"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>Cloud Adoption Framework-Migrationsmodell
 
@@ -34,7 +34,7 @@ Es ist wichtig, eine grobe Vorstellung von Ihrem Endzustand zu erhalten, bevor S
 
 ![Infografik zu den Migrationsoptionen](../../_images/migrate/migration-options.png)
 
-Die Migration und Modernisierung von Workloads reicht von einfachen *Zuweisen eines neuen Hosts*-Migrationen („Lift & Shift“) mithilfe von IaaS-Funktionen (Infrastruktur-as-a-Service), die keine Code- und Anwendungsänderungen erfordern, über *Refactoring*-Migrationen mit minimalen Änderungen bis hin zu *Überarbeiten*-Migrationen zum Ändern und Erweitern von Code- und Anwendungsfunktionen, um die Vorteile von Cloudtechnologien zu nutzen.
+Die Migration und Modernisierung von Workloads reichen von einfachen Migrationen vom Typ _Zuweisen eines neuen Hosts_ (auch als _Lift & Shift_ bezeichnet) mithilfe von IaaS-Funktionen (Infrastruktur-as-a-Service), die keine Code- und App-Änderungen erfordern, über _Refactoring_-Migrationen mit minimalen Änderungen bis hin zu _Überarbeiten_-Migrationen zum Ändern und Erweitern von Code- und App-Funktionen, um die Vorteile von Cloudtechnologien zu nutzen.
 
 Cloudnative Strategien und PaaS-Strategien (Platform-as-a-Service) *erstellen* lokale Workloads mithilfe von Azure-Plattformangeboten und verwalteten Diensten neu. Workloads, die über gleichwertige, vollständig verwaltete cloudbasierte SaaS-Angebote (Software-as-a-Service) verfügen, können oft vollständig durch diese Dienste im Rahmen des Migrationsprozesses *ersetzt* werden.
 

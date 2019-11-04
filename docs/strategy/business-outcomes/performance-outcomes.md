@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: a4f8c76abb36d0b3f410ed4d2027f9307d6c1f0c
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: d772f7c8a2e7c76770a6496bb85acbac54debfe4
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548674"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048345"
 ---
 # <a name="examples-of-performance-outcomes"></a>Beispiele für Leistungsergebnisse
 
@@ -29,7 +29,7 @@ Transformieren Sie Ihr Business, und senken Sie die Kosten – mit einer energie
 
 - **Beispiel 1:** Ein Dienstleistungsunternehmen arbeitete mit einem Hostinganbieter, der mehrere Ressourcen für die Infrastruktur des Unternehmens hostete. Diese Systeme fielen häufig aus und hatten eine schlechte Leistung. Das Unternehmen migrierte seine Ressourcen zu Azure, um die SLA und Steuermöglichkeiten bei der Leistung der Cloud zu nutzen. Die aufgetretenen Ausfallzeiten kosteten das Unternehmen etwa 15.000 USD pro Minute. Bei vier bis acht Stunden Ausfallzeit pro Monat konnte diese Transformation der Organisation einfach gerechtfertigt werden.
 
-- **Beispiel 2:** Ein Investmentunternehmen für Endverbraucher befand sich in einer frühen Phase der Entwicklung einer cloudfähigen Anwendung. Agile-Prozesse und DevOps entwickelten sich gut, aber die Anwendungsleistung unterlag zu großen Schwankungen. Da diese Transformation etwas umfangreicher war, startete das Unternehmen ein Programm zur Überwachung und automatisierten Größenanpassung basierend auf der Nachfrage. So konnte das Unternehmen mithilfe der Azure-Tools zur Leistungsüberwachung Probleme bei der Größenanpassung beheben und damit einen erstaunlichen Zuwachs von 5 Prozent bei den Transaktionen erzielen.
+- **Beispiel 2:** Ein Investmentunternehmen für Endverbraucher befand sich in einer frühen Phase der Entwicklung einer cloudfähigen Anwendung. Agile-Prozesse und DevOps entwickelten sich gut, aber die Anwendungsleistung unterlag zu großen Schwankungen. Da diese Transformation etwas umfangreicher war, startete das Unternehmen ein Programm zur Überwachung und automatisierten Größenanpassung basierend auf der Nachfrage. So konnte das Unternehmen mithilfe der Azure-Tools zur Leistungsüberwachung Probleme bei der Größenanpassung beheben und damit einen erstaunlichen Zuwachs von 5 Prozent bei den Transaktionen erzielen.
 
 ## <a name="reliability"></a>Zuverlässigkeit
 
@@ -41,7 +41,7 @@ Azure Backup ist eine einfache Lösung, mit der Sie Ihre Infrastrukturkosten sen
 
 Azure Site Recovery vereinfacht das Testen der Notfallwiederherstellung, indem Sie Anwendungen zwischen Azure-Regionen replizieren. Sie können auch lokale VMware- und Hyper-V-VMs und physische Server in Azure replizieren, damit diese verfügbar bleiben, wenn der primäre Standort ausfällt. Und Sie können Workloads am primären Standort wiederherstellen, wenn dieser wieder betriebsbereit ist.
 
-- **Beispiel**: Ein Unternehmen der Öl- und Gasindustrie verwendet Azure-Technologien, um eine vollständige Sitewiederherstellung zu implementieren. Das Unternehmen entschied sich gegen einen vollständige Cloudumstieg für die tägliche Arbeit, aber die BCDR-Funktionen (Business Continuity & Disaster Recovery) in der Cloud dienen weiterhin dem Schutz des eigenen Rechenzentrums. Als sich Hunderte Meilen entfernt ein Orkan bildete, begann der Implementierungspartner mit einer Wiederherstellung des Standorts in Azure. Bevor der Sturm das Unternehmen überhaupt erreichen konnte, wurden schon alle geschäftskritischen Ressourcen in Azure ausgeführt, sodass es zu keinerlei Ausfallzeit kam.
+- **Beispiel:** Ein Unternehmen der Öl- und Gasindustrie verwendet Azure-Technologien, um eine vollständige Sitewiederherstellung zu implementieren. Das Unternehmen entschied sich gegen einen vollständige Cloudumstieg für die tägliche Arbeit, aber die BCDR-Funktionen (Business Continuity & Disaster Recovery) in der Cloud dienen weiterhin dem Schutz des eigenen Rechenzentrums. Als sich Hunderte Meilen entfernt ein Orkan bildete, begann der Implementierungspartner mit einer Wiederherstellung des Standorts in Azure. Bevor der Sturm das Unternehmen überhaupt erreichen konnte, wurden schon alle geschäftskritischen Ressourcen in Azure ausgeführt, sodass es zu keinerlei Ausfallzeit kam.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

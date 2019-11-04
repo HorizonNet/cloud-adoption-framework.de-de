@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 93c0bb52159b4573ed796ca3a1aa7cb0ac2d8149
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 13a3a8a8734ffe67298d09544882c612916b995f
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547349"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058913"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Bereitstellen einer Migrationsinfrastruktur
 
@@ -325,7 +325,7 @@ Nach der Erstellung des Regionskonzepts kann sich Contoso der Netzwerkstrategie 
 
 ### <a name="plan-hybrid-network-connectivity"></a>Planen der Hybridnetzwerk-Konnektivität
 
-Contoso hat eine [Reihe von Architekturen](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking) für das Hybridnetzwerk zwischen Azure und dem lokalen Datencenter in Erwägung gezogen. [Weitere Informationen](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/considerations) über das Vergleichen von Optionen.
+Contoso hat eine [Reihe von Architekturen](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking) für das Hybridnetzwerk zwischen Azure und dem lokalen Datencenter in Erwägung gezogen. Weitere Informationen finden Sie unter [Auswählen einer Lösung zum Herstellen einer Verbindung zwischen einem lokalen Netzwerk und Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/considerations).
 
 Zur Erinnerung: Die lokale Netzwerkinfrastruktur von Contoso besteht derzeit aus dem Datencenter in New York und lokalen Niederlassungen im östlichen Teil der USA. Alle Standorte verfügen über eine Business-Class-Verbindung zum Internet. Jede dieser Niederlassungen ist mit dem Rechenzentrum durch einen IPsec-VPN-Tunnel durch das Internet verbunden.
 
@@ -638,7 +638,7 @@ Active Directory ist ein kritischer Dienst im Netzwerk und muss ordnungsgemäß 
 
 ## <a name="step-5-plan-for-governance"></a>Schritt 5: Planen der Governance
 
-Azure stellt übergreifend in den Diensten und auf der Azure-Plattform eine Reihe von Governance-Steuerelementen zur Verfügung. [Weitere Informationen](https://docs.microsoft.com/azure/security/governance-in-azure) zu den grundlegenden Optionen.
+Azure stellt übergreifend in den Diensten und auf der Azure-Plattform eine Reihe von Governance-Steuerelementen zur Verfügung. Weitere Informationen finden Sie in den [Azure-Governanceoptionen](https://docs.microsoft.com/azure/security/governance-in-azure).
 
 Bei der Konfiguration von Identität und Zugriffssteuerung hat Contoso bereits mit der Implementierung einiger Governance- und Sicherheitsaspekte begonnen. Allgemein gibt es drei Bereiche, die berücksichtigt werden müssen:
 

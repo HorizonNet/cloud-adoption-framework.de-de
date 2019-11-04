@@ -8,17 +8,17 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 2e605766e06b106fab61576e64bd5059569c8b38
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: dcf717841e7ac42e0957ce540fc974c84d112a79
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548766"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058183"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure-Unternehmensgerüst: Präskriptive Abonnementgovernance
 
 > [!NOTE]
-> Azure-Unternehmensgerüste wurden in das Microsoft Cloud Adoption Framework integriert. Der Inhalt dieses Artikels wird jetzt im Abschnitt zur [Bereitschaft](../ready/index.md) des neuen Frameworks dargestellt. Dieser Artikel wird Anfang 2020 zurückgezogen. Informationen zur Verwendung des neuen Prozesses finden Sie unter [Übersicht zur Bereitschaft](../ready/index.md), [Erstellen Ihrer ersten Landezone](../ready/azure-setup-guide/migration-landing-zone.md) und/oder [Überlegungen zur Landezone](../ready/considerations/index.md).
+> Azure-Unternehmensgerüste wurden in das Microsoft Cloud Adoption Framework integriert. Der Inhalt dieses Artikels wird jetzt im Abschnitt zur [Bereitschaft](../ready/index.md) des neuen Frameworks dargestellt. Dieser Artikel wird Anfang 2020 zurückgezogen. Informationen zur Verwendung des neuen Prozesses finden Sie unter [Übersicht zur Bereitschaft](../ready/index.md), [Erstellen Ihrer ersten Landezone](../ready/azure-setup-guide/migration-landing-zone.md) und [Überlegungen zur Landezone](../ready/considerations/index.md).
 
 Immer mehr Unternehmen führen für Mobilität und Flexibilität eine öffentliche Cloud ein. Sie setzen auf die Stärken der Cloud, um Umsatz zu generieren und die Ressourcennutzung im Unternehmen zu optimieren. Microsoft Azure bietet eine Vielzahl von Diensten und Funktionen, die Unternehmen wie Bausteine zusammenstellen können, um ein umfangreiches Spektrum an Workloads und Anwendungen zu berücksichtigen.
 

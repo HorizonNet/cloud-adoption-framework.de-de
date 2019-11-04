@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 3fb87179de2dac492b506f8aba610cc52d69a751
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 6e1743fbac07c27bfafdf679ff7aae056545b6eb
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548704"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048071"
 ---
 # <a name="examples-of-agility-outcomes"></a>Beispiele für Agilitätsergebnisse 
 
@@ -35,7 +35,7 @@ Bei allen Bemühungen zu cloudfähigen Innovationen ist die Zeit bis zur Marktei
 
 - **Beispiel 1:** Die europäische Abteilung einer in den USA ansässigen Firma muss zur Einhaltung der DSGVO-Vorschriften die Kundendaten in einer Datenbank für die eigenen Geschäfte in Großbritannien schützen. Die vorhandene Version von SQL unterstützt die erforderliche Sicherheit auf Zeilenebene nicht. Ein direktes Upgrade würde zu viele Unterbrechungen bedeuten. Durch die Verwendung von Azure SQL für Replikation und Upgrade der Datenbank implementiert der Kunde die erforderlichen Compliancemaßnahmen innerhalb weniger Wochen.
 
-- **Beispiel 2:** Ein Logistikunternehmen hat ein bisher nicht bedientes Marktsegment gefunden, benötigt aber eine neue Version der eigenen Flagship-Anwendung, um in dieses vorzudringen. Ein größerer Mitbewerber hat dies ebenfalls erkannt. Durch eine cloudfähige Anwendungsinnovation begeistert das Unternehmen die Kunden und ist durch einen DevOps-Entwicklungsansatz in der Lage, den langsameren und älteren Konkurrenten um _x_ Monate zu schlagen. Dieser Sprung beim Markteinstieg sichert den Kundenstamm.
+- **Beispiel 2:** Ein Logistikunternehmen hat ein bisher nicht bedientes Marktsegment gefunden, benötigt aber eine neue Version der eigenen Flagship-Anwendung, um in dieses vorzudringen. Ein größerer Mitbewerber hat dies ebenfalls erkannt. Durch eine cloudfähige Anwendungsinnovation begeistert das Unternehmen die Kunden und ist durch einen DevOps-Entwicklungsansatz in der Lage, den langsameren und älteren Konkurrenten um _x_ Monate zu schlagen. Dieser Sprung beim Markteinstieg sichert den Kundenstamm.
 
 **Aurora Health Care**: Das Gesundheitssystem transformiert Onlinedienste in ein freundliches digitales Erlebnis. Zum Transformieren der eigenen digitalen Dienste migriert Aurora Health Care seine Websites zur Microsoft Azure-Plattform und setzt auf eine Strategie fortlaufender Innovationen.
 
@@ -48,7 +48,7 @@ Bei allen Bemühungen zu cloudfähigen Innovationen ist die Zeit bis zur Marktei
 
 Wenn Geschäfte neue IT-Dienste oder eine Skalierung vorhandener Dienste erfordern, kann die Beschaffung und Bereitstellung neuer Hardware oder virtueller Ressourcen Wochen dauern. Nach der Migration zur Cloud kann die IT-Abteilung problemlos Self-Service-Bereitstellung ermöglichen, mit denen das Unternehmen Skalierungen innerhalb von Stunden durchführen kann.
 
-- **Beispiel**: Ein Unternehmen für Verbrauchsgüter muss pro Jahr Hunderte von Datenbankclustern erstellen und entfernen, um die betrieblichen Anforderungen des Unternehmens zu erfüllen. Die lokalen virtuellen Hosts können zwar schnell bereitgestellt werden, aber die Wiederherstellung virtueller Ressourcen ist langsam und damit sehr zeitaufwendig für das Team. Daher ist die lokale Umgebung viel zu groß und kann nur selten mit dem Bedarf Schritt halten. Nach der Migration zur Cloud kann die IT-Abteilung viel einfacher eine skriptgesteuerte Self-Service-Bereitstellung von Ressourcen ermöglichen und dabei für die Abrechnung einen Ansatz mit verbrauchsbasierter Kostenzuteilung nutzen. Zusammen kann das Unternehmen Änderungen damit so schnell wie nötig umsetzen und trotzdem die Kosten für die benötigten Ressourcen in einem verantwortungsvollen Rahmen halten. Mit der Umsetzung in der Cloud werden die Bereitstellungen lediglich durch das Unternehmensbudget beschränkt.
+- **Beispiel:** Ein Unternehmen für Verbrauchsgüter muss pro Jahr Hunderte von Datenbankclustern erstellen und entfernen, um die betrieblichen Anforderungen des Unternehmens zu erfüllen. Die lokalen virtuellen Hosts können zwar schnell bereitgestellt werden, aber die Wiederherstellung virtueller Ressourcen ist langsam und damit sehr zeitaufwendig für das Team. Daher ist die lokale Umgebung viel zu groß und kann nur selten mit dem Bedarf Schritt halten. Nach der Migration zur Cloud kann die IT-Abteilung viel einfacher eine skriptgesteuerte Self-Service-Bereitstellung von Ressourcen ermöglichen und dabei für die Abrechnung einen Ansatz mit verbrauchsbasierter Kostenzuteilung nutzen. Zusammen kann das Unternehmen Änderungen damit so schnell wie nötig umsetzen und trotzdem die Kosten für die benötigten Ressourcen in einem verantwortungsvollen Rahmen halten. Mit der Umsetzung in der Cloud werden die Bereitstellungen lediglich durch das Unternehmensbudget beschränkt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

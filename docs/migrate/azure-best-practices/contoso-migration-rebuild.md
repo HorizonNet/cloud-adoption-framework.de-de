@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 258b5a656293001228aab51dd1319fe6a89780a9
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: bd9042fcd0b7ae6d18a5cc522a4006b7f8bfdbc6
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548224"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058570"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Neuerstellen einer lokalen App in Azure
 
@@ -132,7 +132,7 @@ Contoso geht bei der Ausführung der Migration wie folgt vor:
 Contoso-Administratoren führen ein Bereitstellungsskript zum Erstellen des Managed Kubernetes-Clusters mit AKS und Azure Container Registry (ACR) aus.
 
 - In den Anweisungen für diesen Abschnitt wird das Repository **SmartHotel360-Azure-backend** verwendet.
-- Das GitHub-Repository **SmartHotel360-Azure-backend** enthält die gesamte Software für diesen Teil der Bereitstellung.
+- Das GitHub-Repository **SmartHotel360-Azure-backend** enthält die gesamte Software für diesen Teil der Bereitstellung.  
 
 ### <a name="prerequisites"></a>Voraussetzungen
 
@@ -152,7 +152,7 @@ Die Contoso-Administratoren führen die Bereitstellung wie folgt durch:
     ![AKS](./media/contoso-migration-rebuild/aks3.png)
 5. In dem in PowerShell integrierten Terminal meldet Contoso sich bei Azure mit dem Befehl „Connect-AzureRmAccount“ an. Weitere Informationen zu den ersten Schritten mit PowerShell finden Sie [hier](https://docs.microsoft.com/powershell/azure/get-started-azureps).
     ![AKS](./media/contoso-migration-rebuild/aks4.png)
-6. Contoso authentifiziert die Azure CLI, indem es den Befehl **az login** ausführt und die Anweisungen für die Authentifizierung mithilfe eines Webbrowsers befolgt. Weitere Informationen zur Anmeldung bei der Azure CLI finden Sie [hier](/cli/azure/authenticate-azure-cli?view=azure-cli-latest).
+6. Contoso authentifiziert die Azure CLI, indem der Befehl `az login` ausgeführt wird und die Anweisungen für die Authentifizierung mithilfe eines Webbrowsers befolgt werden. Weitere Informationen zur Anmeldung bei der Azure CLI finden Sie [hier](/cli/azure/authenticate-azure-cli?view=azure-cli-latest).
     ![AKS](./media/contoso-migration-rebuild/aks5.png)
 7. Contoso führt den folgenden Befehl aus, übergibt den Ressourcengruppennamen von ContosoRG, den Namen des AKS-Clusters „smarthotel-aks-eus2“ und den Namen der neuen Registrierung.
 
@@ -178,7 +178,9 @@ Die Contoso-Administratoren führen die Bereitstellung wie folgt durch:
 
 11. Contoso führt den folgenden Befehl zum Starten des Kubernetes-Dashboards aus:
 
-    **az aks browse --resource-group ContosoRG --name smarthotelakseus2**
+    ```console
+    az aks browse --resource-group ContosoRG --name smarthotelakseus2
+    ```
 
 12. Eine Browserregisterkarte wird auf dem Dashboard geöffnet. Hierbei handelt es sich um eine getunnelte Verbindung, die auf die Azure CLI zurückgreift.
 
@@ -278,7 +280,7 @@ Contoso-Administratoren gehen nun wie folgt vor:
 - Sie stellen die Microservices für den AKS-Cluster bereit.
 - In einem ersten Schritt aktualisieren sie die Verbindungszeichenfolgen zu den Microservices mithilfe von Azure DevOps. Sie konfigurieren eine neue Azure DevOps-Releasepipeline, um die Microservices bereitzustellen.
 - In den Anweisungen in diesem Abschnitt wird das Repository [SmartHotel360-Azure-Backend](https://github.com/Microsoft/SmartHotel360-Azure-backend) verwendet.
-- Beachten Sie, dass einige der Konfigurationseinstellungen (z.B. Active Directory B2C) in diesem Artikel nicht behandelt werden. Weitere Informationen zu diesen Einstellungen finden Sie im Repository.
+- Einige der Konfigurationseinstellungen (z.B. Active Directory B2C) werden nicht in diesem Artikel behandelt. Weitere Informationen zu diesen Einstellungen finden Sie im Repository weiter oben.
 
 Sie erstellen die Pipeline:
 

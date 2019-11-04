@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 221259ce6550f42aad6e8dbb0a1dd2144bbdb6b4
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 9f9ad2db240ad9453a8e337bdbc23f0122ebb9c5
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048524"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239993"
 ---
 ::: zone target="docs"
 
@@ -42,7 +42,7 @@ Bevor Sie Ressourcen zu Azure migrieren, müssen Sie die Migrationsmethode und d
 
 Dieser Leitfaden führt Sie durch die Grundlagen der Migration von Anwendungen und Ressourcen aus Ihrer lokalen Umgebung zu Azure. Es ist für Migrationsszenarien mit minimaler Komplexität konzipiert. Ermitteln Sie die Eignung dieses Leitfadens für Ihre Migration über die Registerkarte **Verwendung dieses Leitfadens**.
 
-Wenn Sie zu Azure migrieren, können Sie Ihre Anwendungen wie gewohnt mit IaaS-basierten VM-Lösungen migrieren (als „Zuweisen eines neuen Hosts“- oder „Lift-and-Shift“-Migration bezeichnet), oder Sie verfügen über die Flexibilität, verwaltete Dienste und andere cloudnative Features zur Modernisierung Ihrer Anwendungen zu nutzen. Weitere Informationen zu diesen Optionen finden Sie auf der Registerkarte mit den **Migrationsoptionen**. Bei der Entwicklung Ihrer Migrationsstrategie sollten Sie Folgendes berücksichtigen:
+Bei der Migration zu Azure können Sie Ihre Anwendungen ohne Änderungen mit IaaS-basierten VM-Lösungen migrieren (als Migration vom Typ _Zuweisen eines neuen Hosts_ oder _Lift & Shift_ bezeichnet), oder Sie verfügen über die Flexibilität, verwaltete Dienste und andere cloudnative Features zur Modernisierung Ihrer Anwendungen zu nutzen. Weitere Informationen zu diesen Optionen finden Sie auf der Registerkarte mit den **Migrationsoptionen**. Bei der Entwicklung Ihrer Migrationsstrategie sollten Sie Folgendes berücksichtigen:
 
 - Funktionieren meine migrierenden Anwendungen in der Cloud?
 - Welche ist die beste Strategie (in Bezug auf Technologie, Tools und Migrationen) für meine Anwendung? Weitere Informationen finden Sie im [Entscheidungsleitfaden zur Wahl der Migrationstools](../../decision-guides/migrate-decision-guide/index.md) für das Microsoft Cloud Adoption Framework.

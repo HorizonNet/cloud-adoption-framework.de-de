@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 0b743ffbace5c2b246df6f03d7e5b23570277dd0
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: aa7ce8c882521e9a346e3f00da8c664af7585423
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548142"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058222"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms"></a>Zuweisen eines neuen Hosts für eine lokale Linux-App zu Azure-VMs
 
@@ -292,7 +292,7 @@ Das Sicherheitsteam von Contoso überprüft die VMs OSTICKETWEB und OSTICKETMYSQ
 - Das Team überprüft die Netzwerksicherheitsgruppen (NSGs) für die virtuellen Computer zur Steuerung des Zugriffs. Mithilfe von NSGs wird sichergestellt, dass nur für die App zulässiger Datenverkehr übergeben werden kann.
 - Das Team zieht darüber hinaus in Betracht, die Daten über Datenträgerverschlüsselung und Azure KeyVault auf den Datenträgern des virtuellen Computers zu sichern.
 
-[Erfahren Sie mehr](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) über Sicherheitsverfahren für VMs.
+Weitere Informationen finden Sie unter [Bewährte Sicherheitsmethoden für IaaS-Workloads in Azure](https://docs.microsoft.com/azure/security/fundamentals/iaas).
 
 ### <a name="bcdr"></a>BCDR
 

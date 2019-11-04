@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3e39452782f1966e0efe2742264d26a60062d78b
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: c623d7c537d19f700fed4d28523f60c4fd03d4ea
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547327"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058629"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>Zuweisen eines neuen Hosts für eine lokale Linux-App zu Azure-VMs und Azure Database for MySQL
 
@@ -446,7 +446,7 @@ Das Sicherheitsteam von Contoso überprüft die VM und die Datenbank, um möglic
 - Das Sicherheitsteam zieht darüber hinaus in Erwägung, die Daten auf den VM-Datenträgern über Datenträgerverschlüsselung und Azure Key Vault zu sichern.
 - Die Kommunikation zwischen der VM und der Datenbankinstanz ist nicht für SSL konfiguriert. Das Team muss dies tun, um sicherzustellen, dass der Datenbankverkehr nicht gehackt werden kann.
 
-[Erfahren Sie mehr](https://docs.microsoft.com/azure/security/azure-security-best-practices-vms) über Sicherheitsverfahren für VMs.
+Weitere Informationen finden Sie unter [Bewährte Sicherheitsmethoden für IaaS-Workloads in Azure](https://docs.microsoft.com/azure/security/fundamentals/iaas).
 
 ### <a name="bcdr"></a>BCDR
 

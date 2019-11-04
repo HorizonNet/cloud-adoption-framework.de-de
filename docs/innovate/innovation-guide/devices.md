@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: f38c207c89cbe4d37958292c552165f39e2bd383
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 8f7882a28dc135763584c8f2af4f5d834160f3ba
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769286"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73047569"
 ---
 ::: zone target="docs"
 
@@ -49,7 +49,9 @@ Azure-Kunden verwenden eine ständig wachsende Anzahl von vernetzten Systemen un
 
 <!-- markdownlint-enable MD025 -->
 
-Entwerfen Sie Lösungen, die eine bidirektionale Kommunikation mit IoT-Geräten im Milliardenbereich ermöglichen. Verwenden Sie integrierte Gerät-zu-Cloud-Telemetriedaten, um den Zustand Ihrer Geräte zu verstehen und Nachrichtenrouten an andere Azure-Dienste durch einfache Konfiguration zu definieren. Senden Sie mittels Nachrichten, die von der Cloud an die Geräte gesendet werden, auf zuverlässige Weise Befehle und Benachrichtigungen an Ihre verbundenen Geräte, und verfolgen Sie die Nachrichtenübermittlung mithilfe von Empfangsbestätigungen. Lassen Sie das Senden von Gerätemeldungen bei Bedarf automatisch wiederholen, um zeitweilige Konnektivitätsprobleme zu überbrücken.
+Entwerfen Sie Lösungen, die eine bidirektionale Kommunikation mit IoT-Geräten im Milliardenbereich ermöglichen. Verwenden Sie integrierte Gerät-zu-Cloud-Telemetriedaten, um den Zustand Ihrer Geräte zu verstehen und Nachrichtenrouten an andere Azure-Dienste durch einfache Konfiguration zu definieren. Durch Nutzen von Nachrichten, die von der Cloud an Geräte gesendet werden, können Sie auf zuverlässige Weise Befehle und Benachrichtigungen an Ihre verbundenen Geräte senden und die Nachrichtenübermittlung mithilfe von Empfangsbestätigungen nachverfolgen. Lassen Sie das Senden von Gerätemeldungen bei Bedarf automatisch wiederholen, um zeitweilige Konnektivitätsprobleme zu überbrücken.
+
+Dies sind einige der Features, die Sie nutzen können:
 
 - **Noch sichererer Kommunikationskanal** zum Senden und Empfangen von Daten von IoT-Geräten
 - **Integrierte Geräteverwaltung** und -bereitstellung für das bedarfsgerechte Verbinden und Verwalten von IoT-Geräten
@@ -66,16 +68,18 @@ Entwerfen Sie Lösungen, die eine bidirektionale Kommunikation mit IoT-Geräten 
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Aktion
 
-Zum Erstellen von IoT Hub gehen Sie folgendermaßen vor:
+Erstellen Sie wie folgt einen IoT-Hub:
 
 1. Navigieren Sie zu **IoT Hub**.
-2. Klicken Sie auf **IOT Hub erstellen**.
+2. Wählen Sie **IoT-Hub erstellen** aus.
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Devices%2FIotHubs]" submitText="Go to IoT Hub" :::
+
+<!-- markdownlint-enable DOCSMD001 -->
 
 Der IoT Hub Device Provisioning-Dienst ist ein Hilfsdienst für IoT Hub, der eine Just-in-Time-Bereitstellung ohne manuelles Eingreifen ermöglicht.
 
@@ -86,7 +90,9 @@ Der IoT Hub Device Provisioning-Dienst ist ein Hilfsdienst für IoT Hub, der ein
 Zum Erstellen von IoT Hub Device Provisioning-Diensten gehen Sie folgendermaßen vor:
 
 1. Navigieren Sie zu **IoT Hub Device Provisioning-Dienste**.
-2. Klicken Sie auf **Device Provisioning-Dienste erstellen**.
+2. Wählen Sie **Device Provisioning-Dienste erstellen** aus.
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Devices%2FProvisioningServices]" submitText="Go to Device Provisioning Services" :::
 
@@ -112,16 +118,16 @@ Erstellen Sie wiederverwendbare, hochgradig skalierbare und raumbezogene Umgebun
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Aktion
 
 Zum Erstellen von Azure Digital Twins gehen Sie folgendermaßen vor:
 
-1. Wählen Sie im linken Bereich **Ressource erstellen** aus.
-2. Suchen Sie nach **Digital Twins**, und wählen Sie den entsprechenden Eintrag aus.
+1. Wählen Sie im linken Bereich **Ressource erstellen**.
+2. Suchen Sie nach **Digital Twins**, und wählen Sie dann **Digital Twins** aus.
 3. Wählen Sie **Erstellen** aus, um den Bereitstellungsprozess zu starten.
-4. Klicken Sie auf die Schaltfläche unten, um vorhandene Digital Twins zu überprüfen.
+4. Zum Überprüfen vorhandener Digital Twins wählen Sie diese Schaltfläche aus:
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.IoTSpaces%2FGraph]" submitText="Go to Digital Twins" :::
 
@@ -133,13 +139,13 @@ Zum Erstellen von Azure Digital Twins gehen Sie folgendermaßen vor:
 
 ## <a name="location-intelligencetabazuremaps"></a>[Location Intelligence](#tab/AzureMaps)
 
-Zusätzlich zu herkömmlichen Standortfunktionen wie „In der Nähe“, „Verkehr“ und „Route“ ermöglicht es der Azure Maps-Dienst den Unternehmen, Lösungen mit Location Intelligence in Echtzeit zu erstellen, die von den renommierten Partnern für Mobilitätstechnologie **TomTom** und **Moovit** gestellt wird. Integrieren Sie mit Geodiensten mühelos komplexe Standort- und Mobilitätsfunktionen in Ihre Anwendungen.
+Zusätzlich zu herkömmlichen Standortfunktionen wie „In der Nähe“, „Verkehr“ und „Route“ ermöglicht es der Azure Maps-Dienst Unternehmen, Lösungen mit Location Intelligence in Echtzeit zu erstellen, die von den renommierten Partnern für Mobilitätstechnologie **TomTom** und **Moovit** gestellt wird. Integrieren Sie mit Geodiensten mühelos komplexe Standort- und Mobilitätsfunktionen in Ihre Anwendungen.
 
 **Datendienstvorschau:** Sie können Geodaten zur Verwendung bei räumlichen Vorgängen oder bei der Bildkomposition hochladen und speichern, um die Latenz zu senken, die Produktivität zu erhöhen und neue Szenarien in Ihren Anwendungen zu ermöglichen.
 
 **Räumliche Vorgänge:** Verbessern Sie die Location Intelligence mit einer Bibliothek aus häufig genutzten räumlichen Berechnungen, z.B. zum Geofencing, zur Ermittlung des am nächsten gelegenen Punkts und des Kreisabstands sowie für Puffer.
 
-**Geolocation**: Finden Sie heraus, aus welchem Land eine IP-Adresse stammt. Passen Sie Inhalte und Dienste basierend auf Benutzerstandorten an, und erhalten Sie Einblicke in die geographische Verteilung Ihrer Kunden.
+**Geolocation**: Finden Sie heraus, aus welchem Land eine IP-Adresse stammt. Passen Sie Inhalte und Dienste basierend auf Benutzerstandorten an, und erhalten Sie Einblicke in die geografische Verteilung Ihrer Kunden.
 
 ::: zone target="docs"
 
@@ -149,14 +155,14 @@ Zusätzlich zu herkömmlichen Standortfunktionen wie „In der Nähe“, „Verk
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Aktion
 
 Zum Verwenden von Location Intelligence gehen Sie folgendermaßen vor:
 
 1. Navigieren Sie zu **Azure Maps-Konten**.
-2. Klicken Sie auf **Azure Maps-Konten erstellen**.
+2. Wählen Sie **Azure Maps-Konten erstellen** aus.
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Maps%2Faccounts]" submitText="Go to Azure Maps Account" :::
 
@@ -184,14 +190,14 @@ Azure Spatial Anchors besteht aus einem verwalteten Dienst und Client-SDKs für 
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Aktion
 
 Zum Verwenden räumlicher Erfahrungen gehen Sie folgendermaßen vor:
 
 1. Navigieren Sie zu **Spatial Anchors-Konten**.
-2. Klicken Sie auf **Spatial Anchors-Konten erstellen**.
+2. Wählen Sie **Spatial Anchors-Konten erstellen** aus.
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.MixedReality%2FspatialAnchorsAccounts]" submitText="Go to Spatial Anchors Accounts" :::
 
@@ -201,7 +207,7 @@ Zum Verwenden räumlicher Erfahrungen gehen Sie folgendermaßen vor:
 
 ## <a name="azure-remote-renderingtabremoterender"></a>[Azure Remote Rendering](#tab/RemoteRender)
 
-Rendern Sie hochwertige interaktive 3D-Inhalte in der Cloud, und streamen Sie sie in Echtzeit auf Ihre Geräte. Renderingworkloads werden häufig für Spezialeffekte (VFX) in der Medien- und Unterhaltungsbranche eingesetzt. Rendering wird auch in vielen anderen Branchen verwendet, z. B. in der Werbebranche, im Einzelhandel, in der Öl-und Gasindustrie sowie in der Fertigungsindustrie.
+Rendern Sie hochwertige interaktive 3D-Inhalte in der Cloud, und streamen Sie sie in Echtzeit auf Ihre Geräte. Renderingworkloads werden häufig für Spezialeffekte (VFX) in der Medien- und Unterhaltungsbranche eingesetzt. Rendering wird auch in vielen anderen Branchen verwendet, z.B. in der Werbebranche, im Einzelhandel, in der Öl- und Gasindustrie sowie in der Fertigungsindustrie.
 
 Der Renderingprozess ist rechenintensiv. Es kann sein, das viele Frames oder Bilder erstellt werden müssen, und das Rendern jedes Bilds kann viele Stunden dauern. Rendering ist daher eine perfekte Workload für die Batchverarbeitung, bei der Azure und Azure Batch verwendet werden können, um viele Rendervorgänge parallel auszuführen.
 
@@ -215,14 +221,14 @@ Der Renderingprozess ist rechenintensiv. Es kann sein, das viele Frames oder Bil
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ### <a name="action"></a>Aktion
 
 Zum Verwenden von Remote Rendering gehen Sie folgendermaßen vor:
 
 1. Navigieren Sie zu **Batch-Konten**.
-2. Klicken Sie auf **Batch-Konten erstellen**.
+2. Wählen Sie **Batch-Konten erstellen** aus.
+
+<!-- markdownlint-disable DOCSMD001 -->
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Batch%2FbatchAccounts]" submitText="Go to Azure Batch" :::
 
