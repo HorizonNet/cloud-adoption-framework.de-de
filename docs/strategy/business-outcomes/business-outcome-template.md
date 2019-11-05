@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 3874b1af74d7604e3e5c5dd3376b11c43ce24e05
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8703734cbb287003edfd38ddac4395ac0e437332
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031535"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048378"
 ---
 # <a name="how-to-use-the-business-outcome-template"></a>Verwenden der Vorlage für Geschäftsergebnisse
 
@@ -51,15 +51,15 @@ Erkenntnis ist ein Hauptgrundsatz einer Unternehmensarchitektur. Ist Erkenntnis 
 
 *Abbildung 3: Fünf Schwerpunktbereiche für Erkenntnis: Beteiligte, Ergebnisse, geschäftliche Faktoren, KPIs und Fähigkeiten.*
 
-**Beteiligte:** : Wer im Unternehmen sieht wahrscheinlich den größten Wert in einem bestimmten Geschäftsergebnis? Wer wird diese Transformation am ehesten unterstützen, besonders wenn die Dinge schwierig oder zeitaufwändig werden? Wer hat den größten Anteil am Erfolg dieser Transformation? Diese Person ist ein potenziell Beteiligter.
+**Beteiligte:** Wer im Unternehmen sieht wahrscheinlich den größten Wert in einem bestimmten Geschäftsergebnis? Wer wird diese Transformation am ehesten unterstützen, besonders wenn die Dinge schwierig oder zeitaufwändig werden? Wer hat den größten Anteil am Erfolg dieser Transformation? Diese Person ist ein potenziell Beteiligter.
 
-**Geschäftsergebnisse**: Ein Geschäftsergebnis ist ein präzises, definiertes und beobachtbares Ergebnis oder eine Änderung der Unternehmensleistung, gestützt durch ein bestimmtes Measure. Wie möchte der Beteiligte das Unternehmen verändern? Wie wird das Unternehmen betroffen sein? Welchen Wert hat diese Transformation?
+**Geschäftsergebnisse:** Ein Geschäftsergebnis ist ein präzises, definiertes und beobachtbares Ergebnis oder eine Änderung der Unternehmensleistung, gestützt durch ein bestimmtes Measure. Wie möchte der Beteiligte das Unternehmen verändern? Wie wird das Unternehmen betroffen sein? Welchen Wert hat diese Transformation?
 
-**Geschäftliche Faktoren**: Geschäftliche Faktoren erfassen die aktuelle Herausforderung, die das Unternehmen daran hindert, die gewünschten Ergebnisse zu erzielen. Mit ihnen können auch neue Möglichkeiten erfasst werden, die das Unternehmen mit der richtigen Lösung nutzen kann. Wie würden Sie die aktuellen Herausforderungen oder die zukünftige Geschäftslage beschreiben? Welche Geschäftsfunktionen würden sich ändern, um die gewünschten Ergebnisse zu erzielen?
+**Geschäftliche Faktoren:** Geschäftliche Faktoren erfassen die aktuelle Herausforderung, die das Unternehmen daran hindert, die gewünschten Ergebnisse zu erzielen. Mit ihnen können auch neue Möglichkeiten erfasst werden, die das Unternehmen mit der richtigen Lösung nutzen kann. Wie würden Sie die aktuellen Herausforderungen oder die zukünftige Geschäftslage beschreiben? Welche Geschäftsfunktionen würden sich ändern, um die gewünschten Ergebnisse zu erzielen?
 
-**KPIs**: Wie wird diese Änderung gemessen? Woher weiß das Unternehmen, ob sie erfolgreich war? Wie oft wird diese KPI ausgewertet? Durch Verstehen jeder KPI werden schrittweise Änderung und experimentierende Vorgehensweise möglich.
+**KPIs:** Wie wird diese Änderung gemessen? Woher weiß das Unternehmen, ob sie erfolgreich war? Wie oft wird diese KPI ausgewertet? Durch Verstehen jeder KPI werden schrittweise Änderung und experimentierende Vorgehensweise möglich.
 
-**Fähigkeiten**: Wie beschleunigen technische Fähigkeiten bei der Definition eines Transformationsprozesses die Realisierung des Geschäftsergebnisses? Welche Anwendungen müssen in die Transformation einbezogen werden, um die Unternehmensziele zu erreichen? Wie lassen sich verschiedene Anwendungen oder Workloads priorisieren, um Fähigkeiten geeignet zu berücksichtigen? Wie müssen Teile der Lösung erweitert oder neu strukturiert werden, um jedes der Ergebnisse zu erzielen? Können Ausführungsansätze (oder Zeitachsen) neu angeordnet werden, um Geschäftsergebnisse mit großen Auswirkungen zu priorisieren?
+**Fähigkeiten:** Wie beschleunigen technische Fähigkeiten bei der Definition eines Transformationsprozesses die Realisierung des Geschäftsergebnisses? Welche Anwendungen müssen in die Transformation einbezogen werden, um die Unternehmensziele zu erreichen? Wie lassen sich verschiedene Anwendungen oder Workloads priorisieren, um Fähigkeiten geeignet zu berücksichtigen? Wie müssen Teile der Lösung erweitert oder neu strukturiert werden, um jedes der Ergebnisse zu erzielen? Können Ausführungsansätze (oder Zeitachsen) neu angeordnet werden, um Geschäftsergebnisse mit großen Auswirkungen zu priorisieren?
 
 ## <a name="next-steps"></a>Nächste Schritte
 

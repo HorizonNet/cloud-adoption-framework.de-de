@@ -8,20 +8,20 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9d98a9e368f71310a05ae6242ef75a57771824d5
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: ef5ffecd998bbe4e5adadd30cf24fe965e22b703
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70837616"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048263"
 ---
 # <a name="align-assets-to-prioritized-workloads"></a>Ausrichten von Ressourcen auf priorisierte Workloads
 
 Workload ist eine konzeptionelle Beschreibung einer Sammlung von Ressourcen: Virtuelle Computer, Anwendungen und Datenquellen. Im vorherigen Artikel zum [Priorisieren und Definieren von Workloads](./workloads.md) wurde eine Anleitung zum Erfassen der Daten bereitgestellt, die die Workloads definieren. Vor der Migration müssen einige der technischen Eingaben in dieser Liste zusätzlich überprüft werden. Dieser Artikel hilft bei der Validierung der folgenden Eingaben:
 
-- **Anwendungen**: Auflisten aller Anwendungen, die in dieser Workload enthalten sind.
-- **VMs/Server**: Auflisten aller virtuellen Computer oder Server, die in der Workload enthalten sind
-- **Datenquellen**: Auflisten aller Datenquellen, die in der Workload enthalten sind
+- **Anwendungen:** Auflisten aller Anwendungen, die in dieser Workload enthalten sind.
+- **VMs und Server:** Auflisten aller virtuellen Computer oder Server, die in der Workload enthalten sind
+- **Datenquellen:** Auflisten aller Datenquellen, die in der Workload enthalten sind
 - **Abhängigkeiten**: Listen Sie alle Ressourcenabhängigkeiten auf, die nicht in der Workload enthalten sind.
 
 Es gibt eine Reihe von Optionen, um diese Daten zusammenzustellen. Im Folgenden sind einige der gebräuchlichsten Ansätze aufgeführt.
