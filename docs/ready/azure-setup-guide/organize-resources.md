@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 222768f457f566d1ba19f8c53814110595e03bf3
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 94b1f2784875553bb27f32189e6d7d723de42634
+ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72379117"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72980194"
 ---
 # <a name="organize-your-azure-resources"></a>Organisieren Ihrer Azure-Ressourcen
 
@@ -159,7 +159,7 @@ Sie können Tags auch für viele andere Dinge verwenden. Sie werden häufig für
 - **Automatisierung:** Unter Umständen verfügen Sie über regelmäßig ausgeführte Skripts, die basierend auf einem Tagwert wie „ShutdownTime“ oder „DeprovisionDate“ eine Aktion durchführen können.
 - **Abrechnung**: Tags können in Ihrer Rechnung angezeigt werden. Dadurch können Sie Ihre Rechnung beispielsweise mithilfe von Tags wie „CostCenter“ oder „BillTo“ segmentieren.
 
-Jede Ressource oder Ressourcengruppe kann maximal 15 Tagname-Wert-Paare besitzen. Diese Einschränkung gilt nur für Tags, die direkt auf die Ressourcengruppe oder die Ressource angewendet werden.
+Jede Ressource oder Ressourcengruppe kann maximal 50 Tagname-Wert-Paare aufweisen. Diese Einschränkung gilt nur für Tags, die direkt auf die Ressourcengruppe oder die Ressource angewendet werden.
 
 Weitere Empfehlungen und Beispiele zum Tagging finden Sie in der [Anleitung zum Tagging](../considerations/naming-and-tagging.md) für das Framework für die Cloudeinführung (Cloud Adoption Framework).
 

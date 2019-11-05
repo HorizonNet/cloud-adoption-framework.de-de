@@ -8,17 +8,17 @@ ms.date: 01/03/2017
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: ffda6a8f11954895e934f310c1a53c95fb2e1351
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 3cc5071ca4b57473b52e0478e59b3c6a0dd49bea
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378045"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058052"
 ---
 # <a name="examples-of-implementing-azure-enterprise-scaffold"></a>Beispiele für das Implementieren eines Azure-Unternehmensgerüsts
 
 > [!NOTE]
-> Azure-Unternehmensgerüste wurden in das Microsoft Cloud Adoption Framework integriert. Der Inhalt dieses Artikels wird jetzt im Abschnitt zur [Bereitschaft](../ready/index.md) des neuen Frameworks dargestellt. Dieser Artikel wird Anfang 2020 zurückgezogen. Informationen zur Verwendung des neuen Prozesses finden Sie unter [Übersicht zur Bereitschaft](../ready/index.md), [Erstellen Ihrer ersten Landezone](../ready/azure-setup-guide/migration-landing-zone.md) und/oder [Überlegungen zur Landezone](../ready/considerations/index.md).
+> Azure-Unternehmensgerüste wurden in das Microsoft Cloud Adoption Framework integriert. Der Inhalt dieses Artikels wird jetzt im Abschnitt zur [Bereitschaft](../ready/index.md) des neuen Frameworks dargestellt. Dieser Artikel wird Anfang 2020 zurückgezogen. Informationen zur Verwendung des neuen Prozesses finden Sie unter [Übersicht zur Bereitschaft](../ready/index.md), [Erstellen Ihrer ersten Landezone](../ready/azure-setup-guide/migration-landing-zone.md) und [Überlegungen zur Landezone](../ready/considerations/index.md).
 
 Dieser Artikel enthält Beispiele dafür, wie ein Unternehmen die Empfehlungen für ein [Azure-Unternehmensgerüst](./azure-scaffold.md) implementieren kann. Ein fiktives Unternehmen mit dem Namen Contoso wird verwendet, um die bewährten Methoden für allgemeine Szenarien zu veranschaulichen.
 
@@ -138,6 +138,8 @@ Dave meldet sich beim Azure Enterprise Portal an und stellt fest, dass die Suppl
 | --- | --- |
 | Entwicklung |Contoso SupplyChain ResearchDevelopment LoyaltyCard Development |
 | Bereitstellung |SupplyChain Operations LoyaltyCard Production |
+
+<!-- markdownlint-disable MD024 -->
 
 ### <a name="policies"></a>Richtlinien
 

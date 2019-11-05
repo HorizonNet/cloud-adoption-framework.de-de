@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 8d9bce8b12b3054c2f4a6aa0421e1d30d5011860
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8408b657a3896cbb9376d0364dbd752ed90b9306
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031184"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048135"
 ---
 # <a name="cloud-operating-model-is-now-part-of-the-microsoft-cloud-adoption-framework-for-azure"></a>DAs Cloudbetriebsmodell ist jetzt Bestandteil des Frameworks für die Cloudeinführung (Cloud Adoption Framework) für Microsoft Azure.
 
@@ -26,9 +26,9 @@ Im Oktober 2018 haben wir mit einer Überprüfung aller Modelle begonnen, die si
 
 Für einen ähnlichen Ansatz bei COM sollten die Leser mit einem der folgenden Artikel beginnen:
 
-- [Erste Schritte bei der Cloudmigration](../getting-started/migrate.md)
-- [Erste Schritte bei der cloudaktivierten Innovation](../getting-started/innovate.md)
-- [Ermöglichen einer erfolgreichen Einführung](../getting-started/enable.md)
+- [Beginnen einer Cloudmigrationsjourney](../getting-started/migrate.md)
+- [Innovation durch Einführung der Cloud](../getting-started/innovate.md)
+- [Ermöglichen einer erfolgreichen Cloudeinführung](../getting-started/enable.md)
 
 Die zuvor in COM bereitgestellten Anleitungen sind nach wie vor für das Framework für die Cloudeinführung relevant. Die Erfahrung ist anders, aber die Struktur des Frameworks für die Cloudeinführung ist lediglich eine Erweiterung dieser Anleitungen. Um von COM zum Framework für die Cloudeinführung zu wechseln, ist ein Verständnis des Umfangs und der Struktur wichtig. Dieser Übergang wird in den folgenden zwei Abschnitten beschrieben.
 

@@ -8,12 +8,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 863f1270679a849d53bce04a8c2fded6019fc65f
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3bba3d7f028849ec3397e14dbdb0f39dfa246660
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548535"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058882"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Bewährte Methoden zum Einrichten von Netzwerken für zu Azure migrierte Workloads
 
@@ -415,10 +415,10 @@ Durch VNET-Dienstendpunkte wird Ihr privater VNET-Adressraum und die Identität 
   - Standard-Remoteverwaltungsports wie SSH (22) und RDP (3389) sollten wie alle übrigen Ports anhand von NSGs auf „Verweigern“ festgelegt werden.
 - Eine bessere Methode besteht darin, VMs hinter einem Azure Load Balancer oder Application Gateway zu platzieren. Wenn anschließend ein Zugriff auf Remoteverwaltungsports erforderlich ist, können Sie Just-In-Time-VM-Zugriff im Azure Security Center verwenden.
 
-**Weitere Informationen:**
+**Weitere Informationen**:
 
-- [Informieren Sie sich](https://docs.microsoft.com/azure/virtual-network/virtual-network-ip-addresses-overview-arm#public-ip-addresses) über öffentliche IP-Adressen in Azure.
-- [Erhalten Sie weitere Informationen](https://docs.microsoft.com/azure/security-center/security-center-just-in-time) zum Just-In-Time-VM-Zugriff im Azure Security Center.
+- [Öffentliche IP-Adressen in Azure](https://docs.microsoft.com/azure/virtual-network/virtual-network-ip-addresses-overview-arm#public-ip-addresses)
+- [Verwalten des Zugriffs auf virtuelle Computer mithilfe des Just-In-Time-Features](https://docs.microsoft.com/azure/security-center/security-center-just-in-time)
 
 ## <a name="take-advantage-of-azure-security-features-for-networking"></a>Nutzen von Azure-Sicherheitsfeatures für Netzwerke
 

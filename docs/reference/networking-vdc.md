@@ -10,12 +10,12 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: bfa693155bb017f377b3a19c95c8cdb98ae3baa0
-ms.sourcegitcommit: 910efd3e686bd6b9bf93951d84253b43d4cc82b5
+ms.openlocfilehash: 718c93b560b38eaae6556e549a0c6f6bb97b807b
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72769512"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048248"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>Virtuelle Rechenzentren: Eine Netzwerkperspektive
 
@@ -321,17 +321,17 @@ Workload-Komponenten befinden sich dort, wo auch Ihre tatsächlichen Anwendungen
 
 Die Möglichkeiten für Workloads sind endlos. Im Folgenden finden Sie einige der möglichen Workload-Typen:
 
-**Interne Branchenanwendungen**: Branchenanwendungen sind Computeranwendungen, die für den laufenden Unternehmensbetrieb entscheidend sind. Branchenanwendungen haben einige gemeinsame Merkmale:
+**Interne Branchenanwendungen:** Branchenanwendungen sind Computeranwendungen, die für den laufenden Unternehmensbetrieb entscheidend sind. Branchenanwendungen haben einige gemeinsame Merkmale:
 
-- Sie sind von Natur aus **interaktiv**. Daten werden eingegeben, und Ergebnisse oder Berichte werden zurückgegeben.
-- Sie sind **datengesteuert**. Branchenanwendungen sind datenintensiv und greifen häufig auf Datenbanken oder einen anderen Speicher zu.
-- Sie sind **integriert**. Branchenanwendungen ermöglichen die Integration in andere Systeme innerhalb oder außerhalb der Organisation.
+- **Von Natur aus interaktiv:** Daten werden eingegeben, und Ergebnisse oder Berichte werden zurückgegeben.
+- **Datengesteuert:** Datenintensive Workloads mit häufigem Zugriff auf Datenbanken oder anderen Speicher.
+- **Integriert:** Workloads, die Integration in andere Systeme innerhalb oder außerhalb der Organisation ermöglichen.
 
-**Websites für Kunden (im Internet oder intern)** : Die meisten Anwendungen, die mit dem Internet interagieren, sind Websites. Azure bietet die Möglichkeit, eine Website auf einer IaaS-VM oder von einer [Azure-Web-Apps][WebApps]-Website (PaaS) auszuführen. Azure-Web-Apps unterstützen die Integration in VNETs, die die Bereitstellung der Web-Apps in einer Spoke-Netzwerkzone ermöglichen. Für interne Websites muss kein öffentlicher Internetendpunkt verfügbar gemacht werden, weil auf die Ressourcen aus dem privaten VNET über Adressen zugegriffen werden kann, die nicht über das Internet geroutet werden können.
+**Websites für Kunden (im Internet oder intern):** Die meisten Anwendungen, die mit dem Internet interagieren, sind Websites. Azure bietet die Möglichkeit, eine Website auf einer IaaS-VM oder von einer [Azure-Web-Apps][WebApps]-Website (PaaS) auszuführen. Azure-Web-Apps unterstützen die Integration in VNETs, die die Bereitstellung der Web-Apps in einer Spoke-Netzwerkzone ermöglichen. Für interne Websites muss kein öffentlicher Internetendpunkt verfügbar gemacht werden, weil auf die Ressourcen aus dem privaten VNET über Adressen zugegriffen werden kann, die nicht über das Internet geroutet werden können.
 
-**Big Data + Analyse**: Wenn Daten zentral auf ein großes Volumen hochskaliert werden müssen, kann es passieren, dass Datenbanken nicht korrekt zentral hochskaliert werden. Die Hadoop-Technologie bietet ein System zum parallelen Ausführen von verteilten Abfragen auf einer großen Anzahl von Knoten. Kunden haben die Möglichkeit, Datenworkloads auf IaaS-VMs oder PaaS auszuführen ([HDInsight][HDI]). HDInsight unterstützt das Bereitstellen in einem lokalen VNET: Die Bereitstellung kann in einem Cluster in einem Spoke des virtuellen Rechenzentrums erfolgen.
+**Big Data und Analysen:** Wenn Daten zentral auf ein großes Volumen hochskaliert werden müssen, kann es passieren, dass Datenbanken nicht korrekt zentral hochskaliert werden. Die Hadoop-Technologie bietet ein System zum parallelen Ausführen von verteilten Abfragen auf einer großen Anzahl von Knoten. Kunden haben die Möglichkeit, Datenworkloads auf IaaS-VMs oder PaaS auszuführen ([HDInsight][HDI]). HDInsight unterstützt das Bereitstellen in einem lokalen VNET: Die Bereitstellung kann in einem Cluster in einem Spoke des virtuellen Rechenzentrums erfolgen.
 
-**Ereignisse und Messaging**: [Azure Event Hubs][EventHubs] ist ein hyperskalierbarer Dienst für die Erfassung von Telemetriedaten, der Millionen von Ereignissen sammelt, transformiert und speichert. Diese verteilte Streamingplattform bietet niedrige Latenz und konfigurierbare Aufbewahrungszeiten, wodurch Sie riesige Mengen an Telemetriedaten in Azure einspeisen und die Daten verschiedener Anwendungen lesen können. In Event Hubs kann ein einziger Datenstrom in Echtzeit und batchbasierte Pipelines unterstützen.
+**Ereignisse und Messaging:** [Azure Event Hubs][EventHubs] ist ein hyperskalierbarer Dienst für die Erfassung von Telemetriedaten, der Millionen von Ereignissen sammelt, transformiert und speichert. Diese verteilte Streamingplattform bietet niedrige Latenz und konfigurierbare Aufbewahrungszeiten, wodurch Sie riesige Mengen an Telemetriedaten in Azure einspeisen und die Daten verschiedener Anwendungen lesen können. In Event Hubs kann ein einziger Datenstrom in Echtzeit und batchbasierte Pipelines unterstützen.
 
 Über [Azure Service Bus][ServiceBus] können Sie einen zuverlässigen Cloudmessagingdienst zwischen Anwendungen und Diensten implementieren. Der Dienst bietet asynchrones Brokermessaging zwischen Client und Server, strukturiertes FIFO-Messaging (First In, First Out) sowie Funktionen zum Veröffentlichen und Abonnieren.
 

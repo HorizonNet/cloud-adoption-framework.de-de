@@ -1,7 +1,7 @@
 ---
-title: Ermöglichen des Kundenerfolgs über jede Cloudeinführungsreise hinweg
+title: Ermöglichen von Kundenerfolg während einer Cloudeinführungsjourney
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Ermöglichen des Kundenerfolgs über jede Cloudeinführungsreise hinweg
+description: Ermöglichen des Kundenerfolgs im gesamten Verlauf einer Cloudeinführungsjourney
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -9,20 +9,20 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: 5e1b1c24b076c56fdf6e42a8340589ee58bd69dc
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ea9d6b17627883f63e0814b66ed5cb657555995d
+ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023442"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73048343"
 ---
-# <a name="enable-success-across-any-cloud-adoption-journey"></a>Ermöglichen des Erfolgs über jede Cloudeinführungsreise hinweg
+# <a name="enable-success-during-a-cloud-adoption-journey"></a>Ermöglichen des Erfolgs während einer Cloudeinführungsjourney
 
-Das Framework für die Einführung der Microsoft Cloud für Azure (Microsoft Cloud Adoption Framework) wird als kostenloses Self-Service-Tool bereitgestellt, um die Leser durch verschiedene Cloudeinführungsmaßnahmen zu leiten. Schwerpunkt dieses Inhalts ist es, Kunden dabei zu unterstützen, Geschäftsziele zu erreichen, die durch Azure ermöglicht werden können. Allerdings wird in diesem Inhalt auch berücksichtigt, dass der Leser sich möglicherweise mit geschäftlichen, kulturellen oder technischen Herausforderungen auseinandersetzen muss, die vielfältig sein können und manchmal eine cloudneutrale Position erfordern. Daher beginnt jeder Abschnitt dieser Anleitung zunächst mit einem Azure-Ansatz, dann folgt aber eine cloudneutrale Theorie, die sich über geschäftliche und technische Entscheidungen hinweg skalieren lässt.
+Das Framework für die Cloudeinführung (Cloud Adoption Framework) ist ein kostenloses Self-Service-Tool, das die Leser durch verschiedene Cloudeinführungsmaßnahmen leitet. Das Framework hilft Kunden dabei, Geschäftsziele erfolgreich umzusetzen, die durch Microsoft Azure ermöglicht werden können. In diesem Inhalt wird jedoch auch berücksichtigt, dass der Leser sich möglicherweise mit vielfältigen geschäftlichen, kulturellen oder technischen Herausforderungen auseinandersetzen muss, die manchmal eine cloudneutrale Position erfordern. Daher beginnt jeder Abschnitt dieser Anleitung zunächst mit einem Azure-Ansatz, auf den eine cloudneutrale Theorie folgt, die sich über viele geschäftliche und technische Entscheidungen hinweg skalieren lässt.
 
-In diesem Framework ist „Enablement“ (Befähigung, Ermöglichen) ein Kernthema. Die folgende Checkliste enthält eine Reihe von Themen, die in jede Cloudeinführungsmaßnahme eingebettet werden sollten, um sicherzustellen, dass die Reise sowohl für die IT als auch für das Unternehmen ein Erfolg wird:
+In diesem Framework ist „Enablement“ (Befähigung, Ermöglichen) ein Kernthema. In der folgenden Prüfliste sind grundlegende Cloudeinführungsprinzipien aufgelistet, die sicherstellen, dass eine Einführungsjourney sowohl von der IT-Abteilung als auch von der Geschäftsleitung als erfolgreich eingestuft wird:
 
-- **Planung:** Festlegen klarer [Geschäftsergebnisse](../strategy/business-outcomes/index.md), eines definierten [Plans für digitale Ressourcen](../digital-estate/index.md) und gut durchdachter [Einführungsbacklogs](../migrate/migration-considerations/prerequisites/migration-backlog-review.md).
+- **Planung:** Festlegen klarer [Geschäftsergebnisse](../strategy/business-outcomes/index.md), eines klar definierten [Plans für digitale Ressourcen](../digital-estate/index.md) und weithin verstandener [Einführungsbacklogs](../migrate/migration-considerations/prerequisites/migration-backlog-review.md).
 - **Bereit:** Sicherstellen der Bereitschaft der Mitarbeiter durch [Qualifikationen und Lernpläne](../ready/technical-skills.md).
 - **Betrieb:** Definieren Sie ein verwaltbares Betriebsmodell, um die Aktivitäten während und lange nach der Einführung zu steuern.
   - **[Organisation](../organize/index.md):** Richten Sie Mitarbeiter und Teams so aus, dass sie einen reibungslosen Cloudbetrieb und eine problemlose Einführung sicherstellen.

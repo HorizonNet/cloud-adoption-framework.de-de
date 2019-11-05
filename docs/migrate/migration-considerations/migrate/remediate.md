@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 54621d366f0ae0a3e2e3504532ace183bc7f49c4
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 5fede95558e32b4cbc07be3ef60635e8c13eda97
+ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839076"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73058849"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>Korrigieren von Ressourcen vor der Migration
 
@@ -31,7 +31,7 @@ In jeder Unternehmensumgebung gibt es technische Schulden. Einige davon sind feh
 - **Änderungen an der Anwendungskonfiguration:** Bei migrierten Anwendungen sind möglicherweise Änderungen an Variablen erforderlich, dies umfasst z. B. Netzwerkpfade zu abhängigen Ressourcen, Änderungen der Dienstkonten oder Updates von abhängigen IP-Adressen.
 - **Geringfügige Änderungen an Netzwerkpfaden:** Möglicherweise müssen Routingmuster geändert werden, damit der Datenverkehr der Benutzer ordnungsgemäß zu den neuen Ressourcen umgeleitet wird.
     > [!NOTE]
-    > Hierbei handelt es sich noch nicht um das Routing zu den neuen Ressourcen für die Produktion, sondern lediglich um die Konfiguration für das ganz allgemeine ordnungsgemäße Routing zu den Ressourcen.
+    > Hierbei handelt es sich noch nicht um das Routing zu den neuen Ressourcen für die Produktion, sondern um die Konfiguration für das ganz allgemeine ordnungsgemäße Routing zu den Ressourcen.
 
 ## <a name="large-scale-remediation-tasks"></a>Umfangreichere Korrekturaufgaben
 
