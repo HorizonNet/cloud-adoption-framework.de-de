@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: b95d3ccf3a7248c38da9936a55fc169adcf2f2a2
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: ac6c3cb0a26cebf655a1161a3fd54197c795c283
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221167"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566421"
 ---
 # <a name="cost-management-discipline-overview"></a>Übersicht über die Disziplin „Kostenverwaltung“
 
@@ -33,7 +33,7 @@ Umsetzbare Richtlinienanweisungen und die daraus resultierenden Architekturanfor
 > [!CAUTION]
 > Die Beispielrichtlinien basieren auf allgemeinen Kundenerfahrungen. Zur besseren Anpassung dieser Richtlinien an spezifische Anforderungen zur Cloud Governance führen Sie die folgenden Schritte aus, um Richtlinienanweisungen zu erstellen, die Ihre individuellen Geschäftsanforderungen erfüllen.
 
-## <a name="developing-cost-management-governance-policy-statements"></a>Entwickeln von Richtlinienanweisungen zur Kontrolle der Kostenverwaltung
+## <a name="develop-governance-policy-statements"></a>Entwickeln von Richtlinienanweisungen für Governance
 
 Die folgenden sechs Schritte helfen Ihnen bei der Definition von Governancerichtlinien zur Kostenkontrolle in Ihrer Umgebung.
 

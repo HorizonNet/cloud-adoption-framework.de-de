@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: c112c1d340de944502ac16159977ffa12b5b095d
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: a6e7cb52fdac7607765b32c5355c0f2df066538a
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378261"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566857"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Cloudmigration im Cloud Adoption Framework
 
@@ -130,7 +130,7 @@ Die Migration zur Cloud umfasst im Grunde vier einfache Phasen: Bewerten, Migrie
 
 ![Cloud Adoption Framework-Migrationsmodell](../_images/operational-transformation-migrate.png)
 
-## <a name="creating-a-balanced-cloud-portfolio"></a>Erstellen eines ausgewogenen Cloudportfolios
+## <a name="create-a-balanced-cloud-portfolio"></a>Erstellen eines ausgewogenen Cloudportfolios
 
 Jedes ausgewogene Technologieportfolio verfügt über eine Mischung von Ressourcen in verschiedenen Zuständen. Einige Anwendungen sind für die Deaktivierung vorgesehen und werden nur minimal unterstützt. Andere Anwendungen oder Ressourcen werden in einem Wartungszustand unterstützt, aber die Features dieser Lösungen sind stabil. Für neuere Geschäftsprozesse werden sich ändernde Marktbedingungen wahrscheinlich zu einer kontinuierlichen Verbesserung oder Modernisierung der Features führen. Wenn sich Möglichkeiten zur Erschließung neuer Umsatzquellen ergeben, werden neue Anwendungen oder Ressourcen in die Umgebung eingeführt. In jeder Phase des Lebenszyklus einer Ressource ändern sich die Auswirkungen einer Investition auf Umsatz und Gewinn. Je später die Phase im Lebenszyklus, desto unwahrscheinlicher ist es, dass ein neues Feature oder ein Modernisierungsaufwand zu einer hohen Rendite (Return on Investment, ROI) führt.
 

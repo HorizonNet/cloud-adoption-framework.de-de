@@ -10,14 +10,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
 layout: LandingPage
-ms.openlocfilehash: b1fc986983b709491d0b06f4624c60deed7e9219
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: d2ed2222aa536ec377987674837b237d1050cdeb
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71026295"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564289"
 ---
-# <a name="managing-organizational-alignment"></a>Verwalten der Organisationsausrichtung
+# <a name="manage-organizational-alignment"></a>Verwalten der Organisationsausrichtung
 
 Die Cloudeinführung ist ohne gut organisierte Teams nicht möglich. Für eine erfolgreiche Cloudeinführung sind umfassend geschulte Mitarbeiter notwendig, die in Übereinstimmung mit klar definierten Geschäftszielen und in einer gut verwalteten Umgebung die richtige Arbeit machen. Die Bereitstellung eines effektiven Cloudbetriebsmodells erfordert den Aufbau von Organisationsstrukturen, die mit geeigneten Personen besetzt sind. Dieser Artikel beschreibt einen Ansatz zur Einrichtung und Aufrechterhaltung der richtigen Organisationsstrukturen in vier Schritten.
 
@@ -130,7 +130,7 @@ Im Folgenden finden Sie eine Liste der Cloudfunktionen, die für eine erfolgreic
 - [Cloudplattform](./cloud-platform.md): Betrieb und Ausreifung der Plattform
 - [Cloudautomatisierung](./cloud-automation.md): Schnellere Einführung und Innovation
 
-## <a name="maturing-organizational-structures"></a>Ausreifung der Organisationsstrukturen
+## <a name="mature-organizational-structures"></a>Weiterentwickeln der Organisationsstrukturen
 
 Zu einem gewissen Grad wird jede der oben genannten Funktionen in jedem Cloudeinführungsprojekt bereitgestellt, entweder explizit oder entsprechend einer definierten Teamstruktur.
 Einführung erfordert Wachstum, und dasselbe gilt für die Notwendigkeit, Gleichgewicht und Struktur zu schaffen. Um diese Anforderungen zu erfüllen, folgen Unternehmen oft einem Prozess zur Ausreifung von Organisationsstrukturen.
@@ -139,7 +139,7 @@ Einführung erfordert Wachstum, und dasselbe gilt für die Notwendigkeit, Gleich
 
 Im Artikel zum [Ermitteln des Reifegrads der Organisationsstruktur](./organization-structures.md) finden Sie weitere Details zu den einzelnen Reifegradstufen.
 
-## <a name="aligning-raci-charts"></a>Ausrichten von RACI-Diagrammen
+## <a name="align-raci-charts"></a>Ausrichten von RACI-Diagrammen
 
 Auf jeder Stufe der Reife wechselt die Verantwortlichkeit für verschiedene Cloudfunktionen zu neuen Teams. Diese Verlagerung der Verantwortlichkeit ermöglicht schnellere Migrations- und Innovationszyklen, indem Hindernisse für Veränderung beseitigt und automatisiert werden. Für eine geeignete Ausrichtung von Zuweisungen bietet der Artikel über [RACI-Ausrichtung](./raci-alignment.md) ein RACI-Diagramm für jede der referenzierten Organisationsstrukturen.
 

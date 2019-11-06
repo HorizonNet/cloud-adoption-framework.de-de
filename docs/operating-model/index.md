@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 77e3ded1f76b096655a7831bc1950bf28bd4c86b
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: d9e26d82dd0332c338567bf962094a39f2ef84b4
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683818"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564525"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>Einrichten eines Betriebsmodells für die Cloud
 
@@ -36,7 +36,7 @@ Dieser Abschnitt des Frameworks für die Cloudeinführung stellt ein umsetzbares
 - [Verwalten](../manage/index.md): Gestalten Sie laufende Prozesse für die Verwaltung des Technologiebetriebs so, dass sie zur Nutzenmaximierung und zur Vermeidung von Störungen beitragen.
 - [Organisieren](../organize/index.md): Bei der Entwicklung des Betriebsmodells entwickelt sich auch die Organisation der unterschiedlichen Teams und Funktionen weiter, die das Betriebsmodell unterstützen.
 
-## <a name="aligning-operating-models"></a>Ausrichten von Betriebsmodellen
+## <a name="align-operating-models"></a>Ausrichten von Betriebsmodellen
 
 Die Cloud und die digitale Wirtschaft haben aufgezeigt, dass mehrere Betriebsmodelle erforderlich sind. Manchmal geht dieser Bedarf von der Anforderung aus, mehrere Public Clouds zu unterstützen. Meistens entsteht dieser Bedarf jedoch beim Wechsel von einer lokalen Umgebung in die Cloud. In beiden Szenarien ist es wichtig, Betriebsmodelle auszurichten, um maximale Leistung bei minimaler Redundanz zu erreichen.
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c2e7d5a3b442e6094ccc08fefbadab6102b09fcc
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 6c3588c7b7b8e3ae53fc2d2a311b93b548b856c5
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239734"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566303"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>Governanceleitfaden für komplexe Unternehmen
 
@@ -40,7 +40,7 @@ Die folgende Abbildung zeigt die Governance-MVP-Hierarchie zum Organisieren von 
 Jede Anwendung sollte im richtigen Bereich der Verwaltungsgruppen-, Abonnement- und Ressourcengruppenhierarchie bereitgestellt werden. Während der Bereitstellungsplanung erstellt das Cloudgovernanceteam die erforderlichen Knoten in der Hierarchie, um die für die Cloudeinführung zuständigen Teams zu unterstützen.
 
 1. Legen Sie eine Verwaltungsgruppe für die einzelnen Geschäftseinheiten mit einer detaillierten Hierarchie fest, die die Geografie und den Umgebungstyp (z. B. Produktions- oder Präproduktionsumgebungen) wiedergibt.
-2. Erstellen Sie für jede individuelle Kombination aus separater Geschäftseinheit oder Geografie ein produktionsbezogenes und ein produktionsfremdes Abonnement. Bei der Erstellung mehrerer Abonnements ist Vorsicht geboten. Weitere Informationen finden Sie [hier](../../../decision-guides/subscriptions/index.md).
+2. Erstellen Sie für jede individuelle Kombination aus separater Geschäftseinheit oder Geografie ein produktionsbezogenes und ein produktionsfremdes Abonnement. Bei der Erstellung mehrerer Abonnements ist Vorsicht geboten. Weitere Informationen finden Sie im [Leitfaden zur Entscheidungsfindung für Abonnements](../../../decision-guides/subscriptions/index.md).
 3. Wenden Sie [konsistente Benennung](../../../ready/azure-best-practices/naming-and-tagging.md) jeder Ebene dieser Gruppierungshierarchie an.
 4. Bei der Ressourcengruppenbereitstellung muss der Lebenszyklus der Inhalte berücksichtigt werden: Alle Inhalte, die gemeinsam entwickelt, verwaltet und ausgemustert werden, gehören zusammen. Weitere Informationen zu bewährten Methoden für Ressourcengruppen finden Sie [hier](../../../decision-guides/resource-consistency/index.md).
 5. Die [Regionswahl](../../../decision-guides/regions/index.md) ist äußerst wichtig und muss berücksichtigt werden, damit sowohl Netzwerk- und Überwachungsfunktionen für Failover-/Failbackvorgänge als auch die [erforderlichen SKUs in den bevorzugten Regionen](https://azure.microsoft.com/global-infrastructure/services) zur Verfügung stehen.

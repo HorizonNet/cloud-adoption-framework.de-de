@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: f96ada5b1c43694d0ea1af10524f3c344db62356
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 9de6f01a4252383c1d7619078568964fe8e685c9
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222707"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566368"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>Übersicht über die Disziplin der Beschleunigung der Bereitstellung
 
@@ -33,9 +33,9 @@ Die Hauptzielgruppe für diesen Leitfaden sind die Cloudarchitekten Ihrer Organi
 Umsetzbare Richtlinienanweisungen und die daraus resultierenden Architekturanforderungen bilden die Grundlage für eine Disziplin der Beschleunigung der Bereitstellung. Beispiele für Richtlinienanweisungen finden Sie im Artikel über [Richtlinienanweisungen zur Beschleunigung der Bereitstellung](./policy-statements.md). Diese Beispiele können als Ausgangspunkt für die Governancerichtlinien Ihrer Organisation dienen.
 
 > [!CAUTION]
-> Die Beispielrichtlinien basieren auf allgemeinen Kundenerfahrungen. Zur besseren Anpassung dieser Richtlinien an spezifische Anforderungen zur Cloudgovernance führen Sie die folgenden Schritte aus, um Richtlinienanweisungen zu erstellen, die Ihre individuellen Geschäftsanforderungen erfüllen.
+> Die Beispielrichtlinien basieren auf allgemeinen Kundenerfahrungen. Zur besseren Anpassung dieser Richtlinien an spezifische Anforderungen zur Cloud Governance führen Sie die folgenden Schritte aus, um Richtlinienanweisungen zu erstellen, die Ihre individuellen Geschäftsanforderungen erfüllen.
 
-## <a name="developing-deployment-acceleration-governance-policy-statements"></a>Entwickeln von Richtlinienanweisungen zur Governance für die Beschleunigung der Bereitstellung
+## <a name="develop-governance-policy-statements"></a>Entwickeln von Richtlinienanweisungen für Governance
 
 Die folgenden sechs Schritte helfen Ihnen dabei, Governancerichtlinien zum Steuern der Bereitstellung und Konfiguration von Ressourcen in Ihrer Cloudumgebung zu definieren.
 

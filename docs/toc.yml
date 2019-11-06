@@ -279,7 +279,7 @@
                           href: migrate/azure-best-practices/contoso-migration-tfs-vsts.md
                     - name: Skalieren einer Migration
                       href: migrate/azure-best-practices/contoso-migration-scale.md
-            - name: Migrieren von VMWare-Hosts
+            - name: Migrieren von VMware-Hosts
               items:
                 - name: Übersicht
                   href: migrate/azure-best-practices/vmware-host.md
@@ -475,13 +475,13 @@
               items:
                 - name: Übersicht
                   href: migrate/migration-considerations/prerequisites/index.md
-                - name: 'Entscheidungen, die sich auf Migrationsaktivitäten auswirken'
+                - name: 'Entscheidungen, die sich auf die Migration auswirken'
                   href: migrate/migration-considerations/prerequisites/decisions.md
                 - name: Checkliste für die Umgebungsplanung
                   href: migrate/migration-considerations/prerequisites/planning-checklist.md
                 - name: Ausrichten von Rollen und Zuständigkeiten
                   href: migrate/migration-considerations/prerequisites/cultural-complexity.md
-                - name: Strukturieren von Backlogs zur Verwaltung von Änderungen
+                - name: Flexibles Change Management
                   href: migrate/migration-considerations/prerequisites/technical-complexity.md
                 - name: Überprüfen des Migrationsbacklogs
                   href: migrate/migration-considerations/prerequisites/migration-backlog-review.md
@@ -491,31 +491,31 @@
                   href: migrate/migration-considerations/assess/index.md
                 - name: Prioritäten aufeinander abgestimmt halten
                   href: migrate/migration-considerations/assess/business-priorities.md
-                - name: Bewertung der Workload und der Ressourcenbereitschaft
+                - name: Bewerten der Bereitschaft einer Workload
                   href: migrate/migration-considerations/assess/evaluate.md
                 - name: Entwerfen von Workloads
                   href: migrate/migration-considerations/assess/architect.md
                 - name: Schätzen der Cloudkosten
                   href: migrate/migration-considerations/assess/estimate.md
-                - name: Binden und Unterstützen von Migrationspartnern
+                - name: Verstehen der Optionen für Partnerschaften
                   href: migrate/migration-considerations/assess/partnership-options.md
-                - name: Verwalten von inkrementellen Prozesse
+                - name: Verwalten von Änderungen
                   href: migrate/migration-considerations/assess/release-iteration-backlog.md
-                - name: Ändern von Genehmigungsprozessen
+                - name: Genehmigen von Änderungen an der Architektur
                   href: migrate/migration-considerations/assess/approve.md
             - name: Migrieren einzelner Ressourcen
               items:
                 - name: Übersicht
                   href: migrate/migration-considerations/migrate/index.md
-                - name: 'Höherstufungsmodelle: in einem Schritt, gestaffelt oder Flight'
+                - name: Höherstufungsmodelle
                   href: migrate/migration-considerations/migrate/promotion-models.md
-                - name: Wartungstasks
+                - name: Korrigieren von Ressourcen
                   href: migrate/migration-considerations/migrate/remediate.md
-                - name: Replizieren von Ressourcen in der Cloud
+                - name: Replizieren von Ressourcen
                   href: migrate/migration-considerations/migrate/replicate.md
                 - name: Replizieren von Optionen
                   href: migrate/migration-considerations/migrate/replicate-options.md
-                - name: Staging-Workloads für Tests und Höherstufung
+                - name: Stagen von Workloads
                   href: migrate/migration-considerations/migrate/stage.md
             - name: Optimieren und Höherstufen von Workloads
               items:
@@ -525,15 +525,15 @@
                   href: migrate/migration-considerations/optimize/business-change-plan.md
                 - name: Geschäftsbezogene Tests
                   href: migrate/migration-considerations/optimize/business-test.md
-                - name: Messen und Optimieren von Ressourcen
+                - name: Benchmarking und Größenänderung von Ressourcen
                   href: migrate/migration-considerations/optimize/optimize.md
-                - name: Bereit für die Höherstufung
+                - name: Vorbereiten auf die Höherstufung
                   href: migrate/migration-considerations/optimize/ready.md
-                - name: Höherstufen von Workloads in die Produktion
+                - name: Höherstufen in die Produktionsumgebung
                   href: migrate/migration-considerations/optimize/promote.md
                 - name: Außerbetriebnahme ausgesonderter Ressourcen
                   href: migrate/migration-considerations/optimize/decommission.md
-                - name: Retrospektive
+                - name: Durchführen von Retrospektiven
                   href: migrate/migration-considerations/optimize/retrospective.md
             - name: Sichern und Verwalten von Workloads in der Produktion
               items:
