@@ -9,20 +9,20 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c713af7557760d0bafeabf9d0cd0ef37a3885fe4
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: a307c29a640332fdf82a69ec06eab27589f77304
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547765"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566351"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Beschleunigung der Bereitstellung – Beispiele für Richtlinienanweisungen
 
 Einzelne Cloudrichtlinienanweisungen sind Anleitungen für den Umgang mit bestimmten Risiken, die bei Ihrem Risikobewertungsprozess identifiziert wurden. Diese Anweisungen sollten eine präzise Zusammenfassung der Risiken sowie der Pläne für den Umgang mit diesen bereitstellen. Jede Anweisungsdefinition sollte diese Informationen enthalten:
 
-- **Technisches Risiko**: Eine Zusammenfassung des Risikos, das diese Richtlinie behandelt.
-- **Richtlinienanweisung**: Eine klare, zusammenfassende Erläuterung der Richtlinienanforderungen.
-- **Entwurfsoptionen**: Direkt umsetzbare Empfehlungen, Spezifikationen oder andere Anleitungen, die IT-Teams und Entwickler bei der Implementierung der Richtlinie verwenden können.
+- **Technisches Risiko:** Eine Zusammenfassung des Risikos, das diese Richtlinie behandelt.
+- **Richtlinienanweisung:** Eine klare, zusammenfassende Erläuterung der Richtlinienanforderungen.
+- **Entwurfsoptionen:** Direkt umsetzbare Empfehlungen, Spezifikationen oder andere Anleitungen, die IT-Teams und Entwickler bei der Implementierung der Richtlinie verwenden können.
 
 Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine konfigurationsbezogene Geschäftsrisiken. Diese Anweisungen sind Beispiele, auf die Sie sich beim Entwurf von Richtlinienanweisungen beziehen können, um die Anforderungen Ihres Unternehmens zu erfüllen. Diese Beispiele sind nicht restriktiv gemeint, und es gibt immer potenziell mehrere Richtlinienoptionen für den Umgang mit jedem identifizierten Risiko. Arbeiten Sie eng mit den Geschäfts- und IT-Teams zusammen, um die besten Richtlinien für Ihre spezielle Risikogruppe zu identifizieren.
 

@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 6e1743fbac07c27bfafdf679ff7aae056545b6eb
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 79c6c10d924781d494cd8dbd7cc104d42f168083
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048071"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566646"
 ---
-# <a name="examples-of-agility-outcomes"></a>Beispiele für Agilitätsergebnisse 
+# <a name="examples-of-agility-outcomes"></a>Beispiele für Agilitätsergebnisse
 
 Wie bereits in der [Übersicht über die Geschäftsergebnisse](./index.md) beschrieben, können mehrere mögliche Geschäftsergebnisse als Grundlage für Unterhaltungen zur Transformationsjourney mit dem Unternehmen dienen. In diesem Artikel konzentrieren wir uns auf eine gängige Geschäftskennzahl: die Unternehmensflexibilität. Kenntnisse der Marktposition Ihres Unternehmens und der Wettbewerber können Ihnen dabei helfen, die Geschäftsergebnisse als Ziel der Transformationsjourney des Unternehmens zu formulieren.
 
@@ -37,7 +37,9 @@ Bei allen Bemühungen zu cloudfähigen Innovationen ist die Zeit bis zur Marktei
 
 - **Beispiel 2:** Ein Logistikunternehmen hat ein bisher nicht bedientes Marktsegment gefunden, benötigt aber eine neue Version der eigenen Flagship-Anwendung, um in dieses vorzudringen. Ein größerer Mitbewerber hat dies ebenfalls erkannt. Durch eine cloudfähige Anwendungsinnovation begeistert das Unternehmen die Kunden und ist durch einen DevOps-Entwicklungsansatz in der Lage, den langsameren und älteren Konkurrenten um _x_ Monate zu schlagen. Dieser Sprung beim Markteinstieg sichert den Kundenstamm.
 
-**Aurora Health Care**: Das Gesundheitssystem transformiert Onlinedienste in ein freundliches digitales Erlebnis. Zum Transformieren der eigenen digitalen Dienste migriert Aurora Health Care seine Websites zur Microsoft Azure-Plattform und setzt auf eine Strategie fortlaufender Innovationen.
+### <a name="aurora-health-care"></a>Aurora Health Care
+
+Das Gesundheitssystem transformiert Onlinedienste in ein freundliches digitales Erlebnis. Zum Transformieren der eigenen digitalen Dienste migriert Aurora Health Care seine Websites zur Microsoft Azure-Plattform und setzt auf eine Strategie fortlaufender Innovationen.
 
 > „Als Team fokussieren wir uns auf hochwertige Lösungen und hohe Geschwindigkeit. Die Entscheidung für Azure war für uns eine riesige Veränderung.“  
 > Jamey Shiels  

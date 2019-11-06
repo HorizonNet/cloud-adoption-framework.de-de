@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 33572e5de14c4d59e6281124cf488ca0e0c36aef
-ms.sourcegitcommit: 15898374495761bfb76cee719e0f9189856884e6
+ms.openlocfilehash: bf68bc17d5e94ae4c35e0a88d3ca73bd42935a5b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888836"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566784"
 ---
 # <a name="cloud-governance-capabilities"></a>Funktionen für Cloudgovernance
 
@@ -31,7 +31,7 @@ Je nach den gewünschten Geschäftsergebnissen können die Fähigkeiten, die fü
 - Netzwerk
 - Identity
 - Virtualisierung
-- Geschäftskontinuität/Notfallwiederherstellung
+- Business Continuity & Disaster Recovery
 - Anwendungsbesitzer im IT-Bereich
 
 Mit Funktionen für die Cloudgovernance werden Risiken in Bezug auf aktuelle und zukünftige Releases identifiziert. Diese Funktionen sind Teil der Arbeit zum Evaluieren von Risiken, Verstehen der potenziellen Auswirkungen und Treffen von Entscheidungen zur Risikotoleranz. Bei dieser Vorgehensweise können Pläne schnell aktualisiert werden, um die sich ändernden Anforderungen der [Funktionen für die Cloudeinführung](./cloud-adoption.md) widerzuspiegeln.
