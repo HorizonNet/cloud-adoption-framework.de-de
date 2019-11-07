@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 43e577eb429928efd0857549319e46a36c49a9e1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 887d2e2ec410b761fdc81b87d83f3a471c3bf99e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025093"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566554"
 ---
 # <a name="refactor-a-team-foundation-server-deployment-to-azure-devops-services"></a>Umgestalten einer Team Foundation Server-Bereitstellung zu Azure DevOps Services
 
@@ -132,7 +132,7 @@ Das Upgrade wird wie folgt durchgeführt:
 
 **Benötigen Sie weitere Hilfe?**
 
-Informationen zum Durchführen von Upgrades für TFS finden Sie [hier](/tfs/server/upgrade/get-started).
+Informationen zum Durchführen von Upgrades für TFS finden Sie [hier](https://docs.microsoft.com/tfs/server/upgrade/get-started).
 
 ## <a name="step-3-validate-the-tfs-collection"></a>Schritt 3: Überprüfen der TFS-Sammlung
 
