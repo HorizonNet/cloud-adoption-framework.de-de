@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 7b635ea417502a175b7fe308e5faeee1ff8a65a5
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 30dd36841171ebc0e239a8e59f94d290cc5782c7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048403"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561768"
 ---
 # <a name="azure-fundamental-concepts"></a>Grundlegende Konzepte in Azure
 
@@ -91,11 +91,11 @@ Die folgenden Ressourcen bieten detaillierte Informationen über die Konzepte, d
 - [Was ist Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
 - [Zuordnen oder Hinzufügen eines Azure-Abonnements zu Ihrem Azure Active Directory-Mandanten](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
 - [Topologien für Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies)
-- [Abonnements, Lizenzen, Konten und Mandanten für die Microsoft-Cloudangebote](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
+- [Abonnements, Lizenzen, Konten und Mandanten für die Microsoft-Cloudangebote](https://docs.microsoft.com/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nun, da Sie die grundlegenden Azure-Konzepte kennen, geht es als Nächstes um das [Skalieren mit mehreren Azure-Abonnements](./scaling-subscriptions.md).
+Nun, da Sie die grundlegenden Azure-Konzepte kennen, geht es als Nächstes um das [Skalieren mit mehreren Azure-Abonnements](../azure-best-practices/scaling-subscriptions.md).
 
 > [!div class="nextstepaction"]
-> [Skalieren mit mehreren Azure-Abonnements](./scaling-subscriptions.md)
+> [Skalieren mit mehreren Azure-Abonnements](../azure-best-practices/scaling-subscriptions.md)

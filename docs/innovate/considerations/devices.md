@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c226c765390805bf4b9ae52ebaf74d337286b90e
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 309ea099eee5fcec5700a48afc4376dbc30805f9
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047671"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565652"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>Umgebungserfahrungen: Interagieren mit Geräten
 
@@ -46,7 +46,7 @@ Die erste Phase der Umgebungserfahrung stellt das Lösen des Benutzers vom Compu
 
 Wenn Kunden mobil sind und häufig ihren Standort wechseln, kann dies die relevanteste Form der Umgebungserfahrung für eine bestimmte Lösung sein. Im letzten Jahrzehnt wurden Innovationen häufig durch die Integration vorhandener Lösungen in eine mobile Umgebung ausgelöst.
 
-Azure App Service ist ein gutes Beispiel für diesen Ansatz. Während der ersten Iterationen kann die [Web-App-Funktion von Azure App Service](/azure/app-service/overview) zum Testen der Hypothese verwendet werden. Mit zunehmender Komplexität der Hypothesen kann die [mobile App-Funktion von Azure App Services](/azure/app-service-mobile/) die Web-App so erweitern, dass sie auf einer Vielzahl mobiler Plattformen ausgeführt wird.
+Azure App Service ist ein gutes Beispiel für diesen Ansatz. Während der ersten Iterationen kann die [Web-App-Funktion von Azure App Service](https://docs.microsoft.com/azure/app-service/overview) zum Testen der Hypothese verwendet werden. Mit zunehmender Komplexität der Hypothesen kann die [mobile App-Funktion von Azure App Services](https://docs.microsoft.com/azure/app-service-mobile) die Web-App so erweitern, dass sie auf einer Vielzahl mobiler Plattformen ausgeführt wird.
 
 ## <a name="mixed-reality"></a>Mixed Reality
 
@@ -68,7 +68,7 @@ Diese Erfahrung ist ideal, wenn sich eine bestimmte Art von Gerät stets in der 
 Beispiele für integrierte Realität in Azure sind u. a.:
 
 - [Azure IoT-Lösungen:](https://docs.microsoft.com/azure/iot-fundamentals) eine Sammlung von Diensten in Azure, die alle bei der Verwaltung von Geräten und dem Fluss von Daten von diesen Geräten in die Cloud und zurück zu Endbenutzern helfen
-- [Azure Sphere:](/azure-sphere) eine Kombination aus Hardware und Software. Azure Sphere ist eine inhärent sichere Möglichkeit, einem bestehenden Gerät zu ermöglichen, Daten sicher von und zu Azure IoT-Lösungen zu übertragen.
+- [Azure Sphere:](https://docs.microsoft.com/azure-sphere) eine Kombination aus Hardware und Software. Azure Sphere ist eine inhärent sichere Möglichkeit, einem bestehenden Gerät zu ermöglichen, Daten sicher von und zu Azure IoT-Lösungen zu übertragen.
 - [Azure Kinect Developer Kit:](https://docs.microsoft.com/azure/Kinect-dk) KI-Sensoren mit erweiterten Modellen für maschinelles Sehen und Sprache. Diese Sensoren können visuelle und Audiodaten aus der unmittelbaren Umgebung erfassen und als Eingaben an Ihre Lösung übermitteln.
 
 Sie können diese drei Tools zum Sammeln von Daten aus der natürlichen Umgebung zum Zeitpunkt der Kundenanforderung verwenden. Anschließend kann Ihre Lösung auf diese Dateneingaben reagieren, um das Bedürfnis zu erfüllen, manchmal bevor der Kunde überhaupt weiß, dass ein Auslöser für dieses Bedürfnis entstanden ist.
@@ -81,7 +81,7 @@ Virtuelle Assistenten und intelligente Lautsprecher sind ein gutes Beispiel für
 
 Fabrikhallen auf der ganzen Welt bieten zusätzliche Beispiele für angepasste Realität. In frühen Phasen integrierter Realität erkannten Sensoren von Geräten Bedingungen wie Überhitzung und warnten dann einen menschlichen Bediener über eine Anwendung. Bei der angepassten Realität ist der Kunde möglicherweise weiterhin beteiligt, aber die Feedbackschleife ist enger. In einer Fabrikhalle mit angepasster Realität erkennt ein Gerät eine Überhitzung in einer kritischen Maschine irgendwo an der Montagelinie. An anderer Stelle in der Halle verlangsamt dann ein zweites Gerät die Produktion etwas, damit die Maschine abkühlen kann. Nachdem der Vorfall behoben wurde, wird das Tempo wieder aufgenommen. In dieser Situation spielt der Kunde keine wesentliche Rolle mehr. Der Kunde verwendet Ihre Anwendung, um die Regeln festzulegen und zu verstehen, wie sich diese Regeln auf die Produktion ausgewirkt haben – er ist jedoch kein erforderlicher Teil der Feedbackschleife mehr.
 
-Die in [Azure IoT-Lösungen](https://docs.microsoft.com/azure/iot-fundamentals), [Azure Sphere](/azure-sphere) und [Azure Kinect Developers Kit](https://docs.microsoft.com/azure/Kinect-dk) beschriebenen Azure-Dienste könnten jeweils Komponenten einer Lösung für angepasste Realität sein. Ihre ursprüngliche Anwendungs- und Geschäftslogik dient dabei als Vermittler zwischen den Eingaben aus der Umgebung und den Änderungen, die an der physischen Umgebung vorgenommen werden müssen.
+Die in [Azure IoT-Lösungen](https://docs.microsoft.com/azure/iot-fundamentals), [Azure Sphere](https://docs.microsoft.com/azure-sphere) und [Azure Kinect Developers Kit](https://docs.microsoft.com/azure/Kinect-dk) beschriebenen Azure-Dienste könnten jeweils Komponenten einer Lösung für angepasste Realität sein. Ihre ursprüngliche Anwendungs- und Geschäftslogik dient dabei als Vermittler zwischen den Eingaben aus der Umgebung und den Änderungen, die an der physischen Umgebung vorgenommen werden müssen.
 
 Ein digitaler Zwilling ist ein weiteres Beispiel für angepasste Realität. Dieser Begriff bezieht sich auf eine digitale Darstellung eines physischen Geräts, das über Computer-, mobile oder Mixed Reality-Formate dargestellt wird. Im Gegensatz zu weniger komplexen 3D-Modellen spiegelt ein digitaler Zwilling Daten wider, die von einem realen Gerät in der physischen Umgebung gesammelt wurden. Diese Lösung ermöglicht dem Benutzer, mit der digitalen Darstellung auf eine Weise zu interagieren, die in der realen Welt unmöglich wäre. Bei diesem Ansatz passen physische Geräte eine Mixed Reality-Umgebung an. Die Lösung sammelt jedoch nach wie vor Daten aus einer Lösung mit integrierter Realität und nutzt diese, um die Realität der aktuellen Umgebung des Kunden zu gestalten.
 

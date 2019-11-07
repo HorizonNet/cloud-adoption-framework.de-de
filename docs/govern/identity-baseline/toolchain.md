@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 42c0d24d36785615013076b54c0ec51cc2ec4cb4
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 5c06523d2b22293463d55f05c397dd55247f4369
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047924"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566169"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Tools für Identitätsbaseline in Azure
 
@@ -77,6 +77,6 @@ Im Folgenden finden Sie eine Tabelle der nativen Tools, die bei der Verfeinerung
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Das [Whitepaper zum Hybrididentitätsframework für die digitale Transformation](https://resources.office.com/ww-landing-M365E-EMS-IDAM-Hybrid-Identity-WhitePaper.html?LCID=EN-US) beschreibt Kombinationen und Lösungen für die Auswahl und Integration jeder dieser Komponenten.
+Das [Whitepaper zum Hybrididentitätsframework für die digitale Transformation](https://resources.office.com/ww-landing-M365E-EMS-IDAM-Hybrid-Identity-WhitePaper.html) beschreibt Kombinationen und Lösungen für die Auswahl und Integration jeder dieser Komponenten.
 
 Mit dem [Azure AD Connect-Tool](https://aka.ms/aadconnectwiz) können Sie Ihre lokalen Verzeichnisse in Azure AD integrieren.

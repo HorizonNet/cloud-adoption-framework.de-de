@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 997975a01b171ca1613ace518f29047793c6d437
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: f854b103decc3b23f27a41d01a81b812d2bc3c3f
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980071"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565701"
 ---
 # <a name="democratize-data"></a>Demokratisieren von Daten
 
@@ -80,7 +80,7 @@ Diese unterschiedlichen Datenformen können Sie im Rahmen einer OLAP- oder Big D
 
 **Virtualisieren:** Die Integration und Erfassung von Daten kann manchmal die Innovation bremsen. Wenn bereits eine Lösung für die Datenvirtualisierung verfügbar ist, stellt dies möglicherweise ein geeigneteren Ansatz dar. Erfassung und Integration können sowohl Speicher- als auch Entwicklungsanforderungen duplizieren, die Datenlatenz steigern, die Angriffsfläche vergrößern, Qualitätsprobleme verursachen und den Governanceaufwand erhöhen. Die Datenvirtualisierung ist eine zeitgemäße Alternative, bei der die ursprünglichen Daten an einem einzigen Ort gespeichert werden und Pass-Through- oder zwischengespeicherte Abfragen der Quelldaten erstellt werden.
 
-SQL Server 2017 und Azure SQL Data Warehouse unterstützen [PolyBase](/sql/relational-databases/polybase/polybase-guide). Dies ist der in Azure am häufigsten verwendete Ansatz zur Datenvirtualisierung.
+SQL Server 2017 und Azure SQL Data Warehouse unterstützen [PolyBase](https://docs.microsoft.com/sql/relational-databases/polybase/polybase-guide). Dies ist der in Azure am häufigsten verwendete Ansatz zur Datenvirtualisierung.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

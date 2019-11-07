@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e79966dbcbb00cb59fc88133c3ac62255a395a27
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ced1c366b4eb85c9692e9d65ebdbb034e32bc9b3
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022107"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239887"
 ---
 # <a name="manage-access-to-your-azure-environment-with-role-based-access-controls"></a>Verwalten des Zugriffs auf Ihre Azure-Umgebung per rollenbasierter Zugriffssteuerung
 
@@ -29,7 +29,7 @@ Bei der Planung Ihrer Strategie für die Zugriffssteuerung erteilen Sie Benutzer
 
 Wenn Sie Ihre Vorgehensweise für die Zugriffssteuerung planen, empfehlen wir die Zusammenarbeit mit Personen in Ihrer Organisation, die über Rollen für die folgenden Bereiche verfügen: „Sicherheit und Konformität“, „IT-Verwaltung“ und „Enterprise-Architekt“.
 
-Das Framework für die Cloudeinführung (Cloud Adoption Framework) bietet zusätzliche Anleitungen zur Verwendung der [ rollenbasierter Zugriffssteuerung](../azure-best-practices/roles.md) im Rahmen Ihrer Cloudeinführungsbemühungen.
+Das Framework für die Cloudeinführung (Cloud Adoption Framework) bietet zusätzliche Anleitungen zur Verwendung der [ rollenbasierter Zugriffssteuerung](../considerations/roles.md) im Rahmen Ihrer Cloudeinführungsbemühungen.
 
 ::: zone target="chromeless"
 
@@ -88,6 +88,6 @@ So gewähren Sie einem Benutzer Zugriff auf ein Abonnement:
 Weitere Informationen finden Sie unter:
 
 - [Was ist die rollenbasierte Zugriffssteuerung (RBAC)?](https://docs.microsoft.com/azure/role-based-access-control/overview)
-- [Cloud Adoption Framework: Verwenden von rollenbasierter Zugriffssteuerung](../azure-best-practices/roles.md)
+- [Cloud Adoption Framework: Verwenden von rollenbasierter Zugriffssteuerung](../considerations/roles.md)
 
 ::: zone-end

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8be46c21a009b7dca11cfc628476ae46315b23e5
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 79102a3664f055489da37fc3de0ec7156c1272ef
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025233"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239831"
 ---
 # <a name="organize-your-azure-resources"></a>Organisieren Ihrer Azure-Ressourcen
 
@@ -40,7 +40,7 @@ Sie können Verwaltungseinstellungen, z. B. Richtlinien und die rollenbasierte 
 
 In der Regel ist es sinnvoll, wichtige Einstellungen auf höheren Ebenen und projektspezifische Anforderungen auf niedrigeren Ebenen anzuwenden. Sie könnten beispielsweise sicherstellen, dass alle Ressourcen für Ihre Organisation in bestimmten Regionen bereitgestellt werden. Hierfür wenden Sie eine Richtlinie, die die zulässigen Standorte angibt, auf das Abonnement an. Wenn andere Benutzer in Ihrer Organisation neue Ressourcengruppen und Ressourcen hinzufügen, werden die zulässigen Standorte automatisch erzwungen. Weitere Informationen zu Richtlinien finden Sie im Abschnitt zu Governance, Sicherheit und Konformität in diesem Leitfaden.
 
-Wenn Sie nur über wenige Abonnements verfügen, ist deren unabhängige Verwaltung relativ einfach. Wenn die Anzahl der von Ihnen verwendeten Abonnements steigt, sollten Sie erwägen, eine Verwaltungsgruppenhierarchie zu erstellen, um die Verwaltung Ihrer Abonnements und Ressourcen zu vereinfachen. Weitere Informationen zum Verwalten mehrerer Abonnements finden Sie unter [Skalieren mit mehreren Azure-Abonnements](../considerations/scaling-subscriptions.md).
+Wenn Sie nur über wenige Abonnements verfügen, ist deren unabhängige Verwaltung relativ einfach. Wenn die Anzahl der von Ihnen verwendeten Abonnements steigt, sollten Sie erwägen, eine Verwaltungsgruppenhierarchie zu erstellen, um die Verwaltung Ihrer Abonnements und Ressourcen zu vereinfachen. Weitere Informationen zum Verwalten mehrerer Abonnements finden Sie unter [Skalieren mit mehreren Azure-Abonnements](../azure-best-practices/scaling-subscriptions.md).
 
 Zur Planung Ihrer Konformitätsstrategie arbeiten Sie mit Personen in Ihrer Organisation zusammen, die über Rollen für die folgenden Bereiche verfügen: „Sicherheit und Konformität“, „IT-Verwaltung“, „Enterprise-Architekt“, „Netzwerk“, „Finanzen“ und „Beschaffung“.
 
@@ -79,7 +79,7 @@ Erstellen Sie eine Ressourcengruppe für Ressourcen wie Web-Apps, Datenbanken un
 Weitere Informationen finden Sie unter:
 
 - [Azure-Grundlagen](../considerations/fundamental-concepts.md)
-- [Skalieren mit mehreren Azure-Abonnements](../considerations/scaling-subscriptions.md)
+- [Skalieren mit mehreren Azure-Abonnements](../azure-best-practices/scaling-subscriptions.md)
 - [Grundlegendes zur Ressourcenzugriffsverwaltung in Azure](../../govern/resource-consistency/resource-access-management.md)
 - [Organisieren Ihrer Ressourcen mit Azure-Verwaltungsgruppen](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
 - [Einschränkungen bei Abonnementdiensten](https://docs.microsoft.com/azure/azure-subscription-service-limits)
@@ -130,7 +130,7 @@ Mit einem durchdachten Benennungsstandard lassen sich Ressourcen im Azure-Portal
 
 - Auf der operativen Seite sollte sichergestellt werden, dass die Namen von IT-Teams benötigte Informationen enthalten. Verwenden Sie die Details, die die Workload, Anwendung, Umgebung, Wichtigkeit und andere Informationen identifizieren, die für die Verwaltung von Ressourcen nützlich sind.
 
-Verschiedene Ressourcentypen können unterschiedliche Längenbeschränkungen und zulässige Zeichen aufweisen, von denen viele im Artikel zu den bewährten Methoden für [Azure-Namenskonventionen](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions) aufgeführt sind. Weitere Informationen und Empfehlungen, die speziell auf die Unterstützung von Bemühungen zur Einführung von Enterprise Clouds abzielen, finden Sie in der [Anleitung zu Benennung und Tagging](../considerations/naming-and-tagging.md) für das Framework für die Cloudeinführung (Cloud Adoption Framework).
+Verschiedene Ressourcentypen können unterschiedliche Längenbeschränkungen und zulässige Zeichen aufweisen, von denen viele im Artikel zu den bewährten Methoden für [Azure-Namenskonventionen](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions) aufgeführt sind. Weitere Informationen und Empfehlungen, die speziell auf die Unterstützung von Bemühungen zur Einführung von Enterprise Clouds abzielen, finden Sie in der [Anleitung zu Benennung und Tagging](../azure-best-practices/naming-and-tagging.md) für das Framework für die Cloudeinführung (Cloud Adoption Framework).
 
 Die folgende Tabelle enthält Namensmuster für einige Beispieltypen von Azure-Ressourcen.
 
@@ -159,9 +159,9 @@ Sie können Tags auch für viele andere Dinge verwenden. Sie werden häufig für
 - **Automatisierung:** Unter Umständen verfügen Sie über regelmäßig ausgeführte Skripts, die basierend auf einem Tagwert wie „ShutdownTime“ oder „DeprovisionDate“ eine Aktion durchführen können.
 - **Abrechnung**: Tags können in Ihrer Rechnung angezeigt werden. Dadurch können Sie Ihre Rechnung beispielsweise mithilfe von Tags wie „CostCenter“ oder „BillTo“ segmentieren.
 
-Jede Ressource oder Ressourcengruppe kann maximal 15 Tagname-Wert-Paare besitzen. Diese Einschränkung gilt nur für Tags, die direkt auf die Ressourcengruppe oder die Ressource angewendet werden.
+Jede Ressource oder Ressourcengruppe kann maximal 50 Tagname-Wert-Paare aufweisen. Diese Einschränkung gilt nur für Tags, die direkt auf die Ressourcengruppe oder die Ressource angewendet werden.
 
-Weitere Empfehlungen und Beispiele zum Tagging finden Sie in der [Anleitung zum Tagging](../considerations/naming-and-tagging.md) für das Framework für die Cloudeinführung (Cloud Adoption Framework).
+Weitere Empfehlungen und Beispiele zum Tagging finden Sie in der [Anleitung zum Tagging](../azure-best-practices/naming-and-tagging.md) für das Framework für die Cloudeinführung (Cloud Adoption Framework).
 
 ::: zone target="docs"
 

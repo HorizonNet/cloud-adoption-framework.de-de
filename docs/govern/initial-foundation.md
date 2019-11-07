@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 3e1f2c1b54a55a740376ba1d1c45c13dc9e7e26d
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: aae20779a4009692ebf52602341d81939dee01ea
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032443"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239526"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>Einrichten einer ersten Grundlage für die Cloud Governance
 
@@ -25,7 +25,7 @@ Dieser Artikel bietet zwei Möglichkeiten, um eine erste Grundlage für die Gove
 
 ## <a name="already-using-the-cloud-adoption-framework"></a>Das Cloud Adoption Framework wird bereits verwendet
 
-Wenn Sie das Cloud Adoption Framework verfolgt haben, haben Sie möglicherweise bereits ein Governance-MVP bereitgestellt. Anleitung ist ein wichtiger Aspekt jedes Betriebsmodells. Sie ist in jeder Phase des Lebenszyklus der Cloudeinführung präsent. Als solches bietet das [Cloud Adoption Framework](../index.md) eine Anleitung, die Governance in Aktivitäten in Bezug auf die Implementierung Ihres [Cloudeinführungsplans](../plan/index.md) einführt. Ein Beispiel für diese Governanceintegration ist die Verwendung von Blaupausen zum Bereitstellen einer oder mehrerer Landezonen, die im Leitfaden zur [Bereitschaft](../ready/index.md) zu finden sind. Ein weiteres Beispiel ist die Anleitung zum [horizontalen Skalieren von Abonnements](../ready/considerations/scaling-subscriptions.md). Wenn Sie eine dieser Empfehlungen befolgt haben, sind die folgenden MVP-Abschnitte als einfache Übersicht über Ihre bereits getroffenen Bereitstellungsentscheidungen zu erachten. Wechseln Sie nach einer kurzen Überprüfung zum [Ausreifen der anfänglichen Governancelösung und Anwenden von Kontrollen für bewährte Methoden](./foundation-improvements.md).
+Wenn Sie das Cloud Adoption Framework verfolgt haben, haben Sie möglicherweise bereits ein Governance-MVP bereitgestellt. Anleitung ist ein wichtiger Aspekt jedes Betriebsmodells. Sie ist in jeder Phase des Lebenszyklus der Cloudeinführung präsent. Als solches bietet das [Cloud Adoption Framework](../index.md) eine Anleitung, die Governance in Aktivitäten in Bezug auf die Implementierung Ihres [Cloudeinführungsplans](../plan/index.md) einführt. Ein Beispiel für diese Governanceintegration ist die Verwendung von Blaupausen zum Bereitstellen einer oder mehrerer Landezonen, die im Leitfaden zur [Bereitschaft](../ready/index.md) zu finden sind. Ein weiteres Beispiel ist die Anleitung zum [horizontalen Skalieren von Abonnements](../ready/azure-best-practices/scaling-subscriptions.md). Wenn Sie eine dieser Empfehlungen befolgt haben, sind die folgenden MVP-Abschnitte als einfache Übersicht über Ihre bereits getroffenen Bereitstellungsentscheidungen zu erachten. Wechseln Sie nach einer kurzen Überprüfung zum [Ausreifen der anfänglichen Governancelösung und Anwenden von Kontrollen für bewährte Methoden](./foundation-improvements.md).
 
 ## <a name="establish-an-initial-governance-foundation"></a>Einrichten einer ersten Grundlage für die Governance
 

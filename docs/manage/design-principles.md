@@ -8,18 +8,18 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8ea3610ed65ae45d924ca65ef26d249ed8343d0b
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 8daab86846ef0c3dbc93a5382f76080f678c1a08
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979966"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565012"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>Umsetzen von Entwurfsprinzipien und erweiterten Vorgängen
 
 In den ersten drei Fachrichtungen der Cloudverwaltung wird eine Verwaltungsbaseline beschrieben. Als Mindestanforderung muss eine Verwaltungsbaseline eine Standardverpflichtung gegenüber den Fachbereichen vorsehen, um Betriebsunterbrechungen zu minimieren und die Wiederherstellung zu beschleunigen, sollte der Dienst unterbrochen werden. Die meisten Verwaltungsbaselines legen den Schwerpunkt auf die Aufrechterhaltung von „Bestand und Transparenz“, „betriebsbezogener Konformität“ sowie „Schutz und Wiederherstellung“.
 
-Der Zweck einer Verwaltungsbaseline besteht darin, ein stimmiges Angebot zu schaffen, das für alle unterstützten Workloads ein Mindestmaß an geschäftlicher Verpflichtung vorsieht. Diese Baseline für allgemeine, wiederholbare Verwaltungsangebote ermöglicht dem Team, ein äußerst optimiertes Maß an Betriebsführung mit nur minimalen Abweichungen zu gewährleisten. Aber dieses Standardangebot stellt möglicherweise keine ausreichend große Verpflichtung gegenüber dem Unternehmen dar. 
+Der Zweck einer Verwaltungsbaseline besteht darin, ein stimmiges Angebot zu schaffen, das für alle unterstützten Workloads ein Mindestmaß an geschäftlicher Verpflichtung vorsieht. Diese Baseline für allgemeine, wiederholbare Verwaltungsangebote ermöglicht dem Team, ein äußerst optimiertes Maß an Betriebsführung mit nur minimalen Abweichungen zu gewährleisten. Aber dieses Standardangebot stellt möglicherweise keine ausreichend große Verpflichtung gegenüber dem Unternehmen dar.
 
 Das Diagramm im nächsten Abschnitt veranschaulicht drei Möglichkeiten, über die Verwaltungsbaseline hinauszugehen.
 
@@ -37,7 +37,7 @@ Wie im Azure-Verwaltungsleitfaden beschrieben, werden im Rahmen einer Verwaltung
 
 ## <a name="management-specialization"></a>Verwaltungsspezialisierung
 
-Aspekte des Workload- und Plattformbetriebs könnten Änderungen an Entwurfs- und Architekturprinzipien erfordern. Diese Änderungen könnten Zeit in Anspruch nehmen und zu erhöhten Betriebskosten führen. Um die Anzahl der Workloads zu reduzieren, die solche Investitionen erfordern, kann eine optimierte Verwaltungsbaseline eine ausreichende Verbesserung zur Erfüllung von Verpflichtungen gegenüber den Fachbereichen bewirken.
+Aspekte des Workload- und Plattformbetriebs könnten Änderungen an Entwurfs- und Architekturprinzipien erfordern. Diese Änderungen könnten Zeit in Anspruch nehmen und zu erhöhten Betriebskosten führen. Um die Anzahl der Workloads zu reduzieren, die solche Investitionen erfordern, kann eine optimierte Verwaltungsbaseline eine ausreichende Verbesserung zur Erfüllung geschäftlicher Verpflichtungen bewirken.
 
 Für Workloads, die eine höhere Investition zur Erfüllung von Verpflichtungen gegenüber den Fachbereichen rechtfertigen, ist die Betriebsspezialisierung entscheidend.
 
@@ -45,8 +45,8 @@ Für Workloads, die eine höhere Investition zur Erfüllung von Verpflichtungen 
 
 Es gibt zwei Spezialisierungsbereiche:
 
-- **Plattformspezialisierung**: Investieren in den laufenden Betrieb einer gemeinsam genutzten Plattform und Verteilen der Investition auf mehrere Workloads.
-- **Workloadspezialisierung**: Investieren in den laufenden Betrieb einer bestimmten Workload, was in der Regel für unternehmenskritische Workloads reserviert ist.
+- **Plattformspezialisierung:** Investieren in den laufenden Betrieb einer gemeinsam genutzten Plattform und Verteilen der Investition auf mehrere Workloads.
+- **Workloadspezialisierung:** Investieren in den laufenden Betrieb einer bestimmten Workload, was in der Regel für unternehmenskritische Workloads reserviert ist.
 
 ### <a name="central-it-or-cloud-center-of-excellence-ccoe"></a>Zentrale IT oder Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE)
 
@@ -54,12 +54,13 @@ Entscheidungen für eine Plattform- oder Workloadspezialisierung basieren auf de
 
 Eine Workloadspezialisierung löst häufig eine kulturelle Änderung aus. Sowohl die konventionelle IT als auch die zentrale IT bilden Prozesse aus, die eine skalierbare Unterstützung bieten können. Die Skalierung der Unterstützung ist für wiederholbare Dienste besser realisierbar, die in einer Verwaltungsbaseline, einer erweiterten Baseline oder sogar im Plattformbetrieb angesiedelt sind. Eine Workloadspezialisierung lässt sich häufig nicht skalieren. Dieser Mangel an Skalierbarkeit erschwert es einer zentralisierten IT-Organisation, die notwendige Unterstützung zu leisten, ohne die Grenzen der Skalierbarkeit der Organisation zu erreichen.
 
-Alternativ lässt sich der auf einem Cloudkompetenzzentrum basierende Ansatz durch gezielte Delegierung von Zuständigkeiten und selektive Zentralisierung skalieren. Eine Workloadspezialisierung lässt sich meist besser auf den Ansatz der delegierten Zuständigkeit eines CCoE abstimmen. 
+Alternativ lässt sich der auf einem Cloudkompetenzzentrum basierende Ansatz durch gezielte Delegierung von Zuständigkeiten und selektive Zentralisierung skalieren. Eine Workloadspezialisierung lässt sich meist besser auf den Ansatz der delegierten Zuständigkeit eines CCoE abstimmen.
 
 Die natürliche Abstimmung von Rollen in einem CCoE wird wie folgt dargestellt:
-- Das Cloudplattformteam hilft beim Aufbau gemeinsamer Plattformen, die von mehreren Cloudeinführungsteams unterstützt werden. 
-- Das Cloudautomatisierungsteam erweitert diese Plattformen zu bereitstellbaren Ressourcen in einem Dienstkatalog. 
-- Die Cloudverwaltung stellt die Verwaltungsbaseline zentral bereit und unterstützt die Nutzung des Dienstkatalogs. 
+
+- Das Cloudplattformteam hilft beim Aufbau gemeinsamer Plattformen, die von mehreren Cloudeinführungsteams unterstützt werden.
+- Das Cloudautomatisierungsteam erweitert diese Plattformen zu bereitstellbaren Ressourcen in einem Dienstkatalog.
+- Die Cloudverwaltung stellt die Verwaltungsbaseline zentral bereit und unterstützt die Nutzung des Dienstkatalogs.
 - Allerdings trägt der Geschäftsbereich (in Form eines geschäftsbereichsorientierten DevOps- oder Cloudeinführungsteams) die Verantwortung für die täglichen auf Workloads, Pipelines oder Leistung bezogenen Abläufe.
 
 Bei der Koordination von Verwaltungsbereichen können die Modelle der zentralen IT und des CCoE bei minimalem kulturellem Wandel im Allgemeinen auf der Plattformspezialisierung aufsetzen. Das Aufsetzen auf der Workloadspezialisierung könnte für Teams in einer zentralen IT-Organisation etwas komplexer sein.
@@ -68,22 +69,22 @@ Bei der Koordination von Verwaltungsbereichen können die Modelle der zentralen 
 
 Im Rahmen jeder Spezialisierung erfolgt der folgende vierstufige Prozess in einem disziplinierten, iterativen Ansatz. Dieser Ansatz erfordert eine Partnerschaft von Experten für Cloudeinführung, Cloudplattformen, Cloudautomatisierung und Cloudverwaltung, um eine funktionierende und überlegte Feedbackschleife zu schaffen.
 
-- **Verbessern des Systementwurfs**: Verbesserung des Entwurfs gängiger Systeme (Plattformen) oder spezifischer Workloads, um Unterbrechungen effektiv zu minimieren.
-- **Automatisieren der Korrektur**: Einige Verbesserungen sind nicht wirtschaftlich. In solchen Fällen könnte es sinnvoller sein, die Korrektur zu automatisieren und die Auswirkungen von Unterbrechungen zu reduzieren.
-- **Skalieren der Lösung**: Bei verbessertem Systementwurf und automatisierter Korrektur können Sie diese Änderungen über den Dienstkatalog in der gesamten Umgebung skalieren.
-- **Fortlaufende Verbesserung**: Sie können verschiedene Überwachungstools einsetzen, um inkrementelle Verbesserungen zu identifizieren, die im nächsten Durchlauf des Entwurfs, der Automatisierung und der Skalierung des Systems berücksichtigt werden.
+- **Verbessern des Systementwurfs:** Verbesserung des Entwurfs gängiger Systeme (Plattformen) oder spezifischer Workloads, um Unterbrechungen effektiv zu minimieren.
+- **Automatisieren der Korrektur:** Einige Verbesserungen sind nicht wirtschaftlich. In solchen Fällen könnte es sinnvoller sein, die Korrektur zu automatisieren und die Auswirkungen von Unterbrechungen zu reduzieren.
+- **Skalieren der Lösung:** Bei verbessertem Systementwurf und automatisierter Korrektur können Sie diese Änderungen über den Dienstkatalog in der gesamten Umgebung skalieren.
+- **Fortlaufende Verbesserung:** Sie können verschiedene Überwachungstools einsetzen, um inkrementelle Verbesserungen zu identifizieren, die im nächsten Durchlauf des Entwurfs, der Automatisierung und der Skalierung des Systems berücksichtigt werden.
 
 ### <a name="improve-system-design"></a>Verbessern des Systementwurfs
 
-Das Verbessern des Systementwurfs ist der effektivste Ansatz zur Optimierung des Betriebs einer jeden gängigen Plattform. Verbesserungen des Systementwurfs können die Stabilität erhöhen und Betriebsunterbrechungen verringern. Der Entwurf einzelner Systeme wird für die Umgebungssicht nicht berücksichtigt, die das Framework für die Cloudeinführung (Cloud Adoption Framework) einnimmt. Als Ergänzung dieses Frameworks bietet das Azure Architecture Framework bewährte Methoden zur Verbesserung der Resilienz und des Entwurfs eines bestimmten Systems. Sie können diese Entwurfsverbesserungen für den Systementwurf einer Plattform oder einer bestimmten Workload übernehmen.
+Das Verbessern des Systementwurfs ist der effektivste Ansatz zur Optimierung des Betriebs jeder gängigen Plattform. Verbesserungen des Systementwurfs können die Stabilität erhöhen und Betriebsunterbrechungen verringern. Der Entwurf einzelner Systeme wird für die Umgebungssicht nicht berücksichtigt, die das Framework für die Cloudeinführung (Cloud Adoption Framework) einnimmt. Als Ergänzung dieses Frameworks bietet das Azure Architecture Framework bewährte Methoden zur Verbesserung der Resilienz und des Entwurfs eines bestimmten Systems. Sie können diese Entwurfsverbesserungen für den Systementwurf einer Plattform oder einer bestimmten Workload übernehmen.
 
 Das Azure Architecture Framework konzentriert sich auf die Verbesserung von fünf Grundpfeilern des Systementwurfs:
 
 - **Skalierbarkeit:** Skalieren der allgemeinen Plattformressourcen, um eine gestiegene Last zu bewältigen.
 - **Verfügbarkeit:** Verringern von Geschäftsunterbrechungen durch Verlängern der potenziellen Betriebszeit.
 - **Resilienz:** Verkürzen von Wiederherstellungszeiten und so der Dauer von Unterbrechungen.
-- **Sicherheit:** Schützen von Anwendungen und Daten vor externen Bedrohungen.
-- **Verwaltung**: Spezifisch für diese allgemeinen Plattformressourcen erfolgende Betriebsprozesse.
+- **Sicherheit**: Schützen von Anwendungen und Daten vor externen Bedrohungen.
+- **Verwaltung:** Spezifisch für diese allgemeinen Plattformressourcen erfolgende Betriebsprozesse.
 
 Die meisten Betriebsunterbrechungen sind Folge einer Form von technischen Schulden oder einer unzulänglichen Architektur. Bei bestehenden Bereitstellungen können Verbesserungen des Systementwurfs als das Abtragen bestehender technischer Schulden angesehen werden. Bei Neubereitstellungen können Verbesserungen des Systementwurfs als das Vermeiden technischer Schulden verstanden werden. Der nächste Abschnitt, „Automatisierte Korrektur“, befasst sich mit Möglichkeiten, technische Schulden anzugehen, die nicht beseitigt werden können oder sollten.
 
@@ -107,7 +108,7 @@ Informationen zur Veröffentlichung in einem Dienstkatalog finden Sie in der Rei
 
 ### <a name="continuous-improvement"></a>Fortlaufende Verbesserung
 
-Sowohl Plattformspezialisierung als auch Plattformbetrieb hängen von funktionierenden Feedbackschleifen zwischen dem Einführungs-, Plattform-, Automatisierungs- und Verwaltungsteam ab. Die Kopplung dieser Feedbackschleifen mit Daten ermöglicht es jedem Team, kluge Entscheidungen zu treffen. Damit beim Plattformbetrieb langfristige Geschäftsverpflichtungen erfüllt werden, ist es wichtig, für die zentralisierte Plattform spezifische Erkenntnisse zu nutzen. Da Container und SQL Server die beiden am häufigsten verwendeten zentral verwalteten Plattformen sind, sollten Sie mithilfe der folgenden Artikel mit der Datensammlung zur fortlaufenden Verbesserung beginnen: 
+Sowohl Plattformspezialisierung als auch Plattformbetrieb hängen von funktionierenden Feedbackschleifen zwischen dem Einführungs-, Plattform-, Automatisierungs- und Verwaltungsteam ab. Die Kopplung dieser Feedbackschleifen mit Daten ermöglicht jedem Team, kluge Entscheidungen zu treffen. Damit beim Plattformbetrieb langfristige Geschäftsverpflichtungen erfüllt werden, ist es wichtig, für die zentralisierte Plattform spezifische Erkenntnisse zu nutzen. Da Container und SQL Server die beiden am häufigsten verwendeten zentral verwalteten Plattformen sind, sollten Sie mithilfe der folgenden Artikel mit der Datensammlung zur fortlaufenden Verbesserung beginnen:
 
 - [Containerleistung](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview)
 - [PaaS-Datenbankleistung](https://docs.microsoft.com/azure/azure-monitor/insights/azure-sql)

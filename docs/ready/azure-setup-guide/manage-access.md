@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 7ce8b1f8509ab0e51c94913ef010eb35b22b8978
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: dc52d39699e20a243a6d1156764e30063aea76a5
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72379032"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240131"
 ---
 # <a name="manage-access-to-your-azure-environment-with-role-based-access-controls"></a>Verwalten des Zugriffs auf Ihre Azure-Umgebung per rollenbasierter Zugriffssteuerung
 
@@ -29,7 +29,7 @@ Bei der Planung Ihrer Strategie für die Zugriffssteuerung erteilen Sie Benutzer
 
 Wenn Sie Ihre Vorgehensweise für die Zugriffssteuerung planen, empfehlen wir die Zusammenarbeit mit Personen in Ihrer Organisation, die über Rollen für die folgenden Bereiche verfügen: „Sicherheit und Konformität“, „IT-Verwaltung“ und „Enterprise-Architekt“.
 
-Das Framework für die Cloudeinführung (Cloud Adoption Framework) bietet zusätzliche Anleitungen zur Verwendung der [ rollenbasierter Zugriffssteuerung](../azure-best-practices/roles.md) im Rahmen Ihrer Cloudeinführungsbemühungen.
+Das Framework für die Cloudeinführung (Cloud Adoption Framework) bietet zusätzliche Anleitungen zur Verwendung der [ rollenbasierter Zugriffssteuerung](../considerations/roles.md) im Rahmen Ihrer Cloudeinführungsbemühungen.
 
 ::: zone target="chromeless"
 
@@ -88,6 +88,6 @@ So gewähren Sie einem Benutzer Zugriff auf ein Abonnement:
 Weitere Informationen finden Sie unter:
 
 - [Was ist die rollenbasierte Zugriffssteuerung (RBAC)?](https://docs.microsoft.com/azure/role-based-access-control/overview)
-- [Cloud Adoption Framework: Verwenden von rollenbasierter Zugriffssteuerung](../azure-best-practices/roles.md)
+- [Cloud Adoption Framework: Verwenden von rollenbasierter Zugriffssteuerung](../considerations/roles.md)
 
 ::: zone-end
