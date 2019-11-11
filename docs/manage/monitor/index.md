@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 315ba0898f6a301af6f91614290c51244fbf6eb0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 0920e834bcec0fc5885650ba5cab7ec28eac669f
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564914"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752780"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>Leitfaden zur Cloudüberwachung: Einführung
 
-Die Cloud hat die Beschaffung und Nutzung von Technologieressourcen durch Unternehmen grundlegend verändert. Früher lagen Besitz und Verantwortung für alle Ebenen der Technologie, von der Infrastruktur bis hin zur Software, beim Unternehmen. Heute bietet die Cloud Unternehmen die Möglichkeit, Ressourcen ganz nach Bedarf bereitzustellen und zu nutzen.
+Die Cloud verändert grundlegend, wie Unternehmen IT-Ressourcen beschaffen und nutzen. Früher lagen Besitz und Verantwortung für alle Ebenen der Technologie, von der Infrastruktur bis hin zur Software, beim Unternehmen. Heute bietet die Cloud Unternehmen die Möglichkeit, Ressourcen ganz nach Bedarf bereitzustellen und zu nutzen.
 
 Während die Cloud im Hinblick auf Entwurfsoptionen nahezu unbegrenzte Flexibilität bietet, setzen Unternehmen bei der Einführung von Cloudtechnologien auf eine bewährte und konsistente Methodik. Da jedes Unternehmen unterschiedliche Ziele und Zeitpläne für die Cloudeinführung hat, ist ein allgemeingültiger Ansatz für die Einführung nahezu unmöglich.
 
