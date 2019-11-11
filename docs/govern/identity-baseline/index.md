@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 7b670f2159784fdb948c95ea45b70adfd6a5fe2d
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c134cd2a3cf17cd4e650f637fec2c417f3c29ff1
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222243"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566198"
 ---
 # <a name="identity-baseline-discipline-overview"></a>Übersicht über die Disziplin „Identitätsbaseline“
 
@@ -33,9 +33,9 @@ Wenn Ihre Organisation nicht über internes Fachwissen zur Identitätsbaseline u
 Umsetzbare Richtlinienanweisungen und die daraus resultierenden Architekturanforderungen bilden die Grundlage für eine Disziplin der Identitätsbaseline. Beispiele für Richtlinienanweisungen finden Sie im Artikel über [Richtlinienanweisungen für Identitätsbaseline](./policy-statements.md). Diese Beispiele können als Ausgangspunkt für die Governancerichtlinien Ihrer Organisation dienen.
 
 > [!CAUTION]
-> Die Beispielrichtlinien basieren auf allgemeinen Kundenerfahrungen. Zur besseren Anpassung dieser Richtlinien an spezifische Anforderungen zur Cloudgovernance führen Sie die folgenden Schritte aus, um Richtlinienanweisungen zu erstellen, die Ihre individuellen Geschäftsanforderungen erfüllen.
+> Die Beispielrichtlinien basieren auf allgemeinen Kundenerfahrungen. Zur besseren Anpassung dieser Richtlinien an spezifische Anforderungen zur Cloud Governance führen Sie die folgenden Schritte aus, um Richtlinienanweisungen zu erstellen, die Ihre individuellen Geschäftsanforderungen erfüllen.
 
-## <a name="developing-identity-baseline-governance-policy-statements"></a>Entwickeln von Richtlinienanweisungen für Governance der Identitätsbaseline
+## <a name="develop-governance-policy-statements"></a>Entwickeln von Richtlinienanweisungen für Governance
 
 Die folgenden sechs Schritte enthalten Beispiele und mögliche Optionen, die bei der Entwicklung der Governance der Identitätsbaseline zu berücksichtigen sind. Verwenden Sie die einzelnen Schritte als Ausgangspunkte für Diskussionen innerhalb Ihres Cloudgovernanceteams sowie mit den beteiligten Geschäfts- und IT-Teams in Ihrer Organisation, um die Richtlinien und Prozesse auszuarbeiten, die zur Bewältigung identitätsbezogener Risiken erforderlich sind.
 

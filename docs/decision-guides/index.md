@@ -9,24 +9,24 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 1ddb65153cde9fac7426c8ef9b10f58a60918b82
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c5ffe30a66305dcff1df70a383f6716702b4a067
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223875"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753325"
 ---
 # <a name="architectural-decision-guides"></a>Leitfaden zur architekturbezogenen Entscheidungsfindung
 
 In den Leitfäden zur architekturbezogenen Entscheidungsfindung im Framework für die Cloudeinführung werden Muster und Modelle für das Erstellen von Entwurfsanleitungen für Cloud Governance beschrieben. Jeder Leitfaden zur Entscheidungsfindung konzentriert sich auf eine zentrale Infrastrukturkomponente von Cloudbereitstellungen und führt Muster und Modelle auf, die spezifische Cloudbereitstellungsszenarien unterstützen können.
 
-Wenn Sie beginnen, Cloud Governance in Ihrer Organisation zu etablieren, liefern nützliche Governancevorgehensweisen eine grundlegende Roadmap. Diese Anleitungen enthalten jedoch Annahmen über Anforderungen und Prioritäten, die möglicherweise nicht mit denen Ihrer Organisation übereinstimmen.
+Wenn Sie beginnen, Cloud Governance in Ihrer Organisation zu etablieren, liefern nützliche Governancevorgehensweisen eine grundlegende Roadmap. Diese Anleitungen enthalten aber Annahmen über Anforderungen und Prioritäten, die unter Umständen nicht mit denen Ihrer Organisation übereinstimmen.
 
 Diese Leitfäden zur Entscheidungsfindung ergänzen die exemplarischen Anleitungen zur Governance, indem sie alternative Muster und Modelle bereitstellen, die Ihnen helfen, die in der exemplarischen Entwurfsanleitung getroffenen Entscheidungen zum Architekturentwurf an Ihre eigenen Anforderungen anzupassen.
 
 ## <a name="decision-guidance-categories"></a>Kategorien von Entscheidungsleitfäden
 
-Jede der folgenden Kategorien stellt eine grundlegende Technologie aller Cloudbereitstellungen dar. In den exemplarischen Anleitungen zur Governance werden Entwurfsentscheidungen im Zusammenhang mit diesen Technologien auf der Grundlage der Anforderungen von Beispielunternehmen getroffen. Einige dieser Entscheidungen eignen sich möglicherweise nicht für die Anforderungen Ihrer eigenen Organisation. In den folgenden Abschnitten werden Alternativen für jede dieser Kategorien erläutert, sodass Sie sich für ein Muster oder Modell entscheiden können, das besser zu Ihren individuellen Anforderungen passt.
+Jede der folgenden Kategorien stellt eine grundlegende Technologie aller Cloudbereitstellungen dar. In den exemplarischen Anleitungen zur Governance werden Entwurfsentscheidungen im Zusammenhang mit diesen Technologien auf Grundlage der Anforderungen von Beispielunternehmen getroffen. Einige dieser Entscheidungen eignen sich unter Umständen nicht für die Anforderungen Ihrer eigenen Organisation. In den folgenden Abschnitten werden Alternativen für jede dieser Kategorien erläutert, sodass Sie sich für ein Muster oder Modell entscheiden können, das besser zu Ihren individuellen Anforderungen passt.
 
 [Abonnements](./subscriptions/index.md): Planen Sie das Abonnementmodell und die Kontenstruktur Ihrer Cloudbereitstellung entsprechend den Besitz-, Abrechnungs- und Verwaltungskonzepten Ihrer Organisation.
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ee1006efd3a8807e294480fdea4e46b8555a0bb8
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: b772eddfce65fa7a2ce4d67e36b1cc0f82e47ac5
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73238768"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564871"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Protokollierung und Berichterstellung
 
@@ -22,13 +22,13 @@ Alle Organisationen benötigen Mechanismen, um IT-Teams über Leistungs-, Verfü
 
 ![Abbildung der Protokollierungs-, Berichterstellungs- und Überwachungsoptionen mit zunehmender Komplexität entsprechend den nachstehenden weiterführenden Links](../../_images/decision-guides/decision-guide-logging-and-reporting.png)
 
-Wechseln Sie zu: [Planen der Überwachungsinfrastruktur](#planning-your-monitoring-infrastructure) | [Cloudnativ](#cloud-native) | [Lokale Erweiterung](#on-premises-extension) | [Gatewayaggregation ](#gateway-aggregation) | [Hybridüberwachung (lokal)](#hybrid-monitoring-on-premises) | [Hybridüberwachung (cloudbasiert)](#hybrid-monitoring-cloud-based) | [Mehrere Clouds ](#multicloud) | [Weitere Informationen](#learn-more)
+Wechseln Sie zu: [Planen der Überwachungsinfrastruktur](#plan-your-monitoring-infrastructure) | [Cloudnativ](#cloud-native) | [Lokale Erweiterung](#on-premises-extension) | [Gatewayaggregation ](#gateway-aggregation) | [Hybridüberwachung (lokal)](#hybrid-monitoring-on-premises) | [Hybridüberwachung (cloudbasiert)](#hybrid-monitoring-cloud-based) | [Mehrere Clouds ](#multicloud) | [Weitere Informationen](#learn-more)
 
 Der Wendepunkt bei der Bestimmung einer cloudbasierten Protokollierungs- und Berichterstellungsstrategie basiert in erster Linie auf bereits getätigten Investitionen Ihres Unternehmens in betriebliche Prozesse und zu einem gewissen Grad auf den Anforderungen, die Sie an die Unterstützung einer Strategie mit mehreren Clouds haben.
 
 Es gibt mehrere Möglichkeiten, Aktivitäten in der Cloud zu protokollieren und zu dokumentieren. „Cloudnativ“ und „Zentrale Protokollierung“ sind zwei übliche Optionen für verwaltete Dienste, die dem Abonnementmodell und der Anzahl von Abonnements unterliegen.
 
-## <a name="planning-your-monitoring-infrastructure"></a>Planen der Überwachungsinfrastruktur
+## <a name="plan-your-monitoring-infrastructure"></a>Planen der Überwachungsinfrastruktur
 
 Bei der Planung Ihrer Bereitstellung müssen Sie berücksichtigen, wo Protokolldaten gespeichert werden und wie Sie cloudbasierte Berichts- und Überwachungsdienste in Ihre bestehenden Prozesse und Tools integrieren.
 
@@ -47,7 +47,7 @@ Bei diesem Szenario werden die Protokolldaten erfasst und in der Cloud gespeiche
 
 Benutzerdefinierte Azure Monitor-basierte Protokollierungslösungen können ad hoc für jedes Abonnement oder jede Workload für kleinere oder experimentelle Bereitstellungen implementiert werden und sind zentral organisiert, um Protokolldaten im gesamten Cloudumfeld zu überwachen.
 
-**Cloudnative Annahmen** Für die Verwendung eines cloudnativen Protokollierungs- und Berichterstellungssystems wird Folgendes angenommen:
+**Annahmen für cloudnative Systeme:** Für die Verwendung eines cloudnativen Protokollierungs- und Berichterstellungssystems wird Folgendes angenommen:
 
 - Sie müssen die Protokolldaten Ihrer Cloudworkloads nicht in bestehende lokale Systeme integrieren.
 - Sie verwenden Ihre cloudbasierten Berichterstellungssysteme nicht zur Überwachung lokaler Systeme.
@@ -87,7 +87,7 @@ Eine Hybridüberwachungslösung kombiniert Protokolldaten sowohl aus Ihren lokal
 
 Wenn Sie bereits eine Investition in lokale Überwachungssysteme getätigt haben, deren Austausch schwierig oder kostspielig wäre, müssen Sie möglicherweise die Telemetriedaten aus Ihren Cloudworkloads in bereits vorhandene lokale Überwachungslösungen integrieren. In einem hybriden lokalen Überwachungssystem wird für die lokalen Telemetriedaten weiterhin das bestehende lokale Überwachungssystem verwendet. Cloudbasierte Telemetriedaten werden entweder direkt an das lokale Überwachungssystem gesendet, oder die Daten werden an Azure Monitor gesendet und dann in regelmäßigen Abständen zusammengestellt und im lokalen System erfasst.
 
-**Annahmen für eine lokale Hybridüberwachungslösung** Für die Verwendung eines lokalen Protokollierungs- und Berichterstellungssystems für die Hybridüberwachung wird Folgendes angenommen:
+**Annahmen für eine lokale Hybridüberwachungslösung:** Für die Verwendung eines lokalen Protokollierungs- und Berichterstellungssystems für die Hybridüberwachung wird Folgendes angenommen:
 
 - Sie müssen vorhandene lokale Berichtssysteme verwenden, um Cloudworkloads zu überwachen.
 - Sie müssen den Besitz an Protokolldaten lokal behalten.

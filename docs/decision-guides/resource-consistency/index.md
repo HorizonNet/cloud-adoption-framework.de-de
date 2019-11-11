@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: cab22f60604b2bf201f333df366c7ceca0398ffc
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: c6ad3e6b14ffde5f3c09feb6047a2d0bbe981314
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683531"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564797"
 ---
 # <a name="resource-consistency-decision-guide"></a>Leitfaden zur Entscheidungsfindung bei der Ressourcenkonsistenz
 
@@ -32,7 +32,7 @@ Mit zunehmender Bedeutung dieser Faktoren wird es auch immer wichtiger, eine kon
 
 In Azure sind [Ressourcengruppen](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) ein zentraler Mechanismus der Ressourcenorganisation, um Ressourcen innerhalb eines Abonnements logisch zu gruppieren.
 
-Ressourcengruppen fungieren als Container für Ressourcen mit einem gemeinsamen Lebenszyklus UND gemeinsamen Verwaltungseinschränkungen wie Richtlinien- oder RBAC-Anforderungen (Role-Based Access Control,rollenbasierte Zugriffssteuerung). Ressourcengruppen dürfen nicht geschachtelt sein, und Ressourcen dürfen nur zu einer einzigen Ressourcengruppe gehören. Alle Aktionen auf der Steuerungsebene wirken sich auf alle Ressourcen in einer Ressourcengruppe aus. Beim Löschen einer Ressourcengruppe werden beispielsweise auch alle Ressourcen in dieser Gruppe entfernt. Bei der Ressourcengruppenverwaltung sollten folgende Punkte berücksichtigt werden:
+Ressourcengruppen fungieren als Container für Ressourcen mit einem gemeinsamen Lebenszyklus und gemeinsamen Verwaltungseinschränkungen, z. B. Anforderungen in Bezug auf Richtlinien oder rollenbasierte Zugriffssteuerung (RBAC). Ressourcengruppen dürfen nicht geschachtelt sein, und Ressourcen dürfen nur zu einer einzigen Ressourcengruppe gehören. Alle Aktionen auf der Steuerungsebene wirken sich auf alle Ressourcen in einer Ressourcengruppe aus. Beim Löschen einer Ressourcengruppe werden beispielsweise auch alle Ressourcen in dieser Gruppe entfernt. Bei der Ressourcengruppenverwaltung sollten folgende Punkte berücksichtigt werden:
 
 1. Werden die Inhalte der Ressourcengruppe gemeinsam entwickelt?
 1. Werden die Inhalte der Ressourcengruppe gemeinsam und von den gleichen Personen oder Teams verwaltet, aktualisiert und überwacht?
@@ -41,7 +41,7 @@ Ressourcengruppen fungieren als Container für Ressourcen mit einem gemeinsamen 
 Falls Sie eine der obigen Fragen mit _NEIN_ beantwortet haben, sollte die betreffende Ressource in einer anderen Ressourcengruppe platziert werden.
 
 > [!IMPORTANT]
-> Ressourcengruppen sind auch regionsspezifisch. Nicht selten befinden sich Ressourcen innerhalb der gleichen Ressourcengruppe jedoch in unterschiedlichen Regionen, da sie wie oben beschrieben gemeinsam verwaltet werden. Weitere Informationen zur Regionswahl finden Sie [hier](../regions/index.md).
+> Ressourcengruppen sind auch regionsspezifisch. Nicht selten befinden sich Ressourcen innerhalb derselben Ressourcengruppe aber in unterschiedlichen Regionen, da sie wie oben beschrieben gemeinsam verwaltet werden. Weitere Informationen zur Auswahl von Regionen finden Sie im [Leitfaden zur Entscheidungsfindung für Regionen](../regions/index.md).
 
 ## <a name="deployment-consistency"></a>Bereitstellungskonsistenz
 

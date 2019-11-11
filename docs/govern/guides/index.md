@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: d6e95ebec986d0a4af29ec70332f1c6fcb3518f2
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 1bf2331c8ee1275a71be2275cefef49cf0a50dfc
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547572"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566256"
 ---
 # <a name="cloud-governance-guides"></a>Cloudgovernance-Leitfäden
 
@@ -62,7 +62,7 @@ Wählen Sie einen der folgenden Governanceleitfäden aus, um mit der Cloudeinfü
 
 ## <a name="an-incremental-approach-to-cloud-governance"></a>Ein inkrementeller Ansatz für die Cloudgovernance
 
-## <a name="choosing-a-governance-guide"></a>Auswählen eines Governanceleitfadens
+## <a name="choose-a-governance-guide"></a>Auswählen eines Governanceleitfadens
 
 Die Leitfäden veranschaulichen, wie ein Governance-MVP implementiert wird. Von dort aus zeigt jeder Leitfaden, wie das Cloudgovernanceteam als Partner den Cloudeinführungsteams zuarbeiten kann, um die Einführung zu beschleunigen. Das Governancemodell des Frameworks für die Cloudeinführung steuert die Governanceanwendung von der Grundlage bis hin zu nachfolgenden Verbesserungen und Weiterentwicklungen.
 

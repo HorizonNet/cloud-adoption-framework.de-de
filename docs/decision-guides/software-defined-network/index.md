@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: bbe9815b12226c193073bff3c2298d4124034935
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 46d01d6685b4cac55db7ed313b70891b4f9c029f
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023757"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564789"
 ---
 # <a name="software-defined-networking-decision-guide"></a>Leitfaden zur Entscheidungsfindung für softwaredefinierte Netzwerke
 
@@ -32,7 +32,7 @@ Der Kernpunkt in diesem Leitfaden hängt von mehreren wichtigen Entscheidungen a
 
 Kleine Bereitstellungen in einer einzelnen Region mit weniger als 1.000 VMs sind weniger wahrscheinlich von diesem Aspekt betroffen. Im Gegensatz dazu können große Umsetzungsanstrengungen mit mehr als 1.000 VMs, mehreren Geschäftsbereichen oder mehreren geopolitischen Märkten erheblich von Ihrer SDN-Entscheidung und diesem wichtigen Aspekt beeinflusst werden.
 
-## <a name="choosing-the-right-virtual-networking-architectures"></a>Wählen der richtigen virtuellen Netzwerkarchitekturen
+## <a name="choose-the-right-virtual-networking-architectures"></a>Wählen der richtigen virtuellen Netzwerkarchitekturen
 
 Dieser Abschnitt in diesem Leitfaden zur Entscheidungsfindung soll Ihnen helfen, die richtigen virtuellen Netzwerkarchitekturen zu wählen.
 

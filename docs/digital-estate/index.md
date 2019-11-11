@@ -8,12 +8,12 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9a5b7c3eb1a831b9bf15540550d1c2005114a820
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 3504e9107f221e71953a238b5ebd092a7531e5ae
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71023462"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564732"
 ---
 <!-- markdownlint-disable MD026 -->
 

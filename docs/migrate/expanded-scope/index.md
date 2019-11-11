@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ee164f75b4f3748fce027d0c6c98db5200dcdd71
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 181777e08e82cf7e58c73c7c8b66544d0960656d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548503"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564633"
 ---
 # <a name="expanded-scope-for-cloud-migration"></a>Erweiterter Umfang für die Cloudmigration
 
@@ -32,7 +32,7 @@ Die folgende Checkliste beschreibt die allgemeinen Komplexitätsbereiche, die ei
 
 ### <a name="technology-driven-scope-expansion"></a>Technologieorientierte Umfangserweiterung
 
-- **[VMWare-Migration](./vmware-host.md):** Das Migrieren von VMware-Hosts kann den gesamten Migrationsprozess beschleunigen. Jeder migrierte VMware-Host kann mithilfe eines Lift-and-Shift-Ansatzes mehrere Workloads in die Cloud verschieben. Nach der Migration können diese VMs und Workloads in VMware verbleiben oder zu modernen Cloudfunktionen migriert werden.
+- **[VMware-Migration](./vmware-host.md):** Das Migrieren von VMware-Hosts kann den gesamten Migrationsprozess beschleunigen. Jeder migrierte VMware-Host kann mithilfe eines Lift-and-Shift-Ansatzes mehrere Workloads in die Cloud verschieben. Nach der Migration können diese VMs und Workloads in VMware verbleiben oder zu modernen Cloudfunktionen migriert werden.
 - **[SQL Server-Migration](./sql-migration.md):** Das Migrieren von SQL Server-Instanzen kann den gesamten Migrationsprozess beschleunigen. Jede migrierte SQL Server-Instanz kann mehrere Datenbanken und Dienste verschieben, was zu einer Beschleunigung mehrerer Workloads beitragen kann.
 - **[Mehrere Rechenzentren](./multiple-datacenters.md):** Die Migration mehrerer Rechenzentren erhöht die Komplexität erheblich. Während der Prozesse zur Bewertung, Migration, Optimierung und Verwaltung werden zur Vorbereitung auf komplexere Umgebungen zusätzliche Überlegungen erläutert.
 - **[Datenanforderungen überschreiten Netzwerkkapazität](./network-capacity-exceeded.md):** Unternehmen entscheiden sich häufig für eine Migration zur Cloud, da die Kapazität, Geschwindigkeit und Stabilität eines bestehenden Rechenzentrums nicht mehr zufriedenstellend ist. Leider erhöhen dieselben Einschränkungen die Komplexität des Migrationsprozesses, was eine zusätzliche Planung während der Bewertungs- und Migrationsprozesse erfordert.

@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: d9e26d82dd0332c338567bf962094a39f2ef84b4
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: cbd9f8dcea85b22f68ddb0401ef5713491200fdc
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564525"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753660"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>Einrichten eines Betriebsmodells für die Cloud
 
@@ -40,7 +40,7 @@ Dieser Abschnitt des Frameworks für die Cloudeinführung stellt ein umsetzbares
 
 Die Cloud und die digitale Wirtschaft haben aufgezeigt, dass mehrere Betriebsmodelle erforderlich sind. Manchmal geht dieser Bedarf von der Anforderung aus, mehrere Public Clouds zu unterstützen. Meistens entsteht dieser Bedarf jedoch beim Wechsel von einer lokalen Umgebung in die Cloud. In beiden Szenarien ist es wichtig, Betriebsmodelle auszurichten, um maximale Leistung bei minimaler Redundanz zu erreichen.
 
-Analysten prognostizieren eine Einführung von Multi-Cloud-Umgebungen bei hohen Volumen. Die Entwicklung geht bei vielen Kunden in diese Richtung. Leider berichten Kunden jedoch von großen Herausforderungen beim Betrieb mehrerer Clouds. Duplizierte Ressourcen, Prozesse, Fertigkeiten und Technologien führen zu höheren Kosten und nicht zu den angekündigten Einsparungen. Um dies zu vermeiden, wird den Kunden empfohlen, ein spezielles Betriebsmodell einzuführen. Beim Ausrichten von Betriebsmodellen sollte immer ein **allgemeines Betriebsmodell** vorhanden sein. Zusätzliche **spezialisierte Betriebsmodelle** kommen für bestimmte Szenarien zum Einsatz, um Abweichungen vom Standardmodell zu unterstützen.
+Analysten prognostizieren eine Einführung von Multi-Cloud-Umgebungen bei hohen Volumen. Die Entwicklung geht bei vielen Kunden in diese Richtung. Leider berichten Kunden jedoch von großen Herausforderungen beim Betrieb mehrerer Clouds. Duplizierte Ressourcen, Prozesse, Fertigkeiten und Technologien führen zu höheren Kosten und nicht zu den angekündigten Einsparungen. Um dies zu vermeiden, sollten Kunden ein spezielles Betriebsmodell einführen. Beim Ausrichten von Betriebsmodellen sollte immer ein **allgemeines Betriebsmodell** vorhanden sein. Zusätzliche **spezialisierte Betriebsmodelle** kommen für bestimmte Szenarien zum Einsatz, um Abweichungen vom Standardmodell zu unterstützen.
 
 - **Allgemeines Betriebsmodell:** Das allgemeine Betriebsmodell ist für eine einzelne Public oder Private Cloud-Plattform geeignet. Vorgänge dieser Plattform definieren betriebliche Standards, Richtlinien und Prozesse. Dieses Betriebsmodell sollte das primäre Mittel für die weitere Cloudstrategie darstellen. Bei diesem Modell besteht das Ziel darin, den primären Cloudanbieter für den Großteil der Cloudeinführung zu nutzen.
 

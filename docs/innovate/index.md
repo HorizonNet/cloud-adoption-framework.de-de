@@ -9,20 +9,22 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
-ms.openlocfilehash: f3ede236dc0abc59dbf6e250c319185dda4e11e6
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0d8ffd15dd0e42e7ba31760361dc970b63025eda
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72545118"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565626"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Cloudinnovationen im Cloud Adoption Framework
 
-Jedes IT-Portfolio verfügt über eine kleine Sammlung von Workloads und Ideen, welche die Position des Unternehmens auf dem Markt deutlich verbessern können. Während sich die meisten Bemühungen zur Cloudeinführung auf die Migration und Modernisierung vorhandener Workloads konzentrieren, kommt der größte sich aus der Cloudeinführung ergebende Geschäftswert aus Innovationsaktivitäten, die neue technische Fertigkeiten und erweiterte Geschäftsfunktionen eröffnen. In diesem Abschnitt des Cloud Adoption Framework liegt der Schwerpunkt auf dem Teil des Portfolios, der die größte Rendite bringt.
+Alle IT-Portfolios umfassen einige Workloads und Ideen, mit denen ein Unternehmen seine Position auf dem Markt erheblich verbessern kann. Bei den meisten Aufgaben zur Einführung der Cloud geht es um die Migration und Modernisierung vorhandener Workloads. Der größte geschäftliche Nutzen lässt sich aber in Bezug auf Innovationen erzielen. Mit der Cloudeinführung verbundene Innovationen können zu neuen technischen Fähigkeiten und erweiterten geschäftlichen Funktionen führen.
 
-## <a name="getting-started"></a>Erste Schritte
+In diesem Abschnitt des Cloud Adoption Framework liegt der Schwerpunkt auf den Elementen Ihres Portfolios, die die größte Rendite bringen.
 
-Zur Vorbereitung auf diese Phase des Cloudeinführungszyklus empfiehlt das Framework die folgenden Aufgaben:
+## <a name="get-started"></a>Erste Schritte
+
+Zur Vorbereitung auf diese Phase des Cloudeinführungszyklus empfiehlt das Framework die folgenden Übungen:
 
 <!-- markdownlint-disable MD033 -->
 
@@ -39,7 +41,7 @@ Zur Vorbereitung auf diese Phase des Cloudeinführungszyklus empfiehlt das Frame
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Einigkeit über den Geschäftswert</h3>
-Bevor Sie sich für technische Lösungen entscheiden, müssen Sie den gewünschten Geschäftswert festlegen. Dieser Wert sollte an die Cloudstrategie angepasst werden. Bei dieser inkrementellen Methodik kommt der Geschäftswert durch eine Hypothese über Kundenanforderungen zum Ausdruck.
+Ermitteln Sie vor dem Treffen einer Entscheidung in Bezug auf technische Lösungen, wie neue Innovationen den Geschäftswert steigern können. Lassen Sie diesen Wert in Ihre Cloudstrategie einfließen. Bei dieser inkrementellen Methodik kommt der Geschäftswert durch eine Hypothese über Kundenanforderungen zum Ausdruck.
                         </div>
                     </div>
                 </div>
@@ -58,7 +60,7 @@ Bevor Sie sich für technische Lösungen entscheiden, müssen Sie den gewünscht
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Azure-Innovationsleitfaden</h3>
-Viele in Azure verfügbare cloudbasierte Tools können die Entwicklung innovativer Lösungen beschleunigen. Abhängig von der Kundenhypothese sind verschiedene Toolkombinationen möglich. Empfohlen wird die Entwicklung eines minimal anwendungsfähigen Produkts (Minimum Viable Product, MVP) mit grundlegenden Tools.
+Azure umfasst eine Reihe von Cloudtools, mit denen die Bereitstellung innovativer Lösungen beschleunigt werden kann. Je nach Ihrer Zielsetzung kann es sein, dass Sie verschiedene Kombinationen von Tools erwägen. Wir empfehlen Ihnen, ein „minimal überlebensfähiges Produkt“ (Minimum Viable Product, MVP) zu erstellen, das nur die grundlegenden Tools aufweist.
                         </div>
                     </div>
                 </div>
@@ -77,7 +79,7 @@ Viele in Azure verfügbare cloudbasierte Tools können die Entwicklung innovativ
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Bewährte Methoden</h3>
-Überprüfen Sie, ob die architektonischen Entscheidungen den bewährten Methoden für jedes Tool in der Toolkette entsprechen. Diese bewährten Methoden unterstützen die Beschleunigung der Lösungsentwicklung und dienen als Referenz für solide Architekturentwürfe.
+Ihre architekturbezogenen Entscheidungen sollten den bewährten Methoden für jedes Tool in der Toolkette entsprechen. Indem Sie sich an diese Methoden halten, können Sie die Lösungsentwicklung beschleunigen und ein Referenzmodell für solide Architekturentwürfe schaffen.
                         </div>
                     </div>
                 </div>
@@ -96,7 +98,7 @@ Viele in Azure verfügbare cloudbasierte Tools können die Entwicklung innovativ
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Feedbackschleifen</h3>
-Während jeder Entwicklungsiteration bieten die zu entwickelnden Lösungen den Teams die Möglichkeit, gemeinsam mit den Kunden zu lernen. Schnelle und präzise Feedbackschleifen mit Kunden unterstützen Sie beim Testen, Messen und Lernen, um die Zeit bis zur Markteinführung zu verkürzen. Erfahren Sie, wie Azure und GitHub Feedbackschleifen beschleunigen.
+Bei jeder Iteration bieten die zu entwickelnden Lösungen Ihren Teams die Möglichkeit, gemeinsam mit den Kunden zu lernen. Schnelle und präzise Feedbackschleifen bei der Zusammenarbeit mit Ihren Kunden vereinfachen für Sie das Testen, Messen und Lernen – und führen somit letztendlich zu einer Verkürzung des Zeitraums bis zur Markteinführung. Erfahren Sie, wie Azure und GitHub Feedbackschleifen beschleunigen.
                         </div>
                     </div>
                 </div>
@@ -108,15 +110,15 @@ Während jeder Entwicklungsiteration bieten die zu entwickelnden Lösungen den T
 
 ## <a name="methodology-summary"></a>Zusammenfassung der Methodik
 
-Der [Abschnitt „Überlegungen“ der Innovationsmethodik](./considerations/index.md) schafft eine Basis für Innovationen in allen Entwicklungs-, DevOps-, IT- und Business-Teams. Durch die obigen Aufgaben wird diese Methodik bei der Entwicklung innovativer Lösungen umsetzbar.
+- In der [Übersicht über die Aspekte](./considerations/index.md) wird eine gemeinsame Sprache beschrieben, die übergreifend für Innovationen in den Bereichen Anwendungsentwicklung, DevOps, IT und Business gilt.
+- Die Übungen im Abschnitt [Erste Schritte](#get-started) tragen zu einer verbesserten Umsetzbarkeit der Methodik bei der Entwicklung innovativer Lösungen bei.
 
 ![Die Innovationsmethodik des Cloud Adoption Framework](../_images/innovate/innovate-methodology.png)
 
-Zur Entwicklung einer cloubasierten Konversation zur Kundenakzeptanz und eines wissenschaftlichen Modells für die Schaffung des Geschäftswerts basiert diese Methodik auf vorhandenen Lean-Methoden. Außerdem werden vorhandene Azure-Dienste mit verwaltbaren Entscheidungsprozessen ausgerichtet, sodass Sie die richtige Technik für einen bestimmten Kundenwunsch oder eine bestimmte Kundenhypothese leichter finden können.
+Dieser Ansatz basiert auf der bestehenden „schlanken“ Methodik. Er soll Ihnen beim Erstellen einer cloudbasierten Kommunikation zur Förderung der Kundenakzeptanz und eines wissenschaftlichen Modells zur Schaffung des Geschäftswerts als Hilfe dienen. Darüber hinaus werden hierbei vorhandene Azure-Dienste verwaltbaren Entscheidungsprozessen zugeordnet. Aufgrund dieser Ausrichtung ist es für Sie einfacher, die richtigen technischen Optionen zu ermitteln, um spezifische Anforderungen oder Zielsetzungen von Kunden erfüllen zu können.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Während der Cloudinnovation muss zunächst [Einigkeit im Hinblick auf den Geschäftswert geschaffen werden](./business-value.md).
-
+Erste Übung zur Cloudinnovation:
 > [!div class="nextstepaction"]
-> [Einigkeit über den Geschäftswert](./business-value.md)
+> [Erzielen eines Konsenses zum Geschäftswert der Cloudinnovation](./business-value.md)

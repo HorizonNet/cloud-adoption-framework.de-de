@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7aac08981375a3fcbbd658d6e14564a07e06795e
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 6f35ca4e8420100c7455e8fa909fc8b572ee1074
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70816294"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753465"
 ---
 # <a name="assess-assets-prior-to-migration"></a>Bewerten von Ressourcen vor der Migration
 
@@ -56,7 +56,7 @@ Zusätzlich zur Verantwortlichkeit auf hoher Ebene gibt es Maßnahmen, für die 
   - Um spätere Überraschungen zu vermeiden, sollte mindestens ein Vertreter des Unternehmens in den Genehmigungsprozess einbezogen werden.
 
 > [!CAUTION]
-> Diese vollständige Liste von Verantwortlichkeiten und Aktionen kann große und komplexe Migrationen mit mehreren Rollen und unterschiedlichen Zuständigkeitsebenen unterstützen, die einen detaillierten Genehmigungsprozess erfordern. Kleinere und einfachere Migrationsaufgaben erfordern möglicherweise nicht alle hier beschriebenen Rollen und Aktionen. Um zu bestimmen, welche dieser Aktivitäten den Nutzen erhöhen und welche nicht erforderlich sind, empfiehlt sich für das Cloudeinführungs- und das Cloudstrategieteam die Verwendung dieses vollständigen Prozesses im Rahmen Ihrer ersten Workloadmigration. Nachdem die Workload überprüft und getestet wurde, kann das Team diesen Prozess bewerten und entscheiden, welche Aktionen verwendet werden sollen.
+> Diese vollständige Liste von Verantwortlichkeiten und Aktionen kann große und komplexe Migrationen mit mehreren Rollen und unterschiedlichen Zuständigkeitsebenen unterstützen, die einen detaillierten Genehmigungsprozess erfordern. Kleinere und einfachere Migrationsaufgaben erfordern möglicherweise nicht alle hier beschriebenen Rollen und Aktionen. Um zu bestimmen, welche dieser Aktivitäten den Nutzen erhöhen und welche nicht erforderlich sind, sollte das Cloudeinführungs- und das Cloudstrategieteam im Rahmen Ihrer ersten Workloadmigration diesen vollständigen Prozess durchführen. Nachdem die Workload überprüft und getestet wurde, kann das Team diesen Prozess bewerten und entscheiden, welche Aktionen verwendet werden sollen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

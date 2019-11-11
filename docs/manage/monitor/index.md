@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 67dbfbe48626c77303ec8626dc7889f474a28b66
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 315ba0898f6a301af6f91614290c51244fbf6eb0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979866"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564914"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>Leitfaden zur Cloudüberwachung: Einführung
 
@@ -34,7 +34,7 @@ Das Ziel dieses Leitfadens ist die Bereitstellung einer detaillierten Referenz, 
 
 * Azure-Überwachungsplattformen mit einer Übersicht und einem Vergleich ihrer Funktionen.
 * Die am besten geeignete Lösung für die Überwachung von hybriden und privaten Workloads sowie nativen Azure-Workloads.
-* Der empfohlene Ansatz für eine End-to-End-Überwachung von Infrastruktur und Anwendungen in ihrer Gesamtheit. Hierzu gehören praktikable Lösungen für eine Migration dieser gängigen Workloads zu Azure.
+* Der empfohlene Ansatz für eine gemeinsame End-to-End-Überwachung von Infrastruktur und Anwendungen. Hierzu gehören praktikable Lösungen für eine Migration dieser gängigen Workloads zu Azure.
 
 Dieser Leitfaden ist keine Anleitung zur Verwendung oder Konfiguration einzelner Azure-Dienste und -Lösungen, er verweist jedoch auf solche Quellen, wenn diese zutreffend oder verfügbar sind. Nach dem Lesen dieses Leitfadens wissen Sie, wie eine Workload unter Verwendung der bewährten Methoden und Muster ordnungsgemäß betrieben wird.
 
