@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: b231df4665e0da46229d6bc87f8ac32bc1985067
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 2129e0f27dd44a32ea0966326cd0c172603783cf
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564848"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753344"
 ---
 # <a name="migration-tools-decision-guide"></a>Entscheidungsleitfaden zur Wahl des Migrationstools
 
@@ -32,7 +32,7 @@ Die Beantwortung der folgenden Fragen ermöglicht es Ihnen, Entscheidungen auf d
 - **Wird Ihre Anwendung derzeit auf dedizierten virtuellen Computern ausgeführt oder wird das Hosting mit anderen Anwendungen geteilt?** Auf dedizierten virtuellen Computern ausgeführte Anwendungen können leichter in PaaS-Hostingoptionen migriert werden als Anwendungen, die auf gemeinsamen Servern ausgeführt werden.
 - **Wird die Datenmigration die Netzwerkbandbreite überschreiten?** Die Netzwerkkapazität zwischen Ihren lokalen Datenquellen und Azure kann einen Engpass bei der Datenmigration darstellen. Wenn die zu übertragenden Daten auf Bandbreitenbeschränkungen treffen, die eine effiziente oder zeitnahe Migration verhindern, müssen Sie sich möglicherweise mit alternativen oder Offlineübertragungsmechanismen befassen. Im [Artikel zur Migrationsreplikation](../../migrate/migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication) für das Cloud Adoption Framework wird erläutert, wie sich Replikationsgrenzwerte auf die Migration auswirken können. Konsultieren Sie im Rahmen Ihrer Migrationsbewertung Ihre IT-Teams, um sicherzustellen, dass Ihre lokale und WAN-Bandbreite für Ihre Migrationsanforderungen geeignet ist. Beachten Sie auch das [Migrationsszenario mit erweitertem Umfang als Beispiel, wenn die Speicheranforderungen die Netzwerkkapazität während einer Migration überschreiten](../../migrate/expanded-scope/network-capacity-exceeded.md#suggested-prerequisites).
 - **Nutzt Ihre Anwendung eine bestehende DevOps-Pipeline?** In vielen Fällen können Azure Pipelines leicht umgestaltet werden, um Anwendungen in cloudbasierten Hostingumgebungen bereitzustellen.
-- **Stellen Ihre Daten komplexe Anforderungen an die Datenspeicherung?** Produktionsanwendungen erfordern in der Regel eine hochverfügbare Datenspeicherung, bieten Always On-Funktionalität und ähnliche Features zur Dienstbetriebszeit und Kontinuität. Azure PaaS-basierte verwaltete Datenbankoptionen wie Azure SQL-Datenbank, Azure Database for MySQL und Azure Cosmos DB bieten eine Betriebszeit von 99,99 % gemäß Vereinbarung zum Servicelevel (SLA). Im Gegensatz dazu bietet der IaaS-basierte SQL Server auf virtuellen Azure-Computern gemäß Vereinbarung zum Servicelevel (SLA) eine Betriebszeit von 99,95 % für Einzelinstanzen. Wenn Ihre Daten nicht für die Verwendung von PaaS-Speicheroptionen modernisiert werden können, erfordert die Gewährleistung einer höheren IaaS-Betriebszeit komplexere Datenspeicherungsszenarien wie die Ausführung von Always On-Clustern von SQL Server und die kontinuierliche Synchronisierung von Daten zwischen Instanzen. Dies kann erhebliche Hosting- und Wartungskosten verursachen, sodass der Ausgleich von Verfügbarkeitsanforderungen, Modernisierungsaufwand und Gesamtbudgetauswirkungen wichtig ist, wenn Sie Ihre Datenmigrationsoptionen berücksichtigen.
+- **Stellen Ihre Daten komplexe Anforderungen an die Datenspeicherung?** Produktionsanwendungen erfordern in der Regel eine hochverfügbare Datenspeicherung, bieten Always On-Funktionalität und ähnliche Features zur Dienstbetriebszeit und Kontinuität. Azure PaaS-basierte verwaltete Datenbankoptionen wie Azure SQL-Datenbank, Azure Database for MySQL und Azure Cosmos DB bieten eine Betriebszeit von 99,99 % gemäß Vereinbarung zum Servicelevel (SLA). Im Gegensatz dazu bietet die IaaS-basierte SQL Server-Instanz auf virtuellen Azure-Computern gemäß Vereinbarung zum Servicelevel (SLA) eine Betriebszeit von 99,95 Prozent für Einzelinstanzen. Wenn Ihre Daten nicht für die Verwendung von PaaS-Speicheroptionen modernisiert werden können, erfordert die Gewährleistung einer höheren IaaS-Betriebszeit komplexere Datenspeicherungsszenarien wie die Ausführung von Always On-Clustern von SQL Server und die kontinuierliche Synchronisierung von Daten zwischen Instanzen. Dies kann erhebliche Hosting- und Wartungskosten verursachen, sodass der Ausgleich von Verfügbarkeitsanforderungen, Modernisierungsaufwand und Gesamtbudgetauswirkungen wichtig ist, wenn Sie Ihre Datenmigrationsoptionen berücksichtigen.
 
 ## <a name="innovation-and-migration"></a>Innovation und Migration
 

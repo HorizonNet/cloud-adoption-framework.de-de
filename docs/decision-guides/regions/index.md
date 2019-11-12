@@ -9,25 +9,25 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 3e43c6ac4136a2f8f89446091f9bcea005369fce
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 981752b1e1963dd4f8a646ccc087d445669e6cd3
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564817"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753310"
 ---
 # <a name="azure-regions"></a>Azure-Regionen
 
-Azure besteht aus zahlreichen Regionen auf der ganzen Welt. Jede der [Azure-Regionen](https://azure.microsoft.com/global-infrastructure/regions) hat bestimmte Merkmale, weshalb die Wahl der zu verwendenden Region überaus wichtig ist.
+Azure besteht aus zahlreichen Regionen auf der ganzen Welt. Jede [Azure-Region](https://azure.microsoft.com/global-infrastructure/regions) hat bestimmte Merkmale, weshalb die Wahl der zu verwendenden Region überaus wichtig ist.
 
-1. **Verfügbare Dienste:** Welche Dienste in den jeweiligen Regionen bereitgestellt werden, hängt von zahlreichen Faktoren ab. Als Zielregion für die Workloadbereitstellung muss eine Region gewählt werden, die den gewünschten Dienst enthält. Unter [Verfügbare Produkte nach Region](https://azure.microsoft.com/global-infrastructure/services) erfahren Sie, welche Dienste in welcher Region verfügbar sind.
+1. **Verfügbare Dienste:** Welche Dienste in den jeweiligen Regionen bereitgestellt werden, hängt von zahlreichen Faktoren ab. Wählen Sie eine Region für Ihre Workload aus, die den gewünschten Dienst enthält. Weitere Informationen zu den verfügbaren Diensten in den einzelnen Regionen finden Sie unter [Verfügbare Produkte nach Region](https://azure.microsoft.com/global-infrastructure/services).
 1. **Kapazität:** Jede Region hat eine maximale Kapazität. Für den Endbenutzer wird dies zwar in der Regel abstrahiert, es kann sich aber darauf auswirken, von welchen Abonnementarten unter welchen Umständen welche Arten von Diensten bereitgestellt werden können. Diese Kapazität ist nicht das Gleiche wie Abonnementkontingente. Falls Sie eine umfangreiche Datencentermigration zu Azure planen, informieren Sie sich ggf. bei Ihrem Azure-Vertreterteam oder -Kundenbetreuer vor Ort, ob eine Bereitstellung im gewünschten Umfang möglich ist.
 1. **Einschränkungen:** In bestimmten Regionen unterliegt die Bereitstellung von Diensten gewissen Einschränkungen. Einige Regionen stehen beispielsweise nur als Sicherungs- oder Failoverziel zur Verfügung. Weitere wichtige Einschränkungen sind [Datenhoheitsanforderungen](https://azure.microsoft.com/global-infrastructure/geographies).
-1. **Datenhoheit:** Es gibt spezifische dedizierte Regionen für spezifische unabhängige Entitäten. Zwar handelt es sich bei allen Regionen um Azure-Regionen, diese unabhängigen Regionen sind jedoch vollständig vom Rest von Azure isoliert, werden nicht notwendigerweise von Microsoft verwaltet und können Einschränkungen hinsichtlich des Kundentyps unterliegen. Diese unabhängigen Regionen sind:
+1. **Datenhoheit:** Bestimmte Regionen sind für spezifische unabhängige Entitäten dediziert. Zwar handelt es sich bei allen Regionen um Azure-Regionen, diese unabhängigen Regionen sind jedoch vollständig vom Rest von Azure isoliert, werden nicht notwendigerweise von Microsoft verwaltet und können auf bestimmte Kundentypen beschränkt sein. Diese unabhängigen Regionen sind:
     1. [Azure China](https://azure.microsoft.com/global-infrastructure/china)
-    1. [Azure Deutschland](https://azure.microsoft.com/global-infrastructure/germany) (Einstellung zugunsten deutscher Azure-Standardregionen (nicht unabhängig))
+    1. [Azure Deutschland](https://azure.microsoft.com/global-infrastructure/germany) (wird zugunsten von standardmäßigen, nicht unabhängigen Azure-Regionen in Deutschland eingestellt)
     1. [Azure US Government](https://azure.microsoft.com/global-infrastructure/government)
-    1. Hinweis: Es gibt zwei Regionen in [Australien](https://azure.microsoft.com/global-infrastructure/australia), die zwar von Microsoft verwaltet, aber für die australische Regierung und ihre Kunden und Auftragnehmer bereitgestellt werden. Für diese beiden Regionen gelten daher ähnliche Clienteinschränkungen wie für die anderen Sovereign Clouds.
+    1. Hinweis: Zwei Regionen in [Australien](https://azure.microsoft.com/global-infrastructure/australia) werden zwar von Microsoft verwaltet, werden aber für die australische Regierung und ihre Kunden und Auftragnehmer bereitgestellt. Für diese beiden Regionen gelten daher ähnliche Clienteinschränkungen wie für die anderen Sovereign Clouds.
 
 ## <a name="operate-in-multiple-geographic-regions"></a>Agieren in mehreren geografischen Regionen
 
@@ -58,7 +58,7 @@ Jede robuste Cloudbereitstellung ist auf ein sorgfältig durchdachtes Netzwerk a
 
 - Viele PaaS-Dienste in Azure unterstützen [Dienstendpunkte](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) oder [Private Link](https://docs.microsoft.com/azure/private-link/private-link-overview). Beide Lösungen haben erhebliche Auswirkungen auf Ihre Netzwerküberlegungen im Zusammenhang mit regionaler Resilienz, Migration und Governance.
 
-- Viele PaaS-Dienste basieren auf eigenen Lösungen für regionale Resilienz. So ermöglicht beispielsweise Azure SQL-Datenbank eine problemlose Replikation in N zusätzlichen Regionen – ebenso wie CosmosDB. Einige Dienste, etwa Azure DNS, sind regionsunabhängig. Für Ihre Überlegungen hinsichtlich der Dienste, die Sie im Rahmen Ihres Einführungsprozess nutzen möchten, ist es wichtig, die genauen Failoverfunktionen und Wiederherstellungsschritte zu kennen, die ggf. für die jeweiligen Azure-Dienste erforderlich sind.
+- Viele PaaS-Dienste basieren auf eigenen Lösungen für regionale Resilienz. So ermöglichen beispielsweise Azure SQL-Datenbank und Cosmos DB eine problemlose Replikation in _x_ zusätzlichen Regionen. Einige Dienste, etwa Azure DNS, sind regionsunabhängig. Für Ihre Überlegungen hinsichtlich der Dienste, die Sie im Rahmen Ihres Einführungsprozess nutzen möchten, ist es wichtig, die genauen Failoverfunktionen und Wiederherstellungsschritte zu kennen, die ggf. für die jeweiligen Azure-Dienste erforderlich sind.
 
 - Neben der Bereitstellung in mehreren Regionen für die Notfallwiederherstellung entscheiden sich viele Organisationen für eine Bereitstellung mit Aktiv/Aktiv-Muster, sodass kein Failover erforderlich ist. Dies hat außerdem den Vorteil eines globalen Lastenausgleichs, einer höheren Fehlertoleranz und einer höheren Netzwerkleistung. Wenn Sie dieses Muster nutzen möchten, müssen Ihre Anwendungen die Aktiv/Aktiv-Ausführung in mehreren Regionen unterstützen.
 
@@ -80,12 +80,12 @@ Stimmen Sie Änderungen im gesamten Migrationsprozess ab, um das anfängliche In
 
 Die folgende Tabelle kann beim Dokumentieren der Ergebnisse aus den oben genannten Schritten helfen:
 
-|Region  |Country  |Lokale Mitarbeiter  |Lokale externe Benutzer  |Lokale Rechenzentren oder Assets |Anforderungen an die Datenhoheit  |
-|---------|---------|---------|---------|---------|---------|
-|Nordamerika     |USA         |Ja         |Partner und Kunden         |Ja         |Nein         |
-|Nordamerika     |Kanada         |Nein         |Kunden         |Ja         |Ja         |
-|Europa     |Deutschland         |Ja         |Partner und Kunden         |Nein – nur Netzwerk         |Ja         |
-|Asien-Pazifik     |Südkorea         |Ja         |Partner         |Ja         |Nein         |
+| Region        | Country     | Lokale Mitarbeiter | Lokale externe Benutzer   | Lokale Rechenzentren oder Assets | Anforderungen an die Datenhoheit |
+|---------------|-------------|-----------------|------------------------|-----------------------------|-------------------------------|
+| Nordamerika | USA         | Ja             | Partner und Kunden | Ja                         | Nein                            |
+| Nordamerika | Kanada      | Nein              | Kunden              | Ja                         | Ja                           |
+| Europa        | Deutschland     | Ja             | Partner und Kunden | Nein – nur Netzwerk           | Ja                           |
+| Asien-Pazifik  | Südkorea | Ja             | Partner               | Ja                         | Nein                            |
 
 <!-- markdownlint-disable MD026 -->
 
@@ -93,7 +93,7 @@ Die folgende Tabelle kann beim Dokumentieren der Ergebnisse aus den oben genannt
 
 Auf der ganzen Welt haben Organisationen damit begonnen, Anforderungen an die Datenhoheit zu etablieren, beispielsweise durch die Datenschutz-Grundverordnung (DSGVO). Complianceanforderungen dieser Art erfordern häufig einen Speicherort innerhalb einer bestimmten Region oder sogar innerhalb eines bestimmten Lands, um die Bürger dieses Lands zu schützen. In einige Fällen müssen Daten zu Kunden, Mitarbeitern oder Partnern auf einer Cloudplattform gespeichert werden, die sich in derselben Region befindet wie die Endbenutzer.
 
-Diese Herausforderung ist ein wichtiger Beweggrund für Cloudmigrationen in Unternehmen, die auf globaler Ebene tätig sind. Um Complianceanforderungen zu erfüllen, haben einige Unternehmen sich dafür entschieden, duplizierte IT-Assets bei Cloudanbietern innerhalb einer Region bereitzustellen. In der Beispieltabelle oben ist Deutschland ein gutes Beispiel für dieses Szenario. In diesem Beispiel sind in Deutschland Kunden, Partner und Mitarbeiter vorhanden, aber keine IT-Assets. Hier kann sich das Unternehmen dafür entscheiden, einige Assets in einem Rechenzentrum innerhalb des DSGVO-Gebiets bereitzustellen, möglicherweise sogar in einem der deutschen Azure-Rechenzentren. Kenntnisse der Daten, für die die DSGVO gilt, würden dem Cloudeinführungsteam dabei helfen, den besten Migrationsansatz für diesen Fall zu ermitteln.
+Diese Herausforderung ist ein wichtiger Beweggrund für Cloudmigrationen in Unternehmen, die auf globaler Ebene tätig sind. Um Complianceanforderungen zu erfüllen, haben einige Unternehmen sich dafür entschieden, duplizierte IT-Assets bei Cloudanbietern innerhalb einer Region bereitzustellen. In der Tabelle oben ist Deutschland ein gutes Beispiel für dieses Szenario. Dieses Beispiel umfasst Kunden, Partner und Mitarbeiter in Deutschland, aber keine IT-Assets. Hier kann sich das Unternehmen dafür entscheiden, einige Assets in einem Rechenzentrum innerhalb des DSGVO-Gebiets bereitzustellen, möglicherweise sogar in einem der deutschen Azure-Rechenzentren. Kenntnisse der Daten, für die die DSGVO gilt, würden dem Cloudeinführungsteam dabei helfen, den besten Migrationsansatz für diesen Fall zu ermitteln.
 
 ### <a name="why-is-the-location-of-end-users-relevant"></a>Warum ist der Standort von Endbenutzern relevant?
 
@@ -115,10 +115,10 @@ Diese Vorgehensweise wird durch quantifizierbare Informationen gesteuert. Daher 
 
 Wenn der Umfang einer Migration mehrere Regionen umfasst, sollte das Cloudeinführungsteam folgende Überlegungen zur Bereitschaft berücksichtigen:
 
-- Zur Sicherstellung der Datenhoheit müssen einige Assets möglicherweise an bestimmten Standorten bereitgestellt werden, es gibt aber viele Assets, für die diese Complianceeinschränkungen nicht gelten. Aspekte wie Protokollierung, Berichterstellung, Netzwerkrouting, Identität und weitere zentrale IT-Dienste können möglicherweise als freigegebene Dienste über mehrere Abonnements oder sogar Regionen hinweg gehostet werden. Es empfiehlt sich, dass das Cloudeinführungsteam für diese Dienste ein Freigabemodell evaluiert, wie in der [Referenzarchitektur für eine Hub-and-Spoke-Topologie mit freigegebenen Diensten](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services) beschrieben.
+- Zur Sicherstellung der Datenhoheit müssen einige Assets möglicherweise an bestimmten Standorten bereitgestellt werden, für viele Assets gelten diese Complianceeinschränkungen jedoch unter Umständen nicht. Aspekte wie Protokollierung, Berichterstellung, Netzwerkrouting, Identität und weitere zentrale IT-Dienste können möglicherweise als freigegebene Dienste über mehrere Abonnements oder sogar Regionen hinweg gehostet werden. Das Cloudeinführungsteam sollte für diese Dienste ein Freigabemodell evaluieren, wie in der [Referenzarchitektur für eine Hub-and-Spoke-Topologie mit freigegebenen Diensten](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services) beschrieben.
 - Wenn mehrere Instanzen ähnlicher Umgebungen bereitgestellt werden müssen, könnte eine Umgebungsfactory für Konsistenz sorgen, die Governance verbessern und die Bereitstellung beschleunigen. Der [Governanceleitfaden für komplexe Unternehmen](../../govern/guides/complex/index.md) etabliert eine Vorgehensweise, bei der eine Umgebung erstellt wird, die sich über mehrere Regionen hinweg skalieren lässt.
 
-Sobald das Team mit dem grundlegenden Ansatz zufrieden und die Bereitschaft entsprechend vorhanden ist, müssen einige Voraussetzungen in Bezug auf die Daten berücksichtigt werden:
+Wenn das Team mit dem grundlegenden Ansatz zufrieden und die Bereitschaft entsprechend vorhanden ist, müssen einige Voraussetzungen in Bezug auf die Daten berücksichtigt werden:
 
 - **Allgemeine Ermittlung**: Füllen Sie die oben stehende Tabelle zum [Dokumentieren der Komplexität](#document-complexity) aus.
 - **Durchführen einer Analyse der Benutzerprofile in jedem betroffenen Land**: Sie müssen die allgemeine Weiterleitung des Datenverkehrs von Endbenutzern bereits frühzeitig im Migrationsprozess kennen. Das Ändern globaler geleaster Leitungen und das Hinzufügen von Verbindungen wie ExpressRoute zu einem Cloudrechenzentrum kann die Netzwerkeinrichtung um Monate verzögern. Gehen Sie diesen Aspekt so früh wie möglich im Prozess an.
@@ -131,11 +131,11 @@ Anhand dieser Voraussetzungen lassen sich Prozesse einrichten, mit denen diese K
 
 ## <a name="assess-process-changes"></a>Änderungen am Bewertungsprozess
 
-Beim Umgang mit Komplexitäten in Zusammenhang mit globalen Assets und der globalen Benutzerbasis gibt es einige wichtige Aktivitäten, die bei der Bewertung von Migrationskandidaten ebenfalls ausgeführt werden sollten. Jede dieser Änderungen bringt durch eine datengesteuerte Vorgehensweise Klarheit hinsichtlich der Auswirkungen auf globale Benutzer und Assets.
+Beim Umgang mit Komplexitäten in Zusammenhang mit globalen Assets und der globalen Benutzerbasis sollten bei der Bewertung von Migrationskandidaten zusätzlich einige wichtige Aktivitäten ausgeführt werden. Jede dieser Änderungen bringt durch eine datengesteuerte Vorgehensweise Klarheit hinsichtlich der Auswirkungen auf globale Benutzer und Assets.
 
 ### <a name="suggested-action-during-the-assess-process"></a>Empfohlene Aktion während des Bewertungsprozesses
 
-**Evaluieren von rechenzentrumsübergreifenden Abhängigkeiten**: Die [Tools für die Visualisierung von Abhängigkeiten in Azure Migrate](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization) helfen bei der Ermittlung von Abhängigkeiten. Die Verwendung dieser Tools vor der Migration ist eine allgemeine bewährte Methode. Wenn es aber um globale Komplexität geht, wird diese Verwendung zu einem notwendigen Schritt im Bewertungsprozess. Die Visualisierung durch die [Gruppierung von Abhängigkeiten](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies) kann dabei helfen, die IP-Adressen und Ports aller Assets zu ermitteln, die zur Unterstützung der Workload erforderlich sind.
+**Evaluieren von rechenzentrumsübergreifenden Abhängigkeiten**: Die [Tools für die Visualisierung von Abhängigkeiten in Azure Migrate](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization) helfen bei der Ermittlung von Abhängigkeiten. Die Verwendung dieser Tools vor der Migration ist eine bewährte Vorgehensweise. Wenn es um globale Komplexität geht, wird diese Verwendung zu einem notwendigen Schritt im Bewertungsprozess. Die Visualisierung durch die [Gruppierung von Abhängigkeiten](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies) kann dabei helfen, die IP-Adressen und Ports aller Assets zu ermitteln, die zur Unterstützung der Workload erforderlich sind.
 
 > [!IMPORTANT]
 > Zwei wichtige Hinweise: Erstens muss ein Experte, der über Kenntnisse zu Assetplatzierung und IP-Adressschemas verfügt, Assets identifizieren, die sich in einem sekundären Rechenzentrum befinden. Zweitens müssen sowohl Downstreamabhängigkeiten als auch Clients in der Visualisierung evaluiert werden, um bidirektionale Abhängigkeiten zu verstehen.
@@ -162,7 +162,7 @@ Beim Migrieren einer Anwendung, die in mehreren Regionen bereitgestellt werden m
 **Datensynchronisierung**: Häufig wird die Bandbreite bei der Synchronisierung der Datenplattform am meisten beansprucht. Wie in den Referenzarchitekturen für [Webanwendungen in mehreren Regionen](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/multi-region) und [n-schichtige Anwendungen in mehreren Regionen](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/multi-region-sql-server) definiert, ist eine Synchronisierung der Daten häufig erforderlich, um die Anwendungen auf dem gleichen Stand zu halten. Wenn dies der gewünschte Betriebszustand der Anwendung ist, kann es klug sein, eine vollständige Synchronisierung zwischen der Quelldatenplattform und den einzelnen Cloudplattformen durchzuführen, bevor die Anwendung und die Assets der mittleren Schicht migriert werden.
 **Datensynchronisierung**: Häufig wird die Bandbreite bei der Synchronisierung der Datenplattform am meisten beansprucht. Wie in den Referenzarchitekturen für [Webanwendungen in mehreren Regionen](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/multi-region) und [n-schichtige Anwendungen in mehreren Regionen](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/multi-region-sql-server) definiert, ist eine Synchronisierung der Daten häufig erforderlich, um die Anwendungen auf dem gleichen Stand zu halten. Wenn dies der gewünschte Betriebszustand der Anwendung ist, kann es klug sein, eine vollständige Synchronisierung zwischen der Quelldatenplattform und den einzelnen Cloudplattformen durchzuführen, bevor die Anwendung und die Assets der mittleren Schicht migriert werden.
 
-**Azure-zu-Azure-Notfallwiederherstellung**: Es gibt eine alternative Option, die die Komplexität weiter verringern kann. Wenn Zeitpläne und Datensynchronisierung eine zweistufige Bereitstellung vorsehen, könnte die [Azure-zu-Azure-Notfallwiederherstellung](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-architecture) eine akzeptable Lösung sein. In diesem Szenario wird die Workload mithilfe eines Entwurfs mit einem einzelnen Site Recovery-Tresor und Konfigurations- oder Prozessserver zum ersten Azure-Rechenzentrum migriert. Sobald die Workload getestet wurde, kann sie aus den migrierten Assets in einem zweiten Azure-Rechenzentrum wiederhergestellt werden. Diese Vorgehensweise reduziert die Auswirkungen auf Ressourcen im Quellrechenzentrum und profitiert von den höheren Übertragungsgeschwindigkeiten und den hohen Bandbreitenkapazitäten zwischen Azure-Rechenzentren.
+**Azure-zu-Azure-Notfallwiederherstellung**: Eine alternative Option kann die Komplexität weiter verringern. Wenn Zeitpläne und Datensynchronisierung eine zweistufige Bereitstellung vorsehen, könnte die [Azure-zu-Azure-Notfallwiederherstellung](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-architecture) eine akzeptable Lösung sein. In diesem Szenario wird die Workload mithilfe eines Entwurfs mit einem einzelnen Site Recovery-Tresor und Konfigurations- oder Prozessserver zum ersten Azure-Rechenzentrum migriert. Nachdem die Workload getestet wurde, kann sie aus den migrierten Assets in einem zweiten Azure-Rechenzentrum wiederhergestellt werden. Diese Vorgehensweise reduziert die Auswirkungen auf Ressourcen im Quellrechenzentrum und profitiert von den höheren Übertragungsgeschwindigkeiten und den hohen Bandbreitenkapazitäten zwischen Azure-Rechenzentren.
 
 > [!NOTE]
 > Dadurch können die kurzfristigen Migrationskosten steigen, da dieses Verfahren zusätzliche Kosten für ausgehende Bandbreite verursachen kann.
@@ -179,6 +179,6 @@ Der Umgang mit der globalen Komplexität während der Optimierung und Höherstuf
 
 **Geschäftsbezogene Tests**: Zusammen mit dem Plan der geschäftsbezogenen Änderungen müssen möglicherweise in jeder Region geschäftsbezogene Tests durchgeführt werden, um eine angemessene Leistung sowie die Einhaltung der geänderten Weiterleitungsmuster im Netzwerk sicherzustellen.
 
-**Höherstufung in Gruppen**: Häufig erfolgt die Höherstufung als Einzelaktivität, und der Produktionsdatenverkehr wird an die migrierten Workloads umgeleitet. Im Fall von globalen Releases empfiehlt es sich, die Höherstufung in Gruppen (vordefinierte Benutzergruppen) durchzuführen. So können das Cloudstrategieteam und das Cloudeinführungsteam die Leistung besser beobachten und die Unterstützung für die Benutzer in den einzelnen Regionen verbessern. Höher gestufte Gruppen werden häufig auf Netzwerkebene gesteuert, indem die Weiterleitung bestimmter IP-Adressbereiche von den Quell-Workloadassets zu den neu migrierten Assets geändert wird. Nachdem eine bestimmte Gruppe von Endbenutzern migriert wurde, ist die nächste an der Reihe.
+**Höherstufung in Gruppen**: Häufig erfolgt die Höherstufung als Einzelaktivität, und der Produktionsdatenverkehr wird an die migrierten Workloads umgeleitet. Im Fall von globalen Releases empfiehlt es sich, die Höherstufung in Flights (vordefinierte Benutzergruppen) durchzuführen. So können das Cloudstrategieteam und das Cloudeinführungsteam die Leistung besser beobachten und die Unterstützung für die Benutzer in den einzelnen Regionen verbessern. Höher gestufte Gruppen werden häufig auf Netzwerkebene gesteuert, indem die Weiterleitung bestimmter IP-Adressbereiche von den Quell-Workloadassets zu den neu migrierten Assets geändert wird. Nachdem eine bestimmte Gruppe von Endbenutzern migriert wurde, ist die nächste an der Reihe.
 
 **Optimierung der Gruppen**: Einer der Vorteile der Höherstufung in Gruppen besteht darin, dass detailliertere Beobachtungen und eine weitere Optimierung der bereitgestellten Assets möglich sind. Nach einer kurzen Zeit der Produktionsnutzung durch die erste Gruppe wird eine weitere Optimierung der migrierten Assets empfohlen, sofern die IT-Betriebsverfahren dies zulassen.

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 27a86947bdcf240f3ea469db10c94b3f63ccb1e8
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: ed394c0bd1748a6e3382835cec816b552217bd01
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564894"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753353"
 ---
 # <a name="encryption-decision-guide"></a>Leitfaden zur Entscheidungsfindung für die Verschlüsselung
 
@@ -63,7 +63,7 @@ Bei einem Bring-Your-Own-Key-Ansatz generieren Sie die Schlüssel auf dedizierte
 
 ### <a name="on-premises-hold-your-own-key"></a>Lokal (Hold-Your-Own-Key)
 
-In bestimmten Szenarien liegen möglicherweise gesetzliche Vorschriften, Richtlinien oder technische Gründe vor, aus denen Sie Schlüssel nicht in einem cloudbasierten Schlüsselverwaltungssystem speichern dürfen. In diesen Fällen müssen Sie die Schlüssel mithilfe lokaler Hardware generieren, mithilfe eines lokalen Schlüsselverwaltungssystems speichern und verwalten sowie ein Verfahren bereitstellen, mit dem cloudbasierte Ressourcen für die Verschlüsselung auf diese Schlüssel zugreifen können. Beachten Sie, dass das Speichern eines eigenen Schlüssels möglicherweise nicht mit allen Azure-basierten Diensten kompatibel ist.
+In bestimmten Szenarien liegen möglicherweise gesetzliche Vorschriften, Richtlinien oder technische Gründe vor, die das Speichern von Schlüsseln in einem cloudbasierten Schlüsselverwaltungssystem verbieten. In diesem Fall müssen Sie die Schlüssel mithilfe lokaler Hardware generieren, mithilfe eines lokalen Schlüsselverwaltungssystems speichern und verwalten sowie ein Verfahren bereitstellen, mit dem cloudbasierte Ressourcen für die Verschlüsselung auf diese Schlüssel zugreifen können. Beachten Sie, dass das Speichern eines eigenen Schlüssels möglicherweise nicht mit allen Azure-basierten Diensten kompatibel ist.
 
 **Annahmen für die lokale Schlüsselverwaltung:** Die Verwendung eines lokalen Schlüsselverwaltungssystems umfasst die folgenden Annahmen:
 
@@ -84,7 +84,7 @@ Berücksichtigen Sie bei der Planung Ihrer Verschlüsselungsrichtlinie die versc
 
 Dies sind Daten, die zwischen internen Ressourcen, zwischen Rechenzentren oder externen Netzwerken oder über das Internet verschoben werden.
 
-Die Verschlüsselung von Daten während der Übertragung erfolgt normalerweise durch das Erzwingen der SSL/TLS-Protokolle für den Datenverkehr. Datenverkehr zwischen Ihren in der Cloud gehosteten Ressourcen und externen Netzwerken oder dem öffentlichen Internet sollte immer verschlüsselt werden. PaaS-Ressourcen erzwingen in der Regel ebenfalls standardmäßig die SSL/TLS-Verschlüsselung für Datenverkehr. Ob Sie die Verschlüsselung für Datenverkehr zwischen IaaS-Ressourcen, die in Ihren virtuellen Netzwerken gehostet werden, erzwingen, ist eine Entscheidung Ihres Cloudeinführungsteams und des Workloadbesitzers, es wird jedoch im Allgemeinen empfohlen.
+Daten werden während der Übertragung normalerweise durch das Erzwingen der SSL/TLS-Protokolle für den Netzwerkdatenverkehr verschlüsselt. Verschlüsseln Sie immer den Datenverkehr zwischen Ihren in der Cloud gehosteten Ressourcen und externen Netzwerken oder dem öffentlichen Internet. In der Regel erzwingen PaaS-Ressourcen standardmäßig SSL-/TLS-Verschlüsselung. Die Cloudeinführungsteams und Workloadbesitzers sollten erwägen, die Verschlüsselung für Datenverkehr zwischen IaaS-Ressourcen zu erzwingen, die in Ihren virtuellen Netzwerken gehostet werden.
 
 **Annahmen für die Verschlüsselung von Daten während der Übertragung:** Für die Implementierung einer geeigneten Verschlüsselungsrichtlinie für Daten während der Übertragung wird Folgendes angenommen:
 
