@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: b772eddfce65fa7a2ce4d67e36b1cc0f82e47ac5
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 4328cdf3249b065bf20efd5858254ad9da1dc211
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564871"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753165"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Protokollierung und Berichterstellung
 
@@ -26,7 +26,7 @@ Wechseln Sie zu: [Planen der Überwachungsinfrastruktur](#plan-your-monitoring-i
 
 Der Wendepunkt bei der Bestimmung einer cloudbasierten Protokollierungs- und Berichterstellungsstrategie basiert in erster Linie auf bereits getätigten Investitionen Ihres Unternehmens in betriebliche Prozesse und zu einem gewissen Grad auf den Anforderungen, die Sie an die Unterstützung einer Strategie mit mehreren Clouds haben.
 
-Es gibt mehrere Möglichkeiten, Aktivitäten in der Cloud zu protokollieren und zu dokumentieren. „Cloudnativ“ und „Zentrale Protokollierung“ sind zwei übliche Optionen für verwaltete Dienste, die dem Abonnementmodell und der Anzahl von Abonnements unterliegen.
+Aktivitäten in der Cloud können auf verschiedene Arten protokolliert und gemeldet werden. „Cloudnativ“ und „Zentrale Protokollierung“ sind zwei übliche Optionen für verwaltete Dienste, die dem Abonnementmodell und der Anzahl von Abonnements unterliegen.
 
 ## <a name="plan-your-monitoring-infrastructure"></a>Planen der Überwachungsinfrastruktur
 
@@ -54,7 +54,7 @@ Benutzerdefinierte Azure Monitor-basierte Protokollierungslösungen können ad h
 
 ### <a name="on-premises-extension"></a>Lokale Erweiterung
 
-Es kann einen erheblichen Neuentwicklungsaufwand für Anwendungen und Dienste erfordern, die in die Cloud migriert werden, um cloudbasierte Protokollierungs- und Berichterstellungslösungen wie Azure Monitor zu nutzen. In diesen Fällen kann es sinnvoll sein, dass diese Workloads weiterhin Telemetriedaten an bestehende lokale Systeme senden.
+Es kann einen erheblichen Neuentwicklungsaufwand für Anwendungen und Dienste erfordern, die in die Cloud migriert werden, um cloudbasierte Protokollierungs- und Berichterstellungslösungen wie Azure Monitor zu nutzen. Lassen Sie in diesen Fällen ggf. zu, dass diese Workloads weiterhin Telemetriedaten an bestehende lokale Systeme senden.
 
 Um diesen Ansatz zu unterstützen, müssen Ihre Cloudressourcen in der Lage sein, über eine Kombination aus [Hybridnetzwerken](../software-defined-network/hybrid.md) und [in der Cloud gehosteten Domänendiensten](../identity/index.md#cloud-hosted-domain-services) direkt mit Ihren lokalen Systemen zu kommunizieren. Bei dieser Konfiguration fungiert das virtuelle Cloudnetzwerk als Netzwerkerweiterung der lokalen Umgebung. Daher können in der Cloud gehostete Workloads direkt mit Ihrem lokalen Protokollierungs- und Berichterstellungssystem kommunizieren.
 
