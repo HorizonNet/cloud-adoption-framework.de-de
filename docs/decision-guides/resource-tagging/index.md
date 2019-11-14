@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 77fe8ba38b2ebf79ddceeb9fe2df940e8e333cc6
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: e02fa26454c4e10af7acae80bbe3b89e8ccaee84
+ms.sourcegitcommit: 617c3f12a3657a8a1393fd08d261dd98eb81b65c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73238840"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74086810"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Ressourcenbenennung und -markierung
 
@@ -73,7 +73,7 @@ Die unten aufgeführten allgemeinen Markierungsmuster zeigen beispielhaft, wie d
 
 Weitere Informationen zur Benennung und Markierung in Azure finden Sie unter:
 
-- [Namenskonventionen für Azure-Ressourcen](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions). In dieser Anleitung finden Sie empfohlene Benennungskonventionen für Azure-Ressourcen.
+- [Namenskonventionen für Azure-Ressourcen](/azure/architecture/best-practices/resource-naming). In dieser Anleitung finden Sie empfohlene Benennungskonventionen für Azure-Ressourcen.
 - [Verwenden von Tags zum Organisieren von Azure-Ressourcen](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags?toc=/azure/billing/TOC.json). Sie können Tags in Azure sowohl auf der Ressourcengruppenebene als auch auf der Ebene einzelner Ressourcen anwenden. So können Sie Abrechnungsberichte anhand der angewendeten Markierungen unterschiedlich detailliert gestalten.
 
 ## <a name="next-steps"></a>Nächste Schritte
