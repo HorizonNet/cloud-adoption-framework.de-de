@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 3d8d8007125a0ffa6268132f1d608123c25c9c22
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: bafeecd715ac2c18c9ae744165be249c2b3639e5
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058547"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751561"
 ---
 ::: zone target="docs"
 
@@ -43,7 +43,7 @@ Einer der Vorteile von cloudbasierten Lösungen ist die Möglichkeit, Feedback s
 
 Azure App Service bietet eine Hostingumgebung für Ihre Anwendungen, durch die Infrastrukturverwaltung und Betriebssystempatching unnötig werden. Dieser Dienst ermöglicht eine automatisierte Skalierung, um die Anforderungen Ihrer Benutzer zu erfüllen, bei gleichzeitiger Bindung an von Ihnen definierte Grenzen, um die Kosten in Schach zu halten.
 
-Azure App Service bietet erstklassige Unterstützung für Sprachen wir ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP und Python. Wenn Sie einen anderen Laufzeitstapel hosten müssen, können Sie mit Web-App für Container schnell und einfach einen Docker-Container innerhalb der Azure App Service-Umgebung hosten und so Ihren benutzerdefinierten Codestapel in einer Umgebung hosten, die Ihnen den Umgang mit Servern erspart.
+Azure App Service bietet erstklassige Unterstützung für Sprachen wir ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP und Python. Wenn Sie einen anderen Laufzeitstapel hosten müssen, können Sie mit Web-App für Container schnell und einfach einen Docker-Container innerhalb von App Service hosten und so Ihren benutzerdefinierten Codestapel in einer Umgebung hosten, die Ihnen den Umgang mit Servern erspart.
 
 ### <a name="action"></a>Aktion
 

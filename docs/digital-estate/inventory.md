@@ -8,12 +8,12 @@ ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 5c7473fd5966f871bbbeef7dd2e42826b42cecf3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 5ecf69235c27fbb45ad109609d8fd733dfc6187c
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222603"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753268"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>Erfassen von Bestandsdaten für digitale Ressourcen
 
@@ -23,14 +23,13 @@ Die Erstellung eines Bestandsverzeichnisses ist der erste Schritt bei der [Planu
 
 Die Bestandsdaten zur Unterstützung eines digitalen Umfelds sind abhängig von der gewünschten digitalen Transformation und dem entsprechenden Transformationsprozess.
 
-- **Cloudmigration:**  Wir empfehlen oft, dass Sie im Rahmen einer Cloudmigration die Bestandsermittlung mithilfe von Überprüfungstools durchführen, die eine zentrale Liste aller VMs und Server erstellen. Einige Tools können auch Netzwerkzuordnungen und Abhängigkeiten erstellen, was beim Definieren des Workloadabgleichs hilfreich ist.
+- **Cloudmigration:**  Wir empfehlen häufig, dass Sie im Rahmen einer Cloudmigration die Bestandsermittlung mithilfe von Überprüfungstools durchführen, die eine zentrale Liste aller virtueller Computer und Server erstellen. Einige Tools können auch Netzwerkzuordnungen und Abhängigkeiten erstellen, was beim Definieren des Workloadabgleichs hilfreich ist.
 
 - **Anwendungsinnovationen:** Auch bei aktivierter Cloud beginnen Anwendungsinnovationen immer mit dem Kunden. Dabei hat es sich bewährt, zunächst die gesamte Benutzererfahrung zu erfassen. Durch den Abgleich dieser Erfassung mit Anwendungen, APIs, Daten und anderen Ressourcen entsteht ein detaillierter Bestand für die Analyse.
 
 - **Dateninnovationen:** Bei cloudfähigen Dateninnovationen liegt der Fokus auf dem Produkt oder Dienst. Eine Bestandsaufnahme umfasst auch eine Zuordnung der Möglichkeiten zur Unterbrechung des Markts sowie der benötigten Funktionen.
 
 - **Sicherheit**: Auf der Grundlage des Bestands können die Ressourcen der Organisation bewertet, geschützt und überwacht werden.
-
 
 ## <a name="accuracy-and-completeness-of-an-inventory"></a>Genauigkeit und Vollständigkeit eines Bestands
 

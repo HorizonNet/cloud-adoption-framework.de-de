@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 39742436ab6c4a176e40ce8188c13cca55f23521
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 118a111ae787e58d1f50704216e921a4df43501e
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222137"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753017"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>Beispiele für Richtlinienanweisungen der Identitätsbaseline
 

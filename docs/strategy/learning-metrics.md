@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: f761f85fa4b21b35e8428985707176624b92a5ec
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: b19357bd98858cc227426d2adb03a6e84210b9b3
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031204"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753778"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -41,7 +41,7 @@ Die Herausforderung bei Metriken zum Kundenverhalten besteht darin, dass sie ein
 
 ## <a name="data-innovation"></a>Dateninnovationen
 
-Der Wechsel einer Branche, das Unterbrechen von Märkten oder das Transformieren von Produkten/Diensten kann Jahre dauern. Bei einer Dateninnovationen unter Einbeziehung einer Cloud ist das Experimentieren ausschlaggebend für messbare Erfolge. Seien Sie transparent, indem Sie Vorhersagemetriken wie Wahrscheinlichkeit in Prozent, Anzahl der fehlerhaften Experimente und Menge der trainierten Modelle freigeben. Fehler sammeln sich schneller an als Erfolge. Diese Metriken können entmutigend sein, und es ist wichtig, dass das ausführende Team versteht, welche Zeit und Investitionen erforderlich sind, um die Daten richtig zu nutzen.
+Der Wechsel einer Branche, das Durchbrechen von Märkten oder das Transformieren von Produkten und Diensten kann Jahre dauern. Bei einer Dateninnovationen unter Einbeziehung einer Cloud ist das Experimentieren ausschlaggebend für messbare Erfolge. Seien Sie transparent, indem Sie Vorhersagemetriken wie Wahrscheinlichkeit in Prozent, Anzahl der fehlerhaften Experimente und Anzahl der trainierten Modelle freigeben. Fehler sammeln sich schneller an als Erfolge. Diese Metriken können entmutigend sein, und das ausführende Team muss nachvollziehen können, welcher Zeitaufwand und welche Investitionen erforderlich sind, um diese Metriken richtig zu nutzen.
 
 Auf der anderen Seite werden einige positive Indikatoren häufig dem datengesteuerten Lernen zugeordnet: Zentralisierung heterogener Datasets, Dateneingang und Datendemokratisierung. Während das Team etwas über die Kunden von morgen lernt, können schon heute greifbare Ergebnisse erzielt werden. Hilfreiche Lernmetriken sind z. B.:
 

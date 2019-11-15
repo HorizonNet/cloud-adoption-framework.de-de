@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 46c7d77aecc93f5c129f098145bfec97820995a2
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: e0ddf68f959130df11305a9791c553aa48009c01
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378072"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753805"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -63,7 +63,7 @@ Weitere Beispiele für erste Einführungsprojekte sind unter anderem:
 - **Dev/Test:** Entfernen Sie Dev/Test aus lokalen Umgebungen, um Entwicklern Kontrolle, Flexibilität und Self-Service-Kapazitäten zu bieten.
 - **Einfache Apps (weniger als fünf):** Modernisieren und migrieren Sie eine einfache App, um schnell Entwickler- und Betriebsexpertise aufzubauen.
 - **Leistungslabs:** Wenn Sie eine Labumgebung mit hoher Leistung benötigen, können Sie diese Labs mit der Cloud für kurze Zeit schnell und kostengünstig bereitstellen.
-- **Datenplattform:** Erstellen Sie einen Data Lake mit skalierbarem Compute für Analyse-, Berichterstellungs- oder Machine Learning-Workloads, und migrieren Sie unter Verwendung von Sicherungs-/Wiederherstellungsmethoden oder mithilfe von Datenmigrationsdiensten zu verwalteten Datenbanken.
+- **Datenplattform:** Erstellen Sie einen Data Lake mit skalierbarer Computeressource für Analyse-, Berichterstellungs- oder Machine Learning-Workloads, und migrieren Sie unter Verwendung von Sicherungs-/Wiederherstellungsmethoden oder mithilfe von Datenmigrationsdiensten zu verwalteten Datenbanken.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
