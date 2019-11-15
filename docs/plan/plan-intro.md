@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 027b685b2c75edc59e03cca9f9d2614422684bf0
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: ddee24fda25b329eccbee5eebf41fd5929346877
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048286"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753397"
 ---
 # <a name="plan-for-cloud-adoption"></a>Planen der Cloudeinführung
 
@@ -21,7 +21,7 @@ Für eine erfolgreiche Cloudeinführung ist ein Plan eine wesentliche Anforderun
 
 ## <a name="align-strategy-and-planning"></a>Ausrichten von Strategie und Planung
 
-Cloudeinführungspläne beginnen mit einer klar definierten Strategie. Die Strategie sollte zumindest die Motivationen, Geschäftsergebnisse und geschäftlichen Begründungen für die Einführung der Cloud beschreiben. Diese positiven Ergebnisse werden dann durch den Aufwand ausgeglichen, der erforderlich ist, um sie zu realisieren.
+Cloudeinführungspläne beginnen mit einer klar definierten Strategie. Die Strategie sollte zumindest die Motivationen, Geschäftsergebnisse und geschäftlichen Begründungen für die Cloudeinführung beschreiben. Diese positiven Ergebnisse werden dann durch den Aufwand ausgeglichen, der erforderlich ist, um sie zu realisieren.
 
 Die Bemühung beginnt mit der digitalen Ressource (vorgeschlagen oder vorhanden), die die Strategie in konkretere Workloads und Ressourcen übersetzt. Anschließend können Sie diese konkreten Elemente technischen Aufgaben zuordnen. Von hier aus kann die technische Arbeit von Fachleuten in einer geeigneten Organisationsstruktur ausgeführt werden. Der Cloudeinführungsplan kombiniert alle diese Themen in einem Plan, der durch agile Methoden des Projektmanagements prognostiziert, budgetiert, implementiert und verwaltet werden kann. Diese Artikelreihe hilft Ihnen, den Plan zu erstellen und einige Vorlagen bereitzustellen, um die Arbeit einfacher zu gestalten.
 

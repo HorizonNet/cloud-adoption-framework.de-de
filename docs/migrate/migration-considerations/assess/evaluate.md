@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 34d9cd3252849353b0fe765db4d84f7e9f2e5ea7
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 05b713c2f1f88f50829e38db8a0a0343d3afd32d
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549148"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753514"
 ---
 # <a name="evaluate-workload-readiness"></a>Bewerten der Bereitschaft einer Workload
 

@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: f2892dbfab86da07db2441aea7757846903ff7e9
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: cb5ba007c18643efe3b0c83b8ff247844cbbe7b2
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656593"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753288"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Ermöglichen des Erfolgs während einer Cloudeinführungsjourney
 
@@ -32,7 +32,7 @@ In diesem Framework ist „Enablement“ (Befähigung, Ermöglichen) ein Kernthe
 
 ## <a name="additional-tools"></a>Weitere Tools
 
-Zusätzlich zum Framework für die Cloudeinführung (Cloud Adoption Framework) deckt Microsoft zusätzliche Themen ab, die den Erfolg ermöglichen. In diesem Artikel werden einige gängige Tools vorgestellt, die den Erfolg über den Rahmen des Frameworks für die Cloudeinführung hinaus deutlich verbessern können. Die Schaffung von Cloudgovernance, resilienten Architekturen, technischen Qualifikationen und einem DevOps-Ansatz sind für den Erfolg jeder Cloudeinführungsmaßnahme wichtig. Dem Leser wird empfohlen, ein Lesezeichen für diese Seite anzulegen, um sie während der gesamten Cloudeinführungsreise als Ressource zu nutzen.
+Zusätzlich zum Framework für die Cloudeinführung (Cloud Adoption Framework) deckt Microsoft zusätzliche Themen ab, die den Erfolg ermöglichen. In diesem Artikel werden einige gängige Tools vorgestellt, die den Erfolg über den Rahmen des Frameworks für die Cloudeinführung hinaus deutlich verbessern können. Die Schaffung von Cloudgovernance, resilienten Architekturen, technischen Qualifikationen und einem DevOps-Ansatz sind für den Erfolg jeder Cloudeinführungsmaßnahme wichtig. Dem Leser wird empfohlen, ein Lesezeichen für diese Seite anzulegen, um sie während der gesamten Cloudeinführung als Ressource zu nutzen.
 
 <!-- markdownlint-disable MD033 -->
 

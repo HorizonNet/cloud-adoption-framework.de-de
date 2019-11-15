@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 7dbddb91d38a11c455e47fcd6f5a589929d8b003
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2aeda3e6efac30e03a917e790ef619f7a6d74cde
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031251"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753414"
 ---
 # <a name="cloud-adoption-capabilities"></a>Cloudeinführungsfunktionen
 
@@ -61,7 +61,7 @@ Dabei ist es am besten, wenn sich diese Teams täglich selbstständig treffen. D
 
 Releasezeitpläne und Iterationszeitspannen sind für jedes Unternehmen spezifisch. Allerdings ist ein Zeitraum von einer bis vier Wochen pro Iteration die durchschnittliche Dauer. Unabhängig vom Iterations- oder Releaserhythmus wird empfohlen, dass das Team am Ende jedes Releases alle unterstützenden Teams trifft, um das Releaseergebnis zu kommunizieren und die kommenden Bemühungen neu zu priorisieren. Ebenso ist es wichtig, sich am Ende eines jeden Sprints als Team mit dem [Cloudkompetenzzentrums](./cloud-center-of-excellence.md)- oder [Cloudgovernanceteam](./cloud-governance.md) zu treffen, um sich auf gemeinsame Bemühungen und jeglichen Unterstützungsbedarf einzustellen.
 
-Einige der technischen Aufgaben, die mit der Einführung der Cloud verbunden sind, können sich wiederholen. Es wird empfohlen, dass die Teammitglieder alle drei bis sechs Monate rotieren, um Probleme mit der Mitarbeiterzufriedenheit zu vermeiden und relevante Qualifikationen zu erhalten. Ein wechselnder Platz im [Cloudkompetenzzentrums](./cloud-center-of-excellence.md)- oder [Cloudgovernanceteam](./cloud-governance.md) kann eine ausgezeichnete Gelegenheit bieten, die Mitarbeiter zu motivieren und Innovationen zu nutzen.
+Einige der technischen Aufgaben, die mit der Einführung der Cloud verbunden sind, können sich wiederholen. Teammitglieder sollten alle drei bis sechs Monate rotieren, um Probleme mit der Mitarbeiterzufriedenheit zu vermeiden und relevante Qualifikationen zu erhalten. Ein wechselnder Platz im [Cloudkompetenzzentrums](./cloud-center-of-excellence.md)- oder [Cloudgovernanceteam](./cloud-governance.md) kann eine ausgezeichnete Gelegenheit bieten, die Mitarbeiter zu motivieren und Innovationen zu nutzen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

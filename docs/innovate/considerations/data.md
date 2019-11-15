@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f854b103decc3b23f27a41d01a81b812d2bc3c3f
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 242985f57cc377b78328e2277ba76f15abaec8b8
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565701"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753037"
 ---
 # <a name="democratize-data"></a>Demokratisieren von Daten
 
@@ -72,7 +72,7 @@ Wenn Daten zentralisiert werden müssen, um einer Kundenanforderung gerecht zu w
 
 **Integration:** Daten, die sich in einem vorhandenen Datenspeicher befinden, können mithilfe herkömmlicher Datenverschiebungstechniken in den zentralisierten Datenspeicher integriert werden. Dies gilt insbesondere für Szenarien, in denen die Multicloud-Datenspeicherung eine Rolle spielt. Zu diesen Techniken gehört das Extrahieren der Daten aus dem vorhandenen Datenspeicher und das anschließende Laden in den zentralen Datenspeicher. An einem bestimmten Punkt in diesem Prozess werden die Daten typischerweise transformiert, sodass sie im zentralen Speicher besser verwendbar und relevant sind.
 
-Mit cloudbasierten Tools stehen diese Techniken in Form von Tools mit nutzungsabhängiger Bezahlung zur Verfügung und senken so die Hemmschwelle für den Einstieg in Datensammlung und -zentralisierung. Tools wie der Datenmigrationsdienst und Data Factory sind zwei Beispiele in Azure. Die Referenzarchitektur für [Data Factory mit einem OLAP-Datenspeicher](https://docs.microsoft.com/azure/architecture/data-guide/relational-data/etl) ist ein Beispiel einer solchen Lösung.
+Mit cloudbasierten Tools stehen diese Techniken in Form von Tools mit nutzungsabhängiger Bezahlung zur Verfügung und senken so die Hemmschwelle für den Einstieg in Datensammlung und -zentralisierung. Tools wie Azure Database Migration Service und Azure Data Factory sind zwei Beispiele. Die Referenzarchitektur für [Data Factory mit einem OLAP-Datenspeicher](https://docs.microsoft.com/azure/architecture/data-guide/relational-data/etl) ist ein Beispiel einer solchen Lösung.
 
 **Erfassung:** Einige Daten befinden sich nicht in einem vorhandenen Datenspeicher. Wenn diese temporären Daten eine primäre Quelle für die Innovation sind, sollten alternative Ansätze in Erwägung gezogen werden. Temporäre Daten finden Sie in einer Vielzahl von vorhandenen Quellen, z. B. Anwendungen, APIs, Datenströme, IoT-Geräte, Blockchain, Anwendungscache, Medieninhalt oder sogar Flatfiles.
 

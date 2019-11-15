@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 575eace59b33163c1f0020b005bda2ceeb14dc9b
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: dc026ec6fc1a82db3c5c025becd31cd5cf2e7d8d
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220962"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752694"
 ---
 # <a name="cost-management-metrics-indicators-and-risk-tolerance"></a>Metriken, Indikatoren und Risikotoleranz in der Kostenverwaltung
 
@@ -41,11 +41,11 @@ In den frühen Phasen der Cloudeinführung erarbeiten Sie zusammen mit Ihrem Unt
 
 Nachdem Sie [Geschäftsrisiken](./business-risks.md) ermittelt haben, identifizieren Sie gemeinsam mit dem Unternehmen Benchmarks, anhand derer Sie Auslöser identifizieren können, die diese Risiken potenziell erhöhen können. Es folgen einige Beispiele für den Vergleich von Metriken wie den oben genannten mit Ihrer Risikotoleranz-Baseline als Indikator, dass das Unternehmen weiter in die Kostenverwaltung investieren muss.
 
-- **Engagementgesteuert (am häufigsten):** Ein Unternehmen, das sich vorgenommen hat, in diesem Jahr X Mio. USD für einen Cloudanbieter auszugeben. Es erfordert eine Kostenverwaltungsdisziplin, um sicherzustellen, dass das Unternehmen seine Ausgabenziele nicht um mehr als 20 % überschreitet und mindestens 90 % dieser Vorgabe verwendet.
+- **Engagementgesteuert (am häufigsten):** Ein Unternehmen, das sich vorgenommen hat, in diesem Jahr _x Mio. USD_ für einen Cloudanbieter auszugeben. Es erfordert eine Kostenverwaltungsdisziplin, um sicherzustellen, dass das Unternehmen seine Ausgabenziele nicht um mehr als 20 Prozent überschreitet und mindestens 90 Prozent dieser Vorgabe verwendet.
 - **Prozentsatztrigger:** Ein Unternehmen mit Cloudausgaben, die für die Produktionssysteme stabil sind. Wenn sich dieser Wert um mehr als _x %_ ändert, ist eine Kostenverwaltungsdisziplin eine sinnvolle Investition.
-- **Trigger bei Überdimensionierung:** Ein Unternehmen, das glaubt, dass die bereitgestellten Lösungen überdimensioniert sind. Kostenverwaltung ist eine Investition mit hoher Priorität, bis ein vernünftiger Abgleich zwischen Bereitstellung und Ressourcennutzung nachgewiesen werden kann.
-- **Trigger bei monatlichen Ausgaben:** Ein Unternehmen, das monatlich mehr als X Tausend USD ausgibt und dies als Kostenobergrenze ansieht. Wenn die Ausgaben diesen Betrag in einem bestimmten Monat übersteigen, muss eine Investition in Kostenverwaltung stattfinden.
-- **Trigger bei jährlichen Ausgaben:** Ein Unternehmen mit einem Budget für IT-Forschung und -Entwicklung, das Ausgaben von X Tausend USD pro Jahr für Cloudexperimente zulässt. Möglicherweise werden Produktionsworkloads in der Cloud ausgeführt, diese werden aber weiter als experimentelle Lösungen angesehen, wenn das Budget diesen Betrag nicht überschreitet. Sobald es weiter ansteigt, muss das Budget als Produktionsinvestition behandelt werden, und Ausgaben müssen strikt überwacht werden.
+- **Trigger bei Überdimensionierung:** Ein Unternehmen, das glaubt, dass die bereitgestellten Lösungen überdimensioniert sind. Kostenverwaltung ist eine Investition mit hoher Priorität, bis ein vernünftiger Abgleich zwischen Bereitstellung und Ressourcennutzung nachgewiesen wird.
+- **Trigger bei monatlichen Ausgaben:** Ein Unternehmen, das monatlich mehr als _x Tausend USD_ ausgibt und dies als Kostenobergrenze ansieht. Wenn die Ausgaben diesen Betrag in einem bestimmten Monat übersteigen, muss eine Investition in Kostenverwaltung stattfinden.
+- **Trigger bei jährlichen Ausgaben:** Ein Unternehmen mit einem Budget für IT-Forschung und -Entwicklung, das Ausgaben von _x Tausend USD_ pro Jahr für Cloudexperimente zulässt. Möglicherweise werden Produktionsworkloads in der Cloud ausgeführt, diese werden aber weiter als experimentelle Lösungen angesehen, wenn das Budget diesen Betrag nicht überschreitet. Wird das Budget überschritten, muss es als Produktionsinvestition behandelt werden, und Ausgaben müssen strikt überwacht werden.
 - **Betriebskostenumkehrung (ungewöhnlich):** Das Unternehmen steht Betriebskosten sehr negativ gegenüber, und es müssen Kostenverwaltungskontrollen eingerichtet werden, bevor eine Dev/Test-Workload bereitgestellt werden kann.
 
 ## <a name="next-steps"></a>Nächste Schritte

@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8daab86846ef0c3dbc93a5382f76080f678c1a08
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: f2e6aabec18d309aaae0a3a3d3cfd43ac6216a85
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565012"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752762"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>Umsetzen von Entwurfsprinzipien und erweiterten Vorgängen
 
@@ -54,7 +54,7 @@ Entscheidungen für eine Plattform- oder Workloadspezialisierung basieren auf de
 
 Eine Workloadspezialisierung löst häufig eine kulturelle Änderung aus. Sowohl die konventionelle IT als auch die zentrale IT bilden Prozesse aus, die eine skalierbare Unterstützung bieten können. Die Skalierung der Unterstützung ist für wiederholbare Dienste besser realisierbar, die in einer Verwaltungsbaseline, einer erweiterten Baseline oder sogar im Plattformbetrieb angesiedelt sind. Eine Workloadspezialisierung lässt sich häufig nicht skalieren. Dieser Mangel an Skalierbarkeit erschwert es einer zentralisierten IT-Organisation, die notwendige Unterstützung zu leisten, ohne die Grenzen der Skalierbarkeit der Organisation zu erreichen.
 
-Alternativ lässt sich der auf einem Cloudkompetenzzentrum basierende Ansatz durch gezielte Delegierung von Zuständigkeiten und selektive Zentralisierung skalieren. Eine Workloadspezialisierung lässt sich meist besser auf den Ansatz der delegierten Zuständigkeit eines CCoE abstimmen.
+Alternativ lässt sich ein auf einem Cloudkompetenzzentrum basierender Ansatz durch gezielte Delegierung von Zuständigkeiten und selektive Zentralisierung skalieren. Eine Workloadspezialisierung lässt sich meist besser auf den Ansatz der delegierten Zuständigkeit eines CCoE abstimmen.
 
 Die natürliche Abstimmung von Rollen in einem CCoE wird wie folgt dargestellt:
 

@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 309ea099eee5fcec5700a48afc4376dbc30805f9
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 4a1b96a5f29ebac9fd228ab1603d12e08b38ba63
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565652"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752082"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>Umgebungserfahrungen: Interagieren mit Geräten
 
@@ -55,7 +55,7 @@ Mixed Reality-Lösungen stellen die nächste Stufe von Umgebungserfahrungen dar.
 > [!IMPORTANT]
 > Wenn ein VR-Gerät (Virtual Reality) benötigt wird und *nicht bereits Teil der unmittelbaren Umgebung oder des natürlichen Verhaltens eines Kunden* ist, dann ist Augmented oder Virtual Reality eher eine alternative Erfahrung als eine Umgebungserfahrung.
 
-Mixed Reality-Umgebungen treten bei mobilen Mitarbeitern im Außendienst immer häufiger auf. Ihr Einsatz steigt noch schneller in Branchen, die Zusammenarbeit oder Fachkompetenz erfordern, die auf dem lokalen Markt nicht ohne Weiteres verfügbar ist. Situationen, in denen eine zentralisierte Implementierungsunterstützung für ein komplexes Produkt für Mitarbeiter an einem entfernten Standort erforderlich ist, bieten sich besonders für Augmented Reality an. In diesen Szenarien können das zentrale Supportteam und der Remotemitarbeiter Augmented Reality einsetzen, um Fehler zu beheben und das Produkt zu installieren.
+Mixed Reality-Umgebungen treten bei mobilen Mitarbeitern im Außendienst immer häufiger auf. Ihr Einsatz steigt noch schneller in Branchen, die Zusammenarbeit oder Fachkompetenz erfordern, die auf dem lokalen Markt nicht ohne Weiteres verfügbar ist. Situationen, in denen eine zentralisierte Implementierungsunterstützung für ein komplexes Produkt für Mitarbeiter an einem entfernten Standort erforderlich ist, bieten sich besonders für Augmented Reality an. In diesen Szenarien können das zentrale Supportteam und die Remotemitarbeiter Augmented Reality einsetzen, um Fehler zu beheben und das Produkt zu installieren.
 
 Betrachten Sie beispielsweise den Fall eines Raumankers. Raumanker ermöglichen Ihnen das Erzeugen von Mixed Reality-Umgebungen mit Objekten, die ihre jeweilige Position im Zeitverlauf geräteübergreifend beibehalten. Durch Raumanker kann ein bestimmtes Verhalten erfasst, aufgezeichnet und beibehalten werden, das eine Umgebungserfahrung bietet, wenn der Benutzer das nächste Mal innerhalb dieser erweiterten Umgebung arbeitet. [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview) ist ein Dienst, der diese Logik in die Cloud verlagert und es ermöglicht, Erfahrungen zwischen Geräten und sogar zwischen Lösungen zu teilen.
 

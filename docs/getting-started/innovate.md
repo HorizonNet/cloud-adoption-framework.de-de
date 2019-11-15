@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7dcb61b24834caa1da0de414ab5eaa7291711258
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 5e88a87a141adb1170f419db5d410cc31341c230
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048437"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753107"
 ---
 # <a name="innovate-through-cloud-adoption"></a>Innovation durch Einführung der Cloud
 
@@ -21,7 +21,7 @@ Cloudmigration ist eine hervorragende Option für Ihre vorhandenen Workloads. Da
 
 ## <a name="motivations-behind-innovation"></a>Die Motivation hinter der Innovation
 
-Innovation ist nicht der richtige Einführungspfad für alle Workloads. Ein Innovationspfad erfordert in der Regel eine höhere Investition in benutzerdefiniertes Code- und Datenmanagement als andere Pfade. Innovation dauert auch länger als eine Migration oder andere Formen der Modernisierung. Dieser Pfad wird empfohlen, wenn sich Kunden die folgenden Geschäftsergebnisse zum Ziel gesetzt haben:
+Innovation ist nicht der richtige Einführungspfad für alle Workloads. Ein Innovationspfad erfordert in der Regel eine höhere Investition in benutzerdefiniertes Code- und Datenmanagement als andere Pfade. Innovation dauert auch länger als eine Migration oder andere Formen der Modernisierung. Folgen Sie diesem Pfad, wenn Sie die folgenden Geschäftsergebnisse anstreben:
 
 - Vorbereitung auf neue technische Funktionen und Möglichkeiten
 - Skalieren, um Marktanforderungen zu erfüllen.

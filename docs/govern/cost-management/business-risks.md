@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 72d97057484ff757c94ab24a886d1232f01e5ee3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 49fcfb3558da82e34f33f54c4e36780606b1e47d
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223608"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753253"
 ---
 # <a name="cost-management-motivations-and-business-risks"></a>Kostenverwaltung: Motivationen und Geschäftsrisiken
 
@@ -45,7 +45,7 @@ Die Risiken werden je nach Organisation unterschiedlich sein, aber die folgenden
 
 Dokumentieren Sie mit der [Cloudverwaltungsvorlage](./template.md) die Geschäftsrisiken, die wahrscheinlich durch den aktuellen Cloudeinführungsplan entstehen.
 
-Sobald ein Verständnis für realistische Geschäftsrisiken hergestellt ist, besteht der nächste Schritt darin, die Risikotoleranz des Unternehmens zu dokumentieren sowie die Indikatoren und Schlüsselmetrik zur Überwachung dieser Toleranz zu erfassen.
+Sobald Sie mit realistischen Geschäftsrisiken vertraut sind, besteht der nächste Schritt darin, die Risikotoleranz des Unternehmens zu dokumentieren sowie die Indikatoren und Schlüsselmetriken zur Überwachung dieser Toleranz zu erfassen.
 
 > [!div class="nextstepaction"]
 > [Grundlegendes zu Indikatoren, Metriken und Risikotoleranz](./metrics-tolerance.md)
