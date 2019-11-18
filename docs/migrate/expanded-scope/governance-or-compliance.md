@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a6371fe5f3d90e72b29ecfc1e66b3d4991ef5822
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3367a76be508b61c214210e9e712c8a310932f2e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549233"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566911"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategie für Governance bzw. Compliance
 
@@ -38,7 +38,7 @@ Die Konfiguration der grundlegenden Azure-Umgebung kann sich erheblich ändern, 
 **Microsoft Services**: Microsoft Services stellt Lösungsangebote bereit, die am Cloud Adoption Framework-Governancemodell, an Complianceblaupausen oder an Optionen des virtuellen Rechenzentrums ausgerichtet werden können, um sicherzustellen, dass das am besten geeignete Modell für Governance bzw. Compliance zum Einsatz kommt. Nutzen Sie das Lösungsangebot [Secure Cloud Insights (SCI)](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf), um ein datengesteuertes Bild einer Kundenbereitstellung in Azure zu erhalten und den Reifegrad der Azure-Implementierung des Kunden zu überprüfen. Gleichzeitig lässt sich ermitteln, ob vorhandene Bereitstellungsarchitekturen optimiert und Sicherheits- und Verfügbarkeitsrisiken hinsichtlich der Governance eliminiert werden können. Basierend auf den Erkenntnissen sollten Sie folgende Ansätze ausführen:
 
 - **Cloudgrundlagen**: Legen Sie mithilfe des Lösungsangebots [Hybrid Cloud Foundation (HCF)](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf) die wichtigsten Entwürfe, Muster und die Governancearchitektur des Kunden für Azure fest. Ordnen Sie die Anforderungen des Kunden der jeweils am besten geeigneten Referenzarchitektur zu. Implementieren Sie ein Minimum Viable Product, bestehend aus gemeinsam genutzten Diensten und IaaS-Workloads.
-- **Cloudmodernisierung**: Nutzen Sie das Lösungsangebot [Cloud Modernization](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) (Cloudmodernisierung) als umfassende Vorgehensweise zum Verschieben von Anwendungen, Daten und Infrastrukturen in eine unternehmensfähige Cloud sowie zum Optimieren und Modernisieren, sobald sich alle Elemente in der Cloud befinden.
+- **Cloudmodernisierung**: Nutzen Sie das Lösungsangebot [Cloud Modernization](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) (Cloudmodernisierung) als umfassende Vorgehensweise zum Verschieben von Anwendungen, Daten und Infrastrukturen in eine unternehmensfähige Cloud sowie zum Optimieren und Modernisieren nach der Cloudbereitstellung.
 - **Innovationen in der Cloud**: Begeistern Sie Ihre Kunden mit einem innovativen und einzigartigen Cloudkompetenzzentrum: [Cloud Center of Excellence (CCoE)](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf). Mit diesem Lösungsansatz lässt sich eine moderne IT-Organisation aufbauen, in der Kunden Agilität bei DevOps-Prozessen erzielen und jederzeit das Steuer in der Hand behalten. So implementieren Sie eine agile Verfahrensweise, um Geschäftsanforderungen zu erfassen, Bereitstellungspakete im Rahmen von Sicherheits-, Compliance- und Dienstverwaltungsrichtlinien wiederzuverwenden und die Azure-Plattform gemäß operativen Prozeduren zu verwalten.
 
 ## <a name="assess-process-changes"></a>Änderungen am Bewertungsprozess
