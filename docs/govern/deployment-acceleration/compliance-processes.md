@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a393791aac072cb9a135c6fc11e08fc653817742
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: de64b03c6c6113261426beed5de729eb6927a440
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222589"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566383"
 ---
 # <a name="deployment-acceleration-policy-compliance-processes"></a>Beschleunigung der Bereitstellung – Prozesse für die Richtlinienkonformität
 
@@ -48,7 +48,7 @@ Stellen Sie sicher, dass Ihre IT Operations-Teams automatisierte Überwachungssy
 
 ## <a name="violation-triggers-and-enforcement-actions"></a>Auslöser bei Verstößen und Durchsetzungsmaßnahmen
 
-Da bei einer Nichteinhaltung von Konfigurationsrichtlinien das Risiko einer Unterbrechung wichtiger Dienste besteht, sollte das Cloudgovernanceteam Einblick in schwerwiegende Richtlinienverstöße haben. Stellen Sie sicher, dass die IT-Mitarbeiter für die Meldung von Konfigurationskonformitätsproblemen an Mitglieder des Governance-Teams über eindeutige Eskalationspfade verfügen, mit denen sich die Behebung von Richtlinienproblemen optimal identifizieren und überprüfen lässt, sobald diese erkannt wurden.
+Da bei einer Nichteinhaltung von Konfigurationsrichtlinien das Risiko einer Unterbrechung wichtiger Dienste besteht, sollte das Cloudgovernanceteam Einblick in schwerwiegende Richtlinienverstöße haben. Stellen Sie sicher, dass die IT-Mitarbeiter für die Meldung von Konfigurationskonformitätsproblemen an Mitglieder des Governanceteams über eindeutige Eskalationspfade verfügen, mit denen sich die Behebung von Richtlinienproblemen optimal identifizieren und überprüfen lässt, sobald diese erkannt wurden.
 
 Wenn Verstöße festgestellt werden, sollten Sie so schnell wie möglich Maßnahmen ergreifen, um eine erneute Einhaltung der Richtlinien zu erreichen. Ihr IT-Team kann die meisten Auslöser bei Verstößen mit den unter [Tools für die Beschleunigung der Bereitstellung in Azure](./toolchain.md) beschriebenen Tools automatisieren.
 

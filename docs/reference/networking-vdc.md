@@ -10,12 +10,12 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 718c93b560b38eaae6556e549a0c6f6bb97b807b
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: e5729e592fe0e602d24e2e37831c782fada73128
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048248"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566684"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>Virtuelle Rechenzentren: Eine Netzwerkperspektive
 
@@ -33,9 +33,9 @@ Kunden können über das Internet oder mit privater Netzwerkkonnektivität über
 
 Bei ihrer Einführung war die Cloud im Wesentlichen eine Plattform zum Hosten von öffentlichen Anwendungen. Unternehmen begannen, den Nutzen der Cloud zu verstehen und interne Branchenanwendungen in die Cloud zu verlagern. Diese Arten von Anwendungen waren mit zusätzlicher Sicherheit, Zuverlässigkeit und Leistung sowie mit Kostenaspekten verbunden, die eine weitere Flexibilisierung in Bezug auf die Bereitstellung von Clouddiensten nötig machten. Dies ebnete nicht nur den Weg für neue Infrastruktur und Netzwerkdienste, mit denen für diese Flexibilität gesorgt wurde, sondern auch für neue Features in den Bereichen Skalierung, Notfallwiederherstellung und mehr.
 
-Cloudlösungen wurden ursprünglich dazu entworfen, einzelne, relativ isolierte Anwendungen im öffentlichen Spektrum zu hosten. Dieser Ansatz hat sich für einige Jahre bewährt. Im Laufe der Zeit wurden jedoch die Vorteile von Cloudlösungen deutlich, und es wurden mehrere umfangreiche Workloads in der Cloud gehostet. Die Erfüllung der Anforderungen hinsichtlich der Sicherheit, Zuverlässigkeit, Leistung und Kosten von Bereitstellungen in einer oder mehreren Regionen entwickelte sich dadurch zu einem entscheidenden Faktor im Lebenszyklus des Clouddiensts.
+Cloudlösungen wurden ursprünglich dazu entworfen, einzelne, relativ isolierte Anwendungen im öffentlichen Spektrum zu hosten. Dieser Ansatz hat sich für einige Jahre bewährt. Im Laufe der Zeit wurden jedoch die Vorteile von Cloudlösungen deutlich, und es wurden mehrere umfangreiche Workloads in der Cloud gehostet. Die Erfüllung der Anforderungen hinsichtlich der Sicherheit, Zuverlässigkeit, Leistung und Kosten von Bereitstellungen in mindestens einer Region entwickelte sich dadurch zu einem entscheidenden Faktor im Lebenszyklus des Clouddiensts.
 
-Das **rote Kästchen** im folgenden Diagramm einer Cloudbereitstellung zeigt ein Beispiel für eine Sicherheitslücke. Das **gelbe Kästchen** stellt Möglichkeiten zur Optimierung von virtuellen Netzwerkgeräten (Network Virtual Appliance, NVA) in verschiedenen Workloads dar.
+Das folgende hervorgehobene Diagramm einer Cloudbereitstellung zeigt ein Beispiel für eine Sicherheitslücke, die im roten Kästchen hervorgehoben ist. Das gelbe Kästchen stellt Möglichkeiten zur Optimierung von virtuellen Netzwerkgeräten (Network Virtual Appliance, NVA) in verschiedenen Workloads dar.
 
 ![0][0]
 
@@ -263,7 +263,7 @@ Wir empfehlen, eine Gruppe von Azure Firewall-Instanzen oder virtuellen Netzwerk
 
 Der Azure Load Balancer kann die Integrität der verschiedenen Serverinstanzen überprüfen, und wenn bei einer Instanz die Antwort auf einen Test ausbleibt, beendet der Load Balancer das Senden von Datenverkehr an die fehlerhafte Instanz. Im virtuellen Rechenzentrum wird ein externer Load Balancer für den Hub und die Spokes bereitgestellt. Auf dem Hub wird der Load Balancer zum effizienten Weiterleiten von Datenverkehr an Dienste auf den Spokes verwendet. Auf den Spokes dienen Load Balancers zum Verwalten des Datenverkehrs von Anwendungen.
 
-Der Microsoft-Dienst [**Azure Front Door Service**][AFD] (AFDS) stellt eine hoch verfügbare und hochgradig skalierbare Plattform für die Beschleunigung von Webanwendungen mit globalem HTTP-Lastenausgleich, Anwendungsschutz und Content Delivery Network bereit. AFDS wird an mehr als 100 Standorten im Edgebereich des globalen Netzwerks von Microsoft ausgeführt und ermöglicht Ihnen das Erstellen, Ausführen und horizontale Hochskalieren Ihrer dynamischen Webanwendung und statischen Inhalte. AFDS stellt für Ihre Anwendung erstklassige Endbenutzerleistung, einheitliche Automatisierung der Regions-/Stempelwartung, BCDR-Automatisierung, einheitliche Client-/Benutzerinformationen, Zwischenspeicherung und Erkenntnisse zu Ihren Diensten bereit. Die Plattform bietet Leistung, Zuverlässigkeit, Support-SLAs, Compliancezertifizierungen sowie überwachbare Sicherheitsverfahren, die von Azure entwickelt, betrieben und nativ unterstützt werden.
+Der Microsoft-Dienst [Azure Front Door Service][AFD] (AFDS) stellt eine hoch verfügbare und hochgradig skalierbare Plattform für die Beschleunigung von Webanwendungen mit globalem HTTP-Lastenausgleich, Anwendungsschutz und Content Delivery Network bereit. AFDS wird an mehr als 100 Standorten im Edgebereich des globalen Netzwerks von Microsoft ausgeführt und ermöglicht Ihnen das Erstellen, Ausführen und horizontale Hochskalieren Ihrer dynamischen Webanwendung und statischen Inhalte. AFDS stellt für Ihre Anwendung erstklassige Endbenutzerleistung, einheitliche Automatisierung der Regions-/Stempelwartung, BCDR-Automatisierung, einheitliche Client-/Benutzerinformationen, Zwischenspeicherung und Erkenntnisse zu Ihren Diensten bereit. Die Plattform bietet Leistung, Zuverlässigkeit, Support-SLAs, Compliancezertifizierungen sowie überwachbare Sicherheitsverfahren, die von Azure entwickelt, betrieben und nativ unterstützt werden.
 
 [**Application Gateway**][AppGW]: Microsoft Azure Application Gateway ist ein dediziertes virtuelles Gerät mit einem ADC (Application Delivery Controller) als Dienst und bietet verschiedene Lastenausgleichsfunktionen der Ebene 7 für Ihre Anwendung. Sie können damit die Produktivität von Webfarmen steigern, indem sie die CPU-intensive SSL-Beendigung an das Anwendungsgateway auslagern. Darüber hinaus werden noch weitere Routingfunktionen der Ebene 7 bereitgestellt. Hierzu zählen etwa die Roundrobin-Verteilung des eingehenden Datenverkehrs, cookiebasierte Sitzungsaffinität, Routing auf URL-Pfadbasis und die Möglichkeit zum Hosten mehrerer Websites hinter einer einzelnen Application Gateway-Instanz. Eine Web Application Firewall (WAF) wird auch als Teil des WAF SKU des Anwendungsgateways bereitgestellt. Dieser SKU bietet Schutz für Webanwendungen vor allgemeinen Onlinesicherheitsrisiken und Exploits. Application Gateway kann als Gateway mit Internetanbindung, rein internes Gateway oder als Kombination dieser beiden Optionen konfiguriert werden.
 
@@ -337,7 +337,7 @@ Die Möglichkeiten für Workloads sind endlos. Im Folgenden finden Sie einige de
 
 ![10][10]
 
-### <a name="making-a-virtual-datacenter-highly-available-multiple-virtual-datacenters"></a>Hochverfügbarmachen eines virtuellen Rechenzentrums: mehrere virtuelle Rechenzentren
+### <a name="make-a-virtual-datacenter-highly-available-multiple-virtual-datacenters"></a>Hochverfügbarmachen eines virtuellen Rechenzentrums: mehrere virtuelle Rechenzentren
 
 Bisher ging es in diesem Artikel in erster Linie um den Entwurf eines einzelnen virtuellen Rechenzentrums sowie die grundlegenden Komponenten und die Architektur, die zur Resilienz beitragen. Azure-Funktionen wie der Azure Load Balancer, NVAs, Verfügbarkeitsgruppen, Skalierungsgruppen und andere Mechanismen bilden ein System, mit dem Sie solide Servicelevels (SLA) in Ihre Produktionsdienste integrieren können.
 
@@ -378,7 +378,7 @@ Da das DNS genutzt wird, kann Traffic Manager nur mit öffentlichen Azure-Endpun
 
 ### <a name="summary"></a>Zusammenfassung
 
-Ein virtuelles Rechenzentrum ist ein Ansatz für die Migration von Rechenzentren zur Erstellung einer skalierbaren Architektur in Azure, mit der die Nutzung von Cloudressourcen maximiert und die Kosten reduziert werden und die Steuerung des Systems vereinfacht wird. Ein virtuelles Rechenzentrum basiert auf einer Hub-and-Spoke-Netzwerktopologie, in der allgemein freigegebene Dienste im Hub bereitgestellt und bestimmte Anwendungen/Workloads in den Spokes zugelassen werden. Darüber hinaus wird in einem virtuellen Rechenzentrum auch die Struktur von Unternehmensrollen berücksichtigt, indem unterschiedliche Abteilungen, z. B. zentrale IT-Abteilung, DevOps sowie Betrieb und Wartung zusammenarbeiten, während sie ihre jeweiligen Rollen ausfüllen. Ein virtuelles Rechenzentrum erfüllt die Anforderungen einer Lift & Shift-Migration, bietet aber auch zahlreiche Vorteile für native Cloudbereitstellungen.
+Ein virtuelles Rechenzentrum ist ein Ansatz für die Migration von Rechenzentren zur Erstellung einer skalierbaren Architektur in Azure, mit der die Nutzung von Cloudressourcen maximiert und die Kosten reduziert werden und die Steuerung des Systems vereinfacht wird. Ein virtuelles Rechenzentrum basiert auf einer Hub-and-Spoke-Netzwerktopologie, in der allgemein freigegebene Dienste im Hub bereitgestellt und bestimmte Anwendungen/Workloads in den Spokes zugelassen werden. Darüber hinaus wird in einem virtuellen Rechenzentrum auch die Struktur von Unternehmensrollen berücksichtigt, indem unterschiedliche Abteilungen, z. B. zentrale IT-Abteilung, DevOps sowie Betrieb und Wartung zusammenarbeiten, während sie ihre jeweiligen Rollen ausfüllen. Ein virtuelles Rechenzentrum erfüllt die Anforderungen einer „Lift & Shift“-Migration, bietet aber auch zahlreiche Vorteile für native Cloudbereitstellungen.
 
 ## <a name="references"></a>Referenzen
 

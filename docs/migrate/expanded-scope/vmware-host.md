@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 66a39d53adeaf73e96cf04bdc5f80fc9574b675a
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 724a227407f431e08b5344dfd1280397bfca9b65
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980206"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566882"
 ---
 # <a name="accelerate-migration-with-vmware-hosts"></a>Beschleunigen der Migration mit VMware-Hosts
 
@@ -48,7 +48,7 @@ Nachdem Sie die sonstigen Voraussetzungen erfüllt haben, sollten Sie jeden VMwa
 
 ## <a name="migrate-process-changes"></a>Änderungen am Migrationsprozess
 
-Während jeder Iteration arbeitet das Cloud Adoption-Team das Backlog auf, um die Workloads mit der höchsten Priorität zu migrieren. Der Prozess ändert sich für VMWare-Hosts nicht wirklich. Wenn die nächste Workload im Backlog ein VMware-Host ist, ist die einzige Änderung das verwendete Tool.
+Während jeder Iteration arbeitet das Cloud Adoption-Team das Backlog auf, um die Workloads mit der höchsten Priorität zu migrieren. Der Prozess ändert sich für VMware-Hosts nicht wirklich. Wenn die nächste Workload im Backlog ein VMware-Host ist, ist die einzige Änderung das verwendete Tool.
 
 Zur Migration können Sie die folgenden Tools verwenden:
 

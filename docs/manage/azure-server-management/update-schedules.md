@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9e6e078859bb580794477328099b66d14009bdca
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 5bb3e37073c3c5d7f401f6d6c706314172eecf88
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221395"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565258"
 ---
 # <a name="create-update-schedules"></a>Erstellen von Zeitplänen für Updates
 
@@ -21,20 +21,20 @@ Sie können Zeitpläne für Updates über das Azure-Portal oder die neuen PowerS
 
 Informationen zum Erstellen eines Zeitplans für Updates über das Azure-Portal finden Sie unter [Planen einer Updatebereitstellung](https://docs.microsoft.com/azure/automation/automation-tutorial-update-management#schedule-an-update-deployment).
 
-Das Modul „Az.Automation“ unterstützt jetzt die Konfiguration der Updateverwaltung mit Azure PowerShell. [Die Version 1.7.0](https://www.powershellgallery.com/packages/Az/1.7.0) des Moduls fügt die Unterstützung für das Cmdlet [New-AzAutomationUpdateManagementAzureQuery](/powershell/module/az.automation/new-azautomationupdatemanagementazurequery?view=azps-1.7.0) hinzu, mit dem Sie Tags, Speicherorte und gespeicherte Suchen verwenden können, um Zeitpläne für Updates für eine flexible Gruppe von Computern zu konfigurieren.
+Das Modul „Az.Automation“ unterstützt jetzt die Konfiguration der Updateverwaltung mit Azure PowerShell. Die [Version 1.7.0](https://www.powershellgallery.com/packages/Az/1.7.0) des Moduls bietet Unterstützung für das Cmdlet [New-AzAutomationUpdateManagementAzureQuery](https://docs.microsoft.com/powershell/module/az.automation/new-azautomationupdatemanagementazurequery?view=azps-1.7.0). Mit diesem Cmdlet können Sie Tags, Speicherort und gespeicherte Suchen verwenden, um Zeitpläne für Updates für eine flexible Gruppe von Computern zu konfigurieren.
 
 ## <a name="example-script"></a>Beispielskript
 
-Das folgende Beispielskript veranschaulicht die Verwendung von Tagging und Abfragen zum Erstellen dynamischer Gruppen von Computern, auf die Sie Zeitpläne für Updates anwenden können. Es führt die folgenden Aktionen aus. Sie können bei der Erstellung eigener Skripte auf die Implementierungen der einzelnen Aktionen verweisen.
+Das Beispielskript in diesem Abschnitt veranschaulicht die Verwendung von Tagging und Abfragen zum Erstellen dynamischer Gruppen von Computern, auf die Sie Zeitpläne für Updates anwenden können. Es führt die folgenden Aktionen aus. Sie können bei der Erstellung eigener Skripte auf die Implementierungen der einzelnen Aktionen verweisen.
 
 - Erstellt einen Azure Automation-Updatezeitplan, der jeden Samstag um 8:00 Uhr ausgeführt wird.
 - Erstellt eine Abfrage für Computer, die den folgenden Kriterien entsprechen:
   - Am Azure-Standort `westus`, `eastus` oder `eastus2` bereitgestellt
   - Verfügt über ein angewendetes `Owner`-Tag mit dem Wert `JaneSmith`
   - Verfügt über ein angewendetes `Production`-Tag mit dem Wert `true`
-- Wendet den Updatezeitplan auf die abgefragten Computer an und legt ein zweistündiges Updatefenster fest
+- Wendet den Updatezeitplan auf die abgefragten Computer an und legt ein zweistündiges Updatefenster fest.
 
-Bevor Sie das Beispielskript ausführen, müssen Sie sich mit dem Cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) anmelden. Wenn Sie das Skript starten, müssen Sie die folgenden Informationen angeben:
+Bevor Sie das Beispielskript ausführen, müssen Sie sich mit dem Cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) anmelden. Stellen Sie beim Starten des Skripts die folgenden Informationen zur Verfügung:
 
 - Zielabonnement-ID
 - Zielressourcengruppe
@@ -105,11 +105,11 @@ Bevor Sie das Beispielskript ausführen, müssen Sie sich mit dem Cmdlet [Connec
         -Duration (New-TimeSpan -Hours 2) `
         -AzureQuery $AzureQueries `
         -IncludedUpdateClassification Security,Critical
-    ```
+```
 
-## Next steps
+## <a name="next-steps"></a>Nächste Schritte
 
-See examples of how to implement [common policies in Azure](./common-policies.md) that can help manage your servers.
+Hier finden Sie Beispiele für die Implementierung von [allgemeinen Richtlinien in Azure](./common-policies.md), die Ihnen bei der Verwaltung Ihrer Server helfen können.
 
 > [!div class="nextstepaction"]
-> [Common policies in Azure](./common-policies.md)
+> [Allgemeine Richtlinien in Azure](./common-policies.md)
