@@ -47,7 +47,7 @@ Die erste Entscheidung in Bezug auf die Beschleunigung der Bereitstellung ist da
 - Auch wenn Azure-Verwaltungsgruppen verwendet werden, wird eine relativ einfache Hierarchie erwartet.
 - Azure Blueprints dient zum Bereitstellen und Aktualisieren von Abonnements, indem RBAC-Anforderungen, Resource Manager-Vorlagen und Azure Policy verwaltungsgruppenübergreifend angewendet werden.
 
-## <a name="applying-the-dependent-patterns"></a>Anwenden der abhängigen Muster
+## <a name="apply-the-dependent-patterns"></a>Anwenden der abhängigen Muster
 
 Die folgenden Entscheidungen stellen die Muster dar, die durch die oben dargestellte Strategie zur Richtliniendurchsetzung erzwungen werden sollen:
 

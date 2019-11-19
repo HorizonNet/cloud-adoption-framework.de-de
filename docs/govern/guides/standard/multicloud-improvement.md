@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 78ffb3b3d91f1f00fb92d70147fd7177ffa9f1b0
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 10097c550ba160c41add31e27d0813c175f5e26a
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547509"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566229"
 ---
 # <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>Governanceleitfaden für Standardunternehmen: Multi-Cloud-Verbesserung
 
@@ -33,7 +33,7 @@ In der vorherigen Phase dieser Geschichte hatte das Unternehmen damit begonnen, 
 Seit diesem Zeitpunkt haben sich einige Dinge geändert, die sich auf die Governance auswirken:
 
 - Die Identitäten werden von einer lokalen Instanz von Active Directory gesteuert. Hybrididentitäten werden über die Replikation in Azure Active Directory umgesetzt.
-- IT- oder Cloudvorgänge werden hauptsächlich über Azure Monitor und ähnliche Automatisierungen verwaltetet.
+- Der IT- oder Cloudbetrieb wird hauptsächlich von Azure Monitor und verwandten Automatisierungen verwaltet.
 - Notfallwiederherstellung und Geschäftskontinuität werden von Azure Vault-Instanzen kontrolliert.
 - Für die Überwachung von Sicherheitsverletzungen und Angriffen wird Azure Security Center genutzt.
 - Azure Security Center und Azure Monitor werden zusammen für die Überwachung der Governance in der Cloud verwendet.

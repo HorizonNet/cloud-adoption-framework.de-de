@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: d545b977a4c98692ba8503d5512b8cb0d0b7dd0d
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 629b882c993e85dbb85b04cc9568491bd6e2036d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224195"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566618"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>Erstellen einer geschäftlichen Begründung für die Cloudmigration
 
@@ -22,7 +22,7 @@ Bei Cloudmigrationen können mit Maßnahmen zur Cloudtransformation frühzeitig 
 
 ## <a name="dispelling-cloud-migration-myths"></a>Ausräumen von Mythen zur Cloudmigration
 
-**Mythos: Die Cloud ist immer günstiger.** Es herrscht allgemein die Auffassung, dass der Betrieb eines Rechenzentrums in der Cloud immer kostengünstiger als der lokale Betrieb ist. Obwohl diese Annahme im allgemeinen zutreffen kann, ist dies nicht immer der Fall. Manchmal sind die Betriebskosten der Cloud höher. Diese höheren Kosten sind auf unzureichende Kostengovernance, falsch ausgerichtete Systemarchitekturen, Prozessduplizierung, ungewöhnliche Systemkonfigurationen oder höhere Personalkosten zurückzuführen. Glücklicherweise können Sie viele dieser Probleme beheben, um frühzeitig eine Rendite zu erzielen. Die Anleitung unter [Erstellen der geschäftlichen Begründung](#building-the-business-justification) enthält Informationen dazu, wie Sie diese Abstimmungsfehler erkennen und vermeiden können. Es kann auch hilfreich sein, wenn Sie sich die hier angegebenen weiteren Informationen zur Ausräumung von Mythen durchlesen.
+**Mythos: Die Cloud ist immer günstiger.** Es herrscht allgemein die Auffassung, dass der Betrieb eines Rechenzentrums in der Cloud immer kostengünstiger als der lokale Betrieb ist. Obwohl diese Annahme im allgemeinen zutreffen kann, ist dies nicht immer der Fall. Manchmal sind die Betriebskosten der Cloud höher. Diese höheren Kosten sind auf unzureichende Kostengovernance, falsch ausgerichtete Systemarchitekturen, Prozessduplizierung, ungewöhnliche Systemkonfigurationen oder höhere Personalkosten zurückzuführen. Glücklicherweise können Sie viele dieser Probleme beheben, um frühzeitig eine Rendite zu erzielen. Die Anleitung unter [Erstellen der geschäftlichen Begründung](#build-the-business-justification) enthält Informationen dazu, wie Sie diese Abstimmungsfehler erkennen und vermeiden können. Es kann auch hilfreich sein, wenn Sie sich die hier angegebenen weiteren Informationen zur Ausräumung von Mythen durchlesen.
 
 **Mythos: Alles sollte in die Cloud verlagert werden.** Es gibt einige geschäftliche Faktoren, die dazu führen können, dass Sie eine Hybridlösung wählen. Es ist ratsam, vor der Fertigstellung eines Geschäftsmodells zunächst eine erste quantitative Analyse durchzuführen. Dies ist in den [Artikeln zu digitalen Ressourcen](../digital-estate/5-rs-of-rationalization.md) beschrieben. Weitere Informationen zu den einzelnen quantitativen Faktoren der Rationalisierung finden Sie unter [Die fünf R der Rationalisierung](../digital-estate/5-rs-of-rationalization.md). Bei beiden Ansätzen werden einfach zu beschaffende Bestandsdaten und eine kurze quantitative Analyse verwendet, um Workloads oder Anwendungen zu identifizieren, die zu höheren Kosten in der Cloud führen können. Mit diesen Ansätzen können auch Abhängigkeiten oder Datenverkehrsmuster identifiziert werden, für die eine Hybridlösung erforderlich ist.
 
@@ -57,7 +57,7 @@ Technische und kulturelle Hindernisse können die Einführung der Cloud verlangs
 
 Bereiten Sie leitende Projektbeteiligte vor, indem Sie den geschäftlichen Nutzen und die Geschäftsergebnisse eindeutig einander zuordnen, um die Bereitschaft zu erhöhen und die Entschärfung von Zeitplanrisiken zu verbessern. Unterstützen Sie die Projektbeteiligten dabei, die sich aus der Transformation ergebenden Veränderungen besser zu verstehen. Machen Sie von Beginn an klare Aussagen, und setzen Sie realistische Ziele. Falls der Prozess aufgrund von Personen oder Technologien verlangsamt wird, ist die Unterstützung durch die Führungsebene leichter zu erlangen.
 
-## <a name="building-the-business-justification"></a>Erstellen der geschäftlichen Begründung
+## <a name="build-the-business-justification"></a>Formulieren der geschäftlichen Begründung
 
 Mit dem folgenden Prozess wird ein Ansatz zur Entwicklung der geschäftlichen Begründung für Cloudmigrationen definiert. Weitere Informationen zu Berechnungen und Finanzbedingungen finden Sie im Artikel zu [Finanzmodellen](./financial-models.md).
 
@@ -73,7 +73,7 @@ Wenn wir diese Gleichung in ihre Bestandteile zerlegen, ergibt sich ein migratio
 - Einige Cloudanbieter stellen auch Rechner zur Ermittlung von Kostendeltawerten bereit. Ein Beispiel ist der [Gesamtkostenrechner von Azure](https://azure.com/tco).
 - Bei anspruchsvolleren Kostenstrukturen können Sie erwägen, eine Übung zur [Planung von digitalen Ressourcen](../digital-estate/index.md) durchzuführen.
 - Erstellen Sie eine Schätzung der Kosten für die Migration.
-- Schätzen Sie die Kosten für die zu erwartenden Schulungsmaßnahmen. [Microsoft Learn](/learn) kann beim Verringern dieser Kosten eine Hilfe darstellen.
+- Schätzen Sie die Kosten für die zu erwartenden Schulungsmaßnahmen. [Microsoft Learn](https://docs.microsoft.com/learn) kann beim Verringern dieser Kosten eine Hilfe darstellen.
 - In einigen Unternehmen muss die Zeit, die von vorhandenen Mitarbeitern investiert wird, unter Umständen in die Anfangskosten eingerechnet werden. Hilfe hierzu erhalten Sie von Ihrer Finanzabteilung.
 - Besprechen Sie alle weiteren Kosten oder Gemeinkosten mit der Finanzabteilung, um diese zu bewerten.
 

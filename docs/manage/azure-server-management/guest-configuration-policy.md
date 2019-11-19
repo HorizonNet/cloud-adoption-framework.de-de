@@ -8,43 +8,43 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 16d67f628ff99f971d2d79127b25698987cc8977
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 741a73bacadccc0ee7b06542b86b9958aa236982
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547269"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656312"
 ---
 # <a name="guest-configuration-policy"></a>Gastkonfigurationsrichtlinie
 
-Die Erweiterung für die [Gastkonfiguration](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration) von Azure Policy ermöglicht es Ihnen, Konfigurationseinstellungen in einem virtuellen Computer zu überprüfen. Die Gastkonfiguration wird derzeit nur auf virtuellen Azure-Computern unterstützt.
+Sie können mit der Erweiterung für die [Gastkonfiguration](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration) von Azure Policy Konfigurationseinstellungen in einem virtuellen Computer überprüfen. Die Gastkonfiguration wird derzeit nur auf virtuellen Azure-Computern unterstützt.
 
-Sie können die Liste der Gastkonfigurationsrichtlinien finden, indem Sie nach der Kategorie „Gastkonfiguration“ auf der Portalseite von Azure Policy suchen. Sie können auch das folgende Cmdlet in einem PowerShell-Fenster ausführen, um die Liste zu finden:
+Um die Liste der Gastkonfigurationsrichtlinien zu finden, suchen Sie nach der Kategorie „Gastkonfiguration“ auf der Portalseite von Azure Policy. Oder führen Sie dieses Cmdlet in einem PowerShell-Fenster aus, um die Liste zu finden:
 
 ```powershell
 Get-AzPolicySetDefinition | where-object {$_.Properties.metadata.category -eq "Guest Configuration"}
 ```
 
 > [!NOTE]
-> Die Funktionalität der Gastkonfiguration wird regelmäßig aktualisiert, um zusätzliche Richtliniensätze zu unterstützen. Überprüfen Sie regelmäßig auf neue unterstützte Richtlinien und bewerten Sie, ob diese für Ihre Anforderungen nützlich sind.
+> Die Funktionalität der Gastkonfiguration wird regelmäßig aktualisiert, um zusätzliche Richtliniensätze zu unterstützen. Überprüfen Sie regelmäßig auf neue unterstützte Richtlinien und bewerten Sie, ob sie nützlich sind.
 
 <!-- TODO: Update these links when available. 
 
-By default, we recommend enabling the following policies:
+By default, we recommend that you enable the following policies:
 
-- [Preview]: Audit to verify password security settings are set correctly inside Linux and Windows machines.
+- [Preview]: Audit to verify that password-security settings are correct on Linux and Windows machines.
 - Audit to verify that certificates are not nearing expiration on Windows VMs.
 
 -->
 
 ## <a name="deployment"></a>Bereitstellung
 
-Sie können das folgende PowerShell-Beispielskript verwenden, um diese Richtlinien bereitzustellen:
+Verwenden Sie das folgende PowerShell-Beispielskript, um diese Richtlinien für Folgendes bereitzustellen:
 
 - Überprüfen Sie, ob die Einstellungen für die Kennwortsicherheit auf Windows- und Linux-Computern ordnungsgemäß eingestellt sind.
 - Stellen Sie sicher, dass Zertifikate auf virtuellen Windows-Computern nicht in Kürze ablaufen.
 
- Bevor Sie dieses Skript ausführen, müssen Sie sich mit dem Cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) anmelden. Wenn Sie das Skript ausführen, müssen Sie den Namen des Abonnements angeben, auf das Sie die Richtlinien anwenden möchten.
+ Bevor Sie dieses Skript ausführen, verwenden Sie das Cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0), um sich anzumelden. Wenn Sie das Skript ausführen, müssen Sie den Namen des Abonnements angeben, auf das Sie die Richtlinien anwenden möchten.
 
 ```powershell
 

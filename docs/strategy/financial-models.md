@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 75f19fcdc9f23066d5a6471cd79c0a6a00869554
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: cb5653de592fb92fa9ad9f5866997703a928ee4e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031470"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566594"
 ---
 # <a name="create-a-financial-model-for-cloud-transformation"></a>Erstellen eines Finanzmodells für die Cloudtransformation
 
@@ -28,13 +28,13 @@ Die Rendite (Return on Investment, ROI) ist für die Führungs- bzw. Vorstandseb
 
 In den nächsten Abschnitten werden die Daten beschrieben, die Sie zum Berechnen der Erstinvestition und des Investitionsertrags (Einnahmen) benötigen.
 
-## <a name="calculating-initial-investment"></a>Berechnen der Erstinvestition
+## <a name="calculate-initial-investment"></a>Berechnen der Erstinvestition
 
 Die Erstinvestition umfasst die Investitionskosten und Betriebskosten, die für die Durchführung einer Transformation erforderlich sind. Die Klassifizierung der Kosten kann je nach Buchhaltungsmodell und Präferenz des CFO variieren. Diese Kategorie würde Elemente enthalten, wie zu transformierende Dienstleistungen, Softwarelizenzen, die ausschließlich während der Transformation genutzt werden, die Kosten der Clouddienste während der Transformation und ggf. die Kosten für Mitarbeitergehälter während der Transformation.
 
 Addieren Sie diese Kosten, um eine Schätzung der Erstinvestition zu erhalten.
 
-## <a name="calculating-the-gain-from-investment"></a>Berechnen des Investitionsertrags
+## <a name="calculate-the-gain-from-investment"></a>Berechnen des Investitionsertrags
 
 Zum Berechnen des Investitionsertrags wird häufig noch eine zweite Formel benötigt, die von den Geschäftsergebnissen und den damit verbundenen technischen Änderungen abhängt. Das Berechnen der Einnahmen ist schwieriger als das Berechnen von Kosteneinsparungen.
 

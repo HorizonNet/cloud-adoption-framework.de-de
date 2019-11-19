@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 217b2653a4bec268720f44ac1eefd74bc2d05366
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 444530a603d7d7e77bb71592a061486db835ea56
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980238"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566894"
 ---
 # <a name="accelerate-migration-by-migrating-an-instance-of-sql-server"></a>Beschleunigen der Migration durch Migrieren einer Instanz von SQL Server
 
@@ -81,7 +81,7 @@ Wenn eine Datenbank im Plan zu einer PaaS-Datenplattform (Platform as a Service)
 
 Für Datenbanken, die zu einer PaaS-Lösung migriert werden können, werden während des Bewertungsvorgangs die folgenden Aktionen durchgeführt.
 
-- **Bewertung durch den DMA:** Der Datenmigrations-Assistent erkennt Kompatibilitätsprobleme, die die Datenbankfunktion in der verwalteten Azure SQL-Datenbank-Zielinstanz beeinträchtigen können. Verwenden Sie den DMA für Empfehlungen zu Leistungs- und Zuverlässigkeitsverbesserungen und zum Verschieben des Schemas, der Daten und abhängiger Objekte vom Quellserver auf den Zielserver. Weitere Informationen finden Sie unter [Datenmigrations-Assistent](/sql/dma/dma-overview).
+- **Bewertung durch den DMA:** Der Datenmigrations-Assistent erkennt Kompatibilitätsprobleme, die die Datenbankfunktion in der verwalteten Azure SQL-Datenbank-Zielinstanz beeinträchtigen können. Verwenden Sie den DMA für Empfehlungen zu Leistungs- und Zuverlässigkeitsverbesserungen und zum Verschieben des Schemas, der Daten und abhängiger Objekte vom Quellserver auf den Zielserver. Weitere Informationen finden Sie unter [Datenmigrations-Assistent](https://docs.microsoft.com/sql/dma/dma-overview).
 - **Korrektur und Konvertierung:** Konvertieren Sie basierend auf der Ausgabe des DMA das Quelldatenschema, um Kompatibilitätsprobleme zu korrigieren. Testen Sie das konvertierte Datenschema mit den abhängigen Anwendungen.
 
 ## <a name="migrate-process-changes"></a>Änderungen am Migrationsprozess
@@ -96,9 +96,9 @@ Der empfohlene Pfad für Migration und Synchronisierung verwendet eine Kombinati
 
 |Migrationsoption|Zweck|
 |---------|---------|
-|[Azure Database Migration Service](/sql/dma/dma-overview)|Unterstützt Migrationsvorgänge in jeder Größenordnung online (minimale Ausfallzeit) und offline (einmalig) zu einer verwalteten Azure SQL-Datenbank-Instanz. Unterstützt Migrationsvorgänge von: SQL Server 2005, SQL Server 2008 und SQL Server 2008 R2, SQL Server 2012, SQL Server 2014, SQL Server 2016 und SQL Server 2017.|
-|[Transaktionsreplikation](/sql/relational-databases/replication/administration/enhance-transactional-replication-performance)|Transaktionsreplikation in eine verwaltete Azure SQL-Datenbank-Instanz wird unterstützt für Migrationen von: SQL Server 2012 (SP2 CU8, SP3 oder höher), SQL Server 2014 (RTM CU10 oder höher oder SP1 CU3 oder höher), SQL Server 2016, SQL Server 2017.|
-|[Massenladen](/sql/t-sql/statements/bulk-insert-transact-sql)|Verwenden Sie das Massenladen in eine verwaltete Azure SQL-Datenbank-Instanz für Daten, die in folgenden Umgebungen gespeichert sind: SQL Server 2005, SQL Server 2008 und SQL Server 2008 R2, SQL Server 2012, SQL Server 2014, SQL Server 2016 und SQL Server 2017.|
+|[Azure Database Migration Service](https://docs.microsoft.com/sql/dma/dma-overview)|Unterstützt Migrationsvorgänge in jeder Größenordnung online (minimale Ausfallzeit) und offline (einmalig) zu einer verwalteten Azure SQL-Datenbank-Instanz. Unterstützt Migrationsvorgänge von: SQL Server 2005, SQL Server 2008 und SQL Server 2008 R2, SQL Server 2012, SQL Server 2014, SQL Server 2016 und SQL Server 2017.|
+|[Transaktionsreplikation](https://docs.microsoft.com/sql/relational-databases/replication/administration/enhance-transactional-replication-performance)|Transaktionsreplikation in eine verwaltete Azure SQL-Datenbank-Instanz wird unterstützt für Migrationen von: SQL Server 2012 (SP2 CU8, SP3 oder höher), SQL Server 2014 (RTM CU10 oder höher oder SP1 CU3 oder höher), SQL Server 2016, SQL Server 2017.|
+|[Massenladen](https://docs.microsoft.com/sql/t-sql/statements/bulk-insert-transact-sql)|Verwenden Sie das Massenladen in eine verwaltete Azure SQL-Datenbank-Instanz für Daten, die in folgenden Umgebungen gespeichert sind: SQL Server 2005, SQL Server 2008 und SQL Server 2008 R2, SQL Server 2012, SQL Server 2014, SQL Server 2016 und SQL Server 2017.|
 
 ### <a name="guidance-and-tutorials-for-suggested-migration-process"></a>Anleitungen und Tutorials für den empfohlenen Migrationsprozess
 
@@ -120,7 +120,7 @@ Nach dem Verschieben von Datenbanken von einer SQL Server-Instanz in Database Mi
 |---------|---------|---------|---------|---------|
 |SQL Server Integration Services|Azure Data Factory-Integration Runtime|Azure Data Factory|Offline|[Tutorial](https://docs.microsoft.com/azure/data-factory/create-azure-ssis-integration-runtime)|
 |SQL Server Analysis Services – Tabellenmodell|Azure Analysis Services|SQL Server Data Tools|Offline|[Tutorial](https://docs.microsoft.com/azure/analysis-services/analysis-services-deploy)|
-|SQL Server Reporting Services|Power BI-Berichtsserver|Power BI|Offline|[Tutorial](/power-bi/report-server/migrate-report-server)|
+|SQL Server Reporting Services|Power BI-Berichtsserver|Power BI|Offline|[Tutorial](https://docs.microsoft.com/power-bi/report-server/migrate-report-server)|
 
 ### <a name="guidance-and-tutorials-for-migration-from-sql-server-to-an-iaas-instance-of-sql-server"></a>Anleitungen und Tutorials für die Migration von SQL Server zu einer IaaS-Instanz von SQL Server
 

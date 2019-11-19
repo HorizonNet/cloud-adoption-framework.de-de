@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 1292eeec6559fc6caa6cd6ff265a37147cf0b887
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: fdde1d3619b8340fad31f4241bffeff9c51f0b38
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058653"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566523"
 ---
-# <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-group"></a>Zuweisen eines neuen Hosts für eine lokale App auf Azure-VMs und in SQL Server Always On-Verfügbarkeitsgruppen
+# <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-groups"></a>Zuweisen eines neuen Hosts für eine lokale App auf Azure-VMs und in SQL Server Always On-Verfügbarkeitsgruppen
 
 Dieser Artikel zeigt, wie das fiktive Unternehmen Contoso einer zweistufigen Windows.NET-App, die auf VMware-VMs ausgeführt wird, als Teil einer Migration der App-VMs auf Azure einen neuen Host zuweist. Contoso migriert den virtuellen Front-End-Computer der App zu einem virtuellen Azure-Computer und die App-Datenbank zu einem virtuellen Azure SQL Server-Computer, die in einem Windows Server-Failovercluster mit SQL Server AlwaysOn-Verfügbarkeitsgruppen ausgeführt werden.
 
@@ -96,7 +96,7 @@ Contoso wertet den vorgeschlagen Entwurf durch Erstellen einer Liste mit Vor- un
 
 **Service** | **Beschreibung** | **Kosten**
 --- | --- | ---
-[Data Migration Assistant](/sql/dma/dma-overview?view=ssdt-18vs2017) | DMA wird auf dem lokalen SQL Server-Computer ausgeführt und migriert die Daten über ein Standort-zu-Standort-VPN zu Azure. | DMA ist ein kostenloses, herunterladbares Tool.
+[Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | DMA wird auf dem lokalen SQL Server-Computer ausgeführt und migriert die Daten über ein Standort-zu-Standort-VPN zu Azure. | DMA ist ein kostenloses, herunterladbares Tool.
 [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery) | Site Recovery orchestriert und verwaltet die Migration und Notfallwiederherstellung für Azure-VMs sowie lokale virtuelle Computer und physische Server. | Während der Replikation in Azure fallen Gebühren für Azure Storage an. Es werden Azure-VMs erstellt, und Gebühren fallen an, sobald ein Failover erfolgt. [Weitere Informationen](https://azure.microsoft.com/pricing/details/site-recovery) zu Gebühren und Preisen.
 
 ## <a name="migration-process"></a>Migrationsprozess
@@ -141,7 +141,7 @@ Contoso geht bei der Ausführung der Migration wie folgt vor:
 > - **Schritt 5: Vorbereiten einer lokalen VMware-Instanz für Site Recovery.** Bereiten Sie Konten für die VM-Ermittlung und die Agent-Installation vor. Vorbereiten lokaler virtueller Computer, damit Benutzer nach der Migration eine Verbindung mit virtuellen Azure-Computern herstellen können.
 > - **Schritt 6: Replizieren von VMs.** Ermöglichen Sie die VM-Replikation in Azure.
 > - **Schritt 7: Installieren des DMA.** Herunterladen und Installieren des Datenmigrations-Assistenten.
-> - **Schritt 7: Migrieren der Datenbank mit dem DMA.** Migrieren Sie die Datenbank zu Azure.
+> - **Schritt 8: Migrieren der Datenbank mit dem DMA.** Migrieren Sie die Datenbank zu Azure.
 > - **Schritt 9: Schützen der Datenbank.** Erstellen Sie eine Always On-Verfügbarkeitsgruppe für den Cluster.
 > - **Schritt 10: Migration der Web-App-VM.** Führen Sie ein Testfailover aus, um sicherzustellen, dass alles wie erwartet funktioniert. Anschließendes Ausführen eines vollständigen Failovers zu Azure.
 
@@ -224,7 +224,7 @@ Vor dem Einrichten des Clusters erstellen Contoso-Administratoren auf jedem Comp
 
      ![Cluster erstellen](media/contoso-migration-rehost-vm-sql-ag/create-cluster2.png)
 
-## <a name="configure-the-cloud-witness"></a>Konfigurieren des Cloudzeugen
+### <a name="configure-the-cloud-witness"></a>Konfigurieren des Cloudzeugen
 
 1. Contoso-Administratoren konfigurieren den Cloudzeugen mithilfe des **Assistenten für die Quorumkonfiguration** im Failovercluster-Manager.
 2. Im Assistenten erstellt das Unternehmen einen Cloudzeugen mit dem Speicherkonto.
@@ -534,7 +534,7 @@ Contoso-Administratoren migrieren die SmartHotel360-Datenbank mithilfe des DMA z
 
 DMA verbindet sich über eine Site-to-Site-VPN-Verbindung zwischen dem Contoso-Rechenzentrum und Azure mit der lokalen SQL Server-VM und migriert anschließend die Datenbank.
 
-## <a name="step-7-protect-the-database-with-always-on"></a>Schritt 7: Schützen der Datenbank mit Always On
+## <a name="step-9-protect-the-database-with-always-on"></a>Schritt 9: Schützen der Datenbank mit Always On
 
 Wenn die App-Datenbank auf **SQLAOG1** ausgeführt wird, können Contoso-Administratoren diese jetzt mithilfe von AlwaysOn-Verfügbarkeitsgruppen schützen. Das Unternehmen konfiguriert Always On mit SQL Server Management Studio und weist anschließend über das Windows-Clustering einen Listener zu.
 
@@ -581,7 +581,7 @@ Nachdem Contoso die Einrichtung abgeschlossen hat, verfügt das Unternehmen nun 
 - Sie können den Vorgang [Einrichten des Clusters für die Verwendung der IP-Adresse des Lastenausgleichs](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener#configure-the-cluster-to-use-the-load-balancer-ip-address) manuell durchführen.
 - [Weitere Informationen](https://docs.microsoft.com/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2) zum Erstellen und Verwenden von SAS.
 
-## <a name="step-8-migrate-the-vm-with-site-recovery"></a>Schritt 8: Migrieren der VM mit Site Recovery
+## <a name="step-10-migrate-the-vm-with-site-recovery"></a>Schritt 10: Migrieren der VM mit Site Recovery
 
 Die Contoso-Administratoren führen ein schnelles Testfailover aus und migrieren anschließend die virtuellen Computer.
 
@@ -635,7 +635,7 @@ Der letzte Schritt im Migrationsprozess besteht in der Aktualisierung der Verbin
 - [Informationen](https://docs.microsoft.com/azure/site-recovery/site-recovery-create-recovery-plans) zum Erstellen eines Wiederherstellungsplans.
 - [Informationen](https://docs.microsoft.com/azure/site-recovery/site-recovery-failover) zum Ausführen eines Failovers für Azure.
 
-## <a name="clean-up-after-migration"></a>Bereinigung nach der Migration
+### <a name="clean-up-after-migration"></a>Bereinigung nach der Migration
 
 Nach der Migration wird die SmartHotel360-App auf einem Azure-VM ausgeführt, und die SmartHotel360-Datenbank befindet sich im Azure SQL-Cluster.
 
@@ -647,7 +647,7 @@ Contoso muss jetzt folgende Schritte für die Bereinigung durchführen:
 - Überprüfen sämtlicher Ressourcen, die mit den außer Betrieb genommenen VMs interagieren, und Aktualisieren sämtlicher relevanter Einstellungen oder Dokumentationen zur Widerspiegelung der neuen Konfiguration.
 - Hinzufügen der beiden neuen VMs (SQLAOG1 und SQLAOG2) zu Systemen für die Produktionsüberwachung.
 
-## <a name="review-the-deployment"></a>Überprüfen der Bereitstellung
+### <a name="review-the-deployment"></a>Überprüfen der Bereitstellung
 
 Da die migrierten Ressourcen in Azure enthalten sind, muss Contoso die neue Infrastruktur vollständig operationalisieren und sichern.
 
@@ -657,17 +657,17 @@ Das Sicherheitsteam von Contoso überprüft die Azure-VMs WEBVM, SQLAOG1 und SQL
 
 - Das Team überprüft die Netzwerksicherheitsgruppen (NSGs) der des virtuellen Computers zur Steuerung des Zugriffs. Mithilfe von NSGs wird sichergestellt, dass nur für die App zulässiger Datenverkehr übergeben werden kann.
 - Das Team zieht darüber hinaus in Erwägung, die Daten über Azure Disk Encryption und Key Vault zu sichern.
-- Das Team sollte die transparente Datenverschlüsselung (Transparent Data Encryption, TDE) auswerten und dann in der SmartHotel360-Datenbank aktivieren, die auf dem neuen SQL AOG ausgeführt wird. [Weitere Informationen](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)
+- Das Team sollte die transparente Datenverschlüsselung (Transparent Data Encryption, TDE) auswerten und dann in der SmartHotel360-Datenbank aktivieren, die auf dem neuen SQL AOG ausgeführt wird. [Weitere Informationen](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)
 
 Weitere Informationen finden Sie unter [Bewährte Sicherheitsmethoden für IaaS-Workloads in Azure](https://docs.microsoft.com/azure/security/fundamentals/iaas).
 
 ## <a name="bcdr"></a>BCDR
 
- Für die Geschäftskontinuität und Notfallwiederherstellung (Business Continuity & Disaster Recovery, BCDR) führt Contoso die folgenden Aktionen durch:
+Für die Geschäftskontinuität und Notfallwiederherstellung (Business Continuity & Disaster Recovery, BCDR) führt Contoso die folgenden Aktionen durch:
 
-- Schützen von Daten: Contoso sichert die Daten mithilfe des Azure Backup-Diensts auf den virtuellen Computern WEBVM, SQLAOG1 und SQLAOG2. [Weitere Informationen](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)
+- Contoso sichert die Daten mithilfe des Azure Backup-Diensts auf den virtuellen Computern WEBVM, SQLAOG1 und SQLAOG2, um Daten zu schützen. [Weitere Informationen](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=%2fazure%2fvirtual-machines%2flinux%2ftoc.json)
 - Contoso erfährt auch, wie Azure Storage zum Sichern von SQL Server direkt im Blobspeicher verwendet wird. [Weitere Informationen](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-use-storage-sql-server-backup-restore)
-- Sicherstellen eines unterbrechungsfreien Betriebs der Apps: Contoso repliziert die App-VMs in Azure mithilfe von Site Recovery in einer sekundären Region. [Weitere Informationen](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)
+- Contoso repliziert die App-VMs mithilfe von Site Recovery in eine sekundäre Region, um Apps funktionstüchtig zu halten. [Weitere Informationen](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)
 
 ### <a name="licensing-and-cost-optimization"></a>Lizenzierung und Kostenoptimierung
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3a6e2effbd47c3516e3663d3c0f1f75d9db924e8
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: ad7770a7339cf1fa444442e68d2e13539f272190
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547688"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566325"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Cost Management“
 
@@ -57,7 +57,7 @@ Die folgenden Änderungen an der Richtlinie verringern die neuen Risiken und ver
 - Alle Cloudkosten sollten wöchentlich vom Cloudgovernanceteam anhand eines Plans überwacht werden. Berichte zu Abweichungen zwischen den Cloudkosten und dem Plan sind monatlich mit der IT-Leitung und der Finanzabteilung zu teilen. Alle Cloudkosten und Planaktualisierungen sollten monatlich zusammen mit der IT-Leitung und der Finanzabteilung überprüft werden.
 - Alle Kosten müssen zum Zweck der Rechnungslegung einer Geschäftsfunktion zugeordnet sein.
 - Cloudressourcen sollten fortlaufend auf Optimierungsmöglichkeiten überprüft werden.
-- Die Cloud Governance-Tools müssen die Dimensionierungsoptionen für Ressourcen auf eine genehmigte Liste mit Konfigurationen einschränken. Die Tools müssen sicherstellen, dass alle Ressourcen ermittelbar sind und von der Kostenüberwachungslösung verfolgt werden.
+- Cloudgovernancetools müssen die Optionen für die Dimensionierung von Ressourcen auf eine genehmigte Liste mit Konfigurationen beschränken. Die Tools müssen sicherstellen, dass alle Ressourcen ermittelbar sind und von der Kostenüberwachungslösung verfolgt werden.
 - Während der Bereitstellungsplanung sollten alle erforderlichen Cloudressourcen, die dem Hosten von Produktionsworkloads dienen, dokumentiert werden. Diese Dokumentation kann bei der Verfeinerung der Budgets und bei der Vorbereitung zusätzlicher Automatisierungstools helfen, um den Einsatz teurerer Optionen zu vermeiden. Während dieses Prozesses sollten verschiedene vom Cloudanbieter angebotene Rabattierungstools wie z.B. reservierte Instanzen oder Lizenzkostenreduzierungen in Betracht gezogen werden.
 - Alle Besitzer von Anwendungen sind verpflichtet, an Schulungen zu Praktiken zur Optimierung von Workloads teilzunehmen, um die Cloudkosten besser zu kontrollieren.
 

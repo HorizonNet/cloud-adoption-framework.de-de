@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 170054f07cb7e8282b3abd582e484a730aca1280
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: beac1a3d459bd0f8654a9c746bc25981ad366fb0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031428"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566759"
 ---
 # <a name="organizational-antipatterns-silos-and-fiefdoms"></a>Antimuster in Unternehmen: Silos und Machtbereiche
 
@@ -64,7 +64,7 @@ Teammitglieder in einem IT-Silos definieren sich häufig über ihre Verbindung m
 
 Dieses Antimuster entsteht oft aus einer gemeinsamen Leidenschaft für eine bestimmte Lösung. Die IT-Silos werden dann durch die besonderen Fähigkeiten des Teams gestärkt, nachdem in diese bestimmte Lösung investiert wurde. Durch diese besonderen Fähigkeiten kann die Arbeit zur Einführung der Cloud beschleunigt werden, sofern der Widerstand gegen die Veränderung beseitigt werden kann. Es kann auch zu größeren Blockaden kommen, wenn die Silos aufgelöst werden oder die Teammitglieder die Optionen nicht richtig evaluieren können. Glücklicherweise kann für IT-Silos häufig eine Lösung gefunden werden, ohne dass das Organigramm erheblich geändert werden muss.
 
-### <a name="addressing-resistance-from-it-silos"></a>Reagieren auf Widerstand aus IT-Silos
+### <a name="address-resistance-from-it-silos"></a>Reagieren auf Widerstand aus IT-Silos
 
 Für den Umgang mit IT-Silos können die folgenden Ansätze verwendet werden. Der beste Ansatz richtet sich jeweils nach der Grundursache des Widerstands.
 
@@ -112,9 +112,9 @@ Machtbereiche treten besonders häufig in Organisationen auf, in denen es zu ein
 
 Im Allgemeinen sind Machtbereiche das Ergebnis einer Situation, in der eine Leitungsperson den Verlust des Teams und der zugehörigen Machtbasis fürchtet. Diese Leitungspersonen fühlen sich ihrem Team häufig verpflichtet und möchten die Untergebenen vor negativen Konsequenzen schützen. Sätze wie „Das Team muss vor Veränderungen geschützt werden“ und „Das Team muss vor Prozessstörungen geschützt werden“ können Indikatoren für einen übervorsichtigen Manager sein, der möglicherweise mehr Unterstützung durch die Führung benötigt.
 
-### <a name="addressing-resistance-from-it-fiefdoms"></a>Reagieren auf Widerstand aus IT-Machtbereichen
+### <a name="address-resistance-from-it-fiefdoms"></a>Reagieren auf Widerstand aus IT-Machtbereichen
 
-Für IT-Machtbereiche lassen sich einige Fortschritte erzielen, indem die Ansätze verfolgt werden, die Sie unter [Reagieren auf Widerstand aus IT-Silos](#addressing-resistance-from-it-silos) finden. Bevor Sie versuchen, auf den Widerstand eines IT-Machtbereichs zu reagieren, wird empfohlen, das Team zunächst wie ein IT-Silo zu behandeln. Wenn diese Ansätze nicht zu signifikanten Veränderungen führen, kann es sein, dass das Widerstand leistende Team in das Antimuster eines IT-Machtbereichs verfallen ist. Die Grundursache von IT-Machtbereichen ist etwas komplexer, da diese Art von Widerstand meist vom direkten Bereichsleiter kommt (oder einer Führungsperson auf einer höheren Ebene des Organigramms). Herausforderungen, die durch IT-Silos gesteuert werden, sind in der Regel einfacher zu bewältigen.
+Für IT-Machtbereiche lassen sich einige Fortschritte erzielen, indem die Ansätze verfolgt werden, die Sie unter [Reagieren auf Widerstand aus IT-Silos](#address-resistance-from-it-silos) finden. Bevor Sie versuchen, auf den Widerstand eines IT-Machtbereichs zu reagieren, wird empfohlen, das Team zunächst wie ein IT-Silo zu behandeln. Wenn diese Ansätze nicht zu signifikanten Veränderungen führen, kann es sein, dass das Widerstand leistende Team in das Antimuster eines IT-Machtbereichs verfallen ist. Die Grundursache von IT-Machtbereichen ist etwas komplexer, da diese Art von Widerstand meist vom direkten Bereichsleiter kommt (oder einer Führungsperson auf einer höheren Ebene des Organigramms). Herausforderungen, die durch IT-Silos gesteuert werden, sind in der Regel einfacher zu bewältigen.
 
 Wenn die Arbeit zur Cloudeinführung durch den fortdauernden Widerstand von IT-Machtbereichen blockiert wird, kann es ratsam sein, die Situation gemeinsam mit den vorhandenen IT-Führungskräften zu bewerten. Erkenntnisse des [Cloudstrategieteams](./cloud-strategy.md), [Cloudkompetenzzentrums](./cloud-center-of-excellence.md) und [Cloudgovernanceteams](./cloud-governance.md) sollten von der IT-Führungsebene sorgfältig geprüft werden, bevor Entscheidungen getroffen werden.
 
@@ -122,6 +122,8 @@ Wenn die Arbeit zur Cloudeinführung durch den fortdauernden Widerstand von IT-M
 > IT-Verantwortliche sollten Änderungen am Organigramm niemals auf die leichte Schulter nehmen. Sie sollten auch das Feedback der einzelnen unterstützenden Teams überprüfen und analysieren. Durch Transformationsmaßnahmen wie die Cloudeinführung kommen jedoch häufig grundlegende Probleme ans Tageslicht, die bisher nicht wahrgenommen oder zu einem Zeitpunkt lange vor diesen Maßnahmen nicht gelöst wurden. Wenn Machtbereiche den Erfolg des Unternehmens verhindern, sind wahrscheinlich Veränderungen auf der Führungsebene erforderlich.
 >
 > Glücklicherweise führt die Entfernung des Leiters eines Machtbereichs häufig nicht zu seiner Kündigung. Nach einer kurzen Besinnungsphase können diese starken, leidenschaftlichen Führungspersönlichkeiten häufig eine Managementrolle übernehmen. Mit der richtigen Unterstützung kann diese Änderung für die Leitungsperson des Machtbereichs und das derzeitige Team durchaus positiv sein.
+
+<!-- -->
 
 > [!CAUTION]
 > Das Schützen des Teams vor Risiken ist für Manager in IT-Machtbereichen eindeutig eine positive Fähigkeit von Führungspersonen. Es sollte aber zwischen Schutz und Isolation unterschieden werden. Wenn das Team daran gehindert wird, sich an der Förderung von Veränderungen zu beteiligen, kann dies psychologische und berufliche Konsequenzen für die Teammitglieder haben. Der Drang, Widerstand zu leisten, ist ggf. stark. Dies gilt besonders in Zeiten, in denen viele Veränderungen passieren.

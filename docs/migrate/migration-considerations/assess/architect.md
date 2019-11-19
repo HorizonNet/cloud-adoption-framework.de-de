@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d62b2f5957dc5cee19f462e3c7d74c85672eadfe
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 77931f6315c43d963947cbdaf628b8bfa514749c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70834784"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566830"
 ---
 # <a name="architect-workloads-prior-to-migration"></a>Entwerfen von Workloads vor der Migration
 
@@ -23,7 +23,7 @@ Dieser Artikel ergänzt die Informationen zum Bewertungsprozess. Es werden Aktiv
 
 Die folgenden Annahmen sind für alle Migrationsvorgänge typisch:
 
-- **IaaS:** Es wird allgemein davon ausgegangen, dass die Migration von Workloads in erster Linie das Verschieben von virtuellen Computern aus einem physischen Rechenzentrum über eine IaaS-Migration in Cloudrechenzentrum beinhaltet und nur eine minimale Neuentwicklung oder Neukonfiguration erfordert. Dies wird als „Lift & Shift“-Migration bezeichnet. (Ausnahmen folgen.)
+- **IaaS:** Es wird allgemein davon ausgegangen, dass die Migration von Workloads in erster Linie das Verschieben von virtuellen Computern aus einem physischen Rechenzentrum über eine IaaS-Migration in Cloudrechenzentrum beinhaltet und nur eine minimale Neuentwicklung oder Neukonfiguration erfordert. Dies wird als _Lift & Shift_-Migration bezeichnet. (Ausnahmen folgen.)
 - **Konsistenz der Architektur:** Änderungen an der Kernarchitektur während einer Migration steigern die Komplexität erheblich. Das Debuggen eines geänderten Systems auf einer neuen Plattform beinhaltet unzählige Variablen, die möglicherweise nur schwierig zu isolieren sind. Aus diesem Grund sollten während der Migration nur geringfügige Änderungen an den Workloads vorgenommen werden, die dann auch gründlich getestet werden müssen.
 - **Deaktivierungstest:** Migrationsvorgänge und das Hosting von Ressourcen verbrauchen betriebliche Ressourcen und erfordern möglicherweise auch Kapitalausgaben. Es wird vorausgesetzt, dass alle zu migrierenden Workloads daraufhin geprüft wurden, ob sie auch weiterhin genutzt werden. Die Möglichkeit, nicht verwendete Ressourcen außer Kraft zu setzen, führt zu unmittelbaren Kosteneinsparungen.
 - **Ändern der Größe von Ressourcen:** Es kann davon ausgegangen werden, dass nur einige der lokalen Ressourcen die zugeordneten Ressourcen vollständig nutzen. Daher sollte die Größe der Ressourcen vor der Migration an die tatsächlichen Nutzungsanforderungen angepasst werden.
@@ -37,7 +37,7 @@ Die aufgeschlüsselten Annahmen können Hindernisse darstellen, die den Vorgang 
 - **Ausgleichen technischer Schulden:** Einige ältere Workloads umfassen ein hohes Maß an technischen Schulden. Dies kann langfristig zu Schwierigkeiten führen und die Hostingkosten bei jedem Cloudanbieter erhöhen. Wenn technische Schulden die Hostingkosten außergewöhnlich steigern, sollten alternative Architekturen in Erwägung gezogen werden.
 - **Muster beim Benutzerdatenverkehr:** Bestehende Lösungen hängen möglicherweise von vorhandenen Mustern für das Netzwerkrouting ab. Diese Muster können die Leistung erheblich senken. Darüber hinaus kann die Einführung neuer Hybridlösungen für WANs (Wide Area Network) Wochen oder sogar Monate dauern. Bereiten Sie sich schon frühzeitig bei der Entwicklung einer Architektur auf diese Hürden vor, indem Sie die Datenverkehrsmuster und die Änderungen an Kerndiensten der Infrastruktur berücksichtigen.
 
-## <a name="accelerating-business-value"></a>Steigern des geschäftlichen Nutzens
+## <a name="accelerate-business-value"></a>Beschleunigung von Geschäftswerten
 
 Einige Szenarien erfordern möglicherweise eine andere Architektur, als bei der Strategie für das IaaS-Rehosting angenommen wurde. Im Folgenden finden Sie einige Beispiele:
 

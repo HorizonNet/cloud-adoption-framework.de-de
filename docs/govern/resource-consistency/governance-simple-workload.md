@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9a64a069dcebb12cf550f697561b76903e6d01bf
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 116119530ba5cedcdad836b219b43f23f74d9afc
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967340"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566015"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>Governance-Entwurf für eine einfache Workload
 
@@ -25,7 +25,7 @@ In der grundlegenden Einführungsphase besteht das Ziel darin, eine einfache Wor
 - Identitätsverwaltung für einen einzelnen **Workloadbesitzer**, der für das Bereitstellen und Warten der einfachen Workload verantwortlich ist. Der Workloadbesitzer benötigt die Berechtigung zum Erstellen, Lesen, Aktualisieren und Löschen von Ressourcen sowie die Berechtigung zum Delegieren dieser Rechte an andere Benutzer im Identitätsverwaltungssystem.
 - Verwaltung aller Ressourcen für die einfache Workload zusammen in einer Verwaltungseinheit.
 
-## <a name="licensing-azure"></a>Lizenzieren von Azure
+## <a name="azure-licensing"></a>Azure-Lizenzierung
 
 Bevor Sie damit beginnen, das Governancemodell zu entwerfen, ist es wichtig, dass Sie sich mit der Azure-Lizenzierung vertraut machen. Der Grund ist, dass die Administratorkonten, die Ihrer Azure-Lizenz zugeordnet sind, über die höchste Zugriffsebene auf Ihre Azure-Ressourcen verfügen. Diese Administratorkonten bilden die Grundlage Ihres Governance-Modells.
 
@@ -92,14 +92,14 @@ Zur Verdeutlichung sehen wir uns an, was passiert, wenn der **Workloadbesitzer**
 
 Mit der integrierten Rolle **Besitzer** werden für den **Workloadbesitzer** wiederum alle Berechtigungen für den Ressourcengruppenbereich gewährt. Wie bereits beschrieben, wird diese Rolle von der Abonnementebene geerbt. Wenn diesem Benutzer für diesen Bereich eine andere Rolle zugewiesen wird, gilt dies nur für den Bereich.
 
-Die niedrigste Ebene des Verwaltungsbereichs ist die Ebene **Ressource**. Vorgänge, die auf Ressourcenebene durchgeführt werden, gelten nur für die Ressource selbst. Auch hier werden die Berechtigungen der Ressourcenebene vom Ressourcengruppenbereich geerbt. Wir können uns beispielsweise ansehen, was passiert, wenn der **Workloadbesitzer** in der Ressourcengruppe ein [virtuelles Netzwerk](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) bereitstellt:
+Die niedrigste Ebene des Verwaltungsbereichs ist die Ebene **Ressource**. Vorgänge, die auf Ressourcenebene durchgeführt werden, gelten nur für die Ressource selbst. Die Berechtigungen der Ressourcenebene werden auch vom Ressourcengruppenbereich geerbt. Wir können uns beispielsweise ansehen, was passiert, wenn der **Workloadbesitzer** in der Ressourcengruppe ein [virtuelles Netzwerk](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) bereitstellt:
 
 ![Der **Workloadbesitzer** erstellt eine Ressource](../../_images/govern/design/governance-1-8.png)
 *Abbildung 8: Der Workloadbesitzer erstellt eine Ressource und erbt die integrierte Rolle „Besitzer“ für den Ressourcenbereich.*
 
 Der **Workloadbesitzer** erbt die Rolle „Besitzer“ für den Ressourcenbereich. Dies bedeutet, dass der Workloadbesitzer über alle Berechtigungen für das virtuelle Netzwerk verfügt.
 
-## <a name="implementing-the-basic-resource-access-management-model"></a>Implementieren des grundlegenden Modells für die Ressourcenzugriffsverwaltung
+## <a name="implement-the-basic-resource-access-management-model"></a>Implementieren des grundlegenden Modells für die Ressourcenzugriffsverwaltung
 
 Kommen wir zur Implementierung des zuvor entworfenen Governance-Modells.
 
