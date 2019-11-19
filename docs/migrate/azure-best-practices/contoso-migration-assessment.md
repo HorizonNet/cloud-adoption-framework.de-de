@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b3ec947b841c36bcd28bdbd02615182fd25a158a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 3fe54994ac99a86bcb0a6c84c37b7b8612a129fa
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221452"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566490"
 ---
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Bewerten lokaler Workloads für die Migration zu Azure
 
@@ -73,7 +73,7 @@ Contoso nutzt Microsoft-Tools für seine Migrationsbewertung. Die Tools sind an 
 
 Technologie | BESCHREIBUNG | Kosten
 --- | --- | ---
-[Data Migration Assistant](/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso nutzt den Datenmigrations-Assistenten, um Kompatibilitätsprobleme zu bewerten und zu erkennen, die ggf. die Datenbankfunktionalität des Unternehmens in Azure beeinträchtigen können. Mit dem Datenmigrations-Assistenten wird die Featureparität zwischen SQL-Quellen und -Zielen bewertet. Er stellt Empfehlungen zu Verbesserungen der Leistung und Zuverlässigkeit bereit. | Der Datenmigrations-Assistent ist ein kostenloses Tool, das heruntergeladen werden kann.
+[Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso nutzt den Datenmigrations-Assistenten, um Kompatibilitätsprobleme zu bewerten und zu erkennen, die ggf. die Datenbankfunktionalität des Unternehmens in Azure beeinträchtigen können. Mit dem Datenmigrations-Assistenten wird die Featureparität zwischen SQL-Quellen und -Zielen bewertet. Er stellt Empfehlungen zu Verbesserungen der Leistung und Zuverlässigkeit bereit. | Der Datenmigrations-Assistent ist ein kostenloses Tool, das heruntergeladen werden kann.
 [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Contoso nutzt den Azure Migrate-Dienst, um seine VMware-VMs zu bewerten. Azure Migrate bewertet die Eignung der Computer für die Migration. Der Dienst stellt Schätzungen zur Größe und zu den Kosten für die Ausführung in Azure bereit. | Ab Mai 2018 ist Azure Migrate ein kostenloser Dienst.
 [Dienstzuordnung](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map) | Für Azure Migrate wird eine Dienstzuordnung verwendet, um Abhängigkeiten zwischen Computern anzuzeigen, die das Unternehmen migrieren möchte. | Die Dienstzuordnung ist Teil von Azure Monitor-Protokollen. Derzeit kann Contoso die Dienstzuordnung 180 Tage lang nutzen, ohne dass Gebühren anfallen.
 
@@ -188,7 +188,7 @@ Die Ergebnisse werden angezeigt, sobald sie verfügbar sind. Wenn Contoso Proble
     ![Datenmigrations-Assistent – Bericht mit Featureempfehlungen](./media/contoso-migration-assessment/dma-assessment-6.png)
 
     > [!NOTE]
-    > Contoso sollte [Transparent Data Encryption für alle SQL Server-Datenbanken aktivieren](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017). Dies ist noch wichtiger, wenn sich eine Datenbank in der Cloud befindet, als wenn sie lokal gehostet wird. Transparent Data Encryption sollte erst nach der Migration aktiviert werden. Wenn Transparent Data Encryption bereits aktiviert ist, muss Contoso das Zertifikat bzw. den asymmetrischen Schlüssel in die Masterdatenbank des Zielservers verschieben. Erfahren Sie, wie Sie [eine per Transparent Data Encryption geschützte Datenbank auf eine andere SQL Server-Instanz verschieben](/sql/relational-databases/security/encryption/move-a-tde-protected-database-to-another-sql-server?view=sql-server-2017).
+    > Contoso sollte [Transparent Data Encryption für alle SQL Server-Datenbanken aktivieren](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017). Dies ist noch wichtiger, wenn sich eine Datenbank in der Cloud befindet, als wenn sie lokal gehostet wird. Transparent Data Encryption sollte erst nach der Migration aktiviert werden. Wenn Transparent Data Encryption bereits aktiviert ist, muss Contoso das Zertifikat bzw. den asymmetrischen Schlüssel in die Masterdatenbank des Zielservers verschieben. Erfahren Sie, wie Sie [eine per Transparent Data Encryption geschützte Datenbank auf eine andere SQL Server-Instanz verschieben](https://docs.microsoft.com/sql/relational-databases/security/encryption/move-a-tde-protected-database-to-another-sql-server?view=sql-server-2017).
 
 3. Contoso kann die Bewertung im JSON- oder CSV-Format exportieren.
 
@@ -196,8 +196,8 @@ Die Ergebnisse werden angezeigt, sobald sie verfügbar sind. Wenn Contoso Proble
 > Gehen Sie für umfangreichere Bewertungen wie folgt vor:
 >
 > - Führen Sie mehrere Bewertungen gleichzeitig durch, und zeigen Sie den Status der Bewertungen auf der Seite **Alle Bewertungen** an.
-> - Fassen Sie die Bewertungen in einer [SQL Server-Datenbank](/sql/dma/dma-consolidatereports?view=ssdt-18vs2017) zusammen.
-> - Fassen Sie die Bewertungen in einem [Power BI-Bericht](/sql/dma/dma-powerbiassesreport?view=ssdt-18vs2017) zusammen.
+> - Fassen Sie die Bewertungen in einer [SQL Server-Datenbank](https://docs.microsoft.com/sql/dma/dma-consolidatereports?view=ssdt-18vs2017) zusammen.
+> - Fassen Sie die Bewertungen in einem [Power BI-Bericht](https://docs.microsoft.com/sql/dma/dma-powerbiassesreport?view=ssdt-18vs2017) zusammen.
 
 ## <a name="step-3-prepare-for-vm-assessment-by-using-azure-migrate"></a>Schritt 3: Vorbereiten der VM-Bewertung mit Azure Migrate
 
@@ -394,6 +394,7 @@ Contoso führt die Installation auf jeder VM durch.
     `sudo -i`
 
 3. Contoso installiert den MMA:
+
     - Contoso gibt die Arbeitsbereichs-ID und den Schlüssel für den Befehl ein.
     - Die Befehle sind für 64-Bit.
     - Die Arbeitsbereichs-ID und der Primärschlüssel befinden sich im Log Analytics-Arbeitsbereich im Azure-Portal. Wählen Sie **Einstellungen** und dann die Registerkarte **Verbundene Quellen**.
