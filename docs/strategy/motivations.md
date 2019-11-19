@@ -8,12 +8,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 9a6c007beedd06ff6e1a88cd7ccc497f58807af9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 65ef12ca476ca624ae1e71cce2e62d41141873a9
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031643"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561602"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -25,7 +25,7 @@ In diesem Artikel werden einige Beweggründe für die Cloudmigration behandelt, 
 
 ## <a name="motivations"></a>Beweggründe
 
-Unternehmenstransformationen, die durch die Cloudeinführung unterstützt werden, können von einer Reihe von Beweggründen motiviert sein. Es ist sogar wahrscheinlich, dass mehrere Beweggründe gleichzeitig zutreffen. Das Ziel der Listen in der folgenden Tabelle ist es, einen Einblick darüber zu geben, welche Beweggründe relevant sind. Von dort aus können Sie die möglichen Auswirkungen der Beweggründe priorisieren und bewerten. In diesem Artikel wird empfohlen, dass sich Ihr Cloudeinführungsteam mit verschiedenen Führungskräften und Geschäftsführern trifft, indem es die folgende Liste verwendet, um zu verstehen, welche dieser Beweggründe von den Bemühungen zur Cloudeinführung betroffen sind.
+Unternehmenstransformationen, die durch die Cloudeinführung unterstützt werden, können von einer Reihe von Beweggründen motiviert sein. Es ist wahrscheinlich, dass mehrere Beweggründe gleichzeitig zutreffen. Das Ziel der Listen in der folgenden Tabelle ist es, einen Einblick darüber zu geben, welche Beweggründe relevant sind. Von dort aus können Sie die möglichen Auswirkungen der Beweggründe priorisieren und bewerten. In diesem Artikel wird empfohlen, dass sich Ihr Cloudeinführungsteam mit verschiedenen Führungskräften und Geschäftsführern trifft, indem es die folgende Liste verwendet, um zu verstehen, welche dieser Beweggründe von den Bemühungen zur Cloudeinführung betroffen sind.
 
 <!-- markdownlint-disable MD033 -->
 

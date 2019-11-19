@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6345a8cae51a6b26b7fad174113a40e9dc0dae3e
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: eb3bfc584e3c3f86e39918495fe7e0d313f13e55
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220977"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564719"
 ---
 # <a name="cost-management-policy-compliance-processes"></a>Kostenmanagement: Prozesse für Richtlinienkonformität
 
@@ -42,7 +42,7 @@ Dieser vierteljährliche Planungsprozess ist auch ein guter Zeitpunkt, um die ak
 
 Diese grundlegenden Prozesse tragen dazu bei, Ausgaben abzustimmen und eine Grundlage für die Disziplin „Kostenmanagement“ zu bilden.
 
-## <a name="ongoing-monitoring-processes"></a>Fortlaufende Überwachungsprozesse
+## <a name="processes-for-ongoing-monitoring"></a>Prozesse zur fortlaufenden Überwachung
 
 Eine erfolgreiche Governancestrategie für das Kostenmanagement hängt vom Einblick in vergangene, aktuelle und geplante zukünftige cloudbezogene Ausgaben ab. Ohne die Möglichkeit, die relevanten Metriken und Daten Ihrer bestehenden Kosten zu analysieren, können Sie keine Veränderungen bei den Risiken und keine Verstöße gegen Ihre Risikotoleranzen erkennen. Für die oben genannten laufenden Governanceprozesse sind Qualitätsdaten erforderlich, um eine entsprechende Änderung der Richtlinie zu gewährleisten und Ihre Infrastruktur vor wechselnden Geschäftsanforderungen und wechselnder Cloudnutzung besser zu schützen.
 
@@ -54,8 +54,8 @@ Wenn Verstöße festgestellt werden, sollten Sie Durchsetzungsmaßnahmen ergreif
 
 Hier einige Beispiele für Trigger:
 
-- **Monatliche Budgetabweichungen:** Erörtern Sie Abweichungen bei den monatlichen Ausgaben, die das Verhältnis zwischen Vorhersage und tatsächlichen Ausgaben um 20% überschreiten, mit dem Abrechnungseinheitenleiter. Zeichnen Sie Auflösungen und Änderungen in der Prognose auf.
-- **Geschwindigkeit der Einführung:** Jede Abweichung auf Abonnementebene, die 20% überschreitet, löst eine Prüfung mit dem Abrechnungseinheitenleiter aus. Zeichnen Sie Auflösungen und Änderungen in der Prognose auf.
+- **Monatliche Budgetabweichungen**: Erörtern Sie Abweichungen bei den monatlichen Ausgaben, die das Verhältnis zwischen Vorhersage und tatsächlichen Ausgaben um 20% überschreiten, mit dem Abrechnungseinheitenleiter. Zeichnen Sie Auflösungen und Änderungen in der Prognose auf.
+- **Geschwindigkeit der Einführung**: Jede Abweichung auf Abonnementebene, die 20% überschreitet, löst eine Prüfung mit dem Abrechnungseinheitenleiter aus. Zeichnen Sie Auflösungen und Änderungen in der Prognose auf.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

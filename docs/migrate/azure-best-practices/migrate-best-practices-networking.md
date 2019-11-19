@@ -8,12 +8,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3bba3d7f028849ec3397e14dbdb0f39dfa246660
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: df31cb73ec601c52f0f925d09a56f0af7aaf1513
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058882"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565225"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Bewährte Methoden zum Einrichten von Netzwerken für zu Azure migrierte Workloads
 
@@ -120,7 +120,7 @@ Azure fügt standardmäßig einen DNS-Server hinzu, wenn Sie ein VNET bereitstel
 **Weitere Informationen:**
 
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/migrate/contoso-migration-infrastructure) über die Namensauflösung, wenn Sie einen eigenen DNS-Server verwenden.
-- [Erfahren Sie mehr](../../ready/considerations/naming-and-tagging.md) über DNS-Benennungsregeln und -Einschränkungen.
+- [Erfahren Sie mehr](../../ready/azure-best-practices/naming-and-tagging.md) über DNS-Benennungsregeln und -Einschränkungen.
 
 ## <a name="best-practice-set-up-availability-zones"></a>Bewährte Methode: Einrichten von Verfügbarkeitszonen
 
@@ -278,7 +278,7 @@ Zum Optimieren des Routings für die Benutzer beider Niederlassungen müssen Sie
 
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/expressroute/expressroute-optimize-routing) über das Optimieren des Routings.
 
-## <a name="securing-vnets"></a>Schützen von VNETs
+## <a name="secure-vnets"></a>Schützen von VNETs
 
 Die Verantwortung für das Schützen von VNETs liegt zu gleichen Teilen bei Microsoft und bei Ihnen. Microsoft bietet viele Netzwerkfeatures und Dienste, die zum Schutz der Ressourcen dienen. Beim Planen der Sicherheit für VNETs sind bewährte Methoden, die Sie befolgen sollten, unter anderem die Implementierung eines Umkreisnetzwerks, die Verwendung von Filtern und Sicherheitsgruppen, das Absichern des Zugriffs auf Ressourcen und IP-Adressen sowie die Implementierung einer Schutzfunktion vor Angriffen.
 

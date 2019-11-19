@@ -8,16 +8,16 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d98d8ea586d76c583ab22670ac310a9f5bf36fc1
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: ffef26fd2ff6261133f5b63a8c13b5f4cd4364f5
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024723"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240263"
 ---
-# <a name="skills-readiness-path-during-the-migrate-phase-of-a-migration-journey"></a>Pfad für die Qualifikationsbereitschaft während der Phase „Migration“ einer Migrationsreise
+# <a name="skills-readiness-for-cloud-migration"></a>Vorliegen der Fähigkeiten für die Migration zur Cloud
 
-Es ist wahrscheinlich, dass Mitarbeiter und sogar einige erforderliche Systemintegrationspartner oder Partner für verwaltete Dienste während einer Cloudmigration neue Qualifikationen entwickeln müssen, um die Migrationsaktivitäten effektiv zu bewältigen.
+Es ist wahrscheinlich, dass Mitarbeiter und auch einige erforderliche Systemintegrationspartner oder Partner für verwaltete Dienste während einer Cloudmigration neue Qualifikationen entwickeln müssen, um die Migrationsaktivitäten effektiv zu bewältigen.
 
 Es gibt vier verschiedene Prozesse, die während der Phase „Migration“ einer jeden Migrationsreise iterativ abgeschlossen werden. In den folgenden Abschnitten werden die erforderlichen Qualifikationen für jeden dieser Prozesse mit Verweisen auf zwei Voraussetzungen für Qualifizierungsressourcen ausgerichtet.
 

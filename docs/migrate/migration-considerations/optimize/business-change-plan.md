@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3bfb26e97d35bc3ace4b150045633ac2773d647f
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 2050c210bad9434e688ec4ef7c2e700cccf39f2c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71025471"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564591"
 ---
 # <a name="business-change-plan"></a>Geschäftsbezogener Änderungsplan
 
@@ -31,7 +31,7 @@ Obwohl Ansätze variieren können, sind allgemeine Schemas in den meisten Pläne
 
 Diese Schemas basieren häufig auf der Annahme, dass sich Benutzer bei der Einführung neuer Lösungen hauptsächlich auf die Risikokontrolle und die Vereinfachung der Veränderung konzentrieren sollten. Darüber hinaus konzentriert sich die IT vor allem auf die Risiken aus der technologischen Änderung sowie deren Umsetzung.
 
-## <a name="creating-business-change-plans"></a>Erstellen geschäftsbezogener Änderungspläne
+## <a name="create-business-change-plans"></a>Erstellen geschäftsbezogener Änderungspläne
 
 Bei einem geschäftsbezogenen Änderungsplan wird über die technischen Änderung hinausgeschaut, und dabei wird davon ausgegangen, dass jedes Release bei einer Migration gewisse Änderungen an Geschäftsprozessen nach sich zieht. Dabei wird von den technischen Veränderungen aus in der Kette nach vorne (downstream) und zurückgeblickt (upstream). Die folgenden Fragen helfen Ihnen dabei, die Einführung für die Benutzer aus dem Blickwinkel von geschäftsbezogenen Änderungen zu betrachten, um die Auswirkungen auf Ihre Geschäfte zu maximieren:
 

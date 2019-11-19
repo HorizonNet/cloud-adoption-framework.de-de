@@ -8,12 +8,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: b1d5562b6e8248f371e01473d141aefecf1554b4
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 6b3fd0ca16bf54e5eaf026037ba1f59c2043f4e7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223744"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566144"
 ---
 # <a name="align-your-cloud-governance-design-guide-with-corporate-policy"></a>Ausrichten Ihres Cloud Governance-Entwurfshandbuchs an der Unternehmensrichtlinie
 
@@ -27,7 +27,7 @@ Während Cloud-Entwurfshandbücher einige der technischen Details berücksichtig
 
 <!-- markdownlint-enable MD033 -->
 
-## <a name="using-the-actionable-governance-guides"></a>Verwenden der umsetzbaren Governanceleitfäden
+## <a name="use-the-actionable-governance-guides"></a>Verwenden der umsetzbaren Governanceleitfäden
 
 Wenn Sie planen, die Azure-Plattform für Ihre Cloudeinführung zu nutzen, bietet das Cloud Adoption Framework [umsetzbare Governanceleitfäden](../guides/index.md), um den inkrementellen Ansatz des Governancemodells für das Cloud Adoption Framework zu veranschaulichen. Diese beschreibenden Leitfäden decken einen Bereich von allgemeinen Einführungsszenarien ab, darunter die Geschäftsrisiken, Toleranzanforderungen und Richtlinienanweisungen, die in die Erstellung eines Minimum Viable Product (MVP) für die Governance einbezogen wurden. Diese Leitfäden stellen eine Synthese aus realen Benutzererfahrungen beim Prozess der Cloudeinführung in Azure dar.
 

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 8f0f2ed925432badf22de70dfa87aa3528738842
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: efbb3b677f2349f0d2e8c240c42c75d75cf849f1
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979857"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564998"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>Leitfaden zur Cloudüberwachung: Warnungen
 
@@ -69,7 +69,7 @@ Azure Monitor verfügt über vier Arten von Warnungen, die auf gewisse Weise an 
 
 - [Service Health-Warnung](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications?toc=%2fazure%2fservice-health%2ftoc.json): Ein besonderer Warnungstyp, der ausschließlich für Service Health-Probleme gilt, die aus dem Aktivitätsprotokollspeicher stammen.
 
-### <a name="alerting-through-partner-tools"></a>Warnungen über Partnertools
+### <a name="enable-alerting-through-partner-tools"></a>Aktivieren von Warnungen über Partnertools
 
 Wenn Sie eine externe Warnungslösung verwenden, sollten Sie möglichst viele Daten über Azure Event Hubs umleiten, da dies der schnellste Übertragungsweg aus Azure Monitor ist. Die Erfassung von Daten in Event Hubs ist kostenpflichtig. Wenn die Kosten im Vordergrund stehen (und nicht die Geschwindigkeit), können Sie Azure Storage als kostengünstigere Alternative verwenden. Stellen Sie einfach sicher, dass Ihre Überwachungs- oder ITSM-Tools Azure Storage lesen können, um die Daten zu extrahieren.
 

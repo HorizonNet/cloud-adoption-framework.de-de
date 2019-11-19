@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 30b3a88a8ce7c90f4b3925af7ead21489c2fb821
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: a272a9b8633f60544aca9982654a899288e3b4e8
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223911"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564154"
 ---
 # <a name="adapt-existing-roles-skills-and-processes-for-the-cloud"></a>Anpassen vorhandener Rollen, Qualifikationen und Prozesse für die Cloud
 
@@ -25,7 +25,7 @@ IT-Mitarbeiter machen sich möglicherweise Sorgen um ihre Rollen und Positionen,
 
 Einen Leitfaden zum Erlangen neuer Qualifikationen finden Sie im Abschnitt [Pfad für die Qualifikationsbereitschaft](./suggested-skills.md).
 
-## <a name="capturing-concerns"></a>Dokumentieren von Problemen
+## <a name="capture-concerns"></a>Erfassen von Bedenken
 
 Während sich das Unternehmen auf eine Cloudeinführung vorbereitet, sollte jedes Team Bedenken der Mitarbeiter dokumentieren, sobald sie auftreten, indem sie Folgendes identifizieren:
 

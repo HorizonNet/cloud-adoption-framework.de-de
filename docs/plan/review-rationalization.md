@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8d374fdc5df4589e58b890ae5c169d26d0b1f206
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: a5ccbe2f3dd754914997ccba7b49ba47505dffa3
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70839168"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564137"
 ---
 # <a name="review-rationalization-decisions"></a>Überprüfen der Rationalisierungsentscheidungen
 
@@ -26,7 +26,7 @@ Greifen Sie bei der Überprüfung von Rationalisierungsentscheidungen auf die fo
 
 ## <a name="innovation-indicators"></a>Innovationsindikatoren
 
-Wenn die folgenden Fragen nach gemeinsamer Überprüfung mit „Ja“ beantwortet werden, ist die Workload möglicherweise ein besserer Kandidat für Innovationen. Eine solche Workload würde nicht per Lift & Shift oder anhand eines Modernisierungsmodells migriert. Stattdessen würden die Geschäftslogik oder die Datenstrukturen als vollständig neue oder umgestaltete Anwendung neu erstellt. Dieser Ansatz kann arbeitsintensiver und zeitaufwändiger sein. Aber für eine Workload, die bedeutende geschäftliche Umsätze darstellt, ist die Investition gerechtfertigt.
+Wenn die folgenden Fragen nach gemeinsamer Überprüfung mit „Ja“ beantwortet werden, ist die Workload möglicherweise ein besserer Kandidat für Innovationen. Eine solche Workload würde nicht per „Lift & Shift“- oder anhand eines Modernisierungsmodells migriert. Stattdessen würden die Geschäftslogik oder die Datenstrukturen als vollständig neue oder umgestaltete Anwendung neu erstellt. Dieser Ansatz kann arbeitsintensiver und zeitaufwändiger sein. Aber für eine Workload, die bedeutende geschäftliche Umsätze darstellt, ist die Investition gerechtfertigt.
 
 - Sorgen die Anwendungen in dieser Workload für eine Differenzierung im Markt?
 - Sind vorgeschlagene oder genehmigte Investitionen geplant, die auf eine Verbesserung des Benutzererlebnisses bei den Anwendungen in dieser Workload abzielen?

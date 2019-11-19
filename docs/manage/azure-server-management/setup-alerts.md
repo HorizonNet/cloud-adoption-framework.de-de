@@ -8,20 +8,20 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 5b11a97e78d5fcd1b2a2cc866f5a7062bc6a2977
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 5d7469f8613b38ffdaefb41410409fba0c9109fd
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032044"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565295"
 ---
 # <a name="set-up-basic-alerts"></a>Einrichten einfacher Warnungen
 
-Ein wichtiger Faktor bei der Ressourcenverwaltung ist die Benachrichtigung bei auftretenden Problemen. Mit Warnungen werden Sie proaktiv über kritische Zustände benachrichtigt. Sie können auf Triggern von Metriken, Protokollen oder Dienstintegritätsproblemen basieren. Im Rahmen des Onboarding der Azure-Serververwaltungsdienste können Sie Warnungen und Benachrichtigungen einrichten, die Ihnen helfen können, Ihre IT-Teams über alle Probleme auf dem Laufenden zu halten.
+Ein wichtiger Faktor bei der Ressourcenverwaltung ist die Benachrichtigung bei auftretenden Problemen. Warnungen benachrichtigen Sie auf Basis von Triggern aus Metriken, Protokollen oder auf Dienstintegritätsproblemen proaktiv über kritische Zustände. Im Rahmen des Onboarding der Azure-Serververwaltungsdienste können Sie Warnungen und Benachrichtigungen einrichten, die Ihnen helfen können, Ihre IT-Teams über alle Probleme auf dem Laufenden zu halten.
 
 ## <a name="azure-monitor-alerts"></a>Azure Monitor-Warnungen
 
-Azure Monitor bietet [Warnungsfunktionen](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-overview), um Sie per E-Mail oder Messaging über auftretende Probleme zu informieren. Diese Funktionen basieren auf einer gemeinsamen Datenüberwachungsplattform, die Protokolle und Metriken enthält, die von Ihren Servern und anderen Ressourcen generiert werden. Diese Plattform ermöglicht es Ihnen, Daten aus verschiedenen Ressourcen zu analysieren, indem Sie einen allgemeinen Satz von Tools in Azure Monitor verwenden, mit denen Sie Warnungen auslösen können. Diese Trigger können Folgendes umfassen:
+Azure Monitor bietet [Warnungsfunktionen](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-overview), um Sie per E-Mail oder Messaging über auftretende Probleme zu informieren. Diese Funktionen basieren auf einer gemeinsamen Datenüberwachungsplattform, die Protokolle und Metriken enthält, die von Ihren Servern und anderen Ressourcen generiert werden. Durch die Verwendung eines allgemeinen Toolsatzes in Azure Monitor können Sie Daten analysieren, die aus mehreren Ressourcen kombiniert wurden, und damit Warnungen auslösen. Diese Trigger können Folgendes umfassen:
 
 - Metrikwerte
 - Protokollsuchabfragen
@@ -31,13 +31,22 @@ Azure Monitor bietet [Warnungsfunktionen](https://docs.microsoft.com/azure/azure
 
 In der [Liste der Azure Monitor-Datenquellen](https://docs.microsoft.com/azure/azure-monitor/platform/data-sources) finden Sie eine ausführlichere Beschreibung der Quellen von Überwachungsdaten, die von diesem Dienst gesammelt wurden.
 
-Ausführliche Informationen zum manuellen Erstellen und Verwalten von Warnungen über das Portal finden Sie in der [Azure Monitor-Dokumentation](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric).
+Ausführliche Informationen zum manuellen Erstellen und Verwalten von Warnungen über das Azure-Portal finden Sie in der [Azure Monitor-Dokumentation](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric).
 
 ## <a name="automated-deployment-of-recommended-alerts"></a>Automatisierte Bereitstellung empfohlener Warnungen
 
-In diesem Leitfaden wird empfohlen, einen Satz von 15 Warnungen für die Überwachung der grundlegenden Infrastruktur zu aktivieren. Sie finden die Bereitstellungsskripts im [GitHub-Repository – Azure-Warnungstoolkit](https://github.com/Microsoft/manageability-toolkits).
+In diesem Leitfaden wird empfohlen, einen Satz von 15 Warnungen für die Überwachung der grundlegenden Infrastruktur zu erstellen. Sie finden die Bereitstellungsskripts im [GitHub-Repository – Azure-Warnungstoolkit](https://github.com/Microsoft/manageability-toolkits).
 
-Dieses Paket erstellt Warnungen für wenig freien Speicherplatz, wenig verfügbaren Arbeitsspeicher, hohe CPU-Auslastung, unerwartetes Herunterfahren, beschädigte Dateisysteme und häufige Hardwarefehler. Das Paket verwendet als Beispiel Serverhardware von HP. Sie sollten die Einstellungen in der zugehörigen Konfigurationsdatei so ändern, dass sie Ihrer OEM-Hardware entsprechen. Sie können der Konfigurationsdatei auch weitere Leistungsindikatoren hinzufügen. Führen Sie zum Bereitstellen des Pakets die Datei „New-CoreAlerts.ps1“ aus.
+Dieses Paket erstellt Warnungen für:
+
+- Wenig freier Speicherplatz
+- Wenig verfügbarer Arbeitsspeicher
+- Hohe CPU-Auslastung
+- Unerwartetes Herunterfahren
+- Beschädigte Dateisysteme
+- Allgemeine Hardwarefehler
+
+Das Paket verwendet als Beispiel Serverhardware von HP. Ändern Sie die Einstellungen in der zugehörigen Konfigurationsdatei, um Ihre OEM-Hardware widerzuspiegeln. Sie können der Konfigurationsdatei auch weitere Leistungsindikatoren hinzufügen. Führen Sie zum Bereitstellen des Pakets die Datei „New-CoreAlerts.ps1“ aus.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -8,16 +8,16 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 367480222244c1e4287bebec85743408a10efc19
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 90fd78e45f71c6ca52ea76f5efe6a3aaae49af74
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752843"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160314"
 ---
 # <a name="it-management-and-operations-in-the-cloud"></a>IT-Verwaltung und -Vorgänge in der Cloud
 
-Wenn ein Unternehmen die Umstellung auf ein cloudbasiertes Modell durchführt, ist es besonders wichtig, dass auf die richtige Verwaltung und die korrekten Vorgänge geachtet wird. Leider sind nur wenige Organisationen auf die richtige Umstellung der IT-Verwaltung vorbereitet, die erforderlich ist, um ein erfolgreiches Betriebsmodell für die Cloud zu erstellen. In diesem Abschnitt des Cloud Adoption Framework werden das Vorgangsmodell sowie die Prozesse und Tools beschrieben, die sich in der Cloud bewährt haben. Jeder dieser Bereiche steht für eine geringfügige – und dennoch grundlegende – Verschiebung der Art und Weise, mit der ein Unternehmen an die IT-Abläufe und -Verwaltungsvorgänge herangehen sollte, wenn mit der Einführung der Cloud begonnen wird.
+Wenn ein Unternehmen die Umstellung auf ein cloudbasiertes Modell durchführt, ist es besonders wichtig, dass auf die richtige Verwaltung und die korrekten Vorgänge geachtet wird. Leider sind nur wenige Organisationen auf die richtige Umstellung der IT-Verwaltung vorbereitet, die erforderlich ist, um ein erfolgreiches Betriebsmodell für die Cloud zu erstellen. In diesem Abschnitt des Cloud Adoption Framework werden das Vorgangsmodell sowie die Prozesse und Tools beschrieben, die sich in der Cloud bewährt haben. Jeder dieser Bereiche steht für eine geringfügige – und dennoch grundlegende – Änderung in der Art und Weise, mit der ein Unternehmen an die IT-Abläufe und -Verwaltungsvorgänge herangehen sollte, wenn mit der Einführung der Cloud begonnen wird.
 
 ## <a name="brief-history-of-it-management"></a>Kurze Geschichte der IT-Verwaltung
 

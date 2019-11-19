@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f6104a3b2f5f2e68016623029ac0e7b71a5e35f1
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 57f94fde4e7f4863a3ddca710d523d9c027571d0
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222048"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566120"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -83,7 +83,7 @@ Einige Beispiele für Auslöser und Aktionen bei Verstößen:
 | Sicherheitsbaseline | Erkennung einer verdächtigen Benutzeranmeldeaktivität. | Benachrichtigung des IT-Sicherheitsteams und Deaktivierung des verdächtigen Benutzerkontos. |
 | Ressourcenkonsistenz | Die CPU-Auslastung für eine Workload übersteigt 90 %. | Benachrichtigung des IT-Betriebsteam und horizontales Hochskalieren mit zusätzlichen Ressourcen zum Verarbeiten der Last. |
 
-## <a name="monitoring-and-compliance-automation"></a>Automatisierung der Überwachung und Einhaltung
+## <a name="automation-of-monitoring-and-compliance"></a>Automatisierung der Überwachung und Einhaltung
 
 Nachdem Sie Ihre Auslöser und Aktionen für Verstöße definiert haben, können Sie damit beginnen, optimale Protokollierungs- und Berichterstattungstools und andere Features der Cloudplattform zu planen, die bei der Automatisierung Ihrer Strategie für Überwachung und Einhaltung von Richtlinien helfen.
 

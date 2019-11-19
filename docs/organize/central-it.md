@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: d1d59b105dd6d75b0c5b5ed12d711473fd4995c8
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: dcf98227f6464b71d0e3e3a1bc0bf505c149254b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549117"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564271"
 ---
 # <a name="central-it-capabilities"></a>Funktionen der zentralen IT
 
@@ -93,7 +93,7 @@ Dieses Risiko lässt sich anhand von Geschwindigkeit und Flexibilität ermessen.
 
 In vielen Branchen ist eine strikte Einhaltung von Complianceanforderungen von dritter Seite erforderlich. Für einige dieser Anforderungen ist weiterhin eine zentralisierte IT-Steuerung notwendig. Die Erfüllung dieser Compliancevorgaben kann den Bereitstellungsprozess verlängern, insbesondere dann, wenn neue Technologien ins Spiel kommen, die noch nicht flächendeckend eingesetzt werden. In solchen Szenarien müssen Sie in den Frühphasen der Einführung mit Verzögerungen der Bereitstellung rechnen. Ähnliche Situationen können bei Unternehmen auftreten, die vertrauliche Kundendaten verarbeiten, aber möglicherweise keine Complianceanforderungen einer dritten Seite erfüllen müssen.
 
-### <a name="operating-within-the-exceptions"></a>Arbeiten innerhalb der Ausnahmen
+### <a name="operate-within-the-exceptions"></a>Arbeiten innerhalb der Ausnahmen
 
 Wenn zentrale IT-Prozesse erforderlich sind und zu zusätzlichen Prüfpunkten bei der Einführung neuer Technologien führen, können diese Prüfpunkte dennoch schnell umgesetzt werden. Governance- und Complianceanforderungen sind dafür konzipiert, vertrauliche Aspekte zu schützen, sie sollen keinen Rundumschutz für alles und jedes bieten. Die Cloud bietet einfache Mechanismen zum Erwerben und Bereitstellen isolierter Ressourcen bei gleichzeitiger Einhaltung der jeweils geltenden Leitlinien.
 

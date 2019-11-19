@@ -8,12 +8,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 625706fe404f2b1bde16d54170ef3be36ea35c00
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 8a632f9632c1ad5bf6abbfeb60096e2cfadce141
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548964"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240138"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Nachverfolgen von Kosten für Geschäftseinheiten, Umgebungen oder Projekte
 
@@ -25,7 +25,7 @@ Für das [Schaffen einer kostenbewussten Organisation](../../organize/cost-consc
 
 Die Kostenkontrolle hängt, ähnlich wie Governance und andere Verwaltungsansätze, von einer gut verwalteten Umgebung ab. Für die Schaffung einer Umgebung dieser Art (insbesondere einer komplexen) sind einheitliche Prozesse in Bezug auf die Klassifizierung und Organisation aller Ressourcen erforderlich.
 
-Ressourcen sind alle virtuellen Computer, Datenquellen und Anwendungen, die in der Cloud bereitgestellt werden. Azure verfügt über verschiedene Mechanismen zum Klassifizieren und Organisieren von Ressourcen. Unter [Skalieren mit mehreren Azure-Abonnements](../considerations/scaling-subscriptions.md) finden Sie ausführliche Informationen zur Organisation von Ressourcen basierend auf mehreren Kriterien zur Schaffung einer gut verwalteten Umgebung. In diesem Artikel geht es um die Anwendung von grundlegenden Azure-Konzepten, um für die Cloudkosten Transparenz zu erzielen.
+Ressourcen sind alle virtuellen Computer, Datenquellen und Anwendungen, die in der Cloud bereitgestellt werden. Azure verfügt über verschiedene Mechanismen zum Klassifizieren und Organisieren von Ressourcen. Unter [Skalieren mit mehreren Azure-Abonnements](../azure-best-practices/scaling-subscriptions.md) finden Sie ausführliche Informationen zur Organisation von Ressourcen basierend auf mehreren Kriterien zur Schaffung einer gut verwalteten Umgebung. In diesem Artikel geht es um die Anwendung von grundlegenden Azure-Konzepten, um für die Cloudkosten Transparenz zu erzielen.
 
 ### <a name="classification"></a>Classification
 
@@ -35,7 +35,7 @@ Das Tagging ist das wichtigste Verahren, wenn es um das Verständnis der Daten i
 
 Um Kosteninformationen übergreifend für Geschäftseinheiten, Umgebungen und Projekte genau nachverfolgen zu können, muss zunächst ein Standard für das Tagging definiert werden. Im zweiten Schritt wird sichergestellt, dass dieser Standard für das Tagging einheitlich angewendet wird. Die Artikel zu den folgenden Themen enthalten Informationen zu diesen Schritten:
 
-- [Entwickeln von Standards für Benennung und Tagging](../considerations/naming-and-tagging.md)
+- [Entwickeln von Standards für Benennung und Tagging](../azure-best-practices/naming-and-tagging.md)
 - [Einrichten eines Governance-MVP zum Erzwingen von Standards für das Tagging](../../govern/guides/complex/index.md)
 
 ### <a name="resource-organization"></a>Ressourcenorganisation
@@ -59,7 +59,7 @@ Die Abbildung zeigt bewährte Methoden, enthält jedoch nicht die folgenden Opti
 
 Im restlichen Artikel wird vorausgesetzt, dass der Ansatz mit der bewährten Methode aus der Abbildung oben verfolgt wird. Die folgenden Artikel enthalten hilfreiche Informationen zum Anwenden des Ansatzes für die Ressourcenorganisation, der für Ihr Unternehmen am besten geeignet ist:
 
-- [Skalieren mit mehreren Azure-Abonnements](../considerations/scaling-subscriptions.md)
+- [Skalieren mit mehreren Azure-Abonnements](../azure-best-practices/scaling-subscriptions.md)
 - [Deploying a Governance MVP to govern well-managed environment standards](../../govern/guides/complex/index.md) (Bereitstellen eines Governance-MVP zur Steuerung von Standards für gut verwaltete Umgebungen)
 
 ## <a name="provide-the-right-level-of-cost-access"></a>Ermöglichen eines angemessenen Zugriffs auf die Kosten
@@ -102,7 +102,7 @@ Mit den folgenden Bereichs- und Rolleneinstellungen wird die erforderliche Trans
 
 - [Cloudkompetenzzentrum](../../organize/cloud-center-of-excellence.md). Personen, die für die Verwaltung von Kosten in Bezug auf gemeinsam verwendete Dienste zuständig sind, benötigen Zugriff vom Typ „Cost Management: Mitwirkender“ auf Abonnementebene. Darüber hinaus benötigt dieses Team unter Umständen auch Zugriff vom Typ „Cost Management: Mitwirkender“ auf Ressourcengruppen oder Abonnements, die per CCoE-Automatisierung bereitgestellte Ressourcen enthalten, um zu verstehen, wie sich diese Automatisierungen auf die Kosten auswirken.
 
-  - **Gemeinsame Dienste**: Bei Einbindung eines Cloudkompetenzzentrums besteht die bewährte Methode darin, dass die über das Zentrum verwalteten Ressourcen mit einem zentralisierten Abonnement für gemeinsame Dienste im Rahmen eines Hub-Spoke-Modells unterstützt werden. In diesem Szenario verfügt das CCoE meist über Zugriff vom Typ „Mitwirkender“ oder „Besitzer“ auf dieses Abonnement, sodass es nicht erforderlich ist, zusätzlich [Kostenverwaltung: Mitwirkender](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) zuzuweisen.
+  - **Gemeinsame Dienste**: Bei Einbindung eines Cloudkompetenzzentrums besteht die bewährte Methode darin, dass die über das Zentrum verwalteten Ressourcen mit einem zentralisierten Abonnement für gemeinsame Dienste im Rahmen eines Hub-and-Spoke-Modells unterstützt werden. In diesem Szenario verfügt das CCoE meist über Zugriff vom Typ „Mitwirkender“ oder „Besitzer“ auf dieses Abonnement, sodass es nicht erforderlich ist, zusätzlich [Kostenverwaltung: Mitwirkender](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) zuzuweisen.
   - **CCoE-Automatisierung/-Steuerung**. Vom CCoE werden für Cloudeinführungsteams normalerweise Steuerungen und automatisierte Bereitstellungsskripts bereitgestellt. Das CCoE ist dafür verantwortlich, ein Verständnis zu entwickeln, wie sich diese Beschleunigungselemente (Accelerators) auf die Kosten auswirken. Um sich diesen Einblick zu verschaffen, benötigt das Team Zugriff vom Typ [Kostenverwaltung: Mitwirkender](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) auf alle Ressourcengruppen oder Abonnements, unter denen diese Accelerators ausgeführt werden.
 
 - **Cloudbetriebsteam**: Personen, die für die Verwaltung der laufenden Kosten von Produktionsumgebungen zuständig sind, benötigen Zugriff vom Typ „Cost Management: Mitwirkender“ auf alle Produktionsabonnements.

@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c14445dcdeaba16a01d5adbdab0a2c47feb57915
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: b55fc8fa06a5e33fde12754e893dd2309407746b
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72558548"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564666"
 ---
 # <a name="vmware-host-migration-best-practices-for-azure"></a>Bewährte Methoden für die VMware-Hostmigration für Azure
 

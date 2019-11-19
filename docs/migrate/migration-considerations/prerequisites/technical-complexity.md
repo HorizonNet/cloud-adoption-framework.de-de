@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d669d720d1bf56a5adc0df42a505608ab76b02ec
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 842143afbb042ceddee5029a3fa86d0aa8cdd997
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548268"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564553"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Vorbereiten der technischen Komplexität: Agile Change Management
 
@@ -21,7 +21,7 @@ Wenn mit nur einer Codezeile die Bereitstellung eines kompletten Rechenzentrums 
 
 Beim Umstieg auf ein Agile-Modell mit Schwerpunkt auf Flexibilität und Iterationen werden die technische Komplexität und das Change Management anders behandelt als beim herkömmlichen Wasserfallmodell mit einer linearen Folge von Migrationsschritten. In diesem Artikel wird ein allgemeiner Ansatz für das Change Management in einem Agile-basierten Migrationsablauf beschrieben. Am Ende dieses Artikels verfügen Sie über allgemeine Kenntnisse über die Ebenen des Change Managements und die Dokumentation bei einem inkrementellen Migrationsansatz. Um basierend auf diesen Kenntnissen Agile-Methoden umzusetzen, sind weitere Schulungen und Entscheidungen erforderlich. Mit diesem Artikel sollen Cloudarchitekten auf Gespräche mit dem Projektmanagement vorbereitet werden, um diesen das allgemeine Konzept des Change Managements bei dieser Vorgehensweise zu erläutern.
 
-## <a name="addressing-technical-complexity"></a>Erläutern der technischen Komplexität
+## <a name="address-technical-complexity"></a>Erläutern der technischen Komplexität
 
 Wenn technische Systeme geändert werden, können Komplexität und gegenseitige Abhängigkeiten Risiken für die Projektpläne darstellen. Cloudmigrationsvorgänge sind da keine Ausnahme. Beim Verschieben von Tausenden – oder Zehntausenden – von Ressourcen in die Cloud steigern sich diese Risiken noch einmal. Die Erkennung und Zuordnung aller Abhängigkeiten bei großen digitalen Umgebungen könnte Jahre dauern. Nur wenige Unternehmen können sich einen derartig langen Zyklus erlauben. Um die Notwendigkeiten für Architekturanalyse und Geschäftsbeschleunigung abzugleichen, liegt der Fokus beim Framework für die Cloudeinführung bei der Verwaltung des Product Backlogs auf einem „INVEST-Modell“. In den folgenden Abschnitten wird dieser Modelltyp zusammengefasst.
 

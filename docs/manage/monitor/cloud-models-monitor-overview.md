@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 6e02cffdbd76932e3066ed68501856aef2669b02
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 849c6eace1704cababd4fc40f7976f5e1915345e
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72979913"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564973"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Leitfaden zur Cloudüberwachung: Überwachungsstrategie für Cloudbereitstellungsmodelle
 
@@ -88,7 +88,7 @@ In der folgenden Tabelle werden die Anforderungen zusammengefasst, die für Azur
 |Moderne Webanwendungsüberwachung | Ja | Nein |
 |Legacy-Webanwendungsüberwachung | Ja, eingeschränkt je nach SDK<br> Unterstützt die Überwachung älterer Versionen von .NET- und Java-Webanwendungen. | Ja, eingeschränkt |
 |Überwachen von Azure Kubernetes Service-Containern | Ja | Nein |
-|Überwachen von Docker-/Windows-Containern | Ja | Nein |
+|Überwachen von Docker- oder Windows-Containern | Ja | Nein |
 |Überwachung der Netzwerkleistung | Ja | Ja, eingeschränkt<br> Unterstützt Verfügbarkeitsprüfungen und sammelt grundlegende Statistiken von Netzwerkgeräten mithilfe des SNMP-Protokolls (Simple Network Management Protocol) aus dem Unternehmensnetzwerk.|
 |Interaktive Datenanalyse | Ja | Nein<br> Basiert auf vordefinierten oder benutzerdefinierten Berichten von SQL Server Reporting Services, Visualisierungslösungen von Drittanbietern oder benutzerdefinierten Power BI-Implementierungen. Für das Operations Manager-Data Warehouse gibt es Skalierungs- und Leistungseinschränkungen. Integration mit Azure Monitor-Protokollen als Alternative für die Datenaggregation. Die Integration wird durch die Konfiguration des Log Analytics-Connectors erzielt.|
 |End-to-End-Diagnose, Analyse der Grundursache und rechtzeitige Problembehandlung | Ja | Ja, eingeschränkt<br> Unterstützt die End-to-End-Diagnose und Problembehandlung nur für lokale Infrastrukturen und Anwendungen. Verwendet andere System Center-Komponenten oder Partnerlösungen.|
@@ -131,7 +131,7 @@ Operations Manager kann zwar in Azure gehostete Ressourcen überwachen, aber Azu
 
 #### <a name="disadvantages-of-using-operations-manager-by-itself"></a>Nachteile der alleinigen Nutzung von Operations Manager
 
-- Die Analyse von Überwachungsdaten in Operations Manager erfolgt in der Regel mithilfe vordefinierter Ansichten, die in Management Packs definiert sind, auf die Sie über die Konsole, über SSRS-Berichte (SQL Server Reporting Services) oder benutzerdefinierte Ansichten zugreifen, die Endbenutzer erstellt haben. Ad-hoc-Analysen der Daten sind standardmäßig nicht möglich. Die Berichterstellung von Operations Manager ist unflexibel. Das Data Warehouse, das eine Langzeitaufbewahrung gewährleistet, ist nicht gut skalierbar und nicht sehr leistungsfähig. Um die Anforderungen für die verschiedenen Rollen in der IT-Organisation zu erfüllen, sind Kenntnisse in der Erstellung von T-SQL-Statements, der Entwicklung einer Power BI-Lösung oder der Verwendung von Drittanbieterlösungen erforderlich.
+- Die Analyse von Überwachungsdaten in Operations Manager erfolgt in der Regel mithilfe vordefinierter Ansichten, die über Management Packs bereitgestellt werden, auf die Sie über die Konsole, über SSRS-Berichte (SQL Server Reporting Services) oder benutzerdefinierte Ansichten zugreifen, die Endbenutzer erstellt haben. Eine vorkonfigurierte Ad-hoc-Datenanalyse ist nicht möglich. Die Berichterstellung von Operations Manager ist unflexibel. Das Data Warehouse, das eine Langzeitaufbewahrung gewährleistet, ist nicht gut skalierbar und nicht sehr leistungsfähig. Um die Anforderungen für die verschiedenen Rollen in der IT-Organisation zu erfüllen, sind Kenntnisse in der Erstellung von T-SQL-Statements, der Entwicklung einer Power BI-Lösung oder der Verwendung von Drittanbieterlösungen erforderlich.
 
 - Warnungen in Operations Manager unterstützen keine komplexen Ausdrücke und enthalten keine Korrelationslogik. Um Rauschen zu reduzieren, werden Warnungen gruppiert, um die Zusammenhänge zwischen ihnen aufzuzeigen und ihre Ursachen zu identifizieren.
 
@@ -165,7 +165,7 @@ Eine Migration zur Cloud stellt Sie zwar vor einige Herausforderungen, bietet ab
 
 - Aktivieren Sie Azure Monitor für VMs und Container sowie Application Insights, um Probleme zwischen Infrastruktur und Anwendungen zu erkennen und zu diagnostizieren. Um eine genauere Analyse und Korrelation der Daten durchzuführen, die von den die Anwendung unterstützenden Komponenten oder Abhängigkeiten gesammelt werden, müssen Sie Azure Monitor-Protokolle verwenden.
 
-- Erstellen Sie intelligente Warnungen, die auf wichtige Anwendungen und Dienstkomponenten angewendet werden können, reduzieren Sie unnötige Warnungen mit dynamischen Schwellenwerten für komplexe Signale, und nutzen Sie eine auf Machine Learning-Algorithmen basierende Warnungsaggregierung, um Probleme schnell zu identifizieren.
+- Erstellen Sie intelligente Warnungen, die auf wichtige Anwendungen und Dienstkomponenten angewendet werden, reduzieren Sie unnötige Warnungen mit dynamischen Schwellenwerten für komplexe Signale, und nutzen Sie eine auf Machine Learning-Algorithmen basierende Warnungsaggregierung, um Probleme schnell zu identifizieren.
 
 - Definieren Sie eine Bibliothek mit Abfragen sowie Dashboards, um die Anforderungen der verschiedenen Personas in der IT-Organisation zu unterstützen.
 

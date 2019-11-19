@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5459d775051b831112029fe1502a62a13c21e1c2
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: caa9d3ced70ce15eacf37b4bcbb653efae9da1ef
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058776"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656691"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Governance-Entwurf für mehrere Teams
 
@@ -225,7 +225,7 @@ Für dieses Verwaltungsmodell gelten die Vorteile des zweiten oben angeführten 
 
 Sie können die Wahl zwischen diesen beiden Beispielmodellen für die Ressourcenverwaltung also abhängig davon treffen, welche Anforderungen bei Ihnen Priorität haben. Wenn Sie der Meinung sind, dass Ihre Organisation die Dienstgrenzwerte für ein einzelnes Abonnement nicht erreicht, können Sie ein einzelnes Abonnement mit mehreren Ressourcengruppen verwenden. Falls für Ihre Organisation dagegen viele Workloads zu erwarten sind, sind mehrere Abonnements für die einzelnen Umgebungen unter Umständen besser geeignet.
 
-## <a name="implementing-the-resource-management-model"></a>Implementieren des Ressourcenverwaltungsmodells
+## <a name="implement-the-resource-management-model"></a>Implementieren des Ressourcenverwaltungsmodells
 
 Sie haben verschiedene Modelle zur Steuerung des Zugriffs auf Azure-Ressourcen kennengelernt. Hier durchlaufen Sie nun die Schritte, die erforderlich sind, um das Ressourcenverwaltungsmodell mit einem einzelnen Abonnement für die im Entwurfshandbuch beschriebenen Umgebungen (**gemeinsame Infrastruktur**, **Produktion** und **Entwicklung**) zu implementieren. Für alle drei Umgebungen ist der gleiche **Abonnementbesitzer** zuständig. Die einzelnen Workloads werden jeweils in einer **Ressourcengruppe** mit einem **Workloadbesitzer** isoliert, der mit der Rolle **Mitwirkender** hinzugefügt wird.
 
@@ -259,7 +259,7 @@ Folgen Sie diesen Schritten:
 6. Erstellen Sie einen Genehmigungsprozess, damit **Workloadbesitzer** die Erstellung von Ressourcengruppen anfordern können. Der Genehmigungsprozess kann auf verschiedene Arten (beispielsweise per E-Mail) implementiert werden. Alternativ können Sie ein Prozessverwaltungstool wie [SharePoint-Workflows](https://support.office.com/article/introduction-to-sharepoint-workflow-07982276-54e8-4e17-8699-5056eff4d9e3) verwenden. Der Genehmigungsprozess kann wie folgt aussehen:
     - Der **Workloadbesitzer** erstellt eine Stückliste mit Azure-Ressourcen, die in der **Entwicklungsumgebung**, in der **Produktionsumgebung** oder in beiden benötigt werden, und übermittelt sie an den **Abonnementbesitzer**.
     - Der **Abonnementbesitzer** prüft die Stückliste und die angeforderten Ressourcen, um sicherzustellen, dass sie für die geplante Verwendung angemessen sind (etwa durch Überprüfung, ob die angeforderten [VM-Größen](https://docs.microsoft.com/azure/virtual-machines/windows/sizes) korrekt sind).
-    - Wird die Anforderung nicht genehmigt, erhält der **Workloadbesitzer** eine entsprechende Benachrichtigung. Wenn die Anforderung genehmigt wird, führt der **Abonnementbesitzer** die [Erstellung der angeforderten Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups) unter Einhaltung der [Benennungskonventionen](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions) Ihrer Organisation durch, [fügt den **Workloadbesitzer** hinzu](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment) (mit der [Rolle **Mitwirkender**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor)) und informiert den **Workloadbesitzer** über die Erstellung der Ressourcengruppe.
+    - Wird die Anforderung nicht genehmigt, erhält der **Workloadbesitzer** eine entsprechende Benachrichtigung. Wenn die Anforderung genehmigt wird, führt der **Abonnementbesitzer** die [Erstellung der angeforderten Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups) unter Einhaltung der [Benennungskonventionen](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) Ihrer Organisation durch, [fügt den **Workloadbesitzer** hinzu](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment) (mit der [Rolle **Mitwirkender**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor)) und informiert den **Workloadbesitzer** über die Erstellung der Ressourcengruppe.
 7. Erstellen Sie einen Genehmigungsprozess, damit Workloadbesitzer beim Besitzer der gemeinsamen Infrastruktur eine Verbindung mit Peering virtueller Netzwerke anfordern können. Dieser Genehmigungsprozess kann genau wie im vorherigen Schritt per E-Mail oder unter Verwendung eines Prozessverwaltungstools implementiert werden.
 
 Nach der Implementierung Ihres Governance-Modells können Sie Ihre gemeinsamen Infrastrukturdienste bereitstellen.

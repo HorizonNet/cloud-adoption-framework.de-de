@@ -1,5 +1,5 @@
 ---
-title: Migrationsumgebung – Planungscheckliste
+title: Planungscheckliste für die Migrationsumgebung
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Überprüfen der Umgebungsbereitschaft vor der Migration
 author: BrianBlanchard
@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5b4e192aac3cf73aca704ed2c04116cd0d2a972b
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: 7a71b5694849533b6a01b98d9e14d5022e7287f8
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72378383"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564568"
 ---
-# <a name="migration-environment-planning-checklist---validate-environmental-readiness-prior-to-migration"></a>Planungscheckliste für die Migrationsumgebung – Überprüfen der Umgebungsbereitschaft vor der Migration
+# <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>Planungscheckliste für die Migrationsumgebung: Überprüfen der Umgebungsbereitschaft vor der Migration
 
 Als einen ersten Schritt im Migrationsprozess müssen Sie die richtige Umgebung in der Cloud erstellen, um migrierte Ressourcen empfangen, hosten und unterstützen zu können. Dieser Artikel enthält eine Liste der Dinge, die Sie vor der Migration in der aktuellen Umgebung überprüfen müssen.
 

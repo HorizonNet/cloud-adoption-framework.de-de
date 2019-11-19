@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 8870f5ebeab855ec841ed00d109245a1efdeff20
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: cdfe247470626a142d31ab6357f771fb39ced55f
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048318"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564685"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Einstieg in die Cloudmigration in Azure
 
@@ -36,7 +36,7 @@ Cloudmigrationen können Unternehmen dabei unterstützen, ihre gewünschten Gesc
 
 |Wichtige Unternehmensereignisse | Beweggründe für Migration | Beweggründe für Innovation |
 |---------|---------|---------|
-| Ausstieg aus Rechenzentrum<br/><br/>Fusionen, Übernahme oder Veräußerung<br/><br/>Reduzierung der Kapitalkosten<br/><br/>Ende des Supports für unternehmenskritische Technologien<br/><br/>Reaktion auf Änderungen bezüglich der Einhaltung gesetzlicher Bestimmungen<br/><br/>Erfüllen neuer Anforderungen an die Datenhoheit<br/><br/>Verringern von Unterbrechungen und Verbessern der IT-Stabilität|Kostenersparnis<br/><br/>Verringerung der Anbieter- oder technischen Komplexität<br/><br/>Optimierung interner Vorgänge<br/><br/>Erhöhen der Unternehmensflexibilität<br/><br/>Vorbereiten auf neue technische Funktionen und Möglichkeiten<br/><br/>Skalieren, um die Marktanforderungen zu erfüllen<br/><br/>Skalieren, um die geografischen Anforderungen zu erfüllen|Vorbereiten auf neue technische Funktionen und Möglichkeiten<br/><br/>Entwickeln neuer technischer Funktionen und Möglichkeiten<br/><br/>Skalieren, um die Marktanforderungen zu erfüllen<br/><br/>Skalieren, um die geografischen Anforderungen zu erfüllen<br/><br/>Erhöhen der Kundenzufriedenheit/Kundenbindung<br/><br/>Transformieren von Produkten oder Diensten<br/><br/>Revolutionieren des Markts mit neuen Produkten oder Diensten|
+| Ausstieg aus Rechenzentrum<br/><br/>Fusionen, Übernahme oder Veräußerung<br/><br/>Reduzierung der Kapitalkosten<br/><br/>Ende des Supports für unternehmenskritische Technologien<br/><br/>Reaktion auf Änderungen bezüglich der Einhaltung gesetzlicher Bestimmungen<br/><br/>Erfüllen neuer Anforderungen an die Datenhoheit<br/><br/>Verringern von Unterbrechungen und Verbessern der IT-Stabilität|Kostenersparnis<br/><br/>Verringerung der Anbieter- oder technischen Komplexität<br/><br/>Optimierung interner Vorgänge<br/><br/>Erhöhen der Unternehmensflexibilität<br/><br/>Vorbereiten auf neue technische Funktionen und Möglichkeiten<br/><br/>Skalieren, um die Marktanforderungen zu erfüllen<br/><br/>Skalieren, um die geografischen Anforderungen zu erfüllen|Vorbereiten auf neue technische Funktionen und Möglichkeiten<br/><br/>Entwickeln neuer technischer Funktionen und Möglichkeiten<br/><br/>Skalieren, um die Marktanforderungen zu erfüllen<br/><br/>Skalieren, um die geografischen Anforderungen zu erfüllen<br/><br/>Verbessern der Kundenzufriedenheit und Kundenbindung<br/><br/>Transformieren von Produkten oder Diensten<br/><br/>Revolutionieren des Markts mit neuen Produkten oder Diensten|
 
 <!-- markdownlint-enable MD033 -->
 
@@ -50,7 +50,7 @@ Durch die Vorbereitung aller Teilnehmer auf den Migrationsaufwand unter Berücks
 
 ## <a name="migration-approach"></a>Migrationsansatz
 
-Das Cloud Adoption Framework schafft ein allgemeines Konstrukt aus den Komponenten Planen, Bereitmachen und Übernehmen, um die Arten von Aufwand zu gruppieren, die bei jeder Cloudeinführung erforderlich sind. Diese Kurzfassung basiert auf diesem allgemeinen Flow, um iterative Prozesse einzurichten, die Lift & Shift- und Optimierungsmaßnahmen **sowie** Modernisierungsmaßnahmen in einem einzigen Ansatz über alle Cloudmigrationsaktivitäten hinweg vereinfachen können.
+Das Cloud Adoption Framework schafft ein allgemeines Konstrukt aus den Komponenten Planen, Bereitmachen und Übernehmen, um die Arten von Aufwand zu gruppieren, die bei jeder Cloudeinführung erforderlich sind. Diese Kurzfassung basiert auf diesem allgemeinen Flow, um iterative Prozesse einzurichten, die Lift & Shift- und Optimierungsmaßnahmen sowie Modernisierungsmaßnahmen in einem einzigen Ansatz über alle Cloudmigrationsaktivitäten hinweg vereinfachen können.
 
 Dieser Ansatz besteht aus zwei Methoden oder Schwerpunktbereichen: Cloudstrategie und -planung und Cloudimplementierung. Die [Beweggründe](#motivations) oder die gewünschten Geschäftsergebnisse für eine Cloudmigration bestimmen oft, wie viel ein Team in die [Strategie und Planung](#cloud-strategy-and-planning) und in die [Implementierung](#cloud-implementation) investieren sollte. Diese Beweggründe können auch die Entscheidungen über die sequentielle oder parallele Ausführung beeinflussen.
 
