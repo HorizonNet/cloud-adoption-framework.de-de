@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 22fa26bdf4665584224551015cd4b3277d4755a3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 6b92072ed182eefc596ab446638a87b4fd560080
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223762"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566213"
 ---
 # <a name="identity-baseline-policy-compliance-processes"></a>Identitätsbaseline: Prozesse für Richtlinienkonformität
 
@@ -40,7 +40,7 @@ Dieser Planungsprozess ist auch ein guter Zeitpunkt, um die aktuelle Zusammenset
 
 **Monatliche Überprüfungen und Berichte:** Führen Sie monatlich eine Überprüfung für alle Cloudbereitstellungen durch, um sicherzustellen, dass sie weiterhin mit den Identitätsrichtlinien übereinstimmen. Überprüfen Sie dabei den Benutzerzugriff bei geschäftlichen Änderungen, um zu gewährleisten, dass Benutzer den erforderlichen Zugriff auf Cloudressourcen erhalten und Zugriffsstrategien wie RBAC konsequent eingehalten werden. Identifizieren Sie alle privilegierten Konten und dokumentieren Sie deren Zweck. Dieser Überprüfungsprozess erstellt einen Bericht für das Cloudstrategieteam und jedes Cloudeinführungsteam mit Details zur allgemeinen Einhaltung der Richtlinien. Der Bericht wird außerdem für prüfungsbezogene und rechtliche Zwecke gespeichert.
 
-## <a name="ongoing-monitoring-processes"></a>Fortlaufende Überwachungsprozesse
+## <a name="processes-for-ongoing-monitoring"></a>Prozesse zur fortlaufenden Überwachung
 
 Ob Ihre Identitätsverwaltungsstrategie erfolgreich ist, hängt von der Transparenz des aktuellen und vergangenen Zustands Ihrer Identitätssysteme ab. Ohne die Möglichkeit, die relevanten Metriken und Daten Ihrer Cloudbereitstellung zu analysieren, können Sie keine Veränderungen bei den Risiken und keine Verstöße gegen Ihre Risikotoleranzen erkennen. Die oben beschriebenen laufenden Kontrollprozesse erfordern qualitativ hochwertige Daten, um sicherzustellen, dass die Richtlinie an die sich ändernden Bedürfnisse Ihres Unternehmens angepasst werden kann.
 

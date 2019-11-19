@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fd44ae6fcdc84efd42ea3f79719475a32ead3111
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: ebff4e0bbeb7f74a61b81527e0dbc62874ffbe6c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223707"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566046"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>Prozesse für die Compliance der Ressourcenkonsistenzrichtlinie
 
@@ -50,7 +50,7 @@ Stellen Sie sicher, dass Ihre IT-Teams automatisierte Überwachungssysteme für 
 
 ## <a name="violation-triggers-and-enforcement-actions"></a>Auslöser bei Verstößen und Durchsetzungsmaßnahmen
 
-Da bei der Compliance der Ressourcenkonsistenzrichtlinie das Risiko einer Unterbrechung kritischer Dienste oder der Entstehung übermäßiger Kosten besteht, sollte das Cloudgovernanceteam Einblick in Non-Compliance-Vorfälle haben. Stellen Sie sicher, dass die IT-Mitarbeiter für die Meldung solcher Probleme an Mitglieder des Governance-Teams über eindeutige Eskalationspfade verfügen, mit denen sich die Behebung von Richtlinienproblemen optimal identifizieren und überprüfen lässt, sobald diese erkannt wurden.
+Da bei der Compliance der Ressourcenkonsistenzrichtlinie das Risiko einer Unterbrechung kritischer Dienste oder der Entstehung übermäßiger Kosten besteht, sollte das Cloudgovernanceteam Einblick in Non-Compliance-Vorfälle haben. Stellen Sie sicher, dass die IT-Mitarbeiter für die Meldung solcher Probleme an Mitglieder des Governanceteams über eindeutige Eskalationspfade verfügen, mit denen sich die Behebung von Richtlinienproblemen optimal identifizieren und überprüfen lässt, wenn diese erkannt wurden.
 
 Wenn Verstöße festgestellt werden, sollten Sie so schnell wie möglich Maßnahmen ergreifen, um eine erneute Einhaltung der Richtlinien zu erreichen. Ihr IT-Team kann die meisten Auslöser bei Verstößen mit den unter [Toolkette der Ressourcenkonsistenz für Azure](./toolchain.md) beschriebenen Tools automatisieren.
 

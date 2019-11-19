@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: ac1fe4cac44d4a1f830be1faba7f2d50ddbd98f0
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: c1819bafaed5e75e6667754d598b075eb3204925
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71224341"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564318"
 ---
 # <a name="cloud-center-of-excellence"></a>Cloudkompetenzzentrum
 
@@ -92,7 +92,7 @@ Diesen Vorteilen stehen für vorhandene IT-Funktionsbereiche Einbußen in den fo
 
 In intakten cloudaffinen Unternehmen erfolgt dieser Verhandlungsprozess als dynamischer Austausch zwischen Mitarbeitern und IT-Teams als Partnern. Die technischen Details sind ggf. komplex, aber sie können bewältigt werden, wenn der IT-Abteilung die Zielsetzung klar ist und die CCoE-Maßnahmen von ihr unterstützt werden. Falls die IT-Abteilung weniger Unterstützung leistet, können Sie die Informationen im folgenden Abschnitt zur erfolgreichen Einführung eines Cloudkompetenzzentrums nutzen, um kulturelle Blockadehaltungen zu überwinden.
 
-## <a name="enabling-ccoe-success"></a>Ermöglichen einer erfolgreichen Arbeit des Cloudkompetenzzentrums
+## <a name="enable-ccoe-success"></a>Ermöglichen einer erfolgreichen Arbeit des Cloudkompetenzzentrums
 
 Bevor Sie mit diesem Modell starten, sollten Sie unbedingt prüfen, ob im Unternehmen Toleranz für das „dynamische Selbstbild“ (Growth Mindset) besteht und ob die IT-Abteilung bereit ist, zentrale Zuständigkeiten abzugeben. Wie oben bereits erwähnt, besteht der Zweck eines Cloudkompetenzzentrums darin, Kontrolle durch Flexibilität und Geschwindigkeit zu ersetzen.
 

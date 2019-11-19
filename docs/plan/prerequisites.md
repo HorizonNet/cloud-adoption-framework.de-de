@@ -1,21 +1,21 @@
 ---
-title: Checkliste der Voraussetzungen für einen effektiven Cloudeinführungsplan
+title: Voraussetzungen für einen effektiven Cloudeinführungsplan
 titleSuffix: Microsoft Cloud Adoption Framework
-description: Checkliste der Voraussetzungen für einen effektiven Cloudeinführungsplan
+description: Verstehen Sie die Voraussetzungen für einen effektiven Cloudeinführungsplan.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 0933474aef96d01862f0f230073e275ac262cd83
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 6689945769c7eb31ba306567e2a09e51456d47cc
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048508"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240217"
 ---
-# <a name="prerequisites-checklist-for-an-effective-cloud-adoption-plan"></a>Checkliste der Voraussetzungen für einen effektiven Cloudeinführungsplan
+# <a name="prerequisites-for-an-effective-cloud-adoption-plan"></a>Voraussetzungen für einen effektiven Cloudeinführungsplan
 
 Ein Plan ist nur so effektiv wie die Daten, die in ihn Eingang finden. Damit ein Cloudeinführungsplan effektiv ist, gibt es zwei Kategorien von Eingaben: *strategische* und *taktische*. In den folgenden Abschnitten werden die in jeder Kategorie mindestens erforderlichen Datenpunkte beschrieben.
 

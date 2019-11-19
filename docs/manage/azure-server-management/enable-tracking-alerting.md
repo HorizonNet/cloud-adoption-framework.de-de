@@ -8,28 +8,28 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 93449f754e3908e092fa64c55ad62fc604b4ba5b
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: f3faa122039097dd6f0f4df1d6f5071b77816545
+ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71032041"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73656617"
 ---
 # <a name="enable-tracking-and-alerting-for-critical-changes"></a>Aktivieren von Nachverfolgung und Warnungen für kritische Änderungen
 
-Azure-Änderungsnachverfolgung und Bestand bietet Warnungen zum Konfigurationszustand Ihrer Hybridumgebung und zu allen Änderungen an dieser Umgebung. Sie können wichtige Änderungen an Dateien, Diensten, Software und der Registrierung überwachen, die sich auf Ihre bereitgestellten Server auswirken könnten.
+Azure-Änderungsnachverfolgung und Bestand bietet Warnungen zum Konfigurationszustand Ihrer Hybridumgebung und zu Änderungen an dieser Umgebung. Es kann wichtige Änderungen an Dateien, Diensten, Software und der Registrierung melden, die sich auf Ihre bereitgestellten Server auswirken könnten.
 
-Standardmäßig überwacht der Azure Automation-Inventarisierungsdienst keine Dateien oder Registrierungseinstellungen. Die Lösung enthält eine Liste von Registrierungsschlüsseln, die für die Überwachung empfohlen werden. Um diese Liste anzuzeigen, wechseln Sie zu Ihrem Automation-Konto im Azure-Portal, und wählen Sie **Bestand** > **Einstellungen bearbeiten** aus:
+Standardmäßig überwacht der Azure Automation-Inventarisierungsdienst keine Dateien oder Registrierungseinstellungen. Die Lösung enthält eine Liste von Registrierungsschlüsseln, die für die Überwachung empfohlen werden. Um diese Liste anzuzeigen, wechseln Sie zu Ihrem Automation-Konto im Azure-Portal, und wählen Sie **Bestand** > **Einstellungen bearbeiten** aus.
 
 ![Screenshot der Ansicht des Automation-Bestands im Azure-Portal](./media/change-tracking1.png)
 
-Weitere Informationen zu den einzelnen Registrierungsschlüsseln finden Sie unter [Änderungsnachverfolgung für Registrierungsschlüssel](https://docs.microsoft.com/azure/automation/automation-change-tracking#registry-key-change-tracking). Sie können die einzelnen Schlüssel auswerten und dann durch Auswahl aktivieren. Die Einstellung wird auf alle virtuellen Computer angewendet, die im aktuellen Arbeitsbereich aktiviert sind.
+Weitere Informationen zu den einzelnen Registrierungsschlüsseln finden Sie unter [Änderungsnachverfolgung für Registrierungsschlüssel](https://docs.microsoft.com/azure/automation/automation-change-tracking#registry-key-change-tracking). Wählen Sie einen beliebigen Schlüssel zur Auswertung aus und aktivieren Sie ihn dann. Die Einstellung wird auf alle virtuellen Computer angewendet, die im aktuellen Arbeitsbereich aktiviert sind.
 
-Darüber hinaus können Sie wichtige Dateiänderungen nachverfolgen. Sie können z. B. die Datei „C:\windows\system32\drivers\etc\hosts“ nachverfolgen, da sie vom Betriebssystem zum Zuordnen von Hostnamen und IP-Adressen verwendet wird. Jegliche Änderungen an dieser Datei können zu Konnektivitätsproblemen führen oder den Datenverkehr zu gefährlichen Websites umleiten.
+Sie können den Dienst auch verwenden, um wichtige Dateiänderungen zu verfolgen. Sie können z. B. die Datei „C:\windows\system32\drivers\etc\hosts“ nachverfolgen, da sie vom Betriebssystem zum Zuordnen von Hostnamen und IP-Adressen verwendet wird. Änderungen an dieser Datei können zu Konnektivitätsproblemen führen oder den Datenverkehr zu gefährlichen Websites umleiten.
 
 Um das Nachverfolgen von Dateiinhalten für die Datei „hosts“ zu aktivieren, führen Sie die Schritte unter [Aktivieren der Nachverfolgung von Dateiinhalten](https://docs.microsoft.com/azure/automation/change-tracking-file-contents#enable-file-content-tracking) aus.
 
-Sie können auch eine Warnung für Änderungen an Dateien hinzufügen, die Sie nachverfolgen. Nehmen Sie z. B. an, dass Sie eine Warnung für Änderungen an der Datei „hosts“ festlegen möchten. Wechseln Sie zunächst zu Log Analytics, indem Sie **Log Analytics** in der Befehlsleiste auswählen oder die Protokollsuche für den verknüpften Log Analytics-Arbeitsbereich öffnen. Nachdem Sie sich in Log Analytics befinden, suchen Sie mit der folgenden Abfrage nach Inhaltsänderungen in der Datei „hosts“:
+Sie können auch eine Warnung für Änderungen an Dateien hinzufügen, die Sie nachverfolgen. Nehmen Sie z. B. an, dass Sie eine Warnung für Änderungen an der Datei „hosts“ festlegen möchten. Wählen Sie **Log Analytics** in der Befehlsleiste oder die Protokollsuche für den verknüpften Log Analytics-Arbeitsbereich aus. Verwenden Sie in Log Analytics die folgende Abfrage, um nach Änderungen an der Datei „hosts“ zu suchen:
 
 ```kusto
 ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and FileSystemPath contains "hosts"
@@ -51,13 +51,13 @@ Nachdem die Bedingungslogik festgelegt wurde, können Sie Aktionsgruppen zuweise
 
 Nachdem Sie alle Parameter und die Logik festgelegt haben, wenden Sie die Warnung auf die Umgebung an.
 
-## <a name="more-tracking-and-alerting-examples"></a>Weitere Beispiele für Nachverfolgung und Warnungen
+## <a name="tracking-and-alerting-examples"></a>Beispiele für Nachverfolgung und Warnungen
 
-Hier folgen einige andere häufige Szenarien für die Nachverfolgung und Warnungen, die Sie in Betracht ziehen sollten:
+In diesem Abschnitt werden weitere häufige Szenarien für Nachverfolgung und Warnungen vorgestellt, die Sie möglicherweise verwenden möchten.
 
 ### <a name="driver-file-changed"></a>Änderungen an der Treiberdatei
 
-Ermitteln Sie, ob Treiberdateien geändert, hinzugefügt oder entfernt wurden. Nützlich für das Nachverfolgen von Änderungen an kritischen Systemdateien.
+Ermitteln Sie mithilfe der folgenden Abfrage, ob Treiberdateien geändert, hinzugefügt oder entfernt wurden. Sie ist nützlich für das Nachverfolgen von Änderungen an kritischen Systemdateien.
 
   ```kusto
   ConfigurationChange | where ConfigChangeType == "Files" and FileSystemPath contains " c:\\windows\\system32\\drivers\\"
@@ -65,7 +65,7 @@ Ermitteln Sie, ob Treiberdateien geändert, hinzugefügt oder entfernt wurden. N
 
 ### <a name="specific-service-stopped"></a>Bestimmter Dienst beendet
 
-Nützlich für das Nachverfolgen von Änderungen an für das System wichtigen Diensten.
+Verwenden Sie die folgende Abfrage, um Änderungen an für das System wichtigen Diensten zu verfolgen.
 
   ```kusto
   ConfigurationChange | where SvcState == "Stopped" and SvcName contains "w3svc"
@@ -73,7 +73,7 @@ Nützlich für das Nachverfolgen von Änderungen an für das System wichtigen Di
 
 ### <a name="new-software-installed"></a>Neue Software installiert
 
-Nützlich für Umgebungen, in denen Softwarekonfigurationen gesperrt werden müssen.
+Verwenden Sie die folgende Abfrage für Umgebungen, in denen Softwarekonfigurationen gesperrt werden müssen.
 
   ```kusto
   ConfigurationChange | where ConfigChangeType == "Software" and ChangeCategory == "Added"
@@ -81,15 +81,15 @@ Nützlich für Umgebungen, in denen Softwarekonfigurationen gesperrt werden müs
 
 ### <a name="specific-software-version-is-or-isnt-installed-on-a-machine"></a>Eine bestimmte Softwareversion ist auf einem Computer installiert oder nicht installiert.
 
-Nützlich für die Bewertung der Sicherheit. Beachten Sie, dass diese Abfrage auf `ConfigurationData` verweist, das die Protokolle für den Bestand enthält und den letzten gemeldeten Konfigurationsstatus und keine Änderungen meldet.
+Verwenden Sie die folgende Abfrage, um die Sicherheit zu bewerten. Diese Abfrage verweist auf `ConfigurationData`, das die Protokolle für den Bestand enthält und den letzten gemeldeten Konfigurationsstatus und keine Änderungen bereitstellt.
 
   ```kusto
   ConfigurationData | where SoftwareName contains "Monitoring Agent" and CurrentVersion != "8.0.11081.0"
   ```
 
-### <a name="known-dll-changed-through-registry"></a>Bekannte DLL-Änderungen über die Registrierung
+### <a name="known-dll-changed-through-the-registry"></a>Bekannte DLL-Änderungen über die Registrierung
 
-Nützlich zum Erkennen von Änderungen an bekannten Registrierungsschlüsseln.
+Verwenden Sie die folgende Abfrage, um Änderungen an bekannten Registrierungsschlüsseln zu erkennen.
 
   ```kusto
   ConfigurationChange | where RegistryKey == "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Session Manager\\KnownDlls"
@@ -97,7 +97,7 @@ Nützlich zum Erkennen von Änderungen an bekannten Registrierungsschlüsseln.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Erfahren Sie, wie Sie Updates für Ihre Server verwalten können, indem Sie [Zeitpläne für Updates](./update-schedules.md) mit Azure Automation erstellen.
+Erfahren Sie, wie Sie mit Azure Automation [Zeitpläne für Updates](./update-schedules.md) erstellen, um Updates für Ihre Server zu verwalten.
 
 > [!div class="nextstepaction"]
 > [Erstellen von Zeitplänen für Updates](./update-schedules.md)

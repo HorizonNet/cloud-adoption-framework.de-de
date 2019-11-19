@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9c9676684ebec0a34fcc2dc845935c598814ea52
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: 19559e34f396561a25761e2b452133f84580fe85
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73047863"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565953"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Richtlinie zur cloudnativen Sicherheitsbaseline
 
-[Sicherheitsbaseline](./index.md) ist eine der [fünf Disziplinen von Cloud Governance](../governance-disciplines.md). Diese Disziplin konzentriert sich auf allgemeine Sicherheitsthemen, darunter den Schutz des Netzwerks, von digitalen Ressourcen und Daten usw. Wie im [Leitfaden zur Richtlinienüberprüfung](../policy-compliance/cloud-policy-review.md) erläutert, umfasst das Cloud Adoption Framework drei Ebenen von **Beispielrichtlinien**: cloudnative, Unternehmens- und cloudentwurfsprinzipien-konforme Richtlinien für jede der einzelnen Disziplinen. In diesem Artikel wird die cloudnative Beispielrichtlinie für die Disziplin der Sicherheitsbaseline beschrieben.
+[Sicherheitsbaseline](./index.md) ist eine der [fünf Disziplinen von Cloud Governance](../governance-disciplines.md). Diese Disziplin konzentriert sich auf allgemeine Sicherheitsthemen, darunter den Schutz des Netzwerks, von digitalen Ressourcen und Daten usw. Wie im [Leitfaden zur Richtlinienüberprüfung](../policy-compliance/cloud-policy-review.md) erläutert, umfasst das Cloud Adoption Framework drei Ebenen von Beispielrichtlinien: cloudnative, Unternehmens- und cloudentwurfsprinzipien-konforme Richtlinien für jede der einzelnen Disziplinen. In diesem Artikel wird die cloudnative Beispielrichtlinie für die Disziplin der Sicherheitsbaseline beschrieben.
 
 > [!NOTE]
 > Microsoft ist nicht in der Lage, Unternehmens- oder IT-Richtlinien vorzuschreiben. Dieser Artikel unterstützt Sie bei den Vorbereitungen für eine interne Richtlinienüberprüfung. Es wird davon ausgegangen, dass diese Beispielrichtlinie vor ihrer Verwendung erweitert, überprüft und in Bezug auf Ihre Unternehmensrichtlinie getestet wird. Die Beispielrichtlinie sollte nicht ohne Anpassungen verwendet werden.
@@ -82,7 +82,8 @@ Die Sicherheitsüberwachung ist eine proaktive Strategie, bei der Ihre Ressource
 
 ### <a name="extending-cloud-native-policies"></a>Erweitern von cloudnativen Richtlinien.
 
-Durch die Verwendung der Cloud lassen sich einige Sicherheitsbürden verringern. Microsoft bietet physische Sicherheit für Azure-Rechenzentren und trägt zum Schutz der Cloudplattform vor Bedrohungen der Infrastruktur wie z.B. einem DDoS-Angriff bei. Da Microsoft über Tausende von Cybersicherheitsspezialisten verfügt, die sich täglich mit Sicherheitsbelangen beschäftigen, sind die Ressourcen zur Erkennung, Verhinderung oder Minderung von Cyberangriffen beträchtlich. Während sich Unternehmen früher Gedanken darüber machten, ob die Cloud sicher ist, verstehen die meisten jetzt, dass das Ausmaß der Investitionen in Mitarbeiter und spezialisierte Infrastrukturen von Anbietern wie Microsoft die Cloud sicherer macht als die meisten lokalen Datencenter.
+Durch die Verwendung der Cloud lassen sich einige Sicherheitsbürden verringern. Microsoft bietet physische Sicherheit für Azure-Rechenzentren und trägt zum Schutz der Cloudplattform vor Bedrohungen der Infrastruktur wie z.B. einem DDoS-Angriff bei. Da Microsoft über Tausende von Cybersicherheitsspezialisten verfügt, die sich täglich mit Sicherheitsbelangen beschäftigen, sind die Ressourcen zur Erkennung, Verhinderung oder Minderung von Cyberangriffen beträchtlich. Während sich Unternehmen früher Gedanken darüber machten, ob die Cloud sicher ist, verstehen die meisten jetzt, dass das Ausmaß der Investitionen in Mitarbeiter und spezialisierte Infrastrukturen von Anbietern wie Microsoft die Cloud sicherer macht als die meisten lokalen Rechenzentren.
+Durch die Verwendung der Cloud lassen sich einige Sicherheitsbürden verringern. Microsoft bietet physische Sicherheit für Azure-Rechenzentren und trägt zum Schutz der Cloudplattform vor Bedrohungen der Infrastruktur wie z.B. einem DDoS-Angriff bei. Da Microsoft über Tausende von Cybersicherheitsspezialisten verfügt, die sich täglich mit Sicherheitsbelangen beschäftigen, sind die Ressourcen zur Erkennung, Verhinderung oder Minderung von Cyberangriffen beträchtlich. Während sich Unternehmen früher Gedanken darüber machten, ob die Cloud sicher ist, verstehen die meisten jetzt, dass das Ausmaß der Investitionen in Mitarbeiter und spezialisierte Infrastrukturen von Anbietern wie Microsoft die Cloud sicherer macht als die meisten lokalen Rechenzentren.
 
 Selbst bei dieser Investition in die cloudnative Sicherheitsbaseline empfiehlt es sich, die cloudnativen Standardrichtlinien um eine Richtlinie der Sicherheitsbaseline zu erweitern. Es folgen Beispiele für erweiterte Richtlinien, die auch in einer cloudnativen Umgebung berücksichtigt werden sollten:
 

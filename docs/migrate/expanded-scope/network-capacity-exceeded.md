@@ -1,21 +1,21 @@
 ---
 title: Netzwerkkapazität überschritten
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Speicheranforderungen überschreiten die Netzwerkkapazität während einer Migration.
+description: Datenanforderungen überschreiten Netzwerkkapazität während einer Migration.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9b1078cbb6b7ca40b7a38ea56ae803fd61e67449
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: a2afa6e7961a8cc53abb6c3dbe0d78c2251b134d
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024778"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239978"
 ---
-# <a name="storage-requirements-exceed-network-capacity-during-a-migration-effort"></a>Speicheranforderungen überschreiten Netzwerkkapazität während einer Migration
+# <a name="data-requirements-exceed-network-capacity-during-a-migration-effort"></a>Datenanforderungen überschreiten Netzwerkkapazität während einer Migration
 
 Bei einer Cloudmigration werden Ressourcen über das Netzwerk zwischen dem vorhandenen Rechenzentrum und der Cloud repliziert und synchronisiert. Es ist nicht ungewöhnlich, dass die vorhandenen Datengrößenanforderungen von verschiedenen Workloads die Netzwerkkapazität überschreiten. In einem solchen Szenario kann der Migrationsprozess sich drastisch verlangsamen oder in einigen Fällen ganz beendet werden. Die folgende Anleitung erweitert den Umfang des [Leitfadens zur Azure-Migration](../azure-migration-guide/index.md) und bietet eine Lösung zum Umgehen von Netzwerkbeschränkungen.
 

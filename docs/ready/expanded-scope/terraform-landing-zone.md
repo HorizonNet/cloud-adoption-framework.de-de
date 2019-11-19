@@ -8,12 +8,12 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 51751ab0033505e34c02c17db363bc985b83e44d
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: deebe6db08d573872f67d79f734d1f65a85c6904
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058154"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73561686"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>Verwenden von Terraform zum Erstellen Ihrer Zielzonen
 
@@ -21,11 +21,11 @@ Azure bietet native Dienste zum Bereitstellen Ihrer Zielzonen. Andere Tools von 
 
 ## <a name="purpose-of-the-landing-zone"></a>Zweck der Zielzone
 
-Die grundlegende Zielzone von Cloud Adoption Framework für Terraform verfügt über eine begrenzte Anzahl von Zuständigkeiten und Features zum Erzwingen von Protokollierung, Kontoführung und Sicherheit. Wir haben diese Zielzone so entworfen, dass als Terraform-Module bezeichnete Standardkomponenten verwendet werden, um die Konsistenz der in der Umgebung bereitgestellten Ressourcen zu erzwingen.
+Die grundlegende Zielzone von Cloud Adoption Framework für Terraform verfügt über eine begrenzte Anzahl von Zuständigkeiten und Features zum Erzwingen von Protokollierung, Kontoführung und Sicherheit. Diese Zielzone verwendet als Terraform-Module bezeichnete Standardkomponenten, um die Konsistenz der in der Umgebung bereitgestellten Ressourcen zu erzwingen.
 
-## <a name="using-standard-modules"></a>Verwenden von Standardmodulen
+## <a name="use-standard-modules"></a>Verwenden von Standardmodulen
 
-Die Wiederverwendung von Komponenten ist ein grundlegendes Prinzip von Infrastructure-as-Code. Die Module dienen zum Definieren von Standards und Konsistenz der gesamten Ressourcenbereitstellung inner- und außerhalb von Umgebungen. Der Satz von Modulen zum Bereitstellen dieser ersten Zielzone ist in der offiziellen [Terraform-Registrierung](https://registry.terraform.io/search?q=aztfmod) verfügbar.
+Die Wiederverwendung von Komponenten ist ein grundlegendes Prinzip von Infrastructure-as-Code. Die Module dienen zum Definieren von Standards und Konsistenz der gesamten Ressourcenbereitstellung inner- und außerhalb von Umgebungen. Die zum Bereitstellen dieser ersten Zielzone verwendeten Module sind in der offiziellen [Terraform-Registrierung](https://registry.terraform.io/search?q=aztfmod) verfügbar.
 
 ## <a name="architecture-diagram"></a>Architekturdiagramm
 
@@ -40,10 +40,10 @@ Die bereitgestellten Komponenten und ihre Zwecke sind:
 | Komponente | Verantwortlichkeit |
 |---------|---------|
 | Ressourcengruppen | Kernressourcengruppen, die für die Grundlage benötigt werden |
-| Aktivitätsprotokollierung | Überwachung aller Abonnementaktivitäten und Archivierung: </br> – Speicherkonto </br> – Event Hubs |  
+| Aktivitätsprotokollierung | Überwachung aller Abonnementaktivitäten und Archivierung: </br> – Speicherkonto </br> – Azure Event Hubs |  
 | Diagnoseprotokollierung | Alle Vorgangsprotokolle, die für eine bestimmte Anzahl von Tagen beibehalten werden: </br> – Speicherkonto </br> – Event Hubs |
 | Log Analytics | Speichert alle Vorgangsprotokolle </br> Bereitstellen allgemeiner Lösungen zum umfassenden Überprüfen der bewährten Methoden von Anwendungen: </br> – NetworkMonitoring </br> – ADAssessment </br> – ADReplication </br> – Agenthalthassessment </br> – DnsAnalytics </br> – KeyVaultAnalytics
-| Security Center | Sicherheitsmetriken und -warnungen, die an E-Mailadressen und Telefonnummern gesendet werden |
+| Azure Security Center | Sicherheitsmetriken und -warnungen, die an E-Mailadressen und Telefonnummern gesendet werden |
 
 ## <a name="use-this-blueprint"></a>Verwenden dieser Blaupause
 
@@ -66,24 +66,24 @@ Die folgenden Entscheidungen werden in der Terraform-Zielzone widergespiegelt:
 
 | Komponente | Entscheidungen | Alternative Ansätze |
 | --- | --- | --- |
-|Protokollierung und Überwachung | Ein Azure Monitor Log Analytics-Arbeitsbereich wird verwendet. Ein Diagnosespeicherkonto und ein Event Hub werden bereitgestellt. |         |
-|Netzwerk | Nicht verfügbar: Das Netzwerk wird in einer anderen Zielzone implementiert. |[Netzwerkentscheidungen](../considerations/network-decisions.md) |
+|Protokollierung und Überwachung | Der Log Analytics-Arbeitsbereich von Azure Monitor wird verwendet. Ein Diagnosespeicherkonto und ein Event Hub werden bereitgestellt. |         |
+|Netzwerk | Nicht verfügbar: Das Netzwerk wird in einer anderen Zielzone implementiert. |[Netzwerkentscheidungen](../considerations/networking-options.md) |
 |Identity | Es wird angenommen, dass das Abonnement bereits einer Azure Active Directory-Instanz zugeordnet ist. | [Bewährte Methoden für die Identitätsverwaltung](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices) |
 | Richtlinie | Bei dieser Zielzone wird derzeit davon ausgegangen, dass keine Azure-Richtlinien angewendet werden müssen. | |
-|Abonnemententwurf | N/V: wurde für ein einzelnes Produktionsabonnement entworfen. | [Skalieren von Abonnements](../considerations/scaling-subscriptions.md) |
-| Verwaltungsgruppen | N/V: wurde für ein einzelnes Produktionsabonnement entworfen. |[Skalieren von Abonnements](../considerations/scaling-subscriptions.md) |
-| Ressourcengruppen | N/V: wurde für ein einzelnes Produktionsabonnement entworfen. | [Skalieren von Abonnements](../considerations/scaling-subscriptions.md) |
+|Abonnemententwurf | N/V: wurde für ein einzelnes Produktionsabonnement entworfen. | [Skalieren von Abonnements](../azure-best-practices/scaling-subscriptions.md) |
+| Verwaltungsgruppen | N/V: wurde für ein einzelnes Produktionsabonnement entworfen. |[Skalieren von Abonnements](../azure-best-practices/scaling-subscriptions.md) |
+| Ressourcengruppen | N/V: wurde für ein einzelnes Produktionsabonnement entworfen. | [Skalieren von Abonnements](../azure-best-practices/scaling-subscriptions.md) |
 | Data | – | [Auswählen der richtigen Bereitstellungsoption in Azure SQL](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) und [Auswählen des richtigen Datenspeichers](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-|Storage|–|[Leitfaden zu Azure Storage](../considerations/storage-guidance.md) |
-| Benennungsstandards | Wenn die Umgebung erstellt wird, wird auch ein eindeutiges Präfix erstellt. Für Ressourcen, die einen global eindeutigen Namen benötigen (z. B. Speicherkonten), wird dieses Präfix verwendet. Dem benutzerdefinierten Namen wird ein zufälliges Suffix angefügt. Tags müssen wie in der folgenden Tabelle beschrieben verwendet werden. | [Best Practices zur Benennung und Kennzeichnung](../considerations/naming-and-tagging.md) |
+|Storage|–|[Leitfaden zu Azure Storage](../considerations/storage-options.md) |
+| Benennungsstandards | Wenn die Umgebung erstellt wird, wird auch ein eindeutiges Präfix erstellt. Für Ressourcen, die einen global eindeutigen Namen benötigen (z. B. Speicherkonten), wird dieses Präfix verwendet. Dem benutzerdefinierten Namen wird ein zufälliges Suffix angefügt. Tags müssen wie in der folgenden Tabelle beschrieben verwendet werden. | [Best Practices zur Benennung und Kennzeichnung](../azure-best-practices/naming-and-tagging.md) |
 | Kostenverwaltung | – | [Nachverfolgen von Kosten](../azure-best-practices/track-costs.md) |
-| Compute | – | [Computeoptionen](../considerations/compute-decisions.md) |
+| Compute | – | [Computeoptionen](../considerations/compute-options.md) |
 
 ### <a name="tagging-standards"></a>Kennzeichnungsstandards
 
 Bei allen Ressourcen und Ressourcengruppen muss der folgende minimale Satz an Tags vorhanden sein:
 
-| Tag-Name | BESCHREIBUNG | Schlüssel | Beispielwert |
+| Tagname | BESCHREIBUNG | Schlüssel | Beispielwert |
 |--|--|--|--|
 | Geschäftseinheit | Oberste Abteilung Ihres Unternehmens, die Besitzer des Abonnements oder der Workload ist, zu dem oder der die Ressource gehört. | BusinessUnit | FINANCE, MARKETING, {Produktname}, CORP, SHARED |
 | Kostenstelle | Buchhaltungskostenstelle, die dieser Ressource zugeordnet ist.| CostCenter | Number |
@@ -91,7 +91,7 @@ Bei allen Ressourcen und Ressourcengruppen muss der folgende minimale Satz an Ta
 | Environment | Bereitstellungsumgebung der Anwendung, Workload oder dieses Diensts. |  Env | Prod, Dev, QA, Stage, Test, Training |
 | Name des Besitzers | Besitzer der Anwendung, der Workload oder des Diensts.| Owner (Besitzer) | email |
 | Bereitstellungstyp | Definiert, wie die Ressourcen verwaltet werden. | deploymentType | Manual, Terraform |
-| Version | Version der bereitgestellten Blaupause | version | v0.1 |
+| Version | Version der bereitgestellten Blaupause. | version | v0.1 |
 | Anwendungsname | Der Name der Anwendung, des Diensts oder der Workload, womit die Ressource verknüpft ist. | ApplicationName | „App-Name“ |
 
 ## <a name="customize-and-deploy-your-first-landing-zone"></a>Anpassen und Bereitstellen Ihrer ersten Zielzone
@@ -100,7 +100,7 @@ Sie können [Ihre grundlegende Terraform-Zielzone klonen](https://github.com/mic
 
 Betrachten wir nun die verschiedenen Variablenabschnitte.
 
-In diesem ersten Objekt erstellen wir zwei Ressourcengruppen in der `southeastasia`-Region mit den Namen „-hub-core-sec“ und „-hub-core-sec“ sowie ein Präfix, das der Runtime hinzugefügt wird.
+In diesem ersten Objekt erstellen wir zwei Ressourcengruppen in der `southeastasia`-Region mit den Namen `-hub-core-sec` und `-hub-operations` sowie ein Präfix, das zur Laufzeit hinzugefügt wird.
 
 ```hcl
 resource_groups_hub = {
@@ -144,7 +144,7 @@ tags_hub = {
 }
 ```
 
-Anschließend geben wir den Protokollanalysenamen und eine Reihe von Lösungen an, die die Bereitstellung analysieren. Hier haben wir Netzwerküberwachung, AD-Bewertung und -Replikation, DNS-Analyse und Key Vault-Analyse beibehalten.
+Anschließend geben wir den Protokollanalysenamen und eine Reihe von Lösungen an, die die Bereitstellung analysieren. Hier haben wir Netzwerküberwachung, AD-Bewertung (Active Directory) und -Replikation, DNS-Analyse und Key Vault-Analyse beibehalten.
 
 ```hcl
 
@@ -189,13 +189,13 @@ security_center = {
 }
 ```
 
-## <a name="getting-started"></a>Erste Schritte
+## <a name="get-started"></a>Erste Schritte
 
-Nachdem Sie die Konfiguration überprüft haben, können Sie die Konfiguration wie eine Terraform-Umgebung bereitstellen. Sie sollten jedoch den „rover“ verwenden, einen Docker-Container, der die Bereitstellung von Windows, Linux oder MacOS ermöglicht. Sie können mit dem [„rover“-GitHub-Repository](https://github.com/aztfmod/rover) beginnen.
+Nachdem Sie die Konfiguration überprüft haben, können Sie die Konfiguration wie eine Terraform-Umgebung bereitstellen. Sie sollten den „rover“ verwenden, einen Docker-Container, der die Bereitstellung von Windows, Linux oder MacOS ermöglicht. Sie können mit dem [„rover“-GitHub-Repository](https://github.com/aztfmod/rover) beginnen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Die grundlegende Zielzone bildet die Basis für eine aufgeschlüsselte komplexe Umgebung. Diese Edition bietet eine Reihe sehr einfacher Funktionen, die folgendermaßen erweitert werden kann:
+Die grundlegende Zielzone bildet die Basis für eine aufgeschlüsselte komplexe Umgebung. Diese Edition bietet eine Reihe einfacher Funktionen, die folgendermaßen erweitert werden kann:
 
 - Hinzufügen weiterer Module zur Blaupause.
 - Überlagern mit weiteren Zielzonen.
@@ -205,4 +205,4 @@ Das Überlagern mit weiteren Zielzonen ist eine bewährte Vorgehensweise, um Sys
 Zukünftige Referenzarchitekturen werden dieses Konzept für eine Hub-and-Spoke-Topologie veranschaulichen.
 
 > [!div class="nextstepaction"]
-> [Überprüfen des Beispiels der grundlegenden Zielzone mit Terraform](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready)
+> [Überprüfen des Beispiels der grundlegenden Terraform-Zielzone](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready)

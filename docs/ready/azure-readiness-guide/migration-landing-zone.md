@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit
-ms.openlocfilehash: cb4b14da5b7f9e934a6597fb0fc4e1c8b3d656ff
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: b3adddc6b68d07084ec8c3909d6c8010c25bb387
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548910"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73239849"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Bereitstellen einer Landezone für die Migration
 
@@ -59,17 +59,17 @@ Die folgenden Entscheidungen werden in der Blaupause für die Landezone widerges
 |---------|---------|---------|
 |Migrationstools|Azure Site Recovery wird bereitgestellt, und ein Azure Migrate-Projekt wird erstellt.|[Entscheidungsleitfaden zur Wahl von Migrationstools](../../decision-guides/migrate-decision-guide/index.md)|
 |Protokollierung und Überwachung|Ein Operational Insights-Arbeitsbereich und ein Speicherkonto für die Diagnose werden bereitgestellt.|         |
-|Netzwerk|Es wird ein virtuelles Netzwerk mit Subnetzen für Gateway, Firewall, Jumpbox und Landezone erstellt.|[Netzwerkentscheidungen](../considerations/network-decisions.md)|
+|Netzwerk|Es wird ein virtuelles Netzwerk mit Subnetzen für Gateway, Firewall, Jumpbox und Landezone erstellt.|[Netzwerkentscheidungen](../considerations/networking-options.md)|
 |Identity|Es wird angenommen, dass das Abonnement bereits einer Azure Active Directory-Instanz zugeordnet ist.|[Bewährte Methoden für die Identitätsverwaltung](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)         |
 |Richtlinie|Bei dieser Blaupause wird derzeit davon ausgegangen, dass keine Azure-Richtlinien angewendet werden müssen.|         |
-|Abonnemententwurf|N/V: wurde für ein einzelnes Produktionsabonnement entworfen.|[Skalieren von Abonnements](../considerations/scaling-subscriptions.md)|
-|Verwaltungsgruppen|N/V: wurde für ein einzelnes Produktionsabonnement entworfen.|[Skalieren von Abonnements](../considerations/scaling-subscriptions.md)         |
-|Ressourcengruppen|N/V: wurde für ein einzelnes Produktionsabonnement entworfen.|[Skalieren von Abonnements](../considerations/scaling-subscriptions.md)         |
+|Abonnemententwurf|N/V: wurde für ein einzelnes Produktionsabonnement entworfen.|[Skalieren von Abonnements](../azure-best-practices/scaling-subscriptions.md)|
+|Verwaltungsgruppen|N/V: wurde für ein einzelnes Produktionsabonnement entworfen.|[Skalieren von Abonnements](../azure-best-practices/scaling-subscriptions.md)         |
+|Ressourcengruppen|N/V: wurde für ein einzelnes Produktionsabonnement entworfen.|[Skalieren von Abonnements](../azure-best-practices/scaling-subscriptions.md)         |
 |Data|–|[Auswählen der richtigen Bereitstellungsoption in Azure SQL](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/architecture/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) und [Auswählen des richtigen Datenspeichers](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
-|Storage|–|[Leitfaden zu Azure Storage](../considerations/storage-guidance.md)         |
-|Standards für Benennung und Kennzeichnung|–|[Best Practices zur Benennung und Kennzeichnung](../considerations/naming-and-tagging.md)         |
+|Storage|–|[Leitfaden zu Azure Storage](../considerations/storage-options.md)         |
+|Standards für Benennung und Kennzeichnung|–|[Best Practices zur Benennung und Kennzeichnung](../azure-best-practices/naming-and-tagging.md)         |
 |Kostenverwaltung|–|[Nachverfolgen von Kosten](../azure-best-practices/track-costs.md)|
-|Compute|–|[Computeoptionen](../considerations/compute-decisions.md)|
+|Compute|–|[Computeoptionen](../considerations/compute-options.md)|
 
 ## <a name="customize-or-deploy-a-landing-zone-from-this-blueprint"></a>Anpassen oder Bereitstellen einer Landezone aus dieser Blaupause
 

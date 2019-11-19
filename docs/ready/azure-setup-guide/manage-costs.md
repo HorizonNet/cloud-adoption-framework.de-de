@@ -10,18 +10,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 20dd988f3e79c513647f74ade9edad307e01d839
-ms.sourcegitcommit: b30952f08155513480c6b2c47a40271c2b2357cf
+ms.openlocfilehash: c9a02a6d98929455d8d8f6c163825f69de7996be
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72379151"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73562577"
 ---
 # <a name="manage-costs-and-billing-for-your-azure-resources"></a>Verwalten von Kosten und Abrechnung für Ihre Azure-Ressourcen
 
 Die Kostenverwaltung ist der Prozess, bei dem Sie die Kosten Ihrer Geschäftstätigkeit effektiv planen und steuern. Kostenverwaltungsaufgaben werden in der Regel durch die Finanz-, Management- und App-Teams ausgeführt. Azure Cost Management kann Ihnen helfen, Ihre Planung unter Berücksichtigung der Kosten durchzuführen. Zudem können damit Kosten effektiv analysiert und Maßnahmen zum Optimieren der Cloudausgaben ergriffen werden.
 
-Weitere Informationen zur Integration von Verwaltungsprozessen für die Cloudkosten in Ihrem Unternehmen finden Sie im Artikel des Cloud Adoption Framework für Azure zum [Nachverfolgen der Kosten in Geschäftseinheiten, Umgebungen oder Projekten](../azure-best-practices/track-costs.md).
+Weitere Informationen zur Integration von Verwaltungsprozessen für die Cloudkosten in Ihrem Unternehmen finden Sie im Artikel des Cloud Adoption Framework zum [Nachverfolgen der Kosten in Geschäftseinheiten, Umgebungen oder Projekten](../azure-best-practices/track-costs.md).
 
 ## <a name="manage-your-costs-with-azure-cost-management"></a>Verwalten Ihrer Kosten mit Azure Cost Management
 

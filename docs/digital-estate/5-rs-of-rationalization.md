@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 35709a6208de54f43cdb51aadb1e32f34a0ba844
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 91ea4b076740bb745a32f2197d9ddc14970d75f0
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223873"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73238802"
 ---
 # <a name="cloud-rationalization"></a>Cloudrationalisierung
 
@@ -38,7 +38,7 @@ Die hier aufgeführten fünf Phasen der Rationalisierung beschreiben die gängig
 
 ## <a name="rehost"></a>Rehosten
 
-Auch „Lift & Shift“-Migration genannt. Beim Rehosten wird die Ressource im aktuellen Zustand zum gewählten Cloudanbieter migriert. Die Architektur bleibt dabei größtenteils unverändert.
+Auch _Lift & Shift_-Migration genannt. Beim Rehosten wird die Ressource im aktuellen Zustand zum gewählten Cloudanbieter migriert. Die Architektur bleibt dabei größtenteils unverändert.
 
 Häufige Motive können Folgendes umfassen:
 

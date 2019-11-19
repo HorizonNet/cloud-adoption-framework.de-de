@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5eabc654c174ac3eff895e6b2ff94700789f5de5
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 60f622411a71284fa8e97f457da2461ec6e02ac3
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549162"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564648"
 ---
 # <a name="understand-partnership-options"></a>Verstehen der Optionen für Partnerschaften
 
@@ -82,7 +82,7 @@ Dies sind die Hauptphasen eines typischen FastTrack for Azure-Einsatzes:
 
 **Übernehmen**: Durch die [Azure Cloud Foundation](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf) von Microsoft Services richten Sie Ihre grundlegenden Entwürfe, Muster und die Governancearchitektur für Azure ein. Sie ordnen Ihre Anforderungen zu den am besten geeigneten Referenzarchitekturen und Plänen zu, um danach die für Workloads erforderliche Infrastruktur, Verwaltung, Sicherheit und Identität zu entwerfen und bereitzustellen.
 
-**Migrieren/Optimieren**: Die [Cloud Modernization Solution](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) von Microsoft Services bietet eine umfassende Vorgehensweise zum Verschieben von Anwendungen und Infrastrukturen nach Azure sowie zum Optimieren und Modernisieren, sobald der optimierte Migrationsprozess in die Cloud abgeschlossen ist.
+**Migrieren/Optimieren**: Die [Cloud Modernization Solution](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) von Microsoft Services bietet eine umfassende Vorgehensweise zum Verschieben von Anwendungen und Infrastrukturen nach Azure sowie zum Optimieren und Modernisieren nach der Cloudbereitstellung, unterstützt durch eine optimierte Migration.
 
 **Innovation:** Das [Cloud Center of Excellence (CCoE)](https://download.microsoft.com/download/F/8/B/F8BBE4BD-E5F8-4DFB-82F7-C0A4E17051BB/Cloud_Center_of_Excellence_Datasheet_EN_US.pdf) von Microsoft Services bietet eine begleitende Betreuung von DevOps-Projekten und nutzt DevOps-Prinzipien in Kombination mit präskriptiven cloudnativen Funktionen für Dienstverwaltung und Sicherheitssteuerung. So fördert die Lösung geschäftliche Innovationen, erhöht die Agilität und verkürzt die Time-to-Value im Rahmen einer sicheren, vorhersagbaren und flexiblen Dienstbereitstellung und Prozessverwaltung.
 

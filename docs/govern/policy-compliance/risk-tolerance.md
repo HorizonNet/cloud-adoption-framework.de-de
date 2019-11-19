@@ -8,12 +8,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 61f661a167b9a38a54a51dc9612a0b17df0bd0c3
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 7a6f77bdf2cbd0d34815fc1ef659385444c95fe7
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547173"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566060"
 ---
 # <a name="evaluate-risk-tolerance"></a>Evaluieren der Risikotoleranz
 
@@ -38,7 +38,7 @@ Echte Geschäftsrisiken basieren auf den Details spezifischer Transformationen. 
 
 Oben sind einige der gängigsten von Kunden genannten Risiken aufgeführt. Das Cloudgovernanceteam und die Cloudeinführungsteams können mit der Entwicklung eines Risikoprofils beginnen, während Workloads migriert und für den Einsatz in der Produktion vorbereitet werden. Richten Sie sich auf Gespräche ein, um Risiken basierend auf dem gewünschten Geschäftsergebnis und Transformationsaufwand zu definieren, zu präzisieren und in den Griff zu bekommen.
 
-## <a name="understanding-risk-tolerance"></a>Verstehen der Risikotoleranz
+## <a name="understand-risk-tolerance"></a>Verstehen der Risikotoleranz
 
 Die Identifikation von Risiken ist ein relativ direkter Prozess. IT-bezogene Risiken sind in der Regel branchenübergreifend identisch. Die Toleranz für diese Risiken ist jedoch spezifisch für jede Organisation. An diesem Punkt laufen Gespräche zwischen Unternehmen und IT tendenziell auseinander. Die beiden Gesprächspartner sprechen im Wesentlichen eine andere Sprache. Die folgenden Vergleiche und Fragen sollen als Einstieg für Diskussionen dienen, die es beiden Parteien ermöglichen, die Risikobereitschaft besser zu verstehen und einzuschätzen.
 

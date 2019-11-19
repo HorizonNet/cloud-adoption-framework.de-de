@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e7582df81e305ab602c8172b5e93531eb8112432
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 8e58c0e95517d49e9c8685539407127880b5d090
+ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022267"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73240192"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Priorisierung und Definition von Workloads für einen Cloudeinführungsplan
 
@@ -29,7 +29,7 @@ Im Rahmen einer Cloudeinführung ist eine Workload eine Sammlung von IT-Ressourc
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Die strategischen Eingaben aus der Checkliste der Voraussetzungen erleichtern die Erledigung der folgenden Aufgaben wesentlich. Hilfe bei der Zusammenstellung der Daten, die in diesem Artikel besprochen werden, finden Sie in der [Voraussetzungencheckliste](./prerequisites.md).
+Die strategischen Eingaben aus der Liste der Voraussetzungen erleichtern die Erledigung der folgenden Aufgaben wesentlich. Hilfe bei der Zusammenstellung der Daten, die in diesem Artikel besprochen werden, finden Sie unter [Voraussetzungen](./prerequisites.md).
 
 ## <a name="initial-workload-prioritization"></a>Anfängliche Workloadpriorisierung
 

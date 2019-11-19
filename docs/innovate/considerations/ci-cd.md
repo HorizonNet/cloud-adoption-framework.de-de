@@ -8,18 +8,18 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8828b79aa27083b3b3e0a0188ac9e538089c52cf
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: ea3bcdc521a043affb71375442b9d5f6fe542fa1
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058580"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565689"
 ---
 # <a name="empower-adoption"></a>Unterstützen der Einführung
 
 Der ultimative Test der Innovation ist die Reaktion des Kunden auf Ihre Erfindung. Hat sich die Hypothese als wahr erwiesen? Verwenden Kunden die Lösung? Wird sie den Anforderungen des gewünschten Prozentsatzes von Benutzern gerecht? Das Wichtigste: Kommen sie wieder? Alle diese Fragen können erst nach der Bereitstellung der MVP-Lösung (Minimum Viable Product) gestellt werden. In diesem Artikel konzentrieren wir uns auf die Disziplin der Unterstützung der Einführung.
 
-## <a name="reducing-friction-to-adoption"></a>Reduzieren der Schwierigkeiten bei der Einführung
+## <a name="reduce-friction-that-affects-adoption"></a>Verringern von Reibungen, die sich auf die Einführung auswirken
 
 Es gibt einige Hauptreibungspunkte bei der Einführung, die durch eine Kombination aus Technologie und Prozessen minimiert werden können. Für Leser mit Kenntnissen von Continuous Integration (CI) und Continuous Deployment (CD) oder DevOps-Prozessen wird das Folgende sehr vertraut sein. Dieser Artikel soll einen Ausgangspunkt für Cloudeinführungsteams schaffen, der Innovation und Feedbackschleifen anregt. Langfristig könnten aus diesem Ausgangspunkt stabilere CI/CD- oder DevOps-Ansätze entstehen, wenn die Produkte und Teams ausgereift sind.
 

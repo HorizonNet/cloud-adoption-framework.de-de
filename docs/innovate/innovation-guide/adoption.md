@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2b2c4768cbe74363cd50b7730c3ba6b4078db14c
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: 98db83bf842fe4c293eba482572bffbdb50caed6
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058103"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565563"
 ---
 ::: zone target="docs"
 
@@ -36,7 +36,7 @@ Beim Erstellen einer innovativen neuen Lösung geht es nicht darum, dem Benutzer
 - **Quantitative Tests (Testen von Feedback):** Dieses Feedback misst die Aktionen, die wir erwarten.
 - **Qualitative Tests (Kundenfeedback):** Dieses Feedback informiert uns, was diese Metriken aus Sicht des Kunden bedeuten.
 
-Bevor Sie Feedbackschleifen integrieren, benötigen Sie ein freigegebenes Repository für Ihre Lösung. Ein zentralisiertes Repository bietet die Möglichkeit, das gesamte Feedback zu Ihrem Projekt aufzuzeichnen und darauf zu reagieren. [GitHub](https://github.com/) ist der zentrale Aufbewahrungsort für Open Source-Software. Dies ist auch eine der am häufigsten verwendeten Plattformen für das Hosting des Quellcoderepositorys für kommerziell entwickelte Apps. Der Artikel zum [Erstellen von GitHub-Repositorys](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml) kann Ihnen bei den ersten Schritten mit Ihrem Repository helfen.
+Bevor Sie Feedbackschleifen integrieren, benötigen Sie ein freigegebenes Repository für Ihre Lösung. Ein zentralisiertes Repository bietet die Möglichkeit, das gesamte Feedback zu Ihrem Projekt aufzuzeichnen und darauf zu reagieren. [GitHub](https://github.com) ist der zentrale Aufbewahrungsort für Open Source-Software. Dies ist auch eine der am häufigsten verwendeten Plattformen für das Hosting des Quellcoderepositorys für kommerziell entwickelte Apps. Der Artikel zum [Erstellen von GitHub-Repositorys](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml) kann Ihnen bei den ersten Schritten mit Ihrem Repository helfen.
 
 Jedes der folgenden Tools in Azure kann in Projekte integriert werden, die in GitHub gehostet werden (oder ist mit ihnen kompatibel):
 
@@ -126,7 +126,7 @@ Feedback wird in Form von User Storys im Backlog (oder Board) aufgezeichnet. Dor
 ### <a name="action"></a>Aktion
 
 Azure Boards und Azure Pipelines erfordern ein Portal, das von GitHub und Azure getrennt ist.
-Informationen zu den ersten Schritten mit beiden Tools finden Sie unter [Azure DevOps](https://dev.azure.com/).
+Informationen zu den ersten Schritten mit beiden Tools finden Sie unter [Azure DevOps](https://dev.azure.com).
 
 ::: zone-end
 
@@ -138,11 +138,11 @@ Informationen zu den ersten Schritten mit beiden Tools finden Sie unter [Azure D
 
 Zum Erstellen eines DevOps-Projekts gehen Sie folgendermaßen vor:
 
-1. Navigieren Sie zu **Azure DevOps-Projekt**.
+1. Navigieren zu **Azure DevOps Projects**.
 2. Wählen Sie **DevOps-Projekt erstellen** aus.
 3. Wählen Sie **Runtime, Framework und Dienst** aus.
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/microsoft.visualstudio%2Faccount%2Fproject]" submitText="Go to Azure DevOps Project" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/microsoft.visualstudio%2Faccount%2Fproject]" submitText="Go to Azure DevOps Projects" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -152,8 +152,8 @@ Zum Erstellen eines DevOps-Projekts gehen Sie folgendermaßen vor:
 
 Diese Artikel helfen Ihnen, Feedback zu zentralisieren und zu verwalten, indem Sie Azure Boards zusammen mit GitHub verwenden:
 
-- [Erste Schritte mit Azure Boards](https://docs.microsoft.com/azure/devops/boards/boards/kanban-quickstart?view=azure-devops)
-- [Azure Boards und GitHub](https://docs.microsoft.com/azure/devops/boards/boards/kanban-quickstart?view=azure-devops)
+- [Erste Schritte mit Azure Boards](https://docs.microsoft.com/azure/devops/boards/github?view=azure-devops)
+- [Azure Boards und GitHub](https://docs.microsoft.com/azure/devops/boards/get-started/?view=azure-devops)
 
 ## <a name="close-the-loop-with-pipelinestabpipelines"></a>[Schließen der Schleife mit Pipelines](#tab/pipelines)
 
@@ -163,7 +163,7 @@ Das Reagieren auf Feedback bedeutet möglicherweise nicht immer, dass die vom Ku
 
 Zum Anzeigen aktueller Bereitstellungen in ihrer Pipeline gehen Sie folgendermaßen vor:
 
-1. Navigieren Sie zu **App Service**.
+1. Navigieren Sie zu **App Services**.
 2. Wählen Sie die gewünschte Anwendung aus der Liste aus.
 3. Wählen Sie im Bereich „App Services“ im Abschnitt **Bereitstellung** die Option **Bereitstellungscenter** aus.
 
@@ -171,7 +171,7 @@ Zum Anzeigen aktueller Bereitstellungen in ihrer Pipeline gehen Sie folgenderma�
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2Fsites]" submitText="Go to App Service" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Web%2Fsites]" submitText="Go to App Services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

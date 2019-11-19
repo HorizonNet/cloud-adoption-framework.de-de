@@ -1,5 +1,5 @@
 ---
-title: Entscheidungen, die sich auf Migrationen auswirken
+title: Entscheidungen, die sich auf die Migration auswirken
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Wichtige Entscheidungen, die in Bezug auf den Migrationsprozess zu treffen sind
 author: BrianBlanchard
@@ -8,14 +8,14 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 01380bdd795fac0fc2740e4e41c3638a8b8d93f3
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 4bd04de2bd773e3fc02fbab5264ae60f275a8e7d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548311"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564580"
 ---
-# <a name="decisions-that-affect-migrations"></a>Entscheidungen, die sich auf Migrationen auswirken
+# <a name="decisions-that-affect-migration"></a>Entscheidungen, die sich auf die Migration auswirken
 
 Während der Migration wirken sich mehrere Faktoren auf Entscheidungen und Ausführungsaktivitäten aus. In diesem Artikel wird das zentrale Thema dieser Entscheidungen erläutert. Außerdem werden einige Fragen untersucht, die durch die Besprechung von Migrationsprinzipien in diesem Abschnitt des Leitfadens für das Framework für die Cloudeinführung führen.
 
@@ -24,26 +24,26 @@ Während der Migration wirken sich mehrere Faktoren auf Entscheidungen und Ausf�
 Das Ziel einer Einführung kann einen wesentlichen Einfluss auf die empfohlene Vorgehensweise zur Ausführung haben.
 
 - **Migration.** Dringende Geschäftsfaktoren, schnelle Einführung oder Kosteneinsparungen sind Beispiele für operative Ergebnisse. Diese Ergebnisse sind von zentraler Bedeutung für Bemühungen, die den Geschäftswert durch transitive Änderungen im IT-Bereich oder Betriebsmodelle steigern. Der Abschnitt „Migration“ des Framework für die Cloudeinführung konzentriert sich stark auf Geschäftsergebnisse, bei denen die Migration im Mittelpunkt steht.
-- **Anwendungsinnovationen.** Die Verbesserung des Kundenerlebnisses und der wachsende Marktanteil sind Beispiele für inkrementelle Ergebnisse. Die Ergebnisse resultieren aus einer Sammlung von inkrementellen Änderungen, die sich auf die Bedürfnisse und Wünsche der aktuellen Kunden konzentrieren.
-- **Datenbasierte Innovationen.** Neue Produkte oder Dienstleistungen, insbesondere solche, die sich durch die Leistungsfähigkeit von Daten ergeben, sind Beispiele für disruptive Ergebnisse. Diese Ergebnisse stammen von Experimenten und Vorhersagen, bei denen Daten zur Disruption des Status quo auf dem Markt verwendet werden.
+- **Anwendungsinnovationen:** Die Verbesserung des Kundenerlebnisses und der wachsende Marktanteil sind Beispiele für inkrementelle Ergebnisse. Die Ergebnisse resultieren aus einer Sammlung von inkrementellen Änderungen, die sich auf die Bedürfnisse und Wünsche der aktuellen Kunden konzentrieren.
+- **Datenbasierte Innovationen:** Neue Produkte oder Dienstleistungen, insbesondere solche, die sich durch die Leistungsfähigkeit von Daten ergeben, sind Beispiele für disruptive Ergebnisse. Diese Ergebnisse stammen von Experimenten und Vorhersagen, bei denen Daten zur Disruption des Status quo auf dem Markt verwendet werden.
 
 Kein Unternehmen würde sich nur eines dieser Ergebnisse zum Ziel setzen. Ohne Betriebsvorgänge gibt es keine Kunden und umgekehrt. Die Cloudeinführung ist da keine Ausnahmen. Unternehmen arbeiten in der Regel daran, jedes dieser Ergebnisse zu erzielen, aber bei dem Versuch, sich auf alle gleichzeitig zu konzentrieren, können die Bemühungen im Einzelnen zu gering ausfallen und zu verlangsamten Fortschritten bei den Arbeiten führen, die den größten Nutzen für Ihre Geschäftsanforderungen bringen könnten.
 
 Diese Voraussetzung bedeutet nicht, dass Sie eines dieser drei Ziele auswählen müssen, sondern dass Sie Ihrem Cloudstrategieteam und Cloudeinführungsteam helfen, eine Reihe von operativen Prioritäten als Leitfaden für die Ausführung in den nächsten drei bis sechs Monaten festzulegen. Zur Festlegung dieser Prioritäten wird eine Rangfolge für die drei einzelnen Optionen *von der wichtigsten* zu der *am wenigsten wichtigen* aufgestellt, da sie in Bezug zu den Maßnahmen stehen, zu denen dieses Team in den nächsten ein bis zwei Quartalen beitragen kann.
 
-### <a name="acting-on-migration-outcomes"></a>Maßnahmen für Migrationsergebnisse
+### <a name="act-on-migration-outcomes"></a>Maßnahmen für Migrationsergebnisse
 
 Wenn operative Ergebnisse den höchsten Stellenwert in der Liste haben, ist dieser Abschnitt des Framework für die Cloudeinführung bestens für Ihr Team geeignet. In diesem Abschnitt wird davon ausgegangen, dass Sie Geschwindigkeit und Kosteneinsparungen als primäre KPIs (Key Performance Indicators) priorisieren müssen. In diesem Fall wäre ein Migrationsmodell für die Einführung gut auf die Ergebnisse abgestimmt. Ein auf die Migration ausgerichtetes Modell basiert stark auf einer „Lift & Shift“-Migration von IaaS-Ressourcen (Infrastructure-as-a-Service), damit ein Rechenzentrum ausgeschöpft wird und Kosteneinsparungen erzielt werden. In einem solchen Modell kann eine Modernisierung stattfinden, ist aber ein sekundärer Schwerpunkt, bis das primäre Migrationsziel umgesetzt ist.
 
-### <a name="acting-on-application-innovations"></a>Maßnahmen für Anwendungsinnovationen
+### <a name="act-on-application-innovations"></a>Maßnahmen für Anwendungsinnovationen
 
 Wenn Marktanteil und Kundenerlebnis Ihre Hauptantriebe sind, bietet dieser Abschnitt des Framework für die Cloudeinführung möglicherweise nicht die beste Anleitung für die Maßnahmen Ihrer Teams. Anwendungsinnovationen erfordern einen Plan, der sich auf die Modernisierung und den Übergang von Workloads konzentriert, unabhängig von der zugrunde liegenden Infrastruktur. In einem solchen Fall können die Anleitungen in diesem Abschnitt informativ sein, sind aber möglicherweise nicht der beste Ansatz zum Treffen grundlegender Entscheidungen.
 
-### <a name="acting-on-data-innovations"></a>Maßnahmen für Dateninnovationen
+### <a name="act-on-data-innovations"></a>Maßnahmen für Dateninnovationen
 
 Wenn Daten, Experimente, Forschung und Entwicklung (R&D) oder neue Produkte in den nächsten sechs Monaten bei Ihnen Priorität haben, bietet dieser Abschnitt des Framework für die Cloudeinführung möglicherweise nicht die beste Anleitung für die Maßnahmen Ihrer Teams. Jede Maßnahme für Dateninnovationen kann von Leitlinien in Bezug auf die Migration vorhandener Quelldaten profitieren. Der breitere Fokus dieser Maßnahme würde jedoch auf Eingang und Integration zusätzlicher Datenquellen liegen. Eine Erweiterung dieser Anleitungen durch Vorhersagen und neue Erfahrungen ist viel wichtiger als die Migration von IaaS-Ressourcen.
 
-## <a name="balancing-the-portfolio"></a>Ausgewogenheit des Portfolios
+## <a name="balance-the-portfolio"></a>Ausgewogenheit des Portfolios
 
 In diesem Abschnitt des Framework für die Cloudeinführung wird eine Theorie aufgestellt, um den Lesern zu helfen, verschiedene Ansätze zur Handhabung von Änderungen in einem ausgewogenen Portfolio zu verstehen. Der Artikel zur [Ausgewogenheit des Portfolios](../../expanded-scope/balance-the-portfolio.md) ist ein Beispiel für einen erweiterten Umfang, der dazu beitragen soll, gemäß dieser Theorie zu handeln.
 

@@ -11,12 +11,12 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 3ac29e353f04370daf36e4c780fde8a14be45a37
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 95a2bf325615c7eb765ad747d0aad16f008e015d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71022217"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564017"
 ---
 # <a name="perimeter-networks"></a>Umkreisnetzwerke
 
@@ -27,9 +27,9 @@ Damit Umkreisnetzwerke effektiv sind, müssen eingehende Pakete über Sicherheit
 Umkreisnetzwerken nutzen die folgenden Azure-Funktionen und -Dienste:
 
 - [Virtuelle Netzwerke][virtual-networks], [benutzerdefinierte Routen][user-defined-routes] und [Netzwerksicherheitsgruppen][network-security-groups]
-- [Virtuelle Netzwerkgeräte][NVA] (NVAs)
+- [Virtuelle Netzwerkgeräte (NVAs)][NVA]
 - [Azure-Lastenausgleich][ALB]
-- [Azure Application Gateway][AppGW] und [Web Application Firewall][AppGWWAF] (WAF)
+- [Azure Application Gateway][AppGW] und [Web Application Firewall (WAF)][AppGWWAF]
 - [Öffentliche IP-Adressen][PIP]
 - [Azure Front Door][AFD] mit [Web Application Firewall][AFDWAF]
 - [Azure Firewall][AzFW]
@@ -42,9 +42,9 @@ Umkreisnetzwerken nutzen die folgenden Azure-Funktionen und -Dienste:
 
 In der Regel sind Ihre zentralen IT- und Sicherheitsteams für die Anforderungendefinition und den Betrieb Ihrer Umkreisnetzwerke verantwortlich.
 
-![Hub-and-Spoke-Beispielnetzwerk][7]
+![Beispiel zur Hub-and-Spoke-Netzwerktopologie][7]
 
-Die obige Abbildung zeigt ein Beispiel eines [Hub-and-Spoke-Netzwerks](./hub-spoke-network-topology.md), das die Durchsetzung von zwei Perimetern mit Zugriff auf das Internet und ein lokales Netzwerk implementiert. Beide Perimeter befinden sich im DMZ-Hub. Im DMZ-Hub kann das Umkreisnetzwerk für das Internet zentral hochskaliert werden, um viele Branchenanwendungen (LOBs) zu unterstützen, indem mehrere Farmen von WAFS und Azure-Firewallinstanzen verwendet werden, die zum Schutz der virtuellen Spokenetzwerks beitragen. Der Hub ermöglicht je nach Bedarf außerdem Konnektivität über VPN oder Azure ExpressRoute.
+Die obige Abbildung zeigt ein Beispiel einer [Hub-and-Spoke-Netzwerktopologie](./hub-spoke-network-topology.md), das die Durchsetzung von zwei Perimetern mit Zugriff auf das Internet und ein lokales Netzwerk implementiert. Beide Perimeter befinden sich im DMZ-Hub. Im DMZ-Hub kann das Umkreisnetzwerk für das Internet zentral hochskaliert werden, um viele Branchenanwendungen (LOBs) zu unterstützen, indem mehrere Farmen von WAFS und Azure-Firewallinstanzen verwendet werden, die zum Schutz der virtuellen Spokenetzwerks beitragen. Der Hub ermöglicht je nach Bedarf außerdem Konnektivität über VPN oder Azure ExpressRoute.
 
 ## <a name="virtual-networks"></a>Virtuelle Netzwerke
 
@@ -80,7 +80,7 @@ Verwenden Sie eine Gruppe von Azure Firewall-Instanzen (oder virtuelle Netzwerkg
 
 Azure Load Balancer kann auch die Integrität der verschiedenen Serverinstanzen testen. Wenn eine Instanz nicht auf einen Test reagiert, sendet der Lastenausgleich keinen weiteren Datenverkehr an die fehlerhafte Instanz.
 
-Als Beispiel für die Verwendung eines Hub-and-Spoke-Netzwerks kann ein externer Lastausgleich sowohl für den Hub als auch für die Spokes bereitgestellt werden. Im Hub leitet der Lastenausgleich Datenverkehr effizient an Dienste in den Spokes weiter. In den Spokes verwalten Lastenausgleichsmodule Anwendungsdatenverkehr.
+Als Beispiel für die Verwendung einer Hub-and-Spoke-Netzwerktopologie kann ein externer Lastausgleich sowohl für den Hub als auch für die Spokes bereitgestellt werden. Im Hub leitet der Lastenausgleich Datenverkehr effizient an Dienste in den Spokes weiter. In den Spokes verwalten Lastenausgleichsmodule Anwendungsdatenverkehr.
 
 ## <a name="azure-front-door-service"></a>Azure Front Door Service
 

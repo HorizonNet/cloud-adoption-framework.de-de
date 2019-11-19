@@ -8,39 +8,64 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: b9c868efb6f35472552778b583b638da59069edd
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: d86bebc3a993443c4dded4b1a0f23ff518147bd4
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683409"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565836"
 ---
 # <a name="tools-to-democratize-data-in-azure"></a>Tools zum Demokratisieren von Daten in Azure
 
-Wie bereits im Theorieartikel [Demokratisieren von Daten](../considerations/data.md) beschrieben, können viele Innovationen mit minimalem technischen Aufwand realisiert werden. Es gibt unzählige Beispiele für bedeutende Innovationen, die kaum mehr als Rohdaten erfordern. Bei der Demokratisierung von Daten geht es darum, Ihre Kunden mit möglichst geringen Investitionen in die Lage zu versetzen, anhand von Daten Nutzen aus vorhandenem Wissen zu ziehen. Der Einstieg mithilfe von Daten ist ein schneller Weg zum Testen einer Hypothese, bevor eine Ausweitung auf umfassendere und kostspieligere digitale Erfindungen erfolgt. Wenn die Hypothese immer genauer definiert wird und die Erfindungen in größerem Maßstab eingeführt werden, kann mithilfe der nachstehend genannten Prozesse die operative Unterstützung der Innovation vorbereitet werden.
+Wie bereits im Konzeptartikel [Demokratisieren von Daten](../considerations/data.md) beschrieben, können viele Innovationen mit geringem technischen Aufwand realisiert werden. Viele wichtige Innovationen erfordern kaum mehr als Rohdaten. Bei der Demokratisierung von Daten geht es darum, so wenig Ressourcen wie möglich zu investieren, um Ihre Kunden zu binden, die Daten nutzen, um von ihrem vorhandenen Wissen zu profitieren.
+
+Der Einstieg mithilfe von Daten ist ein schneller Weg zum Testen einer Hypothese, bevor eine Ausweitung auf umfassendere und kostspieligere digitale Erfindungen erfolgt. Wenn Sie die Hypothese weiter verfeinern und damit beginnen, die Erfindungen bedarfsorientiert zu übernehmen, werden Ihnen die folgenden Prozesse helfen, sich auf die operative Unterstützung der Innovation vorzubereiten.
 
 ![Cloud Adoption Framework-Ansatz zum Demokratisieren von Daten](../../_images/innovate/democratize-data.png)
 
 ## <a name="alignment-to-the-methodology"></a>Ausrichtung auf die Methodik
 
-Diese Art der digitalen Erfindung kann über jede unten genannte Phase beschleunigt werden (siehe auch Abbildung oben). Technische Leitfäden zum Beschleunigen digitaler Erfindungen werden im Inhaltsverzeichnis links aufgeführt. Diese Artikel wurden in Abstimmung auf die gleichen Phasen gruppiert, um die Inhalte an der Gesamtmethodik auszurichten:
+Diese Art der digitalen Erfindung kann durch jede Phase der folgenden Prozesse beschleunigt werden, wie in der vorangehenden Abbildung gezeigt. Technische Leitfäden zum Beschleunigen digitaler Erfindungen werden links im Inhaltsverzeichnis auf dieser Seite aufgeführt. Diese Artikel sind nach Phasen geordnet, um den Leitfaden an der Gesamtmethodik auszurichten.
 
 - **Freigeben von Daten:** Der erste Schritt beim Demokratisieren von Daten besteht darin, Daten zugänglich zu machen.
 - **Steuern von Daten:** Stellen Sie vor der Freigabe sicher, dass vertrauliche Daten geschützt, nachverfolgt und gesteuert werden können.
-- **Zentralisieren von Daten:** Gelegentlich ist es notwendig, eine zentrale Plattform für Datenfreigabe und -steuerung bereitzustellen.
+- **Zentralisieren von Daten:** Gelegentlich müssen Sie eine zentrale Plattform für Datenfreigabe und -steuerung bereitstellen.
 - **Sammeln von Daten:** Durch Migration, Integration, Erfassung und Virtualisierung können vorhandene Daten zentralisiert, gesteuert und freigegeben werden.
 
-Es wird empfohlen, dass Cloudeinführungsteams nur so viele Daten verwenden wie erforderlich, um bei jeder Iteration den Schwerpunkt stärker auf die Kundenanforderungen als auf die Architektur zu legen. Die Zurückstellung technischer Herausforderungen zugunsten von Kundenanforderungen beschleunigt die Validierung Ihrer Hypothese. Aus diesem Grund sind sämtliche Leitfäden auf die vier oben genannten Prozesse ausgerichtet, von der höchsten Auswirkung auf Kunden bis zur höchsten technischen Auswirkung. In allen Themen werden vielfältige Möglichkeiten aufgezeigt, mit denen Azure Ihre Fähigkeit zum [Erstellen von Lösungen mit Blick auf die Kundenanforderungen](../considerations/build.md) verbessern kann.
+Bei jeder Iteration sollten Cloudeinführungsteams nur so viele Daten verwenden wie erforderlich, um den Schwerpunkt stärker auf die Kundenanforderungen als auf die Architektur zu legen. Die Zurückstellung technischer Herausforderungen zugunsten von Kundenanforderungen beschleunigt die Validierung Ihrer Hypothese.
+
+Alle Leitfäden sind den vier vorangegangenen Prozessen zugeordnet. Die Anleitung reicht von der größten Auswirkung auf den Kunden bis zur größten technischen Auswirkung. In jedem Prozess finden Sie Anleitungen zu verschiedenen potenziellen Möglichkeiten, wie Azure Ihre Fähigkeit zum [Erstellen mit Blick auf die Kundenanforderungen](../considerations/build.md) beschleunigen kann.
 
 ## <a name="toolchain"></a>Toolkette
 
-In Azure werden häufig die folgenden Tools genutzt, um digitale Erfindungen in allen oben genannten Phasen zu beschleunigen: Power BI, Azure Data Catalog, Azure SQL Data Warehouse, Cosmos DB, Azure Databases for PostgreSQL, MySQL, MariaDB, PostgreSQL Hyperscale, Azure Data Lake, Azure Data Migration Service, Azure SQL-Datenbank (mit oder ohne verwaltete Instanzen), Azure Data Factory, Azure Stream Analytics, SQL Server Integration Services, Azure Stack, Azure SQL Stretch Database, StorSimple, Azure Files, File Sync und Polybase.
+In Azure werden häufig die folgenden Tools genutzt, um digitale Erfindungen in den vorhergehenden Phasen zu beschleunigen:
 
-Wenn die Erfindung für eine Einführung in größerem Maßstab bereit ist, erfordern alle Aspekte jeder Lösung eine Verfeinerung und technische Reife. Hierbei werden wahrscheinlich weitere dieser Dienste benötigt. Verwenden Sie vorerst das Inhaltsverzeichnis links, um Hilfestellung zu Azure-Tools zu erhalten, die für den Prozess zum Testen Ihrer Hypothese erforderlich sind.
+- Power BI
+- Azure Data Catalog
+- Azure SQL Data Warehouse
+- Azure Cosmos DB
+- Azure Database for PostgreSQL
+- Azure Database for MySQL
+- Azure Database for MariaDB
+- Azure Database for PostgreSQL Hyperscale
+- Azure Data Lake
+- Azure Database Migration Service
+- Azure SQL-Datenbank mit oder ohne verwaltete Instanzen
+- Azure Data Factory
+- Azure Stream Analytics
+- SQL Server Integration Services
+- Azure Stack
+- SQL Server Stretch Database
+- Microsoft Azure StorSimple
+- Azure Files
+- Azure-Dateisynchronisierung
+- PolyBase
+
+Wenn die Erfindung für eine Einführung in größerem Maßstab bereit ist, erfordern alle Aspekte jeder Lösung eine Verfeinerung und technische Reife. In diesem Fall werden wahrscheinlich weitere dieser Dienste erforderlich sein. Verwenden Sie das Inhaltsverzeichnis auf der linken Seite für die Anleitung zu den Azure-Tools, die für Ihren Prozess zum Testen der Hypothese relevant sind.
 
 ## <a name="get-started"></a>Erste Schritte
 
-Das Inhaltsverzeichnis auf der linken Seite enthält viele Artikel zum Einstieg mit den einzelnen Tools in dieser Toolkette.
+Im Inhaltsverzeichnis auf der linken Seite werden viele Artikel beschrieben. Diese Artikel helfen Ihnen bei den ersten Schritten mit den einzelnen Tools in dieser Toolkette.
 
 > [!NOTE]
 > Mit einigen Links verlassen Sie das Cloud Adoption Framework und erhalten weitergehende Informationen.

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 17087228df93164a697b86c7c3934278a55bf91b
-ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
+ms.openlocfilehash: fee983ba2379bb84d56f23139bba987a56e5c54d
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915021"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564709"
 ---
 # <a name="rationalize-the-digital-estate"></a>Rationalisieren der digitalen Ressourcen
 
@@ -28,7 +28,7 @@ Die Rationalisierung ist leicht verständlich, wenn Sie sich den herkömmlichen 
 
 **Quantitative Analyse:** In der Entscheidungsstruktur bilden quantitative Fragen die Grundlage der ersten Entscheidungsebene. Häufige Fragen umfassen Folgendes: Wird die Ressource derzeit genutzt? Wenn ja, ist sie optimiert, und hat sie die richtige Größe? Welche Abhängigkeiten bestehen zwischen Ressourcen? Diese Fragen sind für die Klassifizierung des Bestands von entscheidender Bedeutung.
 
-**Qualitative Analyse:** Für die nächsten Entscheidungen wird menschliche Intelligenz in Form einer qualitativen Analyse benötigt. Oft gelten die hier gestellten Fragen nur speziell für die Lösung und können nur von Projektbeteiligten des Unternehmens und Hauptbenutzern beantwortet werden. Diese Entscheidungen verzögern den Prozess normalerweise, wodurch die Dinge erheblich verlangsamt werden. Bei dieser Analyse werden in der Regel 40 bis 80 Vollzeitmitarbeiter-Stunden pro Anwendung verbraucht.
+**Qualitative Analyse:** Für die nächsten Entscheidungen wird menschliche Intelligenz in Form einer qualitativen Analyse benötigt. Oft gelten die hier gestellten Fragen nur speziell für die Lösung und können nur von Beteiligten des Unternehmens und Hauptbenutzern beantwortet werden. Diese Entscheidungen verzögern den Prozess normalerweise, wodurch die Dinge erheblich verlangsamt werden. Bei dieser Analyse werden in der Regel 40 bis 80 Vollzeitmitarbeiter-Stunden pro Anwendung verbraucht.
 
 Eine Anleitung zum Erstellen einer Liste mit Fragen zur qualitativen Analyse finden Sie unter [Ansätze für die Planung digitaler Ressourcen](./approach.md).
 
