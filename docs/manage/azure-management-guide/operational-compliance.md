@@ -10,28 +10,28 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7073df6b697da49429d4086d9f8f3f113583e52d
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: b5a94ab41bff26371621acc5e62ae19d9fd02e5c
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557090"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565483"
 ---
 # <a name="operational-compliance-in-azure"></a>Betriebsbezogene Compliance in Azure
 
-Die betriebsbezogene Compliance ist die zweite Disziplin in jeder Cloudverwaltungsbaseline.
+Die _betriebsbezogene Compliance_ ist die zweite Disziplin in jeder Cloudverwaltungsbaseline.
 
 ![Baseline zur Cloudverwaltung](../../_images/manage/management-baseline.png)
 
 Durch das Verbessern der betriebsbezogenen Compliance reduziert sich die Wahrscheinlichkeit eines Ausfalls durch Konfigurationsabweichungen oder die Wahrscheinlichkeit von Sicherheitsrisiken durch nicht ordnungsgemäß gepatchte Systeme.
 
-In der folgenden Tabelle wird für jede Umgebung auf Unternehmensniveau der empfohlene Mindestwert für die einzelnen Verwaltungsbaselines aufgeführt.
+In dieser Tabelle wird für jede Umgebung auf Unternehmensniveau der empfohlene Mindestwert für eine Verwaltungsbaseline aufgeführt.
 
 |Prozess  |Tool  |Zweck  |
 |---------|---------|---------|
 |Patchverwaltung|Updateverwaltung|Verwaltung und Zeitplanung von Updates|
 |Durchsetzung von Richtlinien|Azure Policy|Richtliniendurchsetzung zum Sicherstellen der Compliance von Umgebung und Gastsystemen|
-|Umg.- Konfiguration|Azure Blueprint|Automatisierte Compliance für Kerndienste|
+|Umgebungskonfiguration|Azure Blueprint|Automatisierte Compliance für Kerndienste|
 
 ::: zone target="docs"
 
@@ -48,26 +48,29 @@ Verwenden Sie für Computer, die mit der Updateverwaltung verwaltet werden, die 
 
 - Microsoft Monitoring Agent (MMA) für Windows oder Linux
 - PowerShell Desired State Configuration (DSC) für Linux
-- Automation Hybrid Runbook Worker
+- Azure Automation – Hybrid Runbook Worker
 - Microsoft Update oder Windows Server Update Services (WSUS) für Windows-Computer
 
 Weitere Informationen finden Sie unter [Updateverwaltungslösung](https://docs.microsoft.com/azure/automation/automation-update-management).
 
 > [!WARNING]
-> Bevor Sie die Updateverwaltung verwenden, müssen Sie VMs oder ein ganzes Abonnement in Log Analytics und Azure Automation integrieren.
-> Es gibt zwei Ansätze für das Onboarding; einer davon muss befolgt werden, bevor Sie mit der Updateverwaltung fortfahren.
+> Bevor Sie die Updateverwaltung verwenden, müssen Sie virtuelle Computer oder ein ganzes Abonnement in Log Analytics und Azure Automation integrieren.
+>
+> Es gibt zwei Ansätze für das Onboarding:
 >
 > - [Einzelne VM](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-single-vm)
 > - [Ganzes Abonnement](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-at-scale)
+>
+> Sie sollten einem folgen, bevor Sie mit der Updateverwaltung fortfahren.
 
 ### <a name="manage-updates"></a>Verwalten von Updates
 
 So wenden Sie eine Richtlinie auf eine Ressourcengruppe an:
 
 1. Wechseln Sie zu [Azure Automation](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts).
-2. Wählen Sie eines der aufgelisteten **Automation-Konten** aus.
-3. Suchen Sie in der Portalnavigation den Abschnitt **Konfigurationsverwaltung**.
-4. „Inventar“, „Change Management“ und „State Configuration“ können jeweils zum Steuern des Zustands und der betriebsbezogenen Compliance der verwalteten VMs verwendet werden.
+1. Wählen Sie **Automation-Konten** und dann eines der aufgeführten Konten aus.
+1. Wechseln Sie zu **Konfigurationsverwaltung**.
+1. **Inventar**, **Change Management** und **State Configuration** können zum Steuern des Zustands und der betriebsbezogenen Compliance der verwalteten VMs verwendet werden.
 
 ::: zone target="chromeless"
 
@@ -90,7 +93,7 @@ So wenden Sie eine Richtlinie auf eine Ressourcengruppe an:
 
 ::: zone-end
 
-Azure Policy wird während der gesamten Governanceprozesse eingesetzt. Es ist jedoch auch in Cloudverwaltungsprozessen äußerst wertvoll. Mit Azure Policy können Sie nicht nur Azure-Ressourcen überprüfen und korrigieren, sondern auch die Einstellungen auf einem Computer überprüfen. Für die Überprüfung verwenden Sie die Erweiterung und den Client Guest Configuration. Die Erweiterung überprüft über den Client u. a. die folgenden Einstellungen:
+Azure Policy wird während der gesamten Governanceprozesse eingesetzt. Es ist auch in Cloudverwaltungsprozessen äußerst wertvoll. Mit Azure Policy können Sie Azure-Ressourcen überprüfen und korrigieren sowie Einstellungen auf einem Computer überprüfen. Für die Überprüfung verwenden Sie die Erweiterung und den Client Guest Configuration. Die Erweiterung überprüft über den Client u. a. die folgenden Einstellungen:
 
 - Betriebssystemkonfiguration
 - Die Konfiguration oder das Vorhandensein der Anwendung
@@ -134,7 +137,9 @@ Weitere Informationen finden Sie unter:
 
 ::: zone-end
 
-Azure Blueprints ermöglicht es Cloudarchitekten und zentralen IT-Gruppen, eine wiederholbare Gruppe von Azure-Ressourcen zu definieren, mit der die Standards, Muster und Anforderungen einer Organisation implementiert und erzwungen werden. Azure Blueprints ermöglicht es Entwicklungsteams, schnell neue Umgebungen zu erstellen und einzurichten und darauf zu vertrauen, dass sie im Rahmen der organisatorischen Compliance mithilfe einer Reihe von integrierten Komponenten (z.B. dem Netzwerk) arbeiten, um die Entwicklung und Bereitstellung zu beschleunigen.
+Mit Azure Blueprints können Cloudarchitekten und zentrale IT-Gruppen einen wiederholbaren Satz von Azure-Ressourcen definieren. Diese Ressourcen implementieren die Standards, Muster und Anforderungen eines Unternehmens und halten diese ein.
+
+Mit Azure Blueprints können Entwicklungsteams schnell neue Umgebungen erstellen und aufrüsten. Teams können sich auch darauf verlassen, dass die Erstellung im Rahmen der Compliance in Organisationen erfolgt. Dazu verwenden sie eine Reihe von integrierten Komponenten, z. B. Netzwerke, um die Entwicklung und Bereitstellung zu beschleunigen.
 
 Blaupausen sind eine deklarative Möglichkeit zum Orchestrieren der Bereitstellung mehrerer Ressourcenvorlagen und anderer Artefakte wie etwa:
 
@@ -143,7 +148,7 @@ Blaupausen sind eine deklarative Möglichkeit zum Orchestrieren der Bereitstellu
 - Azure Resource Manager-Vorlagen.
 - Ressourcengruppen.
 
-Durch Anwenden einer Blaupause können Sie die betriebsbezogene Compliance in einer Umgebung durchsetzen, falls dies noch nicht vom Cloudgovernanceteam übernommen wurde.
+Durch Anwenden einer Blaupause können Sie die betriebsbezogene Compliance in einer Umgebung durchsetzen, wenn diese Durchsetzung nicht vom Cloudgovernanceteam durchgeführt wird.
 
 ### <a name="create-a-blueprint"></a>Erstellen einer Blaupause
 
@@ -152,11 +157,12 @@ So erstellen Sie eine Blaupause
 ::: zone target="chromeless"
 
 1. Wechseln Sie zu **Blaupausen – Erste Schritte**.
-1. Wählen Sie im Abschnitt **Blaupause erstellen** die Option **Erstellen** aus.
+1. Wählen Sie im Bereich **Blaupause erstellen** die Option **Erstellen** aus.
 1. Filtern Sie die Liste mit den Blaupausen, um die gewünschte Blaupause auszuwählen.
-1. Geben Sie unter **Name der Blaupause** den Namen ein, und wählen Sie den entsprechenden **Definitionsspeicherort** aus.
-1. Klicken Sie unten auf der Seite auf **Weiter: Artefakte >>** , und sehen Sie sich die Artefakte an, die in der Blaupause enthalten sind.
-1. Klicken Sie auf **Entwurf speichern**.
+1. Geben Sie im Feld **Name der Blaupause** den Namen der Blaupause ein.
+1. Wählen Sie **Speicherort der Definition** und dann den entsprechenden Speicherort aus.
+1. Wählen Sie **Weiter: Artefakte >>** , und sehen Sie sich die Artefakte an, die in der Blaupause enthalten sind.
+1. Wähen Sie **Entwurf speichern** aus.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted]" submitText="Create a blueprint" :::
 
@@ -165,11 +171,12 @@ So erstellen Sie eine Blaupause
 ::: zone target="docs"
 
 1. Wechseln Sie zu [Blaupausen – Erste Schritte](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted).
-1. Wählen Sie im Abschnitt **Blaupause erstellen** die Option **Erstellen** aus.
+1. Wählen Sie im Bereich **Blaupause erstellen** die Option **Erstellen** aus.
 1. Filtern Sie die Liste mit den Blaupausen, um die gewünschte Blaupause auszuwählen.
-1. Geben Sie unter **Name der Blaupause** den Namen ein, und wählen Sie den entsprechenden **Definitionsspeicherort** aus.
-1. Klicken Sie unten auf der Seite auf **Weiter: Artefakte >>** , und sehen Sie sich die Artefakte an, die in der Blaupause enthalten sind.
-1. Klicken Sie auf **Entwurf speichern**.
+1. Geben Sie im Feld **Name der Blaupause** den Namen der Blaupause ein.
+1. Wählen Sie **Speicherort der Definition** und dann den entsprechenden Speicherort aus.
+1. Wählen Sie **Weiter: Artefakte >>** , und sehen Sie sich die Artefakte an, die in der Blaupause enthalten sind.
+1. Wähen Sie **Entwurf speichern** aus.
 
 ::: zone-end
 
@@ -182,7 +189,9 @@ So veröffentlichen Sie Blaupausenartefakte für Ihr Abonnement:
 1. Wechseln Sie zu **Blaupausen > Blaupausendefinitionen**.
 1. Wählen Sie die Blaupause aus, die Sie in den vorherigen Schritten erstellt haben.
 1. Sehen Sie sich die Blaupausendefinition an, und wählen Sie die Option **Blaupause veröffentlichen**.
-1. Geben Sie eine **Version** (z. B. „1.0“) sowie **Änderungshinweise** an, und wählen Sie anschließend **Veröffentlichen** aus.
+1. Geben Sie in das Feld **Version** eine Version wie „1.0“ ein.
+1. Geben Sie im Feld **Änderungshinweise** Ihre Hinweise ein.
+1. Wählen Sie **Veröffentlichen**.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints]" submitText="Blueprint definitions" :::
 
@@ -193,7 +202,11 @@ So veröffentlichen Sie Blaupausenartefakte für Ihr Abonnement:
 1. Wechseln Sie zu [Blaupausen > Blaupausendefinitionen](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
 1. Wählen Sie die Blaupause aus, die Sie in den vorherigen Schritten erstellt haben.
 1. Sehen Sie sich die Blaupausendefinition an, und wählen Sie die Option **Blaupause veröffentlichen**.
-1. Geben Sie eine **Version** (z. B. „1.0“) sowie **Änderungshinweise** an, und wählen Sie anschließend **Veröffentlichen** aus.
+1. Geben Sie in das Feld **Version** eine Version wie „1.0“ ein.
+1. Geben Sie im Feld **Änderungshinweise** Ihre Hinweise ein.
+1. Wählen Sie **Veröffentlichen**.
+
+<!-- markdownlint-disable MD024 -->
 
 ### <a name="learn-more"></a>Weitere Informationen
 

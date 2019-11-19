@@ -10,27 +10,27 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a79164435772f571849d0a836f43b53ce3bca087
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 83ac1abd6ce35b62f64722d101f599726c7b26b3
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72557005"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565412"
 ---
 # <a name="protect-and-recover-in-azure"></a>Schutz und Wiederherstellung in Azure
 
-Schutz und Wiederherstellung repräsentieren die dritte und letzte Disziplin in einer Baseline zur Cloudverwaltung.
+_Schutz und Wiederherstellung_ repräsentieren die dritte und letzte Disziplin in einer Baseline zur Cloudverwaltung.
 
 ![Baseline zur Cloudverwaltung](../../_images/manage/management-baseline.png)
 
-Im vorangegangenen Artikel „Betriebsbezogene Compliance“ bestand das Ziel darin, die Wahrscheinlichkeit einer Unterbrechung des Geschäftsbetriebs zu verringern. Der vorliegende Artikel „Schutz und Wiederherstellung“ zielt darauf ab, die Dauer und Auswirkung von Ausfällen zu verringern, die nicht vermeidbar sind.
+In [Betriebsbezogene Compliance in Azure](./operational-compliance.md) bestand das Ziel darin, die Wahrscheinlichkeit einer Unterbrechung des Geschäftsbetriebs zu verringern. Der aktuelle Artikel zielt darauf ab, die Dauer und Auswirkung von Ausfällen zu verringern, die nicht vermeidbar sind.
 
-In der folgenden Tabelle wird für jede Umgebung auf Unternehmensniveau der empfohlene Mindestwert für die einzelnen Verwaltungsbaselines aufgeführt.
+In dieser Tabelle wird für jede Umgebung auf Unternehmensniveau der empfohlene Mindestwert für die einzelnen Verwaltungsbaselines aufgeführt:
 
 |Prozess  |Tool  |Zweck  |
 |---------|---------|---------|
-|Schützen von Daten|Azure Backup|Sicherung von Daten und VMs in der Cloud|
-|Schutz der Umgebung|Azure Security Center|
+|Schützen von Daten|Azure Backup|Sichern Sie Daten und virtuelle Computer in der Cloud.|
+|Schutz der Umgebung|Azure Security Center|Erhöhen Sie die Sicherheit und bieten Sie erweiterten Schutz vor Bedrohungen für Ihre Hybrid-Workloads.|
 
 ::: zone target="docs"
 
@@ -43,13 +43,13 @@ In der folgenden Tabelle wird für jede Umgebung auf Unternehmensniveau der empf
 
 ::: zone-end
 
-Azure Backup ist der Azure-basierte Dienst, den Sie zum Sichern (bzw. Schützen) und Wiederherstellen Ihrer Daten in der Microsoft-Cloud verwenden können. Azure Backup ersetzt Ihre vorhandene lokale bzw. standortexterne Lösung durch eine zuverlässige, sichere und wirtschaftliche Cloudlösung. Mithilfe von Azure Backup ist es außerdem möglich, lokale Ressourcen mithilfe einer konsistenten Lösung zu schützen und wiederherzustellen.
+Mit Azure Backup können Sie Ihre Daten in der Microsoft-Cloud sichern, schützen und wiederherstellen. Azure Backup ersetzt Ihre vorhandene lokale bzw. standortexterne Sicherungslösung durch eine cloudbasierte Lösung. Diese neue Lösung ist zuverlässig, sicher und kostengünstig. Azure Backup kann auch dazu beitragen, lokale Ressourcen durch eine einheitliche Lösung zu schützen und wiederherzustellen.
 
 ### <a name="enable-backup-for-an-azure-vm"></a>Aktivieren der Sicherung für eine Azure-VM
 
 1. Wählen Sie im Azure-Portal **Virtuelle Computer** und dann die VM aus, die Sie replizieren möchten.
-1. Wählen Sie unter **Vorgänge** die Option **Sicherung** aus.
-1. Erstellen Sie einen Recovery Services-Tresor, oder wählen Sie einen vorhandenen Tresor aus.
+1. Wählen Sie im Bereich **Vorgänge** die Option **Sicherung** aus.
+1. Erstellen Sie einen Azure Recovery Services-Tresor, oder wählen Sie einen vorhandenen Tresor aus.
 1. Wählen Sie **Neue Richtlinie erstellen (oder bearbeiten)** aus.
 1. Konfigurieren Sie den Zeitplan und die Aufbewahrungsdauer.
 1. Klicken Sie auf **OK**.
@@ -76,12 +76,11 @@ Azure Backup ist der Azure-basierte Dienst, den Sie zum Sichern (bzw. Schützen)
 
 Azure Site Recovery ist eine wesentliche Komponente in Ihrer Strategie für die Notfallwiederherstellung.
 
-Der Azure Site Recovery-Dienst ermöglicht es Ihnen, virtuelle Computer und Workloads, die in einer primären Azure-Region gehostet werden, in einer Kopie in einer sekundären Region zu replizieren. Wenn es in Ihrer primären Region zu einem Ausfall kommt, können Sie ein Failover zur Kopie in der sekundären Region ausführen und von dort aus weiter auf Ihre Anwendungen und Dienste zugreifen. Dieser proaktive Ansatz für die Wiederherstellung kann die Wiederherstellungszeiten erheblich verringern. Wenn die Wiederherstellungsumgebung nicht mehr benötigt wird, kann für den Produktionsdatenverkehr ein Fallback auf die ursprüngliche Umgebung durchgeführt werden.
+Site Recovery repliziert virtuelle Computer und Workloads, die in einer primären Azure-Region gehostet werden. Es repliziert sie in eine Kopie, die in einer sekundären Region gehostet wird. Wenn ein Ausfall in Ihrer primären Region auftritt, führen Sie ein Failover auf die in der sekundären Region aktiven Kopie aus. Von dort aus können Sie dann weiter auf Ihre Anwendungen und Dienste zugreifen. Dieser proaktive Ansatz für die Wiederherstellung kann die Wiederherstellungszeiten erheblich verringern. Wenn die Wiederherstellungsumgebung nicht mehr benötigt wird, kann für den Produktionsdatenverkehr ein Fallback auf die ursprüngliche Umgebung durchgeführt werden.
 
-### <a name="replicate-an-azure-vm-to-another-region-with-site-recovery-service"></a>Replizieren einer Azure-VM in einer anderen Region mit dem Site Recovery-Dienst
+### <a name="replicate-an-azure-vm-to-another-region-with-site-recovery"></a>Replizieren einer Azure-VM in einer anderen Region mit Site Recovery
 
-Die folgenden Schritte beschreiben das Verfahren zur Verwendung des Site Recovery-Diensts zum Replizieren einer Azure-VM in einer anderen Region (Azure-to-Azure):
-
+Die folgenden Schritte beschreiben das Verfahren zur Verwendung von Site Recovery für die Azure-zu-Azure-Replikation, d. h. zum Replizieren einer Azure-VM in eine andere Region.
 >
 > [!TIP]
 > Abhängig von Ihrem Szenario können sich die genauen Schritte leicht unterscheiden.
@@ -90,9 +89,9 @@ Die folgenden Schritte beschreiben das Verfahren zur Verwendung des Site Recover
 ### <a name="enable-replication-for-the-azure-vm"></a>Aktivieren der Replikation für die Azure-VM
 
 1. Wählen Sie im Azure-Portal **Virtuelle Computer** und dann die VM aus, die Sie replizieren möchten.
-1. Wählen Sie unter **Vorgänge** die Option **Notfallwiederherstellung** aus.
+1. Wählen Sie im Bereich **Vorgänge** die Option **Notfallwiederherstellung** aus.
 1. Wählen Sie unter **Notfallwiederherstellung konfigurieren** > **Zielregion** die Zielregion für die Replikation aus.
-1. Akzeptieren Sie für diesen Schnellstart die anderen Standardeinstellungen.
+1. Übernehmen Sie für diesen Schnellstart die Standardwerte für alle anderen Optionen.
 1. Wählen Sie **Replikation aktivieren** aus, um einen Auftrag zum Aktivieren der Replikation für die VM zu starten.
 
 ::: zone target="chromeless"
@@ -106,7 +105,7 @@ Die folgenden Schritte beschreiben das Verfahren zur Verwendung des Site Recover
 Nach Abschluss des Replikationsauftrags können Sie den Replikationsstatus und die Replikationsintegrität überprüfen und die Bereitstellung testen.
 
 1. Wählen Sie im VM-Menü die Option **Notfallwiederherstellung** aus.
-2. Überprüfen Sie die Replikationsintegrität, die erstellten Wiederherstellungspunkte sowie die Quell- und Zielregionen auf der Karte.
+1. Überprüfen Sie die Replikationsintegrität, die erstellten Wiederherstellungspunkte sowie die Quell- und Zielregionen auf der Karte.
 
 ::: zone target="chromeless"
 

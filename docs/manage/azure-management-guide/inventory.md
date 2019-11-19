@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8b7902910de3df729524b1625fe83b0681eeef5b
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 84efac562647d88235dbcecbb2078e632c1c0341
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72556784"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73565463"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Bestand und Transparenz in Azure
 
@@ -23,16 +23,16 @@ _Bestand und Transparenz_ ist die erste von drei Disziplinen in einer Baseline z
 
 ![Baseline zur Cloudverwaltung](../../_images/manage/management-baseline.png)
 
-Diese Disziplin steht an erster Stelle, da es unerlässlich ist, korrekte Betriebsdaten zu sammeln, wenn Entscheidungen über den Betrieb getroffen werden sollen. Cloudverwaltungsteams müssen wissen, was verwaltet wird und wie gut diese Ressourcen eingesetzt werden. Dieser Artikel beschreibt die verschiedenen Tools, die sowohl den Bestand erfassen als auch Einblicke in den Ausführungszustand des Bestands geben.
+Diese Disziplin steht an erster Stelle, da das Sammeln von korrekten Betriebsdaten entscheidend ist, wenn Sie Entscheidungen über den Betrieb treffen. Cloudverwaltungsteams müssen wissen, was verwaltet wird und wie gut diese Ressourcen eingesetzt werden. Dieser Artikel beschreibt die verschiedenen Tools, die sowohl den Bestand erfassen als auch Einblicke in den Ausführungszustand des Bestands geben.
 
-In der folgenden Tabelle wird für jede Umgebung auf Unternehmensniveau der empfohlene Mindestwert für die einzelnen Verwaltungsbaselines aufgeführt.
+In der folgenden Tabelle wird für jede Umgebung auf Unternehmensniveau der empfohlene Mindestwert für eine Verwaltungsbaseline aufgeführt.
 
 |Prozess  |Tool  |Zweck  |
 |---------|---------|---------|
 |Überwachen der Integrität von Azure-Diensten|Azure Service Health|Integrität, Leistung und Diagnose für Dienste, die in Azure ausgeführt werden|
 |Zentralisierung von Protokollen|Log Analytics|Zentrale Protokollierung für jegliche Transparenzzwecke|
 |Zentralisierung der Überwachung|Azure Monitor|Zentrale Überwachung von Betriebsdaten und Trends|
-|Nachverfolgen von VM-Bestand und -Änderungen|Azure-Dienst für Änderungsnachverfolgung und Bestand|Bestandsaufnahme von VMs und Überwachen von Änderungen auf Ebene des Gastbetriebssystems|
+|Nachverfolgen von Bestand und Änderungen für virtuelle Computer|Azure-Änderungsnachverfolgung und Bestand|Bestandsaufnahme von VMs und Überwachen von Änderungen auf Ebene des Gastbetriebssystems|
 |Dienstintegrität|Azure-Aktivitätsprotokoll|Überwachen von Änderungen auf Abonnementebene|
 |Überwachung des Gastbetriebssystems|Azure Monitor für VMs|Überwachen von Änderungen und der Leistung von VMs|
 |Netzwerküberwachung|Azure Network Watcher|Überwachen von Netzwerkänderungen und -leistung|
@@ -49,9 +49,9 @@ In der folgenden Tabelle wird für jede Umgebung auf Unternehmensniveau der empf
 
 ::: zone-end
 
-Azure Service Health bietet eine personalisierte Darstellung der Integrität der von Ihnen verwendeten Azure-Dienste und -Regionen. In Service Health werden Informationen zu aktiven Problemen veröffentlicht, um Sie über die Auswirkungen auf Ihre Ressourcen zu informieren. Während der Problembehandlung werden Sie mit regelmäßigen Aktualisierungen stets auf dem Laufenden gehalten.
+Azure Service Health bietet eine personalisierte Darstellung der Integrität Ihrer Azure-Dienste und -Regionen. In Service Health werden Informationen zu aktiven Problemen veröffentlicht, um Sie über die Auswirkungen auf Ihre Ressourcen zu informieren. Während der Problembehandlung werden Sie mit regelmäßigen Aktualisierungen stets auf dem Laufenden gehalten.
 
-In Service Health werden auch geplante Wartungsmaßnahmen veröffentlicht, um Sie über Änderungen zu informieren, die ggf. Auswirkungen auf die Verfügbarkeit Ihrer Ressourcen haben. Richten Sie Service Health-Warnungen ein, um eine Benachrichtigung zu erhalten, wenn die von Ihnen verwendeten Azure-Dienste und -Regionen ggf. von Dienstproblemen, geplanten Wartungsmaßnahmen oder anderen Änderungen betroffen sind.
+In Service Health werden auch geplante Wartungsmaßnahmen veröffentlicht, um Sie über Änderungen zu informieren, die Auswirkungen auf die Verfügbarkeit von Ressourcen haben können. Richten Sie Service Health-Warnungen ein, um eine Benachrichtigung zu erhalten, wenn Ihre Azure-Dienste und -Regionen ggf. von Dienstproblemen, geplanten Wartungsmaßnahmen oder anderen Änderungen betroffen sind.
 
 Azure Service Health umfasst Folgendes:
 
@@ -125,13 +125,13 @@ Weitere Informationen finden Sie in der [Dokumentation zum Erstellen eines Log A
 
 ::: zone-end
 
-Azure Monitor ist ein separater einheitlicher Hub für alle Überwachungs- und Diagnosedaten in Azure. Sie können Azure Monitor verwenden, um Einblicke in ihre Ressourcen zu erhalten. Mit Azure Monitor können Sie Probleme ermitteln und beheben und die Leistung optimieren. Sie können auch das Kundenverhalten besser verstehen.
+Azure Monitor ist ein separater einheitlicher Hub für alle Überwachungs- und Diagnosedaten in Azure und bietet Ihnen eine ressourcenübergreifende Transparenz. Mit Azure Monitor können Sie Probleme ermitteln und beheben und die Leistung optimieren. Sie können auch das Kundenverhalten besser verstehen.
 
-- **Überwachen und Visualisieren von Metriken.** Metriken sind numerische Werte von Azure-Ressourcen, die es Ihnen ermöglichen, die Integrität Ihrer Systeme zu verstehen. Passen Sie die Diagramme für Ihre Dashboards an, und nutzen Sie Arbeitsmappen für die Berichterstellung.
+- **Überwachen und Visualisieren von Metriken.** Metriken sind numerische Werte, die über Azure-Ressourcen verfügbar sind. Sie helfen Ihnen, die Integrität Ihrer Systeme zu verstehen. Passen Sie die Diagramme für Ihre Dashboards an, und nutzen Sie Arbeitsmappen für die Berichterstellung.
 
 - **Abfragen und Analysieren von Protokollen.** Zu den Protokollen gehören die Aktivitätsprotokolle und Diagnoseprotokolle aus Azure. Erfassen Sie zusätzliche Protokolle anderer Überwachungs- und Verwaltungslösungen für Ihre Cloudressourcen oder lokalen Ressourcen. Log Analytics bietet ein zentrales Repository für die Aggregierung dieser Daten. Von dort aus können Sie Abfragen ausführen, um Probleme zu beheben oder Daten zu visualisieren.
 
-- **Einrichten von Warnungen und Aktionen.** Mit Warnungen werden Sie proaktiv über kritische Zustände benachrichtigt. Korrekturmaßnahmen können basierend auf Triggern von Metriken, Protokollen oder Problemen mit der Dienstintegrität ergriffen werden. Sie können unterschiedliche Benachrichtigungen und Aktionen einrichten und Daten an Ihre Tools für das IT-Service-Management senden.
+- **Einrichten von Warnungen und Aktionen.** Mit Warnungen werden Sie über kritische Zustände benachrichtigt. Korrekturmaßnahmen können basierend auf Triggern von Metriken, Protokollen oder Problemen mit der Dienstintegrität ergriffen werden. Sie können unterschiedliche Benachrichtigungen und Aktionen einrichten und auch Daten an Ihre Tools für das IT-Service-Management senden.
 
 ::: zone target="chromeless"
 
@@ -188,4 +188,4 @@ Jeder Artikel erläutert die Schritte zum Onboarding der folgenden Lösungen:
 - Azure Monitor für VMs
 - Azure Security Center
 
-Jede der oben genannten Lösungen unterstützt Sie beim Erfassen des Bestands und Schaffen von Transparenz.
+Jede der vorherigen Schritte unterstützt Sie beim Erfassen des Bestands und Schaffen von Transparenz.

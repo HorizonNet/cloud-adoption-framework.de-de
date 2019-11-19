@@ -8,12 +8,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 3caefb507f2348f48d39c055000c3a0250fcc28a
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: e025b46c99e36340afd777e06b3a493c9f65c5dd
+ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72549069"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73564214"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Erste Schritte mit dem Pfad für die Qualifikationsbereitschaft
 
@@ -37,3 +37,16 @@ Das Cloud Adoption Framework führt den Leser durch den gesamten Einführungszyk
   - **Verwalten:** Erwerben Sie die erforderlichen Qualifikationen, um eine Cloudumgebung zu verwalten.
 
 Jeder der zuvor genannten Lernpfade teilt die Lernmöglichkeiten über mehrere Medientypen hinweg, um die Wissensbeschaffung zu maximieren.
+
+## <a name="microsoft-learn"></a>Microsoft Learn
+
+Microsoft Learn ist ein neuer Lernansatz. Die Bereitschaft zu den neuen Qualifikationen und Aufgaben, die mit der Cloudeinführung verbunden sind, entsteht nicht problemlos. Microsoft Learn bietet einen lohnenderen Ansatz für praktisches Lernen, der Ihnen hilft, Ihre Ziele schneller zu erreichen. Punkte sammeln, zu höheren Stufen aufsteigen und mehr erreichen.
+Hier folgen einige Beispiele für angepasste Lernpfade auf Microsoft Learn, die sich am Plan-Abschnitt des Framework für die Cloudeinführung (Cloud Adoption Framework) ausrichten:
+
+[Weiterentwickeln Ihrer DevOps-Methoden](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices): DevOps vereint Personen, Prozesse und Produkte, um hochwertige Continuous Delivery-Prozesse an Endbenutzer zu ermöglichen. Azure DevOps umfasst eine Reihe von Diensten, die Ihnen die erforderlichen Tools für diese Aufgaben zur Verfügung stellen. Mit Azure DevOps können Sie jede Anwendung erstellen, testen und bereitstellen (in der Cloud oder lokal).
+
+[Azure für den Datentechniker](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer): Erfahren Sie, wie sich die Welt der Daten entwickelt hat und wie das Aufkommen von Cloudtechnologien neue Möglichkeiten für Unternehmen eröffnet. Sie werden die verschiedenen verfügbaren Datenplattformtechnologien kennenlernen und erfahren, wie ein Datentechniker die Vorteile dieser Technologie für ein Unternehmen nutzen kann.
+
+## <a name="learn-more"></a>Weitere Informationen
+
+Weitere Lernpfade finden Sie im [Microsoft Learn-Katalog](https://docs.microsoft.com/learn/browse). Verwenden Sie den Filter „Rollen“, um Lernpfade an ihrer Rolle auszurichten.
