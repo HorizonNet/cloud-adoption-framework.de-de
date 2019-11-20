@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: bc568602c283fab5abba1d6ad91197e9f0f9ce8e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 9caeca52ba0ab3a909b0f42ac6f016d44033a4ee
+ms.sourcegitcommit: 617c3f12a3657a8a1393fd08d261dd98eb81b65c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564032"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74086804"
 ---
 # <a name="ready-recommended-naming-and-tagging-conventions"></a>Bereit: Empfohlene Namens- und Kennzeichnungskonventionen
 
@@ -52,7 +52,7 @@ Ein virtuelles Netzwerk hat beispielsweise einen Ressourcengruppenbereich, was b
 
 Einige Ressourcennamen, etwa PaaS-Dienste mit öffentlichen Endpunkten oder DNS-Bezeichnungen virtueller Maschinen, haben globale Bereiche, was bedeutet, dass sie auf der gesamten Azure-Plattform eindeutig sein müssen.
 
-Für Ressourcennamen gelten Längenbeschränkungen. Daher ist es wichtig, den Kontext, der in einen Namen eingebettet ist, mit dessen Bereich und Länge in Einklang zu bringen, wenn Sie Ihre Namenskonventionen entwickeln. Weitere Informationen zu Namensregeln hinsichtlich zulässiger Anzahl von Zeichen, Bereichen und Namenslängen für Ressourcentypen finden Sie unter [Namenskonventionen für Azure-Ressourcen](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions).
+Für Ressourcennamen gelten Längenbeschränkungen. Daher ist es wichtig, den Kontext, der in einen Namen eingebettet ist, mit dessen Bereich und Länge in Einklang zu bringen, wenn Sie Ihre Namenskonventionen entwickeln. Weitere Informationen zu Namensregeln hinsichtlich zulässiger Anzahl von Zeichen, Bereichen und Namenslängen für Ressourcentypen finden Sie unter [Namenskonventionen für Azure-Ressourcen](/azure/architecture/best-practices/resource-naming).
 
 #### <a name="recommended-naming-components"></a>Empfohlene Namenskomponenten
 

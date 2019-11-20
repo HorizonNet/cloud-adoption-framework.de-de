@@ -1239,8 +1239,6 @@
       href: reference/cloud-operating-model.md
     - name: Azure-Unternehmensgerüst
       href: reference/azure-scaffold.md
-    - name: Implementieren eines Azure-Unternehmensgerüsts
-      href: reference/azure-scaffold-examples.md
     - name: 'Virtuelles Rechenzentrum (Virtual Datacenter, VDC)'
       href: reference/vdc.md
     - name: Wie funktioniert Azure?

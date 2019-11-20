@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit
-ms.openlocfilehash: b3adddc6b68d07084ec8c3909d6c8010c25bb387
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: f5869cd688984946ec55266dca3754547f950017
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239849"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159633"
 ---
 # <a name="deploy-a-migration-landing-zone"></a>Bereitstellen einer Landezone für die Migration
 
@@ -65,7 +65,7 @@ Die folgenden Entscheidungen werden in der Blaupause für die Landezone widerges
 |Abonnemententwurf|N/V: wurde für ein einzelnes Produktionsabonnement entworfen.|[Skalieren von Abonnements](../azure-best-practices/scaling-subscriptions.md)|
 |Verwaltungsgruppen|N/V: wurde für ein einzelnes Produktionsabonnement entworfen.|[Skalieren von Abonnements](../azure-best-practices/scaling-subscriptions.md)         |
 |Ressourcengruppen|N/V: wurde für ein einzelnes Produktionsabonnement entworfen.|[Skalieren von Abonnements](../azure-best-practices/scaling-subscriptions.md)         |
-|Data|–|[Auswählen der richtigen Bereitstellungsoption in Azure SQL](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas?toc=https://docs.microsoft.com/azure/architecture/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) und [Auswählen des richtigen Datenspeichers](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
+|Data|–|[Auswählen der richtigen Bereitstellungsoption in Azure SQL](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) und [Auswählen des richtigen Datenspeichers](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
 |Storage|–|[Leitfaden zu Azure Storage](../considerations/storage-options.md)         |
 |Standards für Benennung und Kennzeichnung|–|[Best Practices zur Benennung und Kennzeichnung](../azure-best-practices/naming-and-tagging.md)         |
 |Kostenverwaltung|–|[Nachverfolgen von Kosten](../azure-best-practices/track-costs.md)|

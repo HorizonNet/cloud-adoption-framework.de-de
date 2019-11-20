@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: b605aad4400ef531022392ceb786ab5467812f5f
-ms.sourcegitcommit: 5d865c3a3f105986bda83ff84f8cc29def030334
+ms.openlocfilehash: d3c3021c75c39b5ae712f9945afd937d4472ecb8
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "73912501"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160294"
 ---
 # <a name="cloud-monitoring-guide-alerting"></a>Leitfaden zur Cloudüberwachung: Warnungen
 
@@ -67,7 +67,7 @@ Azure Monitor verfügt über vier Arten von Warnungen, die auf gewisse Weise an 
 
 - [Aktivitätsprotokollwarnung](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log): Warnungen zu Elementen im Aktivitätsprotokollspeicher mit Ausnahme von Service Health-Daten.
 
-- [Service Health-Warnung](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications?toc=%2fazure%2fservice-health%2ftoc.json): Ein besonderer Warnungstyp, der ausschließlich für Service Health-Probleme verwendet wird, die aus dem Aktivitätsprotokollspeicher stammen, etwa Ausfälle und anstehende geplante Wartungsarbeiten. Beachten Sie, dass dieser Warnungstyp über [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview), einen Begleitdienst von Azure Monitor, konfiguriert wird.
+- [Service Health-Warnung](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications): Ein besonderer Warnungstyp, der ausschließlich für Service Health-Probleme verwendet wird, die aus dem Aktivitätsprotokollspeicher stammen, etwa Ausfälle und anstehende geplante Wartungsarbeiten. Beachten Sie, dass dieser Warnungstyp über [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview), einen Begleitdienst von Azure Monitor, konfiguriert wird.
 
 ### <a name="enable-alerting-through-partner-tools"></a>Aktivieren von Warnungen über Partnertools
 
