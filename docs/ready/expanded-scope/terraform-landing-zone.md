@@ -8,12 +8,12 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: deebe6db08d573872f67d79f734d1f65a85c6904
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 62f6f8f52d669c2822b822218612986be4503378
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561686"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753758"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>Verwenden von Terraform zum Erstellen Ihrer Zielzonen
 

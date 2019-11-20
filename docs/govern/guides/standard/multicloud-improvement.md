@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 10097c550ba160c41add31e27d0813c175f5e26a
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 29f45afcb10b7d12df8392a8dd9d0d577414e59b
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566229"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753067"
 ---
 # <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>Governanceleitfaden für Standardunternehmen: Multi-Cloud-Verbesserung
 
@@ -85,4 +85,4 @@ Die Einführung mehrerer Clouds sollte auf Bereiche beschränkt werden, in denen
 
 ## <a name="conclusion"></a>Zusammenfassung
 
-Diese Artikelserie beschreibt die inkrementelle Entwicklung von bewährten Methoden bei der Governance im Hinblick auf die Erfahrungen dieses fiktiven Unternehmens. Durch das Anfangen im Kleinen – aber mit dem richtigen Fundament – konnte das Unternehmen den Umstieg schnell bewerkstelligen und dennoch die Governance jederzeit im Auge behalten. Der MVP selbst hat den Kunden nicht geschützt. Stattdessen bildet er die Grundlage, um Risiken zu verwalten und Schutzmaßnahmen hinzuzufügen. Von diesem Punkt aus wurden dann Ebenen der Governance angewandt, um die realen Risiken zu verringern. Die hier beschriebene Journey deckt sich natürlich nicht zu 100 % mit den Erfahrungen aller Leser. Sie dient stattdessen eher als ein Muster für die inkrementelle Governance. Den Lesern wird empfohlen, diese bewährten Methoden an ihre eigenen einzigartigen Einschränkungen und Governanceanforderungen anzupassen.
+Diese Artikelserie beschreibt die inkrementelle Entwicklung von bewährten Methoden bei der Governance im Hinblick auf die Erfahrungen dieses fiktiven Unternehmens. Durch das Anfangen im Kleinen – aber mit dem richtigen Fundament – konnte das Unternehmen den Umstieg schnell bewerkstelligen und dennoch die Governance jederzeit im Auge behalten. Der MVP selbst hat den Kunden nicht geschützt. Stattdessen bildet er die Grundlage, um Risiken zu verwalten und Schutzmaßnahmen hinzuzufügen. Von diesem Punkt aus wurden dann Ebenen der Governance angewandt, um die realen Risiken zu verringern. Die hier beschriebene Journey deckt sich natürlich nicht zu 100 % mit den Erfahrungen aller Leser. Sie dient stattdessen eher als ein Muster für die inkrementelle Governance. Es wird empfohlen, diese bewährten Methoden an Ihre eigenen einzigartigen Einschränkungen und Governanceanforderungen anzupassen.

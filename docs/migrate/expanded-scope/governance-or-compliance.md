@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3367a76be508b61c214210e9e712c8a310932f2e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: c363f038b5fed3f2c8636b9b15a09625ca42218f
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566911"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753551"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategie für Governance bzw. Compliance
 
@@ -47,7 +47,7 @@ Während der Bewertung müssen weitere Entscheidungen getroffen werden, um die P
 
 ### <a name="suggested-action-during-the-assess-process"></a>Empfohlene Aktion während des Bewertungsprozesses
 
-Die Anforderungen an die Bewertung von Governance und Compliance sind zu kundenspezifisch, um allgemeine Richtlinien zu den tatsächlichen Schritten zu erstellen, die während der Bewertung ausgeführt werden. Es wird jedoch empfohlen, dass der Prozess Aufgaben und eine zeitliche Planung für die „Ausrichtung an Compliance-/Governanceanforderungen“ enthält. Weitere Informationen zu diesen Anforderungen finden Sie unter den folgenden Links:
+Die Anforderungen an die Bewertung von Governance und Compliance sind zu kundenspezifisch, um allgemeine Richtlinien zu den tatsächlichen Schritten zu erstellen, die während der Bewertung ausgeführt werden. Der Prozess sollte jedoch Aufgaben und eine zeitliche Planung für die „Ausrichtung an Compliance-/Governanceanforderungen“ enthalten. Weitere Informationen zu diesen Anforderungen finden Sie unter den folgenden Links:
 
 Detaillierte Informationen zur Governance finden Sie in der [Übersicht über die fünf Disziplinen der Cloudgovernance](../../govern/governance-disciplines.md). Der Abschnitt zum Cloud Adoption Framework enthält auch Vorlagen zum Dokumentieren von Richtlinien, Anleitungen und Anforderungen für jede der fünf Disziplinen:
 
@@ -61,15 +61,15 @@ Anleitungen zum Entwickeln von Governancerichtlinien basierend auf dem Cloud Ado
 
 ## <a name="optimize-and-promote-process-changes"></a>Änderungen am Prozess zum Optimieren und Höherstufen
 
-Während der Prozesse zum Optimieren und Höherstufen empfiehlt es sich, dass das Cloudgovernanceteam Zeit investiert, um die Einhaltung von Governance- und Compliancestandards zu testen und zu überprüfen. Dieser Schritt ist auch ein guter Zeitpunkt, um Prozesse einzuführen, mit denen das Cloudgovernanceteam Vorlagen zusammenstellen kann, mit denen sich in zukünftigen Projekten die [Bereitstellung beschleunigen](../../govern/deployment-acceleration/index.md) lässt.
+Während der Prozesse zum Optimieren und Höherstufen sollte das Cloudgovernanceteam Zeit investieren, um die Einhaltung von Governance- und Compliancestandards zu testen und zu überprüfen. Dieser Schritt ist auch ein guter Zeitpunkt, um Prozesse einzuführen, mit denen das Cloudgovernanceteam Vorlagen zusammenstellen kann, mit denen sich in zukünftigen Projekten die [Bereitstellung beschleunigen](../../govern/deployment-acceleration/index.md) lässt.
 
 ### <a name="suggested-action-during-the-optimize-and-promote-process"></a>Empfohlene Aktion während des Prozesses der Optimierung und Höherstufung
 
-In diesem Prozess sollte der Projektplan Zeitpunkte enthalten, zu denen das Cloudgovernanceteam eine Complianceüberprüfung für jede Workload durchführen kann, die für die Höherstufung in die Produktion geplant ist.
+In diesem Prozess sollte der Projektplan Zeitfenster enthalten, in denen das Cloudgovernanceteam eine Complianceüberprüfung für jede Workload durchführen kann, die für die Höherstufung in die Produktion geplant ist.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Der letzte Punkt auf der [Checkliste für den erweiterten Umfang](./index.md) empfiehlt dem Leser, zur Checkliste zurückzukehren und weitere Anforderungen in Bezug auf den Umfang der Migration erneut zu evaluieren.
+Der letzte Punkt auf der [Checkliste für den erweiterten Umfang](./index.md) empfiehlt Ihnen, zur Checkliste zurückzukehren und weitere Anforderungen in Bezug auf den Umfang der Migration erneut zu evaluieren.
 
 > [!div class="nextstepaction"]
 > [Checkliste für erweiterten Umfang](./index.md)

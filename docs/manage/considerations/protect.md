@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 44e566d1f2936c51e61f8a1bd4211af2000f454b
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 356d6c463e97553cb56d132c4f94e812a5b1c656
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565061"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752796"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>Schutz und Wiederherstellung in der Cloudverwaltung
 
@@ -31,7 +31,7 @@ Als Mindestanforderung sollte für jede Ressource, die eine bestimmte Workload u
 
 ### <a name="recovery-time-objectives-rto"></a>Recovery Time Objective (RTO)
 
-Wenn der Ernstfall eintritt, ist die RTO die Zeitspanne, die benötigt wird, um ein beliebiges System auf seinen Zustand vor dem Ausfall wiederherzustellen. Dies umfasst für jede Workload die Zeit, die notwendig ist, um eine Mindestfunktionalität für die VMs und Apps wiederherzustellen. Dazu gehört auch die Zeit, die notwendig ist, um die von den Anwendungen benötigten Daten wiederherzustellen.
+Wenn der Ernstfall eintritt, ist die RTO (Recovery Time Objective) die Zeitspanne, die benötigt wird, um ein beliebiges System auf seinen Zustand vor dem Ausfall wiederherzustellen. Dies umfasst für jede Workload die Zeit, die notwendig ist, um eine Mindestfunktionalität für die VMs und Apps wiederherzustellen. Dazu gehört auch die Zeit, die notwendig ist, um die von den Anwendungen benötigten Daten wiederherzustellen.
 
 Aus geschäftlicher Sicht stellt die RTO den Zeitraum dar, in dem der Geschäftsprozess außer Betrieb ist. Bei unternehmenskritischen Workloads sollte diese Variable relativ niedrig sein, damit die Geschäftsprozesse schnell fortgesetzt werden können. Bei Workloads mit geringerer Priorität hat eine Standard-RTO möglicherweise keine nennenswerten Auswirkungen auf die Gesamtleistung des Unternehmens.
 
@@ -49,7 +49,7 @@ Eine Verwaltungsbaseline sollte sich nach der längsten akzeptablen RPO richten,
 
 ## <a name="protect-and-recover-workloads"></a>Workloads für Schutz und Wiederherstellung
 
-Die meisten Workloads in einer IT-Umgebung unterstützen nur einen kleinen geschäftlichen oder technischen Prozess. Systeme, die keine systemrelevanten Auswirkungen auf den Geschäftsbetrieb haben, rechtfertigen häufig nicht die höheren Investitionen, die erforderlich wären, um die Systeme schnell wiederherzustellen oder Datenverluste zu minimieren. Durch Einrichtung einer Baseline lässt sich dem Geschäftsteam klar vermitteln, welches Maß an Wiederherstellungsunterstützung zu einem konsistenten, überschaubaren Preispunkt geboten werden kann. Dieses Verständnis hilft den Beteiligten auf geschäftlicher Seite den Wert einer höheren Investition in die Wiederherstellung zu bemessen.
+Die meisten Workloads in einer IT-Umgebung unterstützen nur einen bestimmten geschäftlichen oder technischen Prozess. Systeme, die keine systemrelevanten Auswirkungen auf den Geschäftsbetrieb haben, rechtfertigen häufig nicht die höheren Investitionen, die erforderlich wären, um die Systeme schnell wiederherzustellen oder Datenverluste zu minimieren. Durch Einrichtung einer Baseline lässt sich dem Geschäftsteam klar vermitteln, welches Maß an Wiederherstellungsunterstützung zu einem konsistenten, überschaubaren Preispunkt geboten werden kann. Dieses Verständnis hilft den Beteiligten auf geschäftlicher Seite den Wert einer höheren Investition in die Wiederherstellung zu bemessen.
 
 Für die meisten Cloudverwaltungsteams bietet eine erweiterte Baseline mit spezifischen Zusagen in Bezug auf RPO und RTO für verschiedene Ressourcen den günstigsten Weg zu gegenseitigen Geschäftszusagen. In den folgenden Abschnitten werden einige gängige erweiterte Baselines erläutert, die es den Geschäftsteams ermöglichen, Schutz- und Wiederherstellungsfunktionen problemlos über einen wiederholbaren Prozess hinzuzufügen.
 
@@ -57,7 +57,7 @@ Für die meisten Cloudverwaltungsteams bietet eine erweiterte Baseline mit spezi
 
 Daten sind die wohl wertvollste Ressource in der digitalen Wirtschaft. Die Fähigkeit, Daten effektiver zu schützen und wiederherzustellen, ist die häufigste erweiterte Baseline. Bei Daten, die für Produktionsworkloads unabdingbar sind, können Datenverluste mit Umsatz- oder Einnahmeverlusten gleichgesetzt werden. Im Allgemeinen empfehlen wir Cloudverwaltungsteams, dass sie eine erweiterte Verwaltungsbaseline anbieten, die gängige Datenplattformen unterstützt.
 
-Bevor Cloudverwaltungsteams Plattformvorgänge implementieren, unterstützen sie häufig verbesserte Vorgänge für PaaS-Datenplattformen (Platform-as-a-Service). Es ist zum Beispiel für ein Cloudverwaltungsteam problemlos möglich, häufigere Sicherungs- oder regionsübergreifende Replikationsvorgänge für Azure SQL-Datenbank- oder Azure Cosmos DB-Lösungen durchzusetzen. So kann das Entwicklungsteam die RPO ganz einfach durch Modernisierung seiner Datenplattformen verbessern.
+Bevor Cloudverwaltungsteams Plattformvorgänge implementieren, unterstützen sie häufig verbesserte Vorgänge für PaaS-Datenplattformen (Platform-as-a-Service). Es ist zum Beispiel für ein Cloudverwaltungsteam problemlos möglich, häufigere Sicherungsvorgänge oder regionsübergreifende Replikationsvorgänge für Azure SQL-Datenbank- oder Azure Cosmos DB-Lösungen durchzusetzen. So kann das Entwicklungsteam die RPO einfach durch Modernisierung seiner Datenplattformen verbessern.
 
 Weitere Informationen zu diesem Denkprozess finden Sie unter [Disziplin „Plattformbetrieb“](./platform.md).
 
@@ -65,7 +65,7 @@ Weitere Informationen zu diesem Denkprozess finden Sie unter [Disziplin „Platt
 
 Die meisten Workloads sind teilweise von virtuellen Computern abhängig, die verschiedene Aspekte der Lösung hosten. Damit eine Workload einen Geschäftsprozess nach einem Systemausfall wieder unterstützen kann, muss eine bestimmte Anzahl virtueller Computer schnell wiederhergestellt werden.
 
-Jede Minute Ausfallzeit dieser virtuellen Computer kann Umsatzverlust oder eine geringere Rentabilität bedeuten. Wenn sich Ausfallzeiten von virtuellen Computern direkt auf das finanzielle Ergebnis des Geschäfts auswirken, ist die RTO sehr wichtig. Durch Replikation zu einem sekundären Standort und automatisierte Wiederherstellungsprozesse lassen sich virtuelle Computer schneller wiederherstellen. Dieses Modell wird als „Hot/Warm-Wiederherstellungsmodell“ bezeichnet. Virtuelle Computer mit dem höchsten Wiederherstellungsstatus können zu einem voll funktionsfähigen sekundären Standort repliziert werden. Dieser kostenintensivere Ansatz wird als Wiederherstellungsmodell mit hoher Verfügbarkeit oder „Hot/Hot-Wiederherstellungsmodell“ bezeichnet.
+Jede Minute Ausfallzeit dieser virtuellen Computer kann Umsatzverlust oder eine geringere Rentabilität nach sich ziehen. Wenn sich Ausfallzeiten von virtuellen Computern direkt auf das finanzielle Ergebnis des Geschäfts auswirken, ist die RTO sehr wichtig. Durch Replikation zu einem sekundären Standort und automatisierte Wiederherstellungsprozesse lassen sich virtuelle Computer schneller wiederherstellen. Dieses Modell wird als „Hot/Warm-Wiederherstellungsmodell“ bezeichnet. Virtuelle Computer mit dem höchsten Wiederherstellungsstatus können zu einem voll funktionsfähigen sekundären Standort repliziert werden. Dieser kostenintensivere Ansatz wird als Wiederherstellungsmodell mit hoher Verfügbarkeit oder „Hot/Hot-Wiederherstellungsmodell“ bezeichnet.
 
 Jedes der eben genannten Modelle reduziert die RTO und sorgt dafür, dass Geschäftsprozessfunktionen schneller wiederhergestellt werden. Allerdings zieht jedes Modell auch deutlich höhere Cloudverwaltungskosten nach sich.
 

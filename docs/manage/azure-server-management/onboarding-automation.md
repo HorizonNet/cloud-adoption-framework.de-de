@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f5dd418a03dd35ebced1a9c73eb8fe6567339859
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 83e1cd80bcb821ba1b815291f7f25f875ba66284
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565395"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751590"
 ---
 # <a name="automate-onboarding"></a>Automatisieren des Onboardings
 
@@ -41,7 +41,7 @@ In diesem Beispiel werden die in der folgenden Tabelle beschriebenen Dateien ver
 |-----------|-------------|
 | New-AMSDeployment.ps1 | Das hauptsächliche Orchestrierungsskript, das das Onboarding automatisiert. Es erstellt Ressourcengruppen und Standort-, Arbeitsbereichs- und Automation-Konten, falls diese noch nicht vorhanden sind. Dieses PowerShell-Skript erfordert ein bestehendes Abonnement. |
 | Workspace-AutomationAccount.json | Eine Resource Manager-Vorlage, die die Ressourcen des Arbeitsbereichs und des Automatisierungskontos bereitstellt. |
-| WorkspaceSolutions.json | Eine Resource Manager-Vorlage, die Ihre gewünschten Lösungen im Log Analytics-Arbeitsbereich ermöglicht. |
+| WorkspaceSolutions.json | Eine Resource Manager-Vorlage, die Ihre gewünschten Lösungen im Log Analytics-Arbeitsbereich ermöglicht |
 | ScopeConfig.json | Eine Resource Manager-Vorlage, die das Abonnementmodell für lokale Server mit der Lösung zur Änderungsnachverfolgung verwendet. Die Verwendung des Abonnementmodells ist optional. |
 | Enable-VMInsightsPerfCounters.ps1 | Ein PowerShell-Skript, das VM Insights für Server aktiviert und Leistungsindikatoren konfiguriert. |
 | ChangeTracking-Filelist.json | Eine Resource Manager-Vorlage, die die Liste der Dateien definiert, die von der Änderungsnachverfolgung überwacht werden. |

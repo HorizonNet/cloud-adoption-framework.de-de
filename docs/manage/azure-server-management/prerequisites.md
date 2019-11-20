@@ -8,12 +8,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: dafe5f36a59d60fa91816695cae1e1f3784df046
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 20a4168f5a7650b20357de2ec2628a0edb093993
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565311"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751641"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>Phase 1: Erforderliche Planung für Azure-Serververwaltungsdienste
 
@@ -96,7 +96,7 @@ Nachdem Sie die beste Methode zum Platzieren und Organisieren von Arbeitsbereich
 Informationen zum Erstellen eines Log Analytics-Arbeitsbereichs über das Azure-Portal finden Sie unter [Erstellen eines Arbeitsbereichs](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace#create-a-workspace). Erstellen Sie anschließend ein entsprechendes Automation-Konto für jeden Arbeitsbereich, indem Sie die Schritte in [Erstellen eines Azure Automation-Kontos](https://docs.microsoft.com/azure/automation/automation-quickstart-create-account) ausführen.
 
 > [!NOTE]
-> Wenn Sie ein Automation-Konto über das Azure-Portal erstellen, versucht das Portal standardmäßig, „Ausführen als“-Konten sowohl für Ressourcen des Azure Resource Manager-Bereitstellungsmodells als auch des klassischen Bereitstellungsmodells zu erstellen. Wenn Sie keine klassischen virtuellen Computer in Ihrer Umgebung verwenden und nicht der Co-Admin im Abonnement sind, erstellt das Portal ein „Ausführen als“-Konto für Resource Manager, generiert bei der Bereitstellung des klassischen „Ausführen als“-Kontos jedoch einen Fehler. Wenn Sie nicht beabsichtigen, klassische Ressourcen zu unterstützen, können Sie diesen Fehler ignorieren.
+> Wenn Sie ein Automation-Konto über das Azure-Portal erstellen, versucht das Portal standardmäßig, „Ausführen als“-Konten sowohl für Ressourcen des Azure Resource Manager-Bereitstellungsmodells als auch des klassischen Bereitstellungsmodells zu erstellen. Wenn Sie keine klassischen virtuellen Computer in Ihrer Umgebung verwenden und nicht der Co-Admin im Abonnement sind, erstellt das Portal ein Konto vom Typ „Ausführen als“ für Resource Manager, generiert bei der Bereitstellung des klassischen „Ausführen als“-Kontos jedoch einen Fehler. Wenn Sie nicht beabsichtigen, klassische Ressourcen zu unterstützen, können Sie diesen Fehler ignorieren.
 >
 > „Ausführen als“-Konten können auch mithilfe von [PowerShell](https://docs.microsoft.com/azure/automation/manage-runas-account#create-run-as-account-using-powershell) erstellt werden.
 

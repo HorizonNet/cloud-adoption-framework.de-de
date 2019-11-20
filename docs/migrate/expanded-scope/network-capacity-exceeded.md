@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a2afa6e7961a8cc53abb6c3dbe0d78c2251b134d
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 402628da8fb5af7526c33d6c4900298eb42bced5
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239978"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753498"
 ---
 # <a name="data-requirements-exceed-network-capacity-during-a-migration-effort"></a>Datenanforderungen überschreiten Netzwerkkapazität während einer Migration
 
@@ -39,7 +39,7 @@ Es gibt auch [Partnerlösungen von Drittanbietern](https://azuremarketplace.micr
 
 Wenn die Speicheranforderungen einer Workload (oder mehrerer Workloads) die Netzwerkkapazität überschreiten, kann Azure Data Box dennoch weiterhin für eine Offlinedatenübertragung verwendet werden.
 
-Microsoft vertritt die allgemeine Position, dass die Übertragung über das Netzwerk die empfohlene Vorgehensweise ist, es sei denn, das Netzwerk ist nicht verfügbar. Diese Empfehlung beruht auf der Übertragungsgeschwindigkeit. Die Übertragung von Daten über das Netzwerk (selbst bei eingeschränkter Bandbreite) ist normalerweise schneller als der physische Versand derselben Datenmenge mithilfe einer Offlineübertragungsmethode wie z. B. Data Box.
+Die Netzwerkübertragung wird empfohlen, es sei denn, das Netzwerk ist nicht verfügbar. Die Geschwindigkeit der Datenübertragung über das Netzwerk (selbst bei eingeschränkter Bandbreite) ist normalerweise schneller als der physische Versand derselben Datenmenge mithilfe einer Offlineübertragungsmethode wie z. B. Data Box.
 
 Wenn die Verbindung mit Azure verfügbar ist, sollte vor Verwendung von Data Box eine Analyse durchgeführt werden, vor allem dann, wenn bei der Migration der Workload die Zeit wichtig ist. Data Box ist nur dann sinnvoll, wenn die Übertragung der erforderlichen Daten länger dauert als das Füllen, Versenden und Wiederherstellen der Daten mithilfe von Data Box.
 

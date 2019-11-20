@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f5461ea659ae2363e98ddf45d8623e21f1ce0d90
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 29acef56de414d1a98e5fe11e5e396922b84392d
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565194"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752877"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Die geschäftliche Verpflichtung in der Cloudverwaltung
 
@@ -42,7 +42,7 @@ Als Unterstützung für Ihren Entscheidungsprozess wird im weiteren Verlauf dies
 
 ## <a name="it-operations-prerequisites"></a>IT-Betriebsvoraussetzungen
 
-Im [Azure-Verwaltungsleitfaden](../azure-management-guide/index.md) werden die in Azure verfügbaren Verwaltungstools beschrieben. Bevor eine Verpflichtung gegenüber dem Unternehmen formuliert wird, sollte die IT eine akzeptable Verwaltungsbaseline auf Standardniveau festlegen, die auf alle verwalteten Workloads angewendet werden soll. Anschließend sollte die IT basierend auf der Anzahl von CPU-Kernen, dem Speicherplatz auf dem Datenträger und anderen ressourcenbezogenen Variablen für jede der verwalteten Workloads im IT-Portfolio die Standardverwaltungskosten berechnen. Außerdem sollte für jede Workload basierend auf der Architektur eine zusammengesetzte SLA geschätzt werden.
+Im [Azure-Verwaltungsleitfaden](../azure-management-guide/index.md) werden die in Azure verfügbaren Verwaltungstools beschrieben. Bevor eine Verpflichtung gegenüber dem Unternehmen formuliert wird, sollte die IT-Abteilung eine akzeptable Verwaltungsbaseline auf Standardniveau festlegen, die auf alle verwalteten Workloads angewendet werden soll. Anschließend sollte die IT basierend auf der Anzahl von CPU-Kernen, dem Speicherplatz auf dem Datenträger und anderen ressourcenbezogenen Variablen für jede der verwalteten Workloads im IT-Portfolio die Standardverwaltungskosten berechnen. Außerdem sollte für jede Workload basierend auf der Architektur eine zusammengesetzte SLA geschätzt werden.
 
 > [!TIP]
 > IT-Betriebsteams setzen häufig eine standardmäßige minimale Betriebszeit von mindestens 99,9 Prozent für die anfängliche zusammengesetzte SLA an. Sie können die Verwaltungskosten auch basierend auf der durchschnittlichen Workload normalisieren, insbesondere bei Lösungen, in denen die Anforderungen an Protokollierung und Speicher minimal sind. Die Ermittlung des Durchschnitts der Kosten für ein paar Workloads von mittlerer Wichtigkeit kann der Ausgangspunkt für erste Konversationen sein.

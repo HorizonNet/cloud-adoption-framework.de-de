@@ -1,5 +1,5 @@
 ---
-title: Leitfaden zur Cloudüberwachung – Überwachungsstrategie für Cloudbereitstellungsmodelle
+title: 'Leitfaden zur Cloudüberwachung: Überwachungsstrategie für Cloudbereitstellungsmodelle'
 titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Auswahlhilfe: Verwendung von Azure Monitor oder System Center Operations Manager in Microsoft Azure'
 author: MGoedtel
@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 849c6eace1704cababd4fc40f7976f5e1915345e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 98a65f0e65e8c2851a8aa97fe2f0c17ffe2359db
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564973"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752719"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Leitfaden zur Cloudüberwachung: Überwachungsstrategie für Cloudbereitstellungsmodelle
 
@@ -30,12 +30,13 @@ Unsere Strategie umfasst die Unterstützung von Überwachungsinfrastruktur (Rech
 ## <a name="azure-cloud-monitoring"></a>Azure-Cloudüberwachung
 
 Azure Monitor ist der native Plattformdienst, mit dem Sie Ihre Azure-Ressourcen an einem zentralen Ort verwalten können. Er ist für Cloudlösungen konzipiert, für die Folgendes gilt:
-* Sie basieren auf Azure.
-* Sie unterstützen eine Geschäftsfunktion, die auf VM-Workloads oder komplexen Architekturen basiert, in denen Microservices und andere Plattformressourcen verwendet werden.
 
-Sie überwachen alle Ebenen des Stapels, beispielsweise Mandantendienste wie Azure Active Directory Domain Services, sowie Ereignisse auf Abonnementebene und Azure Service Health. 
+- Sie basieren auf Azure.
+- Sie unterstützen eine Geschäftsfunktion, die auf VM-Workloads oder komplexen Architekturen basiert, in denen Microservices und andere Plattformressourcen verwendet werden.
 
-Außerdem überwachen sie Infrastrukturressourcen wie virtuelle Computer, Speicher- und Netzwerkressourcen. Sie überwachen Ihre Anwendung auf der obersten Ebene. 
+Sie überwachen alle Ebenen des Stapels, beispielsweise Mandantendienste wie Azure Active Directory Domain Services, sowie Ereignisse auf Abonnementebene und Azure Service Health.
+
+Außerdem überwachen sie Infrastrukturressourcen wie virtuelle Computer, Speicher- und Netzwerkressourcen. Sie überwachen Ihre Anwendung auf der obersten Ebene.
 
 Durch die Überwachung jeder dieser Abhängigkeiten und das Erfassen der richtigen Signale, die jede dieser Abhängigkeiten ausgeben kann, stellen Sie die benötigte Überwachung von Anwendungen und der wichtigen Infrastrukturkomponenten sicher.
 
@@ -56,7 +57,7 @@ Azure-Mandant | Azure Active Directory || Aktivieren der Diagnoseprotokollierung
 
 ## <a name="hybrid-cloud-monitoring"></a>Überwachen der Hybrid Cloud
 
-In vielen Organisationen muss der Übergang zur Cloud schrittweise erfolgen. Dabei ist das Hybrid Cloud-Modell der häufigste erste Schritt bei dieser Umstellung. Sie wählen sorgfältig die geeigneten Anwendungen und Infrastrukturkomponenten aus, um mit der Migration zu beginnen, ohne die Geschäftsabläufe zu unterbrechen. Viele IT-Entscheidungsträger sind sich jedoch unsicher, weil wir zwei Überwachungsplattformen anbieten, die dieses Cloudmodell unterstützen – sie sind nicht sicher, welche Plattform zur Unterstützung ihrer Ziele hinsichtlich der Geschäfts- und IT-Ziele am besten geeignet ist. 
+In vielen Organisationen muss der Übergang zur Cloud schrittweise erfolgen. Dabei ist das Hybrid Cloud-Modell der häufigste erste Schritt bei dieser Umstellung. Sie wählen sorgfältig die geeigneten Anwendungen und Infrastrukturkomponenten aus, um mit der Migration zu beginnen, ohne die Geschäftsabläufe zu unterbrechen. Viele IT-Entscheidungsträger sind sich jedoch unsicher, weil wir zwei Überwachungsplattformen anbieten, die dieses Cloudmodell unterstützen – sie sind nicht sicher, welche Plattform zur Unterstützung ihrer Ziele hinsichtlich der Geschäfts- und IT-Ziele am besten geeignet ist.
 
 In diesem Abschnitt gehen wir auf die Unsicherheit ein, indem wir mehrere Faktoren überprüfen und ein Verständnis dafür vermitteln, welche Plattform in Betracht gezogen werden sollte.
 
@@ -74,7 +75,7 @@ In der folgenden Tabelle werden die Anforderungen zusammengefasst, die für Azur
 
 |Anforderung | Azure Monitor | Operations Manager |
 |:--|:---|:---|
-|Infrastrukturanforderungen | Nein | Ja<br> Erfordert mindestens einen Verwaltungsserver sowie eine SQL Server-Instanz, um die operative Datenbank und die Reporting-Data Warehouse-Datenbank zu hosten. Die Komplexität nimmt zu, wenn Hochverfügbarkeit und Notfallwiederherstellung erforderlich sind, und es Computer an mehreren Standorten, nicht vertrauenswürdige Systeme und andere komplexe Entwurfsüberlegungen gibt.|
+|Infrastrukturanforderungen | Nein | Ja<br> Erfordert mindestens einen Verwaltungsserver sowie eine SQL Server-Instanz, um die operative Datenbank und die Reporting-Data Warehouse-Datenbank zu hosten. Die Komplexität nimmt zu, wenn Hochverfügbarkeit und Notfallwiederherstellung erforderlich sind, und es Computer an mehreren Standorten, nicht vertrauenswürdige Systeme und andere komplexe Entwurfsüberlegungen gibt.|
 |Eingeschränkte Konnektivität: kein Internet<br> oder isoliertes Netzwerk | Nein | Ja |
 |Eingeschränkte Konnektivität: kontrollierter Internetzugang | Ja | Ja |
 |Eingeschränkte Konnektivität: häufige Unterbrechungen | Ja | Ja |
@@ -115,7 +116,7 @@ Wenn Sie bereits in Operations Manager investiert haben, müssen Sie sich nicht 
 
 Um die in Azure ausgeführten Workloads zu überwachen, die in Azure ausgeführt werden, benötigen Sie Folgendes:
 
-- Das [Management Pack für Azure](https://www.microsoft.com/download/details.aspx?id=50013). Es erfasst Leistungsmetriken, die von Azure-Diensten wie Web- und Workerrollen, Application Insights-Verfügbarkeitstests (Webtests), Azure Service Bus usw. ausgegeben werden. Das Management Pack nutzt die Azure-REST-API, um die Verfügbarkeit und Leistung dieser Ressourcen zu überwachen. Für einige Typen von Azure-Diensten sind im Azure-Management Pack keine Metriken oder vordefinierte Monitore vorhanden, diese Dienste können aber über die im Management Pack für ermittelte Dienste definierten Beziehungen dennoch überwacht werden.
+- Das [Management Pack für Azure](https://www.microsoft.com/download/details.aspx?id=50013). Es erfasst Leistungsmetriken, die von Azure-Diensten wie Web- und Workerrollen, Application Insights-Verfügbarkeitstests (Webtests), Azure Service Bus usw. ausgegeben werden. Das Management Pack nutzt die Azure-REST-API, um die Verfügbarkeit und Leistung dieser Ressourcen zu überwachen. Für einige Typen von Azure-Diensten sind im Management Pack keine Metriken oder vordefinierte Monitore vorhanden, diese Dienste können aber über die im Azure Management Pack für ermittelte Dienste definierten Beziehungen dennoch überwacht werden.
 
 - Das [Management Pack für Azure SQL-Datenbank](https://www.microsoft.com/download/details.aspx?id=38829) zum Überwachen der Verfügbarkeit und Leistung von Azure SQL-Datenbanken und Azure SQL-Datenbankservern mithilfe der Azure-REST-API und T-SQL-Abfragen in SQL Server-Systemsichten.
 
@@ -137,7 +138,7 @@ Operations Manager kann zwar in Azure gehostete Ressourcen überwachen, aber Azu
 
 #### <a name="advantages-of-using-operations-manager-with-azure-monitor"></a>Vorteile der Verwendung von Operations Manager mit Azure Monitor
 
-- Azure Monitor bietet Möglichkeiten, um die Einschränkungen von Operations Manager zu umgehen. Er ergänzt die Data Warehouse-Datenbank von Operations Manager, indem wichtige Leistungs- und Protokolldaten erfasst werden. Azure Monitor ermöglicht eine bessere Analyse, bietet mehr Leistung (bei der Abfrage großer Datenmengen) sowie eine bessere Aufbewahrung als die Data Warehouse-Datenbank von Operations Manager. 
+- Azure Monitor bietet Möglichkeiten, um die Einschränkungen von Operations Manager zu umgehen. Er ergänzt die Data Warehouse-Datenbank von Operations Manager, indem wichtige Leistungs- und Protokolldaten erfasst werden. Azure Monitor ermöglicht eine bessere Analyse, bietet mehr Leistung (bei der Abfrage großer Datenmengen) sowie eine bessere Aufbewahrung als die Data Warehouse-Datenbank von Operations Manager.
 
   Mit der Abfragesprache von Azure Monitor können Sie wesentlich komplexere und ausgereifte Abfragen erstellen. Sie können Abfragen über TB von Daten innerhalb von Sekunden ausführen. Außerdem können Sie die Daten schnell in Kreisdiagramme, Zeitdiagramme und viele andere Visualisierungen umwandeln. Sie müssen in Operations Manager für die Analyse dieser Daten nicht mehr mit Berichten arbeiten, die auf SQL Server Reporting Services, benutzerdefinierten SQL-Abfragen oder anderen Workarounds basieren.
 
@@ -150,12 +151,11 @@ Operations Manager kann zwar in Azure gehostete Ressourcen überwachen, aber Azu
 - Mit der Zuordnungsfunktion von Azure Monitor für VMs können Sie Standardkonnektivitätsmetriken von Netzwerkverbindungen zwischen den virtuellen Azure-Computern und lokalen virtuellen Computern überwachen. Diese Metriken beinhalten die Antwortzeit, die Anforderungen pro Minute, den Datenverkehrsdurchsatz und Links. Sie können Verbindungsfehler identifizieren, Problembehandlungen, Überprüfungen der Migration und Sicherheitsanalysen durchführen und die allgemeine Architektur des Diensts überprüfen. Mit der Zuordnungsfunktion können Anwendungskomponenten in Windows- und Linux-Systemen automatisch erkannt und die Kommunikation zwischen Diensten zugeordnet werden. Durch diese Automatisierung können Sie bisher unbekannte Verbindungen und Abhängigkeiten ermitteln, die Migration zu Azure planen und überprüfen sowie unsichere Aspekte bei der Behebung von Vorfällen minimieren.
 
 - Durch die Verwendung von Netzwerkleistungsmonitor können Sie die Netzwerkverbindung zwischen folgenden Komponenten überwachen:
+  - Ihrem Unternehmensnetzwerk und Azure
+  - Unternehmenskritischen Multi-Tier-Anwendungen und Microservices.
+  - Benutzerstandorten und webbasierten Anwendungen (HTTP/HTTPS).
 
-   - Ihrem Unternehmensnetzwerk und Azure
-   - Unternehmenskritischen Multi-Tier-Anwendungen und Microservices.
-   - Benutzerstandorten und webbasierten Anwendungen (HTTP/HTTPS).
-
-   Diese Strategie bietet Einblicke in die Netzwerkschicht, ohne dass SNMP erforderlich ist. Außerdem kann die Hop-by-Hop-Topologie von Routen zwischen dem Quell- und dem Zielendpunkt auf einer interaktiven Topologiekarte dargestellt werden. Diese Vorgehensweise ist besser als der Versuch, das gleiche Ergebnis mit der Netzwerküberwachung in Operations Manager oder anderen derzeit in Ihrer Umgebung verwendeten Netzwerküberwachungstools zu erzielen.
+Diese Strategie bietet Einblicke in die Netzwerkschicht, ohne dass SNMP erforderlich ist. Außerdem kann die Hop-by-Hop-Topologie von Routen zwischen dem Quell- und dem Zielendpunkt auf einer interaktiven Topologiekarte dargestellt werden. Diese Vorgehensweise ist besser als der Versuch, das gleiche Ergebnis mit der Netzwerküberwachung in Operations Manager oder anderen derzeit in Ihrer Umgebung verwendeten Netzwerküberwachungstools zu erzielen.
 
 ### <a name="monitor-with-azure-monitor"></a>Überwachung mit Azure Monitor
 
@@ -177,7 +177,7 @@ Eine Migration zur Cloud stellt Sie zwar vor einige Herausforderungen, bietet ab
 
 ## <a name="private-cloud-monitoring"></a>Überwachen der privaten Cloud
 
-Durch Verwendung von System Center Operations Manager wird eine ganzheitliche Überwachung von Azure Stack ermöglicht. Insbesondere können Sie die Workloads überwachen, die im Mandanten, auf Ressourcenebene, auf den virtuellen Computern und in der Infrastruktur ausgeführt werden, die Azure Stack (physische Server und Netzwerkswitches) hostet. 
+Durch Verwendung von System Center Operations Manager wird eine ganzheitliche Überwachung von Azure Stack ermöglicht. Insbesondere können Sie die Workloads überwachen, die im Mandanten, auf Ressourcenebene, auf den virtuellen Computern und in der Infrastruktur ausgeführt werden, die Azure Stack (physische Server und Netzwerkswitches) hostet.
 
 Eine ganzheitliche Überwachung ist außerdem durch eine Kombination der in Azure Stack enthaltenen [Funktionen zur Infrastrukturüberwachung](https://docs.microsoft.com/azure/azure-stack/azure-stack-monitor-health) möglich. Mithilfe dieser Funktionen können Sie die Integrität und Warnungen für eine Azure Stack-Region und den [Azure Monitor-Dienst](https://docs.microsoft.com/azure/azure-stack/user/azure-stack-metrics-azure-data) in Azure Stack anzeigen. Dort werden für die meisten Dienste grundlegende Infrastrukturmetriken und Protokolle bereitgestellt.
 

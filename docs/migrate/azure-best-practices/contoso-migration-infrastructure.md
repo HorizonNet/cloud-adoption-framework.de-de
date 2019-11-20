@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 9d68aca88d9f2ae992616df4b493bcf3c35fc122
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3eace4b20fac9e22fa8aeaa2d4b7f55a33743e47
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566499"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751843"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Bereitstellen einer Migrationsinfrastruktur
 
@@ -780,7 +780,7 @@ Die den ASGs zugeordneten NSGs werden mit geringsten Rechten konfiguriert, um si
 
 **Aktion** | **Name** | **Quelle** | **Ziel** | **Port**
 --- | --- | --- | --- | ---
-Allow | AllowiInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
+Allow | AllowInternetToFE | VNET-HUB-EUS1/IB-TrustZone | APP1-FE 80, 443
 Allow | AllowWebToApp | APP1-FE | APP1-APP | 80, 443
 Allow | AllowAppToDB | APP1-APP | APP1-DB | 1433
 Verweigern | DenyAllInbound | Any | Any | Any

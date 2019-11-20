@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 92b9988d47dcc8ba4b7a7e3dd02a4ec9ff3ed2e9
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 2381a7579fad573abeca6afafd6f6fbaa6310ee4
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565374"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752918"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>Workloadspezialisierung für die Cloudverwaltung
 
@@ -44,9 +44,9 @@ Wenn eine Workloadspezialisierung erforderlich ist, wird die Betriebsverwaltung 
 
 In diesem Modell werden Betriebsaufgaben wie Überwachung, Bereitstellung, DevOps und andere innovationsorientierte Funktionen in eine spezielle für die Anwendungsentwicklung oder eine Geschäftseinheit zuständige Organisation verlagert. Das Cloudplattformteam und das Kernteam für die Cloudüberwachung erfüllen dabei weiterhin alle Anforderungen der Verwaltungsbaseline in der Umgebung.
 
-Diese zentralisierten Teams leiten und unterweisen auch spezialisierte Workloadteams im Hinblick auf den Betrieb ihrer Workloads. Die tägliche operative Verantwortung liegt jedoch bei einem Cloudverwaltungsteam, das sich außerhalb der IT befindet. Diese Art der dezentralen Steuerung ist einer der wichtigsten Indikatoren für die Ausgereiftheit eines Cloud Center of Excellence.
+Diese zentralisierten Teams leiten und unterweisen auch spezialisierte Workloadteams im Hinblick auf den Betrieb ihrer Workloads. Die tägliche operative Verantwortung liegt jedoch bei einem Cloudverwaltungsteam, das sich außerhalb der IT befindet. Diese Art der dezentralen Steuerung ist einer der wichtigsten Indikatoren für die Ausgereiftheit eines Cloudkompetenzzentrums.
 
-## <a name="beyond-platform-specialization---application-insights"></a>Über die Plattformspezialisierung hinaus – Application Insights
+## <a name="beyond-platform-specialization-application-insights"></a>Über die Plattformspezialisierung hinaus: Application Insights
 
 Um einen klar strukturierten Workloadbetrieb zu ermöglichen, sind genauere Angaben zur spezifischen Workload erforderlich. Während der Phase der kontinuierlichen Verbesserung ist Application Insights eine notwendige Ergänzung der Toolkette für die Cloudverwaltung.
 

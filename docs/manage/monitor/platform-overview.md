@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 4d50025ee6030e07ccb2979fff89ebb6569e0aed
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: d7ff166733f0d4544cb229207278f724ca947319
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564954"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751672"
 ---
 # <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>Leitfaden zur Cloudüberwachung: Übersicht über Überwachungsplattformen
 
@@ -26,7 +26,7 @@ Dieser Artikel bietet eine allgemeine Übersicht über unsere Überwachungsplatt
 
 ## <a name="the-story-of-system-center-operations-manager"></a>Die Geschichte von System Center Operations Manager
 
-Im Jahr 2000 sind wir mit Microsoft Operations Manager (MOM) 2000 in den Bereich Operations Management eingestiegen. Im Jahr 2007 haben wir eine überarbeitete Version des Produkts namens System Center Operations Manager auf den Markt gebracht. Sie bot mehr als nur die einfache Überwachung eines Windows-Servers und konzentrierte sich auf die stabile End-to-End-Überwachung von Diensten und Anwendungen, einschließlich heterogene Plattformen, Netzwerkgeräte und anderen Anwendungs- und Dienstabhängigkeiten. Es handelt sich um eine etablierte, unternehmensweite Überwachungsplattform für lokale Umgebungen, die in dieser Branche in derselben Klasse wie IBM Tivoli oder HP Operations Manager angeordnet ist. Sie ist gewachsen, um die Überwachung von Compute- und Plattformressourcen zu unterstützen, die in Azure, Amazon Web Services (AWS) und unter anderen Cloudanbietern ausgeführt werden.
+Im Jahr 2000 sind wir mit Microsoft Operations Manager (MOM) 2000 in den Bereich Operations Management eingestiegen. Im Jahr 2007 haben wir eine überarbeitete Version des Produkts namens System Center Operations Manager auf den Markt gebracht. Sie bot mehr als nur die einfache Überwachung eines Windows-Servers und konzentrierte sich auf die stabile End-to-End-Überwachung von Diensten und Anwendungen, einschließlich heterogene Plattformen, Netzwerkgeräte und anderen Anwendungs- und Dienstabhängigkeiten. Es handelt sich um eine etablierte, unternehmensweite Überwachungsplattform für lokale Umgebungen, die in dieser Branche in derselben Klasse wie IBM Tivoli oder HP Operations Manager angeordnet ist. Sie ist gewachsen, um die Überwachung von Compute- und Plattformressourcen zu unterstützen, die in Azure, Amazon Web Services (AWS) und unter anderen Cloudanbietern ausgeführt werden.
 
 ## <a name="the-story-of-azure-monitor"></a>Die Geschichte von Azure Monitor
 
@@ -74,6 +74,8 @@ Azure Monitor ist ein SaaS-Dienst (Software-as-a-Service), bei dem die gesamte u
 
 ## <a name="data-collection"></a>Datensammlung
 
+<!-- markdownlint-disable MD024 -->
+
 ### <a name="operations-manager"></a>Operations Manager
 
 #### <a name="agents"></a>Agents
@@ -90,7 +92,7 @@ Operations Manager führt die gesamte Überwachung mit Workflows (Regeln, Monito
 
 #### <a name="monitoring-configuration"></a>Überwachungskonfiguration
 
-Management Packs können Hunderte von Regeln, Monitoren und Objektermittlungsregeln enthalten. Ein Agent führt alle diese Überwachungseinstellungen, die durch Ermittlungsregeln bestimmt werden, aus allen entsprechenden Management Packs aus. Jede Instanz der einzelnen Überwachungseinstellungen wird unabhängig voneinander ausgeführt und reagiert sofort auf die von ihr erfassten Daten. Auf diese Weise kann Operations Manager eine zeitnahe Warnung ausgeben und den aktuellen Integritätszustand der überwachten Ressourcen ermitteln.
+Management Packs können Hunderte von Regeln, Monitoren und Objektermittlungsregeln enthalten. Ein Agent führt alle diese Überwachungseinstellungen, die durch Ermittlungsregeln bestimmt werden, aus allen entsprechenden Management Packs aus. Jede Instanz der einzelnen Überwachungseinstellungen wird unabhängig voneinander ausgeführt und reagiert sofort auf die von ihr erfassten Daten. Auf diese Weise kann Operations Manager eine Warnung nahezu in Echtzeit ausgeben und den aktuellen Integritätszustand der überwachten Ressourcen ermitteln.
 
 So kann beispielsweise ein Monitor im Abstand von wenigen Minuten einen Leistungsindikator abfragen. Wenn dieser Indikator einen Schwellenwert überschreitet, wird sofort der Integritätszustand seines Zielobjekts festgelegt, wodurch sofort eine Warnung in der Verwaltungsgruppe ausgelöst wird. Eine geplante Regel kann auf die Erstellung eines bestimmten Ereignisses achten und sofort eine Warnung auslösen, wenn dieses Ereignis im lokalen Ereignisprotokoll erstellt wird.
 
@@ -114,9 +116,9 @@ Insights, z. B. Azure Monitor für Container und Azure Monitor für VMs, nutzt d
 
 Azure Monitor trennt die Datensammlung von für diese Daten ergriffenen Maßnahmen und unterstützt so verteilte Microservices in einer Cloudumgebung. Er konsolidiert Daten aus mehreren Quellen in einer gemeinsamen Datenplattform und ermöglicht Analyse-, Visualisierungs- und Warnungsfunktionen auf der Grundlage dieser gesammelten Daten.
 
-Alle von Azure Monitor gesammelten Daten werden entweder als Protokolle oder Metriken gespeichert, und verschiedene Funktionen von Monitor hängen von diesen Daten ab. Metriken enthalten numerische Werte in Zeitreihen, die sich gut für eine Warnung in nahezu Echtzeit und eine schnelle Erkennung von Problemen eignen. Protokolle enthalten Text oder numerische Daten und werden von einer leistungsfähigen Abfragesprache unterstützt. Dies macht sie besonders nützlich für die Durchführung komplexer Analysen.
+Alle von Azure Monitor gesammelten Daten werden entweder als Protokolle oder Metriken gespeichert, und verschiedene Funktionen von Monitor hängen von diesen Daten ab. Metriken enthalten numerische Werte in Zeitreihen, die sich gut für eine Warnung nahezu in Echtzeit und eine schnelle Erkennung von Problemen eignen. Protokolle enthalten Text oder numerische Daten und werden von einer leistungsfähigen Abfragesprache unterstützt. Dies macht sie besonders nützlich für die Durchführung komplexer Analysen.
 
-Da Monitor die Datensammlung von für diese Daten ergriffenen Maßnahmen trennt, ist es in vielen Fällen ggf. nicht möglich, Warnungen in nahezu Echtzeit bereitzustellen. Um Warnungen zu Protokolldaten zu erhalten, werden Abfragen nach einem Wiederholungszeitplan ausgeführt, der in der Warnung definiert ist. Durch dieses Verhalten kann Azure Monitor Daten aus allen überwachten Quellen einfach korrelieren, und Sie haben die Möglichkeit, Daten auf verschiedene Weise interaktiv zu analysieren. Dies ist besonders hilfreich für die Ursachenanalyse und die Identifizierung von Bedingungen, die Probleme verursachen können.
+Da Monitor die Datensammlung von für diese Daten ergriffenen Maßnahmen trennt, ist es in vielen Fällen ggf. nicht möglich, Warnungen nahezu in Echtzeit bereitzustellen. Um Warnungen zu Protokolldaten zu erhalten, werden Abfragen nach einem Wiederholungszeitplan ausgeführt, der in der Warnung definiert ist. Durch dieses Verhalten kann Azure Monitor Daten aus allen überwachten Quellen einfach korrelieren, und Sie haben die Möglichkeit, Daten auf verschiedene Weise interaktiv zu analysieren. Dies ist besonders hilfreich für die Ursachenanalyse und die Identifizierung von Bedingungen, die Probleme verursachen können.
 
 ## <a name="health-monitoring"></a>Systemüberwachung
 

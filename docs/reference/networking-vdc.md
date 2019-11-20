@@ -10,12 +10,12 @@ ms.subservice: reference
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: e5729e592fe0e602d24e2e37831c782fada73128
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 526c7846de947b9098f7d9d0b7458a314177a9c8
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566684"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753734"
 ---
 # <a name="virtual-datacenters-a-network-perspective"></a>Virtuelle Rechenzentren: Eine Netzwerkperspektive
 
@@ -194,7 +194,7 @@ Das obige Diagramm veranschaulicht die Beziehung zwischen den Projekten, Benutze
 
 In der Regel ist eine Umgebung (oder Ebene) in der IT ein System, in dem mehrere Anwendungen bereitgestellt und ausgeführt werden. Große Unternehmen verwenden eine Entwicklungsumgebung (in der Änderungen vorgenommen und getestet werden) und eine Produktionsumgebung (die die Endbenutzer verwenden). Diese Umgebungen werden häufig durch mehrere Stagingumgebungen getrennt, um die Bereitstellung (Rollout), Tests und den Rollback in Phasen zu ermöglichen, falls Probleme auftreten. Bereitstellungsarchitekturen unterscheiden sich erheblich. In der Regel wird aber dem Grundmuster (Entwicklung (DEV) = Beginn, Produktion (PROD) = Ende) gefolgt.
 
-Eine übliche Architektur für diese Arten von Umgebungen mit mehreren Ebenen besteht aus einer Azure DevOps-Umgebung für Entwicklung und Tests, einer UAT-Umgebung für das Staging und einer Produktionsumgebung. Organisationen können einzelne oder mehrere Azure AD-Mandanten nutzen, um Zugriff und Rechte auf diese Umgebungen zu definieren. Das obige Diagramm veranschaulicht die Verwendung von zwei verschiedenen Azure AD-Mandanten: ein Mandant für Azure DevOps und Benutzerakzeptanztests und ein weiterer Mandant ausschließlich für die Produktion.
+Eine übliche Architektur für diese Arten von Umgebungen mit mehreren Ebenen besteht aus einer Azure DevOps-Umgebung für Entwicklung und Tests, einer UAT-Umgebung für das Staging und einer Produktionsumgebung. Organisationen können einzelne oder mehrere Azure AD-Mandanten nutzen, um Zugriff auf und Rechte für diese Umgebungen zu definieren. Das obige Diagramm veranschaulicht die Verwendung von zwei verschiedenen Azure AD-Mandanten: ein Mandant für Azure DevOps und Benutzerakzeptanztests und ein weiterer Mandant ausschließlich für die Produktion.
 
 Wenn mehrere Azure AD-Mandanten vorhanden sind, müssen die Umgebungen getrennt werden. Für den Zugriff auf einen anderen Azure AD-Mandanten muss sich dieselbe Benutzergruppe (z. B. die zentrale IT) mit einem anderen URI authentifizieren, um die Rollen oder Berechtigungen der Azure DevOps-Umgebung oder der Produktionsumgebung eines Projekts zu ändern. Die Verwendung unterschiedlicher Benutzerauthentifizierungen für den Zugriff auf verschiedene Umgebungen reduziert das Risiko möglicher Ausfälle und anderer Probleme durch menschliches Versagen.
 

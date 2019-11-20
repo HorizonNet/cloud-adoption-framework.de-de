@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 444530a603d7d7e77bb71592a061486db835ea56
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 71632e8f3f995922f4021f216f2090b742141169
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566894"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753523"
 ---
 # <a name="accelerate-migration-by-migrating-an-instance-of-sql-server"></a>Beschleunigen der Migration durch Migrieren einer Instanz von SQL Server
 
@@ -102,7 +102,7 @@ Der empfohlene Pfad für Migration und Synchronisierung verwendet eine Kombinati
 
 ### <a name="guidance-and-tutorials-for-suggested-migration-process"></a>Anleitungen und Tutorials für den empfohlenen Migrationsprozess
 
-Die Entscheidung für die beste Anleitung zur Migration mit Database Migration Service ist von Ihrer ausgewählten Quell- und Zielplattform abhängig. Die folgende Tabelle enthält Links zu Tutorials für die einzelnen Standardansätze zum Migrieren einer SQL-Datenbank mithilfe von Database Migration Service.
+Die Entscheidung für die beste Anleitung zur Migration mit Azure Database Migration Service ist von Ihrer ausgewählten Quell- und Zielplattform abhängig. Die folgende Tabelle enthält Links zu Tutorials für die einzelnen Standardansätze zum Migrieren einer SQL-Datenbank mithilfe von Azure Database Migration Service:
 
 |`Source`  |Ziel  |Tool  |Migrationstyp  |Anleitungen  |
 |---------|---------|---------|---------|---------|
@@ -114,7 +114,7 @@ Die Entscheidung für die beste Anleitung zur Migration mit Database Migration S
 
 ### <a name="guidance-and-tutorials-for-various-services-to-equivalent-paas-solutions"></a>Anleitungen und Tutorials für verschiedene Dienste für äquivalente PaaS-Lösungen
 
-Nach dem Verschieben von Datenbanken von einer SQL Server-Instanz in Database Migration Service können das Schema und die Daten in verschiedenen PaaS-Lösungen erneut gehostet werden. Andere erforderliche Dienste werden jedoch möglicherweise weiterhin auf diesem Server ausgeführt. Die folgenden drei Tutorials unterstützen Sie beim Verschieben von SSIS, SSAS und SSRS in entsprechende PaaS-Dienste in Azure.
+Nach dem Verschieben von Datenbanken von einer SQL Server-Instanz in Azure Database Migration Service können das Schema und die Daten in verschiedenen PaaS-Lösungen erneut gehostet werden. Andere erforderliche Dienste werden jedoch möglicherweise weiterhin auf diesem Server ausgeführt. Die folgenden drei Tutorials unterstützen Sie beim Verschieben von SSIS, SSAS und SSRS in entsprechende PaaS-Dienste in Azure.
 
 |`Source`  |Ziel  |Tool  |Migrationstyp  |Anleitungen  |
 |---------|---------|---------|---------|---------|

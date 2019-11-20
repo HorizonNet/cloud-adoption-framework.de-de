@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 99155a4dba7c51c5fc5d1888798275c47f870d5e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: a8cf7c6bb09d2f4c505e3edcb97a0354a870a730
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566261"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753207"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Sicherheitsbaseline“
 
@@ -98,7 +98,7 @@ Die folgenden Änderungen an der Richtlinie verringern die neuen Risiken und ver
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>Inkrementelle Verbesserungen der bewährten Methoden
 
-In diesem Abschnitt des Artikels wird der Governance-MVP-Entwurf so geändert, dass er neue Azure-Richtlinien und eine Implementierung von Azure Cost Management umfasst. Zusammen erfüllen diese beiden Entwurfsänderungen die neuen Richtlinienanweisungen des Unternehmens.
+In diesem Abschnitt wird der Governance-MVP-Entwurf so geändert, dass er neue Azure-Richtlinien und eine Implementierung von Azure Cost Management umfasst. Zusammen erfüllen diese beiden Entwurfsänderungen die neuen Richtlinienanweisungen des Unternehmens.
 
 Die neuen bewährten Methoden lassen sich in zwei Kategorien unterteilen: Unternehmens-IT (Hub) und Cloudeinführung (Spoke).
 
@@ -134,7 +134,7 @@ In früheren iterativen Änderungen der bewährten Methoden haben wir Netzwerksi
     1. Die Referenzarchitektur aus dem vorherigen Abschnitt [Hub-and-Spoke-Topologie mit Shared Services](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services) generierte eine Resource Manager-Vorlage für die Aktivierung von VNET-Peering.
     2. Diese Vorlage kann als Anleitung zum Ändern der DMZ-Vorlage aus der vorherigen Governanceiteration verwendet werden.
     3. Als Nächstes fügen wir dem DMZ-VNET, das zuvor per VPN mit dem lokalen Edge-Gerät verbunden war, VNET-Peering hinzu.
-    4. *** Es empfiehlt sich außerdem, das VPN aus dieser Vorlage zu entfernen und sicherzustellen, dass kein Datenverkehr direkt an das lokale Rechenzentrum weitergeleitet wird, ohne das Unternehmens-IT-Abonnement und die Firewalllösung zu passieren. Dieses VPN kann auch als Failoververbindung im Falle eines ExpressRoute-Verbindungsausfalls festgelegt werden.
+    4. *** Sie sollten das VPN außerdem aus dieser Vorlage entfernen und sicherstellen, dass kein Datenverkehr direkt an das lokale Rechenzentrum weitergeleitet wird, ohne das Unternehmens-IT-Abonnement und die Firewalllösung zu passieren. Dieses VPN kann auch als Failoververbindung im Falle eines ExpressRoute-Verbindungsausfalls festgelegt werden.
     5. Es ist noch eine zusätzliche [Netzwerkkonfiguration](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) erforderlich, damit Azure Automation DSC auf gehostete virtuelle Computer anwendet.
 2. Ändern Sie die Netzwerksicherheitsgruppe. Blockieren Sie den gesamten öffentlichen **und** den direkten lokalen Datenverkehr in der Netzwerksicherheitsgruppe. Der einzige eingehende Datenverkehr sollte über den VNET-Peer im Unternehmens-IT-Abonnement eintreffen.
     1. In der vorherigen Iteration wurde eine Netzwerksicherheitsgruppe erstellt, die den gesamten öffentlichen Datenverkehr blockiert und den gesamten internen Datenverkehr über eine Whitelist zulässt. Jetzt möchten wir diese Netzwerksicherheitsgruppe etwas verschieben.

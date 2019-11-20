@@ -8,12 +8,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: ea3bcdc521a043affb71375442b9d5f6fe542fa1
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: e4c09cb67872cec6fca8ab395f7ab88e2e0f2064
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565689"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73752104"
 ---
 # <a name="empower-adoption"></a>Unterstützen der Einführung
 
@@ -21,7 +21,7 @@ Der ultimative Test der Innovation ist die Reaktion des Kunden auf Ihre Erfindun
 
 ## <a name="reduce-friction-that-affects-adoption"></a>Verringern von Reibungen, die sich auf die Einführung auswirken
 
-Es gibt einige Hauptreibungspunkte bei der Einführung, die durch eine Kombination aus Technologie und Prozessen minimiert werden können. Für Leser mit Kenntnissen von Continuous Integration (CI) und Continuous Deployment (CD) oder DevOps-Prozessen wird das Folgende sehr vertraut sein. Dieser Artikel soll einen Ausgangspunkt für Cloudeinführungsteams schaffen, der Innovation und Feedbackschleifen anregt. Langfristig könnten aus diesem Ausgangspunkt stabilere CI/CD- oder DevOps-Ansätze entstehen, wenn die Produkte und Teams ausgereift sind.
+Es gibt einige Hauptreibungspunkte bei der Einführung, die durch eine Kombination aus Technologie und Prozessen minimiert werden können. Für Leser mit Kenntnissen von Continuous Integration (CI) und Continuous Deployment (CD) oder DevOps-Prozessen wird das Folgende sehr vertraut sein. Dieser Artikel schafft einen Ausgangspunkt für Cloudeinführungsteams, der Innovation und Feedbackschleifen anregt. Künftig könnten sich auf der Grundlage dieses Ausgangspunkts stabilere CI/CD- oder DevOps-Ansätze entwickeln, wenn die Produkte und Teams ausgereift sind.
 
 Wie unter [Messen der Auswirkungen für Kunden](./measure.md) beschrieben, erfordert die positive Validierung jeder Hypothese Iterationen und Entschlossenheit. Während eines beliebigen Innovationszyklus werden Sie weit mehr Niederlagen als Siege erleben. Dies entspricht dem erwarteten Verhalten. Wenn jedoch Kundenanforderung, Hypothese und Lösung bedarfsabhängig ausgerichtet werden, ändert sich die Welt rasch. Dieser Artikel zielt darauf ab, die [technischen Spitzen](./build.md#reduce-complexity-and-delay-technical-spikes) zu minimieren, die die Innovation bremsen, aber dennoch sicherzustellen, dass Sie einige solide bewährte Methoden anwenden. Auf diese Weise kann das Team Entwürfe für einen zukünftigen Erfolg entwickeln und dabei die aktuellen Anforderungen der Kunden erfüllen.
 
@@ -69,7 +69,7 @@ Erfahren Sie mehr über [Continuous Integration](https://docs.microsoft.com/azur
 
 Fehler in einer Lösung können falsch positive oder falsch negative Ergebnisse erzeugen. Unerwartete Fehler können leicht zur Fehlinterpretation von Benutzerakzeptanzmetriken führen. Sie können auch zu negativem Feedback von Kunden führen, das den Test ihrer Hypothese nicht richtig wiedergibt.
 
-Während der frühen Iterationen einer MVP-Lösung werden Fehler erwartet; Early Adopters könnten sie vielleicht sogar gern verzeihen. In frühen Releases finden in der Regel keine Akzeptanztests statt. Ein Aspekt des Entwickelns von Lösungen mit Blick auf die Kundenanforderungen ist jedoch die Validierung von Anforderung und Hypothese. Beides kann mit Komponententests auf Codeebene und manuellen Akzeptanztests vor der Bereitstellung durchgeführt werden. Zusammen tragen sie zur Zuverlässigkeit des Testens bei. Längerfristig sollten Sie eine klar definierte Reihe von Build-, Komponenten- und Akzeptanztests automatisieren. Diese stellen zuverlässige Metriken im Zusammenhang mit präziseren Anpassungen an die Hypothese und die resultierende Lösung sicher.
+Während der frühen Iterationen einer MVP-Lösung werden Fehler erwartet; Early Adopters könnten sie vielleicht sogar gern verzeihen. In frühen Releases finden in der Regel keine Akzeptanztests statt. Ein Aspekt des Entwickelns von Lösungen mit Blick auf die Kundenanforderungen ist jedoch die Validierung von Anforderung und Hypothese. Beides kann mit Komponententests auf Codeebene und manuellen Akzeptanztests vor der Bereitstellung durchgeführt werden. Zusammen tragen sie zur Zuverlässigkeit des Testens bei. Sie sollten eine klar definierte Reihe von Build-, Komponenten- und Akzeptanztests automatisieren. Diese stellen zuverlässige Metriken im Zusammenhang mit präziseren Anpassungen an die Hypothese und die resultierende Lösung sicher.
 
 Das Feature [Azure Test Plans](https://docs.microsoft.com/azure/devops/test/track-test-status?view=azure-devops) bietet Tools zum Entwickeln und Einsetzen von Testplänen während der manuellen oder automatisierten Testausführung.
 

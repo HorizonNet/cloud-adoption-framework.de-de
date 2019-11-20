@@ -8,12 +8,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: df31cb73ec601c52f0f925d09a56f0af7aaf1513
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: a7f119dcfd2b7cdfc71b8a4c6f913448cd98e763
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565225"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753614"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Bewährte Methoden zum Einrichten von Netzwerken für zu Azure migrierte Workloads
 
@@ -85,7 +85,7 @@ Um Isolation innerhalb eines VNET bereitzustellen, segmentieren Sie es in mindes
 - Ihre Subnetzentscheidungen basieren auf Ihren technischen und organisatorischen Anforderungen.
 - Sie erstellen Subnetze mithilfe der CIDR-Notation.
 - Beim Treffen der Entscheidung zum Netzwerkbereich für Subnetze ist unbedingt zu beachten, dass Azure aus jedem Subnetz fünf IP-Adressen zurückbehält, die nicht verwendet werden können. Wenn Sie beispielsweise das kleinste verfügbare Subnetz von /29 (mit acht IP-Adressen) erstellen, behält Azure fünf Adressen zurück, sodass Sie nur über drei verwendbare Adressen verfügen, die den Hosts im Subnetz zugewiesen werden können.
-- In den meisten Fällen wird die Verwendung von /28 als kleinstes Subnetz empfohlen.
+- In den meisten Fällen verwenden Sie /28 als das kleinste Subnetz.
 
 **Beispiel:**
 
@@ -160,8 +160,8 @@ Für eine erfolgreiche Migration ist es wichtig, eine Verbindung zwischen lokale
 
 Zum Implementieren eines Site-to-Site-VPN richten Sie ein VPN-Gateway in Azure ein.
 
-- Ein VPN-Gateway ist eine spezielle Art von VNET-Gateway, das verwendet wird, um verschlüsselten Datenverkehr zwischen einem Azure-VNET und einem lokalen Standort über das öffentliche Internet zu senden.
-- Ein VPN-Gateway kann aber auch verwendet werden, um verschlüsselten Datenverkehr zwischen Azure-VNETs über das Microsoft-Netzwerk zu senden.
+- Ein VPN-Gateway ist eine spezielle Art von VNET-Gateway, das verschlüsselten Datenverkehr zwischen einem Azure-VNET und einem lokalen Standort über das öffentliche Internet sendet.
+- Ein VPN-Gateway kann aber auch verschlüsselten Datenverkehr zwischen Azure-VNETs über das Microsoft-Netzwerk senden.
 - Jedes VNET kann nur ein einzelnes VPN-Gateway besitzen.
 - Sie können mehrere Verbindungen mit dem gleichen VPN-Gateway herstellen. Wenn Sie mehrere Verbindungen herstellen, wird die für das Gateway zur Verfügung stehende Bandbreite auf alle VPN-Tunnel aufgeteilt.
 - Jede Azure-VPN-Gateway-Instanz umfasst zwei VM-Instanzen in einer Konfiguration mit aktivem Standbymodus.
@@ -175,7 +175,7 @@ Beim Einrichten eines Site-to-Site-VPN gehen Sie folgendermaßen vor:
 
 - Sie benötigen ein VNET, dessen Adressraum sich mit dem lokalen Netzwerk, mit dem das VPN eine Verbindung herstellen soll, nicht überschneidet.
 - Sie erstellen ein Gatewaysubnetz im Netzwerk.
-- Sie erstellen ein VPN-Gateway, geben den Gatewaytyp (VPN) an und legen fest, ob es sich um ein richtlinienbasiertes oder um ein routenbasiertes Gateway handelt. Ein RouteBased-VPN ist leistungsstärker und zukunftssicherer und wird daher empfohlen.
+- Sie erstellen ein VPN-Gateway, geben den Gatewaytyp (VPN) an und legen fest, ob es sich um ein richtlinienbasiertes oder um ein routenbasiertes Gateway handelt. Ein routenbasiertes VPN wird als leistungsstärker und zukunftssicherer angesehen.
 - Sie erstellen ein lokales Netzwerkgateway und konfigurieren Ihr lokales VPN-Gerät.
 - Sie erstellen eine Site-to-Site-VPN-Failoververbindung zwischen dem VNET-Gateway und dem lokalen Gerät. Die Verwendung eines routenbasierten VPN ermöglicht Aktiv/Passiv- oder Aktiv/Aktiv-Verbindungen mit Azure. Ein routenbasiertes VPN unterstützt parallel sowohl Site-to-Site- (von einem beliebigen Computer aus) als auch Point-to-Site-Verbindungen (von einem einzigen Computer aus).
 - Sie geben die gewünschte Gateway-SKU aus. Diese richtet sich nach Ihren Workloadanforderungen, Durchsätzen, Features und SLAs.

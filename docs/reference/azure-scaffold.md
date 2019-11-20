@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 79d784b65a2006559efc9f074b319ea67de67db0
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: 799ab1ba0d0b99ed5427d2c986c4fae9659a5b05
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656664"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753770"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure-Unternehmensgerüst: Präskriptive Abonnementgovernance
 
@@ -195,13 +195,13 @@ Das [Azure Security Center](https://docs.microsoft.com/azure/security-center/sec
 > [!TIP]
 >Azure Security Center ist ein sehr leistungsfähiges Tool, das fortlaufend mit neuen Funktionen verbessert wird, mit denen Sie Bedrohungen erkennen und Ihr Unternehmen schützen können. Es wird dringend empfohlen, Azure Security Center stets zu aktivieren.
 
-### <a name="azure-resource-locks"></a>Azure-Ressourcensperren
+### <a name="locks-for-azure-resources"></a>Sperren für Azure-Ressourcen
 
-Je mehr zentrale Dienste Ihre Organisation zu Abonnements hinzufügt, desto wichtiger wird es, eine Unterbrechung des Geschäftsbetriebs zu vermeiden. Eine Art der Unterbrechung, die sich häufig beobachten lässt, ist eine unbeabsichtigte Folge der Verwendung von Skripts und Tools für ein Azure-Abonnement, wodurch versehentlich Ressourcen gelöscht werden. Mit [Ressourcensperren](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources) können Sie Vorgänge für wertvolle Ressourcen einschränken, bei denen eine Änderung oder Löschung erhebliche Auswirkungen hätte. Sperren können auf ein Abonnement, eine Ressourcengruppe oder sogar auf einzelne Ressourcen angewendet werden. Am häufigsten werden Sperren auf grundlegende Ressourcen wie virtuelle Netzwerke, Gateways, Netzwerksicherheitsgruppen und wichtige Speicherkonten angewendet.
+Je mehr zentrale Dienste Ihre Organisation zu Abonnements hinzufügt, desto wichtiger wird es, eine Unterbrechung des Geschäftsbetriebs zu vermeiden. Eine häufige Unterbrechung tritt auf, wenn ein in einem Azure-Abonnement ausgeführte Skript oder Tool unbeabsichtigt eine Ressource löscht. Mit [Sperren](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources) werden Vorgänge für wertvolle Ressourcen eingeschränkt, bei denen eine Änderung oder Löschung erhebliche Auswirkungen hätte. Sie können Sperren auf Abonnements, Ressourcengruppen oder einzelne Ressourcen anwenden. Wenden Sie Sperren auf grundlegende Ressourcen wie virtuelle Netzwerke, Gateways, Netzwerksicherheitsgruppen und wichtige Speicherkonten an.
 
-### <a name="secure-devops-toolkit"></a>Secure DevOps Toolkit
+### <a name="secure-devops-kit-for-azure"></a>Secure DevOps Kit for Azure
 
-Das „Secure DevOps Kit for Azure“ (AzSK) ist eine Sammlung aus Skripts, Tools, Erweiterungen und Automatisierungen, die ursprünglich intern vom IT-Team von Microsoft erstellt und über [GitHub als Open Source veröffentlicht wurden](https://github.com/azsk/DevOpsKit-docs). Das AzSK erfüllt alle Sicherheitsanforderungen von Azure-Abonnements und -Ressourcen für Teams, indem es eine umfassende Automatisierung und eine nahtlose Integration der Sicherheit in native DevOps-Workflows bietet. So sorgt es für sichere DevOps-Prozesse mit diesen sechs Schwerpunktbereichen:
+Das „Secure DevOps Kit for Azure“ (AzSK) ist eine Sammlung aus Skripts, Tools, Erweiterungen und Automatisierungen, die ursprünglich intern vom IT-Team von Microsoft erstellt und über [GitHub als Open Source veröffentlicht wurden](https://github.com/azsk/devopskit-docs). Das AzSK erfüllt alle Sicherheitsanforderungen von Azure-Abonnements und -Ressourcen für Teams, indem es eine umfassende Automatisierung und eine nahtlose Integration der Sicherheit in native DevOps-Workflows bietet. So sorgt es für sichere DevOps-Prozesse mit diesen sechs Schwerpunktbereichen:
 
 - Sichern des Abonnements
 - Ermöglichen einer sicheren Entwicklung
@@ -210,7 +210,7 @@ Das „Secure DevOps Kit for Azure“ (AzSK) ist eine Sammlung aus Skripts, Tool
 - Warnung und Überwachung
 - Governance zum Senken von Cloudrisiken
 
-![Azure DevOps Toolkit](../_images/reference/secure-devops-kit.png)
+![Übersichtsdiagramm des Secure DevOps Kit for Azure](../_images/reference/secure-devops-kit.png)
 
 Das AzSK umfasst eine Vielzahl von Tools, Skripts und Informationen, die ein wichtiger Bestandteil einer umfangreichen Azure-Governanceplanung sind. Um die Ziele Ihrer Organisation hinsichtlich des Risikomanagements zu unterstützen, ist es von entscheidender Bedeutung, dieses Toolkit in Ihr Gerüst einzubauen.
 

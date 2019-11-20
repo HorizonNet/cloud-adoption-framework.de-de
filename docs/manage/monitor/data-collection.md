@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 05596379872fbfa9099297a55d4b75dedc0b672a
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 950b767101fea9b33875f1ad0938599a4f371ba9
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564944"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73751527"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>Leitfaden zur Cloudüberwachung: Erfassen der richtigen Daten
 

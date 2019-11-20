@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7a71b5694849533b6a01b98d9e14d5022e7287f8
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8815a9089b63fe20d2d79c5ef979ff5d41166192
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564568"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753436"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>Planungscheckliste für die Migrationsumgebung: Überprüfen der Umgebungsbereitschaft vor der Migration
 
@@ -52,7 +52,7 @@ Vor der Migration sollten ein einheitlicher Ansatz für die Benennung von Ressou
 
 ### <a name="resource-governance"></a>Ressourcenkontrolle
 
-Vor der Migration sollte eine Entscheidung über die Tools zur Ressourcenverwaltung getroffen werden. Die Tools müssen nicht vollständig implementiert sein, doch sollte eine Richtung ausgewählt und getestet sein. Es wird empfohlen, dass das Cloudgovernanceteam vor der Migration die Implementierung eines Minimum Viable Product (MVP) für Governancetools definiert und anfordert.
+Vor der Migration sollte eine Entscheidung über die Tools zur Ressourcenverwaltung getroffen werden. Die Tools müssen nicht vollständig implementiert sein, doch sollte eine Richtung ausgewählt und getestet sein. Das Cloudgovernanceteam sollte vor der Migration die Implementierung eines Minimum Viable Product (MVP) für Governancetools definieren und anfordern.
 
 ## <a name="network"></a>Netzwerk
 

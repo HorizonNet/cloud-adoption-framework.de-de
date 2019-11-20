@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a320562f97b6e3a37e0f1b4912f1401189855530
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7383f07f4d52cef640bcb1e617de60697a20b248
+ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566927"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73753476"
 ---
 # <a name="balance-the-portfolio"></a>Ausgewogenheit des Portfolios
 
@@ -76,7 +76,7 @@ Die Ausgewogenheit des Portfolios erfordert eine zusätzliche qualitative Analys
 
 Anhand der Daten aus der Tabelle im obigen Abschnitt [Dokumentieren von Geschäftsergebnissen](#document-business-outcomes) besteht ein gewisses Risiko, dass das Portfolio zu weit zu einem migrationsfokussierten Ausführungsmodell tendiert. Wenn Benutzerfreundlichkeit oberste Priorität ist, wäre ein innovationslastiges Portfolio wahrscheinlicher. Keines von beiden ist falsch oder richtig, aber eine zu ausgeprägte Tendenz in eine Richtung führt in der Regel zu einer abnehmenden Rendite, unnötiger Steigerung der Komplexität und verlängert die Ausführungszeit relativ zum Cloudeinführungsaufwand.
 
-Um die Komplexität zu reduzieren, sollte der Leser einen herkömmlichen Ansatz zur Portfoliorationalisierung beschreiten, aber in einem iterativen Modell. Die folgenden Schritte skizzieren ein qualitatives Modell für einen solchen Ansatz:
+Um die Komplexität zu reduzieren, sollten Sie einen herkömmlichen Ansatz zur Portfoliorationalisierung verfolgen, aber in einem iterativen Modell. Die folgenden Schritte skizzieren ein qualitatives Modell für einen solchen Ansatz:
 
 - Das Cloudstrategieteam behält ein priorisiertes Backlog zu migrierender Workloads bei.
 - Das Cloudstrategieteam und das Cloudeinführungsteam halten vor dem Abschluss jeder Freigabe eine Freigabeplanungsbesprechung ab.
@@ -90,7 +90,7 @@ Um die Komplexität zu reduzieren, sollte der Leser einen herkömmlichen Ansatz 
   - Ist die Workload mit modernen Anwendungsplattformen wie Azure App Service kompatibel?
 - Die Antworten auf die oben genannten Fragen und beliebige andere erforderliche qualitativen Analysen würden sich dann auf Anpassungen des priorisierten Backlogs auswirken. Diese Anpassungen können Folgendes umfassen:
   - Wenn eine Workload mit einer PaaS-Lösung ersetzt werden könnte, könnte sie vollständig aus dem Migrationsbacklog entfernt werden. Mindestens würde eine zusätzliche Sorgfaltspflicht, zwischen Zuweisen eines neuen Hosts und Ersetzen zu entscheiden, als Aufgabe hinzugefügt, die vorübergehend die Priorität der Workload im Migrationsbacklog verringern würde.
-  - Wenn eine Workload einer Entwicklungsverbesserung unterzogen wird (oder werden sollte), passt sie am besten in ein Umgestaltungs-/Überarbeitungs-/Neuerstellungsmodell. Da Innovation und Migration unterschiedliche technische Fähigkeiten erfordern, wird oft empfohlen, dass Anwendungen, die einem Umgestaltungs-/Überarbeitungs-/Neuerstellungsansatz entsprechen, über ein Innovationsbacklog statt über ein Migrationsbacklog verwaltet werden.
+  - Wenn eine Workload einer Entwicklungsverbesserung unterzogen wird (oder werden sollte), passt sie am besten in ein Umgestaltungs-/Überarbeitungs-/Neuerstellungsmodell. Da Innovation und Migration unterschiedliche technische Fähigkeiten erfordern, sollten Anwendungen, die einem Umgestaltungs-/Überarbeitungs-/Neuerstellungsansatz entsprechen, über ein Innovationsbacklog statt über ein Migrationsbacklog verwaltet werden.
   - Wenn eine Workload Teil einer Downstreaminnovation ist, kann es sinnvoll sein, die Datenplattform umzugestalten, aber die Anwendungsschichten als Kandidaten für das Zuweisen eines neuen Hosts zu belassen. Eine geringfügige Umgestaltung der Datenplattform einer Workload kann oft in einem Migrations- oder Innovationsbacklog behandelt werden. Dieses Rationalisierungsergebnis kann zu detaillierteren Arbeitselementen im Backlog führen, aber ansonsten keine Prioritäten ändern.
   - Wenn eine Workload nicht strategisch, aber mit modernen, cloudbasierten Anwendungshostingplattformen kompatibel ist, kann es möglicherweise besser sein, eine geringfügige Umgestaltung der Anwendung durchzuführen, um sie als moderne App bereitzustellen. Dies kann durch Verringern der gesamten IaaS- und BS-Lizenzierungsanforderungen der Migration zur Cloud zu den gesamten Einsparungen beitragen.
   - Wenn eine Workload eine Drittanbieteranwendung ist und die Daten dieser Workload nicht für die Verwendung in einer Downstreaminnovation eingeplant sind, kann es das Beste sein, sie als Option zum Zuweisen eines neuen Hosts im Backlog zu belassen.
