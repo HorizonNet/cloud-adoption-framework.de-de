@@ -5,17 +5,17 @@ description: Verstehen Sie Rechnungen, und erfahren Sie, wie Sie Budgets und Zah
 author: dchimes
 ms.author: kfollis
 ms.date: 04/09/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: c9a02a6d98929455d8d8f6c163825f69de7996be
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 51d2ae124089ee1afa07e64b2e72bb1eb608bebb
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73562577"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251682"
 ---
 # <a name="manage-costs-and-billing-for-your-azure-resources"></a>Verwalten von Kosten und Abrechnung für Ihre Azure-Ressourcen
 

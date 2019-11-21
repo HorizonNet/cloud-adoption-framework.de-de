@@ -5,17 +5,17 @@ description: Bewährte Methoden zur Vereinfachung der Verwaltung Ihrer Azure-Res
 author: laraaleite
 ms.author: kfollis
 ms.date: 04/09/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: be2cb79383748050e2b3b4506da53c42320847f6
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 393c80c684de13cf27cba738a8e539533de57d38
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239819"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251410"
 ---
 # <a name="organize-your-azure-resources"></a>Organisieren Ihrer Azure-Ressourcen
 
