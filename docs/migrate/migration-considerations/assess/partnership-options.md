@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 60f622411a71284fa8e97f457da2461ec6e02ac3
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 70ae0b048b0cf5e3bd364f8c0cc1051c515c39ea
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564648"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159891"
 ---
 # <a name="understand-partnership-options"></a>Verstehen der Optionen für Partnerschaften
 

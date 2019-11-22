@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: caa9d3ced70ce15eacf37b4bcbb653efae9da1ef
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: 59b60af79d81316726ffed1dcf326641af059cb0
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656691"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160482"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Governance-Entwurf für mehrere Teams
 
@@ -82,21 +82,22 @@ Zum Erstellen eines Modells für den Zugriff mit der geringsten Berechtigung mü
 Wir sehen uns zwei Beispiele für Berechtigungsmodelle an, um dieses Konzept etwas besser zu verstehen. Im ersten Beispiel vertraut das Modell bei der Erstellung von Ressourcengruppen nur dem Dienstadministrator. Im zweiten Beispiel weist das Modell jedem Workloadbesitzer im Abonnementbereich die integrierte Rolle „Besitzer“ zu.
 
 In beiden Beispielen wird einem Dienstadministrator des Abonnements die integrierte Rolle „Besitzer“ im Abonnementbereich zugewiesen. Wir erinnern uns, dass mit der integrierte Rolle „Besitzer“ alle Berechtigungen gewährt werden, einschließlich des Zugriffs auf Ressourcen.
+
 ![Abonnement-Dienstadministrator mit Besitzerrolle](../../_images/govern/design/governance-2-1.png)
 *Abbildung 3: Ein Abonnement mit einem Dienstadministrator, dem die integrierte Rolle „Besitzer“ zugewiesen ist.*
 
 1. Im ersten Beispiel verfügt **Workloadbesitzer A** über keine Berechtigungen für den Abonnementbereich. Er hat standardmäßig keine Verwaltungsrechte für den Ressourcenzugriff. Dieser Benutzer möchte die Ressourcen für seine Workload bereitstellen und verwalten. Er muss sich an den **Dienstadministrator** wenden, um die Erstellung einer Ressourcengruppe anzufordern.
-    ![Workloadbesitzer fordert Erstellung von Ressourcengruppe A an](../../_images/govern/design/governance-2-2.png)
+    ![Workloadbesitzer fordert Erstellung von Ressourcengruppe A an.](../../_images/govern/design/governance-2-2.png)
 2. Der **Dienstadministrator** prüft die Anforderung und erstellt die **Ressourcengruppe A**. **Workloadbesitzer A** verfügt an diesem Punkt immer noch nicht über Berechtigungen zur Durchführung von Aktionen.
-    ![Dienstadministrator erstellt Ressourcengruppe A](../../_images/govern/design/governance-2-3.png)
+    ![Dienstadministrator erstellt Ressourcengruppe A.](../../_images/govern/design/governance-2-3.png)
 3. Der **Dienstadministrator** fügt **Workloadbesitzer A** der **Ressourcengruppe A** hinzu und weist die [integrierte Rolle „Mitwirkender“](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) zu. Mit der Rolle „Mitwirkender“ werden alle Berechtigungen für **Ressourcengruppe A** gewährt, mit Ausnahme der Berechtigung für die Verwaltung des Zugriffs.
-    ![Dienstadministrator fügt Workloadbesitzer A der Ressourcengruppe A hinzu](../../_images/govern/design/governance-2-4.png)
+    ![Dienstadministrator fügt Workloadbesitzer A der Ressourcengruppe A hinzu.](../../_images/govern/design/governance-2-4.png)
 4. Angenommen, für **Workloadbesitzer A** besteht die Anforderung, dass zwei Teammitglieder im Rahmen der Kapazitätsplanung für die Workload Daten zur Überwachung der CPU und des Netzwerkdatenverkehrs anzeigen müssen. Da **Workloadbesitzer A** die Rolle „Mitwirkender“ zugewiesen wurde, verfügt er nicht über die Berechtigung zum Hinzufügen eines Benutzers zu **Ressourcengruppe A**. Er muss diese Anforderung an den **Dienstadministrator** senden.
-    ![Workloadbesitzer fordert an, dass Mitwirkende der Workload der Ressourcengruppe hinzugefügt werden](../../_images/govern/design/governance-2-5.png)
+    ![Workloadbesitzer fordert an, dass Mitwirkende der Workload der Ressourcengruppe hinzugefügt werden.](../../_images/govern/design/governance-2-5.png)
 5. Der **Dienstadministrator** überprüft die Anforderung und fügt **Ressourcengruppe A** die beiden **Mitwirkenden der Workload** hinzu. Da für keinen dieser beiden Benutzer eine Berechtigung zum Verwalten von Ressourcen erforderlich ist, wird ihnen die [integrierte Rolle „Leser“](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) zugewiesen.
-    ![Dienstadministrator fügt Mitwirkende der Workload der Ressourcengruppe A hinzu](../../_images/govern/design/governance-2-6.png)
+    ![Dienstadministrator fügt Mitwirkende der Workload der Ressourcengruppe A hinzu.](../../_images/govern/design/governance-2-6.png)
 6. Als Nächstes benötigt **Workloadbesitzer B** außerdem eine Ressourcengruppe für die Ressourcen der Workload. Wie bei **Workloadbesitzer A** auch, verfügt **Workloadbesitzer B** anfänglich nicht über die Berechtigung zur Durchführung einer Aktion im Abonnementbereich, sodass er eine Anforderung an den **Dienstadministrator** senden muss.
-    ![Workloadbesitzer B fordert die Erstellung von Ressourcengruppe B an](../../_images/govern/design/governance-2-7.png)
+    ![Workloadbesitzer B fordert die Erstellung von Ressourcengruppe B an.](../../_images/govern/design/governance-2-7.png)
 7. Der **Dienstadministrator** prüft die Anforderung und erstellt **Ressourcengruppe B**.  ![Dienstadministrator erstellt Ressourcengruppe B](../../_images/govern/design/governance-2-8.png)
 8. Der **Dienstadministrator** fügt dann **Workloadbesitzer B** der **Ressourcengruppe B** hinzu und weist die integrierte Rolle „Mitwirkender“ zu.
     ![Dienstadministrator fügt Workloadbesitzer B der Ressourcengruppe B hinzu](../../_images/govern/design/governance-2-9.png)

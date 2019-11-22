@@ -5,17 +5,17 @@ description: Informieren Sie sich über Innovation durch Einbinden von Kunden ü
 author: billyclaymyersmsft
 ms.author: wimyers
 ms.date: 10/17/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: bafeecd715ac2c18c9ae744165be249c2b3639e5
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 09d5828e7b90a7530158b7f031e4f6f25d4b1d96
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73751561"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251917"
 ---
 ::: zone target="docs"
 
@@ -122,7 +122,7 @@ Visual Studio App Center bietet auch einen Benachrichtigungsdienst, bei dem mit 
 ### <a name="learn-more"></a>Weitere Informationen
 
 - [App Service: Übersicht](https://docs.microsoft.com/azure/app-service/overview)
-- [Web-Apps für Container: Ausführen eines benutzerdefinierten Containers](https://docs.microsoft.com/azure/app-service/containers/quickstart-docker)
+- [Web-App für Container: Ausführen eines benutzerdefinierten Containers](https://docs.microsoft.com/azure/app-service/containers/quickstart-docker)
 - [Einführung in Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview)
 - [Azure für .NET- und .NET Core-Entwickler](https://docs.microsoft.com/dotnet/azure/?view=azure-dotnet)
 - [Dokumentation für das Azure-SDK für Python](https://docs.microsoft.com/azure/python)

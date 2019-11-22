@@ -8,16 +8,16 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 1742f794f12501a1506cc6228241435adc5fba52
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 219c5b402c9cdc4b6214e8a5ed38b85ba7a2e203
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565152"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160358"
 ---
 # <a name="business-criticality-in-cloud-management"></a>Geschäftliche Wichtigkeit der Cloudverwaltung
 
-In jedem Unternehmen gibt es eine kleine Anzahl von Workloads, die so wichtig sind, dass sie nicht ausfallen dürfen. Diese werden als unternehmenskritisch betrachtet. Wenn bei diesen Workloads Ausfälle oder Leistungsbeeinträchtigungen auftreten, sind die negativen Auswirkungen auf Umsatz und Rentabilität im gesamten Unternehmen zu spüren.
+In jedem Unternehmen gibt es eine kleine Anzahl von Workloads, die so wichtig sind, dass sie nicht ausfallen dürfen. Diese Workloads gelten als unternehmenskritisch. Wenn bei diesen Workloads Ausfälle oder Leistungsbeeinträchtigungen auftreten, sind die negativen Auswirkungen auf Umsatz und Rentabilität im gesamten Unternehmen zu spüren.
 
 Am anderen Ende des Spektrums gibt es einige Workloads, die monatelang nicht verwendet werden. Ausfälle oder Leistungseinbußen solcher Workloads sind zwar nicht wünschenswert, aber die Auswirkungen sind isoliert und begrenzt.
 

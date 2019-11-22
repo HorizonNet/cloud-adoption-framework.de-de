@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4bd04de2bd773e3fc02fbab5264ae60f275a8e7d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6f809003c1181c925a5b86abfb162a6032614f53
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564580"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159855"
 ---
 # <a name="decisions-that-affect-migration"></a>Entscheidungen, die sich auf die Migration auswirken
 
@@ -80,8 +80,8 @@ Häufig ist ein zwingendes und zeitkritisches Geschäftsereignis der Grund für 
 Dokumentieren Sie vor dem Fortfahren die folgenden Annahmen, und teilen Sie diese dem Cloudstrategieteam und den Cloudeinführungsteams mit:
 
 - Geschäftsergebnisse.
-- Rollen. Diese werden für die Migrationsprozesse *Bewerten*, *Migrieren*, *Optimieren* und *Sichern und Verwalten* dokumentiert und präzisiert.
-- Definition von „Fertig“. Diese wird für die Migrationsprozesse *Bewerten*, *Migrieren*, *Optimieren* und *Sichern und Verwalten* separat dokumentiert und präzisiert.
+- Rollen, die für die Migrationsprozesse *Bewerten*, *Migrieren*, *Optimieren* und *Sichern und Verwalten* dokumentiert und präzisiert sind.
+- Definition of Done, für die Migrationsprozesse *Bewerten*, *Migrieren*, *Optimieren* und *Sichern und Verwalten* separat dokumentiert und präzisiert.
 - Aufwandstyp.
 - Aufwandsumfang.
 - Zeitliche Festlegung des Aufwands.

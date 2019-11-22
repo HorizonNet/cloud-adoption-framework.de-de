@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 05b713c2f1f88f50829e38db8a0a0343d3afd32d
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 7df4792fda1436d822108dc20d422e6912a0709f
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753514"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159876"
 ---
 # <a name="evaluate-workload-readiness"></a>Bewerten der Bereitschaft einer Workload
 
@@ -23,7 +23,7 @@ Diese Aktivität konzentriert sich auf das Bewerten der Bereitschaft einer Workl
 
 Der Großteil des Inhalts, der Prinzipien im Framework für die Cloudeinführung zum Thema hat, ist cloudunabhängig gehalten. Der Prozess zum Bewerten der Bereitschaft jedoch muss weitgehend spezifisch für die jeweilige Cloudplattform sein. Bei den folgenden Anleitungen wird von einer Migration nach Azure ausgegangen. Außerdem wird die Verwendung von Azure Migrate (auch bekannt als Azure Site Recovery) für [Replikationsaktivitäten](../migrate/replicate.md) vorausgesetzt. Informationen zu alternativen Tools finden Sie unter [Replikationsoptionen](../migrate/replicate-options.md).
 
-Dieser Artikel ist nicht als Auflistung aller möglichen Bewertungsaktivitäten gedacht. Es wird davon ausgegangen, dass jede Umgebung und jedes Geschäftsergebnis spezifische Anforderungen stellt. Um die Aufstellung dieser Anforderungen zu beschleunigen, sind im restlichen Teil dieses Artikels einige allgemeine Bewertungsaktivitäten im Zusammenhang mit der Bewertung von [Infrastruktur](#common-infrastructure-evaluation-activities), [Datenbank](#common-database-evaluation-activities) und [Netzwerk](#common-network-evaluation-activities) aufgeführt.
+Dieser Artikel ist keine Auflistung aller möglichen Bewertungsaktivitäten. Es wird davon ausgegangen, dass jede Umgebung und jedes Geschäftsergebnis spezifische Anforderungen stellt. Um die Aufstellung dieser Anforderungen zu beschleunigen, sind im restlichen Teil dieses Artikels einige allgemeine Bewertungsaktivitäten im Zusammenhang mit der Bewertung von [Infrastruktur](#common-infrastructure-evaluation-activities), [Datenbank](#common-database-evaluation-activities) und [Netzwerk](#common-network-evaluation-activities) aufgeführt.
 
 ## <a name="common-infrastructure-evaluation-activities"></a>Allgemeine Bewertungsaktivitäten für die Infrastruktur
 

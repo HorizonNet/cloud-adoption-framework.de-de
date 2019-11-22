@@ -9,20 +9,20 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: c1819bafaed5e75e6667754d598b075eb3204925
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 1bd332898140d032525935cd8cfc96cb1d46e54e
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564318"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160494"
 ---
 # <a name="cloud-center-of-excellence"></a>Cloudkompetenzzentrum
 
-Die Erzielung von geschäftlicher und technischer Flexibilität ist ein wichtiges Ziel der meisten IT-Organisationen. Das Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) ist eine Funktion, mit der eine möglichst gute Balance zwischen Geschwindigkeit und Stabilität erreicht werden soll.
+Die Erzielung von geschäftlicher und technischer Flexibilität ist ein wichtiges Ziel der meisten IT-Organisationen. Ein Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) ist eine Funktion, mit der eine möglichst gute Balance zwischen Geschwindigkeit und Stabilität erreicht werden soll.
 
 ## <a name="function-structure"></a>Funktionsstruktur
 
-Bei einem Cloudkompetenzzentrum müssen die folgenden Funktionsbereiche zusammenarbeiten:
+Bei einem CCoE-Modell müssen die folgenden Funktionsbereiche zusammenarbeiten:
 
 - Cloudeinführung (insbesondere Lösungsarchitekten)
 - Cloudstrategie (insbesondere Programm- und Projektmanager)
@@ -132,7 +132,7 @@ Außerdem wird empfohlen, dass die Projektbeteiligten aus dem betriebswirtschaft
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Für ein Cloudkompetenzzentrum sind sowohl [Funktionen für die Cloudplattform](./cloud-platform.md) als auch [Funktionen für die Cloudautomatisierung](./cloud-automation.md) erforderlich. Der nächste Schritt ist die Ausrichtung der [Funktionen für die Cloudplattform](./cloud-platform.md).
+Für ein CCoE-Modell sind sowohl [Funktionen für die Cloudplattform](./cloud-platform.md) als auch [Funktionen für die Cloudautomatisierung](./cloud-automation.md) erforderlich. Der nächste Schritt ist die Ausrichtung der [Funktionen für die Cloudplattform](./cloud-platform.md).
 
 > [!div class="nextstepaction"]
 > [Funktionen der Cloudplattform](./cloud-platform.md)

@@ -5,17 +5,17 @@ description: Es wird beschrieben, wie Sie die Überwachung, die Berichterstellun
 author: timleyden
 ms.author: tileyden
 ms.date: 04/09/2019
-ms.topic: conceptual
+ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 1be663168815af9067268cd18d9db51cfe10291c
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0ed9f9c1739fc73f4d28bf532bd52bd0a182b2fc
+ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548884"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74251348"
 ---
 # <a name="monitoring-and-reporting-in-azure"></a>Überwachung und Berichterstellung in Azure
 
@@ -98,12 +98,13 @@ Weitere Informationen finden Sie in der [Azure Service Health-Dokumentation](htt
 
 # <a name="azure-advisortabazureadvisor"></a>[Azure Advisor](#tab/AzureAdvisor)
 
-Azure Advisor ist ein kostenloser, personalisierter Cloudberater, der Sie bei der Einhaltung und Umsetzung bewährter Methoden für Azure-Bereitstellungen unterstützt. Azure Advisor analysiert Ihre Ressourcenkonfiguration sowie Ihre Nutzungstelemetriedaten und empfiehlt Lösungen für die Umgebungsoptimierung. Die Empfehlungen sind in vier Kategorien unterteilt:
+Azure Advisor ist ein kostenloser, personalisierter Cloudberater, der Sie bei der Einhaltung und Umsetzung bewährter Methoden für Azure-Bereitstellungen unterstützt. Azure Advisor analysiert Ihre Ressourcenkonfiguration sowie Ihre Nutzungstelemetriedaten und empfiehlt Lösungen für die Umgebungsoptimierung. Die Empfehlungen sind in folgende Kategorien unterteilt:
 
 - **Hochverfügbarkeit:** Der Ratgeber hilft, die ununterbrochene Verfügbarkeit Ihrer unternehmenskritischen Anwendungen zu verbessern. Die Empfehlungen können ggf. auch das Hinzufügen von virtuellen Computern zu einer Verfügbarkeitsgruppe oder das Hinzufügen von georedundanten Endpunkten umfassen.
 - **Sicherheit**: Der Ratgeber hilft beim Erkennen von Bedrohungen und Sicherheitsrisiken, die zu Sicherheitslücken führen können. Die Empfehlungen können ggf. das Anwenden einer Datenträgerverschlüsselung oder das Aktivieren von Netzwerksicherheitsgruppen umfassen.
 - **Leistung:** Der Ratgeber hilft, die Geschwindigkeit Ihrer Anwendungen zu verbessern. Die Empfehlungen können ggf. die Erhöhung der SQL-Abfrageleistung durch die Erstellung von Indizes oder eine Neukonfiguration Ihrer Traffic Manager-Einstellungen umfassen.
 - **Kosten:** Mit dem Ratgeber können Sie Ihre Gesamtausgaben für Azure senken und optimieren. Die Empfehlungen können beispielsweise das Ändern der Größe oder das Herunterfahren von virtuellen Computern mit zu geringer Auslastung oder den Umstieg auf Azure-Reservierungen beinhalten, um die Gesamtkosten zu senken.
+- **Betriebliche Exzellenz:** Zur Verbesserung der Prozess- und Workfloweffizienz und -verwaltbarkeit. Empfehlungen können das Einrichten und Erzwingen von Azure Policy-Regeln, das Reparieren von ungültigen Protokollwarnungsregeln und das Konfigurieren Azure Service Health-Warnungen beinhalten.
 
 Empfehlungen in Advisor basieren auf den von Ihnen bereitgestellten Ressourcen und den Aktionen, die Sie in Azure durchführen. Sie können Advisor regelmäßig auf die neuesten Empfehlungen überprüfen.
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: fdde1d3619b8340fad31f4241bffeff9c51f0b38
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: e4d8ab371e01d98e22382a70cc9c1ea42173cf53
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566523"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160344"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-groups"></a>Zuweisen eines neuen Hosts für eine lokale App auf Azure-VMs und in SQL Server Always On-Verfügbarkeitsgruppen
 
@@ -214,7 +214,7 @@ Contoso-Administratoren gehen bei der Erstellung eines Speicherkontos wie folgt 
 
 Vor dem Einrichten des Clusters erstellen Contoso-Administratoren auf jedem Computer eine Momentaufnahme des Betriebssystemdatenträgers.
 
-![Momentaufnahme](media/contoso-migration-rehost-vm-sql-ag/snapshot.png)
+![Erstellen der Momentaufnahme](media/contoso-migration-rehost-vm-sql-ag/snapshot.png)
 
 1. Anschließend führt das Unternehmen ein Skript aus, mit dem der Windows-Failovercluster erstellt werden soll.
 
@@ -439,7 +439,7 @@ Contoso-Administratoren führen diese Schritte wie folgt aus:
 8. Contoso meldet sich erneut am Computer an. Der Assistent für die Konfigurationsserververwaltung wird automatisch gestartet.
 9. Im Assistenten wählt das Unternehmen die NIC zum Empfangen von Replikationsdatenverkehr aus. Diese Einstellung kann nach der Konfiguration nicht mehr geändert werden.
 10. Das Unternehmen wählt das Abonnement, die Ressourcengruppe und den Tresor aus, in dem der Konfigurationsserver registriert werden soll.
-        ![Tresor](./media/contoso-migration-rehost-vm-sql-ag/cswiz1.png)
+        ![Auswählen des Recovery Services-Tresors](./media/contoso-migration-rehost-vm-sql-ag/cswiz1.png)
 
 11. Anschließend werden MySQL Server und VMware PowerCLI heruntergeladen und installiert.
 12. Nach der Überprüfung gibt Contoso den FQDN oder die IP-Adresse des Servers von vCenter Server oder des vSphere-Hosts an. Der Standardport wird beibehalten, und für den Server von vCenter Server wird ein Anzeigename angegeben.

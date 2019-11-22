@@ -8,12 +8,12 @@ ms.date: 09/22/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 799ab1ba0d0b99ed5427d2c986c4fae9659a5b05
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 3ad84a52b35a98744f59b0d719e61f2c83a61af0
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753770"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160458"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure-Unternehmensgerüst: Präskriptive Abonnementgovernance
 
@@ -40,7 +40,7 @@ Beim Bau eines Hauses wird ein Gerüst verwendet, um die Basis der Struktur zu e
 
 Das Gerüst basiert auf Methoden, die wir bei der Zusammenarbeit mit vielen Kunden verschiedener Größen gesammelt haben. Zu diesen Kunden gehören kleine Organisationen, die Lösungen in der Cloud entwickeln, multinationale Großkonzerne sowie unabhängige Softwarehersteller, die Workloads migrieren und Lösungen in der und für die Cloud entwickeln. Das Unternehmensgerüst wurde speziell so flexibel entwickelt, dass es sowohl herkömmliche IT-Workloads als auch agile Workloads unterstützt, z. B. Entwickler, die Software-as-a-Service-Anwendungen (SaaS) basierend auf Funktionen der Azure-Plattform erstellen.
 
-Das Unternehmensgerüst ist als Basis für jedes neue Abonnement in Azure vorgesehen. Administratoren können damit sicherstellen, dass Workloads in einer Organisation die minimalen Anforderungen an Governance erfüllen, ohne zu verhindern, dass Unternehmensgruppen und Entwickler schnell ihre eigenen Ziele erreichen. Unsere Erfahrung zeigt, dass dies das Wachstum der öffentlichen Cloud eher beschleunigt als hemmt.
+Das Unternehmensgerüst kann als Basis für jedes neue Abonnement in Azure fungieren. Administratoren können damit sicherstellen, dass Workloads in einer Organisation die minimalen Anforderungen an Governance erfüllen, ohne zu verhindern, dass Unternehmensgruppen und Entwickler schnell ihre eigenen Ziele erreichen. Unsere Erfahrung zeigt, dass dies das Wachstum der öffentlichen Cloud eher beschleunigt als hemmt.
 
 > [!NOTE]
 > Microsoft hat eine neue Funktion namens [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview) in der Vorschau bereitgestellt, mit der Sie häufig genutzte Images, Vorlagen, Richtlinien und Skripts über viele Abonnements und Verwaltungsgruppen hinweg packen, verwalten und bereitstellen können. Diese Funktion dient als Brücke zwischen dem Zweck des Gerüsts als Referenzmodell und der Bereitstellung des Modells in Ihrer Organisation.
@@ -228,7 +228,7 @@ Das Sammeln und Analysieren von Telemetriedaten, die Einblicke in die Aktivität
 
 Sie können diese Daten auf verschiedenen Ebenen betrachten und Aktionen daraus ableiten, und die Daten werden kontinuierlich verbessert. Azure bietet **gemeinsam genutzte**, **grundlegende** und **tiefgreifende** Überwachungsfunktionen für Azure-Ressourcen durch die in der Abbildung unten gezeigten Dienste.
 
-![monitoring](../_images/reference/monitoring.png)
+![Überwachung](../_images/reference/monitoring.png)
 
 ### <a name="shared-capabilities"></a>Gemeinsam genutzte Funktionen
 
@@ -344,4 +344,4 @@ Azure bietet Ihnen sowohl interne Funktionen als auch Drittanbieterfunktionen au
 
 Governance ist entscheidend für den Erfolg von Azure. In diesem Artikel wird die technische Implementierung eines Unternehmensgerüsts behandelt, auf den umfassenden Prozess und die Beziehungen zwischen den Komponenten wird jedoch nur am Rande eingegangen. Die Richtliniengovernance verläuft von oben nach unten und richtet sich danach, was das Unternehmen erreichen möchte. Natürlich sind beim Erstellen eines Governancemodells für Azure Vertreter aus der IT beteiligt, wichtiger jedoch ist eine nachhaltige Unterstützung durch Führungskräfte von Unternehmensgruppen sowie aus dem Bereich Sicherheits- und Risikomanagement. Bei einem Unternehmensgerüst geht es letztlich um die Minderung von Unternehmensrisiken, um Mission und Ziele der Organisation zu fördern.
 
-Nachdem Sie sich mit der Abonnementgovernance vertraut gemacht haben, ist es an der Zeit, diese Empfehlungen in der Praxis zu erleben. Informationen finden Sie unter [Beispiele für das Implementieren eines Azure-Unternehmensgerüsts](./azure-scaffold-examples.md).
+Nachdem Sie sich mit der Abonnementgovernance vertraut gemacht haben, ist es an der Zeit, diese Empfehlungen in der Praxis zu erleben. Weitere Informationen finden Sie unter [Bewährte Methoden für die Azure-Bereitschaft](../ready/azure-best-practices/index.md).

@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 98a65f0e65e8c2851a8aa97fe2f0c17ffe2359db
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 81bb5775f2d83a0784e360440b52112427acf243
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752719"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160252"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Leitfaden zur Cloudüberwachung: Überwachungsstrategie für Cloudbereitstellungsmodelle
 
@@ -23,7 +23,7 @@ Dieser Artikel enthält unsere empfohlene Überwachungsstrategie für jedes der 
 - Sie müssen Ihr Engagement für Operations Manager oder eine andere Unternehmensüberwachungsplattform beibehalten, da sie in Ihre IT-Betriebsabläufe, Ihr Wissen und Ihre Erfahrungen integriert ist oder bestimmte Funktionen noch nicht in Azure Monitor verfügbar sind.
 - Sie müssen Workloads sowohl lokal als auch in der öffentlichen Cloud oder nur in der Cloud überwachen.
 - Ihre Cloudmigrationsstrategie umfasst die Modernisierung von IT-Abläufen und den Wechsel zu unseren Diensten und Lösungen für die Cloudüberwachung.
-- Möglicherweise verfügen Sie über kritische Systeme, die über Air Gap oder physisch voneinander isoliert sind, in einer privaten Cloud oder auf physischer Hardware gehostet werden müssen. Und die Systeme müssen überwacht werden.
+- Möglicherweise verfügen Sie über kritische Systeme, die per Air Gap oder physisch voneinander isoliert sind, oder in einer privaten Cloud oder auf physischer Hardware gehostet werden, und diese Systeme müssen überwacht werden müssen.
 
 Unsere Strategie umfasst die Unterstützung von Überwachungsinfrastruktur (Rechen-, Speicher- und Serverworkloads), Anwendungen (Endbenutzer, Ausnahmen und Clients) und Netzwerkressourcen. Sie bietet eine vollständige dienstorientierte Überwachungsperspektive.
 
@@ -181,7 +181,7 @@ Durch Verwendung von System Center Operations Manager wird eine ganzheitliche Ü
 
 Eine ganzheitliche Überwachung ist außerdem durch eine Kombination der in Azure Stack enthaltenen [Funktionen zur Infrastrukturüberwachung](https://docs.microsoft.com/azure/azure-stack/azure-stack-monitor-health) möglich. Mithilfe dieser Funktionen können Sie die Integrität und Warnungen für eine Azure Stack-Region und den [Azure Monitor-Dienst](https://docs.microsoft.com/azure/azure-stack/user/azure-stack-metrics-azure-data) in Azure Stack anzeigen. Dort werden für die meisten Dienste grundlegende Infrastrukturmetriken und Protokolle bereitgestellt.
 
-Wenn Sie bereits in Operations Manager investiert haben, sollten Sie die Verfügbarkeit und den Integritätszustand von Azure Stack-Bereitstellungen mit dem Management Pack von Azure Stack überwachen. Dies umfasst Regionen, Ressourcenanbieter, Updates, Aktualisierungsläufe, Skalierungseinheiten, Einheitsknoten, Infrastrukturrollen und deren Instanzen (logische Einheiten bestehend aus den Hardwareressourcen). Das Management Pack verwendet die REST-APIs des Integritäts- und des Updateressourcenanbieters, um mit Azure Stack zu kommunizieren. Die physischen Server und Speichergeräte können Sie mit den Management Packs der OEM-Anbieter (z. B. von Lenovo, Hewlett Packard oder Dell) überwachen. Operations Manager kann die Netzwerkswitches nativ überwachen, um grundlegende Statistiken zu SNMP zu erfassen. Die Überwachung der Workloads des Mandanten ist mit dem Azure-Management Pack durch Ausführung zweier grundlegender Schritte möglich. Konfigurieren Sie zunächst das Abonnement, das überwacht werden soll, und fügen Sie dann die Monitore für dieses Abonnement hinzu.
+Wenn Sie bereits in Operations Manager investiert haben, überwachen Sie die Verfügbarkeit und den Integritätszustand von Azure Stack-Bereitstellungen einschließlich Regionen, Ressourcenanbieter, Updates, Aktualisierungsläufe, Skalierungseinheiten, Einheitsknoten, Infrastrukturrollen und deren Instanzen (logische Einheiten bestehend aus den Hardwareressourcen) mit dem Management Pack von Azure Stack. Dieses Management Pack verwendet die REST-APIs des Integritäts- und des Updateressourcenanbieters, um mit Azure Stack zu kommunizieren. Die physischen Server und Speichergeräte können Sie mit den Management Packs der OEM-Anbieter (z. B. von Lenovo, Hewlett Packard oder Dell) überwachen. Operations Manager kann die Netzwerkswitches nativ überwachen, um grundlegende Statistiken zu SNMP zu erfassen. Die Überwachung der Workloads des Mandanten ist mit dem Azure-Management Pack durch Ausführung zweier grundlegender Schritte möglich. Konfigurieren Sie zunächst das Abonnement, das überwacht werden soll, und fügen Sie dann die Monitore für dieses Abonnement hinzu.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

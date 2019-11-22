@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e4203944d6ab5de891f637034d60381290a31c46
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: cd8dc50480480766ec4b4413d0dddfaeafc69f7f
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222176"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160124"
 ---
 # <a name="identity-baseline-motivations-and-business-risks"></a>Identitätsbaseline: Motivationen und Geschäftsrisiken
 
@@ -24,7 +24,7 @@ In diesem Artikel werden die Gründe beschrieben, warum Kunden typischerweise ei
 
 ## <a name="identity-baseline-relevancy"></a>Relevanz der Identitätsbaseline
 
-Traditionelle lokale Verzeichnisse sind so konzipiert, dass Unternehmen Berechtigungen und Richtlinien für Benutzer, Gruppen und Rollen in ihren internen Netzwerken und Rechenzentren streng kontrollieren können. Dies ist in der Regel zur Unterstützung von Implementierungen einzelner Mandanten gedacht, wobei die Dienste nur innerhalb der lokalen Umgebung anwendbar sind.
+Traditionelle lokale Verzeichnisse sind so konzipiert, dass Unternehmen Berechtigungen und Richtlinien für Benutzer, Gruppen und Rollen in ihren internen Netzwerken und Rechenzentren streng kontrollieren können. Diese Verzeichnisse unterstützen in der Regel Implementierungen einzelner Mandanten gedacht, wobei die Dienste nur innerhalb der lokalen Umgebung anwendbar sind.
 
 Cloudidentitätsdienste erweitern die Authentifizierungs- und Zugriffssteuerungsfunktionen eines Unternehmens auf das Internet. Sie unterstützen Mehrinstanzenfähigkeit und können zur Verwaltung von Benutzern und Zugriffsrichtlinien über Cloudanwendungen und -bereitstellungen hinweg verwendet werden. Öffentliche Cloudplattformen verfügen über cloudnative Identitätsdienste, die Verwaltungs- und Bereitstellungsaufgaben unterstützen und in der Lage sind, [unterschiedliche Integrationsebenen](../../decision-guides/identity/index.md) mit Ihren vorhandenen lokalen Identitätslösungen zu erreichen. Alle diese Features können dazu führen, dass die Cloudidentitätsrichtlinie komplizierter ist, als es Ihre traditionellen lokalen Lösungen erfordern.
 

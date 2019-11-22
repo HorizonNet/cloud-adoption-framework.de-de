@@ -8,12 +8,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 34659cb5cd3a223fe084ba8975f0f7a39b2b74f6
-ms.sourcegitcommit: 3669614902627f0ca61ee64d97621b2cfa585199
+ms.openlocfilehash: e2fb2587b5e6e0914c6a9facc062d817a508897e
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73656708"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74160052"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Best Practices für die Sicherung und Verwaltung von zu Azure migrierten Workloads
 
@@ -38,10 +38,10 @@ Nach der Migration besteht die wichtigste Aufgabe darin, die migrierten Workload
 
 Microsoft unternimmt alle Anstrengungen, um sicherzustellen, dass Azure-Mandantenadministratoren über alle notwendigen Informationen verfügen, um die richtigen Sicherheitsfeatures einzurichten, mit denen Ihre Workloads vor Angriffen geschützt werden. Azure Security Center bietet eine einheitliche Sicherheitsverwaltung. In Security Center können Sie Sicherheitsrichtlinien für Ihre Workloads anwenden, die Angriffsfläche für Bedrohungen verringern sowie Angriffe erkennen und darauf reagieren. Security Center analysiert Ressourcen und Konfigurationen für mehrere Azure-Mandanten und gibt Sicherheitsempfehlungen aus, wie z.B. zu folgenden Themen:
 
-- **Zentrale Richtlinienverwaltung**: Stellen Sie die Einhaltung unternehmensspezifischer oder gesetzlicher Sicherheitsvorschriften sicher, indem Sie Sicherheitsrichtlinien für alle Hybridcloud-Workloads zentral verwalten.
-- **Laufende Sicherheitsbewertung**: Überwachen Sie den Sicherheitsstatus von Computern, Netzwerken, Speicher- und Datendiensten und Anwendungen, um potenzielle Sicherheitsprobleme aufzudecken.
-- **Umsetzbare Empfehlungen**: Beseitigen Sie mit priorisierten, direkt umsetzbaren Sicherheitsempfehlungen Sicherheitslücken, bevor sie von Angreifern ausgenutzt werden können.
-- **Priorisierte Warnungen und Vorfälle**: Konzentrieren Sie sich mittels priorisierter Warnungen und Vorfälle auf die größten Bedrohungen.
+- **Zentrale Richtlinienverwaltung:** Stellen Sie die Einhaltung unternehmensspezifischer oder gesetzlicher Sicherheitsvorschriften sicher, indem Sie Sicherheitsrichtlinien für alle Hybridcloud-Workloads zentral verwalten.
+- **Laufende Sicherheitsbewertung:** Überwachen Sie den Sicherheitsstatus von Computern, Netzwerken, Speicher- und Datendiensten und Anwendungen, um potenzielle Sicherheitsprobleme aufzudecken.
+- **Umsetzbare Empfehlungen:** Beseitigen Sie mit priorisierten, direkt umsetzbaren Sicherheitsempfehlungen Sicherheitslücken, bevor sie von Angreifern ausgenutzt werden können.
+- **Priorisierte Warnungen und Vorfälle:** Konzentrieren Sie sich mittels priorisierter Warnungen und Vorfälle auf die größten Bedrohungen.
 
 Zusätzlich zu Bewertungen und Empfehlungen stellt Azure Security Center weitere Sicherheitsfeatures bereit, die für bestimmte Ressourcen aktiviert werden können.
 
@@ -135,8 +135,7 @@ Azure stellt verschiedene Lösungen bereit:
   - Es schützt mehrere Web-Apps gleichzeitig hinter einem Anwendungsgateway.
   - Web Application Firewall kann mithilfe von Azure Monitor überwacht werden und ist in Azure Security Center integriert.
 
-![Sichern von Web-Apps](./media/migrate-best-practices-security-management/web-apps.png)
-
+![Sichere Web-Apps](./media/migrate-best-practices-security-management/web-apps.png)
 *Azure Key Vault*
 
 **Weitere Informationen**:
@@ -175,7 +174,6 @@ Azure Active Directory (Azure AD) stellt Aktivitätsprotokolle bereit, die in A
 - Gewöhnen Sie sich an, die Protokolle zu überprüfen, oder integrieren Sie Ihre SIEM-Tools (Security Information & Event Management), um Anomalien automatisch zu überprüfen. Wenn Sie nicht Premium 1 oder 2 verwenden, müssen Sie viele Analyseaktivitäten selbst oder mithilfe Ihres SIEM-Systems ausführen. Zu diesen Aktivitäten gehört die Suche nach risikobehafteten Anmeldungen und Ereignissen sowie weiteren Benutzerangriffsmustern.
 
 ![Benutzer und Gruppen](./media/migrate-best-practices-security-management/azure-ad.png)
-
 *Azure AD-Benutzer und -Gruppen*
 
 **Weitere Informationen**:
@@ -213,9 +211,8 @@ Mit aussagekräftigen Namen für Ihre Ressourcengruppen, die Administratoren und
 - Wir empfehlen, die Namenskonventionen für Azure zu befolgen.
 - Wenn Sie Ihr lokales Active Directory über Azure AD Connect mit Azure AD synchronisieren, sollten Sie die Namen der lokalen Sicherheitsgruppen an die Namen der Ressourcengruppen in Azure anpassen.
 
-![Benennung](./media/migrate-best-practices-security-management/naming.png)
-
-*Ressourcengruppenbenennung*
+![Benennen](./media/migrate-best-practices-security-management/naming.png)
+*Benennen von Ressourcengruppen*
 
 **Weitere Informationen**:
 
@@ -225,9 +222,8 @@ Mit aussagekräftigen Namen für Ihre Ressourcengruppen, die Administratoren und
 
 Niemand möchte, dass eine Ressourcengruppe verschwindet, weil sie versehentlich gelöscht wurde. Wir empfehlen die Implementierung von Löschsperren, um dies zu verhindern.
 
-![Löschen von Sperren](./media/migrate-best-practices-security-management/locks.png)
-
-*Löschen von Sperren*
+![Löschsperren](./media/migrate-best-practices-security-management/locks.png)
+*Löschsperren*
 
 **Weitere Informationen**:
 
@@ -359,7 +355,7 @@ Sie können Azure Backup verwenden, um VMs auf unterschiedliche Weise zu sichern
 - **Direkte Sicherung in einem Recovery Services-Tresor:** Sie können Ihre IaaS-VMs durch Bereitstellen eines Azure Backup-Recovery Services-Tresors sichern. Dies bietet einen einzelnen Speicherort zum Nachverfolgen und Verwalten von Sicherungen und ermöglicht differenzierte Sicherungs- und Wiederherstellungsoptionen. Die Sicherung erfolgt bis zu dreimal am Tag auf Datei- oder Ordnerebene. Sie ist nicht App-bezogen, und Linux wird nicht unterstützt. Installieren Sie den MARS-Agent (Microsoft Azure Recovery Services) auf jedem virtuellen Computer, den Sie mit dieser Methode sichern möchten.
 - **Schützen von VMs mit Azure Backup Server:** Azure Backup Server ist kostenlos in Azure Backup enthalten. VMs werden im lokalen Azure Backup Server-Speicher gesichert. Danach wird Azure Backup Server in einem Tresor in Azure gesichert. Backup ist App-bezogen und bietet differenzierte Optionen für die Häufigkeit und Vermerkdauer von Sicherungen. Sie können Sicherungen auf App-Ebene z. B. für SQL Server oder SharePoint ausführen.
 
-Aus Sicherheitsgründen verschlüsselt Azure Backup Daten während der Übertragung mithilfe von AES 256 und sendet sie über HTTPS an Azure. Gesicherte ruhende Daten in Azure werden mithilfe der [Speicherdienstverschlüsselung](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fqueues%2ftoc.json) verschlüsselt.
+Aus Sicherheitsgründen verschlüsselt Azure Backup Daten während der Übertragung mithilfe von AES 256 und sendet sie über HTTPS an Azure. Gesicherte ruhende Daten in Azure werden mithilfe der [Speicherdienstverschlüsselung](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=/azure/storage/queues/toc.json) verschlüsselt.
 
 ![Azure Backup](./media/migrate-best-practices-security-management/iaas-backup.png)
 *Azure Backup*
@@ -401,7 +397,6 @@ Azure Site Recovery ist der primäre Azure-Dienst, mit dem Sie sicherstellen, da
 Site Recovery repliziert VMs von einer primären in eine sekundäre Azure-Region. Wenn ein Notfall auftritt, führen Sie ein Failover der VMs von der primären Region aus und greifen in der sekundären Region weiterhin normal darauf zu. Wenn der Betrieb wieder normal läuft, können Sie ein Failback der VMs zur primären Region ausführen.
 
 ![Azure Site Recovery](./media/migrate-best-practices-security-management/site-recovery.png)
-
 *Site Recovery*
 
 **Weitere Informationen**:
@@ -420,7 +415,6 @@ Verwaltete Azure-Datenträger vereinfachen die Datenträgerverwaltung für Azure
 - Sie sollten VMs in Verfügbarkeitsgruppen erstellen, um eine hohe Resilienz und Verfügbarkeit zu erzielen. Bei geplanten oder ungeplanten Ausfällen stellen Verfügbarkeitsgruppen sicher, dass mindestens eine VM in der Gruppe verfügbar bleibt.
 
 ![Verwaltete Datenträger](./media/migrate-best-practices-security-management/managed-disks.png)
-
 *Verwaltete Datenträger*
 
 **Weitere Informationen**:

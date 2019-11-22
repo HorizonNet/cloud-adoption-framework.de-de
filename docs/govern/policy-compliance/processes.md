@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 57f94fde4e7f4863a3ddca710d523d9c027571d0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 6671efc087d718a44de97062dcf8c32498cfdb81
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566120"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159844"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -38,9 +38,9 @@ Vor dem Definieren von Auslösern für die Erzwingung der Einhaltung von Richtli
 
 ### <a name="assign-cloud-governance-team-members"></a>Zuweisen von Mitgliedern zum Cloudgovernanceteam
 
-Ihr Cloudgovernanceteam übernimmt die laufende Unterstützung für die Einhaltung von Richtlinien und behandelt Probleme im Zusammenhang mit Richtlinien, die beim Bereitstellen und im Betrieb Ihrer Cloudressourcen auftreten. Wenn Sie dieses Team zusammenstellen, laden Sie Mitarbeiter aus Ihrem Unternehmen ein, die über Fachkenntnisse in den Bereichen verfügen, die unter Ihre definierten Richtlinien und identifizierten Risiken fallen.
+Ihr Cloudgovernanceteam übernimmt die laufende Unterstützung für die Einhaltung von Richtlinien und behandelt Probleme im Zusammenhang mit Richtlinien, die beim Bereitstellen und im Betrieb Ihrer Cloudressourcen auftreten. Wenn Sie dieses Team zusammenstellen, laden Sie Mitarbeiter ein, die über Fachkenntnisse in den Bereichen verfügen, die unter Ihre definierten Richtlinien und identifizierten Risiken fallen.
 
-Für erste Testbereitstellungen kann dies auf wenige Systemadministratoren beschränkt sein, die für die Einrichtung der Governancegrundlagen verantwortlich sind. Mit zunehmender Reife Ihrer Governanceprozesse sollten Sie die Mitglieder des Cloudunterstützungsteams regelmäßig überprüfen, um sicherzustellen, dass neue potenzielle Risiken und Richtlinienanforderungen ordnungsgemäß behandelt werden können. Identifizieren Sie Mitarbeiter Ihrer IT- und Geschäftsabteilungen mit relevanter Erfahrung oder Interesse an bestimmten Governancebereichen, und binden Sie sie je nach Bedarf dauerhaft oder ad-hoc in Ihre Teams ein.
+Für erste Testbereitstellungen kann dies auf wenige Systemadministratoren beschränkt sein, die für die Einrichtung der Governancegrundlagen verantwortlich sind. Mit zunehmender Reife Ihrer Governanceprozesse sollten Sie die Mitglieder des Cloudunterstützungsteams regelmäßig überprüfen, um sicherzustellen, dass neue potenzielle Risiken und Richtlinienanforderungen ordnungsgemäß behandelt werden können. Identifizieren Sie Mitarbeiter Ihrer IT- und Geschäftsabteilungen mit relevanter Erfahrung oder Interesse an bestimmten Governancebereichen, und binden Sie sie je nach Bedarf dauerhaft oder vorübergehend Ihre Teams ein.
 
 ### <a name="reviews-and-policy-iteration"></a>Iterationen von Überprüfungen und Richtlinien
 
@@ -80,14 +80,14 @@ Einige Beispiele für Auslöser und Aktionen bei Verstößen:
 | Cloudgovernancedisziplin | Beispielauslöser | Beispielaktion |
 |-----------------------------|----------------|---------------|
 | Cost Management | Monatliche Cloudausgaben sind um mehr als 20 % höher als erwartet. | Benachrichtigung des Leiters der Abrechnungsabteilung, der eine Überprüfung der Ressourcennutzung beginnt. |
-| Sicherheitsbaseline | Erkennung einer verdächtigen Benutzeranmeldeaktivität. | Benachrichtigung des IT-Sicherheitsteams und Deaktivierung des verdächtigen Benutzerkontos. |
-| Ressourcenkonsistenz | Die CPU-Auslastung für eine Workload übersteigt 90 %. | Benachrichtigung des IT-Betriebsteam und horizontales Hochskalieren mit zusätzlichen Ressourcen zum Verarbeiten der Last. |
+| Sicherheitsbaseline | Erkennung verdächtiger Benutzeraktivitäten. | Benachrichtigung des IT-Sicherheitsteams und Deaktivierung des verdächtigen Benutzerkontos. |
+| Ressourcenkonsistenz | Die CPU-Auslastung für eine Workload übersteigt 90 %. | Benachrichtigung des IT-Betriebsteam und horizontales Hochskalieren mit zusätzlichen Ressourcen zum Verarbeiten der Last. |
 
 ## <a name="automation-of-monitoring-and-compliance"></a>Automatisierung der Überwachung und Einhaltung
 
 Nachdem Sie Ihre Auslöser und Aktionen für Verstöße definiert haben, können Sie damit beginnen, optimale Protokollierungs- und Berichterstattungstools und andere Features der Cloudplattform zu planen, die bei der Automatisierung Ihrer Strategie für Überwachung und Einhaltung von Richtlinien helfen.
 
-Hinweise zur Auswahl des besten Überwachungsmusters für Ihre Bereitstellung finden Sie im Thema [Leitfaden zur Entscheidungsfindung für Protokollierung und Berichterstellung](../../decision-guides/logging-and-reporting/index.md) des Cloud Adoption Framework.
+Hilfe bei der Auswahl des besten Überwachungsmusters für Ihre Bereitstellung finden Sie im [Leitfaden zur Entscheidungsfindung für Protokollierung und Berichterstellung](../../decision-guides/logging-and-reporting/index.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

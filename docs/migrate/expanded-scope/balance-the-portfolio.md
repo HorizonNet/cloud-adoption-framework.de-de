@@ -8,12 +8,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7383f07f4d52cef640bcb1e617de60697a20b248
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 9834778e7aaddc616d595e874459fa7bd3eb61e3
+ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753476"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74159916"
 ---
 # <a name="balance-the-portfolio"></a>Ausgewogenheit des Portfolios
 
@@ -95,7 +95,7 @@ Um die Komplexität zu reduzieren, sollten Sie einen herkömmlichen Ansatz zur P
   - Wenn eine Workload nicht strategisch, aber mit modernen, cloudbasierten Anwendungshostingplattformen kompatibel ist, kann es möglicherweise besser sein, eine geringfügige Umgestaltung der Anwendung durchzuführen, um sie als moderne App bereitzustellen. Dies kann durch Verringern der gesamten IaaS- und BS-Lizenzierungsanforderungen der Migration zur Cloud zu den gesamten Einsparungen beitragen.
   - Wenn eine Workload eine Drittanbieteranwendung ist und die Daten dieser Workload nicht für die Verwendung in einer Downstreaminnovation eingeplant sind, kann es das Beste sein, sie als Option zum Zuweisen eines neuen Hosts im Backlog zu belassen.
 
-Die für die einzelnen Workloads durchgeführten qualitativen Analysen sollten sich nicht auf diese Fragen beschränken, aber sie sollen für eine Konversation wegweisend sein, die das Behandeln der Komplexität eines nicht ausgewogenen Portfolios unterstützt.
+Die für die einzelnen Workloads durchgeführten qualitativen Analysen sollten sich nicht auf diese Fragen beschränken, sind jedoch wegweisend für eine Konversation, die das Behandeln der Komplexität eines nicht ausgewogenen Portfolios betrifft.
 
 ## <a name="migrate-process-changes"></a>Änderungen am Migrationsprozess
 
