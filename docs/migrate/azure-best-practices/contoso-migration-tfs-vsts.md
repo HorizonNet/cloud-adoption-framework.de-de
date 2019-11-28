@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 887d2e2ec410b761fdc81b87d83f3a471c3bf99e
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3c87bfbd8fe920d0469da8b3e60da59da07158ed
+ms.sourcegitcommit: 0b6939f65a1e5653149301e9aa14db9a1f67825f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566554"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74557024"
 ---
 # <a name="refactor-a-team-foundation-server-deployment-to-azure-devops-services"></a>Umgestalten einer Team Foundation Server-Bereitstellung zu Azure DevOps Services
 
@@ -103,7 +103,7 @@ Contoso geht bei der Migration wie folgt vor:
 Die Contoso-Administratoren aktualisieren den TFS-Server auf TFS 2018 Update 2. Vor der Durchführung:
 
 - Contoso lädt [TFS 2018 Update 2](https://visualstudio.microsoft.com/downloads) herunter.
-- Das Unternehmen überprüft die [Hardwareanforderungen](https://docs.microsoft.com/tfs/server/requirements) und geht die [Anmerkungen zu dieser Version](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-relnotes) und [Upgradegotchas](https://docs.microsoft.com/tfs/server/upgrade/get-started#before-you-upgrade-to-tfs-2018) durch.
+- Das Unternehmen überprüft die [Hardwareanforderungen](/azure/devops/server/requirements) und geht die [Anmerkungen zu dieser Version](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-relnotes) und [Upgradegotchas](/azure/devops/server/upgrade/get-started#before-you-upgrade-to-tfs-2018) durch.
 
 Das Upgrade wird wie folgt durchgeführt:
 
@@ -132,7 +132,7 @@ Das Upgrade wird wie folgt durchgeführt:
 
 **Benötigen Sie weitere Hilfe?**
 
-Informationen zum Durchführen von Upgrades für TFS finden Sie [hier](https://docs.microsoft.com/tfs/server/upgrade/get-started).
+Informationen zum Durchführen von Upgrades für TFS finden Sie [hier](/azure/devops/server/upgrade/get-started).
 
 ## <a name="step-3-validate-the-tfs-collection"></a>Schritt 3: Überprüfen der TFS-Sammlung
 
