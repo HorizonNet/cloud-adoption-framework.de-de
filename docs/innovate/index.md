@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
-ms.openlocfilehash: 96ca8aab7a1fb1e04180f12ac1753bd1b6857e92
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 758cd3285ed7f9f1b3542b54af7d275dccf1662d
+ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752136"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74681769"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Cloudinnovationen im Cloud Adoption Framework
 
@@ -117,8 +117,21 @@ Bei jeder Iteration bieten die zu entwickelnden Lösungen Ihren Teams die Mögli
 
 Dieser Ansatz basiert auf der bestehenden „schlanken“ Methodik. Er soll Ihnen beim Erstellen einer cloudbasierten Kommunikation zur Förderung der Kundenakzeptanz und eines wissenschaftlichen Modells zur Schaffung des Geschäftswerts als Hilfe dienen. Darüber hinaus werden hierbei vorhandene Azure-Dienste verwaltbaren Entscheidungsprozessen zugeordnet. Aufgrund dieser Ausrichtung ist es für Sie einfacher, die richtigen technischen Optionen zu ermitteln, um spezifische Anforderungen oder Zielsetzungen von Kunden erfüllen zu können.
 
+## <a name="suggested-skills"></a>Empfohlene Qualifikationen
+
+Microsoft Learn ist ein neuer Lernansatz. Die Bereitschaft zu den neuen Qualifikationen und Aufgaben, die mit der Cloudeinführung verbunden sind, entsteht nicht problemlos. Microsoft Learn bietet einen lohnenderen Ansatz für praktisches Lernen, der Ihnen hilft, Ihre Ziele schneller zu erreichen. Punkte sammeln, zu höheren Stufen aufsteigen und mehr erreichen.
+
+Hier finden Sie einige Beispiele für rollenspezifische Lernpfade in Microsoft Learn, die auf den Abschnitt „Innovationen“ des Cloud Adoption Framework abgestimmt sind.
+
+[Verwalten von Containern in Azure:](https://docs.microsoft.com/learn/paths/administer-containers-in-azure/) Azure Container Instances (ACI) bietet die schnellste und einfachste Methode zum Ausführen von Containern in Azure. In diesem Lernpfad erfahren Sie, wie Sie Container erstellen und verwalten und wie Sie mit ACI elastische Skalierungen für Kubernetes bereitstellen.
+
+[Erstellen serverloser Anwendungen:](https://docs.microsoft.com/learn/paths/create-serverless-applications/) Azure Functions ermöglicht die Erstellung von ereignisgesteuerten Compute-On-Demand-Systemen, die durch verschiedene externe Ereignisse ausgelöst werden können. Lesen Sie, wie Sie Funktionen nutzen, um serverseitige Logik auszuführen und serverlose Architekturen zu erstellen.
+
+Weitere Lernpfade finden Sie im [Learn-Katalog](/learn/browse). Verwenden Sie den Filter **Rollen**, um Lernpfade an ihrer Rolle auszurichten.
+
 ## <a name="next-steps"></a>Nächste Schritte
 
 Erste Übung zur Cloudinnovation:
 > [!div class="nextstepaction"]
 > [Erzielen eines Konsenses zum Geschäftswert der Cloudinnovation](./business-value.md)
+
