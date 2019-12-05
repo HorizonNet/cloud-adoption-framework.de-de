@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 6a7c27e1c2e4bf0bdf4a4ef9104bf13bf221f4e0
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: b00b007f9fb223312aa7baf99f54d32a8a08ce70
+ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566610"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74681832"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Neuerstellen einer lokalen App in Azure
 
@@ -143,34 +143,45 @@ Contoso-Administratoren führen ein Bereitstellungsskript zum Erstellen des Mana
 
 Die Contoso-Administratoren führen die Bereitstellung wie folgt durch:
 
-1. Sie öffnen den Ordner mit Visual Studio Code und wechseln zum Verzeichnis **/deploy/k8s**, das das Skript **gen-aks-env.ps1** enthält.
+1. Sie öffnen den Ordner mit Visual Studio Code und verschiebt diesen in das Verzeichnis **/deploy/k8s**, das das Skript **gen-aks-env.ps1** enthält.
+
 2. Sie führen das Skript zum Erstellen des Managed Kubernetes-Clusters mit AKS und ACR aus.
-    ![AKS](./media/contoso-migration-rebuild/aks1.png)
+
+   ![AKS](./media/contoso-migration-rebuild/aks1.png)
+
 3. Bei geöffneter Datei aktualisiert Contoso den $location-Parameter in **eastus2** und speichert die Datei.
-    ![AKS](./media/contoso-migration-rebuild/aks2.png)
+
+   ![AKS](./media/contoso-migration-rebuild/aks2.png)
+
 4. Sie wählen die Optionen **Ansicht** > **Integriertes Terminal** aus, um das integrierte Terminal in Visual Studio Code zu öffnen.
-    ![AKS](./media/contoso-migration-rebuild/aks3.png)
+
+   ![AKS](./media/contoso-migration-rebuild/aks3.png)
+
 5. In dem in PowerShell integrierten Terminal meldet Contoso sich bei Azure mit dem Befehl „Connect-AzureRmAccount“ an. Weitere Informationen zu den ersten Schritten mit PowerShell finden Sie [hier](https://docs.microsoft.com/powershell/azure/get-started-azureps).
-    ![AKS](./media/contoso-migration-rebuild/aks4.png)
-6. Contoso authentifiziert die Azure CLI, indem der Befehl `az login` ausgeführt wird und die Anweisungen für die Authentifizierung mithilfe eines Webbrowsers befolgt werden. Weitere Informationen zur Anmeldung bei der Azure CLI finden Sie [hier](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest).
-    ![AKS](./media/contoso-migration-rebuild/aks5.png)
+
+   ![AKS](./media/contoso-migration-rebuild/aks4.png)
+
+6. Contoso authentifiziert die Azure CLI, indem es den Befehl **az login** ausführt und die Anweisungen für die Authentifizierung mithilfe eines Webbrowsers befolgt. Weitere Informationen zur Anmeldung bei der Azure CLI finden Sie [hier](/cli/azure/authenticate-azure-cli?view=azure-cli-latest).
+
+   ![AKS](./media/contoso-migration-rebuild/aks5.png)
+
 7. Contoso führt den folgenden Befehl aus, übergibt den Ressourcengruppennamen von ContosoRG, den Namen des AKS-Clusters „smarthotel-aks-eus2“ und den Namen der neuen Registrierung.
 
-    ```PowerShell
-    .\gen-aks-env.ps1  -resourceGroupName ContosoRg -orchestratorName smarthotelakseus2 -registryName smarthotelacreus2
-    ```
+   ```PowerShell
+   .\gen-aks-env.ps1  -resourceGroupName ContosoRg -orchestratorName smarthotelakseus2 -registryName smarthotelacreus2
+   ```
 
-    ![AKS](./media/contoso-migration-rebuild/aks6.png)
+   ![AKS](./media/contoso-migration-rebuild/aks6.png)
 
 8. Azure erstellt eine andere Ressourcengruppe, die die Ressourcen für den AKS-Cluster enthält.
 
-    ![AKS](./media/contoso-migration-rebuild/aks7.png)
+   ![AKS](./media/contoso-migration-rebuild/aks7.png)
 
 9. Nachdem die Bereitstellung abgeschlossen ist, installieren sie das Befehlszeilentool **kubectl**. Das Tool ist bereits in Azure Cloud Shell installiert.
 
-    ```console
-    az aks install-cli
-    ```
+   ```console
+   az aks install-cli
+   ```
 
 10. Contoso überprüft die Verbindung mit dem Cluster, indem es den Befehl **kubectl get nodes** ausführt. Der Knoten weist den gleichen Namen wie die VM in der automatisch erstellten Ressourcengruppe auf.
 
@@ -416,11 +427,11 @@ Contoso-Administratoren stellen im Azure-Portal die Funktionen-App bereit.
 
 1. Sie wählen **Funktionen-App** aus.
 
-    ![Erstellen einer Funktionen-App](./media/contoso-migration-rebuild/function-app1.png)
+   ![Erstellen einer Funktionen-App](./media/contoso-migration-rebuild/function-app1.png)
 
 2. Sie geben einen App-Namen an (**smarthotelpetchecker**). Sie fügen die App in die Produktionsressourcengruppe **ContosoRG** ein. Sie legen den Hostingort auf **Verbrauchstarif** fest und fügen die App in die Region „USA, Osten 2“ ein. Daraufhin wird neben einem neuen Speicherkonto auch eine Application Insights-Instanz für die Überwachung erstellt.
 
-    ![Einstellungen für Funktions-Apps](./media/contoso-migration-rebuild/function-app2.png)
+   ![Einstellungen für Funktions-Apps](./media/contoso-migration-rebuild/function-app2.png)
 
 3. Nach der Bereitstellung der App navigieren sie zur Adresse der App, um zu überprüfen, ob diese erfolgreich erstellt wurde.
 
@@ -430,9 +441,10 @@ Contoso-Administratoren erstellen zwei verschiedene Projekte für die Front-End-
 
 1. In Azure DevOps erstellen sie ein **SmartHotelFrontend**-Projekt.
 
-    ![Front-End-Projekt](./media/contoso-migration-rebuild/function-app1.png)
+   ![Front-End-Projekt](./media/contoso-migration-rebuild/function-app1.png)
 
 2. Sie importieren das Git-Repository [SmartHotel360 front end](https://github.com/Microsoft/SmartHotel360-public-web.git) in das neue Projekt.
+
 3. Für die Funktions-App erstellen sie ein weiteres Azure DevOps-Projekt (SmartHotelPetChecker) und importieren das Git-Repository [PetChecker](https://github.com/Microsoft/SmartHotel360-PetCheckerFunction ) in dieses Projekt.
 
 ### <a name="configure-the-web-app"></a>Konfigurieren der Web-App
@@ -572,14 +584,21 @@ Contoso-Administratoren stellen die App wie folgt bereit.
 14. Nachdem die Funktion bereitgestellt wurde, wird sie im Azure-Portal mit dem Status **Wird ausgeführt** angezeigt.
 
     ![Bereitstellen der Funktion](./media/contoso-migration-rebuild/function6.png)
-
+    
 15. Contoso navigiert zur App unter [http://smarthotel360public.azurewebsites.net/Pets](http://smarthotel360public.azurewebsites.net/Pets), um zu testen, ob die Pet Checker-App wie erwartet funktioniert.
+
 16. Sie wählen den Avatar aus, um ein Bild hochzuladen.
+
     ![Bereitstellen der Funktion](./media/contoso-migration-rebuild/function7.png)
+    
 17. Das erste Foto, das überprüft werden soll, ist das eines kleinen Hundes.
+
     ![Bereitstellen der Funktion](./media/contoso-migration-rebuild/function8.png)
+    
 18. Die App gibt eine Meldung zur Bestätigung zurück.
+
     ![Bereitstellen der Funktion](./media/contoso-migration-rebuild/function9.png)
+    
 
 ## <a name="review-the-deployment"></a>Überprüfen der Bereitstellung
 
@@ -607,3 +626,14 @@ Da die migrierten Ressourcen in Azure enthalten sind, muss Contoso nun die neue 
 ## <a name="conclusion"></a>Zusammenfassung
 
 In diesem Artikel wurde die App SmartHotel360 in Azure von Contoso neu erstellt. Die lokale VM für das App-Front-End wurde in Azure App Service-Web-Apps neu erstellt. Das Back-End der Anwendung wird mithilfe von Microservices erstellt, die für Container bereitgestellt werden, die von Azure Kubernetes Service (AKS) verwaltet werden. Die App-Funktionalität hat Contoso durch eine App für Fotos von Haustieren verbessert.
+
+## <a name="suggested-skills"></a>Empfohlene Qualifikationen
+
+Microsoft Learn ist ein neuer Lernansatz. Die Bereitschaft zu den neuen Qualifikationen und Aufgaben, die mit der Cloudeinführung verbunden sind, entsteht nicht problemlos. Microsoft Learn bietet einen lohnenderen Ansatz für praktisches Lernen, der Ihnen hilft, Ihre Ziele schneller zu erreichen. Punkte sammeln, zu höheren Stufen aufsteigen und mehr erreichen.
+
+Hier finden Sie einige Beispiele für maßgeschneiderte Lernpfade auf Microsoft Learn, die auf die App Contoso SmartHotel360 in Azure abgestimmt sind.
+
+[Bereitstellen einer Website in Azure mithilfe von Azure App Service:](https://docs.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service/) Mit Web-Apps in Azure können Sie Ihre Website leicht veröffentlichen und verwalten, ohne dass Sie mit den zugrunde liegenden Servern, Speicher oder Netzwerkressourcen arbeiten müssen. Stattdessen können Sie sich auf Ihre Websitefeatures konzentrieren und die stabile Azure-Plattform verwenden, um sicheren Zugriff auf Ihre Site bereitzustellen.
+
+[Verarbeiten und Klassifizieren von Images mit der Bildanalyse von Azure Cognitive Services:](https://docs.microsoft.com/learn/paths/classify-images-with-vision-services/) Azure Cognitive Services bietet vorgefertigte Funktionen, um die Funktionalität für maschinelles Sehen in Ihren Anwendungen zu aktivieren. Erfahren Sie, wie Sie die Bildanalyse von Cognitive Services verwenden, um Gesichter zu erkennen, Bilder mit Tags zu versehen und zu klassifizieren und Objekte zu identifizieren.
+
