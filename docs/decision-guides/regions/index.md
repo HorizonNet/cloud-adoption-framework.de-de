@@ -70,8 +70,8 @@ Nachdem Sie sich mit der Netzwerktopologie auseinandergesetzt haben, die zur Gew
 - Ziehen Sie eine stabilere Implementierung von Bereitschaft und Governance in Betracht.
 - Erstellen Sie ein Inventar der betroffenen Geografien. Stellen Sie eine Liste der betroffenen Regionen und Länder zusammen.
 - Dokumentieren Sie Anforderungen an die Datenhoheit. Liegen in den ermittelten Ländern Complianceanforderungen vor, die die Datenhoheit regulieren?
-- Dokumentieren Sie die Benutzerbasis. Wird sich die Cloudmigration auf Mitarbeiter, Partner oder Kunden im ermittelten Land auswirken?
-- Dokumentieren Sie Rechenzentren und Assets. Sind im ermittelten Land Assets vorhanden, die in das Migrationsprojekt aufgenommen werden sollten?
+- Dokumentieren Sie die Benutzerbasis. Wird sich die Cloudmigration auf Mitarbeiter, Partner oder Kunden im ermittelten Land/der ermittelten Region auswirken?
+- Dokumentieren Sie Rechenzentren und Assets. Sind im ermittelten Land/der Region Assets vorhanden, die in das Migrationsprojekt aufgenommen werden sollten?
 - Dokumentieren Sie die regionale SKU-Verfügbarkeit sowie Failoveranforderungen.
 
 Stimmen Sie Änderungen im gesamten Migrationsprozess ab, um das anfängliche Inventar zu aktualisieren.

@@ -145,7 +145,7 @@ Zusätzlich zu herkömmlichen Standortfunktionen wie „In der Nähe“, „Verk
 
 **Räumliche Vorgänge:** Verbessern Sie die Location Intelligence mit einer Bibliothek aus häufig genutzten räumlichen Berechnungen, z.B. zum Geofencing, zur Ermittlung des am nächsten gelegenen Punkts und des Kreisabstands sowie für Puffer.
 
-**Geolocation**: Finden Sie heraus, aus welchem Land eine IP-Adresse stammt. Passen Sie Inhalte und Dienste basierend auf Benutzerstandorten an, und erhalten Sie Einblicke in die geografische Verteilung Ihrer Kunden.
+**Geolocation**: Finden Sie heraus, aus welchem Land/welcher Region eine IP-Adresse stammt. Passen Sie Inhalte und Dienste basierend auf Benutzerstandorten an, und erhalten Sie Einblicke in die geografische Verteilung Ihrer Kunden.
 
 ::: zone target="docs"
 
