@@ -8,14 +8,14 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 71632e8f3f995922f4021f216f2090b742141169
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: e499e499cf1639bf9ce1118dcb93254268e9cb54
+ms.sourcegitcommit: 3c325764ad8229b205d793593ff344dca3a0579b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753523"
+ms.lasthandoff: 12/23/2019
+ms.locfileid: "75328921"
 ---
-# <a name="accelerate-migration-by-migrating-an-instance-of-sql-server"></a>Beschleunigen der Migration durch Migrieren einer Instanz von SQL Server
+# <a name="accelerate-migration-by-migrating-multiple-databases-or-entire-sql-servers"></a>Beschleunigen der Migration durch Migrieren mehrerer Datenbanken oder ganzer SQL Server-Instanzen
 
 Die Migration vollständiger SQL Server-Instanzen kann die Migration von Workloads beschleunigen. Die folgende Anleitung erweitert den [Leitfaden zur Azure-Migration](../azure-migration-guide/index.md) durch die Migration einer SQL Server-Instanz außerhalb eines workloadorientierten Migrationsansatzes. Dieser Ansatz kann die Migration mehrerer Workloads mit einer einzigen Datenplattformmigration einleiten. Der größte Teil des in diesem Bereich erforderlichen Aufwands entfällt auf die Voraussetzungen und die Bewertungs-, Migrations- und Optimierungsvorgänge einer Migration.
 
@@ -27,7 +27,7 @@ Der im [Leitfaden zur Azure-Migration](../azure-migration-guide/index.md) empfoh
 
 Allerdings können einige Datenstrukturen durch eine separate Datenplattformmigration effektiver migriert werden. Im Folgenden finden Sie einige Beispiele:
 
-- **Ende des Diensts:** Wenn Sie eine SQL-Server-Instanz schnell verschieben möchten, um Herausforderungen am Ende des Diensts zu vermeiden, können Sie diese Anleitung auch außerhalb der üblichen Migrationsbemühungen verwenden.
+- **Ende des Diensts:** Durch das schnelle Verschieben einer SQL Server-Instanz als isolierte Iteration im Rahmen eines größeren Migrationsprojekts können Herausforderungen am Ende des Diensts vermieden werden. Dieser Leitfaden unterstützt Sie dabei, die Migration einer SQL Server-Instanz in den allgemeinen Migrationsprozess zu integrieren. Wenn Sie eine SQL Server-Instanz jedoch unabhängig von einem anderen Projekt zur Cloudeinführung migrieren/aktualisieren, hilft Ihnen unter Umständen der Artikel [Übersicht über das Ende der Lebensdauer von SQL Server](/sql/sql-server/end-of-support/sql-server-end-of-life-overview) oder die [Dokumentation zur SQL Server-Migration](/sql/sql-server/migrate/index) weiter.
 - **SQL Server-Dienste:** Die Datenstruktur ist Teil einer umfassenderen Lösung, die erfordert, dass SQL Server auf einem virtuellen Computer ausgeführt wird. Dies ist für Lösungen üblich, die SQL Server-Dienste wie SQL Server Reporting Services, SQL Server Integration Services oder SQL Server Analysis Services nutzen.
 - **Datenbanken mit hoher Dichte und geringer Auslastung:** Die SQL Server-Instanz weist eine hohe Datenbankdichte auf. Jede dieser Datenbanken verfügt über niedrige Transaktionsvolumen und erfordert wenig Aufwand an Computeressourcen. Sie sollten andere, modernere Lösungen in Betracht ziehen, aber ein IaaS-Ansatz (Infrastructure-as-a-Service) kann zu erheblich geringeren Betriebskosten führen.
 - **Gesamtbetriebskosten:** Gegebenenfalls können [Azure-Hybridvorteile](https://azure.microsoft.com/pricing/hybrid-benefit) auf den Listenpreis angewandt werden, sodass die niedrigsten Betriebskosten für SQL Server erzielt werden. Dies gilt insbesondere für Kunden, die SQL Server in Szenarien mit mehreren Cloudumgebungen hosten.
@@ -51,7 +51,7 @@ Im Folgenden finden Sie ein Beispiel für einen Serverbestand:
 |sql-01|Kern-Apps|2016|Unternehmenskritisch|Streng vertraulich|40|–|–|–|Ja|3|
 |sql-02|Kern-Apps|2016|Unternehmenskritisch|Streng vertraulich|40|–|–|–|Ja|3|
 |sql-03|Kern-Apps|2016|Unternehmenskritisch|Streng vertraulich|40|–|–|–|Ja|3|
-|sql-04|BI|2012|Hoch|XX|6|–|Vertraulich|Ja, mehrdimensionaler Cube|Nein|1|
+|sql-04|BI|2012|High|XX|6|–|Vertraulich|Ja, mehrdimensionaler Cube|Nein|1|
 |sql-05|Integration|2008 R2|Niedrig|Allgemein|20|Ja|–|–|Nein|1|
 
 ### <a name="database-inventory"></a>Datenbankbestand
@@ -61,11 +61,11 @@ Im Folgenden finden Sie ein Beispiel für einen Datenbankbestand für einen der 
 |Server|Datenbank|[Wichtigkeit](../../manage/considerations/criticality.md)|[Vertraulichkeit](../../govern/policy-compliance/data-classification.md)|DMA-Ergebnisse (Datenmigrations-Assistent)|DMA-Wartung|Zielplattform|
 |---------|---------|---------|---------|---------|---------|---------|
 |sql-01|DB-1|Unternehmenskritisch|Streng vertraulich|Kompatibel|–|Azure SQL-Datenbank|
-|sql-01|DB-2|Hoch|Vertraulich|Schemaänderung erforderlich|Implementierte Änderungen|Azure SQL-Datenbank|
-|sql-01|DB-1|Hoch|Allgemein|Kompatibel|–|Verwaltete Azure SQL-Instanz|
-|sql-01|DB-1|Niedrig|Streng vertraulich|Schemaänderung erforderlich|Geplante Änderungen|Verwaltete Azure SQL-Instanz|
-|sql-01|DB-1|Unternehmenskritisch|Allgemein|Kompatibel|–|Verwaltete Azure SQL-Instanz|
-|sql-01|DB-2|Hoch|Vertraulich|Kompatibel|–|Azure SQL-Datenbank|
+|sql-01|DB-2|High|Vertraulich|Schemaänderung erforderlich|Implementierte Änderungen|Azure SQL-Datenbank|
+|sql-01|DB-3|High|Allgemein|Kompatibel|–|Verwaltete Azure SQL-Instanz|
+|sql-01|DB-4|Niedrig|Streng vertraulich|Schemaänderung erforderlich|Geplante Änderungen|Verwaltete Azure SQL-Instanz|
+|sql-01|DB-5|Unternehmenskritisch|Allgemein|Kompatibel|–|Verwaltete Azure SQL-Instanz|
+|sql-01|DB-6|High|Vertraulich|Kompatibel|–|Azure SQL-Datenbank|
 
 ### <a name="integration-with-the-cloud-adoption-plan"></a>Integration in den Cloud Adoption-Plan
 

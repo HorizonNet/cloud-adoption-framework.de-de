@@ -8,12 +8,12 @@ layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
 ms.date: 10/14/2019
-ms.openlocfilehash: 743bbb31b6bee799e18161a55b0f70c1783eaf6f
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: c945539be722db41f9e4f04813c8bf9ac93af34f
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565925"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781707"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Framework für die Einführung der Microsoft Cloud (Microsoft Cloud Adoption Framework)
 
@@ -52,7 +52,7 @@ Hier finden Sie Informationen zum Definieren der geschäftlichen Begründung und
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>Plan</h3>
+                            <h3>Planen</h3>
 Hier erfahren Sie, wie Sie umsetzbare Einführungspläne auf Geschäftsergebnisse abstimmen.
                         </div>
                     </div>
@@ -163,13 +163,13 @@ Jede der oben genannten Phasen ist Teil eines umfassenden Cloudeinführungs-Lebe
 
 ![Übersicht über das Framework für die Cloudeinführung](./_images/caf-overview.png)
 
-## <a name="intent"></a>Absicht
+## <a name="intent"></a>Intent
 
-Die Cloud verändert grundlegend, wie Unternehmen IT-Ressourcen beschaffen und nutzen. Üblicherweise lagen Besitzrechte und Verantwortlichkeit für alle Technologieaspekte – von der Infrastruktur bis zur Software – beim Unternehmen. Nach der Umstellung auf die Cloud haben Unternehmen die Möglichkeit, Ressourcen nur dann bereitzustellen und zu nutzen, wenn diese benötigt werden. Die Cloud bietet im Hinblick auf Entwurfsoptionen zwar eine enorme Flexibilität, aber bei der Einführung von Cloudtechnologien benötigen Unternehmen eine bewährte und einheitliche Methodik. Das Framework für die Einführung der Microsoft Cloud erfüllt diese Anforderung und hilft beim Treffen von Entscheidungen beim Umstieg auf die Cloud.
+Die Cloud verändert grundlegend, wie Unternehmen IT-Ressourcen beschaffen, nutzen und schützen. Üblicherweise lagen Besitzrechte und Verantwortlichkeit für alle Technologieaspekte – von der Infrastruktur bis zur Software – beim Unternehmen. Nach der Umstellung auf die Cloud haben Unternehmen die Möglichkeit, Ressourcen nur dann bereitzustellen und zu nutzen, wenn diese benötigt werden. Die Cloud bietet im Hinblick auf Entwurfsoptionen zwar eine enorme Flexibilität, aber bei der Einführung von Cloudtechnologien benötigen Unternehmen eine bewährte und einheitliche Methodik. Das Framework für die Einführung der Microsoft Cloud erfüllt diese Anforderung und hilft beim Treffen von Entscheidungen beim Umstieg auf die Cloud.
 
 Der Umstieg auf die Cloud ist aber nur ein Mittel zum Zweck. Doch eine erfolgreicher Cloudeinführung beginnt lange vor der Wahl eines Cloudplattformanbieters. Sie beginnt, sobald Entscheider aus der IT und den Fachbereichen erkennen, dass die Cloud ein bestimmtes Ziel für die Unternehmenstransformations beschleunigen kann. Das Framework für die Cloudeinführung kann bei der Ausrichtung von Strategien in Bezug auf Veränderungen des Unternehmens, der Kultur und der Technik behilflich sein, um die gewünschten Geschäftsergebnisse zu erzielen.
 
-Das Framework für die Einführung der Cloud bietet technische Anleitungen für Microsoft Azure. Da Unternehmenskunden sich unter Umständen noch in der Auswahlphase des Cloudanbieters befinden, bietet das Framework cloudunabhängige Anleitungen, um strategische Entscheidungen möglichst zu vereinfachen.
+Das Framework für die Einführung der Cloud bietet technische Anleitungen für Microsoft Azure. Da Unternehmenskunden sich unter Umständen noch in der Auswahlphase des Cloudanbieters befinden oder absichtlich eine Strategie mit mehreren Clouds verfolgen, bietet das Framework cloudunabhängige Anleitungen, um strategische Entscheidungen möglichst zu vereinfachen.
 
 ## <a name="intended-audience"></a>Zielpublikum
 

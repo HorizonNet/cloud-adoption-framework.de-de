@@ -9,14 +9,14 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 layout: LandingPage
-ms.openlocfilehash: 977a1f58d59a182df6451b27f15747477a1a1de9
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 40bce7ec1a68463c9ece51188170d94a274507c3
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683750"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781520"
 ---
-# <a name="microsoft-cloud-adoption-framework-for-azure"></a>Framework für die Einführung der Microsoft Cloud (Microsoft Cloud Adoption Framework)
+# <a name="cloud-adoption-framework-roadmap"></a>Framework für die Cloudeinführung (Cloud Adoption Framework, CAF): Roadmap
 
 Die Cloud verändert grundlegend, wie Unternehmen IT-Ressourcen beschaffen und nutzen. Üblicherweise lagen Besitzrechte und Verantwortlichkeit für alle Ebenen der IT-Technologie von der Infrastruktur bis zur Software beim Unternehmen. Die Cloud ermöglicht Unternehmen nun, Ressourcen nur bei Bedarf bereitzustellen und zu nutzen. Der Umstieg auf die Cloud ist jedoch ein Mittel zum Zweck. Unternehmen führen die Cloud ein, wenn sie erkennen, dass sie für jede der folgenden Geschäftschancen von Vorteil ist:
 
@@ -24,15 +24,15 @@ Die Cloud verändert grundlegend, wie Unternehmen IT-Ressourcen beschaffen und n
   - Optimierung von Vorgängen
   - Vereinfachung von Technologie
   - Erhöhen der Unternehmensflexibilität
-  - Senkung von Kosten
-  - Vorbereitung auf neue technische Funktionen und Möglichkeiten
-  - Skalierung entsprechend den Ansprüchen des Markts oder geografischer Regionen
+  - Senken Sie Kosten
+  - Vorbereiten auf neue technische Funktionen und Möglichkeiten
+  - Skalierung entsprechend den Ansprüchen des Markts oder neuer geografischer Regionen
 - Unternehmen sind aus folgenden Gründen daran interessiert, mithilfe der Cloud **innovativ** zu sein:
   - Verbessern der Benutzerfreundlichkeit
   - Erhöhen der Kundenbindung
   - Transformation von Produkten
   - Vorbereiten auf und Erzeugen von neuen technischen Funktionen und Möglichkeiten
-  - Skalierung entsprechend den Ansprüchen des Markts oder geografischer Regionen
+  - Skalierung entsprechend den Ansprüchen des Markts oder neuer geografischer Regionen
 
 ## <a name="vision-and-objectives"></a>Visionen und Ziele
 
@@ -46,7 +46,7 @@ Die Beseitigung wesentlicher Hindernisse und die Ermöglichung von Veränderunge
 
 Das Framework für die Cloudeinführung ist ein umfassendes Framework, das die Phasen der Planung, Bereitschaft und Einführung über die Migrations- und Innovationsmotive für die Cloudeinführung hinweg abdeckt und dabei von Anleitungen zur Governance und dem Betrieb unterstützt wird.
 
-Microsoft baut dieses ehrgeizige Framework in Zusammenarbeit mit Kunden, Partnern und internen Teams aktiv auf. Um Partnerschaften zu ermutigen, werden Inhalte als öffentlichen Vorschauversionen freigegeben, sobald diese verfügbar sind. Diese öffentlichen Vorschauversionen ermöglichen es, die Anleitungen zu testen, zu validieren und inkrementell zu optimieren. Das Framework wird den Zustand der allgemeinen Verfügbarkeit (GA) erreichen, sobald die ehrgeizigen Ziele erfüllt sind.
+Das Framework ist jetzt allgemein verfügbar. Wir bauen dieses Framework jedoch weiterhin in Zusammenarbeit mit Kunden, Partnern und internen Teams aktiv auf. Um Partnerschaften zu ermutigen, werden Inhalte veröffentlicht, sobald diese verfügbar sind. Diese öffentlichen Releases ermöglichen es, die Anleitungen zu testen, zu validieren und schrittweise zu optimieren. 
 
 Für eine erfolgreiche Cloudeinführung müssen die Kunden ihre Mitarbeiter, Technologien und Prozesse auf diese digitale Transformation vorbereiten. Das Framework für die Cloudeinführung umfasst einen Abschnitt, in dem die allgemeinen Einführungswege, sowohl Migration als auch Innovation, als Übersicht für den Kunden dargelegt werden. Dieser Abschnitt besteht aus den folgenden Phasen des Einführungswegs:
 
