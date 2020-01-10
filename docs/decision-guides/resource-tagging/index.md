@@ -9,12 +9,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 1142ca43776ab9b147b23ef054d77d76d8aed212
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: c62e087372d21a3883c90425b31e1c5ff9bfd2fb
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160230"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868021"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Ressourcenbenennung und -markierung
 
@@ -62,7 +62,7 @@ Die unten aufgeführten allgemeinen Markierungsmuster zeigen beispielhaft, wie d
 | Markierungstyp | Beispiele | BESCHREIBUNG |
 |-----|-----|-----|
 | Funktionen            | app = catalogsearch1 <br/>tier = web <br/>webserver = apache<br/>env = prod <br/>env = staging <br/>env = dev                 | Kategorisieren Sie Ressourcen in Bezug auf ihren Zweck innerhalb einer Workload, auf die Umgebung, in der sie bereitgestellt werden, oder auf andere funktionsbezogene oder operative Details.                                 |
-| Classification        | confidentiality=private<br/>sla = 24hours                                 | Klassifiziert eine Ressource danach, wie sie verwendet wird und welche Richtlinien für sie gelten.                               |
+| Klassifizierung        | confidentiality=private<br/>sla = 24hours                                 | Klassifiziert eine Ressource danach, wie sie verwendet wird und welche Richtlinien für sie gelten.                               |
 | Buchhaltung            | department = finance <br/>project = catalogsearch <br/>region = northamerica | Ermöglicht die Zuordnung der Ressource zu bestimmten Gruppen innerhalb einer Organisation zu Abrechnungszwecken. |
 | Partnerschaft           | owner = jsmith <br/>contactalias = catsearchowners<br/>stakeholders = user1;user2;user3<br/>                       | Enthält Informationen dazu, welche Personen (außerhalb der IT) mit der Ressource verknüpft oder in anderer Form von ihr betroffen sind.                      |
 | Zweck               | businessprocess=support<br/>businessimpact=moderate<br/>revenueimpact=high   | Richtet Ressourcen an Geschäftsfunktionen aus, um Investitionsentscheidungen besser zu unterstützen.  |
@@ -73,7 +73,7 @@ Die unten aufgeführten allgemeinen Markierungsmuster zeigen beispielhaft, wie d
 
 Weitere Informationen zur Benennung und Markierung in Azure finden Sie unter:
 
-- [Namenskonventionen für Azure-Ressourcen](/azure/architecture/best-practices/resource-naming). In dieser Anleitung finden Sie empfohlene Benennungskonventionen für Azure-Ressourcen.
+- [Namenskonventionen für Azure-Ressourcen](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming). In dieser Anleitung finden Sie empfohlene Benennungskonventionen für Azure-Ressourcen.
 - [Verwenden von Tags zum Organisieren von Azure-Ressourcen](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags). Sie können Tags in Azure sowohl auf der Ressourcengruppenebene als auch auf der Ebene einzelner Ressourcen anwenden. So können Sie Abrechnungsberichte anhand der angewendeten Markierungen unterschiedlich detailliert gestalten.
 
 ## <a name="next-steps"></a>Nächste Schritte

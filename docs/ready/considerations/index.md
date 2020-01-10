@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 86082985a252e4724f237806669814d41ac29173
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: f4cc7aaa9a937327a4dd2ede4bf1c3c619cc632a
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781435"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868030"
 ---
 # <a name="landing-zone-considerations"></a>Überlegungen zu Landezonen
 
@@ -37,7 +37,7 @@ Landezonen stellen eine Struktur für Hostingoptionen bereit. Die Struktur wird 
 Jede Landezone ist Teil einer umfassenderen Lösung zur Strukturierung von Ressourcen innerhalb einer Cloudumgebung. Bei den Azure-Grundlagen handelt es sich um die Grundbausteine der Struktur.
 
 - **[Azure fundamental concepts](./fundamental-concepts.md)** (Grundlegende Konzepte in Azure): Lernen Sie grundlegende Konzepte und Begriffe kennen, die zum Organisieren von Ressourcen in Azure verwendet werden, und erfahren Sie, wie diese Konzepte zusammenhängen.
-- **[Leitfaden zur Entscheidungsfindung bei der Ressourcenkonsistenz:](../../decision-guides/resource-consistency/)** Nachdem Sie sich mit den einzelnen Grundlagen vertraut gemacht haben, können Sie den Leitfaden zur Entscheidungsfindung für die Ressourcenstrukturierung heranziehen, um Entscheidungen zur Gestaltung der Landezone zu treffen.
+- **[Leitfaden zur Entscheidungsfindung bei der Ressourcenkonsistenz:](../../decision-guides/resource-consistency/index.md)** Nachdem Sie sich mit den einzelnen Grundlagen vertraut gemacht haben, können Sie den Leitfaden zur Entscheidungsfindung für die Ressourcenstrukturierung heranziehen, um Entscheidungen zur Gestaltung der Landezone zu treffen.
 
 ## <a name="governance-considerations"></a>Governanceüberlegungen
 

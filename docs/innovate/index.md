@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
-ms.openlocfilehash: 758cd3285ed7f9f1b3542b54af7d275dccf1662d
-ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
+ms.openlocfilehash: 06110380d848cdab37f7bc6109869be07faa9265
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74681769"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868077"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Cloudinnovationen im Cloud Adoption Framework
 
@@ -123,9 +123,9 @@ Microsoft Learn ist ein neuer Lernansatz. Die Bereitschaft zu den neuen Qualifik
 
 Hier finden Sie einige Beispiele für rollenspezifische Lernpfade in Microsoft Learn, die auf den Abschnitt „Innovationen“ des Cloud Adoption Framework abgestimmt sind.
 
-[Verwalten von Containern in Azure:](https://docs.microsoft.com/learn/paths/administer-containers-in-azure/) Azure Container Instances (ACI) bietet die schnellste und einfachste Methode zum Ausführen von Containern in Azure. In diesem Lernpfad erfahren Sie, wie Sie Container erstellen und verwalten und wie Sie mit ACI elastische Skalierungen für Kubernetes bereitstellen.
+[Verwalten von Containern in Azure:](https://docs.microsoft.com/learn/paths/administer-containers-in-azure) Azure Container Instances (ACI) bietet die schnellste und einfachste Methode zum Ausführen von Containern in Azure. In diesem Lernpfad erfahren Sie, wie Sie Container erstellen und verwalten und wie Sie mit ACI elastische Skalierungen für Kubernetes bereitstellen.
 
-[Erstellen serverloser Anwendungen:](https://docs.microsoft.com/learn/paths/create-serverless-applications/) Azure Functions ermöglicht die Erstellung von ereignisgesteuerten Compute-On-Demand-Systemen, die durch verschiedene externe Ereignisse ausgelöst werden können. Lesen Sie, wie Sie Funktionen nutzen, um serverseitige Logik auszuführen und serverlose Architekturen zu erstellen.
+[Erstellen serverloser Anwendungen:](https://docs.microsoft.com/learn/paths/create-serverless-applications) Azure Functions ermöglicht die Erstellung von ereignisgesteuerten Compute-On-Demand-Systemen, die durch verschiedene externe Ereignisse ausgelöst werden können. Lesen Sie, wie Sie Funktionen nutzen, um serverseitige Logik auszuführen und serverlose Architekturen zu erstellen.
 
 Weitere Lernpfade finden Sie im [Learn-Katalog](/learn/browse). Verwenden Sie den Filter **Rollen**, um Lernpfade an ihrer Rolle auszurichten.
 
@@ -134,4 +134,3 @@ Weitere Lernpfade finden Sie im [Learn-Katalog](/learn/browse). Verwenden Sie de
 Erste Übung zur Cloudinnovation:
 > [!div class="nextstepaction"]
 > [Erzielen eines Konsenses zum Geschäftswert der Cloudinnovation](./business-value.md)
-
