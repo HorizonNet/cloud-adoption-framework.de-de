@@ -9,19 +9,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 59a18ab71befd7b4f60c4e0a97ecb6af28690d7f
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: b594283b4787cb9b369f018264098fd052ec638e
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752836"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781860"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>Zuweisen eines neuen Hosts für eine lokale App auf einer Azure-VM und einer verwalteten Azure SQL-Datenbank-Instanz
 
 Dieser Artikel zeigt, wie das fiktive Unternehmen Contoso eine zweistufige Windows.NET-Front-End-App, die auf VMware-VMs ausgeführt wird, mit dem Azure Site Recovery-Dienst zu einer Azure-VM migriert. Er zeigt außerdem, wie Contoso die App-Datenbank zu einer verwalteten Azure-SQL-Datenbank-Instanz migriert.
-
-> [!NOTE]
-> Die verwaltete Azure SQL-Datenbank-Instanz befindet sich derzeit in der Vorschauphase.
 
 Die in diesem Beispiel verwendet SmartHotel360-App wird als Open Source bereitgestellt. Wenn Sie diese App für Ihre eigenen Tests verwenden möchten, können Sie sie von [GitHub](https://github.com/Microsoft/SmartHotel360) herunterladen.
 
@@ -109,7 +106,7 @@ Contoso migriert die Web- und Datenschichten seiner SmartHotel360-App mit den fo
 
 ### <a name="azure-services"></a>Azure-Dienste
 
-Dienst | BESCHREIBUNG | Kosten
+Dienst | Beschreibung | Kosten
 --- | --- | ---
 [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Der Azure Database Migration Service ermöglicht die nahtlose Migration von mehreren Datenbankquellen zu Azure-Datenplattformen bei minimaler Ausfallzeit. | Informieren Sie sich über die [unterstützten Regionen](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability) und die [Preise für den Database Migration Service](https://azure.microsoft.com/pricing/details/database-migration).
 [Verwaltete Azure SQL-Datenbank-Instanz](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | Die verwaltete Azure SQL-Datenbank-Instanz ist ein verwalteter Datenbankdienst, der eine vollständig verwaltete SQL Server-Instanz in der Azure-Cloud darstellt. Sie nutzt den gleichen Code wie die neueste Version der Microsoft SQL Server-Datenbank-Engine und verfügt über die neuesten Features, Leistungsverbesserungen und Sicherheitspatches. | Bei Verwendung einer verwalteten Azure SQL-Datenbank-Instanz, die in Azure ausgeführt wird, fallen Gebühren je nach Kapazität an. Erfahren Sie mehr zu den [Preisen für verwaltete SQL-Datenbank-Instanzen](https://azure.microsoft.com/pricing/details/sql-database/managed).
@@ -123,7 +120,6 @@ Contoso und andere Benutzer müssen für dieses Szenario die folgenden Vorausset
 
 Requirements (Anforderungen) | Details
 --- | ---
-**Registrieren für die verwaltete Instanz (Vorschauversion)** | Sie müssen für die eingeschränkte öffentliche Vorschauversion der verwalteten SQL-Datenbank-Instanz registriert sein. Sie benötigen ein Azure-Abonnement, um sich [registrieren](https://portal.azure.com#create/Microsoft.SQLManagedInstance) zu können. Da sich die Registrierung über einige Tage erstrecken kann, sollten Sie diesen Vorgang durchführen, bevor Sie mit der Bereitstellung dieses Szenarios beginnen.
 **Azure-Abonnement** | Sie müssten bereits ein Abonnement erstellt haben, als Sie die Bewertung im ersten Artikel dieser Reihe durchgeführt haben. Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/pricing/free-trial) erstellen.<br/><br/> Wenn Sie ein kostenloses Konto erstellen, sind Sie der Administrator Ihres Abonnements und können alle Aktionen durchführen.<br/><br/> Falls Sie ein vorhandenes Abonnement verwenden und nicht der Administrator sind, müssen Sie mit dem Administrator des Abonnements zusammenarbeiten, damit er Ihnen Berechtigungen vom Typ „Besitzer“ oder „Mitwirkender“ zuweist.<br/><br/> Falls Sie präzisere Berechtigungen benötigen, helfen Ihnen die Informationen unter [Verwenden der rollenbasierten Zugriffssteuerung zum Verwalten des Site Recovery-Zugriffs](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control) weiter.
 **Azure-Infrastruktur** | Contoso richtet die Azure-Infrastruktur ein, wie in [Azure infrastructure for migration (Azure-Infrastruktur für die Migration)](./contoso-migration-infrastructure.md) beschrieben.
 **Site Recovery (lokal)** | Auf Ihrer lokalen vCenter Server-Instanz sollte Version 5.5, 6.0 oder 6.5 ausgeführt werden.<br/><br/> Ein ESXi-Host mit Version 5.5, 6.0 oder 6.5.<br/><br/> Mindestens eine VMware-VM auf dem ESXi-Host.<br/><br/> VMs müssen die [Azure-Anforderungen](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#azure-vm-requirements) erfüllen.<br/><br/> Unterstützte Konfiguration für [Netzwerk](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#network) und [Speicher](https://docs.microsoft.com/azure/site-recovery/vmware-physical-azure-support-matrix#storage).
@@ -229,14 +225,14 @@ Jetzt können die Contoso-Administratoren eine verwaltete SQL-Datenbank-Instanz 
 1. Da die verwaltete Instanz als Geschäfts-App dient, wird sie in der primären Region „USA, Osten 2“ des Unternehmens bereitgestellt. Die verwaltete Instanz wird zur Ressourcengruppe **ContosoRG** hinzugefügt.
 2. Für die Instanz wird ein Tarif, eine Computegröße und Speicher ausgewählt. Erfahren Sie mehr zu den [Preisen für verwaltete SQL-Datenbank-Instanzen](https://azure.microsoft.com/pricing/details/sql-database/managed).
 
-    ![Verwaltete Instanz](media/contoso-migration-rehost-vm-sql-managed-instance/mi-create.png)
+    ![SQL-Datenbank-Instanz](media/contoso-migration-rehost-vm-sql-managed-instance/mi-create.png)
 
 3. Nach der Bereitstellung der verwalteten Instanz werden zwei neue Ressourcen in der Ressourcengruppe **ContosoRG** angezeigt:
 
     - Ein virtueller Cluster, falls Contoso über mehrere verwaltete Instanzen verfügt.
     - Die verwaltete SQL-Datenbank-Instanz.
 
-      ![Verwaltete Instanz](media/contoso-migration-rehost-vm-sql-managed-instance/mi-resources.png)
+      ![SQL-Datenbank-Instanz](media/contoso-migration-rehost-vm-sql-managed-instance/mi-resources.png)
 
 **Benötigen Sie weitere Hilfe?**
 
@@ -515,7 +511,7 @@ Die Contoso-Administratoren führen ein schnelles Testfailover aus und migrieren
 
 Mit der Ausführung eines Testfailovers wird sichergestellt, dass vor der Migration von WEBVM alles wie erwartet funktioniert. Die Administratoren die folgenden Schritte aus:
 
-1. Sie führen ein Testfailover zum letzten verfügbaren Zeitpunkt aus (**Zuletzt verarbeitet**).
+1. Sie führen ein Testfailover auf den letzten verfügbaren Zeitpunkt aus (**Zuletzt verarbeitet**).
 2. Sie wählen **Computer vor Beginn des Failovers herunterfahren** aus. Wenn diese Option ausgewählt wird, versucht Site Recovery, die Quell-VM vor dem Auslösen des Failovers herunterzufahren. Das Failover wird auch dann fortgesetzt, wenn das Herunterfahren nicht erfolgreich ist.
 3. Testfailover durchführen: a. Eine Überprüfung der erforderlichen Komponenten wird durchgeführt, um sicherzustellen, dass alle Bedingungen für eine Migration erfüllt sind.
     b. Durch das Failover werden die Daten verarbeitet, sodass eine Azure-VM erstellt werden kann. Wenn der letzte Wiederherstellungspunkt ausgewählt wird, wird ein Wiederherstellungspunkt auf der Grundlage der Daten erstellt.
