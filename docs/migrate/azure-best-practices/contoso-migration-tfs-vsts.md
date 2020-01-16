@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3c87bfbd8fe920d0469da8b3e60da59da07158ed
-ms.sourcegitcommit: 0b6939f65a1e5653149301e9aa14db9a1f67825f
+ms.openlocfilehash: 48ceb3581f72f6fed72360ecf4e30596b4d2eb72
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74557024"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868107"
 ---
 # <a name="refactor-a-team-foundation-server-deployment-to-azure-devops-services"></a>Umgestalten einer Team Foundation Server-Bereitstellung zu Azure DevOps Services
 
@@ -103,7 +103,7 @@ Contoso geht bei der Migration wie folgt vor:
 Die Contoso-Administratoren aktualisieren den TFS-Server auf TFS 2018 Update 2. Vor der Durchführung:
 
 - Contoso lädt [TFS 2018 Update 2](https://visualstudio.microsoft.com/downloads) herunter.
-- Das Unternehmen überprüft die [Hardwareanforderungen](/azure/devops/server/requirements) und geht die [Anmerkungen zu dieser Version](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-relnotes) und [Upgradegotchas](/azure/devops/server/upgrade/get-started#before-you-upgrade-to-tfs-2018) durch.
+- Das Unternehmen überprüft die [Hardwareanforderungen](https://docs.microsoft.com/azure/devops/server/requirements) und geht die [Anmerkungen zu dieser Version](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-relnotes) und [Upgradegotchas](https://docs.microsoft.com/azure/devops/server/upgrade/get-started#before-you-upgrade-to-tfs-2018) durch.
 
 Das Upgrade wird wie folgt durchgeführt:
 
@@ -132,7 +132,7 @@ Das Upgrade wird wie folgt durchgeführt:
 
 **Benötigen Sie weitere Hilfe?**
 
-Informationen zum Durchführen von Upgrades für TFS finden Sie [hier](/azure/devops/server/upgrade/get-started).
+Informationen zum Durchführen von Upgrades für TFS finden Sie [hier](https://docs.microsoft.com/azure/devops/server/upgrade/get-started).
 
 ## <a name="step-3-validate-the-tfs-collection"></a>Schritt 3: Überprüfen der TFS-Sammlung
 
@@ -266,7 +266,7 @@ Vor dem Trennen der Sammlung erstellen die Contoso-Administratoren eine lokale S
 Contoso erstellt eine Sicherung (DACPAC) für den Import in Azure DevOps Services.
 
 - SqlPackage.exe in SQL Server Data Tools wird verwendet, um die DACPAC-Datei zu erstellen. Es sind mehrere Versionen von SqlPackage.exe in SQL Server Data Tools installiert, die sich im Ordner mit Namen wie etwa „120“, „130“ und „140“ befinden. Es ist wichtig, die richtige Version zu verwenden, um die DACPAC-Datei vorzubereiten.
-- Bei TFS 2018-Importen muss SqlPackage.exe aus dem Ordner „140“ oder höher verwendet werden. Bei CONTOSOTFS befindet sich diese Datei im folgenden Ordner: **C:\Programme (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\140**.
+- Bei TFS 2018-Importen muss SqlPackage.exe aus dem Ordner „140“ oder höher verwendet werden. Bei CONTOSOTFS befindet sich diese Datei im folgenden Ordner: C:\Programme (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\140.
 
 Die DACPAC-Datei wird von den Contoso-Administratoren wie folgt generiert:
 
@@ -292,27 +292,27 @@ Nachdem die DACPAC-Datei erstellt wurde, wird es von Contoso in Azure Storage ho
 
 1. Contoso [lädt den Azure Storage-Explorer](https://azure.microsoft.com/features/storage-explorer) herunter und installiert ihn.
 
-    ![Hochladen](./media/contoso-migration-tfs-vsts/backup5.png)
+    ![Upload](./media/contoso-migration-tfs-vsts/backup5.png)
 
 2. Contoso stellt eine Verbindung mit dem jeweiligen Abonnement her und sucht das Speicherkonto, das das Unternehmen für die Migration erstellt hat (**contosodevmigration**). Contoso erstellt einen neuen Blobcontainer: **azuredevopsmigration**.
 
-    ![Hochladen](./media/contoso-migration-tfs-vsts/backup6.png)
+    ![Upload](./media/contoso-migration-tfs-vsts/backup6.png)
 
 3. Contoso gibt die DACPAC-Datei für den Upload als Blockblob an.
 
-    ![Hochladen](./media/contoso-migration-tfs-vsts/backup7.png)
+    ![Upload](./media/contoso-migration-tfs-vsts/backup7.png)
 
 4. Nachdem die Datei hochgeladen wurde, wählt Contoso den Dateinamen und dann **SAS generieren** aus. Contoso erweitert die Blobcontainer im Speicherkonto, wählt den Container mit den Importdateien und dann **Shared Access Signature abrufen** aus.
 
-    ![Hochladen](./media/contoso-migration-tfs-vsts/backup8.png)
+    ![Upload](./media/contoso-migration-tfs-vsts/backup8.png)
 
 5. Contoso übernimmt die Standardwerte und wählt **Erstellen** aus. Dies gewährt 24 Stunden lang Zugriff.
 
-    ![Hochladen](./media/contoso-migration-tfs-vsts/backup9.png)
+    ![Upload](./media/contoso-migration-tfs-vsts/backup9.png)
 
 6. Contoso kopiert die Shared Access Signature-URL, damit sie vom TFS-Migrationstool verwendet werden kann.
 
-    ![Hochladen](./media/contoso-migration-tfs-vsts/backup10.png)
+    ![Upload](./media/contoso-migration-tfs-vsts/backup10.png)
 
 > [!NOTE]
 > Die Migration muss innerhalb des zulässigen Zeitfensters erfolgen. Anderenfalls laufen die Berechtigungen ab.
