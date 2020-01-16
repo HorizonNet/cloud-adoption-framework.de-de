@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 84efac562647d88235dbcecbb2078e632c1c0341
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 4969681cbc6fbb71da70f3ced09b5e4616c773b5
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565463"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781775"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Bestand und Transparenz in Azure
 
@@ -33,7 +33,7 @@ In der folgenden Tabelle wird für jede Umgebung auf Unternehmensniveau der empf
 |Zentralisierung von Protokollen|Log Analytics|Zentrale Protokollierung für jegliche Transparenzzwecke|
 |Zentralisierung der Überwachung|Azure Monitor|Zentrale Überwachung von Betriebsdaten und Trends|
 |Nachverfolgen von Bestand und Änderungen für virtuelle Computer|Azure-Änderungsnachverfolgung und Bestand|Bestandsaufnahme von VMs und Überwachen von Änderungen auf Ebene des Gastbetriebssystems|
-|Dienstintegrität|Azure-Aktivitätsprotokoll|Überwachen von Änderungen auf Abonnementebene|
+|Abonnementüberwachung|Azure-Aktivitätsprotokoll|Überwachen von Änderungen auf Abonnementebene|
 |Überwachung des Gastbetriebssystems|Azure Monitor für VMs|Überwachen von Änderungen und der Leistung von VMs|
 |Netzwerküberwachung|Azure Network Watcher|Überwachen von Netzwerkänderungen und -leistung|
 |DNS-Überwachung|DNS-Analyse|Sicherheit, Leistung und Vorgänge von DNS|
@@ -63,7 +63,7 @@ Azure Service Health umfasst Folgendes:
 
 <!-- markdownlint-disable MD024 -->
 
-### <a name="action"></a>Aktion
+### <a name="action"></a>Action
 
 Gehen Sie wie folgt vor, um eine Service Health-Warnung einzurichten:
 
@@ -100,7 +100,7 @@ Ein [Log Analytics-Arbeitsbereich](https://docs.microsoft.com/azure/azure-monito
 
 ::: zone target="chromeless"
 
-### <a name="action"></a>Aktion
+### <a name="action"></a>Action
 
 <!-- markdownlint-disable DOCSMD001 -->
 
@@ -135,7 +135,7 @@ Azure Monitor ist ein separater einheitlicher Hub für alle Überwachungs- und D
 
 ::: zone target="chromeless"
 
-### <a name="action"></a>Aktion
+### <a name="action"></a>Action
 
 <!-- markdownlint-disable DOCSMD001 -->
 

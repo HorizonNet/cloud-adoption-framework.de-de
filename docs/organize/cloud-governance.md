@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: bf68bc17d5e94ae4c35e0a88d3ca73bd42935a5b
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 38fa6133c9a4f823d4347b3c1b4db5dd81f24ceb
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566784"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781453"
 ---
 # <a name="cloud-governance-capabilities"></a>Funktionen für Cloudgovernance
 
@@ -26,6 +26,7 @@ Je nach den gewünschten Geschäftsergebnissen können die Fähigkeiten, die fü
 
 - IT-Governance
 - Unternehmensarchitektur
+- Sicherheit
 - IT-Abläufe
 - IT-Infrastruktur
 - Netzwerk
@@ -33,6 +34,7 @@ Je nach den gewünschten Geschäftsergebnissen können die Fähigkeiten, die fü
 - Virtualisierung
 - Business Continuity & Disaster Recovery
 - Anwendungsbesitzer im IT-Bereich
+- Besitzer im Finanzbereich
 
 Mit Funktionen für die Cloudgovernance werden Risiken in Bezug auf aktuelle und zukünftige Releases identifiziert. Diese Funktionen sind Teil der Arbeit zum Evaluieren von Risiken, Verstehen der potenziellen Auswirkungen und Treffen von Entscheidungen zur Risikotoleranz. Bei dieser Vorgehensweise können Pläne schnell aktualisiert werden, um die sich ändernden Anforderungen der [Funktionen für die Cloudeinführung](./cloud-adoption.md) widerzuspiegeln.
 
@@ -69,7 +71,7 @@ Hier sind die Beteiligten angegeben, die häufig an Aktivitäten im Bereich der 
 
 ## <a name="maturation-of-cloud-governance-capability"></a>Entwicklung von Funktionen für die Cloudgovernance
 
-Einige große Organisationen verfügen über vorhandene dedizierte Teams speziell für die IT-Governance. Diese Teams sind auf das Risikomanagement für das gesamte IT-Portfolio spezialisiert und nutzen Methodiken wie ITIL oder ITSM. Wenn diese Teams vorhanden sind, können die folgenden Entwicklungsmodelle beschleunigt werden. Für das für IT-Governance zuständige Team ist es aber ratsam, sich über das Cloudgovernancemodell zu informieren, um zu verstehen, wie sich die Governance in der Cloud etwas verschiebt. Informationen hierzu finden Sie in den wichtigen Artikeln zum Thema [Erweitern der Unternehmensrichtlinie auf die Cloud](../govern/corporate-policy.md) und [Die fünf Disziplinen der Cloud-Governance](../govern/governance-disciplines.md).
+Einige große Organisationen verfügen über vorhandene dedizierte Teams speziell für die IT-Governance. Diese Teams sind auf das Risikomanagement für das gesamte IT-Portfolio spezialisiert. Wenn diese Teams vorhanden sind, können die folgenden Entwicklungsmodelle beschleunigt werden. Für das für IT-Governance zuständige Team ist es aber ratsam, sich über das Cloudgovernancemodell zu informieren, um zu verstehen, wie sich die Governance in der Cloud etwas verschiebt. Informationen hierzu finden Sie in den wichtigen Artikeln zum Thema [Erweitern der Unternehmensrichtlinie auf die Cloud](../govern/corporate-policy.md) und [Die fünf Disziplinen der Cloud-Governance](../govern/governance-disciplines.md).
 
 **Keine Governance:** Es kommt häufig vor, dass Organisationen die Umstellung auf die Cloud ohne klare Planung für die Governance durchführen. Nach kurzer Zeit führen dann Bedenken in Bezug auf Sicherheit, Kosten, Skalierung und Abläufe zu Diskussionen über ein Governancemodell sowie über Personal für die Prozesse, die für dieses Modell erforderlich sind. Ein wichtiger erster Schritt besteht immer darin, mit dieser Diskussion zu beginnen, bevor es zu diesen Bedenken kommt. Auf diese Weise kann das Antimuster „Keine Governance“ vermieden werden. Der Abschnitt zum Thema [Definieren der Unternehmensrichtlinie](../govern/corporate-policy.md) enthält Informationen zu dieser Diskussion.
 

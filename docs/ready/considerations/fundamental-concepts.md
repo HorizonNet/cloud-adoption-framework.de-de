@@ -8,12 +8,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 30dd36841171ebc0e239a8e59f94d290cc5782c7
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: a3b773c4715b064413cb07d15d750b1204ddf90a
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561768"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781503"
 ---
 # <a name="azure-fundamental-concepts"></a>Grundlegende Konzepte in Azure
 
@@ -30,7 +30,7 @@ Es ist hilfreich, die folgenden Definitionen zu kennen, wenn Sie mit der Einfüh
 - **Azure Active Directory (Azure AD):** Der cloudbasierte Identitäts- und Zugriffsverwaltungsdienst von Microsoft. Azure AD ermöglicht Ihren Mitarbeitern die Anmeldung und den Zugriff auf Ressourcen.
 - **Azure AD-Mandant:** Eine dedizierte und vertrauenswürdige Instanz von Azure AD. Ein Azure AD-Mandant wird automatisch erstellt, wenn sich Ihre Organisation zum ersten Mal für das Abonnement eines Microsoft-Clouddiensts wie Microsoft Azure, Microsoft Intune oder Office 365 registriert. Ein Azure-Mandant stellt eine einzelne Organisation dar.
 - **Azure AD-Verzeichnis:** Jeder Azure AD-Mandant verfügt über ein einzelnes dediziertes und vertrauenswürdiges Verzeichnis. Das Verzeichnis enthält die Benutzer, Gruppen und Apps des Mandanten. Das Verzeichnis wird zum Ausführen von Funktionen zur Identitäts- und Zugriffsverwaltung für Mandantenressourcen verwendet. Einem Verzeichnis können mehrere Abonnements zugeordnet werden, aber jedes Abonnement ist nur einem Verzeichnis zugeordnet.
-- **Ressourcengruppen**: Logische Container, in denen verwandte Ressourcen innerhalb eines Abonnements gruppiert werden. Jede Ressource kann nur in einer Ressourcengruppe vorhanden sein.
+- **Ressourcengruppen**: Logische Container, in denen verwandte Ressourcen innerhalb eines Abonnements gruppiert werden. Jede Ressource kann nur in einer Ressourcengruppe vorhanden sein. Ressourcengruppen ermöglichen eine präzisere Gruppierung innerhalb eines Abonnements. Sie werden häufig zur Darstellung einer Sammlung von Ressourcen verwendet, die zur Unterstützung einer Workload, Anwendung oder bestimmten Funktion in einem Abonnement erforderlich sind.
 - **Verwaltungsgruppen**: Logische Container, die Sie für mindestens ein Abonnement verwenden. Sie können eine Hierarchie mit Verwaltungsgruppen, Abonnements, Ressourcengruppe und Ressourcen definieren, um Zugriff, Richtlinien und Compliance über Vererbung effizient zu verwalten.
 - **Region:** Eine Reihe von Azure-Datencentern, die innerhalb eines durch Latenzzeiten definierten Umkreises bereitgestellt werden. Die Datencenter sind über ein dediziertes, regionales Netzwerk mit geringer Latenz verbunden. Die meisten Azure-Ressourcen werden in einer bestimmten Azure-Region ausgeführt.
 

@@ -10,12 +10,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b5a94ab41bff26371621acc5e62ae19d9fd02e5c
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 9109a51a85627f3c8d0cee8b72baa0936d56c98e
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565483"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781809"
 ---
 # <a name="operational-compliance-in-azure"></a>Betriebsbezogene Compliance in Azure
 
@@ -32,6 +32,7 @@ In dieser Tabelle wird für jede Umgebung auf Unternehmensniveau der empfohlene 
 |Patchverwaltung|Updateverwaltung|Verwaltung und Zeitplanung von Updates|
 |Durchsetzung von Richtlinien|Azure Policy|Richtliniendurchsetzung zum Sicherstellen der Compliance von Umgebung und Gastsystemen|
 |Umgebungskonfiguration|Azure Blueprint|Automatisierte Compliance für Kerndienste|
+|Ressourcenkonfiguration|Desired State Configuration|Automatisierte Konfiguration für das Gastbetriebssystem und einige Aspekte der Umgebung|
 
 ::: zone target="docs"
 
@@ -103,7 +104,7 @@ Derzeit führt die Azure Policy-Gastkonfiguration nur eine Überprüfung der Ein
 
 ::: zone target="chromeless"
 
-### <a name="action"></a>Aktion
+### <a name="action"></a>Action
 
 Weisen Sie einer Verwaltungsgruppe, einem Abonnement oder einer Ressourcengruppe eine integrierte Richtlinie zu.
 

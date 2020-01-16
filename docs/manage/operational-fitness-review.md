@@ -8,12 +8,12 @@ ms.date: 10/17/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 122f1e451c8b83de3d020c58426d8b897013aa8d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 9607bf217d8638f2337fa337a4cb57c7ba919608
+ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564908"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75868046"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Einrichten einer Überprüfung der Einsatztauglichkeit
 
@@ -130,3 +130,5 @@ Passen Sie die Details des Prozesses und der Besprechung so an, dass sie Ihre sp
     In diesem Leitfaden werden der Begriff _Resilienz_ und die dazugehörigen Konzepte definiert. Anschließend wird der Prozess zur Erreichung von Resilienz beschrieben. Hierzu wird ein strukturierter Ansatz für die Lebensdauer einer Anwendung verwendet – vom Entwurf und der Implementierung über die Bereitstellung bis zum Betrieb.
 - [Cloudentwurfsmuster](https://docs.microsoft.com/azure/architecture/patterns).
     Diese Entwurfsmuster unterstützen Engineeringteams, wenn sie Anwendungen basierend auf den Säulen der Softwarequalität erstellen.
+- [Azure Advisor:](https://docs.microsoft.com/azure/advisor)
+    Advisor bietet basierend auf Ihrer Nutzung und Ihren Konfigurationen personalisierte Empfehlungen zum Optimieren Ihrer Ressourcen im Hinblick auf Hochverfügbarkeit, Sicherheit, Leistung und Kosten.

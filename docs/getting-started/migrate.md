@@ -8,12 +8,12 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: cdfe247470626a142d31ab6357f771fb39ced55f
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: c902c2a3f564bd2fcc575c8eb885b52da068826e
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564685"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781680"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Einstieg in die Cloudmigration in Azure
 
@@ -36,7 +36,7 @@ Cloudmigrationen können Unternehmen dabei unterstützen, ihre gewünschten Gesc
 
 |Wichtige Unternehmensereignisse | Beweggründe für Migration | Beweggründe für Innovation |
 |---------|---------|---------|
-| Ausstieg aus Rechenzentrum<br/><br/>Fusionen, Übernahme oder Veräußerung<br/><br/>Reduzierung der Kapitalkosten<br/><br/>Ende des Supports für unternehmenskritische Technologien<br/><br/>Reaktion auf Änderungen bezüglich der Einhaltung gesetzlicher Bestimmungen<br/><br/>Erfüllen neuer Anforderungen an die Datenhoheit<br/><br/>Verringern von Unterbrechungen und Verbessern der IT-Stabilität|Kostenersparnis<br/><br/>Verringerung der Anbieter- oder technischen Komplexität<br/><br/>Optimierung interner Vorgänge<br/><br/>Erhöhen der Unternehmensflexibilität<br/><br/>Vorbereiten auf neue technische Funktionen und Möglichkeiten<br/><br/>Skalieren, um die Marktanforderungen zu erfüllen<br/><br/>Skalieren, um die geografischen Anforderungen zu erfüllen|Vorbereiten auf neue technische Funktionen und Möglichkeiten<br/><br/>Entwickeln neuer technischer Funktionen und Möglichkeiten<br/><br/>Skalieren, um die Marktanforderungen zu erfüllen<br/><br/>Skalieren, um die geografischen Anforderungen zu erfüllen<br/><br/>Verbessern der Kundenzufriedenheit und Kundenbindung<br/><br/>Transformieren von Produkten oder Diensten<br/><br/>Revolutionieren des Markts mit neuen Produkten oder Diensten|
+| Ausstieg aus Rechenzentrum<br/><br/>Fusionen, Übernahme oder Veräußerung<br/><br/>Reduzierung der Kapitalkosten<br/><br/>Ende des Supports für unternehmenskritische Technologien<br/><br/>Reaktion auf Änderungen bezüglich der Einhaltung gesetzlicher Bestimmungen<br/><br/>Erfüllen neuer Anforderungen an die Datenhoheit<br/><br/>Verringern von Unterbrechungen und Verbessern der IT-Stabilität|Kostenersparnis<br/><br/>Verringerung der Anbieter- oder technischen Komplexität<br/><br/>Optimierung interner Vorgänge<br/><br/>Erhöhen der Unternehmensflexibilität<br/><br/>Vorbereiten auf neue technische Funktionen und Möglichkeiten<br/><br/>Skalieren, um die Marktanforderungen zu erfüllen<br/><br/>Skalieren, um geografische oder marktbasierte Anforderungen zu erfüllen|Vorbereiten auf neue technische Funktionen und Möglichkeiten<br/><br/>Entwickeln neuer technischer Funktionen und Möglichkeiten<br/><br/>Modernisieren von Sicherheitsstatus und -kontrollen<br/><br/>Skalieren, um geografische oder marktbasierte Anforderungen zu erfüllen<br/><br/>Verbessern der Kundenzufriedenheit und Kundenbindung<br/><br/>Transformieren von Produkten oder Diensten<br/><br/>Revolutionieren des Markts mit neuen Produkten oder Diensten|
 
 <!-- markdownlint-enable MD033 -->
 
@@ -81,8 +81,8 @@ Die Cloudstrategie- und -planungsmethodik des Cloud Adoption Framework basiert a
 Wie in der obigen Abbildung dargestellt, richtet dieses Framework strategische Entscheidungen auf eine kleine Anzahl von enthaltenen Prozessen aus, die innerhalb eines iterativen Modells ausgeführt werden. Die Beschreibung erfolgt zwar in einem linearen Dokument, aber es wird erwartet, dass jeder der folgenden Prozesse parallel zu den Iterationen der Cloudimplementierung reift. Mithilfe der Links für jeden Prozess können Sie den Endzustand und die Mittel zur Reifung zum gewünschten Endzustand definieren:
 
 - **[Planen](../strategy/index.md):** Wenn die technische Implementierung auf klare Geschäftsziele ausgerichtet ist, kann der Erfolg über mehrere Cloudimplementierungsaktivitäten hinweg viel einfacher gemessen und ausgerichtet werden, unabhängig von technischen Entscheidungen.
-- **[Bereitmachen](../ready/index.md):** Die Vorbereitung von Unternehmen, Kultur, Mitarbeitern und Umgebung auf anstehende Änderungen führt bei allen Aktivitäten zum Erfolg und beschleunigt Implementierungs- und Änderungsprojekte.
-- **Übernehmen:** Sicherstellen der ordnungsgemäßen Implementierung der gewünschten Änderungen über alle IT- und Geschäftsprozesse hinweg, um die gewünschten Geschäftsergebnisse zu erzielen.
+- **[Bereit](../ready/index.md):** Die Vorbereitung von Unternehmen, Kultur, Mitarbeitern und Umgebung auf anstehende Änderungen führt bei allen Aktivitäten zum Erfolg und beschleunigt Implementierungs- und Änderungsprojekte.
+- **Einführung:** Sicherstellen der ordnungsgemäßen Implementierung der gewünschten Änderungen über alle IT- und Geschäftsprozesse hinweg, um die gewünschten Geschäftsergebnisse zu erzielen.
   - **[Migrieren](../migrate/index.md):** Iterative Ausführung der [Cloudimplementierungsmethodik](#cloud-implementation) unter Einhaltung des getesteten Prozesses zum Bewerten, Migrieren, Optimieren, Sichern und Verwalten, um einen wiederholbaren Prozess zum Migrieren von Workloads zu erstellen.
   - **[Innovation](../innovate/index.md):** Erzielen Sie Geschäftswert durch Innovationsaktivitäten, die neue technische Fähigkeiten eröffnen und erweiterte geschäftliche Funktionen ermöglichen.
 - **[Steuern](../govern/index.md):** Ausrichten der Unternehmensrichtlinie auf konkrete Risiken, die durch richtlinien-, prozess- und cloudbasierte Governancetools gemindert werden können.
@@ -93,13 +93,13 @@ Während dieses gesamten Migrationsvorgangs wird dieses Framework verwendet, um 
 
 ### <a name="common-cultural-changes-resulting-from-adherence-to-this-methodology"></a>Häufige kulturelle Veränderungen, die sich aus der Einhaltung dieser Methodik ergeben
 
-Der Versuch, die gewünschten Geschäftsergebnisse zu erzielen, kann geringfügige Änderungen an der IT-Kultur und bis zu einem gewissen Grad auch an der Unternehmenskultur auslösen. Im Folgenden werden einige häufige kulturelle Veränderungen aufgeführt, die bei diesem Prozess zu beobachten sind:
+Der Versuch, die gewünschten Geschäftsergebnisse zu erzielen, kann geringfügige Änderungen an der IT-Kultur, an der Sicherheit und bis zu einem gewissen Grad auch an der Unternehmenskultur auslösen. Im Folgenden werden einige häufige kulturelle Veränderungen aufgeführt, die bei diesem Prozess zu beobachten sind:
 
-- Das IT-Team wird sich wahrscheinlich neue Fähigkeiten zur Unterstützung von Workloads in der Cloud aneignen.
+- Die IT- und Sicherheitsteams werden sich wahrscheinlich neue Fähigkeiten zur Unterstützung von Workloads in der Cloud aneignen.
 - Die Ausführung einer Cloudmigration fördert iterative oder flexible Ansätze.
 - Die Einbeziehung von Cloudgovernance inspiriert in der Regel auch DevOps-Ansätze.
 - Die Gründung eines Cloudstrategieteams kann zu einer engeren Integration zwischen den Leitern der Geschäftsbereiche und IT-Managern führen.
-- Zusammen führen diese Änderungen in der Regel zu einer höheren geschäftlichen und IT-Flexibilität.
+- Zusammen führen diese Änderungen in der Regel zu einer höheren geschäftlichen Flexibilität und IT-Flexibilität.
 
 Kulturelle Veränderung ist kein Ziel der Cloudmigration oder des Cloud Adoption Framework, aber ein häufiges Ergebnis.
 Kulturelle Veränderungen werden nicht direkt geleitet. Stattdessen werden geringfügige Änderungen an der Kultur in die vorgeschlagenen Prozessverbesserungen und Ansätze während der gesamten Leitung eingebettet.

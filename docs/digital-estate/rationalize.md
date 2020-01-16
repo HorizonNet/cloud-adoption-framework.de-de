@@ -9,16 +9,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: fee983ba2379bb84d56f23139bba987a56e5c54d
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7c733c715f636416f1a6f3f4a4cfe1d984eae73b
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564709"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781741"
 ---
 # <a name="rationalize-the-digital-estate"></a>Rationalisieren der digitalen Ressourcen
 
-Bei der Rationalisierung der Cloud werden Ressourcen evaluiert, um die beste Vorgehensweise für das Hosten in der Cloud zu ermitteln. Nachdem Sie einen [Ansatz](./approach.md) ermittelt und einen [Bestand](./inventory.md) aggregiert haben, kann die Cloudrationalisierung beginnen. Unter [Cloudrationalisierung](./rationalize.md) werden die häufigsten Rationalisierungsoptionen beschrieben.
+Bei der Rationalisierung der Cloud werden Ressourcen evaluiert, um die beste Vorgehensweise für das Hosten in der Cloud zu ermitteln. Nachdem Sie einen [Ansatz](./approach.md) ermittelt und einen [Bestand](./inventory.md) aggregiert haben, kann die Cloudrationalisierung beginnen. Unter „Cloudrationalisierung“ werden die häufigsten Rationalisierungsoptionen beschrieben.
 
 ## <a name="traditional-view-of-rationalization"></a>Herkömmlicher Rationalisierungsansatz
 

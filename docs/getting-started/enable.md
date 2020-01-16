@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: cb5ba007c18643efe3b0c83b8ff247844cbbe7b2
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: f24227cbbb06630810f7f6b48e7acdf842c171b3
+ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753288"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75781588"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Ermöglichen des Erfolgs während einer Cloudeinführungsjourney
 
@@ -29,6 +29,8 @@ In diesem Framework ist „Enablement“ (Befähigung, Ermöglichen) ein Kernthe
   - **Governance:** Definieren geeigneter [Governancedisziplinen](../govern/index.md) zur konsequenten Anwendung von Kostenmanagement-, Risikominderungs-, Compliance- und Sicherheitsbaselines über die gesamte Cloudeinführung hinweg.
   - **Verwalten:** Fortlaufende [Betriebsverwaltung](../manage/index.md) des IT-Portfolios, um Unterbrechungen der Geschäftsprozesse zu minimieren und die Stabilität des IT-Portfolios zu gewährleisten.
   - **Support:** Ausrichten der [Optionen für Partnerschaften und Unterstützung](../migrate/migration-considerations/assess/partnership-options.md).
+
+Ein weiteres Kernthema ist die Sicherheit, bei der es sich um ein wichtiges Qualitätsattribut für eine erfolgreiche Cloudeinführung handelt. Sicherheit ist in dieses Framework integriert, um eine eingebundene Anleitung zur Wahrung der Vertraulichkeit, Integrität und Verfügbarkeit für Ihre Cloudworkloads bereitzustellen. 
 
 ## <a name="additional-tools"></a>Weitere Tools
 
@@ -68,7 +70,7 @@ Zusätzlich zum Framework für die Cloudeinführung (Cloud Adoption Framework) d
                     </div>
                     <div class="cardText">
                         <h3>Zuverlässige Architektur (Resilienz)</h3>
-                        <p>Die Erstellung einer zuverlässigen Anwendung in der Cloud unterscheidet sich von der herkömmlichen Anwendungsentwicklung. Früher haben Sie wahrscheinlich höherwertige Hardware angeschafft, um zentral hochzuskalieren. In einer Cloudumgebung wird jedoch nicht zentral hochskaliert, sondern horizontal. Es geht nicht darum, Fehler vollständig zu verhindern, sondern darum, die Auswirkungen einer einzelnen fehlerhaften Komponente zu minimieren.</p>
+                        <p>Die Erstellung einer zuverlässigen Anwendung in der Cloud unterscheidet sich von der herkömmlichen Anwendungsentwicklung. Früher haben Sie wahrscheinlich höherwertige Hardware angeschafft, um zentral hochzuskalieren. In einer Cloudumgebung wird jedoch nicht zentral hoch-, sondern horizontal skaliert. Es geht nicht darum, Fehler vollständig zu verhindern, sondern darum, die Auswirkungen einer einzelnen fehlerhaften Komponente zu minimieren.</p>
                     </div>
                 </div>
             </div>
