@@ -45,7 +45,7 @@
       href: strategy/first-adoption-project.md
     - name: Empfohlene Qualifikationen
       href: strategy/suggested-skills.md
-- name: Plan
+- name: Planen
   items:
     - name: Übersicht
       href: plan/index.md
@@ -387,7 +387,7 @@
                       items:
                         - name: SAP ASE-Migration zu Azure SQL DB
                           href: 'https://datamigration.microsoft.com/scenario/sybase-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                    - name: Access
+                    - name: Zugriff
                       items:
                         - name: Access-Migration zu Azure SQL DB
                           href: 'https://datamigration.microsoft.com/scenario/access-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
@@ -539,7 +539,7 @@
               items:
                 - name: Übersicht
                   href: migrate/migration-considerations/secure-and-manage/index.md
-    - name: Innovationen
+    - name: Innovation
       items:
         - name: Übersicht
           href: innovate/index.md
@@ -569,9 +569,9 @@
               items:
                 - name: Feedbackschleifen
                   href: innovate/considerations/adoption.md
-                - name: Erstellen mit Blick auf die Kundenanforderungen
+                - name: Erstellen von Lösungen mit Blick auf die Kundenanforderungen
                   href: innovate/considerations/build.md
-                - name: Berechnen der Auswirkungen für Kunden
+                - name: Messen der Auswirkungen für Kunden
                   href: innovate/considerations/measure.md
                 - name: Lernen von Kunden
                   href: innovate/considerations/learn.md
@@ -583,7 +583,7 @@
                   href: innovate/considerations/invention.md
                 - name: Demokratisieren von Daten
                   href: innovate/considerations/data.md
-                - name: Interagieren über Apps
+                - name: Einbinden durch Apps
                   href: innovate/considerations/apps.md
                 - name: Unterstützen der Einführung
                   href: innovate/considerations/ci-cd.md
@@ -649,7 +649,7 @@
                       href: 'https://docs.microsoft.com/azure/architecture/example-scenario/ai/newsfeed-ingestion?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Datenvirtualisierung mit Azure SQL Data Warehouse und Polybase
                       href: 'https://docs.microsoft.com/azure/sql-data-warehouse/load-data-wideworldimportersdw?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-            - name: Interagieren über Apps
+            - name: Einbinden durch Apps
               items:
                 - name: Übersicht
                   href: innovate/best-practices/apps.md
@@ -783,7 +783,7 @@
               items:
                 - name: Übersicht
                   href: innovate/best-practices/devices.md
-                - name: Mobile Oberflächen
+                - name: Mobile Erfahrung
                   items:
                     - name: Erweitern einer vorhandenen Schadensbearbeitungs-App durch Web- und Mobilfunktionen
                       href: 'https://azure.microsoft.com/solutions/architecture/adding-a-modern-web-and-mobile-frontend-to-a-legacy-claims-processing-application/'
@@ -817,8 +817,8 @@
                       href: 'https://docs.microsoft.com/azure/iot-fundamentals/iot-security-architecture?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Erste Schritte mit Azure Sphere
                       href: 'https://azure.microsoft.com/services/azure-sphere/get-started/'
-                    - name: Drahtloses Bereitstellen von Apps mit Azure Sphere
-                      href: 'https://docs.microsoft.com/azure-sphere/deployment/application-deployment-steps?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                    - name: Erstellen einer Bereitstellung mit Azure Sphere
+                      href: 'https://docs.microsoft.com/azure-sphere/deployment/create-a-deployment?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Erste Schritte mit Azure Kinect DK
                       href: 'https://docs.microsoft.com/azure/Kinect-dk/about-azure-kinect-dk?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Erstellen Ihrer ersten Azure Kinect DK-App
@@ -847,7 +847,7 @@
                       href: 'https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-r-scaler-sparkr?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Azure Machine Learning mit Azure SQL Data Warehouse
                       href: 'https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-get-started-analyze-with-azure-machine-learning?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                - name: Vorhersagen
+                - name: Vorhersagen (Predictions)
                   items:
                     - name: Bereitstellen von Vorhersagen
                       href: 'https://docs.microsoft.com/azure/machine-learning/service/how-to-deploy-and-where?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
@@ -857,8 +857,6 @@
                   items:
                     - name: Azure Machine Learning von Experimenten zu Betriebsdiensten
                       href: 'https://docs.microsoft.com/azure/machine-learning/studio/model-progression-experiment-to-web-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                    - name: Azure Machine Learning-Veröffentlichung in Webdiensten für die App-Nutzung
-                      href: 'https://docs.microsoft.com/azure/machine-learning/studio/publish-a-machine-learning-web-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                     - name: Operationalisieren von ML Services in Azure HDInsight
                       href: 'https://docs.microsoft.com/azure/hdinsight/r-server/r-server-operationalize?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
 - name: Steuern
