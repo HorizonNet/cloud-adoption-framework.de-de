@@ -1,6 +1,5 @@
 ---
 title: Einführung in die Einhaltung gesetzlicher Bestimmungen
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Einführung in die Einhaltung gesetzlicher Bestimmungen
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b38b52fc6899000bf5f452425a8b6f26070af7dc
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: bd48f3080c1cf516121f9afe2e8c31bbc799e3a5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222027"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806117"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>Einführung in die Einhaltung gesetzlicher Bestimmungen
 

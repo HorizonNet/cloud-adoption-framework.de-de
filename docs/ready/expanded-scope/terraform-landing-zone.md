@@ -1,6 +1,5 @@
 ---
 title: Verwenden von Terraform zum Erstellen Ihrer Zielzonen
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Erfahren Sie, wie Sie mit Terraform Ihre Zielzonen erstellen.
 author: arnaudlh
 ms.author: arnaul
@@ -8,12 +7,12 @@ ms.date: 10/16/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 62f6f8f52d669c2822b822218612986be4503378
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 54fa496c7b97231a8ad8cc7150717bb942bf07a2
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753758"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798977"
 ---
 # <a name="use-terraform-to-build-your-landing-zones"></a>Verwenden von Terraform zum Erstellen Ihrer Zielzonen
 
@@ -73,7 +72,7 @@ Die folgenden Entscheidungen werden in der Terraform-Zielzone widergespiegelt:
 |Abonnemententwurf | N/V: wurde für ein einzelnes Produktionsabonnement entworfen. | [Skalieren von Abonnements](../azure-best-practices/scaling-subscriptions.md) |
 | Verwaltungsgruppen | N/V: wurde für ein einzelnes Produktionsabonnement entworfen. |[Skalieren von Abonnements](../azure-best-practices/scaling-subscriptions.md) |
 | Ressourcengruppen | N/V: wurde für ein einzelnes Produktionsabonnement entworfen. | [Skalieren von Abonnements](../azure-best-practices/scaling-subscriptions.md) |
-| Data | – | [Auswählen der richtigen Bereitstellungsoption in Azure SQL](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) und [Auswählen des richtigen Datenspeichers](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
+| Daten | – | [Auswählen der richtigen Bereitstellungsoption in Azure SQL](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) und [Auswählen des richtigen Datenspeichers](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview) |
 |Storage|–|[Leitfaden zu Azure Storage](../considerations/storage-options.md) |
 | Benennungsstandards | Wenn die Umgebung erstellt wird, wird auch ein eindeutiges Präfix erstellt. Für Ressourcen, die einen global eindeutigen Namen benötigen (z. B. Speicherkonten), wird dieses Präfix verwendet. Dem benutzerdefinierten Namen wird ein zufälliges Suffix angefügt. Tags müssen wie in der folgenden Tabelle beschrieben verwendet werden. | [Best Practices zur Benennung und Kennzeichnung](../azure-best-practices/naming-and-tagging.md) |
 | Kostenverwaltung | – | [Nachverfolgen von Kosten](../azure-best-practices/track-costs.md) |
@@ -83,13 +82,13 @@ Die folgenden Entscheidungen werden in der Terraform-Zielzone widergespiegelt:
 
 Bei allen Ressourcen und Ressourcengruppen muss der folgende minimale Satz an Tags vorhanden sein:
 
-| Tagname | BESCHREIBUNG | Schlüssel | Beispielwert |
+| Tagname | Beschreibung | Key | Beispielwert |
 |--|--|--|--|
 | Geschäftseinheit | Oberste Abteilung Ihres Unternehmens, die Besitzer des Abonnements oder der Workload ist, zu dem oder der die Ressource gehört. | BusinessUnit | FINANCE, MARKETING, {Produktname}, CORP, SHARED |
 | Kostenstelle | Buchhaltungskostenstelle, die dieser Ressource zugeordnet ist.| CostCenter | Number |
 | Notfallwiederherstellung | Geschäftliche Bedeutung der Anwendung, Workload oder dieses Diensts. | DR | DR-ENABLED, NON-DR-ENABLED |
 | Environment | Bereitstellungsumgebung der Anwendung, Workload oder dieses Diensts. |  Env | Prod, Dev, QA, Stage, Test, Training |
-| Name des Besitzers | Besitzer der Anwendung, der Workload oder des Diensts.| Owner (Besitzer) | email |
+| Name des Besitzers | Besitzer der Anwendung, der Workload oder des Diensts.| Besitzer | email |
 | Bereitstellungstyp | Definiert, wie die Ressourcen verwaltet werden. | deploymentType | Manual, Terraform |
 | Version | Version der bereitgestellten Blaupause. | version | v0.1 |
 | Anwendungsname | Der Name der Anwendung, des Diensts oder der Workload, womit die Ressource verknüpft ist. | ApplicationName | „App-Name“ |

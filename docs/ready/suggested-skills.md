@@ -1,6 +1,5 @@
 ---
 title: Pfad für die Qualifikationsbereitschaft
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Übersicht zum Pfad für die Qualifikationsbereitschaft
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 1a2da8e65e6b1fda5995fa5fb207239e36b7d8a7
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8116c653656d2b5f20150aaf447225616e2657a6
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566705"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798773"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>Pfad für die Qualifikationsbereitschaft während der Phase „Bereitschaft“ eines Migrationspfads
 

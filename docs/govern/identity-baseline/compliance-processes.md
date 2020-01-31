@@ -1,6 +1,5 @@
 ---
 title: 'Identitätsbaseline: Prozesse für Richtlinienkonformität'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Identitätsbaseline: Prozesse für Richtlinienkonformität'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6b92072ed182eefc596ab446638a87b4fd560080
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 937bf6c4dae8d134b4f140e0a0023d82e5f9e3f9
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566213"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807154"
 ---
 # <a name="identity-baseline-policy-compliance-processes"></a>Identitätsbaseline: Prozesse für Richtlinienkonformität
 
 In diesem Artikel wird ein Ansatz für Prozesse zur Einhaltung von Richtlinien beschrieben, die die [Identitätsbaseline](./index.md) regeln. Eine wirkungsvolle Identitätskontrolle (Governance) beginnt mit wiederkehrenden manuellen Prozessen zur Steuerung von Übernahme und Überarbeitungen der Identitätsrichtlinien. Dies erfordert die regelmäßige Einbeziehung des Cloudgovernanceteams sowie interessierter Geschäfts- und IT-Beteiligter, um Richtlinien zu überprüfen und zu aktualisieren und die Einhaltung von Richtlinien sicherzustellen. Darüber hinaus können viele laufende Überwachungs- und Durchsetzungsprozesse automatisiert oder durch Werkzeuge ergänzt werden, um den Kontrolloverhead zu reduzieren und schneller auf Abweichungen von der Richtlinie reagieren zu können.
 
-## <a name="planning-review-and-reporting-processes"></a>Planungs-, Prüfungs- und Berichtsprozesse
+## <a name="planning-review-and-reporting-processes"></a>Planungs-, Prüfungs- und Berichterstellungsprozesse
 
 Identitätsverwaltungstools bieten Funktionen und Features, die Benutzerverwaltung und Zugriffssteuerung innerhalb einer Cloudbereitstellung erheblich unterstützen. Sie erfordern aber auch gut durchdachte Prozesse und Richtlinien, um die Ziele Ihres Unternehmens zu unterstützen. Nachstehend sind eine Reihe von Beispielprozessen ausgeführt, die häufig im Rahmen der Disziplin „Identitätsbaseline“ verwendet werden. Beim Planen der Prozesse, die Ihnen die fortgesetzte Aktualisierung der Identitätsrichtlinie aufgrund von geschäftlichen Änderungen und Feedback von den IT-Teams (deren Aufgabe es ist, den Governanceleitfaden in die Tat umzusetzen) erlauben, können Sie diese Beispiele als Ausgangspunkt verwenden.
 

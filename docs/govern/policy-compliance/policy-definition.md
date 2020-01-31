@@ -1,6 +1,5 @@
 ---
 title: Definieren von Unternehmensrichtlinien für Cloudgovernance
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: In diesem Artikel wird erläutert, wie Sie eine Richtlinie einrichten, um Risiken wiederzugeben und zu mindern.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 4184ccdd4a0efa06d6a842f7ba1d9cbf0dc77ea6
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 92c04d53e59d8876291794c5da74104ec62412a9
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71223730"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806049"
 ---
 # <a name="define-corporate-policy-for-cloud-governance"></a>Definieren von Unternehmensrichtlinien für Cloudgovernance
 
@@ -35,7 +34,7 @@ Cloudgovernance ist das Resultat kontinuierlicher Bemühungen zur Einführung, d
 
 Ein Framework für die Einführung der Cloud hebt sich durch seinen Kaufzyklus sowie durch die Ermöglichung einer authentischen Transformation ab. Da keine umfangreichen Kapitalinvestitionen für Anschaffungen erforderlich sind, können Techniker bereits früher mit dem Test- und Einführungsprozess beginnen. In den meisten Unternehmenskulturen kann die Tatsache, dass Kapitalausgaben kein Hindernis für die Einführung mehr sind, zu kürzeren Feedbackschleifen, einem organischen Wachstum und inkrementeller Ausführung führen.
 
-Die Einführung der Cloud erfordert ein Umdenken bei der Governance. In vielen Organisationen sorgt die Transformation der Unternehmensrichtlinien für verbesserte Governance und eine umfassendere Einhaltung durch inkrementelle Richtlinienänderungen sowie automatisierte Erzwingung dieser Änderungen, gestützt durch die neu definierten Funktionen, die Sie mit Ihrem Clouddienstanbieter konfigurieren.
+Die Einführung der Cloud erfordert ein Umdenken bei der Governance. In vielen Organisationen verbessert und verstärkt die Transformation der Unternehmensrichtlinien die Governance, da Richtlinien inkrementell geändert und diese Änderungen automatisch durchgesetzt werden. Gestützt wird dieser Ansatz durch neu definierte Funktionen, die Sie mit Ihrem Clouddienstanbieter konfigurieren.
 
 <!-- markdownlint-enable MD026 -->
 

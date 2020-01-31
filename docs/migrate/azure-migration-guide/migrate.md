@@ -1,6 +1,5 @@
 ---
 title: Migrieren von Objekten
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Migrieren von Objekten
 author: matticusau
 ms.author: mlavery
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2f00fca7cc5d21221faed2a56d0a25dba2e82258
-ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
+ms.openlocfilehash: 81c55ee4ac3605c04d583df21182c4d5c44f8380
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74681758"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807018"
 ---
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrieren von Objekten (Infrastruktur, Apps und Daten)
 
@@ -162,7 +161,7 @@ Um den Datenmigrations-Assistenten zu verwenden, führen Sie zunächst folgende 
 
 1. Laden Sie den Datenmigrations-Assistenten aus dem [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53595), herunter und installieren Sie ihn.
 1. Erstellen Sie eine Bewertung, indem Sie auf das Symbol **Neu (+)** klicken und den Projekttyp **Bewertung** auswählen.
-1. Legen Sie den Typ von Quell- und Zielserver fest. Klicken Sie auf **Create**.
+1. Legen Sie den Typ von Quell- und Zielserver fest. Klicken Sie auf **Erstellen**.
 1. Konfigurieren Sie die Bewertungsoptionen nach Bedarf (empfohlen werden die Standardwerte).
 1. Fügen Sie die Datenbanken zur Bewertung hinzu.
 1. Klicken Sie auf **Weiter**, um die Bewertung zu starten.
@@ -222,7 +221,7 @@ Cloudamize ist ein ISV-Dienst, der alle Phasen der Migrationsstrategie abdeckt.
 
 Zerto stellt virtuelle Replikationsverarbeitung in Microsoft Hyper-V- und VMware vSphere-Umgebungen bereit.
 
-[Weitere Informationen](https://www.zerto.com/solutions/use-cases/data-center-migration-software)
+[Weitere Informationen](https://www.zerto.com/modernize)
 
 ## <a name="carbonite"></a>Carbonite
 
@@ -271,9 +270,9 @@ Azure DevOps bietet alle erforderlichen Funktionen und die Integration mit Azure
 
 Microsoft Learn ist ein neuer Lernansatz. Die Bereitschaft zu den neuen Qualifikationen und Aufgaben, die mit der Cloudeinführung verbunden sind, entwickeln sich nicht einfach so. Microsoft Learn bietet einen lohnenderen Ansatz für praktisches Lernen, der Ihnen hilft, Ihre Ziele schneller zu erreichen. Punkte sammeln, zu höheren Stufen aufsteigen und mehr erreichen.
 
-Hier sehen Sie ein Beispiel für einen maßgeschneiderten Lernpfad auf Microsoft Learn, der das Setup für den DevOps-Leitfaden im Cloud Adoption Framework ergänzt. 
+Hier sehen Sie ein Beispiel für einen maßgeschneiderten Lernpfad auf Microsoft Learn, der das Setup für den DevOps-Leitfaden im Cloud Adoption Framework ergänzt.
 
-[Erstellen von Anwendungen mit Azure DevOps:](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/) Arbeiten Sie mit anderen zusammen, um Ihre Anwendungen mit Azure Pipelines und GitHub zu erstellen. Führen Sie in Ihrer Pipeline automatisierte Tests zum Überprüfen der Codequalität aus. Überprüfen Sie den Quellcode und die Komponenten von Drittanbietern auf potenzielle Sicherheitsrisiken. Definieren Sie mehrere Pipelines, die zusammenwirken, um Ihre Anwendung zu erstellen. Erstellen Sie Anwendungen mit von Microsoft gehosteten Agents und mit eigenen Build-Agents. 
+[Erstellen von Anwendungen mit Azure DevOps:](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/) Arbeiten Sie mit anderen zusammen, um Ihre Anwendungen mit Azure Pipelines und GitHub zu erstellen. Führen Sie in Ihrer Pipeline automatisierte Tests zum Überprüfen der Codequalität aus. Überprüfen Sie den Quellcode und die Komponenten von Drittanbietern auf potenzielle Sicherheitsrisiken. Definieren Sie mehrere Pipelines, die zusammenwirken, um Ihre Anwendung zu erstellen. Erstellen Sie Anwendungen mit von Microsoft gehosteten Agents und mit eigenen Build-Agents.
 
 # <a name="cost-managementtabmanagecost"></a>[Kostenmanagement](#tab/ManageCost)
 

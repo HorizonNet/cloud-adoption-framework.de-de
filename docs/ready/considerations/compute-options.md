@@ -1,6 +1,5 @@
 ---
 title: Überprüfen Ihrer Computeoptionen
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Überprüfen Sie Ihre Computeoptionen für Azure-Workloads.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: dbdabb6edc425ea3c70706313d2357323d2a523c
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: d4b1d5728a8cba06900bfe67e288f15b042b8106
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561881"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799182"
 ---
 # <a name="review-your-compute-options"></a>Überprüfen Ihrer Computeoptionen
 
@@ -81,4 +80,4 @@ Wenn Sie Ihre Landezonenumgebung vorbereiten, können Sie Kontrollelemente einri
 
 Nachdem Sie die Anforderungen Ihrer Landezone identifiziert und dokumentiert haben, können Sie [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) nutzen, um zu steuern, welche Computeressourcen von Benutzern erstellt werden dürfen. Kontrollelemente können [die Erstellung von Computeressourcentypen zulassen oder verweigern](https://docs.microsoft.com/azure/governance/policy/samples/allowed-resource-types). Beispielsweise können Sie festlegen, dass Benutzer nur Azure App Service- oder Azure Functions-Ressourcen erstellen können. Mit Policy können auch die zulässigen Optionen beim Erstellen einer Ressource gesteuert werden, z.B. das [Einschränken der Bereitstellung von SKUs für virtuelle Computer](https://docs.microsoft.com/azure/governance/policy/samples/allowed-skus-storage) oder das [Zulassen nur von bestimmten VM-Images](https://docs.microsoft.com/azure/governance/policy/samples/allowed-custom-images).
 
-Der Bereich von Policies kann auf Ressourcen, Ressourcengruppen, Abonnements oder Verwaltungsgruppen festgelegt werden. Darüber hinaus können diese Richtlinien auch in [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview)-Definitionen eingebunden und in der gesamten Cloudumgebung wiederholt angewendet werden.
+Der Bereich von Richtlinien kann auf Ressourcen, Ressourcengruppen, Abonnements oder Verwaltungsgruppen festgelegt werden. Darüber hinaus können diese Richtlinien auch in [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview)-Definitionen eingebunden und in der gesamten Cloudumgebung wiederholt angewendet werden.

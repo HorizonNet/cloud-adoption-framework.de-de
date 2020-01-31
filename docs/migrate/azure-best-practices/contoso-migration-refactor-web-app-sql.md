@@ -1,6 +1,5 @@
 ---
 title: Umgestalten einer App durch die Migration zu Azure App Service und Azure SQL-Datenbank
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dieser Artikel enthält Informationen darüber, wie Contoso einer lokalen App einen neuen Host zuweist, indem diese zu einer Azure App Service-Web-App und einer Azure SQL Server-Datenbank migriert wird.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: d0d0fa87d424cbdf33e2b8516dd43b5156b55756
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 35a64b9f42df3737e186d25a43ecad457010607d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566575"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807443"
 ---
 # <a name="refactor-an-on-premises-app-to-an-azure-app-service-web-app-and-azure-sql-database"></a>Umgestalten einer lokalen App zu einer Azure App Service-Web-App und einer Azure SQL-Datenbank-Instanz
 
@@ -337,7 +336,7 @@ Als Nächstes konfigurieren die Contoso-Administratoren Azure DevOps für die Du
 
     ![Speichern von WCF](./media/contoso-migration-refactor-web-app-sql/pipeline16.png)
 
-17. Sie klicken auf **Pipeline** > **Phasen** **+ Hinzufügen**, um eine Umgebung für **SHWEB-EUS2** hinzuzufügen. Sie wählen eine weitere Azure App Service-Bereitstellung aus.
+17. Sie wählen **Pipeline** > **Phasen** > **+ Hinzufügen** aus, um eine Umgebung für **SHWEB-EUS2** hinzuzufügen. Sie wählen eine weitere Azure App Service-Bereitstellung aus.
 
     ![Hinzufügen einer Umgebung](./media/contoso-migration-refactor-web-app-sql/pipeline17.png)
 

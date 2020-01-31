@@ -1,6 +1,5 @@
 ---
 title: 'Azure-Innovationsleitfaden: Unterstützen der Einführung'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Erfahren Sie, wie Sie die Einführung mithilfe von Azure unterstützen.
 author: absheik
 ms.author: absheik
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9c10b4a7c46d59a761ae2bb009fdf26b410450ab
-ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
+ms.openlocfilehash: 907d4745e86f63eef2a59bea8120395ea33bd1d6
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75868008"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808327"
 ---
 ::: zone target="docs"
 
@@ -80,7 +79,7 @@ Azure DevOps bietet erstklassige Tools für jeden Entwickler. Mit Azure-Entwickl
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-### <a name="action"></a>Action
+### <a name="action"></a>Aktion
 
 Zum Erstellen eines DevOps-Projekts gehen Sie folgendermaßen vor:
 

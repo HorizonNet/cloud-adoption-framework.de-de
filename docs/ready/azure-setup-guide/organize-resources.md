@@ -1,6 +1,5 @@
 ---
 title: Effizientes Organisieren Ihrer Azure-Ressourcen
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Bewährte Methoden zur Vereinfachung der Verwaltung Ihrer Azure-Ressourcen durch effiziente Organisation.
 author: laraaleite
 ms.author: kfollis
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 393c80c684de13cf27cba738a8e539533de57d38
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 790bb68a862343452aa5481e20596a839bb7b93c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251410"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799334"
 ---
 # <a name="organize-your-azure-resources"></a>Organisieren Ihrer Azure-Ressourcen
 
@@ -157,7 +156,7 @@ Sie können Tags auch für viele andere Dinge verwenden. Sie werden häufig für
 
 - **Metadaten und Dokumentation**: Durch Anwenden eines Tags wie „ProjectOwner“ können Administratoren problemlos Details zu den Ressourcen anzeigen, an denen sie arbeiten.
 - **Automatisierung:** Unter Umständen verfügen Sie über regelmäßig ausgeführte Skripts, die basierend auf einem Tagwert wie „ShutdownTime“ oder „DeprovisionDate“ eine Aktion durchführen können.
-- **Abrechnung**: Tags können in Ihrer Rechnung angezeigt werden. Dadurch können Sie Ihre Rechnung beispielsweise mithilfe von Tags wie „CostCenter“ oder „BillTo“ segmentieren.
+- **Abrechnung:** Tags können in Ihrer Rechnung angezeigt werden. Dadurch können Sie Ihre Rechnung beispielsweise mithilfe von Tags wie „CostCenter“ oder „BillTo“ segmentieren.
 
 Jede Ressource oder Ressourcengruppe kann maximal 50 Tagname-Wert-Paare aufweisen. Diese Einschränkung gilt nur für Tags, die direkt auf die Ressourcengruppe oder die Ressource angewendet werden.
 

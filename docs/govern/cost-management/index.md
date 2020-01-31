@@ -1,6 +1,5 @@
 ---
 title: Übersicht über die Disziplin „Kostenverwaltung“
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Erläuterung der Kostenverwaltung in Bezug auf Cloudgovernance
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: ac6c3cb0a26cebf655a1161a3fd54197c795c283
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: abba9da343342c99fcfa657aa0abd1c55daaef55
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566421"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806491"
 ---
 # <a name="cost-management-discipline-overview"></a>Übersicht über die Disziplin „Kostenverwaltung“
 
@@ -28,7 +27,7 @@ Die Hauptzielgruppe für diesen Leitfaden sind die Cloudarchitekten Ihrer Organi
 
 ## <a name="policy-statements"></a>Richtlinienanweisungen
 
-Umsetzbare Richtlinienanweisungen und die daraus resultierenden Architekturanforderungen bilden die Grundlage für eine Disziplin „Kostenverwaltung“. Beispiele für Richtlinienanweisungen finden Sie im Artikel über [Richtlinienanweisungen zur Kostenverwaltung](./policy-statements.md). Diese Beispiele können als Ausgangspunkt für die Governancerichtlinien Ihres Unternehmens dienen.
+Umsetzbare Richtlinienanweisungen und die daraus resultierenden Architekturanforderungen bilden die Grundlage für eine Disziplin „Kostenverwaltung“. Beispiele für Richtlinienanweisungen finden Sie im Artikel über [Richtlinienanweisungen zur Kostenverwaltung](./policy-statements.md). Diese Beispiele können als Ausgangspunkt für die Governancerichtlinien Ihrer Organisation dienen.
 
 > [!CAUTION]
 > Die Beispielrichtlinien basieren auf allgemeinen Kundenerfahrungen. Zur besseren Anpassung dieser Richtlinien an spezifische Anforderungen zur Cloud Governance führen Sie die folgenden Schritte aus, um Richtlinienanweisungen zu erstellen, die Ihre individuellen Geschäftsanforderungen erfüllen.

@@ -1,6 +1,5 @@
 ---
 title: Leitfaden zur Entscheidungsfindung für die Identitätsverwaltung
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Erfahren Sie mehr über die Identitätsverwaltung als wichtigen Aspekt bei Azure-Migrationen.
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: b071fc546f615679bf712e9caa7725e767b73ad9
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: b447330368823947bfe027036b14c3a6c1fb94f1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753191"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807103"
 ---
 # <a name="identity-decision-guide"></a>Leitfaden zur Entscheidungsfindung für die Identitätsverwaltung
 

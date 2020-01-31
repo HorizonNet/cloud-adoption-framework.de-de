@@ -1,6 +1,5 @@
 ---
 title: Metriken, Indikatoren und Risikotoleranz in der Kostenverwaltung
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Erläuterung der Kostenverwaltung in Bezug auf Cloudgovernance
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: dc026ec6fc1a82db3c5c025becd31cd5cf2e7d8d
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: aee529f6065e35645805a7f3d6577447eb48cf3f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752694"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806457"
 ---
 # <a name="cost-management-metrics-indicators-and-risk-tolerance"></a>Metriken, Indikatoren und Risikotoleranz in der Kostenverwaltung
 
 Dieser Artikel unterstützt Sie bei der Quantifizierung der Geschäftsrisikotoleranz im Zusammenhang mit der Kostenverwaltung. Das Definieren von Metriken und Indikatoren ermöglicht das Erstellen eines Geschäftsszenarios, mit dem Sie verstärkt auf die Ausgereiftheit der Disziplin der Kostenverwaltung setzen können.
 
-## <a name="metrics"></a>metrics
+## <a name="metrics"></a>Metriken
 
 Die Kostenverwaltung befasst sich in der Regel mit Metriken im Zusammenhang mit Kosten. Im Rahmen der Risikoanalyse sollten Sie Daten zu Ihren aktuellen und geplanten Ausgaben für cloudbasierte Workloads sammeln, um zu ermitteln, wie hoch das Risiko ist und wie wichtig Investitionen in die Kostengovernance für Ihre Cloudeinführungsstrategie sind.
 

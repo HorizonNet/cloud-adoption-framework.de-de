@@ -1,6 +1,5 @@
 ---
 title: Empfohlene rollenbasierte Zugriffssteuerung
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Empfohlene rollenbasierte Zugriffssteuerung
 author: rotycenh
 ms.author: brblanch
@@ -11,12 +10,12 @@ ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 47933f12bea00ff1ea9052125147287ffc9381d6
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 2b7af250046e024393d14e37ae2985f8bf453be7
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561775"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806865"
 ---
 # <a name="role-based-access-control"></a>Rollenbasierte Zugriffssteuerung
 
@@ -75,7 +74,7 @@ Die folgende Tabelle zeigt ein allgemeines Muster für die Aufteilung des IT-Zus
 
 <!-- markdownlint-disable MD033 -->
 
-| Group | Allgemeiner Rollenname | Zuständigkeiten |
+| Group | Allgemeiner Rollenname | Aufgaben |
 | --- | --- | --- |
 | Sicherheitsvorgänge | SecOps | Bietet eine allgemeine Sicherheitsübersicht.<br/><br/> Festlegung und Durchsetzung von Sicherheitsrichtlinien wie Verschlüsselung im Ruhezustand.<br/><br/> Verwaltet Verschlüsselungsschlüssel.<br/><br/> Verwaltet Firewallregeln. |
 | Netzwerkvorgänge | NetOps | Verwaltet die Netzwerkkonfiguration und den Betrieb in virtuellen Netzwerken wie Routen und Peerings. |

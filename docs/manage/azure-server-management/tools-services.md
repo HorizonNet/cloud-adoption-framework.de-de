@@ -1,6 +1,5 @@
 ---
 title: Azure-Serververwaltungstools und -dienste
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Azure-Serververwaltungstools und -dienste
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,19 +7,19 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 51564add9bfe50ab494b39344eb24d3079fce000
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: dbb2d190fcbe787cd3ee26cc0803566b398e945d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565282"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807936"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Azure-Serververwaltungstools und -dienste
 
 Wie in der [Übersicht](./index.md) zu diesem Leitfaden erläutert, deckt die Suite der Azure-Serververwaltungsdienste die folgenden Bereiche ab:
 
 - Migrieren
-- Schützen
+- Sicher
 - Schützen
 - Überwachen
 - Konfigurieren
@@ -32,7 +31,7 @@ In den folgenden Abschnitten werden diese Verwaltungsbereiche kurz beschrieben u
 
 Migrationsdienste unterstützen Sie bei der Migration Ihrer Workloads zu Azure. Zur optimalen Anleitung startet der Azure Migrate-Dienst zunächst mit dem Messen der lokalen Serverleistung und dem Bewerten der Eignung für die Migration. Nach der Bewertung durch Azure Migrate können Sie mithilfe von [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) und [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) die lokalen Computer zu Azure migrieren.
 
-## <a name="secure"></a>Schützen
+## <a name="secure"></a>Sicher
 
 [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) ist eine umfassende Anwendung für die Sicherheitsverwaltung. Durch das Onboarding in das Security Center können Sie schnell eine Bewertung über den Sicherheits- und Konformitätsstatus Ihrer Umgebung erhalten. Anweisungen zum Onboarding Ihrer Server in das Azure Security Center finden Sie unter [Konfigurieren von Azure-Verwaltungsdiensten für ein Abonnement](./onboard-at-scale.md#azure-security-center).
 

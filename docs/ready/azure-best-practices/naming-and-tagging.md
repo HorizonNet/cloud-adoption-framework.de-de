@@ -1,6 +1,5 @@
 ---
 title: Empfohlene Namens- und Kennzeichnungskonventionen
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dieser Artikel enthält detaillierte Empfehlungen zur Benennung von Ressourcen und zur Kennzeichnung, die speziell auf die Unterstützung der Enterprise Cloud-Einführung ausgerichtet sind.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: 3a99398d5ae180efe9dca4cadf0554d92c6380b2
-ms.sourcegitcommit: 91ece6ba373a4d0d573cca7e616f0b67337b0d1b
+ms.openlocfilehash: b61c9a9ffd778e657854b4da1269eebdb762c73b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76023362"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799844"
 ---
 # <a name="recommended-naming-and-tagging-conventions"></a>Empfohlene Namens- und Kennzeichnungskonventionen
 
@@ -40,7 +39,7 @@ Eine Benennungs- und Kennzeichnungsstrategie beinhaltet geschäftliche und opera
 
 ### <a name="resource-naming"></a>Benennen von Ressourcen
 
-In einer wirkungsvollen Namenskonvention werden Ressourcennamen aus wichtigen Ressourceninformationen als Namensbestandteilen zusammengesetzt. Werden beispielsweise die empfohlenen Namenskonventionen verwendet, die [weiter unten in diesem Artikel](#sample-naming-convention) erläutert sind, wird eine öffentliche IP-Ressource für eine SharePoint-Produktionsworkload wie folgt benannt: `pip-sharepoint-prod-westus-001`.
+In einer wirkungsvollen Namenskonvention werden Ressourcennamen aus wichtigen Ressourceninformationen als Namensbestandteilen zusammengesetzt. Werden beispielsweise die [empfohlenen Namenskonventionen](#sample-naming-convention) verwendet, wird eine öffentliche IP-Ressource für eine SharePoint-Produktionsworkload wie folgt benannt: `pip-sharepoint-prod-westus-001`.
 
 Anhand des Namens können Sie schnell den Typ der Ressource, deren zugehörige Workload, deren Bereitstellungsumgebung und die Azure-Region erkennen, in der sie gehostet wird.
 
@@ -62,11 +61,11 @@ Verwenden Sie möglichst kurze Namenskomponenten, um zu verhindern, dass die Lä
 
 | Namenskomponente | Beschreibung | Beispiele |
 | --- | --- | --- |
-| Geschäftseinheit | Oberste Abteilung Ihres Unternehmens, die Besitzer des Abonnements oder der Workload ist, zu dem oder der die Ressource gehört. In kleineren Unternehmen kann diese Komponente ein einzelnes Organisationselement des Unternehmens auf oberster Ebene darstellen. | *fin*, *mktg*, *produkt*, *it*, *konzern* |
-| Abonnementtyp | Zusammenfassende Beschreibung des Zwecks des Abonnements, das die Ressource enthält. Häufig nach Umgebungstyp der Bereitstellung oder nach bestimmten Workloads aufgeschlüsselt. | *prod,* *freigabe, client* |
-| Anwendungs- oder Dienstname | Der Name der Anwendung, der Workload oder des Diensts, zu der oder dem die Ressource gehört. | *navigator*, *emissionen*, *sharepoint*, *hadoop* |
-| Bereitstellungsumgebung | Die von der Ressource unterstützte Phase des Entwicklungslebenszyklus der Workload. | *prod, entw, qs, phase, test* |
-| Region | Die Azure-Region, in der die Ressource bereitgestellt wird. | *usawesten, usaosten2, europawesten, usgovia* |
+| Geschäftseinheit | Oberste Abteilung Ihres Unternehmens, die Besitzer des Abonnements oder der Workload ist, zu dem oder der die Ressource gehört. In kleineren Unternehmen kann diese Komponente ein einzelnes Organisationselement des Unternehmens auf oberster Ebene darstellen. | _fin_, _mktg_, _produkt_, _it_, _konzern_ |
+| Abonnementtyp | Zusammenfassende Beschreibung des Zwecks des Abonnements, das die Ressource enthält. Häufig nach Umgebungstyp der Bereitstellung oder nach bestimmten Workloads aufgeschlüsselt. | _Prod_, _Freigabe_, _Client_ |
+| Anwendungs- oder Dienstname | Der Name der Anwendung, der Workload oder des Diensts, zu der oder dem die Ressource gehört. | _navigator_, _emissionen_, _sharepoint_, _hadoop_ |
+| Bereitstellungsumgebung | Die von der Ressource unterstützte Phase des Entwicklungslebenszyklus der Workload. | _Prod_, _Entw_, _QA_, _Stage_, _Test_ |
+| Region | Die Azure-Region, in der die Ressource bereitgestellt wird. | _westus_, _eastus2_, _westeurope_, _usgovia_ |
 
 #### <a name="recommended-resource-type-prefixes"></a>Empfohlene Präfixe für Ressourcentypen
 
@@ -77,35 +76,38 @@ Die folgende Liste enthält empfohlene Azure-Ressourcentypenpräfixe, die Sie ve
 | Ressourcentyp                       | Präfix für Ressourcenname |
 | ----------------------------------- | -------------------- |
 | Resource group                      | rg-                  |
-| Virtuelles Azure-Netzwerk               | vnet-                |
+| Verfügbarkeitsgruppe                    | avail-               |
+| API Management-Dienst              | api-                 |
+| Virtuelles Netzwerk                     | vnet-                |
 | Gateway des virtuellen Netzwerks             | vnetgw-              |
 | Gatewayverbindung                  | cn-                  |
 | Subnet                              | snet-                |
 | Netzwerksicherheitsgruppe              | nsg-                 |
 | Routingtabelle                         | route-               |
-| Azure Virtual Machines              | vm-                  |
+| Virtueller Computer                     | vm                   |
 | VM-Speicherkonto                  | spvm                 |
 | Öffentliche IP-Adresse                           | pip-                 |
-| Azure Load Balancer                 | lb-                  |
+| Load Balancer                       | lb-                  |
 | NIC                                 | nic-                 |
-| Azure-Schlüsseltresor                     | kv-                  |
-| Azure Kubernetes Service            | aks-                 |
-| Azure-Servicebus                   | sb-                  |
-| Azure Service Bus-Warteschlangen            | sbw-                 |
-| Azure Service Bus-Themen            | sbt-                 |
-| Azure App Service-Pläne             | plan-                |
-| Azure-Web-Apps                      | app-                 |
-| Azure-Funktionen                     | func-                |
-| Azure Cloud Services                | cld-                 |
+| Schlüsseltresor                           | kv-                  |
+| AKS-Cluster                         | aks-                 |
+| AKS-Container                       | con-                 |
+| Service Bus                         | sb-                  |
+| Service Bus-Warteschlange                   | sbw-                 |
+| Service Bus-Topic                   | sbt-                 |
+| App Service-Plan                    | plan-                |
+| Web-App                             | app-                 |
+| Funktionen-App                        | func-                |
+| Clouddienst                       | cld-                 |
 | Azure SQL-Datenbank-Server           | sql-                 |
-| Azure SQL-Datenbank                  | sqldb-               |
-| Azure Cosmos DB                     | cosmos-              |
-| Azure Cache for Redis               | redis-               |
-| Azure Database for MySQL            | mysql-               |
-| Azure Database for PostgreSQL       | psql-                |
+| Azure SQL-Datenbank                  | sqldb-               |
+| Cosmos DB-Datenbank                  | cosmos-              |
+| Azure Cache for Redis-Cache         | redis-               |
+| MySQL-Datenbank                      | mysql-               |
+| PostgreSQL-Datenbank                 | psql-                |
 | Azure SQL Data Warehouse            | sqldw-               |
 | SQL Server Stretch Database         | sqlstrdb-            |
-| Azure Storage                       | st                   |
+| Speicherkonto                     | st                   |
 | Azure StorSimple                    | ssimp                |
 | Azure Search                        | srch-                |
 | Azure Cognitive Services            | cog-                 |
@@ -119,10 +121,10 @@ Die folgende Liste enthält empfohlene Azure-Ressourcentypenpräfixe, die Sie ve
 | Power BI Embedded                   | pbi-                 |
 | Azure Stream Analytics              | asa-                 |
 | Azure Data Factory                  | adf-                 |
-| Azure Event Hubs                    | evh-                 |
-| Azure IoT Hub                       | iot-                 |
-| Azure Notification Hubs             | ntf-                 |
-| Azure Notification Hubs-Namespace   | ntfns-               |
+| Event Hub                           | evh-                 |
+| IoT Hub                             | iot-                 |
+| Notification Hubs                   | ntf-                 |
+| Notification Hubs-Namespace         | ntfns-               |
 
 ### <a name="metadata-tags"></a>Metadatentags
 
@@ -132,18 +134,18 @@ Welche Tags Sie für Ressourcen anwenden und welche Tags erforderlich oder optio
 
 | Tag-Name                  | Beschreibung                                                                                                                                                                                                    | Key               | Beispielwert                                   |
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|-------------------------------------------------|
-| Anwendungsname          | Der Name der Anwendung, des Diensts oder der Workload, mit der die Ressource verknüpft ist.                                                                                                                                 | *ApplicationName* | *{App-Name}*                                    |
-| Name der genehmigenden Person             | Die Person, die für das Genehmigen der Kosten zuständig ist, die mit dieser Ressource verbunden sind.                                                                                                                                               | *Approver*        | *{E-Mail}*                                       |
-| Erforderliches/genehmigtes Budget  | Der Geldbetrag, der für diese Anwendung, diesen Dienst oder diese Workload zugeordnet ist.                                                                                                                                                    | *BudgetAmount*    | *{\$}*                                          |
-| Geschäftseinheit             | Oberste Abteilung Ihres Unternehmens, die Besitzer des Abonnements oder der Workload ist, zu dem oder der die Ressource gehört. In kleineren Unternehmen kann dieses Tag ein einzelnes Organisations- oder freigegebenes Element des Unternehmens auf oberster Ebene darstellen. | *BusinessUnit*    | *FINANZEN, MARKETING, {Produktname}, CORP, FREIGABE* |
-| Kostenstelle               | Buchhaltungskostenstelle, die dieser Ressource zugeordnet ist.                                                                                                                                                          | *CostCenter*      | *{Zahl}*                                      |
-| Notfallwiederherstellung         | Geschäftliche Bedeutung der Anwendung, Workload oder dieses Diensts.                                                                                                                                                | *DR*              | *Unternehmenskritisch, Kritisch, Unverzichtbar*         |
-| Enddatum des Projekts   | Datum, zu dem die Deaktivierung der Anwendung, Workload oder dieses Diensts geplant ist.                                                                                                                                  | *EndDate*         | *{Datum}*                                        |
-| Environment               | Bereitstellungsumgebung der Anwendung, Workload oder dieses Diensts.                                                                                                                                              | *Env*             | *Prod, Entw, QS, Phase, Test*                    |
-| Name des Besitzers                | Besitzer der Anwendung, der Workload oder des Diensts.                                                                                                                                                                | *Besitzer*           | *{E-Mail}*                                       |
-| Name der anfordernden Person            | Der Benutzer, der die Erstellung dieser Anwendung angefordert hat.                                                                                                                                                          | *Requestor*       | *{E-Mail}*                                       |
-| Dienstklasse             | Vereinbarung zum Servicelevel der Anwendung, der Workload oder des Diensts.                                                                                                                                       | *ServiceClass*    | *Dev, Bronze, Silver, Gold*                     |
-| Startdatum des Projekts | Datum, zu dem die Anwendung, Workload oder dieser Dienst erstmalig bereitgestellt wurde.                                                                                                                                           | *StartDate*       | *{Datum}*                                        |
+| Anwendungsname          | Der Name der Anwendung, des Diensts oder der Workload, mit der die Ressource verknüpft ist.                                                                                                                                 | _ApplicationName_ | _{App-Name}_                                    |
+| Name der genehmigenden Person             | Die Person, die für das Genehmigen der Kosten zuständig ist, die mit dieser Ressource verbunden sind.                                                                                                                                               | _Approver_        | _{E-Mail}_                                       |
+| Erforderliches/genehmigtes Budget  | Der Geldbetrag, der für diese Anwendung, diesen Dienst oder diese Workload zugeordnet ist.                                                                                                                                                    | _BudgetAmount_    | _{\$}_                                          |
+| Geschäftseinheit             | Oberste Abteilung Ihres Unternehmens, die Besitzer des Abonnements oder der Workload ist, zu dem oder der die Ressource gehört. In kleineren Unternehmen kann dieses Tag ein einzelnes Organisations- oder freigegebenes Element des Unternehmens auf oberster Ebene darstellen. | _BusinessUnit_    | _FINANZEN_, _MARKETING_, _{Produktname}_ , _CORP_, _FREIGABE_ |
+| Kostenstelle               | Buchhaltungskostenstelle, die dieser Ressource zugeordnet ist.                                                                                                                                                          | _CostCenter_      | _{Zahl}_                                      |
+| Notfallwiederherstellung         | Geschäftliche Bedeutung der Anwendung, Workload oder dieses Diensts.                                                                                                                                                | _DR_              | _Unternehmenskritisch_, _Kritisch_, _Unverzichtbar_         |
+| Enddatum des Projekts   | Datum, zu dem die Deaktivierung der Anwendung, Workload oder dieses Diensts geplant ist.                                                                                                                                  | _EndDate_         | _{Datum}_                                        |
+| Environment               | Bereitstellungsumgebung der Anwendung, Workload oder dieses Diensts.                                                                                                                                              | _Env_             | _Prod_, _Entw_, _QA_, _Stage_, _Test_                    |
+| Name des Besitzers                | Besitzer der Anwendung, der Workload oder des Diensts.                                                                                                                                                                | _Besitzer_           | _{E-Mail}_                                       |
+| Name der anfordernden Person            | Der Benutzer, der die Erstellung dieser Anwendung angefordert hat.                                                                                                                                                          | _Requestor_       | _{E-Mail}_                                       |
+| Dienstklasse             | Vereinbarung zum Servicelevel der Anwendung, der Workload oder des Diensts.                                                                                                                                       | _ServiceClass_    | _Dev_, _Bronze_, _Silver_, _Gold_                     |
+| Startdatum des Projekts | Datum, zu dem die Anwendung, Workload oder dieser Dienst erstmalig bereitgestellt wurde.                                                                                                                                           | _StartDate_       | _{Datum}_                                        |
 
 ## <a name="sample-naming-convention"></a>Beispielnamenskonvention
 
@@ -168,8 +170,8 @@ Der folgende Abschnitt enthält Beispiele zu Namensschemas für gängige Azure-R
 | Ressourcentyp               | `Scope`           | Format                                                                | Beispiele                                                                                              |
 |--------------------------|-----------------|-----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
 | Virtuelles Azure-Netzwerk          | Resource group  | vnet-\<Abonnementtyp\>-\<Region\>-\<\#\#\#\>                      | <ul><li>vnet-freigabe-usaosten2-001 </li><li>vnet-prod-usawesten-001 </li><li>vnet-client-usaosten2-001</li></ul>                                  |
-| Virtuelles Gateway des virtuellen Netzwerks     | Virtuelles Netzwerk | vnetgw-v-\<Abonnementtyp\>-\<Region\>-\<\#\#\#\>                 | <ul><li>vnet-gw-v-freigabe-usaosten2-001 </li><li>vnet-gw-v-prod-usawesten-001 </li><li>vnet-gw-v-client-usaosten2-001</li></ul>                   |
-| Lokales Gateway des virtuellen Netzwerks       | Virtuelles Gateway | vnetgw-l-\<Abonnementtyp\>-\<Region\>-\<\#\#\#\>                 | <ul><li>vnet-gw-l-shared-freigabe-usaosten2-001 </li><li>vnet-gw-l-prod-usawesten-001 </li><li>vnet-gw-l-client-usaosten2-001</li></ul>                   |
+| Virtuelles Gateway des virtuellen Netzwerks     | Virtuelles Netzwerk | vnetgw-v-\<Abonnementtyp\>-\<Region\>-\<\#\#\#\>                 | <ul><li>vnetgw-v-shared-eastus2-001 </li><li>vnetgw-v-prod-westus-001 </li><li>vnetgw-v-client-eastus2-001</li></ul>                   |
+| Lokales Gateway des virtuellen Netzwerks       | Virtuelles Gateway | vnetgw-l-\<Abonnementtyp\>-\<Region\>-\<\#\#\#\>                 | <ul><li>vnetgw-l-shared-eastus2-001 </li><li>vnetgw-l-prod-westus-001 </li><li>vnetgw-l-client-eastus2-001</li></ul>                   |
 | Site-to-Site-Verbindungen | Resource group  | cn-\<Name des lokalen Gateways\>-to-\<Name des virtuellen Gateways\>                 | <ul><li>cn-l-gw-freigabe-usaosten2-001-to-v-gw-freigabe-usaosten2-001 </li><li>cn-l-gw-freigabe-usaosten2-001-to-freigabe-usawesten-001</li></ul> |
 | Virtuelle Netzwerkverbindungen         | Resource group  | cn-\<Abonnement1\>\<Region1\>-to-\<Abonnement2\>\<Region2\>-      | <ul><li>cn-freigabe-usaosten2-to-freigabe-usawesten </li><li>cn-prod-usaosten2-to-prod-usawesten</li></ul>                                     |
 | Subnet                   | Virtuelles Netzwerk | snet-\<Abonnement\>-\<Unterregion\>-\<\#\#\#\>                       | <ul><li>snet-freigabe-usaosten2-001 </li><li>snet-prod-usawesten-001 </li><li>snet-client-usaosten2-001</li></ul>                                  |
@@ -190,9 +192,9 @@ Der folgende Abschnitt enthält Beispiele zu Namensschemas für gängige Azure-R
 
 | Ressourcentyp           | `Scope`  | Format                                                              | Beispiele                                                                                 |
 |----------------------|--------|---------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| Azure-Web-Apps       | Global | app-\<App-Name\>-\<Umgebung\>-\<\#\#\#\>.[{azurewebsites.net}] | <ul><li>azapp-navigator-prod-001.azurewebsites.net </li><li>app-accountlookup-dev-001.azurewebsites.net</li></ul> |
-| Azure-Funktionen      | Global | func-\<App-Name\>-\<Umgebung\>-\<\#\#\#\>.[{azurewebsites.net}] | <ul><li>azfun-navigator-prod-001.azurewebsites.net </li><li>func-accountlookup-dev-001.azurewebsites.net</li></ul> |
-| Azure Cloud Services | Global | cld-\<App-Name\>-\<Umgebung\>-\<\#\#\#\>.[{cloudapp.net}]       | <ul><li>azcs-navigator-prod-001.azurewebsites.net </li><li>cld-accountlookup-dev-001.azurewebsites.net</li></ul>   |
+| Azure-Web-Apps       | Global | app-\<App-Name\>-\<Umgebung\>-\<\#\#\#\>.[{azurewebsites.net}] | <ul><li>app-navigator-prod-001.azurewebsites.net </li><li>app-accountlookup-dev-001.azurewebsites.net</li></ul> |
+| Azure-Funktionen      | Global | func-\<App-Name\>-\<Umgebung\>-\<\#\#\#\>.[{azurewebsites.net}] | <ul><li>func-navigator-prod-001.azurewebsites.net </li><li>func-accountlookup-dev-001.azurewebsites.net</li></ul> |
+| Azure Cloud Services | Global | cld-\<App-Name\>-\<Umgebung\>-\<\#\#\#\>.[{cloudapp.net}]       | <ul><li>cld-navigator-prod-001.azurewebsites.net </li><li>cld-accountlookup-dev-001.azurewebsites.net</li></ul>   |
 
 ### <a name="azure-service-bus"></a>Azure-Servicebus
 
@@ -208,7 +210,7 @@ Der folgende Abschnitt enthält Beispiele zu Namensschemas für gängige Azure-R
 |-------------------------------------|--------------------|---------------------------------------|------------------------------------------------|
 | Azure SQL-Datenbank-Server           | Global             | sql-\<App-Name\>-\<Umgebung\>      | <ul><li>sql-navigator-prod </li><li>sql-emissions-dev</li></ul>           |
 | Azure SQL-Datenbank                  | Azure SQL-Datenbank | sqldb-\<Datenbankname>-\<Umgebung\>| <ul><li>sqldb-users-prod </li><li>sqldb-users-dev</li></ul>               |
-| Azure Cosmos DB                     | Global             | cosmos-\<App-Name\>-\<Umgebung\>   | <ul><li>cosdb-navigator-prod </li><li>cosdb-emissionen-entw</li></ul>       |
+| Azure Cosmos DB                     | Global             | cosmos-\<App-Name\>-\<Umgebung\>   | <ul><li>cosmos-navigator-prod </li><li>cosmos-emissions-dev</li></ul>       |
 | Azure Cache for Redis               | Global             | redis-\<App-Name\>-\<Umgebung\>    | <ul><li>redis-navigator-prod </li><li>redis-emissionen-entw</li></ul>       |
 | Azure Database for MySQL            | Global             | mysql-\<App-Name\>-\<Umgebung\>    | <ul><li>mysql-navigator-prod </li><li>mysql-emissionen-entw</li></ul>       |
 | Azure Database for PostgreSQL       | Global             | psql-\<App-Name\>-\<Umgebung\>     | <ul><li>psql-navigator-prod </li><li>psql-emissions-dev</li></ul>         |

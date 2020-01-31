@@ -1,6 +1,5 @@
 ---
 title: Verstehen der Optionen für Partnerschaften und Unterstützung
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dieser Artikel beschreibt Optionen und Vorgehensweisen zur Unterstützung von Migrationsprojekten.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 70ae0b048b0cf5e3bd364f8c0cc1051c515c39ea
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 9a525ab1c87f1cbb4c662c6f902e73de93c0204c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74159891"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802462"
 ---
 # <a name="understand-partnership-options"></a>Verstehen der Optionen für Partnerschaften
 
@@ -78,9 +77,9 @@ Dies sind die Hauptphasen eines typischen FastTrack for Azure-Einsatzes:
 
 ![Microsoft Services-Angebote für Cloud Adoption Framework-Prozesse](../../../_images/migrate/mcs-program-approach.jpg)
 
-**Bewerten**: Microsoft Services nutzen einen [einheitlichen, daten- und toolgesteuerten Ansatz](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf). Dieser besteht aus Architekturworkshops, Echtzeitinformationen in Azure, Modellen zu Bedrohungen bezüglich Sicherheit und Identität sowie verschiedenen Tools, die Erkenntnisse zu Herausforderungen, Risiken, Empfehlungen und Problemen in einer vorhandenen Azure-Umgebung bieten. Dabei wird u.a. eine [allgemeine Modernisierungsroadmap](https://download.microsoft.com/download/F/7/2/F72FAD7E-8BBD-4E04-8C7B-9AC4FE04A150/Cloud_Adoption_Discovery_and_Roadmap_Datasheet.pdf) erstellt.
+**Bewerten:** Microsoft Services nutzen einen [einheitlichen, daten- und toolgesteuerten Ansatz](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf). Dieser besteht aus Architekturworkshops, Echtzeitinformationen in Azure, Modellen zu Bedrohungen bezüglich Sicherheit und Identität sowie verschiedenen Tools, die Erkenntnisse zu Herausforderungen, Risiken, Empfehlungen und Problemen in einer vorhandenen Azure-Umgebung bieten. Dabei wird u.a. eine [allgemeine Modernisierungsroadmap](https://download.microsoft.com/download/F/7/2/F72FAD7E-8BBD-4E04-8C7B-9AC4FE04A150/Cloud_Adoption_Discovery_and_Roadmap_Datasheet.pdf) erstellt.
 
-**Übernehmen**: Durch die [Azure Cloud Foundation](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf) von Microsoft Services richten Sie Ihre grundlegenden Entwürfe, Muster und die Governancearchitektur für Azure ein. Sie ordnen Ihre Anforderungen zu den am besten geeigneten Referenzarchitekturen und Plänen zu, um danach die für Workloads erforderliche Infrastruktur, Verwaltung, Sicherheit und Identität zu entwerfen und bereitzustellen.
+**Einführung:** Durch die [Azure Cloud Foundation](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf) von Microsoft Services richten Sie Ihre grundlegenden Entwürfe, Muster und die Governancearchitektur für Azure ein. Sie ordnen Ihre Anforderungen zu den am besten geeigneten Referenzarchitekturen und Plänen zu, um danach die für Workloads erforderliche Infrastruktur, Verwaltung, Sicherheit und Identität zu entwerfen und bereitzustellen.
 
 **Migrieren/Optimieren**: Die [Cloud Modernization Solution](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) von Microsoft Services bietet eine umfassende Vorgehensweise zum Verschieben von Anwendungen und Infrastrukturen nach Azure sowie zum Optimieren und Modernisieren nach der Cloudbereitstellung, unterstützt durch eine optimierte Migration.
 

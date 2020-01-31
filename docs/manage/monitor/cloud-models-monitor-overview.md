@@ -1,6 +1,5 @@
 ---
 title: 'Leitfaden zur Cloudüberwachung: Überwachungsstrategie für Cloudbereitstellungsmodelle'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Auswahlhilfe: Verwendung von Azure Monitor oder System Center Operations Manager in Microsoft Azure'
 author: MGoedtel
 ms.author: magoedte
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 81bb5775f2d83a0784e360440b52112427acf243
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: abb9395a739d4e32cab85367d4de822dc47939ac
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160252"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807630"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Leitfaden zur Cloudüberwachung: Überwachungsstrategie für Cloudbereitstellungsmodelle
 
@@ -46,7 +45,7 @@ In der folgenden Tabelle werden die empfohlenen Ansätze zur Überwachung der ei
 
 Ebene | Resource | `Scope` | Methode
 ---|---|---|----
-Anwendung | Eine webbasierte Anwendung, die auf der .NET-, .NET Core-, Java-, JavaScript- und Node.js-Plattform auf einem virtuellen Azure-Computer, in Azure App Services, Azure Service Fabric, Azure Functions und Azure Cloud Services ausgeführt wird. | Überwachen einer Livewebanwendung, um automatisch Leistungsanomalien zu erkennen, Codeausnahmen und -probleme zu erkennen und Analysedaten zum Benutzerverhalten zu erfassen. |  Azure Monitor (Application Insights).
+Application | Eine webbasierte Anwendung, die auf der .NET-, .NET Core-, Java-, JavaScript- und Node.js-Plattform auf einem virtuellen Azure-Computer, in Azure App Services, Azure Service Fabric, Azure Functions und Azure Cloud Services ausgeführt wird. | Überwachen einer Livewebanwendung, um automatisch Leistungsanomalien zu erkennen, Codeausnahmen und -probleme zu erkennen und Analysedaten zum Benutzerverhalten zu erfassen. |  Azure Monitor (Application Insights).
 Azure-Ressourcen: Platform-as-a-Service (PaaS) | Azure-Datenbankdienste (z.B. SQL oder MySQL). | Azure-Datenbank für SQL-Leistungsmetriken. | Aktivieren der Diagnoseprotokollierung zum Streamen von SQL-Daten an Azure Monitor-Protokolle.
 Azure-Ressourcen: Infrastructure-as-a-Service (IaaS) | 1. Azure Storage<br/> 2. Azure Application Gateway<br/> 3. Netzwerksicherheitsgruppen<br/> 4. Azure Traffic Manager<br/> 5. Azure Virtual Machines<br/> 6. Azure Kubernetes Service/Azure Container Instances | 1. Kapazität, Verfügbarkeit und Leistung.<br/> 2. Leistungs- und Diagnoseprotokolle (Aktivitäten, Zugriff, Leistung und Firewall).<br/> 3. Überwachung von Ereignissen bei der Anwendung von Regeln und Regelzähler für die Häufigkeit der Anwendung von Regeln zum Ablehnen oder Zulassen<br/> 4. Überwachung der Verfügbarkeit des Endpunktstatus.<br/> 5. Überwachung von Kapazität, Verfügbarkeit und Leistung in einem VM-Gastbetriebssystem (OS). Zuordnung von auf den virtuellen Computern gehosteten App-Abhängigkeiten, einschließlich der Sichtbarkeit aktiver Netzwerkverbindungen zwischen Servern, der Latenz für eingehende und ausgehende Verbindungen und der Ports in jeder über TCP verbundenen Architektur.<br/> 6. Überwachung von Kapazität, Verfügbarkeit und Leistung von Workloads, die auf Containern und Containerinstanzen ausgeführt werden. | 1. Speichermetriken für Blob Storage<br/> 2. Aktivieren der Diagnoseprotokollierung und Konfigurieren des Streamings von Daten an Azure Monitor-Protokolle.<br/> 3. Aktivieren der Diagnoseprotokollierung von Netzwerksicherheitsgruppen und Konfigurieren des Streamings von Daten an Azure Monitor-Protokolle.<br/> 4. Aktivieren der Diagnoseprotokollierung von Traffic Manager-Endpunkten und Konfigurieren des Streamings von Daten an Azure Monitor-Protokolle.<br/> 5. Aktivieren von Azure Monitor für VMs.<br/> 6. Aktivieren von Azure Monitor für Container.
 Netzwerk | Kommunikation zwischen dem virtuellen Computer und einem oder mehreren Endpunkten (ein anderer virtueller Computer, ein vollqualifizierter Domänenname, ein URI oder eine IPv4-Adresse). | Überwachung von Änderungen der Erreichbarkeit, Latenz und Netzwerktopologie zwischen der VM und dem Endpunkt. | Azure Network Watcher.

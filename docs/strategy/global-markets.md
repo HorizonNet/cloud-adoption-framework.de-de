@@ -1,6 +1,5 @@
 ---
 title: Grundlegendes zu den Auswirkungen globaler Marktentscheidungen
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Erläuterung des Konzepts globaler Märkte
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 36f0d5ccf826746370054ed213b83968babdee6b
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: af3c9d8b155d2c6a5e861e64b6472effbafcbb6d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548622"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76798161"
 ---
 <!-- markdownlint-disable MD026 -->
 

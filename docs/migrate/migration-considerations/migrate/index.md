@@ -1,19 +1,18 @@
 ---
 title: Ausführen einer Migration
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Ausführen einer Migration
+description: Verschaffen Sie sich einen Überblick über die Artikel, in denen die verschiedenen Aktivitäten erläutert werden, die unter Umständen bei der Migration einer Workload in Azure ausgeführt werden müssen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 21520edecc7ba874713561672cd0bd38aa96c0a2
-ms.sourcegitcommit: a26c27ed72ac89198231ec4b11917a20d03bd222
+ms.openlocfilehash: 62100df7a32ca904454e0df2d7be8c1a860fd611
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70818232"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802275"
 ---
 # <a name="execute-a-migration"></a>Ausführen einer Migration
 
@@ -37,7 +36,7 @@ Das Cloudeinführungsteam ist für den gesamten Migrationsprozess verantwortlich
 
 Zusätzlich zur Verantwortlichkeit auf hoher Ebene gibt es Maßnahmen, für die eine Person oder Gruppe direkt verantwortlich sein muss. Im Folgenden sind einige Aktivitäten aufgeführt, die eine Zuordnung zu verantwortlichen Personen erfordern:
 
-- **Problembehandlung** Beheben aller Kompatibilitätsprobleme, die eine Migration der Workload in die Cloud verhindern.
+- **Korrektur:** Beheben aller Kompatibilitätsprobleme, die eine Migration der Workload in die Cloud verhindern.
   - Wie im Artikel zur [technischen Komplexität und zum Change Management](../prerequisites/technical-complexity.md) erläutert, sollte im Voraus eine Entscheidung getroffen werden, wie diese Aktivität ausgeführt wird. Insbesondere sollte die Frage beantwortet werden, ob die Problembehandlung des Cloudeinführungsteams während des gleichen Durchgangs abgeschlossen wird wie der eigentliche Migrationsaufwand. Wird alternativ ein Wellen- oder Factorymodell verwendet, um die Problembehandlung in einer separaten Iteration abzuschließen? Wenn die Antwort auf diese grundlegende Prozessfrage nicht von jedem Mitglied des Teams beantwortet werden kann, ist es möglicherweise empfehlenswert, den Abschnitt [Voraussetzungen](../prerequisites/index.md) erneut zu besuchen.
 - **Replikation** Erstellen einer Kopie der einzelnen Ressourcen in der Cloud, um virtuelle Computer, Daten und Anwendungen mit Ressourcen in der Cloud zu synchronisieren.
   - Abhängig vom Höherstufungsmodell können verschiedene Tools erforderlich sein, um diese Aktivität abzuschließen.

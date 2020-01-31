@@ -1,6 +1,5 @@
 ---
 title: Bewährte Methoden zum Einrichten von Netzwerken für zu Azure migrierte Workloads
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Nach der Migration zu Azure werden Ihnen bewährte Methoden zum Einrichten von Netzwerken für Ihre migrierten Workloads bereitgestellt.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,19 +7,19 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a7f119dcfd2b7cdfc71b8a4c6f913448cd98e763
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: a8a4bc504c085f461cb70f561670fe55a20a544b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753614"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803873"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Bewährte Methoden zum Einrichten von Netzwerken für zu Azure migrierte Workloads
 
 Bei der Planung und dem Entwurf für die Migration besteht einer der wichtigsten Schritte neben der Migration selbst im Entwurf und in der Implementierung von Azure-Netzwerken. Dieser Artikel beschreibt bewährte Methoden für den Netzwerkbetrieb bei der Migration zu IaaS- und PaaS-Implementierungen in Azure.
 
 > [!IMPORTANT]
-> Die in diesem Artikel beschriebenen bewährten Methoden und Meinungen basieren auf Azure-Plattform- und --Dienstfeatures, die zu dem Zeitpunkt verfügbar waren, zu dem dieser Artikel verfasst wurde. Features und Funktionen ändern sich im Laufe der Zeit. Nicht alle Empfehlungen sind notwendigerweise auf Ihre Bereitstellung anwendbar. Wählen Sie also diejenigen aus, die für Sie relevant sind.
+> Die in diesem Artikel beschriebenen Best Practices und Meinungen basieren auf Azure-Plattform- und -Dienstfeatures, die zu dem Zeitpunkt verfügbar waren, zu dem dieser Artikel verfasst wurde. Features und Funktionen ändern sich im Laufe der Zeit. Nicht alle Empfehlungen sind notwendigerweise auf Ihre Bereitstellung anwendbar. Wählen Sie also diejenigen aus, die für Sie relevant sind.
 
 ## <a name="design-virtual-networks"></a>Entwerfen virtueller Netzwerke
 
@@ -37,7 +36,7 @@ Azure stellt virtuelle Netzwerke (VNETs) bereit:
 
 Bei der Planung Ihrer VNET-Topologie sollten Sie überlegen, wie Sie die IP-Adressräume anordnen, ein Hub-Spoke-Netzwerk implementieren, VNETs in Subnetze segmentieren, DNS einrichten und Azure-Verfügbarkeitszonen implementieren möchten.
 
-## <a name="best-practice-plan-ip-addressing"></a>Best Practice: Planen der IP-Adressierung
+## <a name="best-practice-plan-ip-addressing"></a>Bewährte Methode: Planen der IP-Adressierung
 
 Wenn Sie im Rahmen der Migration VNETs erstellen, ist es wichtig, Ihren VNET-IP-Adressraum zu planen.
 
@@ -46,13 +45,13 @@ Wenn Sie im Rahmen der Migration VNETs erstellen, ist es wichtig, Ihren VNET-IP-
 - Die Netzwerkadressenübersetzung (NAT) darf nicht verwendet werden.
 - Überlappende Adressen können zu Netzwerken führen, mit denen keine Verbindung hergestellt werden kann, und zu einem Routing, das nicht ordnungsgemäß funktioniert. Wenn Netzwerke überlappen, müssen Sie das Netzwerk neu entwerfen oder die Netzwerkadressenübersetzung (NAT) verwenden.
 
-**Weitere Informationen:**
+**Weitere Informationen**:
 
 - [Verschaffen Sie sich einen Überblick](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) über Azure VNETs.
 - [Lesen](https://docs.microsoft.com/azure/virtual-network/virtual-networks-faq) Sie die häufig gestellten Fragen zum Netzwerkbetrieb.
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=%2fazure%2fvirtual-network%2ftoc.json#networking-limits) über Netzwerkeinschränkungen.
 
-## <a name="best-practice-implement-a-hub-and-spoke-network-topology"></a>Best Practice: Implementieren einer Hub-Spoke-Netzwerktopologie
+## <a name="best-practice-implement-a-hub-and-spoke-network-topology"></a>Bewährte Methode: Implementieren einer Hub-Spoke-Netzwerktopologie
 
 Eine Hub-Spoke-Netzwerktopologie dient zur Isolation von Workloads, während Dienste wie Identität und Sicherheit gemeinsam verwendet werden.
 
@@ -70,7 +69,7 @@ Beachten Sie Folgendes:
 ![Change Management](./media/migrate-best-practices-networking/hub-spoke.png)
 *Hub-Spoke-Topologie*
 
-**Weitere Informationen:**
+**Weitere Informationen**:
 
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke) über Hub-Spoke-Topologien.
 - Erhalten Sie Netzwerkempfehlungen für die Ausführung von Azure-VMs unter [Windows](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/windows-vm) und [Linux](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/linux-vm).
@@ -97,12 +96,12 @@ DEV-FE-EUS2 | 10.245.16.0/22 | 1019 | Front-End/Webschicht-VMs
 DEV-APP-EUS2 | 10.245.20.0/22 | 1019 | App-Schicht-VMs
 DEV-DB-EUS2 | 10.245.24.0/23 | 507 | Datenbank-VMs
 
-**Weitere Informationen:**
+**Weitere Informationen**:
 
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm#segmentation) über das Entwerfen von Subnetzen.
 - [Erfahren Sie](https://docs.microsoft.com/azure/migrate/contoso-migration-infrastructure), wie ein fiktives Unternehmen (Contoso) seine Netzwerkinfrastruktur für die Migration vorbereitet hat.
 
-## <a name="best-practice-set-up-a-dns-server"></a>Best Practice: Einrichten eines DNS-Servers
+## <a name="best-practice-set-up-a-dns-server"></a>Bewährte Methode: Einrichten eines DNS-Servers
 
 Azure fügt standardmäßig einen DNS-Server hinzu, wenn Sie ein VNET bereitstellen. So können Sie schnell VNETs erstellen und Ressourcen bereitstellen. Dieser DNS-Server bietet jedoch nur Dienste für die Ressourcen im jeweiligen VNET an. Wenn Sie mehrere VNETs miteinander verbinden oder von den VNETs aus eine Verbindung mit einem lokalen Server herstellen möchten, benötigen Sie zusätzliche Funktionen zur Namensauflösung. Beispielsweise muss Active Directory möglicherweise DNS-Namen zwischen virtuellen Netzwerken auflösen. Zu diesem Zweck stellen Sie Ihren eigenen benutzerdefinierten DNS-Server in Azure bereit.
 
@@ -117,7 +116,7 @@ Azure fügt standardmäßig einen DNS-Server hinzu, wenn Sie ein VNET bereitstel
 
     ![DNS-Server](./media/migrate-best-practices-networking/dns2.png) *DNS-Server für ein VNET*
 
-**Weitere Informationen:**
+**Weitere Informationen**:
 
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/migrate/contoso-migration-infrastructure) über die Namensauflösung, wenn Sie einen eigenen DNS-Server verwenden.
 - [Erfahren Sie mehr](../../ready/azure-best-practices/naming-and-tagging.md) über DNS-Benennungsregeln und -Einschränkungen.
@@ -141,7 +140,7 @@ Verfügbarkeitszonen sorgen für höhere Verfügbarkeit, um Ihre Apps und Daten 
 
     ![Lastenausgleich](./media/migrate-best-practices-networking/load-balancer.png) *Lastenausgleich*
 
-**Weitere Informationen:**
+**Weitere Informationen**:
 
 - [Verschaffen Sie sich einen Überblick](https://docs.microsoft.com/azure/availability-zones/az-overview) über Verfügbarkeitszonen.
 
@@ -152,7 +151,7 @@ Für eine erfolgreiche Migration ist es wichtig, eine Verbindung zwischen lokale
 - **Site-to-Site-VPN**: Sie erstellen eine Site-to-Site-Verbindung zwischen Ihrem kompatiblen lokalen VPN-Gerät und einem Azure-VPN-Gateway, das in einem VNET bereitgestellt wird. Jede autorisierte lokale Ressource kann auf VNETs zugreifen. Die Site-to-Site-Kommunikation wird durch einen verschlüsselten Tunnel über das Internet gesendet.
 - **Azure ExpressRoute:** Sie stellen eine Azure ExpressRoute-Verbindung zwischen Ihrem lokalen Netzwerk und Azure über einen ExpressRoute-Partner her. Diese Verbindung ist privat, und der Datenverkehr wird nicht über das Internet geleitet.
 
-**Weitere Informationen:**
+**Weitere Informationen**:
 
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn) über Hybridcloudnetzwerke.
 
@@ -184,7 +183,7 @@ Beim Einrichten eines Site-to-Site-VPN gehen Sie folgendermaßen vor:
 ![VPN](./media/migrate-best-practices-networking/vpn.png)
 *Site-to-Site-VPN*
 
-**Weitere Informationen:**
+**Weitere Informationen**:
 
 - [Informieren Sie sich](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices) über kompatible lokale VPN-Geräte.
 - [Verschaffen Sie sich einen Überblick](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways) über VPN-Gateways.
@@ -203,7 +202,7 @@ Wenn Sie ein VPN-Gateway in Azure erstellen, müssen Sie ein spezielles Subnetz 
 - Wenn Sie das Azure GatewaySubnet verwenden, stellen Sie dem Gatewaysubnetz keine VMs oder andere Geräte wie z.B. Application Gateway bereit.
 - Weisen Sie diesem Subnetz keine Netzwerksicherheitsgruppe (NSG) zu. Dadurch würde die Funktion des Gateways beendet.
 
-**Weitere Informationen:**
+**Weitere Informationen**:
 
 - [Verwenden Sie dieses Tool](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed), um Ihren IP-Adressraum zu ermitteln.
 
@@ -218,7 +217,7 @@ Der Netzwerkdienst Azure Virtual WAN bietet für eine mehrere VPN-Verbindungen o
 **Weitere Informationen:** 
 [Weitere Informationen](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) zu Azure Virtual WAN
 
-### <a name="best-practice-implement-expressroute-for-mission-critical-connections"></a>Best Practice: Implementieren von ExpressRoute für unternehmenskritische Verbindungen
+### <a name="best-practice-implement-expressroute-for-mission-critical-connections"></a>Bewährte Methode: Implementieren von ExpressRoute für unternehmenskritische Verbindungen
 
 Mit dem Azure ExpressRoute-Dienst erweitern Sie Ihre lokale Infrastruktur in die Microsoft-Cloud, indem Sie private Verbindungen zwischen dem virtuellen Azure-Rechenzentrum und lokalen Netzwerken erstellen.
 
@@ -304,7 +303,7 @@ Die nachfolgende Abbildung zeigt ein Beispiel für ein Umkreisnetzwerk mit einem
 ![VPN](./media/migrate-best-practices-networking/perimeter.png)
 *Bereitstellung eines Umkreisnetzwerks*
 
-**Weitere Informationen:**
+**Weitere Informationen**:
 
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid) über die Bereitstellung eines Umkreisnetzwerks zwischen Azure und Ihrem lokalen Rechenzentrum.
 
@@ -344,7 +343,7 @@ Diensttags ersparen Ihnen die manuelle Arbeit beim Zuweisen einer Regel zu Grupp
 - Das Tag steht für den Dienst, aber nicht für bestimmte Instanzen des Diensts. Beispielsweise steht das Tag für den Azure SQL-Datenbank-Dienst, aber nicht für eine bestimmte SQL-Datenbank oder einen bestimmten SQL-Server.
 - Alle Adresspräfixe, für die dieses Tag steht, werden auch durch das **Internet**-Tag repräsentiert.
 
-**Weitere Informationen:**
+**Weitere Informationen**:
 
 - [Informieren Sie sich](https://docs.microsoft.com/azure/virtual-network/security-overview) über Netzwerksicherheitsgruppen.
 - [Informieren Sie sich](https://docs.microsoft.com/azure/virtual-network/security-overview#service-tags) über die für NSGs verfügbaren Diensttags.
@@ -377,14 +376,14 @@ NIC4 | AsgDb
 **Regelname** | **Zweck** | **Details**
 --- | --- | ---
 Allow-HTTP-Inbound-Internet | Hiermit wird Datenverkehr aus dem Internet an die Webserver zugelassen. Eingehender Datenverkehr aus dem Internet wird durch die Standardsicherheitsregel „DenyAllInbound“ verweigert, daher ist keine zusätzliche Regel für die Anwendungssicherheitsgruppen „AsgLogic“ oder „AsgDb“ erforderlich. | Priorität: 100<br/><br/> Quelle: Internet<br/><br/> Quellport: *<br/><br/> Ziel: AsgWeb<br/><br/> Zielport: 80<br/><br/> Protokoll: TCP<br/><br/> Zugriff: Zulassen.
-Deny-Database-All | Die Standardsicherheitsregel „AllowVNetInBound“ erlaubt die gesamte Kommunikation zwischen Ressourcen im gleichen VNET, daher ist diese Regel erforderlich, um den Datenverkehr von allen Ressourcen zu verweigern. | Priorität: 120<br/><br/> Quelle: *<br/><br/> Quellport: *<br/><br/> Ziel: AsgDb<br/><br/> Zielport: 1433<br/><br/> Protokoll: Alle<br/><br/> Zugriff: Verweigern.
+Deny-Database-All | Die Standardsicherheitsregel „AllowVNetInBound“ erlaubt die gesamte Kommunikation zwischen Ressourcen im gleichen VNET, daher ist diese Regel erforderlich, um den Datenverkehr von allen Ressourcen zu verweigern. | Priorität: 120<br/><br/> Quelle: *<br/><br/> Quellport: *<br/><br/> Ziel: AsgDb<br/><br/> Zielport: 1433<br/><br/> Protokoll: All<br/><br/> Zugriff: Verweigern.
 Allow-Database-BusinessLogic | Diese Regel lässt Datenverkehr von der Anwendungssicherheitsgruppe „AsgLogic“ an die Anwendungssicherheitsgruppe „AsgDb“ zu. Die Priorität für diese Regel ist höher als die der Regel „Deny-Database-All“, sodass diese Regel zuerst verarbeitet wird. Datenverkehr von der Anwendungssicherheitsgruppe „AsgLogic“ ist daher zulässig, während der gesamte übrige Datenverkehr blockiert wird. | Priorität: 110<br/><br/> Quelle: AsgLogic<br/><br/> Quellport: *<br/><br/> Ziel: AsgDb<br/><br/> Zielport: 1433<br/><br/> Protokoll: TCP<br/><br/> Zugriff: Zulassen.
 
 <!--markdownlint-enable MD033 -->
 
 - Regeln, in denen eine Anwendungssicherheitsgruppe als Quelle oder Ziel angegeben ist, werden nur auf Netzwerkschnittstellen angewendet, bei denen es sich um Mitglieder der Anwendungssicherheitsgruppe handelt. Wenn die Netzwerkschnittstelle nicht Mitglied einer Anwendungssicherheitsgruppe ist, wird die Regel nicht auf die Netzwerkschnittstelle angewendet, auch wenn die Netzwerksicherheitsgruppe dem Subnetz zugeordnet ist.
 
-**Weitere Informationen:**
+**Weitere Informationen**:
 
 - [Informieren Sie sich](https://docs.microsoft.com/azure/virtual-network/security-overview#application-security-groups) über Anwendungssicherheitsgruppen.
 
@@ -399,7 +398,7 @@ Durch VNET-Dienstendpunkte wird Ihr privater VNET-Adressraum und die Identität 
 ![Dienstendpunkte](./media/migrate-best-practices-networking/endpoint.png)
 *Dienstendpunkte*
 
-**Weitere Informationen:**
+**Weitere Informationen**:
 
 - [Informieren Sie sich](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) über VNET-Dienstendpunkte.
 
@@ -424,7 +423,7 @@ Durch VNET-Dienstendpunkte wird Ihr privater VNET-Adressraum und die Identität 
 
 Azure bietet Features für die Plattformsicherheit, die benutzerfreundlich sind und umfassende Gegenmaßnahmen für allgemeine Netzwerkangriffe bereitstellen. Dazu gehören Azure Firewall, Web Application Firewall und Network Watcher.
 
-## <a name="best-practice-deploy-azure-firewall"></a>Best Practice: Bereitstellen von Azure Firewall
+## <a name="best-practice-deploy-azure-firewall"></a>Bewährte Methode: Bereitstellen von Azure Firewall
 
 Azure Firewall ist ein verwalteter, cloudbasierter Netzwerksicherheitsdienst zum Schutz Ihrer VNET-Ressourcen. Es handelt sich dabei um eine vollständig zustandsbehaftete verwaltete Firewall mit integrierter Hochverfügbarkeit und uneingeschränkter Cloudskalierbarkeit.
 
@@ -439,12 +438,12 @@ Azure Firewall ist ein verwalteter, cloudbasierter Netzwerksicherheitsdienst zum
   - Sie können ein FQDN-Tag verwenden, um den erforderlichen ausgehenden Netzwerkdatenverkehr über die Firewall zuzulassen.
 - Um beispielsweise den Netzwerkdatenverkehr von Windows Update manuell über Ihre Firewall zuzulassen, müssen Sie mehrere Anwendungsregeln erstellen. Mit FQDN-Tags erstellen Sie eine Anwendungsregel und schließen das Windows Updates-Tag ein. Wenn diese Regel festgelegt wurde, kann der Netzwerkdatenverkehr an Microsoft Windows Update-Endpunkte über Ihre Firewall verlaufen.
 
-**Weitere Informationen:**
+**Weitere Informationen**:
 
 - [Verschaffen Sie sich einen Überblick](https://docs.microsoft.com/azure/firewall/overview) über Azure Firewall.
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/firewall/fqdn-tags) über FQDN-Tags.
 
-## <a name="best-practice-deploy-a-web-application-firewall-waf"></a>Best Practice: Bereitstellen einer Web Application Firewall (WAF)
+## <a name="best-practice-deploy-a-web-application-firewall-waf"></a>Bewährte Methode: Bereitstellen einer Web Application Firewall (WAF)
 
 Webanwendungen sind zunehmend Ziele böswilliger Angriffe, die allgemein bekannte Sicherheitslücken ausnutzen. Zu den Exploits gehören üblicherweise Angriffe durch Einschleusung von SQL-Befehlen oder Angriffe durch websiteübergreifende Skripts. Das Verhindern solcher Angriffe im Anwendungscode ist oft schwierig und erfordert strenge Wartung, Patching und Überwachung auf verschiedenen Ebenen der Anwendungstopologie. Eine zentrale Web Application Firewall vereinfacht die Sicherheitsverwaltung erheblich und ermöglicht App-Administratoren einen Schutz vor Bedrohungen und Angriffen. Mit einer Web Application Firewall können Sie schneller auf Sicherheitsrisiken reagieren, weil bekannte Schwachstellen an einem zentralen Ort gepatcht werden, statt einzelne Webanwendungen separat zu sichern. Vorhandene Anwendungsgateways lassen sich problemlos in ein Anwendungsgateway mit Web Application Firewall konvertieren.
 
@@ -457,7 +456,7 @@ Die Web Application Firewall (WAF) ist ein Feature von Azure Application Gateway
 - Sie können WAF-Regeln und Regelgruppen an Ihre App-Anforderungen anpassen.
 - Als bewährte Methode sollten Sie eine WAF vor jeder aus dem Web zugänglichen App verwenden, einschließlich Apps auf virtuellen Azure-Computern oder Azure App Service.
 
-**Weitere Informationen:**
+**Weitere Informationen**:
 
 - [Informieren Sie sich](https://docs.microsoft.com/azure/application-gateway/waf-overview) über die WAF.
 - [Lesen Sie](https://docs.microsoft.com/azure/application-gateway/application-gateway-waf-configuration) die WAF-Einschränkungen und -Ausschlüsse.
@@ -476,7 +475,7 @@ Azure Network Watcher bietet Tools zum Überwachen von Ressourcen und Kommunikat
   - Datenflussprotokolle werden im JSON-Format geschrieben.
   - Die Datenflussprotokolle zeigen aus- und eingehende Datenflüsse pro Regel, die Netzwerkschnittstelle, auf die sich der Datenfluss bezieht, 5-Tupel-Informationen über den Datenfluss (Quell-/Ziel-IP-Adresse, Quell-/Zielport, Protokoll) und Informationen zu zugelassenem oder verweigertem Datenverkehr an.
 
-**Weitere Informationen:**
+**Weitere Informationen**:
 
 - [Verschaffen Sie sich einen Überblick](https://docs.microsoft.com/azure/network-watcher) über Network Watcher.
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-overview) über NSG-Datenflussprotokolle.
@@ -508,13 +507,13 @@ Es wird empfohlen, eine Gruppe von Azure-Firewalls (oder virtuellen Netzwerkappl
 - Die Verwendung einer einzigen Gruppe von Firewalls für den gesamten Datenverkehr stellt ein Sicherheitsrisiko dar, da sie keinen wirksamen Sicherheitsbereich zwischen den beiden Arten von Netzwerkdatenverkehr bietet.
 - Separate Firewallebenen vereinfachen die Überprüfung von Sicherheitsregeln und ermöglichen eine eindeutige Zuordnung von Regeln zu eingehenden Netzwerkanforderungen.
 
-**Weitere Informationen:**
+**Weitere Informationen**:
 
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid) über die Verwendung virtueller Netzwerkappliances in einem Azure-VNET.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Sehen Sie sich weitere bewährte Methoden an:
+Informieren Sie sich über weitere Best Practices:
 
 - [Bewährte Methoden](./migrate-best-practices-security-management.md) für Sicherheit und Verwaltung nach der Migration.
-- [Bewährte Methoden](./migrate-best-practices-costs.md) für Kostenverwaltung nach der Migration.
+- [Best Practices](./migrate-best-practices-costs.md) für die Kostenverwaltung nach der Migration.

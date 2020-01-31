@@ -1,6 +1,5 @@
 ---
 title: Verwalten des Zugriffs auf Ihre Azure-Umgebung
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Hier erfahren Sie, wie Sie mit der rollenbasierten Zugriffssteuerung (RBAC) die Steuerung des Zugriffs auf Ihre Azure-Umgebung einrichten.
 author: LijuKodicheraJayadevan
 ms.author: kfollis
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 033d9b254523562c30022a75a97dc10e649a45df
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 83f9461302af6710464b8c7e81a866cfc25d5852
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251379"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799589"
 ---
 # <a name="manage-access-to-your-azure-environment-with-role-based-access-controls"></a>Verwalten des Zugriffs auf Ihre Azure-Umgebung per rollenbasierter Zugriffssteuerung
 
@@ -41,7 +40,7 @@ So gewähren Sie einem Benutzer Zugriff auf eine Ressourcengruppe:
 
 1. Navigieren Sie zu **Ressourcengruppen**.
 1. Wählen Sie eine Ressourcengruppe aus.
-1. Wählen Sie die Option **Zugriffssteuerung (IAM)** .
+1. Wählen Sie die Option **Zugriffssteuerung (IAM)** aus.
 1. Wählen Sie **+Hinzufügen** > **Rollenzuweisung hinzufügen** aus.
 1. Wählen Sie eine Rolle aus, und weisen Sie anschließend einem Benutzer, einer Gruppe oder einem Dienstprinzipal Zugriff zu.
 
@@ -53,7 +52,7 @@ So gewähren Sie einem Benutzer Zugriff auf ein Abonnement:
 
 1. Navigieren Sie zu **Abonnements**.
 1. Wählen Sie ein Abonnement aus.
-1. Wählen Sie die Option **Zugriffssteuerung (IAM)** .
+1. Wählen Sie die Option **Zugriffssteuerung (IAM)** aus.
 1. Wählen Sie **+Hinzufügen** > **Rollenzuweisung hinzufügen** aus.
 1. Wählen Sie eine Rolle aus, und weisen Sie anschließend einem Benutzer, einer Gruppe oder einem Dienstprinzipal Zugriff zu.
 
@@ -69,7 +68,7 @@ So gewähren Sie einem Benutzer Zugriff auf eine Ressourcengruppe:
 
 1. Navigieren Sie zu [Ressourcengruppen](https://portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2Fsubscriptions%2FresourceGroups).
 1. Wählen Sie eine Ressourcengruppe aus.
-1. Wählen Sie die Option **Zugriffssteuerung (IAM)** .
+1. Wählen Sie die Option **Zugriffssteuerung (IAM)** aus.
 1. Wählen Sie **+Hinzufügen** > **Rollenzuweisung hinzufügen** aus.
 1. Wählen Sie eine Rolle aus, und weisen Sie anschließend einem Benutzer, einer Gruppe oder einem Dienstprinzipal Zugriff zu.
 
@@ -79,7 +78,7 @@ So gewähren Sie einem Benutzer Zugriff auf ein Abonnement:
 
 1. Navigieren Sie zu [Abonnements](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade).
 1. Wählen Sie ein Abonnement aus.
-1. Wählen Sie die Option **Zugriffssteuerung (IAM)** .
+1. Wählen Sie die Option **Zugriffssteuerung (IAM)** aus.
 1. Wählen Sie **+Hinzufügen** > **Rollenzuweisung hinzufügen** aus.
 1. Wählen Sie eine Rolle aus, und weisen Sie anschließend einem Benutzer, einer Gruppe oder einem Dienstprinzipal Zugriff zu.
 

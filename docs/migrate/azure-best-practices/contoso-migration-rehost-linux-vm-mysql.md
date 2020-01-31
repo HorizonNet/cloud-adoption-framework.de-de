@@ -1,6 +1,5 @@
 ---
 title: Zuweisen eines neuen Hosts für eine Linux-Service Desk-App zu Azure und Azure Database for MySQL
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dieser Artikel enthält Informationen zum Zuweisen eines neuen Hosts für eine lokale Linux-App durch Migration zu Azure-VMs und Azure Database for MySQL.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a2a695af758ae7e99a7c2257f3adf4ce5058ae3d
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: d6f812c8f32ec9481942f697151e7ed803654a1b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160320"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807409"
 ---
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>Zuweisen eines neuen Hosts für eine lokale Linux-App zu Azure-VMs und Azure Database for MySQL
 
@@ -107,7 +106,7 @@ Die Contoso-Administratoren gehen bei der Migration wie folgt vor:
 > - **Schritt 2: Vorbereiten einer lokalen VMware-Instanz für Site Recovery.** Das Unternehmen bereitet Konten für die VM-Ermittlung und Agent-Installation sowie das Herstellen einer Verbindung mit Azure-VMs nach dem Failover vor.
 > - **Schritt 3: Bereitstellen der Datenbank.** Die Administratoren stellen in Azure eine Instanz von Azure Database for MySQL bereit.
 > - **Schritt 4: Replizieren von VMs.** Die Administratoren konfigurieren die Quell- und Zielumgebung für Site Recovery, richten eine Replikationsrichtlinie ein und starten die Replikation von VMs zu Azure Storage.
-> - **Schritt 5: Migrieren der Datenbank.** Die Administratoren richten die Migration mit MySQL-Tools ein.
+> - **Schritt 5: Migrieren der Datenbank:** Die Administratoren richten die Migration mit MySQL-Tools ein.
 > - **Schritt 6: Migrieren der VMs mit Site Recovery.** Zuletzt wird ein Testfailover durchgeführt, um sicherzustellen, dass alles funktioniert, und anschließend wird ein vollständiges Failover für die Migration der VMs zu Azure ausgeführt.
 
 ## <a name="step-1-prepare-azure-for-the-site-recovery-service"></a>Schritt 1: Vorbereiten von Azure für den Site Recovery-Dienst
@@ -277,7 +276,7 @@ Nach der Einrichtung der Quelle und des Ziels können die Contoso-Administratore
 2. Es werden die Standardeinstellungen verwendet:
     - **RPO-Schwellenwert:** Standardwert von 60 Minuten. Mit diesem Wert wird festgelegt, wie oft Wiederherstellungspunkte erstellt werden. Wenn dieser Grenzwert bei der fortlaufenden Replikation überschritten wird, wird eine Warnung generiert.
     - **Aufbewahrung des Wiederherstellungspunkts:** Standardwert von 24 Stunden. Dieser Wert gibt den Aufbewahrungszeitraum für die einzelnen Wiederherstellungspunkte an. Replizierte VMs können für jeden Punkt eines Zeitfensters wiederhergestellt werden.
-    - **Häufigkeit für App-konsistente Momentaufnahmen:** Der Standardwert ist eine Stunde. Dieser Wert gibt die Häufigkeit an, mit der anwendungskonsistente Momentaufnahmen erstellt werden.
+    - **App-konsistente Momentaufnahmenhäufigkeit:** Der Standardwert ist eine Stunde. Dieser Wert gibt die Häufigkeit an, mit der anwendungskonsistente Momentaufnahmen erstellt werden.
 
         ![Erstellen einer Replikationsrichtlinie](./media/contoso-migration-rehost-linux-vm-mysql/replication-policy.png)
 
@@ -370,7 +369,7 @@ Um den virtuellen Computer zu migrieren, erstellen die Contoso-Administratoren e
 
     ![Wiederherstellungsplan](./media/contoso-migration-rehost-linux-vm-mysql/recovery-plan.png)
 
-2. Das Unternehmen führt ein Failover für den Plan aus. Die Verantwortlichen bei Contoso entscheiden, ein Failover für den letzten Wiederherstellungspunkt auszuführen. Zudem gibt das Unternehmen an, dass Site Recovery versuchen sollte, die lokale VM vor dem Auslösen des Failovers herunterzufahren. Der Fortschritt des Failovers wird auf der Seite **Aufträge** angezeigt.
+2. Das Unternehmen führt ein Failover für den Plan aus. Es entscheidet, ein Failover für den letzten Wiederherstellungspunkt auszuführen. Zudem gibt das Unternehmen an, dass Site Recovery versuchen sollte, die lokale VM vor dem Auslösen des Failovers herunterzufahren. Der Fortschritt des Failovers wird auf der Seite **Aufträge** angezeigt.
 
     ![Failover](./media/contoso-migration-rehost-linux-vm-mysql/failover1.png)
 

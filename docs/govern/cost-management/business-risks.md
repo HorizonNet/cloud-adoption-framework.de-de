@@ -1,6 +1,5 @@
 ---
 title: 'Kostenverwaltung: Motivationen und Geschäftsrisiken'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Kostenverwaltung: Motivationen und Geschäftsrisiken'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 49fcfb3558da82e34f33f54c4e36780606b1e47d
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 16408b01e06e29fc2697dbbdd053126d026920f0
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753253"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806508"
 ---
 # <a name="cost-management-motivations-and-business-risks"></a>Kostenverwaltung: Motivationen und Geschäftsrisiken
 
@@ -32,7 +31,7 @@ Die Cloud bietet Self-Service-Funktionen, die in herkömmlichen lokalen Rechenze
 
 ## <a name="business-risk"></a>Geschäftsrisiken
 
-Mit der Disziplin „Kostenverwaltung“ wird versucht, die wichtigsten Geschäftsrisiken im Zusammenhang mit den Kosten für das Hosting von cloudbasierten Workloads anzugehen. Arbeiten Sie mit Ihrem Unternehmen zusammen, um diese Risiken zu identifizieren und auf Relevanz zu überwachen, um sie bei der Planung und Implementierung Ihrer Cloudbereitstellungen zu berücksichtigen.
+Mit der Disziplin „Kostenmanagement“ wird versucht, die wichtigsten Geschäftsrisiken im Zusammenhang mit den Kosten für das Hosting von cloudbasierten Workloads anzugehen. Arbeiten Sie mit Ihrem Unternehmen zusammen, um diese Risiken zu identifizieren und auf Relevanz zu überwachen, um sie bei der Planung und Implementierung Ihrer Cloudbereitstellungen zu berücksichtigen.
 
 Die Risiken werden je nach Organisation unterschiedlich sein, aber die folgenden allgemeinen kostenbezogenen Risiken können als Ausgangspunkt für Diskussionen innerhalb Ihres Cloudgovernanceteams verwendet werden:
 

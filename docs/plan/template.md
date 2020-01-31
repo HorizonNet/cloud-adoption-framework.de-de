@@ -1,6 +1,5 @@
 ---
 title: Bereitstellen des Cloudeinführungsplans für Azure DevOps
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Bereitstellen der Vorlage für den Cloudeinführungsplan
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8860fe9f4c689d2d2072a3a494b42c58b532a524
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: a7e4dfda94b15a1e589ffadc9b13db57f4a70ef7
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160539"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800116"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Cloudeinführungsplan und Azure DevOps
 

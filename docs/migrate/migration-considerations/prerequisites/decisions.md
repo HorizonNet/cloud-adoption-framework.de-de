@@ -1,6 +1,5 @@
 ---
 title: Entscheidungen, die sich auf die Migration auswirken
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Wichtige Entscheidungen, die in Bezug auf den Migrationsprozess zu treffen sind
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6f809003c1181c925a5b86abfb162a6032614f53
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: aee856c1e9c0a509aecda8ad4d6cf642de0e0fe2
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74159855"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801476"
 ---
 # <a name="decisions-that-affect-migration"></a>Entscheidungen, die sich auf die Migration auswirken
 

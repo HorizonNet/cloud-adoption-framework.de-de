@@ -1,6 +1,5 @@
 ---
 title: Priorisierung und Definition von Workloads für einen Cloudeinführungsplan
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Priorisierung und Definition von Workloads für einen Cloudeinführungsplan
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8e58c0e95517d49e9c8685539407127880b5d090
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 78abd15ae06918e913f520d96b29e29f1a253856
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73240192"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799980"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Priorisierung und Definition von Workloads für einen Cloudeinführungsplan
 
@@ -64,7 +63,7 @@ Nachdem die anfänglichen Prioritäten definiert und die Workloads dem Plan hinz
 
 ### <a name="business-inputs"></a>Geschäftseingaben
 
-| Datenpunkt | BESCHREIBUNG | Eingabe |
+| Datenpunkt | Beschreibung | Eingabe |
 |---|---|---|
 | Workloadname | Wie wird diese Workload genannt? |         |
 | Workloadbeschreibung | Aufgabe der Workload in einem Satz |         |
@@ -75,15 +74,15 @@ Nachdem die anfänglichen Prioritäten definiert und die Workloads dem Plan hinz
 | Unternehmensteams | Welche Unternehmensteams werden von geschäftlichen Änderungen betroffen sein? |         |
 | Beteiligte im Unternehmen | Gibt es Führungskräfte, deren Bereich von Änderungen betroffen sein wird? |         |
 | Geschäftsergebnisse | Wie wird das Unternehmen den Erfolg dieser Maßnahme messen? |         |
-| metrics | Welche Metriken werden zum Nachverfolgen des Erfolgs verwendet? |         |
-| Compliance | Gibt es Complianceanforderungen von Drittanbietern für diese Workload? |         |
+| Metriken | Welche Metriken werden zum Nachverfolgen des Erfolgs verwendet? |         |
+| Kompatibilität | Gibt es Complianceanforderungen von Drittanbietern für diese Workload? |         |
 | Anwendungsbesitzer | Wer ist verantwortlich für die geschäftlichen Auswirkungen von Anwendungen, die dieser Workload zugeordnet sind? |         |
 | Vom Unternehmen ausgeschlossene Zeiträume | Lässt das Unternehmen zu bestimmten Zeiten keine Änderung zu? |         |
 | Geografische Regionen | Sind bestimmte geografische Regionen von diesem Workload betroffen? |         |
 
 ### <a name="technical-inputs"></a>Technische Eingaben
 
-| Datenpunkt | BESCHREIBUNG | Eingabe |
+| Datenpunkt | Beschreibung | Eingabe |
 |---|---|---|
 | Einführungsansatz | Ist diese Einführung ein Kandidat für Migration oder Innovation? |         |
 | Für die Anwendung Verantwortliche | Listen Sie die für Leistung und Verfügbarkeit dieses Workloads verantwortlichen Parteien auf. |         |
@@ -91,7 +90,7 @@ Nachdem die anfänglichen Prioritäten definiert und die Workloads dem Plan hinz
 | Wichtigkeit | Listen Sie die Wichtigkeit der aktuellen Anwendung auf. |         |
 | Datenklassifizierung | Listen Sie die Klassifizierung der Vertraulichkeit der Daten auf. |         |
 | Geografische Betriebsregionen | Listen Sie alle geografischen Regionen auf, in denen die Workload gehostet wird oder gehostet werden soll. |         |
-| ANWENDUNGEN | Geben Sie eine Anfangsliste oder die Anzahl der Anwendungen an, die in dieser Workload enthalten sind. |         |
+| Anwendungen | Geben Sie eine Anfangsliste oder die Anzahl der Anwendungen an, die in dieser Workload enthalten sind. |         |
 | VMs | Geben Sie eine Anfangsliste oder die Anzahl von VMs oder Servern an, die in der Workload enthalten sind. |         |
 | Datenquellen | Geben Sie eine Anfangsliste oder eine Anzahl von Datenquellen an, die in der Workload enthalten sind. |         |
 | Abhängigkeiten | Listen Sie alle Ressourcenabhängigkeiten auf, die nicht in der Workload enthalten sind. |         |

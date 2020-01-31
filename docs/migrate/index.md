@@ -1,6 +1,5 @@
 ---
 title: Cloudmigration
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Cloudmigration im Cloud Adoption Framework
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: a6e7cb52fdac7607765b32c5355c0f2df066538a
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 90a9c69b311f1d4687d2691af13c3b51a7b6f813
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566857"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802955"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Cloudmigration im Cloud Adoption Framework
 
@@ -160,7 +159,7 @@ Diese ersten Eingaben prägen den Migrationsbacklog. Die Ausgabe des Migrationsb
 **Migrationsprozess:** Jede Cloudmigrationsaktivität ist in einem der folgenden Prozesse enthalten, da sie sich auf den Migrationsbacklog bezieht.
 
 - **Bewerten:** Bewerten Sie eine bestehende Ressource, und erstellen Sie einen Plan für die Migration der Ressource.
-- **Migrieren:** Replizieren Sie die Funktionalität einer Ressource in der Cloud.
+- **Migration:** Replizieren Sie die Funktionalität einer Ressource in der Cloud.
 - **Optimieren:** Gleichen Sie Leistung, Kosten, Zugriff und Betriebskapazität einer Cloudressource aus.
 - **Sichern und Verwalten:** Stellen Sie sicher, dass ein Cloudressource für den laufenden Betrieb bereit ist.
 

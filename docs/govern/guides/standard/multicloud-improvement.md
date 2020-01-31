@@ -1,6 +1,5 @@
 ---
 title: 'Governanceleitfaden für Standardunternehmen: Multi-Cloud-Verbesserung'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Governanceleitfaden für Standardunternehmen: Multi-Cloud-Verbesserung'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 29f45afcb10b7d12df8392a8dd9d0d577414e59b
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 3952111d8e4c9bdc8c1920d72e763a56427bb397
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753067"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806151"
 ---
 # <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>Governanceleitfaden für Standardunternehmen: Multi-Cloud-Verbesserung
 
@@ -32,7 +31,7 @@ In der vorherigen Phase dieser Geschichte hatte das Unternehmen damit begonnen, 
 
 Seit diesem Zeitpunkt haben sich einige Dinge geändert, die sich auf die Governance auswirken:
 
-- Die Identitäten werden von einer lokalen Instanz von Active Directory gesteuert. Hybrididentitäten werden über die Replikation in Azure Active Directory umgesetzt.
+- Die Identität wird von einer lokalen Instanz von Active Directory kontrolliert. Hybrididentitäten werden über die Replikation in Azure Active Directory umgesetzt.
 - Der IT- oder Cloudbetrieb wird hauptsächlich von Azure Monitor und verwandten Automatisierungen verwaltet.
 - Notfallwiederherstellung und Geschäftskontinuität werden von Azure Vault-Instanzen kontrolliert.
 - Für die Überwachung von Sicherheitsverletzungen und Angriffen wird Azure Security Center genutzt.
@@ -45,7 +44,7 @@ Das Ziel ist die Integration des übernommenen Unternehmens in den bestehenden B
 
 ## <a name="changes-in-tangible-risks"></a>Änderungen bei konkreten Risiken
 
-**Kosten der Geschäftsübernahme:** Die Übernahme des neuen Unternehmens soll sich in ungefähr fünf Jahren amortisieren. Aufgrund der langsamen Rendite will der Vorstand die Anschaffungskosten so weit wie möglich kontrollieren. Es besteht das Risiko, dass es zu Konflikten zwischen Kostenkontrolle und technischer Integration kommt.
+**Kosten der Geschäftsübernahme:** Die Übernahme des neuen Unternehmens soll sich in ungefähr fünf Jahren amortisieren. Aufgrund der langsamen Rendite will der Vorstand die Anschaffungskosten so weit wie möglich kontrollieren. Es besteht die Gefahr von Konflikten zwischen Kostenkontrolle und technischer Integration.
 
 Dieses Unternehmensrisiko lässt sich auf einige technische Risiken erweitern:
 

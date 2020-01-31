@@ -1,6 +1,5 @@
 ---
 title: Erste Schritte mit dem Pfad für die Qualifikationsbereitschaft
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Erste Schritte mit dem Pfad für die Qualifikationsbereitschaft
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e025b46c99e36340afd777e06b3a493c9f65c5dd
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 88de7ae19e3853bf132b58d0c3cbeb16d278a28f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564214"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800150"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Erste Schritte mit dem Pfad für die Qualifikationsbereitschaft
 

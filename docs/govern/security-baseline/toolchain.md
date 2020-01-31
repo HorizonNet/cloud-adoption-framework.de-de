@@ -1,6 +1,5 @@
 ---
 title: Tools für Sicherheitsbaseline in Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Erläuterung der Tools zur Vereinfachung einer verbesserten Sicherheitsbaseline in Azure.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7f4062c08ef1c9fec72e515453e8acc8cedfc513
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 122e0774912fdc65cd9c8daff0bd48b679634868
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565910"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808803"
 ---
 # <a name="security-baseline-tools-in-azure"></a>Tools für Sicherheitsbaseline in Azure
 

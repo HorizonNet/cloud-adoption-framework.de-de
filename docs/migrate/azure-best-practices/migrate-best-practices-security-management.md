@@ -1,6 +1,5 @@
 ---
 title: Best Practices für die Sicherung und Verwaltung von zu Azure migrierten Workloads
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: In diesem Artikel finden Sie Best Practices zum Betreiben, Verwalten und Sichern Ihrer zu Azure migrierten Workloads.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e2fb2587b5e6e0914c6a9facc062d817a508897e
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: fd0d65910b3a62170ce1f0d50ae73af1d4c99899
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160052"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803839"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Best Practices für die Sicherung und Verwaltung von zu Azure migrierten Workloads
 
@@ -34,7 +33,7 @@ Nach der Migration besteht die wichtigste Aufgabe darin, die migrierten Workload
 - [Arbeit mit Protokollen](#best-practice-review-audit-and-security-logs): Überprüfen Sie Ihre Azure-Überwachungs- und -Sicherheitsprotokolle in regelmäßigen Abständen.
 - [Überprüfen anderer Sicherheitsfeatures](#best-practice-evaluate-other-security-features): Verstehen und bewerten Sie die erweiterten Sicherheitsfeatures, die Azure bietet.
 
-## <a name="best-practice-follow-azure-security-center-recommendations"></a>Best Practice: Befolgen der Azure Security Center-Empfehlungen
+## <a name="best-practice-follow-azure-security-center-recommendations"></a>Bewährte Methode: Befolgen der Azure Security Center-Empfehlungen
 
 Microsoft unternimmt alle Anstrengungen, um sicherzustellen, dass Azure-Mandantenadministratoren über alle notwendigen Informationen verfügen, um die richtigen Sicherheitsfeatures einzurichten, mit denen Ihre Workloads vor Angriffen geschützt werden. Azure Security Center bietet eine einheitliche Sicherheitsverwaltung. In Security Center können Sie Sicherheitsrichtlinien für Ihre Workloads anwenden, die Angriffsfläche für Bedrohungen verringern sowie Angriffe erkennen und darauf reagieren. Security Center analysiert Ressourcen und Konfigurationen für mehrere Azure-Mandanten und gibt Sicherheitsempfehlungen aus, wie z.B. zu folgenden Themen:
 
@@ -63,7 +62,7 @@ Zusätzlich zu Bewertungen und Empfehlungen stellt Azure Security Center weitere
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/security-center/security-center-adaptive-application) über das Anwenden von adaptiven Anwendungssteuerungen.
 - [Beginnen Sie](https://docs.microsoft.com/azure/security-center/security-center-file-integrity-monitoring) mit der Überwachung der Dateiintegrität.
 
-## <a name="best-practice-encrypt-data"></a>Best Practice: Verschlüsseln von Daten
+## <a name="best-practice-encrypt-data"></a>Bewährte Methode: Verschlüsseln von Daten
 
 Die Verschlüsselung ist ein wichtiger Bestandteil der Azure-Sicherheitsmaßnahmen. Indem Sie sicherstellen, dass die Verschlüsselung auf allen Ebenen aktiviert ist, können Sie verhindern, dass nicht autorisierte Parteien Zugriff auf vertrauliche Daten erhalten. Dies gilt für Daten während der Übertragung und für ruhende Daten.
 
@@ -99,7 +98,7 @@ Im Gegensatz zum IaaS-Konzept, bei dem Sie VMs und Infrastruktur selbst verwalte
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-azure-sql?view=sql-server-2017) über TDE für Features von Azure SQL-Datenbank.
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-byok-azure-sql) über TDE mit Bring Your Own Key.
 
-## <a name="best-practice-protect-vms-with-antimalware"></a>Best Practice: Schützen von VMs mit Antischadsoftware
+## <a name="best-practice-protect-vms-with-antimalware"></a>Bewährte Methode: Schützen von VMs mit Antischadsoftware
 
 Insbesondere ältere zu Azure migrierte VMs verfügen möglicherweise nicht über die richtige installierte Antischadsoftware. Azure bietet eine kostenlose Endpunktlösung, mit der Sie VMs vor Viren, Spyware und anderer Schadsoftware schützen können.
 
@@ -114,7 +113,7 @@ Insbesondere ältere zu Azure migrierte VMs verfügen möglicherweise nicht übe
 
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/security/azure-security-antimalware) über Microsoft-Antischadsoftware.
 
-## <a name="best-practice-secure-web-apps"></a>Best Practice: Sichern von Web-Apps
+## <a name="best-practice-secure-web-apps"></a>Bewährte Methode: Sichern von Web-Apps
 
 Bei migrierten Web-Apps können einige Probleme auftreten:
 
@@ -146,7 +145,7 @@ Azure stellt verschiedene Lösungen bereit:
 - [Erfahren Sie](https://docs.microsoft.com/azure/key-vault/tutorial-web-application-keyvault), wie Sie eine Web-App so konfigurieren, dass sie Geheimnisse aus Key Vault lesen kann.
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/application-gateway/waf-overview) über Web Application Firewall.
 
-## <a name="best-practice-review-subscriptions-and-resource-permissions"></a>Best Practice: Überprüfen von Abonnements und Ressourcenberechtigungen
+## <a name="best-practice-review-subscriptions-and-resource-permissions"></a>Bewährte Methode: Überprüfen von Abonnements und Ressourcenberechtigungen
 
 Wenn Sie Ihre Workloads migrieren und in Azure ausführen, können Mitarbeiter mit Workloadzugriff standortunabhängig arbeiten. Ihr Sicherheitsteam sollte den Zugriff auf Ihre Azure-Mandanten und -Ressourcengruppen in regelmäßigen Abständen überprüfen. Azure bietet Lösungen für die Identitätsverwaltung und die Sicherheit der Zugriffssteuerung (z. B. die rollenbasierte Zugriffssteuerung), um Berechtigungen für den Zugriff auf Azure-Ressourcen zu autorisieren.
 
@@ -164,7 +163,7 @@ Wenn Sie Ihre Workloads migrieren und in Azure ausführen, können Mitarbeiter m
 - [Erfahren Sie](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal), wie Sie den Zugriff über die rollenbasierte Zugriffssteuerung und das Azure-Portal verwalten.
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/role-based-access-control/custom-roles) über benutzerdefinierte Rollen.
 
-## <a name="best-practice-review-audit-and-security-logs"></a>Best Practice: Überprüfen von Überwachungs- und Sicherheitsprotokollen
+## <a name="best-practice-review-audit-and-security-logs"></a>Bewährte Methode: Überprüfen von Überwachungs- und Sicherheitsprotokollen
 
 Azure Active Directory (Azure AD) stellt Aktivitätsprotokolle bereit, die in Azure Monitor angezeigt werden. Die Protokolle erfassen die Vorgänge, die in Azure-Mandanten ausgeführt werden, und sie erfassen auch, wann und von wem sie ausgeführt werden.
 
@@ -181,7 +180,7 @@ Azure Active Directory (Azure AD) stellt Aktivitätsprotokolle bereit, die in A
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-activity-logs-azure-monitor) über Azure AD-Aktivitätsprotokolle in Azure Monitor.
 - [Erfahren Sie](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-audit-logs), wie Sie Aktivitätsberichte im Azure AD-Portal überwachen.
 
-## <a name="best-practice-evaluate-other-security-features"></a>Best Practice: Bewerten anderer Sicherheitsfeatures
+## <a name="best-practice-evaluate-other-security-features"></a>Bewährte Methode: Bewerten anderer Sicherheitsfeatures
 
 Azure bietet weitere Sicherheitsfunktionen, die erweiterte Sicherheitsoptionen bereitstellen. Einige dieser Best Practices erfordern Add-On-Lizenzen und Premium-Optionen.
 
@@ -204,7 +203,7 @@ In diesem Abschnitt empfehlen wir einige Best Practices für die Azure-Verwaltun
 - [Überwachen der Ressourcennutzung](#best-practice-monitor-resource-usage-and-performance): Ermöglichen Sie die Diagnoseprotokollierung für Azure-Ressourcen, erstellen Sie Warnungen und Playbooks für die proaktive Problembehandlung, und verwenden Sie das Azure-Dashboard, um eine einheitliche Ansicht der Integrität und des Status Ihrer Bereitstellung zu erhalten.
 - [Verwalten von Support und Updates](#best-practice-manage-updates): Erfahren Sie mehr über Ihren Azure-Supportplan und wie Sie ihn implementieren, profitieren Sie von Best Practices zur Aktualisierung Ihrer virtuellen Computer, und richten Sie Prozesse für das Change Management ein.
 
-## <a name="best-practice-name-resource-groups"></a>Best Practice: Benennen von Ressourcengruppen
+## <a name="best-practice-name-resource-groups"></a>Bewährte Methode: Benennen von Ressourcengruppen
 
 Mit aussagekräftigen Namen für Ihre Ressourcengruppen, die Administratoren und Mitglieder des Supportteams einfach erkennen und auffinden können, verbessern Sie die Produktivität und Effizienz erheblich.
 
@@ -218,7 +217,7 @@ Mit aussagekräftigen Namen für Ihre Ressourcengruppen, die Administratoren und
 
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) über Namenskonventionen.
 
-## <a name="best-practice-implement-delete-locks-for-resource-groups"></a>Best Practice: Implementieren von Sperren für Ressourcengruppen
+## <a name="best-practice-implement-delete-locks-for-resource-groups"></a>Bewährte Methode: Implementieren von Sperren für Ressourcengruppen
 
 Niemand möchte, dass eine Ressourcengruppe verschwindet, weil sie versehentlich gelöscht wurde. Wir empfehlen die Implementierung von Löschsperren, um dies zu verhindern.
 
@@ -229,7 +228,7 @@ Niemand möchte, dass eine Ressourcengruppe verschwindet, weil sie versehentlich
 
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources) über das Sperren von Ressourcen, um unerwartete Änderungen zu verhindern.
 
-## <a name="best-practice-understand-resource-access-permissions"></a>Best Practice: Verstehen der Berechtigungen für den Ressourcenzugriff
+## <a name="best-practice-understand-resource-access-permissions"></a>Bewährte Methode: Verstehen der Berechtigungen für den Ressourcenzugriff
 
 Ein Abonnementbesitzer hat Zugriff auf alle Ressourcengruppen und Ressourcen in Ihrem Abonnement.
 
@@ -242,7 +241,7 @@ Ein Abonnementbesitzer hat Zugriff auf alle Ressourcengruppen und Ressourcen in 
 
 - [Erfahren Sie mehr](https://azure.microsoft.com/blog/organizing-subscriptions-and-resource-groups-within-the-enterprise) über das Organisieren von Abonnements und Ressourcengruppen.
 
-## <a name="best-practice-tag-resources-effectively"></a>Best Practice: Effektives Markieren von Ressourcen
+## <a name="best-practice-tag-resources-effectively"></a>Bewährte Methode: Effektives Markieren von Ressourcen
 
 Häufig bietet die Verwendung nur eines Ressourcengruppenamens für Ressourcen nicht genügend Metadaten für die effektive Implementierung von Mechanismen wie die interne Abrechnung oder die Verwaltung innerhalb eines Abonnements.
 
@@ -260,7 +259,7 @@ Häufig bietet die Verwendung nur eines Ressourcengruppenamens für Ressourcen n
 - [Sehen Sie sich](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags#powershell) PowerShell- und CLI-Beispiele für das Einrichten von Tags und das Anwenden von Tags von einer Ressourcengruppe auf die zugehörigen Ressourcen an.
 - [Lesen](https://www.azurefieldnotes.com/2016/07/18/azure-resource-tagging-best-practices) Sie Best Practices zum Markieren in Azure.
 
-## <a name="best-practice-implement-blueprints"></a>Best Practice: Implementieren von Blaupausen
+## <a name="best-practice-implement-blueprints"></a>Bewährte Methode: Implementieren von Blaupausen
 
 Genau wie eine Blaupause, mit der Ingenieure oder Architekten die Entwurfsparameter für ein Projekt skizzieren, ermöglicht es der Azure Blueprints-Dienst Cloudarchitekten und zentralen IT-Gruppen, eine wiederholbare Gruppe von Azure-Ressourcen zu definieren, mit der die Standards, Muster und Anforderungen einer Organisation implementiert und durchgesetzt werden. Mit Azure Blueprints können Entwicklungsteams schnell neue Umgebungen erstellen und bereitstellen, die die Konformitätsanforderungen der Organisation erfüllen und über eine Reihe integrierter Komponenten (z. B. Netzwerk) zur Beschleunigung der Entwicklung und Bereitstellung verfügen.
 
@@ -272,7 +271,7 @@ Genau wie eine Blaupause, mit der Ingenieure oder Architekten die Entwurfsparame
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/governance/blueprints/overview) über Blaupausen.
 - [Sehen Sie sich](https://azure.microsoft.com/blog/customizing-azure-blueprints-to-accelerate-ai-in-healthcare) das Beispiel einer Blaupause an, die für eine beschleunigte Einführung von KI im Gesundheitswesen verwendet werden kann.
 
-## <a name="best-practice-review-azure-reference-architectures"></a>Best Practice: Überprüfen von Referenzarchitekturen
+## <a name="best-practice-review-azure-reference-architectures"></a>Bewährte Methode: Überprüfen von Referenzarchitekturen
 
 Das Erstellen sicherer, skalierbarer und verwaltbarer Workloads in Azure kann eine große Herausforderung sein. Angesichts fortlaufender Änderungen kann es schwierig sein, bei verschiedenen Features auf dem Laufenden zu bleiben, um eine optimale Umgebung sicherzustellen. Beim Entwerfen und Migrieren Ihrer Workloads kann es nützlich sein, über eine Referenz zu verfügen, aus der Sie nützliche Informationen erhalten können. Azure und die Azure-Partner haben verschiedene Referenzarchitekturen als Muster für verschiedene Arten von Umgebungen erstellt. Diese Muster bieten Anregungen, aus denen Sie lernen und auf denen Sie aufbauen können.
 
@@ -284,7 +283,7 @@ Die Azure App Service-Umgebung stellt eine vollständig isolierte und dedizierte
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/architecture/reference-architectures) über Azure-Referenzarchitekturen.
 - [Sehen Sie sich ](https://docs.microsoft.com/azure/architecture/example-scenario)Azure-Beispielszenarien an.
 
-## <a name="best-practice-manage-resources-with-azure-management-groups"></a>Best Practice: Verwalten von Ressourcen mit Azure-Verwaltungsgruppen
+## <a name="best-practice-manage-resources-with-azure-management-groups"></a>Bewährte Methode: Verwalten von Ressourcen mit Azure-Verwaltungsgruppen
 
 Wenn Ihre Organisation über mehrere Abonnements verfügt, müssen Sie Zugriff, Richtlinien und Konformität für diese Abonnements verwalten. Azure-Verwaltungsgruppen stellen einen abonnementübergreifenden Bereich dar.
 
@@ -303,7 +302,7 @@ Das folgende Diagramm zeigt ein Beispiel zum Erstellen einer Hierarchie für die
 
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/governance/management-groups/index) über das Organisieren von Ressourcen in Verwaltungsgruppen.
 
-## <a name="best-practice-deploy-azure-policy"></a>Best Practice: Bereitstellen von Azure Policy
+## <a name="best-practice-deploy-azure-policy"></a>Bewährte Methode: Bereitstellen von Azure Policy
 
 Azure Policy ist ein Dienst in Azure, mit dem Sie Richtlinien erstellen, zuweisen und verwalten können.
 
@@ -320,7 +319,7 @@ Azure Policy ist ein Dienst in Azure, mit dem Sie Richtlinien erstellen, zuweise
 - [Erhalten Sie](https://docs.microsoft.com/azure/governance/policy/overview) einen Überblick über Azure Policy.
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/governance/policy/tutorials/create-and-manage) über das Erstellen und Verwalten von Richtlinien zum Durchsetzen der Konformität.
 
-## <a name="best-practice-implement-a-bcdr-strategy"></a>Best Practice: Implementieren einer BCDR-Strategie
+## <a name="best-practice-implement-a-bcdr-strategy"></a>Bewährte Methode: Implementieren einer BCDR-Strategie
 
 Die Planung von Business Continuity & Disaster Recovery (BCDR) ist eine wichtige Aufgabe, die Sie bei der Planung der Migration zu Azure durchführen sollten. Rechtlich gesehen enthalten Ihre Verträge möglicherweise eine Klausel zu höherer Gewalt, die Sie bei unabwendbaren Ereignissen wie Wirbelstürmen oder Erdbeben von Verpflichtungen entbindet. Sie haben jedoch auch Verpflichtungen in der Hinsicht, dass Sie die Ausführung und bei Bedarf die Wiederherstellung von Diensten in einem Notfall sicherstellen müssen. Die Fähigkeit, diese Verpflichtungen zu erfüllen, kann über die Zukunft Ihres Unternehmens entscheiden.
 
@@ -404,7 +403,7 @@ Site Recovery repliziert VMs von einer primären in eine sekundäre Azure-Region
 - [Sehen Sie sich](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-disaster-recovery-guidance) Notfallwiederherstellungsszenarien für Azure-VMs an.
 - [Erfahren Sie](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-replicate-after-migration), wie Sie die Notfallwiederherstellung für eine Azure-VM nach der Migration einrichten.
 
-## <a name="best-practice-use-managed-disks-and-availability-sets"></a>Best Practice: Verwenden von verwalteten Datenträgern und Verfügbarkeitsgruppen
+## <a name="best-practice-use-managed-disks-and-availability-sets"></a>Bewährte Methode: Verwenden von verwalteten Datenträgern und Verfügbarkeitsgruppen
 
 Azure verwendet Verfügbarkeitsgruppen, um VMs logisch zusammenzufassen und in einer Gruppe von anderen Ressourcen zu isolieren. VMs in einer Verfügbarkeitsgruppe sind zum Schutz bei lokalen Ausfällen auf mehrere Fehlerdomänen mit separaten Subsystemen verteilt. VMs sind ebenfalls auf mehrere Updatedomänen verteilt, sodass nicht alle VMs in einer Gruppe gleichzeitig neu gestartet werden.
 
@@ -423,7 +422,7 @@ Verwaltete Azure-Datenträger vereinfachen die Datenträgerverwaltung für Azure
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/virtual-machines/windows/convert-unmanaged-to-managed-disks) über das Konvertieren von Datenträgern in verwaltete Datenträger.
 - [Erfahren Sie](https://docs.microsoft.com/azure/virtual-machines/windows/manage-availability), wie Sie die Verfügbarkeit virtueller Windows-Computer in Azure verwalten.
 
-## <a name="best-practice-monitor-resource-usage-and-performance"></a>Best Practice: Überwachen der Ressourcennutzung und -leistung
+## <a name="best-practice-monitor-resource-usage-and-performance"></a>Bewährte Methode: Überwachen der Ressourcennutzung und -leistung
 
 Sie haben Ihre Workloads möglicherweise aufgrund der enormen Skalierungsfunktionen nach Azure verlagert. Die Verlagerung allein bedeutet jedoch nicht, dass Azure ohne Eingaben Ihrerseits automatisch eine Skalierung implementiert. Beispiel:
 
@@ -445,7 +444,7 @@ Für diese beiden Fälle gibt es unterschiedliche Lösungen, aber Sie müssen in
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/architecture/best-practices/auto-scaling) über die automatische Skalierung.
 - [Erfahren Sie](https://docs.microsoft.com/azure/security-center/security-center-export-data-to-siem), wie Sie Azure-Daten an ein SIEM-Tool weiterleiten.
 
-## <a name="best-practice-enable-diagnostic-logging"></a>Best Practice: Aktivieren der Diagnoseprotokollierung
+## <a name="best-practice-enable-diagnostic-logging"></a>Bewährte Methode: Aktivieren der Diagnoseprotokollierung
 
 Azure-Ressourcen generieren recht viele Protokollierungsmetrik- und Telemetriedaten.
 
@@ -461,7 +460,7 @@ Azure-Ressourcen generieren recht viele Protokollierungsmetrik- und Telemetrieda
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs) über das Erfassen und Nutzen von Protokolldaten.
 - [Erfahren Sie](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-diagnostic-logs-schema), was für die Diagnoseprotokollierung unterstützt wird.
 
-## <a name="best-practice-set-up-alerts-and-playbooks"></a>Best Practice: Einrichten von Warnungen und Playbooks
+## <a name="best-practice-set-up-alerts-and-playbooks"></a>Bewährte Methode: Einrichten von Warnungen und Playbooks
 
 Wenn die Diagnoseprotokollierung für Azure-Ressourcen aktiviert ist, können Sie damit beginnen, Protokollierungsdaten zu verwenden, um benutzerdefinierte Warnungen zu erstellen.
 
@@ -478,7 +477,7 @@ Wenn die Diagnoseprotokollierung für Azure-Ressourcen aktiviert ist, können Si
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-alerts) über Warnungen.
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/security-center/security-center-playbooks) über Sicherheitsplaybooks, die auf Security Center-Warnungen reagieren.
 
-## <a name="best-practice-use-the-azure-dashboard"></a>Best Practice: Verwenden des Azure-Dashboards
+## <a name="best-practice-use-the-azure-dashboard"></a>Bewährte Methode: Verwenden des Azure-Dashboards
 
 Das Azure-Portal ist eine webbasierte einheitliche Konsole zum Erstellen, Verwalten und Überwachen aller Komponenten – von einfachen Web-Apps bis hin zu komplexen Cloudanwendungen. Es enthält ein anpassbares Dashboard und Optionen für Barrierefreiheit.
 
@@ -493,7 +492,7 @@ Das Azure-Portal ist eine webbasierte einheitliche Konsole zum Erstellen, Verwal
 - [Erfahren Sie](https://docs.microsoft.com/azure/azure-portal/azure-portal-dashboards), wie Sie ein Dashboard erstellen.
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/azure-portal/azure-portal-dashboards-structure) über die Dashboardstruktur.
 
-## <a name="best-practice-understand-support-plans"></a>Best Practice: Verstehen der Supportpläne
+## <a name="best-practice-understand-support-plans"></a>Bewährte Methode: Verstehen der Supportpläne
 
 Sie müssen zu einem bestimmten Zeitpunkt mit Ihrem Supportteam oder den Microsoft-Supportmitarbeitern zusammenarbeiten. Es ist von entscheidender Bedeutung, eine Reihe von Richtlinien und Verfahren für den Support in Szenarien wie z.B. einer Notfallwiederherstellung einzurichten. Darüber hinaus müssen Ihre Administratoren und Supportmitarbeiter in der Implementierung dieser Richtlinien geschult sein.
 
@@ -508,7 +507,7 @@ Sie müssen zu einem bestimmten Zeitpunkt mit Ihrem Supportteam oder den Microso
 - [Verschaffen Sie sich einen Überblick](https://azure.microsoft.com/support/options) über Azure-Supportpläne.
 - [Erfahren Sie mehr](https://azure.microsoft.com/support/legal/sla) über Vereinbarungen zum Servicelevel.
 
-## <a name="best-practice-manage-updates"></a>Best Practice: Verwalten von Updates
+## <a name="best-practice-manage-updates"></a>Bewährte Methode: Verwalten von Updates
 
 Azure-VMs immer mit den neuesten Betriebssystem- und Softwareupdates auf dem neuesten Stand zu halten, ist eine gewaltige Aufgabe. Die Fähigkeit, alle VMs zu ermitteln, herauszufinden, welche Updates erforderlich sind, und diese Updates automatisch aufzuspielen, ist extrem wertvoll.
 

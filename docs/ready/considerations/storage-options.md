@@ -1,6 +1,5 @@
 ---
 title: Überprüfen Ihrer Speicheroptionen
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Überprüfen Sie Ihre Speicheroptionen für Azure-Workloads.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 37b99c367df1e77bcd32223d5d8a8ac8e1ee20d1
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: d6e15d465982c02e34ce1bbc89bd2289297d402a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73561729"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799028"
 ---
 # <a name="review-your-storage-options"></a>Überprüfen Ihrer Speicheroptionen
 

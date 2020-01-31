@@ -1,6 +1,5 @@
 ---
 title: Metriken, Indikatoren und Risikotoleranz für die Identitätsbaseline
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Metriken, Indikatoren und Risikotoleranz für die Identitätsbaseline
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: bf929fe5f1addbb27da77b865dfbdc71253c62a3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: f5002d278e833873a2077538c848bc5e7f47131d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71220431"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806032"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>Metriken, Indikatoren und Risikotoleranz für die Identitätsbaseline
 
 Dieser Artikel unterstützt Sie bei der Quantifizierung der Geschäftsrisikotoleranz im Zusammenhang mit der Identitätsbaseline. Das Definieren von Metriken und Indikatoren ermöglicht das Erstellen eines Geschäftsszenarios, mit dem Sie in die Weiterentwicklung der Disziplin „Identitätsbaseline“ investieren können.
 
-## <a name="metrics"></a>metrics
+## <a name="metrics"></a>Metriken
 
 Die Identitätsbaseline legt den Schwerpunkt auf das Identifizieren, Authentifizieren und Autorisieren von Personen, Benutzergruppen oder automatisierten Prozessen und bietet ihnen den entsprechenden Zugriff auf Ressourcen in Ihren Cloudbereitstellungen. Im Rahmen der Risikoanalyse sollten Sie Daten zu Ihren Identitätsdiensten sammeln, um zu ermitteln, welches Risiko vorliegt und wie wichtig Investitionen in die Governance der Identitätsbaseline für Ihre geplanten Cloudbereitstellungen ist.
 

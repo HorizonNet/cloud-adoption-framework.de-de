@@ -1,6 +1,5 @@
 ---
 title: 'Governanceleitfaden für Standardunternehmen: Beschreibung der bewährten Methoden'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: In diesem Artikel werden die bewährten Methoden für Governance in Standardunternehmen erläutert.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0f7a6b76ba348414b4aed7b40aaffa4867e62c02
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 1705310a335e3fd5aab622b401a6067e8af6d133
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547489"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806797"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>Governanceleitfaden für Standardunternehmen: Beschreibung der bewährten Methoden
 
@@ -73,7 +72,7 @@ Entscheidungen zur Ressourcenkonsistenz bestimmen die Tools, Prozesse und Aufgab
 
 ### <a name="resource-tagging"></a>Tags für Ressourcen
 
-Entscheidungen zur Ressourcenkennzeichnung bestimmen, wie Metadaten innerhalb eines Abonnements auf Azure-Ressourcen angewendet werden, um Prozesse, Verwaltung und Buchhaltung zu unterstützen. Im vorliegenden Beispielfall wurde das Muster **[Klassifizierung](../../../decision-guides/resource-tagging/index.md#resource-tagging-patterns)** als Modell für die Ressourcenkennzeichnung ausgewählt.
+Entscheidungen zur Ressourcenkennzeichnung bestimmen, wie Metadaten innerhalb eines Abonnements auf Azure-Ressourcen angewandt werden, um Prozesse, Verwaltung und Buchhaltung zu unterstützen. Im vorliegenden Beispielfall wurde das Muster **[Klassifizierung](../../../decision-guides/resource-tagging/index.md#resource-tagging-patterns)** als Modell für die Ressourcenkennzeichnung ausgewählt.
 
 - Bereitgestellte Ressourcen sollten mit Folgendem gekennzeichnet werden:
   - Datenklassifizierung

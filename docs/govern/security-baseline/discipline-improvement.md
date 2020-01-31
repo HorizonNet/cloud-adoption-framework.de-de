@@ -1,6 +1,5 @@
 ---
 title: Verbesserung der Disziplin „Sicherheitsbaseline“
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Verbesserung der Disziplin „Sicherheitsbaseline“
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fc7a6bf6553ebc9679aee63a07d6ef3bca847c3a
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 316a848e0f9f3f90a2f7badde3166733dce4a4c0
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221724"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808905"
 ---
 # <a name="security-baseline-discipline-improvement"></a>Verbesserung der Disziplin „Sicherheitsbaseline“
 
 Die Disziplin „Sicherheitsbaseline“ konzentriert sich auf Möglichkeiten zum Festlegen von Richtlinien, die das Netzwerk, Ressourcen und vor allem die Daten schützen, die sich in der Lösung eines Cloudanbieters befinden werden. Innerhalb der fünf Disziplinen von Cloud Governance umfasst „Sicherheitsbaseline“ die Klassifizierung des digitalen Bestands und der Daten. Darüber hinaus sind die Dokumentation zu Risiken, Geschäftstoleranz und Lösungsstrategien in Zusammenhang mit der Sicherheit von Daten, Ressourcen und Netzwerk enthalten. Aus technischer Sicht umfasst dies auch die Beteiligung an Entscheidungen in Bezug auf [Verschlüsselung](../../decision-guides/encryption/index.md), [Netzwerkanforderungen](../../decision-guides/software-defined-network/index.md), [Hybrididentitätsstrategien](../../decision-guides/identity/index.md) und [Prozesse](./compliance-processes.md) zur Entwicklung von Richtlinien für die Cloudsicherheitsbaseline.
 
-Dieser Artikel beschreibt einige potenzielle Aufgaben, die Ihr Unternehmen ausführen kann, um die Disziplin „Sicherheitsbaseline“ besser erstellen und weiterentwickeln zu können. Diese Aufgaben lassen sich in verschiedene Phasen der Implementierung einer Cloudlösung unterteilen: Planung, Erstellung, Übernahme und Betrieb. Diese Phasen werden dann durchlaufen und ermöglichen die Entwicklung eines [inkrementellen Ansatzes für Cloud Governance](../guides/index.md#an-incremental-approach-to-cloud-governance).
+Dieser Artikel beschreibt einige potenzielle Aufgaben, die Ihr Unternehmen ausführen kann, um die Disziplin „Sicherheitsbaseline“ besser erstellen und weiterentwickeln zu können. Diese Aufgaben lassen sich in verschiedene Phasen der Implementierung einer Cloudlösung unterteilen: Planung, Erstellung, Einführung und Betrieb. Diese Phasen werden dann durchlaufen und ermöglichen die Entwicklung eines [inkrementellen Ansatzes für die Cloudgovernance](../guides/index.md#an-incremental-approach-to-cloud-governance).
 
 ![Vier Phasen der Einführung](../../_images/govern/adoption-phases.png)
 
@@ -35,14 +34,14 @@ Es ist unmöglich, die Anforderungen aller Unternehmen in einem einzigen Dokumen
 
 Diese Entwicklungsphase der Governance überbrückt die Lücke zwischen Geschäftsergebnissen und umsetzbaren Strategien. Während dieses Prozesses definiert das Führungsteam bestimmte Metriken, ordnet diese Metriken dem digitalen Bestand zu und beginnt mit der Planung der gesamten Migration.
 
-**Mindestens empfohlene Aktivitäten**:
+**Mindestens empfohlene Aktivitäten:**
 
 - Bewerten Ihrer Optionen für die [Sicherheitsbaseline-Toolkette](./toolchain.md).
 - Entwerfen Sie ein Dokument mit Architekturrichtlinien, und geben Sie dieses an die wichtigsten Beteiligten weiter.
 - Schulen und beteiligen Sie die Personen und Teams, die von diesen Architekturrichtlinien betroffen sind.
 - Fügen Sie priorisierte Sicherheitsaufgaben Ihrem Migrationsbacklog hinzu.
 
-**Potenzielle Aktivitäten**:
+**Potenzielle Aktivitäten:**
 
 - Definieren Sie ein Datenklassifizierungsschema.
 - Führen Sie einen Planungsprozess für digitalen Bestand durch, um die aktuellen IT-Ressourcen zu inventarisieren, die Ihren Geschäftsprozessen und unterstützenden Vorgängen zugrunde liegen.
@@ -64,9 +63,9 @@ Für die erfolgreiche Migration einer Umgebung muss eine Reihe von technischen u
 - Implementieren Sie Ihre [Sicherheitsbaseline-Toolkette](./toolchain.md) in einer Phase vor der Bereitstellung.
 - Aktualisieren Sie das Dokument mit Architekturrichtlinien, und geben Sie dieses an die wichtigsten Beteiligten weiter.
 - Implementieren Sie Sicherheitsaufgaben in Ihrem priorisierten Migrationsbacklog.
-- Entwickeln Sie Schulungsmaterialien und Dokumentation, Materialien zum Bekanntmachen der Migration, Incentives und weitere Programme, um die Akzeptanz durch Benutzer zu unterstützen.
+- Entwickeln Sie Schulungsmaterialien und Dokumentation, Materialien zum Bekanntmachen der Migration, Incentives und weitere Programme, um die Akzeptanz durch die Benutzer zu unterstützen.
 
-**Potenzielle Aktivitäten**:
+**Potenzielle Aktivitäten:**
 
 - Bestimmen Sie die [Verschlüsselungsstrategie](../../decision-guides/encryption/index.md) Ihrer Organisation für in der Cloud gehostete Daten.
 - Bewerten Sie die [Identitätsstrategie](../../decision-guides/identity/index.md) Ihrer Cloudbereitstellung. Bestimmen Sie, wie Ihre cloudbasierte Identitätslösung mit lokalen Identitätsanbietern koexistieren oder in diese integriert werden kann.
@@ -76,7 +75,7 @@ Für die erfolgreiche Migration einer Umgebung muss eine Reihe von technischen u
 - Automatisieren Sie [Sicherheitsrichtlinien](../../decision-guides/policy-enforcement/index.md), wo dies möglich ist.
 - Überprüfen Sie Ihre Richtlinie für die Sicherheitsbaseline, und bestimmen Sie, ob Sie Ihre Pläne gemäß den Anleitungen für Best Practices, wie sie z.B. im [Security Development Lifecycle](https://www.microsoft.com/securityengineering/sdl) angegeben sind, ändern müssen.
 
-## <a name="adopt-and-migrate"></a>Übernehmen und Migrieren
+## <a name="adopt-and-migrate"></a>Einführen und Migrieren
 
 Migration ist ein inkrementeller Prozess, bei dem der Schwerpunkt auf der Verlagerung, dem Testen und der Übernahme von Anwendungen oder Workloads in einem vorhandenen digitalen Bestand liegt.
 
@@ -107,7 +106,7 @@ Nachdem die Transformation abgeschlossen ist, müssen Governance und Betrieb wä
 - Optimieren Sie die Architekturrichtlinien, um zukünftige Übernahmeprozesse zu unterstützen.
 - Informieren und schulen Sie die betroffenen Teams regelmäßig, um die kontinuierliche Einhaltung der Architekturrichtlinien sicherzustellen.
 
-**Potenzielle Aktivitäten**:
+**Potenzielle Aktivitäten:**
 
 - Ermitteln Sie Muster und Verhalten für Ihre Workloads, und konfigurieren Sie Ihre Überwachungs- und Berichtstools, um ungewöhnliche Aktivitäten, Zugriffe oder Ressourcennutzung zu identifizieren und darüber zu informieren.
 - Aktualisieren Sie kontinuierlich Ihre Richtlinien für die Überwachung und Berichterstellung, um die neuesten Sicherheitsrisiken, Exploits und Angriffe zu erkennen.

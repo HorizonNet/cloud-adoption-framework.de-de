@@ -1,6 +1,5 @@
 ---
 title: Governance-Entwurf für eine einfache Workload
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Leitfaden zur Konfiguration von Kontrollfunktionen in Bezug auf Azure-Governance, um Benutzern die Bereitstellung einer einfachen Workload zu ermöglichen.
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 116119530ba5cedcdad836b219b43f23f74d9afc
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: a1edb7395751f8a91899fc8ef88f53bc056914ac
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566015"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803856"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>Governance-Entwurf für eine einfache Workload
 

@@ -1,6 +1,5 @@
 ---
 title: Einführung in den Leitfaden zur Azure-Migration
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Anhand einer Schritt-für-Schritt-Anleitung wird beschrieben, wie Sie die Dienste Ihres Unternehmens effizient zu Azure migrieren.
 author: matticusau
 ms.author: mlavery
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9f27c7fca9a9a5bd2f5c38f78b8db2092b24d014
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 6f5592c93bb78b14a85e37ffa67ffea697a12345
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251485"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807035"
 ---
 ::: zone target="docs"
 

@@ -1,6 +1,5 @@
 ---
 title: Mehrere Rechenzentren
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Mehrere Rechenzentren
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b2491d349628d2c9640097ddd2c94b79505a0921
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 9156df0b76f6edf1d249d5d724e0a5d0f4fd8e15
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024788"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803074"
 ---
 # <a name="multiple-datacenters"></a>Mehrere Rechenzentren
 
@@ -53,7 +52,7 @@ Folgende Aktivitäten tragen in hohem Maß zum Erfolg einer Cloudmigration bei:
 - **Evaluieren von Netzwerkkonflikten**: Beim Konsolidieren von Rechenzentren zu einem einzelnen Cloudanbieter entstehen wahrscheinlich Konflikte hinsichtlich Netzwerk, DNS oder anderer Aspekte. Während der Migration ist es wichtig, Tests im Hinblick auf diese Konflikte durchzuführen, um Unterbrechungen in Produktionssystemen zu vermeiden, die in der Cloud gehostet werden.
 - **Aktualisieren von Routingtabellen**: Häufig sind beim Konsolidieren von Netzwerken oder Rechenzentren Änderungen an Routingtabellen erforderlich.
 
-## <a name="optimize-and-promote-process-changes"></a>Änderungen an Prozessen zum Optimieren und Höherstufen
+## <a name="optimize-and-promote-process-changes"></a>Änderungen am Prozess zum Optimieren und Höherstufen
 
 Während der Optimierung sind möglicherweise weitere Tests erforderlich.
 

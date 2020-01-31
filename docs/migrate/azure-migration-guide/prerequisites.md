@@ -1,6 +1,5 @@
 ---
 title: Voraussetzungen für die Migration zu Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Voraussetzungen für die Migration zu Azure
 author: matticusau
 ms.author: mlavery
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 93479cb16b25d40d2f49356b19c4722497bc19f4
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: 9baf2c9fdd307125e80fa77d8b2be54bec15b931
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251802"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806984"
 ---
 ::: zone target="chromeless"
 
@@ -38,16 +37,16 @@ Gründe für die Migration zu Azure sind die Beseitigung von Risiken im Zusammen
 - **Entfernen veralteter Hardware.** Möglicherweise werden in Ihrer Infrastruktur lokal oder bei einem Hostinganbieter Anwendungen gehostet, die sich dem Ende des Lebenszyklus oder des Supports nähern. Die Migration in die Cloud ist eine attraktive Lösung: Durch die Möglichkeit der Migration „in unverändertem Zustand“ kann Ihr Team die Herausforderung, den Infrastrukturlebenszyklus auf dem neuesten Stand zu halten, schnell lösen und sich dann auf die langfristige Planung des Anwendungslebenszyklus und die Optimierung in der Cloud konzentrieren.
 - **Ende des Supports für Software.** Möglicherweise verfügen Sie über Anwendungen, die von anderer Software oder von anderen Betriebssystemen abhängen, die sich dem Ende des Supports nähern. Indem Sie zu Azure wechseln, stehen möglicherweise erweiterte Supportoptionen für diese Abhängigkeiten oder andere Migrationsoptionen zur Verfügung, die den Refactoringbedarf für den zukünftigen Support Ihrer Anwendungen minimieren. Ein Beispiel finden Sie in den [erweiterten Supportoptionen für Windows Server 2008 und SQL Server 2008](https://azure.microsoft.com/blog/announcing-new-options-for-sql-server-2008-and-windows-server-2008-end-of-support).
 - **Reduzieren der Investitionskosten.** Das Hosting Ihrer eigenen Serverinfrastruktur erfordert erhebliche Investitionen in Hardware, Software, Strom und Personal. Die Migration zu einer Cloudlösung kann zu erheblichen Einsparungen bei den Investitionskosten führen. Um die besten Einsparungen bei den Investitionskosten zu erzielen, ist unter Umständen ein Redesign der Lösung erforderlich. Allerdings ist eine Migration „in unverändertem Zustand“ ein großartiger erster Schritt.
-- **Freigabe von Platz im Datencenter.** Sie können Azure wählen, um Ihre Datencenterkapazität zu erweitern. Eine Möglichkeit dazu besteht darin, die Cloud als Erweiterung Ihrer lokalen Funktionen zu nutzen.
-- **Schnelle Generierung von Rendite.** Die Erzielung von Rendite (ROI) ist mit Cloudlösungen viel einfacher, da das Cloudzahlungsmodell großartige Einblick in die Auslastung und einen Nährboden für die Generierung von Rendite bietet.
+- **Freigabe von Platz im Datencenter.** Vielleicht entscheiden Sie sich für Azure, weil Sie Ihre Datencenterkapazität erweitern möchten. Eine Möglichkeit dazu besteht darin, die Cloud als Erweiterung Ihrer lokalen Funktionen zu nutzen.
+- **Schnelle Generierung von Rendite.** Der Einsatz von Cloudlösungen macht das Erzielen hoher Erträge zum Kinderspiel, denn das Abrechnungsmodell bietet einen umfassenden Einblick in die Auslastung und fördert die für attraktive Renditen passende Kultur.
 
 Jedes der oben genannten Szenarien kann der Ausgangspunkt für die Erweiterung Ihres Cloudfootprints mit einer anderen Methodik (erneutes Hosten, Überarbeiten, Neuentwerfen, Neuerstellen oder Ersetzen) sein.
 
 ## <a name="migration-characteristics"></a>Migrationsmerkmale
 
-In diesem Leitfaden wird davon ausgegangen, dass Ihr digitaler Bestand vor der Migration hauptsächlich aus einer lokal gehosteten Infrastruktur besteht und gehostete geschäftskritische Anwendungen umfassen kann. Nach einer erfolgreichen Migration kann Ihr Datenbestand fast genauso aussehen, wie ihr lokaler Datenbestand, wobei die Infrastruktur jetzt aber in Cloudressourcen gehostet wird. Alternativ ist der ideale Datenbestand eine Variante Ihres aktuellen Datenbestands, da er Aspekte Ihrer lokalen Infrastruktur mit Komponenten aufweist, die zur Optimierung und Nutzung der Cloudplattform überarbeitet wurden.
+In diesem Leitfaden wird davon ausgegangen, dass Ihr digitaler Bestand vor der Migration hauptsächlich aus einer lokal gehosteten Infrastruktur besteht und gehostete geschäftskritische Anwendungen umfassen kann. Nach dem erfolgreichen Abschluss Ihrer Migration mag sich im Vergleich zur vorherigen lokalen Installation scheinbar gar nichts geändert haben; jetzt aber ist die gesamte Infrastruktur in Cloudressourcen gehostet. Alternativ ist der ideale Datenbestand eine Variante Ihres aktuellen Datenbestands, da er Aspekte Ihrer lokalen Infrastruktur mit Komponenten aufweist, die zur Optimierung und Nutzung der Cloudplattform überarbeitet wurden.
 
-Der Schwerpunkt dieser Migrationsreise liegt auf:
+Mit Ihrer Migrationsinitiative möchten Sie die folgenden Ziele umsetzen:
 
 - Beseitigung von Altgeräten am Ende ihrer Lebensdauer.
 - Verringerung der Investitionskosten.
@@ -94,7 +93,7 @@ Angenommen, Sie wählen einen Rehostingansatz für die Migration, dann sind auch
 > [!div class="checklist"]
 >
 > - **Governanceausrichtung:** Wurde ein Konsens über die Ausrichtung von Governance und Migrationsgrundlage erzielt?
-> - **Netzwerk**: Eine Netzwerkstrategie sollte ausgewählt und auf die Anforderungen hinsichtlich IT-Sicherheit ausgerichtet werden.
+> - **Netzwerk**: Eine Netzwerkstrategie muss ausgewählt werden, die sich an den Anforderungen der IT-Sicherheit orientiert.
 > - **Identität:** Eine Hybrididentitätsstrategie sollte auf die Anforderungen eines Identitätsverwaltungs- und Cloudeinführungsplans ausgerichtet werden.
 
 ::: zone target="docs"

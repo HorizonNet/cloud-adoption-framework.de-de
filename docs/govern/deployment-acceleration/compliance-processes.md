@@ -1,6 +1,5 @@
 ---
 title: Beschleunigung der Bereitstellung – Prozesse für die Richtlinienkonformität
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Beschleunigung der Bereitstellung – Prozesse für die Richtlinienkonformität
 author: alexbuckgit
 ms.author: abuck
@@ -9,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: de64b03c6c6113261426beed5de729eb6927a440
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 157f43baa7de8aabfcf3d3823caf962ac6bc2306
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566383"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806372"
 ---
 # <a name="deployment-acceleration-policy-compliance-processes"></a>Beschleunigung der Bereitstellung – Prozesse für die Richtlinienkonformität
 
 In diesem Artikel wird ein Ansatz für die Prozesse zur Einhaltung der Richtlinien beschrieben, welche die [Beschleunigung der Bereitstellung](./index.md) steuern. Eine wirkungsvolle Governance für die Cloudkonfiguration beginnt mit sich wiederholenden manuellen Prozessen, die zum Erkennen von Problemen und zum Festlegen der Richtlinien entwickelt wurden, die diese Risiken minimieren sollen. Sie können diese Prozesse jedoch auch automatisieren und mit Tools unterstützen, um den durch die Governance bedingten Mehraufwand zu reduzieren und eine schnellere Reaktion auf Abweichungen zu ermöglichen.
 
-## <a name="planning-review-and-reporting-processes"></a>Planungs-, Prüfungs- und Berichtsprozesse
+## <a name="planning-review-and-reporting-processes"></a>Planungs-, Prüfungs- und Berichterstellungsprozesse
 
 Die besten Tools für die Beschleunigung der Bereitstellung in der Cloud sind nur so gut wie die Prozesse und Richtlinien, durch die sie unterstützt werden. Nachstehend sind eine Reihe von Beispielprozessen aufgeführt, die häufig im Rahmen der Disziplin „Bereitstellungsbeschleunigung“ verwendet werden. Beim Planen der Prozesse, die Ihnen die fortlaufende Aktualisierung der Bereitstellungs- und Konfigurationsrichtlinie aufgrund von geschäftlichen Änderungen und Feedback von den Entwicklungs- und IT-Teams (die dafür verantwortlich sind, den Governanceleitfaden in die Tat umzusetzen) ermöglichen, können Sie diese Beispiele als Ausgangspunkt verwenden.
 
@@ -40,7 +39,7 @@ Dieser Planungsprozess ist auch ein guter Zeitpunkt, um die aktuelle Zusammenset
 
 **Monatliche Überprüfungen und Berichte:** Führen Sie monatlich eine Überprüfung aller Cloudbereitstellungen durch, um eine fortgesetzte Übereinstimmung mit den Konfigurationsrichtlinien zu gewährleisten. Überprüfen Sie bereitstellungsbezogene Aktivitäten mit IT-Mitarbeitern, und identifizieren Sie etwaige Konformitätsprobleme, die noch nicht im Rahmen des laufenden Überwachungs- und Durchsetzungsprozesses behandelt wurden. Als Ergebnis dieser Überprüfung wird ein Bericht für das Cloudstrategieteam und jedes Cloudeinführungsteam erstellt, um die allgemeine Einhaltung der Richtlinie zu kommunizieren. Der Bericht wird außerdem für prüfungsbezogene und rechtliche Zwecke gespeichert.
 
-## <a name="ongoing-monitoring-processes"></a>Laufende Überwachungsprozesse
+## <a name="ongoing-monitoring-processes"></a>Fortlaufende Überwachungsprozesse
 
 Die Ermittlung, ob Ihre Governancestrategie für die Beschleunigung der Bereitstellung erfolgreich ist, hängt von der Transparenz des aktuellen und vergangenen Zustands Ihrer Cloudinfrastruktur ab. Ohne die Möglichkeit, die relevanten Metriken und Daten im Zusammenhang mit der Betriebsintegrität und den Aktivitäten der Cloudressourcen zu analysieren, können Sie keine Veränderungen bei den Risiken und keine Verstöße gegen Ihre Risikotoleranzen erkennen. Für die oben genannten laufenden Governanceprozesse sind Qualitätsdaten erforderlich, um eine entsprechende Änderung der Richtlinie zu gewährleisten und Ihre Infrastruktur vor wechselnden Bedrohungen und Risiken durch falsch konfigurierte Ressourcen zu schützen.
 
@@ -62,7 +61,7 @@ Die folgenden Auslöser und Durchsetzungsmaßnahmen sind Beispiele, die Sie bei 
 
 Dokumentieren Sie mit der Vorlage [Cloudverwaltung](./template.md) die Prozesse und Auslöser, die sich an dem aktuellen Cloudeinführungsplan orientieren.
 
-Einen Leitfaden zur Ausführung von Cloudverwaltungsrichtlinien in Abstimmung mit Einführungsplänen finden Sie im Artikel über die Verbesserung von Disziplinen.
+Anleitungen zur Ausführung von Cloudverwaltungsrichtlinien in Abstimmung mit Einführungsplänen finden Sie im Artikel über Verbesserungen von Disziplinen.
 
 > [!div class="nextstepaction"]
 > [Verbesserung der Disziplin „Beschleunigung der Bereitstellung“](./discipline-improvement.md)

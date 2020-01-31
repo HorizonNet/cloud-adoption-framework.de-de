@@ -1,6 +1,5 @@
 ---
 title: Übersicht zur Mainframemigration
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Migrieren von Anwendungen aus Mainframeumgebungen zu Azure, einer bewährten, hoch verfügbaren und skalierbaren Infrastruktur für Systeme, die derzeit auf Mainframes ausgeführt werden.
 author: njray
 ms.author: v-nanra
@@ -8,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 88f844cb0a80971457beeb8814a109d70bb5d814
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 899e1575fa4e8c3bd83ebec38f0a38cb1e02d314
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547932"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808786"
 ---
 # <a name="mainframe-migration-overview"></a>Übersicht zur Mainframemigration
 

@@ -1,6 +1,5 @@
 ---
 title: Planen der Cloudeinführung
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Planen der Cloudeinführung
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: ddee24fda25b329eccbee5eebf41fd5929346877
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: a900ca61f957f941728829208cf72bc8f2aba601
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753397"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800320"
 ---
 # <a name="plan-for-cloud-adoption"></a>Planen der Cloudeinführung
 

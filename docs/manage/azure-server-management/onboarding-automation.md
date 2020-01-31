@@ -1,6 +1,5 @@
 ---
 title: Automatisieren des Onboardings
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Automatisieren des Onboardings
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 83e1cd80bcb821ba1b815291f7f25f875ba66284
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 0c1c06c8e30a61993c9127838de59d070f714c3a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73751590"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808021"
 ---
 # <a name="automate-onboarding"></a>Automatisieren des Onboardings
 
@@ -37,7 +36,7 @@ Die Beispieldateien veranschaulichen, wie Sie Azure PowerShell-Cmdlets verwenden
 
 In diesem Beispiel werden die in der folgenden Tabelle beschriebenen Dateien verwendet. Sie können sie so anpassen, dass sie Ihre eigenen Bereitstellungsszenarien unterstützen.
 
-| Dateiname | BESCHREIBUNG |
+| Dateiname | Beschreibung |
 |-----------|-------------|
 | New-AMSDeployment.ps1 | Das hauptsächliche Orchestrierungsskript, das das Onboarding automatisiert. Es erstellt Ressourcengruppen und Standort-, Arbeitsbereichs- und Automation-Konten, falls diese noch nicht vorhanden sind. Dieses PowerShell-Skript erfordert ein bestehendes Abonnement. |
 | Workspace-AutomationAccount.json | Eine Resource Manager-Vorlage, die die Ressourcen des Arbeitsbereichs und des Automatisierungskontos bereitstellt. |

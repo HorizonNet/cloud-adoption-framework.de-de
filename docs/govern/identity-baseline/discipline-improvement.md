@@ -1,6 +1,5 @@
 ---
 title: Verbesserung der Disziplin „Identitätsbaseline“
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Verbesserung der Disziplin „Identitätsbaseline“
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1a1f7d21d1291b567d1ec1b1a2d4305bcb202b99
-ms.sourcegitcommit: f7ec7828687f433ff8b69b91817cbec7b074662c
+ms.openlocfilehash: 6adb2e0d6edaacd45e41b8ac3eadb57969cad160
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915051"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807188"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>Verbesserung der Disziplin „Identitätsbaseline“
 
 Die Disziplin „Identitätsbaseline“ konzentriert sich auf Möglichkeiten zur Erstellung von Richtlinien, die die Konsistenz und Kontinuität von Benutzeridentitäten gewährleisten, unabhängig davon, welcher Cloudanbieter die Anwendung oder Workload hostet. Innerhalb der fünf Disziplinen der Cloudgovernance umfasst die Identitätsbaseline Entscheidungen in Bezug auf die [Hybrididentitätsstrategie](../../decision-guides/identity/index.md), die Auswertung und Erweiterung von Identitätsrepositorys, die Implementierung des einmaligen Anmeldens (gleiche Anmeldung), die Überprüfung und die Überwachung im Hinblick auf unbefugte Nutzung oder böswillige Akteure. In einigen Fällen kann sie auch Entscheidungen in Bezug auf Modernisierung, Konsolidierung oder Integration mehrerer Identitätsanbieter beinhalten.
 
-Dieser Artikel beschreibt einige potenzielle Aufgaben, die Ihr Unternehmen ausführen kann, um die Disziplin „Identitätsbaseline“ besser erstellen und weiterentwickeln zu können. Diese Aufgaben lassen sich in verschiedene Phasen der Implementierung einer Cloudlösung unterteilen: Planung, Erstellung, Übernahme und Betrieb. Diese Phasen werden dann durchlaufen und ermöglichen die Entwicklung eines [inkrementellen Ansatzes für die Cloudgovernance](../guides/index.md#an-incremental-approach-to-cloud-governance).
+Dieser Artikel beschreibt einige potenzielle Aufgaben, die Ihr Unternehmen ausführen kann, um die Disziplin „Identitätsbaseline“ besser erstellen und weiterentwickeln zu können. Diese Aufgaben lassen sich in verschiedene Phasen der Implementierung einer Cloudlösung unterteilen: Planung, Erstellung, Einführung und Betrieb. Diese Phasen werden dann durchlaufen und ermöglichen die Entwicklung eines [inkrementellen Ansatzes für die Cloudgovernance](../guides/index.md#an-incremental-approach-to-cloud-governance).
 
 ![Vier Phasen der Einführung](../../_images/govern/adoption-phases.png)
 
@@ -58,7 +57,7 @@ Für die erfolgreiche Migration einer Umgebung muss eine Reihe von technischen u
 
 - Ziehen Sie die Durchführung eines Pilottests in Betracht, bevor Sie Ihre [Toolkette für die Identitätsbaseline](./toolchain.md) implementieren, um sicherzustellen, dass die Benutzerfreundlichkeit so weit wie möglich vereinfacht wird.
 - Wenden Sie das Feedback aus Pilottests vor der Bereitstellung an. Wiederholen Sie die Tests, bis die Ergebnisse zufriedenstellend sind.
-- Ergänzen Sie das Dokument mit Architekturrichtlinien um Pläne für die Bereitstellung und die Übernahme durch Benutzer, und geben Sie dieses an die wichtigsten Beteiligten weiter.
+- Aktualisieren Sie das Dokument mit Architekturrichtlinien mit den Plänen für die Bereitstellung und die Akzeptanz durch Benutzer, und geben Sie dieses an die wichtigsten Beteiligten weiter.
 - Ziehen Sie die Einrichtung eines Early Adopter-Programms und die Einführung für eine begrenzte Anzahl von Benutzern in Betracht.
 - Setzen Sie die Schulung der Personen und Teams fort, die von den Architekturrichtlinien am meisten betroffen sind.
 

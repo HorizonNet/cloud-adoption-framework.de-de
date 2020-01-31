@@ -1,6 +1,5 @@
 ---
 title: Nachverfolgen von Kosten für Geschäftseinheiten, Umgebungen oder Projekte
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Nachverfolgen von Kosten für Geschäftseinheiten, Umgebungen oder Projekte
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b9bc3a5c2b2bf62c49726a29cedbac81d1d1a96e
-ms.sourcegitcommit: b166fe1621fe7e886616009e56b76873b8cce83c
+ms.openlocfilehash: a416f5eef95717792036c1a40b99614cefde2cec
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76520173"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799657"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Nachverfolgen von Kosten für Geschäftseinheiten, Umgebungen oder Projekte
 

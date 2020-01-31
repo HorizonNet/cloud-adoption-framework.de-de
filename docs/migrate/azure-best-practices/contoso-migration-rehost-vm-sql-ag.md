@@ -1,6 +1,5 @@
 ---
 title: Zuweisen eines neuen Hosts zu einer App durch Migration zu Azure-VMs und Always On-Verfügbarkeitsgruppen für SQL Server
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Dieser Artikel enthält Informationen darüber, wie Contoso einer lokalen App einen neuen Host zuweist, indem diese zu Azure-VMs und zur SQL Server Always On-Verfügbarkeitsgruppe migriert wird.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: e4d8ab371e01d98e22382a70cc9c1ea42173cf53
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: b5b8710c8545fa2e7c56131ed74a0ea1a3a02f8e
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160344"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807426"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-groups"></a>Zuweisen eines neuen Hosts für eine lokale App auf Azure-VMs und in SQL Server Always On-Verfügbarkeitsgruppen
 
@@ -33,7 +32,7 @@ Das IT Leadership-Team hat eng mit den Geschäftspartnern zusammengearbeitet, um
 
 ## <a name="migration-goals"></a>Migrationsziele
 
-Das Cloud-Team von Contoso hat sich Ziele für diese Migration gesetzt. Anhand dieser Ziele wird die beste Migrationsmethode bestimmt:
+Das Cloudteam von Contoso hat sich folgende Ziele für die Migration gesetzt. Anhand dieser Ziele wird die beste Migrationsmethode bestimmt:
 
 - Nach der Migration sollte die App in Azure das gleiche Leistungsvermögen aufweisen wie derzeit in der VMware-Umgebung. Die App bleibt lokal und in der Cloud gleichermaßen wichtig.
 - Contoso möchte nicht in diese App investieren. Die Investition ist wichtig für das Geschäft, in ihrer derzeitigen Form soll die App jedoch lediglich sicher in die Cloud verschoben werden.
@@ -214,7 +213,7 @@ Contoso-Administratoren gehen bei der Erstellung eines Speicherkontos wie folgt 
 
 Vor dem Einrichten des Clusters erstellen Contoso-Administratoren auf jedem Computer eine Momentaufnahme des Betriebssystemdatenträgers.
 
-![Erstellen der Momentaufnahme](media/contoso-migration-rehost-vm-sql-ag/snapshot.png)
+![Erstellen einer Momentaufnahme](media/contoso-migration-rehost-vm-sql-ag/snapshot.png)
 
 1. Anschließend führt das Unternehmen ein Skript aus, mit dem der Windows-Failovercluster erstellt werden soll.
 
@@ -465,7 +464,7 @@ Jetzt können Contoso-Administratoren eine Replikationsrichtlinie erstellen.
 2. Es werden die Standardeinstellungen verwendet:
     - **RPO-Schwellenwert:** Standardwert von 60 Minuten. Mit diesem Wert wird festgelegt, wie oft Wiederherstellungspunkte erstellt werden. Wenn dieser Grenzwert bei der fortlaufenden Replikation überschritten wird, wird eine Warnung generiert.
     - **Aufbewahrung des Wiederherstellungspunkts:** Standardwert von 24 Stunden. Dieser Wert gibt den Aufbewahrungszeitraum für die einzelnen Wiederherstellungspunkte an. Replizierte VMs können für jeden Punkt eines Zeitfensters wiederhergestellt werden.
-    - **Häufigkeit für App-konsistente Momentaufnahmen:** Der Standardwert ist eine Stunde. Dieser Wert gibt die Häufigkeit an, mit der anwendungskonsistente Momentaufnahmen erstellt werden.
+    - **App-konsistente Momentaufnahmenhäufigkeit:** Der Standardwert ist eine Stunde. Dieser Wert gibt die Häufigkeit an, mit der anwendungskonsistente Momentaufnahmen erstellt werden.
 
         ![Erstellen einer Replikationsrichtlinie](./media/contoso-migration-rehost-vm-sql-ag/replication-policy.png)
 
@@ -644,7 +643,7 @@ Contoso muss jetzt folgende Schritte für die Bereinigung durchführen:
 - Entfernen der lokalen VMs aus dem vCenter-Bestand.
 - Entfernen der VMs aus lokalen Sicherungsaufträgen.
 - Aktualisieren der internen Dokumentation und Anzeigen der neuen Speicherorte und IP-Adressen für VMs.
-- Überprüfen sämtlicher Ressourcen, die mit den außer Betrieb genommenen VMs interagieren, und Aktualisieren sämtlicher relevanter Einstellungen oder Dokumentationen zur Widerspiegelung der neuen Konfiguration.
+- Überprüfen sämtlicher Ressourcen, die mit den außer Betrieb genommenen VMs interagieren, und Aktualisieren sämtlicher relevanter Einstellungen oder Dokumentationen, um die neue Konfiguration widerzuspiegeln.
 - Hinzufügen der beiden neuen VMs (SQLAOG1 und SQLAOG2) zu Systemen für die Produktionsüberwachung.
 
 ### <a name="review-the-deployment"></a>Überprüfen der Bereitstellung

@@ -1,6 +1,5 @@
 ---
 title: 'Mainframemigration: Migration von Mainframeanwendungen'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Migrieren von Anwendungen aus Mainframeumgebungen zu Azure, einer bewährten, hoch verfügbaren und skalierbaren Infrastruktur für Systeme, die derzeit auf Mainframes ausgeführt werden.
 author: njray
 ms.author: v-nanra
@@ -8,12 +7,12 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9eb8c85c2355ae06e63d58e3078f1101bf7e3412
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: a662edd4ae7c6a854014b37cac2ccb0fab4c474e
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239447"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808820"
 ---
 # <a name="mainframe-application-migration"></a>Migration von Mainframeanwendungen
 
@@ -27,9 +26,9 @@ Die Anwendungsmigration umfasst üblicherweise eine oder mehrere der folgenden S
 
 - **Außerbetriebnahme:** Alle Anwendungen, die nicht mehr benötigt werden, sollten vor der Migration außer Betrieb genommen werden.
 
-- **Neuerstellung:** Einige Organisationen entscheiden sich dazu, Programme mithilfe moderner Techniken vollständig umzuschreiben. Angesichts der zusätzlichen Kosten und Komplexität dieses Ansatzes ist er nicht so verbreitet wie ein Lift & Shift-Ansatz. Nach dieser Art der Migration ist es häufig sinnvoll, Module und Code mithilfe von Codetransformations-Engines zu ersetzen.
+- **Neu erstellen:** Einige Organisationen entscheiden sich dazu, Programme mithilfe moderner Techniken vollständig umzuschreiben. Angesichts der zusätzlichen Kosten und Komplexität dieses Ansatzes ist er nicht so verbreitet wie ein Lift & Shift-Ansatz. Nach dieser Art der Migration ist es häufig sinnvoll, Module und Code mithilfe von Codetransformations-Engines zu ersetzen.
 
-- **Ersetzung:** Bei diesem Ansatz wird die Mainframefunktionalität durch entsprechende Features in der Cloud ersetzt. Software-as-a-Service (SaaS) ist eine Möglichkeit, bei der eine speziell für Unternehmensbelange erstellte Lösung verwendet wird, darunter Finanzen, Personalwesen, Fertigung oder Unternehmensressourcenplanung. Darüber hinaus stehen jetzt viele branchenspezifische Apps zur Verfügung, um Probleme zu lösen, die zuvor durch benutzerdefinierte Mainframelösungen gelöst wurden.
+- **Ersetzen:** Bei diesem Ansatz wird die Mainframefunktionalität durch entsprechende Features in der Cloud ersetzt. Software-as-a-Service (SaaS) ist eine Möglichkeit, bei der eine speziell für Unternehmensbelange erstellte Lösung verwendet wird, darunter Finanzen, Personalwesen, Fertigung oder Unternehmensressourcenplanung. Darüber hinaus stehen jetzt viele branchenspezifische Apps zur Verfügung, um Probleme zu lösen, die zuvor durch benutzerdefinierte Mainframelösungen gelöst wurden.
 
 Sie sollten als Erstes die Workloads planen, die Sie zuerst migrieren möchten, und dann die Anforderungen für das Verschieben der zugehörigen Anwendungen, älteren Codebases und Datenbanken ermitteln.
 

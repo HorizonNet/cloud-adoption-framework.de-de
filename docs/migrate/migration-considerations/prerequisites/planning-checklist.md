@@ -1,6 +1,5 @@
 ---
 title: Planungscheckliste für die Migrationsumgebung
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Überprüfen der Umgebungsbereitschaft vor der Migration
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8815a9089b63fe20d2d79c5ef979ff5d41166192
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 2660c6f09924c907591c8c8635b943125d0ac9a1
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753436"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76801408"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>Planungscheckliste für die Migrationsumgebung: Überprüfen der Umgebungsbereitschaft vor der Migration
 
@@ -50,7 +49,7 @@ Basierend auf der Entscheidung zur Governanceausrichtung sollte vor der Migratio
 
 Vor der Migration sollten ein einheitlicher Ansatz für die Benennung von Ressourcen sowie konsistente Benennungsschemas festgelegt werden.
 
-### <a name="resource-governance"></a>Ressourcenkontrolle
+### <a name="resource-governance"></a>Ressourcengovernance
 
 Vor der Migration sollte eine Entscheidung über die Tools zur Ressourcenverwaltung getroffen werden. Die Tools müssen nicht vollständig implementiert sein, doch sollte eine Richtung ausgewählt und getestet sein. Das Cloudgovernanceteam sollte vor der Migration die Implementierung eines Minimum Viable Product (MVP) für Governancetools definieren und anfordern.
 

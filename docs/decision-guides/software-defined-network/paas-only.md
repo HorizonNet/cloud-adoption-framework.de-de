@@ -1,6 +1,5 @@
 ---
 title: 'Softwaredefiniertes Netzwerk: Reine PaaS-Lösung'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Erläuterung des reinen PaaS-Modells für softwaredefinierte Netzwerke in der Cloud.
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ca73050c2ca6a753727b7b972a3c1febe4ec9515
-ms.sourcegitcommit: e0a783dac15bc4c41a2f4ae48e1e89bc2dc272b0
+ms.openlocfilehash: d61c9562b34453e6a0026a15a2674e3e19854810
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73058729"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804825"
 ---
 # <a name="software-defined-networking-paas-only"></a>Softwaredefiniertes Netzwerk: Reine PaaS-Lösung
 
