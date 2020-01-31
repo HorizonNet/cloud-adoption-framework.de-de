@@ -1,6 +1,5 @@
 ---
 title: Verbesserung der Disziplin „Beschleunigung der Bereitstellung“
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Verbesserung der Disziplin „Beschleunigung der Bereitstellung“
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b1b4395efd909a0f4456a39a6b2b933d25e4f002
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: c5f07137ac1ca8c3ddbc4717dba5622096551862
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547783"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805930"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>Verbesserung der Disziplin „Beschleunigung der Bereitstellung“
 
@@ -35,14 +34,14 @@ Es ist unmöglich, die Anforderungen aller Unternehmen in einem einzigen Dokumen
 
 Diese Entwicklungsphase der Governance überbrückt die Lücke zwischen Geschäftsergebnissen und umsetzbaren Strategien. Während dieses Prozesses definiert das Führungsteam bestimmte Metriken, ordnet diese Metriken dem digitalen Bestand zu und beginnt mit der Planung der gesamten Migration.
 
-**Mindestens empfohlene Aktivitäten**:
+**Mindestens empfohlene Aktivitäten:**
 
 - Bewerten Sie die Optionen Ihrer [Toolkette für die Beschleunigung der Bereitstellung](./toolchain.md), und implementieren Sie eine Hybridstrategie, die für Ihre Organisation geeignet ist.
 - Entwerfen Sie ein Dokument mit Architekturrichtlinien, und geben Sie dieses an die wichtigsten Beteiligten weiter.
 - Schulen und beteiligen Sie die Personen und Teams, die von diesen Architekturrichtlinien betroffen sind.
 - Schulen Sie Entwicklungsteams und IT-Mitarbeiter, damit diese die DevSecOps-Prinzipien und -Strategien und die Bedeutung vollständig automatisierter Bereitstellungen in der Disziplin „Beschleunigung der Bereitstellung“ genau verstehen.
 
-**Potenzielle Aktivitäten**:
+**Potenzielle Aktivitäten:**
 
 - Definieren Sie Rollen und Zuweisungen, die die Beschleunigung der Bereitstellung in der Cloud regeln.
 
@@ -58,7 +57,7 @@ Diese Entwicklungsphase der Governance überbrückt die Lücke zwischen Geschäf
 - Aktualisieren Sie das Dokument mit Architekturrichtlinien mit den Plänen für die Bereitstellung und die Akzeptanz durch Benutzer, und geben Sie dieses an die wichtigsten Beteiligten weiter.
 - Setzen Sie die Schulung der Personen und Teams fort, die von den Architekturrichtlinien am meisten betroffen sind.
 
-**Potenzielle Aktivitäten**:
+**Potenzielle Aktivitäten:**
 
 - Definieren Sie eine CI/CD-Pipeline (Continuous Integration/Continuous Deployment), um die Freigabe von Updates für Ihre Anwendungen in Ihren Entwicklungs-, Qualitätssicherungs- und Produktionsumgebungen vollständig zu verwalten.
 
@@ -66,7 +65,7 @@ Diese Entwicklungsphase der Governance überbrückt die Lücke zwischen Geschäf
 
 Migration ist ein inkrementeller Prozess, bei dem der Schwerpunkt auf der Verlagerung, dem Testen und der Übernahme von Anwendungen oder Workloads in einem vorhandenen digitalen Bestand liegt.
 
-**Mindestens empfohlene Aktivitäten**:
+**Mindestens empfohlene Aktivitäten:**
 
 - Migrieren Sie Ihre [Toolkette für die Beschleunigung der Bereitstellung](./toolchain.md) aus der Entwicklung in die Produktion.
 - Aktualisieren Sie das Dokument mit Architekturrichtlinien, und geben Sie dieses an die wichtigsten Beteiligten weiter.
@@ -86,11 +85,11 @@ Nachdem die Transformation abgeschlossen ist, müssen Governance und Betrieb wä
 - Passen Sie Ihre [Toolkette für die Beschleunigung der Bereitstellung](./toolchain.md) an die Änderungen der Identitätsanforderungen Ihrer Organisation an.
 - Automatisieren Sie Benachrichtigungen und Berichte, damit Sie bei potenziellen Konfigurationsproblemen oder Bedrohungen gewarnt werden.
 - Überwachen Sie die Anwendungs- und Ressourcennutzung, und erstellen Sie entsprechende Berichte.
-- Erstellen Sie Berichte zu Metriken nach der Bereitstellung, und geben Sie diese an die Beteiligten weiter.
+- Erstellen Sie Berichte zu Metriken nach der Bereitstellung, und geben Sie sie an die Beteiligten weiter.
 - Überarbeiten Sie die Architekturrichtlinien, um zukünftige Einführungsprozesse zu unterstützen.
 - Sorgen Sie für die regelmäßige Schulung und Kommunikation mit den betroffenen Personen und Teams, um die ununterbrochene Einhaltung der Architekturrichtlinien sicherzustellen.
 
-**Potenzielle Aktivitäten**:
+**Potenzielle Aktivitäten:**
 
 - Konfigurieren Sie ein Überwachungs- und Berichterstellungstool für die Konfiguration des gewünschten Zustands.
 - Überprüfen Sie die Konfigurationstools und -skripts regelmäßig, um Prozesse zu verbessern und allgemeine Probleme zu identifizieren.

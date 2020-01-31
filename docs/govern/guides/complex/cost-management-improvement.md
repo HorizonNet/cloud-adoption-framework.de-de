@@ -1,6 +1,5 @@
 ---
 title: 'Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Cost Management“'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Cost Management“'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ad7770a7339cf1fa444442e68d2e13539f272190
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 2b66894ca215156aa9688ca1ab458910e8f496f8
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566325"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805726"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Cost Management“
 
@@ -30,7 +29,7 @@ Als treibende Kraft der Innovation wird IT nicht mehr in erster Linie als Kosten
 
 In der vorherigen Phase dieser Erzählung hat das IT-Team Produktionsworkloads mit geschützten Daten aktiv nach Azure verschoben.
 
-Seit dieser Zeit haben sich einige Dinge geändert, die sich auf die Governance auswirken:
+Seit diesem Zeitpunkt haben sich einige Dinge geändert, die sich auf die Governance auswirken:
 
 - 5\.000 Ressourcen wurden aus den beiden zur Stilllegung markierten Rechenzentren entfernt. Auftragswesen und IT-Sicherheit heben nun die Bereitstellung der verbleibenden physischen Ressourcen auf.
 - Die Anwendungsentwicklungsteams haben CI/CD-Pipelines implementiert, um einige native Cloudanwendungen bereitzustellen, die erhebliche Auswirkungen auf das Kundenerlebnis haben.

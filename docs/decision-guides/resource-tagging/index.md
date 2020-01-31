@@ -1,6 +1,5 @@
 ---
 title: Leitfaden zur Entscheidungsfindung für Ressourcenbenennung und -markierung
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Erfahren Sie mehr über Ressourcenorganisation und -markierung als Hauptdienst in Azure-Migrationen.
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: c62e087372d21a3883c90425b31e1c5ff9bfd2fb
-ms.sourcegitcommit: 390b374dc7af4c4b85ef9fcb381c7c1bc6076ac7
+ms.openlocfilehash: 4a4b283fa447b296d429f037f12bbf3b2bfcf0fb
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75868021"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806678"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Ressourcenbenennung und -markierung
 
@@ -59,7 +58,7 @@ Die unten aufgeführten allgemeinen Markierungsmuster zeigen beispielhaft, wie d
 
 <!-- markdownlint-disable MD033 -->
 
-| Markierungstyp | Beispiele | BESCHREIBUNG |
+| Markierungstyp | Beispiele | Beschreibung |
 |-----|-----|-----|
 | Funktionen            | app = catalogsearch1 <br/>tier = web <br/>webserver = apache<br/>env = prod <br/>env = staging <br/>env = dev                 | Kategorisieren Sie Ressourcen in Bezug auf ihren Zweck innerhalb einer Workload, auf die Umgebung, in der sie bereitgestellt werden, oder auf andere funktionsbezogene oder operative Details.                                 |
 | Klassifizierung        | confidentiality=private<br/>sla = 24hours                                 | Klassifiziert eine Ressource danach, wie sie verwendet wird und welche Richtlinien für sie gelten.                               |

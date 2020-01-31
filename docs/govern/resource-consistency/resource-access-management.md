@@ -1,6 +1,5 @@
 ---
 title: Ressourcenzugriffsverwaltung in Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Erläuterung der Konstrukte für die Verwaltung des Ressourcenzugriffs in Azure: Azure Resource Manager, Abonnements, Ressourcengruppen und Ressourcen'
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a429aa445a7188a98593ec27892fb6ded8f9eb45
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 825c220bda1c560c5d7bf07bcae649017525ff53
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73565974"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805624"
 ---
 # <a name="resource-access-management-in-azure"></a>Ressourcenzugriffsverwaltung in Azure
 

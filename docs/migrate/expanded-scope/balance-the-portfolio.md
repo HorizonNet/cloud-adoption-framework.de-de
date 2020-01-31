@@ -1,6 +1,5 @@
 ---
 title: Ausgewogenheit des Portfolios
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Erfahren Sie, wie Sie für die richtige Ausgewogenheit Ihres Cloudportfolios sorgen.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9834778e7aaddc616d595e874459fa7bd3eb61e3
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: e93d5144a361aa3d6fb328c1d6f47eb3c069e11c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74159916"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803295"
 ---
 # <a name="balance-the-portfolio"></a>Ausgewogenheit des Portfolios
 
 Die Cloudeinführung ist ein Portfolioverwaltungsaufwand, der sich raffiniert als technische Implementierung tarnt. Wie bei jeder Form der Portfolioverwaltung ist die Ausgewogenheit des Portfolios von entscheidender Bedeutung. Auf strategischer Ebene bedeutet dies, Migration, Innovation und Experimentieren so in Einklang zu bringen, dass die Cloud optimal genutzt wird. Wenn der Aufwand zur Cloudeinführung zu weit in die eine oder andere Richtung tendiert, schleicht sich die Komplexität in die Migrationsaktivitäten ein. Dieser Artikel führt den Leser durch Methoden, mit denen die Ausgewogenheit des Portfolios erzielt wird.
 
-## <a name="general-scope-expansion"></a>Allgemeine Bereichserweiterung
+## <a name="general-scope-expansion"></a>Allgemeine Umfangserweiterung
 
 Dieses Thema ist strategischer Natur. Daher ist der in diesem Artikel vorgestellte Ansatz gleichermaßen strategisch. Um die Strategie auf datengesteuerte Entscheidungen zu gründen, wird in diesem Artikel vorausgesetzt, dass der Leser die vorhandenen [digitalen Ressourcen](../../digital-estate/index.md) ausgewertet hat (oder die Auswertung gerade durchführt). Das Ziel dieses Ansatzes ist, die Evaluierung der Workloads zu unterstützen, um die Ausgewogenheit des Portfolios durch qualitative Fragen und Portfoliooptimierung sicherzustellen.
 
@@ -109,7 +108,7 @@ Diese unterschiedlichen Aktivitäten sollten auf zwei oder mehr Cloudeinführung
 
 **Zuweisen eines neuen Hosts:** Zum Zuweisen eines neuen Hosts müssen Teammitglieder infrastrukturkonzentrierte Änderungen implementieren. In der Regel werden mithilfe eines Tools wie Azure Site Recovery VMs oder andere Ressourcen zu Azure migriert. Für diese Arbeit sind Rechenzentrumsadministratoren oder IT-Implementierer gut geeignet. Das Cloudmigrationsteam ist so gut strukturiert, dass es diese Aufgabe auf hohem Niveau ausführt. Dies ist in den meisten Szenarien der schnellste Ansatz zum Migrieren vorhandener Ressourcen.
 
-**Umgestaltung:** Beim Umgestalten müssen Teammitglieder Quellcode ändern, die Architektur einer Anwendung ändern oder neue Clouddienste einführen. In der Regel würden für diese Aktivitäten Entwicklungstools wie Visual Studio und Bereitstellungspipelinetools wie Azure DevOps verwendet, um modernisierte Anwendungen erneut in Azure bereitzustellen. Für diese Arbeit sind Anwendungsentwicklungsrollen oder DevOps-Pipelineentwicklungsrollen gut geeignet. Cloudinnovationsteams sind für diese Aufgabe am besten strukturiert. Es kann länger dauern, bei diesem Ansatz vorhandene Ressourcen mit Cloudressourcen zu ersetzen, aber die Apps können cloudnative Funktionen nutzen.
+**Refactoring:** Beim Umgestalten müssen Teammitglieder Quellcode ändern, die Architektur einer Anwendung ändern oder neue Clouddienste einführen. In der Regel würden für diese Aktivitäten Entwicklungstools wie Visual Studio und Bereitstellungspipelinetools wie Azure DevOps verwendet, um modernisierte Anwendungen erneut in Azure bereitzustellen. Für diese Arbeit sind Anwendungsentwicklungsrollen oder DevOps-Pipelineentwicklungsrollen gut geeignet. Cloudinnovationsteams sind für diese Aufgabe am besten strukturiert. Es kann länger dauern, bei diesem Ansatz vorhandene Ressourcen mit Cloudressourcen zu ersetzen, aber die Apps können cloudnative Funktionen nutzen.
 
 **Geringfügige Umgestaltung:** Einige Anwendungen können mit geringfügiger Umgestaltung auf Daten- oder Anwendungsebene aktualisiert werden. Dabei müssen Teammitglieder Daten für cloudbasierte Datenplattformen bereitstellen oder geringfügige Konfigurationsänderungen an der Anwendung vornehmen. Dies erfordert möglicherweise gewisse Unterstützung von fachlichen Ansprechpartnern für Daten- oder Anwendungsentwicklung. Allerdings ähnelt diese Arbeit der, die IT-Implementierer durchführen, wenn sie Drittanbieter-Apps bereitstellen. Diese Arbeit kann problemlos vom Cloudmigrationsteam oder Cloudstrategieteam ausgeführt werden. Diese Aktivität ist zwar nicht annähernd so schnell wie eine Migration mit Zuweisen eines neuen Hosts, benötigt jedoch weniger Zeit als Umgestaltungsaktivitäten.
 

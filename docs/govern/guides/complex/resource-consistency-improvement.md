@@ -1,6 +1,5 @@
 ---
 title: 'Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Ressourcenkonsistenz“'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Ressourcenkonsistenz“'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 66b1d5e414ecf7b1512cb408947bc519e460c471
-ms.sourcegitcommit: f3371811a36e12533ecbc3aa936e2a68e0cee25f
+ms.openlocfilehash: 35a77b0837da1b3364516a95b2baaa32e4e2fe6f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72683544"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805539"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Ressourcenkonsistenz“
 

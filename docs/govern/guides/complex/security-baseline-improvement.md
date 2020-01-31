@@ -1,6 +1,5 @@
 ---
 title: 'Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Sicherheitsbaseline“'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Sicherheitsbaseline“'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a8cf7c6bb09d2f4c505e3edcb97a0354a870a730
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 41fba8029eabb570a40d5692374f1cb7e7d7c9b5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753207"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806236"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Sicherheitsbaseline“
 
@@ -40,7 +39,7 @@ Seit diesem Zeitpunkt haben sich einige Dinge geändert, die sich auf die Govern
 
 - Tausende von IT- und Unternehmensressourcen werden in der Cloud bereitgestellt.
 - Das Team für die Anwendungsentwicklung hat eine CI/CD-Pipeline (Continuous Integration/Continuous Deployment) implementiert, um eine native Cloudanwendung mit einer verbesserten Benutzeroberfläche bereitzustellen. Diese Anwendung interagiert noch nicht mit geschützten Daten und ist daher nicht für die Produktion bereit.
-- Das Business Intelligence-Team innerhalb der IT-Abteilung stellt aktiv Daten aus Logistik, Inventur und Drittanbieterdaten in der Cloud zusammen. Diese Daten werden für neue Vorhersagen verwendet, die zum Gestalten von Geschäftsprozessen dienen können. Allerdings sind diese Vorhersagen und Erkenntnisse erst umsetzbar, wenn Kunden- und Finanzdaten in die Datenplattform integriert werden können.
+- Das Business Intelligence-Team innerhalb der IT-Abteilung stellt aktiv Daten aus Logistik, Inventur und Drittanbieterdaten in der Cloud zusammen. Diese Daten werden verwendet, um neue Vorhersagen zu treffen, die Geschäftsprozesse beeinflussen könnten. Diese Vorhersagen und Erkenntnisse sind jedoch erst dann umsetzbar, wenn Kunden- und Finanzdaten in die Datenplattform integriert werden können.
 - Das IT-Team setzt zurzeit die Pläne des CIO und des CFO um, zwei Rechenzentren außer Betrieb zu nehmen. Fast 3.500 Ressourcen in den beiden Rechenzentren wurden außer Betrieb genommen oder migriert.
 - Die Richtlinien im Hinblick auf vertrauliche personenbezogene Informationen und Finanzdaten wurden modernisiert. Allerdings sind die neuen Unternehmensrichtlinien abhängig von der Implementierung der entsprechenden Sicherheits- und Governancerichtlinien. Teams können noch nicht weiterarbeiten.
 
@@ -64,7 +63,7 @@ Dieses Geschäftsrisiko lässt sich auf eine Reihe von technischen Risiken auswe
 5. Ein Eindringen von außerhalb oder Denial-of-Service-Angriffe können zu einer Unterbrechung des Geschäftsbetriebs führen.
 6. Organisatorische Änderungen oder Personalwechsel können den unbefugten Zugriff auf geschützte Daten ermöglichen.
 7. Neue Exploits schaffen Möglichkeiten für Eindringlinge oder für unbefugten Zugriff.
-8. Inkonsistente Bereitstellungsprozesse können Sicherheitslücken herbeiführen, die zu Datenverlusten oder Unterbrechungen führen können.
+8. Inkonsistente Bereitstellungsprozesse können Sicherheitslücken verursachen, die zu Datenverlusten oder Unterbrechungen führen können.
 9. Konfigurationsabweichungen oder fehlende Patches können unbeabsichtigte Sicherheitslücken zur Folge haben, die zu Datenverlusten oder Unterbrechungen führen können.
 10. Verschiedenartige Edge-Geräte können die Kosten für den Netzwerkbetrieb erhöhen.
 11. Verschiedenartige Gerätekonfigurationen können zu Fehlern in der Konfiguration und zur Gefährdung der Sicherheit führen.

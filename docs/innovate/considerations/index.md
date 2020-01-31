@@ -1,6 +1,5 @@
 ---
 title: Innovation in der digitalen Wirtschaft
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Erfahren Sie mehr über die Leittheorie von Cloudinnovation im Framework für die Cloudeinführung (Cloud Adoption Framework).
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8f1a89f5cd216bafeb8df4e9c6e0f64c6ec449f4
-ms.sourcegitcommit: 74c1eb00a3bfad1b24f43e75ae0340688e7aec48
+ms.openlocfilehash: 87d47fa7e6f28f41c7edc98525cadabe65b99d48
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72980054"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808463"
 ---
 # <a name="innovation-in-the-digital-economy"></a>Innovation in der digitalen Wirtschaft
 

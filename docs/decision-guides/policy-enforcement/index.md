@@ -1,6 +1,5 @@
 ---
 title: Leitfaden zur Entscheidungsfindung für die Richtlinienerzwingung
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Informationen zu Abonnements für die Richtlinienerzwingung als zentrale Entwurfspriorität bei Azure-Migrationen.
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 7e3df166c41658b248bc7fb61067b27362a8070c
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 8bc458fa480112c1b1a5748d042c9e439933f47f
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753160"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806729"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Leitfaden zur Entscheidungsfindung für die Richtlinienerzwingung
 

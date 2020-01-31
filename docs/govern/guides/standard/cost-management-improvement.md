@@ -1,6 +1,5 @@
 ---
 title: 'Leitfaden für Standardunternehmen: Verbessern der Disziplin „Cost Management“'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Leitfaden für Standardunternehmen: Verbessern der Disziplin „Cost Management“'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b4ff2db2b8d7009eb9d5a50dee630c1a8a60723c
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: 83fe35135b37fe96a95f7335639aec65538ee829
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967593"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806202"
 ---
 # <a name="standard-enterprise-guide-improve-the-cost-management-discipline"></a>Leitfaden für Standardunternehmen: Verbessern der Disziplin „Cost Management“
 
@@ -68,8 +67,8 @@ In diesem Abschnitt des Artikels wird der Governance-MVP-Entwurf so geändert, d
 
 1. Implementieren von Azure Cost Management.
     1. Legen Sie den richtigen Zugriffsumfang fest, um ihn an das Abonnementmuster und die Disziplin „Ressourcenkonsistenz“ anzupassen. Unter der Annahme der Angleichung an das in früheren Artikeln definierte Governance-MVP erfordert dies Zugriff des Umfangs **Registrierungskonto** für das Cloudgovernanceteam, das die Berichtserstellung auf hoher Ebene durchführt. Weitere Teams außerhalb von Governance benötigen möglicherweise Zugriff des Umfangs **Ressourcengruppe**.
-    1. Richten Sie ein Budget in Azure Cost Management ein.
-    1. Prüfen und reagieren Sie auf anfängliche Empfehlungen. Nutzen Sie einen regelmäßiger Prozess zur Unterstützung der Berichterstellung.
+    1. Einrichten eines Budgets in Azure Cost Management.
+    1. Überprüfen Sie die anfänglichen Empfehlungen, und reagieren Sie entsprechend. Nutzen Sie einen regelmäßiger Prozess zur Unterstützung der Berichterstellung.
     1. Konfigurieren Sie Azure Cost Management-Berichterstellung mit anfänglicher und regelmäßiger Ausführung.
 2. Aktualisieren von Azure Policy
     1. Überwachen Sie die Tagging-, Verwaltungsgruppen-, Abonnement- und Ressourcengruppenwerte, um Abweichungen zu identifizieren.

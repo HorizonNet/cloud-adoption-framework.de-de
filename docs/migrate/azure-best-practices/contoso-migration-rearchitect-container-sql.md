@@ -1,6 +1,5 @@
 ---
 title: Umstrukturieren einer App in einem Azure-Container und einer Azure SQL-Datenbank-Instanz
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Erfahren Sie, wie Contoso eine App in Azure-Windows-Container und eine Azure SQL-Datenbank-Instanz umstrukturiert.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 2487b7c213c45b0dcc78ffd4c12b1acae67aa429
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 3727c6bac138dae12ec976683ba2b5954bbd9163
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566653"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807545"
 ---
 # <a name="rearchitect-an-on-premises-app-to-an-azure-container-and-azure-sql-database"></a>Umstrukturieren einer lokalen App zu einem Azure-Container und einer Azure SQL-Datenbank-Instanz
 

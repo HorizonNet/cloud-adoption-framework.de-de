@@ -1,6 +1,5 @@
 ---
 title: 'Cloudinnovation: Vorhersagen und Beeinflussen'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Einführung in die Cloudinnovation: Vorhersagen und Beeinflussen'
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: bcb01ada3589b733fe97de2689352ab414ef469b
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: f55325b46ee9b2e45dd539c08f426d49357f5ba3
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752983"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808395"
 ---
 # <a name="predict-and-influence"></a>Vorhersagen und Beeinflussen
 
@@ -40,7 +39,7 @@ Lösungen, die durchgängig genaue prädiktive Fähigkeiten bieten, weisen in de
 > [!CAUTION]
 > Wenn die Kundenhypothese, die unter [Erstellen von Lösungen mit Blick auf die Kundenanforderungen](./build.md) entwickelt wurde, prädiktive Fähigkeiten umfasst, könnten die dort beschriebenen Prinzipien durchaus gelten. Prädiktive Fähigkeiten setzen jedoch einen erheblichen Aufwand an Zeit und Energie voraus. Wenn prädiktive Fähigkeiten jedoch statt eines Ausgangspunkts eines realen Nutzens für den Kunden eine [technische Herausforderung](./build.md#reduce-complexity-and-delay-technical-spikes) darstellen, sollten sie aufgeschoben werden, bis die bedarfsorientierte Kundenhypothese auf Gültigkeit geprüft wurde.
 
-## <a name="data"></a>Data
+## <a name="data"></a>Daten
 
 Die Daten sind das grundlegendste der zuvor genannten Merkmale. Jede der Fachrichtungen für die Entwicklung digitaler Erfindungen erzeugt Daten. Diese Daten tragen natürlich zur Entwicklung von Vorhersagen bei. Weitere Informationen zu Möglichkeiten, Daten in eine prädiktive Lösung einzubringen, finden Sie unter [Demokratisierung von Daten](./data.md) und [Interaktion mit Geräten](./devices.md).
 
@@ -60,7 +59,7 @@ Ausgehend von Erkenntnissen werden beim maschinellen Lernen prädiktive Modelle 
 
 Für leistungsfähigere Machine Learning-Modelle bieten [ML-Dienste in Azure HDInsight](https://docs.microsoft.com/azure/hdinsight/r-server/r-server-overview) eine Plattform für maschinelles Lernen, die auf Apache Hadoop-Clustern basiert. Dieser Ansatz ermöglicht eine präzisere Steuerung der zugrunde liegenden Cluster, Speicher und Computeknoten. Azure HDInsight bietet auch eine noch umfassendere Integration durch Tools wie ScaleR und SparkR, um Vorhersagen auf der Grundlage integrierter und erfasster Daten zu erstellen und sogar mit Daten aus einem Stream zu arbeiten. Die [Lösung zur Vorhersage von Flugverspätungen](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-r-scaler-sparkr) demonstriert jede dieser erweiterten Möglichkeiten, wenn sie zur Vorhersage von Flugverspätungen basierend auf Wetterbedingungen verwendet wird. Die HDInsight-Lösung bietet Unternehmen auch Steuerungsmechanismen für Datensicherheit, Netzwerkzugriff und Leistungsüberwachung, um Muster zu operationalisieren.
 
-## <a name="predictions"></a>Vorhersagen
+## <a name="predictions"></a>Vorhersagen (Predictions)
 
 Nachdem ein Muster erstellt und trainiert wurde, können Sie es über APIs anwenden, die Vorhersagen während der Bereitstellung einer digitalen Erfahrung treffen können. Die meisten dieser APIs basieren auf einem sorgfältig trainierten Modell, das auf einem Muster in Ihren Daten basiert. Da immer mehr Kunden tägliche Workloads in der Cloud bereitstellen, führen die von Cloudanbietern verwendeten Vorhersage-APIs zu einer immer schnelleren Akzeptanz.
 

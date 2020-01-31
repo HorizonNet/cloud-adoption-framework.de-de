@@ -1,6 +1,5 @@
 ---
 title: Beispiele für Richtlinienanweisungen der Ressourcenkonsistenz
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Beispiele für Richtlinienanweisungen der Ressourcenkonsistenz
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f2e15ad1640bec4e289c49a1f9dcf83de7c04ec3
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 5e997dee318d0d6799167de4f4c61a93c814c548
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71221982"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807256"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>Beispiele für Richtlinienanweisungen der Ressourcenkonsistenz
 
@@ -89,7 +88,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine Geschä
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Verwenden Sie die in diesem Artikel erwähnten Beispiele als Ausgangspunkt für die Entwicklung von Richtlinien, die bestimmte geschäftliche Risiken behandeln, die Ihren Plänen für die Einführung der Cloud entsprechen.
+Verwenden Sie die in diesem Artikel erwähnten Beispiele als Ausgangspunkt für die Entwicklung von Richtlinien, die bestimmte Geschäftsrisiken behandeln, die Ihren Plänen für die Einführung der Cloud entsprechen.
 
 Um mit der Entwicklung Ihrer eigenen, benutzerdefinierten Richtlinienanweisungen mit Bezug auf die Ressourcenkonsistenz zu beginnen, laden Sie die [Ressourcenkonsistenzvorlage](./template.md) herunter.
 

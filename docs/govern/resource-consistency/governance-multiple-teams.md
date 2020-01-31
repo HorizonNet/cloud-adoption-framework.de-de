@@ -1,6 +1,5 @@
 ---
 title: Governance-Entwurf in Azure für mehrere Teams
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Enthält eine Anleitung zum Konfigurieren von Azure-Governancekontrollen für mehrere Teams, mehrere Workloads und mehrere Umgebungen.
 author: alexbuckgit
 ms.author: abuck
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 59b60af79d81316726ffed1dcf326641af059cb0
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 7bfceb1a7fe68869dabec7eda813cd3fdc121b49
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160482"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76804298"
 ---
 # <a name="governance-design-for-multiple-teams"></a>Governance-Entwurf für mehrere Teams
 

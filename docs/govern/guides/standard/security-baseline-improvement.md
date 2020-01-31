@@ -1,6 +1,5 @@
 ---
 title: 'Governanceleitfaden für Standardunternehmen: Verbessern der Disziplin „Sicherheitsbaseline“'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Governanceleitfaden für Standardunternehmen: Verbessern der Disziplin „Sicherheitsbaseline“'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0875442331a5da3c53c5d6c713c3bdbfcfab6cbf
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: ef4d58cb871ea290f8489e806a4b78f32a9d8b3d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753050"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807120"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Governanceleitfaden für Standardunternehmen: Verbessern der Disziplin „Sicherheitsbaseline“
 
@@ -78,7 +77,7 @@ Die folgenden Änderungen an der Richtlinie verringern die neuen Risiken und ver
 7. Die Anforderungen an die Netzwerkkonfiguration, die vom Sicherheitsverwaltungsteam definiert wurden, müssen mit Governancetools überwacht und durchgesetzt werden.
 8. Governancetools müssen die VM-Bereitstellung auf genehmigte Images begrenzen.
 9. Nach Möglichkeit muss die Knotenkonfigurationsverwaltung Richtlinienanforderungen auf die Konfiguration aller Gastbetriebssysteme anwenden.
-10. Governancetools müssen durchsetzen, dass automatische Updates für alle bereitgestellten Ressourcen aktiviert sind. Verstöße auf Knotenebene müssen von Betriebsmanagementteams überprüft und in Übereinstimmung mit den Betriebsrichtlinien beseitigt werden. Ressourcen, die nicht automatisch aktualisiert werden, müssen in Prozesse des IT-Betriebs einbezogen werden.
+10. Governancetools müssen durchsetzen, dass automatische Updates für alle bereitgestellten Ressourcen aktiviert sind. Verstöße müssen von Betriebsmanagementteams überprüft und in Übereinstimmung mit den Betriebsrichtlinien beseitigt werden. Ressourcen, die nicht automatisch aktualisiert werden, müssen in Prozesse des IT-Betriebs einbezogen werden.
 11. Für die Erstellung neuer Abonnements oder Verwaltungsgruppen für unternehmenskritische Anwendungen oder geschützte Daten ist eine Überprüfung durch das Cloudgovernanceteam erforderlich, um sicherzustellen, dass die richtige Blaupause zugewiesen wird.
 12. Das Zugriffsmodell der geringsten Rechte wird auf alle Verwaltungsgruppen oder Abonnements angewendet, die unternehmenskritische Apps oder geschützte Daten enthalten.
 13. Trends und Exploits, die mögliche Auswirkungen auf Cloudbereitstellungen haben, müssen vom Sicherheitsteam regelmäßig überprüft werden, damit Updates für in der Cloud verwendete Sicherheitsverwaltungstools bereitgestellt werden.

@@ -1,6 +1,5 @@
 ---
 title: Neuerstellen einer lokalen App in Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: In diesem Artikel erfahren Sie, wie Contoso eine App in Azure mithilfe von Azure App Service, Azure Kubernetes Service, Cosmos DB, Azure Functions und Azure Cognitive Services neu erstellt.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b00b007f9fb223312aa7baf99f54d32a8a08ce70
-ms.sourcegitcommit: 72df8c1b669146285a8680e05aeceecd2c3b2e83
+ms.openlocfilehash: e2904356871eec65b516b7a02c356c679ab86b33
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74681832"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807494"
 ---
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Neuerstellen einer lokalen App in Azure
 
@@ -41,7 +40,7 @@ Das Cloudteam von Contoso hat folgende App-Anforderungen für diese Migration ge
 - Die API-Dienst für Fotos von Haustieren sollte in der Praxis präzise und zuverlässig sein, da die von der App getroffenen Entscheidungen in den Hotels berücksichtigt werden müssen. Haustiere, denen der Zutritt erlaubt ist, dürfen in den Hotels bleiben.
 - Um die Anforderungen einer DevOps-Pipeline zu erfüllen, verwendet Contoso Azure DevOps für die Quellcodeverwaltung mit Git-Repositorys. Mithilfe automatisierter Builds und Releases wird der Code erstellt und in Azure App Service, Azure Functions und AKS bereitgestellt.
 - Für Microservices im Back-End und für die Website im Front-End sind unterschiedliche CI/CD-Pipelines erforderlich.
-- Für die Back-End-Dienste gelten andere Releasezyklen als für die Front-End-Web-App. Zur Erfüllung dieser Anforderung werden zwei verschiedene DevOps-Pipelines bereitgestellt.
+- Für die Back-End-Dienste gelten andere Releasezyklen als für die Front-End-Web-App. Zur Erfüllung dieser Anforderung werden zwei verschiedene Pipelines bereitgestellt.
 - Contoso benötigt eine Verwaltungsgenehmigung für die gesamte Front-End-Websitebereitstellung, die von der CI/CD-Pipeline bereitgestellt werden muss.
 
 ## <a name="solution-design"></a>Lösungsentwurf
@@ -134,7 +133,7 @@ Contoso-Administratoren führen ein Bereitstellungsskript zum Erstellen des Mana
 - In den Anweisungen für diesen Abschnitt wird das Repository **SmartHotel360-Azure-backend** verwendet.
 - Das GitHub-Repository **SmartHotel360-Azure-backend** enthält die gesamte Software für diesen Teil der Bereitstellung.  
 
-### <a name="prerequisites"></a>Voraussetzungen
+### <a name="ensure-prerequisites"></a>Erfüllen der Voraussetzungen
 
 1. Vor Beginn stellen Contoso-Administratoren sicher, dass auf dem Entwicklungscomputer, den sie für die Bereitstellung verwenden, die erforderliche Software installiert ist.
 2. Sie klonen das Repository mithilfe von Git lokal auf dem Entwicklungscomputer: `git clone https://github.com/Microsoft/SmartHotel360-Azure-backend.git`
@@ -445,7 +444,7 @@ Contoso-Administratoren erstellen zwei verschiedene Projekte für die Front-End-
 
 2. Sie importieren das Git-Repository [SmartHotel360 front end](https://github.com/Microsoft/SmartHotel360-public-web.git) in das neue Projekt.
 
-3. Für die Funktions-App erstellen sie ein weiteres Azure DevOps-Projekt (SmartHotelPetChecker) und importieren das Git-Repository [PetChecker](https://github.com/Microsoft/SmartHotel360-PetCheckerFunction ) in dieses Projekt.
+3. Für die Funktions-App erstellen sie ein weiteres Azure DevOps-Projekt (SmartHotelPetChecker) und importieren das Git-Repository [PetChecker](https://github.com/sonahander/SmartHotel360-PetCheckerFunction) in dieses Projekt.
 
 ### <a name="configure-the-web-app"></a>Konfigurieren der Web-App
 
@@ -584,21 +583,20 @@ Contoso-Administratoren stellen die App wie folgt bereit.
 14. Nachdem die Funktion bereitgestellt wurde, wird sie im Azure-Portal mit dem Status **Wird ausgeführt** angezeigt.
 
     ![Bereitstellen der Funktion](./media/contoso-migration-rebuild/function6.png)
-    
+
 15. Contoso navigiert zur App unter [http://smarthotel360public.azurewebsites.net/Pets](http://smarthotel360public.azurewebsites.net/Pets), um zu testen, ob die Pet Checker-App wie erwartet funktioniert.
 
 16. Sie wählen den Avatar aus, um ein Bild hochzuladen.
 
     ![Bereitstellen der Funktion](./media/contoso-migration-rebuild/function7.png)
-    
+
 17. Das erste Foto, das überprüft werden soll, ist das eines kleinen Hundes.
 
     ![Bereitstellen der Funktion](./media/contoso-migration-rebuild/function8.png)
-    
+
 18. Die App gibt eine Meldung zur Bestätigung zurück.
 
     ![Bereitstellen der Funktion](./media/contoso-migration-rebuild/function9.png)
-    
 
 ## <a name="review-the-deployment"></a>Überprüfen der Bereitstellung
 
@@ -636,4 +634,3 @@ Hier finden Sie einige Beispiele für maßgeschneiderte Lernpfade auf Microsoft�
 [Bereitstellen einer Website in Azure mithilfe von Azure App Service:](https://docs.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service/) Mit Web-Apps in Azure können Sie Ihre Website leicht veröffentlichen und verwalten, ohne dass Sie mit den zugrunde liegenden Servern, Speicher oder Netzwerkressourcen arbeiten müssen. Stattdessen können Sie sich auf Ihre Websitefeatures konzentrieren und die stabile Azure-Plattform verwenden, um sicheren Zugriff auf Ihre Site bereitzustellen.
 
 [Verarbeiten und Klassifizieren von Images mit der Bildanalyse von Azure Cognitive Services:](https://docs.microsoft.com/learn/paths/classify-images-with-vision-services/) Azure Cognitive Services bietet vorgefertigte Funktionen, um die Funktionalität für maschinelles Sehen in Ihren Anwendungen zu aktivieren. Erfahren Sie, wie Sie die Bildanalyse von Cognitive Services verwenden, um Gesichter zu erkennen, Bilder mit Tags zu versehen und zu klassifizieren und Objekte zu identifizieren.
-

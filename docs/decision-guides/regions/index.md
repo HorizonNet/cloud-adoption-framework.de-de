@@ -1,6 +1,5 @@
 ---
 title: Leitfaden zur Entscheidungsfindung für Regionen
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Hier finden Sie Informationen zu Regionsoptionen für die Cloudplattform.
 author: doodlemania2
 ms.author: dermar
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 981752b1e1963dd4f8a646ccc087d445669e6cd3
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: aff6a3129bd93df434737a861f0b5f0daad24bcc
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753310"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806712"
 ---
 # <a name="azure-regions"></a>Azure-Regionen
 
@@ -83,7 +82,7 @@ Die folgende Tabelle kann beim Dokumentieren der Ergebnisse aus den oben genannt
 | Region        | Country     | Lokale Mitarbeiter | Lokale externe Benutzer   | Lokale Rechenzentren oder Assets | Anforderungen an die Datenhoheit |
 |---------------|-------------|-----------------|------------------------|-----------------------------|-------------------------------|
 | Nordamerika | USA         | Ja             | Partner und Kunden | Ja                         | Nein                            |
-| Nordamerika | Kanada      | Nein              | Kunden              | Ja                         | Ja                           |
+| Nordamerika | Canada      | Nein              | Kunden              | Ja                         | Ja                           |
 | Europa        | Deutschland     | Ja             | Partner und Kunden | Nein – nur Netzwerk           | Ja                           |
 | Asien-Pazifik  | Südkorea | Ja             | Partner               | Ja                         | Nein                            |
 
@@ -167,7 +166,7 @@ Beim Migrieren einer Anwendung, die in mehreren Regionen bereitgestellt werden m
 > [!NOTE]
 > Dadurch können die kurzfristigen Migrationskosten steigen, da dieses Verfahren zusätzliche Kosten für ausgehende Bandbreite verursachen kann.
 
-## <a name="optimize-and-promote-process-changes"></a>Änderungen an Prozessen zum Optimieren und Höherstufen
+## <a name="optimize-and-promote-process-changes"></a>Änderungen am Prozess zum Optimieren und Höherstufen
 
 Der Umgang mit der globalen Komplexität während der Optimierung und Höherstufung könnte in jeder der zusätzlichen Regionen doppelte Arbeit erfordern. Auch wenn eine einzelne Bereitstellung akzeptabel ist, müssen geschäftsbezogene Tests und Änderungspläne möglicherweise dennoch dupliziert werden.
 

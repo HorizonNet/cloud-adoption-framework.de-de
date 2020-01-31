@@ -1,6 +1,5 @@
 ---
 title: 'Cloudinnovation: Lernen'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Einführung in Inhalte der Cloudinnovation – Lerninhalt
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: b960bbd4382a14f254038397f3843d7ad7b65f8c
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 3f15407d78517d588e9f98ac6bbbb779574a7afd
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753001"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808429"
 ---
 # <a name="learn-with-customers"></a>Lernen von Kunden
 
@@ -56,4 +55,4 @@ Im nächsten Schritt zum Verstehen dieser Methodik können [häufige Herausforde
 > [!div class="nextstepaction"]
 > [Grundlegendes zu häufigen Herausforderungen und Hindernissen](./challenges.md)
 
-Einige der Konzepte in diesem Artikel bauen auf Themen auf, die zuerst in [The Lean Startup](https://theleanstartup.com/book) (Der schlanke Start) von Eric Ries beschrieben wurden.
+Einige der Konzepte in diesem Artikel bauen auf Themen auf, die zuerst in [The Lean Startup](http://theleanstartup.com/book) (Der schlanke Start) von Eric Ries beschrieben wurden.

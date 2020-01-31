@@ -1,6 +1,5 @@
 ---
 title: Bewerten der Bereitschaft einer Workload
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Ein Prozess innerhalb der Cloudmigration, der sich auf die Aufgaben der Migration von Workloads in die Cloud konzentriert.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7df4792fda1436d822108dc20d422e6912a0709f
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: c695d83c4e04b3cd837ff5916e47c128f17a1d34
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74159876"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76802547"
 ---
 # <a name="evaluate-workload-readiness"></a>Bewerten der Bereitschaft einer Workload
 

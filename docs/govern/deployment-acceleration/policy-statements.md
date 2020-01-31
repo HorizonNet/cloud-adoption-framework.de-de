@@ -1,6 +1,5 @@
 ---
 title: Beschleunigung der Bereitstellung – Beispiele für Richtlinienanweisungen
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Beschleunigung der Bereitstellung – Beispiele für Richtlinienanweisungen
 author: alexbuckgit
 ms.author: abuck
@@ -9,16 +8,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9a879f2957f1fd7c1d92a9a01381c64cff320d27
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: c582b0a6e836f5198724e5675840f3f8085f55dc
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752672"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803941"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Beschleunigung der Bereitstellung – Beispiele für Richtlinienanweisungen
 
-Einzelne Cloudrichtlinienanweisungen sind Anleitungen für den Umgang mit bestimmten Risiken, die bei Ihrem Risikobewertungsprozess identifiziert wurden. Diese Anweisungen sollten eine präzise Zusammenfassung der Risiken sowie der Pläne für den Umgang mit diesen bereitstellen. Jede Anweisungsdefinition sollte diese Informationen enthalten:
+Einzelne Cloudrichtlinienanweisungen sind Anleitungen für den Umgang mit bestimmten Risiken, die während Ihres Risikobewertungsprozesses identifiziert wurden. Diese Anweisungen sollten eine präzise Zusammenfassung der Risiken sowie der Pläne für den Umgang mit diesen bereitstellen. Jede Anweisungsdefinition sollte diese Informationen enthalten:
 
 - **Technisches Risiko:** Eine Zusammenfassung des Risikos, das diese Richtlinie behandelt.
 - **Richtlinienanweisung:** Eine klare, zusammenfassende Erläuterung der Richtlinienanforderungen.

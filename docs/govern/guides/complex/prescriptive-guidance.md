@@ -1,6 +1,5 @@
 ---
 title: 'Governanceleitfaden für komplexe Unternehmen: Beschreibung der bewährten Methoden'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: In diesem Artikel werden die bewährten Methoden für Governance in komplexen Unternehmen erläutert.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 543f4e59645fb389b00508fbd9d6426ded6f41f9
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: e733db73ce5a77d4b1e81f052804b7a49da4aad5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547648"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806270"
 ---
 # <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>Governanceleitfaden für komplexe Unternehmen: Beschreibung der bewährten Methoden
 
@@ -83,7 +82,7 @@ Entscheidungen zur Ressourcenkennzeichnung bestimmen, wie Metadaten innerhalb ei
   - SLA
   - Environment
   - Anwendungsprototyp
-  - Anwendung
+  - Application
   - Anwendungsbesitzer
 - Diese Werte beeinflussen in Kombination mit der Azure-Verwaltungsgruppe und dem einer bereitgestellten Ressource zugeordneten Abonnement die Entscheidungen in den Bereichen Governance, Betrieb und Sicherheit.
 

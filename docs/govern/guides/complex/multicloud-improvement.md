@@ -1,6 +1,5 @@
 ---
 title: 'Governanceleitfaden für komplexe Unternehmen: Multi-Cloud-Verbesserung'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: 'Governanceleitfaden für komplexe Unternehmen: Multi-Cloud-Verbesserung'
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4279f088dd985b26c87d28a580b8351d45d9384e
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 3da91b65c282e9eba8248645b18cec65763b429b
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547660"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805590"
 ---
 # <a name="governance-guide-for-complex-enterprises-multicloud-improvement"></a>Governanceleitfaden für komplexe Unternehmen: Multi-Cloud-Verbesserung
 
@@ -43,7 +42,7 @@ Das Ziel ist die Integration des übernommenen Unternehmens in den bestehenden B
 
 ## <a name="changes-in-tangible-risks"></a>Änderungen bei konkreten Risiken
 
-**Kosten der Geschäftsübernahme:** Die Übernahme des neuen Unternehmens soll sich in ungefähr fünf Jahren amortisieren. Aufgrund der langsamen Rendite will der Vorstand die Anschaffungskosten so weit wie möglich kontrollieren. Es besteht das Risiko, dass es zu Konflikten zwischen Kostenkontrolle und technischer Integration kommt.
+**Kosten der Geschäftsübernahme:** Die Übernahme des neuen Unternehmens soll sich in ungefähr fünf Jahren amortisieren. Aufgrund der langsamen Rendite will der Vorstand die Anschaffungskosten so weit wie möglich kontrollieren. Es besteht die Gefahr von Konflikten zwischen Kostenkontrolle und technischer Integration.
 
 Dieses Unternehmensrisiko lässt sich auf einige technische Risiken erweitern:
 

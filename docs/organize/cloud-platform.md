@@ -1,6 +1,5 @@
 ---
 title: Cloudplattformfunktionen
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Es wird beschrieben, wie Funktionen für die Cloudplattform geschaffen werden können.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: faeea7a0e42c45894d82b31becca06562fef94b9
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: be5e914bd154ec2db0578714d08383c3c8770a5a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71031931"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76800966"
 ---
 # <a name="cloud-platform-capabilities"></a>Cloudplattformfunktionen
 

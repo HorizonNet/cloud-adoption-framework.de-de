@@ -1,6 +1,5 @@
 ---
 title: Leitfaden zur Entscheidungsfindung für softwaredefinierte Netzwerke
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Erfahren Sie mehr über softwaredefinierte Netzwerke als wichtigen Aspekt bei Azure-Migrationen.
 author: rotycenh
 ms.author: v-tyhopk
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 46d01d6685b4cac55db7ed313b70891b4f9c029f
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 7eb03b01dfab3627117b4d07727f09669e6b0924
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73564789"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806593"
 ---
 # <a name="software-defined-networking-decision-guide"></a>Leitfaden zur Entscheidungsfindung für softwaredefinierte Netzwerke
 

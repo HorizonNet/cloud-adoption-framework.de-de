@@ -1,6 +1,5 @@
 ---
 title: Cloudgovernance-Methodik
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Entwickeln Sie ein Grundverständnis der Methodik, die der Cloudgovernance im Framework für die Cloudeinführung zugrunde liegt.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 431895263473481fbd43fc9c63d832a538a499db
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 402ebf52583ae5e94de52057133990656d8009b5
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547391"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807086"
 ---
 # <a name="cloud-governance-methodology"></a>Cloudgovernance-Methodik
 

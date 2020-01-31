@@ -1,6 +1,5 @@
 ---
 title: Metriken, Indikatoren und Risikotoleranz in der Ressourcenkonsistenz
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Metriken, Indikatoren und Risikotoleranz in der Ressourcenkonsistenz
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2a6f59c09533fc400871d549e32c9b7d56024551
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: e6947ce39cc713f969ee658f7c0d0c269fb358d7
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548073"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805148"
 ---
 # <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>Metriken, Indikatoren und Risikotoleranz in der Ressourcenkonsistenz
 
 Dieser Artikel unterstützt Sie bei der Quantifizierung der Geschäftsrisikotoleranz im Zusammenhang mit der Ressourcenkonsistenz. Das Definieren von Metriken und Indikatoren ermöglicht das Erstellen eines Geschäftsszenarios, mit dem Sie in die Weiterentwicklung der Disziplin „Ressourcenkonsistenz“ investieren können.
 
-## <a name="metrics"></a>metrics
+## <a name="metrics"></a>Metriken
 
 Die Disziplin „Ressourcenkonsistenz“ konzentriert sich auf den Umgang mit Risiken im Zusammenhang mit der Betriebsverwaltung Ihrer Cloudbereitstellungen. Im Rahmen der Risikoanalyse sollten Sie Daten zu Ihren IT-Abläufen sammeln, um zu ermitteln, welches Risiko vorliegt und wie wichtig Investitionen in die Governance der Ressourcenkonsistenz für Ihre geplanten Cloudbereitstellungen ist.
 

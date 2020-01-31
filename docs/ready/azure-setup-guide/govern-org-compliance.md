@@ -1,6 +1,5 @@
 ---
 title: Governance, Sicherheit und Konformität in Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Es wird beschrieben, wie Sie Governance, Sicherheit und Konformität für Ihre Azure-Umgebung einrichten.
 author: tvuylsteke
 ms.author: kfollis
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 7a305e1bd3ef8f3f7325905c523d9fe5ded2fc60
-ms.sourcegitcommit: 3655aa7f3e80249e0b2b562cd40dd750afc82043
+ms.openlocfilehash: c38edb9a5723d99974f5f472453bf4b88ee07bb3
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74251331"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76799606"
 ---
 # <a name="governance-security-and-compliance-in-azure"></a>Governance, Sicherheit und Konformität in Azure
 

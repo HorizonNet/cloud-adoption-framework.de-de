@@ -1,6 +1,5 @@
 ---
 title: Ressourcenkonsistenztools in Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Ressourcenkonsistenztools in Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a09e4748dd805757d9f78e8dd927737ca9a91f7f
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: a2f553285f9d44085cc816c2db34f76fcb02235d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222925"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805182"
 ---
 # <a name="resource-consistency-tools-in-azure"></a>Ressourcenkonsistenztools in Azure
 
@@ -22,10 +21,10 @@ ms.locfileid: "71222925"
 
 Im Folgenden ist eine Liste der Azure-Tools aufgeführt, die zur Ausreifung der Richtlinien und Prozesse, die diese Governance-Disziplin unterstützen, beitragen können.
 
-| Tool | [Azure-Portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Backup](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
+| Tool | [Azure portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Backup](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
 |---------|---------|---------|---------|---------|---------|---------|---------|
 | Bereitstellen von Ressourcen                             | Ja | Ja | Ja | Ja | Nein  | Nein | Nein |
-| Verwalten von Ressourcen                             | Ja | Ja | Ja | Ja | Nein  | Nein | Nein |
+| Ressourcen verwalten                             | Ja | Ja | Ja | Ja | Nein  | Nein | Nein |
 | Bereitstellen von Ressourcen mithilfe von Vorlagen             | Nein  | Ja | Nein  | Ja | Nein  | Nein | Nein |
 | Orchestrierte Umgebungsbereitstellung          | Nein  | Nein  | Ja | Nein  | Nein  | Nein | Nein |
 | Definieren von Ressourcengruppen                       | Ja | Ja | Ja | Nein  | Nein  | Nein | Nein |
@@ -46,7 +45,7 @@ Im Folgenden ist eine Liste der Azure-Tools aufgeführt, die zur Ausreifung der 
 
 Zusammen mit diesen Ressourcenkonsistenztools und -funktionen müssen Sie Ihre bereitgestellten Ressourcen auf Leistungs- und Integritätsprobleme überwachen. [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) ist die-Standardlösung für Überwachung und Berichterstellung in Azure. Azure Monitor bietet Funktionen für die Überwachung Ihrer Cloudressourcen. Diese Liste zeigt, welche Funktion für allgemeine Überwachungsanforderungen geeignet ist.
 
-| Tool | [Azure-Portal](https://azure.microsoft.com/features/azure-portal) | [Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview) | [Log Analytics](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview) | [Azure Monitor-REST-API](https://docs.microsoft.com/rest/api/monitor) |
+| Tool | [Azure portal](https://azure.microsoft.com/features/azure-portal) | [Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview) | [Log Analytics](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview) | [Azure Monitor-REST-API](https://docs.microsoft.com/rest/api/monitor) |
 |----------------------------------------------------|--------------|----------------------|---------------|------------------------|
 | Protokollieren von Telemetriedaten von VMs                 | Nein           | Nein                   | Ja           | Nein                     |
 | Protokollieren von Telemetriedaten von virtuellen Netzwerken              | Nein           | Nein                   | Ja           | Nein                     |

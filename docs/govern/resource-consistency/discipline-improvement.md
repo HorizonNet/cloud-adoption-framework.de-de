@@ -1,6 +1,5 @@
 ---
 title: Verbesserung der Disziplin „Ressourcenkonsistenz“
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Verbesserung der Disziplin „Ressourcenkonsistenz“
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9d465716784d125edebaf44d8a1bae2f369b9d5a
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 0113c37aaca23374021d6790bcbb1db751ffcf4a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72548082"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807239"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>Verbesserung der Disziplin „Ressourcenkonsistenz“
 
@@ -35,7 +34,7 @@ Es ist unmöglich, die Anforderungen aller Unternehmen in einem einzigen Dokumen
 
 Diese Entwicklungsphase der Governance überbrückt die Lücke zwischen Geschäftsergebnissen und umsetzbaren Strategien. Während dieses Prozesses definiert das Führungsteam bestimmte Metriken, ordnet diese Metriken dem digitalen Bestand zu und beginnt mit der Planung der gesamten Migration.
 
-**Mindestens empfohlene Aktivitäten**:
+**Mindestens empfohlene Aktivitäten:**
 
 - Werten Sie Ihre [Ressourcenkonsistenz-Toolkette](./toolchain.md) aus.
 - Lernen Sie die Lizenzanforderungen für Ihre Cloudstrategie kennen.
@@ -63,7 +62,7 @@ Für die erfolgreiche Migration einer Umgebung muss eine Reihe von technischen u
 - Implementieren Sie priorisierte Ressourcenbereitstellungsaufgaben in Ihrem priorisierten Migrationsbacklog.
 - Entwickeln Sie Schulungsmaterialien und Dokumentation, Materialien zum Bekanntmachen der Migration, Incentives und weitere Programme, um die Akzeptanz durch die Benutzer zu unterstützen.
 
-**Potenzielle Aktivitäten**:
+**Potenzielle Aktivitäten:**
 
 - Entscheiden Sie sich für eine [Abonnemententwurfsstrategie](../../decision-guides/subscriptions/index.md), und wählen Sie die Abonnementmuster aus, die am besten zu Ihren Organisations- und Workloadanforderungen passen.
 - Nutzen Sie eine Strategie für die [Konsistenz von Ressourcen](../../decision-guides/resource-consistency/index.md), um Architekturrichtlinien im Lauf der Zeit durchzusetzen.
@@ -114,7 +113,7 @@ Nachdem die Transformation abgeschlossen ist, müssen Governance und Betrieb wä
 - Optimieren Sie die Architekturrichtlinien, um zukünftige Einführungsprozesse zu unterstützen.
 - Schulen Sie die betroffenen Teams regelmäßig, um die kontinuierliche Einhaltung der Architekturrichtlinien sicherzustellen.
 
-**Potenzielle Aktivitäten**:
+**Potenzielle Aktivitäten:**
 
 - Passen Sie die Pläne vierteljährlich an, um Änderungen an den tatsächlichen Ressourcen widerzuspiegeln.
 - Wenden Sie bei zukünftigen Bereitstellungen Governanceanforderungen automatisch an, und setzen Sie sie durch.

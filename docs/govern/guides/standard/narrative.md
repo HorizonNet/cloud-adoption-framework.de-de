@@ -1,6 +1,5 @@
 ---
 title: 'Governanceleitfaden für Standardunternehmen: Die Geschichte hinter der Governancestrategie'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Diese Geschichte schildert einen Anwendungsfall für die Governance während der Journey zur Cloudeinführung eines Standardunternehmens.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8bf9b65c71defd57c319f46a83b5d4540967b012
-ms.sourcegitcommit: 35c162d2d09ec1c4a57d3d57a5db1d56ee883806
+ms.openlocfilehash: 1e6edb6db4663c9a3b78394dc715376f697e6f5e
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72547445"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805522"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>Governanceleitfaden für Standardunternehmen: Die Geschichte hinter der Governancestrategie
 
@@ -34,7 +33,7 @@ Das Unternehmen besitzt das folgende Geschäftsprofil:
 - Das Unternehmen wird als einzelne Geschäftseinheit geführt, den einzelnen Funktionen – z.B. Vertrieb, Marketing, Betrieb und IT – sind Budgets zugeordnet.
 - Das Unternehmen betrachtet den größten Teil der IT als Kostenverursacher oder Kostenstelle.
 
-## <a name="current-state"></a>Aktueller Zustand
+## <a name="current-state"></a>Aktueller Status
 
 Aktuell befinden sich IT und Cloudbetrieb des Unternehmens in folgendem Zustand:
 

@@ -1,6 +1,5 @@
 ---
 title: Einrichten einer ersten Grundlage für die Cloud Governance
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Hier wird der Einstieg in die Cloud Governance erläutert. Dazu wird eine erste Grundlage für die Cloud Governance eingerichtet.
 author: BrianBlanchard
 ms.author: brblanch
@@ -10,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: aae20779a4009692ebf52602341d81939dee01ea
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 290bffadc608d8ff9d593e5231242e3555732bf3
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73239526"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803788"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>Einrichten einer ersten Grundlage für die Cloud Governance
 
@@ -40,7 +39,7 @@ Im Folgenden werden zwei verschiedene Beispiele für anfängliche Governancegrun
             <div class="cardPadding" style="display: flex;">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Standardleitfaden für die Governance</h3>
+                        <h3>Standardgovernanceleitfaden</h3>
                         <p>Ein Leitfaden für die meisten Organisationen, basierend auf dem empfohlenen Modell mit zwei Abonnements, das für Bereitstellungen in mehreren Regionen konzipiert wurde, aber nicht für öffentliche Clouds und Sovereign/Government Clouds gilt.</p>
                     </div>
                 </div>

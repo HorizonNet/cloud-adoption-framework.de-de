@@ -1,6 +1,5 @@
 ---
 title: Bereitstellen einer Migrationsinfrastruktur
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Erfahren Sie, wie Contoso eine Azure-Infrastruktur für die Migration zu Azure einrichtet.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 44fb2e8d7fc71dfa676f5711ab50c2201d67f260
-ms.sourcegitcommit: 50788e12bb744dd44da14184b3e884f9bddab828
+ms.openlocfilehash: 4d8a7b53722de4b356753626d0cc695fa1a77596
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74160379"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807511"
 ---
 # <a name="deploy-a-migration-infrastructure"></a>Bereitstellen einer Migrationsinfrastruktur
 
@@ -220,7 +219,7 @@ Um die Integration zu erleichtern, verwendet Contoso das [Azure AD Connect-Tool]
 
 5. In **Bereit zur Konfiguration** wählen sie **Starten Sie den Synchronisierungsvorgang, nachdem die Konfiguration abgeschlossen wurde** aus, um die Synchronisierung sofort zu starten. Anschließend führen sie die Installation durch.
 
-Beachten Sie Folgendes:
+Beachten Sie dabei Folgendes:
 
 - Contoso hat eine direkte Verbindung mit Azure. Wenn sich Ihr lokales Active Directory hinter einem Proxy befindet, lesen Sie diesen [Artikel](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-troubleshoot-connectivity).
 
@@ -521,7 +520,7 @@ VNET-ASR-CUS ist das gleiche einfache Subnetz wie das Produktions-VNET in der Re
 
 #### <a name="configure-peered-connections"></a>Konfigurieren von Verbindungen mit Peering
 
-Der Hub in jeder Region ist mittels Peering mit dem Hub in der anderen Region und mit allen VNets innerhalb der Hubregion verbunden. Dadurch können Hubs kommunizieren und alle VNets innerhalb einer Region „sehen“. Beachten Sie Folgendes:
+Der Hub in jeder Region ist mittels Peering mit dem Hub in der anderen Region und mit allen VNets innerhalb der Hubregion verbunden. Dadurch können Hubs kommunizieren und alle VNets innerhalb einer Region „sehen“. Beachten Sie dabei Folgendes:
 
 - Durch Peering wird eine Verbindung mit zwei Seiten erstellt. Eine vom einleitenden Peer auf dem ersten VNet, die andere auf dem zweiten VNet.
 - In einer Hybridbereitstellung muss Datenverkehr, der zwischen Peers übertragen wird, über die VPN-Verbindung zwischen dem lokalen Rechenzentrum und Azure sichtbar sein. Dies wird mithilfe einiger spezifischer Einstellungen ermöglicht, die für Verbindungen mit Peering festgelegt werden müssen.

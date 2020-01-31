@@ -1,6 +1,5 @@
 ---
 title: Skalieren einer Migration zu Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Erfahren Sie, wie Contoso eine Migration in großem Umfang nach Azure behandelt.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: ab5e8cdb7058a773b4085f01a6be64b4521e6b69
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 8a807bfc20289339221056b9b0798260aaddbfd8
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566446"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807307"
 ---
 # <a name="scale-a-migration-to-azure"></a>Skalieren einer Migration zu Azure
 
@@ -62,10 +61,10 @@ Nach dem Planen und Einrichten einer [Azure-Infrastruktur](./contoso-migration-i
 
 Nachdem Contoso die geschäftlichen Faktoren und die Migrationsziele bestimmt hat, legt das Unternehmen eine aus vier Phasen bestehende Vorgehensweise für den Migrationsprozess fest:
 
-- **Phase 1: Bewerten.** Die aktuellen Assets werden ermittelt, und es wird bewertet, ob diese sich für die Migration zu Azure eignen.
-- **Phase 2: Migrieren.** Die Assets werden zu Azure verschoben. Auf welche Weise die Apps und Objekte nach Azure verschoben werden, richtet sich nach der App und den Zielen, die erreicht werden sollen.
-- **Phase 3: Optimieren.** Nach dem Verschieben der Ressourcen zu Azure muss Contoso sie optimieren, um maximale Leistung und Effizienz zu erzielen.
-- **Phase 4: Sichern und Verwalten.** Wenn alles eingerichtet ist, nutzt Contoso die Azure-Ressourcen und -Dienste für Sicherheit und Verwaltung, um Cloud-Apps in Azure zu steuern, zu schützen und zu überwachen.
+- **Phase 1: Bewerten.** Die aktuellen Assets werden ermittelt, und es wird bewertet, ob diese sich für die Migration zu Azure eignen.
+- **Phase 2: Migrieren.** Die Assets werden zu Azure verschoben. Auf welche Weise die Apps und Objekte nach Azure verschoben werden, richtet sich nach der App und den Zielen, die erreicht werden sollen.
+- **Phase 3: Optimieren.** Nach dem Verschieben der Ressourcen zu Azure muss Contoso sie optimieren, um maximale Leistung und Effizienz zu erzielen.
+- **Phase 4: Sichern und Verwalten.** Wenn alles eingerichtet ist, nutzt Contoso die Azure-Ressourcen und -Dienste für Sicherheit und Verwaltung, um Cloud-Apps in Azure zu steuern, zu schützen und zu überwachen.
 
 Diese Phasen finden nicht für alle Organisationsteile zur gleichen Zeit statt. Jeder Teil des Migrationsprojekts von Contoso befindet sich in einer anderen Phase des Bewertungs- und Migrationsprozesses. Optimierung, Sicherheit und Verwaltung finden jederzeit statt.
 
@@ -225,7 +224,7 @@ Contoso hat bereits ein [Proof of Concept durchgeführt](./contoso-migration-reh
 
 Contoso plant, eine Reihe von „Lift & Shift“-Migrationen durchzuführen. Um sicherzustellen, dass dies funktioniert, repliziert Site Recovery immer jeweils etwa 100 VMs gleichzeitig. Contoso muss eine Kapazitätsplanung für die vorgeschlagene Site Recovery-Migration ausführen, um herauszufinden, wie dies funktioniert.
 
-- Zu diesem Zweck muss Contoso Informationen zu den Datenverkehrsvolumen sammeln. Dies gilt insbesondere für Folgendes:
+- Zu diesem Zweck muss Contoso Informationen zu den Datenverkehrsvolumen sammeln. Dies gilt insbesondere für:
   - Contoso muss die Änderungsrate für die VMs ermitteln, die repliziert werden sollen.
   - Contoso muss auch die Netzwerkkonnektivität zwischen dem lokalen Standort und Azure in Betracht ziehen.
 - In Bezug auf die Kapazitäts- und Volumenanforderungen muss Contoso basierend auf der täglichen Datenänderungsrate für die erforderlichen VMs genügend Bandbreite zuordnen, um die RPO (Recovery Point Objective) zu erfüllen.
@@ -262,8 +261,8 @@ Contoso muss ermitteln, wie diese Komponenten unter Berücksichtigung von Überl
 --- | ---
 **Maximale tägliche Änderungsrate** | Ein einzelner Prozessserver kann eine tägliche Änderungsrate von bis zu 2 TB verarbeiten. Da eine VM nur einen Prozessserver verwenden kann, beträgt die maximale tägliche Datenänderungsrate, die für eine replizierte VM unterstützt wird, 2 TB.
 **Maximaler Durchsatz** | Ein Azure Storage-Konto kann maximal 20.000 Anforderungen pro Sekunde verarbeiten, und die Anzahl von Eingabe-/Ausgabevorgängen pro Sekunde (IOPS) für eine replizierende VM sollte unter diesem Grenzwert liegen. Wenn Ihre VM z.B. über 5 Datenträger verfügt und jeder Datenträger 120 IOPS (mit einer Größe von 8 K) für die Quelle generiert, wird das Azure-Limit von 500 IOPS pro Datenträger eingehalten.<br/><br/> Beachten Sie, dass die Anzahl von erforderlichen Speicherkonten dem IOPS-Gesamtwert des Quellcomputers geteilt durch 20.000 entspricht. Ein replizierter Computer darf nur zu einem einzigen Speicherkonto in Azure gehören.
-**Konfigurationsserver** | Basierend auf der Schätzung von Contoso, dass etwa 100–200 VMs gleichzeitig repliziert werden, und basierend auf den [Größenanforderungen des Konfigurationsservers](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#size-recommendations-for-the-configuration-server-and-inbuilt-process-server) berechnet Contoso den erforderlichen Konfigurationsservercomputer folgendermaßen:<br/><br/> CPU: 16 vCPUs (2 Sockets &#215; 8 Kerne @ 2,5 GHz)<br/><br/> Memory: 32 GB<br/><br/> Cachedatenträger: 1 TB<br/><br/> Datenänderungsrate: 1 TB bis 2 TB<br/><br/> Zusätzlich zur Erfüllung der Größenanforderungen muss Contoso sicherstellen, dass der Konfigurationsserver optimal platziert wird: im gleichen Netzwerk und LAN-Segment wie die VMs, die migriert werden sollen.
-**Prozessserver** | Contoso stellt einen eigenständigen dedizierten Prozessserver bereit, der 100–200 VMs replizieren kann:<br/><br/> CPU: 16 vCPUs (2 Sockets &#215; 8 Kerne @ 2,5 GHz)<br/><br/> Memory: 32 GB<br/><br/> Cachedatenträger: 1 TB<br/><br/> Datenänderungsrate: 1 TB bis 2 TB<br/><br/> An den Prozessserver werden hohe Anforderungen gestellt, daher sollte er sich auf einem ESXi-Host befinden, der die Datenträger-E/A-Vorgänge, den Netzwerkdatenverkehr und die CPU-Anforderungen für die Replikation verarbeiten kann. Contoso zieht für diesen Zweck einen dedizierten Host in Betracht.
+**Konfigurationsserver** | Basierend auf der Schätzung von Contoso, dass etwa 100–200 VMs gleichzeitig repliziert werden, und basierend auf den [Größenanforderungen des Konfigurationsservers](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#size-recommendations-for-the-configuration-server-and-inbuilt-process-server) berechnet Contoso den erforderlichen Konfigurationsservercomputer folgendermaßen:<br/><br/> CPU: 16 vCPUs (2 Sockets &#215; 8 Kerne @ 2,5 GHz)<br/><br/> Memory: 32 GB<br/><br/> Cachedatenträger: 1 TB<br/><br/> Datenänderungsrate: 1 TB bis 2 TB<br/><br/> Zusätzlich zur Erfüllung der Größenanforderungen muss Contoso sicherstellen, dass der Konfigurationsserver optimal platziert wird: im gleichen Netzwerk und LAN-Segment wie die VMs, die migriert werden sollen.
+**Prozessserver** | Contoso stellt einen eigenständigen dedizierten Prozessserver bereit, der 100–200 VMs replizieren kann:<br/><br/> CPU: 16 vCPUs (2 Sockets &#215; 8 Kerne @ 2,5 GHz)<br/><br/> Memory: 32 GB<br/><br/> Cachedatenträger: 1 TB<br/><br/> Datenänderungsrate: 1 TB bis 2 TB<br/><br/> An den Prozessserver werden hohe Anforderungen gestellt, daher sollte er sich auf einem ESXi-Host befinden, der die Datenträger-E/A-Vorgänge, den Netzwerkdatenverkehr und die CPU-Anforderungen für die Replikation verarbeiten kann. Contoso zieht für diesen Zweck einen dedizierten Host in Betracht.
 **Netzwerk** | Contoso hat die aktuelle Site-to-Site-VPN-Infrastruktur überprüft und beschlossen, Azure ExpressRoute zu implementieren. Die Implementierung ist von entscheidender Bedeutung, da sie die Latenz senken und die Bandbreite bei der Verbindung mit „USA, Osten 2“ verbessern wird, der primären Azure-Region von Contoso.<br/><br/> **Überwachung:** Contoso muss die vom Prozessserver übertragenen Daten sorgfältig überwachen. Wenn die Daten die Netzwerkbandbreite überlasten, zieht Contoso eine [Drosselung der Bandbreite für den Prozessserver](https://docs.microsoft.com/azure/site-recovery/site-recovery-plan-capacity-vmware#control-network-bandwidth) in Betracht.
 **Azure Storage** | Für die Migration muss Contoso den richtigen Typ und die richtige Anzahl von Azure Storage-Zielkonten ermitteln. Site Recovery repliziert VM-Daten in den Azure-Speicher.<br/><br/> Site Recovery kann eine Replikation in Storage-Konten vom Typ „Standard“ oder „Premium“ (SSD) ausführen.<br/><br/> Um die richtigen Entscheidungen zum Thema Speicher zu treffen, muss Contoso die [Speicherlimits](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types) überprüfen und das erwartete Wachstum und die damit verbundene erhöhte Nutzung im Lauf der Zeit berücksichtigen. Angesichts des Migrationstempos und der Priorität von Migrationsvorgängen hat Contoso beschlossen, SSD Premium-Datenträger zu verwenden.<br/><br/>
 Contoso hat die Entscheidung getroffen, Managed Disks für alle in Azure bereitgestellten VMs zu nutzen. Der erforderliche IOPS-Wert bestimmt, ob es sich bei den Datenträgern um HDD Standard-Datenträger, SSD Standard-Datenträger oder Premium-Datenträger (SSD) handelt.<br/><br/>
@@ -298,7 +297,7 @@ Neben DMS kann Contoso weitere Tools und Dienste nutzen, um VM-Informationen zu 
 - Diese Tools und Dienste verfügen über Skripts zur Unterstützung manueller Migrationen. Sie stehen im GitHub-Repository zur Verfügung.
 - Es kann auch eine Reihe von [Partnertools](https://azure.microsoft.com/migration/partners) für die Migration verwendet werden.
 
-## <a name="phase-3-optimize"></a>Phase 3: Optimierung
+## <a name="phase-3-optimize"></a>Phase 3: Optimieren
 
 Nachdem Contoso Ressourcen nach Azure verschoben hat, muss das Unternehmen diese Ressourcen optimieren, um die Leistung zu verbessern. Zudem muss mithilfe von Kostenmanagementtools der ROI maximiert werden. Angesichts der Tatsache, dass Azure ein Dienst mit nutzungsbasierter Bezahlung ist, muss Contoso unbedingt wissen, welche Leistung die Systeme erbringen, und es muss sichergestellt werden, dass die Systeme richtig dimensioniert sind.
 

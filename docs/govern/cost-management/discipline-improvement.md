@@ -1,6 +1,5 @@
 ---
 title: Verbesserung der Disziplin „Kostenmanagement“
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Verbesserung der Disziplin „Kostenmanagement“
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1b59121bc0679475079dc1a7b5d3770cc87d7523
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: ebd297f4fbebd451f47bbb6b88be56e1ccc489be
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753092"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806474"
 ---
 # <a name="cost-management-discipline-improvement"></a>Verbesserung der Disziplin „Kostenmanagement“
 
@@ -35,13 +34,13 @@ Es ist unmöglich, die Anforderungen aller Unternehmen in einem einzigen Dokumen
 
 Diese Entwicklungsphase der Governance überbrückt die Lücke zwischen Geschäftsergebnissen und umsetzbaren Strategien. Während dieses Prozesses definiert das Führungsteam bestimmte Metriken, ordnet diese Metriken dem digitalen Bestand zu und beginnt mit der Planung der gesamten Migration.
 
-**Mindestens empfohlene Aktivitäten**:
+**Mindestens empfohlene Aktivitäten:**
 
 - Bewerten Sie Ihre Optionen für eine [Kostenmanagement-Toolkette](./toolchain.md).
 - Entwerfen Sie ein Dokument mit Architekturrichtlinien, und geben Sie dieses an die wichtigsten Beteiligten weiter.
 - Schulen und beteiligen Sie die Personen und Teams, die von diesen Architekturrichtlinien betroffen sind.
 
-**Potenzielle Aktivitäten**:
+**Potenzielle Aktivitäten:**
 
 - Sorgen Sie für finanzielle Entscheidungen, die die geschäftliche Begründung für Ihre Cloudstrategie unterstützen.
 - Überprüfen Sie Lernmetriken, die Sie für Berichte zur erfolgreichen Zuteilung der finanziellen Mittel verwenden.
@@ -62,7 +61,7 @@ Für die erfolgreiche Migration einer Umgebung muss eine Reihe von technischen u
 - Entwickeln Sie Schulungsmaterialien und Dokumentation, Materialien zum Bekanntmachen der Migration, Incentives und weitere Programme, um die Akzeptanz durch die Benutzer zu unterstützen.
 - Ermitteln Sie, ob der Bedarf an zu erwerbenden Komponenten zu Ihrem Budget und Ihren Zielen passt.
 
-**Potenzielle Aktivitäten**:
+**Potenzielle Aktivitäten:**
 
 - Richten Sie Ihre Budgetpläne an der [Abonnementstrategie](../../decision-guides/subscriptions/index.md) aus, die Ihr grundlegendes Besitzmodell definiert.
 - Nutzen Sie Ihre [Strategie für die Konsistenz von Ressourcen](../../decision-guides/resource-consistency/index.md), um Architektur- und Kostenrichtlinien im Lauf der Zeit durchzusetzen.
@@ -96,7 +95,7 @@ Nachdem die Transformation abgeschlossen ist, müssen Governance und Betrieb wä
 - Optimieren Sie die Architekturrichtlinien, um zukünftige Einführungsprozesse zu unterstützen.
 - Schulen Sie die betroffenen Teams regelmäßig, um die kontinuierliche Einhaltung der Architekturrichtlinien sicherzustellen.
 
-**Potenzielle Aktivitäten**:
+**Potenzielle Aktivitäten:**
 
 - Bewerten Sie das Cloudbusiness einmal im Vierteljahr, um einen Bericht über den Nutzen für das Geschäft und die zugehörigen Kosten zu erstellen.
 - Passen Sie die Pläne vierteljährlich an, um Änderungen an den tatsächlichen Ausgaben widerzuspiegeln.

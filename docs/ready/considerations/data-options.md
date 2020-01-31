@@ -1,6 +1,5 @@
 ---
 title: Überprüfen Ihrer Datenoptionen
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Überprüfen Sie Ihre Datenoptionen für Azure-Workloads.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 950465788053fa0977a158a5363cb6271e65b3e6
-ms.sourcegitcommit: 57390e3a6f7cd7a507ddd1906e866455fa998d84
+ms.openlocfilehash: 434fb0982b0749a6fcb117b86d8cf3bb6335f13a
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73243325"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806882"
 ---
 # <a name="review-your-data-options"></a>Überprüfen Ihrer Datenoptionen
 
@@ -66,7 +65,7 @@ Mit Azure können Sie Dienste in der Größenordnung bereitstellen, die Sie ben�
 
 Die meisten Datenbankdienste sind in den meisten Azure-Regionen allgemein verfügbar. Es gibt aber einige Regionen (vor allem für Behörden), in denen nur ein Teil dieser Produkte unterstützt wird. Bevor Sie die Entscheidung treffen, in welchen Regionen Sie Ihre Datenbankressourcen bereitstellen, empfehlen wir Ihnen die [Seite zu den Regionen](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=data-factory,sql-server-stretch-database,redis-cache,database-migration,sql-data-warehouse,postgresql,mariadb,cosmos-db,mysql,sql-database) , um den aktuellen Status der regionalen Verfügbarkeit zu überprüfen.
 
-Sie können die [Seite „Azure-Regionen“](https://azure.microsoft.com/global-infrastructure/regions) besuchen, um weitere Informationen zur globalen Azure-Infrastruktur zu erhalten. Sie können auch die Seite mit den  [verfügbaren Produkten nach Region](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=all) verwenden, um spezifische Informationen dazu zu erhalten, welche Dienste in den einzelnen Azure-Regionen verfügbar sind.
+Auf der Seite [Azure-Regionen](https://azure.microsoft.com/global-infrastructure/regions) erhalten Sie weitere Informationen zur globalen Azure-Infrastruktur. Sie können auch die Seite mit den  [verfügbaren Produkten nach Region](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=all) verwenden, um spezifische Informationen dazu zu erhalten, welche Dienste in den einzelnen Azure-Regionen verfügbar sind.
 
 ## <a name="data-residency-and-compliance-requirements"></a>Anforderungen an Datenresidenz und -konformität
 

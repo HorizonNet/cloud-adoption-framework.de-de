@@ -1,6 +1,5 @@
 ---
 title: Richtlinie zur cloudnativen Sicherheitsbaseline
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Richtlinie zur cloudnativen Sicherheitsbaseline
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9d11dff3ce8900d3dc95e1061af87313eae47a1b
-ms.sourcegitcommit: 6f287276650e731163047f543d23581d8fb6e204
+ms.openlocfilehash: 9921e04f0b066023842c2ff9009d9e159b759315
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73752538"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76808939"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Richtlinie zur cloudnativen Sicherheitsbaseline
 
@@ -59,7 +58,7 @@ Eine cloudnative Richtlinie für Netzwerkelemente kann beispielsweise folgende A
 - Die native Microsoft Azure Firewall schützt Hosts durch beschränkten Portzugriff vor schädlichem Netzwerkdatenverkehr. Ein gutes Beispiel für diese Richtlinie ist eine Anforderung, direkten Datenverkehr für einen virtuellen Computer über SSH/RDP zu blockieren (oder nicht zu aktivieren).
 - Dienste wie Web Application Firewall (WAF) von Azure Application Gateway und Azure DDoS Protection schützen Anwendungen und stellen die Verfügbarkeit von in Azure ausgeführten virtuellen Computern sicher. Diese Features sollten nicht deaktiviert werden.
 
-### <a name="data-protection"></a>Datenschutz
+### <a name="data-protection"></a>Schutz von Daten
 
 Einer der Schlüssel zum Schutz von Daten in der Cloud ist die Berücksichtigung der möglichen Zustände, in denen Ihre Daten auftreten können. Außerdem sollten Sie die Steuerungsmöglichkeiten beachten, die für jeden Zustand verfügbar sind. Im Rahmen der bewährten Methoden für Datensicherheit und Verschlüsselung in Azure befassen sich die Empfehlungen mit den folgenden Datenzuständen:
 

@@ -1,6 +1,5 @@
 ---
 title: Tools für die Beschleunigung der Bereitstellung in Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Tools für die Beschleunigung der Bereitstellung in Azure
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d47162b3e1a6a303e8b346146948667bc42c2326
-ms.sourcegitcommit: d19e026d119fbe221a78b10225230da8b9666fe1
+ms.openlocfilehash: 6617fe95f885836241e4b0f16bc17652f36c5a7d
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71222676"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76806321"
 ---
 # <a name="deployment-acceleration-tools-in-azure"></a>Tools für die Beschleunigung der Bereitstellung in Azure
 
@@ -36,7 +35,7 @@ Im Folgenden ist eine Liste der Azure-Tools aufgeführt, die zur Ausreifung der 
 
 Im Folgenden finden Sie zusätzliche Tools, die ggf. für die Umsetzung spezieller Ziele im Zusammenhang mit der Beschleunigung der Bereitstellung erforderlich sind. Häufig kommen diese Tools außerhalb des Governance-Teams zum Einsatz, werden aber immer noch als Aspekt der Disziplin „Beschleunigung der Bereitstellung“ betrachtet.
 
-|  | [Azure-Portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) | [Azure DevOps](https://docs.microsoft.com/azure/devops/index) | [Azure Backup](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
+|  | [Azure portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)  | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) | [Azure DevOps](https://docs.microsoft.com/azure/devops/index) | [Azure Backup](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
 |---------|---------|---------|---------|---------|---------|---------|
 |Manuelle Bereitstellung (einzelne Ressource)     | Ja | Ja  | Nein  | Nicht effizient | Nein | Ja |
 |Manuelle Bereitstellung (vollständige Umgebung)     | Nicht effizient | Ja | Nein  | Nicht effizient | Nein | Ja |

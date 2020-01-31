@@ -1,6 +1,5 @@
 ---
 title: Bewährte Methoden für Kostenermittlung und Größenanpassung von Workloads, die zu Azure migriert werden
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Sie erhalten bewährte Methoden für Kostenermittlung und Größenanpassung von Workloads, die zu Azure migriert werden.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b358c4d07e4adb30c0420c9d1b3bc85c25e9ce95
-ms.sourcegitcommit: 443c28f3afeedfbfe8b9980875a54afdbebd83a8
+ms.openlocfilehash: 03fb8ab37657ea500c342884e2ae2ca1c1290fca
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71024937"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76803720"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Bewährte Methoden für Kostenermittlung und Größenanpassung von Workloads, die zu Azure migriert werden
 
@@ -33,7 +32,7 @@ Bevor Sie Ihre Workloads in die Cloud verschieben, schätzen Sie die monatlichen
 
 Die bewährten Methoden in diesem Abschnitt helfen Ihnen, Kosten abzuschätzen, die Größe von virtuellen Computern und Speicher richtig anzupassen, Azure-Hybridvorteile zu nutzen, reservierte virtuelle Computer zu verwenden und Cloudausgaben über Abonnements hinweg abzuschätzen.
 
-## <a name="best-practice-estimate-monthly-workload-costs"></a>Best Practice: Monatliche Workloadkosten abschätzen
+## <a name="best-practice-estimate-monthly-workload-costs"></a>Bewährte Methode: Monatliche Workloadkosten abschätzen
 
 Um eine Prognose für Ihre monatliche Rechnung für migrierte Workloads aufzustellen, gibt es eine Reihe von Tools, die Sie verwenden können.
 
@@ -59,7 +58,7 @@ Um eine Prognose für Ihre monatliche Rechnung für migrierte Workloads aufzuste
 - [Lesen von Informationen zu](https://docs.microsoft.com/azure/migrate/concepts-assessment-calculation) Azure Migrate-Bewertungen.
 - [Weitere Informationen](https://docs.microsoft.com/azure/dms/dms-overview) über den Azure Database Migration Service.
 
-## <a name="best-practice-right-size-vms"></a>Best Practice: Richtige Größe von virtuellen Computern anpassen
+## <a name="best-practice-right-size-vms"></a>Bewährte Methode: Richtige Größe von virtuellen Computern anpassen
 
 Sie können eine Reihe von Optionen auswählen, wenn Sie virtuelle Azure-Computer bereitstellen, um Workloads zu unterstützen. Jeder VM-Typ verfügt über bestimmte Features und verschiedene Kombinationen aus CPU, Arbeitsspeicher und Datenträgern. VMs werden wie folgt gruppiert:
 
@@ -76,13 +75,13 @@ Sie können eine Reihe von Optionen auswählen, wenn Sie virtuelle Azure-Compute
 - Jeder Typ umfasst eine bestimmte Anzahl darin enthaltener VM-Serien.
 - Außerdem können Sie, wenn Sie eine VM innerhalb einer Serie auswählen, die VM nur innerhalb dieser Serie zentral hoch- oder herunterskalieren. Beispielsweise kann eine DSv2\_2 zentral zu DSv2\_4 hochskaliert werden, aber sie kann nicht in eine andere Serie wie Fsv2\_2 geändert werden.
 
-**Weitere Informationen:**
+**Weitere Informationen**:
 
 - [Weitere Informationen](https://docs.microsoft.com/azure/virtual-machines/windows/sizes) zu VM-Typen und -Größenanpassung sowie zur Zuordnung von Größen zu Typen.
 - [Planen der](https://docs.microsoft.com/azure/cloud-services/cloud-services-sizes-specs) VM-Größenanpassung.
 - [Lesen](https://docs.microsoft.com/azure/migrate/contoso-migration-assessment) einer Beispielbewertung für das fiktive Unternehmen Contoso.
 
-## <a name="best-practice-select-the-right-storage"></a>Best Practice: Den richtigen Speicher auswählen
+## <a name="best-practice-select-the-right-storage"></a>Bewährte Methode: Den richtigen Speicher auswählen
 
 Das Optimieren und Verwalten von lokalem Speicher (SAN oder NAS) sowie der Netzwerke, die diesen unterstützen, können teuer und zeitaufwendig sein. Datei(Speicher)daten werden häufig zur Cloud migriert, um Schwierigkeiten beim Betrieb und der Verwaltung zu beseitigen. Microsoft bietet verschiedene Optionen zum Verschieben von Daten in Azure, und Sie müssen sich hinsichtlich dieser Optionen entscheiden. Die Auswahl des richtigen Speichertyps für Daten kann Ihrer Organisation jeden Monat mehrere tausend Euro sparen. Ein paar Überlegungen:
 
@@ -146,7 +145,7 @@ Speicherkonten können verschiedene Arten von Redundanz für Resilienz und Hochv
 **Geografisch redundanter Speicher (GRS)** | Schützt vor dem Ausfall einer vollständigen Region, indem Daten in eine sekundäre Region repliziert werden, die mehrere hundert Kilometer vom primären Speicherort der Quelldaten entfernt ist. Bietet eine Dauerhaftigkeit von mindestens 99,99999999999999 % (16 Neunen) für Objekte in einem bestimmten Jahr. | Replikatdaten sind nur verfügbar, wenn Microsoft ein Failover in die sekundäre Region initiiert. Kommt es zu einem Failover, sind Lese- und Schreibzugriff verfügbar.
 **Georedundanter Speicher mit Lesezugriff (RA-GRS)** | Ähnlich wie GRS. Bietet eine Dauerhaftigkeit von mindestens 99,99999999999999 % (16 Neunen) für Objekte in einem bestimmten Jahr. | Bietet außerdem 99,99 % Leseverfügbarkeit, indem Lesezugriff aus der zweiten für GRS verwendeten Region zugelassen wird.
 
-**Weitere Informationen:**
+**Weitere Informationen**:
 
 - [Sehen Sie sich](https://azure.microsoft.com/pricing/details/storage) die Preise für Azure Storage an.
 - [Weitere Informationen zum](https://docs.microsoft.com/azure/storage/common/storage-import-export-service) Azure Import/Export für die Migration großer Datenmengen zu Azure-Blobs und Azure Files.
@@ -156,13 +155,13 @@ Speicherkonten können verschiedene Arten von Redundanz für Resilienz und Hochv
 - Informationen zu [Speicherredundanz](https://docs.microsoft.com/azure/storage/common/storage-redundancy), [LRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-lrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), [ZRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-zrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), [GRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json) und [GRS mit Lesezugriff](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#read-access-geo-redundant-storage).
 - [Weitere Informationen zu](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) Azure Files.
 
-## <a name="best-practice-take-advantage-of-azure-hybrid-benefits"></a>Best Practice: Nutzen der Azure-Hybridvorteile
+## <a name="best-practice-take-advantage-of-azure-hybrid-benefits"></a>Bewährte Methode: Nutzen der Azure-Hybridvorteile
 
 Dank jahrelanger Investitionen in Softwaresysteme wie Windows Server und SQL Server befindet sich Microsoft in der einzigartigen Lage, Kunden Wertschöpfung in der Cloud mit beträchtlichen Rabatte anbieten zu können, die andere Cloudanbieter nicht unbedingt bereitstellen können.
 
 Eine integriertes Portfolio aus lokalen und Azure-Produkten von Microsoft generiert Wettbewerbs- und Kostenvorteile. Wenn Sie derzeit eine Betriebssystem- oder anderweitige Softwarelizenzierung durch Software Assurance (SA) besitzen, können Sie diese Lizenzen mit in die Cloud nehmen, um die Azure-Hybridvorteile zu nutzen.
 
-**Weitere Informationen:**
+**Weitere Informationen**:
 
 - [Werfen Sie einen Blick auf den](https://azure.microsoft.com/pricing/hybrid-benefit) Einsparungsrechner für den Azure-Hybridvorteil.
 - [Weitere Informationen zum](https://azure.microsoft.com/pricing/hybrid-benefit) Hybridvorteil für Windows Server.
@@ -182,7 +181,7 @@ Wenn Sie reservierte Azure-VM-Instanzen verwenden, zahlen Sie im Voraus für ein
 ![Reservierte Instanzen](./media/migrate-best-practices-costs/reserve.png)
 *Reservierte Azure-VMs*
 
-**Weitere Informationen:**
+**Weitere Informationen**:
 
 - [Informationen zu](https://docs.microsoft.com/azure/billing/billing-save-compute-costs-reservations) Azure-Reservierungen.
 - [Lesen Sie](https://azure.microsoft.com/pricing/reserved-vm-instances/#faq) die häufig gestellten Fragen zu reservierten Instanzen.
@@ -194,7 +193,7 @@ Es ist unvermeidlich, dass Sie letztendlich mehr als ein Azure-Abonnement haben 
 
 Um dies zu erreichen, können Sie Azure Cost Management-APIs verwenden. Nachdem Sie dann Daten in eine einzelne Quelle aggregiert haben, z. B. Azure SQL, können Sie mit Tools wie Power BI die aggregierten Daten analysieren. Sie können aggregierte Abonnementberichte sowie detaillierte Berichte erstellen. Für Benutzer, die proaktive Einblicke in das Kostenmanagement benötigen, können Sie beispielsweise spezifische Sichten für Kosten erstellen, gegliedert nach Abteilung, Ressourcengruppe usw. Sie müssen ihnen dazu keinen Vollzugriff auf Azure-Abrechnungsdaten gewähren.
 
-**Weitere Informationen:**
+**Weitere Informationen**:
 
 - [Erhalten Sie einen Überblick](https://docs.microsoft.com/azure/billing/billing-consumption-api-overview) über die Azure-Nutzungs-API.
 - [Erfahren Sie mehr über](https://docs.microsoft.com/power-bi/desktop-connect-azure-consumption-insights) das Herstellen einer Verbindung mit Azure Consumption Insights in Power BI Desktop.
@@ -239,7 +238,7 @@ Mit Cost Management können Sie:
     *Azure Cost Management-Analyse*
 - **Empfehlungen abrufen:** Erhalten Sie Advisor-Empfehlungen, die Ihnen zeigen, wie Sie die Effizienz optimieren und verbessern können.
 
-**Weitere Informationen:**
+**Weitere Informationen**:
 
 - [Einen Überblick erhalten](https://docs.microsoft.com/azure/cost-management/overview) über Azure Cost Management.
 - [Erfahren Sie, wie Sie](https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices) Ihre Cloudinvestitionen mit Azure Cost Management optimieren.
@@ -257,21 +256,21 @@ In Azure bezahlen Sie für die Nutzung, also wenn Ressourcen tatsächlich genutz
 - Zusätzlich zur Überwachung virtueller Computer sollten Sie weitere Netzwerkressourcen wie ExpressRoute und Gateways für virtuelle Netzwerke auf zu niedrige und zu hohe Nutzung überwachen.
 - Sie können die VM-Nutzung mithilfe von Microsoft-Tools überwachen, wie z.B. Azure Cost Management, Azure Monitor und Azure Advisor. Drittanbietertools sind ebenfalls verfügbar.
 
-**Weitere Informationen:**
+**Weitere Informationen**:
 
 - Verschaffen Sie sich einen Überblick über [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) und [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview).
 - [Erhalten Sie](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations) Advisor-Empfehlungen zu Kosten.
 - [Erfahren Sie, wie Sie [Kosten für Empfehlungen optimieren](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json) und [unerwartete Gebühren vermeiden](https://docs.microsoft.com/azure/billing/billing-getting-started).
 - Erfahren Sie mehr über das [Toolkit zur Azure-Ressourcenoptimierung (ARO)](https://github.com/Azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit).
 
-## <a name="best-practice-implement-resource-group-budgets"></a>Best Practice: Budgets für Ressourcengruppen implementieren
+## <a name="best-practice-implement-resource-group-budgets"></a>Bewährte Methode: Budgets für Ressourcengruppen implementieren
 
 Häufig werden Ressourcengruppen verwendet, um Kostengrenzen darzustellen. Zusammen mit diesem Verwendungsmuster entwickelt das Azure-Team weiterhin neue und verbesserte Möglichkeiten zum Nachverfolgen und Analysieren der Ressourcenausgaben auf unterschiedlichen Ebenen, einschließlich der Möglichkeit zur Erstellung von Budgets für Ressourcengruppen und Ressourcen.
 
 - Ein Ressourcengruppenbudget hilft Ihnen bei der Nachverfolgung der zu einer Ressourcengruppe gehörigen Kosten.
 - Sie können außerdem Benachrichtigungen auslösen und eine Vielzahl von Playbooks ausführen, wenn das Budget erreicht oder überschritten wird.
 
-**Weitere Informationen:**
+**Weitere Informationen**:
 
 - [Erfahren Sie, wie Sie](https://docs.microsoft.com/azure/billing/billing-cost-management-budget-scenario) Kosten mit Azure-Budgets verwalten.
 - [Absolvieren Sie ein Tutorial](https://docs.microsoft.com/azure/cost-management/tutorial-acm-create-budgets?toc=/azure/billing/TOC.json), um ein Azure-Budget zu erstellen und zu verwalten.
@@ -286,7 +285,7 @@ Wenn Sie Ressourcen in Azure verschieben und die Diagnoseprotokollierung für si
 - Sie sollten sorgfältig abwägen zwischen der Optimierung Ihrer Kosten für die Protokollspeicherung und der Aufbewahrung der erforderlichen Protokolldaten.
 - Wir empfehlen, dass Sie die Protokollierung sofort nach Abschluss einer Migration bewerten und einrichten, damit Sie kein Geld dafür aufwenden, unwichtige Protokolle aufzubewahren.
 
-**Weitere Informationen:**
+**Weitere Informationen**:
 
 - [Informationen zum](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-usage-and-estimated-costs) Überwachen der Nutzung und der geschätzten Kosten.
 
@@ -299,7 +298,7 @@ Das Identifizieren und Verschieben veralteter Daten in kostengünstigere Speiche
 - Profitieren Sie von Zugriffsebenen für „Allgemeinen v2“-Speicher, indem Sie weniger wichtige Daten von der heißen Speicherebene zur kalten bzw. „Archiv“-Speicherebene verschieben.
 - Verwenden Sie StorSimple zur Unterstützung beim Verschieben veralteter Daten, basierend auf benutzerdefinierten Richtlinien.
 
-**Weitere Informationen:**
+**Weitere Informationen**:
 
 - [Weitere Informationen](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers) zu Zugriffsebenen.
 - [Erhalten Sie eine Übersicht über](https://docs.microsoft.com/azure/azure-monitor/overview) StorSimple und [StorSimple-Preise](https://azure.microsoft.com/pricing/details/storsimple).
@@ -327,7 +326,7 @@ Azure bietet eine REST-API, die Zugriff auf die Abrechnungsinformationen Ihres M
 - Die APIs werden als Ressourcenanbieter implementiert und sind in den APIs enthalten, die von Azure Resource Manager verfügbar gemacht werden.
 - Die API für Budgets kann in Azure Logic Apps und Runbooks integriert werden.
 
-**Weitere Informationen:**
+**Weitere Informationen**:
 
 - [Erfahren Sie mehr über die](https://docs.microsoft.com/rest/api/consumption/budgets) API für Budgets.
 - [Gewinnen von Erkenntnissen](https://docs.microsoft.com/azure/billing/billing-usage-rate-card-overview) über die Azure-Nutzung mit der Abrechnungs-API.
@@ -345,7 +344,7 @@ Nach der Migration und einer gründlichen Überprüfung dieser Arten von Aufgabe
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Sehen Sie sich weitere bewährte Methoden an:
+Informieren Sie sich über weitere Best Practices:
 
 - [Bewährte Methoden](./migrate-best-practices-security-management.md) für Sicherheit und Verwaltung nach der Migration.
-- [Bewährte Methoden](./migrate-best-practices-networking.md) für Netzwerke nach der Migration.
+- [Best Practices](./migrate-best-practices-networking.md) für Netzwerkfunktionen nach der Migration.

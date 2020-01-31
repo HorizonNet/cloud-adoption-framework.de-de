@@ -1,6 +1,5 @@
 ---
 title: Bewerten lokaler Workloads für die Migration zu Azure
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Es wird beschrieben, wie Contoso seine lokalen Computer in Bezug auf die Migration zu Azure bewertet, indem Azure Migrate und der Datenmigrations-Assistent verwendet werden.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3fe54994ac99a86bcb0a6c84c37b7b8612a129fa
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: 051e52bee9b83160860234f953b19439b64eed97
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566490"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76807477"
 ---
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Bewerten lokaler Workloads für die Migration zu Azure
 
@@ -47,7 +46,7 @@ In diesem Diagramm ist die aktuelle lokale Infrastruktur von Contoso dargestellt
 - Jede Niederlassung ist lokal über Business-Class-Verbindungen mit dem Internet verbunden, und IPsec-VPN-Tunnel führen zurück zum zentralen Rechenzentrum. Aufgrund dieser Anordnung ist das gesamte Netzwerk von Contoso dauerhaft verbunden, und die Internetverbindung wird optimiert.
 - Das Hauptrechenzentrum ist vollständig mit VMware virtualisiert. Contoso verfügt über zwei ESXi 6.5-Virtualisierungshosts, die mit vCenter Server 6.5 verwaltet werden.
 - Contoso nutzt Active Directory für die Identitätsverwaltung. Contoso verwendet im internen Netzwerk DNS-Server.
-- Die Domänencontroller im Rechenzentrum werden auf VMware-VMs ausgeführt. Die Domänencontroller an lokalen Standorten werden auf physischen Servern ausgeführt.
+- Die Domänencontroller im Rechenzentrum werden auf VMware-VMs ausgeführt. Die Domänencontroller in lokalen Niederlassungen werden auf physischen Servern ausgeführt.
 
 ## <a name="business-drivers"></a>Business-Treiber
 
@@ -71,7 +70,7 @@ Das Cloudteam von Contoso hat sich Ziele für die Migrationsbewertungen gesetzt:
 
 Contoso nutzt Microsoft-Tools für seine Migrationsbewertung. Die Tools sind an den Zielen des Unternehmens ausgerichtet und sollten Contoso alle benötigten Informationen liefern.
 
-Technologie | BESCHREIBUNG | Kosten
+Technologie | Beschreibung | Kosten
 --- | --- | ---
 [Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso nutzt den Datenmigrations-Assistenten, um Kompatibilitätsprobleme zu bewerten und zu erkennen, die ggf. die Datenbankfunktionalität des Unternehmens in Azure beeinträchtigen können. Mit dem Datenmigrations-Assistenten wird die Featureparität zwischen SQL-Quellen und -Zielen bewertet. Er stellt Empfehlungen zu Verbesserungen der Leistung und Zuverlässigkeit bereit. | Der Datenmigrations-Assistent ist ein kostenloses Tool, das heruntergeladen werden kann.
 [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Contoso nutzt den Azure Migrate-Dienst, um seine VMware-VMs zu bewerten. Azure Migrate bewertet die Eignung der Computer für die Migration. Der Dienst stellt Schätzungen zur Größe und zu den Kosten für die Ausführung in Azure bereit. | Ab Mai 2018 ist Azure Migrate ein kostenloser Dienst.
@@ -251,7 +250,7 @@ Richten Sie wie folgt ein neues Azure Migrate-Projekt ein:
 
     ![Azure Migrate: Bewertungstool](./media/contoso-migration-assessment/assessment-tool.png)
 
-9. Wählen Sie unter **Migrationstool auswählen** die Option **Hinzufügen eines Migrationstools vorerst überspringen** und anschließend **Weiter** aus.
+9. Wählen Sie unter **Migrationstool auswählen** die Option **Hinzufügen eines Migrationstools vorerst überspringen** >  und anschließend **Weiter** aus.
 
 10. Überprüfen Sie die Einstellungen unter **Review + add tools** (Überprüfen und Tools hinzufügen), und klicken Sie auf **Tools hinzufügen**.
 

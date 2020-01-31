@@ -1,6 +1,5 @@
 ---
 title: 'Governanceleitfaden für komplexe Unternehmen: Unterstützende Geschichte'
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Diese Geschichte schildert einen Anwendungsfall für die Governance während der Journey zur Cloudeinführung eines komplexen Unternehmens.
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: acc82a629adf32cd9a7bfe638b0ad176f1de7933
-ms.sourcegitcommit: 945198179ec215fb264e6270369d561cb146d548
+ms.openlocfilehash: fae1940c1cc522cd917b2b0293d60b630007537c
+ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71967668"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "76805556"
 ---
 # <a name="governance-guide-for-complex-enterprises-the-supporting-narrative"></a>Governanceleitfaden für komplexe Unternehmen: Unterstützende Geschichte
 
@@ -28,7 +27,7 @@ Außerdem hat die IT-Organisation ihre eigenen Herausforderungen zu meistern. Di
 
 Die CIO hat innovative Ideen, die dem Unternehmen helfen können, ist jedoch zusammen mit ihren Teams damit ausgelastet, akute Brände zu löschen und Kosten zu kontrollieren. Bei einem Mittagessen mit dem CDO und einem der Leiter einer Unternehmenseinheit konnte die CIO im Gespräch über die Cloudmigration das Interesse der beiden Kollegen wecken. Die drei Führungskräfte möchten sich mithilfe der Cloud gegenseitig dabei unterstützen, ihre Geschäftsziele zu erreichen, und haben die Untersuchungs- und die Planungsphase der Cloudeinführung eingeleitet.
 
-## <a name="business-characteristics"></a>Unternehmensmerkmale
+## <a name="business-characteristics"></a>Geschäftsmerkmale
 
 Das Unternehmen besitzt das folgende Geschäftsprofil:
 
@@ -36,21 +35,21 @@ Das Unternehmen besitzt das folgende Geschäftsprofil:
 - Das Unternehmen ist durch eine Übernahme gewachsen und in drei Unternehmenseinheiten tätig, die auf dem Zielkundenstamm beruhen. Die Budgetierung entspricht einer komplexen Matrix für Unternehmenseinheiten und Funktionen.
 - Das Unternehmen betrachtet den größten Teil der IT als Kostenverursacher oder Kostenstelle.
 
-## <a name="current-state"></a>Aktueller Zustand
+## <a name="current-state"></a>Aktueller Status
 
 Aktuell befinden sich IT und Cloudbetrieb des Unternehmens in folgendem Zustand:
 
 - Die IT betreibt auf der ganzen Welt mehr als 20 Rechenzentren in Privatbesitz.
 - Aufgrund des natürlichen Wachstums und mehrere geografische Regionen gibt es nur wenige IT-Teams mit eindeutigen Anforderungen für Datenhoheit und Compliance für eine einzelne Geschäftseinheit innerhalb einer bestimmten geografischen Region.
 - Jedes Rechenzentrum ist über einer Reihe regionaler Standleitungen verbunden und erstellt so ein lose gekoppeltes globale WAN.
-- Die IT ist zur Cloud gewechselt, indem alle E-Mail-Konten der Endbenutzer zu Office 365 migriert wurden. Diese Migration wurde vor mehr als sechs Monaten abgeschlossen. Seit damals wurden nur wenige IT-Ressourcen in der Cloud bereitgestellt.
+- Die IT hat die Cloud eingeführt, indem alle E-Mail-Konten der Endbenutzer zu Office 365 migriert wurden. Diese Migration wurde vor mehr als sechs Monaten abgeschlossen. Seit damals wurden nur wenige IT-Ressourcen in der Cloud bereitgestellt.
 - Das primäre Entwicklungsteam des CDO arbeitet in einer Dev/Test-Kapazität, um die nativen Cloudfunktionen kennenzulernen.
 - Eine Unternehmenseinheit experimentiert mit Big Data in der Cloud. Das BI-Team innerhalb der IT ist an diesen Bestrebungen beteiligt.
 - Die vorhandene IT-Governancerichtlinie sieht vor, dass personenbezogene Kundeninformationen und Finanzdaten auf Ressourcen zu hosten sind, die dem Unternehmen direkt gehören. Diese Richtlinie blockiert den Einstieg in die Cloud für unternehmenskritische Apps oder geschützte Daten.
 - IT-Investitionen werden größtenteils durch Kapitalkosten gesteuert. Diese Investitionen werden jährlich geplant und umfassen häufig Pläne für die laufende Wartung sowie festgelegte Aktualisierungszyklen von drei bis fünf Jahren, je nach Rechenzentrum.
 - Die meisten Investitionen in Technologie, die dem Jahresplan nicht entsprechen, werden durch Schatten-IT-Aktivitäten getätigt. Dieser Aufwand wird normalerweise von Unternehmenseinheiten verwaltet und durch die Betriebskosten der Unternehmenseinheit abgedeckt.
 
-## <a name="future-state"></a>Zukünftiger Zustand
+## <a name="future-state"></a>Zukünftiger Status
 
 Die folgenden Änderungen werden in den nächsten Jahren erwartet:
 
