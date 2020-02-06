@@ -1,6 +1,6 @@
 ---
 title: Optimieren und Transformieren
-description: Optimieren und Transformieren
+description: Dieser Teil des Azure-Migrationsleitfadens behandelt Optimierungsbereiche, einschließlich der Überprüfung des Lösungsentwurfs, der richtigen Dimensionierung der Dienste und der Analyse der Kosten.
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5d9ec518069023a8db763a9fc21f7c4847053be6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5173dc348ee0c9251b4c5e41aaa2b193da6ea890
+ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807001"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76994159"
 ---
 # <a name="optimize-and-transform"></a>Optimieren und Transformieren
 
