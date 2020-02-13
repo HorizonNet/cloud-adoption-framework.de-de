@@ -1,18 +1,18 @@
 ---
 title: Voraussetzungen für die Migration
-description: Voraussetzungen für die Migration
+description: Hier finden Sie Informationen zu den Voraussetzungen, die Sie bei der Vorbereitung auf die Migration zur Cloud unterstützen und Ihnen dabei helfen, häufige Ursachen für Migrationsfehler zu vermeiden.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2f8fe1be35e1f629da3f57e1344b573e97ff571b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: eb7d0c8b0ee6ebd328ffd4807199e0b0e2620d35
+ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801459"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173316"
 ---
 # <a name="prerequisites-for-migration"></a>Voraussetzungen für die Migration
 

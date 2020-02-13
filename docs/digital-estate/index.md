@@ -1,18 +1,18 @@
 ---
 title: Worum handelt es sich bei digitalen Ressourcen?
-description: Worum handelt es sich bei digitalen Ressourcen?
+description: Hier erfahren Sie, was digitale Ressourcen sind, wie sie gemessen werden können und wie Sie ein Finanzmodell entsprechend Ihrer digitalen Ressourcen aktualisieren.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a9e691016cba5fa33a16d92278c34c9bf02cdf96
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 380c50bdf55da7616d274ff038ec25d73c065459
+ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804621"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173333"
 ---
 <!-- markdownlint-disable MD026 -->
 
