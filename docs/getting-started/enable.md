@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: 603e26d5fc8405e29d163bc0585bc0ce3cd5093f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 34b67422ad8f32cf8d6bae141db05956a1b41e22
+ms.sourcegitcommit: 6a22ac00549eb9964f25d3dfd63730e17f7eefe1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804485"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413200"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Ermöglichen des Erfolgs während einer Cloudeinführungsjourney
 
@@ -69,7 +69,7 @@ Zusätzlich zum Framework für die Cloudeinführung (Cloud Adoption Framework) d
                     </div>
                     <div class="cardText">
                         <h3>Zuverlässige Architektur (Resilienz)</h3>
-                        <p>Die Erstellung einer zuverlässigen Anwendung in der Cloud unterscheidet sich von der herkömmlichen Anwendungsentwicklung. Früher haben Sie wahrscheinlich höherwertige Hardware angeschafft, um zentral hochzuskalieren. In einer Cloudumgebung wird jedoch nicht zentral hoch-, sondern horizontal skaliert. Es geht nicht darum, Fehler vollständig zu verhindern, sondern darum, die Auswirkungen einer einzelnen fehlerhaften Komponente zu minimieren.</p>
+                        <p>Die Erstellung einer zuverlässigen Anwendung in der Cloud unterscheidet sich von der herkömmlichen Anwendungsentwicklung. Früher haben Sie möglicherweise redundante, höherwertige Hardware erworben, um das Risiko des Ausfalls einer gesamten Anwendungsplattform zu minimieren. In der Cloud wird von vornherein mit Ausfällen gerechnet. Es geht nicht darum, Fehler vollständig zu verhindern, sondern darum, die Auswirkungen einer einzelnen fehlerhaften Komponente zu minimieren.</p>
                     </div>
                 </div>
             </div>

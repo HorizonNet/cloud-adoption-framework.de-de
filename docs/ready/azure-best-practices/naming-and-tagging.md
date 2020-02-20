@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness
-ms.openlocfilehash: b61c9a9ffd778e657854b4da1269eebdb762c73b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c85f4423ea61346e8692fd19ced0d53242733284
+ms.sourcegitcommit: 35d01bccc8ecbec38f6247a065a309ec691ca810
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799844"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77213591"
 ---
 # <a name="recommended-naming-and-tagging-conventions"></a>Empfohlene Namens- und Kennzeichnungskonventionen
 
@@ -132,7 +132,7 @@ Wenn Sie Metadatentags auf Ihre Cloudressourcen anwenden, können Sie Informatio
 
 Welche Tags Sie für Ressourcen anwenden und welche Tags erforderlich oder optional sind, ist von Unternehmen zu Unternehmen unterschiedlich. Die folgende Liste enthält Beispiele für gängige Tags, mit denen wichtige Kontexte und Informationen zu einer Ressource erfasst werden. Verwenden Sie diese Liste als Ausgangspunkt, um eigene Taggingkonventionen einzurichten.
 
-| Tag-Name                  | Beschreibung                                                                                                                                                                                                    | Key               | Beispielwert                                   |
+| Tag-Name                  | BESCHREIBUNG                                                                                                                                                                                                    | Key               | Beispielwert                                   |
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|-------------------------------------------------|
 | Anwendungsname          | Der Name der Anwendung, des Diensts oder der Workload, mit der die Ressource verknüpft ist.                                                                                                                                 | _ApplicationName_ | _{App-Name}_                                    |
 | Name der genehmigenden Person             | Die Person, die für das Genehmigen der Kosten zuständig ist, die mit dieser Ressource verbunden sind.                                                                                                                                               | _Approver_        | _{E-Mail}_                                       |
@@ -144,7 +144,7 @@ Welche Tags Sie für Ressourcen anwenden und welche Tags erforderlich oder optio
 | Environment               | Bereitstellungsumgebung der Anwendung, Workload oder dieses Diensts.                                                                                                                                              | _Env_             | _Prod_, _Entw_, _QA_, _Stage_, _Test_                    |
 | Name des Besitzers                | Besitzer der Anwendung, der Workload oder des Diensts.                                                                                                                                                                | _Besitzer_           | _{E-Mail}_                                       |
 | Name der anfordernden Person            | Der Benutzer, der die Erstellung dieser Anwendung angefordert hat.                                                                                                                                                          | _Requestor_       | _{E-Mail}_                                       |
-| Dienstklasse             | Vereinbarung zum Servicelevel der Anwendung, der Workload oder des Diensts.                                                                                                                                       | _ServiceClass_    | _Dev_, _Bronze_, _Silver_, _Gold_                     |
+| Dienstklasse             | Vereinbarung zum Servicelevel der Anwendung, der Workload oder des Diensts.                                                                                                                                       | _ServiceClass_    | _Dev_, _Bronze_, _Silver_, git _Gold_                     |
 | Startdatum des Projekts | Datum, zu dem die Anwendung, Workload oder dieser Dienst erstmalig bereitgestellt wurde.                                                                                                                                           | _StartDate_       | _{Datum}_                                        |
 
 ## <a name="sample-naming-convention"></a>Beispielnamenskonvention
