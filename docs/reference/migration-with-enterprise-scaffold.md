@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 3cbce52809c191ec6bacf30454bd2e9a48d57c1b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: dd4f60eafed3281d5d4e67285c413b9f969793e3
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798790"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629248"
 ---
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure-Unternehmensgerüst: Präskriptive Abonnementgovernance
 
@@ -338,7 +338,7 @@ Die letzte Komponente des Azure-Gerüsts ist von entscheidender Bedeutung, wenn 
 
 ### <a name="azure-virtual-datacenter"></a>Virtuelles Azure-Rechenzentrum
 
-Azure bietet Ihnen sowohl interne Funktionen als auch Drittanbieterfunktionen aus unserem umfangreichen Partnernetzwerk, mit denen Sie Ihre Sicherheitsposition effektiv verstärken können. Wichtiger noch: Microsoft stellt Ihnen über das [virtuelle Azure-Rechenzentrum (VDC)](./networking-vdc.md) Best Practices und Leitfäden zur Verfügung. Wenn Sie nicht mehr nur eine einzelne Workload, sondern mehrere Workloads verwalten, die Hybridfunktionen nutzen, erhalten Sie mit den Leitfäden aus diesem Rechenzentrum sozusagen das Rezept, mit dem Sie ein flexibles Netzwerk aufbauen können, das mit Ihren Workloads in Azure wächst.
+Azure bietet sowohl interne Funktionen als auch Drittanbieterfunktionen aus unserem umfangreichen Partnernetzwerk, die eine effektive Verstärkung Ihrer Sicherheitsposition ermöglichen. Wichtiger noch: Microsoft stellt Ihnen über das [virtuelle Azure-Rechenzentrum (VDC)](./networking-vdc.md) Best Practices und Leitfäden zur Verfügung. Wenn Sie nicht mehr nur eine einzelne Workload, sondern mehrere Workloads verwalten, die Hybridfunktionen nutzen, erhalten Sie mit den Leitfäden aus diesem Rechenzentrum sozusagen das Rezept, mit dem Sie ein flexibles Netzwerk aufbauen können, das mit Ihren Workloads in Azure wächst.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

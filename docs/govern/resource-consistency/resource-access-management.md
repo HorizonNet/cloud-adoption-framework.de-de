@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 825c220bda1c560c5d7bf07bcae649017525ff53
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e32151fc39f22e4dcb2a9ab40b24f351b11775e7
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805624"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629299"
 ---
 # <a name="resource-access-management-in-azure"></a>Ressourcenzugriffsverwaltung in Azure
 
@@ -58,7 +58,7 @@ In der folgenden Abbildung sind drei Clients dargestellt: [PowerShell](https://d
 ![Diagramm von Azure-Clients, die eine Verbindung mit der Azure Resource Manager-API herstellen](../../_images/govern/design/governance-1-13.png)
 *Abbildung 5: Azure-Clients stellen eine Verbindung mit der Azure Resource Manager-RESTful-API her.*
 
-Diese Clients stellen zwar über die RESTful-API eine Verbindung mit Azure Resource Manager her, aber Azure Resource Manager umfasst keine Funktionen zum direkten Verwalten von Ressourcen. Stattdessen verfügen die meisten Ressourcentypen in Azure über ihren eigenen [**Ressourcenanbieter**](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#terminology).
+Diese Clients stellen zwar über die RESTful-API eine Verbindung mit Azure Resource Manager her, aber Azure Resource Manager umfasst keine Funktionen zum direkten Verwalten von Ressourcen. Stattdessen verfügen die meisten Ressourcentypen in Azure über ihren eigenen [Ressourcenanbieter](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#terminology).
 
 ![Azure-Ressourcenanbieter](../../_images/govern/design/governance-1-14.png)
 *Abbildung 6: Azure-Ressourcenanbieter.*

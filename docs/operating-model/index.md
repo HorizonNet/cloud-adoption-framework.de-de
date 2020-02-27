@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: a04be99cfa3a37c9627b4384f240dac865d63da3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 093f404ce4e8a5a9c5f60b5ee3bb81064ba5b3f8
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806950"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629282"
 ---
 # <a name="establish-an-operating-model-for-the-cloud"></a>Einrichten eines Betriebsmodells für die Cloud
 
@@ -23,7 +23,7 @@ Die Maßnahmen zur Einführung können relativ einfach nachverfolgt und gemessen
 
 **In der Einführung ist beschrieben, was Sie tun, während das Betriebsmodell definiert, wer die Einführung wie ermöglicht.**
 
-Satya Nadella sagte dazu einmal **„Die Kultur isst die Strategie zum Frühstück.“** Das Betriebsmodell verkörpert die IT-Kultur, die in einer Reihe messbarer Prozesse erfasst wird. Wenn die Cloud von einem starken Betriebsmodell unterstützt wird, wird auch die Strategie besser übernommen, was wiederum die Akzeptanz und das Erreichen von Geschäftswerten beschleunigt. Wenn die Einführung hingegen erfolgreich ist, aber kein Betriebsmodell vorhanden ist, ist das Ergebnis unter Umständen zwar beeindruckend, aber sehr kurzlebig. Für den langfristigen Erfolg ist es von entscheidender Bedeutung, dass die Einführung und die Betriebsmodelle parallel weiterentwickelt werden.
+„Die Kultur isst die Strategie zum Frühstück.“ Das Betriebsmodell verkörpert die IT-Kultur, die in einer Reihe messbarer Prozesse erfasst wird. Wenn die Cloud von einem starken Betriebsmodell unterstützt wird, wird auch die Strategie besser übernommen, was wiederum die Akzeptanz und das Erreichen von Geschäftswerten beschleunigt. Wenn die Einführung hingegen erfolgreich ist, aber kein Betriebsmodell vorhanden ist, ist das Ergebnis unter Umständen zwar beeindruckend, aber sehr kurzlebig. Für den langfristigen Erfolg ist es von entscheidender Bedeutung, dass die Einführungs- und Betriebsmodelle parallel weiterentwickelt werden.
 
 ## <a name="establish-your-operating-model"></a>Einrichten Ihres Betriebsmodells
 

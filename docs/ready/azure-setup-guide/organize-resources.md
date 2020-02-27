@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 790bb68a862343452aa5481e20596a839bb7b93c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: eb2564239548f77084fbc38d93003346a07e8e84
+ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799334"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567757"
 ---
 # <a name="organize-your-azure-resources"></a>Organisieren Ihrer Azure-Ressourcen
 
@@ -22,7 +22,7 @@ Die Organisation Ihrer cloudbasierten Ressourcen ist entscheidend für die Siche
 
 <!-- markdownlint-disable MD024 MD025 -->
 
-# <a name="azure-management-groups-and-hierarchytabazuremanagmentgroupsandhierarchy"></a>[Azure-Verwaltungsgruppen und -Hierarchie](#tab/AzureManagmentGroupsAndHierarchy)
+# <a name="azure-management-groups-and-hierarchy"></a>[Azure-Verwaltungsgruppen und -Hierarchie](#tab/AzureManagmentGroupsAndHierarchy)
 
 Azure bietet vier Verwaltungsebenen: Verwaltungsgruppen, Abonnements, Ressourcengruppen und Ressourcen. In der folgenden Abbildung ist die Beziehung dieser Ebenen dargestellt.
 
@@ -121,7 +121,7 @@ Erstellen Sie eine Ressourcengruppe für Ressourcen wie Web-Apps, Datenbanken un
 
 ::: zone-end
 
-# <a name="naming-standardstabnamingstandards"></a>[Benennungsstandards](#tab/NamingStandards)
+# <a name="naming-standards"></a>[Benennungsstandards](#tab/NamingStandards)
 
 Mit einem durchdachten Benennungsstandard lassen sich Ressourcen im Azure-Portal, auf einer Rechnung und in Skripts leichter identifizieren. Ihre Namensstrategie sollte geschäftliche und operative Details als Bestandteile von Ressourcennamen einbeziehen:
 
@@ -146,7 +146,7 @@ Die folgende Tabelle enthält Namensmuster für einige Beispieltypen von Azure-R
 |Verfügbarkeitsgruppe |Resource group |1-80 |Groß-/Kleinschreibung nicht beachten |Alphanumerisch, Unterstrich und Bindestrich |`<service-short-name>-<context>-as` |`profx-sql-as` |
 |Tag |Zugeordnete Entität |512 (Name), 256 (Wert) |Groß-/Kleinschreibung nicht beachten |Alphanumerisch |`"key" : "value"` |`"department" : "Central IT"` |
 
-# <a name="resource-tagstabresourcetags"></a>[Ressourcentags](#tab/ResourceTags)
+# <a name="resource-tags"></a>[Ressourcentags](#tab/ResourceTags)
 
 Tags sind nützlich, um Ihre Ressourcen und Ressourcengruppen schnell identifizieren zu können. Durch Anwenden von Tags können Sie Ihre Azure-Ressourcen logisch nach Kategorien organisieren. Jedes Tag besteht aus einem Namen und einem Wert. So können Sie beispielsweise den Namen „Umgebung“ und den Wert „Produktion“ auf alle Ressourcen in der Produktion anwenden. Tags sollten den Kontext über die zugehörige Workload oder Anwendung der Ressource, betriebliche Anforderungen und Angaben zum Besitzer einbeziehen.
 
@@ -156,7 +156,7 @@ Sie können Tags auch für viele andere Dinge verwenden. Sie werden häufig für
 
 - **Metadaten und Dokumentation**: Durch Anwenden eines Tags wie „ProjectOwner“ können Administratoren problemlos Details zu den Ressourcen anzeigen, an denen sie arbeiten.
 - **Automatisierung:** Unter Umständen verfügen Sie über regelmäßig ausgeführte Skripts, die basierend auf einem Tagwert wie „ShutdownTime“ oder „DeprovisionDate“ eine Aktion durchführen können.
-- **Abrechnung:** Tags können in Ihrer Rechnung angezeigt werden. Dadurch können Sie Ihre Rechnung beispielsweise mithilfe von Tags wie „CostCenter“ oder „BillTo“ segmentieren.
+- **Kostenoptimierung:** Sie können den Teams und Mitarbeitern, die für die Kosten verantwortlich sind, Ressourcen zuweisen. In Azure Cost Management können Sie das Kostenstellentag als Filter anwenden, um die Gebühren basierend auf der Nutzung eines Teams oder einer Abteilung zu melden.
 
 Jede Ressource oder Ressourcengruppe kann maximal 50 Tagname-Wert-Paare aufweisen. Diese Einschränkung gilt nur für Tags, die direkt auf die Ressourcengruppe oder die Ressource angewendet werden.
 

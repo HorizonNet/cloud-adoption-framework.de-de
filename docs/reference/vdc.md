@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 keywords: Azure
 layout: LandingPage
-ms.openlocfilehash: 4e13c064cb449e3f8fca9573b44d214bb644b927
-ms.sourcegitcommit: bf9be7f2fe4851d83cdf3e083c7c25bd7e144c20
+ms.openlocfilehash: bc20624beb0d3a088d119bf0f75c1e1881d37fce
+ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566676"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77629214"
 ---
 # <a name="azure-virtual-datacenter"></a>Virtuelles Azure-Rechenzentrum
 
@@ -36,8 +36,8 @@ ms.locfileid: "73566676"
 <tr>
     <td style="width: 64px; vertical-align: middle;"><a href="./networking-vdc.md"><img src="../_images/vdc/vdc-network.png" alt="Network Perspective" /></a></td>
     <td>
-        <h3><a href="./networking-vdc.md">Virtuelles Azure-Rechenzentrum: Eine Netzwerkperspektive</a></h3>
-        <p>Dieser Onlineartikel bietet einen Überblick über Netzwerkmuster und Designs, mit denen Kunden die architektonischen Herausforderungen hinsichtlich der Skalierung, Leistung und Sicherheit meistern können, die bei einer Migration in die Cloud auf sie zukommen.</p>
+        <h3><a href="./networking-vdc.md">Das virtuelle Rechenzentrum: Eine Netzwerkperspektive</a></h3>
+        <p>Dieser Überblick über die Netzwerkmuster und -entwürfe behandelt die architektonischen Herausforderungen hinsichtlich der Skalierung, Leistung und Sicherheit, die auf Kunden bei einer Migration zur Cloud im größeren Umfang zukommen.</p>
     </td>
 </tr>
 <tr>
