@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9c4d5bac8046cc27399b2be7bc0b8ce82ea65769
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: 20f71083a7a200fd4b45fbdda24ad6bbd24a397a
+ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173386"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77567740"
 ---
 # <a name="assess-the-digital-estate"></a>Bewerten der digitalen Ressourcen
 
@@ -24,7 +24,7 @@ Anhand der Ressourcen in diesem Abschnitt können Sie Ihre Umgebung bewerten, um
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="toolstabtools"></a>[Tools](#tab/Tools)
+# <a name="tools"></a>[Tools](#tab/Tools)
 
 Mit den folgenden Tools können Sie Ihre Umgebung bewerten, um die Eignung für die Migration und die beste zu verwendende Methode zu bestimmen. Hilfreiche Informationen zur Auswahl der richtigen Tools zur Unterstützung der Migration finden Sie im [Leitfaden zur Entscheidungsfindung für Migrationstools des Frameworks für die Cloudeinführung (Cloud Adoption Framework)](../../decision-guides/migrate-decision-guide/index.md).
 
@@ -51,7 +51,7 @@ Führen Sie diese Schritte aus, um mit Azure Migrate mit einer Servermigrationsb
 
 ::: zone target="chromeless"
 
-::: form action="Blade[#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview]" submitText="Assess and migrate servers" :::
+::: form action="OpenBlade[#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview]" submitText="Assess and migrate servers" :::
 
 ::: zone-end
 
@@ -86,7 +86,7 @@ Zur Verwendung der Abhängigkeitsvisualisierung müssen Sie Agents auf alle loka
 - [Verwenden der Dienstzuordnungslösung in Azure](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
 - [Azure Migrate und Dienstzuordnung: Visualisierung von Abhängigkeiten](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
 
-# <a name="scenarios-and-stakeholderstabscenarios"></a>[Szenarien und Beteiligte](#tab/Scenarios)
+# <a name="scenarios-and-stakeholders"></a>[Szenarien und Beteiligte](#tab/Scenarios)
 
 ## <a name="scenarios"></a>Szenarien
 
@@ -105,7 +105,7 @@ Durch den Aufbau eines Cloudstrategieteams aus diesen wichtigen Projektbeteiligt
 
 Weitere Informationen zur Vorbereitung Ihrer Organisation auf die Cloudmigration finden Sie im Artikel [Erstausrichtung der Organisation](../../plan/initial-org-alignment.md) des Frameworks für die Cloudeinführung.
 
-# <a name="timelinestabtimelines"></a>[Zeitpläne](#tab/Timelines)
+# <a name="timelines"></a>[Zeitpläne](#tab/Timelines)
 
 Allgemein lässt sich sagen, dass Kunden das in dieser Anleitung beschriebene Migrationsszenario in einem bis sechs Monaten umsetzen können.
 
@@ -117,7 +117,7 @@ Bei der Bewertung des Zeitplans der Migration sind u. a. folgende Faktoren zu b
 - **Change Management:** Hat Ihr Unternehmen spezifische Anforderungen an die Implementierung und Genehmigung von Änderungen?
 - **Branchenvorschriften:** Müssen Sie Segment- oder Branchenvorschriften einhalten?
 
-# <a name="cost-managementtabmanagecost"></a>[Cost Management](#tab/ManageCost)
+# <a name="cost-management"></a>[Cost Management](#tab/ManageCost)
 
 Die Bewertung Ihrer Umgebung bietet eine ideale Gelegenheit, auch die Kostenanalyse einzubinden. Anhand der bei den Bewertungsprozessen erfassten Daten sollten Sie in der Lage sein, die Kosten zu analysieren und vorherzusagen. Diese Kostenvorhersage sollte sowohl die verbrauchsbasierten Dienstkosten als auch alle einmaligen Kosten (z. B. erhöhter Dateneingang) berücksichtigen.
 
