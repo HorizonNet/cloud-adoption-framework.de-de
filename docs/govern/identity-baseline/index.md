@@ -1,6 +1,6 @@
 ---
 title: Übersicht über die Disziplin „Identitätsbaseline“
-description: Erläuterung der Identitätsbaseline in Bezug auf Cloudgovernance
+description: Hier wird der Ansatz zur Entwicklung der Disziplin „Identitätsbaseline“ als Teil einer Cloudgovernancestrategie beschrieben.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 1ac3041abc6e4721366f8270ce37d6bf6885b140
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 91096409b17bce6aced180bff989c57934698aa3
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806185"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708987"
 ---
 # <a name="identity-baseline-discipline-overview"></a>Übersicht über die Disziplin „Identitätsbaseline“
 

@@ -1,6 +1,6 @@
 ---
 title: Leitfaden zur Entscheidungsfindung für die Identitätsverwaltung
-description: Erfahren Sie mehr über die Identitätsverwaltung als wichtigen Aspekt bei Azure-Migrationen.
+description: Hier erfahren Sie, wie Dienste für die Identitäts- und Zugriffsverwaltung (Identity and Access Management, IAM) Ihnen das Verwalten der Zugriffssteuerung in der Cloud ermöglichen.
 author: rotycenh
 ms.author: v-tyhopk
 ms.date: 02/11/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: b447330368823947bfe027036b14c3a6c1fb94f1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 67e1b0fefeeab9e95fb001b162efaa5c0f247c59
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807103"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708001"
 ---
 # <a name="identity-decision-guide"></a>Leitfaden zur Entscheidungsfindung für die Identitätsverwaltung
 

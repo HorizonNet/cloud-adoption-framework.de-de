@@ -1,18 +1,18 @@
 ---
 title: Entscheidungsleitfaden zur Wahl des Migrationstools
-description: Entscheidungsleitfaden zur Wahl des Migrationstools
+description: Nutzen Sie diese Entscheidungsstruktur als Leitfaden für die Auswahl der besten Tools, die auf der Grundlage von Migrationsentscheidungen verwendet werden können.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: 38c0e6b56a51155be10501328d68c08bd500847e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f3d16455e3babc075bce671cfe867fedb2b4b6c7
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806746"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708239"
 ---
 # <a name="migration-tools-decision-guide"></a>Entscheidungsleitfaden zur Wahl des Migrationstools
 
