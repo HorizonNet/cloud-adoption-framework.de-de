@@ -1,18 +1,18 @@
 ---
-title: 'Cloudinnovation: Entwickeln digitaler Innovationen in Azure'
-description: Entwickeln digitaler Innovationen in Azure
+title: Entwickeln digitaler Erfindungen für Innovationen
+description: Verwenden Sie das Framework für die Einführung der Microsoft Cloud für Azure, um auf der Innovationsmethodik aufzubauen und eine Toolkette für digitale Erfindungen zu erstellen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 19a58470b3c918532921b68be5904ff8b1f1f825
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d3beb01940da6b391bca2751866e5f484ce2f713
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808633"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170731"
 ---
 # <a name="develop-digital-inventions-in-azure"></a>Entwickeln digitaler Innovationen in Azure
 

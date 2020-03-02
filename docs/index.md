@@ -1,6 +1,6 @@
 ---
-title: Framework für die Einführung der Microsoft Cloud (Microsoft Cloud Adoption Framework)
-description: Eine Übersicht über das Microsoft-Framework für die Cloudeinführung für Azure.
+title: Das Framework für die Einführung der Microsoft Cloud für Azure
+description: Erhalten Sie Tools, Anleitungen und Berichte, die Ihnen helfen, Strategien zu entwickeln und die gewünschten Geschäftsergebnisse in allen Phasen des Lebenszyklus der Cloudeinführung voranzutreiben.
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
@@ -8,12 +8,12 @@ layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
 ms.date: 10/14/2019
-ms.openlocfilehash: c945539be722db41f9e4f04813c8bf9ac93af34f
-ms.sourcegitcommit: 7df593a67a2e77b5f61c815814af9f0c36ea5ebd
+ms.openlocfilehash: 280445bda3f95694fec5f1b5cc2659021a8ffc20
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75781707"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170918"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Framework für die Einführung der Microsoft Cloud (Microsoft Cloud Adoption Framework)
 
