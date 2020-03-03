@@ -8,19 +8,19 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: d8545d000d817aa8d6bcaa40a67a157ca5e57669
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 00dfa6c1caed189d9d9b1d27525344b5101c2af0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708494"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222600"
 ---
 # <a name="azure-regions"></a>Azure-Regionen
 
 Azure besteht aus zahlreichen Regionen auf der ganzen Welt. Jede [Azure-Region](https://azure.microsoft.com/global-infrastructure/regions) hat bestimmte Merkmale, weshalb die Wahl der zu verwendenden Region überaus wichtig ist.
 
 1. **Verfügbare Dienste:** Welche Dienste in den jeweiligen Regionen bereitgestellt werden, hängt von zahlreichen Faktoren ab. Wählen Sie eine Region für Ihre Workload aus, die den gewünschten Dienst enthält. Weitere Informationen zu den verfügbaren Diensten in den einzelnen Regionen finden Sie unter [Verfügbare Produkte nach Region](https://azure.microsoft.com/global-infrastructure/services).
-1. **Kapazität:** Jede Region hat eine maximale Kapazität. Für den Endbenutzer wird dies zwar in der Regel abstrahiert, es kann sich aber darauf auswirken, von welchen Abonnementarten unter welchen Umständen welche Arten von Diensten bereitgestellt werden können. Diese Kapazität ist nicht das Gleiche wie Abonnementkontingente. Falls Sie eine umfangreiche Datencentermigration zu Azure planen, informieren Sie sich ggf. bei Ihrem Azure-Vertreterteam oder -Kundenbetreuer vor Ort, ob eine Bereitstellung im gewünschten Umfang möglich ist.
+1. **Kapazität:** Jede Region hat eine maximale Kapazität. Für den Endbenutzer wird dies zwar in der Regel abstrahiert, es kann sich aber darauf auswirken, von welchen Abonnementarten unter welchen Umständen welche Arten von Diensten bereitgestellt werden können. Diese Kapazität ist nicht das Gleiche wie Abonnementkontingente. Falls Sie eine umfangreiche Rechenzentrumsmigration zu Azure planen, informieren Sie sich ggf. bei Ihrem Azure-Vertreterteam oder -Kundenbetreuer vor Ort, ob eine Bereitstellung im gewünschten Umfang möglich ist.
 1. **Einschränkungen:** In bestimmten Regionen unterliegt die Bereitstellung von Diensten gewissen Einschränkungen. Einige Regionen stehen beispielsweise nur als Sicherungs- oder Failoverziel zur Verfügung. Weitere wichtige Einschränkungen sind [Datenhoheitsanforderungen](https://azure.microsoft.com/global-infrastructure/geographies).
 1. **Datenhoheit:** Bestimmte Regionen sind für spezifische unabhängige Entitäten dediziert. Zwar handelt es sich bei allen Regionen um Azure-Regionen, diese unabhängigen Regionen sind jedoch vollständig vom Rest von Azure isoliert, werden nicht notwendigerweise von Microsoft verwaltet und können auf bestimmte Kundentypen beschränkt sein. Diese unabhängigen Regionen sind:
     1. [Azure China](https://azure.microsoft.com/global-infrastructure/china)

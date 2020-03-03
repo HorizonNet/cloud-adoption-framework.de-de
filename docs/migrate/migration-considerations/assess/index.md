@@ -1,20 +1,20 @@
 ---
-title: Bewerten von Ressourcen vor der Migration
-description: Bewerten von Ressourcen vor der Migration
+title: Validierung von Bewertungsannahmen vor der Migration
+description: Validierung von Bewertungsannahmen vor der Migration
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 76862bfbc4a88d34edb3dddb6281b5c435e6be73
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e370ef47b27449a3a46965dc309403a09fb3829d
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802496"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222276"
 ---
-# <a name="assess-assets-prior-to-migration"></a>Bewerten von Ressourcen vor der Migration
+# <a name="validate-assessment-assumptions-before-migration"></a>Validierung von Bewertungsannahmen vor der Migration
 
 Viele Ihrer vorhandenen Workloads sind ideale Kandidaten für eine Cloudmigration, aber nicht alle Ressourcen sind mit Cloudplattformen kompatibel. Ebenso können nicht alle Workloads vom Hosting in der Cloud profitieren. Die [Planung digitaler Bestände](../../../digital-estate/index.md) ermöglicht es Ihnen, einen allgemeinen [Migrationsbacklog](../prerequisites/technical-complexity.md#migration-backlog-aligning-business-priorities-and-timing) potenzieller Workloads für die Migration zu erstellen. Dieser Planungsaufwand erfolgt jedoch auf hoher Ebene. Es stützt sich auf Annahmen des Cloudstrategieteams und beschäftigt sich nicht ausführlicher mit technischen Überlegungen.
 
@@ -44,11 +44,14 @@ Zusätzlich zur Verantwortlichkeit auf hoher Ebene gibt es Maßnahmen, für die 
 - **Geschäftliche Priorität** Das Team versteht den Zweck der Migration dieser Workload, einschließlich aller geplanten Auswirkungen auf das Geschäft.
   - Ein Mitglied des Cloudstrategieteams sollte die Letztverantwortung für diese Aktivität tragen (unter der Leitung des Cloudeinführungsteams).
 - **Ausrichtung der Projektbeteiligten** Das Team stimmt die Erwartungen und Prioritäten mit den internen Projektbeteiligten ab und identifiziert Erfolgskriterien für die Migration. Wie sieht der Erfolg nach der Migration aus?
+- **Optimierte Rationalisierung:** Werten Sie die anfänglichen Annahmen bezüglich der Rationalisierung aus. Sollte ein anderer [Rationalisierungsansatz](../../../digital-estate/rationalize.md) zum Migrieren dieser bestimmten Workload verwendet werden?
+- **Modernisierungsentscheidungen:** Sollten unabhängig von der Rationalisierungsentscheidung verschiedene Ressourcen in der Workload optimiert werden, um auf PaaS basierende Lösungen zu nutzen?
 - **Kosten:** Die Kosten der Zielarchitektur wurden geschätzt und das Gesamtbudget wurde angepasst.
 - **Migrationsunterstützung:** Das Team hat entschieden, wie die technischen Aufgaben der Migration abgeschlossen werden, einschließlich der Entscheidungen über den Partner- oder Microsoft-Support.
 - **Auswertung:** Die Workload wird hinsichtlich Kompatibilität und Abhängigkeiten bewertet.
   - Diese Aktivität sollte einem Fachexperten zugewiesen werden, der mit der Architektur und den Abläufen der Workload des Kandidaten vertraut ist.
 - **Entwerfen:** Das Team hat sich auf die endgültige Zustandsarchitektur für die migrierte Workload geeinigt.
+- **Migrationstools:** Abhängig von den Modernisierungs- und Architekturansätzen können verschiedene Migrationstools verwendet werden, um die Migration zu automatisieren. Werden bei dieser Migration die besten [Migrationstools](../../../decision-guides/migrate-decision-guide/index.md) basierend auf der vorgeschlagenen Architektur verwendet?
 - **Backlogausrichtung:** Das Cloudeinführungsteam überprüft die Anforderungen und kümmert sich um die Migration der Kandidatenworkload. Nach der Zusage sind Releasebacklog und Iterationsbacklog entsprechend zu aktualisieren.
 - **Projektstrukturplan oder Nachbearbeitungsplan:** Das Team erstellt einen Zeitplan mit wichtigen Meilensteinen, in dem die Ziele für den Abschluss von Planungs-, Implementierungs- und Überprüfungsprozessen festgelegt werden.
 - **Abschließende Genehmigung:** Alle erforderlichen genehmigenden Personen haben den Plan überprüft und den Ansatz für die Migration der Ressource genehmigt.

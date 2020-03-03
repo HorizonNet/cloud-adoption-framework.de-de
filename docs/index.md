@@ -7,13 +7,13 @@ ms.custom: homepage
 layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
-ms.date: 10/14/2019
-ms.openlocfilehash: 280445bda3f95694fec5f1b5cc2659021a8ffc20
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.date: 02/28/2020
+ms.openlocfilehash: 7bbdcdbdad1e00947d20f701ff6a81a465a09248
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170918"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223765"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Framework für die Einführung der Microsoft Cloud (Microsoft Cloud Adoption Framework)
 
@@ -159,7 +159,7 @@ Vorgangsverwaltung für Cloud- und Hybridlösungen
 
 ## <a name="understand-the-lifecycle"></a>Grundlegendes zum Lebenszyklus
 
-Jede der oben genannten Phasen ist Teil eines umfassenden Cloudeinführungs-Lebenszyklus. In der folgenden Abbildung werden die einzelnen Phasen miteinander verknüpft, um den gesamten Lebenszyklus zu veranschaulichen. Das Framework für die Cloudeinführung ist ein vollständiges Lebenszyklus-Framework, das Kunden in jeder Phase unterstützt.
+Jede der oben genannten Methoden ist Teil eines umfassenden Cloudeinführungs-Lebenszyklus. In der folgenden Abbildung werden die einzelnen Methoden miteinander verknüpft, um den gesamten Lebenszyklus zu veranschaulichen. Das Framework für die Cloudeinführung ist ein vollständiges Lebenszyklus-Framework, das Kunden in jeder Einführungsphase unterstützt, indem es Methoden als spezifische Ansätze zur Bewältigung gängiger Hindernisse bereitstellt.
 
 ![Übersicht über das Framework für die Cloudeinführung](./_images/caf-overview.png)
 

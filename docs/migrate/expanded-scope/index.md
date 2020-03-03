@@ -3,16 +3,16 @@ title: Checkliste für die Cloudmigration mit erweitertem Umfang
 description: Checkliste für die Cloudmigration mit erweitertem Umfang
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/10/2019
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6a7a59ba62204d43b7085ab3dbd6b934d6aaccc1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ba6c768f98e3b74b0478fef0a86e6d8ac5537f1c
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803108"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222327"
 ---
 # <a name="expanded-scope-for-cloud-migration"></a>Erweiterter Umfang für die Cloudmigration
 
@@ -26,7 +26,6 @@ Die folgende Checkliste beschreibt die allgemeinen Komplexitätsbereiche, die ei
 
 ### <a name="business-driven-scope-expansion"></a>Geschäftsorientierte Umfangserweiterung
 
-- **[Ausgewogenheit des Portfolios](./balance-the-portfolio.md):** Das Cloudstrategieteam ist daran interessiert, verstärkt in die Migration (erneutes Hosting bestehender Workloads und Anwendungen mit minimalen Änderungen) oder in Innovationen (Refactoring oder erneutes Erstellen dieser Workloads und Anwendungen unter Verwendung moderner Cloudtechnologie) zu investieren. Häufig ist ein Gleichgewicht zwischen den beiden Prioritäten der Schlüssel zum Erfolg. In diesem Leitfaden ist das Thema zum Ausgleichen des Portfolios zur Cloudeinführung ein allgemeines Thema, das in jedem der Migrationsprozesse behandelt wird.
 - **[Unterstützung globaler Märkte](../../decision-guides/regions/index.md):** Das Unternehmen ist in mehreren geografischen Regionen mit unterschiedlichen Anforderungen an die Datenhoheit tätig. Um diesen Anforderungen gerecht zu werden, sollten zusätzliche Überlegungen bei der erforderlichen Überprüfung und Verteilung der Ressourcen während der Migration berücksichtigt werden.
 
 ### <a name="technology-driven-scope-expansion"></a>Technologieorientierte Umfangserweiterung
@@ -43,7 +42,7 @@ Jedes dieser Szenarien wird in den verschiedenen Artikeln in diesem Abschnitt de
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Durchsuchen Sie das Inhaltsverzeichnis auf der linken Seite, um bestimmte Anforderungen oder Änderungen des Umfangs zu berücksichtigen. Alternativ ist die erste Umfangserweiterung in der Liste [Ausgewogenheit des Portfolios](./balance-the-portfolio.md) ein guter Ausgangspunkt für die Überprüfung dieser Szenarien.
+Durchsuchen Sie das Inhaltsverzeichnis auf der linken Seite, um bestimmte Anforderungen oder Änderungen des Umfangs zu berücksichtigen. Alternativ ist die erste Umfangserweiterung in der Liste [Unterstützung globaler Märkte](../../decision-guides/regions/index.md) ein guter Ausgangspunkt für die Überprüfung dieser Szenarien.
 
 > [!div class="nextstepaction"]
-> [Ausgewogenheit des Portfolios](./balance-the-portfolio.md)
+> [Unterstützung globaler Märkte](../../decision-guides/regions/index.md)

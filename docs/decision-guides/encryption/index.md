@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: c81096576934aa55bd0381e7ac26dd8666b827ea
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: bc80c33569cdb0980885ebba9c87d52e0aa87b7d
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707984"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222589"
 ---
 # <a name="encryption-decision-guide"></a>Leitfaden zur Entscheidungsfindung für die Verschlüsselung
 
@@ -54,7 +54,7 @@ Die Verwendung eines cloudnativen Schlüsselverwaltungssystems umfasst die folge
 
 Bei einem Bring-Your-Own-Key-Ansatz generieren Sie die Schlüssel auf dedizierter HSM-Hardware in Ihrer lokalen Umgebung und übertragen diese dann sicher an ein cloudbasiertes Verwaltungssystem wie Azure Key Vault zur Verwendung mit Ihren in der Cloud gehosteten Ressourcen.
 
-**Bring Your Own Key-Annahmen:** Das lokale Generieren von Schlüsseln und deren Verwendung mit einem cloudbasierten Schlüsselverwaltungssystem umfasst die folgenden Annahmen:
+**Voraussetzungen für Bring-Your-Own-Key:** Das lokale Generieren von Schlüsseln und deren Verwendung mit einem cloudbasierten Schlüsselverwaltungssystem umfasst die folgenden Annahmen:
 
 - Sie vertrauen der zugrunde liegenden Sicherheits- und Zugriffssteuerungsinfrastruktur der Cloudplattform beim Hosting und der Verwendung Ihrer Schlüssel und Geheimnisse.
 - Ihre in der Cloud gehosteten Anwendungen und Dienste können sicher und zuverlässig auf Schlüssel und Geheimnisse zugreifen und sie entsprechend verwenden.

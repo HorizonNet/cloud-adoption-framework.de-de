@@ -7,13 +7,15 @@ ms.date: 12/27/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 04058077ed9fc739a063e75d0da4effb4c784436
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: b38408033231a4ac1d8debe889117c2f5220c676
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171377"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223668"
 ---
+<!-- cspell:ignore nanra njray dbspaces dbextents VSAM RACF LPARS ASSGN DLBL EXTENT LIBDEF EXEC IPLs -->
+
 # <a name="mainframe-migration-overview"></a>Übersicht zur Mainframemigration
 
 Viele Unternehmen und Organisationen profitieren davon, einige oder alle ihrer Mainframeworkloads, -anwendungen und -datenbanken in die Cloud zu verschieben. Azure bietet mainframeähnliche Funktionen im Cloudmaßstab ohne viele der mit Mainframes assoziierten Nachteile.
@@ -34,13 +36,13 @@ Diese Anleitung hilft IT-Organisationen, die Konversation über die Migration zu
 
 In den späten 1950er-Jahren wurden Mainframes als zentral hochskalierte Server zur Ausführung umfangreicher Onlinetransaktionen und zur Batchverarbeitung konzipiert. Aus diesem Grund verfügen Mainframes über Software für Onlinetransaktionsformulare (manchmal als grüne Bildschirme bezeichnet) und Hochleistungs-E/A-Systeme für die Verarbeitung von Batchausführungen.
 
-Mainframes haben den Ruf hoher Zuverlässigkeit und Verfügbarkeit und sind bekannt für ihre Fähigkeit zum Ausführen großer Onlinetransaktionen und Batchaufträge. Eine Transaktion ergibt sich aus einem durch eine einzelne Anforderung initiierten Teil der Verarbeitung, in der Regel von einem Benutzer an einem Terminal. Transaktionen können auch aus vielen anderen Quellen einschließlich Webseiten, Remotearbeitsstationen und Anwendungen von anderen Informationssystemen stammen. Eine Transaktion kann auch automatisch zu einem vordefinierten Zeitpunkt ausgelöst werden, wie die folgende Abbildung zeigt.
+Mainframes sind bekannt für ihre hohe Zuverlässigkeit und Verfügbarkeit sowie für ihre Fähigkeit zum Ausführen großer Onlinetransaktionen und Batchaufträge. Eine Transaktion ergibt sich aus einem durch eine einzelne Anforderung initiierten Teil der Verarbeitung, in der Regel von einem Benutzer an einem Terminal. Transaktionen können auch aus vielen anderen Quellen einschließlich Webseiten, Remotearbeitsstationen und Anwendungen von anderen Informationssystemen stammen. Eine Transaktion kann auch automatisch zu einem vordefinierten Zeitpunkt ausgelöst werden, wie die folgende Abbildung zeigt.
 
 ![Komponenten in einer typischen IBM-Mainframearchitektur](../../_images/mainframe-migration/mainframe-architecture.png)
 
 Eine typische IBM-Mainframearchitektur umfasst diese gemeinsamen Komponenten:
 
-- **Front-End-Systeme:** Benutzer können Transaktionen von Terminals, Webseiten oder Remotearbeitsstationen aus initiieren. Mainframeanwendungen verfügen häufig über benutzerdefinierte Benutzeroberflächen, die nach der Migration zu Azure beibehalten werden können. Terminalemulatoren werden immer noch zum Zugriff auf Mainframeanwendungen verwendet und auch als Terminals mit grünen Bildschirmen bezeichnet.
+- **Front-End-Systeme:** Benutzer können Transaktionen von Terminals, Webseiten oder Remotearbeitsstationen aus initiieren. Mainframeanwendungen verfügen häufig über benutzerdefinierte Benutzeroberflächen, die nach der Migration zu Azure beibehalten werden können. Terminalemulatoren (auch als Terminals mit grünen Bildschirmen bezeichnet) werden immer noch zum Zugriff auf Mainframeanwendungen verwendet.
 
 - **Anwendungsschicht:** Mainframes enthalten in der Regel ein Kundeninformations-Steuersystem (Customer Information Control System, CICS), eine führende Transaktionsverwaltungssuite für IBM z/OS-Mainframes, die häufig mit dem IBM Information Management System (IMS), einem nachrichtenbasierten Transaktions-Manager, verwendet wird. Batchsysteme behandeln Datenupdates mit hohen Durchsätzen für große Mengen von Kontodatensätzen.
 

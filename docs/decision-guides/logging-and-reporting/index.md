@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: e87c64be282f91716bdb8d803681c1f0f8a1f722
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: a6229013dcbc56ff39fd4d41a5b81f13b446e625
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707661"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222782"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Protokollierung und Berichterstellung
 
@@ -44,7 +44,7 @@ Wenn es in Ihrer Organisation derzeit an bewährten Protokollierungs- und Berich
 
 Bei diesem Szenario werden die Protokolldaten erfasst und in der Cloud gespeichert, während die Protokollierungs- und Berichterstellungstools, die Informationen verarbeiten und IT-Mitarbeitern zugänglich machen, von der Azure-Plattform und Azure Monitor bereitgestellt werden.
 
-Benutzerdefinierte Azure Monitor-basierte Protokollierungslösungen können ad hoc für jedes Abonnement oder jede Workload für kleinere oder experimentelle Bereitstellungen implementiert werden und sind zentral organisiert, um Protokolldaten im gesamten Cloudumfeld zu überwachen.
+Individuelle Protokollierungslösungen auf der Basis von Azure Monitor können je nach Bedarf für jedes Abonnement oder jede Workload in kleineren oder experimentellen Bereitstellungen implementiert werden. Diese Lösungen werden zentral organisiert, um Protokolldaten in der gesamten Cloudumgebung zu überwachen.
 
 **Annahmen für cloudnative Systeme:** Für die Verwendung eines cloudnativen Protokollierungs- und Berichterstellungssystems wird Folgendes angenommen:
 

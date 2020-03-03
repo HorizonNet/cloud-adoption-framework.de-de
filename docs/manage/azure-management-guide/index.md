@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0dfab31bbdc9dc7aae6c5d82f77f8640dcc01874
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a6f136f3a9aeae8b9ffe6f7e51dbb65da04e81ea
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808225"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223464"
 ---
 ::: zone target="docs"
 
@@ -53,7 +53,7 @@ Eine Baseline zur Verwaltung umfasst den Mindestsatz an Tools und Prozessen, der
 ::: zone target="docs"
 
 > [!TIP]
-> Dieser Leitfaden steht im Azure-Portal als interaktive Umgebung zur Verfügung. Navigieren Sie im Azure-Portal zum [Schnellstartcenter von Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade), und wählen Sie den **Azure-Verwaltungsleitfaden** aus. Befolgen Sie dann die Schrittanleitungen.
+> Dieser Leitfaden steht im Azure-Portal als interaktive Umgebung zur Verfügung. Navigieren Sie im Azure-Portal zum [Schnellstartcenter von Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade), und wählen Sie dann den **Azure-Verwaltungsleitfaden** aus. Befolgen Sie dann die Schrittanleitungen.
 
 Der nächste Schritt ist [Bestand und Transparenz](./inventory.md).
 
