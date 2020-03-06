@@ -1,6 +1,6 @@
 ---
-title: 'Azure-Verwaltungsleitfaden: Vorbereitung'
-description: Hier erfahren Sie, wie Sie Ihre Azure-Vorgänge mit einer Schritt-für-Schritt-Anleitung verwalten.
+title: Übersicht über die Verwaltung in Azure
+description: Erfahren Sie mehr über das Framework für die Cloudeinführung für Azure mit diesen Informationen zu den grundlegenden Tools, die zum Verwalten von Azure-Produktionsumgebungen erforderlich sind.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,16 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a6f136f3a9aeae8b9ffe6f7e51dbb65da04e81ea
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 37d49948772ca0912dc574ccb299c050eae4aeb4
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223464"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341758"
 ---
+# <a name="azure-management-guide-before-you-start"></a>Azure-Verwaltungsleitfaden: Vorbereitung
+
+
 ::: zone target="docs"
 
-# <a name="azure-management-guide-before-you-start"></a>Azure-Verwaltungsleitfaden: Vorbereitung
 
 > [!NOTE]
 > Dieser Leitfaden dient als Ausgangspunkt für Innovationsleitlinien im Cloud Adoption Framework. Er ist auch im Schnellstartcenter von Azure verfügbar. Einen Link zum Schnellstartcenter von Azure finden Sie im Tipp weiter unten in diesem Artikel.
