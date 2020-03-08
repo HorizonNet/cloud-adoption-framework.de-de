@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 layout: LandingPage
-ms.openlocfilehash: dca756b0e511b31372efa1c5ff7a779a34e9d6ac
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 43f3c7f56560489dda43b77c68da01c093be8a5e
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807664"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892139"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>Cloudverwaltung im Framework für die Cloudeinführung
 
@@ -135,7 +135,7 @@ Der Cloudarchitekt dient als innovative Führungsperson und Vermittler, um diese
 
 Wenn Sie dem Leitfaden vom Anfang bis zum Ende folgen, helfen diese Inhalte Ihnen dabei, eine robuste Cloudbetriebsstrategie zu entwickeln. Sie werden detailliert durch die Theorie und Implementierung einer solchen Strategie geleitet.
 
-<!-- For a crash course on the theory and quick access to Azure implementation, get started with the [governance guides overview](./guide/index.md). Using this guidance, you can start small and iteratively improve your governance needs in parallel with cloud adoption efforts. -->
+<!-- For a crash course on the theory and quick access to Azure implementation, get started with the [governance guides overview](). Using this guidance, you can start small and iteratively improve your governance needs in parallel with cloud adoption efforts. -->
 
 ## <a name="next-steps"></a>Nächste Schritte
 
