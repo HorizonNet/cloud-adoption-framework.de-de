@@ -1,6 +1,6 @@
 ---
 title: Richtlinie zur cloudnativen Sicherheitsbaseline
-description: Richtlinie zur cloudnativen Sicherheitsbaseline
+description: Sehen Sie sich eine cloudnative Beispielrichtlinie für die Disziplin „Sicherheitsbaseline“ mit ausreichenden Azure-Tools und -Plattformen für die Bewältigung von Geschäftsrisiken an.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9921e04f0b066023842c2ff9009d9e159b759315
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ce5b1a77396479b2621afab5cac025b983f14469
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808939"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223734"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Richtlinie zur cloudnativen Sicherheitsbaseline
 

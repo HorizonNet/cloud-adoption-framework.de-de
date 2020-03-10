@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 8a807bfc20289339221056b9b0798260aaddbfd8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c4d5e151d5ea4badd3c6c5fab25f4a6be9ee60c5
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807307"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222828"
 ---
 # <a name="scale-a-migration-to-azure"></a>Skalieren einer Migration zu Azure
 
@@ -102,7 +102,7 @@ Sicherheitsprobleme | J/N | Gibt es bekannte Sicherheitsprobleme mit der App?  V
 Im Rahmen des Bewertungsprozesses muss Contoso ermitteln, wo Apps ausgeführt werden, und die Abhängigkeiten und Verbindungen zwischen App-Servern identifizieren. Contoso ordnet die Umgebung schrittweise zu.
 
 1. Im ersten Schritt ermittelt Contoso die Zuordnung der einzelnen Apps, Netzwerkadressen und Gruppen zu Servern und Computern.
-2. Mit diesen Informationen kann Contoso diejenigen Apps eindeutig ermitteln, bei denen wenige Abhängigkeiten bestehen und die sich daher für eine schnelle Migration eignen.
+2. Mit diesen Informationen kann Contoso die Apps ermitteln, bei denen wenige Abhängigkeiten bestehen und die sich für eine schnelle Migration eignen.
 3. Mithilfe der Zuordnung kann Contoso komplexere Abhängigkeiten und Kommunikationsprozesse zwischen App-Servern identifizieren. Contoso kann diese Server dann logisch gruppieren, um die Apps zu repräsentieren, und basierend auf diesen Gruppen eine Migrationsstrategie planen.
 
 Wenn die Zuordnung abgeschlossen ist, kann Contoso sicherstellen, dass alle App-Komponenten identifiziert sind und bei der Erstellung des Migrationsplans berücksichtigt werden.

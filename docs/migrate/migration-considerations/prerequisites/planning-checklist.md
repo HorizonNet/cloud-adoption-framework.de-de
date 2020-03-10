@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2660c6f09924c907591c8c8635b943125d0ac9a1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: acf6c3b8dacd94c51a6fa9a857efad48eda727a0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801408"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222242"
 ---
 # <a name="migration-environment-planning-checklist-validate-environmental-readiness-prior-to-migration"></a>Planungscheckliste für die Migrationsumgebung: Überprüfen der Umgebungsbereitschaft vor der Migration
 
@@ -26,7 +26,11 @@ Bei diesem Artikel und der Checkliste wird von einem Ansatz des Typs _Zuweisen e
 
 ## <a name="governance-alignment"></a>Governanceausrichtung
 
-Die erste und wichtigste Entscheidung in Bezug auf eine migrationsbereite Umgebung ist die Auswahl der Governanceausrichtung. Wurde ein Konsens über die Ausrichtung von Governance und Migrationsgrundlage erzielt? Dem Cloudeinführungsteam sollte mindestens bekannt sein, ob diese Migration eine einzelne Umgebung mit begrenzter Governance, eine vollständig gesteuerte Umgebungsfactory oder eine Variante dazwischen zum Ziel hat. Weitere Optionen und Anleitungen zur Governanceausrichtung finden Sie im Artikel zu [Governance- und Complianceausrichtung](../../expanded-scope/governance-or-compliance.md).
+Die erste und wichtigste Entscheidung in Bezug auf eine migrationsbereite Umgebung ist die Auswahl der Governanceausrichtung. Wurde ein Konsens über die Ausrichtung von Governance und Migrationsgrundlage erzielt? Dem Cloudeinführungsteam sollte mindestens bekannt sein, ob diese Migration eine einzelne Umgebung mit begrenzter Governance, eine vollständig gesteuerte Umgebungsfactory oder eine Variante dazwischen zum Ziel hat. Weitere Anleitungen zur Governanceausrichtung finden Sie in der [Governancemethodik](../../../govern/index.md).
+
+## <a name="operations-management-alignment"></a>Ausrichtung der Vorgangsverwaltung
+
+Vor der Migration von Assets in die Cloud ist es wichtig, sich mit sämtlichen Anforderungen und Einschränkungen im Zusammenhang mit der Vorgangsverwaltung vertraut zu machen. Die Migrationsumgebung muss mindestens alle Implementierungen enthalten, die zur Erfüllung der betrieblichen Baseline erforderlich sind. Weitere Anleitungen zur Vorgangsausrichtung finden Sie in der [Verwaltungsmethodik](../../../manage/index.md).
 
 ## <a name="cloud-readiness-implementation"></a>Implementierung der Cloudbereitschaft
 

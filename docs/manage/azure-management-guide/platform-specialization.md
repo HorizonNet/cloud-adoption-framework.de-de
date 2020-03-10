@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9c4f18c4c81dce2caa41b1dab5dddc394042f390
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 91d800c3f3575cc16d239106805fdfaef8a29e14
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808174"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223520"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>Plattformspezialisierung für die Cloudverwaltung
 
@@ -55,7 +55,7 @@ Die Plattformspezialisierung besteht aus einer disziplinierten Ausführung der f
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="improve-system-designtabsystemsdesign"></a>[Verbessern des Systementwurfs](#tab/SystemsDesign)
+## <a name="improve-system-design"></a>[Verbessern des Systementwurfs](#tab/SystemsDesign)
 
 ::: zone-end
 
@@ -86,7 +86,7 @@ Bei zunehmender Verbesserung des Systementwurfs kehren Sie zu diesem Artikel zur
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="automated-remediationtabautomatedremediation"></a>[Automatisierte Korrektur](#tab/AutomatedRemediation)
+## <a name="automated-remediation"></a>[Automatisierte Korrektur](#tab/AutomatedRemediation)
 
 ::: zone-end
 
@@ -103,7 +103,7 @@ Anleitungen zur automatisierten Korrektur finden Sie unter [Azure Automation und
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="scale-the-solution-with-a-service-catalogtabservicecatalog"></a>[Skalieren der Lösung mit einem Dienstkatalog](#tab/ServiceCatalog)
+## <a name="scale-the-solution-with-a-service-catalog"></a>[Skalieren der Lösung mit einem Dienstkatalog](#tab/ServiceCatalog)
 
 ::: zone-end
 
@@ -119,7 +119,7 @@ Anweisungen zur Veröffentlichung in einem Dienstkatalog finden Sie in der Artik
 
 1. Wechseln Sie im Azure-Portal zu **Center für verwaltete Anwendungen (Vorschau)** .
 2. Wählen Sie im Bereich **Durchsuchen** die Option **Dienstkataloganwendungen** aus.
-3. Klicken Sie auf **+ Hinzufügen**, um eine Anwendungsdefinition aus dem Dienstkatalog Ihres Unternehmens auszuwählen.
+3. Wählen Sie **+ Hinzufügen** aus, um eine Anwendungsdefinition aus dem Dienstkatalog Ihres Unternehmens auszuwählen.
 
 Alle verwalteten Anwendungen, die Sie warten, werden angezeigt.
 
@@ -153,7 +153,7 @@ Alle verwalteten Anwendungen, die Sie warten, werden angezeigt.
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="continuous-improvementtabcontinuousimprovement"></a>[Fortlaufende Verbesserung](#tab/ContinuousImprovement)
+## <a name="continuous-improvement"></a>[Fortlaufende Verbesserung](#tab/ContinuousImprovement)
 
 ::: zone-end
 

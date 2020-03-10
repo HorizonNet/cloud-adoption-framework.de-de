@@ -1,6 +1,6 @@
 ---
-title: 'Governanceleitfaden für komplexe Unternehmen: Multi-Cloud-Verbesserung'
-description: 'Governanceleitfaden für komplexe Unternehmen: Multi-Cloud-Verbesserung'
+title: 'Governance in komplexen Unternehmen: Multi-Cloud-Verbesserung'
+description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um sich über mehrere Clouds sowie über die Integration von Multi-Cloud-Organisationen für komplexe Unternehmen zu informieren.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3da91b65c282e9eba8248645b18cec65763b429b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9f4b11023e8b345283054c0ddede132f10664632
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805590"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223930"
 ---
 # <a name="governance-guide-for-complex-enterprises-multicloud-improvement"></a>Governanceleitfaden für komplexe Unternehmen: Multi-Cloud-Verbesserung
 
@@ -31,7 +31,7 @@ Seit diesem Zeitpunkt haben sich einige Dinge geändert, die sich auf die Govern
 
 - Die Identität wird von einer lokalen Instanz von Active Directory kontrolliert. Hybrididentität wird mithilfe von Replikation in Azure Active Directory vereinfacht.
 - Der IT- oder Cloudbetrieb wird hauptsächlich von Azure Monitor und verwandten Automatisierungsfunktionen verwaltet.
-- Notfallwiederherstellung und Geschäftskontinuität (Disaster Recovery and Business Continuity, DRBC) werden von Azure Vault-Instanzen kontrolliert.
+- Business Continuity & Disaster Recovery (BCDR) wird von Azure Vault-Instanzen gesteuert.
 - Für die Überwachung von Sicherheitsverletzungen und Angriffen wird Azure Security Center genutzt.
 - Azure Security Center und Azure Monitor werden zusammen für die Überwachung der Governance in der Cloud verwendet.
 - Azure Blueprints, Azure Policy und Verwaltungsgruppen werden verwendet, um die Richtlinienkonformität zu automatisieren.

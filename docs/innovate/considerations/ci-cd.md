@@ -1,18 +1,18 @@
 ---
-title: 'Cloudinnovation: Unterstützen der Einführung'
-description: 'Einführung in die Cloudinnovation: Unterstützen der Einführung'
+title: Unterstützen der Einführung durch digitale Innovationen
+description: Nutzen Sie das Reifemodell der Innovationsmethodik, um die Migration möglichst reibungslos zu gestalten und gleichzeitig die weitere Anwendung von Best Practices zu gewährleisten.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a3c726443e62140dba997ae4a1ff89593f72e6e6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 59ef9ad61c9e3545fbcdbd62e05711e20de38a29
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808514"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223477"
 ---
 # <a name="empower-adoption"></a>Unterstützen der Einführung
 
@@ -45,7 +45,7 @@ Wie unter [Messen der Auswirkungen für Kunden](./measure.md) beschrieben, erfor
 
 Zum Skalieren von Innovationen finden Sie kein wertvolleres Tool als eine freigegebene Codebasis für die Lösung. Leider gibt es keine zuverlässige Möglichkeit, vorherzusagen, mit welcher Iteration oder welchem MVP die gewinnende Kombination erzielt wird. Daher ist es nie zu früh, eine freigegebene Codebasis oder ein Repository einzurichten. Dies ist die einzige [technische Spitze](./build.md#reduce-complexity-and-delay-technical-spikes), die nie verzögert werden sollte. Wenn das Team verschiedene MVP-Lösungen durchläuft, ermöglicht ein freigegebenes Repository mühelose Zusammenarbeit und beschleunigte Entwicklung. Wenn Änderungen der Lösung Lernmetriken beeinträchtigen, können Sie mit der Versionskontrolle ein Rollback auf eine frühere, effektivere Version der Lösung durchführen.
 
-Das gängigste Tool für die Verwaltung von Coderepositorys ist [GitHub](https://guides.github.com), mit dem Sie sehr schnell mit wenigen Mausklicks ein Repository für freigegebenen Code erstellen können. Außerdem kann das Feature [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) von Azure DevOps zum Erstellen eines [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git)- oder [Team Foundation](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc)-Repositorys verwendet werden.
+Das gängigste Tool für die Verwaltung von Coderepositorys ist [GitHub](https://guides.github.com). Damit lässt sich in wenigen Schritten ein gemeinsam genutztes Coderepository erstellen. Außerdem kann das Feature [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) von Azure DevOps zum Erstellen eines [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git)- oder [Team Foundation](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc)-Repositorys verwendet werden.
 
 ## <a name="feedback-loops"></a>Feedbackschleifen
 
@@ -61,7 +61,7 @@ Wenn Einführungen skaliert werden und eine Hypothese sich bedarfsabhängig eine
 
 In Continuous Integration werden Codeänderungen häufig in den Hauptbranch zusammengeführt. Automatisierte Build- und Testprozesse stellen sicher, dass der Code im Hauptbranch immer Produktionsqualität aufweist. Dies garantiert, dass Entwickler zusammenarbeiten, um gemeinsam genutzte Lösungen zu entwickeln, die exakte und zuverlässige Feedbackschleifen bieten.
 
-Azure DevOps und [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines) bieten mit nur wenigen Klicks Continuous Integration-Funktionen für GitHub oder eine Vielzahl anderer Repositorys.
+Azure DevOps und [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines) bieten mit nur wenigen Schritten Continuous Integration-Funktionen für GitHub oder eine Vielzahl anderer Repositorys.
 Erfahren Sie mehr über [Continuous Integration](https://docs.microsoft.com/azure/devops/learn/what-is-continuous-integration), oder führen Sie die [praktischen Übungseinheiten](https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration) aus, um weitere Informationen zu erhalten. Es gibt auch Lösungsarchitekturen, die die Erstellung Ihrer [CI/CD-Pipelines über Azure DevOps](https://azure.microsoft.com/solutions/devops) beschleunigen.
 
 ## <a name="reliable-testing"></a>Zuverlässiges Testen

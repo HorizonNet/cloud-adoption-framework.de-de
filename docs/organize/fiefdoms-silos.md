@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 41f23244119358a3356f65f6050572e4a8c787c1
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a430f988282a89bb4aea7e07689310309d5b971c
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800813"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222293"
 ---
 # <a name="organizational-antipatterns-silos-and-fiefdoms"></a>Antimuster in Unternehmen: Silos und Machtbereiche
 
@@ -59,7 +59,7 @@ Auch in toxischen Unternehmenskulturen sollte es durch die Arbeit des CCoE und d
 
 ## <a name="it-silos"></a>IT-Silos
 
-Teammitglieder in einem IT-Silos definieren sich häufig über ihre Verbindung mit einer kleinen Zahl von IT-Anbietern oder einen bestimmten Bereich technischer Spezialisierung. Sie sollten IT-Silos aber nicht mit IT-Machtbereichen verwechseln. Bei IT-Silos stehen Benutzerfreundlichkeit und Leidenschaft im Vordergrund, und Vorbehalte lassen sich normalerweise leichter ausräumen, als es bei den angstgetriebenen Motiven von Machtbereichen der Fall ist.
+Teammitglieder in einem IT-Silos definieren sich häufig über ihre Verbindung mit einer kleinen Zahl von IT-Anbietern oder einen bestimmten Bereich technischer Spezialisierung. IT-Silos dürfen jedoch nicht mit IT-Machtbereichen verwechselt werden. Bei Silos stehen Benutzerfreundlichkeit und Leidenschaft im Vordergrund, und sie sind in der Regel leichter in den Griff zu bekommen als die angstgesteuerten Beweggründe für Machtbereiche.
 
 Dieses Antimuster entsteht oft aus einer gemeinsamen Leidenschaft für eine bestimmte Lösung. Die IT-Silos werden dann durch die besonderen Fähigkeiten des Teams gestärkt, nachdem in diese bestimmte Lösung investiert wurde. Durch diese besonderen Fähigkeiten kann die Arbeit zur Einführung der Cloud beschleunigt werden, sofern der Widerstand gegen die Veränderung beseitigt werden kann. Es kann auch zu größeren Blockaden kommen, wenn die Silos aufgelöst werden oder die Teammitglieder die Optionen nicht richtig evaluieren können. Glücklicherweise kann für IT-Silos häufig eine Lösung gefunden werden, ohne dass das Organigramm erheblich geändert werden muss.
 
@@ -77,9 +77,9 @@ Experimente und Offenlegungen sind leistungsfähige Werkzeuge, wenn es um die Be
 
 Halten Sie sich bei der Überprüfung der konkurrierenden Lösung an die bewährten Methoden unter [Definieren der Unternehmensrichtlinie](../govern/corporate-policy.md). So können Sie konkrete Risiken des Experiments dokumentieren und Richtlinien festlegen, die dazu beitragen, dass das Team aus dem Silo sich eher mit dem zukünftigen Zustand anfreunden kann. Für das Team werden hierdurch neue Lösungen verfügbar gemacht, und die Akzeptanz der zukünftigen Lösung wird erhöht.
 
-**„Grenzenlosigkeit“:** Teams, die sich mit der Cloudeinführung beschäftigen, fällt die Verschiebung von Grenzen leicht, indem sie aufregende, neue cloudnative Lösungen erkunden. Dies ist eine Seite des Ansatzes zur Beseitigung von Hindernissen. Diese Herangehensweise kann aber auch dazu führen, dass IT-Silos gestärkt werden. Wenn Veränderungen zu schnell vorangetrieben und vorhandene Kulturen nicht respektiert werden, kann dies zu negativen Spannungen und natürlichem Widerstand führen.
+**Grenzenlosigkeit:** Teams, die sich mit der Cloudeinführung beschäftigen, fällt die Verschiebung von Grenzen leicht, indem sie aufregende, neue cloudnative Lösungen erkunden. Dies ist eine Seite des Ansatzes zur Beseitigung von Hindernissen. Diese Herangehensweise kann aber auch dazu führen, dass IT-Silos gestärkt werden. Wenn Veränderungen zu schnell vorangetrieben und vorhandene Kulturen nicht respektiert werden, kann dies zu negativen Spannungen und natürlichem Widerstand führen.
 
-Wenn IT-Silos Widerstand leisten, ist es wichtig, dass Sie bei Ihren eigenen Lösungen „grenzenlos“ vorgehen. Beachten Sie die folgende einfache Wahrheit: die cloudnative Lösung ist nicht immer die beste Lösung. Erwägen Sie den Einsatz von Hybridlösungen, die es ermöglichen, die Nutzung der vorhandenen Investitionen des IT-Silos zu verlängern.
+Sollten Sie bei IT-Silos auf Widerstand stoßen, ist es wichtig, bei Ihren eigenen Lösungen einen grenzenlosen Ansatz zu verfolgen. Beachten Sie die folgende einfache Wahrheit: die cloudnative Lösung ist nicht immer die beste Lösung. Erwägen Sie den Einsatz von Hybridlösungen, die es ermöglichen, die Nutzung der vorhandenen Investitionen des IT-Silos zu verlängern.
 
 Erwägen Sie auch die Verwendung von cloudbasierten Versionen der Lösung, die das Team des IT-Silos bereits nutzt. Experimentieren Sie mit diesen Lösungen, und versetzen Sie sich in die Position der Mitarbeiter im IT-Silo. Hierbei lernen Sie mindestens eine neue Sichtweise kennen. Oftmals verdienen Sie sich genug Respekt vom IT-Silo, um den Widerstand zu verringern.
 

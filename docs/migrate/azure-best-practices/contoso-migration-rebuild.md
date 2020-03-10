@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: e2904356871eec65b516b7a02c356c679ab86b33
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1b8afc8da78d171d0d420730f05d5583b231ddd1
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807494"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223094"
 ---
+<!-- cSpell:ignore reqs contosohost contosodc contosoacreus contososmarthotel smarthotel smarthotelcontoso smarthotelakseus smarthotelacreus smarthotelpets smarthotelpetchecker smarthotelsettingsurl vcenter WEBVM SQLVM eastus kubectl contosodevops visualstudio azuredeploy cloudapp publishfront petchecker appsettings -->
+
 # <a name="rebuild-an-on-premises-app-on-azure"></a>Neuerstellen einer lokalen App in Azure
 
 Dieser Artikel zeigt, wie das fiktive Unternehmen Contoso einer zweistufigen Windows-.NET-App, die auf VMware-VMs ausgeführt wird, als Teil einer Migration der App-VMs zu Azure neu erstellt. Contoso migriert die Front-End-VM der App zu einer Azure App Services-Web-App. Das Back-End der App wird mithilfe von Microservices erstellt, die für Container bereitgestellt werden, die von Azure Kubernetes Service (AKS) verwaltet werden. Die Website interagiert mit Azure Functions zum Bereitstellen der Funktionalität für Fotos von Haustieren.
@@ -178,7 +180,7 @@ Die Contoso-Administratoren führen die Bereitstellung wie folgt durch:
 
 9. Nachdem die Bereitstellung abgeschlossen ist, installieren sie das Befehlszeilentool **kubectl**. Das Tool ist bereits in Azure Cloud Shell installiert.
 
-   ```console
+   ```azurecli
    az aks install-cli
    ```
 
@@ -188,7 +190,7 @@ Die Contoso-Administratoren führen die Bereitstellung wie folgt durch:
 
 11. Contoso führt den folgenden Befehl zum Starten des Kubernetes-Dashboards aus:
 
-    ```console
+    ```azurecli
     az aks browse --resource-group ContosoRG --name smarthotelakseus2
     ```
 
@@ -244,7 +246,7 @@ Contoso-Administratoren erstellen ein Azure DevOps-Projekt und konfigurieren ein
 
     ![Azure DevOps](./media/contoso-migration-rebuild/vsts10.png)
 
-12. Es gibt erneut die Datei für die Datei „docker-compose.yaml“ ein, klickt auf **Dienstimages mithilfe von Push übertragen** und schließt das aktuelle Tag ein. Wenn die Aktion zu **Dienstimages mithilfe von Push übertragen** wechselt, ändert sich der Name des Azure DevOps-Tasks in **Dienste automatisch mithilfe von Push übertragen**.
+12. Es gibt erneut die Datei für die Datei „docker-compose.yaml“ ein, klickt anschließend auf **Dienstimages mithilfe von Push übertragen** und schließt das aktuelle Tag ein. Wenn die Aktion zu **Dienstimages mithilfe von Push übertragen** wechselt, ändert sich der Name des Azure DevOps-Tasks in **Dienste automatisch mithilfe von Push übertragen**.
 
     ![Azure DevOps](./media/contoso-migration-rebuild/vsts11.png)
 
@@ -269,10 +271,11 @@ Mithilfe des erstellten AKS-Clusters und der Docker-Imagebuilds stellen Contoso-
 
 Die Bereitstellung erfolgt wie folgt:
 
-1. Sie öffnen eine Developer-Eingabeaufforderung und verwenden den Befehl als Anmeldung für das Azure-Abonnement.
+1. Sie öffnen eine Developer-Eingabeaufforderung und verwenden den Befehl `az login` als Anmeldung für das Azure-Abonnement.
+
 2. Sie verwenden die Datei „deploy.cmd“, um die Azure-Ressourcen in der Ressourcengruppe „ContosoRG“ und in der Region „USA, Osten 2“ (EUS2) bereitzustellen, indem sie den folgenden Befehl eingeben:
 
-    ```console
+    ```azurecli
     .\deploy.cmd azuredeploy ContosoRG -c eastus2
     ```
 
@@ -353,7 +356,7 @@ In den Anweisungen für diesen Abschnitt wird das Repository [SmartHotel360-publ
 
 ### <a name="create-blob-storage-containers"></a>Erstellen von Blob Storage-Containern
 
-1. Sie öffnen im Azure-Portal das erstellte Speicherkonto und wählen **Blobs** aus.
+1. Sie öffnen im Azure-Portal das erstellte Speicherkonto und wählen anschließend **Blobs** aus.
 2. Es erstellt einen neuen Container (**Haustiere**), bei dem die öffentliche Zugriffsebene auf Container festgelegt ist. Benutzer laden ihre Fotos von Haustieren in diesen Container hoch.
 
     ![Speicherblob](./media/contoso-migration-rebuild/blob1.png)
@@ -374,7 +377,7 @@ Contoso-Administratoren stellen eine Cosmos DB-Datenbank bereit, die für Inform
 
     ![Cosmos DB](./media/contoso-migration-rebuild/cosmos1.png)
 
-2. Contoso gibt einen Namen (**contosomarthotel**) an, wählt die SQL-API aus und fügt sie in die Produktionsressourcengruppe „ContosoRG“ in der Hauptregion „USA, Osten 2“ ein.
+2. Contoso gibt einen Namen (**contososmarthotel**) an, wählt die SQL-API aus und fügt sie in die Produktionsressourcengruppe „ContosoRG“ in der Hauptregion „USA, Osten 2“ ein.
 
     ![Cosmos DB](./media/contoso-migration-rebuild/cosmos2.png)
 
@@ -565,12 +568,12 @@ Contoso-Administratoren stellen die App wie folgt bereit.
     ![Bereitstellen der Funktion](./media/contoso-migration-rebuild/function5.png)
 
 4. Sie führen für den Code einen Commit aus, synchronisieren ihn mit Azure DevOps und übertragen so ihre Änderungen mithilfe von Push.
-5. Sie fügen eine neue Buildpipeline hinzu und wählen **Azure DevOps-Git** für die Quelle aus.
+5. Sie fügen eine neue Buildpipeline hinzu und wählen anschließend **Azure DevOps-Git** für die Quelle aus.
 6. Sie wählen die Vorlage **ASP.NET Core (.NET Framework)** aus.
 7. Sie übernehmen die Standardwerte für die Vorlage.
-8. In **Trigger** wählen sie **Continuous Integration aktivieren** und dann **Speichern und in Warteschlange einreihen** aus, um einen Buildvorgang zu starten.
+8. In **Trigger** wählen sie **Continuous Integration aktivieren** und anschließend **Speichern und in Warteschlange einreihen** aus, um einen Buildvorgang zu starten.
 9. Nach dem erfolgreichen Ausführen des Buildvorgangs erstellen sie eine Releasepipeline, indem sie **Azure App Service-Bereitstellung mit Slot** hinzufügen.
-10. Sie geben der Umgebung den Namen **Prod** und wählen das Abonnement aus. Sie legen den **App-Typ** auf **Funktionen-App** und den App Service-Namen auf **smarthotelpetchecker** fest.
+10. Sie geben der Umgebung den Namen **Prod** und wählen anschließend das Abonnement aus. Sie legen den **App-Typ** auf **Funktionen-App** und den App Service-Namen auf **smarthotelpetchecker** fest.
 
     ![Funktionen-App](./media/contoso-migration-rebuild/petchecker2.png)
 
@@ -578,7 +581,7 @@ Contoso-Administratoren stellen die App wie folgt bereit.
 
     ![Artefakt](./media/contoso-migration-rebuild/petchecker3.png)
 
-12. Sie aktivieren **Continuous Deployment-Trigger** und wählen **Speichern** aus.
+12. Sie aktivieren **Continuous Deployment-Trigger** und wählen anschließend **Speichern** aus.
 13. Sie wählen **Neuen Build in Warteschlange** aus, um die ganze CI/CD-Pipeline auszuführen.
 14. Nachdem die Funktion bereitgestellt wurde, wird sie im Azure-Portal mit dem Status **Wird ausgeführt** angezeigt.
 

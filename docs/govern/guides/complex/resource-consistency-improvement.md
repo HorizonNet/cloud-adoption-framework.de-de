@@ -1,6 +1,6 @@
 ---
-title: 'Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Ressourcenkonsistenz“'
-description: 'Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Ressourcenkonsistenz“'
+title: 'Governance in komplexen Unternehmen: Verbessern der Disziplin „Ressourcenkonsistenz“'
+description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um die Governancebaseline zu optimieren und Risiken zu mindern, indem Sie sich mit der Wiederherstellung, Dimensionierung und Überwachung vertraut machen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 35a77b0837da1b3364516a95b2baaa32e4e2fe6f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d7148df4bb06a0dc4ca035b89f7077888fb7306c
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805539"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708936"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Ressourcenkonsistenz“
 

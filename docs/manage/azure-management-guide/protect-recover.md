@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 3e9eadbd246ba38f496d8c74b7bcd3e6ade03685
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 908b2c8b07f66d53264e78432e07736a426d1be9
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808157"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223544"
 ---
 # <a name="protect-and-recover-in-azure"></a>Schutz und Wiederherstellung in Azure
 
@@ -38,7 +38,7 @@ In dieser Tabelle wird für jede Umgebung auf Unternehmensniveau der empfohlene 
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-backuptabupdbackupatemanagement"></a>[Azure Backup](#tab/UpdbackupateManagement)
+## <a name="azure-backup"></a>[Azure Backup](#tab/UpdbackupateManagement)
 
 ::: zone-end
 
@@ -46,7 +46,7 @@ Mit Azure Backup können Sie Ihre Daten in der Microsoft-Cloud sichern, schütze
 
 ### <a name="enable-backup-for-an-azure-vm"></a>Aktivieren der Sicherung für eine Azure-VM
 
-1. Wählen Sie im Azure-Portal **Virtuelle Computer** und dann die VM aus, die Sie replizieren möchten.
+1. Wählen Sie im Azure-Portal die Option **Virtuelle Computer** und anschließend den virtuellen Computer aus, den Sie replizieren möchten.
 1. Wählen Sie im Bereich **Vorgänge** die Option **Sicherung** aus.
 1. Erstellen Sie einen Azure Recovery Services-Tresor, oder wählen Sie einen vorhandenen Tresor aus.
 1. Wählen Sie **Neue Richtlinie erstellen (oder bearbeiten)** aus.
@@ -69,7 +69,7 @@ Mit Azure Backup können Sie Ihre Daten in der Microsoft-Cloud sichern, schütze
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-site-recoverytabsiterecovery"></a>[Azure Site Recovery](#tab/siterecovery)
+## <a name="azure-site-recovery"></a>[Azure Site Recovery](#tab/siterecovery)
 
 ::: zone-end
 
@@ -87,7 +87,7 @@ Die folgenden Schritte beschreiben das Verfahren zur Verwendung von Site Recover
 
 ### <a name="enable-replication-for-the-azure-vm"></a>Aktivieren der Replikation für die Azure-VM
 
-1. Wählen Sie im Azure-Portal **Virtuelle Computer** und dann die VM aus, die Sie replizieren möchten.
+1. Wählen Sie im Azure-Portal die Option **Virtuelle Computer** und anschließend den virtuellen Computer aus, den Sie replizieren möchten.
 1. Wählen Sie im Bereich **Vorgänge** die Option **Notfallwiederherstellung** aus.
 1. Wählen Sie unter **Notfallwiederherstellung konfigurieren** > **Zielregion** die Zielregion für die Replikation aus.
 1. Übernehmen Sie für diesen Schnellstart die Standardwerte für alle anderen Optionen.

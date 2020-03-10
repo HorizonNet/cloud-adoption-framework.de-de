@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 5ad76f9d1b5b34772396f28cd5c5ba829785f76c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1c2bab06607147f5d0fe40ff714e6adb81e2a013
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798365"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225116"
 ---
+<!-- cSpell:ignore Exak -->
+
 # <a name="examples-of-customer-engagement-outcomes"></a>Beispiele für Kundenbindungsergebnisse
 
 Wie bereits in der [Übersicht über die Geschäftsergebnisse](./index.md) beschrieben, können mehrere mögliche Geschäftsergebnisse als Grundlage für Unterhaltungen zur Transformationsjourney mit dem Unternehmen dienen. In diesem Artikel konzentrieren wir uns auf eine gängige Geschäftskennzahl: die Kundenbindung. Kenntnisse über die Wünsche und Umgebung der Kunden helfen dabei, Geschäftsergebnisse zu formulieren, die dem Ziel der Transformationsjourney eines Unternehmens entsprechen.
@@ -28,7 +30,7 @@ Im Folgenden finden Sie Beispiele und Ergebnisse im Zusammenhang mit der Kundenb
 
 Während kundenorientierter Transformationen wie cloudfähiger Anwendungsinnovationen profitieren Kunden von der direkten Bindung, und sie können sehen, dass ihre Wünsche vom Entwicklungsteam schnell erfüllt werden. Zykluszeit ist ein Six Sigma-Begriff, der die Dauer vom Anfang bis zum Ende einer Funktion meint. Für Führungskräfte mit starker Kundenorientierung, die große Anstrengungen zur Verbesserung der Kundenbindung unternehmen, kann die Zykluszeit ein wichtiges Geschäftsergebnis sein.
 
-- **Beispiel:** Ein Dienstleistungsunternehmen, das B2B-Dienste (Business-to-Business) bereitstellt, versucht, auf einem wettbewerbsintensiven Markt im Geschäft zu bleiben. Kunden, die zu einem Konkurrenten gewechselt sind, haben angegeben, dass die übermäßig komplexe technische Lösung die eigenen Geschäftsprozesse beeinträchtigt und der Hauptgrund für den Wechsel ist. In diesem Fall ist Zykluszeit eine unbedingte Notwendigkeit. Heutzutage dauert es 12 Monate, bis ein Feature von der Anforderung bis zum Release gelangt. Wenn es vom Führungsteam priorisiert wird, kann dieser Zyklus auf sechs bis neun Monate verkürzt werden. Das Team konnte die Zykluszeit über eine cloudfähige Anwendungsinnovation, cloudnative Anwendungsmodelle und die Integration mit Azure DevOps auf einen Monat verkürzen. So können das Unternehmen und die Anwendungsentwicklungsteams viel direkter mit den Kunden interagieren.
+- **Beispiel:** Ein Dienstleistungsunternehmen, das B2B-Dienste (Business-to-Business) bereitstellt, versucht, auf einem wettbewerbsintensiven Markt seinen Marktanteil zu halten. Kunden, die zu einem Konkurrenten gewechselt sind, haben festgestellt, dass die übermäßig komplexe technische Lösung die eigenen Geschäftsprozesse beeinträchtigt und der Hauptgrund für den Wechsel ist. In diesem Fall ist Zykluszeit eine unbedingte Notwendigkeit. Heutzutage dauert es 12 Monate, bis ein Feature von der Anforderung bis zum Release gelangt. Wenn es vom Führungsteam priorisiert wird, kann dieser Zyklus auf sechs bis neun Monate verkürzt werden. Das Team konnte die Zykluszeit über eine cloudfähige Anwendungsinnovation, cloudnative Anwendungsmodelle und die Integration mit Azure DevOps auf einen Monat verkürzen. So können das Unternehmen und die Anwendungsentwicklungsteams viel direkter mit den Kunden interagieren.
 
 > **ExakTime**
 >

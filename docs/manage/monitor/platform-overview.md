@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: ea8317bb7490ef7e8aa69950232191f123da4dd8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 99faaa30d67b404e9a9aa1a45d434fd7ec3f2c31
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807596"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223022"
 ---
+<!-- cspell:ignore opsman ITSM -->
+
 # <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>Leitfaden zur Cloudüberwachung: Übersicht über Überwachungsplattformen
 
 Microsoft bietet eine Reihe von Überwachungsfunktionen für zwei Produkte: System Center Operations Manager war ursprünglich für lokale Umgebungen vorgesehen und wurde auf die Cloud und Azure Monitor erweitert. Dieses Feature wurde für die Cloud entwickelt, kann jedoch auch zum Überwachen lokaler Systeme verwendet werden. Diese beiden Angebote bieten grundlegende Überwachungsdienste wie Warnungen, Verfolgung der Betriebszeit von Diensten, Überwachung des Zustands von Anwendungen und Infrastrukturen, Diagnosen und Analysen.
@@ -67,7 +69,7 @@ Operations Manager benötigt eine umfangreiche Infrastruktur und Wartung zur Unt
 
 ### <a name="azure-monitor"></a>Azure Monitor
 
-Azure Monitor ist ein SaaS-Dienst (Software-as-a-Service), bei dem die gesamte unterstützende Infrastruktur in Azure ausgeführt und von Microsoft verwaltet wird. Der Dienst wurde zur Überwachung, Analyse und Diagnose in großem Umfang entwickelt und ist in allen nationalen Clouds verfügbar. Die zentralen Komponenten der Infrastruktur (Collectors, Metriken und Protokollspeicher und Analysen), die zur Unterstützung von Azure Monitor erforderlich sind, werden von Microsoft verwaltet.  
+Azure Monitor ist ein SaaS-Angebot (Software-as-a-Service), bei dem die gesamte unterstützende Infrastruktur in Azure ausgeführt und von Microsoft verwaltet wird. Dabei werden Überwachungs-, Analytics- und Diagnosefunktionen im großen Stil durchführt. Es ist in allen nationalen Clouds nicht verfügbar. Die zentralen Komponenten der Infrastruktur (Collectors, Metriken und Protokollspeicher und Analysen), die Azure Monitor unterstützen, werden von Microsoft verwaltet.  
 
 ![Diagramm zu Azure Monitor](./media/monitoring-management-guidance-cloud-and-on-premises/azure-monitor-greyed-optimized.svg)
 
@@ -115,9 +117,9 @@ Insights, z. B. Azure Monitor für Container und Azure Monitor für VMs, nutzt d
 
 Azure Monitor trennt die Datensammlung von für diese Daten ergriffenen Maßnahmen und unterstützt so verteilte Microservices in einer Cloudumgebung. Er konsolidiert Daten aus mehreren Quellen in einer gemeinsamen Datenplattform und ermöglicht Analyse-, Visualisierungs- und Warnungsfunktionen auf der Grundlage dieser gesammelten Daten.
 
-Alle von Azure Monitor gesammelten Daten werden entweder als Protokolle oder Metriken gespeichert, und verschiedene Funktionen von Monitor hängen von diesen Daten ab. Metriken enthalten numerische Werte in Zeitreihen, die sich gut für eine Warnung nahezu in Echtzeit und eine schnelle Erkennung von Problemen eignen. Protokolle enthalten Text oder numerische Daten und werden von einer leistungsfähigen Abfragesprache unterstützt. Dies macht sie besonders nützlich für die Durchführung komplexer Analysen.
+Die von Azure Monitor gesammelten Daten werden entweder als Protokolle oder Metriken gespeichert, und verschiedene Funktionen von Azure Monitor hängen von diesen Daten ab. Metriken enthalten numerische Werte in Zeitreihen, die sich gut für eine Warnung nahezu in Echtzeit und eine schnelle Erkennung von Problemen eignen. Protokolle enthalten Text oder numerische Daten und können mithilfe einer leistungsfähigen Abfragesprache abgefragt werden. Dies ist insbesondere bei der Durchführung komplexer Analysen hilfreich.
 
-Da Monitor die Datensammlung von für diese Daten ergriffenen Maßnahmen trennt, ist es in vielen Fällen ggf. nicht möglich, Warnungen nahezu in Echtzeit bereitzustellen. Um Warnungen zu Protokolldaten zu erhalten, werden Abfragen nach einem Wiederholungszeitplan ausgeführt, der in der Warnung definiert ist. Durch dieses Verhalten kann Azure Monitor Daten aus allen überwachten Quellen einfach korrelieren, und Sie haben die Möglichkeit, Daten auf verschiedene Weise interaktiv zu analysieren. Dies ist besonders hilfreich für die Ursachenanalyse und die Identifizierung von Bedingungen, die Probleme verursachen können.
+Da Azure Monitor die Datensammlung von für diese Daten ergriffenen Maßnahmen trennt, ist es unter Umständen nicht möglich, Warnungen in nahezu Echtzeit bereitzustellen. Um Warnungen zu Protokolldaten zu erhalten, werden Abfragen nach einem Wiederholungszeitplan ausgeführt, der in der Warnung definiert ist. Durch dieses Verhalten kann Azure Monitor Daten aus allen überwachten Quellen einfach korrelieren, und Sie haben die Möglichkeit, Daten auf verschiedene Weise interaktiv zu analysieren. Dies ist besonders hilfreich für die Ursachenanalyse und die Identifizierung von Bedingungen, die Probleme verursachen können.
 
 ## <a name="health-monitoring"></a>Systemüberwachung
 

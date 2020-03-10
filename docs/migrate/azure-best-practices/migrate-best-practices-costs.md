@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 30783e760f85324116e0a9a968a1c5aa486eb6f7
-ms.sourcegitcommit: 41cb36f58cc48950da1a2aa2032cc34ba5b16a0b
+ms.openlocfilehash: 0616b2721a903be369192a47fcd888247fd6cad6
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77599968"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222615"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Bewährte Methoden für Kostenermittlung und Größenanpassung von Workloads, die zu Azure migriert werden
 
@@ -85,7 +85,7 @@ Sie können eine Reihe von Optionen auswählen, wenn Sie virtuelle Azure-Compute
 
 Das Optimieren und Verwalten von lokalem Speicher (SAN oder NAS) sowie der Netzwerke, die diesen unterstützen, können teuer und zeitaufwendig sein. Datei(Speicher)daten werden häufig zur Cloud migriert, um Schwierigkeiten beim Betrieb und der Verwaltung zu beseitigen. Microsoft bietet verschiedene Optionen zum Verschieben von Daten in Azure, und Sie müssen sich hinsichtlich dieser Optionen entscheiden. Die Auswahl des richtigen Speichertyps für Daten kann Ihrer Organisation jeden Monat mehrere tausend Euro sparen. Ein paar Überlegungen:
 
-- Daten, auf die nicht häufig zugegriffen wird und die nicht unternehmenskritisch sind, müssen nicht auf dem teuersten Speicher abgelegt werden.
+- Daten, auf die nur selten zugegriffen wird und die nicht unternehmenskritisch sind, müssen nicht im teuersten Speicher platziert werden.
 - Umgekehrt sollten sich unternehmenskritische Daten auf Speicheroptionen eines höheren Tarifs befinden.
 - Erstellen Sie während der Migrationsplanung ein Inventar der Daten, und klassifizieren Sie sie nach Wichtigkeit, um sie dem jeweils optimal geeigneten Speicher zuzuordnen. Berücksichtigen Sie hierbei Budget und Kosten sowie die Leistung. Kosten sollte nicht notwendigerweise der ausschlaggebende Entscheidungsfaktor sein. Die Entscheidung für die kostengünstigste Option könnte die Workload Leistungs- und Verfügbarkeitsrisiken aussetzen.
 

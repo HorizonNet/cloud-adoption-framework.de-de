@@ -1,6 +1,6 @@
 ---
 title: Ansätze für die Planung digitaler Ressourcen
-description: Erfahren Sie etwas über verschiedene Ansätze für die Planung digitaler Ressourcen.
+description: Hier finden Sie grundlegende Informationen zu den Merkmalen und Anforderungen des workloadorientierten, ressourcenorientierten und inkrementellen Top-Down-Ansatzes für die Planung digitaler Ressourcen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 453ac12e8c86aed46675c710395101ff3a121195
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 13fef27afdc4ca7622924f3890b72d1847e833c0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806542"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222628"
 ---
 # <a name="approaches-to-digital-estate-planning"></a>Ansätze für die Planung digitaler Ressourcen
 
@@ -23,7 +23,7 @@ Die Planung digitaler Ressourcen kann je nach gewünschten Ergebnissen und Grö�
 
 Der Ansatz der Top-Down-Bewertung wertet Sicherheitsaspekte aus. Die Sicherheit umfasst die Kategorisierung von Daten (hohe, mittlere oder geringe geschäftliche Auswirkung), Compliance, Datenhoheit und Sicherheitsrisikoanforderungen. Bei diesem Ansatz wird die Komplexität der Architektur auf hoher Ebene bewertet. Sie wertet Aspekte wie Authentifizierung, Datenstruktur, Latenzanforderungen, Abhängigkeiten und Lebenserwartung von Anwendungen aus.
 
-Der Top-Down-Ansatz misst auch die operativen Anforderungen der Anwendung, z.B. Serviceebenen, Integration, Wartungsfenster, Überwachung und Erkenntnisse. Nachdem alle diese Aspekte analysiert und berücksichtigt wurden, erhalten Sie ein Ergebnis bzw. Maß, das die relative Schwierigkeit der Migration der Anwendung zu den einzelnen Cloudplattformen wiedergibt: IaaS, PaaS und SaaS.
+Der Top-Down-Ansatz misst auch die operativen Anforderungen der Anwendung, z.B. Serviceebenen, Integration, Wartungsfenster, Überwachung und Erkenntnisse. Nachdem diese Aspekte analysiert und berücksichtigt wurden, spiegelt das Ergebnis die relative Schwierigkeit der Anwendungsmigration für die einzelnen Cloudplattformen wider: IaaS, PaaS und SaaS.
 
 Die Top-Down-Bewertung beurteilt außerdem den finanziellen Nutzen der Anwendung, z.B. die betriebliche Effizienz, die Gesamtkosten, die Rendite und andere zweckmäßige finanzielle Metriken. Die Bewertung untersucht auch die Saisonalität der Anwendung (beispielsweise Jahreszeiten mit Bedarfsspitzen) und die allgemeine Computeauslastung.
 

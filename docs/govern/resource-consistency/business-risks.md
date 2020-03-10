@@ -1,6 +1,6 @@
 ---
-title: 'Ressourcenkonsistenz: Motivationen und Geschäftsrisiken'
-description: 'Ressourcenkonsistenz: Motivationen und Geschäftsrisiken'
+title: 'Ressourcenkonsistenz: Geschäftsrisiken'
+description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um die typische Kundenakzeptanz einer Ressourcenkonsistenzdisziplin im Rahmen einer Cloudgovernancestrategie zu verstehen.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e1c4723aa52c20c16dbfa883d7e8566292ca54b3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 90959045d877c313576540c3f0288eff8c136b5f
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807222"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706862"
 ---
 # <a name="resource-consistency-motivations-and-business-risks"></a>Ressourcenkonsistenz: Motivationen und Geschäftsrisiken
 

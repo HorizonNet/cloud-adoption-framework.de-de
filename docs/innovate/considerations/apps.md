@@ -1,18 +1,18 @@
 ---
-title: 'Cloudinnovation: Einbinden durch Anwendungen'
-description: 'Einführung in Cloudinnovation: Einbinden durch Anwendungen.'
+title: Interagieren über Apps für digitale Innovationen
+description: Hier erfahren Sie, wie Sie App-Lösungen erstellen, um Daten zu strukturieren und Umgebungen zu schaffen, die das Interesse von Kunden wecken und Innovationen unterstützen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 77921ce7c683ff5bfc32c711719ae58ae049f039
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c326461435123b8093c86590baa4461f5048f4df
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808565"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170663"
 ---
 # <a name="engage-through-applications"></a>Einbinden durch Anwendungen
 

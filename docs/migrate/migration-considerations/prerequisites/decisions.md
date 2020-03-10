@@ -3,17 +3,19 @@ title: Entscheidungen, die sich auf die Migration auswirken
 description: Wichtige Entscheidungen, die in Bezug auf den Migrationsprozess zu treffen sind
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: aee856c1e9c0a509aecda8ad4d6cf642de0e0fe2
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3281f7a14c5af58e435be9e3a412fc5285da1b47
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801476"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225470"
 ---
+<!-- cSpell:ignore migrateable -->
+
 # <a name="decisions-that-affect-migration"></a>Entscheidungen, die sich auf die Migration auswirken
 
 Während der Migration wirken sich mehrere Faktoren auf Entscheidungen und Ausführungsaktivitäten aus. In diesem Artikel wird das zentrale Thema dieser Entscheidungen erläutert. Außerdem werden einige Fragen untersucht, die durch die Besprechung von Migrationsprinzipien in diesem Abschnitt des Leitfadens für das Framework für die Cloudeinführung führen.
@@ -32,31 +34,27 @@ Diese Voraussetzung bedeutet nicht, dass Sie eines dieser drei Ziele auswählen 
 
 ### <a name="act-on-migration-outcomes"></a>Maßnahmen für Migrationsergebnisse
 
-Wenn operative Ergebnisse den höchsten Stellenwert in der Liste haben, ist dieser Abschnitt des Framework für die Cloudeinführung bestens für Ihr Team geeignet. In diesem Abschnitt wird davon ausgegangen, dass Sie Geschwindigkeit und Kosteneinsparungen als primäre KPIs (Key Performance Indicators) priorisieren müssen. In diesem Fall wäre ein Migrationsmodell für die Einführung gut auf die Ergebnisse abgestimmt. Ein auf die Migration ausgerichtetes Modell basiert stark auf einer „Lift & Shift“-Migration von IaaS-Ressourcen (Infrastructure-as-a-Service), damit ein Rechenzentrum ausgeschöpft wird und Kosteneinsparungen erzielt werden. In einem solchen Modell kann eine Modernisierung stattfinden, ist aber ein sekundärer Schwerpunkt, bis das primäre Migrationsziel umgesetzt ist.
+Wenn operative Ergebnisse den höchsten Stellenwert in der Liste haben, ist dieser Abschnitt zum Cloud Adoption Framework bestens für Ihr Team geeignet. In diesem Abschnitt wird davon ausgegangen, dass Sie Geschwindigkeit und Kosteneinsparungen als primäre KPIs (Key Performance Indicators) priorisieren müssen. In diesem Fall wäre ein Migrationsmodell für die Einführung gut auf die Ergebnisse abgestimmt. Ein auf die Migration ausgerichtetes Modell basiert stark auf einer „Lift & Shift“-Migration von IaaS-Ressourcen (Infrastructure-as-a-Service), damit ein Rechenzentrum ausgeschöpft wird und Kosteneinsparungen erzielt werden. In einem solchen Modell kann eine Modernisierung stattfinden, ist aber ein sekundärer Schwerpunkt, bis das primäre Migrationsziel umgesetzt ist.
 
 ### <a name="act-on-application-innovations"></a>Maßnahmen für Anwendungsinnovationen
 
-Wenn Marktanteil und Kundenerlebnis Ihre Hauptantriebe sind, bietet dieser Abschnitt des Framework für die Cloudeinführung möglicherweise nicht die beste Anleitung für die Maßnahmen Ihrer Teams. Anwendungsinnovationen erfordern einen Plan, der sich auf die Modernisierung und den Übergang von Workloads konzentriert, unabhängig von der zugrunde liegenden Infrastruktur. In einem solchen Fall können die Anleitungen in diesem Abschnitt informativ sein, sind aber möglicherweise nicht der beste Ansatz zum Treffen grundlegender Entscheidungen.
+Wenn Marktanteil und Kundenerlebnis Ihre Hauptantriebe sind, bietet dieser Abschnitt zum Cloud Adoption Framework möglicherweise nicht die beste Anleitung für die Maßnahmen Ihrer Teams. Anwendungsinnovationen erfordern einen Plan, der sich auf die Modernisierung und den Übergang von Workloads konzentriert, unabhängig von der zugrunde liegenden Infrastruktur. In einem solchen Fall können die Anleitungen in diesem Abschnitt informativ sein, sind aber möglicherweise nicht der beste Ansatz zum Treffen grundlegender Entscheidungen.
 
 ### <a name="act-on-data-innovations"></a>Maßnahmen für Dateninnovationen
 
-Wenn Daten, Experimente, Forschung und Entwicklung (R&D) oder neue Produkte in den nächsten sechs Monaten bei Ihnen Priorität haben, bietet dieser Abschnitt des Framework für die Cloudeinführung möglicherweise nicht die beste Anleitung für die Maßnahmen Ihrer Teams. Jede Maßnahme für Dateninnovationen kann von Leitlinien in Bezug auf die Migration vorhandener Quelldaten profitieren. Der breitere Fokus dieser Maßnahme würde jedoch auf Eingang und Integration zusätzlicher Datenquellen liegen. Eine Erweiterung dieser Anleitungen durch Vorhersagen und neue Erfahrungen ist viel wichtiger als die Migration von IaaS-Ressourcen.
-
-## <a name="balance-the-portfolio"></a>Ausgewogenheit des Portfolios
-
-In diesem Abschnitt des Framework für die Cloudeinführung wird eine Theorie aufgestellt, um den Lesern zu helfen, verschiedene Ansätze zur Handhabung von Änderungen in einem ausgewogenen Portfolio zu verstehen. Der Artikel zur [Ausgewogenheit des Portfolios](../../expanded-scope/balance-the-portfolio.md) ist ein Beispiel für einen erweiterten Umfang, der dazu beitragen soll, gemäß dieser Theorie zu handeln.
+Wenn Daten, Experimente, Forschung und Entwicklung (R&D) oder neue Produkte in den nächsten sechs Monaten bei Ihnen Priorität haben, bietet dieser Abschnitt zum Cloud Adoption Framework möglicherweise nicht die beste Anleitung für die Maßnahmen Ihrer Teams. Jede Maßnahme für Dateninnovationen kann von Leitlinien in Bezug auf die Migration vorhandener Quelldaten profitieren. Der breitere Fokus dieser Maßnahme würde jedoch auf Eingang und Integration zusätzlicher Datenquellen liegen. Eine Erweiterung dieser Anleitungen durch Vorhersagen und neue Erfahrungen ist viel wichtiger als die Migration von IaaS-Ressourcen.
 
 ## <a name="effort"></a>Aufwand
 
-Der Migrationsaufwand kann je nach Größe und Komplexität der beteiligten Workloads stark variieren. Eine kleinere Workloadmigration mit ein paar Hundert virtuellen Computern (VMs) ist ein taktischer Prozess, der möglicherweise mithilfe automatisierter Tools wie [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) implementiert wird. Umgekehrt erfordert eine große Unternehmensmigration von Zehntausenden von Workloads einen sehr strategischen Prozess und kann eine umfangreiche Umgestaltung, Neuerstellung und Ersetzung bestehender Anwendungen mit Integration von Platform-as-a-Service (PaaS)- und Software-as-a-Service (SaaS)-Funktionen beinhalten. [Das Identifizieren und Ausgleichen des Umfangs](../../expanded-scope/balance-the-portfolio.md) Ihrer geplanten Migrationen ist von entscheidender Bedeutung.
+Der Migrationsaufwand kann je nach Größe und Komplexität der beteiligten Workloads stark variieren. Eine kleinere Workloadmigration mit ein paar Hundert virtuellen Computern (VMs) ist ein taktischer Prozess, der möglicherweise mithilfe automatisierter Tools wie [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) implementiert wird. Umgekehrt erfordert eine große Unternehmensmigration von Zehntausenden von Workloads einen sehr strategischen Prozess und kann eine umfangreiche Umgestaltung, Neuerstellung und Ersetzung bestehender Anwendungen mit Integration von Platform-as-a-Service (PaaS)- und Software-as-a-Service (SaaS)-Funktionen beinhalten. [Das Identifizieren und Ausgleichen des Umfangs](../../../strategy/balance-the-portfolio.md) Ihrer geplanten Migrationen ist von entscheidender Bedeutung.
 
 Bevor Sie Entscheidungen treffen, die langfristige Auswirkungen auf das aktuelle Migrationsprogramm haben könnten, ist es wichtig, dass Sie sich über die folgenden Entscheidungen einig sind.
 
 ### <a name="effort-type"></a>Aufwandstyp
 
-Bei jeder Migration von bedeutender Größe (> 250 virtuelle Computer) werden Ressourcen mithilfe einer Vielzahl von Übergangsoptionen migriert, die anhand von fünf Rationalisierungsmöglichkeiten erläutert werden: *Zuweisen eines neuen Hosts*, *Umgestalten*, *Umstrukturieren*, *Neuerstellen* und *Ersetzen*.
+Bei jeder Migration von bedeutender Größe (über 250 virtuelle Computer) werden Ressourcen mithilfe einer Vielzahl von Übergangsoptionen migriert, die anhand von fünf Rationalisierungsmöglichkeiten erläutert werden: *Zuweisen eines neuen Hosts*, *Umgestalten*, *Umstrukturieren*, *Neuerstellen* und *Ersetzen*.
 
-Einige Workloads werden durch einen Prozess der *Neuerstellung* oder *Umstrukturierung* modernisiert, wodurch modernere Anwendungen mit neuen Funktionen und technischen Möglichkeiten entstellt werden. Andere Ressourcen durchlaufen einen Prozess der *Umgestaltung*, z.B. eine Umstellung auf Container oder andere modernere Hosting- und Betriebsansätze, die sich nicht unbedingt auf die Codebasis der Lösungen auswirken. Im Allgemeinen durchlaufen virtuelle Maschinen und andere Ressourcen, die gut etabliert sind, einen Prozess zum *Zuweisen eines neuen Hosts*, bei dem diese Ressourcen vom Rechenzentrum in die Cloud übergehen. Einige Workloads könnten möglicherweise in die Cloud migriert werden, sollten aber stattdessen durch dienstbasierte (SaaS-basierte) Clouddienste *ersetzt* werden, die derselben Geschäftsanforderung entsprechen, z.B. durch Verwendung von Office 365 als Alternative zur Migration von Exchange Server-Instanzen.
+Einige Workloads werden durch einen Prozess der *Neuerstellung* oder *Umstrukturierung* modernisiert, wodurch modernere Anwendungen mit neuen Funktionen und technischen Möglichkeiten entstellt werden. Andere Ressourcen durchlaufen einen Prozess der *Umgestaltung*, z.B. eine Umstellung auf Container oder andere modernere Hosting- und Betriebsansätze, die sich nicht unbedingt auf die Codebasis der Lösungen auswirken. Im Allgemeinen durchlaufen virtuelle Computer und andere Ressourcen, die gut etabliert sind, einen Prozess zum *Zuweisen eines neuen Hosts*, bei dem diese Ressourcen vom Rechenzentrum in die Cloud übergehen. Einige Workloads könnten möglicherweise in die Cloud migriert werden, sollten aber stattdessen durch dienstbasierte (SaaS-basierte) Clouddienste *ersetzt* werden, die derselben Geschäftsanforderung entsprechen, z. B. durch Verwendung von Office 365 als Alternative zur Migration von Exchange Server-Instanzen.
 
 In den meisten Szenarien erzeugt ein Geschäftsereignis eine zwingende Funktion, die dazu führt, dass ein hoher Prozentsatz der Ressourcen vorübergehend mithilfe des Prozesses zum *Zuweisen eines neuen Hosts* migriert wird, gefolgt von einem bedeutenderen sekundären Übergang mithilfe einer der anderen Migrationsstrategien, nachdem sie sich in der Cloud befinden. Dieser Prozess wird häufig als ein *Übergang in die Cloud* bezeichnet.
 
@@ -72,7 +70,7 @@ Der Umfang der Migration ist die nächste wichtige vorab erforderliche Entscheid
 
 ### <a name="effort-timing"></a>Zeitliche Festlegung des Aufwands
 
-Häufig ist ein zwingendes und zeitkritisches Geschäftsereignis der Grund für Migrationen. Ein üblicher Auslöser ist beispielsweise die Beendigung oder Verlängerung eines Hostingvertrags mit einem Drittanbieter. Zwar gibt es viele mögliche Geschäftsereignisse, die eine Migration erfordern, doch haben alle etwas gemeinsam : ein Enddatum. Es ist wichtig, den zeitlichen Ablauf aller bevorstehenden Geschäftsereignisse zu verstehen, damit Aktivitäten und Geschwindigkeit richtig geplant und überprüft werden können.
+Häufig ist ein zwingendes und zeitkritisches Geschäftsereignis der Grund für Migrationen. Ein üblicher Auslöser ist beispielsweise die Beendigung oder Verlängerung eines Hostingvertrags mit einem Drittanbieter. Zwar gibt es viele mögliche Geschäftsereignisse, die eine Migration erfordern, doch alle haben einen Faktor gemeinsam : ein Enddatum. Es ist wichtig, den zeitlichen Ablauf aller bevorstehenden Geschäftsereignisse zu verstehen, damit Aktivitäten und Geschwindigkeit richtig geplant und überprüft werden können.
 
 ## <a name="recap"></a>Zusammenfassung
 

@@ -1,6 +1,6 @@
 ---
 title: 'Softwaredefiniertes Netzwerk: Cloudnativ'
-description: Erläuterung cloudnativer virtueller Netzwerkdienste.
+description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um sich über cloudnative virtuelle Netzwerke zu informieren, die erforderlich sind, um virtuelle Computer in der Cloud bereitzustellen.
 author: rotycenh
 ms.author: v-tyhopk
 ms.date: 02/11/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 8b5983ace8d56fa219d88e921fa6da7263d486fb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 250f78bb0287e30615aee4b2cfb1234823197f56
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806644"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222672"
 ---
 # <a name="software-defined-networking-cloud-native"></a>Softwaredefiniertes Netzwerk: Cloudnativ
 
@@ -41,4 +41,4 @@ Zusätzliche Aspekte, die Ihr für den Umstieg auf die Cloud zuständiges Team b
 Weitere Informationen zu cloudnativen virtuellen Netzwerken in Azure finden Sie hier:
 
 - [Azure Virtual Network: Anleitungen](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm). Neu erstellte Azure Virtual Networks sind standardmäßig cloudnativ. Befolgen Sie diese Anleitungen bei der Planung des Entwurfs und der Bereitstellung Ihrer virtuellen Netzwerke.
-- [Grenzwerte für Abonnements: Netzwerk](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits) aus. Alle zu einem einzelnen virtuellen Netzwerk gehörenden Ressourcen können nur innerhalb eines Einzelabonnements vorhanden sein und unterliegen Abonnementgrenzen.
+- [Grenzwerte für Abonnements: Netzwerk](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits) aus. Die einzelnen virtuellen Netzwerke und die verbundenen Ressourcen befinden sich jeweils in einem einzelnen Abonnement. Diese Ressourcen unterliegen Abonnementgrenzen.

@@ -1,6 +1,6 @@
 ---
 title: Tools für Identitätsbaseline in Azure
-description: Tools für Identitätsbaseline in Azure
+description: Hier erfahren Sie, wie native Azure-Tools zur Weiterentwicklung von Richtlinien und Prozessen beitragen können, die die Governancedisziplin „Identitätsbaseline“ unterstützen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d145d08aa4cf2b386c3ee1f0df403f684b27c2a2
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 0aa9525a42e62012e1aa5913d9f806cc2a40e2f0
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806066"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709395"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Tools für Identitätsbaseline in Azure
 

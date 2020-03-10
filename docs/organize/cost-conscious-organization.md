@@ -7,12 +7,12 @@ ms.date: 09/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.openlocfilehash: 42025e9e7459aae8731b6269d6bc5512acde64e4
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9c4b6e89d3593bebad491cb967d39be529de8989
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800898"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225384"
 ---
 # <a name="build-a-cost-conscious-organization"></a>Schaffen einer kostenbewussten Organisation
 
@@ -45,7 +45,7 @@ Die Integration von Kostenbewusstsein in die Maßnahmen zur Cloudeinführung beg
 
 - **Zurechenbarkeit:** Die Budgets sollten zusammen vom Cloudstrategie-, [Cloudgovernance-](./cloud-governance.md) und [Cloudeinführungsteam](./cloud-adoption.md) basierend auf den erwarteten Einführungsaktivitäten aufgestellt werden. Wenn es zu Budgetabweichungen kommt, müssen das Cloudstrategieteam und das Cloudgovernanceteam gemeinsam daran arbeiten, schnell die beste Vorgehensweise zu ermitteln, um diese Abweichungen zu beseitigen.
 
-- **Optimierung:** Während der Optimierungsmaßnahmen kann das Cloudstrategieteam den Investitions- und Renditewert von bestimmten Workloads darstellen. Falls eine Workload für das Unternehmen einen strategischen Nutzen oder finanzielle Auswirkungen hat, sollten die Maßnahmen für die Kostenoptimierung sorgfältig überwacht werden. Wenn es keine strategischen Auswirkungen auf die Organisation und keine inhärenten Kosten für eine schlechte Leistung einer Workload gibt, kann das Cloudstrategieteam die Überoptimierung genehmigen. Um diese Entscheidungen zu treffen, muss das Team in der Lage sein, die Kosten pro Projektbereich anzuzeigen.
+- **Optimierung:** Während der Optimierungsmaßnahmen kann das Cloudstrategieteam den Investitions- und Renditewert von bestimmten Workloads darstellen. Falls eine Workload für das Unternehmen einen strategischen Nutzen oder finanzielle Auswirkungen hat, sollten die Maßnahmen für die Kostenoptimierung sorgfältig überwacht werden. Sofern es keine strategischen Auswirkungen auf die Organisation und keine inhärenten Kosten für eine schlechte Leistung einer Workload gibt, kann das Cloudstrategieteam die Überoptimierung genehmigen. Um diese Entscheidungen zu treffen, muss das Team in der Lage sein, die Kosten pro Projektbereich anzuzeigen.
 
 ## <a name="cloud-adoption-team"></a>Cloudeinführungsteam
 

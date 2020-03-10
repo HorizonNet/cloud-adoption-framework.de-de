@@ -7,13 +7,15 @@ ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b4450f3f1e151e8234c7b2b5f91c2709270cbcdc
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 199eedb6c9365f273588fae79b134298e8b60c6e
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799130"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225371"
 ---
+<!-- cSpell:ignore paas NVAs VPNs -->
+
 # <a name="review-your-network-options"></a>Überprüfen der Netzwerkoptionen
 
 Das Entwerfen und Implementieren von Azure-Netzwerkfunktionen ist ein wichtiger Bestandteil Ihrer Anstrengungen zur Cloudbereitstellung. Sie müssen Entscheidungen hinsichtlich des Netzwerkentwurfs treffen, um die Arbeitsauslastungen und Dienste, die in der Cloud gehostet werden, ordnungsgemäß zu unterstützen. Die Netzwerkprodukte und -dienste von Azure unterstützen eine Vielzahl von Netzwerkfunktionen. Die Art und Weise, in der Sie diese Dienste und die ausgewählten Netzwerkarchitekturen strukturieren, hängt von den Anforderungen Ihrer Organisation in Bezug auf Workload, Governance und Konnektivität ab.
@@ -72,14 +74,14 @@ Nachdem Sie die Azure-Netzwerkdienste ermittelt haben, die Sie zur Unterstützun
 
 Die folgende Tabelle bietet einen Überblick über die wichtigsten Szenarien, die von diesen Mustern unterstützt werden:
 
-| **Szenario** | **Vorgeschlagene Netzwerkarchitektur**
-| --- | --- |
-| Alle in Azure gehosteten Workloads, die in Ihrer Landezone bereitgestellt werden, sind vollständig PaaS-basiert, erfordern kein virtuelles Netzwerk und gehören nicht zu einem größeren Projekt zur Cloudeinführung, das IaaS-Ressourcen umfasst. | [Reine PaaS-Lösung](../../decision-guides/software-defined-network/paas-only.md) |
-| Ihre in Azure gehosteten Workloads stellen IaaS-basierte Ressourcen wie z.B. virtuelle Computer bereit oder benötigen aus einem anderen Grund ein virtuelles Netzwerk, erfordern aber keine Konnektivität zu Ihrer lokalen Umgebung. | [Cloudnativ](../../decision-guides/software-defined-network/cloud-native.md) |
-| Ihre in Azure gehosteten Workloads erfordern begrenzten Zugriff auf lokale Ressourcen, Sie müssen Cloudverbindungen aber als nicht vertrauenswürdig behandeln. | [Cloud-DMZ](../../decision-guides/software-defined-network/cloud-dmz.md) |
-| Ihre in Azure gehosteten Workloads erfordern begrenzten Zugriff auf lokale Ressourcen, und Sie planen die Implementierung von ausgereiften Sicherheitsrichtlinien und einer sicheren Konnektivität zwischen der Cloud und Ihrer lokalen Umgebung. | [Hybrid](../../decision-guides/software-defined-network/hybrid.md) |
-| Sie müssen eine große Anzahl von virtuellen Computern und Workloads bereitstellen und verwalten, wodurch möglicherweise [Grenzwerte für Azure-Abonnements](https://docs.microsoft.com/azure/azure-subscription-service-limits) überschritten werden, Sie müssen Dienste über mehrere Abonnements hinweg gemeinsam nutzen, oder Sie benötigen eine besser aufgeteilte Struktur zur Trennung von Rollen, Anwendungen oder Berechtigungen. | [Hub-and-Spoke-Architektur](../../decision-guides/software-defined-network/hub-spoke.md) |
-| Sie verfügen über eine Vielzahl von Filialstellen, die miteinander und mit Azure verbunden werden müssen. | [Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) |
+| **Szenario**                                                                                                                                                                                                                                                                                                                        | **Vorgeschlagene Netzwerkarchitektur**                                                  |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| Alle in Azure gehosteten Workloads, die in Ihrer Zielzone bereitgestellt werden, sind vollständig PaaS-basiert, erfordern kein virtuelles Netzwerk und gehören nicht zu einem größeren Cloudeinführungsprojekt mit IaaS-Ressourcen.                                                                                                                        | [Reine PaaS-Lösung](../../decision-guides/software-defined-network/paas-only.md)            |
+| Ihre in Azure gehosteten Workloads stellen IaaS-basierte Ressourcen wie z.B. virtuelle Computer bereit oder benötigen aus einem anderen Grund ein virtuelles Netzwerk, erfordern aber keine Konnektivität zu Ihrer lokalen Umgebung.                                                                                                                                          | [Cloudnativ](../../decision-guides/software-defined-network/cloud-native.md)      |
+| Ihre in Azure gehosteten Workloads erfordern begrenzten Zugriff auf lokale Ressourcen, Sie müssen Cloudverbindungen aber als nicht vertrauenswürdig behandeln.                                                                                                                                                                                           | [Cloud-DMZ](../../decision-guides/software-defined-network/cloud-dmz.md)            |
+| Ihre in Azure gehosteten Workloads erfordern begrenzten Zugriff auf lokale Ressourcen, und Sie planen die Implementierung von ausgereiften Sicherheitsrichtlinien und einer sicheren Konnektivität zwischen der Cloud und Ihrer lokalen Umgebung.                                                                                                                         | [Hybrid](../../decision-guides/software-defined-network/hybrid.md)                  |
+| Sie müssen eine große Anzahl von virtuellen Computern und Workloads bereitstellen und verwalten, wodurch möglicherweise [Grenzwerte für Azure-Abonnements](https://docs.microsoft.com/azure/azure-subscription-service-limits) überschritten werden, Sie müssen Dienste über mehrere Abonnements hinweg gemeinsam nutzen, oder Sie benötigen eine besser aufgeteilte Struktur zur Trennung von Rollen, Anwendungen oder Berechtigungen. | [Hub-and-Spoke-Architektur](../../decision-guides/software-defined-network/hub-spoke.md)        |
+| Sie verfügen über eine Vielzahl von Filialstellen, die miteinander und mit Azure verbunden werden müssen.                                                                                                                                                                                                                                                       | [Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) |
 
 ### <a name="azure-virtual-datacenter"></a>Virtuelles Azure-Rechenzentrum
 

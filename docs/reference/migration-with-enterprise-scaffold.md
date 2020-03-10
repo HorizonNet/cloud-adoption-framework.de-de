@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: dd4f60eafed3281d5d4e67285c413b9f969793e3
-ms.sourcegitcommit: 10f687bb1316db509fc1a3dbde72e107a467d72a
+ms.openlocfilehash: d94db62c907599720c8f29408c6b3e5ee5cfde5e
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77629248"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225273"
 ---
+<!-- cSpell:ignore rodend subscope ITSM -->
+
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure-Unternehmensgerüst: Präskriptive Abonnementgovernance
 
 > [!NOTE]
@@ -47,7 +49,7 @@ Das Unternehmensgerüst kann als Basis für jedes neue Abonnement in Azure fungi
 >
 Die folgende Abbildung zeigt die Komponenten des Gerüsts. Das Fundament ist ein gut durchdachter Plan für die Verwaltung von Hierarchien und Abonnements. Die Säulen bestehen aus Resource Manager-Richtlinien und soliden Benennungsstandards. Das restliche Gerüst besteht aus zentralen Azure-Funktionen und -Features, die eine sichere und verwaltbare Umgebung ermöglichen und für die notwendige Vernetzung sorgen.
 
-![Unternehmensgerüst](../_images/reference/scaffoldv2.png)
+![Unternehmensgerüst](../_images/reference/scaffold-v2.png)
 
 ## <a name="define-your-hierarchy"></a>Definieren der Hierarchie
 
@@ -269,7 +271,7 @@ Sie können diese Daten auf verschiedenen Ebenen betrachten und Aktionen daraus 
 
 Eine der wichtigsten Veränderungen, die ein Umstieg von der lokalen in die öffentliche Cloud mit sich bringt, ist die Art der Finanzierung: Diese verlagert sich vom Kapitalaufwand (Hardwarekauf) hin zum Betriebsaufwand (Zahlung nur für tatsächlich genutzte Dienste). Dieser Wechsel erfordert auch eine sorgfältigere Verwaltung Ihrer Kosten. Der große Vorteil der Cloud besteht darin, dass Sie die Kosten eines von Ihnen genutzten Diensts grundlegend und positiv beeinflussen können, indem Sie den Dienst einfach deaktivieren oder herunterskalieren, wenn Sie ihn nicht benötigen. Die Verwaltung der Kosten in der Cloud ist eine bewährte Methode, die erfahrene Kunden bereits täglich anwenden.
 
-Microsoft stellt Ihnen verschiedene Tools zur Verfügung, mit denen Sie Ihre Kosten visualisieren, nachverfolgen und verwalten können. Wir bieten Ihnen auch einen vollständigen Satz APIs, mit denen Sie das Kostenmanagement anpassen und in Ihre eigenen Tools und Dashboards integrieren können. Diese Tools sind locker in zwei Gruppen zusammengefasst: Azure-Portal-Funktionen und externe Funktionen.
+Microsoft stellt verschiedene Tools zur Verfügung, mit denen Sie Ihre Kosten visualisieren, nachverfolgen und verwalten können. Wir bieten Ihnen auch einen vollständigen Satz APIs, mit denen Sie das Kostenmanagement anpassen und in Ihre eigenen Tools und Dashboards integrieren können. Diese Tools sind locker in zwei Gruppen zusammengefasst: Azure-Portal-Funktionen und externe Funktionen.
 
 ### <a name="azure-portal-capabilities"></a>Azure-Portal-Funktionen
 

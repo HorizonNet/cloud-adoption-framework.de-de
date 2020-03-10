@@ -1,18 +1,18 @@
 ---
-title: 'Cloudinnovation: Tools zum Vorhersagen und Beeinflussen in Azure'
-description: Tools zum Vorhersagen und Beeinflussen in Azure
+title: Innovationstools zur Vorhersage und Beeinflussung
+description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um Analysetools zu finden, die Sie bei der Mustererkennung, bei der Integration von Vorhersagen sowie bei der Beeinflussung des Kundenverhaltens unterstützen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 656074ea65f490dea1345c2e00742846323cf6db
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 064016bddcf8c78e1b722397a9f18c71a0485776
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808616"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170765"
 ---
 # <a name="tools-to-predict-and-influence-data-in-azure"></a>Tools zum Vorhersagen und Beeinflussen von Daten in Azure
 

@@ -1,6 +1,6 @@
 ---
-title: 'Governanceleitfaden für Standardunternehmen: Die Geschichte hinter der Governancestrategie'
-description: Diese Geschichte schildert einen Anwendungsfall für die Governance während der Journey zur Cloudeinführung eines Standardunternehmens.
+title: 'Governance für Standardunternehmen: Die Geschichte hinter der Governancestrategie'
+description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um zu erfahren, wie Sie im Rahmen der Cloudeinführung für ein Standardunternehmen einen Governance-Anwendungsfall einrichten.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1e6edb6db4663c9a3b78394dc715376f697e6f5e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d963053806a6a43476c7597be5dd628b6e187e06
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805522"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709276"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>Governanceleitfaden für Standardunternehmen: Die Geschichte hinter der Governancestrategie
 

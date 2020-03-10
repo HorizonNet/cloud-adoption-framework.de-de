@@ -1,6 +1,6 @@
 ---
 title: Was ist die Datenklassifizierung?
-description: Anhand von Datenklassifizierungen können Sie den Wert Ihrer Organisationsdaten ermitteln und zuweisen. Außerdem stellen sie den Startpunkt für die Governance dar.
+description: Die Datenklassifizierung ermöglicht es Ihnen, Ihre Organisationsdaten zu untersuchen und ihnen einen Wert zuzuweisen, und stellt einen gängigen Ausgangspunkt für die Governance dar.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,18 +8,18 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1f476aaccfc88eab4a2bea1db17e7b1d33f31ee9
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 1680a78af449731ea7e15525d3e276998a73c0d4
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805080"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223783"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="what-is-data-classification"></a>Was ist die Datenklassifizierung?
 
-Anhand von Datenklassifizierungen können Sie den Wert Ihrer Organisationsdaten ermitteln und zuweisen. Außerdem stellen sie den Startpunkt für die Governance dar. Beim Prozess der Datenklassifizierung werden Daten anhand von Vertraulichkeit und Auswirkungen auf den Geschäftsbetrieb kategorisiert, um Risiken zu ermitteln. Wenn die Daten klassifiziert sind, können Sie sie so verwalten, dass vertrauliche oder wichtige Daten vor Diebstahl oder Verlust geschützt werden.
+Die Datenklassifizierung ermöglicht es Ihnen, Ihre Organisationsdaten zu untersuchen und ihnen einen Wert zuzuweisen, und stellt einen gängigen Ausgangspunkt für die Governance dar. Beim Prozess der Datenklassifizierung werden Daten anhand von Vertraulichkeit und Auswirkungen auf den Geschäftsbetrieb kategorisiert, um Risiken zu ermitteln. Wenn die Daten klassifiziert sind, können Sie sie so verwalten, dass vertrauliche oder wichtige Daten vor Diebstahl oder Verlust geschützt werden.
 
 ## <a name="understand-data-risks-then-manage-them"></a>Verstehen der Datenrisiken, um sie zu verwalten
 

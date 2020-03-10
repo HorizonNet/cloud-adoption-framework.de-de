@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 35a64b9f42df3737e186d25a43ecad457010607d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3667207de8cc31a85e12666c425ffdf0469c1be5
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807443"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223069"
 ---
+<!-- cSpell:ignore WEBVM SQLVM contosohost contosodc vcenter smarthotel SHWEB SHWCF -->
+
 # <a name="refactor-an-on-premises-app-to-an-azure-app-service-web-app-and-azure-sql-database"></a>Umgestalten einer lokalen App zu einer Azure App Service-Web-App und einer Azure SQL-Datenbank-Instanz
 
 Dieser Artikel zeigt, wie das fiktive Unternehmen Contoso eine zweistufigen Windows.NET-App, die auf VMware-VMs ausgeführt wird, als Teil einer Migration der App-VMs auf Azure umgestaltet. Das Unternehmen migriert die App-Front-End-VM zu einer Azure App Service-Web-App und die App-Datenbank zu einer Azure SQL-Datenbank-Instanz.
@@ -28,7 +30,7 @@ Das IT Leadership-Team hat eng mit den Geschäftspartnern zusammengearbeitet, um
 - **Unternehmenswachstum.** Contoso wächst, und damit steigt die Last auf den lokalen Systeme und Infrastrukturen.
 - **Effizienzsteigerung.** Contoso muss unnötige Verfahren beseitigen und Prozesse für Entwickler und Benutzer optimieren. Die IT-Abteilung muss schnell sein, weder Geld noch Zeit verschwenden, und Kundenanforderungen schneller bearbeiten.
 - **Steigerung der Flexibilität.**  Die Contoso-IT-Abteilung muss schneller auf die Unternehmensanforderungen reagieren. Die IT-Experten müssen schneller reagieren als die Änderungen im Marketplace geschehen, um den Erfolg in einer globalen Wirtschaft zu garantieren. Es darf nicht im Weg stehen oder zum Geschäftshindernis werden.
-- **Skalierung.** Da das Unternehmen erfolgreich wächst, muss die Contoso-IT Systeme bereitstellen, die mit der gleichen Geschwindigkeit wachsen können.
+- **Skalierung.** Da das Unternehmen erfolgreich wächst, muss die IT-Abteilung von Contoso Systeme bereitstellen, die mit der gleichen Geschwindigkeit mitwachsen können.
 - **Senken Sie Kosten.** Contoso möchte die Lizenzierungskosten minimieren.
 
 ## <a name="migration-goals"></a>Migrationsziele
@@ -171,7 +173,7 @@ Die Administratoren von Contoso migrieren die Datenbank von SmartHotel360 mit de
 
 ### <a name="migrate-the-database-with-dma"></a>Migrieren der Datenbank mit dem DMA
 
-1. Sie erstellen im DMA ein neues Projekt (**SmartHotelDB**) und wählen **Migration** aus.
+1. Sie erstellen im DMA ein neues Projekt (**SmartHotelDB**) und wählen anschließend **Migration** aus.
 2. Als Quellservertyp wird **SQL Server** und als Ziel **Azure SQL-Datenbank** ausgewählt.
 
     ![DMA](media/contoso-migration-refactor-web-app-sql/dma-1.png)
@@ -180,7 +182,7 @@ Die Administratoren von Contoso migrieren die Datenbank von SmartHotel360 mit de
 
      ![DMA](media/contoso-migration-refactor-web-app-sql/dma-2.png)
 
-4. Ein Fehler wird angezeigt, der anscheinend mit der Authentifizierung zusammenhängt. Beim Ermitteln der Ursache wird jedoch festgestellt, dass das Problem durch den Punkt (.) im Datenbanknamen verursacht wird. Daher wurde beschlossen, eine neue SQL-Datenbank-Instanz mit dem Namen **SmartHotel-Registration** bereitzustellen, um das Problem zu beheben. Beim erneuten Ausführen des DMA lässt sich **SmartHotel-Registration** jetzt auswählen, und der Assistent kann fortgesetzt werden.
+4. Ein Fehler wird angezeigt, der anscheinend mit der Authentifizierung zusammenhängt. Beim Ermitteln der Ursache wird jedoch festgestellt, dass das Problem durch den Punkt (.) im Datenbanknamen verursacht wird. Daher wurde beschlossen, eine neue SQL-Datenbank-Instanz mit dem Namen **SmartHotel-Registration** bereitzustellen, um das Problem zu beheben. Beim erneuten Ausführen des DMA können sie **SmartHotel-Registration** auswählen, und der Assistent kann fortgesetzt werden.
 
     ![DMA](media/contoso-migration-refactor-web-app-sql/dma-3.png)
 
@@ -230,7 +232,7 @@ Nachdem die Datenbank migriert wurde, können die Administratoren von Contoso di
 
 Contoso muss die DevOps-Infrastruktur und die Pipelines für die Anwendung erstellen. Hierzu erstellen die Administratoren von Contoso ein neues DevOps-Projekt, importieren ihren Code und richten anschließend die Build- und Releasepipelines ein.
 
-1. Im Azure DevOps-Konto von Contoso erstellen sie ein neues Projekt (**ContosoSmartHotelRefactor**) und verwenden **Git** für die Versionskontrolle.
+1. Im Azure DevOps-Konto von Contoso erstellen sie ein neues Projekt (**ContosoSmartHotelRefactor**) und wählen anschließend **Git** für die Versionskontrolle aus.
 
     ![Neues Projekt](./media/contoso-migration-refactor-web-app-sql/vsts1.png)
 
@@ -285,7 +287,7 @@ Als Nächstes konfigurieren die Contoso-Administratoren Azure DevOps für die Du
 
      ![Speichern und in Warteschlange einreihen](./media/contoso-migration-refactor-web-app-sql/pipeline4.png)
 
-5. Dies startet den ersten Build. Sie wählen die Buildnummer aus, um den Prozess zu überwachen. Nachdem dieser abgeschlossen ist, können sie das Prozessfeedback sehen und auf **Artefakte** klicken, um die Buildergebnisse zu überprüfen.
+5. Dies startet den ersten Build. Sie wählen die Buildnummer aus, um den Prozess zu überwachen. Nachdem dieser abgeschlossen ist, können sie das Prozessfeedback sehen und **Artefakte** auswählen, um die Buildergebnisse zu überprüfen.
 
     ![Überprüfung](./media/contoso-migration-refactor-web-app-sql/pipeline5.png)
 
@@ -328,11 +330,11 @@ Als Nächstes konfigurieren die Contoso-Administratoren Azure DevOps für die Du
 
     ![Continuous Deployment aktiviert](./media/contoso-migration-refactor-web-app-sql/pipeline14.png)
 
-15. Jetzt navigieren sie zurück zur Phase „1 Auftrag, 1 Aufgabe“ und klicken auf **Azure App Service bereitstellen**.
+15. Jetzt navigieren sie zurück zur Phase „1 Auftrag, 1 Aufgabe“ und wählen anschließend **Azure App Service bereitstellen** aus.
 
     ![Bereitstellen von Azure App Service](./media/contoso-migration-refactor-web-app-sql/pipeline15.png)
 
-16. Sie suchen in **Datei oder Ordner auswählen** die Datei **SmartHotel.Registration.Wcf.zip**, die während der Erstellung erstellt wurde, und klicken auf **Speichern**.
+16. Sie suchen unter **Datei oder Ordner auswählen** die Datei **SmartHotel.Registration.Wcf.zip**, die während der Erstellung erstellt wurde, und wählen anschließend **Speichern** aus.
 
     ![Speichern von WCF](./media/contoso-migration-refactor-web-app-sql/pipeline16.png)
 

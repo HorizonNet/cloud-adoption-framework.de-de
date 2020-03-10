@@ -1,6 +1,6 @@
 ---
-title: 'Leitfaden für Standardunternehmen: Verbessern der Disziplin „Cost Management“'
-description: 'Leitfaden für Standardunternehmen: Verbessern der Disziplin „Cost Management“'
+title: 'Governance für Standardunternehmen: Verbessern der Disziplin „Kostenverwaltung“'
+description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um zu erfahren, wie Sie einem Minimum Viable Product (MVP) für die Governance Kostenkontrollfunktionen hinzufügen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 83fe35135b37fe96a95f7335639aec65538ee829
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 81140a69d3d024159c62b499de2e69cd57eb3d1f
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806202"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709242"
 ---
 # <a name="standard-enterprise-guide-improve-the-cost-management-discipline"></a>Leitfaden für Standardunternehmen: Verbessern der Disziplin „Cost Management“
 

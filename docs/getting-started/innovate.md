@@ -1,18 +1,18 @@
 ---
 title: Innovation durch Einführung der Cloud
-description: 'Innovation durch Einführung der Cloud: Cloud Adoption Framework'
+description: Hier finden Sie Informationen zur innovativen Methodik – einem Ansatz, an dem Sie sich bei der Entwicklung neuer Cloudprodukte und -dienste orientieren können.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 96a1bca8e52ec384f8b93582ab4b3eac2fa77dd4
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ef9291d07a9de6067ae6d47477c47b2d57449feb
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805964"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170102"
 ---
 # <a name="innovate-through-cloud-adoption"></a>Innovation durch Einführung der Cloud
 

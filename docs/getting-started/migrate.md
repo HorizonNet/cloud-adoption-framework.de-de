@@ -1,18 +1,18 @@
 ---
 title: Einstieg in die Cloudmigration in Azure
-description: Beginnen Sie die Cloudmigration in Azure.
+description: Erhalten Sie umfassende Leitlinien für die Umstellung älterer Anwendungsworkloads auf die Cloud mit innovativen cloudbasierten Technologien.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/10/2019
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: e5ef9aecfe30cc9b401e9b4ffabe56e50f3afad2
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ef04a867614c6597268269421ef1d341f5252f3b
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804451"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223986"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Einstieg in die Cloudmigration in Azure
 
@@ -55,7 +55,7 @@ Dieser Ansatz besteht aus zwei Methoden oder Schwerpunktbereichen: Cloudstrategi
 
 ## <a name="cloud-implementation"></a>Cloudimplementierung
 
-Die Cloudimplementierung ist ein iterativer Prozess für das Migrieren und Modernisieren der digitalen Ressourcen in Einklang mit den anvisierten Geschäftsergebnissen und Change Management-Mechanismen. Bei jeder Iteration werden Workloads entsprechend der Strategie und Planung migriert oder modernisiert. Entscheidungen in Bezug auf IaaS, PaaS oder eine hybride Infrastruktur werden während der Bewertungsphase getroffen, um die Kontrolle und Ausführung zu optimieren. Diese Entscheidungen bestimmen die Tools, die in der Migrationsphase verwendet werden. Dieses Modell kann mit minimalem Strategie- und Planungsaufwand verwendet werden. Um jedoch die größten Unternehmenserträge zu erzielen, sollten sowohl die IT als auch das Unternehmen unbedingt auf eine klare Strategie und Planung zur Durchführung der Implementierungsaktivitäten ausgerichtet sein.
+Die Cloudimplementierung ist ein iterativer Prozess für das Migrieren und Modernisieren der digitalen Ressourcen in Einklang mit den anvisierten Geschäftsergebnissen und Change Management-Mechanismen. Bei jeder Iteration werden Workloads entsprechend der Strategie und Planung migriert oder modernisiert. Entscheidungen in Bezug auf IaaS, PaaS oder eine hybride Infrastruktur werden während der Bewertungsphase der [Migrationsmethodik](../migrate/index.md) getroffen, um die Kontrolle und Ausführung zu optimieren. Diese Entscheidungen steuern die Tools, die während der Iterationen der Migrationsphase innerhalb derselben Methodik verwendet werden. Dieses Modell kann mit minimalem Strategie- und Planungsaufwand verwendet werden. Um jedoch die größten Unternehmenserträge zu erzielen, sollten sowohl die IT als auch das Unternehmen auf eine klare Strategie und Planung zur Durchführung der Implementierungsaktivitäten ausgerichtet sein.
 
 ![Cloudimplementierungsmethodik des Cloud Adoption Framework](../_images/operational-transformation-migrate.png)
 
@@ -124,7 +124,7 @@ Die in die Cloud migrierten Technologien werden ständig erweitert, da Clouddien
 
 - Windows und SQL Server
 - Linux- und Open-Source-Datenbanken (OSS)
-- Unstructure/NoSQL-Datenbanken
+- Unstrukturierte und NoSQL-Datenbanken
 - SAP in Azure
 - Datenanalyse (Data Warehouse, Data Lake)
 

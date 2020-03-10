@@ -1,6 +1,6 @@
 ---
 title: Governance-Entwurf für eine einfache Workload
-description: Leitfaden zur Konfiguration von Kontrollfunktionen in Bezug auf Azure-Governance, um Benutzern die Bereitstellung einer einfachen Workload zu ermöglichen.
+description: Hier erfahren Sie, wie Sie in Azure ein Ressourcengovernancemodell entwerfen, um ein einzelnes Team und eine einfache Workload zu unterstützen. 
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a1edb7395751f8a91899fc8ef88f53bc056914ac
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: efdca4c5848e8815166fd2ddf308d40ae62f75a1
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803856"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223730"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>Governance-Entwurf für eine einfache Workload
 
@@ -47,7 +47,7 @@ Unser globaler Azure AD-Administrator erstellt das **Workloadbesitzer**-Konto f�
 ![Der globale Azure AD-Administrator erstellt das Workloadbesitzer-Konto](../../_images/govern/design/governance-1-2.png)
 *Abbildung 2: Der globale Azure AD-Administrator erstellt das Workloadbesitzer-Konto.*
 
-Sie können die Zugriffsberechtigung für Ressourcen erst zuweisen, nachdem dieser Benutzer einem **Abonnement** hinzugefügt wurde. Dies führen Sie in den nächsten beiden Abschnitten durch.
+Sie können die Zugriffsberechtigung für Ressourcen erst zuweisen, nachdem dieser Benutzer einem **Abonnement** hinzugefügt wurde. Dieser Schritt wird in den nächsten beiden Abschnitten durchgeführt.
 
 ## <a name="resource-management-scope"></a>Ressourcenverwaltungsbereich
 

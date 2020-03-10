@@ -1,18 +1,18 @@
 ---
-title: Definieren von Unternehmensrichtlinien für Cloudgovernance
-description: In diesem Artikel wird erläutert, wie Sie eine Richtlinie einrichten, um Risiken wiederzugeben und zu mindern.
+title: Definieren einer Unternehmensrichtlinie für Cloudgovernance
+description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um sich über die Einrichtung einer Richtlinie für die Behandlung bekannter Risiken und Risikotoleranzen im Zusammenhang mit Ihrer Cloudtransformation zu informieren.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 92c04d53e59d8876291794c5da74104ec62412a9
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 94e49d8f6682d4f5edb6b1d00bd93d47ba600bc8
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806049"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706675"
 ---
 # <a name="define-corporate-policy-for-cloud-governance"></a>Definieren von Unternehmensrichtlinien für Cloudgovernance
 

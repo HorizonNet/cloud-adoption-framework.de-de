@@ -1,18 +1,18 @@
 ---
 title: Evaluieren der Risikotoleranz
-description: Erläuterung der geschäftlichen Risiken bei einer Cloudtransformation
+description: Informieren Sie sich über die Geschäftsrisiken im Zusammenhang mit verschiedenen Formen der Cloudtransformation sowie über Möglichkeiten zur Evaluierung der Risikotoleranz für ein Unternehmen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 06f8229ab38134ac4d51a4f0cef212ebc864bbdb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: cbde932d0e4a91a80c4bde6a5b9604b43ee30441
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806015"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709497"
 ---
 # <a name="evaluate-risk-tolerance"></a>Evaluieren der Risikotoleranz
 

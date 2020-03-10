@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9fbdeccc3ed1c1acb516f9aceadc3d8dc8732030
-ms.sourcegitcommit: 35d01bccc8ecbec38f6247a065a309ec691ca810
+ms.openlocfilehash: b426acdc4ae88a88acd295758be4e2d4a6b85dc0
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77213608"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223270"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>Einrichten von Betriebsverwaltungsverfahren in der Cloud
 
@@ -39,7 +39,7 @@ Mit beiden bewährten Methoden wird auf eine künftige angestrebte Methodik für
 - **Betriebsbezogene Compliance:** Eine regelmäßige Verwaltung von Konfiguration, Größe, Kosten und Leistung von Ressourcen ist für die Erfüllung der Leistungserwartungen unverzichtbar.
 - **Schutz und Wiederherstellung:** Die Minimierung von Betriebsunterbrechungen und die Beschleunigung der Wiederherstellung helfen dem Unternehmen, Leistungsverluste und negative Auswirkungen auf den Umsatz zu vermeiden. Erkennung und Wiederherstellung sind wesentliche Aspekte dieser Disziplin.
 - **Plattformbetrieb:** Alle IT-Umgebungen umfassen eine Reihe von gemeinsam genutzten Plattformen. Diese Plattformen können Datenspeicher wie SQL Server oder Azure HDInsight beinhalten. Andere gängige Plattformen sind Containerlösungen wie Azure Kubernetes Service (AKS). Unabhängig von den Plattformen liegt der Schwerpunkt bezüglich des Reifegrads des Plattformbetriebs auf der Anpassung von Vorgängen basierend darauf, wie die gemeinsam genutzten Plattformen bereitgestellt, konfiguriert und durch Workloads genutzt werden.
-- **Workloadbetrieb:** Auf der höchsten Stufe der betrieblichen Reife haben Cloudbetriebsteams die Möglichkeit, den Betrieb für Workloads zu optimieren, die für den Geschäftserfolg entscheidend sind. Für diese hochkritischen Workloads können verfügbare Daten bei der Automatisierung der Problembehandlung, der Größenanpassung oder des Schutzes von Workloads basierend auf deren Auslastung helfen.
+- **Workloadbetrieb:** Auf der höchsten Stufe der betrieblichen Reife können Cloudbetriebsteams Vorgänge für kritische Workloads optimieren. Bei diesen Workloads können verfügbare Daten zur Automatisierung der Problembehandlung, der Größenanpassung oder des Schutzes von Workloads auf der Grundlage ihrer Auslastung genutzt werden.
 
 Zusätzliche Anleitungen wie der [Entwurf eines Überprüfungsframeworks (Codename: Cloudentwurfsprinzipien)](https://docs.microsoft.com/azure/architecture/framework/resiliency/overview) können dabei helfen, detaillierte architekturbezogene Entscheidungen zu jeder Workload innerhalb der zuvor beschriebenen Disziplinen zu treffen.
 

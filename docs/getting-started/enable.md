@@ -1,6 +1,6 @@
 ---
-title: Ermöglichen von Kundenerfolg während einer Cloudeinführungsjourney
-description: Ermöglichen des Kundenerfolgs im gesamten Verlauf einer Cloudeinführungsjourney
+title: Ermöglichen einer erfolgreichen Cloudeinführungsjourney
+description: Verwenden Sie das kostenlose Self-Service-Framework für die Cloudeinführung (Cloud Adoption Framework) und andere Tools, die Sie bei der Entscheidungsfindung im Zusammenhang mit der Cloudeinführung unterstützen und dazu beitragen, den Erfolg von Kunden sicherzustellen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: 34b67422ad8f32cf8d6bae141db05956a1b41e22
-ms.sourcegitcommit: 6a22ac00549eb9964f25d3dfd63730e17f7eefe1
+ms.openlocfilehash: 4abfaa8622db86fefb2c7c99589d3ef81a5ed489
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413200"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170170"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Ermöglichen des Erfolgs während einer Cloudeinführungsjourney
 

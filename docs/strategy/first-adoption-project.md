@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: c374ef690a28e1b7e0e8fd6f7fff3106c35e543f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 90e21047f8d64f15ef3c94ebe82e31ba615c4d38
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798178"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225259"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -54,7 +54,7 @@ Zur Unterstützung der obigen Kriterien enthält diese Liste ein Beispiel für e
 
 Weitere Beispiele für erste Einführungsprojekte sind unter anderem:
 
-- **Notfallwiederherstellung und Geschäftskontinuität (DRBC):** Abgesehen von Azure Site Recovery können Sie als erstes Projekt mehrere DRBC-Strategien implementieren.
+- **Business Continuity & Disaster Recovery (BCDR):** Neben Azure Site Recovery können Sie mehrere BCDR-Strategien als erstes Projekt implementieren.
 - **Nicht produktionsbezogen:** Stellen Sie eine nicht produktionsbezogene Instanz einer Workload bereit.
 - **Archiv:** Cold Storage kann eine Belastung für Rechenzentrumsressourcen sein. Die Migration dieser Daten in die Cloud kann schnell zum Erfolg führen.
 - **Ende des Supports (EOS):** Die Migration von Ressourcen, die das Ende des Supports erreicht haben, ist eine weitere schnelle Möglichkeit, die technischen Qualifikationen zu erweitern. Außerdem könnten so Kosten durch teure Supportverträge oder Lizenzierungskosten vermieden werden.

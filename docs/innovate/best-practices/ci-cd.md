@@ -1,18 +1,18 @@
 ---
-title: 'Cloudinnovation: Tools zum Unterstützen der Einführung in Azure'
-description: Tools zum Unterstützen der Einführung in Azure
+title: Innovationstools zum Unterstützen der Einführung
+description: Hier finden Sie Informationen zu Azure-Tools, die die innovative Methodik nutzen, um Probleme zu beseitigen und die Einführung Schritt für Schritt unterstützen, während Hypothesen weiterentwickelt werden.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 01961b514f5640d73150504ea65ee9af2fec17b2
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 20dc6aa263e8f7a381809335b4af9b4f4de84dc6
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808701"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171292"
 ---
 # <a name="tools-to-empower-adoption-in-azure"></a>Tools zum Unterstützen der Einführung in Azure
 

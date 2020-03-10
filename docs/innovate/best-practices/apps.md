@@ -1,18 +1,18 @@
 ---
-title: 'Cloudinnovation: Tools zum Interagieren durch Apps in Azure'
-description: Tools zum Interagieren durch Apps in Azure
+title: Innovationstools für die Interaktion über Apps
+description: Hier finden Sie Informationen zu Azure-Tools, die die Entwicklung von Apps beschleunigen, die mit der Innovationsmethodik des Frameworks für die Cloudeinführung (Cloud Adoption Framework) in Einklang stehen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: cf37b3555244db05ecd22f9c4421a35e8a0f758e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 701c4634aab8e2a9abb06356a929ae90c1b5a864
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808718"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171326"
 ---
 # <a name="tools-to-engage-via-apps-in-azure"></a>Tools zum Interagieren durch Apps in Azure
 

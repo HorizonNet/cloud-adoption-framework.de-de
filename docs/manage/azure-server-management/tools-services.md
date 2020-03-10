@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: dbb2d190fcbe787cd3ee26cc0803566b398e945d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: df6851ff628c0abcb38ee9139fcf24f31e2117cf
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807936"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223273"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Azure-Serververwaltungstools und -dienste
 
@@ -37,7 +37,7 @@ Migrationsdienste unterstützen Sie bei der Migration Ihrer Workloads zu Azure. 
 
 ## <a name="protect"></a>Schützen
 
-Zum Schutz Ihrer Daten müssen Sicherung, Hochverfügbarkeit, Verschlüsselung, Autorisierung und damit verbundene betriebliche Probleme geplant werden. Diese Themen werden online ausführlich behandelt, daher konzentrieren wir uns hier auf die Erstellung eines BCDR-Plans (Business Continuity Disaster Recovery). Es werden Verweise auf Dokumentationen einbezogen, die ausführlich beschreiben, wie diese Art von Plan implementiert und bereitgestellt wird.
+Zum Schutz Ihrer Daten müssen Sicherung, Hochverfügbarkeit, Verschlüsselung, Autorisierung und damit verbundene betriebliche Probleme geplant werden. Diese Themen werden ausführlich online behandelt, daher konzentrieren wir uns hier auf die Erstellung eines BCDR-Plans (Business Continuity & Disaster Recovery). Es werden Verweise auf Dokumentationen einbezogen, die ausführlich beschreiben, wie diese Art von Plan implementiert und bereitgestellt wird.
 
 Wenn Sie Datenschutzstrategien erstellen, sollten Sie zunächst überlegen, Ihre Workloadanwendungen in ihre verschiedenen Ebenen aufzuteilen. Dieser Ansatz hilft, da jede Ebene in der Regel einen eigenen, individuellen Schutzplan erfordert. Weitere Informationen über das Entwerfen von robusten Anwendungen finden Sie unter [Entwerfen robuster Anwendungen für Azure](https://docs.microsoft.com/azure/architecture/resiliency).
 

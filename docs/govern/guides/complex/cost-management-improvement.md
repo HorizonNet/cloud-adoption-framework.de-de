@@ -1,6 +1,6 @@
 ---
-title: 'Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Cost Management“'
-description: 'Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Cost Management“'
+title: 'Governance in komplexen Unternehmen: Verbessern der Disziplin „Kostenverwaltung“'
+description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um zu erfahren, wie Sie einem Minimum Viable Product (MVP) für die Governance Kostenkontrollfunktionen hinzufügen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2b66894ca215156aa9688ca1ab458910e8f496f8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: b44f153c9e14f1425aa3bb1374c60243c9a3c326
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805726"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709038"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Cost Management“
 

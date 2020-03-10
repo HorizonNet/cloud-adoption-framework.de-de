@@ -1,6 +1,6 @@
 ---
 title: Verbesserung der Disziplin „Beschleunigung der Bereitstellung“
-description: Verbesserung der Disziplin „Beschleunigung der Bereitstellung“
+description: Machen Sie sich mit den potenziellen Aufgaben eines Unternehmens vertraut, um dessen Disziplin zur Beschleunigung der Bereitstellung in den einzelnen Phasen der Cloudeinführung zu entwickeln und zu verbessern.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c5f07137ac1ca8c3ddbc4717dba5622096551862
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c5406a11fa2d0f5cd2f561c162a344564501486f
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805930"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708749"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>Verbesserung der Disziplin „Beschleunigung der Bereitstellung“
 

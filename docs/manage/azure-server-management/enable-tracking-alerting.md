@@ -7,18 +7,18 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0cd8776c71eae22fdb7a7894b656a3dc1948e45c
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4581c865f3dd928df91e7e1eef97a0ea341e4ccb
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808106"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223509"
 ---
 # <a name="enable-tracking-and-alerting-for-critical-changes"></a>Aktivieren von Nachverfolgung und Warnungen für kritische Änderungen
 
 Azure-Änderungsnachverfolgung und Bestand bietet Warnungen zum Konfigurationszustand Ihrer Hybridumgebung und zu Änderungen an dieser Umgebung. Es kann wichtige Änderungen an Dateien, Diensten, Software und der Registrierung melden, die sich auf Ihre bereitgestellten Server auswirken könnten.
 
-Standardmäßig überwacht der Azure Automation-Inventarisierungsdienst keine Dateien oder Registrierungseinstellungen. Die Lösung enthält eine Liste von Registrierungsschlüsseln, die für die Überwachung empfohlen werden. Um diese Liste anzuzeigen, wechseln Sie zu Ihrem Automation-Konto im Azure-Portal, und wählen Sie **Bestand** > **Einstellungen bearbeiten** aus.
+Standardmäßig überwacht der Azure Automation-Inventarisierungsdienst keine Dateien oder Registrierungseinstellungen. Die Lösung enthält eine Liste von Registrierungsschlüsseln, die für die Überwachung empfohlen werden. Um diese Liste anzuzeigen, wechseln Sie zu Ihrem Automation-Konto im Azure-Portal, und wählen Sie anschließend **Bestand** > **Einstellungen bearbeiten** aus.
 
 ![Screenshot der Ansicht des Automation-Bestands im Azure-Portal](./media/change-tracking1.png)
 

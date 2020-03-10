@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8486d4de8b6055d6d0741d008c10a405c27b8f92
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 82c801abee32e0399eb124440868bc455034a018
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803516"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222657"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Auf Migration ausgerichtete Kostenkontrollmechanismen
 
@@ -34,7 +34,7 @@ Die in diesem Artikel beschriebenen Prozesse können auch eine Partnerschaft mit
 
 <!-- markdownlint-disable MD024 MD025 -->
 
-# <a name="estimate-vm-costs-prior-to-migrationtabestimatevmcosts"></a>[Schätzen der Kosten für virtuelle Computer vor der Migration](#tab/EstimateVMCosts)
+# <a name="estimate-vm-costs-prior-to-migration"></a>[Schätzen der Kosten für virtuelle Computer vor der Migration](#tab/EstimateVMCosts)
 
 Vor der Migration von Ressourcen (Infrastruktur, Apps oder Daten), besteht die Möglichkeit, die Kosten zu schätzen und die Größe basierend auf beobachteten Leistungskriterien für diese Ressourcen zu optimieren. Die Kostenschätzung dient zwei Zwecken: Sie ermöglicht die Kostenkontrolle und stellt einen Prüfpunkt dar, um sicherzustellen, dass die notwendigen Leistungsanforderungen in den aktuellen Budgets berücksichtigt werden.
 
@@ -54,13 +54,13 @@ Diese manuellen Kostenrechner können einzeln verwendet werden, um potenzielle A
 Azure Migrate berechnet **monatliche Kostenschätzungen** basierend auf Daten, die vom Collector und der Dienstzuordnung erfasst wurden. Mit den folgenden Schritten werden die Kostenschätzungen geladen:
 
 1. Navigieren Sie im Portal zu „Azure Migrate-Bewertung“.
-2. Wählen Sie auf der Seite **Übersicht** des Projekts die Option **+ Bewertung erstellen** aus.
-3. Klicken Sie auf **Alle anzeigen**, um die Eigenschaften für die Bewertung zu überprüfen.
-4. Erstellen Sie die Gruppe, und geben Sie einen Gruppennamen an.
-5. Wählen Sie die Computer aus, die der Gruppe hinzugefügt werden sollen.
-6. Klicken Sie auf **Bewertung erstellen**, um die Gruppe und die Bewertung zu erstellen.
-7. Zeigen Sie die Bewertung nach der Erstellung in „Übersicht“ > „Dashboard“ an.
-8. Wählen Sie im Abschnitt „Bewertungsdetails“ der Portalnavigation die Option **Kostendetails** aus.
+1. Wählen Sie auf der Seite **Übersicht** des Projekts die Option **+ Bewertung erstellen** aus.
+1. Wählen Sie **Alle anzeigen** aus, um die Eigenschaften der Bewertung zu überprüfen.
+1. Erstellen Sie die Gruppe, und geben Sie einen Gruppennamen an.
+1. Wählen Sie die Computer aus, die der Gruppe hinzugefügt werden sollen.
+1. Wählen Sie **Bewertung erstellen** aus, um die Gruppe und die Bewertung zu erstellen.
+1. Zeigen Sie die Bewertung nach der Erstellung in „Übersicht“ > „Dashboard“ an.
+1. Wählen Sie im Abschnitt „Bewertungsdetails“ der Portalnavigation die Option **Kostendetails** aus.
 
 Die unten abgebildete resultierende Schätzung identifiziert die monatlichen Kosten für Computing und Speicherung, die oft den größten Teil der Cloudkosten ausmachen.
 
@@ -72,7 +72,7 @@ Die unten abgebildete resultierende Schätzung identifiziert die monatlichen Kos
 - [Einrichten und Überprüfen einer Bewertung mit Azure Migrate](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
 - Einen umfassenderen Plan zur Kostenverwaltung für eine größere Anzahl von Ressourcen (Infrastruktur, Apps und Daten) bietet das [Governancemodell für das Framework für die Cloudeinführung (Cloud Adoption Framework)](../../govern/guides/index.md). Hierzu gehören insbesondere die Hinweise zur [Disziplin „Kostenverwaltung“](../../govern/cost-management/index.md) und der [Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Cost Management](../../govern/guides/complex/cost-management-improvement.md).
 
-# <a name="estimate-and-optimize-vm-costs-during-and-after-migrationtabestimateoptimize"></a>[Schätzen und Optimieren der VM-Kosten während und nach der Migration](#tab/EstimateOptimize)
+# <a name="estimate-and-optimize-vm-costs-during-and-after-migration"></a>[Schätzen und Optimieren der VM-Kosten während und nach der Migration](#tab/EstimateOptimize)
 
 Eine Kostenschätzung vor der Migration bietet ein solides Ziel für die Kostenerwartungen. Sie bietet zudem die Möglichkeit, den Leistungs- und Kostenbedarf jeder zu migrierenden Ressource (Infrastruktur, Apps und Daten) zu berücksichtigen. Es handelt sich jedoch immer noch um eine Schätzung. Sobald die Ressource migriert wurde und unter Last steht, können genauere Kostenberechnungen auf der Grundlage der tatsächlichen oder synthetisierten Last durchgeführt werden.
 
@@ -94,7 +94,7 @@ Voraussetzungen: Beim Rest dieser Registerkarte wird davon ausgegangen, dass der
 
 Mit den folgenden Schritten werden die Azure Cost Management-Kostenanalysedaten für Ihre Abonnements geladen:
 
-1. Navigieren Sie im Portal zu **Cost Management + Abrechnung**. Wird „Kostenverwaltung + Abrechnung“ im linken Bereich nicht angezeigt, klicken Sie auf **Alle Dienste**. Klicken Sie im Dienstmenübereich unter **Überwachung und Verwaltung** auf **Kostenverwaltung + Abrechnung**.
+1. Navigieren Sie im Portal zu **Cost Management + Abrechnung**. Sollte „Kostenverwaltung + Abrechnung“ im linken Bereich nicht angezeigt werden, wählen Sie **Alle Dienste** aus. Wählen Sie im Dienstmenübereich unter **Überwachung und Verwaltung** die Option **Kostenverwaltung + Abrechnung** aus.
 2. Wählen Sie auf dem Blatt „Cost Management + Abrechnung“ im linken Navigationsbereich die Option **Kostenverwaltung** aus, um mit der Analyse und Optimierung der Cloudkosten zu beginnen.
 3. Wählen Sie auf dem Blatt „Cost Management“ die Option **Kostenanalyse** aus.
     a. Verwenden Sie **Bereich**, um in einen anderen Bereich der Kostenanalyse zu wechseln.
@@ -107,7 +107,7 @@ Anhand dieser Analyse können Sie die Gesamtkosten, das Budget (falls vorhanden)
 - Weitere Informationen zu Azure Advisor finden Sie unter [Reduzieren der Dienstkosten mit Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations).
 - Weitere Informationen zu Azure Cost Management finden Sie unter [Verstehen von und Arbeiten mit Bereichen](https://docs.microsoft.com/azure/cost-management/understand-work-scopes) und [Ermitteln und Analysieren von Kosten mit der Kostenanalyse](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis).
 
-# <a name="tips-and-tricks-to-optimize-coststabtipstricks"></a>[Tipps und Tricks zur Kostenoptimierung](#tab/TipsTricks)
+# <a name="tips-and-tricks-to-optimize-costs"></a>[Tipps und Tricks zur Kostenoptimierung](#tab/TipsTricks)
 
 Zusätzlich zu den in diesem Artikel genannten Tools gibt es einige Tipps und Tricks, die helfen können, die Gesamtcloudkosten schnell zu senken. Im Folgenden finden Sie einige wichtige Tipps, die Sie beachten sollten:
 

@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b5b8710c8545fa2e7c56131ed74a0ea1a3a02f8e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: b52b1fad33a9868682ddcd7cf905c7f8ab9b3612
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807426"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222956"
 ---
-# <a name="rehost-an-on-premises-app-on-azure-vms-and-sql-server-always-on-availability-groups"></a>Zuweisen eines neuen Hosts für eine lokale App auf Azure-VMs und in SQL Server Always On-Verfügbarkeitsgruppen
+# <a name="rehost-an-on-premises-app-with-azure-virtual-machines-and-sql-server-always-on-availability-groups"></a>Zuweisen eines neuen Hosts für eine lokale App mit Azure Virtual Machines und in SQL Server Always On-Verfügbarkeitsgruppen
 
-Dieser Artikel zeigt, wie das fiktive Unternehmen Contoso einer zweistufigen Windows.NET-App, die auf VMware-VMs ausgeführt wird, als Teil einer Migration der App-VMs auf Azure einen neuen Host zuweist. Contoso migriert den virtuellen Front-End-Computer der App zu einem virtuellen Azure-Computer und die App-Datenbank zu einem virtuellen Azure SQL Server-Computer, die in einem Windows Server-Failovercluster mit SQL Server AlwaysOn-Verfügbarkeitsgruppen ausgeführt werden.
+Dieser Artikel zeigt, wie das fiktive Unternehmen Contoso einer zweistufigen Windows.NET-App, die auf virtuellen VMware-Computern (VMs) ausgeführt wird, als Teil einer Migration der App-VMs auf Azure einen neuen Host zuweist. Contoso migriert den virtuellen Front-End-Computer der App zu einem virtuellen Azure-Computer und die App-Datenbank zu einem virtuellen Azure SQL Server-Computer, die in einem Windows Server-Failovercluster mit SQL Server AlwaysOn-Verfügbarkeitsgruppen ausgeführt werden.
 
 Die in diesem Beispiel verwendet SmartHotel360-App wird als Open Source bereitgestellt. Wenn Sie diese App für Ihre eigenen Tests verwenden möchten, können Sie sie von [GitHub](https://github.com/Microsoft/SmartHotel360) herunterladen.
 
@@ -27,8 +27,8 @@ Das IT Leadership-Team hat eng mit den Geschäftspartnern zusammengearbeitet, um
 
 - **Unternehmenswachstum.** Contoso wächst, und daher geraten die lokalen Systeme und Infrastrukturen unter Druck.
 - **Effizienzsteigerung.** Contoso muss unnötige Verfahren beseitigen und Prozesse für Entwickler und Benutzer optimieren. Die IT-Abteilung muss schnell sein, weder Geld noch Zeit verschwenden, und Kundenanforderungen schneller bearbeiten.
-- **Steigerung der Flexibilität.** Die Contoso-IT-Abteilung muss schneller auf die Unternehmensanforderungen reagieren. Die IT-Experten müssen schneller reagieren als die Änderungen im Marketplace geschehen, um den Erfolg in einer globalen Wirtschaft zu garantieren. IT darf nicht im Weg stehen oder zum Geschäftshindernis werden.
-- **Skalierung.** Da das Unternehmen erfolgreich wächst, muss die Contoso-IT Systeme bereitstellen, die mit der gleichen Geschwindigkeit wachsen können.
+- **Steigerung der Flexibilität.** Die Contoso-IT-Abteilung muss schneller auf die Unternehmensanforderungen reagieren. Die IT-Experten müssen schneller reagieren als die Änderungen im Marketplace geschehen, um den Erfolg in einer globalen Wirtschaft zu garantieren. Die IT darf nicht im Weg stehen oder zum Geschäftshindernis werden.
+- **Skalierung.** Da das Unternehmen erfolgreich wächst, muss die IT-Abteilung von Contoso Systeme bereitstellen, die mit der gleichen Geschwindigkeit mitwachsen können.
 
 ## <a name="migration-goals"></a>Migrationsziele
 
@@ -38,7 +38,7 @@ Das Cloudteam von Contoso hat sich folgende Ziele für die Migration gesetzt. An
 - Contoso möchte nicht in diese App investieren. Die Investition ist wichtig für das Geschäft, in ihrer derzeitigen Form soll die App jedoch lediglich sicher in die Cloud verschoben werden.
 - Bei der lokalen App-Datenbank gab es Verfügbarkeitsprobleme. Contoso möchte sie in Azure als Hochverfügbarkeitscluster mit Failoverfunktionen bereitstellen.
 - Contoso möchte ein Upgrade von der aktuellen SQL Server 2008 R2-Plattform auf SQL Server 2017 durchführen.
-- Contoso möchte für diese App keine Azure SQL-Datenbank verwenden und sucht nach Alternativen.
+- Contoso sucht nach Alternativen zu Azure SQL-Datenbank für diese App.
 
 ## <a name="solution-design"></a>Lösungsentwurf
 
@@ -368,7 +368,7 @@ Mobility Service muss auf jeder VM installiert sein.
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>Vorbereiten der Verbindungsherstellung mit Azure-VMs nach dem Failover
 
-Nach dem Failover möchte Contoso eine Verbindung mit virtuellen Azure-Computern herstellen können. Dazu führen Contoso-Administratoren vor der Migration folgende Schritte aus:
+Nach dem Failover möchte Contoso eine Verbindung mit Azure-VMs herstellen. Dazu führen Contoso-Administratoren vor der Migration folgende Schritte aus:
 
 1. Für den Zugriff über das Internet:
 

@@ -1,18 +1,18 @@
 ---
-title: Bereitstellen einer grundlegenden Workload
-description: Hier erfahren Sie, wie Sie eine grundlegende Workload in Azure bereitstellen.
+title: Bereitstellen einer grundlegenden Workload in Azure
+description: Hier finden Sie Informationen zu Kernkomponenten der Cloudinfrastruktur sowie zu grundlegenden Workloads wie grundlegenden Web-Apps, einzelnen virtuellen Computern und virtuellen Netzwerken.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 12/31/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b4d5821e7ed29efeea5dd7e6a59b7e4afd86f0e0
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e720fb698e0eecb53942bb5d7be99df5e923451e
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808735"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170697"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>Bereitstellen einer grundlegenden Workload in Azure
 

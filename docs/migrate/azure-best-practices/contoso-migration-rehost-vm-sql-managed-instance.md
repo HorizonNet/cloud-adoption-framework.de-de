@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 5850b9d3da33babd4c44145fbca8f81da7dd8ff5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7ec95c75d81b93852a59ef137a02cc35d83a1cd3
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807358"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223071"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>Zuweisen eines neuen Hosts für eine lokale App auf einer Azure-VM und einer verwalteten Azure SQL-Datenbank-Instanz
 
@@ -331,7 +331,7 @@ Informieren Sie sich über das [Erstellen eines Kontos für die Pushinstallation
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>Vorbereiten der Verbindungsherstellung mit Azure-VMs nach dem Failover
 
-Nach dem Failover in Azure möchte Contoso eine Verbindung mit den replizierten VMs in Azure herstellen können. Um eine Verbindung mit den replizierten VMs in Azure herzustellen, müssen die Contoso-Administratoren vor der Migration einige Aufgaben in der lokalen VM ausführen:
+Nach dem Failover auf Azure möchte Contoso eine Verbindung mit den replizierten virtuellen Computern in Azure herstellen. Hierzu müssen die Contoso-Administratoren vor der Migration einige Aufgaben auf dem lokalen virtuellen Computer ausführen:
 
 1. Sie aktivieren vor dem Failover RDP auf dem lokalen virtuellen Computer, um über das Internet darauf zuzugreifen. Sie stellen sicher, dass TCP- und UDP-Regeln für das Profil **Öffentlich** hinzugefügt werden und dass RDP unter **Windows-Firewall** > **Zugelassene Apps** für alle Profile zugelassen ist.
 2. Für den Zugriff über das Site-to-Site-VPN von Contoso aktivieren die Administratoren RDP auf dem lokalen Computer. Sie lassen RDP unter **Windows-Firewall** > **Zugelassene Apps und Features** für **private und Domänennetzwerke** zu.

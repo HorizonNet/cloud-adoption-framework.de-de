@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 7ecf2ed4b9d66f6f1ccc7d65c1c0e9146a4046da
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a406d0c05594cff736265b0b69e24dcc8bc0f695
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807613"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223255"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>Leitfaden zur Cloudüberwachung: Erfassen der richtigen Daten
 
@@ -23,7 +23,7 @@ Um den Zustand und die Verfügbarkeit Ihrer Cloudlösung zu beobachten, müssen 
 
 Planen Sie die Überwachung und Migration sorgfältig. Starten Sie mit dem Einbeziehen des Besitzers des Überwachungsdiensts, des Verantwortlichen für den Betriebsablauf und anderer beteiligter Personen während der Planungsphase und beteiligen Sie sie am gesamten Entwicklungs- und Freigabezyklus. Im Mittelpunkt steht die Entwicklung einer Überwachungskonfiguration, die auf den folgenden Kriterien basiert:
 
-- Wie setzt sich der Dienst zusammen, und werden diese Abhängigkeiten heute überwacht? Sind in diesem Fall mehrere Tools beteiligt? Gibt es eine Möglichkeit der Konsolidierung, ohne Risiken einzugehen?
+- Wie setzt sich der Dienst zusammen? Werden diese Abhängigkeiten aktuell überwacht? Sind in diesem Fall mehrere Tools beteiligt? Gibt es eine Möglichkeit der Konsolidierung, ohne Risiken einzugehen?
 - Was ist die SLA des Diensts, und wie kann ich sie messen und melden?
 - Wie sollte das Dienstdashboard aussehen, wenn ein Vorfall auftritt? Wie sollte das Dienstdashboard für den Besitzer des Diensts und das Team, das den Dienst unterstützt, aussehen?
 - Welche Metriken produziert die Ressource, die ich überwachen muss?  

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 8dd545e4d34dfafd6a777828b9c590030797fdae
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3852317648526cceadfd772b72adbd1af2bb7d08
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799215"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222049"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>Mit Microsoft Azure auf dem neuesten Stand
 
@@ -22,7 +22,7 @@ Cloudplattformen wie Microsoft Azure verändern sich schneller, als es viele Unt
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="top-resourcestabtopresources"></a>[Wichtigste Ressourcen](#tab/TopResources)
+# <a name="top-resources"></a>[Wichtigste Ressourcen](#tab/TopResources)
 
 <!-- markdownlint-enable MD025 -->
 
@@ -45,14 +45,14 @@ Die folgenden Ressourcen können Ihnen dabei helfen, mit Azure auf dem Laufenden
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="additional-resourcestabadditionalresources"></a>[Weitere Ressourcen](#tab/AdditionalResources)
+# <a name="additional-resources"></a>[Weitere Ressourcen](#tab/AdditionalResources)
 
 <!-- markdownlint-enable MD025 -->
 
 Unter den folgenden Ressourcen finden Sie weitere Inhalte, die Ihnen helfen, bezüglich Azure auf dem neuesten Stand zu bleiben:
 
 - [Azure-Diagramme](https://azurecharts.com/)
-  - In dieser inoffiziellen Ressource werden alle Azure-Updates der letzten sechs Monate visuell dargestellt. Sie enthält außerdem weitere nützliche Diagramme und Funktionen, mit denen Sie Änderungen in Azure nachverfolgen können.
+  - Diese inoffizielle Visualisierung zeigt alle Azure-Updates der letzten sechs Monate. Sie enthält weitere hilfreiche Diagramme und Hilfsprogramme, die Sie bei der Nachverfolgung von Azure-Änderungen unterstützen.
 - [Azure Friday](https://channel9.msdn.com/Shows/Azure-Friday)
   - Wöchentliche Videos mit den Entwicklern, die Azure bereitstellen. Sie präsentieren Demos, beantworten Fragen und teilen Erkenntnisse mit Ihnen.
   - Führen Sie das Abonnieren per [RSS](https://channel9.msdn.com/Shows/Azure-Friday/feed) durch.

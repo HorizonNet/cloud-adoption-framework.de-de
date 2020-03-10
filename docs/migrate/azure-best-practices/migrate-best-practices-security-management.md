@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fd0d65910b3a62170ce1f0d50ae73af1d4c99899
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: cef5746f8ab3368150ddcc328a8d929853dfb253
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76803839"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222687"
 ---
 # <a name="best-practices-for-securing-and-managing-workloads-migrated-to-azure"></a>Best Practices für die Sicherung und Verwaltung von zu Azure migrierten Workloads
 
@@ -405,11 +405,11 @@ Site Recovery repliziert VMs von einer primären in eine sekundäre Azure-Region
 
 ## <a name="best-practice-use-managed-disks-and-availability-sets"></a>Bewährte Methode: Verwenden von verwalteten Datenträgern und Verfügbarkeitsgruppen
 
-Azure verwendet Verfügbarkeitsgruppen, um VMs logisch zusammenzufassen und in einer Gruppe von anderen Ressourcen zu isolieren. VMs in einer Verfügbarkeitsgruppe sind zum Schutz bei lokalen Ausfällen auf mehrere Fehlerdomänen mit separaten Subsystemen verteilt. VMs sind ebenfalls auf mehrere Updatedomänen verteilt, sodass nicht alle VMs in einer Gruppe gleichzeitig neu gestartet werden.
+Azure verwendet Verfügbarkeitsgruppen, um VMs logisch zusammenzufassen und in einer Gruppe von anderen Ressourcen zu isolieren. VMs in einer Verfügbarkeitsgruppe werden auf mehrere Fehlerdomänen mit separaten Subsystemen verteilt, die vor lokalen Ausfällen geschützt sind. Die VMs sind auch auf mehrere Updatedomänen verteilt und verhindern gleichzeitige Neustarts aller VMs in der Gruppe.
 
-Verwaltete Azure-Datenträger vereinfachen die Datenträgerverwaltung für Azure-IaaS-VMs durch Verwaltung der Speicherkonten, die den VM-Datenträgern zugeordnet sind.
+Verwaltete Azure-Datenträger vereinfachen die Datenträgerverwaltung für virtuelle Azure-Computer durch Verwaltung der Speicherkonten, die den VM-Datenträgern zugeordnet sind.
 
-- Wir empfehlen die Verwendung von verwalteten Datenträgern, wo immer möglich. Sie müssen nur den gewünschten Speichertyp und die erforderliche Datenträgergröße angeben, und Azure erstellt und verwaltet den Datenträger im Hintergrund für Sie.
+- Verwenden Sie nach Möglichkeit verwaltete Datenträger. Sie müssen nur den gewünschten Speichertyp und die erforderliche Datenträgergröße angeben, und Azure erstellt und verwaltet den Datenträger im Hintergrund für Sie.
 - Sie können vorhandene Datenträger in verwaltete Datenträger konvertieren.
 - Sie sollten VMs in Verfügbarkeitsgruppen erstellen, um eine hohe Resilienz und Verfügbarkeit zu erzielen. Bei geplanten oder ungeplanten Ausfällen stellen Verfügbarkeitsgruppen sicher, dass mindestens eine VM in der Gruppe verfügbar bleibt.
 

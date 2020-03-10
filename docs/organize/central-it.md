@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 17f2395a435d8a29202595caec17932b406a1303
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c5dc7212fc20914fddaa7bd8777a5fec5f49e811
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806933"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78225410"
 ---
 # <a name="central-it-capabilities"></a>Funktionen der zentralen IT
 
@@ -108,7 +108,7 @@ Nun benötigt eins der Cloudeinführungsteams eine Umgebung mit einer dedizierte
 
 **Klassifizierung**: Da das Cloudeinführungsteam sich in der Frühphase der neuen Lösung befand und keine vertraulichen Daten oder unternehmenskritischen Anforderungen vorhanden waren, wurden die Ressourcen in der Umgebung als risikoarm und nicht kritisch eingestuft. Eine effektive Klassifizierung ist ein Zeichen für den Reifegrad in der zentralen IT. Wenn alle Ressourcen und Umgebungen klassifiziert werden, können klarere Richtlinien eingerichtet werden.
 
-**Verhandlung**: Eine Klassifizierung allein ist nicht ausreichend. Gemeinsam genutzte Dienste wurden implementiert, um vertrauliche und unternehmenskritische Ressourcen konsistent betreiben zu können. Eine Änderung der Regeln würde die Governance- und Compliancerichtlinien gefährden, die für diejenigen Ressourcen eingerichtet wurde, die einen höheren Schutz benötigen. Die Unterstützung einer Cloudeinführung darf nicht auf Kosten der Stabilität, Sicherheit oder Governance erfolgen. Dies führte zu Verhandlungen mit dem Einführungsteam, um bestimmte Fragen zu beantworten. Wäre ein vom Business geleitetes DevOps-Team in der Lage, die betriebliche Verwaltung für diese Umgebung zu leisten? Würde diese Lösung direkten Zugriff auf andere interne Ressourcen erfordern? Wenn das Cloudeinführungsteam mit diesen Kompromissen einverstanden ist, kann eingehender Datenverkehr möglich sein.
+**Verhandlung**: Eine Klassifizierung allein ist nicht ausreichend. Gemeinsam genutzte Dienste wurden implementiert, um vertrauliche und unternehmenskritische Ressourcen konsistent betreiben zu können. Eine Änderung der Regeln würde die Governance- und Compliancerichtlinien gefährden, die für diejenigen Ressourcen eingerichtet wurde, die einen höheren Schutz benötigen. Die Unterstützung einer Cloudeinführung darf nicht auf Kosten der Stabilität, Sicherheit oder Governance erfolgen. Dies führte zu Verhandlungen mit dem Einführungsteam, um bestimmte Fragen zu beantworten. Kann ein unternehmensgeführtes DevOps-Team die betriebliche Verwaltung für diese Umgebung übernehmen? Würde diese Lösung direkten Zugriff auf andere interne Ressourcen erfordern? Wenn das Cloudeinführungsteam mit diesen Kompromissen einverstanden ist, kann eingehender Datenverkehr möglich sein.
 
 **Isolierung**: Da die geschäftliche Seite selbst eine fortlaufende Betriebsverwaltung bereitstellen kann und die Lösung nicht von direktem Datenverkehr zu anderen internen Ressourcen abhängig ist, kann die Lösung in einem neuen, getrennten Abonnement eingerichtet werden. Dieses Abonnement wird auch einem separaten Knoten der neuen Verwaltungsgruppenhierarchie hinzugefügt.
 

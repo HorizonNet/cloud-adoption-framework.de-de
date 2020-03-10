@@ -1,18 +1,18 @@
 ---
-title: 'Cloudinnovation: Vorhersagen und Beeinflussen'
-description: 'Einführung in die Cloudinnovation: Vorhersagen und Beeinflussen'
+title: Vorhersagen und Beeinflussen des Kundenverhaltens
+description: Verwenden Sie die Vorhersagemodellierung, um Vorhersagefunktionen auf der Grundlage von Daten, Erkenntnissen, Mustern, Vorhersagen und Interaktionen zu entwickeln.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f55325b46ee9b2e45dd539c08f426d49357f5ba3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e299025afcbf1066411f8d4792fe739663d46c74
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808395"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171105"
 ---
 # <a name="predict-and-influence"></a>Vorhersagen und Beeinflussen
 

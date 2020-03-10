@@ -1,6 +1,6 @@
 ---
-title: 'Governanceleitfaden für Standardunternehmen: Beschreibung der bewährten Methoden'
-description: In diesem Artikel werden die bewährten Methoden für Governance in Standardunternehmen erläutert.
+title: 'Governance für Standardunternehmen: Beschreibung der bewährten Methoden'
+description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um ein Minimum Viable Product (MVP) für die Governance einzurichten, das bewährte Methoden für ein Standardunternehmen widerspiegelt.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1705310a335e3fd5aab622b401a6067e8af6d133
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f82dc3d12aa325c3239060a904cc5d3111a056d4
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806797"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709310"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>Governanceleitfaden für Standardunternehmen: Beschreibung der bewährten Methoden
 

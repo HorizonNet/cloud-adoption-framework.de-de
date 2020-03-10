@@ -1,6 +1,6 @@
 ---
 title: Governance-Entwurf in Azure für mehrere Teams
-description: Enthält eine Anleitung zum Konfigurieren von Azure-Governancekontrollen für mehrere Teams, mehrere Workloads und mehrere Umgebungen.
+description: Erhalten Sie eine Anleitung zum Konfigurieren von Azure-Governancekontrollen für mehrere Teams, mehrere Workloads und mehrere Umgebungen.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7bfceb1a7fe68869dabec7eda813cd3fdc121b49
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 62c47f8d4b3c386129c6a6a9eeb966393573ea16
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804298"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223889"
 ---
+<!-- cSpell:ignore netops -->
+
 # <a name="governance-design-for-multiple-teams"></a>Governance-Entwurf für mehrere Teams
 
 Anhand dieser Anleitung können Sie sich mit dem Prozess für das Entwerfen eines Modells zur Ressourcenkontrolle (Governance) in Azure vertraut machen, um mehrere Teams, Workloads und Umgebungen zu unterstützen. Zuerst lernen Sie eine Reihe von hypothetischen Governance-Anforderungen kennen und gehen dann mehrere Beispielimplementierungen durch, die diese Anforderungen erfüllen.
@@ -185,7 +187,7 @@ Wir beginnen, indem wir die erste Option auswerten. Sie verwenden das Berechtigu
 10. Der zweite **Workloadbesitzer** erstellt ein Subnetz im virtuellen Netzwerk **prod-vnet** und fügt dann zwei virtuelle Computer hinzu. Der zweite **Workloadbesitzer** wendet die Tags *environment* und *managedBy* auf die einzelnen Ressourcen an.
     ![Erstellen von Subnetzen](../../_images/govern/design/governance-3-8.png)
 
-Mit diesem exemplarischen Ressourcenverwaltungsmodell können wir Ressourcen in den drei erforderlichen Umgebungen verwalten. Die Ressourcen der freigegebenen Infrastruktur sind geschützt, da im Abonnement nur ein Benutzer vorhanden ist, der zum Zugreifen auf diese Ressourcen berechtigt ist. Jeder der Workloadbesitzer kann die Ressourcen der freigegebenen Infrastruktur nutzen, ohne über Berechtigungen für die eigentlichen freigegebenen Ressourcen zu verfügen. Dieses Verwaltungsmodell erfüllt jedoch nicht die Anforderung der Workloadisolation: Jeder der beiden **Workloadbesitzer** kann auf die Ressourcen der Workload des jeweils anderen zugreifen.
+Mit diesem exemplarischen Ressourcenverwaltungsmodell können wir Ressourcen in den drei erforderlichen Umgebungen verwalten. Die Ressourcen der freigegebenen Infrastruktur sind geschützt, da im Abonnement nur ein Benutzer vorhanden ist, der zum Zugriff auf diese Ressourcen berechtigt ist. Jeder der Workloadbesitzer kann die Ressourcen der freigegebenen Infrastruktur nutzen, ohne über Berechtigungen für die freigegebenen Ressourcen selbst zu verfügen. Dieses Verwaltungsmodell erfüllt jedoch nicht die Anforderung der Workloadisolation, da jeder der beiden **Workloadbesitzer** auf die Ressourcen der Workload des jeweils anderen zugreifen kann.
 
 Für dieses Modell muss noch ein weiterer wichtiger Aspekt berücksichtigt werden, der ggf. nicht auf den ersten Blick erkennbar ist. In dem Beispiel war es **App1-Workloadbesitzer**, der die Netzwerkpeeringverbindung mit **hub-vnet** angefordert hat, um Konnektivität für die lokale Umgebung bereitzustellen. Der Benutzer für den **Netzwerkbetrieb** hat diese Anforderung basierend auf den Ressourcen ausgewertet, die mit dieser Workload bereitgestellt wurden. Als der **Abonnementbesitzer** den **App2-Workloadbesitzer** mit der Rolle **Mitwirkender** hinzugefügt hat, hat dieser Benutzer über Verwaltungszugriffsrechte für alle Ressourcen in der Ressourcengruppe **prod-rg** verfügt.
 

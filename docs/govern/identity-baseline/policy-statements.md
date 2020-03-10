@@ -1,6 +1,6 @@
 ---
 title: Beispiele für Richtlinienanweisungen der Identitätsbaseline
-description: Beispiele für Richtlinienanweisungen der Identitätsbaseline
+description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um exemplarische Richtlinienanweisungen für die Identitätsbaseline zu erhalten, die Sie beim Entwerfen von Richtlinienanweisungen unterstützen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c3804f24db454e4c198494e0024632efdc7d0d53
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d4c69bafe9bf0dc0bfdb060455c82d3b3a638a47
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805046"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223838"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>Beispiele für Richtlinienanweisungen der Identitätsbaseline
 
@@ -46,7 +46,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine identit
 
 ## <a name="lack-of-shared-management-accounts-between-on-premises-and-the-cloud"></a>Fehlende freigegebene Verwaltungskonten zwischen dem lokalen System und der Cloud
 
-**Technisches Risiko:** Mitarbeiter in der IT-Verwaltung oder Administration mit Konten in Ihrer lokalen Active Directory-Instanz haben möglicherweise keinen ausreichenden Zugriff auf Cloudressourcen und können so unter Umständen Betriebs- oder Sicherheitsprobleme nicht effizient beheben.
+**Technisches Risiko:** Mitarbeiter in der IT-Verwaltung oder Administration mit Konten in Ihrer lokalen Active Directory-Instanz verfügen möglicherweise nicht über ausreichende Zugriffsberechtigungen für Cloudressourcen und können Betriebs- oder Sicherheitsprobleme unter Umständen nicht effizient beheben.
 
 **Richtlinienanweisung:** Alle Gruppen in der lokalen Active Directory-Infrastruktur mit erhöhten Rechten sollten einer genehmigten RBAC-Rolle zugeordnet werden.
 

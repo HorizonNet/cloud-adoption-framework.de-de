@@ -1,18 +1,18 @@
 ---
-title: 'Mainframemigration: Migration von Mainframeanwendungen'
-description: Migrieren von Anwendungen aus Mainframeumgebungen zu Azure, einer bewährten, hoch verfügbaren und skalierbaren Infrastruktur für Systeme, die derzeit auf Mainframes ausgeführt werden.
+title: Migrationsstrategien für Mainframe-Apps
+description: Hier finden Sie Informationen zu Strategien wie Zuweisung eines neuen Hosts, Außerbetriebnahme, Neuerstellung oder Austausch von Apps, um sie aus Mainframeumgebungen zu Azure zu migrieren.
 author: njray
 ms.author: v-nanra
 ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a662edd4ae7c6a854014b37cac2ccb0fab4c474e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 52dbbd594a95f86c1bdb49ac76a7b178d8a71b13
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808820"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171411"
 ---
 # <a name="mainframe-application-migration"></a>Migration von Mainframeanwendungen
 

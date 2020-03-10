@@ -1,6 +1,6 @@
 ---
-title: 'Azure-Innovationsleitfaden: Interagieren über Geräte'
-description: 'Azure-Innovationsleitfaden: Interagieren über Geräte'
+title: 'Azure-Innovation: Interagieren über Geräte'
+description: Hier erfahren Sie, wie Azure mithilfe vernetzter und lernfähiger Edgegeräte ein Framework für die Erstellung immersiver und effektiver Geschäftslösungen bereitstellt.
 author: umarmohamedusman
 ms.author: umarm
 ms.date: 10/10/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 4744a1a019a8454f9a454c5eb75192a6d97b6998
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5063d22cee1a2711bc3dd4c2d052df2870b61c5a
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808310"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171020"
 ---
 ::: zone target="docs"
 
@@ -44,7 +44,7 @@ Azure-Kunden verwenden eine ständig wachsende Anzahl von vernetzten Systemen un
 
 <!-- markdownlint-disable MD025 -->
 
-## <a name="global-scale-iot-servicetabiothub"></a>[IoT-Dienst auf globaler Ebene](#tab/IoTHub)
+## <a name="global-scale-iot-service"></a>[IoT-Dienst auf globaler Ebene](#tab/IoTHub)
 
 <!-- markdownlint-enable MD025 -->
 
@@ -101,7 +101,7 @@ Zum Erstellen von IoT Hub Device Provisioning-Diensten gehen Sie folgendermaßen
 
 <!-- markdownlint-disable MD025 -->
 
-## <a name="azure-digital-twinstabdigitaltwins"></a>[Azure Digital Twins](#tab/DigitalTwins)
+## <a name="azure-digital-twins"></a>[Azure Digital Twins](#tab/DigitalTwins)
 
 Erstellen Sie wiederverwendbare, hochgradig skalierbare und raumbezogene Umgebungen, die Streamingdaten aus der physischen und der digitalen Welt miteinander verknüpfen. Verbessern Sie Ihre Kundenbindung mit umfassenden Modellen physischer Umgebungen. Generieren Sie Raumintelligenzgraphen, um die Beziehungen und Interaktionen zwischen Personen, Bereichen und Geräten zu modellieren. Fragen Sie Daten aus einem physischen Raum ab, statt von verschiedenen Sensoren.
 
@@ -136,7 +136,7 @@ Zum Erstellen von Azure Digital Twins gehen Sie folgendermaßen vor:
 
 <!-- markdownlint-disable MD025 -->
 
-## <a name="location-intelligencetabazuremaps"></a>[Location Intelligence](#tab/AzureMaps)
+## <a name="location-intelligence"></a>[Location Intelligence](#tab/AzureMaps)
 
 Zusätzlich zu herkömmlichen Standortfunktionen wie „In der Nähe“, „Verkehr“ und „Route“ ermöglicht es der Azure Maps-Dienst Unternehmen, Lösungen mit Location Intelligence in Echtzeit zu erstellen, die von den renommierten Partnern für Mobilitätstechnologie **TomTom** und **Moovit** gestellt wird. Integrieren Sie mit Geodiensten mühelos komplexe Standort- und Mobilitätsfunktionen in Ihre Anwendungen.
 
@@ -169,7 +169,7 @@ Zum Verwenden von Location Intelligence gehen Sie folgendermaßen vor:
 
 ::: zone-end
 
-## <a name="spatial-experiencestabspatial"></a>[Räumliche Erfahrungen](#tab/spatial)
+## <a name="spatial-experiences"></a>[Räumliche Erfahrungen](#tab/spatial)
 
 Mit Azure Spatial Anchors können Entwickler Mixed Reality-Plattformen verwenden, um Räume wahrzunehmen, präzise Points of Interest festzulegen und diese Points of Interest von unterstützten Geräten abzurufen.
 
@@ -204,7 +204,7 @@ Zum Verwenden räumlicher Erfahrungen gehen Sie folgendermaßen vor:
 
 ::: zone-end
 
-## <a name="azure-remote-renderingtabremoterender"></a>[Azure Remote Rendering](#tab/RemoteRender)
+## <a name="azure-remote-rendering"></a>[Azure Remote Rendering](#tab/RemoteRender)
 
 Rendern Sie hochwertige interaktive 3D-Inhalte in der Cloud, und streamen Sie sie in Echtzeit auf Ihre Geräte. Renderingworkloads werden häufig für Spezialeffekte (VFX) in der Medien- und Unterhaltungsbranche eingesetzt. Rendering wird auch in vielen anderen Branchen verwendet, z.B. in der Werbebranche, im Einzelhandel, in der Öl- und Gasindustrie sowie in der Fertigungsindustrie.
 

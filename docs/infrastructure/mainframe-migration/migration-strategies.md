@@ -1,19 +1,21 @@
 ---
-title: 'Mainframemigration: Wechseln von Mainframes zu Azure'
-description: Migrieren von Anwendungen aus Mainframeumgebungen zu Azure für Systeme, die derzeit auf Mainframes ausgeführt werden.
+title: Migrieren von Apps von Mainframes zu Azure
+description: Hier finden Sie eine technische Anleitung für den Umstieg von einer Mainframeplattform auf Azure mit Hyperscalecomputing und -speicher in einer auf Hochverfügbarkeit ausgelegten Umgebung.
 author: njray
 ms.author: v-nanra
 ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f68dbd309264b0cef189346096ce3dc797ae7d08
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f869716c907aa6c03adfb81a4f698dab42b9e387
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808769"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223640"
 ---
+<!-- cspell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
+
 # <a name="make-the-switch-from-mainframes-to-azure"></a>Wechseln von Mainframes zu Azure
 
 Azure ist eine alternative Plattform für die Ausführung herkömmlicher Mainframeanwendungen und bietet Hyperscalecomputing und -speicher in einer auf Hochverfügbarkeit ausgelegten Umgebung. Sie profitieren von den Optionen und der Agilität einer modernen, cloudbasierten Plattform, aber ohne die Kosten einer Mainframeumgebung.
@@ -59,7 +61,7 @@ Darüber hinaus bietet eine solche Funktion eng gekoppelte Computeressourcen, di
 
 Kunden mit Mainframesystemen unterhalten in der Regel Standorte für eine Notfallwiederherstellung oder verlassen sich auf einen unabhängigen Mainframeanbieter, um Notfallsituationen schnell zu beseitigen. Die Synchronisierung mit einem Standort für die Notfallwiederherstellung erfolgt häufig über Offlinekopien der Daten. Bei beiden Optionen fallen hohe Kosten an.
 
-Durch Mainframekopplung lässt sich auch eine automatische Georedundanz einrichten – diese ist allerdings ebenfalls teuer und in der Regel für unternehmenskritische Systeme reserviert. Im Gegensatz dazu bietet Azure kostengünstige Optionen, die sich leicht implementieren lassen, für [Sicherung](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup), [Wiederherstellung](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) und [Redundanz](https://docs.microsoft.com/azure/storage/common/storage-redundancy) auf lokaler oder regionale Ebene oder über Georedundanz.
+Automatisierte Georedundanz ist auch per Mainframekopplung verfügbar. Dieser Ansatz ist jedoch kostspielig und wird in der Regel nur für unternehmenskritische Systeme verwendet. Im Gegensatz dazu bietet Azure kostengünstige Optionen, die sich leicht implementieren lassen, für [Sicherung](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup), [Wiederherstellung](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) und [Redundanz](https://docs.microsoft.com/azure/storage/common/storage-redundancy) auf lokaler oder regionale Ebene oder über Georedundanz.
 
 ## <a name="storage"></a>Storage
 

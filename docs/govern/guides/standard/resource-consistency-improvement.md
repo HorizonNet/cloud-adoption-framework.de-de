@@ -1,6 +1,6 @@
 ---
 title: 'Governance für Standardunternehmen: Verbessern der Ressourcenkonsistenz'
-description: Optimierung der Governancebaseline und Behandlung von Risiken bei der Ressourcengovernance durch Hinzufügen von Kontrollen für die Wiederherstellung, Dimensionierung und Überwachung im Framework für die Einführung der Microsoft Cloud (Microsoft Cloud Adoption Framework)
+description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um sich über die Optimierung der Governancebaseline zu informieren und zu erfahren, wie Sie Risiken mindern, indem Sie Steuerelemente für die Wiederherstellung, Dimensionierung und Überwachung hinzufügen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 366f5034a89529e65325a8afd2cf0275dcec02e4
-ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
+ms.openlocfilehash: 57358a9933c6f18d72678c3c4ba82bef90e713a0
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567672"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170816"
 ---
 # <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>Governanceleitfaden für Standardunternehmen: Verbessern der Ressourcenkonsistenz
 

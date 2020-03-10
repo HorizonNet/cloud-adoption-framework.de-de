@@ -1,6 +1,6 @@
 ---
-title: 'Azure-Innovationsleitfaden: Vorbereiten für Kundenfeedback'
-description: Vorbereiten für Kundenfeedback
+title: 'Azure-Innovation: Vorbereiten für Feedback'
+description: Hier erfahren Sie, wie Sie mithilfe von Azure-Tools quantitatives und qualitatives Feedback zu in GitHub gehosteten Web-Apps und APIs erfassen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c78eae75bca30cac541a997fa9d4901b03b277c0
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 58d1e420f9f1b76ea37a5ba7edc5c71aba9d0049
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808361"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171088"
 ---
 ::: zone target="docs"
 
@@ -39,7 +39,7 @@ Bevor Sie Feedbackschleifen integrieren, benötigen Sie ein freigegebenes Reposi
 
 Jedes der folgenden Tools in Azure kann in Projekte integriert werden, die in GitHub gehostet werden (oder ist mit ihnen kompatibel):
 
-## <a name="quantitative-feedback-for-web-appstabquantitative-apps"></a>[Quantitatives Feedback für Web-Apps](#tab/Quantitative-Apps)
+## <a name="quantitative-feedback-for-web-apps"></a>[Quantitatives Feedback für Web-Apps](#tab/Quantitative-Apps)
 
 Application Insights ist ein Überwachungstool, das quantitatives Feedback zur Nutzung Ihrer Anwendung nahezu in Echtzeit bereitstellt. Anhand dieses Feedbacks können Sie Ihre aktuelle Hypothese testen und überprüfen, um das nächste Feature oder die nächste User Story in Ihrem Backlog zu gestalten.
 
@@ -74,7 +74,7 @@ Um die Daten zu Ihren Apps anzuzeigen, navigieren Sie zum [Azure-Portal](https:/
 - [Erste Schritte mit Azure Monitor Application Insights](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-users)
 - [Erstellen eines Telemetriedashboards](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-app-dashboards)
 
-## <a name="quantitative-feedback-for-apistabquantitative-apis"></a>[Quantitatives Feedback für APIs](#tab/Quantitative-APIs)
+## <a name="quantitative-feedback-for-apis"></a>[Quantitatives Feedback für APIs](#tab/Quantitative-APIs)
 
 Die vernetzte Wirtschaft verändert die Art und Weise, in der Unternehmen Innovationen entwickeln. Märkte und Branchen werden schneller als je zuvor gestört. Störungen treten in vielen Formen auf, und Unternehmen müssen sich mit dem _Dilemma des Innovators_ auseinandersetzen: Wie kann das Tempo des Wandels festgelegt werden, ohne die laufende Geschäftsaktivität zu beeinträchtigen.
 
@@ -116,7 +116,7 @@ Um den API Management-Dienst zu öffnen, navigieren Sie zum [Azure-Portal](https
 
 - [Verwenden von Azure Monitor zum Abrufen von Feedback zu APIs](https://docs.microsoft.com/azure/api-management/api-management-howto-use-azure-monitor)
 
-## <a name="qualitative-feedbacktabqualitative"></a>[Qualitatives Feedback](#tab/Qualitative)
+## <a name="qualitative-feedback"></a>[Qualitatives Feedback](#tab/Qualitative)
 
 Feedback wird in Form von User Storys im Backlog (oder Board) aufgezeichnet. Dort werden auch die zugehörigen Arbeiten als ausführbare Aufgaben nachverfolgt. Azure Boards können direkt in GitHub integriert werden, was ein nahtloses Zusammenwirken von Feedback und Arbeitsverwaltung sowie beliebigem Quellcode ermöglicht.
 
@@ -154,7 +154,7 @@ Diese Artikel helfen Ihnen, Feedback zu zentralisieren und zu verwalten, indem S
 - [Erste Schritte mit Azure Boards](https://docs.microsoft.com/azure/devops/boards/get-started/?view=azure-devops)
 - [Azure Boards und GitHub](https://docs.microsoft.com/azure/devops/boards/github?view=azure-devops)
 
-## <a name="close-the-loop-with-pipelinestabpipelines"></a>[Schließen der Schleife mit Pipelines](#tab/pipelines)
+## <a name="close-the-loop-with-pipelines"></a>[Schließen der Schleife mit Pipelines](#tab/pipelines)
 
 Das Reagieren auf Feedback bedeutet möglicherweise nicht immer, dass die vom Kunden gewünschte Funktion hinzugefügt wird. Aber jeder Datenpunkt sollte zu einer gewissen Änderung führen. Diese Änderung kann auch in einer anderen Denkweise in Bezug auf bestimmte Dinge bestehen. Es kann sich ebenso um eine ganz andere technische Änderung handeln, als angefordert wurde. In jedem Fall bieten Ihnen Bereitstellungspipelines und Tools wie Azure Pipelines die Möglichkeit, diese Änderungen schnell zu veröffentlichen, sodass sie regelmäßig mit dem Kunden geteilt werden können.
 

@@ -1,6 +1,6 @@
 ---
 title: Abstimmen von Kostenmodellen mit digitalen Ressourcen
-description: Abstimmen von Kostenmodellen mit dem digitalen Umfeld zur Prognose von Cloudkosten.
+description: Hier finden Sie Informationen zu Azure-Preistools, die eine transparente und präzise Vorhersage und Verwaltung von Cloudausgaben ermöglichen, um bestmöglich von Azure und anderen Clouds profitieren zu können.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 30eee82d3afab32890ab00ad82b38106576f33ee
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 06e1bafa4a4a4c1ed88bb29d6787fec95fbd956b
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804706"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170119"
 ---
 # <a name="align-cost-models-with-the-digital-estate-to-forecast-cloud-costs"></a>Abstimmen von Kostenmodellen mit digitalen Ressourcen zur Prognose von Cloudkosten
 

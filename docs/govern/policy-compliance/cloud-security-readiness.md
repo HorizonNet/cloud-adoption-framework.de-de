@@ -1,18 +1,18 @@
 ---
-title: Leitfaden für die CISO-Cloudbereitschaft
-description: Wie kann sich ein CISO auf die Cloud vorbereiten?
+title: Leitfaden für die Bereitschaft der CISO-Cloudsicherheit
+description: Hier erfahren Sie, wie Sie das Chief Information Security Office (CISO) für die Cloudtransformation und die inkrementelle Governance vorbereiten.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: ea86e0b35dd61cb65a5396a6c9f2e604abe6d9a5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ec888ba0c21187e71e825ff24aaadf068dc2a191
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804995"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709412"
 ---
 # <a name="ciso-cloud-readiness-guide"></a>Leitfaden für die CISO-Cloudbereitschaft
 

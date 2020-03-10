@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a900ca61f957f941728829208cf72bc8f2aba601
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 36d87caae344414e7bb311fb032d28f58bc5ea6c
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800320"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222157"
 ---
 # <a name="plan-for-cloud-adoption"></a>Planen der Cloudeinführung
 
@@ -22,7 +22,7 @@ Für eine erfolgreiche Cloudeinführung ist ein Plan eine wesentliche Anforderun
 
 Cloudeinführungspläne beginnen mit einer klar definierten Strategie. Die Strategie sollte zumindest die Motivationen, Geschäftsergebnisse und geschäftlichen Begründungen für die Cloudeinführung beschreiben. Diese positiven Ergebnisse werden dann durch den Aufwand ausgeglichen, der erforderlich ist, um sie zu realisieren.
 
-Die Bemühung beginnt mit der digitalen Ressource (vorgeschlagen oder vorhanden), die die Strategie in konkretere Workloads und Ressourcen übersetzt. Anschließend können Sie diese konkreten Elemente technischen Aufgaben zuordnen. Von hier aus kann die technische Arbeit von Fachleuten in einer geeigneten Organisationsstruktur ausgeführt werden. Der Cloudeinführungsplan kombiniert alle diese Themen in einem Plan, der durch agile Methoden des Projektmanagements prognostiziert, budgetiert, implementiert und verwaltet werden kann. Diese Artikelreihe hilft Ihnen, den Plan zu erstellen und einige Vorlagen bereitzustellen, um die Arbeit einfacher zu gestalten.
+Die Bemühung beginnt mit der digitalen Ressource (vorgeschlagen oder vorhanden), die die Strategie in konkretere Workloads und Ressourcen übersetzt. Anschließend können Sie diese konkreten Elemente technischen Aufgaben zuordnen. Von hier aus kann die technische Arbeit von Fachleuten in einer geeigneten Organisationsstruktur ausgeführt werden. Der Cloudeinführungsplan fasst diese Themen in einem Plan zusammen, der mittels agiler Projektmanagementmethoden prognostiziert, budgetiert, implementiert und verwaltet werden kann. Diese Artikelreihe hilft Ihnen, den Plan zu erstellen und einige Vorlagen bereitzustellen, um die Arbeit einfacher zu gestalten.
 
 ## <a name="transition-from-sequential-to-iterative-planning"></a>Übergang von der sequenziellen zur iterativen Planung
 

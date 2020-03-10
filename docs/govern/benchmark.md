@@ -1,6 +1,6 @@
 ---
-title: Bewerten der Transformationsjourney
-description: Bewerten der Transformationsjourney
+title: Bewerten Ihrer cloudbezogenen Governance Journey
+description: Verwenden Sie dieses Governance-Benchmarktool, um einen personalisierten Bericht und maßgeschneiderte Ressourcen für Ihre Organisation zu erhalten und mit der Cloudgovernance zu beginnen.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 08/27/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: a25e7c9149c14d25f86f7095db8404b85cc95b48
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d6eb865cb0ab44a76278afb7751684b53a40e0e7
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806525"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708902"
 ---
 # <a name="assess-your-transformation-journey"></a>Bewerten der Transformationsjourney
 

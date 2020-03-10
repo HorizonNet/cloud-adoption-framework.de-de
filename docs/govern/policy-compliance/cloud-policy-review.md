@@ -1,6 +1,6 @@
 ---
 title: Durchführen einer Überprüfung von Cloudrichtlinien
-description: In diesem Artikel erfahren Sie, wie Sie eine Überprüfung von Cloudrichtlinien durchführen.
+description: Hier erfahren Sie, wie Sie vorhandene IT-Richtlinien von Unternehmen modernisieren, um ein gleichwertiges Risikomanagement für cloudbasierte Ressourcen bereitzustellen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 48e4e759435178e346e08233afeca95ab065711e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e4235830eee8e57581214f3eabb46c32ebcf975b
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76805063"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709123"
 ---
 <!-- markdownlint-disable MD026 -->
 

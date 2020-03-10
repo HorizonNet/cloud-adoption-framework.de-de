@@ -9,18 +9,20 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 1af3ed5ea3b9291263a5ad8da43c65d51570651e
-ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
+ms.openlocfilehash: ec67108e90fb367535298ba7fab3b8ac32705255
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76994100"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222485"
 ---
+<!-- markdownlint-disable MD024 MD025 DOCSMD001 -->
+
 # <a name="secure-and-manage"></a>Sichern und Verwalten
 
 Nach der Migration Ihrer Umgebung zu Azure ist es wichtig, sich Gedanken über die Sicherheit und die Methoden zur Verwaltung der Umgebung zu machen. Azure bietet viele Features und Funktionen, um diese Anforderungen in Ihrer Lösung zu erfüllen.
 
-# <a name="azure-monitortabmonitor"></a>[Azure Monitor](#tab/monitor)
+# <a name="azure-monitor"></a>[Azure Monitor](#tab/monitor)
 
 Azure Monitor maximiert die Verfügbarkeit und Leistung Ihrer Anwendungen durch die Bereitstellung einer umfassenden Lösung für das Sammeln, Analysieren und Reagieren auf Telemetriedaten aus Ihren cloudbasierten und lokalen Umgebungen. Diese Lösung hilft Ihnen, die Leistung Ihrer Anwendungen zu verstehen, und erkennt proaktiv Probleme, die sich auf sie auswirken, und Ressourcen, von denen sie abhängen.
 
@@ -44,7 +46,7 @@ Azure Monitor maximiert die Verfügbarkeit und Leistung Ihrer Anwendungen durch 
 
 ::: zone-end
 
-# <a name="azure-service-healthtabservicehealth"></a>[Azure Service Health](#tab/servicehealth)
+# <a name="azure-service-health"></a>[Azure Service Health](#tab/servicehealth)
 
 Azure Service Health bietet personalisierte Anleitungen und Unterstützung, wenn Sie von Problemen bei den Azure-Diensten betroffen sind. Dieser Dienst kann Sie benachrichtigen, die Auswirkungen von Problemen verdeutlichen und Sie über die Lösung eines Problem auf dem Laufenden halten. Er kann Sie auch bei der Vorbereitung auf geplante Wartungsmaßnahmen und Änderungen unterstützen, die sich u.U. auf die Verfügbarkeit Ihrer Ressourcen auswirken.
 
@@ -75,7 +77,7 @@ Weitere Informationen finden Sie in der [Azure Service Health-Dokumentation](htt
 
 ::: zone-end
 
-# <a name="azure-advisortabadvisor"></a>[Azure Advisor](#tab/advisor)
+# <a name="azure-advisor"></a>[Azure Advisor](#tab/advisor)
 
 Bei Azure Advisor handelt es sich um einen personalisierten Cloudberater, der Sie mit bewährten Methoden zum Optimieren von Azure-Bereitstellungen unterstützt. Er analysiert Ihre Ressourcenkonfiguration und Nutzungstelemetrie. Anschließend schlägt er Lösungen vor, um die Leistung, Sicherheit und Hochverfügbarkeit Ihrer Ressourcen zu verbessern, und sucht gleichzeitig nach Möglichkeiten, Ihre Azure-Gesamtausgaben zu reduzieren.
 
@@ -98,7 +100,7 @@ Bei Azure Advisor handelt es sich um einen personalisierten Cloudberater, der Si
 
 ::: zone-end
 
-# <a name="azure-security-centertabsecurity"></a>[Azure Security Center](#tab/security)
+# <a name="azure-security-center"></a>[Azure Security Center](#tab/security)
 
 Azure Security Center ist ein vereinheitlichtes Sicherheitsverwaltungssystem für Infrastrukturen, mit dem der Sicherheitsstatus Ihrer Rechenzentren gestärkt wird und ein erweiterter Schutz vor Bedrohungen für Ihre Hybridworkloads in der Cloud (in Azure oder anderswo) und in der lokalen Umgebung bereitgestellt wird.
 
@@ -121,13 +123,13 @@ Azure Security Center ist ein vereinheitlichtes Sicherheitsverwaltungssystem fü
 
 ::: zone-end
 
-# <a name="azure-backuptabbackup"></a>[Azure Backup](#tab/backup)
+# <a name="azure-backup"></a>[Azure Backup](#tab/backup)
 
 Azure Backup ist der Azure-basierte Dienst, den Sie zum Sichern (bzw. Schützen) und Wiederherstellen Ihrer Daten in der Microsoft Cloud verwenden können. Azure Backup ersetzt Ihre vorhandene lokale bzw. standortexterne Lösung durch eine zuverlässige, sichere und wirtschaftliche Cloudlösung.
 
 ## <a name="enable-backup-for-an-azure-vm"></a>Aktivieren der Sicherung für eine Azure-VM
 
-1. Wählen Sie im Azure-Portal **Virtuelle Computer** und dann die VM aus, die Sie replizieren möchten.
+1. Wählen Sie im Azure-Portal die Option **Virtuelle Computer** und anschließend den virtuellen Computer aus, den Sie replizieren möchten.
 1. Wählen Sie unter **Vorgänge** die Option **Sicherung** aus.
 1. Erstellen Sie einen Recovery Services-Tresor, oder wählen Sie einen vorhandenen Tresor aus.
 1. Wählen Sie **Neue Richtlinie erstellen (oder bearbeiten)** aus.
@@ -147,7 +149,7 @@ Azure Backup ist der Azure-basierte Dienst, den Sie zum Sichern (bzw. Schützen)
 
 ::: zone-end
 
-# <a name="azure-site-recoverytabsiterecovery"></a>[Azure Site Recovery](#tab/siterecovery)
+# <a name="azure-site-recovery"></a>[Azure Site Recovery](#tab/siterecovery)
 
 Weiter oben in diesem Leitfaden wurde beschrieben, wie Azure Site Recovery als Teil der Migrationsausführung verwendet werden kann. Azure Site Recovery stellt jedoch auch nach Abschluss der Migration eine wichtige Komponente in Ihrer Notfallwiederherstellungsstrategie dar.
 
@@ -164,7 +166,7 @@ Die folgenden Schritte beschreiben das Verfahren zur Verwendung des Site Recover
 
 ## <a name="enable-replication-for-the-azure-vm"></a>Aktivieren der Replikation für die Azure-VM
 
-1. Wählen Sie im Azure-Portal **Virtuelle Computer** und dann die VM aus, die Sie replizieren möchten.
+1. Wählen Sie im Azure-Portal die Option **Virtuelle Computer** und anschließend den virtuellen Computer aus, den Sie replizieren möchten.
 1. Wählen Sie unter **Vorgänge** die Option **Notfallwiederherstellung** aus.
 1. Wählen Sie unter **Configure disaster recovery** (Notfallwiederherstellung konfigurieren) > **Zielregion** die Zielregion aus, in die Sie replizieren möchten.
 1. Akzeptieren Sie für diesen Schnellstart die anderen Standardeinstellungen.

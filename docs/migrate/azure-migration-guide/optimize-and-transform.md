@@ -1,28 +1,34 @@
 ---
-title: Optimieren und Transformieren
+title: Optimieren und Höherstufen
 description: Dieser Teil des Azure-Migrationsleitfadens behandelt Optimierungsbereiche, einschließlich der Überprüfung des Lösungsentwurfs, der richtigen Dimensionierung der Dienste und der Analyse der Kosten.
 author: matticusau
 ms.author: mlavery
-ms.date: 04/04/2019
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5173dc348ee0c9251b4c5e41aaa2b193da6ea890
-ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
+ms.openlocfilehash: bcd49a2168db862c3e1a0d948e4948abccbfe7c7
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76994159"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222495"
 ---
-# <a name="optimize-and-transform"></a>Optimieren und Transformieren
+<!-- cSpell:ignore Fservers Fdatabases -->
 
-Nachdem Sie Ihre Dienste zu Azure migriert haben, beinhaltet die nächste Phase die Überprüfung der Lösung auf mögliche Optimierungsbereiche. Dies kann die Überprüfung des Entwurfs der Lösung, die richtige Größenbestimmung der Dienste und die Analyse der Kosten umfassen.
+<!-- markdownlint-disable MD025 DOCSMD001 -->
+
+# <a name="test-optimize-and-promote"></a>Testen, Optimieren und Höherstufen
+
+Nachdem Sie Ihre Dienste zu Azure migriert haben, beinhaltet die nächste Phase die Überprüfung der Lösung auf mögliche Optimierungsbereiche. Dies kann die Überprüfung des Lösungsentwurfs, die richtige Größenbestimmung der Dienste und die Analyse der Kosten umfassen.
 
 In dieser Phase bietet sich auch die Möglichkeit, die Umgebung zu optimieren und mögliche Transformationen der Umgebung durchzuführen. Angenommen, Sie haben z. B. eine „Rehosting“-Migration durchgeführt. Da Ihre Dienste nun in Azure ausgeführt werden, können Sie die Konfiguration oder genutzten Dienste der Lösung überprüfen und möglicherweise einige Refactoringvorgänge durchführen, um die Funktionen der Lösung zu modernisieren und zu erweitern.
 
-# <a name="right-size-assetstaboptimize"></a>[Größenbestimmung der Ressourcen](#tab/optimize)
+Im weiteren Verlauf dieses Artikels werden die Tools zum Optimieren der migrierten Workload behandelt. Wenn die beste Leistungsverteilung und Kosteneffizienz erreicht wurde, kann eine Workload in die Produktion hochgestuft werden. Anleitungen zu den Optionen zum Höherstufen finden Sie in den Artikeln zur Prozessverbesserung zum [Optimieren und Höherstufen](../migration-considerations/optimize/index.md).
+
+# <a name="right-size-assets"></a>[Größenbestimmung der Ressourcen](#tab/optimize)
 
 Die Größe aller Azure-Dienste mit einem nutzungsbasierten Kostenmodell kann über das Azure-Portal, die Befehlszeilenschnittstelle oder PowerShell geändert werden. Der erste Schritt bei der Bestimmung der richtigen Größe eines Diensts ist die Überprüfung der zugehörigen Nutzungsmetriken. Der Azure Monitor-Dienst ermöglicht den Zugriff auf diese Metriken. Möglicherweise müssen Sie die Erfassung der Metriken für den zu analysierenden Dienst konfigurieren und eine angemessene Zeit einplanen, damit aussagekräftige Daten basierend auf Ihren Workloadmustern gesammelt werden.
 
@@ -48,8 +54,7 @@ Bei virtuellen Computern, die mit anderen Methoden erstellt oder migriert wurden
 1. Wählen Sie **Größe** und die gewünschte neue Größe in der Liste aus. Möglicherweise müssen Sie die Filter anpassen, um die gewünschte Größe zu suchen.
 1. Wählen Sie **Größe ändern** aus.
 
-Beachten Sie, dass die Änderung der Größe von virtuellen Produktionscomputern zu Dienstunterbrechungen führen kann. Versuchen Sie, die Größenanpassung der virtuellen Computer vorzunehmen, bevor diese in der Produktionsumgebung verwendet werden.
-
+Ein Ändern der Größe von virtuellen Produktionscomputern kann zu Dienstunterbrechungen führen. Versuchen Sie, die Größenanpassung der virtuellen Computer vorzunehmen, bevor diese in der Produktionsumgebung verwendet werden.
 
 ::: zone target="chromeless"
 
@@ -95,7 +100,7 @@ Partner können die Nutzung über das Partner Center überprüfen.
 
 ::: zone-end
 
-# <a name="cost-managementtabmanagecost"></a>[Cost Management](#tab/ManageCost)
+# <a name="cost-management"></a>[Cost Management](#tab/ManageCost)
 
 Es ist wichtig, eine kontinuierliche Kostenanalyse und -überprüfung durchzuführen. Dadurch können Sie die Größe von Ressourcen nach Bedarf anpassen, um Kosten und Workload auszugleichen.
 

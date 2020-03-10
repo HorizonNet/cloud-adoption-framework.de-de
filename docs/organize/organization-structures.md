@@ -8,13 +8,15 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 326ffa486c07da907ad9e532d5794545ef2dbd9f
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: 0aeaa665370c612e89a0d4ce72a2b38b2bb05e2b
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173410"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78222225"
 ---
+<!-- cSpell:ignore ccoe -->
+
 # <a name="establish-team-structures"></a>Einrichten von Teamstrukturen
 
 Jede Cloudfunktion ist während einer Cloudeinführung einer oder mehreren Personen zugewiesen und wird von diesen bereitgestellt. Diese Zuweisungen und Teamstrukturen können sich organisch entwickeln oder explizit so entworfen werden, dass sie mit einer bereits definierten Teamstruktur übereinstimmen.
@@ -60,7 +62,7 @@ In den folgenden Abschnitten wird eine vollständig besetzte, bewährte Organisa
 
 ## <a name="central-it"></a>Zentrale IT-Abteilung
 
-Je umfangreicher die Einführung wird, desto schwieriger ist es möglicherweise für das Cloudgovernanceteam, mit dem Innovationsfluss aus mehreren Cloudeinführungsteams Schritt zu halten. Dies gilt insbesondere in Umgebungen mit hohen Anforderungen an Compliance, Betrieb und Sicherheit. In dieser Phase übertragen Unternehmen häufig Cloudzuständigkeiten an das vorhandene zentrale IT-Team. Wenn dieses Team in der Lage ist, Tools, Prozesse und Personen neu zu bewerten, um eine umfangreiche Cloudeinführung besser zu unterstützen, kann es einen signifikanten Mehrwert bieten. Das Einbeziehen von Fachleuten der Bereiche Betrieb, Automatisierung, Sicherheit und Verwaltung zur Modernisierung der zentralen IT kann zu effektiven operativen Innovationen führen.
+Je umfangreicher die Einführung wird, desto schwieriger ist es möglicherweise für das Cloudgovernanceteam, mit dem Innovationsfluss aus mehreren Cloudeinführungsteams Schritt zu halten. Dies gilt insbesondere in Umgebungen mit hohen Anforderungen an Compliance, Betrieb und Sicherheit. In dieser Phase übertragen Unternehmen häufig Cloudzuständigkeiten an das vorhandene zentrale IT-Team. Wenn dieses Team Tools, Prozesse und Personen neu bewerten kann, um eine umfangreiche Cloudeinführung besser zu unterstützen, kann es einen signifikanten Mehrwert bieten. Das Einbeziehen von Fachleuten der Bereiche Betrieb, Automatisierung, Sicherheit und Verwaltung zur Modernisierung der zentralen IT kann zu effektiven operativen Innovationen führen.
 
 ![Cloudeinführung mit einem zentralen IT-Modell](../_images/ready/org-ready-central-it.png)
 

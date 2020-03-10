@@ -1,6 +1,6 @@
 ---
-title: 'Governanceleitfaden für Standardunternehmen: Anfängliche Unternehmensrichtlinie hinter der Governancestrategie'
-description: 'Governanceleitfaden für Standardunternehmen: Anfängliche Unternehmensrichtlinie hinter der Governancestrategie'
+title: 'Governance für Standardunternehmen: Anfängliche Unternehmensrichtlinie'
+description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um die anfängliche Governanceposition, Risiken in der Anfangsphase, anfängliche Richtlinienanweisungen und Prozesse zur frühzeitigen Erzwingung zu definieren.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 33c73a13fc49f6e7b70d9b2e2e0dfd01844f1fca
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 64f04fe32445f79f36fe3846f16e3296e9424130
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806168"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78170935"
 ---
 # <a name="standard-enterprise-governance-guide-initial-corporate-policy-behind-the-governance-strategy"></a>Governanceleitfaden für Standardunternehmen: Anfängliche Unternehmensrichtlinie hinter der Governancestrategie
 

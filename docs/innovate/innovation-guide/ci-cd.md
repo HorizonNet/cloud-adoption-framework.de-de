@@ -1,6 +1,6 @@
 ---
-title: 'Azure-Innovationsleitfaden: Unterstützen der Einführung'
-description: Erfahren Sie, wie Sie die Einführung mithilfe von Azure unterstützen.
+title: 'Azure-Innovation: Unterstützen der Einführung'
+description: Helfen Sie Entwicklern dabei, produktiv zu sein, fördern Sie eine sichere globale Zusammenarbeit, und beseitigen Sie Hindernisse für die Skalierung von Innovationen in Azure.
 author: absheik
 ms.author: absheik
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 907d4745e86f63eef2a59bea8120395ea33bd1d6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 748825e01646b687f49e66ccb975f866312c9310
+ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808327"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78171054"
 ---
 ::: zone target="docs"
 
@@ -44,7 +44,7 @@ Organisationen, die erfolgreich Innovationen durchführen, sehen Vision, Strateg
 
 Innovation wird erreicht, wenn Organisationen ihre Mitarbeiter dabei unterstützen, den gewünschten Wert zu schaffen. Eine Gruppe dieser Personen ist ein Katalysator für Innovation: die Entwickler. Sie spielen eine immer wichtigere Rolle bei Wertschöpfung und Wachstum in allen Branchen. Sie sind die Bauherren unserer Zeit, schreiben den weltweit verwendeten Code und stehen im Mittelpunkt von Innovation. Innovative Organisationen schaffen eine Kultur, die es Entwicklern ermöglicht, mehr zu erreichen.
 
-# <a name="developer-productivitytabdeveloperproductivity"></a>[Entwicklerproduktivität](#tab/DeveloperProductivity)
+# <a name="developer-productivity"></a>[Entwicklerproduktivität](#tab/DeveloperProductivity)
 
 ## <a name="developer-velocity"></a>Entwicklergeschwindigkeit
 
@@ -93,7 +93,7 @@ Zum Erstellen eines DevOps-Projekts gehen Sie folgendermaßen vor:
 
 ::: zone-end
 
-# <a name="innovate-collaborativelytabcollaboration"></a>[Zusammenarbeit für Innovation](#tab/Collaboration)
+# <a name="innovate-collaboratively"></a>[Zusammenarbeit für Innovation](#tab/Collaboration)
 
 ## <a name="innovate-through-collaboration"></a>Innovation durch Zusammenarbeit
 
@@ -111,7 +111,7 @@ Für Innovationen verwenden viele Entwickler Open-Source-Code. 80 bis 90 Prozent
 
 **Navigieren zur [Microsoft Teams-Dokumentation](https://docs.microsoft.com/MicrosoftTeams)**
 
-# <a name="innovation-characteristicstabcharacteristics"></a>[Innovationsmerkmale](#tab/Characteristics)
+# <a name="innovation-characteristics"></a>[Innovationsmerkmale](#tab/Characteristics)
 
 ## <a name="innovate-by-using-azure-devops"></a>Innovation mithilfe von Azure DevOps
 
@@ -127,7 +127,7 @@ Die Förderung von Innovation für Kundenerlebnisse und Branchenanwendungen hat 
 
 Azure verfügt über ein einzigartiges Angebot, das Ihnen hilft, Innovationen in Ihrer Organisation zu fördern und zu skalieren. Um zu mehr Innovationen anzuregen, können professionelle Entwickler heute Anwendungen und Bausteine erstellen, die es anderen Experten in Ihrem Unternehmen ermöglichen, Anwendungen auf einer zuverlässigen Grundlage zu erstellen. Mit Azure profitieren sie von Anfang an von der Sicherheit durch ein Team von Experten und der proaktiven Compliance, der Unternehmen, Regierungen und Startups vertrauen.
 
-# <a name="liveops-innovationtabliveops"></a>[LiveOps-Innovation](#tab/LiveOps)
+# <a name="liveops-innovation"></a>[LiveOps-Innovation](#tab/LiveOps)
 
 ## <a name="future-ready-liveops"></a>Bereit für die Zukunft: LiveOps
 

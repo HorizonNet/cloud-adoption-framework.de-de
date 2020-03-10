@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d6f812c8f32ec9481942f697151e7ed803654a1b
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a5043e3d42b843cfb714823fcb476e7bfdc0a2fd
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807409"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223014"
 ---
+<!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL contosohost contosodc contosovmsacc contosoosticket vcenter cswiz osticket NSGs systemctl -->
+
 # <a name="rehost-an-on-premises-linux-app-to-azure-vms-and-azure-database-for-mysql"></a>Zuweisen eines neuen Hosts für eine lokale Linux-App zu Azure-VMs und Azure Database for MySQL
 
 In diesem Artikel wird gezeigt, wie das fiktive Unternehmen Contoso einer LAMP-App (Linux-basiertes Apache/MySQL/PHP) auf zwei Ebenen einen neuen Host zuweist und sie mithilfe von Azure VMs und Azure Database for MySQL aus einer lokalen Umgebung zu Azure migriert.
@@ -165,7 +167,7 @@ Der Mobilitätsdienst muss auf jeder VM installiert sein, die Contoso repliziere
 
 ### <a name="prepare-to-connect-to-azure-vms-after-failover"></a>Vorbereiten der Verbindungsherstellung mit Azure-VMs nach dem Failover
 
-Nach dem Failover in Azure möchte Contoso eine Verbindung mit den VMs in Azure herstellen können. Dazu müssen die Contoso-Administratoren folgende Schritte ausführen:
+Nach dem Failover auf Azure möchte Contoso eine Verbindung mit den virtuellen Azure-Computern herstellen. Dazu müssen die Contoso-Administratoren folgende Schritte ausführen:
 
 - Für den Zugriff über das Internet muss Contoso vor der Migration SSH auf der lokalen Linux-VM aktivieren. Bei Ubuntu kann dieser Vorgang mithilfe des folgenden Befehls durchgeführt werden: **Sudo apt-get ssh install -y**.
 - Nach dem Failover sollte das Unternehmen die **Startdiagnose** überprüfen, um einen Screenshot der VM anzuzeigen.
@@ -214,7 +216,7 @@ Bevor sie den virtuellen Web-Computer zu Azure migrieren können, müssen die Co
 
 ### <a name="confirm-deployment-planning"></a>Bestätigen der Bereitstellungsplanung
 
-Damit das Unternehmen fortfahren kann, bestätigt es durch Auswahl von **Ja, ist abgeschlossen**, dass es die Bereitstellungsplanung abgeschlossen hat. Contoso migriert in diesem Szenario nur eine VM. Daher ist keine Bereitstellungsplanung erforderlich.
+Der Abschluss wird durch Auswählen von **Ja, ist abgeschlossen** bestätigt, um den Vorgang fortzusetzen. Da Contoso in diesem Szenario nur einen einzelnen virtuellen Computer migriert, ist keine Bereitstellungsplanung erforderlich.
 
 ### <a name="set-up-the-source-environment"></a>Einrichten der Quellumgebung
 
@@ -311,7 +313,7 @@ Jetzt können die Contoso-Administratoren mit der Replikation des virtuellen Com
 
      ![Mobilitätsdienst](./media/contoso-migration-rehost-linux-vm-mysql/linux-mobility.png)
 
-6. Unter **Replikationseinstellungen** > **Replikationseinstellungen konfigurieren** überprüft das Unternehmen, ob die richtige Replikationsrichtlinie angewendet wird, und wählt **Replikation aktivieren** aus. Der Mobilitätsdienst wird automatisch installiert.
+6. Unter **Replikationseinstellungen** > **Replikationseinstellungen konfigurieren** überprüft das Unternehmen, ob die richtige Replikationsrichtlinie angewendet wird, und wählt dann **Replikation aktivieren** aus. Der Mobilitätsdienst wird automatisch installiert.
 7. Der Replikationsfortschritt wird unter **Aufträge** nachverfolgt. Nachdem der Auftrag **Schutz abschließen** ausgeführt wurde, ist der Computer bereit für das Failover.
 
 **Benötigen Sie weitere Hilfe?**
@@ -442,7 +444,7 @@ Da die App jetzt ausgeführt wird, muss Contoso seine neue Infrastruktur vollst�
 Das Sicherheitsteam von Contoso überprüft die VM und die Datenbank, um mögliche Sicherheitsprobleme zu ermitteln.
 
 - Es überprüft die Netzwerksicherheitsgruppen (NSGs) für die VM zur Steuerung des Zugriffs. Mithilfe von NSGs wird sichergestellt, dass nur für die App zulässiger Datenverkehr übergeben werden kann.
-- Das Sicherheitsteam zieht darüber hinaus in Erwägung, die Daten auf den VM-Datenträgern über Datenträgerverschlüsselung und Azure Key Vault zu sichern.
+- Das Sicherheitsteam erwägt darüber hinaus, die Daten auf den VM-Datenträgern mithilfe von Datenträgerverschlüsselung und Azure Key Vault zu schützen.
 - Die Kommunikation zwischen der VM und der Datenbankinstanz ist nicht für SSL konfiguriert. Das Team muss dies tun, um sicherzustellen, dass der Datenbankverkehr nicht gehackt werden kann.
 
 Weitere Informationen finden Sie unter [Bewährte Sicherheitsmethoden für IaaS-Workloads in Azure](https://docs.microsoft.com/azure/security/fundamentals/iaas).

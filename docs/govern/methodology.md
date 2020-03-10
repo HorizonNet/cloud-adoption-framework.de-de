@@ -1,6 +1,6 @@
 ---
 title: Cloudgovernance-Methodik
-description: Entwickeln Sie ein Grundverständnis der Methodik, die der Cloudgovernance im Framework für die Cloudeinführung zugrunde liegt.
+description: Verwenden Sie einen inkrementellen, auf einem Minimum Viable Product (MVP) basierenden Governanceansatz, um Unternehmensrichtlinien zu unterstützen und eine schnelle Cloudeinführung zu ermöglichen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/04/2019
@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 402ebf52583ae5e94de52057133990656d8009b5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 828f9c85366f3e73ddb804a2622784ba0a0ccb65
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807086"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709089"
 ---
 # <a name="cloud-governance-methodology"></a>Cloudgovernance-Methodik
 

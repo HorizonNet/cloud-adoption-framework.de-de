@@ -1,6 +1,6 @@
 ---
 title: Vorlage für Sicherheitsbaseline
-description: Erläuterung des Konzepts „Sicherheitsbaseline“ in Bezug auf Cloud Governance.
+description: Verwenden Sie diese Vorlage als Ausgangspunkt für das Dokumentieren und Kommunizieren von Richtlinienanweisungen für sicherheitsbezogene Probleme in der Cloud.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8602676ceb6b3c1400254dc6f72cb2d9f99069b0
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5341abc29fffdfebca60acc3db44bb846aada0d9
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808837"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77707168"
 ---
 # <a name="security-baseline-template"></a>Vorlage für Sicherheitsbaseline
 

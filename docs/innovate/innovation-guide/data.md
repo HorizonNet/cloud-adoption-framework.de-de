@@ -1,6 +1,6 @@
 ---
-title: 'Azure-Innovationsleitfaden: Demokratisieren von Daten'
-description: Erfahren Sie, wie Sie Daten mithilfe von Azure demokratisieren.
+title: 'Azure-Innovation: Demokratisieren von Daten'
+description: Hier finden Sie Informationen zu Azure Data Catalog, Azure Data Share und anderen Tools, die die Auffindbarkeit und das Verständnis von Daten verbessern.
 author: absheik
 ms.author: absheik
 ms.date: 10/17/2019
@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 481430ca45d2d4a63f4d1777bd2c34409a2e7851
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f7f3ca7d99d4a1d553c888a8d3fd58a2616b64e8
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808293"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223454"
 ---
+<!-- cspell:ignore Fcatalogs Faccounts FEnvironments -->
+
 ::: zone target="docs"
 
 # <a name="azure-innovation-guide-democratize-data"></a>Azure-Innovationsleitfaden: Demokratisieren von Daten
@@ -32,7 +34,7 @@ Einer der ersten Schritte zum Demokratisieren von Daten ist das Verbessern ihrer
 
 Azure-Dienste, die eine Verarbeitung der Daten bieten (z.B. Azure Time Series Insights und Stream Analytics), sind weitere Funktionen, die von Kunden und Partnern erfolgreich für Ihre Innovationsanforderungen genutzt werden.
 
-# <a name="catalogtabcatalog"></a>[Katalog](#tab/Catalog)
+# <a name="catalog"></a>[Katalog](#tab/Catalog)
 
 ## <a name="azure-data-catalog"></a>Azure Data Catalog
 
@@ -69,11 +71,11 @@ Zum Erstellen eines Azure Data Catalog für Ihre Organisation gehen Sie folgende
 
 ::: zone-end
 
-# <a name="sharetabshare"></a>[Teilen](#tab/Share)
+# <a name="share"></a>[Teilen](#tab/Share)
 
 ## <a name="azure-data-share"></a>Azure Data Share
 
-Ein ausgewogenes Gleichgewicht zwischen offener Freigabe von Daten und der Kontrolle darüber, für wen und welche Daten freigegeben werden, ist ein maßgeblicher Faktor für Innovation. Bei den Bemühungen zum Demokratisieren von Daten können Organisation leicht durch den enormen Umfang, die Geschwindigkeit und den Lebenszyklus dieser Daten überfordert sein. Azure Data Share stellt sicher, dass Datenanbieter steuern können, wie ihre Daten verarbeitet werden, indem sie Nutzungsbedingungen für die Datenfreigabe angeben. Der Datenconsumer muss diese Bedingungen akzeptieren, bevor er Daten empfangen kann. Datenanbieter können die Häufigkeit angeben, mit der Datenconsumer Updates erhalten. Der Zugriff auf neue Updates kann vom Datenanbieter jederzeit widerrufen werden.
+Ein ausgewogenes Gleichgewicht zwischen offener Freigabe von Daten und der Kontrolle darüber, für wen und welche Daten freigegeben werden, ist ein maßgeblicher Faktor für Innovation. Bei den Bemühungen zum Demokratisieren von Daten können Organisation leicht durch den enormen Umfang, die Geschwindigkeit und den Lebenszyklus dieser Daten überfordert sein. Azure Data Share stellt sicher, dass Datenanbieter steuern können, wie ihre Daten verarbeitet werden, indem sie Nutzungsbedingungen für die Datenfreigabe angeben. Der Datenconsumer muss diese Bedingungen vor dem Empfang der Daten akzeptieren. Datenanbieter können die Häufigkeit angeben, mit der Datenconsumer Updates erhalten. Der Zugriff auf neue Updates kann vom Datenanbieter jederzeit widerrufen werden.
 
 > [!div class="checklist"]
 >
@@ -106,7 +108,7 @@ So erstellen Sie eine Datenfreigabe:
 
 ::: zone-end
 
-# <a name="insightstabinsights"></a>[Erkenntnisse](#tab/Insights)
+# <a name="insights"></a>[Erkenntnisse](#tab/Insights)
 
 ## <a name="azure-time-series-insights"></a>Azure Time Series Insights
 

@@ -1,6 +1,6 @@
 ---
-title: Auswerten der Unternehmensrichtlinie
-description: Werten Sie die Unternehmensrichtlinie als Teil Ihrer Cloud Governance-Strategie aus.
+title: Auswerten und Definieren der Unternehmensrichtlinie
+description: Identifizieren Sie das Geschäftsrisiko im Zusammenhang mit der Unternehmensrichtlinie, die Risikotoleranz sowie Richtlinien und Complianceprozesse im Rahmen einer Cloudgovernancestrategie.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 59c4ac9c637d0c243d58cb93866ddfa8b9986de5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 8e634d4e471995d569f21aacccdb0b535d9c0b5b
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804332"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77708919"
 ---
 # <a name="evaluate-corporate-policy"></a>Auswerten der Unternehmensrichtlinie
 

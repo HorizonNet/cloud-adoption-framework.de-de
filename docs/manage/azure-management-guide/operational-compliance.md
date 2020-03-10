@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9df0d1e36cbd926725ec5622087b57a2b8eae9ce
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 991c0f8423053b1a79f437b452b64c789c867c3e
+ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808191"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78223548"
 ---
+<!-- cSpell:ignore WSUS -->
+
 # <a name="operational-compliance-in-azure"></a>Betriebsbezogene Compliance in Azure
 
 Die _betriebsbezogene Compliance_ ist die zweite Disziplin in jeder Cloudverwaltungsbaseline.
@@ -40,7 +42,7 @@ In dieser Tabelle wird für jede Umgebung auf Unternehmensniveau der empfohlene 
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="update-managementtabupdatemanagement"></a>[Updateverwaltung](#tab/UpdateManagement)
+## <a name="update-management"></a>[Updateverwaltung](#tab/UpdateManagement)
 
 ::: zone-end
 
@@ -89,7 +91,7 @@ So wenden Sie eine Richtlinie auf eine Ressourcengruppe an:
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-policytabazurepolicy"></a>[Azure Policy](#tab/AzurePolicy)
+## <a name="azure-policy"></a>[Azure Policy](#tab/AzurePolicy)
 
 ::: zone-end
 
@@ -133,7 +135,7 @@ Weitere Informationen finden Sie unter:
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-blueprintstabazureblueprints"></a>[Azure Blueprint](#tab/AzureBlueprints)
+## <a name="azure-blueprints"></a>[Azure Blueprint](#tab/AzureBlueprints)
 
 ::: zone-end
 
@@ -188,7 +190,7 @@ So veröffentlichen Sie Blaupausenartefakte für Ihr Abonnement:
 
 1. Wechseln Sie zu **Blaupausen > Blaupausendefinitionen**.
 1. Wählen Sie die Blaupause aus, die Sie in den vorherigen Schritten erstellt haben.
-1. Sehen Sie sich die Blaupausendefinition an, und wählen Sie die Option **Blaupause veröffentlichen**.
+1. Überprüfen Sie die Blaupausendefinition, und wählen Sie anschließend **Blaupause veröffentlichen** aus.
 1. Geben Sie in das Feld **Version** eine Version wie „1.0“ ein.
 1. Geben Sie im Feld **Änderungshinweise** Ihre Hinweise ein.
 1. Wählen Sie **Veröffentlichen**.
@@ -201,7 +203,7 @@ So veröffentlichen Sie Blaupausenartefakte für Ihr Abonnement:
 
 1. Wechseln Sie zu [Blaupausen > Blaupausendefinitionen](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
 1. Wählen Sie die Blaupause aus, die Sie in den vorherigen Schritten erstellt haben.
-1. Sehen Sie sich die Blaupausendefinition an, und wählen Sie die Option **Blaupause veröffentlichen**.
+1. Überprüfen Sie die Blaupausendefinition, und wählen Sie anschließend **Blaupause veröffentlichen** aus.
 1. Geben Sie in das Feld **Version** eine Version wie „1.0“ ein.
 1. Geben Sie im Feld **Änderungshinweise** Ihre Hinweise ein.
 1. Wählen Sie **Veröffentlichen**.

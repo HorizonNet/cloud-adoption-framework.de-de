@@ -1,6 +1,6 @@
 ---
 title: Tools für die Beschleunigung der Bereitstellung in Azure
-description: Tools für die Beschleunigung der Bereitstellung in Azure
+description: Hier erfahren Sie, wie native Azure-Tools zur Weiterentwicklung von Richtlinien und Prozessen beitragen können, die die Governancedisziplin „Beschleunigung der Bereitstellung“ unterstützen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6617fe95f885836241e4b0f16bc17652f36c5a7d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ee1c81fe5bada0fa435a598db2f79dc0b23b4392
+ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806321"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77709004"
 ---
 # <a name="deployment-acceleration-tools-in-azure"></a>Tools für die Beschleunigung der Bereitstellung in Azure
 
