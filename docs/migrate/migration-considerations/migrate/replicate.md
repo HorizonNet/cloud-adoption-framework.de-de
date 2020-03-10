@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6b37cea7b912cb4d65f9b1b119787e96b2f698d6
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5eaea53e65951cb5fee3d36b2eba472e1048feb2
+ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802020"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78337817"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -24,7 +24,7 @@ Die Replikation stellt die eigentliche Basis der Migration dar. Es ist der Proze
 
 ## <a name="required-prerequisites-to-replication"></a>Erforderliche Voraussetzungen für die Replikation
 
-Vor der Replikation müssen die *neue Plattform* und die Hardware für den Empfang der Binärdateikopien vorbereitet werden. Im Artikel zu [Voraussetzungen](../prerequisites/index.md) sind die Mindestanforderungen an die Umgebung beschrieben, um eine sichere, zuverlässige und leistungsfähige Plattform für den Empfang der Binärdateireplikate zu erstellen.
+Vor der Replikation müssen die *neue Plattform* und die Hardware für den Empfang der Binärdateikopien vorbereitet werden. Im Artikel zu [Voraussetzungen](../prerequisites/index.md) sind die Mindestanforderungen an die Umgebung beschrieben, um eine sichere und Hochleistungsplattform für den Empfang der Binärdateireplikate zu erstellen.
 
 Die *Quellbinärdateien* müssen ebenfalls für die Replikation und Synchronisierung vorbereitet werden. Die Artikel zur Bewertung, Architektur und Problembehandlung befassen sich jeweils mit den Aktionen, mit denen sichergestellt wird, dass die Quellbinärdatei für die Replikation und Synchronisierung bereit ist.
 
