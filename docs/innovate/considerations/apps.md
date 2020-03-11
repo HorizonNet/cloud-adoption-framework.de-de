@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c326461435123b8093c86590baa4461f5048f4df
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: cede336255183abec06311137abfe4e023116c03
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170663"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341775"
 ---
 # <a name="engage-through-applications"></a>Einbinden durch Anwendungen
 
@@ -105,7 +105,7 @@ Je mehr in einer Lösung verwaltet werden muss, desto langsamer wird die Lösung
 
 Zur Vorbereitung auf die vielen Iterationen, die für die Bereitstellung einer innovativen Lösung erforderlich sind, ist vorausschauendes Denken wichtig. Minimieren Sie beispielsweise die Betriebsbelastungen frühzeitig im Prozess, indem Sie serverlose Optionen bevorzugen. In Azure könnten serverlose Anwendungsoptionen [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) oder [Container](https://docs.microsoft.com/azure/architecture/cloud-adoption/migrate/azure-best-practices/contoso-migration-rearchitect-container-sql) beinhalten.
 
-Parallel bietet Azure serverlose Transaktionsdatenoptionen, die ebenfalls den Mehraufwand reduzieren. Die [Liste der Datenbankprodukte](https://docs.microsoft.com/azure/#pivot=products&panel=databases) stellt Optionen zum Hosten von Daten bereit, für die keine vollständige Datenplattform erforderlich ist.
+Parallel bietet Azure serverlose Transaktionsdatenoptionen, die ebenfalls den Mehraufwand reduzieren. Die [Liste der Datenbankprodukte](/azure/) stellt Optionen zum Hosten von Daten bereit, für die keine vollständige Datenplattform erforderlich ist.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

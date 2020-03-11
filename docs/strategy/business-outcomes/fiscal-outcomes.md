@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 43cd9dd0d155849c8ed5dda277252e445507f6d8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7ee0451bd356cfc3fb4c7648f0bbf6b10ab0145f
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806848"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023837"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>Beispiele für Finanzergebnisse
 
@@ -55,6 +55,8 @@ Cloud Computing kann die Investitionskosten für Hardware und Software, das Einr
 - **Beispiel 1:** Das Datencenter eines Unternehmens verschlingt einen großen Teil des jährlichen IT-Budgets. Die IT entscheidet sich, eine Cloudmigration durchzuführen, und überführt die Ressourcen in diesem Datencenter in IaaS-Lösungen (Infrastructure-as-a-Service), wodurch die Kosten im Laufe der nächsten drei Jahren gesenkt werden.
 - **Beispiel 2:** Eine Holdinggesellschaft hat vor Kurzem ein neues Unternehmen erworben. In den Übernahmebedingungen ist festgelegt, dass die neue Entität innerhalb von sechs Monaten aus den aktuellen Datencentern entfernt werden muss. Andernfalls muss die Holdinggesellschaft ein Bußgeld in Höhe von einer Millionen US-Dollar pro Monat zahlen. Das Verschieben der digitalen Ressourcen in die Cloud über eine Cloudmigration könnte eine schnelle Außerbetriebnahme der alten Ressourcen ermöglichen.
 - **Beispiel 3:** Ein Unternehmen, das Einkommensteuerberatung für Verbraucher anbietet, verzeichnet 70 Prozent seines Jahresumsatzes in den ersten drei Monaten des Jahrs. Während des restlichen Jahrs bleiben die erheblichen IT-Investitionen des Unternehmens relativ ungenutzt. Eine Cloudmigration könnte es der IT-Abteilung ermöglichen, die erforderliche Compute-/Hostingkapazität für diese drei Monate bereitzustellen. Während der verbleibenden neun Monate könnten die IaaS-Kosten durch Verringern des Computebedarfs erheblich reduziert werden.
+
+<!-- cSpell:ignore Coverdell Coverdell's Sorensen -->
 
 ### <a name="example-coverdell"></a>Beispiel: Coverdell
 

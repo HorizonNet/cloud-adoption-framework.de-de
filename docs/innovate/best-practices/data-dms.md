@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: cd4009e8201cf6267e9da297ce13987cb025139e
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 1f6d7545814f51f79a45b619f73dab857ac582d3
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171275"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78891988"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>Sammeln von Daten durch Migration und Modernisierung vorhandener Datenquellen
 
@@ -57,5 +57,3 @@ Es wird empfohlen, dass Sie Ihre akzeptablen Ausfallzeiten für das Geschäft fe
 |PostgreSQL|Azure Database for PostgreSQL|Database Migration Service|Online|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online)|
 |MongoDB|Mongo-API von Azure Cosmos DB|Database Migration Service|Offline|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db)|
 |MongoDB|Mongo-API von Azure Cosmos DB|Database Migration Service|Online|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online)|
-|Oracle|Verschiedene PaaS- (Platform-as-a-Service) und IaaS-Optionen (Infrastructure-as-a-Service)|Ein Partnertool oder Azure Migrate|Offline oder online|[Entscheidungsstruktur](../../migrate/expanded-scope/data-oracle-migration.md)|
-|Verschiedene NoSQL DB-Optionen|Cosmo DB oder IaaS-Optionen|Prozedurbasierte Migrationen oder Azure Migrate|Offline oder online|[Entscheidungsstruktur](../../migrate/expanded-scope/data-no-sql-migration.md)|

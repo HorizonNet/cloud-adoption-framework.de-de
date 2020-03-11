@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: 4abfaa8622db86fefb2c7c99589d3ef81a5ed489
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: c9e33b32590cd3b73e5bc42a662abf5ef6de36da
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170170"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892241"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Ermöglichen des Erfolgs während einer Cloudeinführungsjourney
 
@@ -22,7 +22,7 @@ Das Framework für die Cloudeinführung (Cloud Adoption Framework) ist ein koste
 In diesem Framework ist „Enablement“ (Befähigung, Ermöglichen) ein Kernthema. In der folgenden Prüfliste sind grundlegende Cloudeinführungsprinzipien aufgelistet, die sicherstellen, dass eine Einführungsjourney sowohl von der IT-Abteilung als auch von der Geschäftsleitung als erfolgreich eingestuft wird:
 
 - **Planung:** Festlegen klarer [Geschäftsergebnisse](../strategy/business-outcomes/index.md), eines klar definierten [Plans für digitale Ressourcen](../digital-estate/index.md) und weithin verstandener [Einführungsbacklogs](../migrate/migration-considerations/prerequisites/migration-backlog-review.md).
-- **Bereit:** Sicherstellen der Bereitschaft der Mitarbeiter durch [Qualifikationen und Lernpläne](../ready/technical-skills.md).
+- **Bereit:** Sicherstellen der Bereitschaft der Mitarbeiter durch [Qualifikationen und Lernpläne](../ready/suggested-skills.md).
 - **Betrieb:** Definieren Sie ein verwaltbares Betriebsmodell, um die Aktivitäten während und lange nach der Einführung zu steuern.
   - **[Organisation](../organize/index.md):** Richten Sie Mitarbeiter und Teams so aus, dass sie einen reibungslosen Cloudbetrieb und eine problemlose Einführung sicherstellen.
   - **Governance:** Definieren geeigneter [Governancedisziplinen](../govern/index.md) zur konsequenten Anwendung von Kostenmanagement-, Risikominderungs-, Compliance- und Sicherheitsbaselines über die gesamte Cloudeinführung hinweg.
@@ -77,7 +77,7 @@ Zusätzlich zum Framework für die Cloudeinführung (Cloud Adoption Framework) d
     </a>
 </li>
 <li style="display: flex; flex-direction: column;">
-    <a href="../ready/technical-skills.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
+    <a href="../ready/suggested-skills.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
         <div class="cardSize" style="flex: 1 0 auto; display: flex;">
             <div class="cardPadding" style="display: flex;">
                 <div class="card">
