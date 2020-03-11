@@ -7,18 +7,18 @@ ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8115a33c67c0099e97c0d368c007ac6a1099b0d9
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 25e89ccbca604ea7637d8c45b9a843491706ff04
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892564"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094615"
 ---
 # <a name="sql-server-migration-best-practices-for-azure"></a>Bewährte Methoden für die SQL Server-Migration für Azure
 
 Durch die Migration einer vollständigen SQL Server-Instanz zu Azure können Sie die standardmäßige Migrationsmethodik beschleunigen, die im Cloud Adoption Framework beschrieben und unten dargestellt wird.
 
-![Cloud Adoption Framework-Migrationsmodell](../../_images/operational-transformation-migrate.png)
+![Cloud Adoption Framework-Migrationsmodell](../../_images/migrate/methodology.png)
 
 ## <a name="migration-best-practices"></a>Bewährte Methoden für die Migration
 

@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0616b2721a903be369192a47fcd888247fd6cad6
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 783652f1f469333c97ebd50673a3d42e1a9741d7
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222615"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892581"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Bewährte Methoden für Kostenermittlung und Größenanpassung von Workloads, die zu Azure migriert werden
 
@@ -241,9 +241,9 @@ Mit Cost Management können Sie:
 **Weitere Informationen**:
 
 - [Einen Überblick erhalten](https://docs.microsoft.com/azure/cost-management/overview) über Azure Cost Management.
-- [Erfahren Sie, wie Sie](https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices) Ihre Cloudinvestitionen mit Azure Cost Management optimieren.
+- [Erfahren Sie, wie Sie](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices) Ihre Cloudinvestitionen mit Azure Cost Management optimieren.
 - [Erfahren Sie, wie Sie](https://docs.microsoft.com/azure/cost-management/use-reports) Azure Cost Management-Berichte verwenden.
-- [Erhalten Sie ein Tutorial](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json) zum Optimieren von Kosten mithilfe von Empfehlungen.
+- [Erhalten Sie ein Tutorial](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json) zum Optimieren von Kosten mithilfe von Empfehlungen.
 - [Sehen Sie sich ](https://docs.microsoft.com/rest/api/consumption/budgets) die Azure Consumption-API an.
 
 ## <a name="best-practice-monitor-resource-utilization"></a>Bewährte Methode: Ressourcennutzung überwachen
@@ -260,7 +260,7 @@ In Azure bezahlen Sie für die Nutzung, also wenn Ressourcen tatsächlich genutz
 
 - Verschaffen Sie sich einen Überblick über [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) und [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview).
 - [Erhalten Sie](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations) Advisor-Empfehlungen zu Kosten.
-- [Erfahren Sie, wie Sie [Kosten für Empfehlungen optimieren](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json) und [unerwartete Gebühren vermeiden](https://docs.microsoft.com/azure/billing/billing-getting-started).
+- [Erfahren Sie, wie Sie [Kosten für Empfehlungen optimieren](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/billing/TOC.json) und [unerwartete Gebühren vermeiden](https://docs.microsoft.com/azure/billing/billing-getting-started).
 - Erfahren Sie mehr über das [Toolkit zur Azure-Ressourcenoptimierung (ARO)](https://github.com/Azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit).
 
 ## <a name="best-practice-implement-resource-group-budgets"></a>Bewährte Methode: Budgets für Ressourcengruppen implementieren
@@ -273,7 +273,7 @@ Häufig werden Ressourcengruppen verwendet, um Kostengrenzen darzustellen. Zusam
 **Weitere Informationen**:
 
 - [Erfahren Sie, wie Sie](https://docs.microsoft.com/azure/billing/billing-cost-management-budget-scenario) Kosten mit Azure-Budgets verwalten.
-- [Absolvieren Sie ein Tutorial](https://docs.microsoft.com/azure/cost-management/tutorial-acm-create-budgets?toc=/azure/billing/TOC.json), um ein Azure-Budget zu erstellen und zu verwalten.
+- [Absolvieren Sie ein Tutorial](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/billing/TOC.json), um ein Azure-Budget zu erstellen und zu verwalten.
 
 ## <a name="best-practice-optimize-azure-monitor-retention"></a>Bewährte Methode: Azure Monitor-Aufbewahrung optimieren
 
