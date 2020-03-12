@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 layout: LandingPage
-ms.openlocfilehash: d43097c940bcb6afb6b816dc4f8a533021d304fb
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 7c808e02b0f1d759fcb37acd0a6b6a24d2087950
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798654"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140568"
 ---
 # <a name="cloud-adoption-framework-roadmap"></a>Framework für die Cloudeinführung (Cloud Adoption Framework, CAF): Roadmap
 
@@ -45,7 +45,7 @@ Die Beseitigung wesentlicher Hindernisse und die Ermöglichung von Veränderunge
 
 Das Framework für die Cloudeinführung ist ein umfassendes Framework, das die Phasen der Planung, Bereitschaft und Einführung über die Migrations- und Innovationsmotive für die Cloudeinführung hinweg abdeckt und dabei von Anleitungen zur Governance und dem Betrieb unterstützt wird.
 
-Das Framework ist jetzt allgemein verfügbar. Wir bauen dieses Framework jedoch weiterhin in Zusammenarbeit mit Kunden, Partnern und internen Teams aktiv auf. Um Partnerschaften zu ermutigen, werden Inhalte veröffentlicht, sobald diese verfügbar sind. Diese öffentlichen Releases ermöglichen es, die Anleitungen zu testen, zu validieren und schrittweise zu optimieren. 
+Das Framework ist jetzt allgemein verfügbar. Wir bauen dieses Framework jedoch weiterhin in Zusammenarbeit mit Kunden, Partnern und internen Teams aktiv auf. Um Partnerschaften zu ermutigen, werden Inhalte veröffentlicht, sobald diese verfügbar sind. Diese öffentlichen Releases ermöglichen es, die Anleitungen zu testen, zu validieren und schrittweise zu optimieren.
 
 Für eine erfolgreiche Cloudeinführung müssen die Kunden ihre Mitarbeiter, Technologien und Prozesse auf diese digitale Transformation vorbereiten. Das Framework für die Cloudeinführung umfasst einen Abschnitt, in dem die allgemeinen Einführungswege, sowohl Migration als auch Innovation, als Übersicht für den Kunden dargelegt werden. Dieser Abschnitt besteht aus den folgenden Phasen des Einführungswegs:
 

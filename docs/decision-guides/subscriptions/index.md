@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 99bcfee8f72250c156178117b368af62eb8a68c9
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 32b1e8933add7f2c786d424e6faabf58f9218ead
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892411"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140687"
 ---
 # <a name="subscription-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Abonnements
 
@@ -55,7 +55,7 @@ Wenn Sie für die Bereitstellung einer Workload in einer Produktionsumgebung ber
 
 Wenn eine Organisation der Cloud neue Workloads hinzufügt, können unterschiedliche Abonnementzuständigkeiten sowie die grundlegende Trennung von Aufgaben dazu führen, dass Produktions- und Nichtproduktionsverwaltungsgruppen mehrere Abonnements enthalten. Dieser Ansatz bietet zwar eine grundlegende Trennung von Workloads, profitiert aber nicht nennenswert vom Vererbungsmodell zur automatischen Anwendung von Richtlinien auf eine Teilmenge Ihrer Abonnements.
 
-![Muster zur Trennung von Workloads](../../_images/ready/management-group-hierarchy.png)
+![Muster zur Trennung von Workloads](../../_images/ready/management-group-hierarchy-v2.png)
 
 ### <a name="application-category-pattern"></a>Auf Anwendungskategorien basierendes Muster
 
