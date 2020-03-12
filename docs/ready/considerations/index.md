@@ -1,18 +1,18 @@
 ---
 title: Überlegungen zu Landezonen in Azure
-description: Hier finden Sie Informationen zu Landezonen – den Grundbausteinen jeder Cloudeinführungsumgebung.
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um mehr über Zielzonen – den Grundbausteinen jeder Cloudeinführungsumgebung – zu erfahren.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/20/2019
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 5eb0dc016bcfe7778727b5a61e392e3dd3581539
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: c08efda381eeaf713f79393f2959127d8a96970b
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173370"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092538"
 ---
 # <a name="landing-zone-considerations"></a>Überlegungen zu Landezonen
 

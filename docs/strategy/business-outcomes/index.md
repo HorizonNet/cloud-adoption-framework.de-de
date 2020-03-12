@@ -7,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 1b0104767c58e31f6ae31cae511d2aa1dc60dd73
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: 0fc60c8d2ca4c0725d114f6bf618e1a02934b2b5
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337931"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092393"
 ---
 <!-- markdownlint-disable MD026 -->
 
 # <a name="what-business-outcomes-are-associated-with-transformation-journeys"></a>Welche Geschäftsergebnisse sind mit Transformationsprozessen verbunden?
 
-Die erfolgreichsten Transformationsprozesse beginnen im Hinblick auf ein Geschäftsergebnis. Die Cloudeinführung kann kostenintensiv und zeitaufwendig sein. Die Förderung des richtigen Maßes an Unterstützung durch die IT und andere Geschäftsfelder ist entscheidend für den Erfolg. Der [Rahmenplan für Geschäftsergebnisse](../index.md) (Business Outcome Framework) von Microsoft wurde entwickelt, um Kunden bei der Identifizierung von Geschäftsergebnissen zu unterstützen, die prägnant und definiert sind und – unterstützt durch eine bestimmte Maßnahme – zu erkennbaren Ergebnissen oder Veränderungen der geschäftlichen Leistung führen.
+Die erfolgreichsten Transformationsprozesse beginnen im Hinblick auf ein Geschäftsergebnis. Die Cloudeinführung kann kostenintensiv und zeitaufwendig sein. Die Förderung des richtigen Maßes an Unterstützung durch die IT und andere Geschäftsfelder ist entscheidend für den Erfolg. Diese Artikelreihe wurde entwickelt, um Kunden bei der Identifizierung von Geschäftsergebnissen zu unterstützen, die prägnant und definiert sind sowie erkennbare Ergebnisse oder Veränderungen bei der geschäftlichen Leistung bewirken, unterstützt durch eine bestimmte Maßnahme.
 
 Bei jeder Cloudtransformation unterstützt die Möglichkeit zur Formulierung von Geschäftsergebnissen die Transparenz sowie funktionsübergreifende Partnerschaften. Der Rahmenplan für Geschäftsergebnisse beginnt mit einer einfachen Vorlage, die technisch versierten Personen hilft, eine Übereinstimmung zu erzielen und zu dokumentieren. Diese Vorlage kann für verschiedene Beteiligte verwendet werden, um eine Vielzahl von Geschäftsergebnissen zu erfassen, die jeweils durch die Transformationsprozesse eines Unternehmens beeinflusst werden können. Sie können diese Vorlage elektronisch oder – noch besser – auf einem Whiteboard verwenden, um mit Führungskräften und Beteiligten ergebnisorientierte Diskussionen zu führen.
 

@@ -1,18 +1,18 @@
 ---
 title: Validierung von Bewertungsannahmen vor der Migration
-description: Validierung von Bewertungsannahmen vor der Migration
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie Bewertungsannahmen vor Beginn der Migration in die Cloud überprüft werden.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e370ef47b27449a3a46965dc309403a09fb3829d
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 30cc06e28477c70987c7e8dc23300e3e0a184dd2
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222276"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094123"
 ---
 # <a name="validate-assessment-assumptions-before-migration"></a>Validierung von Bewertungsannahmen vor der Migration
 
@@ -62,7 +62,7 @@ Zusätzlich zur Verantwortlichkeit auf hoher Ebene gibt es Maßnahmen, für die 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Mit einem allgemeinen Überblick über den Bewertungsprozess sind Sie bereit, den Prozess durch [Ausrichtung von geschäftlichen Prioritäten](./business-priorities.md) zu starten.
+Mit einem allgemeinen Überblick über den Bewertungsprozess sind Sie bereit, den Prozess durch das [Klassifizieren von Workloads](./classify.md) zu starten.
 
 > [!div class="nextstepaction"]
-> [Ausrichten von geschäftlichen Prioritäten](./business-priorities.md)
+> [Klassifizieren von Workloads](./classify.md)

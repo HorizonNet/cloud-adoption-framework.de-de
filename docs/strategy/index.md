@@ -1,6 +1,6 @@
 ---
 title: Entwickeln einer Cloudeinführungsstrategie
-description: Nutzen Sie die Cloud, um Ihre Geschäftsstrategie zu verbessern.
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu verstehen, wie die Cloud Ihnen dabei helfen kann, ihre Geschäftsstrategie voranzubringen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 layout: LandingPage
-ms.openlocfilehash: 5ecc4c99604b6991337ae4f4022a2a8ee0464b0f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 5494b9485f67f51c79fac84ca2822bf041ea873f
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798331"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092347"
 ---
 <!-- markdownlint-disable MD026 -->
 

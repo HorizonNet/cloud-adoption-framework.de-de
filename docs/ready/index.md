@@ -1,6 +1,6 @@
 ---
 title: Vorbereiten der Cloudeinführung
-description: Hier erfahren Sie, wie Sie die Umgebung für die anstehende Cloudeinführung vorbereiten.
+description: Erfahren Sie, wie Sie eine Zielzone zum Hosten der Workloads erstellen, die Sie in der Cloud erstellen oder in die Cloud migrieren möchten.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 layout: LandingPage
-ms.openlocfilehash: cd4b29823636cfaa758d0568d3298bc146a00eb8
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 11ab187c24bcd288834cf3c4823e508096e69492
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892479"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092522"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -48,7 +48,7 @@ Machen Sie sich anhand des Leitfadens für die Azure-Einrichtung mit den Tools u
         </a>
     </li>
     <li style="display: flex; flex-direction: column;">
-        <a href="./landing-zone/migrate-landing-zone.md">
+        <a href="./landing-zone/first-landing-zone.md">
             <div class="cardSize">
                 <div class="cardPadding" style="padding-bottom:10px;">
                     <div class="card" style="padding-bottom:10px;">
@@ -59,7 +59,7 @@ Machen Sie sich anhand des Leitfadens für die Azure-Einrichtung mit den Tools u
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Erste Landezone</h3>
-Evaluieren Sie die CAF-Blaupause (Cloud Adoption Framework, Framework für die Cloudeinführung) für die Erstellung einer Landezone für die Migration. Erstellen Sie auf der Grundlage dieser Blaupause Ihre erste migrationsbereite Landezone, um darin zu experimentieren und die Konzepte und Anforderungen kennenzulernen.
+Wählen Sie die am besten geeignete Zielzone aus, um einen codebasierten Startpunkt für Ihre Umgebung zu erstellen.
                         </div>
                     </div>
                 </div>
@@ -77,8 +77,8 @@ Evaluieren Sie die CAF-Blaupause (Cloud Adoption Framework, Framework für die C
                             </div>
                         </div>
                         <div class="cardText" style="padding-left:0px;">
-                            <h3>Erweitern der Blaupause</h3>
-Nutzen Sie die Überlegungen zu Landezonen, um die richtige Blaupause zu ermitteln und diese gemäß Ihren Anforderungen anzupassen.
+                            <h3>Erweitern der Zielzone</h3>
+Erfüllen Sie die Plattformanforderungen Ihres Cloudeinführungsplans, indem Sie die erste Zielzone erweitern.
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ Nutzen Sie die Überlegungen zu Landezonen, um die richtige Blaupause zu ermitte
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Bewährte Methoden</h3>
-Überprüfen Sie Änderungen der Landezone anhand des Abschnitts mit bewährten Methoden, um sicherzustellen, dass Ihre aktuellen und zukünftigen Landezonen ordnungsgemäß konfiguriert sind.
+Überprüfen Sie sämtliche Anpassungen anhand der bewährten Methoden, um sicherzustellen, dass Ihre aktuellen und zukünftigen Zielzonen ordnungsgemäß konfiguriert sind.
                         </div>
                     </div>
                 </div>

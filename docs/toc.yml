@@ -42,12 +42,14 @@ items:
             href: strategy/financial-models.md
           - name: Grundlegendes zur Cloudbuchhaltung
             href: strategy/cloud-accounting.md
-          - name: Ausgewogenheit des Portfolios
-            href: strategy/balance-the-portfolio.md
       - name: Erstes Cloudeinführungsprojekt
         href: strategy/first-adoption-project.md
       - name: Weitere Überlegungen
         items:
+          - name: Ausgewogenheit konkurrierender Prioritäten
+            href: strategy/balance-competing-priorities.md
+          - name: Ausgewogenheit des Portfolios
+            href: strategy/balance-the-portfolio.md
           - name: Globale Märkte
             href: strategy/global-markets.md
       - name: Für die Strategie relevante Qualifikationen
@@ -256,7 +258,7 @@ items:
                     href: migrate/azure-best-practices/contoso-migration-refactor-linux-app-service-mysql.md
               - name: VMware-Hosts
                 items:
-                  - name: Übersicht
+                  - name: Überlegungen zum erneuten Hosten von VMware
                     href: migrate/azure-best-practices/vmware-host.md
                   - name: Voraussetzungen
                     items:
@@ -496,6 +498,8 @@ items:
                 items:
                   - name: "Validierung von Bewertungsannahmen vor der Migration\_– R-Optimierung hinzufügen"
                     href: migrate/migration-considerations/assess/index.md
+                  - name: Klassifizieren von Workloads
+                    href: migrate/migration-considerations/assess/classify.md
                   - name: Prioritäten aufeinander abgestimmt halten
                     href: migrate/migration-considerations/assess/business-priorities.md
                   - name: Bewerten der Bereitschaft einer Workload
@@ -524,7 +528,7 @@ items:
                     href: migrate/migration-considerations/migrate/replicate-options.md
                   - name: Stagen von Workloads
                     href: migrate/migration-considerations/migrate/stage.md
-              - name: 'Test-, Optimierungs- und Höherstufungsprozesse'
+              - name: Höherstufungsprozesse
                 items:
                   - name: Übersicht
                     href: migrate/migration-considerations/optimize/index.md
@@ -1194,6 +1198,8 @@ items:
     items:
       - name: 'Framework für die Cloudeinführung (Cloud Adoption Framework, CAF): Roadmap'
         href: reference/index.md
+      - name: Neues
+        href: reference/whats-new.md
       - name: Betriebsmodell
         items:
           - name: Übersicht
