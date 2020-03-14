@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 5eb0ab5c264e8abf842f37e03b5c61b43ade9936
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: 62a101b8c9dd957a8eae2279f77c5cf0c4381796
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337376"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312236"
 ---
+<!-- cSpell:ignore Kerberos NTLM SAML -->
+
 # <a name="identity-decision-guide"></a>Leitfaden zur Entscheidungsfindung für die Identitätsverwaltung
 
 In allen Umgebungen, seien es lokale, Hybrid- oder reine Cloudumgebungen, muss die IT-Abteilung genau bestimmen, welche Administratoren, Benutzer und Gruppen Zugriff auf Ressourcen haben. Dienste für die Identitäts- und Zugriffsverwaltung (Identity and Access Management, IAM) ermöglichen Ihnen das Verwalten der Zugriffssteuerung in der Cloud.
