@@ -1,18 +1,18 @@
 ---
-title: Priorisierung und Definition von Workloads für einen Cloudeinführungsplan
-description: Priorisierung und Definition von Workloads für einen Cloudeinführungsplan
+title: Priorisierung und Definition von Workloads für die Cloudeinführung
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie Sie Workloads für einen Cloudeinführungsplan priorisieren und definieren.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 78abd15ae06918e913f520d96b29e29f1a253856
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 42f55a866b3ac8f044861ef2bc738e128b3c9f38
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799980"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341911"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Priorisierung und Definition von Workloads für einen Cloudeinführungsplan
 
@@ -63,7 +63,7 @@ Nachdem die anfänglichen Prioritäten definiert und die Workloads dem Plan hinz
 
 ### <a name="business-inputs"></a>Geschäftseingaben
 
-| Datenpunkt | Beschreibung | Eingabe |
+| Datenpunkt | BESCHREIBUNG | Eingabe |
 |---|---|---|
 | Workloadname | Wie wird diese Workload genannt? |         |
 | Workloadbeschreibung | Aufgabe der Workload in einem Satz |         |
@@ -82,7 +82,7 @@ Nachdem die anfänglichen Prioritäten definiert und die Workloads dem Plan hinz
 
 ### <a name="technical-inputs"></a>Technische Eingaben
 
-| Datenpunkt | Beschreibung | Eingabe |
+| Datenpunkt | BESCHREIBUNG | Eingabe |
 |---|---|---|
 | Einführungsansatz | Ist diese Einführung ein Kandidat für Migration oder Innovation? |         |
 | Für die Anwendung Verantwortliche | Listen Sie die für Leistung und Verfügbarkeit dieses Workloads verantwortlichen Parteien auf. |         |

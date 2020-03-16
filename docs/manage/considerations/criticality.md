@@ -1,18 +1,18 @@
 ---
-title: 'Geschäftliche Bedeutung: Cloudverwaltung und -vorgänge'
-description: 'Geschäftliche Bedeutung: Cloudverwaltung und -vorgänge'
+title: Geschäftliche Wichtigkeit der Cloudverwaltung
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um sich mit der kritischen Bedeutung von Workloads vertraut zu machen und negative Auswirkungen auf Umsatz und Rentabilität zu verhindern.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 3232d0544f0382c6277e3a2898a95aa0c2f11ddd
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 2c3d5a71025e821b9554e2a8d99223c7e6b0712b
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807834"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341452"
 ---
 # <a name="business-criticality-in-cloud-management"></a>Geschäftliche Wichtigkeit der Cloudverwaltung
 

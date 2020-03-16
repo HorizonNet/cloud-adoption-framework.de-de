@@ -1,18 +1,18 @@
 ---
-title: 'Workloadvorgänge: Cloudverwaltung und -betrieb'
-description: 'Workloadvorgänge: Cloudverwaltung und -betrieb'
+title: Workloadvorgänge in der Cloudverwaltung
+description: Es wird ein Ansatz beschrieben, wie Sie in den fortlaufenden Betrieb dieser Workloads mit hoher Priorität investieren, um bessere Geschäftsverpflichtungen zu erzielen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: b97cd4963dc19753f0d8216923a376f4d077930a
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 43399d4d84d824f03a7fb19da493223f3baea717
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807698"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341248"
 ---
 # <a name="workload-operations-in-cloud-management"></a>Workloadvorgänge in der Cloudverwaltung
 

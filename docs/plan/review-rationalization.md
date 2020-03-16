@@ -1,18 +1,18 @@
 ---
 title: Überprüfen der Rationalisierungsentscheidungen
-description: Überprüfen der Rationalisierungsentscheidungen
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie Sie Rationalisierungsentscheidungen überprüfen und die Kommunikation mit den geschäftlichen Beteiligten erleichtern.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 47efac0b85198e95a76d40ad053a33c8051837ea
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e38616b97f5026bd66de510cac12932290e276ba
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800184"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093271"
 ---
 # <a name="review-rationalization-decisions"></a>Überprüfen der Rationalisierungsentscheidungen
 

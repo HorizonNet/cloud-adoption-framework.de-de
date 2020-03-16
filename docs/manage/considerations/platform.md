@@ -1,18 +1,18 @@
 ---
-title: 'Plattformbetrieb: Cloudverwaltung und -betrieb'
-description: 'Plattformbetrieb: Cloudverwaltung und -betrieb'
+title: Plattformbetrieb in der Cloudverwaltung
+description: Machen Sie sich mit der Abhängigkeit vertraut, die in Ihrer Organisation für häufige Plattformvorgänge bei der Cloudverwaltung besteht.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 15531346d453bca72c74c09d9bc95eef8d4c9ac3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 9a08c2f5fcf799bb6e1f37cd52b3d7e18724618e
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807732"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341027"
 ---
 # <a name="platform-operations-in-cloud-management"></a>Plattformbetrieb in der Cloudverwaltung
 

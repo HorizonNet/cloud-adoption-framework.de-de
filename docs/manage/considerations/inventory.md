@@ -1,18 +1,18 @@
 ---
-title: 'Bestand und Transparenz: Cloudverwaltung und -betrieb'
-description: 'Bestand und Transparenz: Cloudverwaltung und -betrieb'
+title: Bestand und Transparenz in Azure
+description: Es wird beschrieben, was verwaltet wird (Bestand) und wie sich die verwalteten Workloads und Ressourcen im Laufe der Zeit ändern (Transparenz).
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 29085f6ce1324f9f22acd0dc674c382163426233
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c9057c84757c49457b46c310d239dc8c49bd50d0
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807766"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341221"
 ---
 # <a name="inventory-and-visibility-in-cloud-management"></a>Bestand und Transparenz bei der Cloudverwaltung
 

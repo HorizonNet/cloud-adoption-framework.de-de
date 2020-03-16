@@ -1,6 +1,6 @@
 ---
 title: Voraussetzungen für die Migration zu Azure
-description: Voraussetzungen für die Migration zu Azure
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um sich damit vertraut zu machen, wie Sie sich auf die Azure-Migration vorbereiten und welche Voraussetzungen für ein erfolgreiches Migrationsprojekt erfüllt sein müssen.
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9baf2c9fdd307125e80fa77d8b2be54bec15b931
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 777b68bcd7faa613681f2d9ebbdf6cffe4accc3f
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76806984"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094791"
 ---
 ::: zone target="chromeless"
 
@@ -30,7 +30,7 @@ ms.locfileid: "76806984"
 
 Die Ressourcen in diesem Abschnitt helfen Ihnen, die aktuelle Umgebung für die Migration zu Azure vorzubereiten.
 
-# <a name="overviewtaboverview"></a>[Übersicht](#tab/Overview)
+# <a name="overview"></a>[Übersicht](#tab/Overview)
 
 Gründe für die Migration zu Azure sind die Beseitigung von Risiken im Zusammenhang mit veralteter Hardware, die Reduzierung der Investitionskosten, die Freigabe von Platz im Datencenter und die schnelle Generierung von Rendite (ROI).
 
@@ -58,7 +58,7 @@ Mit Ihrer Migrationsinitiative möchten Sie die folgenden Ziele umsetzen:
 > - [Windows Server 2008 und Windows Server 2008 R2](https://www.microsoft.com/cloud-platform/windows-server-2008).
 > - [SQL Server 2008 und SQL Server 2008 R2](https://www.microsoft.com/sql-server/sql-server-2008).
 
-# <a name="understand-migration-approachestabapproach"></a>[Grundlegendes zu Migrationsansätzen](#tab/Approach)
+# <a name="understand-migration-approaches"></a>[Grundlegendes zu Migrationsansätzen](#tab/Approach)
 
 Die für die Migration einer Anwendung zu Azure verwendeten Strategie und Tools hängen weitgehend von Ihren Geschäftsmotivationen, Technologieanforderungen und Zeitplänen sowie einem tiefen Verständnis der tatsächlichen Workloads und der zu migrierenden Ressourcen (Infrastruktur, Apps und Daten) ab.
 
@@ -73,7 +73,7 @@ Wenn Sie Workloads für die Migration bewerten, sollten Sie die Anwendungen iden
 - [Entscheidungsleitfaden zur Migration mit dem Framework für die Cloudeinführung (Cloud Adoption Framework)](../../decision-guides/migrate-decision-guide/index.md)
 - [Die fünf R der Rationalisierung](../../digital-estate/5-rs-of-rationalization.md)
 
-# <a name="planning-checklisttabchecklist"></a>[Checkliste für die Planung](#tab/Checklist)
+# <a name="planning-checklist"></a>[Checkliste für die Planung](#tab/Checklist)
 
 Bevor Sie mit einer Migration beginnen, müssen Sie einige Voraussetzungen erfüllen. Die genauen Details dieser Aktivitäten hängen von der zu migrierenden Umgebung ab. Im Allgemeinen gilt die folgende Checkliste:
 

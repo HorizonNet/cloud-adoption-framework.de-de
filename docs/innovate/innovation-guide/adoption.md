@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 58d1e420f9f1b76ea37a5ba7edc5c71aba9d0049
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 95087aeda19eb87759bc09f605c42c706d79aac2
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171088"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78891952"
 ---
 ::: zone target="docs"
 
@@ -76,7 +76,7 @@ Um die Daten zu Ihren Apps anzuzeigen, navigieren Sie zum [Azure-Portal](https:/
 
 ## <a name="quantitative-feedback-for-apis"></a>[Quantitatives Feedback für APIs](#tab/Quantitative-APIs)
 
-Die vernetzte Wirtschaft verändert die Art und Weise, in der Unternehmen Innovationen entwickeln. Märkte und Branchen werden schneller als je zuvor gestört. Störungen treten in vielen Formen auf, und Unternehmen müssen sich mit dem _Dilemma des Innovators_ auseinandersetzen: Wie kann das Tempo des Wandels festgelegt werden, ohne die laufende Geschäftsaktivität zu beeinträchtigen.
+Die vernetzte Wirtschaft verändert die Art und Weise, in der Unternehmen Innovationen entwickeln. Märkte und Branchen werden schneller als je zuvor gestört. Störungen treten in vielen Formen auf, und Unternehmen müssen sich mit dem _Dilemma des Innovators_ auseinandersetzen: Wie kann das Tempo des Wandels festgelegt werden, ohne die laufende Geschäftsaktivität zu beeinträchtigen?
 
 Unternehmen verwenden extern APIs, um die Interaktion mit ihren Kunden und Partnern zu ändern. Intern verwenden sie APIs, um verschiedene Teile des Unternehmens nahtlos miteinander zu verbinden. Die API-Struktur basiert auf vier Bausteinen: soziale Netzwerke, mobile Apps, Analysen und Cloud. Apps und Dienste können schnell und kostengünstig verknüpft werden, um ein erweitertes Wertversprechen zu schaffen.
 
@@ -124,8 +124,7 @@ Feedback wird in Form von User Storys im Backlog (oder Board) aufgezeichnet. Dor
 
 ### <a name="action"></a>Aktion
 
-Azure Boards und Azure Pipelines erfordern ein Portal, das von GitHub und Azure getrennt ist.
-Informationen zu den ersten Schritten mit beiden Tools finden Sie unter [Azure DevOps](https://dev.azure.com).
+Azure Boards und Azure Pipelines erfordern ein Portal, das von GitHub und Azure getrennt ist. Steigen Sie in [Azure DevOps](https://dev.azure.com) ein.
 
 ::: zone-end
 

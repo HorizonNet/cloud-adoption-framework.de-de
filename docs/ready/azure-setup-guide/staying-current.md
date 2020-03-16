@@ -1,6 +1,6 @@
 ---
-title: Bleiben Sie im heutigen Cloudrhythmus mit Azure auf dem aktuellen Stand.
-description: Hier erfahren Sie, wie Sie im heutigen Cloudrhythmus mithilfe von Azure den aktuellen Stand sicherstellen und Änderungen verwalten.
+title: Sicherstellen des aktuellen Stands von Azure
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie Sie beim heutigen Cloudrhythmus auf dem aktuellen Stand bleiben und Änderungen verwalten.
 author: jelledruyts
 ms.author: andym
 ms.date: 04/09/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 3852317648526cceadfd772b72adbd1af2bb7d08
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: ad8b6259aaa0808e2628fed9b88f0f806c46e655
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222049"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341979"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>Mit Microsoft Azure auf dem neuesten Stand
 

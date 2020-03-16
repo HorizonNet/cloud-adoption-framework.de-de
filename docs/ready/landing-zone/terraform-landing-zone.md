@@ -7,18 +7,18 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 52abb490ed3364945bef887a8ed7f144f7dca14a
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: e6cfe951c3b499d101ed29208b2beba0c9867c48
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78228613"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023896"
 ---
-<!-- cSpell:ignore arnaudlh arnaul Arnaud Hashicorp's vCPUs eastasia southeastasia lalogs tfvars -->
+<!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars -->
 
 # <a name="use-terraform-to-build-your-landing-zones"></a>Verwenden von Terraform zum Erstellen Ihrer Zielzonen
 
-Azure bietet native Dienste zum Bereitstellen Ihrer Zielzonen. Andere Tools von Drittanbietern können dabei ebenfalls helfen. Ein solches Tool, das Kunden und Partner häufig zum Bereitstellen von Zielzonen verwenden, ist Terraform von Hashicorp. In diesem Abschnitt wird gezeigt, wie Sie mit einer Prototypzielzone grundlegende Protokollierungs-, Kontoführungs- und Sicherheitsfunktionen für ein Azure-Abonnement bereitstellen.
+Azure bietet native Dienste zum Bereitstellen Ihrer Zielzonen. Andere Tools von Drittanbietern können dabei ebenfalls helfen. Ein solches Tool, das Kunden und Partner häufig zum Bereitstellen von Zielzonen verwenden, ist Terraform von HashiCorp. In diesem Abschnitt wird gezeigt, wie Sie mit einer Prototypzielzone grundlegende Protokollierungs-, Kontoführungs- und Sicherheitsfunktionen für ein Azure-Abonnement bereitstellen.
 
 ## <a name="purpose-of-the-landing-zone"></a>Zweck der Zielzone
 
@@ -84,7 +84,7 @@ Die folgenden Entscheidungen werden in der Terraform-Zielzone widergespiegelt:
 
 Bei allen Ressourcen und Ressourcengruppen müssen mindestens die folgenden Tags vorhanden sein:
 
-| Tagname          | Beschreibung                                                                                        | Key             | Beispielwert                                    |
+| Tagname          | BESCHREIBUNG                                                                                        | Schlüssel             | Beispielwert                                    |
 |-------------------|----------------------------------------------------------------------------------------------------|-----------------|--------------------------------------------------|
 | Geschäftseinheit     | Oberste Abteilung Ihres Unternehmens, die Besitzer des Abonnements oder der Workload ist, zu dem oder der die Ressource gehört. | BusinessUnit    | FINANCE, MARKETING, {Produktname}, CORP, SHARED |
 | Kostenstelle       | Buchhaltungskostenstelle, die dieser Ressource zugeordnet ist.                                              | CostCenter      | Number                                           |

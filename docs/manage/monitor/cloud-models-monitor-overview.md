@@ -1,6 +1,6 @@
 ---
-title: 'Leitfaden zur Cloudüberwachung: Überwachungsstrategie für Cloudbereitstellungsmodelle'
-description: 'Auswahlhilfe: Verwendung von Azure Monitor oder System Center Operations Manager in Microsoft Azure'
+title: Überwachungsstrategie für Cloudbereitstellungsmodelle
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, welche Überwachungsstrategie Sie für die Cloudverwaltung verwenden sollten.
 author: MGoedtel
 ms.author: magoedte
 ms.date: 10/04/2019
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: abb9395a739d4e32cab85367d4de822dc47939ac
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3b6434937816255269bda41c422099a07a25f5bc
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807630"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341826"
 ---
 # <a name="cloud-monitoring-guide-monitoring-strategy-for-cloud-deployment-models"></a>Leitfaden zur Cloudüberwachung: Überwachungsstrategie für Cloudbereitstellungsmodelle
 

@@ -1,18 +1,18 @@
 ---
 title: Bewerten der Bereitschaft einer Workload
-description: Ein Prozess innerhalb der Cloudmigration, der sich auf die Aufgaben der Migration von Workloads in die Cloud konzentriert.
+description: Es wird beschrieben, was erforderlich ist, um die Bereitschaft einer Workload für die Migration in die Cloud zu evaluieren. Sie erfahren, wie Sie alle Ressourcen und die zugehörigen Abhängigkeiten überprüfen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c695d83c4e04b3cd837ff5916e47c128f17a1d34
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3065dfa39af189c5275f966e758fe49004f4de00
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802547"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094774"
 ---
 # <a name="evaluate-workload-readiness"></a>Bewerten der Bereitschaft einer Workload
 

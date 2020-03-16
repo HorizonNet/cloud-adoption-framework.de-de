@@ -1,18 +1,18 @@
 ---
 title: Replikationsoptionen
-description: Ein Prozess innerhalb der Cloudmigration, der sich auf die Aufgaben der Migration von Workloads in die Cloud konzentriert.
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um sich mit dem Replikationsprozess vertraut zu machen und zu verstehen, warum die Replikation für die Cloudmigration erforderlich ist.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: bf798a816d799ba856d8ea20b999de1240ac5284
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 790ef71ed6a3880b23a851adc0054666e16c0dde
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802139"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092848"
 ---
 # <a name="replication-options"></a>Replikationsoptionen
 

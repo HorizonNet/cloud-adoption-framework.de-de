@@ -1,18 +1,18 @@
 ---
-title: 'Schutz und Wiederherstellung: Cloudverwaltung und -betrieb'
-description: 'Schutz und Wiederherstellung: Cloudverwaltung und -betrieb'
+title: Schutz und Wiederherstellung in der Cloudverwaltung
+description: Enthält eine Beschreibung dazu, wie wichtig es ist, sich auf einen potenziellen Workloadausfall vorzubereiten. Dank dieser Vorbereitung kann Ihr Team Fehler schneller erkennen und den Betrieb in kürzerer Zeit wiederherstellen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c9733c238903e2fa66f76337bb255c4cfda33896
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: f46fb65572d319e2dc9a4a779cd205bbe476908b
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807715"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78340994"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>Schutz und Wiederherstellung in der Cloudverwaltung
 

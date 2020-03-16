@@ -1,6 +1,6 @@
 ---
 title: Bereitstellen einer Migrationsinfrastruktur
-description: Erfahren Sie, wie Contoso eine Azure-Infrastruktur für die Migration zu Azure einrichtet.
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um anhand eines anschaulichen Beispiels zu erfahren, wie Sie eine Azure-Infrastruktur für die Migration zu Azure einrichten.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/1/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 314cd954332907f9bf1bf63eb52ed5d88cfab121
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 34d2c96adeb476b3129464566a315c2ada9eab67
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223130"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092430"
 ---
 <!-- cspell:ignore CSPs domainname IPAM CIDR Untrust RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
 
@@ -653,7 +653,7 @@ Der Azure Policy-Dienst führt eine Bewertung von Ressourcen durch, um die zu er
 
 Richtlinien legen eine Richtliniendefinition fest, und die Richtlinienzuweisung gibt den Umfang an, in dem eine Richtlinie angewendet werden soll. Der Umfang kann von einer Verwaltungsgruppe bis zu einer Ressourcengruppe reichen. [Weitere Informationen](https://docs.microsoft.com/azure/governance/policy/tutorials/create-and-manage) zum Erstellen und Verwalten von Richtlinien.
 
-Contoso möchte mit zwei Richtlinien beginnen:
+Contoso möchte zwei Richtlinien einführen:
 
 - Eine Richtlinie soll sicherstellen, dass Ressourcen nur in den Regionen EUS2 und CUS bereitgestellt werden können.
 - Eine Richtlinie soll die VM-SKUs auf genehmigte SKUs beschränken. Die Absicht dahinter ist, den Einsatz von teuren VM-SKUs zu verhindern.

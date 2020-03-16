@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: ef04a867614c6597268269421ef1d341f5252f3b
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 85f5cf55bb089bd347383bedf58b054cf2a7351c
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223986"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094444"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Einstieg in die Cloudmigration in Azure
 
@@ -57,13 +57,13 @@ Dieser Ansatz besteht aus zwei Methoden oder Schwerpunktbereichen: Cloudstrategi
 
 Die Cloudimplementierung ist ein iterativer Prozess für das Migrieren und Modernisieren der digitalen Ressourcen in Einklang mit den anvisierten Geschäftsergebnissen und Change Management-Mechanismen. Bei jeder Iteration werden Workloads entsprechend der Strategie und Planung migriert oder modernisiert. Entscheidungen in Bezug auf IaaS, PaaS oder eine hybride Infrastruktur werden während der Bewertungsphase der [Migrationsmethodik](../migrate/index.md) getroffen, um die Kontrolle und Ausführung zu optimieren. Diese Entscheidungen steuern die Tools, die während der Iterationen der Migrationsphase innerhalb derselben Methodik verwendet werden. Dieses Modell kann mit minimalem Strategie- und Planungsaufwand verwendet werden. Um jedoch die größten Unternehmenserträge zu erzielen, sollten sowohl die IT als auch das Unternehmen auf eine klare Strategie und Planung zur Durchführung der Implementierungsaktivitäten ausgerichtet sein.
 
-![Cloudimplementierungsmethodik des Cloud Adoption Framework](../_images/operational-transformation-migrate.png)
+![Cloudimplementierungsmethodik des Cloud Adoption Framework](../_images/migrate/methodology.png)
 
 Der Fokus liegt hierbei auf der Migration oder Modernisierung von Workloads. Eine Workload ist eine Sammlung von Infrastrukturen, Anwendungen und Daten, die zusammen ein gemeinsames Geschäftsziel oder die Ausführung eines allgemeinen Geschäftsprozesses unterstützen. Beispiele für Workloads sind unter anderem eine Branchenanwendung, eine Lohn- und Gehaltsabrechnungslösung, eine CRM-Lösung, ein Workflow zur Genehmigung von Finanzdokumenten oder eine Business Intelligence-Lösung. Workloads können auch gemeinsam genutzte technische Ressourcen wie ein Data Warehouse umfassen, das mehrere andere Lösungen unterstützt. In einigen Fällen kann eine Workload auch durch eine einzelne Ressource wie einen eigenständigen Server, eine Anwendung oder eine Datenplattform repräsentiert werden.
 
 Cloudmigrationen werden oft als ein einzelnes Projekt innerhalb eines umfassenderen, Programms angesehen, um den IT-Betrieb zu optimieren und die Kosten oder die Komplexität zu reduzieren. Die Cloudimplementierungsmethodik hilft dabei, die technischen Aktivitäten in einer Reihe von Workloadmigrationen auf übergeordnete Unternehmenswerte abzustimmen, die in der Cloudstrategie und dem Cloudplan beschrieben sind.
 
-**Erste Schritte:** Informationen zu den ersten Schritten bei einer Cloudimplementierung finden Sie im [Azure-Migrationsleitfaden](../migrate/azure-migration-guide/index.md) und im [Leitfaden für die Azure-Einrichtung](../ready/azure-setup-guide/index.md). Darin werden die Tools und allgemeinen Prozesse beschrieben, die für eine erfolgreiche Ausführung einer Cloudimplementierung erforderlich sind. Wenn Sie Ihre erste Workload anhand dieser Leitfäden migrieren, hilft dies dem Team, erste Lernkurven bereits frühzeitig im Planungsprozess zu überwinden. Anschließend sollten Sie zusätzlich die [Checkliste für den erweiterten Umfang](../migrate/expanded-scope/index.md), die [bewährten Methoden für die Migration](../migrate/azure-best-practices/index.md) und [Überlegungen zur Migration](../migrate/migration-considerations/index.md) berücksichtigen, um die Basisleitlinien an die individuellen Einschränkungen, Prozesse, Teamstrukturen und Ziele Ihrer Bemühungen anzupassen.
+**Erste Schritte:** Beginnen Sie mit der Cloudimplementierung, indem Sie Informationen im [Azure-Migrationsleitfaden](../migrate/azure-migration-guide/index.md) und im [Leitfaden für die Azure-Einrichtung](../ready/azure-setup-guide/index.md) verwenden. Hierin werden die Tools und allgemeinen Prozesse beschrieben, die für eine erfolgreiche Durchführung einer Cloudimplementierung erforderlich sind. Wenn Sie Ihre erste Workload anhand dieser Leitfäden migrieren, hilft dies dem Team, erste Lernkurven bereits frühzeitig im Planungsprozess zu überwinden. Anschließend sollten Sie zusätzlich die [bewährten Methoden für die Migration](../migrate/azure-best-practices/index.md) und die [Überlegungen zur Migration](../migrate/migration-considerations/index.md) berücksichtigen, um die Basisleitlinien an die individuellen Einschränkungen, Prozesse, Teamstrukturen und Ziele Ihrer Bemühungen anzupassen.
 
 ## <a name="cloud-strategy-and-planning"></a>Cloudstrategie und -planung
 

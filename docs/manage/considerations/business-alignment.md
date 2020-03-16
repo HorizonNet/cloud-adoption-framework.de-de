@@ -1,18 +1,18 @@
 ---
-title: 'Geschäftliche Ausrichtung: Cloudverwaltung und -vorgänge'
-description: 'Geschäftsausrichtung: Cloudverwaltung und -betrieb'
+title: Geschäftsausrichtung in der Cloudverwaltung
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie Sie Ihre Cloudvorgänge besser verwalten und eine engere Geschäftsausrichtung entwickeln können.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 114589d11b5e915400832d3d61a3ba91ca9d89fc
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: e06aca53ac70e602d13d2cc23d59d4b56c2cd152
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807868"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341435"
 ---
 # <a name="create-business-alignment-in-cloud-management"></a>Erstellen der Geschäftsausrichtung in der Cloudverwaltung
 

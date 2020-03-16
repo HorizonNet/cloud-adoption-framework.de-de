@@ -1,6 +1,6 @@
 ---
-title: Verwalten von Kosten und Abrechnung für Ihre Azure-Ressourcen
-description: Verstehen Sie Rechnungen, und erfahren Sie, wie Sie Budgets und Zahlungen für Ihre Azure-Ressourcen einrichten.
+title: Verwalten von Kosten und Abrechnung für Azure-Ressourcen
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um sich mit Rechnungen vertraut zu machen und zu erfahren, wie Sie Budgets und Zahlungen für Ihre Azure-Ressourcen einrichten.
 author: dchimes
 ms.author: kfollis
 ms.date: 04/09/2019
@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 4f0f0d900f75338a33b1873b8d0eac6d91835256
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 0f91ed2c09b2511304a59bc8768507f737ec6c76
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799521"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79024027"
 ---
+<!-- cSpell:ignore dchimes -->
+
 # <a name="manage-costs-and-billing-for-your-azure-resources"></a>Verwalten von Kosten und Abrechnung für Ihre Azure-Ressourcen
 
 Die Kostenverwaltung ist der Prozess, bei dem Sie die Kosten Ihrer Geschäftstätigkeit effektiv planen und steuern. Kostenverwaltungsaufgaben werden in der Regel durch die Finanz-, Management- und App-Teams ausgeführt. Azure Cost Management kann Ihnen helfen, Ihre Planung unter Berücksichtigung der Kosten durchzuführen. Zudem können damit Kosten effektiv analysiert und Maßnahmen zum Optimieren der Cloudausgaben ergriffen werden.

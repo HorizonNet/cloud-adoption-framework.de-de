@@ -1,6 +1,6 @@
 ---
 title: Skalieren einer Migration zu Azure
-description: Erfahren Sie, wie Contoso eine Migration in großem Umfang nach Azure behandelt.
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie Sie eine bedarfsgesteuerte Migration zu Azure planen und durchführen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/08/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: c4d5e151d5ea4badd3c6c5fab25f4a6be9ee60c5
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 8c3ee0a75efa74aa1599399358bac267c5ffe1de
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222828"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79091926"
 ---
 # <a name="scale-a-migration-to-azure"></a>Skalieren einer Migration zu Azure
 

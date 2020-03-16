@@ -1,6 +1,6 @@
 ---
 title: Optimierte Verwaltungsbaseline in Azure
-description: Allgemeine Verbesserungen an der Verwaltungsbaseline
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um sich mit allgemeinen Verbesserungen der Verwaltungsbaseline vertraut zu machen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: ad40011769152d906481fe8ffba5dead3f6b0ae5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 0ff06bb935a55c45c12748903c83d976bcbb14e0
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808242"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092335"
 ---
 # <a name="enhanced-management-baseline-in-azure"></a>Optimierte Verwaltungsbaseline in Azure
 
@@ -60,7 +60,7 @@ In dieser Tabelle werden einige Prozesse, Tools und potenzielle Auswirkungen bes
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-automationtabazureautomation"></a>[Azure Automation](#tab/AzureAutomation)
+## <a name="azure-automation"></a>[Azure Automation](#tab/AzureAutomation)
 
 ::: zone-end
 
@@ -95,7 +95,7 @@ So erstellen oder verwalten Sie Runbooks:
 ::: zone-end
 ::: zone target="chromeless"
 
-## <a name="azure-security-centertabazuresecuritycenter"></a>[Azure Security Center](#tab/AzureSecurityCenter)
+## <a name="azure-security-center"></a>[Azure Security Center](#tab/AzureSecurityCenter)
 
 ::: zone-end
 

@@ -3,22 +3,22 @@ title: Ausgewogenheit des Portfolios
 description: Entdecken Sie Strategien dazu, wie Sie Migration, Innovation und Experimentieren so in Einklang bringen, dass die Cloudmigration optimal genutzt wird.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 02/25/2020
+ms.date: 03/04/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
-ms.subservice: migrate
-ms.openlocfilehash: b41a550583628c1246a0663c99509498f0786d70
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.subservice: strategy
+ms.openlocfilehash: 938250f20725540049bca831ff4c12b975b134a5
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78228593"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092395"
 ---
 <!-- cSpell:ignore CSAT -->
 
 # <a name="balance-the-portfolio"></a>Ausgewogenheit des Portfolios
 
-Die Cloudeinführung ist ein Portfolioverwaltungsaufwand, der sich raffiniert als technische Implementierung tarnt. Wie bei jeder Form der Portfolioverwaltung ist die Ausgewogenheit des Portfolios von entscheidender Bedeutung. Auf strategischer Ebene bedeutet dies, Migration, Innovation und Experimentieren so in Einklang zu bringen, dass die Cloud optimal genutzt wird. Wenn der Aufwand zur Cloudeinführung zu weit in die eine oder andere Richtung tendiert, schleicht sich die Komplexität in die Migrationsaktivitäten ein. Dieser Artikel führt den Leser durch Methoden, mit denen die Ausgewogenheit des Portfolios erzielt wird.
+Die Cloudeinführung ist ein Portfolioverwaltungsschritt, der raffiniert als technische Implementierung getarnt ist. Wie bei jeder Form der Portfolioverwaltung ist die Ausgewogenheit des Portfolios von entscheidender Bedeutung. Auf strategischer Ebene bedeutet dies, Migration, Innovation und Experimentieren so in Einklang zu bringen, dass die Cloud optimal genutzt wird. Wenn der Aufwand zur Cloudeinführung zu stark in eine bestimmte Richtung tendiert, werden die Einführungsaktivitäten komplexer. Dieser Artikel führt den Leser durch Methoden, mit denen die Ausgewogenheit des Portfolios erzielt wird.
 
 ## <a name="general-scope-expansion"></a>Allgemeine Umfangserweiterung
 
@@ -26,9 +26,7 @@ Die Ausgewogenheit des Portfolios ist ein strategischer Aspekt. Daher ist der in
 
 ### <a name="document-business-outcomes"></a>Dokumentieren von Geschäftsergebnissen
 
-Bevor die Ausgewogenheit des Portfolios hergestellt wird, müssen die Geschäftsergebnisse, die den Cloudmigrationsaufwand bestimmen, dokumentiert und freigegeben werden. Einige Beispiele für allgemeine Geschäftsergebnisse im Zusammenhang mit Cloudmigrationen finden Sie unter [Erste Schritte auf dem Weg zur Cloudmigration](../getting-started/migrate.md).
-
-Die folgende Tabelle soll das Dokumentieren und Freigeben von Geschäftsergebnissen unterstützen. Es ist wichtig zu beachten, dass die meisten Unternehmen mehrere Ergebnisse gleichzeitig verfolgen. Ziel dieser Übung ist, die Ergebnisse zu verdeutlichen, die unmittelbar mit dem Cloudmigrationsaufwand in Zusammenhang stehen:
+Bevor die Ausgewogenheit des Portfolios hergestellt wird, müssen die Geschäftsergebnisse, die den Cloudmigrationsaufwand bestimmen, dokumentiert und freigegeben werden. Die folgende Tabelle soll das Dokumentieren und Freigeben von Geschäftsergebnissen unterstützen. Es ist wichtig zu beachten, dass die meisten Unternehmen mehrere Ergebnisse gleichzeitig verfolgen. Ziel dieser Übung ist, die Ergebnisse zu verdeutlichen, die unmittelbar mit dem Cloudmigrationsaufwand in Zusammenhang stehen:
 
 |Ergebnis  |Gemessen an  |Zielsetzung  |Zeitrahmen  |Priorität für diesen Aufwand  |
 |---------|---------|---------|---------|---------|
@@ -38,9 +36,9 @@ Die folgende Tabelle soll das Dokumentieren und Freigeben von Geschäftsergebnis
 |Verbessern der Benutzerfreundlichkeit     |Kundenzufriedenheit (CSAT)         |Verbesserung um 10%         |12 Monate         |4         |
 
 > [!IMPORTANT]
-> Die oben stehende Tabelle ist ein fiktives Beispiel und sollte nicht verwendet werden, um Prioritäten festlegen. In vielen Fällen könnte diese Tabelle als Antimuster betrachtet werden, da Kosteneinsparungen Priorität vor Kundenfreundlichkeit haben.
+> Die oben stehende Tabelle ist ein fiktives Beispiel und sollte nicht verwendet werden, um Prioritäten festlegen. In vielen Fällen wird diese Tabelle unter Umständen als Antimuster betrachtet, da Kosteneinsparungen Priorität vor Kundenfreundlichkeit haben.
 
-Die obige Tabelle könnte genau die Prioritäten des Cloudstrategieteams und des Cloudeinführungsteams darstellen, die eine Migration zur Cloud überwachen. Aufgrund kurzfristiger Einschränkungen legen diese Teams mehr Wert auf Reduzierung der IT-Kosten und Priorisieren eines Rechenzentrumsausstiegs als Mittel zum Erzielen der gewünschten Reduzierung der IT-Kosten. Allerdings versetzt das Dokumentieren der konkurrierenden Prioritäten in dieser Tabelle das Cloudeinführungsteam in die Lage, dem Cloudstrategieteam beim Identifizieren von Möglichkeiten zur besseren Ausrichtung der Implementierung der allumfassenden Portfoliostrategie zu helfen.
+Die obige Tabelle kann ggf. genau die Prioritäten des Cloudstrategieteams und des Cloudeinführungsteams darstellen. Aufgrund kurzfristiger Einschränkungen legen diese Teams mehr Wert auf Reduzierung der IT-Kosten und Priorisieren eines Rechenzentrumsausstiegs als Mittel zum Erzielen der gewünschten Reduzierung der IT-Kosten. Allerdings versetzt das Dokumentieren der konkurrierenden Prioritäten in dieser Tabelle das Cloudeinführungsteam in die Lage, dem Cloudstrategieteam beim Identifizieren von Möglichkeiten zur besseren Ausrichtung der Implementierung der allumfassenden Portfoliostrategie zu helfen.
 
 ### <a name="move-fast-while-maintaining-balance"></a>Schnelles Voranschreiten bei Wahrung der Ausgewogenheit
 
@@ -65,15 +63,9 @@ Wenn die Antwort auf beide Fragen „Ja“ lautet, wäre es klug zu erwägen, di
 
 Wenn die Antwort auf eine dieser Fragen „Nein“ ist, kann es ratsam sein, einen Plan zu erstellen, wie die Workload gehostet werden kann, bis sie außer Kraft gesetzt werden kann. Dieser Plan könnte das Verschieben der Ressourcen in ein kostengünstigeres oder alternatives Rechenzentrum beinhalten, was auch den Zielen der Kostenreduzierung und des Ausstiegs aus einem Rechenzentrum entsprechen würde.
 
-## <a name="suggested-prerequisites"></a>Empfohlene Voraussetzungen
+## <a name="adopt-process-changes"></a>Einführen von Prozessänderungen
 
-Die im Baselineleitfaden angegebenen Voraussetzungen sollten immer noch für die Behandlung dieses komplexen Themas ausreichen. Allerdings sollten Ressourcenbestand und digitale Ressourcen unter diesen Voraussetzungen hervorgehoben werden, da diese Daten die folgenden Aktivitäten bestimmen.
-
-## <a name="assess-process-changes"></a>Änderungen am Bewertungsprozess
-
-Die Ausgewogenheit des Portfolios erfordert eine zusätzliche qualitative Analyse während des Bewertungsprozesses, was die einfache Portfoliorationalisierung unterstützt.
-
-### <a name="suggested-action-during-the-assess-process"></a>Empfohlene Aktion während des Bewertungsprozesses
+Zur Erzielung der Ausgewogenheit des Portfolios ist eine zusätzliche qualitative Analyse während des Einführung erforderlich. Hierdurch wird die Rationalisierung des Portfolios vereinfacht.
 
 Anhand der Daten aus der Tabelle im obigen Abschnitt [Dokumentieren von Geschäftsergebnissen](#document-business-outcomes) besteht ein gewisses Risiko, dass das Portfolio zu weit zu einem migrationsfokussierten Ausführungsmodell tendiert. Wenn Benutzerfreundlichkeit oberste Priorität ist, wäre ein innovationslastiges Portfolio wahrscheinlicher. Keines von beiden ist falsch oder richtig, aber eine zu ausgeprägte Tendenz in eine Richtung führt in der Regel zu einer abnehmenden Rendite, unnötiger Steigerung der Komplexität und verlängert die Ausführungszeit relativ zum Cloudeinführungsaufwand.
 
@@ -102,8 +94,6 @@ Die für die einzelnen Workloads durchgeführten qualitativen Analysen sollten s
 
 Während der Migration können Aktivitäten zum Herstellen der Ausgewogenheit des Portfolios sich negativ auf die Geschwindigkeit der Migration auswirken (die Geschwindigkeit, mit der Ressourcen migriert werden). Die folgende Anleitung behandelt, warum Aktivitäten in einer bestimmten Weise ausgerichtet werden sollten, um Unterbrechungen der Migrationsaktivitäten zu vermeiden.
 
-### <a name="suggested-action-during-the-migrate-process"></a>Empfohlene Aktion während des Migrationsprozesses
-
 Portfoliorationalisierung erfordert vielfältigen technischen Aufwand. Es ist verlockend für Cloudeinführungsteams, dieser Portfoliovielfalt in Migrationsaktivitäten zu entsprechen. Unternehmensteilhaber fordern oft, dass ein einzelnes Cloudeinführungsteam das gesamte Migrationsbacklog behandelt. Das ist nur selten ein empfehlenswerter Ansatz, in vielen Fällen kann dies sogar kontraproduktiv sein.
 
 Diese unterschiedlichen Aktivitäten sollten auf zwei oder mehr Cloudeinführungsteams aufgeteilt werden. In einem Modell mit zwei Teams als Ausführungsbeispiel ist Team 1 das Migrationsteam und Team 2 das Innovationsteam. Für größere Aktivitäten könnten diese Teams weiter segmentiert werden, um andere Ansätze wie Ersetzungs-/PaaS-Aktivitäten oder geringfügige Umgestaltung zu behandeln. Im Folgenden werden die erforderlichen Fähigkeiten und Rollen zum Zuweisen eines neuen Hosts, zur Umgestaltung oder geringfügigen Umgestaltung skizziert:
@@ -115,18 +105,3 @@ Diese unterschiedlichen Aktivitäten sollten auf zwei oder mehr Cloudeinführung
 **Geringfügige Umgestaltung:** Einige Anwendungen können mit geringfügiger Umgestaltung auf Daten- oder Anwendungsebene aktualisiert werden. Dabei müssen Teammitglieder Daten für cloudbasierte Datenplattformen bereitstellen oder geringfügige Konfigurationsänderungen an der Anwendung vornehmen. Dies erfordert möglicherweise gewisse Unterstützung von fachlichen Ansprechpartnern für Daten- oder Anwendungsentwicklung. Allerdings ähnelt diese Arbeit der, die IT-Implementierer durchführen, wenn sie Drittanbieter-Apps bereitstellen. Diese Arbeit kann problemlos vom Cloudmigrationsteam oder Cloudstrategieteam ausgeführt werden. Diese Aktivität ist zwar nicht annähernd so schnell wie eine Migration mit Zuweisen eines neuen Hosts, benötigt jedoch weniger Zeit als Umgestaltungsaktivitäten.
 
 Während der Migration sollten Aktivitäten wie oben beschrieben in drei Methoden aufgeteilt werden, und diese Aktivitäten werden vom entsprechenden Team in entsprechender Iteration ausgeführt. Obwohl Sie das Portfolio diversifizieren sollten, müssen Sie auch sicherstellen, dass der Aufwand sehr fokussiert und getrennt bleibt.
-
-## <a name="optimize-and-promote-process-changes"></a>Änderungen am Prozess zum Optimieren und Höherstufen
-
-Während der Prozesse zum Optimieren und Höherstufen im Rahmen der Migrationsaktivitäten sind keine zusätzlichen Änderungen erforderlich.
-
-## <a name="secure-and-manage-process-changes"></a>Änderungen am Sicherungs- und Verwaltungsprozess
-
-Während der Prozesse zum Sichern und Verwalten im Rahmen der Migrationsaktivitäten sind keine zusätzlichen Änderungen erforderlich.
-
-## <a name="next-steps"></a>Nächste Schritte
-
-Kehren Sie zur [Checkliste für erweiterten Umfang](./index.md) zurück, um sicherzustellen, dass Ihre Migrationsmethode vollständig ausgerichtet ist.
-
-> [!div class="nextstepaction"]
-> [Checkliste für erweiterten Umfang](./index.md)

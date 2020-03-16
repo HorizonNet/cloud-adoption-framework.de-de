@@ -1,18 +1,18 @@
 ---
 title: Entwerfen von Workloads vor der Migration
-description: Entwerfen von Workloads vor der Migration
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie Sie die neue Architektur vor Beginn der Cloudmigration definieren.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b902f4b53784d30cd5de0b0eb77ed943e5e41aab
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: af77abda7d26e032549db0c04f535593fc906789
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802700"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094186"
 ---
 # <a name="architect-workloads-prior-to-migration"></a>Entwerfen von Workloads vor der Migration
 

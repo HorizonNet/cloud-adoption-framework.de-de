@@ -1,18 +1,18 @@
 ---
 title: Zentralisieren von Verwaltungsvorgängen
-description: Leitfaden zum Zentralisieren von Verwaltungsvorgängen
+description: Es wird beschrieben, wie Sie Verwaltungsvorgänge zentralisieren, indem Sie für alle Benutzer nur einen Azure Active Directory-Mandanten verwenden. Mit der zentralisierten Verwaltung werden Verwaltungsvorgänge vereinfacht und Wartungskosten reduziert.
 author: JnHs
 ms.author: jenhayes
 ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a02e5804bd2ea18bd385634cbab57b21c8427bba
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 03920802d2ee483154f789a6f353fd1642ccaf98
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807885"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094455"
 ---
 # <a name="centralize-management-operations"></a>Zentralisieren von Verwaltungsvorgängen
 

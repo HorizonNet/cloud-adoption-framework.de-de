@@ -1,24 +1,24 @@
 ---
 title: Beispiele für Agilitätsergebnisse
-description: Beispiele für Agilitätsergebnisse
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um sich mit der Marktposition Ihres Unternehmens und seinen Wettbewerbern vertraut zu machen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 6f865eb0a5f81aa005239dbafd5437dc93797f94
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 05ff2e7f3e611d789ed289474ff13e0ed58bf0fb
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798501"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092950"
 ---
 # <a name="examples-of-agility-outcomes"></a>Beispiele für Agilitätsergebnisse
 
 Wie bereits in der [Übersicht über die Geschäftsergebnisse](./index.md) beschrieben, können mehrere mögliche Geschäftsergebnisse als Grundlage für Unterhaltungen zur Transformationsjourney mit dem Unternehmen dienen. In diesem Artikel konzentrieren wir uns auf eine gängige Geschäftskennzahl: die Unternehmensflexibilität. Kenntnisse der Marktposition Ihres Unternehmens und der Wettbewerber können Ihnen dabei helfen, die Geschäftsergebnisse als Ziel der Transformationsjourney des Unternehmens zu formulieren.
 
-In der Vergangenheit wurden Chief Investment Officers (CIOs) und IT-Teams als eine Säule für die Stabilität zentraler unternehmenskritischer Prozesse angesehen. Dies gilt auch weiterhin. Nur wenige Unternehmen funktionieren gut, wenn ihre IT-Plattform nicht stabil ist. Allerdings wird in der heutigen Geschäftswelt noch viel mehr erwartet. Die IT kann mehr als nur eine weitere Kostenstelle sein, indem sie mit anderen Bereichen kooperiert, um neue Möglichkeiten am Markt zu erschließen. Viele CIOs und Führungskräfte setzen die Stabilität einfach als Grundwerte für die IT voraus. Für diese Führungskräfte ist geschäftliche Flexibilität das Maß für den Anteil der IT am Unternehmen.
+In der Vergangenheit wurden Chief Investment Officers und IT-Teams als eine Säule für die Stabilität zentraler unternehmenskritischer Prozesse angesehen. Dies gilt auch weiterhin. Nur wenige Unternehmen funktionieren gut, wenn ihre IT-Plattform nicht stabil ist. Allerdings wird in der heutigen Geschäftswelt noch viel mehr erwartet. Die IT kann mehr als nur eine weitere Kostenstelle sein, indem sie mit anderen Bereichen kooperiert, um neue Möglichkeiten am Markt zu erschließen. Viele Chief Investment Officers und Führungskräfte setzen die Stabilität einfach als Grundwerte für die IT voraus. Für diese Führungskräfte ist geschäftliche Flexibilität das Maß für den Anteil der IT am Unternehmen.
 
 <!-- markdownlint-disable MD026 -->
 
@@ -39,6 +39,8 @@ Bei allen Bemühungen zu cloudfähigen Innovationen ist die Zeit bis zur Marktei
 ### <a name="aurora-health-care"></a>Aurora Health Care
 
 Das Gesundheitssystem transformiert Onlinedienste in ein freundliches digitales Erlebnis. Zum Transformieren der eigenen digitalen Dienste migriert Aurora Health Care seine Websites zur Microsoft Azure-Plattform und setzt auf eine Strategie fortlaufender Innovationen.
+
+<!-- cSpell:ignore Jamey Shiels -->
 
 > „Als Team fokussieren wir uns auf hochwertige Lösungen und hohe Geschwindigkeit. Die Entscheidung für Azure war für uns eine riesige Veränderung.“  
 > Jamey Shiels  

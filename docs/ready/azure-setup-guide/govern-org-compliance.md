@@ -1,6 +1,6 @@
 ---
 title: Governance, Sicherheit und Konformität in Azure
-description: Es wird beschrieben, wie Sie Governance, Sicherheit und Konformität für Ihre Azure-Umgebung einrichten.
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie Sie Governance, Sicherheit und Konformität für Ihre Azure-Umgebung einrichten.
 author: tvuylsteke
 ms.author: kfollis
 ms.date: 09/27/2019
@@ -9,18 +9,22 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: c38edb9a5723d99974f5f472453bf4b88ee07bb3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 89de72cb85cc4c763d443ae9cc1114b648ab72c4
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799606"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79024074"
 ---
+<!-- cSpell:ignore tvuylsteke >
+
+<!-- markdownlint-disable MD024 MD025 -->
+
 # <a name="governance-security-and-compliance-in-azure"></a>Governance, Sicherheit und Konformität in Azure
 
 Wenn Sie Unternehmensrichtlinien festlegen und Ihre Governancestrategien planen, können Sie Tools und Dienste wie Azure Policy, Azure Blueprints und Azure Security Center verwenden, um die Governanceentscheidungen Ihres Unternehmens durchzusetzen und zu automatisieren. Verwenden Sie vor Beginn Ihrer Governanceplanung das [Governancebenchmarktool](https://cafbaseline.com), um potenzielle Lücken im Cloudgovernanceansatz Ihres Unternehmens zu identifizieren. Weitere Informationen zur Entwicklung von Governanceprozessen finden Sie im [Azure-Governanceleitfaden des Cloud Adoption Framework](../../govern/index.md).
 
-# <a name="azure-blueprintstabazureblueprints"></a>[Azure Blueprint](#tab/AzureBlueprints)
+# <a name="azure-blueprints"></a>[Azure Blueprint](#tab/AzureBlueprints)
 
 Azure Blueprints ermöglicht es Cloudarchitekten und zentralen IT-Gruppen, eine wiederholbare Gruppe von Azure-Ressourcen zu definieren, mit der die Standards, Muster und Anforderungen einer Organisation implementiert und erzwungen werden. Azure Blueprints ermöglicht es Entwicklungsteams, schnell neue Umgebungen zu erstellen und einzurichten und darauf zu vertrauen, dass sie im Rahmen der organisatorischen Compliance mithilfe einer Reihe von integrierten Komponenten (z.B. dem Netzwerk) arbeiten, um die Entwicklung und Bereitstellung zu beschleunigen.
 
@@ -40,9 +44,9 @@ So erstellen Sie eine Blaupause
 1. Wechseln Sie zu **Blaupausen – Erste Schritte**.
 1. Wählen Sie im Abschnitt **Blaupause erstellen** die Option **Erstellen** aus.
 1. Filtern Sie die Liste mit den Blaupausen, um die gewünschte Blaupause auszuwählen.
-1. Geben Sie unter **Name der Blaupause** den Namen ein, und wählen Sie den entsprechenden **Definitionsspeicherort** aus.
-1. Klicken Sie unten auf der Seite auf **Weiter: Artefakte >>** , und sehen Sie sich die Artefakte an, die in der Blaupause enthalten sind.
-1. Klicken Sie auf **Entwurf speichern**.
+1. Geben Sie unter **Name der Blaupause** den Namen ein, und wählen Sie anschließend den entsprechenden **Definitionsspeicherort** aus.
+1. Wählen Sie **Weiter: Artefakte >>** aus, und sehen Sie sich anschließend die in der Blaupause enthaltenen Artefakte an.
+1. Wähen Sie **Entwurf speichern** aus.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted]" submitText="Create a blueprint" :::
 
@@ -53,9 +57,9 @@ So erstellen Sie eine Blaupause
 1. Wechseln Sie zu [Blaupausen – Erste Schritte](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted).
 1. Wählen Sie im Abschnitt **Blaupause erstellen** die Option **Erstellen** aus.
 1. Filtern Sie die Liste mit den Blaupausen, um die gewünschte Blaupause auszuwählen.
-1. Geben Sie unter **Name der Blaupause** den Namen ein, und wählen Sie den entsprechenden **Definitionsspeicherort** aus.
-1. Klicken Sie unten auf der Seite auf **Weiter: Artefakte >>** , und sehen Sie sich die Artefakte an, die in der Blaupause enthalten sind.
-1. Klicken Sie auf **Entwurf speichern**.
+1. Geben Sie unter **Name der Blaupause** den Namen ein, und wählen Sie anschließend den entsprechenden **Definitionsspeicherort** aus.
+1. Wählen Sie **Weiter: Artefakte >>** aus, und sehen Sie sich anschließend die in der Blaupause enthaltenen Artefakte an.
+1. Wähen Sie **Entwurf speichern** aus.
 
 ::: zone-end
 
@@ -67,7 +71,7 @@ Veröffentlichen Sie wie folgt ein Blaupausenartefakt für Ihr Abonnement:
 
 1. Wechseln Sie zu **Blaupausen > Blaupausendefinitionen**.
 1. Wählen Sie die Blaupause aus, die Sie in den vorherigen Schritten erstellt haben.
-1. Sehen Sie sich die Blaupausendefinition an, und wählen Sie die Option **Blaupause veröffentlichen**.
+1. Überprüfen Sie die Blaupausendefinition, und wählen Sie anschließend **Blaupause veröffentlichen** aus.
 1. Geben Sie eine **Version** (z. B. _1.0_) sowie **Änderungshinweise** an, und wählen Sie anschließend **Veröffentlichen** aus.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints]" submitText="Blueprint definitions" :::
@@ -78,7 +82,7 @@ Veröffentlichen Sie wie folgt ein Blaupausenartefakt für Ihr Abonnement:
 
 1. Wechseln Sie zu [Blaupausen > Blaupausendefinitionen](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
 1. Wählen Sie die Blaupausendefinition aus, die Sie in den vorherigen Schritten erstellt haben.
-1. Sehen Sie sich die Blaupausendefinition an, und wählen Sie die Option **Blaupause veröffentlichen**.
+1. Überprüfen Sie die Blaupausendefinition, und wählen Sie anschließend **Blaupause veröffentlichen** aus.
 1. Geben Sie eine **Version** (z. B. _1.0_) sowie **Änderungshinweise** an, und wählen Sie anschließend **Veröffentlichen** aus.
 
 ::: zone-end
@@ -95,7 +99,7 @@ Weitere Informationen finden Sie unter:
 
 ::: zone-end
 
-# <a name="azure-policytabazurepolicy"></a>[Azure Policy](#tab/AzurePolicy)
+# <a name="azure-policy"></a>[Azure Policy](#tab/AzurePolicy)
 
 Azure Policy ist ein Dienst, mit dem Sie Richtlinien erstellen, zuweisen und verwalten können. Mit diesen Richtlinien werden unterschiedliche Regeln für Ihre Ressourcen erzwungen, damit diese stets mit Ihren Unternehmensstandards und Vereinbarungen zum Servicelevel konform bleiben. Mit Azure Policy werden Ihre Ressourcen gescannt, um diejenigen zu ermitteln, die nicht mit den von Ihnen implementierten Richtlinien konform sind. Sie können beispielsweise über eine Richtlinie verfügen, die in Ihrer Umgebung nur die Ausführung einer bestimmten VM-Größe zulässt. Wenn Sie diese Richtlinie implementieren, werden damit bereits vorhandene virtuelle Computer in Ihrer Umgebung sowie alle neu bereitgestellten virtuellen Computer ausgewertet. Bei der Richtlinienauswertung werden Konformitätsereignisse generiert, die Sie für die Überwachung und Berichterstellung verwenden können.
 
@@ -129,12 +133,12 @@ So wenden Sie eine Richtlinie auf eine Ressourcengruppe an:
 
 Weitere Informationen finden Sie unter:
 
-- [Azure Policy](https://docs.microsoft.com/azure/azure-policy)
+- [Azure Policy](https://docs.microsoft.com/azure/governance/policy)
 - [Cloud Adoption Framework: Leitfaden zur Entscheidungsfindung für die Richtlinienerzwingung](../../decision-guides/policy-enforcement/index.md)
 
 ::: zone-end
 
-# <a name="azure-security-centertabazuresecuritycenter"></a>[Azure Security Center](#tab/AzureSecurityCenter)
+# <a name="azure-security-center"></a>[Azure Security Center](#tab/AzureSecurityCenter)
 
 Azure Security Center ist eine wichtige Komponente Ihrer Governancestrategie. Sie unterstützt Ihre Sicherheit aus den folgenden Gründen optimal:
 

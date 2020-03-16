@@ -1,18 +1,18 @@
 ---
 title: Schaffen einer kostenbewussten Organisation
-description: Erfahren Sie etwas über bewährte Methoden zum Schaffen einer kostenbewussten Organisation.
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um sich mit den bewährten Methoden zur Schaffung einer kostenbewussten Organisation vertraut zu machen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.openlocfilehash: 9c4b6e89d3593bebad491cb967d39be529de8989
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 57205533f8ae9b2da39ba7cc94e1071b0bde8c4f
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225384"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093840"
 ---
 # <a name="build-a-cost-conscious-organization"></a>Schaffen einer kostenbewussten Organisation
 

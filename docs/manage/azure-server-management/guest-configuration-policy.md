@@ -1,18 +1,18 @@
 ---
 title: Gastkonfigurationsrichtlinie
-description: Hier erfahren Sie, wie Sie mit der Erweiterung für die Gastkonfiguration von Azure Policy Konfigurationseinstellungen in einem virtuellen Azure-Computer überprüfen.
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie Sie mit der Erweiterung für die Gastkonfiguration von Azure Policy Konfigurationseinstellungen eines virtuellen Azure-Computers überprüfen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 6e935288ce58af0570717c973c21b406ee94ebc0
-ms.sourcegitcommit: 238e7a06b56950cebdcc8f75924849fc995e6ff2
+ms.openlocfilehash: 73373e5cc56ef7e5804151171a22ad9f541f1cd3
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77173300"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094692"
 ---
 # <a name="guest-configuration-policy"></a>Gastkonfigurationsrichtlinie
 

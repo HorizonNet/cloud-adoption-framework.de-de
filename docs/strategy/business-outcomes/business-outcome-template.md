@@ -1,18 +1,18 @@
 ---
 title: Verwenden der Vorlage für Geschäftsergebnisse
-description: Erläuterung der Vorlage für Geschäftsergebnisse
+description: Es wird beschrieben, wie Sie die Vorlage für Geschäftsergebnisse zum Erfassen von Geschäftsergebnissen verwenden, die bei der Entwicklung von Strategien zur Kundentransformation genutzt werden können.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 53e925a7ccf036e03b73bb888fa112549a65433e
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 243a75f8aa5352299e0730a91f462fbf935a2f2f
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798552"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092934"
 ---
 # <a name="how-to-use-the-business-outcome-template"></a>Verwenden der Vorlage für Geschäftsergebnisse
 
@@ -24,7 +24,7 @@ Laden Sie die [Arbeitsmappe mit der Vorlage für Geschäftsergebnisse](https://a
 
 ## <a name="use-the-business-outcome-template"></a>Verwenden der Vorlage für Geschäftsergebnisse
 
-In den von Kate Johnson an Microsofts Digital Transformation Academy eingeführten Geschäftsergebnissen geht es um drei Themen:
+In dieser Vorlage geht es bei den Geschäftsergebnissen um drei Themen:
 
 - Anpassen an Beteiligte oder Geschäftsentscheidungsträger
 - Verstehen der geschäftlichen Faktoren und Geschäftsziele

@@ -1,19 +1,21 @@
 ---
 title: Überprüfen Ihrer Speicheroptionen
-description: Überprüfen Sie Ihre Speicheroptionen für Azure-Workloads.
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie Sie Ihre Speicheroptionen für Azure-Workloads überprüfen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 054537d4d1b9a83700ed0c6a1a8840682f04faa1
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 28c5fbb7a95edd2ad32ccc3489f81cd99dc6c088
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892496"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093015"
 ---
+<!-- cSpell:ignore HDFS databox Avere HANA ACLs Isilon DFSR Cloudera -->
+
 # <a name="review-your-storage-options"></a>Überprüfen Ihrer Speicheroptionen
 
 Speicherfunktionen sind von entscheidender Bedeutung, wenn es um die Unterstützung von Workloads und Diensten geht, die in der Cloud gehostet werden. Lesen Sie im Rahmen Ihrer Vorbereitung auf die Bereitschaft zur Cloudeinführung diesen Artikel, um Ihre Speicheranforderungen zu planen und zu erfüllen.

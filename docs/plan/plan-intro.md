@@ -1,18 +1,18 @@
 ---
 title: Planen der Cloudeinführung
-description: Planen der Cloudeinführung
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie ein Cloudeinführungsplan Unternehmen dabei unterstützt, das IT-Portfolio ausgeglichen zu gestalten und Übergänge im Laufe der Zeit zu verwalten.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 36d87caae344414e7bb311fb032d28f58bc5ea6c
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: d02dfda3b44155b7208e9caf00e979553fe97ff3
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222157"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093544"
 ---
 # <a name="plan-for-cloud-adoption"></a>Planen der Cloudeinführung
 

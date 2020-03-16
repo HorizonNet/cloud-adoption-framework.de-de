@@ -1,6 +1,6 @@
 ---
 title: Umkreisnetzwerke
-description: Hier finden Sie Informationen zur Verwendung von Azure-Features und -Diensten durch Umkreisnetzwerke (Demilitarized Zones, DMZs).
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie Sie Azure für Ihre Organisation effizient einrichten.
 author: tracsman
 ms.author: jonor
 ms.date: 05/10/2019
@@ -10,13 +10,15 @@ ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 2aa561a7ffdcf43ffc56ad89849e933ea8abf186
-ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
+ms.openlocfilehash: cbf77bad65753d219e3a0a53f300aee3690b001d
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76994221"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79093239"
 ---
+<!-- cSpell:ignore tracsman jonor rossort NVAs WAFs -->
+
 # <a name="perimeter-networks"></a>Umkreisnetzwerke
 
 [Umkreisnetzwerke][perimeter-network] sorgen für sichere Konnektivität zwischen Ihren Cloudnetzwerken und Ihren lokalen oder physischen Datencenternetzwerken (sowie für Internetkonnektivität). Sie werden auch als „entmilitarisierte Zonen“ (DMZ) bezeichnet.
@@ -41,9 +43,9 @@ Umkreisnetzwerken nutzen die folgenden Azure-Funktionen und -Dienste:
 
 In der Regel sind Ihre zentralen IT- und Sicherheitsteams für die Anforderungendefinition und den Betrieb Ihrer Umkreisnetzwerke verantwortlich.
 
-![Beispiel zur Hub-and-Spoke-Netzwerktopologie][7]
+![Beispiel für eine Hub-and-Spoke-Netzwerktopologie](../../_images/azure-best-practices/network-high-level-perimeter-networks.png)
 
-Die obige Abbildung zeigt ein Beispiel einer [Hub-and-Spoke-Netzwerktopologie](./hub-spoke-network-topology.md), das die Durchsetzung von zwei Perimetern mit Zugriff auf das Internet und ein lokales Netzwerk implementiert. Beide Perimeter befinden sich im DMZ-Hub. Im DMZ-Hub kann das Umkreisnetzwerk für das Internet zentral hochskaliert werden, um viele Branchenanwendungen (LOBs) zu unterstützen, indem mehrere Farmen von WAFS und Azure-Firewallinstanzen verwendet werden, die zum Schutz der virtuellen Spokenetzwerks beitragen. Der Hub ermöglicht je nach Bedarf außerdem Konnektivität über VPN oder Azure ExpressRoute.
+Das obige Diagramm enthält ein Beispiel für eine [Hub-and-Spoke-Netzwerktopologie](./hub-spoke-network-topology.md), in dem die Durchsetzung von zwei Umkreisnetzwerken mit Zugriff auf das Internet und ein lokales Netzwerk implementiert wird. Beide Perimeter befinden sich im DMZ-Hub. Im DMZ-Hub kann das Umkreisnetzwerk für das Internet zentral hochskaliert werden, um viele Branchenanwendungen (LOBs) zu unterstützen, indem mehrere Farmen von WAFS und Azure-Firewallinstanzen verwendet werden, die zum Schutz der virtuellen Spokenetzwerks beitragen. Der Hub ermöglicht je nach Bedarf außerdem Konnektivität über VPN oder Azure ExpressRoute.
 
 ## <a name="virtual-networks"></a>Virtuelle Netzwerke
 
@@ -107,40 +109,13 @@ Sie können Schutzrichtlinien über dedizierte Datenverkehrsüberwachung und Mac
 
 Über Azure Monitor-Ansichten steht Echtzeittelemetrie sowohl während eines Angriffs als auch für den Verlauf zur Verfügung. Mit der Webanwendungsfirewall in Azure Application Gateway können Sie Schutz auf Anwendungsebene hinzufügen. Der Schutz wird für öffentliche Azure-IPv4-Adressen bereitgestellt.
 
-<!-- images -->
-
-[0]: ../../_images/azure-best-practices/network-redundant-equipment.png "Beispiele für Komponentenüberlappung"
-[1]: ../../_images/azure-best-practices/network-hub-spoke-high-level.png "Allgemeines Beispiel für Hub-and-Spoke"
-[2]: ../../_images/azure-best-practices/network-hub-spokes-cluster.png "Cluster mit Hub und Spokes"
-[3]: ../../_images/azure-best-practices/network-spoke-to-spoke.png "Spoke-zu-Spoke"
-[4]: ../../_images/azure-best-practices/network-hub-spoke-block-level-diagram.png "Blockebenenabbildung von Hub-Spoke"
-[5]: ../../_images/azure-best-practices/network-users-groups-subscriptions.png "Benutzer, Gruppen, Abonnements und Projekte"
-[6]: ../../_images/azure-best-practices/network-infrastructure-high-level.png "Abbildung der allgemeinen Infrastruktur"
-[7]: ../../_images/azure-best-practices/network-high-level-perimeter-networks.png "Abbildung der allgemeinen Infrastruktur"
-[8]: ../../_images/azure-best-practices/network-vnet-peering-perimeter-networks.png "VNET-Peering und Umkreisnetzwerke"
-[9]: ../../_images/azure-best-practices/network-high-level-diagram-monitoring.png "Übersichtsabbildung der Überwachung"
-[10]: ../../_images/azure-best-practices/network-high-level-workloads.png "Übersichtsabbildung über Workloads"
-
 <!-- links -->
 
-[Limits]: https://docs.microsoft.com/azure/azure-subscription-service-limits
-[Roles]: https://docs.microsoft.com/azure/role-based-access-control/built-in-roles
 [virtual-networks]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview
 [network-security-groups]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg
-[DNS]: https://docs.microsoft.com/azure/dns/dns-overview
-[PrivateDNS]: https://docs.microsoft.com/azure/dns/private-dns-overview
-[VNetPeering]: https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview
 [user-defined-routes]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview
-[RBAC]: https://docs.microsoft.com/azure/role-based-access-control/overview
-[azure-ad]: https://docs.microsoft.com/azure/active-directory/active-directory-whatis
-[VPN]: https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways
-[ExR]: https://docs.microsoft.com/azure/expressroute/expressroute-introduction
-[ExRD]: https://docs.microsoft.com/azure/expressroute/expressroute-erdirect-about
-[vWAN]: https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about
 [NVA]: https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/nva-ha
 [AzFW]: https://docs.microsoft.com/azure/firewall/overview
-[SubMgmt]: https://docs.microsoft.com/azure/architecture/cloud-adoption/reference/azure-scaffold
-[RGMgmt]: https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview
 [perimeter-network]: https://docs.microsoft.com/azure/best-practices-network-security
 [ALB]: https://docs.microsoft.com/azure/load-balancer/load-balancer-overview
 [DDoS]: https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview
@@ -149,15 +124,3 @@ Sie können Schutzrichtlinien über dedizierte Datenverkehrsüberwachung und Mac
 [AFDWAF]: https://docs.microsoft.com/azure/frontdoor/waf-overview
 [AppGW]: https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction
 [AppGWWAF]: https://docs.microsoft.com/azure/application-gateway/application-gateway-web-application-firewall-overview
-[Monitor]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/
-[ActLog]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-activity-logs
-[DiagLog]: https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs
-[nsg-log]: https://docs.microsoft.com/azure/virtual-network/virtual-network-nsg-manage-log
-[OMS]: https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-overview
-[NPM]: https://docs.microsoft.com/azure/log-analytics/log-analytics-network-performance-monitor
-[NetWatch]: https://docs.microsoft.com/azure/network-watcher/network-watcher-monitoring-overview
-[WebApps]: https://docs.microsoft.com/azure/app-service/
-[HDI]: https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-introduction
-[EventHubs]: https://docs.microsoft.com/azure/event-hubs/event-hubs-what-is-event-hubs
-[ServiceBus]: https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview
-[traffic-manager]: https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview

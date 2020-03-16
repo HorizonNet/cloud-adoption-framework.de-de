@@ -1,6 +1,6 @@
 ---
-title: Cloudbetriebsmodell ist jetzt das Framework für die Cloudeinführung (Cloud Adoption Framework) für Microsoft Azure
-description: Erfahren Sie über die Verwendung von Cloudbetriebsmodell-Methoden innerhalb des Frameworks für die Cloudeinführung.
+title: Cloudbetriebsmodell ist jetzt das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um ausführliche Informationen zur Beschleunigung Ihrer Cloudeinführung zu erhalten.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -9,16 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 8408b657a3896cbb9376d0364dbd752ed90b9306
-ms.sourcegitcommit: 7ffb0427bba71177f92618b2f980e864b72742f4
+ms.openlocfilehash: d1ba5e26214a0b60a4fe9fefb23d1dffaf8fa4ed
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73048135"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023868"
 ---
 # <a name="cloud-operating-model-is-now-part-of-the-microsoft-cloud-adoption-framework-for-azure"></a>DAs Cloudbetriebsmodell ist jetzt Bestandteil des Frameworks für die Cloudeinführung (Cloud Adoption Framework) für Microsoft Azure.
 
-Anfang 2018 hat Microsoft das Cloudbetriebsmodell (Cloud Operating Model, COM) veröffentlicht. Das COM war eine Anleitung, die unseren Kunden dabei half, die **Gegenstände** und **Gründe** der digitalen Transformation zu verstehen. Dies hat den Kunden dabei geholfen, ein Gefühl für all die Bereiche zu bekommen, die berücksichtigt werden mussten: Geschäftsstrategie, kulturelle Strategie und technologische Strategie. Im COM nicht enthalten waren die spezifischen _Schrittanleitungen_, sodass sich unsere Kunden fragten, wohin es von hier aus weitergehen sollte.
+Anfang 2018 hat Microsoft das Cloudbetriebsmodell (Cloud Operating Model, COM) veröffentlicht. Das COM war eine Anleitung, die unseren Kunden dabei half, die **Gegenstände** und **Gründe** der digitalen Transformation zu verstehen. Dies hat den Kunden dabei geholfen, ein Gefühl für all die Bereiche zu bekommen, die berücksichtigt werden mussten: Geschäftsstrategie, kulturelle Strategie und technologische Strategie. Im COM nicht enthalten waren die spezifischen _Schrittanleitungen_, sodass sich unsere Kunden gefragt haben, wie sie weiter vorgehen sollten.
 
 Im Oktober 2018 haben wir mit einer Überprüfung aller Modelle begonnen, die sich in der Microsoft-Community vermehrt hatten, sodass wir grob 60 verschiedene Cloudeinführungsmodelle gefunden haben. Ein interdisziplinäres Microsoft-Team wurde eingerichtet, um alles in Form eines einzigen, dedizierten technischen „Produkts“ zusammenzuführen, mit definierten Implementierungen für Dienste, Vertrieb und Marketing. Diese Bemühungen gipfelten in der Erstellung eines einzigen Modells, dem Microsoft Cloud Adoption Framework für Azure (Framework für die Cloudeinführung), entworfen, um Kunden beim Verständnis der **Gegenstände** und **Gründe** zu helfen sowie einheitliche Anleitungen zur **Vorgehensweise** zu bieten, um ihre Cloudeinführung zu beschleunigen. Das Ziel dieses Projekts ist die Erstellung eines One Microsoft-Ansatzes für die Cloudeinführung.
 
@@ -47,7 +47,7 @@ Die Umfänge des Cloudbetriebsmodell und des Frameworks für die Cloudeinführun
 > [!NOTE]
 > Der Umfang des Cloud Adoption Framework weist zwei signifikante klare Punkte auf. Im Framework für die Cloudeinführung geht die Geschäftsstrategie über die Dokumentation von Cloudkosten hinaus. Es geht dabei um das Verständnis von Motivationen, gewünschten Ergebnissen, Umsätzen und Cloudkosten, um umsetzbare Pläne und klare geschäftliche Begründungen zu erstellen. Im Framework für die Cloudeinführung geht die Mitarbeiterstrategie über Schulungen hinaus, um Ansätze zu berücksichtigen, die nachweisliche kulturelle Reife erzeugen. Einige Bereiche der Roadmap umfassen Demonstrationen der Auswirkungen von agiler Verwaltung, DevOps-Integration, Kundenempathie und Besessenheit sowie von schlanken Produktentwicklungsansätzen.
 
-## <a name="structure"></a>Strukturdefinition
+## <a name="structure"></a>Struktur
 
 COM enthielt eine Infografik, die die verschiedenen Entscheidungen und Aktionen umriss, die während der Anstrengungen einer Cloudeinführung erforderlich sind. Diese Grafik bot ein definiertes Mittel zur Kommunikation von Folgeschritten und abhängigen Entscheidungen.
 

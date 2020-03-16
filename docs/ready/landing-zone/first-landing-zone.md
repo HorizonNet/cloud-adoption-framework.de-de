@@ -8,12 +8,12 @@ ms.date: 02/25/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b451ec6f58a684bd4fb5998f1915dc79761b7a44
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 04293b0e0d30ae1eaa85f4c86c6c7d70b2cfac82
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78228585"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092959"
 ---
 # <a name="first-landing-zone"></a>Erste Landezone
 
@@ -33,7 +33,8 @@ C. Einige Cloudeinführungspläne unterliegen externen Complianceanforderungen. 
 
 D: Wenn ein Partner kontinuierlich verwaltete Dienste bereitstellt oder vertragliche Verpflichtungen in Bezug auf den Einführungsplan hat, stellt er in der Regel eine eigene Zielzone bereit. Die Verwendung einer Partnerzielzone könnte die Einführung beschleunigen und konsistente Anforderungen an die Betriebsverwaltung gewährleisten. Beachten Sie jedoch die internen Governance- und Sicherheitsanforderungen, um die Ausrichtung sicherzustellen.
 
-E. Einführungsteams mit dem mittelfristigen Ziel (innerhalb von 24 Monaten), **mehr als 1.000 Ressourcen (App-, Infrastruktur- oder Datenressourcen) in der Cloud zu hosten**, finden in NorthStar von Cloud Adoption Framework eine Hilfe für die Plattformarchitektur und Zielzonen. NorthStar ist eine erweiterte Roadmap, die auch die Zielstatus-Plattformarchitektur und Referenzimplementierungen umfasst. Diese Roadmap beinhaltet Aspekte paralleler Methoden, einschließlich Governance und Betrieb, damit Sie sich besser auf eine unternehmenskritische, sichere, komplexe und compliancegesteuerte Einführung vorbereiten können.
+> [!NOTE]
+> Bevor Sie einen Code First-Ansatz mit Fokus auf Refactoring wählen, sollten Sie sich mit den [konkurrierenden Prioritäten dieser Entscheidung](../../strategy/balance-competing-priorities.md#balance-during-ready) vertraut machen. Bei der Wahl eines Ansatzes mit Zielzonen ist es wichtig, dass Sie mit der erforderlichen Ausgewogenheit zwischen „Einführungsdauer“ und „Langfristigem Betrieb“ vertraut sind.
 
 ## <a name="choosing-a-first-landing-zone"></a>Auswählen Ihrer ersten Zielzone
 
@@ -49,7 +50,7 @@ In der folgenden Tabelle werden die gleichen Zielzonen aus einer etwas anderen P
 | Zielzone                                 | Hub                          | Spoke    | Cloudmodell | Technologie      |
 |----------------------------------------------|------------------------------|----------|-------------|-----------------|--|--|--|
 | [CAF-Migration](./migrate-landing-zone.md)     | Refactoring erforderlich            | Enthalten | Nur Azure  | Azure Blueprint |
-| [CAF-Terraform](./terraform-landing-zone.md) | Im NorthStar-Modul enthalten | Enthalten | Verwenden mehrerer Clouds  | Terraform       |
+| [CAF-Terraform](./terraform-landing-zone.md) | Im VDC-Modul enthalten       | Enthalten | Verwenden mehrerer Clouds  | Terraform       |
 
 ## <a name="next-steps"></a>Nächste Schritte
 

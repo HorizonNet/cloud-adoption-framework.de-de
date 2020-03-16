@@ -1,6 +1,6 @@
 ---
-title: Effizientes Organisieren Ihrer Azure-Ressourcen
-description: Bewährte Methoden zur Vereinfachung der Verwaltung Ihrer Azure-Ressourcen durch effiziente Organisation.
+title: Effizientes Organisieren von Azure-Ressourcen
+description: Machen Sie sich mit den bewährten Methoden vertraut, mit denen Sie Ihre Azure-Ressourcen so effizient organisieren können, dass eine einfache Verwaltung möglich ist.
 author: laraaleite
 ms.author: kfollis
 ms.date: 04/09/2019
@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: eb2564239548f77084fbc38d93003346a07e8e84
-ms.sourcegitcommit: 1de39a4c3954512892f11e3d1330a04e95ce187d
+ms.openlocfilehash: 67e22ff4831d6bca4bb0054b544bf2efba02a93e
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567757"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79024006"
 ---
+<!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
+
 # <a name="organize-your-azure-resources"></a>Organisieren Ihrer Azure-Ressourcen
 
 Die Organisation Ihrer cloudbasierten Ressourcen ist entscheidend für die Sicherung, Verwaltung und Nachverfolgung der mit Ihren Workloads verbundenen Kosten. Um Ihre Ressourcen zu organisieren, verwenden Sie die Verwaltungshierarchien innerhalb der Azure-Plattform, implementieren Sie gut durchdachte Benennungskonventionen, und wenden Sie Ressourcentagging an.
@@ -156,7 +158,7 @@ Sie können Tags auch für viele andere Dinge verwenden. Sie werden häufig für
 
 - **Metadaten und Dokumentation**: Durch Anwenden eines Tags wie „ProjectOwner“ können Administratoren problemlos Details zu den Ressourcen anzeigen, an denen sie arbeiten.
 - **Automatisierung:** Unter Umständen verfügen Sie über regelmäßig ausgeführte Skripts, die basierend auf einem Tagwert wie „ShutdownTime“ oder „DeprovisionDate“ eine Aktion durchführen können.
-- **Kostenoptimierung:** Sie können den Teams und Mitarbeitern, die für die Kosten verantwortlich sind, Ressourcen zuweisen. In Azure Cost Management können Sie das Kostenstellentag als Filter anwenden, um die Gebühren basierend auf der Nutzung eines Teams oder einer Abteilung zu melden.
+- **Kostenoptimierung:** In Azure Cost Management können Sie das Kostenstellentag als Filter anwenden, um Gebühren basierend auf der Nutzung eines Teams oder einer Abteilung zu melden.
 
 Jede Ressource oder Ressourcengruppe kann maximal 50 Tagname-Wert-Paare aufweisen. Diese Einschränkung gilt nur für Tags, die direkt auf die Ressourcengruppe oder die Ressource angewendet werden.
 

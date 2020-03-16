@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2d7ae4989251c0c3022c1044280d433e4dc920ad
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 854e22b70250496704cade4d7465c217705c928d
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78898112"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79094831"
 ---
+<!-- cSpell:ignore HDFS databox VHDX -->
+
 # <a name="data-requirements-exceed-network-capacity-during-a-migration-effort"></a>Datenanforderungen überschreiten Netzwerkkapazität während einer Migration
 
 Bei einer Cloudmigration werden Ressourcen über das Netzwerk zwischen dem vorhandenen Rechenzentrum und der Cloud repliziert und synchronisiert. Es ist nicht ungewöhnlich, dass die vorhandenen Datengrößenanforderungen von verschiedenen Workloads die Netzwerkkapazität überschreiten. In einem solchen Szenario kann der Migrationsprozess sich drastisch verlangsamen oder in einigen Fällen ganz beendet werden. Die folgende Anleitung erweitert den Umfang des [Leitfadens zur Azure-Migration](../azure-migration-guide/index.md) und bietet eine Lösung zum Umgehen von Netzwerkbeschränkungen.
@@ -28,7 +30,7 @@ Die meisten Aufgaben dieser Umfangserweiterung finden in den Prozessen für die 
 
 **Offlineübertragung von unabhängigen Datenspeichern:** In der nachfolgenden Abbildung sind Beispiele für die Onlinedatenübertragung sowie die Offlinedatenübertragung mit Azure Data Box dargestellt. Diese Ansätze können verwendet werden, um große Datenmengen vor der Workloadmigration in die Cloud zu versenden. Bei einer Offlinedatenübertragung werden die Quelldaten auf den Azure Data Box-Datenträger kopiert, der dann zur Übertragung als Datei oder Blob in ein Azure Storage-Konto physisch an Microsoft versendet wird. Bei diesem Vorgang können Daten versendet werden, die nicht direkt an eine bestimmte Workload gebunden sind, bevor andere Migrationsvorgänge durchgeführt werden. Dadurch wird die Menge der Daten reduziert, die über das Netzwerk übertragen werden müssen, um eine Migration innerhalb der Netzwerkeinschränkungen abschließen zu können.
 
-Diese Vorgehensweise kann für die Übertragung von HDFS-Daten, Sicherungen, Archiven, Dateiservern, Anwendungen usw. verwendet werden. In vorhandenen technischen Anleitungen wird erläutert, wie Daten auf diese Weise aus [einem HDFS-Speicher](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) oder mithilfe von [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs), [REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) oder des [Datenkopierdiensts](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) von Datenträgern in Data Box übertragen werden.
+Diese Vorgehensweise kann für die Übertragung von Daten aus HDFS, Sicherungen, Archiven, Dateiservern und Anwendungen verwendet werden. In vorhandenen technischen Anleitungen wird erläutert, wie Daten auf diese Weise aus [einem HDFS-Speicher](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) oder mithilfe von [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs), [REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) oder des [Datenkopierdiensts](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) von Datenträgern in Data Box übertragen werden.
 
 Es gibt auch [Partnerlösungen von Drittanbietern](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box), bei denen Azure Data Box für eine „Seed & Feed“-Migration verwendet wird, wobei eine große Datenmenge über eine Offlineübertragung verschoben wird, später aber in geringerem Umfang über das Netzwerk synchronisiert wird.
 

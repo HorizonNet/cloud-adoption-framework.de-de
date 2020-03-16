@@ -1,18 +1,18 @@
 ---
 title: Erste Schritte mit dem Pfad für die Qualifikationsbereitschaft
-description: Erste Schritte mit dem Pfad für die Qualifikationsbereitschaft
+description: Nutzen Sie den Pfad für die Qualifikationsbereitschaft, und übernehmen Sie bei der Einführung von Clouddiensten eine Führungsrolle, indem Sie der Organisation dabei helfen, die entsprechenden Veränderungen zu verstehen und umzusetzen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 88de7ae19e3853bf132b58d0c3cbeb16d278a28f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3fdfbcbaabb79876d32fa8ea172b2c426ada9464
+ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800150"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78892683"
 ---
 # <a name="getting-started-on-a-skills-readiness-path"></a>Erste Schritte mit dem Pfad für die Qualifikationsbereitschaft
 
@@ -28,7 +28,7 @@ Das Cloud Adoption Framework führt den Leser durch den gesamten Einführungszyk
 - **[Bereit](../ready/suggested-skills.md):** Entwickeln Sie die Qualifikationen, die erforderlich sind, um das Unternehmen, die Kultur, die Personen und die Umgebung auf kommende Veränderungen vorzubereiten.
 
 - **Einführung:** Die Einführungsqualifikationen sind auf verschiedene technische Bemühungen ausgerichtet:
-  - **[Migrieren](../migrate/expanded-scope/suggested-skills.md):** Erwerben Sie die erforderlichen Qualifikationen, um den Cloudmigrationsplan zu implementieren.
+  - **[Migrieren](../migrate/suggested-skills.md):** Erwerben Sie die erforderlichen Qualifikationen, um den Cloudmigrationsplan zu implementieren.
   - **Innovation:** Erwerben Sie die erforderlichen Qualifikationen, um innovative neue Lösungen bereitzustellen.
 
 - **Betrieb:** Die Qualifikationen in Bezug auf das Betriebsmodell für die Cloudeinführung sind auf verschiedene Qualifizierungsmöglichkeiten ausgerichtet:

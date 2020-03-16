@@ -8,19 +8,19 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: d94db62c907599720c8f29408c6b3e5ee5cfde5e
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 8291b48d2955d623b643c944f4307613bcf22f47
+ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78225273"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79023943"
 ---
-<!-- cSpell:ignore rodend subscope ITSM -->
+<!-- cSpell:ignore rodend subscope ITSM Hashi -->
 
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure-Unternehmensgerüst: Präskriptive Abonnementgovernance
 
 > [!NOTE]
-> Azure-Unternehmensgerüste wurden in das Microsoft Cloud Adoption Framework integriert. Der Inhalt dieses Artikels wird jetzt im Abschnitt zur [Bereitschaft](../ready/index.md) des neuen Frameworks dargestellt. Dieser Artikel wird Anfang 2020 zurückgezogen. Informationen zur Verwendung des neuen Prozesses finden Sie unter [Übersicht zur Bereitschaft](../ready/index.md), [Erstellen Ihrer ersten Landezone](../ready/azure-setup-guide/migration-landing-zone.md) und [Überlegungen zur Landezone](../ready/considerations/index.md).
+> Azure-Unternehmensgerüste wurden in das Microsoft Cloud Adoption Framework integriert. Der Inhalt dieses Artikels wird jetzt im Abschnitt zur [Bereitschaft](../ready/index.md) des neuen Frameworks dargestellt. Dieser Artikel wird Anfang 2020 zurückgezogen. Informationen zur Verwendung des neuen Prozesses finden Sie unter [Übersicht zur Bereitschaft](../ready/index.md), [Erstellen Ihrer ersten Landezone](../ready/landing-zone/migrate-landing-zone.md) und [Überlegungen zur Landezone](../ready/considerations/index.md).
 
 Immer mehr Unternehmen führen für Mobilität und Flexibilität eine öffentliche Cloud ein. Sie setzen auf die Stärken der Cloud, um Umsatz zu generieren und die Ressourcennutzung im Unternehmen zu optimieren. Microsoft Azure bietet eine Vielzahl von Diensten und Funktionen, die Unternehmen wie Bausteine zusammenstellen können, um ein umfangreiches Spektrum an Workloads und Anwendungen zu berücksichtigen.
 
@@ -77,7 +77,7 @@ Die drei allgemeinen Muster für Azure-Registrierungen sind:
 
   ![Das auf geografischen Regionen basierende Muster](../_images/reference/geographic.png)
 
-Jedes dieser Muster hat seine Vorteile, Organisationen nutzen aber zunehmend das Muster der **Unternehmenseinheiten**, da dieses sowohl Flexibilität beim Erstellen eines Kostenmodells für die Organisation auch eine große Bandbreite an Steuerungsmöglichkeiten bietet. Die Microsoft-Unternehmensgruppe „Core Engineering and Operations“ hat eine effektive Teilmenge des auf **Unternehmenseinheiten** basierenden Musters erstellt. Die Hierarchieebenen hierbei sind **Federal**, **State** und **Local**. Weitere Informationen finden Sie unter [Organisieren von Abonnements und Ressourcengruppen im Unternehmen](https://azure.microsoft.com/blog/organizing-subscriptions-and-resource-groups-within-the-enterprise).
+Jedes dieser Muster hat seine Vorteile, Organisationen nutzen aber zunehmend das Muster der **Unternehmenseinheiten**, da dieses sowohl Flexibilität beim Erstellen eines Kostenmodells für die Organisation auch eine große Bandbreite an Steuerungsmöglichkeiten bietet. Die Microsoft-Unternehmensgruppe „Core Engineering and Operations“ hat eine effektive Teilmenge des auf **Unternehmenseinheiten** basierenden Musters erstellt. Die Hierarchieebenen hierbei sind **Federal**, **State** und **Local**. Weitere Informationen finden Sie unter [Organisieren von Abonnements und Ressourcengruppen im Unternehmen](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/scaling-subscriptions).
 
 ### <a name="azure-management-groups"></a>Azure-Verwaltungsgruppen
 
@@ -314,7 +314,7 @@ Die Automatisierung ist ein Vollzeitjob und wird sehr schnell zu einer der wicht
 
 ## <a name="templates-and-devops"></a>Vorlagen und DevOps
 
-Wie im Abschnitt zur Automatisierung beschrieben, sollte es das Ziel Ihrer Organisation sein, Ressourcen mithilfe von Vorlagen und Skripts mit Quellcodeverwaltung bereitzustellen und interaktive Konfigurationsaktivitäten in Ihren Umgebungen so weit wie möglich zu reduzieren. Dieser „Infrastruktur als Code“-Ansatz sowie ein strikter DevOps-Prozess für Continuous Deployment kann die Konsistenz sicherstellen und Abweichungen zwischen Ihren Umgebungen minimieren. Nahezu jede Azure-Ressource lässt sich über [Azure Resource Manager und JSON-Vorlagen](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-template-deploy) bereitstellen – in Kombination mit PowerShell oder der plattformübergreifenden Azure CLI und Tools wie Terraform von Hashicorp (mit erstklassigem Support und enger Integration in die Azure Cloud Shell).
+Wie im Abschnitt zur Automatisierung beschrieben, sollte es das Ziel Ihrer Organisation sein, Ressourcen mithilfe von Vorlagen und Skripts mit Quellcodeverwaltung bereitzustellen und interaktive Konfigurationsaktivitäten in Ihren Umgebungen so weit wie möglich zu reduzieren. Dieser „Infrastruktur als Code“-Ansatz sowie ein strikter DevOps-Prozess für Continuous Deployment kann die Konsistenz sicherstellen und Abweichungen zwischen Ihren Umgebungen minimieren. Nahezu jede Azure-Ressource lässt sich über [Azure Resource Manager und JSON-Vorlagen](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-template-deploy) bereitstellen – in Kombination mit PowerShell oder der plattformübergreifenden Azure CLI und Tools wie Terraform von HashiCorp (mit erstklassigem Support und enger Integration in die Azure Cloud Shell).
 
 In Artikeln wie [Best Practices für die Verwendung von Azure Resource Manager-Vorlagen](https://blogs.msdn.microsoft.com/mvpawardprogram/2018/05/01/azure-resource-manager) finden Sie eine hervorragende Erörterung von bewährten Methoden und Erfahrungswerten bei der Anwendung von DevOps-Verfahren auf Azure Resource Manager-Vorlagen mit der [Azure DevOps](https://docs.microsoft.com/azure/devops/user-guide/?view=vsts)-Toolkette. Investieren Sie in den Zeit- und Arbeitsaufwand, der notwendig ist, um einen grundlegenden Satz an Vorlagen zu entwickeln, die genau auf die Anforderungen Ihrer Organisation zugeschnitten sind. Entwickeln Sie außerdem Continuous Delivery-Pipelines mit DevOps-Toolketten (z.B. Azure DevOps, Jenkins, Bamboo, TeamCity und Concourse) speziell für Ihre Produktions- und QA-Umgebungen. Auf GitHub finden Sie eine umfangreiche Bibliothek mit [Azure-Schnellstartvorlagen](https://github.com/Azure/azure-quickstart-templates), die Sie als Startpunkt für Ihre eigenen Vorlagen verwenden können – so können Sie mit Azure DevOps im Handumdrehen cloudbasierte Bereitstellungspipelines erstellen.
 

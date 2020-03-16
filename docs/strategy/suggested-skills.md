@@ -1,18 +1,18 @@
 ---
 title: Pfad für die Qualifikationsbereitschaft während der Planung
-description: Übersicht über den Pfad für die Qualifikationsbereitschaft während der Phase „Planung“ einer Migration
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um sich mit dem Pfad für die Qualifikationsbereitschaft während der Planungsphase der Migration vertraut zu machen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 36e7957f8bcdcc7edc12f3a2e5309eac3d551fb5
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: c138a81de0fd92c1a079c7a2f52255d5c7959526
+ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76798110"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79092828"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>Pfad für die Qualifikationsbereitschaft während der Phase „Planung“ einer Migrationsreise
 

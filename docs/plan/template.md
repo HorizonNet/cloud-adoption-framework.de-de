@@ -1,18 +1,18 @@
 ---
-title: Bereitstellen des Cloudeinführungsplans für Azure DevOps
-description: Bereitstellen der Vorlage für den Cloudeinführungsplan
+title: Bereitstellung per Cloudeinführungsplan für Azure DevOps
+description: Es wird beschrieben, wie Sie schnell einen Backlog für Azure DevOps bereitstellen können, indem Sie eine Vorlage für den Cloudeinführungsplan verwenden, mit der Maßnahmen zur Einführung der Cloud auf einen standardisierten Prozess ausgerichtet werden.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a7e4dfda94b15a1e589ffadc9b13db57f4a70ef7
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: a7f03ce1f83d59fdcfe2b2ce696b6b591b8d0655
+ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76800116"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78341928"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Cloudeinführungsplan und Azure DevOps
 
