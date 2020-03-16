@@ -1,6 +1,6 @@
 ---
 title: Roadmap
-description: Erfahren Sie über die Roadmap für das Framework für die Einführung der Microsoft Cloud für Azure (Microsoft Cloud Adoption Framework).
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie Sie Strategien für Unternehmen, Kultur und Technologie ausrichten, um die gewünschten Geschäftsergebnisse zu erzielen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 layout: LandingPage
-ms.openlocfilehash: 7c808e02b0f1d759fcb37acd0a6b6a24d2087950
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: c8bf289019e2200b5689a760e4a633ba901540c1
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140568"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311573"
 ---
 # <a name="cloud-adoption-framework-roadmap"></a>Framework für die Cloudeinführung (Cloud Adoption Framework, CAF): Roadmap
 
