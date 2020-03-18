@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 42f55a866b3ac8f044861ef2bc738e128b3c9f38
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 9f374bbe149e132fde4c44a8c0ecd9246615bac0
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341911"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140619"
 ---
 # <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Priorisierung und Definition von Workloads für einen Cloudeinführungsplan
 
@@ -21,6 +21,8 @@ Die Festlegung klarer, umsetzbarer Prioritäten ist eines der Geheimnisse einer 
 Stattdessen empfehlen wir, dass sich Ihr Team darauf konzentriert, die ersten 10 Workloads gründlich zu priorisieren und zu dokumentieren. Nachdem die Implementierung des Einführungsplans begonnen hat, kann das Team eine Liste der nächsten 10 Workloads mit höchster Priorität führen. Dieser Ansatz bietet genügend Informationen, um für die nächsten Iterationen zu planen.
 
 Die Beschränkung des Plans auf 10 Workloads fördert die Flexibilität und die Ausrichtung der Priorisierung als Änderung der Geschäftskriterien. Dieser Ansatz lässt dem Cloudeinführungsteam auch Spielraum, um das Einschätzen zu lernen und zu verfeinern. Aber vor allem macht er eine aufwändige Planung als Hindernis für einen effektiven Geschäftswandel überflüssig.
+
+<!-- markdownlint-disable MD026 -->
 
 ## <a name="what-is-a-workload"></a>Was ist eine Workload?
 

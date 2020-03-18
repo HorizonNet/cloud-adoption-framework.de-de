@@ -1,19 +1,19 @@
 ---
 title: Rationalisieren der digitalen Ressourcen
-description: Bewerten Sie Ihre digitalen Ressourcen, um zu ermitteln, wie sich diese am besten in der Cloud hosten lassen.
+description: Nutzen Sie die Rationalisierung der Cloud, um Ihre digitalen Ressourcen zu evaluieren und die beste Vorgehensweise für das Hosten in der Cloud zu ermitteln.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 12/10/2018
+ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: c618e6c1cf83199ae55df44397e07f3755fbb1f8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 14f96dde6558588c092a181aa2b7a2e57220cf5f
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76804553"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312721"
 ---
 # <a name="rationalize-the-digital-estate"></a>Rationalisieren der digitalen Ressourcen
 
@@ -83,7 +83,7 @@ In einer herkömmlichen lokalen Umgebung hat das Hosten von kleinen, ungenutzten
 
 Wenn Sie aber auf ein Cloudabrechnungsmodell umstellen, können durch die Außerbetriebnahme von Ressourcen erhebliche Einsparungen bei den jährlichen Betriebskosten und beim Anschubaufwand für die Migration erzielt werden.
 
-Es ist nicht ungewöhnlich, dass Organisationen mindestens 20% ihrer digitalen Ressourcen außer Betrieb nehmen, nachdem sie eine quantitative Analyse durchgeführt haben. Wir empfehlen, eine weitere qualitative Analyse durchzuführen, bevor die Entscheidung in Bezug auf eine Maßnahme dieser Art getroffen wird. Nach der Bestätigung der Entscheidung kann die Außerbetriebnahme dieser Ressourcen zur ersten guten Rendite bei der Cloudmigration führen. In vielen Fällen ist dies einer der größten Faktoren zur Kosteneinsparung. Daher empfehlen wir, dass das Cloudstrategieteam die Prüfung und Außerbetriebnahme der Ressourcen parallel zur Erstellungsphase des Migrationsprozesses überwacht, um schnell finanzielle Erfolge zu erzielen.
+Es ist nicht ungewöhnlich, dass Organisationen mindestens 20% ihrer digitalen Ressourcen außer Betrieb nehmen, nachdem sie eine quantitative Analyse durchgeführt haben. Wir empfehlen, eine weitere qualitative Analyse durchzuführen, bevor eine solche Maßnahme durchgeführt wird. Nach der Bestätigung der Entscheidung kann die Außerbetriebnahme dieser Ressourcen zum ersten ROI bei der Cloudmigration führen. Häufig ist dies einer der wichtigsten Faktoren zur Kosteneinsparung. Daher sollte das Cloudstrategieteam die Überprüfung und die Außerbetriebnahme von Ressourcen überwachen, und zwar parallel zur Ausführung der [Migrationsmethode](../migrate/index.md), um einen frühen finanziellen Gewinn zu erzielen.
 
 ### <a name="program-adjustments"></a>Anpassungen des Programms
 

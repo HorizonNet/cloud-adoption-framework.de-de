@@ -7,16 +7,16 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: a7f03ce1f83d59fdcfe2b2ce696b6b591b8d0655
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 243094da7b92a374124474eaaf0c955b5fdb85ed
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341928"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140602"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Cloudeinführungsplan und Azure DevOps
 
-Azure DevOps ist der Satz cloudbasierter Tools für Azure-Kunden, die iterative Projekte verwalten. Es enthält darüber hinaus Tools für die Verwaltung von Bereitstellungspipelines und andere wichtige Elemente von DevOps. 
+Azure DevOps ist der Satz cloudbasierter Tools für Azure-Kunden, die iterative Projekte verwalten. Es enthält darüber hinaus Tools für die Verwaltung von Bereitstellungspipelines und andere wichtige Elemente von DevOps.
 
 In diesem Artikel erfahren Sie, wie Sie mithilfe der Vorlage für den Cloudeinführungsplan schnell einen Backlog für Azure DevOps bereitstellen können. Diese Vorlage richtet die Maßnahmen zur Einführung der Cloud auf einen standardisierten Prozess aus, der auf den Vorgaben im Framework für die Cloudeinführung (Cloud Adoption Framework) basiert.
 

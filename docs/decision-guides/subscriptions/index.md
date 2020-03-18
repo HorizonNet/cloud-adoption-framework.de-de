@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 32b1e8933add7f2c786d424e6faabf58f9218ead
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 1420906faadb966585346aeafe0a8e7efa9aaf09
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140687"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508031"
 ---
 # <a name="subscription-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Abonnements
 
@@ -49,7 +49,7 @@ Ein einzelnes Abonnement pro Konto kann für Organisationen ausreichen, die eine
 
 Wenn Sie für die Bereitstellung einer Workload in einer Produktionsumgebung bereit sind, sollten Sie ein weiteres Abonnement hinzufügen. Dadurch stellen Sie sicher, dass Produktionsdaten und andere Ressourcen nicht in Ihre Entwicklungs-/Testumgebungen gelangen. Außerdem können Sie problemlos zwei verschiedene Richtliniensätze auf die Ressourcen in den beiden Abonnements anwenden.
 
-![Abonnementmuster für Produktion und Nichtproduktion](../../_images/ready/basic-subscription-model.png)
+![Abonnementmuster für Produktion und Nichtproduktion](../../_images/ready/initial-subscription-model.png)
 
 ### <a name="workload-separation-pattern"></a>Muster zur Trennung von Workloads
 

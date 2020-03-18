@@ -1,18 +1,18 @@
 ---
-title: 'Cloudinnovation: Lernen'
-description: Einführung in Inhalte der Cloudinnovation – Lerninhalt
+title: Lernen mit Kunden, um Innovationen voranzutreiben
+description: Lernen Sie mit und von Kundenpartnern, um eine MVP-Lösung (Minimum Viable Product) mit Blick auf die Kundenanforderungen zu erstellen und Metriken für Kundenauswirkungen zu generieren.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3f15407d78517d588e9f98ac6bbbb779574a7afd
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4166f55c3878266a06f1da4b907eaab5baa6e473
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808429"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312757"
 ---
 # <a name="learn-with-customers"></a>Lernen von Kunden
 

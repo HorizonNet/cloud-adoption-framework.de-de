@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e06aca53ac70e602d13d2cc23d59d4b56c2cd152
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: ee88c1fc88e5c678f7356aa15b473d0fe61eaa2d
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341435"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140653"
 ---
 # <a name="create-business-alignment-in-cloud-management"></a>Erstellen der Geschäftsausrichtung in der Cloudverwaltung
 
@@ -22,7 +22,7 @@ In lokalen Umgebungen werden IT-Ressourcen (Anwendungen, virtuelle Computer, VM-
 
 Der erste Schritt beim Erstellen der Geschäftsausrichtung ist das Sicherstellen der Begriffsausrichtung. Die IT-Verwaltung hat (wie die meisten Engineeringbereiche) eine Sammlung von Fachausdrücken oder hochtechnischen Begriffen zusammengestellt. Diese Begriffe können zu Verwirrung für Beteiligte im Unternehmen führen und die Zuordnung von Verwaltungsdiensten zum Geschäftswert erschweren.
 
-Glücklicherweise schaffen die Prozesse zur Entwicklung einer Cloud Adoption-Strategie und eines Cloud Adoption-Plans eine optimale Gelegenheit, diese Begriffe neu zuzuordnen. Der Prozess bietet auch Gelegenheiten, die Verpflichtungen gegenüber der operativen Verwaltung in Partnerschaft mit dem Unternehmen zu überdenken. Die folgende Artikelreihe erläutert den neuen Ansatz für drei spezifische Begriffe, die helfen können, die Gespräche zwischen Beteiligten von Unternehmen zu verbessern: 
+Glücklicherweise schaffen die Prozesse zur Entwicklung einer Cloud Adoption-Strategie und eines Cloud Adoption-Plans eine optimale Gelegenheit, diese Begriffe neu zuzuordnen. Der Prozess bietet auch Gelegenheiten, die Verpflichtungen gegenüber der operativen Verwaltung in Partnerschaft mit dem Unternehmen zu überdenken. Die folgende Artikelreihe erläutert den neuen Ansatz für drei spezifische Begriffe, die helfen können, die Gespräche zwischen Beteiligten von Unternehmen zu verbessern:
 
 - **[Wichtigkeit](./criticality.md):** Zuordnung von Workloads zu Geschäftsprozessen. Rangfolge der Wichtigkeit zur Fokussierung von Investitionen.
 - **[Auswirkung](./impact.md):** Verstehen der Auswirkungen potenzieller Ausfälle, um die Bewertung der Rendite für Cloudverwaltung zu erleichtern.

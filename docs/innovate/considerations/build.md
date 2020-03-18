@@ -1,18 +1,18 @@
 ---
-title: 'Cloudinnovation: Erstellen von Lösungen mit Blick auf die Kundenanforderungen'
-description: Erfahren Sie, wie Sie Lösungen mit Blick auf die Kundenanforderungen erstellen.
+title: Fördern der Akzeptanz mit Blick auf die Kundenanforderungen
+description: Hier erfahren Sie, wie Sie innovationsfördernde Lösungen mit Blick auf die Kundenanforderungen erstellen, indem Sie sich umfassend mit den Erfahrungen des Kunden vertraut machen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 406d53bfb322c424737a9b8cec7c028a9833143d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d6cf92c2cb08e59196bc9c24aadf1fa2c812db0d
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808548"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312753"
 ---
 # <a name="build-with-customer-empathy"></a>Erstellen von Lösungen mit Blick auf die Kundenanforderungen
 

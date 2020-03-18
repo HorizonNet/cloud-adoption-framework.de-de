@@ -7,14 +7,14 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f869716c907aa6c03adfb81a4f698dab42b9e387
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: cf3f64e8fd059ec847591a9f86f41e68aee0fd40
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223640"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140517"
 ---
-<!-- cspell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
+<!-- cSpell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
 
 # <a name="make-the-switch-from-mainframes-to-azure"></a>Wechseln von Mainframes zu Azure
 
@@ -53,7 +53,7 @@ Wenn Sie Azure-PaaS-Ressourcen (Platform-as-a-Service) wie [Azure SQL-Datenbank]
 
 ## <a name="scalability"></a>Skalierbarkeit
 
-Mainframes werden in der Regel zentral hochskaliert, Cloudumgebungen horizontal. Mainframes lassen sich mit einer Kopplungsfunktion horizontal hochskalieren, dies ist aber aufgrund der hohen Kosten von Hardware und Speicher teuer.
+Mainframes werden in der Regel hochskaliert, Cloudumgebungen aufskaliert. Mainframes lassen sich mit einer Kopplungsfunktion aufskalieren, dies ist aber aufgrund der hohen Kosten von Hardware und Speicher teuer.
 
 Darüber hinaus bietet eine solche Funktion eng gekoppelte Computeressourcen, die Azure-Features für die horizontale Skalierung dagegen sind lose gekoppelt. Die Cloud lässt sich entsprechend den Benutzerangaben exakt hoch- oder herunterskalieren: Computeleistung, Speicher und Dienste werden in einem nutzungsbasierten Abrechnungsmodell nach Bedarf hinzugefügt oder entfernt.
 

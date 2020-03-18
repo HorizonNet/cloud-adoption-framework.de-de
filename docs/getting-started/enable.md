@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 layout: LandingPage
-ms.openlocfilehash: c9e33b32590cd3b73e5bc42a662abf5ef6de36da
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 5f611494bb395a06a763a500d7b94377177d3c71
+ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892241"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79140268"
 ---
 # <a name="enable-success-during-a-cloud-adoption-journey"></a>Ermöglichen des Erfolgs während einer Cloudeinführungsjourney
 
@@ -29,7 +29,7 @@ In diesem Framework ist „Enablement“ (Befähigung, Ermöglichen) ein Kernthe
   - **Verwalten:** Fortlaufende [Betriebsverwaltung](../manage/index.md) des IT-Portfolios, um Unterbrechungen der Geschäftsprozesse zu minimieren und die Stabilität des IT-Portfolios zu gewährleisten.
   - **Support:** Ausrichten der [Optionen für Partnerschaften und Unterstützung](../migrate/migration-considerations/assess/partnership-options.md).
 
-Ein weiteres Kernthema ist die Sicherheit, bei der es sich um ein wichtiges Qualitätsattribut für eine erfolgreiche Cloudeinführung handelt. Sicherheit ist in dieses Framework integriert, um eine eingebundene Anleitung zur Wahrung der Vertraulichkeit, Integrität und Verfügbarkeit für Ihre Cloudworkloads bereitzustellen. 
+Ein weiteres Kernthema ist die Sicherheit, bei der es sich um ein wichtiges Qualitätsattribut für eine erfolgreiche Cloudeinführung handelt. Sicherheit ist in dieses Framework integriert, um eine eingebundene Anleitung zur Wahrung der Vertraulichkeit, Integrität und Verfügbarkeit für Ihre Cloudworkloads bereitzustellen.
 
 ## <a name="additional-tools"></a>Weitere Tools
 
