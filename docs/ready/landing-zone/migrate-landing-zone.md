@@ -8,12 +8,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2c9b932bd1a9500b7308fa24be65a12e46221a99
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 1727bb9c77298663f30e6205a9a3230ce65be3c1
+ms.sourcegitcommit: 5d7e93540a679252f1c7207e62cb2ee7213a6ae9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78228589"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80069756"
 ---
 <!-- cSpell:ignore vCPUs jumpbox -->
 
@@ -32,7 +32,7 @@ Bevor Sie die Migrationszielzonen-Blaupause im Cloud Adoption Framework verwende
 
 Diese anfängliche Zielzone umfasst folgende Annahmen bzw. Einschränkungen. Wenn diese Annahmen Ihren Einschränkungen entsprechen, können Sie die Blaupause zum Erstellen Ihrer ersten Landezone verwenden. Die Blaupause kann auch erweitert werden, sodass Sie eine Landezonenblaupause erstellen können, die Ihre einzigartigen Einschränkungen erfüllt.
 
-- **Grenzwerte für Abonnements**: Bei der Einführung ist nicht damit zu rechnen, dass [Abonnementgrenzwerte](https://docs.microsoft.com/azure/azure-subscription-service-limits) überschritten werden. Zwei allgemeine Anzeichen dafür sind eine VM-Anzahl von über 25.000 oder eine vCPU-Anzahl von über 10.000.
+- **Grenzwerte für Abonnements**: Bei der Einführung ist nicht damit zu rechnen, dass [Abonnementgrenzwerte](https://docs.microsoft.com/azure/azure-subscription-service-limits) überschritten werden.
 - **Compliance**: In dieser Landezone sind keine Complianceanforderungen von Dritten zu beachten.
 - **Komponenten der Architektur**: Die Komplexität der Architektur erfordert keine zusätzlichen Produktionsabonnements.
 - **Gemeinsam genutzte Dienste**: Es sind keine gemeinsam genutzten Dienste in Azure vorhanden, die erfordern, dass dieses Abonnement wie ein Spoke in einer Hub-and-Spoke-Architektur behandelt wird.
