@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: b7a6081f37899f11716eca07b7e6a371bcefcc94
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: a27ef0d432fc0aad64211e9b2228d4f82387f854
+ms.sourcegitcommit: 5d7e93540a679252f1c7207e62cb2ee7213a6ae9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337887"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80069805"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -54,7 +54,7 @@ Eine noch wichtigere Metrik ist die Anzahl von Dashboards, die anhand der kombin
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nachdem die Lernmetriken abgestimmt wurden, können Sie damit beginnen, mithilfe dieser Metriken die [digitalen Ressourcen zu bewerten](../digital-estate/index.md). Das Ergebnis ist ein [Transformationsbacklog oder Migrationsbacklog](../migrate/migration-considerations/prerequisites/technical-complexity.md).
+Nachdem die Lernmetriken abgestimmt wurden, können Sie damit beginnen, mithilfe dieser Metriken das [Geschäftsszenario zu erarbeiten](cloud-migration-business-case.md). 
 
 > [!div class="nextstepaction"]
-> [Bewerten der digitalen Ressourcen](../digital-estate/index.md)
+> [Erarbeiten des Cloudgeschäftsszenarios](cloud-migration-business-case.md)
