@@ -1,28 +1,28 @@
 ---
-title: Skalieren mit mehreren Azure-Abonnements
-description: Erfahren Sie, wie Sie Ihre Umgebungen mit mehreren Azure-Abonnements skalieren.
+title: Skalieren mit Azure-Abonnements
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie Sie eine Strategie für die Skalierung mit mehreren Azure-Abonnements entwickeln.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 6a893ce6f8620b31fcf23d8c3e8581e95035bdcf
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: b734446a4bac7d8db12119b2248aece9a3377d37
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799793"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508388"
 ---
 # <a name="scale-with-multiple-azure-subscriptions"></a>Skalieren mit mehreren Azure-Abonnements
 
-Organisationen benötigen aufgrund von Ressourcenlimits und anderen Governanceüberlegungen häufig mehr als ein Azure-Abonnement. Eine Strategie zur Skalierung Ihrer Abonnements ist wichtig.
+Organisationen benötigen aufgrund von Ressourcenlimits und anderen Governanceüberlegungen häufig mehrere Azure-Abonnements. Es ist wichtig, dass Sie eine Strategie zur Skalierung Ihrer Abonnements definieren.
 
 ## <a name="production-and-nonproduction-workloads"></a>Produktions- und Nichtproduktionsworkloads
 
 Wenn Sie Ihre erste Produktionsworkload in Azure bereitstellen, sollten Sie mit zwei Abonnements beginnen: einem Abonnement für Ihre Produktionsumgebung und einem Abonnement für Ihre Nichtproduktionsumgebung (für Entwicklung und Tests).
 
-![Ein grundlegendes Abonnementmodell, das Schlüssel neben Feldern mit der Bezeichnung „Produktion“ und „Nichtproduktion“ anzeigt](../../_images/ready/basic-subscription-model.png)
+![Ein grundlegendes Abonnementmodell, das Schlüssel neben Feldern mit der Bezeichnung „Produktion“ und „Nichtproduktion“ anzeigt](../../_images/ready/initial-subscription-model.png)
 
 Dieser Ansatz empfiehlt sich aus verschiedenen Gründen:
 
@@ -62,7 +62,7 @@ Viele Ressourcentypen können von einem Abonnement in ein anderes verschoben wer
 
 ## <a name="manage-multiple-subscriptions"></a>Verwalten mehrerer Abonnements
 
-Wenn Sie nur über wenige Abonnements verfügen, ist deren unabhängige Verwaltung relativ einfach. Sobald die Anzahl Ihrer Abonnements aber steigt, sollten Sie erwägen, eine Verwaltungsgruppenhierarchie zu erstellen, um die Verwaltung Ihrer Abonnements und Ressourcen zu vereinfachen.
+Wenn Sie nur über wenige Abonnements verfügen, ist deren unabhängige Verwaltung relativ einfach. Aber sobald die Anzahl Ihrer Abonnements zunimmt, sollten Sie eine Verwaltungsgruppenhierarchie erstellen, um die Verwaltung Ihrer Abonnements und Ressourcen zu vereinfachen.
 
 Verwaltungsgruppen ermöglichen eine effiziente Verwaltung von Zugriff, Richtlinien und Compliance für die Abonnements einer Organisation. Jede Verwaltungsgruppe ist ein Container für ein oder mehrere Abonnements.
 
@@ -71,7 +71,7 @@ Verwaltungsgruppen werden in einer einzigen Hierarchie angeordnet. Sie definiere
 Azure bietet vier Verwaltungsebenen: Verwaltungsgruppen, Abonnements, Ressourcengruppen und Ressourcen. Alle Zugriffsrichtlinien oder anderen Richtlinien, die auf einer bestimmten Hierarchieebene angewendet werden, werden von den darunter liegenden Ebenen geerbt. Ein Ressourcen- oder Abonnementbesitzer kann eine geerbte Richtlinie nicht ändern. Diese Einschränkung trägt zur Verbesserung der Governance bei.
 
 > [!NOTE]
-> Beachten Sie, dass eine Tagvererbung zurzeit nicht möglich ist, aber in Kürze verfügbar sein wird.
+> Beachten Sie hierbei, dass eine Tagvererbung derzeit noch nicht unterstützt wird, aber in Kürze verfügbar ist.
 
 Mit diesem Vererbungsmodell können Sie die Abonnements in Ihrer Hierarchie so anordnen, dass jedes Abonnement die Richtlinien und Sicherheitsvorgaben erfüllt.
 
@@ -79,11 +79,11 @@ Mit diesem Vererbungsmodell können Sie die Abonnements in Ihrer Hierarchie so a
 
 Jede Zugriffs- oder Richtlinienzuweisung in der Stammverwaltungsgruppe gilt für alle Ressourcen im Verzeichnis. Überlegen Sie sorgfältig, welche Elemente Sie in diesem Bereich definieren. Fügen Sie nur die Zuordnungen hinzu, über die Sie verfügen müssen.
 
-Wenn Sie Ihre Verwaltungsgruppenhierarchie erstmals definieren, erstellen Sie zunächst die Stammverwaltungsgruppe. Anschließend verschieben Sie alle vorhandenen Abonnements im Verzeichnis in die Stammverwaltungsgruppe. Neue Abonnements werden immer in der Stammverwaltungsgruppe erstellt. Sie können Sie später in eine andere Verwaltungsgruppe verschieben.
+Beim Definieren Ihrer Verwaltungsgruppenhierarchie erstellen Sie zunächst die Stammverwaltungsgruppe. Anschließend verschieben Sie alle vorhandenen Abonnements im Verzeichnis in die Stammverwaltungsgruppe. Neue Abonnements werden immer in der Stammverwaltungsgruppe erstellt. Sie können Sie später in eine andere Verwaltungsgruppe verschieben.
 
-Wenn Sie ein Abonnement in eine vorhandene Verwaltungsgruppe verschieben, erbt es die Richtlinien und Rollenzuweisungen aus der darüber liegenden Verwaltungsgruppenhierarchie. Sobald Sie mehrere Abonnements für Ihre Azure-Workloads eingerichtet haben, sollten Sie weitere Abonnements erstellen, um die Azure-Dienste aufzunehmen, die mit den anderen Abonnements gemeinsam genutzt werden.
+Wenn Sie ein Abonnement in eine vorhandene Verwaltungsgruppe verschieben, erbt es die Richtlinien und Rollenzuweisungen aus der darüber liegenden Verwaltungsgruppenebene. Sobald Sie mehrere Abonnements für Ihre Azure-Workloads eingerichtet haben, sollten Sie weitere Abonnements erstellen, um die Azure-Dienste aufzunehmen, die mit den anderen Abonnements gemeinsam genutzt werden.
 
-![Beispiel für eine Verwaltungsgruppenhierarchie](../../_images/ready/management-group-hierarchy.png)
+![Beispiel für eine Verwaltungsgruppenhierarchie](../../_images/ready/management-group-hierarchy-v2.png)
 
 Weitere Informationen finden Sie unter [Organisieren von Ressourcen mit Azure-Verwaltungsgruppen](https://docs.microsoft.com/azure/governance/management-groups).
 

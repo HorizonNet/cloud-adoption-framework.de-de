@@ -1,18 +1,18 @@
 ---
-title: Nachverfolgen von Kosten für Geschäftseinheiten, Umgebungen oder Projekte
-description: Nachverfolgen von Kosten für Geschäftseinheiten, Umgebungen oder Projekte
+title: Nachverfolgen von Kosten für Geschäftseinheiten und Umgebungen
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um sich mit den Entscheidungen und Implementierungsansätzen zur Erstellung von Nachverfolgungsmechanismen vertraut zu machen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a416f5eef95717792036c1a40b99614cefde2cec
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: b363d43568617d7c58003c2bd278008583870664
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76799657"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312801"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Nachverfolgen von Kosten für Geschäftseinheiten, Umgebungen oder Projekte
 
@@ -99,6 +99,8 @@ Mit den folgenden Bereichs- und Rolleneinstellungen wird die erforderliche Trans
 
   - In einer gut verwalteten Umgebung verfügt das Cloudgovernanceteam vermutlich über einen höheren Zugriffsgrad, sodass eine zusätzliche Bereichszuweisung für [Cost Management: Mitwirkender](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) nicht erforderlich ist.
 
+<!-- cSpell:ignore automations -->
+
 - [Cloudkompetenzzentrum](../../organize/cloud-center-of-excellence.md). Personen, die für die Verwaltung von Kosten in Bezug auf gemeinsam verwendete Dienste zuständig sind, benötigen Zugriff vom Typ „Cost Management: Mitwirkender“ auf Abonnementebene. Darüber hinaus benötigt dieses Team unter Umständen auch Zugriff vom Typ „Cost Management: Mitwirkender“ auf Ressourcengruppen oder Abonnements, die per CCoE-Automatisierung bereitgestellte Ressourcen enthalten, um zu verstehen, wie sich diese Automatisierungen auf die Kosten auswirken.
 
   - **Gemeinsame Dienste**: Bei Einbindung eines Cloudkompetenzzentrums besteht die bewährte Methode darin, dass die über das Zentrum verwalteten Ressourcen mit einem zentralisierten Abonnement für gemeinsame Dienste im Rahmen eines Hub-and-Spoke-Modells unterstützt werden. In diesem Szenario verfügt das CCoE meist über Zugriff vom Typ „Mitwirkender“ oder „Besitzer“ auf dieses Abonnement, sodass es nicht erforderlich ist, zusätzlich [Kostenverwaltung: Mitwirkender](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) zuzuweisen.
@@ -114,14 +116,14 @@ Azure Cost Management ist ein gut dokumentiertes Tool zum Festlegen von Budgets 
 
 ### <a name="get-started-with-azure-cost-management"></a>Erste Schritte mit Azure Cost Management
 
-Weitere Informationen zu den ersten Schritten mit Azure Cost Management finden Sie unter [Optimieren der Cloudinvestitionen mit Azure Cost Management](https://docs.microsoft.com/azure/cost-management/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json).
+Weitere Informationen zu den ersten Schritten mit Azure Cost Management finden Sie unter [Optimieren der Cloudinvestitionen mit Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json).
 
 ### <a name="use-azure-cost-management"></a>Azure Cost Management verwenden
 
-- [Erstellen und Verwalten von Budgets](https://docs.microsoft.com/azure/cost-management/tutorial-acm-create-budgets)
-- [Exportieren von Kostendaten](https://docs.microsoft.com/azure/cost-management/tutorial-export-acm-data)
-- [Optimieren von Kosten anhand von Empfehlungen](https://docs.microsoft.com/azure/cost-management/tutorial-acm-opt-recommendations)
-- [Verwenden von Kostenwarnungen zum Überwachen von Verbrauch und Ausgaben](https://docs.microsoft.com/azure/cost-management/cost-mgt-alerts-monitor-usage-spending)
+- [Erstellen und Verwalten von Budgets](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets)
+- [Exportieren von Kostendaten](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-export-acm-data)
+- [Optimieren von Kosten anhand von Empfehlungen](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
+- [Verwenden von Kostenwarnungen zum Überwachen von Verbrauch und Ausgaben](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending)
 
 ### <a name="use-azure-cost-management-to-govern-aws-costs"></a>Verwenden von Azure Cost Management zum Steuern von AWS-Kosten
 

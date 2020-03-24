@@ -8,16 +8,16 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ce5b1a77396479b2621afab5cac025b983f14469
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 121e2a04eee6f9f977f4bb826fcb7ff712794cd3
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223734"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508048"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Richtlinie zur cloudnativen Sicherheitsbaseline
 
-[Sicherheitsbaseline](./index.md) ist eine der [fünf Disziplinen von Cloud Governance](../governance-disciplines.md). Diese Disziplin konzentriert sich auf allgemeine Sicherheitsthemen, darunter den Schutz des Netzwerks, von digitalen Ressourcen und Daten usw. Wie im [Leitfaden zur Richtlinienüberprüfung](../policy-compliance/cloud-policy-review.md) erläutert, umfasst das Cloud Adoption Framework drei Ebenen von Beispielrichtlinien: cloudnative, Unternehmens- und cloudentwurfsprinzipien-konforme Richtlinien für jede der einzelnen Disziplinen. In diesem Artikel wird die cloudnative Beispielrichtlinie für die Disziplin der Sicherheitsbaseline beschrieben.
+[Sicherheitsbaseline](./index.md) ist eine der [fünf Disziplinen von Cloud Governance](../governance-disciplines.md). Bei dieser Disziplin geht es um allgemeine Sicherheitsthemen, z. B. den Schutz des Netzwerks, von digitalen Ressourcen und von Daten. Wie im [Leitfaden zur Richtlinienüberprüfung](../policy-compliance/cloud-policy-review.md) erläutert, umfasst das Cloud Adoption Framework drei Ebenen von Beispielrichtlinien: cloudnative, Unternehmens- und cloudentwurfsprinzipien-konforme Richtlinien für jede der einzelnen Disziplinen. In diesem Artikel wird die cloudnative Beispielrichtlinie für die Disziplin der Sicherheitsbaseline beschrieben.
 
 > [!NOTE]
 > Microsoft ist nicht in der Lage, Unternehmens- oder IT-Richtlinien vorzuschreiben. Dieser Artikel unterstützt Sie bei den Vorbereitungen für eine interne Richtlinienüberprüfung. Es wird davon ausgegangen, dass diese Beispielrichtlinie vor ihrer Verwendung erweitert, überprüft und in Bezug auf Ihre Unternehmensrichtlinie getestet wird. Die Beispielrichtlinie sollte nicht ohne Anpassungen verwendet werden.

@@ -1,6 +1,6 @@
 ---
-title: Zuweisen eines neuen Hosts für eine lokale App durch Migration zu Azure-VMs und zu einer verwalteten Azure-SQL-Datenbank-Instanz
-description: Es wird beschrieben, wie Contoso für eine lokale App auf Azure-VMs einen neuen Host zuweist und eine verwaltete Azure SQL-Datenbank-Instanz verwendet.
+title: Zuweisen eines neuen Hosts in Azure und auf einer verwalteten Azure SQL-Datenbank-Instanz
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie Sie einen neuen Host für eine lokale App auf Azure-VMs zuweisen, indem Sie eine verwaltete Azure SQL-Datenbank-Instanz verwenden.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 7ec95c75d81b93852a59ef137a02cc35d83a1cd3
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 0308308ab098f7cc7fe7c05094549b01f36c2d61
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223071"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311964"
 ---
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>Zuweisen eines neuen Hosts für eine lokale App auf einer Azure-VM und einer verwalteten Azure SQL-Datenbank-Instanz
 
@@ -105,7 +105,7 @@ Contoso migriert die Web- und Datenschichten seiner SmartHotel360-App mit den fo
 
 ### <a name="azure-services"></a>Azure-Dienste
 
-Dienst | Beschreibung | Kosten
+Dienst | BESCHREIBUNG | Kosten
 --- | --- | ---
 [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Der Azure Database Migration Service ermöglicht die nahtlose Migration von mehreren Datenbankquellen zu Azure-Datenplattformen bei minimaler Ausfallzeit. | Informieren Sie sich über die [unterstützten Regionen](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability) und die [Preise für den Database Migration Service](https://azure.microsoft.com/pricing/details/database-migration).
 [Verwaltete Azure SQL-Datenbank-Instanz](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | Die verwaltete Azure SQL-Datenbank-Instanz ist ein verwalteter Datenbankdienst, der eine vollständig verwaltete SQL Server-Instanz in der Azure-Cloud darstellt. Sie nutzt den gleichen Code wie die neueste Version der Microsoft SQL Server-Datenbank-Engine und verfügt über die neuesten Features, Leistungsverbesserungen und Sicherheitspatches. | Bei Verwendung einer verwalteten Azure SQL-Datenbank-Instanz, die in Azure ausgeführt wird, fallen Gebühren je nach Kapazität an. Erfahren Sie mehr zu den [Preisen für verwaltete SQL-Datenbank-Instanzen](https://azure.microsoft.com/pricing/details/sql-database/managed).

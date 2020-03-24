@@ -1,18 +1,18 @@
 ---
-title: Übersicht über Beispiele für eine Anwendungsmigration für Azure
-description: Bietet eine Übersicht über die Beispiele für die Anwendungsmigration, die im Abschnitt „Migrieren des Cloud Adoption Framework“ enthalten sind.
+title: Beispiele für die Anwendungsmigration für Azure
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie Sie die lokale Infrastruktur zur Microsoft Azure-Cloud migrieren können.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/11/2018
+ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c2e0a27e432141feee526d4cb5fe54380fcde583
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: ecb6cfc10b88490269b50a5fe6bec7d2c3277d7b
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807375"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312769"
 ---
 # <a name="application-migration-patterns-and-examples"></a>Anwendungsmuster für die Migration und Beispiele
 
@@ -28,7 +28,7 @@ Im Rahmen der Hybrid Cloud-Strategie werden für Azure kontinuierlich erweiterte
 
 ## <a name="migration-patterns"></a>Migrationsmuster
 
-Die Strategien für die Migration zur Cloud lassen sich grob in vier Muster unterteilen: Zuweisen eines neuen Hosts, Umgestalten, Umstrukturieren oder Neu erstellen. Welche Strategie Sie übernehmen, richtet sich nach Ihrer Business-Treibern und Migrationszielen. Sie könnten mehrere Muster übernehmen. Zum Beispiel könnten Sie entscheiden, einfachen Apps bzw. Apps, die nicht unternehmenskritisch sind, einen neuen Host zuzuweisen jedoch diejenigen umzustrukturieren, die komplexer und unternehmenskritisch sind. Sehen wir uns diese Muster an.
+Die Strategien für die Migration zur Cloud lassen sich grob in vier Muster unterteilen: Zuweisen eines neuen Hosts, Umgestalten, Umstrukturieren oder Neu erstellen. Welche Strategie Sie übernehmen, richtet sich nach Ihrer Business-Treibern und Migrationszielen. Sie könnten mehrere Muster übernehmen. Zum Beispiel könnten Sie entscheiden, einfachen Apps bzw. Apps, die nicht unternehmenskritisch sind, einen neuen Host zuzuweisen und die Apps umzustrukturieren, die komplexer und unternehmenskritisch sind. Sehen wir uns diese Muster an.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -36,14 +36,14 @@ Die Strategien für die Migration zur Cloud lassen sich grob in vier Muster unte
 --- | --- | ---
 **Zuweisen eines neuen Hosts** | Häufig als _Lift & Shift_-Migration bezeichnet. Diese Option erfordert keine Änderungen des Codes und ermöglicht Ihnen die schnelle Migration Ihrer vorhandenen Apps zu Azure. Um die Vorteile der Cloud ohne die mit Änderungen des Codes verbundenen Risiken und Kosten zu nutzen, wird jede App im vorliegenden Zustand migriert. | Wenn Sie Apps schnell in die Cloud verschieben müssen.<br/><br/> Wenn Sie eine App verschieben möchten, ohne sie zu ändern.<br/><br/> Wenn Ihre Apps so überarbeitet sind, dass sie nach der Migration die [Azure-IaaS](https://azure.microsoft.com/overview/what-is-iaas)-Skalierbarkeit nutzen können.<br/><br/> Wenn Apps für Ihr Unternehmen wichtig sind, aber keine unmittelbaren Änderungen der App-Funktionen erforderlich sind.
 **Umgestalten** | Die häufig als „Umpacken“ bezeichnete Umgestaltung erfordert nur minimale Änderungen der Apps, sodass sie eine Verbindung mit [Azure-PaaS](https://azure.microsoft.com/overview/what-is-paas) herstellen und Cloudangebote verwenden können.<br/><br/> Sie könnten Ihre vorhandenen Apps beispielsweise zu Azure App Service oder Azure Kubernetes Service (AKS) migrieren.<br/><br/> Alternativ könnten Sie relationale und nicht relationale Datenbanken für die verwaltete Azure SQL-Datenbank-Instanz, Azure Database for MySQL, Azure Database for PostgreSQL und Azure Cosmos DB umgestalten. | Wenn Ihre App einfach zum Arbeiten in Azure umgepackt werden kann.<br/><br/> Wenn Sie innovative, von Azure bereitgestellte DevOps-Methoden anwenden möchten oder erwägen, DevOps mit einer Containerstrategie für Workloads zu verwenden.<br/><br/> Für die Umgestaltung müssen Sie die Portabilität Ihrer vorhandenen Codebasis und verfügbare Entwicklungsfertigkeiten berücksichtigen.
-**Überarbeiten** | Beim Überarbeiten für die Migration liegt der Fokus auf dem Ändern und Erweitern von App-Funktionalität und Codebasis, um die App-Architektur für die Cloudskalierbarkeit zu optimieren.<br/><br/> Sie könnten z.B. eine monolithische Anwendung in eine Gruppe von Microservices unterteilen, die zusammenarbeiten und einfach zu skalieren sind.<br/><br/> Alternativ könnten Sie auch Ihre relationalen und nicht relationalen Datenbanken zu einer vollständig verwalteten Datenbanklösung umstrukturieren, z.B. die verwaltete Azure SQL-Datenbank-Instanz, Azure Database for MySQL, Azure Database for PostgreSQL und Azure Cosmos DB. | Wenn Ihre Apps eine größere Überarbeitung benötigen, um neue Funktionen zu integrieren oder effektiv auf einer Cloudplattform zu funktionieren.<br/><br/> Wenn Sie vorhandene Anwendungsinvestitionen nutzen, Skalierbarkeitsanforderungen erfüllen, innovative Azure DevOps-Methoden anwenden und die Verwendung virtueller Computer minimieren möchten.
-**Neuerstellen** | Das Neuerstellen geht einen Schritt weiter, da eine App in diesem Fall unter Verwendung von Azure-Cloudtechnologien von Grund auf neu erstellt wird.<br/><br/> Sie könnten beispielsweise Greenfield-Apps mit [nativen Cloudtechnologien](https://azure.com/cloudnative) wie Azure Functions, Azure AI, verwalteten Azure-SQL-Datenbank-Instanzen und Azure Cosmos DB erstellen. | Wenn Sie schnelle Entwicklung wünschen und Funktionalität sowie Lebensdauer vorhandener Apps eingeschränkt sind.<br/><br/> Wenn Sie bereit sind, Business-Innovation (einschließlich von Azure bereitgestellter DevOps-Methoden) voranzutreiben, neue Anwendungen mit nativen Cloudtechnologien zu erstellen und die Weiterentwicklungen in KI, Blockchain und IoT zu nutzen.
+**Überarbeiten** | Beim Überarbeiten für die Migration liegt der Fokus auf dem Ändern und Erweitern von App-Funktionalität und Codebasis, um die App-Architektur für die Cloudskalierbarkeit zu optimieren.<br/><br/> Sie könnten z.B. eine monolithische Anwendung in eine Gruppe von Microservices unterteilen, die zusammenarbeiten und einfach zu skalieren sind.<br/><br/> Alternativ könnten Sie auch Ihre relationalen und nicht relationalen Datenbanken zu einer vollständig verwalteten Datenbanklösung umstrukturieren, z.B. die verwaltete Azure SQL-Datenbank-Instanz, Azure Database for MySQL, Azure Database for PostgreSQL und Azure Cosmos DB. | Wenn Ihre Apps eine größere Überarbeitung benötigen, um neue Funktionen zu integrieren oder effektiv auf einer Cloudplattform zu funktionieren.<br/><br/> Wenn Sie vorhandene Anwendungsinvestitionen nutzen, Skalierbarkeitsanforderungen erfüllen, innovative DevOps-Methoden anwenden und die Verwendung virtueller Computer minimieren möchten.
+**Neuerstellen** | Das Neuerstellen geht einen Schritt weiter, da eine App in diesem Fall unter Verwendung von Azure-Cloudtechnologien von Grund auf neu erstellt wird.<br/><br/> Sie könnten beispielsweise Greenfield-Apps mit [nativen Cloudtechnologien](https://azure.com/cloudnative) wie Azure Functions, Azure KI, verwalteten Azure SQL-Datenbank-Instanzen und Azure Cosmos DB erstellen. | Wenn Sie schnelle Entwicklung wünschen und Funktionalität sowie Lebensdauer vorhandener Apps eingeschränkt sind.<br/><br/> Wenn Sie bereit sind, Business-Innovation (einschließlich von Azure bereitgestellter DevOps-Methoden) voranzutreiben, neue Anwendungen mit nativen Cloudtechnologien zu erstellen und die Weiterentwicklungen in KI, Blockchain und IoT zu nutzen.
 
 <!-- markdownlint-enable MD033 -->
 
 ## <a name="migration-example-articles"></a>Artikel mit Migrationsbeispielen
 
-Die Artikel in diesem Abschnitt enthalten Beispiele für mehrere gängige Migrationsszenarien. Jedes Beispiel enthält Hintergrundinformationen und detailreiche Bereitstellungsszenarien, in denen die Einrichtung einer Migrationsinfrastruktur veranschaulicht und die Eignung der lokalen Ressourcen für die Migration bewertet wird. Diesem Abschnitt werden im Laufe der Zeit weitere Artikel hinzugefügt.
+Dieser Abschnitt enthält Beispiele für mehrere gängige Migrationsszenarien. Jedes Beispiel enthält Hintergrundinformationen und detailreiche Bereitstellungsszenarien, in denen die Einrichtung einer Migrationsinfrastruktur veranschaulicht und die Eignung der lokalen Ressourcen für die Migration bewertet wird. Diesem Abschnitt werden im Laufe der Zeit weitere Artikel hinzugefügt.
 
 ![Gängige Migrations-/Modernisierungsprojekte](./media/migration-patterns.png)
 
@@ -58,7 +58,7 @@ Die Artikel der Reihe werden unten zusammengefasst.
 
 **Artikel** | **Details**
 --- | ---
-[Bewerten der lokalen Ressourcen für die Migration zu Azure](./contoso-migration-assessment.md) | Dieser Artikel zeigt, wie Sie eine Bewertung einer lokalen Anwendung unter VMware ausführen können. In diesem Beispiel bewertet eine Beispielorganisation virtuelle Computer der App mit dem Azure Migrate-Dienst und die SQL Server-Datenbank der App mit dem Datenmigrations-Assistenten.
+[Bewerten der lokalen Ressourcen für die Migration zu Azure](../../plan/contoso-migration-assessment.md) | In diesem Artikel zu bewährten Methoden der Planmethodik wird erläutert, wie Sie eine Bewertung einer lokalen App ausführen, die unter VMware ausgeführt wird. In diesem Artikel bewertet eine Beispielorganisation virtuelle Computer der App mit dem Azure Migrate-Dienst und die SQL Server-Datenbank der App mit dem Datenmigrations-Assistenten.
 
 ### <a name="infrastructure"></a>Infrastruktur
 
@@ -84,7 +84,7 @@ Die Artikel der Reihe werden unten zusammengefasst.
 
 **Artikel** | **Details**
 --- | ---
-[Zuweisen eines neuen Hosts für eine App auf einer Azure-VM und einer verwalteten Azure SQL-Datenbank-Instanz](./contoso-migration-rehost-vm-sql-managed-instance.md) | Dieser Artikel enthält ein Beispiel für eine „Lift and Shift“-Migration zu Azure für eine lokale App. Dazu gehört die Migration der Front-End-VM der App mithilfe von [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) und der App-Datenbank mithilfe von [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) zu einer verwalteten Azure-SQL-Datenbankinstanz.
+[Zuweisen eines neuen Hosts für eine App auf einer Azure-VM und einer verwalteten Azure SQL-Datenbank-Instanz](./contoso-migration-rehost-vm-sql-managed-instance.md) | Dieser Artikel enthält ein Beispiel für eine „Lift and Shift“-Migration zu Azure für eine lokale App. Dazu gehört die Migration der Front-End-VM der App mithilfe von [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) und der App-Datenbank mithilfe von [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) zu einer verwalteten Azure-SQL-Datenbank-Instanz.
 [Zuweisen eines neuen Hosts für eine App auf Azure-VMs und in einer SQL Server Always On-Verfügbarkeitsgruppe](./contoso-migration-rehost-vm-sql-ag.md) | Dieses Beispiel zeigt, wie Sie eine App und Daten mit von Azure gehosteten SQL Server-VMs migrieren können. Dabei wird Site Recovery verwendet, um die App-VMs zu migrieren, und der Azure Database Migration Service, um die App-Datenbank zu einem SQL Servercluster zu migrieren, das durch eine Always On-Verfügbarkeitsgruppe geschützt wird.
 
 ### <a name="aspnet-php-and-java-apps"></a>ASP.NET-, PHP- und Java-Apps

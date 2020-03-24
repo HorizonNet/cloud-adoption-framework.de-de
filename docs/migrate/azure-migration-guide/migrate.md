@@ -1,6 +1,6 @@
 ---
 title: Migrieren von Objekten
-description: Dieser Leitfaden hilft Ihnen beim Initiieren der Migration Ihrer Umgebung, indem Sie die geeigneten Tools identifizieren, um den Zustand „Fertig“ zu erreichen, einschließlich nativer Tools, Tools von Drittanbietern und Projektmanagementtools.
+description: Initiieren Sie die Migration zu Azure, indem Sie die geeigneten Tools ermitteln, z. B. native Tools, Drittanbietertools und Projektmanagementtools.
 author: matticusau
 ms.author: mlavery
 ms.date: 08/08/2019
@@ -9,20 +9,22 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 41f52c8ddfa3ccc277569fde323161159344cb20
-ms.sourcegitcommit: 4948a5f458725e8a0c7206f08502422965a549d5
+ms.openlocfilehash: d5be29caa69a2b9a0f1e22cfb6ff704b7e17233c
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76994188"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312338"
 ---
+<!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
+
 # <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrieren von Objekten (Infrastruktur, Apps und Daten)
 
 In dieser Phase verwenden Sie die Ausgabe der Bewertungsphase, um die Migration der Umgebung einzuleiten. Dieser Leitfaden hilft Ihnen, die geeigneten Tools zu identifizieren, um den Zustand "Fertig" zu erreichen, einschließlich nativer Tools, Tools von Drittanbietern und Projektmanagementtools.
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="native-migration-toolstabtools"></a>[Native Migrationstools](#tab/Tools)
+# <a name="native-migration-tools"></a>[Native Migrationstools](#tab/Tools)
 
 In den folgenden Abschnitten werden die nativen Azure-Tools beschrieben, die zur Durchführung oder Unterstützung der Migration zur Verfügung stehen. Informationen zur Auswahl der richtigen Tools zur Unterstützung Ihrer Migrationsbemühungen finden Sie im [Leitfaden zur Entscheidungsfindung für Migrationstools des Frameworks für die Cloudeinführung (Cloud Adoption Framework)](../../decision-guides/migrate-decision-guide/index.md).
 
@@ -45,9 +47,7 @@ Führen Sie die folgenden Schritte aus, um eine Migration mit Azure Migrate durc
 1. Wählen Sie **Tool hinzufügen**, um Ihr Migrationsprojekt zu starten.
 1. Wählen Sie das Abonnement, die Ressourcengruppe und die Geografie aus, für die die Migration durchgeführt werden soll.
 1. Wählen Sie **Bewertungstool auswählen** > **Azure Migrate: Serverbewertung** >  **Weiter** aus.
-1. Wählen Sie **Überprüfen + Tools hinzufügen** aus, und überprüfen Sie die Konfiguration. Klicken Sie auf **Tools hinzufügen**, um den Auftrag zur Erstellung des Migrationsprojekts und zur Registrierung der ausgewählten Lösungen zu initiieren.
-
-<!-- TODO: TBA -->
+1. Wählen Sie **Überprüfen + Tools hinzufügen** aus, und überprüfen Sie die Konfiguration. Wählen Sie **Tools hinzufügen** aus, um den Auftrag zur Erstellung des Migrationsprojekts und zur Registrierung der ausgewählten Lösungen zu initiieren.
 
 ### <a name="learn-more"></a>Weitere Informationen
 
@@ -76,7 +76,7 @@ Die folgenden Schritte beschreiben, wie Sie Site Recovery zur Migration verwende
 
 1. Richten Sie bei Bedarf die Quellumgebung ein.
 1. Richten Sie die Zielumgebung ein.
-    1. Klicken Sie auf **Infrastruktur vorbereiten > Ziel**, und wählen Sie das gewünschte Azure-Abonnement aus.
+    1. Wählen Sie **Infrastruktur vorbereiten > Ziel** und anschließend das gewünschte Azure-Abonnement aus.
     1. Geben Sie das Ressourcen-Manager-Bereitstellungsmodell an.
     1. Site Recovery prüft, ob Sie über ein oder mehrere kompatible Azure-Speicherkonten und -Netzwerke verfügen.
 1. Richten Sie eine Replikationsrichtlinie ein.
@@ -128,7 +128,7 @@ Wenn Sie Azure Database Migration Service zum ersten Mal verwenden, müssen Sie 
 Nach der Registrierung des Ressourcenanbieters können Sie eine Azure Database Migration Service-Instanz erstellen.
 
 1. Wählen Sie **+ Ressource erstellen** aus, und suchen Sie im Marketplace nach **Azure Database Migration Service**.
-1. Schließen Sie den Assistenten **Migrationsdienst erstellen** ab, und wählen Sie **Erstellen** aus.
+1. Schließen Sie den Assistenten **Migrationsdienst erstellen** ab, und wählen Sie anschließend **Erstellen** aus.
 
 Der Dienst ist nun bereit, die unterstützten Quelldatenbanken (z.B. SQL Server, MySQL, PostgreSQL oder MongoDb) zu migrieren.
 
@@ -157,14 +157,14 @@ Der Datenmigrations-Assistent (DMA) hilft Ihnen beim Upgrade auf eine moderne Da
 > Für große Migrationen (in Bezug auf Anzahl und Größe der Datenbanken) empfehlen wir Ihnen, Azure Database Migration Service zu verwenden, mit dem Datenbanken im großen Maßstab migriert werden können.
 >
 
-Um den Datenmigrations-Assistenten zu verwenden, führen Sie zunächst folgende Schritte aus.
+Führen Sie die folgenden Schritte aus, um mit der Nutzung des Datenmigrations-Assistenten zu beginnen:
 
-1. Laden Sie den Datenmigrations-Assistenten aus dem [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53595), herunter und installieren Sie ihn.
-1. Erstellen Sie eine Bewertung, indem Sie auf das Symbol **Neu (+)** klicken und den Projekttyp **Bewertung** auswählen.
-1. Legen Sie den Typ von Quell- und Zielserver fest. Klicken Sie auf **Erstellen**.
+1. Laden Sie den Datenmigrations-Assistenten aus dem [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53595) herunter, und installieren Sie ihn.
+1. Erstellen Sie eine Bewertung, indem Sie das Symbol **Neu (+)** und anschließend den Projekttyp **Bewertung** auswählen.
+1. Legen Sie den Quell- und Zielservertyp fest, und wählen Sie anschließend **Erstellen** aus.
 1. Konfigurieren Sie die Bewertungsoptionen nach Bedarf (empfohlen werden die Standardwerte).
 1. Fügen Sie die Datenbanken zur Bewertung hinzu.
-1. Klicken Sie auf **Weiter**, um die Bewertung zu starten.
+1. Wählen Sie **Weiter** aus, um die Bewertung zu starten.
 1. Zeigen Sie die Ergebnisse im Data Migration Assistant-Toolset an.
 
 Unternehmen empfehlen wir, dem unter [Bewerten eines Unternehmens und Konsolidieren der Bewertungsberichte mit DMA](https://docs.microsoft.com/sql/dma/dma-consolidatereports) beschriebenen Ansatz zu folgen, um mehrere Server zu bewerten, die Berichte zu kombinieren und dann die bereitgestellten Power BI-Berichte zur Analyse der Ergebnisse zu verwenden.
@@ -207,9 +207,15 @@ Weitere Informationen finden Sie unter
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="third-party-migration-toolstabthird-party-tools"></a>[Migrationstool von einem Drittanbieter](#tab/third-party-tools)
+# <a name="third-party-migration-tools"></a>[Migrationstool von einem Drittanbieter](#tab/third-party-tools)
 
 Verschiedene Migrationstools von Drittanbietern und ISV-Dienste können während der Migration hilfreich sein. Alle bieten unterschiedliche Vorteile und Stärken. Zu diesen Tools zählen:
+
+## <a name="unifycloud"></a>UnifyCloud
+
+UnifyCloud ist ein ISV-Dienst mit Automatisierungstools für die Bewertung, Migration und Modernisierung.
+
+[Weitere Informationen](https://www.unifycloud.com/)
 
 ## <a name="cloudamize"></a>Cloudamize
 
@@ -245,7 +251,7 @@ Besuchen Sie das [Azure Migration Center](https://azure.microsoft.com/migration/
 
 Im [Leitfaden zur Azure-Datenbankmigration](https://datamigration.microsoft.com) finden Sie Informationen zu verschiedenen Datenbankmigrationsoptionen sowie Schritt-für-Schritt-Anleitungen für native Tools und Partner.
 
-# <a name="project-management-toolstabproject-management-tools"></a>[Projektmanagementtools](#tab/project-management-tools)
+# <a name="project-management-tools"></a>[Projektmanagementtools](#tab/project-management-tools)
 
 Bei Projekten, die nicht nachverfolgt und verwaltet werden, treten eher Probleme auf. Um ein erfolgreiches Ergebnis zu gewährleisten, empfehlen wir dringend, ein Projektmanagementtool zu verwenden. Es gibt viele verschiedene Tools, und Projektmanager in Ihrer Organisation haben möglicherweise bereits einen Favoriten.
 
@@ -274,6 +280,6 @@ Hier sehen Sie ein Beispiel für einen maßgeschneiderten Lernpfad auf Microsoft
 
 [Erstellen von Anwendungen mit Azure DevOps:](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/) Arbeiten Sie mit anderen zusammen, um Ihre Anwendungen mit Azure Pipelines und GitHub zu erstellen. Führen Sie in Ihrer Pipeline automatisierte Tests zum Überprüfen der Codequalität aus. Überprüfen Sie den Quellcode und die Komponenten von Drittanbietern auf potenzielle Sicherheitsrisiken. Definieren Sie mehrere Pipelines, die zusammenwirken, um Ihre Anwendung zu erstellen. Erstellen Sie Anwendungen mit von Microsoft gehosteten Agents und mit eigenen Build-Agents.
 
-# <a name="cost-managementtabmanagecost"></a>[Kostenmanagement](#tab/ManageCost)
+# <a name="cost-management"></a>[Kostenmanagement](#tab/ManageCost)
 
 Bei der Migration von Ressourcen in Ihre Cloudumgebung ist es wichtig, eine regelmäßige Kostenanalyse durchzuführen. Dadurch können Sie unerwartete Nutzungsgebühren vermeiden, denn der Migrationsprozess stellt möglicherweise zusätzliche Nutzungsanforderungen an Ihre Dienste. Sie können zudem die Größe der Ressourcen nach Bedarf anpassen, um Kosten und Workload auszugleichen (weitere Details finden Sie im Abschnitt **[Optimierung und Transformation](./optimize-and-transform.md)** ).

@@ -1,6 +1,6 @@
 ---
 title: Auf Migration ausgerichtete Kostenkontrollmechanismen
-description: Es wird beschrieben, wie Sie Budgets und Zahlungen einrichten und was bei Rechnungen für Ihre Azure-Ressourcen zu beachten ist.
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um sich mit der Einrichtung von Budgets und Zahlungen sowie mit Rechnungen für Ihre Azure-Ressourcen vertraut zu machen.
 author: bandersmsft
 ms.author: banders
 ms.date: 08/08/2019
@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 82c801abee32e0399eb124440868bc455034a018
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: b220929fd6348909b8f06f7a537e1052c459d24d
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222657"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312117"
 ---
+<!-- cSpell:ignore bandersmsft -->
+
 # <a name="migration-focused-cost-control-mechanisms"></a>Auf Migration ausgerichtete Kostenkontrollmechanismen
 
 Die Cloud bewirkt einige Veränderungen in unseren Arbeitsweisen, unabhängig von unserer Rolle im Technologieteam. Kosten sind ein gutes Beispiel hierfür. In der Vergangenheit beschäftigte sich nur die Finanz- und IT-Führung mit den Kosten von IT-Ressourcen (Infrastruktur, Apps, Daten). Die Cloud befähigt nun jedes IT-Mitglied, Entscheidungen zu treffen und umzusetzen, die den Endbenutzer besser unterstützen. Mit dieser Fähigkeit kommt jedoch auch die Verantwortung, bei diesen Entscheidungen kostenbewusst zu handeln.

@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f1ee4e64e86ccb3648badad38d2118be11b76cc7
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: cc8f2396e379180d213bd042d65f36e9eaef2828
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709361"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508116"
 ---
 # <a name="identity-baseline-discipline-improvement"></a>Verbesserung der Disziplin „Identitätsbaseline“
 
@@ -119,7 +119,7 @@ Nachdem die Transformation abgeschlossen ist, müssen Governance und Betrieb wä
 **Potenzielle Aktivitäten:**
 
 - Führen Sie regelmäßige Überprüfungen der Identitätsrichtlinien und deren Einhaltung durch.
-- Stellen Sie sicher, dass für sensible Benutzerkonten (CEO, CFO, VP usw.) immer die mehrstufige Authentifizierung und die Erkennung ungewöhnlicher Anmeldungen aktiviert sind.
+- Stellen Sie sicher, dass für sensible Benutzerkonten (z. B. von Führungskräften des Unternehmens) immer die mehrstufige Authentifizierung und die Erkennung ungewöhnlicher Anmeldungen aktiviert sind.
 - Führen Sie regelmäßig Überprüfungen auf böswillige Akteure und Datenschutzverletzungen durch, insbesondere im Zusammenhang mit Identitätsbetrug, z.B. mögliche Übernahmen von Administratorkonten.
 - Konfigurieren Sie ein Überwachungs- und Berichterstellungstool.
 - Ziehen Sie eine engere Integration in Sicherheits- und Betrugspräventionssysteme in Betracht.

@@ -1,6 +1,6 @@
 ---
-title: Umgestalten einer App durch die Migration zu Azure App Service und Azure SQL-Datenbank
-description: Dieser Artikel enthält Informationen darüber, wie Contoso einer lokalen App einen neuen Host zuweist, indem diese zu einer Azure App Service-Web-App und einer Azure SQL Server-Datenbank migriert wird.
+title: Migrieren einer App zu Azure App Service und SQL-Datenbank
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie Sie eine App umgestalten, indem Sie sie zu Azure App Service und Azure SQL-Datenbank migrieren.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 3667207de8cc31a85e12666c425ffdf0469c1be5
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 86a7dc6a0754ece24c8d18dca847bde0e93b5345
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223069"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311998"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost contosodc vcenter smarthotel SHWEB SHWCF -->
 

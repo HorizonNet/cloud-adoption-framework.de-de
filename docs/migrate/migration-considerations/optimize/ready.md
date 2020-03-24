@@ -1,18 +1,18 @@
 ---
 title: Vorbereiten einer migrierten Anwendung für das Höherstufen zur Produktion
-description: Ein Prozess innerhalb der Cloudmigration, der sich auf die Aufgaben der Migration von Workloads in die Cloud konzentriert.
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um sich mit der Überprüfung vertraut zu machen, die beim Vorbereiten einer migrierten Anwendung für die Höherstufung in die Produktion durchgeführt wird.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f3aad7a2b7c592478f9d48a50dc96d5fee607dc8
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 4b48a4ceea5d322e4a993cdba474269d73fbc7e3
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801612"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312015"
 ---
 # <a name="prepare-a-migrated-application-for-production-promotion"></a>Vorbereiten einer migrierten Anwendung für das Höherstufen zur Produktion
 

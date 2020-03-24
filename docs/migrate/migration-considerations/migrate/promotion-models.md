@@ -1,18 +1,18 @@
 ---
-title: 'Höherstufungsmodelle: „in einem Schritt“, „gestaffelt“ oder „Flight“'
-description: Grundlegendes zu den Auswirkungen von Höherstufung auf Migrationsaktivitäten
+title: Arten von Höherstufungsmodellen
+description: Es werden drei gängige Höherstufungsmodelle für die Cloudmigration beschrieben, und Sie erfahren, wie sich Ihre Modellwahl auf die Aktivitäten der Migrations- und Optimierungsprozesse auswirkt.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9206b90cc9d5ec3a7e8e084b216be713fb24f265
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 6174c142f949052b3396fe4954a5f20f2eba58fd
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802224"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311845"
 ---
 # <a name="promotion-models-single-step-staged-or-flight"></a>Höherstufungsmodelle: „in einem Schritt“, „gestaffelt“ oder „Flight“
 

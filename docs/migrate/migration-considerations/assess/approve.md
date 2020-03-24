@@ -1,18 +1,18 @@
 ---
 title: Genehmigen von Änderungen an der Architektur vor der Migration
-description: Grundlegendes zur Bedeutung der Genehmigung vor der Migration
+description: Es wird beschrieben, wie Sie die Änderungen an der Architektur klassifizieren, wenn diese erforderlich sind, und geeignete Genehmigungsaktivitäten einrichten.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3776f468c48e7483d884a0c6cae8654218ac1a94
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3d674cfe0378613530adb329ae21b9c379742e91
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76802751"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312083"
 ---
 # <a name="approve-architecture-changes-before-migration"></a>Genehmigen von Änderungen an der Architektur vor der Migration
 

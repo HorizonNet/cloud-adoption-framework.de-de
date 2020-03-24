@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 17796b5ebe081f6e7ff14ba951db4db0d187d630
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 6751de6d448be8119dceaed86339e1c27ccc40f3
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709514"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508099"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>Prozesse für die Compliance der Ressourcenkonsistenzrichtlinie
 
@@ -55,11 +55,11 @@ Wenn Verstöße festgestellt werden, sollten Sie so schnell wie möglich Maßnah
 
 Die folgenden Auslöser und Durchsetzungsmaßnahmen sind Beispiele, auf die Sie bei der Planung der Verwendung von Überwachungsdaten zur Behebung von Richtlinienverstößen verweisen können:
 
-- **Überdimensionierte Ressource erkannt.** Ressourcen, bei denen erkannt wird, dass sie weniger als 60 % der CPU- oder Arbeitsspeicherkapazität nutzen, sollten automatisch zentral herunterskaliert werden oder die Bereitstellung von Ressourcen aufheben, um Kosten zu senken.
-- **Unterdimensionierte Ressource erkannt.** Ressourcen, bei denen erkannt wird, dass sie mehr als 80 % der CPU- oder Arbeitsspeicherkapazität nutzen, sollten automatisch zentral hochskaliert werden oder zusätzliche Ressourcen bereitstellen, um zusätzliche Kapazitäten bereitzustellen.
+- **Überdimensionierte Ressource erkannt.** Ressourcen, bei denen erkannt wird, dass sie weniger als 60 % der CPU- oder Arbeitsspeicherkapazität nutzen, sollten automatisch herunterskaliert werden oder die Bereitstellung von Ressourcen aufheben, um Kosten zu senken.
+- **Unterdimensionierte Ressource erkannt.** Ressourcen, bei denen erkannt wird, dass sie mehr als 80 % der CPU- oder Arbeitsspeicherkapazität nutzen, sollten automatisch hochskaliert werden oder zusätzliche Ressourcen bereitstellen, um zusätzliche Kapazitäten bereitzustellen.
 - **Ressourcenerstellung ohne Tags.** Jede Anforderungen zum Erstellen einer Ressource ohne erforderliche Metatags wird automatisch abgelehnt.
 - **Ausfall kritischer Ressource erkannt.** IT-Mitarbeiter werden bei allen erkannten Ausfällen unternehmenskritischer Ressourcen benachrichtigt. Wenn sich der Ausfall nicht sofort beheben lässt, eskalieren Mitarbeiter das Problem und benachrichtigen Besitzer von Workloads und das Cloudgovernanceteam. Das Cloudgovernanceteam verfolgt das Problem bis zu seiner Lösung und aktualisiert die Anleitung, falls eine Richtlinienüberarbeitung erforderlich ist, um zukünftige Vorfälle zu verhindern.
-- **Konfigurationsabweichung.** Bei Erkennung von Ressourcen, die nicht den festgelegten Baselines entsprechen, sollten Warnungen ausgelöst sowie automatische Maßnahmen mithilfe von Konfigurationsverwaltungstools wie etwa Azure Automation, Chef, Puppet oder Ansible ergriffen werden.
+- **Konfigurationsabweichung.** Bei Erkennung von Ressourcen, die nicht den festgelegten Baselines entsprechen, sollten Warnungen ausgelöst sowie automatische Maßnahmen mithilfe von Konfigurationsverwaltungstools, z. B. Azure Automation, Chef, Puppet oder Ansible, ergriffen werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

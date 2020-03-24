@@ -1,18 +1,18 @@
 ---
-title: Anleitungen zum Erstellen eines geschäftsbezogenen Änderungsplans
-description: Ein Prozess innerhalb der Cloudmigration, der sich auf die Aufgaben der Migration von Workloads in die Cloud konzentriert.
+title: Entwickeln eines geschäftsbezogenen Änderungsplans
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie ein geschäftsbezogener Änderungsplan als Hilfe bei der Implementierung eines umfassenderen Einführungsplans für Benutzer dienen kann.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 48e670028e26be5a28abf55c7a0565769e17dacf
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: d1c842c672cc091deaad4e0b7f4ffc89231895c7
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801969"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312032"
 ---
 # <a name="business-change-plan"></a>Geschäftsbezogener Änderungsplan
 

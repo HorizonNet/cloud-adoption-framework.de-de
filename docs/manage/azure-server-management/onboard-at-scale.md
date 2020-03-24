@@ -1,22 +1,25 @@
 ---
-title: Konfigurieren von Azure-Serververwaltungsdiensten für ein Abonnement
-description: Konfigurieren von Azure-Serververwaltungsdiensten für ein Abonnement
+title: Konfigurieren des Diensts für ein Abonnement
+description: Es wird beschrieben, wie Sie die Azure-Serververwaltungsdienste für ein Abonnement konfigurieren, indem Sie Dienst-Agents für Ihre Server bereitstellen und Verwaltungslösungen aktivieren.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c3c44f3c53049f29be989616e1d5af041907e497
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: efd387f2f3a1c11d518e8e51d06977efdd07609c
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76808089"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312737"
 ---
+<!-- cSpell:ignore VMUUID kusto -->
+
 # <a name="configure-azure-server-management-services-at-scale"></a>Bedarfsabhängiges Konfigurieren von Azure-Serververwaltungsdiensten
 
 Sie müssen diese beiden Aufgaben abschließen, um das Onboarding für Azure-Serververwaltungsdienste auf Ihren Servern durchzuführen:
+
 - Bereitstellen von Dienst-Agents auf Ihren Servern
 - Aktivieren der Verwaltungslösungen
 
@@ -74,7 +77,7 @@ Nach Abschluss des Assistenten wird die Richtlinienzuweisung in der Umgebung ber
 > [!NOTE]
 > Erstellen Sie den erforderlichen [Log Analytics-Arbeitsbereich und das Azure Automation-Konto](./prerequisites.md#create-a-workspace-and-automation-account), bevor Sie das Onboarding von Azure-Serververwaltungsdiensten auf Servern durchführen.
 
-Für lokale Server müssen Sie den [Log Analytics-Agent und den Microsoft Dependency-Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) manuell herunterladen und installieren und diese Agents anschließend so konfigurieren, dass eine Verbindung mit dem richtigen Arbeitsbereich hergestellt wird. Sie müssen die Arbeitsbereichs-ID und die Schlüsselinformationen angeben. Um diese Informationen zu erhalten, wechseln Sie in Ihren Log Analytics-Arbeitsbereich im Azure-Portal, und wählen Sie **Einstellungen** > **Erweiterte Einstellungen** aus.
+Für lokale Server müssen Sie den [Log Analytics-Agent und den Microsoft Dependency-Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) manuell herunterladen und installieren und diese Agents anschließend so konfigurieren, dass eine Verbindung mit dem richtigen Arbeitsbereich hergestellt wird. Sie müssen die Arbeitsbereichs-ID und die Schlüsselinformationen angeben. Navigieren Sie im Azure-Portal zu Ihrem Log Analytics-Arbeitsbereich, und wählen Sie **Einstellungen** > **Erweiterte Einstellungen** aus, um diese Informationen zu erhalten.
 
 ![Screenshot: Erweiterte Einstellungen für Log Analytics-Arbeitsbereich im Azure-Portal](./media/onboarding-on-premises.png)
 
@@ -139,7 +142,7 @@ Das [Azure-Aktivitätsprotokoll](https://docs.microsoft.com/azure/azure-monitor/
 
 So implementieren Sie diese Lösung
 
-1. Öffnen Sie im Azure-Portal die Option **Alle Dienste**, und wählen Sie **Verwaltung + Governance** > **Lösungen**.
+1. Öffnen Sie im Azure-Portal die Option **Alle Dienste**, und wählen Sie anschließend **Verwaltung + Governance** > **Lösungen** aus.
 2. Wählen Sie in der Ansicht **Lösungen** die Option **Hinzufügen** aus.
 3. Suchen Sie nach **Aktivitätsprotokollanalyse**, und wählen Sie diese Option aus.
 4. Klicken Sie auf **Erstellen**.
@@ -152,7 +155,7 @@ Die Lösung „Azure Log Analytics-Agent-Integritätsdiagnose“ informiert Sie 
 
 So implementieren Sie diese Lösung
 
-1. Öffnen Sie im Azure-Portal die Option **Alle Dienste**, und wählen Sie **Verwaltung + Governance** > **Lösungen**.
+1. Öffnen Sie im Azure-Portal die Option **Alle Dienste**, und wählen Sie anschließend **Verwaltung + Governance** > **Lösungen** aus.
 2. Wählen Sie in der Ansicht **Lösungen** die Option **Hinzufügen** aus.
 3. Suchen Sie nach **Azure Log Analytics-Agent-Integritätsdiagnose** , und wählen Sie diese Option aus.
 4. Klicken Sie auf **Erstellen**.
@@ -167,7 +170,7 @@ Mit der Lösung für die Antischadsoftwarebewertung können Sie Server identifiz
 
 So implementieren Sie diese Lösung
 
-1. Öffnen Sie im Azure-Portal die Option **Alle Dienste**, und wählen Sie **Verwaltung + Governance** > **Lösungen**.
+1. Öffnen Sie im Azure-Portal die Option **Alle Dienste**, und wählen Sie anschließend **Verwaltung + Governance** > **Lösungen** aus.
 2. Wählen Sie in der Ansicht **Lösungen** die Option **Hinzufügen** aus.
 3. Suchen Sie nach **Antischadsoftwarebewertung**, und wählen Sie diese Option aus.
 4. Klicken Sie auf **Erstellen**.
@@ -178,7 +181,7 @@ Nachdem die Erstellung abgeschlossen ist, zeigt die Instanz der Arbeitsbereichsr
 
 ### <a name="azure-monitor-for-vms"></a>Azure Monitor für VMs
 
-Sie können [Azure Monitor für VMs](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview) auf der Ansichtsseite für die VM-Instanz so aktivieren, wie dies unter [Aktivieren von Verwaltungsdiensten auf einem einzelnen virtuellen Computer zur Auswertung](./onboard-single-vm.md) beschrieben ist. Sie sollten Lösungen nicht direkt auf der Seite **Lösungen** aktivieren, wie Sie dies für die anderen Lösungen in diesem Artikel vornehmen. Bei Bereitstellungen größeren Umfangs ist es unter Umständen einfacher, die [Automatisierung](./onboarding-automation.md) zu verwenden, um im Arbeitsbereich die richtigen Lösungen zu aktivieren. 
+Sie können [Azure Monitor für VMs](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview) auf der Ansichtsseite für die VM-Instanz so aktivieren, wie dies unter [Aktivieren von Verwaltungsdiensten auf einem einzelnen virtuellen Computer zur Auswertung](./onboard-single-vm.md) beschrieben ist. Sie sollten Lösungen nicht direkt auf der Seite **Lösungen** aktivieren, wie Sie dies für die anderen Lösungen in diesem Artikel vornehmen. Bei Bereitstellungen größeren Umfangs ist es unter Umständen einfacher, die [Automatisierung](./onboarding-automation.md) zu verwenden, um im Arbeitsbereich die richtigen Lösungen zu aktivieren.
 
 ### <a name="azure-security-center"></a>Azure Security Center
 

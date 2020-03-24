@@ -1,6 +1,6 @@
 ---
 title: Virtuelles Azure-Rechenzentrum
-description: Ressourcen für das virtuelle Rechenzentrum in Microsoft Azure
+description: Das virtuelle Azure-Rechenzentrum ist jetzt das Microsoft Cloud Adoption Framework für Azure. Informieren Sie sich über die Ressourcen zur Unterstützung dieser Umstellung.
 author: tracsman
 ms.author: jonor
 ms.date: 06/12/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 keywords: Azure
 layout: LandingPage
-ms.openlocfilehash: 0a4c1777cc256b72fb3897b47d76c1c224b578da
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 4eb8e5a0c9fa88bdfbd6e00c55047e75873ff36f
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78891743"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311556"
 ---
 <!-- cSpell:ignore tracsman jonor -->
 

@@ -1,18 +1,18 @@
 ---
-title: Bewährte Methoden für die VMware-Hostmigration für Azure
-description: Einführung in bewährte Methoden für die VMware-Hostmigration für Azure
+title: VMware-Hostmigration für Azure
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um sich mit den bewährten Methoden für die VMware-Hostmigration vertraut zu machen, mit denen die Komplexität reduziert und der Migrationsprozess standardisiert wird.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8fafc0f014dcda9e004845398f25897659b619aa
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 7fb9e477575a870d1be09b45c91917f85c6a2f10
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094386"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312134"
 ---
 # <a name="vmware-host-migration-best-practices-for-azure"></a>Bewährte Methoden für die VMware-Hostmigration für Azure
 

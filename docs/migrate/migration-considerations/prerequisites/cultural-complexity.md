@@ -1,18 +1,18 @@
 ---
-title: 'Vorbereiten auf kulturelle Komplexität: Abstimmen von Rollen und Zuständigkeiten'
-description: Vorbereiten auf kulturelle Komplexität durch Abstimmen von Rollen und Zuständigkeiten
+title: Kulturelle Komplexität beim Abstimmen von Rollen und Zuständigkeiten
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um sich auf die kulturelle Komplexität vorzubereiten, indem Sie Rollen und Zuständigkeiten so abstimmen, dass während des Migrationsprozesses die Eindeutigkeit sichergestellt ist.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 186772796694d6ef60a923c5098760a573d8db6d
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 56956443bc681cc0c7e00ea13babb55a26280192
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801493"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311794"
 ---
 # <a name="prepare-for-cultural-complexity-aligning-roles-and-responsibilities"></a>Vorbereiten auf kulturelle Komplexität: Abstimmen von Rollen und Zuständigkeiten
 
@@ -24,7 +24,7 @@ In jedem Szenario ist es ratsam, in die Dokumentation von Rollen und Zuständigk
 
 Bei jeder Migration gibt es einige Schlüsselfunktionen, die am besten vom Unternehmen ausgeführt werden, wann immer dies möglich ist. Häufig ist die IT-Abteilung in der Lage, die folgenden Aufgaben auszuführen. Die Einbeziehung von Mitgliedern des Unternehmens kann jedoch dazu beitragen, Barrieren im späteren Verlauf des Einführungsprozesses zu reduzieren. Darüber hinaus wird so der Beitrag der wichtigsten Beteiligten während des gesamten Migrationsprozesses sichergestellt.
 
-| Prozess | Aktivität | Beschreibung |
+| Prozess | Aktivität | BESCHREIBUNG |
 |---------|---------|---------|
 | Bewerten | Geschäftsziele | Definieren der gewünschten Geschäftsergebnisse der Migration |
 | Bewerten | Prioritäten | Sicherstellen der Ausrichtung auf sich ändernde geschäftliche Prioritäten und Marktbedingungen |
@@ -45,7 +45,7 @@ Jeder Prozess im Rahmen der Besprechung der Migrationsprinzipien des Framework f
 > [!NOTE]
 > In der folgenden Tabelle sollte eine verantwortliche Partei mit der Abstimmung von Rollen beginnen. Diese Spalte sollte an die bestehenden Prozesse angepasst werden, um eine effiziente Ausführung zu gewährleisten. Im Idealfall sollte eine einzelne Person als verantwortliche Partei benannt werden.
 
-| Prozess | Aktivität | Beschreibung | Verantwortliche Partei |
+| Prozess | Aktivität | BESCHREIBUNG | Verantwortliche Partei |
 |---------|---------|---------|---------|
 | Voraussetzung | Digitale Ressourcen | Anpassen des vorhandenen Bestands an die grundlegenden Annahmen basierend auf den Geschäftsergebnissen | Cloudstrategieteam |
 | Voraussetzung | Migrationsbacklog | Priorisieren der Reihenfolge zu migrierender Workloads | Cloudstrategieteam |

@@ -1,18 +1,18 @@
 ---
-title: Leitfaden für Tests von Geschäftsabläufen (UAT) während der Migration
-description: Ein Prozess innerhalb der Cloudmigration, der sich auf die Aufgaben der Migration von Workloads in die Cloud konzentriert.
+title: Tests von Geschäftsabläufen während der Migration
+description: Es wird beschrieben, wie mit Tests von Geschäftsabläufen überprüft wird, ob die Lösungsleistung den Erwartungen entspricht und Geschäftsprozesse nicht behindert werden.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4c24ae176d3b8fc8ec4fa504ed406bc32a1c0ab3
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 675eda4aeb2109c21c2e3f47a100a985fd6e2861
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801952"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311752"
 ---
 # <a name="guidance-for-business-testing-uat-during-migration"></a>Leitfaden für Tests von Geschäftsabläufen (UAT) während der Migration
 

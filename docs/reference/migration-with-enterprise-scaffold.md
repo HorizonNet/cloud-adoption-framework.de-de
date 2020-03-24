@@ -1,6 +1,6 @@
 ---
 title: Azure-Unternehmensgerüst
-description: Beschreibt ein Unternehmensgerüst, mit dem eine sichere und verwaltbare Umgebung sichergestellt werden kann.
+description: Das Azure-Unternehmensgerüst ist jetzt das Microsoft Cloud Adoption Framework für Azure. Informieren Sie sich darüber, wie Sie die erforderlichen Governanceanforderungen erfüllen und dafür eine gute Balance in Bezug auf die benötigte Flexibilität erzielen.
 author: rdendtler
 ms.author: rodend
 ms.date: 09/22/2018
@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 8291b48d2955d623b643c944f4307613bcf22f47
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: c545f147ba374fe1150573b060c600269eb628b1
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79023943"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311607"
 ---
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
 
@@ -309,7 +309,7 @@ Ihnen steht eine Vielzahl von Tools zur Verfügung – von Erstanbietertools wie
 
 Die Automatisierung ist ein Vollzeitjob und wird sehr schnell zu einer der wichtigsten operativen Aufgaben in Ihrem Cloudteam. Organisationen, die die Automatisierung in den Vordergrund stellen, sind erfolgreicher bei der Verwendung von Azure:
 
-- **Kostenverwaltung:** Organisationen suchen aktiv nach Möglichkeiten und nutzen die Automatisierung, um die Größen ihrer Ressourcen anzupassen, Ressourcen zentral hoch- oder herunterzuskalieren und nicht genutzte Ressourcen zu deaktivieren.
+- **Kostenverwaltung:** Organisationen suchen aktiv nach Möglichkeiten und nutzen die Automatisierung, um die Größen ihrer Ressourcen anzupassen, Ressourcen hoch- oder herunterzuskalieren und nicht genutzte Ressourcen zu deaktivieren.
 - **Operative Flexibilität:** Mit der Automatisierung (sowie durch Nutzung von Vorlagen und DevOps-Verfahren) erzielen Sie ein Maß an Wiederholbarkeit, das die Verfügbarkeit steigert, die Sicherheit erhöht und es Ihrem Team ermöglicht, sich auf das Lösen von geschäftlichen Problemen zu konzentrieren.
 
 ## <a name="templates-and-devops"></a>Vorlagen und DevOps

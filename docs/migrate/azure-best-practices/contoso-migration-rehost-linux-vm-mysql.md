@@ -1,18 +1,18 @@
 ---
-title: Zuweisen eines neuen Hosts für eine Linux-Service Desk-App zu Azure und Azure Database for MySQL
-description: Dieser Artikel enthält Informationen zum Zuweisen eines neuen Hosts für eine lokale Linux-App durch Migration zu Azure-VMs und Azure Database for MySQL.
+title: Zuweisen eines neuen Hosts für eine Linux-Service Desk-App in Azure und Azure Database for MySQL
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie Sie einen neuen Host für eine lokale Linux-App zuweisen, indem Sie sie zu Azure-VMs und Azure Database for MySQL migrieren.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a5043e3d42b843cfb714823fcb476e7bfdc0a2fd
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 89ba67d795f03a424a22fbf834f07f9d45241449
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223014"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311471"
 ---
 <!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL contosohost contosodc contosovmsacc contosoosticket vcenter cswiz osticket NSGs systemctl -->
 

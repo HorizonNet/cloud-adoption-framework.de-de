@@ -1,18 +1,18 @@
 ---
-title: Wie helfen Retrospektiven beim Entwickeln einer wachstumsorientierten Mentalität?
-description: Ein Prozess innerhalb der Cloudmigration, der sich auf die Aufgaben der Migration von Workloads in die Cloud konzentriert.
+title: Entwickeln einer wachstumsorientierten Mentalität mit Retrospektiven
+description: Es wird beschrieben, wie Retrospektiven zur Entwicklung einer wachstumsorientierten Mentalität beitragen und Teams die Möglichkeit geben, für nachhaltiges Wachstum zu sorgen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1bf3c79b95c748880e5d560003aa65acb1949c48
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: d56330f1a4dcfd2057a945d53f7a0f7365b0b600
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78891902"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311777"
 ---
 <!-- markdownlint-disable MD026 -->
 

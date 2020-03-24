@@ -1,18 +1,18 @@
 ---
-title: Erforderliche Planung für Azure-Serververwaltungsdienste
-description: Erforderliche Tools und Planung für Azure-Serververwaltungsdienste
+title: Planung für Azure-Serververwaltungsdienste
+description: Informieren Sie sich über die Tools, und bereiten Sie die Ressourcen vor, die zum Verwalten der Azure-Serververwaltungsdienste benötigt werden.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 934263f5c143d021ce97125f025f96d8ae6f338f
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 97d4b52b50f943dfd0e146e84d4e5fc5a1d97711
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807970"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312781"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>Phase 1: Erforderliche Planung für Azure-Serververwaltungsdienste
 
@@ -97,7 +97,7 @@ Informationen zum Erstellen eines Log Analytics-Arbeitsbereichs über das Azure-
 > [!NOTE]
 > Wenn Sie ein Automation-Konto über das Azure-Portal erstellen, versucht das Portal standardmäßig, „Ausführen als“-Konten sowohl für Ressourcen des Azure Resource Manager-Bereitstellungsmodells als auch des klassischen Bereitstellungsmodells zu erstellen. Wenn Sie keine klassischen virtuellen Computer in Ihrer Umgebung verwenden und nicht der Co-Admin im Abonnement sind, erstellt das Portal ein Konto vom Typ „Ausführen als“ für Resource Manager, generiert bei der Bereitstellung des klassischen „Ausführen als“-Kontos jedoch einen Fehler. Wenn Sie nicht beabsichtigen, klassische Ressourcen zu unterstützen, können Sie diesen Fehler ignorieren.
 >
-> „Ausführen als“-Konten können auch mithilfe von [PowerShell](https://docs.microsoft.com/azure/automation/manage-runas-account#create-run-as-account-using-powershell) erstellt werden.
+> „Ausführen als“-Konten können auch mithilfe von [PowerShell](https://docs.microsoft.com/azure/automation/manage-runas-account#creating-a-run-as-account-using-powershell) erstellt werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

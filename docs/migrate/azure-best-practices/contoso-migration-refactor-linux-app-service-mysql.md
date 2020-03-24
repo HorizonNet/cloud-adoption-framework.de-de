@@ -1,18 +1,18 @@
 ---
-title: Umgestalten einer Linux-Service Desk-App für Azure App Service und Azure Database for MySQL
-description: Erfahren Sie, wie Contoso eine lokale Linux-App umgestaltet, indem sie zu Azure App Service mit GitHub für die Webebene und Azure SQL-Datenbank migriert wird.
+title: Umgestalten einer Linux-App in Azure App Service und Database for MySQL
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie Sie eine Linux-Service Desk-App in Azure App Service und Azure Database for MySQL umgestalten.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2e47647b06da12b9b595f4330767f629121e00a0
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3a4ebcb2264ff863200071363b8369d8a76549d3
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76807460"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311488"
 ---
 # <a name="refactor-a-linux-app-to-multiple-regions-using-azure-app-service-traffic-manager-and-azure-database-for-mysql"></a>Umgestalten einer Linux-App für mehrere Regionen mit Azure App Service, Azure Traffic Manager und Azure Database for MySQL
 

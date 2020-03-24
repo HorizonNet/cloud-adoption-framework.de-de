@@ -1,6 +1,6 @@
 ---
-title: Zuweisen eines neuen Hosts zu einer App durch Migration zu Azure-VMs und Always On-Verfügbarkeitsgruppen für SQL Server
-description: Dieser Artikel enthält Informationen darüber, wie Contoso einer lokalen App einen neuen Host zuweist, indem diese zu Azure-VMs und zur SQL Server Always On-Verfügbarkeitsgruppe migriert wird.
+title: Zuweisen eines neuen Hosts in Azure und in SQL Server Always On-Verfügbarkeitsgruppen
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie Sie einen neuen Host für eine lokale App zuweisen, indem Sie sie zu Azure-VMs und SQL Server Always On-Verfügbarkeitsgruppen migrieren.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b52b1fad33a9868682ddcd7cf905c7f8ab9b3612
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: bc530c3f97b26a519198ef7b9ddc1fce967fbed6
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222956"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311539"
 ---
 # <a name="rehost-an-on-premises-app-with-azure-virtual-machines-and-sql-server-always-on-availability-groups"></a>Zuweisen eines neuen Hosts für eine lokale App mit Azure Virtual Machines und in SQL Server Always On-Verfügbarkeitsgruppen
 

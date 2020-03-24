@@ -1,18 +1,18 @@
 ---
-title: Bewährte Methoden zum Einrichten von Netzwerken für zu Azure migrierte Workloads
-description: Nach der Migration zu Azure werden Ihnen bewährte Methoden zum Einrichten von Netzwerken für Ihre migrierten Workloads bereitgestellt.
+title: Einrichten von Netzwerken für zu Azure migrierte Workloads
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um sich über die bewährten Methoden zum Einrichten von Netzwerken für Ihre migrierten Workloads zu informieren.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7bdfe3108c2ccdfd2661d45cc234978c784232f9
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 84ece22173c921f1a4de5701988b9fffcaedaaf7
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892700"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312151"
 ---
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Bewährte Methoden zum Einrichten von Netzwerken für zu Azure migrierte Workloads
 

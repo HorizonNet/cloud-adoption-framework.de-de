@@ -1,18 +1,18 @@
 ---
-title: Welche Rolle spielen Replikation und Synchronisierung im Migrationsprozess?
-description: Ein Prozess innerhalb der Cloudmigration, der sich auf die Aufgaben der Migration von Workloads in die Cloud konzentriert.
+title: Replikation und der Migrationsprozess
+description: Machen Sie sich damit vertraut, welche Rolle die Replikation beim Migrationsprozess spielt, wie Sie die Erfüllung der Voraussetzungen planen und welche Risiken mit Replikationsaktivitäten verbunden sind.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5eaea53e65951cb5fee3d36b2eba472e1048feb2
-ms.sourcegitcommit: 26caeb6b7f4e14df30bf16727d0b1b3d63b9c0c2
+ms.openlocfilehash: 31930cfef32d4a02b3892405e2c5b462e0039566
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78337817"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79312777"
 ---
 <!-- markdownlint-disable MD026 -->
 

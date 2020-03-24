@@ -1,6 +1,6 @@
 ---
-title: Rehosten einer App auf Azure-VMs mit Azure Site Recovery
-description: Hier erfahren Sie, wie Contoso einer lokalen App mit einer „Lift & Shift“-Migration von lokalen Computern zu Azure mithilfe des Azure Site Recovery-Diensts einen neuen Host zuweist.
+title: Rehosten einer lokalen App auf Azure-VMs mit Azure Site Recovery
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie Sie einer lokalen App einen neuen Host zuweisen, indem Sie die Migration von lokalen Computern zu Azure durchführen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/11/2018
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 8b704c88b2e6a161c49082301df6e6a3d7d77154
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 7a8b70d43ef68137418f0c2cfc731871561844f0
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222891"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311369"
 ---
 # <a name="rehost-an-on-premises-app-on-azure-vms"></a>Rehosten einer lokalen App auf Azure-VMs
 
@@ -176,7 +176,7 @@ Bevor Contoso-Administratoren eine Migration zu Azure durchführen können, müs
 
 Nachdem die Ermittlung abgeschlossen ist, können Sie mit der Replikation von VMware-VMs in Azure beginnen.
 
-1. Wählen Sie im Azure Migrate-Projekt unter **Server** > **Azure Migrate: Servermigration** die Option **Replizieren** aus.
+1. Klicken Sie im Azure Migrate-Projekt unter **Server** > **Azure Migrate: Servermigration** die Option **Replizieren** aus.
 
     ![Replizieren von VMs](./media/contoso-migration-rehost-vm/select-replicate.png)
 
@@ -223,7 +223,7 @@ Contoso-Administratoren führen ein schnelles Testfailover und dann ein vollstä
 
 ### <a name="run-a-test-failover"></a>Ausführen eines Testfailovers
 
-1. Wählen Sie unter **Migrationsziele** > **Server** > **Azure Migrate: Servermigration** die Option **Migrierte Server testen** aus.
+1. Klicken Sie unter **Migrationsziele** > **Server** > **Azure Migrate: Servermigration** die Option **Migrierte Server testen** aus.
 
      ![Testen der migrierten Server](./media/contoso-migration-rehost-vm/test-migrated-servers.png)
 
@@ -242,7 +242,7 @@ Contoso-Administratoren führen ein schnelles Testfailover und dann ein vollstä
 
 Contoso-Administratoren führen jetzt ein vollständiges Failover aus, um die Migration abzuschließen.
 
-1. Wählen Sie im Azure Migrate-Projekt unter **Server** > **Azure Migrate: Servermigration** die Option **Server werden repliziert** aus.
+1. Klicken Sie im Azure Migrate-Projekt unter **Server** > **Azure Migrate: Servermigration** die Option **Server werden repliziert** aus.
 
     ![Replizieren der Server](./media/contoso-migration-rehost-vm/replicating-servers.png)
 

@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 62c47f8d4b3c386129c6a6a9eeb966393573ea16
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 614c43a59d7fab493aa97eca47dcd43a73987fa9
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223889"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508133"
 ---
 <!-- cSpell:ignore netops -->
 
@@ -30,7 +30,7 @@ Folgende Anforderungen müssen erfüllt sein:
 - Unterstützung für mehrere **Umgebungen**. Bei einer Umgebung handelt es sich um eine logische Gruppierung von Ressourcen. Hierzu zählen beispielsweise virtuelle Computer und Netzwerke sowie Routingdienste für Netzwerkdatenverkehr. Diese Ressourcengruppen haben ähnliche Verwaltungs- und Sicherheitsanforderungen und werden in der Regel für einen bestimmten Zweck verwendet – etwa für Tests oder für die Produktion. In diesem Beispiel werden vier Umgebungen benötigt:
   - Eine **Umgebung mit freigegebener Infrastruktur** mit Ressourcen, die von Workloads in anderen Umgebungen freigegeben werden. Beispiel: Ein virtuelles Netzwerk mit einem Gatewaysubnetz, das die Konnektivität für die lokale Umgebung bereitstellt.
   - Eine **Produktionsumgebung** mit den restriktivsten Sicherheitsrichtlinien. Sie kann interne oder externe Workloads umfassen.
-  - Eine **Umgebung vor der Produktion** zu Entwicklungs- und Testzwecken. Diese Umgebung verfügt über Richtlinien für die Bereiche Sicherheit, Konformität und Kosten, die sich von den Richtlinien in der Produktionsumgebung unterscheiden. In Azure wird hierzu ein Enterprise Dev/Test-Abonnement verwendet.
+  - Eine **Umgebung, die nicht für die Produktion bestimmt ist**, sondern zu Entwicklungs- und Testzwecken verwendet wird. Diese Umgebung verfügt über Richtlinien für die Bereiche Sicherheit, Konformität und Kosten, die sich von den Richtlinien in der Produktionsumgebung unterscheiden. In Azure wird hierzu ein Enterprise Dev/Test-Abonnement verwendet.
   - Eine **Sandbox-Umgebung** zu Proof of Concept- und Weiterbildungszwecken. Diese Umgebung wird in der Regel individuellen Mitarbeitern zugewiesen, die sich an Entwicklungsaktivitäten beteiligen, und verfügt über strikte prozedurale und betriebliche Sicherheitskontrollen, um die Einbringung von Unternehmensdaten zu verhindern. In Azure werden hierzu Visual Studio-Abonnements verwendet. Diese Abonnements dürfen auch _nicht_ mit der Azure Active Directory-Instanz des Unternehmens verknüpft werden.
 - Ein **Berechtigungsmodell der geringsten Berechtigung**, bei dem Benutzer standardmäßig nicht über Berechtigungen verfügen. Das Modell muss Folgendes unterstützen:
   - Einen einzelnen vertrauenswürdigen Benutzer (der wie ein Dienstkonto behandelt wird) im Abonnementbereich mit Berechtigung zum Zuweisen von Ressourcenzugriffsrechten.
@@ -141,7 +141,7 @@ Nachdem Sie nun ein Berechtigungsmodell der geringsten Berechtigung entworfen ha
 2. **Produktionsumgebung:** Mehrere Gruppen von Ressourcen, die mehrere Produktionsworkloads darstellen. Diese Ressourcen werden verwendet, um die Anwendungselemente für den privaten und öffentlichen Bereich zu hosten. Diese Ressourcen verfügen normalerweise über die striktesten Governance- und Sicherheitsmodelle, um die Ressourcen, den Anwendungscode und die Daten vor unberechtigtem Zugriff zu schützen.
 3. **Umgebung vor der Produktion:** Mehrere Gruppen von Ressourcen, die für mehrere, nicht für die Produktion bereite Workloads stehen. Diese Ressourcen werden zu Entwicklungs- und Testzwecken verwendet. Für diese Ressourcen kann ggf. ein weniger striktes Governancemodell verwendet werden, um die Flexibilität für Entwickler zu erhöhen. Die Sicherheit innerhalb dieser Gruppen sollte nach und nach erhöht werden, je mehr sich ein Anwendungsentwicklungsprozess der Produktion nähert.
 
-Für jede dieser drei Umgebungen besteht die Anforderung zum Nachverfolgen der Kostendaten nach **Workloadbesitzer**, **Umgebung** oder beidem. Sie möchten somit die laufenden Kosten der **freigegebenen Infrastruktur**, die Kosten, die in der **Umgebung vor der Produktion** und der **Produktionsumgebung** durch Personen anfallen, und schließlich die Gesamtkosten für die **Umgebung vor der Produktion** und die **Produktionsumgebung** ermitteln.
+Für jede dieser drei Umgebungen besteht die Anforderung zum Nachverfolgen der Kostendaten nach **Workloadbesitzer**, **Umgebung** oder beidem. Sie möchten somit die laufenden Kosten der **freigegebenen Infrastruktur**, die Kosten, die in der **nicht für die Produktion bestimmten Umgebung** und der **Produktionsumgebung** durch Personen anfallen, und schließlich die Gesamtkosten für die **nicht für die Produktion bestimmte Umgebung** und die **Produktionsumgebung** ermitteln.
 
 Sie haben bereits erfahren, dass diese Ressourcen in zwei Ebenen unterteilt sind: **Abonnement** und **Ressourcengruppe**. Als Erstes müssen wir entscheiden, wie die Umgebungen nach **Abonnement** organisiert werden sollen. Es gibt nur zwei Möglichkeiten: ein einzelnes Abonnement oder mehrere Abonnements.
 

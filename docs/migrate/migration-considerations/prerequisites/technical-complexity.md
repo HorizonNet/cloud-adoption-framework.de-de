@@ -1,19 +1,21 @@
 ---
-title: 'Vorbereiten der technischen Komplexität: Agile Change Management'
-description: 'Vorbereiten der technischen Komplexität: Agile Change Management'
+title: Vorbereiten auf die Komplexität beim flexiblen Change Management
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um Cloudarchitekten auf den Austausch mit dem Projektmanagement vorzubereiten, bei dem es um Change Management geht.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 73cbd084e79589de68e359ad4dc88b639d92f9df
-ms.sourcegitcommit: 2362fb3154a91aa421224ffdb2cc632d982b129b
+ms.openlocfilehash: 3e2b9139fa4774549f68ccf3762234bc755fd458
+ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2020
-ms.locfileid: "76801340"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79311828"
 ---
+<!-- cSpell:ignore ITSM TOGAF -->
+
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Vorbereiten der technischen Komplexität: Agile Change Management
 
 Wenn mit nur einer Codezeile die Bereitstellung eines kompletten Rechenzentrums aufgehoben und neu erstellt werden kann, können herkömmliche Verfahren nicht mehr mithalten. Die Anleitungen im Cloud Adoption Framework basieren u. a. auf Methoden wie dem IT-Service-Management (ITSM) oder dem Open Group Architecture Framework (TOGAF). Um allerdings auch bei geschäftlichen Änderungen flexibel und reaktionsfähig zu bleiben, werden diese Methoden in diesem Framework an Agile-Verfahren und DevOps-Ansätze angepasst.

@@ -1,6 +1,6 @@
 ---
-title: Bewerten lokaler Workloads für die Migration zu Azure
-description: Es wird beschrieben, wie Contoso seine lokalen Computer in Bezug auf die Migration zu Azure bewertet, indem Azure Migrate und der Datenmigrations-Assistent verwendet werden.
+title: Bewerten lokaler Workloads für die Azure-Migration
+description: Anhand eines anschaulichen Beispiels wird beschrieben, wie Sie eine lokale Anwendung für die Migration zu Azure bewerten.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/25/2020
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 78d33031879a49bd70a6dcfb01be604ca4371e49
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 5b70980d1c8f27f286aaf1173970e2edd26f60e0
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78228577"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508422"
 ---
 <!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL CONTOSODC contosohost vcenter prereqs ctypes ctypeslib smarthotelapp -->
 
@@ -130,7 +130,7 @@ Hier ist angegeben, wie Contoso die Bewertung durchführt:
 > - **Schritt 6: Bewerten der virtuellen Computer mit Azure Migrate.** Contoso überprüft die Abhängigkeiten, gruppiert die virtuellen Computern und führt die Bewertung durch. Nach Abschluss der Bewertung wird sie von Contoso als Vorbereitung auf die Migration analysiert.
 
     > [!NOTE]
-    > Assessments shouldn't just be limited to using tooling to discover information about your environment, you should schedule in time to speak to business owners, end users, other members within the IT department, etc in order to get a full picture of what is happening within the environment and understand things tooling cannot tell you. 
+    > Assessments shouldn't just be limited to using tooling to discover information about your environment. You should also schedule time to speak to business owners, end users, and other members of the IT department to fully understand of what is happening in the environment and understand factors that tooling cannot tell you. 
 
 ## <a name="step-1-download-and-install-data-migration-assistant"></a>Schritt 1: Herunterladen und Installieren des Datenmigrations-Assistenten
 

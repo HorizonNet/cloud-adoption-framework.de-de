@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 854e22b70250496704cade4d7465c217705c928d
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 565cb0d97fc764375f708d8e3db8f2a1c0a852e4
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094831"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508371"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 
@@ -59,7 +59,7 @@ Bei Verwendung von Methoden zur Offlineübertragung sind [Replikationsprozesse](
 
 ### <a name="suggested-action-during-the-migrate-process"></a>Empfohlene Aktion während des Migrationsprozesses
 
-**Kopieren des Speichers:** Diese Vorgehensweise kann für die Übertragung von HDFS-Daten, Sicherungen, Archiven, Dateiservern, Anwendungen usw. verwendet werden. In vorhandenen technischen Anleitungen wird erläutert, wie Daten auf diese Weise aus [einem HDFS-Speicher](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) oder mithilfe von [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs), [REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) oder des [Datenkopierdiensts](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) von Datenträgern in Data Box übertragen werden.
+**Kopieren des Speichers:** Diese Vorgehensweise kann für die Übertragung von HDFS-Daten, Sicherungen, Archiven, Dateiservern oder Anwendungen verwendet werden. In vorhandenen technischen Anleitungen wird erläutert, wie Daten auf diese Weise aus [einem HDFS-Speicher](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) oder mithilfe von [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs), [REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) oder des [Datenkopierdiensts](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) von Datenträgern in Data Box übertragen werden.
 
 Es gibt auch [Partnerlösungen von Drittanbietern](https://azuremarketplace.microsoft.com/campaigns/databox/azure-data-box), bei denen Azure Data Box für eine „Seed & Sync“-Migration verwendet wird, wobei eine große Datenmenge über eine Offlineübertragung verschoben wird, später aber in geringerem Umfang über das Netzwerk synchronisiert wird.
 
