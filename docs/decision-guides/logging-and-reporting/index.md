@@ -2,18 +2,18 @@
 title: Leitfaden zur Entscheidungsfindung für Protokollierung und Berichterstellung
 description: Entwickeln Sie eine zentrale Protokollierungs-, Berichterstellungs- und Überwachungsstrategie, um sicherzustellen, dass Ihre Organisation die Ziele in Hinblick auf Betriebszeit, Sicherheit und Richtlinienkonformität erreicht.
 author: rotycenh
-ms.author: v-tyhopk
+ms.author: abuck
 ms.date: 02/11/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a6229013dcbc56ff39fd4d41a5b81f13b446e625
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: de7f52a4649ce4ff6885f60c5916262448de787b
+ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222782"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80225909"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Protokollierung und Berichterstellung
 

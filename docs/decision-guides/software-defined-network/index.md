@@ -2,18 +2,18 @@
 title: Leitfaden zur Entscheidungsfindung für softwaredefinierte Netzwerke
 description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um zu erfahren, wie mit Software-Defined Networking virtualisierte Netzwerke über Software bereitgestellt werden.
 author: rotycenh
-ms.author: v-tyhopk
+ms.author: abuck
 ms.date: 02/11/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 4fa9f16a2636cf5e8f1340bf51ae39e8db3198b0
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: a07130e8d7ac201f7519658ea84e3ff9df33ecbb
+ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708732"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80225733"
 ---
 # <a name="software-defined-networking-decision-guide"></a>Leitfaden zur Entscheidungsfindung für softwaredefinierte Netzwerke
 
