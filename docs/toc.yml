@@ -574,6 +574,18 @@ items:
                 href: innovate/innovation-guide/devices.md
               - name: Vorhersagen und Beeinflussen
                 href: innovate/innovation-guide/predict.md
+          - name: Innovationsszenarien
+            items:
+              - name: Kubernetes
+                items:
+                  - name: Übersicht über Innovationsszenarien
+                    href: innovate/kubernetes/index.md
+                  - name: Anwendungsentwicklung und Bereitstellung
+                    href: innovate/kubernetes/application-development.md
+                  - name: Clusterentwurf und Vorgänge
+                    href: innovate/kubernetes/cluster-design-operations.md
+                  - name: Cluster- und Anwendungssicherheit
+                    href: innovate/kubernetes/cluster-application-security.md
           - name: Bewährte Methoden
             items:
               - name: Übersicht und Azure-Toolkette
