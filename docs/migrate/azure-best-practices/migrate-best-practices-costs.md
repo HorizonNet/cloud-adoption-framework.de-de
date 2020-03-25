@@ -1,18 +1,18 @@
 ---
-title: Bewährte Methoden für Kostenermittlung und Größenanpassung von Workloads, die zu Azure migriert werden
-description: Sie erhalten bewährte Methoden für Kostenermittlung und Größenanpassung von Workloads, die zu Azure migriert werden.
+title: Kostenermittlung und Größenanpassung von Workloads, die zu Azure migriert werden
+description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um sich mit den bewährten Methoden für Kostenermittlung und Größenanpassung von zu Azure migrierten Workloads vertraut zu machen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 783652f1f469333c97ebd50673a3d42e1a9741d7
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: dd8030c884b6c5b66c733080d26f29bb8319740e
+ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892581"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "79508405"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Bewährte Methoden für Kostenermittlung und Größenanpassung von Workloads, die zu Azure migriert werden
 
@@ -73,7 +73,7 @@ Sie können eine Reihe von Optionen auswählen, wenn Sie virtuelle Azure-Compute
 
 - Es ist wichtig, die Preisunterschiede zwischen diesen virtuellen Computern zu verstehen sowie die langfristigen Auswirkungen auf das Budget.
 - Jeder Typ umfasst eine bestimmte Anzahl darin enthaltener VM-Serien.
-- Außerdem können Sie, wenn Sie eine VM innerhalb einer Serie auswählen, die VM nur innerhalb dieser Serie zentral hoch- oder herunterskalieren. Beispielsweise kann eine DSv2\_2 zentral zu DSv2\_4 hochskaliert werden, aber sie kann nicht in eine andere Serie wie Fsv2\_2 geändert werden.
+- Außerdem können Sie, wenn Sie eine VM innerhalb einer Serie auswählen, die VM nur innerhalb dieser Serie zentral hoch- oder herunterskalieren. Beispielsweise kann eine DSv2\_2 auf DSv2\_4 hochskaliert werden, aber sie kann nicht in eine andere Serie wie Fsv2\_2 geändert werden.
 
 **Weitere Informationen**:
 
@@ -191,7 +191,7 @@ Wenn Sie reservierte Azure-VM-Instanzen verwenden, zahlen Sie im Voraus für ein
 
 Es ist unvermeidlich, dass Sie letztendlich mehr als ein Azure-Abonnement haben werden. Beispielsweise könnten Sie ein zusätzliches Abonnement benötigen, um Entwicklungs- und Produktionsumgebungen voneinander zu trennen, oder Sie haben möglicherweise eine Plattform, die ein separates Abonnement für jeden Client erfordert. Die Möglichkeit zu besitzen, die Berichterstellung zu Daten über alle Abonnements hinweg in einer einzelnen Plattform zusammenzufassen, ist eine wertvolle Funktion.
 
-Um dies zu erreichen, können Sie Azure Cost Management-APIs verwenden. Nachdem Sie dann Daten in eine einzelne Quelle aggregiert haben, z. B. Azure SQL, können Sie mit Tools wie Power BI die aggregierten Daten analysieren. Sie können aggregierte Abonnementberichte sowie detaillierte Berichte erstellen. Für Benutzer, die proaktive Einblicke in das Kostenmanagement benötigen, können Sie beispielsweise spezifische Sichten für Kosten erstellen, gegliedert nach Abteilung, Ressourcengruppe usw. Sie müssen ihnen dazu keinen Vollzugriff auf Azure-Abrechnungsdaten gewähren.
+Um dies zu erreichen, können Sie Azure Cost Management-APIs verwenden. Nachdem Sie dann Daten in eine einzelne Quelle aggregiert haben, z. B. Azure SQL, können Sie mit Tools wie Power BI die aggregierten Daten analysieren. Sie können aggregierte Abonnementberichte sowie detaillierte Berichte erstellen. Für Benutzer, die proaktive Einblicke in das Kostenmanagement benötigen, können Sie beispielsweise spezifische Sichten für Kosten erstellen, gegliedert nach Abteilung, Ressourcengruppe oder anderen Informationen. Sie müssen ihnen dazu keinen Vollzugriff auf Azure-Abrechnungsdaten gewähren.
 
 **Weitere Informationen**:
 
