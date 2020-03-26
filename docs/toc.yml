@@ -1140,6 +1140,8 @@ items:
                 href: manage/monitor/alerting.md
               - name: Übersicht über Überwachungsplattformen
                 href: manage/monitor/platform-overview.md
+              - name: Für die Überwachung relevante Qualifikationen
+                href: manage/monitor/suggested-skills.md
           - name: Zentralisieren von Verwaltungsvorgängen
             href: manage/centralize-operations.md
           - name: Einrichten einer Überprüfung der Einsatztauglichkeit
