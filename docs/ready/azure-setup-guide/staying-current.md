@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: ad8b6259aaa0808e2628fed9b88f0f806c46e655
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: a75c014401a8a45eee0d0e301cf209ad3eda690b
+ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341979"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80225801"
 ---
 # <a name="stay-current-with-microsoft-azure"></a>Mit Microsoft Azure auf dem neuesten Stand
 
@@ -51,11 +51,15 @@ Die folgenden Ressourcen können Ihnen dabei helfen, mit Azure auf dem Laufenden
 
 Unter den folgenden Ressourcen finden Sie weitere Inhalte, die Ihnen helfen, bezüglich Azure auf dem neuesten Stand zu bleiben:
 
-- [Azure-Diagramme](https://azurecharts.com/)
-  - Diese inoffizielle Visualisierung zeigt alle Azure-Updates der letzten sechs Monate. Sie enthält weitere hilfreiche Diagramme und Hilfsprogramme, die Sie bei der Nachverfolgung von Azure-Änderungen unterstützen.
 - [Azure Friday](https://channel9.msdn.com/Shows/Azure-Friday)
   - Wöchentliche Videos mit den Entwicklern, die Azure bereitstellen. Sie präsentieren Demos, beantworten Fragen und teilen Erkenntnisse mit Ihnen.
   - Führen Sie das Abonnieren per [RSS](https://channel9.msdn.com/Shows/Azure-Friday/feed) durch.
-- [Azure Weekly](https://azureweekly.info)
-  - Dieser Newsletter ist eine inoffizielle Ressource, die von [endjin](https://endjin.com) bereitgestellt wird. Der Newsletter enthält eine Zusammenfassung der wichtigsten Neuigkeiten der Woche zu Microsoft Azure. Er enthält auch interessante historische Inhalte.
+- [Azure Charts](https://azurecharts.com/)*
+  - In dieser Visualisierung sind alle Azure-Updates der letzten sechs Monate dargestellt. Sie enthält weitere hilfreiche Diagramme und Hilfsprogramme, die Sie bei der Nachverfolgung von Azure-Änderungen unterstützen.
+- [AzAdvertizer](https://www.azadvertizer.net/)*
+  - Release- und Änderungsnachverfolgung für Azure Governance-Funktionen (z. B. Azure Policy, Richtlinieninitiativen, Richtlinienaliase und RBAC).
+- [Wöchentlicher Azure-Newsletter (Azure Weekly)](https://azureweekly.info)*
+  - Dieser von [endjin](https://endjin.com) bereitgestellte Newsletter enthält eine Zusammenfassung der wichtigsten News der Woche zu Microsoft Azure. Er enthält auch interessante historische Inhalte.
   - Abonnieren Sie dies per [E-Mail](https://azureweekly.info).
+
+\* *Diese Ressourcen werden von der Community bereitgestellt und nicht offiziell von Microsoft gepflegt.*

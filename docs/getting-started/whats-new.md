@@ -7,12 +7,12 @@ ms.date: 03/09/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 1ec13eca60f8e3ed4f2d30b9c4c1b6b0138905a3
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: c7b3a4d946eac1b5296f4d37d50872105ce756ea
+ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79510830"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80225954"
 ---
 # <a name="whats-new-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Neuerungen beim Framework für die Einführung der Microsoft Cloud für Azure
 
@@ -20,7 +20,19 @@ Hier ist eine Liste mit den Änderungen angegeben, die kürzlich am Framework f�
 
 Dieses Framework wurde in Zusammenarbeit mit Kunden, Partnern und internen Microsoft-Teams entwickelt. Neuer und aktualisierter Inhalt wird veröffentlicht, sobald er verfügbar ist. Mit diesen Releases können Sie die Anleitung zusammen mit uns testen, überprüfen und optimieren. Wir laden Sie ein, als Partner mit uns gemeinsam das Framework für die Cloudeinführung für Azure zu entwickeln.
 
-## <a name="march-2020"></a>März 2020
+## <a name="march-20-2020"></a>20. März 2020
+
+Wir haben eine ausführliche Anleitung hinzugefügt, in der die Tools, Programme und Inhalte nach Rollen kategorisiert sind, um die erfolgreiche Bereitstellung von Anwendungen in Kubernetes zu fördern – von der Proof of Concept-Phase bis zur Produktion, gefolgt von Skalierung und Optimierung.
+
+### <a name="kubernetes"></a>Kubernetes
+
+| Artikel                                                                                     | BESCHREIBUNG                                                                                                                                                                           |
+|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Anwendungsentwicklung und Bereitstellung](../innovate/kubernetes/application-development.md) | **Neuer Artikel** Enthält Prüflisten, Ressourcen und bewährte Methoden für die Planung der Anwendungsentwicklung, die Konfiguration von DevOps-Pipelines und die Implementierung von Websitezuverlässigkeits-Engineering (Site Reliability Engineering) für Kubernetes. |
+| [Clusterentwurf und Vorgänge](../innovate/kubernetes/cluster-design-operations.md) | **Neuer Artikel** Enthält Prüflisten, Ressourcen und bewährte Methoden für die Bereiche Clusterkonfiguration, Netzwerkentwurf, zukunftssichere Skalierbarkeit, Geschäftskontinuität und Notfallwiederherstellung für Kubernetes. |
+| [Cluster- und Anwendungssicherheit](../innovate/kubernetes/cluster-application-security.md) | **Neuer Artikel** Enthält Prüflisten, Ressourcen und bewährte Methoden für die Kubernetes-Sicherheit, -Planung, -Produktion und -Skalierung. |
+
+## <a name="march-2-2020"></a>2\. März 2020
 
 Als Reaktion auf das erhaltene Feedback zur Kontinuität des Migrationsansatzes in mehreren Abschnitten des Frameworks für die Cloudeinführung, z. B. Strategie, Plan, Bereitschaft und Migration, haben wir die folgenden Aktualisierungen vorgenommen. Diese Aktualisierungen sind so konzipiert, dass Sie die Planungs- und Einführungsverbesserungen während einer Migrationsjourney leichter verstehen.
 
