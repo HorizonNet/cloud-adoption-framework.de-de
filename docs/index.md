@@ -8,12 +8,12 @@ layout: LandingPage
 ms.topic: landing-page
 author: BrianBlanchard
 ms.date: 02/28/2020
-ms.openlocfilehash: 4a6bd2f6a14d4726695f76a776c01a421931005c
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 7e98461d0cba205f05400d0ffd8b9ae64c0b69d5
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79091971"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356866"
 ---
 # <a name="microsoft-cloud-adoption-framework-for-azure"></a>Framework für die Einführung der Microsoft Cloud (Microsoft Cloud Adoption Framework)
 
@@ -182,6 +182,8 @@ Jeder Abschnitt des Frameworks für die Einführung der Cloud stellt eine andere
 ## <a name="how-to-use-the-microsoft-cloud-adoption-framework-for-azure"></a>Verwenden des Frameworks für die Einführung der Microsoft Cloud für Azure (Microsoft Cloud Adoption Framework)
 
 Falls Ihr Unternehmen noch keine Erfahrung mit Azure hat, sollten Sie zunächst [Erste Schritte auf Ihrem Weg zur Cloudmigration](./getting-started/migrate.md) lesen. Diese Übersicht enthält bewährte Methoden für die digitale Transformation Ihres Unternehmens, und die einzelnen Schritte des Prozesses werden beschrieben.
+
+<!-- test:ignoreNextStep -->
 
 > [!div class="nextstepaction"]
 > [Erste Schritte](./getting-started/migrate.md)
