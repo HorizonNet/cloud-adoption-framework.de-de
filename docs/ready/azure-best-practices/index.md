@@ -1,31 +1,32 @@
 ---
 title: Bewährte Methoden für die Azure-Bereitschaft
-description: Erfahren Sie mehr über die Bereitstellung von bewährten Methoden und zusätzlichen Anleitungen, um Ihr Team bei der Einrichtung und Vorbereitung Ihrer Azure-Umgebung zu unterstützen.
+description: Erfahren Sie mehr über bewährte Methoden und zusätzliche Anleitungen, um Ihr Team bei der Einrichtung und Vorbereitung Ihrer Azure-Umgebung zu unterstützen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8d44d3981824c9599151391cd3b7e3550ac31cd6
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: aecef0bbbdc88b2f95d6a93efeb496cf2d787a45
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093569"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354653"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Bewährte Methoden für die Azure-Bereitschaft
 
-Mitarbeitern die notwendigen technischen Kenntnisse für die Cloudeinführung zu vermitteln, die sie benötigen, um die Zielumgebung für die Ressourcen und Workloads vorzubereiten, die in die Cloud migriert werden sollen, macht einen großen Teil der Vorbereitung für die Cloud aus. Lesen Sie diese bewährten Methoden und zusätzliche Anleitungen, um Ihr Team bei der Vorbereitung Ihrer Azure-Umgebung zu unterstützen.
+Zur Vorbereitung für die Cloud müssen Mitarbeitern die notwendigen technischen Kenntnisse für die Cloudeinführung vermittelt werden, die sie benötigen, um die Zielumgebung für die Ressourcen und Workloads vorzubereiten, die in die Cloud migriert werden sollen. Lesen Sie diese bewährten Methoden und zusätzliche Anleitungen, um Ihr Team bei der Vorbereitung Ihrer Azure-Umgebung zu unterstützen.
 
 ## <a name="azure-fundamentals"></a>Azure-Grundlagen
 
 Organisieren und Bereitstellen Ihrer Ressourcen in der Azure-Umgebung.
 
 - [Grundlegende Konzepte in Azure](../considerations/fundamental-concepts.md). Lernen Sie die wichtigsten Azure-Konzepte und Begriffe kennen, und erfahren Sie, wie diese Konzepte zusammenhängen.
-- [Empfohlene Namens- und Kennzeichnungskonventionen](../azure-best-practices/naming-and-tagging.md). Sehen Sie sich detaillierte Empfehlungen zur Benennung und Kennzeichnung Ihrer Ressourcen an. Diese Empfehlungen unterstützen Cloudeinführungsprojekte im Unternehmen.
-- [Skalieren mit mehreren Azure-Abonnements](../azure-best-practices/scaling-subscriptions.md). Hier werden Strategien für die Skalierung mit mehreren Azure-Abonnements erläutert.
-- [Organisieren Ihrer Ressourcen mit Azure-Verwaltungsgruppen](https://docs.microsoft.com/azure/governance/management-groups/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) Hier erfahren Sie, wie Azure-Verwaltungsgruppen zum Verwalten von Ressourcen, Rollen, Richtlinien und Bereitstellungen für mehrere Abonnements verwendet werden können.
+- [Erstellen Sie Ihre anfänglichen Abonnements](./initial-subscriptions.md). Richten Sie einen anfänglichen Satz von Azure-Abonnements ein, um mit der Cloudeinführung zu beginnen.
+- [Skalieren Sie Ihre Azure-Umgebung mit mehreren Abonnements](../azure-best-practices/scale-subscriptions.md). Machen Sie sich mit Gründen und Strategien für die Erstellung zusätzlicher Abonnements zum Skalieren Ihrer Azure-Umgebung vertraut.
+- [Organisieren Ihrer Ressourcen mit Azure-Verwaltungsgruppen](../azure-best-practices/organize-subscriptions.md) Hier erfahren Sie, wie Azure-Verwaltungsgruppen zum Verwalten von Ressourcen, Rollen, Richtlinien und Bereitstellungen für mehrere Abonnements verwendet werden können.
+- [Halten Sie sich an empfohlene Namens- und Kennzeichnungskonventionen](../azure-best-practices/naming-and-tagging.md). Sehen Sie sich detaillierte Empfehlungen zur Benennung und Kennzeichnung Ihrer Ressourcen an. Diese Empfehlungen unterstützen Cloudeinführungsprojekte im Unternehmen.
 - [Schaffen von Hybrid Cloud-Konsistenz](../considerations/hybrid-consistency.md). Hier erfahren Sie, wie Sie Hybrid Cloud-Lösungen erstellen, die die Vorteile innovativer Cloudfeatures mit vielen praktischen Features der lokalen Verwaltung kombinieren.
 
 ## <a name="networking"></a>Netzwerk

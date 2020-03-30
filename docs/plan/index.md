@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 layout: LandingPage
-ms.openlocfilehash: e22c8332a02b985d733fd8e2e36f6873bd435c77
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: cc4515b97454094ed84a78d04170a8bd03c0f5b2
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092616"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354994"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -110,7 +110,7 @@ Laden Sie die [Strategie- und Planungsvorlage des Frameworks f체r die Cloudeinf�
 
 ## <a name="next-steps"></a>N채chste Schritte
 
-Beginnen Sie mit der Erstellung des Cloudeinf체hrungsplans, und konzentrieren Sie sich dabei in erster Linie auf [digitale Ressourcen](../digital-estate/index.md).
+Beginnen Sie mit der Erstellung des Plans f체r die Cloudeinf체hrung, indem Sie sich 체ber die [f체nf Phasen der Cloudrationalisierung informieren](../digital-estate/5-rs-of-rationalization.md).
 
 > [!div class="nextstepaction"]
-> [Worum handelt es sich bei digitalen Ressourcen?](../digital-estate/index.md)
+> [F체nf Phasen der Cloudrationalisierung](../digital-estate/5-rs-of-rationalization.md)

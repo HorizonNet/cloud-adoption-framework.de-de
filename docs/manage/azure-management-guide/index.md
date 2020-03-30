@@ -9,19 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b6d17a410c1903d984b5a1c756f51f7c5145ff9c
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 6e9b83784d2fdaaca7ae4a55ccd977d266b6193d
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140285"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356480"
 ---
 ::: zone target="docs"
 
 # <a name="azure-management-guide-before-you-start"></a>Azure-Verwaltungsleitfaden: Vorbereitung
-
-> [!NOTE]
-> Dieser Leitfaden dient als Ausgangspunkt für Innovationsleitlinien im Cloud Adoption Framework. Er ist auch im Schnellstartcenter von Azure verfügbar. Einen Link zum Schnellstartcenter von Azure finden Sie im Tipp weiter unten in diesem Artikel.
 
 ::: zone-end
 
@@ -51,9 +48,6 @@ Dieser Leitfaden zeigt Ihnen, wie Sie Tools für eine Baseline zur Verwaltung ei
 Eine Baseline zur Verwaltung umfasst den Mindestsatz an Tools und Prozessen, der auf jede Ressource einer Umgebung angewendet werden sollte. Mehrere zusätzliche Optionen können in die Baseline zur Verwaltung aufgenommen werden. Die nächsten Artikel enthalten Informationen zur schnelleren Einführung von Cloudverwaltungsfunktionen, da nicht alle verfügbaren Optionen beschrieben werden, sondern nur die benötigten Mindestoptionen.
 
 ::: zone target="docs"
-
-> [!TIP]
-> Dieser Leitfaden steht im Azure-Portal als interaktive Umgebung zur Verfügung. Navigieren Sie im Azure-Portal zum [Schnellstartcenter von Azure](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade), und wählen Sie dann den **Azure-Verwaltungsleitfaden** aus. Befolgen Sie dann die Schrittanleitungen.
 
 Der nächste Schritt ist [Bestand und Transparenz](./inventory.md).
 
