@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 2b255d85b8df33f712238d0457a0e78a5481801d
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: ebcc6d1a2ed45ad199c0b0da880d72d253f21c3e
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80225716"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354102"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>Erstellen einer geschäftlichen Begründung für die Cloudmigration
 
@@ -68,7 +68,7 @@ Wenn wir diese Gleichung in ihre Bestandteile zerlegen, ergibt sich ein migratio
 
 ## <a name="migration-specific-initial-investment"></a>Migrationsspezifische Erstinvestition
 
-- Cloudanbieter wie Azure bieten Rechner an, mit denen Prognosen in Bezug auf Cloudinvestitionen erstellt werden können. Der [Azure-Preisrechner](https://azure.com/calculator) ist ein Beispiel.
+- Cloudanbieter wie Azure bieten Rechner an, mit denen Prognosen in Bezug auf Cloudinvestitionen erstellt werden können. Der [Azure-Preisrechner](https://azure.microsoft.com/pricing/calculator) ist ein Beispiel.
 - Einige Cloudanbieter stellen auch Rechner zur Ermittlung von Kostendeltawerten bereit. Ein Beispiel ist der [Gesamtkostenrechner von Azure](https://azure.com/tco).
 - Bei anspruchsvolleren Kostenstrukturen können Sie erwägen, eine Übung zur [Planung von digitalen Ressourcen](../digital-estate/index.md) durchzuführen.
 - Erstellen Sie eine Schätzung der Kosten für die Migration.

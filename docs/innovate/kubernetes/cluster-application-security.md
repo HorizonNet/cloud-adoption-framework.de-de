@@ -1,6 +1,5 @@
 ---
 title: Cluster- und Anwendungssicherheit
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Enthält eine Beschreibung von Kubernetes im Framework für die Cloudeinführung (Cloud Adoption Framework) in Bezug auf die Cluster- und Anwendungssicherheit.
 author: sabbour
 ms.author: asabbour
@@ -8,13 +7,15 @@ ms.topic: guide
 ms.date: 03/20/2020
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a8f94e2b559f2f0e373c4ae1c2f05c9b90fa57fb
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: 64a7f4097a75b54ef4f91b5889fa31fc3b98d61a
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80226696"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392747"
 ---
+<!-- cSpell:ignore asabbour sabbour kured -->
+
 # <a name="cluster-and-application-security"></a>Cluster- und Anwendungssicherheit
 
 Machen Sie sich mit den Grundlagen der Kubernetes-Sicherheit vertraut, und sehen Sie sich die Anleitung zur sicheren Einrichtung der Cluster- und Anwendungssicherheit an.

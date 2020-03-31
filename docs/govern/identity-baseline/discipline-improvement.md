@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: cc8f2396e379180d213bd042d65f36e9eaef2828
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: 44b6c2dc910068f70645e54c372e3f4290d02669
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508116"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356987"
 ---
+<!-- cSpell:ignore offboarding preintegration -->
+
 # <a name="identity-baseline-discipline-improvement"></a>Verbesserung der Disziplin „Identitätsbaseline“
 
 Die Disziplin „Identitätsbaseline“ konzentriert sich auf Möglichkeiten zur Erstellung von Richtlinien, die die Konsistenz und Kontinuität von Benutzeridentitäten gewährleisten, unabhängig davon, welcher Cloudanbieter die Anwendung oder Workload hostet. Innerhalb der fünf Disziplinen der Cloudgovernance umfasst die Identitätsbaseline Entscheidungen in Bezug auf die [Hybrididentitätsstrategie](../../decision-guides/identity/index.md), die Auswertung und Erweiterung von Identitätsrepositorys, die Implementierung des einmaligen Anmeldens (gleiche Anmeldung), die Überprüfung und die Überwachung im Hinblick auf unbefugte Nutzung oder böswillige Akteure. In einigen Fällen kann sie auch Entscheidungen in Bezug auf Modernisierung, Konsolidierung oder Integration mehrerer Identitätsanbieter beinhalten.

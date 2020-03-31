@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 544c425e94e9fa2cc4a687608f0dece80b3e9251
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 38fb0523b2c5915a351223fdb603dbb0cacbf602
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707882"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357139"
 ---
+<!-- cSpell:ignore prepurchases -->
+
 # <a name="cost-management-motivations-and-business-risks"></a>Kostenverwaltung: Motivationen und Geschäftsrisiken
 
 In diesem Artikel werden die Gründe beschrieben, warum Kunden typischerweise eine Disziplin „Kostenverwaltung“ in ihre Cloud Governance-Strategie integrieren. Darüber hinaus werden einige Beispiele für Geschäftsrisiken aufgeführt, die zu Richtlinienanweisungen führen.

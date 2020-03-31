@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3d674cfe0378613530adb329ae21b9c379742e91
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 2de71f5a28da4b6ec7c876f26f929b3e0e6de425
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312083"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353831"
 ---
+<!-- cSpell:ignore architected ITIL -->
+
 # <a name="approve-architecture-changes-before-migration"></a>Genehmigen von Änderungen an der Architektur vor der Migration
 
 Während des Bewertungsprozesses der Migration wird jede Workload beurteilt, entworfen und geschätzt, um einen Plan für den zukünftigen Zustand der Workload zu entwickeln. Einige Workloads können ohne Änderung der Architektur in die Cloud migriert werden. Durch Beibehaltung der lokalen Konfiguration und Architektur kann das Risiko reduziert und der Migrationsprozess optimiert werden. Leider kann nicht jede Anwendung ohne Änderung der Architektur in der Cloud ausgeführt werden. Wenn Architekturänderungen erforderlich sind, kann dieser Artikel beim Klassifizieren der Änderung helfen. Außerdem enthält er hilfreiche Informationen zu den geeigneten Genehmigungsaktivitäten.

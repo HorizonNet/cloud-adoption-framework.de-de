@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: governance
-ms.openlocfilehash: 39373c0f2c4c7d96613fd10d5734a2826b6f1933
-ms.sourcegitcommit: 58ea417a7df3318e3d1a76d3807cc4e7e3976f52
+ms.openlocfilehash: 6cc61ff3b6dee171983ceef94c77d3aab715b2c7
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78892063"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357165"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -41,7 +41,7 @@ Azure ist also im Wesentlichen eine riesige Sammlung von Servern und Netzwerkhar
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Informieren Sie sich über die Cloudeinführung per [Framework für die Einführung der Microsoft Cloud (Microsoft Cloud Adoption Framework)](https://docs.microsoft.com/azure/cloud-adoption-framework).
+Informieren Sie sich über die Cloudeinführung per [Framework für die Einführung der Microsoft Cloud (Microsoft Cloud Adoption Framework)](../index.md).
 
 > [!div class="nextstepaction"]
-> [Framework für die Einführung der Microsoft Cloud (Microsoft Cloud Adoption Framework)](https://docs.microsoft.com/azure/cloud-adoption-framework)
+> [Framework für die Einführung der Microsoft Cloud (Microsoft Cloud Adoption Framework)](../index.md)

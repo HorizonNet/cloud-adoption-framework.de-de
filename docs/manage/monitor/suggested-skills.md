@@ -7,42 +7,43 @@ ms.date: 03/23/2020
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7e078bbeea12c71997474d372b0b6b838ed5f4a3
-ms.sourcegitcommit: a1209c9dab369171e1fe0cdc6a58e3f6ae6a8f22
+ms.openlocfilehash: fe1dcc215c318ef35c7a1d19af50b1451eb1935d
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80261558"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356221"
 ---
+<!-- cSpell:ignore kusto ITIL -->
+
 # <a name="skills-readiness-for-cloud-monitoring"></a>Qualifikationsbereitschaft für Cloudüberwachung
 
-Das Ziel der Phase „Planung“ Ihrer Migrationsjourney besteht darin, die notwendigen Pläne für die Implementierung zu entwickeln. In den Plänen muss auch festgelegt werden, wie Sie diese Workloads abarbeiten, bevor die Umstellung bzw. die Freigabe für die Produktion erfolgt (und nicht danach). Die Beteiligten im Unternehmen erwarten nützliche Dienste, die ohne Störungen funktionieren. IT-Mitarbeiter merken, dass sie neue Qualifikationen erwerben und sich anpassen müssen, damit sie die integrierten Azure-Dienste sicher nutzen können, um Ressourcen in Azure und in Hybridumgebungen effektiv zu überwachen. 
+Das Ziel der Phase „Planung“ Ihrer Migrationsjourney besteht darin, die notwendigen Pläne für die Implementierung zu entwickeln. In den Plänen muss auch festgelegt werden, wie Sie diese Workloads abarbeiten, bevor die Umstellung bzw. die Freigabe für die Produktion erfolgt (und nicht danach). Die Beteiligten im Unternehmen erwarten nützliche Dienste, die ohne Störungen funktionieren. IT-Mitarbeiter merken, dass sie neue Qualifikationen erwerben und sich anpassen müssen, damit sie die integrierten Azure-Dienste sicher nutzen können, um Ressourcen in Azure und in Hybridumgebungen effektiv zu überwachen.
 
 Die Entwicklung der erforderlichen Qualifikationen kann mit den folgenden Lernpfaden beschleunigt werden:
 
 - In der Einführung in [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview) werden die grundlegenden Konzepte der Verwaltung und Bereitstellung von Azure-Ressourcen beschrieben. Die IT-Mitarbeiter, die die Überwachungsumgebung im gesamten Unternehmen verwalten, sollten mit Verwaltungsbereichen, rollenbasierter Zugriffssteuerung (RBAC), Azure Resource Manager-Vorlagen und der Verwaltung von Ressourcen per Azure CLI und Azure PowerShell vertraut sein.
 
-- Informieren Sie sich über das Schützen von Ressourcen mit Richtlinien, rollenbasierter Zugriffssteuerung und anderen Azure-Diensten, indem Sie den Artikel [Implementieren der Sicherheit für die Ressourcenverwaltung in Azure](https://docs.microsoft.com//learn/paths/implement-resource-mgmt-security/) lesen. 
+- Informieren Sie sich über das Schützen von Ressourcen mit Richtlinien, rollenbasierter Zugriffssteuerung und anderen Azure-Diensten, indem Sie den Artikel [Implementieren der Sicherheit für die Ressourcenverwaltung in Azure](https://docs.microsoft.com//learn/paths/implement-resource-mgmt-security) lesen.
 
 - In der Einführung in [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) wird beschrieben, wie Sie Azure Policy zum Erstellen, Zuweisen und Verwalten von Richtlinien verwenden können. Mit Azure Policy können Sie die Azure Monitor-Agents bereitstellen und konfigurieren, die Überwachung mit Azure Monitor für VMs und Azure Security Center ermöglichen, Diagnoseeinstellungen bereitstellen, Gastkonfigurationseinstellungen überwachen und vieles mehr.
 
 - Lesen Sie die Einführung in die [Azure-Befehlszeilenschnittstelle (CLI)](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest). Hierbei handelt es sich um unsere plattformübergreifende Befehlszeilenumgebung zum Verwalten von Azure-Ressourcen. Sehen Sie sich auch die Einführung in [Azure PowerShell](https://docs.microsoft.com/powershell/azure/?view=azps-3.6.1) an. Im Rahmen des Anfängerkurses zum [Erlernen von Azure-Verwaltungstools](https://www.linkedin.com/learning/learning-azure-management-tools) werden von LinkedIn Sitzungen zur Azure CLI und zu PowerShell-Programmiersprachen angeboten:
 
-   - [Verwenden der Azure CLI](https://www.linkedin.com/learning/learning-azure-management-tools/use-the-azure-cli)
-   
-   - [Erste Schritte mit Azure PowerShell](https://www.linkedin.com/learning/learning-azure-management-tools/understand-azure-powershell) 
+  - [Verwenden der Azure CLI](https://www.linkedin.com/learning/learning-azure-management-tools/use-the-azure-cli)
+  - [Erste Schritte mit Azure PowerShell](https://www.linkedin.com/learning/learning-azure-management-tools/understand-azure-powershell)
 
 - Informieren Sie sich darüber, wie Sie [Protokollabfragen in Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-queries) schreiben.  Die Kusto-Abfragesprache ist die Hauptressource für das Schreiben von Azure Monitor-Protokollabfragen, um Protokolldaten für die erfassten Daten aus Azure und die Abhängigkeiten von Hybridressourcenanwendungen (einschließlich Liveanwendung) zu untersuchen und zu analysieren.
 
 - Informieren Sie sich darüber, wie [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) Ihnen das Anzeigen der Verfügbarkeit und Leistung Ihrer Anwendungen und Dienste an einem zentralen Ort ermöglicht. Von Pluralsight werden die folgenden Kurse angeboten:
 
-   - Unter [Microsoft Azure IaaS: Überwachung und Verwaltung](https://www.pluralsight.com/courses/azure-iaas-monitoring-management-getting-started) erfahren Sie, wie Sie Azure Monitor verwenden, um die grundlegende Überwachung von Workloads durchzuführen, die unter IaaS ausgeführt werden.
+  - Unter [Microsoft Azure IaaS: Überwachung und Verwaltung](https://www.pluralsight.com/courses/azure-iaas-monitoring-management-getting-started) erfahren Sie, wie Sie Azure Monitor verwenden, um die grundlegende Überwachung von Workloads durchzuführen, die unter IaaS ausgeführt werden.
 
-   - Unter [Überwachen von Microsoft Azure-Ressourcen und -Workloads](https://www.pluralsight.com/courses/microsoft-azure-resources-workloads-monitoring) wird beschrieben, wie Sie Microsoft Azure-Überwachungstools zum Überwachen von Azure-Netzwerkressourcen (und lokalen Ressourcen) verwenden.
+  - Unter [Überwachen von Microsoft Azure-Ressourcen und -Workloads](https://www.pluralsight.com/courses/microsoft-azure-resources-workloads-monitoring) wird beschrieben, wie Sie Microsoft Azure-Überwachungstools zum Überwachen von Azure-Netzwerkressourcen (und lokalen Ressourcen) verwenden.
 
-   - Unter [Microsoft Azure DevOps-Techniker: Optimieren von Feedbackmechanismen](https://www.pluralsight.com/courses/microsoft-azure-optimize-feedback-mechanisms) können Sie sich darauf vorbereiten, Azure Monitor, einschließlich Application Insights und Log Analytics, für die Überwachung und Optimierung Ihrer Webanwendungen zu verwenden.
+  - Unter [Microsoft Azure DevOps-Techniker: Optimieren von Feedbackmechanismen](https://www.pluralsight.com/courses/microsoft-azure-optimize-feedback-mechanisms) können Sie sich darauf vorbereiten, Azure Monitor, einschließlich Application Insights und Log Analytics, für die Überwachung und Optimierung Ihrer Webanwendungen zu verwenden.
 
-   - Unter [Microsoft Azure-Datenbanküberwachung: Playbook](https://www.pluralsight.com/courses/microsoft-azure-database-playbook-monitoring) wird beschrieben, wie Sie die Überwachung von Azure SQL-Datenbank, Azure SQL Data Warehouse und Azure Cosmos DB implementieren und nutzen.
+  - Unter [Microsoft Azure-Datenbanküberwachung: Playbook](https://www.pluralsight.com/courses/microsoft-azure-database-playbook-monitoring) wird beschrieben, wie Sie die Überwachung von Azure SQL-Datenbank, Azure SQL Data Warehouse und Azure Cosmos DB implementieren und nutzen.
 
 - Der Artikel [Azure Arc für Server](https://docs.microsoft.com/azure/azure-arc/servers/overview) enthält eine Beschreibung dazu, wie Sie Ihre außerhalb von Azure gehosteten Windows- und Linux-Computer auf ähnliche Weise wie Ihre nativen virtuellen Azure-Computer verwalten können.
 
@@ -60,19 +61,19 @@ Mit unseren [Microsoft Azure-Zertifizierungstrainings und -prüfungen]( https://
 
 ## <a name="azure-devops-and-project-management"></a>Azure DevOps und Projektmanagement
 
-Die Hybrid Cloud-Umgebung bedeutet für die IT-Abteilung, dass nicht definierte Rollen, Zuständigkeiten und Aktivitäten bewältigt werden müssen. Organisationen müssen die Umstellung auf moderne Dienstverwaltungsverfahren vollziehen, z. B. in Bezug auf Agile- und DevOps-Methodiken, um die Transformations- und Optimierungsanforderungen heutiger Unternehmen schneller und effizienter erfüllen zu können. 
+Die Hybrid Cloud-Umgebung bedeutet für die IT-Abteilung, dass nicht definierte Rollen, Zuständigkeiten und Aktivitäten bewältigt werden müssen. Organisationen müssen die Umstellung auf moderne Dienstverwaltungsverfahren vollziehen, z. B. in Bezug auf Agile- und DevOps-Methodiken, um die Transformations- und Optimierungsanforderungen heutiger Unternehmen schneller und effizienter erfüllen zu können.
 
 Im Rahmen der Migration zu einer Cloudüberwachungsplattform muss das IT-Team, das im Unternehmen für die Verwaltung der Überwachung zuständig ist, für flexible Schulungs- und Beteiligungsmöglichkeiten in Bezug auf DevOps-Aktivitäten sorgen. Hierbei kommt auch die *Dev*-Komponente von DevOps ins Spiel. Die üblichen Anforderungen werden in organisierte flexible Anforderungen umgewandelt, um minimal ausgestattete Überwachungslösungen bereitzustellen, die iterativ optimiert werden und die Bedürfnisse des Unternehmens erfüllen. Verknüpfen Sie Ihr Azure DevOps Server-Projekt mit einem GitHub Enterprise-Server-Repository, um die Verwaltung der iterativen Überwachungslösungspakete und anderer zugehöriger Materialien per Quellcodeverwaltung zu ermöglichen. Hierdurch wird eine Verknüpfung zwischen GitHub-Commits und Pull Requests für Arbeitselemente hergestellt. Sie können GitHub Enterprise für die Entwicklung verwenden, um Continuous Integration/Deployment zu Überwachungszwecken zu unterstützen, während Sie Azure Boards nutzen, um Ihre Arbeit zu planen und nachzuverfolgen.
 
 Weitere Informationen finden Sie in den folgenden Artikeln:
 
-- [Erste Schritte mit Azure DevOps](https://docs.microsoft.com/learn/modules/get-started-with-devops/) 
+- [Erste Schritte mit Azure DevOps](https://docs.microsoft.com/learn/modules/get-started-with-devops)
 
-- [Informationen zur White Belt Foundation des DevOps-Dojos](https://docs.microsoft.com/learn/paths/devops-dojo-white-belt-foundation/)
+- [Informationen zur White Belt Foundation des DevOps-Dojos](https://docs.microsoft.com/learn/paths/devops-dojo-white-belt-foundation)
 
-- [Weiterentwickeln Ihrer DevOps-Methoden](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices/)
+- [Weiterentwickeln Ihrer DevOps-Methoden](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices)
 
-- [Automatisieren von Bereitstellungen mit Azure DevOps](https://docs.microsoft.com/learn/paths/automate-deployments-azure-devops/)
+- [Automatisieren von Bereitstellungen mit Azure DevOps](https://docs.microsoft.com/learn/paths/automate-deployments-azure-devops)
 
 ## <a name="other-considerations"></a>Weitere Überlegungen
 

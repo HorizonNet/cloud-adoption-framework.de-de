@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 4ddc8c0e479aaf0feee928249919edf9899ce40f
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: f9303adc183596f93c822224e5098549a533a153
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171190"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356739"
 ---
 # <a name="develop-digital-inventions"></a>Entwickeln digitaler Innovationen
 
@@ -22,7 +22,7 @@ Wie unter [Innovation in der digitalen Wirtschaft](./index.md) beschrieben, erfo
 
 ## <a name="summary-of-each-discipline-of-digital-invention"></a>Übersicht über die einzelnen Disziplinen digitaler Erfindungen
 
-Nicht *alle* der folgenden Disziplinen sind immer zur Förderung von Innovationen erforderlich. Gemäß den Informationen unter [Erstellen von Lösungen mit Kundenempathie](./build.md) besteht das Ziel darin, in jeder Iteration eine Hypothese zu testen. Indem Sie die Ergebnisse jeder Iteration als [Minimal Viable Product](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/policy-compliance#minimum-viable-product-mvp-for-policy) (MVP) definieren, sollte es Ihnen möglich sein, so wenig wie möglich Disziplinen wie möglich einzubeziehen.
+Nicht *alle* der folgenden Disziplinen sind immer zur Förderung von Innovationen erforderlich. Gemäß den Informationen unter [Erstellen von Lösungen mit Kundenempathie](./build.md) besteht das Ziel darin, in jeder Iteration eine Hypothese zu testen. Indem Sie die Ergebnisse jeder Iteration als [Minimal Viable Product](../../govern/policy-compliance/index.md) (MVP) definieren, sollte es Ihnen möglich sein, so wenig wie möglich Disziplinen wie möglich einzubeziehen.
 
 - **[Demokratisieren von Daten](./data.md):** Indem Sie Kunden, Partnern und Mitarbeitern Daten an die Hand geben, fördern Sie innovative Beobachtungen. Erfassen, zentralisieren, schützen und teilen Sie Daten.
 - **[Interagieren über Apps](./apps.md):** Menschen lernen mit Apps und Erfahrungen. Versetzen Sie professionelle Entwickler und Entwickler ohne Programmiererfahrung (so genannte „Citizen Developer“) in die Lage, schnell Apps zu erstellen.

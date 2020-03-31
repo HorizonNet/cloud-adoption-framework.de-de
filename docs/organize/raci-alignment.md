@@ -8,13 +8,15 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 9921f9b8afc492bef5730e55f2d342ab4ec26436
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: bd95aec82e3135222184ded49a7fc013f95a05e4
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093718"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354954"
 ---
+<!-- cSpell:ignore ccoe -->
+
 # <a name="align-responsibilities-across-teams"></a>Zuordnen von Zuständigkeiten zu Teams
 
 Erfahren Sie, wie Sie Zuständigkeiten zu Teams zuordnen, indem Sie eine so genannte *RACI*-Matrix entwickeln, mit der bestimmt wird, welche Teams verantwortlich sind (responsible), rechenschaftspflichtig sind (accountable), konsultiert werden (consulted) und zu informieren sind (informed). Dieser Artikel bietet eine RACI-Beispielmatrix für die unter [Einrichten von Teamstrukturen](./organization-structures.md) beschriebenen Organisationsstrukturen:

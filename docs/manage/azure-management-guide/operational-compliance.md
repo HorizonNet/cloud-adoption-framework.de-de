@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a76ca679b8c61e96b8bc8552b8ffbcaa0822e46a
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 18c3c81fdd756e90e729387c7030c64e8a87a056
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094724"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356451"
 ---
 <!-- cSpell:ignore WSUS -->
 
@@ -60,8 +60,8 @@ Weitere Informationen finden Sie unter [Updateverwaltungslösung](https://docs.m
 >
 > Es gibt zwei Ansätze für das Onboarding:
 >
-> - [Einzelne VM](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-single-vm)
-> - [Ganzes Abonnement](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/azure-server-management/onboard-at-scale)
+> - [Einzelne VM](../../manage/azure-server-management/onboard-single-vm.md)
+> - [Ganzes Abonnement](../../manage/azure-server-management/onboard-at-scale.md)
 >
 > Sie sollten einem folgen, bevor Sie mit der Updateverwaltung fortfahren.
 
@@ -69,7 +69,7 @@ Weitere Informationen finden Sie unter [Updateverwaltungslösung](https://docs.m
 
 So wenden Sie eine Richtlinie auf eine Ressourcengruppe an:
 
-1. Wechseln Sie zu [Azure Automation](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts).
+1. Wechseln Sie zu [Azure Automation](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts).
 1. Wählen Sie **Automation-Konten** und dann eines der aufgeführten Konten aus.
 1. Wechseln Sie zu **Konfigurationsverwaltung**.
 1. **Inventar**, **Change Management** und **State Configuration** können zum Steuern des Zustands und der betriebsbezogenen Compliance der verwalteten VMs verwendet werden.
@@ -78,7 +78,7 @@ So wenden Sie eine Richtlinie auf eine Ressourcengruppe an:
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Automation%2FAutomationAccounts]" submitText="Assign Policy" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts]" submitText="Assign Policy" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

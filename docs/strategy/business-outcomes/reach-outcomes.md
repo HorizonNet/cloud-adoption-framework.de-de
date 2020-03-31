@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: c4fa1d608f62497869c0498ba82cbdce649af1e2
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 43cec9da3a49bb755f6fa35c757f5e7aaf342db1
+ms.sourcegitcommit: e21e70a5ad7bff2f2009a2da8e91a54fccd6d38f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092459"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80299130"
 ---
 # <a name="examples-of-global-reach-outcomes"></a>Beispiele für globale Reichweitenergebnisse
 
@@ -30,7 +30,7 @@ Die Erschließung eines neuen Markts kann während einer Transformation eines de
 
 ## <a name="data-sovereignty"></a>Datenhoheit
 
-Die Erschließung neuer Märkte führt auch zu neuen Governanceeinschränkungen. Die DSGVO ist ein Beispiel für Governancekriterien, die einen erheblichen finanziellen Regress verursachen können. Azure bietet Complianceangebote, die Kunden dabei helfen, Compliancevorgaben in regulierten Branchen und globalen Märkten zu erfüllen. Weitere Informationen finden Sie in der [Übersicht über Microsoft Azure-Compliance](https://aka.ms/AzureCompliance).
+Die Erschließung neuer Märkte führt auch zu neuen Governanceeinschränkungen. Die DSGVO ist ein Beispiel für Governancekriterien, die einen erheblichen finanziellen Regress verursachen können. Azure bietet Complianceangebote, die Kunden dabei helfen, Compliancevorgaben in regulierten Branchen und globalen Märkten zu erfüllen. Weitere Informationen finden Sie in der [Übersicht über Microsoft Azure-Compliance](https://azure.microsoft.com/overview/trusted-cloud/compliance/).
 
 - **Beispiel:** Ein US-Versorgungsunternehmen erhielt einen Vertrag für Einrichtungen in Kanada. Die kanadischen Gesetze zur Datenhoheit erfordern, dass kanadische Daten in Kanada bleiben. Das Unternehmen hatte schon seit Jahren an cloudfähigen Anwendungsinnovationen gearbeitet. Daher konnte die Software des Unternehmens über vollständig skriptgesteuerte DevOps-Prozesse bereitgestellt werden. Mit wenigen kleinen Änderungen an der Codebasis konnten sie eine Arbeitskopie des Codes in einem Azure-Rechenzentrum in Kanada bereitstellen und damit die Complianceanforderung zur Datenhoheit erfüllen – und den Kunden behalten.
 

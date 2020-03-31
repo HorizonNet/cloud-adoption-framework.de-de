@@ -7,13 +7,15 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: ec888ba0c21187e71e825ff24aaadf068dc2a191
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: dc82f4d8ad21bcbb9d36b00fbdad1f91d6d4ec2c
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709412"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356944"
 ---
+<!-- cSpell:ignore CISO -->
+
 # <a name="ciso-cloud-readiness-guide"></a>Leitfaden für die CISO-Cloudbereitschaft
 
 Empfehlungen von Microsoft wie beispielsweise das Cloud Adoption Framework (CAF) sind nicht dafür konzipiert, die einzigartigen Sicherheitsbedingungen von Tausenden von Unternehmen zu ermitteln, die von dieser Dokumentation unterstützt werden, oder als Anleitung für diese Bedingungen zu dienen. Bei der Migration in die Cloud wird die Rolle des Chief Information Security Officer bzw. Chief Information Security Office (CISO) nicht durch Cloudtechnologien verdrängt. Ganz im Gegenteil: Der CISO und das CISO-Team sind noch besser und enger integriert. Für diese Anleitung wird vorausgesetzt, dass Sie mit CISO-Prozessen vertraut sind und diese modernisieren möchten, um eine Cloudtransformation zu ermöglichen.

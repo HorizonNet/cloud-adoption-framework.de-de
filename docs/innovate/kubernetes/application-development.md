@@ -1,6 +1,5 @@
 ---
 title: Anwendungsentwicklung und Bereitstellung
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Es wird beschrieben, wie Kubernetes im Framework für die Cloudeinführung (Cloud Adoption Framework) für die Anwendungsentwicklung und -architektur verwendet wird.
 author: sabbour
 ms.author: asabbour
@@ -8,13 +7,15 @@ ms.topic: guide
 ms.date: 03/20/2020
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 54d1af4e3f4c0669548638451544de9c6678481a
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: 6ad36a6dfbce83b23bfcee382ff44daeb9db5f7f
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80226704"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392767"
 ---
+<!-- cSpell:ignore asabbour sabbour autoscaler Istio Linkerd -->
+
 # <a name="application-development-and-deployment"></a>Anwendungsentwicklung und Bereitstellung
 
 Untersuchen Sie Muster und Vorgehensweisen für die Anwendungsentwicklung, konfigurieren Sie DevOps-Pipelines, und implementieren Sie bewährte Methoden für Websitezuverlässigkeits-Engineering (Site Reliability Engineering, SRE).

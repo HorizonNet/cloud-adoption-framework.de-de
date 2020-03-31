@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d6cf92c2cb08e59196bc9c24aadf1fa2c812db0d
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 67ea91e503290c8fee37f3d36770fbbea1b336b4
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312753"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356796"
 ---
 # <a name="build-with-customer-empathy"></a>Erstellen von Lösungen mit Blick auf die Kundenanforderungen
 
@@ -102,6 +102,8 @@ Bei starker Kundenempathie sollte ein eindeutig vorhandenes Problem leicht zu er
 Es gibt viele gesetzliche, Compliance- und Branchenanforderungen, die einen alternativen Ansatz erfordern könnten. Wenn die öffentliche Freigabe einer Entwicklungslösung ein Risiko für den Zeitpunkt des Patentschutzes, den Schutz des geistigen Eigentums, Kundendatenlecks oder die Verletzung etablierter Complianceanforderungen mit sich bringt, dann ist dieser Ansatz möglicherweise nicht geeignet. Wenn vermeintliche Risiken wie diese bestehen, wenden Sie sich an einen Rechtsbeistand, bevor Sie einen gezielten Ansatz für die Releaseverwaltung anwenden.
 
 ## <a name="references"></a>References
+
+<!-- cSpell:ignore Ries -->
 
 Einige Konzepte in diesem Artikel basieren auf Themen, die in [*The Lean Startup*](http://theleanstartup.com/book) (Eric Ries, Crown Business, 2011) beschrieben werden.
 

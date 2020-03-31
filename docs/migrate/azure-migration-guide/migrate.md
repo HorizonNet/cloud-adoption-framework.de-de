@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d5be29caa69a2b9a0f1e22cfb6ff704b7e17233c
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 697e42d16918960f97bc534bad93a854af963a49
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312338"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353902"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
@@ -215,7 +215,7 @@ Verschiedene Migrationstools von Drittanbietern und ISV-Dienste können während
 
 UnifyCloud ist ein ISV-Dienst mit Automatisierungstools für die Bewertung, Migration und Modernisierung.
 
-[Weitere Informationen](https://www.unifycloud.com/)
+[Weitere Informationen](https://www.unifycloud.com)
 
 ## <a name="cloudamize"></a>Cloudamize
 
@@ -278,7 +278,7 @@ Microsoft Learn ist ein neuer Lernansatz. Die Bereitschaft zu den neuen Qualifik
 
 Hier sehen Sie ein Beispiel für einen maßgeschneiderten Lernpfad auf Microsoft Learn, der das Setup für den DevOps-Leitfaden im Cloud Adoption Framework ergänzt.
 
-[Erstellen von Anwendungen mit Azure DevOps:](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops/) Arbeiten Sie mit anderen zusammen, um Ihre Anwendungen mit Azure Pipelines und GitHub zu erstellen. Führen Sie in Ihrer Pipeline automatisierte Tests zum Überprüfen der Codequalität aus. Überprüfen Sie den Quellcode und die Komponenten von Drittanbietern auf potenzielle Sicherheitsrisiken. Definieren Sie mehrere Pipelines, die zusammenwirken, um Ihre Anwendung zu erstellen. Erstellen Sie Anwendungen mit von Microsoft gehosteten Agents und mit eigenen Build-Agents.
+[Erstellen von Anwendungen mit Azure DevOps:](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops) Arbeiten Sie mit anderen zusammen, um Ihre Anwendungen mit Azure Pipelines und GitHub zu erstellen. Führen Sie in Ihrer Pipeline automatisierte Tests zum Überprüfen der Codequalität aus. Überprüfen Sie den Quellcode und die Komponenten von Drittanbietern auf potenzielle Sicherheitsrisiken. Definieren Sie mehrere Pipelines, die zusammenwirken, um Ihre Anwendung zu erstellen. Erstellen Sie Anwendungen mit von Microsoft gehosteten Agents und mit eigenen Build-Agents.
 
 # <a name="cost-management"></a>[Kostenmanagement](#tab/ManageCost)
 
