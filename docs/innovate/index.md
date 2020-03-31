@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
-ms.openlocfilehash: 4b596fc83cf3d0b9a951287e052215622f6ee6b2
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 7374a531192ed140c8aa76d0e74e3817e34626db
+ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171122"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80427422"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Cloudinnovationen im Cloud Adoption Framework
 
@@ -126,7 +126,7 @@ Hier finden Sie einige Beispiele für rollenspezifische Lernpfade in Microsoft L
 
 [Erstellen serverloser Anwendungen:](https://docs.microsoft.com/learn/paths/create-serverless-applications) Azure Functions ermöglicht die Erstellung von ereignisgesteuerten Compute-On-Demand-Systemen, die durch verschiedene externe Ereignisse ausgelöst werden können. Lesen Sie, wie Sie Funktionen nutzen, um serverseitige Logik auszuführen und serverlose Architekturen zu erstellen.
 
-Weitere Lernpfade finden Sie im [Learn-Katalog](/learn/browse). Verwenden Sie den Filter **Rollen**, um Lernpfade an ihrer Rolle auszurichten.
+Weitere Lernpfade finden Sie im [Learn-Katalog](https://docs.microsoft.com/learn/browse). Verwenden Sie den Filter **Rollen**, um Lernpfade an ihrer Rolle auszurichten.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
