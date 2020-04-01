@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1a6b859de12681e93912f934f6aa5e55c42fcfb9
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: c5d7da3d1dd447063879c786d59840f256c418e1
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171394"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392601"
 ---
 # <a name="deployment-acceleration-template"></a>Vorlage „Beschleunigung der Bereitstellung“
 
@@ -24,11 +24,7 @@ Während Ihre Planung voranschreitet, verwenden Sie die Struktur dieser Vorlage 
 > [!IMPORTANT]
 > Diese Vorlage ist ein eingeschränktes Beispiel. Bevor Sie diese Vorlage entsprechend Ihren Anforderungen aktualisieren, sollten Sie die folgenden Schritte zum Definieren einer wirkungsvollen Disziplin „Beschleunigung der Bereitstellung“ im Rahmen Ihrer Cloud Governance-Strategie überprüfen.
 
-<!-- markdownlint-disable MD033 -->
-
- <a href="https://archcenter.blob.core.windows.net/cdn/fusion/governance/Deployment%20Acceleration%20Discipline%20Template.docx">Vorlage für Governancedisziplin herunterladen</a>
-
-<!-- markdownlint-enable MD033 -->
+[Vorlage für Governancedisziplin herunterladen](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Deployment%20Acceleration%20Discipline%20Template.docx)
 
 ## <a name="next-steps"></a>Nächste Schritte
 

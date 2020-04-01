@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f82dc3d12aa325c3239060a904cc5d3111a056d4
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 1d0c6d30e7bba864fb52b14fb82e1e88231e9a3c
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709310"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357043"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>Governanceleitfaden für Standardunternehmen: Beschreibung der bewährten Methoden
 
@@ -50,7 +50,7 @@ Das Cloudgovernanceteam ist für die folgenden Entscheidungen und Implementierun
 
 ### <a name="subscription-design"></a>Abonnemententwurf
 
-Die Entscheidung über den Abonnemententwurf bestimmt, wie Azure-Abonnements strukturiert werden und wie Azure-Verwaltungsgruppen verwendet werden, um Zugriff, Richtlinien und Compliance für diese Abonnements effizient zu verwalten. Im vorliegenden Beispielfall hat das Governanceteam das Abonnemententwurfsmuster [Produktion und Nichtproduktion](../../../decision-guides/subscriptions/index.md#production-and-nonproduction-pattern) ausgewählt.
+Die Entscheidung über den Abonnemententwurf bestimmt, wie Azure-Abonnements strukturiert werden und wie Azure-Verwaltungsgruppen verwendet werden, um Zugriff, Richtlinien und Compliance für diese Abonnements effizient zu verwalten. In diesem Beispielfall hat das Governanceteam Abonnements für Produktions- und Nichtproduktionsworkloads mit dem Abonnemententwurfsmuster für [Produktion und Nichtproduktion](../../../ready/azure-best-practices/initial-subscriptions.md) eingerichtet.
 
 - Abteilungen werden angesichts des aktuellen Schwerpunkts wahrscheinlich nicht erforderlich sein. Es wird erwartet, dass die Bereitstellungen innerhalb einer einzigen Abrechnungseinheit eingeschränkt sind. Im Stadium der Einführung gibt es möglicherweise nicht einmal eine Unternehmensvereinbarung zur Zentralisierung der Abrechnung. Es ist wahrscheinlich, dass dieser Grad der Einführung von einem einzigen Azure-Abonnement mit nutzungsbasierter Bezahlung verwaltet wird.
 - Unabhängig von der Verwendung des EA-Portals oder der Existenz einer Unternehmensvereinbarung sollte dennoch ein Abonnementmodell definiert und vereinbart werden, um den Verwaltungsmehraufwand über die reine Abrechnung hinaus zu minimieren.

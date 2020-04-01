@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3e2b9139fa4774549f68ccf3762234bc755fd458
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 56c7d171d46813d7175e93759be10ce1423115b0
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311828"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355161"
 ---
 <!-- cSpell:ignore ITSM TOGAF -->
 
@@ -43,7 +43,7 @@ Dieses Akronym dient nicht als Grundlage für strikte Einhaltung, sondern als Ri
 
 ## <a name="migration-backlog-aligning-business-priorities-and-timing"></a>Migrationsbacklog: Anpassen von Geschäftsprioritäten und zeitlichem Ablauf
 
-Mit dem Migrationsbacklog können Sie das Portfolio der wichtigsten Workloads für die Migration nachverfolgen. Vor der Migration sollten die Teams für die Cloudstrategie und die Cloudeinführung den aktuellen [digitalen Status](../../../digital-estate/index.md) bewerten und sich auf eine priorisierte Liste mit Workloads für die Migration einigen. Diese Liste bildet die Grundlage für das anfängliche Migrationsbacklog.
+Mit dem Migrationsbacklog können Sie das Portfolio der wichtigsten Workloads nachverfolgen, die migriert werden können. Vor der Migration sollten die Teams für die Cloudstrategie und die Cloudeinführung den aktuellen [digitalen Status](../../../digital-estate/index.md) bewerten und sich auf eine priorisierte Liste mit Workloads für die Migration einigen. Diese Liste bildet die Grundlage für das anfängliche Migrationsbacklog.
 
 Anfangs entsprechen die Workloads im Migrationsbacklog den im vorherigen Abschnitt beschriebenen INVEST-Kriterien sicherlich noch nicht. Sie dienen stattdessen als eine logische Gruppierung von Ressourcen aus einem anfänglichen Bestand als Platzhalter für die künftige Arbeit. Diese Platzhalter sind technisch möglicherweise noch nicht präzise, können aber als Grundlage für die Koordination mit dem Unternehmen dienen.
 

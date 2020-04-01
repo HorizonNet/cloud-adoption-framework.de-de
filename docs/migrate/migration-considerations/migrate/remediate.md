@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f092bb99cb16a6dd3c79c04d29fa7aac318c913f
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 0805868195912807c50a49d781928865f2f82ca9
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092788"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355222"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>Korrigieren von Ressourcen vor der Migration
 
@@ -36,7 +36,7 @@ In jeder Unternehmensumgebung gibt es technische Schulden. Einige davon sind feh
 
 Wenn ein Rechenzentrum ordentlich verwaltet, gepatcht und aktualisiert wird, sind vermutlich nur wenige Korrekturmaßnahmen erforderlich. In großen Unternehmen sind Umgebungen, die umfangreiche Korrekturen erfordern, eher die Regel. Dies gilt besonders in Organisationen, die Ihre IT in großem Umfang verkleinert haben, über ältere verwaltete Dienstumgebungen verfügen oder zahlreiche Übernahmen und Fusionen vollzogen haben. In all diesen Umgebungen kann die Korrektur einen großen Teil des Migrationsaufwands einnehmen. Wenn die folgenden Korrekturaufgaben häufig auftreten und negative Auswirkungen auf die Geschwindigkeit oder Konsistenz der Migration haben, kann es ratsam sein, die Korrektur zu einer eigenständigen Aufgabe mit einem eigenen Team zu machen (ähnlich der parallelen Durchführung von Cloudeinführung und Cloudgovernance).
 
-- **Häufige Hostupgrades:** Wenn sehr viele Hosts aktualisiert werden müssen, um die Migration einer Workload abschließen zu können, kommt es beim Migrationsteam wahrscheinlich zu Verzögerungen. Es kann ratsam sein, die betroffenen Anwendungen einzeln zu korrigieren, bevor sie in geplante Releases eingebunden werden.
+- **Häufige Hostupgrades:** Wenn sehr viele Hosts aktualisiert werden müssen, um die Migration einer Workload abschließen zu können, kommt es beim Migrationsteam wahrscheinlich zu Verzögerungen. Es kann sinnvoll sein, die betroffenen Anwendungen einzeln zu korrigieren, bevor sie in geplante Releases eingebunden werden.
 - **Häufige Upgrades des Gastbetriebssystems:** In großen Unternehmen gibt es häufig Server, auf denen veraltete Versionen von Linux oder Windows ausgeführt werden. Abgesehen von den offensichtlichen Sicherheitsrisiken durch ein veraltetes Betriebssystem kommt es auch zu Problemen durch Inkompatibilität, die eine Migration der betreffenden Workloads verhindern können. Wenn für eine große Anzahl von VMs Korrekturen am Betriebssystem erforderlich sind, kann es ratsam sein, diese Aufgabe als separate Iteration auszuführen.
 - **Umfassende Codeänderungen:** Ältere benutzerdefinierte Anwendungen erfordern unter Umständen deutlich mehr Änderungen, um sie für die PaaS-Bereitstellung vorzubereiten. Wenn dies der Fall ist, kann es sinnvoll sein, sie vollständig aus dem Migrationsbacklog zu entfernen und in einem separaten Programm zu bearbeiten.
 

@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: c545f147ba374fe1150573b060c600269eb628b1
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 4e6daee6f5f69599fc8346cf6414b2dff14ae7a9
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311607"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353754"
 ---
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
 
@@ -77,7 +77,7 @@ Die drei allgemeinen Muster für Azure-Registrierungen sind:
 
   ![Das auf geografischen Regionen basierende Muster](../_images/reference/geographic.png)
 
-Jedes dieser Muster hat seine Vorteile, Organisationen nutzen aber zunehmend das Muster der **Unternehmenseinheiten**, da dieses sowohl Flexibilität beim Erstellen eines Kostenmodells für die Organisation auch eine große Bandbreite an Steuerungsmöglichkeiten bietet. Die Microsoft-Unternehmensgruppe „Core Engineering and Operations“ hat eine effektive Teilmenge des auf **Unternehmenseinheiten** basierenden Musters erstellt. Die Hierarchieebenen hierbei sind **Federal**, **State** und **Local**. Weitere Informationen finden Sie unter [Organisieren von Abonnements und Ressourcengruppen im Unternehmen](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/scaling-subscriptions).
+Jedes dieser Muster hat seine Vorteile, Organisationen nutzen aber zunehmend das Muster der **Unternehmenseinheiten**, da dieses sowohl Flexibilität beim Erstellen eines Kostenmodells für die Organisation auch eine große Bandbreite an Steuerungsmöglichkeiten bietet. Die Microsoft-Unternehmensgruppe „Core Engineering and Operations“ hat eine effektive Teilmenge des auf **Unternehmenseinheiten** basierenden Musters erstellt. Die Hierarchieebenen hierbei sind **Federal**, **State** und **Local**. Weitere Informationen finden Sie unter [Organisieren Ihrer Abonnements und Ressourcengruppen](../ready/azure-best-practices/organize-subscriptions.md).
 
 ### <a name="azure-management-groups"></a>Azure-Verwaltungsgruppen
 

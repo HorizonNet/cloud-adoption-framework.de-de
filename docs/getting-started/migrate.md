@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 85f5cf55bb089bd347383bedf58b054cf2a7351c
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 8555770721a1c00f40ca66a6f7c65adc635cec59
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094444"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357228"
 ---
 # <a name="begin-a-cloud-migration-journey-in-azure"></a>Einstieg in die Cloudmigration in Azure
 
@@ -148,3 +148,5 @@ Das Cloud Adoption Framework ist eine Lebenszykluslösung. Es soll sowohl Leser 
 > [Verwalten](../manage/index.md)
 >
 > [Organisieren](../organize/index.md)
+
+<!-- test:ignoreNextStep -->

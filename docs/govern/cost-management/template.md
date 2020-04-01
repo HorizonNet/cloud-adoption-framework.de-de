@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4b4f3f9e8be48f96abf9471738a50491ac80d317
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: ce937c6e3c173d829a311b838e33ede754a0f173
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708800"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392476"
 ---
 # <a name="cost-management-template"></a>Kostenverwaltungsvorlage
 
@@ -24,11 +24,7 @@ Während Ihre Planung voranschreitet, verwenden Sie die Struktur dieser Vorlage 
 > [!IMPORTANT]
 > Diese Vorlage ist ein eingeschränktes Beispiel. Prüfen Sie vor dem Aktualisieren dieser Vorlage entsprechend Ihren Anforderungen die nachfolgenden Schritte zum Definieren einer effektiven Disziplin „Kostenverwaltung“ im Rahmen Ihrer Cloud Governance-Strategie.
 
-<!-- markdownlint-disable MD033 -->
-
- <a href="https://archcenter.blob.core.windows.net/cdn/fusion/governance/Cost%20Management%20Discipline%20Template.docx">Vorlage für Governancedisziplin herunterladen</a>
-
-<!-- markdownlint-enable MD033 -->
+[Vorlage für Governancedisziplin herunterladen](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Cost%20Management%20Discipline%20Template.docx)
 
 ## <a name="next-steps"></a>Nächste Schritte
 

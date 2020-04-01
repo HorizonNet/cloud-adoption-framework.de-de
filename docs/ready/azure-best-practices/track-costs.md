@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b363d43568617d7c58003c2bd278008583870664
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: ce9ce90d429064eeb8e848fd203aec11d042e539
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312801"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354525"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Nachverfolgen von Kosten für Geschäftseinheiten, Umgebungen oder Projekte
 
@@ -24,7 +24,7 @@ Für das [Schaffen einer kostenbewussten Organisation](../../organize/cost-consc
 
 Die Kostenkontrolle hängt, ähnlich wie Governance und andere Verwaltungsansätze, von einer gut verwalteten Umgebung ab. Für die Schaffung einer Umgebung dieser Art (insbesondere einer komplexen) sind einheitliche Prozesse in Bezug auf die Klassifizierung und Organisation aller Ressourcen erforderlich.
 
-Ressourcen sind alle virtuellen Computer, Datenquellen und Anwendungen, die in der Cloud bereitgestellt werden. Azure verfügt über verschiedene Mechanismen zum Klassifizieren und Organisieren von Ressourcen. Unter [Skalieren mit mehreren Azure-Abonnements](../azure-best-practices/scaling-subscriptions.md) finden Sie ausführliche Informationen zur Organisation von Ressourcen basierend auf mehreren Kriterien zur Schaffung einer gut verwalteten Umgebung. In diesem Artikel geht es um die Anwendung von grundlegenden Azure-Konzepten, um für die Cloudkosten Transparenz zu erzielen.
+Ressourcen sind alle virtuellen Computer, Datenquellen und Anwendungen, die in der Cloud bereitgestellt werden. Azure verfügt über verschiedene Mechanismen zum Klassifizieren und Organisieren von Ressourcen. Unter [Organisieren und Verwalten Ihrer Azure-Abonnements](../azure-best-practices/organize-subscriptions.md) werden Möglichkeiten zum Organisieren von Ressourcen anhand mehrerer Kriterien vorgestellt, mit denen Sie eine gut verwaltete Umgebung schaffen können. In diesem Artikel geht es um die Anwendung von grundlegenden Azure-Konzepten, um für die Cloudkosten Transparenz zu erzielen.
 
 ### <a name="classification"></a>Klassifizierung
 
@@ -58,15 +58,16 @@ Die Abbildung zeigt bewährte Methoden, enthält jedoch nicht die folgenden Opti
 
 Im restlichen Artikel wird vorausgesetzt, dass der Ansatz mit der bewährten Methode aus der Abbildung oben verfolgt wird. Die folgenden Artikel enthalten hilfreiche Informationen zum Anwenden des Ansatzes für die Ressourcenorganisation, der für Ihr Unternehmen am besten geeignet ist:
 
-- [Skalieren mit mehreren Azure-Abonnements](../azure-best-practices/scaling-subscriptions.md)
-- [Deploying a Governance MVP to govern well-managed environment standards](../../govern/guides/complex/index.md) (Bereitstellen eines Governance-MVP zur Steuerung von Standards für gut verwaltete Umgebungen)
+- [Skalieren Ihrer Azure-Umgebung mit mehreren Abonnements](../azure-best-practices/scale-subscriptions.md)
+- [Organisieren und Verwalten Ihrer Azure-Abonnements](../azure-best-practices/organize-subscriptions.md)
+- [Bereitstellen eines Governance-MVP zur Steuerung von Standards für gut verwaltete Umgebungen](../../govern/guides/complex/index.md)
 
 ## <a name="provide-the-right-level-of-cost-access"></a>Ermöglichen eines angemessenen Zugriffs auf die Kosten
 
 Die Verwaltung der Kosten ist eine Teamaktivität. Im Abschnitt zur Bereitschaft von Organisationen des Frameworks für die Cloudeinführung (Cloud Adoption Framework) ist eine geringe Anzahl von Kernteams definiert. Es wird beschrieben, wie diese Teams die Schritte der Cloudeinführung unterstützen. In diesem Artikel werden die Teamdefinitionen eingehender erläutert, um den Bereich und die Rollen zu definieren, die den Mitgliedern der einzelnen Teams zugewiesen werden müssen, um für die Kostenverwaltungsdaten den richtigen Transparenzgrad zu erzielen.
 
-- Mit *Rollen* wird definiert, welche Schritte ein Benutzer für verschiedene Ressourcen ausführen kann.
-- *Bereich* definiert, für welche Ressourcen (Benutzer, Gruppe, Dienstprinzipal oder verwaltete Identität) ein Benutzer diese Aufgaben ausführen kann.
+- Mit **Rollen** wird definiert, welche Schritte ein Benutzer für verschiedene Ressourcen ausführen kann.
+- **Bereich** definiert, für welche Ressourcen (Benutzer, Gruppe, Dienstprinzipal oder verwaltete Identität) ein Benutzer diese Aufgaben ausführen kann.
 
 Die generell empfohlene bewährte Methode besteht darin, ein Modell mit geringstmöglichen Rechten zu verwenden, um Personen verschiedenen Rollen und Bereichen zuzuweisen.
 

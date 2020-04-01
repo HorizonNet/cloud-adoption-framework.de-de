@@ -7,13 +7,15 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 84ece22173c921f1a4de5701988b9fffcaedaaf7
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 7cdb1e56b38615e7878352d6e336e0f01261f6ce
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312151"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354119"
 ---
+<!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
+
 # <a name="best-practices-to-set-up-networking-for-workloads-migrated-to-azure"></a>Bewährte Methoden zum Einrichten von Netzwerken für zu Azure migrierte Workloads
 
 Bei der Planung und dem Entwurf für die Migration besteht einer der wichtigsten Schritte neben der Migration selbst im Entwurf und in der Implementierung von Azure-Netzwerken. Dieser Artikel beschreibt bewährte Methoden für den Netzwerkbetrieb bei der Migration zu IaaS- und PaaS-Implementierungen in Azure.
@@ -40,7 +42,7 @@ Bei der Planung Ihrer VNET-Topologie sollten Sie überlegen, wie Sie die IP-Adre
 
 Wenn Sie im Rahmen der Migration VNETs erstellen, ist es wichtig, Ihren VNET-IP-Adressraum zu planen.
 
-- Sie müssen einen Adressraum zuweisen, der für jedes VNET nicht größer als ein CIDR-Bereich von /16 ist. VNETs ermöglichen die Nutzung von 65.536 IP-Adressen. Die Zuweisung eines kleineren Präfixes als /16, z. B. /15 mit 131.072 Adressen, führt dazu, dass die überzähligen IP-Adressen nicht mehr für andere Bereiche genutzt werden können. IP-Adressen dürfen keinesfalls verschwendet werden, selbst wenn sie sich in den durch RFC 1918 definierten privaten Bereichen befinden.
+- Sie müssen einen Adressraum zuweisen, der für jedes VNET nicht größer als ein CIDR-Bereich von /16 ist. VNETs ermöglichen die Nutzung von 65.536 IP-Adressen. Die Zuweisung eines kleineren Präfixes als /16 (z. B. /15 mit 131.072 Adressen) führt dazu, dass die überzähligen IP-Adressen nicht für andere Bereiche genutzt werden können. IP-Adressen dürfen keinesfalls verschwendet werden, selbst wenn sie sich in den durch RFC 1918 definierten privaten Bereichen befinden.
 - Der VNET-Adressraum darf sich nicht mit lokalen Netzwerkbereichen überschneiden.
 - Die Netzwerkadressenübersetzung (NAT) darf nicht verwendet werden.
 - Überlappende Adressen können zu Netzwerken führen, mit denen keine Verbindung hergestellt werden kann, und zu einem Routing, das nicht ordnungsgemäß funktioniert. Wenn Netzwerke überlappen, müssen Sie das Netzwerk neu entwerfen oder die Netzwerkadressenübersetzung (NAT) verwenden.

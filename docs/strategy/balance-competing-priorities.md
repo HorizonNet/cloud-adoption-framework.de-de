@@ -1,18 +1,18 @@
 ---
 title: Ausgewogenheit konkurrierender Prioritäten
-description: Entdecken Sie Strategien zur Ausgewogenheit konkurrierender Prioritäten
+description: Entdecken Sie Strategien zum Abwägen konkurrierender Prioritäten.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 03/04/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: ba70687627e81b58eb76cd69838abf1ebcdb6489
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: a0524d8e7cd48f3b93191d9633bb57b10fb2261b
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312717"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353698"
 ---
 # <a name="balance-competing-priorities"></a>Ausgewogenheit konkurrierender Prioritäten
 
@@ -137,3 +137,10 @@ Die konkurrierenden Prioritäten in diesem Artikel reflektieren das Bestreben de
 **Mindestumfang:** Die meisten Organisationen durchlaufen im Laufe der Zeit mehrere Entwicklungen. Die Organisationsmethodik beschreibt die gängigsten Entwicklungen. Der empfohlene Leitfaden ist für Teams, die sich auf eine Cloud Center of Excellence-Struktur konzentrieren möchten, um delegierte Steuerungsansätze bereitzustellen.
 
 **Beispiel zum erweiterten Umfang:** In vielen Situationen ist eine zentralisierte Steuerung erforderlich. Complianceanforderungen von Drittanbietern und vorübergehende Sicherheitsrisiken sind zwei Beispiele für die Auslöser einer zentralisierten Steuerung. In solchen Situationen besteht häufig die Notwendigkeit, eine einschränkende Richtlinie und starre, feste Steuerungselemente einzuführen. Um weiterhin Innovationen sowie die Einführung zu ermöglichen, sollten zentrale IT-Teams diese Steuerungselemente auf der Grundlage der Wichtigkeit der einzelnen Workloads bereitstellen. Die Bereitstellung von Umgebungen mit weniger Steuerungselementen und einem reduzierten Umfang oder Risikoprofil ermöglicht Flexibilität, selbst wenn Steuerungen erforderlich sind.
+
+## <a name="next-steps"></a>Nächste Schritte
+
+Erfahren Sie, wie Sie [Migration, Innovation und Experimentieren in Einklang bringen](./balance-the-portfolio.md), um Ihre Cloudmigration optimal zu nutzen.
+
+> [!div class="nextstepaction"]
+> [Ausgewogenheit des Portfolios](./balance-the-portfolio.md)

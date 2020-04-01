@@ -9,29 +9,30 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 67e22ff4831d6bca4bb0054b544bf2efba02a93e
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: 6ed6e547156a2fa9f07a49460fedd94a8ceb152b
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79024006"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354337"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
 # <a name="organize-your-azure-resources"></a>Organisieren Ihrer Azure-Ressourcen
 
-Die Organisation Ihrer cloudbasierten Ressourcen ist entscheidend für die Sicherung, Verwaltung und Nachverfolgung der mit Ihren Workloads verbundenen Kosten. Um Ihre Ressourcen zu organisieren, verwenden Sie die Verwaltungshierarchien innerhalb der Azure-Plattform, implementieren Sie gut durchdachte Benennungskonventionen, und wenden Sie Ressourcentagging an.
+Die Organisation Ihrer cloudbasierten Ressourcen ist entscheidend für die Sicherung, Verwaltung und Nachverfolgung der mit Ihren Workloads verbundenen Kosten. Definieren Sie zum Organisieren Ihrer Ressourcen eine Verwaltungsgruppenhierarchie, befolgen Sie eine gut durchdachte Namenskonvention, und wenden Sie Ressourcentagging an.
 
 <!-- markdownlint-disable MD024 MD025 -->
 
+<!-- cSpell:disable-next-line -->
 # <a name="azure-management-groups-and-hierarchy"></a>[Azure-Verwaltungsgruppen und -Hierarchie](#tab/AzureManagmentGroupsAndHierarchy)
 
 Azure bietet vier Verwaltungsebenen: Verwaltungsgruppen, Abonnements, Ressourcengruppen und Ressourcen. In der folgenden Abbildung ist die Beziehung dieser Ebenen dargestellt.
 
-   ![Diagramm zu den Beziehungen der Verwaltungshierarchie](./media/organize-resources/scope-levels.png)
+   ![Diagramm, das die Beziehungen zwischen den Ebenen der Verwaltungshierarchie zeigt](./media/organize-resources/scope-levels.png)
 
 - **Verwaltungsgruppen**: Diese Gruppen sind Container, mit denen Sie Zugriff, Richtlinien und Konformität für mehrere Abonnements verwalten können. Alle Abonnements in einer Verwaltungsgruppe erben automatisch die auf die Verwaltungsgruppe angewendeten Bedingungen.
-- **Abonnements**: Unter einem Abonnement werden Benutzerkonten und die von diesen Benutzerkonten erstellten Ressourcen gruppiert. Für jedes Abonnement gelten Einschränkungen oder Kontingente für die Menge an Ressourcen, die Sie erstellen und verwenden können. Organisationen können Abonnements verwenden, um die Kosten und Ressourcen zu verwalten, die von Benutzern, Teams oder Projekten erstellt werden.
+- **Abonnements**: Ein Abonnement schafft eine logische Zuordnung zwischen Benutzerkonten und den von diesen Benutzerkonten erstellten Ressourcen. Für jedes Abonnement gelten Einschränkungen oder Kontingente für die Menge an Ressourcen, die Sie erstellen und verwenden können. Organisationen können Abonnements verwenden, um die Kosten und Ressourcen zu verwalten, die von Benutzern, Teams oder Projekten erstellt werden.
 - **Ressourcengruppen**: Eine Ressourcengruppe ist ein logischer Container, in dem Azure-Ressourcen wie Web-Apps, Datenbanken und Speicherkonten bereitgestellt und verwaltet werden.
 - **Ressourcen:** Ressourcen sind Instanzen von Diensten, die Sie erstellen. Hierzu zählen beispielsweise virtuelle Computer, Speicher oder SQL-Datenbanken.
 
@@ -41,9 +42,9 @@ Sie können Verwaltungseinstellungen, z. B. Richtlinien und die rollenbasierte 
 
 In der Regel ist es sinnvoll, wichtige Einstellungen auf höheren Ebenen und projektspezifische Anforderungen auf niedrigeren Ebenen anzuwenden. Sie könnten beispielsweise sicherstellen, dass alle Ressourcen für Ihre Organisation in bestimmten Regionen bereitgestellt werden. Hierfür wenden Sie eine Richtlinie, die die zulässigen Standorte angibt, auf das Abonnement an. Wenn andere Benutzer in Ihrer Organisation neue Ressourcengruppen und Ressourcen hinzufügen, werden die zulässigen Standorte automatisch erzwungen. Weitere Informationen zu Richtlinien finden Sie im Abschnitt zu Governance, Sicherheit und Konformität in diesem Leitfaden.
 
-Wenn Sie nur über wenige Abonnements verfügen, ist deren unabhängige Verwaltung relativ einfach. Wenn die Anzahl der von Ihnen verwendeten Abonnements steigt, sollten Sie erwägen, eine Verwaltungsgruppenhierarchie zu erstellen, um die Verwaltung Ihrer Abonnements und Ressourcen zu vereinfachen. Weitere Informationen zum Verwalten mehrerer Abonnements finden Sie unter [Skalieren mit mehreren Azure-Abonnements](../azure-best-practices/scaling-subscriptions.md).
+Wenn Sie nur über wenige Abonnements verfügen, ist deren unabhängige Verwaltung relativ einfach. Wenn die Anzahl der von Ihnen verwendeten Abonnements steigt, sollten Sie erwägen, eine Verwaltungsgruppenhierarchie zu erstellen, um die Verwaltung Ihrer Abonnements und Ressourcen zu vereinfachen. Weitere Informationen finden Sie unter [Organisieren und Verwalten Ihrer Azure-Abonnements](../azure-best-practices/organize-subscriptions.md).
 
-Zur Planung Ihrer Konformitätsstrategie arbeiten Sie mit Personen in Ihrer Organisation zusammen, die über Rollen für die folgenden Bereiche verfügen: „Sicherheit und Konformität“, „IT-Verwaltung“, „Enterprise-Architekt“, „Netzwerk“, „Finanzen“ und „Beschaffung“.
+Arbeiten Sie zur Planung Ihrer Konformitätsstrategie mit Personen in Ihrer Organisation zusammen, die über Rollen in diesen Bereichen verfügen: Sicherheit und Konformität, IT-Verwaltung, Unternehmensarchitektur, Netzwerk, Finanzen und Beschaffung.
 
 ::: zone target="docs"
 
@@ -80,9 +81,11 @@ Erstellen Sie eine Ressourcengruppe für Ressourcen wie Web-Apps, Datenbanken un
 Weitere Informationen finden Sie unter:
 
 - [Azure-Grundlagen](../considerations/fundamental-concepts.md)
-- [Skalieren mit mehreren Azure-Abonnements](../azure-best-practices/scaling-subscriptions.md)
-- [Grundlegendes zur Ressourcenzugriffsverwaltung in Azure](../../govern/resource-consistency/resource-access-management.md)
+- [Erstellen Ihrer anfänglichen Abonnements](../azure-best-practices/initial-subscriptions.md)
+- [Erstellen zusätzlicher Azure-Abonnements zum Skalieren Ihrer Azure-Umgebung](../azure-best-practices/scale-subscriptions.md)
+- [Organisieren und Verwalten Ihrer Azure-Abonnements](../azure-best-practices/organize-subscriptions.md)
 - [Organisieren Ihrer Ressourcen mit Azure-Verwaltungsgruppen](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
+- [Grundlegendes zur Ressourcenzugriffsverwaltung in Azure](../../govern/resource-consistency/resource-access-management.md)
 - [Einschränkungen bei Abonnementdiensten](https://docs.microsoft.com/azure/azure-subscription-service-limits)
 
 ::: zone-end
@@ -125,13 +128,13 @@ Erstellen Sie eine Ressourcengruppe für Ressourcen wie Web-Apps, Datenbanken un
 
 # <a name="naming-standards"></a>[Benennungsstandards](#tab/NamingStandards)
 
-Mit einem durchdachten Benennungsstandard lassen sich Ressourcen im Azure-Portal, auf einer Rechnung und in Skripts leichter identifizieren. Ihre Namensstrategie sollte geschäftliche und operative Details als Bestandteile von Ressourcennamen einbeziehen:
+Mit einem durchdachten Benennungsstandard lassen sich Ressourcen im Azure-Portal, in einer Abrechnung und in Automatisierungsskripts leichter identifizieren. Ihre Namensstrategie sollte geschäftliche und operative Details als Bestandteile von Ressourcennamen einbeziehen:
 
 - Die unternehmensbezogene Seite dieser Strategie sollte sicherstellen, dass Ressourcennamen die Organisationsinformationen enthalten, die zum Identifizieren der Teams benötigt werden. Verwenden Sie eine Ressource zusammen mit den Geschäftsbesitzern, die für die Ressourcenkosten verantwortlich sind.
 
 - Auf der operativen Seite sollte sichergestellt werden, dass die Namen von IT-Teams benötigte Informationen enthalten. Verwenden Sie die Details, die die Workload, Anwendung, Umgebung, Wichtigkeit und andere Informationen identifizieren, die für die Verwaltung von Ressourcen nützlich sind.
 
-Verschiedene Ressourcentypen können unterschiedliche Längenbeschränkungen und zulässige Zeichen aufweisen, von denen viele im Artikel zu den bewährten Methoden für [Azure-Namenskonventionen](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions) aufgeführt sind. Weitere Informationen und Empfehlungen, die speziell auf die Unterstützung von Bemühungen zur Einführung von Enterprise Clouds abzielen, finden Sie in der [Anleitung zu Benennung und Tagging](../azure-best-practices/naming-and-tagging.md) für das Framework für die Cloudeinführung (Cloud Adoption Framework).
+Für die verschiedenen Ressourcentypen gelten unterschiedliche [Benennungsregeln und Einschränkungen](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-name-rules). Weitere Informationen und Empfehlungen, die speziell auf die Unterstützung von Bemühungen zur Einführung von Enterprise Clouds abzielen, finden Sie in der [Anleitung zu Benennung und Tagging](../azure-best-practices/naming-and-tagging.md) für das Framework für die Cloudeinführung (Cloud Adoption Framework).
 
 Die folgende Tabelle enthält Namensmuster für einige Beispieltypen von Azure-Ressourcen.
 
@@ -170,7 +173,7 @@ Weitere Empfehlungen und Beispiele zum Tagging finden Sie in der [Anleitung zum 
 
 So wenden Sie ein Tag auf eine Ressourcengruppe an:
 
-1. Navigieren Sie zu [Ressourcengruppen](https://portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2Fsubscriptions%2FresourceGroups).
+1. Navigieren Sie zu [Ressourcengruppen](https://ms.portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2fSubscriptions%2fResourceGroups).
 1. Wählen Sie eine Ressourcengruppe aus.
 1. Wählen Sie **Tags zuweisen** aus.
 1. Geben Sie einen neuen Namen und Wert ein, oder verwenden Sie die Dropdownliste, um einen bereits vorhandenen Namen und Wert auszuwählen.
@@ -194,6 +197,6 @@ So wenden Sie ein Tag auf eine Ressourcengruppe an:
 1. Wählen Sie **Tags** aus.
 1. Geben Sie einen neuen Namen und Wert ein, oder wählen Sie einen bereits vorhandenen Namen und Wert aus.
 
-::: form action="OpenBlade[#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2Fsubscriptions%2FresourceGroups]" submitText="Go to resource groups" :::
+::: form action="OpenBlade[#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups]" submitText="Go to resource groups" :::
 
 ::: zone-end

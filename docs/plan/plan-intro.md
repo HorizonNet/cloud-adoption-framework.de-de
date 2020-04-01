@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: d02dfda3b44155b7208e9caf00e979553fe97ff3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 3b91a6beaa04a74b03282394da7c8c3ab26587cb
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093544"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354877"
 ---
 # <a name="plan-for-cloud-adoption"></a>Planen der Cloudeinführung
 
@@ -36,9 +36,9 @@ Diese Artikelreihe führt Sie durch jeden Schritt der Übersetzung der Strategie
 
 1. **Voraussetzungen:** Bestätigen Sie, dass alle Voraussetzungsschritte abgeschlossen sind, bevor Sie Ihren Plan erstellen.
 2. **Definieren und Priorisieren von Workloads:** Priorisieren Sie Ihre ersten 10 Workloads, um einen ersten Einführungsbacklog einzurichten.
-3. **Ausrichten von Ressourcen:** Ermitteln Sie, welche Ressourcen (vorgeschlagen oder vorhanden) zur Unterstützung der priorisierten Workloads erforderlich sind.
-4. **Überprüfen der Rationalisierung:** Überprüfen Sie Rationalisierungsentscheidungen, um die Entscheidungen zum Einführungspfad zu optimieren: Migration oder Innovation.
-5. **Definieren von Iterationen und Releases:** *Iterationen* sind die zum Durchführen von Arbeit reservierten Zeitblöcke. *Releases* sind die Definition der Arbeit, die geleistet werden muss, bevor eine Änderung der Produktionsprozesse ausgelöst wird.
+3. **Ausrichten von Ressourcen auf Workloads:** Ermitteln Sie, welche Ressourcen (vorgeschlagen oder vorhanden) zur Unterstützung der priorisierten Workloads erforderlich sind.
+4. **Überprüfen der Rationalisierungsentscheidungen:** Überprüfen Sie Rationalisierungsentscheidungen, um die Entscheidungen zum Einführungspfad zu optimieren: Migration oder Innovation.
+5. **Einrichten von Iterationen und Freigabeplänen:** *Iterationen* sind die zum Durchführen von Arbeit reservierten Zeitblöcke. *Releases* sind die Definition der Arbeit, die geleistet werden muss, bevor eine Änderung der Produktionsprozesse ausgelöst wird.
 6. **Schätzen von Zeitachsen:** Richten Sie auf der Grundlage erster Schätzungen grobe Zeitachsen für die Releaseplanung ein.
 
 ## <a name="next-steps"></a>Nächste Schritte

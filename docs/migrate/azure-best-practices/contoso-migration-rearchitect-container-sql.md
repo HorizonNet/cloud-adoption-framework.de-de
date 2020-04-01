@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 37bf2a4d96cc1f60b351f40f6a2c51c2ea1dcf95
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 83a5c356f5144700173fa4df593e313e44e3172f
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311641"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356358"
 ---
 <!-- cSpell:ignore reqs contosohost contosodc contosoacreus contososmarthotel smarthotel vcenter WEBVM SQLVM -->
 
 # <a name="rearchitect-an-on-premises-app-to-an-azure-container-and-azure-sql-database"></a>Umstrukturieren einer lokalen App zu einem Azure-Container und einer Azure SQL-Datenbank-Instanz
 
-Dieser Artikel zeigt, wie das fiktive Unternehmen Contoso eine zweistufige Windows.NET-App, die auf VMware-VMs ausgeführt wird, als Teil einer Migration der App-VMs auf Azure umstrukturiert. Contoso migriert die Front-End-VM der App zu einem Azure-Windows-Container und die App-Datenbank zu einer Azure SQL-Datenbank-Instanz.
+Dieser Artikel zeigt, wie das fiktive Unternehmen Contoso eine Windows-.NET-App mit zwei Ebenen, die auf VMware-VMs ausgeführt wird, im Rahmen einer Migration zu Azure neu gestaltet. Contoso migriert die Front-End-VM der App zu einem Azure-Windows-Container und die App-Datenbank zu einer Azure SQL-Datenbank-Instanz.
 
 Die in diesem Beispiel verwendet SmartHotel360-App wird als Open Source bereitgestellt. Wenn Sie diese App für Ihre eigenen Tests verwenden möchten, können Sie sie von [GitHub](https://github.com/Microsoft/SmartHotel360) herunterladen.
 

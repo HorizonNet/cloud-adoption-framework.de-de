@@ -7,13 +7,15 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 124f8943b7014f7f9fffeb39d464f3ad28e85816
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 9fe6cd29e6bff2ea9d969c715aec65d608f0b23e
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341707"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356412"
 ---
+<!-- cSpell:ignore HKEY kusto -->
+
 # <a name="enable-tracking-and-alerting-for-critical-changes"></a>Aktivieren von Nachverfolgung und Warnungen für kritische Änderungen
 
 Azure-Änderungsnachverfolgung und Bestand bietet Warnungen zum Konfigurationszustand Ihrer Hybridumgebung und zu Änderungen an dieser Umgebung. Es kann wichtige Änderungen an Dateien, Diensten, Software und der Registrierung melden, die sich auf Ihre bereitgestellten Server auswirken könnten.
@@ -36,7 +38,7 @@ ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and Fil
 
 ![Screenshot des Log Analytics-Abfrage-Editors im Azure-Portal](./media/change-tracking2.png)
 
-Diese Abfrage sucht nach Änderungen am Inhalt von Dateien, die einen Pfad aufweisen, der das Wort „hosts“ enthält. Sie können auch nach einer bestimmten Datei suchen, indem Sie den Pfadparameter ändern. (Beispiel: `FileSystemPath ==  "c:\\windows\\system32\\drivers\\etc\\hosts"`.)
+Diese Abfrage sucht nach Änderungen am Inhalt von Dateien, deren Pfad das Wort „hosts“ enthält. Sie können auch nach einer bestimmten Datei suchen, indem Sie den Pfadparameter ändern. (Beispiel: `FileSystemPath ==  "c:\\windows\\system32\\drivers\\etc\\hosts"`.)
   
 Nachdem die Abfrage die Ergebnisse zurückgegeben hat, wählen Sie **Neue Warnungsregel** aus, um den Editor für Warnungsregeln zu öffnen. Sie können diesen Editor auch über Azure Monitor im Azure-Portal erreichen.
 

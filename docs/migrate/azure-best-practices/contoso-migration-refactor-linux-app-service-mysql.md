@@ -7,13 +7,15 @@ ms.date: 10/11/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3a4ebcb2264ff863200071363b8369d8a76549d3
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 988d7524941b49821cd96546cc3adafe317dff8a
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311488"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356250"
 ---
+<!-- cSpell:ignore contosohost contosodc vcenter DBHOST DBUSER WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL osticket contosoosticket trafficmanager CNAME -->
+
 # <a name="refactor-a-linux-app-to-multiple-regions-using-azure-app-service-traffic-manager-and-azure-database-for-mysql"></a>Umgestalten einer Linux-App für mehrere Regionen mit Azure App Service, Azure Traffic Manager und Azure Database for MySQL
 
 In diesem Artikel wird gezeigt, wie das fiktive Unternehmen Contoso eine LAMP-App (Linux-basiertes Apache/MySQL/PHP) mit zwei Ebenen umgestaltet und sie mithilfe von Azure App Service mit GitHub-Integration und Azure Database for MySQL aus einer lokalen Umgebung zu Azure migriert.
@@ -72,7 +74,7 @@ Die vorgeschlagene Architektur sieht wie folgt aus:
 
 Contoso wird den Migrationsprozess wie folgt abschließen:
 
-1. In einem ersten Schritt richten die Administratoren von Contoso die Azure-Infrastruktur ein – einschließlich der Bereitstellung von Azure App Service-Instanzen, der Einrichtung von Traffic Manager und der Bereitstellung einer Azure Database for MySQL-Instanz.
+1. Im ersten Schritt richten die Administratoren von Contoso die Azure-Infrastruktur ein – einschließlich der Bereitstellung von Azure App Service-Instanzen, der Einrichtung von Traffic Manager und der Bereitstellung einer Azure Database for MySQL-Instanz.
 2. Nach der Vorbereitung von Azure migriert das Unternehmen die Datenbank mithilfe von MySQL Workbench.
 3. Sobald die Datenbank in Azure ausgeführt wird, richtet Contoso ein privates GitHub-Repository für Azure App Service mit Continuous Delivery ein und lädt es mit der osTicket-App.
 4. Im Azure-Portal wird die App von GitHub mit Azure App Service in den Docker-Container geladen.
@@ -291,7 +293,7 @@ Im letzten Schritt des Migrationsprozesses konfigurieren die Administratoren von
 
     ![Konfigurieren der App](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app6.png)
 
-8. Es konfiguriert sowohl die Web-App **osticket-eus2** als auch **osticket-cus**, um die benutzerdefinierten Hostnamen zuzulassen.
+8. Es konfiguriert die Web-Apps **osticket-eus2** und **osticket-cus**, um die benutzerdefinierten Hostnamen zuzulassen.
 
     ![Konfigurieren der App](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app7.png)
 

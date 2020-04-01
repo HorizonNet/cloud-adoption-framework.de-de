@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 74f81e139e7eacc7445321592eab4027a40a8c56
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: bbd50e5e2ddda9489f0fc7a90a546ef41fd86ade
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312709"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357107"
 ---
 # <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>Governanceleitfaden für komplexe Unternehmen: Beschreibung der bewährten Methoden
 
@@ -50,7 +50,7 @@ Das Cloudgovernanceteam ist für die folgenden Entscheidungen und Implementierun
 
 ### <a name="subscription-design"></a>Abonnemententwurf
 
-Die Entscheidung über den Abonnemententwurf bestimmt, wie Azure-Abonnements strukturiert werden und wie Azure-Verwaltungsgruppen verwendet werden, um Zugriff, Richtlinien und Compliance für diese Abonnements effizient zu verwalten. Im vorliegenden Beispielfall hat das Governanceteam das Abonnemententwurfsmuster **[Gemischt](../../../decision-guides/subscriptions/index.md#mixed-patterns)** ausgewählt.
+Die Entscheidung über den Abonnemententwurf bestimmt, wie Azure-Abonnements strukturiert werden und wie Azure-Verwaltungsgruppen verwendet werden, um Zugriff, Richtlinien und Compliance für diese Abonnements effizient zu verwalten. Im vorliegenden Beispielfall hat das Governanceteam die **[Strategie für gemischte Abonnements](../../../decision-guides/subscriptions/index.md#mixing-subscription-strategies)** ausgewählt.
 
 - Wenn neue Anforderungen für Azure-Ressourcen auftreten, sollte für jede größere Geschäftseinheit in jeder geografischen Betriebsregion eine „Abteilung“ eingerichtet werden. Innerhalb jeder der Abteilungen sollten „Abonnements“ für jeden Anwendungsarchetyp erstellt werden.
 - Ein Anwendungsarchetyp ist eine Möglichkeit, Anwendungen mit ähnlichen Anwendungen zu gruppieren. Häufige Beispiele sind: Anwendungen mit geschützten Daten, verwaltete Anwendungen (wie HIPAA oder FedRAMP), risikoarme Anwendungen, Anwendungen mit lokalen Abhängigkeiten, SAP-Anwendungen oder Anwendungen anderer Mainframes in Azure oder Anwendungen, die lokale SAP- oder lokale Mainframeanwendungen erweitern. Jedes Unternehmen hat individuelle Anforderungen, die auf Datenklassifikationen und den Arten von Anwendungen basieren, die das Geschäft unterstützen. Die Abhängigkeitszuordnung der digitalen Infrastruktur kann bei der Definition der Anwendungsarchitekturen in einem Unternehmen helfen.

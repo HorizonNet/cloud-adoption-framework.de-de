@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: f229515b39c69fa0e9e6c840810720bca4e12dc6
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: f1c35b41f267887c62b2568583b929657517c87e
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342047"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354850"
 ---
 # <a name="prerequisites-for-an-effective-cloud-adoption-plan"></a>Voraussetzungen für einen effektiven Cloudeinführungsplan
 
@@ -40,7 +40,7 @@ Diese Fragen sind für die Genauigkeit des Cloudeinführungsplans von entscheide
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Sobald das Team mit den strategischen Eingaben und den Eingaben zur Bewertung der digitalen Ressourcen vertraut ist, kann der nächste Schritt zur [Priorisierung der Workload](./workloads.md) beginnen.
+[Bereitstellen der Vorlage für den Cloudeinführungsplan](./template.md) in Azure DevOps
 
 > [!div class="nextstepaction"]
-> [Priorisieren und Definieren von Workloads](./workloads.md)
+> [Bereitstellen der Vorlage in Azure DevOps](./template.md)

@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 0308308ab098f7cc7fe7c05094549b01f36c2d61
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 6b479ac5bd347cda081dc55dbabdc4fbd46d5b11
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311964"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356160"
 ---
+<!-- cSpell:ignore IISRESET WEBVM SQLVM SQLMI contosodc contosohost contosovmsacc cswiz vcenter WEBMV sourcedb -->
+
 # <a name="rehost-an-on-premises-app-on-an-azure-vm-and-sql-database-managed-instance"></a>Zuweisen eines neuen Hosts für eine lokale App auf einer Azure-VM und einer verwalteten Azure SQL-Datenbank-Instanz
 
 Dieser Artikel zeigt, wie das fiktive Unternehmen Contoso eine zweistufige Windows.NET-Front-End-App, die auf VMware-VMs ausgeführt wird, mit dem Azure Site Recovery-Dienst zu einer Azure-VM migriert. Er zeigt außerdem, wie Contoso die App-Datenbank zu einer verwalteten Azure-SQL-Datenbank-Instanz migriert.
@@ -392,7 +394,7 @@ Um die Quellumgebung einzurichten, führen die Contoso-Administratoren diese Auf
 
     ![Auswählen des Recovery Services-Tresors](./media/contoso-migration-rehost-vm-sql-managed-instance/cswiz1.png)
 
-10. MySQL Server und VMware PowerCLI werden heruntergeladen und installiert. Anschließend überprüfen sie die Servereinstellungen.
+10. MySQL-Server und VMware PowerCLI werden heruntergeladen und installiert. Anschließend überprüfen sie die Servereinstellungen.
 11. Nach der Überprüfen geben Sie den FQDN oder die IP-Adresse der vCenter Server-Instanz oder des vSphere-Hosts ein. Sie behalten den Standardport bei und geben einen Anzeigenamen für die vCenter Server-Instanz in Azure ein.
 12. Sie geben das zuvor erstellte Konto an, sodass Site Recovery automatisch VMware-VMs ermitteln kann, die für die Replikation zur Verfügung stehen.
 13. Sie geben Anmeldeinformationen an, damit der Mobilitätsdienst beim Aktivieren der Replikation automatisch installiert wird. Für Windows-Computer benötigt das Konto lokale Administratorberechtigungen auf den VMs.

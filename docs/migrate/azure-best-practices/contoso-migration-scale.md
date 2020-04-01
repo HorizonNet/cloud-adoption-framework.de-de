@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 8c3ee0a75efa74aa1599399358bac267c5ffe1de
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: b1fceb8a7b54ce88917f6feaef6ea70f5aa2f023
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79091926"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355640"
 ---
+<!-- cSpell:ignore Hanu Scalr VHDs autosnooze unsnooze -->
+
 # <a name="scale-a-migration-to-azure"></a>Skalieren einer Migration zu Azure
 
 Dieser Artikel zeigt, wie das fiktive Unternehmen Contoso eine Migration zu Azure durchführt. Das Unternehmen überlegt, wie sich eine Migration von mehr als 3.000 Workloads, 8.000 Datenbanken und über 10.000 VMs nach Azure planen und durchführen lässt.
@@ -288,7 +290,7 @@ Contoso verwendet DMS bei der Migration von SQL Server.
 
     ![DMS-Skalierung](./media/contoso-migration-scale/dms.png)
 
-- Eine andere Skalierungstaktik für Contoso besteht darin, die Azure SQL- oder MySQL-Datenbank-Zielinstanz während der Datenmigration vorübergehend zentral auf die SKU im Premium-Tarif hochzuskalieren. Dadurch wird die Datenbankdrosselung minimiert, die sich auf Aktivitäten der Datenübertragung auswirken kann, wenn SKUs in niedrigeren Tarifen verwendet werden.
+- Eine andere Skalierungstaktik für Contoso besteht darin, die Azure SQL- oder MySQL-Datenbank-Zielinstanz während der Datenmigration vorübergehend auf die SKU im Premium-Tarif hochzuskalieren. Dadurch wird die Datenbankdrosselung minimiert, die sich auf Aktivitäten der Datenübertragung auswirken kann, wenn SKUs in niedrigeren Tarifen verwendet werden.
 
 ##### <a name="use-other-tools"></a>Verwenden weiterer Tools
 

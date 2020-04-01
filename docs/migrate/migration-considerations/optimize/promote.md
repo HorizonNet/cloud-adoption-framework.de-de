@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e2f0a0d92dfa63e0eb3f438fcc155854dfd61f8c
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 34444c31aa977e6088c7aabbb916a27c008c2b04
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311811"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355215"
 ---
+<!-- cSpell:ignore CISO prepromotion -->
+
 <!-- markdownlint-disable MD026 -->
 
 # <a name="what-is-required-to-promote-a-migrated-resource-to-production"></a>Was ist erforderlich, um eine migrierte Ressource in die Produktion höher zu stufen?
@@ -27,7 +29,7 @@ Der Prozess der Höherstufung variiert je nach der Workloadarchitektur. Es gibt 
 Jeder der folgenden Prozesse sollte vor der Produktionsbereitstellung ausgeführt, dokumentiert und überprüft werden:
 
 - **[Bewerten](../assess/index.md):** Die Workload wurde im Hinblick auf Cloudkompatibilität bewertet.
-- **[Entwerfen](../assess/architect.md):** Die Struktur der Workload wurde ordnungsgemäß so entworfen, dass sie an den ausgewählten Cloudanbieter angepasst ist.
+- **[Entwerfen](../assess/architect.md):** Die Struktur der Workload wurde entsprechend dem ausgewählten Cloudanbieter entworfen.
 - **[Replizieren](../migrate/replicate.md):** Die Ressourcen wurden in die Cloudumgebung repliziert.
 - **[Bereitstellen](../migrate/stage.md):** Die replizierten Ressourcen wurden in einer bereitgestellten Instanz der Cloudumgebung wiederhergestellt.
 - **[Geschäftsbezogene Tests](./business-test.md):** Die Workload wurde von Geschäftskunden vollständig getestet und überprüft.

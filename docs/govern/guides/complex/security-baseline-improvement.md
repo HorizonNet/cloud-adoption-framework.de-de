@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6501871e909beba8d32cee0c5dd8c3dbe091f252
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: de9fd12afe7445c5cdd3b4ae8c1eba9c7cb07f19
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706811"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357058"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Sicherheitsbaseline“
 
@@ -40,7 +40,7 @@ Seit diesem Zeitpunkt haben sich einige Dinge geändert, die sich auf die Govern
 - Tausende von IT- und Unternehmensressourcen werden in der Cloud bereitgestellt.
 - Das Team für die Anwendungsentwicklung hat eine CI/CD-Pipeline (Continuous Integration/Continuous Deployment) implementiert, um eine native Cloudanwendung mit einer verbesserten Benutzeroberfläche bereitzustellen. Diese Anwendung interagiert noch nicht mit geschützten Daten und ist daher nicht für die Produktion bereit.
 - Das Business Intelligence-Team innerhalb der IT-Abteilung stellt aktiv Daten aus Logistik, Inventur und Drittanbieterdaten in der Cloud zusammen. Diese Daten werden verwendet, um neue Vorhersagen zu treffen, die Geschäftsprozesse beeinflussen könnten. Diese Vorhersagen und Erkenntnisse sind jedoch erst dann umsetzbar, wenn Kunden- und Finanzdaten in die Datenplattform integriert werden können.
-- Das IT-Team setzt zurzeit die Pläne des CIO und des CFO um, zwei Rechenzentren außer Betrieb zu nehmen. Fast 3.500 Ressourcen in den beiden Rechenzentren wurden außer Betrieb genommen oder migriert.
+- Das IT-Team setzt zurzeit die Pläne des CIO und CFO zur Außerbetriebnahme zweier Rechenzentren um. Fast 3.500 Ressourcen in den beiden Rechenzentren wurden außer Betrieb genommen oder migriert.
 - Die Richtlinien im Hinblick auf vertrauliche personenbezogene Informationen und Finanzdaten wurden modernisiert. Allerdings sind die neuen Unternehmensrichtlinien abhängig von der Implementierung der entsprechenden Sicherheits- und Governancerichtlinien. Teams können noch nicht weiterarbeiten.
 
 ### <a name="incrementally-improve-the-future-state"></a>Inkrementelles Verbessern des zukünftigen Status
@@ -133,7 +133,7 @@ In früheren iterativen Änderungen der bewährten Methoden haben wir Netzwerksi
     1. Die Referenzarchitektur aus dem vorherigen Abschnitt [Hub-and-Spoke-Topologie mit Shared Services](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services) generierte eine Resource Manager-Vorlage für die Aktivierung von VNET-Peering.
     2. Diese Vorlage kann als Anleitung zum Ändern der DMZ-Vorlage aus der vorherigen Governanceiteration verwendet werden.
     3. Als Nächstes fügen wir dem DMZ-VNET, das zuvor per VPN mit dem lokalen Edge-Gerät verbunden war, VNET-Peering hinzu.
-    4. *** Sie sollten das VPN außerdem aus dieser Vorlage entfernen und sicherstellen, dass kein Datenverkehr direkt an das lokale Rechenzentrum weitergeleitet wird, ohne das Unternehmens-IT-Abonnement und die Firewalllösung zu passieren. Dieses VPN kann auch als Failoververbindung im Falle eines ExpressRoute-Verbindungsausfalls festgelegt werden.
+    4. *** Sie sollten das VPN außerdem aus dieser Vorlage entfernen und sicherstellen, dass kein Datenverkehr direkt an das lokale Rechenzentrum weitergeleitet wird, ohne das Unternehmens-IT-Abonnement und die Firewalllösung zu passieren. Dieses VPN kann auch als Failoververbindung im Fall eines ExpressRoute-Verbindungsausfalls festgelegt werden.
     5. Es ist noch eine zusätzliche [Netzwerkkonfiguration](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) erforderlich, damit Azure Automation DSC auf gehostete virtuelle Computer anwendet.
 2. Ändern Sie die Netzwerksicherheitsgruppe. Blockieren Sie den gesamten öffentlichen **und** den direkten lokalen Datenverkehr in der Netzwerksicherheitsgruppe. Der einzige eingehende Datenverkehr sollte über den VNET-Peer im Unternehmens-IT-Abonnement eintreffen.
     1. In der vorherigen Iteration wurde eine Netzwerksicherheitsgruppe erstellt, die den gesamten öffentlichen Datenverkehr blockiert und den gesamten internen Datenverkehr über eine Whitelist zulässt. Jetzt möchten wir diese Netzwerksicherheitsgruppe etwas verschieben.

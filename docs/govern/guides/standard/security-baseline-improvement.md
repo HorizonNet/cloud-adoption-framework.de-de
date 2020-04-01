@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2e9dbaf3bb92893e4eb737964da3f1b0c3a056ad
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: f34938fc6690949d017ee538c444a4ccef389aef
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707712"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357027"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Governanceleitfaden für Standardunternehmen: Verbessern der Disziplin „Sicherheitsbaseline“
 
@@ -37,7 +37,7 @@ Seit diesem Zeitpunkt haben sich einige Dinge geändert, die sich auf die Govern
 
 - Das Anwendungsentwicklungsteam hat eine CI/CD-Pipeline implementiert, um eine cloudnative Anwendung mit einer verbesserten Benutzeroberfläche bereitzustellen. Diese App interagiert noch nicht mit geschützten Daten und ist daher nicht für die Produktion bereit.
 - Das Business Intelligence-Team innerhalb der IT-Abteilung stellt aktiv Daten aus Logistik, Inventar und Drittanbieterquellen in der Cloud zusammen. Diese Daten werden verwendet, um neue Vorhersagen zu treffen, die Geschäftsprozesse beeinflussen könnten. Diese Vorhersagen und Erkenntnisse sind jedoch erst dann umsetzbar, wenn Kunden- und Finanzdaten in die Datenplattform integriert werden können.
-- Das IT-Team setzt zurzeit die Pläne des CIO und des CFO um, um das DR-Datencenter außer Betrieb zu nehmen. Mehr als 1.000 der 2.000 Ressourcen im DR-Datencenter wurden außer Betrieb genommen oder migriert.
+- Das IT-Team setzt zurzeit die Pläne des CIO und CFO zur Außerbetriebnahme des DR-Rechenzentrums um. Mehr als 1.000 der 2.000 Ressourcen im DR-Datencenter wurden außer Betrieb genommen oder migriert.
 - Die lose definierten Richtlinien für personenbezogene Informationen und Finanzdaten wurden modernisiert. Allerdings sind die neuen Unternehmensrichtlinien abhängig von der Implementierung der entsprechenden Sicherheits- und Governancerichtlinien. Teams können noch nicht weiterarbeiten.
 
 ### <a name="incrementally-improve-the-future-state"></a>Inkrementelles Verbessern des zukünftigen Status

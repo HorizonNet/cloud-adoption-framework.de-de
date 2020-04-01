@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c44fc6974be69ff684089c65aa23da5eefbfd814
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 221a29db7eb68acc6ffd5b52a0b01c1769e00222
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708817"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80357174"
 ---
 # <a name="cost-management-metrics-indicators-and-risk-tolerance"></a>Metriken, Indikatoren und Risikotoleranz in der Kostenverwaltung
 
@@ -34,7 +34,7 @@ Es folgen Beispiele für nützliche Metriken, die Sie sammeln sollten, um die Ri
 
 ## <a name="risk-tolerance-indicators"></a>Risikotoleranzindikatoren
 
-In frühen kleineren Bereitstellungen, z.B. Dev/Test oder experimentellen ersten Workloads, ist die Kostenverwaltung wahrscheinlich mit vergleichsweise geringem Risiko verbunden. Wenn weitere Ressourcen bereitgestellt werden, steigt das Risiko, und die Toleranz im Unternehmens für Risiken nimmt wahrscheinlich ab. Darüber hinaus steigt das Risiko, und nimmt die Toleranz ab, wenn weitere Cloudeinführungsteams die Möglichkeit erhalten, Ressourcen in der Cloud zu konfigurieren oder bereitzustellen. Im Gegensatz dazu sind zum Erweitern einer Disziplin der Kostenverwaltung Personen aus der Cloudeinführungsphase erforderlich, die innovativere neue Technologien bereitstellen.
+In frühen kleineren Bereitstellungen, z.B. Dev/Test oder experimentellen ersten Workloads, ist die Kostenverwaltung wahrscheinlich mit vergleichsweise geringem Risiko verbunden. Wenn weitere Ressourcen bereitgestellt werden, steigt das Risiko, und die Risikotoleranz des Unternehmens nimmt wahrscheinlich ab. Darüber hinaus steigt das Risiko, und nimmt die Toleranz ab, wenn weitere Cloudeinführungsteams die Möglichkeit erhalten, Ressourcen in der Cloud zu konfigurieren oder bereitzustellen. Im Gegensatz dazu sind zum Erweitern einer Disziplin der Kostenverwaltung Personen aus der Cloudeinführungsphase erforderlich, die innovativere neue Technologien bereitstellen.
 
 In den frühen Phasen der Cloudeinführung erarbeiten Sie zusammen mit Ihrem Unternehmen eine Baseline für Risikotoleranz. Nachdem Sie eine Basislinie haben, müssen Sie die Kriterien festlegen, die eine Investition in die Disziplin der Kostenverwaltung auslösen würden. Diese Kriterien sind wahrscheinlich für jede Organisation unterschiedlich.
 

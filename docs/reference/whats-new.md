@@ -7,12 +7,12 @@ ms.date: 03/02/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 0e93f0279ba210be594b3b5af40cf16657f224e3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: a3e316d49acaaee00d5ecd10efac9aa15c2dbd49
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79095382"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353678"
 ---
 # <a name="whats-new-in-the-microsoft-cloud-adoption-framework"></a>Neuerungen beim Framework für die Einführung der Microsoft Cloud
 
@@ -39,7 +39,7 @@ Die erste Zielzone stammt aus dem Leitfaden zur Bereitschaft und dient als eigen
 - [Erste Zielzone](../ready/landing-zone/first-landing-zone.md): Enthält weitere Informationen zum Vergleich verschiedener Zielzonen.
 - [Bereitstellen einer Zielzone für die Migration](../ready/landing-zone/migrate-landing-zone.md): Wurde in den vorherigen Artikel zur Blaupause für die Migrationszielzone verschoben, um die Definition der CAF-Blaupause von der Auswahl der ersten Zielzone zu trennen, damit weitere Zielzonenoptionen möglich sind.
 - Artikel zu [Terraform-Zielzonen](../ready/landing-zone/terraform-landing-zone.md): Wurde aus dem Abschnitt „Erweiterter Bereich“ der Bereitschaftsmethodik in den neuen Abschnitt „Zielzone“ der Methodik verschoben, um Terraform in Bezug auf Zielzonen als wichtige Komponente darzustellen.
-- Die grundlegenden Aspekte von Zielzonen wurden im Inhaltsverzeichnis unter „Grundlegende Überlegungen zu Zielzonen“ gruppiert.
+- Die grundlegenden Aspekte von Zielzonen wurden im Inhaltsverzeichnis unter „Grundlegende Überlegungen zu Zielzonen“ zusammengefasst.
 - Die bewährten Methoden zum Thema „Sicherheit“ wurden aus der Migrationsmethodik in den neuen Zielzonenabschnitt „Verbessern der Sicherheit von Zielzonen (sensible Daten)“ verschoben, um Lesern diese Anleitung zu einem früheren Zeitpunkt zur Verfügung zu stellen.
 
 ### <a name="refinements-to-the-azure-migration-guide"></a>Verbesserungen des Leitfadens zur Azure-Migration

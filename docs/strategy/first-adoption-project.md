@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 18b247665b8a371a9949ebaf838d3833a56067a3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 063fc4074a7b5972b6b2938abdcb90937412e832
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092484"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353545"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -66,7 +66,7 @@ Weitere Beispiele für erste Einführungsprojekte sind unter anderem:
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nachdem das erste Cloudeinführungsprojekt begonnen hat, kann sich das Cloud Strategy-Team auf den längerfristigen [Cloudeinführungsplan](../plan/index.md) konzentrieren.
+Erfahren Sie mehr über Strategien zum [Abwägen konkurrierender Prioritäten](./balance-competing-priorities.md).
 
 > [!div class="nextstepaction"]
-> [Entwickeln Ihres Cloudeinführungsplans](../plan/index.md)
+> [Ausgewogenheit konkurrierender Prioritäten](./balance-competing-priorities.md)

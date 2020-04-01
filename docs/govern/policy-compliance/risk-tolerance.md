@@ -7,18 +7,18 @@ ms.date: 09/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: cbde932d0e4a91a80c4bde6a5b9604b43ee30441
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: c96039183f50d0ff189dab04defda4fd1ba2e4fc
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709497"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356932"
 ---
 # <a name="evaluate-risk-tolerance"></a>Evaluieren der Risikotoleranz
 
 Jede Geschäftsentscheidung führt zu neuen Risiken. Jede Investition in beliebigen Bereichen bringt ein Verlustrisiko mit sich. Neue Produkte oder Dienste bergen das Risiko eines Marktversagens. Durch Änderungen an aktuellen Produkten oder Diensten kann sich der Marktanteil verringern. Die Cloudtransformation ist keine Wunderlösung für die alltäglichen Geschäftsrisiken. Im Gegenteil – durch verbundene Lösungen (Cloud oder lokal) werden neue Risiken eingeführt. Die Bereitstellung von Ressourcen für mit dem Netzwerk verbundene Einrichtungen erweitert zudem das Profil potenzieller Bedrohungen, indem Sicherheitslücken einer viel größeren, globalen Community zugänglich gemacht werden. Glücklicherweise sind Cloudanbieter mit den geänderten, erhöhten und zusätzlichen Risiken vertraut. Sie investieren in hohem Maße in die Minderung und Bewältigung dieser Risiken im Interesse ihrer Kunden.
 
-Dieser Artikel beschäftigt sich nicht vorrangig mit Cloudrisiken. Er befasst sich vielmehr mit den geschäftlichen Risiken, die mit den verschiedenen Formen der Cloudtransformation in Zusammenhang stehen. Im weiteren Verlauf dieses Artikels verlagert sich der Fokus auf die Diskussion von Möglichkeiten zum Verstehen der Risikotoleranz des Unternehmens.
+Dieser Artikel beschäftigt sich nicht vorrangig mit Cloudrisiken. Er befasst sich vielmehr mit den geschäftlichen Risiken, die mit den verschiedenen Formen der Cloudtransformation in Zusammenhang stehen. Im weiteren Verlauf dieses Artikels verlagert sich der Fokus auf die Diskussion von Möglichkeiten, die Risikotoleranz des Unternehmens zu verstehen.
 
 <!-- markdownlint-disable MD026 -->
 

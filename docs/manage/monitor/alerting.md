@@ -8,13 +8,15 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: c6f48ae433746906d64023bd72f34c21a3163373
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: bb74e869b2fab2142a8c0ffd8c7396268e2231ed
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79091293"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356317"
 ---
+<!-- cSpell:ignore kusto multiresource multisignal -->
+
 # <a name="cloud-monitoring-guide-alerting"></a>Leitfaden zur Cloudüberwachung: Warnungen
 
 Seit Jahren kämpfen IT-Organisationen gegen das Phänomen der „Alarmmüdigkeit“, das durch die in einem Unternehmen bereitgestellten Überwachungstools verursacht wird. Viele Systeme erzeugen eine große Anzahl von Warnungen, die häufig als bedeutungslos betrachtet werden. Aufgrund der Flut an Daten werden die relevanten Warnungen entweder übersehen oder ignoriert. Als Folge haben IT- und Entwicklungsabteilungen Schwierigkeiten, die internen oder externen Kunden zugesagte Servicequalität zu erfüllen. Es ist wichtig, den Zustand Ihrer Infrastruktur und Anwendungen zu verstehen, um die Zuverlässigkeit sicherzustellen. Sie müssen Ursachen schnell identifizieren, um die Leistungsminderung und Beeinträchtigung des Diensts zu minimieren oder die Auswirkungen von Vorfällen zu verringern oder die Anzahl der Vorfälle zu reduzieren.
@@ -60,7 +62,7 @@ Abhängig vom Feature und der verwendeten Konfiguration können Sie Überwachung
 
 Azure Monitor verfügt über vier Arten von Warnungen, die auf gewisse Weise an das Repository gebunden sind, in denen die Daten gespeichert werden:
 
-- [Metrikwarnung](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric): Warnungen zu Daten in der Azure Monitor-Metrikdatenbank. Warnungen werden ausgelöst, wenn ein überwachter Wert einen benutzerdefinierten Schwellwert überschreitet. Es wird erneut eine Warnung ausgelöst, wenn der Wert in den Zustand „Normal“ zurückkehrt.
+- [Metrikwarnung](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric): Warnungen zu Daten in der Azure Monitor-Metrikdatenbank. Warnungen werden ausgelöst, wenn ein überwachter Wert einen benutzerdefinierten Schwellenwert überschreitet. Wenn der Wert wieder „normal“ ist, wird erneut eine Warnung ausgelöst.
 
 - [Protokollabfragewarnung](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-log-query): Verfügbar für Warnmeldungen zu Inhalten in den Application Insights- oder Azure-Protokollspeichern. Das Auslösen von Warnungen basierend auf arbeitsbereichsübergreifenden Abfragen ist ebenfalls möglich.
 

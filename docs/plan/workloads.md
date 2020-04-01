@@ -1,20 +1,20 @@
 ---
-title: Priorisierung und Definition von Workloads für die Cloudeinführung
-description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie Sie Workloads für einen Cloudeinführungsplan priorisieren und definieren.
+title: Definieren und Priorisieren von Workloads für die Cloudeinführung
+description: Verwenden Sie das Cloud Adoption Framework für Azure, um zu erfahren, wie Sie Workloads für einen Cloudeinführungsplan definieren und priorisieren.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9f374bbe149e132fde4c44a8c0ecd9246615bac0
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 8d9297534f04b6656b584fa82d565e9119599f26
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140619"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354693"
 ---
-# <a name="prioritize-and-define-workloads-for-a-cloud-adoption-plan"></a>Priorisierung und Definition von Workloads für einen Cloudeinführungsplan
+# <a name="define-and-prioritize-workloads-for-a-cloud-adoption-plan"></a>Definieren und Priorisieren von Workloads für einen Cloudeinführungsplan
 
 Die Festlegung klarer, umsetzbarer Prioritäten ist eines der Geheimnisse einer erfolgreichen Cloudeinführung. Die Versuchung ist groß, Zeit in die Definition aller Workloads zu investieren, die bei der Cloudeinführung möglicherweise beeinflusst werden könnten. Diese Vorgehensweise ist jedoch vor allem in der frühen Phase des Einführungsprozesses kontraproduktiv.
 

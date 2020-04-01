@@ -1,6 +1,5 @@
 ---
 title: Clusterentwurf und Vorgänge
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Enthält eine Beschreibung von Kubernetes im Framework für die Cloudeinführung (Cloud Adoption Framework) in Bezug auf den Clusterentwurf und die zugehörigen Vorgänge.
 author: sabbour
 ms.author: asabbour
@@ -8,13 +7,15 @@ ms.topic: guide
 ms.date: 12/16/2019
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5b5aafd1c9470b566395201a46c75d96581306bd
-ms.sourcegitcommit: 25cd1b3f218d0644f911737a6d5fd259461b2458
+ms.openlocfilehash: 1a4bcb42ec8fdcdbdb53d918c8348c22c2606649
+ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80226700"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "80392735"
 ---
+<!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
+
 # <a name="cluster-design-and-operations"></a>Clusterentwurf und Vorgänge
 
 Identifizieren Sie Clusterkonfiguration und Netzwerkdesign. Gewährleisten Sie zukunftssichere Skalierbarkeit durch die Automatisierung der Infrastrukturbereitstellung. Stellen Sie Hochverfügbarkeit sicher, indem Sie Business Continuity & Disaster Recovery planen.
@@ -22,6 +23,8 @@ Identifizieren Sie Clusterkonfiguration und Netzwerkdesign. Gewährleisten Sie z
 ## <a name="plan-train-and-proof"></a>Planen, Trainieren und Prüfen
 
 Die unten angegebene Checkliste und die Ressourcen dienen Ihnen beim Einstieg als Hilfe zur Planung des Clusterentwurfs. Sie sollten diese Fragen beantworten können:
+
+<!-- markdownlint-disable MD033 -->
 
 > [!div class="checklist"]
 >
@@ -34,7 +37,7 @@ Die unten angegebene Checkliste und die Ressourcen dienen Ihnen beim Einstieg al
 >
 > | Checkliste  | Ressourcen |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
-> | **Ermitteln der wichtigen Aspekte in Bezug auf den Netzwerkentwurf:** Machen Sie sich mit den Aspekten des Clusternetzwerkentwurfs vertraut, vergleichen Sie Netzwerkmodelle, und wählen Sie das Kubernetes-Netzwerk-Plug-In aus, das Ihre Anforderungen erfüllt.    | [Kubenet- und Azure Container Networking Interface-Netzwerke (CNI)](https://docs.microsoft.com/azure/aks/concepts-network#azure-virtual-networks) <br/> [Verwenden von kubenet-Netzwerken mit Ihren eigenen IP-Adressbereichen in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/configure-kubenet) <br/> [Konfigurieren von Azure CNI-Netzwerken in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/configure-azure-cni) <br/> [Sicherer Netzwerkentwurf für einen AKS-Cluster]](https://github.com/Azure/sg-aks-workshop/blob/master/cluster-design/NetworkDesign.md)|
+> | **Ermitteln der wichtigen Aspekte in Bezug auf den Netzwerkentwurf:** Machen Sie sich mit den Aspekten des Clusternetzwerkentwurfs vertraut, vergleichen Sie Netzwerkmodelle, und wählen Sie das Kubernetes-Netzwerk-Plug-In aus, das Ihre Anforderungen erfüllt.    | [Kubenet- und Azure Container Networking Interface-Netzwerke (CNI)](https://docs.microsoft.com/azure/aks/concepts-network#azure-virtual-networks) <br/> [Verwenden von kubenet-Netzwerken mit Ihren eigenen IP-Adressbereichen in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/configure-kubenet) <br/> [Konfigurieren von Azure CNI-Netzwerken in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/configure-azure-cni) <br/> [Sicherer Netzwerkentwurf für einen AKS-Cluster](https://github.com/Azure/sg-aks-workshop/blob/master/cluster-design/NetworkDesign.md)|
 > | **Erstellen mehrerer Knotenpools:** Zur Unterstützung von Anwendungen, die über unterschiedliche Compute- oder Speicheranforderungen verfügen, können Sie Ihren Cluster optional mit mehreren Knotenpools konfigurieren. Verwenden Sie zusätzliche Knotenpools beispielsweise zum Bereitstellen von GPUs für rechenintensive Anwendungen oder für den Zugriff auf leistungsstarken SSD-Speicher.   | [Erstellen und Verwalten mehrerer Knotenpools für einen Cluster in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/use-multiple-node-pools) |
 > | **Treffen einer Entscheidung zu Verfügbarkeitsanforderungen:** Um eine höhere Verfügbarkeit Ihrer Anwendungen zu gewährleisten, können Cluster über Verfügbarkeitszonen verteilt werden. Diese Zonen sind physisch getrennte Rechenzentren innerhalb einer bestimmten Region. Wenn die Clusterkomponenten auf mehrere Zonen verteilt sind, kann Ihr Cluster einen Fehler in einer dieser Zonen tolerieren. Ihre Anwendungen und Verwaltungsabläufe sind auch bei Problemen in einem gesamten Rechenzentrum weiterhin verfügbar.   | [Erstellen eines Azure Kubernetes Service-Clusters (AKS), der Verfügbarkeitszonen verwendet](https://docs.microsoft.com/azure/aks/availability-zones) |
 

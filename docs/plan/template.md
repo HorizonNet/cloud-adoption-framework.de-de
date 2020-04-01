@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 243094da7b92a374124474eaaf0c955b5fdb85ed
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: fb35c059f3c3c6c9485d70a78a2c3fa1b49dc10d
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140602"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354764"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Cloudeinführungsplan und Azure DevOps
 
@@ -30,7 +30,7 @@ Um den Cloudeinführungsplan bereitzustellen, öffnen Sie den [Azure DevOps-Demo
 4. Wählen Sie **Projekt erstellen** aus, um basierend auf der Planvorlage ein neues Projekt in Ihrem Mandanten zu erstellen. Eine Statusanzeige zeigt Ihren Fortschritt bei der Bereitstellung des Projektes an.
 5. Wenn die Bereitstellung abgeschlossen ist, wählen Sie **Zu Projekt navigieren** aus, um Ihr neues Projekt anzuzeigen.
 
-Nachdem Ihr Projekt erstellt wurde, lesen Sie weitere Artikel in dieser Serie, um zu erfahren, wie Sie die Vorlage an Ihren Cloudeinführungsplan anpassen können.
+Nachdem Ihr Projekt erstellt wurde, lesen Sie weitere Artikel in dieser Serie, um zu erfahren, wie Sie die Vorlage an Ihren Cloudeinführungsplan anpassen.
 
 Zusätzliche Unterstützung und Anleitung zu diesem Tool finden Sie unter [Azure DevOps Services-Demo-Generator](https://docs.microsoft.com/azure/devops/demo-gen/?toc=/azure/devops/demo-gen/toc.json&bc=/azure/devops/demo-gen/breadcrumb/toc.json&view=azure-devops).
 

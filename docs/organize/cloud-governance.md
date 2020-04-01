@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 7569d0718f7b25625cc40887af81edda53ff0b1e
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: be9d5e49fe4c03335fc28636616f97812d1d2312
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093898"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354999"
 ---
 # <a name="cloud-governance-capabilities"></a>Funktionen für Cloudgovernance
 
@@ -90,7 +90,7 @@ Der Unterschied ist zwar subtil, aber beim Erstellen einer governancebezogenen I
 
 Cloudwächter beginnen mit der Nutzung von anspruchsvolleren Governanceansätzen, um die Plattformbereitstellung zu beschleunigen und Teams beim eigenständigen Erfüllen ihrer Anforderungen an die Umgebung zu unterstützen, damit sie schneller vorankommen. Beispiele für diese anspruchsvolleren Funktionen sind in den inkrementellen Verbesserungen des Governance-MVP enthalten, z. B. in der [Verbesserung der Sicherheitsbaseline](../govern/guides/complex/security-baseline-improvement.md).
 
-**Cloudbeschleuniger:** Cloudwächter und Cloudverwalter nutzen auf natürliche Weise Skripts und Automatisierungen, mit denen die Bereitstellung von Umgebungen, Plattformen oder auch Komponenten verschiedener Anwendungen beschleunigt wird. Die Aufbereitung und Freigabe dieser Skripts zusätzlich zu den zentralen Governanceaufgaben verschafft diesen Architekten viel Respekt im gesamten IT-Bereich.
+**Cloudbeschleuniger:** Cloudwächter und Cloudverwalter nutzen normalerweise Skripts und automatisierte Prozesse, die die Bereitstellung von Umgebungen, Plattformen oder auch Komponenten verschiedener Anwendungen beschleunigen. Die Aufbereitung und Freigabe dieser Skripts zusätzlich zu den zentralen Governanceaufgaben verschafft diesen Architekten viel Respekt im gesamten IT-Bereich.
 
 Diese Governancefachleute, die ihre aufbereiteten Skripts offen zur Verfügung stellen, sorgen dafür, dass Technologieprojekte schneller bereitgestellt werden können und die Governance in die Architektur der Workloads eingebettet wird. Durch diesen Einfluss auf die Workload und die Unterstützung guter Entwurfsmuster werden Cloudbeschleuniger auf eine höhere Ebene der Governancespezialisten gehoben.
 

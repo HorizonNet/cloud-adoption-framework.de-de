@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 90eed8109627298c8e6a044eff3333154bb17f1d
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 8c30f859d90e2fca26fbcd6c70db3c662d56b8a1
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092579"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353645"
 ---
 # <a name="azure-fundamental-concepts"></a>Grundlegende Konzepte in Azure
 
@@ -94,7 +94,7 @@ Die folgenden Ressourcen bieten detaillierte Informationen über die Konzepte, d
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nun, da Sie die grundlegenden Azure-Konzepte kennen, geht es als Nächstes um das [Skalieren mit mehreren Azure-Abonnements](../azure-best-practices/scaling-subscriptions.md).
+Nun, da Sie die grundlegenden Azure-Konzepte kennen, geht es als Nächstes um das [Skalieren mit mehreren Azure-Abonnements](../azure-best-practices/scale-subscriptions.md).
 
 > [!div class="nextstepaction"]
-> [Skalieren mit mehreren Azure-Abonnements](../azure-best-practices/scaling-subscriptions.md)
+> [Skalieren mit mehreren Azure-Abonnements](../azure-best-practices/scale-subscriptions.md)

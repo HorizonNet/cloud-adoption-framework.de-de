@@ -7,13 +7,15 @@ ms.date: 04/04/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0504148cd9eddce66645891527baa2ac0e98ea17
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 0d7207ce5073d1e3e67e2164774ee0da0eddc784
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311862"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355313"
 ---
+<!-- cSpell:ignore CSPs MSPs -->
+
 # <a name="understand-partnership-options"></a>Verstehen der Optionen für Partnerschaften
 
 Während eines Migrationsprojekts führt das Cloudeinführungsteam die tatsächliche Migration von Workloads zur Cloud aus. Im Gegensatz zu den zusammenarbeitsorientierten Aufgaben zur Problemlösung beim Definieren des [digitalen Eigentums](../../../digital-estate/index.md) oder beim Aufbau der grundlegenden Cloudinfrastruktur besteht die Migration eher aus einer Reihe von Aufgaben, die wiederholt ausgeführt werden müssen. Über die repetitiven Aspekte hinaus handelt es sich wahrscheinlich um Test- und Optimierungsaufgaben, die eine tief greifende Kenntnis des ausgewählten Cloudanbieters erfordern. Diese sich wiederholenden Aufgaben können manchmal am besten von einem Partner ausgeführt werden, um die Belastung der Vollzeitmitarbeiter zu reduzieren. Darüber hinaus sind Partner möglicherweise besser in der Lage, auf technisches Wissen zuzugreifen, wenn bei repetitiven Prozessen Ausführungsanomalien auftreten.
@@ -96,7 +98,7 @@ Microsoft Certified Solution Providers sind darauf spezialisiert, auf der ganzen
 Holen Sie sich Hilfe bei Partnern, die einsatzbereite oder kundenspezifische Azure-Lösungen bieten, sowie Partnern, die Sie bei der Bereitstellung und Verwaltung dieser Lösungen unterstützen:
 
 - **[Cloudlösungspartner finden](https://www.microsoft.com/solution-providers/home)** : Ein zertifizierter CSP unterstützt Sie dabei, das Potenzial der Cloud optimal auszuschöpfen, indem er die geschäftlichen Ziele für eine Einführung der Cloud bewertet, die richtige Cloudlösung zur Erfüllung Ihrer Geschäftsanforderungen ermittelt und Ihrem Unternehmen dabei hilft, agiler und effizienter zu werden.
-- **[Partner für verwaltete Dienste suchen](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca)** : Ein Azure-Partner für verwaltete Dienste (Managed Service Partner, MSP) unterstützt Unternehmen beim Übergang zu Azure und steht ihnen bei allen Aspekten der Cloud Journey mit Rat und Tat zur Seite. Von der Beratung über die Migration bis hin zum Prozessmanagement zeigen Cloud-MSPs Kunden die Vorteile auf, die eine Einführung der Cloud mit sich bringt. Sie sind auch eine zentrale Anlaufstelle für allgemeine Unterstützung, Bereitstellung sowie Fragen zur Abrechnung – all dies mit einem flexiblen Modell mit nutzungsbasierter Bezahlung.
+- **[Partner für verwaltete Dienste suchen](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca)** : Ein Azure-Partner für verwaltete Dienste (Managed Service Partner, MSP) unterstützt Unternehmen beim Übergang zu Azure und steht ihnen bei allen Aspekten der Cloud Journey mit Rat und Tat zur Seite. Von der Beratung über die Migration bis hin zum Prozessmanagement zeigen Cloud-MSPs Kunden die Vorteile auf, die eine Einführung der Cloud mit sich bringt. Sie sind auch eine zentrale Anlaufstelle für allgemeine Unterstützung, Bereitstellung sowie Fragen zur Abrechnung – all dies mit einem flexiblen Modell mit nutzungsbasierter Bezahlung.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

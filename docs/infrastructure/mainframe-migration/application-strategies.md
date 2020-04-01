@@ -7,13 +7,15 @@ ms.date: 12/26/2018
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 52dbbd594a95f86c1bdb49ac76a7b178d8a71b13
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 9390ca37087f463ae547d97caaedbf8376ee2f7b
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171411"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356837"
 ---
+<!-- cSpell:ignore njray nanra Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->
+
 # <a name="mainframe-application-migration"></a>Migration von Mainframeanwendungen
 
 Bei der Migration von Anwendungen aus Mainframe-Umgebungen zu Azure verfolgen die meisten Teams einen pragmatischen Ansatz: Nach Möglichkeit werden die Anwendungen weiterverwendet. Anschließend wird eine Bereitstellung in Phasen gestartet, bei der Anwendungen neu geschrieben oder ersetzt werden.
@@ -30,7 +32,7 @@ Die Anwendungsmigration umfasst üblicherweise eine oder mehrere der folgenden S
 
 - **Ersetzen:** Bei diesem Ansatz wird die Mainframefunktionalität durch entsprechende Features in der Cloud ersetzt. Software-as-a-Service (SaaS) ist eine Möglichkeit, bei der eine speziell für Unternehmensbelange erstellte Lösung verwendet wird, darunter Finanzen, Personalwesen, Fertigung oder Unternehmensressourcenplanung. Darüber hinaus stehen jetzt viele branchenspezifische Apps zur Verfügung, um Probleme zu lösen, die zuvor durch benutzerdefinierte Mainframelösungen gelöst wurden.
 
-Sie sollten als Erstes die Workloads planen, die Sie zuerst migrieren möchten, und dann die Anforderungen für das Verschieben der zugehörigen Anwendungen, älteren Codebases und Datenbanken ermitteln.
+Planen Sie als Erstes die Workloads, die Sie zuerst migrieren möchten, und ermitteln Sie dann die Anforderungen für das Verschieben der zugehörigen Anwendungen, älteren Codebasen und Datenbanken.
 
 ## <a name="mainframe-emulation-in-azure"></a>Mainframe-Emulation in Azure
 
@@ -148,7 +150,7 @@ Die Datenbankmigration umfasst außerdem folgende Komponenten:
 
 ## <a name="optimize-scale-and-throughput-for-azure"></a>Optimieren von Skalierung und Durchsatz für Azure
 
-Allgemein formuliert werden Mainframes zentral hochskaliert, während die Cloud horizontal hochskaliert wird. Um die Skalierung und den Durchsatz von Mainframeanwendungen unter Azure zu optimieren, müssen Sie wissen, wie Mainframes Anwendungen trennen und isolieren können. Ein z/OS-Mainframe verwendet ein Feature namens LPARs (logische Partitionen), um die Ressourcen für eine bestimmte Anwendung auf einer einzelnen Instanz zu isolieren und zu verwalten.
+Allgemein formuliert werden Mainframes hochskaliert, während die Cloud aufskaliert wird. Um die Skalierung und den Durchsatz von Mainframeanwendungen unter Azure zu optimieren, müssen Sie wissen, wie Mainframes Anwendungen trennen und isolieren können. Ein z/OS-Mainframe verwendet ein Feature namens LPARs (logische Partitionen), um die Ressourcen für eine bestimmte Anwendung auf einer einzelnen Instanz zu isolieren und zu verwalten.
 
 Ein Mainframe kann beispielsweise eine logische Partition (LPAR) für eine CICS-Region mit zugeordneten COBOL-Programmen und eine separate LPAR für DB2 verwenden. Zusätzliche LPARs werden häufig für die Entwicklungs-, Test- und Stagingumgebungen eingesetzt.
 

@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: bb278c284a0f72a530eb4b84ecd3137b997933ac
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: fc0c52932b15a0987f78e853c3b3756d27629ae0
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508354"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80353465"
 ---
 <!-- cSpell:ignore CSAT -->
 
@@ -105,3 +105,10 @@ Diese unterschiedlichen Aktivitäten sollten auf zwei oder mehr Cloudeinführung
 **Geringfügige Umgestaltung:** Einige Anwendungen können mit geringfügiger Umgestaltung auf Daten- oder Anwendungsebene aktualisiert werden. Dabei müssen Teammitglieder Daten für cloudbasierte Datenplattformen bereitstellen oder geringfügige Konfigurationsänderungen an der Anwendung vornehmen. Dies erfordert möglicherweise gewisse Unterstützung von fachlichen Ansprechpartnern für Daten- oder Anwendungsentwicklung. Allerdings ähnelt diese Arbeit der, die IT-Implementierer durchführen, wenn sie Drittanbieter-Apps bereitstellen. Diese Arbeit kann problemlos vom Cloudmigrationsteam oder Cloudstrategieteam ausgeführt werden. Diese Aktivität ist zwar nicht annähernd so schnell wie eine Migration mit Zuweisen eines neuen Hosts, benötigt jedoch weniger Zeit als Umgestaltungsaktivitäten.
 
 Während der Migration sollten Aktivitäten wie oben beschrieben in drei Methoden aufgeteilt werden, und diese Aktivitäten werden vom entsprechenden Team in entsprechender Iteration ausgeführt. Obwohl Sie das Portfolio diversifizieren sollten, müssen Sie auch sicherstellen, dass der Aufwand sehr fokussiert und getrennt bleibt.
+
+## <a name="next-steps"></a>Nächste Schritte
+
+Erfahren Sie, wie sich [globale Marktentscheidungen](./global-markets.md) auf Ihre Transformationsjourney auswirken können.
+
+> [!div class="nextstepaction"]
+> [Grundlegendes zu globalen Märkten](./global-markets.md)

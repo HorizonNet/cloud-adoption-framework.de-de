@@ -8,13 +8,15 @@ ms.topic: article
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: ab3ff18d25d8a4e6ee9403236d101f98a9a6dd04
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: cfd554aaa2252e9a7569fd2a56af05c3c40e8163
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092664"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355036"
 ---
+<!-- cSpell:ignore ccoe deprioritize -->
+
 # <a name="cloud-center-of-excellence"></a>Cloudkompetenzzentrum
 
 Die Erzielung von geschäftlicher und technischer Flexibilität ist ein wichtiges Ziel der meisten IT-Organisationen. Ein Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) ist eine Funktion, mit der eine möglichst gute Balance zwischen Geschwindigkeit und Stabilität erreicht werden soll.
@@ -59,7 +61,7 @@ An der Arbeit des Cloudkompetenzzentrums sind vier stark ausgelastete Teams bete
 
 ## <a name="solutions-and-controls"></a>Lösungen und Kontrollen
 
-Jedes Mitglied des Cloudkompetenzzentrums hat die Aufgabe, sich mit den erforderlichen Einschränkungen, Risiken und Schutzmaßnahmen vertraut zu machen, die zu den derzeitigen IT-Kontrollelementen geführt haben. Durch die gemeinsame Arbeit der Teilnehmer des Cloudkompetenzzentrums sollte dieses Wissen zur Implementierung von cloudnativen (oder hybriden) Lösungen oder Kontrollelementen führen, um die gewünschten Self-Service-Ergebnisse für das Unternehmen zu erzielen. Wenn Lösungen erstellt werden, werden sie für verschiedene Teams in Form von Kontrollelementen oder Automatisierungen bereitgestellt, die als Richtlinien für unterschiedliche Maßnahmen dienen. Diese Richtlinien ermöglichen die Steuerung der freien Aktivitäten der einzelnen Teams, während die Zuständigkeiten für unterschiedliche Migrations- und Innovationsmaßnahmen an die Teilnehmer delegiert werden.
+Jedes Mitglied des Cloudkompetenzzentrums hat die Aufgabe, sich mit den erforderlichen Einschränkungen, Risiken und Schutzmaßnahmen vertraut zu machen, die zu den derzeitigen IT-Kontrollelementen geführt haben. Durch die gemeinsame Arbeit der Teilnehmer des Cloudkompetenzzentrums sollte dieses Wissen zur Implementierung von cloudnativen (oder hybriden) Lösungen oder Kontrollelementen führen, um die gewünschten Self-Service-Ergebnisse für das Unternehmen zu erzielen. Wenn Lösungen erstellt werden, werden sie in Form von Kontrollelementen oder automatisierten Prozessen, die als Richtlinien für unterschiedliche Maßnahmen dienen, für verschiedene Teams freigegeben. Diese Richtlinien ermöglichen die Steuerung der freien Aktivitäten der einzelnen Teams, während die Zuständigkeiten für unterschiedliche Migrations- und Innovationsmaßnahmen an die Teilnehmer delegiert werden.
 
 Beispiele für diese Umstellung:
 

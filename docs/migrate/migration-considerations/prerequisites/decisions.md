@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 07856662f95a588f252c78e8a3dd67eba6e8163c
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: d90e1fa73029d87d1f699e1a0651a63368bf3b21
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094069"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80355194"
 ---
 <!-- cSpell:ignore migrateable -->
 
@@ -54,7 +54,7 @@ Bevor Sie Entscheidungen treffen, die langfristige Auswirkungen auf das aktuelle
 
 Bei jeder Migration von bedeutender Größe (über 250 virtuelle Computer) werden Ressourcen mithilfe einer Vielzahl von Übergangsoptionen migriert, die anhand von fünf Rationalisierungsmöglichkeiten erläutert werden: *Zuweisen eines neuen Hosts*, *Umgestalten*, *Umstrukturieren*, *Neuerstellen* und *Ersetzen*.
 
-Einige Workloads werden durch einen Prozess der *Neuerstellung* oder *Umstrukturierung* modernisiert, wodurch modernere Anwendungen mit neuen Funktionen und technischen Möglichkeiten entstellt werden. Andere Ressourcen durchlaufen einen Prozess der *Umgestaltung*, z.B. eine Umstellung auf Container oder andere modernere Hosting- und Betriebsansätze, die sich nicht unbedingt auf die Codebasis der Lösungen auswirken. Im Allgemeinen durchlaufen virtuelle Computer und andere Ressourcen, die gut etabliert sind, einen Prozess zum *Zuweisen eines neuen Hosts*, bei dem diese Ressourcen vom Rechenzentrum in die Cloud übergehen. Einige Workloads könnten möglicherweise in die Cloud migriert werden, sollten aber stattdessen durch dienstbasierte (SaaS-basierte) Clouddienste *ersetzt* werden, die derselben Geschäftsanforderung entsprechen, z. B. durch Verwendung von Office 365 als Alternative zur Migration von Exchange Server-Instanzen.
+Einige Workloads werden durch einen Prozess der *Neuerstellung* oder *Umstrukturierung* modernisiert, wodurch modernere Anwendungen mit neuen Funktionen und technischen Möglichkeiten entstellt werden. Andere Ressourcen durchlaufen einen Prozess der *Umgestaltung*, z. B. eine Umstellung auf Container oder andere modernere Hosting- und Betriebsansätze, die sich nicht unbedingt auf die Codebasis der Lösungen auswirken. Im Allgemeinen durchlaufen virtuelle Computer und andere Ressourcen, die gut etabliert sind, einen Prozess zum *Zuweisen eines neuen Hosts*, bei dem diese Ressourcen vom Rechenzentrum in die Cloud übergehen. Einige Workloads könnten möglicherweise in die Cloud migriert werden, sollten aber stattdessen durch dienstbasierte (SaaS-basierte) Clouddienste *ersetzt* werden, die derselben Geschäftsanforderung entsprechen, z. B. durch Verwendung von Office 365 als Alternative zur Migration von Exchange Server-Instanzen.
 
 In den meisten Szenarien erzeugt ein Geschäftsereignis eine zwingende Funktion, die dazu führt, dass ein hoher Prozentsatz der Ressourcen vorübergehend mithilfe des Prozesses zum *Zuweisen eines neuen Hosts* migriert wird, gefolgt von einem bedeutenderen sekundären Übergang mithilfe einer der anderen Migrationsstrategien, nachdem sie sich in der Cloud befinden. Dieser Prozess wird häufig als ein *Übergang in die Cloud* bezeichnet.
 

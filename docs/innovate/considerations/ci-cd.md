@@ -7,13 +7,15 @@ ms.date: 10/17/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 59ef9ad61c9e3545fbcdbd62e05711e20de38a29
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 9b355fa346373d1fcca069e2e47e23d1ee3a86b2
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223477"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356756"
 ---
+<!-- cSpell:ignore deprioritize -->
+
 # <a name="empower-adoption"></a>Unterstützen der Einführung
 
 Der ultimative Test der Innovation ist die Reaktion des Kunden auf Ihre Erfindung. Hat sich die Hypothese als wahr erwiesen? Verwenden Kunden die Lösung? Wird sie den Anforderungen des gewünschten Prozentsatzes von Benutzern gerecht? Das Wichtigste: Kommen sie wieder? Alle diese Fragen können erst nach der Bereitstellung der MVP-Lösung (Minimum Viable Product) gestellt werden. In diesem Artikel konzentrieren wir uns auf die Disziplin der Unterstützung der Einführung.
@@ -43,7 +45,7 @@ Um technische Spitzen zu minimieren, setzen Sie voraus, dass die Reife in den ei
 
 Wie unter [Messen der Auswirkungen für Kunden](./measure.md) beschrieben, erfordert die positive Validierung jeder Hypothese Iterationen und Entschlossenheit. Während eines beliebigen Innovationszyklus werden Sie weit mehr Niederlagen als Siege erleben. Dies entspricht dem erwarteten Verhalten. Wenn jedoch Kundenanforderung, Hypothese und Lösung bedarfsabhängig ausgerichtet werden, ändert sich die Welt rasch.
 
-Zum Skalieren von Innovationen finden Sie kein wertvolleres Tool als eine freigegebene Codebasis für die Lösung. Leider gibt es keine zuverlässige Möglichkeit, vorherzusagen, mit welcher Iteration oder welchem MVP die gewinnende Kombination erzielt wird. Daher ist es nie zu früh, eine freigegebene Codebasis oder ein Repository einzurichten. Dies ist die einzige [technische Spitze](./build.md#reduce-complexity-and-delay-technical-spikes), die nie verzögert werden sollte. Wenn das Team verschiedene MVP-Lösungen durchläuft, ermöglicht ein freigegebenes Repository mühelose Zusammenarbeit und beschleunigte Entwicklung. Wenn Änderungen der Lösung Lernmetriken beeinträchtigen, können Sie mit der Versionskontrolle ein Rollback auf eine frühere, effektivere Version der Lösung durchführen.
+Zum Skalieren von Innovationen gibt es kein wertvolleres Tool als eine freigegebene Codebasis für die Lösung. Leider gibt es keine zuverlässige Möglichkeit, vorherzusagen, mit welcher Iteration oder welchem MVP die gewinnende Kombination erzielt wird. Daher ist es nie zu früh, eine freigegebene Codebasis oder ein Repository einzurichten. Dies ist die einzige [technische Spitze](./build.md#reduce-complexity-and-delay-technical-spikes), die nie verzögert werden sollte. Wenn das Team verschiedene MVP-Lösungen durchläuft, ermöglicht ein freigegebenes Repository mühelose Zusammenarbeit und beschleunigte Entwicklung. Wenn Änderungen der Lösung Lernmetriken beeinträchtigen, können Sie mit der Versionskontrolle ein Rollback auf eine frühere, effektivere Version der Lösung durchführen.
 
 Das gängigste Tool für die Verwaltung von Coderepositorys ist [GitHub](https://guides.github.com). Damit lässt sich in wenigen Schritten ein gemeinsam genutztes Coderepository erstellen. Außerdem kann das Feature [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) von Azure DevOps zum Erstellen eines [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git)- oder [Team Foundation](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc)-Repositorys verwendet werden.
 

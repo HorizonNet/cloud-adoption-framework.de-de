@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e38616b97f5026bd66de510cac12932290e276ba
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: aa544540c0bebb001f9256527a5f0ba388801c3c
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093271"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80354803"
 ---
 # <a name="review-rationalization-decisions"></a>Überprüfen der Rationalisierungsentscheidungen
 
@@ -68,7 +68,7 @@ Bei umfangreichen und komplexen Einführungsplänen mit mehreren verschiedenen P
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-[Definieren von Iterationen und Releases](./iteration-paths.md), um mit der Planungsarbeit zu beginnen.
+[Einrichten von Iterationen und Freigabeplänen](./iteration-paths.md), um mit der Planungsarbeit zu beginnen
 
 > [!div class="nextstepaction"]
-> [Definieren von Iterationen und Releases](./iteration-paths.md), um mit der Planungsarbeit zu beginnen.
+> [Einrichten von Iterationen und Freigabeplänen](./iteration-paths.md), um mit der Planungsarbeit zu beginnen
