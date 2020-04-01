@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 36a12a676a9bb48584c9914f93642b1ccbcad406
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 28cc70af615aa8df17ad7b4047f23b0df324b2db
+ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79311624"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80356276"
 ---
 <!-- cSpell:ignore contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME azuredevopsmigration validateonly -->
 
@@ -37,7 +37,7 @@ Das Cloudteam von Contoso hat sich folgende Ziele für die Migration zu Azure De
 - Arbeitselementdaten und der Verlauf für das letzte Jahr müssen migriert werden.
 - Neue Benutzernamen und Kennwörter sollen nicht eingerichtet werden müssen. Alle aktuellen Systemzuweisungen müssen beibehalten werden.
 - Für die Quellcodeverwaltung soll eine Umstellung von der Team Foundation-Versionskontrolle (Team Foundation Version Control, TFVC) auf Git durchgeführt werden.
-- Der Übergang zu Git stellt eine „abgespeckte Migration“ dar, bei der nur die neueste Version des Quellcodes importiert wird. Sie wird während einer Ausfallzeit durchgeführt, in der alle Aufgaben bei der Migration der Codebasis angehalten werden. Allen Beteiligten ist bewusst, dass nur der aktuelle Masterbranchverlauf nach der Migration zur Verfügung steht.
+- Der Übergang zu Git stellt eine „abgespeckte Migration“ dar, bei der nur die neueste Version des Quellcodes importiert wird. Sie wird während einer Downtime durchgeführt, in der alle Aufgaben bei der Migration der Codebasis angehalten werden. Allen Beteiligten ist bewusst, dass nur der aktuelle Masterbranchverlauf nach der Migration zur Verfügung steht.
 - Die Teammitglieder machen sich Sorgen über die Änderung und möchten vor einer vollständigen Migration Tests durchführen. Sie möchten auch nach dem Umstieg auf Azure DevOps Services weiterhin auf TFS zugreifen können.
 - Sie verfügen über mehrere Sammlungen und möchten mit einer Sammlung beginnen, die nur wenige Projekte enthält, um den Prozess besser zu verstehen.
 - Es ist ihnen bewusst, dass TFS-Sammlungen in einem direkten Verhältnis zu Azure DevOps Services-Organisationen stehen, sodass sie über mehrere URLs verfügen. Dies entspricht jedoch ihrem aktuellen Modell einer Trennung von Codebasen und Projekten.
