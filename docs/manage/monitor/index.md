@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 1cb25ad399c790a3dfbdd6c55119a50165f36196
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 21afe87618a4c00103fa1d2f9c6321c2ca03da2e
+ms.sourcegitcommit: f068ebc73b56f81f91773a963c5fc8fd2221a148
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80426055"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80606573"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>Leitfaden zur Cloudüberwachung: Einführung
 
@@ -31,9 +31,9 @@ IT-Teams nutzen allerdings häufig lieber die Tools, in die bereits beträchtlic
 
 Das Ziel dieses Leitfadens ist die Bereitstellung einer detaillierten Referenz, die IT-Abteilungsleitern von Unternehmen, geschäftlichen Entscheidungsträgern, Anwendungsarchitekten und Anwendungsentwicklern folgende Aspekte nahebringen soll:
 
-* Azure-Überwachungsplattformen mit einer Übersicht und einem Vergleich ihrer Funktionen.
-* Die am besten geeignete Lösung für die Überwachung von hybriden und privaten Workloads sowie nativen Azure-Workloads.
-* Der empfohlene Ansatz für eine gemeinsame End-to-End-Überwachung von Infrastruktur und Anwendungen. Hierzu gehören praktikable Lösungen für eine Migration dieser gängigen Workloads zu Azure.
+- Azure-Überwachungsplattformen mit einer Übersicht und einem Vergleich ihrer Funktionen.
+- Die am besten geeignete Lösung für die Überwachung von hybriden und privaten Workloads sowie nativen Azure-Workloads.
+- Der empfohlene Ansatz für eine gemeinsame End-to-End-Überwachung von Infrastruktur und Anwendungen. Hierzu gehören praktikable Lösungen für eine Migration dieser gängigen Workloads zu Azure.
 
 Dieser Leitfaden ist keine Anleitung zur Verwendung oder Konfiguration einzelner Azure-Dienste und -Lösungen, er verweist jedoch auf solche Quellen, wenn diese zutreffend oder verfügbar sind. Nach dem Lesen dieses Leitfadens wissen Sie, wie eine Workload unter Verwendung der bewährten Methoden und Muster ordnungsgemäß betrieben wird.
 
@@ -47,21 +47,21 @@ Dieser Leitfaden eignet sich insbesondere für Unternehmensadministratoren, Team
 
 Dieser Artikel ist Teil einer Serie. Die folgenden Artikel sollten zusammenhängend und in der richtigen Reihenfolge gelesen werden:
 
-* Einführung (dieser Artikel)
-* [Monitoring strategy for cloud deployment models](./cloud-models-monitor-overview.md) (Überwachungsstrategie für Cloudbereitstellungsmodelle)
-* [Erfassen der richtigen Daten](./data-collection.md)
-* [Warnungen](./alerting.md)
+- Einführung (dieser Artikel)
+- [Monitoring strategy for cloud deployment models](./cloud-models-monitor-overview.md) (Überwachungsstrategie für Cloudbereitstellungsmodelle)
+- [Erfassen der richtigen Daten](./data-collection.md)
+- [Warnungen](./alerting.md)
 
 ## <a name="products-and-services"></a>Produkte und Dienste
 
 Für die Überwachung und Verwaltung einer Vielzahl von Ressourcen, die in Azure, Ihrem Unternehmensnetzwerk oder von anderen Cloudanbietern gehostet werden, stehen einige Softwarelösungen und Dienste zur Verfügung. Sie lauten wie folgt:
 
-* System Center Operations Manager
-* Azure Monitor – enthält jetzt auch Log Analytics und Application Insights
-* Azure Policy und Azure Blueprints
-* Azure-Automatisierung
-* Azure Logic Apps
-* Azure Event Hubs
+- System Center Operations Manager
+- Azure Monitor – enthält jetzt auch Log Analytics und Application Insights
+- Azure Policy und Azure Blueprints
+- Azure-Automatisierung
+- Azure Logic Apps
+- Azure Event Hubs
 
 Diese erste Version des Leitfadens behandelt unsere aktuellen Überwachungsplattformen: Azure Monitor und System Center Operations Manager. Außerdem beschreibt er die empfohlene Strategie für die Überwachung der einzelnen Cloudbereitstellungsmodelle. Der Leitfaden enthält außerdem die ersten Überwachungsempfehlungen, beginnend mit Datensammlung und Warnungen.
 
