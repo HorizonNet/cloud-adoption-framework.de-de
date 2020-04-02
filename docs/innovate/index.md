@@ -8,12 +8,12 @@ ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 layout: LandingPage
-ms.openlocfilehash: 7374a531192ed140c8aa76d0e74e3817e34626db
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: d23c97ab3d1bc5c25617792d53f147654eb33daa
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80427422"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527614"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Cloudinnovationen im Cloud Adoption Framework
 
@@ -59,7 +59,7 @@ Ermitteln Sie vor dem Treffen einer Entscheidung in Bezug auf technische Lösung
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Azure-Innovationsleitfaden</h3>
-Azure umfasst eine Reihe von Cloudtools, mit denen die Bereitstellung innovativer Lösungen beschleunigt werden kann. Je nach Ihrer Zielsetzung kann es sein, dass Sie verschiedene Kombinationen von Tools erwägen. Wir empfehlen Ihnen, ein „minimal überlebensfähiges Produkt“ (Minimum Viable Product, MVP) zu erstellen, das nur die grundlegenden Tools aufweist.
+Azure umfasst Cloudtools, mit denen die Bereitstellung innovativer Lösungen beschleunigt werden kann. Je nach Ihrer Zielsetzung kann es sein, dass Sie verschiedene Kombinationen von Tools erwägen. Wir empfehlen Ihnen, ein „minimal überlebensfähiges Produkt“ (Minimum Viable Product, MVP) zu erstellen, das nur die grundlegenden Tools aufweist.
                         </div>
                     </div>
                 </div>

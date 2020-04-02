@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b9e39f4f0c86239c3c1d249fdb08dbce2c9f4daa
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: a04208a147d2cf9f50b30f8053b49367fa08aabe
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80429437"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527677"
 ---
 # <a name="validate-assessment-assumptions-before-migration"></a>Validierung von Bewertungsannahmen vor der Migration
 

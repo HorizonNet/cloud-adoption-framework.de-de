@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
 layout: LandingPage
-ms.openlocfilehash: 353cf2effa8158634f93299c504bd3c069b5d11b
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: de34df16a5c709ac5cffbdb355f70c60c8a18c25
+ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093728"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527697"
 ---
 # <a name="manage-organizational-alignment"></a>Verwalten der Organisationsausrichtung
 
@@ -77,7 +77,7 @@ Machen Sie sich mit den für die Einführung und den Betrieb der Cloud erforderl
                         </div>
                         <div class="cardText" style="padding-left:0px;">
                             <h3>Einrichten von Teams</h3>
-Legen Sie die Teams fest, die verschiedene Cloudfunktionen bereitstellen sollen. Eine Reihe von Optionen für bewährte Methoden sind als Referenz aufgeführt.
+Legen Sie die Teams fest, die verschiedene Cloudfunktionen bereitstellen sollen. Mehrere Optionen für bewährte Methoden sind als Referenz aufgeführt.
                         </div>
                     </div>
                 </div>
