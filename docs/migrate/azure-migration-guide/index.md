@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e0cb1779836edce3571a081ae44794aeb8bc06b8
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 4ef888e26089a2262fadeb93ec33ed063bcbf753
+ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80432982"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80636504"
 ---
 # <a name="azure-migration-guide-before-you-start"></a>Leitfaden zur Azure-Migration: Vorbereitung
 
@@ -55,7 +55,7 @@ Während die in diesem Leitfaden behandelten Tools eine Vielzahl von Migrationss
 - Die Abhängigkeitszuordnung der zu migrierenden Komponenten ist einfach zu definieren.
 - Ihre Branche verfügt über minimale gesetzliche Anforderungen, die für diese Migration relevant sind.
 
-Wenn eine dieser Bedingungen nicht auf Ihre Situation zutrifft, sollten Sie stattdessen den [Leitfaden zum erweiterten Umfang](../expanded-scope/index.md) berücksichtigen. Außerdem empfehlen wir Ihnen, Unterstützung von einem unserer Microsoft-Teams oder -Partner anzufordern, um Migrationen durchzuführen, die den Leitfaden zum erweiterten Umfang erfordern. Kunden, die mit Microsoft oder zertifizierten Partnern zusammenarbeiten, sind in diesen Szenarien erfolgreicher. Weitere Informationen zur Anforderung von Unterstützung finden Sie in diesem Leitfaden.
+Wenn eine dieser Bedingungen nicht auf Ihre Situation zutrifft, sollten Sie stattdessen die [bewährten Methoden für die Cloudmigration](../azure-best-practices/index.md) berücksichtigen. Außerdem empfehlen wir Ihnen, Unterstützung von einem unserer Microsoft-Teams oder -Partner anzufordern, um komplexere Migrationen durchzuführen. Kunden, die mit Microsoft oder zertifizierten Partnern zusammenarbeiten, sind in diesen Szenarien erfolgreicher. Weitere Informationen zur Anforderung von Unterstützung finden Sie in diesem Leitfaden.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -63,6 +63,6 @@ Wenn eine dieser Bedingungen nicht auf Ihre Situation zutrifft, sollten Sie stat
 
 Weitere Informationen finden Sie unter
 
-- [Leitfaden zum erweiterten Umfang](../expanded-scope/index.md)
+- [Bewährte Methoden für die Cloudmigration](../azure-best-practices/index.md)
 
 ::: zone-end

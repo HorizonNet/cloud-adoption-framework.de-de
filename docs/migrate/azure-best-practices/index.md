@@ -7,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 22f2718775b194196f65672f0cbc1712d0a3a4ac
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: a7affd1d64e80cfdf85504ed62960de78a4a34a5
+ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433547"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80636383"
 ---
 # <a name="best-practices-for-cloud-migration"></a>Bewährte Methoden für die Cloudmigration
 
 Die [Leitfaden zur Azure-Migration](../azure-migration-guide/index.md) im Framework für die Cloudeinführung ist der empfohlene Ausgangspunkt, wenn Sie an der Migration zu Azure interessiert sind. Dieser Leitfaden führt Sie durch eine Reihe von Tools und grundlegenden Ansätzen für die Migration virtueller Computer in die Cloud. In diesem Abschnitt des Frameworks für die Cloudeinführung werden viele bewährte Methoden behandelt, die über die grundlegenden cloudbasierten Tools hinausgehen.
 
-## <a name="cloud-migration-best-practice-checklist"></a>Bewährte Methoden für die Cloudmigration
+## <a name="cloud-migration-best-practices-checklist"></a>Prüfliste mit bewährten Methoden für die Cloudmigration
 
 Die folgende Checkliste beschreibt die allgemeinen Komplexitätsbereiche, die eine Erweiterung des Umfangs der Migration über den [Leitfaden zur Azure-Migration](../azure-migration-guide/index.md) hinaus erfordern könnten.
 
