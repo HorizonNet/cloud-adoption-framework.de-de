@@ -4,15 +4,15 @@ description: Verwenden Sie das Cloud Adoption Framework für Azure, um zu erfahr
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8d9297534f04b6656b584fa82d565e9119599f26
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 4ffd05a17466d0ca61605de5080b54316de78e4d
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354693"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80433964"
 ---
 # <a name="define-and-prioritize-workloads-for-a-cloud-adoption-plan"></a>Definieren und Priorisieren von Workloads für einen Cloudeinführungsplan
 
@@ -76,7 +76,7 @@ Nachdem die anfänglichen Prioritäten definiert und die Workloads dem Plan hinz
 | Unternehmensteams | Welche Unternehmensteams werden von geschäftlichen Änderungen betroffen sein? |         |
 | Beteiligte im Unternehmen | Gibt es Führungskräfte, deren Bereich von Änderungen betroffen sein wird? |         |
 | Geschäftsergebnisse | Wie wird das Unternehmen den Erfolg dieser Maßnahme messen? |         |
-| Metriken | Welche Metriken werden zum Nachverfolgen des Erfolgs verwendet? |         |
+| metrics | Welche Metriken werden zum Nachverfolgen des Erfolgs verwendet? |         |
 | Kompatibilität | Gibt es Complianceanforderungen von Drittanbietern für diese Workload? |         |
 | Anwendungsbesitzer | Wer ist verantwortlich für die geschäftlichen Auswirkungen von Anwendungen, die dieser Workload zugeordnet sind? |         |
 | Vom Unternehmen ausgeschlossene Zeiträume | Lässt das Unternehmen zu bestimmten Zeiten keine Änderung zu? |         |

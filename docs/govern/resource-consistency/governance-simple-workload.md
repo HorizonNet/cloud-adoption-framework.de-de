@@ -4,16 +4,16 @@ description: Hier erfahren Sie, wie Sie in Azure ein Ressourcengovernancemodell 
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: efdca4c5848e8815166fd2ddf308d40ae62f75a1
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: f7a9f455c302c6cbdee843f04a8d1b48f56940a1
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223730"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80809032"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>Governance-Entwurf für eine einfache Workload
 
@@ -29,7 +29,7 @@ In der grundlegenden Einführungsphase besteht das Ziel darin, eine einfache Wor
 Bevor Sie damit beginnen, das Governancemodell zu entwerfen, ist es wichtig, dass Sie sich mit der Azure-Lizenzierung vertraut machen. Der Grund ist, dass die Administratorkonten, die Ihrer Azure-Lizenz zugeordnet sind, über die höchste Zugriffsebene auf Ihre Azure-Ressourcen verfügen. Diese Administratorkonten bilden die Grundlage Ihres Governance-Modells.
 
 > [!NOTE]
-> Wenn Ihre Organisation über ein vorhandenes [Microsoft Enterprise Agreement](https://www.microsoft.com/licensing/licensing-programs/enterprise.aspx) verfügt, in dem Azure nicht enthalten ist, kann Azure hinzugefügt werden, indem Sie vorab eine Zahlungsverpflichtung eingehen. Weitere Informationen finden Sie unter [Lizenzierung von Azure für das Unternehmen](https://azure.microsoft.com/pricing/enterprise-agreement).
+> Wenn Ihre Organisation über ein vorhandenes [Microsoft Enterprise Agreement](https://www.microsoft.com/licensing/licensing-programs/enterprise) verfügt, in dem Azure nicht enthalten ist, kann Azure hinzugefügt werden, indem Sie vorab eine Zahlungsverpflichtung eingehen. Weitere Informationen finden Sie unter [Lizenzierung von Azure für das Unternehmen](https://azure.microsoft.com/pricing/enterprise-agreement).
 
 Als Azure dem Enterprise Agreement Ihrer Organisation hinzugefügt wurde, wurde Ihre Organisation aufgefordert, ein **Azure-Konto** zu erstellen. Bei der Erstellung des Kontos wurden ein **Azure-Kontobesitzer** und ein Azure Active Directory-Mandant (Azure AD) mit einem Konto vom Typ **Globaler Administrator** erstellt. Ein Azure AD-Mandant ist ein logisches Konstrukt, das eine sichere, dedizierte Instanz von Azure AD darstellt.
 
@@ -102,7 +102,7 @@ Der **Workloadbesitzer** erbt die Rolle „Besitzer“ für den Ressourcenbereic
 
 Kommen wir zur Implementierung des zuvor entworfenen Governance-Modells.
 
-Ihre Organisation benötigt ein Azure-Konto, um beginnen zu können. Wenn Ihre Organisation über ein vorhandenes [Microsoft Enterprise Agreement](https://www.microsoft.com/licensing/licensing-programs/enterprise.aspx) verfügt, in dem Azure nicht enthalten ist, kann Azure hinzugefügt werden, indem Sie vorab eine Zahlungsverpflichtung eingehen. Weitere Informationen finden Sie unter [Lizenzierung von Azure für das Unternehmen](https://azure.microsoft.com/pricing/enterprise-agreement).
+Ihre Organisation benötigt ein Azure-Konto, um beginnen zu können. Wenn Ihre Organisation über ein vorhandenes [Microsoft Enterprise Agreement](https://www.microsoft.com/licensing/licensing-programs/enterprise) verfügt, in dem Azure nicht enthalten ist, kann Azure hinzugefügt werden, indem Sie vorab eine Zahlungsverpflichtung eingehen. Weitere Informationen finden Sie unter [Lizenzierung von Azure für das Unternehmen](https://azure.microsoft.com/pricing/enterprise-agreement).
 
 Beim Erstellen Ihres Azure-Kontos geben Sie eine Person in Ihrer Organisation als Azure-**Kontobesitzer** an. Anschließend wird standardmäßig ein Azure AD-Mandant (Azure Active Directory) erstellt. Ihr Azure-**Kontobesitzer** muss die [Erstellung des Benutzerkontos](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory) für die Person in Ihrer Organisation durchführen, die als **Workloadbesitzer** fungiert.
 

@@ -4,22 +4,22 @@ description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adopti
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9d50e40ba5877eab0f2aa904f2bcc1e984c309ca
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 5af612501dd2fb8bb73ada0e9dfcd4f3ee784e35
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223881"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80433523"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>Metriken, Indikatoren und Risikotoleranz für die Identitätsbaseline
 
 Dieser Artikel unterstützt Sie bei der Quantifizierung der Geschäftsrisikotoleranz im Zusammenhang mit der Identitätsbaseline. Das Definieren von Metriken und Indikatoren ermöglicht das Erstellen eines Geschäftsszenarios, mit dem Sie in die Weiterentwicklung der Disziplin „Identitätsbaseline“ investieren können.
 
-## <a name="metrics"></a>Metriken
+## <a name="metrics"></a>metrics
 
 Die Identitätsbaseline legt den Schwerpunkt auf das Identifizieren, Authentifizieren und Autorisieren von Personen, Benutzergruppen oder automatisierten Prozessen und bietet ihnen den entsprechenden Zugriff auf Ressourcen in Ihren Cloudbereitstellungen. Im Rahmen der Risikoanalyse sollten Sie Daten zu Ihren Identitätsdiensten sammeln, um zu ermitteln, welches Risiko vorliegt und wie wichtig Investitionen in die Governance der Identitätsbaseline für Ihre geplanten Cloudbereitstellungen ist.
 

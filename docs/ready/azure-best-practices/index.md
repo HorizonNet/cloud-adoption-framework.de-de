@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 9d14209da7c18a2ba8279977e3c860a3dd1d0589
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 107764931a6188f6976c5cfb8af0f74082c21e2b
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80433955"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997787"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Bewährte Methoden für die Azure-Bereitschaft
 
@@ -35,7 +35,7 @@ Bereiten Sie Ihre Cloudnetzwerkinfrastruktur auf die Unterstützung Ihrer Worklo
 
 - [Netzwerkentscheidungen](../considerations/networking-options.md). Hier erfahren Sie, welche Netzwerkdienste, -tools und -architekturen am besten für die Workload-, Governance- und Konnektivitätsanforderungen Ihrer Organisation geeignet sind.
 - [Planen virtueller Netzwerke](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Planen Sie virtuelle Netzwerke basierend auf Ihren Anforderungen in Bezug auf Isolierung, Verbindung und Standort.
-- [Bewährte Methoden für die Netzwerksicherheit](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Hier finden Sie bewährte Methoden für den Umgang mit allgemeinen Netzwerksicherheitsproblemen unter Verwendung integrierter Azure-Funktionen.
+- [Bewährte Methoden für die Netzwerksicherheit](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Hier finden Sie bewährte Methoden für den Umgang mit allgemeinen Netzwerksicherheitsproblemen unter Verwendung integrierter Azure-Funktionen.
 - [Umkreisnetzwerke](./perimeter-networks.md). Sorgen Sie für sichere Konnektivität zwischen Ihren Cloudnetzwerken und Ihren lokalen oder physischen Datencenternetzwerken (sowie für Internetkonnektivität).
 - [Hub-and-Spoke-Netzwerktopologie.](./hub-spoke-network-topology.md) Verwalten Sie allgemeine Kommunikations- oder Sicherheitsanforderungen für komplizierte Workloads, und beheben Sie mögliche Einschränkungen des Azure-Abonnements.
 
@@ -43,7 +43,7 @@ Bereiten Sie Ihre Cloudnetzwerkinfrastruktur auf die Unterstützung Ihrer Worklo
 
 Entwerfen Sie Ihre Identitäts- und Zugriffssteuerungsinfrastruktur, um die Sicherheit und Verwaltungseffizienz Ihrer Workloads zu optimieren.
 
-- [Azure-Identitätsverwaltung und Sicherheit der Zugriffssteuerung – Bewährte Methoden](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Hier werden einige bewährte Methoden zur Identitätsverwaltung und Zugriffssteuerung mit integrierten Azure-Funktionen beschrieben.
+- [Azure-Identitätsverwaltung und Sicherheit der Zugriffssteuerung – Bewährte Methoden](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Hier werden einige bewährte Methoden zur Identitätsverwaltung und Zugriffssteuerung mit integrierten Azure-Funktionen beschrieben.
 - [Best Practices für die rollenbasierte Zugriffssteuerung](../considerations/roles.md). Ermöglichen Sie eine präzise gruppenbasierte Zugriffsverwaltung für Ressourcen, deren Struktur auf Benutzerrollen basiert.
 - [Schützen des privilegierten Zugriffs für hybride und Cloudbereitstellungen in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-admin-roles-secure?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Stellen Sie sicher, dass der Administratorzugriff und privilegierte Konten Ihrer Organisation sowohl in der Cloudumgebung als auch in der lokalen Umgebung sicher sind.
 

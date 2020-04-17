@@ -4,15 +4,15 @@ description: Verwenden Sie das Framework für die Cloudeinführung für Azure, u
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 73373e5cc56ef7e5804151171a22ad9f541f1cd3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: bb95c03b392017fb866fdfe929fffc317e4e67b0
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094692"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80809099"
 ---
 # <a name="guest-configuration-policy"></a>Gastkonfigurationsrichtlinie
 
@@ -27,7 +27,7 @@ Get-AzPolicySetDefinition | where-object {$_.Properties.metadata.category -eq "G
 > [!NOTE]
 > Die Funktionalität der Gastkonfiguration wird regelmäßig aktualisiert, um zusätzliche Richtliniensätze zu unterstützen. Überprüfen Sie regelmäßig auf neue unterstützte Richtlinien und bewerten Sie, ob sie nützlich sind.
 
-<!-- TODO: Update these links when available. 
+<!-- TODOBACKLOG: Update these links when available. 
 
 By default, we recommend that you enable the following policies:
 

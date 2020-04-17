@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 75a0212628c41f82ceccd198c87e69d430b74258
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 5e2549c252b8fddf6cd549215704300a764f4040
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707423"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997261"
 ---
 # <a name="security-baseline-discipline-overview"></a>Übersicht über die Disziplin „Sicherheitsbaseline“
 
@@ -25,7 +25,7 @@ ms.locfileid: "77707423"
 
 In diesem Artikel wird der Ansatz zur Entwicklung einer Disziplin „Sicherheitsbaseline“ als Teil Ihrer Cloud Governance-Strategie beschrieben. Die Hauptzielgruppe für diesen Leitfaden sind die Cloudarchitekten Ihrer Organisation und andere Mitglieder Ihres Cloudgovernanceteams. Die Entscheidungen, Richtlinien und Prozesse, die sich aus dieser Disziplin ergeben, sollten jedoch die Einbeziehung von und Diskussion mit relevanten Mitgliedern Ihrer IT- und Sicherheitsteams beinhalten, insbesondere der technischen Führungskräfte, die für die Implementierung von Netzwerk-, Verschlüsselungs- und Identitätsdiensten verantwortlich sind.
 
-Die richtigen Sicherheitsentscheidungen zu treffen, ist entscheidend für den Erfolg Ihrer Cloudbereitstellungen und größeren Geschäftserfolg. Wenn Ihre Organisation nicht über internes Fachwissen im Bereich Cybersicherheit verfügt, können Sie externe Sicherheitsberater als Bestandteil dieser Disziplin einbeziehen. Sie können auch [Microsoft Consulting Services](https://www.microsoft.com/enterprise/services), den Cloudeinführungsdienst [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) oder andere externe Experten für die Cloudeinführung einbeziehen, um Probleme im Zusammenhang mit dieser Disziplin zu besprechen.
+Die richtigen Sicherheitsentscheidungen zu treffen, ist entscheidend für den Erfolg Ihrer Cloudbereitstellungen und größeren Geschäftserfolg. Wenn Ihre Organisation nicht über internes Fachwissen im Bereich Cybersicherheit verfügt, können Sie externe Sicherheitsberater als Bestandteil dieser Disziplin einbeziehen. Sie können auch [Microsoft Consulting Services](https://www.microsoft.com/industry/services/consulting), den Cloudeinführungsdienst [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) oder andere externe Experten für die Cloudeinführung einbeziehen, um Probleme im Zusammenhang mit dieser Disziplin zu besprechen.
 
 ## <a name="policy-statements"></a>Richtlinienanweisungen
 

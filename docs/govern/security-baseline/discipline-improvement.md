@@ -4,16 +4,16 @@ description: Machen Sie sich mit den potenziellen Aufgaben eines Unternehmens ve
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0d5f2e2c1032c77ceb56b187aa9f2bcee02262eb
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 234136b777107c93e7ea26b9a183c1ec34b75e24
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707389"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120104"
 ---
 # <a name="security-baseline-discipline-improvement"></a>Verbesserung der Disziplin „Sicherheitsbaseline“
 
@@ -46,13 +46,13 @@ Diese Entwicklungsphase der Governance überbrückt die Lücke zwischen Geschäf
 - Definieren Sie ein Datenklassifizierungsschema.
 - Führen Sie einen Planungsprozess für digitalen Bestand durch, um die aktuellen IT-Ressourcen zu inventarisieren, die Ihren Geschäftsprozessen und unterstützenden Vorgängen zugrunde liegen.
 - Führen Sie eine [Richtlinienüberprüfung](../../govern/policy-compliance/cloud-policy-review.md) durch, um den Prozess der Modernisierung bestehender IT-Sicherheitsrichtlinien des Unternehmens einzuleiten, und definieren Sie MVP-Richtlinien für bekannte Risiken.
-- Überprüfen Sie die Sicherheitsrichtlinien für Ihre Cloudplattform. Die entsprechenden Angaben für Azure finden Sie auf der [Microsoft Service Trust Platform](https://www.microsoft.com/trustcenter/stp/default.aspx).
-- Bestimmen Sie, ob Ihre Richtlinie für die Sicherheitsbaseline einen [Security Development Lifecycle](https://www.microsoft.com/securityengineering/sdl) beinhaltet.
+- Überprüfen Sie die Sicherheitsrichtlinien für Ihre Cloudplattform. Die entsprechenden Angaben für Azure finden Sie auf der [Microsoft Service Trust Platform](https://servicetrust.microsoft.com).
+- Bestimmen Sie, ob Ihre Richtlinie für die Sicherheitsbaseline einen [Security Development Lifecycle](https://www.microsoft.com/en-us/securityengineering/sdl) beinhaltet.
 - Bewerten Sie Geschäftsrisiken in Bezug auf Netzwerk, Daten und Ressourcen auf der Grundlage der nächsten ein bis drei Releases, und bemessen Sie die Toleranz Ihres Unternehmens gegenüber diesen Risiken.
 - Lesen Sie den Bericht zu den [wichtigsten Trends bei der Cybersicherheit](https://www.microsoft.com/security/operations/security-intelligence-report) von Microsoft, um einen Überblick über die aktuelle Sicherheitslandschaft zu erhalten.
 - Ziehen Sie die Entwicklung einer Rolle vom Typ [Sicherheits-DevOps](https://www.microsoft.com/en-us/securityengineering/devsecops) in Ihrer Organisation in Betracht.
 
-<!-- "en-us" location is required for the URL above. -->
+<!-- "en-us" location is required for the URLs above. -->
 
 ## <a name="build-and-predeployment"></a>Erstellung und Aktivitäten vor der Bereitstellung
 
@@ -119,5 +119,5 @@ Nachdem Sie nun das Konzept von Cloud-Sicherheitsgovernance verstanden haben, er
 
 > [!div class="nextstepaction"]
 > [Informationen zum Sicherheitsleitfaden für Azure](./azure-security-guidance.md)
-> [Einführung in Azure Security](https://docs.microsoft.com/azure/security/azure-security)
+> [Einführung in Azure Security](https://docs.microsoft.com/azure/security/fundamentals/overview)
 > [Informationen zur Protokollierung, Berichterstellung und Überwachung](../../decision-guides/logging-and-reporting/index.md)

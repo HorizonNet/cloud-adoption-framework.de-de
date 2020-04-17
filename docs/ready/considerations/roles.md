@@ -4,24 +4,24 @@ description: Es wird beschrieben, wie Sie die Aufgaben innerhalb Ihres Teams tre
 author: rotycenh
 ms.author: brblanch
 ms.date: 11/28/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: BrianBlanchard
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: c4777f062725a74a98233bfe6851180d70bdfbf8
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: e52840d52e85cfa5876fbeaf227963953560da0d
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092445"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997923"
 ---
 # <a name="role-based-access-control"></a>Rollenbasierte Zugriffssteuerung
 
 Gruppenbasierte Zugriffsrechte und Berechtigungen haben sich als eine bewährte Methode erwiesen. Der Umgang mit Gruppen anstelle von einzelnen Benutzern vereinfacht die Wartung von Zugriffsrichtlinien, bietet eine einheitliche teamübergreifende Zugriffsverwaltung und reduziert Konfigurationsfehler. Das Zuweisen und Entfernen von Benutzern zu und aus den entsprechenden Gruppen erleichtert die Aktualisierung der Berechtigungen von bestimmten Benutzern. Die [rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview) in Azure ermöglicht eine präzise Zugriffsverwaltung für Ressourcen, deren Struktur auf Benutzerrollen basiert.
 
-Einen Überblick über die empfohlenen RBAC-Methoden als Teil einer Identitäts- und Sicherheitsstrategie finden Sie unter [Verwenden der rollenbasierten Zugriffssteuerung](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices#use-role-based-access-control).
+Einen Überblick über die empfohlenen RBAC-Methoden als Teil einer Identitäts- und Sicherheitsstrategie finden Sie unter [Verwenden der rollenbasierten Zugriffssteuerung](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices#use-role-based-access-control).
 
 ## <a name="overview-of-role-based-access-control"></a>Übersicht über die rollenbasierte Zugriffssteuerung
 
@@ -38,7 +38,7 @@ Verwenden Sie bei der Planung Ihrer Zugriffssteuerungsstrategie ein Modell mit d
 ![Vorgeschlagenes Muster für die Verwendung von RBAC](../../_images/azure-best-practices/rbac-least-privilege.png)
 
 > [!NOTE]
-> Je spezifischer oder detaillierter die Berechtigungen sind, die Sie definieren, desto wahrscheinlicher werden Ihre Zugriffssteuerungen komplex und schwer zu verwalten sein. Dies trifft vor allem dann zu, wenn die Größe Ihrer Cloudumgebung zunimmt. Vermeiden Sie ressourcenspezifische Berechtigungen. Verwenden Sie statt dessen [Verwaltungsgruppen](https://docs.microsoft.com/azure/governance/management-groups) für unternehmensweite Zugriffssteuerung und [Ressourcengruppen](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) für Zugriffssteuerungen innerhalb von Abonnements. Vermeiden Sie auch benutzerspezifische Berechtigungen. Weisen Sie stattdessen [Gruppen in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups) Zugriffsberechtigungen zu.
+> Je spezifischer oder detaillierter die Berechtigungen sind, die Sie definieren, desto wahrscheinlicher werden Ihre Zugriffssteuerungen komplex und schwer zu verwalten sein. Dies trifft vor allem dann zu, wenn die Größe Ihrer Cloudumgebung zunimmt. Vermeiden Sie ressourcenspezifische Berechtigungen. Verwenden Sie statt dessen [Verwaltungsgruppen](https://docs.microsoft.com/azure/governance/management-groups) für unternehmensweite Zugriffssteuerung und [Ressourcengruppen](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#resource-groups) für Zugriffssteuerungen innerhalb von Abonnements. Vermeiden Sie auch benutzerspezifische Berechtigungen. Weisen Sie stattdessen [Gruppen in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups) Zugriffsberechtigungen zu.
 
 ## <a name="use-built-in-rbac-roles"></a>Verwenden integrierter RBAC-Rollen
 

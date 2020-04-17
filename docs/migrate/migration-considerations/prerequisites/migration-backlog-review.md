@@ -4,15 +4,15 @@ description: Verwenden Sie das Framework für die Cloudeinführung für Azure, u
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9bdf568c7f2a04273d2fec0b385c9abb2dfcbf79
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 229f640fed7024b35f67ea3b39c2e4bb2a24a3c2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094062"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80428980"
 ---
 # <a name="migration-backlog-review"></a>Überprüfen des Migrationsbacklogs
 
