@@ -4,17 +4,17 @@ description: Verwenden Sie das Framework für die Cloudeinführung für Azure, u
 author: tvuylsteke
 ms.author: kfollis
 ms.date: 09/27/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 89de72cb85cc4c763d443ae9cc1114b648ab72c4
-ms.sourcegitcommit: 011332538dbc6774b732f7b9f2b89d6c8aa90c36
+ms.openlocfilehash: 4dea8b186d2c37f614be364c605144a744479990
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79024074"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80433205"
 ---
 <!-- cSpell:ignore tvuylsteke >
 

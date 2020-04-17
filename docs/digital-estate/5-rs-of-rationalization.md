@@ -4,16 +4,16 @@ description: Hier finden Sie Informationen zur Cloudrationalisierung. Dabei hand
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/16/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 74a384cd3bf5688979a848423e0740ff15f08a34
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 6a6ebbfc94dbe3b3fe031210f55f51635228013f
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170153"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80431065"
 ---
 # <a name="cloud-rationalization"></a>Cloudrationalisierung
 

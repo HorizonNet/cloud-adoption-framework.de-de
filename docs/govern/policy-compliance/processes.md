@@ -4,16 +4,16 @@ description: Entwickeln Sie eine Strategie sowie Prozesse, die die Konformität 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 760015fc72cd893cb14dd39d9a9b3078d304da97
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: b7bdcd96786a232ef810794cf93546275a9603b0
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709463"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80430809"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -80,7 +80,7 @@ Einige Beispiele für Auslöser und Aktionen bei Verstößen:
 |-----------------------------|----------------|---------------|
 | Cost Management | Monatliche Cloudausgaben sind um mehr als 20 % höher als erwartet. | Benachrichtigung des Leiters der Abrechnungsabteilung, der eine Überprüfung der Ressourcennutzung beginnt. |
 | Sicherheitsbaseline | Erkennung verdächtiger Benutzeraktivitäten. | Benachrichtigung des IT-Sicherheitsteams und Deaktivierung des verdächtigen Benutzerkontos. |
-| Ressourcenkonsistenz | Die CPU-Auslastung für eine Workload übersteigt 90 %. | Benachrichtigung des IT-Betriebsteam und horizontales Hochskalieren mit zusätzlichen Ressourcen zum Verarbeiten der Last. |
+| Ressourcenkonsistenz | Die CPU-Auslastung für eine Workload übersteigt 90 %. | Benachrichtigung des IT-Betriebsteam und Aufskalieren mit zusätzlichen Ressourcen zum Verarbeiten der Last. |
 
 ## <a name="automation-of-monitoring-and-compliance"></a>Automatisierung der Überwachung und Einhaltung
 

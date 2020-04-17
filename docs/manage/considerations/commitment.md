@@ -4,15 +4,15 @@ description: Berechnen Sie die zukünftigen Erträge der Klassifizierung und die
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9a16131436da5543eefd34afd8eafe6bb8a473d5
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 4c86c6c079cb19497b7c0f19e8b8fa9166226780
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312705"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997148"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Die geschäftliche Verpflichtung in der Cloudverwaltung
 
@@ -57,7 +57,7 @@ Die Betriebsverwaltungsbaseline dient als Ausgangspunkt, der in jedem der folgen
 
 In einer herkömmlichen lokalen Umgebung werden die Kosten für die Verwaltung der Umgebung häufig als versunkene Kosten des IT-Betriebs angesetzt. In der Cloud ist die Verwaltung eine gezielte Entscheidung mit direkten Auswirkungen auf das Budget. Die Kosten der einzelnen Verwaltungsfunktionen können den einzelnen in der Cloud ausgeführten Workloads direkter zugeordnet werden. Dieser Ansatz ermöglicht eine bessere Kontrolle, stellt jedoch an Cloudbetriebsteams und Cloudstrategieteams die Anforderung, zunächst eine Verpflichtung zu einer Vereinbarung über Zuständigkeiten einzugehen.
 
-Organisationen können auch entscheiden, [einige ihrer laufenden Verwaltungsfunktionen an einen Dienstanbieter auszulagern](https://www.microsoft.com/cloud-adoption-framework-offers?ot=manage). Diese Dienstanbieter können Organisationen mit [Azure Lighthouse](https://azure.com/lighthouse) ermöglichen, den Zugriff auf ihre Ressourcen genauer zu steuern sowie einen umfassenderen Einblick in die von den Dienstanbietern ausgeführten Aktionen zu erhalten.
+Organisationen können auch entscheiden, [einige ihrer laufenden Verwaltungsfunktionen an einen Dienstanbieter auszulagern](https://aka.ms/adopt/partneroffers). Diese Dienstanbieter können Organisationen mit [Azure Lighthouse](https://azure.microsoft.com/services/azure-lighthouse) ermöglichen, den Zugriff auf ihre Ressourcen genauer zu steuern sowie einen umfassenderen Einblick in die von den Dienstanbietern ausgeführten Aktionen zu erhalten.
 
 - **Delegierte Verantwortung:** Da es nicht erforderlich ist, zu zentralisieren und einen Mehraufwand für die Betriebsverwaltung vorauszusetzen, erwägen die IT-Abteilungen vieler Organisationen neue Ansätze. Ein gängiger Ansatz wird als _Delegierte Verantwortung_ bezeichnet. In einem Cloudkompetenzzentrum-Modell bieten Plattformvorgänge und Plattformautomatisierung Self-Service-Verwaltungstools, die unabhängig von einem zentralen IT-Betriebsteam von unternehmensgeführten Betriebsteams genutzt werden können. Dieser Ansatz ermöglicht den Beteiligten im Unternehmen eine umfassende Kontrolle verwaltungsrelevanter Budgets. Außerdem kann das Cloudkompetenzzentrum (CCoE) so sicherstellen, dass ein minimaler Satz von Schutzmaßnahmen ordnungsgemäß implementiert wird. In diesem Modell fungiert die IT als Broker und Führer, um dem Unternehmen zu helfen, vernünftige Entscheidungen zu treffen. Geschäftsvorgänge überwachen tägliche Vorgänge abhängiger Workloads.
 

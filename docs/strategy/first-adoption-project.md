@@ -4,15 +4,15 @@ description: Verwenden Sie das Framework für die Cloudeinführung für Azure, u
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 5/19/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 063fc4074a7b5972b6b2938abdcb90937412e832
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 86acc05f9eaf38193db6c0f1ad1c708ed810c7be
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353545"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396020"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -46,7 +46,7 @@ Beim ersten Einführungsprojekt Ihres Teams wird wahrscheinlich eine Art Produkt
 
 Zur Unterstützung der obigen Kriterien enthält diese Liste ein Beispiel für ein erstes Projekt für jede Kategorie von Beweggründen:
 
-- **Wichtige Unternehmensereignisse:** Wenn ein wichtiges Unternehmensereignis der primäre Beweggrund ist, könnte die Implementierung eines Tools wie [Azure Site Recovery](../migrate/azure-migration-guide/migrate.md?tabs=Tools#azure-site-recovery) ein gutes erstes Projekt sein. Während der Migration können Sie dieses Tool zur schnellen Migration von Rechenzentrumsressourcen verwenden. Im ersten Projekt könnten Sie es jedoch ausschließlich als reines Tool für die Notfallwiederherstellung einsetzen, um die Abhängigkeit von Notfallwiederherstellungsressourcen im Rechenzentrum zu reduzieren.
+- **Wichtige Unternehmensereignisse:** Wenn ein wichtiges Unternehmensereignis der primäre Beweggrund ist, könnte die Implementierung eines Tools wie [Azure Site Recovery](../migrate/azure-migration-guide/migrate.md#azure-site-recovery) ein gutes erstes Projekt sein. Während der Migration können Sie dieses Tool zur schnellen Migration von Rechenzentrumsressourcen verwenden. Im ersten Projekt könnten Sie es jedoch ausschließlich als reines Tool für die Notfallwiederherstellung einsetzen, um die Abhängigkeit von Notfallwiederherstellungsressourcen im Rechenzentrum zu reduzieren.
 
 - **Beweggründe für Migration:** Wenn eine Migration der primäre Beweggrund ist, ist es ratsam, mit der Migration einer unkritischen Workload zu beginnen. Für die Migration Ihrer ersten Workload können der [Leitfaden für die Azure-Einrichtung](../ready/azure-setup-guide/index.md) und der [Leitfaden zur Azure-Migration](../migrate/azure-migration-guide/index.md) als Anleitung herangezogen werden.
 

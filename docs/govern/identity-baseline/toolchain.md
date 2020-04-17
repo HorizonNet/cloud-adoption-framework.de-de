@@ -4,16 +4,16 @@ description: Hier erfahren Sie, wie native Azure-Tools zur Weiterentwicklung von
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0aa9525a42e62012e1aa5913d9f806cc2a40e2f0
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 368d2811bb54ef373be8df036d96452023891b83
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709395"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80434954"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Tools für Identitätsbaseline in Azure
 
@@ -46,7 +46,7 @@ Wenn Sie diese Methode wählen, übernimmt Azure AD die Anmeldung für Benutzer.
 
 Wenn Sie diese Methode wählen, übergibt Azure AD den Authentifizierungsprozess zur Validierung des Benutzerkennworts an ein separates vertrauenswürdiges Authentifizierungssystem, z. B. an eine lokale Instanz der Active Directory-Verbunddienste (AD FS) oder einen vertrauenswürdigen Drittanbieter von Verbunddiensten.
 
-Der Artikel [Auswählen der richtigen Authentifizierungsmethode für Azure Active Directory](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) enthält eine Entscheidungsstruktur, die Ihnen bei der Auswahl der besten Lösung für Ihr Unternehmen hilft.
+Der Artikel [Auswählen der richtigen Authentifizierungsmethode für Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) enthält eine Entscheidungsstruktur, die Ihnen bei der Auswahl der besten Lösung für Ihr Unternehmen hilft.
 
 Im Folgenden finden Sie eine Tabelle der nativen Tools, die bei der Verfeinerung der Richtlinien und Prozesse beitragen können, die diese Governancedisziplin unterstützen.
 

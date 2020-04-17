@@ -4,17 +4,17 @@ description: Hier erfahren Sie mehr über Sicherheits- und Verwaltungsmethoden, 
 author: matticusau
 ms.author: mlavery
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: ec67108e90fb367535298ba7fab3b8ac32705255
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: 7e9dd472d2913979211959d1f230bf4fb9c33cba
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78222485"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80432935"
 ---
 <!-- markdownlint-disable MD024 MD025 DOCSMD001 -->
 
@@ -46,7 +46,7 @@ Azure Monitor maximiert die Verfügbarkeit und Leistung Ihrer Anwendungen durch 
 
 ::: zone-end
 
-# <a name="azure-service-health"></a>[Azure Service Health](#tab/servicehealth)
+# <a name="azure-service-health"></a>[Azure Service Health](#tab/serviceHealth)
 
 Azure Service Health bietet personalisierte Anleitungen und Unterstützung, wenn Sie von Problemen bei den Azure-Diensten betroffen sind. Dieser Dienst kann Sie benachrichtigen, die Auswirkungen von Problemen verdeutlichen und Sie über die Lösung eines Problem auf dem Laufenden halten. Er kann Sie auch bei der Vorbereitung auf geplante Wartungsmaßnahmen und Änderungen unterstützen, die sich u.U. auf die Verfügbarkeit Ihrer Ressourcen auswirken.
 
@@ -149,7 +149,7 @@ Azure Backup ist der Azure-basierte Dienst, den Sie zum Sichern (bzw. Schützen)
 
 ::: zone-end
 
-# <a name="azure-site-recovery"></a>[Azure Site Recovery](#tab/siterecovery)
+# <a name="azure-site-recovery"></a>[Azure Site Recovery](#tab/siteRecovery)
 
 Weiter oben in diesem Leitfaden wurde beschrieben, wie Azure Site Recovery als Teil der Migrationsausführung verwendet werden kann. Azure Site Recovery stellt jedoch auch nach Abschluss der Migration eine wichtige Komponente in Ihrer Notfallwiederherstellungsstrategie dar.
 

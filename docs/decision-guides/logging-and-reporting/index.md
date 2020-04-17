@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: deb432528c541fa17b9849d4c2b587740d7e36dd
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: fd6f0e42408934bad1b6f45b92bda0f4a9d47e65
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434908"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80996330"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Protokollierung und Berichterstellung
 
@@ -118,8 +118,8 @@ Die Unterstützung der Protokollierung mehrerer Clouds erfordert oft den Einsatz
 
 - Eine einheitliche Plattform für das Sammeln von App-Telemetriedaten, Host-Telemetriedaten (wie z.B. VMs), Containermetriken, Azure-Plattformmetriken und Ereignisprotokollen.
 - Visualisierung, Abfragen, Warnungen und Analysetools. Der Dienst kann Einblicke in virtuelle Computer, Gastbetriebssysteme, virtuelle Netzwerke und workloadbezogene Anwendungsereignisse liefern.
-- [REST-APIs](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-rest-api-walkthrough) für die Integration in externe Dienste und die Automatisierung von Überwachungs- und Benachrichtigungsdiensten.
-- [Integration](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-partners) in zahlreiche beliebte Dienste von Drittanbietern.
+- [REST-APIs](https://docs.microsoft.com/azure/azure-monitor/platform/rest-api-walkthrough) für die Integration in externe Dienste und die Automatisierung von Überwachungs- und Benachrichtigungsdiensten.
+- [Integration](https://docs.microsoft.com/azure/azure-monitor/platform/partners) in zahlreiche beliebte Dienste von Drittanbietern.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

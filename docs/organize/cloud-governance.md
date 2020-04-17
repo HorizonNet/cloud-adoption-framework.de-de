@@ -4,16 +4,16 @@ description: Verwenden Sie das Framework für die Cloudeinführung für Azure, u
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: be9d5e49fe4c03335fc28636616f97812d1d2312
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: cd6e80330f0de1108ded7a0e57e49c54380fb59b
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354999"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80428639"
 ---
 # <a name="cloud-governance-capabilities"></a>Funktionen für Cloudgovernance
 

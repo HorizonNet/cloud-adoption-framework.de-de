@@ -4,16 +4,16 @@ description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adopti
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4222639ddb82da88cc95600ad2c6731b541f9f35
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 9e0a64a2f0b2c1c9a948c142a28fca0c9d534804
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77708137"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997332"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>Beispiele für Richtlinienanweisungen der Ressourcenkonsistenz
 
@@ -38,7 +38,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine Geschä
   - Environment
 - Mit Governancetools muss die Kennzeichnung (Tagging) im Hinblick auf Kosten, Kritikalität, SLA, Anwendung und Umgebung überprüft werden. Alle Werte müssen sich an vordefinierten Werten ausrichten, die vom Governance-Team verwaltet werden.
 
-**Potenzielle Entwurfsoptionen:** In Azure werden für die meisten Ressourcentypen [Standardmetadatentags der Form „Name-Wert“](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags) unterstützt. [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) wird verwendet, um bestimmte Tags im Rahmen der Erstellung von Ressourcen zu erzwingen.
+**Potenzielle Entwurfsoptionen:** In Azure werden für die meisten Ressourcentypen [Standardmetadatentags der Form „Name-Wert“](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources) unterstützt. [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) wird verwendet, um bestimmte Tags im Rahmen der Erstellung von Ressourcen zu erzwingen.
 
 ## <a name="ungoverned-subscriptions"></a>Ungeregelte Abonnements
 

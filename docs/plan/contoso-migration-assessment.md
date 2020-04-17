@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 5b70980d1c8f27f286aaf1173970e2edd26f60e0
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: b91652ac2dd06882551c6e9474d5c0e0574deda2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508422"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80889733"
 ---
-<!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL CONTOSODC contosohost vcenter prereqs ctypes ctypeslib smarthotelapp -->
+<!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc OSTICKETWEB OSTICKETMYSQL smarthotelapp ctypes ctypeslib prereqs -->
 
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Bewerten lokaler Workloads für die Migration zu Azure
 
@@ -145,6 +145,7 @@ Hier ist angegeben, wie Contoso die Bewertung durchführt:
 Contoso kann jetzt eine Bewertung durchführen, um seine lokale SQL Server-Datenbank für die App SmartHotel360 zu analysieren.
 
 1. Im Datenmigrations-Assistenten wählt Contoso **Neu** > **Bewertung** aus und vergibt für die Bewertung dann einen Projektnamen.
+
 2. Für **Quellservertyp** wählt Contoso **SQL Server** und für **Zielservertyp** wählt Contoso **SQL Server auf virtuellen Azure-Computern**
 
     ![Datenmigrations-Assistent – Auswählen der Quelle](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-1.png)
@@ -153,7 +154,9 @@ Contoso kann jetzt eine Bewertung durchführen, um seine lokale SQL Server-Daten
     > Derzeit unterstützt der Datenmigrations-Assistent die Bewertung für die Migration einer verwalteten Azure SQL-Datenbank-Instanz nicht. Als Problemumgehung verwendet Contoso SQL Server auf einer Azure-VM als angenommenes Ziel für die Bewertung.
 
 3. Unter **Zielversion auswählen** wählt Contoso „SQL Server 2017“ als Zielversion aus. Contoso muss diese Version auswählen, weil sie von der verwalteten SQL-Datenbank-Instanz verwendet wird.
+
 4. Contoso wählt Berichte aus, um Informationen zur Kompatibilität und zu neuen Features zu erhalten:
+
     - Unter **Kompatibilitätsprobleme** werden Informationen zu Änderungen angezeigt, die die Migration ggf. verhindern oder für die vor der Migration eine kleinere Anpassung erforderlich ist. Mit diesem Bericht erhält Contoso Informationen zu allen derzeit verwendeten Features, die als veraltet eingestuft wurden. Die Probleme sind nach Kompatibilitätsgrad angegeben.
     - Unter **Empfehlung zu neuen Features** werden Informationen zu neuen Features auf der SQL Server-Zielplattform angezeigt, die nach der Migration für die Datenbank verwendet werden können. Empfehlungen zu neuen Features befinden sich unter den Überschriften **Leistung**, **Sicherheit** und **Speicher**.
 
@@ -164,6 +167,7 @@ Contoso kann jetzt eine Bewertung durchführen, um seine lokale SQL Server-Daten
     ![Datenmigrations-Assistent – Mit Server verbinden](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-3.png)
 
 6. Unter **Quelle hinzufügen** fügt Contoso die Datenbank hinzu, die bewertet werden soll, und wählt dann **Weiter**, um die Bewertung zu starten.
+
 7. Die Bewertung wird erstellt.
 
     ![Datenmigrations-Assistent – Erstellen der Bewertung](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-4.png)
@@ -274,15 +278,15 @@ Vor der Bereitstellung der VM überprüft Contoso, ob die OVA-Datei sicher ist:
 
 1. Auf dem Computer, auf dem die Datei heruntergeladen wurde, öffnet Contoso ein Eingabeaufforderungsfenster mit Administratorrechten.
 
-1. Contoso führt den folgenden Befehl aus, um den Hash für die OVA-Datei zu generieren:
+2. Contoso führt den folgenden Befehl aus, um den Hash für die OVA-Datei zu generieren:
 
     `C:\>CertUtil -HashFile <file_location> [Hashing Algorithm]`
 
     **Beispiel:**
 
-    `C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256`
+    ```C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256```
 
-1. Der generierte Hash sollte mit den Hashwerten übereinstimmen, die im Abschnitt [Überprüfen der Sicherheit](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security) des Tutorials [Bewerten von virtuellen VMware-Computern für die Migration](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware) aufgeführt sind.
+3. Der generierte Hash sollte mit den Hashwerten übereinstimmen, die im Abschnitt [Überprüfen der Sicherheit](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security) des Tutorials [Bewerten von virtuellen VMware-Computern für die Migration](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware) aufgeführt sind.
 
 ### <a name="create-the-collector-appliance"></a>Erstellen der Collectorappliance
 
@@ -292,15 +296,15 @@ Jetzt kann Contoso die heruntergeladene Datei auf die vCenter Server-Instanz imp
 
     ![vSphere-Webclient – Bereitstellen der OVF-Vorlage](../migrate/azure-best-practices/media/contoso-migration-assessment/vcenter-wizard.png)
 
-1. Im Assistenten für die Bereitstellung der OVF-Vorlage wählt Contoso die Option **Quelle** und gibt dann den Speicherort der OVA-Datei an.
+2. Im Assistenten für die Bereitstellung der OVF-Vorlage wählt Contoso die Option **Quelle** und gibt dann den Speicherort der OVA-Datei an.
 
-1. Unter **Name and Location** (Name und Speicherort) gibt Contoso einen Anzeigenamen für die Collector-VM an. Anschließend wählt das Unternehmen den Bestandsspeicherort aus, unter dem die VM gehostet werden soll. Außerdem gibt Contoso den Host bzw. den Cluster an, auf bzw. in dem die Collectorappliance ausgeführt werden soll.
+3. Unter **Name and Location** (Name und Speicherort) gibt Contoso einen Anzeigenamen für die Collector-VM an. Anschließend wählt das Unternehmen den Bestandsspeicherort aus, unter dem die VM gehostet werden soll. Außerdem gibt Contoso den Host bzw. den Cluster an, auf bzw. in dem die Collectorappliance ausgeführt werden soll.
 
-1. Unter **Speicher** gibt Contoso den Speicherort an. Unter **Datenträgerformat** wählt Contoso aus, wie der Speicher bereitgestellt werden soll.
+4. Unter **Speicher** gibt Contoso den Speicherort an. Unter **Datenträgerformat** wählt Contoso aus, wie der Speicher bereitgestellt werden soll.
 
-1. Unter **Netzwerkzuordnung** gibt Contoso das Netzwerk an, über das die Collector-VM verbunden werden soll. Das Netzwerk benötigt Internetkonnektivität, um Metadaten an Azure zu senden.
+5. Unter **Netzwerkzuordnung** gibt Contoso das Netzwerk an, über das die Collector-VM verbunden werden soll. Das Netzwerk benötigt Internetkonnektivität, um Metadaten an Azure zu senden.
 
-1. Contoso überprüft die Einstellungen und wählt dann **Power on after deployment** > **Finish** (Nach Bereitstellung einschalten > Fertig stellen). Wenn die Appliance erstellt wird, wird eine Meldung mit dem Hinweis angezeigt, dass der Vorgang erfolgreich abgeschlossen wurde.
+6. Contoso überprüft die Einstellungen und wählt dann **Power on after deployment** > **Finish** (Nach Bereitstellung einschalten > Fertig stellen). Wenn die Appliance erstellt wird, wird eine Meldung mit dem Hinweis angezeigt, dass der Vorgang erfolgreich abgeschlossen wurde.
 
 ### <a name="run-the-collector-to-discover-vms"></a>Ausführen des Collectors zum Ermitteln virtueller Computer
 
@@ -308,26 +312,28 @@ Contoso führt jetzt den Collector aus, um VMs zu ermitteln. Derzeit unterstütz
 
 1. In der Konsole des vSphere-Clients wählt Contoso die Option **Konsole öffnen**. Contoso gibt die Einstellungen für das Akzeptieren der Lizenzbedingungen und für Kennwörter für den virtuellen Collectorcomputer an.
 
-1. Contoso wählt auf dem Desktop die Verknüpfung mit dem **Konfigurations-Manager für Microsoft Azure-Appliances** aus.
+2. Contoso wählt auf dem Desktop die Verknüpfung mit dem **Konfigurations-Manager für Microsoft Azure-Appliances** aus.
 
     ![Konsole des vSphere-Clients – Collectorverknüpfung](../migrate/azure-best-practices/media/contoso-migration-assessment/collector-shortcut-v2.png)
 
-1. Im Azure Migrate-Collector wählt Contoso die Option **Erforderliche Komponenten einrichten**. Contoso akzeptiert die Lizenzbedingungen und liest die Drittanbieterinformationen.
+3. Im Azure Migrate-Collector wählt Contoso die Option **Erforderliche Komponenten einrichten**. Contoso akzeptiert die Lizenzbedingungen und liest die Drittanbieterinformationen.
 
-1. Der Collector überprüft, ob die VM über Internetzugriff verfügt, die Uhrzeit synchronisiert ist und der Collectordienst ausgeführt wird. (Der Collectordienst wird standardmäßig auf der VM installiert.) Contoso installiert auch das VMware vSphere-VDDK (Virtual Disk Development Kit).
+4. Der Collector überprüft, ob die VM über Internetzugriff verfügt, die Uhrzeit synchronisiert ist und der Collectordienst ausgeführt wird. (Der Collectordienst wird standardmäßig auf der VM installiert.) Contoso installiert auch das VMware vSphere-VDDK (Virtual Disk Development Kit).
 
     > [!NOTE]
     > Es wird vorausgesetzt, dass die VM über direkten Internetzugriff ohne Proxy verfügt.
 
     ![Azure Migrate-Collector – Überprüfen der erforderlichen Komponenten](../migrate/azure-best-practices/media/contoso-migration-assessment/collector-verify-prereqs-v2.png)
 
-1. Melden Sie sich bei Ihrem **Azure**-Konto an, und wählen Sie das Abonnement- und Migrationsprojekt aus, das Sie zuvor erstellt haben. Geben Sie auch einen Namen für die **Appliance** ein, damit Sie sie im Azure-Portal identifizieren können.
-1. Unter **vCenter Server-Details angeben** gibt Contoso den Namen (FQDN) oder die IP-Adresse der vCenter Server-Instanz und die schreibgeschützten Anmeldeinformationen für die Ermittlung ein.
-1. Contoso wählt einen Bereich für die VM-Ermittlung aus. Der Collector kann nur virtuelle Computer ermitteln, die sich innerhalb des angegebenen Bereichs befinden. Der Bereich kann auf einen bestimmten Ordner, ein Rechenzentrum oder einen Cluster festgelegt werden.
+5. Melden Sie sich bei Ihrem **Azure**-Konto an, und wählen Sie das Abonnement- und Migrationsprojekt aus, das Sie zuvor erstellt haben. Geben Sie auch einen Namen für die **Appliance** ein, damit Sie sie im Azure-Portal identifizieren können.
+
+6. Unter **vCenter Server-Details angeben** gibt Contoso den Namen (FQDN) oder die IP-Adresse der vCenter Server-Instanz und die schreibgeschützten Anmeldeinformationen für die Ermittlung ein.
+
+7. Contoso wählt einen Bereich für die VM-Ermittlung aus. Der Collector kann nur virtuelle Computer ermitteln, die sich innerhalb des angegebenen Bereichs befinden. Der Bereich kann auf einen bestimmten Ordner, ein Rechenzentrum oder einen Cluster festgelegt werden.
 
     ![vCenter Server-Details angeben](../migrate/azure-best-practices/media/contoso-migration-assessment/collector-connect-vcenter.png)
 
-1. Der Collector beginnt nun mit der Ermittlung und Erfassung von Informationen zur Contoso-Umgebung.
+8. Der Collector beginnt nun mit der Ermittlung und Erfassung von Informationen zur Contoso-Umgebung.
 
     ![Sammlungsfortschritt anzeigen](../migrate/azure-best-practices/media/contoso-migration-assessment/migrate-discovery.png)
 
@@ -339,7 +345,7 @@ Nachdem der Collectorvorgang abgeschlossen wurde, überprüft Contoso, ob die VM
 
     ![Azure Migrate – Ermittelte Computer](../migrate/azure-best-practices/media/contoso-migration-assessment/discovery-complete.png)
 
-1. Derzeit sind auf den Computern keine Azure Migrate-Agents installiert. Contoso muss die Agents installieren, um die Abhängigkeiten anzuzeigen.
+2. Derzeit sind auf den Computern keine Azure Migrate-Agents installiert. Contoso muss die Agents installieren, um die Abhängigkeiten anzuzeigen.
 
     ![Azure Migrate – Agent-Installation erforderlich](../migrate/azure-best-practices/media/contoso-migration-assessment/machines-no-agent.png)
 
@@ -357,11 +363,11 @@ Contoso erstellt vor der Installation der Agents eine Momentaufnahme, damit eine
 
 1. Unter **Computer** wählt Contoso den Computer aus. In der Spalte **Abhängigkeiten** wählt Contoso die Option **Installation erforderlich**.
 
-1. Im Bereich **Computer ermitteln** führt Contoso folgende Schritte aus:
+2. Im Bereich **Computer ermitteln** führt Contoso folgende Schritte aus:
     - Der Microsoft Monitoring Agent (MMA) und der Microsoft Dependency-Agent werden für jeden virtuellen Windows-Computer heruntergeladen.
     - Der MMA und der Dependency-Agent werden für jeden virtuellen Linux-Computer heruntergeladen.
 
-1. Contoso kopiert die ID und den Schlüssel des Arbeitsbereichs. Contoso benötigt für die MMA-Installation die Arbeitsbereichs-ID und den zugehörigen Schlüssel.
+3. Contoso kopiert die ID und den Schlüssel des Arbeitsbereichs. Contoso benötigt für die MMA-Installation die Arbeitsbereichs-ID und den zugehörigen Schlüssel.
 
     ![Agent-Download](../migrate/azure-best-practices/media/contoso-migration-assessment/download-agents.png)
 
@@ -373,23 +379,23 @@ Contoso führt die Installation auf jeder VM durch.
 
 1. Contoso doppelklickt auf den heruntergeladenen Agent.
 
-1. Unter **Zielordner** behält Contoso den Standardordner für die Installation bei und wählt dann **Weiter**.
+2. Unter **Zielordner** behält Contoso den Standardordner für die Installation bei und wählt dann **Weiter**.
 
-1. Unter **Agent-Setupoptionen** wählt Contoso **Connect the agent to Azure Log Analytics** (Agent mit Azure Log Analytics verbinden) > **Weiter**.
+3. Unter **Agent-Setupoptionen** wählt Contoso **Connect the agent to Azure Log Analytics** (Agent mit Azure Log Analytics verbinden) > **Weiter**.
 
     ![Microsoft Monitoring Agent-Setup – Agent-Setupoptionen](../migrate/azure-best-practices/media/contoso-migration-assessment/mma-install.png)
 
-1. Unter **Azure Log Analytics** fügt Contoso die Angaben zur Arbeitsbereichs-ID und zum zugehörigen Schlüssel ein, die im Portal kopiert wurden.
+4. Unter **Azure Log Analytics** fügt Contoso die Angaben zur Arbeitsbereichs-ID und zum zugehörigen Schlüssel ein, die im Portal kopiert wurden.
 
     ![Microsoft Monitoring Agent-Setup – Azure Log Analytics](../migrate/azure-best-practices/media/contoso-migration-assessment/mma-install2.png)
 
-1. Unter **Bereit zur Installation** installiert Contoso den MMA.
+5. Unter **Bereit zur Installation** installiert Contoso den MMA.
 
 #### <a name="install-the-dependency-agent-on-windows-vms"></a>Installieren des Abhängigkeits-Agents unter Windows-VMs
 
 1. Contoso doppelklickt auf den heruntergeladenen Dependency-Agent.
 
-1. Contoso akzeptiert die Lizenzbedingungen und wartet, bis die Installation abgeschlossen wurde.
+2. Contoso akzeptiert die Lizenzbedingungen und wartet, bis die Installation abgeschlossen wurde.
 
     ![Einrichtung des Dependency-Agents: Installation](../migrate/azure-best-practices/media/contoso-migration-assessment/dependency-agent.png)
 
@@ -414,7 +420,7 @@ Contoso führt die Installation auf jeder VM durch.
     - Die Arbeitsbereichs-ID und der Primärschlüssel befinden sich im Log Analytics-Arbeitsbereich im Azure-Portal. Wählen Sie **Einstellungen** und dann die Registerkarte **Verbundene Quellen**.
     - Führen Sie die folgenden Befehle aus, um den Log Analytics-Agent herunterzuladen, die Prüfsumme zu überprüfen und den Agent anschließend zu installieren und das Onboarding dafür durchzuführen:
 
-    `wget https://raw.githubusercontent.com/Microsoft/OMS-Agent-for-Linux/master/installer/scripts/onboard_agent.sh && sh onboard_agent.sh -w 6b7fcaff-7efb-4356-ae06-516cacf5e25d -s k7gAMAw5Bk8pFVUTZKmk2lG4eUciswzWfYLDTxGcD8pcyc4oT8c6ZRgsMy3MmsQSHuSOcmBUsCjoRiG2x9A8Mg==`
+        `wget https://raw.githubusercontent.com/Microsoft/OMS-Agent-for-Linux/master/installer/scripts/onboard_agent.sh && sh onboard_agent.sh -w 6b7fcaff-7efb-4356-ae06-516cacf5e25d -s k7gAMAw5Bk8pFVUTZKmk2lG4eUciswzWfYLDTxGcD8pcyc4oT8c6ZRgsMy3MmsQSHuSOcmBUsCjoRiG2x9A8Mg==`
 
 #### <a name="install-the-dependency-agent-on-linux-vms"></a>Installieren des Abhängigkeits-Agents auf Linux-VMs
 
@@ -422,7 +428,7 @@ Nach der MMA-Installation installiert Contoso den Dependency-Agent auf den virtu
 
 1. Der Dependency-Agent wird mithilfe von „InstallDependencyAgent-Linux64.bin“ auf den Linux-Computern installiert. Hierbei handelt es sich um ein Shellskript mit einer selbstextrahierenden Binärdatei. Contoso führt die Datei mit „sh“ aus oder fügt der Datei selbst Ausführungsberechtigungen hinzu.
 
-1. Contoso installiert den Dependency-Agent für Linux als Root-Benutzer:
+2. Contoso installiert den Dependency-Agent für Linux als Root-Benutzer:
 
     `wget --content-disposition https://aka.ms/dependencyagentlinux -O InstallDependencyAgent-Linux64.bin && sudo sh InstallDependencyAgent-Linux64.bin -s`
 
@@ -436,20 +442,20 @@ Contoso kann jetzt die Abhängigkeiten der Computer überprüfen, und eine Grupp
 
     ![Azure Migrate – Anzeigen von Computerabhängigkeiten](../migrate/azure-best-practices/media/contoso-migration-assessment/view-machine-dependencies.png)
 
-1. Für SQLVM werden in der Abhängigkeitsübersicht die folgenden Informationen angezeigt:
+2. Für SQLVM werden in der Abhängigkeitsübersicht die folgenden Informationen angezeigt:
 
     - Prozessgruppen bzw. Prozesse mit aktiven Netzwerkverbindungen auf der SQLVM für den angegebenen Zeitraum (standardmäßig eine Stunde)
     - Eingehende (Client) und ausgehende TCP-Verbindungen (Server) zu bzw. von allen abhängigen Computern.
     - Abhängige Computer mit installierten Azure Migrate-Agents werden als separate Felder angezeigt
     - Für Computer ohne installierte Agents werden Informationen zum Port und zur IP-Adresse angezeigt
 
-1. Für Computer, auf denen der Agent installiert ist (WEBVM), wählt Contoso das Feld für den entsprechenden Computer aus, um weitere Informationen anzuzeigen. Diese Informationen umfassen den FQDN, das Betriebssystem und die MAC-Adresse.
+3. Für Computer, auf denen der Agent installiert ist (WEBVM), wählt Contoso das Feld für den entsprechenden Computer aus, um weitere Informationen anzuzeigen. Diese Informationen umfassen den FQDN, das Betriebssystem und die MAC-Adresse.
 
     ![Azure Migrate – Anzeigen der Gruppenabhängigkeiten](../migrate/azure-best-practices/media/contoso-migration-assessment/sqlvm-dependencies.png)
 
-1. Contoso wählt die VMs aus, die der Gruppe hinzugefügt werden sollen (SQLVM und WEBVM). Contoso hält beim Klicken die Taste `Ctrl` gedrückt, um mehrere virtuelle Computer auszuwählen.
+4. Contoso wählt die VMs aus, die der Gruppe hinzugefügt werden sollen (SQLVM und WEBVM). Contoso hält die STRG-TASTE gedrückt, während es auf mehrere virtuelle Computer klickt, um sie auszuwählen.
 
-1. Contoso wählt **Gruppe erstellen** und gibt dann einen Namen ein (**smarthotelapp**).
+5. Contoso wählt **Gruppe erstellen** und gibt dann einen Namen ein (**smarthotelapp**).
 
     > [!NOTE]
     > Sie können den Zeitbereich erweitern, um detailliertere Abhängigkeiten anzuzeigen. Sie können eine bestimmte Dauer oder das Start- und Enddatum auswählen.
@@ -460,7 +466,7 @@ Contoso kann jetzt die Abhängigkeiten der Computer überprüfen, und eine Grupp
 
     ![Azure Migrate – Erstellen einer Bewertung](../migrate/azure-best-practices/media/contoso-migration-assessment/run-vm-assessment.png)
 
-1. Um die Bewertung anzuzeigen, wählt Contoso **Verwalten** > **Bewertungen**.
+2. Um die Bewertung anzuzeigen, wählt Contoso **Verwalten** > **Bewertungen**.
 
 Contoso verwendet die Standardeinstellungen für Bewertungen, aber Sie können die [Einstellungen auch anpassen](https://docs.microsoft.com/azure/migrate/how-to-modify-assessment).
 

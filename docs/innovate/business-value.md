@@ -4,15 +4,15 @@ description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adopti
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3fe7533ce7bedb03ef466bad65c5a9a7bfc299fc
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: a03abe234773139e291679e986452702e849c33e
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78171207"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997218"
 ---
 # <a name="build-consensus-on-the-business-value-of-innovation"></a>Erzielen eines Konsenses zum Geschäftswert der Cloudinnovation
 
@@ -64,7 +64,7 @@ Es ist ziemlich üblich, dass die Antworten auf die Fragen 1 und 2 falsch ausger
 
 - **Chance: Hypothese**: Es geschieht häufig, dass verschiedene Beteiligte und Entwicklungsteams von einer Lösung zu viel erwarten. Unrealistische Erwartungen können ein Zeichen dafür sein, dass die Hypothese zu ungenau ist. Sehen Sie sich den Leitfaden [Erstellen mit Blick auf die Kundenanforderungen](./considerations/build.md) an, um eine klarere Hypothese zu formulieren.
 - **Chance: Erstellen**: Teams können falsch ausgerichtet sein, weil sie sich auf dem Weg zur Lösung der Kundenanforderungen nicht einig sind. Eine solche Meinungsverschiedenheit deutet typischerweise darauf hin, dass das Team durch eine [vorzeitige technische Herausforderung aufgehalten wird](./considerations/build.md#reduce-complexity-and-delay-technical-spikes). Um die Fokussierung des Teams auf den Kunden sicherzustellen, beginnen Sie mit der ersten Iteration und erstellen ein kleines MVP (Minimum Viable Product), um eine Teil der Hypothese anzugehen. Weitere Informationen dazu, wie Sie das Team unterstützen können, finden Sie unter [Entwickeln digitaler Erfindungen](./considerations/invention.md).
-- **Chance: Schulungen**: Beide Teams können falsch ausgerichtet sein, weil sie umfassende technische Anforderungen und funktionale Voraussetzungen benötigen. Diese Notwendigkeit kann zu einer Möglichkeit zum Training in flexiblen Methoden führen. Wenn die Teamkultur noch nicht für flexible Prozesse bereit ist, kann es schwierig werden, Innovationen zu schaffen und mit dem Markt Schritt zu halten.  Schulungsressourcen zu DevOps und agilen Methoden finden Sie hier:
+- **Chance: Schulungen**: Beide Teams können falsch ausgerichtet sein, weil sie umfassende technische Anforderungen und funktionale Voraussetzungen benötigen. Diese Notwendigkeit kann zu einer Möglichkeit zum Training in flexiblen Methoden führen. Wenn die Teamkultur noch nicht für flexible Prozesse bereit ist, kann es schwierig werden, Innovationen zu schaffen und mit dem Markt Schritt zu halten. Schulungsressourcen zu DevOps und agilen Methoden finden Sie hier:
   - [Weiterentwickeln Ihrer DevOps-Methoden](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices)
   - [Erstellen von Anwendungen mit Azure DevOps](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops)
   - [Bereitstellen von Anwendungen mit Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops)

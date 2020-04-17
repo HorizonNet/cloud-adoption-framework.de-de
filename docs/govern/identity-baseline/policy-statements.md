@@ -4,16 +4,16 @@ description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adopti
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d4c69bafe9bf0dc0bfdb060455c82d3b3a638a47
-ms.sourcegitcommit: 72a280cd7aebc743a7d3634c051f7ae46e4fc9ae
+ms.openlocfilehash: c3543299d323c8be6bf7ee88d6e9205c307e24f9
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78223838"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997436"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>Beispiele für Richtlinienanweisungen der Identitätsbaseline
 
@@ -42,7 +42,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine identit
 - Das Zugriffsmodell der geringsten Rechte wird auf alle Ressourcen angewandt, die für unternehmenskritische Anwendungen oder geschützte Daten verwendet werden.
 - Erhöhte Berechtigungen müssen eine Ausnahme bleiben, und solche Ausnahmen müssen vom Cloudgovernanceteam erfasst werden. Ausnahmen werden regelmäßig überwacht.
 
-**Potenzielle Entwurfsoptionen:** Machen Sie sich mit den [bewährten Methoden für die Azure-Identitätsverwaltung](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices) vertraut, um eine rollenbasierte Zugriffssteuerung (RBAC) zu implementieren, über die der Zugriff basierend auf den Sicherheitsprinzipien [Need-to-Know](https://wikipedia.org/wiki/Need_to_know) und [geringste Rechte](https://wikipedia.org/wiki/Principle_of_least_privilege) beschränkt wird.
+**Potenzielle Entwurfsoptionen:** Machen Sie sich mit den [bewährten Methoden für die Azure-Identitätsverwaltung](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices) vertraut, um eine rollenbasierte Zugriffssteuerung (RBAC) zu implementieren, über die der Zugriff basierend auf den Sicherheitsprinzipien [Need-to-Know](https://wikipedia.org/wiki/Need_to_know) und [geringste Rechte](https://wikipedia.org/wiki/Principle_of_least_privilege) beschränkt wird.
 
 ## <a name="lack-of-shared-management-accounts-between-on-premises-and-the-cloud"></a>Fehlende freigegebene Verwaltungskonten zwischen dem lokalen System und der Cloud
 

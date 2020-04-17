@@ -4,16 +4,16 @@ description: Hier finden Sie Informationen zu Zugriffsverwaltungskonzepten wie A
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 009630e45eec28a12828f7651b353c1a5015ab2b
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: d07d0c000cc80a74c1c604ca03a20145c43cf916
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709446"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997312"
 ---
 # <a name="resource-access-management-in-azure"></a>Ressourcenzugriffsverwaltung in Azure
 
@@ -32,7 +32,7 @@ In Azure bezieht sich der Begriff _Ressource_ auf eine von Azure verwaltete Enti
 
 ## <a name="what-is-an-azure-resource-group"></a>Was ist eine Azure-Ressourcengruppe?
 
-In Azure muss jede Ressource zu einer [Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups) gehören. Eine Ressourcengruppe ist einfach ein logisches Konstrukt, mit dem mehrere Ressourcen gruppiert werden, damit sie gemeinsam als einzelne Entität _auf der Grundlage von Lebenszyklus und Sicherheit_ verwaltet werden können. Beispielsweise können Ressourcen, die über einen ähnlichen Lebenszyklus verfügen, z.B. die Ressourcen für eine [n-schichtige Anwendung](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier), als Gruppe erstellt oder gelöscht werden. Anders ausgedrückt: Alles, was zusammen erstellt, verwaltet und ausgemustert wird, gehört in eine gemeinsame Ressourcengruppe.
+In Azure muss jede Ressource zu einer [Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#resource-groups) gehören. Eine Ressourcengruppe ist einfach ein logisches Konstrukt, mit dem mehrere Ressourcen gruppiert werden, damit sie gemeinsam als einzelne Entität _auf der Grundlage von Lebenszyklus und Sicherheit_ verwaltet werden können. Beispielsweise können Ressourcen, die über einen ähnlichen Lebenszyklus verfügen, z.B. die Ressourcen für eine [n-schichtige Anwendung](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier), als Gruppe erstellt oder gelöscht werden. Anders ausgedrückt: Alles, was zusammen erstellt, verwaltet und ausgemustert wird, gehört in eine gemeinsame Ressourcengruppe.
 
 ![Diagramm einer Ressourcengruppe, die eine Ressource enthält](../../_images/govern/design/governance-1-10.png)
 *Abbildung 2: Eine Ressourcengruppe enthält eine Ressource.*
@@ -58,7 +58,7 @@ In der folgenden Abbildung sind drei Clients dargestellt: [PowerShell](https://d
 ![Diagramm von Azure-Clients, die eine Verbindung mit der Azure Resource Manager-API herstellen](../../_images/govern/design/governance-1-13.png)
 *Abbildung 5: Azure-Clients stellen eine Verbindung mit der Azure Resource Manager-RESTful-API her.*
 
-Diese Clients stellen zwar über die RESTful-API eine Verbindung mit Azure Resource Manager her, aber Azure Resource Manager umfasst keine Funktionen zum direkten Verwalten von Ressourcen. Stattdessen verfügen die meisten Ressourcentypen in Azure über ihren eigenen [Ressourcenanbieter](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#terminology).
+Diese Clients stellen zwar über die RESTful-API eine Verbindung mit Azure Resource Manager her, aber Azure Resource Manager umfasst keine Funktionen zum direkten Verwalten von Ressourcen. Stattdessen verfügen die meisten Ressourcentypen in Azure über ihren eigenen [Ressourcenanbieter](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#terminology).
 
 ![Azure-Ressourcenanbieter](../../_images/govern/design/governance-1-14.png)
 *Abbildung 6: Azure-Ressourcenanbieter.*
@@ -96,7 +96,7 @@ Die nächste Kontrolle umfasst eine Überprüfung, ob die Anforderung gemäß de
 ![Azure-Ressourcenrichtlinie](../../_images/govern/design/governance-1-19.png)
 *Abbildung 11. Azure-Ressourcenrichtlinie*
 
-Mit der nächsten Kontrolle wird sichergestellt, dass für die Anforderung kein [Grenzwert für das Azure-Abonnement](https://docs.microsoft.com/azure/azure-subscription-service-limits) überschritten wird. Beispielsweise gilt für alle Abonnements ein Grenzwert von 980 Ressourcengruppen pro Abonnement. Wenn eine Anforderung zur Bereitstellung einer weiteren Ressourcengruppe eingeht, wird dies verweigert, falls der Grenzwert bereits erreicht ist.
+Mit der nächsten Kontrolle wird sichergestellt, dass für die Anforderung kein [Grenzwert für das Azure-Abonnement](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits) überschritten wird. Beispielsweise gilt für alle Abonnements ein Grenzwert von 980 Ressourcengruppen pro Abonnement. Wenn eine Anforderung zur Bereitstellung einer weiteren Ressourcengruppe eingeht, wird dies verweigert, falls der Grenzwert bereits erreicht ist.
 
 ![Azure-Ressourcenlimits](../../_images/govern/design/governance-1-20.png)
 *Abbildung 12. Azure-Ressourcengrenzwerte*

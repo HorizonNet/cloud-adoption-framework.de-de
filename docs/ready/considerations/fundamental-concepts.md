@@ -4,15 +4,15 @@ description: Verwenden Sie das Framework für die Cloudeinführung für Azure, u
 author: alexbuckgit
 ms.author: abuck
 ms.date: 05/20/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8c30f859d90e2fca26fbcd6c70db3c662d56b8a1
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: ed8d8511cbdac9996ff61688b4e6d783877e9d9c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353645"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997519"
 ---
 # <a name="azure-fundamental-concepts"></a>Grundlegende Konzepte in Azure
 
@@ -60,7 +60,7 @@ Azure definiert drei Arten von Rollen für die Verwaltung von Abonnements, Ident
 - Rollenbasierte Zugriffssteuerung in Azure
 - Azure AD-Administrator (Azure Active Directory)
 
-Die Kontoadministratorrolle für ein Azure-Abonnement wird dem E-Mail-Konto zugewiesen, das zum Erstellen des Azure-Abonnements verwendet wird. Der Kontoadministrator ist der Besitzer des Abonnements, an den die Abrechnung erfolgt. Der Kontoadministrator kann die Abonnementdetails im [Azure-Kontocenter](https://account.azure.com/Subscriptions) verwalten.
+Die Kontoadministratorrolle für ein Azure-Abonnement wird dem E-Mail-Konto zugewiesen, das zum Erstellen des Azure-Abonnements verwendet wird. Der Kontoadministrator ist der Besitzer des Abonnements, an den die Abrechnung erfolgt. Der Kontoadministrator kann die Abonnementdetails im [Azure-Kontocenter](https://account.azure.com/subscriptions) verwalten.
 
 Standardmäßig wird die Dienstadministratorrolle für ein Abonnement auch dem E-Mail-Konto zugewiesen, das zum Erstellen des Azure-Abonnements verwendet wird. Der Dienstadministrator verfügt über Berechtigungen für das Abonnement, die einem RBAC-basierten Besitzer entsprechen. Der Dienstadministrator besitzt außerdem Vollzugriff auf das Azure-Portal. Der Kontoadministrator kann den Dienstadministrator in ein anderes E-Mail-Konto ändern.
 
@@ -85,7 +85,7 @@ Die folgenden Ressourcen bieten detaillierte Informationen über die Konzepte, d
 
 - [Wie funktioniert Azure?](../../getting-started/what-is-azure.md)
 - [Ressourcenzugriffsverwaltung in Azure](../../govern/resource-consistency/resource-access-management.md)
-- [Übersicht über den Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview)
+- [Übersicht über den Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)
 - [Rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC) für Azure-Ressourcen](https://docs.microsoft.com/azure/role-based-access-control/overview)
 - [Was ist Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
 - [Zuordnen oder Hinzufügen eines Azure-Abonnements zu Ihrem Azure Active Directory-Mandanten](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
