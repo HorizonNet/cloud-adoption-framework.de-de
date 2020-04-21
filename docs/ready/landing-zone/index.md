@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 907cb23b61ffada1a97abe87545ed7d4cdd7d56a
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: 4ad4f5d1b5e3352d308ae31db1cc86bb87eb5b76
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392575"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120067"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -22,7 +22,9 @@ Infrastructure-as-Code ist bei den meisten Cloudeinführungsaufgaben ein natürl
 
 ## <a name="landing-zone-definition"></a>Definition der Zielzone
 
-Eine Landezone ist der Grundbaustein jeder Cloudeinführungsumgebung. Der Begriff _Zielzone_ bezieht sich auf ein logisches Konstrukt, das alles erfasst, was „true“ sein muss, um die gewünschte Cloudeinführung zu ermöglichen.
+Eine Zielzone ist eine mittels Code vorab bereitgestellte Umgebung zum Hosten Ihrer Workloads. Sie umfasst grundlegende Funktionen unter Verwendung von definierten Clouddiensten und bewährten Methoden, sodass die Weichen von vornherein auf Erfolg gestellt sind.
+
+Genauer gesagt, ist eine Zielzone der Grundbaustein jeder Cloudeinführungsumgebung. Der Begriff _Zielzone_ bezieht sich auf ein logisches Konstrukt, das alles erfasst, was „true“ sein muss, um die gewünschte Cloudeinführung zu ermöglichen.
 
 **Bereich:** Eine voll funktionsfähige Zielzone berücksichtigt alle Plattformressourcen, die zur Unterstützung der Anforderungen an eine Cloudeinführung des Kunden erforderlich sind.
 
@@ -36,11 +38,11 @@ Eine Landezone ist der Grundbaustein jeder Cloudeinführungsumgebung. Der Begrif
 
 Bei Zielzonen wird nicht unbedingt zwischen der Einführung von IaaS oder PaaS unterschieden. Allerdings sind Zielzonen speziell für die Unterstützung des Einführungsplans konzipiert, indem die Abonnementstrategie erfüllt wird. Die Unterstützung des Einführungsplans erfordert möglicherweise mehrere Zielzonen mit einer Mischung aus erforderlichen Komponenten.
 
-Zweck und Umfang des Gesamtplans zur Einführung der Cloud bestimmen, welche Grundlagen erforderlich sind. Zusätzliche Anforderungen an Governance, Compliance, Sicherheit und Betriebsverwaltung werden wahrscheinlich den ursprünglichen Umfang der Zielzone erweitern. In frühen Phasen der Einführung können Zielzonen aufgrund von definierten Anforderungen und akzeptablen Risiken weniger Grundlagen umfassen.  Wenn mehrere Zielzonen vorhanden sind, ist es sehr üblich, dass jede Zielzone von Hubs abhängig ist, die die erforderlichen Steuerelemente über ein freigegebenes Dienstmodell bereitstellen.
+Zweck und Umfang des Gesamtplans zur Einführung der Cloud bestimmen, welche Grundlagen erforderlich sind. Zusätzliche Anforderungen an Governance, Compliance, Sicherheit und Betriebsverwaltung werden wahrscheinlich den ursprünglichen Umfang der Zielzone erweitern. In frühen Phasen der Einführung können Zielzonen aufgrund von definierten Anforderungen und akzeptablen Risiken weniger Grundlagen umfassen. Wenn mehrere Zielzonen vorhanden sind, ist es sehr üblich, dass jede Zielzone von Hubs abhängig ist, die die erforderlichen Steuerelemente über ein freigegebenes Dienstmodell bereitstellen.
 
 ## <a name="related-terms"></a>Verwandte Begriffe
 
-- **Gemeinsam genutzte Dienste**: Workloads verfügen häufig über gemeinsam genutzte Abhängigkeiten, die von vielen unterschiedlichen Workloads verwendet werden. Der Ansatz der gemeinsam genutzten Dienste verschiebt viele dieser allgemeinen Abhängigkeiten in ein logisches Konstrukt.
+- **Gemeinsam genutzte Dienste**: Workloads verfügen häufig über gemeinsame Abhängigkeiten, die von vielen unterschiedlichen Workloads verwendet werden. Der Ansatz der gemeinsam genutzten Dienste verschiebt viele dieser allgemeinen Abhängigkeiten in ein logisches Konstrukt.
 
 - **Hub-and-Spoke-Modell:** Eine Implementierung des Ansatzes der gemeinsam genutzten Dienste ist ein Hub-and-Spoke-Modell. In diesem Modell ist der Hub ein einzelnes logisches Konstrukt für das Hosting aller freigegebenen Dienste. Zielzonen fungieren dann als Spokes, die basierend auf gemeinsamen Abhängigkeiten vom Hub ausgehen.
 
@@ -48,7 +50,7 @@ Zweck und Umfang des Gesamtplans zur Einführung der Cloud bestimmen, welche Gru
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Zum Einstieg in die Verwendung von Zielzonen [wählen Sie Ihre erste Zielzone](./first-landing-zone.md).
+Bevor Sie mit Ihrer ersten Zielzone beginnen, sollten Sie sich mit den [Refactoringprinzipien](./refactor.md) vertraut machen, auf denen dieser Ansatz beruht.
 
 > [!div class="nextstepaction"]
-> [Wählen Ihrer ersten Zielzone](./first-landing-zone.md)
+> [Umgestalten von Zielzonen](./refactor.md)

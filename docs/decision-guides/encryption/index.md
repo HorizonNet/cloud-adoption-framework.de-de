@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 33c26a266cb1bbb428fb54f8e5ccbd242f75e1f6
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 7fa525ae5a2f0a7fe6d2075cd13d2bc9a1b08713
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80434927"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80996467"
 ---
 # <a name="encryption-decision-guide"></a>Leitfaden zur Entscheidungsfindung für die Verschlüsselung
 
@@ -33,7 +33,7 @@ Die Verschlüsselung von Daten in der Cloud hängt von der sicheren Speicherung,
 
 Moderne Schlüsselverwaltungssysteme wie Azure Key Vault unterstützen die Speicherung und Verwaltung von softwaregeschützten Schlüsseln für die Entwicklung und den Testbetrieb sowie HSM-geschützte (Hardware Security Module) Schlüssel für den maximalen Schutz von Produktionsworkloads oder vertraulichen Daten.
 
-Die folgende Tabelle für die Planung einer Cloudmigration hilft Ihnen bei der Entscheidung, wie Sie Verschlüsselungsschlüssel, Zertifikate und Geheimnisse, die zum Erstellen sicherer und verwaltbarer Cloudbereitstellungen kritisch sind, speichern und verwalten können:
+Die folgende Tabelle zur Planung einer Cloudmigration hilft Ihnen bei der Entscheidung, wie Sie Verschlüsselungsschlüssel, Zertifikate und Geheimnisse, die zum Erstellen sicherer und verwaltbarer Cloudbereitstellungen kritisch sind, speichern und verwalten:
 
 | Frage | Cloudnativ | Bring Your Own Key | Eigenen Schlüssel speichern |
 |---------------------------------------------------------------------------------------------------------------------------------------|--------------|--------|-------------|
@@ -121,9 +121,9 @@ Die Verschlüsselung von Daten in Gebrauch umfasst das Schützen von Daten in ni
 
 Weitere Informationen zur Verschlüsselung und Schlüsselverwaltung in Azure finden Sie unter:
 
-- [Übersicht über die Azure-Verschlüsselung:](https://docs.microsoft.com/azure/security/security-azure-encryption-overview) Eine ausführliche Beschreibung zur Verwendung der Verschlüsselung in Azure zum Schutz sowohl ruhender Daten als auch von Daten bei der Übertragung.
+- [Übersicht über die Azure-Verschlüsselung:](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview) Eine ausführliche Beschreibung zur Verwendung der Verschlüsselung in Azure zum Schutz sowohl ruhender Daten als auch von Daten bei der Übertragung.
 - [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-overview). Key Vault ist das primäre Schlüsselverwaltungssystem zum Speichern und Verwalten von kryptografischen Schlüsseln, Geheimnissen und Zertifikaten in Azure.
-- [Bewährte Methoden für Datensicherheit und Datenverschlüsselung in Azure:](https://docs.microsoft.com/azure/security/azure-security-data-encryption-best-practices) Eine Diskussion über die bewährten Methoden von Azure zur Datensicherheit und Datenverschlüsselung.
+- [Bewährte Methoden für Datensicherheit und Datenverschlüsselung in Azure:](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices) Eine Diskussion über die bewährten Methoden von Azure zur Datensicherheit und Datenverschlüsselung.
 - [Confidential Computing in Azure:](https://azure.microsoft.com/solutions/confidential-compute) Die Confidential Computing-Initiative von Azure stellt Tools und Technologien zum Erstellen von vertrauenswürdigen Ausführungsumgebungen und anderen Verschlüsselungsmechanismen zum Schützen von Daten in Gebrauch bereit.
 
 ## <a name="next-steps"></a>Nächste Schritte

@@ -1,51 +1,46 @@
 ---
-title: Überlegungen zu Landezonen in Azure
-description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um mehr über Zielzonen – den Grundbausteinen jeder Cloudeinführungsumgebung – zu erfahren.
+title: Erweitern der Zielzone
+description: Verwenden Sie das Cloud Adoption Framework für Azure, um zu erfahren, wie Sie eine Zielzone erweitern.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 05/20/2019
-ms.topic: conceptual
+ms.date: 04/04/2020
+ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b0e8aefdf265fdb1376135c8bc66e2798416dee2
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: cbfbadebd635891d680da29091ca572611712e09
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392684"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120795"
 ---
-# <a name="landing-zone-considerations"></a>Überlegungen zu Landezonen
+# <a name="expand-your-landing-zone"></a>Erweitern der Zielzone
 
-Eine Landezone ist der Grundbaustein jeder Cloudeinführungsumgebung. Der Begriff *Landezone* bezeichnet eine Umgebung, die zum Hosten von Workloads in einer Cloudumgebung wie Azure bereitgestellt und vorbereitet wurde. Bei jeder Iteration der Bereitschaftsmethodik des Frameworks für die Cloudeinführung (Cloud Adoption Framework) wird letztendlich eine voll funktionsfähige Landezone angestrebt.
+Dieser Abschnitt der Bereitschaftsmethodik basiert auf den Prinzipien des [Refactorings der Zielzone](../landing-zone/refactor.md). Wie in diesem Artikel beschrieben, beseitigt ein auf Refactoring beruhender Ansatz für Infrastructure-as-Code Hindernisse für den geschäftlichen Erfolg und minimiert gleichzeitig das Risiko. In dieser Artikelreihe wird davon ausgegangen, dass Sie Ihre erste Zielzone bereitgestellt haben und diese nun entsprechend Ihren Unternehmensanforderungen erweitern möchten.
 
-![Überlegungen zu Landezonen](../../_images/ready/landing-zone-considerations.png)
+## <a name="shared-architecture-principles"></a>Gemeinsame Architekturprinzipien
 
-Diese Abbildung zeigt die wichtigsten Überlegungen bei der Implementierung einer Landezonenbereitstellung. Die Überlegungen können in drei Kategorien unterteilt werden: Hosting, Azure-Grundlagen und Governance.
+Das Erweitern Ihrer Zielzone ist ein Code First-Ansatz, mit dem Sie die folgenden Prinzipien in die Zielzone und auf breiterer Basis in Ihre gesamte Cloudumgebung einbetten können.
 
-## <a name="hosting-considerations"></a>Überlegungen zum Hosting
+![Gemeinsame Architekturprinzipien](../../_images/ready/shared-principles.png)
 
-Landezonen stellen eine Struktur für Hostingoptionen bereit. Die Struktur wird explizit über Governancekontrollen oder organisch durch die Einführung von Diensten innerhalb der Landezone erstellt. Die Informationen in den folgenden Artikeln helfen Ihnen beim Treffen von Entscheidungen, die in die Blaupause oder in andere Automatisierungsskripts zur Erstellung Ihrer Landezone einfließen:
+[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview), das [Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/framework) und die Lösungen im [Azure Architecture Center](https://docs.microsoft.com/azure/architecture) beruhen auf den gleichen Architekturprinzipien.
 
-- **[Entscheidungen zum Computeentwurf](./compute-options.md)** . Richten Sie Computeoptionen auf den Zweck der Landezone aus, um die operative Komplexität zu minimieren. Diese Entscheidung kann mithilfe von Automatisierungstoolketten wie Azure Policy-Initiativen und Landezonenblaupausen erzwungen werden.
-- **[Entscheidungen zum Speicherentwurf](./storage-options.md)** . Wählen Sie die richtige Azure Storage-Lösung für Ihre Workloadanforderungen aus.
-- **[Networking design decisions](./networking-options.md)** (Entscheidungen im Zusammenhang mit dem Netzwerkentwurf): Wählen Sie die Netzwerkdienste, -tools und -architekturen aus, die die Workload-, Governance- und Konnektivitätsanforderungen Ihrer Organisation unterstützen.
-- **[Entscheidungen zum Datenbankentwurf](./data-options.md)** . Hier erfahren Sie, welche Datenbanktechnologie am besten für Ihre Workloadanforderungen geeignet ist.
+## <a name="applying-these-principles-to-your-landing-zone-improvements"></a>Anwenden dieser Prinzipien auf die Verbesserungen Ihrer Zielzone
 
-## <a name="azure-fundamentals"></a>Azure-Grundlagen
+Zur Anpassung an die Methoden des Cloud Adoption Framework werden die oben genannten Prinzipien in umsetzbaren Verbesserungen der Zielzone zusammengefasst:
 
-Jede Landezone ist Teil einer umfassenderen Lösung zur Strukturierung von Ressourcen innerhalb einer Cloudumgebung. Bei den Azure-Grundlagen handelt es sich um die Grundbausteine einer Struktur.
+- Grundlegende Überlegungen: Gestalten Sie eine Zielzone um, um das Hosting, die Grundlagen und andere grundlegende Elemente zu optimieren.
+- Operative Erweiterungen: Fügen Sie Konfigurationen für das operative Management hinzu, um **Leistung, Zuverlässigkeit und optimalen Betrieb** zu verbessern.
+- Governanceerweiterungen: Fügen Sie Governancekonfigurationen hinzu, um **Kosten, Zuverlässigkeit, Sicherheit** und Konsistenz zu verbessern.
+- Sicherheitserweiterungen: Fügen Sie **Sicherheitskonfigurationen** hinzu, um den Schutz vertraulicher Daten und kritischer Systeme zu verbessern.
 
-- **[Azure fundamental concepts](./fundamental-concepts.md)** (Grundlegende Konzepte in Azure): Lernen Sie grundlegende Konzepte und Begriffe kennen, die zum Organisieren von Ressourcen in Azure verwendet werden, und erfahren Sie, wie diese Konzepte zusammenhängen.
-- **[Leitfaden zur Entscheidungsfindung bei der Ressourcenkonsistenz:](../../decision-guides/resource-consistency/index.md)** Nachdem Sie sich mit den einzelnen Grundlagen vertraut gemacht haben, können Sie den Leitfaden zur Entscheidungsfindung für die Ressourcenstrukturierung heranziehen, um Entscheidungen zur Gestaltung der Landezone zu treffen.
+> [!WARNING]
+> Einführungsteams, die mittelfristig (innerhalb von 24 Monaten) das Ziel haben, **mehr als 1.000 Ressourcen (Apps, Infrastruktur oder Datenressourcen) in der Cloud zu hosten**, sollten jede dieser Erweiterungen schon in den frühen Phasen ihrer Cloudeinführungsjourney in Erwägung ziehen. Bei allen anderen Einführungsmustern können Erweiterungen der Zielzone als parallele Iteration durchgeführt werden, um frühzeitig geschäftliche Erfolge zu erzielen.
 
-## <a name="governance-considerations"></a>Governanceüberlegungen
+## <a name="next-steps"></a>Nächste Schritte
 
-Die Governancemethodik des Frameworks für die Cloudeinführung (Cloud Adoption Framework) bietet einen Prozess für die allgemeine Umgebungssteuerung. Es gibt jedoch zahlreiche Anwendungsfälle, in denen Governanceentscheidungen für jede einzelne Zielzone getroffen werden müssen. In vielen Szenarien werden Governancebaselines zwar ganzheitlich eingerichtet, aber für einzelne Zielzonen erzwungen. Dies gilt für die ersten Landezonen, die eine Organisation bereitstellt.
+Bevor Sie Ihre erste Zielzone umgestalten, sollten Sie sich mit der [testgesteuerten Entwicklung von Zielzonen](./test-driven-development.md) vertraut machen.
 
-Die folgenden Artikel unterstützen Sie beim Treffen governancebezogener Entscheidungen zur Landezone. Sie können jede Entscheidung in Ihre Governancebaselines einbeziehen.
-
-- **Kostenanforderungen**. Abhängig von den Beweggründen für die Cloudeinführung und den betrieblichen Verpflichtungen, die für diese Umgebung bestehen, müssen möglicherweise verschiedene Kostenverwaltungskonfigurationen für die Landezone geändert werden.
-- **Überwachungsentscheidungen**. Abhängig von den betrieblichen Anforderungen für eine Landezone können verschiedene Überwachungstools bereitgestellt werden. Der Artikel zu Überwachungsentscheidungen unterstützt Sie bei der Ermittlung der hierfür am besten geeigneten Tools.
-- **Verwendung der rollenbasierten Zugriffssteuerung**. Die [rollenbasierte Zugriffssteuerung](../considerations/roles.md) (Role-Based Access Control, RBAC) in Azure ermöglicht eine präzise gruppenbasierte Zugriffsverwaltung für Ressourcen, deren Struktur auf Benutzerrollen basiert.
-- **Richtlinienentscheidungen:** [Azure Blueprints-Beispiele](https://docs.microsoft.com/azure/governance/blueprints/samples) bieten vorgefertigte Complianceblaupausen, die jeweils vordefinierte Richtlinieninitiativen enthalten. Richtlinienentscheidungen dienen zur Ermittlung der am besten geeigneten Blaupause oder Richtlinieninitiative, basierend auf Ihren Anforderungen und Einschränkungen.
-- **[Schaffen von Hybrid Cloud-Konsistenz](./hybrid-consistency.md):** Erstellen Sie Hybrid Cloud-Lösungen, mit denen Ihre Organisation sowohl von den Vorteilen innovativer Cloudfeatures als auch von vielen praktischen Features der lokalen Verwaltung profitiert.
+> [!div class="nextstepaction"]
+> [Testgesteuerte Entwicklung von Zielzonen](./test-driven-development.md)

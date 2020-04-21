@@ -7,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9f078f3fb989c6db9ca14371c2fadd17805d4d3a
-ms.sourcegitcommit: afe10f97fc0e0402a881fdfa55dadebd3aca75ab
+ms.openlocfilehash: 0d83ccc83397153619bc7ca99881c6a2775ab1a3
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "80432275"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120690"
 ---
-# <a name="optimize-migrated-workloads"></a>Optimieren von migrierten Workloads
+# <a name="release-workloads"></a>Freigeben von Workloads
 
-Nachdem eine Workload und ihre unterstützenden Ressourcen in die Cloud migriert wurden, muss sie vorbereitet werden, bevor sie in die Produktion höhergestuft werden kann. In diesem Prozess bereiten die Aktivitäten die Workload vor, skalieren die abhängigen Ressourcen und bereiten das Geschäft darauf vor, wann die migrierte cloudbasierte Workload in die Produktionsumgebung wechselt.
+Nach der Bereitstellung einer Sammlung von Workloads und der zugehörigen unterstützenden Ressourcen in der Cloud müssen die Workloads vorbereitet werden, bevor sie freigegeben werden können. In dieser Phase der Migration werden Auslastungstests und Tests im Unternehmen für die Sammlung von Workloads durchgeführt. Anschließend werden sie optimiert und dokumentiert. Nachdem die Geschäfts- und IT-Teams Workloadbereitstellungen geprüft und genehmigt haben, können die Workloads freigegeben oder für den laufenden Betrieb an Governance-, Sicherheits- und operative Teams übergeben werden.
 
-Ziel der Optimierung ist es, eine migrierte Workload für die Höherstufung in die Produktionsumgebung vorzubereiten.
+Ziel der „Freigabe von Workloads“ ist es, migrierte Workloads für die Höherstufung in die Produktion vorzubereiten.
 
 ## <a name="definition-of-done"></a>Definition von *Fertig*.
 

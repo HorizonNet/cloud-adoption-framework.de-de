@@ -3,21 +3,21 @@ title: Cloudmigration
 description: Hier erfahren Sie, wie Sie die iterativen Prozesse zum Bewerten, Migrieren, Optimieren, Schützen und Verwalten der Workloads einrichten, die Sie zur Cloud migrieren möchten.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 04/04/2020
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 layout: LandingPage
-ms.openlocfilehash: 8d110115bf56dfa0fd40e4e26f9c1dde065d0209
-ms.sourcegitcommit: 88fbc36cd634c3069e1a841a763a5327c737aa84
+ms.openlocfilehash: b341996c45c4a0c5b7d8467419c3117f939afa20
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80636476"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120746"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Cloudmigration im Cloud Adoption Framework
 
-Jeder [Cloudeinführungsplan](../plan/index.md) eines Unternehmens beinhaltet Workloads, die keine umfangreichen Investitionen in die Erstellung neuer Geschäftslogik rechtfertigen. Diese Workloads können mithilfe verschiedener Methoden in die Cloud migriert werden: per Lift & Shift, per Lift & Optimize oder mittels Modernisierung. Jeder diese Methoden wird als Migration betrachtet. In den folgenden Aufgaben werden die iterativen Prozesse zum Bewerten, Migrieren, Optimieren, Schützen und Verwalten dieser Workloads vermittelt.
+Der [Cloudeinführungsplan](../plan/index.md) jedes Unternehmens beinhaltet Workloads, die keine umfangreichen Investitionen in die Erstellung neuer Geschäftslogik rechtfertigen. Diese Workloads können mithilfe verschiedener Methoden in die Cloud migriert werden: per Lift & Shift, per Lift & Optimize oder mittels Modernisierung. Jeder diese Methoden wird als Migration betrachtet. In den folgenden Aufgaben werden die iterativen Prozesse zum Bewerten, Migrieren, Optimieren, Schützen und Verwalten dieser Workloads vermittelt.
 
 ## <a name="getting-started"></a>Erste Schritte
 
@@ -106,62 +106,38 @@ Die Migration ist stark prozessorientiert. Nutzen Sie diese Prozessverbesserunge
 
 Diese Methodik und die obigen Schritte basieren auf den folgenden Annahmen:
 
+- Die Methodik zum Steuern von Migrationssprints steht im Einklang mit Migrationswellen oder -releases, die mithilfe der Methoden „Planung“, „Bereitschaft“ und „Einführung“ definiert werden. Innerhalb jedes Migrationssprints wird ein Batch von Workloads zur Cloud migriert.
 - Vor der Migration von Workloads wurde mindestens eine [Zielzone](../ready/index.md) identifiziert, konfiguriert und bereitgestellt, um die Anforderungen des kurzfristigen Cloudeinführungsplan zu erfüllen.
-- Migration wird üblicherweise mit den Begriffen _Lift & Shift_ oder _Rehosten_ assoziiert. Diese Methodik und die oben genannten Schritte basieren auf der Überzeugung, dass kein Rechenzentrum (und nur sehr wenige Arbeitslasten) mit einem reinen Rehostingansatz migriert werden sollten. Zwar können viele Workloads neu gehostet werden, aber Kunden entscheiden sich häufiger dafür, bestimmte Ressourcen innerhalb der einzelnen Workloads zu modernisieren. Während dieses iterativen Prozesses ist die Balance zwischen Geschwindigkeit und Modernisierung ein gängiger Diskussionspunkt.
+- Migration wird üblicherweise mit den Begriffen _Lift & Shift_ oder _Rehosten_ assoziiert. Diese Methodik und die oben genannten Schritte basieren auf der Überzeugung, dass kein Rechenzentrum (und nur wenige Workloads) mit einem reinen Rehostingansatz migriert werden sollten. Zwar können viele Workloads neu gehostet werden, aber Kunden entscheiden sich häufiger dafür, bestimmte Ressourcen innerhalb der einzelnen Workloads zu modernisieren. Während dieses iterativen Prozesses ist die Balance zwischen Geschwindigkeit und Modernisierung ein gängiger Diskussionspunkt.
 
-## <a name="iterative-migration-process"></a>Iterativer Migrationsprozess
+## <a name="migration-effort"></a>Migration
 
-Die Migration zur Cloud umfasst im Grunde vier einfache Phasen: Bewerten, Migrieren, Optimieren und Schützen/Verwalten. In diesem Abschnitt des Frameworks für die Cloudeinführung erfahren Sie, wie Sie den größtmöglichen Nutzen aus der jeweiligen Prozessphase ziehen und diese Phasen auf Ihren Cloudeinführungsplan abstimmen. Die folgende Grafik zeigt diese Phasen in einem iterativen Ansatz:
+Die erforderlichen Aufgaben zum Migrieren von Workloads lassen sich in der Regel in drei Phasen unterteilen: Bewerten von Workloads, Bereitstellen von Workloads und Freigeben von Workloads. In diesem Abschnitt des Cloud Adoption Framework erfahren Sie, wie Sie den größtmöglichen Nutzen aus jeder der Phasen ziehen, die die Migration einer Workload zur Produktion erfordert.
 
-![Cloud Adoption Framework-Migrationsmodell](../_images/migrate/methodology.png)
+In einer normalen zweiwöchigen Iteration kann ein erfahrenes Migrationsteam diesen Prozess für zwei bis fünf Workloads von geringer bis mittlerer Komplexität durchführen. Für komplexere Workloads (z. B. SAP) können mehrere zweiwöchige Iterationen erforderlich sein, um alle drei Phasen der Migration für eine einzelne Workload abzuschließen. Sowohl die Erfahrung als auch die Komplexität haben erheblichen Einfluss auf die Zeitpläne und die Geschwindigkeit der Migration.
 
-## <a name="create-a-balanced-cloud-portfolio"></a>Erstellen eines ausgewogenen Cloudportfolios
+![Cloud Adoption Framework: Migration](../_images/migrate/methodology.png)
 
-Jedes ausgewogene Technologieportfolio verfügt über eine Mischung von Ressourcen in verschiedenen Zuständen. Einige Anwendungen sind für die Deaktivierung vorgesehen und werden nur minimal unterstützt. Andere Anwendungen oder Ressourcen werden in einem Wartungszustand unterstützt, aber die Features dieser Lösungen sind stabil. Für neuere Geschäftsprozesse werden sich ändernde Marktbedingungen wahrscheinlich zu einer kontinuierlichen Verbesserung oder Modernisierung der Features führen. Wenn sich Möglichkeiten zur Erschließung neuer Umsatzquellen ergeben, werden neue Anwendungen oder Ressourcen in die Umgebung eingeführt. In jeder Phase des Lebenszyklus einer Ressource ändern sich die Auswirkungen einer Investition auf Umsatz und Gewinn. Je später die Phase im Lebenszyklus, desto unwahrscheinlicher ist es, dass ein neues Feature oder ein Modernisierungsaufwand zu einer hohen Rendite (Return on Investment, ROI) führt.
+Im Folgenden finden Sie einen Überblick über die Phasen des oben dargestellten Prozesses:
 
-Die Cloud bietet verschiedene Einführungsmechanismen mit jeweils ähnlichen Investitions- und Renditegraden. Die Erstellung von cloudnativen Anwendungen kann die Betriebskosten erheblich senken. Sobald eine cloudnative Anwendung freigegeben ist, kann die Entwicklung neuer Features und Lösungen schneller erfolgen. Die Modernisierung einer Anwendung kann zu ähnlichen Vorteilen führen, indem sie Legacyeinschränkungen hinsichtlich lokaler Entwicklungsmodelle beseitigt. Leider sind diese beiden Ansätze arbeitsintensiv und hängen von der Größe, der Qualifikation und der Erfahrung der Softwareentwicklungsteams ab. Häufig ist die Arbeit falsch organisiert. Personen mit der Qualifikation und dem Talent zum Modernisieren von Anwendungen würden eher neue Anwendungen entwickeln. In einem arbeitsintensiven Markt können große Modernisierungsprojekte zu einem Problem hinsichtlich Mitarbeiterzufriedenheit und Talent führen. In einem ausgewogenen Portfolio sollte dieser Ansatz Anwendungen vorbehalten bleiben, die signifikante Featureverbesserungen erhalten würden, wenn sie an einem lokalen Standort verbleiben.
+- **Bewerten von Workloads:** Bewerten Sie Workloads, um die Kosten, Möglichkeiten zur Modernisierung und Bereitstellungstools auszuwerten. Bei diesem Prozess geht es primär darum, die bei früheren Ermittlungen und Bewertungen getroffenen Annahmen zu validieren bzw. zu prüfen, indem Sie sich die Rationalisierungsoptionen genauer ansehen. In dieser Phase werden auch Benutzermuster und Abhängigkeiten genauer untersucht, um sicherzustellen, dass die Workloads sich nach der Migration als technisch erfolgreich erweisen.
+- **Bereitstellen von Workloads:** Nachdem Workloads bewertet wurden, werden die vorhandenen Funktionen dieser Workloads in der Cloud repliziert (oder verbessert). Dies kann einen _Lift & Shift_-Ansatz oder das _Rehosting_ in der Cloud beinhalten. Meistens werden in dieser Phase jedoch viele der Ressourcen modernisiert, die diese Workloads unterstützen, um die Vorteile der Cloud zu nutzen.
+- **Freigeben von Workloads:** Nachdem die Funktionen in der Cloud repliziert wurden, können Workloads getestet, optimiert, dokumentiert und für laufende Vorgänge veröffentlicht werden. Kritisch sind während dieses Prozesses die Bewertung der migrierten Workloads und ihre Übergabe an Governance-, operative Management- und Sicherheitsteams für den kontinuierlichen Support.
 
-## <a name="envision-an-end-state"></a>Planen des Endzustands
+> [!NOTE]
+> In einigen frühen Iterationen der Migration ist es üblich, sich auf eine einzelne Workload zu beschränken. Diese Vorgehensweise sorgt für einen maximalen Erhalt von Qualifikationen und bietet dem Team mehr Zeit zum Experimentieren und Lernen.
+> [!NOTE]
+> Beim Erstellen einer Migrationsfactory entscheiden sich manche Teams vielleicht, jede der obigen Phasen auf mehrere Teams und/oder mehrere Sprints zu verteilen. Diese Vorgehensweise kann die Wiederholbarkeit verbessern und die Migration beschleunigen.
 
-Eine effektive Umsetzung erfordert ein Ziel. Versuchen Sie, eine grobe Vorstellung vom Endzustand zu bekommen, bevor Sie den ersten Schritt machen. Diese Infografik zeigt einen Ausgangspunkt bestehend aus vorhandenen Anwendungen, Daten und einer Infrastruktur, der den digitalen Bestand definiert. Während des Migrationsprozesses wird jede Ressource über eine der Optionen auf der rechten Seite übertragen.
+## <a name="migration-waves"></a>Migrationswellen
 
-## <a name="migration-implementation"></a>Migrationsimplementierung
+Migrationsiterationen bieten durch die Migration von Ressourcen und Workloads technischen Nutzen. Eine Migrationswelle ist die kleinste Sammlung von Workloads, die einen greif- und messbaren geschäftlichen Mehrwert bieten. Am Ende jeder Iteration sollte ein Bericht über die durchgeführten technischen Aufgaben erstellt werden. Über geschäftliche Veränderungen und die strategische Planung wird jedoch im Allgemeinen auf etwas höherer Ebene entschieden. Während sich das Cloudeinführungsteam um die Migration kümmert, konzentriert sich das Cloudstrategieteam auf die Planung der nächsten ein bis zwei Migrationswellen. Das Cloudstrategieteam verfolgt auch den technischen Fortschritt in Form einer Lernmetrik nach, um die Zeitvorgaben für die geschäftliche Wertschöpfung besser zu verstehen. In dieser Hinsicht sind Migrationswellen die iterative Change Management-Methode zur Nachverfolgung von Geschäftsergebnissen, beteiligten Personen und Zeitplänen.
 
-Diese Artikel beschreiben zwei Wege, jeweils mit einem ähnlichen Ziel, d. h. einen Großteil der bestehenden Ressourcen nach Azure zu migrieren. Die Geschäftsergebnisse und der aktuelle Zustand werden jedoch die für den Weg dorthin erforderlichen Prozesse erheblich beeinflussen. Diese kleinen Abweichungen führen zu zwei völlig unterschiedlichen Ansätzen, um einen ähnlichen Endzustand zu erreichen.
-
-![Cloud Adoption Framework-Migrationsmodell](../_images/migrate/methodology.png)
-
-Um die inkrementelle Ausführung während des Übergangs in den Endzustand zu steuern, unterteilt dieses Modell die Migration in zwei zentrale Bereiche.
-
-**Migrationsvorbereitung:** Einrichten eines groben Migrationsbacklogs, der größtenteils auf dem aktuellen Zustand und den gewünschten Ergebnissen basiert.
-
-- **Geschäftsergebnisse:** Die wichtigsten Geschäftsziele, die diese Migration fördern.
-- **Schätzung des digitalen Bestands:** Eine grobe Schätzung der Anzahl und des Zustands der zu migrierenden Workloads.
-- **Rollen und Zuständigkeiten:** Eine klare Definition der Teamstruktur, der Trennung von Zuständigkeiten und der Zugriffsanforderungen.
-- **Change Management-Anforderungen:** Der Rhythmus, die Prozesse und die Dokumentation, die zum Überprüfen und Genehmigen von Änderungen erforderlich sind.
-
-Diese ersten Eingaben prägen den Migrationsbacklog. Die Ausgabe des Migrationsbacklogs ist eine priorisierte Liste von Anwendungen, die in die Cloud migriert werden sollen. Diese Liste beeinflusst die Ausführung des Cloudmigrationsprozesses. Im Laufe der Zeit wird sie auch immer größer werden und einen Großteil der Dokumentation enthalten, die für das Change Management erforderlich ist.
-
-**Migrationsprozess:** Jede Cloudmigrationsaktivität ist in einem der folgenden Prozesse enthalten, da sie sich auf den Migrationsbacklog bezieht.
-
-- **Bewerten:** Bewerten Sie eine bestehende Ressource, und erstellen Sie einen Plan für die Migration der Ressource.
-- **Migration:** Replizieren Sie die Funktionalität einer Ressource in der Cloud.
-- **Optimieren:** Gleichen Sie Leistung, Kosten, Zugriff und Betriebskapazität einer Cloudressource aus.
-- **Sichern und Verwalten:** Stellen Sie sicher, dass ein Cloudressource für den laufenden Betrieb bereit ist.
-
-Die bei der Entwicklung eines Migrationsbacklogs gesammelten Informationen bestimmen die Komplexität und den Aufwand, der innerhalb des Cloudmigrationsprozesses bei jeder Iteration und für jedes Release der Funktionalität erforderlich ist.
-
-## <a name="transition-to-the-end-state"></a>Übergang in den Endzustand
-
-Ziel ist eine reibungslose und teilautomatisierte Migration in die Cloud. Der Migrationsprozess verwendet die von einem Cloudanbieter bereitgestellten Tools, um Ressourcen in der Cloud schnell zu replizieren und bereitzustellen. Nach der Überprüfung leitet eine einfache Netzwerkänderung die Benutzer zur Cloudlösung um. Für viele Anwendungsfälle ist die Technologie zur Erreichung dieses Ziels weitgehend verfügbar. Es gibt Beispielfälle, die die Geschwindigkeit demonstrieren, mit der 10.000 virtuelle Computer in Azure repliziert werden können.
-
-Allerdings ist weiterhin ein inkrementeller Migrationsansatz erforderlich. In den meisten Umgebungen muss die lange Liste der zu migrierenden virtuellen Computer in kleinere Arbeitseinheiten unterteilt werden, damit eine Migration erfolgreich sein kann. Es gibt viele Faktoren, die die Anzahl der virtuellen Computer begrenzen, die in einem bestimmten Zeitraum migriert werden können. Die Geschwindigkeit des ausgehenden Netzwerks ist eine der wenigen technischen Einschränkungen. Die meisten Einschränkungen ergeben sich aus der Fähigkeit des Unternehmens, Änderungen zu überprüfen und anzupassen.
-
-Der inkrementelle Migrationsansatz des Cloud Adoption Frameworks hilft bei der Erstellung eines inkrementellen Plans, der technische und kulturelle Einschränkungen widerspiegelt und dokumentiert. Ziel dieses Modells ist es, die Migrationsgeschwindigkeit zu maximieren und gleichzeitig den Aufwand für IT und Unternehmen zu minimieren. Nachfolgend finden Sie zwei Beispiele für eine inkrementelle Migrationsausführung basierend auf dem Migrationsbacklog.
+Wie die Grafik im vorherigen Abschnitt zeigt, bieten Prozesse innerhalb der Methoden [Planung](../plan/index.md) und [Bereitschaft](../ready/index.md) sowie in gewissem Maße der Methode [Strategie](../strategy/index.md) des Cloud Adoption Framework Leitlinien für die Planung und Verwaltung der Migrationswellen. Durch die Verwaltung dieser Wellen werden die Migrationsaufgaben priorisiert und definiert, die von den technischen Teams erledigt werden müssen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Machen Sie sich zunächst mit dem [Leitfaden zur Azure-Migration](./azure-migration-guide/index.md) vertraut.
+Die obigen ersten Schritte und nachfolgende Leitfäden zur Migrationsmethodik unterstützen Sie bei der Entwicklung von Qualifikationen, die die Durchführung der Prozesse innerhalb der einzelnen Migrationssprints verbessern. Der [Leitfaden zur Azure-Migration](./azure-migration-guide/index.md) ist eine kurze Artikelreihe, in der die gängigsten Tools und Ansätze für Ihre erste Migrationswelle erläutert werden.
 
 > [!div class="nextstepaction"]
 > [Leitfaden zur Azure-Migration](./azure-migration-guide/index.md)

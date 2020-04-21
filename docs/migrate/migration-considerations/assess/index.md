@@ -7,14 +7,14 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a04208a147d2cf9f50b30f8053b49367fa08aabe
-ms.sourcegitcommit: da7ebd67a0ebf29361f093f00e10217b212a2eb2
+ms.openlocfilehash: cc095a1751e945ca18763757582a6cd27b65d72a
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80527677"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81119765"
 ---
-# <a name="validate-assessment-assumptions-before-migration"></a>Validierung von Bewertungsannahmen vor der Migration
+# <a name="assess-workloads-and-validate-assumptions-before-migration"></a>Bewerten von Workloads und Validieren von Annahmen vor der Migration
 
 Viele Ihrer vorhandenen Workloads sind ideale Kandidaten für eine Cloudmigration, aber nicht alle Ressourcen sind mit Cloudplattformen kompatibel. Ebenso können nicht alle Workloads vom Hosting in der Cloud profitieren. Die [Planung digitaler Bestände](../../../digital-estate/index.md) ermöglicht es Ihnen, einen allgemeinen [Migrationsbacklog](../prerequisites/technical-complexity.md#migration-backlog-aligning-business-priorities-and-timing) potenzieller Workloads für die Migration zu erstellen. Dieser Planungsaufwand erfolgt jedoch auf hoher Ebene. Es stützt sich auf Annahmen des Cloudstrategieteams und beschäftigt sich nicht ausführlicher mit technischen Überlegungen.
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 51f24653998ab3cd4cf7fd043b487e4d7c1ccc5b
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: ff7b8669d71f72b87bbfcc3377dc5bf439311987
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312202"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995281"
 ---
 # <a name="cloud-governance-guides"></a>Cloudgovernance-Leitfäden
 
@@ -68,7 +68,7 @@ Die Leitfäden veranschaulichen, wie ein Governance-MVP implementiert wird. Von 
 Um mit einer Governancelösung zu beginnen, wählen Sie eine der beiden folgenden Optionen aus. Die Optionen basieren auf synthetisierten Kundenerfahrungen. Die Titel basieren auf der Komplexität des Unternehmens zur Vereinfachung der Navigation. Die Entscheidung des Lesers kann jedoch komplexer sein. Die folgenden Tabellen zeigen die Unterschiede zwischen den beiden Optionen.
 
 > [!WARNING]
-> Ein robusterer Ausgangspunkt für die Governance kann erforderlich sein. Beachten Sie in solchen Fällen das Modell des [virtuellen Azure-Rechenzentrums](#azure-virtual-datacenter), das [weiter unten](#azure-virtual-datacenter) kurz beschrieben wird. Dieser Ansatz wird häufig bei einer unternehmensweiten Einführung vorgeschlagen, insbesondere bei einem Umfang von über 10.000 Assets. Er ist im Allgemeinen auch die erste Wahl für komplexe Governanceszenarien, wenn eine der folgenden Anforderungen erfüllt sein muss: umfangreiche Complianceanforderungen von Drittanbietern, tiefgreifendes Fachwissen oder Parität mit ausgereiften IT-Governancerichtlinien und Complianceanforderungen.
+> Ein robusterer Ausgangspunkt für die Governance kann erforderlich sein. Beachten Sie in solchen Fällen das Modell des [virtuellen Azure-Rechenzentrums](#azure-virtual-datacenter), das [weiter unten](#azure-virtual-datacenter) kurz beschrieben wird. Dieser Ansatz wird häufig bei einer unternehmensweiten Einführung vorgeschlagen, insbesondere bei einem Umfang von über 10.000 Ressourcen. Er ist im Allgemeinen auch die erste Wahl für komplexe Governanceszenarien, wenn eine der folgenden Anforderungen erfüllt sein muss: umfangreiche Complianceanforderungen von Drittanbietern, tiefgreifendes Fachwissen oder Parität mit ausgereiften IT-Governancerichtlinien und Complianceanforderungen.
 
 <!-- markdownlint-disable MD028 -->
 

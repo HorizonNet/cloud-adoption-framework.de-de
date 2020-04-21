@@ -128,6 +128,8 @@ items:
         items:
           - name: Was ist eine Zielzone?
             href: ready/landing-zone/index.md
+          - name: Umgestalten von Zielzonen
+            href: ready/landing-zone/refactor.md
           - name: Wählen Ihrer ersten Zielzone
             href: ready/landing-zone/first-landing-zone.md
           - name: Blaupause für die Migrationszielzone
@@ -138,32 +140,54 @@ items:
         items:
           - name: Übersicht
             href: ready/considerations/index.md
-          - name: Grundlegende Überlegungen zu Zielzonen
+          - name: Testgesteuerte Entwicklung (TDD) für Zielzonen
+            href: ready/considerations/test-driven-development.md
+          - name: Testgesteuerte Entwicklung (TDD) der Zielzone in Azure
+            href: ready/considerations/azure-test-driven-development.md
+          - name: Klein anfangen und erweitern
             items:
-              - name: Grundlegende Konzepte in Azure
-                href: ready/considerations/fundamental-concepts.md
-              - name: Überprüfen von Computeoptionen
-                href: ready/considerations/compute-options.md
-              - name: Überprüfen von Netzwerkoptionen
-                href: ready/considerations/networking-options.md
-              - name: Überprüfen von Speicheroptionen
-                href: ready/considerations/storage-options.md
-              - name: Überprüfen von Datenoptionen
-                href: ready/considerations/data-options.md
-              - name: Rollenbasierte Zugriffssteuerung
-                href: ready/considerations/roles.md
-              - name: Schaffen von Hybrid Cloud-Konsistenz
-                href: ready/considerations/hybrid-consistency.md
-          - name: Verbessern der Sicherheit von Zielzonen (sensible Daten)
+              - name: Grundlegende Überlegungen zu Zielzonen
+                items:
+                  - name: Übersicht
+                    href: ready/considerations/basic-considerations.md
+                  - name: Grundlegende Konzepte in Azure
+                    href: ready/considerations/fundamental-concepts.md
+                  - name: Überprüfen von Computeoptionen
+                    href: ready/considerations/compute-options.md
+                  - name: Überprüfen von Netzwerkoptionen
+                    href: ready/considerations/networking-options.md
+                  - name: Überprüfen von Speicheroptionen
+                    href: ready/considerations/storage-options.md
+                  - name: Überprüfen von Datenoptionen
+                    href: ready/considerations/data-options.md
+                  - name: Rollenbasierte Zugriffssteuerung
+                    href: ready/considerations/roles.md
+                  - name: Schaffen von Hybrid Cloud-Konsistenz
+                    href: ready/considerations/hybrid-consistency.md
+              - name: Verbessern des Betriebs von Zielzonen
+                href: ready/considerations/landing-zone-operations.md
+              - name: Verbessern der Governance von Zielzonen
+                href: ready/considerations/landing-zone-governance.md
+              - name: Erhöhen der Sicherheit von Zielzonen
+                items:
+                  - name: Übersicht
+                    href: ready/considerations/landing-zone-security.md
+                  - name: "Durchführen des Onboardings eines Abonnements in Azure Security\_Center"
+                    href: 'https://docs.microsoft.com/azure/security-center/security-center-get-started?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Ausführen des Onboardings für Azure Sentinel
+                    href: 'https://docs.microsoft.com/azure/sentinel/quickstart-onboard?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Implementieren einer sicheren hybriden Netzwerkarchitektur in Azure
+                    href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Bewährte Methoden für die Sicherheit der Azure-Identitätsverwaltung und der Zugriffssteuerung
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Bewährte Methoden für die Azure-Netzwerksicherheit
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: Bewährte Methoden für die Azure-Betriebssicherheit
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/operational-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+          - name: Auf Unternehmensniveau beginnen
             items:
-              - name: Implementieren einer sicheren hybriden Netzwerkarchitektur in Azure
-                href: 'https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-              - name: Bewährte Methoden für die Sicherheit der Azure-Identitätsverwaltung und der Zugriffssteuerung
-                href: 'https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-              - name: Bewährte Methoden für die Azure-Netzwerksicherheit
-                href: 'https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-              - name: Bewährte Methoden für die Azure-Betriebssicherheit
-                href: 'https://docs.microsoft.com/azure/security/fundamentals/operational-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
+              - name: Übersicht
+                href: ready/considerations/enterprise-scale.md
       - name: Bewährte Methoden
         items:
           - name: Übersicht
@@ -234,11 +258,11 @@ items:
             items:
               - name: Vorbereitung
                 href: migrate/azure-migration-guide/index.md
-              - name: Bewerten der einzelnen Workloads und Optimieren von Plänen
+              - name: Bewerten von Workloads
                 href: migrate/azure-migration-guide/assess.md
-              - name: Migrieren von Workloadressourcen
+              - name: Bereitstellen von Workloads
                 href: migrate/azure-migration-guide/migrate.md
-              - name: 'Testen, Optimieren und Höherstufen'
+              - name: Freigeben von Workloads
                 href: migrate/azure-migration-guide/optimize-and-transform.md
               - name: Auf Migration ausgerichtete Kostenkontrollmechanismen
                 href: migrate/azure-migration-guide/manage-costs.md
@@ -252,8 +276,6 @@ items:
                 items:
                   - name: Zuweisen eines neuen Hosts für eine Windows-App auf Azure-VMs
                     href: migrate/azure-best-practices/contoso-migration-rehost-vm.md
-                  - name: Überarbeiten einer Windows-App mit Containern und Azure SQL
-                    href: migrate/azure-best-practices/contoso-migration-rearchitect-container-sql.md
               - name: Linux-Workloads
                 items:
                   - name: Zuweisen eines neuen Hosts für eine Linux-App auf Azure-VMs
@@ -320,31 +342,37 @@ items:
                         href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-site-recovery-manager?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
               - name: ASP.NET-Apps
                 items:
-                  - name: Umgestalten einer App in Azure App Service und Azure SQL-Datenbank
+                  - name: "Umgestalten einer App zu Azure App\_Service und Azure\_SQL-Datenbank"
                     href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql.md
-                  - name: Neuerstellen einer lokalen App in Azure
+                  - name: "Umgestalten einer App zu Azure App\_Service und einer verwalteten Azure\_SQL-Datenbank-Instanz"
+                    href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql-managed-instance.md
+                  - name: "Neuerstellen einer App in Azure App\_Service"
                     href: migrate/azure-best-practices/contoso-migration-rebuild.md
                   - name: Umgestalten einer Team Foundation Server-Bereitstellung für Azure DevOps Services
                     href: migrate/azure-best-practices/contoso-migration-tfs-vsts.md
               - name: Java-Apps
                 items:
-                  - name: Migrationsoptionen
+                  - name: Übersicht zur Migration
                     href: 'https://docs.microsoft.com/azure/java/migration-overview?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                  - name: Umgestalten von Spring für Azure App Service
+                  - name: Spring zu Azure App Service
                     href: 'https://docs.microsoft.com/azure/java/migrate-java-se-to-java-se-app-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                  - name: Umgestalten von Tomcat für Azure App Service
+                  - name: Tomcat zu Azure App Service
                     href: 'https://docs.microsoft.com/azure/java/migrate-tomcat-to-tomcat-app-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                  - name: Umgestalten von Tomcat für Container in AKS
+                  - name: Tomcat zu Containern in AKS
                     href: 'https://docs.microsoft.com/azure/java/migrate-tomcat-to-containers-on-azure-kubernetes-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                  - name: Umgestalten von WebLogic für Azure Virtual Machines
+                  - name: WebLogic zu Azure Virtual Machines
                     href: 'https://docs.microsoft.com/azure/java/migrate-weblogic-to-virtual-machines?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                  - name: Umgestalten von WebLogic für WildFly in AKS
+                  - name: WildFly zu WildFly in AKS
+                    href: 'https://docs.microsoft.com/azure/java/migrate-wildfly-to-wildfly-on-azure-kubernetes-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: WebLogic zu WildFly in AKS
                     href: 'https://docs.microsoft.com/azure/java/migrate-weblogic-to-wildfly-on-azure-kubernetes-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                  - name: Umgestalten von WebSphere in WildFly in AKS
+                  - name: WebSphere zu WildFly in AKS
                     href: 'https://docs.microsoft.com/azure/java/migrate-websphere-to-wildfly-on-azure-kubernetes-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                  - name: JBoss EAP zu WildFly in AKS
+                    href: 'https://docs.microsoft.com/azure/java/migrate-jboss-eap-to-wildfly-on-azure-kubernetes-service?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
               - name: SQL Server
                 items:
-                  - name: Zuweisen eines neuen Hosts für eine App auf virtuellen Azure-Computern und einer verwaltete Azure SQL-Datenbank-Instanz
+                  - name: "Zuweisen eines neuen Hosts für eine App auf Azure-VMs und einer verwalteten Azure\_SQL-Datenbank-Instanz"
                     href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance.md
                   - name: Zuweisen eines neuen Hosts für eine App auf virtuellen Azure-Computern und in SQL Server Always On-Verfügbarkeitsgruppen
                     href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-ag.md
@@ -354,83 +382,83 @@ items:
                     href: migrate/azure-best-practices/sql-migration.md
                   - name: Leitfaden zur Azure-Datenbankmigration
                     items:
-                      - name: Umgestalten von SQL Server für Azure SQL-Datenbank
-                        href: 'https://datamigration.microsoft.com/scenario/sql-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Umgestalten von SQL Server zu verwaltete Azure SQL-Datenbank-Instanz
-                        href: 'https://datamigration.microsoft.com/scenario/sql-to-azuresqldbmi?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                      - name: "Umgestalten von SQL\_Server zu Azure\_SQL-Datenbank"
+                        href: 'https://datamigration.microsoft.com/scenario/sql-to-azuresqldb'
+                      - name: "Umgestalten von SQL\_Server zu einer verwalteten Azure\_SQL-Datenbank-Instanz"
+                        href: 'https://datamigration.microsoft.com/scenario/sql-to-azuresqldbmi'
                       - name: Umgestalten von SQL Server für SQL Server auf virtuellen Azure-Computern
-                        href: 'https://datamigration.microsoft.com/scenario/sql-to-sqlvm?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        href: 'https://datamigration.microsoft.com/scenario/sql-to-sqlvm'
                       - name: Umgestalten von SQL Server für Azure SQL DW
-                        href: 'https://datamigration.microsoft.com/scenario/sql-to-sqldw?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                        href: 'https://datamigration.microsoft.com/scenario/sql-to-sqldw'
                       - name: MySQL
                         items:
-                          - name: Umgestalten von MySQL für Azure SQL-Datenbank
-                            href: 'https://datamigration.microsoft.com/scenario/mysql-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                          - name: Umgestalten von MySQL für Azure-Datenbank für MySQL
-                            href: 'https://datamigration.microsoft.com/scenario/mysql-to-azuremysql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          - name: "Umgestalten von MySQL zu Azure\_SQL-Datenbank"
+                            href: 'https://datamigration.microsoft.com/scenario/mysql-to-azuresqldb'
+                          - name: "Umgestalten von MySQL zu Azure Database for\_MySQL"
+                            href: 'https://datamigration.microsoft.com/scenario/mysql-to-azuremysql'
                       - name: PostgreSQL
                         items:
-                          - name: Umgestalten von PostgreSQL für Azure-Datenbank für PostgreSQL
-                            href: 'https://datamigration.microsoft.com/scenario/postgresql-to-azurepostgresql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          - name: "Umgestalten von PostgreSQL zu Azure Database for\_PostgreSQL"
+                            href: 'https://datamigration.microsoft.com/scenario/postgresql-to-azurepostgresql'
                       - name: MariaDB
                         items:
-                          - name: Umgestalten von MariaDB für Azure-Datenbank für MariaDB
-                            href: 'https://datamigration.microsoft.com/scenario/mariadb-to-azuremariadb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          - name: "Umgestalten von MariaDB zu Azure Database for\_MariaDB"
+                            href: 'https://datamigration.microsoft.com/scenario/mariadb-to-azuremariadb'
                       - name: MongoDB
                         items:
                           - name: Umgestalten von MongoDB für Azure Cosmos DB
-                            href: 'https://datamigration.microsoft.com/scenario/mariadb-to-azuremariadb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            href: 'https://datamigration.microsoft.com/scenario/mariadb-to-azuremariadb'
                       - name: Cassandra
                         items:
                           - name: Umgestalten von Cassandra für Azure Cosmos DB
-                            href: 'https://datamigration.microsoft.com/scenario/cassandra-to-cosmos?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            href: 'https://datamigration.microsoft.com/scenario/cassandra-to-cosmos'
                       - name: Oracle
                         items:
-                          - name: Umgestalten von Oracle für Azure SQL-Datenbank
-                            href: 'https://datamigration.microsoft.com/scenario/oracle-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                          - name: Umgestalten von Oracle für Azure-Datenbank für PostgreSQL
-                            href: 'https://datamigration.microsoft.com/scenario/oracle-to-azurepostgresql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          - name: "Umgestalten von Oracle zu Azure\_SQL-Datenbank"
+                            href: 'https://datamigration.microsoft.com/scenario/oracle-to-azuresqldb'
+                          - name: "Umgestalten von Oracle zu Azure Database for\_PostgreSQL"
+                            href: 'https://datamigration.microsoft.com/scenario/oracle-to-azurepostgresql'
                           - name: Überarbeiten von Oracle für Azure SQL DW
-                            href: 'https://datamigration.microsoft.com/scenario/oracle-to-sqldw?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            href: 'https://datamigration.microsoft.com/scenario/oracle-to-sqldw'
                       - name: DB2
                         items:
-                          - name: Umgestalten von DB2 für Azure SQL-Datenbank
-                            href: 'https://datamigration.microsoft.com/scenario/db2-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          - name: "Umgestalten von DB2 zu Azure\_SQL-Datenbank"
+                            href: 'https://datamigration.microsoft.com/scenario/db2-to-azuresqldb'
                       - name: SAP ASE
                         items:
-                          - name: Umgestalten von SAP ASE für Azure SQL-Datenbank
-                            href: 'https://datamigration.microsoft.com/scenario/sybase-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          - name: "Umgestalten von SAP\_ASE zu Azure\_SQL-Datenbank"
+                            href: 'https://datamigration.microsoft.com/scenario/sybase-to-azuresqldb'
                       - name: Zugriff
                         items:
-                          - name: Umgestalten von Access für Azure SQL-Datenbank
-                            href: 'https://datamigration.microsoft.com/scenario/access-to-azuresqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          - name: "Umgestalten von Access zu Azure\_SQL-Datenbank"
+                            href: 'https://datamigration.microsoft.com/scenario/access-to-azuresqldb'
                   - name: Tutorials zu Azure Database Migration Service (DMS)
                     items:
                       - name: Azure Database Migration Service
-                        href: 'https://docs.microsoft.com/azure/dms/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Offlinemigration von SQL Server zu Azure SQL-Datenbank
+                        href: 'https://docs.microsoft.com/azure/dms?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                      - name: "Offlinemigration von SQL\_Server zu Azure\_SQL-Datenbank"
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Onlinemigration von SQL Server zu Azure SQL-Datenbank
+                      - name: "Onlinemigration von SQL\_Server zu Azure\_SQL-Datenbank"
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Offlinemigration von SQL Server zu „Verwaltete Azure SQL-Datenbank-Instanz“
+                      - name: "Offlinemigration von SQL\_Server zu einer verwalteten Azure\_SQL-Datenbank-Instanz"
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Onlinemigration von SQL Server zu „Verwaltete Azure SQL-Datenbank-Instanz“
+                      - name: "Onlinemigration von SQL\_Server zu einer verwalteten Azure\_SQL-Datenbank-Instanz"
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Onlinemigration von AWS RDS SQL Server zu Azure SQL DB oder „Verwaltete Azure SQL-Datenbank-Instanz“
+                      - name: "Onlinemigration von AWS RDS SQL\_Server zu Azure\_SQL-Datenbank oder einer verwalteten Azure\_SQL-Datenbank-Instanz"
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Onlinemigration von MySQL zu Azure Database for MySQL
+                      - name: "Onlinemigration von MySQL zu Azure Database for\_MySQL"
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Onlinemigration von AWS RDS MySQL zu Azure DB for MySQL
+                      - name: "Onlinemigration von AWS RDS MySQL zu Azure Database for\_MySQL"
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-rds-mysql-server-azure-db-for-mysql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Onlinemigration von PostgreSQL zu Azure Database for PostgreSQL
+                      - name: "Onlinemigration von PostgreSQL zu Azure Database for\_PostgreSQL"
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Onlinemigration von AWS RDS PostgreSQL zu Azure DB for PostgreSQL
+                      - name: "Onlinemigration von AWS RDS PostgreSQL zu Azure Database for\_PostgreSQL"
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-rds-postgresql-server-azure-db-for-postgresql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Offlinemigration von MongoDB zur Mongo-API von Azure Cosmos DB
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Onlinemigration von MongoDB zur Mongo-API von Azure Cosmos DB
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Onlinemigration von Oracle zu Azure DB for PostgreSQL
+                      - name: Onlinemigration von Oracle zu Azure Database for PostgreSQL
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-oracle-azure-postgresql-online?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
               - name: Mainframes
                 items:
@@ -504,7 +532,7 @@ items:
                     href: migrate/migration-considerations/prerequisites/technical-complexity.md
                   - name: Überprüfen des Migrationsbacklogs
                     href: migrate/migration-considerations/prerequisites/migration-backlog-review.md
-              - name: Bewertungsprozesse
+              - name: Bewerten von Workloads
                 items:
                   - name: "Validierung von Bewertungsannahmen vor der Migration\_– R-Optimierung hinzufügen"
                     href: migrate/migration-considerations/assess/index.md
@@ -524,7 +552,7 @@ items:
                     href: migrate/migration-considerations/assess/release-iteration-backlog.md
                   - name: Genehmigen von Änderungen an der Architektur
                     href: migrate/migration-considerations/assess/approve.md
-              - name: Migrationsprozesse
+              - name: Bereitstellen von Workloads
                 items:
                   - name: Übersicht
                     href: migrate/migration-considerations/migrate/index.md
@@ -538,7 +566,7 @@ items:
                     href: migrate/migration-considerations/migrate/replicate-options.md
                   - name: Stagen von Workloads
                     href: migrate/migration-considerations/migrate/stage.md
-              - name: Höherstufungsprozesse
+              - name: Freigeben von Workloads
                 items:
                   - name: Übersicht
                     href: migrate/migration-considerations/optimize/index.md
@@ -669,10 +697,10 @@ items:
                       - name: Moderne Web-Apps
                         items:
                           - name: Referenzlösungen für Web-Apps
-                            href: 'https://docs.microsoft.com/azure/architecture/solution-ideas/articles/scalable-ecommerce-web-app'
-                          - name: Erstellen einer .NET Core-App mit SQL DB
+                            href: 'https://docs.microsoft.com/azure/architecture/solution-ideas/articles/scalable-ecommerce-web-app?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                          - name: "Erstellen einer .NET\_Core-App mit Azure\_SQL-Datenbank"
                             href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnetcore-sqldb?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
-                          - name: Erstellen einer .NET-App mit SQL DB
+                          - name: "Erstellen einer .NET-App mit Azure\_SQL-Datenbank"
                             href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                           - name: Erstellen einer PHP-App mit MySQL
                             href: 'https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-php-mysql?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
@@ -699,7 +727,7 @@ items:
                           - name: 'Lernpfad: Erstellen von Bots mit Azure Bot Services'
                             href: 'https://docs.microsoft.com/learn/paths/create-bots-with-the-azure-bot-service'
                           - name: 'Repository: Beispiele für Azure-Bots auf GitHub'
-                            href: 'https://github.com/microsoft/botframework-sdk'
+                            href: 'https://github.com/Microsoft/botframework-sdk'
                   - name: Cloudnative Anwendungen
                     items:
                       - name: Microservicearchitektur
@@ -733,9 +761,9 @@ items:
                           - name: 'Azure Functions: Entwicklerhandbuch'
                             href: 'https://docs.microsoft.com/azure/azure-functions/functions-reference?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                           - name: Azure-Cookbook für serverloses Computing
-                            href: 'https://azure.microsoft.com/resources/azure-serverless-computing-cookbook/?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            href: 'https://azure.microsoft.com/resources/azure-serverless-computing-cookbook'
                           - name: Dokumentation zu Azure Functions
-                            href: 'https://docs.microsoft.com/azure/azure-functions/'
+                            href: 'https://docs.microsoft.com/azure/azure-functions?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
               - name: Unterstützen der Einführung
                 items:
                   - name: Übersicht
@@ -795,7 +823,7 @@ items:
                       - name: Sichere mobile Oberflächen
                         items:
                           - name: 'Schützen mobiler Berichte durch Gesichtserkennung, Toucheingabe oder Passcodes'
-                            href: 'https://docs.microsoft.com/power-bi/consumer/mobile/mobile-ios-native-secure-access?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
+                            href: 'https://docs.microsoft.com/power-bi/consumer/mobile/mobile-native-secure-access?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                           - name: Sichern mobiler Taskflows mit Intune
                             href: 'https://docs.microsoft.com/power-automate/intune-support?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json'
                           - name: Sichern von Daten in Common Data Services
@@ -992,6 +1020,8 @@ items:
                 href: govern/cost-management/compliance-processes.md
               - name: Verbessern des Kostenmanagements
                 href: govern/cost-management/discipline-improvement.md
+              - name: Bewährte Methoden
+                href: govern/cost-management/best-practices.md
               - name: Azure-Tools für das Kostenmanagement
                 href: govern/cost-management/toolchain.md
           - name: Sicherheitsbaseline
@@ -1220,10 +1250,8 @@ items:
         href: organize/fiefdoms-silos.md
   - name: Ressourcen
     items:
-      - name: 'Framework für die Cloudeinführung (Cloud Adoption Framework, CAF): Roadmap'
-        href: reference/index.md
-      - name: Neues
-        href: reference/whats-new.md
+      - name: Tools und Vorlagen
+        href: reference/tools-templates.md
       - name: Betriebsmodell
         items:
           - name: Übersicht
