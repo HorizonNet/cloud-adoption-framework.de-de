@@ -4,15 +4,15 @@ description: Entdecken Sie Strategien zum Abwägen konkurrierender Prioritäten.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 03/04/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: a0524d8e7cd48f3b93191d9633bb57b10fb2261b
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 768007ea6b745eab76f6ae6e255287490da93ec1
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353698"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81119668"
 ---
 # <a name="balance-competing-priorities"></a>Ausgewogenheit konkurrierender Prioritäten
 
@@ -36,14 +36,14 @@ Zuweilen kann Unklarheit beängstigender (oder gefährlicher) sein als falsche A
 
 ## <a name="balance-during-strategy"></a>Ausgewogenheit während der Strategie
 
-Das Hauptziel der Strategiemethodik ist das Erreichen eines Konsens bei den Beteiligten. Einmal definiert, bestimmt diese ausgerichtete strategische Position das Verhalten hinsichtlich jeder Methodik. So wird sichergestellt, dass technische Entscheidungen den gewünschten Geschäftsergebnissen entsprechen. Durch die Abstimmung zwischen den Beteiligten werden für alle dieselben konkurrierenden Prioritäten geschaffen: **Geschäftliche Rechtfertigung** und **Zeit bis zur geschäftlichen Auswirkung**.
+Das Hauptziel der Strategiemethodik ist das Erreichen eines Konsens zwischen den Beteiligten. Einmal definiert, bestimmt diese ausgerichtete strategische Position das Verhalten hinsichtlich jeder Methodik. So wird sichergestellt, dass technische Entscheidungen den gewünschten Geschäftsergebnissen entsprechen. Durch die Abstimmung zwischen den Beteiligten werden für alle dieselben konkurrierenden Prioritäten geschaffen: **Geschäftliche Rechtfertigung** und **Zeit bis zur geschäftlichen Auswirkung**.
 
 **Konkurrierende Prioritäten:**
 
 - **Geschäftliche Rechtfertigung:** Beteiligte wünschen sich oft eine umfassende Finanzanalyse und eine vollständige geschäftliche Rechtfertigung, um sich ruhigen Gewissens auf eine strategische Richtung festlegen zu können. Leider nimmt eine so gründliche Analyse oft mehr Zeit in Anspruch, weil Daten zunächst erfasst und dann analysiert werden müssen.
 - **Zeit bis zur geschäftlichen Auswirkung:** Umgekehrt sind Beteiligte häufig dafür verantwortlich, Geschäftsergebnisse innerhalb eines bestimmten Zeitrahmens zu liefern. Mit der zeitaufwendigen Analyse und Bewertung können diese Ergebnisse gefährdet werden, noch bevor die technische Arbeit beginnt.
 
-**Mindestumfang:** Um hier ein Gleichgewicht zu finden, müssen alle Beteiligten schon zu Beginn des Prozesses miteinander kommunizieren. Laut der Strategiemethodik empfiehlt es sich, den Umfang der Ausrichtung zu Beginn des Prozesses einzugrenzen. Bei dem vorgeschlagenen Ansatz konzentrieren sich die Beteiligten auf die Ausrichtung auf eine Reihe von Kernmotivationen, messbare Ergebnisse und eine allgemeine geschäftliche Rechtfertigung. Es wird außerdem empfohlen, dass sich die Beteiligten dann schnell auf eine kleine Anzahl erster Projekte oder Pilotprojekte einigen, um erforderliche Lernmöglichkeiten zu fördern.
+**Mindestumfang:** Um hier ein Gleichgewicht zu finden, müssen alle Beteiligten schon zu Beginn des Prozesses miteinander kommunizieren. Laut der Strategiemethodik empfiehlt es sich, den Umfang der Ausrichtung zu Beginn des Prozesses einzugrenzen. Bei dem vorgeschlagenen Ansatz konzentrieren sich die Beteiligten auf die Ausrichtung auf eine Reihe von Kernmotivationen, messbare Ergebnisse und eine allgemeine geschäftliche Rechtfertigung. Die Beteiligten sollten sich dann schnell auf eine kleine Anzahl erster Projekte oder Pilotprojekte einigen, um erforderliche Lernmöglichkeiten zu fördern.
 
 **Beispiel zum erweiterten Umfang:** Wenn die anfängliche Geschäftsanalyse auf ein hohes Risiko negativer Auswirkungen auf das Unternehmen hinweist, müssen die Beteiligten möglicherweise innehalten und im Rahmen der geschäftlichen Begründung eine vorsichtigere Bewertung einer umfassenderen Analyse vornehmen.
 
@@ -97,7 +97,7 @@ Bei echten kundenorientierten Innovationen kommt es immer wieder zu Konflikten b
 
 **Mindestumfang:** Die Innovationsmethodik veranschaulicht, wie sich Strategie und Pläne durch einen Konsens über den Geschäftswert integrieren lassen. Anschließend werden im Leitfaden cloudnative Tools vorgestellt, mit denen die einzelnen Innovationsmöglichkeiten beschleunigt werden. Außerdem finden Sie darin bewährte Methoden zur Implementierung. Der Abschnitt zu Prozessverbesserungen beschreibt unter Berücksichtigung von Plänen und Strategien bei der Cloudeinführung Ansätze für die Entwicklung eines Blicks auf Kundenanforderungen. Dieser Ansatz konzentriert sich darauf, Innovationen mit so wenig Technologie wie möglich zu erreichen.
 
-**Beispiel zum erweiterten Umfang:** Manchmal ist eine Innovation abhängig von unternehmenskritischen hochsensiblen Workloads. Wenn es sich bei dem „Kunden“ um einen internen Benutzer handelt, kann der Entwicklungsaufwand während der frühesten Iterationen sowohl unternehmenskritisch als auch hochsensibel sein. Für diese Szenarien wird empfohlen, dass die Einführungsteams die Azure-Architekturüberprüfung und Azure Architecture Framework einsetzen, um das fortgeschrittene Architekturdesign frühzeitig zu bewerten.
+**Beispiel zum erweiterten Umfang:** Manchmal ist eine Innovation abhängig von unternehmenskritischen oder hochsensiblen Workloads. Wenn es sich bei dem „Kunden“ um einen internen Benutzer handelt, kann der Entwicklungsaufwand während der frühesten Iterationen sowohl unternehmenskritisch als auch hochsensibel sein. Für diese Szenarien sollten die Einführungsteams die Azure-Architekturüberprüfung und Azure Architecture Framework verwenden, um das fortgeschrittene Architekturdesign frühzeitig zu bewerten.
 
 ## <a name="balance-during-govern"></a>Ausgewogenheit bei der Governance
 
@@ -118,8 +118,8 @@ Das IT-Geschäftsmodell hinsichtlich der Verwaltung von Vorgängen hat sich im l
 
 **Konkurrierende Prioritäten:**
 
-- Umfassende Investitionen: Beim traditionellen Ansatz der Betriebsverwaltung wird gleichermaßen in die Vermeidung von Ausfällen, die schnelle Wiederherstellung und die Überwachung der gesamten Umgebung investiert. Dieser Ansatz kann kostspielig sein und zuweilen zu einer Duplizierung der vom Cloudanbieter zur Verfügung gestellten unterstützenden Produkte führen.
-- No Ops/Low Ops: Nutzen Sie cloudnative Vorgangstools, um sich wiederholende und wiederkehrende Aufgaben zu minimieren, die zuvor von Vollzeitmitarbeitern durchgeführt wurden. Durch die Reduzierung dieser vorgangsbasierten Abhängigkeiten im Vorgangsverwaltungsmodell können diese Mitarbeiter verstärkt zum Mehrwert beitragen. Für sich genommen kann dieser Ansatz zu einer suboptimalen Unterstützung von Vorgängen führen.
+- **Umfassende Investitionen:** Beim traditionellen Ansatz der Betriebsverwaltung wird gleichermaßen in die Vermeidung von Ausfällen, die schnelle Wiederherstellung und die Überwachung der gesamten Umgebung investiert. Dieser Ansatz kann kostspielig sein und zuweilen zu einer Duplizierung der vom Cloudanbieter zur Verfügung gestellten unterstützenden Produkte führen.
+- **Keine bzw. wenig Vorgänge (No Ops/Low Ops):** Nutzen Sie cloudnative Vorgangstools, um sich wiederholende und wiederkehrende Aufgaben zu minimieren, die zuvor von Vollzeitmitarbeitern durchgeführt wurden. Durch die Reduzierung dieser vorgangsbasierten Abhängigkeiten im Vorgangsverwaltungsmodell können diese Mitarbeiter verstärkt zum Mehrwert beitragen. Für sich genommen kann dieser Ansatz zu einer suboptimalen Unterstützung von Vorgängen führen.
 
 **Mindestumfang:** Laut der Verwaltungsmethodik ist es ratsam, eine cloudnative No Ops-Verwaltungsbaseline einzurichten. Mit dem Wissen, dass die Low Ops-Baseline nicht alle Geschäftsanforderungen erfüllt, müssen Sie mit dem Unternehmen zusammenarbeiten, um Verpflichtungen zu definieren und Investitionen besser abzustimmen. Erweitern Sie die Baseline, um allgemeine Anforderungen für alle Workloads zu erfüllen. Anschließend ermöglichen Sie es Plattformteams oder Teams mit spezifischen Workloads, gut verwaltete Lösungen in einer gut verwalteten Umgebung aufrechtzuerhalten.
 

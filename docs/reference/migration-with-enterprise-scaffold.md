@@ -4,16 +4,16 @@ description: Das Azure-Unternehmensgerüst ist jetzt das Microsoft Cloud Adoptio
 author: rdendtler
 ms.author: rodend
 ms.date: 09/22/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 4e6daee6f5f69599fc8346cf6414b2dff14ae7a9
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: e276f6fd504ec0417ec15504cda52682d67bcba6
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353754"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81119784"
 ---
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
 
@@ -117,7 +117,7 @@ Die erste Säule des Gerüsts ist ein konsistenter Benennungsstandard. Mit sorgf
 > [!TIP]
 > Informationen zu Benennungskonventionen:
 >
-> - Lesen Sie den [Leitfaden mit Mustern und Verfahren](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming), und übernehmen Sie ihn wo möglich. Dieser Leitfaden hilft Ihnen bei der Entscheidung für einen sinnvollen Benennungsstandard und bietet viele Beispiele.
+> - Überprüfen und übernehmen Sie nach Möglichkeit den [Leitfaden für die Cloud Adoption Framework-Benennung und -Markierung](../ready/azure-best-practices/naming-and-tagging.md). Dieser Leitfaden hilft Ihnen bei der Entscheidung für einen sinnvollen Benennungsstandard und bietet viele Beispiele.
 > - Verwenden von Resource Manager-Richtlinien zum Durchsetzen von Benennungsstandards.
 >
 > Denken Sie immer daran, dass sich Namen später nur sehr schwer ändern lassen – nehmen Sie sich also jetzt genügend Zeit, damit später keine Probleme auftreten.
@@ -126,7 +126,7 @@ Konzentrieren Sie sich bei Ihren Benennungsstandards auf die Ressourcen, die am 
 
 ### <a name="resource-tags"></a>Ressource Tags
 
-Ressourcentags sind eng an Benennungsstandards gekoppelt. Je mehr Ressourcen den Abonnements hinzugefügt werden, desto wichtiger wird es, diese für Abrechnung, Verwaltung und Betrieb logisch zu kategorisieren. Weitere Informationen finden Sie unter [Verwenden von Tags zum Organisieren von Azure-Ressourcen](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags).
+Ressourcentags sind eng an Benennungsstandards gekoppelt. Je mehr Ressourcen den Abonnements hinzugefügt werden, desto wichtiger wird es, diese für Abrechnung, Verwaltung und Betrieb logisch zu kategorisieren. Weitere Informationen finden Sie unter [Verwenden von Tags zum Organisieren von Azure-Ressourcen](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources).
 
 > [!IMPORTANT]
 > Tags können persönliche Informationen enthalten und fallen möglicherweise unter die DSGVO. Planen Sie die Verwaltung Ihrer Tags sorgfältig. Allgemeine Informationen zur DSGVO finden Sie im Abschnitt [DSGVO im Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
@@ -184,7 +184,7 @@ Beim Implementieren des rollenbasierten Zugriffs empfiehlt es sich dringend, fol
 > [!IMPORTANT]
 >Nutzen Sie die Funktionen [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) (PIM), Azure [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) und [Bedingter Zugriff](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal), um für mehr Sicherheit und Transparenz für alle administrativen Aktivitäten in sämtlichen Azure-Abonnements zu sorgen. Diese Funktionen werden mit einer gültigen Azure AD Premium-Lizenz (je nach Feature) bereitgestellt, um Ihre Identitäten noch besser zu sichern und zu verwalten. Azure AD PIM ermöglicht den Just-in-Time-Verwaltungszugriff mit einem Genehmigungsworkflow sowie die vollständige Überwachung der Aktivierungen und Aktivitäten eines Administrators. Azure Multi-Factor Authentication ist eine weitere wichtige Funktion und ermöglicht eine zweistufige Überprüfung bei der Anmeldung beim Azure-Portal. In Kombination mit den Steuerungsmöglichkeiten des bedingten Zugriffs können Sie das Risiko einer Kompromittierung effektiv senken.
 
-Die Planung und Vorbereitung von Identität und Zugriffssteuerung sowie das Befolgen von [bewährten Methoden beim Azure Identity Management](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices) stellt eine der besten Strategien für die Risikominderung dar, die Sie anwenden könne, und sollte für jede Bereitstellung als obligatorisch betrachtet werden.
+Die Planung und Vorbereitung von Identität und Zugriffssteuerung sowie das Befolgen von [bewährten Methoden beim Azure Identity Management](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices) stellt eine der besten Strategien für die Risikominderung dar, die Sie anwenden könne, und sollte für jede Bereitstellung als obligatorisch betrachtet werden.
 
 ## <a name="security"></a>Sicherheit
 
@@ -277,10 +277,10 @@ Microsoft stellt verschiedene Tools zur Verfügung, mit denen Sie Ihre Kosten vi
 
 Diese Tools stellen Ihnen sofortige Informationen zu Kosten bereit und bieten die Möglichkeit, sofort Aktionen auszuführen.
 
-- **Kosten für Abonnementressourcen:** Die Ansicht [Azure-Kostenanalyse](https://docs.microsoft.com/azure/cost-management/overview) im Portal bietet einen schnellen Überblick über Ihre Kosten sowie Informationen zu den täglichen Ausgaben, aufgeschlüsselt nach Ressource oder Ressourcengruppe.
-- **Azure Cost Management:** Dieses Produkt ist das Ergebnis der Übernahme von Cloudyn durch Microsoft und ermöglicht es Ihnen, Ihre Azure-Ausgaben sowie Ihre Ausgaben für andere Anbieter öffentlicher Clouds zu verwalten und zu analysieren. Das Produkt bietet sowohl kostenlose als auch kostenpflichtige Tarife sowie eine Vielzahl von Funktionen. In der [Übersicht](https://docs.microsoft.com/azure/cost-management/overview) finden Sie mehr dazu.
-- **Azure-Budgets und Aktionsgruppen:** Herauszufinden, was wie viel kostet, und diese Kosten möglicherweise zu senken, war bis vor Kurzem eine eher manuelle Aufgabe. Mit der Einführung von Azure-Budgets und der zugehörigen APIs können Sie jetzt Aktionen erstellen, die ausgelöst werden, wenn Kosten einen bestimmten Schwellenwert erreichen. Mehr dazu finden Sie in [diesem Beispiel](https://channel9.msdn.com/Shows/Azure-Friday/Managing-costs-with-the-Azure-Budgets-API-and-Action-Groups). Ein Beispiel wäre das Herunterfahren einer Ressourcengruppe für Tests, wenn diese 100 % ihres Budgets erreicht hat, oder [anderes Beispiel].
-- **Azure Advisor**: Das Wissen, was etwas kostet, ist nur die halbe Miete. Wie dieses Wissen umgesetzt wird, steht auf einem ganz anderen Blatt. [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) bietet Empfehlungen zu Aktionen, durch die Sie Geld sparen, die Zuverlässigkeit verbessern oder sogar die Sicherheit erhöhen können.
+- **Kosten für Abonnementressourcen:** Die Ansicht [Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview) im Portal bietet einen schnellen Überblick über Ihre Kosten sowie Informationen zu den täglichen Ausgaben, aufgeschlüsselt nach Ressource oder Ressourcengruppe.
+- **Azure Cost Management:** Dadurch können Sie Ihre Azure-Ausgaben sowie Ihre Ausgaben für andere öffentliche Cloudanbieter verwalten und analysieren. Das Produkt bietet sowohl kostenlose als auch kostenpflichtige Tarife sowie eine Vielzahl von Funktionen.
+- **Azure-Budgets und Aktionsgruppen:** Herauszufinden, was wie viel kostet, und diese Kosten möglicherweise zu senken, war bis vor Kurzem eine eher manuelle Aufgabe. Mit der Einführung von Azure-Budgets und der zugehörigen APIs können Sie jetzt Aktionen erstellen wie in [diesem Beispiel](https://channel9.msdn.com/Shows/Azure-Friday/Managing-costs-with-the-Azure-Budgets-API-and-Action-Groups), wenn Kosten einen bestimmten Schwellenwert erreichen. Sie könnten z. B. eine „Test“-Ressourcengruppe schließen, wenn sie 100 % ihres Budgets erreicht hat.
+- **Azure Advisor:** Das Wissen, was etwas kostet, ist nur die halbe Miete. Wie dieses Wissen umgesetzt wird, steht auf einem ganz anderen Blatt. [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) bietet Empfehlungen zu Aktionen, durch die Sie Geld sparen, die Zuverlässigkeit verbessern oder sogar die Sicherheit erhöhen können.
 
 ### <a name="external-cost-management-tools"></a>Externe Kostenmanagementtools
 

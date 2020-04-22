@@ -4,15 +4,15 @@ description: Verwenden Sie das Framework für die Cloudeinführung für Azure, u
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f714931624eab819fafcf086e42d3ab765c13eed
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 75b410e293d3e083b45b91b543bce4b70b8078ee
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092913"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997748"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>Pfad für die Qualifikationsbereitschaft während der Phase „Bereitschaft“ eines Migrationspfads
 
@@ -38,13 +38,13 @@ Während der Vorbereitungsphase werden die technischen Mitarbeiter aufgefordert,
 - [Azure-Netzwerke](https://docs.microsoft.com/learn/modules/intro-to-azure-networking): Informationen über die Grundlagen von Azure-Netzwerken und wie Azure-Netzwerktechnik die Resilienz verbessern und die Latenz verringern kann.
 - [Computeoptionen in Azure](https://docs.microsoft.com/learn/modules/intro-to-azure-compute): Informationen über die Azure-Computedienste.
 - [Schützen von Ressourcen mit der rollenbasierten Zugriffssteuerung (Role-Based Access Control, RBAC)](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac): Verwenden von RBAC zum Sichern von Ressourcen.
-- [Datenspeicheroptionen](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure/index): Vorteile des Azure-Datenspeichers.
+- [Datenspeicheroptionen](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure): Vorteile des Azure-Datenspeichers.
 
 Während der Phase „Bereitschaft“ werden Architekten aufgefordert, Lösungen zu entwickeln, die alle Azure-Umgebungen umfassen. Die folgenden qualifizierenden Ressourcen können Architekten auf diese Aufgaben vorbereiten:
 
-- [Grundlagen der Cloudarchitektur](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): PluralSight-Kurs zur Unterstützung bei der Entwicklung der richtigen grundlegenden Lösungen.
-- [Microsoft Azure-Architektur](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): PluralSight-Kurs: Einführung in die Azure-Architektur für Architekten.
-- [Entwerfen von Migrationsvorgängen für Microsoft Azure](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): PluralSight-Kurs zur Unterstützung von Architekten beim Entwurf einer Migrationslösung.
+- [Grundlagen der Cloudarchitektur](https://www.pluralsight.com/courses/cloud-architecture-foundations): Ein Pluralsight-Kurs zur Unterstützung bei der Entwicklung der richtigen grundlegenden Lösungen.
+- [Microsoft Azure-Architektur](https://www.pluralsight.com/courses/cloud-architecture-foundations): Ein Pluralsight-Kurs zum Einführen von Architekten in die Azure-Architektur.
+- [Entwerfen von Migrationsvorgängen für Microsoft Azure](https://www.pluralsight.com/courses/cloud-architecture-foundations): Ein Pluralsight-Kurs zur Unterstützung von Architekten beim Entwurf einer Migrationslösung.
 
 ## <a name="deeper-skills-exploration"></a>Ausführlichere Untersuchung von Fähigkeiten
 
@@ -56,7 +56,7 @@ Microsoft und seine Partner bieten eine Vielzahl von Optionen für alle Zielgrup
 
 - [Microsoft IT Pro Career Center](https://www.microsoft.com/itpro): Kostenlose Onlineressource zur Begleitung Ihres Karrierewegs in der Cloud. Profitieren Sie von den Empfehlungen von Branchenexperten für Ihre Cloudrolle und zu den Fähigkeiten, mit denen Sie sie erreichen. Folgen Sie in Ihrem eigenen Tempo einem Lehrplan, um die Fähigkeiten zu erlangen, die Sie am meisten benötigen, um auf dem aktuellen Stand zu bleiben.
 
-Mit unseren [Microsoft Azure-Zertifizierungstrainings und -prüfungen](https://www.microsoft.com/learning/azure-certification.aspx) können Sie Ihr Wissen rund um Azure belegen und sich offizielle Anerkennung verschaffen.
+Mit unseren [Microsoft Azure-Zertifizierungstrainings und -prüfungen](https://www.microsoft.com/learning/certification-overview.aspx) können Sie Ihr Wissen rund um Azure belegen und sich offizielle Anerkennung verschaffen.
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
@@ -64,7 +64,7 @@ Microsoft Learn ist ein neuer Lernansatz. Die Bereitschaft zu den neuen Qualifik
 
 Die folgenden Beispiele sind einige angepasste Lernpfade auf Microsoft Learn, die sich am Ready-Teil des Framework für die Cloudeinführung (Cloud Adoption Framework) ausrichten:
 
-[Azure-Grundlagen](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer): Erfahren Sie mehr über Cloud-Konzepte wie Hochverfügbarkeit, Skalierbarkeit, Elastizität, Flexibilität, Fehlertoleranz und Notfallwiederherstellung.  Informieren Sie sich über die Vorteile von Cloud Computing in Azure und wie Sie damit Zeit und Geld sparen können. Vergleichen Sie grundlegende Strategien für den Übergang zur Azure-Cloud und stellen Sie diese gegenüber. Untersuchen Sie den Umfang der in Azure verfügbaren Dienste, einschließlich Compute, Netzwerk, Speicher und Sicherheit.
+[Azure-Grundlagen](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer): Erfahren Sie mehr über Cloud-Konzepte wie Hochverfügbarkeit, Skalierbarkeit, Elastizität, Flexibilität, Fehlertoleranz und Notfallwiederherstellung. Informieren Sie sich über die Vorteile von Cloud Computing in Azure und wie Sie damit Zeit und Geld sparen können. Vergleichen Sie grundlegende Strategien für den Übergang zur Azure-Cloud und stellen Sie diese gegenüber. Untersuchen Sie den Umfang der in Azure verfügbaren Dienste, einschließlich Compute, Netzwerk, Speicher und Sicherheit.
 
 [Verwalten von Ressourcen in Azure](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer): Es wird beschrieben, wie Sie die Azure-Befehlszeile und das Webportal verwenden, um cloudbasierte Ressourcen zu erstellen, zu verwalten und zu steuern.
 

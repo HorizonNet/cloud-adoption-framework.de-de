@@ -4,21 +4,21 @@ description: Initiieren Sie die Migration zu Azure, indem Sie die geeigneten Too
 author: matticusau
 ms.author: mlavery
 ms.date: 08/08/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 697e42d16918960f97bc534bad93a854af963a49
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: eca885e84e0f3a29a0d3417c550de78d7bdf74fc
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353902"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396019"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
-# <a name="migrate-assets-infrastructure-apps-and-data"></a>Migrieren von Objekten (Infrastruktur, Apps und Daten)
+# <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>Bereitstellen von Workloads und Assets (Infrastruktur, Apps und Daten)
 
 In dieser Phase verwenden Sie die Ausgabe der Bewertungsphase, um die Migration der Umgebung einzuleiten. Dieser Leitfaden hilft Ihnen, die geeigneten Tools zu identifizieren, um den Zustand "Fertig" zu erreichen, einschließlich nativer Tools, Tools von Drittanbietern und Projektmanagementtools.
 
@@ -130,7 +130,7 @@ Nach der Registrierung des Ressourcenanbieters können Sie eine Azure Database M
 1. Wählen Sie **+ Ressource erstellen** aus, und suchen Sie im Marketplace nach **Azure Database Migration Service**.
 1. Schließen Sie den Assistenten **Migrationsdienst erstellen** ab, und wählen Sie anschließend **Erstellen** aus.
 
-Der Dienst ist nun bereit, die unterstützten Quelldatenbanken (z.B. SQL Server, MySQL, PostgreSQL oder MongoDb) zu migrieren.
+Der Dienst ist nun bereit, die unterstützten Quelldatenbanken (z. B. SQL Server, MySQL, PostgreSQL oder MongoDB) zu migrieren.
 
 ::: zone target="chromeless"
 
@@ -262,7 +262,7 @@ Microsoft bietet außerdem folgende Projektverwaltungstools zur Erweiterung des 
 - [Microsoft Planner](https://tasks.office.com): Eine einfache, visuelle Möglichkeit zum Organisieren von Teamwork.
 - [Microsoft Project](https://products.office.com/project/project-and-portfolio-management-software): Projekt- und Portfolioverwaltung, Ressourcenkapazitätsverwaltung, Finanzmanagement, Timesheet- und Zeitplanverwaltung.
 - [Microsoft Teams](https://products.office.com/microsoft-teams): Tool für Zusammenarbeit und Kommunikation im Team. Teams integriert auch Planner und andere Tools, um die Zusammenarbeit zu verbessern.
-- [Azure DevOps](https://dev.azure.com): Die Planungsvorlage des Frameworks für die Cloudeinführung ist zur Verwendung von Azure DevOps nicht erforderlich. Sie können den Dienst ohne die Vorlage verwenden, um Ihre Infrastruktur als Code zu verwalten, oder die Projektverwaltung mithilfe der Arbeitselemente und Boards durchführen. Mit steigender Erfahrung können Sie die CI/CD-Funktionen nutzen.
+- [Azure DevOps Services](https://azure.microsoft.com/services/devops): Die Planungsvorlage des Frameworks für die Cloudeinführung ist zur Verwendung von Azure DevOps nicht erforderlich. Sie können den Dienst ohne die Vorlage verwenden, um Ihre Infrastruktur als Code zu verwalten, oder die Projektverwaltung mithilfe der Arbeitselemente und Boards durchführen. Mit steigender Erfahrung können Sie die CI/CD-Funktionen nutzen.
 
 Dies sind nicht die einzigen verfügbaren Tools. Viele weitere Tools von Drittanbietern sind in der Projektmanagementcommunity weit verbreitet.
 
