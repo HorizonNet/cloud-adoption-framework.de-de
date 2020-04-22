@@ -4,16 +4,16 @@ description: Verwenden Sie das Framework für die Cloudeinführung für Azure, u
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 00cf24b493bbeacae5e3f3d35d2951cbe838219e
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: d24c5076bd7843f6f4559e901144be6ba3a33ca4
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094007"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120294"
 ---
 # <a name="central-it-capabilities"></a>Funktionen der zentralen IT
 
@@ -102,7 +102,7 @@ Ein ausgereiftes zentrales IT-Team behält die notwendigen Schutzmaßnahmen bei,
 
 Diese Beispielgeschichte veranschaulicht den Ansatz, den ein ausgereiftes zentrales IT-Team angewendet hat, um die Einführung zu unterstützen und zu ermöglichen.
 
-Contoso, LLC hat ein zentrales IT-Modell für die Unterstützung der Cloudressourcen des Unternehmens eingeführt. Um dieses Modell bereitzustellen, hat das Unternehmen strikte Kontrollen für verschiedene gemeinsam genutzte Dienste wie eingehende Netzwerkverbindungen implementiert. Dank dieses klugen Schachzugs konnte Contoso, LLC die Risiken für die Cloudumgebung senken und ein einzelnes Gerät bereitstellen, das im Fall einer Sicherheitsverletzung sämtlichen Datenverkehr blockiert. Die Sicherheitsbaseline des Unternehmens gibt vor, dass sämtlicher eingehender Datenverkehr durch ein freigegebenes Gerät fließen muss, das vom zentralen IT-Team verwaltet wird.
+Contoso, LLC hat ein zentrales IT-Modell für die Unterstützung der Cloudressourcen des Unternehmens eingeführt. Um dieses Modell bereitzustellen, hat das Unternehmen strikte Kontrollen für verschiedene gemeinsam genutzte Dienste wie eingehende Netzwerkverbindungen implementiert. Dank dieses klugen Schachzugs konnte Contoso, LLC die Risiken für die Cloudumgebung senken und ein einzelnes Gerät bereitstellen, das beim Auftreten einer Sicherheitsverletzung sämtlichen Datenverkehr blockiert. Die Sicherheitsbaseline des Unternehmens gibt vor, dass sämtlicher eingehender Datenverkehr durch ein freigegebenes Gerät fließen muss, das vom zentralen IT-Team verwaltet wird.
 
 Nun benötigt eins der Cloudeinführungsteams eine Umgebung mit einer dedizierten und speziell konfigurierten eingehenden Netzwerkverbindung, um eine bestimmte Cloudtechnologie zu nutzen. Ein zentrales IT-Team, das noch nicht den entsprechenden Reifegrad aufweist, würde diese Anforderung einfach ablehnen und die vorhandenen Prozesse über die Einführungsanforderungen stellen. Das zentrale IT-Team von Contoso reagierte anders. Das Team hat schnell eine einfache, vierteilige Lösung für dieses Dilemma gefunden: Klassifizierung, Verhandlung, Isolierung und Automatisierung.
 

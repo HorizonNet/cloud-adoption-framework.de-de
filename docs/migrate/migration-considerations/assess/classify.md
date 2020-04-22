@@ -4,15 +4,15 @@ description: Klassifizieren Sie Ihre Workloads während einer Bewertung, die vor
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 03/03/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8f912891bf90d0ecef29727d7d7a067d442234fc
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 0708c394cca50c64813b7eea04a1239586c825af
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79095390"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80527721"
 ---
 # <a name="workload-classification-before-migration"></a>Workloadklassifizierung vor der Migration
 
@@ -24,7 +24,7 @@ In diesem Artikel empfehlen wir Ihnen, Ihre vorhandenen Markierungsstandards um 
 
 ## <a name="data-sensitivity"></a>Vertraulichkeit der Daten
 
-Wie im Artikel zur [Datenklassifizierung](../../../govern/policy-compliance/data-classification.md) beschrieben ist, werden bei der Datenklassifizierung die Auswirkungen gemessen, die bei einem Datenleck für das Unternehmen oder seine Kunden entstehen würden. Die Teams für Governance und Sicherheit nutzen die Datenvertraulichkeit bzw. die Datenklassifizierung als Indikator für Sicherheitsrisiken. Während der Bewertung sollte das Cloudeinführungsteam die Datenklassifizierung für jede Workload evaluieren, die für die Migration bestimmt ist, und diese Klassifizierungsinformationen den Unterstützungsteams zur Verfügung stellen. Workloads, bei denen es strikt um „öffentliche Daten“ geht, haben ggf. keinerlei Auswirkung auf Unterstützungsteams. Wenn es um Daten aus dem Bereich „Streng vertraulich“ geht, haben sowohl Governance- als auch Sicherheitsteams meist ein berechtigtes Interesse daran, an der Bewertung der Workload beteiligt zu werden.
+Wie im Artikel zur [Datenklassifizierung](../../../govern/policy-compliance/data-classification.md) beschrieben ist, werden bei der Datenklassifizierung die Auswirkungen gemessen, die bei einem Datenleck für das Unternehmen oder seine Kunden entstehen würden. Die Teams für Governance und Sicherheit verwenden die Datenvertraulichkeit bzw. die Datenklassifizierung als Indikator für Sicherheitsrisiken. Während der Bewertung sollte das Cloudeinführungsteam die Datenklassifizierung für jede Workload evaluieren, die für die Migration bestimmt ist, und diese Klassifizierungsinformationen den Unterstützungsteams zur Verfügung stellen. Workloads, bei denen es strikt um „öffentliche Daten“ geht, haben ggf. keinerlei Auswirkung auf Unterstützungsteams. Wenn es um Daten aus dem Bereich „Streng vertraulich“ geht, haben sowohl Governance- als auch Sicherheitsteams meist ein berechtigtes Interesse daran, an der Bewertung der Workload beteiligt zu werden.
 
 Arbeiten Sie zu einem möglichst frühen Zeitpunkt mit Ihren Teams für die Sicherheit und Governance zusammen, um Folgendes zu definieren:
 
@@ -35,7 +35,7 @@ Arbeiten Sie zu einem möglichst frühen Zeitpunkt mit Ihren Teams für die Sich
 
 ## <a name="mission-criticality"></a>Kritikalität
 
-Wie im Artikel zur [Wichtigkeit von Workloads](../../../manage/considerations/criticality.md) beschrieben, ist die Wichtigkeit (Kritikalität) einer Workload ein Maß dafür, wie stark die Auswirkungen für ein Unternehmen bei einem entsprechenden Ausfall sind. Mit diesem Datenpunkt können Betriebsverwaltungs- und Sicherheitsteams Risiken zu Ausfällen und Sicherheitsverletzungen evaluieren. Während der Bewertung sollte das Cloudeinführungsteam für jede Workload, die für die Migration bestimmt ist, die „Kritikalität“ für das Unternehmen evaluieren und diese Klassifizierungsinformationen den Unterstützungsteams zur Verfügung stellen. Bei Workloads vom Typ „Niedrig“ oder „“Nicht unterstützt“ ergeben sich meist nur geringe Auswirkungen auf die Unterstützungsteams. Wenn es aber um Workloads vom Typ „Unternehmenskritisch“ oder „Kritisch für Geschäftseinheit“ geht, sind die betriebsbezogenen Abhängigkeiten stärker ausgeprägt.
+Wie im Artikel zur [Wichtigkeit von Workloads](../../../manage/considerations/criticality.md) beschrieben, ist die Wichtigkeit (Kritikalität) einer Workload ein Maß dafür, wie stark die Auswirkungen für ein Unternehmen bei einem Ausfall sind. Mit diesem Datenpunkt können Betriebsverwaltungs- und Sicherheitsteams Risiken zu Ausfällen und Sicherheitsverletzungen evaluieren. Während der Bewertung sollte das Cloudeinführungsteam für jede Workload, die für die Migration bestimmt ist, die „Kritikalität“ für das Unternehmen evaluieren und diese Klassifizierungsinformationen den Unterstützungsteams zur Verfügung stellen. Bei Workloads vom Typ „Niedrig“ oder „“Nicht unterstützt“ ergeben sich meist nur geringe Auswirkungen auf die Unterstützungsteams. Wenn es aber um Workloads vom Typ „Unternehmenskritisch“ oder „Kritisch für Geschäftseinheit“ geht, sind die betriebsbezogenen Abhängigkeiten stärker ausgeprägt.
 
 Arbeiten Sie zu einem möglichst frühen Zeitpunkt mit Ihren Teams für die Sicherheit und den Betrieb zusammen, um Folgendes zu definieren:
 

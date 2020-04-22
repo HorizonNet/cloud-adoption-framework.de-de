@@ -4,16 +4,16 @@ description: Hier erfahren Sie, wie Sie vorhandene IT-Richtlinien von Unternehme
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e4235830eee8e57581214f3eabb46c32ebcf975b
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 244444057561118c2e3f2b7a574bfdfb529f0978
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709123"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997396"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -23,7 +23,7 @@ Eine Überprüfung von Cloudrichtlinien ist der erste Schritt zur [Governance-Ei
 
 ## <a name="why-perform-a-cloud-policy-review"></a>Warum sollte eine Überprüfung von Cloudrichtlinien durchgeführt werden?
 
-In den meisten Unternehmen wird die IT über die Ausführung von Prozessen verwaltet, die sich an die geltenden Richtlinien angleichen. In kleinen Unternehmen gibt es möglicherweise nur einzelne Richtlinien, und Prozesse sind ungenau definiert. Wenn aus Unternehmen Großunternehmen werden, werden Richtlinien und Prozesse tendenziell klarer dokumentiert und konsequenter ausgeführt.
+In den meisten Unternehmen wird die IT über die Ausführung von Prozessen verwaltet, die sich an den geltenden Richtlinien orientieren. In kleinen Unternehmen gibt es möglicherweise nur einzelne Richtlinien, und Prozesse sind ungenau definiert. Wenn aus Unternehmen Großunternehmen werden, werden Richtlinien und Prozesse tendenziell klarer dokumentiert und konsequenter ausgeführt.
 
 Während Unternehmen für ausgereiftere IT-Unternehmensrichtlinien sorgen, gibt es bei Abhängigkeiten von den letzten technischen Entscheidungen die Tendenz, in leitende Richtlinien einzudringen. So kommt es beispielsweise häufig vor, dass Notfallwiederherstellungsprozesse Richtlinien enthalten, die Offsite-Bandsicherungen erfordern. Diese Bedingung setzt eine Abhängigkeit von einem einzigen Technologietyp (Bandsicherungen) voraus, der vielleicht nicht mehr die relevanteste Lösung ist.
 

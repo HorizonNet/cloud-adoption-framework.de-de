@@ -4,15 +4,15 @@ description: Hier erfahren Sie, wie Sie App-Lösungen erstellen, um Daten zu str
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c482c6a9642e1de3f28bbe650da6fa43cf9229be
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 1159fd0b1b5195a5775901cc9229f5c4a7b34ba2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356768"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120502"
 ---
 # <a name="engage-through-applications"></a>Einbinden durch Anwendungen
 
@@ -35,7 +35,7 @@ Um für Innovationen bereit zu sein, sollte die gesamte Anwendungsentwicklung mi
 
 Professionelle Entwickler sind eine wichtige Komponente der Innovation. Wenn eine Hypothese bedarfsabhängig korrekt ist, müssen professionelle Entwickler die Lösung für die Skalierung stabilisieren und vorbereiten. Die meisten Prinzipien, auf die in diesem Artikel verwiesen wird, müssen von professionellen Entwicklern unterstützt werden. Leider deuten aktuelle Trends darauf hin, dass nicht genügend professionelle Entwickler für die Nachfrage zur Verfügung stehen. Darüber hinaus können Kosten und Geschwindigkeit der Innovation ungünstiger ausfallen, wenn die strengen Maßstäbe professioneller Entwicklung angewandt werden. Als Reaktion auf diese Herausforderungen sind Entwickler ohne Programmiererfahrung eine Alternative, um den Entwicklungsaufwand zu skalieren und frühe Hypothesetests zu beschleunigen.
 
-Der Einsatz von Entwicklern ohne Programmiererfahrung könnte sinnvoll sein, wenn frühe Hypothesen mithilfe von Tools wie [PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview) für App-Schnittstellen, [AI Builder](https://docs.microsoft.com/powerapps/use-ai-builder) für Prozesse und Vorhersagen, [Microsoft Flow](https://docs.microsoft.com/flow) für Workflows oder [Power BI](https://docs.microsoft.com/power-bi) für den Datenverbrauch überprüft werden können.
+Der Einsatz von Entwicklern ohne Programmiererfahrung könnte sinnvoll sein, wenn frühe Hypothesen mithilfe von Tools wie [PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview) für App-Schnittstellen, [AI Builder](https://docs.microsoft.com/powerapps/use-ai-builder) für Prozesse und Vorhersagen, [Microsoft Power Automate](https://docs.microsoft.com/power-automate) für Workflows oder [Power BI](https://docs.microsoft.com/power-bi) für den Datenverbrauch überprüft werden können.
 
 > [!NOTE]
 > Beim Einsatz von Entwicklern ohne Programmiererfahrung zum Testen von Hypothesen sollten einige professionelle Entwickler mit Unterstützung, Überprüfung und Anleitung helfen. Nachdem eine Hypothese bedarfsabhängig überprüft wurde, beschleunigt ein Prozess, der die Anwendung in ein stabileres Programmiermodell überführt, die Rendite der Innovation. Wenn professionelle Entwickler schon früh in die Prozessdefinitionen einbezogen werden, können daraus später sauberere Übergänge resultieren.
@@ -103,7 +103,7 @@ Wenn Sie versuchen, die globale Nachfrage nach einer vorhandenen Lösung zu skal
 
 Je mehr in einer Lösung verwaltet werden muss, desto langsamer wird die Lösung durchlaufen. Das bedeutet, dass Sie die Innovation beschleunigen können, indem Sie die Auswirkungen von Vorgängen auf die verfügbare Bandbreite reduzieren.
 
-Zur Vorbereitung auf die vielen Iterationen, die für die Bereitstellung einer innovativen Lösung erforderlich sind, ist vorausschauendes Denken wichtig. Minimieren Sie beispielsweise die Betriebsbelastungen frühzeitig im Prozess, indem Sie serverlose Optionen bevorzugen. In Azure könnten serverlose Anwendungsoptionen [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) oder [Container](https://docs.microsoft.com/azure/architecture/cloud-adoption/migrate/azure-best-practices/contoso-migration-rearchitect-container-sql) beinhalten.
+Zur Vorbereitung auf die vielen Iterationen, die für die Bereitstellung einer innovativen Lösung erforderlich sind, ist vorausschauendes Denken wichtig. Minimieren Sie beispielsweise die Betriebsbelastungen frühzeitig im Prozess, indem Sie serverlose Optionen bevorzugen. In Azure könnten serverlose Anwendungsoptionen [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) oder [Container](https://docs.microsoft.com/azure/containers) beinhalten.
 
 Parallel bietet Azure serverlose Transaktionsdatenoptionen, die ebenfalls den Mehraufwand reduzieren. Der [Azure-Produktkatalog](https://docs.microsoft.com/azure) bietet Datenbankoptionen, die Daten ohne eine vollständige Datenplattform hosten.
 

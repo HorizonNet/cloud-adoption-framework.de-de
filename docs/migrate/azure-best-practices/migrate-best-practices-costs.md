@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6e5296ac6350df0d6894ad740a70e49a5ee7eae0
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 43dfb9f6d5b5715b7f9aca08e19ed0f7c14dc6de
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354175"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81119996"
 ---
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Bewährte Methoden für Kostenermittlung und Größenanpassung von Workloads, die zu Azure migriert werden
 
@@ -140,20 +140,20 @@ Speicherkonten können verschiedene Arten von Redundanz für Resilienz und Hochv
 
 **Typ** | **Details** | **Verwendung**
 --- | --- | ---
-**Lokal redundanter Speicher (LRS)** | Schützt vor einem lokalen Ausfall durch Replikation in eine einzelne Speichereinheit in einer gesonderten Fehler- und Updatedomäne. Behält mehrere Kopien Ihrer Daten in einem Rechenzentrum. Bietet eine Dauerhaftigkeit von mindestens 99,999999999 % (11 Neunen) für Objekte in einem bestimmten Jahr. | Erwägen Sie, ob Ihre Anwendung Daten speichert, die problemlos wiederhergestellt werden können.
-**Zonenredundanter Speicher (ZRS)** | Schützt vor Rechenzentrumsausfällen, indem über drei Speichercluster in einer einzelnen Region hinweg repliziert wird. Jeder Speichercluster ist physisch unabhängig und befindet sich in einer eigenen Verfügbarkeitszone. Bietet eine Dauerhaftigkeit von mindestens 99,9999999999 % (12 Neunen\') für Objekte für ein bestimmtes Jahr, indem mehrere Kopien Ihrer Daten in mehreren Rechenzentren oder mehreren Regionen gespeichert werden. | Überlegen Sie, ob Sie Konsistenz, Dauerhaftigkeit und Hochverfügbarkeit benötigen. Schützt eventuell nicht vor einem regionalen Notfall, wenn mehrere Zonen dauerhaft betroffen sind.
-**Geografisch redundanter Speicher (GRS)** | Schützt vor dem Ausfall einer vollständigen Region, indem Daten in eine sekundäre Region repliziert werden, die mehrere hundert Kilometer vom primären Speicherort der Quelldaten entfernt ist. Bietet eine Dauerhaftigkeit von mindestens 99,99999999999999 % (16 Neunen) für Objekte in einem bestimmten Jahr. | Replikatdaten sind nur verfügbar, wenn Microsoft ein Failover in die sekundäre Region initiiert. Kommt es zu einem Failover, sind Lese- und Schreibzugriff verfügbar.
-**Georedundanter Speicher mit Lesezugriff (RA-GRS)** | Ähnlich wie GRS. Bietet eine Dauerhaftigkeit von mindestens 99,99999999999999 % (16 Neunen) für Objekte in einem bestimmten Jahr. | Bietet außerdem 99,99 % Leseverfügbarkeit, indem Lesezugriff aus der zweiten für GRS verwendeten Region zugelassen wird.
+**Lokal redundanter Speicher (LRS)** | Schützt vor einem lokalen Ausfall durch Replikation in eine einzelne Speichereinheit in einer gesonderten Fehler- und Updatedomäne. Behält mehrere Kopien Ihrer Daten in einem Rechenzentrum. Stellt eine Dauerhaftigkeit von mindestens 99,999999999 Prozent (11 Neunen) für Objekte in einem bestimmten Jahr bereit. | Erwägen Sie, ob Ihre Anwendung Daten speichert, die problemlos wiederhergestellt werden können.
+**Zonenredundanter Speicher (ZRS)** | Schützt vor Rechenzentrumsausfällen, indem über drei Speichercluster in einer einzelnen Region hinweg repliziert wird. Jeder Speichercluster ist physisch unabhängig und befindet sich in einer eigenen Verfügbarkeitszone. Bietet eine Dauerhaftigkeit von mindestens 99,9999999999 Prozent (12 Neunen) für Objekte für ein bestimmtes Jahr, indem mehrere Kopien Ihrer Daten in mehreren Rechenzentren oder mehreren Regionen gespeichert werden. | Überlegen Sie, ob Sie Konsistenz, Dauerhaftigkeit und Hochverfügbarkeit benötigen. Schützt eventuell nicht vor einem regionalen Notfall, wenn mehrere Zonen dauerhaft betroffen sind.
+**Geografisch redundanter Speicher (GRS)** | Schützt vor dem Ausfall einer vollständigen Region, indem Daten in eine sekundäre Region repliziert werden, die mehrere hundert Kilometer vom primären Speicherort der Quelldaten entfernt ist. Stellt eine Dauerhaftigkeit von mindestens 99,99999999999999 Prozent (16 Neunen) für Objekte in einem bestimmten Jahr bereit. | Replikatdaten sind nur verfügbar, wenn Microsoft ein Failover in die sekundäre Region initiiert. Kommt es zu einem Failover, sind Lese- und Schreibzugriff verfügbar.
+**Georedundanter Speicher mit Lesezugriff (RA-GRS)** | Ähnlich wie GRS. Stellt eine Dauerhaftigkeit von mindestens 99,99999999999999 Prozent (16 Neunen) für Objekte in einem bestimmten Jahr bereit. | Bietet außerdem 99,99 Prozent Leseverfügbarkeit, indem Lesezugriff aus der zweiten für GRS verwendeten Region zugelassen wird.
 
 **Weitere Informationen**:
 
 - [Sehen Sie sich](https://azure.microsoft.com/pricing/details/storage) die Preise für Azure Storage an.
 - [Weitere Informationen zum](https://docs.microsoft.com/azure/storage/common/storage-import-export-service) Azure Import/Export für die Migration großer Datenmengen zu Azure-Blobs und Azure Files.
-- [Vergleichen Sie](https://docs.microsoft.com/azure/storage/common/storage-decide-blobs-files-disks?toc=%2fazure%2fstorage%2fblobs%2ftoc.json) Datentypen für Blobs, Dateien und Datenträgerspeicher.
+- [Vergleichen Sie](https://docs.microsoft.com/azure/storage/common/storage-decide-blobs-files-disks?toc=/azure/storage/blobs/toc.json) Datentypen für Blobs, Dateien und Datenträgerspeicher.
 - [Weitere Informationen](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers) zu Zugriffsebenen.
-- [Informationen zu ](https://docs.microsoft.com/azure/storage/common/storage-account-overview?toc=%2fazure%2fstorage%2fblobs%2ftoc.json) verschiedene Typen von Speicherkonten.
-- Informationen zu [Speicherredundanz](https://docs.microsoft.com/azure/storage/common/storage-redundancy), [LRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-lrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), [ZRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-zrs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json), [GRS](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json) und [GRS mit Lesezugriff](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs?toc=%2fazure%2fstorage%2fqueues%2ftoc.json#read-access-to-data-in-the-secondary-region).
-- [Weitere Informationen zu](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) Azure Files.
+- [Informationen zu ](https://docs.microsoft.com/azure/storage/common/storage-account-overview?toc=/azure/storage/blobs/toc.json) verschiedene Typen von Speicherkonten.
+- Informationen zu [Azure-Speicherredundanz](https://docs.microsoft.com/azure/storage/common/storage-redundancy), einschließlich LRS, ZRS, GRS und GRS mit Lesezugriff.
+- Weitere Informationen zu [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction).
 
 ## <a name="best-practice-take-advantage-of-azure-hybrid-benefits"></a>Bewährte Methode: Nutzen der Azure-Hybridvorteile
 
@@ -240,11 +240,11 @@ Mit Cost Management können Sie:
 
 **Weitere Informationen**:
 
-- [Einen Überblick erhalten](https://docs.microsoft.com/azure/cost-management/overview) über Azure Cost Management.
-- [Erfahren Sie, wie Sie](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices) Ihre Cloudinvestitionen mit Azure Cost Management optimieren.
-- [Erfahren Sie, wie Sie](https://docs.microsoft.com/azure/cost-management/use-reports) Azure Cost Management-Berichte verwenden.
-- [Erhalten Sie ein Tutorial](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/billing/toc.json) zum Optimieren von Kosten mithilfe von Empfehlungen.
-- [Sehen Sie sich ](https://docs.microsoft.com/rest/api/consumption/budgets) die Azure Consumption-API an.
+- Verschaffen Sie sich einen Überblick zu [Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview).
+- Erfahren Sie, wie Sie Ihre [Cloudinvestitionen mit Azure Cost Management optimieren](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices).
+- Erfahren Sie, wie Sie [Azure Cost Management-Berichte verwenden](https://docs.microsoft.com/azure/cost-management/use-reports).
+- Erhalten Sie ein [Tutorial zum Optimieren von Kosten mithilfe von Empfehlungen](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/billing/toc.json).
+- Sehen Sie sich die [Azure Consumption-API](https://docs.microsoft.com/rest/api/consumption/budgets) an.
 
 ## <a name="best-practice-monitor-resource-utilization"></a>Bewährte Methode: Ressourcennutzung überwachen
 
@@ -287,7 +287,7 @@ Wenn Sie Ressourcen in Azure verschieben und die Diagnoseprotokollierung für si
 
 **Weitere Informationen**:
 
-- [Informationen zum](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-usage-and-estimated-costs) Überwachen der Nutzung und der geschätzten Kosten.
+- [Informationen zum](https://docs.microsoft.com/azure/azure-monitor/platform/usage-estimated-costs) Überwachen der Nutzung und der geschätzten Kosten.
 
 ## <a name="best-practice-optimize-storage"></a>Bewährte Methode: Speicher optimieren
 

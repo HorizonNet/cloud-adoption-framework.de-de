@@ -4,16 +4,16 @@ description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adopti
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1d0c6d30e7bba864fb52b14fb82e1e88231e9a3c
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 328577aae931194517e015973a935de24b580a96
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80357043"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995244"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>Governanceleitfaden für Standardunternehmen: Beschreibung der bewährten Methoden
 
@@ -60,7 +60,7 @@ Die Entscheidung über den Abonnemententwurf bestimmt, wie Azure-Abonnements str
 
 Entscheidungen zur Ressourcenkonsistenz bestimmen die Tools, Prozesse und Aufgaben, die erforderlich sind, um sicherzustellen, dass Azure-Ressourcen innerhalb eines Abonnements konsistent bereitgestellt, konfiguriert und verwaltet werden. Im vorliegenden Beispielfall wurde **[Bereitstellungskonsistenz](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** als primäres Muster für die Ressourcenkonsistenz ausgewählt.
 
-- Ressourcengruppen werden mit dem Lebenszyklusansatz für Anwendungen erstellt. Alle Elemente, die gemeinsam erstellt, verwaltet und außer Betrieb genommen werden, sollten sich in einer einzigen Ressourcengruppe befinden. Weitere Informationen zu Ressourcengruppen finden Sie [hier](../../../decision-guides/resource-consistency/index.md#basic-grouping).
+- Ressourcengruppen werden mit dem Lebenszyklusansatz für Anwendungen erstellt. Alle Elemente, die gemeinsam erstellt, verwaltet und außer Betrieb genommen werden, sollten sich in einer einzigen Ressourcengruppe befinden. Weitere Informationen finden Sie im [Leitfaden zur Entscheidungsfindung bei der Ressourcenkonsistenz](../../../decision-guides/resource-consistency/index.md#basic-grouping).
 - Azure Policy sollte auf alle Abonnements aus der zugehörigen Verwaltungsgruppe angewendet werden.
 - Im Rahmen des Bereitstellungsprozesses sollten Azure Resource Consistency-Vorlagen für die Ressourcengruppe in der Quellcodeverwaltung gespeichert werden.
 - Jede Ressourcengruppe ist basierend auf dem oben beschriebenen Lebenszyklusansatz einer bestimmten Workload oder Anwendung zugeordnet.

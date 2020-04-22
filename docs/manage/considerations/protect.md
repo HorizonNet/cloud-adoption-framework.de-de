@@ -4,15 +4,15 @@ description: Enthält eine Beschreibung dazu, wie wichtig es ist, sich auf einen
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f46fb65572d319e2dc9a4a779cd205bbe476908b
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: c393b00de1d235553dcea544493ef019f46b1e0c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78340994"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80527582"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>Schutz und Wiederherstellung in der Cloudverwaltung
 
@@ -62,7 +62,7 @@ Weitere Informationen zu diesem Denkprozess finden Sie unter [Disziplin „Platt
 
 ### <a name="protect-and-recover-vms"></a>Schutz und Wiederherstellung von VMs
 
-Die meisten Workloads sind teilweise von virtuellen Computern abhängig, die verschiedene Aspekte der Lösung hosten. Damit eine Workload einen Geschäftsprozess nach einem Systemausfall wieder unterstützen kann, muss eine bestimmte Anzahl virtueller Computer schnell wiederhergestellt werden.
+Die meisten Workloads sind teilweise von virtuellen Computern abhängig, die verschiedene Aspekte der Lösung hosten. Damit eine Workload einen Geschäftsprozess nach einem Systemausfall wieder unterstützen kann, müssen einige virtuelle Computer schnell wiederhergestellt werden.
 
 Jede Minute Ausfallzeit dieser virtuellen Computer kann Umsatzverlust oder eine geringere Rentabilität nach sich ziehen. Wenn sich Ausfallzeiten von virtuellen Computern direkt auf das finanzielle Ergebnis des Geschäfts auswirken, ist die RTO sehr wichtig. Durch Replikation zu einem sekundären Standort und automatisierte Wiederherstellungsprozesse lassen sich virtuelle Computer schneller wiederherstellen. Dieses Modell wird als „Hot/Warm-Wiederherstellungsmodell“ bezeichnet. Virtuelle Computer mit dem höchsten Wiederherstellungsstatus können zu einem voll funktionsfähigen sekundären Standort repliziert werden. Dieser kostenintensivere Ansatz wird als Wiederherstellungsmodell mit hoher Verfügbarkeit oder „Hot/Hot-Wiederherstellungsmodell“ bezeichnet.
 

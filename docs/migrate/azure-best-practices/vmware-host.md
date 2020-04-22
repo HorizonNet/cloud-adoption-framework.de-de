@@ -4,15 +4,15 @@ description: Verwenden Sie das Framework für die Cloudeinführung für Azure, u
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/10/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7fb9e477575a870d1be09b45c91917f85c6a2f10
-ms.sourcegitcommit: 5411c3b64af966b5c56669a182d6425e226fd4f6
+ms.openlocfilehash: 735c958838cecc5704f38a76b2a27371628cdb66
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79312134"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80527755"
 ---
 # <a name="vmware-host-migration-best-practices-for-azure"></a>Bewährte Methoden für die VMware-Hostmigration für Azure
 
@@ -22,4 +22,4 @@ Durch die Migration eines vollständigen VMware-Hosts zu Azure können Sie die s
 
 ## <a name="migration-best-practices"></a>Bewährte Methoden für die Migration
 
-Das Inhaltsverzeichnis auf der linken Seite enthält eine Reihe von bewährten Methoden für mehrere Microsoft-Webeigenschaften, die die Ausführung der VMware-Hostmigration zu Azure VMware Solutions (AVS) erleichtern können. Legen Sie ein Lesezeichen für diese Seite an, um schnell auf die vollständige Liste der bewährten Methoden zugreifen zu können.
+Das Inhaltsverzeichnis auf der linken Seite führt bewährte Methoden für mehrere Microsoft-Webeigenschaften auf, die die Ausführung der VMware-Hostmigration zu Azure VMware Solutions (AVS) erleichtern können. Legen Sie ein Lesezeichen für diese Seite an, um schnell auf die vollständige Liste der bewährten Methoden zugreifen zu können.

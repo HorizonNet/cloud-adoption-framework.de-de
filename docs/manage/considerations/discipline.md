@@ -4,15 +4,15 @@ description: Es wird beschrieben, wie Sie die Cloudverwaltungsoptionen auf einen
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 18a75ed46e247394aadc0caccd53988314553bcf
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 6033f12b1604818fef4c70f1863b7a99fb4c51e6
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341418"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80809069"
 ---
 # <a name="management-leveling-across-cloud-management-disciplines"></a>Verwaltungsebenen in den verschiedenen Cloudverwaltungsdisziplinen
 
@@ -32,9 +32,9 @@ Erwägen Sie als Ausgangspunkt die Festlegung der Verwaltungsebenen, die im vorh
 - **Workloadspezialisierung:** Für wirklich unternehmenskritischen Workloads kann es aus Kostengründen sinnvoll sein, viel tiefer in die Verwaltung dieser Workloads einzusteigen. Die Workloadspezialisierung wendet Workloadtelemetriedaten an, um weiterführende Ansätze für die tägliche Verwaltung zu bestimmen. Aus diesen Daten lassen sich oft Automatisierungs-, Bereitstellungs- und Entwurfsverbesserungen ableiten, die zu mehr Stabilität, Zuverlässigkeit und Ausfallsicherheit führen, als dies mit einer reinen Betriebsverwaltung möglich ist.
 - **Nicht unterstützt**: Ebenso wichtig ist es, gemeinsame Verwaltungsprozesse zu kommunizieren, bei denen Workloads, die als nicht unterstützt oder nicht unternehmenskritisch eingestuft werden, nicht über Cloudverwaltungsdisziplinen bereitgestellt werden.
 
-Unternehmen können auch [Funktionen, die mit einer oder mehreren dieser Verwaltungsebenen in Zusammenhang stehen, an einen Dienstanbieter auslagern](https://www.microsoft.com/cloud-adoption-framework-offers?ot=manage). Diese Dienstanbieter können mit [Azure Lighthouse](https://azure.com/lighthouse) mehr Genauigkeit und Transparenz bieten.
+Unternehmen können auch [Funktionen, die mit einer oder mehreren dieser Verwaltungsebenen in Zusammenhang stehen, an einen Dienstanbieter auslagern](https://aka.ms/adopt/partneroffers). Diese Dienstanbieter können mit [Azure Lighthouse](https://azure.com/lighthouse) mehr Genauigkeit und Transparenz bieten.
 
-In den verbleibenden Artikeln dieser Reihe wird eine Reihe von Prozessen beschrieben, die in jeder dieser Disziplinen gebräuchlich sind.
+In den verbleibenden Artikeln dieser Reihe werden Prozesse beschrieben, die in jeder dieser Disziplinen gebräuchlich sind.
 Gleichzeitig finden Sie im [Azure-Verwaltungsleitfaden](../azure-management-guide/index.md) eine Beschreibung der Tools, die diese Prozesse unterstützen können. Wenn Sie Unterstützung beim Aufbau Ihrer Verwaltungsbaseline benötigen, lesen Sie zunächst den Azure-Verwaltungsleitfaden. Nachdem Sie die Baseline festgelegt haben, können Sie sie mit den Informationen in dieser Artikelreihe und den dazugehörigen bewährten Methoden erweitern und weitere Ebenen der Verwaltungsunterstützung definieren.
 
 ## <a name="cloud-management-disciplines"></a>Cloudverwaltungsdisziplinen

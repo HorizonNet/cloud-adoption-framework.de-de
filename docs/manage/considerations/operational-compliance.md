@@ -4,15 +4,15 @@ description: Verwenden Sie das Framework für die Cloudeinführung für Azure, u
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 894208ff08a0100e8d5d8d5d9df3eff592773426
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: e693ba20984c46a8eae4497220e75c01d64abcbb
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78340977"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80527648"
 ---
 # <a name="operational-compliance-in-cloud-management"></a>Betriebsbezogene Compliance in der Cloudverwaltung
 
@@ -54,7 +54,7 @@ Jede Cloudverwaltungsbaseline sollte eine Möglichkeit enthalten, notwendige Upd
 
 Als erweiterte Baseline für die Cloudverwaltung können einige Workloads möglicherweise von automatisierten Korrekturmaßnahmen profitieren. Wenn bei einer Workload häufig Probleme auftreten, die sich nicht durch eine Änderung am Code oder an der Architektur lösen lassen, kann eine Automatisierung von Korrekturmaßnahmen die Belastung des Cloudverwaltungsteams verringern und die Benutzerzufriedenheit erhöhen.
 
-Hier lässt sich argumentieren, dass ein Problem, das häufig genug auftritt, um eine Automatisierung zu erfordern, durch die Beseitigung technischer Schulden gelöst werden muss. Wenn eine langfristige Lösung gewünscht ist, sollte dies die Standardoption sein. Eine Reihe von geschäftlichen Szenarien gestalten es schwierig, umfassende Investitionen zur Beseitigung technischer Schulden zu rechtfertigen. Wenn eine solche Beseitigung nicht gerechtfertigt werden kann, Korrekturmaßnahmen aber eine häufige und kostspielige Belastung sind, ist eine automatisierte Korrektur die zweitbeste Lösung.
+Hier lässt sich argumentieren, dass ein Problem, das häufig genug auftritt, um eine Automatisierung zu erfordern, durch die Beseitigung technischer Schulden gelöst werden muss. Wenn eine langfristige Lösung gewünscht ist, sollte dies die Standardoption sein. In einigen geschäftlichen Szenarien gestaltet es sich jedoch schwierig, umfassende Investitionen zur Beseitigung technischer Schulden zu rechtfertigen. Wenn eine solche Beseitigung nicht gerechtfertigt werden kann, Korrekturmaßnahmen aber eine häufige und kostspielige Belastung sind, ist eine automatisierte Korrektur die zweitbeste Lösung.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

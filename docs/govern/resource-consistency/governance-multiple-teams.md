@@ -4,16 +4,16 @@ description: Erhalten Sie eine Anleitung zum Konfigurieren von Azure-Governancek
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 614c43a59d7fab493aa97eca47dcd43a73987fa9
-ms.sourcegitcommit: d660484d534bc61fc60470373f3fcc885a358219
+ms.openlocfilehash: bee86f2dc43a8758fe7352824fd7810a4660995e
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79508133"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997488"
 ---
 <!-- cSpell:ignore netops -->
 
@@ -170,7 +170,7 @@ Wir beginnen, indem wir die erste Option auswerten. Sie verwenden das Berechtigu
     ![Erstellen einer Ressourcengruppe](../../_images/govern/design/governance-3-0d.png)
 2. Der **Abonnementbesitzer** fügt das Konto des Benutzers für den **Netzwerkbetrieb** der Ressourcengruppe hinzu und weist die Rolle **Mitwirkender** zu.
     ![Hinzufügen eines Benutzers für den Netzwerkbetrieb](../../_images/govern/design/governance-3-0e.png)
-3. Der Benutzer für den **Netzwerkbetrieb** erstellt ein [VPN-Gateway](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways) und konfiguriert es so, dass eine Verbindung mit dem lokalen VPN-Gerät hergestellt werden kann. Der Benutzer für den **Netzwerkbetrieb** wendet auch ein [Tag](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags)-Paar auf die Ressourcen an: *environment:shared* und *managedBy:netOps*. Wenn der **Dienstadministrator für das Abonnement** einen Kostenbericht exportiert, werden die Kosten nach diesen Tags ausgerichtet. Dies ermöglicht es dem **Dienstadministrator für das Abonnement**, Kosten über das Tag *environment* und das Tag *managedBy* zu verteilen. Beachten Sie den Zähler für die **Ressourcengrenzwerte** oben rechts in der Abbildung. Jedes Azure-Abonnement verfügt über [Diensteinschränkungen](https://docs.microsoft.com/azure/azure-subscription-service-limits), und damit Sie die Auswirkungen dieser Einschränkungen besser verstehen, behalten Sie hier für jedes Abonnement den Grenzwert für virtuelle Netzwerke im Auge. Es gibt einen Grenzwert von 1000 virtuellen Netzwerken pro Abonnement, und nachdem das erste virtuelle Netzwerk bereitgestellt wurde, sind jetzt noch 999 verfügbar.
+3. Der Benutzer für den **Netzwerkbetrieb** erstellt ein [VPN-Gateway](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways) und konfiguriert es so, dass eine Verbindung mit dem lokalen VPN-Gerät hergestellt werden kann. Der Benutzer für den **Netzwerkbetrieb** wendet auch ein [Tag](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources)-Paar auf die Ressourcen an: *environment:shared* und *managedBy:netOps*. Wenn der **Dienstadministrator für das Abonnement** einen Kostenbericht exportiert, werden die Kosten nach diesen Tags ausgerichtet. Dies ermöglicht es dem **Dienstadministrator für das Abonnement**, Kosten über das Tag *environment* und das Tag *managedBy* zu verteilen. Beachten Sie den Zähler für die **Ressourcengrenzwerte** oben rechts in der Abbildung. Jedes Azure-Abonnement verfügt über [Diensteinschränkungen](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits), und damit Sie die Auswirkungen dieser Einschränkungen besser verstehen, behalten Sie hier für jedes Abonnement den Grenzwert für virtuelle Netzwerke im Auge. Es gibt einen Grenzwert von 1000 virtuellen Netzwerken pro Abonnement, und nachdem das erste virtuelle Netzwerk bereitgestellt wurde, sind jetzt noch 999 verfügbar.
     ![Erstellen eines VPN-Gateways](../../_images/govern/design/governance-3-1.png)
 4. Zwei weitere Ressourcengruppen werden bereitgestellt. Die erste hat den Namen `prod-rg`. Diese Ressourcengruppe ist auf die Umgebung für die Produktion ausgerichtet. Die zweite Ressourcengruppe hat den Namen `dev-rg` und ist auf die Umgebung für die Entwicklung ausgerichtet. Alle Ressourcen, die Produktionsworkloads zugeordnet sind, werden in der Umgebung für die Produktion bereitgestellt, und alle Ressourcen, die Entwicklungsworkloads zugeordnet sind, werden in der Umgebung für die Entwicklung bereitgestellt. In diesem Beispiel stellen Sie nur jeweils zwei Workloads für diese beiden Umgebungen bereit, sodass die Diensteinschränkungen für Azure-Abonnements hier nicht berührt werden. Berücksichtigen Sie jedoch, dass für jede Ressourcengruppe ein Grenzwert von 800 Ressourcen pro Ressourcengruppe gilt. Wenn Sie damit fortfahren, jeder Ressourcengruppe Workloads hinzuzufügen, wird also letztendlich dieser Grenzwert erreicht.
     ![Erstellen von Ressourcengruppen](../../_images/govern/design/governance-3-2.png)
@@ -239,7 +239,7 @@ Folgen Sie diesen Schritten:
 1. Erstellen Sie ein [Azure-Konto](https://docs.microsoft.com/azure/active-directory/sign-up-organization), falls Ihre Organisation noch keins besitzt. Die Person, die sich für das Azure-Konto registriert, wird zum Azure-Kontoadministrator, und die Geschäftsleitung Ihrer Organisation muss eine Person bestimmen, die diese Rolle übernimmt. Die Aufgaben dieser Person umfassen Folgendes:
     - Erstellen von Abonnements.
     - Erstellen und Verwalten von [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/active-directory-whatis)-Mandanten zur Speicherung der Benutzeridentität für diese Abonnements.
-2. Die Geschäftsleitung Ihrer Organisation bestimmt die zuständigen Personen für Folgendes:
+2. Die Geschäftsleitung Ihrer Organisation bestimmt, wer für die folgenden Punkte zuständig ist:
     - Verwaltung von Benutzeridentitäten. Bei der Erstellung des Azure-Kontos Ihrer Organisation wird standardmäßig auch ein [Azure AD-Mandant](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant) erstellt, und der Kontoadministrator wird standardmäßig als [globaler Azure AD-Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) hinzugefügt. Ihrer Organisation kann einen anderen Benutzer mit der Verwaltung von Benutzeridentitäten betrauen, indem sie [diesem Benutzer die Rolle des globalen Azure AD-Administrators zuweist](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal).
     - Abonnements. Diese Benutzer haben folgende Aufgaben:
         - Verwalten der Kosten im Zusammenhang mit der Ressourcennutzung in diesem Abonnement.
@@ -261,7 +261,7 @@ Folgen Sie diesen Schritten:
 6. Erstellen Sie einen Genehmigungsprozess, damit **Workloadbesitzer** die Erstellung von Ressourcengruppen anfordern können. Der Genehmigungsprozess kann auf verschiedene Arten (beispielsweise per E-Mail) implementiert werden. Alternativ können Sie ein Prozessverwaltungstool wie [SharePoint-Workflows](https://support.office.com/article/introduction-to-sharepoint-workflow-07982276-54e8-4e17-8699-5056eff4d9e3) verwenden. Der Genehmigungsprozess kann wie folgt aussehen:
     - Der **Workloadbesitzer** erstellt eine Stückliste mit Azure-Ressourcen, die in der **Entwicklungsumgebung**, in der **Produktionsumgebung** oder in beiden benötigt werden, und übermittelt sie an den **Abonnementbesitzer**.
     - Der **Abonnementbesitzer** prüft die Stückliste und die angeforderten Ressourcen, um sicherzustellen, dass sie für die geplante Verwendung angemessen sind (etwa durch Überprüfung, ob die angeforderten [VM-Größen](https://docs.microsoft.com/azure/virtual-machines/windows/sizes) korrekt sind).
-    - Wird die Anforderung nicht genehmigt, erhält der **Workloadbesitzer** eine entsprechende Benachrichtigung. Wenn die Anforderung genehmigt wird, führt der **Abonnementbesitzer** die [Erstellung der angeforderten Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups) unter Einhaltung der [Benennungskonventionen](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) Ihrer Organisation durch, [fügt den **Workloadbesitzer** hinzu](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment) (mit der [Rolle **Mitwirkender**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor)) und informiert den **Workloadbesitzer** über die Erstellung der Ressourcengruppe.
+    - Wird die Anforderung nicht genehmigt, erhält der **Workloadbesitzer** eine entsprechende Benachrichtigung. Wenn die Anforderung genehmigt wird, führt der **Abonnementbesitzer** die [Erstellung der angeforderten Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups) unter Einhaltung der [Benennungskonventionen](../../ready/azure-best-practices/naming-and-tagging.md) Ihrer Organisation durch, [fügt den **Workloadbesitzer** hinzu](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment) (mit der [Rolle **Mitwirkender**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor)) und informiert den **Workloadbesitzer** über die Erstellung der Ressourcengruppe.
 7. Erstellen Sie einen Genehmigungsprozess, damit Workloadbesitzer beim Besitzer der gemeinsamen Infrastruktur eine Verbindung mit Peering virtueller Netzwerke anfordern können. Dieser Genehmigungsprozess kann genau wie im vorherigen Schritt per E-Mail oder unter Verwendung eines Prozessverwaltungstools implementiert werden.
 
 Nach der Implementierung Ihres Governance-Modells können Sie Ihre gemeinsamen Infrastrukturdienste bereitstellen.

@@ -4,16 +4,16 @@ description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adopti
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 75a0e1f06b2a5a2734cc386e02200ec06d707d7b
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 9e7cf8bec88178908caeae27742e5fbc92155003
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356906"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997355"
 ---
 <!-- cSpell:ignore MTBF MTTR -->
 

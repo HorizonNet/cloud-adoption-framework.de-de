@@ -4,15 +4,15 @@ description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adopti
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 729a359f5ea44d77c691acb0a22477eed7cecb44
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: e99bb023f73baad9e1940f06128ba09bd79ab0a1
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709429"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80606583"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -45,7 +45,7 @@ Während einer Cloudtransformation haben sowohl das Unternehmen als auch das IT-
 
 ## <a name="what-is-a-business-risk-mvp"></a>Was ist ein Geschäftsrisiko-MVP?
 
-**Minimum Viable Product** wird häufig verwendet, um die kleinste Einheit einer Ressource zu definieren, die einen spürbaren Wert erzeugen kann. Bei einem Geschäftsrisiko-MVP geht das Cloudgovernanceteam zunächst davon aus, dass einige Ressourcen irgendwann in einer Cloudumgebung bereitgestellt werden. Es ist zu diesem Zeitpunkt nicht bekannt, was diese Ressourcen sind, und das Team kann sich nicht sicher sein, welche Arten von Daten für diese Ressourcen gespeichert werden.
+**Minimum Viable Product** ist ein gängiger Ausdruck, um die kleinste Einheit einer Ressource zu definieren, die einen spürbaren Wert erzeugen kann. Bei einem Geschäftsrisiko-MVP geht das Cloudgovernanceteam zunächst davon aus, dass einige Ressourcen irgendwann in einer Cloudumgebung bereitgestellt werden. Es ist zu diesem Zeitpunkt nicht bekannt, was diese Ressourcen sind, und das Team kann sich nicht sicher sein, welche Arten von Daten für diese Ressourcen gespeichert werden.
 
 Beim Planen des Geschäftsrisikos kann das Cloudgovernanceteam für den ungünstigsten Fall vorsorgen und der Cloud jede erdenkliche Richtlinie zuordnen. Die Identifizierung aller potenziellen Geschäftsrisiken für alle Cloudnutzungsszenarien kann jedoch erheblichen Zeit- und Arbeitsaufwand erfordern, was die Implementierung von Governance für Ihre Cloudworkloads verzögern kann. Dies ist nicht empfehlenswert, aber es ist eine Option.
 

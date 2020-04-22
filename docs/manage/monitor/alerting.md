@@ -4,16 +4,16 @@ description: Verwenden Sie das Framework für die Cloudeinführung für Azure, u
 author: MGoedtel
 ms.author: magoedte
 ms.date: 06/26/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: bb74e869b2fab2142a8c0ffd8c7396268e2231ed
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 5a3879e4b1d5a076e1869100471afbf4f7cd046e
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356317"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997668"
 ---
 <!-- cSpell:ignore kusto multiresource multisignal -->
 
@@ -120,9 +120,9 @@ Wenn Sie Azure Monitor nicht für VMs verwenden, erleichtern Sie die Erstellung 
 
 Bei einer gemeinsamen Verwendung dieser Features können Sie Zeit sparen, indem Sie die Anzahl von Warnungsbenachrichtigungen und die Verwaltung der zugrunde liegenden Warnungen minimieren.
 
-### <a name="alerts-limitations"></a>Einschränkungen für Warnungen
+### <a name="limits-on-alerts"></a>Einschränkungen für Warnungen
 
-Beachten Sie unbedingt die [Einschränkungen](https://docs.microsoft.com/azure/azure-subscription-service-limits#azure-monitor-limits) bezüglich der Anzahl der Warnungen, die Sie erstellen können. Einige Grenzwerte (aber nicht alle) können auf Wunsch erhöht werden. Wenden Sie sich hierzu an den Support.
+Beachten Sie unbedingt die [Einschränkungen zur Anzahl der Warnungen, die Sie erstellen können](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#azure-monitor-limits). Einige Grenzwerte (aber nicht alle) können auf Wunsch erhöht werden. Wenden Sie sich hierzu an den Support.
 
 ### <a name="best-query-experience"></a>Optimales Abfrageverhalten
 

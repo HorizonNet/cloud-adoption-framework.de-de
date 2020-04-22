@@ -4,16 +4,16 @@ description: Machen Sie sich mit den potenziellen Aufgaben eines Unternehmens ve
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 44b6c2dc910068f70645e54c372e3f4290d02669
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 254abb817b89e34e9e92fb2b9eb949784e269601
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356987"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995218"
 ---
 <!-- cSpell:ignore offboarding preintegration -->
 
@@ -72,7 +72,7 @@ Für die erfolgreiche Migration einer Umgebung muss eine Reihe von technischen u
 - Ziehen Sie die Verwendung der folgenden Zugriffsmodelle in Betracht:
   - [Zugriff mit den geringsten Rechten](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models)
   - [Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)
-- Legen Sie alle vor der Integration erforderlichen Details endgültig fest, und machen Sie sich mit den [bewährten Methoden für die Identitätsverwaltung](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices) vertraut.
+- Legen Sie alle vor der Integration erforderlichen Details endgültig fest, und machen Sie sich mit den [bewährten Methoden für die Identitätsverwaltung](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices) vertraut.
   - Aktivieren der einzelnen Identität, des einmaligen Anmeldens (SSO) oder des nahtlosen einmaligen Anmeldens
   - Konfigurieren der mehrstufigen Authentifizierung für Administratoren
   - Bei Bedarf Konsolidieren oder Integrieren von Identitätsanbietern

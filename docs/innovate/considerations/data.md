@@ -4,15 +4,15 @@ description: Hier finden Sie Informationen zur Demokratisierung – einem Proze
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 1ee86c13d94f62770e21e3a8208e9c0695725ba5
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 878127e904adb28b873f642bb7d8ef152d7e63ff
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170221"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997196"
 ---
 # <a name="democratize-data"></a>Demokratisieren von Daten
 

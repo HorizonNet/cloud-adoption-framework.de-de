@@ -4,15 +4,15 @@ description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adopti
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 94e49d8f6682d4f5edb6b1d00bd93d47ba600bc8
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: c1e34c9f13a170abd1f00b603537c73ce51688da
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77706675"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396081"
 ---
 # <a name="define-corporate-policy-for-cloud-governance"></a>Definieren von Unternehmensrichtlinien für Cloudgovernance
 
@@ -55,7 +55,7 @@ Einzelne Cloudrichtlinienanweisungen sind Anleitungen für den Umgang mit bestim
 - **Richtlinienanweisung:** Eine knappe Erläuterung der Richtlinienanforderungen und -ziele.
 - **Entwurfs- oder technischer Leitfaden:** Direkt umsetzbare Empfehlungen, Spezifikationen oder andere Anleitungen zur Unterstützung und Erzwingung dieser Richtlinie, auf die IT-Teams und Entwickler beim Entwerfen und Erstellen ihrer Cloudbereitstellungen zurückgreifen können.
 
-Wenn Sie Unterstützung bei den ersten Schritten der Definition von Richtlinien benötigen, lesen Sie die [Governancedisziplinen](../governance-disciplines.md), die in der Übersicht des Governanceabschnitts eingeführt werden. Die Artikel für die einzelnen Disziplinen enthalten Beispiele verbreiteter Geschäftsrisiken, die bei der Umstellung in die Cloud auftreten können, und Beispielrichtlinien zum Vermindern dieser Risiken (Beispiel: die [Beispielrichtliniendefinitionen](../cost-management/policy-statements.md) für die Disziplin von Cost Management).
+Wenn Sie Unterstützung bei den ersten Schritten der Definition von Richtlinien benötigen, lesen Sie die [Governancedisziplinen](../governance-disciplines.md), die in der Übersicht des Governanceabschnitts eingeführt werden. Die Artikel für die einzelnen Fachrichtungen enthalten Beispiele verbreiteter Geschäftsrisiken, die bei der Umstellung in die Cloud auftreten können, und Beispielrichtlinien zum Vermindern dieser Risiken. (Beispiel: die [Beispielrichtliniendefinitionen](../cost-management/policy-statements.md) für die Fachrichtung Cost Management).
 
 ## <a name="incremental-governance-and-integrating-with-existing-policy"></a>Inkrementelle Governance und Integration in vorhandene Richtlinien
 

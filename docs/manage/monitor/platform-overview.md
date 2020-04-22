@@ -4,16 +4,16 @@ description: Verschaffen Sie sich einen allgemeinen Überblick über zwei Überw
 author: mgoedtel
 ms.author: magoedte
 ms.date: 07/31/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 5e4effaccc04ba3b534a75394f17d758141c387e
-ms.sourcegitcommit: 388e32dd4861039149c846c926c0e9230cf28ae3
+ms.openlocfilehash: 088085af7dee93d0a1d69a1d6592b827c7a1c975
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "79140551"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80527162"
 ---
 <!-- cSpell:ignore opsman ITSM -->
 
@@ -63,7 +63,7 @@ Die Funktionen der Dienste, die Teil von OMS waren, blieben nach der Einstellung
 
 ### <a name="operations-manager"></a>Operations Manager
 
-Operations Manager benötigt eine umfangreiche Infrastruktur und Wartung zur Unterstützung einer Verwaltungsgruppe. Diese bildet eine grundlegende Funktionseinheit. Eine Verwaltungsgruppe besteht mindestens aus einem oder mehreren Verwaltungsservern, einer SQL Server-Instanz, die die Betriebsdatenbank und die Reporting-Data Warehouse-Datenbank hostet, sowie Agents. Die Komplexität eines Konzepts für eine Verwaltungsgruppe hängt von einer Reihe von Faktoren ab, z.B. dem Umfang der zu überwachenden Workloads und der Anzahl der Geräte oder Computer, die die Workloads unterstützen. Wenn Sie Hochverfügbarkeit und Standortresilienz benötigen, wie es bei Überwachungsplattformen für Unternehmen üblich ist, können die Infrastrukturanforderungen und die damit verbundene Wartung erheblich zunehmen.
+Operations Manager benötigt eine umfangreiche Infrastruktur und Wartung zur Unterstützung einer Verwaltungsgruppe. Diese bildet eine grundlegende Funktionseinheit. Eine Verwaltungsgruppe besteht mindestens aus einem oder mehreren Verwaltungsservern, einer SQL Server-Instanz, die die Betriebsdatenbank und die Reporting-Data Warehouse-Datenbank hostet, sowie Agents. Die Komplexität eines Konzepts für eine Verwaltungsgruppe hängt von mehreren Faktoren ab, z. B. dem Umfang der zu überwachenden Workloads und der Anzahl der Geräte oder Computer, die die Workloads unterstützen. Wenn Sie Hochverfügbarkeit und Standortresilienz benötigen, wie es bei Überwachungsplattformen für Unternehmen üblich ist, können die Infrastrukturanforderungen und die damit verbundene Wartung erheblich zunehmen.
 
 ![Diagramm zur Operations Manager-Verwaltungsgruppe](./media/monitoring-management-guidance-cloud-and-on-premises/operations-manager-management-group-optimized.svg)
 

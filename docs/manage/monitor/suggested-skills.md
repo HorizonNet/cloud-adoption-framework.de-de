@@ -4,27 +4,27 @@ description: Qualifikationsbereitschaft für Cloudüberwachung
 author: BrianBlanchard
 ms.author: magoedte
 ms.date: 03/23/2020
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fe1dcc215c318ef35c7a1d19af50b1451eb1935d
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 30d3b590c6382b0487cac3cfd6c5c0d343432f67
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356221"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120542"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
 # <a name="skills-readiness-for-cloud-monitoring"></a>Qualifikationsbereitschaft für Cloudüberwachung
 
-Das Ziel der Phase „Planung“ Ihrer Migrationsjourney besteht darin, die notwendigen Pläne für die Implementierung zu entwickeln. In den Plänen muss auch festgelegt werden, wie Sie diese Workloads abarbeiten, bevor die Umstellung bzw. die Freigabe für die Produktion erfolgt (und nicht danach). Die Beteiligten im Unternehmen erwarten nützliche Dienste, die ohne Störungen funktionieren. IT-Mitarbeiter merken, dass sie neue Qualifikationen erwerben und sich anpassen müssen, damit sie die integrierten Azure-Dienste sicher nutzen können, um Ressourcen in Azure und in Hybridumgebungen effektiv zu überwachen.
+Das Ziel der Phase „Planung“ Ihrer Migrationsjourney besteht darin, die notwendigen Pläne für die Implementierung zu entwickeln. In den Plänen muss auch festgelegt werden, wie Sie diese Workloads abarbeiten, bevor die Umstellung bzw. die Freigabe für die Produktion erfolgt (und nicht danach). Die Beteiligten im Unternehmen erwarten nützliche Dienste, die ohne Störungen funktionieren. IT-Mitarbeiter merken, dass sie neue Qualifikationen erwerben und sich anpassen müssen, damit sie die integrierten Azure-Dienste sicher verwenden können, um Ressourcen in Azure und in Hybridumgebungen effektiv zu überwachen.
 
 Die Entwicklung der erforderlichen Qualifikationen kann mit den folgenden Lernpfaden beschleunigt werden:
 
 - In der Einführung in [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview) werden die grundlegenden Konzepte der Verwaltung und Bereitstellung von Azure-Ressourcen beschrieben. Die IT-Mitarbeiter, die die Überwachungsumgebung im gesamten Unternehmen verwalten, sollten mit Verwaltungsbereichen, rollenbasierter Zugriffssteuerung (RBAC), Azure Resource Manager-Vorlagen und der Verwaltung von Ressourcen per Azure CLI und Azure PowerShell vertraut sein.
 
-- Informieren Sie sich über das Schützen von Ressourcen mit Richtlinien, rollenbasierter Zugriffssteuerung und anderen Azure-Diensten, indem Sie den Artikel [Implementieren der Sicherheit für die Ressourcenverwaltung in Azure](https://docs.microsoft.com//learn/paths/implement-resource-mgmt-security) lesen.
+- Informieren Sie sich über das Schützen von Ressourcen mit Richtlinien, rollenbasierter Zugriffssteuerung und anderen Azure-Diensten, indem Sie den Artikel [Implementieren der Sicherheit für die Ressourcenverwaltung in Azure](https://docs.microsoft.com/learn/paths/implement-resource-mgmt-security) lesen.
 
 - In der Einführung in [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) wird beschrieben, wie Sie Azure Policy zum Erstellen, Zuweisen und Verwalten von Richtlinien verwenden können. Mit Azure Policy können Sie die Azure Monitor-Agents bereitstellen und konfigurieren, die Überwachung mit Azure Monitor für VMs und Azure Security Center ermöglichen, Diagnoseeinstellungen bereitstellen, Gastkonfigurationseinstellungen überwachen und vieles mehr.
 
@@ -39,7 +39,7 @@ Die Entwicklung der erforderlichen Qualifikationen kann mit den folgenden Lernpf
 
   - Unter [Microsoft Azure IaaS: Überwachung und Verwaltung](https://www.pluralsight.com/courses/azure-iaas-monitoring-management-getting-started) erfahren Sie, wie Sie Azure Monitor verwenden, um die grundlegende Überwachung von Workloads durchzuführen, die unter IaaS ausgeführt werden.
 
-  - Unter [Überwachen von Microsoft Azure-Ressourcen und -Workloads](https://www.pluralsight.com/courses/microsoft-azure-resources-workloads-monitoring) wird beschrieben, wie Sie Microsoft Azure-Überwachungstools zum Überwachen von Azure-Netzwerkressourcen (und lokalen Ressourcen) verwenden.
+  - Unter [Überwachen von Microsoft Azure-Ressourcen und -Workloads](https://www.pluralsight.com/courses/microsoft-azure-resources-workloads-monitoring) wird beschrieben, wie Sie Microsoft Azure-Überwachungstools zum Überwachen von Azure-Netzwerkressourcen sowie lokalen Ressourcen verwenden.
 
   - Unter [Microsoft Azure DevOps-Techniker: Optimieren von Feedbackmechanismen](https://www.pluralsight.com/courses/microsoft-azure-optimize-feedback-mechanisms) können Sie sich darauf vorbereiten, Azure Monitor, einschließlich Application Insights und Log Analytics, für die Überwachung und Optimierung Ihrer Webanwendungen zu verwenden.
 
@@ -57,7 +57,7 @@ Microsoft und seine Partner bieten eine Vielzahl von Optionen für alle Zielgrup
 
 - [Microsoft IT Pro Career Center](https://www.microsoft.com/itpro): Kostenlose Onlineressource zur Begleitung Ihres Karrierewegs in der Cloud. Profitieren Sie von den Empfehlungen von Branchenexperten für Ihre Cloudrolle und zu den Fähigkeiten, mit denen Sie sie erreichen. Folgen Sie in Ihrem eigenen Tempo einem Lehrplan, um die Fähigkeiten zu erlangen, die Sie am meisten benötigen, um auf dem aktuellen Stand zu bleiben.
 
-Mit unseren [Microsoft Azure-Zertifizierungstrainings und -prüfungen]( https://www.microsoft.com/learning/azure-certification.aspx) können Sie Ihr Wissen rund um Azure belegen und sich offizielle Anerkennung verschaffen.
+Mit unseren [Microsoft Azure-Zertifizierungstrainings und -prüfungen]( https://www.microsoft.com/learning/certification-overview.aspx) können Sie Ihr Wissen rund um Azure belegen und sich offizielle Anerkennung verschaffen.
 
 ## <a name="azure-devops-and-project-management"></a>Azure DevOps und Projektmanagement
 
@@ -77,7 +77,7 @@ Weitere Informationen finden Sie in den folgenden Artikeln:
 
 ## <a name="other-considerations"></a>Weitere Überlegungen
 
-Kunden haben häufig Schwierigkeiten, für die von der IT-Abteilung bereitzustellenden Dienste die erwarteten Geschäftsergebnisse (einschließlich der Ergebnisse für die IT-Abteilung) zu verwalten und zu erzielen. Die Überwachung wird als Kernaspekt der Verwaltung der Infrastruktur und des Unternehmens betrachtet, und der Fokus liegt auf der Messung der Qualität des Diensts und der Kundenerfahrung.  Schaffen Sie die Basis für die Erreichung dieser Ziele, indem Sie ITSM in Verbindung mit DevOps verwenden. Auf diese Weise kann das Überwachungsteam seine Leistung beim Verwalten, Bereitstellen und Unterstützen des Überwachungsdiensts verbessern. Durch die Einführung eines ITSM-Frameworks kann das Überwachungsteam als Anbieter fungieren und sich Anerkennung als vertrauenswürdiger Geschäftsmotor erwerben, indem es die strategischen Ziele und Anforderungen der Organisation aufeinander abstimmt.
+Kunden haben häufig Schwierigkeiten, für die von der IT-Abteilung bereitzustellenden Dienste die erwarteten Geschäftsergebnisse (einschließlich der Ergebnisse für die IT-Abteilung) zu verwalten und zu erzielen. Die Überwachung wird als Kernaspekt der Verwaltung der Infrastruktur und des Unternehmens betrachtet, und der Fokus liegt auf der Messung der Qualität des Diensts und der Kundenerfahrung. Schaffen Sie die Basis für die Erreichung dieser Ziele, indem Sie ITSM in Verbindung mit DevOps verwenden. Auf diese Weise kann das Überwachungsteam seine Leistung beim Verwalten, Bereitstellen und Unterstützen des Überwachungsdiensts verbessern. Durch die Einführung eines ITSM-Frameworks kann das Überwachungsteam als Anbieter fungieren und sich Anerkennung als vertrauenswürdiger Geschäftsmotor erwerben, indem es die strategischen Ziele und Anforderungen der Organisation aufeinander abstimmt.
 
 Lesen Sie das [Whitepaper zu ITIL v4 und Cloud Computing](https://www.axelos.com/case-studies-and-white-papers/itil-4-and-the-cloud) um sich mit den Updates vertraut zu machen, die für das beliebteste ITSM-Framework durchgeführt wurden. Es wird beschrieben, wie die vorhandene ITIL-Anleitung mit den bewährten Methoden von DevOps, Agile und Lean verbunden werden kann. Informieren Sie sich auch über die [IT4IT-Referenzarchitektur](https://www.opengroup.org/it4it), bei der es sich um eine alternative Blaupause für die IT-Transformation mithilfe eines prozessagnostischen Frameworks handelt.
 

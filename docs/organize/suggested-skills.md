@@ -4,16 +4,16 @@ description: Verwenden Sie das Framework für die Cloudeinführung für Azure, u
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/10/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: f1fa9c4705aaa437a0a532fd6463fe502f4df0bb
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: abdd12c9c236b66fced32b1b70886d118a25c7bc
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092629"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995047"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>Pfad für die Qualifikationsbereitschaft während der Phase „Bereitschaft“ einer Migration
 
@@ -39,13 +39,13 @@ Während der Bereitschaftsphase müssen technische Mitarbeiter eine Migrationsla
 - [Azure-Netzwerkdienste](https://docs.microsoft.com/learn/modules/intro-to-azure-networking): Erlernen Sie die Grundlagen von Azure-Netzwerken, und erfahren Sie, wie die Resilienz verbessert und die Latenz verringert werden kann.
 - [Computeoptionen in Azure](https://docs.microsoft.com/learn/modules/intro-to-azure-compute): Informationen über die Azure-Computedienste.
 - [Sichern Ihrer Azure-Ressourcen mit rollenbasierter Zugriffssteuerung (RBAC)](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac): Verwenden Sie rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC) zum Sichern von Azure-Ressourcen.
-- [Azure Storage-Optionen](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure/index): Informieren Sie sich über die Vorteile des Azure-Datenspeichers.
+- [Azure Storage-Optionen](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure): Informieren Sie sich über die Vorteile des Azure-Datenspeichers.
 
 Während der Phase „Bereitschaft“ müssen Architekten Lösungen entwickeln, die alle Azure-Umgebungen umfassen. Die folgenden Ressourcen können Architekten auf diese Aufgaben vorbereiten:
 
-- [Grundlagen der Cloudarchitektur](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): Ein PluralSight-Kurs zur Unterstützung bei der Entwicklung der richtigen grundlegenden Lösungen.
-- [Microsoft Azure-Architektur](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): Ein PluralSight-Kurs zum Einführen von Architekten in die Azure-Architektur.
-- [Entwerfen von Migrationsvorgängen für Microsoft Azure](https://app.pluralsight.com/library/courses/cloud-architecture-foundations): Ein PluralSight-Kurs zur Unterstützung von Architekten beim Entwurf einer Migrationslösung.
+- [Grundlagen der Cloudarchitektur](https://www.pluralsight.com/courses/cloud-architecture-foundations): Ein Pluralsight-Kurs zur Unterstützung bei der Entwicklung der richtigen grundlegenden Lösungen.
+- [Microsoft Azure-Architektur](https://www.pluralsight.com/courses/cloud-architecture-foundations): Ein Pluralsight-Kurs zum Einführen von Architekten in die Azure-Architektur.
+- [Entwerfen von Migrationsvorgängen für Microsoft Azure](https://www.pluralsight.com/courses/cloud-architecture-foundations): Ein Pluralsight-Kurs zur Unterstützung von Architekten beim Entwurf einer Migrationslösung.
 
 ## <a name="deeper-skills-exploration"></a>Ausführlichere Untersuchung von Fähigkeiten
 
@@ -55,10 +55,9 @@ Die folgenden Informationen beschreiben Ressourcen für zusätzliches Lernen.
 
 Microsoft und seine Partner bieten eine Vielzahl von Optionen für alle Zielgruppen zur Erweiterung ihrer Qualifikationen zur Verwendung von Microsoft Azure-Diensten.
 
-- [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/microsoft-azure): Bietet Trainingsanleitungen von den Personen, die am Aufbau von Azure mitgewirkt haben. Von einem grundlegenden Überblick bis hin zu tiefgehendem technischem Training lernen die IT-Mitarbeiter, wie sie Azure in ihrem Unternehmen nutzen können.
 - [Microsoft IT Pro Career Center](https://www.microsoft.com/itpro): Eine kostenlose Onlineressource zur Begleitung Ihres Karrierewegs in der Cloud. Erfahren Sie von Branchenexperten mehr über Ihre Cloudrolle und die benötigten Qualifikationen. Folgen Sie in Ihrem eigenen Tempo einem Lehrplan, um die Fähigkeiten zu erlangen, die Sie benötigen, um auf dem aktuellen Stand zu bleiben.
 
-Es wird empfohlen, dass Sie sich die offizielle Anerkennung Ihres Wissens über Microsoft Azure durch [Microsoft Azure-Zertifizierungsschulungen und -prüfungen](https://www.microsoft.com/learning/azure-certification.aspx) verschaffen.
+Es wird empfohlen, dass Sie sich die offizielle Anerkennung Ihres Wissens über Microsoft Azure durch [Microsoft Azure-Zertifizierungsschulungen und -prüfungen](https://www.microsoft.com/learning/certification-overview.aspx) verschaffen.
 
 ### <a name="microsoft-learn"></a>Microsoft Learn
 

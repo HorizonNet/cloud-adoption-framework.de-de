@@ -4,15 +4,15 @@ description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adopti
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5fa02af8464a63488e77b69226cb02d38ceca5d7
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 4b6ed0a62c3efcdf30e854fcbed6ee468a826e9c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170612"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80527662"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>Häufige Herausforderungen und Hindernisse bei Innovationen
 
@@ -40,7 +40,7 @@ Die folgende Liste zeigt einige der häufigsten Herausforderungen bei der Einfü
 
 Vor der allgemeinen Einführung der Cloud waren Erfindungszyklen, die auf Informationstechnologie basierten, mühsam und zeitaufwendig. Beschaffungs- und Bereitstellungszyklen verzögerten häufig die entscheidenden ersten Schritte auf dem Weg zu neuen Lösungen. Die Kosten für DevOps-Lösungen und Feedbackschleifen verzögerten die Zusammenarbeit von Teams in den frühen Phasen der Ideenfindung und Neuentwicklung. Aufgrund der Kosten für Entwicklerumgebungen und Datenplattformen konnten nur speziell geschulte, professionelle Entwickler an der Erstellung neuer Lösungen teilnehmen.
 
-Die Cloud hat viele frühere Herausforderungen bei Erfindungen und Innovationen aus dem Weg geräumt, da sie automatisierte Self-Service-Bereitstellungen und schlanke Entwicklungs- und Bereitstellungstools bietet. Zudem bietet sie Möglichkeiten für professionelle Entwickler und Entwickler ohne Programmiererfahrung (Citizen Developer), bei der schnellen Entwicklung neuer Lösungen zusammenzuarbeiten. Die Nutzung der Cloud für Innovationen reduziert die Herausforderungen und Hindernisse beim Aspekt „Erfindung“ ganz erheblich.
+Die Cloud hat viele frühere Herausforderungen bei Erfindungen und Innovationen aus dem Weg geräumt, da sie automatisierte Self-Service-Bereitstellungen und schlanke Entwicklungs- und Bereitstellungstools bietet. Zudem bietet sie Möglichkeiten für professionelle Entwickler und Entwickler ohne Programmiererfahrung (Citizen Developer), bei der schnellen Entwicklung neuer Lösungen zusammenzuarbeiten. Die Verwendung der Cloud für Innovationen reduziert die Herausforderungen und Hindernisse beim Aspekt „Erfindung“ ganz erheblich.
 
 ### <a name="invention-challenges-in-a-digital-economy"></a>Herausforderungen bei Erfindungen in der digitalen Wirtschaft
 

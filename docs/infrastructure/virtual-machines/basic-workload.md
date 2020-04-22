@@ -4,15 +4,15 @@ description: Hier finden Sie Informationen zu Kernkomponenten der Cloudinfrastru
 author: alexbuckgit
 ms.author: abuck
 ms.date: 12/31/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e720fb698e0eecb53942bb5d7be99df5e923451e
-ms.sourcegitcommit: 10637acba8c857a6f5aa8c4a80c0649903f60402
+ms.openlocfilehash: 34673307e33ab8ae9dad979fa3fa958c84be310c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78170697"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997704"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>Bereitstellen einer grundlegenden Workload in Azure
 

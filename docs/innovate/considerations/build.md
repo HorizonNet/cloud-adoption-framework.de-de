@@ -4,15 +4,15 @@ description: Hier erfahren Sie, wie Sie innovationsfördernde Lösungen mit Blic
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 67ea91e503290c8fee37f3d36770fbbea1b336b4
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: f961fa2b20fc5fc8fe2670b05b5a66d9e99c0805
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356796"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120613"
 ---
 # <a name="build-with-customer-empathy"></a>Erstellen von Lösungen mit Blick auf die Kundenanforderungen
 
@@ -77,7 +77,7 @@ In einigen Fällen ist der schnellste Weg zur Innovation die vorübergehende vol
 
 In der Regel besteht eine MVP-Lösung aus einer einfachen Web-App oder Datenlösung mit minimalen Funktionen und begrenztem Feinschliff. Für Unternehmen, die über professionelle Entwicklungskompetenz verfügen, ist dies oft der schnellste Weg zum Lernen und Iterieren. Die folgende Liste enthält einige andere Ansätze, die ein Team zur Erstellung eines MVP anwenden kann:
 
-- Ein Vorhersagealgorithmus, der in 99 % der Fälle falsch ist, aber spezifische gewünschte Ergebnisse zeigt.
+- Ein Vorhersagealgorithmus, der in 99 Prozent der Fälle falsch ist, aber spezifische gewünschte Ergebnisse zeigt.
 - Ein IoT-Gerät, das nicht sicher in Produktionsumgebungen kommunizieren würde, aber den Mehrwert von Daten innerhalb eines Prozesses nahezu in Echtzeit aufzeigen kann.
 - Eine Anwendung, die von einem Citizen Developer entwickelt wurde, um eine Hypothese zu testen oder kleinere Anforderungen zu erfüllen.
 - Ein manueller Prozess, der die Vorteile der zu verfolgenden Anwendung erneut erstellt.

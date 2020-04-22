@@ -4,16 +4,16 @@ description: Verwenden Sie das Framework für die Cloudeinführung für Azure, u
 author: MGoedtel
 ms.author: magoedte
 ms.date: 10/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 7dc47021b2b4a3d9e697566332bf602d9166e712
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 33daaaf5859e0b761a6b53b1afc67df2ddcd1f65
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356262"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80527079"
 ---
 <!-- cSpell:ignore savision -->
 
@@ -160,7 +160,7 @@ Diese Strategie bietet Einblicke in die Netzwerkschicht, ohne dass SNMP erforder
 
 ### <a name="monitor-with-azure-monitor"></a>Überwachung mit Azure Monitor
 
-Eine Migration zur Cloud stellt Sie zwar vor einige Herausforderungen, bietet aber auch eine Vielzahl neuer Möglichkeiten. Durch die Migration von einem oder mehreren lokalen Tools für die unternehmensweite Überwachung kann Ihre Organisation nicht nur Kapital- und Betriebskosten senken, sondern auch von den Vorteilen profitieren, die eine Cloudüberwachungsplattform wie Azure Monitor für die Cloud bieten kann. Überprüfen Sie Ihre Überwachungs- und Warnungsanforderungen, die Konfiguration vorhandener Überwachungstools und die mögliche Verlagerung von Workloads in die Cloud. Nachdem der Plan fertig ist, konfigurieren Sie Azure Monitor.
+Eine Migration zur Cloud stellt Sie zwar vor einige Herausforderungen, bietet aber auch neue Möglichkeiten. Durch die Migration von einem oder mehreren lokalen Tools für die unternehmensweite Überwachung kann Ihre Organisation nicht nur Kapital- und Betriebskosten senken, sondern auch von den Vorteilen profitieren, die eine Cloudüberwachungsplattform wie Azure Monitor für die Cloud bieten kann. Überprüfen Sie Ihre Überwachungs- und Warnungsanforderungen, die Konfiguration vorhandener Überwachungstools und die mögliche Verlagerung von Workloads in die Cloud. Nachdem der Plan fertig ist, konfigurieren Sie Azure Monitor.
 
 - Überwachen Sie die hybride Infrastruktur und die hybriden Anwendungen über eine einfache oder mehrschichtige Architektur, in der Komponenten von Azure, anderen Cloudanbietern und Ihrem Unternehmensnetzwerk gehostet werden. Diese Komponenten können mindestens eine VM, mehrere VMs in einer Verfügbarkeitsgruppe oder VM-Skalierungsgruppe oder eine containerbasierte Anwendung umfassen, die in einer in Windows Server- oder Linux-Containern ausgeführten AKS-Instanz (Azure Kubernetes Service) bereitgestellt ist.
 

@@ -4,20 +4,20 @@ description: Hier finden Sie Informationen zu Konformitätsbestimmungen in versc
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2e5cfa035efe2fd3dd45b29edec53bfff2c7914f
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 22e74aabc56ae25d0448bf321c645449e4989668
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709378"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80809123"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>Einführung in die Einhaltung gesetzlicher Bestimmungen
 
-Dies ist ein einführender Artikel zur Einhaltung gesetzlicher Bestimmungen, der nicht für die Implementierung einer Compliancestrategie vorgesehen ist. Ausführlichere Informationen zu [Azure-Complianceangeboten](https://aka.ms/allcompliance) sind im [Microsoft Trust Center](https://www.microsoft.com/trustcenter/default.aspx) verfügbar. Alle heruntergeladenen Dokumente sind zudem für bestimmte Azure-Kunden über das [Microsoft Service Trust-Portal](https://servicetrust.microsoft.com) verfügbar.
+Dies ist ein einführender Artikel zur Einhaltung gesetzlicher Bestimmungen, der nicht für die Implementierung einer Compliancestrategie vorgesehen ist. Ausführlichere Informationen zu [Azure-Complianceangeboten](https://aka.ms/allcompliance) sind im [Microsoft Trust Center](https://www.microsoft.com/trust-center) verfügbar. Alle heruntergeladenen Dokumente sind zudem für bestimmte Azure-Kunden über das [Microsoft Service Trust-Portal](https://servicetrust.microsoft.com) verfügbar.
 
 Die Einhaltung von Vorschriften bezieht sich auf die Disziplin und den Prozess, mit dem sichergestellt wird, dass ein Unternehmen die Gesetze befolgt, die von den Regierungsstellen in ihrer Region durchgesetzt werden, oder die Regeln, die durch freiwillig übernommene Industriestandards erforderlich sind. Im Rahmen der Einhaltung gesetzlicher Bestimmungen in der IT überwachen Personen oder Prozesse Unternehmenssysteme, um Verletzungen der durch geltende Gesetze, Bestimmungen und Standards festgelegten Richtlinien und Verfahren zu erkennen und zu verhindern. Dies betrifft wiederum einen großen Bereich von Überwachungs- und Erzwingungsprozessen. Je nach Branche und Region können sich diese Prozesse langwierig und komplex gestalten.
 
@@ -49,7 +49,7 @@ Um Kunden bei der Erfüllung ihrer eigenen Konformitätsverpflichtungen in regul
 
 Azure-Complianceangebote basieren auf unterschiedlichen Arten von Zusicherungen, z.B. formalen Zertifizierungen, Nachweisen, Validierungen, Autorisierungen und Bewertungen, die von unabhängigen externen Prüfungsgesellschaften erstellt wurden, sowie Vertragsänderungen, Selbstbewertungen und Kundenleitfäden, die von Microsoft erstellt wurden. Jede Angebotsbeschreibung in diesem Dokument enthält eine aktuelle Umfangserklärung, die angibt, welche Azure-Kundendienste für die Bewertung in Frage kommen, sowie Links zu herunterladbaren Ressourcen, um Kunden bei ihren eigenen Konformitätsverpflichtungen zu unterstützen.
 
-Ausführlichere Informationen zu [Azure-Complianceangeboten](https://www.microsoft.com/trustcenter/compliance/complianceofferings) sind im [Microsoft Trust Center] verfügbar. Alle heruntergeladenen Dokumente sind zudem für bestimmte Azure-Kunden über das [Service Trust-Portal](https://servicetrust.microsoft.com) in den folgenden Abschnitten verfügbar:
+Das Microsoft Trust Center bietet ausführlichere Informationen zu [Azure-Complianceangeboten](https://www.microsoft.com/trust-center/compliance/compliance-overview). Alle heruntergeladenen Dokumente sind zudem für bestimmte Azure-Kunden über das [Service Trust-Portal](https://servicetrust.microsoft.com) in den folgenden Abschnitten verfügbar:
 
 - **Überwachungsberichte:** Enthält Abschnitte zu FedRAMP, GRC-Bewertung, ISO, PCI-DSS und SOC-Berichten.
 - **Datenschutzressourcen:** Enthält Konformitätsrichtlinien, häufig gestellte Fragen und Whitepaper sowie Abschnitte zu Penetrationstests und Sicherheitsbewertungen.

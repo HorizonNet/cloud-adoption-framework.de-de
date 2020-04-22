@@ -4,16 +4,16 @@ description: Enthält eine Beschreibung der Terminologie für Betriebsmodelle. A
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 784a98597439b995b756291247c9142ab5ca5372
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 03843aa441188bb0bd91d0febfdd5681d6a6670b
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092738"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80526819"
 ---
 # <a name="operating-model-terminology"></a>Terminologie für Betriebsmodelle
 
@@ -35,7 +35,7 @@ Cloudeinführung ist die „Vorgehensweise“, um den Geschäftswert zu realisie
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-[Nutzen Sie das vom Cloud Adoption Framework bereitgestellte Betriebsmodell](./index.md), um die betriebliche Reife zu entwickeln.
+[Verwenden des Betriebsmodells](./index.md), das vom Cloud Adoption Framework bereitgestellt wird, zum Entwickeln der betrieblichen Reife.
 
 > [!div class="nextstepaction"]
-> [Nutzen des Betriebsmodells](./index.md)
+> [Verwenden des Betriebsmodells](./index.md)

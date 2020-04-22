@@ -4,16 +4,16 @@ description: Nutzen Sie die Rationalisierung der Cloud, um Ihre digitalen Ressou
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/25/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 042487ce2c579f581547e4942785cbbba659ad5e
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 70b4d0ee295f06db68090551fac02fd205111c60
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80357261"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995725"
 ---
 # <a name="rationalize-the-digital-estate"></a>Rationalisieren der digitalen Ressourcen
 
@@ -143,7 +143,7 @@ Die Cloudeinführungsteams und das Cloudstrategieteam können bei der qualitativ
 
 Nachdem die beiden Teams die Kriterien für die qualitative Analyse vereinbart haben, kann die Bewertung zu einer Aufgabe bei jeder Iteration werden. Zur Erreichung eines Konsenses in Bezug auf die Bewertungskriterien werden normalerweise zwei bis drei Releases benötigt.
 
-Nachdem die Bewertung in die inkrementellen Ausführungsprozesse der Migration verschoben wurde, kann das Cloudeinführungsteam die Bewertung und die Architektur schneller durchlaufen. An diesem Punkt wird das Cloudstrategieteam außerdem abstrahiert, um den Zeitaufwand zu reduzieren. Darüber hinaus kann sich das Cloudstrategieteam auf das Priorisieren der Anwendungen konzentrieren, die noch nicht in einem bestimmten Release enthalten sind. So kann eine enge Abstimmung auf sich ändernde Marktbedingungen sichergestellt werden.
+Nachdem die Bewertung in die inkrementellen Ausführungsprozesse der Migration verschoben wurde, kann das Cloudeinführungsteam die Bewertung und die Architektur schneller durchlaufen. An diesem Punkt wird das Team für die Cloudstrategie außerdem abstrahiert, um den Zeitaufwand zu reduzieren. Darüber hinaus kann sich das Cloudstrategieteam auf das Priorisieren der Anwendungen konzentrieren, die noch nicht in einem bestimmten Release enthalten sind. So kann eine enge Abstimmung auf sich ändernde Marktbedingungen sichergestellt werden.
 
 Nicht alle priorisierten Anwendungen sind bereit für die Migration. Die Sequenzierung ändert sich wahrscheinlich, wenn das Team eine eingehendere qualitative Analyse durchführt sowie Geschäftsereignisse und Abhängigkeiten ermittelt, die möglicherweise eine erneute Priorisierung des Backlogs erforderlich machen. Bei einigen Releases wird ggf. eine geringe Anzahl von Workloads gruppiert. Andere enthalten vielleicht auch nur eine einzige Workload.
 

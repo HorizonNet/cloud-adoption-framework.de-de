@@ -4,15 +4,15 @@ description: Es wird beschrieben, was verwaltet wird (Bestand) und wie sich die 
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c9057c84757c49457b46c310d239dc8c49bd50d0
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 45eda399229361d9a2bd762ec6c8d8624e3a0742
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341221"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997133"
 ---
 # <a name="inventory-and-visibility-in-cloud-management"></a>Bestand und Transparenz bei der Cloudverwaltung
 

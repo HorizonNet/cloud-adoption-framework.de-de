@@ -7,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7cdb1e56b38615e7878352d6e336e0f01261f6ce
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 067e84e433fa995c79b588698240afea06e54660
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354119"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120019"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -49,9 +49,9 @@ Wenn Sie im Rahmen der Migration VNETs erstellen, ist es wichtig, Ihren VNET-IP-
 
 **Weitere Informationen**:
 
-- [Verschaffen Sie sich einen Überblick](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) über Azure VNETs.
-- [Lesen](https://docs.microsoft.com/azure/virtual-network/virtual-networks-faq) Sie die häufig gestellten Fragen zum Netzwerkbetrieb.
-- [Erfahren Sie mehr](https://docs.microsoft.com/azure/azure-subscription-service-limits?toc=%2fazure%2fvirtual-network%2ftoc.json#networking-limits) über Netzwerkeinschränkungen.
+- Verschaffen Sie sich einen [Überblick über Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview).
+- Lesen Sie die [Häufig gestellten Fragen (FAQ) zu Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-faq).
+- Erfahren Sie mehr über [Grenzwerte für Azure-Netzwerke](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits).
 
 ## <a name="best-practice-implement-a-hub-and-spoke-network-topology"></a>Bewährte Methode: Implementieren einer Hub-Spoke-Netzwerktopologie
 
@@ -131,7 +131,7 @@ Verfügbarkeitszonen sorgen für höhere Verfügbarkeit, um Ihre Apps und Daten 
 - Jede Zone besteht aus mindestens einem Rechenzentrum, dessen Stromversorgung, Kühlung und Netzwerkbetrieb unabhängig funktionieren.
 - Zur Gewährleistung der Resilienz sind in allen aktivierten Regionen mindestens drei separate Zonen vorhanden.
 - Die physische Trennung von Verfügbarkeitszonen innerhalb einer Region schützt Anwendungen und Daten vor Ausfällen von Rechenzentren.
-- Zonenredundante Dienste replizieren Ihre Anwendungen und Daten zum Schutz vor Single Points of Failure in mehrere Verfügbarkeitszonen. Mit Verfügbarkeitszonen bietet Azure eine Betriebszeit-SLA von 99,99 % für VMs.
+- Zonenredundante Dienste replizieren Ihre Anwendungen und Daten zum Schutz vor Single Points of Failure in mehrere Verfügbarkeitszonen. Mit Verfügbarkeitszonen bietet Azure eine Betriebszeit-SLA von 99,99 Prozent für VMs.
 
     ![Verfügbarkeitszone](./media/migrate-best-practices-networking/availability-zone.png) *Verfügbarkeitszone*
 
@@ -285,7 +285,7 @@ Die Verantwortung für das Schützen von VNETs liegt zu gleichen Teilen bei Micr
 
 **Weitere Informationen**:
 
-- [Verschaffen Sie sich einen Überblick](https://docs.microsoft.com/azure/security/azure-security-network-security-best-practices) über bewährte Methoden für die Netzwerksicherheit.
+- [Verschaffen Sie sich einen Überblick](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices) über bewährte Methoden für die Netzwerksicherheit.
 - [Erfahren Sie](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm#security), wie Sie sichere Netzwerke entwerfen.
 
 ## <a name="best-practice-implement-an-azure-perimeter-network"></a>Bewährte Methode: Implementieren eines Azure-Umkreisnetzwerks
@@ -307,7 +307,7 @@ Die nachfolgende Abbildung zeigt ein Beispiel für ein Umkreisnetzwerk mit einem
 
 **Weitere Informationen**:
 
-- [Erfahren Sie mehr](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid) über die Bereitstellung eines Umkreisnetzwerks zwischen Azure und Ihrem lokalen Rechenzentrum.
+- Erfahren Sie mehr über die [Bereitstellung eines Umkreisnetzwerks zwischen Azure und Ihrem lokalen Rechenzentrum](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz).
 
 ## <a name="best-practice-filter-vnet-traffic-with-nsgs"></a>Bewährte Methode: Filtern von VNET-Datenverkehr mit Netzwerksicherheitsgruppen
 
@@ -511,7 +511,7 @@ Es wird empfohlen, eine Gruppe von Azure-Firewalls (oder virtuellen Netzwerkappl
 
 **Weitere Informationen**:
 
-- [Erfahren Sie mehr](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid) über die Verwendung virtueller Netzwerkappliances in einem Azure-VNET.
+- [Erfahren Sie mehr](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz) über die Verwendung virtueller Netzwerkappliances in einem Azure-VNET.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

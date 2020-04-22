@@ -4,20 +4,20 @@ description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adopti
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: af39421f89b8aacb3bae1f759631ee72adda40cd
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 470c84385606f1f7c5c36ec8e72b348aa6d4d8a5
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77709157"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80995414"
 ---
 # <a name="governance-guide-for-complex-enterprises-initial-corporate-policy-behind-the-governance-strategy"></a>Governanceleitfaden für komplexe Unternehmen: Anfängliche Unternehmensrichtlinie hinter der Governancestrategie
 
-Die folgende Unternehmensrichtlinie definiert die anfängliche Governanceposition, die der Ausgangspunkt für diesen Leitfaden ist. In diesem Artikel werden Risiken in einem frühen Stadium, anfängliche Richtlinienanweisungen und frühe Prozesse zum Durchsetzen von Richtlinienanweisungen definiert.
+Die folgende Unternehmensrichtlinie definiert die anfängliche Governanceposition, die den Ausgangspunkt für diesen Leitfaden bildet. In diesem Artikel werden Risiken in einem frühen Stadium, anfängliche Richtlinienanweisungen und frühe Prozesse zum Durchsetzen von Richtlinienanweisungen definiert.
 
 > [!NOTE]
 >Die Unternehmensrichtlinie ist kein technisches Dokument, gibt aber den Anstoß zu vielen technischen Entscheidungen. Das in der [Übersicht](./index.md) beschriebene Governance-MVP ist letztlich von dieser Richtlinie abgeleitet. Vor der Implementierung eines Governance-MVP sollte Ihre Organisation eine Unternehmensrichtlinie entwickeln, die auf Ihren eigenen Zielen und geschäftlichen Risiken basiert.
@@ -43,7 +43,7 @@ Die aktuelle Risikotoleranz ist hoch, und das Interesse an der Investition in di
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Diese Unternehmensrichtlinie bereitet das Cloudgovernanceteam auf die Implementierung des Governance-MVP vor, das die Grundlage für die Einführung bildet. Der nächste Schritt ist das Implementieren dieses MVP.
+Diese Unternehmensrichtlinie bereitet das Cloudgovernanceteam auf die Implementierung des Governance-MVP als Grundlage für die Einführung vor. Der nächste Schritt ist das Implementieren dieses MVP.
 
 > [!div class="nextstepaction"]
 > [Beschreibung der bewährten Methoden](./prescriptive-guidance.md)

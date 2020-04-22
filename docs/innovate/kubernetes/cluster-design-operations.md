@@ -3,16 +3,16 @@ title: Clusterentwurf und Vorgänge
 description: Enthält eine Beschreibung von Kubernetes im Framework für die Cloudeinführung (Cloud Adoption Framework) in Bezug auf den Clusterentwurf und die zugehörigen Vorgänge.
 author: sabbour
 ms.author: asabbour
-ms.topic: guide
 ms.date: 12/16/2019
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 1a4bcb42ec8fdcdbdb53d918c8348c22c2606649
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: 594b8ae3ce7949c3289d9a81ac9870889a5dba98
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392735"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80527178"
 ---
 <!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
 
@@ -77,5 +77,5 @@ Nachdem sich die Anwendung nun in der Produktion befindet, stellt sich die folge
 > | Checkliste  | Ressourcen |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **Automatisches Skalieren eines Clusters zur Erfüllung von Anwendungsanforderungen:** Zur Erfüllung der Anwendungsanforderungen müssen Sie unter Umständen die Anzahl von Knoten, auf denen Ihre Workloads ausgeführt werden, mit der automatischen Clusterskalierung anpassen. | [Automatisches Skalieren eines Clusters zur Erfüllung von Anwendungsanforderungen in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/cluster-autoscaler)    |
-> | **Planen für Geschäftskontinuität und Notfallwiederherstellung:** Planen Sie die Bereitstellung in mehreren Regionen, erstellen Sie einen Migrationsplan, und aktivieren Sie die Georeplikation für Containerimages. | [Best Practices für Geschäftskontinuität und Notfallwiederherstellung in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/operator-best-practices-multi-region)  <br/> [Georeplikation in Azure Container Registry](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)  |
+> | **Planen für Geschäftskontinuität und Notfallwiederherstellung:** Planen Sie die Bereitstellung in mehreren Regionen, erstellen Sie einen Migrationsplan, und aktivieren Sie die Georeplikation für Containerimages. | [Best Practices für die Bereitstellung in Regionen](https://docs.microsoft.com/azure/aks/operator-best-practices-multi-region)  <br/> [Georeplikation in Azure Container Registry](https://docs.microsoft.com/azure/container-registry/container-registry-geo-replication)  |
 > | **Konfigurieren der bedarfsgesteuerten Überwachung und Problembehandlung:** Richten Sie Warnungen und die Überwachung für Anwendungen in Kubernetes ein. Informieren Sie sich über die Standardkonfiguration, die Integration erweiterter Metriken und die Hinzufügung Ihrer eigenen benutzerdefinierten Überwachungs- und Warnungsfunktionen, um einen zuverlässigen Betrieb Ihrer Anwendung zu ermöglichen. | [Erste Schritte mit Überwachung und Warnungen für Kubernetes (Video)](https://www.youtube.com/watch?v=W7aN_z-cyUw&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=16) <br/> [Azure Monitor für Container – Übersicht](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview) <br/> [Aktivieren und Überprüfen der Kubernetes-Masterknotenprotokolle in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/view-master-logs) <br/> [Übersicht über die Azure Kubernetes Service-Diagnose (Vorschau)](https://docs.microsoft.com/azure/aks/concepts-diagnostics)    |

@@ -4,15 +4,15 @@ description: Verwenden Sie das Framework für die Cloudeinführung für Azure, u
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 2df963beba9087f8f3bfc2faf850eb384cd507a3
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 014d5da585b48754f9cee59431aea92b5047f551
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093756"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396200"
 ---
 # <a name="initial-organization-alignment"></a>Erstausrichtung der Organisation
 
@@ -30,7 +30,7 @@ Um ein Gleichgewicht zwischen Geschwindigkeit und Kontrolle zu schaffen, empfehl
 
 Es ist ziemlich intuitiv, dass für Cloudeinführungsbemühungen Personen erforderlich sind, die diese Aufgaben ausführen. Daher sind nur wenige Personen überrascht, dass ein Cloudeinführungsteam eine Anforderung ist. Diejenigen, die mit der Cloud noch nicht vertraut sind, wissen jedoch möglicherweise die Bedeutung eines Cloud Governance-Team nicht ganz zu schätzen. Diese Herausforderung tritt oft früh in Einführungszyklen auf. Das Cloudgovernanceteam stellt die notwendigen Kontrollen und Ausgleiche bereit, um sicherzustellen, dass die Einführung der Cloud das Unternehmen keinen neuen Risiken aussetzt. Wenn Risiken eingegangen werden müssen, stellt dieses Team sicher, dass die richtigen Prozesse und Kontrollen implementiert werden, um diese Risiken zu minimieren oder zu steuern.
 
-In diesem kurzen Abschnitt zu [Informationen zur Anforderung von Cloudfunktionen](../organize/index.md?#understand-required-cloud-capabilities) erfahren Sie mehr über Cloudeinführung, Cloud Governance und andere solche Funktionen.
+Weitere Informationen zu Cloudeinführung, Cloud Governance und andere solche Funktionen erfahren Sie in diesem kurzen Abschnitt mit [Informationen zu erforderlichen Cloudfunktionen](../organize/index.md#understand-required-cloud-capabilities).
 
 ## <a name="map-people-to-capabilities"></a>Zuordnen von Personen zu Funktionen
 

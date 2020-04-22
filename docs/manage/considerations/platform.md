@@ -4,21 +4,21 @@ description: Machen Sie sich mit der Abhängigkeit vertraut, die in Ihrer Organi
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9a08c2f5fcf799bb6e1f37cd52b3d7e18724618e
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: 3480d0411e1a16eed18d14859cbb997706ccccb4
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341027"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80527624"
 ---
 # <a name="platform-operations-in-cloud-management"></a>Plattformbetrieb in der Cloudverwaltung
 
 Eine Cloudverwaltungs-Baseline, die sich über [Bestand und Transparenz](./inventory.md), [betriebsbezogene Compliance](./operational-compliance.md) und [Schutz und Wiederherstellung](./protect.md) erstreckt, kann für die meisten Workloads im IT-Portfolio ein ausreichendes Maß an Cloudverwaltung bieten. Diese Baseline reicht jedoch nur selten aus, um das gesamte Portfolio zu unterstützen. Dieser Artikel basiert auf dem gängigsten nächsten Schritt im Bereich Cloudverwaltung, dem Portfoliobetrieb.
 
-Eine schnelle Analyse der Ressourcen im IT-Portfolio zeigt Muster der unterstützten Workloads auf. Innerhalb dieser Workloads gibt es eine Reihe gängiger Plattformen. Abhängig von den bisherigen IT-bezogenen Entscheidungen im Unternehmen können diese Plattformen sehr unterschiedlich sein.
+Eine schnelle Analyse der Ressourcen im IT-Portfolio zeigt Muster der unterstützten Workloads auf. Innerhalb dieser Workloads gibt es gemeinsame Plattformen. Abhängig von den bisherigen IT-bezogenen Entscheidungen im Unternehmen können diese Plattformen sehr unterschiedlich sein.
 
 In einigen Organisationen besteht eine starke Abhängigkeit von SQL Server, Oracle oder anderen Open-Source-Datenplattformen. In anderen Unternehmen können die Gemeinsamkeiten sich auf die Hostingplattformen für virtuelle Computer (VMs) oder Container beziehen. In wieder anderen Fällen besteht möglicherweise eine Abhängigkeit von Anwendungen oder ERP-Systemen (Enterprise Resource Planning) wie SAP, Oracle oder anderen.
 

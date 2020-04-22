@@ -4,16 +4,16 @@ description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adopti
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: de9fd12afe7445c5cdd3b4ae8c1eba9c7cb07f19
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 16f73a03abf0469b37f907cdfbc62e2309d948af
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80357058"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120307"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Sicherheitsbaseline“
 
@@ -123,7 +123,7 @@ Die neuen bewährten Methoden lassen sich in zwei Kategorien unterteilen: Untern
 6. Integrieren von Gruppenrichtlinienobjekten (GPO) über DSC (Desired State Configuration):
     1. Konvertieren Sie ein GPO in DSC. Das Projekt zur [Microsoft-Basislinienverwaltung](https://github.com/Microsoft/BaselineManagement) auf GitHub kann diese Aufgabe beschleunigen. Stellen Sie sicher, dass DSC im Repository parallel zu den Resource Manager-Vorlagen gespeichert wird.
     2. Stellen Sie Azure Automation DSC für alle Instanzen des Unternehmens-IT-Abonnements bereit. Mit Azure Automation kann DSC auf virtuelle Computer angewendet werden, die in unterstützten Abonnements innerhalb der Verwaltungsgruppe bereitgestellt werden.
-    3. In der aktuellen Roadmap ist die Aktivierung benutzerdefinierter Gastkonfigurationsrichtlinien geplant. Wenn dieses Feature veröffentlicht wird, ist die Verwendung von Azure Automation in dieser bewährten Methode nicht mehr erforderlich.
+    3. In der aktuellen Roadmap ist die Aktivierung benutzerdefinierter Gastkonfigurationsrichtlinien als Ziel festgelegt. Wenn dieses Feature veröffentlicht wird, ist die Verwendung von Azure Automation in dieser bewährten Methode nicht mehr erforderlich.
 
 **Anwenden zusätzlicher Governance auf ein Cloudeinführungsabonnement (Spoke):** Aufbauend auf dem `Corporate IT Subscription` können geringfügige Änderungen am Governance-MVP, die auf die einzelnen Abonnements zur Unterstützung von Anwendungsarchetypen angewendet werden, für eine schnelle Verbesserung sorgen.
 

@@ -4,15 +4,15 @@ description: Nutzen Sie das Reifemodell der Innovationsmethodik, um die Migratio
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 9b355fa346373d1fcca069e2e47e23d1ee3a86b2
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: f0073d600f0f08b2e1f4a4fa881bfe5e6b99954c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356756"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120557"
 ---
 <!-- cSpell:ignore deprioritize -->
 
@@ -39,7 +39,7 @@ Das Hauptziel der [Innovationsmethodik](./index.md) ist das Schaffen von Kundenp
 - [Lösungsbereitstellung](#solution-deployment): Stellen Sie Lösungen bereit, damit das Team Änderungen schnell für Kunden freigeben kann.
 - [Integrierte Messung](#integrated-measurements): Fügen Sie der Feedbackschleife Lernmetriken für eine klare Analyse durch das gesamte Team hinzu.
 
-Um technische Spitzen zu minimieren, setzen Sie voraus, dass die Reife in den einzelnen Prinzipien anfänglich niedrig ist. Planen Sie jedoch definitiv voraus durch Orientierung an Tools und Prozessen, die sich präziser werdenden Hypothesen anpassen können. In Azure ermöglichen [GitHub](https://guides.github.com) und [Azure DevOps](https://docs.microsoft.com/azure/devops) kleinen Teams, mit geringen Reibungsverlusten zu beginnen. Diese Teams könnten wachsen und Tausende von Entwicklern einbeziehen, die gemeinsam an skalierten Lösungen arbeiten und Hunderte von Kundenhypothesen testen. Im restlichen Teil dieses Artikels wird der Ansatz „Groß planen/klein beginnen“ zur Unterstützung der Einführung zu jedem dieser Prinzipien veranschaulicht.
+Um technische Spitzen zu minimieren, setzen Sie voraus, dass die Reife in den einzelnen Prinzipien anfänglich niedrig ist. Planen Sie jedoch definitiv voraus durch Orientierung an Tools und Prozessen, die sich präziser werdenden Hypothesen anpassen können. In Azure ermöglichen [GitHub](https://guides.github.com) und [Azure DevOps](https://docs.microsoft.com/azure/devops) kleinen Teams, mit geringen Reibungsverlusten zu beginnen. Diese Teams könnten wachsen und Tausende von Entwicklern einbeziehen, die gemeinsam an skalierten Lösungen arbeiten und Hunderte von Kundenhypothesen testen. Im restlichen Teil dieses Artikels wird der Ansatz „Groß planen, klein beginnen“ zur Unterstützung der Einführung zu jedem dieser Prinzipien veranschaulicht.
 
 ## <a name="shared-solution"></a>Freigegebene Lösung
 

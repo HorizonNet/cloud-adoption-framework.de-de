@@ -4,16 +4,16 @@ description: Diese exemplarischen Richtlinienanweisungen für die Sicherheitsbas
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 02a1c18a73b784cb9245ed7c83d86c21c0690148
-ms.sourcegitcommit: af45c1c027d7246d1a6e4ec248406fb9a8752fb5
+ms.openlocfilehash: 1fb85abb334f5af52b3b6a2dda375897a9b5b4ee
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77707206"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997255"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Beispiele für Richtlinienanweisungen der Sicherheitsbaseline
 
@@ -31,7 +31,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine sicherh
 
 **Richtlinienanweisung:** Alle bereitgestellten Ressourcen müssen nach Wichtigkeit und Datenklassifizierung kategorisiert werden. Vor der Bereitstellung in der Cloud müssen die Klassifizierungen durch das Cloudgovernanceteam und die Besitzer der Anwendung überprüft werden.
 
-**Potenzielle Entwurfsoption:** Legen Sie [Standards für Ressourcentags](../../decision-guides/resource-tagging/index.md) fest, und stellen Sie sicher, dass IT-Mitarbeiter sie konsistent mithilfe von [Azure-Ressourcentags](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags) auf alle bereitgestellten Ressourcen anwenden.
+**Potenzielle Entwurfsoption:** Legen Sie [Standards für Ressourcentags](../../decision-guides/resource-tagging/index.md) fest, und stellen Sie sicher, dass IT-Mitarbeiter sie konsistent mithilfe von [Azure-Ressourcentags](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources) auf alle bereitgestellten Ressourcen anwenden.
 
 ## <a name="data-encryption"></a>Datenverschlüsselung
 
@@ -39,7 +39,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine sicherh
 
 **Richtlinienanweisung:** Alle geschützten Daten müssen im Ruhezustand verschlüsselt sein.
 
-**Potenzielle Entwurfsoption:** Im Artikel [Übersicht über die Azure-Verschlüsselung](https://docs.microsoft.com/azure/security/security-azure-encryption-overview) finden Sie Informationen darüber, wie die Verschlüsselung für ruhende Daten auf der Azure-Plattform ausgeführt wird. Ziehen Sie außerdem weitere Steuerungsoptionen in Betracht – etwa im Zusammenhang mit der Kontodatenverschlüsselung oder der Kontrolle über die Änderungsmöglichkeiten für Speicherkontoeinstellungen.
+**Potenzielle Entwurfsoption:** Im Artikel [Übersicht über die Azure-Verschlüsselung](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview) finden Sie Informationen darüber, wie die Verschlüsselung für ruhende Daten auf der Azure-Plattform ausgeführt wird. Ziehen Sie außerdem weitere Steuerungsoptionen in Betracht – etwa im Zusammenhang mit der Kontodatenverschlüsselung oder der Kontrolle über die Änderungsmöglichkeiten für Speicherkontoeinstellungen.
 
 ## <a name="network-isolation"></a>Netzwerkisolation
 
@@ -87,7 +87,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine sicherh
 
 **Richtlinienanweisung:** Trends und potenzielle Exploits, die mögliche Auswirkungen auf Cloudbereitstellungen haben, müssen vom Sicherheitsteam regelmäßig überprüft werden, damit Updates für in der Cloud verwendete Sicherheitsbaselinetools bereitgestellt werden.
 
-**Potenzielle Entwurfsoption:** Legen Sie ein regelmäßiges Meeting zur Sicherheitsüberprüfung fest, an dem relevante IT- und Governanceteammitglieder teilnehmen. Überprüfen Sie vorhandene Sicherheitsdaten und Metriken, um Lücken in den aktuellen Richtlinien- und Sicherheitsbaselinetools zu ermitteln, und aktualisieren Sie die Richtlinie, um alle neuen Risiken zu beseitigen. Nutzen Sie [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) und [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro), um verwertbare Erkenntnisse zu spezifischen neuen Bedrohungen für Ihre Bereitstellungen zu gewinnen.
+**Potenzielle Entwurfsoption:** Legen Sie ein regelmäßiges Meeting zur Sicherheitsüberprüfung fest, an dem relevante IT- und Governanceteammitglieder teilnehmen. Überprüfen Sie vorhandene Sicherheitsdaten und Metriken, um Lücken in den aktuellen Richtlinien- und Sicherheitsbaselinetools zu ermitteln, und aktualisieren Sie die Richtlinie, um alle neuen Risiken zu beseitigen. Verwenden Sie [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) und [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro), um verwertbare Erkenntnisse zu spezifischen neuen Bedrohungen für Ihre Bereitstellungen zu gewinnen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

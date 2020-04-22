@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3680af7b55012d0fbfbe0feac632e92b178aa8d2
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 134026b963602448e145cf118378977a4b03de58
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354218"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396183"
 ---
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
 
@@ -93,12 +93,12 @@ Im Gegensatz zum IaaS-Konzept, bei dem Sie VMs und Infrastruktur selbst verwalte
 
 **Weitere Informationen**:
 
-- [Erfahren Sie mehr](https://docs.microsoft.com/azure/security/azure-security-disk-encryption-overview) über Azure Disk Encryption für IaaS-VMs.
-- [Aktivieren](https://docs.microsoft.com/azure/security/azure-security-disk-encryption-windows) Sie die Verschlüsselung für IaaS-Windows-VMs.
-- [Erfahren Sie mehr](https://docs.microsoft.com/azure/storage/common/storage-service-encryption) über die Azure-Speicherdienstverschlüsselung für ruhende Daten.
-- [Lesen](https://docs.microsoft.com/azure/sql-database/sql-database-always-encrypted-azure-key-vault) Sie eine Übersicht über Always Encrypted.
-- [Erfahren Sie mehr](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-azure-sql?view=sql-server-2017) über TDE für Features von Azure SQL-Datenbank.
-- [Erfahren Sie mehr](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-byok-azure-sql) über TDE mit Bring Your Own Key.
+- Weitere Informationen zu [Azure Disk Encryption für virtuelle Computer und VM-Skalierungsgruppen](https://docs.microsoft.com/azure/security/fundamentals/azure-disk-encryption-vms-vmss).
+- Aktivieren von [Azure Disk Encryption für virtuelle Windows-Computer](https://docs.microsoft.com/azure/virtual-machines/windows/disk-encryption-overview).
+- Erfahren Sie mehr über die [Azure-Speicherdienstverschlüsselung für ruhende Daten](https://docs.microsoft.com/azure/storage/common/storage-service-encryption).
+- Lesen Sie die [Übersicht zu Always Encrypted](https://docs.microsoft.com/azure/sql-database/sql-database-always-encrypted-azure-key-vault).
+- Lesen Sie über die [Transparente Datenverschlüsselung für SQL-Datenbank und Azure Synapse](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-azure-sql).
+- Erfahren Sie mehr zu [Azure SQL Transparent Data Encryption mithilfe eines kundenseitig verwalteten Schlüssels](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-byok-azure-sql).
 
 ## <a name="best-practice-protect-vms-with-antimalware"></a>Bewährte Methode: Schützen von VMs mit Antischadsoftware
 
@@ -113,7 +113,7 @@ Insbesondere ältere zu Azure migrierte VMs verfügen möglicherweise nicht übe
 
 **Weitere Informationen**:
 
-- [Erfahren Sie mehr](https://docs.microsoft.com/azure/security/azure-security-antimalware) über Microsoft-Antischadsoftware.
+- Erfahren Sie mehr zu [Microsoft Antimalware für Azure Cloud Services und Virtual Machines](https://docs.microsoft.com/azure/security/fundamentals/antimalware).
 
 ## <a name="best-practice-secure-web-apps"></a>Bewährte Methode: Sichern von Web-Apps
 
@@ -217,7 +217,7 @@ Mit aussagekräftigen Namen für Ihre Ressourcengruppen, die Administratoren und
 
 **Weitere Informationen**:
 
-- [Erfahren Sie mehr](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) über Namenskonventionen.
+- Erfahren Sie mehr über [Empfohlene Benennungskonventionen](../../ready/azure-best-practices/naming-and-tagging.md).
 
 ## <a name="best-practice-implement-delete-locks-for-resource-groups"></a>Bewährte Methode: Implementieren von Sperren für Ressourcengruppen
 
@@ -257,8 +257,8 @@ Häufig bietet die Verwendung nur eines Ressourcengruppenamens für Ressourcen n
 
 **Weitere Informationen**:
 
-- [Erfahren Sie mehr](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags) über Markierungen und Tageinschränkungen.
-- [Sehen Sie sich](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags#powershell) PowerShell- und CLI-Beispiele für das Einrichten von Tags und das Anwenden von Tags von einer Ressourcengruppe auf die zugehörigen Ressourcen an.
+- [Erfahren Sie mehr](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources) über Markierungen und Tageinschränkungen.
+- [Sehen Sie sich](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources#powershell) PowerShell- und CLI-Beispiele für das Einrichten von Tags und das Anwenden von Tags von einer Ressourcengruppe auf die zugehörigen Ressourcen an.
 - [Lesen](https://www.azurefieldnotes.com/2016/07/18/azure-resource-tagging-best-practices) Sie Best Practices zum Markieren in Azure.
 
 ## <a name="best-practice-implement-blueprints"></a>Bewährte Methode: Implementieren von Blaupausen
@@ -302,7 +302,7 @@ Das folgende Diagramm zeigt ein Beispiel zum Erstellen einer Hierarchie für die
 
 **Weitere Informationen**:
 
-- [Erfahren Sie mehr](https://docs.microsoft.com/azure/governance/management-groups/index) über das Organisieren von Ressourcen in Verwaltungsgruppen.
+- [Erfahren Sie mehr](https://docs.microsoft.com/azure/governance/management-groups) über das Organisieren von Ressourcen in Verwaltungsgruppen.
 
 ## <a name="best-practice-deploy-azure-policy"></a>Bewährte Methode: Bereitstellen von Azure Policy
 
@@ -381,7 +381,7 @@ Azure-VMs werden als Seitenblobs in Azure Storage gespeichert.
 - [Erfahren Sie](https://docs.microsoft.com/azure/storage/blobs/storage-blob-snapshots), wie Sie eine Blobmomentaufnahme erstellen.
 - [Sehen Sie sich ein Beispielszenario](https://azure.microsoft.com/blog/microsoft-azure-block-blob-storage-backup) für die Sicherung des Blobspeichers an.
 - [Lesen Sie mehr](https://docs.microsoft.com/azure/storage/blobs/storage-blob-soft-delete) über das vorläufige Löschen.
-- [Notfallwiederherstellung und erzwungenes Failover (Vorschau) in Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-disaster-recovery-guidance?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)
+- [Notfallwiederherstellung und erzwungenes Failover (Vorschau) in Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-disaster-recovery-guidance?toc=/azure/storage/blobs/toc.json)
 
 #### <a name="third-party-backup"></a>Sicherungslösungen von Drittanbietern
 
@@ -459,8 +459,8 @@ Azure-Ressourcen generieren recht viele Protokollierungsmetrik- und Telemetrieda
 
 **Weitere Informationen**:
 
-- [Erfahren Sie mehr](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-of-diagnostic-logs) über das Erfassen und Nutzen von Protokolldaten.
-- [Erfahren Sie](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-diagnostic-logs-schema), was für die Diagnoseprotokollierung unterstützt wird.
+- [Erfahren Sie mehr](https://docs.microsoft.com/azure/azure-monitor/platform/platform-logs-overview) über das Erfassen und Nutzen von Protokolldaten.
+- [Erfahren Sie](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-logs-schema), was für die Diagnoseprotokollierung unterstützt wird.
 
 ## <a name="best-practice-set-up-alerts-and-playbooks"></a>Bewährte Methode: Einrichten von Warnungen und Playbooks
 
@@ -476,7 +476,7 @@ Wenn die Diagnoseprotokollierung für Azure-Ressourcen aktiviert ist, können Si
 
 **Weitere Informationen**:
 
-- [Erfahren Sie mehr](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-alerts) über Warnungen.
+- [Erfahren Sie mehr](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-overview) über Warnungen.
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/security-center/security-center-playbooks) über Sicherheitsplaybooks, die auf Security Center-Warnungen reagieren.
 
 ## <a name="best-practice-use-the-azure-dashboard"></a>Bewährte Methode: Verwenden des Azure-Dashboards

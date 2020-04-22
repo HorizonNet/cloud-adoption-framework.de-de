@@ -4,15 +4,15 @@ description: Strategie für Governance bzw. Compliance
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0526b85e52e203163942050716e5cabd4fc84ff3
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 35e7f2a09dd1421f0d57808658a96135dcf8e947
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80355563"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997604"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategie für Governance bzw. Compliance
 
@@ -28,7 +28,7 @@ Die Konfiguration der grundlegenden Azure-Umgebung kann sich erheblich ändern, 
 
 **Allgemeine Vorgehensweise für die Governance**: Für die meisten Organisationen ist das [Cloud Adoption Framework-Governancemodell](../../govern/guides/index.md) ausreichend. Dieses besteht aus der Implementierung eines Minimum Viable Product (MVP, mindestens überlebensfähiges Produkt), gefolgt von zielgerichteten Iterationen der Governancereife, um konkrete Risiken anzugehen, die im Einführungsplan identifiziert wurden. Diese Vorgehensweise stellt die mindestens erforderlichen Tools bereit, um eine konsistente Governance einzurichten, und das Team kann diese nachvollziehen. Dann werden die Tools erweitert, um allgemeine Probleme hinsichtlich der Governance zu lösen.
 
-**ISO 27001-Blaupausen für die Compliance**: Für Kunden, die Compliancestandards gemäß ISO einhalten müssen, kann das [Blaupausenbeispiel „ISO 27001: Gemeinsame Dienste“](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared/index) als effektiveres MVP dienen, um umfassendere Governanceeinschränkungen bereits frühzeitig im iterativen Prozess zu generieren. Das [Blaupausenbeispiel „ISO 27001: App Service-Umgebungs-/SQL-Datenbank-Workload“](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload) baut auf dieser Blaupause auf, um Kontrollen zuzuordnen und eine allgemeine Architektur für eine Anwendungsumgebung bereitzustellen. Wenn weitere Blaupausen für die Compliance veröffentlicht werden, werden wir hier auch auf diese verweisen.
+**ISO 27001-Blaupausen für die Compliance**: Für Kunden, die Compliancestandards gemäß ISO einhalten müssen, kann das [Blaupausenbeispiel „ISO 27001: Gemeinsame Dienste“](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared) als effektiveres MVP dienen, um umfassendere Governanceeinschränkungen bereits frühzeitig im iterativen Prozess zu generieren. Das [Blaupausenbeispiel „ISO 27001: App Service-Umgebungs-/SQL-Datenbank-Workload“](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload) baut auf dieser Blaupause auf, um Kontrollen zuzuordnen und eine allgemeine Architektur für eine Anwendungsumgebung bereitzustellen. Wenn weitere Blaupausen für die Compliance veröffentlicht werden, werden wir hier auch auf diese verweisen.
 
 **Virtuelles Rechenzentrum**: Ein robusterer Ausgangspunkt für die Governance kann erforderlich sein. Ziehen Sie in solchen Fällen das [virtuelle Azure-Rechenzentrum](../../reference/vdc.md) (Virtual Datacenter, VDC) in Betracht. Dieser Ansatz wird häufig bei einer unternehmensweiten Einführung vorgeschlagen, insbesondere bei einem Umfang von über 10.000 Ressourcen. Er ist im Allgemeinen auch die erste Wahl für komplexe Governanceszenarien, wenn eine der folgenden Anforderungen erfüllt sein muss: umfangreiche Complianceanforderungen von Drittanbietern, tiefgreifendes Fachwissen oder Parität mit ausgereiften IT-Governancerichtlinien und Complianceanforderungen.
 
@@ -68,7 +68,7 @@ In diesem Prozess sollte der Projektplan Zeitfenster enthalten, in denen das Clo
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Der letzte Punkt auf der [Checkliste für den erweiterten Umfang](./index.md) empfiehlt Ihnen, zur Checkliste zurückzukehren und weitere Anforderungen in Bezug auf den Umfang der Migration erneut zu evaluieren.
+Der letzte Punkt auf der [Checkliste für bewährte Migrationsmethoden](./index.md) empfiehlt Ihnen, zur Checkliste zurückzukehren und weitere Anforderungen in Bezug auf den Umfang der Migration erneut zu evaluieren.
 
 > [!div class="nextstepaction"]
-> [Checkliste für erweiterten Umfang](./index.md)
+> [Checkliste für bewährte Migrationsmethoden](./index.md)

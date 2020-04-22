@@ -4,15 +4,15 @@ description: Richten Sie einen Prozess zur Überprüfung der Einsatztauglichkeit
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9bc4e2bb9b39a83ab8829ea4a12cd1bb019bf0c3
-ms.sourcegitcommit: 0ea426f2f471eb7310c6f09478be1306cf7bf0d8
+ms.openlocfilehash: f1eeae9e59da365b066ba78a8eb024448bf9815b
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78341809"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120115"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Einrichten einer Überprüfung der Einsatztauglichkeit
 
@@ -44,7 +44,7 @@ Während dieses Vorgangs liegt der Schwerpunkt häufig auf den Features des Dien
 
 Im Gegensatz dazu beziehen sich die _nicht funktionalen_ Anforderungen auf Eigenschaften wie die [Verfügbarkeit](https://docs.microsoft.com/azure/architecture/checklist/availability), [Resilienz](https://docs.microsoft.com/azure/architecture/resiliency) und [Skalierbarkeit](https://docs.microsoft.com/azure/architecture/checklist/scalability) des Diensts. Diese Eigenschaften unterscheiden sich von den funktionalen Anforderungen, da sie die endgültige Funktion eines bestimmten Features im Dienst nicht direkt beeinflussen. Diese nicht funktionalen Anforderungen beziehen sich jedoch auf die Leistung und Kontinuität des Diensts.
 
-Sie können einige nicht funktionale Anforderungen in Form einer Vereinbarung zum Servicelevel (SLA) festlegen. Beispielsweise können Sie die Dienstkontinuität als Prozentsatz der Verfügbarkeit ausdrücken: „99,99 % der Zeit verfügbar“. Andere nicht funktionale Anforderungen können schwieriger zu definieren sein und sich mit zunehmendem Produktionsbedarf ändern. So könnte beispielsweise ein verbraucherorientierter Dienst nach einem Popularitätsschub mit unerwarteten Durchsatzanforderungen konfrontiert werden.
+Sie können einige nicht funktionale Anforderungen in Form einer Vereinbarung zum Servicelevel (SLA) festlegen. Beispielsweise können Sie die Dienstkontinuität als Prozentsatz der Verfügbarkeit ausdrücken: „99,99 Prozent der Zeit verfügbar“. Andere nicht funktionale Anforderungen können schwieriger zu definieren sein und sich mit zunehmendem Produktionsbedarf ändern. So könnte beispielsweise ein verbraucherorientierter Dienst nach einem Popularitätsschub mit unerwarteten Durchsatzanforderungen konfrontiert werden.
 
 > [!NOTE]
 > Weitere Informationen zu den Anforderungen an die Resilienz finden Sie unter [Entwerfen zuverlässiger Azure-Anwendungen](https://docs.microsoft.com/azure/architecture/reliability#define-requirements). Dieser Artikel enthält Erläuterungen zu Konzepten wie RPO (Recovery Point Objective), RTO (Recovery Time Objective) und SLA.
@@ -81,7 +81,7 @@ Es ist wichtig zu betonen, dass diese Metriken die Geschäftsanforderungen direk
 
 Die Phase der Dienstüberprüfung ist der Kern des Prozesses der Überprüfung der Einsatztauglichkeit. Sie umfasst die folgenden Schritte:
 
-1. **Messen der Dienstmetriken**. Verwenden Sie die Scorecardmetriken, um die Dienste zu überwachen, und so sicherzustellen, dass die Dienste die geschäftlichen Erwartungen erfüllen. Dienstüberwachung spielt eine wesentliche Rolle. Wenn Sie eine Reihe von Diensten in Bezug auf die nicht funktionalen Anforderungen nicht überwachen können, sollten die entsprechenden Scorecardmetriken als rot betrachtet werden. In diesem Fall ist der erste Schritt zur Korrektur die Implementierung einer entsprechenden Dienstüberwachung. Wenn das Unternehmen beispielsweise erwartet, dass ein Dienst mit einer Verfügbarkeit von 99,99 % arbeitet, aber keine Produktionstelemetrie zur Messung der Verfügbarkeit vorhanden ist, gehen Sie davon aus, dass die Anforderung nicht erfüllt werden.
+1. **Messen der Dienstmetriken**. Verwenden Sie die Scorecardmetriken, um die Dienste zu überwachen, und so sicherzustellen, dass die Dienste die geschäftlichen Erwartungen erfüllen. Dienstüberwachung spielt eine wesentliche Rolle. Wenn Sie eine Reihe von Diensten in Bezug auf die nicht funktionalen Anforderungen nicht überwachen können, sollten die entsprechenden Scorecardmetriken als rot betrachtet werden. In diesem Fall ist der erste Schritt zur Korrektur die Implementierung einer entsprechenden Dienstüberwachung. Wenn das Unternehmen beispielsweise erwartet, dass ein Dienst mit einer Verfügbarkeit von 99,99 Prozent arbeitet, aber keine Produktionstelemetrie zur Messung der Verfügbarkeit vorhanden ist, gehen Sie davon aus, dass die Anforderung nicht erfüllt wird.
 
 2. **Planen der Korrekturmaßnahmen**. Bestimmen Sie für jeden Dienstvorgang mit Metriken, die unter einen akzeptablen Schwellenwert fallen, die Kosten für die Korrektur des Diensts, um damit eine akzeptable Ebene zu erreichen. Wenn die Kosten für die Korrektur des Dienstes höher sind als die erwarteten Einnahmen aus dem Dienst, sollten Sie die immateriellen Kosten (etwa die Kundenzufriedenheit) berücksichtigen. Wenn Kunden beispielsweise Schwierigkeiten haben, über den Dienst erfolgreich zu bestellen, könnten sie stattdessen einen Konkurrenten wählen.
 

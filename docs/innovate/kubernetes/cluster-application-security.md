@@ -3,16 +3,16 @@ title: Cluster- und Anwendungssicherheit
 description: Enthält eine Beschreibung von Kubernetes im Framework für die Cloudeinführung (Cloud Adoption Framework) in Bezug auf die Cluster- und Anwendungssicherheit.
 author: sabbour
 ms.author: asabbour
-ms.topic: guide
 ms.date: 03/20/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 64a7f4097a75b54ef4f91b5889fa31fc3b98d61a
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: c7d27fb64e03358876eb8384c09e3add5f5c433e
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392747"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80527240"
 ---
 <!-- cSpell:ignore asabbour sabbour kured -->
 
@@ -60,7 +60,7 @@ Beim Vorbereiten der Anwendung für die Produktion sollten Sie einen Mindestsatz
 > | **Schützen des Netzwerkdatenverkehrs zwischen Pods mit Netzwerkrichtlinien:** Wenden Sie das Prinzip der geringsten Rechte an, um den Netzwerkdatenverkehr zwischen den Pods im Cluster zu steuern. | [Sicherer Datenverkehr zwischen Pods durch Netzwerkrichtlinien in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/use-network-policies) |
 > | **Einschränken des Zugriffs auf den API-Server mit autorisierten IP-Adressen:** Erhöhen Sie die Clustersicherheit, und reduzieren Sie die Angriffsfläche, indem Sie den Zugriff auf den API-Server auf eine begrenzte Zahl von IP-Adressbereichen beschränken. | [Sicherer Zugriff auf den API-Server mit autorisierten IP-Adressbereichen in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/api-server-authorized-ip-ranges) |
 > | **Beschränken des ausgehenden Datenverkehrs eines Clusters:** Hier wird beschrieben, welche Ports und Adressen zugelassen werden müssen, wenn Sie den ausgehenden Datenverkehr für den Cluster einschränken. Sie können Azure Firewall oder eine Firewallappliance eines Drittanbieters verwenden, um den ausgehenden Datenverkehr zu schützen und diese erforderlichen Ports und Adressen zu definieren. | [Steuern des ausgehenden Datenverkehrs für Clusterknoten in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/limit-egress-traffic) |
-> | **Schützen des Datenverkehrs mit einer Web Application Firewall (WAF):** Nutzen Sie Azure Application Gateway als Controller für den eingehenden Datenverkehr von Kubernetes-Clustern.  | [Was ist der Application Gateway-Eingangscontroller?](https://docs.microsoft.com/azure/application-gateway/ingress-controller-overview)    |
+> | **Schützen des Datenverkehrs mit einer Web Application Firewall (WAF):** Verwenden Sie Azure Application Gateway als Controller für den eingehenden Datenverkehr von Kubernetes-Clustern.  | [Was ist der Application Gateway-Eingangscontroller?](https://docs.microsoft.com/azure/application-gateway/ingress-controller-overview)    |
 > | **Anwenden von Sicherheits- und Kernelupdates auf Workerknoten:** Grundlegendes zur Umgebung für AKS-Knotenupdates Sicherheitsupdates werden automatisch auf Linux-Knoten in AKS angewendet, um Ihre Cluster zu schützen. Diese Updates enthalten Sicherheitsfixes für das Betriebssystem oder Kernelupdates. Einige dieser Updates erfordern den Neustart eines Knotens, um den Vorgang abzuschließen. | [Anwenden von Sicherheits- und Kernelupdates auf Linux-Knoten in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/node-updates-kured) |
 > | **Konfigurieren einer Lösung für die Container- und Clusterüberprüfung:** Überprüfen Sie die in Azure Container Registry angeordneten Container, und verschaffen Sie sich tieferen Einblick in Ihre Clusterknoten, den Clouddatenverkehr und Sicherheitskontrollen. | [Integration von Security Center in Azure Container Registry](https://docs.microsoft.com/azure/security-center/azure-container-registry-integration) <br/> [Integration von Security Center in Azure Kubernetes Service](https://docs.microsoft.com/azure/security-center/azure-kubernetes-service-integration)  |
 
