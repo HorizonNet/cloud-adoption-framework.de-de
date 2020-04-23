@@ -7,13 +7,15 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 594f10968e45477895fcc5dcd1b2a95d16d7c861
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: 04816ede2d9c46e60baef88652551e647049bd99
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392647"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120685"
 ---
+<!-- cSpell:ignore CAF -->
+
 # <a name="first-landing-zone"></a>Erste Landezone
 
 Infrastructure-as-Code ist bei den meisten Cloudeinführungsaufgaben ein natürlicher Übergang. Die Bereitstellung Ihrer ersten Zielzonen in der Cloud ist ein allgemeiner Ausgangspunkt für den Wechsel in eine codegesteuerte Umgebung. Dieser Artikel hilft Ihnen dabei, den Begriff _Zielzone_ zu verstehen und zu entscheiden, welche Zielzone für Ihre derzeitigen Anforderungen in Bezug auf die Einführung am besten geeignet ist.
@@ -37,7 +39,7 @@ D: Wenn ein Partner kontinuierlich verwaltete Dienste bereitstellt oder vertragl
 
 ## <a name="choosing-a-first-landing-zone"></a>Auswählen Ihrer ersten Zielzone
 
-Die Auswahl der ersten Zielzone hängt von einer Reihe von Variablen ab. In der folgenden Übersicht werden einige Optionen für die ersten Zielzonen zusammen mit Variablen erfasst, die die Entscheidung möglicherweise steuern.
+Die Auswahl der ersten Zielzone hängt von verschiedenen Variablen ab. In der folgenden Übersicht werden einige Optionen für die ersten Zielzonen zusammen mit Variablen erfasst, die die Entscheidung möglicherweise steuern.
 
 | Zielzone                                 | Erfahrung mit der Cloud  | Skalieren             | Ermittlungszeit | Produktionsbereit | Hybrid             | Sensible Daten     | Unternehmenskritisch   | Kompatibilität         |
 |----------------------------------------------|-------------------|-------------------|----------------|------------------|--------------------|--------------------|--------------------|--------------------|

@@ -4,15 +4,15 @@ description: Verwenden Sie das Framework für die Cloudeinführung für Azure, u
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: e2e0399f227f69ef1ae27b6b23a847a6508650d4
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: b4c39b0a55485335e65bee9a5e6be2fe5fe22279
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353497"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997758"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -22,7 +22,7 @@ Die Cloud eröffnet ganz neue Möglichkeiten – und zwar auf globaler Ebene. Es
 
 ## <a name="data-sovereignty"></a>Datenhoheit
 
-In vielen geopolitischen Regionen gelten Bestimmungen zur Datenhoheit. Diese Vorschriften schränken ein, wo Daten gespeichert werden können, welche Daten das Ursprungsland verlassen dürfen und welche Daten über Bürger der betreffenden Region erfasst werden dürfen. Bevor Sie eine beliebige cloudbasierte Lösung in einem fremden Land einsetzen, sollten Sie verstehen, wie der jeweilige Cloudanbieter mit dem Thema Datenhoheit umgeht. Weitere Informationen zum Azure-Ansatz für die einzelnen Geografien finden Sie [hier](https://azure.microsoft.com/global-infrastructure/geographies). Weitere Informationen zur Compliance in Azure finden Sie unter [Datenschutz bei Microsoft](https://www.microsoft.com/trustcenter/privacy) im Microsoft Trust Center.
+In vielen geopolitischen Regionen gelten Bestimmungen zur Datenhoheit. Diese Vorschriften schränken ein, wo Daten gespeichert werden können, welche Daten das Ursprungsland verlassen dürfen und welche Daten über Bürger der betreffenden Region erfasst werden dürfen. Bevor Sie eine beliebige cloudbasierte Lösung in einem fremden Land einsetzen, sollten Sie verstehen, wie der jeweilige Cloudanbieter mit dem Thema Datenhoheit umgeht. Weitere Informationen zum Azure-Ansatz für die einzelnen Geografien finden Sie unter [Azure-Geografien](https://azure.microsoft.com/global-infrastructure/geographies). Weitere Informationen zur Compliance in Azure finden Sie unter [Datenschutz bei Microsoft](https://www.microsoft.com/trust-center/privacy) im Microsoft Trust Center.
 
 Im weiteren Verlauf dieses Artikels wird davon ausgegangen, dass ein Engagement in einem fremden Land durch eine Rechtsberatung überprüft und genehmigt wurde.
 

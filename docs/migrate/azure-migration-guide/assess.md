@@ -4,19 +4,19 @@ description: Verwenden Sie das Framework für die Cloudeinführung für Azure, u
 author: matticusau
 ms.author: mlavery
 ms.date: 02/25/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 47cfc7bdbf823ad8a785705e361ba8fa1a44894f
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: bbe61dfa9962d194ddb994b6753c2cbd07a9997f
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79094338"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120731"
 ---
-# <a name="assess-each-workload-and-refine-plans"></a>Bewerten der einzelnen Workloads und Optimieren von Plänen
+# <a name="assess-workloads-and-refine-plans"></a>Bewerten von Workloads und Optimieren von Plänen
 
 Die Ressourcen in diesem Handbuch helfen Ihnen, die einzelnen Workloads zu bewerten, Annahmen über die Eignung der einzelnen Workloads für die Migration zu hinterfragen und anschließend Architekturentscheidungen zu Migrationsoptionen zu treffen.
 

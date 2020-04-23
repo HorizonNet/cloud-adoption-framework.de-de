@@ -4,15 +4,15 @@ description: Verwenden Sie das Framework für die Cloudeinführung für Azure, u
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/19/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: c138a81de0fd92c1a079c7a2f52255d5c7959526
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 21a9c395f8a60c7c73c7e39f181061de816b9c47
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79092828"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997501"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>Pfad für die Qualifikationsbereitschaft während der Phase „Planung“ einer Migrationsreise
 
@@ -63,7 +63,7 @@ Während der Vorbereitungsphase schaffen die technischen Mitarbeiter eine Landez
 - [Azure-Netzwerke](https://docs.microsoft.com/learn/modules/intro-to-azure-networking). Erlernen der Grundlagen von Azure-Netzwerken und wie Sie mit Azure-Netzwerktechnik die Resilienz verbessern und die Latenz verringern können.
 - [Computeoptionen in Azure](https://docs.microsoft.com/learn/modules/intro-to-azure-compute). Informationen über die Azure-Computedienste.
 - [Sichern Ihrer Azure-Ressourcen mit rollenbasierter Zugriffssteuerung (RBAC)](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac). Verwenden von RBAC zum Sichern von Ressourcen.
-- [Datenspeicheroptionen](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure/index). Informieren Sie sich über die Vorteile des Azure-Datenspeichers.
+- [Datenspeicheroptionen](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure). Informieren Sie sich über die Vorteile des Azure-Datenspeichers.
 
 ## <a name="organizational-skills"></a>Organisationsfähigkeiten
 
@@ -82,7 +82,7 @@ Microsoft und seine Partner bieten eine Vielzahl von Optionen für alle Zielgrup
 
 - [Microsoft IT Pro Center](https://www.microsoft.com/itpro). Kostenlose Onlineressource zur Begleitung Ihres Karrierewegs in der Cloud. Profitieren Sie von den Empfehlungen von Branchenexperten für Ihre Cloudrolle und zu den Fähigkeiten, mit denen Sie sie erreichen. Folgen Sie in Ihrem eigenen Tempo einem Lehrplan, um die Fähigkeiten zu erlangen, die Sie am meisten benötigen, um auf dem aktuellen Stand zu bleiben.
 
-[Microsoft Azure-Zertifizierungsschulungen und -prüfungen](https://www.microsoft.com/learning/azure-certification.aspx) verschaffen Ihnen die offizielle Anerkennung Ihres Wissens über Azure.
+[Microsoft Azure-Zertifizierungsschulungen und -prüfungen](https://www.microsoft.com/learning/certification-overview.aspx) verschaffen Ihnen die offizielle Anerkennung Ihres Wissens über Azure.
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 

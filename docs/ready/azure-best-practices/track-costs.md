@@ -4,15 +4,15 @@ description: Verwenden Sie das Framework für die Cloudeinführung für Azure, u
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: ce9ce90d429064eeb8e848fd203aec11d042e539
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: b444c94686f6314fb2922e8b2c6ed99fea57e6ec
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354525"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81396115"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Nachverfolgen von Kosten für Geschäftseinheiten, Umgebungen oder Projekte
 
@@ -75,11 +75,11 @@ Die generell empfohlene bewährte Methode besteht darin, ein Modell mit geringst
 
 Azure Cost Management unterstützt für jeden der Bereiche die folgenden integrierten Rollen:
 
-- [Besitzer](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner). Ermöglicht das Anzeigen von Kosten und das Verwalten sämtlicher Aspekte, einschließlich Kostenkonfiguration.
-- [Mitwirkender](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor). Ermöglicht das Anzeigen von Kosten und das Verwalten sämtlicher Aspekte, z. B. der Kostenkonfiguration, aber ausschließlich der Zugriffssteuerung.
-- [Leser](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#reader). Ermöglicht das Anzeigen sämtlicher Daten, z.B. der Kostendaten und Konfiguration, aber nicht das Vornehmen von Änderungen.
-- [Cost Management: Mitwirkender](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor). Ermöglicht das Anzeigen der Kosten und das Verwalten der Kostenkonfiguration.
-- [Cost Management: Leser](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-reader): Ermöglicht das Anzeigen der Kostendaten und der Konfiguration.
+- [Besitzer](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner): Ermöglicht das Anzeigen von Kosten und das Verwalten sämtlicher Aspekte einschließlich Kostenkonfiguration.
+- [Mitwirkender](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor): Ermöglicht das Anzeigen von Kosten und das Verwalten sämtlicher Aspekte einschließlich Kostenkonfiguration, aber ausschließlich Zugriffssteuerung.
+- [Leser](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#reader): Ermöglicht das Anzeigen sämtlicher Daten, z. B. der Kostendaten und Konfiguration, aber nicht das Vornehmen von Änderungen.
+- [Cost Management-Mitwirkender](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor): Ermöglicht das Anzeigen der Kosten und das Verwalten der Kostenkonfiguration.
+- [Cost Management-Leser](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-reader): Ermöglicht das Anzeigen der Kostendaten und der Konfiguration.
 
 Die allgemeine bewährte Methode besteht darin, Mitgliedern aller Teams die Rolle „Kostenverwaltung: Mitwirkender“ zuzuweisen. Mit dieser Rolle wird der Zugriff für die Erstellung und Verwaltung von Budgets und Exporten gewährt, um die Kosten effektiver zu überwachen und zu dokumentieren. Mitglieder des [Cloudstrategieteams](../../organize/cloud-strategy.md) sollten jedoch nur auf „Cost Management: Leser“ festgelegt werden. Das liegt daran, dass Sie nicht am Einrichten von Budgets innerhalb des Azure Cost Management-Tools beteiligt sind.
 

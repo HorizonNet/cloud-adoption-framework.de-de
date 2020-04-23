@@ -4,17 +4,17 @@ description: Verwenden Sie das Framework für die Cloudeinführung für Azure, u
 author: jelledruyts
 ms.author: andym
 ms.date: 04/09/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 94e5dfb8f6a7d38f844c490a649bd35cf0887685
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: d0c3379da2962236dfb64ff45a5a9495b8a3fc36
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80353814"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80808786"
 ---
 <!-- cSpell:ignore jelledruyts andym endjin -->
 
@@ -59,9 +59,9 @@ Unter den folgenden Ressourcen finden Sie weitere Inhalte, die Ihnen helfen, bez
 - [Azure Charts](https://azurecharts.com)*
   - In dieser Visualisierung sind alle Azure-Updates der letzten sechs Monate dargestellt. Sie enthält weitere hilfreiche Diagramme und Hilfsprogramme, die Sie bei der Nachverfolgung von Azure-Änderungen unterstützen.
 - [AzAdvertizer](https://www.azadvertizer.net)*
-  - Release- und Änderungsnachverfolgung für Azure Governance-Funktionen (z. B. Azure Policy, Richtlinieninitiativen, Richtlinienaliase und RBAC).
+  - Release- und Änderungsnachverfolgung für Azure Governance-Funktionen, z. B. Azure Policy, Richtlinieninitiativen, Richtlinienaliase und rollenbasierte Zugriffssteuerung (RBAC).
 - [Wöchentlicher Azure-Newsletter (Azure Weekly)](https://azureweekly.info)*
   - Dieser von [endjin](https://endjin.com) bereitgestellte Newsletter enthält eine Zusammenfassung der wichtigsten News der Woche zu Microsoft Azure. Er enthält auch interessante historische Inhalte.
   - Abonnieren Sie dies per [E-Mail](https://azureweekly.info).
 
-\* *Diese Ressourcen werden von der Community bereitgestellt und nicht offiziell von Microsoft gepflegt.*
+\* _Diese Ressourcen werden von der Community bereitgestellt und nicht offiziell von Microsoft gepflegt._

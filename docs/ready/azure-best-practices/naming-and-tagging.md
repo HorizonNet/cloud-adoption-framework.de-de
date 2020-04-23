@@ -4,16 +4,16 @@ description: Enthält detaillierte Empfehlungen zur Benennung von Ressourcen und
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 03/05/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 2ebb04a09c6c14b44e0237c2530144c69014f5b4
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 5091fe94347773d5b1d6bf4397438b31b3c25f9c
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354513"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120205"
 ---
 <!-- cSpell:ignore westeurope usgovia accountlookup messagequery -->
 
@@ -21,7 +21,7 @@ ms.locfileid: "80354513"
 
 Organisieren Sie Ihre Cloudressourcen so, dass das operative Management und die Buchhaltungsanforderungen unterstützt werden. Gut definierte Namens- und Kennzeichnungskonventionen für Metadaten ermöglichen das schnelle Finden und Verwalten von Ressourcen. Diese Konventionen helfen auch dabei, Cloudnutzungskosten mithilfe von Mechanismen zur Rückbuchung und verbrauchsbasierter Kostenzuteilung an Geschäftsteams auszurichten.
 
-In dem für Azure Architecture Center geltenden Leitfaden zu [Benennungsregeln und -einschränkungen für Azure-Ressourcen](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming) finden Sie allgemeine Empfehlungen sowie Informationen zu Plattformeinschränkungen. In den folgenden Erläuterungen wird dieser Leitfaden um detailliertere Empfehlungen erweitert, die speziell zur Unterstützung bei Aktivitäten zur Einführung von Unternehmensclouds vorgesehen sind.
+Azure definiert [Benennungsregeln und -einschränkungen für Azure-Ressourcen](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-name-rules). Dieser Leitfaden enthält detaillierte Empfehlungen zur Unterstützung der Enterprise Cloud-Einführung.
 
 Das Ändern von Ressourcennamen kann schwierig sein. Legen Sie eine umfassende Namenskonvention fest, bevor Sie mit einer größeren Cloudbereitstellung beginnen.
 
@@ -53,7 +53,7 @@ Ein virtuelles Netzwerk hat beispielsweise einen Ressourcengruppenbereich, was b
 
 Einige Ressourcennamen, etwa PaaS-Dienste mit öffentlichen Endpunkten oder DNS-Bezeichnungen virtueller Maschinen, haben globale Bereiche, was bedeutet, dass sie auf der gesamten Azure-Plattform eindeutig sein müssen.
 
-Für Ressourcennamen gelten Längenbeschränkungen. Daher ist es wichtig, den Kontext, der in einen Namen eingebettet ist, mit dessen Bereich und Länge in Einklang zu bringen, wenn Sie Ihre Namenskonventionen entwickeln. Weitere Informationen zu Namensregeln hinsichtlich zulässiger Anzahl von Zeichen, Bereichen und Namenslängen für Ressourcentypen finden Sie unter [Namenskonventionen für Azure-Ressourcen](https://docs.microsoft.com/azure/architecture/best-practices/resource-naming).
+Für Ressourcennamen gelten Längenbeschränkungen. Daher ist es wichtig, den Kontext, der in einen Namen eingebettet ist, mit dessen Bereich und Länge in Einklang zu bringen, wenn Sie Ihre Namenskonventionen entwickeln. Weitere Informationen finden Sie unter [Benennungsregeln und -einschränkungen für Azure-Ressourcen](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-name-rules).
 
 ### <a name="recommended-naming-components"></a>Empfohlene Namenskomponenten
 
@@ -75,7 +75,7 @@ Jede Workload kann aus vielen einzelne Ressourcen und Diensten bestehen. Ein Ein
 
 Die folgende Liste enthält empfohlene Azure-Ressourcentypenpräfixe, die Sie verwenden sollten, wenn Sie Ihre Namenskonventionen definieren.
 
-<!-- cSpell:disable -->
+<!-- cSpell:ignore apim snet traf vmss stvm arcm ntfns sqldb psql sqldw sqlstrdb ssimp srch hbase appi migr -->
 
 ### <a name="general"></a>Allgemein
 
@@ -227,7 +227,7 @@ Welche Tags Sie für Ressourcen anwenden und welche Tags erforderlich oder optio
 
 Der folgende Abschnitt enthält einige Namensbeispiele für häufige Azure-Ressourcentypen bei der Bereitstellung einer Unternehmenscloud.
 
-<!-- cSpell:disable -->
+<!-- cSpell:ignore mktgsharepoint acctlookupsvc vmhadoop vmtest vmsharepoint vmnavigator vmsqlnode stvmstcoreeastus stvmpmcoreeastus stvmstplmeastus stvmsthadoopeastus stnavigatordata stemissionsoutput stdiag stdiagsh ssimpnavigatorprod ssimpemissionsdev dlanavigatorprod dlsnavigatorprod dlaemissionsdev dlsemissionsdev weballow rdpallow sqlallow dnsblocked cloudapp azurewebsites servicebus -->
 
 <!-- markdownlint-disable MD024 MD033 -->
 
@@ -248,20 +248,20 @@ Der folgende Abschnitt enthält einige Namensbeispiele für häufige Azure-Resso
 | Netzwerkschnittstelle (NIC)      | Resource group  | nic-\<\#\#\>-\<VM-Name\>-\<Abonnement\>\<\#\#\#\>                   | <ul><li>nic-01-dc1-freigabe-001 </li><li>nic-02-vmhadoop1-prod-001 </li><li>nic-02-vmtest1-client-001</li></ul>                 |
 | Öffentliche IP-Adresse            | Resource group  | pip-\<VM-Name oder App-Namen\>-\<Umgebung\>-\<Unterregion\>-\<\#\#\#\> | <ul><li>pip-dc1-freigabe-usaosten2-001 </li><li>pip-hadoop-prod-usawesten-001</li></ul>                                              |
 | Load Balancer                | Resource group  | lb-\<App-Name oder Rolle\>\<Umgebung\>\<\#\#\#\>                     | <ul><li>lb-navigator-prod-001 </li><li>lb-sharepoint-entw-001</li></ul>                                                        |
-| Netzwerksicherheitsgruppe (NSG) | Subnetz oder NIC   | nsg-\<Richtlinienname oder App-Name\>-\<\#\#\#\>                           | <ul><li>nsg-weberlaub-001 </li><li>nsg-rdperlaub-001 </li><li>nsg-sqlerlaub-001 </li><li>nsg-dnsblockier-001</li></ul>             |
+| Netzwerksicherheitsgruppe (NSG) | Subnetz oder NIC   | nsg-\<Richtlinienname oder App-Name\>-\<\#\#\#\>                           | <ul><li>nsg-weberlaub-001 </li><li>nsg-rdperlaub-001 </li><li>nsg-sqlerlaub-001 </li><li>nsg-dnsblocked-001</li></ul>             |
 | Lokales Netzwerkgateway        | Virtuelles Gateway | lgw-\<Abonnementtyp\>-\<Region\>-\<\#\#\#\>                      | <ul><li>lgw-shared-eastus2-001 </li><li>lgw-prod-westus-001 </li><li>lgw-client-eastus2-001</li></ul>                         |
 | Gateway des virtuellen Netzwerks      | Virtuelles Netzwerk | vgw-\<Abonnementtyp\>-\<Region\>-\<\#\#\#\>                      | <ul><li>vgw-shared-eastus2-001 </li><li>vgw-prod-westus-001 </li><li>vgw-client-eastus2-001</li></ul>                         |
 | Standort-zu-Standort-Verbindung      | Resource group  | cn-\<Name des lokalen Gateways\>-to-\<Name des virtuellen Gateways\>                | <ul><li>cn-lgw-shared-eastus2-001-to-vgw-shared-eastus2-001 </li><li>cn-lgw-shared-eastus2-001-to-shared-westus-001</li></ul> |
 | VPN-Verbindung               | Resource group  | cn-\<Abonnement1\>\<Region1\>-to-\<Abonnement2\>\<Region2\>-     | <ul><li>cn-freigabe-usaosten2-to-freigabe-usawesten </li><li>cn-prod-usaosten2-to-prod-usawesten</li></ul>                                  |
-| Routingtabelle                  | Resource group  | route-\<Name der Routentabelle\>                                           | <ul><li>lb-navigator-prod-001 </li><li>lb-sharepoint-entw-001</li></ul>                                                        |
+| Routingtabelle                  | Resource group  | route-\<Name der Routentabelle\>                                           | <ul><li>route-navigator</li><li>route-sharepoint</li></ul>                                                        |
 | DNS-Bezeichnung                    | Global          | \<Eintrag von VM\>.[\<Region\>.cloudapp.azure.com]                   | <ul><li>dc1.usawesten.cloudapp.azure.com </li><li>web1.usaosten2.cloudapp.azure.com</li></ul>                                      |
 
 ### <a name="example-names-compute-and-web"></a>Namensbeispiele: Compute und Web
 
 | Ressourcentyp                  | `Scope`          | Format                                                              | Beispiele                                                                                                                          |
 |-----------------------------|----------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Virtueller Computer             | Resource group | vm-\<Richtlinienname oder App-Name\>\<\#\#\#\>                              | <ul><li>vmnavigator001 </li><li>vmsharepoint001 </li><li>vmsqlknoten001 </li><li>vmhadoop001</li></ul>                              |
-| VM-Speicherkonto          | Global         | stvm\<Leistungstyp\>\<App-Name oder Produktname\>\<Region\>\<\#\#\#\> | <ul><li>stvmstcoreusaosten2001 </li><li>stvmpmcoreusaosten2001 </li><li>stvmstplmusaosten2001 </li><li>stvmsthadoopusaosten2001</li></ul> |
+| Virtueller Computer             | Resource group | vm\<Richtlinienname oder App-Name\>\<\#\#\#\>                              | <ul><li>vmnavigator001 </li><li>vmsharepoint001 </li><li>vmsqlknoten001 </li><li>vmhadoop001</li></ul>                              |
+| VM-Speicherkonto          | Global         | stvm\<Leistungstyp\>\<App-Name oder Prod.-Name\>\<Region\>\<\#\#\#\> | <ul><li>stvmstcoreusaosten2001 </li><li>stvmpmcoreusaosten2001 </li><li>stvmstplmusaosten2001 </li><li>stvmsthadoopusaosten2001</li></ul> |
 | Web-App                     | Global         | app-\<App-Name\>-\<Umgebung\>-\<\#\#\#\>.[{azurewebsites.net}]   | <ul><li>app-navigator-prod-001.azurewebsites.net </li><li>app-accountlookup-dev-001.azurewebsites.net</li></ul>                   |
 | Funktionen-App                | Global         | func-\<App-Name\>-\<Umgebung\>-\<\#\#\#\>.[{azurewebsites.net}]  | <ul><li>func-navigator-prod-001.azurewebsites.net </li><li>func-accountlookup-dev-001.azurewebsites.net</li></ul>                 |
 | Clouddienst               | Global         | cld-\<App-Name\>-\<Umgebung\>-\<\#\#\#\>.[{cloudapp.net}]        | <ul><li>cld-navigator-prod-001.azurewebsites.net </li><li>cld-accountlookup-dev-001.azurewebsites.net</li></ul>                   |

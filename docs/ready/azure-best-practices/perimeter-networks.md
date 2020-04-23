@@ -4,18 +4,18 @@ description: Verwenden Sie das Framework für die Cloudeinführung für Azure, u
 author: tracsman
 ms.author: jonor
 ms.date: 05/10/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: cbf77bad65753d219e3a0a53f300aee3690b001d
-ms.sourcegitcommit: 959cb0f63e4fe2d01fec2b820b8237e98599d14f
+ms.openlocfilehash: 802660021dd9ae3a861b51ae4dee6e14b9671ef2
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79093239"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81120188"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs WAFs -->
 
@@ -28,24 +28,24 @@ Damit Umkreisnetzwerke effektiv sind, müssen eingehende Pakete über Sicherheit
 Umkreisnetzwerken nutzen die folgenden Azure-Funktionen und -Dienste:
 
 - [Virtuelle Netzwerke][virtual-networks], [benutzerdefinierte Routen][user-defined-routes] und [Netzwerksicherheitsgruppen][network-security-groups]
-- [Virtuelle Netzwerkgeräte (NVAs)][NVA]
+- [Virtuelle Netzwerkgeräte (NVAs)][network-virtual-appliances]
 - [Azure-Lastenausgleich][ALB]
 - [Azure Application Gateway][AppGW] und [Web Application Firewall (WAF)][AppGWWAF]
 - [Öffentliche IP-Adressen][PIP]
 - [Azure Front Door][AFD] mit [Web Application Firewall][AFDWAF]
-- [Azure Firewall][AzFW]
+- [Azure Firewall][azure-firewall]
 
 > [!NOTE]
 > Azure-Referenzarchitekturen bieten Beispielvorlagen, die Sie für die Implementierung Ihrer eigenen Umkreisnetzwerke verwenden können:
 >
-> - [Implementieren einer DMZ zwischen Azure und Ihrem lokalen Rechenzentrum](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid)
+> - [Implementieren einer DMZ zwischen Azure und Ihrem lokalen Rechenzentrum](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)
 > - [Implementieren einer DMZ zwischen Azure und dem Internet](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
 
 In der Regel sind Ihre zentralen IT- und Sicherheitsteams für die Anforderungendefinition und den Betrieb Ihrer Umkreisnetzwerke verantwortlich.
 
 ![Beispiel für eine Hub-and-Spoke-Netzwerktopologie](../../_images/azure-best-practices/network-high-level-perimeter-networks.png)
 
-Das obige Diagramm enthält ein Beispiel für eine [Hub-and-Spoke-Netzwerktopologie](./hub-spoke-network-topology.md), in dem die Durchsetzung von zwei Umkreisnetzwerken mit Zugriff auf das Internet und ein lokales Netzwerk implementiert wird. Beide Perimeter befinden sich im DMZ-Hub. Im DMZ-Hub kann das Umkreisnetzwerk für das Internet zentral hochskaliert werden, um viele Branchenanwendungen (LOBs) zu unterstützen, indem mehrere Farmen von WAFS und Azure-Firewallinstanzen verwendet werden, die zum Schutz der virtuellen Spokenetzwerks beitragen. Der Hub ermöglicht je nach Bedarf außerdem Konnektivität über VPN oder Azure ExpressRoute.
+Das obige Diagramm enthält ein Beispiel für eine [Hub-and-Spoke-Netzwerktopologie](./hub-spoke-network-topology.md), in dem die Durchsetzung von zwei Umkreisnetzwerken mit Zugriff auf das Internet und ein lokales Netzwerk implementiert wird. Beide Perimeter befinden sich im DMZ-Hub. Im DMZ-Hub kann das Umkreisnetzwerk für das Internet hochskaliert werden, um viele Branchenanwendungen (LOBs) zu unterstützen, indem mehrere Farmen von WAFS und Azure-Firewallinstanzen verwendet werden, die zum Schutz der virtuellen Spokenetzwerks beitragen. Der Hub ermöglicht je nach Bedarf außerdem Konnektivität über VPN oder Azure ExpressRoute.
 
 ## <a name="virtual-networks"></a>Virtuelle Netzwerke
 
@@ -59,7 +59,7 @@ In einem Hub-and-Spoke-Netzwerkbeispiel erfordert die Gewährleistung, dass Date
 
 ## <a name="azure-firewall"></a>Azure Firewall
 
-[Azure Firewall][AzFW] ist ein verwalteter, cloudbasierter Netzwerksicherheitsdienst zum Schutz Ihrer Azure Virtual Network-Ressourcen. Es handelt sich dabei um eine vollständig zustandsbehaftete verwaltete Firewall mit integrierter Hochverfügbarkeit und uneingeschränkter Cloudskalierbarkeit. Sie können Richtlinien zur Anwendungs- und Netzwerkkonnektivität übergreifend für Abonnements und virtuelle Netzwerke zentral erstellen, erzwingen und protokollieren.
+[Azure Firewall][azure-firewall] ist ein verwalteter, cloudbasierter Netzwerksicherheitsdienst zum Schutz Ihrer Azure Virtual Network-Ressourcen. Es handelt sich dabei um eine vollständig zustandsbehaftete verwaltete Firewall mit integrierter Hochverfügbarkeit und uneingeschränkter Cloudskalierbarkeit. Sie können Richtlinien zur Anwendungs- und Netzwerkkonnektivität übergreifend für Abonnements und virtuelle Netzwerke zentral erstellen, erzwingen und protokollieren.
 
 Azure Firewall verwendet eine statische öffentliche IP-Adresse für Ihre virtuellen Netzwerkressourcen. Dadurch können externe Firewalls Datenverkehr aus Ihrem virtuellen Netzwerk identifizieren. Der Dienst arbeitet für Protokollierung und Analyse mit Azure Monitor zusammen.
 
@@ -69,7 +69,7 @@ Umkreisnetzwerke mit Zugriff auf das Internet werden in der Regel über eine Azu
 
 In verschiedenen Branchen werden häufig viele Webanwendungen verwendet. Diese Anwendungen weisen häufig unterschiedliche Sicherheitsrisiken und Exploits auf. Eine Web Application Firewall erkennt Angriffe auf Webanwendungen (HTTP/HTTPS) genauer als eine generische Firewall. Verglichen mit herkömmlichen Firewalls stellen Web Application Firewalls einen Satz von bestimmten Features bereit, um den internen Webserver vor Bedrohungen zu schützen.
 
-Eine Azure Firewall-Instanz und eine Firewall eines [virtuellen Netzwerkgeräts][NVA] werden jeweils über eine gemeinsame Verwaltungsebene mit einem Satz von Sicherheitsregeln ausgeführt, die die in den Spokes gehosteten Workloads schützen und den Zugriff auf lokale Netzwerke steuern. Azure Firewall verfügt über integrierte Skalierbarkeit, während NVA-Firewalls hinter einem Lastenausgleich manuell skaliert werden können.
+Eine Azure Firewall-Instanz und eine Firewall eines virtuellen Netzwerkgeräts (NVA) werden jeweils über eine gemeinsame Verwaltungsebene mit einem Satz von Sicherheitsregeln ausgeführt, die die in den Spokes gehosteten Workloads schützen und den Zugriff auf lokale Netzwerke steuern. Azure Firewall verfügt über integrierte Skalierbarkeit, während NVA-Firewalls hinter einem Lastenausgleich manuell skaliert werden können.
 
 Eine Firewallfarm verfügt im Allgemeinen im Vergleich zu einer Web Application Firewall über weniger spezialisierte Software. Sie hat jedoch einen umfassenderen Anwendungsbereich, sodass sie alle Arten von ein- und ausgehendem Datenverkehr filtern und überprüfen kann. Wenn Sie einen NVA-Ansatz verwenden, können Sie Software in Azure Marketplace ermitteln und bereitstellen.
 
@@ -85,7 +85,7 @@ Als Beispiel für die Verwendung einer Hub-and-Spoke-Netzwerktopologie kann ein 
 
 ## <a name="azure-front-door-service"></a>Azure Front Door Service
 
-[Azure Front Door Service][AFD] von Microsoft stellt eine hochverfügbare und hochgradig skalierbare Plattform für die Beschleunigung von Webanwendungen und einen globalen HTTPS-Lastenausgleich bereit. Sie können Azure Front Door Service verwenden, Ihre dynamischen Webanwendungen und statischen Inhalte zu erstellen, auszuführen und horizontal zu skalieren. Azure Front Door Service wird an mehr als 100 Standorten im Edgebereich des globalen Netzwerks von Microsoft ausgeführt.
+[Azure Front Door Service][AFD] von Microsoft stellt eine hochverfügbare und hochgradig skalierbare Plattform für die Beschleunigung von Webanwendungen und einen globalen HTTPS-Lastenausgleich bereit. Sie können Azure Front Door Service verwenden, Ihre dynamischen Webanwendungen und statischen Inhalte zu erstellen, auszuführen und aufzuskalieren. Azure Front Door Service wird an mehr als 100 Standorten im Edgebereich des globalen Netzwerks von Microsoft ausgeführt.
 
 Azure Front Door Service stellt für Ihre Anwendung einheitliche Automatisierung der Regions-/Stempelwartung, BCDR-Automatisierung, einheitliche Client-/Benutzerinformationen, Zwischenspeicherung und Erkenntnisse zu Ihren Diensten bereit. Die Plattform bietet Leistung, Zuverlässigkeit, Support-SLAs. Außerdem bietet sie Konformitätszertifizierungen und überwachbare Sicherheitsverfahren, die von Azure entwickelt, betrieben und nativ unterstützt werden.
 
@@ -114,8 +114,8 @@ Sie können Schutzrichtlinien über dedizierte Datenverkehrsüberwachung und Mac
 [virtual-networks]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview
 [network-security-groups]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg
 [user-defined-routes]: https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview
-[NVA]: https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/nva-ha
-[AzFW]: https://docs.microsoft.com/azure/firewall/overview
+[network-virtual-appliances]: https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/nva-ha
+[azure-firewall]: https://docs.microsoft.com/azure/firewall/overview
 [perimeter-network]: https://docs.microsoft.com/azure/best-practices-network-security
 [ALB]: https://docs.microsoft.com/azure/load-balancer/load-balancer-overview
 [DDoS]: https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview

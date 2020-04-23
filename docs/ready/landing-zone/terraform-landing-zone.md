@@ -4,29 +4,29 @@ description: Erfahren Sie, wie Sie mit Terraform Ihre Zielzonen erstellen.
 author: arnaudlh
 ms.author: arnaul
 ms.date: 02/25/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 76fdd8232cff0b90f12c18cc32a32538e6570197
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: fd5f3ca69312156c705857bb91968ea40cd3a867
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80354154"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "80997808"
 ---
 <!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars -->
 
 # <a name="use-terraform-to-build-your-landing-zones"></a>Verwenden von Terraform zum Erstellen Ihrer Zielzonen
 
-Azure bietet native Dienste zum Bereitstellen Ihrer Zielzonen. Andere Tools von Drittanbietern können dabei ebenfalls helfen. Ein solches Tool, das Kunden und Partner häufig zum Bereitstellen von Zielzonen verwenden, ist Terraform von HashiCorp. In diesem Abschnitt wird gezeigt, wie Sie mit einer Prototypzielzone grundlegende Protokollierungs-, Kontoführungs- und Sicherheitsfunktionen für ein Azure-Abonnement bereitstellen.
+Azure bietet native Dienste zum Bereitstellen Ihrer Zielzonen. Andere Tools von Drittanbietern können dabei ebenfalls helfen. Ein solches Tool, das Kunden und Partner häufig zum Bereitstellen von Zielzonen verwenden, ist Terraform von HashiCorp. In diesem Abschnitt wird gezeigt, wie Sie mit einer Beispielzielzone grundlegende Governance-, Kontoführungs- und Sicherheitsfunktionen für ein Azure-Abonnement bereitstellen.
 
 ## <a name="purpose-of-the-landing-zone"></a>Zweck der Zielzone
 
-Die grundlegende Zielzone von Cloud Adoption Framework für Terraform verfügt über eine begrenzte Anzahl von Zuständigkeiten und Features zum Erzwingen von Protokollierung, Kontoführung und Sicherheit. Diese Zielzone verwendet als Terraform-Module bezeichnete Standardkomponenten, um die Konsistenz der in der Umgebung bereitgestellten Ressourcen zu erzwingen.
+Die Cloud Adoption Framework-Grundlagenzielzone für Terraform bietet Features zur Durchsetzung von Protokollierung, Kontoführung und Sicherheit. Diese Zielzone verwendet als Terraform-Module bezeichnete Standardkomponenten, um die Konsistenz der in der Umgebung bereitgestellten Ressourcen zu erzwingen.
 
 ## <a name="use-standard-modules"></a>Verwenden von Standardmodulen
 
-Die Wiederverwendung von Komponenten ist ein grundlegendes Prinzip von Infrastructure-as-Code. Die Module dienen zum Definieren von Standards und Konsistenz der gesamten Ressourcenbereitstellung inner- und außerhalb von Umgebungen. Die zum Bereitstellen dieser ersten Zielzone verwendeten Module sind in der offiziellen [Terraform-Registrierung](https://registry.terraform.io/search?q=aztfmod) verfügbar.
+Die Wiederverwendung von Komponenten ist ein grundlegendes Prinzip von Infrastructure-as-Code. Die Module dienen zum Definieren von Standards und Konsistenz der gesamten Ressourcenbereitstellung inner- und außerhalb von Umgebungen. Die zum Bereitstellen dieser ersten Zielzone verwendeten Module sind in der offiziellen [Terraform-Registrierung](https://registry.terraform.io/modules/aztfmod) verfügbar.
 
 ## <a name="architecture-diagram"></a>Architekturdiagramm
 
@@ -54,7 +54,7 @@ Bevor Sie die grundlegende Cloud Adoption Framework-Zielzone verwenden, überpr�
 
 Beim Definieren dieser anfänglichen Landezone wurden folgende Annahmen bzw. Einschränkungen berücksichtigt. Wenn diese Annahmen Ihren Einschränkungen entsprechen, können Sie die Blaupause zum Erstellen Ihrer ersten Landezone verwenden. Die Blaupause kann auch erweitert werden, sodass Sie eine Landezonenblaupause erstellen können, die Ihre einzigartigen Einschränkungen erfüllt.
 
-- **Grenzwerte für Abonnements**: Bei der Einführung ist unwahrscheinlich, dass [Abonnementgrenzwerte](https://docs.microsoft.com/azure/azure-subscription-service-limits) überschritten werden. Zwei allgemeine Anzeichen dafür sind eine VM-Anzahl von über 25.000 oder eine vCPU-Anzahl von über 10.000.
+- **Grenzwerte für Abonnements**: Bei der Einführung ist unwahrscheinlich, dass [Abonnementgrenzwerte](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits) überschritten werden. Zwei allgemeine Anzeichen dafür sind eine VM-Anzahl von über 25.000 oder eine vCPU-Anzahl von über 10.000.
 - **Compliance**: Für diese Landezone sind keine Complianceanforderungen von Dritten zu beachten.
 - **Komponenten der Architektur**: Die Komplexität der Architektur erfordert keine zusätzlichen Produktionsabonnements.
 - **Gemeinsam genutzte Dienste**: Es sind keine gemeinsam genutzten Dienste in Azure vorhanden, die erfordern, dass dieses Abonnement wie ein Spoke in einer Hub-and-Spoke-Architektur behandelt wird.
@@ -69,7 +69,7 @@ Die folgenden Entscheidungen werden in der Terraform-Zielzone widergespiegelt:
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Protokollierung und Überwachung | Der Log Analytics-Arbeitsbereich von Azure Monitor wird verwendet. Ein Diagnosespeicherkonto und ein Event Hub werden bereitgestellt.                                                                                                                                                        |                                                                                                                                                                                                                                                                 |
 | Netzwerk                | Nicht verfügbar: Das Netzwerk wird in einer anderen Zielzone implementiert.                                                                                                                                                                                                                    | [Netzwerkentscheidungen](../considerations/networking-options.md)                                                                                                                                                                                                 |
-| Identity               | Es wird angenommen, dass das Abonnement bereits einer Azure Active Directory-Instanz zugeordnet ist.                                                                                                                                                                        | [Bewährte Methoden für die Identitätsverwaltung](https://docs.microsoft.com/azure/security/azure-security-identity-management-best-practices)                                                                                                                               |
+| Identity               | Es wird angenommen, dass das Abonnement bereits einer Azure Active Directory-Instanz zugeordnet ist.                                                                                                                                                                        | [Bewährte Methoden für die Identitätsverwaltung](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices)                                                                                                                               |
 | Richtlinie                 | Bei dieser Zielzone wird derzeit davon ausgegangen, dass keine Azure-Richtlinien angewendet werden müssen.                                                                                                                                                                                            |                                                                                                                                                                                                                                                                 |
 | Abonnemententwurf    | N/V: wurde für ein einzelnes Produktionsabonnement entworfen.                                                                                                                                                                                                                     | [Erstellen der anfänglichen Abonnements](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                  |
 | Ressourcengruppen        | N/V: wurde für ein einzelnes Produktionsabonnement entworfen.                                                                                                                                                                                                                     | [Skalieren von Abonnements](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                           |
@@ -97,7 +97,7 @@ Bei allen Ressourcen und Ressourcengruppen müssen mindestens die folgenden Tags
 
 ## <a name="customize-and-deploy-your-first-landing-zone"></a>Anpassen und Bereitstellen Ihrer ersten Zielzone
 
-Sie können [Ihre grundlegende Terraform-Zielzone klonen](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready). Beginnen Sie einfach mit der Zielzone, indem Sie die Terraform-Variablen ändern. In unserem Beispiel wird **blueprint_foundations.sandbox.auto.tfvars** verwendet, sodass Terraform automatisch die Werte in dieser Datei für Sie festlegt.
+Sie können [Ihre grundlegende Terraform-Zielzone klonen](https://github.com/azure/caf-terraform-landingzones). Beginnen Sie einfach mit der Zielzone, indem Sie die Terraform-Variablen ändern. In unserem Beispiel wird **blueprint_foundations.sandbox.auto.tfvars** verwendet, sodass Terraform automatisch die Werte in dieser Datei für Sie festlegt.
 
 Betrachten wir nun die verschiedenen Variablenabschnitte.
 
@@ -192,7 +192,7 @@ security_center = {
 
 ## <a name="get-started"></a>Erste Schritte
 
-Nachdem Sie die Konfiguration überprüft haben, können Sie die Konfiguration wie eine Terraform-Umgebung bereitstellen. Sie sollten den „rover“ verwenden, einen Docker-Container, der die Bereitstellung von Windows, Linux oder MacOS ermöglicht. Sie können mit dem [„rover“-GitHub-Repository](https://github.com/aztfmod/rover) beginnen.
+Nachdem Sie die Konfiguration überprüft haben, können Sie die Konfiguration wie eine Terraform-Umgebung bereitstellen. Sie sollten den „rover“ verwenden, einen Docker-Container, der die Bereitstellung von Windows, Linux oder macOS ermöglicht. Sie können mit den [Zielzonen](https://github.com/azure/caf-terraform-landingzones) beginnen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
@@ -206,4 +206,4 @@ Das Überlagern mit weiteren Zielzonen ist eine bewährte Vorgehensweise, um Sys
 Zukünftige Referenzarchitekturen werden dieses Konzept für eine Hub-and-Spoke-Topologie veranschaulichen.
 
 > [!div class="nextstepaction"]
-> [Überprüfen des Beispiels der grundlegenden Terraform-Zielzone](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready)
+> [Überprüfen des Beispiels der grundlegenden Terraform-Zielzone](https://github.com/azure/caf-terraform-landingzones)
