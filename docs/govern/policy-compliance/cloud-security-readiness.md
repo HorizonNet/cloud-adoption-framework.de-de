@@ -4,15 +4,15 @@ description: Hier erfahren Sie, wie Sie das Chief Information Security Office (C
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: dc82f4d8ad21bcbb9d36b00fbdad1f91d6d4ec2c
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: 84bb47e05086ba0921a189d96d20c76a1ab5b057
+ms.sourcegitcommit: 825f9ae5b6cdd2fa6cb18c14a9733ba9106194f2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80356944"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81646821"
 ---
 <!-- cSpell:ignore CISO -->
 
@@ -40,36 +40,35 @@ Wenn Lösungen weiterentwickelt werden und PaaS- oder SaaS-Modelle (Platform-as-
 
 Kenntnisse der Cloud sind von grundlegender Bedeutung für eine [Richtlinienüberprüfung](./cloud-policy-review.md) mit wachstumsorientierter Mentalität. Die folgenden Ressourcen unterstützen CISOs dabei, den Sicherheitsstatus der Microsoft Azure-Plattform besser zu verstehen.
 
-Ressourcen zur Sicherheitsplattform:
+**Ressourcen zur Sicherheitsplattform:**
 
 - [Sicherheitsentwicklungszyklus, interne Überwachungen](https://www.microsoft.com/sdl)
 - [Obligatorische Sicherheitsschulung, Hintergrundüberprüfungen](https://downloads.cloudsecurityalliance.org/star/self-assessment/StandardResponsetoRequestforInformationWindowsAzureSecurityPrivacy.docx)
-- [Penetrationstests, Angriffserkennung, DDoS, Überwachungen und Protokollierung](https://www.microsoft.com/trustcenter/Security/AuditingAndLogging)
+- [Penetrationstests, Angriffserkennung, DDoS, Überwachungen und Protokollierung](https://www.microsoft.com/security/business/operations)
 - [Hochmodernes Rechenzentrum](https://www.microsoft.com/cloud-platform/global-datacenters), physische Sicherheit, [sicheres Netzwerk](https://docs.microsoft.com/azure/security/security-network-overview)
-- [Microsoft Azure Security Response in the Cloud](https://aka.ms/SecurityResponsePaper) (Sicherheitsreaktion von Microsoft Azure in der Cloud)
+- [Microsoft Azure Security Response in the Cloud](https://aka.ms/securityresponsepaper) (Sicherheitsreaktion von Microsoft Azure in der Cloud)
 
-Datenschutz und Kontrolle:
+**Datenschutz und Kontrolle:**
 
-- [Ständiges Verwalten Ihrer Daten](https://www.microsoft.com/trustcenter/Privacy/You-own-your-data)
-- [Kontrolle des Datenspeicherorts](https://www.microsoft.com/trustcenter/Privacy/Where-your-data-is-located)
-- [Bereitstellen des Datenzugriff zu Ihren Bedingungen](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms)
-- [Antworten für Justizbehörden](https://www.microsoft.com/trustcenter/Privacy/Responding-to-govt-agency-requests-for-customer-data)
-- [Strenge Datenschutzstandards](https://www.microsoft.com/TrustCenter/Privacy/We-set-and-adhere-to-stringent-standards)
+- [Ständiges Verwalten Ihrer Daten](https://www.microsoft.com/trust-center/privacy/data-management)
+- [Kontrolle des Datenspeicherorts](https://www.microsoft.com/trust-center/privacy/data-location)
+- [Bereitstellen des Datenzugriff zu Ihren Bedingungen](https://www.microsoft.com/trust-center/privacy/data-access)
+- [Antworten für Justizbehörden](https://www.microsoft.com/trust-center/privacy)
+- [Strenge Datenschutzstandards](https://www.microsoft.com/trust-center/privacy)
 
-Compliance:
+**Compliance**:
 
-- [Microsoft Trust Center](https://www.microsoft.com/trustcenter/default.aspx)
-- [Hub für allgemeine Kontrollmechanismen](https://www.microsoft.com/trustcenter/Common-Controls-Hub)
-- [Due-Diligence-Checkliste für Cloud Services](https://www.microsoft.com/trustcenter/Compliance/Due-Diligence-Checklist)
-- [Compliance nach Dienst, Standort und Branche](https://www.microsoft.com/trustcenter/Compliance/default.aspx)
+- [Microsoft Trust Center](https://www.microsoft.com/trust-center)
+- [Hub für allgemeine Kontrollmechanismen](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Due-Diligence-Checkliste für Cloud Services](https://www.microsoft.com/trust-center/compliance/due-diligence-checklist)
+- [Regionale und Länderkonformität](https://www.microsoft.com/trust-center/compliance/regional-country-compliance)
 
-Transparenz:
+**Transparenz:**
 
-- [Wie Microsoft Kundendaten in Azure-Diensten schützt](https://www.microsoft.com/trustcenter/Transparency/default.aspx)
+- [Wie Microsoft Kundendaten in Azure-Diensten schützt](https://www.microsoft.com/trust-center)
 - [Wie Microsoft den Datenspeicherort in Azure-Diensten verwaltet](https://azuredatacentermap.azurewebsites.net)
-- [Wer kann bei Microsoft unter welchen Bedingungen auf Ihre Daten zugreifen?](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms)
-- [Wie Microsoft Kundendaten in Azure-Diensten schützt](https://www.microsoft.com/trustcenter/Transparency/default.aspx)
-- [Überprüfen der Zertifizierung für Azure-Dienste, Transparenzhub](https://www.microsoft.com/trustcenter/Compliance/default.aspx)
+- [Wer kann bei Microsoft unter welchen Bedingungen auf Ihre Daten zugreifen?](https://www.microsoft.com/trust-center/privacy/data-access)
+- [Überprüfen der Zertifizierung für Azure-Dienste, Transparenzhub](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
 ## <a name="next-steps"></a>Nächste Schritte
 
