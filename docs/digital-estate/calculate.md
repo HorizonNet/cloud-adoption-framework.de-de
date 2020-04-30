@@ -4,16 +4,16 @@ description: Hier finden Sie Informationen zu Azure-Preistools, die eine transpa
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/10/2018
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: ffe9e81eb0bdd2d3a859885d6b01bd61abd9f719
-ms.sourcegitcommit: ea63be7fa94a75335223bd84d065ad3ea1d54fdb
+ms.openlocfilehash: fb9793f34815aca5b714a2862b733287e233d88f
+ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80355356"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "81479351"
 ---
 # <a name="align-cost-models-with-the-digital-estate-to-forecast-cloud-costs"></a>Abstimmen von Kostenmodellen mit digitalen Ressourcen zur Prognose von Cloudkosten
 
@@ -27,4 +27,4 @@ Azure-Preistools ermöglichen Ihnen eine transparente und exakte Verwaltung von 
 
 - [Azure-Preisrechner](https://azure.microsoft.com/pricing/calculator): Berechnen Sie mit unserem Preisrechner Ihre voraussichtlichen monatlichen Kosten. Über das Abrechnungsportal können Sie jederzeit Ihre tatsächliche Kontonutzung und Rechnung überprüfen. Richten Sie automatische Abrechnungswarnungen per E-Mail ein, damit Sie informiert werden, wenn Ihre Ausgaben einen von Ihnen festgelegten Betrag übersteigen.
 
-- [Azure Cost Management](https://azure.microsoft.com/services/cost-management): Azure Cost Management, eine durch das Microsoft-Tochterunternehmen Cloudyn lizenzierte Multi-Cloud-Kostenverwaltungslösung, unterstützt Sie bei der effektiven Verwendung und Verwaltung von Azure und anderen Cloudressourcen. Erfassen Sie Cloudnutzungs- und Abrechnungsdaten von Azure, Amazon Web Services und Google Cloud Platform mithilfe von Anwendungsprogrammierschnittstellen (APIs). Diese Daten bieten einen umfassenden Überblick über die Ressourcennutzung sowie über die Kosten auf verschiedenen Cloudplattformen in einer einzelnen einheitlichen Ansicht. Überwachen Sie kontinuierlich die Cloudnutzung sowie Kostentrends. Behalten Sie Ihre tatsächlichen Cloudausgaben im Blick, um Budgetüberschreitungen zu vermeiden. Erkennen Sie ungewöhnliche Ausgaben und Ineffizienzen. Verwenden Sie historische Daten, um die Genauigkeit von Cloudnutzungs- und Ausgabenprognosen zu verbessern.
+- [Azure Cost Management](https://azure.microsoft.com/services/cost-management): Azure Cost Management ist eine Kostenverwaltungslösung, die Ihnen das effektive Verwenden und Verwalten von Azure und anderen Cloudressourcen erleichtert. Erfassen Sie Cloudnutzungs- und Abrechnungsdaten von Azure, Amazon Web Services und Google Cloud Platform mithilfe von Anwendungsprogrammierschnittstellen (APIs). Diese Daten bieten einen umfassenden Überblick über die Ressourcennutzung sowie über die Kosten auf verschiedenen Cloudplattformen in einer einzelnen einheitlichen Ansicht. Überwachen Sie kontinuierlich die Cloudnutzung sowie Kostentrends. Behalten Sie Ihre tatsächlichen Cloudausgaben im Blick, um Budgetüberschreitungen zu vermeiden. Erkennen Sie ungewöhnliche Ausgaben und Ineffizienzen. Verwenden Sie historische Daten, um die Genauigkeit von Cloudnutzungs- und Ausgabenprognosen zu verbessern.

@@ -7,12 +7,12 @@ ms.date: 03/27/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: c701d49a80ea0ec087f26f792b7ffe8dbd4c061f
-ms.sourcegitcommit: 1a4b140f09bdaa141037c54a4a3b5577cda269db
+ms.openlocfilehash: 9e12f76251b635c76c23a195b6d60cd0ea4d070c
+ms.sourcegitcommit: 825f9ae5b6cdd2fa6cb18c14a9733ba9106194f2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "80392490"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81646834"
 ---
 <!-- markdownlint-disable MD024 -->
 
@@ -21,6 +21,39 @@ ms.locfileid: "80392490"
 Hier ist eine Liste mit den Änderungen angegeben, die kürzlich am Framework für die Cloudeinführung vorgenommen wurden.
 
 Dieses Framework wurde in Zusammenarbeit mit Kunden, Partnern und internen Microsoft-Teams entwickelt. Neuer und aktualisierter Inhalt wird veröffentlicht, sobald er verfügbar ist. Mit diesen Releases können Sie die Anleitung zusammen mit uns testen, überprüfen und optimieren. Wir laden Sie ein, als Partner mit uns gemeinsam das Framework für die Cloudeinführung für Azure zu entwickeln.
+
+## <a name="april-14-2020"></a>14. April 2020
+
+Wir haben alle Tools und Vorlagen für die Cloudeinführung an einem Ort zusammengeführt, damit sie leichter aufzufinden sind. 
+
+| Artikel | BESCHREIBUNG |
+|----------|-------------|
+| [Tools und Vorlagen](../reference/tools-templates.md) | Hier finden Sie die Tools, Vorlagen und Bewertungen, mit deren Hilfe Sie die Cloudeinführung beschleunigen können. | 
+
+## <a name="april-4-2020"></a>4\. April 2020
+
+Weitere Iteration der Verfeinerung des Leitfadens zur Migration und Bereitschaft, um das Feedback von Kunden, Microsoft-Partnern und internen Microsoft-Programmen stärker zu berücksichtigen.
+
+### <a name="migrate-updates"></a>Aktualisierungen in Bezug auf die Migration
+
+| Artikel                                                                                                                 | BESCHREIBUNG                                                                                                                                                                                |
+|-------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Methodik der Migration](../migrate/index.md)                       | Diese Änderungen rationalisieren die Phasen des Migrationsaufwands (Bewertung, Bereitstellung und Freigabe der Workloads). Durch die Änderungen werden auch die Details bezüglich des Backlogs der Migration beseitigt. Das Entfernen dieser Details und der Verweis auf die Methoden „Plan“, „Ready“ und „Adopt“ (Planen, Vorbereiten und Einführen) schafft stattdessen Flexibilität für verschiedene Cloudeinführungsprogramme, um diese besser auf die Methodik abzustimmen.  |
+| Aktualisieren des Inhaltsverzeichnisses                       | Die Inhaltsverzeichnisse des Leitfadens zur Azure-Migration und der Prozessverbesserungen wurden aktualisiert, um die Änderungen in der Methodik widerzuspiegeln.  |
+
+### <a name="ready-updates"></a>Aktualisierungen in Bezug auf die Bereitschaft
+
+| Artikel                                                                                                                 | BESCHREIBUNG                                                                                                                                                                                |
+|-------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Umgestalten von Zielzonen](../ready/landing-zone/refactor.md)                       | **Neuer Artikel:** Ausgehend von Ready-Workshops veranschaulicht dieser Artikel die Theorie, mit einer anfänglichen Vorlage zu beginnen, Entscheidungsstrukturen und Refactoring zu nutzen, um die Zielzone zu erweitern und sich auf einen zukünftigen Zustand der Unternehmensbereitschaft zuzubewegen. |
+| [Erweitern der Zielzone](../ready/considerations/index.md)                       | **Neuer Artikel:** Baut auf dem Abschnitt über parallele Iterationen des Artikels zum Refactoring auf, um zu zeigen, wie verschiedene Arten von Zielzonenerweiterungen gemeinsame Prinzipien in die unterstützende Plattform einbetten würden. (Ursprünglicher Inhalt für diese Übersicht wurde zum Knoten [Grundlegende Überlegungen zu Zielzonen](../ready/considerations/basic-considerations.md) im Inhaltsverzeichnis verschoben.) |
+| [Testgesteuerte Entwicklung (TDD) für Zielzonen](../ready/considerations/test-driven-development.md)                       | **Neuer Artikel:** Der Refactoringansatz wird durch die Einführung eines testgesteuerten Entwicklungszyklus, der die Entwicklung der Zielzone und das Refactoring steuert, erheblich verbessert. |
+| [Testgesteuerte Entwicklung (TDD) der Zielzone in Azure](../ready/considerations/azure-test-driven-development.md)                       | **Neuer Artikel:** Azure Governance-Tools bieten eine vielfältige Plattform für TDD-Zyklen oder Rot/Grün-Tests. |
+| [Erhöhen der Sicherheit von Zielzonen](../ready/considerations/landing-zone-security.md)                       | **Neuer Artikel:** Übersicht über die bewährten Methoden in diesem Abschnitt, mit einem Rückbezug auf den TDD-Zyklus. |
+| [Verbessern des Betriebs von Zielzonen](../ready/considerations/landing-zone-operations.md)                       | **Neuer Artikel:** Liste der bewährten Methoden in der „Manage“-Methodik, mit einem Übergang zu diesem modularen Ansatz zur Verbesserung von Betrieb, Zuverlässigkeit und Leistung. |
+| [Verbessern der Governance von Zielzonen](../ready/considerations/landing-zone-governance.md)                       | **Neuer Artikel:** Liste der bewährten Methoden in der „Govern“-Methodik, mit einem Übergang zu diesem modularen Ansatz zur Verbesserung von Governance, Cost Management und Skalierung. |
+| [Auf Unternehmensniveau beginnen](../ready/considerations/enterprise-scale.md)                       | **Neuer Artikel:** Veranschaulichen Sie einen Ansatz, der die Unterschiede im Prozess aufzeigt, wenn ein Kunde mit Zielzonenvorlagen auf Unternehmensniveau beginnt. Dieser Artikel hilft Kunden dabei, die Qualifizierer zu verstehen, die diese Entscheidung unterstützen würden. |
+| Aktualisieren des Inhaltsverzeichnisses                       | Das Inhaltsverzeichnis wurde aktualisiert, um die neuen Artikel widerzuspiegeln.  |
 
 ## <a name="march-27-2020"></a>27. März 2020
 
@@ -42,7 +75,7 @@ Wir haben eine ausführliche Anleitung hinzugefügt, in der die Tools, Programme
 
 | Artikel                                                                                     | BESCHREIBUNG                                                                                                                                                                           |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Anwendungsentwicklung und Bereitstellung](../innovate/kubernetes/application-development.md) | **Neuer Artikel:** Enthält Prüflisten, Ressourcen und bewährte Methoden für die Planung der Anwendungsentwicklung, die Konfiguration von DevOps-Pipelines und die Implementierung von Websitezuverlässigkeits-Engineering (Site Reliability Engineering) für Kubernetes. |
+| [Anwendungsentwicklung und Bereitstellung](../innovate/kubernetes/application-development.md) | **Neuer Artikel:** Enthält Prüflisten, Ressourcen und bewährte Methoden für die Planung der Anwendungsentwicklung, die Konfiguration von CI/CD-Pipelines und die Implementierung von Websitezuverlässigkeits-Engineering (Site Reliability Engineering) für Kubernetes. |
 | [Clusterentwurf und Vorgänge](../innovate/kubernetes/cluster-design-operations.md) | **Neuer Artikel:** Enthält Prüflisten, Ressourcen und bewährte Methoden für Clusterkonfiguration, Netzwerkentwurf, zukunftssichere Skalierbarkeit, Geschäftskontinuität und Notfallwiederherstellung für Kubernetes. |
 | [Cluster- und Anwendungssicherheit](../innovate/kubernetes/cluster-application-security.md) | **Neuer Artikel:** Enthält Prüflisten, Ressourcen und bewährte Methoden für die Kubernetes-Sicherheit, -Planung, -Produktion und -Skalierung. |
 
