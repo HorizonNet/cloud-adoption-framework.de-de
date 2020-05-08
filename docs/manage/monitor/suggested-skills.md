@@ -3,16 +3,16 @@ title: Qualifikationsbereitschaft für Cloudüberwachung
 description: Qualifikationsbereitschaft für Cloudüberwachung
 author: BrianBlanchard
 ms.author: magoedte
-ms.date: 03/23/2020
+ms.date: 05/05/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 30d3b590c6382b0487cac3cfd6c5c0d343432f67
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: fe76729b4a845d71629d7d24d4bdd3110fa6ab9a
+ms.sourcegitcommit: 5058bc57cb53701ac409959b46767ae6fd56ba93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120542"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "82861434"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -37,13 +37,13 @@ Die Entwicklung der erforderlichen Qualifikationen kann mit den folgenden Lernpf
 
 - Informieren Sie sich darüber, wie [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) Ihnen das Anzeigen der Verfügbarkeit und Leistung Ihrer Anwendungen und Dienste an einem zentralen Ort ermöglicht. Von Pluralsight werden die folgenden Kurse angeboten:
 
-  - Unter [Microsoft Azure IaaS: Überwachung und Verwaltung](https://www.pluralsight.com/courses/azure-iaas-monitoring-management-getting-started) erfahren Sie, wie Sie Azure Monitor verwenden, um die grundlegende Überwachung von Workloads durchzuführen, die unter IaaS ausgeführt werden.
-
-  - Unter [Überwachen von Microsoft Azure-Ressourcen und -Workloads](https://www.pluralsight.com/courses/microsoft-azure-resources-workloads-monitoring) wird beschrieben, wie Sie Microsoft Azure-Überwachungstools zum Überwachen von Azure-Netzwerkressourcen sowie lokalen Ressourcen verwenden.
+  - Unter [Überwachen von Microsoft Azure-Ressourcen und -Workloads](https://app.pluralsight.com/library/courses/microsoft-azure-resources-workloads-monitoring-update/table-of-contents) wird beschrieben, wie Sie Microsoft Azure-Überwachungstools zum Überwachen von Azure-Netzwerkressourcen sowie lokalen Ressourcen verwenden.
 
   - Unter [Microsoft Azure DevOps-Techniker: Optimieren von Feedbackmechanismen](https://www.pluralsight.com/courses/microsoft-azure-optimize-feedback-mechanisms) können Sie sich darauf vorbereiten, Azure Monitor, einschließlich Application Insights und Log Analytics, für die Überwachung und Optimierung Ihrer Webanwendungen zu verwenden.
 
   - Unter [Microsoft Azure-Datenbanküberwachung: Playbook](https://www.pluralsight.com/courses/microsoft-azure-database-playbook-monitoring) wird beschrieben, wie Sie die Überwachung von Azure SQL-Datenbank, Azure SQL Data Warehouse und Azure Cosmos DB implementieren und nutzen.
+
+  - In dem Kurs [Instrumentieren von Anwendungen mit Azure Monitor Application Insights](https://app.pluralsight.com/library/courses/microsoft-azure-application-insights-web-application-instrument) wird ausführlich beschrieben, wie Sie das Application Insights SDK zum Sammeln von Telemetriedaten und Ereignissen einer App mit Angular- und Node.js-Komponenten verwenden.
 
 - Der Artikel [Azure Arc für Server](https://docs.microsoft.com/azure/azure-arc/servers/overview) enthält eine Beschreibung dazu, wie Sie Ihre außerhalb von Azure gehosteten Windows- und Linux-Computer auf ähnliche Weise wie Ihre nativen virtuellen Azure-Computer verwalten können.
 
