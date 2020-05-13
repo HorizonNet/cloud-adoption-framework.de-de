@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: f4b6b2d5d944e3176b2f36ef713955a4c29324f9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 67145b6c5da9c7da740771acfea38ba97e6f8a9c
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426575"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217454"
 ---
 <!-- cSpell:ignore siterecovery -->
 
@@ -28,10 +28,10 @@ In [Betriebsbezogene Compliance in Azure](./operational-compliance.md) bestand d
 
 In dieser Tabelle wird für jede Umgebung auf Unternehmensniveau der empfohlene Mindestwert für die einzelnen Verwaltungsbaselines aufgeführt:
 
-|Prozess  |Tool  |Zweck  |
-|---------|---------|---------|
-|Schützen von Daten|Azure Backup|Sichern Sie Daten und virtuelle Computer in der Cloud.|
-|Schutz der Umgebung|Azure Security Center|Erhöhen Sie die Sicherheit und bieten Sie erweiterten Schutz vor Bedrohungen für Ihre Hybrid-Workloads.|
+| Prozess                 | Tool                  | Zweck                                                                                  |
+| ----------------------- | --------------------- | ---------------------------------------------------------------------------------------- |
+| Schützen von Daten            | Azure Backup          | Sichern Sie Daten und virtuelle Computer in der Cloud.                                          |
+| Schutz der Umgebung | Azure Security Center | Erhöhen Sie die Sicherheit und bieten Sie erweiterten Schutz vor Bedrohungen für Ihre Hybrid-Workloads. |
 
 ::: zone target="docs"
 
@@ -64,7 +64,7 @@ Mit Azure Backup können Sie Ihre Daten in der Microsoft-Cloud sichern, schütze
 
 ::: zone target="docs"
 
-[Übersicht](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup)
+[Übersicht](https://docs.microsoft.com/azure/backup/backup-overview)
 
 ## <a name="azure-site-recovery"></a>Azure Site Recovery
 

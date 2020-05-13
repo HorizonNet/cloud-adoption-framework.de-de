@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 3e7c74a1d2afa880a0bdec5215b2237e8261ec79
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 17951fef2a93d4c592cc620e4f8aa14ba0c11c58
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426356"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217352"
 ---
 # <a name="business-impact-in-cloud-management"></a>Die geschäftlichen Auswirkungen in der Cloudverwaltung
 
@@ -20,13 +20,13 @@ Gehen Sie vom Optimalzustand aus, aber bereiten Sie sich auf das Schlimmste vor.
 
 ![Auswirkungen von Geschäftsunterbrechungen](../../_images/manage/time-value-impact.png)
 
-Um eine solide Vergleichsbasis für die Auswirkungen auf verschiedene Workloads in einem Portfolio zu erhalten, empfiehlt sich die Verwendung einer Zeit-Wert-Metrik. Die Zeit-Wert-Metrik erfasst die negativen Auswirkungen eines Workloadausfalls. Im Allgemeinen werden diese Auswirkungen als direkter Umsatz- oder Betriebsertragsverlust während eines typischen Ausfallzeitraums erfasst. Genauer gesagt wird der Umsatzverlust für eine bestimmte Zeiteinheit berechnet. Die gängigste Zeit-Wert-Metrik ist *Auswirkung pro Stunde*, die Betriebsertragsverluste pro Ausfallstunde misst.
+Um eine solide Vergleichsbasis für die Auswirkungen auf verschiedene Workloads in einem Portfolio zu erhalten, empfiehlt sich die Verwendung einer Zeit-Wert-Metrik. Die Zeit-Wert-Metrik erfasst die negativen Auswirkungen eines Workloadausfalls. Im Allgemeinen werden diese Auswirkungen als direkter Umsatz- oder Betriebsertragsverlust während eines typischen Ausfallzeitraums erfasst. Genauer gesagt wird der Umsatzverlust für eine bestimmte Zeiteinheit berechnet. Die gängigste Zeit-Wert-Metrik ist _Auswirkung pro Stunde_, die Betriebsertragsverluste pro Ausfallstunde misst.
 
 Es können einige Ansätze zur Berechnung der Auswirkungen verwendet werden. Sie können jede der Optionen in den folgenden Abschnitten anwenden, um ähnliche Ergebnisse zu erzielen. Es ist wichtig, für jeden Workload denselben Ansatz zu verwenden, wenn Sie mögliche Verluste in einem Portfolio berechnen.
 
 ## <a name="start-with-estimates"></a>Starten mit Schätzungen
 
-Bei aktuellen Betriebsmodellen kann es schwierig sein, die genauen Auswirkungen zu bestimmen. Glücklicherweise ist nur für wenige Systeme eine sehr genaue Verlustberechnung notwendig. Im vorherigen Schritt *Klassifizieren der Wichtigkeit* haben wir vorgeschlagen, dass Sie alle Workloads mit einer Voreinstellung von *Mittlere Wichtigkeit* starten. Für Workloads mit mittlerer Wichtigkeit wird im Allgemeinen eine Standardstufe an Verwaltungsunterstützung mit relativ geringen Auswirkungen auf die Betriebskosten festgelegt. Nur wenn eine Workload zusätzliche Ressourcen für die operative Verwaltung erfordert, müssen die genauen finanziellen Auswirkungen ermittelt werden.
+Bei aktuellen Betriebsmodellen kann es schwierig sein, die genauen Auswirkungen zu bestimmen. Glücklicherweise ist nur für wenige Systeme eine sehr genaue Verlustberechnung notwendig. Im vorherigen Schritt _Klassifizieren der Wichtigkeit_ haben wir vorgeschlagen, dass Sie alle Workloads mit einer Voreinstellung von _Mittlere Wichtigkeit_ starten. Für Workloads mit mittlerer Wichtigkeit wird im Allgemeinen eine Standardstufe an Verwaltungsunterstützung mit relativ geringen Auswirkungen auf die Betriebskosten festgelegt. Nur wenn eine Workload zusätzliche Ressourcen für die operative Verwaltung erfordert, müssen die genauen finanziellen Auswirkungen ermittelt werden.
 
 Bei allen standardisierten Workloads dienen die geschäftlichen Auswirkungen als Priorisierungsvariable bei der Wiederherstellung von Systemen nach einem Ausfall. Mit Ausnahme dieser Situationen erfordern die geschäftlichen Auswirkungen keine oder nur wenige Änderungen an der operativen Verwaltung.
 
@@ -54,7 +54,7 @@ Wenn Sie Verluste durch die Anwendung historischer Daten berechnen, verfügen Si
 
 Wenn Sie die Arbeitsmappe [Operations Management](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) zur Planung der Cloudverwaltung verwenden, sollten Sie Folgendes in Betracht ziehen:
 
-- Jede Workload auf den Blättern *Example* oder *Clean Template* sollte von geschäftlicher Seite mit dem *Time/Value Impact* jeder Workload aktualisiert werden. Standardmäßig repräsentiert der Wert *Time/Value Impact* die prognostizierten Verluste pro Stunde in Zusammenhang mit einem Ausfall der Workload.
+- Jede Workload auf den Blättern _Example_ oder _Clean Template_ sollte von geschäftlicher Seite mit dem *Time/Value Impact* jeder Workload aktualisiert werden. Standardmäßig repräsentiert der Wert *Time/Value Impact* die prognostizierten Verluste pro Stunde in Zusammenhang mit einem Ausfall der Workload.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

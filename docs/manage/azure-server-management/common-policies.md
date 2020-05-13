@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 3f6d5cbc2485a8e5a3752f24659e8873abb40a8d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 074762c6d02c6da1cd6812064e20f63a44aa4bd7
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430611"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217284"
 ---
 # <a name="common-azure-policy-examples"></a>Allgemeine Azure Policy-Beispiele
 
@@ -32,7 +32,7 @@ Die Vorschriften- und Richtliniencompliance hängt oft von der Kontrolle des phy
 Wenn Sie diese Richtlinie im Portal finden möchten, suchen Sie auf der Seite zur Richtliniendefinition nach „Standort“. Alternativ können Sie dieses Cmdlet ausführen, um die Richtlinie zu finden:
 
 ```powershell
-Get-AzPolicyDefinition | Where-Object { ($_.Properties.policyType -eq "BuiltIn") -and ($_.Properties.displayName -like "*location*") }
+Get-AzPolicyDefinition | Where-Object { ($_.Properties.policyType -eq 'BuiltIn') -and ($_.Properties.displayName -like '*location*') }
 ```
 
 Das folgende Skript zeigt, wie Sie die Richtlinie zuweisen. Ändern Sie den `$SubscriptionID`-Wert, um auf das Abonnement zu verweisen, dem Sie die Richtlinie zuweisen möchten. Bevor Sie das Skript ausführen, verwenden Sie das Cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0), um sich anzumelden.
@@ -46,7 +46,7 @@ $scope = "/subscriptions/$SubscriptionID"
 $AllowedLocationPolicy = Get-AzPolicyDefinition -Name "e56962a6-4747-49cd-b67b-bf8b01975c4c"
 
 #Replace the locations with the ones you want to specify.
-$policyParam = '{"listOfAllowedLocations":{"value":["eastus","westus"]}}'
+$policyParam = '{ "listOfAllowedLocations":{"value":["eastus","westus"]}}'
 New-AzPolicyAssignment -Name "Allowed Location" -DisplayName "Allowed locations for resource creation" -Scope $scope -PolicyDefinition $AllowedLocationPolicy -Location eastus -PolicyParameter $policyParam
 ```
 
@@ -70,7 +70,7 @@ Azure bietet eine große Auswahl an VM-Größen, um verschiedene Workloads zu un
 
 ### <a name="deploy-antimalware"></a>Bereitstellen von Antischadsoftware
 
-Mit dieser Richtlinie können Sie eine Microsoft *IaaSAntimalware*-Erweiterung mit einer Standardkonfiguration auf virtuellen Computern bereitstellen, die nicht durch Antischadsoftware geschützt sind.
+Mit dieser Richtlinie können Sie eine Microsoft _IaaSAntimalware_-Erweiterung mit einer Standardkonfiguration auf virtuellen Computern bereitstellen, die nicht durch Antischadsoftware geschützt sind.
 
 Die GUID der Richtlinie lautet `2835b622-407b-4114-9198-6f7064cbe0dc`.
 

@@ -7,12 +7,12 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0f57483ed09ec87422773c6a2fb53e2785a0a24e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 3d50dc6ec4a2c20b7d73bd2f0cc0ed3414e24581
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425515"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217641"
 ---
 <!-- cSpell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
 
@@ -23,6 +23,8 @@ Azure ist eine alternative Plattform für die Ausführung herkömmlicher Mainfra
 Dieser Abschnitt bietet einen technischen Leitfaden für den Wechsel von einer Mainframeplattform zu Azure.
 
 ![Mainframe und Azure](../../_images/mainframe-migration/make-the-switch.png)
+
+<!-- docsTest:ignore "vs. vCPUs" -->
 
 ## <a name="mips-vs-vcpus"></a>MIPS im Vergleich zu vCPUs
 
@@ -61,7 +63,7 @@ Darüber hinaus bietet eine solche Funktion eng gekoppelte Computeressourcen, di
 
 Kunden mit Mainframesystemen unterhalten in der Regel Standorte für eine Notfallwiederherstellung oder verlassen sich auf einen unabhängigen Mainframeanbieter, um Notfallsituationen schnell zu beseitigen. Die Synchronisierung mit einem Standort für die Notfallwiederherstellung erfolgt häufig über Offlinekopien der Daten. Bei beiden Optionen fallen hohe Kosten an.
 
-Automatisierte Georedundanz ist auch per Mainframekopplung verfügbar. Dieser Ansatz ist jedoch kostspielig und wird in der Regel nur für unternehmenskritische Systeme verwendet. Im Gegensatz dazu bietet Azure kostengünstige Optionen, die sich leicht implementieren lassen, für [Sicherung](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup), [Wiederherstellung](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) und [Redundanz](https://docs.microsoft.com/azure/storage/common/storage-redundancy) auf lokaler oder regionale Ebene oder über Georedundanz.
+Automatisierte Georedundanz ist auch per Mainframekopplung verfügbar. Dieser Ansatz ist jedoch kostspielig und wird in der Regel nur für unternehmenskritische Systeme verwendet. Im Gegensatz dazu bietet Azure kostengünstige Optionen, die sich leicht implementieren lassen, für [Sicherung](https://docs.microsoft.com/azure/backup/backup-overview), [Wiederherstellung](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) und [Redundanz](https://docs.microsoft.com/azure/storage/common/storage-redundancy) auf lokaler oder regionale Ebene oder über Georedundanz.
 
 ## <a name="storage"></a>Storage
 

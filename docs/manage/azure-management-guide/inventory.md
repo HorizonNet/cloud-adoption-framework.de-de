@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9647ec56145d54537541ee70bbdb2280c9cae2ac
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 126699d4d5e8d69f230047f16654d5ccb635a8e2
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426814"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216723"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Bestand und Transparenz in Azure
 
@@ -26,16 +26,16 @@ Diese Disziplin steht an erster Stelle, da das Sammeln von korrekten Betriebsdat
 
 In der folgenden Tabelle wird für jede Umgebung auf Unternehmensniveau der empfohlene Mindestwert für eine Verwaltungsbaseline aufgeführt.
 
-|Prozess  |Tool  |Zweck  |
-|---------|---------|---------|
-|Überwachen der Integrität von Azure-Diensten|Azure Service Health|Integrität, Leistung und Diagnose für Dienste, die in Azure ausgeführt werden|
-|Zentralisierung von Protokollen|Log Analytics|Zentrale Protokollierung für jegliche Transparenzzwecke|
-|Zentralisierung der Überwachung|Azure Monitor|Zentrale Überwachung von Betriebsdaten und Trends|
-|Nachverfolgen von Bestand und Änderungen für virtuelle Computer|Azure-Änderungsnachverfolgung und Bestand|Bestandsaufnahme von VMs und Überwachen von Änderungen auf Ebene des Gastbetriebssystems|
-|Abonnementüberwachung|Azure-Aktivitätsprotokoll|Überwachen von Änderungen auf Abonnementebene|
-|Überwachung des Gastbetriebssystems|Azure Monitor für VMs|Überwachen von Änderungen und der Leistung von VMs|
-|Netzwerküberwachung|Azure Network Watcher|Überwachen von Netzwerkänderungen und -leistung|
-|DNS-Überwachung|DNS-Analyse|Sicherheit, Leistung und Vorgänge von DNS|
+| Prozess | Tool | Zweck |
+|---|---|---|
+| Überwachen der Integrität von Azure-Diensten | Azure Service Health | Integrität, Leistung und Diagnose für Dienste, die in Azure ausgeführt werden |
+| Zentralisierung von Protokollen | Log Analytics | Zentrale Protokollierung für jegliche Transparenzzwecke |
+| Zentralisierung der Überwachung | Azure Monitor | Zentrale Überwachung von Betriebsdaten und Trends |
+| Nachverfolgen von Bestand und Änderungen für virtuelle Computer | Azure-Änderungsnachverfolgung und Bestand | Bestandsaufnahme von VMs und Überwachen von Änderungen auf Ebene des Gastbetriebssystems |
+| Abonnementüberwachung | Azure-Aktivitätsprotokoll | Überwachen von Änderungen auf Abonnementebene |
+| Überwachung des Gastbetriebssystems | Azure Monitor für VMs | Überwachen von Änderungen und der Leistung von VMs |
+| Netzwerküberwachung | Azure Network Watcher | Überwachen von Netzwerkänderungen und -leistung |
+| DNS-Überwachung | DNS-Analyse | Sicherheit, Leistung und Vorgänge von DNS |
 
 ::: zone target="docs"
 

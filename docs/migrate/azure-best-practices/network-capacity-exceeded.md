@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4d32a1b521240806b78435141b9876967b4093d8
-ms.sourcegitcommit: 825f9ae5b6cdd2fa6cb18c14a9733ba9106194f2
+ms.openlocfilehash: a7caa77a9f11f464160548aded6b280bbc9b0b00
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81646849"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217154"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 
@@ -34,7 +34,7 @@ Diese Vorgehensweise kann für die Übertragung von Daten aus HDFS, Sicherungen,
 
 Es gibt auch Partnerlösungen von Drittanbietern, bei denen Azure Data Box für eine „Seed & Feed“-Migration verwendet wird, wobei eine große Datenmenge über eine Offlineübertragung verschoben wird, später aber in geringerem Umfang über das Netzwerk synchronisiert wird.
 
-![Offline- und Onlinedatenübertragung mit Azure Data Box](../../_images/migrate/databox.png)
+![Offline- und Onlinedatenübertragung mit Azure Data Box](../../_images/migrate/data-box.png)
 
 ## <a name="assess-process-changes"></a>Änderungen am Bewertungsprozess
 
