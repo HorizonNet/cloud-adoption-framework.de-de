@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d34a97e24e681732de7d171e7add84a0d5e51281
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: fe1e6edb7f0c5480a4ae20e639471218ae9805e0
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426320"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223965"
 ---
 # <a name="it-management-and-operations-in-the-cloud"></a>IT-Verwaltung und -Vorgänge in der Cloud
 
@@ -27,6 +27,8 @@ Wenn das Unternehmen neue Technologielösungen entwickelt, besteht hierfür eine
 ## <a name="cloud-management"></a>Cloudverwaltung
 
 Dieses IT-Betriebsmodell hat über 20 Jahre lang funktioniert. Mittlerweile ist dieses Modell aber veraltet und weniger attraktiv als cloudbasierte Alternativen. Beim Umstieg auf die Cloud haben IT-Verwaltungsteams die Möglichkeit, dieses Modell zu überdenken und einen größeren Nutzen für das Unternehmen zu erzielen. In dieser Artikelreihe wird ein modernisiertes Modell für die IT-Verwaltung beschrieben.
+
+<!-- cSpell:ignore caf -->
 
 ![Verwalten der Methoden im Framework für die Cloudeinführung](../../_images/manage/caf-manage.png)
 

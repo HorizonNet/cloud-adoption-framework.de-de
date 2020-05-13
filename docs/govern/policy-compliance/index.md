@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7d22bb4b4bae04366c61686862d1ae437185886d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: eec9c7ae36dbe92142226e78afcdd465e4aa66a2
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433512"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224220"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -33,7 +33,7 @@ Bei herkömmlichen und inkrementellen Governanceverfahren wird die Arbeitsdefini
 
 ![Unternehmensgovernance und Governancedisziplinen](../../_images/operational-transformation-govern-highres.png)
 
-*Abbildung 1: Unternehmensgovernance und Governancedisziplinen*
+_Abbildung 1: Unternehmensgovernance und Governancedisziplinen_
 
 Die Abbildung zeigt die Interaktionen zwischen Geschäftsrisiko, Richtlinien und Compliance sowie Überwachung und Durchsetzung, um eine Governancestrategie aufzubauen. Im unteren Teil sehen Sie die fünf Disziplinen der Cloudgovernance zum Umsetzen Ihrer Strategie.
 
@@ -53,6 +53,8 @@ Beim inkrementellen Ansatz für die Cloudgovernance entstehen zuweilen natürlic
 ## <a name="minimum-viable-product-mvp-for-policy"></a>Minimum Viable Product (MVP) für die Richtlinie
 
 Der erste Schritt in der neuen Partnerschaft zwischen Ihren Cloudgovernance- und Cloudeinführungsteams ist eine Übereinkunft in Bezug auf das MVP (Minimum Viable Product, minimal überlebensfähiges Produkt) für die Richtlinie. Bei diesem MVP für die Cloudgovernance muss berücksichtigt werden, dass das geschäftliche Risiko zu Beginn recht gering ist, aber im Lauf der Zeit, wenn Ihre Organisation weitere Clouddienste hinzufügt, wahrscheinlich steigen wird.
+
+<!-- cSpell:ignore HBI -->
 
 So ist z. B. das Geschäftsrisiko für ein Unternehmen, das fünf virtuelle Computer bereitstellt, die keine HBI-Daten (High Business Impact) enthalten, gering. Später im Cloudeinführungsprozess, wenn die Anzahl der virtuellen Computer auf 1.000 angestiegen ist und das Unternehmen damit beginnt, solche Daten zu verschieben, steigt das geschäftliche Risiko.
 

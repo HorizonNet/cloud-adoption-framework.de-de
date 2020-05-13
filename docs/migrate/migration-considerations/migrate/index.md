@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 115b79d41c4f7d0c2c9b27db0d42b61e1ee45dee
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 6325e577453598bee8092ee3ba49c6dc1057c9e3
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81119689"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214224"
 ---
 # <a name="deploy-workloads"></a>Bereitstellen von Workloads
 
@@ -22,11 +22,11 @@ Nachdem Workloads bewertet wurden, können sie in der Cloud bereitgestellt oder 
 
 Das Ziel einer Migration ist es, eine einzelne Workload in die Cloud zu migrieren.
 
-## <a name="definition-of-done"></a>Definition von *Fertig*.
+## <a name="definition-of-_done_"></a>Definition von _Fertig_.
 
 Die Migrationsphase ist abgeschlossen, wenn eine Workload in der Cloud bereitgestellt und testbereit ist, einschließlich aller abhängigen Ressourcen, die für die Funktion der Workload erforderlich sind. Während des Optimierungsprozesses wird die Workload für den Einsatz in der Produktionsumgebung vorbereitet.
 
-Diese Definition von *Fertig* kann je nach Ihren Test- und Freigabeprozessen variieren. Der nächste Artikel in dieser Reihe behandelt die [Entscheidung für ein Höherstufungsmodell](./promotion-models.md) und kann Ihnen helfen zu verstehen, wann der beste Zeitpunkt ist, eine migrierte Workload in die Produktion hochzustufen.
+Diese Definition von _Fertig_ kann je nach Ihren Test- und Freigabeprozessen variieren. Der nächste Artikel in dieser Reihe behandelt die [Entscheidung für ein Höherstufungsmodell](./promotion-models.md) und kann Ihnen helfen zu verstehen, wann der beste Zeitpunkt ist, eine migrierte Workload in die Produktion hochzustufen.
 
 ## <a name="accountability-during-migration"></a>Verantwortlichkeit während der Migrationsphase
 
