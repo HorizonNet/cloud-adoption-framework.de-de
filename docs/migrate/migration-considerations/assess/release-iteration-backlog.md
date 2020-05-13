@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8e3ed4ff6457c0e9d00777f94c812097f0b742e9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 90b6ecf9f7f4914855bbeeaa0afc5d920a85eeb4
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429393"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214190"
 ---
 # <a name="manage-change-in-an-incremental-migration-effort"></a>Verwalten von Änderungen bei einer inkrementellen Migration
 
@@ -20,15 +20,15 @@ In diesem Artikel wird davon ausgegangen, dass Migrationsprozesse inkrementell s
 
 ## <a name="release-backlog"></a>Releasebacklog
 
-Ein *Releasebacklog* besteht aus einer Reihe von Ressourcen (virtuelle Computer, Datenbanken, Dateien, Anwendungen usw.), die migriert werden müssen, bevor eine Workload für den Produktionseinsatz in der Cloud freigegeben werden kann. Während jeder Iteration dokumentiert und schätzt das Cloudeinführungsteam den erforderlichen Aufwand für das Verschieben der einzelnen Ressourcen in die Cloud. Informationen dazu finden Sie im folgenden Abschnitt „Iterationsbacklog“.
+Ein _Releasebacklog_ besteht aus einer Reihe von Ressourcen (virtuelle Computer, Datenbanken, Dateien, Anwendungen usw.), die migriert werden müssen, bevor eine Workload für den Produktionseinsatz in der Cloud freigegeben werden kann. Während jeder Iteration dokumentiert und schätzt das Cloudeinführungsteam den erforderlichen Aufwand für das Verschieben der einzelnen Ressourcen in die Cloud. Informationen dazu finden Sie im folgenden Abschnitt „Iterationsbacklog“.
 
 ## <a name="iteration-backlog"></a>Iterationsbacklog
 
-Ein *Iterationsbacklog* ist eine Liste der detaillierten Arbeitsschritte, die erforderlich sind, um eine bestimmte Anzahl von Ressourcen aus dem vorhandenen digitalen Bestand in die Cloud zu migrieren. Die Einträge in dieser Liste werden häufig als Arbeitselemente in einem agilen Verwaltungstool wie Azure DevOps gespeichert.
+Ein _Iterationsbacklog_ ist eine Liste der detaillierten Arbeitsschritte, die erforderlich sind, um eine bestimmte Anzahl von Ressourcen aus dem vorhandenen digitalen Bestand in die Cloud zu migrieren. Die Einträge in dieser Liste werden häufig als Arbeitselemente in einem agilen Verwaltungstool wie Azure DevOps gespeichert.
 
 Vor Beginn der ersten Iteration legt das Cloudeinführungsteam eine Iterationsdauer fest. Dies sind in der Regel zwei bis vier Wochen. Dieses Zeitfenster ist wichtig, um einen Start- und Abschlusszeitraum für jede Gruppe zugesicherter Aktivitäten zu erstellen. Die Aufrechterhaltung konsistenter Ausführungsfenster erleichtert das Messen der Geschwindigkeit (Tempo der Migration) und das Anpassen an die sich ändernden Geschäftsanforderungen.
 
-Vor jeder Iteration überprüft das Team das Releasebacklog und schätzt den Aufwand und Prioritäten der zu migrierenden Ressourcen. Anschließend verpflichtet es sich, eine bestimmte Anzahl vereinbarter Migrationen durchzuführen. Nachdem das Cloudeinführungsteam dem zugestimmt hat, wird die Liste mit den Aktivitäten zum *aktuellen Iterationsbacklog*.
+Vor jeder Iteration überprüft das Team das Releasebacklog und schätzt den Aufwand und Prioritäten der zu migrierenden Ressourcen. Anschließend verpflichtet es sich, eine bestimmte Anzahl vereinbarter Migrationen durchzuführen. Nachdem das Cloudeinführungsteam dem zugestimmt hat, wird die Liste mit den Aktivitäten zum _aktuellen Iterationsbacklog_.
 
 Während jeder Iteration arbeiten Teammitglieder als selbstorganisierendes Team, um die Verpflichtungen im aktuellen Iterationsbacklog zu erfüllen.
 

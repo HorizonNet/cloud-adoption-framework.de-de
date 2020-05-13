@@ -7,16 +7,16 @@ ms.date: 04/09/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 18b5aefb0498c530313afa63d2f005fd874f8741
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4f8d4dd2b2c2228bfdb4ebe13980e9f408083e2f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81122051"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83213986"
 ---
 # <a name="landing-zone-considerations"></a>Überlegungen zu Landezonen
 
-Eine Landezone ist der Grundbaustein jeder Cloudeinführungsumgebung. Der Begriff *Landezone* bezeichnet eine Umgebung, die zum Hosten von Workloads in einer Cloudumgebung wie Azure bereitgestellt und vorbereitet wurde. Bei jeder Iteration der Bereitschaftsmethodik des Frameworks für die Cloudeinführung (Cloud Adoption Framework) wird letztendlich eine voll funktionsfähige Landezone angestrebt.
+Eine Landezone ist der Grundbaustein jeder Cloudeinführungsumgebung. Der Begriff _Landezone_ bezeichnet eine Umgebung, die zum Hosten von Workloads in einer Cloudumgebung wie Azure bereitgestellt und vorbereitet wurde. Bei jeder Iteration der Bereitschaftsmethodik des Frameworks für die Cloudeinführung (Cloud Adoption Framework) wird letztendlich eine voll funktionsfähige Landezone angestrebt.
 
 ![Überlegungen zu Landezonen](../../_images/ready/landing-zone-considerations.png)
 
