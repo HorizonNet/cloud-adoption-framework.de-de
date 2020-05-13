@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f0073d600f0f08b2e1f4a4fa881bfe5e6b99954c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 54a2892ed657c08ee6c984798a61c1ff10716257
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120557"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219749"
 ---
 <!-- cSpell:ignore deprioritize -->
 
@@ -26,7 +26,7 @@ Es gibt einige Hauptreibungspunkte bei der Einführung, die durch eine Kombinati
 
 Wie unter [Messen der Auswirkungen für Kunden](./measure.md) beschrieben, erfordert die positive Validierung jeder Hypothese Iterationen und Entschlossenheit. Während eines beliebigen Innovationszyklus werden Sie weit mehr Niederlagen als Siege erleben. Dies entspricht dem erwarteten Verhalten. Wenn jedoch Kundenanforderung, Hypothese und Lösung bedarfsabhängig ausgerichtet werden, ändert sich die Welt rasch. Dieser Artikel zielt darauf ab, die [technischen Spitzen](./build.md#reduce-complexity-and-delay-technical-spikes) zu minimieren, die die Innovation bremsen, aber dennoch sicherzustellen, dass Sie einige solide bewährte Methoden anwenden. Auf diese Weise kann das Team Entwürfe für einen zukünftigen Erfolg entwickeln und dabei die aktuellen Anforderungen der Kunden erfüllen.
 
-## <a name="empowering-adoption-the-maturity-model"></a>Unterstützung der Einführung: das Reifemodell
+## <a name="empower-adoption-the-maturity-model"></a>Unterstützung der Einführung: das Reifemodell
 
 Das Hauptziel der [Innovationsmethodik](./index.md) ist das Schaffen von Kundenpartnerschaften und Beschleunigen von Feedbackschleifen, was zu Marktinnovationen führen wird. In der folgenden Abbildung und den folgenden Abschnitten werden die anfänglichen Implementierungen beschrieben, die diese Methodik unterstützen.
 
@@ -92,7 +92,7 @@ In jeder Phase der Hypothesenvalidierung bieten Azure DevOps und [Azure Pipeline
 
 ## <a name="integrated-measurements"></a>Integrierte Messungen
 
-Beim [Messen der Auswirkungen für Kunden](./measure.md) ist es wichtig, dass Sie verstehen, wie Kunden auf Änderungen in der Lösung reagieren. Diese als *Telemetriedaten* bezeichneten Daten bieten Einblicke in die Aktionen, die ein Benutzer (oder eine Kohorte von Benutzern) beim Arbeiten mit der Lösung durchführte. Aus diesen Daten kann einfach eine quantitative Validierung der Hypothese gewonnen werden. Diese Metriken können dann verwendet werden, um die Lösung anzupassen und differenziertere Hypothesen zu generieren. Diese subtileren Änderungen tragen dazu bei, die anfängliche Lösung in nachfolgenden Iterationen ausreifen zu lassen, sodass die Einführung schließlich bedarfsabhängig wiederholt wird.
+Beim [Messen der Auswirkungen für Kunden](./measure.md) ist es wichtig, dass Sie verstehen, wie Kunden auf Änderungen in der Lösung reagieren. Diese als _Telemetriedaten_ bezeichneten Daten bieten Einblicke in die Aktionen, die ein Benutzer (oder eine Kohorte von Benutzern) beim Arbeiten mit der Lösung durchführte. Aus diesen Daten kann einfach eine quantitative Validierung der Hypothese gewonnen werden. Diese Metriken können dann verwendet werden, um die Lösung anzupassen und differenziertere Hypothesen zu generieren. Diese subtileren Änderungen tragen dazu bei, die anfängliche Lösung in nachfolgenden Iterationen ausreifen zu lassen, sodass die Einführung schließlich bedarfsabhängig wiederholt wird.
 
 In Azure bietet [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) die Tools und die Schnittstelle zum Erfassen und Überprüfen der Daten aus den Kundenerfahrungen. Sie können diese Beobachtungen und Einblicke verwenden, um den Rückstand mithilfe von [Azure Boards](https://docs.microsoft.com/azure/devops/boards) zu verbessern.
 

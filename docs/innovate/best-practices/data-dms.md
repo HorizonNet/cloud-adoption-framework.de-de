@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: afaedb0607ecf4b1195578dc72e756616c6384d4
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 1f1060ba4df7dfb398a94f8611901612e1ecf60d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425514"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219783"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>Sammeln von Daten durch Migration und Modernisierung vorhandener Datenquellen
 
@@ -46,14 +46,14 @@ Bei einer Offlinemigration beginnt der Ausfall der Anwendung, wenn die Migration
 
 Es wird empfohlen, dass Sie Ihre akzeptablen Ausfallzeiten für das Geschäft festlegen und eine Offlinemigration testen. Auf diese Weise können Sie überprüfen, ob die Wiederherstellungsdauer mit der akzeptablen Ausfallzeit übereinstimmt. Wenn die Wiederherstellungsdauer inakzeptabel ist, führen Sie eine Onlinemigration durch.
 
-|`Source`  |Ziel  |Tool  |Migrationstyp  |Anleitungen  |
-|---------|---------|---------|---------|---------|
-|SQL Server|Azure SQL-Datenbank|Database Migration Service|Offline|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)|
-|SQL Server|Azure SQL-Datenbank|Database Migration Service|Online|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)|
-|SQL Server|Azure SQL-Datenbank – Verwaltete Instanz|Database Migration Service|Offline|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance)|
-|SQL Server|Azure SQL-Datenbank – Verwaltete Instanz|Database Migration Service|Online|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online)|
-|RDS SQL Server|Azure SQL-Datenbank oder verwaltete Azure SQL-Datenbank-Instanz|Database Migration Service|Online|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online)|
-|MySQL|Azure Database for MySQL|Database Migration Service|Online|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online)|
-|PostgreSQL|Azure Database for PostgreSQL|Database Migration Service|Online|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online)|
-|MongoDB|Mongo-API von Azure Cosmos DB|Database Migration Service|Offline|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db)|
-|MongoDB|Mongo-API von Azure Cosmos DB|Database Migration Service|Online|[Tutorial](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online)|
+| `Source`  | Ziel  | Tool  | Migrationstyp | Anleitungen |
+|---|---|---|---|---|
+| SQL Server | Azure SQL-Datenbank | Database Migration Service | Offline | [Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql) |
+| SQL Server | Azure SQL-Datenbank | Database Migration Service | Online | [Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online) |
+| SQL Server | Azure SQL-Datenbank – Verwaltete Instanz | Database Migration Service | Offline | [Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance) |
+| SQL Server | Azure SQL-Datenbank – Verwaltete Instanz | Database Migration Service | Online | [Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online) |
+| RDS SQL Server | Azure SQL-Datenbank oder verwaltete Azure SQL-Datenbank-Instanz | Database Migration Service | Online | [Tutorial](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online) |
+| MySQL | Azure Database for MySQL | Database Migration Service | Online | [Tutorial](https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online) |
+| PostgreSQL | Azure Database for PostgreSQL | Database Migration Service | Online | [Tutorial](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online) |
+| MongoDB | Mongo-API von Azure Cosmos DB | Database Migration Service | Offline | [Tutorial](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db) |
+| MongoDB | Mongo-API von Azure Cosmos DB | Database Migration Service | Online | [Tutorial](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online) |
