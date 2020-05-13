@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: fb9793f34815aca5b714a2862b733287e233d88f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8dd96aaba22713a0dce733d379b44eeaae386e81
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81479351"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222690"
 ---
 # <a name="align-cost-models-with-the-digital-estate-to-forecast-cloud-costs"></a>Abstimmen von Kostenmodellen mit digitalen Ressourcen zur Prognose von Cloudkosten
 
@@ -21,7 +21,7 @@ Nachdem Sie eine digitale Ressource rationalisiert haben, können Sie sie mit de
 
 Azure-Preistools ermöglichen Ihnen eine transparente und exakte Verwaltung von Cloudausgaben, um von Azure und anderen Clouds bestmöglich profitieren zu können. Mithilfe der bereitgestellten Tools zur Überwachung, Zuteilung und Optimierung von Cloudausgaben können Kunden zukünftige Investitionen beschleunigen.
 
-- [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview): Azure Migrate ist wahrscheinlich der kostengünstigste Ansatz für die Kostenmodellabstimmung. Dieses Tool bietet eine [Bestandserfassung](./inventory.md), [begrenzte Rationalisierung](./rationalize.md) und Kostenkalkulationen für digitale Ressourcen in einem einzigen Tool.
+- [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview): Azure Migrate ist wahrscheinlich der kostengünstigste Ansatz für die Kostenmodellabstimmung. Dieses Tool bietet eine [Bestandserfassung](./inventory.md), [begrenzte Rationalisierung](./rationalize.md) und Kostenkalkulationen für digitale Ressourcen in einem einzigen Tool.
 
 - [Gesamtkostenrechner:](https://azure.microsoft.com/pricing/tco/calculator) Senken Sie mithilfe der Azure-Cloudplattform die Gesamtkosten Ihrer lokalen Infrastruktur. Verwenden Sie den Azure-Gesamtkostenrechner, um die voraussichtlichen Kosteneinsparungen zu berechnen, die durch eine Migration Ihrer Anwendungsworkloads zu Azure möglich sind. Beschreiben Sie kurz Ihre lokale Umgebung, und Sie erhalten sofort ein Ergebnis.
 

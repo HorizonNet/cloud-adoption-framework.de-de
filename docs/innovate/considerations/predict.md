@@ -7,16 +7,16 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: bbbed6fd267a6cac7b052c28a0b902c233d74374
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 5f9217e64919198feb2b55cf068ca3dc5133309e
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427369"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222435"
 ---
 # <a name="predict-and-influence"></a>Vorhersagen und Beeinflussen
 
-Es gibt in der digitalen Wirtschaft zwei Klassen von Anwendungen: *historisch* und *prädiktiv*. Viele Kundenbedürfnisse können nur mithilfe historischer Daten erfüllt werden, einschließlich Daten in nahezu Echtzeit. Die meisten Lösungen konzentrieren sich derzeit in erster Linie auf die Aggregation von Daten. Diese Daten werden verarbeitet und an den Kunden in Form einer digitalen oder Umgebungserfahrung zurückgegeben.
+Es gibt in der digitalen Wirtschaft zwei Klassen von Anwendungen: _historisch_ und _prädiktiv_. Viele Kundenbedürfnisse können nur mithilfe historischer Daten erfüllt werden, einschließlich Daten in nahezu Echtzeit. Die meisten Lösungen konzentrieren sich derzeit in erster Linie auf die Aggregation von Daten. Diese Daten werden verarbeitet und an den Kunden in Form einer digitalen oder Umgebungserfahrung zurückgegeben.
 
 Da die prädiktive Modellierung immer wirtschaftlicher und leichter verfügbar wird, verlangen Kunden nach zukunftsweisenden Erfahrungen, die zu besseren Entscheidungen und Maßnahmen führen. Diese Nachfrage muss jedoch nicht zwangsläufig eine prädiktive Lösung vorschlagen. In den meisten Fällen kann eine historische Sicht genügend Daten liefern, um den Kunden in die Lage zu versetzen, selbst eine Entscheidung zu treffen.
 
@@ -32,7 +32,7 @@ Eine Vielzahl von Anwendungen und Umgebungserfahrungen nutzen Daten, um Vorhersa
 
 ## <a name="develop-predictive-capabilities"></a>Entwickeln prädiktiver Fähigkeiten
 
-Lösungen, die durchgängig genaue prädiktive Fähigkeiten bieten, weisen in der Regel fünf Kernmerkmale auf: *Daten*, *Erkenntnisse*, *Muster*, *Vorhersagen* und *Interaktionen*. Alle Aspekte sind erforderlich, um prädiktive Fähigkeiten zu entwickeln. Wie alle großen Innovationen erfordert die Entwicklung prädiktiver Fähigkeiten eine [Verpflichtung zur Iteration](./index.md#commitment-to-iteration). Bei jeder Iteration reifen ein oder mehrere der folgenden Merkmale, um immer komplexere Kundenhypothesen für gültig zu erklären.
+Lösungen, die durchgängig genaue prädiktive Fähigkeiten bieten, weisen in der Regel fünf Kernmerkmale auf: _Daten_, _Erkenntnisse_, _Muster_, _Vorhersagen_ und _Interaktionen_. Alle Aspekte sind erforderlich, um prädiktive Fähigkeiten zu entwickeln. Wie alle großen Innovationen erfordert die Entwicklung prädiktiver Fähigkeiten eine [Verpflichtung zur Iteration](./index.md#commitment-to-iteration). Bei jeder Iteration reifen ein oder mehrere der folgenden Merkmale, um immer komplexere Kundenhypothesen für gültig zu erklären.
 
 ![Schritte beim Entwickeln prädiktiver Fähigkeiten](../../_images/innovate/predict-and-influence.png)
 

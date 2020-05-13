@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8afb39bdad3b521d3470e2e5eaca3f64a81061c0
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 3dc7eeb2a8727fd1787265b408d1f930f3d76c11
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433413"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222484"
 ---
 # <a name="create-customer-partnerships-through-the-build-measure-learn-feedback-loop"></a>Aufbauen von Kundenpartnerschaften über die Feedbackschleife „Erstellen-Messen-Lernen“
 
@@ -24,7 +24,7 @@ Unabhängig von der Größe sind es solche Unternehmen, die ihren Kunden wirklic
 
 ## <a name="the-build-measure-learn-feedback-loop"></a>Die Erstellen-Messen-Lernen-Feedbackschleife
 
-Wie unter [Innovation in der digitalen Wirtschaft](./index.md) beschrieben, erfordert Innovation ein Gleichgewicht zwischen *Erfindung* neuer und *Einführung* vorhandener Technologien. Kundenfeedback und Partnerschaft fördern die Einführung. Indem Sie Ihre Kunden während der Innovationszyklen zu starken, loyalen Partnern machen, können Sie bessere Produkte umsetzen und schneller auf dem Markt Fuß fassen.
+Wie unter [Innovation in der digitalen Wirtschaft](./index.md) beschrieben, erfordert Innovation ein Gleichgewicht zwischen _Erfindung_ neuer und _Einführung_ vorhandener Technologien. Kundenfeedback und Partnerschaft fördern die Einführung. Indem Sie Ihre Kunden während der Innovationszyklen zu starken, loyalen Partnern machen, können Sie bessere Produkte umsetzen und schneller auf dem Markt Fuß fassen.
 
 ![Diagramm: Erstellen-Messen-Lernen-Feedbackschleife](../../_images/innovate/bml-feedback-loop.png)
 
