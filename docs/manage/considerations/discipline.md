@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 6033f12b1604818fef4c70f1863b7a99fb4c51e6
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9571de511bbe037a35703f4ee64ef00edbe1745f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80809069"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223999"
 ---
 # <a name="management-leveling-across-cloud-management-disciplines"></a>Verwaltungsebenen in den verschiedenen Cloudverwaltungsdisziplinen
 
@@ -32,7 +32,7 @@ Erwägen Sie als Ausgangspunkt die Festlegung der Verwaltungsebenen, die im vorh
 - **Workloadspezialisierung:** Für wirklich unternehmenskritischen Workloads kann es aus Kostengründen sinnvoll sein, viel tiefer in die Verwaltung dieser Workloads einzusteigen. Die Workloadspezialisierung wendet Workloadtelemetriedaten an, um weiterführende Ansätze für die tägliche Verwaltung zu bestimmen. Aus diesen Daten lassen sich oft Automatisierungs-, Bereitstellungs- und Entwurfsverbesserungen ableiten, die zu mehr Stabilität, Zuverlässigkeit und Ausfallsicherheit führen, als dies mit einer reinen Betriebsverwaltung möglich ist.
 - **Nicht unterstützt**: Ebenso wichtig ist es, gemeinsame Verwaltungsprozesse zu kommunizieren, bei denen Workloads, die als nicht unterstützt oder nicht unternehmenskritisch eingestuft werden, nicht über Cloudverwaltungsdisziplinen bereitgestellt werden.
 
-Unternehmen können auch [Funktionen, die mit einer oder mehreren dieser Verwaltungsebenen in Zusammenhang stehen, an einen Dienstanbieter auslagern](https://aka.ms/adopt/partneroffers). Diese Dienstanbieter können mit [Azure Lighthouse](https://azure.com/lighthouse) mehr Genauigkeit und Transparenz bieten.
+Unternehmen können auch [Funktionen, die mit einer oder mehreren dieser Verwaltungsebenen in Zusammenhang stehen, an einen Dienstanbieter auslagern](https://aka.ms/adopt/partneroffers). Diese Dienstanbieter können mit [Azure Lighthouse](https://docs.microsoft.com/azure/lighthouse/overview) mehr Genauigkeit und Transparenz bieten.
 
 In den verbleibenden Artikeln dieser Reihe werden Prozesse beschrieben, die in jeder dieser Disziplinen gebräuchlich sind.
 Gleichzeitig finden Sie im [Azure-Verwaltungsleitfaden](../azure-management-guide/index.md) eine Beschreibung der Tools, die diese Prozesse unterstützen können. Wenn Sie Unterstützung beim Aufbau Ihrer Verwaltungsbaseline benötigen, lesen Sie zunächst den Azure-Verwaltungsleitfaden. Nachdem Sie die Baseline festgelegt haben, können Sie sie mit den Informationen in dieser Artikelreihe und den dazugehörigen bewährten Methoden erweitern und weitere Ebenen der Verwaltungsunterstützung definieren.
@@ -41,7 +41,7 @@ Gleichzeitig finden Sie im [Azure-Verwaltungsleitfaden](../azure-management-guid
 
 Jede empfohlene Verwaltungsebene kann auf eine Vielzahl von Cloudverwaltungsdisziplinen zurückgreifen. Durch die Zuordnung ist es jedoch einfacher, die empfohlenen Prozesse und Tools für die jeweilige Cloudverwaltungsebene zu finden.
 
-In den meisten Fällen besteht die zuvor erläuterte *Ebene der Verwaltungsbaseline* aus Prozessen und Tools aus den folgenden Disziplinen. Es werden jeweils einige Prozesse und Tools hervorgehoben, um die *erweiterten Baselinefunktionen* zu demonstrieren.
+In den meisten Fällen besteht die zuvor erläuterte _Ebene der Verwaltungsbaseline_ aus Prozessen und Tools aus den folgenden Disziplinen. Es werden jeweils einige Prozesse und Tools hervorgehoben, um die _erweiterten Baselinefunktionen_ zu demonstrieren.
 
 - **Bestand und Transparenz:** Die Verwaltungsbaseline erfordert mindestens eine Möglichkeit zur Bestandsaufnahme von Ressourcen und zur Schaffung von Transparenz über den Ausführungszustand jeder Ressource.
 - **Betriebsbezogene Compliance:** Eine regelmäßige Verwaltung von Konfiguration, Größe, Kosten und Leistung von Ressourcen ist für die Erfüllung der Leistungserwartungen und für eine Verwaltungsbaseline unverzichtbar.

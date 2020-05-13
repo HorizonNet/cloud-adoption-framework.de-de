@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 80eba5ddb0d92bef638cb2925515268818c50735
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: bdc4f36460acdb86e1bee55969044ad03b198285
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427406"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224118"
 ---
 <!-- cSpell:ignore Satya Nadella Ries -->
 
@@ -45,7 +45,7 @@ Dass die Microsoft-Kultur in den letzten Jahren intern einem radikalen Wandel un
 - **Kontinuierliches Lernen:** Kundenorientierung und Blick auf die Kundenanforderungen basieren auf einer Alles-lernen-Mentalität. Die Methode der Innovation strebt danach, alles zu lernen, nicht alles zu wissen.
 - **Einsteigermentalität:** Zeigen Sie Empathie, indem Sie in jede Konversation mit der Einsteigermentalität gehen. Ob Sie ein Neuling auf Ihrem Gebiet sind oder auf 30 Jahre Erfahrung zurückblicken, gehen Sie davon aus, dass Sie wenig wissen und viel lernen werden.
 - **Mehr zuhören:** Kunden möchten als Partner mit Ihnen zusammenarbeiten. Leider blockiert ein egogesteuerter Anspruch, recht zu haben, diese Partnerschaft. Um über die Metriken hinaus zu lernen, sollten Sie weniger sprechen und mehr zuhören.
-- **Andere ermutigen:** Hören Sie nicht nur zu, sondern *machen* Sie anderen Mut. Nutzen Sie in jeder Besprechung Möglichkeiten, unterschiedliche Sichtweisen von denjenigen zu erfahren, die sich vielleicht nicht gleich aus eigenem Antrieb heraus äußern.
+- **Andere ermutigen:** Hören Sie nicht nur zu, sondern **machen** Sie anderen Mut. Nutzen Sie in jeder Besprechung Möglichkeiten, unterschiedliche Sichtweisen von denjenigen zu erfahren, die sich vielleicht nicht gleich aus eigenem Antrieb heraus äußern.
 - **Freigeben des Codes:** Wenn wir uns dem Besitz einer Codebasis gegenüber verpflichtet fühlen, verlieren wir die wahre Kraft der Innovation aus dem Auge. Konzentrieren Sie sich darauf, Ergebnisse für Ihre Kunden zu besitzen und einzusetzen. Teilen Sie Ihren Code (öffentlich mit der Welt oder privat mit Ihrem Unternehmen), um Lösung und Codebasis aus unterschiedlichen Sichtweisen beurteilen zu lassen.
 - **Herausfordern, was funktioniert:** Erfolg bedeutet nicht unbedingt, dass Sie sich auf die Kundenanforderungen konzentrieren. Vermeiden Sie es, eine feste Denkweise und eine Vorliebe für Lösungen zu haben, die bisher funktioniert haben. Achten Sie darauf, aus positiven und negativen Metriken zu lernen, indem Sie Ihre Kunden einbinden.
 - **Beziehen Sie andere Personen ein:** Arbeiten Sie konsequent darauf hin, verschiedene Perspektiven in das Gesamtkonzept einzubinden. Es gibt viele Variablen, nach denen Menschen in getrennte Gruppen unterteilt werden können. Kulturelle Standards, Verhaltensweisen in der Vergangenheit, Geschlecht, Religion, sexuelle Vorlieben und sogar physische Fähigkeiten. Echte Innovation entsteht, wenn wir uns dazu aufraffen, von unseren Unterschieden abzusehen und bewusst danach streben, alle Kunden, Partner und Mitarbeiter einzubeziehen.

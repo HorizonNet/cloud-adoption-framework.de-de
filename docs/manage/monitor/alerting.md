@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 5a3879e4b1d5a076e1869100471afbf4f7cd046e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 33aaab94c1f6758f6b77be62ab7a70ed2f6bc1ee
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997668"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223829"
 ---
 <!-- cSpell:ignore kusto multiresource multisignal -->
 
@@ -80,12 +80,14 @@ Azure Monitor bietet Unterstützung für die Integration mit anderen Überwachun
 
 [Verwaltungslösungen](https://docs.microsoft.com/azure/azure-monitor/insights/solutions-inventory) speichern zugehörige Daten in der Regel im Azure-Protokollspeicher. Die beiden Ausnahmen sind Azure Monitor für VMs und Azure Monitor für Container. In der folgenden Tabelle wird das Warnungserlebnis basierend auf dem jeweiligen Datentyp und dem Speicherort beschrieben.
 
-Lösung| Datentyp | Warnungsverhalten
-:---|:---|:---
-Azure Monitor für Container | Berechnete durchschnittliche Leistungsdaten von Knoten und Pods werden in den Metrikspeicher geschrieben. | Erstellen Sie Metrikwarnungen, wenn Sie basierend auf Abweichungen der im Zeitverlauf gemessenen aggregierten Nutzungsleistung benachrichtigt werden möchten.
-|| Anhand von Perzentilen aus Knoten, Controllern, Containern und Pods berechnete Leistungsdaten werden in den Protokollspeicher geschrieben. Containerprotokolle und Bestandsinformationen werden ebenfalls in den Protokollspeicher geschrieben. | Erstellen Sie Protokollabfragewarnungen, wenn Sie basierend auf Abweichungen der gemessenen Auslastung von Clustern und Containern benachrichtigt werden möchten. Protokollabfragewarnungen können auch basierend auf Podphasen- und Statusknotenzählungen konfiguriert werden.
-Azure Monitor für VMs | Metriken zu Integritätskriterien werden in den Metrikspeicher geschrieben. | Warnungen werden generiert, wenn sich der Integritätsstatus von „Fehlerfrei“ in „Fehlerhaft“ ändert. Diese Warnung unterstützt nur Aktionsgruppen, die zum Senden von SMS- oder E-Mail-Benachrichtigungen konfiguriert sind.
-|| Zuordnungsdaten und Leistungsprotokolldaten zum Gastbetriebssystem werden in den Protokollspeicher geschrieben. | Es werden Protokollabfragewarnungen erstellt.
+| Lösung | Datentyp | Warnungsverhalten |
+|---| ---| --- |
+| Azure Monitor für Container | Berechnete durchschnittliche Leistungsdaten von Knoten und Pods werden in den Metrikspeicher geschrieben. | Erstellen Sie Metrikwarnungen, wenn Sie basierend auf Abweichungen der im Zeitverlauf gemessenen aggregierten Nutzungsleistung benachrichtigt werden möchten. |
+| | Anhand von Perzentilen aus Knoten, Controllern, Containern und Pods berechnete Leistungsdaten werden in den Protokollspeicher geschrieben. Containerprotokolle und Bestandsinformationen werden ebenfalls in den Protokollspeicher geschrieben. | Erstellen Sie Protokollabfragewarnungen, wenn Sie basierend auf Abweichungen der gemessenen Auslastung von Clustern und Containern benachrichtigt werden möchten. Protokollabfragewarnungen können auch basierend auf Podphasen- und Statusknotenzählungen konfiguriert werden. |
+Azure Monitor für VMs | Metriken zu Integritätskriterien werden in den Metrikspeicher geschrieben. | Warnungen werden generiert, wenn sich der Integritätsstatus von „Fehlerfrei“ in „Fehlerhaft“ ändert. Diese Warnung unterstützt nur Aktionsgruppen, die zum Senden von SMS- oder E-Mail-Benachrichtigungen konfiguriert sind. |
+| | Zuordnungsdaten und Leistungsprotokolldaten zum Gastbetriebssystem werden in den Protokollspeicher geschrieben. | Es werden Protokollabfragewarnungen erstellt. |
+
+<!-- docsTest:ignore "speed driven" -->
 
 ### <a name="fastest-speed-driven-by-cost"></a>Höchste Geschwindigkeit bei gleichzeitiger Kosteneffizienz
 

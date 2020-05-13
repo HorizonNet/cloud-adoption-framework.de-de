@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 166c938b510959427a30cecea1c97de35032d20e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 97008960de4eecb7ff0dc4f756ad4ca11865c634
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427000"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224050"
 ---
 ::: zone target="docs"
 
@@ -32,11 +32,11 @@ Als Innovator hat Ihr Unternehmen Einblicke in die Daten, das Verhalten und die 
 
 Die folgende Tabelle kann Sie dabei unterstützen, die beste Lösung für Ihre Implementierungsanforderungen zu finden.
 
-|Dienst  |Vordefinierte Modelle  |Erstellen und Experimentieren  |Trainieren und Erstellen von Lösungen mit Python|Erforderliche Kenntnisse|
-|---------|---------|---------|---------|---------|
-|Azure Cognitive Services|Ja|Nein|Nein|API- und Entwicklerkenntnisse|
-|Azure Machine Learning Studio|Ja|Ja|Nein|Allgemeine Kenntnisse der Vorhersagealgorithmen|
-|Azure Machine Learning-Dienst|Ja|Ja|Ja|Data Scientist|
+| Dienst | Vordefinierte Modelle | Erstellen und Experimentieren | Trainieren und Erstellen von Lösungen mit Python | Erforderliche Kenntnisse |
+|---|---|---|---|---|
+| Azure Cognitive Services | Ja | Nein | Nein | API- und Entwicklerkenntnisse |
+| Azure Machine Learning Studio | Ja | Ja | Nein | Allgemeine Kenntnisse der Vorhersagealgorithmen |
+| Azure Machine Learning-Dienst | Ja | Ja | Ja | Data Scientist |
 
 ## <a name="azure-cognitive-services"></a>[Azure Cognitive Services](#tab/CognitiveServices)
 
@@ -48,7 +48,7 @@ Eine Liste der verfügbaren Dienste und des ggf. erforderlichen Trainingsaufwand
 
 Zum Verwenden einer Cognitive Service-API gehen Sie folgendermaßen vor:
 
-1. Navigieren Sie im [Azure-Portal](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.CognitiveServices%2FAccounts) zu **Cognitive Services**.
+1. Navigieren Sie im [Azure-Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.CognitiveServices%2FAccounts) zu **Cognitive Services**.
 2. Wählen Sie **Hinzufügen** aus, um eine Cognitive Services-API in Azure Marketplace zu finden.
 3. Führen Sie einen der folgenden Schritte aus:
    - Wenn Sie den Namen des Diensts kennen, den Sie verwenden möchten, geben Sie den Namen im Feld **Marketplace durchsuchen** ein.
@@ -56,11 +56,7 @@ Zum Verwenden einer Cognitive Service-API gehen Sie folgendermaßen vor:
 
 ::: zone target="chromeless"
 
-<!-- markdownlint-disable DOCSMD001 -->
-
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.CognitiveServices%2FAccounts]" submitText="Go to Cognitive Services" :::
-
-<!-- markdownlint-enable DOCSMD001 -->
 
 ::: zone-end
 
