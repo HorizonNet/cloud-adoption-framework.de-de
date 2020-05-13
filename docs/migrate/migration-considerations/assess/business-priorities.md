@@ -7,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a597a76e1d42d08c3800fd2f3831729bf53f10f1
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8dea3f98b73c6df7c6b667da56411c78cb02d581
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80432881"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215482"
 ---
 # <a name="business-priorities-maintaining-alignment"></a>Geschäftliche Prioritäten: Ausrichten auf die Beibehaltung
 
-*Transformation* wird häufig als eine drastische oder spontane Änderung definiert. Auf Boardebene kann die Änderung wie eine erhebliche Transformation erscheinen. Für diejenigen aber, die den Änderungsprozess in einer Organisation schrittweise durchlaufen, ist der Begriff Transformation etwas irreführend. Im Kern wird Transformation besser als eine Reihe sorgfältig ausgeführter Übergänge von einem Zustand in einen anderen beschrieben.
+_Transformation_ wird häufig als eine drastische oder spontane Änderung definiert. Auf Boardebene kann die Änderung wie eine erhebliche Transformation erscheinen. Für diejenigen aber, die den Änderungsprozess in einer Organisation schrittweise durchlaufen, ist der Begriff Transformation etwas irreführend. Im Kern wird Transformation besser als eine Reihe sorgfältig ausgeführter Übergänge von einem Zustand in einen anderen beschrieben.
 
 Die Zeitspanne, die für die Rationalisierung oder den Übergang einer Workload benötigt wird, variiert je nach technischer Komplexität. Selbst wenn dieser Prozess schnell auf eine einzelne Workload oder eine Gruppe von Anwendungen angewendet werden kann, dauert es einige Zeit, bis wesentliche Änderungen innerhalb einer Benutzerbasis umgesetzt sind. Es braucht länger, bis sich Änderungen über verschiedene Ebenen bestehender Geschäftsprozesse fortsetzen. Wenn erwartet wird, dass die Transformation Verhaltensmuster von Kunden prägt, kann es länger dauern, bis signifikante Ergebnisse erzielt werden.
 

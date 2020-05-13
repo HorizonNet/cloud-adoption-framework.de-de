@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2ad912c7bc2e61465a81e278714f5018c2373f7f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8c31b25b7c5ce75ab1b4c1ed3b76e9a1dfcb7422
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429233"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215907"
 ---
 # <a name="prepare-a-migrated-application-for-production-promotion"></a>Vorbereiten einer migrierten Anwendung für das Höherstufen zur Produktion
 
@@ -29,7 +29,7 @@ Transformation geschieht, wenn geschäftliche Benutzer und Kunden von einer tech
 
 ## <a name="final-technical-readiness-tests"></a>Letzte Tests der technischen Bereitschaft
 
-*Bereit* ist der letzte Schritt vor der Freigabe für die Produktionsumgebung. Das bedeutet, dass dies auch die letzte Chance ist, die Workload zu testen. Im Folgenden finden Sie einige Tests, die für diese Phase vorgeschlagen werden:
+_Bereit_ ist der letzte Schritt vor der Freigabe für die Produktionsumgebung. Das bedeutet, dass dies auch die letzte Chance ist, die Workload zu testen. Im Folgenden finden Sie einige Tests, die für diese Phase vorgeschlagen werden:
 
 - **Netzwerkisolationstest.** Testen und überwachen Sie den Netzwerkdatenverkehr, um zu gewährleisten, dass die Isolation fehlerfrei ist und keine unerwarteten Netzwerksicherheitsrisiken auftreten. Stellen Sie auch sicher, dass bei einem während der Umstellung unterbrochenen Netzwerkrouting kein unvorhergesehener Datenverkehr auftritt.
 - **Abhängigkeitstest.** Stellen Sie sicher, dass alle Workloadanwendungsabhängigkeiten migriert wurden und von den migrierten Ressourcen darauf zugegriffen werden kann.
