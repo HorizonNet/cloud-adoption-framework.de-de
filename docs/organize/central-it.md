@@ -1,21 +1,21 @@
 ---
-title: Funktionen der zentralen IT
-description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie Sie ein zentrales IT-Team für Ihre Aktivitäten bei der Cloudeinführung einrichten.
+title: Grundlegendes zu den zentralen IT-Funktionen
+description: Grundlegendes zu den Funktionen dees zentralen IT-Teams, einschließlich der Quelle, des Umfangs, der Ergebnisse und der Risiken.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/10/2019
+ms.date: 04/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: d24c5076bd7843f6f4559e901144be6ba3a33ca4
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4f12b19227559b299b71ab64a95ef75396951183
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120294"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216553"
 ---
-# <a name="central-it-capabilities"></a>Funktionen der zentralen IT
+# <a name="central-it-functions"></a>Zentrale IT-Funktionen
 
 Wenn die Cloudeinführung hochskaliert wird, reichen Cloudgovernancefunktionen allein möglicherweise nicht mehr aus, um das gesamte Einführungsprojekt zu regulieren. Wenn diese Einführung schrittweise erfolgt, entwickeln Teams meist nach und nach die Fähigkeiten und Prozesse, die sie für die Arbeit in der Cloud benötigen.
 
@@ -23,8 +23,6 @@ Wenn jedoch ein Cloudeinführungsteam die Cloud nutzt, um ein wichtiges und pres
 
 > [!CAUTION]
 > Dies ist zwar ein gängiger Schritt im Reifeprozess, kann jedoch ein hohes Risiko für die Einführung bergen und Innovationen und Migrationsaufgaben blockieren, wenn er nicht effektiv ausgeführt wird. Im Abschnitt zu Risiken weiter unten in diesem Artikel erfahren Sie, wie Sie das Risiko minimieren, dass die Zentralisierung ein kulturelles Antimuster wird.
-
-## <a name="possible-sources-for-central-it-expertise"></a>Mögliche Quellen für das Know-how der zentralen IT-Abteilung
 
 Die für die Bereitstellung zentralisierter IT-Funktionen erforderlichen Qualifikationen können bereitgestellt werden durch:
 
@@ -51,11 +49,11 @@ Die folgenden Aufgaben werden normalerweise regelmäßig ausgeführt:
 ### <a name="strategic-tasks"></a>Strategische Aufgaben
 
 - Überprüfung:
-  - [Geschäftsergebnisse](../strategy/business-outcomes/index.md)
-  - [Finanzmodelle](../strategy/financial-models.md)
-  - [Gründe für die Cloudeinführung](../strategy/motivations.md)
-  - [Geschäftsrisiken](../govern/policy-compliance/risk-tolerance.md)
-  - [Rationalisierung der digitalen Ressourcen](../digital-estate/index.md)
+  - [Geschäftsergebnisse](../strategy/business-outcomes/index.md).
+  - [Finanzmodelle](../strategy/financial-models.md).
+  - [Gründe für die Cloudeinführung](../strategy/motivations.md).
+  - [Geschäftsrisiken](../govern/policy-compliance/risk-tolerance.md).
+  - [Rationalisierung der digitalen Ressourcen](../digital-estate/index.md).
 - Überwachung von Einführungplänen und Fortschritten anhand des [priorisierten Migrationsbacklogs](../migrate/migration-considerations/assess/release-iteration-backlog.md).
 - Identifizieren und priorisieren Sie Plattformänderungen, die zur Unterstützung des Migrationsbacklogs erforderlich sind.
 - Agieren Sie als Vermittler zwischen den Anforderungen einer Cloudeinführung und den vorhandenen IT-Teams.
@@ -104,21 +102,20 @@ Diese Beispielgeschichte veranschaulicht den Ansatz, den ein ausgereiftes zentra
 
 Contoso, LLC hat ein zentrales IT-Modell für die Unterstützung der Cloudressourcen des Unternehmens eingeführt. Um dieses Modell bereitzustellen, hat das Unternehmen strikte Kontrollen für verschiedene gemeinsam genutzte Dienste wie eingehende Netzwerkverbindungen implementiert. Dank dieses klugen Schachzugs konnte Contoso, LLC die Risiken für die Cloudumgebung senken und ein einzelnes Gerät bereitstellen, das beim Auftreten einer Sicherheitsverletzung sämtlichen Datenverkehr blockiert. Die Sicherheitsbaseline des Unternehmens gibt vor, dass sämtlicher eingehender Datenverkehr durch ein freigegebenes Gerät fließen muss, das vom zentralen IT-Team verwaltet wird.
 
-Nun benötigt eins der Cloudeinführungsteams eine Umgebung mit einer dedizierten und speziell konfigurierten eingehenden Netzwerkverbindung, um eine bestimmte Cloudtechnologie zu nutzen. Ein zentrales IT-Team, das noch nicht den entsprechenden Reifegrad aufweist, würde diese Anforderung einfach ablehnen und die vorhandenen Prozesse über die Einführungsanforderungen stellen. Das zentrale IT-Team von Contoso reagierte anders. Das Team hat schnell eine einfache, vierteilige Lösung für dieses Dilemma gefunden: Klassifizierung, Verhandlung, Isolierung und Automatisierung.
+Nun benötigt eins der Cloudeinführungsteams eine Umgebung mit einer dedizierten und speziell konfigurierten eingehenden Netzwerkverbindung, um eine bestimmte Cloudtechnologie zu nutzen. Ein zentrales IT-Team, das noch nicht den entsprechenden Reifegrad aufweist, würde diese Anforderung einfach ablehnen und die vorhandenen Prozesse über die Einführungsanforderungen stellen. Das zentrale IT-Team von Contoso reagierte anders. Das Team hat schnell eine einfache, vierteilige Lösung für dieses Dilemma gefunden:
 
-**Klassifizierung**: Da das Cloudeinführungsteam sich in der Frühphase der neuen Lösung befand und keine vertraulichen Daten oder unternehmenskritischen Anforderungen vorhanden waren, wurden die Ressourcen in der Umgebung als risikoarm und nicht kritisch eingestuft. Eine effektive Klassifizierung ist ein Zeichen für den Reifegrad in der zentralen IT. Wenn alle Ressourcen und Umgebungen klassifiziert werden, können klarere Richtlinien eingerichtet werden.
+  1. **Klassifizierung**: Da das Cloudeinführungsteam sich in der Frühphase der neuen Lösung befand und keine vertraulichen Daten oder unternehmenskritischen Anforderungen vorhanden waren, wurden die Ressourcen in der Umgebung als risikoarm und nicht kritisch eingestuft. Eine effektive Klassifizierung ist ein Zeichen für den Reifegrad in der zentralen IT. Wenn alle Ressourcen und Umgebungen klassifiziert werden, können klarere Richtlinien eingerichtet werden.
+  1. **Verhandlung**: Eine Klassifizierung allein ist nicht ausreichend. Gemeinsam genutzte Dienste wurden implementiert, um vertrauliche und unternehmenskritische Ressourcen konsistent betreiben zu können. Eine Änderung der Regeln würde die Governance- und Compliancerichtlinien gefährden, die für diejenigen Ressourcen eingerichtet wurde, die einen höheren Schutz benötigen. Die Unterstützung einer Cloudeinführung darf nicht auf Kosten der Stabilität, Sicherheit oder Governance erfolgen. Dies führte zu Verhandlungen mit dem Einführungsteam, um bestimmte Fragen zu beantworten. Kann ein unternehmensgeführtes DevOps-Team die betriebliche Verwaltung für diese Umgebung übernehmen? Würde diese Lösung direkten Zugriff auf andere interne Ressourcen erfordern? Wenn das Cloudeinführungsteam mit diesen Kompromissen einverstanden ist, kann eingehender Datenverkehr möglich sein.
+  1. **Isolierung**: Da die geschäftliche Seite selbst eine fortlaufende Betriebsverwaltung bereitstellen kann und die Lösung nicht von direktem Datenverkehr zu anderen internen Ressourcen abhängig ist, kann die Lösung in einem neuen, getrennten Abonnement eingerichtet werden. Dieses Abonnement wird auch einem separaten Knoten der neuen Verwaltungsgruppenhierarchie hinzugefügt.
+  1. **Automatisierung:** Ein weiteres Zeichen für den Grad der Ausgereiftheit in diesem Team sind die Automatisierungsprinzipien. Das Team nutzt Azure Policy, um die Richtliniendurchsetzung zu automatisieren. Es verwendet auch Azure Blueprints, um die Bereitstellung allgemeiner Plattformkomponenten zu automatisieren und die Einhaltung der definierten Identitätsbaseline zu erzwingen. Für dieses und weitere Abonnements in der neuen Verwaltungsgruppe gelten geringfügig andere Richtlinien und Vorlagen. Richtlinien, die die eingehende Datenverkehrsbandbreite blockieren würden, wurden aufgehoben. Sie wurden durch Anforderungen ersetzt, den Datenverkehr – wie jeden eingehenden Datenverkehr – durch ein Abonnement mit gemeinsam genutzten Diensten zu leiten, um eine Datenverkehrsisolierung zu erzwingen. Da die lokalen Tools für die Betriebsverwaltung nicht auf dieses Abonnement zugreifen können, werden auch keine Agents für diese Tools mehr benötigt. Alle weiteren Governanceleitlinien, die von anderen Abonnements in der Verwaltungsgruppenhierarchie benötigt werden, gelten weiterhin und bieten ausreichenden Schutz.
 
-**Verhandlung**: Eine Klassifizierung allein ist nicht ausreichend. Gemeinsam genutzte Dienste wurden implementiert, um vertrauliche und unternehmenskritische Ressourcen konsistent betreiben zu können. Eine Änderung der Regeln würde die Governance- und Compliancerichtlinien gefährden, die für diejenigen Ressourcen eingerichtet wurde, die einen höheren Schutz benötigen. Die Unterstützung einer Cloudeinführung darf nicht auf Kosten der Stabilität, Sicherheit oder Governance erfolgen. Dies führte zu Verhandlungen mit dem Einführungsteam, um bestimmte Fragen zu beantworten. Kann ein unternehmensgeführtes DevOps-Team die betriebliche Verwaltung für diese Umgebung übernehmen? Würde diese Lösung direkten Zugriff auf andere interne Ressourcen erfordern? Wenn das Cloudeinführungsteam mit diesen Kompromissen einverstanden ist, kann eingehender Datenverkehr möglich sein.
-
-**Isolierung**: Da die geschäftliche Seite selbst eine fortlaufende Betriebsverwaltung bereitstellen kann und die Lösung nicht von direktem Datenverkehr zu anderen internen Ressourcen abhängig ist, kann die Lösung in einem neuen, getrennten Abonnement eingerichtet werden. Dieses Abonnement wird auch einem separaten Knoten der neuen Verwaltungsgruppenhierarchie hinzugefügt.
-
-**Automatisierung:** Ein weiteres Zeichen für den Grad der Ausgereiftheit in diesem Team sind die Automatisierungsprinzipien. Das Team nutzt Azure Policy, um die Richtliniendurchsetzung zu automatisieren. Es verwendet auch Azure Blueprints, um die Bereitstellung allgemeiner Plattformkomponenten zu automatisieren und die Einhaltung der definierten Identitätsbaseline zu erzwingen. Für dieses und weitere Abonnements in der neuen Verwaltungsgruppe gelten geringfügig andere Richtlinien und Vorlagen. Richtlinien, die die eingehende Datenverkehrsbandbreite blockieren würden, wurden aufgehoben. Sie wurden durch Anforderungen ersetzt, den Datenverkehr – wie jeden eingehenden Datenverkehr – durch ein Abonnement mit gemeinsam genutzten Diensten zu leiten, um eine Datenverkehrsisolierung zu erzwingen. Da die lokalen Tools für die Betriebsverwaltung nicht auf dieses Abonnement zugreifen können, werden auch keine Agents für diese Tools mehr benötigt. Alle weiteren Governanceleitlinien, die von anderen Abonnements in der Verwaltungsgruppenhierarchie benötigt werden, gelten weiterhin und bieten ausreichenden Schutz.
-
-Der ausgereifte, kreative Ansatz des zentralen IT-Teams von Contoso sorgte für eine Lösung, die weder Governance noch Compliance gefährdete und denn die Einführung förderte. Dieser Ansatz, die zentralisierte IT eher in Form von Brokerdiensten als durch Besitz cloudnativer Funktionen zu gestalten, ist der erste Schritt auf dem Weg zu einem wahren Kompetenzzentrum. Auf diese Weise können vorhandene Richtlinien schnell weiterentwickelt werden, sodass je nach Bedarf eine zentralisierte Kontrolle ausgeübt werden kann oder – wenn mehr Flexibilität akzeptabel ist – Governanceleitlinien zur Anwendung kommen. Indem diese beiden Überlegungen sorgfältig gegeneinander abgewogen werden, lassen sich die Risiken minimieren, die mit dem Einsatz zentraler IT-Funktionen in der Cloud einhergehen.
+Der ausgereifte, kreative Ansatz des zentralen IT-Teams von Contoso sorgte für eine Lösung, die weder Governance noch Compliance gefährdete und denn die Einführung förderte. Dieser Ansatz, die zentralisierte IT eher in Form von Brokerdiensten als durch Besitz cloudnativer Funktionen zu gestalten, ist der erste Schritt auf dem Weg zu einem Cloudkompetenzzentrum (CCoE). Auf diese Weise können vorhandene Richtlinien schnell weiterentwickelt werden, sodass je nach Bedarf eine zentralisierte Kontrolle ausgeübt werden kann oder – wenn mehr Flexibilität akzeptabel ist – Governanceleitlinien zur Anwendung kommen. Indem diese beiden Überlegungen sorgfältig gegeneinander abgewogen werden, lassen sich die Risiken minimieren, die mit dem Einsatz zentraler IT-Funktionen in der Cloud einhergehen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Wenn die zentrale IT in der Cloud einen gewissen Reifegrad erreicht hat, besteht der nächste Schritt im Prozess typischerweise in einer lockeren Kopplung von [Cloudvorgängen](./cloud-operations.md). Die Verfügbarkeit von cloudnativen Tools für die Betriebsverwaltung und die geringeren Betriebskosten für PaaS-zentrierte Lösungen führen häufig dazu, dass Geschäftsteams (genauer gesagt DevOps-Teams auf geschäftlicher Seite) die Verantwortung für Cloudvorgänge übernehmen.
+- Wenn die zentrale IT in der Cloud einen gewissen Reifegrad erreicht hat, besteht der nächste Schritt im Prozess typischerweise in einer lockeren Kopplung von Cloudvorgängen. Die Verfügbarkeit von cloudnativen Tools für die Betriebsverwaltung und die geringeren Betriebskosten für PaaS-zentrierte Lösungen führen häufig dazu, dass Geschäftsteams (genauer gesagt DevOps-Teams auf geschäftlicher Seite) die Verantwortung für Cloudvorgänge übernehmen.
 
-> [!div class="nextstepaction"]
-> [Funktionen für den Cloudbetrieb](./cloud-operations.md)
+Weitere Informationen:
+
+- [Aufbauen eines Cloudbetriebsteams](../get-started/team/cloud-operations.md)
+- [Cloudbetriebsfunktionen](./cloud-operations.md)

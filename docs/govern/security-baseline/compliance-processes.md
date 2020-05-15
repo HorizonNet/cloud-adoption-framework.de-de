@@ -1,6 +1,6 @@
 ---
 title: 'Sicherheitsbaseline: Prozesse für Richtlinienkonformität'
-description: Hier finden Sie Informationen zu einem Ansatz für die Erstellung von Prozessen, die eine Governancedisziplin vom Typ „Sicherheitsbaseline“ im Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure unterstützen.
+description: Lernen Sie einen Ansatz zur Erstellung von Prozessen kennen, die eine Disziplin „Sicherheitsbaseline“ unterstützen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fb47ce9aea9baa27404ad927cee344cb0a9fec6c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ab2033046f0f03ca897cf87d71267a069865a8dc
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433599"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219834"
 ---
 # <a name="security-baseline-policy-compliance-processes"></a>Sicherheitsbaseline: Prozesse für Richtlinienkonformität
 
-In diesem Artikel wird ein Ansatz für Prozesse zur Einhaltung von Richtlinien beschrieben, die die [Sicherheitsbaseline](./index.md) regeln. Eine wirkungsvolle Governance der Cloudsicherheit beginnt mit sich wiederholenden manuellen Prozessen, die zum Erkennen von Sicherheitsrisiken und zum Festlegen der Richtlinien entwickelt wurden, die diese Risiken minimieren sollen. Dies erfordert die regelmäßige Einbeziehung des Cloudgovernanceteams sowie interessierter Geschäfts- und IT-Beteiligter, um Richtlinien zu überprüfen und zu aktualisieren und die Einhaltung von Richtlinien sicherzustellen. Darüber hinaus können viele laufende Überwachungs- und Durchsetzungsprozesse automatisiert oder durch Werkzeuge ergänzt werden, um den Kontrolloverhead zu reduzieren und schneller auf Abweichungen von der Richtlinie reagieren zu können.
+In diesem Artikel wird ein Ansatz für Prozesse zur Einhaltung von Richtlinien beschrieben, die die Disziplin [Sicherheitsbaseline](./index.md) regeln. Eine wirkungsvolle Governance der Cloudsicherheit beginnt mit sich wiederholenden manuellen Prozessen, die zum Erkennen von Sicherheitsrisiken und zum Festlegen der Richtlinien entwickelt wurden, die diese Risiken minimieren sollen. Dies erfordert die regelmäßige Einbeziehung des Cloudgovernanceteams sowie interessierter Geschäfts- und IT-Beteiligter, um Richtlinien zu überprüfen und zu aktualisieren und die Einhaltung von Richtlinien sicherzustellen. Darüber hinaus können viele laufende Überwachungs- und Durchsetzungsprozesse automatisiert oder durch Werkzeuge ergänzt werden, um den Kontrolloverhead zu reduzieren und schneller auf Abweichungen von der Richtlinie reagieren zu können.
 
 ## <a name="planning-review-and-reporting-processes"></a>Planungs-, Prüfungs- und Berichterstellungsprozesse
 
@@ -39,9 +39,9 @@ Dieser Planungsprozess ist auch ein guter Zeitpunkt, um die aktuelle Zusammenset
 
 **Monatliche Überprüfungen und Berichte:** Führen Sie monatlich eine Überprüfung für alle Cloudbereitstellungen durch, um sicherzustellen, dass sie weiterhin mit den Sicherheitsrichtlinien übereinstimmen. Überprüfen Sie sicherheitsbezogene Aktivitäten mit IT-Mitarbeitern, und identifizieren Sie etwaige Konformitätsprobleme, die noch nicht im Rahmen des laufenden Überwachungs- und Durchsetzungsprozesses behandelt wurden. Als Ergebnis dieser Überprüfung wird ein Bericht für das Cloudstrategieteam und jedes Cloudeinführungsteam erstellt, um die allgemeine Einhaltung der Richtlinie zu kommunizieren. Der Bericht wird außerdem für prüfungsbezogene und rechtliche Zwecke gespeichert.
 
-## <a name="ongoing-monitoring-processes"></a>Fortlaufende Überwachungsprozesse
+## <a name="processes-for-ongoing-monitoring"></a>Prozesse zur fortlaufenden Überwachung
 
-Die Ermittlung, ob Ihre Strategie für die Sicherheitsgovernance erfolgreich ist, hängt von der Transparenz des aktuellen und vergangenen Zustands Ihrer Cloudinfrastruktur ab. Ohne die Möglichkeit, die relevanten Metriken und Daten im Zusammenhang mit der Sicherheitsintegrität und den Aktivitäten der Cloudressourcen zu analysieren, können Sie keine Veränderungen bei den Risiken und keine Verstöße gegen Ihre Risikotoleranzen erkennen. Für die oben genannten laufenden Governanceprozesse sind Qualitätsdaten erforderlich, um eine entsprechende Änderung der Richtlinie zu gewährleisten und Ihre Infrastruktur besser vor wechselnden Bedrohungen und Sicherheitsanforderungen zu schützen.
+Ob eine Strategie für die Sicherheitsbaseline erfolgreich ist, hängt von der Transparenz des aktuellen und vergangenen Zustands Ihrer Cloudinfrastruktur ab. Ohne die Möglichkeit, die relevanten Metriken und Daten im Zusammenhang mit der Sicherheitsintegrität und den Aktivitäten der Cloudressourcen zu analysieren, können Sie keine Veränderungen bei den Risiken und keine Verstöße gegen Ihre Risikotoleranzen erkennen. Für die oben genannten laufenden Governanceprozesse sind Qualitätsdaten erforderlich, um eine entsprechende Änderung der Richtlinie zu gewährleisten und Ihre Infrastruktur besser vor wechselnden Bedrohungen und Sicherheitsanforderungen zu schützen.
 
 Stellen Sie sicher, dass Ihre Sicherheits- und IT-Teams automatisierte Überwachungssysteme für die Cloudinfrastruktur implementiert haben, welche die entsprechenden Protokolldaten erfassen, die Sie für die Risikobewertung benötigen. Überwachen Sie diese Systeme proaktiv, um eine schnelle Erkennung und Eindämmung potenzieller Richtlinienverletzungen zu gewährleisten und sicherzustellen, dass bei Ihrer Überwachungsstrategie die Sicherheitsanforderungen berücksichtigt werden.
 
@@ -60,7 +60,7 @@ Die folgenden Auslöser und Durchsetzungsmaßnahmen sind Beispiele, auf die Sie 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Dokumentieren Sie mit der Vorlage [Cloudverwaltung](./template.md) die Prozesse und Auslöser, die sich an dem aktuellen Cloudeinführungsplan orientieren.
+Verwenden Sie die [Vorlage zur Disziplin „Sicherheitsbaseline“](./template.md) zum Dokumentieren der Prozesse und Auslöser, die sich an dem aktuellen Cloudeinführungsplan orientieren.
 
 Anleitungen zur Ausführung von Cloudverwaltungsrichtlinien in Abstimmung mit Einführungsplänen finden Sie im Artikel über Verbesserungen von Disziplinen.
 

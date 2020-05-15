@@ -7,21 +7,21 @@ ms.date: 09/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.openlocfilehash: 714bd0d26a38a1ee3a3cb2bfc2d336d1ffd4f45c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: dbf5f3364277ad3a245796e47523cb803a074d31
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428521"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216417"
 ---
 # <a name="build-a-cost-conscious-organization"></a>Schaffen einer kostenbewussten Organisation
 
-Wie unter [Beweggründe: Warum steigen wir auf die Cloud um?](../strategy/motivations.md) beschrieben, gibt es für ein Unternehmen viele gute Gründe für den Einsatz der Cloud. Wenn die Kostenreduzierung eine wichtige Rolle spielt, ist es wichtig, eine kostenbewusste Organisation zu schaffen.
+Wie in [Motivation: Warum steigen wir auf die Cloud um?](../strategy/motivations.md) beschrieben, gibt es für ein Unternehmen viele gute Gründe für den Einsatz der Cloud. Wenn die Kostenreduzierung eine wichtige Rolle spielt, ist es wichtig, eine kostenbewusste Organisation zu schaffen.
 
-Die Sicherstellung von Kostenbewusstsein ist keine einmalige Aktion. Wie auch bei allen anderen Bereichen der Cloudeinführung handelt es sich um einen iterativen Prozess. Im folgenden Diagramm ist dieser Prozess anhand von drei Aktivitäten dargestellt, die voneinander abhängig sind: *Transparenz*, *Zurechenbarkeit* und *Optimierung*. Diese Prozesse spielen sich auf Makro- und Mikroebenen ab. Dies wird in diesem Artikel ausführlich beschrieben.
+Die Sicherstellung von Kostenbewusstsein ist keine einmalige Aktion. Wie auch bei allen anderen Bereichen der Cloudeinführung handelt es sich um einen iterativen Prozess. Im folgenden Diagramm ist dieser Prozess anhand von drei Aktivitäten dargestellt, die voneinander abhängig sind: _Transparenz_, _Zurechenbarkeit_ und _Optimierung_. Diese Prozesse spielen sich auf Makro- und Mikroebenen ab. Dies wird in diesem Artikel ausführlich beschrieben.
 
 ![Prozess für Kostenbewusstsein](../_images/ready/cost-optimization-process.png)
-*Abbildung 1 – Organisation des kostenbewussten Unternehmens.*
+_Abbildung 1: Darstellung einer kostenbewussten Organisation_.
 
 ## <a name="general-cost-conscious-processes"></a>Allgemeine Prozesse für Kostenbewusstsein
 
@@ -35,7 +35,7 @@ Die Sicherstellung von Kostenbewusstsein ist keine einmalige Aktion. Wie auch be
 
 - **Optimierung:** Bei der Optimierung werden Kosteneinsparungen erzielt. Während der Optimierung werden die Ressourcenzuordnungen geändert, um die Kosten von verschiedenen unterstützenden Workloads zu senken. Für diesen Prozess sind Iterationen und Experimentiervorgänge erforderlich. Mit jeder Reduzierung der Kosten verringert sich die Leistung. Für die Ermittlung der richtigen Balance zwischen der Kostenkontrolle und der gewünschten Endbenutzerleistung werden unter Umständen Beiträge mehrerer Parteien benötigt.
 
-In den folgenden Abschnitten werden die Rollen beschrieben, die das *Cloudstrategieteam*, *Cloudeinführungsteam*, *Cloudgovernanceteam* und *Cloudkompetenzzentrum* (CCoE) jeweils bei der Entwicklung einer kostenbewussten Organisation spielen.
+In den folgenden Abschnitten werden die Rollen beschrieben, die das _Cloudstrategieteam_, _Cloudeinführungsteam_, _Cloudgovernanceteam_ und _Cloudkompetenzzentrum_ (CCoE) jeweils bei der Entwicklung einer kostenbewussten Organisation spielen.
 
 ## <a name="cloud-strategy-team"></a>Cloudstrategieteam
 
@@ -53,7 +53,7 @@ Das [Cloudeinführungsteam](./cloud-adoption.md) steht im Mittelpunkt aller Einf
 
 - **Transparenz:**
 
-  - **Bewusstsein:** Es ist wichtig, dass das Cloudeinführungsteam über transparenten Einblick in die jeweils angestrebten Kosteneinsparungsziele verfügt. Wenn einfach nur verkündet wird, dass die Cloudeinführung eine Reduzierung der Kosten bewirkt, ist der Prozess zum Scheitern verurteilt. Es ist wichtig, dass eine *spezifische* Transparenz sichergestellt ist. Wenn das Ziel beispielsweise darin besteht, die Gesamtkosten des Datencenters um 3 Prozent zu reduzieren oder die jährlichen Betriebskosten um 7 Prozent zu senken, sollten Sie diese Ziele rechtzeitig und deutlich kommunizieren.
+  - **Bewusstsein:** Es ist wichtig, dass das Cloudeinführungsteam über transparenten Einblick in die jeweils angestrebten Kosteneinsparungsziele verfügt. Wenn einfach nur verkündet wird, dass die Cloudeinführung eine Reduzierung der Kosten bewirkt, ist der Prozess zum Scheitern verurteilt. Es ist wichtig, dass eine _spezifische_ Transparenz sichergestellt ist. Wenn das Ziel beispielsweise darin besteht, die Gesamtkosten des Datencenters um 3 Prozent zu reduzieren oder die jährlichen Betriebskosten um 7 Prozent zu senken, sollten Sie diese Ziele rechtzeitig und deutlich kommunizieren.
   - **Telemetrie:** Dieses Team benötigt Einblicke in die Auswirkungen ihrer Entscheidungen. Während der Migrations- oder Innovationsaktivitäten haben von diesem Team getroffene Entscheidungen direkten Einfluss auf Kosten und Leistung. Das Team muss für diese beiden konkurrierenden Faktoren eine Balance erzielen. Eine angemessene Leistungsüberwachung und Kostenüberwachung in Bezug auf die aktiven Projekte des Teams ist wichtig, um die erforderliche Transparenz zu schaffen.
 
 - **Zurechenbarkeit:** Das Cloudeinführungsteam muss über alle vorab festgelegten Budgets informiert sein, die für die Einführungsmaßnahmen gelten. Wenn die tatsächlichen Kosten nicht am Budget ausgerichtet sind, besteht die Möglichkeit, für Zurechenbarkeit zu sorgen. Bei Zurechenbarkeit geht es nicht darum, das Einführungsteam für die Überschreitung des Budgets zu bestrafen, da diese Überschreitung auch das Ergebnis notwendiger Entscheidungen im Hinblick auf die Leistung sein kann. Vielmehr bedeutet Zurechenbarkeit, das Team über die Ziele zu informieren und aufzuzeigen, wie sich seine Entscheidungen auf diese Ziele auswirken. Darüber hinaus wird durch die Zurechenbarkeit ein Dialog mit dem Team ermöglicht, damit es die Entscheidungen erläutern kann, die zu den Mehrkosten geführt haben. Falls diese Entscheidungen nicht am Ziel des Projekts ausgerichtet sind, ist dies eine gute Gelegenheit, mit dem Cloudstrategieteam zusammenzuarbeiten, um bessere Entscheidungen zu treffen.

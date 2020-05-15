@@ -1,6 +1,6 @@
 ---
-title: 'Identitätsbaseline: Risikotoleranzmetriken und -indikatoren'
-description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um sich über die Quantifizierung der Geschäftsrisikotoleranz im Zusammenhang mit der Identitätsbaseline zu informieren.
+title: Risikotoleranzmetriken und -indikatoren in der Disziplin „Identitätsbaseline“.
+description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um sich über die Quantifizierung der Geschäftsrisikotoleranz im Zusammenhang mit der Disziplin „Identitätsbaseline“ zu informieren.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5af612501dd2fb8bb73ada0e9dfcd4f3ee784e35
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: bbe36f12e6331a85f024af1835b66c30e35bf430
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433523"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218644"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>Metriken, Indikatoren und Risikotoleranz für die Identitätsbaseline
 
-Dieser Artikel unterstützt Sie bei der Quantifizierung der Geschäftsrisikotoleranz im Zusammenhang mit der Identitätsbaseline. Das Definieren von Metriken und Indikatoren ermöglicht das Erstellen eines Geschäftsszenarios, mit dem Sie in die Weiterentwicklung der Disziplin „Identitätsbaseline“ investieren können.
+Lernen Sie, die Risikotoleranz von Unternehmen im Zusammenhang mit der Disziplin „Identitätsbaseline“ zu quantifizieren. Indem Sie Metriken und Indikatoren definieren, können Sie ein Geschäftsszenario erstellen, um in die Ausgereiftheit dieser Disziplin zu investieren.
 
-## <a name="metrics"></a>metrics
+## <a name="metrics"></a>Metriken
 
-Die Identitätsbaseline legt den Schwerpunkt auf das Identifizieren, Authentifizieren und Autorisieren von Personen, Benutzergruppen oder automatisierten Prozessen und bietet ihnen den entsprechenden Zugriff auf Ressourcen in Ihren Cloudbereitstellungen. Im Rahmen der Risikoanalyse sollten Sie Daten zu Ihren Identitätsdiensten sammeln, um zu ermitteln, welches Risiko vorliegt und wie wichtig Investitionen in die Governance der Identitätsbaseline für Ihre geplanten Cloudbereitstellungen ist.
+Die Identitätsverwaltung legt den Schwerpunkt auf das Identifizieren, Authentifizieren und Autorisieren von Personen, Benutzergruppen oder automatisierten Prozessen und bietet ihnen den entsprechenden Zugriff auf Ressourcen in Ihren Cloudbereitstellungen. Im Rahmen der Risikoanalyse sollten Sie Daten zu Ihren Identitätsdiensten sammeln, um zu ermitteln, welches Risiko vorliegt und wie wichtig Investitionen in die Disziplin „Identitätsbaseline“ für Ihre geplanten Cloudbereitstellungen ist.
 
 Es folgen Beispiele für nützliche Metriken, die Sie erfassen sollten, um die Risikotoleranz innerhalb der Disziplin „Identitätsbaseline“ zu bewerten:
 
@@ -31,7 +31,7 @@ Es folgen Beispiele für nützliche Metriken, die Sie erfassen sollten, um die R
 - **Umfang der in der Cloud bereitgestellten Verzeichnisdienste.** Die Anzahl von Verzeichnisgesamtstrukturen, Domänen und Mandanten, die Sie in der Cloud bereitstellen.
 - **In der Cloud bereitgestellte Active Directory-Server.** Die Anzahl von Active Directory-Servern, die in der Cloud bereitgestellt werden.
 - **In der Cloud bereitgestellte Organisationseinheiten.** Die Anzahl der in der Cloud bereitgestellten Active Directory-Organisationseinheiten (OUs).
-- **Verbundumfang.** Die Anzahl der Identitätsbaselinesysteme, die sich mit den Systemen Ihrer Organisation im Verbund befinden.
+- **Verbundumfang.** Die Anzahl der Identitätsverwaltungssysteme, die sich mit den Systemen Ihrer Organisation im Verbund befinden.
 - **Benutzer mit erhöhten Rechten.** Die Anzahl von Benutzerkonten mit erhöhten Zugriffsrechten für Ressourcen oder Verwaltungstools.
 - **Verwenden der rollenbasierten Zugriffssteuerung.** Die Anzahl von Abonnements, Ressourcengruppen oder einzelnen Ressourcen, die nicht durch die rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC) über Gruppen verwaltet werden.
 - **Authentifizierungsansprüche.** Die Anzahl erfolgreicher und fehlerhafter Versuche zur Benutzerauthentifizierung.
@@ -40,7 +40,7 @@ Es folgen Beispiele für nützliche Metriken, die Sie erfassen sollten, um die R
 
 ## <a name="risk-tolerance-indicators"></a>Risikotoleranzindikatoren
 
-Risiken im Hinblick auf die Identitätsbaseline beruhen zum größten Teil auf der Komplexität der Identitätsinfrastruktur in Ihrer Organisation. Wenn alle Ihre Benutzer und Gruppen über ein einziges Verzeichnis oder einen einzigen nativen Cloudidentitätsanbieter mit minimaler Integration in andere Dienste verwaltet werden, ist Ihre Risikostufe wahrscheinlich relativ gering. Wenn Ihr Unternehmen jedoch wächst, müssen Ihre Identitätsbaselinesysteme möglicherweise kompliziertere Szenarien wie z.B. mehrere Verzeichnisse unterstützen, um Ihre interne Organisation oder den Verbund mit externen Identitätsanbietern abzubilden. Mit komplexeren Systemen steigt auch das Risiko.
+Risiken im Hinblick auf die Identitätsbaseline beruhen zum größten Teil auf der Komplexität der Identitätsinfrastruktur in Ihrer Organisation. Wenn alle Ihre Benutzer und Gruppen über ein einziges Verzeichnis oder einen einzigen nativen Cloudidentitätsanbieter mit minimaler Integration in andere Dienste verwaltet werden, ist Ihre Risikostufe wahrscheinlich relativ gering. Wenn Ihr Unternehmen jedoch wächst, müssen Ihre Identitätsverwaltungsysteme möglicherweise kompliziertere Szenarien wie z.B. mehrere Verzeichnisse unterstützen, um Ihre interne Organisation oder den Verbund mit externen Identitätsanbietern abzubilden. Mit komplexeren Systemen steigt auch das Risiko.
 
 In den frühen Phasen der Cloudeinführung arbeiten Sie mit Ihrem IT-Sicherheitsteam und den Projektbeteiligten des Unternehmens zusammen, um [Geschäftsrisiken](./business-risks.md) im Zusammenhang mit der Identität zu identifizieren, und bestimmen anschließend eine akzeptable Baseline für die Identitätsrisikotoleranz. Dieser Abschnitt des Cloud Adoption Framework enthält einige Beispiele. Die Risiken und Baselines in Ihrem Unternehmen bzw. bei Ihren Bereitstellungen weichen im Detail möglicherweise davon ab.
 
@@ -50,7 +50,7 @@ Legen Sie nach der Einigung auf eine Baseline minimale Benchmarks fest, die eine
 - **Trigger durch lokale Identitätsabhängigkeiten.** Ein Unternehmen, das die Migration von Workloads zur Cloud plant, die ältere Authentifizierungsfunktionen oder mehrstufige Authentifizierung von Drittanbietern benötigen, sollten in die Disziplin „Identitätsbaseline“ investieren, um Risiken im Zusammenhang mit Refactoring oder der zusätzlichen Cloudinfrastrukturbereitstellung zu mindern.
 - **Trigger durch komplexe Verzeichnisdienste.** Ein Unternehmen, das mehr als _x_ einzelne Gesamtstrukturen, Domänen oder Verzeichnismandanten verwaltet, sollte in die Disziplin „Identitätsbaseline“ investieren, um Risiken im Zusammenhang mit der Kontoverwaltung sowie Effizienzprobleme in Bezug auf die Verteilung von Anmeldeinformationen auf mehrere Systeme zu reduzieren.
 - **Trigger durch in der Cloud gehostete Verzeichnisdienste.** Ein Unternehmen, das _x_ virtuelle Active Directory-Servercomputer (VMs) in der Cloud hostet oder _x_ Organisationseinheiten (OUs) auf diesen cloudbasierten Servern verwaltet, kann durch die Investition in die Disziplin „Identitätsbaseline“ profitieren, um die Integration in lokale oder andere externe Identitätsdienste zu optimieren.
-- **Trigger durch Verbund.** Ein Unternehmen, das einen Identitätsverbund mit _x_ externen Identitätsbaselinesystemen implementiert, kann von einer Investition in die Disziplin „Identitätsbaseline“ profitieren, um eine konsistente, organisationsweite Richtlinie für alle Verbundmitglieder sicherzustellen.
+- **Trigger durch Verbund.** Ein Unternehmen, das einen Identitätsverbund mit _x_ externen Identitätsverwaltungsystemen implementiert, kann von einer Investition in die Disziplin „Identitätsbaseline“ profitieren, um eine konsistente, organisationsweite Richtlinie für alle Verbundmitglieder sicherzustellen.
 - **Trigger durch erhöhte Zugriffsrechte.** Ein Unternehmen, in dem mehr als _x %_ der Benutzer erweiterte Zugriffsrechte für Verwaltungstools und Ressourcen besitzen, sollte eine Investition in die Disziplin „Identitätsbaseline“ in Betracht ziehen, um das Risiko einer unbeabsichtigten übermäßigen Zugriffsbereitstellung für Benutzer zu mindern.
 - **Trigger durch RBAC.** Ein Unternehmen, in dem weniger als _x %_ der Ressourcen die Methoden der rollenbasierten Zugriffssteuerung verwenden, sollte eine Investition in die Disziplin „Identitätsbaseline“ in Betracht ziehen, um optimierte Möglichkeiten für die Zuweisung des Benutzerzugriffs für Ressourcen zu identifizieren.
 - **Trigger durch Authentifizierungsfehler.** Ein Unternehmen, in dem bei mehr als _x Prozent_ der Versuche Authentifizierungsfehler auftreten, sollten in die Disziplin „Identitätsbaseline“ investieren, um sicherzustellen, dass die Authentifizierungsmethoden keinen externen Angriffen ausgesetzt sind und dass sich Benutzer ordnungsgemäß authentifizieren können.
@@ -61,9 +61,9 @@ Die genauen Metriken und Auslöser, die Sie zum Bemessen der Risikotoleranz verw
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Dokumentieren Sie mit der Vorlage [Cloudverwaltung](./template.md) die Metriken und Toleranzindikatoren, die sich an dem aktuellen Cloudeinführungsplan orientieren.
+Verwenden Sie die [Disziplin „Identitätsbaseline“](./template.md) zum Dokumentieren der Metriken und Toleranzindikatoren, die sich an dem aktuellen Cloudeinführungsplan orientieren.
 
-Nutzen Sie Identitätsbaseline-Beispielrichtlinien als Ausgangspunkt für die Entwicklung von Richtlinien, die bestimmte Geschäftsrisiken behandeln, die Ihren Plänen für die Einführung der Cloud entsprechen.
+Nutzen Sie Identitätsbaseline-Beispielrichtlinien als Ausgangspunkt für die Entwicklung eigener Richtlinien, die bestimmte Geschäftsrisiken behandeln, entsprechend Ihren Plänen für die Einführung der Cloud.
 
 > [!div class="nextstepaction"]
 > [Überprüfen von Beispielrichtlinien](./policy-statements.md)

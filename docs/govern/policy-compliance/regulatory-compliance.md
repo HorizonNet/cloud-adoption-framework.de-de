@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 22e74aabc56ae25d0448bf321c645449e4989668
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0860dfc137b8aaa9ad39beeebb3856786eee1318
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80809123"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218304"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>Einführung in die Einhaltung gesetzlicher Bestimmungen
 
@@ -27,13 +27,18 @@ Wie bei Sicherheitskontrollen sollten Organisationen sich über die Unterteilung
 
 Im Folgenden finden Sie Beschreibungen von behördlichen Vorschriften in verschiedenen Branchen und Regionen:
 
+<!-- docsTest:ignore PHI "Health Information Portability and Accountability Act" -->
+
 ## <a name="hipaa"></a>HIPAA
 
 Eine Anwendung im US-Gesundheitswesen, die geschützte gesundheitliche Informationen (Protected Health Information, PHI) verarbeitet, unterliegt sowohl den Regeln zur Privatsphäre als auch denen zur Sicherheit im Health Information Portability and Accountability Act (HIPAA). Als Minimum ist für HIPAA wahrscheinlich erforderlich, dass ein Unternehmen im Gesundheitswesen schriftliche Zusicherungen vom Cloudanbieter erhalten muss, dass alle empfangenen oder erstellten Patientendaten sicher verwahrt werden.
 
+<!-- cSpell:ignore Visa Mastercard -->
+<!-- docsTest:ignore "American Express" Discover JCB QSA ISA ROC SAQ DPO GRC -->
+
 ## <a name="pci"></a>PCI
 
-Der Payment Card Industry Data Security Standard (PCI DSS) ist ein proprietärer Informationssicherheitsstandard für Organisationen, die mit Markenkreditkarten großer Kartenschemas wie Visa, Mastercard, American Express, Discover und JCB umgehen. Der PCI-Standard wird von den Kartenmarken beauftragt und vom Payment Card Industry Security Standards Council verwaltet. Der Standard wurde erstellt, um die Kontrolle über die Daten von Karteninhabern zu verbessern und Kreditkartenbetrug zu verringern. Eine Überprüfung der Konformität wird jährlich durchgeführt – für Organisationen, die große Transaktionsvolumen verarbeiten, durch einen externen qualifizierten Sicherheitsbewerter oder einen firmenspezifischen internen Sicherheitsbewerter, der einen Konformitätsbericht erstellt, oder für Unternehmen durch einen Selbstbewertungsfragebogen.
+Der Payment Card Industry Data Security Standard (PCI-DSS) ist ein proprietärer Informationssicherheitsstandard für Organisationen, die mit Markenkreditkarten großer Kartenschemas wie Visa, Mastercard, American Express, Discover und JCB umgehen. Der PCI-Standard wird von den Kartenmarken beauftragt und vom Payment Card Industry Security Standards Council verwaltet. Der Standard wurde erstellt, um die Kontrolle über die Daten von Karteninhabern zu verbessern und Kreditkartenbetrug zu verringern. Eine Überprüfung der Konformität wird jährlich durchgeführt – für Organisationen, die große Transaktionsvolumen verarbeiten, durch einen externen qualifizierten Sicherheitsbewerter oder einen firmenspezifischen internen Sicherheitsbewerter, der einen Konformitätsbericht erstellt, oder für Unternehmen durch einen Selbstbewertungsfragebogen.
 
 ## <a name="personal-data"></a>Personenbezogene Daten
 
@@ -45,11 +50,16 @@ Eine der wichtigsten Entwicklungen in diesem Bereich ist die Datenschutz-Grundve
 
 ## <a name="compliant-foundation-in-azure"></a>Konformitätsbasis in Azure
 
-Um Kunden bei der Erfüllung ihrer eigenen Konformitätsverpflichtungen in regulierten Branchen und auf Märkten weltweit zu unterstützen, verfügt Azure über das größte Complianceportfolio der Branche – in der Breite (Gesamtanzahl von Angeboten), aber auch der Tiefe (Anzahl von kundenorientierten Diensten im Rahmen des Bewertungsbereichs). Azure-Complianceangebote sind in vier Segmente unterteilt: globale Relevanz, US Government, branchenspezifisch und regions-/landesspezifisch.
+Um Kunden bei der Erfüllung ihrer eigenen Konformitätsverpflichtungen in regulierten Branchen und auf Märkten weltweit zu unterstützen, verfügt Azure über das größte Complianceportfolio der Branche – in der Breite (Gesamtanzahl von Angeboten), aber auch der Tiefe (Anzahl von kundenorientierten Diensten im Rahmen des Bewertungsbereichs). Die Azure-Complianceangebote sind in vier Segmente gruppiert:
+
+- Global
+- US Government
+- Branche
+- Länderspezifisch
 
 Azure-Complianceangebote basieren auf unterschiedlichen Arten von Zusicherungen, z.B. formalen Zertifizierungen, Nachweisen, Validierungen, Autorisierungen und Bewertungen, die von unabhängigen externen Prüfungsgesellschaften erstellt wurden, sowie Vertragsänderungen, Selbstbewertungen und Kundenleitfäden, die von Microsoft erstellt wurden. Jede Angebotsbeschreibung in diesem Dokument enthält eine aktuelle Umfangserklärung, die angibt, welche Azure-Kundendienste für die Bewertung in Frage kommen, sowie Links zu herunterladbaren Ressourcen, um Kunden bei ihren eigenen Konformitätsverpflichtungen zu unterstützen.
 
-Das Microsoft Trust Center bietet ausführlichere Informationen zu [Azure-Complianceangeboten](https://www.microsoft.com/trust-center/compliance/compliance-overview). Alle heruntergeladenen Dokumente sind zudem für bestimmte Azure-Kunden über das [Service Trust-Portal](https://servicetrust.microsoft.com) in den folgenden Abschnitten verfügbar:
+Das Microsoft Trust Center bietet ausführlichere Informationen zu [Azure-Complianceangeboten](https://www.microsoft.com/trust-center/compliance/compliance-overview). Alle heruntergeladenen Dokumente sind zudem für bestimmte Azure-Kunden über das [Microsoft Service Trust-Portal](https://servicetrust.microsoft.com) in den folgenden Abschnitten verfügbar:
 
 - **Überwachungsberichte:** Enthält Abschnitte zu FedRAMP, GRC-Bewertung, ISO, PCI-DSS und SOC-Berichten.
 - **Datenschutzressourcen:** Enthält Konformitätsrichtlinien, häufig gestellte Fragen und Whitepaper sowie Abschnitte zu Penetrationstests und Sicherheitsbewertungen.

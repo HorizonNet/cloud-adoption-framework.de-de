@@ -8,26 +8,26 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 254abb817b89e34e9e92fb2b9eb949784e269601
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 82725e152efc8038d983939b1f690be0574e435b
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995218"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219868"
 ---
 <!-- cSpell:ignore offboarding preintegration -->
 
 # <a name="identity-baseline-discipline-improvement"></a>Verbesserung der Disziplin „Identitätsbaseline“
 
-Die Disziplin „Identitätsbaseline“ konzentriert sich auf Möglichkeiten zur Erstellung von Richtlinien, die die Konsistenz und Kontinuität von Benutzeridentitäten gewährleisten, unabhängig davon, welcher Cloudanbieter die Anwendung oder Workload hostet. Innerhalb der fünf Disziplinen der Cloudgovernance umfasst die Identitätsbaseline Entscheidungen in Bezug auf die [Hybrididentitätsstrategie](../../decision-guides/identity/index.md), die Auswertung und Erweiterung von Identitätsrepositorys, die Implementierung des einmaligen Anmeldens (gleiche Anmeldung), die Überprüfung und die Überwachung im Hinblick auf unbefugte Nutzung oder böswillige Akteure. In einigen Fällen kann sie auch Entscheidungen in Bezug auf Modernisierung, Konsolidierung oder Integration mehrerer Identitätsanbieter beinhalten.
+Die Disziplin „Identitätsbaseline“ konzentriert sich auf Möglichkeiten zur Erstellung von Richtlinien, die die Konsistenz und Kontinuität von Benutzeridentitäten gewährleisten, unabhängig davon, welcher Cloudanbieter die Anwendung oder Workload hostet. Innerhalb der fünf Disziplinen der Cloudgovernance umfasst die Disziplin „Identitätsbaseline“ Entscheidungen in Bezug auf die [Hybrididentitätsstrategie](../../decision-guides/identity/index.md), die Auswertung und Erweiterung von Identitätsrepositorys, die Implementierung des einmaligen Anmeldens (gleiche Anmeldung), die Überprüfung und die Überwachung im Hinblick auf unbefugte Nutzung oder böswillige Akteure. In einigen Fällen kann sie auch Entscheidungen in Bezug auf Modernisierung, Konsolidierung oder Integration mehrerer Identitätsanbieter beinhalten.
 
 Dieser Artikel beschreibt einige potenzielle Aufgaben, die Ihr Unternehmen ausführen kann, um die Disziplin „Identitätsbaseline“ besser erstellen und weiterentwickeln zu können. Diese Aufgaben lassen sich in verschiedene Phasen der Implementierung einer Cloudlösung unterteilen: Planung, Erstellung, Einführung und Betrieb. Diese Phasen werden dann durchlaufen und ermöglichen die Entwicklung eines [inkrementellen Ansatzes für die Cloudgovernance](../guides/index.md#an-incremental-approach-to-cloud-governance).
 
 ![Vier Phasen der Einführung](../../_images/govern/adoption-phases.png)
 
-*Abbildung 1: Einführungsphasen des inkrementellen Ansatzes für die Cloudgovernance.*
+_Abbildung 1: Einführungsphasen des inkrementellen Ansatzes für die Cloudgovernance._
 
-Es ist unmöglich, die Anforderungen aller Unternehmen in einem einzigen Dokument zu berücksichtigen. Daher werden in diesem Artikel die empfohlenen mindestens auszuführenden Aktivitäten sowie Beispiele für potenzielle Aktivitäten für jede Phase des Weiterentwicklungsprozesses für die Governance beschrieben. Ziel dieser Aktivitäten ist es, Sie beim Aufbau eines [Richtlinien-MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) und bei der Einrichtung eines Frameworks für die inkrementelle Verbesserung der Richtlinie zu unterstützen. Ihr Cloudgovernanceteam muss entscheiden, wie viel in diese Aktivitäten investiert werden soll, um Ihre Funktionen für die Governance der Identitätsbaseline zu verbessern.
+Es ist unmöglich, die Anforderungen aller Unternehmen in einem einzigen Dokument zu berücksichtigen. Daher werden in diesem Artikel die empfohlenen mindestens auszuführenden Aktivitäten sowie Beispiele für potenzielle Aktivitäten für jede Phase des Weiterentwicklungsprozesses für die Governance beschrieben. Ziel dieser Aktivitäten ist es, Sie beim Aufbau eines [Richtlinien-MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) und bei der Einrichtung eines Frameworks für die inkrementelle Verbesserung der Richtlinie zu unterstützen. Ihr Cloudgovernanceteam muss entscheiden, wie viel in diese Aktivitäten investiert werden soll, um Ihre Disziplin „Identitätsbaseline“ zu verbessern.
 
 > [!CAUTION]
 > Weder die in diesem Artikel beschriebenen mindestens erforderlichen noch die potenziellen Aktivitäten sind auf bestimmte Unternehmensrichtlinien oder Complianceanforderungen von Drittanbietern ausgerichtet. Dieser Leitfaden soll bei Gesprächen über die Ausrichtung beider Anforderungen auf ein Cloudgovernancemodell helfen.
@@ -63,6 +63,8 @@ Für die erfolgreiche Migration einer Umgebung muss eine Reihe von technischen u
 - Ziehen Sie die Einrichtung eines Early Adopter-Programms und die Einführung für eine begrenzte Anzahl von Benutzern in Betracht.
 - Setzen Sie die Schulung der Personen und Teams fort, die von den Architekturrichtlinien am meisten betroffen sind.
 
+<!-- docsTest:ignore "seamless SSO" -->
+
 **Potenzielle Aktivitäten:**
 
 - Prüfen Sie die logische und physische Architektur, und legen Sie eine [Hybrididentitätsstrategie](../../decision-guides/identity/index.md) fest.
@@ -70,10 +72,10 @@ Für die erfolgreiche Migration einer Umgebung muss eine Reihe von technischen u
   - Aktivieren Sie bei einem vorhandenen Verbund Mandanteneinschränkungen für Administratorkonten.
 - Integrieren Sie Ihre lokalen und Cloudverzeichnisse.
 - Ziehen Sie die Verwendung der folgenden Zugriffsmodelle in Betracht:
-  - [Zugriff mit den geringsten Rechten](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models)
-  - [Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)
-- Legen Sie alle vor der Integration erforderlichen Details endgültig fest, und machen Sie sich mit den [bewährten Methoden für die Identitätsverwaltung](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices) vertraut.
-  - Aktivieren der einzelnen Identität, des einmaligen Anmeldens (SSO) oder des nahtlosen einmaligen Anmeldens
+  - Zugriffsmodell [Verwaltung mit den geringsten Rechten](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models).
+  - Zugriffsmodell [Privileged Identity Management (PIM)](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure).
+- Legen Sie alle vor der Integration erforderlichen Details endgültig fest, und machen Sie sich mit den [bewährten Sicherheitsmethoden für die Identitätsverwaltung und Zugriffssteuerung](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices) vertraut.
+  - Aktivieren der einzelnen Identität, des einmaligen Anmeldens (SSO), auch als nahtloses einmaliges Anmelden bekannt.
   - Konfigurieren der mehrstufigen Authentifizierung für Administratoren
   - Bei Bedarf Konsolidieren oder Integrieren von Identitätsanbietern
   - Implementieren der für die zentralisierte Verwaltung von Identitäten erforderlichen Tools
@@ -93,6 +95,8 @@ Migration ist ein inkrementeller Prozess, bei dem der Schwerpunkt auf der Verlag
 - Aktualisieren Sie das Dokument mit Architekturrichtlinien, und geben Sie dieses an die wichtigsten Beteiligten weiter.
 - Entwickeln Sie Schulungsmaterialien und Dokumentation, Materialien zum Bekanntmachen der Migration, Incentives und weitere Programme, um die Akzeptanz durch die Benutzer zu unterstützen.
 
+<!-- docsTest:ignore "Seamless SSO" -->
+
 **Potenzielle Aktivitäten:**
 
 - Überprüfen Sie, ob die in der Erstellungsphase und der Phase vor der Bereitstellung definierten bewährten Methoden ordnungsgemäß ausgeführt werden.
@@ -101,7 +105,7 @@ Migration ist ein inkrementeller Prozess, bei dem der Schwerpunkt auf der Verlag
 - Vergewissern Sie sich, dass das einmalige Anmelden (SSO) und das nahtlose einmalige Anmelden für Ihre Anwendungen wie erwartet funktionieren.
 - Verringern oder entfernen Sie alternative Identitätsspeicher.
 - Überprüfen Sie die Notwendigkeit von Identitätsspeichern in Apps oder Datenbanken. Identitäten, die außerhalb eines geeigneten Identitätsanbieters (von Erstanbietern oder Drittanbietern) liegen, können ein Risiko für die Anwendung und die Benutzer darstellen.
-- Aktivieren Sie den bedingten Zugriff für [lokale Verbundanwendungen](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-on-premises-setup).
+- Aktivieren Sie den bedingten Zugriff für [lokale Verbundanwendungen](https://docs.microsoft.com/azure/active-directory/devices/overview).
 - Verteilen Sie Identitäten auf globale Regionen in mehreren Hubs mit Synchronisierung zwischen den Regionen.
 - Richten Sie einen Verbund mit zentraler rollenbasierter Zugriffssteuerung (RBAC) ein.
 
@@ -111,7 +115,7 @@ Nachdem die Transformation abgeschlossen ist, müssen Governance und Betrieb wä
 
 **Mindestens empfohlene Aktivitäten:**
 
-- Passen Sie Ihre [Toolkette für die Identitätsbaseline](./toolchain.md) an die Änderungen der Identitätsanforderungen Ihrer Organisation an.
+- Passen Sie Ihre [Toolkette für die Identitätsbaseline](./toolchain.md) an die Anforderungen Ihrer Organisation an.
 - Automatisieren Sie Benachrichtigungen und Berichte, damit Sie bei potenziellen Bedrohungen gewarnt werden.
 - Überwachen Sie den Fortschritt bei der Systemnutzung und Benutzerakzeptanz, und erstellen Sie entsprechende Berichte.
 - Erstellen Sie Berichte zu Metriken nach der Bereitstellung, und geben Sie sie an die Beteiligten weiter.
@@ -136,7 +140,7 @@ Nachdem die Transformation abgeschlossen ist, müssen Governance und Betrieb wä
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Sie kennen jetzt das Konzept der Identitätsgovernance in der Cloud. Als Nächstes sollten Sie die [Toolkette für die Identitätsbaseline](./toolchain.md) untersuchen, um die Azure-Tools und -Features zu identifizieren, die Sie bei der Entwicklung der Governancedisziplin „Identitätsbaseline“ auf der Azure-Plattform benötigen.
+Sie kennen jetzt das Konzept der Identitätsgovernance in der Cloud. Als Nächstes sollten Sie die [Toolkette für die Identitätsbaseline](./toolchain.md) untersuchen, um die Azure-Tools und -Features zu identifizieren, die Sie bei der Entwicklung der Disziplin „Identitätsbaseline“ auf der Azure-Plattform benötigen.
 
 > [!div class="nextstepaction"]
 > [Identitätsbaseline-Toolkette für Azure](./toolchain.md)

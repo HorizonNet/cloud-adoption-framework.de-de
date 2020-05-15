@@ -1,29 +1,29 @@
 ---
-title: Cloudkompetenzzentrum
-description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie Sie ein Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) einrichten.
+title: Grundlegendes zu den CCoE-Funktionen (Cloud Center of Excellence, Cloudkompetenzzentrum)
+description: Grundlegendes zu den Funktionen eines Cloudkompetenzzentrums (Cloud Center of Excellence, CCoE), einschließlich der Quelle, des Umfangs und der Ergebnisse.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/10/2019
+ms.date: 04/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 8145df1035079731016e90b82d3b4b8cd830c171
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0f4ccda8c5f05f24fae2b32715029a42e8c33348
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428673"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215771"
 ---
 <!-- cSpell:ignore ccoe deprioritize -->
 
-# <a name="cloud-center-of-excellence"></a>Cloudkompetenzzentrum
+# <a name="cloud-center-of-excellence-ccoe-functions"></a>CCoE-Funktionen (Cloud Center of Excellence, Cloudkompetenzzentrum)
 
 Die Erzielung von geschäftlicher und technischer Flexibilität ist ein wichtiges Ziel der meisten IT-Organisationen. Ein Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) ist eine Funktion, mit der eine möglichst gute Balance zwischen Geschwindigkeit und Stabilität erreicht werden soll.
 
 ## <a name="function-structure"></a>Funktionsstruktur
 
-Bei einem CCoE-Modell müssen die folgenden Funktionsbereiche zusammenarbeiten:
+Bei einem CCoE-Modell müssen die folgenden Bereiche zusammenarbeiten:
 
 - Cloudeinführung (insbesondere Lösungsarchitekten)
 - Cloudstrategie (insbesondere Programm- und Projektmanager)
@@ -129,11 +129,13 @@ Außerdem wird empfohlen, dass die Projektbeteiligten aus dem betriebswirtschaft
 
 **Fokussiert bleiben:** Ein Cloudkompetenzzentrum kann für alle IT-Teams mit begrenzten Ressourcen eine erhebliche Verpflichtung darstellen. Wenn kompetente Architekten von kurzfristigen Projekten abgezogen werden, damit sie sich auf langfristige Ziele konzentrieren können, kann dies zu Schwierigkeiten für Teammitglieder führen, die nicht Teil des Cloudkompetenzzentrums sind. Es ist wichtig, dass die IT-Führungskräfte und die Projektbeteiligten aus dem IT-Bereich im Hinblick auf das Ziel des Cloudkompetenzzentrums fokussiert bleiben. Die Unterstützung der IT-Führungskräfte und Projektbeteiligten aus dem IT-Bereich wird benötigt, um zu verdeutlichen, dass die CCoE-Aufgaben Vorrang vor dem normalen Tagesgeschäft haben und dadurch nicht gestört werden sollten.
 
-**Puffer einbauen:** Das CCoE-Team experimentiert mit neuen Ansätzen. Einige dieser Ansätze passen nicht gut zu vorhandenen Vorgängen oder technischen Einschränkungen. Es besteht ein reelles Risiko, dass das Cloudkompetenzzentrum durch andere Teams unter Druck gerät oder quasi in Regress genommen wird, wenn Experimente nicht erfolgreich sind. Es ist wichtig, das Team zu ermutigen und vor den Konsequenzen von Fail-Fast-Lerneffekten zu schützen. Es ist genauso wichtig, dem Team dessen Zuständigkeit für das Erzielen von Fortschritten zu verdeutlichen und sicherzustellen, dass aus diesen Experimenten gelernt wird und bessere Lösungen gefunden werden.
+**Puffer einbauen:** Das CCoE-Team experimentiert mit neuen Ansätzen. Einige dieser Ansätze passen nicht gut zu vorhandenen Vorgängen oder technischen Einschränkungen. Es besteht ein reelles Risiko, dass das Cloudkompetenzzentrum durch andere Teams unter Druck gerät oder quasi in Regress genommen wird, wenn Experimente nicht erfolgreich sind. Es ist wichtig, das Team zu ermutigen und vor den Konsequenzen von „Fail-Fast“-Lerneffekten zu schützen. Es ist genauso wichtig, dem Team dessen Zuständigkeit für das Erzielen von Fortschritten zu verdeutlichen und sicherzustellen, dass aus diesen Experimenten gelernt wird und bessere Lösungen gefunden werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Für ein CCoE-Modell sind sowohl [Funktionen für die Cloudplattform](./cloud-platform.md) als auch [Funktionen für die Cloudautomatisierung](./cloud-automation.md) erforderlich. Der nächste Schritt ist die Ausrichtung der [Funktionen für die Cloudplattform](./cloud-platform.md).
+Für ein CCoE-Modell sind Cloudplattformfunktionen als auch Cloudautomatisierungsfunktionen erforderlich. Der nächste Schritt besteht in der Ausrichtung der Cloudplattformfunktionen.
 
-> [!div class="nextstepaction"]
-> [Funktionen der Cloudplattform](./cloud-platform.md)
+Weitere Informationen:
+
+- [Cloudplattformfunktionen](./cloud-platform.md)
+- [Cloudautomatisierungsfunktionen](./cloud-automation.md)

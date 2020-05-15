@@ -1,6 +1,6 @@
 ---
-title: 'Identitätsbaseline: Geschäftsrisiken'
-description: Hier finden Sie grundlegende Informationen und Beispiele für die typische Kundenakzeptanz einer Identitätsbaselinedisziplin im Rahmen einer Cloudgovernancestrategie. 
+title: Motivationen und Geschäftsrisiken in der Disziplin „Identitätsbaseline“
+description: Hier finden Sie grundlegende Informationen und Beispiele für die typische Kundenakzeptanz einer Identitätsbaselinedisziplin im Rahmen einer Cloudgovernancestrategie.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fa8bd53e2d920f8d69fe6484d427d9c9400ad174
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 370dfa7a040a41e22f23741ca30cf3a305de7f29
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429885"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219885"
 ---
-# <a name="identity-baseline-motivations-and-business-risks"></a>Identitätsbaseline: Motivationen und Geschäftsrisiken
+# <a name="motivations-and-business-risks-in-the-identity-baseline-discipline"></a>Motivationen und Geschäftsrisiken in der Disziplin „Identitätsbaseline“
 
 In diesem Artikel werden die Gründe beschrieben, warum Kunden typischerweise eine Disziplin „Identitätsbaseline“ in ihre Cloud Governance-Strategie integrieren. Darüber hinaus werden einige Beispiele für Geschäftsrisiken aufgeführt, die zu Richtlinienanweisungen führen.
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="identity-baseline-relevancy"></a>Relevanz der Identitätsbaseline
+## <a name="relevance"></a>Relevance
 
 Traditionelle lokale Verzeichnisse sind so konzipiert, dass Unternehmen Berechtigungen und Richtlinien für Benutzer, Gruppen und Rollen in ihren internen Netzwerken und Rechenzentren streng kontrollieren können. Diese Verzeichnisse unterstützen in der Regel Implementierungen einzelner Mandanten gedacht, wobei die Dienste nur innerhalb der lokalen Umgebung anwendbar sind.
 
@@ -42,7 +42,7 @@ Die Risiken werden je nach Organisation unterschiedlich sein, aber die folgenden
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Dokumentieren Sie mit der [Cloudverwaltungsvorlage](./template.md) die Geschäftsrisiken, die wahrscheinlich durch den aktuellen Cloudeinführungsplan entstehen.
+Verwenden Sie die [Vorlage zur Disziplin „Identitätsbaseline“](./template.md) zum Dokumentieren von Geschäftsrisiken, die mit dem aktuellen Cloudeinführungsplan wahrscheinlich entstehen.
 
 Sobald ein Verständnis für realistische Geschäftsrisiken hergestellt ist, besteht der nächste Schritt darin, die Risikotoleranz des Unternehmens zu dokumentieren sowie die Indikatoren und Schlüsselmetrik zur Überwachung dieser Toleranz zu erfassen.
 

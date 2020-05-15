@@ -1,6 +1,6 @@
 ---
-title: 'Sicherheitsbaseline: Risikotoleranzmetriken und -indikatoren'
-description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um sich über die Quantifizierung der Geschäftsrisikotoleranz im Zusammenhang mit der Sicherheitsbaseline zu informieren.
+title: Risikotoleranzmetriken und -indikatoren in der Disziplin „Sicherheitsbaseline“.
+description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um sich über die Quantifizierung der Geschäftsrisikotoleranz im Zusammenhang mit der Disziplin „Sicherheitsbaseline“ zu informieren.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 770b266f243a016d0de65dfc235717a405025aa9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b55a8fbd96f83339cbc696ac9e3c15cbc2916924
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425972"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217692"
 ---
-# <a name="security-baseline-metrics-indicators-and-risk-tolerance"></a>Metriken, Indikatoren und Risikotoleranz für Sicherheitsbaseline
+# <a name="risk-tolerance-metrics-and-indicators-in-the-security-baseline-discipline"></a>Risikotoleranzmetriken und -indikatoren in der Disziplin „Sicherheitsbaseline“
 
-Dieser Artikel unterstützt Sie bei der Quantifizierung der Geschäftsrisikotoleranz im Zusammenhang mit der Sicherheitsbaseline. Das Definieren von Metriken und Indikatoren ermöglicht das Erstellen eines Geschäftsszenarios, mit dem Sie verstärkt auf die Ausgereiftheit der Disziplin „Sicherheitsbaseline“ setzen können.
+Lernen Sie, die Risikotoleranz von Unternehmen im Zusammenhang mit der Disziplin „Sicherheitsbaseline“ zu quantifizieren. Indem Sie Metriken und Indikatoren definieren, können Sie ein Geschäftsszenario erstellen, um in die Ausgereiftheit dieser Disziplin zu investieren.
 
 ## <a name="metrics"></a>Metriken
 
-Bei der Sicherheitsbaseline steht im Allgemeinen die Erkennung potenzieller Sicherheitsrisiken in Ihren Cloudbereitstellungen im Mittelpunkt. Im Rahmen der Risikoanalyse sollten Sie Daten zu Ihrer Sicherheitsumgebung sammeln, um zu bestimmen, wie hoch das Risiko ist und wie wichtig Investitionen in die Governance der Sicherheitsbaseline für Ihre geplanten Cloudbereitstellungen ist.
+Bei der Disziplin „Sicherheitsbaseline“ steht im Allgemeinen die Erkennung potenzieller Sicherheitsrisiken in Ihren Cloudbereitstellungen im Mittelpunkt. Im Rahmen der Risikoanalyse sollten Sie Daten zu Ihrer Sicherheitsumgebung sammeln, um zu bestimmen, wie hoch das Risiko ist und wie wichtig Investitionen in Ihre Disziplin „Sicherheitsbaseline“ für Ihre geplanten Cloudbereitstellungen ist.
 
 Jede Organisation weist unterschiedliche Sicherheitsumgebungen und -anforderungen sowie verschiedene potenzielle Quellen von Sicherheitsdaten auf. Es folgen Beispiele für nützliche Metriken, die Sie sammeln sollten, um die Risikotoleranz innerhalb der Disziplin der Sicherheitsbaseline zu bewerten:
 
@@ -32,7 +32,7 @@ Jede Organisation weist unterschiedliche Sicherheitsumgebungen und -anforderunge
 - **Abgedeckte Standards:** Anzahl der vom Sicherheitsteam definierten Sicherheitsstandards.
 - **Abgedeckte Ressourcen:** Bereitgestellte Ressourcen, die durch Sicherheitsstandards abgedeckt sind.
 - **Allgemeine Einhaltung von Standards:** Quote der Einhaltung von Sicherheitsstandards.
-- **Angriffe nach Schweregrad:** Wie viele koordinierte Versuche, Ihre in der Cloud gehosteten Dienste zu stören, z.B. durch DDoS-Angriffe (Distributed Denial of Service), treten in Ihrer Infrastruktur auf? Wie sieht es mit Umfang und Schweregrad dieser Angriffe aus?
+- **Angriffe nach Schweregrad:** Wie viele koordinierte Versuche, Ihre in der Cloud gehosteten Dienste zu stören, z. B. durch DDoS-Angriffe (Distributed Denial of Service), treten in Ihrer Infrastruktur auf? Wie sieht es mit Umfang und Schweregrad dieser Angriffe aus?
 - **Schutz vor Schadsoftware:** Prozentsatz der bereitgestellten virtuellen Computer (VMs), auf denen alle erforderliche Antischad-, Firewall- oder andere Sicherheitssoftware installiert ist.
 - **Patchlatenzzeit:** Wie lange ist es her, dass Betriebssystem- und Softwarepatches auf VMs angewendet wurden?
 - **Empfehlungen für Sicherheitsintegrität:** Anzahl der Empfehlungen von Sicherheitssoftware als Lösung für Integritätsstandards bereitgestellter Ressourcen, nach Schweregrad geordnet.
@@ -58,9 +58,9 @@ Die genauen Metriken und Auslöser, die Sie zum Bemessen der Risikotoleranz verw
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Dokumentieren Sie mit der Vorlage [Cloudverwaltung](./template.md) die Metriken und Toleranzindikatoren, die sich an dem aktuellen Cloudeinführungsplan orientieren.
+Verwenden Sie die [Disziplin „Sicherheitsbaseline“](./template.md) zum Dokumentieren der Metriken und Toleranzindikatoren, die sich an dem aktuellen Cloudeinführungsplan orientieren.
 
-Nutzen Sie Sicherheitsbaseline-Beispielrichtlinien als Ausgangspunkt für die Entwicklung von Richtlinien, die bestimmte Geschäftsrisiken behandeln, die Ihren Plänen für die Einführung der Cloud entsprechen.
+Nutzen Sie Sicherheitsbaseline-Beispielrichtlinien als Ausgangspunkt für die Entwicklung eigener Richtlinien, die bestimmte Geschäftsrisiken behandeln, entsprechend Ihren Plänen für die Einführung der Cloud.
 
 > [!div class="nextstepaction"]
 > [Überprüfen von Beispielrichtlinien](./policy-statements.md)

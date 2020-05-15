@@ -1,5 +1,5 @@
 ---
-title: Cloudgovernance-Methodik
+title: Governancemethodik für die Cloud
 description: Verwenden Sie einen inkrementellen, auf einem Minimum Viable Product (MVP) basierenden Governanceansatz, um Unternehmensrichtlinien zu unterstützen und eine schnelle Cloudeinführung zu ermöglichen.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 2738d623e863ae78903d3f20d60561349ef0d21e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0e26e7ee1c4bc534ea461de2293fe69b75de1360
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997417"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218389"
 ---
-# <a name="cloud-governance-methodology"></a>Cloudgovernance-Methodik
+# <a name="govern-methodology-for-the-cloud"></a>Governancemethodik für die Cloud
 
 Die Einführung der Cloud ist eine Reise und nicht ein Ziel. Auf dem Weg dorthin gibt es klare Meilensteine und konkrete Geschäftsvorteile. Der endgültige Zustand der Cloudeinführung ist jedoch unbekannt, wenn ein Unternehmen diese Reise beginnt. Cloud Governance schafft Absicherungen, die das Unternehmen während der gesamten Reise auf einem sicheren Weg halten.
 
@@ -37,17 +37,17 @@ Das Cloud Adoption Framework-Governancemodell identifiziert wichtige Bereiche vo
 
 **Fünf Disziplinen der Cloud Governance**: Diese Disziplinen unterstützen die Unternehmensrichtlinien. Jede Disziplin schützt das Unternehmen vor potenziellen Fallstricken:
 
-- Cost Management
-- Sicherheitsbaseline
-- Ressourcenkonsistenz
-- Identitätsbaseline
-- Beschleunigung der Bereitstellung
+- Disziplin „Kostenverwaltung“
+- Disziplin „Sicherheitsbaseline“
+- Disziplin „Ressourcenkonsistenz“
+- Disziplin „Identitätsbaseline“
+- Disziplin „Beschleunigung der Bereitstellung“
 
 Unternehmensrichtlinien dienen im Wesentlichen als Frühwarnsystem zur Erkennung potenzieller Probleme. Die Disziplinen helfen dem Unternehmen, Risiken zu kontrollieren und Absicherungen zu erstellen.
 
 ## <a name="grow-to-the-end-state"></a>Wachsen bis zum Endzustand
 
-Da sich die Governanceanforderungen im Lauf der Cloudeinführung ändern, ist ein anderer Ansatz für Governance erforderlich. Unternehmen können nicht länger warten, bis ein kleines Team bildlich gesprochen auf jeder Autobahn Leitplanken anbringt und Landkarten erstellt, *bevor sie den ersten Schritt machen*. Geschäftsergebnisse werden schneller und reibungsloser erwartet. Die IT-Governance muss sich zudem schnell weiterentwickeln und mit den Geschäftsanforderungen Schritt halten, um bei der Einführung der Cloud relevant zu bleiben und „Schatten-IT“ zu vermeiden.
+Da sich die Governanceanforderungen im Lauf der Cloudeinführung ändern, ist ein anderer Ansatz für Governance erforderlich. Unternehmen können nicht länger warten, bis ein kleines Team bildlich gesprochen auf jeder Autobahn Leitplanken anbringt und Landkarten erstellt, _bevor sie den ersten Schritt machen_. Geschäftsergebnisse werden schneller und reibungsloser erwartet. Die IT-Governance muss sich zudem schnell weiterentwickeln und mit den Geschäftsanforderungen Schritt halten, um bei der Einführung der Cloud relevant zu bleiben und „Schatten-IT“ zu vermeiden.
 
 Ein **inkrementeller Governance**ansatz stärkt diese Eigenschaften. Inkrementelle Governance basiert auf einer kleinen Sammlung von Unternehmensrichtlinien, -prozessen und -tools, um eine Grundlage für die Einführung und Governance zu schaffen. Diese Grundlage wird als **Minimum Viable Product (MVP)** bezeichnet. Ein MVP ermöglicht es dem Governance-Team, Governance schnell in Implementierungen während des gesamten Einführungszyklus zu integrieren. Ein MVP kann zu jedem Zeitpunkt während des Cloudeinführungsprozesses eingerichtet werden. Es hat sich allerdings bewährt, ein MVP so früh wie möglich einzuführen.
 

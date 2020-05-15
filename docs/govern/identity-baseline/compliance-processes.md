@@ -1,6 +1,6 @@
 ---
 title: 'Identitätsbaseline: Prozesse für Richtlinienkonformität'
-description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um sich über einen Ansatz für die Erstellung von Prozessen zu informieren, die eine Governancedisziplin vom Typ „Identitätsbaseline“ unterstützen.
+description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um sich über einen Ansatz für die Erstellung von Prozessen zu informieren, die eine Disziplin vom Typ „Identitätsbaseline“ unterstützen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 75f85ef971bdf96fe14f1ddc72462edafbfd8473
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0837950a32a57fba595166c1b78c18aea0385417
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433086"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214462"
 ---
 # <a name="identity-baseline-policy-compliance-processes"></a>Identitätsbaseline: Prozesse für Richtlinienkonformität
 
-In diesem Artikel wird ein Ansatz für Prozesse zur Einhaltung von Richtlinien beschrieben, die die [Identitätsbaseline](./index.md) regeln. Eine wirkungsvolle Identitätskontrolle (Governance) beginnt mit wiederkehrenden manuellen Prozessen zur Steuerung von Übernahme und Überarbeitungen der Identitätsrichtlinien. Dies erfordert die regelmäßige Einbeziehung des Cloudgovernanceteams sowie interessierter Geschäfts- und IT-Beteiligter, um Richtlinien zu überprüfen und zu aktualisieren und die Einhaltung von Richtlinien sicherzustellen. Darüber hinaus können viele laufende Überwachungs- und Durchsetzungsprozesse automatisiert oder durch Werkzeuge ergänzt werden, um den Kontrolloverhead zu reduzieren und schneller auf Abweichungen von der Richtlinie reagieren zu können.
+In diesem Artikel wird ein Ansatz für Prozesse zur Einhaltung von Richtlinien beschrieben, die die Disziplin [Identitätsbaseline](./index.md) regeln. Eine wirkungsvolle Identitätskontrolle (Governance) beginnt mit wiederkehrenden manuellen Prozessen zur Steuerung von Übernahme und Überarbeitungen der Identitätsrichtlinien. Dies erfordert die regelmäßige Einbeziehung des Cloudgovernanceteams sowie interessierter Geschäfts- und IT-Beteiligter, um Richtlinien zu überprüfen und zu aktualisieren und die Einhaltung von Richtlinien sicherzustellen. Darüber hinaus können viele laufende Überwachungs- und Durchsetzungsprozesse automatisiert oder durch Werkzeuge ergänzt werden, um den Kontrolloverhead zu reduzieren und schneller auf Abweichungen von der Richtlinie reagieren zu können.
 
 ## <a name="planning-review-and-reporting-processes"></a>Planungs-, Prüfungs- und Berichterstellungsprozesse
 
@@ -41,7 +41,7 @@ Dieser Planungsprozess ist auch ein guter Zeitpunkt, um die aktuelle Zusammenset
 
 ## <a name="processes-for-ongoing-monitoring"></a>Prozesse zur fortlaufenden Überwachung
 
-Ob Ihre Identitätsverwaltungsstrategie erfolgreich ist, hängt von der Transparenz des aktuellen und vergangenen Zustands Ihrer Identitätssysteme ab. Ohne die Möglichkeit, die relevanten Metriken und Daten Ihrer Cloudbereitstellung zu analysieren, können Sie keine Veränderungen bei den Risiken und keine Verstöße gegen Ihre Risikotoleranzen erkennen. Die oben beschriebenen laufenden Kontrollprozesse erfordern qualitativ hochwertige Daten, um sicherzustellen, dass die Richtlinie an die sich ändernden Bedürfnisse Ihres Unternehmens angepasst werden kann.
+Eine erfolgreiche Identitätsbaselinestrategie hängt von der Transparenz des aktuellen und vergangenen Zustands Ihrer Identitätssysteme ab. Ohne die Möglichkeit, die relevanten Metriken und Daten Ihrer Cloudbereitstellung zu analysieren, können Sie keine Veränderungen bei den Risiken und keine Verstöße gegen Ihre Risikotoleranzen erkennen. Die oben beschriebenen laufenden Kontrollprozesse erfordern qualitativ hochwertige Daten, um sicherzustellen, dass die Richtlinie an die sich ändernden Bedürfnisse Ihres Unternehmens angepasst werden kann.
 
 Stellen Sie sicher, dass Ihre IT-Teams automatisierte Überwachungssysteme für Ihre Identitätsdienste implementiert haben, die die Protokolle und Prüfungsinformationen erfassen, die Sie zur Risikobewertung benötigen. Überwachen Sie diese Systeme proaktiv, um eine schnelle Erkennung und Eindämmung potenzieller Richtlinienverletzungen zu gewährleisten und sicherzustellen, dass alle Änderungen an Ihrer Identitätsinfrastruktur in Ihrer Überwachungsstrategie berücksichtigt werden.
 
@@ -57,7 +57,7 @@ Die folgenden Auslöser und Durchsetzungsmaßnahmen sind Beispiele, auf die Sie 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Dokumentieren Sie mit der Vorlage [Cloudverwaltung](./template.md) die Prozesse und Auslöser, die sich an dem aktuellen Cloudeinführungsplan orientieren.
+Verwenden Sie die [Vorlage zur Disziplin „Identitätsbaseline“](./template.md) zum Dokumentieren der Prozesse und Auslöser, die sich an dem aktuellen Cloudeinführungsplan orientieren.
 
 Anleitungen zur Ausführung von Cloudverwaltungsrichtlinien in Abstimmung mit Einführungsplänen finden Sie im Artikel über Verbesserungen von Disziplinen.
 

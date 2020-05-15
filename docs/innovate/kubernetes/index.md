@@ -4,16 +4,15 @@ description: Erfahren Sie mehr über Kubernetes im Framework für die Cloudeinf�
 author: sabbour
 ms.author: asabbour
 ms.date: 12/16/2019
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-layout: LandingPage
-ms.openlocfilehash: e0956145f2fe0ccc0a38212194ae14f25a28991d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 15e1d020d00bfd2c1b8c8ddb4b0e60e4e98407fd
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80392713"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83398858"
 ---
 <!-- cSpell:ignore asabbour sabbour -->
 
@@ -29,63 +28,10 @@ Machen Sie zur Vorbereitung auf diese Phase des Cloudeinführungszyklus die folg
 
 <!-- markdownlint-disable MD033 -->
 
-<ul class="panelContent cardsF">
-    <li style="display: flex; flex-direction: column;">
-        <a href="./application-development.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../../_images/icons/1.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Anwendungsentwicklung und Bereitstellung</h3>
-Untersuchen Sie Muster und Vorgehensweisen für die Anwendungsentwicklung, konfigurieren Sie DevOps-Pipelines, und implementieren Sie bewährte Methoden für Websitezuverlässigkeits-Engineering (Site Reliability Engineering, SRE).
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./cluster-design-operations.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../../_images/icons/2.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Clusterentwurf und Vorgänge</h3>
-Identifizieren Sie Clusterkonfiguration und Netzwerkdesign. Gewährleisten Sie zukunftssichere Skalierbarkeit durch die Automatisierung der Infrastrukturbereitstellung. Stellen Sie Hochverfügbarkeit sicher, indem Sie Business Continuity & Disaster Recovery planen.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./cluster-application-security.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../../_images/icons/3.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Cluster- und Anwendungssicherheit</h3>
-Machen Sie sich mit den grundlegenden Sicherheitsaspekten von Kubernetes vertraut. Weitere Informationen finden Sie im Leitfaden zur sicheren Clustereinrichtung und Anwendungssicherheit.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
+| | |
+|---|---|
+| <br> ![Symbol für Element 1](../../_images/icons/1.png) | [Anwendungsentwicklung und Bereitstellung:](./application-development.md) Untersuchen Sie Muster und Vorgehensweisen für die Anwendungsentwicklung, konfigurieren Sie DevOps-Pipelines, und implementieren Sie bewährte Methoden für Websitezuverlässigkeits-Engineering (Site Reliability Engineering, SRE). |
+| <br> ![Symbol für Element 2](../../_images/icons/2.png) | [Clusterentwurf und Vorgänge:](./cluster-design-operations.md) Identifizieren Sie Clusterkonfiguration und Netzwerkdesign. Gewährleisten Sie zukunftssichere Skalierbarkeit durch die Automatisierung der Infrastrukturbereitstellung. Stellen Sie Hochverfügbarkeit sicher, indem Sie Business Continuity & Disaster Recovery planen. |
+| <br> ![Symbol für Element 3](../../_images/icons/3.png) | [Cluster- und Anwendungssicherheit:](./cluster-application-security.md) Machen Sie sich mit den grundlegenden Sicherheitsaspekten von Kubernetes vertraut. Weitere Informationen finden Sie im Leitfaden zur sicheren Clustereinrichtung und Anwendungssicherheit. |
+
 <!-- markdownlint-enable MD033 -->

@@ -8,24 +8,24 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 234136b777107c93e7ea26b9a183c1ec34b75e24
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4f0f680c26fec666c7f60ba9c74b5cdc7eb22348
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120104"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217741"
 ---
 # <a name="security-baseline-discipline-improvement"></a>Verbesserung der Disziplin „Sicherheitsbaseline“
 
-Die Disziplin „Sicherheitsbaseline“ konzentriert sich auf Möglichkeiten zum Festlegen von Richtlinien, die das Netzwerk, Ressourcen und vor allem die Daten schützen, die sich in der Lösung eines Cloudanbieters befinden werden. Innerhalb der fünf Disziplinen von Cloud Governance umfasst „Sicherheitsbaseline“ die Klassifizierung des digitalen Bestands und der Daten. Darüber hinaus sind die Dokumentation zu Risiken, Geschäftstoleranz und Lösungsstrategien in Zusammenhang mit der Sicherheit von Daten, Ressourcen und Netzwerk enthalten. Aus technischer Sicht umfasst dies auch die Beteiligung an Entscheidungen in Bezug auf [Verschlüsselung](../../decision-guides/encryption/index.md), [Netzwerkanforderungen](../../decision-guides/software-defined-network/index.md), [Hybrididentitätsstrategien](../../decision-guides/identity/index.md) und [Prozesse](./compliance-processes.md) zur Entwicklung von Richtlinien für die Cloudsicherheitsbaseline.
+Die Disziplin „Sicherheitsbaseline“ konzentriert sich auf Möglichkeiten zum Festlegen von Richtlinien, die das Netzwerk, Ressourcen und vor allem die Daten schützen, die sich in der Lösung eines Cloudanbieters befinden werden. Innerhalb der fünf Disziplinen von Cloud Governance umfasst die Disziplin „Sicherheitsbaseline“ die Klassifizierung des digitalen Bestands und der Daten. Darüber hinaus sind die Dokumentation zu Risiken, Geschäftstoleranz und Lösungsstrategien in Zusammenhang mit der Sicherheit von Daten, Ressourcen und Netzwerk enthalten. Aus technischer Sicht umfasst dies auch die Beteiligung an Entscheidungen in Bezug auf [Verschlüsselung](../../decision-guides/encryption/index.md), [Netzwerkanforderungen](../../decision-guides/software-defined-network/index.md), [Hybrididentitätsstrategien](../../decision-guides/identity/index.md) und [Prozesse](./compliance-processes.md) zur Entwicklung von Sicherheitsbaseline-Richtlinien für die Cloud.
 
 Dieser Artikel beschreibt einige potenzielle Aufgaben, die Ihr Unternehmen ausführen kann, um die Disziplin „Sicherheitsbaseline“ besser erstellen und weiterentwickeln zu können. Diese Aufgaben lassen sich in verschiedene Phasen der Implementierung einer Cloudlösung unterteilen: Planung, Erstellung, Einführung und Betrieb. Diese Phasen werden dann durchlaufen und ermöglichen die Entwicklung eines [inkrementellen Ansatzes für die Cloudgovernance](../guides/index.md#an-incremental-approach-to-cloud-governance).
 
 ![Vier Phasen der Einführung](../../_images/govern/adoption-phases.png)
 
-*Abbildung 1: Einführungsphasen des inkrementellen Ansatzes für die Cloudgovernance.*
+_Abbildung 1: Einführungsphasen des inkrementellen Ansatzes für die Cloudgovernance._
 
-Es ist unmöglich, die Anforderungen aller Unternehmen in einem einzigen Dokument zu berücksichtigen. Daher werden in diesem Artikel die empfohlenen mindestens auszuführenden Aktivitäten sowie Beispiele für potenzielle Aktivitäten für jede Phase des Weiterentwicklungsprozesses für die Governance beschrieben. Ziel dieser Aktivitäten ist es, Sie beim Aufbau eines [Richtlinien-MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) und bei der Einrichtung eines Frameworks für die inkrementelle Verbesserung der Richtlinie zu unterstützen. Ihr Cloudgovernanceteam muss entscheiden, wie viel in diese Aktivitäten investiert werden soll, um Ihre Funktionen für die Governance der Sicherheitsbaseline zu verbessern.
+Es ist unmöglich, die Anforderungen aller Unternehmen in einem einzigen Dokument zu berücksichtigen. Daher werden in diesem Artikel die empfohlenen mindestens auszuführenden Aktivitäten sowie Beispiele für potenzielle Aktivitäten für jede Phase des Weiterentwicklungsprozesses für die Governance beschrieben. Ziel dieser Aktivitäten ist es, Sie beim Aufbau eines [Richtlinien-MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) und bei der Einrichtung eines Frameworks für die inkrementelle Verbesserung der Richtlinie zu unterstützen. Ihr Cloudgovernanceteam muss entscheiden, wie viel in diese Aktivitäten investiert werden soll, um Ihre Disziplin „Sicherheitsbaseline“ zu verbessern.
 
 > [!CAUTION]
 > Weder die in diesem Artikel beschriebenen mindestens erforderlichen noch die potenziellen Aktivitäten sind auf bestimmte Unternehmensrichtlinien oder Complianceanforderungen von Drittanbietern ausgerichtet. Dieser Leitfaden soll bei Gesprächen über die Ausrichtung beider Anforderungen auf ein Cloudgovernancemodell helfen.
@@ -46,13 +46,11 @@ Diese Entwicklungsphase der Governance überbrückt die Lücke zwischen Geschäf
 - Definieren Sie ein Datenklassifizierungsschema.
 - Führen Sie einen Planungsprozess für digitalen Bestand durch, um die aktuellen IT-Ressourcen zu inventarisieren, die Ihren Geschäftsprozessen und unterstützenden Vorgängen zugrunde liegen.
 - Führen Sie eine [Richtlinienüberprüfung](../../govern/policy-compliance/cloud-policy-review.md) durch, um den Prozess der Modernisierung bestehender IT-Sicherheitsrichtlinien des Unternehmens einzuleiten, und definieren Sie MVP-Richtlinien für bekannte Risiken.
-- Überprüfen Sie die Sicherheitsrichtlinien für Ihre Cloudplattform. Die entsprechenden Angaben für Azure finden Sie auf der [Microsoft Service Trust Platform](https://servicetrust.microsoft.com).
-- Bestimmen Sie, ob Ihre Richtlinie für die Sicherheitsbaseline einen [Security Development Lifecycle](https://www.microsoft.com/en-us/securityengineering/sdl) beinhaltet.
+- Überprüfen Sie die Sicherheitsrichtlinien für Ihre Cloudplattform. Die entsprechenden Angaben für Azure finden Sie im [Microsoft Service Trust Portal](https://servicetrust.microsoft.com).
+- Bestimmen Sie, ob Ihre Richtlinie für die Sicherheitsbaseline einen [Security Development Lifecycle](https://www.microsoft.com/sdl) beinhaltet.
 - Bewerten Sie Geschäftsrisiken in Bezug auf Netzwerk, Daten und Ressourcen auf der Grundlage der nächsten ein bis drei Releases, und bemessen Sie die Toleranz Ihres Unternehmens gegenüber diesen Risiken.
 - Lesen Sie den Bericht zu den [wichtigsten Trends bei der Cybersicherheit](https://www.microsoft.com/security/operations/security-intelligence-report) von Microsoft, um einen Überblick über die aktuelle Sicherheitslandschaft zu erhalten.
-- Ziehen Sie die Entwicklung einer Rolle vom Typ [Sicherheits-DevOps](https://www.microsoft.com/en-us/securityengineering/devsecops) in Ihrer Organisation in Betracht.
-
-<!-- "en-us" location is required for the URLs above. -->
+- Ziehen Sie die Entwicklung einer Rolle vom Typ [DevSecOps](https://www.microsoft.com/devsecops) in Ihrer Organisation in Betracht.
 
 ## <a name="build-and-predeployment"></a>Erstellung und Aktivitäten vor der Bereitstellung
 
@@ -73,7 +71,7 @@ Für die erfolgreiche Migration einer Umgebung muss eine Reihe von technischen u
 - Bewerten Sie die Richtlinien für den [Zugriff mit den geringsten Rechten](https://docs.microsoft.com/azure/active-directory/users-groups-roles/roles-delegate-by-task) Ihrer Organisation, und verwenden Sie aufgabenbasierte Rollen, um den Zugriff auf bestimmte Ressourcen zu ermöglichen.
 - Wenden Sie Sicherheits- und Überwachungsmechanismen auf alle Clouddienste und virtuellen Computer an.
 - Automatisieren Sie [Sicherheitsrichtlinien](../../decision-guides/policy-enforcement/index.md), wo dies möglich ist.
-- Überprüfen Sie Ihre Richtlinie für die Sicherheitsbaseline, und bestimmen Sie, ob Sie Ihre Pläne gemäß den Anleitungen für Best Practices, wie sie z.B. im [Security Development Lifecycle](https://www.microsoft.com/securityengineering/sdl) angegeben sind, ändern müssen.
+- Überprüfen Sie Ihre Richtlinie für die Sicherheitsbaseline, und bestimmen Sie, ob Sie Ihre Pläne gemäß den Anleitungen für Best Practices, wie sie z. B. im [Security Development Lifecycle](https://www.microsoft.com/sdl) angegeben sind, ändern müssen.
 
 ## <a name="adopt-and-migrate"></a>Einführen und Migrieren
 

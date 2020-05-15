@@ -8,22 +8,24 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: abdd12c9c236b66fced32b1b70886d118a25c7bc
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 98c41d102ca54ebcb299989b907e2e6c6b237896
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995047"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223472"
 ---
-# <a name="skills-readiness-path-during-the-ready-phase-of-a-migration"></a>Pfad für die Qualifikationsbereitschaft während der Phase „Bereitschaft“ einer Migration
+# <a name="building-technical-skills"></a>Entwickeln von technischen Fähigkeiten
 
-Während der Phase *Bereitschaft* einer Migration ist das Ziel die Vorbereitung auf den bevorstehenden Weg. Diese Phase wird in zwei primären Bereichen durchgeführt: Organisatorische Bereitschaft und (technische) Bereitschaft der Umgebung. Beide Bereiche erfordern möglicherweise neue Qualifikationen sowohl für technische als auch für nicht technische Mitwirkende. Die folgenden Informationen können Ihre Organisation beim Erwerb der erforderlichen Qualifikationen unterstützen.
+Die organisatorische und Umgebungsbereitschaft (technisch) können möglicherweise neue Qualifikationen sowohl für technische als auch für nicht technische Mitwirkende erfordern. Die folgenden Informationen können Ihre Organisation beim Erwerb der erforderlichen Qualifikationen unterstützen.
 
 ## <a name="organizational-readiness-learning-paths"></a>Lernpfade für die organisatorische Bereitschaft
 
 Abhängig von den Motivationen und Geschäftsergebnissen, die mit einer Cloudeinführung verbunden sind, kann es notwendig sein, dass Führungskräfte neue Organisationsstrukturen oder virtuelle Teams (v-Teams) aufbauen, um verschiedene Funktionen zu ermöglichen. Die folgenden Artikel helfen Ihrem Unternehmen bei der Entwicklung der notwendigen Qualifikationen, um diese Teams so zu strukturieren, dass Sie die gewünschten Ergebnisse erzielen:
 
-- [Erstausrichtung der Organisation](./index.md): Eine Übersicht über die Ausrichtung und Teamstrukturen, die Ihnen hilft, bestimmte Ziele zu erreichen.
+- [Ausrichten Ihrer Organisation](../get-started/org-alignment.md): Entdecken Sie Ansätze zur Einrichtung der geeigneten Organisationsstrukturen.
+- [Übungen zur Organisationsausrichtung](./index.md): Erhalten Sie eine Übersicht über die Ausrichtung und Teamstrukturen, die Ihnen helfen, bestimmte Ziele zu erreichen.
+- [Einrichten von Teams](../get-started/help.md#establish-teams): Erfahren Siem, wie Sie anhand der folgenden Leitfäden Teams in Ihrer Organisation einrichten, die für die Bereitstellung von Cloudfunktionen verantwortlich sind.
 - [Aufschlüsseln von Silos und Machtbereichen](./fiefdoms-silos.md): Informationen zu zwei gängigen *organisatorischen Antimustern* und Möglichkeiten, das Team zur produktiven Zusammenarbeit zu führen.
 
 ## <a name="environmental-technical-readiness-learning-paths"></a>Lernpfade für die (technische) Bereitschaft der Umgebung
@@ -71,8 +73,8 @@ Im Folgenden lernen Sie einige Beispiele für rollenspezifische Lernpfade unter 
 
 - [Administratoren](https://docs.microsoft.com/learn/browse/?roles=administrator) haben Zugriff auf Module, die sich auf die Azure-Grundlagen, das Konfigurieren von Containern oder sogar die erweiterte Verwaltung in der Cloud konzentrieren.
 
-- [Entwickler](https://docs.microsoft.com/learn/browse/?roles=developer&term=infrastructure) können Learn-Ressourcen verwenden, um mehr über die Möglichkeiten zur Unterstützung bei Architektur-, Governance- und Modernisierungaktivitäten zu erfahren.
+- [Entwickler](https://docs.microsoft.com/learn/browse/?roles=developer&term=infrastructure) können Microsoft Learn-Ressourcen verwenden, um mehr über die Möglichkeiten zur Unterstützung bei Architektur-, Governance- und Modernisierungaktivitäten zu erfahren.
 
 ## <a name="learn-more"></a>Weitere Informationen
 
-Weitere Lernpfade finden Sie im [Microsoft Learn-Katalog](https://docs.microsoft.com/learn/browse). Verwenden Sie den Filter „Rollen“, um Lernpfade an ihrer Rolle auszurichten.
+Weitere Lernpfade finden Sie im [Microsoft Learn-Katalog](https://docs.microsoft.com/learn/browse). Verwenden Sie den Filter „Rollen“, um Lernpfade an Ihrer Rolle auszurichten.

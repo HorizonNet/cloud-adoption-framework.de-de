@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1fb85abb334f5af52b3b6a2dda375897a9b5b4ee
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e3f2a6156d282e2db6fb8a7206251447f9e48f71
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997255"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219800"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Beispiele für Richtlinienanweisungen der Sicherheitsbaseline
 
@@ -47,7 +47,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine sicherh
 
 **Richtlinienanweisung:** Netzwerksubnetze mit geschützten Daten müssen von allen anderen Subnetzen isoliert werden. Der Netzwerkdatenverkehr zwischen Subnetzen mit geschützten Daten muss regelmäßig überwacht werden.
 
-**Potenzielle Entwurfsoption:** In Azure wird die Isolation von Netzwerk und Subnetz über [Azure Virtual Networks](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) verwaltet.
+**Potenzielle Entwurfsoption:** In Azure wird die Isolation von Netzwerk und Subnetz über [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) verwaltet.
 
 ## <a name="secure-external-access"></a>Sicherer externer Zugriff
 
@@ -55,7 +55,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine sicherh
 
 **Richtlinienanweisung:** Kein Subnetz mit geschützten Daten ist direkt über das öffentliche Internet oder rechenzentrumsübergreifend zugänglich. Der Zugriff auf diese Subnetze muss über zwischengeschaltete Subnetze geroutet werden. Der gesamte Zugriff auf diese Subnetze muss über eine Firewalllösung erfolgen, die Funktionen zur Paketüberprüfung und Sperrfunktionen durchführen kann.
 
-**Potenzielle Entwurfsoption:** Sichern Sie in Azure öffentliche Endpunkte durch Bereitstellen einer [DMZ zwischen dem öffentlichen Internet und Ihrem cloudbasierten Netzwerk](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json). Erwägen Sie die Bereitstellung, Konfiguration und Automatisierung von [Azure Firewall](https://docs.microsoft.com/azure/firewall).
+**Potenzielle Entwurfsoption:** Sichern Sie in Azure öffentliche Endpunkte durch Bereitstellen einer [DMZ zwischen dem öffentlichen Internet und Ihrem cloudbasierten Netzwerk](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json). Erwägen Sie die Bereitstellung, Konfiguration und Automatisierung von [Azure Firewall](https://docs.microsoft.com/azure/firewall/overview).
 
 ## <a name="ddos-protection"></a>DDoS-Schutz
 
@@ -93,7 +93,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine sicherh
 
 Verwenden Sie die in diesem Artikel erwähnten Beispiele als Ausgangspunkt für die Entwicklung von Richtlinien, die bestimmte Sicherheitsrisiken behandeln, die Ihren Plänen für die Einführung der Cloud entsprechen.
 
-Um mit der Entwicklung Ihrer eigenen, benutzerdefinierten Richtlinienanweisungen mit Bezug auf die Sicherheitsbaseline zu beginnen, laden Sie die [Sicherheitsbaselinevorlage](./template.md) herunter.
+Wenn Sie mit der Entwicklung Ihrer eigenen, benutzerdefinierten Richtlinienanweisungen für die Sicherheitsbaseline beginnen möchten, laden Sie die [Vorlage zur Disziplin „Sicherheitsbaseline“](./template.md) herunter.
 
 Um die Einführung dieser Disziplin zu beschleunigen, wählen Sie den [umsetzbaren Governanceleitfaden](../guides/index.md) aus, der am besten zu Ihrer Umgebung passt. Ändern Sie dann den Entwurf, um Ihre speziellen Entscheidungen für Unternehmensrichtlinien zu integrieren.
 

@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4d9638f123da72ec10f0f68f91a5daf69f727ba7
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 683340ce6247e33e78def4abf662dd63b65bf085
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425994"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217726"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Richtlinie zur cloudnativen Sicherheitsbaseline
 
-[Sicherheitsbaseline](./index.md) ist eine der [fünf Disziplinen von Cloud Governance](../governance-disciplines.md). Bei dieser Disziplin geht es um allgemeine Sicherheitsthemen, z. B. den Schutz des Netzwerks, von digitalen Ressourcen und von Daten. Wie im [Leitfaden zur Richtlinienüberprüfung](../policy-compliance/cloud-policy-review.md) erläutert, umfasst das Cloud Adoption Framework drei Ebenen von Beispielrichtlinien: cloudnative, Unternehmens- und cloudentwurfsprinzipien-konforme Richtlinien für jede der einzelnen Disziplinen. In diesem Artikel wird die cloudnative Beispielrichtlinie für die Disziplin der Sicherheitsbaseline beschrieben.
+Die [Disziplin „Sicherheitsbaseline“](./index.md) ist eine der [fünf Disziplinen der Cloudgovernance](../governance-disciplines.md). Bei dieser Disziplin geht es um allgemeine Sicherheitsthemen, z. B. den Schutz des Netzwerks, von digitalen Ressourcen und von Daten. Wie im [Leitfaden zur Richtlinienüberprüfung](../policy-compliance/cloud-policy-review.md) erläutert, umfasst das Cloud Adoption Framework drei Ebenen von Beispielrichtlinien: cloudnative, Unternehmens- und cloudentwurfsprinzipien-konforme Richtlinien für jede der einzelnen Disziplinen. In diesem Artikel wird die cloudnative Beispielrichtlinie für die Disziplin der Sicherheitsbaseline beschrieben.
 
 > [!NOTE]
 > Microsoft ist nicht in der Lage, Unternehmens- oder IT-Richtlinien vorzuschreiben. Dieser Artikel unterstützt Sie bei den Vorbereitungen für eine interne Richtlinienüberprüfung. Es wird davon ausgegangen, dass diese Beispielrichtlinie vor ihrer Verwendung erweitert, überprüft und in Bezug auf Ihre Unternehmensrichtlinie getestet wird. Die Beispielrichtlinie sollte nicht ohne Anpassungen verwendet werden.
@@ -45,7 +45,7 @@ Eine cloudnative Beispielrichtlinie für die Identität in allen lokalen und Clo
 - Just-in-Time-Zugriff (JIT): gerade genügend Zugriff, der pro Aufgabe gewährt wird, um die Offenlegung von Administratoranmeldeinformationen mit zu vielen Berechtigungen einzuschränken.
 - Erweiterte Benutzeridentität und Zugriff auf Richtlinien in mehreren Umgebungen über Azure Active Directory.
 
-Obwohl es wichtig ist, die [Identitätsbaseline](../identity-baseline/index.md) im Kontext der Sicherheitsbaseline zu verstehen, wird in den [fünf Disziplinen der Cloudgovernance](../index.md) die [Identitätsbaseline](../identity-baseline/index.md) als eigenständige von der Sicherheitsbaseline getrennte Disziplin verstanden.
+Obwohl es wichtig ist, die [Disziplin „Identitätsbaseline“](../identity-baseline/index.md) im Kontext der Disziplin „Sicherheitsbaseline“ zu verstehen, wird die Identitätsbaseline in den [fünf Disziplinen der Cloudgovernance](../index.md) als eigenständige Disziplin behandelt.
 
 ### <a name="network-access-policies"></a>Netzwerkzugriffsrichtlinien
 
@@ -55,8 +55,8 @@ Eine cloudnative Richtlinie für Netzwerkelemente kann beispielsweise folgende A
 
 - Hybridverbindungen mit lokalen Ressourcen sind in einer cloudnativen Richtlinie möglicherweise nicht zulässig. Wenn sich eine Hybridverbindung als notwendig erweisen sollte, stellt eine robustere Sicherheitsrichtlinie auf Enterprise-Ebene eine bessere Variante dar.
 - Benutzer können sichere Verbindungen mit Azure und innerhalb davon über virtuelle Netzwerke und Netzwerksicherheitsgruppen herstellen.
-- Die native Microsoft Azure Firewall schützt Hosts durch beschränkten Portzugriff vor schädlichem Netzwerkdatenverkehr. Ein gutes Beispiel für diese Richtlinie ist eine Anforderung, direkten Datenverkehr für einen virtuellen Computer über SSH/RDP zu blockieren (oder nicht zu aktivieren).
-- Dienste wie Web Application Firewall (WAF) von Azure Application Gateway und Azure DDoS Protection schützen Anwendungen und stellen die Verfügbarkeit von in Azure ausgeführten virtuellen Computern sicher. Diese Features sollten nicht deaktiviert werden.
+- Die native Microsoft Azure Firewall schützt Hosts durch Beschränken des Portzugriffs vor schädlichem Netzwerkdatenverkehr. Ein gutes Beispiel für diese Richtlinie ist eine Anforderung, direkten Datenverkehr für einen virtuellen Computer über SSH/RDP zu blockieren oder nicht zu aktivieren.
+- Dienste wie Azure Web Application Firewall (WAF) unter Azure Application Gateway und Azure DDoS Protection schützen Anwendungen und stellen die Verfügbarkeit von in Azure ausgeführten virtuellen Computern sicher. Diese Features sollten nicht deaktiviert werden.
 
 ### <a name="data-protection"></a>Schutz von Daten
 
@@ -79,7 +79,7 @@ Die Sicherheitsüberwachung ist eine proaktive Strategie, bei der Ihre Ressource
 - Umfassende Protokollierung und Integration in vorhandenen Sicherheitsinformationen.
 - Verringert den Bedarf an teuren, nicht integrierten, einmalig verwendeten Sicherheitslösungen.
 
-### <a name="extending-cloud-native-policies"></a>Erweitern von cloudnativen Richtlinien.
+### <a name="extend-cloud-native-policies"></a>Erweitern cloudnativer Richtlinien
 
 Durch die Verwendung der Cloud lassen sich einige Sicherheitsbürden verringern. Microsoft bietet physische Sicherheit für Azure-Rechenzentren und trägt zum Schutz der Cloudplattform vor Bedrohungen der Infrastruktur wie z.B. einem DDoS-Angriff bei. Da Microsoft über Tausende von Cybersicherheitsspezialisten verfügt, die sich täglich mit Sicherheitsbelangen beschäftigen, sind die Ressourcen zur Erkennung, Verhinderung oder Minderung von Cyberangriffen beträchtlich. Während sich Unternehmen früher Gedanken darüber machten, ob die Cloud sicher ist, verstehen die meisten jetzt, dass das Ausmaß der Investitionen in Mitarbeiter und spezialisierte Infrastrukturen von Anbietern wie Microsoft die Cloud sicherer macht als die meisten lokalen Rechenzentren.
 Durch die Verwendung der Cloud lassen sich einige Sicherheitsbürden verringern. Microsoft bietet physische Sicherheit für Azure-Rechenzentren und trägt zum Schutz der Cloudplattform vor Bedrohungen der Infrastruktur wie z.B. einem DDoS-Angriff bei. Da Microsoft über Tausende von Cybersicherheitsspezialisten verfügt, die sich täglich mit Sicherheitsbelangen beschäftigen, sind die Ressourcen zur Erkennung, Verhinderung oder Minderung von Cyberangriffen beträchtlich. Während sich Unternehmen früher Gedanken darüber machten, ob die Cloud sicher ist, verstehen die meisten jetzt, dass das Ausmaß der Investitionen in Mitarbeiter und spezialisierte Infrastrukturen von Anbietern wie Microsoft die Cloud sicherer macht als die meisten lokalen Rechenzentren.
@@ -89,7 +89,7 @@ Selbst bei dieser Investition in die cloudnative Sicherheitsbaseline empfiehlt e
 - **Schützen von virtuellen Computern:** Sicherheit sollte für jede Organisation oberste Priorität haben, und dazu bedarf es mehrerer Vorgänge. Sie müssen den Sicherheitsstatus bewerten, das System vor Sicherheitsbedrohungen schützen und dann bestehende Bedrohungen erkennen und schnell darauf reagieren.
 - **Schützen der Inhalte von virtuellen Computern:** Die Einrichtung regelmäßiger automatisierter Sicherungen ist zum Schutz vor Benutzerfehlern unerlässlich. Dies genügt jedoch nicht: Sie müssen außerdem sicherstellen, dass die Sicherungen vor Cyberangriffen geschützt und jederzeit verfügbar sind.
 - **Überwachen von Anwendungen:** Dieses Muster umfasst mehrere Aufgaben, z.B. Einblick in den Integritätsstatus der virtuellen Computer, Verständnis der Interaktionen zwischen den virtuellen Computern und Festlegung von Möglichkeiten zur Überwachung der Anwendungen, die auf den virtuellen Computern ausgeführt werden. Alle diese Aufgaben sind unerlässlich, damit die Anwendungen rund um die Uhr ausgeführt werden.
-- **Schützen und Überwachen des Datenzugriffs:** Organisationen sollten den gesamten Datenzugriff überwachen und erweiterte Machine Learning-Funktionen nutzen, um Abweichungen von regulären Zugriffsmustern zu erkennen.
+- **Schützen und Überwachen des Datenzugriffs.** Organisationen sollten den gesamten Datenzugriff überwachen und erweiterte Machine Learning-Funktionen nutzen, um Abweichungen von regulären Zugriffsmustern zu erkennen.
 - **Durchführen von Failoverübungen:** Für Cloudvorgänge mit geringer Fehlertoleranz muss nach einem Vorfall im Zusammenhang mit der Cybersicherheit oder der Plattform ein Failover oder eine Wiederherstellung ausgeführt werden können. Diese Prozeduren sollten nicht einfach nur dokumentiert, sondern vierteljährlich geübt werden.
 
 ## <a name="next-steps"></a>Nächste Schritte

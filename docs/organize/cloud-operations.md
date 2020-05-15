@@ -1,31 +1,24 @@
 ---
-title: Funktionen für den Cloudbetrieb
-description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um sich mit Funktionen für den Cloudbetrieb vertraut zu machen und dafür zu sorgen, dass IT-Vorgänge optimiert werden und zu zusätzlichem Nutzen führen.
-author: BrianBlanchard
-ms.author: brblanch
-ms.date: 09/10/2019
-ms.topic: conceptual
+title: Grundlegendes zu Cloudbetriebsfunktionen
+description: Grundlegendes zur Bildung von Cloudbetriebsfunktionen und der angemessenen Besetzung Ihres Teams.
+author: JanetCThomas
+ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.custom: organize
-ms.openlocfilehash: fc5097eb5a6bb0c0400c0789ea197d0472f858ea
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.topic: conceptual
+ms.date: 04/20/2020
+ms.openlocfilehash: 3fd693d5e3275eea40d1a71149207689b7dca35b
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428544"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215618"
 ---
-# <a name="cloud-operation-capabilities"></a>Funktionen für den Cloudbetrieb
+# <a name="cloud-operations-functions"></a>Cloudbetriebsfunktionen
 
-Die Unternehmenstransformation kann durch die Cloudeinführung ermöglicht werden. Erträge werden jedoch nur dann realisiert, wenn die in der Cloud bereitgestellten Workloads entsprechend den Leistungserwartungen funktionieren. Da zusätzliche Workloads Cloudtechnologien einführen, ist eine zusätzliche Betriebskapazität erforderlich.
+Ein Betriebsteam konzentriert sich auf die Überwachung, Reparatur sowie die Behebung von Problemen im Zusammenhang mit herkömmlichen IT-Vorgängen und -Ressourcen. In der Cloud werden viele dieser Kapitalkosten und Betriebsaktivitäten auf den Cloudanbieter übertragen, was dem IT-Betrieb die Möglichkeit eröffnet, sich zu verbessern und einen erheblichen Mehrwert zu schaffen.
 
-Traditionelle IT-Vorgänge mussten sich auf die Aufrechterhaltung der Vorgänge im aktuellen Zustand für eine Vielzahl von technischen Ressourcen auf niedriger Ebene konzentrieren. Faktoren wie Speicher, CPU, Arbeitsspeicher, Netzwerkgeräte, Server und VM-Hosts erfordern eine kontinuierliche Wartung, um den Spitzenbetrieb aufrechtzuerhalten. Die Finanzierungspläne enthalten oft hohe Ausgaben im Zusammenhang mit jährlichen oder periodischen Aktualisierungen dieser Ressourcen auf niedriger Ebene.
-
- Die Humanressourcen im operativen Bereich würden sich auch stark auf die Überwachung, Reparatur und Bereinigung von Problemen im Zusammenhang mit diesen Ressourcen konzentrieren. In der Cloud werden viele dieser Kapitalkosten und Betriebsaktivitäten auf den Cloudanbieter übertragen. Dies eröffnet den IT-Abläufen die Möglichkeit, sich zu verbessern und einen erheblichen Mehrwert zu schaffen.
-
-## <a name="possible-sources-for-this-capability"></a>Mögliche Quellen für diese Funktionen
-
-Die für die Bereitstellung von Funktionen für den Cloudbetrieb erforderlichen Qualifikationen könnten bereitgestellt werden durch:
+Die für die Bereitstellung von Cloudbetriebsfunktionen erforderlichen Qualifikationen können bereitgestellt werden durch:
 
 - IT-Abläufe
 - Anbieter für die Auslagerung der IT-Abläufe
@@ -35,35 +28,53 @@ Die für die Bereitstellung von Funktionen für den Cloudbetrieb erforderlichen 
 - Betriebsteams für Geschäftsanwendungen
 - DevOps-Teams
 
-## <a name="key-responsibilities"></a>Wichtige Zuständigkeiten
+## <a name="preparation"></a>Vorbereitung
 
-Die Aufgaben der Verantwortlichen für die Bereitstellung der Funktionen für den Cloudbetrieb sind die Bereitstellung einer maximalen Workloadleistung und minimaler Betriebsunterbrechungen innerhalb der vereinbarten Betriebskosten.
+- [Verwalten von Ressourcen in Azure](https://docs.microsoft.com/learn/paths/manage-resources-in-azure): Es wird beschrieben, wie Sie die Azure CLI und das Webportal verwenden, um cloudbasierte Ressourcen zu erstellen, zu verwalten und zu steuern.
+- [Azure-Netzwerkdienste](https://docs.microsoft.com/learn/modules/intro-to-azure-networking): Erlernen Sie die Grundlagen von Azure-Netzwerken, und erfahren Sie, wie die Resilienz verbessert und die Latenz verringert werden kann.
 
-### <a name="strategic-tasks"></a>Strategische Aufgaben
+Lesen Sie Folgendes:
 
-- Überprüfen der [Geschäftsergebnisse](../strategy/business-outcomes/index.md), [Finanzmodelle](../strategy/financial-models.md), [Motivationen für die Cloudeinführung](../strategy/motivations.md), [Geschäftsrisiken](../govern/policy-compliance/risk-tolerance.md) und der [Rationalisierung der digitalen Ressourcen](../digital-estate/index.md).
+- [Geschäftsergebnisse](../strategy/business-outcomes/index.md)
+- [Finanzmodelle](../strategy/financial-models.md)
+- [Gründe für die Cloudeinführung](../strategy/motivations.md)
+- [Geschäftsrisiken](../govern/policy-compliance/risk-tolerance.md)
+- [Rationalisierung der digitalen Ressourcen](../digital-estate/index.md)
+
+## <a name="minimum-scope"></a>Mindestumfang
+
+Die Aufgaben der Mitglieder des Cloudbetriebsteams umfassen die Bereitstellung einer maximalen Workloadleistung sowie minimaler Betriebsunterbrechungen innerhalb eines vereinbarten Betriebskostenbudgets.
+
 - Bestimmen der Wichtigkeit der Workload, der Auswirkung von Unterbrechungen oder von Leistungseinbußen.
-- Einrichten von vom Unternehmen genehmigten Kosten-/Leistungszusagen.
+- Einrichten von vom Unternehmen genehmigten Kosten- und Leistungszusagen.
 - Überwachen und Betreiben von Cloudworkloads.
 
-### <a name="technical-tasks"></a>Technische Aufgaben
+## <a name="deliverables"></a>Ergebnisse
 
-- Verwalten des Ressourcen- und Workloadbestands.
-- Überwachen der Leistung von Workloads.
-- Verwalten der betriebsbezogenen Compliance.
-- Schützen von Workloads und zugeordneten Ressourcen.
+- Verwalten des Ressourcen- und Workloadbestands
+- Überwachen der Leistung von Workloads
+- Verwalten der betriebsbezogenen Compliance
+- Schützen von Workloads und zugeordneter Ressourcen
 - Wiederherstellung von Ressourcen im Falle der Leistungsbeeinträchtigung oder der Unterbrechung des Geschäftsbetriebs.
-- Ausgereifte Funktionen der Kernplattformen.
-- Kontinuierliche Verbesserung der Workloadleistung.
-- Verbesserung der Budget- und Designanforderungen von Workloads, um die Verpflichtungen gegenüber dem Unternehmen zu erfüllen.
+- Ausgereifte Funktionen der Kernplattformen
+- Kontinuierliche Verbesserung der Workloadleistung
+- Verbesserung der Budget- und Designanforderungen von Workloads, um die Verpflichtungen gegenüber dem Unternehmen zu erfüllen
 
-## <a name="meeting-cadence"></a>Rhythmus von Besprechungen
+### <a name="meeting-cadence"></a>Rhythmus von Besprechungen
 
-Diejenigen, die Funktionen für den Cloudbetrieb ausführen, sollten an der Release- und Cloudkompetenzzentrums-Planung beteiligt sein, um Feedback bereitzustellen und sich auf die betrieblichen Anforderungen vorzubereiten.
+Das Cloudbetriebsteam sollte an der Release- und Cloudkompetenzzentrums-Planung beteiligt sein, um Feedback bereitzustellen und sich auf die betrieblichen Anforderungen vorzubereiten.
+
+## <a name="out-of-scope"></a>Nicht betreffende Organisationen
+
+Traditionelle IT-Vorgänge, die sich auf die Aufrechterhaltung der Vorgänge im aktuellen Zustand für technische Ressourcen auf niedriger Ebene konzentrieren, gehören nicht zum Aufgabebereich des Cloudbetriebsteams. Faktoren wie Speicher, CPU, Arbeitsspeicher, Netzwerkgeräte, Server und VM-Hosts erfordern kontinuierliche Wartung, Überwachung, Reparatur und Problembehebung, um den Spitzenbetrieb aufrechtzuerhalten. In der Cloud werden viele dieser Kapitalkosten und Betriebsaktivitäten auf den Cloudanbieter übertragen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Da Einführung und Abläufe einer Skalierung unterliegen, ist es wichtig, bewährte Methoden für die Governance zu definieren und zu automatisieren, die vorhandene IT-Anforderungen erweitern. Der Aufbau eines [Cloudkompetenzzentrums](./cloud-center-of-excellence.md) ist ein wichtiger Schritt zur Skalierung der Bemühungen für Cloudeinführung, Cloudbetrieb und Cloudgovernance.
+Da Einführung und Abläufe einer Skalierung unterliegen, ist es wichtig, bewährte Methoden für die Governance zu definieren und zu automatisieren, die vorhandene IT-Anforderungen erweitern. Der Aufbau eines Cloudkompetenzzentrums ist ein wichtiger Schritt zur Skalierung der Bemühungen für Cloudeinführung, Cloudbetrieb und Cloudgovernance.
 
-> [!div class="nextstepaction"]
-> [Einrichten eines Cloudkompetenzzentrums](./cloud-center-of-excellence.md)
+Weitere Informationen:
+
+- Funktionen eines [Cloudkompetenzzentrums (CCoE)](../organize/cloud-center-of-excellence.md)
+- [Antimuster in Unternehmen: Silos und Machtbereiche](../organize/fiefdoms-silos.md).
+
+Es wird beschrieben, wie Sie Teams übergreifend Zuständigkeiten zuordnen, indem Sie eine so genannte RACI-Matrix entwickeln und damit bestimmen, welche Teams verantwortlich sind (responsible), rechenschaftspflichtig sind (accountable), konsultiert werden (consulted) und zu informieren sind (informed). Laden Sie die [RACI-Tabellenvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) herunter, und passen Sie sie an.

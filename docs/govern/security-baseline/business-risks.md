@@ -1,5 +1,5 @@
 ---
-title: 'Sicherheitsbaseline: Geschäftsrisiken'
+title: Motivationen und Geschäftsrisiken in der Disziplin „Sicherheitsbaseline“
 description: Hier finden Sie grundlegende Informationen und Beispiele für die typische Kundenakzeptanz einer Sicherheitsbaselinedisziplin im Rahmen einer Cloudgovernancestrategie.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 40b92c15af9ea4677d049cc76902d33e6807f139
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 5e0e9b51ec666d48b886f37913a4a0d5441dd78d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433625"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217777"
 ---
-# <a name="security-baseline-motivations-and-business-risks"></a>Sicherheitsbaseline: Motivationen und Geschäftsrisiken
+# <a name="motivations-and-business-risks-in-the-security-baseline-discipline"></a>Motivationen und Geschäftsrisiken in der Disziplin „Sicherheitsbaseline“
 
 In diesem Artikel werden die Gründe beschrieben, warum Kunden typischerweise eine Disziplin „Sicherheitsbaseline“ in ihre Cloud Governance-Strategie integrieren. Darüber hinaus werden einige Beispiele für mögliche Geschäftsrisiken aufgeführt, die zu Richtlinienanweisungen führen können.
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="security-baseline-relevancy"></a>Relevanz der Sicherheitsbaseline
+## <a name="relevance"></a>Relevance
 
 Sicherheit ist ein Hauptanliegen jeder IT-Organisation. Cloudbereitstellungen weisen viele der gleichen Sicherheitsrisiken auf wie Workloads, die in herkömmlichen lokalen Rechenzentren gehostet werden. Aufgrund der Art der öffentlichen Cloudplattformen, bei denen kein direktes Eigentum an der physischen Hardware zum Speichern und Ausführen Ihrer Workloads besteht, erfordert die Cloudsicherheit eigene Richtlinien und Prozesse.
 
@@ -32,7 +32,7 @@ Wie viel Sie in Sicherheitsrichtlinien und -prozesse investieren, hängt größt
 Die Disziplin „Sicherheitsbaseline“ umfasst die Unternehmensrichtlinien und manuellen Prozesse, die Sie einführen können, um Ihre Cloudbereitstellung vor Sicherheitsrisiken zu schützen.
 
 > [!NOTE]
->Obwohl es wichtig ist, die [Identitätsbaseline](../identity-baseline/index.md) im Kontext der Sicherheitsbaseline zu verstehen und deren Beziehung zur Zugriffssteuerung zu kennen, ist unter den [fünf Disziplinen von Cloud Governance](../index.md) die [Identitätsbaseline](../identity-baseline/index.md) als eine eigene, von der Sicherheitsbaseline getrennte Disziplin aufgeführt.
+>Obwohl es wichtig ist, die [Disziplin „Identitätsbaseline“](../identity-baseline/index.md) im Kontext der Disziplin „Sicherheitsbaseline“ zu verstehen und zu wissen, in welchem Zusammenhang dies mit Zugriffskontrolle steht, wird die Identitätsbaseline in den [fünf Disziplinen der Cloudgovernance](../index.md) als eigenständige Disziplin behandelt.
 
 ## <a name="business-risk"></a>Geschäftsrisiken
 
@@ -45,7 +45,7 @@ Die Risiken werden je nach Organisation unterschiedlich sein, aber die folgenden
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Dokumentieren Sie mit der [Cloudverwaltungsvorlage](./template.md) die Geschäftsrisiken, die wahrscheinlich durch den aktuellen Cloudeinführungsplan entstehen.
+Verwenden Sie die [Vorlage zur Disziplin „Sicherheitsbaseline“](./template.md) zum Dokumentieren von Geschäftsrisiken, die mit dem aktuellen Cloudeinführungsplan wahrscheinlich entstehen.
 
 Sobald ein Verständnis für realistische Geschäftsrisiken hergestellt ist, besteht der nächste Schritt darin, die Risikotoleranz des Unternehmens zu dokumentieren sowie die Indikatoren und Schlüsselmetrik zur Überwachung dieser Toleranz zu erfassen.
 

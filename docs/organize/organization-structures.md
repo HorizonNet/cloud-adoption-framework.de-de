@@ -1,5 +1,5 @@
 ---
-title: Einrichten von Teamstrukturen
+title: Ausgereifte Teamstrukturen
 description: Nutzen Sie diese Beispiele für allgemeine Teamstrukturen, um die Organisationsstruktur zu ermitteln, die am besten zu Ihren betrieblichen Anforderungen passt.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: f01499141c85b1baca2b19f2ce6a8ed15163c4a9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: c46f3d6372c532911bc794128a0ea47509ee1860
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995174"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222095"
 ---
 <!-- cSpell:ignore ccoe -->
 
-# <a name="establish-team-structures"></a>Einrichten von Teamstrukturen
+# <a name="mature-team-structures"></a>Ausgereifte Teamstrukturen
 
 Jede Cloudfunktion ist während einer Cloudeinführung einer oder mehreren Personen zugewiesen und wird von diesen bereitgestellt. Diese Zuweisungen und Teamstrukturen können sich organisch entwickeln oder explizit so entworfen werden, dass sie mit einer bereits definierten Teamstruktur übereinstimmen.
 
@@ -34,7 +34,7 @@ Unternehmensstrukturen bewegen sich in der Regel durch ein allgemeines Reifegrad
 5. [Operative Ausrichtung](#operational-alignment)
 6. [Cloudkompetenzzentrum (CCoE)](#cloud-center-of-excellence)
 
-Die meisten Unternehmen beginnen mit wenig mehr als einem *Cloudeinführungsteam*. Wir empfehlen jedoch, eine Organisationsstruktur aufzubauen, die mehr an der Struktur [Bewährte Methode: Minimum Viable Product](#best-practice-minimum-viable-product-mvp) ausgerichtet ist.
+Die meisten Unternehmen beginnen mit wenig mehr als einem _Cloudeinführungsteam_. Wir empfehlen jedoch, eine Organisationsstruktur aufzubauen, die mehr an der Struktur [Bewährte Methode: Minimum Viable Product](#best-practice-minimum-viable-product-mvp) ausgerichtet ist.
 
 ## <a name="cloud-adoption-team-only"></a>Nur Cloudeinführungsteam
 
@@ -45,7 +45,7 @@ Das Herzstück aller Cloudeinführungsmaßnahmen ist das Cloudeinführungsteam. 
 Bei kleinen Einführungsprojekten oder in der Frühphase eines Projekts besteht dieses Team möglicherweise aus nur einer Person. Für größere Projekte und in späteren Phasen ist es üblich, mehrere Cloudeinführungsteams mit jeweils etwa sechs Engineers einzusetzen. Unabhängig von Umfang und Anzahl der Aufgaben ist ein Aspekt bei allen Cloudeinführungsteams gleich: Sie bieten den Mechanismus zum Onboarding von Lösungen in die Cloud. Für einige Unternehmen kann dies eine ausreichende Organisationsstruktur sein. Der Artikel [Cloudeinführungsteam](./cloud-adoption.md) gibt weitere Einblicke in die Struktur, Zusammensetzung oder Funktion des Cloudeinführungsteams.
 
 > [!WARNING]
-> Der Einsatz von *nur* einem Cloudeinführungsteam (oder mehreren Cloudeinführungsteams) gilt als *Antimuster* und sollte vermieden werden. Ziehen Sie mindestens [Bewährte Methode: Minimum Viable Product](#best-practice-minimum-viable-product-mvp) in Betracht.
+> Der Einsatz von _nur_ einem Cloudeinführungsteam (oder mehreren Cloudeinführungsteams) gilt als _Antimuster_ und sollte vermieden werden. Ziehen Sie mindestens [Bewährte Methode: Minimum Viable Product](#best-practice-minimum-viable-product-mvp) in Betracht.
 
 ## <a name="best-practice-minimum-viable-product-mvp"></a>Bewährte Methode: Minimum Viable Product (MVP)
 
@@ -66,7 +66,7 @@ Je umfangreicher die Einführung wird, desto schwieriger ist es möglicherweise 
 
 ![Cloudeinführung mit einem zentralen IT-Modell](../_images/ready/org-ready-central-it.png)
 
-Leider kann die Phase, in der die zentrale IT ins Spiel kommt, eine der riskantesten Phasen beim Reifeprozess der Organisation sein. Das zentrale IT-Team muss vom Wachstum überzeugt sein. Wenn das Team die Cloud als Chance für Wachstum und Funktionserweiterung ansieht, kann es während des gesamten Prozesses unschätzbare Beiträge leisten. Wenn dieses Team die Cloudeinführung jedoch primär als Bedrohung für sein eigenes vorhandenes Modell betrachtet, kann es für die Cloudeinführungsteams und deren Geschäftsziele zu einem massiven Hindernis werden. Einige zentrale IT-Teams haben Monate oder sogar Jahre damit zugebracht, die Cloud an den lokalen IT-Verfahren auszurichten, und dabei nur negative Ergebnisse erzielt. Die Einführung der Cloud bedeutet nicht, dass in der zentralen IT alles auf den Kopf gestellt wird, einige Änderungen sind aber notwendig. Wenn in der zentralen IT ein genereller Widerstand gegen Änderungen vorherrscht, wird diese Phase des Reifeprozesses schnell zu einem kulturellen Antimuster.
+Leider kann die Phase, in der die zentrale IT ins Spiel kommt, eine der riskantesten Phasen beim Reifeprozess der Organisation sein. Das zentrale IT-Team muss vom Wachstum überzeugt sein. Wenn das Team die Cloud als Chance für Wachstum und Anpassung ansieht, kann es während des gesamten Prozesses unschätzbare Beiträge leisten. Wenn dieses Team die Cloudeinführung jedoch primär als Bedrohung für sein eigenes vorhandenes Modell betrachtet, kann es für die Cloudeinführungsteams und deren Geschäftsziele zu einem massiven Hindernis werden. Einige zentrale IT-Teams haben Monate oder sogar Jahre damit zugebracht, die Cloud an den lokalen IT-Verfahren auszurichten, und dabei nur negative Ergebnisse erzielt. Die Einführung der Cloud bedeutet nicht, dass in der zentralen IT alles auf den Kopf gestellt wird, einige signifikante Änderungen sind aber notwendig. Wenn in der zentralen IT ein genereller Widerstand gegen Änderungen vorherrscht, wird diese Phase des Reifeprozesses schnell zu einem kulturellen Antimuster.
 
 Cloudeinführungspläne, bei denen der Fokus auf PaaS- (Platform-as-a-Service), DevOps- oder anderen Lösungen liegt, die weniger operative Unterstützung benötigen, zeitigen in dieser Reifephase wahrscheinlich weniger Mehrwert. Ganz im Gegenteil: Bei solchen Lösungen ist die Wahrscheinlichkeit am höchsten, dass sie durch Versuche zur Zentralisierung der IT beeinträchtigt oder sogar blockiert werden. Bei einem höheren Reifegrad, beispielsweise mit einem [Cloudkompetenzzentrum](#cloud-center-of-excellence) (Cloud Center of Excellence, CCoE), lassen sich für diese Arten von Transformationsaktionen vermutlich eher positive Ergebnisse erzielen. Informationen zu den Unterschieden zwischen der zentralen IT in der Cloud und einem CCoE finden Sie im Abschnitt [Cloudkompetenzzentrum](./cloud-center-of-excellence.md).
 

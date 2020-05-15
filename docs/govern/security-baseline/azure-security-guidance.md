@@ -1,6 +1,6 @@
 ---
 title: Azure-Sicherheitsleitfaden
-description: Verwenden Sie die Microsoft Service Trust Platform und den Compliance-Manager, um komplexe Complianceverpflichtungen zu erfüllen und den Datenschutz zu verbessern.
+description: Verwenden Sie das Microsoft Service Trust Portal und den Compliance-Manager, um komplexe Complianceverpflichtungen zu erfüllen und den Datenschutz zu verbessern.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6a726cd44238a67f050471735e2b96bbbd62c363
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: c5c295ef24571309e1d97a91ec0c65a0816082e7
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433443"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217886"
 ---
-<!-- cSpell:ignore DPIAs DSRs -->
+<!-- cSpell:ignore DPIAs -->
 
 <!-- markdownlint-disable MD026 -->
 
@@ -23,7 +23,7 @@ ms.locfileid: "80433443"
 
 ## <a name="tools"></a>Tools
 
-Microsoft hat die [Service Trust Platform](https://servicetrust.microsoft.com) und den Compliance-Manager zur Unterstützung in folgenden Bereichen eingeführt:
+Das [Microsoft Service Trust Portal](https://servicetrust.microsoft.com) und der Compliance-Manager zur Unterstützung in folgenden Bereichen:
 
 - Bewältigung der Anforderungen der Konformitätsverwaltung.
 - Erfüllung der Verantwortlichkeiten zur Einhaltung gesetzlicher Anforderungen.
@@ -31,25 +31,25 @@ Microsoft hat die [Service Trust Platform](https://servicetrust.microsoft.com) u
 
 Diese Tools wurden entwickelt, um Organisationen bei der Erfüllung komplexer Konformitätsverpflichtungen und der Verbesserung der Funktionen zum Datenschutz bei der Auswahl und Nutzung von Microsoft Cloud-Diensten zu unterstützen.
 
-Die **Service Trust Platform (STP)** enthält ausführliche Informationen und Tools, die Ihnen helfen, Ihre Anforderungen in Bezug auf die Nutzung von Microsoft Cloud-Diensten (einschließlich Azure, Office 365, Dynamics 365 und Windows) zu erfüllen. STP ist eine zentrale Anlaufstelle für Informationen zu Sicherheit, gesetzlichen Bestimmungen, Konformität und Datenschutz in Bezug auf Microsoft Cloud. Hier veröffentlichen wir die Informationen und Ressourcen, die für die Durchführung von Self-Service-Risikobewertungen von Clouddiensten und Tools erforderlich sind. STP wurde entwickelt, damit Aktivitäten zur Einhaltung gesetzlicher Bestimmungen in Azure nachverfolgt werden können, beispielsweise:
+Das **Microsoft Service Trust Portal** enthält ausführliche Informationen und Tools, die Ihnen helfen, Ihre Anforderungen in Bezug auf die Nutzung von Microsoft Cloud-Diensten (einschließlich Azure, Office 365, Dynamics 365 und Windows) zu erfüllen. Das Portal ist eine zentrale Anlaufstelle für Informationen zu Sicherheit, gesetzlichen Bestimmungen, Konformität und Datenschutz in Bezug auf Microsoft Cloud. Hier veröffentlichen wir die Informationen und Ressourcen, die für die Durchführung von Self-Service-Risikobewertungen von Clouddiensten und Tools erforderlich sind. Das Portal wurde entwickelt, damit Aktivitäten zur Einhaltung gesetzlicher Bestimmungen in Azure nachverfolgt werden können, beispielsweise:
 
-- **Compliance-Manager:** Compliance-Manager ist ein workflowbasiertes Tool zur Risikobewertung in der Microsoft Service Trust Platform, über das Sie die Aktivitäten Ihrer Organisation zur Einhaltung gesetzlicher Bestimmungen in Bezug auf Microsoft Cloud-Dienste, z.B. Office 365, Dynamics 365 und Azure, nachverfolgen, zuweisen und überprüfen können. Weitere Informationen finden Sie im nächsten Abschnitt.
+- **Compliance-Manager:** Compliance-Manager ist ein workflowbasiertes Tool zur Risikobewertung im Microsoft Service Trust Portal, über das Sie die Aktivitäten Ihrer Organisation zur Einhaltung gesetzlicher Bestimmungen in Bezug auf Microsoft Cloud-Dienste, z. B. Office 365, Dynamics 365 und Azure, nachverfolgen, zuweisen und überprüfen können. Weitere Informationen finden Sie im nächsten Abschnitt.
 - **Vertrauensstellungsdokumente:** Derzeit stehen drei Kategorien von Leitfäden zur Verfügung: umfangreiche Ressourcen zur Bewertung von Microsoft Cloud; Informationen zu Microsoft-Vorgängen in Bezug auf Sicherheit, Konformität und Datenschutz sowie Hinweise zur Verbesserung der Funktionen zum Datenschutz. Dazu gehören:
-- **Überwachungsberichte:** Mit Prüfberichten bleiben Sie im Hinblick auf die aktuellen Informationen zu Datenschutz, Sicherheit und Konformität für Microsoft Cloud-Dienste immer auf dem Laufenden. Dazu gehören ISO, SOC, FedRAMP und andere Prüfberichte, Bridge Letters und Material in Bezug auf unabhängige Überprüfungen von Microsoft Cloud-Diensten durch Drittanbieter, z.B. Azure, Office 365 oder Dynamics 365.
-- **Leitfäden zum Datenschutz:** Leitfäden zum Datenschutz enthalten Informationen dazu, wie Ihre Daten in Microsoft Cloud-Diensten geschützt werden und wie Sie die Datensicherheit und Datenkonformität in der Cloud für Ihre Organisation verwalten können. Dazu gehören ausführliche Whitepapers mit Angaben dazu, wie Microsoft Clouddienste entwirft und betreibt, sowie häufig gestellte Fragen, Sicherheitsjahresbewertungen, Ergebnisse von Penetrationtests und Anweisungen zur Durchführung der Risikobewertung und Verbesserung der Funktionen zum Datenschutz.
+- **Überwachungsberichte:** Mit Prüfberichten bleiben Sie im Hinblick auf die aktuellen Informationen zu Datenschutz, Sicherheit und Konformität für Microsoft Cloud-Dienste immer auf dem Laufenden. Dazu gehören ISO, SOC, FedRAMP und andere Prüfberichte, Bridge Letters und Material in Bezug auf unabhängige Überprüfungen von Microsoft Cloud-Diensten durch Drittanbieter, z. B. Azure, Office 365 oder Dynamics 365.
+- **Leitfäden zum Datenschutz:** Leitfäden zum Datenschutz enthalten Informationen dazu, wie Ihre Daten in Microsoft Cloud-Diensten geschützt werden und wie Sie die Datensicherheit und Datenkonformität in der Cloud für Ihre Organisation verwalten können. Dazu gehören ausführliche Whitepapers mit Angaben dazu, wie Microsoft Clouddienste entwirft und betreibt, Dokumente mit häufig gestellten Fragen, Berichte der Sicherheitsjahresbewertungen, Ergebnisse von Penetrationtests und Anweisungen zur Durchführung der Risikobewertung und Verbesserung der Funktionen zum Datenschutz.
 - **Azure-Blaupause für Sicherheit und Compliance:** Blaupausen umfassen Ressourcen zum Erstellen und Starten von in der Cloud bereitgestellten Anwendungen, mit denen Sie strikte Bestimmungen und Standards einhalten können. Da Azure über mehr Zertifizierungen verfügt als jeder andere Cloudanbieter, können Sie Ihre unternehmenskritischen Workloads vertrauensvoll in Azure bereitstellen, mit Blaupausen, die Folgendes enthalten:
   - Branchenspezifische Übersicht und Anleitung.
   - Kundenzuständigkeitsmatrix.
   - Referenzarchitekturen mit Gefahrenmodellen.
   - Regulierungsimplementierungsmatrizen.
   - Automatisierung zur Bereitstellung von Referenzarchitekturen.
-  - Datenschutzressourcen: Ihnen werden Dokumente zu Datenschutz-Folgenabschätzungen, Anträgen betroffener Personen und Meldungen von Verletzungen des Schutzes personenbezogener Daten zur Verfügung gestellt, die Sie in ein eigenes Verantwortlichkeitsprogramm zur Unterstützung der Datenschutz-Grundverordnung (DSGVO) integrieren können.
-- **Einstieg in die DSGVO:** In den Produkten und Diensten von Microsoft können Organisationen die Anforderungen der DSGVO erfüllen und personenbezogene Daten erfassen und verarbeiten. STP ist so konzipiert, dass Sie Informationen zu den Funktionen in Microsoft-Diensten erhalten, über die Sie spezifische Anforderungen der DSGVO erfüllen können. Die Dokumentation enthält grundlegende Informationen zu Ihrer Verantwortlichkeit in Bezug auf die DSGVO sowie zu technischen und organisatorischen Maßnahmen. Ihnen werden Dokumente zu Datenschutz-Folgenabschätzungen, Anträgen betroffener Personen und Meldungen von Verletzungen des Schutzes personenbezogener Daten zur Verfügung gestellt, die Sie in ein eigenes Verantwortlichkeitsprogramm zur Unterstützung der DSGVO integrieren können.
+  - Datenschutzressourcen. Ihnen werden Dokumente zu Datenschutz-Folgenabschätzungen, Anträgen betroffener Personen und Meldungen von Verletzungen des Schutzes personenbezogener Daten zur Verfügung gestellt, die Sie in ein eigenes Verantwortlichkeitsprogramm zur Unterstützung der Datenschutz-Grundverordnung (DSGVO) integrieren können.
+- **Einstieg in die DSGVO:** In den Produkten und Diensten von Microsoft können Organisationen die Anforderungen der DSGVO erfüllen und personenbezogene Daten erfassen und verarbeiten. Das Microsoft Service Trust Portal ist so konzipiert, dass Sie Informationen zu den Funktionen in Microsoft-Diensten erhalten, über die Sie spezifische Anforderungen der DSGVO erfüllen können. Die Dokumentation enthält grundlegende Informationen zu Ihrer Verantwortlichkeit in Bezug auf die DSGVO sowie zu technischen und organisatorischen Maßnahmen. Ihnen werden Dokumente zu Datenschutz-Folgenabschätzungen, Anträgen betroffener Personen und Meldungen von Verletzungen des Schutzes personenbezogener Daten zur Verfügung gestellt, die Sie in ein eigenes Verantwortlichkeitsprogramm zur Unterstützung der DSGVO integrieren können.
   - **Anträge betroffener Personen:** Gemäß der DSGVO haben natürliche Personen (oder betroffene Personen) bestimmte Rechte im Hinblick auf die Verarbeitung ihrer personenbezogenen Daten. Dazu gehören das Recht der betroffenen Personen auf Berichtigung unrichtiger personenbezogener Daten, auf Löschung personenbezogener Daten oder Einschränkung ihrer Verarbeitung sowie das Recht, die personenbezogenen Daten zu erhalten und an einen anderen Verantwortlichen zu übermitteln.
-  - **Verletzung des Datenschutzes:** Die DSGVO schreibt Verantwortlichen und Auftragsverarbeitern die Meldung von Verletzungen des Schutzes personenbezogener Daten vor. In STP erhalten Sie Informationen darüber, wie Microsoft versucht, Verletzungen von vornherein zu verhindern, wie Microsoft eine Verletzung erkennt und wie Microsoft im Fall einer Verletzung reagiert und Sie als Verantwortlichen benachrichtigt.
-  - **Datenschutz-Folgenabschätzung:** Microsoft unterstützt Verantwortliche bei der Durchführung von Datenschutz-Folgenabschätzungen gemäß der DSGVO. Die DSGVO enthält eine nicht vollständige Aufstellung von Fällen, in denen eine Datenschutz-Folgenabschätzung erforderlich ist, z.B. automatisierte Verarbeitung zum Zweck der Profilerstellung o.Ä., umfangreiche Verarbeitung besonderer Kategorien von personenbezogenen Daten und systematische umfangreiche Überwachung öffentlich zugänglicher Bereiche.
-  - **Andere Ressourcen:** Zusätzlich zu den in den Abschnitten oben genannten Tools und Leitfäden umfasst STP auch weitere Ressourcen, z.B. zur regionalen Compliance, zusätzliche Ressourcen für das Security and Compliance Center sowie häufig gestellte Fragen zur Service Trust Platform, dem Compliance-Manager und zum Datenschutz und der Datenschutz-Grundverordnung.
-- **Regionale Compliance:** STP umfasst verschiedene Compliancedokumente und Leitfäden für Microsoft-Onlinedienste zur Einhaltung von Compliancevorgaben für verschiedene Regionen und Länder, z.B. Tschechische Republik, Polen und Rumänien.
+  - **Verletzung des Datenschutzes:** Die DSGVO schreibt Verantwortlichen und Auftragsverarbeitern die Meldung von Verletzungen des Schutzes personenbezogener Daten vor. Im Microsoft Service Trust Portal erhalten Sie Informationen darüber, wie Microsoft versucht, Verletzungen von vornherein zu verhindern, wie Microsoft eine Verletzung erkennt und wie Microsoft im Fall einer Verletzung reagiert und Sie als Verantwortlichen benachrichtigt.
+  - **Datenschutz-Folgenabschätzung:** Microsoft unterstützt Verantwortliche bei der Durchführung von Datenschutz-Folgenabschätzungen gemäß der DSGVO. Die DSGVO enthält eine nicht vollständige Aufstellung von Fällen, in denen eine Datenschutz-Folgenabschätzung erforderlich ist, z. B. automatisierte Verarbeitung zum Zweck der Profilerstellung o.Ä., umfangreiche Verarbeitung besonderer Kategorien von personenbezogenen Daten und systematische umfangreiche Überwachung öffentlich zugänglicher Bereiche.
+  - **Andere Ressourcen:** Zusätzlich zu den in den Abschnitten oben genannten Tools und Leitfäden umfasst das Microsoft Service Trust Portal auch weitere Ressourcen, z. B. zur regionalen Compliance, zusätzliche Ressourcen für das Security and Compliance Center sowie häufig gestellte Fragen zum Microsoft Service Trust Portal, zum Compliance-Manager, zum Datenschutz und der Datenschutz-Grundverordnung (DSGVO).
+- **Regionale Compliance:** Das Microsoft Service Trust Portal umfasst verschiedene Compliancedokumente und Leitfäden für Microsoft-Onlinedienste zur Einhaltung von Compliancevorgaben für verschiedene Regionen und Länder, z. B. Tschechische Republik, Polen und Rumänien.
 
 ## <a name="unique-intelligent-insights"></a>Spezifische Intelligent Insights
 

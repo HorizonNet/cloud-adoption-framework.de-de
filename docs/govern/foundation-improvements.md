@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 050d9cdfd2069a4d7da2e411233f6a60f270eb10
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 41535db6452be0b8efea9a91329169326c444ab0
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "77706607"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220208"
 ---
 # <a name="improve-your-initial-cloud-governance-foundation"></a>Verbessern der ersten Grundlage für die Cloud Governance
 
@@ -27,14 +27,14 @@ Die folgenden bewährten Methoden können jederzeit auf die ursprüngliche Gover
 > [!IMPORTANT]
 > Die Organisation der Ressourcen kann sich darauf auswirken, wie diese bewährten Methoden angewendet werden. Es ist wichtig, mit den Empfehlungen zu beginnen, die am besten für die erste Governancegrundlage geeignet sind, die Sie im vorherigen Schritt implementiert haben.
 
-|Risiko/Bedarf | Standardunternehmen | Komplexes Unternehmen |
+| Risiko/Bedarf | Standardunternehmen | Komplexes Unternehmen |
 |---|---|---|
-|Vertrauliche Daten in der Cloud|[Verbesserung der Disziplin](./guides/standard/security-baseline-improvement.md)|[Verbesserung der Disziplin](./guides/complex/security-baseline-improvement.md)|
-|Unternehmenskritische Apps in der Cloud|[Verbesserung der Disziplin](./guides/standard/resource-consistency-improvement.md)|[Verbesserung der Disziplin](./guides/complex/resource-consistency-improvement.md)|
-|Kostenmanagement für die Cloud|[Verbesserung der Disziplin](./guides/standard/cost-management-improvement.md)|[Verbesserung der Disziplin](./guides/complex/cost-management-improvement.md)|
-|Verwenden mehrerer Clouds|[Verbesserung der Disziplin](./guides/standard/multicloud-improvement.md)|[Verbesserung der Disziplin](./guides/complex/multicloud-improvement.md)|
-|Komplexe/Legacy-Identitätsverwaltung|–|[Verbesserung der Disziplin](./guides/complex/identity-baseline-improvement.md)|
-|Mehrere Governance-Ebenen|–|[Verbesserung der Disziplin](./guides/complex/multiple-layers-of-governance.md)|
+| Vertrauliche Daten in der Cloud | [Verbesserung der Disziplin](./guides/standard/security-baseline-improvement.md) | [Verbesserung der Disziplin](./guides/complex/security-baseline-improvement.md) |
+| Unternehmenskritische Apps in der Cloud | [Verbesserung der Disziplin](./guides/standard/resource-consistency-improvement.md) | [Verbesserung der Disziplin](./guides/complex/resource-consistency-improvement.md) |
+| Kostenmanagement für die Cloud | [Verbesserung der Disziplin](./guides/standard/cost-management-improvement.md) | [Verbesserung der Disziplin](./guides/complex/cost-management-improvement.md) |
+| Verwenden mehrerer Clouds | [Verbesserung der Disziplin](./guides/standard/multicloud-improvement.md) | [Verbesserung der Disziplin](./guides/complex/multicloud-improvement.md) |
+| Komplexe/Legacy-Identitätsverwaltung | – | [Verbesserung der Disziplin](./guides/complex/identity-baseline-improvement.md) |
+| Mehrere Governance-Ebenen | – | [Verbesserung der Disziplin](./guides/complex/multiple-layers-of-governance.md) |
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c3543299d323c8be6bf7ee88d6e9205c307e24f9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9f688988e62cf7783f76cf67d90fdc5b024e4fef
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997436"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218576"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>Beispiele für Richtlinienanweisungen der Identitätsbaseline
 
@@ -80,7 +80,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine identit
 
 Verwenden Sie die in diesem Artikel erwähnten Beispiele als Ausgangspunkt für die Entwicklung von Richtlinien, um bestimmte Geschäftsrisiken zu behandeln, die Ihren Plänen für die Einführung der Cloud entsprechen.
 
-Um mit der Entwicklung Ihrer eigenen, benutzerdefinierten Richtlinienanweisungen mit Bezug auf die Identitätsbaseline zu beginnen, laden Sie die [Vorlage für die Identitätsbaseline](./template.md) herunter.
+Wenn Sie mit der Entwicklung Ihrer eigenen, benutzerdefinierten Richtlinienanweisungen für die Identitätsbaseline beginnen möchten, laden Sie die [Vorlage zur Disziplin „Identitätsbaseline“](./template.md) herunter.
 
 Um die Einführung dieser Disziplin zu beschleunigen, wählen Sie den [umsetzbaren Governanceleitfaden](../guides/index.md) aus, der am besten zu Ihrer Umgebung passt. Ändern Sie dann den Entwurf, um Ihre speziellen Entscheidungen für Unternehmensrichtlinien zu integrieren.
 

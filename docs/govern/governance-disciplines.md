@@ -9,15 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: c946b5e7e43004653b31bc67ff1e325363deff9f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: c1c54d7587bf73f5c9348c878caea7ae7cde89ae
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396166"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220191"
 ---
 # <a name="the-five-disciplines-of-cloud-governance"></a>Die fünf Disziplinen der Cloud-Governance
 
+<!-- docsTest:disable TODO -->
 <!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsI">
@@ -26,7 +27,10 @@ ms.locfileid: "81396166"
             <div class="cardPadding" style="padding-bottom:10px;">
                 <div class="card" style="padding-bottom:10px;">
                     <div class="cardText" style="padding-left:0px;">
-Jede Änderung von Geschäftsprozessen oder Technologieplattformen birgt Risiken. Cloudgovernanceteams, deren Mitglieder manchmal auch als Cloudverwalter bezeichnet werden, haben die Aufgabe, diese Risiken mit minimaler Unterbrechung der Einführungs- oder Innovationsanstrengungen zu minimieren.<br/><br/>Das Governancemodell des Frameworks zur Cloudeinführung steuert diese Entscheidungen (unabhängig von der ausgewählten Cloudplattform), indem es sich auf die <a href="./corporate-policy.md">Entwicklung der Unternehmensrichtlinien</a> und die <a href="#disciplines-of-cloud-governance">fünf Disziplinen von Cloudgovernance</a> konzentriert. <a href="./guides/index.md">Umsetzbare Entwurfsleitfäden</a> zeigen dieses Modell mithilfe von Azure-Diensten. Im Folgenden werden die Disziplinen des Governancemodells im Framework für die Cloudeinführung erläutert.
+Jede Änderung von Geschäftsprozessen oder Technologieplattformen birgt Risiken. Cloudgovernanceteams, deren Mitglieder manchmal auch als Cloudverwalter bezeichnet werden, haben die Aufgabe, diese Risiken mit minimaler Unterbrechung der Einführungs- oder Innovationsanstrengungen zu minimieren.
+    <br>
+    <br>
+Das Governancemodell des Frameworks zur Cloudeinführung steuert diese Entscheidungen (unabhängig von der ausgewählten Cloudplattform), indem es sich auf die <a href="./corporate-policy.md">Entwicklung der Unternehmensrichtlinien</a> und die <a href="#disciplines-of-cloud-governance">fünf Disziplinen von Cloudgovernance</a> konzentriert. <a href="./guides/index.md">Umsetzbare Entwurfsleitfäden</a> zeigen dieses Modell mithilfe von Azure-Diensten. Im Folgenden werden die Disziplinen des Governancemodells im Framework für die Cloudeinführung erläutert.
                     </div>
                 </div>
             </div>
@@ -40,7 +44,7 @@ Jede Änderung von Geschäftsprozessen oder Technologieplattformen birgt Risiken
                         <div class="cardText" style="padding-left:0px;">
     <img src="../_images/operational-transformation-govern-highres.png" alt="Diagram of the Cloud Adoption Framework governance model: Corporate policy and governance disciplines">
     <br>
-    <i>Abbildung 1: Diagramm der Unternehmensrichtlinie und der fünf Disziplinen von Cloud Governance.</i>
+    <i> Abbildung 1: Diagramm der Unternehmensrichtlinie und der fünf Disziplinen von Cloud Governance.</i>
                         </div>
                     </div>
                 </div>
