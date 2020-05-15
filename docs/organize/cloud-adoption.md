@@ -1,29 +1,27 @@
 ---
-title: Cloudeinführungsfunktionen
-description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um sich mit der Bereitstellung von Funktionen für die Cloudeinführung vertraut zu machen und Ihre Teams entsprechend zusammenzustellen.
+title: Grundlegendes zu Cloudeinführungsfunktionen
+description: Erfahren Sie, wie Cloudeinführungsfunktionen technische Lösungen ermöglichen, sodass Sie Ihre Teams entsprechend besetzen können.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/10/2019
+ms.date: 04/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 3169fd430ad24526557bb80163c16eff814c618f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ac8307d3af159f3d6d35ccf2ded55f77786a33d7
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428653"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215873"
 ---
-# <a name="cloud-adoption-capabilities"></a>Cloudeinführungsfunktionen
+# <a name="cloud-adoption-functions"></a>Cloudeinführungsfunktionen
 
 Cloudeinführungsfunktionen ermöglichen die Implementierung technischer Lösungen in der Cloud. Wie bei jedem IT-Projekt entscheiden die Personen, die die eigentliche Arbeit leisten, über den Erfolg. Die Teams, die die notwendigen Cloudeinführungsfunktionen bereitstellen, können aus verschiedenen fachlichen Ansprechpartnern oder Implementierungspartnern bestehen.
 
-## <a name="possible-sources-for-this-capability"></a>Mögliche Quellen für diese Funktionen
-
 Cloudeinführungsteams sind das moderne Äquivalent zu technischen Implementierungs- oder Projektteams. Die Charakteristik der Cloud kann jedoch eine dynamischere Teamstruktur erfordern. Einige Teams konzentrieren sich ausschließlich auf die Cloudmigration, während andere Teams sich schwerpunktmäßig mit Innovationen beschäftigen, die Cloudtechnologien nutzen. Einige Teams verfügen über das umfassende technische Fachwissen, das erforderlich ist, um große Implementierungsbemühungen wie eine vollständige Rechenzentrumsmigration abzuschließen. Andere Teams haben einen engeren technischen Fokus und wechseln möglicherweise zwischen den Projekten, um bestimmte Ziele zu erreichen. Ein Beispiel wäre ein Team von Datenplattformspezialisten, das bei der Konvertierung von SQL-VMs in SQL-PaaS-Instanzen hilft.
 
-Unabhängig von der Art oder Anzahl der Cloudeinführungsteams wird die Cloudeinführung durch fachliche Ansprechpartner aus den Bereichen IT, Geschäftsanalyse oder Implementierungspartner bereitgestellt.
+Unabhängig von der Art oder Anzahl der Cloudeinführungsteams wird die für die Cloudeinführung erforderliche Funktionalität durch fachliche Ansprechpartner aus den Bereichen IT, Geschäftsanalyse oder Implementierungspartner bereitgestellt.
 
 Je nach den gewünschten Geschäftsergebnissen können die Fähigkeiten, die für umfassende Funktionen für die Cloudeinführung benötigt werden, Folgendes umfassen:
 
@@ -35,36 +33,54 @@ Je nach den gewünschten Geschäftsergebnissen können die Fähigkeiten, die fü
 
 Um eine optimale Zusammenarbeit und Effizienz zu erzielen, wird empfohlen, dass Cloudeinführungsteams über eine durchschnittliche Teamgröße von sechs Personen verfügen. Diese Teams sollten sich hinsichtlich der technischen Ausführung selbst organisieren. Es wird dringend empfohlen, dass diese Teams auch über Projektmanagementexpertise mit umfassender Erfahrung in agilen, Scrum- oder anderen iterativen Modellen verfügen. Dieses Team ist am effektivsten, wenn es über eine flache Struktur verwaltet wird.
 
-## <a name="key-responsibilities"></a>Wichtige Zuständigkeiten
+## <a name="preparation"></a>Vorbereitung
 
-Die primäre Anforderung an jede Cloudeinführungsfunktion ist die rechtzeitige und qualitativ hochwertige Implementierung der im Einführungsplan skizzierten technischen Lösungen in Übereinstimmung mit den Governanceanforderungen und Geschäftsergebnissen unter Verwendung von Technologien, Tools und Automatisierungslösungen, die dem Team zur Verfügung gestellt werden.
+- [Erstellen eines Azure-Kontos](https://docs.microsoft.com/learn/modules/create-an-azure-account): Der erste Schritt beim Verwenden von Azure ist, ein Konto zu erstellen.
+- [Azure-Portal](https://docs.microsoft.com/learn/modules/tour-azure-portal): Führen Sie die Tour durch die Features und Dienste im Azure-Portal durch, und passen Sie das Portal an.
+- [Einführung in Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure): Erste Schritte mit Azure. Erstellen und konfigurieren Sie Ihren ersten virtuellen Computer in der Cloud.
+- [Azure-Grundlagen](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer): Erfahren Sie mehr über Cloudkonzepte, deren Vorteile, vergleichen und kontrastieren Sie grundlegende Strategien, und entdecken Sie das breite Angebot der in Azure verfügbaren Dienste.
+- Sehen Sie sich die [Migrationsmethodik](../migrate/index.md) an.
+
+## <a name="minimum-scope"></a>Mindestumfang
+
+Das Herzstück aller Cloudeinführungsmaßnahmen ist das Cloudmigrationsteam. Dieses Team stößt die technischen Änderungen an, die eine Einführung ermöglichen. Abhängig von den Zielen des Einführungsprojekts kann dieses Team aus vielen Mitgliedern unterschiedlichster Fachrichtungen bestehen, die eine umfassende Palette technischer und geschäftlicher Aufgaben übernehmen.
+
+Der Teamumfang umfasst mindestens:
+
+- [Rationalisierung der digitalen Ressourcen](../digital-estate/index.md)
+- Überprüfen, Validieren und Verbessern des [priorisierten Migrationsbacklogs](../migrate/migration-considerations/assess/release-iteration-backlog.md)
+- Die Ausführung der [ersten Workload](../digital-estate/rationalize.md#select-the-first-workload) als Lernmöglichkeit.
+
+## <a name="deliverable"></a>Ergebnisse
+
+Der primäre Anspruch an eine Cloudeinführungsfunktion ist die rechtzeitige, hochwertige Implementierung der technischen Lösungen, die im Einführungsplan beschrieben sind. Diese Lösungen sollten sich an Governanceanforderungen und Geschäftsergebnisse orientieren und Technologie, Tools und Automatisierungslösungen nutzen, die dem Team zur Verfügung stehen.
 
 **Anfängliche Planungsaufgaben:**
 
-- Ausführen der [Rationalisierung der digitalen Ressourcen](../digital-estate/index.md)
-- Überprüfen, Validieren und Verbessern des [priorisierten Migrationsbacklogs](../migrate/migration-considerations/assess/release-iteration-backlog.md)
-- Starten der Ausführung der [ersten Workload](../digital-estate/rationalize.md#select-the-first-workload) als Lernmöglichkeit
+- Ausführen der [Rationalisierung der digitalen Ressourcen](../digital-estate/index.md).
+- Überprüfen, Validieren und Verbessern des [priorisierten Migrationsbacklogs](../migrate/migration-considerations/assess/release-iteration-backlog.md).
+- Starten der Ausführung der [ersten Workload](../digital-estate/rationalize.md#select-the-first-workload) als Lernmöglichkeit.
 
 **Fortlaufende monatliche Aufgaben:**
 
-- Überwachen der [Change Management-Prozesse](../migrate/migration-considerations/prerequisites/technical-complexity.md)
-- Verwalten der [Release- und Sprintbacklogs](../migrate/migration-considerations/assess/release-iteration-backlog.md)
-- Erstellen und Verwalten der Einführungslandezone in Verbindung mit den Governanceanforderungen
-- Ausführen der in den [Sprintbacklogs](../migrate/migration-considerations/assess/release-iteration-backlog.md) beschriebenen technischen Aufgaben
+- Überwachen der [Change Management-Prozesse](../migrate/migration-considerations/prerequisites/technical-complexity.md).
+- Verwalten der [Release- und Sprintbacklogs](../migrate/migration-considerations/assess/release-iteration-backlog.md).
+- Erstellen und Verwalten der Einführungslandezone in Verbindung mit den Governanceanforderungen.
+- Ausführen der in den [Sprintbacklogs](../migrate/migration-considerations/assess/release-iteration-backlog.md) beschriebenen technischen Aufgaben.
 
-## <a name="team-cadence"></a>Teamrhythmus
+**Rhythmus von Besprechungen:**
 
 Es wird empfohlen, dass Teams, die Cloudeinführungsfunktionen bereitstellen, sich in Vollzeit auf diese Aufgabe konzentrieren.
 
 Dabei ist es am besten, wenn sich diese Teams täglich selbstständig treffen. Das Ziel täglicher Besprechungen ist es, das Backlog schnell zu aktualisieren, die Ergebnisse und heute zu erledigende Aufgaben sowie blockierte Bereiche zu kommunizieren, die zusätzliche externe Unterstützung erfordern.
 
-Releasezeitpläne und Iterationszeitspannen sind für jedes Unternehmen spezifisch. Allerdings ist ein Zeitraum von einer bis vier Wochen pro Iteration die durchschnittliche Dauer. Unabhängig vom Iterations- oder Releaserhythmus wird empfohlen, dass das Team am Ende jedes Releases alle unterstützenden Teams trifft, um das Releaseergebnis zu kommunizieren und die kommenden Bemühungen neu zu priorisieren. Ebenso ist es wichtig, sich am Ende eines jeden Sprints als Team mit dem [Cloudkompetenzzentrums](./cloud-center-of-excellence.md)- oder [Cloudgovernanceteam](./cloud-governance.md) zu treffen, um sich auf gemeinsame Bemühungen und jeglichen Unterstützungsbedarf einzustellen.
+Releasezeitpläne und Iterationszeitspannen sind für jedes Unternehmen spezifisch. Allerdings ist ein Zeitraum von einer bis vier Wochen pro Iteration die durchschnittliche Dauer. Unabhängig vom Iterations- oder Releaserhythmus wird empfohlen, dass das Team am Ende jedes Releases alle unterstützenden Teams trifft, um das Releaseergebnis zu kommunizieren und die kommenden Bemühungen neu zu priorisieren. Ebenso ist es wichtig, sich am Ende eines jeden Sprints als Team mit dem Cloudkompetenzzentrums- oder Cloudgovernanceteam zu treffen, um sich auf gemeinsame Bemühungen und jeglichen Unterstützungsbedarf einzustellen.
 
-Einige der technischen Aufgaben, die mit der Einführung der Cloud verbunden sind, können sich wiederholen. Teammitglieder sollten alle drei bis sechs Monate rotieren, um Probleme mit der Mitarbeiterzufriedenheit zu vermeiden und relevante Qualifikationen zu erhalten. Ein wechselnder Platz im [Cloudkompetenzzentrums](./cloud-center-of-excellence.md)- oder [Cloudgovernanceteam](./cloud-governance.md) kann eine ausgezeichnete Gelegenheit bieten, die Mitarbeiter zu motivieren und Innovationen zu nutzen.
+Einige der technischen Aufgaben, die mit der Einführung der Cloud verbunden sind, können sich wiederholen. Teammitglieder sollten alle drei bis sechs Monate rotieren, um Probleme mit der Mitarbeiterzufriedenheit zu vermeiden und relevante Qualifikationen zu erhalten. Ein wechselnder Platz im Cloudkompetenzzentrums- oder Cloudgovernanceteam kann eine ausgezeichnete Gelegenheit bieten, die Mitarbeiter zu motivieren und Innovationen zu nutzen.
+
+Erfahren Sie mehr über die Funktion eines [Cloudkompetenzzentrums (CCoE, Cloud Center of Excellence)](./cloud-center-of-excellence.md) oder eines [Cloudgovernanceteams](./cloud-governance.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Die Einführung ist großartig, aber eine unkontrollierte Einführung kann zu unerwarteten Ergebnissen führen. Die Abstimmung von [Cloudgovernancefunktionen](./cloud-governance.md) beschleunigt die Einführung und bewährte Methoden und reduziert gleichzeitig unternehmerische sowie technische Risiken.
-
-> [!div class="nextstepaction"]
-> [Ausrichten von Cloudgovernancefunktionen](./cloud-governance.md)
+- [Aufbauen eines Cloudeinführungsteams](../get-started/team/cloud-adoption.md)
+- Stimmen Sie Cloudeinführungsbemühungen mit [Cloudgovernancefunktionen](./cloud-governance.md) ab, um die Einführung und Implementierung bewährter Methoden zu beschleunigen und gleichzeitig unternehmerische sowie technische Risiken zu verringern.
