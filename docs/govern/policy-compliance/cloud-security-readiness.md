@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 84bb47e05086ba0921a189d96d20c76a1ab5b057
-ms.sourcegitcommit: 825f9ae5b6cdd2fa6cb18c14a9733ba9106194f2
+ms.openlocfilehash: fcf85d3da5821a87b7dd18cc421ecdbda4c3c39d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81646821"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224254"
 ---
 <!-- cSpell:ignore CISO -->
 
@@ -40,6 +40,8 @@ Wenn Lösungen weiterentwickelt werden und PaaS- oder SaaS-Modelle (Platform-as-
 
 Kenntnisse der Cloud sind von grundlegender Bedeutung für eine [Richtlinienüberprüfung](./cloud-policy-review.md) mit wachstumsorientierter Mentalität. Die folgenden Ressourcen unterstützen CISOs dabei, den Sicherheitsstatus der Microsoft Azure-Plattform besser zu verstehen.
 
+<!-- docsTest:ignore "Security Response in the Cloud" -->
+
 **Ressourcen zur Sicherheitsplattform:**
 
 - [Sicherheitsentwicklungszyklus, interne Überwachungen](https://www.microsoft.com/sdl)
@@ -55,6 +57,8 @@ Kenntnisse der Cloud sind von grundlegender Bedeutung für eine [Richtlinienübe
 - [Bereitstellen des Datenzugriff zu Ihren Bedingungen](https://www.microsoft.com/trust-center/privacy/data-access)
 - [Antworten für Justizbehörden](https://www.microsoft.com/trust-center/privacy)
 - [Strenge Datenschutzstandards](https://www.microsoft.com/trust-center/privacy)
+
+<!-- docsTest:ignore "Cloud Services Due Diligence Checklist" -->
 
 **Compliance**:
 

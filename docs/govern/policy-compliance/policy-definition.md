@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: c1e34c9f13a170abd1f00b603537c73ce51688da
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4db3e7b94d370ebc50fa96c92e019ca9b2839497
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396081"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224203"
 ---
 # <a name="define-corporate-policy-for-cloud-governance"></a>Definieren von Unternehmensrichtlinien für Cloudgovernance
 
@@ -22,11 +22,11 @@ Nachdem Sie die bekannten Risiken und damit verbundene Risikotoleranzen für den
 
 ## <a name="how-can-corporate-it-policy-become-cloud-ready"></a>Wie kann für die IT-Unternehmensrichtlinie die Bereitschaft für die Cloud erzielt werden?
 
-Bei herkömmlichen und inkrementellen Governanceverfahren wird die Arbeitsdefinition der Governance mithilfe einer Unternehmensrichtlinie erstellt. Die meisten IT-Governanceaktionen sind darauf ausgelegt, Technologien zum Überwachen, Durchsetzen, Ausführen und Automatisieren dieser Unternehmensrichtlinien zu implementieren. Cloudgovernance basiert auf ähnlichen Konzepten.
+Bei herkömmlichen und inkrementellen Governanceverfahren wird die Arbeitsdefinition der Governance mithilfe einer Unternehmensrichtlinie erstellt. Die meisten IT-Governanceaktionen sind darauf ausgelegt, Technologien zum Überwachen, Durchsetzen, Ausführen und Automatisieren dieser Unternehmensrichtlinien zu implementieren. Die Cloudgovernance basiert auf ähnlichen Konzepten.
 
 ![Unternehmensgovernance und Governancedisziplinen](../../_images/operational-transformation-govern-highres.png)
 
-*Abbildung 1: Unternehmensgovernance und Governancedisziplinen*
+_Abbildung 1: Unternehmensgovernance und Governancedisziplinen_
 
 Das vorstehende Bild veranschaulicht den Zusammenhang zwischen Geschäftsrisiko, Richtlinie und Compliance sowie Überwachungs- und Erzwingungsmechanismen, die als Teil Ihrer Governancestrategie interagieren müssen. Mit den fünf Disziplinen von Cloudgovernance können Sie diese Interaktionen verwalten und Ihrer Strategie umsetzen.
 

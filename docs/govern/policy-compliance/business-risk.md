@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: e99bb023f73baad9e1940f06128ba09bd79ab0a1
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e0da2ec011f2fc6a823868d877780906ab472111
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80606583"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224305"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -35,7 +35,7 @@ Während einer Transformation sind dieselben relativen Risiken vorhanden.
 - In der frühen Experimentierphase werden einige Ressourcen mit wenigen oder gar keinen relevanten Daten bereitgestellt. Das Risiko ist gering.
 - Wenn die erste Workload bereitgestellt wird, steigt das Risiko ein wenig an. Dieses Risiko kann einfach verringert werden, indem Sie eine Anwendung mit von Natur aus geringem Risiko und einer geringen Benutzeranzahl auswählen.
 - Während weitere Workloads online geschaltet werden, ändern sich die Risiken mit jedem neuen Release. Neue Apps werden live geschaltet, und Risiken verändern sich.
-- Wenn ein Unternehmen die ersten 10 bis 20 Anwendungen online schaltet, liegt ein wesentlich anderes Risikoprofil vor, als wenn die tausendste Anwendung in die Produktion in der Cloud wechselt.
+- Wenn ein Unternehmen die ersten 10 oder 20 Anwendungen online schaltet, liegt ein wesentlich anderes Risikoprofil vor, als wenn die tausendste Anwendung in die Produktion in der Cloud wechselt.
 
 Die Ressourcen, die sich in der herkömmlichen lokalen Umgebung angesammelt haben, haben sich wahrscheinlich im Laufe der Zeit angehäuft. Das Unternehmen und das IT-Team reiften wahrscheinlich in ähnlicher Weise. Dieses parallele Wachstum bringt häufig einige unnötige Richtlinien mit sich.
 

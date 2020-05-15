@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 244444057561118c2e3f2b7a574bfdfb529f0978
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 872a492be4ef27fbbbba758c9780a9af5d070940
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997396"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224271"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -36,12 +36,18 @@ Bei Ausführung einer Cloudtransformation steuern Richtlinien oft viele der Tool
 
 ## <a name="the-cloud-policy-review-process"></a>Der Prozess der Überprüfung von Cloudrichtlinien
 
-Überprüfungen von Cloudrichtlinien gleichen vorhandene Richtlinien für IT-Governance und IT-Sicherheit an die [fünf Disziplinen von Cloudgovernance](../index.md) an: [Cost Management](../cost-management/index.md), [Sicherheitsbaseline](../security-baseline/index.md), [Identitätsbaseline](../identity-baseline/index.md), [Ressourcenkonsistenz](../resource-consistency/index.md) und [Beschleunigung der Bereitstellung](../deployment-acceleration/index.md).
+Überprüfungen von Cloudrichtlinien gleichen vorhandene Richtlinien für IT-Governance und IT-Sicherheit an die [fünf Disziplinen von Cloudgovernance](../index.md) an:
+
+- [Disziplin „Kostenverwaltung“](../cost-management/index.md)
+- [Disziplin „Sicherheitsbaseline“](../security-baseline/index.md)
+- [Disziplin „Identitätsbaseline“](../identity-baseline/index.md)
+- [Disziplin „Ressourcenkonsistenz“](../resource-consistency/index.md)
+- [Disziplin „Beschleunigung der Bereitstellung“](../deployment-acceleration/index.md)
 
 Bei jeder dieser Disziplinen besteht der Überprüfungsprozess aus folgenden Schritten:
 
 1. Überprüfung vorhandener lokaler Richtlinien im Hinblick auf die jeweilige Disziplin, wobei nach zwei wichtigen Datenpunkten gesucht wird: Legacyabhängigkeiten und identifizierte Geschäftsrisiken.
-2. Auswertung jedes Geschäftsrisikos, indem eine einfache Frage gestellt wird: „Ist das Geschäftsrisiko in einem Cloudmodell weiterhin vorhanden?“
+2. Bewerten Sie die einzelnen Geschäftsrisiken, indem Sie eine einfache Frage stellen: „Ist das Geschäftsrisiko in einem Cloudmodell weiterhin vorhanden?“
 3. Falls ja, schreiben Sie die Richtlinie um, indem Sie die erforderliche Maßnahme (nicht die technische Lösung) dokumentieren.
 4. Überprüfen Sie die aktualisierte Richtlinie zusammen mit den Cloudeinführungsteams, um mögliche technische Lösungen für die erforderliche Maßnahme zu verstehen.
 
@@ -50,7 +56,7 @@ Bei jeder dieser Disziplinen besteht der Überprüfungsprozess aus folgenden Sch
 Als Beispiel für den erforderlichen Prozess wird die Bandsicherungsrichtlinie aus dem vorgehenden Abschnitt verwendet:
 
 - Eine Unternehmensrichtlinie erfordert Offsite-Bandsicherungen für alle Produktionssysteme. In dieser Richtlinie gibt es zwei relevante Datenpunkte:
-  - Legacyabhängigkeit bei einer Bandsicherungslösung
+  - Legacyabhängigkeit bei einer Bandsicherungslösung.
   - Ein angenommenes Geschäftsrisiko im Zusammenhang mit der Speicherung von Sicherungen an demselben physischen Ort wie die Produktionsgeräte.
 - Ist das Risiko weiterhin vorhanden? Ja. Sogar in der Cloud ist die Abhängigkeit von einem einzigen Standort mit einem gewissen Risiko verbunden. Zwar ist es weniger wahrscheinlich, dass sich dieses Risiko auf das Geschäft auswirkt, wie es bei der lokalen Lösung der Fall war, doch das Risiko besteht weiterhin.
 - Schreiben Sie die Richtlinie um. Bei einem Notfall, der ein gesamtes Datencenter betrifft, muss es innerhalb von 24 Stunden nach dem Ausfall eine Möglichkeit zur Wiederherstellung von Produktionssystemen in einem anderen Datencenter und an einem anderen geografischen Standort geben.

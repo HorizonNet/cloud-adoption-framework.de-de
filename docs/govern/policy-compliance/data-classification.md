@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ffa318f44a6fe3a856598581ca7cc2de37fbd6f5
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e64acdc08f975662d3176964acbc2c0dcd53e3e4
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997359"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224237"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -41,7 +41,7 @@ In der nachstehenden Liste sind die von Microsoft verwendeten Klassifizierungen 
 
 Ressourcentags sind eine gute Methode zum Speichern von Metadaten. Sie können diese Tags zum Anwenden von Datenklassifizierungen auf bereitgestellte Ressourcen verwenden. Auch wenn das Kennzeichnen von Cloudressourcen keinen Ersatz für eine formale Datenklassifizierung darstellt, ist es ein wertvolles Hilfsmittel für das Verwalten von Ressourcen und das Anwenden von Richtlinien. [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) ist eine hervorragende Lösung, die Sie bei der Klassifizierung von _Daten_ unterstützt – ganz gleich, ob sich diese in der lokalen Umgebung, in Azure oder an einem anderen Ort befinden. Diese Lösung sollte als Teil einer allgemeinen Klassifizierungsstrategie betrachtet werden.
 
-Weitere Informationen zu Tags für Ressourcen in Azure finden Sie unter [Verwenden von Tags zum Organisieren von Azure-Ressourcen](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources).
+Weitere Informationen zu Tags für Ressourcen in Azure finden Sie unter [Verwenden von Tags zum Organisieren von Azure-Ressourcen und Verwaltungshierarchie](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

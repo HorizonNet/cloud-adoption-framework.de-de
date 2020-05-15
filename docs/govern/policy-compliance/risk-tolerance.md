@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 6f49ee7c8aa63af1d7826a817cc2fae28357caba
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9855b9d56025af86f62dc4e7f055e1584cbbe993
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430739"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218287"
 ---
 # <a name="evaluate-risk-tolerance"></a>Evaluieren der Risikotoleranz
 
@@ -29,11 +29,11 @@ Echte Geschäftsrisiken basieren auf den Details spezifischer Transformationen. 
 > [!IMPORTANT]
 > Bevor Sie weiterlesen, sollten Sie wissen, dass jedes dieser Risiken entschärft werden kann. Ziel dieses Artikels ist es, die Leser zu informieren und auf produktivere Diskussionen zum Risikomanagement vorzubereiten.
 
-- **Verletzung des Datenschutzes:** Datenpannen stellen das größte Risiko bei jeder Transformation dar. Datenlecks in Ihrem Unternehmen können erhebliche Schäden verursachen, die zum Verlust von Kunden, zu Geschäftseinbrüchen oder sogar zur gesetzlichen Haftung führen. Alle Änderungen an der Speicherung, Verarbeitung oder Verwendung der Daten stellen ein Risiko dar. Cloudtransformationen sorgen für umfangreiche Änderungen im Bereich der Datenverwaltung, daher sollte das Risiko nicht auf die leichte Schulter genommen werden. [Sicherheitbaseline](../security-baseline/index.md), [Datenklassifizierung](./data-classification.md) und [inkrementelle Rationalisierung](../../digital-estate/rationalize.md#incremental-rationalization) können bei der Bewältigung dieses Risikos hilfreich sein.
+- **Verletzung des Datenschutzes:** Datenpannen stellen das größte Risiko bei jeder Transformation dar. Datenlecks in Ihrem Unternehmen können erhebliche Schäden verursachen, die zum Verlust von Kunden, zu Geschäftseinbrüchen oder sogar zur gesetzlichen Haftung führen. Alle Änderungen an der Speicherung, Verarbeitung oder Verwendung der Daten stellen ein Risiko dar. Cloudtransformationen sorgen für umfangreiche Änderungen im Bereich der Datenverwaltung, daher sollte das Risiko nicht auf die leichte Schulter genommen werden. Die [Disziplin „Sicherheitsbaseline“](../security-baseline/index.md), die [Datenklassifizierung](./data-classification.md) und die [inkrementelle Rationalisierung](../../digital-estate/rationalize.md#incremental-rationalization) können bei der Bewältigung dieses Risikos hilfreich sein.
 
 - **Dienstunterbrechung:** Geschäftsvorgänge und Kundenerlebnis hängen stark von technischen Vorgängen ab. Cloudtransformationen führen zu Änderungen in IT-Vorgängen. In einigen Organisationen ist die Veränderung gering und leicht anzupassen. In anderen Organisationen sind für diese Änderungen möglicherweise neue Tools, neues Fachwissen oder neue Ansätze für die Unterstützung von Cloudvorgängen erforderlich. Je umfangreicher die Änderung, desto größer die potenziellen Auswirkungen auf Geschäftsvorgänge und das Kundenerlebnis. Zur Bewältigung dieses Risikos müssen die Fachbereiche in die Transformationsplanung einbezogen werden. Die Abschnitte „Releaseplanung“ und „Auswählen der ersten Workload“ im Artikel [Inkrementelle Rationalisierung](../../digital-estate/rationalize.md#incremental-rationalization) erörtern Möglichkeiten zur Auswahl von Workloads für Transformationsprojekte. Das Unternehmen muss bei dieser Aktivität das Risiko für Geschäftsvorgänge kommunizieren, das von der Änderung priorisierter Workloads ausgeht. Wird die IT bei der Auswahl von Workloads unterstützt, die geringere Auswirkungen auf Vorgänge haben, verringert sich das Gesamtrisiko.
 
-- **Budgetkontrolle:** In der Cloud verändern sich die Kostenmodelle. Diese Änderung kann zu Risiken im Zusammenhang mit Kostenüberschreitungen oder erhöhten Kosten für verkaufte Waren führen, insbesondere bei direkt damit verbundenen Betriebsausgaben. Wenn das Unternehmen eng mit der IT zusammenarbeitet, ist es möglich, in Bezug auf die Kosten und die von verschiedenen Geschäftseinheiten, Programmen oder Projekten genutzten Dienste für Transparenz zu sorgen. Unter [Cost Management](../cost-management/index.md) finden Sie Beispiele für eine mögliche Zusammenarbeit zwischen Unternehmen und IT in diesem Bereich.
+- **Budgetkontrolle:** In der Cloud verändern sich die Kostenmodelle. Diese Änderung kann zu Risiken im Zusammenhang mit Kostenüberschreitungen oder erhöhten Kosten für verkaufte Waren führen, insbesondere bei direkt damit verbundenen Betriebsausgaben. Wenn das Unternehmen eng mit der IT zusammenarbeitet, ist es möglich, in Bezug auf die Kosten und die von verschiedenen Geschäftseinheiten, Programmen oder Projekten genutzten Dienste für Transparenz zu sorgen. Unter [Disziplin „Kostenverwaltung“](../cost-management/index.md) finden Sie Beispiele für eine mögliche Zusammenarbeit zwischen Unternehmen und IT in diesem Bereich.
 
 Oben sind einige der gängigsten von Kunden genannten Risiken aufgeführt. Das Cloudgovernanceteam und die Cloudeinführungsteams können mit der Entwicklung eines Risikoprofils beginnen, während Workloads migriert und für den Einsatz in der Produktion vorbereitet werden. Richten Sie sich auf Gespräche ein, um Risiken basierend auf dem gewünschten Geschäftsergebnis und Transformationsaufwand zu definieren, zu präzisieren und in den Griff zu bekommen.
 

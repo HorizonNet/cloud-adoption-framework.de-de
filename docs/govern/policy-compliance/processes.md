@@ -1,6 +1,6 @@
 ---
 title: Festlegen von Prozessen zur Einhaltung von Richtlinien
-description: Entwickeln Sie eine Strategie sowie Prozesse, die die Konformität Ihrer Cloudbereitstellung mit Ihren Richtlinienanforderungen gewährleisten. 
+description: Entwickeln Sie eine Strategie sowie Prozesse, die die Konformität Ihrer Cloudbereitstellung mit Ihren Richtlinienanforderungen gewährleisten.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b7bdcd96786a232ef810794cf93546275a9603b0
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: c2a087fec598e2b9d581370f76e35aefef88048f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430809"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224186"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -75,6 +75,8 @@ Nachdem Sie Ihr Cloudgovernanceteam und dessen Prozesse definiert haben, müssen
 Jeder Verletzungsauslöser sollte eine entsprechende Aktion aufweisen. Ausgelöste Aktionen sollten immer einen entsprechenden IT-Mitarbeiter oder ein Mitglied des Cloudgovernanceteams benachrichtigen, wenn ein Verstoß auftritt. Diese Benachrichtigung kann in Abhängigkeit vom Typ und Schweregrad der erkannten Verletzung zu einer manuellen Überprüfung des Konformitätsproblems führen oder einen vordefinierten Problembehebungsprozess auslösen.
 
 Einige Beispiele für Auslöser und Aktionen bei Verstößen:
+
+<!-- docsTest:ignore "Cost Management" "Deployment Acceleration" "Identity Baseline" "Resource Consistency" "Security Baseline" -->
 
 | Cloudgovernancedisziplin | Beispielauslöser | Beispielaktion |
 |-----------------------------|----------------|---------------|
