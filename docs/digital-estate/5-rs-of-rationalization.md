@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 6a6ebbfc94dbe3b3fe031210f55f51635228013f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 21504538837030bf9a6ab84e42a09f365386fa78
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80431065"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214802"
 ---
 # <a name="cloud-rationalization"></a>Cloudrationalisierung
 
@@ -23,11 +23,17 @@ Cloudrationalisierung bezeichnet die Untersuchung von Ressourcen, um die bestmö
 
 Die in diesem Artikel aufgeführten „fünf Phasen der Rationalisierung“ sind eine großartige Möglichkeit zur Bezeichnung eines potenziellen zukünftigen Zustands für jede Workload, die als Cloudkandidat betrachtet wird. Dieser Bezeichnungsprozess sollte jedoch in den richtigen Kontext gesetzt werden, bevor Sie versuchen, eine Umgebung zu rationalisieren. Überprüfen Sie die folgenden Mythen, um diesen Kontext bereitzustellen:
 
-- **Mythos: Es ist einfach, Rationalisierungsentscheidungen in einem frühen Stadium des Prozesses zu treffen.** Eine genaue Rationalisierung erfordert ein fundiertes Wissen in Bezug auf die Workload und die damit verbundenen Ressourcen (Apps, VMs und Daten). Am wichtigsten ist, dass genaue Rationalisierungsentscheidungen Zeit in Anspruch nehmen. Wir empfehlen die Verwendung [eines inkrementellen Rationalisierungsprozesses](./rationalize.md#incremental-rationalization).
+### <a name="myth-its-easy-to-make-rationalization-decisions-early-in-the-process"></a>Mythos: Es ist einfach, Rationalisierungsentscheidungen in einem frühen Stadium des Prozesses zu treffen.
 
-- **Mythos: Die Cloudeinführung muss darauf warten, dass alle Workloads rationalisiert sind.** Die Rationalisierung eines gesamten IT-Portfolios oder sogar eines einzelnen Rechenzentrums kann die Realisierung des Geschäftswerts um Monate oder sogar Jahre verzögern. Eine vollständige Rationalisierung sollte nach Möglichkeit vermieden werden. Verwenden Sie stattdessen den [10er-Ansatz für die Releaseplanung](./rationalize.md#release-planning), um kluge Entscheidungen zu den nächsten 10 Workloads zu treffen, die für die Cloudeinführung vorgesehen sind.
+ Eine genaue Rationalisierung erfordert ein fundiertes Wissen in Bezug auf die Workload und die damit verbundenen Ressourcen (Apps, VMs und Daten). Am wichtigsten ist, dass genaue Rationalisierungsentscheidungen Zeit in Anspruch nehmen. Wir empfehlen die Verwendung [eines inkrementellen Rationalisierungsprozesses](./rationalize.md#incremental-rationalization).
 
-- **Mythos: Die geschäftliche Begründung muss warten, bis alle Workloads rationalisiert sind.** Um eine geschäftliche Begründung für eine Cloudeinführung zu entwickeln, machen Sie ein paar grundlegende Annahmen auf Portfolioebene. Wenn die Beweggründe an Innovationen ausgerichtet sind, gehen Sie von einer Umstrukturierung aus. Wenn die Beweggründe an der Migration ausgerichtet sind, gehen Sie vom Rehosten aus. Diese Annahmen können den Prozess der geschäftlichen Begründung beschleunigen. Annahmen werden dann in Frage gestellt und die Budgets während der Bewertungsphase der Einführungszyklen für die einzelnen Workloads optimiert.
+### <a name="myth-cloud-adoption-has-to-wait-for-all-workloads-to-be-rationalized"></a>Mythos: Die Cloudeinführung muss darauf warten, dass alle Workloads rationalisiert sind.
+
+Die Rationalisierung eines gesamten IT-Portfolios oder sogar eines einzelnen Rechenzentrums kann die Realisierung des Geschäftswerts um Monate oder sogar Jahre verzögern. Eine vollständige Rationalisierung sollte nach Möglichkeit vermieden werden. Verwenden Sie stattdessen den [Zehnerpotenzansatz für die Releaseplanung](./rationalize.md#release-planning), um kluge Entscheidungen zu den nächsten 10 Workloads zu treffen, die für die Cloudeinführung vorgesehen sind.
+
+### <a name="myth-business-justification-has-to-wait-for-all-workloads-to-be-rationalized"></a>Mythos: Die geschäftliche Begründung muss warten, bis alle Workloads rationalisiert sind.
+
+Um eine geschäftliche Begründung für eine Cloudeinführung zu entwickeln, machen Sie ein paar grundlegende Annahmen auf Portfolioebene. Wenn die Beweggründe an Innovationen ausgerichtet sind, gehen Sie von einer Umstrukturierung aus. Wenn die Beweggründe an der Migration ausgerichtet sind, gehen Sie vom Rehosten aus. Diese Annahmen können den Prozess der geschäftlichen Begründung beschleunigen. Annahmen werden dann in Frage gestellt und die Budgets während der Bewertungsphase der Einführungszyklen für die einzelnen Workloads optimiert.
 
 Überprüfen Sie jetzt die folgenden fünf Phasen der Rationalisierung, um sich mit dem zeitintensiven Prozess vertraut zu machen. Wählen Sie bei der Entwicklung Ihres Cloudeinführungsplans die Option aus, die am besten zu Ihren Beweggründen, Geschäftsergebnissen und der aktuellen Situation passt. Das Ziel der Rationalisierung digitaler Ressourcen ist es, Grundwerte festzulegen, und nicht die Rationalisierung sämtlicher Workloads.
 
@@ -41,22 +47,22 @@ Auch _Lift & Shift_-Migration genannt. Beim Rehosten wird die Ressource im aktue
 
 Häufige Motive können Folgendes umfassen:
 
-- Reduzieren der Investitionskosten
-- Freigeben von Platz im Rechenzentrum
-- Erzielen eine schnelle Rendite in der Cloud
+- Reduzieren der Investitionskosten.
+- Freigeben von Platz im Rechenzentrum.
+- Erzielen eine schnelle Rendite in der Cloud.
 
 Faktoren für die quantitative Analyse:
 
-- VM-Größe (CPU, Arbeitsspeicher, Speicherplatz)
-- Abhängigkeiten (Netzwerkdatenverkehr)
-- Ressourcenkompatibilität
+- VM-Größe (CPU, Arbeitsspeicher, Speicherplatz).
+- Abhängigkeiten (Netzwerkdatenverkehr).
+- Ressourcenkompatibilität.
 
 Faktoren für die qualitative Analyse:
 
-- Änderungstoleranz
-- Geschäftliche Prioritäten
-- Kritische Unternehmensereignisse
-- Prozessabhängigkeiten
+- Änderungstoleranz.
+- Geschäftliche Prioritäten.
+- Wichtige Unternehmensereignisse.
+- Prozessabhängigkeiten.
 
 ## <a name="refactor"></a>Refactoring
 
@@ -66,23 +72,23 @@ PaaS-Optionen (Platform-as-a-Service) können zur Senkung der Betriebskosten zah
 
 Häufige Motive können Folgendes umfassen:
 
-- Schnellere und kürzere Updates
-- Codeportabilität
-- Höhere Cloudeffizienz (Ressourcen, Geschwindigkeit, Kosten, verwaltete Vorgänge)
+- Schnellere und kürzere Updates.
+- Codeportabilität.
+- Höhere Cloudeffizienz (Ressourcen, Geschwindigkeit, Kosten, verwaltete Vorgänge).
 
 Faktoren für die quantitative Analyse:
 
-- Größe der Anwendungsressource (CPU, Arbeitsspeicher, Speicherplatz)
-- Abhängigkeiten (Netzwerkdatenverkehr)
-- Benutzerdatenverkehr (Seitenaufrufe, Verweildauer auf der Seite, Ladezeit)
-- Entwicklungsplattform (Sprachen, Datenplattform, Dienste der mittleren Ebene)
-- Datenbank (CPU, Arbeitsspeicher, Speicherplatz, Version)
+- Größe der Anwendungsressource (CPU, Arbeitsspeicher, Speicherplatz).
+- Abhängigkeiten (Netzwerkdatenverkehr).
+- Benutzerdatenverkehr (Seitenaufrufe, Verweildauer auf der Seite, Ladezeit).
+- Entwicklungsplattform (Sprachen, Datenplattform, Dienste der mittleren Ebene).
+- Datenbank (CPU, Arbeitsspeicher, Speicherplatz, Version).
 
 Faktoren für die qualitative Analyse:
 
-- Laufende Unternehmensinvestitionen
-- Burstoptionen/-zeitpläne
-- Geschäftsprozessabhängigkeiten
+- Laufende Unternehmensinvestitionen.
+- Burstoptionen oder -zeitpläne.
+- Geschäftsprozessabhängigkeiten.
 
 ## <a name="rearchitect"></a>Rearchitect (Überarbeiten)
 
@@ -92,22 +98,22 @@ In anderen Fällen können Anwendungen, die zwar mit der Cloud kompatibel, aber 
 
 Häufige Motive können Folgendes umfassen:
 
-- Skalierbarkeit und Flexibilität der Anwendung
-- Einfachere Einführung neuer Cloudfunktionen
-- Verwendung verschiedener Technologiestapel
+- Skalierbarkeit und Flexibilität der Anwendung.
+- Einfachere Einführung neuer Cloudfunktionen.
+- Verwendung verschiedener Technologiestapel.
 
 Faktoren für die quantitative Analyse:
 
-- Größe der Anwendungsressource (CPU, Arbeitsspeicher, Speicherplatz)
-- Abhängigkeiten (Netzwerkdatenverkehr)
-- Benutzerdatenverkehr (Seitenaufrufe, Verweildauer auf der Seite, Ladezeit)
-- Entwicklungsplattform (Sprachen, Datenplattform, Dienste der mittleren Ebene)
-- Datenbank (CPU, Arbeitsspeicher, Speicherplatz, Version)
+- Größe der Anwendungsressource (CPU, Arbeitsspeicher, Speicherplatz).
+- Abhängigkeiten (Netzwerkdatenverkehr).
+- Benutzerdatenverkehr (Seitenaufrufe, Verweildauer auf der Seite, Ladezeit).
+- Entwicklungsplattform (Sprachen, Datenplattform, Dienste der mittleren Ebene).
+- Datenbank (CPU, Arbeitsspeicher, Speicherplatz, Version).
 
 Faktoren für die qualitative Analyse:
 
-- Steigende Unternehmensinvestitionen
-- Betriebskosten
+- Steigende Unternehmensinvestitionen.
+- Betriebskosten.
 - Potenzielle Feedbackschleifen und DevOps-Investitionen.
 
 ## <a name="rebuild"></a>Neu erstellen
@@ -116,23 +122,23 @@ In manchen Szenarien kann die Kluft, die für die Weiterverwendung einer Anwendu
 
 Häufige Motive können Folgendes umfassen:
 
-- Beschleunigung von Innovationen
-- Schnellere App-Erstellung
-- Senkung der Betriebskosten
+- Beschleunigung von Innovationen.
+- Schnelleres Erstellen von Apps.
+- Senkung der Betriebskosten.
 
 Faktoren für die quantitative Analyse:
 
-- Größe der Anwendungsressource (CPU, Arbeitsspeicher, Speicherplatz)
-- Abhängigkeiten (Netzwerkdatenverkehr)
-- Benutzerdatenverkehr (Seitenaufrufe, Verweildauer auf der Seite, Ladezeit)
-- Entwicklungsplattform (Sprachen, Datenplattform, Dienste der mittleren Ebene)
-- Datenbank (CPU, Arbeitsspeicher, Speicherplatz, Version)
+- Größe der Anwendungsressource (CPU, Arbeitsspeicher, Speicherplatz).
+- Abhängigkeiten (Netzwerkdatenverkehr).
+- Benutzerdatenverkehr (Seitenaufrufe, Verweildauer auf der Seite, Ladezeit).
+- Entwicklungsplattform (Sprachen, Datenplattform, Dienste der mittleren Ebene).
+- Datenbank (CPU, Arbeitsspeicher, Speicherplatz, Version).
 
 Faktoren für die qualitative Analyse:
 
-- Sinkende Endbenutzerzufriedenheit
-- Einschränkung von Geschäftsprozessen aufgrund des Funktionsumfangs
-- Potenzielle Verbesserungen bei Kosten, Erfahrung oder Umsatz
+- Sinkende Endbenutzerzufriedenheit.
+- Einschränkung von Geschäftsprozessen aufgrund des Funktionsumfangs.
+- Potenzielle Verbesserungen bei Kosten, Erfahrung oder Umsatz.
 
 ## <a name="replace"></a>Replace
 
@@ -140,24 +146,24 @@ Lösungen werden in der Regel mit der besten Technologie und Methode implementie
 
 Häufige Motive können Folgendes umfassen:
 
-- Standardisierung auf der Grundlage bewährter Branchenmethoden
-- Beschleunigung der Einführung geschäftsprozessbasierter Ansätze
-- Umverteilung von Entwicklungsinvestitionen für Anwendungen, die Alleinstellungsmerkmale oder Wettbewerbsvorteile generieren
+- Standardisierung auf der Grundlage bewährter Branchenmethoden.
+- Beschleunigung der Einführung geschäftsprozessbasierter Ansätze.
+- Umverteilung von Entwicklungsinvestitionen für Anwendungen, die Alleinstellungsmerkmale oder Wettbewerbsvorteile generieren.
 
 Faktoren für die quantitative Analyse:
 
-- Senkung der allgemeinen Betriebskosten
-- VM-Größe (CPU, Arbeitsspeicher, Speicherplatz)
-- Abhängigkeiten (Netzwerkdatenverkehr)
-- Auszumusternde Ressourcen
-- Datenbank (CPU, Arbeitsspeicher, Speicherplatz, Version)
+- Senkung der allgemeinen Betriebskosten.
+- VM-Größe (CPU, Arbeitsspeicher, Speicherplatz).
+- Abhängigkeiten (Netzwerkdatenverkehr).
+- Außer Betrieb zu nehmende Ressourcen.
+- Datenbank (CPU, Arbeitsspeicher, Speicherplatz, Version).
 
 Faktoren für die qualitative Analyse:
 
-- Kosten-Nutzen-Analyse der aktuellen Architektur im Vergleich zu einer SaaS-Lösung
-- Geschäftsprozesszuordnungen
-- Datenschemas
-- Benutzerdefinierte oder automatisierte Prozesse
+- Kosten-Nutzen-Analyse der aktuellen Architektur im Vergleich zu einer SaaS-Lösung.
+- Geschäftsprozesszuordnungen.
+- Datenschemas.
+- Benutzerdefinierte oder automatisierte Prozesse.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

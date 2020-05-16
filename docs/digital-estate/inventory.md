@@ -7,16 +7,16 @@ ms.date: 12/10/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 186013e2f626be18f0cef8beea66d638be9a793c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8d24987d13467742ab004f386a5acf4e173566ff
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434825"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221347"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>Erfassen von Bestandsdaten für digitale Ressourcen
 
-Die Erstellung eines Bestandsverzeichnisses ist der erste Schritt bei der [Planung für digitale Ressourcen](./index.md). Hierzu wird eine Liste mit IT-Ressourcen, die bestimmte Geschäftsfunktionen unterstützen, zur späteren Analyse und Rationalisierung erfasst. In diesem Artikel wird davon ausgegangen, dass für die Planung ein Bottom-up-Analyseansatz am besten geeignet ist. Weitere Informationen finden Sie unter [Enterprise Cloud Adoption: Approaches to digital estate planning](./approach.md) (Enterprise Cloud-Einführung: Ansätze für die Planung digitaler Ressourcen).
+Die Erstellung eines Bestandsverzeichnisses ist der erste Schritt bei der [Planung des digitalen Bestands](./index.md). Hierzu wird eine Liste mit IT-Ressourcen, die bestimmte Geschäftsfunktionen unterstützen, zur späteren Analyse und Rationalisierung erfasst. In diesem Artikel wird davon ausgegangen, dass für die Planung ein Bottom-up-Analyseansatz am besten geeignet ist. Weitere Informationen finden Sie unter [Enterprise Cloud Adoption: Approaches to digital estate planning](./approach.md) (Enterprise Cloud-Einführung: Ansätze für die Planung digitaler Ressourcen).
 
 ## <a name="take-inventory-of-a-digital-estate"></a>Erfassen von Bestandsdaten für ein digitales Umfeld
 

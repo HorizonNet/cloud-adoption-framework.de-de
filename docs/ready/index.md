@@ -3,17 +3,16 @@ title: Vorbereiten der Cloudeinführung
 description: Erfahren Sie, wie Sie eine Zielzone zum Hosten der Workloads erstellen, die Sie in der Cloud erstellen oder in die Cloud migrieren möchten.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 07/01/2019
-ms.topic: landing-page
+ms.date: 05/04/2019
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-layout: LandingPage
-ms.openlocfilehash: 11ab187c24bcd288834cf3c4823e508096e69492
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 3cbadad8cef926084b76170fe6f820eb6629a6bf
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "79092522"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223030"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -21,96 +20,15 @@ ms.locfileid: "79092522"
 
 Bevor Sie mit der Einführung beginnen können, müssen Sie eine Landezone zum Hosten der Workloads erstellen, die Sie in der Cloud erstellen oder in die Cloud migrieren möchten. In diesem Abschnitt des Frameworks wird Schritt für Schritt erläutert, wie Sie eine Landezone erstellen.
 
-## <a name="landing-zone-exercises"></a>Aufgaben für Landezonen
-
 Die folgenden Aufgaben unterstützen Sie bei der Erstellung einer Landezone für die Cloudeinführung.
 
 <!-- markdownlint-disable MD033 -->
 
-<ul class="panelContent cardsF">
-    <li style="display: flex; flex-direction: column;">
-        <a href="./azure-setup-guide/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/1.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Azure-Einrichtungsleitfaden</h3>
-Machen Sie sich anhand des Leitfadens für die Azure-Einrichtung mit den Tools und Ansätzen vertraut, die Sie für die Erstellung einer Landezone benötigen.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./landing-zone/first-landing-zone.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Erste Landezone</h3>
-Wählen Sie die am besten geeignete Zielzone aus, um einen codebasierten Startpunkt für Ihre Umgebung zu erstellen.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./considerations/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Erweitern der Zielzone</h3>
-Erfüllen Sie die Plattformanforderungen Ihres Cloudeinführungsplans, indem Sie die erste Zielzone erweitern.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./azure-best-practices/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Bewährte Methoden</h3>
-Überprüfen Sie sämtliche Anpassungen anhand der bewährten Methoden, um sicherzustellen, dass Ihre aktuellen und zukünftigen Zielzonen ordnungsgemäß konfiguriert sind.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
+| | |
+|---|---|
+| ![1](../_images/icons/1.png)     | <br>[Azure-Einrichtungsleitfaden](./azure-setup-guide/index.md): Machen Sie sich anhand des Leitfadens für die Azure-Einrichtung mit den Tools und Ansätzen vertraut, die Sie für die Erstellung einer Landezone benötigen.                                |
+| ![2](../_images/icons/2.png)     | <br>[Erste Zielzone](./landing-zone/first-landing-zone.md): Wählen Sie die am besten geeignete Zielzone aus, um einen codebasierten Startpunkt für Ihre Umgebung zu erstellen.                                |
+| ![3](../_images/icons/3.png)     | <br>[Erweitern der Zielzone](./considerations/index.md): Erfüllen Sie die Plattformanforderungen Ihres Cloudeinführungsplans, indem Sie die erste Zielzone erweitern.                                |
+| ![4](../_images/icons/4.png)      | <br>[Bewährte Methoden:](./azure-best-practices/index.md) Überprüfen Sie sämtliche Anpassungen anhand der bewährten Methoden, um sicherzustellen, dass Ihre aktuellen und zukünftigen Zielzonen ordnungsgemäß konfiguriert sind.                        |
 
-<!-- markdownlint-enable MD033 -->
-
-## <a name="next-steps"></a>Nächste Schritte
-
-Bereiten Sie sich mithilfe des [Leitfadens für die Azure-Einrichtung](./azure-setup-guide/index.md) auf die Cloudeinführung vor.
-
-> [!div class="nextstepaction"]
-> [Azure-Einrichtungsleitfaden](./azure-setup-guide/index.md)
+Bereiten Sie sich mindestens mithilfe des [Leitfadens für die Azure-Einrichtung](./azure-setup-guide/index.md) auf die Cloudeinführung vor.

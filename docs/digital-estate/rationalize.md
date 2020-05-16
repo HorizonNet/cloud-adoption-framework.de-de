@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 70b4d0ee295f06db68090551fac02fd205111c60
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 72bc453ba9ce0feb90e6dceaf73cd89ded0c64e0
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995725"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221330"
 ---
 # <a name="rationalize-the-digital-estate"></a>Rationalisieren der digitalen Ressourcen
 
@@ -21,11 +21,15 @@ Bei der Rationalisierung der Cloud werden Ressourcen evaluiert, um die beste Vor
 
 ## <a name="traditional-view-of-rationalization"></a>Herkömmlicher Rationalisierungsansatz
 
-Die Rationalisierung ist leicht verständlich, wenn Sie sich den herkömmlichen Rationalisierungsprozess wie eine komplexe Entscheidungsstruktur vorstellen. Jedes Element der digitalen Ressourcen durchläuft einen Prozess, an dessen Ende eine von fünf möglichen Antworten („die fünf R“) steht. Für kleinere Ressourcenumgebungen funktioniert dieser Prozess gut. Bei größeren Ressourcenumgebungen ist er aber ineffizient und kann zu erheblichen Verzögerungen führen. Wir sehen uns den Prozess nun an, um den Grund dafür zu verdeutlichen. Anschließend stellen wir ein effizienteres Modell vor.
+Die Rationalisierung ist leicht verständlich, wenn Sie sich den herkömmlichen Rationalisierungsprozess wie eine komplexe Entscheidungsstruktur vorstellen. Jedes Element des digitalen Bestands durchläuft einen Prozess, an dessen Ende eine von fünf möglichen Antworten („die fünf R der Rationalisierung“) steht. Für kleinere Ressourcenumgebungen funktioniert dieser Prozess gut. Bei größeren Ressourcenumgebungen ist er aber ineffizient und kann zu erheblichen Verzögerungen führen. Wir sehen uns den Prozess nun an, um den Grund dafür zu verdeutlichen. Anschließend stellen wir ein effizienteres Modell vor.
 
 **Bestand:** Ein umfassender Ressourcenbestand – z.B. mit Anwendungen, Software, Hardware, Betriebssystemen und Systemleistungsmetriken – ist erforderlich, um mithilfe von herkömmlichen Modellen eine vollständige Rationalisierung zu erzielen.
 
-**Quantitative Analyse:** In der Entscheidungsstruktur bilden quantitative Fragen die Grundlage der ersten Entscheidungsebene. Häufige Fragen umfassen Folgendes: Wird die Ressource derzeit genutzt? Wenn ja, ist sie optimiert, und hat sie die richtige Größe? Welche Abhängigkeiten bestehen zwischen Ressourcen? Diese Fragen sind für die Klassifizierung des Bestands von entscheidender Bedeutung.
+**Quantitative Analyse:** In der Entscheidungsstruktur bilden quantitative Fragen die Grundlage der ersten Entscheidungsebene. Häufige Fragen umfassen Folgendes:
+
+    - Wird die Ressource derzeit genutzt?
+    - Wenn ja, ist sie optimiert, und hat sie die richtige Größe?
+    - Welche Abhängigkeiten bestehen zwischen Ressourcen? Diese Fragen sind für die Klassifizierung des Bestands von entscheidender Bedeutung.
 
 **Qualitative Analyse:** Für die nächsten Entscheidungen wird menschliche Intelligenz in Form einer qualitativen Analyse benötigt. Oft gelten die hier gestellten Fragen nur speziell für die Lösung und können nur von Beteiligten des Unternehmens und Hauptbenutzern beantwortet werden. Diese Entscheidungen verzögern den Prozess normalerweise, wodurch die Dinge erheblich verlangsamt werden. Bei dieser Analyse werden in der Regel 40 bis 80 Vollzeitmitarbeiter-Stunden pro Anwendung verbraucht.
 
@@ -71,7 +75,7 @@ Wenn beispielsweise die Optionen in Bezug auf das Rehosting oder Außerbetriebne
 
 „Die Analyse hat ergeben, dass diese Ressource derzeit von keinem Benutzer aktiv verwendet wird. Stimmt dies, oder haben wir etwas übersehen?“ Eine Ja/Nein-Frage dieser Art kann mit einer qualitativen Analyse normalerweise wesentlich einfacher beantwortet werden.
 
-Mit diesem optimierten Ansatz werden Baselines, Finanzpläne, eine Strategie und eine Richtung festgelegt. Bei späteren Aktivitäten durchläuft jede Ressource dann eine weitere Rationalisierung und qualitative Analyse, um weitere Optionen zu evaluieren. Alle Annahmen, die Sie in dieser anfänglichen Rationalisierung vornehmen, werden vorher getestet
+Mit diesem optimierten Ansatz werden Baselines, Finanzpläne, eine Strategie und eine Richtung festgelegt. Bei späteren Aktivitäten durchläuft jede Ressource dann eine weitere Rationalisierung und qualitative Analyse, um weitere Optionen zu evaluieren. Alle Annahmen, die Sie in dieser anfänglichen Rationalisierung vornehmen, werden vordem Migrieren einzelner Workloads getestet.
 
 ## <a name="challenge-assumptions"></a>Anforderungsannahmen
 
@@ -122,7 +126,7 @@ Die Cloudeinführungsteams und das Cloudstrategieteam können zusammenarbeiten, 
 Parallel zur laufenden Rationalisierung kann das Cloudeinführungsteam damit beginnen, die kleine Workload zu migrieren, um den Lernprozess in den folgenden wichtigen Bereichen zu fördern:
 
 - Stärken der Fähigkeiten in Bezug auf die Plattform des Cloudanbieters
-- Definieren der erforderlichen Kerndienste (und Azure-Standards) für die langfristige Vision
+- Definieren der erforderlichen Kerndienste (und Azure-Standards) für die langfristige Vision.
 - Entwickeln eines besseren Verständnisses, wie Vorgänge im Verlauf der Transformation geändert werden müssten.
 - Verstehen der inhärenten geschäftlichen Risiken und der damit verbundenen Toleranz des Unternehmens
 - Festlegen einer Baseline oder eines Minimum Viable Product (MVP) für Governance gemäß der Risikotoleranz des Unternehmens
@@ -133,7 +137,7 @@ Während das Cloudeinführungsteam die Migration oder Implementierung der ersten
 
 ### <a name="power-of-10"></a>Zehn Anwendungen
 
-Der herkömmliche Ansatz für die Rationalisierung versucht, alle vorhersehbaren Anforderungen zu erfüllen. Glücklicherweise wird zum Starten eines Transformationsprozesses meist nicht ein separater Plan für jede Anwendung benötigt. Bei einem inkrementellen Modell ist der Ansatz „Zehn Anwendungen“ ein guter Ausgangspunkt. Hierbei wählt das Cloudstrategieteam die ersten 10 Anwendungen für die Migration aus. Diese zehn Workloads sollten ein Mischung aus einfachen und komplexen Workloads darstellen.
+Der herkömmliche Ansatz für die Rationalisierung versucht, alle vorhersehbaren Anforderungen zu erfüllen. Glücklicherweise wird zum Starten eines Transformationsprozesses meist nicht ein separater Plan für jede Anwendung benötigt. Bei einem inkrementellen Modell ist der Zehnerpotenzansatz ein guter Ausgangspunkt. Hierbei wählt das Cloudstrategieteam die ersten 10 Anwendungen für die Migration aus. Diese zehn Workloads sollten ein Mischung aus einfachen und komplexen Workloads darstellen.
 
 ### <a name="build-the-first-backlogs"></a>Erstellen der ersten Backlogs
 

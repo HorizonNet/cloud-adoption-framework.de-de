@@ -1,0 +1,186 @@
+### YamlMime:Hub
+title: Framework für die Einführung der Microsoft Cloud (Microsoft Cloud Adoption Framework)
+summary: Das Cloud Adoption Framework ist eine Sammlung von Dokumentation, Implementierungsleitfäden, bewährten Methoden und Tools, die sich als Maßnahmen von Microsoft bewährt haben, um Ihre Umstellung auf die Cloud zu beschleunigen.
+brand: azure
+metadata:
+  title: Framework für die Einführung der Microsoft Cloud (Microsoft Cloud Adoption Framework)
+  description: Das Cloud Adoption Framework ist eine Sammlung von Dokumentation, Implementierungsleitfäden, bewährten Methoden und Tools, die Ihre Umstellung auf die Cloud beschleunigen.
+  ms.service: cloud-adoption-framework
+  ms.topic: landing-page
+  services: cloud-adoption-framework
+  author: JanetCThomas
+  ms.author: janet
+  ms.date: 04/20/2020
+  ms.openlocfilehash: 2214466178729bcf6cb0e6ddd02a22d036039004
+  ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+  ms.translationtype: HT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 05/12/2020
+  ms.locfileid: "83228302"
+highlightedContent:
+  items:
+  - title: Starten Ihrer Cloud Journey
+    itemType: get-started
+    url: ./get-started/index.md
+  - title: Tools und Vorlagen für die Cloudeinführung
+    itemType: download
+    url: ./reference/tools-templates.md
+  - title: Was ist das Cloud Adoption Framework?
+    itemType: overview
+    url: ./overview.md
+  - title: Neuerungen im Cloud Adoption Framework
+    itemType: whats-new
+    url: ./get-started/whats-new.md
+productDirectory:
+  title: Leitfaden zum Cloud Adoption Framework
+  summary: Dieser Leitfaden ist auf die Phasen des Lebenszyklus einer Cloudeinführung ausgerichtet, damit jederzeit auf die passenden Informationen zugegriffen werden kann.
+  items:
+  - title: Erste Schritte
+    imageSrc: https://docs.microsoft.com/media/common/i_road-map.svg
+    links:
+    - url: ./get-started/cloud-concepts.md
+      text: Dokumentieren grundlegender Entscheidungen
+    - url: ./get-started/migrate.md
+      text: Beschleunigen der Migration
+    - url: ./get-started/operational-excellence.md
+      text: Bereitstellen des optimalen Betriebs
+    - url: ./get-started/org-alignment.md
+      text: Ausrichten Ihrer Organisation
+  - title: Strategie
+    imageSrc: ./_images/caf-strategy.png
+    links:
+    - url: ./strategy/motivations.md
+      text: Beweggründe
+    - url: ./strategy/business-outcomes/index.md
+      text: Geschäftsergebnisse
+    - url: ./strategy/partner-alignment.md
+      text: Ausrichten der Partnerstrategie
+    - url: ./strategy/first-adoption-project.md
+      text: Auswählen des passenden ersten Projekts
+  - title: Planen
+    imageSrc: ./_images/caf-plan.png
+    links:
+    - url: ./digital-estate/rationalize.md
+      text: Rationalisieren des digitalen Bestands
+    - url: ./plan/initial-org-alignment.md
+      text: Organisationsausrichtung
+    - url: ./plan/suggested-skills.md
+      text: Plan für die Qualifikationsbereitschaft
+    - url: ./plan/template.md
+      text: Cloudeinführungsplan-DevOps
+  - title: Bereit
+    imageSrc: ./_images/caf-ready.png
+    links:
+    - url: ./ready/azure-setup-guide/index.md
+      text: Azure-Einrichtungsleitfaden
+    - url: ./ready/landing-zone/migrate-landing-zone.md
+      text: Erste Landezone
+    - url: ./ready/considerations/index.md
+      text: Erweitern der Zielzone
+    - url: ./ready/azure-best-practices/index.md
+      text: Bewährte Methoden für die Azure-Bereitschaft
+  - title: Migrieren
+    imageSrc: ./_images/caf-migrate.png
+    links:
+    - url: ./migrate/azure-migration-guide/index.md
+      text: Leitfaden zur Azure-Migration
+    - url: ./migrate/azure-best-practices/contoso-migration-overview.md
+      text: Migrationsszenarios
+    - url: ./migrate/azure-best-practices/index.md
+      text: Bewährte Methoden für die Cloudmigration
+    - url: ./migrate/migration-considerations/index.md
+      text: Prozessverbesserungen
+  - title: Innovation
+    imageSrc: ./_images/caf-adopt.png
+    links:
+    - url: ./innovate/business-value.md
+      text: Einigkeit über den Geschäftswert
+    - url: ./innovate/innovation-guide/index.md
+      text: Azure-Innovationsleitfaden
+    - url: ./innovate/best-practices/index.md
+      text: Bewährte Methoden
+    - url: ./innovate/considerations/adoption.md
+      text: Feedbackschleifen
+  - title: Steuern
+    imageSrc: ./_images/caf-govern.png
+    links:
+    - url: ./govern/methodology.md
+      text: Methodik
+    - url: ./govern/benchmark.md
+      text: Benchmarkbewertung
+    - url: ./govern/initial-foundation.md
+      text: Governancegrundlage
+    - url: ./govern/foundation-improvements.md
+      text: Verbessern der Grundlage
+  - title: Verwalten
+    imageSrc: ./_images/caf-manage.png
+    links:
+    - url: ./manage/azure-management-guide/index.md
+      text: Baseline zur Verwaltung
+    - url: ./manage/considerations/business-alignment.md
+      text: Geschäftliche Verpflichtungen
+    - url: ./manage/best-practices.md
+      text: Erweitern der Baseline
+    - url: ./manage/design-principles.md
+      text: Auswerten von Entwurfsprinzipien
+  - title: Organisieren
+    imageSrc: https://docs.microsoft.com/media/common/i_configure-teams.svg
+    links:
+    - url: ./organize/index.md
+      text: Organisationsausrichtung
+    - url: ./organize/organization-structures.md
+      text: Einrichten von Teams
+    - url: ./organize/raci-alignment.md
+      text: Ausrichten von Zuständigkeiten
+tools:
+  title: Erweitern Ihrer Fähigkeiten mit Microsoft Learn
+  summary: Weitere Informationen zu Azure und dem Cloud Adoption Framework finden Sie in den folgenden Microsoft Learn-Modulen.
+  items:
+  - title: Framework für die Einführung der Microsoft Cloud (Microsoft Cloud Adoption Framework)
+    imageSrc: ./_images/learn-caf-logo.png
+    url: https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/index
+  - title: Azure-Grundlagen
+    imageSrc: ./_images/learn-azure-fundamentals-logo.png
+    url: https://docs.microsoft.com/learn/paths/azure-fundamentals
+  - title: Kennenlernen des Geschäftswerts von Microsoft Azure
+    imageSrc: ./_images/learn-business-value-of-azure-logo.png
+    url: https://docs.microsoft.com/learn/paths/learn-business-value-of-azure
+conceptualContent:
+  title: Bewertungen
+  summary: Bewertungen helfen Ihnen bei der Planung Ihrer Cloud Journey. Verwenden Sie diese, um Unterschiede zwischen Ihrem aktuellen und dem gewünschten Zustand zu identifizieren. Wir stellen personalisierte kuratierte Empfehlungen bereit, die Ihnen helfen, den gewünschten Zustand zu erreichen.
+  items:
+  - title: Cloud Journey Tracker
+    links:
+    - url: https://docs.microsoft.com/assessments/?mode=pre-assessment&id=cloud-journey-tracker
+      itemType: get-started
+      text: Identifizieren Sie Ihren Cloudeinführungspfad basierend auf den Anforderungen Ihres Unternehmens.
+  - title: Tool zur strategischen Migrationsbewertung und Bereitschaft (INTELLIGENT)
+    links:
+    - url: https://docs.microsoft.com/assessments/?mode=pre-assessment&id=Strategic-Migration-Assessment
+      itemType: get-started
+      text: Beseitigen von Migrationshindernissen, Verbessern von Prozessen und Befördern des Geschäftserfolgs.
+  - title: Governancebenchmark
+    links:
+    - url: https://www.cafbaseline.com
+      itemType: quickstart
+      text: Identifizieren Sie die Lücken zwischen Ihrem derzeitigen Zustand und den geschäftlichen Prioritäten, und holen Sie sich die richtigen Ressourcen, um diese Lücken zu schließen.
+  - title: Azure Architecture Review
+    links:
+    - url: https://docs.microsoft.com/assessments/?mode=pre-assessment&id=azure-architecture-review
+      itemType: architecture
+      text: Untersuchen Sie, wie Sie über die grundlegenden Vorgänge für Prioritätsworkloads hinausgehen.
+additionalContent:
+  sections:
+  - title: Erhalten von Support
+    summary: Wenn Sie bei der Cloudeinführung auf Hindernisse stoßen, kann Ihnen Microsoft mit dedizierten Ressourcen dabei helfen, diese Hindernisse zu beseitigen.
+    items:
+    - title: FastTrack for Azure
+      summary: Hilfe von Microsoft-Technikern erhalten
+      url: https://azure.microsoft.com/programs/azure-fasttrack
+    - title: Azure-Migrationsprogramm
+      summary: Hilfe beim Migrieren von Workloads in die Cloud erhalten
+      url: https://azure.microsoft.com/migration/migration-program
+    - title: Einen Partner suchen
+      summary: Einen Partner suchen, der Sie bei den ersten Schritten unterstützt
+      url: https://aka.ms/adopt/findapartner
+  footer: Erfahren Sie, warum das Cloud Adoption Framework für Ihr Unternehmen geeignet ist. [https://aka.ms/adopt](https://azure.microsoft.com/cloud-adoption-framework)
