@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 57859a8e3af75fa19f929e8fb614197ff69c47df
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7050b4b40508f9ac133322600625e016c270bb15
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434081"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219562"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Azure-Serververwaltungstools und -dienste
 
@@ -57,8 +57,8 @@ Für Ihre Dateiserverdaten ist die [Azure-Dateisynchronisierung](https://docs.mi
 
 [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) bietet einen Überblick über verschiedene Ressourcen, wie Anwendungen, Container und virtuelle Computer. Außerdem werden Daten aus mehreren Quellen erfasst:
 
-- Azure Monitor für VMs ([Insights](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview)) bietet eine detaillierte Darstellung der Integrität der virtuellen Computer, von Leistungstrends und Abhängigkeiten. Der Dienst überwacht die Integrität der Betriebssysteme für Ihre virtuellen Azure-Computer, VM-Skalierungsgruppen sowie der Computer in Ihrer lokalen Umgebung.
-- Log Analytics ([Protokolle](https://docs.microsoft.com/azure/azure-monitor/platform/data-collection#logs)) ist ein Feature von Azure Monitor. Die Rolle von Log Analytics ist ein wesentlicher Bestandteil der Azure-Verwaltungsfunktionen. Es dient als Datenspeicher für die Protokollanalyse und für viele andere Azure-Dienste. Es bietet eine umfangreiche Abfragesprache und eine Analyse-Engine, die Ihnen Einblicke in den Betrieb Ihrer Anwendungen und Ressourcen gibt.
+- [Azure Monitor für VMs](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview) bietet eine detaillierte Darstellung der Integrität der virtuellen Computer, von Leistungstrends und Abhängigkeiten. Der Dienst überwacht die Integrität der Betriebssysteme für Ihre virtuellen Azure-Computer, VM-Skalierungsgruppen sowie der Computer in Ihrer lokalen Umgebung.
+- [Log Analytics](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview) ist ein Feature von Azure Monitor. Die Rolle von Log Analytics ist ein wesentlicher Bestandteil der Azure-Verwaltungsfunktionen. Es dient als Datenspeicher für die Protokollanalyse und für viele andere Azure-Dienste. Es bietet eine umfangreiche Abfragesprache und eine Analyse-Engine, die Ihnen Einblicke in den Betrieb Ihrer Anwendungen und Ressourcen gibt.
 - Das [Azure-Aktivitätsprotokoll](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) ist ebenfalls ein Feature von Azure Monitor. Hiermit können Sie Erkenntnisse zu Ereignissen auf Abonnementebene gewinnen, die in Azure eintreten.
 
 ## <a name="configure"></a>Konfigurieren

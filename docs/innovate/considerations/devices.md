@@ -7,16 +7,16 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f7207b71f88bb311d28c8d1794dde7fddc425a30
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 2fd3bfb329131e2ec344131ba3e2cbf8bc189a8f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433297"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219732"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>Umgebungserfahrungen: Interagieren mit Geräten
 
-Unter [Entwickeln von Lösungen mit Blick auf die Kundenanforderungen](./build.md) haben wir die drei Tests wahrer Innovation erörtert: Erfüllung eines Kundenbedürfnisses, dauerhafte Bindung des Kunden und Skalierung in einem Stamm von Kundenkohorten. Jeder Test Ihrer Hypothese erfordert Aufwand und Iterationen hinsichtlich des Ansatzes zur Umsetzung. Dieser Artikel bietet Einblicke in einige weitergehende Ansätze, um diesen Aufwand mittels *Umgebungserfahrungen* zu verringern. Durch die Interaktion mit Geräten statt mit einer Anwendung kann es sein, dass sich der Kunde eher zuerst Ihrer Lösung zuwendet.
+Unter [Entwickeln von Lösungen mit Blick auf die Kundenanforderungen](./build.md) haben wir die drei Tests wahrer Innovation erörtert: Erfüllung eines Kundenbedürfnisses, dauerhafte Bindung des Kunden und Skalierung in einem Stamm von Kundenkohorten. Jeder Test Ihrer Hypothese erfordert Aufwand und Iterationen hinsichtlich des Ansatzes zur Umsetzung. Dieser Artikel bietet Einblicke in einige weitergehende Ansätze, um diesen Aufwand mittels _Umgebungserfahrungen_ zu verringern. Durch die Interaktion mit Geräten statt mit einer Anwendung kann es sein, dass sich der Kunde eher zuerst Ihrer Lösung zuwendet.
 
 ## <a name="ambient-experiences"></a>Umgebungserfahrungen
 
@@ -24,7 +24,7 @@ Eine Umgebungserfahrung ist eine digitale Erfahrung in Bezug auf die unmittelbar
 
 Das Leben in der digitalen Wirtschaft ist voller Ablenkungen. Wir alle werden mit Nachrichten, ob visuell oder verbal, aus sozialen Medien, per E-Mail oder dem Internet, bombardiert, von denen jede ein Ablenkungsrisiko darstellt. Dieses Risiko steigt mit jeder Sekunde zwischen dem Zeitpunkt des Bedarfs des Kunden und dem Zeitpunkt, an dem er eine Lösung findet. Unzählige Kunden gehen in dieser kurzen Zeitspanne verloren. Um einen Anstieg wiederholter Akzeptanz zu fördern, müssen Sie die Anzahl der Ablenkungen verringern, indem Sie die Zeit bis zur Lösung verkürzen.
 
-## <a name="interacting-with-devices"></a>Interagieren mit Geräten
+## <a name="interact-with-devices"></a>Interagieren mit Geräten
 
 Eine standardmäßige Weboberfläche ist die verbreitetste Anwendungsentwicklungstechnik zur Erfüllung von Kundenbedürfnissen. Bei diesem Ansatz wird davon ausgegangen, dass sich der Kunde am Computer befindet. Wenn Ihr Kunde seine Bedürfnisse stets am Laptop erfüllt, entwickeln Sie eine Web-App. Diese Web-App bietet dem Kunden in diesem Szenario eine Umgebungserfahrung. Wir wissen jedoch, dass dieses Szenario in unserer aktuellen Zeit immer seltener und weniger wahrscheinlich wird.
 
@@ -45,7 +45,7 @@ Die erste Phase der Umgebungserfahrung stellt das Lösen des Benutzers vom Compu
 
 Wenn Kunden mobil sind und häufig ihren Standort wechseln, kann dies die relevanteste Form der Umgebungserfahrung für eine bestimmte Lösung sein. Im letzten Jahrzehnt wurden Innovationen häufig durch die Integration vorhandener Lösungen in eine mobile Umgebung ausgelöst.
 
-Azure App Service ist ein gutes Beispiel für diesen Ansatz. Während der ersten Iterationen kann die [Web-App-Funktion von Azure App Service](https://docs.microsoft.com/azure/app-service/overview) zum Testen der Hypothese verwendet werden. Mit zunehmender Komplexität der Hypothesen kann die [mobile App-Funktion von Azure App Services](https://docs.microsoft.com/azure/app-service-mobile) die Web-App so erweitern, dass sie auf einer Vielzahl mobiler Plattformen ausgeführt wird.
+Azure App Service ist ein gutes Beispiel für diesen Ansatz. Während der ersten Iterationen kann die [Web-App-Funktion von Azure App Service](https://docs.microsoft.com/azure/app-service/overview) zum Testen der Hypothese verwendet werden. Mit zunehmender Komplexität der Hypothesen kann die [mobile App-Funktion von Azure App Service](https://docs.microsoft.com/azure/app-service-mobile) die Web-App so erweitern, dass sie auf einer Vielzahl mobiler Plattformen ausgeführt wird.
 
 ## <a name="mixed-reality"></a>Mixed Reality
 
@@ -74,7 +74,7 @@ Sie können diese drei Tools zum Sammeln von Daten aus der natürlichen Umgebung
 
 ## <a name="adjusted-reality"></a>Angepasste Realität
 
-Die höchste Form der Umgebungserfahrung ist die angepasste Realität, die oft als *Umgebungsintelligenz* bezeichnet wird. Angepasste Realität ist ein Ansatz zur Nutzung von Informationen aus Ihrer Lösung, um die Realität des Kunden zu beeinflussen, ohne dass eine direkte Interaktion mit einer Anwendung erforderlich ist. Bei diesem Ansatz ist die Anwendung, die Sie ursprünglich zum Nachweis Ihrer Hypothese entwickelt haben, möglicherweise völlig unwichtig. Stattdessen passen die Geräte in der Umgebung die Ein- und Ausgaben an, um die Bedürfnisse der Kunden zu decken.
+Die höchste Form der Umgebungserfahrung ist die angepasste Realität, die oft als _Umgebungsintelligenz_ bezeichnet wird. Angepasste Realität ist ein Ansatz zur Nutzung von Informationen aus Ihrer Lösung, um die Realität des Kunden zu beeinflussen, ohne dass eine direkte Interaktion mit einer Anwendung erforderlich ist. Bei diesem Ansatz ist die Anwendung, die Sie ursprünglich zum Nachweis Ihrer Hypothese entwickelt haben, möglicherweise völlig unwichtig. Stattdessen passen die Geräte in der Umgebung die Ein- und Ausgaben an, um die Bedürfnisse der Kunden zu decken.
 
 Virtuelle Assistenten und intelligente Lautsprecher sind ein gutes Beispiel für angepasste Realität. Allein ist ein intelligenter Lautsprecher ein Beispiel für einfache integrierte Realität. Fügen Sie einer intelligenten Lautsprecherlösung aber einen intelligenten Licht- und Bewegungssensor hinzu, dann ist es ganz einfach, eine einfache Lösung zu schaffen, bei der das Licht beim Betreten eines Raums eingeschaltet wird.
 

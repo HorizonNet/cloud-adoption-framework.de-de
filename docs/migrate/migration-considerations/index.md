@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d238918580c2db808a82c52d67d837a055c033e9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: db298f40598bc1060c56901d95f7b325ce548abe
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80432577"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214360"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>Cloud Adoption Framework-Migrationsmodell
 
@@ -29,13 +29,13 @@ Das Migrationsmodell des Cloud Adoption Frameworks hängt davon ab, ob Ihr Unter
 
 ## <a name="envision-an-end-state"></a>Planen des Endzustands
 
-Es ist wichtig, eine grobe Vorstellung von Ihrem Endzustand zu erhalten, bevor Sie mit der Migration beginnen. Das folgende Diagramm zeigt einen lokalen Ausgangspunkt für Infrastruktur, Anwendungen und Daten, der Ihren *digitalen Bestand* definiert. Während des Migrationsprozesses werden diese Ressourcen mit einer der fünf in [Die fünf Phasen der Rationalisierung](../../digital-estate/5-rs-of-rationalization.md) beschriebenen Migrationsstrategien überführt.
+Es ist wichtig, eine grobe Vorstellung von Ihrem Endzustand zu erhalten, bevor Sie mit der Migration beginnen. Das folgende Diagramm zeigt einen lokalen Ausgangspunkt für Infrastruktur, Anwendungen und Daten, der Ihren _digitalen Bestand_ definiert. Während des Migrationsprozesses werden diese Ressourcen mit einer der fünf in den [fünf Phasen der Rationalisierung](../../digital-estate/5-rs-of-rationalization.md) beschriebenen Migrationsstrategien überführt.
 
 ![Infografik zu den Migrationsoptionen](../../_images/migrate/migration-options.png)
 
-Die Migration und Modernisierung von Workloads reichen von einfachen Migrationen vom Typ _Zuweisen eines neuen Hosts_ (auch als _Lift & Shift_ bezeichnet) mithilfe von IaaS-Funktionen (Infrastruktur-as-a-Service), die keine Code- und App-Änderungen erfordern, über _Refactoring_-Migrationen mit minimalen Änderungen bis hin zu _Überarbeiten_-Migrationen zum Ändern und Erweitern von Code- und App-Funktionen, um die Vorteile von Cloudtechnologien zu nutzen.
+Die Migration und Modernisierung von Workloads reichen von einfachen Migrationen vom Typ _Zuweisen eines neuen Hosts_ (auch als _Lift & Shift_-Migrationen bezeichnet) mithilfe von IaaS-Funktionen (Infrastruktur-as-a-Service), die keine Code- und App-Änderungen erfordern, über _Refactoring_-Migrationen mit minimalen Änderungen bis hin zu _Überarbeiten_-Migrationen zum Ändern und Erweitern von Code- und App-Funktionen, um die Vorteile von Cloudtechnologien zu nutzen.
 
-Cloudnative Strategien und PaaS-Strategien (Platform-as-a-Service) *erstellen* lokale Workloads mithilfe von Azure-Plattformangeboten und verwalteten Diensten neu. Workloads, die über gleichwertige, vollständig verwaltete cloudbasierte SaaS-Angebote (Software-as-a-Service) verfügen, können oft vollständig durch diese Dienste im Rahmen des Migrationsprozesses *ersetzt* werden.
+Cloudnative Strategien und PaaS-Strategien (Platform-as-a-Service) _erstellen_ lokale Workloads mithilfe von Azure-Plattformangeboten und verwalteten Diensten neu. Workloads, die über gleichwertige, vollständig verwaltete cloudbasierte SaaS-Angebote (Software-as-a-Service) verfügen, können oft vollständig durch diese Dienste im Rahmen des Migrationsprozesses _ersetzt_ werden.
 
 > [!NOTE]
 > Während der öffentlichen Vorschauversion des Cloud Adoption Frameworks hebt dieser Abschnitt des Frameworks eine „Zuweisen eines neuen Hosts“-Migrationsstrategie hervor. Obwohl PaaS- und SaaS-Lösungen bei Bedarf als Alternativen diskutiert werden, steht die Migration von virtuellen computerbasierten Workloads mit IaaS-Funktionen im Vordergrund.

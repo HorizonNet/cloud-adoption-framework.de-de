@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 86acc05f9eaf38193db6c0f1ad1c708ed810c7be
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 31c0335cd4f1a6d8ef8e4793e3f6fb4fa383d339
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396020"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221483"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -20,15 +20,17 @@ ms.locfileid: "81396020"
 
 Die Planung der Cloudeinführung ist mit einer Lernkurve und Zeitaufwand verbunden. Selbst für erfahrene Teams nimmt die richtige Planung viel Zeit in Anspruch: Zeit, um die Projektbeteiligten aufeinander abzustimmen, Zeit, um Daten zu sammeln und zu analysieren, Zeit, um langfristige Entscheidungen zu überprüfen, und Zeit, um Menschen, Prozesse und Technologien aufeinander abzustimmen. Bei den produktivsten Einführungsbemühungen wächst die Planung parallel zur Einführung weiter und verbessert sich mit jedem Release und jeder Workloadmigration in die Cloud. Es ist wichtig, den Unterschied zwischen einem Cloudeinführungsplan und einer Cloudeinführungsstrategie zu kennen. Sie benötigen eine klar definierte Strategie, um die Implementierung eines Cloudeinführungsplans zu vereinfachen und zu unterstützen.
 
-Das Cloud Adoption Framework für Azure beschreibt die Prozesse für die Cloudeinführung und den Betrieb von Workloads, die in der Cloud gehostet werden. Für jeden Prozesse in den Phasen „Definieren der Strategie“, „Plan“, „Bereit“, „Einführung“ und „Betrieb“ müssen technischen, geschäftlichen und operativen Fähigkeiten geringfügig erweitert werden. Einige dieser Fähigkeiten können durch gezieltes Lernen erworben werden. Viele dieser Fähigkeiten werden jedoch am effektivsten durch praktische Erfahrungen erworben.
+<!-- docsTest:ignore "Strategy, Plan, Ready, Adopt, and Operate phases" -->
+
+Das Cloud Adoption Framework für Azure beschreibt die Prozesse für die Cloudeinführung und den Betrieb von Workloads, die in der Cloud gehostet werden. Für jeden Prozesse in den Phasen „ Strategie“, „Plan“, „Bereit“, „Einführung“ und „Betrieb“ müssen technischen, geschäftlichen und operativen Fähigkeiten geringfügig erweitert werden. Einige dieser Fähigkeiten können durch gezieltes Lernen erworben werden. Viele dieser Fähigkeiten werden jedoch am effektivsten durch praktische Erfahrungen erworben.
 
 Der Beginn eines ersten Einführungsprozesses parallel zur Entwicklung des Plans bietet einige Vorteile:
 
-- Aufbau einer wachstumsorientierten Mentalität, die das Lernen und Erforschen fördert
-- Bereitstellung einer Möglichkeit für das Team, die notwendigen Fähigkeiten zu entwickeln
-- Schaffung von Situationen, die neue Ansätze für die Zusammenarbeit aufzeigen
-- Bestimmung von Qualifikationslücken und Anforderungen an potenzielle Partnerschaften
-- Bereitstellung konkreter Beiträge für den Plan
+- Aufbau einer wachstumsorientierten Mentalität, die das Lernen und Erforschen fördert.
+- Bereitstellung einer Möglichkeit für das Team, die notwendigen Fähigkeiten zu entwickeln.
+- Schaffung von Situationen, die neue Ansätze für die Zusammenarbeit aufzeigen.
+- Bestimmung von Qualifikationslücken und Anforderungen an potenzielle Partnerschaften.
+- Bereitstellung konkreter Beiträge für den Plan.
 
 ## <a name="first-project-criteria"></a>Kriterien für das erste Projekt
 

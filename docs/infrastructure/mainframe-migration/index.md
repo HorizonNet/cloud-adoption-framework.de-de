@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 486dabd5b2926b9f8f794767181c75bc1eff34b6
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 954c97c78d3dcd4827505e2d9b6df2d4a5355e04
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216808"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83398824"
 ---
 <!-- cSpell:ignore nanra njray dbspaces dbextents VSAM RACF LPARS ASSGN DLBL EXTENT LIBDEF EXEC IPLs -->
 
@@ -65,6 +65,9 @@ Für eine genauere Optimierung wird CICS häufig mit IMS/TM (früher IMS/Data Co
 Folgende Mainframevorgänge sind typisch:
 
 - **Online:** Zu den Workloads zählen Transaktionsverarbeitung, Datenbankverwaltung und Verbindungen. Sie werden häufig mithilfe von IBM DB2-, CICS- und z/OS-Connectors implementiert.
+
+<!-- docsTest:ignore "BMC Control-M" -->
+<!-- cSpell:ignore JOB ASSGN DLBL EXTENT LIBDEF EXEC -->
 
 - **Batch:** Aufträge werden ohne Eingreifen des Benutzers ausgeführt, in der Regel nach einem regelmäßigen Zeitplan, z.B. morgens an jedem Werktag. Batchaufträge können mit einem JCL-Emulator wie Micro Focus Enterprise Server oder BMC Control-M-Software auf Systemen ausgeführt werden, die auf Windows oder Linux basieren.
 

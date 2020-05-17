@@ -7,16 +7,18 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f961fa2b20fc5fc8fe2670b05b5a66d9e99c0805
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b6ccab2eb6f7f25ad83fa2d2a0592a557b7b79d0
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120613"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224152"
 ---
+<!--docsTest:ignore "Oxford English Dictionary" -->
+
 # <a name="build-with-customer-empathy"></a>Erstellen von Lösungen mit Blick auf die Kundenanforderungen
 
-„Not macht erfinderisch“. Dieses Sprichwort verdeutlicht die Unverwüstlichkeit des menschlichen Geistes und unseren natürlichen Erfindungsdrang. Wie im Oxford English Dictionary erläutert wird: „Wenn der Bedarf für etwas zwingend erforderlich wird, ist man gezwungen, Wege zu finden, dieses Ziel umzusetzen oder zu erreichen“. Nur wenige würden diese universellen Wahrheiten über Erfindungsreichtum leugnen. Jedoch wie unter [Innovation in der digitalen Wirtschaft](./index.md) beschrieben, erfordert Innovation ein Gleichgewicht zwischen *Erfindung* neuer und *Einführung* vorhandener Technologien.
+„Not macht erfinderisch“. Dieses Sprichwort verdeutlicht die Unverwüstlichkeit des menschlichen Geistes und unseren natürlichen Erfindungsdrang. Wie im Oxford English Dictionary erläutert wird: „Wenn der Bedarf für etwas zwingend erforderlich wird, ist man gezwungen, Wege zu finden, dieses Ziel umzusetzen oder zu erreichen“. Nur wenige würden diese universellen Wahrheiten über Erfindungsreichtum leugnen. Jedoch wie unter [Innovation in der digitalen Wirtschaft](./index.md) beschrieben, erfordert Innovation ein Gleichgewicht zwischen _Erfindung_ neuer und _Einführung_ vorhandener Technologien.
 
 In Fortführung dieser Analogie stammen Innovationen aus einem größeren Bereich. *Kundenanforderungen sind ein wichtiger treibender Faktor für Innovationen.* Die Entwicklung einer Lösung, die Innovationen vorantreibt, erfordert einen berechtigten Kundenbedarf – einen Bedarf, der den Kunden dazu bringt, zurückzukehren, um kritische Herausforderungen zu lösen. Diese Lösungen basieren auf den Bedürfnissen eines Kunden und nicht auf seinen Wünschen oder Launen. Um die wahren Bedürfnisse von Kunden zu ermitteln, beginnen wir mit Empathie – einem tiefen Verständnis für die Erfahrungen des Kunden. Empathie ist eine unterentwickelte soziale Kompetenz bei vielen Engineers, Produktmanagern und sogar Führungskräften. Glücklicherweise haben die vielfältigen Interaktionen und das rasante Tempo bei der Entwicklung der Rolle des Cloudarchitekten bereits den Anstoß dazu gegeben, dieses Einfühlungsvermögen zu entwickeln.
 
@@ -65,7 +67,7 @@ Die [Erfindungsdisziplinen](./invention.md) der [innovativen Methodik](./index.m
 
 Die Featurebreite und die verschiedenen Erfindungsdisziplinen können nicht alle in einer einzigen Iteration erstellt werden. Es könnten mehrere Releases für eine MVP-Lösung nötig sein, um die Komplexität mehrerer Disziplinen einzubeziehen. Abhängig von der Investition in die Entwicklung könnte es mehrere parallele Teams geben, die in verschiedenen Disziplinen arbeiten, um mehrere Hypothesen zu testen. Auch wenn es ratsam ist, die architektonische Ausrichtung zwischen diesen Teams zu koordinieren, ist es unklug, zu versuchen, komplexe integrierte Lösungen zu erstellen, bevor Werthypothesen validiert werden können.
 
-Komplexität wird am besten anhand der Häufigkeit oder Menge von *technischen Spitzen* erkannt. Technische Spitzen sind Bemühungen, technische Lösungen zu schaffen, die nicht einfach mit Kunden getestet werden können. Wenn Kundenwert und Kundenempathie nicht getestet werden, stellen technische Spitzen ein Risiko für Innovationen dar und sollten minimiert werden. Für die Arten von ausgereiften, getesteten Lösungen, die bei einem Migrationsansatz zu finden sind, können während der gesamten Umsetzung häufig technische Spitzen auftreten. Allerdings verzögern sie das Testen von Hypothesen in Innovationsbemühungen und sollten nach Möglichkeit zurückgestellt werden.
+Komplexität wird am besten anhand der Häufigkeit oder Menge von _technischen Spitzen_ erkannt. Technische Spitzen sind Bemühungen, technische Lösungen zu schaffen, die nicht einfach mit Kunden getestet werden können. Wenn Kundenwert und Kundenempathie nicht getestet werden, stellen technische Spitzen ein Risiko für Innovationen dar und sollten minimiert werden. Für die Arten von ausgereiften, getesteten Lösungen, die bei einem Migrationsansatz zu finden sind, können während der gesamten Umsetzung häufig technische Spitzen auftreten. Allerdings verzögern sie das Testen von Hypothesen in Innovationsbemühungen und sollten nach Möglichkeit zurückgestellt werden.
 
 Für jede MVP-Definition wird ein konsequenter Vereinfachungsansatz vorgeschlagen. Dieser Ansatz bedeutet das Entfernen aller Aspekte, die nicht zu Ihrer Fähigkeit beitragen, die Hypothese zu bestätigen. Um die Komplexität zu minimieren, verringern Sie die Anzahl der Integrationen und Features, die zum Testen der Hypothese nicht erforderlich sind.
 
@@ -105,7 +107,7 @@ Es gibt viele gesetzliche, Compliance- und Branchenanforderungen, die einen alte
 
 <!-- cSpell:ignore Ries -->
 
-Einige Konzepte in diesem Artikel basieren auf Themen, die in [*The Lean Startup*](http://theleanstartup.com/book) (Eric Ries, Crown Business, 2011) beschrieben werden.
+Einige Konzepte in diesem Artikel basieren auf Themen, die in [_The Lean Startup_](http://theleanstartup.com/book) von Eric Ries beschrieben werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

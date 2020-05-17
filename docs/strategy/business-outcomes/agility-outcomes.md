@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 29e30f6980d583850f5af6c82302d91b0078d049
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: feff683b4b19018895cc7eb9ac3ede6b03cd5300
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433783"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218933"
 ---
 # <a name="examples-of-agility-outcomes"></a>Beispiele für Agilitätsergebnisse
 
@@ -32,9 +32,11 @@ Für etablierte und neue Unternehmen kann geschäftliche Flexibilität gleicherm
 
 Bei allen Bemühungen zu cloudfähigen Innovationen ist die Zeit bis zur Markteinführung ein wichtiges Maß zur Bewertung der Fähigkeit einer IT-Abteilung, auf Marktveränderungen zu reagieren. In vielen Fällen verfügt ein Manager möglicherweise über ein Budget für die Erstellung einer Anwendung oder die Einführung eines neuen Produkts. Klare Angaben zum Vorteil der Markteinführungszeit kann solche Führungskräfte motivieren, ein Budget für die Transformationsjourney der IT freizugeben.
 
-- **Beispiel 1:** Die europäische Abteilung einer in den USA ansässigen Firma muss zur Einhaltung der DSGVO-Vorschriften die Kundendaten in einer Datenbank für die eigenen Geschäfte in Großbritannien schützen. Die vorhandene Version von SQL unterstützt die erforderliche Sicherheit auf Zeilenebene nicht. Ein direktes Upgrade würde zu viele Unterbrechungen bedeuten. Durch die Verwendung von Azure SQL für Replikation und Upgrade der Datenbank implementiert der Kunde die erforderlichen Compliancemaßnahmen innerhalb weniger Wochen.
+- **Beispiel 1:** Die europäische Abteilung einer in den USA ansässigen Firma muss zur Einhaltung der DSGVO-Vorschriften die Kundendaten in einer Datenbank für die eigenen Geschäfte in Großbritannien schützen. Ihre vorhandene Version von SQL Server unterstützt die erforderliche Sicherheit auf Zeilenebene nicht. Ein direktes Upgrade würde zu viele Unterbrechungen bedeuten. Durch die Verwendung von Azure SQL-Datenbank für Replikation und Upgrade der Datenbank implementiert der Kunde die erforderlichen Compliancemaßnahmen innerhalb weniger Wochen.
 
 - **Beispiel 2:** Ein Logistikunternehmen hat ein bisher nicht bedientes Marktsegment gefunden, benötigt aber eine neue Version der eigenen Flagship-Anwendung, um in dieses vorzudringen. Ein größerer Mitbewerber hat dies ebenfalls erkannt. Durch eine cloudfähige Anwendungsinnovation begeistert das Unternehmen die Kunden und ist durch einen DevOps-Entwicklungsansatz in der Lage, den langsameren und älteren Konkurrenten um _x_ Monate zu schlagen. Dieser Sprung beim Markteinstieg sichert den Kundenstamm.
+
+<!-- docsTest:ignore "Jamey Shiels" "Vice President of Digital Experience" "Aurora Health Care" -->
 
 ### <a name="aurora-health-care"></a>Aurora Health Care
 
@@ -42,9 +44,12 @@ Das Gesundheitssystem transformiert Onlinedienste in ein freundliches digitales 
 
 <!-- cSpell:ignore Jamey Shiels -->
 
-> „Als Team fokussieren wir uns auf hochwertige Lösungen und hohe Geschwindigkeit. Die Entscheidung für Azure war für uns eine riesige Veränderung.“  
-> Jamey Shiels  
-> Vice President für digitale Ressourcen bei  
+> „Als Team fokussieren wir uns auf hochwertige Lösungen und hohe Geschwindigkeit. Die Entscheidung für Azure war für uns eine riesige Veränderung.“
+>
+> Jamey Shiels
+>
+> Vice President für digitale Ressourcen bei
+>
 > Aurora Health Care
 
 ## <a name="provision-time"></a>Bereitstellungszeit

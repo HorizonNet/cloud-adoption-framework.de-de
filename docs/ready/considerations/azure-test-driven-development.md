@@ -7,12 +7,12 @@ ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: de56ab7dca0a769272777118836bc9ee93058002
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b4edc0f0e485c040045bc8c1b7bce6c91f3d13f9
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81122059"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221908"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones-in-azure"></a>Testgesteuerte Entwicklung (TDD) für Zielzonen in Azure
 
@@ -37,7 +37,7 @@ Jedes der obigen Beispiele kann als Tool zur Beschleunigung von TDD-Zyklen verwe
 
 ## <a name="azure-governance-tools-that-can-accelerate-tdd-cycles"></a>Azure Governance-Tools, die TDD-Zyklen beschleunigen können
 
-[Azure Policy](https://docs.microsoft.com/azure/governance/policy): Wenn die Bereitstellungen oder versuchten Bereitstellungen von den Governancerichtlinien abweichen, kann Azure Policy automatische Erkennung, Schutz und/oder Lösung bieten. Aber Azure Policy bietet auch den primären Mechanismus zum Testen von Akzeptanzkriterien in Ihrer „Definition of Done“. In einem TDD-Zyklus kann eine Richtliniendefinition erstellt werden, um ein einzelnes Akzeptanzkriterium zu testen. Ebenso können alle Akzeptanzkriterien zu einer Richtlinieninitiative hinzugefügt werden, die dem gesamten Abonnement zugewiesen wird. Dieser Ansatz sieht einen Mechanismus für „Rot-Tests“ vor, bevor die Zielzone modifiziert wird. Nachdem die Zielzone der"Definition of Done" entspricht, kann sie dazu verwendet werden, die Testkriterien durchzusetzen, um Codeänderungen zu vermeiden, die ein Fehlschlagen des Tests in zukünftigen Versionen verursachen würden.
+[Azure Policy](https://docs.microsoft.com/azure/governance/policy): Wenn die Bereitstellungen oder versuchten Bereitstellungen von den Governancerichtlinien abweichen, kann Azure Policy automatische Erkennung, Schutz und Lösung bieten. Aber Azure Policy bietet auch den primären Mechanismus zum Testen von Akzeptanzkriterien in Ihrer „Definition of Done“. In einem TDD-Zyklus kann eine Richtliniendefinition erstellt werden, um ein einzelnes Akzeptanzkriterium zu testen. Ebenso können alle Akzeptanzkriterien zu einer Richtlinieninitiative hinzugefügt werden, die dem gesamten Abonnement zugewiesen wird. Dieser Ansatz sieht einen Mechanismus für „Rot-Tests“ vor, bevor die Zielzone modifiziert wird. Nachdem die Zielzone der"Definition of Done" entspricht, kann sie dazu verwendet werden, die Testkriterien durchzusetzen, um Codeänderungen zu vermeiden, die ein Fehlschlagen des Tests in zukünftigen Versionen verursachen würden.
 
 [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints): Azure Blueprint gruppiert Richtlinien und andere Bereitstellungstools in einem wiederholbaren Paket, das mehreren Zielzonen zugeordnet werden kann. Blaupausen erweisen sich als nützlich, wenn mehrere Einführungsbemühungen eine gemeinsame „Definition of Done“ aufweisen, die Sie im Laufe der Zeit vielleicht aktualisieren möchten. Sie können auch bei späteren Bemühungen zur Erweiterung und Umgestaltung von Zielzonen bei deren Bereitstellung helfen.
 

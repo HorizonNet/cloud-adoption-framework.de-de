@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c393b00de1d235553dcea544493ef019f46b1e0c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 423c87fd351f3220710ab35ffe0bc4e6beac3a1d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80527582"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223897"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>Schutz und Wiederherstellung in der Cloudverwaltung
 
@@ -68,7 +68,7 @@ Jede Minute Ausfallzeit dieser virtuellen Computer kann Umsatzverlust oder eine 
 
 Jedes der eben genannten Modelle reduziert die RTO und sorgt dafür, dass Geschäftsprozessfunktionen schneller wiederhergestellt werden. Allerdings zieht jedes Modell auch deutlich höhere Cloudverwaltungskosten nach sich.
 
-Weitere Informationen zu diesem Denkprozess finden Sie unter [Disziplin „Plattformbetrieb“](./workload.md).
+Weitere Informationen zu diesem Denkprozess finden Sie unter [Disziplin „Workloadbetrieb“](./workload.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

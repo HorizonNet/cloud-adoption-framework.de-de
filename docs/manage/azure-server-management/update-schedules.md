@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c3d40eb748c58643a981110e03417275b465c158
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ba44b786e63a0f7a9c63a527b6abbb1074a410fb
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430485"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219545"
 ---
 # <a name="create-update-schedules"></a>Erstellen von Zeitplänen für Updates
 
@@ -27,10 +27,10 @@ Das Modul „Az.Automation“ unterstützt jetzt die Konfiguration der Updatever
 Das Beispielskript in diesem Abschnitt veranschaulicht die Verwendung von Tagging und Abfragen zum Erstellen dynamischer Gruppen von Computern, auf die Sie Zeitpläne für Updates anwenden können. Es führt die folgenden Aktionen aus. Sie können bei der Erstellung eigener Skripte auf die Implementierungen der einzelnen Aktionen verweisen.
 
 - Erstellt einen Azure Automation-Updatezeitplan, der jeden Samstag um 8:00 Uhr ausgeführt wird.
-- Erstellt eine Abfrage für Computer, die den folgenden Kriterien entsprechen:
-  - Am Azure-Standort `westus`, `eastus` oder `eastus2` bereitgestellt
-  - Verfügt über ein angewendetes `Owner`-Tag mit dem Wert `JaneSmith`
-  - Verfügt über ein angewendetes `Production`-Tag mit dem Wert `true`
+- Erstellt eine Abfrage für alle Computer, die den folgenden Kriterien entsprechen:
+  - Am Azure-Standort `westus`, `eastus` oder `eastus2` bereitgestellt.
+  - Verfügt über ein `Owner`-Tag mit einem auf `JaneSmith` festgelegten Wert.
+  - Verfügt über ein `Production`-Tag mit einem auf `true` festgelegten Wert.
 - Wendet den Updatezeitplan auf die abgefragten Computer an und legt ein zweistündiges Updatefenster fest.
 
 Bevor Sie das Beispielskript ausführen, müssen Sie sich mit dem Cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) anmelden. Stellen Sie beim Starten des Skripts die folgenden Informationen zur Verfügung:
@@ -54,19 +54,19 @@ Bevor Sie das Beispielskript ausführen, müssen Sie sich mit dem Cmdlet [Connec
 
     param (
         [Parameter(Mandatory=$true)]
-        [string]$SubscriptionId,
+        [string] $SubscriptionId,
 
         [Parameter(Mandatory=$true)]
-        [string]$ResourceGroupName,
+        [string] $ResourceGroupName,
 
         [Parameter(Mandatory=$true)]
-        [string]$WorkspaceName,
+        [string] $WorkspaceName,
 
         [Parameter(Mandatory=$true)]
-        [string]$AutomationAccountName,
+        [string] $AutomationAccountName,
 
         [Parameter(Mandatory=$false)]
-        [string]$scheduleName = "SaturdayCriticalSecurity"
+        [string] $scheduleName = "SaturdayCriticalSecurity"
     )
 
     Import-Module Az.Automation
@@ -87,8 +87,8 @@ Bevor Sie das Beispielskript ausführen, müssen Sie sich mit dem Cmdlet [Connec
 
     $query1Location =@("westus", "eastus", "eastus2")
     $query1FilterOperator = "Any"
-    $ownerTag = @{"Owner"= @("JaneSmith")}
-    $ownerTag.add("Production", "true")
+    $ownerTag = @{ "Owner"= @("JaneSmith") }
+    $ownerTag.Add("Production", "true")
 
     $DGQuery = New-AzAutomationUpdateManagementAzureQuery -ResourceGroupName $ResourceGroupName `
         -AutomationAccountName $AutomationAccountName `

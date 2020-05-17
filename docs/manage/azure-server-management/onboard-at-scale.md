@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9647b2e7a32cd1374390e8849b62b41580284163
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9347c0c9517327dfa01bc49e344dfcc8ed90e60d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80809154"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219715"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -39,8 +39,8 @@ Für alle Verwaltungslösungen, die unter [Azure-Verwaltungstools und -dienste](
 Azure Policy verfügt über eine integrierte [Richtlinieninitiative](https://docs.microsoft.com/azure/governance/policy/concepts/definition-structure#initiatives), die den Log Analytics-Agent und den [Microsoft Dependency-Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent) umfasst, der für Azure Monitor für VMs benötigt wird.
 
 <!-- TODOBACKLOG: Add these when available.
-- [Preview]: Enable Azure Monitor for virtual machine scale sets.
-- [Preview]: Enable Azure Monitor for VMs.
+**Preview:** Enable Azure Monitor for virtual machine scale sets.
+**Preview:** Enable Azure Monitor for VMs.
  -->
 
 > [!NOTE]
