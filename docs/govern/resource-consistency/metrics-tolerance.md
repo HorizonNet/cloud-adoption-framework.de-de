@@ -1,6 +1,6 @@
 ---
-title: Metriken und Indikatoren der Risikotoleranz für die Ressourcenkonsistenz
-description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um die Geschäftsrisikotoleranz im Zusammenhang mit der Ressourcenkonsistenz zu quantifizieren.
+title: Metriken und Indikatoren der Risikotoleranz in der Disziplin „Ressourcenkonsistenz“
+description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um die Geschäftsrisikotoleranz im Zusammenhang mit der Disziplin „Ressourcenkonsistenz“ zu quantifizieren.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,22 +8,22 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9e7cf8bec88178908caeae27742e5fbc92155003
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ac55b8e0918000955924aa735fb46cd9518b9b57
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997355"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217998"
 ---
 <!-- cSpell:ignore MTBF MTTR -->
 
-# <a name="resource-consistency-metrics-indicators-and-risk-tolerance"></a>Metriken, Indikatoren und Risikotoleranz in der Ressourcenkonsistenz
+# <a name="risk-tolerance-metrics-and-indicators-in-the-resource-consistency-discipline"></a>Metriken und Indikatoren der Risikotoleranz in der Disziplin „Ressourcenkonsistenz“
 
-Dieser Artikel unterstützt Sie bei der Quantifizierung der Geschäftsrisikotoleranz im Zusammenhang mit der Ressourcenkonsistenz. Das Definieren von Metriken und Indikatoren ermöglicht das Erstellen eines Geschäftsszenarios, mit dem Sie in die Weiterentwicklung der Disziplin „Ressourcenkonsistenz“ investieren können.
+Lernen Sie, die Risikotoleranz von Unternehmen im Zusammenhang mit der Disziplin „Ressourcenkonsistenz“ zu quantifizieren. Indem Sie Metriken und Indikatoren definieren, können Sie ein Geschäftsszenario erstellen, um in die Ausgereiftheit dieser Disziplin zu investieren.
 
 ## <a name="metrics"></a>Metriken
 
-Die Disziplin „Ressourcenkonsistenz“ konzentriert sich auf den Umgang mit Risiken im Zusammenhang mit der Betriebsverwaltung Ihrer Cloudbereitstellungen. Im Rahmen der Risikoanalyse sollten Sie Daten zu Ihren IT-Abläufen sammeln, um zu ermitteln, welches Risiko vorliegt und wie wichtig Investitionen in die Governance der Ressourcenkonsistenz für Ihre geplanten Cloudbereitstellungen ist.
+Ressourcenkonsistenz konzentriert sich auf den Umgang mit Risiken im Zusammenhang mit der Betriebsverwaltung Ihrer Cloudbereitstellungen. Im Rahmen der Risikoanalyse sollten Sie Daten zu Ihren IT-Abläufen sammeln, um zu ermitteln, welches Risiko vorliegt und wie wichtig Investitionen in die Disziplin „Ressourcenkonsistenz“ für Ihre geplanten Cloudbereitstellungen ist.
 
 Jede Organisation verfügt über die verschiedenen Betriebsszenarien, aber die folgenden Elemente stellen nützliche Beispiele für die Metriken dar, die Sie sammeln sollten, wenn Sie die Risikotoleranz innerhalb der Disziplin „Ressourcenkonsistenz“ beurteilen:
 
@@ -37,7 +37,7 @@ Jede Organisation verfügt über die verschiedenen Betriebsszenarien, aber die f
 - **Fehlerhafte Netzwerkverbindungen.** Die Anzahl der Ressourcen mit Netzwerkkonnektivitätsproblemen.
 - **Fehlerhafte Dienstendpunkte.** Die Anzahl von Problemen mit externen Netzwerkendpunkten.
 - **Cloudanbieter-Dienstintegritätsvorfälle.** Die Anzahl von Unterbrechungen oder Leistungsvorfällen, die vom Cloudanbieter verursacht wurden.
-- **Vereinbarungen zum Servicelevel (SLAs).** Hierzu können sowohl Verpflichtungen von Microsoft im Hinblick auf die Verfügbarkeit und Konnektivität von Azure-Diensten als auch Verpflichtungen des Unternehmens gegenüber externen und internen Kunden gehören.
+- **Vereinbarungen zum Servicelevel.** Hierzu können sowohl Verpflichtungen von Microsoft im Hinblick auf die Verfügbarkeit und Konnektivität von Azure-Diensten als auch Verpflichtungen des Unternehmens gegenüber externen und internen Kunden gehören.
 - **Dienstverfügbarkeit.** Der Prozentsatz der tatsächlichen Verfügbarkeit der in der Cloud gehosteten Workloads im Vergleich zur erwarteten Verfügbarkeit.
 - **Recovery Time Objective (RTO).** Gibt den maximal zulässigen Zeitraum an, den eine Anwendung nach einem Vorfall nicht verfügbar sein darf.
 - **Recovery Point Objective (RPO).** Gibt den maximalen Zeitraum für den Datenverlust an, der bei einem Notfall akzeptabel ist. Wenn Sie Daten beispielsweise in einer einzelnen Datenbank ohne Replikation in anderen Datenbanken speichern und stündliche Sicherungen durchführen, können Daten für bis zu eine Stunde verloren gehen.
@@ -48,7 +48,7 @@ Jede Organisation verfügt über die verschiedenen Betriebsszenarien, aber die f
 
 ## <a name="risk-tolerance-indicators"></a>Risikotoleranzindikatoren
 
-Cloudplattformen bieten eine Reihe von Basisfunktionen, die es Bereitstellungsteams ermöglichen, kleine Bereitstellungen effektiv zu verwalten, ohne umfangreiche zusätzliche Planung oder Prozesse. Infolgedessen stellen kleine Dev/Test- oder experimentelle erste Workloads, die eine relativ geringe Anzahl cloudbasierter Ressourcen umfassen, ein geringes Risiko dar und werden wahrscheinlich keine hohen Anforderungen in Bezug auf eine formale Richtlinie für die Ressourcenkonsistenz stellen.
+Cloudplattformen bieten eine Reihe von Basisfunktionen, die es Bereitstellungsteams ermöglichen, kleine Bereitstellungen effektiv zu verwalten, ohne umfangreiche zusätzliche Planung oder Prozesse. Infolgedessen stellen kleine Entwicklungs-/Test- oder experimentelle erste Workloads, die eine relativ geringe Anzahl cloudbasierter Ressourcen umfassen, ein geringes Risiko dar und werden wahrscheinlich keine hohen Anforderungen in Bezug auf eine formale Richtlinie für die Ressourcenkonsistenz stellen.
 
 Mit zunehmender Größe Ihrer Cloudumgebung wird jedoch auch die Komplexität der Verwaltung Ihrer Ressourcen deutlich schwieriger werden. Mit steigender Anzahl von Ressourcen in der Cloud erhält die Fähigkeit zur Identifizierung des Besitzes von Ressourcen und die nützliche Kontrolle von Ressourcen eine kritische Bedeutung für die Minimierung von Risiken. Wenn zunehmend unternehmenskritische Workloads in der Cloud bereitgestellt werden, wird die Verfügbarkeitsdauer des Diensts kritischer, und die Toleranz für potenzielle Kostenüberschreitungen durch Dienstunterbrechungen nimmt schnell ab.
 
@@ -71,9 +71,9 @@ Die genauen Metriken und Auslöser, die Sie zum Bemessen der Risikotoleranz verw
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Dokumentieren Sie mit der Vorlage [Cloudverwaltung](./template.md) die Metriken und Toleranzindikatoren, die sich an dem aktuellen Cloudeinführungsplan orientieren.
+Verwenden Sie die [Disziplin „Ressourcenkonsistenz“](./template.md) zum Dokumentieren der Metriken und Toleranzindikatoren, die sich an dem aktuellen Cloudeinführungsplan orientieren.
 
-Nutzen Sie Ressourcenkonsistenz-Beispielrichtlinien als Ausgangspunkt für die Entwicklung von Richtlinien, die bestimmte Geschäftsrisiken behandeln, die Ihren Plänen für die Einführung der Cloud entsprechen.
+Nutzen Sie Ressourcenkonsistenz-Beispielrichtlinien als Ausgangspunkt für die Entwicklung eigener Richtlinien, die bestimmte Geschäftsrisiken behandeln, entsprechend Ihren Plänen für die Einführung der Cloud.
 
 > [!div class="nextstepaction"]
 > [Überprüfen von Beispielrichtlinien](./policy-statements.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Ressourcenkonsistenz: Geschäftsrisiken'
+title: Motivationen und Geschäftsrisiken in der Disziplin „Ressourcenkonsistenz“
 description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um die typische Kundenakzeptanz einer Ressourcenkonsistenzdisziplin im Rahmen einer Cloudgovernancestrategie zu verstehen.
 author: alexbuckgit
 ms.author: abuck
@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3eff0f6130adc35d8c087d385d42b06e141f3c64
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 17b39eba50b11ee1124e174f3bc89f3e6dada3e2
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433497"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218253"
 ---
-# <a name="resource-consistency-motivations-and-business-risks"></a>Ressourcenkonsistenz: Motivationen und Geschäftsrisiken
+# <a name="motivations-and-business-risks-in-the-resource-consistency-discipline"></a>Motivationen und Geschäftsrisiken in der Disziplin „Ressourcenkonsistenz“
 
 In diesem Artikel werden die Gründe beschrieben, warum Kunden typischerweise eine Disziplin „Ressourcenkonsistenz“ in ihre Cloud Governance-Strategie integrieren. Darüber hinaus werden einige Beispiele für mögliche Geschäftsrisiken aufgeführt, die zu Richtlinienanweisungen führen können.
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="resource-consistency-relevancy"></a>Relevanz der Ressourcenkonsistenz
+## <a name="relevance"></a>Relevance
 
 Wenn es um die Bereitstellung von Ressourcen und Workloads geht, bietet die Cloud eine höhere Agilität und Flexibilität als die meisten herkömmlichen lokalen Rechenzentren. Allerdings sind diese potenziellen, cloudbasierten Vorteile auch an mögliche Verwaltungsnachteile gekoppelt, die den Erfolg Ihrer Cloudeinführung ernsthaft gefährden können. Welche Ressourcen haben Sie bereitgestellt? Welche Teams besitzen welche Ressourcen? Verfügen Sie über genügend Ressourcen, die eine Workload unterstützen? Woher wissen Sie, ob Workloads fehlerfrei sind?
 
@@ -44,7 +44,7 @@ Die Risiken werden je nach Organisation unterschiedlich sein, aber die folgenden
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Dokumentieren Sie mit der [Cloudverwaltungsvorlage](./template.md) die Geschäftsrisiken, die wahrscheinlich durch den aktuellen Cloudeinführungsplan entstehen.
+Verwenden Sie die [Vorlage zur Disziplin „Ressourcenkonsistenz“](./template.md) zum Dokumentieren von Geschäftsrisiken, die mit dem aktuellen Cloudeinführungsplan wahrscheinlich entstehen.
 
 Sobald ein Verständnis für realistische Geschäftsrisiken hergestellt ist, besteht der nächste Schritt darin, die Risikotoleranz des Unternehmens zu dokumentieren sowie die Indikatoren und Schlüsselmetrik zur Überwachung dieser Toleranz zu erfassen.
 

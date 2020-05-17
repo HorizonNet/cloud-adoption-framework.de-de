@@ -1,6 +1,6 @@
 ---
 title: Prozesse für die Compliance der Ressourcenkonsistenzrichtlinie
-description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um sich über einen Ansatz für die Erstellung von Prozessen zu informieren, die eine Governancedisziplin vom Typ „Ressourcenkonsistenz“ unterstützen.
+description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um sich über einen Ansatz für die Erstellung von Prozessen zu informieren, die eine Disziplin vom Typ „Ressourcenkonsistenz“ unterstützen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: dd9f23a35e4e97605c23fbc52d32433eab97539b
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9d53f9ad9f69e80f4ff65f31f29e00f8e2bb3f90
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433665"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218236"
 ---
 # <a name="resource-consistency-policy-compliance-processes"></a>Prozesse für die Compliance der Ressourcenkonsistenzrichtlinie
 
-In diesem Artikel wird ein Ansatz für Prozesse zur Einhaltung von Richtlinien beschrieben, die die [Ressourcenkonsistenz](./index.md) regeln. Effektive Governance der Cloudressourcenkonsistenz beginnt mit wiederkehrenden manuellen Prozessen, die den Zweck haben, operative Ineffizienz zu identifizieren, die Verwaltung von bereitgestellten Ressourcen zu verbessern und minimale Unterbrechungen von unternehmenskritischen Workloads sicherzustellen. Diese manuellen Prozesse werden ergänzt durch Überwachung, Automatisierung und den Einsatz von Tools, um den Governance-Overhead zu reduzieren und schneller auf Abweichungen von der Richtlinie reagieren zu können.
+In diesem Artikel wird ein Ansatz für Prozesse zur Einhaltung von Richtlinien beschrieben, die die [Ressourcenkonsistenz](./index.md) regeln. Effektive Governance der Cloudressourcenkonsistenz beginnt mit wiederkehrenden manuellen Prozessen, die den Zweck haben, operative Ineffizienzen zu identifizieren, die Verwaltung von bereitgestellten Ressourcen zu verbessern und minimale Unterbrechungen von unternehmenskritischen Workloads sicherzustellen. Diese manuellen Prozesse werden ergänzt durch Überwachung, Automatisierung und den Einsatz von Tools, um den Governance-Overhead zu reduzieren und schneller auf Abweichungen von der Richtlinie reagieren zu können.
 
 ## <a name="planning-review-and-reporting-processes"></a>Planungs-, Prüfungs- und Berichterstellungsprozesse
 
-Cloudplattformen bieten eine ganze Reihe von Verwaltungstools und -funktionen zum Organisieren, Bereitstellen, Skalieren und Minimieren von Ausfallzeiten. Der Einsatz dieser Tools zur effektiven Strukturierung und dem Betrieb Ihrer Cloudbereitstellungen auf Weisen, die potenzielle Risiken verringern, erfordert wohl durchdachte Prozesse und Richtlinien, zusätzlich zu einer engen Zusammenarbeit mit IT-Betriebsteams und Projektbeteiligten des Unternehmens.
+Cloudplattformen bieten eine ganze Reihe von Verwaltungstools und -funktionen zum Organisieren, Bereitstellen, Skalieren und Minimieren von Ausfallzeiten. Der Einsatz dieser Tools zur effektiven Strukturierung und zum effektiven Betrieb Ihrer Cloudbereitstellungen in einer Weise, die potenzielle Risiken beseitigt, erfordert gut durchdachte Prozesse und Richtlinien sowie eine enge Zusammenarbeit mit den IT-Betriebsteams und den Projektbeteiligten des Unternehmens.
 
 Nachstehend sind eine Reihe von Beispielprozessen ausgeführt, die häufig im Rahmen der Disziplin „Ressourcenkonsistenz“ verwendet werden. Beim Planen der Prozesse, die Ihnen die fortgesetzte Aktualisierung der Ressourcenkonsistenzrichtlinie aufgrund von geschäftlichen Änderungen und Feedback von den Entwicklungs- und IT-Teams (deren Aufgabe es ist, den Leitfaden in die Tat umzusetzen) erlauben, können Sie diese Beispiele als Ausgangspunkt verwenden.
 
@@ -35,15 +35,15 @@ Nachstehend sind eine Reihe von Beispielprozessen ausgeführt, die häufig im Ra
 
 **Vierteljährliche Prüfung und Planung:** Überprüfen Sie vierteljährlich die operationalen Daten und Vorfallsberichte, um alle Änderungen zu identifizieren, die an der Ressourcenkonsistenzrichtlinie vorgenommen werden müssen. Überprüfen Sie im Rahmen dieses Prozesses Änderungen bei der Ressourcennutzung und Leistung, um Ressourcen zu identifizieren, erhöhte oder reduzierte Ressourcenzuordnung erfordern, und identifizieren Sie alle Workloads oder Ressourcen, die für die Außerbetriebnahme in Frage kommen.
 
-Dieser Planungsprozess ist auch ein guter Zeitpunkt, um die aktuellen Mitglieder Ihres Cloudgovernanceteams auf Wissenslücken im Zusammenhang mit neuen oder sich ändernden Richtlinien und Risiken bezüglich der Ressourcenkonsistenz als Disziplin zu überprüfen. Laden Sie relevante IT-Mitarbeiter ein, an Überprüfungen und Planungen teilzunehmen, entweder als zeitlich begrenzte technische Berater oder als ständige Mitglieder Ihres Teams.
+Dieser Planungsprozess ist auch ein guter Zeitpunkt, um die aktuellen Mitglieder Ihres Cloudgovernanceteams auf Wissenslücken im Zusammenhang mit neuen oder sich ändernden Richtlinien und Risiken bezüglich der Disziplin „Ressourcenkonsistenz“ zu überprüfen. Laden Sie relevante IT-Mitarbeiter ein, an Überprüfungen und Planungen teilzunehmen, entweder als zeitlich begrenzte technische Berater oder als ständige Mitglieder Ihres Teams.
 
 **Aus- und Weiterbildung:** Bieten Sie zweimonatlich Schulungen an, um sicherzustellen, dass IT-Mitarbeiter und Entwickler auf dem neuesten Stand bei Richtlinienanforderungen und Anleitungen für die Ressourcenkonsistenz sind. Im Rahmen dieses Prozesses überprüfen und aktualisieren Sie alle Unterlagen oder anderen Schulungsmaterialien, um sicherzustellen, dass sie mit den neuesten Unternehmensrichtlinien übereinstimmen.
 
 **Monatliche Überprüfungen und Berichte:** Führen Sie monatlich eine Überprüfung für alle Cloudbereitstellungen durch, um sicherzustellen, dass sie weiterhin mit den Ressourcenkonsistenzrichtlinien übereinstimmen. Überprüfen Sie diesbezügliche Aktivitäten mit IT-Mitarbeitern, und identifizieren Sie etwaige Konformitätsprobleme, die noch nicht im Rahmen des laufenden Überwachungs- und Durchsetzungsprozesses behandelt wurden. Als Ergebnis dieser Überprüfungsprozess wird ein Bericht für das Cloudstrategieteam und jedes Cloudeinführungsteam erstellt, um die allgemeine Leistung und Einhaltung der Richtlinie zu kommunizieren. Der Bericht wird außerdem für prüfungsbezogene und rechtliche Zwecke gespeichert.
 
-## <a name="ongoing-monitoring-processes"></a>Fortlaufende Überwachungsprozesse
+## <a name="processes-for-ongoing-monitoring"></a>Prozesse zur fortlaufenden Überwachung
 
-Die Ermittlung, ob Ihre Ressourcenkonsistenzstrategie für die Beschleunigung der Bereitstellung erfolgreich ist, hängt von der Transparenz des aktuellen und vergangenen Zustands Ihrer Cloudinfrastruktur ab. Ohne die Möglichkeit, die relevanten Metriken und Daten im Zusammenhang mit der Integrität und den Aktivitäten Ihrer Cloudumgebung zu analysieren, können Sie keine Veränderungen bei den Risiken und keine Verstöße gegen Ihre Risikotoleranzen erkennen. Die oben beschriebenen laufenden Kontrollprozesse erfordern qualitativ hochwertige Daten, um sicherzustellen, dass die Richtlinie so geändert werden kann, dass Ihre Cloudressourcennutzung optimiert und die Gesamtleistung von in der Cloud gehosteten Workloads verbessert werden kann.
+Eine erfolgreiche Strategie für die Ressourcenkonsistenz ist abhängig von der Transparenz des aktuellen und vergangenen Zustands Ihrer Cloudinfrastruktur. Ohne die Möglichkeit, die relevanten Metriken und Daten im Zusammenhang mit der Integrität und den Aktivitäten Ihrer Cloudumgebung zu analysieren, können Sie keine Veränderungen bei den Risiken und keine Verstöße gegen Ihre Risikotoleranzen erkennen. Die oben beschriebenen laufenden Kontrollprozesse erfordern qualitativ hochwertige Daten, um sicherzustellen, dass die Richtlinie so geändert werden kann, dass Ihre Cloudressourcennutzung optimiert und die Gesamtleistung von in der Cloud gehosteten Workloads verbessert werden kann.
 
 Stellen Sie sicher, dass Ihre IT-Teams automatisierte Überwachungssysteme für die Cloudinfrastruktur implementiert haben, welche die entsprechenden Protokolldaten erfassen, die Sie für die Risikobewertung benötigen. Überwachen Sie diese Systeme proaktiv, um eine schnelle Erkennung und Eindämmung potenzieller Richtlinienverletzungen zu gewährleisten und sicherzustellen, dass bei Ihrer Überwachungsstrategie Ihre Betriebsanforderungen berücksichtigt werden.
 
@@ -63,7 +63,7 @@ Die folgenden Auslöser und Durchsetzungsmaßnahmen sind Beispiele, auf die Sie 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Dokumentieren Sie mit der Vorlage [Cloudverwaltung](./template.md) die Prozesse und Auslöser, die sich an dem aktuellen Cloudeinführungsplan orientieren.
+Verwenden Sie die [Vorlage zur Disziplin „Ressourcenkonsistenz“](./template.md) zum Dokumentieren der Prozesse und Auslöser, die sich an dem aktuellen Cloudeinführungsplan orientieren.
 
 Anleitungen zur Ausführung von Cloudverwaltungsrichtlinien in Abstimmung mit Einführungsplänen finden Sie im Artikel über Verbesserungen von Disziplinen.
 

@@ -8,24 +8,24 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: dcfa6596d61233efa83bc6a1c6977a2ebe4ad510
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4dda94a3ec0439fd30097fb5f9962d3cdb6eeeec
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433484"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218202"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>Verbesserung der Disziplin „Ressourcenkonsistenz“
 
-Die Disziplin „Ressourcenkonsistenz“ konzentriert sich auf Möglichkeiten zum Festlegen von Richtlinien, die sich auf die Verwaltung des Betriebs einer Umgebung, Anwendung oder Workload beziehen. Innerhalb der fünf Disziplinen der Cloud-Governance umfasst die Ressourcenkonsistenz die Überwachung der Anwendungs-, Workload- und Ressourcenleistung. Darüber hinaus umfasst sie die Aufgaben, die zur Erfüllung von Skalierungsanforderungen erforderlich sind, sowie zur Korrektur von Verstößen gegen die Vereinbarung zum Leistungsservicelevel (Service Level Agreement, SLA) und zur proaktiven Vermeidung von SLA-Verstößen durch automatisierte Wartung.
+Die Disziplin „Ressourcenkonsistenz“ konzentriert sich auf Möglichkeiten zum Festlegen von Richtlinien, die sich auf die Verwaltung des Betriebs einer Umgebung, Anwendung oder Workload beziehen. Innerhalb der fünf Disziplinen der Cloudgovernance umfasst die Disziplin „Ressourcenkonsistenz“ die Überwachung der Anwendungs-, Workload- und Ressourcenleistung. Darüber hinaus umfasst sie die Aufgaben, die zur Erfüllung von Skalierungsanforderungen erforderlich sind, sowie zur Korrektur von Verstößen gegen die Vereinbarung zum Leistungsservicelevel (Service Level Agreement, SLA) und zur proaktiven Vermeidung von SLA-Verstößen durch automatisierte Wartung.
 
 Dieser Artikel beschreibt einige potenzielle Aufgaben, die Ihr Unternehmen ausführen kann, um die Disziplin „Ressourcenkonsistenz“ besser erstellen und weiterentwickeln zu können. Diese Aufgaben lassen sich in verschiedene Phasen der Implementierung einer Cloudlösung unterteilen: Planung, Erstellung, Einführung und Betrieb. Diese Phasen werden dann durchlaufen und ermöglichen die Entwicklung eines [inkrementellen Ansatzes für die Cloudgovernance](../guides/index.md#an-incremental-approach-to-cloud-governance).
 
 ![Vier Phasen der Einführung](../../_images/govern/adoption-phases.png)
 
-*Abbildung 1: Einführungsphasen des inkrementellen Ansatzes für die Cloudgovernance.*
+_Abbildung 1: Einführungsphasen des inkrementellen Ansatzes für die Cloudgovernance._
 
-Es ist unmöglich, die Anforderungen aller Unternehmen in einem einzigen Dokument zu berücksichtigen. Daher werden in diesem Artikel die empfohlenen mindestens auszuführenden Aktivitäten sowie Beispiele für potenzielle Aktivitäten für jede Phase des Weiterentwicklungsprozesses für die Governance beschrieben. Ziel dieser Aktivitäten ist es, Sie beim Aufbau eines [Richtlinien-MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) und bei der Einrichtung eines Frameworks für die inkrementelle Verbesserung der Richtlinie zu unterstützen. Ihr Cloudgovernanceteam muss entscheiden, wie viel in diese Aktivitäten investiert werden soll, um Ihre Funktionen für die Governance der Ressourcenkonsistenz zu verbessern.
+Es ist unmöglich, die Anforderungen aller Unternehmen in einem einzigen Dokument zu berücksichtigen. Daher werden in diesem Artikel die empfohlenen mindestens auszuführenden Aktivitäten sowie Beispiele für potenzielle Aktivitäten für jede Phase des Weiterentwicklungsprozesses für die Governance beschrieben. Ziel dieser Aktivitäten ist es, Sie beim Aufbau eines [Richtlinien-MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) und bei der Einrichtung eines Frameworks für die inkrementelle Verbesserung der Richtlinie zu unterstützen. Ihr Cloudgovernanceteam muss entscheiden, wie viel in diese Aktivitäten investiert werden soll, um Ihre Disziplin „Ressourcenkonsistenz“ zu verbessern.
 
 > [!CAUTION]
 > Weder die in diesem Artikel beschriebenen mindestens erforderlichen noch die potenziellen Aktivitäten sind auf bestimmte Unternehmensrichtlinien oder Complianceanforderungen von Drittanbietern ausgerichtet. Dieser Leitfaden soll bei Gesprächen über die Ausrichtung beider Anforderungen auf ein Cloudgovernancemodell helfen.
@@ -39,7 +39,7 @@ Diese Entwicklungsphase der Governance überbrückt die Lücke zwischen Geschäf
 - Werten Sie Ihre [Ressourcenkonsistenz-Toolkette](./toolchain.md) aus.
 - Lernen Sie die Lizenzanforderungen für Ihre Cloudstrategie kennen.
 - Entwerfen Sie ein Dokument mit Architekturrichtlinien, und geben Sie dieses an die wichtigsten Beteiligten weiter.
-- Machen Sie sich mit dem Ressourcen-Manager vertraut, den Sie zum Bereitstellen, Verwalten und Überwachen aller Ressourcen für Ihre Lösung als Gruppe verwenden.
+- Machen Sie sich mit Resource Manager vertraut, den Sie zum Bereitstellen, Verwalten und Überwachen aller Ressourcen für Ihre Lösung als Gruppe verwenden.
 - Schulen und beteiligen Sie die Personen und Teams, die von diesen Architekturrichtlinien betroffen sind.
 - Fügen Sie priorisierte Ressourcenbereitstellungsaufgaben Ihrem Migrationsbacklog hinzu.
 
@@ -73,7 +73,7 @@ Für die erfolgreiche Migration einer Umgebung muss eine Reihe von technischen u
 - Definieren Sie Abhängigkeiten zwischen Ressourcen.
 - Implementieren Sie automatisierte Ressourcenskalierung entsprechend der Anforderungen, die in der Planungsphase definiert wurden.
 - Steuern Sie die Zugriffsleistung, um die Qualität der empfangenen Dienste zu messen.
-- Erwägen Sie die Bereitstellung einer [Richtlinie](https://docs.microsoft.com/azure/governance/policy/overview), um die SLA-Durchsetzung mithilfe von Konfigurationseinstellungen und Ressourcenerstellungsregeln zu verwalten.
+- Erwägen Sie die Bereitstellung von [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview), um die SLA-Durchsetzung mithilfe von Konfigurationseinstellungen und Ressourcenerstellungsregeln zu verwalten.
 
 ## <a name="adopt-and-migrate"></a>Einführen und Migrieren
 
@@ -108,7 +108,7 @@ Nachdem die Transformation abgeschlossen ist, müssen Governance und Betrieb wä
 
 **Mindestens empfohlene Aktivitäten:**
 
-- Passen Sie Ihre [Ressourcenkonsistenz-Toolkette](./toolchain.md) basierend auf Aktualisierungen der veränderten Anforderungen Ihrer Organisation an das Kostenmanagement an.
+- Passen Sie Ihre [Toolkette für die Ressourcenkonsistenz](./toolchain.md) an die Anforderungen Ihrer Organisation an.
 - Erwägen Sie die Automatisierung von Benachrichtigungen und Berichten, um die tatsächliche Ressourcennutzung widerzuspiegeln.
 - Optimieren Sie die Architekturrichtlinien, um zukünftige Einführungsprozesse zu unterstützen.
 - Schulen Sie die betroffenen Teams regelmäßig, um die kontinuierliche Einhaltung der Architekturrichtlinien sicherzustellen.
@@ -120,7 +120,7 @@ Nachdem die Transformation abgeschlossen ist, müssen Governance und Betrieb wä
 - Werten Sie unterbeanspruchte Ressourcen aus, und bestimmen Sie, ob diese weiter im Bestand bleiben sollten.
 - Ermitteln Sie falsche Ausrichtungen sowie Anomalien zwischen geplanter und tatsächlicher Ressourcennutzung.
 - Unterstützen Sie die für die Cloudeinführung und Cloudstrategie zuständigen Teams, indem Sie diese Anomalien ermitteln und beseitigen.
-- Bestimmen Sie, ob Änderungen an der Ressourcenkonsistenz für Abrechnung und SLAs erforderlich sind.
+- Bestimmen Sie, ob Änderungen an Ihrer Disziplin „Ressourcenkonsistenz“ für Abrechnung und SLAs erforderlich sind.
 - Werten Sie Protokollierungs- und Überwachungstools aus, um festzustellen, ob Ihre lokale, Cloudgateway- oder Hybridlösung angepasst werden muss.
 - Bestimmen Sie für Geschäftseinheiten und geografisch verteilte Gruppen, ob Ihre Organisation weitere Cloudverwaltungsfunktionen (z.B. [Azure-Verwaltungsgruppen](https://docs.microsoft.com/azure/governance/management-groups)) erwägen sollte, um besser die zentralisierte Richtlinie anzuwenden und SLA-Anforderungen zu erfüllen.
 

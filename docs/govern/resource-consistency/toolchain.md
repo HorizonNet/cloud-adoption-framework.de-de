@@ -1,6 +1,6 @@
 ---
 title: Ressourcenkonsistenztools in Azure
-description: Hier erfahren Sie, wie native Azure-Tools zur Weiterentwicklung von Richtlinien und Prozessen beitragen können, die die Governancedisziplin „Ressourcenkonsistenz“ unterstützen.
+description: Hier erfahren Sie, wie native Azure-Tools zur Weiterentwicklung von Richtlinien und Prozessen beitragen können, die die Disziplin „Ressourcenkonsistenz“ unterstützen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2f4d06c06ffcb89d30205b90ba37f70f76d50b1f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a64cbd53cdd4c524b370681ebedf1f8282ac2a93
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997302"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217947"
 ---
 # <a name="resource-consistency-tools-in-azure"></a>Ressourcenkonsistenztools in Azure
 
 [Ressourcenkonsistenz](./index.md) ist eine der [fünf Disziplinen der Cloud-Governance](../governance-disciplines.md). Dieser Disziplin konzentriert sich auf Möglichkeiten zum Einrichten von Richtlinien, die sich auf die Verwaltung des Betriebs einer Umgebung, Anwendung oder Workload beziehen. Innerhalb der fünf Disziplinen der Cloudgovernance umfasst die Disziplin „Ressourcenkonsistenz“ die Überwachung der Anwendungs-, Workload- und Ressourcenleistung. Darüber hinaus umfasst sie die Aufgaben, die zur Erfüllung von Skalierungsanforderungen erforderlich sind, sowie zur Korrektur von Leistungs-SLA-Verstößen und zur proaktiven Vermeidung von Leistungs-SLA-Verstößen durch automatisierte Korrektur.
 
-Im Folgenden ist eine Liste der Azure-Tools aufgeführt, die zur Ausreifung der Richtlinien und Prozesse, die diese Governance-Disziplin unterstützen, beitragen können.
+Im Folgenden ist eine Liste der Azure-Tools aufgeführt, die zur Ausreifung der Richtlinien und Prozesse beitragen können, die diese Disziplin unterstützen.
 
-| Tool | [Azure portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)  | [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Backup](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
+| Tool | [Azure portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)  | [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro) | [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) | [Azure Backup](https://docs.microsoft.com/azure/backup/backup-overview) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
 |---------|---------|---------|---------|---------|---------|---------|---------|
 | Bereitstellen von Ressourcen                             | Ja | Ja | Ja | Ja | Nein  | Nein | Nein |
 | Ressourcen verwalten                             | Ja | Ja | Ja | Ja | Nein  | Nein | Nein |
@@ -40,8 +40,8 @@ Im Folgenden ist eine Liste der Azure-Tools aufgeführt, die zur Ausreifung der 
 | Anwenden der automatisierten Korrektur                  | Nein  | Nein  | Nein  | Ja | Nein  | Nein | Nein |
 | Verwalten der Abrechnung                               | Ja | Nein  | Nein  | Nein  | Nein  | Nein | Nein |
 | Planen von Ressourcen für die Notfallwiederherstellung         | Ja | Ja | Ja | Nein  | Nein  | Ja | Ja |
-|Datenwiederherstellung bei Ausfall oder SLA-Verletzung     | Nein | Nein  | Nein  | Nein  | Nein  | Ja | Ja |
-|Anwendungs- und Datenwiederherstellung bei Ausfall oder SLA-Verletzung     | Nein | Nein  | Nein  | Nein  | Nein  | Ja | Ja |
+| Datenwiederherstellung bei Ausfall oder SLA-Verletzung     | Nein | Nein  | Nein  | Nein  | Nein  | Ja | Ja |
+| Anwendungs- und Datenwiederherstellung bei Ausfall oder SLA-Verletzung     | Nein | Nein  | Nein  | Nein  | Nein  | Ja | Ja |
 
 Zusammen mit diesen Ressourcenkonsistenztools und -funktionen müssen Sie Ihre bereitgestellten Ressourcen auf Leistungs- und Integritätsprobleme überwachen. [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) ist die-Standardlösung für Überwachung und Berichterstellung in Azure. Azure Monitor bietet Funktionen für die Überwachung Ihrer Cloudressourcen. Diese Liste zeigt, welche Funktion für allgemeine Überwachungsanforderungen geeignet ist.
 

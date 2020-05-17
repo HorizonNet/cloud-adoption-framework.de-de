@@ -1,6 +1,6 @@
 ---
 title: Governance-Entwurf für eine einfache Workload
-description: Hier erfahren Sie, wie Sie in Azure ein Ressourcengovernancemodell entwerfen, um ein einzelnes Team und eine einfache Workload zu unterstützen. 
+description: Hier erfahren Sie, wie Sie in Azure ein Ressourcengovernancemodell entwerfen, um ein einzelnes Team und eine einfache Workload zu unterstützen.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f7a9f455c302c6cbdee843f04a8d1b48f56940a1
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 75f07c6f3c37d83321fd6758d3d79c7573792ef0
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80809032"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218219"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>Governance-Entwurf für eine einfache Workload
 
@@ -33,8 +33,8 @@ Bevor Sie damit beginnen, das Governancemodell zu entwerfen, ist es wichtig, das
 
 Als Azure dem Enterprise Agreement Ihrer Organisation hinzugefügt wurde, wurde Ihre Organisation aufgefordert, ein **Azure-Konto** zu erstellen. Bei der Erstellung des Kontos wurden ein **Azure-Kontobesitzer** und ein Azure Active Directory-Mandant (Azure AD) mit einem Konto vom Typ **Globaler Administrator** erstellt. Ein Azure AD-Mandant ist ein logisches Konstrukt, das eine sichere, dedizierte Instanz von Azure AD darstellt.
 
-![Azure-Konto mit einem Azure-Konto-Manager und globalem Azure AD-Administrator](../../_images/govern/design/governance-3-0.png)
-*Abbildung 1: Ein Azure-Konto mit einem Azure-Konto-Manager und globalem Azure AD-Administrator.*
+![Azure-Konto mit einem Azure-Kontobesitzer und einem globalem Azure AD-Administrator](../../_images/govern/design/governance-3-0.png)
+_Abbildung 1: Azure-Konto mit einem Azure-Kontobesitzer und einem globalem Azure AD-Administrator._
 
 ## <a name="identity-management"></a>Identitätsverwaltung
 
@@ -44,8 +44,8 @@ Wir benötigen eine Identitätsverwaltung für einen einzelnen **Workloadbesitze
 
 Unser globaler Azure AD-Administrator erstellt das **Workloadbesitzer**-Konto für den Workloadbesitzer:
 
-![Der globale Azure AD-Administrator erstellt das Workloadbesitzer-Konto](../../_images/govern/design/governance-1-2.png)
-*Abbildung 2: Der globale Azure AD-Administrator erstellt das Workloadbesitzer-Konto.*
+![Globaler Azure AD-Administrator erstellt das Workloadbesitzer-Konto](../../_images/govern/design/governance-1-2.png)
+_Abbildung 2: Globaler Azure AD-Administrator erstellt das Workloadbesitzer-Konto._
 
 Sie können die Zugriffsberechtigung für Ressourcen erst zuweisen, nachdem dieser Benutzer einem **Abonnement** hinzugefügt wurde. Dieser Schritt wird in den nächsten beiden Abschnitten durchgeführt.
 
@@ -55,27 +55,27 @@ Wenn die Anzahl der von Ihrer Organisation bereitgestellten Ressourcen zunimmt, 
 
 Die oberste Ebene des Ressourcenverwaltungsbereichs ist die Ebene **Abonnement**. Ein Abonnement wird vom Azure-**Kontobesitzer** erstellt, der die Zahlungsverpflichtung einrichtet und für die Bezahlung aller Azure-Ressourcen verantwortlich ist, die dem Abonnement zugeordnet sind:
 
-![Der Azure-Kontobesitzer erstellt ein Abonnement](../../_images/govern/design/governance-1-3.png)
-*Abbildung 3: Der Azure-Kontobesitzer erstellt ein Abonnement.*
+![Azure-Kontobesitzer erstellt ein Abonnement](../../_images/govern/design/governance-1-3.png)
+_Abbildung 3: Der Azure-Kontobesitzer erstellt ein Abonnement._
 
 Bei der Erstellung des Abonnements ordnet der Azure-**Kontobesitzer** dem Abonnement einen Azure AD-Mandanten zu, und dieser Azure AD-Mandant wird verwendet, um Benutzer zu authentifizieren und zu autorisieren:
 
-![Der Azure-Kontobesitzer ordnet den Azure AD-Mandanten dem Abonnement zu](../../_images/govern/design/governance-1-4.png)
-*Abbildung 4: Der Azure-Kontobesitzer ordnet den Azure AD-Mandanten dem Abonnement zu.*
+![Azure-Kontobesitzer ordnet den Azure AD-Mandanten dem Abonnement zu](../../_images/govern/design/governance-1-4.png)
+_Abbildung 4: Der Azure-Kontobesitzer ordnet den Azure AD-Mandanten dem Abonnement zu._
 
 Unter Umständen haben Sie bemerkt, dass dem Abonnement derzeit kein Benutzer zugeordnet ist. Dies bedeutet, dass keine Person über die Berechtigung zum Verwalten von Ressourcen verfügt. In Wirklichkeit ist der **Kontobesitzer** der Besitzer des Abonnements und verfügt über die Berechtigung zur Durchführung aller Aktionen für eine Ressource des Abonnements. Aber in der Praxis ist der **Kontobesitzer** in Ihrer Organisation wahrscheinlich eher ein Mitarbeiter der Finanzabteilung und nicht dafür verantwortlich, Ressourcen zu erstellen, zu lesen, zu aktualisieren und zu löschen. Diese Aufgaben werden vom **Workloadbesitzer** übernommen. Daher müssen Sie den **Workloadbesitzer** dem Abonnement hinzufügen und Berechtigungen zuweisen.
 
 Da der **Kontobesitzer** derzeit der einzige Benutzer mit der Berechtigung zum Hinzufügen des **Workloadbesitzers** zum Abonnement ist, übernimmt er die Aufgabe, den **Workloadbesitzer** dem Abonnement hinzuzufügen:
 
-![Der Azure-Kontobesitzer fügt den **Workloadbesitzer** dem Abonnement hinzu](../../_images/govern/design/governance-1-5.png)
-*Abbildung 5: Der Azure-Kontobesitzer fügt den Workloadbesitzer dem Abonnement hinzu.*
+![Azure-Kontobesitzer fügt den **Workloadbesitzer** dem Abonnement hinzu](../../_images/govern/design/governance-1-5.png)
+_Abbildung 5: Azure-Kontobesitzer fügt den **Workloadbesitzer** dem Abonnement hinzu._
 
 Der Azure-**Kontobesitzer** erteilt dem **Workloadbesitzer** Berechtigungen, indem eine RBAC-Rolle ([Role-Based Access Control, rollenbasierte Zugriffssteuerung](https://docs.microsoft.com/azure/role-based-access-control)) zugewiesen wird. Mit der RBAC-Rolle wird ein Satz mit Berechtigungen angegeben, über die der **Workloadbesitzer** für einen oder mehrere Ressourcentypen verfügt.
 
 Beachten Sie, dass der **Kontobesitzer** in diesem Beispiel die [integrierte Rolle **Besitzer**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner) zugewiesen hat:
 
 ![Dem **Workloadbesitzer** wurde die integrierte Rolle „Besitzer“ zugewiesen](../../_images/govern/design/governance-1-6.png)
-*Abbildung 6: Dem Workloadbesitzer wurde die integrierte Rolle „Besitzer“ zugewiesen.*
+_Abbildung 6: Dem Workloadbesitzer wurde die integrierte Rolle „Besitzer“ zugewiesen._
 
 Mit der integrierten Rolle **Besitzer** werden für den **Workloadbesitzer** alle Berechtigungen für den Abonnementbereich gewährt.
 
@@ -86,15 +86,15 @@ Die nächste Ebene des Verwaltungsbereichs ist die Ebene **Ressourcengruppe**. E
 
 Zur Verdeutlichung sehen wir uns an, was passiert, wenn der **Workloadbesitzer** eine Ressourcengruppe erstellt:
 
-![Der **Workloadbesitzer** erstellt eine Ressourcengruppe](../../_images/govern/design/governance-1-7.png)
-*Abbildung 7: Der Workloadbesitzer erstellt eine Ressourcengruppe und erbt die integrierte Rolle „Besitzer“ für den Ressourcengruppenbereich.*
+![**Workloadbesitzer** erstellt eine Ressourcengruppe](../../_images/govern/design/governance-1-7.png)
+_Abbildung 7: Der Workloadbesitzer erstellt eine Ressourcengruppe und erbt die integrierte Rolle „Besitzer“ für den Ressourcengruppenbereich._
 
 Mit der integrierten Rolle **Besitzer** werden für den **Workloadbesitzer** wiederum alle Berechtigungen für den Ressourcengruppenbereich gewährt. Wie bereits beschrieben, wird diese Rolle von der Abonnementebene geerbt. Wenn diesem Benutzer für diesen Bereich eine andere Rolle zugewiesen wird, gilt dies nur für den Bereich.
 
 Die niedrigste Ebene des Verwaltungsbereichs ist die Ebene **Ressource**. Vorgänge, die auf Ressourcenebene durchgeführt werden, gelten nur für die Ressource selbst. Die Berechtigungen der Ressourcenebene werden auch vom Ressourcengruppenbereich geerbt. Wir können uns beispielsweise ansehen, was passiert, wenn der **Workloadbesitzer** in der Ressourcengruppe ein [virtuelles Netzwerk](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) bereitstellt:
 
-![Der **Workloadbesitzer** erstellt eine Ressource](../../_images/govern/design/governance-1-8.png)
-*Abbildung 8: Der Workloadbesitzer erstellt eine Ressource und erbt die integrierte Rolle „Besitzer“ für den Ressourcenbereich.*
+![**Workloadbesitzer** erstellt eine Ressource](../../_images/govern/design/governance-1-8.png)
+_Abbildung 8: Der Workloadbesitzer erstellt eine Ressource und erbt die integrierte Rolle „Besitzer“ für den Ressourcenbereich._
 
 Der **Workloadbesitzer** erbt die Rolle „Besitzer“ für den Ressourcenbereich. Dies bedeutet, dass der Workloadbesitzer über alle Berechtigungen für das virtuelle Netzwerk verfügt.
 
