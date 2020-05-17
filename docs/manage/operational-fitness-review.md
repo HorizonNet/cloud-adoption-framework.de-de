@@ -7,22 +7,22 @@ ms.date: 10/17/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f1eeae9e59da365b066ba78a8eb024448bf9815b
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 2ee786e1a9c7f6b4cb4699aec01d647cabc37827
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120115"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223659"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Einrichten einer Überprüfung der Einsatztauglichkeit
 
-Wenn Ihr Unternehmen damit beginnt, Workloads in Azure auszuführen, besteht der nächste Schritt darin, einen Prozess zur *Überprüfung der Einsatztauglichkeit* einzurichten. In diesem Prozess werden die *nicht funktionalen* Anforderungen für diese Workloads aufgelistet, implementiert und iterativ überprüft. Nicht funktionale Anforderungen beziehen sich auf das erwartete betriebliche Verhalten des Diensts.
+Wenn Ihr Unternehmen damit beginnt, Workloads in Azure auszuführen, besteht der nächste Schritt darin, einen Prozess zur _Überprüfung der Einsatztauglichkeit_ einzurichten. In diesem Prozess werden die _nicht funktionalen_ Anforderungen für diese Workloads aufgelistet, implementiert und iterativ überprüft. Nicht funktionale Anforderungen beziehen sich auf das erwartete betriebliche Verhalten des Diensts.
 
 Es gibt fünf wesentliche Kategorien nicht funktionaler Anforderungen, die als [Säulen der Softwarequalität](https://docs.microsoft.com/azure/architecture/guide/pillars) bezeichnet werden:
 
 - Skalierbarkeit
 - Verfügbarkeit
-- Resilienz, einschließlich Business Continuity und Disaster Recovery (BCDR)
+- Resilienz (einschließlich Business Continuity und Disaster Recovery (BCDR))
 - Verwaltung
 - Sicherheit
 
@@ -38,7 +38,7 @@ Die von Microsoft verfolgten Prozesse bilden die Grundlage für die in diesem Ar
 
 ## <a name="understand-the-problem"></a>Verstehen des Problems
 
-Wie Sie in [Erste Schritte](../getting-started/migrate.md) gesehen haben, besteht der erste Schritt bei der digitalen Transformation eines Unternehmens darin, die zu lösenden Geschäftsprobleme durch die Einführung von Azure zu identifizieren. Der nächste Schritt besteht darin, eine allgemeine Lösung für das Problem zu finden, z.B. die Migration eines Workloads in die Cloud oder die Anpassung eines vorhandenen lokalen Dienstes mit Cloudfunktionalität. Schließlich entwerfen und implementieren Sie die Lösung.
+Wie in [Erste Schritte: Beschleunigen der Migration](../get-started/migrate.md) erläutert, besteht der erste Schritt bei der digitalen Transformation eines Unternehmens darin, die zu lösenden Geschäftsprobleme durch die Einführung von Azure zu identifizieren. Der nächste Schritt besteht darin, eine allgemeine Lösung für das Problem zu finden, z.B. die Migration eines Workloads in die Cloud oder die Anpassung eines vorhandenen lokalen Dienstes mit Cloudfunktionalität. Schließlich entwerfen und implementieren Sie die Lösung.
 
 Während dieses Vorgangs liegt der Schwerpunkt häufig auf den Features des Dienstanbieters: dem Satz der _funktionalen_ Anforderungen, die vom Dienst ausgeführt werden sollen. Ein Produktlieferdienst benötigt beispielsweise Funktionen zum Bestimmen des Quell- und Zielortes des Produkts, zur Verfolgung des Produkts während der Lieferung und zum Senden von Benachrichtigungen an Kunden.
 
@@ -55,7 +55,7 @@ Der Schlüssel zur Aufrechterhaltung der Leistung und Kontinuität der Dienste e
 
 ![Übersicht über den Prozess zur Überprüfung der Einsatztauglichkeit](../_images/manage/ofr-flow.png)
 
-Der Prozess besteht allgemein aus zwei Phasen. In der *Phase der Voraussetzungen* werden die Anforderungen ermittelt und unterstützenden Diensten zugeordnet. Diese Phase tritt selten auf, vielleicht jährlich oder bei der Einführung neuer Vorgänge. Die Ausgabe der Phase der Voraussetzungen wird in der *Flussphase* verwendet. Die Flussphase tritt häufiger auf, z. B. monatlich.
+Der Prozess besteht allgemein aus zwei Phasen. In der _Phase der Voraussetzungen_ werden die Anforderungen ermittelt und unterstützenden Diensten zugeordnet. Diese Phase tritt selten auf, vielleicht jährlich oder bei der Einführung neuer Vorgänge. Die Ausgabe der Phase der Voraussetzungen wird in der _Flussphase_ verwendet. Die Flussphase tritt häufiger auf, z. B. monatlich.
 
 ### <a name="prerequisites-phase"></a>Phase der Voraussetzungen
 
@@ -63,7 +63,7 @@ Die Schritte in dieser Phase schaffen die Voraussetzungen für eine regelmäßig
 
 1. **Identifizieren unternehmenskritischer Geschäftsvorgänge**. Bestimmen Sie Ihre unternehmenskritischen Geschäftsvorgänge. Die Geschäftsvorgänge sind unabhängig von allen unterstützenden Dienstfunktionen. Mit anderen Worten: Geschäftsvorgänge stellen die tatsächlichen Aktivitäten dar, die das Unternehmen ausführen muss, und werden durch eine Reihe von IT-Diensten unterstützt.
 
-    Der Begriff *unternehmenskritisch* (oder *geschäftskritisch*) gibt an, dass es zu schwerwiegenden Auswirkung für das Unternehmen kommen kann, wenn der Vorgang behindert wird. So kann beispielsweise ein Onlinehändler einen Geschäftsvorgang wie „einem Kunden ermöglichen, einen Artikel in einen Warenkorb zu legen“ oder „eine Kreditkartenzahlung abwickeln“ haben. Wenn bei einem dieser beiden Vorgänge ein Fehler auftritt, kann ein Kunde die Transaktion nicht abschließen, und das Unternehmen kann keinen Umsatz erzielen.
+    Der Begriff _unternehmenskritisch_ (oder _geschäftskritisch_) gibt an, dass es zu schwerwiegenden Auswirkung für das Unternehmen kommen kann, wenn der Vorgang behindert wird. So kann beispielsweise ein Onlinehändler einen Geschäftsvorgang wie „einem Kunden ermöglichen, einen Artikel in einen Warenkorb zu legen“ oder „eine Kreditkartenzahlung abwickeln“ haben. Wenn bei einem dieser beiden Vorgänge ein Fehler auftritt, kann ein Kunde die Transaktion nicht abschließen, und das Unternehmen kann keinen Umsatz erzielen.
 
 1. **Zuordnen der Vorgänge zu Diensten**. Ordnen Sie diese wichtigen Geschäftsvorgänge den Diensten zu, die sie unterstützen. Im Beispiel des Warenkorbs können mehrere Dienste inklusive eines Bestandsverwaltungs- und Einkaufswagendiensts beteiligt sein. Um eine Kreditkartenzahlung zu verarbeiten, kann ein lokaler Zahlungsdienst mit einem externen Zahlungsabwicklungsdienst interagieren.
 
@@ -71,7 +71,7 @@ Die Schritte in dieser Phase schaffen die Voraussetzungen für eine regelmäßig
 
     Berücksichtigen Sie auch die Abhängigkeiten zwischen lokalen Diensten und Azure-Diensten. Im Beispiel des Warenkorbs kann der Inventarbestands Verwaltungsdienst lokal gehostet werden und Daten erfassen, die von Mitarbeitern in einem physischen Lager eingegeben werden. Es kann jedoch vorkommen, dass Daten nicht lokal in einem Azure-Dienst ([z.B. Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction)) oder in einer Datenbank ([z.B. Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction)) gespeichert werden.
 
-Eine Ausgabe aus diesen Aktivitäten ist ein Satz von *Scorecardmetriken* für Dienstvorgänge. Die Scorecard misst Kriterien wie Verfügbarkeit, Skalierbarkeit und Notfallwiederherstellung. Scorecardmetriken drücken die operativen Kriterien aus, deren Erfüllung Sie vom Dienst erwarten. Diese Metriken können auf jeder Granularitätsstufe ausgedrückt werden, die für den Dienstvorgang geeignet ist.
+Eine Ausgabe aus diesen Aktivitäten ist ein Satz von _Scorecardmetriken_ für Dienstvorgänge. Die Scorecard misst Kriterien wie Verfügbarkeit, Skalierbarkeit und Notfallwiederherstellung. Scorecardmetriken drücken die operativen Kriterien aus, deren Erfüllung Sie vom Dienst erwarten. Diese Metriken können auf jeder Granularitätsstufe ausgedrückt werden, die für den Dienstvorgang geeignet ist.
 
 Die Scorecard sollte in einfachen Worten ausgedrückt werden, um eine sinnvolle Diskussion zwischen den Business Owners und dem Engineering zu erleichtern. Beispielsweise könnte eine Scorecardmetrik für die Skalierbarkeit auf einfache Weise farbcodiert sein. Grün bedeutet die Erfüllung der definierten Kriterien, Gelb die Nichterfüllung der definierten Kriterien, aber aktive Implementierung einer geplanten Korrektur, und Rot die Nichterfüllung der definierten Kriterien ohne Plan oder Maßnahme.
 

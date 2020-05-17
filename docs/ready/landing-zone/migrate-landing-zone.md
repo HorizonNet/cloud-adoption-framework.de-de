@@ -7,18 +7,18 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a76a09e40fc11511213c0f496c9332ba9a05962f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 218dbe7cdc4be8e98b4c8ef3fd20ebd865a58a84
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997844"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222894"
 ---
 <!-- cSpell:ignore vCPUs jumpbox -->
 
 # <a name="deploy-a-migration-landing-zone"></a>Bereitstellen einer Landezone für die Migration
 
-Der Begriff *Landezone für die Migration* beschreibt eine Umgebung, die bereitgestellt und auf das Hosten von Workloads vorbereitet wurde, die von einer lokalen Umgebung nach Azure migriert werden.
+Die _Zielzone für die Migration_ ist eine Umgebung, die bereitgestellt und auf das Hosten von Workloads vorbereitet wurde, die von einer lokalen Umgebung nach Azure migriert werden.
 
 ## <a name="deploy-the-first-landing-zone"></a>Bereitstellen Ihrer ersten Zielzone
 
@@ -48,7 +48,7 @@ Die folgenden Entscheidungen werden in der Blaupause für die Landezone widerges
 | Migrationstools              | Azure Site Recovery wird bereitgestellt, und ein Azure Migrate-Projekt wird erstellt.                | [Entscheidungsleitfaden zur Wahl von Migrationstools](../../decision-guides/migrate-decision-guide/index.md)                                                                                                                                                                                               |
 | Protokollierung und Überwachung       | Ein Operational Insights-Arbeitsbereich und ein Speicherkonto für die Diagnose werden bereitgestellt.                |                                                                                                                                                                                                                                                                                       |
 | Netzwerk                      | Es wird ein virtuelles Netzwerk mit Subnetzen für Gateway, Firewall, Jumpbox und Landezone erstellt.  | [Netzwerkentscheidungen](../considerations/networking-options.md)                                                                                                                                                                                                                       |
-| Identity                     | Es wird angenommen, dass das Abonnement bereits einer Azure Active Directory-Instanz zugeordnet ist. | [Bewährte Methoden für die Identitätsverwaltung](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) |
+| Identity                     | Es wird angenommen, dass das Abonnement bereits einer Azure Active Directory-Instanz zugeordnet ist. | [Bewährte Methoden für die Identitätsverwaltung](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) |
 | Richtlinie                       | Bei dieser Blaupause wird derzeit davon ausgegangen, dass keine Azure-Richtlinien angewendet werden müssen.                        |                                                                                                                                                                                                                                                                                       |
 | Abonnemententwurf          | N/V: wurde für ein einzelnes Produktionsabonnement entworfen.                                              | [Erstellen der anfänglichen Abonnements](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                                      |
 | Ressourcengruppen              | N/V: wurde für ein einzelnes Produktionsabonnement entworfen.                                              | [Skalieren von Abonnements](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                                                 |
@@ -61,7 +61,7 @@ Die folgenden Entscheidungen werden in der Blaupause für die Landezone widerges
 
 ## <a name="customize-or-deploy-a-landing-zone"></a>Anpassen oder Bereitstellen einer Zielzone
 
-Erfahren Sie mehr, und laden Sie ein Referenzbeispiel der Migrationszielzonen-Blaupause für die Bereitstellung oder Anpassung von [Azure Blueprints-Beispielen][deploy-sample] herunter.
+Erfahren Sie mehr, und laden Sie ein Referenzbeispiel der CAF-Migrationszielzonen-Blaupause für die Bereitstellung oder Anpassung von [Azure Blueprints-Beispielen][deploy-sample] herunter.
 
 > [!div class="nextstepaction"]
 > [Bereitstellen des Blaupausenbeispiels][deploy-sample]

@@ -3,108 +3,35 @@ title: Cloudmigration
 description: Hier erfahren Sie, wie Sie die iterativen Prozesse zum Bewerten, Migrieren, Optimieren, Schützen und Verwalten der Workloads einrichten, die Sie zur Cloud migrieren möchten.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
-ms.topic: landing-page
+ms.date: 05/04/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-layout: LandingPage
-ms.openlocfilehash: b341996c45c4a0c5b7d8467419c3117f939afa20
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8a1c601108befd2dbbb32a6b24d72a1b0852d081
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120746"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219528"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Cloudmigration im Cloud Adoption Framework
 
 Der [Cloudeinführungsplan](../plan/index.md) jedes Unternehmens beinhaltet Workloads, die keine umfangreichen Investitionen in die Erstellung neuer Geschäftslogik rechtfertigen. Diese Workloads können mithilfe verschiedener Methoden in die Cloud migriert werden: per Lift & Shift, per Lift & Optimize oder mittels Modernisierung. Jeder diese Methoden wird als Migration betrachtet. In den folgenden Aufgaben werden die iterativen Prozesse zum Bewerten, Migrieren, Optimieren, Schützen und Verwalten dieser Workloads vermittelt.
 
-## <a name="getting-started"></a>Erste Schritte
-
-Zur Vorbereitung auf diese Phase des Cloudeinführungszyklus empfiehlt das Framework die folgenden Übungen:
+Zur Vorbereitung auf diese Phase des Cloudeinführungszyklus werden die folgenden Schritte empfohlen:
 
 <!-- markdownlint-disable MD033 -->
-<ul class="panelContent cardsF">
-    <li style="display: flex; flex-direction: column;">
-        <a href="./azure-migration-guide/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/1.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Migrieren Ihrer ersten Workload</h3>
-Machen Sie sich mithilfe des Leitfadens zur Azure-Migration mit den nativen Azure-Tools und dem Ansatz für die Migration vertraut.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./azure-best-practices/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Migrationsszenarios</h3>
-Nutzen Sie zusätzliche Migrationstools und -ansätze für weitere Migrationsszenarien.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./azure-best-practices/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Bewährte Methoden</h3>
-Gehen Sie allgemeine Migrationsanforderungen durch die Anwendung einheitlicher Best Practices an.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./migration-considerations/index.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Prozessverbesserungen</h3>
-Die Migration ist stark prozessorientiert. Nutzen Sie diese Prozessverbesserungen, um verschiedene Aspekte Ihrer Migration zu bewerten und weiterzuentwickeln und auf Veränderungen bei den Migrationsaufgaben zu reagieren.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
+
+| | |
+|---|---|
+| ![1](../_images/icons/1.png)     | <br>[Migrieren Ihrer ersten Workload](./azure-migration-guide/index.md): Machen Sie sich mithilfe des Leitfadens zur Azure-Migration mit den nativen Azure-Tools und dem Ansatz für die Migration vertraut.                                |
+| ![2](../_images/icons/2.png)     | <br>[Migrationsszenarios](./azure-best-practices/index.md): Nutzen Sie zusätzliche Migrationstools und -ansätze für weitere Migrationsszenarien.                                |
+| ![3](../_images/icons/3.png)     | <br>[Bewährte Methoden:](./azure-best-practices/index.md) Gehen Sie allgemeine Migrationsanforderungen durch die Anwendung einheitlicher Best Practices an.                                |
+| ![4](../_images/icons/4.png)      | <br>[Prozessverbesserungen](./migration-considerations/index.md): Die Migration ist stark prozessorientiert. Nutzen Sie diese Prozessverbesserungen, um verschiedene Aspekte Ihrer Migration zu bewerten und weiterzuentwickeln und auf Veränderungen bei den Migrationsaufgaben zu reagieren.                        |
+
 <!-- markdownlint-enable MD033 -->
 
-Diese Methodik und die obigen Schritte basieren auf den folgenden Annahmen:
+Diese Migrationsmethodik und die obigen Schritte basieren auf den folgenden Annahmen:
 
 - Die Methodik zum Steuern von Migrationssprints steht im Einklang mit Migrationswellen oder -releases, die mithilfe der Methoden „Planung“, „Bereitschaft“ und „Einführung“ definiert werden. Innerhalb jedes Migrationssprints wird ein Batch von Workloads zur Cloud migriert.
 - Vor der Migration von Workloads wurde mindestens eine [Zielzone](../ready/index.md) identifiziert, konfiguriert und bereitgestellt, um die Anforderungen des kurzfristigen Cloudeinführungsplan zu erfüllen.
@@ -127,7 +54,7 @@ Im Folgenden finden Sie einen Überblick über die Phasen des oben dargestellten
 > [!NOTE]
 > In einigen frühen Iterationen der Migration ist es üblich, sich auf eine einzelne Workload zu beschränken. Diese Vorgehensweise sorgt für einen maximalen Erhalt von Qualifikationen und bietet dem Team mehr Zeit zum Experimentieren und Lernen.
 > [!NOTE]
-> Beim Erstellen einer Migrationsfactory entscheiden sich manche Teams vielleicht, jede der obigen Phasen auf mehrere Teams und/oder mehrere Sprints zu verteilen. Diese Vorgehensweise kann die Wiederholbarkeit verbessern und die Migration beschleunigen.
+> Beim Erstellen einer Migrationsfactory entscheiden sich manche Teams vielleicht, jede der obigen Phasen auf mehrere Teams und mehrere Sprints zu verteilen. Diese Vorgehensweise kann die Wiederholbarkeit verbessern und die Migration beschleunigen.
 
 ## <a name="migration-waves"></a>Migrationswellen
 
@@ -137,7 +64,7 @@ Wie die Grafik im vorherigen Abschnitt zeigt, bieten Prozesse innerhalb der Meth
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Die obigen ersten Schritte und nachfolgende Leitfäden zur Migrationsmethodik unterstützen Sie bei der Entwicklung von Qualifikationen, die die Durchführung der Prozesse innerhalb der einzelnen Migrationssprints verbessern. Der [Leitfaden zur Azure-Migration](./azure-migration-guide/index.md) ist eine kurze Artikelreihe, in der die gängigsten Tools und Ansätze für Ihre erste Migrationswelle erläutert werden.
+Die oben aufgeführten Schritte und nachfolgende Leitfäden zur Migrationsmethodik können Ihnen bei der Entwicklung von Qualifikationen helfen, die die Durchführung der Prozesse innerhalb der einzelnen Migrationssprints verbessern. Der [Leitfaden zur Azure-Migration](./azure-migration-guide/index.md) ist eine kurze Artikelreihe, in der die gängigsten Tools und Ansätze für Ihre erste Migrationswelle erläutert werden.
 
 > [!div class="nextstepaction"]
 > [Leitfaden zur Azure-Migration](./azure-migration-guide/index.md)

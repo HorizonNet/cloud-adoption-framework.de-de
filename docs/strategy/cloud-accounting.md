@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 5c01fc4a0a4f1e05b34d8b9c91d71761a6e86f73
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 69f92ffaeb30b59bfa8ac2aeaea9aaad02e9aaeb
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80431677"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216230"
 ---
 <!-- cSpell:ignore CIOs -->
 
@@ -34,13 +34,13 @@ Um die weit verbreitete Ansicht zu überwinden, dass die IT eine reine Kostenste
 
 Unabhängig vom Umsatzmodell besteht die Besonderheit von zentralen IT-Buchhaltungsmodellen darin, wie die Kosten einer IT-Einheit abgerechnet werden. In einem herkömmlichen IT-Modell erfasst das IT-Team die Kosten und zahlt diese aus den gemeinsamen Geldmitteln (z. B. für Betrieb und Wartung) oder rechnet sie über ein dediziertes Gewinn-und-Verlust-Konto (GuV) ab.
 
-In einem zentralen IT-Buchhaltungsmodell gibt die IT-Abteilung auch die bereitgestellten Dienste an, um den Aufwand, die Verwaltung und andere geschätzte Ausgaben gegenzurechnen. Anschließend werden diese Kosten bei der jeweils angegebenen Geschäftseinheit in Rechnung gestellt. In diesem Modell wird davon ausgegangen, dass der IT-Abteilungsleiter (CIO) die GuV im Zusammenhang mit dem Verkauf dieser Dienste verwaltet. Dies kann zu einem erheblichen Anstieg der IT-Kosten und zu Konflikten zwischen der zentralen IT-Abteilung und anderen Geschäftsbereichen führen, insbesondere dann, wenn die IT die Kosten senken muss oder vereinbarte SLAs nicht erfüllt. Während Änderungen an Technologien oder Markten könnte jede neue Technologie eine Störung in der GuV der zentralen IT bedeuten und damit die Transformation schwieriger machen.
+In einem Buchhaltungsmodell mit zentraler IT gibt die IT-Abteilung auch die bereitgestellten Dienste an, um den Aufwand, die Verwaltung und andere geschätzte Ausgaben gegenzurechnen. Anschließend werden diese Kosten bei der jeweils angegebenen Geschäftseinheit in Rechnung gestellt. In diesem Modell wird davon ausgegangen, dass der IT-Abteilungsleiter (CIO) die GuV im Zusammenhang mit dem Verkauf dieser Dienste verwaltet. Dies kann zu einem erheblichen Anstieg der IT-Kosten und zu Konflikten zwischen der zentralen IT-Abteilung und anderen Geschäftsbereichen führen, insbesondere dann, wenn die IT die Kosten senken muss oder vereinbarte SLAs nicht erfüllt. Während Änderungen an Technologien oder Markten könnte jede neue Technologie eine Störung in der GuV der zentralen IT bedeuten und damit die Transformation schwieriger machen.
 
 ## <a name="chargeback"></a>Chargeback (verbrauchsbasierte Kostenzuteilung)
 
 Einen der allgemein ersten Schritte bei der Verbesserung der Reputation der IT-Abteilung als Kostenstelle stellt die Einführung eines Buchhaltungsmodells mit verbrauchsbasierter Kostenzuteilung dar. Dieses Modell gilt insbesondere in kleineren Unternehmen und hocheffizienten IT-Organisationen. Beim Modell mit verbrauchsbasierter Kostenzuteilung werden alle IT-Kosten, die einer bestimmten Geschäftseinheit zugeordnet sind, im Budget der Unternehmenseinheit wie Betriebsausgaben behandelt. Diese Praxis reduziert die kumulierten Kostenauswirkungen auf die IT, sodass Geschäftswerte deutlicher erkennbar sind.
 
-In einem traditionellen – lokalen – Modell ist eine verbrauchsbasierte Kostenzuteilung schwer umzusetzen, da jemand die großen Kapitalausgaben und Abschreibungen übernehmen muss. Ein laufender Wechsel von Kapitalausgaben zu Betriebsausgaben nach Verbrauch ist für die Buchhaltung eine schwierige Aufgabe. Diese Schwierigkeit ist ein wichtiger Grund für das herkömmliche Buchhaltungsmodell für die IT und das Modell mit zentraler IT-Abrechnung. Für eine effiziente Umsetzung eines Modells mit verbrauchsbasierter Kostenzuteilung ist fast zwangsläufig ein Modell mit Betriebsausgaben für die Abrechnung von Cloudkosten erforderlich.
+In einem traditionellen – lokalen – Modell ist eine verbrauchsbasierte Kostenzuteilung schwer umzusetzen, da jemand die großen Kapitalausgaben und Abschreibungen übernehmen muss. Ein laufender Wechsel von Kapitalausgaben zu Betriebsausgaben nach Verbrauch ist für die Buchhaltung eine schwierige Aufgabe. Diese Schwierigkeit ist ein wichtiger Grund für das herkömmliche Buchhaltungsmodell für die IT und das Modell mit einer zentralen IT-Abteilung. Für eine effiziente Umsetzung eines Modells mit verbrauchsbasierter Kostenzuteilung ist fast zwangsläufig ein Modell mit Betriebsausgaben für die Abrechnung von Cloudkosten erforderlich.
 
 Sie sollten dieses Modell jedoch nicht implementieren, ohne die Auswirkungen zu berücksichtigen. Hier finden Sie einige Auswirkungen, die nur das Modell mit verbrauchsbasierter Kostenzuteilung verursacht:
 

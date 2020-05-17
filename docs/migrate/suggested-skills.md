@@ -7,22 +7,24 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 396fecb03210980cae4c4f14cc6afcee331c3034
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4e3c9b7e924f1285389430ea9aae93cdecffea89
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997566"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222010"
 ---
+<!-- cSpell:ignore Getting Started -->
+
 # <a name="skills-readiness-for-cloud-migration"></a>Vorliegen der Fähigkeiten für die Migration zur Cloud
 
 Es ist wahrscheinlich, dass Mitarbeiter und auch einige erforderliche Systemintegrationspartner oder Partner für verwaltete Dienste während einer Cloudmigration neue Qualifikationen entwickeln müssen, um die Migrationsaktivitäten effektiv zu bewältigen.
 
-Es gibt vier verschiedene Prozesse, die während der Phase „Migration“ einer jeden Migrationsreise iterativ abgeschlossen werden. In den folgenden Abschnitten werden die erforderlichen Qualifikationen für jeden dieser Prozesse mit Verweisen auf zwei Voraussetzungen für Qualifizierungsressourcen ausgerichtet.
+Es gibt vier verschiedene Prozesse, die in der Migrationsmethodik iterativ abgeschlossen werden. In den folgenden Abschnitten werden die erforderlichen Qualifikationen für jeden dieser Prozesse mit Verweisen auf zwei Voraussetzungen für Qualifizierungsressourcen ausgerichtet.
 
 ## <a name="prerequisites-skilling-resources"></a>Voraussetzungen betreffende Ressourcen zur Befähigung
 
-Die Implementierung von „Migration“-Prozessen baut auf den Qualifikationen auf, die in den Phasen „[Planung](../strategy/suggested-skills.md)“ und „[Bereitschaft](../organize/suggested-skills.md)“ der Migrationsreise erworben wurden.
+Die Implementierung von „Migration“-Prozessen baut auf den Qualifikationen auf, die in den Phasen [Planung](../strategy/suggested-skills.md) und [Bereitschaft](../organize/suggested-skills.md) der Migrationsjourney erworben wurden.
 
 ## <a name="assess-skilling-resources"></a>Ressourcen zur Befähigung zum Bewerten
 

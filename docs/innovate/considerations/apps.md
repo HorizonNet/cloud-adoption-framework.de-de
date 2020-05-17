@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 1159fd0b1b5195a5775901cc9229f5c4a7b34ba2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0503ba04a97362b63c6e616b79d1153f3ba691c2
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120502"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224169"
 ---
 # <a name="engage-through-applications"></a>Einbinden durch Anwendungen
 
@@ -28,8 +28,8 @@ Teams, die schneller und präziser auf Kundenfeedback, Marktänderungen und Inno
 
 Um für Innovationen bereit zu sein, sollte die gesamte Anwendungsentwicklung mit einem Repository für freigegebenen Code beginnen. Das gängigste Tool für die Verwaltung von Coderepositorys ist [GitHub](https://guides.github.com), wo Sie sehr schnell ein Repository für freigegebenen Code erstellen können. Alternativ bietet [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) einen Satz von Tools zur Versionskontrolle in Azure DevOps Services, mit denen Sie Ihren Code verwalten können. Azure Repos stellt zwei Arten der Versionskontrolle bereit:
 
-- [Git:](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git) verteilte Versionskontrolle
-- [Team Foundation-Versionskontrolle (TFVC):](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc) zentralisierte Versionskontrolle
+- [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git): verteilte Versionskontrolle.
+- [Team Foundation-Versionskontrolle (TFVC)](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc): zentralisierte Versionskontrolle.
 
 ## <a name="citizen-developers"></a>Entwickler ohne Programmiererfahrung
 
@@ -50,7 +50,7 @@ Wenn eine Anwendung oder Umgebung erforderlich ist, um eine Kundenanforderung zu
 
 ### <a name="infusing-intelligence"></a>Implementieren von Intelligenz
 
-Maschinelles Lernen und künstliche Intelligenz stehen Entwicklern zunehmend zur Verfügung. Die weit verbreitete Verfügbarkeit gängiger APIs mit Vorhersagefunktionen ermöglicht Entwicklern, die Anforderungen des Kunden durch erweiterten Zugriff auf Daten und Vorhersagen besser zu erfüllen.
+Maschinelles Lernen und künstliche Intelligenz stehen den Entwicklern zunehmend zur Verfügung. Die weit verbreitete Verfügbarkeit gängiger APIs mit Vorhersagefunktionen ermöglicht Entwicklern, die Anforderungen des Kunden durch erweiterten Zugriff auf Daten und Vorhersagen besser zu erfüllen.
 
 Durch Hinzufügen von Intelligenz zu einer Lösung können Spracherkennung, Textübersetzung, maschinelles Sehen und sogar visuelle Suche aktiviert werden. Dank dieser erweiterten Funktionen können Entwickler einfacher Lösungen erstellen, die Intelligenz nutzen, um eine interaktive und moderne Umgebung zu schaffen.
 
@@ -82,18 +82,18 @@ Das Erweitern einer Lösung ist eine gängige Form der Modernisierung. Diese Vor
 
 - Die vorhandene Geschäftslogik sollte die vorhandene Kundenanforderung erfüllen (oder dem nahekommen).
 - Eine verbesserte Benutzerfreundlichkeit würde die Anforderungen einer bestimmten Kundenkohorte besser erfüllen.
-- Die Geschäftslogik, die für die MVP-Lösung (Minimum Viable Product) erforderlich ist, wurde zentralisiert – üblicherweise über einen [N-Schichten](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier)-, Webdienste-, API- oder [Microservices](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices)-Entwurf. Dieser Ansatz besteht darin, die vorhandene Lösung mit einer neuen, in der Cloud gehosteten Umgebung zu umschließen. In Azure befände sich diese Lösung wahrscheinlich in Azure App Services.
+- Die Geschäftslogik, die für die MVP-Lösung (Minimum Viable Product) erforderlich ist, wurde zentralisiert – üblicherweise über einen [N-Schichten](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier)-, Webdienste-, API- oder [Microservices](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices)-Entwurf. Dieser Ansatz besteht darin, die vorhandene Lösung mit einer neuen, in der Cloud gehosteten Umgebung zu umschließen. In Azure befände sich diese Lösung wahrscheinlich in Azure App Service.
 
 ### <a name="rebuild-an-existing-solution"></a>Neuerstellen einer vorhandenen Lösung
 
-Wenn eine Anwendung nicht einfach erweitert werden kann, ist es möglicherweise erforderlich, die Lösung umzugestalten. Bei diesem Ansatz wird die Workload in die Cloud migriert. Nach der Migration der Anwendung werden Teile davon geändert oder dupliziert, als Webdienste oder [Microservices](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices), die parallel zur vorhandenen Lösung bereitgestellt werden. Die parallele dienstbasierte Lösung könnte wie eine erweiterte Lösung behandelt werden. Diese Lösung würde einfach die vorhandene Lösung mit einer neuen, in der Cloud gehosteten Umgebung umschließen. In Azure befände sich diese Lösung wahrscheinlich in Azure App Services.
+Wenn eine Anwendung nicht einfach erweitert werden kann, ist es möglicherweise erforderlich, die Lösung umzugestalten. Bei diesem Ansatz wird die Workload in die Cloud migriert. Nach der Migration der Anwendung werden Teile davon geändert oder dupliziert, als Webdienste oder [Microservices](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices), die parallel zur vorhandenen Lösung bereitgestellt werden. Die parallele dienstbasierte Lösung könnte wie eine erweiterte Lösung behandelt werden. Diese Lösung würde einfach die vorhandene Lösung mit einer neuen, in der Cloud gehosteten Umgebung umschließen. In Azure befände sich diese Lösung wahrscheinlich in Azure App Service.
 
 > [!CAUTION]
 > Das Refactoring bzw. Neuentwerfen von Lösungen oder Zentralisieren von Geschäftslogik kann, im Gegensatz zu einer Kundenwertquelle, schnell zu einer zeitaufwendigen [technischen Herausforderung](./build.md#reduce-complexity-and-delay-technical-spikes) werden. Dies ist ein Risiko für die Innovation, insbesondere in der Frühphase der Hypothesenvalidierung. Mit etwas Kreativität beim Entwerfen einer Lösung sollte ein Pfad zum MVP vorhanden sein, der kein Refactoring vorhandener Lösungen erfordert. Es ist ratsam, das Refactoring zu verzögern, bis die anfängliche Hypothese bedarfsabhängig überprüft werden kann.
 
 ## <a name="operating-model-innovations"></a>Betriebsmodellinnovationen
 
-Zusätzlich zu modernen, innovativen Ansätzen für die App-Erstellung gibt es auch einige bedeutende Neuerungen beim App-*Betrieb*. Diese Ansätze haben viele organisatorische Veränderungen angeregt. Eine der herausragendsten ist das Betriebsmodell [Cloudkompetenzzentrum](../../organize/cloud-center-of-excellence.md). Wenn die Geschäftsteams vollständig personell ausgestattet und ausgereift sind, können sie ihre eigene betriebliche Unterstützung für eine Lösung bereitstellen.
+Zusätzlich zu modernen, innovativen Ansätzen für die App-Erstellung gibt es auch einige bedeutende Neuerungen beim App-_Betrieb_. Diese Ansätze haben viele organisatorische Veränderungen angeregt. Eine der herausragendsten ist das Betriebsmodell [Cloudkompetenzzentrum](../../organize/cloud-center-of-excellence.md). Wenn die Geschäftsteams vollständig personell ausgestattet und ausgereift sind, können sie ihre eigene betriebliche Unterstützung für eine Lösung bereitstellen.
 
 Der Typ des Self-Service-Betriebsverwaltungsmodells in einem Cloudkompetenzzentrum ermöglicht strengere Kontrollen und schnellere Iterationen innerhalb der Lösungsumgebung. Diese Ziele werden durch Übertragung betrieblicher Kontrolle und Verantwortlichkeit an das Geschäftsteam erreicht.
 

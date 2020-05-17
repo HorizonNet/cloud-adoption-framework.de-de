@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 33daaaf5859e0b761a6b53b1afc67df2ddcd1f65
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7fedacff566fb25e7bb166b62ee711f461209f07
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80527079"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223812"
 ---
 <!-- cSpell:ignore savision -->
 
@@ -45,14 +45,14 @@ In der folgenden Tabelle werden die empfohlenen Ansätze zur Überwachung der ei
 
 <!-- markdownlint-disable MD033 -->
 
-Ebene | Resource | `Scope` | Methode
----|---|---|----
-Application | Eine webbasierte Anwendung, die auf der .NET-, .NET Core-, Java-, JavaScript- und Node.js-Plattform auf einem virtuellen Azure-Computer, in Azure App Services, Azure Service Fabric, Azure Functions und Azure Cloud Services ausgeführt wird. | Überwachen einer Livewebanwendung, um automatisch Leistungsanomalien zu erkennen, Codeausnahmen und -probleme zu erkennen und Analysedaten zum Benutzerverhalten zu erfassen. |  Azure Monitor (Application Insights).
-Azure-Ressourcen: Platform-as-a-Service (PaaS) | Azure-Datenbankdienste (z.B. SQL oder MySQL). | Azure-Datenbank für SQL-Leistungsmetriken. | Aktivieren der Diagnoseprotokollierung zum Streamen von SQL-Daten an Azure Monitor-Protokolle.
-Azure-Ressourcen: Infrastructure-as-a-Service (IaaS) | 1. Azure Storage<br/> 2. Azure Application Gateway<br/> 3. Netzwerksicherheitsgruppen<br/> 4. Azure Traffic Manager<br/> 5. Azure Virtual Machines<br/> 6. Azure Kubernetes Service/Azure Container Instances | 1. Kapazität, Verfügbarkeit und Leistung.<br/> 2. Leistungs- und Diagnoseprotokolle (Aktivitäten, Zugriff, Leistung und Firewall).<br/> 3. Überwachung von Ereignissen bei der Anwendung von Regeln und Regelzähler für die Häufigkeit der Anwendung von Regeln zum Ablehnen oder Zulassen<br/> 4. Überwachung der Verfügbarkeit des Endpunktstatus.<br/> 5. Überwachung von Kapazität, Verfügbarkeit und Leistung in einem VM-Gastbetriebssystem (OS). Zuordnung von auf den virtuellen Computern gehosteten App-Abhängigkeiten, einschließlich der Sichtbarkeit aktiver Netzwerkverbindungen zwischen Servern, der Latenz für eingehende und ausgehende Verbindungen und der Ports in jeder über TCP verbundenen Architektur.<br/> 6. Überwachung von Kapazität, Verfügbarkeit und Leistung von Workloads, die auf Containern und Containerinstanzen ausgeführt werden. | 1. Speichermetriken für Blob Storage<br/> 2. Aktivieren der Diagnoseprotokollierung und Konfigurieren des Streamings von Daten an Azure Monitor-Protokolle.<br/> 3. Aktivieren der Diagnoseprotokollierung von Netzwerksicherheitsgruppen und Konfigurieren des Streamings von Daten an Azure Monitor-Protokolle.<br/> 4. Aktivieren der Diagnoseprotokollierung von Traffic Manager-Endpunkten und Konfigurieren des Streamings von Daten an Azure Monitor-Protokolle.<br/> 5. Aktivieren von Azure Monitor für VMs.<br/> 6. Aktivieren von Azure Monitor für Container.
-Netzwerk | Kommunikation zwischen dem virtuellen Computer und einem oder mehreren Endpunkten (ein anderer virtueller Computer, ein vollqualifizierter Domänenname, ein URI oder eine IPv4-Adresse). | Überwachung von Änderungen der Erreichbarkeit, Latenz und Netzwerktopologie zwischen der VM und dem Endpunkt. | Azure Network Watcher.
-Azure-Abonnement | Azure Service Health und grundlegende Ressourcenintegrität. | <li> Für einen Dienst oder eine Ressource durchgeführte Verwaltungsmaßnahmen.<br/><li> Die Dienstintegrität eines Azure-Diensts hat sich verschlechtert, oder er ist nicht verfügbar.<br/><li> Bei einer Azure-Ressource vom Azure-Dienst erkannte Integritätsprobleme.<br/><li> Mit der Azure-Autoskalierung durchgeführte Vorgänge zeigen einen Fehler oder eine Ausnahme an. <br/><li> Mit Azure Policy durchgeführte Vorgänge zeigen an, dass eine zulässige oder abgelehnte Aktion ausgeführt wurde.<br/><li> Datensatz der in Azure Security Center generierten Warnungen. | Im Aktivitätsprotokoll für Überwachung und Warnungen unter Verwendung von Azure Resource Manager bereitgestellt.
-Azure-Mandant | Azure Active Directory || Aktivieren der Diagnoseprotokollierung und Konfigurieren des Streamings von Daten an Azure Monitor-Protokolle.
+| Ebene | Resource | `Scope` | Methode |
+|---|---|---|---|
+| Application | Eine webbasierte Anwendung, die auf der .NET-, .NET Core-, Java-, JavaScript- und Node.js-Plattform auf einem virtuellen Azure-Computer, in Azure App Service, Azure Service Fabric, Azure Functions und Azure Cloud Services ausgeführt wird. | Überwachen einer Livewebanwendung, um automatisch Leistungsanomalien zu erkennen, Codeausnahmen und -probleme zu erkennen und Analysedaten zum Benutzerverhalten zu erfassen. |  Application Insights (ein Feature von Azure Monitor). |
+| Azure-Ressourcen: Platform-as-a-Service (PaaS) | Azure-Datenbankdienste (z.B. SQL oder MySQL). | Azure-Datenbank für SQL-Leistungsmetriken. | Aktivieren der Diagnoseprotokollierung zum Streamen von SQL-Daten an Azure Monitor-Protokolle. |
+| Azure-Ressourcen: Infrastructure-as-a-Service (IaaS) | 1. Azure Storage <br> 2. Azure Application Gateway <br>  3. Netzwerksicherheitsgruppen <br>  4. Azure Traffic Manager <br>  5. Azure Virtual Machines <br>  6. Azure Kubernetes Service/Azure Container Instances | 1. Kapazität, Verfügbarkeit und Leistung. <br>  2. Leistungs- und Diagnoseprotokolle (Aktivitäten, Zugriff, Leistung und Firewall). <br>  3. Überwachung von Ereignissen bei der Anwendung von Regeln und Regelzähler für die Häufigkeit der Anwendung von Regeln zum Ablehnen oder Zulassen <br>  4. Überwachung der Verfügbarkeit des Endpunktstatus. <br>  5. Überwachung von Kapazität, Verfügbarkeit und Leistung in einem VM-Gastbetriebssystem (OS). Zuordnung von auf den virtuellen Computern gehosteten App-Abhängigkeiten, einschließlich der Sichtbarkeit aktiver Netzwerkverbindungen zwischen Servern, der Latenz für eingehende und ausgehende Verbindungen und der Ports in jeder über TCP verbundenen Architektur. <br>  6. Überwachung von Kapazität, Verfügbarkeit und Leistung von Workloads, die auf Containern und Containerinstanzen ausgeführt werden. | 1. Speichermetriken für Blob Storage <br>  2. Aktivieren der Diagnoseprotokollierung und Konfigurieren des Streamings von Daten an Azure Monitor-Protokolle. <br>  3. Aktivieren der Diagnoseprotokollierung von Netzwerksicherheitsgruppen und Konfigurieren des Streamings von Daten an Azure Monitor-Protokolle. <br>  4. Aktivieren der Diagnoseprotokollierung von Traffic Manager-Endpunkten und Konfigurieren des Streamings von Daten an Azure Monitor-Protokolle. <br>  5. Aktivieren von Azure Monitor für VMs. <br>  6. Aktivieren von Azure Monitor für Container. |
+| Netzwerk | Kommunikation zwischen dem virtuellen Computer und einem oder mehreren Endpunkten (ein anderer virtueller Computer, ein vollqualifizierter Domänenname, ein URI oder eine IPv4-Adresse). | Überwachung von Änderungen der Erreichbarkeit, Latenz und Netzwerktopologie zwischen der VM und dem Endpunkt. | Azure Network Watcher. |
+| Azure-Abonnement | Azure Service Health und grundlegende Ressourcenintegrität. | <li> Für einen Dienst oder eine Ressource durchgeführte Verwaltungsmaßnahmen. <li> Die Dienstintegrität eines Azure-Diensts hat sich verschlechtert, oder er ist nicht verfügbar. <li> Bei einer Azure-Ressource vom Azure-Dienst erkannte Integritätsprobleme. <li> Mit der Azure-Autoskalierung durchgeführte Vorgänge zeigen einen Fehler oder eine Ausnahme an. <li> Mit Azure Policy durchgeführte Vorgänge zeigen an, dass eine zulässige oder abgelehnte Aktion ausgeführt wurde. <li> Datensatz der in Azure Security Center generierten Warnungen. | Im Aktivitätsprotokoll für Überwachung und Warnungen unter Verwendung von Azure Resource Manager bereitgestellt. |
+| Azure-Mandant | Azure Active Directory | Aktivieren der Diagnoseprotokollierung und Konfigurieren des Streamings von Daten an Azure Monitor-Protokolle. |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -74,28 +74,28 @@ In der folgenden Tabelle werden die Anforderungen zusammengefasst, die für Azur
 
 <!-- markdownlint-disable MD033 -->
 
-|Anforderung | Azure Monitor | Operations Manager |
-|:--|:---|:---|
-|Infrastrukturanforderungen | Nein | Ja<br> Erfordert mindestens einen Verwaltungsserver sowie eine SQL Server-Instanz, um die operative Datenbank und die Reporting-Data Warehouse-Datenbank zu hosten. Die Komplexität nimmt zu, wenn Hochverfügbarkeit und Notfallwiederherstellung erforderlich sind, und es Computer an mehreren Standorten, nicht vertrauenswürdige Systeme und andere komplexe Entwurfsüberlegungen gibt.|
-|Eingeschränkte Konnektivität: kein Internet<br> oder isoliertes Netzwerk | Nein | Ja |
-|Eingeschränkte Konnektivität: kontrollierter Internetzugang | Ja | Ja |
-|Eingeschränkte Konnektivität: häufige Unterbrechungen | Ja | Ja |
-|Konfigurierbare Integritätsüberwachung | Nein | Ja |
-| Web-App-Verfügbarkeitstest (isoliertes Netzwerk) | Ja, eingeschränkt<br> Azure Monitor bietet eingeschränkte Unterstützung in diesem Bereich und erfordert benutzerdefinierte Firewallausnahmen. | Ja |
+| Anforderung | Azure Monitor | Operations Manager |
+|---|---|---|
+| Infrastrukturanforderungen | Nein | Ja <br>  Erfordert mindestens einen Verwaltungsserver sowie eine SQL Server-Instanz, um die operative Datenbank und die Reporting-Data Warehouse-Datenbank zu hosten. Die Komplexität nimmt zu, wenn Hochverfügbarkeit und Notfallwiederherstellung erforderlich sind, und es Computer an mehreren Standorten, nicht vertrauenswürdige Systeme und andere komplexe Entwurfsüberlegungen gibt. |
+| Eingeschränkte Konnektivität: kein Internet <br>  oder isoliertes Netzwerk | Nein | Ja |
+| Eingeschränkte Konnektivität: kontrollierter Internetzugang | Ja | Ja |
+| Eingeschränkte Konnektivität: häufige Unterbrechungen | Ja | Ja |
+| Konfigurierbare Integritätsüberwachung | Nein | Ja |
+| Web-App-Verfügbarkeitstest (isoliertes Netzwerk) | Ja, eingeschränkt <br>  Azure Monitor bietet eingeschränkte Unterstützung in diesem Bereich und erfordert benutzerdefinierte Firewallausnahmen. | Ja |
 | Web-App-Verfügbarkeitstest (global verteilt) | Nein | Ja |
-|Überwachen von VM-Workloads | Ja, eingeschränkt<br> Kann IIS- und SQL Server-Fehlerprotokolle, Windows-Ereignisse und Leistungsindikatoren erfassen. Erfordert die Erstellung benutzerdefinierter Abfragen, Warnungen und Visualisierungen. | Ja<br> Unterstützt die Überwachung der meisten Serverworkloads mit verfügbaren Management Packs. Erfordert entweder den Windows-Agent von Log Analytics oder den Operations Manager-Agent auf der VM und die Rückmeldung an die Verwaltungsgruppe im Unternehmensnetzwerk.|
-|Überwachen von Azure-IaaS | Ja | Ja<br> Unterstützt die Überwachung der meisten Infrastrukturkomponenten im Unternehmensnetzwerk. Verfolgt Verfügbarkeitsstatus, Metriken und Warnungen für virtuelle Azure-Computer, SQL und Speicher über das Azure-Management Pack.|
-|Überwachen von Azure-PaaS | Ja | Ja, eingeschränkt<br> Richtet sich danach, was im Azure Management Pack unterstützt wird. |
-|Überwachen des Azure-Diensts | Ja<br> | Ja<br> Management Packs bieten zwar derzeit keine native Überwachung der Integrität des Azure-Diensts, Sie können aber benutzerdefinierte Workflows erstellen, um Integritätswarnungen zum Azure-Dienst abzufragen. Verwenden Sie die Azure-REST-API, um Warnungen über Ihr vorhandenes Benachrichtigungssystem zu erhalten.|
-|Moderne Webanwendungsüberwachung | Ja | Nein |
-|Legacy-Webanwendungsüberwachung | Ja, eingeschränkt je nach SDK<br> Unterstützt die Überwachung älterer Versionen von .NET- und Java-Webanwendungen. | Ja, eingeschränkt |
-|Überwachen von Azure Kubernetes Service-Containern | Ja | Nein |
-|Überwachen von Docker- oder Windows-Containern | Ja | Nein |
-|Überwachung der Netzwerkleistung | Ja | Ja, eingeschränkt<br> Unterstützt Verfügbarkeitsprüfungen und sammelt grundlegende Statistiken von Netzwerkgeräten mithilfe des SNMP-Protokolls (Simple Network Management Protocol) aus dem Unternehmensnetzwerk.|
-|Interaktive Datenanalyse | Ja | Nein<br> Basiert auf vordefinierten oder benutzerdefinierten Berichten von SQL Server Reporting Services, Visualisierungslösungen von Drittanbietern oder benutzerdefinierten Power BI-Implementierungen. Für das Operations Manager-Data Warehouse gibt es Skalierungs- und Leistungseinschränkungen. Integration mit Azure Monitor-Protokollen als Alternative für die Datenaggregation. Die Integration wird durch die Konfiguration des Log Analytics-Connectors erzielt.|
-|End-to-End-Diagnose, Analyse der Grundursache und rechtzeitige Problembehandlung | Ja | Ja, eingeschränkt<br> Unterstützt die End-to-End-Diagnose und Problembehandlung nur für lokale Infrastrukturen und Anwendungen. Verwendet andere System Center-Komponenten oder Partnerlösungen.|
-|Interaktive Visualisierungen (Dashboards) | Ja | Ja, eingeschränkt<br> Stellt grundlegende Dashboards über die HTML5-Webkonsole oder über eine erweiterte Benutzeroberfläche von Partnerlösungen wie Squared Up oder Savision bereit. |
-|Integration in IT- oder DevOps-Tools | Ja | Ja, eingeschränkt |
+| Überwachen von VM-Workloads | Ja, eingeschränkt <br>  Kann IIS- und SQL Server-Fehlerprotokolle, Windows-Ereignisse und Leistungsindikatoren erfassen. Erfordert die Erstellung benutzerdefinierter Abfragen, Warnungen und Visualisierungen. | Ja <br>  Unterstützt die Überwachung der meisten Serverworkloads mit verfügbaren Management Packs. Erfordert entweder den Windows-Agent von Log Analytics oder den Operations Manager-Agent auf der VM und die Rückmeldung an die Verwaltungsgruppe im Unternehmensnetzwerk. |
+| Überwachen von Azure-IaaS | Ja | Ja <br>  Unterstützt die Überwachung der meisten Infrastrukturkomponenten im Unternehmensnetzwerk. Verfolgt Verfügbarkeitsstatus, Metriken und Warnungen für virtuelle Azure-Computer, SQL und Speicher über das Azure-Management Pack. |
+| Überwachen von Azure-PaaS | Ja | Ja, eingeschränkt <br><br> Richtet sich danach, was im Azure Management Pack unterstützt wird. |
+| Überwachen des Azure-Diensts | Ja | Ja <br><br> Management Packs bieten zwar derzeit keine native Überwachung der Integrität des Azure-Diensts, Sie können aber benutzerdefinierte Workflows erstellen, um Integritätswarnungen zum Azure-Dienst abzufragen. Verwenden Sie die Azure-REST-API, um Warnungen über Ihr vorhandenes Benachrichtigungssystem zu erhalten. |
+| Moderne Webanwendungsüberwachung | Ja | Nein |
+| Legacy-Webanwendungsüberwachung | Ja, eingeschränkt je nach SDK <br><br> Unterstützt die Überwachung älterer Versionen von .NET- und Java-Webanwendungen. | Ja, eingeschränkt |
+| Überwachen von Azure Kubernetes Service-Containern | Ja | Nein |
+| Überwachen von Docker- oder Windows-Containern | Ja | Nein |
+| Überwachung der Netzwerkleistung | Ja | Ja, eingeschränkt <br><br> Unterstützt Verfügbarkeitsprüfungen und sammelt grundlegende Statistiken von Netzwerkgeräten mithilfe des SNMP-Protokolls (Simple Network Management Protocol) aus dem Unternehmensnetzwerk. |
+| Interaktive Datenanalyse | Ja | Nein <br><br> Basiert auf vordefinierten oder benutzerdefinierten Berichten von SQL Server Reporting Services, Visualisierungslösungen von Drittanbietern oder benutzerdefinierten Power BI-Implementierungen. Für das Operations Manager-Data Warehouse gibt es Skalierungs- und Leistungseinschränkungen. Integration mit Azure Monitor-Protokollen als Alternative für die Datenaggregation. Die Integration wird durch die Konfiguration des Log Analytics-Connectors erzielt. |
+| End-to-End-Diagnose, Analyse der Grundursache und rechtzeitige Problembehandlung | Ja | Ja, eingeschränkt <br><br> Unterstützt die End-to-End-Diagnose und Problembehandlung nur für lokale Infrastrukturen und Anwendungen. Verwendet andere System Center-Komponenten oder Partnerlösungen. |
+| Interaktive Visualisierungen (Dashboards) | Ja | Ja, eingeschränkt <br><br> Stellt grundlegende Dashboards über die HTML5-Webkonsole oder über eine erweiterte Benutzeroberfläche von Partnerlösungen wie Squared Up oder Savision bereit. |
+| Integration in IT- oder DevOps-Tools | Ja | Ja, eingeschränkt |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -113,11 +113,11 @@ Sowohl Kunden, die beträchtliche Investitionen in Operations Manager getätigt 
 - Sind die Features von Operations Manager für unsere IT-Organisation geeignet?
 - Lässt sich durch die Integration von Operations Manager in Azure Monitor die kostengünstige und umfassende Überwachungslösung erzielen, die wir benötigen?
 
-Wenn Sie bereits in Operations Manager investiert haben, müssen Sie sich nicht auf die Planung einer Migration konzentrieren, um das System sofort auszutauschen. Mit Azure oder anderen Cloudanbietern, die als Erweiterung Ihres eigenen lokalen Netzwerks vorhanden sind, kann Operations Manager die Gast-VMs und Azure-Ressourcen so überwachen, als befänden diese sich in Ihrem Unternehmensnetzwerk. Für diesen Ansatz ist eine zuverlässige Netzwerkverbindung zwischen Ihrem Netzwerk und dem virtuellen Azure-Netzwerk erforderlich, die genügend Bandbreite bietet.
+Wenn Sie bereits in Operations Manager investiert haben, müssen Sie sich nicht auf die Planung einer Migration konzentrieren, um das System sofort auszutauschen. Mit Azure oder anderen Cloudanbietern, die als Erweiterung Ihres eigenen lokalen Netzwerks vorhanden sind, kann Operations Manager die Gast-VMs und Azure-Ressourcen so überwachen, als befänden diese sich in Ihrem Unternehmensnetzwerk. Für diesen Ansatz ist eine zuverlässige Netzwerkverbindung zwischen Ihrem Netzwerk und dem virtuellen Netzwerk in Azure erforderlich, die genügend Bandbreite bietet.
 
 Um die in Azure ausgeführten Workloads zu überwachen, die in Azure ausgeführt werden, benötigen Sie Folgendes:
 
-- Das [Management Pack für Azure](https://www.microsoft.com/download/details.aspx?id=50013). Es erfasst Leistungsmetriken, die von Azure-Diensten wie Web- und Workerrollen, Application Insights-Verfügbarkeitstests (Webtests), Azure Service Bus usw. ausgegeben werden. Das Management Pack nutzt die Azure-REST-API, um die Verfügbarkeit und Leistung dieser Ressourcen zu überwachen. Für einige Typen von Azure-Diensten sind im Management Pack keine Metriken oder vordefinierte Monitore vorhanden, diese Dienste können aber über die im Azure Management Pack für ermittelte Dienste definierten Beziehungen dennoch überwacht werden.
+- Das [System Center Operations Manager Management Pack für Azure](https://www.microsoft.com/download/details.aspx?id=50013). Es erfasst Leistungsmetriken, die von Azure-Diensten wie Web- und Workerrollen, Application Insights-Verfügbarkeitstests (Webtests), Azure Service Bus usw. ausgegeben werden. Das Management Pack nutzt die Azure-REST-API, um die Verfügbarkeit und Leistung dieser Ressourcen zu überwachen. Für einige Typen von Azure-Diensten sind im Management Pack keine Metriken oder vordefinierte Monitore vorhanden, diese Dienste können aber über die im Azure Management Pack für ermittelte Dienste definierten Beziehungen dennoch überwacht werden.
 
 - Das [Management Pack für Azure SQL-Datenbank](https://www.microsoft.com/download/details.aspx?id=38829) zum Überwachen der Verfügbarkeit und Leistung von Azure SQL-Datenbanken und Azure SQL-Datenbankservern mithilfe der Azure-REST-API und T-SQL-Abfragen in SQL Server-Systemsichten.
 

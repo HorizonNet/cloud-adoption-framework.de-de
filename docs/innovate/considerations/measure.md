@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 49377f419a8b5315a9f4a544fca37579b6dfbcaa
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: bb7399f6c937ed433d4d8610a15153c10f01659c
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427401"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222503"
 ---
 # <a name="measure-for-customer-impact"></a>Messen der Auswirkungen für Kunden
 
@@ -22,7 +22,12 @@ Es gibt mehrere Möglichkeiten, um die Auswirkungen auf Kunden zu messen. Dieser
 
 Während der [Strategiephase](../../strategy/index.md) des Lebenszyklus der Cloudeinführung untersuchen wir [Beweggründe](../../strategy/motivations.md) und [Geschäftsergebnisse](../../strategy/business-outcomes/index.md). Diese Methoden bieten eine Reihe von Metriken, mit denen die Auswirkungen für Kunden getestet werden können. Wenn die Innovation erfolgreich ist, werden in der Regel Ergebnisse erzielt, die auf Ihre strategischen Ziele ausgerichtet sind.
 
-Bevor Sie Lernmetriken einrichten, sollten Sie eine kleine Anzahl von strategischen Metriken definieren, die von dieser Innovation beeinflusst werden sollen. Im Allgemeinen stimmen diese strategischen Metriken mit einem oder mehreren der folgenden Ergebnisbereiche überein: [Unternehmensflexibilität](../../strategy/business-outcomes/agility-outcomes.md), [Kundenbindung](../../strategy/business-outcomes/engagement-outcomes.md), [Kundenreichweite](../../strategy/business-outcomes/reach-outcomes.md), [finanzielle Auswirkungen](../../strategy/business-outcomes/fiscal-outcomes.md) oder im Falle von betrieblichen Innovationen: [Lösungsleistung](../../strategy/business-outcomes/fiscal-outcomes.md).
+Bevor Sie Lernmetriken einrichten, sollten Sie eine kleine Anzahl von strategischen Metriken definieren, die von dieser Innovation beeinflusst werden sollen. Im Allgemeinen beziehen sich diese strategischen Metriken auf mindestens einen der folgenden Ergebnisbereiche:
+    - [Unternehmensflexibilität](../../strategy/business-outcomes/agility-outcomes.md)
+    - [Kundenbindung](../../strategy/business-outcomes/engagement-outcomes.md)
+    - [Kundenreichweite](../../strategy/business-outcomes/reach-outcomes.md)
+    - [Finanzielle Auswirkung](../../strategy/business-outcomes/fiscal-outcomes.md)
+    - [Lösungsleistung](../../strategy/business-outcomes/fiscal-outcomes.md), im Fall von betrieblichen Innovationen
 
 Dokumentieren Sie die vereinbarten Metriken, und verfolgen Sie deren Auswirkung regelmäßig nach. Erwarten Sie jedoch nicht, dass Ergebnisse in einer dieser Metriken bereits bei mehreren Iterationen entstehen. Weitere Informationen zum Festlegen und Ausrichten der Erwartungen zwischen den Beteiligten finden Sie unter [Verpflichtung zu Iterationen](./index.md#commitment-to-iteration).
 
@@ -47,19 +52,19 @@ In den meisten Fällen verfügt ein Customer Flow über einen einfach zu definie
 3. **Lösungsschritte:** Dieser Begriff bezieht sich auf die Schritte, die erforderlich sind, um den Kunden vom anfänglichen Trigger zu einem erfolgreichen Ergebnis zu führen. Jeder Schritt erzeugt eine Lernmetrik, die auf einer Kundenentscheidung basiert, um mit dem nächsten Schritt fortzufahren.
 4. **Individuelle Cloud Adoption erreicht:** Bei der nächsten Ausführung des Triggers wird die individuelle Cloud Adoption erreicht, wenn der Kunde zur Lösung zurückkehrt, damit seine Anforderung erfüllt wird.
 5. **Indikator für Geschäftsergebnis:** Wenn sich ein Kunde auf eine Weise verhält, die zum definierten Geschäftsergebnis beiträgt, kann ein Indikator für das Geschäftsergebnis beobachtet werden.
-6. **Echte Innovation:** Wenn sowohl *Geschäftsergebnisindikatoren* als auch *individuelle Akzeptanz* im gewünschten Maßstab auftreten, haben Sie echte Innovationen realisiert.
+6. **Echte Innovation:** Wenn sowohl _Geschäftsergebnisindikatoren_ als auch _individuelle Akzeptanz_ im gewünschten Maßstab auftreten, haben Sie echte Innovationen realisiert.
 
 Jeder Schritt im Customer Flow generiert Lernmetriken. Nach jeder Iterationen (oder jedem Release) wird eine neue Version der Hypothese getestet. Gleichzeitig werden Optimierungen der Lösung getestet, um Anpassungen der Hypothese widerzuspiegeln. Wenn Kunden den vorgegebenen Pfad mit jedem einzelnen Schritt befolgen, wird eine positive Metrik erfasst. Wenn Kunden vom vorgegebenen Pfad abweichen, wird eine negative Metrik aufgezeichnet.
 
 Diese Ausrichtungs- und Abgrenzungsindikatoren führen zu Lernmetriken. Jede Metrik sollte aufgezeichnet und nachverfolgt werden, wenn das Cloudeinführungsteam Fortschritte in Bezug auf Geschäftsergebnisse und echte Innovationen erzielt. In [Lernen von Kunden](./learn.md) werden die Möglichkeiten zur Anwendung dieser Metriken diskutiert, um bessere Lösungen kennenzulernen und zu entwickeln.
 
-### <a name="grouping-and-observing-customer-partners"></a>Gruppieren und Beobachten von Kundenpartnern
+### <a name="group-and-observe-customer-partners"></a>Gruppieren und Beobachten von Kundenpartnern
 
 Die erste Messung beim Definieren von Lernmetriken ist die Definition der Kundenpartner. Alle Kunden, die an Innovationszyklen teilnehmen, qualifizieren sich als Kundenpartner. Um das Verhalten genau zu messen, sollten Sie ein Kohortenmodell verwenden, um Kundenpartner zu definieren. In diesem Modell werden die Kunden gruppiert, um Ihr Verständnis für ihre Reaktionen auf Veränderungen im MVP zu verbessern. Diese Gruppen ähneln in der Regel den folgenden:
 
 - **Experiment- oder Fokusgruppe:** Gruppierung von Kunden basierend auf ihrer Teilnahme an einem bestimmten Experiment, das dazu dient, Änderungen im Laufe der Zeit zu testen.
 - **Segment:** Gruppieren von Kunden nach der Größe des Unternehmens.
-- **Schlüsselindustrie:** Gruppieren von Kunden nach der *Schlüsselindustrie*, die Sie repräsentieren.
+- **Schlüsselindustrie:** Gruppieren von Kunden nach der _Schlüsselindustrie_, die Sie repräsentieren.
 - **Individuelle demografische Informationen:** Gruppierung basierend auf persönlichen demografischen Angaben wie Alter und physischer Standort.
 
 Diese Arten der Gruppierung helfen Ihnen beim Validieren von Lernmetriken über verschiedene Querschnitte der Kunden, die sich für eine Partnerschaft mit Ihnen während Ihrer Innovationsbemühungen entscheiden. Alle nachfolgenden Metriken sollten von einer definierbaren Kundengruppierung abgeleitet werden.

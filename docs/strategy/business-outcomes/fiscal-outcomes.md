@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 5950b94a6247864ef101e6e8c2040eee899a5bb4
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9087a61baaeffa2bb769899a04f55c3eb959f4ea
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433753"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218831"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>Beispiele für Finanzergebnisse
 
@@ -34,7 +34,7 @@ Im weiteren Verlauf dieses Artikels werden die oben genannten Finanzergebnisse i
 
 Die Cloud bietet die Möglichkeit, neue Produkte für Kunden anzubieten oder vorhandene Produkte auf neue Weise bereitzustellen. Viele Geschäftsleute sehen neue Umsatzquellen als eine innovative, unternehmerische und spannende Chance. Neue Einnahmequellen sind ebenfalls anfällig für Fehler und werden von vielen Unternehmen als hohes Risiko angesehen. Wenn umsatzbezogene Ergebnisse von der IT vorgeschlagen werden, wird es voraussichtlich zu Widerstand kommen. Um diesen Ergebnissen Glaubwürdigkeit zu verleihen, sollten Sie sich mit einem Geschäftsführer zusammentun, der sich bereits als Innovator positioniert hat. Durch die Überprüfung der Umsatzquelle in einer frühen Phase des Prozesses lassen sich Hindernisse von Seiten des Unternehmens vermeiden.
 
-- **Beispiel:** Ein Unternehmen verkauft seit mehr als 100 Jahren Bücher. Ein Mitarbeiter des Unternehmens erkennt, dass die Inhalte auf elektronischem Wege bereitgestellt werden können. Er entwickelt ein Gerät, das den direkten Download der gleichen Bücher ermöglicht und in der Buchhandlung verkauft werden kann. Durch das Gerät werden für Bücher neue Verkäufe in Höhe von X US-Dollar erzielt.
+- **Beispiel:** Ein Unternehmen verkauft seit mehr als 100 Jahren Bücher. Ein Mitarbeiter des Unternehmens erkennt, dass die Inhalte auf elektronischem Wege bereitgestellt werden können. Er entwickelt ein Gerät, das den direkten Download der gleichen Bücher ermöglicht und in der Buchhandlung verkauft werden kann. Durch das Gerät werden für Bücher neue Verkäufe in Höhe von _X US_-Dollar erzielt.
 
 ### <a name="revenue-increases"></a>Umsatzsteigerungen
 
@@ -56,15 +56,19 @@ Cloud Computing kann die Investitionskosten für Hardware und Software, das Einr
 - **Beispiel 2:** Eine Holdinggesellschaft hat vor Kurzem ein neues Unternehmen erworben. In den Übernahmebedingungen ist festgelegt, dass die neue Entität innerhalb von sechs Monaten aus den aktuellen Datencentern entfernt werden muss. Andernfalls muss die Holdinggesellschaft ein Bußgeld in Höhe von einer Millionen US-Dollar pro Monat zahlen. Das Verschieben der digitalen Ressourcen in die Cloud über eine Cloudmigration könnte eine schnelle Außerbetriebnahme der alten Ressourcen ermöglichen.
 - **Beispiel 3:** Ein Unternehmen, das Einkommensteuerberatung für Verbraucher anbietet, verzeichnet 70 Prozent seines Jahresumsatzes in den ersten drei Monaten des Jahrs. Während des restlichen Jahrs bleiben die erheblichen IT-Investitionen des Unternehmens relativ ungenutzt. Eine Cloudmigration könnte es der IT-Abteilung ermöglichen, die erforderliche Compute-/Hostingkapazität für diese drei Monate bereitzustellen. Während der verbleibenden neun Monate könnten die IaaS-Kosten durch Verringern des Computebedarfs erheblich reduziert werden.
 
+<!-- docsTest:ignore "Ryan Sorensen" "Director of Application Development and Enterprise Architecture" 1M -->
 <!-- cSpell:ignore Coverdell Coverdell's Sorensen -->
 
 ### <a name="example-coverdell"></a>Beispiel: Coverdell
 
-Coverdell modernisiert seine Infrastruktur und erzielt mit Azure rekordverdächtige Kosteneinsparungen. Die Entscheidung von Coverdell, in Azure zu investieren und sein Netzwerk aus Websites, Anwendungen, Daten und Infrastruktur in dieser Umgebung zu vereinen, führte zu höheren Kosteneinsparungen, als das Unternehmen jemals erwartet hätte. Durch die Migration zu einer reinen Azure-Umgebung entfielen 54.000 US-Dollar an monatlichen Kosten für Co-Location-Dienste. Allein durch die neue, vereinte Infrastruktur erwartet Coverdell in den nächsten zwei bis drei Jahren Einsparungen von etwa einer Million US-Dollar.
+Coverdell modernisiert seine Infrastruktur und erzielt mit Azure rekordverdächtige Kosteneinsparungen. Die Entscheidung von Coverdell, in Azure zu investieren und sein Netzwerk aus Websites, Anwendungen, Daten und Infrastruktur in dieser Umgebung zu vereinen, führte zu höheren Kosteneinsparungen, als das Unternehmen jemals erwartet hätte. Durch die Migration zu einer reinen Azure-Umgebung konnten 54.000 US-Dollar an monatlichen Kosten für Co-Location-Dienste eingespart werden. Allein durch die neue, vereinte Infrastruktur des Unternehmens erwartet Coverdell in den nächsten zwei bis drei Jahren Einsparungen von etwa einer Million US-Dollar.
 
-> „Der Zugang zum Azure-Technologiestapel ebnet den Weg für skalierbare, einfach zu implementierende und hoch verfügbare Lösungen, die kostengünstig sind. Dadurch können unsere Architekten die von ihnen bereitgestellten Lösungen deutlich kreativer gestalten.“  
-> Ryan Sorensen  
-> Director of Application Development and Enterprise Architecture  
+> „Der Zugang zum Azure-Technologiestapel ebnet den Weg für skalierbare, einfach zu implementierende und hoch verfügbare Lösungen, die kostengünstig sind. Dadurch können unsere Architekten die von ihnen bereitgestellten Lösungen deutlich kreativer gestalten.“
+>
+> Ryan Sorensen
+>
+> Director of Application Development and Enterprise Architecture
+>
 > Coverdell
 
 ### <a name="cost-avoidance"></a>Kostenvermeidung
@@ -73,7 +77,9 @@ Durch die Stilllegung eines Datencenters lassen sich auch zukünftige Aktualisie
 
 - **Beispiel:** Für das Rechenzentrum eines Unternehmens steht in sechs Monaten eine Verlängerung des Mietvertrags an. Das Datencenter ist seit acht Jahren in Betrieb. Vor vier Jahren hat das Unternehmen mehrere Millionen US-Dollar in die Aktualisierung und Virtualisierung aller Server investiert. Im nächsten Jahr sollen die Hardware und Software erneut aktualisiert werden. Durch Migrieren der Ressourcen in diesem Rechenzentrum im Rahmen einer Cloudmigration könnten Kosten vermieden werden, da die geplante Aktualisierung im prognostizierten Budget des nächsten Jahres wegfallen würde. Zudem könnte sie zu einer Kostensenkung führen, da die Mietkosten verringert oder entfallen würden.
 
-### <a name="capital-expenses-vs-operating-expenses"></a>Kapitalkosten und Betriebskosten
+<!-- docsTest:ignore "vs. Operating" -->
+
+### <a name="capital-expenses-vs-operating-expenses"></a>Kapitalkosten im Vergleich zu Betriebskosten
 
 Bevor Sie näher auf die Kostenergebnisse eingehen, ist das Verständnis der zwei primären Kostenoptionen wichtig: Kapitalkosten und Betriebskosten.
 
@@ -88,7 +94,7 @@ Mit den folgenden Begriffe werden die Unterschiede zwischen Kapital- und Betrieb
 
 Fast immer ist davon auszugehen, dass verschiedene Führungskräfte – einschließlich des CIO (Chief Information Officer) – darüber debattieren, wie das Kapital optimal genutzt werden sollte, um das Unternehmen in der gewünschten Richtung voranzubringen. Dem CIO ein Mittel an die Hand zu geben, umstrittene Kapitalkostengespräche in klare Zurechenbarkeit für Betriebskosten umzuwandeln, könnte an sich schon ein attraktives Ergebnis sein. In vielen Branchen suchen CFOs aktiv nach Möglichkeiten zur besseren Zuordnung der finanziellen Verantwortlichkeit zu den Kosten der verkauften Waren.
 
-Bevor Sie jedoch einen Transformationsvorschlag mit dieser Art von Überlegungen zu Kapital- im Vergleich zu Betriebskosten verbinden, ist es ratsam, sich mit Mitgliedern des CFO- oder CIO-Teams zu treffen, um festzustellen, welche Kostenstruktur das Unternehmen bevorzugt. In einigen Unternehmen ist die Verringerung von Kapitalkosten zugunsten von Betriebskosten ein höchst *unerwünschtes* Ergebnis. Wie zuvor erwähnt, ist dieser Ansatz mitunter bei Einzelhandels-, Holding- und Private Equity-Unternehmen der Fall, die viel Wert auf herkömmliche Anlagenrechnungsmodelle, aber wenig Wert auf intellektuelles Eigentum legen. Auch bei Unternehmen, die in der Vergangenheit negative Erfahrungen mit der Auslagerung von IT-Mitarbeitern oder anderen Funktionen gemacht haben, ist dies zu beobachten.
+Bevor Sie jedoch einen Transformationsvorschlag mit dieser Art von Überlegungen zu Kapital- im Vergleich zu Betriebskosten verbinden, ist es ratsam, sich mit Mitgliedern des CFO- oder CIO-Teams zu treffen, um festzustellen, welche Kostenstruktur das Unternehmen bevorzugt. In einigen Unternehmen ist die Verringerung von Kapitalkosten zugunsten von Betriebskosten ein höchst unerwünschtes Ergebnis. Wie zuvor erwähnt, ist dieser Ansatz mitunter bei Einzelhandels-, Holding- und Private Equity-Unternehmen der Fall, die viel Wert auf herkömmliche Anlagenrechnungsmodelle, aber wenig Wert auf intellektuelles Eigentum legen. Auch bei Unternehmen, die in der Vergangenheit negative Erfahrungen mit der Auslagerung von IT-Mitarbeitern oder anderen Funktionen gemacht haben, ist dies zu beobachten.
 
 Ist ein Betriebskostenmodell gewünscht, kann das folgende Beispiel ein tragfähiges Geschäftsergebnis sein:
 

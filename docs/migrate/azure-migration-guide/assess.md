@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: bbe61dfa9962d194ddb994b6753c2cbd07a9997f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 23ce74def1dd0d5efc77b448b6fe3303a890b994
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120731"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214564"
 ---
+<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
+
 # <a name="assess-workloads-and-refine-plans"></a>Bewerten von Workloads und Optimieren von Plänen
 
 Die Ressourcen in diesem Handbuch helfen Ihnen, die einzelnen Workloads zu bewerten, Annahmen über die Eignung der einzelnen Workloads für die Migration zu hinterfragen und anschließend Architekturentscheidungen zu Migrationsoptionen zu treffen.
@@ -102,7 +104,7 @@ Die obigen Links deuten darauf hin, dass Annahmen akzeptabel sind und während d
 
 Zwei gleich wichtige Schritte sind erforderlich, um die [inkrementelle Rationalisierung](../../digital-estate/rationalize.md#incremental-rationalization) erfolgreich bereitzustellen. Beide Schritte erfordern Daten und Erkenntnisse zur Umgebung. Bei jedem Ansatz werden jedoch die Zeit und die Detailgranularität berücksichtigt, die bei einer erfolgreichen Migration erforderlich sind.
 
-- **[Releaseplanung – Zehn Anwendungen](../../digital-estate/rationalize.md#release-planning):** Während der anfänglichen Rationalisierung und der Releaseplanung kommt nur eine der [fünf Phasen der Rationalisierung](../../digital-estate/5-rs-of-rationalization.md) zum Einsatz. Schätzen und planen Sie basierend auf der Rationalisierungsoption, die am besten mit den im [Dokument zur Cloudeinführungsstrategie](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) definierten Beweggründen übereinstimmt.
+- [Releaseplanung – Zehn Anwendungen](../../digital-estate/rationalize.md#release-planning): Während der anfänglichen Rationalisierung und der Releaseplanung kommt nur eine der [fünf Phasen der Rationalisierung](../../digital-estate/5-rs-of-rationalization.md) zum Einsatz. Schätzen und planen Sie basierend auf der Rationalisierungsoption, die am besten mit den im [Dokument zur Cloudeinführungsstrategie](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) definierten Beweggründen übereinstimmt.
 
 - **Ausführliche Bewertung der einzelnen Workloads:** Die mit der Releaseplanung „Zehn Anwendungen“ verbundenen Annahmen sind annehmbar, um einen Plan zu erstellen. Diese Annahmen können jedoch signifikante Probleme verursachen, wenn sie vor der Migration nicht ausgewertet werden.
 
@@ -112,7 +114,7 @@ Zwei gleich wichtige Schritte sind erforderlich, um die [inkrementelle Rationali
 
 Setzen Sie vor der Migration diese Daten zusammen mit den Gesprächen zur Ermittlung mit dem Produktbesitzer, den Entwicklungsteams, den Administratoren und anderen Beteiligten ein, um die Durchführbarkeit der Migration einer spezifischen Workload auszuwerten. Verwenden Sie diese Ermittlung, um grundlegende Annahmen zu dieser Workload zu hinterfragen. Wenn die Ergebnisse den Migrations- oder Einführungsplan ändern, aktualisieren Sie den Plan entsprechend.
 
-Der erste Schritt beim Hinterfragen dieser Annahmen ist eine [Überprüfung aller fünf Phasen](../../digital-estate/rationalize.md).
+Der erste Schritt beim Hinterfragen dieser Annahmen ist eine [Überprüfung aller fünf Phasen der Rationalisierung](../../digital-estate/rationalize.md).
 
     - Funktioniert der angenommene Rationalisierungsansatz für diese Workload? Ist er der beste Ansatz?
     - Wirkt sich eine der [physikalischen Grundlagen der Replikation](../migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication) auf die Migration dieser Workload aus?

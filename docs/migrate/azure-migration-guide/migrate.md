@@ -9,18 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: eca885e84e0f3a29a0d3417c550de78d7bdf74fc
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a4e26787fb2125dd2784698b06171e898dd7ac55
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396019"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214479"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
 # <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>Bereitstellen von Workloads und Assets (Infrastruktur, Apps und Daten)
 
-In dieser Phase verwenden Sie die Ausgabe der Bewertungsphase, um die Migration der Umgebung einzuleiten. Dieser Leitfaden hilft Ihnen, die geeigneten Tools zu identifizieren, um den Zustand "Fertig" zu erreichen, einschließlich nativer Tools, Tools von Drittanbietern und Projektmanagementtools.
+In dieser Phase verwenden Sie die Ausgabe der Bewertungsphase, um die Migration der Umgebung einzuleiten. Dieser Leitfaden hilft Ihnen, die geeigneten Tools zu identifizieren, um den Zustand „Abgeschlossen“ zu erreichen, einschließlich nativer Tools, Tools von Drittanbietern und Projektmanagementtools.
 
 <!-- markdownlint-disable MD025 -->
 
@@ -270,7 +270,7 @@ Dies sind nicht die einzigen verfügbaren Tools. Viele weitere Tools von Drittan
 
 Die Migration in Cloudtechnologien bietet eine großartige Gelegenheit, Ihre Organisation für DevOps und CI/CD einzurichten. Selbst wenn Ihre Organisation nur Infrastruktur verwaltet, können Sie, wenn Sie beginnen, Ihre Infrastruktur als Code zu verwalten und die Branchenmuster und -praktiken für DevOps zu verwenden, Ihre Agilität durch CI/CD-Pipelines erhöhen und sich so schneller an Änderungs-, Wachstums-, Release- und sogar Wiederherstellungszenarien anpassen.
 
-Azure DevOps bietet alle erforderlichen Funktionen und die Integration mit Azure, lokalen Umgebungen und sogar anderen Clouds. Weitere Informationen finden Sie unter [Azure DevOps](https://azure.microsoft.com/services/devops). Ein angeleitetes Training finden Sie unter [CI- und CD mit Azure DevOps – Schnellstart](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html).
+Azure DevOps bietet alle erforderlichen Funktionen und die Integration mit Azure, lokalen Umgebungen und sogar anderen Clouds. Weitere Informationen finden Sie unter [Azure DevOps](https://azure.microsoft.com/services/devops). Ein angeleitetes Training finden Sie unter [CI/CD mit Azure DevOps – Schnellstart](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html).
 
 ## <a name="suggested-skills"></a>Empfohlene Qualifikationen
 
@@ -282,4 +282,4 @@ Hier sehen Sie ein Beispiel für einen maßgeschneiderten Lernpfad auf Microsoft
 
 # <a name="cost-management"></a>[Kostenmanagement](#tab/ManageCost)
 
-Bei der Migration von Ressourcen in Ihre Cloudumgebung ist es wichtig, eine regelmäßige Kostenanalyse durchzuführen. Dadurch können Sie unerwartete Nutzungsgebühren vermeiden, denn der Migrationsprozess stellt möglicherweise zusätzliche Nutzungsanforderungen an Ihre Dienste. Sie können zudem die Größe der Ressourcen nach Bedarf anpassen, um Kosten und Workload auszugleichen (weitere Details finden Sie im Abschnitt **[Optimierung und Transformation](./optimize-and-transform.md)** ).
+Bei der Migration von Ressourcen in Ihre Cloudumgebung ist es wichtig, eine regelmäßige Kostenanalyse durchzuführen. Dadurch können Sie unerwartete Nutzungsgebühren vermeiden, denn der Migrationsprozess stellt möglicherweise zusätzliche Nutzungsanforderungen an Ihre Dienste. Sie können zudem die Größe der Ressourcen nach Bedarf anpassen, um Kosten und Workload auszugleichen (weitere Details finden Sie im Abschnitt [Optimierung und Transformation](./optimize-and-transform.md)**).

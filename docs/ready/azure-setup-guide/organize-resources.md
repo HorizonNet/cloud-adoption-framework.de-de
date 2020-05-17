@@ -1,6 +1,6 @@
 ---
 title: Effizientes Organisieren von Azure-Ressourcen
-description: Machen Sie sich mit den bewährten Methoden vertraut, mit denen Sie Ihre Azure-Ressourcen so effizient organisieren können, dass eine einfache Verwaltung möglich ist.
+description: Informationen zu bewährten Methoden zur effektiven Organisation Ihrer Azure-Ressourcen, um die Ressourcenverwaltung zu vereinfachen.
 author: laraaleite
 ms.author: kfollis
 ms.date: 04/09/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: b47f0e3cf6c69bbdf3d5c8260ad4094312e1bea2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d3d0afed921d11b16b1d33de311df1144aea6d4a
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997553"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221942"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
@@ -146,9 +146,9 @@ Die folgende Tabelle enthält Namensmuster für einige Beispieltypen von Azure-R
 
 | Entität | `Scope` | Länge | Schreibweise | Gültige Zeichen | Vorgeschlagenes Muster | Beispiel |
 | --- | --- | --- | --- | --- | --- | --- |
-|Resource group |Subscription |1-90 |Groß-/Kleinschreibung nicht beachten |Alphanumerisch, Unterstrich, Klammern, Bindestrich, Punkt (außer am Ende) und Unicode-Zeichen |`<service short name>-<environment>-rg` |`profx-prod-rg` |
-|Verfügbarkeitsgruppe |Resource group |1-80 |Groß-/Kleinschreibung nicht beachten |Alphanumerisch, Unterstrich und Bindestrich |`<service-short-name>-<context>-as` |`profx-sql-as` |
-|Tag |Zugeordnete Entität |512 (Name), 256 (Wert) |Groß-/Kleinschreibung nicht beachten |Alphanumerisch |`"key" : "value"` |`"department" : "Central IT"` |
+| Resource group | Subscription | 1-90 | Groß-/Kleinschreibung nicht beachten | Alphanumerisch, Unterstrich, Klammern, Bindestrich, Punkt (außer am Ende) und Unicode-Zeichen | `<service short name>-<environment>-rg` | `profx-prod-rg` |
+| Verfügbarkeitsgruppe | Resource group | 1-80 | Groß-/Kleinschreibung nicht beachten | Alphanumerisch, Unterstrich und Bindestrich | `<service-short-name>-<context>-as` | `profx-sql-as` |
+| Tag | Zugeordnete Entität | 512 (Name), 256 (Wert) | Groß-/Kleinschreibung nicht beachten | Alphanumerisch | `"key" : "value"` | `"department" : "Central IT"` |
 
 # <a name="resource-tags"></a>[Ressourcentags](#tab/ResourceTags)
 
@@ -164,7 +164,7 @@ Sie können Tags auch für viele andere Dinge verwenden. Sie werden häufig für
 
 Jede Ressource oder Ressourcengruppe kann maximal 50 Tagname-Wert-Paare aufweisen. Diese Einschränkung gilt nur für Tags, die direkt auf die Ressourcengruppe oder die Ressource angewendet werden.
 
-Weitere Empfehlungen und Beispiele zum Tagging finden Sie in der [Anleitung zum Tagging](../azure-best-practices/naming-and-tagging.md) für das Framework für die Cloudeinführung (Cloud Adoption Framework).
+Weitere Empfehlungen und Beispiele zur Kennzeichnung finden Sie unter [Empfohlene Namens- und Kennzeichnungskonventionen](../azure-best-practices/naming-and-tagging.md) im Cloud Adoption Framework.
 
 ::: zone target="docs"
 
@@ -172,7 +172,7 @@ Weitere Empfehlungen und Beispiele zum Tagging finden Sie in der [Anleitung zum 
 
 So wenden Sie ein Tag auf eine Ressourcengruppe an:
 
-1. Navigieren Sie zu [Ressourcengruppen](https://ms.portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups).
+1. Navigieren Sie zu [Ressourcengruppen](https://portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups).
 1. Wählen Sie eine Ressourcengruppe aus.
 1. Wählen Sie **Tags zuweisen** aus.
 1. Geben Sie einen neuen Namen und Wert ein, oder verwenden Sie die Dropdownliste, um einen bereits vorhandenen Namen und Wert auszuwählen.

@@ -7,13 +7,14 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 381359391d7fc39281d49d202f66edf5691be293
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: f241899ff97b3ded1e5c2c82c4b0c6724843a411
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433798"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218967"
 ---
+<!-- docsTest:ignore "Team 1" "Team 2" -->
 <!-- cSpell:ignore CSAT -->
 
 # <a name="balance-the-portfolio"></a>Ausgewogenheit des Portfolios
@@ -22,18 +23,20 @@ Die Cloudeinführung ist ein Portfolioverwaltungsschritt, der raffiniert als tec
 
 ## <a name="general-scope-expansion"></a>Allgemeine Umfangserweiterung
 
-Die Ausgewogenheit des Portfolios ist ein strategischer Aspekt. Daher ist der in diesem Artikel vorgestellte Ansatz gleichermaßen strategisch. Um die Strategie auf datengesteuerte Entscheidungen zu gründen, wird in diesem Artikel vorausgesetzt, dass der Leser die vorhandenen [digitalen Ressourcen](../digital-estate/index.md) ausgewertet hat (oder die Auswertung gerade durchführt). Das Ziel dieses Ansatzes ist, die Evaluierung der Workloads zu unterstützen, um die Ausgewogenheit des Portfolios durch qualitative Fragen und Portfoliooptimierung sicherzustellen.
+Die Ausgewogenheit des Portfolios ist ein strategischer Aspekt. Daher ist der in diesem Artikel vorgestellte Ansatz gleichermaßen strategisch. Um die Strategie auf datengesteuerte Entscheidungen zu gründen, wird in diesem Artikel vorausgesetzt, dass der Leser die vorhandenen [digitalen Ressourcen](../digital-estate/index.md) ausgewertet oder mit diesem Prozess begonnen hat. Das Ziel dieses Ansatzes ist, die Evaluierung der Workloads zu unterstützen, um die Ausgewogenheit des Portfolios durch qualitative Fragen und Portfoliooptimierung sicherzustellen.
+
+<!-- docsTest:ignore 2M months years datacenters improvement TODO -->
 
 ### <a name="document-business-outcomes"></a>Dokumentieren von Geschäftsergebnissen
 
 Bevor die Ausgewogenheit des Portfolios hergestellt wird, müssen die Geschäftsergebnisse, die den Cloudmigrationsaufwand bestimmen, dokumentiert und freigegeben werden. Die folgende Tabelle soll das Dokumentieren und Freigeben von Geschäftsergebnissen unterstützen. Es ist wichtig zu beachten, dass die meisten Unternehmen mehrere Ergebnisse gleichzeitig verfolgen. Ziel dieser Übung ist, die Ergebnisse zu verdeutlichen, die unmittelbar mit dem Cloudmigrationsaufwand in Zusammenhang stehen:
 
-|Ergebnis  |Gemessen an  |Zielsetzung  |Zeitrahmen  |Priorität für diesen Aufwand  |
+| Ergebnis  | Gemessen an  | Zielsetzung  | Zeitrahmen  | Priorität für diesen Aufwand  |
 |---------|---------|---------|---------|---------|
-|Reduzieren der IT-Kosten     |Rechenzentrumsbudget         |Reduzieren um 2 M USD         |12 Monate         |1         |
-|Ausstieg aus Rechenzentrum     |Ausstieg aus Rechenzentren         |2 Rechenzentren         |6 Monate         |2         |
-|Erhöhen der Unternehmensflexibilität     |Verbessern der Markteinführungszeit  |Reduzieren der Bereitstellungszeit um sechs Monate         |2 Jahre         |3        |
-|Verbessern der Benutzerfreundlichkeit     |Kundenzufriedenheit (CSAT)         |Verbesserung um 10%         |12 Monate         |4         |
+| Reduzieren der IT-Kosten     | Rechenzentrumsbudget         | Reduzieren um 2 M USD     | 12 Monate         | 1         |
+| Ausstieg aus Rechenzentrum     | Ausstieg aus Rechenzentren         | 2 Rechenzentren         | 6 Monate         | 2         |
+| Erhöhen der Unternehmensflexibilität     | Verbessern der Markteinführungszeit  | Reduzieren der Bereitstellungszeit um sechs Monate         | 2 Jahre         | 3        |
+| Verbessern der Benutzerfreundlichkeit     | Kundenzufriedenheit (CSAT)         | Verbesserung um 10%         | 12 Monate         | 4         |
 
 > [!IMPORTANT]
 > Die oben stehende Tabelle ist ein fiktives Beispiel und sollte nicht verwendet werden, um Prioritäten festlegen. In vielen Fällen wird diese Tabelle unter Umständen als Antimuster betrachtet, da Kosteneinsparungen Priorität vor Kundenfreundlichkeit haben.
@@ -46,7 +49,7 @@ Die Anleitung in Bezug auf [inkrementelle Rationalisierung der digitalen Ressour
 
 ### <a name="importance-of-sunset-and-retire-decisions"></a>Wichtigkeit von Entscheidungen zum Außerkraftsetzen
 
-In der Tabelle im obigen Abschnitt [Dokumentieren von Geschäftsergebnissen](#document-business-outcomes) fehlt ein entscheidendes Ergebnis, das das höchste Ziel der IT-Kostenreduzierung unterstützen würde. Wenn die IT-Kostenreduzierung an einer beliebigen Stelle in der Liste der Geschäftsergebnisse rangiert, ist es wichtig, das Potenzial der Außerkraftsetzung oder Deaktivierung von Workloads zu berücksichtigen. In einigen Szenarien können Kosteneinsparungen erzielt werden, indem Workloads, die keine kurzfristige Rendite garantieren, NICHT migriert werden. Einige Kunden berichteten von Kosteneinsparungen, die mehr als 20% der Kostenreduzierungen insgesamt ausmachen, durch Außerkraftsetzung von nicht ausgelasteten Workloads.
+In der Tabelle im obigen Abschnitt [Dokumentieren von Geschäftsergebnissen](#document-business-outcomes) fehlt ein entscheidendes Ergebnis, das das höchste Ziel der IT-Kostenreduzierung unterstützen würde. Wenn die IT-Kostenreduzierung an einer beliebigen Stelle in der Liste der Geschäftsergebnisse rangiert, ist es wichtig, das Potenzial der Außerkraftsetzung oder Deaktivierung von Workloads zu berücksichtigen. In einigen Szenarien können Kosteneinsparungen erzielt werden, indem Workloads, die keine kurzfristige Rendite garantieren, nicht migriert werden. Einige Kunden berichteten von Kosteneinsparungen, die mehr als 20% der Kostenreduzierungen insgesamt ausmachen, durch Außerkraftsetzung von nicht ausgelasteten Workloads.
 
 Im Interesse eines ausgewogenen Portfolios und um Entscheidungen zur Außerkraftsetzung und Deaktivierung besser widerzuspiegeln, werden das Cloudstrategieteam und das Cloudeinführungsteam aufgefordert, zu jeder Workload im Bewertungs- und Migrationsprozess folgende Fragen zu stellen:
 
@@ -65,7 +68,7 @@ Wenn die Antwort auf eine dieser Fragen „Nein“ ist, kann es ratsam sein, ein
 
 ## <a name="adopt-process-changes"></a>Einführen von Prozessänderungen
 
-Zur Erzielung der Ausgewogenheit des Portfolios ist eine zusätzliche qualitative Analyse während des Einführung erforderlich. Hierdurch wird die Rationalisierung des Portfolios vereinfacht.
+Die Ausgewogenheit des Portfolios erfordert eine zusätzliche qualitative Analyse während der Einführungsphase, was die einfache Portfoliorationalisierung unterstützt.
 
 Anhand der Daten aus der Tabelle im obigen Abschnitt [Dokumentieren von Geschäftsergebnissen](#document-business-outcomes) besteht ein gewisses Risiko, dass das Portfolio zu weit zu einem migrationsfokussierten Ausführungsmodell tendiert. Wenn Benutzerfreundlichkeit oberste Priorität ist, wäre ein innovationslastiges Portfolio wahrscheinlicher. Keines von beiden ist falsch oder richtig, aber eine zu ausgeprägte Tendenz in eine Richtung führt in der Regel zu einer abnehmenden Rendite, unnötiger Steigerung der Komplexität und verlängert die Ausführungszeit relativ zum Cloudeinführungsaufwand.
 
@@ -100,7 +103,7 @@ Diese unterschiedlichen Aktivitäten sollten auf zwei oder mehr Cloudeinführung
 
 **Zuweisen eines neuen Hosts:** Zum Zuweisen eines neuen Hosts müssen Teammitglieder infrastrukturkonzentrierte Änderungen implementieren. In der Regel werden mithilfe eines Tools wie Azure Site Recovery VMs oder andere Ressourcen zu Azure migriert. Für diese Arbeit sind Rechenzentrumsadministratoren oder IT-Implementierer gut geeignet. Das Cloudmigrationsteam ist so gut strukturiert, dass es diese Aufgabe auf hohem Niveau ausführt. Dies ist in den meisten Szenarien der schnellste Ansatz zum Migrieren vorhandener Ressourcen.
 
-**Refactoring:** Beim Umgestalten müssen Teammitglieder Quellcode ändern, die Architektur einer Anwendung ändern oder neue Clouddienste einführen. In der Regel würden für diese Aktivitäten Entwicklungstools wie Visual Studio und Bereitstellungspipelinetools wie Azure DevOps verwendet, um modernisierte Anwendungen erneut in Azure bereitzustellen. Für diese Arbeit sind Anwendungsentwicklungsrollen oder DevOps-Pipelineentwicklungsrollen gut geeignet. Cloudinnovationsteams sind für diese Aufgabe am besten strukturiert. Es kann länger dauern, bei diesem Ansatz vorhandene Ressourcen mit Cloudressourcen zu ersetzen, aber die Apps können cloudnative Funktionen nutzen.
+**Refactoring:** Beim Umgestalten müssen Teammitglieder Quellcode ändern, die Architektur einer Anwendung ändern oder neue Clouddienste einführen. In der Regel würden für diese Aktivitäten Entwicklungstools wie Visual Studio und Bereitstellungspipelinetools wie Azure DevOps verwendet, um modernisierte Anwendungen erneut in Azure bereitzustellen. Für diese Arbeit sind Anwendungsentwicklungsrollen oder DevOps-Pipelineentwicklungsrollen gut geeignet. Das Cloudinnovationsteam ist für diese Aufgabe am besten strukturiert. Es kann länger dauern, bei diesem Ansatz vorhandene Ressourcen mit Cloudressourcen zu ersetzen, aber die Apps können cloudnative Funktionen nutzen.
 
 **Geringfügige Umgestaltung:** Einige Anwendungen können mit geringfügiger Umgestaltung auf Daten- oder Anwendungsebene aktualisiert werden. Dabei müssen Teammitglieder Daten für cloudbasierte Datenplattformen bereitstellen oder geringfügige Konfigurationsänderungen an der Anwendung vornehmen. Dies erfordert möglicherweise gewisse Unterstützung von fachlichen Ansprechpartnern für Daten- oder Anwendungsentwicklung. Allerdings ähnelt diese Arbeit der, die IT-Implementierer durchführen, wenn sie Drittanbieter-Apps bereitstellen. Diese Arbeit kann problemlos vom Cloudmigrationsteam oder Cloudstrategieteam ausgeführt werden. Diese Aktivität ist zwar nicht annähernd so schnell wie eine Migration mit Zuweisen eines neuen Hosts, benötigt jedoch weniger Zeit als Umgestaltungsaktivitäten.
 

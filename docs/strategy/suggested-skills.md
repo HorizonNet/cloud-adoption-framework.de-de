@@ -1,5 +1,5 @@
 ---
-title: Pfad für die Qualifikationsbereitschaft während der Planung
+title: Pfad für die Qualifikationsbereitschaft während der Phase „Planung“ einer Migrationsreise
 description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um sich mit dem Pfad für die Qualifikationsbereitschaft während der Planungsphase der Migration vertraut zu machen.
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 21a9c395f8a60c7c73c7e39f181061de816b9c47
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 38b5ebc82052869294eb7ad49e50a1d54b5a696f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997501"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214955"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>Pfad für die Qualifikationsbereitschaft während der Phase „Planung“ einer Migrationsreise
 
@@ -43,8 +43,8 @@ Die Rechtfertigung der Investition für die Einführung der Cloud kann eine tief
 
 Indem Sie die gewünschten Fallstudie auf die aktuellen und zukünftigen digitalen Ressourcen abstimmen, können Sie Ihre Fallstudie verfeinern. Diese Artikel können die Entwicklung einer Rationalisierung der digitalen Ressourcen lenken:
 
-- [Inkrementelle Rationalisierung](../digital-estate/rationalize.md). Ein flexibler Rationalisierungsansatz, der spät gebundene technische Entscheidungen richtig integriert.
-- [Die fünf Phasen der Rationalisierung](../digital-estate/5-rs-of-rationalization.md). Grundlegendes zu den verschiedenen Rationalisierungsoptionen.
+- [Inkrementelle Rationalisierung](../digital-estate/rationalize.md): Ein flexibler Rationalisierungsansatz, der spät gebundene technische Entscheidungen richtig integriert.
+- [Die fünf Phasen der Rationalisierung](../digital-estate/5-rs-of-rationalization.md): Grundlegendes zu den verschiedenen Rationalisierungsoptionen.
 
 ## <a name="create-a-migration-backlog-technical-plan"></a>Erstellen eines Migrationsrückstands (technischer Plan)
 
@@ -86,9 +86,9 @@ Microsoft und seine Partner bieten eine Vielzahl von Optionen für alle Zielgrup
 
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
-Microsoft Learn ist ein neuer Lernansatz. Die Bereitschaft zu den neuen Qualifikationen und Aufgaben, die mit der Cloudeinführung verbunden sind, entsteht nicht problemlos. Microsoft Learn bietet einen lohnenderen Ansatz für praktisches Lernen, der Ihnen hilft, Ihre Ziele schneller zu erreichen. Punkte sammeln, zu höheren Stufen aufsteigen und mehr erreichen!
+Microsoft Learn ist ein neuer Lernansatz. Die Bereitschaft zu den neuen Qualifikationen und Aufgaben, die mit der Cloudeinführung verbunden sind, entsteht nicht problemlos. Microsoft Learn bietet einen lohnenderen Ansatz für praktisches Lernen, der Ihnen hilft, Ihre Ziele schneller zu erreichen. Punkte sammeln, zu höheren Stufen aufsteigen und mehr erreichen.
 
-Hier ist ein Beispiel für einen maßgeschneiderten Lernpfad, der auf den Strategieteil des Cloud Adoption Framework abgestimmt ist.
+Hier ist ein Beispiel für einen maßgeschneiderten Lernpfad, der auf die Strategiemethodik im Cloud Adoption Framework abgestimmt ist.
 
 [Lernen Sie den Geschäftswert von Microsoft Azure kennen](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure): Diese Lernerfahrung zeigt Ihnen zunächst, wie die digitale Transformation und die Leistungsfähigkeit der Cloud Ihr Unternehmen verändern können. In diesem Artikel erfahren Sie, wie Microsoft Azure Cloud Services Ihr Unternehmen auf einer vertrauenswürdigen Cloudplattform unterstützen kann. Abschließend wird gezeigt, wie Sie diesen Weg für Ihr Unternehmen verwirklichen können.
 

@@ -8,15 +8,13 @@ ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d984808a6389b38a53be4b07b2e6a984e5b30227
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: bc5263b1f9dfcbdb0d5c14e79e5de976fdd59818
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81122071"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221806"
 ---
-<!-- cSpell:ignore CAF -->
-
 # <a name="refactor-landing-zones"></a>Umgestalten von Zielzonen
 
 Eine Zielzone ist eine **mittels Code vorab bereitgestellte** Umgebung zum Hosten Ihrer Workloads. Da die Infrastruktur der Zielzone im Code definiert ist, kann sie ähnlich wie jede andere Codebasis umgestaltet werden. Refactoring ist der Prozess der Änderung oder Umstrukturierung des Quellcodes, um die Ausgabe dieses Codes zu optimieren, ohne seinen Zweck oder seine zentrale Funktion zu ändern.
@@ -33,7 +31,7 @@ Die beiden primären Hindernisse sind in einer Überzeugung verwurzelt: Die Clou
 
 ### <a name="blocker-acting-too-soon"></a>Hindernis: Zu frühes Handeln
 
-Es bedurfte Jahre und erheblicher Anstrengungen, um den aktuellen Stand hinsichtlich Sicherheit, Governance und Betrieb im derzeitigen Rechenzentrum zu erreichen. Außerdem waren Beobachtungen, Lernprozesse und Anpassungen erforderlich, um den eindeutigen Einschränkungen dieser Umgebung zu entsprechen. Das Replizieren derselben Verfahren und Konfigurationen wird einige Zeit in Anspruch nehmen. Das Erreichen einer 100%igen Featureparität kann auch zu einer Umgebung führen, die in der Cloud unterdurchschnittlich leistungsfähig ist. Dieser Paritätsansatz führt außerdem häufig zu erheblichen ungeplanten Ausgabenüberschreitungen in der Cloudumgebung. Es wird dringend empfohlen, dass die Kunden nicht versuchen, aktuelle Zustandsanforderungen auf eine zukünftige Zustandsumgebung als Tor zu einer frühen Phase anzuwenden. Ein solches Modell erweist sich selten als profitabel.
+Es bedurfte Jahre und erheblicher Anstrengungen, um den aktuellen Stand hinsichtlich Sicherheit, Governance und Betrieb im derzeitigen Rechenzentrum zu erreichen. Außerdem waren Beobachtungen, Lernprozesse und Anpassungen erforderlich, um den eindeutigen Einschränkungen dieser Umgebung zu entsprechen. Das Replizieren derselben Verfahren und Konfigurationen wird einige Zeit in Anspruch nehmen. Das Erreichen einer 100%igen Featureparität kann auch zu einer Umgebung führen, die in der Cloud unterdurchschnittlich leistungsfähig ist. Dieser Paritätsansatz führt außerdem häufig zu erheblichen ungeplanten Ausgabenüberschreitungen in der Cloudumgebung. Versuchen Sie nicht, die aktuellen Zustandsanforderungen auf eine zukünftige Zustandsumgebung als eine Art „Tor zu einer frühen Phase“ anzuwenden. Ein solcher Ansatz erweist sich selten als profitabel.
 
 ![Allgemeines Hindernis: Zu frühes Handeln](../../_images/ready/blocker-act-too-soon.png)
 
@@ -62,7 +60,7 @@ Das Konzept des Refactoring einer Zielzone ist in der Theorie einfach, erfordert
 
 ## <a name="development-approach"></a>Entwicklungsansatz
 
-Der Vorteil eines auf Refactoring basierenden Ansatzes ist die Möglichkeit, parallele Iterationspfade für die Entwicklung zu erzeugen. Die Abbildung unten zeigt ein Beispiel für zwei parallele Iterationspfade: Cloudeinführung und Cloudplattform. Beide schreiten in ihrem eigenen Tempo voran, wobei ein minimales Risiko besteht, zum Hindernis für den täglichen Aufwand beider Teams zu werden. Die Anpassung an den Einführungsplan und die Schutzmaßnahmen für das Refactoring schaffen eine Reihe von Vereinbarungen hinsichtlich der Meilensteine, die klare zukünftige Zustandsabhängigkeiten bereitstellen.
+Der Vorteil eines auf Refactoring basierenden Ansatzes ist die Möglichkeit, parallele Iterationspfade für die Entwicklung zu erzeugen. Die folgende Abbildung zeigt ein Beispiel für zwei parallele Iterationspfade: Cloudeinführung und Cloudplattform. Beide schreiten in ihrem eigenen Tempo voran, wobei ein minimales Risiko besteht, zum Hindernis für den täglichen Aufwand beider Teams zu werden. Die Anpassung an den Einführungsplan und die Schutzmaßnahmen für das Refactoring schaffen eine Reihe von Vereinbarungen hinsichtlich der Meilensteine, die klare zukünftige Zustandsabhängigkeiten bereitstellen.
 
 ![Parallele Iteration der Zielzone](../../_images/ready/iterations.png)
 

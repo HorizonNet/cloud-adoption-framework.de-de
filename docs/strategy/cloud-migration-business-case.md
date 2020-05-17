@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 9ef3c108d330cd52b470c590a48f79c65502a7e6
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: f746b00773dc4a9fd3a6dc0fe38a8a0e56d94fcc
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80431639"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222911"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>Erstellen einer geschäftlichen Begründung für die Cloudmigration
 
@@ -21,19 +21,29 @@ Bei Cloudmigrationen können mit Maßnahmen zur Cloudtransformation frühzeitig 
 
 ## <a name="dispelling-cloud-migration-myths"></a>Ausräumen von Mythen zur Cloudmigration
 
-**Mythos: Die Cloud ist immer günstiger.** Es herrscht allgemein die Auffassung, dass der Betrieb eines Rechenzentrums in der Cloud immer kostengünstiger als der lokale Betrieb ist. Obwohl diese Annahme im allgemeinen zutreffen kann, ist dies nicht immer der Fall. Manchmal sind die Betriebskosten der Cloud höher. Diese höheren Kosten sind auf unzureichende Kostengovernance, falsch ausgerichtete Systemarchitekturen, Prozessduplizierung, ungewöhnliche Systemkonfigurationen oder höhere Personalkosten zurückzuführen. Glücklicherweise können Sie viele dieser Probleme beheben, um frühzeitig eine Rendite zu erzielen. Die Anleitung unter [Erstellen der geschäftlichen Begründung](#build-the-business-justification) enthält Informationen dazu, wie Sie diese Abstimmungsfehler erkennen und vermeiden können. Es kann auch hilfreich sein, wenn Sie sich die hier angegebenen weiteren Informationen zur Ausräumung von Mythen durchlesen.
+### <a name="myth-the-cloud-is-always-cheaper"></a>Mythos: Die Cloud ist immer günstiger
 
-**Mythos: Alles sollte in die Cloud verlagert werden.** Es gibt einige geschäftliche Faktoren, die dazu führen können, dass Sie eine Hybridlösung wählen. Es ist ratsam, vor der Fertigstellung eines Geschäftsmodells zunächst eine erste quantitative Analyse durchzuführen. Dies ist in den [Artikeln zu digitalen Ressourcen](../digital-estate/5-rs-of-rationalization.md) beschrieben. Weitere Informationen zu den einzelnen quantitativen Faktoren der Rationalisierung finden Sie unter [Die fünf R der Rationalisierung](../digital-estate/5-rs-of-rationalization.md). Bei beiden Ansätzen werden einfach zu beschaffende Bestandsdaten und eine kurze quantitative Analyse verwendet, um Workloads oder Anwendungen zu identifizieren, die zu höheren Kosten in der Cloud führen können. Mit diesen Ansätzen können auch Abhängigkeiten oder Datenverkehrsmuster identifiziert werden, für die eine Hybridlösung erforderlich ist.
+Es herrscht allgemein die Auffassung, dass der Betrieb eines Rechenzentrums in der Cloud immer kostengünstiger als der lokale Betrieb ist. Obwohl diese Annahme im allgemeinen zutreffen kann, ist dies nicht immer der Fall. Manchmal sind die Betriebskosten der Cloud höher. Diese höheren Kosten sind auf unzureichende Kostengovernance, falsch ausgerichtete Systemarchitekturen, Prozessduplizierung, ungewöhnliche Systemkonfigurationen oder höhere Personalkosten zurückzuführen. Glücklicherweise können Sie viele dieser Probleme beheben, um frühzeitig eine Rendite zu erzielen. Die Anleitung unter [Erstellen der geschäftlichen Begründung](#build-the-business-justification) enthält Informationen dazu, wie Sie diese Abstimmungsfehler erkennen und vermeiden können. Es kann auch hilfreich sein, wenn Sie sich die hier angegebenen weiteren Informationen zur Ausräumung von Mythen durchlesen.
 
-**Mythos: Durch die Spiegelung meiner lokalen Umgebung kann ich in der Cloud Kosten sparen.** Es kommt vor, dass Unternehmen beim Planen der digitalen Ressourcen ungenutzte Kapazität ermitteln, die mehr als 50% der bereitgestellten Umgebung ausmacht. Wenn Ressourcen in der Cloud bereitgestellt werden, um die derzeitige Bereitstellung widerzuspiegeln, lassen sich Kosteneinsparungen nur schwer realisieren. Erwägen Sie, die Größe der bereitgestellten Ressourcen zu verringern, um eine Anpassung an die Nutzungsmuster zu erzielen (anstelle der Bereitstellungsmuster).
+### <a name="myth-everything-should-go-into-the-cloud"></a>Mythos: Alles sollte in die Cloud verlagert werden
 
-**Mythos: Serverkosten sind die Grundlage von Geschäftsszenarien für die Cloudmigration.** Manchmal ist diese Annahme zutreffend. Für einige Unternehmen ist es wichtig, die laufenden Investitionskosten für Server zu reduzieren. Dies ist aber von mehreren Faktoren abhängig. Unternehmen mit einem Hardwareaktualisierungszyklus von fünf bis acht Jahren können bei der Cloudmigration meistens keine schnelle Rendite erzielen. Unternehmen mit standardisierten oder erzwungenen Aktualisierungszyklen können den Break-even-Point dagegen schnell erreichen. In beiden Fällen können auch andere Ausgaben die finanziellen Auslöser sein, die eine Migration rechtfertigen. Hier sind einige Beispiele für Kosten angegeben, die häufig übersehen werden, wenn Unternehmen die Kosten nur aus Server- oder VM-Sicht betrachten:
+Es gibt einige geschäftliche Faktoren, die dazu führen können, dass Sie eine Hybridlösung wählen. Es ist ratsam, vor der Fertigstellung eines Geschäftsmodells zunächst eine erste quantitative Analyse durchzuführen. Dies ist in den [Artikeln zu digitalen Ressourcen](../digital-estate/5-rs-of-rationalization.md) beschrieben. Weitere Informationen zu den einzelnen quantitativen Faktoren der Rationalisierung finden Sie unter [Fünf Phasen der Rationalisierung](../digital-estate/5-rs-of-rationalization.md). Bei beiden Ansätzen werden einfach zu beschaffende Bestandsdaten und eine kurze quantitative Analyse verwendet, um Workloads oder Anwendungen zu identifizieren, die zu höheren Kosten in der Cloud führen können. Mit diesen Ansätzen können auch Abhängigkeiten oder Datenverkehrsmuster identifiziert werden, für die eine Hybridlösung erforderlich ist.
+
+### <a name="myth-mirroring-my-on-premises-environment-will-help-me-save-money-in-the-cloud"></a>Mythos: Durch die Spiegelung meiner lokalen Umgebung kann ich in der Cloud Kosten sparen
+
+Es kommt vor, dass Unternehmen beim Planen der digitalen Ressourcen ungenutzte Kapazität ermitteln, die mehr als 50% der bereitgestellten Umgebung ausmacht. Wenn Ressourcen in der Cloud bereitgestellt werden, um die derzeitige Bereitstellung widerzuspiegeln, lassen sich Kosteneinsparungen nur schwer realisieren. Erwägen Sie, die Größe der bereitgestellten Ressourcen zu verringern, um eine Anpassung an die Nutzungsmuster zu erzielen (anstelle der Bereitstellungsmuster).
+
+### <a name="myth-server-costs-drive-business-cases-for-cloud-migration"></a>Mythos: Serverkosten sind die Grundlage von Geschäftsszenarien für die Cloudmigration
+
+Manchmal ist diese Annahme zutreffend. Für einige Unternehmen ist es wichtig, die laufenden Investitionskosten für Server zu reduzieren. Dies ist aber von mehreren Faktoren abhängig. Unternehmen mit einem Hardwareaktualisierungszyklus von fünf bis acht Jahren können bei der Cloudmigration meistens keine schnelle Rendite erzielen. Unternehmen mit standardisierten oder erzwungenen Aktualisierungszyklen können den Break-even-Point dagegen schnell erreichen. In beiden Fällen können auch andere Ausgaben die finanziellen Auslöser sein, die eine Migration rechtfertigen. Hier sind einige Beispiele für Kosten angegeben, die häufig übersehen werden, wenn Unternehmen die Kosten nur aus Server- oder VM-Sicht betrachten:
 
 - Die Kosten von Software für Virtualisierung, Server und Middleware können sehr hoch sein. Bei der Nutzung von Cloudanbietern werden einige dieser Kosten beseitigt. Zwei Beispiele für die Reduzierung der Virtualisierungskosten bei Nutzung eines Cloudanbieters sind die Programme [Azure-Hybridvorteil](https://azure.microsoft.com/pricing/hybrid-benefit/#services) und [Azure-Reservierungen](https://azure.microsoft.com/reservations).
 - Verluste aufgrund von Ausfällen können die Hardware- oder Softwarekosten schnell übersteigen. Wenn Ihr derzeitiges Rechenzentrum nicht stabil ist, können Sie mit dem Unternehmen zusammenarbeiten, um die Auswirkungen von Ausfällen in Bezug auf die Verkaufschancenkosten oder die tatsächlichen Geschäftskosten zu quantifizieren.
 - Umgebungskosten können ebenfalls relevant sein. Für die durchschnittliche amerikanische Familie stellt ein Haus die größte Investition und den größten Kostenpunkt des Budgets dar. Gleiches gilt häufig auch für Datencenter. Kosten für Gebäude, Einrichtungen und Versorgungsleistungen machen einen großen Teil der lokalen Kosten aus. Wenn Datencenter ausgemustert werden, können die entsprechenden Einrichtungen vom Unternehmen anderweitig genutzt werden oder fallen ggf. auch ganz aus den Kosten heraus.
 
-**Mythos: Ein Betriebskostenmodell ist besser als ein Investitionskostenmodell.** Im Artikel mit den [Beispielen für Finanzergebnisse](./business-outcomes/fiscal-outcomes.md) ist beschrieben, dass ein Betriebskostenmodell eine gute Sache ist. Einige Branchen sehen die Betriebskosten jedoch negativ. Hier sind einige Beispiele angegeben, die in Bezug auf die Betriebskosten zu einer stärkeren Integration der Buchhaltung und der Geschäftseinheiten führen:
+### <a name="myth-an-operating-expense-model-is-better-than-a-capital-expense-model"></a>Mythos: Ein Betriebskostenmodell ist besser als ein Investitionskostenmodell
+
+Im Artikel mit den [Beispielen für Finanzergebnisse](./business-outcomes/fiscal-outcomes.md) ist beschrieben, dass ein Betriebskostenmodell eine gute Sache ist. Einige Branchen sehen die Betriebskosten jedoch negativ. Hier sind einige Beispiele angegeben, die in Bezug auf die Betriebskosten zu einer stärkeren Integration der Buchhaltung und der Geschäftseinheiten führen:
 
 - Wenn ein Unternehmen Kapitalvermögen im Hinblick auf die Unternehmensbewertung als positiv ansieht, können Investitionskostenreduzierungen ein negatives Ergebnis darstellen. Es ist zwar keine allgemeine Norm, aber diese Auffassung ist in den Bereichen Einzelhandel, Fertigung und Bauwesen häufiger anzutreffen.
 - Private Equity-Firmen oder Unternehmen, die auf der Suche nach Kapitalzuflüssen sind, können Erhöhungen der Betriebskosten unter Umständen als negatives Ergebnis ansehen.
@@ -43,7 +53,9 @@ Unternehmen neigen dazu, Betriebskosten positiver als Investitionskosten anzuseh
 
 Bevor Sie eine geschäftliche Begründung bereitstellen, in der es um die Umstellung von Investitionskosten auf Betriebskosten geht, sollten Sie ermitteln, welche Kosten besser für Ihr Unternehmen sind. Die Buchhaltung und der Einkauf können häufig dabei behilflich sein, die Botschaft an die finanziellen Ziele anzupassen.
 
-**Mythos: Die Umstellung auf die Cloud ist wie das Umlegen eines Schalters.** Migrationen stellen eine manuelle, aufwändige technische Transformation dar. Beachten Sie beim Entwickeln einer geschäftlichen Begründung – vor allem unter Zeitdruck – die folgenden Aspekte, die zu einer Verlängerung des benötigten Zeitraums für die Migration von Ressourcen führen können:
+### <a name="myth-moving-to-the-cloud-is-like-flipping-a-switch"></a>Mythos: Die Umstellung auf die Cloud ist wie das Umlegen eines Schalters
+
+Migrationen stellen eine manuelle, aufwändige technische Transformation dar. Beachten Sie beim Entwickeln einer geschäftlichen Begründung – vor allem unter Zeitdruck – die folgenden Aspekte, die zu einer Verlängerung des benötigten Zeitraums für die Migration von Ressourcen führen können:
 
 - **Einschränkungen der Bandbreite:** Die Menge an Bandbreite zwischen dem aktuellen Datencenter und dem Cloudanbieter ist für die anfallenden Zeitdauern während der Migration verantwortlich.
 - **Zeitpläne für Tests:** Das Testen von Anwendungen mit dem Unternehmen, um die Bereitschaft und Leistung sicherzustellen, kann zeitaufwendig sein. Die Abstimmung von Powerusern und Testprozessen ist von entscheidender Bedeutung.
@@ -68,8 +80,8 @@ Wenn wir diese Gleichung in ihre Bestandteile zerlegen, ergibt sich ein migratio
 
 ## <a name="migration-specific-initial-investment"></a>Migrationsspezifische Erstinvestition
 
-- Cloudanbieter wie Azure bieten Rechner an, mit denen Prognosen in Bezug auf Cloudinvestitionen erstellt werden können. Der [Azure-Preisrechner](https://azure.microsoft.com/pricing/calculator) ist ein Beispiel.
-- Einige Cloudanbieter stellen auch Rechner zur Ermittlung von Kostendeltawerten bereit. Ein Beispiel ist der [Gesamtkostenrechner von Azure](https://azure.com/tco).
+- Cloudanbieter bieten Rechner an, mit denen Prognosen in Bezug auf Cloudinvestitionen erstellt werden können. Microsoft stellt den [Azure-Preisrechner](https://azure.microsoft.com/pricing/calculator) bereit.
+- Einige Cloudanbieter bieten auch Rechner zur Ermittlung von Kostendeltawerten. Microsoft stellt den [Gesamtkostenrechner von Azure](https://azure.microsoft.com/pricing/tco/calculator) zur Verfügung.
 - Bei anspruchsvolleren Kostenstrukturen können Sie erwägen, eine Übung zur [Planung von digitalen Ressourcen](../digital-estate/index.md) durchzuführen.
 - Erstellen Sie eine Schätzung der Kosten für die Migration.
 - Schätzen Sie die Kosten für die zu erwartenden Schulungsmaßnahmen. [Microsoft Learn](https://docs.microsoft.com/learn) kann beim Verringern dieser Kosten eine Hilfe darstellen.
@@ -84,7 +96,7 @@ Nachdem Sie sich mit den Chancen vertraut gemacht haben, die sich durch die Clou
 
 ## <a name="migration-specific-cost-deltas"></a>Deltawerte für migrationsspezifische Kosten
 
-Berechnen Sie alle Änderungen in Bezug auf die Kosten, die sich aus der vorgeschlagenen Migration ergeben. Weitere Informationen zu den Kostendeltatypen finden Sie im Artikel [Finanzmodelle](./financial-models.md). Cloudanbieter stellen häufig Tools zum Berechnen von Kostendeltawerten bereit. Ein Beispiel ist der [Gesamtkostenrechner von Azure](https://azure.com/tco).
+Berechnen Sie alle Änderungen in Bezug auf die Kosten, die sich aus der vorgeschlagenen Migration ergeben. Weitere Informationen zu den Kostendeltatypen finden Sie im Artikel [Finanzmodelle](./financial-models.md). Cloudanbieter stellen häufig Tools zum Berechnen von Kostendeltawerten bereit. Ein Beispiel ist der [Gesamtkostenrechner von Azure](https://azure.microsoft.com/pricing/tco/calculator).
 
 Weitere Beispiele für Kosten, die durch eine Cloudmigration gesenkt werden können:
 

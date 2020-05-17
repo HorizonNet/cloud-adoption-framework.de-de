@@ -3,114 +3,35 @@ title: Definieren eines Cloudeinführungsplans
 description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie Sie technische Maßnahmen mit einem definierten Cloudeinführungsplan durchführen.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 07/01/2019
-ms.topic: landing-page
+ms.date: 05/04/2019
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-layout: LandingPage
-ms.openlocfilehash: cc4515b97454094ed84a78d04170a8bd03c0f5b2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 76baa600f1110a85dba8ffae5045c9d96bdce73b
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80354994"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215465"
 ---
+<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
+
 <!-- markdownlint-disable MD026 -->
 
 # <a name="develop-a-cloud-adoption-plan"></a>Entwickeln eines Cloudeinführungsplans
 
 Ein Cloudeinführungsplan dient dazu, die ehrgeizigen Ziele einer Cloudeinführungsstrategie in einen umsetzbaren Plan zu verwandeln. Alle Cloudteams können sich bei der technischen Umsetzung am Cloudeinführungsplan orientieren und ihre Arbeit an der Geschäftsstrategie ausrichten.
 
-## <a name="cloud-adoption-plan-process"></a>Prozess für den Cloudeinführungsplan
-
 Die folgenden Aufgaben helfen Ihnen dabei, Ihre Technologiestrategie zu dokumentieren. Bei dieser Herangehensweise werden priorisierte Aufgaben erfasst, um die Einführung zu fördern. Danach wird der Cloudeinführungsplan mit den Metriken und Beweggründen aus der Cloudeinführungsplan in Einklang gebracht.
 
 <!-- markdownlint-disable MD033 -->
+<!-- docsTest:ignore images _images -->
 
-<ul class="panelContent cardsF">
-    <li style="display: flex; flex-direction: column;">
-        <a href="../digital-estate/rationalize.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/1.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Digitale Ressourcen</h3>
-Erfassen und rationalisieren Sie Ihre digitalen Ressourcen basierend auf Annahmen, die an den Beweggründen und Geschäftsergebnissen ausgerichtet sind.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./initial-org-alignment.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Erstausrichtung der Organisation</h3>
-Entwickeln Sie einen Plan für die Erstausrichtung der Organisation, um den Einführungsplan zu unterstützen.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./adapt-roles-skills-processes.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Plan für die Qualifikationsbereitschaft</h3>
-Erstellen Sie einen Plan für den Umgang mit Qualifikationslücken.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./plan-intro.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Cloudeinführungsplan</h3>
-Entwickeln Sie einen Cloudeinführungsplan für das Change Management im Zusammenhang mit digitalen Ressourcen, Qualifikationen und der Organisation.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
+| | |
+|---|---|
+| ![1](../_images/icons/1.png)     | <br>[Digitale Ressource](../digital-estate/rationalize.md): Erfassen und rationalisieren Sie Ihre digitalen Ressourcen basierend auf Annahmen, die an den Beweggründen und Geschäftsergebnissen ausgerichtet sind.                                |
+| ![2](../_images/icons/2.png)     | <br>[Erstausrichtung der Organisation](./initial-org-alignment.md): Entwickeln Sie einen Plan für die Erstausrichtung der Organisation, um den Einführungsplan zu unterstützen.                                |
+| ![3](../_images/icons/3.png)     | <br>[Plan für die Qualifikationsbereitschaft](./adapt-roles-skills-processes.md): Erstellen Sie einen Plan für den Umgang mit Qualifikationslücken.                                |
+| ![4](../_images/icons/4.png)      | <br>[Cloudeinführungsplan](./plan-intro.md): Entwickeln Sie einen Cloudeinführungsplan für das Change Management im Zusammenhang mit digitalen Ressourcen, Qualifikationen und der Organisation.                        |
 
-Laden Sie die [Strategie- und Planungsvorlage des Frameworks für die Cloudeinführung](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) herunter, und erfassen Sie die Ergebnisse der einzelnen Aufgaben, während Sie Ihre Cloudeinführungsstrategie ausarbeiten.
-
-## <a name="next-steps"></a>Nächste Schritte
-
-Beginnen Sie mit der Erstellung des Plans für die Cloudeinführung, indem Sie sich über die [fünf Phasen der Cloudrationalisierung informieren](../digital-estate/5-rs-of-rationalization.md).
-
-> [!div class="nextstepaction"]
-> [Fünf Phasen der Cloudrationalisierung](../digital-estate/5-rs-of-rationalization.md)
+Laden Sie die [Strategie- und Planungsvorlage des Frameworks für die Cloudeinführung](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) herunter, und erfassen Sie die Ergebnisse der einzelnen Aufgaben, während Sie Ihre Cloudeinführungsstrategie ausarbeiten. Erfahren Sie auch etwas über die [fünf Phasen der Cloudrationalisierung](../digital-estate/5-rs-of-rationalization.md), um Ihren Cloudeinführungsplan zu erstellen.

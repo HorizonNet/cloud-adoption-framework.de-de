@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7ffdc348d9f5e1d1e9a76155ce9de2b3e19ccf2a
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a5cafc31b5ede4060aedf78ff40215cb7d132aaa
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426870"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216791"
 ---
 <!-- cSpell:ignore ITSMC -->
 
@@ -22,12 +22,16 @@ ms.locfileid: "80426870"
 
 In den ersten drei Disziplinen der Cloudverwaltung wird eine Verwaltungsbaseline beschrieben. In den vorangehenden Artikeln dieses Leitfadens wurde ein MVP (Minimum Viable Product) für Cloudverwaltungsdienste erläutert, das als Verwaltungsbaseline bezeichnet wird. Dieser Artikel beschreibt einige allgemeine Verbesserungen der Baseline.
 
-Der Zweck einer Verwaltungsbaseline besteht darin, ein stimmiges Angebot zu schaffen, das für *alle* unterstützten Workloads ein Mindestmaß an geschäftlicher Verpflichtung vorsieht. Diese Baseline für allgemeine, wiederholbare Verwaltungsangebote ermöglicht es dem Team, eine äußerst optimierte Betriebsführung mit nur minimalen Abweichungen zu gewährleisten.
+Der Zweck einer Verwaltungsbaseline besteht darin, ein stimmiges Angebot zu schaffen, das für _alle_ unterstützten Workloads ein Mindestmaß an geschäftlicher Verpflichtung vorsieht. Diese Baseline für allgemeine, wiederholbare Verwaltungsangebote ermöglicht es dem Team, eine äußerst optimierte Betriebsführung mit nur minimalen Abweichungen zu gewährleisten.
 
 Möglicherweise ist jedoch eine größere Verpflichtung für das Unternehmen erforderlich, die über das Standardangebot hinausgeht. Die folgende Abbildung und Liste skizzieren drei Möglichkeiten, um über die Verwaltungsbaseline hinauszugehen.
 
 ![Über die Baseline zur Cloudverwaltung hinaus](../../_images/manage/beyond-the-baseline.png)
 
+- **Erweiterte Verwaltungsbaseline:**
+  - Fügen Sie Verbesserungen an der Verwaltungsbaseline hinzu, wenn die Mehrheit der Workloads im Portfolio eine gemeinsame Anforderung aufweist.
+  - Verbesserte Erfüllung der Geschäftsverpflichtungen mit zusätzlichen cloudnativen Betriebstools und Prozessen.
+  - Baselineverbesserungen sollten keine Auswirkungen auf die Architektur bestimmter Workloads haben.
 - **Workloadbetrieb:**
   - Größte Investition pro Workloadvorgang.
   - Höchster Resilienzgrad.
@@ -38,9 +42,6 @@ Möglicherweise ist jedoch eine größere Verpflichtung für das Unternehmen erf
   - Verbesserungen der Resilienz betreffen alle Workloads, die die definierte Plattform nutzen.
   - Empfohlen für die ca. 20 % der Plattformen, die die höchste Wichtigkeit aufweisen.
   - In der Regel für Workloads von mittlerer bis hoher Wichtigkeit reserviert.
-- **Erweiterte Verwaltungsbaseline:**
-  - Niedrigste relative Betriebsinvestition.
-  - Leicht verbesserte Erfüllung der Geschäftsverpflichtungen mit zusätzlichen cloudnativen Betriebstools und Prozessen.
 
 Workload- und Plattformbetrieb erfordern Änderungen von Entwurfs- und Architekturprinzipien. Diese Änderungen können Zeit in Anspruch nehmen und zu erhöhten Betriebskosten führen. Um die Anzahl der Workloads zu reduzieren, die solche Investitionen erfordern, kann eine optimierte Verwaltungsbaseline eine ausreichende Verbesserung zur Erfüllung geschäftlicher Verpflichtungen bewirken.
 
@@ -48,12 +49,13 @@ In dieser Tabelle werden einige Prozesse, Tools und potenzielle Auswirkungen bes
 
 | Disziplin  | Prozess  | Tool | Potenzielle Auswirkung | Weitere Informationen |
 |---|---|---|---|---|
-|Bestand und Transparenz|Änderungsnachverfolgung für Dienste|Azure Resource Graph|Ein umfassenderer Einblick in Änderungen an Azure-Diensten kann helfen, negative Auswirkungen früher zu erkennen oder schneller zu beheben.|[Übersicht über Azure Resource Graph](https://docs.microsoft.com/azure/governance/resource-graph/overview)|
-|Bestand und Transparenz|ITSM-Integration (IT-Service-Management)|IT Service Management Connector|Eine automatisierte ITSM-Verbindung führt zu früheren Erkenntnissen.|[ITSMC-Connector (IT-Service-Management)](https://docs.microsoft.com/azure/azure-monitor/platform/itsmc-overview)|
-|Betriebsbezogene Compliance|Betriebsautomatisierung|Azure-Automatisierung|Durch automatisierte betriebsbezogene Compliance können Sie auf Änderungen schneller und präziser reagieren.|In den folgenden Abschnitten finden Sie weitere Informationen|
-|Betriebsbezogene Compliance|Multicloudvorgänge|Azure Automation – Hybrid Runbook Worker|Automatisieren Sie Vorgänge in mehreren Clouds.|[Übersicht über Hybrid Runbook Worker](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker)|
-|Betriebsbezogene Compliance|Gastautomatisierung| Konfigurieren des gewünschten Zustands (Desired State Configuration, DSC)|Durch die codebasierte Konfiguration von Gastbetriebssystemen können Fehler und Konfigurationsabweichungen verringert werden.|[Übersicht über DSC](https://docs.microsoft.com/powershell/scripting/dsc/overview/overview)|
-|Schutz und Wiederherstellung|Benachrichtigung bei Sicherheitsverletzungen|Azure Security Center|Durch Erweitern des Schutzes können Wiederherstellungstrigger bei Sicherheitsverletzungen einbezogen werden.|In den folgenden Abschnitten finden Sie weitere Informationen|
+| Bestand und Transparenz | Änderungsnachverfolgung für Dienste | Azure Resource Graph | Ein umfassenderer Einblick in Änderungen an Azure-Diensten kann helfen, negative Auswirkungen früher zu erkennen oder schneller zu beheben. | [Übersicht über Azure Resource Graph](https://docs.microsoft.com/azure/governance/resource-graph/overview) |
+| Bestand und Transparenz | ITSM-Integration (IT-Service-Management) | IT Service Management Connector | Eine automatisierte ITSM-Verbindung führt zu früheren Erkenntnissen. | [ITSMC-Connector (IT-Service-Management)](https://docs.microsoft.com/azure/azure-monitor/platform/itsmc-overview) |
+| Betriebsbezogene Compliance | Betriebsautomatisierung | Azure-Automatisierung | Durch automatisierte betriebsbezogene Compliance können Sie auf Änderungen schneller und präziser reagieren. | In den folgenden Abschnitten finden Sie weitere Informationen |
+| Betriebsbezogene Compliance | Leistungsautomatisierung | Azure-Automatisierung | Automatisieren Sie die betriebliche Compliance mit Leistungserwartungen, um allgemeine ressourcenspezifische Probleme mit der Skalierung oder Größenanpassung zu lösen. | In den folgenden Abschnitten finden Sie weitere Informationen |
+| Betriebsbezogene Compliance | Multicloudvorgänge | Azure Automation – Hybrid Runbook Worker | Automatisieren Sie Vorgänge in mehreren Clouds. | [Übersicht über Hybrid Runbook Worker](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker) |
+| Betriebsbezogene Compliance | Gastautomatisierung |  Konfigurieren des gewünschten Zustands (Desired State Configuration, DSC) | Durch die codebasierte Konfiguration von Gastbetriebssystemen können Fehler und Konfigurationsabweichungen verringert werden. | [Übersicht über DSC](https://docs.microsoft.com/powershell/scripting/dsc/overview/overview) |
+| Schutz und Wiederherstellung | Benachrichtigung bei Sicherheitsverletzungen | Azure Security Center | Durch Erweitern des Schutzes können Wiederherstellungstrigger bei Sicherheitsverletzungen einbezogen werden. | In den folgenden Abschnitten finden Sie weitere Informationen |
 
 ::: zone target="docs"
 
@@ -76,7 +78,7 @@ Die grundlegende Codeeinheit zur Bereitstellung der automatisierten Bereinigung 
 
 So erstellen oder verwalten Sie Runbooks:
 
-1. Wechseln Sie zu [Azure Automation](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts).
+1. Wechseln Sie zu [Azure Automation](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts).
 1. Wählen Sie **Automation-Konten** und dann eines der aufgeführten Konten aus.
 1. Wechseln Sie zu **Prozessautomatisierung**.
 1. Mit den vorgestellten Optionen können Sie Runbooks, Zeitpläne und andere Funktionen zur automatisierten Wiederherstellung erstellen oder verwalten.

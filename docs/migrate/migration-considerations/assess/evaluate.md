@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4321cf289bcab6fbee061fbff27d45fd8d695eac
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ddeea58c9e50327f318640160317556191c26d7f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80432794"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216145"
 ---
 # <a name="evaluate-workload-readiness"></a>Bewerten der Bereitschaft einer Workload
 
@@ -42,7 +42,7 @@ Achten Sie darauf, alle Abweichungen bei der Hostkonfiguration, der replizierten
 - Dokumentieren Sie möglichst alle Anwendungen oder anderen Ressourcen, die Aufrufe der einzelnen Datenbanken durchführen.
 
 > [!NOTE]
-> Die Synchronisierung einer Ressource belegt Bandbreite während der Replikationsprozesse. Eine sehr häufiger Fehler ist es, den Bandbreitenbedarf zu übersehen, der erforderlich ist, um Ressourcen zwischen dem Zeitpunkt der Replikation und der Freigabe synchron zu halten. Datenbanken belegen häufig Bandbreite während der Releasezyklen. Dies ist insbesondere bei Datenbanken mit hohem Speicherbedarf oder hoher Änderungsrate der Fall. Erwägen Sie einen Ansatz zur Replikation der Datenstruktur mit gesteuerten Updates vor Benutzerakzeptanztest (UAT) und Freigabe. In solchen Szenarien sind Alternativen zu Azure Site Recovery möglicherweise besser geeignet. Weitere Informationen finden Sie in den Anleitungen im [Leitfaden für die Azure-Datenmigration](https://datamigration.microsoft.com).
+> Die Synchronisierung einer Ressource belegt Bandbreite während der Replikationsprozesse. Eine sehr häufiger Fehler ist es, den Bandbreitenbedarf zu übersehen, der erforderlich ist, um Ressourcen zwischen dem Zeitpunkt der Replikation und der Freigabe synchron zu halten. Datenbanken belegen häufig Bandbreite während der Releasezyklen. Dies ist insbesondere bei Datenbanken mit hohem Speicherbedarf oder hoher Änderungsrate der Fall. Erwägen Sie einen Ansatz zur Replikation der Datenstruktur mit gesteuerten Updates vor Benutzerakzeptanztest (UAT) und Freigabe. In solchen Szenarien sind Alternativen zu Azure Site Recovery möglicherweise besser geeignet. Weitere Informationen finden Sie in der Anleitung im [Leitfaden zur Azure-Datenbankmigration](https://datamigration.microsoft.com).
 
 ## <a name="common-network-evaluation-activities"></a>Allgemeine Bewertungsaktivitäten für das Netzwerk
 
