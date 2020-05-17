@@ -8,33 +8,33 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6cce3a3aafc62926c7e53d611cb4c94ae2496ac2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ec0f2ff617e0d4e5464dc5c9b1cead87b5a27048
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434450"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220123"
 ---
 <!-- cSpell:ignore CFO's MPLS -->
 
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Identitätsbaseline“
 
-Dieser Artikel führt die Geschichte fort, indem dem Governance-MVP Steuerungsmechanismen für die Identitätsbaseline hinzugefügt werden.
+In diesem Artikel wird die Lösung weiterentwickelt, indem dem Governance-MVP Steuerungsmechanismen für die Identitätsbaseline hinzugefügt werden.
 
 ## <a name="advancing-the-narrative"></a>Fortführen der Geschichte
 
 Die geschäftliche Begründung für die Cloudmigration der zwei Rechenzentren wurde vom CFO genehmigt. Im Rahmen der technischen Machbarkeitsstudie wurden mehrere Hindernisse entdeckt:
 
 - Geschützte Daten und geschäftskritische Anwendungen machen 25 % der Workload in den beiden Rechenzentren aus. Beide lassen sich erst nach einer Modernisierung der aktuellen Governance-Richtlinien für vertrauliche personenbezogene Informationen und geschäftskritische Anwendungen lösen.
-- 7 % der Ressourcen in diesen Rechenzentren sind nicht cloudkompatibel. Sie werden vor der Ende des Rechenzentrumsvertrags in ein alternatives Rechenzentrum ausgelagert.
-- Bei 15 % der Ressourcen im Rechenzentrum (750 virtuelle Computer) besteht eine Abhängigkeit von Legacyauthentifizierung oder mehrstufiger Authentifizierung von Drittanbietern.
+- 7 % der Ressourcen in diesen Rechenzentren sind nicht cloudkompatibel. Sie werden vor der Ende des Rechenzentrumsvertrags in ein alternatives Rechenzentrum ausgelagert.
+- Bei 15 % der Ressourcen im Rechenzentrum (750 virtuelle Computer) besteht eine Abhängigkeit von Legacyauthentifizierung oder mehrstufiger Authentifizierung von Drittanbietern.
 - Die VPN-Verbindung, die bestehende Rechenzentren und Azure verbindet, bietet hinsichtlich Datenübertragungsgeschwindigkeiten oder Latenz keine ausreichende Kapazität, um die Menge der Ressourcen innerhalb der zweijährigen Frist bis zur Stilllegung des Rechenzentrums zu migrieren.
 
 Die zwei ersten Hindernisse werden parallel verwaltet. Dieser Artikel behandelt die Beseitigung des dritten und vierten Hindernisses.
 
 ### <a name="expand-the-cloud-governance-team"></a>Erweitern des Cloudgovernanceteams
 
-Das Cloudgovernanceteam wächst. Da zusätzliche Unterstützung beim Identitätsmanagement erforderlich ist, nimmt ein Systemadministrator aus dem Identitätsbaselineteam nun an einer wöchentlichen Besprechung teil, um die vorhandenen Teammitglieder über Änderungen auf dem Laufenden zu halten.
+Das Cloudgovernanceteam wächst. Da zusätzliche Unterstützung bei der Identitätsverwaltung erforderlich ist, nimmt ein Systemadministrator aus dem Identitätsbaselineteam nun an einer wöchentlichen Besprechung teil, um die vorhandenen Teammitglieder über Änderungen auf dem Laufenden zu halten.
 
 ### <a name="changes-in-the-current-state"></a>Änderungen des aktuellen Status
 
@@ -42,7 +42,7 @@ Das IT-Team hat die Genehmigung, mit den Plänen von CIO und CFO zur Stilllegung
 
 ### <a name="incrementally-improve-the-future-state"></a>Inkrementelles Verbessern des zukünftigen Status
 
-Die neuen Pläne für den zukünftigen Status erfordern eine robustere Lösung für die Identitätsbaseline, um die 750 virtuellen Computer mit Legacyanforderungen an die Authentifizierung zu migrieren. Über diese beiden Rechenzentren hinaus wird erwartet, dass sich diese Herausforderung auf ähnliche Prozentsätze von Ressourcen in anderen Rechenzentren auswirken wird.
+Die neuen Pläne für den zukünftigen Status erfordern eine stabilere Lösung für die Identitätsbaseline, um die 750 virtuellen Computer mit Legacyauthentifizierungsanforderungen zu migrieren. Über diese beiden Rechenzentren hinaus wird erwartet, dass sich diese Herausforderung auf ähnliche Prozentsätze von Ressourcen in anderen Rechenzentren auswirken wird.
 
 Der zukünftige Status erfordert jetzt auch eine Verbindung vom Cloudanbieter zur MPLS-/Mietleitungslösung des Unternehmens.
 
@@ -77,7 +77,7 @@ Der Governance-MVP-Entwurf wird so geändert, dass er neue Azure-Richtlinien und
 
 Dies sind die neuen Best Practices:
 
-- **Sicheres Hybrid-VNET – Blaupause**: Die lokale Seite des Hybridnetzwerks sollte so konfiguriert werden, dass sie Kommunikation zwischen der folgenden Lösung und den lokalen Active Directory-Servern zulässt. Für diese Best Practices ist es erforderlich, dass eine DMZ Active Directory Domain Services über Netzwerkgrenzen hinweg aktiviert.
+- **Blaupause für ein sicheres hybrides virtuelles Netzwerk:** Die lokale Seite des Hybridnetzwerks sollte so konfiguriert werden, dass sie Kommunikation zwischen der folgenden Lösung und den lokalen Active Directory-Servern zulässt. Für diese Best Practices ist es erforderlich, dass eine DMZ Active Directory Domain Services über Netzwerkgrenzen hinweg aktiviert.
 - **Azure Resource Manager-Vorlagen**:
     1. Definieren Sie eine Netzwerksicherheitsgruppe, um externen Datenverkehr zu blockieren und internen Datenverkehr zuzulassen.
     2. Stellen Sie zwei virtuelle Active Directory-Computer als Paar mit Lastenausgleich auf der Grundlage eines Golden Image bereit. Beim ersten Start führt dieses Image ein PowerShell-Skript aus, um den Domänenbeitritt und die Registrierung bei den Domänendiensten vorzunehmen. Weitere Informationen finden Sie unter [Erweitern von Active Directory Domain Services (AD DS) auf Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain).

@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: cc095a1751e945ca18763757582a6cd27b65d72a
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: f5bcde9c0eab879eea9c49a7ab46338a141cb1cb
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81119765"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217012"
 ---
 # <a name="assess-workloads-and-validate-assumptions-before-migration"></a>Bewerten von Workloads und Validieren von Annahmen vor der Migration
 
@@ -20,13 +20,13 @@ Viele Ihrer vorhandenen Workloads sind ideale Kandidaten für eine Cloudmigratio
 
 Daher ist es wichtig, vor der Migration einer Workload in die Cloud die einzelnen mit dieser Workload verbundenen Ressourcen auf ihre Eignung für die Migration zu überprüfen. Während dieser Bewertung sollte Ihr Cloudeinführungsteam die technische Kompatibilität, die erforderliche Architektur, die Leistungs-/Skalierungserwartungen und Abhängigkeiten bewerten, um sicherzustellen, dass die migrierte Workload effektiv in der Cloud bereitgestellt werden kann.
 
-Der Prozess *Bewerten* ist die erste von vier inkrementellen Aktivitäten, die innerhalb einer Iteration auftreten. Wie im Artikel zur [technischen Komplexität und zum Change Management](../prerequisites/technical-complexity.md) erläutert, sollte im Voraus eine Entscheidung getroffen werden, wie diese Phase durchgeführt wird. Insbesondere sollte die Frage beantwortet werden, ob die Bewertungen des Cloudeinführungsteams während des gleichen Durchgangs abgeschlossen werden wie der eigentliche Migrationsaufwand. Wird alternativ ein Wellen- oder Factorymodell verwendet, um die Bewertungen in einer separaten Iteration abzuschließen? Wenn die Antwort auf diese grundlegende Prozessfrage nicht von jedem Mitglied des Teams beantwortet werden kann, ist es möglicherweise empfehlenswert, den Abschnitt [Voraussetzungen](../prerequisites/index.md) erneut zu besuchen.
+Der Prozess _Bewerten_ ist die erste von vier inkrementellen Aktivitäten, die innerhalb einer Iteration auftreten. Wie im Artikel zur [technischen Komplexität und zum Change Management](../prerequisites/technical-complexity.md) erläutert, sollte im Voraus eine Entscheidung getroffen werden, wie diese Phase durchgeführt wird. Insbesondere sollte die Frage beantwortet werden, ob die Bewertungen des Cloudeinführungsteams während des gleichen Durchgangs abgeschlossen werden wie der eigentliche Migrationsaufwand. Wird alternativ ein Wellen- oder Factorymodell verwendet, um die Bewertungen in einer separaten Iteration abzuschließen? Wenn die Antwort auf diese grundlegende Prozessfrage nicht von jedem Mitglied des Teams beantwortet werden kann, ist es möglicherweise empfehlenswert, den Abschnitt [Voraussetzungen](../prerequisites/index.md) erneut zu besuchen.
 
 ## <a name="objective"></a>Ziel
 
 Bewerten eines Migrationskandidaten und Bewerten der Workload, der zugehörigen Ressourcen und der Abhängigkeiten vor der Migration.
 
-## <a name="definition-of-done"></a>Definition von *Fertig*.
+## <a name="definition-of-_done_"></a>Definition von _Fertig_.
 
 Dieser Prozess ist abgeschlossen, wenn die folgenden Punkte über einen einzelnen Migrationskandidaten bekannt sind:
 

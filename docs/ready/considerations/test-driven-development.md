@@ -7,12 +7,12 @@ ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 5693072eee18e0e3ee45bd3d3fd62d3a7de5795e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 055279bccb9c2897b3cc67adf549f5f57c5bf5fc
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81122015"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222996"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones"></a>Testgesteuerte Entwicklung (TDD) für Zielzonen
 
@@ -38,7 +38,7 @@ Der Zyklus, der für eine effektive testgesteuerte Entwicklung sorgt, wird oft a
 
 ![Testgesteuerter Entwicklungsprozess für Cloudzielzonen](../../_images/ready/test-driven-development-process.png)
 
-- **Erstellen eines Tests:** Definieren Sie einen Test, um zu überprüfen, ob die Akzeptanzkriterien für ein bestimmtes Feature mit Mehrwert erfüllt sind. Automatisieren Sie den Test, wenn möglich.
+- **Erstellen eines Tests:** Definieren Sie einen Test, um zu überprüfen, ob die Akzeptanzkriterien für ein bestimmtes Feature mit Mehrwert erfüllt sind. Automatisieren Sie den Test wann immer möglich.
 - **Testen der Zielzone:** Führen Sie den neuen Test und alle vorhandenen Tests aus. Wenn das erforderliche Feature nicht bereits durch vorherigen Entwicklungsaufwand erfüllt wurde und nicht im Angebot des Cloudanbieters enthalten ist, sollte der Test fehlschlagen. Die Durchführung vorhandener Tests hilft zu überprüfen, dass Ihr neuer Test die Zuverlässigkeit der Zielzonenfeatures, die von vorhandenem Code bereitgestellt werden, nicht beeinträchtigt.
 - **Erweitern und Umgestalten der Zielzone:** Fügen Sie den Quellcode hinzu oder modifizieren Sie ihn, um das gewünschte Feature mit Mehrwert zu erfüllen und die allgemeine Qualität der Codebasis zu verbessern. Das Cloudplattformteam würde nur Code hinzufügen, der dem gewünschten Feature entspricht (und nicht mehr), um vollständig im Sinne der testgesteuerten Entwicklung zu handeln. Gleichzeitig ist die Codequalität und -wartung ein gemeinsamer Aufwand. Bei der Erfüllung von Anforderungen für neue Features sollte das Cloudplattformteam versuchen, den Code zu optimieren, indem es die Duplizierung entfernt und den Code klarer gestaltet. Das Ausführen von Tests zwischen der Erstellung neuen Codes und dem Refactoring des Quellcodes wird dringend empfohlen.
 - **Bereitstellen der Zielzone:** Sobald der Quellcode in der Lage ist, die Featureanforderungen zu erfüllen, stellen Sie die modifizierte Zielzone dem Cloudanbieter in einer kontrollierten Test- oder Sandboxumgebung zur Verfügung.
@@ -55,7 +55,7 @@ Für einen anfänglichen Migrationsaufwand kann die „Definition of Done“ zu 
 - Netzwerksegmentierung zur Anpassung an den vorgeschlagenen Netzwerkentwurf.
 - Zugriff auf Compute-, Speicher- und Netzwerkressourcen zur Bewältigung der Workloads, die auf die Ermittlung digitaler Ressourcen ausgerichtet sind.
 - Benennungs- und Kennzeichnungsschema für die einfache Anwendung.
-- Diese Umgebung sollte als „Umkreisnetzwerk (DMZ)“ mit Zugang zum öffentlichen Internet behandelt werden.
+- Diese Umgebung sollte als _Umkreisnetzwerk (DMZ)_ mit Zugang zum öffentlichen Internet behandelt werden.
 - Während des Einführungsaufwands wünscht das Cloudeinführungsteam einen temporären Zugriff auf die Umgebung, um Dienstkonfigurationen zu ändern.
 - Nur zur Kenntnisnahme: Vor der Produktionsfreigabe erfordern diese Workloads eine Integration mit dem Unternehmensidentitätsanbieter, um die fortlaufende Identität und den Zugriff für Vorgangsverwaltungzwecke zu regeln. Zu diesem Zeitpunkt sollte der Zugriff des Cloudeinführungsteams widerrufen werden.
 

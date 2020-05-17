@@ -1,5 +1,5 @@
 ---
-title: 'Governance für Standardunternehmen: Verbessern der Disziplin „Kostenverwaltung“'
+title: 'Governance für Standardunternehmen: Verbessern der Disziplin „Cost Management“'
 description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um zu erfahren, wie Sie einem Minimum Viable Product (MVP) für die Governance Kostenkontrollfunktionen hinzufügen.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,18 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3d0a4e06a2aaa21f191130b937790408abf16952
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 1c25a98eaa63e6cd6f71ac571ec4e006ad7c4946
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434289"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219936"
 ---
-# <a name="standard-enterprise-guide-improve-the-cost-management-discipline"></a>Leitfaden für Standardunternehmen: Verbessern der Disziplin „Cost Management“
+# <a name="standard-enterprise-governance-guide-improve-the-cost-management-discipline"></a>Governanceleitfaden für Standardunternehmen: Verbessern der Disziplin „Cost Management“
 
 Dieser Artikel führt die Geschichte fort, indem dem Governance-MVP Kostenkontrolle hinzugefügt wird.
 
 ## <a name="advancing-the-narrative"></a>Fortführen der Geschichte
+
+<!-- docsTest:ignore DR -->
 
 Die Einführung hat sich über den im Governance-MVP definierten Kostentoleranzindikator hinaus entwickelt. Das ist gut so, denn dies korrespondiert mit Migrationen aus dem Datencenter „DR“. Die Steigerung in den Ausgaben rechtfertigt jetzt den Aufwand an Zeit seitens des Cloudgovernanceteams.
 
@@ -36,7 +38,7 @@ Seit diesem Zeitpunkt haben sich einige Dinge geändert, die sich auf die Govern
 
 ### <a name="incrementally-improve-the-future-state"></a>Inkrementelles Verbessern des zukünftigen Status
 
-Die Cloudlösung soll um Kostenüberwachung und -berichterstellung erweitert werden. Die IT dient nach wie vor als Kostenverrechnungsstelle. Das bedeutet, dass die Vergütung für Clouddienste weiterhin aus der IT-Beschaffung stammt. Die Berichterstellung sollte jedoch die direkten Betriebskosten an die Funktionen binden, die die Cloudkosten verbrauchen. Dieses Modell wird als „Showback“-Modell für die Cloudbuchhaltung bezeichnet.
+Die Cloudlösung soll um Kostenüberwachung und -berichterstellung erweitert werden. Die IT dient nach wie vor als Kostenverrechnungsstelle. Das bedeutet, dass die Vergütung für Clouddienste weiterhin aus der IT-Beschaffung stammt. Die Berichterstellung sollte jedoch die direkten Betriebskosten an die Funktionen binden, die die Cloudkosten verbrauchen. Dieses Modell wird als _Showback_-Modell für die Cloudbuchhaltung bezeichnet.
 
 Die Änderungen des aktuellen und zukünftigen Status bergen neue Risiken, die neue Richtlinienanweisungen erfordern.
 
@@ -69,7 +71,7 @@ In diesem Abschnitt des Artikels wird der Governance-MVP-Entwurf so geändert, d
     1. Legen Sie den richtigen Zugriffsumfang fest, um ihn an das Abonnementmuster und die Disziplin „Ressourcenkonsistenz“ anzupassen. Unter der Annahme der Angleichung an das in früheren Artikeln definierte Governance-MVP erfordert dies Zugriff des Umfangs **Registrierungskonto** für das Cloudgovernanceteam, das die Berichtserstellung auf hoher Ebene durchführt. Weitere Teams außerhalb von Governance benötigen möglicherweise Zugriff des Umfangs **Ressourcengruppe**.
     1. Einrichten eines Budgets in Azure Cost Management.
     1. Überprüfen Sie die anfänglichen Empfehlungen, und reagieren Sie entsprechend. Nutzen Sie einen regelmäßiger Prozess zur Unterstützung der Berichterstellung.
-    1. Konfigurieren Sie Azure Cost Management-Berichterstellung mit anfänglicher und regelmäßiger Ausführung.
+    1. Konfigurieren Sie die Azure Cost Management-Berichterstellung mit anfänglicher und regelmäßiger Ausführung.
 2. Aktualisieren von Azure Policy
     1. Überwachen Sie die Tagging-, Verwaltungsgruppen-, Abonnement- und Ressourcengruppenwerte, um Abweichungen zu identifizieren.
     1. Legen Sie Optionen für die SKU-Größe fest, um die Bereitstellung auf die in der Dokumentation zur Bereitstellungsplanung aufgeführten SKUs zu beschränken.

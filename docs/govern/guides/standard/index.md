@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a82bd7fea1e16819e2c69d6eafba0cbdf77e3559
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 67412e36a4048d1441679458bbff5a90bbceaa84
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396138"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214775"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Governanceleitfaden für Standardunternehmen
 
@@ -58,14 +58,14 @@ Sobald dieses MVP bereitgestellt ist, können zusätzliche Ebenen der Governance
 
 - [Sicherheitsbaseline für geschützte Daten](./security-baseline-improvement.md)
 - [Ressourcenkonfigurationen für unternehmenskritische Anwendungen](./resource-consistency-improvement.md)
-- [Steuerelemente für das Kostenmanagement](./cost-management-improvement.md)
+- [Steuerelemente für die Kostenverwaltung](./cost-management-improvement.md)
 - [Steuerelemente für die Multi-Cloud-Entwicklung](./multicloud-improvement.md)
 
 <!-- markdownlint-disable MD026 -->
 
 ## <a name="what-does-this-guidance-provide"></a>Was bietet dieser Leitfaden?
 
-Im MVP sind Methoden und Tools für die Disziplin der [Beschleunigung der Bereitstellung](../../deployment-acceleration/index.md) festgelegt, um schnell Unternehmensrichtlinien anzuwenden. Insbesondere verwendet das MVP Azure Blueprints, Azure Policy und Azure-Verwaltungsgruppen, um einige grundlegende Unternehmensrichtlinien anzuwenden, wie in der Lösung für das fiktive Unternehmen definiert. Diese Unternehmensrichtlinien werden mithilfe von Resource Manager-Vorlagen und Azure-Richtlinien angewandt, um eine kleine Baseline für Identität und Sicherheit festzulegen.
+Im MVP sind Methoden und Tools für die [Disziplin der Beschleunigung der Bereitstellung](../../deployment-acceleration/index.md) festgelegt, um Unternehmensrichtlinien schnell anwenden zu können. Insbesondere verwendet das MVP Azure Blueprints, Azure Policy und Azure-Verwaltungsgruppen, um einige grundlegende Unternehmensrichtlinien anzuwenden, wie in der Lösung für das fiktive Unternehmen definiert. Diese Unternehmensrichtlinien werden mithilfe von Resource Manager-Vorlagen und Azure-Richtlinien angewandt, um eine kleine Baseline für Identität und Sicherheit festzulegen.
 
 ![Beispiel für ein inkrementelles Governance-MVP](../../../_images/govern/governance-mvp.png)
 
@@ -73,9 +73,9 @@ Im MVP sind Methoden und Tools für die Disziplin der [Beschleunigung der Bereit
 
 Im Lauf der Zeit wird dieses Governance-MVP verwendet, um die Governancemethoden zu verbessern. Mit fortschreitender Einführung wächst das geschäftliche Risiko. Verschiedene Disziplinen im CAF-Governancemodell (Cloud Adoption Framework) werden zur Bewältigung dieser Risiken angepasst. Spätere Artikel dieser Reihe erläutern die schrittweise Verbesserung der Unternehmensrichtlinie, die sich auf das fiktive Unternehmen auswirkt. Diese Verbesserungen betreffen drei Disziplinen:
 
-- Kostenmanagement, wenn die Einführung skaliert wird.
-- Sicherheitsbaseline, indem geschützte Daten bereitgestellt werden.
-- Ressourcenkonsistenz, indem die IT-Abteilung beginnt, unternehmenskritische Workloads zu unterstützen.
+- Kostenverwaltung, wenn die Einführung skaliert wird.
+- Sicherheitsbaseline, wenn geschützte Daten bereitgestellt werden.
+- Ressourcenkonsistenz, wenn das IT-Betriebsteam beginnt, unternehmenskritische Workloads zu unterstützen.
 
 ![Beispiel für ein inkrementelles Governance-MVP](../../../_images/govern/governance-improvement.png)
 

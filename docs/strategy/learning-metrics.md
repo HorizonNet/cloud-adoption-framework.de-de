@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: a26ad28c5cd91225f02d5824690bc2d409bbd55f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: dc655eb5d7169c84c8cf577326b7396758e49970
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433738"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221415"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -54,7 +54,7 @@ Eine noch wichtigere Metrik ist die Anzahl von Dashboards, die anhand der kombin
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nachdem die Lernmetriken abgestimmt wurden, können Sie damit beginnen, mithilfe dieser Metriken das [Geschäftsszenario zu erarbeiten](.\cloud-migration-business-case.md).
+Nachdem die Lernmetriken abgestimmt wurden, können Sie damit beginnen, mithilfe dieser Metriken das [Geschäftsszenario zu erarbeiten](./cloud-migration-business-case.md).
 
 > [!div class="nextstepaction"]
-> [Erarbeiten des Cloudgeschäftsszenarios](.\cloud-migration-business-case.md)
+> [Erarbeiten des Cloudgeschäftsszenarios](./cloud-migration-business-case.md)

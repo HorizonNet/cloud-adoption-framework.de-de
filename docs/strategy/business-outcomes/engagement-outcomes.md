@@ -7,14 +7,14 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: ca91b52aa11427d81e8f9244e1cc74a88972b842
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 309132227df915f6673d1d5509a64f9d796af40c
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433772"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218899"
 ---
-<!-- cSpell:ignore Exak -->
+<!-- cSpell:ignore ExakTime -->
 
 # <a name="examples-of-customer-engagement-outcomes"></a>Beispiele für Kundenbindungsergebnisse
 
@@ -32,13 +32,18 @@ Während kundenorientierter Transformationen wie cloudfähiger Anwendungsinnovat
 
 - **Beispiel:** Ein Dienstleistungsunternehmen, das B2B-Dienste (Business-to-Business) bereitstellt, versucht, auf einem wettbewerbsintensiven Markt seinen Marktanteil zu halten. Kunden, die zu einem Konkurrenten gewechselt sind, haben festgestellt, dass die übermäßig komplexe technische Lösung die eigenen Geschäftsprozesse beeinträchtigt und der Hauptgrund für den Wechsel ist. In diesem Fall ist Zykluszeit eine unbedingte Notwendigkeit. Heutzutage dauert es 12 Monate, bis ein Feature von der Anforderung bis zum Release gelangt. Wenn es vom Führungsteam priorisiert wird, kann dieser Zyklus auf sechs bis neun Monate verkürzt werden. Das Team konnte die Zykluszeit über eine cloudfähige Anwendungsinnovation, cloudnative Anwendungsmodelle und die Integration mit Azure DevOps auf einen Monat verkürzen. So können das Unternehmen und die Anwendungsentwicklungsteams viel direkter mit den Kunden interagieren.
 
+<!--docsTest:ignore "Wayne Wise" "Vice President of Software Development" -->
+
 > **ExakTime**
 >
 > Arbeitszeitverwaltung löst sich mit Cloudtechnologie von lokalen Einschränkungen. ExakTime begibt sich mit Microsoft Azure auf den Weg zu einer optimierten flexiblen Produktentwicklung – und die Kunden profitieren von einem noch robusteren und einfacher zu bedienenden Produkt mit einer Vielzahl neuer Funktionen.
 >
-> „Jetzt kann sich ein Entwickler an seinen Computer setzen und bei einer Idee einen Webdienst oder eine Azure-Instanz einrichten, seine Idee testen, dabei auf Testdaten verweisen und sein Konzept auf den Weg bringen. In der Zeit, die es bisher gedauert hätte, nur die Voraussetzungen für den Test bereitzustellen, können wir jetzt die komplette Funktion schreiben.“  
-> Wayne Wise  
-> Vice President für Softwareentwicklung bei  
+> „Jetzt kann sich ein Entwickler an seinen Computer setzen und bei einer Idee einen Webdienst oder eine Azure-Instanz einrichten, seine Idee testen, dabei auf Testdaten verweisen und sein Konzept auf den Weg bringen. In der Zeit, die es bisher gedauert hätte, nur die Voraussetzungen für den Test bereitzustellen, können wir jetzt die komplette Funktion schreiben.“
+>
+> Wayne Wise
+>
+> Vice President für Softwareentwicklung bei
+>
 > ExakTime
 
 ## <a name="next-steps"></a>Nächste Schritte

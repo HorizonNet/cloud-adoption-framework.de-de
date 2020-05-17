@@ -7,12 +7,12 @@ ms.date: 05/05/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fe76729b4a845d71629d7d24d4bdd3110fa6ab9a
-ms.sourcegitcommit: 5058bc57cb53701ac409959b46767ae6fd56ba93
+ms.openlocfilehash: c32ecde3bc5929bc8ed360b1d792e5f2345bfd8f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "82861434"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223676"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -33,7 +33,7 @@ Die Entwicklung der erforderlichen Qualifikationen kann mit den folgenden Lernpf
   - [Verwenden der Azure CLI](https://www.linkedin.com/learning/learning-azure-management-tools/use-the-azure-cli)
   - [Erste Schritte mit Azure PowerShell](https://www.linkedin.com/learning/learning-azure-management-tools/understand-azure-powershell)
 
-- Informieren Sie sich darüber, wie Sie [Protokollabfragen in Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-queries) schreiben.  Die Kusto-Abfragesprache ist die Hauptressource für das Schreiben von Azure Monitor-Protokollabfragen, um Protokolldaten für die erfassten Daten aus Azure und die Abhängigkeiten von Hybridressourcenanwendungen (einschließlich Liveanwendung) zu untersuchen und zu analysieren.
+- Informieren Sie sich darüber, wie Sie [Protokollabfragen in Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-queries) schreiben. Die Kusto-Abfragesprache ist die Hauptressource für das Schreiben von Azure Monitor-Protokollabfragen, um Protokolldaten für die erfassten Daten aus Azure und die Abhängigkeiten von Hybridressourcenanwendungen (einschließlich Liveanwendung) zu untersuchen und zu analysieren.
 
 - Informieren Sie sich darüber, wie [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) Ihnen das Anzeigen der Verfügbarkeit und Leistung Ihrer Anwendungen und Dienste an einem zentralen Ort ermöglicht. Von Pluralsight werden die folgenden Kurse angeboten:
 
@@ -63,7 +63,7 @@ Mit unseren [Microsoft Azure-Zertifizierungstrainings und -prüfungen]( https://
 
 Die Hybrid Cloud-Umgebung bedeutet für die IT-Abteilung, dass nicht definierte Rollen, Zuständigkeiten und Aktivitäten bewältigt werden müssen. Organisationen müssen die Umstellung auf moderne Dienstverwaltungsverfahren vollziehen, z. B. in Bezug auf Agile- und DevOps-Methodiken, um die Transformations- und Optimierungsanforderungen heutiger Unternehmen schneller und effizienter erfüllen zu können.
 
-Im Rahmen der Migration zu einer Cloudüberwachungsplattform muss das IT-Team, das im Unternehmen für die Verwaltung der Überwachung zuständig ist, für flexible Schulungs- und Beteiligungsmöglichkeiten in Bezug auf DevOps-Aktivitäten sorgen. Hierbei kommt auch die *Dev*-Komponente von DevOps ins Spiel. Die üblichen Anforderungen werden in organisierte flexible Anforderungen umgewandelt, um minimal ausgestattete Überwachungslösungen bereitzustellen, die iterativ optimiert werden und die Bedürfnisse des Unternehmens erfüllen. Verknüpfen Sie Ihr Azure DevOps Server-Projekt mit einem GitHub Enterprise-Server-Repository, um die Verwaltung der iterativen Überwachungslösungspakete und anderer zugehöriger Materialien per Quellcodeverwaltung zu ermöglichen. Hierdurch wird eine Verknüpfung zwischen GitHub-Commits und Pull Requests für Arbeitselemente hergestellt. Sie können GitHub Enterprise für die Entwicklung verwenden, um Continuous Integration/Deployment zu Überwachungszwecken zu unterstützen, während Sie Azure Boards nutzen, um Ihre Arbeit zu planen und nachzuverfolgen.
+Im Rahmen der Migration zu einer Cloudüberwachungsplattform muss das IT-Team, das im Unternehmen für die Verwaltung der Überwachung zuständig ist, für flexible Schulungs- und Beteiligungsmöglichkeiten in Bezug auf DevOps-Aktivitäten sorgen. Hierbei kommt auch die _Dev_-Komponente von DevOps ins Spiel. Die üblichen Anforderungen werden in organisierte flexible Anforderungen umgewandelt, um minimal ausgestattete Überwachungslösungen bereitzustellen, die iterativ optimiert werden und die Bedürfnisse des Unternehmens erfüllen. Verknüpfen Sie Ihr Azure DevOps Server-Projekt mit einem GitHub Enterprise-Server-Repository, um die Verwaltung der iterativen Überwachungslösungspakete und anderer zugehöriger Materialien per Quellcodeverwaltung zu ermöglichen. Hierdurch wird eine Verknüpfung zwischen GitHub-Commits und Pull Requests für Arbeitselemente hergestellt. Sie können GitHub Enterprise für die Entwicklung verwenden, um Continuous Integration/Deployment zu Überwachungszwecken zu unterstützen, während Sie Azure Boards nutzen, um Ihre Arbeit zu planen und nachzuverfolgen.
 
 Weitere Informationen finden Sie in den folgenden Artikeln:
 

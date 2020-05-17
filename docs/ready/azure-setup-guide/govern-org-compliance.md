@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 4dea8b186d2c37f614be364c605144a744479990
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e7b5811099119e3f3b1c148ae550bd92e8fc8090
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433205"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223251"
 ---
 <!-- cSpell:ignore tvuylsteke >
 
@@ -54,7 +54,7 @@ So erstellen Sie eine Blaupause
 
 ::: zone target="docs"
 
-1. Wechseln Sie zu [Blaupausen – Erste Schritte](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted).
+1. Wechseln Sie zu [Blaupausen: Erste Schritte](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted).
 1. Wählen Sie im Abschnitt **Blaupause erstellen** die Option **Erstellen** aus.
 1. Filtern Sie die Liste mit den Blaupausen, um die gewünschte Blaupause auszuwählen.
 1. Geben Sie unter **Name der Blaupause** den Namen ein, und wählen Sie anschließend den entsprechenden **Definitionsspeicherort** aus.
@@ -162,8 +162,8 @@ Weitere Informationen finden Sie unter:
 
 - [Azure Security Center](https://docs.microsoft.com/azure/security-center)
 - [Just-in-Time-VM-Zugriff](https://docs.microsoft.com/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
-- [Vergleich: Standard- und Free-Tarif](https://azure.microsoft.com/pricing/details/security-center)
-- [Cloud Adoption Framework: Governancedisziplin „Sicherheitsbaseline“](../../govern/security-baseline/index.md)
+- [Security Center – Preise](https://azure.microsoft.com/pricing/details/security-center)
+- [Cloud Adoption Framework: Disziplin „Sicherheitsbaseline“](../../govern/security-baseline/index.md)
 
 ::: zone-end
 

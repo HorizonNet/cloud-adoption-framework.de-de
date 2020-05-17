@@ -3,109 +3,33 @@ title: Governance für die Einführung der Microsoft Cloud für Azure (Microsoft
 description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um zu erfahren, wie Sie vorhandene Richtlinien bewerten, eine anfängliche Governancegrundlage erstellen und iterativ Governancetools hinzufügen.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 09/11/2019
-ms.topic: landing-page
+ms.date: 05/04/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-layout: LandingPage
-ms.openlocfilehash: 75b2269c4db348ab6a110309490187ef44b55f6c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 37c7b219699d2d70c1f0493fbb146933f8eeee21
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "77706930"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218661"
 ---
 # <a name="governance-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Governance für die Einführung der Microsoft Cloud für Azure (Microsoft Cloud Adoption Framework)
 
 Die Cloud schafft neue Paradigmen für die Technologien, die das Unternehmen unterstützen. Diese neuen Paradigmen verändern auch die Einführung, Verwaltung und Steuerung dieser Technologien. Wenn ganze Datencenter mit einer einzigen, durch einen unbeaufsichtigten Prozess ausgeführten Codezeile zerstört und neu aufgebaut werden können, müssen wir die traditionellen Ansätze überdenken. Das gilt insbesondere für die Governance.
 
-## <a name="get-started-with-cloud-governance"></a>Erste Schritte bei der Cloudgovernance
-
 Cloudgovernance ist ein iterativer Prozess. Bei Organisationen mit vorhandenen Richtlinien zum Steuern lokaler IT-Umgebungen sollte die Cloudgovernance diese Richtlinien ergänzen. Der Grad der Integration von Unternehmensrichtlinien zwischen lokalen Systemen und der Cloud hängt jedoch von der Ausgereiftheit der Cloudgovernance und den digitalen Ressourcen in der Cloud ab. Mit der Änderung der Cloudressourcen im Laufe der Zeit ändern sich auch Cloudgovernanceprozesse und -richtlinien. Die folgenden Aufgaben unterstützen Sie bei der Einrichtung Ihrer anfänglichen Governancegrundlage.
 
 <!-- markdownlint-disable MD033 -->
+<!-- docsTest:disable TODO -->
 
-<ul class="panelContent cardsF">
-    <li style="display: flex; flex-direction: column;">
-        <a href="./methodology.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/1.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Methodik</h3>
-Entwickeln Sie ein Grundverständnis der Methodik, die der Cloudgovernance im Framework für die Cloudeinführung zugrunde liegt, um eine Lösung für den Endzustand zu planen.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./benchmark.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/2.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Vergleichstest</h3>
-Bewerten Sie den Ist- und Sollzustand, um sich vorstellen zu können, wie das Framework angewendet werden kann.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./initial-foundation.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/3.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Anfängliche Governancegrundlage</h3>
-Beschränken Sie sich bei Ihren Governancebemühungen zunächst auf eine geringe Anzahl problemlos implementierbarer Governancetools. Diese anfängliche Governancegrundlage wird als MVP (Minimum Viable Product) bezeichnet.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./foundation-improvements.md">
-            <div class="cardSize">
-                <div class="cardPadding" style="padding-bottom:10px;">
-                    <div class="card" style="padding-bottom:10px;">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img alt="" src="../_images/icons/4.png" data-linktype="external">
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Verbessern der anfänglichen Governancegrundlage</h3>
-Fügen Sie während der gesamten Umsetzung des Cloudeinführungsplans nach und nach Governancekontrollen hinzu, um im Rahmen des gesamten Prozesses materielle Risiken abzudecken.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
-
-<!-- markdownlint-enable MD033 -->
+| | |
+|---|---|
+| ![1](../_images/icons/1.png)     | <br>[Methodik](./methodology.md): Entwickeln Sie ein Grundverständnis der Methodik, die der Cloudgovernance im Framework für die Cloudeinführung zugrunde liegt, um eine Lösung für den Endzustand zu planen.                                |
+| ![2](../_images/icons/2.png)     | <br>[Vergleichstest](./benchmark.md): Bewerten Sie den Ist- und Sollzustand, um sich vorstellen zu können, wie das Framework angewendet werden kann.                                |
+| ![3](../_images/icons/3.png)     | <br>[Anfängliche Governancegrundlage](./initial-foundation.md): Beschränken Sie sich bei Ihren Governancebemühungen zunächst auf eine geringe Anzahl problemlos implementierbarer Governancetools. Diese anfängliche Governancegrundlage wird als MVP (Minimum Viable Product) bezeichnet.                                |
+| ![4](../_images/icons/4.png)      | <br>[Verbessern der anfänglichen Governancegrundlage](./foundation-improvements.md): Fügen Sie während der gesamten Umsetzung des Cloudeinführungsplans nach und nach Governancekontrollen hinzu, um im Rahmen des gesamten Prozesses materielle Risiken abzudecken.  |
 
 ## <a name="objective-of-this-content"></a>Ziel dieses Inhalts
 
@@ -122,17 +46,10 @@ Die Inhalte im CAF (Cloud Adoption Framework) beeinflussen das Geschäft, die Te
 
 Der Cloudarchitekt dient als innovative Führungsperson und Vermittler, um diese Zielgruppen zusammenzubringen. Diese Anleitungen sind darauf ausgelegt, Cloudarchitekten die richtige Kommunikation mit der richtigen Zielgruppe zu erleichtern, um notwendige Entscheidungen zu fördern. Um eine durch die Cloud ermöglichte Transformation der Geschäftsabläufe umzusetzen, müssen Cloudarchitekten die betroffenen Teams in allen Geschäfts- und IT-Abteilungen bei ihren Entscheidungen unterstützen.
 
-**Spezialisierungen des Cloudarchitekten in diesem Abschnitt**: Jeder Abschnitt des Frameworks für die Cloudeinführung stellt eine andere Spezialisierung oder Variante der Rolle des Cloudarchitekten dar. Dieser Abschnitt des Cloud Adoption Frameworks für die Einführung der Cloud richtet sich beispielsweise an Cloudarchitekten mit Schwerpunkt auf Verringerung technischer Risiken. Einige Cloudanbieter bezeichnen diese Spezialisten als *Cloudverwalter*, wir bevorzugen allerdings die Begriffe *Cloudwächter* bzw. kollektiv *Cloudgovernanceteam*. In den einzelnen umsetzbaren Governanceleitfäden zeigen die Artikel, wie sich die Zusammensetzung und Rolle des Cloudgovernanceteams im Lauf der Zeit verändern kann.
+**Spezialisierungen des Cloudarchitekten in diesem Abschnitt**: Jeder Abschnitt des Frameworks für die Cloudeinführung stellt eine andere Spezialisierung oder Variante der Rolle des Cloudarchitekten dar. Dieser Abschnitt des Cloud Adoption Frameworks für die Einführung der Cloud richtet sich beispielsweise an Cloudarchitekten mit Schwerpunkt auf Verringerung technischer Risiken. Einige Cloudanbieter bezeichnen diese Spezialisten als _Cloudverwalter_, wir bevorzugen allerdings die Begriffe _Cloudwächter_ bzw. kollektiv _Cloudgovernanceteam_. In den einzelnen umsetzbaren Governanceleitfäden zeigen die Artikel, wie sich die Zusammensetzung und Rolle des Cloudgovernanceteams im Lauf der Zeit verändern kann.
 
 ## <a name="use-this-guide"></a>Verwenden dieses Leitfadens
 
-Wenn Sie dem Leitfaden vom Anfang bis zum Ende folgen, helfen diese Inhalte Ihnen dabei, parallel zur Cloudimplementierung eine robuste Cloudgovernancestrategie zu entwickeln. Sie werden detailliert durch die Theorie und Implementierung einer solchen Strategie geleitet.
+Wenn Sie die Inhalte der Governancemethodik vollständig lesen, können Sie parallel zur Cloudimplementierung eine solide Cloudgovernancestrategie entwickeln. In diesem Leitfaden werden Sie durch die Theorie und Implementierung einer solchen Strategie geführt.
 
 Einen Crashkurs zur Theorie und zum schnellen Einstieg in die Azure-Implementierung finden Sie in der [Übersicht über die Governanceleitfäden](./guides/index.md). Mit diesem Leitfaden können Sie klein anfangen und Ihre Governanceanforderungen parallel zu den Cloudeinführungsprojekten iterativ optimieren.
-
-## <a name="next-steps"></a>Nächste Schritte
-
-Entwickeln Sie ein Grundverständnis der Methodik, die der Cloudgovernance im Framework für die Cloudeinführung zugrunde liegt.
-
-> [!div class="nextstepaction"]
-> [Grundlegendes zur Methodik](./methodology.md)

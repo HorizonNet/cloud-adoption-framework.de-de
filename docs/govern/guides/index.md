@@ -9,16 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: ff7b8669d71f72b87bbfcc3377dc5bf439311987
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d3f664aa94228da83ee86fd51392958341269c1e
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995281"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214734"
 ---
 # <a name="cloud-governance-guides"></a>Cloudgovernance-Leitfäden
 
-Die direkt umsetzbaren Governanceleitfäden in diesem Abschnitt veranschaulichen den inkrementellen Ansatz des Governancemodells des Frameworks für die Cloudeinführung (Cloud Adoption Framework) basierend auf der zuvor beschriebenen [Governancemethodik](../methodology.md). Sie können einen agilen Ansatz für Cloudgovernance entwickeln, der sich anpasst, um den Anforderungen jedes Cloudgovernanceszenarios gerecht zu werden.
+Die direkt umsetzbaren Governanceleitfäden in diesem Abschnitt veranschaulichen den inkrementellen Ansatz des Cloud Adoption Framework-Governancemodells basierend auf der zuvor beschriebenen [Governancemethodik](../methodology.md). Sie können einen agilen Ansatz für Cloudgovernance entwickeln, der sich anpasst, um den Anforderungen jedes Cloudgovernanceszenarios gerecht zu werden.
 
 ## <a name="review-and-adopt-cloud-governance-best-practices"></a>Überprüfen und Einführen bewährter Methoden für Cloud Governance
 
@@ -67,8 +67,11 @@ Die Leitfäden veranschaulichen, wie ein Governance-MVP implementiert wird. Von 
 
 Um mit einer Governancelösung zu beginnen, wählen Sie eine der beiden folgenden Optionen aus. Die Optionen basieren auf synthetisierten Kundenerfahrungen. Die Titel basieren auf der Komplexität des Unternehmens zur Vereinfachung der Navigation. Die Entscheidung des Lesers kann jedoch komplexer sein. Die folgenden Tabellen zeigen die Unterschiede zwischen den beiden Optionen.
 
+<!-- TODO: Refactor VDC content below. -->
+<!-- docsTest:ignore "Azure Virtual Datacenter" -->
+
 > [!WARNING]
-> Ein robusterer Ausgangspunkt für die Governance kann erforderlich sein. Beachten Sie in solchen Fällen das Modell des [virtuellen Azure-Rechenzentrums](#azure-virtual-datacenter), das [weiter unten](#azure-virtual-datacenter) kurz beschrieben wird. Dieser Ansatz wird häufig bei einer unternehmensweiten Einführung vorgeschlagen, insbesondere bei einem Umfang von über 10.000 Ressourcen. Er ist im Allgemeinen auch die erste Wahl für komplexe Governanceszenarien, wenn eine der folgenden Anforderungen erfüllt sein muss: umfangreiche Complianceanforderungen von Drittanbietern, tiefgreifendes Fachwissen oder Parität mit ausgereiften IT-Governancerichtlinien und Complianceanforderungen.
+> Ein robusterer Ausgangspunkt für die Governance kann erforderlich sein. Beachten Sie in solchen Fällen das Modell des [virtuellen Azure-Rechenzentrums](#azure-virtual-datacenter), das [weiter unten](#azure-virtual-datacenter) kurz beschrieben wird. Dieser Ansatz wird häufig bei einer unternehmensweiten Einführung vorgeschlagen, insbesondere bei einem Umfang von über 10.000 Ressourcen. Er ist auch die Standardwahl bei komplexen Governanceszenarien, wenn eine der folgenden Anforderungen erfüllt werden muss: umfangreiche Complianceanforderungen von Drittanbietern, tiefgreifendes Fachwissen oder Parität mit ausgereiften IT-Governancerichtlinien und Complianceanforderungen.
 
 <!-- markdownlint-disable MD028 -->
 
@@ -96,8 +99,8 @@ Um mit einer Governancelösung zu beginnen, wählen Sie eine der beiden folgende
 
 | State | Standardorganisation | Komplexes Unternehmen |
 |---|---|---|
-| Kostenverwaltung – Cloudabrechnung | Showbackmodell Abrechnung wird über IT zentralisiert. | Chargebackmodell Die Abrechnung kann durch IT-Beschaffung verteilt werden. |
-| Sicherheitsbaseline – geschützte Daten | Unternehmensfinanzdaten und IP. Eingeschränkte Kundendaten. Keine Complianceanforderungen von Drittanbietern. | Mehrere Sammlungen von Finanzdaten und personenbezogenen Daten von Kunden. Möglicherweise muss Drittanbietercompliance berücksichtigt werden. |
+| Kostenverwaltung&mdash;Cloudabrechnung | Showbackmodell Abrechnung wird über IT zentralisiert. | Chargebackmodell Die Abrechnung kann durch IT-Beschaffung verteilt werden. |
+| Sicherheitsbaseline&mdash;geschützte Daten | Unternehmensfinanzdaten und IP. Eingeschränkte Kundendaten. Keine Complianceanforderungen von Drittanbietern. | Mehrere Sammlungen von Finanzdaten und personenbezogenen Daten von Kunden. Möglicherweise muss Drittanbietercompliance berücksichtigt werden. |
 
 ## <a name="azure-virtual-datacenter"></a>Virtuelles Azure-Rechenzentrum
 
@@ -115,7 +118,7 @@ Obwohl kleinere Teams von den Modellen und Empfehlungen des virtuellen Azure-Rec
 
 - Ihr Unternehmen unterliegt gesetzlichen Bestimmungen, die eine zentrale Überwachung erfordern.
 - Sie müssen die Einhaltung allgemeiner Richtlinien und Governancebestimmungen sowie die zentrale IT-Kontrolle über die wichtigsten Dienste sicherstellen.
-- Ihre Branche hängt von einer komplexen Plattform ab, die umfassende Steuerungsmechanismen und tiefgehendes Fachwissen erfordert. Dies ist am häufigsten bei großen Unternehmen im Bereich Finanzen, Öl und Gas oder Herstellung der Fall.
+- Ihre Branche hängt von einer komplexen Plattform ab, die umfassende Steuerungsmechanismen und tiefgehendes Fachwissen erfordert. Dies ist am häufigsten bei großen Unternehmen in den Bereichen Finanzen, Herstellung, und Öl und Gas der Fall.
 - Ihre bestehenden IT-Governancerichtlinien erfordern eine engere Parität mit bestehenden Funktionen, auch in frühen Phasen der Einführung.
 
 Weitere Informationen finden Sie im Artikel zum Framework für die Cloudeinführung im Abschnitt zum [virtuellen Azure-Rechenzentrum](../../reference/vdc.md).

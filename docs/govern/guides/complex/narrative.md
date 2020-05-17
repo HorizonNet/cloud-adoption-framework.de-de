@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: da021a6e1a4467189d20d3cb05e7ccdbb0b5a3b6
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 1760f21d464627a81a4388a094f1ef39ade3e075
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995402"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220106"
 ---
 <!-- cSpell:ignore CDO's CIO's -->
 
@@ -23,11 +23,11 @@ Die folgende Geschichte schildert einen Anwendungsfall für die [Governance wäh
 
 ## <a name="back-story"></a>Hintergrund
 
-Bei der Interaktion mit diesem Unternehmen verlangen Kunden nach mehr Benutzerfreundlichkeit. Die aktuelle Oberfläche führte zum Marktzerfall und hat den Vorstand zur Einstellung eines Chief Digital Officer (CDO) veranlasst. Der CDO arbeitet mit den Abteilungen für Marketing und Vertrieb, um eine digitale Transformation voranzutreiben und ein besseres Benutzererlebnis zu ermöglichen. Darüber hinaus habe mehrere Unternehmenseinheiten vor kurzem Data Scientists eingestellt, um Daten zu pflegen und zahlreiche manuelle Funktionen durch Lernen und Vorhersagen zu verbessern. Die IT-Abteilung unterstützt diese Aktivitäten so umfassend wie möglich. Es gibt jedoch „Schatten-IT-Aktivitäten“, die außerhalb der erforderlichen Governance- und Sicherheitskontrollen stattfinden.
+Bei der Interaktion mit diesem Unternehmen verlangen Kunden nach mehr Benutzerfreundlichkeit. Die aktuelle Oberfläche führte zum Marktzerfall und hat den Vorstand zur Einstellung eines Chief Digital Officers (CDO) veranlasst. Der CDO arbeitet mit den Marketing- und Vertriebsmitarbeitern zusammen, um eine digitale Transformation voranzutreiben, die benutzerfreundlichere Oberflächen unterstützt. Darüber hinaus habe mehrere Unternehmenseinheiten vor kurzem Data Scientists eingestellt, um Daten zu pflegen und zahlreiche manuelle Funktionen durch Lernen und Vorhersagen zu verbessern. Die IT-Abteilung unterstützt diese Aktivitäten so umfassend wie möglich. Es gibt jedoch „Schatten-IT-Aktivitäten“, die außerhalb der erforderlichen Governance- und Sicherheitskontrollen stattfinden.
 
 Außerdem hat die IT-Organisation ihre eigenen Herausforderungen zu meistern. Die Finanzabteilung plant Kürzungen des IT-Budgets in den nächsten fünf Jahren, die ab diesem Jahr zu Einschnitten in den Ausgaben führen. Im Gegensatz dazu zwingen DSGVO und andere Anforderungen an die Datenhoheit die IT-Abteilung zu Investitionen in Ressourcen in weiteren Ländern, um Daten lokalisieren zu lassen. In zwei der bestehenden Rechenzentren sind Hardwareaktualisierungen überfällig, was zu Problemen bei der Zufriedenheit von Mitarbeitern und Kunden führt. Für drei weitere Rechenzentren sind Hardwareaktualisierungen im Rahmen der Ausführung des Fünf-Jahres-Plans erforderlich. Der Leiter der Finanzabteilung (CFO) drängt die Leiterin der IT-Abteilung (CIO) dazu, die Cloud als Alternative für diese Rechenzentren in Betracht zu ziehen, um Kapital freizugeben.
 
-Die CIO hat innovative Ideen, die dem Unternehmen helfen können, ist jedoch zusammen mit ihren Teams damit ausgelastet, akute Brände zu löschen und Kosten zu kontrollieren. Bei einem Mittagessen mit dem CDO und einem der Leiter einer Unternehmenseinheit konnte die CIO im Gespräch über die Cloudmigration das Interesse der beiden Kollegen wecken. Die drei Führungskräfte möchten sich mithilfe der Cloud gegenseitig dabei unterstützen, ihre Geschäftsziele zu erreichen, und haben die Untersuchungs- und die Planungsphase der Cloudeinführung eingeleitet.
+Die CIO hat innovative Ideen, die dem Unternehmen helfen können, ist jedoch zusammen mit ihren Teams damit ausgelastet, akute Brände zu löschen und Kosten zu kontrollieren. Bei einem Mittagessen mit dem CDO und einem der Leiter einer Unternehmenseinheit konnte das Gespräch über die Cloudmigration das Interesse der Kollegen des CIO wecken. Die drei Führungskräfte möchten sich mithilfe der Cloud gegenseitig dabei unterstützen, ihre Geschäftsziele zu erreichen, und haben die Untersuchungs- und die Planungsphase der Cloudeinführung eingeleitet.
 
 ## <a name="business-characteristics"></a>Geschäftsmerkmale
 
@@ -43,7 +43,7 @@ Aktuell befinden sich IT und Cloudbetrieb des Unternehmens in folgendem Zustand:
 
 - Die IT betreibt auf der ganzen Welt mehr als 20 Rechenzentren in Privatbesitz.
 - Aufgrund des natürlichen Wachstums und mehrere geografische Regionen gibt es nur wenige IT-Teams mit eindeutigen Anforderungen für Datenhoheit und Compliance für eine einzelne Geschäftseinheit innerhalb einer bestimmten geografischen Region.
-- Jedes Rechenzentrum ist über einer Reihe regionaler Standleitungen verbunden und erstellt so ein lose gekoppeltes globale WAN.
+- Jedes Rechenzentrum ist über einer Reihe regionaler Mietleitungen verbunden, wodurch ein locker gekoppeltes globales WAN entsteht.
 - Die IT hat die Cloud eingeführt, indem alle E-Mail-Konten der Endbenutzer zu Office 365 migriert wurden. Diese Migration wurde vor mehr als sechs Monaten abgeschlossen. Seit damals wurden nur wenige IT-Ressourcen in der Cloud bereitgestellt.
 - Das primäre Entwicklungsteam des CDO arbeitet in einer Dev/Test-Kapazität, um die nativen Cloudfunktionen kennenzulernen.
 - Eine Unternehmenseinheit experimentiert mit Big Data in der Cloud. Das BI-Team innerhalb der IT ist an diesen Bestrebungen beteiligt.
@@ -55,11 +55,11 @@ Aktuell befinden sich IT und Cloudbetrieb des Unternehmens in folgendem Zustand:
 
 Die folgenden Änderungen werden in den nächsten Jahren erwartet:
 
-- Die CIO leitet eine Maßnahme zum Modernisieren der Richtlinie zu personenbezogenen Informationen und Finanzdaten, um zukünftige Ziele zu unterstützen. Zwei Mitgliedern des IT-Governanceteams sind in diese Bemühungen involviert.
+- Die CIO leitet eine Maßnahme zum Modernisieren der Richtlinie zu personenbezogenen Informationen und Finanzdaten, um zukünftige Ziele zu unterstützen. Zwei Mitglieder des IT-Governanceteams haben Einblick in diese Bemühungen.
 - Der IT-Abteilungsleiter möchte die Cloudmigration als richtungsweisend verstanden wissen, um die Konsistenz und Stabilität für alle Geschäftseinheiten und geografischen Regionen zu verbessern. Allerdings muss der zukünftige Status externe Complianceanforderungen berücksichtigen, die eine Abkehr von den bestehenden Ansätzen bestimmter IT-Teams erfordern.
-- Wenn die frühen Experimente in den Bereichen App-Entwicklung und BI erfolgsversprechend sind, sollen in den nächsten 24 Monaten jeweils kleine Produktionslösungen in der Cloud freigegeben werden.
-- Die CIO und der CFO haben einen Architekten und den Vice President of Infrastructure beauftragt, eine Kostenanalyse und eine Machbarkeitsstudie anzufertigen. Diese Bemühungen werden entscheiden, ob das Unternehmen in den nächsten 36 Monaten 5.000 Ressourcen in die Cloud verschieben kann und soll. Durch eine erfolgreiche Migration kann die CIO zwei Rechenzentren aufgeben und damit die Kosten im Laufe des Fünf-Jahres-Plans um mehr als 100 Millionen US-Dollar senken. Wenn drei bis vier Rechenzentren ähnliche Ergebnisse erzielen können, ist das Budget wieder in den schwarzen Zahlen und ermöglicht der CIO die Unterstützung weiterer innovativer Initiativen.
-    ![Lokale Kosten im Vergleich zu Azure-Kosten zeigen eine Rendite von 100 Millionen USD in den nächsten fünf Jahren.](../../../_images/govern/calculator-enterprise.png)
+- Wenn die frühen Experimente in den Bereichen App-Entwicklung und BI erfolgsversprechend sind, sollen in den nächsten 24 Monaten jeweils kleine Produktionslösungen in der Cloud freigegeben werden.
+- Der CIO und der CFO haben einen Architekten und den Vice President of Infrastructure beauftragt, eine Kostenanalyse und eine Machbarkeitsstudie durchzuführen. Diese Bemühungen werden entscheiden, ob das Unternehmen in den nächsten 36 Monaten 5.000 Ressourcen in die Cloud verschieben kann und soll. Bei einer erfolgreichen Migration könnte der CIO zwei Rechenzentren aufgeben und dadurch die Kosten im Laufe des Fünf-Jahres-Plans um mehr als 100 Millionen US-Dollar senken. Wenn drei bis vier Rechenzentren ähnliche Ergebnisse erzielen können, ist das Budget wieder in den schwarzen Zahlen und ermöglicht der CIO die Unterstützung weiterer innovativer Initiativen.
+    ![Lokale Kosten im Vergleich zu Azure-Kosten zeigen eine Rendite von 100 Millionen US-Dollar in den nächsten fünf Jahren.](../../../_images/govern/calculator-enterprise.png)
 - Neben diesen Kosteneinsparungen plant das Unternehmen, die Verwaltung einiger IT-Investitionen zu ändern, indem die gebundenen Kapitalkosten als Betriebskosten innerhalb der IT umdefiniert werden. Diese Änderung ermöglicht mehr Kostenkontrolle, sodass die IT weitere geplante Aufwendungen beschleunigen kann.
 
 ## <a name="next-steps"></a>Nächste Schritte

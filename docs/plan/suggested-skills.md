@@ -1,25 +1,25 @@
 ---
 title: Erste Schritte mit dem Pfad für die Qualifikationsbereitschaft
-description: Nutzen Sie den Pfad für die Qualifikationsbereitschaft, und übernehmen Sie bei der Einführung von Clouddiensten eine Führungsrolle, indem Sie der Organisation dabei helfen, die entsprechenden Veränderungen zu verstehen und umzusetzen.
+description: Nutzen Sie den Pfad für die Qualifikationsbereitschaft, und übernehmen Sie bei der Einführung von Clouddiensten eine Führungsrolle, indem Sie den Mitarbeitern der Organisation dabei helfen, die entsprechenden Veränderungen zu verstehen und umzusetzen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 03/23/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: ab1cb0e0f98001c6095c5774270ff47e0b088cb3
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e12898f47ce75f6a42ba7f0379e197e266271588
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427942"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223438"
 ---
-# <a name="getting-started-on-a-skills-readiness-path"></a>Erste Schritte mit dem Pfad für die Qualifikationsbereitschaft
+# <a name="get-started-on-a-skills-readiness-path"></a>Erste Schritte mit dem Pfad für die Qualifikationsbereitschaft
 
 IT-Mitarbeiter machen sich möglicherweise Sorgen um ihre Rollen und Positionen, da ihnen bewusst wird, dass für die Unterstützung von Cloudlösungen andere Qualifikationen erforderlich sind. Flexible Mitarbeiter, die sich für neue Cloudtechnologien interessieren und sich mit ihnen vertraut machen, müssen sich keine Gedanken machen. Sie können bei der Einführung von Clouddiensten eine Führungsrolle übernehmen, indem sie der Organisation dabei helfen, die entsprechenden Veränderungen zu verstehen und umzusetzen.
 
 ![Zuordnen von Qualifikationen zu IT-Rollen in einer in der Cloud gehosteten Umgebung](../_images/skills-guidance.png)
-*Abbildung 1: Zuordnen von Qualifikationen zu IT-Rollen in einer in der Cloud gehosteten Umgebung.*
+_Abbildung 1: Zuordnen von Qualifikationen zu IT-Rollen in einer in der Cloud gehosteten Umgebung._
 
 Das Cloud Adoption Framework führt den Leser durch den gesamten Einführungszyklus. In diesem Framework erhalten die Leser die Möglichkeit, die erforderlichen Qualifikationen zu erwerben. Um Ihnen die ersten Schritte auf diesem Weg zu erleichtern, sind Artikel zur Qualifikationsbereitschaft in der folgenden Übersicht enthalten, um den Zugriff zu vereinfachen. Jeder der folgenden Links zeigt die Qualifikationen, die erforderlich sind, um in jeder dieser Einführungsphasen erfolgreich zu sein.
 
@@ -41,12 +41,14 @@ Jeder der zuvor genannten Lernpfade teilt die Lernmöglichkeiten über mehrere M
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
 Microsoft Learn ist ein neuer Lernansatz. Die Bereitschaft zu den neuen Qualifikationen und Aufgaben, die mit der Cloudeinführung verbunden sind, entsteht nicht problemlos. Microsoft Learn bietet einen lohnenderen Ansatz für praktisches Lernen, der Ihnen hilft, Ihre Ziele schneller zu erreichen. Punkte sammeln, zu höheren Stufen aufsteigen und mehr erreichen.
-Hier folgen einige Beispiele für angepasste Lernpfade auf Microsoft Learn, die sich am Plan-Abschnitt des Framework für die Cloudeinführung (Cloud Adoption Framework) ausrichten:
+Nachfolgend finden Sie einige Beispiele für angepasste Lernpfade auf Microsoft Learn, die sich an der Planungsmethodik des Cloud Adoption Framework ausrichten:
 
-[Weiterentwickeln Ihrer DevOps-Methoden](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices): DevOps vereint Personen, Prozesse und Produkte, um hochwertige Continuous Delivery-Prozesse an Endbenutzer zu ermöglichen. Azure DevOps umfasst eine Reihe von Diensten, die Ihnen die erforderlichen Tools für diese Aufgaben zur Verfügung stellen. Mit Azure DevOps können Sie jede Anwendung erstellen, testen und bereitstellen (in der Cloud oder lokal).
+<!-- docsTest:ignore "on premises" -->
 
-[Azure für den Datentechniker](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer): Erfahren Sie, wie sich die Welt der Daten entwickelt hat und wie das Aufkommen von Cloudtechnologien neue Möglichkeiten für Unternehmen eröffnet. Sie werden die verschiedenen verfügbaren Datenplattformtechnologien kennenlernen und erfahren, wie ein Datentechniker die Vorteile dieser Technologie für ein Unternehmen nutzen kann.
+[Weiterentwickeln Ihrer DevOps-Methoden](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices): DevOps vereint Personen, Prozesse und Produkte, um wertvolle Continuous Delivery für Ihre Endbenutzer zu ermöglichen. Azure DevOps umfasst eine Reihe von Diensten, die Ihnen die erforderlichen Tools für diese Aufgaben zur Verfügung stellen. Mit Azure DevOps können Sie jede beliebige Anwendung in der Cloud oder lokal erstellen, testen und bereitstellen.
+
+[Azure für Data Engineers](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer): Erfahren Sie, wie sich die Welt der Daten entwickelt hat und wie die Einführung von Cloudtechnologien Unternehmen neue Möglichkeiten eröffnet. Sie lernen die verschiedenen verfügbaren Datenplattformtechnologien kennen und erfahren, wie ein Data Engineer diese Technologien zum Vorteil einer Organisation nutzen kann.
 
 ## <a name="learn-more"></a>Weitere Informationen
 
-Weitere Lernpfade finden Sie im [Microsoft Learn-Katalog](https://docs.microsoft.com/learn/browse). Verwenden Sie den Filter „Rollen“, um Lernpfade an ihrer Rolle auszurichten.
+Weitere Lernpfade finden Sie im [Microsoft Learn-Katalog](https://docs.microsoft.com/learn/browse). Verwenden Sie den Filter „Rollen“, um Lernpfade an Ihrer Rolle auszurichten.

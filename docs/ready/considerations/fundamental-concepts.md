@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: ed8d8511cbdac9996ff61688b4e6d783877e9d9c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 869b3b9e0a283ce28c6fba7807d0282dcb53d9cf
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997519"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216332"
 ---
 # <a name="azure-fundamental-concepts"></a>Grundlegende Konzepte in Azure
 
@@ -37,7 +37,7 @@ Es ist hilfreich, die folgenden Definitionen zu kennen, wenn Sie mit der Einfüh
 
 Ein Azure-Abonnement dient verschiedenen Zwecken. Ein Azure-Abonnement ist:
 
-- **Eine rechtsgültige Vereinbarung**. Jedes Abonnement ist einem [Azure-Angebot](https://azure.microsoft.com/support/legal/offer-details) zugeordnet (z.B. „Kostenlose Testversion“ oder „Nutzungsbasierte Zahlung“). Jedes Angebot umfasst einen spezifischen Tarifplan, spezifische Vorteile und zugehörige Nutzungsbedingungen. Sie wählen ein Azure-Angebot aus, wenn Sie ein Abonnement erstellen.
+- **Eine rechtsgültige Vereinbarung**. Jedes Abonnement ist einem [Azure-Angebot](https://azure.microsoft.com/support/legal/offer-details) zugeordnet, z. B. „Kostenlose Testversion“ oder „Nutzungsbasierte Zahlung“. Jedes Angebot umfasst einen spezifischen Tarifplan, spezifische Vorteile und zugehörige Nutzungsbedingungen. Sie wählen ein Azure-Angebot aus, wenn Sie ein Abonnement erstellen.
 - **Eine Zahlungsvereinbarung**. Wenn Sie ein Abonnement erstellen, geben Sie Zahlungsinformationen für dieses Abonnement an, z.B. eine Kreditkartennummer. Die Kosten, die aufgrund der bereitgestellten Ressourcen in diesem Abonnement anfallen, werden monatlich berechnet und über die angegebene Zahlungsmethode in Rechnung gestellt.
 - **Eine Umfangsbegrenzung**. Skalierungsgrenzwerte werden für ein Abonnement definiert. Die Ressourcen des Abonnements dürfen die festgelegten Skalierungsgrenzwerte nicht überschreiten. Beispielsweise gilt eine Beschränkung für die Anzahl virtueller Computer, die Sie in einem einzelnen Abonnement erstellen können.
 - **Eine administrative Grenze**. Ein Abonnement kann als Grenze für Verwaltung, Sicherheit und Richtlinien fungieren. Azure bietet auch andere Mechanismen zum Erfüllen dieser Anforderungen, z.B. Verwaltungsgruppen, Ressourcengruppen und rollenbasierte Zugriffssteuerung.
@@ -50,7 +50,7 @@ Wenn Sie ein Azure-Abonnement erstellen, treffen Sie einige wichtige Entscheidun
 - **Welches Azure-Angebot interessiert mich?** Jedes Abonnement ist einem bestimmten [Azure-Angebot](https://azure.microsoft.com/support/legal/offer-details) zugeordnet. Sie können das Azure-Angebot auswählen, das Ihre Anforderungen am besten erfüllt. Wenn Sie z. B. beabsichtigen, ein Abonnement zum Ausführen von Nichtproduktionsworkloads zu verwenden, sollten Sie sich für das Angebot „Dev/Test Pay-As-You-Go“ oder „Enterprise Dev/Test“ entscheiden.
 
 > [!NOTE]
-> Wenn Sie sich für Azure registrieren, werden ggf. Optionen wie *Azure-Konto erstellen* angezeigt. Sie erstellen ein Azure-Konto, wenn Sie ein Azure-Abonnement erstellen und das Abonnement einem E-Mail-Konto zuordnen.
+> Wenn Sie sich für Azure registrieren, werden ggf. Optionen wie _Azure-Konto erstellen_ angezeigt. Sie erstellen ein Azure-Konto, wenn Sie ein Azure-Abonnement erstellen und das Abonnement einem E-Mail-Konto zuordnen.
 
 ## <a name="azure-administrative-roles"></a>Azure-Administratorrollen
 
@@ -83,7 +83,7 @@ Ein Abonnement ist nicht an eine bestimmte Azure-Region gebunden. Allerdings wir
 
 Die folgenden Ressourcen bieten detaillierte Informationen über die Konzepte, die in diesem Artikel vorgestellt wurden:
 
-- [Wie funktioniert Azure?](../../getting-started/what-is-azure.md)
+- [Wie funktioniert Azure?](../../get-started/what-is-azure.md)
 - [Ressourcenzugriffsverwaltung in Azure](../../govern/resource-consistency/resource-access-management.md)
 - [Übersicht über den Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)
 - [Rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC) für Azure-Ressourcen](https://docs.microsoft.com/azure/role-based-access-control/overview)

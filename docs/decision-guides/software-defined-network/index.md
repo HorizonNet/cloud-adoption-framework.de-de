@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 18151d68f425f5fa6d966e847b1f6131cb8f838b
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8f90848374e4d427ac814c6e24547999ba3dde66
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996009"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215159"
 ---
 # <a name="software-defined-networking-decision-guide"></a>Leitfaden zur Entscheidungsfindung für softwaredefinierte Netzwerke
 
@@ -23,11 +23,11 @@ Software-Defined Networking (SDN) ist eine Netzwerkarchitektur, die entwickelt w
 
 ![Abbildung der Netzwerkoptionen mit zunehmender Komplexität entsprechend den nachstehenden weiterführenden Links](../../_images/decision-guides/decision-guide-software-defined-network.png)
 
-Wechseln Sie zu: [Nur PaaS](./paas-only.md) | [Cloudnativ](./cloud-native.md) | [Cloud-DMZ](./cloud-dmz.md) [Hybrid](./hybrid.md) | [Hub-and-Spoke-Modell](./hub-spoke.md) | [Weitere Informationen](#learn-more)
+Wechseln Sie zu: [Nur PaaS](./paas-only.md) | [Cloudnativ](./cloud-native.md) | [Cloud-DMZ](./cloud-dmz.md) | [Hybrid](./hybrid.md) | [Hub-and-Spoke-Modell](./hub-spoke.md) | [Weitere Informationen](#learn-more)
 
 SDN bietet mehrere Optionen mit unterschiedlicher Preisgestaltung und Komplexität. Dieser Leitfaden zur Entscheidungsfindung bietet eine Referenz, um diese Optionen schnell zu personalisieren und so optimal auf spezifische Geschäfts- und Technologiestrategien abzustimmen.
 
-Der Kernpunkt in diesem Leitfaden hängt von mehreren wichtigen Entscheidungen ab, die Ihr Cloudstrategieteam getroffen hat, bevor Entscheidungen zur Netzwerkarchitektur getroffen werden. Am wichtigsten sind dabei Entscheidungen, die die [Definition Ihres digitalen Bestands](../../digital-estate/index.md) und das [Abonnementmodell](../subscriptions/index.md) betreffen (was auch Rückmeldungen zu Entscheidungen im Zusammenhang mit Ihrer Cloudabrechnung und Ihren globalen Marktstrategien erfordern kann).
+Der Kernpunkt in diesem Leitfaden hängt von mehreren wichtigen Entscheidungen ab, die Ihr Cloudstrategieteam getroffen hat, bevor Entscheidungen zur Netzwerkarchitektur getroffen werden. Am wichtigsten sind dabei Entscheidungen in Bezug auf die [Definition Ihres digitalen Bestands](../../digital-estate/index.md) und das [Abonnementmodell](../subscriptions/index.md), die auch Rückmeldungen zu Entscheidungen im Zusammenhang mit Ihrer Cloudabrechnung und Ihren globalen Marktstrategien erfordern können.
 
 Kleine Bereitstellungen in einer einzelnen Region mit weniger als 1.000 VMs sind weniger wahrscheinlich von diesem Aspekt betroffen. Im Gegensatz dazu können große Umsetzungsanstrengungen mit mehr als 1.000 VMs, mehreren Geschäftsbereichen oder mehreren geopolitischen Märkten erheblich von Ihrer SDN-Entscheidung und diesem wichtigen Aspekt beeinflusst werden.
 
@@ -50,10 +50,10 @@ Bei der Festlegung der virtuellen Netzwerkarchitektur oder einer Kombination von
 
 ## <a name="virtual-networking-architectures"></a>Virtuelle Netzwerkarchitekturen
 
-Erfahren Sie mehr über die wichtigsten Software-Defined Networking-Architekturen:
+Erfahren Sie mehr über die wichtigsten Architekturen für softwaredefinierte Netzwerke:
 
 - **[Reine PaaS-Lösung](./paas-only.md):** Die meisten PaaS-Produkte (Platform as a Service) unterstützen eine begrenzte Anzahl integrierter Netzwerkfunktionen und erfordern möglicherweise kein explizit definiertes softwaredefiniertes Netzwerk zur Unterstützung der Anforderungen der Workload.
-- **[Cloudnativ](./cloud-native.md):** Eine cloudnative Architektur unterstützt cloudbasierte Workloads über virtuelle Netzwerke, die auf den von der Cloudplattform standardmäßig definierten Netzwerkfunktionen basieren, ohne auf lokale oder andere externe Ressourcen angewiesen zu sein.
+- **[Cloudnativ](./cloud-native.md):** Eine cloudnative Architektur unterstützt cloudbasierte Workloads über virtuelle Netzwerke, die auf den Standardfunktionen für softwaredefinierte Netzwerke der Cloudplattform basieren, ohne auf lokale oder andere externe Ressourcen angewiesen zu sein.
 - **[Cloud-DMZ](./cloud-dmz.md):** Unterstützt eingeschränkte Konnektivität zwischen Ihrem lokalen und Cloudnetzwerk, die durch die Implementierung einer DMZ geschützt ist, die den Datenverkehr zwischen den beiden Umgebungen sorgfältig kontrolliert.
 - **[Hybrid](./hybrid.md):** Die hybride Cloud-Netzwerkarchitektur ermöglicht es virtuellen Netzwerken in vertrauenswürdigen Cloudumgebungen, auf Ihre lokalen Ressourcen zuzugreifen und umgekehrt.
 - **[Hub-and-Spoke-Modell](./hub-spoke.md):** Die Hub-and-Spoke-Architektur ermöglicht Ihnen, externe Konnektivität und gemeinsam genutzte Dienste zentral zu verwalten, einzelne Workloads zu isolieren und mögliche Abonnementgrenzen zu umgehen.
@@ -63,11 +63,11 @@ Erfahren Sie mehr über die wichtigsten Software-Defined Networking-Architekture
 Weitere Informationen zu softwaredefinierten Netzwerken (SDN) in Azure finden Sie hier:
 
 - [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview). In Azure wird die zentrale SDN-Funktionalität von Azure Virtual Network bereitgestellt, das als Cloud analog zu physischen lokalen Netzwerken fungiert. Virtuelle Netzwerke fungieren auch als Standardisolationsgrenze zwischen Ressourcen auf der Plattform.
-- [Bewährte Methoden für die Netzwerksicherheit in Azure](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices). Empfehlungen des Azure Security-Teams zum Konfigurieren Ihrer virtuellen Netzwerke, um Sicherheitsrisiken zu minimieren.
+- [Bewährte Methoden für die Netzwerksicherheit in Azure](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices). Empfehlungen des Azure-Sicherheitsteams für das Konfigurieren Ihrer virtuellen Netzwerke, um Sicherheitsrisiken zu minimieren.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-„Softwaredefinierte Netzwerke“ sind nur eine der Kernkomponenten der Infrastruktur, die architekturspezifische Entscheidungen während eines Cloudeinführungsprozesses erfordert. Besuchen Sie die [Übersicht über Leitfäden zur Entscheidungsfindung](../index.md), um mehr über alternative Muster oder Modelle zu erfahren, die bei Entwurfsentscheidungen für andere Arten von Infrastrukturen verwendet werden.
+Softwaredefinierte Netzwerke sind nur eine der Kernkomponenten der Infrastruktur, die architekturspezifische Entscheidungen während eines Cloudeinführungsprozesses erfordern. Besuchen Sie die [Übersicht über Leitfäden zur Entscheidungsfindung](../index.md), um mehr über alternative Muster oder Modelle zu erfahren, die bei Entwurfsentscheidungen für andere Arten von Infrastrukturen verwendet werden.
 
 > [!div class="nextstepaction"]
 > [Leitfaden zur architekturbezogenen Entscheidungsfindung](../index.md)

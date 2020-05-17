@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 32436e7227f82a3d959f917978368c298743f2d1
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: bc53a552a082a2a355c07842b44f7964710d60d5
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428200"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216349"
 ---
 # <a name="adapt-existing-roles-skills-and-processes-for-the-cloud"></a>Anpassen vorhandener Rollen, Qualifikationen und Prozesse für die Cloud
 
@@ -22,7 +22,7 @@ Beim Umstieg von Institutionen auf Cloud Computing ist mit ähnlichen Veränderu
 
 IT-Mitarbeiter machen sich möglicherweise Sorgen um ihre Rollen und Positionen, da ihnen bewusst wird, dass für die Unterstützung von Cloudlösungen andere Qualifikationen erforderlich sind. Flexible Mitarbeiter, die sich für neue Cloudtechnologien interessieren und sich mit ihnen vertraut machen, sollten sich jedoch keine Gedanken machen müssen. Sie können bei der Einführung von Clouddiensten eine Führungsrolle übernehmen und der Organisation dabei helfen, die entsprechenden Veränderungen zu verstehen und umzusetzen.
 
-Einen Leitfaden zum Erlangen neuer Qualifikationen finden Sie im Abschnitt [Pfad für die Qualifikationsbereitschaft](./suggested-skills.md).
+Einen Leitfaden zum Erlangen neuer Qualifikationen finden Sie unter [Pfad für die Qualifikationsbereitschaft](./suggested-skills.md).
 
 ## <a name="capture-concerns"></a>Erfassen von Bedenken
 

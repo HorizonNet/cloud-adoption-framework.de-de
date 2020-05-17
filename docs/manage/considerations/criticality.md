@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0c3042469ff2c562ff84d173837685f73c9df933
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 2230fe8d8ee2f2c7d5b9a695ec01268e3306bff9
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426456"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217403"
 ---
 # <a name="business-criticality-in-cloud-management"></a>Geschäftliche Wichtigkeit der Cloudverwaltung
 
@@ -54,14 +54,14 @@ Da es in der Cloud eine klare und direkte Beziehung zwischen Kosten und operativ
 
 Eine anfängliche Überprüfung jeder Workload im Portfolio kann sehr zeitaufwendig sein. Um sicherzustellen, dass diese Aufgabe nicht ihre gesamte Cloudstrategie blockiert, empfiehlt es sich, dass ihre Teams eine standardmäßige Wichtigkeit vereinbaren, die auf alle Workloads anzuwenden ist.
 
-Basierend auf der vorhergehenden Tabelle der Wichtigkeitsskala empfehlen wir Ihnen, die *mittlere* Wichtigkeit als Standard zu übernehmen. So kann Ihr Cloudstrategieteam schnell Workloads ermitteln, die eine höhere Wichtigkeitsstufe erfordern.
+Basierend auf der vorhergehenden Tabelle der Wichtigkeitsskala empfehlen wir Ihnen, die _mittlere_ Wichtigkeit als Standard zu übernehmen. So kann Ihr Cloudstrategieteam schnell Workloads ermitteln, die eine höhere Wichtigkeitsstufe erfordern.
 
 ## <a name="use-the-template"></a>Verwenden der Vorlage
 
 Die folgenden Schritte gelten, wenn Sie die Arbeitsmappe [Operations Management](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) verwenden, um die Cloudverwaltung zu planen.
 
 1. Erfassen Sie die Wichtigkeitsskala auf der Registerkarte **Scale** der Arbeitsmappe.
-2. Aktualisieren Sie jede Workload auf den Blättern *Example* oder *Clean Template*, um die standardmäßige Wichtigkeit in der Spalte *Criticality* wiederzugeben.
+2. Aktualisieren Sie jede Workload auf den Blättern _Example_ oder _Clean Template_, um die standardmäßige Wichtigkeit in der Spalte _Criticality_ wiederzugeben.
 3. Das Unternehmen sollte die richtigen Werte eingeben, um Abweichungen von der standardmäßigen Wichtigkeit widerzuspiegeln.
 
 ## <a name="next-steps"></a>Nächste Schritte

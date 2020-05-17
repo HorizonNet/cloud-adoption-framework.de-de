@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 4ffd05a17466d0ca61605de5080b54316de78e4d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: eee8a2845a797cc1d9df3c2484cd3165967ac4d8
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433964"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215516"
 ---
 # <a name="define-and-prioritize-workloads-for-a-cloud-adoption-plan"></a>Definieren und Priorisieren von Workloads für einen Cloudeinführungsplan
 
@@ -34,18 +34,18 @@ Die strategischen Eingaben aus der Liste der Voraussetzungen erleichtern die Erl
 
 ## <a name="initial-workload-prioritization"></a>Anfängliche Workloadpriorisierung
 
-Während des Prozesses der [inkrementellen Rationalisierung](../digital-estate/rationalize.md) sollte sich Ihr Team auf einen 10er-Ansatz, d. h. auf 10 Prioritätsworkloads einigen. Diese Workloads dienen als anfängliche Grenze für die Einführungsplanung.
+Während des Prozesses der [inkrementellen Rationalisierung](../digital-estate/rationalize.md) sollte sich Ihr Team auf den [Ansatz „Zehn Anwendungen“](../digital-estate/rationalize.md#release-planning) einigen, der 10 Prioritätsworkloads umfasst. Diese Workloads dienen als anfängliche Grenze für die Einführungsplanung.
 
 Wenn die Entscheidung gegen eine Rationalisierung der digitalen Ressourcen fällt, sollten Cloudeinführungsteams und Cloudstrategieteam sich auf eine Liste von zehn Anwendungen einigen, die als erster Schwerpunkt der Migration dienen. Außerdem sollten diese 10 Workloads eine Mischung aus einfachen Workloads (weniger als 10 Ressourcen in einer eigenständigen Bereitstellung) und komplexeren Workloads darstellen. Mit diesen 10 Workloads beginnt die Workloadpriorisierung.
 
 > [!NOTE]
-> Der 10er-Ansatz dient als erste Grenze für die Planung zur Konzentration von Energie und Investitionen in der Frühphasenanalyse. Die Analyse und Definition von Workloads führt jedoch wahrscheinlich zu Änderungen in der Liste der Prioritätsworkloads.
+> Der Ansatz „Zehn Anwendungen“ dient als erste Grenze für die Planung zur Konzentration von Energie und Investitionen in der Frühphasenanalyse. Die Analyse und Definition von Workloads führt jedoch wahrscheinlich zu Änderungen in der Liste der Prioritätsworkloads.
 
 ## <a name="add-workloads-to-your-cloud-adoption-plan"></a>Hinzufügen von Workloads zu Ihrem Cloudeinführungsplan
 
 Im vorherigen Artikel, [Cloudeinführungsplan und Azure DevOps](./template.md), haben Sie einen Cloudeinführungsplan in Azure DevOps erstellt.
 
-Die Workloads in der Liste des 10er-Ansatzes können jetzt in Ihrem Cloudeinführungsplan dargestellt werden. Die einfachste Möglichkeit hierzu ist die Massenbearbeitung in Microsoft Excel. Um Ihre Arbeitsstation für die Massenbearbeitung vorzubereiten, lesen Sie [Massenhinzufügen oder -bearbeiten von Arbeitselementen mit Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
+Die Workloads in der Liste des 10er-Ansatzes können jetzt in Ihrem Cloudeinführungsplan dargestellt werden. Die einfachste Möglichkeit hierzu ist die Massenbearbeitung in Microsoft Excel. Wenn Sie Ihre Arbeitsstation für die Massenbearbeitung vorbereiten möchten, lesen Sie [Massenhinzufügen oder -bearbeiten von Arbeitselementen mit Microsoft Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
 
 In Schritt 5 dieses Artikels werden Sie angewiesen, **Eingabeliste** auszuwählen. Wählen Sie stattdessen **Abfrageliste** aus. Wählen Sie dann aus der Dropdownlist **Abfrage auswählen** die Abfrage **Workloadvorlage** aus. Diese Abfrage lädt alle Arbeitselemente im Zusammenhang mit der Migration eines einzelnen Workloads in Ihre Tabellenkalkulation.
 
@@ -55,7 +55,7 @@ Sobald die Arbeitselemente der Workloadvorlage geladen sind, können Sie beginne
 2. Fügen Sie die kopierten Zeilen unterhalb des letzten Zeilenelements in die Tabelle ein.
 3. Ändern Sie die Titelzelle für das neue Feature von **Workloadvorlage** in den Namen des neuen Workloads.
 4. Fügen Sie die neue Workloadnamenszelle in die Tagspalte für alle Zeilen unterhalb des neuen Features ein. Achten Sie darauf, dass Sie die Tags oder den Namen der Zeilen, die sich auf das eigentliche **Workloadvorlage**-Feature beziehen, nicht ändern. Sie benötigen diese Arbeitselemente, wenn Sie die nächste Workload dem Cloudeinführungsplan hinzufügen.
-5. Fahren Sie mit Schritt 8 in den Anweisungen zur Massenbearbeitung zum Veröffentlichen der Tabellenkalkulation fort. In diesem Schritt werden alle Arbeitselemente erstellt, die für die Migration Ihres Workloads erforderlich sind.
+5. Fahren Sie mit Schritt 8 in den Anweisungen zur Massenbearbeitung zum Veröffentlichen der Tabellenkalkulation fort. In diesem Schritt werden alle Arbeitselemente erstellt, die für die Migration Ihres Workloads erforderlich sind.
 
 Wiederholen Sie die Schritte 1 bis5 für jeden Workload in der 10er-Ansatz-Liste.
 
@@ -76,7 +76,7 @@ Nachdem die anfänglichen Prioritäten definiert und die Workloads dem Plan hinz
 | Unternehmensteams | Welche Unternehmensteams werden von geschäftlichen Änderungen betroffen sein? |         |
 | Beteiligte im Unternehmen | Gibt es Führungskräfte, deren Bereich von Änderungen betroffen sein wird? |         |
 | Geschäftsergebnisse | Wie wird das Unternehmen den Erfolg dieser Maßnahme messen? |         |
-| metrics | Welche Metriken werden zum Nachverfolgen des Erfolgs verwendet? |         |
+| Metriken | Welche Metriken werden zum Nachverfolgen des Erfolgs verwendet? |         |
 | Kompatibilität | Gibt es Complianceanforderungen von Drittanbietern für diese Workload? |         |
 | Anwendungsbesitzer | Wer ist verantwortlich für die geschäftlichen Auswirkungen von Anwendungen, die dieser Workload zugeordnet sind? |         |
 | Vom Unternehmen ausgeschlossene Zeiträume | Lässt das Unternehmen zu bestimmten Zeiten keine Änderung zu? |         |

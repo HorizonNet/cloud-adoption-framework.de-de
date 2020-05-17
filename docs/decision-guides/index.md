@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 9a2cfb6d4280ac5d5fd6e16e330121e568ba7a71
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 49bfe755f27305e644b28ece987e1ad09a52d39e
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434888"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214981"
 ---
 # <a name="architectural-decision-guides"></a>Leitfaden zur architekturbezogenen Entscheidungsfindung
 
@@ -31,11 +31,11 @@ Jede der folgenden Kategorien stellt eine grundlegende Technologie aller Cloudbe
 
 [Identität](./identity/index.md): Integrieren Sie cloudbasierte Identitätsdienste in Ihre vorhandenen Identitätsressourcen, um Autorisierung und Zugriffssteuerung in Ihrer IT-Umgebung zu unterstützen.
 
-[Richtlinienerzwingung](./policy-enforcement/index.md): Definieren und erzwingen Sie organisationsweite Richtlinienregeln für in der Cloud bereitgestellte Ressourcen und Workloads, die auf Ihre Governanceanforderungen ausgerichtet sind.
+[Durchsetzung von Richtlinien](./policy-enforcement/index.md): Definieren und erzwingen Sie organisationsweite Richtlinienregeln für in der Cloud bereitgestellte Ressourcen und Workloads, die auf Ihre Governanceanforderungen ausgerichtet sind.
 
 [Ressourcenkonsistenz](./resource-consistency/index.md): Stellen Sie sicher, dass die Bereitstellung und Organisation Ihrer cloudbasierten Ressourcen auf die Erfüllung von Ressourcenverwaltungs- und Richtlinienanforderungen ausgerichtet ist.
 
-[Kategorisierung von Ressourcen](./resource-tagging/index.md): Strukturieren Sie Ihre cloudbasierten Ressourcen, um Abrechnungsmodelle, cloudbasierte Buchhaltungskonzepte und Verwaltungsaufgaben zu unterstützen sowie die Ressourcennutzung und die Kosten zu optimieren. Die Kategorisierung von Ressourcen erfordert ein einheitliches und überlegt organisiertes Benennungs- und Metadatendschema.
+[Tags für Ressourcen](./resource-tagging/index.md): Strukturieren Sie Ihre cloudbasierten Ressourcen, um Abrechnungsmodelle, cloudbasierte Buchhaltungskonzepte und Verwaltungsaufgaben zu unterstützen sowie die Ressourcennutzung und die Kosten zu optimieren. Die Kategorisierung von Ressourcen erfordert ein einheitliches und überlegt organisiertes Benennungs- und Metadatendschema.
 
 [Softwaredefiniertes Netzwerk](./software-defined-network/index.md): Stellen Sie sichere Workloads schnell in der Cloud bereit, indem Sie die Funktionen für virtualisierte Netzwerke schnell bereitstellen und modifizieren. Softwaredefinierte Netzwerke können agile Workflows unterstützen, Ressourcen isolieren und cloudbasierte Systeme in Ihre bestehende IT-Infrastruktur integrieren.
 

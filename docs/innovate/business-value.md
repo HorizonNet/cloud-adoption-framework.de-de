@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a03abe234773139e291679e986452702e849c33e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 5ddbd7a8f3780d4dc65492c9298119d0095f91db
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997218"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222588"
 ---
 # <a name="build-consensus-on-the-business-value-of-innovation"></a>Erzielen eines Konsenses zum Geschäftswert der Cloudinnovation
 
@@ -47,7 +47,7 @@ Wenn eins der Teams in 30 Minuten keine der vier Fragen beantworten konnte, wer
 
 Das Framework für die Cloudeinführung (Cloud Adoption Framework) folgt einem vorgeschriebenen Pfad durch die folgenden Phasen: Strategie, Planung, Bereitschaft und Einführung. Cloudinnovationen gehören in die Einführungsphase dieses Prozesses. Die Antworten auf die [qualifizierenden Fragen](#qualifying-questions) drei und vier betreffen Ergebnisse und Beweggründe. Wenn diese Antworten falsch ausgerichtet sind, deutet dies darauf hin, dass Ihr Unternehmen in der Strategiephase des Lebenszyklus der Cloudeinführung etwas verpasst hat. Hierbei kommen verschiedene der folgenden Szenarien in Frage.
 
-- **Chance: Ausrichtung**: Wenn geschäftliche Beteiligte sich nicht auf Beweggründe und Geschäftsergebnisse in Bezug auf ein Cloudinnovationsprojekt einigen können, ist dies ein Symptom für eine größere Herausforderung. Die Übungen in der [Cloudstrategiephase](../strategy/index.md) können hilfreich sein, um eine Ausrichtung der geschäftlichen Beteiligten zu erreichen. Darüber hinaus empfiehlt es sich dringend, dass dieselben Beteiligten ein [Cloudstrategieteam](../organize/cloud-strategy.md) bilden, das sich regelmäßig trifft.
+- **Chance: Ausrichtung**: Wenn geschäftliche Beteiligte sich nicht auf Beweggründe und Geschäftsergebnisse in Bezug auf ein Cloudinnovationsprojekt einigen können, ist dies ein Symptom für eine größere Herausforderung. Die Übungen in der [Strategiemethodik](../strategy/index.md) können hilfreich sein, um eine Ausrichtung der geschäftlichen Beteiligten zu erreichen. Darüber hinaus empfiehlt es sich dringend, dass dieselben Beteiligten ein [Cloudstrategieteam](../organize/cloud-strategy.md) bilden, das sich regelmäßig trifft.
 
 - **Chance: Kommunikation**: Wenn das Entwicklungsteam sich nicht auf Beweggründe und Geschäftsergebnisse einigen kann, kann dies ein Symptom für Lücken in der strategischen Kommunikation sein. Dieses Problem lässt sich durch eine Überprüfung der Cloudstrategie mit dem Cloudeinführungsteam schnell beseitigen. Einige Wochen nach dieser Überprüfung sollte das Team die Einstufungsfragen erneut beantworten.
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 421e079d1d219818670328db208a2269bf1dcfdb
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 37826614e405ddb5cb15db62ffce7cfe43b2ec20
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426768"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216638"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>Plattformspezialisierung für die Cloudverwaltung
 
@@ -30,14 +30,14 @@ Workload- und Plattformbetrieb erfordern Änderungen von Entwurfs- und Architekt
 
 In dieser Tabelle werden einige gängige Prozesse, Tools und potenzielle Auswirkungen beschrieben, die in den optimierten Verwaltungsbaselines der Kunden üblich sind.
 
-|Prozess  |Tool  |Zweck  |Vorgeschlagene Verwaltungsebene  |
-|---------|---------|---------|---------|
-|Verbessern des Systementwurfs|Azure Architecture Framework|Verbessern des Architekturentwurfs der Plattform, um Vorgänge zu verbessern|–|
-|Automatisieren der Bereinigung|Azure-Automatisierung|Reagieren auf erweiterte Plattformdaten mit plattformspezifischer Automatisierung|Plattformbetrieb|
-|Dienstkatalog|Center für verwaltete Anwendungen|Bereitstellen eines Self-Service-Katalogs genehmigter Lösungen, die Organisationsstandards erfüllen|Plattformbetrieb|
-|Containerleistung|Azure Monitor für Container|Überwachung und Diagnose von Containern|Plattformbetrieb|
-|Platform-as-a-Service (PaaS) – Datenleistung|Azure SQL-Analysen|Überwachung und Diagnose für PaaS-Datenbanken|Plattformbetrieb|
-|Infrastructure-as-a-Service (IaaS) – Datenleistung|SQL Server-Integritätsprüfung|Überwachung und Diagnose für IaaS-Datenbanken|Plattformbetrieb|
+| Prozess | Tool | Zweck  | Vorgeschlagene Verwaltungsebene |
+|---|---|---|---|
+| Verbessern des Systementwurfs | Azure Architecture Framework | Verbessern des Architekturentwurfs der Plattform, um Vorgänge zu verbessern | – |
+| Automatisieren der Bereinigung | Azure-Automatisierung | Reagieren auf erweiterte Plattformdaten mit plattformspezifischer Automatisierung | Plattformbetrieb |
+| Dienstkatalog | Center für verwaltete Anwendungen | Bereitstellen eines Self-Service-Katalogs genehmigter Lösungen, die Organisationsstandards erfüllen | Plattformbetrieb |
+| Containerleistung | Azure Monitor für Container | Überwachung und Diagnose von Containern | Plattformbetrieb |
+| Platform-as-a-Service (PaaS) – Datenleistung | Azure SQL-Analysen | Überwachung und Diagnose für PaaS-Datenbanken | Plattformbetrieb |
+| Infrastructure-as-a-Service (IaaS) – Datenleistung | SQL Server-Integritätsprüfung | Überwachung und Diagnose für IaaS-Datenbanken | Plattformbetrieb |
 
 ## <a name="high-level-process"></a>Allgemeiner Prozess
 

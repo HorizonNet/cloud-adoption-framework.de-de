@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 515ae94c2feedbc7b111ec786551a4680a69f561
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: f7675852a6d9b59e0d06873fee028b701dc729e3
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996025"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215052"
 ---
 # <a name="subscription-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Abonnements
 
@@ -27,7 +27,7 @@ Die Einführung von Azure beginnt mit der Erstellung eines Azure-Abonnements, de
 - [Erstellen Sie zusätzliche Abonnements](../../ready/azure-best-practices/scale-subscriptions.md), um Ihre Azure-Umgebung zu skalieren.
 - [Organisieren und verwalten Sie Ihre Abonnements](../../ready/azure-best-practices/organize-subscriptions.md) mithilfe von Azure-Verwaltungsgruppen.
 
-## <a name="modeling-your-organization"></a>Modellieren Ihrer Organisation
+## <a name="model-your-organization"></a>Modellieren Ihrer Organisation
 
 Da jede Organisation anders ist, sind Azure-Verwaltungsgruppen auf Flexibilität ausgelegt. Orientieren Sie sich bei der Modellierung Ihrer Cloudressourcen am besten an der Hierarchie Ihrer Organisation. Dies vereinfacht das Definieren und Anwenden von Richtlinien auf höheren Hierarchieebenen, und die Vererbung sorgt dafür, dass diese Richtlinien automatisch auf untergeordnete Verwaltungsgruppen der Hierarchie angewendet werden. Abonnements können zwar zwischen verschiedenen Verwaltungsgruppen verschoben werden, es empfiehlt sich jedoch, zu Beginn eine Verwaltungsgruppenhierarchie zu entwerfen, die die voraussichtlichen Anforderungen Ihrer Organisation erfüllt.
 
@@ -48,14 +48,14 @@ Wenn eine Organisation der Cloud neue Workloads hinzufügt, können unterschiedl
 
 ### <a name="application-category-strategy"></a>Auf Anwendungskategorien basierende Strategie
 
-Mit zunehmender Cloudnutzung einer Organisation werden in der Regel weitere Abonnements hinzugefügt, um Anwendungen zu unterstützen, die sich in puncto geschäftliche Bedeutung, Konformitätsanforderungen, Zugriffssteuerung oder Datenschutzanforderungen erheblich unterscheiden. Die Abonnements zur Unterstützung dieser Anwendungskategorien orientieren sich an den anfänglichen Produktions- und Nichtproduktionsabonnements und sind entweder in der Produktions- oder in der Nichtproduktionsverwaltungsgruppe organisiert. Diese Abonnements werden in der Regel vom zentralen IT-Personal betreut und verwaltet.
+Mit zunehmender Cloudnutzung einer Organisation werden in der Regel weitere Abonnements hinzugefügt, um Anwendungen zu unterstützen, die sich in puncto geschäftliche Bedeutung, Konformitätsanforderungen, Zugriffssteuerung oder Datenschutzanforderungen erheblich unterscheiden. Die Abonnements zur Unterstützung dieser Anwendungskategorien orientieren sich an den anfänglichen Produktions- und Nichtproduktionsabonnements und sind entweder in der Produktions- oder in der Nichtproduktionsverwaltungsgruppe organisiert. Diese Abonnements befinden sich in der Regel im Besitz der zentralen IT-Abteilung und werden von den entsprechenden Mitarbeitern verwaltet.
 
-![Auf Anwendungskategorien basierende Strategie](../../_images/infra-subscriptions/application.png)
+![Auf Anwendungskategorien basierende Strategie](../../_images\decision-guides\decision-guide-subscriptions-hierarchy.png)
 
 Jede Organisation kategorisiert ihre Anwendungen anders. Oftmals werden Abonnements basierend auf bestimmten Anwendungen oder Diensten oder nach Anwendungsarchetypen getrennt. Diese Kategorisierung dient häufig zur Unterstützung von Workloads, die voraussichtlich einen Großteil der begrenzten Ressourcen eines Abonnements beanspruchen, oder zur Trennung unternehmenskritischer Workloads, um sicherzustellen, dass sie nicht mit anderen Workloads um diese begrenzten Ressourcen konkurrieren. In Anschluss folgen einige Workloads, die ein separates Abonnement rechtfertigen:
 
 - Unternehmenskritische Workloads
-- Anwendungen, die in Ihrem Unternehmen Teil der Umsatzkosten (Cost Of Goods Sold, COGS) sind. Beispiel: Jede Instanz des Widgets von Unternehmen X enthält ein Azure IoT-Modul, das Telemetriedaten sendet. Dies erfordert unter Umständen ein dediziertes Abonnement zu Buchhaltungs-/Governancezwecken im Rahmen von COGS.
+- Anwendungen, die in Ihrem Unternehmen Teil der _Umsatzkosten_ (Cost Of Goods Sold, COGS) sind. Beispiel: Jede Instanz des Widgets von Unternehmen X enthält ein Azure IoT-Modul, das Telemetriedaten sendet. Dies erfordert unter Umständen ein dediziertes Abonnement zu Buchhaltungs-/Governancezwecken im Rahmen von COGS.
 - Anwendungen, die behördlichen Anforderungen wie HIPAA oder FedRAMP unterliegen.
 
 ### <a name="functional-strategy"></a>Funktionale Strategie
@@ -70,11 +70,11 @@ Bei der auf Unternehmenseinheiten basierenden Strategie werden Abonnements und K
 
 Die auf geografischen Regionen basierende Strategie ist für global agierende Organisationen konzipiert und gruppiert Abonnements und Konten auf der Grundlage geografischer Regionen unter Verwendung einer Verwaltungsgruppenhierarchie.
 
-## <a name="mixing-subscription-strategies"></a>Kombinieren von Abonnementstrategien
+## <a name="mix-subscription-strategies"></a>Kombinieren mehrerer Abonnementstrategien
 
 Verwaltungsgruppenhierarchien können bis zu sechs Ebenen umfassen. Dieses Maß an Flexibilität ermöglicht die Erstellung einer Hierarchie mit mehreren dieser Strategien, um den Anforderungen Ihrer Organisation gerecht zu werden. Das folgende Diagramm zeigt beispielsweise eine Organisationshierarchie, in der eine auf Unternehmenseinheiten basierende Strategie mit einer auf geografischen Regionen basierenden Strategie kombiniert wird.
 
-![Strategie für gemischte Abonnements](../../_images/infra-subscriptions/mixed.png)
+![Strategie für gemischte Abonnements](../../_images\decision-guides\decision-guide-subscriptions-hierarchy-mixed.png)
 
 ## <a name="related-resources"></a>Zugehörige Ressourcen
 

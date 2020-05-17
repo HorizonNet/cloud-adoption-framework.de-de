@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: fd6f0e42408934bad1b6f45b92bda0f4a9d47e65
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e462f0a20daddaf87eda4c77999cb2680dea643e
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996330"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224373"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Protokollierung und Berichterstellung
 
@@ -55,7 +55,7 @@ Individuelle Protokollierungslösungen auf der Basis von Azure Monitor können j
 
 Es kann einen erheblichen Neuentwicklungsaufwand für Anwendungen und Dienste erfordern, die in die Cloud migriert werden, um cloudbasierte Protokollierungs- und Berichterstellungslösungen wie Azure Monitor zu nutzen. Lassen Sie in diesen Fällen ggf. zu, dass diese Workloads weiterhin Telemetriedaten an bestehende lokale Systeme senden.
 
-Um diesen Ansatz zu unterstützen, müssen Ihre Cloudressourcen in der Lage sein, über eine Kombination aus [Hybridnetzwerken](../software-defined-network/hybrid.md) und [in der Cloud gehosteten Domänendiensten](../identity/index.md#cloud-hosted-domain-services) direkt mit Ihren lokalen Systemen zu kommunizieren. Bei dieser Konfiguration fungiert das virtuelle Cloudnetzwerk als Netzwerkerweiterung der lokalen Umgebung. Daher können in der Cloud gehostete Workloads direkt mit Ihrem lokalen Protokollierungs- und Berichterstellungssystem kommunizieren.
+Um diesen Ansatz unterstützen zu können, müssen Ihre Cloudressourcen in der Lage sein, über eine Kombination aus [Hybridnetzwerken](../software-defined-network/hybrid.md) und [in der Cloud gehosteten Domänendiensten](../identity/index.md#cloud-hosted-domain-services) direkt mit Ihren lokalen Systemen zu kommunizieren. Bei dieser Konfiguration fungiert das virtuelle Cloudnetzwerk als Netzwerkerweiterung der lokalen Umgebung. Daher können in der Cloud gehostete Workloads direkt mit Ihrem lokalen Protokollierungs- und Berichterstellungssystem kommunizieren.
 
 Dieser Ansatz macht sich Ihre bereits getätigten Investitionen in Überwachungstools zunutze, wobei nur geringfügige Änderungen an allen in der Cloud bereitgestellten Anwendungen oder Diensten vorgenommen werden. Dies ist während einer Migration per Lift & Shift oft der schnellste Ansatz zur Unterstützung der Überwachung. Allerdings werden keine Protokolldaten erfasst, die von cloudbasierten PaaS- und SaaS-Ressourcen generiert werden, und es werden alle VM-bezogenen Protokolle ausgeklammert, die von der Cloudplattform selbst erstellt werden, wie z. B. der VM-Status. Daher sollte dieses Muster nur eine temporäre Lösung sein, bis eine umfassendere hybride Überwachungslösung implementiert ist.
 
@@ -99,9 +99,9 @@ Wenn Sie bereits eine Investition in lokale Überwachungssysteme getätigt haben
 
 Wenn Sie keinen zwingenden Bedarf an der Aufrechterhaltung eines lokalen Überwachungssystems haben oder lokale Überwachungssysteme durch eine zentrale cloudbasierte Lösung ersetzen möchten, können Sie lokale Protokolldaten auch mit Azure Monitor integrieren, um ein zentrales cloudbasiertes Überwachungssystem bereitzustellen.
 
-In diesem Szenario würden cloudbasierte Workloads Telemetriedaten direkt an Azure Monitor senden, und lokale Anwendungen und Dienste würden entweder Telemetriedaten direkt an Azure Monitor senden oder diese Daten zur Aufnahme in Azure Monitor lokal in regelmäßigen Abständen zusammenfassen. Azure Monitor dient anschließend als primäres Überwachungs- und Berichterstellungssystem für Ihr gesamtes IT-Umfeld.
+Spiegelung des lokalen zentrierten Ansatzes: In diesem Szenario würden cloudbasierte Workloads Telemetriedaten direkt an Azure Monitor senden, und lokale Anwendungen und Dienste würden entweder Telemetriedaten direkt an Azure Monitor senden oder diese Daten zur Erfassung in Azure Monitor in regelmäßigen Abständen lokal aggregieren. Azure Monitor dient anschließend als primäres Überwachungs- und Berichterstellungssystem für Ihr gesamtes IT-Umfeld.
 
-Annahmen für eine cloudbasierte Hybridüberwachungslösung: Für die Verwendung eines cloudbasierten Protokollierungs- und Berichterstellungssystems für die Hybridüberwachung wird Folgendes angenommen:
+**Voraussetzungen für eine cloudbasierte Hybridüberwachung:** Für die Verwendung eines cloudbasierten Protokollierungs- und Berichterstellungssystems für die Hybridüberwachung wird Folgendes angenommen:
 
 - Sie sind nicht auf bestehende lokale Überwachungssysteme angewiesen.
 - Ihre Workloads unterliegen keinen gesetzlichen oder richtlinienspezifischen Anforderungen zur lokalen Speicherung von Protokolldaten.

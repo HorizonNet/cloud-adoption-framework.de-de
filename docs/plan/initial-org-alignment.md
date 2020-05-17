@@ -7,30 +7,30 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 014d5da585b48754f9cee59431aea92b5047f551
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d1e8542b1fe53c88773bd477fe7872b6fac02288
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396200"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223489"
 ---
 # <a name="initial-organization-alignment"></a>Erstausrichtung der Organisation
 
 Der wichtigste Aspekt eines jeden Cloudeinführungsplans ist die Ausrichtung der Mitarbeiter, die den Plan in die Tat umsetzen werden. Kein Plan ist vollständig, bis Sie seine Aspekte verstanden haben, die Personen betreffen.
 
-Eine echte Organisationsausrichtung erfordert Zeit. Es wird wichtig sein, eine langfristige Organisationsausrichtung zu etablieren, insbesondere da die Einführung der Cloud über die gesamte Unternehmens- und IT-Kultur hinweg erfolgt. Ausrichtung ist so wichtig, dass ihr [ein ganzer Abschnitt](../organize/index.md) innerhalb des Abschnitts zum Betrieb des Cloud Adoption Framework gewidmet wurde.
+Eine echte Organisationsausrichtung erfordert Zeit. Es wird wichtig sein, eine langfristige Organisationsausrichtung zu etablieren, insbesondere da die Einführung der Cloud über die gesamte Unternehmens- und IT-Kultur hinweg erfolgt. Ausrichtung ist so wichtig, dass ihr [ein ganzer Abschnitt](../organize/index.md) in der Organisationsmethodik des Cloud Adoption Framework gewidmet wurde.
 
 Eine vollständige Organisationsausrichtung ist kein erforderlicher Bestandteil des Cloudeinführungsplans. Allerdings ist eine gewisse anfängliche Organisationsausrichtung erforderlich. In diesem Artikel wird ein Ausgangspunkt für die bewährte Methode zur Organisationsausrichtung beschrieben. Der vorliegende Leitfaden kann Ihnen helfen, Ihren Plan abzuschließen und Ihre Teams auf die Einführung der Cloud vorzubereiten. Wenn Sie bereit sind, können Sie den Abschnitt [Organisationsausrichtung](../organize/index.md) verwenden, um diesen Leitfaden für Ihr Organisation anzupassen.
 
 ## <a name="initial-best-practice-structure"></a>Anfängliche Struktur der bewährten Methode
 
-Um ein Gleichgewicht zwischen Geschwindigkeit und Kontrolle zu schaffen, empfehlen wir, dass Sie während der Einführung der Cloud zumindest für die *Cloudeinführung* und die *Cloud Governance* Mitarbeiter bestimmen, die dafür verantwortlich sind. Dies kann ein Team sein, das die Verantwortung für jeden dieser Bereiche bzw. *Funktionen* teilt. Es kann sich dabei auch um einzelne Personen handeln, die sowohl für die Ergebnisse als auch für die Arbeit verantwortlich sind. In beiden Szenarien sind Cloudeinführung und Cloud Governance zwei Funktionen, die eine natürliche Spannung zwischen schneller Bewegung und Risikominimierung beinhalten. Die beiden Teams passen wie folgt zusammen:
+Um ein Gleichgewicht zwischen Geschwindigkeit und Kontrolle zu schaffen, empfehlen wir, dass Sie während der Einführung der Cloud zumindest für die _Cloudeinführung_ und die _Cloud Governance_ Mitarbeiter bestimmen, die dafür verantwortlich sind. Dies kann ein Team sein, das die Verantwortung für jeden dieser Bereiche bzw. _Funktionen_ teilt. Es kann sich dabei auch um einzelne Personen handeln, die sowohl für die Ergebnisse als auch für die Arbeit verantwortlich sind. In beiden Szenarien sind Cloudeinführung und Cloud Governance zwei Funktionen, die eine natürliche Spannung zwischen schneller Bewegung und Risikominimierung beinhalten. Die beiden Teams passen wie folgt zusammen:
 
 ![Cloudeinführung mit einem Cloudkompetenzzentrum](../_images/ready/org-ready-best-practice.png)
 
 Es ist ziemlich intuitiv, dass für Cloudeinführungsbemühungen Personen erforderlich sind, die diese Aufgaben ausführen. Daher sind nur wenige Personen überrascht, dass ein Cloudeinführungsteam eine Anforderung ist. Diejenigen, die mit der Cloud noch nicht vertraut sind, wissen jedoch möglicherweise die Bedeutung eines Cloud Governance-Team nicht ganz zu schätzen. Diese Herausforderung tritt oft früh in Einführungszyklen auf. Das Cloudgovernanceteam stellt die notwendigen Kontrollen und Ausgleiche bereit, um sicherzustellen, dass die Einführung der Cloud das Unternehmen keinen neuen Risiken aussetzt. Wenn Risiken eingegangen werden müssen, stellt dieses Team sicher, dass die richtigen Prozesse und Kontrollen implementiert werden, um diese Risiken zu minimieren oder zu steuern.
 
-Weitere Informationen zu Cloudeinführung, Cloud Governance und andere solche Funktionen erfahren Sie in diesem kurzen Abschnitt mit [Informationen zu erforderlichen Cloudfunktionen](../organize/index.md#understand-required-cloud-capabilities).
+Weitere Informationen zu Cloudeinführung, Cloud Governance und andere solche Funktionen erfahren Sie in diesem kurzen Abschnitt mit [Informationen zu erforderlichen Cloudfunktionen](../organize/index.md#understand-required-cloud-functions).
 
 ## <a name="map-people-to-capabilities"></a>Zuordnen von Personen zu Funktionen
 

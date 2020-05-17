@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7259fced72aa959509f55bbb81e9fc4b2f182e36
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 609c4f9f369e27c699f72cf85ebe311dbf918019
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433912"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219273"
 ---
 <!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers Pointnext -->
 
@@ -26,8 +26,8 @@ Hybridbereitstellungsmodelle können während der Migration das Risiko minimiere
 
 Durch die Verwendung einer Hybrid Cloud-Lösung können Unternehmen Rechenressourcen skalieren. Außerdem ist damit weniger Kapitalaufwand erforderlich, um kurzfristige Spitzen im Bedarf zu kompensieren. Veränderte Geschäftsbedingungen können die Freigabe lokaler Ressourcen für vertraulichere Daten oder Anwendungen erforderlich machen. Es ist einfacher, schneller und günstiger, die Bereitstellung von Cloudressourcen aufzuheben. Sie bezahlen nur für die Ressourcen, die Ihre Organisation vorübergehend nutzt, und müssen keine zusätzlichen Ressourcen erwerben und verwalten. Dieser Ansatz reduziert die Menge der Geräte, die über einen längeren Zeitraum ungenutzt bleiben könnten. Hybrid Cloud-Computing bietet alle Vorzüge des Cloud Computings – Flexibilität, Skalierbarkeit und Kosteneffizienz – bei gleichzeitig niedrigstem Risiko für Datenenthüllungen.
 
-![Erstellen von Hybrid Cloud-Konsistenz für Identitäten, Verwaltung, Sicherheit, Daten, Entwicklung und DevOps](../../_images/hybrid-consistency.png)
-*Abbildung 1: Erstellen von Hybrid Cloud-Konsistenz für Identitäten, Verwaltung, Sicherheit, Daten, Entwicklung und DevOps.*
+![Schaffen von Hybrid Cloud-Konsistenz für Identitäten, Verwaltung, Sicherheit, Daten, Entwicklung und DevOps](../../_images/hybrid-consistency.png)
+_Abbildung 1: Schaffen von Hybrid Cloud-Konsistenz für Identitäten, Verwaltung, Sicherheit, Daten, Entwicklung und DevOps._
 
 Eine echte Hybrid Cloud-Lösung muss vier Komponenten bereitstellen, von denen jede entscheidende Vorteile bietet:
 

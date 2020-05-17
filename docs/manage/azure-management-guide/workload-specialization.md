@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 06389b972ee01079a3927515c95d3f3ae3cab3de
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: cd6f89162b2975313f0eebcd4e3e1385787f8ee7
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426564"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217437"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>Workloadspezialisierung für die Cloudverwaltung
 
@@ -49,10 +49,10 @@ Diese zentralisierten Teams leiten und unterweisen auch spezialisierte Workloadt
 
 Um einen klar strukturierten Workloadbetrieb zu ermöglichen, sind genauere Angaben zur spezifischen Workload erforderlich. Während der Phase der kontinuierlichen Verbesserung ist Application Insights eine notwendige Ergänzung der Toolkette für die Cloudverwaltung.
 
-|Anforderung|Tool|Zweck|
-|---|---|---|
-|Anwendungsüberwachung|Application Insights|Überwachung und Diagnose für Apps|
-|Leistung, Verfügbarkeit und Nutzung|Application Insights|Erweiterte Anwendungsüberwachung mit App-Dashboard, Verbundzuordnungen, Nutzung und Ablaufverfolgung|
+| Anforderung                          | Tool                 | Zweck                                                                                |
+| ------------------------------------ | -------------------- | -------------------------------------------------------------------------------------- |
+| Anwendungsüberwachung               | Application Insights | Überwachung und Diagnose für Apps                                                    |
+| Leistung, Verfügbarkeit und Nutzung | Application Insights | Erweiterte Anwendungsüberwachung mit App-Dashboard, Verbundzuordnungen, Nutzung und Ablaufverfolgung |
 
 ### <a name="deploy-application-insights"></a>Bereitstellen von Application Insights
 

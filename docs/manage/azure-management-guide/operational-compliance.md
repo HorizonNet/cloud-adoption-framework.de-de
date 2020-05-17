@@ -9,14 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: bb09c780a38576b8f4c8154290b4ca4b6cae7309
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b747a6f0d50fbf2510dc3a5220f72d513e8d1cb3
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426774"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216706"
 ---
-<!-- cSpell:ignore WSUS -->
+<!-- cSpell:ignore WSUS getting started -->
 
 # <a name="operational-compliance-in-azure"></a>Betriebsbezogene Compliance in Azure
 
@@ -28,12 +28,12 @@ Durch das Verbessern der betriebsbezogenen Compliance reduziert sich die Wahrsch
 
 In dieser Tabelle wird für jede Umgebung auf Unternehmensniveau der empfohlene Mindestwert für eine Verwaltungsbaseline aufgeführt.
 
-|Prozess  |Tool  |Zweck  |
-|---------|---------|---------|
-|Patchverwaltung|Updateverwaltung|Verwaltung und Zeitplanung von Updates|
-|Durchsetzung von Richtlinien|Azure Policy|Richtliniendurchsetzung zum Sicherstellen der Compliance von Umgebung und Gastsystemen|
-|Umgebungskonfiguration|Azure Blueprint|Automatisierte Compliance für Kerndienste|
-|Ressourcenkonfiguration|Desired State Configuration|Automatisierte Konfiguration für das Gastbetriebssystem und einige Aspekte der Umgebung|
+| Prozess | Tool | Zweck |
+|---|---|---|
+| Patchverwaltung | Updateverwaltung | Verwaltung und Zeitplanung von Updates |
+| Durchsetzung von Richtlinien | Azure Policy | Richtliniendurchsetzung zum Sicherstellen der Compliance von Umgebung und Gastsystemen |
+| Umgebungskonfiguration | Azure Blueprint | Automatisierte Compliance für Kerndienste |
+| Ressourcenkonfiguration | Desired State Configuration | Automatisierte Konfiguration für das Gastbetriebssystem und einige Aspekte der Umgebung |
 
 ::: zone target="docs"
 
@@ -48,10 +48,10 @@ In dieser Tabelle wird für jede Umgebung auf Unternehmensniveau der empfohlene 
 
 Verwenden Sie für Computer, die mit der Updateverwaltung verwaltet werden, die folgenden Konfigurationen, um Bewertungen und Updatebereitstellungen durchzuführen:
 
-- Microsoft Monitoring Agent (MMA) für Windows oder Linux
-- PowerShell Desired State Configuration (DSC) für Linux
-- Azure Automation – Hybrid Runbook Worker
-- Microsoft Update oder Windows Server Update Services (WSUS) für Windows-Computer
+- Microsoft Monitoring Agent (MMA) für Windows oder Linux.
+- PowerShell Desired State Configuration (DSC) für Linux.
+- Azure Automation Hybrid Runbook Worker.
+- Microsoft Update oder Windows Server Update Services (WSUS) für Windows-Computer.
 
 Weitere Informationen finden Sie unter [Updateverwaltungslösung](https://docs.microsoft.com/azure/automation/automation-update-management).
 

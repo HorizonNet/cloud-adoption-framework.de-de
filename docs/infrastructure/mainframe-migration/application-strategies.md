@@ -7,14 +7,14 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e0823eef01a2966459a10293c25d877b1c732c64
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a4b66a43cdf3524b23c109cdc5fa4e965c6e01f4
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425810"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217658"
 ---
-<!-- cSpell:ignore njray nanra Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->
+<!-- cSpell:ignore njray nanra Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX TIP dbextents Raincode Tmax -->
 
 # <a name="mainframe-application-migration"></a>Migration von Mainframeanwendungen
 
@@ -106,7 +106,7 @@ Verwendung:
 
 ### <a name="monitoring"></a>Überwachung
 
-- Verwenden Sie Überwachungstools. [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview), [Azure Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview) und auch die Azure-Protokolle ermöglichen Administratoren die Überwachung einer übermäßigen Auslastung von Batchausführungen und helfen bei der Beseitigung von Engpässen.
+- Verwenden Sie Überwachungstools. [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview), [Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview) und die Azure-Protokolle ermöglichen Administratoren die Überwachung einer übermäßigen Auslastung von Batchausführungen und helfen bei der Beseitigung von Engpässen.
 
 ## <a name="migrate-development-environments"></a>Migrieren von Entwicklungsumgebungen
 
@@ -164,7 +164,7 @@ Die folgende Abbildung zeigt eine mögliche Azure-Bereitstellung über einen pri
 
 ## <a name="perform-a-staged-mainframe-to-azure"></a>Durchführen einer mehrstufigen Mainframemigration zu Azure
 
-Das Verschieben von Lösungen aus einem Mainframe nach Azure kann eine *mehrstufige* Migration umfassen, bei der einige Anwendungen als Erste verschoben werden und andere vorübergehend oder dauerhaft auf dem Mainframe verbleiben. Für diesen Ansatz sind in der Regel Systeme erforderlich, die eine Zusammenarbeit von Anwendungen und Datenbanken zwischen Mainframe und Azure ermöglichen.
+Das Verschieben von Lösungen aus einem Mainframe nach Azure kann eine _mehrstufige_ Migration umfassen, bei der einige Anwendungen als Erste verschoben werden und andere vorübergehend oder dauerhaft auf dem Mainframe verbleiben. Für diesen Ansatz sind in der Regel Systeme erforderlich, die eine Zusammenarbeit von Anwendungen und Datenbanken zwischen Mainframe und Azure ermöglichen.
 
 In einem häufigen Szenario wird eine Anwendung nach Azure verschoben, während die von der Anwendung verwendeten Daten auf dem Mainframe bleiben. Eine spezielle Software wird verwendet, um den Anwendungen in Azure den Zugriff auf Daten auf dem Mainframe zu ermöglichen. Glücklicherweise stellen zahlreiche Lösungen die Integration zwischen Azure und vorhandenen Mainframe-Umgebungen, die Unterstützung für Hybridszenarien und die Migration über einen längeren Zeitraum bereit. Microsoft-Partner, unabhängige Softwarehersteller und Systemintegratoren können Sie bei diesem Prozess unterstützen.
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 088085af7dee93d0a1d69a1d6592b827c7a1c975
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 45645ec900c4c85c4dd7698f6d5861027dae8bf6
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80527162"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223744"
 ---
 <!-- cSpell:ignore opsman ITSM -->
 
@@ -45,7 +45,7 @@ Auf der Ignite-Konferenz im Jahr 2018 gaben wir dann bekannt, dass die Marke Azu
 - **Application Insights** für die Anwendungsüberwachung.
 - **Log Analytics** als primäre Funktion für die Erfassung und Analyse von Protokolldaten.
 - Ein neuer **einheitlicher Warnungsdienst**, in dem die Warnungsmechanismen von allen anderen zuvor erwähnten Diensten zusammengeführt sind.  
-- **Azure Network Watcher** für die Überwachung, Diagnose und Anzeige von Metriken für Ressourcen in einem virtuellen Azure-Netzwerk.
+- **Azure Network Watcher** für die Überwachung, Diagnose und Anzeige von Metriken für Ressourcen in einem virtuellen Netzwerk.
 
 ## <a name="the-story-of-operations-management-suite-oms"></a>Die Geschichte von Operations Management Suite (OMS)
 

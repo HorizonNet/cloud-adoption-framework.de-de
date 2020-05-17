@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4ca434bd7812c3752c7905286d70add6353b9d81
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 257b915e579136e64ae88262a3debdb0b2dbb527
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396217"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220174"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>Governanceleitfaden für komplexe Unternehmen
 
@@ -44,7 +44,7 @@ Jede Anwendung sollte im richtigen Bereich der Verwaltungsgruppen-, Abonnement- 
 
 1. Wenden Sie [konsistente Benennung](../../../ready/azure-best-practices/naming-and-tagging.md) jeder Ebene dieser Gruppierungshierarchie an.
 
-1. Bei der Bereitstellung von Ressourcengruppen sollte der Inhaltslebenszyklus berücksichtigt werden. Ressourcen, die zusammen entwickelt, verwaltet und ausgesondert werden, sollten in derselben Ressourcengruppe angeordnet sein. Weitere Informationen zu den bewährten Methoden zur Nutzung von Ressourcengruppen finden Sie [hier](../../../decision-guides/resource-consistency/index.md).
+1. Bei der Bereitstellung von Ressourcengruppen sollte der Inhaltslebenszyklus berücksichtigt werden. Ressourcen, die zusammen entwickelt, verwaltet und ausgesondert werden, sollten in derselben Ressourcengruppe angeordnet sein. Weitere Informationen zu den bewährten Methoden zur Verwendung von Ressourcengruppen finden Sie [hier](../../../decision-guides/resource-consistency/index.md).
 
 1. Die [Regionswahl](../../../migrate/azure-best-practices/multiple-regions.md) ist äußerst wichtig und muss berücksichtigt werden, damit sowohl Netzwerk- und Überwachungsfunktionen für Failover-/Failbackvorgänge als auch die [erforderlichen SKUs in den bevorzugten Regionen](https://azure.microsoft.com/global-infrastructure/services) zur Verfügung stehen.
 
@@ -62,14 +62,14 @@ Sobald dieses MVP bereitgestellt ist, können zusätzliche Ebenen der Governance
 
 - [Sicherheitsbaseline für geschützte Daten](./security-baseline-improvement.md)
 - [Ressourcenkonfigurationen für unternehmenskritische Anwendungen](./resource-consistency-improvement.md)
-- [Steuerelemente für das Kostenmanagement](./cost-management-improvement.md)
+- [Steuerelemente für die Kostenverwaltung](./cost-management-improvement.md)
 - [Große Unternehmen: Multi-Cloud-Entwicklung](./multicloud-improvement.md)
 
 <!-- markdownlint-disable MD026 -->
 
 ## <a name="what-does-this-guidance-provide"></a>Was bietet dieser Leitfaden?
 
-Im MVP sind Methoden und Tools für die Disziplin der [Beschleunigung der Bereitstellung](../../deployment-acceleration/index.md) festgelegt, um schnell Unternehmensrichtlinien anzuwenden. Insbesondere verwendet das MVP Azure Blueprints, Azure Policy und Azure-Verwaltungsgruppen, um einige grundlegende Unternehmensrichtlinien anzuwenden, wie in der Lösung für das fiktive Unternehmen definiert. Diese Unternehmensrichtlinien werden mithilfe von Azure Resource Manager-Vorlagen und Azure-Richtlinien angewandt, um eine kleine Baseline für Identität und Sicherheit festzulegen.
+Im MVP sind Methoden und Tools für die [Disziplin der Beschleunigung der Bereitstellung](../../deployment-acceleration/index.md) festgelegt, um Unternehmensrichtlinien schnell anwenden zu können. Insbesondere verwendet das MVP Azure Blueprints, Azure Policy und Azure-Verwaltungsgruppen, um einige grundlegende Unternehmensrichtlinien anzuwenden, wie in der Lösung für das fiktive Unternehmen definiert. Diese Unternehmensrichtlinien werden mithilfe von Azure Resource Manager-Vorlagen und Azure-Richtlinien angewandt, um eine kleine Baseline für Identität und Sicherheit festzulegen.
 
 ![Beispiel für ein inkrementelles Governance-MVP](../../../_images/govern/governance-mvp.png)
 
@@ -77,10 +77,10 @@ Im MVP sind Methoden und Tools für die Disziplin der [Beschleunigung der Bereit
 
 Im Lauf der Zeit wird dieses Governance-MVP verwendet, um Governancemethoden schrittweise zu verbessern. Mit fortschreitender Einführung wächst das geschäftliche Risiko. Verschiedene Disziplinen im CAF-Governancemodell (Cloud Adoption Framework) werden zur Bewältigung dieser Risiken angepasst. Spätere Artikel dieser Reihe erläutern die Änderungen der Unternehmensrichtlinie, die sich auf das fiktive Unternehmen auswirkt. Diese Änderungen betreffen vier Disziplinen:
 
-- Identitätsbaseline, indem Migrationsabhängigkeiten in der Schilderung weiterentwickelt werden
-- Kostenmanagement, wenn die Einführung skaliert wird.
-- Sicherheitsbaseline, indem geschützte Daten bereitgestellt werden.
-- Ressourcenkonsistenz, indem die IT-Abteilung beginnt, unternehmenskritische Workloads zu unterstützen.
+- Identitätsbaseline, wenn Migrationsabhängigkeiten in der Lösung weiterentwickelt werden.
+- Kostenverwaltung, wenn die Einführung skaliert wird.
+- Sicherheitsbaseline, wenn geschützte Daten bereitgestellt werden.
+- Ressourcenkonsistenz, wenn das IT-Betriebsteam beginnt, unternehmenskritische Workloads zu unterstützen.
 
 ![Beispiel für ein inkrementelles Governance-MVP](../../../_images/govern/governance-improvement-large.png)
 

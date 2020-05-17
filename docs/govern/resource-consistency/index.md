@@ -9,23 +9,23 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: ab79e6e0d55c8b7928e53415920c7ed285b625d8
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 3bfe85e2305f1c844ddf92a14cf298a0a1c30edb
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997378"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218168"
 ---
 # <a name="resource-consistency-discipline-overview"></a>Übersicht über die Disziplin „Ressourcenkonsistenz“
 
-„Ressourcenkonsistenz“ ist eine der [fünf Disziplinen von Cloudgovernance](../governance-disciplines.md) innerhalb des [CAF-Governancemodells (Cloud Adoption Framework)](../index.md). Dieser Disziplin konzentriert sich auf Möglichkeiten zum Einrichten von Richtlinien, die sich auf die Verwaltung des Betriebs einer Umgebung, Anwendung oder Workload beziehen. IT-Betriebsteams bieten häufig eine Überwachung der Leistung von Anwendungen, Workloads und Ressourcen. Darüber führen sie auch häufig Aufgaben aus, die zur Erfüllung von Skalierungsanforderungen erforderlich sind, sowie zur Korrektur von Verstößen gegen die Vereinbarung zum Leistungsservicelevel (Service Level Agreement, SLA) und zur proaktiven Vermeidung von SLA-Leistungsverstößen durch automatisierte Wartung. Innerhalb der fünf Disziplinen der Cloudgovernance ist die Ressourcenkonsistenz eine Disziplin, die sicherstellt, dass Ressourcen derart einheitlich konfiguriert sind, dass sie von IT-Abläufen erkannt werden können, in Notfallwiederherstellungslösungen eingeschlossen sind und in wiederholbare Betriebsprozesse aufgenommen werden können.
+„Ressourcenkonsistenz“ ist eine der [fünf Disziplinen der Cloudgovernance](../governance-disciplines.md) innerhalb des [Cloud Adoption Framework-Governancemodells](../index.md). Dieser Disziplin konzentriert sich auf Möglichkeiten zum Einrichten von Richtlinien, die sich auf die Verwaltung des Betriebs einer Umgebung, Anwendung oder Workload beziehen. IT-Betriebsteams übernehmen häufig die Überwachung der Leistung von Anwendungen, Workloads und Ressourcen. Außerdem führen sie häufig Aufgaben aus, die zur Erfüllung von Skalierungsanforderungen, zur Korrektur von Verstößen gegen die Vereinbarung zum Leistungsservicelevel (Service Level Agreement, SLA) und zur proaktiven Vermeidung von SLA-Leistungsverstößen durch automatisierte Wartung erforderlich sind. Innerhalb der fünf Disziplinen der Cloudgovernance stellt die Disziplin „Ressourcenkonsistenz“ sicher, dass Ressourcen derart einheitlich konfiguriert sind, dass sie von IT-Vorgängen erkannt werden können, in Notfallwiederherstellungslösungen eingeschlossen sind und in wiederholbare Betriebsprozesse integriert werden können.
 
 > [!NOTE]
-> Die Governance der Ressourcenkonsistenz ersetzt nicht die vorhandenen IT-Teams, -Prozesse und -Verfahren, mit denen Ihr Unternehmen cloudbasierte Ressourcen effizient verwalten kann. Der Hauptzweck dieser Disziplin ist es, potenzielle Geschäftsrisiken zu identifizieren und den für die Verwaltung Ihrer Ressourcen in der Cloud zuständigen IT-Mitarbeitern Hilfe bei der Risikominderung zu geben. Bei der Entwicklung von Governancerichtlinien und -prozessen ist darauf zu achten, dass die relevanten IT-Teams in Ihre Planungs- und Überprüfungsprozesse einbezogen werden.
+> Die Disziplin „Ressourcenkonsistenz“ ersetzt nicht die vorhandenen IT-Teams, -Prozesse und -Verfahren, mit denen Ihre Organisation cloudbasierte Ressourcen effizient verwalten kann. Der Hauptzweck dieser Disziplin ist es, potenzielle Geschäftsrisiken zu identifizieren und den für die Verwaltung Ihrer Ressourcen in der Cloud zuständigen IT-Mitarbeitern Hilfe bei der Risikominderung zu geben. Bei der Entwicklung von Governancerichtlinien und -prozessen ist darauf zu achten, dass die relevanten IT-Teams in Ihre Planungs- und Überprüfungsprozesse einbezogen werden.
 
-In diesem Abschnitt des Frameworks für die Einführung der Cloud wird beschrieben, wie Sie eine Disziplin „Ressourcenkonsistenz“ als Teil Ihrer Cloudgovernancestrategie entwickeln. Die Hauptzielgruppe für diesen Leitfaden sind die Cloudarchitekten Ihrer Organisation und andere Mitglieder Ihres Cloudgovernanceteams. Die Entscheidungen, Richtlinien und Prozesse, die sich aus dieser Disziplin ergeben, sollten jedoch die Einbeziehung von und Diskussion mit relevanten Mitgliedern des IT-Teams beinhalten, die für die Implementierung und Verwaltung der Ressourcenkonsistenz Ihrer Organisation verantwortlich sind.
+In diesem Abschnitt des Frameworks für die Einführung der Cloud wird beschrieben, wie Sie eine Disziplin „Ressourcenkonsistenz“ als Teil Ihrer Cloudgovernancestrategie entwickeln. Die Hauptzielgruppe für diesen Leitfaden sind die Cloudarchitekten Ihrer Organisation und andere Mitglieder Ihres Cloudgovernanceteams. Die Entscheidungen, Richtlinien und Prozesse, die sich aus dieser Disziplin ergeben, sollten jedoch die Einbeziehung von und Gespräche mit relevanten Mitgliedern der IT-Teams umfassen, die für die Implementierung und Verwaltung der Ressourcenkonsistenzlösungen Ihrer Organisation verantwortlich sind.
 
-Wenn Ihre Organisation nicht über internes Fachwissen zu Strategien der Ressourcenkonsistenz verfügt, können Sie im Rahmen dieser Disziplin externe Berater hinzuziehen. Sie können auch [Microsoft Consulting Services](https://www.microsoft.com/industry/services/consulting), den Cloudeinführungsdienst [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) oder andere externe Experten für die Cloudeinführung einbeziehen, um zu besprechen, wie sich Ihre cloudbasierten Ressourcen am besten organisieren, nachverfolgen und optimieren lassen.
+Wenn Ihre Organisation nicht über internes Fachwissen über Strategien der Ressourcenkonsistenz verfügt, können Sie im Rahmen dieser Disziplin externe Berater hinzuziehen. Sie können auch [Microsoft Consulting Services](https://www.microsoft.com/industry/services/consulting), den Cloudeinführungsdienst [Microsoft FastTrack](https://azure.microsoft.com/programs/azure-fasttrack) oder andere externe Experten für die Cloudeinführung einbeziehen, um zu besprechen, wie sich Ihre cloudbasierten Ressourcen am besten organisieren, nachverfolgen und optimieren lassen.
 
 ## <a name="policy-statements"></a>Richtlinienanweisungen
 
@@ -36,7 +36,7 @@ Umsetzbare Richtlinienanweisungen und die daraus resultierenden Architekturanfor
 
 ## <a name="develop-governance-policy-statements"></a>Entwickeln von Richtlinienanweisungen für Governance
 
-Die folgenden sechs Schritte enthalten Beispiele und mögliche Optionen, die bei der Entwicklung der Governance der Ressourcenkonsistenz zu berücksichtigen sind. Verwenden Sie die einzelnen Schritte als Ausgangspunkte für Diskussionen innerhalb Ihres Cloudgovernanceteams sowie mit den beteiligten Geschäfts- und IT-Teams in Ihrer Organisation, um die Richtlinien und Prozesse festzulegen, die zur Bewältigung von Ressourcenkonsistenzrisiken erforderlich sind.
+Die folgenden sechs Schritte enthalten Beispiele und mögliche Optionen, die Sie beim Entwickeln der Disziplin „Ressourcenkonsistenz“ berücksichtigen sollten. Verwenden Sie die einzelnen Schritte als Ausgangspunkt für Diskussionen innerhalb Ihres Cloudgovernanceteams sowie mit den beteiligten Geschäfts- und IT-Teams in Ihrer Organisation, um die Richtlinien und Prozesse festzulegen, die zur Bewältigung von Risiken in Bezug auf die Disziplin „Ressourcenkonsistenz“ erforderlich sind.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -52,14 +52,15 @@ Die folgenden sechs Schritte enthalten Beispiele und mögliche Optionen, die bei
                         </div>
                     </div>
                     <div class="cardText" style="padding-left:0px;">
-                        <h3>Vorlage für Ressourcenkonsistenz</h3>
+                        <h3>Vorlage für die Disziplin „Ressourcenkonsistenz“</h3>
                         <p class="x-hidden-focus">Laden Sie die Vorlage zur Dokumentation einer Disziplin vom Typ „Ressourcenkonsistenz“ herunter.</p>
                     </div>
                 </div>
             </div>
         </div>
     </a>
-</li><li style="display: flex; flex-direction: column;">
+</li>
+<li style="display: flex; flex-direction: column;">
     <a href="./business-risks.md">
         <div class="cardSize">
             <div class="cardPadding" >
@@ -128,7 +129,7 @@ Die folgenden sechs Schritte enthalten Beispiele und mögliche Optionen, die bei
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Einsatzreife</h3>
-                        <p class="x-hidden-focus">Abstimmung der Einsatzreife der Cloudverwaltung mit den Phasen der Cloudeinführung.</p>
+                        <p class="x-hidden-focus">Stimmen Sie die Einsatzreife der Cloudverwaltung mit den Phasen der Cloudeinführung ab.</p>
                     </div>
                 </div>
             </div>

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 9d480b98fc69e899185ea9633ebf00725557e908
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4156b96dcebf1998a67dbefe9d5179dc8ba70529
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433170"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224339"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Leitfaden zur Entscheidungsfindung für die Richtlinienerzwingung
 
@@ -50,7 +50,7 @@ Wenn Ihre Cloudinfrastruktur wächst, können Sie mithilfe zusätzlicher Tools, 
 
 In Azure können Konfigurationseinstellungen und Ressourcenerstellungsregeln auf der Verwaltungsgruppen-, Abonnement- oder Ressourcengruppenebene angewendet werden, um die Richtlinieneinhaltung sicherzustellen.
 
-[Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) ist ein Azure-Dienst zum Erstellen, Zuweisen und Verwalten von Richtlinien. Mit diesen Richtlinien werden unterschiedliche Regeln und Auswirkungen für Ihre Ressourcen erzwungen, damit diese stets mit Ihren Unternehmensstandards und Vereinbarungen zum Servicelevel konform bleiben. Mit Azure Policy werden Ihre Ressourcen auf Nichteinhaltung der zugewiesenen Richtlinien überprüft. Angenommen, Sie möchten beispielsweise die SKU-Größe von virtuellen Computern in der Umgebung beschränken. Nach dem Implementieren einer entsprechenden Richtlinie werden neue und vorhandene Ressourcen in Bezug auf ihre Konformität ausgewertet. Mit der richtigen Richtlinie können vorhandene Ressourcen in Konformität gebracht werden.
+[Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) ist ein Azure-Dienst zum Erstellen, Zuweisen und Verwalten von Richtlinien. Mit diesen Richtlinien werden verschiedene Regeln und Auswirkungen für Ihre Ressourcen erzwungen, damit diese stets mit Ihren Unternehmensstandards und Vereinbarungen zum Servicelevel (Service Level Agreements, SLA) konform bleiben. Mit Azure Policy werden Ihre Ressourcen auf Nichteinhaltung der zugewiesenen Richtlinien überprüft. Angenommen, Sie möchten beispielsweise die SKU-Größe von virtuellen Computern in der Umgebung beschränken. Nach dem Implementieren einer entsprechenden Richtlinie werden neue und vorhandene Ressourcen in Bezug auf ihre Konformität ausgewertet. Mit der richtigen Richtlinie können vorhandene Ressourcen in Konformität gebracht werden.
 
 ## <a name="cross-organization-policy"></a>Organisationsübergreifende Richtlinie
 

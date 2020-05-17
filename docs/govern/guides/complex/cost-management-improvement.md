@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f65118884e4bac8b62d3857008ccd5ad126656b9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 6515a690ea0590061cb4b5ea707f7636b380dd10
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80808989"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220157"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Cost Management“
 
@@ -31,7 +31,7 @@ In der vorherigen Phase dieser Erzählung hat das IT-Team Produktionsworkloads m
 
 Seit diesem Zeitpunkt haben sich einige Dinge geändert, die sich auf die Governance auswirken:
 
-- 5\.000 Ressourcen wurden aus den beiden zur Stilllegung markierten Rechenzentren entfernt. Auftragswesen und IT-Sicherheit heben nun die Bereitstellung der verbleibenden physischen Ressourcen auf.
+- 5\.000 Ressourcen wurden aus den beiden zur Außerbetriebnahme gekennzeichneten Rechenzentren entfernt. Auftragswesen und IT-Sicherheit heben nun die Bereitstellung der verbleibenden physischen Ressourcen auf.
 - Die Anwendungsentwicklungsteams haben CI/CD-Pipelines implementiert, um einige native Cloudanwendungen bereitzustellen, die erhebliche Auswirkungen auf das Kundenerlebnis haben.
 - Das Business Intelligence-Team hat Aggregations-, Zusammenstellungs-, Erkenntnis- und Prognoseprozesse entwickelt, die konkrete Vorteile für den Geschäftsbetrieb bringen. Diese Prognosen ermöglichen jetzt kreative neue Produkte und Dienstleistungen.
 
@@ -57,19 +57,19 @@ Die folgenden Änderungen an der Richtlinie verringern die neuen Risiken und ver
 - Alle Kosten müssen zum Zweck der Rechnungslegung einer Geschäftsfunktion zugeordnet sein.
 - Cloudressourcen sollten fortlaufend auf Optimierungsmöglichkeiten überprüft werden.
 - Cloudgovernancetools müssen die Optionen für die Dimensionierung von Ressourcen auf eine genehmigte Liste mit Konfigurationen beschränken. Die Tools müssen sicherstellen, dass alle Ressourcen ermittelbar sind und von der Kostenüberwachungslösung verfolgt werden.
-- Während der Bereitstellungsplanung sollten alle erforderlichen Cloudressourcen, die dem Hosten von Produktionsworkloads dienen, dokumentiert werden. Diese Dokumentation kann bei der Verfeinerung der Budgets und bei der Vorbereitung zusätzlicher Automatisierungstools helfen, um den Einsatz teurerer Optionen zu vermeiden. Während dieses Prozesses sollten verschiedene vom Cloudanbieter angebotene Rabattierungstools wie z.B. reservierte Instanzen oder Lizenzkostenreduzierungen in Betracht gezogen werden.
+- Während der Bereitstellungsplanung sollten alle erforderlichen Cloudressourcen, die dem Hosten von Produktionsworkloads dienen, dokumentiert werden. Diese Dokumentation kann bei der Verfeinerung der Budgets und bei der Vorbereitung zusätzlicher Automatisierungstools helfen, um den Einsatz teurerer Optionen zu vermeiden. Dabei sollten verschiedene vom Cloudanbieter angebotene Diskontierungstools, z.B. reservierte Instanzen oder Lizenzkostenreduzierungen, in Betracht gezogen werden.
 - Alle Besitzer von Anwendungen sind verpflichtet, an Schulungen zu Praktiken zur Optimierung von Workloads teilzunehmen, um die Cloudkosten besser zu kontrollieren.
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>Inkrementelle Verbesserungen der bewährten Methoden
 
 In diesem Abschnitt des Artikels wird der Governance-MVP-Entwurf so verbessert, dass er neue Azure-Richtlinien und eine Implementierung von Azure Cost Management umfasst. Zusammen erfüllen diese beiden Entwurfsänderungen die neuen Richtlinienanweisungen des Unternehmens.
 
-1. Nehmen Sie Änderungen im Azure Enterprise-Portal vor, um die Bereitstellung in Kanada dem Abteilungsadministrator in Rechnung zu stellen.
+1. Nehmen Sie Änderungen im Azure Enterprise Portal vor, um dem Abteilungsadministrator die Bereitstellung in Kanada in Rechnung zu stellen.
 2. Implementieren von Azure Cost Management.
     1. Festlegen des richtigen Zugriffsumfangs, um ihn mit dem Abonnementmuster und dem Ressourcengruppierungsmuster abzustimmen. Unter der Annahme der Angleichung an das in früheren Artikeln definierte Governance-MVP sollte dies Zugriff im Geltungsbereich des **Registrierungskontos** für das Cloudgovernanceteam erfordern, das die Berichterstellung auf hoher Ebene durchführt. Zusätzliche Teams außerhalb der Governance, wie etwa das kanadische Beschaffungsteam, benötigen Zugriff im **Ressourcengruppenumfang**.
     2. Einrichten eines Budgets in Azure Cost Management.
     3. Überprüfen Sie die anfänglichen Empfehlungen, und reagieren Sie entsprechend. Es empfiehlt sich, zur Unterstützung des Berichterstellungsprozesses einen sich wiederholenden Prozess einzurichten.
-    4. Konfigurieren Sie Azure Cost Management-Berichterstellung mit anfänglicher und regelmäßiger Ausführung.
+    4. Konfigurieren Sie die Azure Cost Management-Berichterstellung mit anfänglicher und regelmäßiger Ausführung.
 3. Aktualisieren von Azure Policy.
     1. Überwachen Sie die Tagging-, Verwaltungsgruppen-, Abonnement- und Ressourcengruppenwerte, um Abweichungen zu identifizieren.
     2. Legen Sie Optionen für die SKU-Größe fest, um die Bereitstellung auf die in der Dokumentation zur Bereitstellungsplanung aufgeführten SKUs zu beschränken.

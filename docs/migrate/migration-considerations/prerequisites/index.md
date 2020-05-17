@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ddbd2374cea98d08760e53eba885171aa854ed17
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 500df8bb2ff239a34b2eb87dbe9f6eb2f215c005
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429029"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222078"
 ---
 # <a name="prerequisites-for-migration"></a>Voraussetzungen für die Migration
 
@@ -26,10 +26,10 @@ Stellen Sie die geschäftliche, kulturelle und technische Bereitschaft sicher, b
 
 Bevor Sie mit der Cloudmigration beginnen, lesen Sie die Anleitung [Plan](../../../strategy/index.md) (Planen) und [Ready](../../../ready/index.md) (Bereit) im Cloud Adoption Framework, um sicherzustellen, dass Ihr Unternehmen auf Einführungs- und Migrationsprozesse für die Cloud vorbereitet ist. Überprüfen Sie insbesondere die Unternehmensanforderungen und die erwarteten Ergebnisse, die die Migration unterstützen:
 
-- [Erste Schritte: Migrieren](../../../getting-started/migrate.md)
+- [Erste Schritte: Beschleunigen der Migration](../../../get-started/migrate.md)
 - [„Warum wechseln wir in die Cloud?“](../../../strategy/motivations.md)
 
-## <a name="definition-of-done"></a>Definition von *Fertig*.
+## <a name="definition-of-_done_"></a>Definition von _Fertig_.
 
 Die Voraussetzungen sind erfüllt, wenn die folgenden Punkte zutreffen:
 
@@ -38,7 +38,7 @@ Die Voraussetzungen sind erfüllt, wenn die folgenden Punkte zutreffen:
 - **Technische Bereitschaft:** Die Landezone (oder zugeordneter Hostingbereich in der Cloud), die die migrierten Ressourcen erhält, erfüllt die Mindestanforderungen zum Hosten der ersten migrierten Workload.
 
 > [!CAUTION]
-> Die Vorbereitung ist der Schlüssel zum Erfolg einer Migration. Eine zu intensive Vorbereitung kann jedoch zu einer *Analysestarre* führen, bei der eine zu umfassende Planung den Migrationsaufwand erheblich verzögern kann. Die in diesem Abschnitt definierten Prozesse und Voraussetzungen sollen Ihnen bei der Entscheidungsfindung helfen, aber lassen Sie sich nicht davon abhalten, sinnvolle Fortschritte zu erzielen.
+> Die Vorbereitung ist der Schlüssel zum Erfolg einer Migration. Eine zu intensive Vorbereitung kann jedoch zu einer _Analysestarre_ führen, bei der eine zu umfassende Planung den Migrationsaufwand erheblich verzögern kann. Die in diesem Abschnitt definierten Prozesse und Voraussetzungen sollen Ihnen bei der Entscheidungsfindung helfen, aber lassen Sie sich nicht davon abhalten, sinnvolle Fortschritte zu erzielen.
 >
 > Wählen Sie für Ihre anfängliche Migration eine relativ einfache Workload. Verwenden Sie die in diesem Abschnitt beschriebenen Prozesse zum Planen und Durchführen dieser erstmaligen Migration. Dieser erste Migrationsaufwand wird Ihrem Team schnell die Grundsätze der Cloud vor Augen führen und es zwingen, sich über die Funktionsweise der Cloud zu informieren. Mit zunehmender Erfahrung Ihres Teams integrieren Sie diese Erfahrungen, wenn Sie größere und komplexere Migrationen durchführen.
 

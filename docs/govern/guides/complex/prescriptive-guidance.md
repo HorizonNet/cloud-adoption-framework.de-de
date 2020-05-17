@@ -8,24 +8,26 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 50335d2c7e6a628c0fd8886f5d1fac2701d7f286
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0b807867164fb9ad2717499fc6772c7594140fc2
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995510"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220021"
 ---
 # <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>Governanceleitfaden für komplexe Unternehmen: Beschreibung der bewährten Methoden
 
 Der Governanceleitfaden beginnt mit einer Sammlung von anfänglichen [Unternehmensrichtlinien](./initial-corporate-policy.md). Diese Richtlinien werden verwendet, um ein Miminum Viable-Product (MVP, minimal brauchbares Produkt) für die Governance einzurichten, das [bewährte Methoden](./index.md) berücksichtigt.
 
-In diesem Artikel werden die allgemeinen Strategien behandelt, die zum Erstellen eines Governance-MVP erforderlich sind. Der Kern des Governance-MVP ist das Verfahren zur [Beschleunigung der Bereitstellung](../../deployment-acceleration/index.md). Die in dieser Phase angewandten Tools und Muster ermöglichen die inkrementellen Verbesserungen, die für die zukünftige Erweiterung von Governance erforderlich sind.
+In diesem Artikel werden die allgemeinen Strategien behandelt, die zum Erstellen eines Governance-MVP erforderlich sind. Der Kern des Governance-MVP ist die [Disziplin der Beschleunigung der Bereitstellung](../../deployment-acceleration/index.md). Die in dieser Phase angewandten Tools und Muster ermöglichen die inkrementellen Verbesserungen, die für die zukünftige Erweiterung von Governance erforderlich sind.
 
 ## <a name="governance-mvp-initial-governance-foundation"></a>Governance-MVP (anfängliche Governancegrundlage)
 
 Die schnelle Einführung von Governance und Unternehmensrichtlinien ist dank einiger einfacher Prinzipien und cloudbasierter Governancetools möglich. Dies sind die ersten der drei Governance-Verfahren, die in jedem Governanceprozess zur Anwendung kommen. Sämtliche Disziplinen werden weiter unten in diesem Artikel erläutert.
 
-Als Ausgangspunkt werden in diesem Artikel die High-Level-Strategien hinter Identitätsbaseline, Sicherheitsbaseline und Beschleunigung der Bereitstellung behandelt, die für die Erstellung eines Governance-MVP erforderlich sind, das als Grundlage für jede Umsetzung dient.
+<!--docsTest:ignore "Identity Baseline, Security Baseline, and Deployment Acceleration disciplines" -->
+
+Als Ausgangspunkt werden in diesem Artikel die allgemeinen Strategien hinter den Disziplinen „Identitätsbaseline“, „Sicherheitsbaseline“ und „Beschleunigung der Bereitstellung“ behandelt, die zum Erstellen eines Governance-MVP erforderlich sind, der als Grundlage für jede Umsetzung dient.
 
 ![Beispiel für ein inkrementelles Governance-MVP](../../../_images/govern/governance-mvp.png)
 
@@ -39,7 +41,7 @@ Diese Implementierung kann auch mithilfe einer einfachen Prüfliste beschrieben 
 
 1. Einholen von Entscheidungen über Kernabhängigkeiten: Identität, Netzwerk und Verschlüsselung.
 1. Bestimmen des Musters, das bei der Durchsetzung von Unternehmensrichtlinien verwendet werden soll.
-1. Bestimmen der geeigneten Governancemuster für die Disziplinen Ressourcenkonsistenz, Ressourcentagging, Protokollierung und Berichterstellung.
+1. Bestimmen der geeigneten Governancemuster für Ressourcenkonsistenz, Ressourcentagging, Protokollierung und Berichterstellung.
 1. Implementieren der Governancetools, die auf das gewählte Muster der Richtliniendurchsetzung abgestimmt sind, um die abhängigen Entscheidungen und Governanceentscheidungen anzuwenden.
 
 [!INCLUDE [implementation-process](../../../../includes/implementation-process.md)]
@@ -50,19 +52,25 @@ Das Cloudgovernanceteam ist für die folgenden Entscheidungen und Implementierun
 
 ### <a name="subscription-design"></a>Abonnemententwurf
 
-Die Entscheidung über den Abonnemententwurf bestimmt, wie Azure-Abonnements strukturiert werden und wie Azure-Verwaltungsgruppen verwendet werden, um Zugriff, Richtlinien und Compliance für diese Abonnements effizient zu verwalten. Im vorliegenden Beispielfall hat das Governanceteam die **[Strategie für gemischte Abonnements](../../../decision-guides/subscriptions/index.md#mixing-subscription-strategies)** ausgewählt.
+Die Entscheidung über den Abonnemententwurf bestimmt, wie Azure-Abonnements strukturiert werden und wie Azure-Verwaltungsgruppen verwendet werden, um Zugriff, Richtlinien und Compliance für diese Abonnements effizient zu verwalten. Im vorliegenden Beispielfall hat das Governanceteam eine [Strategie für gemischte Abonnements](../../../decision-guides/subscriptions/index.md#mix-subscription-strategies) ausgewählt.
 
-- Wenn neue Anforderungen für Azure-Ressourcen auftreten, sollte für jede größere Geschäftseinheit in jeder geografischen Betriebsregion eine „Abteilung“ eingerichtet werden. Innerhalb jeder der Abteilungen sollten „Abonnements“ für jeden Anwendungsarchetyp erstellt werden.
-- Ein Anwendungsarchetyp ist eine Möglichkeit, Anwendungen mit ähnlichen Anwendungen zu gruppieren. Häufige Beispiele sind: Anwendungen mit geschützten Daten, verwaltete Anwendungen (wie HIPAA oder FedRAMP), risikoarme Anwendungen, Anwendungen mit lokalen Abhängigkeiten, SAP-Anwendungen oder Anwendungen anderer Mainframes in Azure oder Anwendungen, die lokale SAP- oder lokale Mainframeanwendungen erweitern. Jedes Unternehmen hat individuelle Anforderungen, die auf Datenklassifikationen und den Arten von Anwendungen basieren, die das Geschäft unterstützen. Die Abhängigkeitszuordnung der digitalen Infrastruktur kann bei der Definition der Anwendungsarchitekturen in einem Unternehmen helfen.
-- Im Rahmen des Abonnementdesigns sollte auf der Grundlage der beiden vorangegangenen Aufzählungspunkte eine gemeinsame Namenskonvention vereinbart werden.
+- Wenn neue Anforderungen für Azure-Ressourcen entstehen, sollte für jede größere Geschäftseinheit in jeder geografischen Betriebsregion eine _Abteilung_ eingerichtet werden. In jeder einzelnen Abteilung sollten _Abonnements_ für jeden Anwendungsarchetyp erstellt werden.
+- Ein Anwendungsarchetyp ist eine Möglichkeit, Anwendungen mit ähnlichen Anwendungen zu gruppieren. Häufige Beispiele sind:
+  - Anwendungen mit geschützten Daten, verwaltete Anwendungen (z. B. HIPAA oder FedRAMP).
+  - Anwendungen mit geringem Risiko.
+  - Anwendungen mit lokalen Abhängigkeiten.
+  - SAP- oder andere Mainframeanwendungen in Azure.
+  - Anwendungen, die lokale SAP- oder Mainframeanwendungen erweitern.
+  Jedes Unternehmen hat individuelle Anforderungen, die auf Datenklassifikationen und den Arten von Anwendungen basieren, die das Geschäft unterstützen. Die Abhängigkeitszuordnung der digitalen Infrastruktur kann bei der Definition der Anwendungsarchitekturen in einem Unternehmen helfen.
+- Im Rahmen des Abonnementdesigns sollte auf der Grundlage der obigen Punkte eine gemeinsame Namenskonvention übernommen werden.
 
 ### <a name="resource-consistency"></a>Ressourcenkonsistenz
 
-Entscheidungen zur Ressourcenkonsistenz bestimmen die Tools, Prozesse und Aufgaben, die erforderlich sind, um sicherzustellen, dass Azure-Ressourcen innerhalb eines Abonnements konsistent bereitgestellt, konfiguriert und verwaltet werden. Im vorliegenden Beispielfall wurde **[Bereitstellungskonsistenz](../../../decision-guides/resource-consistency/index.md#deployment-consistency)** als primäres Muster für die Ressourcenkonsistenz ausgewählt.
+Entscheidungen zur Ressourcenkonsistenz bestimmen die Tools, Prozesse und Aufgaben, die erforderlich sind, um sicherzustellen, dass Azure-Ressourcen innerhalb eines Abonnements konsistent bereitgestellt, konfiguriert und verwaltet werden. Im vorliegenden Beispielfall wurde [Bereitstellungskonsistenz](../../../decision-guides/resource-consistency/index.md#deployment-consistency) als primäres Muster für die Ressourcenkonsistenz ausgewählt.
 
 - Ressourcengruppen werden mit dem Lebenszyklusansatz für Anwendungen erstellt. Alle Elemente, die gemeinsam erstellt, verwaltet und außer Betrieb genommen werden, sollten sich in einer einzigen Ressourcengruppe befinden. Weitere Informationen finden Sie im [Leitfaden zur Entscheidungsfindung bei der Ressourcenkonsistenz](../../../decision-guides/resource-consistency/index.md#basic-grouping).
 - Azure Policy sollte auf alle Abonnements aus der zugehörigen Verwaltungsgruppe angewendet werden.
-- Im Rahmen des Bereitstellungsprozesses sollten Azure Resource Consistency-Vorlagen für die Ressourcengruppe in der Quellcodeverwaltung gespeichert werden.
+- Im Rahmen des Bereitstellungsprozesses sollten Azure-Ressourcenkonsistenzvorlagen für die Ressourcengruppe in der Quellcodeverwaltung gespeichert werden.
 - Jede Ressourcengruppe ist basierend auf dem oben beschriebenen Lebenszyklusansatz einer bestimmten Workload oder Anwendung zugeordnet.
 - Azure-Verwaltungsgruppen ermöglichen das Aktualisieren der Governanceentwürfe, wenn sich die Unternehmensrichtlinie weiterentwickelt.
 - Eine umfassende Implementierung von Azure Policy könnte den Zeitrahmen für das Team überschreiten und bietet zu diesem Zeitpunkt möglicherweise keinen großen Mehrwert. Allerdings sollte eine einfache Standardrichtlinie erstellt und auf jede Verwaltungsgruppe angewendet werden, um die geringe Anzahl der aktuellen Richtlinienerklärungen zur Cloud-Governance durchzusetzen. In dieser Richtlinie wird die Implementierung spezifischer Governanceanforderungen definiert. Diese Implementierungen können dann auf alle bereitgestellten Ressourcen angewendet werden.
@@ -72,23 +80,23 @@ Entscheidungen zur Ressourcenkonsistenz bestimmen die Tools, Prozesse und Aufgab
 
 ### <a name="resource-tagging"></a>Tags für Ressourcen
 
-Entscheidungen zur Ressourcenkennzeichnung bestimmen, wie Metadaten innerhalb eines Abonnements auf Azure-Ressourcen angewandt werden, um Prozesse, Verwaltung und Buchhaltung zu unterstützen. Im vorliegenden Beispielfall wurde das Muster **[Buchhaltung](../../../decision-guides/resource-tagging/index.md#resource-tagging-patterns)** als Standardmodell für die Ressourcenkennzeichnung ausgewählt.
+Entscheidungen zur Ressourcenkennzeichnung bestimmen, wie Metadaten innerhalb eines Abonnements auf Azure-Ressourcen angewandt werden, um Prozesse, Verwaltung und Buchhaltung zu unterstützen. Im vorliegenden Beispielfall wurde das Muster [Buchhaltung](../../../decision-guides/resource-tagging/index.md#resource-tagging-patterns) als Standardmodell für das Ressourcentagging ausgewählt.
 
 - Bereitgestellte Ressourcen sollten mit Werten für Folgendes gekennzeichnet werden:
-  - Abteilung/Abrechnungseinheit
+  - Abteilung oder Abrechnungseinheit
   - Gebiet
   - Datenklassifizierung
   - Wichtigkeit
   - SLA
   - Environment
-  - Anwendungsprototyp
+  - Anwendungsarchetyp
   - Application
   - Anwendungsbesitzer
-- Diese Werte beeinflussen in Kombination mit der Azure-Verwaltungsgruppe und dem einer bereitgestellten Ressource zugeordneten Abonnement die Entscheidungen in den Bereichen Governance, Betrieb und Sicherheit.
+- In Verbindung mit der Azure-Verwaltungsgruppe und dem einer bereitgestellten Ressource zugeordneten Abonnement beeinflussen diese Werte Entscheidungen in den Bereichen Governance, Betrieb und Sicherheit.
 
 ### <a name="logging-and-reporting"></a>Protokollierung und Berichterstellung
 
-Entscheidungen zu Protokollierung und Berichterstellung bestimmen, wie Ihr Speicher Daten protokolliert und wie die Überwachungs- und Berichterstellungstools strukturiert sind, die IT-Mitarbeiter über die operative Integrität informieren. Im vorliegenden Beispielfall wird ein **[Hybridüberwachungsmuster](../../../decision-guides/logging-and-reporting/index.md)** für Protokollierung und Berichterstellung vorgeschlagen, zum aktuellen Zeitpunkt aber noch von keinem Entwicklungsteam verlangt.
+Entscheidungen zu Protokollierung und Berichterstellung bestimmen, wie Ihr Speicher Daten protokolliert und wie die Überwachungs- und Berichterstellungstools strukturiert sind, die IT-Mitarbeiter über die operative Integrität informieren. Im vorliegenden Beispielfall wird ein [Hybridüberwachungsmuster](../../../decision-guides/logging-and-reporting/index.md) für die Protokollierung und Berichterstellung vorgeschlagen, zum aktuellen Zeitpunkt aber noch von keinem Entwicklungsteam verlangt.
 
 - Es sind aktuell keine Governanceanforderungen in Bezug auf die für die Protokollierung oder Berichterstellung zu erfassenden spezifischen Datenpunkte festgelegt. Dies ist für diese fiktive Erzählung spezifisch und sollte als Antimuster betrachtet werden. Protokollierungsstandards sollten so früh wie möglich festgelegt und durchgesetzt werden.
 - Vor der Freigabe geschützter Daten oder unternehmenskritischer Workloads sind zusätzliche Analysen erforderlich.
@@ -96,7 +104,7 @@ Entscheidungen zu Protokollierung und Berichterstellung bestimmen, wie Ihr Speic
 
 ## <a name="incremental-of-governance-processes"></a>Inkrementelle Governanceprozesse
 
-Einige der Richtlinienanweisungen können oder sollten nicht durch automatisierte Tools gesteuert werden. Andere Richtlinien erfordern regelmäßigen Aufwand seitens der IT-Sicherheits- und Identitätsbaselineteams. Das Cloudgovernanceteam muss die folgenden Prozesse beaufsichtigen, um die letzten acht Richtlinienanweisungen zu implementieren:
+Einige der Richtlinienanweisungen können oder sollten nicht durch automatisierte Tools gesteuert werden. Andere Richtlinien erfordern regelmäßigen Aufwand seitens der IT-Sicherheits- und lokalen Identitätsbaselineteams. Das Cloudgovernanceteam muss die folgenden Prozesse beaufsichtigen, um die letzten acht Richtlinienanweisungen zu implementieren:
 
 **Änderungen der Unternehmensrichtlinie:** Das Cloudgovernanceteam nimmt Änderungen am Entwurf des Governance-MVP vor, um die neuen Richtlinien zu übernehmen. Der Wert des Governance-MVP besteht darin, dass es die automatische Durchsetzung der neuen Richtlinien ermöglicht.
 
@@ -119,7 +127,7 @@ Wenn eines der in diesem Governanceleitfaden ausgewählten Muster nicht mit den 
 - [Protokollierungs- und Berichterstellungsmuster](../../../decision-guides/logging-and-reporting/index.md)
 - [Richtliniendurchsetzungsmuster](../../../decision-guides/policy-enforcement/index.md)
 - [Ressourcenkonsistenzmuster](../../../decision-guides/resource-consistency/index.md)
-- [Ressourcenkennzeichnungsmuster](../../../decision-guides/resource-tagging/index.md)
+- [Ressourcenmarkierungsmuster](../../../decision-guides/resource-tagging/index.md)
 - [Muster für Software-Defined Networking](../../../decision-guides/software-defined-network/index.md)
 - [Abonnemententwurfsmuster](../../../decision-guides/subscriptions/index.md)
 

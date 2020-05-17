@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: cb612930318ed2ecd355cb5466f50650086d7f4c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9e0c9904bd05eb2464c2765050fbdbf3948079a1
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430564"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219664"
 ---
 # <a name="automate-onboarding"></a>Automatisieren des Onboardings
 
@@ -24,7 +24,7 @@ Die Beispieldateien veranschaulichen, wie Sie Azure PowerShell-Cmdlets verwenden
 
 - Erstellen Sie einen [Log Analytics-Arbeitsbereich](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access). (Oder verwenden Sie einen vorhandenen Arbeitsbereich, wenn er den Anforderungen entspricht. Weitere Informationen finden Sie unter [Arbeitsbereichsplanung](./prerequisites.md#log-analytics-workspace-and-automation-account-planning).)
 
-- Erstellen Sie ein Automation-Konto. (Oder verwenden Sie ein vorhandenes Konto, wenn es den Anforderungen entspricht. Weitere Informationen finden Sie unter [Arbeitsbereichsplanung](./prerequisites.md#log-analytics-workspace-and-automation-account-planning).)
+- Erstellen Sie ein Automatisierungskonto, oder verwenden Sie ein vorhandenes Konto, das die Anforderungen erfüllt. Weitere Informationen finden Sie unter [Arbeitsbereichsplanung](./prerequisites.md#log-analytics-workspace-and-automation-account-planning).
 
 - Verknüpfen Sie das Automation-Konto mit dem Log Analytics-Arbeitsbereich. Dieser Schritt ist beim Onboarding über das Azure-Portal nicht erforderlich.
 

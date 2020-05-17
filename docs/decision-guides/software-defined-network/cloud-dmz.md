@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 2241e1f4e6f738ce435e6cbedfe686a4ed85e1de
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 66419aa1ec4ebf7a1513ae064edd3b24e98758b9
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996223"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224288"
 ---
 # <a name="software-defined-networking-cloud-dmz"></a>Softwaredefiniertes Netzwerk: Cloud-DMZ
 
@@ -27,7 +27,7 @@ Die DMZ stellt virtuelle Netzwerkappliances (NVAs) bereit, die Sicherheitsfunkti
 
 ## <a name="cloud-dmz-assumptions"></a>Annahmen für Cloud-DMZ
 
-Das Bereitstellen einer Cloud DMZ-Architektur beinhaltet die folgenden Annahmen:
+Das Bereitstellen einer Cloud-DMZ beinhaltet die folgenden Annahmen:
 
 - Ihre Sicherheitsteams haben die lokalen und cloudbasierten Sicherheitsanforderungen und -richtlinien noch nicht vollständig aufeinander abgestimmt.
 - Ihre cloudbasierten Workloads erfordern den Zugriff auf eine eingeschränkte Teilmenge von Diensten, die in Ihren lokalen oder Drittanbieternetzwerken gehostet werden, oder Benutzer oder Anwendungen in Ihren lokalen Umgebungen benötigen eingeschränkten Zugriff auf in der Cloud gehostete Ressourcen.
@@ -36,7 +36,7 @@ Das Bereitstellen einer Cloud DMZ-Architektur beinhaltet die folgenden Annahmen:
 
 Ihr für den Umstieg auf die Cloud zuständiges Team muss die folgenden Aspekte berücksichtigen, wenn die Implementierung einer virtuellen Netzwerkarchitektur mit Cloud-DMZ erwogen wird:
 
-- Durch die Verbindung von lokalen Netzwerken mit Cloudnetzwerken steigt die Komplexität Ihrer Sicherheitsanforderungen. Auch wenn Verbindungen zwischen Cloudnetzwerken und der lokalen Umgebung geschützt ist, müssen Sie dennoch dafür sorgen, dass Cloudressourcen geschützt sind. Alle öffentlichen IP-Adressen, die für den Zugriff auf cloudbasierte Workloads erstellt werden, müssen ordnungsgemäß mit einer [öffentlichen DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json) oder [Azure Firewall](https://docs.microsoft.com/azure/firewall) gesichert werden.
+- Durch die Verbindung von lokalen Netzwerken mit Cloudnetzwerken steigt die Komplexität Ihrer Sicherheitsanforderungen. Auch wenn Verbindungen zwischen Cloudnetzwerken und der lokalen Umgebung geschützt ist, müssen Sie dennoch dafür sorgen, dass Cloudressourcen geschützt sind. Alle öffentlichen IP-Adressen, die für den Zugriff auf cloudbasierte Workloads erstellt werden, müssen mit einer [öffentlichen DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) oder [Azure Firewall](https://docs.microsoft.com/azure/firewall/overview) ordnungsgemäß geschützt werden.
 - Die Cloud-DMZ-Architektur wird häufig als Ausgangspunkt verwendet, während die Konnektivität weiter abgesichert und die Sicherheitsrichtlinien zwischen lokalen und Cloudnetzwerken abgestimmt werden, was eine breitere Einführung einer vollständig hybriden Netzwerkarchitektur ermöglicht. Dies kann jedoch auch für isolierte Bereitstellungen mit spezifischen Sicherheits-, Identitäts- und Konnektivitätsanforderungen gelten, die der Cloud-DMZ-Ansatz erfüllt.
 
 ## <a name="learn-more"></a>Weitere Informationen

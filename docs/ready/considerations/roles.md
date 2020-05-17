@@ -8,14 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: BrianBlanchard
-tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: e52840d52e85cfa5876fbeaf227963953560da0d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 6029f3d46f3a59adc465d47d9545a017d04487e6
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997923"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216400"
 ---
 # <a name="role-based-access-control"></a>Rollenbasierte Zugriffssteuerung
 
@@ -76,10 +75,10 @@ Die folgende Tabelle zeigt ein allgemeines Muster für die Aufteilung des IT-Zus
 
 | Group | Allgemeiner Rollenname | Aufgaben |
 | --- | --- | --- |
-| Sicherheitsvorgänge | SecOps | Bietet eine allgemeine Sicherheitsübersicht.<br/><br/> Festlegung und Durchsetzung von Sicherheitsrichtlinien wie Verschlüsselung im Ruhezustand.<br/><br/> Verwaltet Verschlüsselungsschlüssel.<br/><br/> Verwaltet Firewallregeln. |
+| Sicherheitsvorgänge | SecOps | Bietet eine allgemeine Sicherheitsübersicht.  <br><br> Festlegung und Durchsetzung von Sicherheitsrichtlinien wie Verschlüsselung im Ruhezustand. <br><br> Verwaltet Verschlüsselungsschlüssel. <br><br> Verwaltet Firewallregeln. |
 | Netzwerkvorgänge | NetOps | Verwaltet die Netzwerkkonfiguration und den Betrieb in virtuellen Netzwerken wie Routen und Peerings. |
 | Systembetrieb | SysOps | Gibt die Optionen für die Compute- und Speicherinfrastruktur an und verwaltet die bereitgestellten Ressourcen. |
-| Entwicklung, Test und Betrieb | DevOps | Erstellt Workloadfunktionen und -anwendungen und stellt sie bereit.<br/><br/> Betreibt Funktionen und Anwendungen, um Vereinbarungen zum Servicelevel (Service Level Agreements, SLAs) und andere Qualitätsstandards einzuhalten. |
+| Entwicklung, Test und Betrieb | DevOps | Erstellt Workloadfunktionen und -anwendungen und stellt sie bereit. <br><br> Betreibt Funktionen und Anwendungen, um Vereinbarungen zum Servicelevel (Service Level Agreements, SLAs) und andere Qualitätsstandards einzuhalten. |
 
 <!-- markdownlint-enable MD033 -->
 

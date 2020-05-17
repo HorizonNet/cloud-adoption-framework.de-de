@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 432e974a304741a64e0cd7da9577ecec5e35d57e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7db8091d12a763568a3ba7e549770fa94cf0ea23
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434052"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216587"
 ---
 # <a name="create-business-alignment-in-cloud-management"></a>Erstellen der Geschäftsausrichtung in der Cloudverwaltung
 
@@ -26,14 +26,14 @@ Glücklicherweise schaffen die Prozesse zur Entwicklung einer Cloud Adoption-Str
 
 - **[Wichtigkeit](./criticality.md):** Zuordnung von Workloads zu Geschäftsprozessen. Rangfolge der Wichtigkeit zur Fokussierung von Investitionen.
 - **[Auswirkung](./impact.md):** Verstehen der Auswirkungen potenzieller Ausfälle, um die Bewertung der Rendite für Cloudverwaltung zu erleichtern.
-- **[Verpflichtung](./commitment.md):** Entwickeln echter Partnerschaften durch Erstellen und Dokumentieren von Vereinbarungen *mit dem Unternehmen*.
+- **[Verpflichtung](./commitment.md):** Entwickeln echter Partnerschaften durch Erstellen und Dokumentieren von Vereinbarungen _mit dem Unternehmen_.
 
 > [!NOTE]
 > Diesen Begriffen liegen klassische IT-Begriffe wie SLA, RTO und RPO zugrunde. Die Zuordnung bestimmte Geschäfts- und IT-Begriffe wird im Artikel [Verpflichtung](./commitment.md) ausführlicher behandelt.
 
-## <a name="ops-management-planning-workbook"></a>Arbeitsmappe zur Planung der Betriebsverwaltung
+## <a name="operations-management-workbook"></a>Arbeitsmappe zum Operations Management
 
-Um Entscheidungen, die sich aus diesem Gespräch über die Begriffsausrichtung ergeben, zu erfassen, ist eine [Arbeitsmappe zur Betriebsverwaltung](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) auf unserer GitHub-Website verfügbar. Diese Arbeitsmappe stellt keine SLA- oder Kostenberechnungen bereit. Sie dient nur zur Erfassung dieser Maßnahmen und zur Prognose der Rendite bei der Schadensvermeidung.
+Um Entscheidungen, die sich aus diesem Gespräch über die Begriffsausrichtung ergeben, zu erfassen, ist eine [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) auf unserer GitHub-Website verfügbar. Diese Arbeitsmappe stellt keine SLA- oder Kostenberechnungen bereit. Sie dient nur zur Erfassung dieser Maßnahmen und zur Prognose der Rendite bei der Schadensvermeidung.
 
 Alternativ können dieselben Workloads und zugehörigen Ressourcen direkt in Azure gekennzeichnet werden, wenn die Lösungen bereits in der Cloud bereitgestellt wurden.
 

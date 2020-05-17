@@ -1,5 +1,5 @@
 ---
-title: 'Governance für Standardunternehmen: Verbessern der Ressourcenkonsistenz'
+title: 'Governance für Standardunternehmen: Verbessern der Disziplin „Ressourcenkonsistenz“'
 description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um sich über die Optimierung der Governancebaseline zu informieren und zu erfahren, wie Sie Risiken mindern, indem Sie Steuerelemente für die Wiederherstellung, Dimensionierung und Überwachung hinzufügen.
 author: BrianBlanchard
 ms.author: brblanch
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6228bc4a2f4a2217ab7cd226ace5075c91a52dfc
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7297e568f2fe16a2e499217af47d091c88544559
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434205"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219919"
 ---
-# <a name="standard-enterprise-governance-guide-improving-resource-consistency"></a>Governanceleitfaden für Standardunternehmen: Verbessern der Ressourcenkonsistenz
+# <a name="standard-enterprise-governance-guide-improve-the-resource-consistency-discipline"></a>Governanceleitfaden für Standardunternehmen: Verbessern der Disziplin „Ressourcenkonsistenz“
 
-Dieser Artikel führt die Geschichte fort, indem Steuerelemente für Ressourcenkonsistenz hinzugefügt werden, um unternehmenskritische Apps zu unterstützen.
+In diesem Artikel wird die Lösung weiterentwickelt, indem Steuerelemente für Ressourcenkonsistenz hinzugefügt werden, um unternehmenskritische Apps zu unterstützen.
 
 ## <a name="advancing-the-narrative"></a>Fortführen der Geschichte
 
@@ -29,9 +29,9 @@ In der vorherigen Phase dieser Lösung waren die Anwendungsentwicklungs- und BI-
 
 Seit diesem Zeitpunkt haben sich einige Dinge geändert, die sich auf die Governance auswirken:
 
-- Die IT-Abteilung hat 100 % des DR-Datencenters vorzeitig außer Betrieb genommen. Dabei wurde ein Satz von Ressourcen im Produktionsrechenzentrum als Cloudmigrationskandidaten identifiziert.
+- Die IT-Abteilung hat 100 % des DR-Datencenters vorzeitig außer Betrieb genommen. Während des Prozesses wurden mehrere Ressourcen im Produktionsrechenzentrum als Cloudmigrationskandidaten identifiziert.
 - Die Anwendungsentwicklungsteams sind nun für Produktionsdatenverkehr bereit.
-- Das BI-Team ist bereit, Vorhersagen und Erkenntnisse in die Betriebssysteme im Produktionsdatencenter zurückzuliefern.
+- Das BI-Team ist bereit, Vorhersagen und Erkenntnisse wieder an die Betriebssysteme im Produktionsrechenzentrum zu übermitteln.
 
 ### <a name="incrementally-improve-the-future-state"></a>Inkrementelles Verbessern des zukünftigen Status
 
@@ -41,7 +41,7 @@ Die Änderungen des aktuellen und zukünftigen Status bergen neue Risiken, die n
 
 ## <a name="changes-in-tangible-risks"></a>Änderungen bei konkreten Risiken
 
-**Unterbrechung des Geschäftsbetriebs:** Jede neue Plattform bringt ein inhärentes Risiko für Unterbrechungen in unternehmenskritischen Geschäftsabläufen mit sich. Das IT Operations-Team und die Teams, die in verschiedenen Cloud-Einsatztypen agieren, sind relativ unerfahren in Cloud Operations. Dadurch steigt die Gefahr von Unterbrechungen, die entsprechend verringert und kontrolliert werden muss.
+**Unterbrechung des Geschäftsbetriebs:** Jede neue Plattform bringt ein inhärentes Risiko für Unterbrechungen in unternehmenskritischen Geschäftsabläufen mit sich. Das IT-Betriebsteam und die Teams, die verschiedene Cloudeinführungen vornehmen, sind relativ unerfahren in Cloudvorgängen. Dadurch steigt die Gefahr von Unterbrechungen, die entsprechend verringert und kontrolliert werden muss.
 
 Dieses Geschäftsrisiko lässt sich auf eine Reihe von technischen Risiken ausweiten:
 
@@ -63,12 +63,12 @@ Die folgenden Änderungen an der Richtlinie verringern die neuen Risiken und ver
 
 1. Alle bereitgestellten Ressourcen müssen nach Wichtigkeit und Datenklassifizierung kategorisiert werden. Vor der Bereitstellung in der Cloud müssen die Klassifizierungen durch das Cloudgovernanceteam und die Besitzer der Anwendung überprüft werden.
 2. Subnetze, die unternehmenskritische Anwendungen enthalten, müssen durch eine Firewalllösung geschützt werden, die Eindringversuche erkennen und auf Angriffe reagieren kann.
-3. Die Anforderungen an die Netzwerkkonfiguration, die vom Sicherheitsmanagementteam definiert wurden, müssen mit Governancetools überwacht und durchgesetzt werden.
+3. Die Anforderungen an die Netzwerkkonfiguration, die vom Sicherheitsverwaltungsteam definiert wurden, müssen mit Governancetools überwacht und durchgesetzt werden.
 4. Mit den Governancetools muss überprüft werden, ob alle Ressourcen, die in einem Zusammenhang mit unternehmenskritischen Apps oder geschützten Daten stehen, in die Überwachung auf Ressourcenschwund und -optimierung einbezogen sind.
 5. Ferner muss mit den Governancetools überprüft werden, ob für alle unternehmenskritischen Anwendungen oder geschützten Daten Protokolldaten mit dem passenden Protokolliergrad erfasst werden.
 6. Der Governanceprozess muss überprüfen, ob für unternehmenskritische Anwendungen und geschützte Daten die Sicherung, Wiederherstellung und Einhaltung von SLAs ordnungsgemäß implementiert sind.
 7. Mit den Governancetools müssen die Bereitstellungen virtueller Computer ausschließlich auf genehmigte Images eingeschränkt werden.
-8. Die Governancetools müssen erzwingen, dass für alle bereitgestellten Ressourcen, die unternehmenskritische Anwendungen unterstützen, automatische Updates verhindert werden. Verstöße müssen von Betriebsmanagementteams überprüft und in Übereinstimmung mit den Betriebsrichtlinien beseitigt werden. Ressourcen, die nicht automatisch aktualisiert werden, müssen in Prozesse des IT-Betriebs einbezogen werden.
+8. Die Governancetools müssen erzwingen, dass für alle bereitgestellten Ressourcen, die unternehmenskritische Anwendungen unterstützen, automatische Updates verhindert werden. Verstöße müssen von Betriebsmanagementteams überprüft und in Übereinstimmung mit den Betriebsrichtlinien beseitigt werden. Ressourcen, die nicht automatisch aktualisiert werden, müssen in Prozesse einbezogen werden, die IT Operations unterstehen.
 9. Mit Governancetools muss die Kennzeichnung (Tagging) im Hinblick auf Kosten, Kritikalität, SLA, Anwendung und Datenklassifizierung überprüft werden. Alle Werte müssen sich an vordefinierten Werten ausrichten, die vom Governance-Team verwaltet werden.
 10. Governanceprozesse müssen Überwachungen zum Bereitstellungszeitpunkt und nachfolgend in regelmäßigen Zyklen umfassen, um für alle Ressourcen Konsistenz zu gewährleisten.
 11. Trends und Exploits, die mögliche Auswirkungen auf Cloudbereitstellungen haben, müssen vom Sicherheitsteam regelmäßig überprüft werden, damit Updates für in der Cloud verwendete Sicherheitsverwaltungstools bereitgestellt werden.
@@ -94,8 +94,8 @@ In diesem Abschnitt des Artikels wird der Governance-MVP-Entwurf so geändert, d
     1. Nachdem eine unternehmenskritische Workload identifiziert wurde, erstellen Sie einen Azure Monitor-Arbeitsbereich.
     2. Während der Bereitstellungstests stellt das Cloud Operations-Team die erforderlichen Agents bereit und testet die Ermittlung.
 6. Aktualisieren Sie Azure Policy für alle Abonnements, die unternehmenskritische Anwendungen enthalten.
-    1. Überwachen und erzwingen Sie die Anwendung einer NSG auf alle NICs und Subnetze. Netzwerke und IT-Sicherheit definieren die NSG.
-    2. Überwachen und erzwingen Sie die Verwendung genehmigter Netzwerksubnetze und VNETs für jede Netzwerkschnittstelle.
+    1. Überwachen und erzwingen Sie die Anwendung einer NSG auf alle NICs und Subnetze. Die Netzwerk- und die IT-Sicherheit definieren die NSG.
+    2. Überwachen und erzwingen Sie die Verwendung von genehmigten Netzwerksubnetzen und virtuellen Netzwerken für jede Netzwerkschnittstelle.
     3. Überwachen und erzwingen Sie die Einschränkung benutzerdefinierter Routingtabellen.
     4. Überwachen und erzwingen Sie die Bereitstellung von Azure Monitor-Agents für alle virtuellen Computer.
     5. Überprüfen Sie, ob Azure Recovery Services-Tresore im Abonnement vorhanden sind, und erzwingen Sie deren Bereitstellung.
@@ -104,7 +104,7 @@ In diesem Abschnitt des Artikels wird der Governance-MVP-Entwurf so geändert, d
     1. Erstellen Sie eine Resource Manager-Vorlage, um die Firewall mit den erforderlichen Konfigurationen bereitzustellen.
 8. Azure-Blaupause:
     1. Erstellen Sie eine neue Azure-Blaupause namens `protected-data`.
-    2. Fügen Sie der Blaupause die Firewall und die Azure-Tresorvorlagen hinzu.
+    2. Fügen Sie der Blaupause die Firewall und die Azure Recovery Services-Tresorvorlagen hinzu.
     3. Fügen Sie die neuen Richtlinien für Abonnements geschützter Daten hinzu.
     4. Veröffentlichen Sie die Blaupause für alle Verwaltungsgruppen, die zum Hosten unternehmenskritischer Anwendungen verwendet werden.
     5. Wenden Sie die neue Blaupause zusammen mit vorhandenen Blaupausen auf die betroffenen Abonnements an.
@@ -115,7 +115,7 @@ Durch diese zusätzlichen Prozesse und Änderungen am Governance-MVP lassen sich
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Mit der Fortsetzung der Cloudeinführung und der damit verbundenen Steigerung des Geschäftswerts ändern sich auch die Risiken und Anforderungen an die Cloudgovernance. Für das fiktive Unternehmen in diesem Leitfaden wird der nächste Trigger ausgelöst, wenn die Größe der Bereitstellung 100 Ressourcen in der Cloud oder monatliche Ausgaben von 1.000 US-Dollar übersteigt. An diesem Punkt fügt das Cloudgovernanceteam Cost Management-Steuerelemente hinzu.
+Mit der Fortsetzung der Cloudeinführung und der damit verbundenen Steigerung des Geschäftswerts ändern sich auch die Risiken und Anforderungen an die Cloudgovernance. Für das fiktive Unternehmen in diesem Leitfaden wird der nächste Trigger ausgelöst, wenn die Größe der Bereitstellung 100 Ressourcen in der Cloud oder monatliche Ausgaben von 1.000 US-Dollar übersteigt. An diesem Punkt fügt das Cloudgovernanceteam Steuerelemente für die Kostenverwaltung hinzu.
 
 > [!div class="nextstepaction"]
-> [Verbessern des Kostenmanagements](./cost-management-improvement.md)
+> [Verbessern der Disziplin „Cost Management“](./cost-management-improvement.md)

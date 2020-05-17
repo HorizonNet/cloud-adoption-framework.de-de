@@ -7,15 +7,13 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 04816ede2d9c46e60baef88652551e647049bd99
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 67b4968a62e795c6dbd3c09a954dbe0edf12166d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120685"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219256"
 ---
-<!-- cSpell:ignore CAF -->
-
 # <a name="first-landing-zone"></a>Erste Landezone
 
 Infrastructure-as-Code ist bei den meisten Cloudeinführungsaufgaben ein natürlicher Übergang. Die Bereitstellung Ihrer ersten Zielzonen in der Cloud ist ein allgemeiner Ausgangspunkt für den Wechsel in eine codegesteuerte Umgebung. Dieser Artikel hilft Ihnen dabei, den Begriff _Zielzone_ zu verstehen und zu entscheiden, welche Zielzone für Ihre derzeitigen Anforderungen in Bezug auf die Einführung am besten geeignet ist.
@@ -35,7 +33,7 @@ C. Einige Cloudeinführungspläne unterliegen externen Complianceanforderungen. 
 D: Wenn ein Partner kontinuierlich verwaltete Dienste bereitstellt oder vertragliche Verpflichtungen in Bezug auf den Einführungsplan hat, stellt er in der Regel eine eigene Zielzone bereit. Die Verwendung einer Partnerzielzone könnte die Einführung beschleunigen und konsistente Anforderungen an die Betriebsverwaltung gewährleisten. Beachten Sie jedoch die internen Governance- und Sicherheitsanforderungen, um die Ausrichtung sicherzustellen.
 
 > [!NOTE]
-> Bevor Sie einen Code First-Ansatz mit Fokus auf Refactoring wählen, sollten Sie sich mit den [konkurrierenden Prioritäten dieser Entscheidung](../../strategy/balance-competing-priorities.md#balance-during-ready) vertraut machen. Bei der Wahl eines Ansatzes mit Zielzonen ist es wichtig, dass Sie mit der erforderlichen Ausgewogenheit zwischen „Einführungsdauer“ und „Langfristigem Betrieb“ vertraut sind.
+> Bevor Sie einen Code First-Ansatz mit Fokus auf Refactoring wählen, sollten Sie sich mit den [konkurrierenden Prioritäten dieser Entscheidung](../../strategy/balance-competing-priorities.md#balance-during-the-ready-phase) vertraut machen. Bei der Wahl eines Ansatzes mit Zielzonen ist es wichtig, dass Sie mit der erforderlichen Ausgewogenheit zwischen _Einführungsdauer_ und _Langfristigem Betrieb_ vertraut sind.
 
 ## <a name="choosing-a-first-landing-zone"></a>Auswählen Ihrer ersten Zielzone
 
@@ -43,15 +41,15 @@ Die Auswahl der ersten Zielzone hängt von verschiedenen Variablen ab. In der fo
 
 | Zielzone                                 | Erfahrung mit der Cloud  | Skalieren             | Ermittlungszeit | Produktionsbereit | Hybrid             | Sensible Daten     | Unternehmenskritisch   | Kompatibilität         |
 |----------------------------------------------|-------------------|-------------------|----------------|------------------|--------------------|--------------------|--------------------|--------------------|
-| [CAF-Migration](./migrate-landing-zone.md)     | Cloud-Einsteiger      | < 1.000 Ressourcen    | 1 bis 5 Tage    | Begrenzter Umfang -> | Erweiterung erforderlich | Erweiterung erforderlich | Erweiterung erforderlich | Erweiterung erforderlich |
-| [CAF-Terraform](./terraform-landing-zone.md) | Verschiedene Vorlagen | Verschiedene Vorlagen | 10 bis 20 Wochen | Begrenzter Umfang -> | Module verfügbar  | Module verfügbar  | Module verfügbar  | Module verfügbar  |
+| [CAF-Migrationslandezone](./migrate-landing-zone.md)     | Cloud-Einsteiger      | < 1.000 Ressourcen    | 1 bis 5 Tage    | Begrenzter Umfang -> | Erweiterung erforderlich | Erweiterung erforderlich | Erweiterung erforderlich | Erweiterung erforderlich |
+| [CAF Terraform-Zielzone](./terraform-landing-zone.md) | Verschiedene Vorlagen | Verschiedene Vorlagen | 10 bis 20 Wochen | Begrenzter Umfang -> | Module verfügbar  | Module verfügbar  | Module verfügbar  | Module verfügbar  |
 
 In der folgenden Tabelle werden die gleichen Zielzonen aus einer etwas anderen Perspektive angezeigt, um technische Entscheidungsprozesse zu unterstützen.
 
 | Zielzone                                 | Hub                          | Spoke    | Cloudmodell | Technologie      |
 |----------------------------------------------|------------------------------|----------|-------------|-----------------|--|--|--|
-| [CAF-Migration](./migrate-landing-zone.md)     | Refactoring erforderlich            | Enthalten | Nur Azure  | Azure Blueprint |
-| [CAF-Terraform](./terraform-landing-zone.md) | Im VDC-Modul enthalten       | Enthalten | Verwenden mehrerer Clouds  | Terraform       |
+| [CAF-Migrationslandezone](./migrate-landing-zone.md)     | Refactoring erforderlich            | Enthalten | Nur Azure  | Azure Blueprint |
+| [CAF Terraform-Zielzone](./terraform-landing-zone.md) | Im VDC-Modul enthalten       | Enthalten | Verwenden mehrerer Clouds  | Terraform       |
 
 ## <a name="next-steps"></a>Nächste Schritte
 

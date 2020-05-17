@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7fa026a06f2f42fda09783a29554e2a6c4797fcd
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 52f6c15f2f116c8ef972e38e0123cd8d57985cd5
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434419"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220089"
 ---
 <!-- cSpell:ignore MPLS -->
 
@@ -31,9 +31,9 @@ In der vorherigen Phase dieser Lösung hatte das Unternehmen damit begonnen, Kos
 
 Seit diesem Zeitpunkt haben sich einige Dinge geändert, die sich auf die Governance auswirken:
 
-- Die Identität wird von einer lokalen Instanz von Active Directory kontrolliert. Hybrididentität wird mithilfe von Replikation in Azure Active Directory vereinfacht.
+- Die Identität wird von einer lokalen Instanz von Active Directory kontrolliert. Hybrididentitäten werden über die Replikation in Azure Active Directory umgesetzt.
 - Der IT- oder Cloudbetrieb wird hauptsächlich von Azure Monitor und verwandten Automatisierungsfunktionen verwaltet.
-- Business Continuity & Disaster Recovery (BCDR) wird von Azure Vault-Instanzen gesteuert.
+- Business Continuity & Disaster Recovery (BCDR) wird von Azure Recovery Services-Tresoren gesteuert.
 - Für die Überwachung von Sicherheitsverletzungen und Angriffen wird Azure Security Center genutzt.
 - Azure Security Center und Azure Monitor werden zusammen für die Überwachung der Governance in der Cloud verwendet.
 - Azure Blueprints, Azure Policy und Verwaltungsgruppen werden verwendet, um die Richtlinienkonformität zu automatisieren.

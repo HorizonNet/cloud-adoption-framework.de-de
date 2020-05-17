@@ -1,6 +1,6 @@
 ---
 title: Leitfaden zur Entscheidungsfindung für die Identitätsverwaltung
-description: Hier erfahren Sie, wie Dienste für die Identitäts- und Zugriffsverwaltung (Identity and Access Management, IAM) Ihnen das Verwalten der Zugriffssteuerung in der Cloud ermöglichen.
+description: Hier erfahren Sie, wie Sie mithilfe von Diensten für die Identitäts- und Zugriffsverwaltung (Identity & Access Management, IAM) die Zugriffssteuerung in der Cloud verwalten.
 author: rotycenh
 ms.author: abuck
 ms.date: 02/11/2019
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 6fd5df7d16a1b1155dbada69f7acea9617afb36a
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ed4c1c3cf7958f4e96db7eba71fe1f008bc81eb2
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80431431"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222843"
 ---
 <!-- cSpell:ignore Kerberos NTLM SAML -->
 
@@ -23,11 +23,11 @@ In allen Umgebungen, seien es lokale, Hybrid- oder reine Cloudumgebungen, muss d
 
 ![Abbildung der Identitätsoptionen mit zunehmender Komplexität entsprechend den nachstehenden weiterführenden Links](../../_images/decision-guides/decision-guide-identity.png)
 
-Wechseln Sie zu: [Ermitteln der Anforderung an die Identitätsintegration](#determine-identity-integration-requirements) | [Reine Cloudlösung](#cloud-baseline) | [Verzeichnissynchronisierung](#directory-synchronization) | [In der Cloud gehostete Domänendienste](#cloud-hosted-domain-services) | [Active Directory-Verbunddienste (AD FS)](#active-directory-federation-services) | [Weitere Informationen](#learn-more)
+Wechseln Sie zu: [Bestimmen der Anforderungen an die Identitätsintegration](#determine-identity-integration-requirements) | [Reine Cloudlösung](#cloud-baseline) | [Verzeichnissynchronisierung](#directory-synchronization) | [In der Cloud gehostete Domänendienste](#cloud-hosted-domain-services) | [Active Directory-Verbunddienste (AD FS)](#active-directory-federation-services) | [Weitere Informationen](#learn-more)
 
 Für die Identitätsverwaltung in einer Cloudumgebung stehen verschiedene Optionen zur Verfügung. Diese variieren in Bezug auf Kosten und Komplexität. Ein wesentlicher Faktor bei der Strukturierung Ihrer cloudbasierten Identitätsverwaltungsdienste ist der Grad der Integration in Ihre bestehende lokale Identitätsverwaltungsinfrastruktur.
 
-In Azure bietet Azure Active Directory (Azure AD) eine grundlegende Ebene der Zugriffssteuerung und Identitätsverwaltung für Cloudressourcen. Wenn die lokale Active Directory-Infrastruktur Ihrer Organisation aber eine komplexe Gesamtstruktur oder angepasste Organisationseinheiten aufweist, ist für Ihre cloudbasierten Workloads ggf. eine Verzeichnissynchronisierung mit Azure AD erforderlich, um einen einheitlichen Satz von Identitäten, Gruppen und Rollen zwischen der lokalen und der Cloudumgebung zu gewährleisten. Darüber hinaus kann die Unterstützung von Anwendungen, die von veralteten Authentifizierungsmechanismen abhängen, ggf. die Bereitstellung von Active Directory Domain Services (AD DS) in der Cloud erfordern.
+Azure Active Directory (Azure AD) bietet eine grundlegende Zugriffssteuerung und Identitätsverwaltung für Azure-Ressourcen. Wenn die lokale Active Directory-Infrastruktur Ihrer Organisation aber eine komplexe Gesamtstruktur oder angepasste Organisationseinheiten aufweist, ist für Ihre cloudbasierten Workloads ggf. eine Verzeichnissynchronisierung mit Azure AD erforderlich, um einen einheitlichen Satz von Identitäten, Gruppen und Rollen zwischen der lokalen und der Cloudumgebung zu gewährleisten. Darüber hinaus kann die Unterstützung von Anwendungen, die von veralteten Authentifizierungsmechanismen abhängen, ggf. die Bereitstellung von Active Directory Domain Services (AD DS) in der Cloud erfordern.
 
 Die cloudbasierte Identitätsverwaltung ist ein iterativer Prozess. Sie können für eine erste Bereitstellung mit einer cloudnativen Lösung mit einer kleinen Anzahl von Benutzern und entsprechenden Rollen beginnen. Im Laufe der Migration müssen Sie Ihre Identitätslösung unter Umständen mithilfe der Verzeichnissynchronisierung integrieren oder Domänendienste im Rahmen Ihrer Cloudbereitstellungen hinzufügen. Überprüfen Sie Ihre Identitätsstrategie bei jeder Iteration Ihres Migrationsprozesses.
 
@@ -44,7 +44,7 @@ Im Rahmen der Planung Ihrer Migration zu Azure müssen Sie entscheiden, wie Sie 
 
 ### <a name="cloud-baseline"></a>Reine Cloudlösung
 
-Azure AD ist das ein natives System zur Identitäts- und Zugriffsverwaltung (IAM), über das Benutzer und Gruppen auf der Azure-Plattform Zugriff auf Verwaltungsfunktionen erhalten. Wenn es in Ihrem Unternehmen keine nennenswerte lokale Identitätsverwaltungslösung gibt und Sie planen, Workloads so zu migrieren, dass sie mit cloudbasierten Authentifizierungsmechanismen kompatibel sind, sollten Sie mit der Entwicklung Ihrer Identitätsinfrastruktur mit Azure AD als Basis beginnen.
+Azure AD ist das native IAM-System, mit dem Sie Benutzern und Gruppen den Zugriff auf Verwaltungsfunktionen der Azure-Plattform erteilen können. Wenn es in Ihrem Unternehmen keine nennenswerte lokale Identitätsverwaltungslösung gibt und Sie planen, Workloads so zu migrieren, dass sie mit cloudbasierten Authentifizierungsmechanismen kompatibel sind, sollten Sie mit der Entwicklung Ihrer Identitätsinfrastruktur mit Azure AD als Basis beginnen.
 
 **Annahmen für eine reine Cloudlösung:** Für den Einsatz einer rein cloudbasierten Identitätsinfrastruktur wird Folgendes angenommen:
 
@@ -62,7 +62,8 @@ Azure AD ist das ein natives System zur Identitäts- und Zugriffsverwaltung (IAM
 
 Für Organisationen mit einer bestehenden lokalen Active Directory-Infrastruktur ist die Verzeichnissynchronisierung oft die beste Lösung, um die bestehende Benutzer- und Zugriffsverwaltung aufrechtzuerhalten und gleichzeitig die erforderlichen IAM-Funktionen für die Verwaltung von Cloudressourcen bereitzustellen. Bei diesem Prozess werden Verzeichnisinformationen kontinuierlich zwischen Azure AD und lokalen Verzeichnisdiensten repliziert, wodurch gemeinsame Anmeldeinformationen für Benutzer und ein einheitliches Identitäts-, Rollen- und Berechtigungssystem in der gesamten Organisation ermöglicht werden.
 
-Hinweis: Organisationen, die Office 365 eingeführt haben, haben unter Umständen bereits die [Verzeichnissynchronisierung](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) zwischen ihrer lokalen Active Directory-Infrastruktur und Azure Active Directory eingerichtet.
+> [!NOTE]
+> Organisationen, die Office 365 eingeführt haben, haben unter Umständen bereits die [Verzeichnissynchronisierung](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) zwischen ihrer lokalen Active Directory-Infrastruktur und Azure Active Directory eingerichtet.
 
 **Annahmen zur Verzeichnissynchronisierung:** Für den Einsatz einer synchronisierten Identitätslösung wird Folgendes angenommen:
 
@@ -92,23 +93,23 @@ Es ist wahrscheinlich, dass Ihre bestehenden Verzeichnisse und Domänendienste w
 
 Über den Identitätsverbund werden Vertrauensbeziehungen zwischen mehreren Identitätsverwaltungssystemen aufgebaut, um gemeinsame Authentifizierungs- und Autorisierungsfunktionen zu ermöglichen. Sie können dann Funktionen für einmaliges Anmelden in mehreren Domänen innerhalb Ihrer Organisation oder Identitätssysteme unterstützen, die von Ihren Kunden oder Geschäftspartnern verwaltet werden.
 
-Azure AD unterstützt den Verbund lokaler Active Directory-Domänen mithilfe von [Active Directory-Verbunddienste (AD FS)](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-fed-whatis). In der Referenzarchitektur [Erweiterung von AD FS auf Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adfs) sehen Sie, wie dies in Azure erfolgen kann.
+Azure AD unterstützt den Verbund lokaler Active Directory-Domänen mithilfe von [Active Directory-Verbunddienste (AD FS)](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-fed-whatis). Weitere Informationen dazu, wie dies in Azure implementiert werden kann, finden Sie unter [Erweitern von Active Directory Federation Services (AD FS) auf Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adfs).
 
 ## <a name="learn-more"></a>Weitere Informationen
 
 Weitere Informationen über Identitätsdienste in Azure finden Sie unter:
 
-- [Azure AD](https://azure.microsoft.com/services/active-directory). Azure AD bietet cloudbasierte Identitätsdienste. Es ermöglicht Ihnen die Verwaltung des Zugriffs auf Ihre Azure-Ressourcen und das Steuern der Identitätsverwaltung, Geräteregistrierung, Benutzerbereitstellung, Anwendungszugriffssteuerung und Datensicherung.
-- [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity): Mit dem Tool Azure AD Connect können Sie Azure AD-Instanzen mit Ihren bestehenden Identitätsverwaltungslösungen verbinden und so Ihr bestehendes Verzeichnis in der Cloud synchronisieren.
-- [Rollenbasierte Zugriffssteuerung](https://docs.microsoft.com/azure/role-based-access-control/overview) (RBAC). Azure AD bietet RBAC für die effiziente und sichere Verwaltung des Zugriffs auf Ressourcen auf Verwaltungsebene. Aufträge und Aufgaben sind in Rollen organisiert und Benutzer diesen Rollen zugewiesen. Mit RBAC können Sie steuern, wer Zugriff auf eine Ressource hat und welche Aktionen ein Benutzer auf diese Ressource anwenden kann.
-- [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) (PIM). PIM reduziert die Offenlegungszeit von Ressourcenzugriffsrechten und verschafft Ihnen durch Berichte und Warnungen einen besseren Überblick über deren Nutzung. Hierfür werden Benutzern Beschränkungen auferlegt, indem ihnen Berechtigungen nur gemäß des Just-in-Time-Prinzips (JIT) zugeteilt oder nur für eine kurze Dauer zugewiesen und danach automatisch widerrufen werden.
-- [Integrieren lokaler Active Directory-Domänen in Azure Active Directory](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad). Diese Referenzarchitektur bietet ein Beispiel für die Verzeichnissynchronisierung zwischen lokalen Active Directory-Domänen und Azure AD.
-- [Erweitern von Active Directory Domain Services (AD DS) auf Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain). Diese Referenzarchitektur bietet ein Beispiel für den Einsatz von AD DS-Servern zur Erweiterung von Domänendiensten auf cloudbasierte Ressourcen.
-- [Erweitern von Active Directory Federation Services (AD FS) auf Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adfs). In dieser Referenzarchitektur wird Active Directory-Verbunddienste (AD FS) konfiguriert, um Authentifizierung und Autorisierung im Verbund mit Ihrem Azure AD-Verzeichnis durchzuführen.
+- **[Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis).** Azure AD bietet cloudbasierte Identitätsdienste. Es ermöglicht Ihnen die Verwaltung des Zugriffs auf Ihre Azure-Ressourcen und das Steuern der Identitätsverwaltung, Geräteregistrierung, Benutzerbereitstellung, Anwendungszugriffssteuerung und Datensicherung.
+- **[Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity).** Mit dem Tool Azure AD Connect können Sie Azure AD-Instanzen mit Ihren bestehenden Identitätsverwaltungslösungen verbinden und so Ihr bestehendes Verzeichnis in der Cloud synchronisieren.
+- **[Rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview).** Azure AD bietet RBAC für die effiziente und sichere Verwaltung des Zugriffs auf Ressourcen auf Verwaltungsebene. Aufträge und Aufgaben sind in Rollen organisiert und Benutzer diesen Rollen zugewiesen. Mit RBAC können Sie steuern, wer Zugriff auf eine Ressource hat und welche Aktionen ein Benutzer auf diese Ressource anwenden kann.
+- **[Azure AD Privileged Identity Management (PIM)](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure).** PIM reduziert die Offenlegungszeit von Ressourcenzugriffsrechten und verschafft Ihnen durch Berichte und Warnungen einen besseren Überblick über deren Nutzung. Hierfür werden Benutzern Beschränkungen auferlegt, indem ihnen Berechtigungen nur gemäß des Just-in-Time-Prinzips (JIT) zugeteilt oder nur für eine kurze Dauer zugewiesen und danach automatisch widerrufen werden.
+- **[Integrieren lokaler Active Directory-Domänen in Azure Active Directory](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad).** Diese Referenzarchitektur bietet ein Beispiel für die Verzeichnissynchronisierung zwischen lokalen Active Directory-Domänen und Azure AD.
+- **[Erweitern von Active Directory Domain Services (AD DS) auf Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain).** Diese Referenzarchitektur bietet ein Beispiel für den Einsatz von AD DS-Servern zur Erweiterung von Domänendiensten auf cloudbasierte Ressourcen.
+- **[Erweitern von Active Directory Federation Services (AD FS) auf Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adfs).** In dieser Referenzarchitektur wird Active Directory-Verbunddienste (AD FS) konfiguriert, um Authentifizierung und Autorisierung im Verbund mit Ihrem Azure AD-Verzeichnis durchzuführen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-„Identität“ ist nur eine der Kernkomponenten der Infrastruktur, die architekturspezifische Entscheidungen während eines Cloudeinführungsprozesses erfordert. Besuchen Sie die [Übersicht über Leitfäden zur Entscheidungsfindung](../index.md), um mehr über alternative Muster oder Modelle zu erfahren, die bei Entwurfsentscheidungen für andere Arten von Infrastrukturen verwendet werden.
+„Identität“ ist nur eine der Kernkomponenten der Infrastruktur, die architekturspezifische Entscheidungen während eines Cloudeinführungsprozesses erfordert. Navigieren Sie zur [Übersicht über Leitfäden zur Entscheidungsfindung](../index.md), um mehr über alternative Muster oder Modelle zu erfahren, die bei Entwurfsentscheidungen für andere Arten von Infrastrukturen verwendet werden.
 
 > [!div class="nextstepaction"]
 > [Leitfaden zur architekturbezogenen Entscheidungsfindung](../index.md)

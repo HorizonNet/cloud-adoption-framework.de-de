@@ -7,13 +7,15 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: f8ced104862d27c01c2d63ecbcb4af15deded343
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 00efe3b582b5850ff7a5c6c1a6ab16977c6ada4d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434009"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216893"
 ---
+<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
+
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Cloudeinführungsplan und Azure DevOps
 
 Azure DevOps ist der Satz cloudbasierter Tools für Azure-Kunden, die iterative Projekte verwalten. Es enthält darüber hinaus Tools für die Verwaltung von Bereitstellungspipelines und andere wichtige Elemente von DevOps.
@@ -22,7 +24,7 @@ In diesem Artikel erfahren Sie, wie Sie mithilfe der Vorlage für den Cloudeinf�
 
 ## <a name="create-your-cloud-adoption-plan"></a>Erstellen Ihres Cloudeinführungsplans
 
-Um den Cloudeinführungsplan bereitzustellen, öffnen Sie den [Azure DevOps-Demo-Generator](https://aka.ms/adopt/plan/generator). Dieses Tool stellt die Vorlage für Ihren Azure DevOps-Mandanten bereit. Zur Verwendung des Tools sind die folgenden Schritte erforderlich:
+Um den Cloudeinführungsplan bereitzustellen, öffnen Sie den [Azure DevOps Demo Generator](https://aka.ms/adopt/plan/generator). Dieses Tool stellt die Vorlage für Ihren Azure DevOps-Mandanten bereit. Zur Verwendung des Tools sind die folgenden Schritte erforderlich:
 
 1. Stellen Sie sicher, dass das Feld **Ausgewählte Vorlage** auf **Cloudeinführungsplan** festgelegt ist. Wenn dies nicht der Fall ist, wählen Sie **Vorlage auswählen** aus, um die richtige Vorlage auszuwählen.
 2. Wählen Sie Ihre Azure DevOps-Organisation im Dropdown-Listenfeld **Organisation auswählen** aus.
@@ -32,19 +34,19 @@ Um den Cloudeinführungsplan bereitzustellen, öffnen Sie den [Azure DevOps-Demo
 
 Nachdem Ihr Projekt erstellt wurde, lesen Sie weitere Artikel in dieser Serie, um zu erfahren, wie Sie die Vorlage an Ihren Cloudeinführungsplan anpassen.
 
-Zusätzliche Unterstützung und Anleitung zu diesem Tool finden Sie unter [Azure DevOps Services-Demo-Generator](https://docs.microsoft.com/azure/devops/demo-gen/?toc=/azure/devops/demo-gen/toc.json&bc=/azure/devops/demo-gen/breadcrumb/toc.json&view=azure-devops).
+Weitere Unterstützung und Anleitungen für dieses Tool finden Sie unter [Azure DevOps Services Demo Generator](https://docs.microsoft.com/azure/devops/demo-gen).
 
 ## <a name="bulk-edit-the-cloud-adoption-plan"></a>Massenbearbeitung des Cloudeinführungsplans
 
-Wenn das Planprojekt bereitgestellt wurde, können Sie es mithilfe von Microsoft Excel ändern. Neue Workloads oder Ressourcen lassen sich wesentlich einfacher mit Excel im Plan erstellen, als mithilfe der Azure DevOps-Browsererfahrung.
+Wenn das Planprojekt bereitgestellt wurde, können Sie es mithilfe von Microsoft Excel ändern. Mit Microsoft Excel können Sie neue Workloads oder Ressourcen wesentlich einfacher im Plan erstellen als mithilfe der Azure DevOps-Browseroberfläche.
 
-Um Ihre Arbeitsstation für die Massenbearbeitung vorzubereiten, lesen Sie [Massenhinzufügen oder -bearbeiten von Arbeitselementen mit Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
+Wenn Sie Ihre Arbeitsstation für die Massenbearbeitung vorbereiten möchten, lesen Sie [Massenhinzufügen oder -bearbeiten von Arbeitselementen mit Microsoft Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
 
 ## <a name="use-the-cloud-adoption-plan"></a>Verwenden des Cloudeinführungsplans
 
 Der Cloudeinführungsplan organisiert die Aktivitäten nach Aktivitätsarten:
 
-- **Epics:** Ein *Epic* repräsentiert eine vollständige Phase des Lebenszyklus der Cloudeinführung.
+- **Epics:** Ein _Epic_ repräsentiert eine vollständige Phase des Lebenszyklus der Cloudeinführung.
 - **Funktionen:** Features werden verwendet, um bestimmte Ziele innerhalb einer Phase zu organisieren. Beispielsweise wäre die Migration einer bestimmten Workload ein Feature.
 - **User Storys:** User Storys gruppieren Arbeit in logische Sammlungen von Aktivitäten, die auf einem bestimmten Ziel basieren.
 - **Aufgaben:** Aufgaben stellen die eigentlich zu erledigenden Arbeiten dar.
@@ -62,7 +64,7 @@ Die Übersichtsseiten für die Strategie- und Planungsphasen des Lebenszyklus de
 
 Die folgenden Artikel bieten Informationen zur Ausrichtung des Cloudeinführungsplans:
 
-- [Workloads](./workloads.md): Ausrichten von Features innerhalb des Epics „Cloudmigration“, um jede zu migrierende oder zu modernisierende Workload zu erfassen. Fügen Sie diese Features hinzu, und ändern Sie sie, um den Aufwand für die Migration Ihrer 10 wichtigsten Workloads zu erfassen.
+- [Workloads](./workloads.md): Ausrichten von Features innerhalb des Epics „Cloudmigration“ zum Erfassen jeder zu migrierenden oder zu modernisierenden Workload. Fügen Sie diese Features hinzu, und ändern Sie sie, um den Aufwand für die Migration Ihrer 10 wichtigsten Workloads zu erfassen.
 - [Ressourcen](./assets.md): Jede Ressource (VM, Anwendung oder Daten) wird durch die User Storys für jede Workload repräsentiert. Fügen Sie diese User Storys hinzu, und ändern Sie sie, um sie an Ihren digitalen Ressourcen anzupassen.
 - [Rationalisierung](./review-rationalization.md): Da jede Workload definiert ist, können die anfänglichen Annahmen zu dieser Workload hinterfragt werden. Dies kann zu Änderungen an den Aufgaben für jede Ressource führen.
 - [Releasepläne erstellen](./iteration-paths.md): Iterationspfade erstellen Releasepläne, indem sie den Aufwand an verschiedene Releases und Iterationen ausrichten.

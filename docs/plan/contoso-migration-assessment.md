@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: b91652ac2dd06882551c6e9474d5c0e0574deda2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: bc1753821e61ee0a7af74bc720a56ec8962ecded
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80889733"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214581"
 ---
+<!-- docsTest:disable TODO -->
+
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc OSTICKETWEB OSTICKETMYSQL smarthotelapp ctypes ctypeslib prereqs -->
 
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Bewerten lokaler Workloads für die Migration zu Azure
@@ -29,10 +31,10 @@ Als Einstieg und zum besseren Verständnis der beteiligten Technologie bewertet 
 
 <!-- markdownlint-disable MD033 -->
 
-App-Name | Plattform | App-Ebenen | Details
---- | --- | --- | ---
-SmartHotel360<br/><br/> (Verwaltung der Reiseanforderungen von Contoso) | Wird mit einer SQL Server-Datenbank unter Windows ausgeführt | App mit zwei Schichten. Die Front-End-ASP.NET-Website wird auf einer VM (**WEBVM**) und die SQL Server-Instanz auf einer anderen VM (**SQLVM**) ausgeführt. | VMs sind VMware, die auf einem mit vCenter Server verwalteten ESXi-Host ausgeführt werden.<br/><br/> Sie können die Beispiel-App von [GitHub](https://github.com/Microsoft/SmartHotel360) herunterladen.
-osTicket<br/><br/> (Service Desk-App von Contoso) | Wird auf Linux/Apache mit MySQL PHP (LAMP) ausgeführt | App mit zwei Schichten. Eine Front-End-PHP-Website wird auf einer VM (**OSTICKETWEB**) und die MySQL-Datenbank auf einer anderen VM (**OSTICKETMYSQL**) ausgeführt. | Die App wird von Kundendienst-Apps verwendet, um Probleme für die internen Mitarbeitern und externen Kunden zu verfolgen.<br/><br/> Sie können das Beispiel von [GitHub](https://github.com/osTicket/osTicket) herunterladen.
+| App-Name | Plattform | App-Ebenen | Details |
+| --- | --- | --- | --- |
+| SmartHotel360 <br><br> (Verwaltung der Reiseanforderungen von Contoso) | Wird mit einer SQL Server-Datenbank unter Windows ausgeführt | App mit zwei Schichten. Die Front-End-ASP.NET-Website wird auf einer VM (**WEBVM**) und die SQL Server-Instanz auf einer anderen VM (**SQLVM**) ausgeführt. | VMs sind VMware, die auf einem mit vCenter Server verwalteten ESXi-Host ausgeführt werden. <br><br> Sie können die Beispiel-App von [GitHub](https://github.com/Microsoft/SmartHotel360) herunterladen. |
+| osTicket <br><br> (Service Desk-App von Contoso) | Wird auf Linux/Apache mit MySQL PHP (LAMP) ausgeführt | App mit zwei Schichten. Eine Front-End-PHP-Website wird auf einer VM (**OSTICKETWEB**) und die MySQL-Datenbank auf einer anderen VM (**OSTICKETMYSQL**) ausgeführt. | Die App wird von Kundendienst-Apps verwendet, um Probleme für die internen Mitarbeitern und externen Kunden zu verfolgen. <br><br> Sie können das Beispiel von [GitHub](https://github.com/osTicket/osTicket) herunterladen. |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -72,11 +74,11 @@ Das Cloudteam von Contoso hat sich Ziele für die Migrationsbewertungen gesetzt:
 
 Contoso nutzt Microsoft-Tools für seine Migrationsbewertung. Die Tools sind an den Zielen des Unternehmens ausgerichtet und sollten Contoso alle benötigten Informationen liefern.
 
-Technologie | BESCHREIBUNG | Kosten
---- | --- | ---
-[Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso nutzt den Datenmigrations-Assistenten, um Kompatibilitätsprobleme zu bewerten und zu erkennen, die ggf. die Datenbankfunktionalität des Unternehmens in Azure beeinträchtigen können. Mit dem Datenmigrations-Assistenten wird die Featureparität zwischen SQL-Quellen und -Zielen bewertet. Er stellt Empfehlungen zu Verbesserungen der Leistung und Zuverlässigkeit bereit. | Der Datenmigrations-Assistent ist ein kostenloses Tool, das heruntergeladen werden kann.
-[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Contoso nutzt den Azure Migrate-Dienst, um seine VMware-VMs zu bewerten. Azure Migrate bewertet die Eignung der Computer für die Migration. Der Dienst stellt Schätzungen zur Größe und zu den Kosten für die Ausführung in Azure bereit. | Ab Mai 2018 ist Azure Migrate ein kostenloser Dienst.
-[Dienstzuordnung](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map) | Für Azure Migrate wird eine Dienstzuordnung verwendet, um Abhängigkeiten zwischen Computern anzuzeigen, die das Unternehmen migrieren möchte. | Die Dienstzuordnung ist Teil von Azure Monitor-Protokollen. Derzeit kann Contoso die Dienstzuordnung 180 Tage lang nutzen, ohne dass Gebühren anfallen.
+| Technologie | BESCHREIBUNG | Kosten |
+| --- | --- | --- |
+| [Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso nutzt den Datenmigrations-Assistenten, um Kompatibilitätsprobleme zu bewerten und zu erkennen, die ggf. die Datenbankfunktionalität des Unternehmens in Azure beeinträchtigen können. Mit dem Datenmigrations-Assistenten wird die Featureparität zwischen SQL-Quellen und -Zielen bewertet. Er stellt Empfehlungen zu Verbesserungen der Leistung und Zuverlässigkeit bereit. | Der Datenmigrations-Assistent ist ein kostenloses Tool, das heruntergeladen werden kann. |
+| [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) | Contoso nutzt den Azure Migrate-Dienst, um seine VMware-VMs zu bewerten. Azure Migrate bewertet die Eignung der Computer für die Migration. Der Dienst stellt Schätzungen zur Größe und zu den Kosten für die Ausführung in Azure bereit. | Ab Mai 2018 ist Azure Migrate ein kostenloser Dienst. |
+| [Dienstzuordnung](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map) | Für Azure Migrate wird eine Dienstzuordnung verwendet, um Abhängigkeiten zwischen Computern anzuzeigen, die das Unternehmen migrieren möchte. | Die Dienstzuordnung ist Teil von Azure Monitor-Protokollen. Derzeit kann Contoso die Dienstzuordnung 180 Tage lang nutzen, ohne dass Gebühren anfallen. |
 
 In diesem Szenario lädt Contoso den Datenmigrations-Assistenten herunter und führt ihn aus, um die lokale SQL Server-Datenbank für seine Reise-App zu bewerten. Contoso verwendet Azure Migrate mit Zuordnung von Abhängigkeiten, um die App-VMs zu bewerten, bevor die Migration zu Azure migriert wird.
 
@@ -316,7 +318,7 @@ Contoso führt jetzt den Collector aus, um VMs zu ermitteln. Derzeit unterstütz
 
     ![Konsole des vSphere-Clients – Collectorverknüpfung](../migrate/azure-best-practices/media/contoso-migration-assessment/collector-shortcut-v2.png)
 
-3. Im Azure Migrate-Collector wählt Contoso die Option **Erforderliche Komponenten einrichten**. Contoso akzeptiert die Lizenzbedingungen und liest die Drittanbieterinformationen.
+3. Contoso wählt im Azure Migrate-Collector die Option **Erforderliche Komponenten einrichten** aus. Contoso akzeptiert die Lizenzbedingungen und liest die Drittanbieterinformationen.
 
 4. Der Collector überprüft, ob die VM über Internetzugriff verfügt, die Uhrzeit synchronisiert ist und der Collectordienst ausgeführt wird. (Der Collectordienst wird standardmäßig auf der VM installiert.) Contoso installiert auch das VMware vSphere-VDDK (Virtual Disk Development Kit).
 
@@ -484,16 +486,16 @@ Eine Bewertung verfügt über eine Zuverlässigkeitsstufe, die zwischen 1 und 5 
 
 - Die Zuverlässigkeitsstufe wird einer Bewertung auf der Grundlage der Verfügbarkeit von Datenpunkten zugeordnet, die zum Berechnen der Bewertung erforderlich sind.
 - Anhand dieses Werts können Sie die Zuverlässigkeit der von Azure Migrate bereitgestellten Größenempfehlungen besser einschätzen.
-- Zuverlässigkeitsstufen sind nützlich, wenn Sie die *leistungsbasierte Größenanpassung* verwenden. Unter Umständen verfügt Azure Migrate nicht über genügend Datenpunkte für die nutzungsbasierte Größenanpassung. Bei der Größenanpassung vom Typ *Wie lokal* wird die Zuverlässigkeit immer mit 5 Sternen bewertet, da Azure Migrate über alle Datenpunkte verfügt, die zum Bestimmen der VM-Größe erforderlich sind.
+- Zuverlässigkeitsstufen sind nützlich, wenn Sie die _leistungsbasierte Größenanpassung_ verwenden. Unter Umständen verfügt Azure Migrate nicht über genügend Datenpunkte für die nutzungsbasierte Größenanpassung. Bei der Größenanpassung vom Typ _Wie lokal_ wird die Zuverlässigkeit immer mit 5 Sternen bewertet, da Azure Migrate über alle Datenpunkte verfügt, die zum Bestimmen der VM-Größe erforderlich sind.
 - Die Zuverlässigkeitsstufe für die Bewertung ist abhängig davon, wie viele Datenpunkte verfügbar sind (in Prozent):
 
-   Verfügbarkeit von Datenpunkten | Zuverlässigkeitsstufe
-   --- | ---
-   0 % bis 20 % | 1 Stern
-   21 % bis 40 % | 2 Sterne
-   41 % bis 60 % | 3 Sterne
-   61 % bis 80 % | 4 Sterne
-   81 % bis 100 % | 5 Sterne
+   | Verfügbarkeit von Datenpunkten | Zuverlässigkeitsstufe |
+   | --- | --- |
+   | 0 % bis 20 % | 1 Stern |
+   | 21 % bis 40 % | 2 Sterne |
+   | 41 % bis 60 % | 3 Sterne |
+   | 61 % bis 80 % | 4 Sterne |
+   | 81 % bis 100 % | 5 Sterne |
 
 #### <a name="verify-azure-readiness"></a>Überprüfen der Azure-Bereitschaft
 
@@ -507,12 +509,12 @@ Im Bewertungsbericht sind die in der Tabelle zusammengefassten Informationen ent
 
 <!-- markdownlint-disable MD033 -->
 
-Einstellung | Anzeige | Details
---- | --- | ---
-**Azure-VM-Bereitschaft** | Gibt an, ob die VM für die Migration bereit ist. | Mögliche Status:<br/><br/>- Bereit für Azure<br/><br/>- Bereit mit Bedingungen <br/><br/>- Nicht bereit für Azure<br/><br/>- Bereitschaft unbekannt<br/><br/> Wenn eine VM nicht bereit ist, werden in Azure Migrate einige Lösungsschritte angezeigt.
-**Azure-VM-Größe** | Für VMs, die bereit sind, stellt Azure Migrate eine Empfehlung zur Größe der Azure-VM bereit. | Die Empfehlung für die Größenanpassung richtet sich nach den Bewertungseigenschaften:<br/><br/>- Wenn Sie die leistungsbasierte Größenanpassung verwendet haben, wird bei der Größenanpassung der Leistungsverlauf der VMs berücksichtigt.<br/><br/>- Wenn Sie die Größenanpassung vom Typ *Wie lokal* verwendet haben, basiert die Größenanpassung auf der Größe der lokalen VM, und es werden keine Nutzungsdaten verwendet.
-**Vorgeschlagenes Tool** | Da auf den Azure-Computern die Agents ausgeführt werden, prüft Azure Migrate die Prozesse, die im Computer ausgeführt werden. Es wird ermittelt, ob der Computer ein Datenbankcomputer ist.
-**VM-Informationen** | Im Bericht werden die Einstellungen für die lokale VM angezeigt, z.B. Betriebssystem, Starttyp und Informationen zu Datenträger und Speicher.
+| Einstellung | Anzeige | Details |
+| --- | --- | --- |
+| **Azure-VM-Bereitschaft** | Gibt an, ob die VM für die Migration bereit ist. | Mögliche Status: <li> Bereit für Azure <li> Bereit mit Bedingungen <li> Nicht bereit für Azure <li> Bereitschaft unbekannt <br><br> Wenn eine VM nicht bereit ist, werden in Azure Migrate einige Lösungsschritte angezeigt. |
+| **Azure-VM-Größe** | Für VMs, die bereit sind, stellt Azure Migrate eine Empfehlung zur Größe der Azure-VM bereit. | Die Empfehlung für die Größenanpassung richtet sich nach den Bewertungseigenschaften: <li> Wenn Sie die leistungsbasierte Größenanpassung verwendet haben, wird bei der Größenanpassung der Leistungsverlauf der VMs berücksichtigt. <li> Wenn Sie die Größenanpassung vom Typ _Wie lokal_ verwendet haben, basiert die Größenanpassung auf der Größe des lokalen virtuellen Computers, <li> und es werden keine Nutzungsdaten verwendet. |
+| **Vorgeschlagenes Tool** | Da auf den Azure-Computern die Agents ausgeführt werden, prüft Azure Migrate die Prozesse, die im Computer ausgeführt werden. Es wird ermittelt, ob der Computer ein Datenbankcomputer ist. | |
+| **VM-Informationen** | Im Bericht werden die Einstellungen für die lokale VM angezeigt, z.B. Betriebssystem, Starttyp und Informationen zu Datenträger und Speicher. | |
 
 <!-- markdownlint-enable MD033 -->
 

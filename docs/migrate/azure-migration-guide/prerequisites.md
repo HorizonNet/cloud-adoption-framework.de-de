@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a1c100c4c3c9a960867f0666853df742ecf68c3d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: feb59290437318cfe43bed824cfde5233e357e11
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997582"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217029"
 ---
 ::: zone target="docs"
 
@@ -71,7 +71,7 @@ Wenn Sie Workloads für die Migration bewerten, sollten Sie die Anwendungen iden
 ## <a name="learn-more"></a>Weitere Informationen
 
 - [Entscheidungsleitfaden zur Migration mit dem Framework für die Cloudeinführung (Cloud Adoption Framework)](../../decision-guides/migrate-decision-guide/index.md)
-- [Die fünf R der Rationalisierung](../../digital-estate/5-rs-of-rationalization.md)
+- [Die fünf Phasen der Rationalisierung](../../digital-estate/5-rs-of-rationalization.md)
 
 # <a name="planning-checklist"></a>[Checkliste für die Planung](#tab/Checklist)
 
@@ -102,7 +102,7 @@ Angenommen, Sie wählen einen Rehostingansatz für die Migration, dann sind auch
 
 ## <a name="learn-more"></a>Weitere Informationen
 
-- [Die fünf R der Rationalisierung](../../digital-estate/5-rs-of-rationalization.md)
+- [Die fünf Phasen der Rationalisierung](../../digital-estate/5-rs-of-rationalization.md)
 - [Entscheidungsleitfaden zur Wahl von Migrationstools](../../decision-guides/migrate-decision-guide/index.md)
 - [Planungscheckliste für das Framework für die Cloudeinführung (Cloud Adoption Framework)](../migration-considerations/prerequisites/planning-checklist.md)
 

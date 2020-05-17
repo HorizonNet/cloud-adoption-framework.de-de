@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 7fa525ae5a2f0a7fe6d2075cd13d2bc9a1b08713
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 703a5152ef47d19ec5eb654f9ba4d83786562d12
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996467"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224390"
 ---
 # <a name="encryption-decision-guide"></a>Leitfaden zur Entscheidungsfindung für die Verschlüsselung
 
@@ -36,7 +36,7 @@ Moderne Schlüsselverwaltungssysteme wie Azure Key Vault unterstützen die Speic
 Die folgende Tabelle zur Planung einer Cloudmigration hilft Ihnen bei der Entscheidung, wie Sie Verschlüsselungsschlüssel, Zertifikate und Geheimnisse, die zum Erstellen sicherer und verwaltbarer Cloudbereitstellungen kritisch sind, speichern und verwalten:
 
 | Frage | Cloudnativ | Bring Your Own Key | Eigenen Schlüssel speichern |
-|---------------------------------------------------------------------------------------------------------------------------------------|--------------|--------|-------------|
+|--- |--------------|--------|-------------|
 | Fehlt in Ihrer Organisation eine zentralisierte Schlüssel- und Geheimnisverwaltung?                                                                    | Ja          | Nein     | Nein          |
 | Muss die Erstellung von Schlüsseln und Geheimnissen für Geräte auf lokale Hardware beschränkt werden, wenn diese Schlüssel in der Cloud verwendet werden? | Nein           | Ja    | Nein          |
 | Verfügt Ihre Organisation über Regeln oder Richtlinien, die eine externe Speicherung von Schlüsseln verhindern?                | Nein           | Nein     | Ja         |
@@ -45,7 +45,7 @@ Die folgende Tabelle zur Planung einer Cloudmigration hilft Ihnen bei der Entsch
 
 Bei der cloudnativen Schlüsselverwaltung werden alle Schlüssel und Geheimnisse in einem cloudbasierten Tresor wie Azure Key Vault generiert, verwaltet und gespeichert. Dieser Ansatz vereinfacht viele IT-Aufgaben im Zusammenhang mit der Schlüsselverwaltung – etwa das Sichern, Speichern und Verlängern von Schlüsseln.
 
-Die Verwendung eines cloudnativen Schlüsselverwaltungssystems umfasst die folgenden Annahmen:
+**Annahmen für cloudnative Systeme:** Die Verwendung eines cloudnativen Schlüsselverwaltungssystems umfasst die folgenden Annahmen:
 
 - Sie vertrauen der Cloudlösung für die Schlüsselverwaltung beim Erstellen, Verwalten und Hosten der Geheimnisse und Schlüssel Ihres Unternehmens.
 - Sie ermöglichen allen lokalen Anwendungen und Diensten, die auf den Zugriff auf Verschlüsselungsdienste oder Geheimnisse angewiesen sind, den Zugriff auf das Schlüsselverwaltungssystem in der Cloud.
@@ -121,14 +121,14 @@ Die Verschlüsselung von Daten in Gebrauch umfasst das Schützen von Daten in ni
 
 Weitere Informationen zur Verschlüsselung und Schlüsselverwaltung in Azure finden Sie unter:
 
-- [Übersicht über die Azure-Verschlüsselung:](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview) Eine ausführliche Beschreibung zur Verwendung der Verschlüsselung in Azure zum Schutz sowohl ruhender Daten als auch von Daten bei der Übertragung.
-- [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-overview). Key Vault ist das primäre Schlüsselverwaltungssystem zum Speichern und Verwalten von kryptografischen Schlüsseln, Geheimnissen und Zertifikaten in Azure.
-- [Bewährte Methoden für Datensicherheit und Datenverschlüsselung in Azure:](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices) Eine Diskussion über die bewährten Methoden von Azure zur Datensicherheit und Datenverschlüsselung.
-- [Confidential Computing in Azure:](https://azure.microsoft.com/solutions/confidential-compute) Die Confidential Computing-Initiative von Azure stellt Tools und Technologien zum Erstellen von vertrauenswürdigen Ausführungsumgebungen und anderen Verschlüsselungsmechanismen zum Schützen von Daten in Gebrauch bereit.
+- **[Übersicht über die Azure-Verschlüsselung](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview):** Eine ausführliche Beschreibung zur Verwendung der Verschlüsselung in Azure zum Schutz sowohl ruhender Daten als auch von Daten bei der Übertragung.
+- **[Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/key-vault-overview):** Key Vault ist das primäre Schlüsselverwaltungssystem zum Speichern und Verwalten von kryptografischen Schlüsseln, Geheimnissen und Zertifikaten in Azure.
+- **[Bewährte Methoden für Datensicherheit und Datenverschlüsselung in Azure](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices):** Eine Diskussion über die bewährten Methoden von Azure zur Datensicherheit und Datenverschlüsselung.
+- **[Azure Confidential Computing](https://azure.microsoft.com/solutions/confidential-compute):** Die Confidential Computing-Initiative von Azure stellt Tools und Technologien zum Erstellen von vertrauenswürdigen Ausführungsumgebungen und anderen Verschlüsselungsmechanismen zum Schützen von Daten in Gebrauch bereit.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-„Verschlüsselung“ ist nur eine der Kernkomponenten der Infrastruktur, die architekturspezifische Entscheidungen während eines Cloudeinführungsprozesses erfordert. Besuchen Sie die [Übersicht über Leitfäden zur Entscheidungsfindung](../index.md), um mehr über alternative Muster oder Modelle zu erfahren, die bei Entwurfsentscheidungen für andere Arten von Infrastrukturen verwendet werden.
+„Verschlüsselung“ ist nur eine der Kernkomponenten der Infrastruktur, die architekturspezifische Entscheidungen während eines Cloudeinführungsprozesses erfordert. Navigieren Sie zur [Übersicht über Leitfäden zur Entscheidungsfindung](../index.md), um mehr über alternative Muster oder Modelle zu erfahren, die bei Entwurfsentscheidungen für andere Arten von Infrastrukturen verwendet werden.
 
 > [!div class="nextstepaction"]
 > [Leitfaden zur architekturbezogenen Entscheidungsfindung](../index.md)

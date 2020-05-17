@@ -7,15 +7,15 @@ ms.date: 06/12/2019
 ms.topic: landing-page
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-keywords: Azure
 layout: LandingPage
-ms.openlocfilehash: 4eb8e5a0c9fa88bdfbd6e00c55047e75873ff36f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 87966103eaf1d360db77e9bdf34f62afa77fdaa9
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "79311556"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221653"
 ---
+<!-- docsTest:ignore "Azure Virtual Datacenter" -->
 <!-- cSpell:ignore tracsman jonor -->
 
 # <a name="azure-virtual-datacenter"></a>Virtuelles Azure-Rechenzentrum
@@ -29,7 +29,7 @@ ms.locfileid: "79311556"
 
 <table>
 <tr>
-    <td style="width: 64px; vertical-align: middle;"><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter.pdf"><img src="../_images/vdc/virtual-datacenter.svg" alt="Virtual Datacenter e-book" /></a></td>
+    <td style="width: 64px; vertical-align: middle;"><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter.pdf"><img src="../_images/vdc/virtual-datacenter.svg" alt="Azure Virtual Datacenter e-book" /></a></td>
     <td>
         <h3><a href="https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/archive/vdc/Azure_Virtual_Datacenter.pdf">Virtuelles Azure-Rechenzentrum: Konzepte</a></h3>
         <p>In diesem E-Book erfahren Sie, wie Sie Unternehmensworkloads unter Berücksichtigung Ihrer bereits vorhandenen Sicherheits- und Netzwerkrichtlinien für die Azure-Cloudplattform bereitstellen.</p>
@@ -38,7 +38,7 @@ ms.locfileid: "79311556"
 <tr>
     <td style="width: 64px; vertical-align: middle;"><a href="./networking-vdc.md"><img src="../_images/vdc/vdc-network.png" alt="Network Perspective" /></a></td>
     <td>
-        <h3><a href="./networking-vdc.md">Das virtuelle Rechenzentrum: Eine Netzwerkperspektive</a></h3>
+        <h3><a href="./networking-vdc.md">Virtuelles Rechenzentrum: Eine Netzwerkperspektive</a></h3>
         <p>Dieser Überblick über die Netzwerkmuster und -entwürfe behandelt die architektonischen Herausforderungen hinsichtlich der Skalierung, Leistung und Sicherheit, die auf Kunden bei einer Migration zur Cloud im größeren Umfang zukommen.</p>
     </td>
 </tr>

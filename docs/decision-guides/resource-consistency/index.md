@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ba284cca38d1ce494792cce3d130d65a6240f4e1
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d89a0e0facd81ed06c38cae4283f96791eeddd3f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996347"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224322"
 ---
 # <a name="resource-consistency-decision-guide"></a>Leitfaden zur Entscheidungsfindung bei der Ressourcenkonsistenz
 
@@ -37,7 +37,7 @@ Ressourcengruppen fungieren als Container für Ressourcen mit einem gemeinsamen 
 1. Werden die Inhalte der Ressourcengruppe gemeinsam und von den gleichen Personen oder Teams verwaltet, aktualisiert und überwacht?
 1. Werden die Inhalte der Ressourcengruppe gemeinsam ausgemustert?
 
-Falls Sie eine der obigen Fragen mit _NEIN_ beantwortet haben, sollte die betreffende Ressource in einer anderen Ressourcengruppe platziert werden.
+Falls Sie eine der obigen Fragen mit _Nein_ beantwortet haben, sollte die betreffende Ressource in einer anderen Ressourcengruppe platziert werden.
 
 > [!IMPORTANT]
 > Ressourcengruppen sind auch regionsspezifisch. Nicht selten befinden sich Ressourcen innerhalb derselben Ressourcengruppe aber in unterschiedlichen Regionen, da sie wie oben beschrieben gemeinsam verwaltet werden. Weitere Informationen zur Auswahl von Regionen finden Sie unter [Mehrere Regionen](../../migrate/azure-best-practices/multiple-regions.md).
@@ -58,15 +58,15 @@ Um sicherzustellen, dass Governancerichtlinien bei der Erstellung von Ressourcen
 
 Durch die Kombination aus Ressourcengruppen und standardisierten Resource Manager-Vorlagen können Sie Standards dahingehend erzwingen, welche Einstellungen in einer Bereitstellung erforderlich sind und welche [Azure-Richtlinienregeln](https://docs.microsoft.com/azure/governance/policy/overview) für die einzelnen Ressourcengruppen oder Ressourcen gelten sollen.
 
-So kann es beispielsweise erforderlich sein, dass alle virtuellen Computer, die in Ihrem Abonnement bereitgestellt werden, mit einem gemeinsamen Subnetz verbunden sind, das von Ihrem zentralen IT-Team verwaltet wird. Sie können eine Standardvorlage für die Bereitstellung von Workload-VMs erstellen, um eine separate Ressourcengruppe für die Workload zu erstellen und die erforderlichen VMs in dieser bereitzustellen. Diese Ressourcengruppe weist eine Richtlinienregel auf, gemäß der nur Netzwerkschnittstellen innerhalb der Ressourcengruppe mit dem gemeinsamen Subnetz verbunden werden dürfen.
+So kann es beispielsweise erforderlich sein, dass alle in Ihrem Abonnement bereitgestellten virtuellen Computer mit einem gemeinsamen Subnetz verbunden sind, das von Ihrem zentralen IT-Team verwaltet wird. Sie können eine Standardvorlage für die Bereitstellung von Workload-VMs erstellen, um eine separate Ressourcengruppe für die Workload zu erstellen und die erforderlichen VMs in dieser bereitzustellen. Diese Ressourcengruppe weist eine Richtlinienregel auf, gemäß der nur Netzwerkschnittstellen innerhalb der Ressourcengruppe mit dem gemeinsamen Subnetz verbunden werden dürfen.
 
 Eine ausführlichere Erläuterung der Erzwingung Ihrer Richtlinienentscheidungen innerhalb einer Cloudbereitstellung finden Sie unter [Richtlinienerzwingung](../policy-enforcement/index.md).
 
 ## <a name="hierarchical-consistency"></a>Hierarchische Konsistenz
 
-Ressourcengruppen ermöglichen die Unterstützung zusätzlicher Hierarchieebenen Ihrer Organisation innerhalb des Abonnements. Dies wird mithilfe von Azure Policy-Regeln und Zugriffssteuerungen auf der Ressourcengruppenebene erreicht. Mit zunehmender Größe Ihrer Cloudumgebung müssen jedoch möglicherweise komplexere abonnementübergreifende Governanceanforderungen unterstützt werden als mit der Unternehmens-, Abteilungs-, Konten- und Abonnementhierarchie des Azure Enterprise Agreements möglich ist.
+Ressourcengruppen ermöglichen die Unterstützung zusätzlicher Hierarchieebenen Ihrer Organisation innerhalb des Abonnements. Dies wird mithilfe von Azure Policy-Regeln und Zugriffssteuerungen auf der Ressourcengruppenebene erreicht. Mit zunehmender Größe Ihrer Cloudumgebung müssen jedoch möglicherweise komplexere abonnementübergreifende Governanceanforderungen unterstützt werden als mit der Unternehmens-/Abteilungs-/Konten-/Abonnementhierarchie des Azure Enterprise Agreements möglich ist.
 
-[Azure-Verwaltungsgruppen](https://docs.microsoft.com/azure/governance/management-groups) ermöglichen die Einrichtung komplexerer Organisationsstrukturen für Abonnements. Hierzu werden Abonnements in einer Hierarchie gruppiert, die sich von der Enterprise Agreement-Hierarchie unterscheidet. Diese alternative Hierarchie ermöglicht die Anwendung von Zugriffssteuerungs- und Richtlinienerzwingungsmechanismen für mehrere Abonnements und die darin enthaltenen Ressourcen. Verwaltungsgruppenhierarchien können verwendet werden, um die Abonnements Ihrer Cloudumgebung auf Vorgänge oder geschäftliche Governanceanforderungen abzustimmen. Weitere Informationen finden Sie im [Leitfaden zur Entscheidungsfindung für Abonnements](../subscriptions/index.md).
+Mit [Azure-Verwaltungsgruppen](https://docs.microsoft.com/azure/governance/management-groups) können Sie Abonnements in komplexeren Organisationsstrukturen organisieren, indem die Abonnements in einer Hierarchie gruppiert werden, die sich von der Enterprise Agreement-Hierarchie unterscheidet. Diese alternative Hierarchie ermöglicht die Anwendung von Zugriffssteuerungs- und Richtlinienerzwingungsmechanismen für mehrere Abonnements und die darin enthaltenen Ressourcen. Verwaltungsgruppenhierarchien können verwendet werden, um die Abonnements Ihrer Cloudumgebung auf Vorgänge oder geschäftliche Governanceanforderungen abzustimmen. Weitere Informationen finden Sie im [Leitfaden zur Entscheidungsfindung für Abonnements](../subscriptions/index.md).
 
 ## <a name="automated-consistency"></a>Automatisierte Konsistenz
 

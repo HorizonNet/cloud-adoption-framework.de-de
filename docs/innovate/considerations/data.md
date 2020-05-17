@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 878127e904adb28b873f642bb7d8ef152d7e63ff
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: eb54bd4c583878fb72b4e7401fd05662ca87bc63
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997196"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83224135"
 ---
 # <a name="democratize-data"></a>Demokratisieren von Daten
 
@@ -43,7 +43,7 @@ Mit den wichtigsten Tools für die direkte Freigabe von Daten für Datenconsumer
 
 Aus dem Freigeben von Daten kann schnell ein MVP resultieren, das für den Dialog mit dem Kunden verwendet werden kann. Um diese freigegebenen Daten jedoch in umsetzbare Informationen umzuwandeln, ist im Allgemeinen etwas mehr erforderlich. Nachdem eine Hypothese durch die Datenfreigabe überprüft wurde, ist die nächste Entwicklungsphase meist die Data Governance.
 
-Data Governance ist ein umfassendes Thema, das ein eigenes dediziertes Framework erfordern könnte. Der Grad an Granularität liegt nicht im Umfang des [Frameworks für die Cloudeinführung](../../index.md). Mehrere Aspekte der Datenkontrolle sollten jedoch berücksichtigt werden, wenn die Kundenhypothese überprüft wird. Beispiel:
+Data Governance ist ein umfassendes Thema, das ein eigenes dediziertes Framework erfordern könnte. Der Grad an Granularität liegt nicht im Umfang des [Frameworks für die Cloudeinführung](../../index.yml). Mehrere Aspekte der Datenkontrolle sollten jedoch berücksichtigt werden, wenn die Kundenhypothese überprüft wird. Beispiel:
 
 - **Sind die freigegebenen Daten vertraulich?** Vor jeder öffentlichen Freigabe [sollten Daten klassifiziert werden](../../govern/policy-compliance/data-classification.md), um die Interessen der Kunden und des Unternehmens zu schützen.
 - **Wenn die Daten vertraulich sind, wurden sie geschützt?** Der Schutz vertraulicher Daten sollte eine Anforderung für alle demokratisierten Daten sein. Die auf das [Schützen von Datenlösungen](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions) konzentrierte Beispielworkload bietet einige Verweise zum Schützen von Daten.
@@ -56,7 +56,7 @@ Wenn die Demokratisierung von Daten für eine kundenorientierte Hypothese wichti
 Wenn die Daten in einer IT-Umgebung lückenhaft sind, können die Innovationsmöglichkeiten äußerst eingeschränkt, teuer und zeitaufwendig sein. Die Cloud bietet neue Möglichkeiten, Daten über Datensilos hinweg zu zentralisieren. Wenn zum [Erstellen von Lösungen mit Blick auf die Kundenanforderungen](./build.md) eine Zentralisierung mehrerer Datenquellen erforderlich ist, kann die Cloud das Testen von Hypothesen beschleunigen.
 
 > [!CAUTION]
-> Die Zentralisierung von Daten stellt bei jedem Innovationsprozess ein Risiko dar. Wenn die Datenzentralisierung jedoch statt einer Kundenwertquelle eine [technische Spitze](./build.md#reduce-complexity-and-delay-technical-spikes) ist, sollte die Zentralisierung aufgeschoben werden, bis die Kundenhypothese überprüft wurde.
+> Die Zentralisierung von Daten stellt bei jedem Innovationsprozess ein Risiko dar. Wenn die Datenzentralisierung statt einer Kundenwertquelle eine [technische Spitze](./build.md#reduce-complexity-and-delay-technical-spikes) ist, sollte die Zentralisierung aufgeschoben werden, bis die Kundenhypothese überprüft wurde.
 
 Wenn die Zentralisierung der Daten erforderlich ist, sollten Sie zunächst den entsprechenden Datenspeicher für die zentralisierten Daten definieren. Es ist ratsam, ein Data Warehouse in der Cloud einzurichten. Diese skalierbare Option bietet einen zentralen Speicherort für Ihre sämtlichen Daten. Diese Art von Lösung ist in den Optionen „Analytische Onlineverarbeitung“ (Online Analytical Processing, OLAP) oder „Big Data“ verfügbar.
 
@@ -67,7 +67,7 @@ Die Referenzarchitekturen für [OLAP](https://docs.microsoft.com/azure/architect
 
 ### <a name="collect-data"></a>Sammeln von Daten
 
-Wenn Daten zentralisiert werden müssen, um einer Kundenanforderung gerecht zu werden, müssen die Daten sehr wahrscheinlich auch aus verschiedenen Quellen gesammelt und in den zentralisierten Datenspeicher verschoben werden. Es gibt zwei primäre Formen der Datensammlung: *Integration* und *Erfassung*.
+Wenn Daten zentralisiert werden müssen, um einer Kundenanforderung gerecht zu werden, müssen die Daten sehr wahrscheinlich auch aus verschiedenen Quellen gesammelt und in den zentralisierten Datenspeicher verschoben werden. Es gibt zwei primäre Formen der Datensammlung: _Integration_ und _Erfassung_.
 
 **Integration:** Daten, die sich in einem vorhandenen Datenspeicher befinden, können mithilfe herkömmlicher Datenverschiebungstechniken in den zentralisierten Datenspeicher integriert werden. Dies gilt insbesondere für Szenarien, in denen die Multicloud-Datenspeicherung eine Rolle spielt. Zu diesen Techniken gehört das Extrahieren der Daten aus dem vorhandenen Datenspeicher und das anschließende Laden in den zentralen Datenspeicher. An einem bestimmten Punkt in diesem Prozess werden die Daten typischerweise transformiert, sodass sie im zentralen Speicher besser verwendbar und relevant sind.
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3781bb50f8d2ad76efd606f8d6914582cee0754c
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 213fc070f648a43d285e59948bb567502f944603
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434225"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83218780"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>Governanceleitfaden für Standardunternehmen: Die Geschichte hinter der Governancestrategie
 
@@ -30,7 +30,7 @@ In der Vergangenheit war der CIO des Unternehmens von diesen strategischen Gespr
 Das Unternehmen besitzt das folgende Geschäftsprofil:
 
 - Alle Vertriebs- und Betriebsprozesse werden in einem einzigen Land ausgeführt, es ist nur ein geringer Prozentsatz an globalen Kunden vorhanden.
-- Das Unternehmen wird als einzelne Geschäftseinheit geführt, den einzelnen Funktionen – z.B. Vertrieb, Marketing, Betrieb und IT – sind Budgets zugeordnet.
+- Das Unternehmen wird als einzelne Geschäftseinheit geführt, wobei den einzelnen Funktionen wie Vertrieb, Marketing, Betrieb und IT Budgets zugeordnet sind.
 - Das Unternehmen betrachtet den größten Teil der IT als Kostenverursacher oder Kostenstelle.
 
 ## <a name="current-state"></a>Aktueller Status
@@ -50,8 +50,8 @@ Die folgenden Änderungen werden in den nächsten Jahren erwartet:
 
 - Der CIO überprüft die Richtlinie zu personenbezogenen Informationen und Finanzdaten, damit diese den zukünftigen Status unterstützt.
 - Die Teams für Anwendungsentwicklung und Business Intelligence möchten in den nächsten 24 Monaten cloudbasierte Lösungen in die Produktion bringen – basierend auf der Vision in Bezug auf Kundenbindung und neue Produkte.
-- In diesem Jahr schließt das IT-Team die Außerbetriebnahme der Workloads für die Notfallwiederherstellung im Rechenzentrum „DR“ ab, in dem 2.000 VMs in die Cloud migriert werden. Durch diese Maßnahme wird in den nächsten fünf Jahren mit einer Kostenersparnis von 25 Mio. USD gerechnet.
-    ![Lokale Kosten im Vergleich zu Azure-Kosten zeigen eine Rendite von 25 Millionen USD in den nächsten fünf Jahren.](../../../_images/govern/calculator-small-to-medium-enterprise.png)
+- In diesem Jahr schließt das IT-Team die Außerbetriebnahme der Workloads für die Notfallwiederherstellung im Rechenzentrum „DR“ ab, in dem 2.000 VMs in die Cloud migriert werden. Durch diese Maßnahme wird in den nächsten fünf Jahren mit Kosteneinsparungen in Höhe von 25 Mio. USD gerechnet.
+    ![Lokale Kosten im Vergleich zu Azure-Kosten zeigen eine Rendite von 25 Millionen US-Dollar in den nächsten fünf Jahren.](../../../_images/govern/calculator-small-to-medium-enterprise.png)
 - Das Unternehmen plant, einige IT-Investitionen zu ändern, indem die gebundenen Kapitalkosten als Betriebskosten innerhalb der IT umdefiniert werden. Diese Änderung ermöglicht mehr Kostenkontrolle, sodass die IT weitere geplante Aufwendungen beschleunigen kann.
 
 ## <a name="next-steps"></a>Nächste Schritte

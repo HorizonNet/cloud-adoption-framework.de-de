@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 27ee8420a1d610705b76c80590229ee1a7c454da
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 360c222130341e19d4fd185cc738fa47c26e01a6
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434254"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214530"
 ---
 <!-- cSpell:ignore MPLS -->
 
@@ -34,8 +34,8 @@ In der vorherigen Phase dieser Geschichte hatte das Unternehmen damit begonnen, 
 Seit diesem Zeitpunkt haben sich einige Dinge geändert, die sich auf die Governance auswirken:
 
 - Die Identität wird von einer lokalen Instanz von Active Directory kontrolliert. Hybrididentitäten werden über die Replikation in Azure Active Directory umgesetzt.
-- Der IT- oder Cloudbetrieb wird hauptsächlich über Azure Monitor und verwandte Automatisierungsprozesse verwaltet.
-- Notfallwiederherstellung und Geschäftskontinuität werden von Azure Vault-Instanzen kontrolliert.
+- IT- oder Cloudvorgänge werden hauptsächlich von Azure Monitor und verwandten automatisierten Prozessen verwaltet.
+- Notfallwiederherstellung und Geschäftskontinuität werden von Azure Recovery Services-Tresoren gesteuert.
 - Für die Überwachung von Sicherheitsverletzungen und Angriffen wird Azure Security Center genutzt.
 - Azure Security Center und Azure Monitor werden zusammen für die Überwachung der Governance in der Cloud verwendet.
 - Azure Blueprints, Azure Policy und Azure-Verwaltungsgruppen werden verwendet, um die Richtlinienkonformität zu automatisieren.
@@ -58,7 +58,7 @@ Dieses Unternehmensrisiko lässt sich auf einige technische Risiken erweitern:
 Die folgenden Änderungen an der Richtlinie verringern die neuen Risiken und vereinfachen die Implementierung:
 
 - Die Überwachung sämtlicher Ressourcen in einer sekundären Cloud muss über die vorhandenen Tools zur Geschäftsverwaltung und Sicherheitsüberwachung erfolgen.
-- Alle Organisationseinheiten müssen mit dem bestehenden Identitätsanbieter integriert werden.
+- Alle Organisationseinheiten müssen in den bestehenden Identitätsanbieter integriert werden.
 - Der primäre Identitätsanbieter sollte die Authentifizierung für Ressourcen in der sekundären Cloud steuern.
 
 ## <a name="incremental-improvement-of-governance-practices"></a>Inkrementelle Verbesserung der Governancemethoden

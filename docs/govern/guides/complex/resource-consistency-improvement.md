@@ -8,24 +8,24 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 148a89cd63bfa7c29caea9f5b8f74f64132aed08
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b5bb646fd658f3b0c4393b0f68c5d449ee53db08
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434326"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219970"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Ressourcenkonsistenz“
 
-Dieser Artikel führt die Geschichte fort, indem Steuerelemente für Ressourcenkonsistenz zum Governance-MVP hinzugefügt werden, um unternehmenskritische Anwendungen zu unterstützen.
+In diesem Artikel wird die Lösung weiterentwickelt, indem Steuerelemente für Ressourcenkonsistenz zum Governance-MVP hinzugefügt werden, um unternehmenskritische Anwendungen zu unterstützen.
 
 ## <a name="advancing-the-narrative"></a>Fortführen der Geschichte
 
-Die Teams zur Cloudeinführung haben alle Anforderungen für die Verschiebung geschützter Daten erfüllt. Mit diesen Anwendungen kommen SLA-Verpflichtungen und der Unterstützungsbedarf durch IT Operations auf das Unternehmen zu. Direkt hinter dem Team, das die zwei Rechenzentren migriert, stehen mehrere Anwendungsentwicklungs- und Business Intelligence-Teams bereit, um mit dem Start neuer Lösungen in der Produktion zu beginnen. Für den IT-Betrieb ist der Gedanke von Cloudabläufen neu, und es wird eine Möglichkeit zur schnellen Integration bestehender Betriebsprozesse benötigt.
+Die Teams zur Cloudeinführung haben alle Anforderungen für die Verschiebung geschützter Daten erfüllt. Diese Anwendungen bringen SLA-Verpflichtungen für das Unternehmen und den Bedarf an Unterstützung durch das IT-Betriebsteam mit sich. Direkt hinter dem Team, das die zwei Rechenzentren migriert, stehen mehrere Anwendungsentwicklungs- und Business Intelligence-Teams bereit, um mit dem Start neuer Lösungen in der Produktion zu beginnen. Für den IT-Betrieb ist der Gedanke von Cloudabläufen neu, und es wird eine Möglichkeit zur schnellen Integration bestehender Betriebsprozesse benötigt.
 
 ### <a name="changes-in-the-current-state"></a>Änderungen des aktuellen Status
 
-- IT verschiebt aktiv Produktionsworkloads mit geschützten Daten nach Azure. Einige Workloads mit niedriger Priorität bedienen den Produktionsdatenverkehr. Weitere können umgestellt werden, sobald die IT-Abteilung offiziell ihre Bereitschaft erklärt, Support für die Workloads zu leisten.
+- IT verschiebt aktiv Produktionsworkloads mit geschützten Daten nach Azure. Einige Workloads mit niedriger Priorität bedienen den Produktionsdatenverkehr. Weitere können umgestellt werden, sobald das IT-Betriebsteam die Bereitschaft zur Unterstützung der Workloads signalisiert.
 - Die Anwendungsentwicklungsteams sind für Produktionsdatenverkehr bereit.
 - Das Business Intelligence-Team steht bereit, Prognosen und Erkenntnisse in die Systeme zu integrieren, die den Betrieb für die drei Geschäftseinheiten tragen.
 
@@ -36,7 +36,7 @@ Die Teams zur Cloudeinführung haben alle Anforderungen für die Verschiebung ge
 
 ## <a name="changes-in-tangible-risks"></a>Änderungen bei konkreten Risiken
 
-**Unterbrechung des Geschäftsbetriebs:** Jede neue Plattform bringt ein inhärentes Risiko für Unterbrechungen in unternehmenskritischen Geschäftsabläufen mit sich. Das IT Operations-Team und die Teams, die in verschiedenen Cloud-Einsatztypen agieren, sind relativ unerfahren in Cloud Operations. Dadurch steigt die Gefahr von Unterbrechungen, die entsprechend verringert und kontrolliert werden muss.
+**Unterbrechung des Geschäftsbetriebs:** Jede neue Plattform bringt ein inhärentes Risiko für Unterbrechungen in unternehmenskritischen Geschäftsabläufen mit sich. Das IT-Betriebsteam und die Teams, die verschiedene Cloudeinführungen vornehmen, sind relativ unerfahren in Cloudvorgängen. Dadurch steigt die Gefahr von Unterbrechungen, die entsprechend verringert und kontrolliert werden muss.
 
 Dieses Geschäftsrisiko lässt sich auf eine Reihe von technischen Risiken ausweiten:
 
@@ -67,7 +67,7 @@ Die folgenden Änderungen an der Richtlinie verringern die neuen Risiken und ver
 8. Die Governancetools müssen erzwingen, dass für alle bereitgestellten Ressourcen, die unternehmenskritische Anwendungen unterstützen, automatische Updates **verhindert** werden. Verstöße müssen von Betriebsmanagementteams überprüft und in Übereinstimmung mit den Betriebsrichtlinien beseitigt werden. Ressourcen, die nicht automatisch aktualisiert werden, müssen in Prozesse des IT-Betriebs einbezogen werden, um eine schnelle und effektive Aktualisierung dieser Server zu gewährleisten.
 9. Mit Governancetools muss die Kennzeichnung (Tagging) im Hinblick auf Kosten, Kritikalität, SLA, Anwendung und Datenklassifizierung überprüft werden. Alle Werte müssen sich an vordefinierten Werten ausrichten, die vom Cloudgovernanceteam verwaltet werden.
 10. Governanceprozesse müssen Überwachungen zum Bereitstellungszeitpunkt und nachfolgend in regelmäßigen Zyklen umfassen, um für alle Ressourcen Konsistenz zu gewährleisten.
-11. Trends und Exploits, die mögliche Auswirkungen auf Cloudbereitstellungen haben, müssen vom Sicherheitsteam regelmäßig überprüft werden, damit Updates für in der Cloud verwendete Sicherheitsbaselinetools bereitgestellt werden.
+11. Trends und Exploits, die Auswirkungen auf Cloudbereitstellungen haben könnten, müssen vom Sicherheitsteam regelmäßig überprüft werden, damit Updates für in der Cloud verwendete Sicherheitsbaselinetools bereitgestellt werden können.
 12. Vor der Veröffentlichung in einer Produktionsumgebung müssen alle unternehmenskritischen Anwendungen und geschützten Daten der designierten Betriebsüberwachungslösung hinzugefügt werden. Ressourcen, die von den gewählten IT Operations-Tools nicht erkannt werden können, können nicht für die Produktion freigegeben werden. Alle Änderungen, die erforderlich sind, um die Ressourcen erkennbar zu machen, müssen an den relevanten Bereitstellungsprozessen vorgenommen werden, um sicherzustellen, dass die Ressourcen in kommenden Bereitstellungen ermitelbar sind.
 13. Bei der Ermittlung muss die Ressourcendimensionierung von den Betriebsmanagementteams überprüft werden, um sicherzustellen, dass die Ressourcen den Leistungsanforderungen genügen.
 14. Bereitstellungstools müssen vom Cloudgovernanceteam genehmigt werden, um eine kontinuierliche Governance für bereitgestellte Ressourcen sicherzustellen.
@@ -78,7 +78,7 @@ Die folgenden Änderungen an der Richtlinie verringern die neuen Risiken und ver
 
 In diesem Abschnitt des Artikels wird der Governance-MVP-Entwurf so verbessert, dass er neue Azure-Richtlinien und eine Implementierung von Azure Cost Management umfasst. Zusammen erfüllen diese beiden Entwurfsänderungen die neuen Richtlinienanweisungen des Unternehmens.
 
-Nach den Erfahrungen mit diesem fiktiven Beispiel wird davon ausgegangen, dass die Änderungen der geschützten Daten bereits stattgefunden haben. Aufbauend auf diesen bewährten Verfahren, werden in der Folge Anforderungen an die Betriebsüberwachung hinzugefügt, mit denen ein Abonnement für geschäftskritische Anwendungen vorbereitet wird.
+Nach den Erfahrungen mit diesem fiktiven Beispiel wird davon ausgegangen, dass die Änderungen der geschützten Daten bereits erfolgt sind. Aufbauend auf diesen bewährten Verfahren, werden in der Folge Anforderungen an die Betriebsüberwachung hinzugefügt, mit denen ein Abonnement für geschäftskritische Anwendungen vorbereitet wird.
 
 **Unternehmenseigenes IT-Abonnement:** Fügen Sie dem unternehmenseigenen IT-Abonnement, das als Hub fungiert, Folgendes hinzu.
 
@@ -86,8 +86,8 @@ Nach den Erfahrungen mit diesem fiktiven Beispiel wird davon ausgegangen, dass d
     1. In diesem Anwendungsfall hat das Cloud Operations-Team Azure Monitor als primäres Tool für die Überwachung unternehmenskritischer Anwendungen ausgewählt.
     2. Das Team sich ferner für Azure Site Recovery als primäres BCDR-Tool entschieden.
 2. Azure Site Recovery-Implementierung:
-    1. Definieren Sie einen Azure  Site Recovery-Tresor für Sicherungs- und Wiederherstellungsvorgänge, und stellen Sie ihn bereit.
-    2. Erstellen Sie eine Vorlage der Azure-Ressourcenverwaltung zur Erstellung eines Tresors in jedem Abonnement.
+    1. Definieren Sie einen Azure Site Recovery-Tresor für Sicherungs- und Wiederherstellungsvorgänge, und stellen Sie ihn bereit.
+    2. Erstellen Sie eine Azure-Ressourcenverwaltungsvorlage zur Erstellung eines Tresors in jedem Abonnement.
 3. Azure Monitor-Implementierung:
     1. Nachdem ein unternehmenskritisches Abonnement ermittelt wurde, kann ein Log Analytics-Arbeitsbereich erstellt werden.
 
@@ -96,7 +96,7 @@ Nach den Erfahrungen mit diesem fiktiven Beispiel wird davon ausgegangen, dass d
 1. Azure-Richtlinie für unternehmenskritische Knoten:
     1. Überwachen und erzwingen Sie die ausschließliche Verwendung von Standardrollen.
     2. Überwachen und erzwingen Sie die Anwendung von Verschlüsselung für alle Speicherkonten.
-    3. Überwachen und erzwingen Sie die Verwendung eines genehmigten Netzwerksubnetzes und VNets pro Netzwerkschnittstelle.
+    3. Überwachen und erzwingen Sie die Verwendung eines genehmigten Netzwerksubnetzes und virtuellen Netzwerks pro Netzwerkschnittstelle.
     4. Überwachen und erzwingen Sie die Einschränkung benutzerdefinierter Routingtabellen.
     5. Überwachen und erzwingen Sie die Bereitstellung von Log Analytics-Agents für virtuelle Windows- und Linux-Computer.
 2. Azure-Blaupause:
@@ -110,7 +110,7 @@ Durch das Hinzufügen dieser Prozesse und Änderungen zum Governance-MVP lassen 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Mit dem Wachstum der Cloudeinführung und der damit verbundenen Steigerung des Geschäftswerts ändern sich auch die Risiken und Anforderungen an Cloud Governance. Für das fiktive Unternehmen in diesem Leitfaden kommt der nächste Trigger, wenn die Größe der Bereitstellung 1.000 Ressourcen in der Cloud oder die monatlichen Ausgaben 10.000 US-Dollar übersteigen. An diesem Punkt fügt das Cloudgovernanceteam Cost Management-Steuerelemente hinzu.
+Mit dem Wachstum der Cloudeinführung und der damit verbundenen Steigerung des Geschäftswerts ändern sich auch die Risiken und Anforderungen an Cloud Governance. Für das fiktive Unternehmen in diesem Leitfaden kommt der nächste Trigger, wenn die Größe der Bereitstellung 1.000 Ressourcen in der Cloud oder die monatlichen Ausgaben 10.000 US-Dollar übersteigen. An diesem Punkt fügt das Cloudgovernanceteam Steuerelemente für die Kostenverwaltung hinzu.
 
 > [!div class="nextstepaction"]
 > [Verbessern der Disziplin „Cost Management“](./cost-management-improvement.md)

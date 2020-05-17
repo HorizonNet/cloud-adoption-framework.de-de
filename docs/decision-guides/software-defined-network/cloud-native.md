@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 9bc19716cc0122ea95672b4a48d6536a77fb5fe3
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a69c196d76db7f633acdfcf0aff6ad72a11872e5
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996191"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215023"
 ---
 # <a name="software-defined-networking-cloud-native"></a>Softwaredefiniertes Netzwerk: Cloudnativ
 
@@ -40,5 +40,5 @@ Zusätzliche Aspekte, die Ihr für den Umstieg auf die Cloud zuständiges Team b
 
 Weitere Informationen zu cloudnativen virtuellen Netzwerken in Azure finden Sie hier:
 
-- [Azure Virtual Network: Anleitungen](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm). Neu erstellte Azure Virtual Networks sind standardmäßig cloudnativ. Befolgen Sie diese Anleitungen bei der Planung des Entwurfs und der Bereitstellung Ihrer virtuellen Netzwerke.
-- [Grenzwerte für Abonnements: Netzwerk](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits) aus. Die einzelnen virtuellen Netzwerke und die verbundenen Ressourcen befinden sich jeweils in einem einzelnen Abonnement. Diese Ressourcen unterliegen Abonnementgrenzen.
+- [Azure Virtual Network-Leitfäden](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm): Neu erstellte virtuelle Netzwerke sind standardmäßig cloudnativ. Befolgen Sie diese Anleitungen bei der Planung des Entwurfs und der Bereitstellung Ihrer virtuellen Netzwerke.
+- [Azure-Netzwerkgrenzwerte](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#networking-limits): Die einzelnen virtuellen Netzwerke und die verbundenen Ressourcen befinden sich jeweils in einem einzelnen Abonnement. Diese Ressourcen unterliegen Abonnementgrenzen.

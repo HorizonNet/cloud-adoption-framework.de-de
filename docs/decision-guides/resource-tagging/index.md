@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 7d59f446966d853e29fc5c44bbc2da44cba114c2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 824d5fbe48074dd9a220a20bbf05f3d17c3445c1
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396098"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222758"
 ---
+<!--docsTest:disable - TODO -->
+
 <!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
 
 # <a name="resource-naming-and-tagging-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Ressourcenbenennung und -markierung
@@ -27,8 +29,8 @@ Die Organisation cloudbasierter Ressourcen ist eine wichtige Aufgabe für die IT
   - [Cloudbuchhaltungsmodelle](../../strategy/cloud-accounting.md)
   - [ROI-Berechnungen](../../strategy/financial-models.md#return-on-investment)
   - [Nachverfolgung der Kosten](../../ready/azure-best-practices/track-costs.md)
-  - [Budgets](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
-  - [Warnungen](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json)
+  - [Budgets](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
+  - [Warnungen](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
   - [Nachverfolgung und Berichterstellung für wiederkehrende Ausgaben](../../govern/cost-management/compliance-processes.md)
   - [Optimierungen nach der Implementierung](../../govern/cost-management/discipline-improvement.md#operate-and-post-implementation)
   - [Taktiken zur Kostenoptimierung](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)
@@ -68,7 +70,7 @@ Verwenden Sie im Rahmen Ihres Planungsprozesses die folgenden Fragen, um festzus
 - Müssen Ihre Benennungs- und Markierungsrichtlinien in vorhandene Benennungs- und Organisationsrichtlinien innerhalb Ihres Unternehmens integriert werden?
 - Werden Sie ein Abrechnungssystem mit verbrauchsbasierter Kostenzuteilung implementieren? Müssen Sie Ressourcen zu Buchhaltungsinformationen für Abteilungen, Geschäftsbereiche und Teams zuordnen, die über eine einfache Aufschlüsselung auf der Abonnementebene hinausgehen?
 - Muss die Markierung Details wie Anforderungen zur Einhaltung gesetzlicher Bestimmungen für eine Ressource darstellen? Wie sieht es mit betriebsbezogenen Details wie Anforderungen an die Betriebszeiten, Zeitpläne für Patches oder Sicherheitsanforderungen aus?
-- Welche Tags sind für alle Ressourcen auf Basis der zentralen IT-Richtlinie erforderlich? Welche Tags werden optional sein? Dürfen einzelne Teams eigene benutzerdefinierte Markierungsschemas implementieren?
+- Welche Tags sind für alle Ressourcen basierend auf der zentralen IT-Richtlinie erforderlich? Welche Tags werden optional sein? Dürfen einzelne Teams eigene benutzerdefinierte Markierungsschemas implementieren?
 
 Die unten aufgeführten allgemeinen Markierungsmuster zeigen beispielhaft, wie das Markieren zum Organisieren von Cloudressourcen verwendet werden kann. Diese Muster sind nicht als exklusiv gedacht und können parallel verwendet werden, wodurch sich mehrere Möglichkeiten der Organisation von Ressourcen auf der Grundlage der Anforderungen Ihres Unternehmens ergeben.
 
@@ -76,11 +78,11 @@ Die unten aufgeführten allgemeinen Markierungsmuster zeigen beispielhaft, wie d
 
 | Markierungstyp | Beispiele | BESCHREIBUNG |
 |-----|-----|-----|
-| Funktionen            | app = catalogsearch1 <br/>tier = web <br/>webserver = apache<br/>env = prod <br/>env = staging <br/>env = dev                 | Kategorisieren Sie Ressourcen in Bezug auf ihren Zweck innerhalb einer Workload, auf die Umgebung, in der sie bereitgestellt werden, oder auf andere funktionsbezogene oder operative Details.                                 |
-| Klassifizierung        | confidentiality=private<br/>sla = 24hours                                 | Klassifiziert eine Ressource danach, wie sie verwendet wird und welche Richtlinien für sie gelten.                               |
-| Buchhaltung            | department = finance <br/>program = business-initiative <br/>region = northamerica | Ermöglicht die Zuordnung einer Ressource zu bestimmten Gruppen innerhalb einer Organisation zu Abrechnungszwecken. |
-| Partnerschaft           | owner = jsmith <br/>contactalias = catsearchowners<br/>stakeholders = user1;user2;user3<br/>                       | Enthält Informationen dazu, welche Personen (außerhalb der IT) mit der Ressource verknüpft oder in anderer Form von ihr betroffen sind.                      |
-| Zweck               | businessprocess=support<br/>businessimpact=moderate<br/>revenueimpact=high   | Richtet Ressourcen an Geschäftsfunktionen aus, um Investitionsentscheidungen besser zu unterstützen.  |
+| Funktionen | app&nbsp;=&nbsp;catalogsearch1 <br> tier&nbsp;=&nbsp;web <br> webserver&nbsp;=&nbsp;apache <br> env&nbsp;=&nbsp;prod <br> env&nbsp;=&nbsp;staging <br> env&nbsp;=&nbsp;dev | Kategorisieren Sie Ressourcen in Bezug auf ihren Zweck innerhalb einer Workload, auf die Umgebung, in der sie bereitgestellt werden, oder auf andere funktionsbezogene oder operative Details. |
+| Klassifizierung | confidentiality&nbsp;=&nbsp;private <br> SLA&nbsp;=&nbsp;24hours | Klassifiziert eine Ressource danach, wie sie verwendet wird und welche Richtlinien für sie gelten. |
+| Buchhaltung | department&nbsp;=&nbsp;finance <br> program&nbsp;=&nbsp;business-initiative <br> region&nbsp;=&nbsp;northamerica | Ermöglicht die Zuordnung einer Ressource zu bestimmten Gruppen innerhalb einer Organisation zu Abrechnungszwecken. |
+| Partnerschaft | owner&nbsp;=&nbsp;jsmith <br> contactalias&nbsp;=&nbsp;catsearchowners <br> stakeholders&nbsp;=&nbsp;user1;user2;user3 | Enthält Informationen dazu, welche Personen (außerhalb der IT) mit der Ressource verknüpft oder in anderer Form von ihr betroffen sind. |
+| Zweck | businessprocess&nbsp;=&nbsp;support <br> businessimpact&nbsp;=&nbsp;moderate <br> revenueimpact&nbsp;=&nbsp;high | Richtet Ressourcen an Geschäftsfunktionen aus, um Investitionsentscheidungen besser zu unterstützen. |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -89,7 +91,7 @@ Die unten aufgeführten allgemeinen Markierungsmuster zeigen beispielhaft, wie d
 Weitere Informationen zur Benennung und Markierung in Azure finden Sie unter:
 
 - [Namenskonventionen für Azure-Ressourcen](../../ready/azure-best-practices/naming-and-tagging.md). In dieser Anleitung finden Sie empfohlene Benennungskonventionen für Azure-Ressourcen.
-- [Verwenden von Tags zum Organisieren von Azure-Ressourcen](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags). Sie können Tags in Azure sowohl auf der Ressourcengruppenebene als auch auf der Ebene einzelner Ressourcen anwenden. So können Sie Abrechnungsberichte anhand der angewendeten Markierungen unterschiedlich detailliert gestalten.
+- [Verwenden von Tags zum Organisieren von Azure-Ressourcen und Verwaltungshierarchie](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources). Sie können Tags in Azure sowohl auf der Ressourcengruppenebene als auch auf der Ebene einzelner Ressourcen anwenden. So können Sie Abrechnungsberichte anhand der angewendeten Markierungen unterschiedlich detailliert gestalten.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

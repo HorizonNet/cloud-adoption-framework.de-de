@@ -7,12 +7,12 @@ ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3eb3a4feb5871ac2e3ebe72c0bcbc1747e3f3eaa
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9f0005c3d84f1a9f49c3756932838bbe5634269d
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81122031"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83213952"
 ---
 # <a name="improve-landing-zone-governance"></a>Verbessern der Governance von Zielzonen
 
@@ -21,10 +21,10 @@ Die Governance der Zielzone ist die kleinste Einheit der Gesamtgovernance. Die E
 ## <a name="landing-zone-governance-best-practices"></a>Bewährte Methoden für die Governance von Zielzonen
 
 - **Anfängliche Zielgovernance:** Der Artikel zur Einrichtung einer [anfänglichen Governancegrundlage](../../govern/guides/complex/index.md) wird dazu beitragen, die ersten paar Zielzonen mit anfänglichen Governancetools auszustatten. Diese Methoden werden bei der Skalierung von Einführung und Governance sowie bei der Implementierung eines soliden Cost Managements helfen. Dieses Ansatz beginnt mit: Ressourcenorganisation, Richtliniendefinitionen, RBAC-Rollen und Blaupausendefinitionen.
-- **[Standards für Benennung und Kennzeichnung](../azure-best-practices/naming-and-tagging.md)** : Stellen Sie eine konsistente Benennung und Markierung sicher, die die Grundlage für die Einführung solider Governancemethoden bilden.
-- **[Nachverfolgen von Kosten für Workloads](../azure-best-practices/track-costs.md)** : Beginnen Sie mit der Nachverfolgung der Kosten in Ihrer ersten Zielzone. Bewerten Sie, wie Sie die Konsistenz über mehrere Workloads und Rollen hinweg anwenden werden.
-- **[Skalieren mit mehreren Abonnements](../azure-best-practices/scale-subscriptions.md)** : Bewerten Sie, wie diese und andere Zielzonen skaliert werden, wenn mehrere Abonnements zur Voraussetzung werden.
-- **[Organisieren von Abonnements](../azure-best-practices/organize-subscriptions.md)** : Erfahren Sie, wie Sie mehrere Abonnements organisieren und verwalten.
+- **[Standards für Benennung und Kennzeichnung](../azure-best-practices/naming-and-tagging.md):** Stellen Sie eine konsistente Benennung und Markierung sicher, die die Grundlage für die Einführung solider Governancemethoden bilden.
+- **[Nachverfolgen von Kosten für Workloads](../azure-best-practices/track-costs.md):** Beginnen Sie mit der Nachverfolgung der Kosten in Ihrer ersten Zielzone. Bewerten Sie, wie Sie die Konsistenz über mehrere Workloads und Rollen hinweg anwenden werden.
+- **[Skalieren mit mehreren Abonnements](../azure-best-practices/scale-subscriptions.md):** Bewerten Sie, wie diese und andere Zielzonen skaliert werden, wenn mehrere Abonnements zur Voraussetzung werden.
+- **[Organisieren von Abonnements](../azure-best-practices/organize-subscriptions.md):** Erfahren Sie, wie Sie mehrere Abonnements organisieren und verwalten.
 
 ## <a name="four-steps-to-improve-overall-governance"></a>Vier Schritte zur Verbesserung der Gesamtgovernance
 

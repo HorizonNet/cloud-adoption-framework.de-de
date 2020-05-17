@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7f0ebc370b18e5c010322a2dacac8750714810f8
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 53bf6e8a6c3e01255e57613b3b1a3cd2fa9cdc07
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427360"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222248"
 ---
 <!-- cSpell:ignore billyclaymyersmsft wimyers functionapp -->
 
@@ -161,9 +161,9 @@ Nutzen Sie einen vollständig verwalteten Kubernetes-Dienst, um die Bereitstellu
 
 #### <a name="action"></a>Aktion
 
-Zum Konfigurieren oder Überwachen eines Azure Kubernetes-Diensts gehen Sie folgendermaßen vor:
+So konfigurieren oder überwachen Sie einen AKS-Dienst
 
-1. Navigieren Sie zu **Azure Kubernetes-Dienste**.
+1. Navigieren Sie zu **Azure Kubernetes Service**.
 2. Konfigurieren eines neuen Diensts: Wählen Sie **Hinzufügen** aus, und befolgen Sie die Anweisungen.
 3. Verwalten vorhandener Dienste: Wählen Sie den gewünschten Kubernetes-Dienst aus der Liste aus.
 
@@ -171,7 +171,7 @@ Zum Konfigurieren oder Überwachen eines Azure Kubernetes-Diensts gehen Sie folg
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.ContainerService%2FManagedClusters]" submitText="Go to Azure Kubernetes services" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.ContainerService%2FManagedClusters]" submitText="Go to Azure Kubernetes Services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

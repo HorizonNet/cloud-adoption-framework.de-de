@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9d11c3954bb97d14c5ee4c59e27013cff7e8cf7a
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 486dabd5b2926b9f8f794767181c75bc1eff34b6
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425545"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216808"
 ---
 <!-- cSpell:ignore nanra njray dbspaces dbextents VSAM RACF LPARS ASSGN DLBL EXTENT LIBDEF EXEC IPLs -->
 
@@ -24,7 +24,7 @@ Der Begriff „Mainframe“ bezieht sich im Allgemeinen auf ein Großrechnersyst
 
 Mit der Migration in die Cloud können Unternehmen ihre Infrastruktur modernisieren. Mit Clouddiensten können Sie Mainframeanwendungen, und den Wert, den sie bieten, als Workload verfügbar machen, wenn Ihre Organisation sie benötigt. Viele Workloads können mit nur geringfügigen Änderungen am Code, z.B. Aktualisieren der Namen der Datenbanken, in Azure übertragen werden. Sie können komplexere Workloads in Phasen migrieren.
 
-Die meisten Fortune 500-Unternehmen setzen Azure bereits für ihre kritischen Workloads ein. Die erheblichen Grundkostenanreize von Azure motivieren viele Migrationsprojekte. Unternehmen verschieben in der Regel die Entwicklungs- und Testworkloads zuerst in Azure, gefolgt von DevOps, E-Mail und Notfallwiederherstellung als Dienst.
+Die meisten Fortune 500-Unternehmen setzen Azure bereits für ihre kritischen Workloads ein. Die erheblichen Grundkostenanreize von Azure motivieren viele Migrationsprojekte. Unternehmen verschieben in der Regel die Entwicklungs- und Testworkloads zuerst in Azure, gefolgt von DevOps, E-Mail und Notfallwiederherstellung.
 
 ## <a name="intended-audience"></a>Zielpublikum
 
@@ -48,7 +48,7 @@ Eine typische IBM-Mainframearchitektur umfasst diese gemeinsamen Komponenten:
 
 - **Code:** Zu den von Mainframes verwendeten Programmiersprachen zählen COBOL, Fortran, PL/I und Natural. Job Control Language (JCL) wird zur Arbeit mit z/OS verwendet.
 
-- **Datenbankebene:** Ein allgemeines relationales Datenbank-Managementsystem (Database Management System, DBMS) für z/OS ist IBM DD2. Es verwaltet als *dbspaces* bezeichnete Datenstrukturen, die eine oder mehrere Tabellen enthalten und Speicherpools von physischen Datasets namens *dbextents* zugewiesen sind. Zwei wichtige Datenbankkomponenten sind das Verzeichnis, das Datenspeicherorte in den Speicherpools identifiziert, und das Protokoll, das eine Aufzeichnung der an der Datenbank ausgeführten Vorgänge enthält. Verschiedene Flatfiledatenformate werden unterstützt. DB2 für z/OS verwendet in der Regel VSAM-Datasets (Virtual Storage Access Method, Methode des virtuellen Speicherzugriffs) zum Speichern der Daten.
+- **Datenbankebene:** Ein allgemeines relationales Datenbank-Managementsystem (Database Management System, DBMS) für z/OS ist IBM DD2. Es verwaltet als _dbspaces_ bezeichnete Datenstrukturen, die eine oder mehrere Tabellen enthalten und Speicherpools von physischen Datasets namens _dbextents_ zugewiesen sind. Zwei wichtige Datenbankkomponenten sind das Verzeichnis, das Datenspeicherorte in den Speicherpools identifiziert, und das Protokoll, das eine Aufzeichnung der an der Datenbank ausgeführten Vorgänge enthält. Verschiedene Flatfiledatenformate werden unterstützt. DB2 für z/OS verwendet in der Regel VSAM-Datasets (Virtual Storage Access Method, Methode des virtuellen Speicherzugriffs) zum Speichern der Daten.
 
 - **Verwaltungsschicht:** IBM-Mainframes enthalten Planungssoftware wie TWS-OPC, Tools für die Druck- und Ausgabeverwaltung wie CA-SAR und SPOOL sowie ein Quellcodeverwaltungssystem. Die sichere Zugriffssteuerung für z/OS wird von der Resource Access Control Facility (RACF) behandelt. Ein Datenbank-Manager ermöglicht den Zugriff auf Daten in der Datenbank und wird in einer eigenen Partition in einer z/OS-Umgebung ausgeführt.
 

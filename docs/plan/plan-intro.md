@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e45d3fe552c13b502f61dfa91e0af85ad10e00b2
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 1696f4ee2f10ba9b7a9fa01865dd041181f9034a
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428111"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223455"
 ---
 # <a name="plan-for-cloud-adoption"></a>Planen der Cloudeinführung
 
@@ -26,7 +26,7 @@ Die Bemühung beginnt mit der digitalen Ressource (vorgeschlagen oder vorhanden)
 
 ## <a name="transition-from-sequential-to-iterative-planning"></a>Übergang von der sequenziellen zur iterativen Planung
 
-Die Planung der Cloudeinführung kann für einige Unternehmen eine signifikante Veränderung darstellen. IT-Organisationen haben sich seit langem auf die Anwendung linearer oder sequenzieller Modelle des Projektmanagements konzentriert, z. B. das [Wasserfallmodell](https://wikipedia.org/wiki/Waterfall_model). In der traditionellen IT war dieser Ansatz völlig logisch. Die meisten großen IT-Projekte starteten mit einer Beschaffungsmaßnahme, um teure Hardwareressourcen zu erwerben. Investitionsanträge, Budgetzuweisungen und Gerätebeschaffungen machten oft einen großen Teil der Projektausführung aus. Und nach dem Erwerb der Hardware wurde diese selbst zu einer begrenzenden Einschränkung dessen, was bereitgestellt werden konnte.
+Die Planung der Cloudeinführung kann für einige Unternehmen eine signifikante Veränderung darstellen. IT-Organisationen haben sich seit langem auf die Anwendung linearer oder sequenzieller Modelle des Projektmanagements konzentriert, z. B. das [Wasserfallmodell](https://wikipedia.org/wiki/waterfall_model). In der traditionellen IT war dieser Ansatz völlig logisch. Die meisten großen IT-Projekte starteten mit einer Beschaffungsmaßnahme, um teure Hardwareressourcen zu erwerben. Investitionsanträge, Budgetzuweisungen und Gerätebeschaffungen machten oft einen großen Teil der Projektausführung aus. Und nach dem Erwerb der Hardware wurde diese selbst zu einer Einschränkung dessen, was bereitgestellt werden könnte.
 
 Die Erwerbsmodelle der Cloud verändern die Kernabhängigkeiten, die ein sequenzielles Modell erforderlich machten. Der Austausch von Erwerbszyklen durch einen Betriebskostenansatz ermöglicht es Unternehmen, schneller und mit geringeren finanziellen Verpflichtungen zu handeln. Dieser Ansatz hilft Teams, sich an Projekten zu beteiligen, bevor alle Anforderungen bekannt sind. Darüber hinaus schafft es Raum für eine wachstumsorientierte Mentalität, die das Team befähigt, ohne künstliche Einschränkungen zu experimentieren, zu lernen und zu liefern. Aus all diesen und weiteren Gründen empfehlen wir dringend, dass Teams agile oder iterative Ansätze zur Planung der Cloudeinführung nutzen.
 
@@ -38,7 +38,7 @@ Diese Artikelreihe führt Sie durch jeden Schritt der Übersetzung der Strategie
 2. **Definieren und Priorisieren von Workloads:** Priorisieren Sie Ihre ersten 10 Workloads, um einen ersten Einführungsbacklog einzurichten.
 3. **Ausrichten von Ressourcen auf Workloads:** Ermitteln Sie, welche Ressourcen (vorgeschlagen oder vorhanden) zur Unterstützung der priorisierten Workloads erforderlich sind.
 4. **Überprüfen der Rationalisierungsentscheidungen:** Überprüfen Sie Rationalisierungsentscheidungen, um die Entscheidungen zum Einführungspfad zu optimieren: Migration oder Innovation.
-5. **Einrichten von Iterationen und Freigabeplänen:** *Iterationen* sind die zum Durchführen von Arbeit reservierten Zeitblöcke. *Releases* sind die Definition der Arbeit, die geleistet werden muss, bevor eine Änderung der Produktionsprozesse ausgelöst wird.
+5. **Einrichten von Iterationen und Freigabeplänen:** _Iterationen_ sind die zum Durchführen von Arbeit reservierten Zeitblöcke. _Releases_ sind die Definition der Arbeit, die geleistet werden muss, bevor eine Änderung der Produktionsprozesse ausgelöst wird.
 6. **Schätzen von Zeitachsen:** Richten Sie auf der Grundlage erster Schätzungen grobe Zeitachsen für die Releaseplanung ein.
 
 ## <a name="next-steps"></a>Nächste Schritte

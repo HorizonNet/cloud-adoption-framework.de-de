@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6e4132bd67623b7eeea856824062c7e973d206c8
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: e07879cfe8b40f9b0482d804aa6073c7ad79f3e0
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425639"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217607"
 ---
 <!-- cSpell:ignore njray nanra chargebacks IPLs -->
 
@@ -24,7 +24,7 @@ Die Zuverlässigkeit, Verfügbarkeit und Verarbeitungsleistung von Mainframes ha
 
 ## <a name="myth-mainframes-never-go-down-and-have-a-minimum-of-five-9s-of-availability"></a>Mythos: Mainframes fallen nie aus und besitzen eine Verfügbarkeit von mindestens fünf 9en (99,999 %).
 
-Mainframe-Hardware und -Betriebssysteme werden als zuverlässig und stabil angesehen. Aber die Realität sieht so aus, dass Ausfallzeiten für Wartung und Neustarts (auch als „Initial Program Load“ oder IPLs bezeichnet) eingeplant werden müssen. Wenn Sie diese Aufgaben berücksichtigen, besitzt eine Mainframelösung oft eher über eine Verfügbarkeit von zwei oder drei 9en, was der von Intel-basierten High-End-Servern entspricht.
+Mainframe-Hardware und -Betriebssysteme werden als zuverlässig und stabil angesehen. Aber die Realität sieht so aus, dass Ausfallzeiten für Wartung und Neustarts, auch als „Initial Program Load“ (oder IPLs) bezeichnet, eingeplant werden müssen. Wenn Sie diese Aufgaben berücksichtigen, besitzt eine Mainframelösung oft eher über eine Verfügbarkeit von zwei oder drei 9en, was der von Intel-basierten High-End-Servern entspricht.
 
 Mainframes bleiben auch anfällig für Notfälle und Katastrophen wie jeder andere Server auch und erfordern unterbrechungsfreie Stromversorgungssysteme (UPS), um diese Arten von Ausfällen abzufangen.
 

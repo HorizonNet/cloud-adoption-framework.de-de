@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5ce9b9144921ec3407fdd0b12b84183fd6e9ee52
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: cc30b67d0103b60ff0b53187caef007063ca7efb
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81119857"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214258"
 ---
 <!-- cSpell:ignore CSPs MSPs -->
 
@@ -61,9 +61,9 @@ Wenn eine Organisation plant, eine Azure-Migration selbstständig durchzuführen
 - Global verteilte Daten
 - IoT***
 
-*Eingeschränkte Vorschau in den USA, Kanada, im Vereinigten Königreich und Westeuropa
+*Eingeschränkte Vorschau in den USA, Kanada, im Vereinigten Königreich und Westeuropa.
 
-**Eingeschränkte Vorschau im Vereinigten Königreich und Westeuropa
+**Eingeschränkte Vorschau im Vereinigten Königreich und Westeuropa.
 
 ***Verfügbar im 2. Halbjahr 2019
 
@@ -93,7 +93,7 @@ Wenn Sie weitere Fragen haben oder Hilfe benötigen, [erstellen Sie eine Support
 
 ## <a name="azure-solutions-partner"></a>Azure-Lösungspartner
 
-Microsoft Certified Solution Providers sind darauf spezialisiert, auf der ganzen Welt neue, auf Microsoft-Technologien basierende Kundenlösungen bereitzustellen. Optimieren Sie mit Unterstützung eines erfahrenen Partners Ihr Business in der Cloud.
+Microsoft Certified Solution Providers sind darauf spezialisiert, weltweit moderne Kundenlösungen auf der Grundlage von Microsoft-Technologien bereitzustellen. Optimieren Sie mit Unterstützung eines erfahrenen Partners Ihr Business in der Cloud.
 
 Holen Sie sich Hilfe bei Partnern, die einsatzbereite oder kundenspezifische Azure-Lösungen bieten, sowie Partnern, die Sie bei der Bereitstellung und Verwaltung dieser Lösungen unterstützen:
 

@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: b4c39b0a55485335e65bee9a5e6be2fe5fe22279
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8dba91bf7bd87395d3b5c55cf99480f8c6a54bd4
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997758"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221449"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -45,4 +45,4 @@ Es ist genauso wichtig, die Verwendungsmuster externer Benutzer zu kennen, z. B
 Erfahren Sie mehr über die [erforderlichen Qualifikationen in der Strategiephase](./suggested-skills.md) der Cloudeinführungsjourney.
 
 > [!div class="nextstepaction"]
-> [Für die Strategie relevante Qualifikationen](./suggested-skills.md)
+> [Während der Strategiephase benötigte Qualifikationen](./suggested-skills.md)

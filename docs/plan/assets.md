@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e8846d265fff84a1ccea62193c01ed0b706b3637
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 65d1ac327bc5a36e1dca12ab121825751be3b53f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428155"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214241"
 ---
 # <a name="align-assets-to-prioritized-workloads"></a>Ausrichten von Ressourcen auf priorisierte Workloads
 
@@ -33,7 +33,7 @@ Das Ziel dieser vorhergehenden Datenpunkte ist es, den relativen technischen Auf
 
 **Modernisierung:** Wenn das Ziel einer Workload darin besteht, Anwendungen oder andere Ressourcen zu modernisieren, sind diese Datenpunkte weiterhin solide Maßstäbe der Komplexität. Es könnte jedoch sinnvoll sein, der Workloaddokumentation eine Eingabe für Modernisierungsmöglichkeiten hinzuzufügen.
 
-**Innovation:** Wenn sich die Daten oder die Geschäftslogik während einer Cloudeinführung erheblich ändern, gilt dies als *innovative* Art der Transformation. Dasselbe gilt, wenn Sie neue Daten oder eine neue Geschäftslogik erstellen. Für alle Innovationsszenarien wird die Migration von Ressourcen wahrscheinlich den geringsten Aufwand erfordern. Für diese Szenarien sollte das Team eine Reihe von technischen Dateneingaben entwickeln, um die relative Komplexität zu messen.
+**Innovation:** Wenn sich die Daten oder die Geschäftslogik während einer Cloudeinführung erheblich ändern, gilt dies als _innovative_ Art der Transformation. Dasselbe gilt, wenn Sie neue Daten oder eine neue Geschäftslogik erstellen. Für alle Innovationsszenarien wird die Migration von Ressourcen wahrscheinlich den geringsten Aufwand erfordern. Für diese Szenarien sollte das Team eine Reihe von technischen Dateneingaben entwickeln, um die relative Komplexität zu messen.
 
 ## <a name="azure-migrate"></a>Azure Migrate
 

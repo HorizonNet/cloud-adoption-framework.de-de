@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d4c09f7e92f0c023b641148987a1dad0459e91e5
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 8ba2926d702b12234dd81f93cb6820352c0fbf58
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80809026"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222265"
 ---
 ::: zone target="docs"
 
@@ -28,7 +28,7 @@ ms.locfileid: "80809026"
 
 ::: zone-end
 
-Sie wissen, dass Innovation für den geschäftlichen Erfolg von entscheidender Bedeutung ist. Sie erreichen Innovation nicht allein durch Einführung neuer Technologien. Sie müssen den Schwerpunkt auf die Unterstützung der Personen legen, die Veränderungen ermöglichen und den neuen Wert schaffen, den Sie anstreben. *Entwickler* stehen im Mittelpunkt der digitalen Transformation, und damit sie mehr erreichen können, müssen Sie die Entwicklergeschwindigkeit erhöhen. Um die kreative Energie der Entwicklerteams freizusetzen, müssen Sie ihnen helfen, produktiv Lösungen zu erstellen, die globale und sichere Zusammenarbeit zu fördern und Barrieren zu beseitigen, damit sie Innovationen skalieren können.
+Sie wissen, dass Innovation für den geschäftlichen Erfolg von entscheidender Bedeutung ist. Sie erreichen Innovation nicht allein durch Einführung neuer Technologien. Sie müssen den Schwerpunkt auf die Unterstützung der Personen legen, die Veränderungen ermöglichen und den neuen Wert schaffen, den Sie anstreben. _Entwickler_ stehen im Mittelpunkt der digitalen Transformation, und damit sie mehr erreichen können, müssen Sie die Entwicklergeschwindigkeit erhöhen. Um die kreative Energie der Entwicklerteams freizusetzen, müssen Sie ihnen helfen, produktiv Lösungen zu erstellen, die globale und sichere Zusammenarbeit zu fördern und Barrieren zu beseitigen, damit sie Innovationen skalieren können.
 
 ## <a name="generate-value"></a>Generieren von Mehrwert
 
@@ -77,6 +77,7 @@ Azure DevOps bietet erstklassige Tools für jeden Entwickler. Mit Azure-Entwickl
 
 ::: zone target="chromeless"
 
+<!-- docsTest:ignore "Azure DevOps Projects" -->
 <!-- markdownlint-disable DOCSMD001 -->
 
 ### <a name="action"></a>Aktion
@@ -87,7 +88,7 @@ Zum Erstellen eines DevOps-Projekts gehen Sie folgendermaßen vor:
 2. Wählen Sie **DevOps-Projekt erstellen** aus.
 3. Wählen Sie **Runtime, Framework und Dienst** aus.
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.VisualStudio%2FAccount%2FProject]" submitText="Go to Azure DevOps Project" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.VisualStudio%2FAccount%2FProject]" submitText="Go to Azure DevOps Projects" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

@@ -7,18 +7,18 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3e8824e93f5ecc1db8359d8361a4aa6c84dd00f4
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d46518dca8738efd1b1e22f8d276102e198fc6be
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80427635"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219681"
 ---
 # <a name="innovation-in-the-digital-economy"></a>Innovation in der digitalen Wirtschaft
 
 Die digitale Wirtschaft ist eine unbestreitbare Kraft in nahezu jeder Branche. Während der industriellen Revolution waren Benzin, Förderbänder und menschlicher Einfallsreichtum wichtige Ressourcen für die Förderung von Marktinnovationen. Produktqualität, Preis und Logistik wirkten sich positiv auf die Märkte aus, da Unternehmen sich bemühten, ihren Kunden bessere Produkte schneller zu liefern. Die heutige digitale Wirtschaft verändert die Art und Weise, wie Kunden mit Unternehmen interagieren. Die Hauptformen von Kapital- und Marktunterscheidungsmerkmalen haben sich als Ergebnis verlagert. In der digitalen Wirtschaft geht es den Kunden weniger um die Logistik als vielmehr um die Gesamterfahrung bei der Verwendung eines Produkts. Diese Verschiebung ergibt sich aus der direkten Interaktion mit Technologie in unserem Alltag und der Umsetzung der damit verbundenen Wertversprechen.
 
-In der Innovationsphase beim Cloud Adoption Framework konzentrieren wir uns auf das Verstehen der Kundenbedürfnisse und das schnelle Entwickeln von Innovationen, die sich wiederum auf die Interaktion Ihrer Kunden mit Ihren Produkten auswirken. Wir werden außerdem einen Ansatz veranschaulichen, um den Wert eines minimal funktionsfähigen Produkts (Minimum Viable Product, MVP) zu umzusetzen. Zu guter Letzt werden wir gängige Entscheidungen bei Innovationszyklen zuordnen, um Ihnen zu verdeutlichen, wie über die Cloud Innovationen freigesetzt und Partnerschaften mit Ihren Kunden aufgebaut werden können.
+In der Innovationsmethodik beim Cloud Adoption Framework konzentrieren wir uns auf das Verstehen der Kundenbedürfnisse und das schnelle Entwickeln von Innovationen, die sich wiederum auf die Interaktion Ihrer Kunden mit Ihren Produkten auswirken. Wir werden außerdem einen Ansatz veranschaulichen, um den Wert eines minimal funktionsfähigen Produkts (Minimum Viable Product, MVP) zu umzusetzen. Zu guter Letzt werden wir gängige Entscheidungen bei Innovationszyklen zuordnen, um Ihnen zu verdeutlichen, wie über die Cloud Innovationen freigesetzt und Partnerschaften mit Ihren Kunden aufgebaut werden können.
 
 ## <a name="innovate-methodology"></a>Innovative Methodik
 
@@ -55,7 +55,7 @@ Jedes Entwicklungsteam verfügt über eine Reihe von Tools und Technologien, mit
 
 ## <a name="commitment-to-transparency"></a>Verpflichtung zur Transparenz
 
-Um die Messung bei einem Innovationsansatz zu verstehen, müssen Sie sich zunächst mit der Verpflichtung zur Transparenz vertraut machen. Innovationen können nur in einer Umgebung gedeihen, in der eine *wachstumsorientierte Denkweise* herrscht. An der Wurzel einer wachstumsorientierten Denkweise steht der kulturelle Imperativ, aus Erfahrungen zu lernen. Erfolgreiche Innovation und kontinuierliches Lernen beginnen mit einem Engagement für Transparenz bei der Messung. Dies ist eine mutige Verpflichtung für das Cloudeinführungsteam. Diese Verpflichtung ist jedoch bedeutungslos, wenn sie nicht durch eine Verpflichtung zur Beibehaltung der Transparenz in Führungs- und Cloudstrategieteams ergänzt wird.
+Um die Messung bei einem Innovationsansatz zu verstehen, müssen Sie sich zunächst mit der Verpflichtung zur Transparenz vertraut machen. Innovationen können nur in einer Umgebung gedeihen, in der eine _wachstumsorientierte Denkweise_ herrscht. An der Wurzel einer wachstumsorientierten Denkweise steht der kulturelle Imperativ, aus Erfahrungen zu lernen. Erfolgreiche Innovation und kontinuierliches Lernen beginnen mit einem Engagement für Transparenz bei der Messung. Dies ist eine mutige Verpflichtung für das Cloudeinführungsteam. Diese Verpflichtung ist jedoch bedeutungslos, wenn sie nicht durch eine Verpflichtung zur Beibehaltung der Transparenz in Führungs- und Cloudstrategieteams ergänzt wird.
 
 Transparenz ist wichtig, da das Messen der Auswirkungen für Kunden nicht die Frage nach richtig oder falsch beantwortet. Ebenso wenig sind Auswirkungsmessungen ein Indikator für die Qualität der Arbeit oder die Leistung des Einführungsteams. Stattdessen stellen sie eine Gelegenheit dar, die Anforderungen Ihrer Kunden zu verstehen und besser zu erfüllen. Ein Missbrauch von Innovationsmetriken kann diese Kultur unterdrücken. Und letztendlich führt er zu einer Manipulation von Metriken, die wiederum langfristig zu einem Scheitern der Erfindung, des unterstützenden Personals und letztendlich der Verwaltungsstruktur führt, die die Daten missbraucht hat. Führungskräfte und Mitwirkende sollten Messungen ausschließlich als eine Gelegenheit nutzen, die MVP-Lösung zu verstehen und zu verbessern.
 

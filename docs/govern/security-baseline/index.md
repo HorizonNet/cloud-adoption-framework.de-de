@@ -9,19 +9,19 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 5e2549c252b8fddf6cd549215704300a764f4040
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9c8bc1a9dd0c475a72db73ad032dabd1ff83f476
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997261"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219851"
 ---
 # <a name="security-baseline-discipline-overview"></a>Übersicht über die Disziplin „Sicherheitsbaseline“
 
-„Sicherheitsbaseline“ ist eine der [fünf Disziplinen von Cloud Governance](../governance-disciplines.md) innerhalb des [CAF-Governancemodells (Cloud Adoption Framework)](../index.md). Sicherheit ist Bestandteil jeder IT-Bereitstellung, und durch die Cloud ergeben sich besondere Sicherheitsaspekte. Viele Unternehmen unterliegen gesetzlichen Bestimmungen, die den Schutz sensibler Daten zu einer wichtigen organisatorischen Priorität machen, wenn es um Cloudtransformation geht. Die Erkennung potenzieller Sicherheitsbedrohungen für Ihre Cloudumgebung sowie die Einrichtung von Prozessen und Verfahren für den Umgang mit diesen Bedrohungen sollten für jedes IT- oder Cybersicherheitsteam Priorität haben. Mit der Disziplin „Sicherheitsbaseline“ wird sichergestellt, dass technische Anforderungen und Sicherheitseinschränkungen konsistent auf Cloudumgebungen angewendet werden, sobald sich diese Anforderungen stellen.
+„Sicherheitsbaseline“ ist eine der [fünf Disziplinen der Cloudgovernance](../governance-disciplines.md) innerhalb des [Cloud Adoption Framework-Governancemodells](../index.md). Sicherheit ist Bestandteil jeder IT-Bereitstellung, und durch die Cloud ergeben sich besondere Sicherheitsaspekte. Viele Unternehmen unterliegen gesetzlichen Bestimmungen, die den Schutz sensibler Daten zu einer wichtigen organisatorischen Priorität machen, wenn es um Cloudtransformation geht. Die Erkennung potenzieller Sicherheitsbedrohungen für Ihre Cloudumgebung sowie die Einrichtung von Prozessen und Verfahren für den Umgang mit diesen Bedrohungen sollten für jedes IT- oder Cybersicherheitsteam Priorität haben. Mit der Disziplin „Sicherheitsbaseline“ wird sichergestellt, dass technische Anforderungen und Sicherheitseinschränkungen konsistent auf Cloudumgebungen angewendet werden, sobald sich diese Anforderungen stellen.
 
 > [!NOTE]
-> Governance der Sicherheitsbaseline ersetzt nicht die vorhandenen IT-Teams, Prozesse und Verfahren, die Ihre Organisation zum Sichern von in der Cloud bereitgestellten Ressourcen verwendet. Der Hauptzweck dieser Disziplin ist es, sicherheitsrelevante Geschäftsrisiken zu identifizieren und den für die Sicherheitsinfrastruktur zuständigen IT-Mitarbeitern eine Anleitung zur Risikominderung zu geben. Bei der Entwicklung von Governancerichtlinien und -prozessen ist darauf zu achten, dass die relevanten IT-Teams in Ihre Planungs- und Überprüfungsprozesse einbezogen werden.
+> Die Disziplin „Sicherheitsbaseline“ ersetzt nicht die vorhandenen IT-Teams, -Prozesse und -Verfahren, die Ihre Organisation zum Schützen von in der Cloud bereitgestellten Ressourcen verwendet. Der Hauptzweck dieser Disziplin ist es, sicherheitsrelevante Geschäftsrisiken zu identifizieren und den für die Sicherheitsinfrastruktur zuständigen IT-Mitarbeitern eine Anleitung zur Risikominderung zu geben. Bei der Entwicklung von Governancerichtlinien und -prozessen ist darauf zu achten, dass die relevanten IT-Teams in Ihre Planungs- und Überprüfungsprozesse einbezogen werden.
 
 In diesem Artikel wird der Ansatz zur Entwicklung einer Disziplin „Sicherheitsbaseline“ als Teil Ihrer Cloud Governance-Strategie beschrieben. Die Hauptzielgruppe für diesen Leitfaden sind die Cloudarchitekten Ihrer Organisation und andere Mitglieder Ihres Cloudgovernanceteams. Die Entscheidungen, Richtlinien und Prozesse, die sich aus dieser Disziplin ergeben, sollten jedoch die Einbeziehung von und Diskussion mit relevanten Mitgliedern Ihrer IT- und Sicherheitsteams beinhalten, insbesondere der technischen Führungskräfte, die für die Implementierung von Netzwerk-, Verschlüsselungs- und Identitätsdiensten verantwortlich sind.
 
@@ -36,7 +36,7 @@ Umsetzbare Richtlinienanweisungen und die daraus resultierenden Architekturanfor
 
 ## <a name="develop-governance-policy-statements"></a>Entwickeln von Richtlinienanweisungen für Governance
 
-Die folgenden sechs Schritte enthalten Beispiele und mögliche Optionen, die bei der Entwicklung von Governance der Sicherheitsbaseline zu berücksichtigen sind. Verwenden Sie die einzelnen Schritte als Ausgangspunkte für Diskussionen innerhalb Ihres Cloudgovernanceteams sowie mit betroffenen Geschäfts-, IT- und Sicherheitsteams in Ihrer Organisation, um die Richtlinien und Prozesse auszuarbeiten, die zur Bewältigung sicherheitsrelevanter Risiken erforderlich sind.
+Die folgenden sechs Schritte enthalten Beispiele und mögliche Optionen, die Sie beim Entwickeln der Disziplin „Sicherheitsbaseline“ berücksichtigen sollten. Verwenden Sie die einzelnen Schritte als Ausgangspunkte für Diskussionen innerhalb Ihres Cloudgovernanceteams sowie mit betroffenen Geschäfts-, IT- und Sicherheitsteams in Ihrer Organisation, um die Richtlinien und Prozesse auszuarbeiten, die zur Bewältigung sicherheitsrelevanter Risiken erforderlich sind.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -52,14 +52,15 @@ Die folgenden sechs Schritte enthalten Beispiele und mögliche Optionen, die bei
                         </div>
                     </div>
                     <div class="cardText" style="padding-left:0px;">
-                        <h3>Vorlage für Sicherheitsbaseline</h3>
+                        <h3>Vorlage für die Disziplin „Sicherheitsbaseline“</h3>
                         <p class="x-hidden-focus">Laden Sie die Vorlage zur Dokumentation einer Disziplin vom Typ „Sicherheitsbaseline“ herunter.</p>
                     </div>
                 </div>
             </div>
         </div>
     </a>
-</li><li style="display: flex; flex-direction: column;">
+</li>
+<li style="display: flex; flex-direction: column;">
     <a href="./business-risks.md">
         <div class="cardSize">
             <div class="cardPadding" >
@@ -128,7 +129,7 @@ Die folgenden sechs Schritte enthalten Beispiele und mögliche Optionen, die bei
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Einsatzreife</h3>
-                        <p class="x-hidden-focus">Abstimmung der Einsatzreife der Cloudverwaltung mit den Phasen der Cloudeinführung.</p>
+                        <p class="x-hidden-focus">Stimmen Sie die Einsatzreife der Cloudverwaltung mit den Phasen der Cloudeinführung ab.</p>
                     </div>
                 </div>
             </div>
