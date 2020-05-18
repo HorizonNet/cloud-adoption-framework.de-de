@@ -7,15 +7,13 @@ ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 76baa600f1110a85dba8ffae5045c9d96bdce73b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ad46a2a97a1231906e76e2ca0d9f2d86c13a50bf
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215465"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400883"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 <!-- markdownlint-disable MD026 -->
 
 # <a name="develop-a-cloud-adoption-plan"></a>Entwickeln eines Cloudeinführungsplans
@@ -25,13 +23,12 @@ Ein Cloudeinführungsplan dient dazu, die ehrgeizigen Ziele einer Cloudeinführu
 Die folgenden Aufgaben helfen Ihnen dabei, Ihre Technologiestrategie zu dokumentieren. Bei dieser Herangehensweise werden priorisierte Aufgaben erfasst, um die Einführung zu fördern. Danach wird der Cloudeinführungsplan mit den Metriken und Beweggründen aus der Cloudeinführungsplan in Einklang gebracht.
 
 <!-- markdownlint-disable MD033 -->
-<!-- docsTest:ignore images _images -->
 
 | | |
 |---|---|
-| ![1](../_images/icons/1.png)     | <br>[Digitale Ressource](../digital-estate/rationalize.md): Erfassen und rationalisieren Sie Ihre digitalen Ressourcen basierend auf Annahmen, die an den Beweggründen und Geschäftsergebnissen ausgerichtet sind.                                |
-| ![2](../_images/icons/2.png)     | <br>[Erstausrichtung der Organisation](./initial-org-alignment.md): Entwickeln Sie einen Plan für die Erstausrichtung der Organisation, um den Einführungsplan zu unterstützen.                                |
-| ![3](../_images/icons/3.png)     | <br>[Plan für die Qualifikationsbereitschaft](./adapt-roles-skills-processes.md): Erstellen Sie einen Plan für den Umgang mit Qualifikationslücken.                                |
-| ![4](../_images/icons/4.png)      | <br>[Cloudeinführungsplan](./plan-intro.md): Entwickeln Sie einen Cloudeinführungsplan für das Change Management im Zusammenhang mit digitalen Ressourcen, Qualifikationen und der Organisation.                        |
+| <br> ![1](../_images/icons/1.png)     | [Digitale Ressource](../digital-estate/rationalize.md): Erfassen und rationalisieren Sie Ihre digitalen Ressourcen basierend auf Annahmen, die an den Beweggründen und Geschäftsergebnissen ausgerichtet sind.                                |
+| <br> ![2](../_images/icons/2.png)     | [Erstausrichtung der Organisation](./initial-org-alignment.md): Entwickeln Sie einen Plan für die Erstausrichtung der Organisation, um den Einführungsplan zu unterstützen.                                |
+| <br> ![3](../_images/icons/3.png)     | [Plan für die Qualifikationsbereitschaft](./adapt-roles-skills-processes.md): Erstellen Sie einen Plan für den Umgang mit Qualifikationslücken.                                |
+| <br> ![4](../_images/icons/4.png)      | [Cloudeinführungsplan](./plan-intro.md): Entwickeln Sie einen Cloudeinführungsplan für das Change Management im Zusammenhang mit digitalen Ressourcen, Qualifikationen und der Organisation.                        |
 
 Laden Sie die [Strategie- und Planungsvorlage des Frameworks für die Cloudeinführung](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) herunter, und erfassen Sie die Ergebnisse der einzelnen Aufgaben, während Sie Ihre Cloudeinführungsstrategie ausarbeiten. Erfahren Sie auch etwas über die [fünf Phasen der Cloudrationalisierung](../digital-estate/5-rs-of-rationalization.md), um Ihren Cloudeinführungsplan zu erstellen.
