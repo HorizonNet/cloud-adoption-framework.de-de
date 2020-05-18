@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 79ba055381ccdcb5a70fb24f5da3554a8652fc97
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7f232b6af4dc501b775d99a567cdca11dc0500a2
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80998018"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223421"
 ---
 # <a name="organize-and-manage-multiple-azure-subscriptions"></a>Organisieren und Verwalten mehrerer Azure-Abonnements
 
@@ -22,7 +22,7 @@ Wenn Sie nur über wenige Abonnements verfügen, ist deren unabhängige Verwaltu
 
 Azure-Verwaltungsgruppen ermöglichen eine effiziente Verwaltung von Zugriff, Richtlinien und Compliance für die Abonnements einer Organisation. Jede Verwaltungsgruppe ist ein Container für ein oder mehrere Abonnements.
 
-Verwaltungsgruppen werden in einer einzigen Hierarchie angeordnet. Sie definieren diese Hierarchie in Ihrem Azure AD-Mandanten, um sie an der Struktur und den Anforderungen Ihrer Organisation auszurichten. Die oberste Ebene wird als *Stammverwaltungsgruppe* bezeichnet. Sie können bis zu sechs Ebenen von Verwaltungsgruppen in der Hierarchie definieren. Jedes Abonnement gehört nur zu einer einzigen Verwaltungsgruppe.
+Verwaltungsgruppen werden in einer einzigen Hierarchie angeordnet. Sie definieren diese Hierarchie in Ihrem Azure AD-Mandanten, um sie an der Struktur und den Anforderungen Ihrer Organisation auszurichten. Die oberste Ebene wird als _Stammverwaltungsgruppe_ bezeichnet. Sie können bis zu sechs Ebenen von Verwaltungsgruppen in der Hierarchie definieren. Jedes Abonnement gehört nur zu einer einzigen Verwaltungsgruppe.
 
 Der Verwaltungsbereich von Azure umfasst vier Ebenen:
 
@@ -57,7 +57,7 @@ Wenn Sie davon ausgehen, dass Ihre Azure-Umgebung wächst, sollten Sie jetzt Ver
 Im Anschluss folgen einige einfache Beispiele für die Trennung verschiedener Workloads mithilfe von Verwaltungsgruppen:
 
 - **Produktions- und Nichtproduktionsworkloads:** Verwenden Sie Verwaltungsgruppen, um die Verwaltung verschiedener Rollen und Richtlinien für Produktions- und Nichtproduktionsabonnements zu vereinfachen. Beispielsweise können Nichtproduktionsabonnements Entwicklern Zugriff für Mitwirkende gewähren, während sie in der Produktion nur Lesezugriff haben.
-- **Interne Dienste bzw. externe Dienste:** Unternehmen haben oft unterschiedliche Anforderungen, Richtlinien und Rollen für interne Dienste und externe kundenorientierte Dienste.
+- **Interne Dienste und externe Dienste:** Unternehmen haben oft unterschiedliche Anforderungen, Richtlinien und Rollen für interne Dienste und externe kundenorientierte Dienste.
 
 ## <a name="related-resources"></a>Zugehörige Ressourcen
 

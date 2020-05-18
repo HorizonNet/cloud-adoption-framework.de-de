@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 18eef9f270e4c9ab8b2ee31268e46f0d4d929e34
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b92f9593c0d35f4c73dc17733d1ae57dbbe599b4
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995529"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220259"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Beschleunigung der Bereitstellung – Beispiele für Richtlinienanweisungen
 
@@ -42,7 +42,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine konfigu
 - Wichtige Metriken und Diagnosemaßnahmen werden für alle Produktionssysteme und Komponenten identifiziert. Überwachungs- und Diagnosetools werden auf diese Systeme angewendet und regelmäßig von Mitarbeitern im Betrieb überwacht.
 - Der Betrieb kann auch den Einsatz von Überwachungs- und Diagnosetools in produktionsfernen Umgebungen wie Staging und Qualitätskontrolle erwägen, um Systemprobleme bereits zu identifizieren, bevor sie in der Produktionsumgebung auftreten.
 
-**Potenzielle Entwurfsoptionen:** [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor), einschließlich Log Analytics und Application Insights, stellt Tools zum Sammeln und Analysieren von Telemetriedaten bereit, damit Sie die Leistung Ihrer Anwendungen besser verstehen und proaktiv Probleme identifizieren können, die sich auf die Anwendungen und die zugehörigen Ressourcen auswirken. Darüber hinaus werden im [Azure-Aktivitätsprotokoll](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) alle auf Plattformebene vorgenommenen Änderungen erfasst, weshalb das Protokoll auf nicht konforme Änderungen überwacht und überprüft werden muss.
+**Potenzielle Entwurfsoptionen:** [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor), einschließlich Log Analytics und Application Insights, stellt Tools zum Sammeln und Analysieren von Telemetriedaten bereit, damit Sie die Leistung Ihrer Anwendungen besser verstehen und proaktiv Probleme identifizieren können, die sich auf die Anwendungen und die zugehörigen Ressourcen auswirken. Darüber hinaus werden im [Azure-Aktivitätsprotokoll](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) alle auf Plattformebene vorgenommenen Änderungen erfasst. Deshalb sollte es auf nicht konforme Änderungen überwacht und überprüft werden.
 
 ## <a name="configuration-security-reviews"></a>Sicherheitsüberprüfungen der Konfiguration
 
@@ -56,7 +56,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine konfigu
 
 Verwenden Sie die in diesem Artikel erwähnten Beispiele als Ausgangspunkt für die Entwicklung von Richtlinien, die bestimmte Geschäftsrisiken behandeln, die Ihren Plänen für die Einführung der Cloud entsprechen.
 
-Laden Sie die Vorlage [Identitätsbaseline](../identity-baseline/template.md) herunter, um mit der Entwicklung eigener, benutzerdefinierter Richtlinienanweisungen im Zusammenhang mit der Identitätsverwaltung zu beginnen.
+Wenn Sie mit der Entwicklung Ihrer eigenen, benutzerdefinierten Richtlinienanweisungen für die Identitätsbaseline beginnen möchten, laden Sie die [Vorlage zur Disziplin „Identitätsbaseline“](../identity-baseline/template.md) herunter.
 
 Um die Einführung dieser Disziplin zu beschleunigen, wählen Sie den [umsetzbaren Governanceleitfaden](../guides/index.md) aus, der am besten zu Ihrer Umgebung passt. Ändern Sie dann den Entwurf, um Ihre speziellen Entscheidungen für Unternehmensrichtlinien zu integrieren.
 

@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: ba648a2e26085b8a13b698097c54d184c27f8fff
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 975248025ff170ff872fdd5970f548a8fc83c953
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433328"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215397"
 ---
 # <a name="create-your-initial-azure-subscriptions"></a>Erstellen Ihrer anfänglichen Azure-Abonnements
 
@@ -23,14 +23,16 @@ Beginnen Sie mit der Einführung von Azure, indem Sie eine erste Gruppe von Abon
 Erstellen Sie zunächst zwei Abonnements:
 
 - Erstellen Sie ein Azure-Abonnement, das Ihre Produktionsworkloads enthält.
-- Erstellen Sie ein zweites Abonnement, das als Nichtproduktionsumgebung (Dev/Test) verwendet wird. Nutzen Sie dazu ein [Angebot für Azure Dev/Test](https://azure.microsoft.com/pricing/dev-test), um die Kosten niedrig zu halten.
+- Erstellen Sie ein zweites Abonnement, das als Nichtproduktionsumgebung (Dev/Test) verwendet werden soll. Nutzen Sie dazu ein [Angebot für Azure Dev/Test](https://azure.microsoft.com/pricing/dev-test), um die Kosten niedrig zu halten.
 
 ![Ein anfängliches Abonnementmodell, das Schlüssel neben Feldern mit der Bezeichnung „Produktion“ und „Nichtproduktion“ zeigt](../../_images/ready/initial-subscription-model.png)
+
+<!-- docsTest:ignore Dev/Test -->
 
 Dieser Ansatz hat viele Vorteile:
 
 - Die Verwendung separater Abonnements für Produktions- und Nichtproduktionsumgebungen schafft eine Trennung, durch die die Verwaltung Ihrer Ressourcen einfacher und sicherer wird.
-- Azure bietet spezielle Dev/Test-Abonnementangebote für Nichtproduktionsworkloads. Diese Angebote bieten vergünstigte Preise für Azure-Dienste und -Softwarelizenzen.
+- Abonnementangebote für Azure Dev/Test stehen für Nichtproduktionsworkloads zur Verfügung. Diese Angebote bieten vergünstigte Preise für Azure-Dienste und -Softwarelizenzen.
 - Ihre Produktions-und Nichtproduktionsumgebungen verfügen wahrscheinlich über unterschiedliche Azure-Richtliniensätze. Mit separaten Abonnements lassen sich die verschiedenen Richtlinien ganz einfach auf Abonnementebene anwenden.
 - Sie können bestimmte Azure-Ressourcentypen in Ihrem Nichtproduktionsabonnement zu Testzwecken zulassen. Diese Ressourcenanbieter können Sie in Ihrem Nichtproduktionsabonnement aktivieren, ohne sie in der Produktionsumgebung verfügbar zu machen.
 - Dev/Test-Abonnements können als isolierte Sandboxumgebungen verwendet werden. Mit diesen Sandboxes können Administratoren und Entwickler schnell vollständige Sätze von Azure-Ressourcen erstellen und löschen. Diese Isolation ist auch nützlich für den Schutz und die Sicherheit von Daten.
@@ -38,7 +40,7 @@ Dieser Ansatz hat viele Vorteile:
 
 ## <a name="sandbox-subscriptions"></a>Sandboxabonnements
 
-Wenn Ihre Strategie für die Cloudeinführung Innovationsziele beinhaltet, sollten Sie die Erstellung eines oder mehrerer Sandboxabonnements in Erwägung ziehen. Sie können Sicherheitsrichtlinien anwenden, um diese Testabonnements von Ihren Produktions- und Nichtproduktionsumgebungen zu isolieren. In diesen isolierten Umgebungen können Benutzer problemlos mit Azure-Funktionen experimentieren. Verwenden Sie zum Erstellen dieser Abonnements ein Azure Dev/Test-Angebot.
+Wenn Innovationsziele ein Teil Ihrer Strategie für die Cloudeinführung sind, erwägen Sie die Erstellung eines oder mehrerer Sandboxabonnements. Sie können Sicherheitsrichtlinien anwenden, um diese Testabonnements von Ihren Produktions- und Nichtproduktionsumgebungen zu isolieren. In diesen isolierten Umgebungen können Benutzer problemlos mit Azure-Funktionen experimentieren. Verwenden Sie zum Erstellen dieser Abonnements ein Azure Dev/Test-Angebot.
 
 ![Ein anfängliches Abonnementmodell, das Schlüssel neben Feldern mit der Bezeichnung „Produktion“, „Nichtproduktion“ und „Sandboxes“ zeigt](../../_images/ready/initial-subscription-model-with-sandboxes.png)
 
@@ -46,7 +48,7 @@ Wenn Ihre Strategie für die Cloudeinführung Innovationsziele beinhaltet, sollt
 
 Wenn Sie planen, **innerhalb von 24 Monaten mehr als 1.000 VMs oder Compute-Instanzen in der Cloud** zu hosten, erstellen Sie ein weiteres Azure-Abonnement für gemeinsame genutzte Dienste. So sind Sie von vornherein darauf vorbereitet, Ihre endgültige Unternehmensarchitektur zu unterstützen.
 
-![Ein anfängliches Abonnementmodell, das Schlüssel neben Feldern mit der Bezeichnung „Produktion“, „Nichtproduktion“ und „Gemeinsam genutzte Dienste“ zeigt](../../_images/ready/initial-subscription-model-with-shared-services.png)
+![Ein anfängliches Abonnementmodell, das Schlüssel neben Feldern mit der Bezeichnung „Produktion“ und „Gemeinsam genutzte Dienste“ zeigt](../../_images/ready/initial-subscription-model-with-shared-services.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
 

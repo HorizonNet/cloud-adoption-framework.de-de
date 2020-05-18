@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: ed5c0edf9ad7132c51311641d054bcfa9d9b0315
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 37a8a55762dc1ddb49e41673da1497cef4a1606f
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997057"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223642"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc smarthotel SHWEB SHWCF -->
 
@@ -41,7 +41,7 @@ Das Cloudteam von Contoso hat sich folgende Ziele für die Migration gesetzt. An
 
 **Anforderungen** | **Details**
 --- | ---
-**App** | Die App wird in Azure so wichtig bleiben wie heute.<br/><br/> Sie sollte die gleichen Leistungsmerkmale wie aktuell in VMware aufweisen.<br/><br/> Das Team möchte nicht in die App investieren. Im Moment möchten die Administratoren die App sicher in die Cloud verschieben.<br/><br/> Die Unterstützung für Windows Server 2008 R2, unter dem die App derzeit läuft, möchte das Team einstellen.<br/><br/> Das Team möchte weg von SQL Server 2008 R2 und hin zu einer modernen PaaS-Datenbankplattform, die den Verwaltungsaufwand minimiert.<br/><br/> Seine Investitionen in die SQL Server-Lizenzierung und in die Software Assurance möchte Contoso nutzen, wo immer dies möglich ist.<br/><br/> Darüber hinaus möchte Contoso die Auswirkungen des Single Point of Failure in der Webebene abschwächen.
+**App** | Die App wird in Azure so wichtig bleiben wie heute. <br><br> Sie sollte die gleichen Leistungsmerkmale wie aktuell in VMware aufweisen. <br><br> Das Team möchte nicht in die App investieren. Im Moment möchten die Administratoren die App sicher in die Cloud verschieben. <br><br> Die Unterstützung für Windows Server 2008 R2, unter dem die App derzeit läuft, möchte das Team einstellen. <br><br> Das Team möchte weg von SQL Server 2008 R2 und hin zu einer modernen PaaS-Datenbankplattform, die den Verwaltungsaufwand minimiert. <br><br> Seine Investitionen in die SQL Server-Lizenzierung und in die Software Assurance möchte Contoso nutzen, wo immer dies möglich ist. <br><br> Darüber hinaus möchte Contoso die Auswirkungen des Single Point of Failure in der Webebene abschwächen.
 **Einschränkungen** | Die App besteht aus einer ASP.NET-App und einem WCF-Dienst, die auf derselben VM ausgeführt werden. Sie möchten diese Komponenten mithilfe von Azure App Service auf zwei Web-Apps verteilen.
 **Azure** | Contoso möchte die App zu Azure migrieren, jedoch nicht auf VMs ausführen. Sowohl in der Web- als auch in der Datenschicht soll auf Azure-PaaS-Dienste zurückgegriffen werden.
 **DevOps** | Contoso möchte auf ein DevOps-Modell umsteigen und Azure DevOps für Builds und Releasepipelines verwenden.
@@ -79,8 +79,10 @@ Contoso wertet den vorgeschlagen Entwurf durch Erstellen einer Liste mit Vor- un
 
 **Aspekt** | **Details**
 --- | ---
-**Vorteile** | Der Code der SmartHotel360-App erfordert für die Migration zu Azure keine Änderungen.<br/><br/> Contoso kann seine Investition in die Software Assurance mit dem Azure-Hybridvorteil für SQL Server und Windows Server nutzen.<br/><br/> Nach der Migration muss Windows Server 2008 R2 nicht unterstützt werden. Weitere Informationen finden Sie in der [Microsoft Lifecycle-Richtlinie](https://aka.ms/lifecycle).<br/><br/> Contoso kann die Webebene der App mit mehreren Instanzen konfigurieren, sodass sie kein Single Point of Failure mehr ist.<br/><br/> Die Datenbank ist nicht mehr auf das veraltete SQL Server 2008 R2 angewiesen.<br/><br/> SQL-Datenbank unterstützt die technischen Anforderungen. Contoso bewertete die lokale Datenbank mithilfe des Datenmigrations-Assistenten und stellte fest, dass sie kompatibel ist.<br/><br/> Azure SQL-Datenbank verfügt über eine integrierte Fehlertoleranz, die Contoso nicht einrichten muss. Dadurch wird sichergestellt, dass die Datenschicht kein Single Point of Failover mehr ist.<br/><br/> Wenn Contoso den Azure Database Migration Service zur Migration der Datenbank verwendet, verfügt das Unternehmen über die entsprechende Infrastruktur für die Migration umfangreicher Datenbanken.
-**Nachteile** | Azure App Service unterstützt nur eine App-Bereitstellung für jede Web-App. Dies bedeutet, dass zwei Web-Apps bereitgestellt werden müssen (eine für die Website und eine für den WCF-Dienst).<br/><br/>
+**Vorteile** | Der Code der SmartHotel360-App erfordert für die Migration zu Azure keine Änderungen. <br><br> Contoso kann seine Investition in die Software Assurance mit dem Azure-Hybridvorteil für SQL Server und Windows Server nutzen. <br><br> Nach der Migration muss Windows Server 2008 R2 nicht unterstützt werden. Weitere Informationen finden Sie in der [Microsoft Lifecycle-Richtlinie](https://aka.ms/lifecycle). <br><br> Contoso kann die Webebene der App mit mehreren Instanzen konfigurieren, sodass sie kein Single Point of Failure mehr ist. <br><br> Die Datenbank ist nicht mehr auf das veraltete SQL Server 2008 R2 angewiesen. <br><br> SQL-Datenbank unterstützt die technischen Anforderungen. Contoso bewertete die lokale Datenbank mithilfe des Datenmigrations-Assistenten und stellte fest, dass sie kompatibel ist. <br><br> Azure SQL-Datenbank verfügt über eine integrierte Fehlertoleranz, die Contoso nicht einrichten muss. Dadurch wird sichergestellt, dass die Datenschicht kein Single Point of Failover mehr ist. <br><br> Wenn Contoso den Azure Database Migration Service zur Migration der Datenbank verwendet, verfügt das Unternehmen über die entsprechende Infrastruktur für die Migration umfangreicher Datenbanken.
+**Nachteile** | Azure App Service unterstützt nur eine App-Bereitstellung für jede Web-App. Dies bedeutet, dass zwei Web-Apps bereitgestellt werden müssen (eine für die Website und eine für den WCF-Dienst).
+
+<br>
 
 <!-- markdownlint-enable MD033 -->
 
@@ -113,7 +115,7 @@ Für die Ausführung dieses Szenarios benötigt Contoso Folgendes:
 
 **Anforderungen** | **Details**
 --- | ---
-**Azure-Abonnement** | Contoso hat in einem früheren Artikel Abonnements erstellt. Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/pricing/free-trial) erstellen.<br/><br/> Wenn Sie ein kostenloses Konto erstellen, sind Sie der Administrator Ihres Abonnements und können alle Aktionen durchführen.<br/><br/> Falls Sie ein vorhandenes Abonnement verwenden und nicht der Administrator sind, müssen Sie mit dem Administrator zusammenarbeiten, damit er Ihnen Berechtigungen vom Typ „Besitzer“ oder „Mitwirkender“ zuweist.
+**Azure-Abonnement** | Contoso hat in einem früheren Artikel Abonnements erstellt. Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/pricing/free-trial) erstellen. <br><br> Wenn Sie ein kostenloses Konto erstellen, sind Sie der Administrator Ihres Abonnements und können alle Aktionen durchführen. <br><br> Falls Sie ein vorhandenes Abonnement verwenden und nicht der Administrator sind, müssen Sie mit dem Administrator zusammenarbeiten, damit er Ihnen Berechtigungen vom Typ „Besitzer“ oder „Mitwirkender“ zuweist.
 **Azure-Infrastruktur** | [Weitere Informationen](./contoso-migration-infrastructure.md) zur Vorgehensweise von Contoso beim Einrichten einer Azure-Infrastruktur.
 
 <!--markdownlint-enable MD033 -->
@@ -310,7 +312,7 @@ Als Nächstes konfigurieren die Contoso-Administratoren Azure DevOps für die Du
 
     ![Speichern von WCF](./media/contoso-migration-refactor-web-app-sql/pipeline16.png)
 
-17. Sie wählen **Pipeline** > **Phasen** > **+ Hinzufügen** aus, um eine Umgebung für **SHWEB-EUS2** hinzuzufügen. Sie wählen eine weitere Azure App Service-Bereitstellung aus.
+17. Sie wählen **Pipeline** > **Phasen**, **+ Hinzufügen** aus, um eine Umgebung für **SHWEB-EUS2** hinzuzufügen. Sie wählen eine weitere Azure App Service-Bereitstellung aus.
 
     ![Hinzufügen einer Umgebung](./media/contoso-migration-refactor-web-app-sql/pipeline17.png)
 

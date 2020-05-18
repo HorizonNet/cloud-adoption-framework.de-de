@@ -7,12 +7,12 @@ ms.date: 04/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ba3ac825fb43a9c185d86ef9695afc52c9437c56
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a40fb364df481df9c75ade25f18b9a3a1a0468fb
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396234"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223710"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc OSTICKETWEB OSTICKETMYSQL osticket contosoosticket trafficmanager InnoDB binlog DBHOST DBUSER CNAME -->
 
@@ -89,7 +89,7 @@ Contoso wird den Migrationsprozess wie folgt abschließen:
 [Azure App Service](https://azure.microsoft.com/services/app-service) | Der Dienst wird ausgeführt und skaliert Anwendungen mit dem Azure-PaaS-Dienst für Websites. | Der Preis richtet sich nach der Größe der Instanzen und den benötigten Features. [Weitere Informationen](https://azure.microsoft.com/pricing/details/app-service/windows)
 [Traffic Manager](https://azure.microsoft.com/services/traffic-manager) | Ein Lastenausgleichsmodul, das DNS verwendet, um Benutzer zu Azure oder externen Websites und Diensten zu leiten. | Der Preis richtet sich nach der Anzahl der empfangenen DNS-Abfragen und der Anzahl der überwachten Endpunkte. | [Weitere Informationen](https://azure.microsoft.com/pricing/details/traffic-manager)
 [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Der Azure Database Migration Service ermöglicht die nahtlose Migration von mehreren Datenbankquellen zu Azure-Datenplattformen bei minimaler Ausfallzeit. | Informieren Sie sich über die [unterstützten Regionen](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability) und die [Preise für den Database Migration Service](https://azure.microsoft.com/pricing/details/database-migration).
-[Azure Database for MySQL](https://docs.microsoft.com/azure/mysql) | Die Datenbank basiert auf der Open Source-MySQL-Server-Engine. Sie stellt eine vollständig verwaltete, unternehmensgerechte MySQL Community-Edition als Database-as-a-Service für die Entwicklung und Bereitstellung von Apps bereit. | Der Preis richtet sich nach den Compute-, Speicher- und Sicherungsanforderungen. [Weitere Informationen](https://azure.microsoft.com/pricing/details/mysql)
+[Azure Database for MySQL](https://docs.microsoft.com/azure/mysql) | Die Datenbank basiert auf der Open Source-MySQL-Server-Engine. Sie stellt eine vollständig verwaltete, unternehmensgerechte MySQL Community-Datenbank für die Entwicklung und Bereitstellung von Apps bereit. | Der Preis richtet sich nach den Compute-, Speicher- und Sicherungsanforderungen. [Weitere Informationen](https://azure.microsoft.com/pricing/details/mysql)
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -99,7 +99,7 @@ Für die Ausführung dieses Szenarios benötigt Contoso Folgendes.
 
 **Anforderungen** | **Details**
 --- | ---
-**Azure-Abonnement** | Abonnements wurden in einem früheren Artikel dieser Reihe erstellt. Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/pricing/free-trial) erstellen.<br/><br/> Wenn Sie ein kostenloses Konto erstellen, sind Sie der Administrator Ihres Abonnements und können alle Aktionen durchführen.<br/><br/> Falls Sie ein vorhandenes Abonnement verwenden und nicht der Administrator sind, müssen Sie mit dem Administrator zusammenarbeiten, damit er Ihnen Berechtigungen vom Typ „Besitzer“ oder „Mitwirkender“ zuweist.
+**Azure-Abonnement** | Abonnements wurden in einem früheren Artikel dieser Reihe erstellt. Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/pricing/free-trial) erstellen. <br><br> Wenn Sie ein kostenloses Konto erstellen, sind Sie der Administrator Ihres Abonnements und können alle Aktionen durchführen. <br><br> Falls Sie ein vorhandenes Abonnement verwenden und nicht der Administrator sind, müssen Sie mit dem Administrator zusammenarbeiten, damit er Ihnen Berechtigungen vom Typ „Besitzer“ oder „Mitwirkender“ zuweist.
 **Azure-Infrastruktur** | Contoso richtet die Azure-Infrastruktur ein, wie in [Azure infrastructure for migration (Azure-Infrastruktur für die Migration)](./contoso-migration-infrastructure.md) beschrieben.
 
 <!-- markdownlint-enable MD033 -->
@@ -205,7 +205,7 @@ Zusammenfassend müssen Sie die folgenden Schritte ausführen:
 
 - Sicherstellen, dass alle Voraussetzungen für die Migration erfüllt sind:
   - Die Version der MySQL-Serverquelle muss mit der Version übereinstimmen, die von Azure Database for MySQL unterstützt wird. Azure Database for MySQL unterstützt die MySQL Community Edition, die InnoDB-Engine und die Migration zwischen Quelle und Ziel derselben Version.
-  - Aktivieren Sie die binäre Protokollierung in „my.ini“ (Windows) oder „my.cnf“ (Unix). Wenn Sie dies versäumen, tritt im Migrations-Assistenten ein `Error in binary logging. Variable binlog_row_image has value 'minimal'. Please change it to 'full'. For more details see https://go.microsoft.com/fwlink/?linkid=873009`-Fehler auf.
+  - Aktivieren Sie die binäre Protokollierung in „my.ini“ (Windows) oder „my.cnf“ (Unix). Wenn Sie dies versäumen, tritt im Migrations-Assistenten ein Fehler des Typs `Error in binary logging. Variable binlog_row_image has value 'minimal'. Please change it to 'full'. For more information, see https://go.microsoft.com/fwlink/?linkid=873009` auf.
   - Der Benutzer muss über die `ReplicationAdmin`-Rolle verfügen.
   - Migrieren Sie die Datenbankschemas ohne Fremdschlüssel und Trigger.
 - Erstellen Sie ein virtuelles Netzwerk, das über ExpressRoute oder VPN mit Ihrem lokalen Netzwerk verbunden ist.
@@ -351,7 +351,7 @@ Im letzten Schritt des Migrationsprozesses konfigurieren die Administratoren von
 
     ![Konfigurieren der App](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app5.png)
 
-7. Contoso wünscht einen DNS-Namen, der leicht zu merken ist. Das Unternehmen erstellt einen Aliasdatensatz (CNAME) **osticket.contoso.com**, der auf den Traffic Manager-Namen im DNS seiner Domänencontroller zeigt.
+7. Contoso wünscht einen DNS-Namen, der leicht zu merken ist. Das Unternehmen erstellt einen Aliasdatensatz (CNAME) `osticket.contoso.com`, der auf den Traffic Manager-Namen im DNS seiner Domänencontroller verweist.
 
     ![Konfigurieren der App](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app6.png)
 

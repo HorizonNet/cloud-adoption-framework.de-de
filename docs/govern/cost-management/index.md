@@ -1,6 +1,6 @@
 ---
 title: Übersicht über die Disziplin „Kostenverwaltung“
-description: Hier wird der Ansatz zur Entwicklung der Disziplin „Kostenverwaltung“ als Teil einer Cloudgovernancestrategie beschrieben.
+description: Hier wird der Ansatz zur Entwicklung einer Disziplin des Typs „Kostenverwaltung“ (Cost Management) als Teil einer Cloudgovernancestrategie beschrieben.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -9,19 +9,19 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: ebb0f0899ad8ea4e5f26c43b0486c56560b4dd14
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 4b0d1c727a0b224071d008e82af16a142e98d60a
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "77708868"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220735"
 ---
 # <a name="cost-management-discipline-overview"></a>Übersicht über die Disziplin „Kostenverwaltung“
 
-„Kostenverwaltung“ ist eine der [fünf Disziplinen von Cloud Governance](../governance-disciplines.md) innerhalb des [CAF-Governancemodells (Cloud Adoption Framework)](../index.md). Für viele Kunden ist die Kostenkontrolle bei der Einführung von Cloudtechnologien ein wichtiges Thema. Das Gleichgewicht zwischen Leistungsanforderungen, Einführungsrhythmus und Kosten der Clouddienste kann eine Herausforderung darstellen. Dies ist besonders relevant bei großen Unternehmenstransformationen, bei denen Cloudtechnologien implementiert werden. In diesem Abschnitt wird der Ansatz zur Entwicklung einer Disziplin „Kostenverwaltung“ als Teil einer Cloud Governance-Strategie beschrieben.
+Die Disziplin „Kostenverwaltung“ (Cost Management) ist eine der [fünf Disziplinen von Cloud Governance](../governance-disciplines.md) innerhalb des [CAF-Governancemodells (Cloud Adoption Framework)](../index.md). Für viele Kunden ist die Kontrolle ihrer Kosten bei der Einführung von Cloudtechnologien ein wichtiges Thema. Das Gleichgewicht zwischen Leistungsanforderungen, Einführungsrhythmus und Kosten der Clouddienste kann eine Herausforderung darstellen. Dies ist besonders relevant bei großen Unternehmenstransformationen, bei denen Cloudtechnologien implementiert werden. In diesem Abschnitt wird der Ansatz zur Entwicklung einer Disziplin „Kostenverwaltung“ als Teil einer Cloud Governance-Strategie beschrieben.
 
 > [!NOTE]
-> Die Kontrolle der Kostenverwaltung ersetzt nicht die bestehenden Geschäftsteams, Buchhaltungspraktiken und -verfahren, die an der finanziellen Verwaltung der IT-bezogenen Kosten in Ihrem Unternehmen beteiligt sind. Der Hauptzweck dieser Disziplin besteht darin, potenzielle Cloudrisiken im Zusammenhang mit IT-Ausgaben zu identifizieren und den Geschäfts- und IT-Teams, die für die Bereitstellung und Verwaltung von Cloudressourcen verantwortlich sind, eine Anleitung zur Risikominderung zu geben.
+> Die Disziplin „ Kostenverwaltung“ ersetzt nicht die bestehenden Geschäftsteams, Buchhaltungspraktiken und -verfahren, die an der finanziellen Verwaltung der IT-bezogenen Kosten in Ihrem Unternehmen beteiligt sind. Der Hauptzweck dieser Disziplin besteht darin, potenzielle Cloudrisiken im Zusammenhang mit IT-Ausgaben zu identifizieren und den Geschäfts- und IT-Teams, die für die Bereitstellung und Verwaltung von Cloudressourcen verantwortlich sind, eine Anleitung zur Risikominderung zu geben.
 
 Die Hauptzielgruppe für diesen Leitfaden sind die Cloudarchitekten Ihrer Organisation und andere Mitglieder Ihres Cloudgovernanceteams. Die Entscheidungen, Richtlinien und Prozesse, die sich aus dieser Disziplin ergeben, sollten jedoch die Einbeziehung von und Diskussion mit relevanten Mitgliedern Ihrer Geschäfts- und IT-Teams beinhalten, insbesondere diejenigen Führungskräften, die für den Besitz, die Verwaltung und die Bezahlung von cloudbasierten Workloads verantwortlich sind.
 
@@ -50,14 +50,15 @@ Die folgenden sechs Schritte helfen Ihnen bei der Definition von Governancericht
                         </div>
                     </div>
                     <div class="cardText" style="padding-left:0px;">
-                        <h3>Kostenverwaltungsvorlage</h3>
+                        <h3>Vorlage zur Disziplin „Kostenverwaltung“</h3>
                         <p class="x-hidden-focus">Laden Sie die Vorlage zur Dokumentation einer Disziplin vom Typ „Kostenverwaltung“ herunter.</p>
                     </div>
                 </div>
             </div>
         </div>
     </a>
-</li><li style="display: flex; flex-direction: column;">
+</li>
+<li style="display: flex; flex-direction: column;">
     <a href="./business-risks.md">
         <div class="cardSize">
             <div class="cardPadding" >
@@ -126,7 +127,7 @@ Die folgenden sechs Schritte helfen Ihnen bei der Definition von Governancericht
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Einsatzreife</h3>
-                        <p class="x-hidden-focus">Abstimmung der Einsatzreife der Cloudverwaltung mit den Phasen der Cloudeinführung.</p>
+                        <p class="x-hidden-focus">Stimmen Sie die Einsatzreife der Cloudverwaltung mit den Phasen der Cloudeinführung ab.</p>
                     </div>
                 </div>
             </div>

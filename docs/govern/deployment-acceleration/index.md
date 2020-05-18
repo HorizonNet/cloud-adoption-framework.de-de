@@ -9,18 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
 layout: LandingPage
-ms.openlocfilehash: 3c83e40ab6d08b461095385ac58cf64d74da86a9
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 369e12abcf0325ed44719ccb76bf0032b611f8f1
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "77708970"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220429"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>Übersicht über die Disziplin der Beschleunigung der Bereitstellung
 
-„Beschleunigung der Bereitstellung“ ist eine der [fünf Disziplinen von Cloud Governance](../governance-disciplines.md) innerhalb des [CAF-Governancemodells (Cloud Adoption Framework)](../index.md). Diese Disziplin konzentriert sich auf das Festlegen von Richtlinien, mit denen die Ressourcenkonfiguration bzw. -bereitstellung gesteuert wird. Innerhalb der fünf Cloudgovernancedisziplinen schließt die Beschleunigung der Bereitstellung die Bereitstellung, Konfigurationsanpassung und Wiederverwendbarkeit von Skripts ein. Zu diesem Zweck können manuelle Aktivitäten oder vollständig automatisierte DevOps-Aktivitäten zum Einsatz kommen. In beiden Fällen bleiben die Richtlinien größtenteils gleich. Während diese Disziplin im Lauf der Zeit ausgereifter wird, kann das Cloudgovernanceteam als Partner bei DevOps- und Bereitstellungsstrategien über wiederverwendbare Ressourcen Bereitstellungen beschleunigen und Hindernisse bei der Cloudeinführung entfernen.
+„Beschleunigung der Bereitstellung“ ist eine der [fünf Disziplinen der Cloudgovernance](../governance-disciplines.md) innerhalb des [CAF-Governancemodells (Cloud Adoption Framework)](../index.md). Diese Disziplin konzentriert sich auf das Festlegen von Richtlinien, mit denen die Ressourcenkonfiguration bzw. -bereitstellung gesteuert wird. Innerhalb der fünf Disziplinen der Cloudgovernance umfasst die Disziplin „Beschleunigung der Bereitstellung“ die Bereitstellung, Konfigurationsanpassung und Wiederverwendbarkeit von Skripts. Zu diesem Zweck können manuelle Aktivitäten oder vollständig automatisierte DevOps-Aktivitäten zum Einsatz kommen. In beiden Fällen bleiben die Richtlinien größtenteils gleich. Während diese Disziplin im Lauf der Zeit ausgereifter wird, kann das Cloudgovernanceteam als Partner bei DevOps- und Bereitstellungsstrategien über wiederverwendbare Ressourcen Bereitstellungen beschleunigen und Hindernisse bei der Cloudeinführung entfernen.
 
-In diesem Artikel wird der Prozess der Beschleunigung der Bereitstellung beschrieben, dem ein Unternehmen bei der Planung, Erstellung, Einführung und Umsetzung der Implementierung einer Cloudlösung gegenübersteht. Es ist unmöglich, alle Anforderungen für Unternehmen in einem einzigen Dokument zu berücksichtigen. Daher werden in jedem Abschnitt dieses Artikels minimal erforderliche und mögliche Aktivitäten vorgeschlagen. Ziel dieser Aktivitäten ist, Sie beim Aufbau eines [Richtlinien-MVP](../policy-compliance/index.md#minimum-viable-product-mvp-for-policy) und bei der Einrichtung eines Frameworks für die Verbesserung der [inkrementellen Richtlinie](../policy-compliance/index.md#incremental-policy-growth) zu unterstützen. Das Cloudgovernanceteam muss entscheiden, wie groß die Investition in diese Aktivitäten zur Verbesserung der Position bezüglich der Beschleunigung der Bereitstellung sein soll.
+In diesem Artikel wird der Prozess zur Beschleunigung der Bereitstellung beschrieben, den ein Unternehmen bei der Planung, Erstellung, Einführung und Umsetzung der Implementierung einer Cloudlösung durchlaufen muss. Es ist unmöglich, alle Anforderungen für Unternehmen in einem einzigen Dokument zu berücksichtigen. Daher werden in jedem Abschnitt dieses Artikels minimal erforderliche und mögliche Aktivitäten vorgeschlagen. Ziel dieser Aktivitäten ist es, Sie beim Aufbau eines [Richtlinien-MVP](../policy-compliance/index.md#minimum-viable-product-mvp-for-policy) und bei der Einrichtung eines Frameworks für die [inkrementelle Verbesserung der Richtlinie](../policy-compliance/index.md#incremental-policy-growth) zu unterstützen. Das Cloudgovernanceteam muss entscheiden, wie viel in diese Aktivitäten zur Verbesserung der Position im Hinblick auf die Beschleunigung der Bereitstellung investiert werden soll.
 
 > [!NOTE]
 > Die Disziplin der Beschleunigung der Bereitstellung ersetzt nicht die vorhandenen IT-Teams, -Prozesse und -Verfahren, mit denen Ihr Unternehmen cloudbasierte Ressourcen effizient bereitstellen und konfigurieren kann. Der Hauptzweck dieser Disziplin ist es, potenzielle Geschäftsrisiken zu identifizieren und den für die Verwaltung Ihrer Ressourcen in der Cloud zuständigen IT-Mitarbeitern Hilfe bei der Risikominderung zu geben. Bei der Entwicklung von Governancerichtlinien und -prozessen ist darauf zu achten, dass die relevanten IT-Teams in Ihre Planungs- und Überprüfungsprozesse einbezogen werden.
@@ -52,14 +52,15 @@ Die folgenden sechs Schritte helfen Ihnen dabei, Governancerichtlinien zum Steue
                         </div>
                     </div>
                     <div class="cardText" style="padding-left:0px;">
-                        <h3>Vorlage zur Beschleunigung der Bereitstellung</h3>
+                        <h3>Vorlage zur Disziplin „Beschleunigung der Bereitstellung“</h3>
                         <p class="x-hidden-focus">Laden Sie die Vorlage zum Dokumentieren einer Disziplin vom Typ „Beschleunigung der Bereitstellung“ herunter.</p>
                     </div>
                 </div>
             </div>
         </div>
     </a>
-</li><li style="display: flex; flex-direction: column;">
+</li>
+<li style="display: flex; flex-direction: column;">
     <a href="./business-risks.md">
         <div class="cardSize">
             <div class="cardPadding" >
@@ -128,7 +129,7 @@ Die folgenden sechs Schritte helfen Ihnen dabei, Governancerichtlinien zum Steue
                     </div>
                     <div class="cardText" style="padding-left:0px;">
                         <h3>Einsatzreife</h3>
-                        <p class="x-hidden-focus">Abstimmung der Einsatzreife der Cloudverwaltung mit den Phasen der Cloudeinführung.</p>
+                        <p class="x-hidden-focus">Stimmen Sie die Einsatzreife der Cloudverwaltung mit den Phasen der Cloudeinführung ab.</p>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 ---
 title: 'Kostenmanagement: Prozesse für Richtlinienkonformität'
-description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um sich über einen Ansatz für die Erstellung von Prozessen zu informieren, die eine Governancedisziplin vom Typ „Kostenverwaltung“ unterstützen.
+description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um sich über einen Ansatz für die Erstellung von Prozessen zu informieren, die eine Disziplin vom Typ „Kostenmanagement“ unterstützen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,20 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1dc9a438a502a63c6c989f822330acd2ee7cef5f
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 85df89eb5cf17631e63441a806ab15bcfd94c326
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434679"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220684"
 ---
 # <a name="cost-management-policy-compliance-processes"></a>Kostenmanagement: Prozesse für Richtlinienkonformität
 
-In diesem Artikel wird eine Methode zum Erstellen von Prozessen erläutert, die eine Governancedisziplin für das [Kostenmanagement](./index.md) unterstützen. Die wirksame Governance der Cloud beginnt mit sich wiederholenden manuellen Prozessen zur Unterstützung der Richtlinieneinhaltung. Dies erfordert die regelmäßige Einbeziehung des Cloudgovernanceteams sowie interessierter Geschäftsbeteiligter, um Richtlinien zu überprüfen und zu aktualisieren und die Einhaltung von Richtlinien sicherzustellen. Darüber hinaus können viele laufende Überwachungs- und Durchsetzungsprozesse automatisiert oder durch Werkzeuge ergänzt werden, um den Kontrolloverhead zu reduzieren und schneller auf Abweichungen von der Richtlinie reagieren zu können.
+In diesem Artikel wird ein Ansatz zum Erstellen von Prozessen erläutert, die eine wirksame [Disziplin vom Typ „Kostenmanagement“](./index.md) unterstützen. Die wirksame Governance der Cloud beginnt mit sich wiederholenden manuellen Prozessen zur Unterstützung der Richtlinieneinhaltung. Dies erfordert die regelmäßige Einbeziehung des Cloudgovernanceteams sowie interessierter Geschäftsbeteiligter, um Richtlinien zu überprüfen und zu aktualisieren und die Einhaltung von Richtlinien sicherzustellen. Darüber hinaus können viele laufende Überwachungs- und Durchsetzungsprozesse automatisiert oder durch Werkzeuge ergänzt werden, um den Kontrolloverhead zu reduzieren und schneller auf Abweichungen von der Richtlinie reagieren zu können.
 
 ## <a name="planning-review-and-reporting-processes"></a>Planungs-, Prüfungs- und Berichterstellungsprozesse
 
-Die besten Tools für das Kostenmanagement in der Cloud sind nur so gut wie die Prozesse und Richtlinien, durch die sie unterstützt werden. Nachstehend sind eine Reihe von Beispielprozessen ausgeführt, die häufig im Rahmen der Disziplin „Kostenmanagement“ verwendet werden. Beim Planen der Prozesse, die Ihnen die fortgesetzte Aktualisierung der Kostenrichtlinie aufgrund von geschäftlichen Änderungen und Feedback von den Geschäftsteams gemäß dem Kostengovernanceleitfaden erlauben, können Sie diese Beispiele als Ausgangspunkt verwenden.
+Die besten Tools für das Kostenmanagement in der Cloud sind nur so gut wie die Prozesse und Richtlinien, durch die sie unterstützt werden. Nachstehend sind eine Reihe von Beispielprozessen ausgeführt, die häufig im Rahmen der Disziplin „Kostenmanagement“ verwendet werden. Beim Planen der Prozesse, die Ihnen die fortgesetzte Aktualisierung der Kostenrichtlinie aufgrund von geschäftlichen Änderungen und Feedback von den Geschäftsteams (gemäß dem Kostengovernanceleitfaden) erlauben, können Sie diese Beispiele als Ausgangspunkt verwenden.
 
 **Anfängliche Risikobewertung und Planung:** Im Rahmen der ersten Einführung der Disziplin „Kostenmanagement“ identifizieren Sie Ihre Kerngeschäftsrisiken und Toleranzen im Zusammenhang mit den Cloudkosten. Verwenden Sie diese Informationen, um budget- und kostenbezogene Risiken mit Mitgliedern Ihrer Geschäftsteams zu besprechen und einen grundlegenden Satz von Richtlinien zur Minimierung dieser Risiken zu entwickeln, um Ihre erste Governancestrategie zu formulieren.
 
@@ -43,7 +43,7 @@ Diese grundlegenden Prozesse tragen dazu bei, Ausgaben abzustimmen und eine Grun
 
 ## <a name="processes-for-ongoing-monitoring"></a>Prozesse zur fortlaufenden Überwachung
 
-Eine erfolgreiche Governancestrategie für das Kostenmanagement hängt vom Einblick in vergangene, aktuelle und geplante zukünftige cloudbezogene Ausgaben ab. Ohne die Möglichkeit, die relevanten Metriken und Daten Ihrer bestehenden Kosten zu analysieren, können Sie keine Veränderungen bei den Risiken und keine Verstöße gegen Ihre Risikotoleranzen erkennen. Für die oben genannten laufenden Governanceprozesse sind Qualitätsdaten erforderlich, um eine entsprechende Änderung der Richtlinie zu gewährleisten und Ihre Infrastruktur vor wechselnden Geschäftsanforderungen und wechselnder Cloudnutzung besser zu schützen.
+Eine erfolgreiche Strategie für das Kostenmanagement hängt vom Einblick in vergangene, aktuelle und geplante zukünftige cloudbezogene Ausgaben ab. Ohne die Möglichkeit, die relevanten Metriken und Daten Ihrer bestehenden Kosten zu analysieren, können Sie keine Veränderungen bei den Risiken und keine Verstöße gegen Ihre Risikotoleranzen erkennen. Für die oben genannten laufenden Governanceprozesse sind Qualitätsdaten erforderlich, um eine entsprechende Änderung der Richtlinie zu gewährleisten und Ihre Infrastruktur vor wechselnden Geschäftsanforderungen und wechselnder Cloudnutzung besser zu schützen.
 
 Stellen Sie sicher, dass Ihre IT-Teams automatisierte Systeme für die Überwachung Ihrer Cloudausgaben und zur Verwendung für nicht geplante Abweichungen von erwarteten Kosten implementiert haben. Richten Sie Berichterstellungs- und Warnsysteme ein, um die schnelle Erkennung und Minderung potenzieller Verstöße gegen Richtlinien sicherzustellen.
 
@@ -58,9 +58,9 @@ Hier einige Beispiele für Trigger:
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Dokumentieren Sie mit der Vorlage [Cloudverwaltung](./template.md) die Prozesse und Auslöser, die sich an dem aktuellen Cloudeinführungsplan orientieren.
+Verwenden Sie die [Vorlage zur Disziplin „Kostenmanagement“](./template.md) zum Dokumentieren der Prozesse und Auslöser, die sich an dem aktuellen Cloudeinführungsplan orientieren.
 
-Anleitungen zur Ausführung von Cloudverwaltungsrichtlinien in Abstimmung mit Einführungsplänen finden Sie im Artikel über die Disziplin „Kostenmanagement“.
+Anleitungen zur Ausführung von Kostenmanagementrichtlinien in Abstimmung mit Einführungsplänen finden Sie im Artikel über die Verbesserung der Disziplin „Kostenmanagement“.
 
 > [!div class="nextstepaction"]
 > [Verbesserung der Disziplin „Kostenmanagement“](./discipline-improvement.md)

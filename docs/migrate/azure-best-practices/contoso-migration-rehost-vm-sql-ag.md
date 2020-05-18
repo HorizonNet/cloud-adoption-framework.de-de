@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 6d59781c94355a6b5ca980950ca4f1e73108e818
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: ff7c476737bed0f079cbebac736506cb6801bfd8
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80996802"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223608"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc AOAG SQLAOG SQLAOGAVSET contosoadmin contosocloudwitness MSSQLSERVER BEPOOL contosovmsacc SHAOG NSGs inetpub iisreset -->
 
@@ -94,8 +94,8 @@ Contoso wertet den vorgeschlagen Entwurf durch Erstellen einer Liste mit Vor- un
 
 **Aspekt** | **Details**
 --- | ---
-**Vorteile** | WEBVM wird ohne Änderungen nach Azure verlagert, was die Migration vereinfacht.<br/><br/> Die SQL Server-Schicht wird auf SQL Server 2017 und Windows Server 2016 ausgeführt. Dadurch wird das derzeitige Betriebssystem Windows Server 2008 R2 außer Betrieb genommen, und die Ausführung von SQL Server 2017 unterstützt die technischen Anforderungen und Ziele von Contoso. IT bietet 100%-ige Kompatibilität, während SQL Server 2008 R2 ausgemustert wird.<br/><br/> Contoso kann seine Investition in die Software Assurance mit dem Azure-Hybridvorteil nutzen.<br/><br/> Ein hoch verfügbare SQL Server-Bereitstellung in Azure bietet Fehlertoleranz, sodass die App-Datenschicht kein Single Point of Failover mehr ist.
-**Nachteile** | Auf WEBVM wird Windows Server 2008 R2 ausgeführt. Das Betriebssystem wird für bestimmte Rollen von Azure unterstützt (Juli 2018). [Weitere Informationen](https://support.microsoft.com/help/2721672/microsoft-server-software-support-for-microsoft-azure-virtual-machines)<br/><br/> Die Webschicht der App bleibt ein Single Point of Failover.<br/><br/> Contoso muss die Webschicht weiterhin als virtuellen Azure-Computer unterstützen, anstatt auf einen verwalteten Dienst wie Azure App Service umzustellen.<br/><br/> Mit der gewählten Lösung muss Contoso weiterhin zwei virtuelle SQL Server-Computer verwalten, anstatt auf eine verwaltete Plattform wie die verwaltete Azure SQL-Datenbank-Instanz umzustellen. Zudem könnte Contoso mit Software Assurance seine vorhandenen Lizenzen gegen reduzierte Tarife der verwalteten Azure SQL-Datenbank-Instanz eintauschen.
+**Vorteile** | WEBVM wird ohne Änderungen nach Azure verlagert, was die Migration vereinfacht. <br><br> Die SQL Server-Schicht wird auf SQL Server 2017 und Windows Server 2016 ausgeführt. Dadurch wird das derzeitige Betriebssystem Windows Server 2008 R2 außer Betrieb genommen, und die Ausführung von SQL Server 2017 unterstützt die technischen Anforderungen und Ziele von Contoso. IT bietet 100%-ige Kompatibilität, während SQL Server 2008 R2 ausgemustert wird. <br><br> Contoso kann seine Investition in die Software Assurance mit dem Azure-Hybridvorteil nutzen. <br><br> Ein hoch verfügbare SQL Server-Bereitstellung in Azure bietet Fehlertoleranz, sodass die App-Datenschicht kein Single Point of Failover mehr ist.
+**Nachteile** | Auf WEBVM wird Windows Server 2008 R2 ausgeführt. Das Betriebssystem wird für bestimmte Rollen von Azure unterstützt (Juli 2018). [Weitere Informationen](https://support.microsoft.com/help/2721672/microsoft-server-software-support-for-microsoft-azure-virtual-machines) <br><br> Die Webschicht der App bleibt ein Single Point of Failover. <br><br> Contoso muss die Webschicht weiterhin als virtuellen Azure-Computer unterstützen, anstatt auf einen verwalteten Dienst wie Azure App Service umzustellen. <br><br> Mit der gewählten Lösung muss Contoso weiterhin zwei virtuelle SQL Server-Computer verwalten, anstatt auf eine verwaltete Plattform wie die verwaltete Azure SQL-Datenbank-Instanz umzustellen. Zudem könnte Contoso mit Software Assurance seine vorhandenen Lizenzen gegen reduzierte Tarife der verwalteten Azure SQL-Datenbank-Instanz eintauschen.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -104,7 +104,7 @@ Contoso wertet den vorgeschlagen Entwurf durch Erstellen einer Liste mit Vor- un
 **Service** | **Beschreibung** | **Kosten**
 --- | --- | ---
 [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Der Azure Database Migration Service ermöglicht die nahtlose Migration von mehreren Datenbankquellen zu Azure-Datenplattformen bei minimaler Ausfallzeit. | Informieren Sie sich über die [unterstützten Regionen](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability) und die [Preise für den Database Migration Service](https://azure.microsoft.com/pricing/details/database-migration).
-[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview) | Contoso nutzt den Azure Migrate-Dienst, um seine VMware-VMs zu bewerten. Azure Migrate bewertet die Eignung der Computer für die Migration. Der Dienst stellt Schätzungen zur Größe und zu den Kosten für die Ausführung in Azure bereit. | Ab Mai 2018 ist Azure Migrate ein kostenloser Dienst.
+[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) | Contoso nutzt den Azure Migrate-Dienst, um seine VMware-VMs zu bewerten. Azure Migrate bewertet die Eignung der Computer für die Migration. Der Dienst stellt Schätzungen zur Größe und zu den Kosten für die Ausführung in Azure bereit. | Ab Mai 2018 ist Azure Migrate ein kostenloser Dienst.
 
 ## <a name="migration-process"></a>Migrationsprozess
 
@@ -127,12 +127,12 @@ Für dieses Szenario benötigt Contoso Folgendes.
 
 <!-- markdownlint-disable MD033 -->
 
-**Anforderungen** | **Details**
---- | ---
-**Azure-Abonnement** | Contoso hat bereits in einem früheren Artikel dieser Reihe ein Abonnement erstellt. Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/pricing/free-trial) erstellen.<br/><br/> Wenn Sie ein kostenloses Konto erstellen, sind Sie der Administrator Ihres Abonnements und können alle Aktionen durchführen.<br/><br/> Falls Sie ein vorhandenes Abonnement verwenden und nicht der Administrator sind, müssen Sie mit dem Administrator zusammenarbeiten, damit er Ihnen Berechtigungen vom Typ „Besitzer“ oder „Mitwirkender“ zuweist.<br/><br/>
-**Azure-Infrastruktur** | Contoso richtet die Azure-Infrastruktur ein, wie in [Contoso – Bereitstellen einer Migrationsinfrastruktur](./contoso-migration-infrastructure.md) beschrieben.<br/><br/> Erfahren Sie mehr über bestimmte [Voraussetzungen](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prerequisites) für die Azure Migrate-Servermigration.
-**Lokale Server** | Der lokale vCenter-Server muss mit Version 5.5, 6.0, 6.5 oder 6.7 ausgeführt werden.<br/><br/> Ein ESXi-Host mit Version 5.5, 6.0, 6.5 oder 6.7.<br/><br/> Mindestens eine VMware-VM auf dem ESXi-Host.
-**Lokale VMs** | [Überprüfen Sie Linux-Computer](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros), deren Ausführung unter Azure unterstützt wird.
+| **Anforderungen** | **Details** |
+| --- | --- |
+| **Azure-Abonnement** | Contoso hat bereits in einem früheren Artikel dieser Reihe ein Abonnement erstellt. Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/pricing/free-trial) erstellen. <br><br> Wenn Sie ein kostenloses Konto erstellen, sind Sie der Administrator Ihres Abonnements und können alle Aktionen durchführen. <br><br> Falls Sie ein vorhandenes Abonnement verwenden und nicht der Administrator sind, müssen Sie mit dem Administrator zusammenarbeiten, damit er Ihnen Berechtigungen vom Typ „Besitzer“ oder „Mitwirkender“ zuweist. |
+| **Azure-Infrastruktur** | Contoso richtet die Azure-Infrastruktur ein, wie in [Contoso – Bereitstellen einer Migrationsinfrastruktur](./contoso-migration-infrastructure.md) beschrieben. <br><br> Hier erfahren Sie mehr über bestimmte [Voraussetzungen](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prerequisites) für Azure Migrate: Servermigration. |
+| **Lokale Server** | Auf dem lokalen vCenter-Server sollte Version 5.5, 6.0, 6.5 oder 6.7 ausgeführt werden. <br><br> Ein ESXi-Host mit Version 5.5, 6.0, 6.5 oder 6.7. <br><br> Mindestens eine VMware-VM auf dem ESXi-Host. |
+| **Lokale VMs** | [Überprüfen Sie Linux-Computer](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros), deren Ausführung unter Azure unterstützt wird. |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -579,7 +579,7 @@ Weitere Informationen finden Sie unter [Bewährte Sicherheitsmethoden für IaaS-
 
 Für die Geschäftskontinuität und Notfallwiederherstellung (Business Continuity & Disaster Recovery, BCDR) führt Contoso die folgenden Aktionen durch:
 
-- Contoso sichert die Daten mithilfe des Azure Backup-Diensts auf den virtuellen Computern WEBVM, SQLAOG1 und SQLAOG2, um Daten zu schützen. [Weitere Informationen](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup?toc=/azure/virtual-machines/linux/toc.json)
+- Contoso sichert die Daten mithilfe des Azure Backup-Diensts auf den virtuellen Computern WEBVM, SQLAOG1 und SQLAOG2, um Daten zu schützen. [Weitere Informationen](https://docs.microsoft.com/azure/backup/backup-overview)
 - Contoso erfährt auch, wie Azure Storage zum Sichern von SQL Server direkt im Blobspeicher verwendet wird. [Weitere Informationen](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-use-storage-sql-server-backup-restore)
 - Contoso repliziert die App-VMs mithilfe von Site Recovery in eine sekundäre Region, um Apps funktionstüchtig zu halten. [Weitere Informationen](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart)
 

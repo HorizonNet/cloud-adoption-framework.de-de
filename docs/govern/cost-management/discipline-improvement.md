@@ -8,24 +8,24 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 02d76581a49f58358d624ded4add1af180964f16
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 45b750b6d99bf858eaefa635aa6b16464158f412
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120397"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220633"
 ---
 # <a name="cost-management-discipline-improvement"></a>Verbesserung der Disziplin „Kostenmanagement“
 
-Mit der Disziplin „Kostenmanagement“ wird versucht, die wichtigsten Geschäftsrisiken im Zusammenhang mit den Kosten für das Hosting von cloudbasierten Workloads anzugehen. Innerhalb der fünf Disziplinen der Cloudgovernance wird Cost Management für die Kontrolle der Kosten und Nutzung von Cloudressourcen eingesetzt, mit dem Ziel, einen geplanten Kostenzyklus zu erstellen und zu verwalten.
+Mit der Disziplin „Kostenmanagement“ wird versucht, die wichtigsten Geschäftsrisiken im Zusammenhang mit den Kosten für das Hosting von cloudbasierten Workloads anzugehen. Innerhalb der fünf Disziplinen der Cloudgovernance wird die Disziplin „Kostenmanagement“ für die Kontrolle der Kosten und Nutzung von Cloudressourcen mit dem Ziel eingesetzt, einen geplanten Kostenzyklus zu erstellen und zu verwalten.
 
 Dieser Artikel beschreibt die möglichen Aufgaben, die Ihr Unternehmen zum Erstellen und Weiterentwickeln Ihrer Kostenmanagement-Disziplin ausführen kann. Diese Aufgaben können in Planungs-, Erstellungs-, Bereitstellungs- und Betriebsphasen der Implementierung einer Cloudlösung aufgeschlüsselt werden. Die Tasks werden dann schrittweise durchlaufen, um die Entwicklung eines [inkrementellen Ansatzes für Cloudgovernance](../guides/index.md#an-incremental-approach-to-cloud-governance) zu ermöglichen.
 
 ![Vier Phasen der Einführung](../../_images/govern/adoption-phases.png)
 
-*Abbildung 1: Einführungsphasen des inkrementellen Ansatzes für die Cloudgovernance.*
+_Abbildung 1: Einführungsphasen des inkrementellen Ansatzes für die Cloudgovernance._
 
-Es ist unmöglich, die Anforderungen aller Unternehmen in einem einzigen Dokument zu berücksichtigen. Daher werden in diesem Artikel die empfohlenen mindestens auszuführenden Aktivitäten sowie Beispiele für potenzielle Aktivitäten für jede Phase des Weiterentwicklungsprozesses für die Governance beschrieben. Ziel dieser Aktivitäten ist es, Sie beim Aufbau eines [Richtlinien-MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) und bei der Einrichtung eines Frameworks für die inkrementelle Verbesserung der Richtlinie zu unterstützen. Ihr Cloudgovernanceteam muss entscheiden, wie viel in diese Aktivitäten investiert werden soll, um Ihre Funktionen für die Governance des Cost Management zu verbessern.
+Es ist unmöglich, die Anforderungen aller Unternehmen in einem einzigen Dokument zu berücksichtigen. Daher werden in diesem Artikel die empfohlenen mindestens auszuführenden Aktivitäten sowie Beispiele für potenzielle Aktivitäten für jede Phase des Weiterentwicklungsprozesses für die Governance beschrieben. Ziel dieser Aktivitäten ist es, Sie beim Aufbau eines [Richtlinien-MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) und bei der Einrichtung eines Frameworks für die inkrementelle Verbesserung der Richtlinie zu unterstützen. Ihr Cloudgovernanceteam muss entscheiden, wie viel in diese Aktivitäten investiert werden soll, um Ihre Funktionen für die Disziplin „Kostenmanagement“ zu verbessern.
 
 > [!CAUTION]
 > Weder die in diesem Artikel beschriebenen mindestens erforderlichen noch die potenziellen Aktivitäten sind auf bestimmte Unternehmensrichtlinien oder Complianceanforderungen von Drittanbietern ausgerichtet. Dieser Leitfaden soll bei Gesprächen über die Ausrichtung beider Anforderungen auf ein Cloudgovernancemodell helfen.
@@ -37,7 +37,7 @@ Diese Entwicklungsphase der Governance überbrückt die Lücke zwischen Geschäf
 **Mindestens empfohlene Aktivitäten:**
 
 - Bewerten Sie Ihre Optionen für eine [Kostenmanagement-Toolkette](./toolchain.md).
-- Entwerfen Sie ein Dokument mit Architekturrichtlinien, und geben Sie dieses an die wichtigsten Beteiligten weiter.
+- Entwerfen Sie ein Dokument mit Architekturrichtlinien, und geben Sie es an die wichtigsten Beteiligten weiter.
 - Schulen und beteiligen Sie die Personen und Teams, die von diesen Architekturrichtlinien betroffen sind.
 
 **Potenzielle Aktivitäten:**
@@ -57,14 +57,14 @@ Für die erfolgreiche Migration einer Umgebung muss eine Reihe von technischen u
 **Mindestens empfohlene Aktivitäten:**
 
 - Implementieren Sie Ihre [Cost Management-Toolkette](./toolchain.md) in einer Phase vor der Bereitstellung.
-- Aktualisieren Sie das Dokument mit Architekturrichtlinien, und geben Sie dieses an die wichtigsten Beteiligten weiter.
+- Aktualisieren Sie das Dokument mit Architekturrichtlinien, und geben Sie es an die wichtigsten Beteiligten weiter.
 - Entwickeln Sie Schulungsmaterialien und Dokumentation, Materialien zum Bekanntmachen der Migration, Incentives und weitere Programme, um die Akzeptanz durch die Benutzer zu unterstützen.
 - Ermitteln Sie, ob der Bedarf an zu erwerbenden Komponenten zu Ihrem Budget und Ihren Zielen passt.
 
 **Potenzielle Aktivitäten:**
 
 - Richten Sie Ihre Budgetpläne an der [Abonnementstrategie](../../decision-guides/subscriptions/index.md) aus, die Ihr grundlegendes Besitzmodell definiert.
-- Nutzen Sie Ihre [Strategie für die Konsistenz von Ressourcen](../../decision-guides/resource-consistency/index.md), um Architektur- und Kostenrichtlinien im Lauf der Zeit durchzusetzen.
+- Nutzen Sie Ihre [Strategie für die Disziplin „Ressourcenkonsistenz“](../../decision-guides/resource-consistency/index.md), um Architektur- und Kostenrichtlinien im Lauf der Zeit durchzusetzen.
 - Ermitteln Sie eventuelle Kostenanomalien, die sich auf Ihre Einführungs- und Migrationspläne auswirken können.
 
 ## <a name="adopt-and-migrate"></a>Einführen und Migrieren
@@ -74,7 +74,7 @@ Migration ist ein inkrementeller Prozess, bei dem der Schwerpunkt auf der Verlag
 **Mindestens empfohlene Aktivitäten:**
 
 - Migrieren Sie Ihre [Cost Management-Toolkette](./toolchain.md) von der Phase vor der Bereitstellung zur Produktionsphase.
-- Aktualisieren Sie das Dokument mit Architekturrichtlinien, und geben Sie dieses an die wichtigsten Beteiligten weiter.
+- Aktualisieren Sie das Dokument mit Architekturrichtlinien, und geben Sie es an die wichtigsten Beteiligten weiter.
 - Entwickeln Sie Schulungsmaterialien und Dokumentation, Materialien zum Bekanntmachen der Migration, Incentives und weitere Programme, um die Akzeptanz durch die Benutzer zu unterstützen.
 
 **Potenzielle Aktivitäten:**
@@ -82,7 +82,7 @@ Migration ist ein inkrementeller Prozess, bei dem der Schwerpunkt auf der Verlag
 - Implementieren Sie Ihr Cloudabrechnungsmodell.
 - Stellen Sie sicher, dass Ihr Budget Ihre tatsächlichen Ausgaben bei jedem Release widerspiegelt, und passen Sie es nach Bedarf an.
 - Überwachen Sie Änderungen in Budgetplänen, und besprechen Sie diese mit den Beteiligten, wenn zusätzliche Genehmigungen erforderlich sind.
-- Aktualisieren Sie die Architekturrichtlinien mit den Änderungen, um die tatsächlichen Kosten widerzuspiegeln.
+- Aktualisieren Sie Änderungen am Dokument mit Architekturrichtlinien, um die tatsächlichen Kosten anzuzeigen.
 
 ## <a name="operate-and-post-implementation"></a>Betrieb und Aufgaben nach der Implementierung
 
@@ -90,7 +90,7 @@ Nachdem die Transformation abgeschlossen ist, müssen Governance und Betrieb wä
 
 **Mindestens empfohlene Aktivitäten:**
 
-- Passen Sie Ihre [Kostenmanagement-Toolkette](./toolchain.md) an die geänderten Anforderungen Ihrer Organisation an das Kostenmanagement an.
+- Passen Sie Ihre [Toolkette für Kostenmanagement](./toolchain.md) aufgrund der sich ändernden Anforderungen Ihrer Organisation an.
 - Erwägen Sie die Automatisierung von Benachrichtigungen und Berichten, um die tatsächlichen Ausgaben widerzuspiegeln.
 - Optimieren Sie die Architekturrichtlinien, um zukünftige Einführungsprozesse zu unterstützen.
 - Schulen Sie die betroffenen Teams regelmäßig, um die kontinuierliche Einhaltung der Architekturrichtlinien sicherzustellen.

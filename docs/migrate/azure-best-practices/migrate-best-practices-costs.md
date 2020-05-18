@@ -7,13 +7,15 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 43dfb9f6d5b5715b7f9aca08e19ed0f7c14dc6de
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 05d511419a27d00e87abfae156110749a20029d8
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81119996"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222367"
 ---
+<!-- docsTest:ignore ARO -->
+
 # <a name="best-practices-for-costing-and-sizing-workloads-migrated-to-azure"></a>Bewährte Methoden für Kostenermittlung und Größenanpassung von Workloads, die zu Azure migriert werden
 
 Wenn sie sich bei der Planung und dem Entwurf einer Migration auf die Kosten konzentrieren, sichert dies den langfristigen Erfolg Ihrer Azure-Migration. Während eines Migrationsprojekts ist es entscheidend, dass alle Teams (Finanzen, Verwaltung, Teams für die Anwendungsentwicklung) die damit verbundenen Kosten kennen und verstehen.
@@ -36,25 +38,26 @@ Die bewährten Methoden in diesem Abschnitt helfen Ihnen, Kosten abzuschätzen, 
 
 Um eine Prognose für Ihre monatliche Rechnung für migrierte Workloads aufzustellen, gibt es eine Reihe von Tools, die Sie verwenden können.
 
-- **Azure-Preisrechner:** Sie wählen die Produkte aus, die Sie schätzen möchten, z. B. virtuelle Computer und Speicher. Sie geben Kosten in den Preisrechner ein, um eine Schätzung zu erstellen.
+<!-- TODO: Change "input costs" -->
+- **Azure-Preisrechner:** Wählen Sie die Produkte aus, die Sie schätzen möchten, z. B. virtuelle Computer (VMs) und Speicher, und geben Sie dann im Rechner Kosten ein, um eine Schätzung zu erstellen.
 
- ![Azure-Preisrechner](./media/migrate-best-practices-costs/pricing.png) *Azure-Preisrechner*
+ ![Azure-Preisrechner](./media/migrate-best-practices-costs/pricing.png) _Azure-Preisrechner_
 
 - **Azure Migrate:** Um Kosten zu schätzen, müssen Sie alle Ressourcen überprüfen und berücksichtigen, die für die Ausführung Ihrer Workloads in Azure erforderlich sind. Um diese Daten zu sammeln, erstellen Sie ein Inventar Ihrer Ressourcen, einschließlich Servern, virtueller Computer, Datenbanken und Speicher. Sie können Azure Migrate verwenden, um diese Informationen zu sammeln.
 
 - Azure Migrate ermittelt und bewertet Ihre lokale Umgebung, um ein Inventar aufzustellen.
 - Azure Migrate kann Abhängigkeiten zwischen VMs zuordnen und Ihnen aufzeigen, damit Sie ein vollständiges Bild erhalten.
 - Eine Azure Migrate-Bewertung enthält geschätzte Kosten.
-  - Compute-Kosten: Wenn Sie eine Bewertung erstellen, berechnet Azure Migrate anhand der empfohlenen Azure-VM-Größe mithilfe der Abrechnungs-API die geschätzten monatlichen Kosten für den virtuellen Computer. Bei der Schätzung werden Betriebssystem, Software Assurance, reservierte Instanzen, VM-Betriebszeit, Standort und Währungseinstellungen berücksichtigt. Die Kosten aller virtuellen Computer werden in der Bewertung zusammengefasst, um so die monatlichen Compute-Gesamtkosten zu berechnen.
+  - Compute-Kosten: Wenn Sie eine Bewertung erstellen, berechnet Azure Migrate anhand der empfohlenen Azure-VM-Größe und mithilfe der Azure-Abrechnungs-APIs die geschätzten monatlichen Kosten für den virtuellen Computer (VM-Kosten). Bei der Schätzung werden Betriebssystem, Software Assurance, reservierte Instanzen, VM-Betriebszeit, Standort und Währungseinstellungen berücksichtigt. Die Kosten aller virtuellen Computer werden in der Bewertung zusammengefasst, um so die monatlichen Compute-Gesamtkosten zu berechnen.
   - Speicherkosten: Azure Migrate berechnet die monatlichen Speichergesamtkosten durch Aggregieren der Speicherkosten aller virtuellen Computer in einer Bewertung. Sie können die monatlichen Speicherkosten für einen bestimmten Computer berechnen, indem Sie die monatlichen Kosten aller an den Computer angefügten Datenträger zusammenfassen.
 
     ![Azure Migrate](./media/migrate-best-practices-costs/assess.png)
-    *Azure Migrate-Bewertung*
+    _Azure Migrate-Bewertung_
 
 **Weitere Informationen**:
 
 - [Verwenden](https://azure.microsoft.com/pricing/calculator) des Azure-Preisrechners.
-- [Verschaffen eines Überblicks](https://docs.microsoft.com/azure/migrate/migrate-overview) über Azure Migrate.
+- [Verschaffen eines Überblicks](https://docs.microsoft.com/azure/migrate/migrate-services-overview) über Azure Migrate.
 - [Lesen von Informationen zu](https://docs.microsoft.com/azure/migrate/concepts-assessment-calculation) Azure Migrate-Bewertungen.
 - [Weitere Informationen](https://docs.microsoft.com/azure/dms/dms-overview) über den Azure Database Migration Service.
 
@@ -62,14 +65,14 @@ Um eine Prognose für Ihre monatliche Rechnung für migrierte Workloads aufzuste
 
 Sie können eine Reihe von Optionen auswählen, wenn Sie virtuelle Azure-Computer bereitstellen, um Workloads zu unterstützen. Jeder VM-Typ verfügt über bestimmte Features und verschiedene Kombinationen aus CPU, Arbeitsspeicher und Datenträgern. VMs werden wie folgt gruppiert:
 
-**Typ** | **Details** | **Verwenden Sie**
---- | --- | ---
-**Allgemeiner Zweck** | Ausgewogenes Verhältnis von CPU zu Arbeitsspeicher. | Gut geeignet für Tests und Entwicklung, kleine bis mittlere Datenbanken, Webserver mit geringer bis mittlerer Auslastung.
-**Compute-optimiert** | Hohes Verhältnis von CPU zu Arbeitsspeicher. | Gut geeignet für mittlere Webserver, Network Appliances, Stapelverarbeitungsvorgänge, Anwendungsserver.
-**Arbeitsspeicheroptimiert** | Hohes Verhältnis von Speicher zu CPU. | Gut geeignet für relationale Datenbanken, mittlere bis große Caches, In-Memory-Analysen.
-**Speicheroptimiert** | Datenträgerdurchsatz und -E/A auf hohem Niveau. | Gut geeignet für Big Data sowie SQL- und NoSQL-Datenbanken.
-**GPU-optimiert** | Spezialisierte VMs. Einzelne oder mehrere GPUs. | Anspruchsvolle Grafik- und Videobearbeitung.
-**Hohe Leistung** | Schnellste und leistungsfähigste CPU. Virtuelle Computer mit optionalen Netzwerkschnittstellen mit hohem Durchsatz (RDMA). | Kritische Hochleistungs-Apps.
+| **Typ** | **Details** | **Verwenden Sie** |
+| --- | --- | --- |
+| **Allgemeiner Zweck** | Ausgewogenes Verhältnis von CPU zu Arbeitsspeicher. | Gut geeignet für Tests und Entwicklung, kleine bis mittlere Datenbanken, Webserver mit geringer bis mittlerer Auslastung. |
+| **Compute-optimiert** | Hohes Verhältnis von CPU zu Arbeitsspeicher. | Gut geeignet für mittlere Webserver, Network Appliances, Stapelverarbeitungsvorgänge, Anwendungsserver. |
+| **Arbeitsspeicheroptimiert** | Hohes Verhältnis von Speicher zu CPU. | Gut geeignet für relationale Datenbanken, mittlere bis große Caches, In-Memory-Analysen. |
+| **Speicheroptimiert** | Datenträgerdurchsatz und -E/A auf hohem Niveau. | Gut geeignet für Big Data sowie SQL- und NoSQL-Datenbanken. |
+| **GPU-optimiert** | Spezialisierte VMs. Einzelne oder mehrere GPUs. | Anspruchsvolle Grafik- und Videobearbeitung. |
+| **Hohe Leistung** | Schnellste und leistungsfähigste CPU. Virtuelle Computer mit optionalen Netzwerkschnittstellen mit hohem Durchsatz (RDMA). | Kritische Hochleistungs-Apps. |
 
 - Es ist wichtig, die Preisunterschiede zwischen diesen virtuellen Computern zu verstehen sowie die langfristigen Auswirkungen auf das Budget.
 - Jeder Typ umfasst eine bestimmte Anzahl darin enthaltener VM-Serien.
@@ -93,15 +96,15 @@ Das Optimieren und Verwalten von lokalem Speicher (SAN oder NAS) sowie der Netzw
 
 Azure bietet verschiedene Arten von Speicherdaten.
 
-<!--markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 -->
 
-**Datentyp** | **Details** | **Verwendung**
---- | --- |  ---
-**Blobs** | Optimiert für die Speicherung großer Mengen unstrukturierter Objekte wie etwa Text- oder Binärdaten.<br/><br/> | Zugriff auf Daten von überall her über HTTP/HTTPS. | Verwendung für Szenarios mit Streaming und wahlfreiem Zugriff. Beispielsweise um einem Browser Bilder und Dokumente direkt bereitzustellen, Video und Audio zu streamen und Sicherungs- und Notfallwiederherstellungsdaten zu speichern.
-**Dateien** | Verwaltete Dateifreigaben, auf die über SMB 3.0 zugegriffen wird. | Verwendung beim Migrieren lokaler Dateifreigaben sowie zur Bereitstellung von mehrfachem Zugriff bzw. mehreren Verbindungen, um Daten abzulegen.
-**Datenträger** | Basierend auf Seitenblobs.<br/><br/> Datenträgertyp (Geschwindigkeit): Standard (HDD oder SSD) oder Premium (SSD)<br/><br/>Datenträgerverwaltung: Nicht verwaltet (Sie verwalten Datenträgereinstellungen und Speicher) oder verwaltet (Sie wählen den Datenträgertyp aus, und Azure verwaltet diesen Datenträger für Sie). | Verwendung von Premium-Datenträgern für VMs. Verwendung von verwalteten Datenträgern für einfache Verwaltung und Skalierung.
-**Warteschlangen** | Speichern und Abrufen große Mengen von Nachrichten mittels Zugriff über authentifizierte Aufrufe (HTTP oder HTTPS). | Verbinden von App-Komponenten mit asynchronem Message Queuing.
-**Tabellen** | Speichern von Tabellen. | Jetzt Teil der Azure Cosmos DB-Tabellen-API.
+| **Datentyp** | **Details** | **Verwendung** |
+| --- | --- |  --- |
+| **Blobs** | Optimiert für die Speicherung großer Mengen von unstrukturierten Objekten wie z. B. Text- oder Binärdaten. <br><br> | Zugriff auf Daten von überall her über HTTP/HTTPS. | Verwendung für Szenarios mit Streaming und wahlfreiem Zugriff. Beispielsweise um einem Browser Bilder und Dokumente direkt bereitzustellen, Video und Audio zu streamen und Sicherungs- und Notfallwiederherstellungsdaten zu speichern. |
+| **Dateien** | Verwaltete Dateifreigaben, auf die über SMB 3.0 zugegriffen wird. | Verwendung beim Migrieren lokaler Dateifreigaben sowie zur Bereitstellung von mehrfachem Zugriff bzw. mehreren Verbindungen, um Daten abzulegen. |
+| **Datenträger** | Basierend auf Seitenblobs. <br><br> Datenträgertyp (Geschwindigkeit): Standard (HDD oder SSD) oder Premium (SSD) <br><br> Datenträgerverwaltung: Nicht verwaltet (Sie verwalten Datenträgereinstellungen und Speicher) oder verwaltet (Sie wählen den Datenträgertyp aus, und Azure verwaltet diesen Datenträger für Sie). | Verwendung von Premium-Datenträgern für VMs. Verwendung von verwalteten Datenträgern für einfache Verwaltung und Skalierung. |
+| **Warteschlangen** | Speichern und Abrufen große Mengen von Nachrichten mittels Zugriff über authentifizierte Aufrufe (HTTP oder HTTPS). | Verbinden von App-Komponenten mit asynchronem Message Queuing. |
+| **Tabellen** | Speichern von Tabellen. | Jetzt Teil der Azure Cosmos DB-Tabellen-API. |
 
 <!--markdownlint-enable MD033 -->
 
@@ -109,13 +112,13 @@ Azure bietet verschiedene Arten von Speicherdaten.
 
 Azure Storage bietet verschiedene Optionen für den Zugriff auf Blockblobdaten. Die Auswahl der richtigen Zugriffsebene hilft sicherzustellen, dass Sie Blockblobdaten auf möglichst kostengünstige Art und Weise speichern.
 
-<!--markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 -->
 
-**Typ** | **Details** | **Verwendung**
---- | --- | ---
-**Heiße Ebene** | Höhere Speicherkosten als kalte Ebene. Niedrigere Zugriffsgebühren als kalte Ebene.<br/><br/>Dies ist die Standardebene. | Verwendung für Daten, die aktiv und mit häufigem Zugriff verwendet werden.
-**Kalte Ebene** | Niedrigere Speicherkosten als heiße Ebene. Höhere Zugriffsgebühren als heiße Ebene.<br/><br/> Speicherung für mindestens 30 Tage. | Kurzfristige Speicherung, Daten sind verfügbar, aber Zugriff erfolgt nur selten.
-**Archivieren** | Verwendung für einzelne Blockblobs.<br/><br/> Kostengünstigste Option für Speicherung. Datenzugriff ist teurer als bei heißer oder kalter Ebene. | Verwendung für Daten, die mehrere Stunden Serverabrufwartezeit tolerieren und mindestens 180 Tage lang auf dieser Ebene verbleiben.
+| **Typ** | **Details** | **Verwendung** |
+| --- | --- | --- |
+| **Heiße Ebene** | Höhere Speicherkosten als kalte Ebene. Niedrigere Zugriffsgebühren als kalte Ebene. <br><br> Dies ist die Standardebene. | Verwendung für Daten, die aktiv und mit häufigem Zugriff verwendet werden. |
+| **Kalte Ebene** | Niedrigere Speicherkosten als heiße Ebene. Höhere Zugriffsgebühren als heiße Ebene. <br><br> Speicherung für mindestens 30 Tage. | Kurzfristige Speicherung, Daten sind verfügbar, aber Zugriff erfolgt nur selten. |
+| **Archivieren** | Verwendung für einzelne Blockblobs. <br><br> Kostengünstigste Option für Speicherung. Datenzugriff ist teurer als bei heißer oder kalter Ebene. | Verwendung für Daten, die mehrere Stunden Serverabrufwartezeit tolerieren und mindestens 180 Tage lang auf dieser Ebene verbleiben. |
 
 <!--markdownlint-enable MD033 -->
 
@@ -123,14 +126,14 @@ Azure Storage bietet verschiedene Optionen für den Zugriff auf Blockblobdaten. 
 
 Azure bietet verschiedene Typen von Speicherkonten und Leistungsstufen.
 
-<!--markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 -->
 
-**Kontotyp** | **Details** | **Verwendung**
---- | --- | ---
-**Allgemein v2 Standard** | Unterstützt Blobs (Block, Seiten, Anfüge), Dateien, Datenträger, Warteschlangen und Tabellen.<br/><br/> Unterstützt die Zugriffsebenen „Heiß“, „Kalt“ und „Archiv“. ZRS wird unterstützt. | Verwendung für die meisten Szenarios und die meisten Typen von Daten. Standardspeicherkonten können auf HDDs oder SSDs basieren.
-**Allgemein v2 Premium** | Unterstützt die Blobspeicherdaten (Seitenblobs). Unterstützt die Zugriffsebenen „Heiß“, „Kalt“ und „Archiv“. ZRS wird unterstützt.<br/><br/> Speicherung auf SSDs. | Microsoft empfiehlt die Verwendung für alle VMs.
-**Allgemein v1** | Zugriffsebenen werden nicht unterstützt. Keine Unterstützung von ZRS. | Verwendung, wenn Apps das klassische Azure-Bereitstellungsmodell benötigen.
-**Blob** | Spezialisiertes Speicherkonto zum Speichern unstrukturierter Objekte. Bietet nur Blockblobs und Anfügeblobs (keine Datei-, Warteschlangen-, Tabellen- oder Datenträgerspeicherdienste). Bietet dieselbe Dauerhaftigkeit, Verfügbarkeit, Skalierbarkeit und Leistung wie Allgemein v2. | Sie können in diesen Konten keine Seitenblobs speichern, weshalb auch keine VHD-Dateien gespeichert werden können. Sie können eine Zugriffsebene auf „Heiß“ oder „Kalt“ festlegen.
+| **Kontotyp** | **Details** | **Verwendung** |
+| --- | --- | --- |
+| **Allgemein v2 Standard** | Unterstützt Blobs (Block, Seiten, Anfüge), Dateien, Datenträger, Warteschlangen und Tabellen. <br><br> Unterstützt die Zugriffsebenen „Heiß“, „Kalt“ und „Archiv“. ZRS wird unterstützt. | Verwendung für die meisten Szenarios und die meisten Typen von Daten. Standardspeicherkonten können auf HDDs oder SSDs basieren. |
+| **Allgemein v2 Premium** | Unterstützt die Blobspeicherdaten (Seitenblobs). Unterstützt die Zugriffsebenen „Heiß“, „Kalt“ und „Archiv“. ZRS wird unterstützt. <br><br> Speicherung auf SSDs. | Microsoft empfiehlt die Verwendung für alle VMs. |
+| **Allgemein v1** | Zugriffsebenen werden nicht unterstützt. Keine Unterstützung von ZRS. | Verwendung, wenn Apps das klassische Azure-Bereitstellungsmodell benötigen. |
+| **Blob** | Spezialisiertes Speicherkonto zum Speichern unstrukturierter Objekte. Bietet nur Blockblobs und Anfügeblobs (keine Datei-, Warteschlangen-, Tabellen- oder Datenträgerspeicherdienste). Bietet dieselbe Dauerhaftigkeit, Verfügbarkeit, Skalierbarkeit und Leistung wie Allgemein v2. | Sie können in diesen Konten keine Seitenblobs speichern, weshalb auch keine VHD-Dateien gespeichert werden können. Sie können eine Zugriffsebene auf „Heiß“ oder „Kalt“ festlegen. |
 
 <!--markdownlint-enable MD033 -->
 
@@ -138,20 +141,20 @@ Azure bietet verschiedene Typen von Speicherkonten und Leistungsstufen.
 
 Speicherkonten können verschiedene Arten von Redundanz für Resilienz und Hochverfügbarkeit verwenden.
 
-**Typ** | **Details** | **Verwendung**
---- | --- | ---
-**Lokal redundanter Speicher (LRS)** | Schützt vor einem lokalen Ausfall durch Replikation in eine einzelne Speichereinheit in einer gesonderten Fehler- und Updatedomäne. Behält mehrere Kopien Ihrer Daten in einem Rechenzentrum. Stellt eine Dauerhaftigkeit von mindestens 99,999999999 Prozent (11 Neunen) für Objekte in einem bestimmten Jahr bereit. | Erwägen Sie, ob Ihre Anwendung Daten speichert, die problemlos wiederhergestellt werden können.
-**Zonenredundanter Speicher (ZRS)** | Schützt vor Rechenzentrumsausfällen, indem über drei Speichercluster in einer einzelnen Region hinweg repliziert wird. Jeder Speichercluster ist physisch unabhängig und befindet sich in einer eigenen Verfügbarkeitszone. Bietet eine Dauerhaftigkeit von mindestens 99,9999999999 Prozent (12 Neunen) für Objekte für ein bestimmtes Jahr, indem mehrere Kopien Ihrer Daten in mehreren Rechenzentren oder mehreren Regionen gespeichert werden. | Überlegen Sie, ob Sie Konsistenz, Dauerhaftigkeit und Hochverfügbarkeit benötigen. Schützt eventuell nicht vor einem regionalen Notfall, wenn mehrere Zonen dauerhaft betroffen sind.
-**Geografisch redundanter Speicher (GRS)** | Schützt vor dem Ausfall einer vollständigen Region, indem Daten in eine sekundäre Region repliziert werden, die mehrere hundert Kilometer vom primären Speicherort der Quelldaten entfernt ist. Stellt eine Dauerhaftigkeit von mindestens 99,99999999999999 Prozent (16 Neunen) für Objekte in einem bestimmten Jahr bereit. | Replikatdaten sind nur verfügbar, wenn Microsoft ein Failover in die sekundäre Region initiiert. Kommt es zu einem Failover, sind Lese- und Schreibzugriff verfügbar.
-**Georedundanter Speicher mit Lesezugriff (RA-GRS)** | Ähnlich wie GRS. Stellt eine Dauerhaftigkeit von mindestens 99,99999999999999 Prozent (16 Neunen) für Objekte in einem bestimmten Jahr bereit. | Bietet außerdem 99,99 Prozent Leseverfügbarkeit, indem Lesezugriff aus der zweiten für GRS verwendeten Region zugelassen wird.
+| **Typ** | **Details** | **Verwendung** |
+| --- | --- | --- |
+| **Lokal redundanter Speicher (LRS)** | Schützt vor einem lokalen Ausfall durch Replikation in eine einzelne Speichereinheit in einer gesonderten Fehler- und Updatedomäne. Behält mehrere Kopien Ihrer Daten in einem Rechenzentrum. Stellt eine Dauerhaftigkeit von mindestens 99,999999999 Prozent (11 Neunen) für Objekte in einem bestimmten Jahr bereit. | Erwägen Sie, ob Ihre Anwendung Daten speichert, die problemlos wiederhergestellt werden können. |
+| **Zonenredundanter Speicher (ZRS)** | Schützt vor Rechenzentrumsausfällen, indem über drei Speichercluster in einer einzelnen Region hinweg repliziert wird. Jeder Speichercluster ist physisch unabhängig und befindet sich in einer eigenen Verfügbarkeitszone. Bietet eine Dauerhaftigkeit von mindestens 99,9999999999 Prozent (12 Neunen) für Objekte für ein bestimmtes Jahr, indem mehrere Kopien Ihrer Daten in mehreren Rechenzentren oder mehreren Regionen gespeichert werden. | Überlegen Sie, ob Sie Konsistenz, Dauerhaftigkeit und Hochverfügbarkeit benötigen. Schützt eventuell nicht vor einem regionalen Notfall, wenn mehrere Zonen dauerhaft betroffen sind. |
+| **Geografisch redundanter Speicher (GRS)** | Schützt vor dem Ausfall einer vollständigen Region, indem Daten in eine sekundäre Region repliziert werden, die mehrere hundert Kilometer vom primären Speicherort der Quelldaten entfernt ist. Stellt eine Dauerhaftigkeit von mindestens 99,99999999999999 Prozent (16 Neunen) für Objekte in einem bestimmten Jahr bereit. | Replikatdaten sind nur verfügbar, wenn Microsoft ein Failover in die sekundäre Region initiiert. Kommt es zu einem Failover, sind Lese- und Schreibzugriff verfügbar. |
+| **Georedundanter Speicher mit Lesezugriff (RA-GRS)** | Ähnlich wie GRS. Stellt eine Dauerhaftigkeit von mindestens 99,99999999999999 Prozent (16 Neunen) für Objekte in einem bestimmten Jahr bereit. | Bietet außerdem 99,99 Prozent Leseverfügbarkeit, indem Lesezugriff aus der zweiten für GRS verwendeten Region zugelassen wird. |
 
 **Weitere Informationen**:
 
 - [Sehen Sie sich](https://azure.microsoft.com/pricing/details/storage) die Preise für Azure Storage an.
 - [Weitere Informationen zum](https://docs.microsoft.com/azure/storage/common/storage-import-export-service) Azure Import/Export für die Migration großer Datenmengen zu Azure-Blobs und Azure Files.
-- [Vergleichen Sie](https://docs.microsoft.com/azure/storage/common/storage-decide-blobs-files-disks?toc=/azure/storage/blobs/toc.json) Datentypen für Blobs, Dateien und Datenträgerspeicher.
+- [Vergleichen Sie](https://docs.microsoft.com/azure/storage/common/storage-decide-blobs-files-disks) Datentypen für Blobs, Dateien und Datenträgerspeicher.
 - [Weitere Informationen](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers) zu Zugriffsebenen.
-- [Informationen zu ](https://docs.microsoft.com/azure/storage/common/storage-account-overview?toc=/azure/storage/blobs/toc.json) verschiedene Typen von Speicherkonten.
+- [Informationen zu ](https://docs.microsoft.com/azure/storage/common/storage-account-overview) verschiedene Typen von Speicherkonten.
 - Informationen zu [Azure-Speicherredundanz](https://docs.microsoft.com/azure/storage/common/storage-redundancy), einschließlich LRS, ZRS, GRS und GRS mit Lesezugriff.
 - Weitere Informationen zu [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction).
 
@@ -171,7 +174,7 @@ Eine integriertes Portfolio aus lokalen und Azure-Produkten von Microsoft generi
 
 Die meisten Cloudplattformen sind mit nutzungsbasierter Bezahlung eingerichtet. Dieses Modell beinhaltet Nachteile, da Sie nicht unbedingt wissen, wie sich dynamische Arbeitslasten entwickeln. Wenn Sie also klare Absichten für eine Workload formulieren, tragen Sie damit zur Infrastrukturplanung bei.
 
-Wenn Sie reservierte Azure-VM-Instanzen verwenden, zahlen Sie im Voraus für eine 1- oder 3-Jahres-Instanz einer VM.
+Wenn Sie Azure Reserved VM Instances verwenden, zahlen Sie für VM-Instanzen 1 Jahr oder 3 Jahre im Voraus.
 
 - Durch die Vorauszahlung erhalten Sie einen Rabatt für die verwendeten Ressourcen.
 - Sie können die Kosten für virtuelle Computer, SQL-Datenbank-Compute, Azure Cosmos DB-Kapazitäten oder andere Ressourcen deutlich um bis zu 72 % gegenüber der nutzungsbasierten Bezahlung reduzieren.
@@ -179,13 +182,13 @@ Wenn Sie reservierte Azure-VM-Instanzen verwenden, zahlen Sie im Voraus für ein
 - Sie können reservierte Instanzen kündigen.
 
 ![Reservierte Instanzen](./media/migrate-best-practices-costs/reserve.png)
-*Reservierte Azure-VMs*
+_Reservierte Azure-VMs_
 
 **Weitere Informationen**:
 
-- [Informationen zu](https://docs.microsoft.com/azure/billing/billing-save-compute-costs-reservations) Azure-Reservierungen.
-- [Lesen Sie](https://azure.microsoft.com/pricing/reserved-vm-instances/#faq) die häufig gestellten Fragen zu reservierten Instanzen.
-- [Erhalten Sie](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance) Preisinformationen für virtuelle Azure-Computer mit SQL Server.
+- Informieren Sie sich zu [Azure-Reservierungen](https://docs.microsoft.com/azure/cost-management-billing/reservations/save-compute-costs-reservations).
+- Lesen Sie [Häufig gestellte Fragen zu reservierten Instanzen](https://azure.microsoft.com/pricing/reserved-vm-instances/#faq).
+- Sehen Sie sich die [Preisinformationen für virtuelle Azure-Computer mit SQL Server](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance) an.
 
 ## <a name="best-practice-aggregate-cloud-spend-across-subscriptions"></a>Bewährte Methode: Cloudausgaben über Abonnements hinweg akkumulieren
 
@@ -227,15 +230,15 @@ Mit Cost Management können Sie:
   - Sie können Kostenverwaltungsdaten zur Analyse nach Azure Storage exportieren.
 
     ![Cost Management-Budget](./media/migrate-best-practices-costs/budget.png)
-    *Azure Cost Management-Budget*
+    _Azure Cost Management-Budget_
 
 - **Eine Kostenanalyse durchführen:** Stellen Sie eine Kostenanalyse auf, um Ihre Organisationskosten zu untersuchen und zu analysieren, damit Sie besser verstehen, wie Kosten anfallen, und Ausgabentrends erkennen können.
   - Die Kostenanalyse steht EA-Benutzern zur Verfügung.
   - Sie können Kostenanalysedaten für eine Reihe von Bereichen, einschließlich nach Abteilung, Konto, Abonnement oder Ressourcengruppe, anzeigen.
   - Sie können eine Kostenanalyse abrufen, die Gesamtkosten für den aktuellen Monat und die akkumulierten täglichen Kosten anzeigt.
 
-    ![Cost Management-Analyse](./media/migrate-best-practices-costs/analysis.png)
-    *Azure Cost Management-Analyse*
+    ![Azure Cost Management-Analyse](./media/migrate-best-practices-costs/analysis.png)
+    _Abbildung: Azure Cost Management-Analyse_
 - **Empfehlungen abrufen:** Erhalten Sie Advisor-Empfehlungen, die Ihnen zeigen, wie Sie die Effizienz optimieren und verbessern können.
 
 **Weitere Informationen**:
@@ -243,7 +246,7 @@ Mit Cost Management können Sie:
 - Verschaffen Sie sich einen Überblick zu [Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview).
 - Erfahren Sie, wie Sie Ihre [Cloudinvestitionen mit Azure Cost Management optimieren](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices).
 - Erfahren Sie, wie Sie [Azure Cost Management-Berichte verwenden](https://docs.microsoft.com/azure/cost-management/use-reports).
-- Erhalten Sie ein [Tutorial zum Optimieren von Kosten mithilfe von Empfehlungen](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/billing/toc.json).
+- Erhalten Sie ein [Tutorial zum Optimieren von Kosten mithilfe von Empfehlungen](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations).
 - Sehen Sie sich die [Azure Consumption-API](https://docs.microsoft.com/rest/api/consumption/budgets) an.
 
 ## <a name="best-practice-monitor-resource-utilization"></a>Bewährte Methode: Ressourcennutzung überwachen
@@ -260,8 +263,8 @@ In Azure bezahlen Sie für die Nutzung, also wenn Ressourcen tatsächlich genutz
 
 - Verschaffen Sie sich einen Überblick über [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) und [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview).
 - [Erhalten Sie](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations) Advisor-Empfehlungen zu Kosten.
-- [Erfahren Sie, wie Sie [Kosten für Empfehlungen optimieren](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/billing/toc.json) und [unerwartete Gebühren vermeiden](https://docs.microsoft.com/azure/billing/billing-getting-started).
-- Erfahren Sie mehr über das [Toolkit zur Azure-Ressourcenoptimierung (ARO)](https://github.com/Azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit).
+- [Erfahren Sie, wie Sie [Kosten für Empfehlungen optimieren](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations) und [unerwartete Gebühren vermeiden](https://docs.microsoft.com/azure/billing/billing-getting-started).
+- Erfahren Sie mehr über das [Toolkit zur Azure-Ressourcenoptimierung (ARO)](https://github.com/azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit).
 
 ## <a name="best-practice-implement-resource-group-budgets"></a>Bewährte Methode: Budgets für Ressourcengruppen implementieren
 
@@ -273,7 +276,7 @@ Häufig werden Ressourcengruppen verwendet, um Kostengrenzen darzustellen. Zusam
 **Weitere Informationen**:
 
 - [Erfahren Sie, wie Sie](https://docs.microsoft.com/azure/billing/billing-cost-management-budget-scenario) Kosten mit Azure-Budgets verwalten.
-- [Absolvieren Sie ein Tutorial](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/billing/toc.json), um ein Azure-Budget zu erstellen und zu verwalten.
+- [Absolvieren Sie ein Tutorial](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets), um ein Azure-Budget zu erstellen und zu verwalten.
 
 ## <a name="best-practice-optimize-azure-monitor-retention"></a>Bewährte Methode: Azure Monitor-Aufbewahrung optimieren
 
@@ -314,7 +317,7 @@ Sie können einen virtuellen Computer mit Azure Automation, VM-Skalierungsgruppe
 - [Erfahren Sie, wie Sie](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-vertical-scale-reprovision) vertikale automatische Skalierung verwenden.
 - [Planen](https://azure.microsoft.com/updates/azure-devtest-labs-schedule-vm-auto-start) des automatischen Starts einer VM.
 - [Informationen, wie Sie ](https://docs.microsoft.com/azure/automation/automation-solution-vm-management) VMs außerhalb von Nutzungszeiten in Azure Automation starten oder beenden.
-- [Erfahren Sie mehr] über [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) und das [Toolkit zur Azure-Ressourcenoptimierung (ARO)](https://github.com/Azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit).
+- Weitere Informationen zu [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) und dem [Toolkit zur Azure-Ressourcenoptimierung (ARO)](https://github.com/azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit).
 
 ## <a name="best-practices-use-logic-apps-and-runbooks-with-budgets-api"></a>Bewährten Methoden: Logic Apps und Runbooks mit der API für Budgets verwenden
 

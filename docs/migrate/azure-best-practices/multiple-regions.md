@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ff04f94c8f6dbf023f706ac3c66778fdc89c3437
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 71670c0a885d5ec2aef8dcf5a11d944021c3ae5e
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80998069"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83217182"
 ---
 # <a name="azure-regions"></a>Azure-Regionen
 
@@ -24,7 +24,7 @@ Azure besteht aus zahlreichen Regionen auf der ganzen Welt. Jede [Azure-Region](
 1. **Einschränkungen:** In bestimmten Regionen unterliegt die Bereitstellung von Diensten gewissen Einschränkungen. Einige Regionen stehen beispielsweise nur als Sicherungs- oder Failoverziel zur Verfügung. Weitere wichtige Einschränkungen sind [Datenhoheitsanforderungen](https://azure.microsoft.com/global-infrastructure/geographies).
 1. **Datenhoheit:** Bestimmte Regionen sind für spezifische unabhängige Entitäten dediziert. Zwar handelt es sich bei allen Regionen um Azure-Regionen, diese unabhängigen Regionen sind jedoch vollständig vom Rest von Azure isoliert, werden nicht notwendigerweise von Microsoft verwaltet und können auf bestimmte Kundentypen beschränkt sein. Diese unabhängigen Regionen sind:
     1. [Azure China](https://azure.microsoft.com/global-infrastructure/china)
-    1. [Azure Deutschland](https://azure.microsoft.com/global-infrastructure/germany) (wird zugunsten von standardmäßigen, nicht unabhängigen Azure-Regionen in Deutschland eingestellt)
+    1. [Azure Deutschland](https://azure.microsoft.com/global-infrastructure/germany): Wird zugunsten von standardmäßigen, nicht unabhängigen Azure-Regionen in Deutschland eingestellt
     1. [Azure US Government](https://azure.microsoft.com/global-infrastructure/government)
     1. Hinweis: Zwei Regionen in [Australien](https://azure.microsoft.com/global-infrastructure/australia) werden zwar von Microsoft verwaltet, werden aber für die australische Regierung und ihre Kunden und Auftragnehmer bereitgestellt. Für diese beiden Regionen gelten daher ähnliche Clienteinschränkungen wie für die anderen Sovereign Clouds.
 
@@ -43,7 +43,7 @@ Bei näherer Betrachtung der obigen Komplexitäten wird deutlich, wie wichtig di
 
 Jede robuste Cloudbereitstellung ist auf ein sorgfältig durchdachtes Netzwerk angewiesen, wobei auch Azure-Regionen eine Rolle spielen. Nach Berücksichtigung der obigen Kriterien für die Wahl der Bereitstellungsregionen muss das Netzwerk bereitgestellt werden. Eine umfassende Besprechung des Netzwerks würde den Rahmen dieses Artikels sprengen, es sind jedoch unter anderem folgende Punkte zu beachten:
 
-- Azure-Regionen werden paarweise bereitgestellt. Für den Fall eines schwerwiegenden Ausfalls einer Region wird eine andere Region innerhalb der gleichen geopolitischen Grenze* als gekoppelte Region festgelegt. Die Bereitstellung in Regionspaaren sollte als primäre und sekundäre Resilienzstrategie in Erwägung gezogen werden. *Azure Brasilien ist eine erwähnenswerte Ausnahme, da die gekoppelte Region in diesem Fall „USA, Süden-Mitte“ ist. Weitere Informationen finden Sie unter [Azure-Regionspaare](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
+- Azure-Regionen werden paarweise bereitgestellt. Für den Fall eines schwerwiegenden Ausfalls einer Region wird eine andere Region innerhalb derselben geopolitischen Grenze als gekoppelte Region festgelegt. Die Bereitstellung in Regionspaaren sollte als primäre und sekundäre Resilienzstrategie in Erwägung gezogen werden. Azure Brasilien ist eine erwähnenswerte Ausnahme, da die gekoppelte Region in diesem Fall „USA, Süden-Mitte“ ist. Weitere Informationen finden Sie unter [Azure-Regionspaare](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
 
   - Azure Storage unterstützt [georedundanten Speicher (GRS)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs). Das bedeutet, dass drei Kopien Ihrer Daten in Ihrer primären Region und drei zusätzliche Kopien in der gekoppelten Region gespeichert werden. Die Speicherkopplung für GRS kann nicht geändert werden.
   - Dienste, die auf Azure Storage-GRS basieren, können von dieser Regionskopplung profitieren. Ihre Anwendungen und das Netzwerk müssen dazu entsprechend ausgerichtet sein.
@@ -88,7 +88,7 @@ Die folgende Tabelle kann beim Dokumentieren der Ergebnisse aus den oben genannt
 
 <!-- markdownlint-disable MD026 -->
 
-## <a name="data-sovereignty-relevancy"></a>Relevanz der Datenhoheit
+## <a name="relevance-of-data-sovereignty"></a>Relevanz der Datenhoheit
 
 Auf der ganzen Welt haben Organisationen damit begonnen, Anforderungen an die Datenhoheit zu etablieren, beispielsweise durch die Datenschutz-Grundverordnung (DSGVO). Complianceanforderungen dieser Art erfordern häufig einen Speicherort innerhalb einer bestimmten Region oder sogar innerhalb eines bestimmten Lands, um die Bürger dieses Lands zu schützen. In einige Fällen müssen Daten zu Kunden, Mitarbeitern oder Partnern auf einer Cloudplattform gespeichert werden, die sich in derselben Region befindet wie die Endbenutzer.
 

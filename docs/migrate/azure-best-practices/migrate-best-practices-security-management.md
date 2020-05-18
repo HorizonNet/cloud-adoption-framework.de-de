@@ -1,18 +1,18 @@
 ---
 title: Sichern und Verwalten von zu Azure migrierten Workloads
-description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um sich über die bewährten Methoden zum Abarbeiten, Verwalten und Sichern Ihrer migrierten Workloads zu informieren.
+description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um sich über Best Practices (bewährte Methoden) zum Abarbeiten, Verwalten und Sichern Ihrer migrierten Workloads zu informieren.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 134026b963602448e145cf118378977a4b03de58
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: c55bbd0e14ff9825a61e91745bba0044b6bf9fc1
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396183"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83214819"
 ---
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
 
@@ -89,7 +89,7 @@ Im Gegensatz zum IaaS-Konzept, bei dem Sie VMs und Infrastruktur selbst verwalte
   - Für die Verwendung dieses Features sind möglicherweise Änderungen an Apps erforderlich.
 - **Transparent Data Encryption (TDE):** Schützen Sie die Azure SQL-Datenbank mit Echtzeitverschlüsselung und -entschlüsselung der Datenbank, der zugehörigen Sicherungen und der ruhenden Transaktionsprotokolldateien.
   - TDE ermöglicht die Ausführung von Verschlüsselungsaktivitäten ohne Änderungen auf der App-Ebene.
-  - TDE kann Verschlüsselungsschlüssel verwenden, die von Microsoft bereitgestellt werden. Alternativ dazu können Sie auch mit Bring Your Own Key-Unterstützung eigene Schlüssel bereitstellen.
+  - TDE kann von Microsoft bereitgestellte Verschlüsselungsschlüssel oder Ihren eigenen Schlüssel (Bring Your Own Key, BYOK) verwenden.
 
 **Weitere Informationen**:
 
@@ -109,7 +109,7 @@ Insbesondere ältere zu Azure migrierte VMs verfügen möglicherweise nicht übe
 - In Azure Security Center können Sie ganz einfach diejenigen VMs identifizieren, auf denen kein Endpunktschutz ausgeführt wird, und bei Bedarf Microsoft-Antischadsoftware installieren.
 
 ![Antischadsoftware für VMs](./media/migrate-best-practices-security-management/antimalware.png)
-*Antischadsoftware für VMs*
+_Antischadsoftware für VMs_
 
 **Weitere Informationen**:
 
@@ -137,11 +137,11 @@ Azure stellt verschiedene Lösungen bereit:
   - Web Application Firewall kann mithilfe von Azure Monitor überwacht werden und ist in Azure Security Center integriert.
 
 ![Sichere Web-Apps](./media/migrate-best-practices-security-management/web-apps.png)
-*Azure Key Vault*
+_Azure Key Vault_
 
 **Weitere Informationen**:
 
-- [Erhalten Sie einen Überblick](https://docs.microsoft.com/azure/key-vault/key-vault-overview) über Azure Key Vault.
+- [Erhalten Sie einen Überblick](https://docs.microsoft.com/azure/key-vault/general/key-vault-overview) über Azure Key Vault.
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/application-gateway/waf-overview) über Web Application Firewall.
 - [Erhalten Sie eine Einführung](https://docs.microsoft.com/azure/app-service/environment/intro) in App Service-Umgebungen.
 - [Erfahren Sie](https://docs.microsoft.com/azure/key-vault/tutorial-web-application-keyvault), wie Sie eine Web-App so konfigurieren, dass sie Geheimnisse aus Key Vault lesen kann.
@@ -157,7 +157,7 @@ Wenn Sie Ihre Workloads migrieren und in Azure ausführen, können Mitarbeiter m
 - Stellen Sie sicher, dass Administratoren mit Azure-Zugriff nur auf diejenigen Ressourcen zugreifen können, die Sie zulassen möchten. Wenn die vordefinierten Rollen in Azure nicht differenziert genug sind, können Sie benutzerdefinierte Rollen erstellen, um Zugriffsberechtigungen zu trennen und zu begrenzen.
 
 ![Zugriffssteuerung](./media/migrate-best-practices-security-management/subscription.png)
-*Zugriffssteuerung – IAM*
+_Zugriffssteuerung – IAM_
 
 **Weitere Informationen**:
 
@@ -175,7 +175,7 @@ Azure Active Directory (Azure AD) stellt Aktivitätsprotokolle bereit, die in A
 - Gewöhnen Sie sich an, die Protokolle zu überprüfen, oder integrieren Sie Ihre SIEM-Tools (Security Information & Event Management), um Anomalien automatisch zu überprüfen. Wenn Sie nicht Premium 1 oder 2 verwenden, müssen Sie viele Analyseaktivitäten selbst oder mithilfe Ihres SIEM-Systems ausführen. Zu diesen Aktivitäten gehört die Suche nach risikobehafteten Anmeldungen und Ereignissen sowie weiteren Benutzerangriffsmustern.
 
 ![Benutzer und Gruppen](./media/migrate-best-practices-security-management/azure-ad.png)
-*Azure AD-Benutzer und -Gruppen*
+_Azure AD-Benutzer und -Gruppen_
 
 **Weitere Informationen**:
 
@@ -213,7 +213,7 @@ Mit aussagekräftigen Namen für Ihre Ressourcengruppen, die Administratoren und
 - Wenn Sie Ihr lokales Active Directory über Azure AD Connect mit Azure AD synchronisieren, sollten Sie die Namen der lokalen Sicherheitsgruppen an die Namen der Ressourcengruppen in Azure anpassen.
 
 ![Benennen](./media/migrate-best-practices-security-management/naming.png)
-*Benennen von Ressourcengruppen*
+_Benennen von Ressourcengruppen_
 
 **Weitere Informationen**:
 
@@ -224,7 +224,7 @@ Mit aussagekräftigen Namen für Ihre Ressourcengruppen, die Administratoren und
 Niemand möchte, dass eine Ressourcengruppe verschwindet, weil sie versehentlich gelöscht wurde. Wir empfehlen die Implementierung von Löschsperren, um dies zu verhindern.
 
 ![Löschsperren](./media/migrate-best-practices-security-management/locks.png)
-*Löschsperren*
+_Löschsperren_
 
 **Weitere Informationen**:
 
@@ -253,7 +253,7 @@ Häufig bietet die Verwendung nur eines Ressourcengruppenamens für Ressourcen n
 - Sie können die Markierung mithilfe von PowerShell oder Azure Automation automatisieren oder einzelne Gruppen oder Ressourcen markieren. Verwenden Sie einen automatisierten Markierungsansatz oder ein Verfahren per Self-Service. Wenn Sie ein System für Anforderungsmanagement und Change Management eingerichtet haben, können Sie ganz einfach die Informationen in der Anforderung verwenden, um Ihre unternehmensspezifischen Ressourcentags aufzufüllen.
 
 ![Markieren](./media/migrate-best-practices-security-management/tagging.png)
-*Markieren*
+_Markieren_
 
 **Weitere Informationen**:
 
@@ -298,7 +298,7 @@ Wenn Ihre Organisation über mehrere Abonnements verfügt, müssen Sie Zugriff, 
 Das folgende Diagramm zeigt ein Beispiel zum Erstellen einer Hierarchie für die Governance unter Verwendung von Verwaltungsgruppen.
 
 ![Verwaltungsgruppen](./media/migrate-best-practices-security-management/management-groups.png)
-*Verwaltungsgruppen*
+_Verwaltungsgruppen_
 
 **Weitere Informationen**:
 
@@ -314,7 +314,7 @@ Azure Policy ist ein Dienst in Azure, mit dem Sie Richtlinien erstellen, zuweise
 - Azure stellt integrierte Richtlinien bereit, die Sie zuweisen können – oder erstellen Sie eigene Richtlinien.
 
 ![Azure Policy](./media/migrate-best-practices-security-management/policy.png)
-*Azure Policy*
+_Azure Policy_
 
 **Weitere Informationen**:
 
@@ -356,14 +356,14 @@ Sie können Azure Backup verwenden, um VMs auf unterschiedliche Weise zu sichern
 - **Direkte Sicherung in einem Recovery Services-Tresor:** Sie können Ihre IaaS-VMs durch Bereitstellen eines Azure Backup-Recovery Services-Tresors sichern. Dies bietet einen einzelnen Speicherort zum Nachverfolgen und Verwalten von Sicherungen und ermöglicht differenzierte Sicherungs- und Wiederherstellungsoptionen. Die Sicherung erfolgt bis zu dreimal am Tag auf Datei- oder Ordnerebene. Sie ist nicht App-bezogen, und Linux wird nicht unterstützt. Installieren Sie den MARS-Agent (Microsoft Azure Recovery Services) auf jedem virtuellen Computer, den Sie mit dieser Methode sichern möchten.
 - **Schützen von VMs mit Azure Backup Server:** Azure Backup Server ist kostenlos in Azure Backup enthalten. VMs werden im lokalen Azure Backup Server-Speicher gesichert. Danach wird Azure Backup Server in einem Tresor in Azure gesichert. Backup ist App-bezogen und bietet differenzierte Optionen für die Häufigkeit und Vermerkdauer von Sicherungen. Sie können Sicherungen auf App-Ebene z. B. für SQL Server oder SharePoint ausführen.
 
-Aus Sicherheitsgründen verschlüsselt Azure Backup Daten während der Übertragung mithilfe von AES 256 und sendet sie über HTTPS an Azure. Gesicherte ruhende Daten in Azure werden mithilfe der [Speicherdienstverschlüsselung](https://docs.microsoft.com/azure/storage/common/storage-service-encryption?toc=/azure/storage/queues/toc.json) verschlüsselt.
+Aus Sicherheitsgründen verschlüsselt Azure Backup Daten während der Übertragung mithilfe von AES 256 und sendet sie über HTTPS an Azure. Gesicherte ruhende Daten in Azure werden mithilfe der [Speicherdienstverschlüsselung](https://docs.microsoft.com/azure/storage/common/storage-service-encryption) verschlüsselt.
 
 ![Azure Backup](./media/migrate-best-practices-security-management/iaas-backup.png)
-*Azure Backup*
+_Azure Backup_
 
 **Weitere Informationen**:
 
-- [Erfahren Sie mehr](https://docs.microsoft.com/azure/backup/backup-introduction-to-azure-backup) über verschiedene Arten von Sicherungen.
+- [Erfahren Sie mehr](https://docs.microsoft.com/azure/backup/backup-overview) über verschiedene Arten von Sicherungen.
 - [Planen Sie eine Sicherungsinfrastruktur](https://docs.microsoft.com/azure/backup/backup-azure-vms-introduction) für Azure-VMs.
 
 #### <a name="storage-snapshots"></a>Speichermomentaufnahmen
@@ -381,7 +381,7 @@ Azure-VMs werden als Seitenblobs in Azure Storage gespeichert.
 - [Erfahren Sie](https://docs.microsoft.com/azure/storage/blobs/storage-blob-snapshots), wie Sie eine Blobmomentaufnahme erstellen.
 - [Sehen Sie sich ein Beispielszenario](https://azure.microsoft.com/blog/microsoft-azure-block-blob-storage-backup) für die Sicherung des Blobspeichers an.
 - [Lesen Sie mehr](https://docs.microsoft.com/azure/storage/blobs/storage-blob-soft-delete) über das vorläufige Löschen.
-- [Notfallwiederherstellung und erzwungenes Failover (Vorschau) in Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-disaster-recovery-guidance?toc=/azure/storage/blobs/toc.json)
+- [Notfallwiederherstellung und erzwungenes Failover (Vorschau) in Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-disaster-recovery-guidance)
 
 #### <a name="third-party-backup"></a>Sicherungslösungen von Drittanbietern
 
@@ -398,7 +398,7 @@ Azure Site Recovery ist der primäre Azure-Dienst, mit dem Sie sicherstellen, da
 Site Recovery repliziert VMs von einer primären in eine sekundäre Azure-Region. Wenn ein Notfall auftritt, führen Sie ein Failover der VMs von der primären Region aus und greifen in der sekundären Region weiterhin normal darauf zu. Wenn der Betrieb wieder normal läuft, können Sie ein Failback der VMs zur primären Region ausführen.
 
 ![Azure Site Recovery](./media/migrate-best-practices-security-management/site-recovery.png)
-*Site Recovery*
+_Site Recovery_
 
 **Weitere Informationen**:
 
@@ -409,14 +409,14 @@ Site Recovery repliziert VMs von einer primären in eine sekundäre Azure-Region
 
 Azure verwendet Verfügbarkeitsgruppen, um VMs logisch zusammenzufassen und in einer Gruppe von anderen Ressourcen zu isolieren. VMs in einer Verfügbarkeitsgruppe werden auf mehrere Fehlerdomänen mit separaten Subsystemen verteilt, die vor lokalen Ausfällen geschützt sind. Die VMs sind auch auf mehrere Updatedomänen verteilt und verhindern gleichzeitige Neustarts aller VMs in der Gruppe.
 
-Verwaltete Azure-Datenträger vereinfachen die Datenträgerverwaltung für virtuelle Azure-Computer durch Verwaltung der Speicherkonten, die den VM-Datenträgern zugeordnet sind.
+Verwaltete Azure-Datenträger vereinfachen die Datenträgerverwaltung bei virtuellen Azure-Computern durch Verwaltung der Speicherkonten, die den VM-Datenträgern zugeordnet sind.
 
 - Verwenden Sie nach Möglichkeit verwaltete Datenträger. Sie müssen nur den gewünschten Speichertyp und die erforderliche Datenträgergröße angeben, und Azure erstellt und verwaltet den Datenträger im Hintergrund für Sie.
 - Sie können vorhandene Datenträger in verwaltete Datenträger konvertieren.
 - Sie sollten VMs in Verfügbarkeitsgruppen erstellen, um eine hohe Resilienz und Verfügbarkeit zu erzielen. Bei geplanten oder ungeplanten Ausfällen stellen Verfügbarkeitsgruppen sicher, dass mindestens eine VM in der Gruppe verfügbar bleibt.
 
 ![Verwaltete Datenträger](./media/migrate-best-practices-security-management/managed-disks.png)
-*Verwaltete Datenträger*
+_Verwaltete Datenträger_
 
 **Weitere Informationen**:
 
@@ -437,13 +437,13 @@ Für diese beiden Fälle gibt es unterschiedliche Lösungen, aber Sie müssen in
 - Zusätzlich zur Azure-Überwachung können Sie Ihre SIEM-Drittanbieteranwendung integrieren, um die Azure-Protokolle auf Überprüfungs- und Leistungsereignisse zu überwachen.
 
 ![Azure Monitor](./media/migrate-best-practices-security-management/monitor.png)
-*Azure Monitor*
+_Azure Monitor_
 
 **Weitere Informationen**:
 
 - [Erfahren Sie mehr](https://docs.microsoft.com/azure/azure-monitor/overview) über Azure Monitor.
 - [Informieren Sie sich über Best Practices](https://docs.microsoft.com/azure/architecture/best-practices/monitoring) für die Überwachung und Diagnose.
-- [Erfahren Sie mehr](https://docs.microsoft.com/azure/architecture/best-practices/auto-scaling) über die automatische Skalierung.
+- [Erfahren Sie mehr](https://docs.microsoft.com/azure/architecture/best-practices/scaling) über die automatische Skalierung.
 - [Erfahren Sie](https://docs.microsoft.com/azure/security-center/security-center-export-data-to-siem), wie Sie Azure-Daten an ein SIEM-Tool weiterleiten.
 
 ## <a name="best-practice-enable-diagnostic-logging"></a>Bewährte Methode: Aktivieren der Diagnoseprotokollierung
@@ -455,7 +455,7 @@ Azure-Ressourcen generieren recht viele Protokollierungsmetrik- und Telemetrieda
 - Wenn Sie die Diagnoseprotokollierung aktivieren, verfügt jede Ressource über einen bestimmten Satz von Kategorien. Sie können eine oder mehrere Protokollierungskategorien sowie einen Speicherort für die Protokolldaten auswählen. Protokolle können an Event Hub, Azure Monitor-Protokolle oder ein Speicherkonto gesendet werden.
 
 ![Diagnoseprotokollierung](./media/migrate-best-practices-security-management/diagnostics.png)
-*Diagnoseprotokollierung*
+_Diagnoseprotokollierung_
 
 **Weitere Informationen**:
 
@@ -472,7 +472,7 @@ Wenn die Diagnoseprotokollierung für Azure-Ressourcen aktiviert ist, können Si
 - Ein weiteres Beispiel wäre eine App mit Arbeitsspeicherverlust. Wenn die Arbeitsspeichernutzung einen bestimmten Punkt erreicht, kann ein Playbook den Prozess stoppen und neu starten.
 
 ![Warnungen](./media/migrate-best-practices-security-management/alerts.png)
-*Warnungen*
+_Warnungen_
 
 **Weitere Informationen**:
 
@@ -487,7 +487,7 @@ Das Azure-Portal ist eine webbasierte einheitliche Konsole zum Erstellen, Verwal
 - Mit diesem Freigabemodell erhält Ihr Team Einblick in die Azure-Umgebung, sodass die Teammitglieder Systeme in der Cloud proaktiv verwalten können.
 
 ![Azure-Dashboard](./media/migrate-best-practices-security-management/dashboard.png)
-*Azure-Dashboard*
+_Azure-Dashboard_
 
 **Weitere Informationen**:
 
@@ -502,7 +502,7 @@ Sie müssen zu einem bestimmten Zeitpunkt mit Ihrem Supportteam oder den Microso
 - Machen Sie sich mit den verschiedenen Supportplänen vertraut, die für Azure angeboten werden. Diese reichen von Reaktionszeiten für Developer-Instanzen bis hin zu Premier Support mit einer Reaktionszeit von weniger als 15 Minuten.
 
 ![Supportpläne](./media/migrate-best-practices-security-management/support.png)
-*Supportpläne*
+_Supportpläne_
 
 **Weitere Informationen**:
 
@@ -519,7 +519,7 @@ Azure-VMs immer mit den neuesten Betriebssystem- und Softwareupdates auf dem neu
 - Darüber hinaus können Azure-VMs bei System Center Configuration Manager registriert werden. Danach können Sie die Configuration Manager-Workload nach Azure migrieren und Berichterstellung und Softwareupdates über eine einzige Webschnittstelle ausführen.
 
 ![VM-Updates](./media/migrate-best-practices-security-management/updates.png)
-*Updates*
+_Updates_
 
 **Weitere Informationen**:
 
@@ -543,7 +543,7 @@ Azure bietet in Azure Automation eine Lösung für die Änderungsnachverfolgung:
 - Im Dashboard der Änderungsnachverfolgung können Sie ganz einfach die Änderungen erkennen, die an Ihrer Serverinfrastruktur vorgenommen wurden.
 
 ![Change Management](./media/migrate-best-practices-security-management/change.png)
-*Change Management*
+_Change Management_
 
 **Weitere Informationen**:
 

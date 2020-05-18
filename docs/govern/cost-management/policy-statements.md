@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7908dfe5a4ab63d37f97296cf8b830f358a2f4ea
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: d686d50b98cbdef31c48d27f20d1c66f942e0818
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434649"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220497"
 ---
 # <a name="cost-management-sample-policy-statements"></a>Beispiele für Cost Management-Richtlinienanweisungen
 
@@ -29,7 +29,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine kostenb
 
 **Geschäftsrisiko:** Aktuelle Kriterien, die eine Investition in eine Cost Management-Disziplin vonseiten des Governanceteams nicht rechtfertigen. Sie erwarten jedoch eine solche Investition in der Zukunft.
 
-**Richtlinienanweisung:** Sie müssen alle in der Cloud bereitgestellten Ressourcen einer Abrechnungseinheit und einer Anwendung/Workload zuordnen. Diese Richtlinie stellt sicher, dass künftige Cost Management-Bemühungen effektiv verlaufen.
+**Richtlinienanweisung:** Sie müssen alle in der Cloud bereitgestellten Ressourcen einer Abrechnungseinheit und einer Anwendung oder Workload zuordnen. Mit dieser Richtlinie wird sichergestellt, dass Ihre Cost Management-Disziplin wirksam ist.
 
 **Entwurfsoptionen:** Informationen zum Einrichten einer zukunftssicheren Grundlage finden Sie in der Diskussionen zum Erstellen einer Governance-MVP in den [nützlichen Governancevorgehensweisen](../guides/index.md), die im Cloud Adoption Framework-Leitfaden enthalten sind.
 
@@ -78,7 +78,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine kostenb
 
 Verwenden Sie die in diesem Artikel erwähnten Beispiele als Ausgangspunkt für die Entwicklung von Richtlinien, die bestimmte Geschäftsrisiken behandeln, die Ihren Plänen für die Einführung der Cloud entsprechen.
 
-Laden Sie die Vorlage [Cost Management](./template.md) herunter, um mit der Entwicklung eigener, benutzerdefinierter Richtlinienanweisungen im Zusammenhang mit Cost Management zu beginnen.
+Wenn Sie mit der Entwicklung Ihrer eigenen benutzerdefinierten Richtlinienanweisungen zu Cost Management beginnen möchten, laden Sie die [Richtlinienvorlage „Cost Management“](./template.md) herunter.
 
 Um die Einführung dieser Disziplin zu beschleunigen, wählen Sie den [umsetzbaren Governanceleitfaden](../guides/index.md) aus, der am besten zu Ihrer Umgebung passt. Ändern Sie dann den Entwurf, um Ihre speziellen Entscheidungen für Unternehmensrichtlinien zu integrieren.
 

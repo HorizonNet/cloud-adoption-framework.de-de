@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 35e7f2a09dd1421f0d57808658a96135dcf8e947
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b07ded7b1d2ede7bc354709a798180daedfdae3b
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997604"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83216162"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategie für Governance bzw. Compliance
 
@@ -30,11 +30,14 @@ Die Konfiguration der grundlegenden Azure-Umgebung kann sich erheblich ändern, 
 
 **ISO 27001-Blaupausen für die Compliance**: Für Kunden, die Compliancestandards gemäß ISO einhalten müssen, kann das [Blaupausenbeispiel „ISO 27001: Gemeinsame Dienste“](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared) als effektiveres MVP dienen, um umfassendere Governanceeinschränkungen bereits frühzeitig im iterativen Prozess zu generieren. Das [Blaupausenbeispiel „ISO 27001: App Service-Umgebungs-/SQL-Datenbank-Workload“](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload) baut auf dieser Blaupause auf, um Kontrollen zuzuordnen und eine allgemeine Architektur für eine Anwendungsumgebung bereitzustellen. Wenn weitere Blaupausen für die Compliance veröffentlicht werden, werden wir hier auch auf diese verweisen.
 
-**Virtuelles Rechenzentrum**: Ein robusterer Ausgangspunkt für die Governance kann erforderlich sein. Ziehen Sie in solchen Fällen das [virtuelle Azure-Rechenzentrum](../../reference/vdc.md) (Virtual Datacenter, VDC) in Betracht. Dieser Ansatz wird häufig bei einer unternehmensweiten Einführung vorgeschlagen, insbesondere bei einem Umfang von über 10.000 Ressourcen. Er ist im Allgemeinen auch die erste Wahl für komplexe Governanceszenarien, wenn eine der folgenden Anforderungen erfüllt sein muss: umfangreiche Complianceanforderungen von Drittanbietern, tiefgreifendes Fachwissen oder Parität mit ausgereiften IT-Governancerichtlinien und Complianceanforderungen.
+<!-- TODO: Refactor VDC content below. -->
+<!-- docsTest:ignore "Azure Virtual Datacenter" -->
+
+**Virtuelles Azure-Rechenzentrum:** Ein robusterer Ausgangspunkt für die Governance kann erforderlich sein. Ziehen Sie in solchen Fällen das [virtuelle Azure-Rechenzentrum](../../reference/vdc.md) (Virtual Datacenter, VDC) in Betracht. Dieser Ansatz wird häufig bei einer unternehmensweiten Einführung vorgeschlagen, insbesondere bei einem Umfang von über 10.000 Ressourcen. Er ist auch die Standardwahl bei komplexen Governanceszenarien, wenn eine der folgenden Anforderungen erfüllt werden muss: umfangreiche Complianceanforderungen von Drittanbietern, tiefgreifendes Fachwissen oder Parität mit ausgereiften IT-Governancerichtlinien und Complianceanforderungen.
 
 ### <a name="partnership-option-to-complete-prerequisites"></a>Partnerschaften zum Erfüllen von Voraussetzungen
 
-**Microsoft Services**: Microsoft Services stellt Lösungsangebote bereit, die am Cloud Adoption Framework-Governancemodell, an Complianceblaupausen oder an Optionen des virtuellen Rechenzentrums ausgerichtet werden können, um sicherzustellen, dass das am besten geeignete Modell für Governance bzw. Compliance zum Einsatz kommt. Nutzen Sie das Lösungsangebot [Secure Cloud Insights (SCI)](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf), um ein datengesteuertes Bild einer Kundenbereitstellung in Azure zu erhalten und den Reifegrad der Azure-Implementierung des Kunden zu überprüfen. Gleichzeitig lässt sich ermitteln, ob vorhandene Bereitstellungsarchitekturen optimiert und Sicherheits- und Verfügbarkeitsrisiken hinsichtlich der Governance eliminiert werden können. Basierend auf den Erkenntnissen sollten Sie folgende Ansätze ausführen:
+**Microsoft Services**: Microsoft Services stellt Lösungsangebote bereit, die am Cloud Adoption Framework-Governancemodell, an Complianceblaupausen oder an Optionen des virtuellen Rechenzentrums ausgerichtet werden können, um sicherzustellen, dass das am besten geeignete Modell für Governance bzw. Compliance zum Einsatz kommt. Nutzen Sie das Lösungsangebot [Secure Cloud Insights (SCI)](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf), um ein datengesteuertes Bild einer Kundenbereitstellung in Azure zu erhalten und den Reifegrad der Azure-Implementierung des Kunden zu überprüfen. Gleichzeitig lässt sich ermitteln, ob vorhandene Bereitstellungsarchitekturen optimiert sowie Sicherheits- und Verfügbarkeitsrisiken im Hinblick auf die Governance eliminiert werden können. Basierend auf den Erkenntnissen sollten Sie folgende Ansätze ausführen:
 
 - **Cloudgrundlagen**: Legen Sie mithilfe des Lösungsangebots [Hybrid Cloud Foundation (HCF)](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf) die wichtigsten Entwürfe, Muster und die Governancearchitektur des Kunden für Azure fest. Ordnen Sie die Anforderungen des Kunden der jeweils am besten geeigneten Referenzarchitektur zu. Implementieren Sie ein Minimum Viable Product, bestehend aus gemeinsam genutzten Diensten und IaaS-Workloads.
 - **Cloudmodernisierung**: Nutzen Sie das Lösungsangebot [Cloud Modernization](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) (Cloudmodernisierung) als umfassende Vorgehensweise zum Verschieben von Anwendungen, Daten und Infrastrukturen in eine unternehmensfähige Cloud sowie zum Optimieren und Modernisieren nach der Cloudbereitstellung.
@@ -48,19 +51,19 @@ Während der Bewertung müssen weitere Entscheidungen getroffen werden, um die P
 
 Die Anforderungen an die Bewertung von Governance und Compliance sind zu kundenspezifisch, um allgemeine Richtlinien zu den tatsächlichen Schritten zu erstellen, die während der Bewertung ausgeführt werden. Der Prozess sollte jedoch Aufgaben und eine zeitliche Planung für die „Ausrichtung an Compliance-/Governanceanforderungen“ enthalten. Weitere Informationen zu diesen Anforderungen finden Sie unter den folgenden Links:
 
-Detaillierte Informationen zur Governance finden Sie in der [Übersicht über die fünf Disziplinen der Cloudgovernance](../../govern/governance-disciplines.md). Der Abschnitt zum Cloud Adoption Framework enthält auch Vorlagen zum Dokumentieren von Richtlinien, Anleitungen und Anforderungen für jede der fünf Disziplinen:
+Detaillierte Informationen zur Governance finden Sie in der Übersicht über die [Fünf Disziplinen der Cloudgovernance](../../govern/governance-disciplines.md). Dieser Abschnitt zum Cloud Adoption Framework enthält Vorlagen zum Dokumentieren der Richtlinien, Anleitungen und Anforderungen für jede der fünf Disziplinen:
 
-- [Cost Management](../../govern/cost-management/template.md)
-- [Sicherheitsbaseline](../../govern/security-baseline/template.md)
-- [Ressourcenkonsistenz](../../govern/resource-consistency/template.md)
-- [Identitätsbaseline](../../govern/identity-baseline/template.md)
-- [Beschleunigung der Bereitstellung](../../govern/deployment-acceleration/template.md)
+- [Disziplin „Kostenverwaltung“](../../govern/cost-management/template.md)
+- [Disziplin „Sicherheitsbaseline“](../../govern/security-baseline/template.md)
+- [Disziplin „Ressourcenkonsistenz“](../../govern/resource-consistency/template.md)
+- [Disziplin „Identitätsbaseline“](../../govern/identity-baseline/template.md)
+- [Disziplin „Beschleunigung der Bereitstellung“](../../govern/deployment-acceleration/template.md)
 
-Anleitungen zum Entwickeln von Governancerichtlinien basierend auf dem Cloud Adoption Framework-Governancemodell finden Sie unter [Implementieren einer Cloudgovernancestrategie](../../govern/corporate-policy.md).
+Informationen zum Entwickeln von Governancerichtlinien basierend auf dem Cloud Adoption Framework-Governancemodell finden Sie unter [Implementieren einer Cloudgovernancestrategie](../../govern/corporate-policy.md).
 
 ## <a name="optimize-and-promote-process-changes"></a>Änderungen am Prozess zum Optimieren und Höherstufen
 
-Während der Prozesse zum Optimieren und Höherstufen sollte das Cloudgovernanceteam Zeit investieren, um die Einhaltung von Governance- und Compliancestandards zu testen und zu überprüfen. Dieser Schritt ist auch ein guter Zeitpunkt, um Prozesse einzuführen, mit denen das Cloudgovernanceteam Vorlagen zusammenstellen kann, mit denen sich in zukünftigen Projekten die [Bereitstellung beschleunigen](../../govern/deployment-acceleration/index.md) lässt.
+Während der Prozesse zum Optimieren und Höherstufen sollte das Cloudgovernanceteam Zeit investieren, um die Einhaltung von Governance- und Compliancestandards zu testen und zu überprüfen. Dieser Schritt ist auch ein guter Zeitpunkt zur Einführung von Prozessen, mit denen das Cloudgovernanceteam Vorlagen zusammenstellen kann, die bei zukünftigen Projekten für die zusätzliche [Disziplin „Beschleunigung der Bereitstellung“](../../govern/deployment-acceleration/index.md) sorgen könnten.
 
 ### <a name="suggested-action-during-the-optimize-and-promote-process"></a>Empfohlene Aktion während des Prozesses der Optimierung und Höherstufung
 

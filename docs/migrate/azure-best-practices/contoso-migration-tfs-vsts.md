@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 2751965389406262a5d72c9ea9d1a506218826bb
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: be509cff8eb1b7a342310975afe50ef1f66e88bd
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80997871"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223727"
 ---
 <!-- cSpell:ignore contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME azuredevopsmigration validateonly -->
 
@@ -70,11 +70,11 @@ Für die Ausführung dieses Szenarios benötigt Contoso Folgendes.
 
 <!-- markdownlint-disable MD033 -->
 
-**Anforderungen** | **Details**
---- | ---
-**Azure-Abonnement** | Contoso hat in einem früheren Artikel dieser Reihe Abonnements erstellt. Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/pricing/free-trial) erstellen.<br/><br/> Wenn Sie ein kostenloses Konto erstellen, sind Sie der Administrator Ihres Abonnements und können alle Aktionen durchführen.<br/><br/> Falls Sie ein vorhandenes Abonnement verwenden und nicht der Administrator sind, müssen Sie mit dem Administrator zusammenarbeiten, damit er Ihnen Berechtigungen vom Typ „Besitzer“ oder „Mitwirkender“ zuweist.<br/><br/> Wenn Sie detailliertere Berechtigungen benötigen, lesen Sie [diesen Artikel](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control).
-**Azure-Infrastruktur** | Contoso richtet die Azure-Infrastruktur ein, wie in [Azure infrastructure for migration (Azure-Infrastruktur für die Migration)](./contoso-migration-infrastructure.md) beschrieben.
-**Lokaler TFS-Server** | Lokal muss entweder TFS 2018 Upgrade 2 ausgeführt werden, oder das Upgrade muss während dieses Vorgangs erfolgen.
+| **Anforderungen** | **Details** |
+| --- | --- |
+| **Azure-Abonnement** | Contoso hat in einem früheren Artikel dieser Reihe Abonnements erstellt. Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/pricing/free-trial) erstellen. <br><br> Wenn Sie ein kostenloses Konto erstellen, sind Sie der Administrator Ihres Abonnements und können alle Aktionen durchführen. <br><br> Falls Sie ein vorhandenes Abonnement verwenden und nicht der Administrator sind, müssen Sie mit dem Administrator zusammenarbeiten, damit er Ihnen Berechtigungen vom Typ „Besitzer“ oder „Mitwirkender“ zuweist. <br><br> Wenn Sie detailliertere Berechtigungen benötigen, lesen Sie [diesen Artikel](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control). |
+| **Azure-Infrastruktur** | Contoso richtet die Azure-Infrastruktur ein, wie in [Azure infrastructure for migration (Azure-Infrastruktur für die Migration)](./contoso-migration-infrastructure.md) beschrieben. |
+| **Lokaler TFS-Server** | Lokal muss entweder TFS 2018 Upgrade 2 ausgeführt werden, oder das Upgrade muss während dieses Vorgangs erfolgen. |
 
 ## <a name="scenario-steps"></a>Szenarioschritte
 
@@ -282,7 +282,7 @@ Die DACPAC-Datei wird von den Contoso-Administratoren wie folgt generiert:
 
     ![Backup](./media/contoso-migration-tfs-vsts/backup2.png)
 
-3. Sie überprüfen die Eigenschaften der DACPAC-Datei.
+3. Contoso überprüft die Eigenschaften der DACPAC-Datei.
 
     ![Backup](./media/contoso-migration-tfs-vsts/backup3.png)
 

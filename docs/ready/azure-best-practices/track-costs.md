@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b444c94686f6314fb2922e8b2c6ed99fea57e6ec
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: aff6ee1eb16f1e2ab671c20bea61093d68b99fe4
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81396115"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223302"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Nachverfolgen von Kosten für Geschäftseinheiten, Umgebungen oder Projekte
 
@@ -28,7 +28,7 @@ Ressourcen sind alle virtuellen Computer, Datenquellen und Anwendungen, die in d
 
 ### <a name="classification"></a>Klassifizierung
 
-*Tagging* ist eine einfache Möglichkeit zum Klassifizieren von Ressourcen. Beim Tagging werden einer Ressource Metadaten zugeordnet. Diese Metadaten können verwendet werden, um die Ressource anhand verschiedener Datenpunkte zu klassifizieren. Wenn Tags im Rahmen einer Aufgabe für die Kostenverwaltung zum Klassifizieren von Ressourcen verwendet werden, benötigen Unternehmen häufig die folgenden Tags: Geschäftseinheit, Abteilung, Abrechnungscode, Geografie, Umgebung, Projekt, Workload oder „Anwendungskategorisierung“. Azure Cost Management kann diese Tags zum Erstellen von verschiedenen Ansichten der Kostendaten verwenden.
+_Tagging_ ist eine einfache Möglichkeit zum Klassifizieren von Ressourcen. Beim Tagging werden einer Ressource Metadaten zugeordnet. Diese Metadaten können verwendet werden, um die Ressource anhand verschiedener Datenpunkte zu klassifizieren. Wenn Tags im Rahmen einer Aufgabe für die Kostenverwaltung zum Klassifizieren von Ressourcen verwendet werden, benötigen Unternehmen häufig die folgenden Tags: Geschäftseinheit, Abteilung, Abrechnungscode, Geografie, Umgebung, Projekt, Workload oder „Anwendungskategorisierung“. Azure Cost Management kann diese Tags zum Erstellen von verschiedenen Ansichten der Kostendaten verwenden.
 
 Das Tagging ist das wichtigste Verahren, wenn es um das Verständnis der Daten im Rahmen der Kostenberichterstattung geht. Es ist ein wesentlicher Bestandteil jeder gut verwalteten Umgebung. Darüber hinaus ist dies der erste Schritt zur Erzielung von Governance für eine Umgebung.
 
@@ -72,6 +72,8 @@ Die Verwaltung der Kosten ist eine Teamaktivität. Im Abschnitt zur Bereitschaft
 Die generell empfohlene bewährte Methode besteht darin, ein Modell mit geringstmöglichen Rechten zu verwenden, um Personen verschiedenen Rollen und Bereichen zuzuweisen.
 
 ### <a name="roles"></a>Rollen
+
+<!-- docsTest:ignore Owner Contributor Reader "Cost Management Contributor" "Cost Management Reader" -->
 
 Azure Cost Management unterstützt für jeden der Bereiche die folgenden integrierten Rollen:
 
@@ -117,7 +119,7 @@ Azure Cost Management ist ein gut dokumentiertes Tool zum Festlegen von Budgets 
 
 ### <a name="get-started-with-azure-cost-management"></a>Erste Schritte mit Azure Cost Management
 
-Weitere Informationen zu den ersten Schritten mit Azure Cost Management finden Sie unter [Optimieren der Cloudinvestitionen mit Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=https://docs.microsoft.com/azure/cloud-adoption-framework/toc.json&bc=https://docs.microsoft.com/azure/cloud-adoption-framework/_bread/toc.json).
+Wenn Sie mit der Verwendung von Azure Cost Management beginnen möchten, lesen Sie [Optimieren der Cloudinvestitionen mit Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json).
 
 ### <a name="use-azure-cost-management"></a>Azure Cost Management verwenden
 

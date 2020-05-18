@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f6dfc621d20f2f2d3135e99be197e3fdfd315bdc
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 401acfb2a0689fe54d43c29a8ab32a8d6e218670
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425397"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219766"
 ---
 # <a name="tools-to-interact-with-devices-in-azure"></a>Tools für die Interaktion mit Geräten in Azure
 
@@ -33,10 +33,16 @@ Diese Art der digitalen Erfindung kann durch eine der folgenden Ebenen der Umgeb
 
 In Azure werden häufig die folgenden Tools genutzt, um digitale Erfindungen auf allen vorherigen Ebenen von Umgebungslösungen zu beschleunigen. Diese Tools werden nach dem Grad der Erfahrung gruppiert, der erforderlich ist, um die Komplexität bei der Ausrichtung der Tools auf diese Erfahrungen zu reduzieren.
 
-- Mobiles Erlebnis: Azure App Service, PowerApps, Microsoft Flow, Intune
-- Mixed Reality: Unity, Azure Spatial Anchors, HoloLens
-- Integrierte Realität: Azure IoT Hub, Azure Sphere, Azure Kinect DK
-- Angepasste Realität: IoT Cloud to Device, Azure Digital Twins + HoloLens
+<!-- markdownlint-disable MD033 -->
+
+| Category | Tools |
+|---|---|
+| Mobile Oberflächen | <li> Azure App Service <li> PowerApps <li> Microsoft Flow <li> Intune |
+| Mixed Reality | <li> Unity <li> Azure Spatial Anchors <li> HoloLens |
+| Integrierte Realität | <li> Azure IoT Hub <li> Azure Sphere <li> Azure Kinect DK |
+| Angepasste Realität | <li> IoT Cloud-zu-Gerät <li> Azure Digital Twins + HoloLens |
+
+<!--markdownlint-enable MD033 -->
 
 ## <a name="get-started"></a>Erste Schritte
 

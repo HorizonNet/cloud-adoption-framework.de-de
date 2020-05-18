@@ -8,20 +8,19 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
-tags: azure-resource-manager
 ms.custom: virtual-network
-ms.openlocfilehash: 5ab24d655327584bd1f6363ac439c1ffcacaccec
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 7ae47eb7fbc7008ff4c7cbed20768386149bf7e1
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80995119"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83215567"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs -->
 
 # <a name="hub-and-spoke-network-topology"></a>Hub-and-Spoke-Netzwerktopologie
 
-*Hub-and-Spoke* ist ein Netzwerkmodell für eine effizientere Verwaltung gemeinsamer Kommunikations- oder Sicherheitsanforderungen. Es hilft auch dabei, Azure-Abonnementeinschränkungen zu vermeiden. Dieses Modell berücksichtigt die folgenden Punkte:
+_Hub-and-Spoke_ ist ein Netzwerkmodell für eine effizientere Verwaltung gemeinsamer Kommunikations- oder Sicherheitsanforderungen. Es hilft auch dabei, Azure-Abonnementeinschränkungen zu vermeiden. Dieses Modell berücksichtigt die folgenden Punkte:
 
 - **Kosteneinsparungen und Effizienz der Verwaltung** Zentralisierung von Diensten, die von mehreren Workloads, z.B. Network Virtual Appliances (NVAs) und DNS-Servern an einem zentralen Standort gemeinsam genutzt werden können. Auf diese Weise kann die IT-Abteilung redundante Ressourcen und den Verwaltungsaufwand minimieren.
 - **Umgehen von Abonnementgrenzen** Große cloudbasierte Workloads können den Einsatz von mehr Ressourcen erfordern, als in einem einzelnen Azure-Abonnements zulässig ist. Durch ein Peering virtueller Netzwerke für eine Workload aus verschiedenen Abonnements zu einem zentralen Hub können diese Grenzwerte umgangen werden. Weitere Informationen finden Sie unter [Grenzwerte für Azure-Abonnements](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits).
@@ -39,7 +38,7 @@ Kleinere Cloudumgebungen profitieren möglicherweise nicht von der zusätzlichen
 
 ![Beispiele zur Hub-and-Spoke-Netzwerktopologie][1]
 
-Wie in der Abbildung gezeigt, unterstützt Azure zwei Arten von Hub-and-Spoke-Entwürfen. Kommunikation, gemeinsame Ressourcen und zentralisierte Sicherheitsrichtlinien („VNet Hub“ in der Abbildung) oder ein Virtual WAN-Typ („Virtual WAN“ in der Abbildung) für umfassende Kommunikation zwischen Branches oder zwischen einem Branch und Azure werden unterstützt.
+Wie in der Abbildung gezeigt, unterstützt Azure zwei Arten von Hub-and-Spoke-Entwürfen. Kommunikation, freigegebene Ressourcen und zentralisierte Sicherheitsrichtlinien („virtueller Netzwerkhub“ im Diagramm) oder ein virtueller WAN-Typ („Virtual WAN“ im Diagramm) für umfassende Kommunikation zwischen Branches oder zwischen einem Branch und Azure werden unterstützt.
 
 Ein Hub ist eine zentrale Netzwerkzone, die den ein- oder ausgehenden Datenverkehr zwischen Zonen steuert und überprüft: im Internet, lokal und in den Spokes. Die Hub-Spoke-Topologie stellt für Ihre IT-Abteilung eine effektive Möglichkeit zum Erzwingen von Sicherheitsrichtlinien an einem zentralen Ort dar. Außerdem verringert sie das Risiko von Fehlkonfigurationen und Offenlegungen.
 
@@ -84,6 +83,6 @@ Spokes können auch mit einem Spoke verbunden werden, der als Hub fungiert. Bei 
 
 <!-- images -->
 
-[1]: ../../_images/azure-best-practices/network-hub-spoke-high-level.png "Allgemeines Beispiel für Hub-and-Spoke"
-[2]: ../../_images/azure-best-practices/network-hub-spokes-cluster.png "Cluster mit Hub und Spokes"
-[3]: ../../_images/azure-best-practices/network-spoke-to-spoke.png "Spoke-zu-Spoke"
+[1]: ../../_Images/azure-best-practices/network-hub-spoke-high-level.png "Allgemeines Beispiel für Hub-and-Spoke"
+[2]: ../../_Images/azure-best-practices/network-hub-spokes-cluster.png "Cluster mit Hubs und Spokes"
+[3]: ../../_Images/azure-best-practices/network-spoke-to-spoke.png "Spoke-zu-Spoke"

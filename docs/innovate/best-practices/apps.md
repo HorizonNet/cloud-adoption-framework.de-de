@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8ff62f3a508fa033f882101b13fd85f90526bab3
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: fe217a1fb6379522d8afccc9640bdd32409eb1cd
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80425572"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83219817"
 ---
 # <a name="tools-to-engage-via-apps-in-azure"></a>Tools zum Interagieren durch Apps in Azure
 
@@ -32,7 +32,7 @@ Basierend auf diesen Annahmen sind die folgenden drei Wege die häufigsten für 
 - **Intelligente Benutzererlebnisse:** Erstellen Sie mithilfe von Cloudplattformen moderne Benutzererlebnisse, um eine schnelle Bereitstellung und kurze Feedbackschleifen zu fördern. Erweitern Sie Webanwendungen, um intelligente Funktionen oder sogar Bots zu integrieren.
 - **Cloudnativ**: Erstellen Sie eine neue Lösung, die auf natürliche Weise von Cloudfunktionen profitiert.
 
-Jeder Weg führt zu Vor- und Nachteilen, die sowohl kurzfristig als auch langfristig sind. Wenn das Cloudgovernanceteam, das Cloudbetriebsteam und das Cloudkompetenzteam bereit sind, jeden Ansatz zu unterstützen, kann die Einführung beschleunigt werden, was sich nur minimal auf den nachhaltigen Geschäftsbetrieb auswirkt.
+Jeder Weg führt zu Vor- und Nachteilen, die sowohl kurzfristig als auch langfristig sind. Wenn das Cloudgovernanceteam, das Cloudbetriebsteam und das Cloudkompetenzteam bereit sind, jeden Ansatz zu unterstützen, kann die Einführung beschleunigt werden. Dies hat nur minimale Auswirkungen auf den nachhaltigen Geschäftsbetrieb.
 
 ## <a name="toolchain"></a>Toolkette
 

@@ -1,6 +1,6 @@
 ---
-title: 'Kostenverwaltung: Geschäftsrisiken'
-description: Hier finden Sie grundlegende Informationen und Beispiele für die typische Kundenakzeptanz einer Kostenverwaltungsdisziplin im Rahmen einer Cloudgovernancestrategie. 
+title: Beweggründe und Geschäftsrisiken in der Disziplin „Kostenverwaltung“
+description: Hier finden Sie grundlegende Informationen und Beispiele für die typische Kundenakzeptanz einer Kostenverwaltungsdisziplin im Rahmen einer Cloudgovernancestrategie.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,26 +8,24 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0afb5c3a4c8c1f355083ae6d4734ca4fa45b34ca
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 08ae1bab0697fdd7bbffecca18c62e5ae637c2b6
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434709"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220718"
 ---
 <!-- cSpell:ignore prepurchases -->
 
-# <a name="cost-management-motivations-and-business-risks"></a>Kostenverwaltung: Motivationen und Geschäftsrisiken
+# <a name="motivations-and-business-risks-in-the-cost-management-discipline"></a>Beweggründe und Geschäftsrisiken in der Disziplin „Kostenverwaltung“
 
 In diesem Artikel werden die Gründe beschrieben, warum Kunden typischerweise eine Disziplin „Kostenverwaltung“ in ihre Cloud Governance-Strategie integrieren. Darüber hinaus werden einige Beispiele für Geschäftsrisiken aufgeführt, die zu Richtlinienanweisungen führen.
 
-<!-- markdownlint-disable MD026 -->
-
-## <a name="is-cost-management-relevant"></a>Ist Kostenverwaltung relevant?
+## <a name="relevance"></a>Relevance
 
 Im Hinblick auf die Kostenkontrolle führt die Einführung der Cloud zu einem Paradigmenwechsel. Die Kostenverwaltung in einer traditionellen lokalen Welt basiert auf Aktualisierungszyklen, Rechenzentrumseinkäufen, Hostverlängerungen und Problemen der laufenden Wartung. Sie können alle diese Kosten prognostizieren, planen und verfeinern und mit den jährlichen Investitionsbudgets abstimmen.
 
-Bei der Kostenverwaltung im Zusammenhang mit Cloudlösungen neigen viele Unternehmen dazu, einen reaktiven Ansatz zu verfolgen. In vielen Fällen kaufen Unternehmen im Voraus eine bestimmte Menge von Clouddiensten bzw. verpflichten sich zur deren Nutzung. Bei diesem Modell wird davon ausgegangen, dass die Maximierung von Rabatten, basierend darauf, wie viel das Unternehmen für die Ausgaben bei einem bestimmten Cloudanbieter plant, die Wahrnehmung eines proaktiven, geplanten Kostenzyklus schafft. Diese Wahrnehmung lässt sich allerdings nur dann umsetzen, wenn das Unternehmen auch eine ausgereifte Disziplin „Kostenverwaltung“ implementiert.
+Bei der Kostenverwaltung im Zusammenhang mit Cloudlösungen neigen viele Unternehmen dazu, einen reaktiveren Ansatz zu verfolgen. In vielen Fällen kaufen Unternehmen im Voraus eine bestimmte Menge von Clouddiensten bzw. verpflichten sich zur deren Nutzung. Bei diesem Modell wird davon ausgegangen, dass die Maximierung von Rabatten, basierend darauf, wie viel das Unternehmen für die Ausgaben bei einem bestimmten Cloudanbieter plant, die Wahrnehmung eines proaktiven, geplanten Kostenzyklus schafft. Diese Wahrnehmung lässt sich allerdings nur dann umsetzen, wenn das Unternehmen auch ausgereifte Disziplinen für „Kostenverwaltung“ implementiert.
 
 Die Cloud bietet Self-Service-Funktionen, die in herkömmlichen lokalen Rechenzentren bisher unbeachtet waren. Diese neuen Funktionen befähigen Unternehmen, agiler, weniger restriktiv und offener für die Einführung neuer Technologien zu sein. Der Nachteil der Self-Service-Funktionen besteht jedoch darin, dass Endbenutzer unwissentlich die zugewiesenen Budgets überschreiten können. Umgekehrt kann es bei denselben Benutzern zu unerwarteten Planänderungen kommen, wodurch die prognostizierte Menge an Clouddiensten nicht benötigt werden. Die Möglichkeit einer Verschiebung in beide Richtungen rechtfertigt Investitionen in eine Disziplin „Kostenverwaltung“ innerhalb des Governanceteams.
 
@@ -44,7 +42,7 @@ Die Risiken werden je nach Organisation unterschiedlich sein, aber die folgenden
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Dokumentieren Sie mit der [Cloudverwaltungsvorlage](./template.md) die Geschäftsrisiken, die wahrscheinlich durch den aktuellen Cloudeinführungsplan entstehen.
+Dokumentieren Sie mit der [Richtlinienvorlage „Kostenverwaltung“](./template.md) die Geschäftsrisiken, die durch den aktuellen Cloudeinführungsplan wahrscheinlich entstehen.
 
 Sobald Sie mit realistischen Geschäftsrisiken vertraut sind, besteht der nächste Schritt darin, die Risikotoleranz des Unternehmens zu dokumentieren sowie die Indikatoren und Schlüsselmetriken zur Überwachung dieser Toleranz zu erfassen.
 

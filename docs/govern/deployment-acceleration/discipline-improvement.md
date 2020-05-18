@@ -8,24 +8,24 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 97f8a82295a8eff5614c965ba583fcbf8d50f501
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 835614ca30fc4fc5ca3e617e920f46aa4039cd8b
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434583"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220361"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>Verbesserung der Disziplin „Beschleunigung der Bereitstellung“
 
-Bei der Disziplin „Beschleunigung der Bereitstellung“ geht es darum, Richtlinien einzurichten, die sicherstellen, dass Ressourcen konsistent und wiederholbar bereitgestellt und konfiguriert werden und während des gesamten Lebenszyklus richtlinienkonform sind. Innerhalb der fünf Disziplinen der Cloudgovernance umfasst die Beschleunigung der Bereitstellung Entscheidungen zu Folgendem: Automatisierung von Bereitstellungen, Quellsteuerung von Bereitstellungsartefakten, Überwachung bereitgestellter Ressourcen zur Aufrechterhaltung des gewünschten Zustands und Überwachung von Complianceproblemen.
+Bei der Disziplin „Beschleunigung der Bereitstellung“ geht es darum, Richtlinien einzurichten, die sicherstellen, dass Ressourcen konsistent und wiederholbar bereitgestellt und konfiguriert werden und während des gesamten Lebenszyklus richtlinienkonform sind. Innerhalb der fünf Disziplinen der Cloudgovernance umfasst die Disziplin „Beschleunigung der Bereitstellung“ Entscheidungen zu Folgendem: Automatisierung von Bereitstellungen, Quellsteuerung von Bereitstellungsartefakten, Überwachung bereitgestellter Ressourcen zur Aufrechterhaltung des gewünschten Zustands und Überwachung von Complianceproblemen.
 
 Dieser Artikel beschreibt einige potenzielle Aufgaben, die Ihr Unternehmen ausführen kann, um die Disziplin „Beschleunigung der Bereitstellung“ besser erstellen und weiterentwickeln zu können. Diese Aufgaben lassen sich in verschiedene Phasen der Implementierung einer Cloudlösung unterteilen: Planung, Erstellung, Einführung und Betrieb. Diese Phasen werden dann durchlaufen und ermöglichen die Entwicklung eines [inkrementellen Ansatzes für die Cloudgovernance](../guides/index.md#an-incremental-approach-to-cloud-governance).
 
 ![Vier Phasen der Einführung](../../_images/govern/adoption-phases.png)
 
-*Abbildung 1: Einführungsphasen des inkrementellen Ansatzes für die Cloudgovernance.*
+_Abbildung 1: Einführungsphasen des inkrementellen Ansatzes für die Cloudgovernance._
 
-Es ist unmöglich, die Anforderungen aller Unternehmen in einem einzigen Dokument zu berücksichtigen. Daher werden in diesem Artikel die empfohlenen mindestens auszuführenden Aktivitäten sowie Beispiele für potenzielle Aktivitäten für jede Phase des Weiterentwicklungsprozesses für die Governance beschrieben. Ziel dieser Aktivitäten ist es, Sie beim Aufbau eines [Richtlinien-MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) und bei der Einrichtung eines Frameworks für die inkrementelle Verbesserung der Richtlinie zu unterstützen. Ihr Cloudgovernanceteam muss entscheiden, wie viel in diese Aktivitäten investiert werden soll, um Ihre Funktionen für die Governance der Identitätsbaseline zu verbessern.
+Es ist unmöglich, die Anforderungen aller Unternehmen in einem einzigen Dokument zu berücksichtigen. Daher werden in diesem Artikel die empfohlenen mindestens auszuführenden Aktivitäten sowie Beispiele für potenzielle Aktivitäten für jede Phase des Weiterentwicklungsprozesses für die Governance beschrieben. Ziel dieser Aktivitäten ist es, Sie beim Aufbau eines [Richtlinien-MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) und bei der Einrichtung eines Frameworks für die inkrementelle Verbesserung der Richtlinie zu unterstützen. Ihr Cloudgovernanceteam muss entscheiden, wie viel in diese Aktivitäten investiert werden soll, um Ihre Disziplin „Identitätsbaseline“ zu verbessern.
 
 > [!CAUTION]
 > Weder die in diesem Artikel beschriebenen mindestens erforderlichen noch die potenziellen Aktivitäten sind auf bestimmte Unternehmensrichtlinien oder Complianceanforderungen von Drittanbietern ausgerichtet. Dieser Leitfaden soll bei Gesprächen über die Ausrichtung beider Anforderungen auf ein Cloudgovernancemodell helfen.
@@ -37,13 +37,13 @@ Diese Entwicklungsphase der Governance überbrückt die Lücke zwischen Geschäf
 **Mindestens empfohlene Aktivitäten:**
 
 - Bewerten Sie die Optionen Ihrer [Toolkette für die Beschleunigung der Bereitstellung](./toolchain.md), und implementieren Sie eine Hybridstrategie, die für Ihre Organisation geeignet ist.
-- Entwerfen Sie ein Dokument mit Architekturrichtlinien, und geben Sie dieses an die wichtigsten Beteiligten weiter.
+- Entwerfen Sie ein Dokument mit Architekturrichtlinien, und geben Sie es an die wichtigsten Beteiligten weiter.
 - Schulen und beteiligen Sie die Personen und Teams, die von diesen Architekturrichtlinien betroffen sind.
-- Schulen Sie Entwicklungsteams und IT-Mitarbeiter, damit diese die DevSecOps-Prinzipien und -Strategien und die Bedeutung vollständig automatisierter Bereitstellungen in der Disziplin „Beschleunigung der Bereitstellung“ genau verstehen.
+- Schulen Sie Entwicklungsteams und IT-Mitarbeiter, damit sie die DevSecOps-Prinzipien und -Strategien sowie die Bedeutung vollständig automatisierter Bereitstellungen in der Disziplin „Beschleunigung der Bereitstellung“ genau verstehen.
 
 **Potenzielle Aktivitäten:**
 
-- Definieren Sie Rollen und Zuweisungen, die die Beschleunigung der Bereitstellung in der Cloud regeln.
+- Definieren Sie Rollen und Zuweisungen, die die Beschleunigung der Bereitstellung in der Cloud regeln werden.
 
 ## <a name="build-and-predeployment"></a>Erstellung und Aktivitäten vor der Bereitstellung
 
@@ -54,7 +54,7 @@ Diese Entwicklungsphase der Governance überbrückt die Lücke zwischen Geschäf
 - Speichern Sie alle Geheimnisse, Kennwörter, Zertifikate und Verbindungszeichenfolgen in [Azure Key Vault](https://docs.microsoft.com/azure/key-vault).
 - Ziehen Sie die Durchführung eines Pilottests in Betracht, bevor Sie Ihre [Toolkette für die Beschleunigung der Bereitstellung](./toolchain.md) implementieren, um sicherzustellen, dass diese Ihre Bereitstellungen so weit wie möglich optimiert. Wenden Sie Feedback aus den Pilottests während der Phase vor der Bereitstellung an, und wiederholen Sie die Tests ggf.
 - Bewerten Sie die logische und physische Architektur Ihrer Anwendungen, und identifizieren Sie Möglichkeiten, um die Bereitstellung von Anwendungsressourcen zu automatisieren oder Teile der Architektur mithilfe anderer cloudbasierter Ressourcen zu verbessern.
-- Aktualisieren Sie das Dokument mit Architekturrichtlinien mit den Plänen für die Bereitstellung und die Akzeptanz durch Benutzer, und geben Sie dieses an die wichtigsten Beteiligten weiter.
+- Aktualisieren Sie das Dokument mit Architekturrichtlinien mit den Plänen für die Bereitstellung und die Akzeptanz durch Benutzer, und geben Sie es an die wichtigsten Beteiligten weiter.
 - Setzen Sie die Schulung der Personen und Teams fort, die von den Architekturrichtlinien am meisten betroffen sind.
 
 **Potenzielle Aktivitäten:**
@@ -68,7 +68,7 @@ Migration ist ein inkrementeller Prozess, bei dem der Schwerpunkt auf der Verlag
 **Mindestens empfohlene Aktivitäten:**
 
 - Migrieren Sie Ihre [Toolkette für die Beschleunigung der Bereitstellung](./toolchain.md) aus der Entwicklung in die Produktion.
-- Aktualisieren Sie das Dokument mit Architekturrichtlinien, und geben Sie dieses an die wichtigsten Beteiligten weiter.
+- Aktualisieren Sie das Dokument mit Architekturrichtlinien, und geben Sie es an die wichtigsten Beteiligten weiter.
 - Entwickeln Sie Schulungsmaterialien und Dokumentation, Materialien zum Bekanntmachen der Migration, Incentives und weitere Programme, um die Akzeptanz durch die Entwickler und die IT-Abteilung zu unterstützen.
 
 **Potenzielle Aktivitäten:**
@@ -82,7 +82,7 @@ Nachdem die Transformation abgeschlossen ist, müssen Governance und Betrieb wä
 
 **Mindestens empfohlene Aktivitäten:**
 
-- Passen Sie Ihre [Toolkette für die Beschleunigung der Bereitstellung](./toolchain.md) an die Änderungen der Identitätsanforderungen Ihrer Organisation an.
+- Passen Sie Ihre [Toolkette für die Beschleunigung der Bereitstellung](./toolchain.md) aufgrund der sich ändernden Anforderungen Ihrer Organisation an.
 - Automatisieren Sie Benachrichtigungen und Berichte, damit Sie bei potenziellen Konfigurationsproblemen oder Bedrohungen gewarnt werden.
 - Überwachen Sie die Anwendungs- und Ressourcennutzung, und erstellen Sie entsprechende Berichte.
 - Erstellen Sie Berichte zu Metriken nach der Bereitstellung, und geben Sie sie an die Beteiligten weiter.
@@ -97,7 +97,7 @@ Nachdem die Transformation abgeschlossen ist, müssen Governance und Betrieb wä
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Sie kennen jetzt das Konzept der Identitätsgovernance in der Cloud. Als Nächstes sollten Sie die [Toolkette für die Identitätsbaseline](./toolchain.md) untersuchen, um die Azure-Tools und -Features zu identifizieren, die Sie bei der Entwicklung der Governancedisziplin „Identitätsbaseline“ auf der Azure-Plattform benötigen.
+Sie kennen jetzt das Konzept der Identitätsgovernance in der Cloud. Als Nächstes sollten Sie die [Toolkette für die Identitätsbaseline](./toolchain.md) untersuchen, um die Azure-Tools und -Features zu identifizieren, die Sie bei der Entwicklung Ihrer Disziplin „Identitätsbaseline“ auf der Azure-Plattform benötigen.
 
 > [!div class="nextstepaction"]
 > [Identitätsbaseline-Toolkette für Azure](./toolchain.md)

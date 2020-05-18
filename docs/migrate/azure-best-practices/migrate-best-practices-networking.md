@@ -1,18 +1,18 @@
 ---
 title: Einrichten von Netzwerken für zu Azure migrierte Workloads
-description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um sich über die bewährten Methoden zum Einrichten von Netzwerken für Ihre migrierten Workloads zu informieren.
+description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um sich über bewährte Methoden (Best Practices) zum Einrichten von Netzwerken für Ihre migrierten Workloads zu informieren.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 067e84e433fa995c79b588698240afea06e54660
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 75a89a0020b4c0ae7ab336ab0d3789bf5096dab7
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120019"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83222401"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -50,8 +50,8 @@ Wenn Sie im Rahmen der Migration VNETs erstellen, ist es wichtig, Ihren VNET-IP-
 **Weitere Informationen**:
 
 - Verschaffen Sie sich einen [Überblick über Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview).
-- Lesen Sie die [Häufig gestellten Fragen (FAQ) zu Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-faq).
-- Erfahren Sie mehr über [Grenzwerte für Azure-Netzwerke](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json#networking-limits).
+- Lesen Sie [Häufig gestellte Fragen zu Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-faq).
+- Erfahren Sie mehr über [Grenzwerte für Azure-Netzwerke](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits).
 
 ## <a name="best-practice-implement-a-hub-and-spoke-network-topology"></a>Bewährte Methode: Implementieren einer Hub-Spoke-Netzwerktopologie
 
@@ -69,7 +69,7 @@ Beachten Sie Folgendes:
 - Hub-Spoke-VNETs können in verschiedenen Ressourcengruppen und sogar in verschiedenen Abonnements implementiert werden. Wenn Sie eine Peerverbindung zwischen virtuellen Netzwerken in verschiedenen Abonnements herstellen, können die Abonnements demselben oder einem anderen Azure AD-Mandanten (Azure Active Directory) zugeordnet sein. Dies ermöglicht nicht nur eine dezentralisierte Verwaltung der einzelnen Workloads, sondern auch die gemeinsame Nutzung von Diensten im Hub-VNET.
 
 ![Change Management](./media/migrate-best-practices-networking/hub-spoke.png)
-*Hub-Spoke-Topologie*
+_Hub-Spoke-Topologie_
 
 **Weitere Informationen**:
 
@@ -92,11 +92,11 @@ Um Isolation innerhalb eines VNET bereitzustellen, segmentieren Sie es in mindes
 
 Die Tabelle zeigt ein Beispiel für ein VNET mit einem Adressbereich von 10.245.16.0/20 (segmentiert in Subnetze) für eine geplante Migration.
 
-**Subnetz** | **CIDR** | **Adressen** | **Verwenden Sie**
---- | --- | --- | ---
-DEV-FE-EUS2 | 10.245.16.0/22 | 1019 | Front-End/Webschicht-VMs
-DEV-APP-EUS2 | 10.245.20.0/22 | 1019 | App-Schicht-VMs
-DEV-DB-EUS2 | 10.245.24.0/23 | 507 | Datenbank-VMs
+| **Subnetz** | **CIDR** | **Adressen** | **Verwenden Sie** |
+| --- | --- | --- | --- |
+| DEV-FE-EUS2 | 10.245.16.0/22 | 1019 | Front-End/Webschicht-VMs |
+| DEV-APP-EUS2 | 10.245.20.0/22 | 1019 | App-Schicht-VMs |
+| DEV-DB-EUS2 | 10.245.24.0/23 | 507 | Datenbank-VMs |
 
 **Weitere Informationen**:
 
@@ -107,8 +107,8 @@ DEV-DB-EUS2 | 10.245.24.0/23 | 507 | Datenbank-VMs
 
 Azure fügt standardmäßig einen DNS-Server hinzu, wenn Sie ein VNET bereitstellen. So können Sie schnell VNETs erstellen und Ressourcen bereitstellen. Dieser DNS-Server bietet jedoch nur Dienste für die Ressourcen im jeweiligen VNET an. Wenn Sie mehrere VNETs miteinander verbinden oder von den VNETs aus eine Verbindung mit einem lokalen Server herstellen möchten, benötigen Sie zusätzliche Funktionen zur Namensauflösung. Beispielsweise muss Active Directory möglicherweise DNS-Namen zwischen virtuellen Netzwerken auflösen. Zu diesem Zweck stellen Sie Ihren eigenen benutzerdefinierten DNS-Server in Azure bereit.
 
-- DNS-Server in einem VNET können DNS-Abfragen an die rekursiven Konfliktlöser in Azure weiterleiten. Dadurch können Sie Hostnamen innerhalb dieses VNET auflösen. Beispielsweise kann ein in Azure ausgeführter Domänencontroller auf DNS-Abfragen für die eigenen Domänen antworten und alle anderen Abfragen an Azure weiterleiten.
-- Durch die DNS-Weiterleitung sind sowohl Ihre lokalen Ressourcen (über den Domänencontroller) als auch die von Azure bereitgestellten Hostnamen (über die Weiterleitung) für die virtuellen Computer sichtbar. Der Zugriff auf die rekursiven Konfliktlöser in Azure wird über die virtuelle IP-Adresse 168.63.129.16 bereitgestellt.
+- DNS-Server in einem virtuellen Netzwerk können DNS-Abfragen an die rekursiven Resolver in Azure weiterleiten. Dadurch können Sie Hostnamen innerhalb dieses virtuellen Netzwerks auflösen. Beispielsweise kann ein in Azure ausgeführter Domänencontroller auf DNS-Abfragen für die eigenen Domänen antworten und alle anderen Abfragen an Azure weiterleiten.
+- Durch die DNS-Weiterleitung sind sowohl Ihre lokalen Ressourcen (über den Domänencontroller) als auch die von Azure bereitgestellten Hostnamen (über die Weiterleitung) für die virtuellen Computer sichtbar. Der Zugriff auf die rekursiven Resolver in Azure wird über die virtuelle IP-Adresse `168.63.129.16` bereitgestellt.
 - Durch die DNS-Weiterleitung wird außerdem eine DNS-Auflösung zwischen VNETs ermöglicht, sodass die lokalen Computer von Azure bereitgestellte Hostnamen auflösen können.
   - Um den Hostnamen eines virtuellen Computers aufzulösen, muss sich die DNS-Server-VM im selben VNET befinden und zur Weiterleitung von Abfragen für Hostnamen an Azure konfiguriert sein.
   - Da jedes VNET ein eigenes DNS-Suffix verwendet, können Sie mithilfe von Regeln für die bedingte Weiterleitung DNS-Abfragen zur Auflösung an das richtige VNET senden.
@@ -116,7 +116,7 @@ Azure fügt standardmäßig einen DNS-Server hinzu, wenn Sie ein VNET bereitstel
 - Die für eine Netzwerkschnittstelle oder einen Clouddienst angegebenen DNS-Server besitzen Vorrang vor den für das VNET angegebenen DNS-Servern.
 - Im Azure Resource Manager-Bereitstellungsmodell können Sie DNS-Server für ein VNET und eine Netzwerkschnittstelle angeben. Es wird jedoch als bewährte Methode empfohlen, die Einstellung nur für VNETs zu verwenden.
 
-    ![DNS-Server](./media/migrate-best-practices-networking/dns2.png) *DNS-Server für ein VNET*
+    ![DNS-Server](./media/migrate-best-practices-networking/dns2.png) _DNS-Server für ein VNET_
 
 **Weitere Informationen**:
 
@@ -133,14 +133,14 @@ Verfügbarkeitszonen sorgen für höhere Verfügbarkeit, um Ihre Apps und Daten 
 - Die physische Trennung von Verfügbarkeitszonen innerhalb einer Region schützt Anwendungen und Daten vor Ausfällen von Rechenzentren.
 - Zonenredundante Dienste replizieren Ihre Anwendungen und Daten zum Schutz vor Single Points of Failure in mehrere Verfügbarkeitszonen. Mit Verfügbarkeitszonen bietet Azure eine Betriebszeit-SLA von 99,99 Prozent für VMs.
 
-    ![Verfügbarkeitszone](./media/migrate-best-practices-networking/availability-zone.png) *Verfügbarkeitszone*
+    ![Verfügbarkeitszone](./media/migrate-best-practices-networking/availability-zone.png) _Verfügbarkeitszone_
 
 - Planen und integrieren Sie Hochverfügbarkeit in Ihre Migrationsarchitektur, indem Sie Ihre Compute-, Speicher-, Netzwerk- und Datenressourcen in eine Zone aufnehmen und in anderen Zonen replizieren. Azure-Dienste, die Verfügbarkeitszonen unterstützen, können in zwei Kategorien unterteilt werden:
-  - Zonendienste: Sie ordnen eine Ressource einer bestimmten Zone zu. Beispiel: VMs, verwaltete Datenträger und IP-Adressen.
-  - Zonenredundante Dienste: Die Ressource wir automatisch zonenübergreifend repliziert. Beispiel: zonenredundanter Speicher, Azure SQL-Datenbank.
+  - **Zonendienste:** Sie ordnen eine Ressource einer bestimmten Zone – z B. VMs, verwalteten Datenträgern oder IP-Adressen – zu.
+  - **Zonenredundante Dienste:** Die Ressource wird zonenübergreifend automatisch repliziert, z. B. zonenredundanter Speicher oder Azure SQL-Datenbank.
 - Sie können eine Standard-Azure-Last bereitstellen, die mit dem Internet zugewandten Workloads oder App-Schichten ausgeglichen wird, um zonengebundene Fehlertoleranz bereitzustellen.
 
-    ![Lastenausgleich](./media/migrate-best-practices-networking/load-balancer.png) *Lastenausgleich*
+    ![Lastenausgleich](./media/migrate-best-practices-networking/load-balancer.png) _Lastenausgleich_
 
 **Weitere Informationen**:
 
@@ -183,7 +183,7 @@ Beim Einrichten eines Site-to-Site-VPN gehen Sie folgendermaßen vor:
 - BGP (Border Gateway Protocol) ist ein optionales Feature, das Sie mit Azure ExpressRoute und routenbasierten VPN-Gateways verwenden können, um Ihre lokalen BGP-Routen auf Ihre VNETs zu verteilen.
 
 ![VPN](./media/migrate-best-practices-networking/vpn.png)
-*Site-to-Site-VPN*
+_Site-to-Site-VPN_
 
 **Weitere Informationen**:
 
@@ -260,7 +260,7 @@ Nehmen Sie weiter an, dass Sie über jeweils eine Azure-Bereitstellung (z.B. Azu
   - Ihr WAN geht möglicherweise davon aus, dass beide Präfixe näher bei „USA, Osten“ als bei „USA, Westen“ liegen, und leitet daher Benutzer aus beiden Niederlassungen an die ExpressRoute-Leitung in „USA, Osten“ weiter, sodass für Benutzer in der Niederlassung in Los Angeles eine suboptimale Leistung erzielt wird.
 
 ![VPN](./media/migrate-best-practices-networking/bgp1.png)
-*Nicht optimierte Verbindung über BGP-Communitys*
+_Nicht optimierte Verbindung über BGP-Communitys_
 
 **Lösung:**
 
@@ -273,7 +273,7 @@ Zum Optimieren des Routings für die Benutzer beider Niederlassungen müssen Sie
 - Diese Konfiguration stellt bei Verfügbarkeit beider Pfade zu Microsoft sicher, dass Benutzer in Los Angeles über die westliche Leitung eine Verbindung mit der Azure-Region „USA, Westen“ herstellen und Benutzer in New York über die östliche Leitung eine Verbindung mit der Azure-Region „USA, Osten“. Das Routing ist somit auf beiden Seiten optimiert.
 
 ![VPN](./media/migrate-best-practices-networking/bgp2.png)
-*Optimierte Verbindung über BGP-Communitys*
+_Optimierte Verbindung über BGP-Communitys_
 
 **Weitere Informationen**:
 
@@ -303,7 +303,7 @@ Wenngleich Microsoft hohe Investitionen in den Schutz der Cloudinfrastruktur tä
 Die nachfolgende Abbildung zeigt ein Beispiel für ein Umkreisnetzwerk mit einem einzigen Subnetz in einem Unternehmensnetzwerk. Es umfasst zwei Sicherheitsgrenzen.
 
 ![VPN](./media/migrate-best-practices-networking/perimeter.png)
-*Bereitstellung eines Umkreisnetzwerks*
+_Bereitstellung eines Umkreisnetzwerks_
 
 **Weitere Informationen**:
 
@@ -341,7 +341,7 @@ Diensttags ersparen Ihnen die manuelle Arbeit beim Zuweisen einer Regel zu Grupp
 
 - Dieses **Sql**-Tag gibt die Adresspräfixe der Azure SQL-Datenbank- und Azure SQL Data Warehouse-Dienste an.
 - Wenn Sie **Sql** als Wert angeben, wird der Datenverkehr für Sql zugelassen oder verweigert.
-- Falls Sie den Zugriff auf **Sql** nur für eine bestimmte Region zulassen möchten, können Sie die betreffende Region angeben. Wenn Sie den Zugriff auf Azure SQL-Datenbank beispielsweise nur für die Region „USA, Osten“ zulassen möchten, können Sie **Sql.EastUS** als Diensttag angeben.
+- Falls Sie den Zugriff auf **Sql** nur für eine bestimmte Region zulassen möchten, können Sie die betreffende Region angeben. Wenn Sie den Zugriff auf Azure SQL-Datenbank beispielsweise nur für die Region „USA, Osten“ zulassen möchten, können Sie **Sql.EastUS** für das Diensttag angeben.
 - Das Tag steht für den Dienst, aber nicht für bestimmte Instanzen des Diensts. Beispielsweise steht das Tag für den Azure SQL-Datenbank-Dienst, aber nicht für eine bestimmte SQL-Datenbank oder einen bestimmten SQL-Server.
 - Alle Adresspräfixe, für die dieses Tag steht, werden auch durch das **Internet**-Tag repräsentiert.
 
@@ -361,25 +361,25 @@ Mit Anwendungssicherheitsgruppen können Sie die Netzwerksicherheit als natürli
 **Beispiel:**
 
 ![Anwendungssicherheitsgruppe](./media/migrate-best-practices-networking/asg.png)
-*Beispiel für eine Anwendungssicherheitsgruppe*
+_Beispiel für eine Anwendungssicherheitsgruppe_
 
-**Netzwerkschnittstelle** | **Anwendungssicherheitsgruppe**
---- | ---
-NIC1 | AsgWeb
-NIC2 | AsgWeb
-NIC3 | AsgLogic
-NIC4 | AsgDb
+| **Netzwerkschnittstelle** | **Anwendungssicherheitsgruppe** |
+| --- | --- |
+| NIC1 | AsgWeb |
+| NIC2 | AsgWeb |
+| NIC3 | AsgLogic |
+| NIC4 | AsgDb |
 
 - In unserem Beispiel gehört jede Netzwerkschnittstelle nur einer Anwendungssicherheitsgruppe an, aber tatsächlich kann eine Schnittstelle mehreren Gruppen angehören (in Übereinstimmung mit der Azure-Grenzwerten).
 - Keiner der Netzwerkschnittstellen ist eine NSG zugeordnet. NSG1 ist beiden Subnetzen zugeordnet und enthält die folgenden Regeln.
 
-<!--markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 -->
 
-**Regelname** | **Zweck** | **Details**
---- | --- | ---
-Allow-HTTP-Inbound-Internet | Hiermit wird Datenverkehr aus dem Internet an die Webserver zugelassen. Eingehender Datenverkehr aus dem Internet wird durch die Standardsicherheitsregel „DenyAllInbound“ verweigert, daher ist keine zusätzliche Regel für die Anwendungssicherheitsgruppen „AsgLogic“ oder „AsgDb“ erforderlich. | Priorität: 100<br/><br/> Quelle: Internet<br/><br/> Quellport: *<br/><br/> Ziel: AsgWeb<br/><br/> Zielport: 80<br/><br/> Protokoll: TCP<br/><br/> Zugriff: Zulassen.
-Deny-Database-All | Die Standardsicherheitsregel „AllowVNetInBound“ erlaubt die gesamte Kommunikation zwischen Ressourcen im gleichen VNET, daher ist diese Regel erforderlich, um den Datenverkehr von allen Ressourcen zu verweigern. | Priorität: 120<br/><br/> Quelle: *<br/><br/> Quellport: *<br/><br/> Ziel: AsgDb<br/><br/> Zielport: 1433<br/><br/> Protokoll: All<br/><br/> Zugriff: Verweigern.
-Allow-Database-BusinessLogic | Diese Regel lässt Datenverkehr von der Anwendungssicherheitsgruppe „AsgLogic“ an die Anwendungssicherheitsgruppe „AsgDb“ zu. Da die Priorität für diese Regel höher ist als die Priorität der Regel „Deny-Database-All“, wird diese Regel zuerst verarbeitet. Dies führt dazu, dass Datenverkehr von der Anwendungssicherheitsgruppe „AsgLogic“ zugelassen und jeglicher andere Datenverkehr blockiert wird. | Priorität: 110<br/><br/> Quelle: AsgLogic<br/><br/> Quellport: *<br/><br/> Ziel: AsgDb<br/><br/> Zielport: 1433<br/><br/> Protokoll: TCP<br/><br/> Zugriff: Zulassen.
+| **Regelname** | **Zweck** | **Details** |
+| --- | --- | --- |
+| Allow-HTTP-Inbound-Internet | Hiermit wird Datenverkehr aus dem Internet an die Webserver zugelassen. Eingehender Datenverkehr aus dem Internet wird durch die Standardsicherheitsregel „DenyAllInbound“ verweigert, daher ist keine zusätzliche Regel für die Anwendungssicherheitsgruppen „AsgLogic“ oder „AsgDb“ erforderlich. | Priorität: 100 <br><br> Quelle: Internet <br><br> Quellport: \* <br><br> Ziel: AsgWeb <br><br> Zielport: 80 <br><br> Protokoll: TCP <br><br> Zugriff: Zulassen. |
+| Deny-Database-All | Die Standardsicherheitsregel „AllowVNetInBound“ erlaubt die gesamte Kommunikation zwischen Ressourcen im gleichen VNET, daher ist diese Regel erforderlich, um den Datenverkehr von allen Ressourcen zu verweigern. | Priorität: 120 <br><br> Quelle: \* <br><br> Quellport: \* <br><br> Ziel: AsgDb <br><br> Zielport: 1433 <br><br> Protokoll: All <br><br> Zugriff: Verweigern. |
+| Allow-Database-BusinessLogic | Diese Regel lässt Datenverkehr von der Anwendungssicherheitsgruppe „AsgLogic“ an die Anwendungssicherheitsgruppe „AsgDb“ zu. Da die Priorität für diese Regel höher ist als die Priorität der Regel „Deny-Database-All“, wird diese Regel zuerst verarbeitet. Dies führt dazu, dass Datenverkehr von der Anwendungssicherheitsgruppe „AsgLogic“ zugelassen und jeglicher andere Datenverkehr blockiert wird. | Priorität: 110 <br><br> Quelle: AsgLogic <br><br> Quellport: \* <br><br> Ziel: AsgDb <br><br> Zielport: 1433 <br><br> Protokoll: TCP <br><br> Zugriff: Zulassen. |
 
 <!--markdownlint-enable MD033 -->
 
@@ -398,7 +398,7 @@ Durch VNET-Dienstendpunkte wird Ihr privater VNET-Adressraum und die Identität 
 - Nachdem Dienstendpunkte in Ihrem VNET aktiviert wurden, können Sie Ressourcen von Azure-Diensten schützen, indem Sie den Dienstressourcen eine VNET-Regel hinzufügen. Auf diese Weise erhöhen Sie die Sicherheit, da der Ressourcenzugriff über das öffentliche Internet vollständig verhindert und nur Datenverkehr aus Ihrem VNET zugelassen wird.
 
 ![Dienstendpunkte](./media/migrate-best-practices-networking/endpoint.png)
-*Dienstendpunkte*
+_Dienstendpunkte_
 
 **Weitere Informationen**:
 
@@ -430,7 +430,7 @@ Azure bietet Features für die Plattformsicherheit, die benutzerfreundlich sind 
 Azure Firewall ist ein verwalteter, cloudbasierter Netzwerksicherheitsdienst zum Schutz Ihrer VNET-Ressourcen. Es handelt sich dabei um eine vollständig zustandsbehaftete verwaltete Firewall mit integrierter Hochverfügbarkeit und uneingeschränkter Cloudskalierbarkeit.
 
 ![Dienstendpunkte](./media/migrate-best-practices-networking/firewall.png)
-*Azure Firewall*
+_Azure Firewall_
 
 - Azure Firewall kann Richtlinien zur Anwendungs- und Netzwerkkonnektivität übergreifend für Abonnements und VNETs zentral erstellen, erzwingen und protokollieren.
 - Azure Firewall verwendet eine statische öffentliche IP-Adresse für Ihre VNET-Ressourcen, die es außenstehenden Firewalls ermöglicht, Datenverkehr aus Ihrem VNET zu identifizieren.
@@ -442,8 +442,8 @@ Azure Firewall ist ein verwalteter, cloudbasierter Netzwerksicherheitsdienst zum
 
 **Weitere Informationen**:
 
-- [Verschaffen Sie sich einen Überblick](https://docs.microsoft.com/azure/firewall/overview) über Azure Firewall.
-- [Erfahren Sie mehr](https://docs.microsoft.com/azure/firewall/fqdn-tags) über FQDN-Tags.
+- Lesen Sie einen [Überblick über Azure Firewall](https://docs.microsoft.com/azure/firewall/overview).
+- Erfahren Sie mehr über [FQDN-Tags in Azure Firewall](https://docs.microsoft.com/azure/firewall/fqdn-tags).
 
 ## <a name="best-practice-deploy-a-web-application-firewall-waf"></a>Bewährte Methode: Bereitstellen einer Web Application Firewall (WAF)
 
@@ -468,7 +468,7 @@ Die Web Application Firewall (WAF) ist ein Feature von Azure Application Gateway
 Azure Network Watcher bietet Tools zum Überwachen von Ressourcen und Kommunikation in einem Azure-VNET. Beispielsweise können Sie die Kommunikation zwischen einem virtuellen Computer und einem Endpunkt wie z.B. einem anderen virtuellen Computer oder FQDN überwachen, Ressourcen und Ressourcenbeziehungen in einem VNET anzeigen oder Probleme mit Netzwerkdatenverkehr diagnostizieren.
 
 ![Network Watcher](./media/migrate-best-practices-networking/network-watcher.png)
-*Network Watcher*
+_Network Watcher_
 
 - Mithilfe von Network Watcher können Sie Netzwerkprobleme überwachen und diagnostizieren, ohne sich bei Ihren VMs anmelden zu müssen.
 - Sie können mithilfe von Warnungen die Paketerfassung auslösen und in Echtzeit Zugriff auf Leistungsinformationen auf Paketebene erhalten. Wenn Sie ein Problem feststellen, können Sie dieses detailliert untersuchen.
@@ -488,19 +488,19 @@ Für komplexere Netzwerktopologien können Sie Sicherheitsprodukte von Microsoft
 
 - Eine virtuelle Netzwerkappliance ist ein virtueller Computer, der eine Netzwerkfunktion (Firewall, WAN-Optimierung oder Ähnliches) übernimmt.
 - Durch virtuelle Netzwerkappliances werden VNET-Sicherheits- und Netzwerkfunktionen gestärkt. Sie können für hoch verfügbare Firewalls, Eindringschutz, Angriffserkennung, Web Application Firewalls (WAFs), WAN-Optimierung, Routing, Lastenausgleich, VPN, Zertifikatverwaltung, Active Directory und mehrstufige Authentifizierung bereitgestellt werden.
-- Virtuelle Netzwerkappliances ist von einer Vielzahl von Anbietern im  [Azure Marketplace](https://azuremarketplace.microsoft.com) verfügbar.
+- Virtuelle Netzwerkappliances von zahlreichen Anbietern stehen im [Azure Marketplace](https://azuremarketplace.microsoft.com) zur Verfügung.
 
 ## <a name="best-practice-implement-firewalls-and-nvas-in-hub-networks"></a>Bewährte Methode: Implementieren von Firewalls und NVAs im Hubnetzwerken
 
 Im Hub wird das Umkreisnetzwerk (mit Zugriff auf das Internet) normalerweise über eine Azure Firewall, eine Firewallfarm oder eine Web Application Firewall (WAF) verwaltet. Betrachten Sie die folgenden Vergleiche.
 
-<!--markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 -->
 
-**Firewalltyp** | **Details**
---- | ---
-WAFs | Web-Anwendungen sind üblich und weisen häufig Sicherheitsrisiken und Exploits auf.<br/><br/> WAFs sind spezifischer als eine generische Firewall und auf das Erkennen von Angriffen auf Webanwendungen (HTTP/HTTPS) ausgelegt.<br/><br/> Verglichen mit herkömmlichen Firewalls weisen WAFs einen Satz von bestimmten Features auf, um den internen Webserver vor Bedrohungen zu schützen.
-Azure Firewall | Wie eine Farm von Firewalls mit virtuellen Netzwerkappliances verwendet Azure Firewall einen allgemeinen Verwaltungsmechanismus und einen Satz von Sicherheitsregeln zum Schutz der in den Spoke-Netzwerken gehosteten Workloads und zum Steuern des Zugriffs auf lokale Netzwerke.<br/><br/> In Azure Firewall ist die Skalierbarkeit integriert.
-Firewalls mit virtuellen Netzwerkappliances | Wie Azure Firewall verwenden Farms von Firewalls mit virtuellen Netzwerkappliances einen allgemeinen Verwaltungsmechanismus und einen Satz von Sicherheitsregeln zum Schutz der in den Spokes gehosteten Workloads und zum Steuern des Zugriffs auf lokale Netzwerke.<br/><br/> Firewalls mit virtuellen Netzwerkappliances können manuell hinter einem Lastenausgleich skaliert werden.<br/><br/> Eine Firewallfarm mit virtuellen Netzwerkappliances verfügt über weniger spezialisierte Software als ein WAF, muss aber einen umfassenderen Anwendungsbereich filtern und alle Arten von ein- oder ausgehendem Datenverkehr überprüfen.<br/><br/> Wenn Sie virtuelle Netzwerkappliances verwenden möchten, finden Sie diese im Azure Marketplace.
+| **Firewalltyp** | **Details** |
+| --- | --- |
+| WAFs | Web-Anwendungen sind üblich und weisen häufig Sicherheitsrisiken und Exploits auf. <br><br> WAFs sind spezifischer als eine generische Firewall und auf das Erkennen von Angriffen auf Webanwendungen (HTTP/HTTPS) ausgelegt. <br><br> Verglichen mit herkömmlichen Firewalls weisen WAFs einen Satz von bestimmten Features auf, um den internen Webserver vor Bedrohungen zu schützen. |
+| Azure Firewall | Wie eine Farm von Firewalls mit virtuellen Netzwerkappliances verwendet Azure Firewall einen allgemeinen Verwaltungsmechanismus und einen Satz von Sicherheitsregeln zum Schutz der in den Spoke-Netzwerken gehosteten Workloads und zum Steuern des Zugriffs auf lokale Netzwerke. <br><br> In Azure Firewall ist die Skalierbarkeit integriert. |
+| Firewalls mit virtuellen Netzwerkappliances | Wie Azure Firewall verwenden Farms von Firewalls mit virtuellen Netzwerkappliances einen allgemeinen Verwaltungsmechanismus und einen Satz von Sicherheitsregeln zum Schutz der in den Spokes gehosteten Workloads und zum Steuern des Zugriffs auf lokale Netzwerke. <br><br> Firewalls mit virtuellen Netzwerkappliances können manuell hinter einem Lastenausgleich skaliert werden. <br><br> Eine Firewallfarm mit virtuellen Netzwerkappliances verfügt über weniger spezialisierte Software als ein WAF, muss aber einen umfassenderen Anwendungsbereich filtern und alle Arten von ein- oder ausgehendem Datenverkehr überprüfen. <br><br> Wenn Sie virtuelle Netzwerkappliances verwenden möchten, finden Sie diese im Azure Marketplace. |
 
 <!--markdownlint-enable MD033 -->
 

@@ -1,6 +1,6 @@
 ---
 title: Beschleunigung der Bereitstellung – Prozesse für die Richtlinienkonformität
-description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um sich über einen Ansatz für die Erstellung von Prozessen zu informieren, die eine Governancedisziplin vom Typ „Beschleunigung der Bereitstellung“ unterstützen.
+description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um sich über einen Ansatz für die Erstellung von Prozessen zu informieren, die eine Disziplin vom Typ „Beschleunigung der Bereitstellung“ unterstützen.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3c5d6d187e72217c16ca380f6ef433560b647574
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: b56c599be38c83c325ffbd00fba077452019e0e3
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434564"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83220395"
 ---
 # <a name="deployment-acceleration-policy-compliance-processes"></a>Beschleunigung der Bereitstellung – Prozesse für die Richtlinienkonformität
 
-In diesem Artikel wird ein Ansatz für die Prozesse zur Einhaltung der Richtlinien beschrieben, welche die [Beschleunigung der Bereitstellung](./index.md) steuern. Eine wirkungsvolle Governance für die Cloudkonfiguration beginnt mit sich wiederholenden manuellen Prozessen, die zum Erkennen von Problemen und zum Festlegen der Richtlinien entwickelt wurden, die diese Risiken minimieren sollen. Sie können diese Prozesse jedoch auch automatisieren und mit Tools unterstützen, um den durch die Governance bedingten Mehraufwand zu reduzieren und eine schnellere Reaktion auf Abweichungen zu ermöglichen.
+In diesem Artikel wird ein Ansatz für die Prozesse zur Einhaltung der Richtlinien beschrieben, mit denen die [Disziplin „Beschleunigung der Bereitstellung“](./index.md) gesteuert wird. Eine wirkungsvolle Governance für die Cloudkonfiguration beginnt mit sich wiederholenden manuellen Prozessen, die zum Erkennen von Problemen und zum Festlegen der Richtlinien entwickelt wurden, die diese Risiken minimieren sollen. Sie können diese Prozesse jedoch auch automatisieren und mit Tools unterstützen, um den durch die Governance bedingten Mehraufwand zu reduzieren und eine schnellere Reaktion auf Abweichungen zu ermöglichen.
 
 ## <a name="planning-review-and-reporting-processes"></a>Planungs-, Prüfungs- und Berichterstellungsprozesse
 
@@ -31,17 +31,17 @@ Die besten Tools für die Beschleunigung der Bereitstellung in der Cloud sind nu
 
 **Jährliche Planung**: Führen Sie eine jährliche Überprüfung der Strategie für die Beschleunigung der Bereitstellung auf höchster Ebene aus. Ermitteln Sie zukünftige Prioritäten des Unternehmens und aktualisierte Cloud-Einführungsstrategien, um ein potenziell höheres Risiko und neue Konfigurationsanforderungen bzw. sonstige Möglichkeiten zu identifizieren. Nutzen Sie diese Zeit auch, um die neuesten bewährten Methoden für DevOps zu überprüfen und in Ihre Richtlinien und Überprüfungsprozesse zu integrieren.
 
-**Vierteljährliche Prüfung und Planung:** Überprüfen Sie vierteljährlich die Betriebsüberwachungsdaten und Vorfallsberichte, um alle Änderungen zu identifizieren, die an der Richtlinie zur Beschleunigung der Bereitstellung vorgenommen werden müssen. Als Teil dieses Prozesses sollten Sie die aktuellen bewährten Methoden von DevOps und DevTechOps überprüfen und die Richtlinien ggf. entsprechend aktualisieren. Gleichen Sie nach Abschluss der Überprüfung die Entwurfsleitlinien für Anwendungen und Systeme an die aktualisierte Richtlinie an.
+**Vierteljährliche Prüfung und Planung:** Überprüfen Sie vierteljährlich die Betriebsüberwachungsdaten und Vorfallsberichte, um alle Änderungen zu identifizieren, die an der Richtlinie zur Beschleunigung der Bereitstellung vorgenommen werden müssen. Im Rahmen dieses Prozesses sollten Sie die aktuellen bewährten Methoden (Best Practices) von DevOps und DevTechOps überprüfen und die Richtlinien ggf. entsprechend aktualisieren. Gleichen Sie nach Abschluss der Überprüfung die Entwurfsleitlinien für Anwendungen und Systeme an die aktualisierte Richtlinie an.
 
-Dieser Planungsprozess ist auch ein guter Zeitpunkt, um die aktuelle Zusammensetzung Ihres Cloudgovernanceteams auf Wissenslücken im Zusammenhang mit neuen oder sich ändernden Richtlinien und Risiken bei DevOps und der Beschleunigung der Bereitstellung zu überprüfen. Laden Sie relevante IT-Mitarbeiter ein, an Überprüfungen und Planungen teilzunehmen, entweder als zeitlich begrenzte technische Berater oder als ständige Mitglieder Ihres Teams.
+Dieser Planungsprozess ist auch ein guter Zeitpunkt zur Überprüfung der aktuellen Zusammensetzung Ihres Cloudgovernanceteams auf Wissenslücken im Zusammenhang mit neuen oder sich ändernden Richtlinien und Risiken bei DevOps und der Beschleunigung der Bereitstellung. Laden Sie relevante IT-Mitarbeiter ein, an Überprüfungen und Planungen teilzunehmen, entweder als zeitlich begrenzte technische Berater oder als ständige Mitglieder Ihres Teams.
 
 **Aus- und Weiterbildung:** Bieten Sie zweimonatlich Schulungen an, um sicherzustellen, dass IT-Mitarbeiter und Entwickler hinsichtlich Strategie und Anforderungen im Zusammenhang mit der Beschleunigung der Bereitstellung auf dem neuesten Stand sind. Im Rahmen dieses Prozesses überprüfen und aktualisieren Sie alle Unterlagen, Anleitungen oder andere Trainingsmaterialien, um sicherzustellen, dass sie mit den neuesten Unternehmensrichtlinien übereinstimmen.
 
 **Monatliche Überprüfungen und Berichte:** Führen Sie monatlich eine Überprüfung aller Cloudbereitstellungen durch, um eine fortgesetzte Übereinstimmung mit den Konfigurationsrichtlinien zu gewährleisten. Überprüfen Sie bereitstellungsbezogene Aktivitäten mit IT-Mitarbeitern, und identifizieren Sie etwaige Konformitätsprobleme, die noch nicht im Rahmen des laufenden Überwachungs- und Durchsetzungsprozesses behandelt wurden. Als Ergebnis dieser Überprüfung wird ein Bericht für das Cloudstrategieteam und jedes Cloudeinführungsteam erstellt, um die allgemeine Einhaltung der Richtlinie zu kommunizieren. Der Bericht wird außerdem für prüfungsbezogene und rechtliche Zwecke gespeichert.
 
-## <a name="ongoing-monitoring-processes"></a>Fortlaufende Überwachungsprozesse
+## <a name="processes-for-ongoing-monitoring"></a>Prozesse zur fortlaufenden Überwachung
 
-Die Ermittlung, ob Ihre Governancestrategie für die Beschleunigung der Bereitstellung erfolgreich ist, hängt von der Transparenz des aktuellen und vergangenen Zustands Ihrer Cloudinfrastruktur ab. Ohne die Möglichkeit, die relevanten Metriken und Daten im Zusammenhang mit der Betriebsintegrität und den Aktivitäten der Cloudressourcen zu analysieren, können Sie keine Veränderungen bei den Risiken und keine Verstöße gegen Ihre Risikotoleranzen erkennen. Für die oben genannten laufenden Governanceprozesse sind Qualitätsdaten erforderlich, um eine entsprechende Änderung der Richtlinie zu gewährleisten und Ihre Infrastruktur vor wechselnden Bedrohungen und Risiken durch falsch konfigurierte Ressourcen zu schützen.
+Eine erfolgreiche Strategie für die Beschleunigung der Bereitstellung ist abhängig von der Transparenz des aktuellen und vergangenen Zustands Ihrer Cloudinfrastruktur. Ohne die Möglichkeit, die relevanten Metriken und Daten im Zusammenhang mit der Betriebsintegrität und den Aktivitäten der Cloudressourcen zu analysieren, können Sie keine Veränderungen bei den Risiken und keine Verstöße gegen Ihre Risikotoleranzen erkennen. Für die oben genannten laufenden Governanceprozesse sind Qualitätsdaten erforderlich, um eine entsprechende Änderung der Richtlinie zu gewährleisten und Ihre Infrastruktur vor wechselnden Bedrohungen und Risiken durch falsch konfigurierte Ressourcen zu schützen.
 
 Stellen Sie sicher, dass Ihre IT Operations-Teams automatisierte Überwachungssysteme für die Cloudinfrastruktur implementiert haben, welche die entsprechenden Protokolldaten erfassen, die Sie für die Risikobewertung benötigen. Überwachen Sie diese Systeme proaktiv, um eine schnelle Erkennung und Eindämmung potenzieller Richtlinienverletzungen zu gewährleisten und sicherzustellen, dass bei Ihrer Überwachungsstrategie alle Bereitstellungs- und Konfigurationsanforderungen berücksichtigt werden.
 
@@ -59,7 +59,7 @@ Die folgenden Auslöser und Durchsetzungsmaßnahmen sind Beispiele, die Sie bei 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Dokumentieren Sie mit der Vorlage [Cloudverwaltung](./template.md) die Prozesse und Auslöser, die sich an dem aktuellen Cloudeinführungsplan orientieren.
+Verwenden Sie die [Vorlage zur Disziplin „Beschleunigung der Bereitstellung“](./template.md) zum Dokumentieren der Prozesse und Auslöser, die sich am aktuellen Cloudeinführungsplan orientieren.
 
 Anleitungen zur Ausführung von Cloudverwaltungsrichtlinien in Abstimmung mit Einführungsplänen finden Sie im Artikel über Verbesserungen von Disziplinen.
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 7456d74ac4702ee403583148aa8c3f5491ef5721
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0e288b29077d68ee4b0c0522537abe0baaa276ac
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81120717"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83223693"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc smarthotel SQLMI SHWCF SHWEB -->
 
@@ -41,7 +41,7 @@ Das Cloudteam von Contoso hat sich folgende Ziele für die Migration gesetzt. An
 
 **Anforderungen** | **Details**
 --- | ---
-**App** | Die App wird in Azure so wichtig bleiben wie heute.<br/><br/> Sie sollte die gleichen Leistungsmerkmale wie aktuell in VMware aufweisen.<br/><br/> Das Team möchte nicht in die App investieren. Im Moment möchten die Administratoren die App lediglich sicher in die Cloud verschieben.<br/><br/> Die Unterstützung für Windows Server 2008 R2, unter dem die App derzeit läuft, möchte das Team einstellen.<br/><br/> Das Team möchte weg von SQL Server 2008 R2 und hin zu einer modernen PaaS-Datenbankplattform, die den Verwaltungsaufwand minimiert.<br/><br/> Seine Investitionen in die SQL Server-Lizenzierung und in die Software Assurance möchte Contoso nutzen, wo immer dies möglich ist.<br/><br/> Darüber hinaus möchte Contoso die Auswirkungen des Single Point of Failure in der Webebene abschwächen.
+**App** | Die App wird in Azure so wichtig bleiben wie heute. <br><br> Sie sollte die gleichen Leistungsmerkmale wie aktuell in VMware aufweisen. <br><br> Das Team möchte nicht in die App investieren. Im Moment möchten die Administratoren die App lediglich sicher in die Cloud verschieben. <br><br> Die Unterstützung für Windows Server 2008 R2, unter dem die App derzeit läuft, möchte das Team einstellen. <br><br> Das Team möchte weg von SQL Server 2008 R2 und hin zu einer modernen PaaS-Datenbankplattform, die den Verwaltungsaufwand minimiert. <br><br> Seine Investitionen in die SQL Server-Lizenzierung und in die Software Assurance möchte Contoso nutzen, wo immer dies möglich ist. <br><br> Darüber hinaus möchte Contoso die Auswirkungen des Single Point of Failure in der Webebene abschwächen.
 **Einschränkungen** | Die App besteht aus einer ASP.NET-App und einem WCF-Dienst, die auf derselben VM ausgeführt werden. Über den Azure App Service soll dies auf zwei Web-Apps aufgeteilt werden.
 **Azure** | Contoso möchte die App zu Azure migrieren, jedoch nicht auf VMs ausführen. Sowohl in der Web- als auch in der Datenschicht soll auf Azure-PaaS-Dienste zurückgegriffen werden.
 **DevOps** | Contoso möchte auf ein DevOps-Modell umsteigen und Azure DevOps für Builds und Releasepipelines verwenden.
@@ -63,7 +63,7 @@ Nachdem die Ziele und Anforderungen formuliert wurden, entwirft und überprüft 
 ### <a name="proposed-solution"></a>Vorgeschlagene Lösung
 
 - Für die Webebene der App hat sich Contoso dazu entschieden, Azure App Service zu verwenden. Über diesen PaaS-Dienst kann die App mit nur wenigen Konfigurationsänderungen bereitgestellt werden. Contoso führt die Änderung mit Visual Studio durch und stellt zwei Web-Apps bereit. Eine für die Website, und eine für den WCF-Dienst.
-- Um die Anforderungen einer DevOps-Pipeline zu erfüllen, hat Contoso sich dazu entschieden, Azure DevOps für die Quellcodeverwaltung mit Git-Repositorys zu verwenden. Mithilfe automatisierter Builds und Releases wird der Code erstellt und in Azure App Service bereitgestellt.
+- Um die Anforderungen einer DevOps-Pipeline erfüllen zu können, hat Contoso Azure DevOps für die Quellcodeverwaltung mit Git-Repositorys ausgewählt. Mithilfe automatisierter Builds und Releases wird der Code erstellt und in Azure App Service bereitgestellt.
 
 ### <a name="database-considerations"></a>Überlegungen zu Datenbanken
 
@@ -85,8 +85,8 @@ Contoso wertet den vorgeschlagen Entwurf durch Erstellen einer Liste mit Vor- un
 
 **Aspekt** | **Details**
 --- | ---
-**Vorteile** | Der Code der App SmartHotel360 muss für die Migration zu Azure nicht geändert werden.<br/><br/> Contoso kann seine Investition in die Software Assurance mit dem Azure-Hybridvorteil für SQL Server und Windows Server nutzen.<br/><br/> Nach der Migration muss Windows Server 2008 R2 nicht unterstützt werden. Weitere Informationen finden Sie in der [Microsoft Lifecycle-Richtlinie](https://aka.ms/lifecycle).<br/><br/> Contoso kann die Webebene der App mit mehreren Instanzen konfigurieren, sodass sie kein Single Point of Failure mehr ist.<br/><br/> Die Datenbank ist nicht mehr auf das veraltete SQL Server 2008 R2 angewiesen.<br/><br/> Die verwaltete SQL-Instanz unterstützt die technischen Anforderungen und Ziele von Contoso.<br/><br/> Eine verwaltete Instanz bietet 100% Kompatibilität mit der aktuellen Bereitstellung und ermöglicht gleichzeitig den Ausstieg aus SQL Server 2008 R2.<br/><br/> Contoso kann seine Investition in die Software Assurance mit dem Azure-Hybridvorteil für sowohl SQL Server als auch Windows Server nutzen.<br/><br/> Der Azure Database Migration Service kann für zusätzliche Migrationen in der Zukunft genutzt werden.<br/><br/> Die verwaltete SQL-Instanz bietet integrierte Fehlertoleranz, die nicht von Contoso konfiguriert werden muss. Dadurch wird sichergestellt, dass die Datenschicht kein Single Point of Failover mehr ist.
-**Nachteile** | Azure App Service unterstützt nur eine App-Bereitstellung für jede Web-App. Dies bedeutet, dass zwei Web-Apps bereitgestellt werden müssen (eine für die Website und eine für den WCF-Dienst).<br/><br/>Für die Datenschicht stellt die verwaltete Instanz möglicherweise nicht die beste Lösung dar, wenn Contoso das Betriebssystem oder den Datenbankserver anpassen oder Drittanbieter-Apps mit SQL Server ausführen möchte. Eine Ausführung von SQL Server auf einer IaaS-VM könnte diese Flexibilität bieten.
+**Vorteile** | Der Code der App SmartHotel360 muss für die Migration zu Azure nicht geändert werden. <br><br> Contoso kann seine Investition in die Software Assurance mit dem Azure-Hybridvorteil für SQL Server und Windows Server nutzen. <br><br> Nach der Migration muss Windows Server 2008 R2 nicht unterstützt werden. Weitere Informationen finden Sie in der [Microsoft Lifecycle-Richtlinie](https://aka.ms/lifecycle). <br><br> Contoso kann die Webebene der App mit mehreren Instanzen konfigurieren, sodass sie kein Single Point of Failure mehr ist. <br><br> Die Datenbank ist nicht mehr auf das veraltete SQL Server 2008 R2 angewiesen. <br><br> Die verwaltete SQL-Instanz unterstützt die technischen Anforderungen und Ziele von Contoso. <br><br> Eine verwaltete Instanz bietet 100% Kompatibilität mit der aktuellen Bereitstellung und ermöglicht gleichzeitig den Ausstieg aus SQL Server 2008 R2. <br><br> Contoso kann seine Investition in die Software Assurance mit dem Azure-Hybridvorteil für sowohl SQL Server als auch Windows Server nutzen. <br><br> Der Azure Database Migration Service kann für zusätzliche Migrationen in der Zukunft genutzt werden. <br><br> Die verwaltete SQL-Instanz bietet integrierte Fehlertoleranz, die nicht von Contoso konfiguriert werden muss. Dadurch wird sichergestellt, dass die Datenschicht kein Single Point of Failover mehr ist.
+**Nachteile** | Azure App Service unterstützt nur eine App-Bereitstellung für jede Web-App. Dies bedeutet, dass zwei Web-Apps bereitgestellt werden müssen (eine für die Website und eine für den WCF-Dienst). <br><br> Für die Datenschicht stellt die verwaltete Instanz möglicherweise nicht die beste Lösung dar, wenn Contoso das Betriebssystem oder den Datenbankserver anpassen oder Drittanbieter-Apps mit SQL Server ausführen möchte. Eine Ausführung von SQL Server auf einer IaaS-VM könnte diese Flexibilität bieten.
 
 <!-- markdownlint-enable MD033 -->
 
@@ -118,7 +118,7 @@ Für die Ausführung dieses Szenarios benötigt Contoso Folgendes:
 
 **Anforderungen** | **Details**
 --- | ---
-**Azure-Abonnement** | Contoso hat in einem früheren Artikel Abonnements erstellt. Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/pricing/free-trial) erstellen.<br/><br/> Wenn Sie ein kostenloses Konto erstellen, sind Sie der Administrator Ihres Abonnements und können alle Aktionen durchführen.<br/><br/> Falls Sie ein vorhandenes Abonnement verwenden und nicht der Administrator sind, müssen Sie mit dem Administrator zusammenarbeiten, damit er Ihnen Berechtigungen vom Typ „Besitzer“ oder „Mitwirkender“ zuweist.
+**Azure-Abonnement** | Contoso hat in einem früheren Artikel Abonnements erstellt. Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/pricing/free-trial) erstellen. <br><br> Wenn Sie ein kostenloses Konto erstellen, sind Sie der Administrator Ihres Abonnements und können alle Aktionen durchführen. <br><br> Falls Sie ein vorhandenes Abonnement verwenden und nicht der Administrator sind, müssen Sie mit dem Administrator zusammenarbeiten, damit er Ihnen Berechtigungen vom Typ „Besitzer“ oder „Mitwirkender“ zuweist.
 **Azure-Infrastruktur** | [Weitere Informationen](./contoso-migration-infrastructure.md) zur Vorgehensweise von Contoso beim Einrichten einer Azure-Infrastruktur.
 
 <!--markdownlint-enable MD033 -->
@@ -144,7 +144,7 @@ Contoso benötigt ein Subnetz, das die folgenden Anforderungen erfüllt, um eine
 - Nachdem die verwaltete Instanz erstellt wurde, sollte Contoso dem Subnetz keine Ressourcen hinzufügen.
 - Dem Subnetz darf keine Netzwerksicherheitsgruppe zugeordnet sein.
 - Das Subnetz muss über eine benutzerdefinierte Routingtabelle verfügen. Die folgende Route sollte die einzige zugewiesene Route sein: 0.0.0.0/0, nächster Hop „Internet“.
-- Optionales benutzerdefiniertes DNS: Wenn ein benutzerdefiniertes DNS für das virtuelle Azure-Netzwerk angegeben ist, muss die IP-Adresse des rekursiven Azure-Konfliktlösers (z.B. 168.63.129.16) der Liste hinzugefügt werden. Informieren Sie sich, wie Sie [ein benutzerdefiniertes DNS für eine verwaltete Azure SQL-Datenbank-Instanz konfigurieren](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns).
+- Wenn ein optionales benutzerdefiniertes DNS für das virtuelle Netzwerk angegeben wird, muss die virtuelle IP-Adresse `168.63.129.16` für die rekursiven Resolver in Azure zur Liste hinzugefügt werden. Hier erfahren Sie, wie Sie [eine benutzerdefinierte DNS-für eine verwaltete Azure SQL-Datenbank-Instanz konfigurieren](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns).
 - Dem Subnetz darf kein Dienstendpunkt (Speicher oder SQL) zugeordnet sein. Dienstendpunkte sollten im virtuellen Netzwerk deaktiviert sein.
 - Das Subnetz muss mindestens 16 IP-Adressen aufweisen. Informieren Sie sich, wie Sie [die Größe des Subnetzes für verwaltete Instanzen ermitteln](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-configure-vnet-subnet).
 - In der Hybridumgebung von Contoso sind benutzerdefinierte DNS-Einstellungen erforderlich. Contoso konfiguriert die DNS-Einstellungen so, dass mindestens ein Azure DNS-Server des Unternehmens genutzt wird. Informieren Sie sich über die [DNS-Anpassung](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns).
@@ -298,11 +298,11 @@ Die Administratoren von Contoso müssen sicherstellen, dass die Web-Apps und die
 
     ![Verbindungszeichenfolge](./media/contoso-migration-refactor-web-app-sql-managed-instance/string1.png)
 
-3. Sie öffnen in Visual Studio das Projekt **SmartHotel.Registration.wcf** in der Projektmappendatei. Der Abschnitt **connectionStrings** der Datei „web.config“ für den WCF-Dienst „SmartHotel.Registration.Wcf“ sollte mit der Verbindungszeichenfolge aktualisiert werden.
+3. Sie öffnen in Visual Studio das Projekt **SmartHotel.Registration.wcf** in der Projektmappendatei. Der Abschnitt **connectionStrings** der Datei „web.config“ für den WCF-Dienst **SmartHotel.Registration.Wcf** sollte mit der Verbindungszeichenfolge aktualisiert werden.
 
      ![Verbindungszeichenfolge](./media/contoso-migration-refactor-web-app-sql-managed-instance/string2.png)
 
-4. Der Abschnitt **client** der Datei „web.config“ für SmartHotel.Registration.Web sollte dahingehend geändert werden, dass es auf den neuen Speicherort des WCF-Diensts verweist. Dies ist die URL der WCF-Web-App, die den Dienstendpunkt hostet.
+4. Der Abschnitt **client** der Datei „web.config“ für **SmartHotel.Registration.Web** sollte dahingehend geändert werden, dass er auf den neuen Speicherort des WCF-Diensts verweist. Dies ist die URL der WCF-Web-App, die den Dienstendpunkt hostet.
 
     ![Verbindungszeichenfolge](./media/contoso-migration-refactor-web-app-sql-managed-instance/strings3.png)
 
@@ -379,7 +379,7 @@ Als Nächstes konfigurieren die Contoso-Administratoren Azure DevOps für die Du
 
     ![Speichern von WCF](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline16.png)
 
-17. Sie wählen **Pipeline** > **Phasen** > **+ Hinzufügen** aus, um eine Umgebung für **SHWEB-EUS2** hinzuzufügen. Sie wählen eine weitere Azure App Service-Bereitstellung aus.
+17. Sie wählen **Pipeline** > **Phasen**, **+ Hinzufügen** aus, um eine Umgebung für **SHWEB-EUS2** hinzuzufügen. Sie wählen eine weitere Azure App Service-Bereitstellung aus.
 
     ![Hinzufügen einer Umgebung](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline17.png)
 
