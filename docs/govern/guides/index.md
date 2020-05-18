@@ -4,17 +4,16 @@ description: Sehen Sie sich die Cloudgovernance-Leitfäden an, in denen Best Pra
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/05/2019
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-layout: LandingPage
-ms.openlocfilehash: d3f664aa94228da83ee86fd51392958341269c1e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 6fceb9665712b4d787689ad2e3e709a5ac14d0d0
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214734"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400740"
 ---
 # <a name="cloud-governance-guides"></a>Cloudgovernance-Leitfäden
 
@@ -26,36 +25,15 @@ Wählen Sie einen der folgenden Governanceleitfäden aus, um mit der Cloudeinfü
 
 <!-- markdownlint-disable MD033 -->
 
-<ul class="panelContent cardsZ">
-<li style="display: flex; flex-direction: column;">
-    <a href="./standard/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Standardgovernanceleitfaden</h3>
-                        <p>Ein Leitfaden für die meisten Organisationen, basierend auf dem empfohlenen Modell mit zwei Abonnements, das für Bereitstellungen in mehreren Regionen konzipiert wurde, aber nicht für öffentliche Clouds und Sovereign/Government Clouds gilt.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./complex/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Governanceleitfaden für komplexe Unternehmen</h3>
-                        <p>Ein Leitfaden für Unternehmen, die über mehrere unabhängige IT-Geschäftseinheiten verwaltet werden oder öffentliche Clouds und Sovereign/Government Clouds umfassen.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-</ul>
+- [Standardgovernanceleitfaden:](./standard/index.md) Ein Leitfaden für die meisten Organisationen, basierend auf dem empfohlenen Modell mit zwei Abonnements, das für Bereitstellungen in mehreren Regionen konzipiert wurde, aber nicht für öffentliche Clouds und Sovereign/Government Clouds gilt.
+
+> [!div class="nextstepaction"]
+> [Standardgovernanceleitfaden](./standard/index.md)
+
+- [Governanceleitfaden für komplexe Unternehmen:](./complex/index.md) Ein Leitfaden für Unternehmen, die über mehrere unabhängige IT-Geschäftseinheiten verwaltet werden oder öffentliche Clouds und Sovereign/Government Clouds umfassen.
+
+> [!div class="nextstepaction"]
+> [Governanceleitfaden für komplexe Unternehmen](./complex/index.md)
 
 <!-- markdownlint-enable MD033 -->
 

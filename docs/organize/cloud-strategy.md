@@ -1,29 +1,26 @@
 ---
-title: Cloudstrategiefunktionen
-description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie Sie technische Aktivitäten nach Geschäftsergebnissen ausrichten.
-author: BrianBlanchard
-ms.author: brblanch
-ms.date: 09/10/2019
-ms.topic: conceptual
+title: Grundlegendes zur Funktion der Cloudstrategie
+description: Erfahren Sie, wie Sie mit Cloudstrategiefunktionen einen Ausgleich zwischen Geschäftsergebnissen und Cloudeinführungsbemühungen erzielen können.
+author: JanetCThomas
+ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.custom: organize
-ms.openlocfilehash: 02582dd6da694c64c8344e17fc301a26e5a82bc7
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.topic: conceptual
+ms.date: 05/05/2020
+ms.openlocfilehash: 828ab41080e4742fb633bb30467dda4bd4e3c535
+ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80428497"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83221959"
 ---
-# <a name="cloud-strategy-capabilities"></a>Cloudstrategiefunktionen
+<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
 
-Eine erfolgreiche Cloudeinführung sollte sich an definierten Beweggründen und Geschäftsergebnissen orientieren. Wenn sich diese Ergebnisse auf die Geschäftsfunktionen auswirken, wird empfohlen, dass ein Team mit Führungskräften aus dem gesamten Unternehmen gebildet wird. Um verschiedene Führungskräfte zusammenzubringen, wird empfohlen, dass die Führungskräfte ein Cloudstrategieteam bilden. Das Ziel des Cloudstrategieteams ist es, konkrete Geschäftsergebnisse zu erzielen, die durch Cloudtechnologien ermöglicht werden. Dieses Team stellt sicher, dass die Cloudeinführungsbemühungen in Übereinstimmung mit den Geschäftsergebnissen vorangetrieben werden.
+# <a name="cloud-strategy-functions"></a>Cloudstrategiefunktionen
 
-In Ermangelung eines definierten Cloudstrategieteams muss eine Person dennoch die Fähigkeit besitzen, technische Aktivitäten an den Geschäftsergebnissen auszurichten. Dieselbe Person oder Gruppe sollte auch Änderungen im gesamten Projekt verwalten. In diesem Abschnitt wird diese Funktion ausführlicher definiert.
+Ein Cloudstrategieteam definiert Beweggründe und Geschäftsergebnisse, überprüft die Abstimmung zwischen Geschäftsprioritäten und Cloudeinführungsmaßnahmen und erhält diese aufrecht. In Ermangelung eines definierten Cloudstrategieteams muss dennoch eine Person die Funktion bereitstellen, mit der technische Aktivitäten an den Geschäftsergebnissen ausgerichtet werden. Dieselbe Person oder Gruppe sollte auch Änderungen im gesamten Projekt verwalten.
 
-## <a name="possible-sources-for-this-capability"></a>Mögliche Quellen für diese Funktionen
-
-Diese Funktion wird üblicherweise durch die folgenden Arten von Rollen bereitgestellt. Wenn ein Cloudstrategieteam definiert wird, sollte es mehrere der folgenden Rollen beinhalten:
+Cloudstrategiefunktionen werden üblicherweise von den folgenden Arten von Rollen bereitgestellt. Wenn ein Cloudstrategieteam definiert wird, sollte es mehrere der folgenden Rollen beinhalten:
 
 - Finanzen
 - Branchenanwendung
@@ -34,41 +31,68 @@ Diese Funktion wird üblicherweise durch die folgenden Arten von Rollen bereitge
 - Anwendungsgruppen
 - Projektmanager (häufig mit Erfahrungen bei der Agile-Projektverwaltung)
 
-Diese Funktionen helfen dabei, kritische Priorisierungs- und Ermittlungsbemühungen bei der Cloudeinführung zu steuern. Diese Funktion kann auch Änderungen in Geschäftsprozessen, die Ausführung von Vorgängen, Kundeninteraktionen oder sogar die Produktentwicklung auslösen. Wenn sich diese Funktionen auf die IT beschränken, wird der Erfolg der Cloudeinführungsbemühungen eingeschränkt sein. Um echte geschäftsbezogene Änderungen voranzutreiben, sollten Führungskräfte die Hauptquelle für diese Funktion darstellen. Ein definiertes Cloudstrategieteam bietet die Möglichkeit, wichtige Teilnehmer strukturiert einzubeziehen.
+Dies hilft dabei, kritische Priorisierungs- und Ermittlungsbemühungen bei der Cloudeinführung zu steuern. Diese Funktion kann auch Änderungen in Geschäftsprozessen, die Ausführung von Vorgängen, Kundeninteraktionen oder sogar die Produktentwicklung auslösen. Wenn sich diese Funktionen auf die IT beschränken, wird der Erfolg der Cloudeinführungsbemühungen eingeschränkt sein. Um echte geschäftsbezogene Änderungen voranzutreiben, sollten Führungskräfte die Hauptquelle für diese Funktion darstellen. Ein definiertes Cloudstrategieteam bietet die Möglichkeit, wichtige Teilnehmer strukturiert einzubeziehen.
 
 > [!NOTE]
 > Der CEO und CIO des Unternehmens weisen häufig das Team zu. Zuweisungen basieren in der Regel darauf, dass dieses Team in die Lage versetzt wird, Änderungen voranzutreiben, die sich über verschiedene Organisationen innerhalb des Unternehmens erstrecken. Die Mitglieder des Cloudstrategieteams sollten auf der Grundlage der [Beweggründe für die Cloudeinführung](../strategy/motivations.md), [Geschäftsergebnisse](../strategy/business-outcomes/index.md) und relevanter [Finanzmodelle](../strategy/financial-models.md) zugeordnet werden.
 
-## <a name="key-responsibilities"></a>Wichtige Zuständigkeiten
+## <a name="preparation"></a>Vorbereitung
 
-Die Hauptaufgabe der Cloudstrategie besteht darin, die Abstimmung zwischen Geschäftsprioritäten und Cloudeinführungsbemühungen zu überprüfen und aufrechtzuerhalten. In zweiter Linie sollten Sie sich auf das Change Management bei den Einführungsbemühungen konzentrieren. Die folgenden Aufgaben unterstützen Sie dabei, diese Funktion umzusetzen.
+- [Lernen Sie den Geschäftswert von Microsoft Azure kennen](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure).
+- [Erfahren Sie, wie Sie mithilfe des Cloud Adoption Frameworks](https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure) die Strategie an Unternehmen, Personen und Technologien ausrichten können.
+- Studieren Sie den Prozess für die [Cloudeinführungsstrategie](../strategy/index.md).
+- Laden Sie die [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) herunter.
 
-### <a name="early-planning-tasks"></a>Anfängliche Planungsaufgaben
+## <a name="minimum-scope"></a>Mindestumfang
 
-- Überprüfen und Bereitstellen von Feedback für [Geschäftsergebnisse](../strategy/business-outcomes/index.md) und [Finanzmodelle](../strategy/financial-models.md)
-- Helfen bei der Einrichtung eindeutiger [Beweggründe für die Cloudeinführung](../strategy/motivations.md), die sich an den Unternehmenszielen orientieren
-- Definieren relevanter [Lernmetriken](../strategy/learning-metrics.md), die den Fortschritt in Bezug auf die Geschäftsergebnisse eindeutig kommunizieren
-- Verstehen von [Geschäftsrisiken](../govern/policy-compliance/risk-tolerance.md), die durch den Plan eingeführt wurden, darstellen der [Risikotoleranz des Unternehmens](../govern/policy-compliance/risk-tolerance.md).
-- Überprüfen und Genehmigen der [Rationalisierung der digitalen Ressourcen](../digital-estate/rationalize.md)
+Richten Sie Unternehmensbeteiligte so aus, dass der Geschäftswert der Investitionen in die Cloudeinführung maximiert wird.
 
-### <a name="ongoing-monthly-tasks"></a>Fortlaufende monatliche Aufgaben
+Sowohl Geschäftsergebnisse als auch die Cloudstrategie sollten möglichst frühzeitig im Prozess definiert werden. Wenn Investitionen in die Cloudeinführung steigen und einen geschäftlichen Mehrwert generieren, sind die Beteiligten auf geschäftlicher Seite häufig stärker interessiert. Bei einer Cloudeinführung unter dem Schwerpunkt der geschäftlichen Aspekte liegt der Schwerpunkt möglicherweise auf dem Betriebsmodell und der Organisation.
 
-- Unterstützen der [Cloudgovernancefunktion](./cloud-governance.md) während der Unterhaltungen zu Risiko/Toleranz
+### <a name="establish-a-vision"></a>Erzeugen einer Vision
+
+- [Motivationen für den Wechsel in die Cloud](../strategy/motivations.md): Dokumentieren und formulieren Sie die Gründe für den technischen Aufwand.
+- [Geschäftsergebnisse](../strategy/business-outcomes/index.md): Formulieren Sie deutlich, was vom technischen Team in Bezug auf geschäftliche Veränderungen erwartet wird.
+- [Lernmetriken](../strategy/learning-metrics.md): Legen Sie kurzfristige Metriken fest, die Fortschritte hin zu längerfristigen Geschäftsergebnissen zeigen können.
+
+### <a name="build-business-justification"></a>Erstellen einer geschäftlichen Begründung
+
+- [Fallstudie für die Cloudmigration](../strategy/cloud-migration-business-case.md). Erstellen einer Fallstudie für die Cloudmigration.
+
+### <a name="rationalize-the-digital-estate"></a>Rationalisieren der digitalen Ressourcen
+
+- [Inkrementelle Rationalisierung](../digital-estate/rationalize.md): Ein flexibler Rationalisierungsansatz, der spät gebundene technische Entscheidungen richtig integriert.
+- [Die fünf Phasen der Rationalisierung](../digital-estate/5-rs-of-rationalization.md): Grundlegendes zu den verschiedenen Rationalisierungsoptionen.
+
+## <a name="deliverable"></a>Ergebnisse
+
+Das Cloudstrategieteam treibt die kritischen Priorisierungs- und Ermittlungsbemühungen bei der Cloudeinführung an. Es kann auch Änderungen an Geschäftsprozessen, der Ausführung von Vorgängen, an Kundeninteraktionen oder sogar der Produktentwicklung vornehmen. Die Hauptaufgabe des Cloudstrategieteams besteht darin, die Abstimmung zwischen Geschäftsprioritäten und Cloudeinführungsbemühungen zu überprüfen und aufrechtzuerhalten. In zweiter Linie sollte sich dieses Team auf das Change Management bei den Einführungsbemühungen konzentrieren. Das Cloudstrategieteam sollte in der Lage sein, die folgenden Aufgaben zu erledigen.
+
+**Anfängliche Planungsaufgaben:**
+
+- Überprüfen und Bereitstellen von Feedback für Geschäftsergebnisse und Finanzmodelle.
+- Helfen bei der Einrichtung eindeutiger Beweggründe für die Cloudeinführung, die sich an den Unternehmenszielen orientieren.
+- Definieren relevanter Lernmetriken, die den Fortschritt in Bezug auf die Geschäftsergebnisse eindeutig kommunizieren.
+- Verstehen von Geschäftsrisiken, die durch den Plan eingeführt wurden, darstellen der Risikotoleranz des Unternehmens.
+- Überprüfen und Genehmigen der Rationalisierung der digitalen Ressourcen.
+
+**Fortlaufende monatliche Aufgaben:**
+
+- Unterstützen des Cloudgovernanceteams während der Besprechungen zu Risiko/Toleranz.
 - Überprüfen der Releasepläne, um Zeitachsen und Auswirkungen auf das Unternehmen von technischen Änderungen zu verstehen
 - Definieren von geschäftsbezogenen Änderungsplänen im Zusammenhang mit geplanten Releases.
 - Sicherstellen, dass die Geschäftsteams bereit sind, geschäftsbezogene Tests und den geschäftsbezogenen Änderungsplan durchzuführen.
 
-## <a name="meeting-cadence"></a>Rhythmus von Besprechungen
+**Rhythmus von Besprechungen:**
 
-Die im vorhergehenden Abschnitt aufgeführten Aufgaben können in der frühen Planungsphase zeitaufwendig sein. Hier folgen einige Empfehlungen für die Zeiteinteilung für Mitglieder des Cloudstrategieteams:
+Mitglieder des Cloudstrategieteams müssen in der Lage sein, Zeit für die Planung und Entwicklung der Cloudstrategie zuzuteilen:
 
-- In der frühen Planungsphase sollten Sie jede Woche eine Stunde einplanen, um sich mit dem Team zu treffen. Nachdem der Einführungsplan konkretisiert ist (in der Regel innerhalb von vier bis sechs Wochen), kann der Zeitaufwand verringert werden.
+- In der frühen Planungsphase sollten Sie jede Woche eine Stunde einplanen, um sich mit dem Team zu treffen. Nachdem der Einführungsplan konkretisiert ist (in der Regel innerhalb von 4 bis 6 Wochen), kann der Zeitaufwand verringert werden.
 - Während der gesamten Einführungsbemühungen sollten Sie jeden Monat ein bis zwei Stunden einplanen, um die Fortschritte zu überprüfen und die weiteren Prioritäten zu bestätigen.
-- Von delegierten Mitgliedern des Führungsteams wird wahrscheinlich bei Bedarf zusätzliche Zeit benötigt. Jedes Mitglied des Cloud-Strategie-Teams sollte einen Delegierten ernennen, der fünf bis zehn Stunden pro Woche zur Verfügung stellen kann, um laufende Priorisierungsfragen zu unterstützen und über dringende Anforderungen zu berichten.
+- Von delegierten Mitgliedern des Führungsteams wird wahrscheinlich bei Bedarf zusätzliche Zeit benötigt. Jedes Mitglied des Cloud-Strategie-Teams sollte einen Delegierten ernennen, der 5 bis 10 Stunden pro Woche zur Verfügung stellen kann, um laufende Priorisierungsfragen zu unterstützen und über dringende Anforderungen zu berichten.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Strategie und Planung sind wichtig. Ohne die [Clouteinführungsfunktionen](./cloud-adoption.md) kann jedoch nicht viel umgesetzt werden. Sie müssen die Rolle dieser wichtigen Funktion verstehen, bevor Sie mit der Einführung beginnen.
-
-> [!div class="nextstepaction"]
-> [Ausrichten der Cloudeinführungsfunktionen](./cloud-adoption.md)
+- Aufstellen eines [Cloudstrategieteams](../get-started/team/cloud-strategy.md)
+- Ausrichten Ihrer Strategie an den [Cloudeinführungsfunktionen](./cloud-adoption.md) durch Aufstellen eines [Cloudeinführungsteams](../get-started/team/cloud-adoption.md), mit dem Sie arbeiten können.
+- Verwenden Sie die [RACI-Tabellenvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx), um Zuständigkeiten zu Teams zuzuordnen.

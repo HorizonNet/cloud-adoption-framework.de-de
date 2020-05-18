@@ -4,17 +4,16 @@ description: Hier wird der Ansatz zur Entwicklung der Disziplin „Identitätsba
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-layout: LandingPage
-ms.openlocfilehash: 4728270f71893680886e40b4e647b9fec6624ef7
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 2e171736ccf993d3e7401350008ab542759b703b
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218814"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400789"
 ---
 # <a name="identity-baseline-discipline-overview"></a>Übersicht über die Disziplin „Identitätsbaseline“
 
@@ -40,122 +39,14 @@ Die folgenden sechs Schritte enthalten Beispiele und mögliche Optionen, die Sie
 
 <!-- markdownlint-disable MD033 -->
 
-<ul class="panelContent cardsE">
-    <li style="display: flex; flex-direction: column;">
-        <a href="./template.md">
-            <div class="cardSize">
-                <div class="cardPadding" >
-                    <div class="card" >
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../_images/govern/process-template.png" class="x-hidden-focus"/>
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Vorlage für die Disziplin „Identitätsbaseline“</h3>
-                            <p class="x-hidden-focus">Laden Sie die Vorlage zur Dokumentation einer Disziplin vom Typ „Identitätsbaseline“ herunter.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./business-risks.md">
-            <div class="cardSize">
-                <div class="cardPadding" >
-                    <div class="card" >
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../_images/govern/process-risks.png" class="x-hidden-focus"/>
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Geschäftsrisiken</h3>
-                            <p class="x-hidden-focus">Machen Sie sich mit den Motiven und Risiken vertraut, die häufig mit der Disziplin „Identitätsbaseline“ verbunden sind.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./metrics-tolerance.md">
-            <div class="cardSize">
-                <div class="cardPadding" >
-                    <div class="card" >
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../_images/govern/process-metrics.png" class="x-hidden-focus"/>
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Indikatoren und Metriken</h3>
-                            <p class="x-hidden-focus">Indikatoren, die Aufschluss darüber geben, ob jetzt der richtige Zeitpunkt ist, in die Disziplin „Identitätsbaseline“ zu investieren.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./compliance-processes.md">
-            <div class="cardSize">
-                <div class="cardPadding" >
-                    <div class="card" >
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../_images/govern/process-enforce.png" class="x-hidden-focus"/>
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Prozesse zur Einhaltung von Richtlinien</h3>
-                            <p class="x-hidden-focus">Empfohlene Prozesse zur Unterstützung der Richtlinieneinhaltung in der Disziplin „Identitätsbaseline“.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./discipline-improvement.md">
-            <div class="cardSize">
-                <div class="cardPadding" >
-                    <div class="card" >
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../_images/govern/process-maturity.png" class="x-hidden-focus"/>
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Einsatzreife</h3>
-                            <p class="x-hidden-focus">Stimmen Sie die Einsatzreife der Cloudverwaltung mit den Phasen der Cloudeinführung ab.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-    <li style="display: flex; flex-direction: column;">
-        <a href="./toolchain.md">
-            <div class="cardSize">
-                <div class="cardPadding" >
-                    <div class="card" >
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../_images/govern/process-toolchain.png" class="x-hidden-focus"/>
-                            </div>
-                        </div>
-                        <div class="cardText" style="padding-left:0px;">
-                            <h3>Toolkette</h3>
-                            <p class="x-hidden-focus">Azure-Dienste, die zur Unterstützung der Disziplin „Identitätsbaseline“ implementiert werden können.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
+| | |
+|---|---|
+| <br> ![Vorlagensymbol](../../_images/govern/process-template.png) <br> [Vorlage für die Disziplin „Identitätsbaseline“:](./template.md) Laden Sie die Vorlage zur Dokumentation einer Disziplin vom Typ „Identitätsbaseline“ herunter. |
+| <br> ![Risikosymbol](../../_images/govern/process-risks.png) <br> [Geschäftsrisiken:](./business-risks.md) Machen Sie sich mit den Motiven und Risiken vertraut, die häufig mit der Disziplin „Identitätsbaseline“ verbunden sind. |
+| <br> ![Metriksymbol](../../_images/govern/process-metrics.png) <br> [Indikatoren und Metriken:](./metrics-tolerance.md) Indikatoren, um zu verstehen, ob es der richtige Zeitpunkt ist, in die Disziplin „Identitätsbaseline“ zu investieren. |
+| <br> ![Einhaltungssymbol](../../_images/govern/process-enforce.png) <br> [Prozesse zur Einhaltung von Richtlinien:](./compliance-processes.md) Empfohlene Prozesse zur Unterstützung der Richtlinieneinhaltung in der Disziplin „Identitätsbaseline“. |
+| <br> ![Einsatzreifesymbol](../../_images/govern/process-maturity.png) <br> [Einsatzreife:](./discipline-improvement.md) Stimmen Sie die Einsatzreife der Cloudverwaltung mit den Phasen der Cloudeinführung ab. |
+| <br> ![Toolkettensymbol](../../_images/govern/process-toolchain.png) <br> [Toolkette:](./toolchain.md) Azure-Dienste, die zur Unterstützung der Disziplin „Identitätsbaseline“ implementiert werden können. |
 
 <!-- markdownlint-enable MD033 -->
 

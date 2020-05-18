@@ -41,6 +41,8 @@ items:
         href: get-started/reliability.md
       - name: Sicherstellen konsistenter Leistung
         href: get-started/performance.md
+      - name: Ermöglichen des Kundenerfolgs
+        href: get-started/enable.md
       - name: Ausrichten Ihrer Organisation
         href: get-started/org-alignment.md
       - name: Zusammenstellen eines Cloudstrategieteams
@@ -1265,24 +1267,50 @@ items:
         href: organize/index.md
       - name: Erforderliche Cloudfunktionen
         items:
-          - name: Cloudstrategie
+          - name: Cloudstrategiefunktionen
             href: organize/cloud-strategy.md
-          - name: Cloudeinführung
+          - name: Cloudeinführungsfunktionen
             href: organize/cloud-adoption.md
-          - name: Cloudgovernance
+          - name: Cloudgovernancefunktionen
             href: organize/cloud-governance.md
-          - name: Zentrale IT-Abteilung
+          - name: Zentrale IT-Funktionen
             href: organize/central-it.md
-          - name: Cloudvorgänge
+          - name: Cloudbetriebsfunktionen
             href: organize/cloud-operations.md
-          - name: Cloudkompetenzzentrum
+          - name: 'CCoE-Funktionen (Cloud Center of Excellence, Cloudkompetenzzentrum)'
             href: organize/cloud-center-of-excellence.md
-          - name: Cloudplattform
+          - name: Cloudplattformfunktionen
             href: organize/cloud-platform.md
-          - name: Cloudautomatisierung
+          - name: Cloudautomatisierungsfunktionen
             href: organize/cloud-automation.md
-          - name: Cloudsicherheit
-            href: organize/cloud-security.md
+          - name: Cloudsicherheitsfunktionen
+            items:
+              - name: Funktionen des Cloudsicherheitsteams
+                href: organize/cloud-security.md
+              - name: Richtlinien und Standards
+                href: organize/cloud-security-policy-standards.md
+              - name: Security Operations Center (SOC)
+                href: organize/cloud-security-operations-center.md
+              - name: Sicherheitsarchitektur
+                href: organize/cloud-security-architecture.md
+              - name: Sicherheitskonformitätsverwaltung
+                href: organize/cloud-security-compliance-management.md
+              - name: Personensicherheit
+                href: organize/cloud-security-people.md
+              - name: Anwendungssicherheit und DevSecOps
+                href: organize/cloud-security-apsec-devsecops.md
+              - name: Datensicherheit
+                href: organize/cloud-security-data-security.md
+              - name: Infrastruktur- und Endpunktsicherheit
+                href: organize/cloud-security-infrastructure-endpoint.md
+              - name: Identität und Schlüssel
+                href: organize/cloud-security-identity-keys.md
+              - name: Bedrohungsanalyse
+                href: organize/cloud-security-threat-intelligence.md
+              - name: Statusverwaltung
+                href: organize/cloud-security-posture-management.md
+              - name: Vorbereitung auf Vorfälle
+                href: organize/cloud-security-incident-preparation.md
       - name: Ausgereifte Teamstrukturen
         href: organize/organization-structures.md
       - name: Ausrichten der RACI-Matrix

@@ -11,12 +11,12 @@ metadata:
   author: JanetCThomas
   ms.author: janet
   ms.date: 04/20/2020
-  ms.openlocfilehash: 2214466178729bcf6cb0e6ddd02a22d036039004
-  ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+  ms.openlocfilehash: 79cb54103165ff42402513e66053456b124bd77d
+  ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 05/12/2020
-  ms.locfileid: "83228302"
+  ms.lasthandoff: 05/14/2020
+  ms.locfileid: "83398995"
 highlightedContent:
   items:
   - title: Starten Ihrer Cloud Journey
@@ -67,7 +67,7 @@ productDirectory:
     - url: ./plan/suggested-skills.md
       text: Plan für die Qualifikationsbereitschaft
     - url: ./plan/template.md
-      text: Cloudeinführungsplan-DevOps
+      text: Cloudeinführungsplan für DevOps
   - title: Bereit
     imageSrc: ./_images/caf-ready.png
     links:
@@ -154,7 +154,7 @@ conceptualContent:
     - url: https://docs.microsoft.com/assessments/?mode=pre-assessment&id=cloud-journey-tracker
       itemType: get-started
       text: Identifizieren Sie Ihren Cloudeinführungspfad basierend auf den Anforderungen Ihres Unternehmens.
-  - title: Tool zur strategischen Migrationsbewertung und Bereitschaft (INTELLIGENT)
+  - title: Tool zur strategischen Migrationsbewertung und Bereitschaft (Strategic Migration Assessment and Readiness Tool, SMART)
     links:
     - url: https://docs.microsoft.com/assessments/?mode=pre-assessment&id=Strategic-Migration-Assessment
       itemType: get-started

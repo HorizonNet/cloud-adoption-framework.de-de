@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 824d5fbe48074dd9a220a20bbf05f3d17c3445c1
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 638f8dad1d7f284104765b28fe53561d98e02b56
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222758"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399815"
 ---
-<!--docsTest:disable - TODO -->
-
 <!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
 
 # <a name="resource-naming-and-tagging-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Ressourcenbenennung und -markierung
@@ -75,6 +73,7 @@ Verwenden Sie im Rahmen Ihres Planungsprozesses die folgenden Fragen, um festzus
 Die unten aufgeführten allgemeinen Markierungsmuster zeigen beispielhaft, wie das Markieren zum Organisieren von Cloudressourcen verwendet werden kann. Diese Muster sind nicht als exklusiv gedacht und können parallel verwendet werden, wodurch sich mehrere Möglichkeiten der Organisation von Ressourcen auf der Grundlage der Anforderungen Ihres Unternehmens ergeben.
 
 <!-- markdownlint-disable MD033 -->
+<!-- docsTest:disable -->
 
 | Markierungstyp | Beispiele | BESCHREIBUNG |
 |-----|-----|-----|
@@ -84,6 +83,7 @@ Die unten aufgeführten allgemeinen Markierungsmuster zeigen beispielhaft, wie d
 | Partnerschaft | owner&nbsp;=&nbsp;jsmith <br> contactalias&nbsp;=&nbsp;catsearchowners <br> stakeholders&nbsp;=&nbsp;user1;user2;user3 | Enthält Informationen dazu, welche Personen (außerhalb der IT) mit der Ressource verknüpft oder in anderer Form von ihr betroffen sind. |
 | Zweck | businessprocess&nbsp;=&nbsp;support <br> businessimpact&nbsp;=&nbsp;moderate <br> revenueimpact&nbsp;=&nbsp;high | Richtet Ressourcen an Geschäftsfunktionen aus, um Investitionsentscheidungen besser zu unterstützen. |
 
+<!-- docsTest:enable -->
 <!-- markdownlint-enable MD033 -->
 
 ## <a name="learn-more"></a>Weitere Informationen
