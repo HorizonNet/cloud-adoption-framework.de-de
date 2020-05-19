@@ -4,17 +4,16 @@ description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adopti
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-layout: LandingPage
-ms.openlocfilehash: 369e12abcf0325ed44719ccb76bf0032b611f8f1
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 6db5662a5e470730116310a291ac669192e0f3e4
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220429"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400634"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>Übersicht über die Disziplin der Beschleunigung der Bereitstellung
 
@@ -40,122 +39,14 @@ Die folgenden sechs Schritte helfen Ihnen dabei, Governancerichtlinien zum Steue
 
 <!-- markdownlint-disable MD033 -->
 
-<ul class="panelContent cardsE">
-<li style="display: flex; flex-direction: column;">
-    <a href="./template.md">
-        <div class="cardSize">
-            <div class="cardPadding" >
-                <div class="card" >
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../../_images/govern/process-template.png" class="x-hidden-focus"/>
-                        </div>
-                    </div>
-                    <div class="cardText" style="padding-left:0px;">
-                        <h3>Vorlage zur Disziplin „Beschleunigung der Bereitstellung“</h3>
-                        <p class="x-hidden-focus">Laden Sie die Vorlage zum Dokumentieren einer Disziplin vom Typ „Beschleunigung der Bereitstellung“ herunter.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./business-risks.md">
-        <div class="cardSize">
-            <div class="cardPadding" >
-                <div class="card" >
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../../_images/govern/process-risks.png" class="x-hidden-focus"/>
-                        </div>
-                    </div>
-                    <div class="cardText" style="padding-left:0px;">
-                        <h3>Geschäftsrisiken</h3>
-                        <p class="x-hidden-focus">Machen Sie sich mit den Motiven und Risiken vertraut, die häufig mit der Disziplin „Beschleunigung der Bereitstellung“ verbunden sind.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./metrics-tolerance.md">
-        <div class="cardSize">
-            <div class="cardPadding" >
-                <div class="card" >
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../../_images/govern/process-metrics.png" class="x-hidden-focus"/>
-                        </div>
-                    </div>
-                    <div class="cardText" style="padding-left:0px;">
-                        <h3>Indikatoren und Metriken</h3>
-                        <p class="x-hidden-focus">Indikatoren, die Aufschluss darüber geben, ob jetzt der richtige Zeitpunkt ist, in die Disziplin „Beschleunigung der Bereitstellung“ zu investieren.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./compliance-processes.md">
-        <div class="cardSize">
-            <div class="cardPadding" >
-                <div class="card" >
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../../_images/govern/process-enforce.png" class="x-hidden-focus"/>
-                        </div>
-                    </div>
-                    <div class="cardText" style="padding-left:0px;">
-                        <h3>Prozesse zur Einhaltung von Richtlinien</h3>
-                        <p class="x-hidden-focus">Empfohlene Prozesse zur Unterstützung der Richtlinieneinhaltung in der Disziplin „Beschleunigung der Bereitstellung“.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./discipline-improvement.md">
-        <div class="cardSize">
-            <div class="cardPadding" >
-                <div class="card" >
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../../_images/govern/process-maturity.png" class="x-hidden-focus"/>
-                        </div>
-                    </div>
-                    <div class="cardText" style="padding-left:0px;">
-                        <h3>Einsatzreife</h3>
-                        <p class="x-hidden-focus">Stimmen Sie die Einsatzreife der Cloudverwaltung mit den Phasen der Cloudeinführung ab.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./toolchain.md">
-        <div class="cardSize">
-            <div class="cardPadding" >
-                <div class="card" >
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../../_images/govern/process-toolchain.png" class="x-hidden-focus"/>
-                        </div>
-                    </div>
-                    <div class="cardText" style="padding-left:0px;">
-                        <h3>Toolkette</h3>
-                        <p class="x-hidden-focus">Azure-Dienste, die zur Unterstützung der Disziplin „Beschleunigung der Bereitstellung“ implementiert werden können.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-</ul>
+| | |
+|---|---|
+| <br> ![Vorlagensymbol](../../_images/govern/process-template.png) | [Vorlage zur Disziplin „Beschleunigung der Bereitstellung“:](./template.md) Laden Sie die Vorlage zum Dokumentieren einer Disziplin vom Typ „Beschleunigung der Bereitstellung“ herunter. |
+| <br> ![Risikosymbol](../../_images/govern/process-risks.png) | [Geschäftsrisiken:](./business-risks.md) Machen Sie sich mit den Motiven und Risiken vertraut, die häufig mit der Disziplin der Beschleunigung der Bereitstellung verbunden sind.|
+| <br> ![Metriksymbol](../../_images/govern/process-metrics.png) | [Indikatoren und Metriken:](./metrics-tolerance.md) Indikatoren zum Erkennen des richtigen Zeitpunkts für eine Investition in die Disziplin der Beschleunigung der Bereitstellung |
+| <br> ![Einhaltungssymbol](../../_images/govern/process-enforce.png) | [Prozesse zur Einhaltung von Richtlinien:](./compliance-processes.md) Empfohlene Prozesse zur Unterstützung der Richtlinieneinhaltung in der Disziplin der Beschleunigung der Bereitstellung. |
+| <br> ![Einsatzreifesymbol](../../_images/govern/process-maturity.png) | [Einsatzreife:](./discipline-improvement.md) Stimmen Sie die Einsatzreife der Cloudverwaltung mit den Phasen der Cloudeinführung ab.|
+| <br> ![Toolkettensymbol](../../_images/govern/process-toolchain.png) | [Toolkette:](./toolchain.md) Azure-Dienste, die zur Unterstützung der Disziplin der Beschleunigung der Bereitstellung implementiert werden können. |
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -8,16 +8,16 @@ author: JanetCThomas
 ms.author: janet
 ms.date: 05/04/2020
 ms.subservice: overview
-ms.openlocfilehash: a1008059e5eb5bf614e02de233c233ca4c2758f9
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 94dc8b2761e537c7bef2e837db0d0d25bef8bef7
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83228370"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399855"
 ---
 # <a name="get-started-with-the-cloud-adoption-framework"></a>Erste Schritte mit dem Cloud Adoption Framework
 
-Diese gängigen Szenarien bieten eine Roadmap für das Microsoft Cloud Adoption Framework für Azure. Sie können Ihnen dabei helfen, ein ausgewogenes Verhältnis zwischen Geschwindigkeit, Innovation und Kontrolle zu erzielen. Dabei profitieren Sie von einem flexiblen Ansatz, der es ermöglicht, mit einer minimal ausgestatteten Lösung zu beginnen, die Sie im Laufe der Zeit weiter verbessern können.
+Diese gängigen Szenarien bieten eine Roadmap für das Microsoft Cloud Adoption Framework für Azure. Sie können Ihnen dabei helfen, ein ausgewogenes Verhältnis zwischen Geschwindigkeit, Innovation und Kontrolle zu erzielen. Dabei profitieren Sie von einem flexiblen Ansatz, der es ermöglicht, mit einer minimal ausgestatteten Lösung zu beginnen. Diese Lösung können Sie im Laufe der Zeit weiter verbessern.
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -30,11 +30,11 @@ Diese gängigen Szenarien bieten eine Roadmap für das Microsoft Cloud Adoption 
 | [Sie kommen aufgrund des Designs und der Konfiguration der Umgebung nicht weiter.](./design-and-configuration.md) | Anhand dieses Leitfadens können Sie schnell eine Umgebung entwerfen und konfigurieren.                                           |
 | [Während der Cloudtransformation muss optimaler Betrieb gewährleistet sein.](./operational-excellence.md)                   | Die Schritte in diesem Leitfaden helfen dem Strategieteam dabei, Change Management-Prozesse zu steuern, die für die Sicherstellung eines optimalen Betriebs erforderlich sind. |
 | [Die Unternehmenskosten müssen verwaltet werden.](./manage-costs.md)                                          | Beginnen Sie mit der Optimierung der Unternehmenskosten, und verwalten Sie die Kosten in der gesamten Umgebung.                                                                           |
-| [Die Cloudumgebung des Unternehmens muss geschützt werden.](./security.md)             | Mit diesem Leitfaden zu den ersten Schritte können Sie sicherstellen, dass die richtigen Sicherheitsanforderungen im gesamten Unternehmen erfüllt sind, um das Risiko von Sicherheitsverletzungen zu minimieren und die Wiederherstellung nach Sicherheitsverletzungen zu beschleunigen                                       |
+| [Die Cloudumgebung des Unternehmens muss geschützt werden.](./security.md)             | Mit diesem Leitfaden zu den ersten Schritte können Sie sicherstellen, dass die richtigen Sicherheitsanforderungen im gesamten Unternehmen erfüllt sind, um das Risiko von Sicherheitsverletzungen zu minimieren und die Wiederherstellung nach Sicherheitsverletzungen zu beschleunigen.                                       |
 | [Sie möchten die richtigen Steuerungen anwenden, um die Zuverlässigkeit zu verbessern.](./reliability.md)                   | Dieser Leitfaden zu den ersten Schritten hilft dabei, Unterbrechungen im Zusammenhang mit Inkonsistenzen bezüglich Konfiguration, Ressourcenorganisation, Sicherheitsbaselines oder Ressourcenschutzrichtlinien zu minimieren. |
 | [Die Leistung im gesamten Unternehmen muss sichergestellt werden.](./performance.md)                               | Dieser Leitfaden zu den ersten Schritte unterstützt Sie dabei, Prozesse zur Aufrechterhaltung der Leistung im gesamten Unternehmen einzurichten.                               |
 | [Sie möchten die Organisation ausrichten.](./org-alignment.md)                               | Dieser Leitfaden zu den ersten Schritten kann Ihnen bei der Einrichtung einer Organisationsstruktur helfen, die mit geeigneten Mitarbeitern besetzt ist.                               |
 | [Sie ziehen den Aufbau eines Cloudstrategieteams in Erwägung.](./team/cloud-strategy.md)     | Dieser Leitfaden hilft Ihnen bei der Entscheidung, ob Sie ein Strategieteam benötigen, und gibt Aufschluss über die Aufgaben dieses Teams.                                |
 | [Sie ziehen den Aufbau eines Cloudeinführungsteams in Erwägung.](./team/cloud-adoption.md)     | In diesem Leitfaden werden die Schritte beschrieben, mit denen Sie die richtige Art des Einführungsteams für Ihre Anforderungen ermitteln.              |
-| [Sie ziehen&nbsp;den&nbsp;Aufbau&nbsp;eines&nbsp;Cloudgovernanceteams&nbsp;in&nbsp;Erwägung.](./team/cloud-governance.md) | Ein Cloudgovernanceteam kann mithilfe dieses Leitfadens sicherstellen, dass Risiken und die Risikotoleranz richtig bewertet und verwaltet werden.                                         |
+| [Sie ziehen&nbsp;den&nbsp;Aufbau&nbsp;eines&nbsp;Cloudgovernanceteams&nbsp;in&nbsp;Erwägung.](./team/cloud-governance.md) | Dieser Leitfaden unterstützt Sie beim Aufbau eines Governanceteams, um Risiken und die Risikotoleranz zu bewerten und zu verwalten.                                         |
 | [Sie ziehen den Aufbau eines Cloudbetriebsteams in Erwägung.](./team/cloud-operations.md) | Mit diesem Leitfaden können Sie Teams bilden, die sich auf die Überwachung, Reparatur sowie die Behebung von Problemen im Zusammenhang mit herkömmlichen IT-Vorgängen und -Ressourcen konzentrieren. |
