@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ec0f2ff617e0d4e5464dc5c9b1cead87b5a27048
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ada273d5de7f0579848e102781f7a1f40d91bef2
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220123"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400539"
 ---
 <!-- cSpell:ignore CFO's MPLS -->
 
@@ -26,8 +26,8 @@ In diesem Artikel wird die Lösung weiterentwickelt, indem dem Governance-MVP St
 Die geschäftliche Begründung für die Cloudmigration der zwei Rechenzentren wurde vom CFO genehmigt. Im Rahmen der technischen Machbarkeitsstudie wurden mehrere Hindernisse entdeckt:
 
 - Geschützte Daten und geschäftskritische Anwendungen machen 25 % der Workload in den beiden Rechenzentren aus. Beide lassen sich erst nach einer Modernisierung der aktuellen Governance-Richtlinien für vertrauliche personenbezogene Informationen und geschäftskritische Anwendungen lösen.
-- 7 % der Ressourcen in diesen Rechenzentren sind nicht cloudkompatibel. Sie werden vor der Ende des Rechenzentrumsvertrags in ein alternatives Rechenzentrum ausgelagert.
-- Bei 15 % der Ressourcen im Rechenzentrum (750 virtuelle Computer) besteht eine Abhängigkeit von Legacyauthentifizierung oder mehrstufiger Authentifizierung von Drittanbietern.
+- 7 % der Ressourcen in diesen Rechenzentren sind nicht cloudkompatibel. Sie werden vor der Ende des Rechenzentrumsvertrags in ein alternatives Rechenzentrum ausgelagert.
+- Bei 15 % der Ressourcen im Rechenzentrum (750 virtuelle Computer) besteht eine Abhängigkeit von Legacyauthentifizierung oder mehrstufiger Authentifizierung von Drittanbietern.
 - Die VPN-Verbindung, die bestehende Rechenzentren und Azure verbindet, bietet hinsichtlich Datenübertragungsgeschwindigkeiten oder Latenz keine ausreichende Kapazität, um die Menge der Ressourcen innerhalb der zweijährigen Frist bis zur Stilllegung des Rechenzentrums zu migrieren.
 
 Die zwei ersten Hindernisse werden parallel verwaltet. Dieser Artikel behandelt die Beseitigung des dritten und vierten Hindernisses.

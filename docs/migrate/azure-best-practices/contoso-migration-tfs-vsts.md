@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: be509cff8eb1b7a342310975afe50ef1f66e88bd
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ba845420954225e69fb2c4b8ffcffa8a42fec7f7
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223727"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401149"
 ---
 <!-- cSpell:ignore contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME azuredevopsmigration validateonly -->
 
@@ -226,7 +226,7 @@ Bevor sie mit der Verwendung beginnen, planen die Administratoren Ausfallzeiten 
 1. **Trennen der Sammlung.** Identitätsdaten für die Sammlung befinden sich in der Konfigurationsdatenbank des TFS-Servers, solange die Sammlung angefügt und online ist. Wenn eine Sammlung vom TFS-Server getrennt wird, wird eine Kopie dieser Identitätsdaten erstellt und mit der Sammlung für den Transport gepackt. Ohne diese Daten kann der Identitätsteil des Imports nicht ausgeführt werden. Es wird empfohlen, die Sammlung getrennt zu lassen, bis der Import abgeschlossen ist, da anderenfalls nicht die beim Import aufgetretenen Änderungen importiert werden können.
 2. **Generieren einer Sicherung.** Der nächste Schritt des Migrationsvorgangs besteht darin, eine Sicherung zu generieren, die in Azure DevOps Services importiert werden kann. Datenschichtanwendungs-Pakete (Data-Tier Application Package, DACPAC) stellen ein SQL Server-Feature dar, mit dem Datenbankänderungen in eine einzelne Datei gepackt und auf anderen SQL-Instanzen bereitgestellt werden können. Diese können auch direkt in Azure DevOps Services wiederhergestellt werden und werden als Verpackungsmethode verwendet, um Sammlungsdaten zur Cloud zu migrieren. Contoso verwendet das Tool „SqlPackage.exe“, um die DACPAC-Datei zu generieren. Dieses Tool ist in SQL Server Data Tools enthalten.
 3. **Hochladen in den Speicher.** Nachdem die DACPAC-Datei erstellt wurde, wird sie in Azure Storage hochgeladen. Nach dem Upload wird sie mit einer Shared Access Signature (SAS) versehen, damit das TFS-Migrationstool auf den Speicher zugreifen kann.
-4. **Ausfüllen der Importfelder.** Contoso kann danach die fehlenden Felder in der Importdatei ausfüllen, einschließlich der DACPAC-Einstellung. Für den Einstieg legt das Unternehmen fest, dass ein **Probeimport** ausgeführt werden soll, um vor der vollständigen Migration zu überprüfen, dass alles ordnungsgemäß funktioniert.
+4. **Ausfüllen der Importfelder.** Contoso kann danach die fehlenden Felder in der Importdatei ausfüllen, einschließlich der DACPAC-Einstellung. Für den Einstieg legt das Unternehmen fest, dass ein _Probeimport_ ausgeführt werden soll, um vor der vollständigen Migration zu überprüfen, dass alles ordnungsgemäß funktioniert.
 5. **Ausführen eines Probeimports.** Durch einen Probeimport kann die Migration von Sammlungen getestet werden. Probeläufe weisen eine begrenzte Lebensdauer auf und werden daher gelöscht, bevor eine Produktionsmigration ausgeführt wird. Sie werden nach einer festgelegten Dauer automatisch gelöscht. Ein Hinweis zu dem Zeitpunkt, an dem der Probelauf gelöscht wird, wird in der E-Mail über die erfolgreiche Durchführung angegeben, nachdem der Importvorgang abgeschlossen ist. Berücksichtigen Sie dies, und passen Sie Ihre Planung entsprechend an.
 6. **Durchführen der Produktionsmigration.** Nach Abschluss der Probemigration führen die Contoso-Administratoren die endgültige Migration durch, indem sie die Datei **import.json** aktualisieren und den Import wiederholen.
 

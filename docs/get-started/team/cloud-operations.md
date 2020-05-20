@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 04/04/2020
-ms.openlocfilehash: c3bb04bd49a055e71a7572cd8c144a45f5da2efd
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: af65cff02d7c3768bf5fca554334923cf2172937
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230342"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400165"
 ---
 # <a name="get-started-build-a-cloud-operations-team"></a>Erste Schritte: Aufbauen eines Cloudbetriebsteams
 
@@ -55,7 +55,7 @@ Operative Zuständigkeiten für alle Workloads im Produktionsportfolio gehen auf
 
 - Sehen Sie sich gemeinsam mit Mitgliedern des Cloudstrategieteams die [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) Ihres Unternehmens an, um sich über Beweggründe und Metriken sowie über die Strategie zu informieren.
 - Sehen Sie sich gemeinsam mit Mitgliedern des Cloudeinführungsteams die [Vorlage für den Cloudeinführungsplan](../../plan/template.md) Ihres Unternehmens an, um sich mit dem Zeitplan und den Prioritäten vertraut zu machen.
-- Beginnen Sie mit der Ausarbeitung der [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/microsoft/cloudadoptionframework/master/manage/opsmanagementworkbook.xlsx), um die betriebsbezogenen Anforderungen und Verpflichtungen für das Unternehmen nachzuvollziehen.
+- Beginnen Sie mit der Ausarbeitung der [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx), um die betriebsbezogenen Anforderungen und Verpflichtungen für das Unternehmen nachzuvollziehen.
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -128,7 +128,7 @@ Falls in Ihren Cloudumgebungen noch keine Verfahren für den Betrieb bereitgeste
 **Hinweis zur Erreichung der Ziele:**
 
 - Sorgen Sie für eine [geschäftliche Ausrichtung](../../manage/considerations/business-alignment.md) in der Cloud.
-- Dokumentieren Sie die Portfolio- und Betriebserwartungen in der [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/microsoft/cloudadoptionframework/master/manage/opsmanagementworkbook.xlsx).
+- Dokumentieren Sie die Portfolio- und Betriebserwartungen in der [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx).
 
 **Verantwortliches Team:**
 

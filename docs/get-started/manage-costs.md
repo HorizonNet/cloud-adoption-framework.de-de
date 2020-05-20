@@ -7,15 +7,13 @@ ms.date: 04/04/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 22956507d801163b2ee75f074f48bbd955546c11
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d14e37cad9d6d1e63200a9401cfaac2ca2e07655
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230526"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400712"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-manage-cloud-costs"></a>Erste Schritte: Verwalten von Cloudkosten
 
 Eine der Kerndisziplinen von Cloudgovernance ist die Kostenverwaltung. Die Disziplin der Kostenverwaltung konzentriert sich auf die Aufstellung von Budgets, die Überwachung von Kostenzuordnungsmustern und die Implementierung von Kontrollen zur Verbesserung des Cloudausgabenverhaltens im gesamten IT-Portfolio. Die Kostenoptimierung in Unternehmen umfasst jedoch noch viele andere Rollen und Funktionen, um die Kosten zu minimieren und die Anforderungen an Größe, Leistung, Sicherheit und Zuverlässigkeit auszugleichen. Dieser Artikel stellt diese verschiedenen unterstützenden Funktionen in einem Leitfaden für erste Schritte dar, um die Abstimmung zwischen den einzelnen beteiligten Teams zu erleichtern.
@@ -58,7 +56,7 @@ Diese Zielvorgabe in diesem Schritt ist das Ergebnis von einigen wiederkehrenden
   - Reagieren auf [Empfehlungen zur Kostenoptimierung](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json).
 - Kompromisse auf Workloadebene sind möglicherweise erforderlich, um wirksame Änderungen zur Kostenoptimierung umzusetzen. [Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/framework/cost/tradeoffs) und [Azure Architecture Review](https://docs.microsoft.com/assessments/?id=azure-architecture-review) können diese Gespräche mit dem technischen Besitzer einer bestimmten Workload unterstützen.
 - Wenn Sie mit Cloudgovernance noch nicht vertraut sind, richten Sie [Governancerichtlinien, -prozesse und -fachrichtungen](../govern/index.md) mithilfe der Governancemethodik ein.
-- Wenn Sie mit der Fachrichtung „Kostenverwaltung“ noch nicht vertraut sind, sollten Sie sich mit dem Artikel [Verbesserungen der Kostenverwaltung](../govern/guides/complex/cost-management-improvement.md) befassen und sich dabei auf den Abschnitt [Implementierung](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices) konzentrieren.
+- Falls Sie noch keine Erfahrung mit der Disziplin „Kostenverwaltung“ haben, befassen Sie sich ggf. mit dem [Artikel zur Verbesserung der Kostenverwaltung](../govern/guides/complex/cost-management-improvement.md) (insbesondere mit dem [Abschnitt zur Implementierung](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)).
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -167,7 +165,7 @@ Langfristige Betriebskosten sind ein gängiges Thema in jedem Bereich von Verbes
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudeinführungsteam | <li> Cloudstrategieteam <li> Cloudgovernanceteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT |
+| <li> Cloudeinführungsteam | <li> Cloudstrategieteam <li> Cloudgovernanceteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
 
 ## <a name="step-6-drive-customer-focused-innovation"></a>Schritt 6: Fördern kundenorientierter Innovation
 
@@ -206,7 +204,7 @@ Durch das Einrichten einer soliden Verwaltungsbaseline werden Daten erfasst und 
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudbetriebsteam | <li> Cloudstrategieteam <li> Cloudgovernanceteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT |
+| <li> Cloudbetriebsteam | <li> Cloudstrategieteam <li> Cloudgovernanceteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
 
 ## <a name="value-statement"></a>Wertaussage
 

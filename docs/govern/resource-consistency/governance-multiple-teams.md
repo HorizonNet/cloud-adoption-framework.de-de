@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 30c25159dc677c5220c80697c282304f73a59a9b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: db90e2ca82164d645605e49dc288c21b610e12b9
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218797"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399542"
 ---
 <!-- cSpell:ignore netops -->
 
@@ -87,7 +87,7 @@ In beiden Beispielen wird einem Dienstadministrator des Abonnements die integrie
 ![Dienstadministrator des Abonnements mit Rolle „Besitzer“](../../_images/govern/design/governance-2-1.png)
 _Abbildung 3: Ein Abonnement mit einem Dienstadministrator, dem die integrierte Rolle „Besitzer“ zugewiesen ist._
 
-<!-- docsTest:ignore "resource group A" "resource group B" "resource groups A and B" "workload owner A" "workload owner B" -->
+<!-- docsTest:ignore "resource group A" "resource groups A and B" "workload owner A" -->
 
 1. Im ersten Beispiel verfügt **Workloadbesitzer A** über keine Berechtigungen für den Abonnementbereich. Er hat standardmäßig keine Verwaltungsrechte für den Ressourcenzugriff. Dieser Benutzer möchte die Ressourcen für seine Workload bereitstellen und verwalten. Er muss sich an den **Dienstadministrator** wenden, um die Erstellung einer Ressourcengruppe anzufordern.
     ![Workloadbesitzer fordert Erstellung von Ressourcengruppe A an.](../../_images/govern/design/governance-2-2.png)
@@ -168,7 +168,8 @@ Zuerst sehen wir uns ein Beispiel für ein Ressourcenverwaltungsmodell an, bei d
 
 Wir beginnen, indem wir die erste Option auswerten. Sie verwenden das Berechtigungsmodell aus dem vorherigen Abschnitt mit einem einzelnen Dienstadministrator für das Abonnement, der Ressourcengruppen erstellt und ihnen Benutzer hinzufügt. Diese Benutzer besitzen die integrierte Rolle **Mitwirkender** oder **Leser**.
 
-<!-- docsTest:ignore managedBy hub-vnet prod-vnet app1-dev-vnet app2-dev-vnet app1-prod-vnet app2-prod-vnet -->
+<!-- docsTest:ignore managedBy -->
+<!-- hub-vnet prod-vnet app1-dev-vnet app2-dev-vnet app1-prod-vnet app2-prod-vnet -->
 
 1. Die erste bereitgestellte Ressourcengruppe steht für die Umgebung **Freigegebene Infrastruktur**. Das **Abonnementbesitzer**-Konto erstellt eine Ressourcengruppe für die Ressourcen der freigegebenen Infrastruktur mit dem Namen `netops-shared-rg`.
     ![Erstellen einer Ressourcengruppe](../../_images/govern/design/governance-3-0d.png)

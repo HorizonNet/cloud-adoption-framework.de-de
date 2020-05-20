@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 0e26e7ee1c4bc534ea461de2293fe69b75de1360
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d1cbf6c608bbea2374cb6325e755fc9367aedc03
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218389"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399610"
 ---
 # <a name="govern-methodology-for-the-cloud"></a>Governancemethodik für die Cloud
 
@@ -25,7 +25,7 @@ Das Framework für die Cloudeinführung (Cloud Adoption Framework) bietet Govern
 
 Eine Reise ohne Zielort ist nur eine Wanderung. Es ist wichtig, eine ungefähre Vorstellung vom Endzustand zu erhalten, bevor der erste Schritt unternommen wird. Die folgende Infografik stellt einen Bezugsrahmen für den Endzustand dar. Dies ist nicht Ihr Ausgangspunkt, sondern zeigt Ihr potenzielles Ziel.
 
-![Infografik des Cloud Adoption Framework-Governancemodells](../_images/operational-transformation-govern-highres.png)
+![Infografik des Cloud Adoption Framework-Governancemodells](../_images/operational-transformation-govern-large.png)
 
 Das Cloud Adoption Framework-Governancemodell identifiziert wichtige Bereiche von Bedeutung während der Reise. Jeder Bereich bezieht sich auf verschiedene Arten von Risiken, denen sich das Unternehmen bei der Einführung weiterer Clouddienste stellen muss. Im Rahmen dieses Frameworks identifiziert der Governanceleitfaden erforderliche Aktionen für das Cloudgovernanceteam. Dabei wird jedes Prinzip des Cloud Adoption Framework-Governancemodells näher beschrieben. Dazu gehören im Allgemeinen:
 

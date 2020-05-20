@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7db8091d12a763568a3ba7e549770fa94cf0ea23
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 5a7bfbffa84e7a64221d560b88067caebd311e85
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216587"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400779"
 ---
 # <a name="create-business-alignment-in-cloud-management"></a>Erstellen der Geschäftsausrichtung in der Cloudverwaltung
 
@@ -33,7 +33,7 @@ Glücklicherweise schaffen die Prozesse zur Entwicklung einer Cloud Adoption-Str
 
 ## <a name="operations-management-workbook"></a>Arbeitsmappe zum Operations Management
 
-Um Entscheidungen, die sich aus diesem Gespräch über die Begriffsausrichtung ergeben, zu erfassen, ist eine [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) auf unserer GitHub-Website verfügbar. Diese Arbeitsmappe stellt keine SLA- oder Kostenberechnungen bereit. Sie dient nur zur Erfassung dieser Maßnahmen und zur Prognose der Rendite bei der Schadensvermeidung.
+Um Entscheidungen, die sich aus diesem Gespräch über die Begriffsausrichtung ergeben, zu erfassen, ist eine [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) auf unserer GitHub-Website verfügbar. Diese Arbeitsmappe stellt keine SLA- oder Kostenberechnungen bereit. Sie dient nur zur Erfassung dieser Maßnahmen und zur Prognose der Rendite bei der Schadensvermeidung.
 
 Alternativ können dieselben Workloads und zugehörigen Ressourcen direkt in Azure gekennzeichnet werden, wenn die Lösungen bereits in der Cloud bereitgestellt wurden.
 

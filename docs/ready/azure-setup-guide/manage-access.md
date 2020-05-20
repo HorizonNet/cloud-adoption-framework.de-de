@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: efefa348324ab0c9dff86b5d19f7c3f11d9d437d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 94f51b92b50dabff8551e30e476d2738c3f2fef7
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223268"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621647"
 ---
 <!-- cSpell:ignore LijuKodicheraJayadevan -->
 
@@ -68,7 +68,7 @@ So gewähren Sie einem Benutzer Zugriff auf ein Abonnement:
 
 So gewähren Sie einem Benutzer Zugriff auf eine Ressourcengruppe:
 
-1. Navigieren Sie zu [Ressourcengruppen](https://portal.azure.com/#blade/HubsExtension/Resources/resourceType/Microsoft.Resources%2FSubscriptions%2FResourceGroups).
+1. Navigieren Sie zu [Ressourcengruppen](https://portal.azure.com/#blade/HubsExtension/BrowseResourceGroups).
 1. Wählen Sie eine Ressourcengruppe aus.
 1. Wählen Sie die Option **Zugriffssteuerung (IAM)** aus.
 1. Wählen Sie **+Hinzufügen** > **Rollenzuweisung hinzufügen** aus.

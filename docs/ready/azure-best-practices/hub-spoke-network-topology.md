@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 7ae47eb7fbc7008ff4c7cbed20768386149bf7e1
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 7e5512cba033adca5c3e88be265d45b5f8bc8f3c
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215567"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621421"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs -->
 
@@ -22,9 +22,9 @@ ms.locfileid: "83215567"
 
 _Hub-and-Spoke_ ist ein Netzwerkmodell für eine effizientere Verwaltung gemeinsamer Kommunikations- oder Sicherheitsanforderungen. Es hilft auch dabei, Azure-Abonnementeinschränkungen zu vermeiden. Dieses Modell berücksichtigt die folgenden Punkte:
 
-- **Kosteneinsparungen und Effizienz der Verwaltung** Zentralisierung von Diensten, die von mehreren Workloads, z.B. Network Virtual Appliances (NVAs) und DNS-Servern an einem zentralen Standort gemeinsam genutzt werden können. Auf diese Weise kann die IT-Abteilung redundante Ressourcen und den Verwaltungsaufwand minimieren.
-- **Umgehen von Abonnementgrenzen** Große cloudbasierte Workloads können den Einsatz von mehr Ressourcen erfordern, als in einem einzelnen Azure-Abonnements zulässig ist. Durch ein Peering virtueller Netzwerke für eine Workload aus verschiedenen Abonnements zu einem zentralen Hub können diese Grenzwerte umgangen werden. Weitere Informationen finden Sie unter [Grenzwerte für Azure-Abonnements](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits).
-- **Trennung von Zuständigkeiten**: Sie können einzelne Workloads zwischen zentralen IT-Teams und für Workloads zuständige Teams bereitstellen.
+- **Kosteneinsparungen und Effizienz der Verwaltung.** Zentralisierung von Diensten, die von mehreren Workloads, z.B. Network Virtual Appliances (NVAs) und DNS-Servern an einem zentralen Standort gemeinsam genutzt werden können. Auf diese Weise kann die IT-Abteilung redundante Ressourcen und den Verwaltungsaufwand minimieren.
+- **Umgehen von Abonnementgrenzen.** Große cloudbasierte Workloads können den Einsatz von mehr Ressourcen erfordern, als in einem einzelnen Azure-Abonnements zulässig ist. Durch ein Peering virtueller Netzwerke für eine Workload aus verschiedenen Abonnements zu einem zentralen Hub können diese Grenzwerte umgangen werden. Weitere Informationen finden Sie unter [Grenzwerte für Azure-Abonnements](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits).
+- **Trennung von Zuständigkeiten.** Sie können einzelne Workloads zwischen zentralen IT-Teams und für Workloads zuständige Teams bereitstellen.
 
 Kleinere Cloudumgebungen profitieren möglicherweise nicht von der zusätzlichen Struktur und den Funktionen, die dieses Modell bietet. Für größere Cloudeinführungsaktivitäten sollte jedoch die Implementierung einer Hub-and-Spoke-Architektur in Erwägung gezogen werden, wenn für sie bereits die oben aufgeführten Bedenken gelten.
 

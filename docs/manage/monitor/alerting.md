@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 33aaab94c1f6758f6b77be62ab7a70ed2f6bc1ee
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0f9c71ec1ee9ce258def9abb297e89567399aeb9
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223829"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400808"
 ---
 <!-- cSpell:ignore kusto multiresource multisignal -->
 
@@ -87,7 +87,7 @@ Azure Monitor bietet Unterstützung für die Integration mit anderen Überwachun
 Azure Monitor für VMs | Metriken zu Integritätskriterien werden in den Metrikspeicher geschrieben. | Warnungen werden generiert, wenn sich der Integritätsstatus von „Fehlerfrei“ in „Fehlerhaft“ ändert. Diese Warnung unterstützt nur Aktionsgruppen, die zum Senden von SMS- oder E-Mail-Benachrichtigungen konfiguriert sind. |
 | | Zuordnungsdaten und Leistungsprotokolldaten zum Gastbetriebssystem werden in den Protokollspeicher geschrieben. | Es werden Protokollabfragewarnungen erstellt. |
 
-<!-- docsTest:ignore "speed driven" -->
+<!-- docsTest:ignore "speed driven by cost" -->
 
 ### <a name="fastest-speed-driven-by-cost"></a>Höchste Geschwindigkeit bei gleichzeitiger Kosteneffizienz
 

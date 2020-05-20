@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a5cafc31b5ede4060aedf78ff40215cb7d132aaa
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 4d17c8fe7251a4ce5281f94d8776ba5ceaddd181
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216791"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621232"
 ---
 <!-- cSpell:ignore ITSMC -->
 
@@ -78,7 +78,7 @@ Die grundlegende Codeeinheit zur Bereitstellung der automatisierten Bereinigung 
 
 So erstellen oder verwalten Sie Runbooks:
 
-1. Wechseln Sie zu [Azure Automation](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts).
+1. Wechseln Sie zu **Azure Automation**.
 1. Wählen Sie **Automation-Konten** und dann eines der aufgeführten Konten aus.
 1. Wechseln Sie zu **Prozessautomatisierung**.
 1. Mit den vorgestellten Optionen können Sie Runbooks, Zeitpläne und andere Funktionen zur automatisierten Wiederherstellung erstellen oder verwalten.
@@ -87,7 +87,7 @@ So erstellen oder verwalten Sie Runbooks:
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts]" submitText="Assign Policy" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts]" submitText="Go to Azure Automation" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 

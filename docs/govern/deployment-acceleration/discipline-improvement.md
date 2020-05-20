@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 835614ca30fc4fc5ca3e617e920f46aa4039cd8b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3851fbc2634f98ce7e993be5cca14d89f523abf1
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220361"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400623"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>Verbesserung der Disziplin „Beschleunigung der Bereitstellung“
 
@@ -88,6 +88,8 @@ Nachdem die Transformation abgeschlossen ist, müssen Governance und Betrieb wä
 - Erstellen Sie Berichte zu Metriken nach der Bereitstellung, und geben Sie sie an die Beteiligten weiter.
 - Überarbeiten Sie die Architekturrichtlinien, um zukünftige Einführungsprozesse zu unterstützen.
 - Sorgen Sie für die regelmäßige Schulung und Kommunikation mit den betroffenen Personen und Teams, um die ununterbrochene Einhaltung der Architekturrichtlinien sicherzustellen.
+
+<!-- docsTest:ignore "desired state configuration" -->
 
 **Potenzielle Aktivitäten:**
 

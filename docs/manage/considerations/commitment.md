@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d0f392d58efe65b8199aefeb9dbd554ed0896cae
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0ca1c1804b2c7116ed61e05a10a221b472a2807d
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216179"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83398759"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Die geschäftliche Verpflichtung in der Cloudverwaltung
 
@@ -49,7 +49,7 @@ Im [Azure-Verwaltungsleitfaden](../azure-management-guide/index.md) werden die i
 <!-- -->
 
 > [!TIP]
-> Wenn Sie die Cloudverwaltung mit der Arbeitsmappe [Operations Management](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) planen, sollten die Felder für Operations Management aktualisiert werden, um diese Voraussetzungen zu berücksichtigen. Zu diesen Feldern zählen _Commitment Level_ (Verpflichtungsebene), _Composite SLA_ (Zusammengesetzte SLA) und _Monthly cost_ (Monatliche Kosten). „Monthly Cost“ sollte die Kosten der hinzugefügten Tools zur Betriebsverwaltung pro Monat darstellen.
+> Wenn Sie die Cloudverwaltung mit der Arbeitsmappe [Operations Management](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) planen, sollten die Felder für Operations Management aktualisiert werden, um diese Voraussetzungen zu berücksichtigen. Zu diesen Feldern zählen _Commitment Level_ (Verpflichtungsebene), _Composite SLA_ (Zusammengesetzte SLA) und _Monthly cost_ (Monatliche Kosten). „Monthly Cost“ sollte die Kosten der hinzugefügten Tools zur Betriebsverwaltung pro Monat darstellen.
 
 Die Betriebsverwaltungsbaseline dient als Ausgangspunkt, der in jedem der folgenden Abschnitte überprüft wird.
 
@@ -110,7 +110,7 @@ Für verwaltete Lösungen gibt es mehrere Entwurfsprinzipien und Vorlagenlösung
 In den folgenden Berechnungen werden Formeln erläutert, die Ihnen dabei helfen, die Unterschiede zwischen Verlusten und Investitionen für eine intensivere Verwaltung zu verstehen. Anleitungen zum Berechnen der Kosten für eine intensivere Verwaltung finden Sie unter [Workloadautomatisierung](./workload.md) und [Plattformautomatisierung](./platform.md).
 
 > [!TIP]
-> Wenn Sie die Cloudverwaltung mit der Arbeitsmappe [Operations Management](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) planen, aktualisieren Sie die Felder für Operations Management, um jede Konversation zu berücksichtigen. Zu diesen Feldern zählen _Commitment Level_ (Verpflichtungsebene), _Composite SLA_ (Zusammengesetzte SLA) und _Monthly cost_ (Monatliche Kosten). „Monthly Cost“ sollte die monatlichen Kosten der hinzugefügten Tools zur Betriebsverwaltung darstellen. Nach der Aktualisierung aktualisieren diese Felder die ROI-Formeln und jedes der folgenden Felder.
+> Wenn Sie die Cloudverwaltung mit der Arbeitsmappe [Operations Management](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) planen, aktualisieren Sie die Felder für Operations Management, um jede Konversation zu berücksichtigen. Zu diesen Feldern zählen _Commitment Level_ (Verpflichtungsebene), _Composite SLA_ (Zusammengesetzte SLA) und _Monthly cost_ (Monatliche Kosten). „Monthly Cost“ sollte die monatlichen Kosten der hinzugefügten Tools zur Betriebsverwaltung darstellen. Nach der Aktualisierung aktualisieren diese Felder die ROI-Formeln und jedes der folgenden Felder.
 
 ### <a name="estimate-outage-hours-per-year"></a>Geschätzter Ausfall (Stunden pro Jahr)
 

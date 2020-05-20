@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a7662d8460581d143b75a8f95aa48bf290d39c2d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 69d1aaf7ff2a5bd3d71cb03fd1149019792c71f1
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221755"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401284"
 ---
 <!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars -->
 
@@ -43,10 +43,10 @@ Die bereitgestellten Komponenten und ihre Zwecke sind:
 | Komponente | Verantwortlichkeit |
 |---|---|
 | Ressourcengruppen | Kernressourcengruppen, die für die Grundlage benötigt werden |
-| Aktivitätsprotokollierung      | Überwachung aller Abonnementaktivitäten und Archivierung: <li> Speicherkonto <li> Azure Event Hubs |
+| Aktivitätsprotokollierung | Überwachung aller Abonnementaktivitäten und Archivierung: <li> Speicherkonto <li> Azure Event Hubs |
 | Diagnoseprotokollierung | Alle Vorgangsprotokolle, die für eine bestimmte Anzahl von Tagen beibehalten werden: <li> Speicherkonto <li> Event Hubs |
 | Log Analytics | Speichert alle Vorgangsprotokolle. Bereitstellen allgemeiner Lösungen zum umfassenden Überprüfen der bewährten Methoden von Anwendungen: <li> NetworkMonitoring <li> ADAssessment <li> ADReplication <li> AgentHealthAssessment <li> DnsAnalytics <li> KeyVaultAnalytics |
-| Azure Security Center | Sicherheitsmetriken und -warnungen, die an E-Mailadressen und Telefonnummern gesendet werden                                                                                                                                                                                        |
+| Azure Security Center | Sicherheitsmetriken und -warnungen, die an E-Mailadressen und Telefonnummern gesendet werden |
 
 <!-- markdownlint-enable MD033 -->
 

@@ -7,15 +7,13 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 00efe3b582b5850ff7a5c6c1a6ab16977c6ada4d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: cb0b963b68fbad8d883e7cbbfd107cc774136ad0
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216893"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401082"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Cloudeinführungsplan und Azure DevOps
 
 Azure DevOps ist der Satz cloudbasierter Tools für Azure-Kunden, die iterative Projekte verwalten. Es enthält darüber hinaus Tools für die Verwaltung von Bereitstellungspipelines und andere wichtige Elemente von DevOps.

@@ -4,17 +4,16 @@ description: Verwenden Sie das Cloud Adoption Framework für Azure für Ihre ers
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 02/25/2020
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-layout: LandingPage
-ms.openlocfilehash: 7ce353a03c57e89800d65edc5cdfbdec8c53d092
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 5c3dbc530ff2e1f28c0927cead3a761463295c4d
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218491"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399618"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>Einrichten einer ersten Grundlage für die Cloud Governance
 
@@ -30,38 +29,9 @@ Wenn Sie das Cloud Adoption Framework verfolgt haben, haben Sie möglicherweise 
 
 Im Folgenden werden zwei verschiedene Beispiele für anfängliche Governancegrundlagen (die auch als Governance-MVPs bezeichnet werden) aufgeführt, um eine solide Grundlage für die Governance bei neuen oder bestehenden Bereitstellungen anzuwenden. Wählen Sie das MVP, das am besten zu Ihren Geschäftsanforderungen passt, für die ersten Schritte aus:
 
-<!-- markdownlint-disable MD033 -->
+- [Standardgovernanceleitfaden:](./guides/standard/index.md) Ein für die meisten Organisationen geeigneter Leitfaden auf Grundlage des empfohlenen anfänglichen Modells mit zwei Abonnements, der für Bereitstellungen in mehreren Regionen konzipiert ist, aber nicht für öffentliche Clouds und Sovereign/Government Clouds gilt.
+- [Governanceleitfaden für komplexe Unternehmen:](./guides/complex/index.md) Ein Leitfaden für Unternehmen, die über mehrere unabhängige IT-Geschäftseinheiten verwaltet werden oder öffentliche Clouds und Sovereign/Government Clouds umfassen.
 
-<ul class="panelContent cardsZ">
-<li style="display: flex; flex-direction: column;">
-    <a href="./guides/standard/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Standardgovernanceleitfaden</h3>
-                        <p>Ein für die meisten Organisationen geeigneter Leitfaden auf Grundlage des empfohlenen anfänglichen Modells mit zwei Abonnements, der für Bereitstellungen in mehreren Regionen konzipiert ist, aber nicht für öffentliche Clouds und Sovereign/Government Clouds gilt.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-<li style="display: flex; flex-direction: column;">
-    <a href="./guides/complex/index.md" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-        <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-            <div class="cardPadding" style="display: flex;">
-                <div class="card">
-                    <div class="cardText">
-                        <h3>Governanceleitfaden für komplexe Unternehmen</h3>
-                        <p>Ein Leitfaden für Unternehmen, die über mehrere unabhängige IT-Geschäftseinheiten verwaltet werden oder öffentliche Clouds und Sovereign/Government Clouds umfassen.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </a>
-</li>
-</ul>
 <!-- markdownlint-enable MD033 -->
 
 ## <a name="next-steps"></a>Nächste Schritte

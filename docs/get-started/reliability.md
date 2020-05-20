@@ -7,15 +7,13 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 8e17c53a2a54a212fa312b62b2ff527497583919
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: c75b7a17c8c2676688f5221ec0e4d0f2ed0641a5
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230470"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400213"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-improve-reliability-with-the-right-controls"></a>Erste Schritte: Verbessern der Zuverlässigkeit mit den richtigen Steuerungen
 
 Wie werden die richtigen Steuerungen angewendet, um die Zuverlässigkeit zu verbessern? Dieser Leitfaden hilft dabei, Unterbrechungen im Zusammenhang mit Inkonsistenzen bezüglich Konfiguration, Ressourcenorganisation, Sicherheitsbaselines oder Ressourcenschutz zu minimieren. Die Schritte in diesem Leitfaden helfen dem Betriebsteam, Zuverlässigkeit und Kosten über das gesamte IT-Portfolio hinweg auszugleichen, und unterstützen das Governanceteam bei der Sicherstellung einer konsistenten Anwendung dieses Gleichgewichts. Zuverlässigkeit hängt auch von anderen Rollen und Funktionen ab. In diesem Artikel werden die verschiedenen unterstützenden Funktionen beschrieben, mit denen Sie die Ausrichtung zwischen den beteiligten Teams gestalten können.
@@ -34,7 +32,7 @@ Alle Workloads werden nicht gleich erstellt. In jeder Umgebung gibt es Workloads
 - Aushandeln von Geschäftsverpflichtungen mit dem Cloudstrategieteam, um einen Plan für erweiterte Betriebs- und Resilienzanforderungen zu entwickeln.
 - Erweitern der Verwaltungsbaseline, wenn für die Mehrzahl der Workloads zusätzliche Vorgänge erforderlich sind.
 - Anwenden erweiterter Betriebsanforderungen auf Zielzonen und Ressourcen an, die höhere kritische Workloads unterstützen.
-- Dokumentieren von Betriebsentscheidungen im IT-Portfolio in der [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx).
+- Dokumentieren von Betriebsentscheidungen im IT-Portfolio in der [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx).
 
 **Hinweis zur Erreichung der Zielvorgaben:**
 
@@ -158,7 +156,7 @@ Langfristige Vorgänge können von den Entscheidungen beeinflusst werden, die w�
 
 - Testen der Betriebsbereitschaft von Produktionsbereitstellungen mithilfe von Ressourcenkonsistenzrichtlinien.
 - Überprüfen der Einhaltung von Entwurfsrichtlinien und Betriebsanforderungen für Ressourcenkonsistenz.
-- Dokumentieren aller erweiterten Betriebsanforderungen in der [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx).
+- Dokumentieren aller erweiterten Betriebsanforderungen in der [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx).
 
 **Hinweis zur Erreichung der Zielvorgaben:**
 

@@ -7,15 +7,13 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: a49e52f94b2c9b84afd4e00402a4307fac21923b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 97da5f902fb195a4390b33ef5b8eed2f12ac4a94
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230534"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621189"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>Erste Schritte: Beschleunigen neuer Produkt- und Dienstinnovationen in der Cloud
 
 Die Erstellung neuer Produkte und Dienste in der Cloud erfordert eine andere Herangehensweise als die Migration. Die Innovationsmethodik im Cloud Adoption Framework etabliert einen Ansatz, der als Leitfaden für die Entwicklung neuer Produkte und Dienste dienen kann.
@@ -31,6 +29,8 @@ Erstellen Sie zur Vermeidung gängiger Hindernisse eine klare und prägnante Ges
 **Ziele:**
 
 - Verwenden Sie die [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx), um Beweggründe und gewünschte Geschäftsergebnisse zu erfassen.
+
+<!-- docsTest:ignore "Get started: Accelerate migration" -->
 
 **Hinweis zur Erreichung der Ziele:**
 
@@ -149,13 +149,13 @@ Definieren Sie den Plan für langfristige operative Zuständigkeiten im Zusammen
 **Ziele:**
 
 - Führen Sie die [Azure-Architekturüberprüfung](https://docs.microsoft.com/assessments/?id=azure-architecture-review) durch, um verschiedene Architektur- und Betriebsentscheidungen zu bewerten.
-- Passen Sie die [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) an, um ggf. erforderliche erweiterte Vorgänge zu berücksichtigen.
+- Passen Sie die [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) an, um ggf. erforderliche erweiterte Vorgänge zu berücksichtigen.
 
 **Hinweis zur Erreichung der Ziele:**
 
 - [Erweitern der Verwaltungsbaseline](../manage/best-practices.md): Dieser Abschnitt von Cloud Adoption Framework führt den Leser durch verschiedene Übergänge in die cloudbasierte Betriebsverwaltung.
 - [Spezifische Angaben zu erweiterten Vorgängen](../manage/design-principles.md): Entdecken Sie Möglichkeiten, Ihre Verwaltungsbaseline zu übertreffen.
-- Sollten erweiterte Vorgänge zur Unterstützung Ihrer betrieblichen Anforderungen erforderlich sein, bewerten Sie die [geschäftlichen Verpflichtungen](https://docs.microsoft.com/manage/considerations/business-alignment), um betriebliche Zuständigkeiten für beide Teams zu bestimmen.
+- Sollten erweiterte Vorgänge zur Unterstützung Ihrer betrieblichen Anforderungen erforderlich sein, bewerten Sie die [geschäftlichen Verpflichtungen](../manage/considerations/business-alignment.md), um betriebliche Zuständigkeiten für beide Teams zu bestimmen.
 
 <!-- markdownlint-disable MD033 -->
 <br>

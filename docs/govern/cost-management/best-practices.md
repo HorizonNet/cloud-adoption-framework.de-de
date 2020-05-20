@@ -7,12 +7,12 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8fdbbcc2dd0042f3b2d0bb6deed1f230695b97b5
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: df2231a5e60bebf25124cfdc42110c13f80833e3
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220871"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400649"
 ---
 <!-- docsTest:ignore ARO -->
 
@@ -173,7 +173,7 @@ Speicherkonten können verschiedene Arten von Redundanz für Resilienz und Hochv
 | --- | --- | --- |
 | **Lokal redundanter Speicher (LRS)** | Schützt vor einem lokalen Ausfall durch Replikation in eine einzelne Speichereinheit in einer gesonderten Fehler- und Updatedomäne. Behält mehrere Kopien Ihrer Daten in einem Rechenzentrum. Stellt eine Dauerhaftigkeit von mindestens 99,999999999 Prozent (11 Neunen) für Objekte in einem bestimmten Jahr bereit. | Erwägen Sie, ob Ihre Anwendung Daten speichert, die problemlos wiederhergestellt werden können. |
 | **Zonenredundanter Speicher (ZRS)** | Schützt vor Rechenzentrumsausfällen, indem über drei Speichercluster in einer einzelnen Region hinweg repliziert wird. Jeder Speichercluster ist physisch unabhängig und befindet sich in einer eigenen Verfügbarkeitszone. Bietet eine Dauerhaftigkeit von mindestens 99,9999999999 Prozent (12 Neunen) für Objekte für ein bestimmtes Jahr, indem mehrere Kopien Ihrer Daten in mehreren Rechenzentren oder mehreren Regionen gespeichert werden. | Überlegen Sie, ob Sie Konsistenz, Dauerhaftigkeit und Hochverfügbarkeit benötigen. Schützt eventuell nicht vor einem regionalen Notfall, wenn mehrere Zonen dauerhaft betroffen sind. |
-| **Geografisch redundanter Speicher (GRS)** | Schützt vor dem Ausfall einer vollständigen Region, indem Daten in eine sekundäre Region repliziert werden, die mehrere hundert Kilometer vom primären Speicherort der Quelldaten entfernt ist. Stellt eine Dauerhaftigkeit von mindestens 99,99999999999999 Prozent (16 Neunen) für Objekte in einem bestimmten Jahr bereit. | Replikatdaten sind nur verfügbar, wenn Microsoft ein Failover in die sekundäre Region initiiert. Kommt es zu einem Failover, sind Lese- und Schreibzugriff verfügbar. |
+| **Georedundanter Speicher (GRS)** | Schützt vor dem Ausfall einer vollständigen Region, indem Daten in eine sekundäre Region repliziert werden, die mehrere hundert Kilometer vom primären Speicherort der Quelldaten entfernt ist. Stellt eine Dauerhaftigkeit von mindestens 99,99999999999999 Prozent (16 Neunen) für Objekte in einem bestimmten Jahr bereit. | Replikatdaten sind nur verfügbar, wenn Microsoft ein Failover in die sekundäre Region initiiert. Kommt es zu einem Failover, sind Lese- und Schreibzugriff verfügbar. |
 | **Georedundanter Speicher mit Lesezugriff (RA-GRS)** | Ähnlich wie GRS. Stellt eine Dauerhaftigkeit von mindestens 99,99999999999999 Prozent (16 Neunen) für Objekte in einem bestimmten Jahr bereit. | Bietet außerdem 99,99 Prozent Leseverfügbarkeit, indem Lesezugriff aus der zweiten für GRS verwendeten Region zugelassen wird. |
 
 **Weitere Informationen**:

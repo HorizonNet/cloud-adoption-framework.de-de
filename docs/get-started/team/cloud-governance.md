@@ -7,15 +7,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 04/04/2020
-ms.openlocfilehash: 5b1d1cb9213b40242e95af60bead9ef3a919054a
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ac6696cf71d43fb8cae3ec5d7e8fe455cf18d989
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230382"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400181"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-build-a-cloud-governance-team"></a>Erste Schritte: Aufstellen eines Cloudgovernanceteams
 
 Mit einem Cloudgovernanceteam wird sichergestellt, dass Risiken und die Risikotoleranz richtig ausgewertet und verwaltet werden. Dieses Team sorgt dafür, dass Risiken, die für das Unternehmen nicht tolerierbar sind, richtig identifiziert werden. Die Mitarbeiter dieses Teams steuern Risiken mithilfe von Unternehmensrichtlinien.
@@ -47,22 +45,22 @@ Die offizielle Empfehlung für das Cloud Adoption Framework lautet, dass immer e
 
 Das Governanceteam sorgt für die Konsistenz und die Einhaltung der allgemeinen Richtlinien. Diese Richtlinien sind das Ergebnis einer fortlaufenden Ausrichtung an anderen Teams. Vor dem Festlegen von Richtlinien oder von automatisierten Maßnahmen für Cloudgovernance sollte sich das Cloudgovernanceteam mit anderen Teams absprechen, die in der RACI-Vorlage angegeben sind, um die gemeinsame Ausrichtung in Bezug auf kritische Themen sicherzustellen, z. B. Sicherheit, Kosten, Leistung, Betrieb und Bereitstellung. Die Schritte 4 und 5 können diese Ausrichtung vereinfachen.
 
-**Zielvorgaben:**
+**Ziele:**
 
 - Besprechen Sie den aktuellen Zustand der Implementierung und die Pläne zur laufenden Einführung mit jedem Team.
 
-**Hinweis zur Erreichung der Zielvorgaben:**
+**Hinweis zur Erreichung der Ziele:**
 
-- Sehen Sie sich gemeinsam mit Mitgliedern des Cloudstrategieteams die [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) Ihres Unternehmens an, um sich über Motivation, Metriken und Strategie zu informieren.
+- Sehen Sie sich gemeinsam mit Mitgliedern des Cloudstrategieteams die [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) Ihres Unternehmens an, um sich über Beweggründe und Metriken sowie über die Strategie zu informieren.
 - Sehen Sie sich die [Vorlage für den Cloudeinführungsplan](../../plan/template.md) Ihres Unternehmens zusammen mit Mitgliedern des Cloudeinführungsteams an, um sich mit den Zeitachsen und Prioritäten vertraut zu machen.
-- Sehen Sie sich die [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/microsoft/cloudadoptionframework/master/manage/opsmanagementworkbook.xlsx) des Operations-Teams an, um sich über die betriebsbezogenen Anforderungen und Verpflichtungen zu informieren, die für das Unternehmen gelten.
+- Sehen Sie sich die [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) des Operations-Teams an, um sich über die betriebsbezogenen Anforderungen und Verpflichtungen zu informieren, die für das Unternehmen gelten.
 
 <!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudgovernanceteam | <li> Cloudstrategieteam <li> Cloudeinführungsteam <li> Cloudbetriebsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT |
+| <li> Cloudgovernanceteam | <li> Cloudstrategieteam <li> Cloudeinführungsteam <li> Cloudbetriebsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
 
 ## <a name="step-3-establish-a-cadence-with-other-teams"></a>Schritt 3: Festlegen eines gemeinsamen Rhythmus mit anderen Teams
 
@@ -70,7 +68,7 @@ Die Umstellung auf die Cloud erfolgt normalerweise in mehreren Wellen (bzw. Rele
 
 **Zielvorgaben:**
 
-- Legen Sie für jedes unterstützende Team einen Rhythmus fest. Richten Sie diesen Rhythmus nach Möglichkeit an den Release- und Planungszyklen aus.
+- Etablieren Sie einen gemeinsamen Rhythmus mit den einzelnen unterstützenden Teams. Richten Sie diesen Rhythmus nach Möglichkeit an den Release- und Planungszyklen aus.
 - Legen Sie einen separaten Rhythmus direkt mit dem Cloudstrategieteam (bzw. einzelnen Teammitgliedern) fest, nach dem die Risiken der nächsten Welle der Einführung überprüft werden, und ermitteln Sie die Toleranz des Teams in Bezug auf diese Risiken.
 
 **Hinweis zur Erreichung der Zielvorgaben:**
@@ -166,13 +164,13 @@ Wenn Zielzonen bereitgestellt und erweitert werden, können sich neue Risiken od
 
 ## <a name="step-9-adoption-handoffs"></a>Schritt 9: Übertragung von Aufgaben während der Einführung
 
-Wenn neue Einführungsmaßnahmen abgeschlossen werden, überträgt das Cloudeinführungsteam betriebsbezogene Zuständigkeiten an das Cloudbetriebsteam und an Cloudgovernanceteams. Achten Sie auf die ständige Ausrichtung auf die Releases während der Einführung, um die korrekte Dokumentation und Einhaltung von Richtlinien sicherzustellen und die Verantwortung für die Workloads zu übernehmen.
+Wenn neue Einführungsmaßnahmen abgeschlossen werden, überträgt das Cloudeinführungsteam betriebsbezogene Zuständigkeiten an das Cloudbetriebsteam und an Cloudgovernanceteams. Behalten Sie die Ausrichtung auf Einführungsreleases bei, um eine ordnungsgemäße Dokumentation sowie die Einhaltung von Richtlinien sicherzustellen und die Verantwortung für die Workloads zu übernehmen.
 
-**Zielvorgaben:**
+**Ziele:**
 
 - Führen Sie eine regelmäßige Überprüfung der Aufgaben durch, die von Cloudeinführungsteams übertragen werden, und akzeptieren Sie sie.
 
-**Hinweis zur Erreichung der Zielvorgaben:**
+**Hinweis zur Erreichung der Ziele:**
 
 - Legen Sie einen Prozess für das [Durchführen des Onboardings für neue Workloads und Ressourcen](https://docs.microsoft.com/azure/azure-resource-manager/custom-providers/concepts-resource-onboarding) fest.
 

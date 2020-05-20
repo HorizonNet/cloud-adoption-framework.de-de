@@ -7,15 +7,13 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 6052e119cc2bf2ce078bfdc3df6613ff665e503f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 845574b9b7e045869561f43745a23ec104893d1f
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230450"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400196"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 # <a name="get-started-ensure-consistent-performance-across-a-portfolio"></a>Erste Schritte: Sicherstellen konsistenter Leistung in einem Portfolio
 
 Wie lässt sich eine angemessene Leistung für ein gesamtes Workloadportfolio gewährleisten? Dieser Leitfaden unterstützt Sie dabei, Prozesse zur Aufrechterhaltung der Leistung im gesamten Unternehmen einzurichten. Die hier beschriebenen Schritte können dem Betriebsteam dabei helfen, konsistente Leistungserwartungen für alle Workloads sicherzustellen. Leistung hängt auch von anderen Rollen und Funktionen ab. In diesem Artikel werden die unterstützenden Funktionen beschrieben, mit denen Sie die beteiligten Teams aufeinander abstimmen können.
@@ -32,7 +30,7 @@ Die im Cloud Adoption Framework beschriebene Betriebsverwaltungsbaseline bietet 
 
 - Optimieren Sie die Verwaltungsbaseline mit automatisierten Wartungsaufgaben im Zusammenhang mit Abweichungen von Leistungserwartungen.
 - Wenn zur Erfüllung von Leistungsanforderungen workloadspezifische Datenmuster oder Architekturänderungen erforderlich sind, können workloadspezifische Vorgänge eine bessere Leistungsteuerung ermöglichen.
-- Dokumentieren Sie operative Entscheidungen für das IT-Portfolio in der [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx), und konzentrieren Sie sich dabei auf Entscheidungen zur Leistungsautomatisierung im Abschnitt zur betriebsbezogenen Compliance auf der Baselineregisterkarte.
+- Dokumentieren Sie operative Entscheidungen für das IT-Portfolio in der [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx), und konzentrieren Sie sich dabei auf Entscheidungen zur Leistungsautomatisierung im Abschnitt zur betriebsbezogenen Compliance auf der Baselineregisterkarte.
 
 **Hinweis zur Erreichung der Ziele:**
 
@@ -147,7 +145,7 @@ Der langfristige Betrieb kann durch die Entscheidungen beeinflusst werden, die i
 
 - Testen Sie die Betriebsbereitschaft von Produktionsbereitstellungen unter Verwendung von Ressourcenkonsistenzrichtlinien.
 - Überprüfen Sie die Einhaltung von Entwurfsrichtlinien und Betriebsanforderungen für die Ressourcenkonsistenz.
-- Dokumentieren Sie alle erweiterten Betriebsanforderungen in der [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx).
+- Dokumentieren Sie alle erweiterten Betriebsanforderungen in der [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx).
 
 **Hinweis zur Erreichung der Ziele:**
 

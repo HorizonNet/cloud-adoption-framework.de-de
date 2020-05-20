@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 17951fef2a93d4c592cc620e4f8aa14ba0c11c58
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: dc2c490850c47dfa92ec91d5133168b982b5c719
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217352"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83398478"
 ---
 # <a name="business-impact-in-cloud-management"></a>Die geschäftlichen Auswirkungen in der Cloudverwaltung
 
@@ -52,7 +52,7 @@ Wenn Sie Verluste durch die Anwendung historischer Daten berechnen, verfügen Si
 
 ## <a name="use-the-template"></a>Verwenden der Vorlage
 
-Wenn Sie die Arbeitsmappe [Operations Management](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) zur Planung der Cloudverwaltung verwenden, sollten Sie Folgendes in Betracht ziehen:
+Wenn Sie die Arbeitsmappe [Operations Management](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) zur Planung der Cloudverwaltung verwenden, sollten Sie Folgendes in Betracht ziehen:
 
 - Jede Workload auf den Blättern _Example_ oder _Clean Template_ sollte von geschäftlicher Seite mit dem *Time/Value Impact* jeder Workload aktualisiert werden. Standardmäßig repräsentiert der Wert *Time/Value Impact* die prognostizierten Verluste pro Stunde in Zusammenhang mit einem Ausfall der Workload.
 

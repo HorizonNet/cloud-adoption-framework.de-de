@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 75f07c6f3c37d83321fd6758d3d79c7573792ef0
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: e68b8bc71e3a7cd306b4cfd8bc39628276d53031
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218219"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399173"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>Governance-Entwurf für eine einfache Workload
 
@@ -114,5 +114,8 @@ Nachdem das Abonnement erstellt und Ihr Azure AD-Mandant zugeordnet wurde, könn
 
 > [!div class="nextstepaction"]
 > [Bereitstellen einer grundlegenden Workload in Azure](../../infrastructure/virtual-machines/basic-workload.md)
+
+<!-- --->
+
 > [!div class="nextstepaction"]
 > [Informationen zum Ressourcenzugriff für mehrere Teams](./governance-multiple-teams.md)

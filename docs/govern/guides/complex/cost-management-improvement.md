@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6515a690ea0590061cb4b5ea707f7636b380dd10
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 31c8f460f60258a8da6444ae017194a6fd684e43
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220157"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400547"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Cost Management“
 
@@ -31,7 +31,7 @@ In der vorherigen Phase dieser Erzählung hat das IT-Team Produktionsworkloads m
 
 Seit diesem Zeitpunkt haben sich einige Dinge geändert, die sich auf die Governance auswirken:
 
-- 5\.000 Ressourcen wurden aus den beiden zur Außerbetriebnahme gekennzeichneten Rechenzentren entfernt. Auftragswesen und IT-Sicherheit heben nun die Bereitstellung der verbleibenden physischen Ressourcen auf.
+- 5\.000 Ressourcen wurden aus den beiden zur Stilllegung markierten Rechenzentren entfernt. Auftragswesen und IT-Sicherheit heben nun die Bereitstellung der verbleibenden physischen Ressourcen auf.
 - Die Anwendungsentwicklungsteams haben CI/CD-Pipelines implementiert, um einige native Cloudanwendungen bereitzustellen, die erhebliche Auswirkungen auf das Kundenerlebnis haben.
 - Das Business Intelligence-Team hat Aggregations-, Zusammenstellungs-, Erkenntnis- und Prognoseprozesse entwickelt, die konkrete Vorteile für den Geschäftsbetrieb bringen. Diese Prognosen ermöglichen jetzt kreative neue Produkte und Dienstleistungen.
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7000f40ebfedb6f5285f3e9148c7f07ebbc17ab5
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 71aab771fbfe5b0b0f63750dbf2fc97327dd8436
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218525"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399758"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Tools für Identitätsbaseline in Azure
 
@@ -39,7 +39,7 @@ Wenn Sie diese Methode wählen, übernimmt Azure AD die Anmeldung für Benutzer.
 
 **Azure AD-Pass-Through-Authentifizierung:** Es wird eine persistente Kennwortüberprüfung für Azure AD-Authentifizierungsdienste bereitgestellt, indem ein Software-Agent verwendet wird, der auf einem oder mehreren lokalen Servern ausgeführt wird.
 
-<!-- docsTest:ignore "pass-through authentication method" -->
+<!-- docsTest:ignore "the pass-through authentication method" -->
 
 > [!NOTE]
 > Unternehmen mit einer Sicherheitsanforderung zur sofortigen Durchsetzung von lokalen Benutzerkontozuständen, Kennwortrichtlinien und Anmeldezeiten sollten die Verwendung der Pass-Through-Authentifizierungsmethode in Betracht ziehen.
