@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8fe970e2d266efb3d85c2680fcd8f8524d6ddac1
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 56cfb87e16b54e3b8b7dd72f482a085a2eee34ff
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83399016"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621274"
 ---
 # <a name="resource-consistency-discipline-overview"></a>Übersicht über die Disziplin „Ressourcenkonsistenz“
 
@@ -41,12 +41,12 @@ Die folgenden sechs Schritte enthalten Beispiele und mögliche Optionen, die Sie
 
 | | |
 |---|---|
-| <br> ![Vorlagensymbol](../../_images/govern/process-template.png) | [Vorlage für die Disziplin „Ressourcenkonsistenz“:](./template.md) Laden Sie die Vorlage zur Dokumentation einer Disziplin vom Typ „Ressourcenkonsistenz“ herunter. |
-| <br> ![Risikosymbol](../../_images/govern/process-risks.png) | [Geschäftsrisiken:](./business-risks.md) Machen Sie sich mit den Motiven und Risiken vertraut, die häufig mit der Disziplin „Ressourcenkonsistenz“ verbunden sind. |
-| <br> ![Metriksymbol](../../_images/govern/process-metrics.png) | [Indikatoren und Metriken:](./metrics-tolerance.md) Indikatoren, um zu verstehen, ob es der richtige Zeitpunkt ist, in die Disziplin „Ressourcenkonsistenz“ zu investieren. |
-| <br> ![Einhaltungssymbol](../../_images/govern/process-enforce.png) | [Prozesse zur Einhaltung von Richtlinien:](./compliance-processes.md) Empfohlene Prozesse zur Unterstützung der Richtlinieneinhaltung in der Disziplin „Ressourcenkonsistenz“. |
-| <br> ![Einsatzreifesymbol](../../_images/govern/process-maturity.png) | [Einsatzreife:](./discipline-improvement.md) Stimmen Sie die Einsatzreife der Cloudverwaltung mit den Phasen der Cloudeinführung ab.  |
-| <br> ![Toolkettensymbol](../../_images/govern/process-toolchain.png) | [Toolkette:](./toolchain.md) Azure-Dienste, die zur Unterstützung der Disziplin „Ressourcenkonsistenz“ implementiert werden können. |
+| <br> ![Vorlagensymbol](../../_images/govern/process-template.png) | <br> [Vorlage für die Disziplin „Ressourcenkonsistenz“:](./template.md) Laden Sie die Vorlage zur Dokumentation einer Disziplin vom Typ „Ressourcenkonsistenz“ herunter. |
+| <br> ![Risikosymbol](../../_images/govern/process-risks.png) | <br> [Geschäftsrisiken:](./business-risks.md) Machen Sie sich mit den Motiven und Risiken vertraut, die häufig mit der Disziplin „Ressourcenkonsistenz“ verbunden sind. |
+| <br> ![Metriksymbol](../../_images/govern/process-metrics.png) | <br> [Indikatoren und Metriken:](./metrics-tolerance.md) Indikatoren, um zu verstehen, ob es der richtige Zeitpunkt ist, in die Disziplin „Ressourcenkonsistenz“ zu investieren. |
+| <br> ![Einhaltungssymbol](../../_images/govern/process-enforce.png) | <br> [Prozesse zur Einhaltung von Richtlinien:](./compliance-processes.md) Empfohlene Prozesse zur Unterstützung der Richtlinieneinhaltung in der Disziplin „Ressourcenkonsistenz“. |
+| <br> ![Einsatzreifesymbol](../../_images/govern/process-maturity.png) | <br> [Einsatzreife:](./discipline-improvement.md) Stimmen Sie die Einsatzreife der Cloudverwaltung mit den Phasen der Cloudeinführung ab.  |
+| <br> ![Toolkettensymbol](../../_images/govern/process-toolchain.png) | <br> [Toolkette:](./toolchain.md) Azure-Dienste, die zur Unterstützung der Disziplin „Ressourcenkonsistenz“ implementiert werden können. |
 
 ## <a name="next-steps"></a>Nächste Schritte
 

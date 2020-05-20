@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 703a5152ef47d19ec5eb654f9ba4d83786562d12
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3eb722a170f508f749795fbfc91dc2ce58a1edb9
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224390"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621209"
 ---
 # <a name="encryption-decision-guide"></a>Leitfaden zur Entscheidungsfindung für die Verschlüsselung
 
@@ -122,7 +122,7 @@ Die Verschlüsselung von Daten in Gebrauch umfasst das Schützen von Daten in ni
 Weitere Informationen zur Verschlüsselung und Schlüsselverwaltung in Azure finden Sie unter:
 
 - **[Übersicht über die Azure-Verschlüsselung](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview):** Eine ausführliche Beschreibung zur Verwendung der Verschlüsselung in Azure zum Schutz sowohl ruhender Daten als auch von Daten bei der Übertragung.
-- **[Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/key-vault-overview):** Key Vault ist das primäre Schlüsselverwaltungssystem zum Speichern und Verwalten von kryptografischen Schlüsseln, Geheimnissen und Zertifikaten in Azure.
+- **[Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/overview):** Key Vault ist das primäre Schlüsselverwaltungssystem zum Speichern und Verwalten von kryptografischen Schlüsseln, Geheimnissen und Zertifikaten in Azure.
 - **[Bewährte Methoden für Datensicherheit und Datenverschlüsselung in Azure](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices):** Eine Diskussion über die bewährten Methoden von Azure zur Datensicherheit und Datenverschlüsselung.
 - **[Azure Confidential Computing](https://azure.microsoft.com/solutions/confidential-compute):** Die Confidential Computing-Initiative von Azure stellt Tools und Technologien zum Erstellen von vertrauenswürdigen Ausführungsumgebungen und anderen Verschlüsselungsmechanismen zum Schützen von Daten in Gebrauch bereit.
 

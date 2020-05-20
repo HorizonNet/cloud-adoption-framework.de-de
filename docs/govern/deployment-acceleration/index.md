@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6db5662a5e470730116310a291ac669192e0f3e4
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: dbd60db37d5eb14b877f45c00956fd1869e9a0ba
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400634"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83620546"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>Übersicht über die Disziplin der Beschleunigung der Bereitstellung
 
@@ -41,12 +41,12 @@ Die folgenden sechs Schritte helfen Ihnen dabei, Governancerichtlinien zum Steue
 
 | | |
 |---|---|
-| <br> ![Vorlagensymbol](../../_images/govern/process-template.png) | [Vorlage zur Disziplin „Beschleunigung der Bereitstellung“:](./template.md) Laden Sie die Vorlage zum Dokumentieren einer Disziplin vom Typ „Beschleunigung der Bereitstellung“ herunter. |
-| <br> ![Risikosymbol](../../_images/govern/process-risks.png) | [Geschäftsrisiken:](./business-risks.md) Machen Sie sich mit den Motiven und Risiken vertraut, die häufig mit der Disziplin der Beschleunigung der Bereitstellung verbunden sind.|
-| <br> ![Metriksymbol](../../_images/govern/process-metrics.png) | [Indikatoren und Metriken:](./metrics-tolerance.md) Indikatoren zum Erkennen des richtigen Zeitpunkts für eine Investition in die Disziplin der Beschleunigung der Bereitstellung |
-| <br> ![Einhaltungssymbol](../../_images/govern/process-enforce.png) | [Prozesse zur Einhaltung von Richtlinien:](./compliance-processes.md) Empfohlene Prozesse zur Unterstützung der Richtlinieneinhaltung in der Disziplin der Beschleunigung der Bereitstellung. |
-| <br> ![Einsatzreifesymbol](../../_images/govern/process-maturity.png) | [Einsatzreife:](./discipline-improvement.md) Stimmen Sie die Einsatzreife der Cloudverwaltung mit den Phasen der Cloudeinführung ab.|
-| <br> ![Toolkettensymbol](../../_images/govern/process-toolchain.png) | [Toolkette:](./toolchain.md) Azure-Dienste, die zur Unterstützung der Disziplin der Beschleunigung der Bereitstellung implementiert werden können. |
+| <br> ![Vorlagensymbol](../../_images/govern/process-template.png) | <br> [Vorlage zur Disziplin „Beschleunigung der Bereitstellung“:](./template.md) Laden Sie die Vorlage zum Dokumentieren einer Disziplin vom Typ „Beschleunigung der Bereitstellung“ herunter. |
+| <br> ![Risikosymbol](../../_images/govern/process-risks.png) | <br> [Geschäftsrisiken:](./business-risks.md) Machen Sie sich mit den Motiven und Risiken vertraut, die häufig mit der Disziplin der Beschleunigung der Bereitstellung verbunden sind.|
+| <br> ![Metriksymbol](../../_images/govern/process-metrics.png) | <br> [Indikatoren und Metriken:](./metrics-tolerance.md) Indikatoren zum Erkennen des richtigen Zeitpunkts für eine Investition in die Disziplin der Beschleunigung der Bereitstellung |
+| <br> ![Einhaltungssymbol](../../_images/govern/process-enforce.png) | <br> [Prozesse zur Einhaltung von Richtlinien:](./compliance-processes.md) Empfohlene Prozesse zur Unterstützung der Richtlinieneinhaltung in der Disziplin der Beschleunigung der Bereitstellung. |
+| <br> ![Einsatzreifesymbol](../../_images/govern/process-maturity.png) | <br> [Einsatzreife:](./discipline-improvement.md) Stimmen Sie die Einsatzreife der Cloudverwaltung mit den Phasen der Cloudeinführung ab.|
+| <br> ![Toolkettensymbol](../../_images/govern/process-toolchain.png) | <br> [Toolkette:](./toolchain.md) Azure-Dienste, die zur Unterstützung der Disziplin der Beschleunigung der Bereitstellung implementiert werden können. |
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -7,12 +7,12 @@ ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: a05a31d584eedce63285321a62c5926f1800198c
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 05a2d46bff1bc68bfaad32427170c8e6e5035963
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401351"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621687"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -27,9 +27,9 @@ Die folgenden Schritte können Ihnen bei der effizienten Dokumentierung Ihrer Ge
 
 | | |
 |---|---|
-| <br> ![1](../_images/icons/1.png) | [Definieren und Dokumentieren Ihrer Beweggründe](./motivations.md): Dokumentieren Sie gemeinsam mit den wichtigsten Beteiligten und Führungskräften die Gründe für die Cloudeinführung.                                |
-| <br> ![2](../_images/icons/2.png) | [Dokumentieren von Geschäftsergebnissen](./business-outcomes/index.md): Beauftragen Sie motivierte Beteiligte und Führungskräfte mit der Dokumentierung bestimmter Geschäftsergebnisse.                                |
-| <br> ![3](../_images/icons/3.png) | [Entwickeln eines Geschäftsszenarios](./cloud-migration-business-case.md): Entwickeln Sie ein Geschäftsszenario, um das Finanzmodell zu überprüfen, das Ihren Beweggründen und gewünschten Ergebnissen zugrunde liegt.                                |
-| <br> ![4](../_images/icons/4.png) | [Auswählen des passenden ersten Projekts](./first-adoption-project.md): Ihre erstes Cloudeinführungsprojekt hilft Ihnen dabei, Beweggründe und technischen Aufwand miteinander in Einklang zu bringen. Dieser Artikel dient Ihnen als Hilfe bei der sorgfältigen Auswahl Ihres ersten Projekts.                        |
+| <br> ![1](../_images/icons/1.png) | <br> [Definieren und Dokumentieren Ihrer Beweggründe](./motivations.md): Dokumentieren Sie gemeinsam mit den wichtigsten Beteiligten und Führungskräften die Gründe für die Cloudeinführung.                                |
+| <br> ![2](../_images/icons/2.png) | <br> [Dokumentieren von Geschäftsergebnissen](./business-outcomes/index.md): Beauftragen Sie motivierte Beteiligte und Führungskräfte mit der Dokumentierung bestimmter Geschäftsergebnisse.                                |
+| <br> ![3](../_images/icons/3.png) | <br> [Entwickeln eines Geschäftsszenarios](./cloud-migration-business-case.md): Entwickeln Sie ein Geschäftsszenario, um das Finanzmodell zu überprüfen, das Ihren Beweggründen und gewünschten Ergebnissen zugrunde liegt.                                |
+| <br> ![4](../_images/icons/4.png) | <br> [Auswählen des passenden ersten Projekts](./first-adoption-project.md): Ihre erstes Cloudeinführungsprojekt hilft Ihnen dabei, Beweggründe und technischen Aufwand miteinander in Einklang zu bringen. Dieser Artikel dient Ihnen als Hilfe bei der sorgfältigen Auswahl Ihres ersten Projekts. |
 
 Verwenden Sie die [Vorlage für den Cloudeinführungsplan](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx), um Ihre Cloudeinführungsstrategie auszuarbeiten und die Ergebnisse der einzelnen oben beschriebenen Schritte zu verfolgen.

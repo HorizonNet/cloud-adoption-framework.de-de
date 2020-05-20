@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e65fc091b5578c2a3fdf8ea0483450526b47f1c5
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 2a89fe9d799e866468df02a9a0f6e7d973ed35dd
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400681"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83620461"
 ---
 # <a name="cost-management-discipline-overview"></a>Übersicht über die Disziplin „Kostenverwaltung“
 
@@ -39,12 +39,12 @@ Die folgenden sechs Schritte helfen Ihnen bei der Definition von Governancericht
 
 | | |
 |---|---|
-| <br> ![Vorlagensymbol](../../_images/govern/process-template.png) | [Vorlage zur Disziplin „Kostenverwaltung“:](./template.md) Laden Sie die Vorlage zur Dokumentation einer Disziplin vom Typ „Kostenverwaltung“ herunter. |
-| <br> ![Risikosymbol](../../_images/govern/process-risks.png) | [Geschäftsrisiken:](./business-risks.md) Machen Sie sich mit den Motiven und Risiken vertraut, die häufig mit der Disziplin „Kostenverwaltung“ verbunden sind. |
-| <br> ![Metriksymbol](../../_images/govern/process-metrics.png) | [Indikatoren und Metriken:](./metrics-tolerance.md) Indikatoren, um zu verstehen, ob es der richtige Zeitpunkt ist, in die Disziplin „Kostenverwaltung“ zu investieren. |
-| <br> ![Einhaltungssymbol](../../_images/govern/process-enforce.png) | [Prozesse zur Einhaltung von Richtlinien:](./compliance-processes.md) Empfohlene Prozesse zur Unterstützung der Richtlinieneinhaltung in der Disziplin „Kostenverwaltung“. |
-| <br> ![Einsatzreifesymbol](../../_images/govern/process-maturity.png) | [Einsatzreife:](./discipline-improvement.md) Stimmen Sie die Einsatzreife der Cloudverwaltung mit den Phasen der Cloudeinführung ab. |
-| <br> ![Toolkettensymbol](../../_images/govern/process-toolchain.png) | [Toolkette:](./toolchain.md) Azure-Dienste, die zur Unterstützung der Disziplin „Kostenverwaltung“ implementiert werden können. |
+| <br> ![Vorlagensymbol](../../_images/govern/process-template.png) | <br> [Vorlage zur Disziplin „Kostenverwaltung“:](./template.md) Laden Sie die Vorlage zur Dokumentation einer Disziplin vom Typ „Kostenverwaltung“ herunter. |
+| <br> ![Risikosymbol](../../_images/govern/process-risks.png) | <br> [Geschäftsrisiken:](./business-risks.md) Machen Sie sich mit den Motiven und Risiken vertraut, die häufig mit der Disziplin „Kostenverwaltung“ verbunden sind. |
+| <br> ![Metriksymbol](../../_images/govern/process-metrics.png) | <br> [Indikatoren und Metriken:](./metrics-tolerance.md) Indikatoren, um zu verstehen, ob es der richtige Zeitpunkt ist, in die Disziplin „Kostenverwaltung“ zu investieren. |
+| <br> ![Einhaltungssymbol](../../_images/govern/process-enforce.png) | <br> [Prozesse zur Einhaltung von Richtlinien:](./compliance-processes.md) Empfohlene Prozesse zur Unterstützung der Richtlinieneinhaltung in der Disziplin „Kostenverwaltung“. |
+| <br> ![Einsatzreifesymbol](../../_images/govern/process-maturity.png) | <br> [Einsatzreife:](./discipline-improvement.md) Stimmen Sie die Einsatzreife der Cloudverwaltung mit den Phasen der Cloudeinführung ab. |
+| <br> ![Toolkettensymbol](../../_images/govern/process-toolchain.png) | <br> [Toolkette:](./toolchain.md) Azure-Dienste, die zur Unterstützung der Disziplin „Kostenverwaltung“ implementiert werden können. |
 
 ## <a name="next-steps"></a>Nächste Schritte
 

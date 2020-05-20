@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: edd91f1786dfc0649e06d643662fb7af12ec4c96
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 5c5ba323856ef3eb9612c7abdd733bfa32c6725f
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83399692"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83620498"
 ---
 # <a name="governance-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Governance für die Einführung der Microsoft Cloud für Azure (Microsoft Cloud Adoption Framework)
 
@@ -25,7 +25,7 @@ Cloudgovernance ist ein iterativer Prozess. Bei Organisationen mit vorhandenen R
 
 | | |
 |---|---|
-| <br> ![1](../_images/icons/1.png) | [Methodik](./methodology.md): Entwickeln Sie ein Grundverständnis der Methodik, die der Cloudgovernance im Framework für die Cloudeinführung zugrunde liegt, um eine Lösung für den Endzustand zu planen. |
+| <br> ![1](../_images/icons/1.png) | <br> [Methodik](./methodology.md): Entwickeln Sie ein Grundverständnis der Methodik, die der Cloudgovernance im Framework für die Cloudeinführung zugrunde liegt, um eine Lösung für den Endzustand zu planen. |
 | <br> ![2](../_images/icons/2.png) | <br> [Vergleichstest](./benchmark.md): Bewerten Sie den Ist- und Sollzustand, um sich vorstellen zu können, wie das Framework angewendet werden kann. |
 | <br> ![3](../_images/icons/3.png) | <br> [Anfängliche Governancegrundlage](./initial-foundation.md): Beschränken Sie sich bei Ihren Governancebemühungen zunächst auf eine geringe Anzahl problemlos implementierbarer Governancetools. Diese anfängliche Governancegrundlage wird als MVP (Minimum Viable Product) bezeichnet.                                |
 | <br> ![4](../_images/icons/4.png) | <br> [Verbessern der anfänglichen Governancegrundlage](./foundation-improvements.md): Fügen Sie während der gesamten Umsetzung des Cloudeinführungsplans nach und nach Governancekontrollen hinzu, um im Rahmen des gesamten Prozesses materielle Risiken abzudecken. |
