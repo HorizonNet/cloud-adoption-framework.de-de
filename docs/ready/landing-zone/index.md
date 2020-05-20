@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e5aa8d4d21b4bb1f01b1bad091c13512aa4f8a96
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: fbb39153dc729b7822c53520e9424a5280cb013a
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400115"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621744"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -31,7 +31,7 @@ Vor dem Definieren von Zielzonen ist es wichtig, einen verwandten Begriff zu ver
 > [!CAUTION]
 > Die Aufgabentrennung sollte nicht verhindern, dass Teams diese bewährte Methode ausschließlich auf Grundlage der aktuellen Personalzuweisung oder Teamstrukturen verwenden. Während der frühen Phase der Einführung der Cloud kann ein einzelnes Einführungsteam die Verantwortung für die Einführung von Cloudtechnologie und die Bereitstellung von Governance, Sicherheit und Betrieb für eine kleine Anzahl von Workloads vorübergehend übernehmen. Wenn der Plan für die Zukunft Aufgabentrennung oder sogar die Isolation von Aufgaben vorsieht, ist dieser Ansatz noch immer die empfohlene bewährte Methode.
 
-**Gemeinsame Zuständigkeiten:** Die _Plattformumgebung_ stellt zentralisierte Kontrollen zur Steuerung der Cloudplattform bereit. Allerdings gibt es immer noch eine gemeinsame Verantwortung für alle Mitglieder des Teams, um die Anforderungen an Identität, Sicherheit, Betrieb, Compliance und Governance zu berücksichtigen. Bevor Sie eine Technologie in einer Zielzone einsetzen, sollten Sie verstehen, welche Hilfsprogramme von der _Plattformumgebung_ bereitgestellt werden und was Sie in der Zielzone implementieren müssen, um ihre gemeinsamen Zuständigkeiten zu erfüllen.
+**Gemeinsame Zuständigkeiten:** Die _Plattformumgebung_ stellt zentralisierte Kontrollen zur Steuerung der Cloudplattform bereit. Es gibt immer noch eine gemeinsame Verantwortung für alle Mitglieder des Teams, um die Anforderungen an Identität, Sicherheit, Betrieb, Compliance und Governance zu berücksichtigen. Bevor Sie eine Technologie in einer Zielzone einsetzen, sollten Sie verstehen, welche Hilfsprogramme von der _Plattformumgebung_ bereitgestellt werden und was Sie in der Zielzone implementieren müssen, um ihre gemeinsamen Zuständigkeiten zu erfüllen.
 
 > [!IMPORTANT]
 > Entwickler und Architekten, die Lösungen innerhalb einer Zielzone bereitstellen, können auf [Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/framework/) verweisen, um diese gemeinsamen Architektursäulen zu integrieren und zu erstellen, wenn sie Workloads entwerfen, erstellen oder unterstützen, die in einer Zielzone ausgeführt werden.
