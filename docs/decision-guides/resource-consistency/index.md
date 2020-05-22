@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: d89a0e0facd81ed06c38cae4283f96791eeddd3f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0d38c59c75c2119043f04cdeb9c10402bfce53c2
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224322"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753528"
 ---
 # <a name="resource-consistency-decision-guide"></a>Leitfaden zur Entscheidungsfindung bei der Ressourcenkonsistenz
 
@@ -64,7 +64,7 @@ Eine ausführlichere Erläuterung der Erzwingung Ihrer Richtlinienentscheidungen
 
 ## <a name="hierarchical-consistency"></a>Hierarchische Konsistenz
 
-Ressourcengruppen ermöglichen die Unterstützung zusätzlicher Hierarchieebenen Ihrer Organisation innerhalb des Abonnements. Dies wird mithilfe von Azure Policy-Regeln und Zugriffssteuerungen auf der Ressourcengruppenebene erreicht. Mit zunehmender Größe Ihrer Cloudumgebung müssen jedoch möglicherweise komplexere abonnementübergreifende Governanceanforderungen unterstützt werden als mit der Unternehmens-/Abteilungs-/Konten-/Abonnementhierarchie des Azure Enterprise Agreements möglich ist.
+Ressourcengruppen ermöglichen die Unterstützung zusätzlicher Hierarchieebenen Ihrer Organisation innerhalb des Abonnements. Dies wird mithilfe von Azure Policy-Regeln und Zugriffssteuerungen auf der Ressourcengruppenebene erreicht. Mit zunehmender Größe Ihrer Cloudumgebung müssen möglicherweise komplexere abonnementübergreifende Governanceanforderungen unterstützt werden als mit der Unternehmens-/Abteilungs-/Konten-/Abonnementhierarchie des Azure Enterprise Agreements möglich ist.
 
 Mit [Azure-Verwaltungsgruppen](https://docs.microsoft.com/azure/governance/management-groups) können Sie Abonnements in komplexeren Organisationsstrukturen organisieren, indem die Abonnements in einer Hierarchie gruppiert werden, die sich von der Enterprise Agreement-Hierarchie unterscheidet. Diese alternative Hierarchie ermöglicht die Anwendung von Zugriffssteuerungs- und Richtlinienerzwingungsmechanismen für mehrere Abonnements und die darin enthaltenen Ressourcen. Verwaltungsgruppenhierarchien können verwendet werden, um die Abonnements Ihrer Cloudumgebung auf Vorgänge oder geschäftliche Governanceanforderungen abzustimmen. Weitere Informationen finden Sie im [Leitfaden zur Entscheidungsfindung für Abonnements](../subscriptions/index.md).
 

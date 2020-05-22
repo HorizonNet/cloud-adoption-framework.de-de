@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: cf65664ba6e80fc2df37ec1b3a923ee3c72ae895
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: b634f09d11cccf6b1c75fc53441dde79106dadb5
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223234"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756378"
 ---
 <!-- cSpell:ignore timleyden -->
 
@@ -51,7 +51,9 @@ Sie lernen Folgendes:
 > [!TIP]
 > Dieser Leitfaden steht im Azure-Portal als interaktive Umgebung zur Verfügung. Navigieren Sie im Azure-Portal zum [Azure Quickstart Center](https://portal.azure.com/?feature.quickstart=true#blade/Microsoft_Azure_Resources/QuickstartCenterBlade), wählen Sie **Azure-Setupleitfaden** aus, und befolgen Sie dann die Schritt-für-Schritt-Anleitung.
 
-Nächste Schritte: [Organisieren Ihrer Ressourcen zur Vereinfachung der Anwendung von Einstellungen](./organize-resources.md)
+**Nächste Schritte:**
+
+- [Organisieren Ihrer Ressourcen zur Vereinfachung der Anwendung von Einstellungen](./organize-resources.md)
 
 ::: zone-end
 

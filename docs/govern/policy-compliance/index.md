@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 63eeb2cbcaa278934ba107114057f911604883f2
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: d52ac870c7732732ec5ec92e93b5af6caaf8eacf
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83399520"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755220"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -48,7 +48,7 @@ In der Abbildung oben beginnt die Governancestrategie (Risiko, Richtlinien und C
 
 Ein inkrementeller Ansatz für die Cloudgovernance setzt voraus, dass es nicht akzeptabel ist, die [geschäftliche Risikotoleranz](./risk-tolerance.md) zu überschreiten. Stattdessen wird davon ausgegangen, dass die Rolle der Governance darin besteht, geschäftliche Veränderungen zu beschleunigen, Technikern beim Verstehen von Architekturrichtlinien zu helfen und sicherzustellen, dass [Geschäftsrisiken](./business-risk.md) regelmäßig mitgeteilt und beseitigt werden. Die traditionelle Rolle der Governance dagegen kann die Akzeptanz durch Techniker und Entwickler oder sogar durch das Unternehmen als Ganzes behindern.
 
-Beim inkrementellen Ansatz für die Cloudgovernance entstehen zuweilen natürliche Spannungen zwischen den Teams, die neue Geschäftslösungen erstellen, und den Teams, die das Geschäft vor Risiken schützen. In diesen Modell können diese beiden Teams aber in den einzelnen Schritten bzw. Sprints gleichberechtigt zusammenarbeiten. Das Team für die Cloudgovernance und das Team für die Cloudeinführung arbeiten gemeinsam und gleichberechtigt daran, Risiken zu erkennen, zu bewerten und zu beseitigen. Auf diese Weise lassen sich Spannungen und Unstimmigkeiten auf natürliche Weise reduzieren und die Zusammenarbeit der Teams wesentlich verbessern.
+Beim inkrementellen Ansatz für die Cloudgovernance entstehen zuweilen natürliche Spannungen zwischen den Teams, die neue Geschäftslösungen erstellen, und den Teams, die das Geschäft vor Risiken schützen. In diesen Modell können diese beiden Teams in den einzelnen Schritten bzw. Sprints gleichberechtigt zusammenarbeiten. Das Team für die Cloudgovernance und das Team für die Cloudeinführung arbeiten gemeinsam und gleichberechtigt daran, Risiken zu erkennen, zu bewerten und zu beseitigen. Auf diese Weise lassen sich Spannungen und Unstimmigkeiten auf natürliche Weise reduzieren und die Zusammenarbeit der Teams wesentlich verbessern.
 
 ## <a name="minimum-viable-product-mvp-for-policy"></a>Minimum Viable Product (MVP) für die Richtlinie
 

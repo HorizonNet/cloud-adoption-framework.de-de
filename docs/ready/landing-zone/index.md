@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: fbb39153dc729b7822c53520e9424a5280cb013a
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: de1fef059841fe013163f822c9188b7ed5b64a29
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621744"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755696"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -34,7 +34,7 @@ Vor dem Definieren von Zielzonen ist es wichtig, einen verwandten Begriff zu ver
 **Gemeinsame Zuständigkeiten:** Die _Plattformumgebung_ stellt zentralisierte Kontrollen zur Steuerung der Cloudplattform bereit. Es gibt immer noch eine gemeinsame Verantwortung für alle Mitglieder des Teams, um die Anforderungen an Identität, Sicherheit, Betrieb, Compliance und Governance zu berücksichtigen. Bevor Sie eine Technologie in einer Zielzone einsetzen, sollten Sie verstehen, welche Hilfsprogramme von der _Plattformumgebung_ bereitgestellt werden und was Sie in der Zielzone implementieren müssen, um ihre gemeinsamen Zuständigkeiten zu erfüllen.
 
 > [!IMPORTANT]
-> Entwickler und Architekten, die Lösungen innerhalb einer Zielzone bereitstellen, können auf [Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/framework/) verweisen, um diese gemeinsamen Architektursäulen zu integrieren und zu erstellen, wenn sie Workloads entwerfen, erstellen oder unterstützen, die in einer Zielzone ausgeführt werden.
+> Entwickler und Architekten, die Lösungen innerhalb einer Zielzone bereitstellen, können auf [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework/) verweisen, um diese gemeinsamen Architektursäulen zu integrieren und zu erstellen, wenn sie Workloads entwerfen, erstellen oder unterstützen, die in einer Zielzone ausgeführt werden.
 
 ## <a name="landing-zone-definition"></a>Definition der Zielzone
 
@@ -60,7 +60,7 @@ Zweck und Umfang des Gesamtplans zur Einführung der Cloud bestimmen, welche Gru
 
 ## <a name="decentralized-operations"></a>Dezentralisierte Vorgänge
 
-In einigen dezentralisierten Organisationen werden durch Einführungsentwürfe Workloadteams erforderlich, die **Alleinverantwortung** für Ihre eigene Implementierung und den Betrieb der einzelnen isolierten Workloads tragen, einschließlich Sicherheit, Governance, Betriebsverwaltung und anderer Funktionen. Für diese Teams kann eine Workload möglicherweise über eine eigene getrennte Umgebung ohne Abhängigkeiten von einer Plattformumgebung verfügen. Diese workloadspezifischen Umgebungen weisen inkonsistente Implementierungen von Sicherheit, Zuverlässigkeit, Leistung, Kosten und Cloudvorgängen auf. Daher sollten Sie nicht als Zielzonen bezeichnet werden. Diese Teams sollten Anleitungen des [Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/framework/) nutzen, um die Workload unabhängig zu entwerfen, zu erstellen und zu optimieren.
+In einigen dezentralisierten Organisationen werden durch Einführungsentwürfe Workloadteams erforderlich, die **Alleinverantwortung** für Ihre eigene Implementierung und den Betrieb der einzelnen isolierten Workloads tragen, einschließlich Sicherheit, Governance, Betriebsverwaltung und anderer Funktionen. Für diese Teams kann eine Workload möglicherweise über eine eigene getrennte Umgebung ohne Abhängigkeiten von einer Plattformumgebung verfügen. Diese workloadspezifischen Umgebungen weisen inkonsistente Implementierungen von Sicherheit, Zuverlässigkeit, Leistung, Kosten und Cloudvorgängen auf. Daher sollten Sie nicht als Zielzonen bezeichnet werden. Diese Teams sollten Anleitungen des [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework/) nutzen, um die Workload unabhängig zu entwerfen, zu erstellen und zu optimieren.
 
 > [!IMPORTANT]
 > Ähnlich, aber etwas anders: In der frühen Phase des Cloudeinführungs-Lebenszyklus können kleinere Teams aufgrund von Notwendigkeiten wie dezentralisierte Organisationen arbeiten. Wenn diese Teams durch bestimmte Umstände dezentralisiert sind (im Gegensatz zu einer gewollten Dezentralisierung), sollte die bewährte Methode der Zielzone dennoch angewendet werden.

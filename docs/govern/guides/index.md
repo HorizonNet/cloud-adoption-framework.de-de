@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6fceb9665712b4d787689ad2e3e709a5ac14d0d0
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 69c46eb18c3181ed1f4301847786ebb538ee46fe
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400740"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754863"
 ---
 # <a name="cloud-governance-guides"></a>Cloudgovernance-Leitfäden
 
@@ -43,7 +43,7 @@ Wählen Sie einen der folgenden Governanceleitfäden aus, um mit der Cloudeinfü
 
 Die Leitfäden veranschaulichen, wie ein Governance-MVP implementiert wird. Von dort aus zeigt jeder Leitfaden, wie das Cloudgovernanceteam als Partner den Cloudeinführungsteams zuarbeiten kann, um die Einführung zu beschleunigen. Das Governancemodell des Frameworks für die Cloudeinführung steuert die Governanceanwendung von der Grundlage bis hin zu nachfolgenden Verbesserungen und Weiterentwicklungen.
 
-Um mit einer Governancelösung zu beginnen, wählen Sie eine der beiden folgenden Optionen aus. Die Optionen basieren auf synthetisierten Kundenerfahrungen. Die Titel basieren auf der Komplexität des Unternehmens zur Vereinfachung der Navigation. Die Entscheidung des Lesers kann jedoch komplexer sein. Die folgenden Tabellen zeigen die Unterschiede zwischen den beiden Optionen.
+Um mit einer Governancelösung zu beginnen, wählen Sie eine der beiden folgenden Optionen aus. Die Optionen basieren auf synthetisierten Kundenerfahrungen. Die Titel basieren auf der Komplexität des Unternehmens zur Vereinfachung der Navigation. Ihre Entscheidung kann komplexer sein. Die folgenden Tabellen zeigen die Unterschiede zwischen den beiden Optionen.
 
 <!-- TODO: Refactor VDC content below. -->
 <!-- docsTest:ignore "Azure Virtual Datacenter" -->
@@ -84,7 +84,7 @@ Um mit einer Governancelösung zu beginnen, wählen Sie eine der beiden folgende
 
 Mit dem virtuelle Azure-Rechenzentrum können Sie die Funktionen der Azure-Cloudplattform optimal nutzen und gleichzeitig den Sicherheits- und Governanceanforderungen eines Unternehmens gerecht werden.
 
-Im Vergleich zu herkömmlichen lokalen Umgebungen ermöglicht Azure es Workload-Entwicklungsteams und ihren Geschäftssponsoren, die Vorteile der erhöhten Bereitstellungsagilität von Cloudplattformen zu nutzen. Da sich Ihre Bemühungen zur Cloudeinführung jedoch auf unternehmenskritische Daten und Workloads ausdehnen, kann diese Agilität im Widerspruch zu den von Ihren IT-Teams festgelegten Anforderungen an Unternehmenssicherheit und Richtlinieneinhaltung stehen. Dies gilt insbesondere für große Unternehmen, in denen bereits ausgereifte Governance- und Regulierungsanforderungen vorhanden sind.
+Im Vergleich zu herkömmlichen lokalen Umgebungen ermöglicht Azure es Workload-Entwicklungsteams und ihren Geschäftssponsoren, die Vorteile der erhöhten Bereitstellungsagilität von Cloudplattformen zu nutzen. Da sich Ihre Bemühungen zur Cloudeinführung auf unternehmenskritische Daten und Workloads ausdehnen, kann diese Agilität im Widerspruch zu den von Ihren IT-Teams festgelegten Anforderungen an Unternehmenssicherheit und Richtlinieneinhaltung stehen. Dies gilt insbesondere für große Unternehmen, in denen bereits ausgereifte Governance- und Regulierungsanforderungen vorhanden sind.
 
 Der Ansatz des virtuellen Azure-Rechenzentrums ist dafür ausgelegt, diese Bedenken im Lebenszyklus der Einführung frühzeitig zu berücksichtigen. Dazu werden Modelle, Referenzarchitekturen, Beispiele für Automatisierungsartefakte und Anleitungen bereitstellt, um während der Enterprise Cloud-Einführung ein Gleichgewicht zwischen Entwickler- und IT-Governanceanforderungen zu erreichen. Im Mittelpunkt dieses Ansatzes steht das Konzept eines virtuellen Rechenzentrums selbst: die Implementierung von Isolationsgrenzen rund um Ihre Cloudinfrastruktur durch den Einsatz von Zugriffs- und Sicherheitskontrollen, Netzwerkrichtlinien und Complianceüberwachung.
 

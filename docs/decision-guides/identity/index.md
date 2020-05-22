@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ed4c1c3cf7958f4e96db7eba71fe1f008bc81eb2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3c89c5347032d0dcec68344066ac00028fedb7bd
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222843"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753791"
 ---
 <!-- cSpell:ignore Kerberos NTLM SAML -->
 
@@ -27,7 +27,7 @@ Wechseln Sie zu: [Bestimmen der Anforderungen an die Identitätsintegration](#de
 
 Für die Identitätsverwaltung in einer Cloudumgebung stehen verschiedene Optionen zur Verfügung. Diese variieren in Bezug auf Kosten und Komplexität. Ein wesentlicher Faktor bei der Strukturierung Ihrer cloudbasierten Identitätsverwaltungsdienste ist der Grad der Integration in Ihre bestehende lokale Identitätsverwaltungsinfrastruktur.
 
-Azure Active Directory (Azure AD) bietet eine grundlegende Zugriffssteuerung und Identitätsverwaltung für Azure-Ressourcen. Wenn die lokale Active Directory-Infrastruktur Ihrer Organisation aber eine komplexe Gesamtstruktur oder angepasste Organisationseinheiten aufweist, ist für Ihre cloudbasierten Workloads ggf. eine Verzeichnissynchronisierung mit Azure AD erforderlich, um einen einheitlichen Satz von Identitäten, Gruppen und Rollen zwischen der lokalen und der Cloudumgebung zu gewährleisten. Darüber hinaus kann die Unterstützung von Anwendungen, die von veralteten Authentifizierungsmechanismen abhängen, ggf. die Bereitstellung von Active Directory Domain Services (AD DS) in der Cloud erfordern.
+Azure Active Directory (Azure AD) bietet eine grundlegende Zugriffssteuerung und Identitätsverwaltung für Azure-Ressourcen. Wenn die lokale Active Directory-Infrastruktur Ihrer Organisation eine komplexe Gesamtstruktur oder angepasste Organisationseinheiten aufweist, ist für Ihre cloudbasierten Workloads ggf. eine Verzeichnissynchronisierung mit Azure AD erforderlich, um einen einheitlichen Satz von Identitäten, Gruppen und Rollen zwischen der lokalen und der cloudbasierten Umgebung zu gewährleisten. Darüber hinaus kann die Unterstützung von Anwendungen, die von veralteten Authentifizierungsmechanismen abhängen, ggf. die Bereitstellung von Active Directory Domain Services (AD DS) in der Cloud erfordern.
 
 Die cloudbasierte Identitätsverwaltung ist ein iterativer Prozess. Sie können für eine erste Bereitstellung mit einer cloudnativen Lösung mit einer kleinen Anzahl von Benutzern und entsprechenden Rollen beginnen. Im Laufe der Migration müssen Sie Ihre Identitätslösung unter Umständen mithilfe der Verzeichnissynchronisierung integrieren oder Domänendienste im Rahmen Ihrer Cloudbereitstellungen hinzufügen. Überprüfen Sie Ihre Identitätsstrategie bei jeder Iteration Ihres Migrationsprozesses.
 
@@ -54,7 +54,7 @@ Azure AD ist das native IAM-System, mit dem Sie Benutzern und Gruppen den Zugri
 > [!TIP]
 > Durch die vollständige Migration Ihrer Identitätsdienste zu Azure AD entfällt die Notwendigkeit, Ihre eigene Identitätsinfrastruktur zu pflegen, wodurch Ihre IT-Verwaltung erheblich vereinfacht wird.
 >
-> Azure AD ist jedoch kein vollständiger Ersatz für eine herkömmliche lokale Active Directory-Infrastruktur. Verzeichnisfunktionen, z. B. veraltete Authentifizierungsmethoden, Computerverwaltung oder Gruppenrichtlinien, sind unter Umständen nicht ohne Bereitstellung zusätzlicher Tools oder Dienste in der Cloud verfügbar.
+> Azure AD ist jedoch kein vollständiger Ersatz für eine herkömmliche lokale Active Directory-Infrastruktur. Verzeichnisfunktionen, z. B. veraltete Authentifizierungsmethoden, Computerverwaltung oder Gruppenrichtlinien, sind unter Umständen nicht ohne Bereitstellung zusätzlicher Tools oder Dienste in der Cloud verfügbar.
 >
 > Wenn Sie Ihre lokalen Identitäten oder Domänendienste in Ihre Cloudbereitstellungen integrieren müssen, finden Sie weitere Informationen in den Mustern zur Verzeichnissynchronisierung und zu den von der Cloud gehosteten Domänendiensten, die im Folgenden erläutert werden.
 

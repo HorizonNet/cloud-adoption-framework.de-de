@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 49bfe755f27305e644b28ece987e1ad09a52d39e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1da093324253a3a551b1bb8306a0727536ec46b5
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214981"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753778"
 ---
 # <a name="architectural-decision-guides"></a>Leitfaden zur architekturbezogenen Entscheidungsfindung
 
 In den Leitfäden zur architekturbezogenen Entscheidungsfindung im Framework für die Cloudeinführung werden Muster und Modelle für das Erstellen von Entwurfsanleitungen für Cloud Governance beschrieben. Jeder Leitfaden zur Entscheidungsfindung konzentriert sich auf eine zentrale Infrastrukturkomponente von Cloudbereitstellungen und führt Muster und Modelle auf, die spezifische Cloudbereitstellungsszenarien unterstützen können.
 
-Wenn Sie beginnen, Cloud Governance in Ihrer Organisation zu etablieren, liefern nützliche Governancevorgehensweisen eine grundlegende Roadmap. Diese Anleitungen enthalten aber Annahmen über Anforderungen und Prioritäten, die unter Umständen nicht mit denen Ihrer Organisation übereinstimmen.
+Wenn Sie beginnen, Cloud Governance in Ihrer Organisation zu etablieren, liefern nützliche Governancevorgehensweisen eine grundlegende Roadmap. Diese Anleitungen enthalten Annahmen über Anforderungen und Prioritäten, die unter Umständen nicht mit denen Ihrer Organisation übereinstimmen.
 
 Diese Leitfäden zur Entscheidungsfindung ergänzen die exemplarischen Anleitungen zur Governance, indem sie alternative Muster und Modelle bereitstellen, die Ihnen helfen, die in der exemplarischen Entwurfsanleitung getroffenen Entscheidungen zum Architekturentwurf an Ihre eigenen Anforderungen anzupassen.
 

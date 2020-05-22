@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 3eb722a170f508f749795fbfc91dc2ce58a1edb9
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 01619281c3531c18afe3fc031b9f1fde1f7d4f0b
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621209"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754002"
 ---
 # <a name="encryption-decision-guide"></a>Leitfaden zur Entscheidungsfindung für die Verschlüsselung
 
@@ -66,7 +66,7 @@ In bestimmten Szenarien liegen möglicherweise gesetzliche Vorschriften, Richtli
 
 **Annahmen für die lokale Schlüsselverwaltung:** Die Verwendung eines lokalen Schlüsselverwaltungssystems umfasst die folgenden Annahmen:
 
-- Sie sind durch gesetzliche Vorgaben oder Organisationsrichtlinien gezwungen, Erstellung, Verwaltung und Hosting der Geheimnisse und Schlüssel Ihrer Organisation lokal durchzuführen.
+- Sie sind durch gesetzliche Vorgaben oder organisationsweite Richtlinien gezwungen, Erstellung, Verwaltung und Hosting der Geheimnisse und Schlüssel Ihrer Organisation lokal durchzuführen.
 - Alle cloudbasierten Anwendungen und Dienste, die auf den Zugriff auf Verschlüsselungsdienste oder Geheimnisse angewiesen sind, können auf das lokale Schlüsselverwaltungssystem zugreifen.
 
 ## <a name="data-encryption"></a>Datenverschlüsselung

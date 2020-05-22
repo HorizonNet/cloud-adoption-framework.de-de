@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2a89fe9d799e866468df02a9a0f6e7d973ed35dd
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 17d1e25c7e87252b51b83d283da5c328a622293f
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83620461"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755068"
 ---
 # <a name="cost-management-discipline-overview"></a>Übersicht über die Disziplin „Kostenverwaltung“
 
@@ -22,11 +22,11 @@ Die Disziplin „Kostenverwaltung“ (Cost Management) ist eine der [fünf Diszi
 > [!NOTE]
 > Die Disziplin „ Kostenverwaltung“ ersetzt nicht die bestehenden Geschäftsteams, Buchhaltungspraktiken und -verfahren, die an der finanziellen Verwaltung der IT-bezogenen Kosten in Ihrem Unternehmen beteiligt sind. Der Hauptzweck dieser Disziplin besteht darin, potenzielle Cloudrisiken im Zusammenhang mit IT-Ausgaben zu identifizieren und den Geschäfts- und IT-Teams, die für die Bereitstellung und Verwaltung von Cloudressourcen verantwortlich sind, eine Anleitung zur Risikominderung zu geben.
 
-Die Hauptzielgruppe für diesen Leitfaden sind die Cloudarchitekten Ihrer Organisation und andere Mitglieder Ihres Cloudgovernanceteams. Die Entscheidungen, Richtlinien und Prozesse, die sich aus dieser Disziplin ergeben, sollten jedoch die Einbeziehung von und Diskussion mit relevanten Mitgliedern Ihrer Geschäfts- und IT-Teams beinhalten, insbesondere diejenigen Führungskräften, die für den Besitz, die Verwaltung und die Bezahlung von cloudbasierten Workloads verantwortlich sind.
+Die Hauptzielgruppe für diesen Leitfaden sind die Cloudarchitekten Ihrer Organisation und andere Mitglieder Ihres Cloudgovernanceteams. Die Entscheidungen, Richtlinien und Prozesse, die sich aus dieser Disziplin ergeben, sollten die Einbeziehung von und Diskussion mit relevanten Mitgliedern Ihrer Geschäfts- und IT-Teams beinhalten, insbesondere diejenigen Führungskräften, die für den Besitz, die Verwaltung und die Bezahlung von cloudbasierten Workloads verantwortlich sind.
 
 ## <a name="policy-statements"></a>Richtlinienanweisungen
 
-Umsetzbare Richtlinienanweisungen und die daraus resultierenden Architekturanforderungen bilden die Grundlage für eine Disziplin „Kostenverwaltung“. Beispiele für Richtlinienanweisungen finden Sie im Artikel über [Richtlinienanweisungen zur Kostenverwaltung](./policy-statements.md). Diese Beispiele können als Ausgangspunkt für die Governancerichtlinien Ihrer Organisation dienen.
+Umsetzbare Richtlinienanweisungen und die daraus resultierenden Architekturanforderungen bilden die Grundlage für eine Disziplin „Kostenverwaltung“. Verwenden Sie die [Beispielrichtlinienanweisungen](./policy-statements.md) als Ausgangspunkt für das Definieren Ihrer Cost Management-Richtlinien.
 
 > [!CAUTION]
 > Die Beispielrichtlinien basieren auf allgemeinen Kundenerfahrungen. Zur besseren Anpassung dieser Richtlinien an spezifische Anforderungen zur Cloud Governance führen Sie die folgenden Schritte aus, um Richtlinienanweisungen zu erstellen, die Ihre individuellen Geschäftsanforderungen erfüllen.
