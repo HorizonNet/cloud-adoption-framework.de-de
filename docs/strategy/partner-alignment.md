@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: fc7806035d66d44f29f9c4658c24efb950193378
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 096657f869f591a8ef758ce5b5ed2f504b07a894
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230614"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401318"
 ---
 <!-- cSpell:ignore CSPs MSPs -->
 
@@ -26,13 +26,12 @@ Erfolgreiche Cloudeinführungsprogramme umfassen in der Regel mindestens eine Un
 
 Während der frühen Strategiephasen der Einführung ist es wichtig, mit der Ausrichtung Ihrer Partnerschaftsstrategie zu beginnen. Die folgenden Schritte können dabei helfen, Hürden in späteren Phasen des Einführungslebenszyklus zu beseitigen.
 
-1) Beginnen Sie, den Bedarf an Unterstützung zu verstehen
-2) Erwägen Sie Partnerschaftsoptionen, die Ihrer Kultur und Ihren Bedürfnissen entsprechen
-3) Werten Sie eine Auswahlliste von Partneroptionen aus
-4) Beginnen Sie mit ausgewählten Partnern mit der Überprüfung von Verträgen und Unterlagen
+1. Beginnen Sie, den Bedarf an Unterstützung zu verstehen.
+1. Erwägen Sie Partnerschaftsoptionen, die Ihrer Kultur und Ihren Bedürfnissen entsprechen.
+1. Werten Sie eine Auswahlliste von Partneroptionen aus.
+1. Beginnen Sie mit ausgewählten Partnern mit der Überprüfung von Verträgen und Unterlagen.
 
-Wenn diese Schritte frühzeitig abgeschlossen werden, ist der Erfolg des Teams gesichert, wenn die technischen Aufgaben beginnen.
-In den folgenden Abschnitten dieses Artikels finden Sie Anleitungen für die einzelnen Schritte.
+Wenn diese Schritte frühzeitig abgeschlossen werden, ist der Erfolg des Teams gesichert, wenn die technischen Aufgaben beginnen. In den folgenden Abschnitten dieses Artikels finden Sie Anleitungen für die einzelnen Schritte.
 
 ## <a name="understanding-support-needs"></a>Grundlegendes zum Bedarf an Unterstützung
 
@@ -87,7 +86,7 @@ Wenn Sie weitere Fragen haben oder Hilfe benötigen, [erstellen Sie eine Support
 Während der Strategieentwicklung ist es schwierig, bestimmte Anforderungen an die Partnerschaft zu definieren. Während der Entwicklung des Cloudeinführungsplans und des Qualifizierungsplans werden diese Anforderungen im Mittelpunkt stehen.
 Aber je nach Kultur und Reife Ihres Teams kann es möglich sein, sich für eine Partnerschaftsoption zu entscheiden, die besser auf Ihre erwarteten Anforderungen abgestimmt ist.
 
-Wählen Sie eine oder mehrere der oben genannten Partnerschaftsoptionen aus, um die zuerst zu untersuchenden Optionen einzugrenzen.
+Wählen Sie mindestens eine der oben genannten Partnerschaftsoptionen aus, um die zuerst zu untersuchenden Optionen einzugrenzen.
 
 ## <a name="begin-contract-and-paperwork-reviews"></a>Beginnen mit der Überprüfung von Verträgen und Unterlagen
 

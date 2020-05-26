@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 869b3b9e0a283ce28c6fba7807d0282dcb53d9cf
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 04cd90b03565eb2aa7895f52b7d2ece296904a1f
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216332"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83620390"
 ---
 # <a name="azure-fundamental-concepts"></a>Grundlegende Konzepte in Azure
 
@@ -74,7 +74,7 @@ Eine detaillierte Beschreibung der Rollen in Azure finden Sie unter [Administrat
 
 Jede Azure-Ressource ist logisch nur einem Abonnement zugeordnet. Wenn Sie eine Ressource erstellen, wählen Sie aus, in welchem Azure-Abonnement diese bereitgestellt werden soll. Sie können eine Ressource später in ein anderes Abonnement verschieben.
 
-Ein Abonnement ist nicht an eine bestimmte Azure-Region gebunden. Allerdings wird jede Azure-Ressource nur in einer Region bereitgestellt. Sie können über Ressourcen in mehreren Regionen verfügen, die demselben Abonnement zugeordnet sind.
+Obwohl ein Abonnement nicht an eine bestimmte Azure-Region gebunden ist, wird jede Azure-Ressource nur in einer Region bereitgestellt. Sie können über Ressourcen in mehreren Regionen verfügen, die demselben Abonnement zugeordnet sind.
 
 > [!NOTE]
 > Die meisten Azure-Ressourcen werden in einer bestimmten Region bereitgestellt. Bestimmte Ressourcentypen werden jedoch als globale Ressourcen betrachtet, beispielsweise Richtlinien, die Sie mithilfe der Azure Policy-Dienste festlegen.

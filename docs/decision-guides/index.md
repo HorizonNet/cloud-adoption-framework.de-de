@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 1da093324253a3a551b1bb8306a0727536ec46b5
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 2f619ae4b8d1b4cc28062537489ddc6d30f4f6e7
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83753778"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814714"
 ---
 # <a name="architectural-decision-guides"></a>Leitfaden zur architekturbezogenen Entscheidungsfindung
 
@@ -25,7 +25,7 @@ Diese Leitfäden zur Entscheidungsfindung ergänzen die exemplarischen Anleitung
 
 ## <a name="decision-guidance-categories"></a>Kategorien von Entscheidungsleitfäden
 
-Jede der folgenden Kategorien stellt eine grundlegende Technologie aller Cloudbereitstellungen dar. In den exemplarischen Anleitungen zur Governance werden Entwurfsentscheidungen im Zusammenhang mit diesen Technologien auf Grundlage der Anforderungen von Beispielunternehmen getroffen. Einige dieser Entscheidungen eignen sich unter Umständen nicht für die Anforderungen Ihrer eigenen Organisation. In den folgenden Abschnitten werden Alternativen für jede dieser Kategorien erläutert, sodass Sie sich für ein Muster oder Modell entscheiden können, das besser zu Ihren individuellen Anforderungen passt.
+Die folgenden Kategorien stellen grundlegende Technologien für alle Cloudbereitstellungen dar. In den exemplarischen Anleitungen zur Governance werden Entwurfsentscheidungen im Zusammenhang mit diesen Technologien auf Grundlage der Anforderungen von Beispielunternehmen getroffen. Einige dieser Entscheidungen eignen sich unter Umständen nicht für die Anforderungen Ihrer eigenen Organisation. In den folgenden Abschnitten werden Alternativen für jede Kategorie erläutert, sodass Sie sich für ein Muster oder Modell entscheiden können, das besser zu Ihren individuellen Anforderungen passt.
 
 [Abonnements](./subscriptions/index.md): Planen Sie das Abonnementmodell und die Kontenstruktur Ihrer Cloudbereitstellung entsprechend den Besitz-, Abrechnungs- und Verwaltungskonzepten Ihrer Organisation.
 

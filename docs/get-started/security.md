@@ -7,18 +7,16 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 3de015250a7fd14e01eb14094e564f51e0425648
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 100d5c327fb6e87f0a355f5305ff83ebb972b020
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230438"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400755"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 <!-- cSpell:ignore CISO passwordless -->
 
-# <a name="get-started-implementing-security-across-the-enterprise-environment"></a>Erste Schritte: Implementieren von Sicherheit in der gesamten Unternehmensumgebung
+# <a name="get-started-implement-security-across-the-enterprise-environment"></a>Erste Schritte: Implementieren von Sicherheit in der gesamten Unternehmensumgebung
 
 Sicherheit ermöglicht das Geschäft durch die Gewährleistung von Vertraulichkeit, Integrität und Verfügbarkeit, wobei der Schwerpunkt auf dem Schutz vor möglichen Auswirkungen auf den Betrieb durch interne und externe böswillige und unbeabsichtigte Handlungen liegt. Diese Roadmap umreißt die wichtigsten Schritte, mit denen das Geschäftsrisiko von Cybersicherheitsangriffen gemindert oder vermieden werden kann, indem schnell wesentliche Sicherheitspraktiken in der Cloud etabliert und die Sicherheit in Ihren Cloudumstellungsprozess integriert wird.
 
@@ -241,7 +239,7 @@ Weitere Informationen finden Sie unter [Identifizieren und Klassifizieren von un
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudeinführungsteam | <li> Cloudeinführungsteam <li> Cloudstrategieteam <li> Cloudsicherheitsteam <li> Cloudgovernanceteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT |
+| <li> Cloudeinführungsteam | <li> Cloudeinführungsteam <li> Cloudstrategieteam <li> Cloudsicherheitsteam <li> Cloudgovernanceteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
 
 ## <a name="step-6-govern-to-manage-and-improve-security-posture"></a>Schritt 6: Steuern der Verwaltung und Verbesserung des Sicherheitsstatus
 

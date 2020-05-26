@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 04/20/2020
-ms.openlocfilehash: 3fd693d5e3275eea40d1a71149207689b7dca35b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3e11e280e0faa12d7bbb6ee1a951e9eb1546cdab
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215618"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400982"
 ---
 # <a name="cloud-operations-functions"></a>Cloudbetriebsfunktionen
 
@@ -74,7 +74,7 @@ Da Einführung und Abläufe einer Skalierung unterliegen, ist es wichtig, bewäh
 
 Weitere Informationen:
 
-- Funktionen eines [Cloudkompetenzzentrums (CCoE)](../organize/cloud-center-of-excellence.md)
+- Funktionen des [Cloudkompetenzzentrums (CCoE, Cloud Center of Excellence)](../organize/cloud-center-of-excellence.md).
 - [Antimuster in Unternehmen: Silos und Machtbereiche](../organize/fiefdoms-silos.md).
 
 Es wird beschrieben, wie Sie Teams übergreifend Zuständigkeiten zuordnen, indem Sie eine so genannte RACI-Matrix entwickeln und damit bestimmen, welche Teams verantwortlich sind (responsible), rechenschaftspflichtig sind (accountable), konsultiert werden (consulted) und zu informieren sind (informed). Laden Sie die [RACI-Tabellenvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) herunter, und passen Sie sie an.

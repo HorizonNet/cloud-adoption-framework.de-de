@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ece40e0ce2aeaa32eb51d8511d743f674200ea6e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 07b9eb1ebcb464abda6f2c2cf276cb91596cea1a
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219953"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400497"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Sicherheitsbaseline“
 
@@ -120,9 +120,9 @@ Die neuen bewährten Methoden lassen sich in zwei Kategorien unterteilen: Untern
     3. Erstellen Sie für jede Region in der Verwaltungsgruppenhierarchie ein Abonnement namens `corporate IT subscription`.
     4. Wenden Sie die Blaupause `corporate-it-subscription-blueprint` auf die einzelnen regionalen Instanzen an.
     5. Dadurch wird für jede Geschäftseinheit in jeder Region ein Hub eingerichtet. Hinweis: Weitere Kosteneinsparungen könnten durch die gemeinsame Nutzung von Hubs durch die Geschäftseinheiten in jeder Region erzielt werden.
-6. Integrieren Sie Gruppenrichtlinienobjekte (Group Policy Objects, GPOs) über die Konfiguration des gewünschten Zustands (Desired State Configuration, DSC):
-    1. Konvertieren Sie ein GPO in DSC. &mdash; Das [Projekt zur Microsoft-Baselineverwaltung](https://github.com/microsoft/baselinemanagement) auf GitHub kann diese Aufgabe beschleunigen. Stellen Sie sicher, dass DSC im Repository parallel zu den Resource Manager-Vorlagen gespeichert wird.
-    2. Stellen Sie Azure Automation State Configuration für alle Instanzen des Unternehmens-IT-Abonnements bereit. Mit Azure Automation kann DSC auf VMs angewendet werden, die in unterstützten Abonnements innerhalb der Verwaltungsgruppe bereitgestellt werden.
+6. Integrieren von Gruppenrichtlinienobjekten (GPO) über DSC (Desired State Configuration):
+    1. Konvertieren eines GPO in DSC: Das [Projekt zur Microsoft-Baselineverwaltung](https://github.com/microsoft/baselinemanagement) auf GitHub kann diese Aufgabe beschleunigen. Stellen Sie sicher, dass DSC im Repository parallel zu den Resource Manager-Vorlagen gespeichert wird.
+    2. Stellen Sie Azure Automation State Configuration für alle Instanzen des Unternehmens-IT-Abonnements bereit. Mit Azure Automation kann DSC auf virtuelle Computer angewendet werden, die in unterstützten Abonnements innerhalb der Verwaltungsgruppe bereitgestellt werden.
     3. In der aktuellen Roadmap ist die Aktivierung benutzerdefinierter Gastkonfigurationsrichtlinien als Ziel festgelegt. Wenn dieses Feature veröffentlicht wird, ist die Verwendung von Azure Automation in dieser bewährten Methode nicht mehr erforderlich.
 
 **Anwenden zusätzlicher Governance auf ein Cloudeinführungsabonnement (Spoke):** Aufbauend auf dem `corporate IT subscription` können geringfügige Änderungen am Governance-MVP, die auf die einzelnen Abonnements zur Unterstützung von Anwendungsarchetypen angewendet werden, für eine schnelle Verbesserung sorgen.
@@ -133,8 +133,8 @@ In früheren iterativen Änderungen der bewährten Methoden haben wir Netzwerksi
     1. Die Referenzarchitektur aus dem vorherigen Abschnitt ([Hub-and-Spoke-Topologie mit Shared Services](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)) generierte eine Resource Manager-Vorlage für das Aktivieren des Peerings virtueller Netzwerke.
     2. Diese Vorlage kann als Anleitung zum Ändern der DMZ-Vorlage aus der vorherigen Governanceiteration verwendet werden.
     3. Jetzt fügen wir dem virtuellen DMZ-Netzwerk, das zuvor per VPN mit dem lokalen Edge-Gerät verbunden war, das Peering virtueller Netzwerke hinzu.
-    4. *** Sie sollten das VPN außerdem aus dieser Vorlage entfernen und sicherstellen, dass kein Datenverkehr direkt an das lokale Rechenzentrum weitergeleitet wird, ohne das Unternehmens-IT-Abonnement und die Firewalllösung zu passieren. Dieses VPN kann auch als Failoververbindung im Fall eines ExpressRoute-Verbindungsausfalls festgelegt werden.
-    5. Es ist noch eine zusätzliche [Netzwerkkonfiguration](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning) erforderlich, damit Azure Automation DSC auf gehostete VMs anwenden kann.
+    4. Sie sollten das VPN außerdem aus dieser Vorlage entfernen und sicherstellen, dass kein Datenverkehr direkt an das lokale Rechenzentrum weitergeleitet wird, ohne das Unternehmens-IT-Abonnement und die Firewalllösung zu durchlaufen. Dieses VPN kann auch als Failoververbindung im Fall eines ExpressRoute-Verbindungsausfalls festgelegt werden.
+    5. Azure Automation erfordert zusätzliche [Netzwerkkonfiguration](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning), damit DSC auf gehostete VMs angewendet werden kann.
 2. Ändern Sie die Netzwerksicherheitsgruppe. Blockieren Sie den gesamten öffentlichen **und** den direkten lokalen Datenverkehr in der Netzwerksicherheitsgruppe. Der einzige eingehende Datenverkehr sollte über den virtuellen Netzwerkpeer im Unternehmens-IT-Abonnement erfolgen.
     1. In der vorherigen Iteration wurde eine Netzwerksicherheitsgruppe erstellt, die den gesamten öffentlichen Datenverkehr blockiert und den gesamten internen Datenverkehr über eine Whitelist zulässt. Jetzt möchten wir diese Netzwerksicherheitsgruppe etwas verschieben.
     2. In der neuen Konfiguration der Netzwerksicherheitsgruppe wird der gesamte öffentliche Datenverkehr sowie der gesamte Datenverkehr aus dem lokalen Datencenter blockiert.

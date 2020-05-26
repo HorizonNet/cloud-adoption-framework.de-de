@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 71670c0a885d5ec2aef8dcf5a11d944021c3ae5e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1b4859d3adbfdedc1ff8d5322398e350ba9d72de
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217182"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83400834"
 ---
 # <a name="azure-regions"></a>Azure-Regionen
 
@@ -43,7 +43,7 @@ Bei näherer Betrachtung der obigen Komplexitäten wird deutlich, wie wichtig di
 
 Jede robuste Cloudbereitstellung ist auf ein sorgfältig durchdachtes Netzwerk angewiesen, wobei auch Azure-Regionen eine Rolle spielen. Nach Berücksichtigung der obigen Kriterien für die Wahl der Bereitstellungsregionen muss das Netzwerk bereitgestellt werden. Eine umfassende Besprechung des Netzwerks würde den Rahmen dieses Artikels sprengen, es sind jedoch unter anderem folgende Punkte zu beachten:
 
-- Azure-Regionen werden paarweise bereitgestellt. Für den Fall eines schwerwiegenden Ausfalls einer Region wird eine andere Region innerhalb derselben geopolitischen Grenze als gekoppelte Region festgelegt. Die Bereitstellung in Regionspaaren sollte als primäre und sekundäre Resilienzstrategie in Erwägung gezogen werden. Azure Brasilien ist eine erwähnenswerte Ausnahme, da die gekoppelte Region in diesem Fall „USA, Süden-Mitte“ ist. Weitere Informationen finden Sie unter [Azure-Regionspaare](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
+- Azure-Regionen werden paarweise bereitgestellt. Für den Fall eines schwerwiegenden Ausfalls einer Region wird eine andere Region innerhalb derselben geopolitischen Grenze als gekoppelte Region festgelegt. Die Bereitstellung in Regionspaaren sollte als primäre und sekundäre Resilienzstrategie in Erwägung gezogen werden. „Brasilien, Süden“ ist eine erwähnenswerte Ausnahme, da die gekoppelte Region in diesem Fall „USA, Süden-Mitte“ ist. Weitere Informationen finden Sie unter [Azure-Regionspaare](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
 
   - Azure Storage unterstützt [georedundanten Speicher (GRS)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs). Das bedeutet, dass drei Kopien Ihrer Daten in Ihrer primären Region und drei zusätzliche Kopien in der gekoppelten Region gespeichert werden. Die Speicherkopplung für GRS kann nicht geändert werden.
   - Dienste, die auf Azure Storage-GRS basieren, können von dieser Regionskopplung profitieren. Ihre Anwendungen und das Netzwerk müssen dazu entsprechend ausgerichtet sein.
@@ -57,7 +57,7 @@ Jede robuste Cloudbereitstellung ist auf ein sorgfältig durchdachtes Netzwerk a
 
 - Viele PaaS-Dienste in Azure unterstützen [Dienstendpunkte](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) oder [Private Link](https://docs.microsoft.com/azure/private-link/private-link-overview). Beide Lösungen haben erhebliche Auswirkungen auf Ihre Netzwerküberlegungen im Zusammenhang mit regionaler Resilienz, Migration und Governance.
 
-- Viele PaaS-Dienste basieren auf eigenen Lösungen für regionale Resilienz. So ermöglichen beispielsweise Azure SQL-Datenbank und Cosmos DB eine problemlose Replikation in _x_ zusätzlichen Regionen. Einige Dienste, etwa Azure DNS, sind regionsunabhängig. Für Ihre Überlegungen hinsichtlich der Dienste, die Sie im Rahmen Ihres Einführungsprozess nutzen möchten, ist es wichtig, die genauen Failoverfunktionen und Wiederherstellungsschritte zu kennen, die ggf. für die jeweiligen Azure-Dienste erforderlich sind.
+- Viele PaaS-Dienste basieren auf eigenen Lösungen für regionale Resilienz. So ermöglichen beispielsweise Azure SQL-Datenbank und Azure Cosmos DB eine problemlose Replikation in _x_ zusätzlichen Regionen. Einige Dienste, etwa Azure DNS, sind regionsunabhängig. Für Ihre Überlegungen hinsichtlich der Dienste, die Sie im Rahmen Ihres Einführungsprozess nutzen möchten, ist es wichtig, die genauen Failoverfunktionen und Wiederherstellungsschritte zu kennen, die ggf. für die jeweiligen Azure-Dienste erforderlich sind.
 
 - Neben der Bereitstellung in mehreren Regionen für die Notfallwiederherstellung entscheiden sich viele Organisationen für eine Bereitstellung mit Aktiv/Aktiv-Muster, sodass kein Failover erforderlich ist. Dies hat außerdem den Vorteil eines globalen Lastenausgleichs, einer höheren Fehlertoleranz und einer höheren Netzwerkleistung. Wenn Sie dieses Muster nutzen möchten, müssen Ihre Anwendungen die Aktiv/Aktiv-Ausführung in mehreren Regionen unterstützen.
 

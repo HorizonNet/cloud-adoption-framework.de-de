@@ -8,12 +8,12 @@ ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: bc5263b1f9dfcbdb0d5c14e79e5de976fdd59818
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 8e1576afb56afd79a1028658609dc62c25775f75
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221806"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621592"
 ---
 # <a name="refactor-landing-zones"></a>Umgestalten von Zielzonen
 
@@ -27,7 +27,7 @@ Die Ready-Methode verwendet das Konzept des Refactoring, um die Migration zu bes
 
 Wenn Kunden die Cloud einführen, sind Überlegungen zur Zielzone das häufigste Hindernis für die Einführung und die cloudbezogenen Geschäftsergebnisse. Kunden neigen dazu, sich einem der beiden folgenden Hindernisse zuzuwenden. Oftmals tendieren verschiedene Teams jeweils zu einem dieser beiden Hindernisse, was zu kulturellen Deadlocks führt, die eine Einführung erschweren.
 
-Die beiden primären Hindernisse sind in einer Überzeugung verwurzelt: Die Cloudumgebung und die vorhandenen Rechenzentren sollten in Bezug auf Betrieb, Governance und Sicherheit (nahezu) eine Featureparität aufweisen. Dies ist ein vernünftiges langfristiges Ziel. Aber das Problem ist das schwierige Gleichgewicht zwischen dem Timing zur Erreichung dieses Ziels und der Geschwindigkeit, die zur Erzielung von Geschäftsergebnissen erforderlich ist.
+Die beiden primären Hindernisse sind in einer Überzeugung verwurzelt: Die Cloudumgebung und die vorhandenen Rechenzentren sollten in Bezug auf Betrieb, Governance und Sicherheit (nahezu) eine Featureparität aufweisen. Dies ist ein vernünftiges langfristiges Ziel. Aber das Problem ist das sensible Gleichgewicht zwischen dem Timing zur Erreichung dieses Ziels und der Geschwindigkeit, die zur Erzielung von Geschäftsergebnissen erforderlich ist.
 
 ### <a name="blocker-acting-too-soon"></a>Hindernis: Zu frühes Handeln
 
@@ -35,7 +35,7 @@ Es bedurfte Jahre und erheblicher Anstrengungen, um den aktuellen Stand hinsicht
 
 ![Allgemeines Hindernis: Zu frühes Handeln](../../_images/ready/blocker-act-too-soon.png)
 
-In der obigen Abbildung hat der Kunde ein Ziel von 100 Workloads, die in der Cloud existieren. Um dies zu erreichen, wird der Kunde wahrscheinlich seine erste Workload bereitstellen. Dann ihre ersten 10 oder so Workloads, bevor sie bereit sind, eines dieser Workloads für die Produktion freizugeben. Schließlich werden sie das Ziel des Einführungsplans erreichen und über ein robustes Portfolio in der Cloud verfügen. Das rote X in der Abbildung zeigt jedoch, wo Kunden häufig hängen bleiben. Das Warten auf eine 100%ige Ausrichtung kann die erste Workload um Wochen, Monate oder sogar Jahre verzögern.
+In der obigen Abbildung hat der Kunde ein Ziel von 100 Workloads, die in der Cloud existieren. Um dies zu erreichen, wird der Kunde wahrscheinlich seine erste Workload bereitstellen. Dann ihre ersten 10 oder so Workloads, bevor sie bereit sind, eines dieser Workloads für die Produktion freizugeben. Schließlich werden sie das Ziel des Einführungsplans erreichen und über ein robustes Portfolio in der Cloud verfügen. Das rote X in der Abbildung zeigt jedoch, wo Kunden häufig nicht weiterkommen. Das Warten auf eine 100%ige Ausrichtung kann die erste Workload um Wochen, Monate oder sogar Jahre verzögern.
 
 ### <a name="blocker-acting-too-late"></a>Hindernis: Zu spätes Handeln
 

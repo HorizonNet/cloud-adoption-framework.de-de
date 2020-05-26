@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
-ms.openlocfilehash: 46be63c2dfe2e4eb5e617c4d74edfc835bf1ddc0
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 06ac22741c7b61b59ae308444833852f2fcbff08
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230250"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621459"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -33,12 +33,12 @@ Im Cloud Adoption Framework werden bewährte Methoden für die Cloudeinführung 
 
 <!-- markdownlint-disable MD033 -->
 
-|                                                    |                                                                                                                          |                                                |                                                                                                              |  |  |  |  |
-|----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|--------------------------------------------------------------------------------------------------------------|--|--|--|--|
-| ![Strategiesymbol](./_images/icons/strategy.png) | [Strategie](./strategy/index.md): Definieren Sie die geschäftliche Begründung und die erwarteten Ergebnisse für die Einführung.  | <br>![Planungssymbol](./_images/icons/plan.png)  | [Planung:](./plan/index.md) Hier erfahren Sie, wie Sie umsetzbare Einführungspläne auf Geschäftsergebnisse abstimmen. |  |  |  |  |
-| ![Symbol „Bereit“](./_images/icons/ready.png)        | <br>[Bereit:](./ready/index.md) Hier erfahren Sie, wie Sie die Cloudumgebung für die geplanten Änderungen vorbereiten. | ![Migrationssymbol](./_images/icons/adopt.png)     | <br>[Migration](./migrate/index.md): Hier erfahren Sie, wie Sie bereits vorhandene Workloads migrieren und modernisieren.             |  |  |  |  |
-| ![Innovationssymbol](./_images/icons/innovate.png)        | <br>[Innovation](./innovate/index.md): Entwickeln Sie neue cloudnative Lösungen oder Hybridlösungen. | ![Symbol „Steuern“](./_images/icons/govern.png)     | <br>[Steuern](./govern/index.md): Hier finden Sie Informationen zur Governance für die Umgebung und die Workloads.             |  |  |  |  |
-| ![Symbol „Verwalten“](./_images/icons/manage.png) | <br>[Verwalten](./manage/index.md): Vorgangsverwaltung für Cloud- und Hybridlösungen | ![Symbol „Organisieren“](./_images/icons/organize.png)     | <br>[Organisieren](./organize/index.md): Hier finden Sie Informationen zur Governance für die Umgebung und die Workloads.             |  |  |  |  |
+| | | | | |
+|--|--|--|--|--|
+| <br> ![Strategiesymbol](./_images/icons/strategy.png) | <br> [Strategie](./strategy/index.md):&nbsp;Definieren&nbsp;der&nbsp;Geschäftsbegründung&nbsp;und der erwarteten Ergebnisse der Einführung. | <br> ![Planungssymbol](./_images/icons/plan.png) | <br> [Planung](./plan/index.md):&nbsp;Ausrichten&nbsp;umsetzbarer&nbsp;Einführungspläne&nbsp;an Geschäftsergebnissen. |
+| <br> ![Symbol „Bereit“](./_images/icons/ready.png)       | <br> [Bereit:](./ready/index.md) Hier erfahren Sie, wie Sie die Cloudumgebung für die geplanten Änderungen vorbereiten. | <br> ![Migrationssymbol](./_images/icons/adopt.png) | <br> [Migration](./migrate/index.md): Hier erfahren Sie, wie Sie bereits vorhandene Workloads migrieren und modernisieren. |
+| <br> ![Innovationssymbol](./_images/icons/innovate.png) | <br> [Innovation](./innovate/index.md): Entwickeln Sie neue cloudnative Lösungen oder Hybridlösungen. | <br> ![Symbol „Steuern“](./_images/icons/govern.png) | <br> [Steuern](./govern/index.md): Hier finden Sie Informationen zur Governance für die Umgebung und die Workloads. |
+| <br> ![Symbol „Verwalten“](./_images/icons/manage.png)     | <br> [Verwalten](./manage/index.md): Vorgangsverwaltung für Cloud- und Hybridlösungen | <br> ![Symbol „Organisieren“](./_images/icons/organize.png) | <br> [Organisieren](./organize/index.md): Hier finden Sie Informationen zur Governance für die Umgebung und die Workloads. |
 
 ## <a name="understand-the-lifecycle"></a>Grundlegendes zum Lebenszyklus
 

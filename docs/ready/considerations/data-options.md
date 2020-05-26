@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c125f60358a433e2d6f65b103fba8722b1491ad1
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: af1ba2cbf55d0c144241676f59e6ad154ea1b5f2
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215329"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83620417"
 ---
 <!-- cSpell:ignore HDFS -->
 
@@ -65,7 +65,7 @@ In der folgenden Tabelle sind einige häufige Anforderungen für Nutzungsszenari
 
 Mit Azure können Sie Dienste in der Größenordnung bereitstellen, die Sie benötigen, um Ihre Kunden und Partner zu erreichen, _wo auch immer diese sich befinden_. Ein wichtiger Faktor bei der Planung Ihrer Cloudbereitstellung ist die Ermittlung, in welcher Azure-Region Ihre Workloadressourcen gehostet werden.
 
-Die meisten Datenbankdienste sind in den meisten Azure-Regionen allgemein verfügbar. Es gibt aber einige Regionen (vor allem für Behörden), in denen nur ein Teil dieser Produkte unterstützt wird. Bevor Sie die Entscheidung treffen, in welchen Regionen Sie Ihre Datenbankressourcen bereitstellen, empfehlen wir Ihnen die [Seite zu den Regionen](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=data-factory,sql-server-stretch-database,redis-cache,database-migration,sql-data-warehouse,postgresql,mariadb,cosmos-db,mysql,sql-database), um den aktuellen Status der regionalen Verfügbarkeit zu überprüfen.
+Die meisten Datenbankdienste sind in den meisten Azure-Regionen allgemein verfügbar. Es gibt aber einige Regionen (vor allem für Behörden), in denen nur eine Teilmenge dieser Produkte unterstützt wird. Bevor Sie die Entscheidung treffen, in welchen Regionen Sie Ihre Datenbankressourcen bereitstellen, empfehlen wir Ihnen die [Seite zu den Regionen](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=data-factory,sql-server-stretch-database,redis-cache,database-migration,sql-data-warehouse,postgresql,mariadb,cosmos-db,mysql,sql-database), um den aktuellen Status der regionalen Verfügbarkeit zu überprüfen.
 
 Auf der Seite [Azure-Regionen](https://azure.microsoft.com/global-infrastructure/regions) erhalten Sie weitere Informationen zur globalen Azure-Infrastruktur. Sie können auch die Seite mit den [verfügbaren Produkten nach Region](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=all) verwenden, um spezifische Informationen dazu zu erhalten, welche Dienste in den einzelnen Azure-Regionen verfügbar sind.
 

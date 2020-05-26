@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6325e577453598bee8092ee3ba49c6dc1057c9e3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ce653ab8c37eb4e034647cb8022adaf391f1949f
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214224"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815343"
 ---
 # <a name="deploy-workloads"></a>Bereitstellen von Workloads
 
@@ -26,7 +26,7 @@ Das Ziel einer Migration ist es, eine einzelne Workload in die Cloud zu migriere
 
 Die Migrationsphase ist abgeschlossen, wenn eine Workload in der Cloud bereitgestellt und testbereit ist, einschließlich aller abhängigen Ressourcen, die für die Funktion der Workload erforderlich sind. Während des Optimierungsprozesses wird die Workload für den Einsatz in der Produktionsumgebung vorbereitet.
 
-Diese Definition von _Fertig_ kann je nach Ihren Test- und Freigabeprozessen variieren. Der nächste Artikel in dieser Reihe behandelt die [Entscheidung für ein Höherstufungsmodell](./promotion-models.md) und kann Ihnen helfen zu verstehen, wann der beste Zeitpunkt ist, eine migrierte Workload in die Produktion hochzustufen.
+Diese _Definition von „fertig“_ kann je nach Ihren Test- und Freigabeprozessen variieren. Der nächste Artikel in dieser Reihe behandelt die [Entscheidung für ein Höherstufungsmodell](./promotion-models.md) und kann Ihnen helfen zu verstehen, wann der beste Zeitpunkt ist, eine migrierte Workload in die Produktion hochzustufen.
 
 ## <a name="accountability-during-migration"></a>Verantwortlichkeit während der Migrationsphase
 

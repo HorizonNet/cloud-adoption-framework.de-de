@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b747a6f0d50fbf2510dc3a5220f72d513e8d1cb3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 7aeb83064faa4105214d47149fbf9e789add47d3
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216706"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621220"
 ---
 <!-- cSpell:ignore WSUS getting started -->
 
@@ -158,7 +158,7 @@ So erstellen Sie eine Blaupause
 
 ::: zone target="chromeless"
 
-1. Wechseln Sie zu **Blaupausen – Erste Schritte**.
+1. Wechseln Sie zu **Blaupausen: Erste Schritte**.
 1. Wählen Sie im Bereich **Blaupause erstellen** die Option **Erstellen** aus.
 1. Filtern Sie die Liste mit den Blaupausen, um die gewünschte Blaupause auszuwählen.
 1. Geben Sie im Feld **Name der Blaupause** den Namen der Blaupause ein.
@@ -172,7 +172,7 @@ So erstellen Sie eine Blaupause
 
 ::: zone target="docs"
 
-1. Wechseln Sie zu [Blaupausen – Erste Schritte](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted).
+1. Wechseln Sie zu [Blaupausen: Erste Schritte](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted).
 1. Wählen Sie im Bereich **Blaupause erstellen** die Option **Erstellen** aus.
 1. Filtern Sie die Liste mit den Blaupausen, um die gewünschte Blaupause auszuwählen.
 1. Geben Sie im Feld **Name der Blaupause** den Namen der Blaupause ein.
@@ -201,7 +201,7 @@ So veröffentlichen Sie Blaupausenartefakte für Ihr Abonnement:
 
 ::: zone target="docs"
 
-1. Wechseln Sie zu [Blaupausen > Blaupausendefinitionen](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
+1. Wechseln Sie zu [Blaupausen: Blaupausendefinitionen](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
 1. Wählen Sie die Blaupause aus, die Sie in den vorherigen Schritten erstellt haben.
 1. Überprüfen Sie die Blaupausendefinition, und wählen Sie anschließend **Blaupause veröffentlichen** aus.
 1. Geben Sie in das Feld **Version** eine Version wie „1.0“ ein.

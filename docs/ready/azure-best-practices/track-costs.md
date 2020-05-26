@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: aff6ee1eb16f1e2ab671c20bea61093d68b99fe4
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 83ce5d4a2c4cb44ebd66f1f784002660bad6c86f
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223302"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621660"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Nachverfolgen von Kosten für Geschäftseinheiten, Umgebungen oder Projekte
 
@@ -56,7 +56,7 @@ Die Abbildung zeigt bewährte Methoden, enthält jedoch nicht die folgenden Opti
 - Beim Integrieren eines Cloudkompetenzzentrum-Teams (Cloud Center of Excellence, CCoE) durch ein Unternehmen können Abonnements mit gemeinsamen Diensten in jedem Geografieknoten eine Duplizierung von Ressourcen vermeiden.
 - Weniger umfangreiche Einführungsprojekte verfügen ggf. über eine viel kleinere Verwaltungshierarchie. Es kommt häufig vor, dass nur ein einzelner Stammknoten für die IP-Abteilung des Unternehmens und nur eine Ebene mit untergeordneten Knoten in der Hierarchie für unterschiedliche Umgebungen vorhanden ist. Dies ist keine Verletzung von bewährten Methoden für eine gut verwaltete Umgebung. Aber die Bereitstellung eines Zugriffsmodells mit den geringstmöglichen Rechten für die Kostenkontrolle und andere wichtige Funktionen wird erschwert.
 
-Im restlichen Artikel wird vorausgesetzt, dass der Ansatz mit der bewährten Methode aus der Abbildung oben verfolgt wird. Die folgenden Artikel enthalten hilfreiche Informationen zum Anwenden des Ansatzes für die Ressourcenorganisation, der für Ihr Unternehmen am besten geeignet ist:
+Im restlichen Artikel wird vorausgesetzt, dass der Ansatz mit der bewährten Methode aus der Abbildung oben verfolgt wird. Die folgenden Artikel enthalten jedoch hilfreiche Informationen zum Anwenden des Ansatzes für die Ressourcenorganisation, der für Ihr Unternehmen am besten geeignet ist:
 
 - [Skalieren Ihrer Azure-Umgebung mit mehreren Abonnements](../azure-best-practices/scale-subscriptions.md)
 - [Organisieren und Verwalten Ihrer Azure-Abonnements](../azure-best-practices/organize-subscriptions.md)
@@ -77,11 +77,11 @@ Die generell empfohlene bewährte Methode besteht darin, ein Modell mit geringst
 
 Azure Cost Management unterstützt für jeden der Bereiche die folgenden integrierten Rollen:
 
-- [Besitzer](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner): Ermöglicht das Anzeigen von Kosten und das Verwalten sämtlicher Aspekte einschließlich Kostenkonfiguration.
-- [Mitwirkender](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor): Ermöglicht das Anzeigen von Kosten und das Verwalten sämtlicher Aspekte einschließlich Kostenkonfiguration, aber ausschließlich Zugriffssteuerung.
-- [Leser](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#reader): Ermöglicht das Anzeigen sämtlicher Daten, z. B. der Kostendaten und Konfiguration, aber nicht das Vornehmen von Änderungen.
-- [Cost Management-Mitwirkender](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor): Ermöglicht das Anzeigen der Kosten und das Verwalten der Kostenkonfiguration.
-- [Cost Management-Leser](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-reader): Ermöglicht das Anzeigen der Kostendaten und der Konfiguration.
+- [Besitzer:](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner) Ermöglicht das Anzeigen von Kosten und das Verwalten sämtlicher Aspekte, einschließlich Kostenkonfiguration.
+- [Mitwirkender](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor): Ermöglicht das Anzeigen von Kosten und das Verwalten sämtlicher Aspekte, z. B. der Kostenkonfiguration, aber ausschließlich der Zugriffssteuerung.
+- [Leser:](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#reader) Ermöglicht das Anzeigen sämtlicher Daten, z. B. der Kostendaten und Konfiguration, aber nicht das Vornehmen von Änderungen.
+- [Cost Management: Mitwirkender](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor): Ermöglicht das Anzeigen der Kosten und das Verwalten der Kostenkonfiguration.
+- [Cost Management: Leser](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-reader): Ermöglicht Ihnen das Anzeigen der Kostendaten und -konfiguration.
 
 Die allgemeine bewährte Methode besteht darin, Mitgliedern aller Teams die Rolle „Kostenverwaltung: Mitwirkender“ zuzuweisen. Mit dieser Rolle wird der Zugriff für die Erstellung und Verwaltung von Budgets und Exporten gewährt, um die Kosten effektiver zu überwachen und zu dokumentieren. Mitglieder des [Cloudstrategieteams](../../organize/cloud-strategy.md) sollten jedoch nur auf „Cost Management: Leser“ festgelegt werden. Das liegt daran, dass Sie nicht am Einrichten von Budgets innerhalb des Azure Cost Management-Tools beteiligt sind.
 
@@ -91,8 +91,8 @@ Mit den folgenden Bereichs- und Rolleneinstellungen wird die erforderliche Trans
 
 - [Cloudeinführungsteam](../../organize/cloud-adoption.md). Personen, die für die Durchführung von Änderungen im Rahmen der fortlaufenden Optimierung verantwortlich sind, benötigen Zugriff vom Typ „Cost Management: Mitwirkender“ auf Ressourcengruppenebene.
 
-  - **Arbeitsumgebung**: Das Cloudeinführungsteam sollte bereits über Zugriff vom Typ [Mitwirkender](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) auf alle betroffenen Ressourcengruppen oder zumindest auf die Gruppen verfügen, die für die Entwicklung bzw. das Testen oder die Aktivitäten zur fortlaufenden Bereitstellung zuständig sind. Es ist keine zusätzliche Bereichseinstellung erforderlich.
-  - **Produktionsumgebungen**: Wenn eine geeignete Trennung der Zuständigkeiten erzielt wurde, ist es eher unwahrscheinlich, dass das Cloudeinführungsteam weiterhin Zugriff auf die Ressourcengruppen seiner Projekte hat. Für die Ressourcengruppen, die die Produktionsinstanzen ihrer Workloads unterstützen, wird ein zusätzlicher Bereich benötigt, damit dieses Team über Einblick in die Auswirkungen seiner Entscheidungen auf die Produktionskosten verfügt. Die Festlegung des Bereichs [Cost Management: Mitwirkender](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) für Produktionsressourcengruppen für dieses Team ermöglicht den Mitgliedern das Überwachen von Kosten und das Festlegen von Budgets basierend auf der Nutzung und den fortlaufenden Investitionen in die unterstützten Workloads.
+  - **Arbeitsumgebung.** Das Cloudeinführungsteam sollte bereits über Zugriff vom Typ [Mitwirkender](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) auf alle betroffenen Ressourcengruppen oder zumindest auf die Gruppen verfügen, die für die Entwicklung bzw. das Testen oder die Aktivitäten zur fortlaufenden Bereitstellung zuständig sind. Es ist keine zusätzliche Bereichseinstellung erforderlich.
+  - **Produktionsumgebungen.** Wenn eine geeignete Trennung der Zuständigkeiten erzielt wurde, ist es eher unwahrscheinlich, dass das Cloudeinführungsteam weiterhin Zugriff auf die Ressourcengruppen seiner Projekte hat. Für die Ressourcengruppen, die die Produktionsinstanzen ihrer Workloads unterstützen, wird ein zusätzlicher Bereich benötigt, damit dieses Team über Einblick in die Auswirkungen seiner Entscheidungen auf die Produktionskosten verfügt. Die Festlegung des Bereichs [Cost Management: Mitwirkender](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) für Produktionsressourcengruppen für dieses Team ermöglicht den Mitgliedern das Überwachen von Kosten und das Festlegen von Budgets basierend auf der Nutzung und den fortlaufenden Investitionen in die unterstützten Workloads.
 
 - [Cloudstrategieteam](../../organize/cloud-strategy.md). Personen, die für die übergreifende Nachverfolgung der Kosten für mehrere Projekte und Geschäftsbereiche zuständig sind, benötigen Zugriff vom Typ „Cost Management: Leser“ auf der Stammebene der Verwaltungsgruppenhierarchie.
 
@@ -106,10 +106,10 @@ Mit den folgenden Bereichs- und Rolleneinstellungen wird die erforderliche Trans
 
 - [Cloudkompetenzzentrum](../../organize/cloud-center-of-excellence.md). Personen, die für die Verwaltung von Kosten in Bezug auf gemeinsam verwendete Dienste zuständig sind, benötigen Zugriff vom Typ „Cost Management: Mitwirkender“ auf Abonnementebene. Darüber hinaus benötigt dieses Team unter Umständen auch Zugriff vom Typ „Cost Management: Mitwirkender“ auf Ressourcengruppen oder Abonnements, die per CCoE-Automatisierung bereitgestellte Ressourcen enthalten, um zu verstehen, wie sich diese Automatisierungen auf die Kosten auswirken.
 
-  - **Gemeinsame Dienste**: Bei Einbindung eines Cloudkompetenzzentrums besteht die bewährte Methode darin, dass die über das Zentrum verwalteten Ressourcen mit einem zentralisierten Abonnement für gemeinsame Dienste im Rahmen eines Hub-and-Spoke-Modells unterstützt werden. In diesem Szenario verfügt das CCoE meist über Zugriff vom Typ „Mitwirkender“ oder „Besitzer“ auf dieses Abonnement, sodass es nicht erforderlich ist, zusätzlich [Kostenverwaltung: Mitwirkender](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) zuzuweisen.
-  - **CCoE-Automatisierung/-Steuerung**. Vom CCoE werden für Cloudeinführungsteams normalerweise Steuerungen und automatisierte Bereitstellungsskripts bereitgestellt. Das CCoE ist dafür verantwortlich, ein Verständnis zu entwickeln, wie sich diese Beschleunigungselemente (Accelerators) auf die Kosten auswirken. Um sich diesen Einblick zu verschaffen, benötigt das Team Zugriff vom Typ [Kostenverwaltung: Mitwirkender](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) auf alle Ressourcengruppen oder Abonnements, unter denen diese Accelerators ausgeführt werden.
+  - **Gemeinsam genutzte Dienste.** Bei Einbindung eines Cloudkompetenzzentrums besteht die bewährte Methode darin, dass die über das Zentrum verwalteten Ressourcen mit einem zentralisierten Abonnement für gemeinsame Dienste im Rahmen eines Hub-and-Spoke-Modells unterstützt werden. In diesem Szenario verfügt das CCoE meist über Zugriff vom Typ „Mitwirkender“ oder „Besitzer“ auf dieses Abonnement, sodass es nicht erforderlich ist, zusätzlich [Kostenverwaltung: Mitwirkender](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) zuzuweisen.
+  - **CCoE-Automatisierung/-Steuerung.** Vom CCoE werden für Cloudeinführungsteams normalerweise Steuerungen und automatisierte Bereitstellungsskripts bereitgestellt. Das CCoE ist dafür verantwortlich, ein Verständnis zu entwickeln, wie sich diese Beschleunigungselemente (Accelerators) auf die Kosten auswirken. Um sich diesen Einblick zu verschaffen, benötigt das Team Zugriff vom Typ [Kostenverwaltung: Mitwirkender](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) auf alle Ressourcengruppen oder Abonnements, unter denen diese Accelerators ausgeführt werden.
 
-- **Cloudbetriebsteam**: Personen, die für die Verwaltung der laufenden Kosten von Produktionsumgebungen zuständig sind, benötigen Zugriff vom Typ „Cost Management: Mitwirkender“ auf alle Produktionsabonnements.
+- **Cloudbetriebsteam.** Personen, die für die Verwaltung der laufenden Kosten von Produktionsumgebungen zuständig sind, benötigen Zugriff vom Typ „Cost Management: Mitwirkender“ auf alle Produktionsabonnements.
 
   - Die allgemeine Empfehlung besteht darin, Produktions- und Nichtproduktionsressourcen in separaten Abonnements zu platzieren, deren Steuerung über die Knoten der Verwaltungsgruppenhierarchie erfolgt, die Produktionsumgebungen zugeordnet sind. In einer gut verwalteten Umgebung verfügen Mitglieder des Betriebsteams meist bereits über Zugriff vom Typ „Besitzer“ oder „Mitwirkender“ auf Produktionsabonnements, sodass die Rolle [Cost Management: Mitwirkender](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor) nicht benötigt wird.
 
@@ -127,6 +127,8 @@ Wenn Sie mit der Verwendung von Azure Cost Management beginnen möchten, lesen S
 - [Exportieren von Kostendaten](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-export-acm-data)
 - [Optimieren von Kosten anhand von Empfehlungen](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
 - [Verwenden von Kostenwarnungen zum Überwachen von Verbrauch und Ausgaben](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending)
+
+<-- docsTest: „AWS-Kosten und -Verbrauch“ -->
 
 ### <a name="use-azure-cost-management-to-govern-aws-costs"></a>Verwenden von Azure Cost Management zum Steuern von AWS-Kosten
 

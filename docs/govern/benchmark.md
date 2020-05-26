@@ -4,17 +4,16 @@ description: Verwenden Sie dieses Governance-Benchmarktool, um einen personalisi
 author: alexbuckgit
 ms.author: abuck
 ms.date: 08/27/2019
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-layout: LandingPage
-ms.openlocfilehash: d6eb865cb0ab44a76278afb7751684b53a40e0e7
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: daad757372250014556de53ddd6cfdacf66b0b7f
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "77708902"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83620345"
 ---
 # <a name="assess-your-transformation-journey"></a>Bewerten der Transformationsjourney
 
@@ -22,29 +21,10 @@ Im Framework für die Cloudeinführung wird ein [Governance-Benchmarktool](https
 
 ## <a name="governance-benchmark-tool"></a>Governance-Benchmarktool
 
-Das Governance-Benchmarktool liefert einen personalisierten Bericht, in dem der Unterschied zwischen Ihrem aktuellen Status und den Geschäftsprioritäten verdeutlicht wird. Zudem finden Sie dort spezifische Ressourcen, die Ihnen die ersten Schritte erleichtern.
+Nutzen Sie einen personalisierten Bericht, in dem der Unterschied zwischen Ihrem aktuellen Status und den Geschäftsprioritäten verdeutlicht wird. Zudem finden Sie dort spezifische Ressourcen, die Ihnen die ersten Schritte erleichtern. Bewerten Sie den Ist- und Sollzustand, um sich vorstellen zu können, wie das Framework angewendet werden kann.
 
-<!-- markdownlint-disable MD033 -->
-
-<ul class="panelContent cardsZ">
-    <li style="display: flex; flex-direction: column;">
-        <a href="https://cafbaseline.com" style="display: flex; flex-direction: column; flex: 1 0 auto;">
-            <div class="cardSize" style="flex: 1 0 auto; display: flex;">
-                <div class="cardPadding" style="display: flex;">
-                    <div class="card">
-                        <div class="cardText">
-                            <h3>Governance-Benchmarktool</h3>
-                            <p>Bewerten Sie den Ist- und Sollzustand, um sich vorstellen zu können, wie das Framework angewendet werden kann.</p>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
-
-<!-- markdownlint-enable MD033 -->
+> [!div class="nextstepaction"]
+> [Verwenden des Governance-Benchmarktools](https://cafbaseline.com)
 
 ## <a name="next-steps"></a>Nächste Schritte
 

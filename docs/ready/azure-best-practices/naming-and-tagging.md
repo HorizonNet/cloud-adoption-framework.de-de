@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 3ac1d332e0671a682eaa9b60a7e8a677fbf2fa37
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d3a0e4c640588dda3e97d7ecc24039869d87dd94
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223370"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621675"
 ---
 <!-- docsTest:disable TODO -->
 <!-- cSpell:ignore westeurope usgovia accountlookup messagequery -->
@@ -131,7 +131,7 @@ Die folgende Liste enthält empfohlene Azure-Ressourcentypenpräfixe, die Sie ve
 |--------------------------------|-------------|
 | Azure SQL-Datenbank-Server      | sql-        |
 | Azure SQL-Datenbank             | sqldb-      |
-| Cosmos DB-Datenbank             | cosmos-     |
+| Azure Cosmos DB-Datenbank       | cosmos-     |
 | Azure Cache for Redis-Instanz | redis-      |
 | MySQL-Datenbank                 | mysql-      |
 | PostgreSQL-Datenbank            | psql-       |
@@ -236,7 +236,7 @@ Der folgende Abschnitt enthält einige Namensbeispiele für häufige Azure-Resso
 
 | Ressourcentyp                      | `Scope`                              | Format                                                      | Beispiele                                                                                                                |
 |---------------------------------|------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| Subscription                    | Account/ <br/>Enterprise Agreement | \<Geschäftseinheit\>-\<Abonnementtyp\>-\<\#\#\#\>          | <li> mktg-prod-001  <li> konzern-freigabe-001  <li> fin-client-001 |
+| Subscription                    | Account/ <br> Enterprise Agreement | \<Geschäftseinheit\>-\<Abonnementtyp\>-\<\#\#\#\>          | <li> mktg-prod-001  <li> konzern-freigabe-001 <li> fin-client-001 |
 | Resource group                  | Subscription                       | rg-\<App- oder Dienstname\>-\<Abonnementtyp\>-\<\#\#\#\> | <li> rg-mktgsharepoint-prod-001  <li> rg-kontnachschldien-freigabe-001  <li> rg-ad-verz-dienste-freigabe-001 |
 | API Management-Dienstinstanz | Global                             | apim-\<App- oder Dienstname\>                                | apim-navigator-prod                                                                                                     |
 
@@ -275,7 +275,7 @@ Der folgende Abschnitt enthält einige Namensbeispiele für häufige Azure-Resso
 |--------------------------------|--------------------|----------------------------------------|---------------------------------------------------------------------------|
 | Azure SQL-Datenbank-Server      | Global             | sql-\<App-Name\>-\<Umgebung\>       | <li> sql-navigator-prod <li> sql-emissions-dev |
 | Azure SQL-Datenbank             | Azure SQL-Datenbank | sqldb-\<Datenbankname>-\<Umgebung\> | <li> sqldb-users-prod <li> sqldb-users-dev |
-| Cosmos DB-Datenbank             | Global             | cosmos-\<App-Name\>-\<Umgebung\>    | <li> cosmos-navigator-prod <li> cosmos-emissions-dev |
+| Azure Cosmos DB-Datenbank       | Global             | cosmos-\<App-Name\>-\<Umgebung\>    | <li> cosmos-navigator-prod <li> cosmos-emissions-dev |
 | Azure Cache for Redis-Instanz | Global             | redis-\<App-Name\>-\<Umgebung\>     | <li> redis-navigator-prod <li> redis-emissionen-entw |
 | MySQL-Datenbank                 | Global             | mysql-\<App-Name\>-\<Umgebung\>     | <li> mysql-navigator-prod <li> mysql-emissionen-entw |
 | PostgreSQL-Datenbank            | Global             | psql-\<App-Name\>-\<Umgebung\>      | <li> psql-navigator-prod <li> psql-emissions-dev |

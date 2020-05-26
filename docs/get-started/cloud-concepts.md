@@ -7,21 +7,19 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 0c59a383f47629dd16cd81bc6865812fcaca4679
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ebcf336b72b91b8290b93fd16b5d1add709b8999
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230586"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83399695"
 ---
-<!-- docsTest:ignore CAF%20Readiness%20Naming%20and%20Tagging%20tracking%20template -->
-
 # <a name="get-started-understand-and-document-foundational-alignment-decisions"></a>Erste Schritte: Verstehen und Dokumentieren grundlegender Ausrichtungsentscheidungen
 
-Die Umstellung auf die Cloud kann eine Vielzahl von geschäftlichen, technischen und organisatorischen Vorteilen durch verschiedene Wege der Umsetzung ermöglichen. Unabhängig davon, was Sie erreichen möchten, gibt es bei Ihrem Umstieg auf die Cloud einige anfängliche Entscheidungen, die von jedem beteiligten Team verstanden werden sollten. Wenn Sie diesen Leitfaden durcharbeiten, zeichnen Sie diese Entscheidungen mithilfe der [Vorlage für anfängliche Entscheidungen](https://raw.githubusercontent.com/microsoft/cloudadoptionframework/master/references/initial-decisions-checklist.docx) auf, um schnell ein Onboarding von Teammitgliedern durchführen zu können, die am gesamten Cloudeinführungs-Lebenszyklus teilnehmen.
+Die Umstellung auf die Cloud kann eine Vielzahl von geschäftlichen, technischen und organisatorischen Vorteilen ermöglichen. Unabhängig davon, was Sie erreichen möchten, gibt es bei Ihrem Umstieg auf die Cloud einige anfängliche Entscheidungen, die von jedem beteiligten Team verstanden werden sollten. Wenn Sie diesen Leitfaden durcharbeiten, zeichnen Sie diese Entscheidungen mithilfe der [Vorlage für anfängliche Entscheidungen](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/references/initial-decisions-checklist.docx) auf. Mithilfe der Vorlage können Sie das Onboarding von Teammitgliedern, die am Cloudeinführungs-Lebenszyklus teilnehmen, schnell durchführen.
 
 > [!NOTE]
-> Wenn Sie auf einen der unten aufgeführten Schritte klicken, springen Sie durch das Inhaltsverzeichnis von Cloud Adoption Framework, um grundlegende Konzepte abzudecken, die später verwendet werden, um das Team beim Implementieren der zugehörigen Maßnahmen zu unterstützen. Versehen Sie diese Seite mit einem Lesezeichen, um häufig zu dieser Checkliste zurückzukehren.
+> Wenn Sie einen der folgenden Links auswählen, gelangen Sie zum Inhaltsverzeichnis des Microsoft Cloud Adoption Frameworks für Azure und können nach grundlegenden Konzepten suchen, die Sie später verwenden, um dem Team bei der Implementierung der zugehörigen Anleitung zu helfen. Versehen Sie diese Seite mit einem Lesezeichen, um häufig zu dieser Checkliste zurückzukehren.
 
 ## <a name="step-1-understand-how-azure-works"></a>Schritt 1: Wie funktioniert Azure?
 
@@ -33,7 +31,7 @@ Alle Personen, die am Cloudeinführungs-Lebenszyklus beteiligt sind, sollten ein
 
 ## <a name="step-2-understand-initial-azure-concepts"></a>Schritt 2: Verstehen der ersten Azure-Konzepte
 
-Azure baut auf einer Reihe von [grundlegenden Konzepten](../ready/considerations/fundamental-concepts.md) auf, für die tief greifende Ausführungen zur technischen Strategie erforderlich sind, da sie sich speziell auf Azure-Implementierungen bezieht.
+Azure baut auf einer Reihe von [grundlegenden Konzepten](../ready/considerations/fundamental-concepts.md) auf, die für tief greifende Ausführungen zur technischen Strategie für Azure-Implementierungen erforderlich sind.
 
 **Beteiligte Teams, Zielvorgaben und unterstützende Anleitungen:**
 
@@ -41,16 +39,16 @@ Alle Personen, die an der Azure-Implementierung der Technologiestrategie beteili
 
 ## <a name="step-3-review-the-portfolio"></a>Schritt 3: Überprüfen des Portfolios
 
-Unabhängig vom ausgewählten Cloudanbieter beginnen alle Cloudhosting- und Umgebungsentscheidungen mit dem Verständnis des gesamten Portfolios der Workloads. Das Cloud Adoption Framework umfasst einige Tools zum Verstehen und Auswerten des Portfolios.
+Unabhängig vom ausgewählten Cloudanbieter beginnen alle Cloudhosting- und Umgebungsentscheidungen mit dem Verständnis des Portfolios der Workloads. Das Cloud Adoption Framework umfasst einige Tools zum Verstehen und Auswerten des Portfolios.
 
-**Zielvorgaben:**
+**Ziele:**
 
-- Aufzeichnen des Standorts, des Status und der zuständigen Person für die Portfoliodokumentation in der [Vorlage für anfängliche Entscheidung](https://raw.githubusercontent.com/microsoft/cloudadoptionframework/master/references/initial-decisions-checklist.docx).
+- Aufzeichnen des Standorts, des Status und der zuständigen Person für die Portfoliodokumentation in der [Vorlage für anfängliche Entscheidung](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/references/initial-decisions-checklist.docx).
 
 **Leitfaden zur Erreichung der Zielvorgaben:**
 
 - [Grundlegende Konzepte](../ready/considerations/fundamental-concepts.md) helfen Ihnen, wichtige Azure-Themen zu verstehen, bevor Sie mit der Cloudeinführung beginnen.
-- Mithilfe der [Arbeitsmappe für die Betriebsverwaltung](https://raw.githubusercontent.com/microsoft/cloudadoptionframework/master/manage/opsmanagementworkbook.xlsx) und des Geschäftsausrichtungsansatzes können Sie die Workloads und Ressourcen verstehen, die an ein Cloudbetriebsteam übergeben wurden.
+- Mithilfe der [Arbeitsmappe für die Betriebsverwaltung](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) und des Geschäftsausrichtungsansatzes können Sie die Workloads und Ressourcen verstehen, die an ein Cloudbetriebsteam übergeben wurden.
 - Der [Cloudeinführungsplan](../plan/plan-intro.md) bietet ein Backlog der Workloads und Ressourcen, die für die Übernahme in die Cloud vorgesehen sind.
 - Bei der [Analyse des digitalen Bestands](../digital-estate/approach.md) handelt es sich um einen Ansatz zum Dokumentieren vorhandener Workloads und Ressourcen, die für die Übernahme in die Cloud vorgesehen sind. In Azure wird der digitale Bestand am besten in einem Tool namens [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-support-matrix) dargestellt.
 
@@ -63,11 +61,11 @@ Unabhängig vom ausgewählten Cloudanbieter beginnen alle Cloudhosting- und Umge
 
 ## <a name="step-4-define-portfolio-hierarchy-depth-to-align-the-portfolio"></a>Schritt 4: Definieren der Tiefe der Portfoliohierarchie, um das Portfolio auszurichten
 
-Das Hosten von Ressourcen und Workload in der Cloud kann einfach sein und aus einer einzelnen Workload und unterstützenden Ressourcen bestehen. Für andere Kunden kann die Cloudeinführungsstrategie Tausende von Workloads und viele weitere unterstützende Ressourcen beinhalten. In der Portfoliohierarchie werden allgemeine Bezeichnungen für jede der geschichteten Hierarchieebenen erläutert, um eine gemeinsame Sprache für die Organisation unabhängig vom Cloudanbieter zu erstellen.
+Das Hosten von Ressourcen und Workload in der Cloud kann einfach sein und aus einer einzelnen Workload und unterstützenden Ressourcen bestehen. Für andere Kunden kann die Cloudeinführungsstrategie Tausende von Workloads und viele weitere unterstützende Ressourcen beinhalten. In der Portfoliohierarchie werden allgemeine Bezeichnungen für jede Ebene erläutert, um eine gemeinsame Sprache für die Organisation unabhängig vom Cloudanbieter zu erstellen.
 
-**Zielvorgaben:**
+**Ziele:**
 
-- Aufzeichnen der relevanten Hierarchieanforderungen in der [Vorlage für anfängliche Entscheidungen](https://raw.githubusercontent.com/microsoft/cloudadoptionframework/master/references/initial-decisions-checklist.docx).
+- Aufzeichnen der relevanten Hierarchieanforderungen in der [Vorlage für anfängliche Entscheidungen](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/references/initial-decisions-checklist.docx).
 
 **Leitfaden zur Erreichung der Zielvorgaben:**
 
@@ -84,14 +82,14 @@ Das Hosten von Ressourcen und Workload in der Cloud kann einfach sein und aus ei
 
 Alle vorhandenen Workloads und Ressourcen müssen ordnungsgemäß benannt und in Übereinstimmung mit einem Benennungs- und Markierungsstandard gekennzeichnet werden. Diese Standards sollten dokumentiert und als Referenz für alle Teammitglieder verfügbar sein. Wenn möglich, sollten die Standards auch automatisch erzwungen werden, um die Mindestanforderungen an die Markierung sicherzustellen.
 
-**Zielvorgaben:**
+**Ziele:**
 
-- Aufzeichnen des Speicherorts, des Status und der verantwortlichen Partei für die Arbeitsmappe für Benennungs- und Markierungsstandards in der [Vorlage für anfängliche Entscheidungen](https://raw.githubusercontent.com/microsoft/cloudadoptionframework/master/references/initial-decisions-checklist.docx).
+- Aufzeichnen des Speicherorts, des Status und der verantwortlichen Partei für die Arbeitsmappe für Benennungs- und Markierungskonventionen in der [Vorlage für anfängliche Entscheidungen](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/references/initial-decisions-checklist.docx).
 
-**Leitfaden zur Erreichung der Zielvorgaben:**
+**Hinweis zur Erreichung der Ziele:**
 
 - Erstellen eines [Standards für Benennung und Markierung](../ready/azure-best-practices/naming-and-tagging.md).
-- Füllen Sie die [Arbeitsmappe für die Nachverfolgung von Benennungs- und Markierungskonventionen](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/CAF%20Readiness%20Naming%20and%20Tagging%20tracking%20template.xlsx) mit Daten auf, um Entscheidungen nachzuverfolgen.
+- Füllen Sie die [Arbeitsmappe für Benennungs- und Markierungskonventionen](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/CAF%20Readiness%20Naming%20and%20Tagging%20tracking%20template.xlsx) mit Daten auf, um Entscheidungen nachzuverfolgen.
 - [Überprüfen und aktualisieren Sie vorhandene Tags in Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources).
 - [Erzwingen von Markierungsrichtlinien in Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-policies).
 
@@ -104,11 +102,11 @@ Alle vorhandenen Workloads und Ressourcen müssen ordnungsgemäß benannt und in
 
 ## <a name="step-6-create-a-resource-organization-design-to-implement-the-portfolio-hierarchy"></a>Schritt 6: Erstellen eines Ressourcenorganisationsentwurfs zum Implementieren der Portfoliohierarchie
 
-Um eine konsistente Ausrichtung mit den Entscheidungen hinsichtlich der Portfoliohierarchie zu gewährleisten, ist es wichtig, einen Entwurf für die Ressourcenorganisation zu erstellen. Ein solcher Entwurf würde die Organisationstools des Cloudanbieters an der Portfoliohierarchie ausrichten, die zur Unterstützung Ihres Cloudeinführungsplans erforderlich ist. Dieser Entwurf steuert die Implementierung, indem er klarstellt, welche Ressourcen in bestimmten Grenzen innerhalb der Cloudumgebungen eingesetzt werden können.
+Um eine konsistente Ausrichtung mit den Entscheidungen hinsichtlich der Portfoliohierarchie zu gewährleisten, ist es wichtig, einen Entwurf für die Ressourcenorganisation zu erstellen. Ein solcher Entwurf richtet die Organisationstools des Cloudanbieters an der Portfoliohierarchie aus, die zur Unterstützung Ihres Cloudeinführungsplans erforderlich ist. Dieser Entwurf steuert die Implementierung, indem er klarstellt, welche Ressourcen in bestimmten Grenzen innerhalb der Cloudumgebungen eingesetzt werden können.
 
 **Zielvorgaben:**
 
-- Zuordnen von Azure-Produkten zur ausgerichteten Ebene der Portfoliohierarchie in der [Vorlage für anfängliche Entscheidungen](https://raw.githubusercontent.com/microsoft/cloudadoptionframework/master/references/initial-decisions-checklist.docx).
+- Zuordnen von Azure-Produkten zur ausgerichteten Ebene der Portfoliohierarchie in der [Vorlage für anfängliche Entscheidungen](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/references/initial-decisions-checklist.docx).
 
 **Leitfaden zur Erreichung der Zielvorgaben:**
 
@@ -117,8 +115,7 @@ Um eine konsistente Ausrichtung mit den Entscheidungen hinsichtlich der Portfoli
 
 Erstellen einer Abonnementstrategie:
 
-- Beginnen Sie [entwurfsbedingt mit zwei Abonnements](../ready/azure-best-practices/initial-subscriptions.md).
-  - Fügen Sie grundlegende Abonnemententwürfe hinzu, um allgemeine Unternehmensanforderungen zu berücksichtigen, etwa gemeinsame Dienste oder Sandboxabonnements.
+- Beginnen Sie [entwurfsbedingt mit zwei Abonnements](../ready/azure-best-practices/initial-subscriptions.md). Fügen Sie grundlegende Abonnemententwürfe hinzu, um allgemeine Unternehmensanforderungen zu berücksichtigen, etwa gemeinsame Dienste oder Sandboxabonnements.
 - [Verwalten Sie mehrere Abonnements](../ready/azure-best-practices/organize-subscriptions.md), wenn zusätzliche Abonnements erforderlich sind, um den Cloudeinführungsplan zu unterstützen.
 - Richten Sie [klare Grenzen basierend auf der Portfoliohierarchie](../reference/fundamental-concepts/hierarchy-azure-tools.md#organizing-the-hierarchy-in-azure) ein.
 - [Verschieben Sie bei Bedarf Ressourcengruppen und Ressourcen zwischen Abonnements](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription), um die Organisationsstrategie einzuhalten.
@@ -134,23 +131,23 @@ Erstellen einer Abonnementstrategie:
 
 Die Komplexität der Portfoliohierarchie hilft Ihnen, Organisationsstrukturen und -methoden zu definieren, um die alltäglichen Aktivitäten verschiedener Teams zu leiten.
 
-**Zielvorgaben:**
+**Ziele:**
 
-- Befolgen der Leitfäden für erste Schritte für die Organisationsausrichtung basierend auf diesen grundlegenden Konzepten.
+- Befolgen der Leitfäden für erste Schritte für die Organisationsausrichtung basierend auf diesen Konzepten.
 
-<!-- docsTest:ignore Get Align -->
+<!-- docsTest:ignore "Get started: Align your organization" -->
 
-**Leitfaden zur Erreichung der Zielvorgaben:**
+**Hinweis zur Erreichung der Ziele:**
 
-- Verwenden der vorherigen Schritte als Leitfaden, um den [Leitfaden zur Verantwortlichkeit der Portfoliohierarchie](../reference/fundamental-concepts/hosting-hierarchy.md#hierarchy-accountability-and-guidance) zu evaluieren, um zu bestimmen, welche Funktionen von dedizierten Organisationen oder virtuellen Teams bereitgestellt werden müssen.
-- Verwenden Sie [Erste Schritte: Ausrichten Ihrer Organisation](./org-alignment.md), um die Anleitungen zur Verantwortlichkeit der Portfoliohierarchie auf das RACI-Diagramm anzuwenden.
+- Verwenden Sie die vorherigen Schritte als Leitfaden, um die [Anleitungen zur Verantwortlichkeit der Portfoliohierarchie](../reference/fundamental-concepts/hosting-hierarchy.md#hierarchy-accountability-and-guidance) auszuwerten. Ermitteln Sie, welche Funktionen möglicherweise von dedizierten Organisationen oder virtuellen Teams bereitgestellt werden müssen.
+- Verwenden Sie [Erste Schritte: Ausrichten Ihrer Organisation](./org-alignment.md), um die Anleitungen zur Verantwortlichkeit der Portfoliohierarchie auf das RACI-Diagramm (Responsible, Accountable, Consulted und Informed) anzuwenden.
 
 <!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Das Cloudstrategieteam ist für die Ausrichtung virtueller oder dedizierter Organisationsstrukturen verantwortlich, um den Erfolg des gesamten Cloud einführungs-Lebenszyklus zu gewährleisten. | <li> Alle Personen, die am Cloudeinführungs-Lebenszyklus beteiligt sind, sollten mit der Ausrichtung von Personen und Ebenen der Verantwortlichkeit vertraut sein. |
+| <li> Das Cloudstrategieteam ist für die Ausrichtung virtueller oder dedizierter Organisationsstrukturen verantwortlich, um den Erfolg des Cloudeinführungs-Lebenszyklus zu gewährleisten. | <li> Alle Personen, die am Cloudeinführungs-Lebenszyklus beteiligt sind, sollten mit der Ausrichtung von Personen und Ebenen der Verantwortlichkeit vertraut sein. |
 
 ## <a name="whats-next"></a>Nächste Schritte
 

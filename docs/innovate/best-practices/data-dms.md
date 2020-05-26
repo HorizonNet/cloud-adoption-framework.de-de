@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 1f1060ba4df7dfb398a94f8611901612e1ecf60d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 87376016c2d775d9aa546036504dfdf8c3ec9ba2
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219783"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83398731"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>Sammeln von Daten durch Migration und Modernisierung vorhandener Datenquellen
 
@@ -28,7 +28,7 @@ Während des Bewertungsprozesses in der Migrationsmethodik bewertet ein Cloudein
 
 Wenn Sie lokale Daten migrieren und modernisieren, ist die häufigste Wahl des Azure-Tools [Azure Database Migration Service](https://docs.microsoft.com/azure/dms). Dieser Dienst ist Teil der umfassenderen [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview)-Toolkette. Für bestehende SQL Server-Datenquellen kann der [Datenmigrations-Assistent](https://docs.microsoft.com/sql/dma/dma-overview) Ihnen helfen, eine kleine Anzahl von Datenstrukturen zu bewerten und zu migrieren.
 
-Um Oracle- und NoSQL-Migrationen zu unterstützen, können Sie auch den [Database Migration Service](https://docs.microsoft.com/azure/dms) für bestimmte Arten von Quelle-zu-Ziel-Datenbanken verwenden. Beispiele hierfür sind Oracle zu PostgreSQL und MongoDB zu Cosmos DB. Häufiger verwenden Einführungsteams Partnertools oder benutzerdefinierte Skripts, um zu Azure Cosmos DB, Azure HDInsight oder Optionen virtueller Computer auf Basis von IaaS (Infrastructure-as-a-Service) zu migrieren.
+Um Oracle- und NoSQL-Migrationen zu unterstützen, können Sie auch den [Database Migration Service](https://docs.microsoft.com/azure/dms) für bestimmte Arten von Quelle-zu-Ziel-Datenbanken verwenden. Beispiele hierfür sind Oracle zu PostgreSQL und MongoDB zu Azure Cosmos DB. Häufiger verwenden Einführungsteams Partnertools oder benutzerdefinierte Skripts, um zu Azure Cosmos DB, Azure HDInsight oder Optionen virtueller Computer auf Basis von IaaS (Infrastructure-as-a-Service) zu migrieren.
 
 ## <a name="considerations-and-guidance"></a>Überlegungen und Anleitungen
 

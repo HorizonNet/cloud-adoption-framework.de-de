@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 9087a61baaeffa2bb769899a04f55c3eb959f4ea
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: bea618638223cc35a429106aa0d59983a16ec511
+ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218831"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83401181"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>Beispiele für Finanzergebnisse
 
@@ -77,9 +77,7 @@ Durch die Stilllegung eines Datencenters lassen sich auch zukünftige Aktualisie
 
 - **Beispiel:** Für das Rechenzentrum eines Unternehmens steht in sechs Monaten eine Verlängerung des Mietvertrags an. Das Datencenter ist seit acht Jahren in Betrieb. Vor vier Jahren hat das Unternehmen mehrere Millionen US-Dollar in die Aktualisierung und Virtualisierung aller Server investiert. Im nächsten Jahr sollen die Hardware und Software erneut aktualisiert werden. Durch Migrieren der Ressourcen in diesem Rechenzentrum im Rahmen einer Cloudmigration könnten Kosten vermieden werden, da die geplante Aktualisierung im prognostizierten Budget des nächsten Jahres wegfallen würde. Zudem könnte sie zu einer Kostensenkung führen, da die Mietkosten verringert oder entfallen würden.
 
-<!-- docsTest:ignore "vs. Operating" -->
-
-### <a name="capital-expenses-vs-operating-expenses"></a>Kapitalkosten im Vergleich zu Betriebskosten
+### <a name="capital-expenses-and-operating-expenses"></a>Kapitalkosten und Betriebskosten
 
 Bevor Sie näher auf die Kostenergebnisse eingehen, ist das Verständnis der zwei primären Kostenoptionen wichtig: Kapitalkosten und Betriebskosten.
 

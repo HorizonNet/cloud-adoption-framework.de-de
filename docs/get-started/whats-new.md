@@ -7,14 +7,13 @@ ms.date: 03/27/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: ebeb0d36b82a60ce0a0516b98909db5da8626dd2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f4dcf7409e9aa8eceb548f0bd54d0decdab7357e
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230318"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83620878"
 ---
-<!-- cSpell:ignore CAF -->
 <!-- markdownlint-disable MD024 -->
 
 # <a name="whats-new-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Neuerungen beim Framework für die Einführung der Microsoft Cloud für Azure
@@ -22,6 +21,18 @@ ms.locfileid: "83230318"
 Hier ist eine Liste mit den Änderungen angegeben, die kürzlich am Framework für die Cloudeinführung vorgenommen wurden.
 
 Dieses Framework wurde in Zusammenarbeit mit Kunden, Partnern und internen Microsoft-Teams entwickelt. Neuer und aktualisierter Inhalt wird veröffentlicht, sobald er verfügbar ist. Mit diesen Releases können Sie die Anleitung zusammen mit uns testen, überprüfen und optimieren. Wir laden Sie ein, als Partner mit uns gemeinsam das Framework für die Cloudeinführung für Azure zu entwickeln.
+
+## <a name="may-15-2020"></a>15. Mai 2020
+
+Basierend auf Feedback haben wir neue Inhalte erstellt, um Ihnen den Einstieg in die Verwendung des Cloud Adoption Frameworks zu erleichtern. Die neuen Leitfäden zu den ersten Schritten helfen Ihnen, im Framework basierend auf den gewünschten Zielvorgaben zu navigieren.
+
+| Artikel | BESCHREIBUNG |
+|---|---|
+| [Erste Schritte mit dem Cloud Adoption Framework](./index.md) | Beginnen Sie hier, um einen Leitfaden mit ersten Schritten auszuwählen, der für Ihre Zielvorgaben in Bezug auf die Cloudeinführung geeignet ist. Diese gängigen Szenarien bieten eine Roadmap für das Microsoft Cloud Adoption Framework für Azure.|
+| [Verstehen und Dokumentieren grundlegender Ausrichtungsentscheidungen](./cloud-concepts.md) | Informieren Sie sich über die anfänglichen Entscheidungen, die von jedem Teammitglied verstanden werden sollten, das an der Cloudeinführung beteiligt ist. |
+| [Grundlegendes zur Portfoliohierarchie und deren Ausrichtung](../reference/fundamental-concepts/hosting-hierarchy.md) | Erfahren Sie, wie eine Portfoliohierarchie zeigt, wie Ihre Workloads und die unterstützenden Dienste zusammenpassen. |
+| [Wie unterstützen die Azure-Produkte die Portfoliohierarchie?](../reference/fundamental-concepts/hierarchy-azure-tools.md) | Erfahren Sie mehr über die Azure-Tools und -Lösungen, die Ihre Portfoliohierarchie unterstützen. |
+| [Verwalten der Organisationsausrichtung](../organize/index.md) | Richten Sie gut ausgestattete Organisationsstrukturen ein, die ein effektives Betriebsmodell für die Cloud sind. |
 
 ## <a name="april-14-2020"></a>14. April 2020
 

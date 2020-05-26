@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 67b4968a62e795c6dbd3c09a954dbe0edf12166d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d9643f0bc303c6557d02f107fc91c7654c25ec0d
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219256"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621788"
 ---
 # <a name="first-landing-zone"></a>Erste Landezone
 
@@ -24,7 +24,7 @@ Die folgende Abbildung zeigt verschiedene Optionen für Zielzonen. Die folgenden
 
 ![Optionen für Zielzonen](../../_images/ready/landing-zone-options.png)
 
-A. Beginnen Sie mit Code, um konsistente, wiederholbare Zielzonen zu entwickeln. Wenn Sie das Refactoring (oder dem Optimieren des Codes und der Infrastruktur) während des Lernens umsetzen möchten, beginnen Sie mit einer einfachen Codebasis, wie z. B. der Migrationszielzonen-Blaupause von Cloud Adoption Framework. Diese Vorgehensweise beschleunigt eine erfolgreiche Einführung und schafft praktische Lernmöglichkeiten. Diese Art von anfänglicher Zielzone ist jedoch nicht für vertrauliche Daten oder unternehmenskritische Workloads ohne zusätzliches Refactoring konzipiert.
+A. Beginnen Sie mit Code, um konsistente, wiederholbare Zielzonen zu entwickeln. Wenn Sie das Refactoring (Optimieren des Codes und der Infrastruktur) während des Lernens umsetzen möchten, beginnen Sie mit einer einfachen Codebasis, z. B. mit der Migrationszielzonen-Blaupause von Cloud Adoption Framework. Diese Vorgehensweise beschleunigt eine erfolgreiche Einführung und schafft praktische Lernmöglichkeiten. Diese Art von anfänglicher Zielzone ist jedoch nicht für vertrauliche Daten oder unternehmenskritische Workloads ohne zusätzliches Refactoring konzipiert.
 
 B. Wenn die Akzeptanz zunimmt und die Anforderungen deutlicher identifiziert werden, werden die für die Einführung und die Plattform zuständigen Teams die Zielzonen ausgehend von ihren Erfahrungen umgestalten. Durch die Erweiterung Ihrer Zielzonen werden Umgebungen für komplexere Compliance- oder Architekturanforderungen vorbereitet. Unter [Erweitern der Zielzone](../considerations/index.md) finden Sie Entscheidungshilfen und Links zu bewährten Methoden zur Umgestaltung. Das Erweitern der Zielzone kann bei der Erfüllung von Sicherheits-, Betriebs- und Governanceanforderungen hilfreich sein.
 

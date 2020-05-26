@@ -7,15 +7,13 @@ ms.date: 04/14/2020
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.topic: article
-ms.openlocfilehash: 3373e5fd09aa9280de2c9b944d2b9648ffe8ae1a
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: eda7866700edb0a1e86776f1b0f23d95799d5b67
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219103"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621578"
 ---
-<!-- docsTest:ignore Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template -->
-
 <!-- cSpell:ignore Terraform's -->
 
 # <a name="tools-and-templates"></a>Tools und Vorlagen
@@ -41,10 +39,10 @@ Das Cloud Adoption Framework umfasst Tools, mit denen Sie technische Änderungen
 
 | Resource | BESCHREIBUNG |
 |----------|-------------|
-| [Bereitschaftsprüfliste](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/readiness-checklist.docx) | Verwenden Sie diese Prüfliste, um Ihre Umgebung auf die Einführung vorzubereiten, einschließlich der Vorbereitung Ihrer ersten Migrationszielzone, der Personalisierung der Blaupause und ihrer Erweiterung. |
+| [Bereitschaftsprüfliste](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/ready/readiness-checklist.docx) | Verwenden Sie diese Prüfliste, um Ihre Umgebung auf die Einführung vorzubereiten, einschließlich der Vorbereitung Ihrer ersten Migrationszielzone, der Personalisierung der Blaupause und ihrer Erweiterung. |
 | [Vorlage für die Nachverfolgung der Benennung und Markierung](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/CAF%20Readiness%20Naming%20and%20Tagging%20tracking%20template.xlsx) | Dokumentieren Sie Entscheidungen über Benennungs- und Markierungsstandards, um Einheitlichkeit zu gewährleisten und die Zeit für das Onboarding zu verkürzen. |
-| [&nbsp;CAF-Basisblaupause&nbsp;](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone-governance) | Verwenden Sie eine einfache Implementierung einer anfänglichen Governancegrundlage, um praktische Erfahrungen mit Governancetools in Azure bereitzustellen. |
-| [Blaupause für die CAF-Migrationszielzone](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone) | Bereitstellung und Vorbereitung auf das Hosten von Workloads, die aus einer lokalen Umgebung zu Azure migriert werden. Weitere Informationen zu dieser Blaupause finden Sie unter [Entwickeln einer Migrationszielzone](../ready/landing-zone/migrate-landing-zone.md). |
+| [&nbsp;CAF-Basisblaupause&nbsp;](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone-governance) | Verwenden Sie eine einfache Implementierung einer anfänglichen Governancegrundlage, um praktische Erfahrungen mit Governancetools in Azure bereitzustellen. |
+| [Blaupause für die CAF-Migrationszielzone](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone) | Bereitstellung und Vorbereitung auf das Hosten von Workloads, die aus einer lokalen Umgebung zu Azure migriert werden. Weitere Informationen zu dieser Blaupause finden Sie unter [Entwickeln einer Migrationszielzone](../ready/landing-zone/migrate-landing-zone.md). |
 | [Blaupause der Terraform-Zielzone](../ready/landing-zone/terraform-landing-zone.md) | Open-Source-Codebasis für die Terraform-Version der CAF-Zielzonenblaupausen. |
 | [Terraform-Registrierung](https://registry.terraform.io/search?q=aztfmod) | Die gefilterte Website der Terraform-Registrierung, um alle Module des Cloud Adoption Framework aufzulisten, die zum Erstellen einer Terraform-Zielzone erforderlich sind. |
 
@@ -53,11 +51,11 @@ Das Cloud Adoption Framework umfasst Tools, mit denen Sie technische Änderungen
 | Resource | BESCHREIBUNG |
 |----------|-------------|
 | [Bewertung des Vergleichstests für Governance](https://cafbaseline.com) | Identifizieren Sie die Lücken zwischen Ihrem derzeitigen Zustand und den geschäftlichen Prioritäten, und holen Sie sich die richtigen Ressourcen, um diese Lücken zu schließen. |
-| [&nbsp;CAF-Basisblaupause&nbsp;](https://github.com/microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone-governance) | Dies ist eine einfache Implementierung einer anfänglichen Governancegrundlage, um praktische Erfahrungen mit Governancetools in Azure bereitzustellen. |
+| [&nbsp;CAF-Basisblaupause&nbsp;](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone-governance) | Dies ist eine einfache Implementierung einer anfänglichen Governancegrundlage, um praktische Erfahrungen mit Governancetools in Azure bereitzustellen. |
 | [Governanceprozessvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Governance%20Discipline%20Template.docx) | Definieren Sie den grundlegenden Satz von Governanceprozessen, die zur Durchsetzung der einzelnen Governancedisziplinen verwendet werden. |
 | [Prozessvorlage für Cost Management](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Cost%20Management%20Discipline%20Template.docx) | Definieren Sie die Richtlinienanweisungen und Entwurfsleitfäden, die es Ihnen ermöglichen, dass die Cloudgovernance innerhalb Ihres Unternehmens mit Schwerpunkt auf das Cost Management voranschreitet. |
 | [Prozessvorlage für die Bereitstellungsbeschleunigung](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Deployment%20Acceleration%20Discipline%20Template.docx) | Definieren Sie die Richtlinienanweisungen und Entwurfsleitfäden, die es Ihnen ermöglichen, dass die Cloudgovernance innerhalb Ihres Unternehmens mit Schwerpunkt auf die Bereitstellungsbeschleunigung voranschreitet. |
-| [Identitätsprozessvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/governance/identity%20baseline%20discipline%20template.docx) | Definieren Sie die Richtlinienanweisungen und Entwurfsleitfäden, die es Ihnen ermöglichen, dass die Cloudgovernance innerhalb Ihres Unternehmens mit Schwerpunkt auf die Identitätsanforderungen voranschreitet. |
+| [Identitätsprozessvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Identity%20Baseline%20Discipline%20Template.docx) | Definieren Sie die Richtlinienanweisungen und Entwurfsleitfäden, die es Ihnen ermöglichen, dass die Cloudgovernance innerhalb Ihres Unternehmens mit Schwerpunkt auf die Identitätsanforderungen voranschreitet. |
 | [Prozessvorlage für die Ressourcenkonsistenz](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Resource%20Consistency%20Discipline%20Template.docx) | Definieren Sie die Richtlinienanweisungen und Entwurfsleitfäden, die es Ihnen ermöglichen, dass die Cloudgovernance innerhalb Ihres Unternehmens mit Schwerpunkt auf die Ressourcenkonsistenz voranschreitet. |
 | [Prozessvorlage für die Sicherheitsbaseline](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Security%20Baseline%20Discipline%20Template.docx) | Definieren Sie die Richtlinienanweisungen und Entwurfsleitfäden, die es Ihnen ermöglichen, dass die Cloudgovernance innerhalb Ihres Unternehmens mit Schwerpunkt auf die Sicherheitsbaseline voranschreitet. |
 
@@ -66,8 +64,8 @@ Das Cloud Adoption Framework umfasst Tools, mit denen Sie technische Änderungen
 | Resource | BESCHREIBUNG |
 |----------|-------------|
 | [Azure-Architekturüberprüfung](https://docs.microsoft.com/assessments/?id=azure-architecture-review) | Diese Onlinebewertung wird dazu beitragen, Workload-spezifische Architekturen und Betriebsoptionen zu definieren. |
-| [Bewährte&nbsp;Methoden&nbsp;für&nbsp;Quellcode](https://github.com/microsoft/CloudAdoptionFramework/tree/master/manage/automation-best-practices) | Dieser bereitstellbare Quellcode ergänzt und beschleunigt die Einführung bewährter Methoden für Azure-Serververwaltungsdienste. Verwenden Sie diesen Quellcode, um das Operations Management schnell zu ermöglichen und eine betriebliche Baseline zu erstellen. |
-| [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) | Dokumentieren Sie Entscheidungen zum Operations Management in der Cloud und erleichtern Sie Unterhaltungen mit dem Unternehmen, um eine Abstimmung in Bezug auf SLAs, Investitionen in die Resilienz und die Budgetzuweisung im Zusammenhang mit dem Betrieb zu gewährleisten. |
+| [Bewährte&nbsp;Methoden&nbsp;für&nbsp;Quellcode](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/manage/Automation-Best-Practices) | Dieser bereitstellbare Quellcode ergänzt und beschleunigt die Einführung bewährter Methoden für Azure-Serververwaltungsdienste. Verwenden Sie diesen Quellcode, um das Operations Management schnell zu ermöglichen und eine betriebliche Baseline zu erstellen. |
+| [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) | Dokumentieren Sie Entscheidungen zum Operations Management in der Cloud und erleichtern Sie Unterhaltungen mit dem Unternehmen, um eine Abstimmung in Bezug auf SLAs, Investitionen in die Resilienz und die Budgetzuweisung im Zusammenhang mit dem Betrieb zu gewährleisten. |
 
 ## <a name="organize"></a>Organisieren
 

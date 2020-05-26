@@ -7,12 +7,12 @@ ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 055279bccb9c2897b3cc67adf549f5f57c5bf5fc
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0eb8597e32f14685e1f1fc69a51673fb1d1d360f
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222996"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621806"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones"></a>Testgesteuerte Entwicklung (TDD) für Zielzonen
 
@@ -59,11 +59,11 @@ Für einen anfänglichen Migrationsaufwand kann die „Definition of Done“ zu 
 - Während des Einführungsaufwands wünscht das Cloudeinführungsteam einen temporären Zugriff auf die Umgebung, um Dienstkonfigurationen zu ändern.
 - Nur zur Kenntnisnahme: Vor der Produktionsfreigabe erfordern diese Workloads eine Integration mit dem Unternehmensidentitätsanbieter, um die fortlaufende Identität und den Zugriff für Vorgangsverwaltungzwecke zu regeln. Zu diesem Zeitpunkt sollte der Zugriff des Cloudeinführungsteams widerrufen werden.
 
-Der letzte Punkt oben ist weder ein Feature noch ein Akzeptanzkriterium. Es ist jedoch ein Indikator dafür, dass zusätzliche Erweiterungen erforderlich sein werden, die mit anderen Teams frühzeitig untersucht werden sollten.
+Der letzte oben genannte Punkt ist weder ein Feature noch ein Akzeptanzkriterium. Er ist jedoch ein Indikator dafür, dass zusätzliche Erweiterungen erforderlich sein werden, die mit anderen Teams frühzeitig untersucht werden sollten.
 
 ## <a name="additional-examples-of-a-definition-of-done"></a>Weitere Beispiele für eine „Definition of Done“
 
-Die Governancemethodik innerhalb des Cloud Adoption Frameworks bietet eine erzählerische Reise durch den natürliche Entwicklungsverlaufs eines Governanceteams. Eingebettet in diese Reise sind mehrere Beispiele für „Definition of Done“ und „Akzeptanzkriterien“ in Form von Richtlinienanweisungen.
+Die Governancemethodik innerhalb des Cloud Adoption Frameworks bietet eine erzählerische Reise durch den natürlichen Entwicklungsverlauf eines Governanceteams. Eingebettet in diese Reise sind mehrere Beispiele für „Definition of Done“ und „Akzeptanzkriterien“ in Form von Richtlinienanweisungen.
 
 - [Anfängliche Richtlinienanweisungen](../../govern/guides/complex/initial-corporate-policy.md#policy-statements): Beispiel für steuernde Unternehmensrichtlinien und die anfängliche „Definition of Done“ auf der Grundlage der Einführungsanforderungen in einer frühen Phase.
 - [Identitätserweiterung](../../govern/guides/complex/identity-baseline-improvement.md#incremental-improvement-of-the-policy-statements): Beispiel für steuernde Unternehmensrichtlinien („Definition of Done“), um die Anforderungen zum Erweitern der Identitätsverwaltung für eine Zielzone zu erfüllen.

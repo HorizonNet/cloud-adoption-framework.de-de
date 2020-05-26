@@ -387,7 +387,7 @@ items:
                 items:
                   - name: "Umgestalten einer App zu Azure App\_Service und Azure\_SQL-Datenbank"
                     href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql.md
-                  - name: "Umgestalten einer App zu Azure App\_Service und einer verwalteten Azure\_SQL-Datenbank-Instanz"
+                  - name: "Umgestalten einer App zu Azure App\_Service und einer verwalteten Azure\_SQL-Instanz"
                     href: migrate/azure-best-practices/contoso-migration-refactor-web-app-sql-managed-instance.md
                   - name: "Neuerstellen einer App in Azure App\_Service"
                     href: migrate/azure-best-practices/contoso-migration-rebuild.md
@@ -415,7 +415,7 @@ items:
                     href: 'https://docs.microsoft.com/azure/java/migrate-jboss-eap-to-wildfly-on-azure-kubernetes-service?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
               - name: SQL Server
                 items:
-                  - name: "Zuweisen eines neuen Hosts für eine App auf Azure-VMs und einer verwalteten Azure\_SQL-Datenbank-Instanz"
+                  - name: "Rehosten einer App auf Azure-VMs und in einer verwalteten Azure\_SQL-Instanz"
                     href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-managed-instance.md
                   - name: Zuweisen eines neuen Hosts für eine App auf virtuellen Azure-Computern und in SQL Server Always On-Verfügbarkeitsgruppen
                     href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-ag.md
@@ -427,7 +427,7 @@ items:
                     items:
                       - name: "Umgestalten von SQL\_Server zu Azure\_SQL-Datenbank"
                         href: 'https://datamigration.microsoft.com/scenario/sql-to-azuresqldb'
-                      - name: "Umgestalten von SQL\_Server zu einer verwalteten Azure\_SQL-Datenbank-Instanz"
+                      - name: Umgestalten von SQL Server zu einer verwalteten Azure SQL-Instanz
                         href: 'https://datamigration.microsoft.com/scenario/sql-to-azuresqldbmi'
                       - name: Umgestalten von SQL Server für SQL Server auf virtuellen Azure-Computern
                         href: 'https://datamigration.microsoft.com/scenario/sql-to-sqlvm'
@@ -483,11 +483,11 @@ items:
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: "Onlinemigration von SQL\_Server zu Azure\_SQL-Datenbank"
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: "Offlinemigration von SQL\_Server zu einer verwalteten Azure\_SQL-Datenbank-Instanz"
+                      - name: Offlinemigration von SQL Server zu einer verwalteten Azure SQL-Instanz
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: "Onlinemigration von SQL\_Server zu einer verwalteten Azure\_SQL-Datenbank-Instanz"
+                      - name: Onlinemigration von SQL Server zu einer verwalteten Azure SQL-Instanz
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: "Onlinemigration von Amazon RDS SQL\_Server zu Azure\_SQL-Datenbank oder einer verwalteten Azure\_SQL-Datenbank-Instanz"
+                      - name: "Onlinemigration von Amazon RDS SQL Server zu Azure SQL-Datenbank oder zu einer verwalteten Azure\_SQL-Instanz"
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: "Onlinemigration von MySQL zu Azure Database for\_MySQL"
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'

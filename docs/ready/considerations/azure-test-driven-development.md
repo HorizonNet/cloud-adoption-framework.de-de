@@ -7,12 +7,12 @@ ms.date: 04/04/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b4edc0f0e485c040045bc8c1b7bce6c91f3d13f9
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 13dc523902e5db36abf559a25c6edba44f912613
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221908"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621542"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones-in-azure"></a>Testgesteuerte Entwicklung (TDD) für Zielzonen in Azure
 
@@ -26,7 +26,7 @@ Die Toolkette der Azure-nativen Governanceprodukte und -dienste kann leicht in d
 
 ## <a name="microsoft-provided-test-and-deployment-templates-to-accelerate-tdd"></a>Von Microsoft bereitgestellte Test- und Bereitstellungsvorlagen zum Beschleunigen von TDD
 
-Die folgenden Beispiele werden von Microsoft für Governancezwecke zur Verfügung gestellt. Jedes kann jedoch als Test oder Testreihe in einem testgesteuerten Entwicklungszyklus für Zielzonen verwendet werden. Weitere Informationen zu den einzelnen Tools finden Sie im folgenden Abschnitt.
+Die folgenden Beispiele werden von Microsoft für Governancezwecke zur Verfügung gestellt. Jedes davon kann jedoch als Test oder Testreihe in einem testgesteuerten Entwicklungszyklus für Zielzonen verwendet werden. Weitere Informationen zu den einzelnen Tools finden Sie im folgenden Abschnitt.
 
 - Azure Blueprints bietet verschiedene [Blaupausenmuster](https://docs.microsoft.com/azure/governance/blueprints/samples), die Richtlinien für Tests und Vorlagen für die Bereitstellung enthalten. Diese Blaupausenmuster können den Entwicklungs-, Bereitstellungs- und Testaufwand in TDD-Zyklen beschleunigen.
 - Azure Policy umfasst auch [integrierte Richtlinieninitiativen](https://docs.microsoft.com/azure/governance/policy/samples/built-in-initiatives), die dazu dienen könnten, die vollständige „Definition of Done“ für eine Zielzone zu testen und durchzusetzen. Azure Policy umfasst [integrierte Richtliniendefinitionen](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies), die individuelle Akzeptanzkriterien innerhalb der „Definition of Done“ erfüllen können.

@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b05218d1dfc353e0d9cbed9006a980b845f67915
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 42ace02c82ffbb034f3405a6c699d7b0d29fbf1e
+ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221857"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83621512"
 ---
 # <a name="review-your-compute-options"></a>Überprüfen Ihrer Computeoptionen
 
@@ -64,7 +64,7 @@ In der folgenden Tabelle sind einige häufige Nutzungsszenarien und die empfohle
 
 Mit Azure können Sie Dienste in der Größenordnung bereitstellen, die Sie benötigen, um Ihre Kunden und Partner zu erreichen, _wo auch immer diese sich befinden_. Ein wichtiger Faktor bei der Planung Ihrer Cloudbereitstellung ist die Ermittlung, in welcher Azure-Region Ihre Workloadressourcen gehostet werden.
 
-Einige Computeoptionen, z.B. Azure App Service, sind in den meisten Azure-Regionen allgemein verfügbar. Einige Computedienste werden jedoch nur in ausgewählten Regionen unterstützt. Einige Typen von virtuellen Computern und die zugehörigen Speichertypen haben eine begrenzte regionale Verfügbarkeit. Bevor Sie die Entscheidung treffen, in welchen Regionen Sie Ihre Computeressourcen bereitstellen, empfehlen wir Ihnen die [Seite zu den Regionen](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=azure-vmware-cloudsimple,cloud-services,batch,container-instances,app-service,service-fabric,functions,kubernetes-service,virtual-machine-scale-sets,virtual-machines), um den aktuellen Status der regionalen Verfügbarkeit zu überprüfen.
+Einige Computeoptionen, z.B. Azure App Service, sind in den meisten Azure-Regionen allgemein verfügbar. Einige Computedienste werden jedoch nur in bestimmten Regionen unterstützt. Einige Typen von virtuellen Computern und die zugehörigen Speichertypen haben eine begrenzte regionale Verfügbarkeit. Bevor Sie die Entscheidung treffen, in welchen Regionen Sie Ihre Computeressourcen bereitstellen, empfehlen wir Ihnen die [Seite zu den Regionen](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=azure-vmware-cloudsimple,cloud-services,batch,container-instances,app-service,service-fabric,functions,kubernetes-service,virtual-machine-scale-sets,virtual-machines), um den aktuellen Status der regionalen Verfügbarkeit zu überprüfen.
 
 Sie können die [Seite „Azure-Regionen“](https://azure.microsoft.com/global-infrastructure/regions) besuchen, um weitere Informationen zur globalen Azure-Infrastruktur zu erhalten. Sie können auch die Seite mit den [verfügbaren Produkten nach Region](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=all) verwenden, um spezifische Informationen dazu zu erhalten, welche Dienste in den einzelnen Azure-Regionen verfügbar sind.
 
