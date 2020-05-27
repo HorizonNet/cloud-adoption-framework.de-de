@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/20/2020
-ms.openlocfilehash: 08cdf19a7e9cff1ce6f8d86c4d5ca0ece2be892c
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: b03798b4d014145e2fc1029bc3adb94d3dd3e02a
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215822"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755787"
 ---
 # <a name="cloud-automation-functions"></a>Cloudautomatisierungsfunktionen
 
@@ -43,7 +43,7 @@ Beispiele für Lösungen im Katalog:
 - Ein Skript zum Bereitstellen einer Containeanwendung.
 - Eine Resource Manager-Vorlage zum Bereitstellen eines SQL HA AO-Clusters.
 - Beispielcode zum Erstellen einer Bereitstellungspipeline mit Azure DevOps.
-- Eine Azure DevTest Labs-Instanz des ERP-Systems des Unternehmens für Entwicklungszwecke.
+- Eine Azure DevTest Labs-Instanz des ERP-Systems des Unternehmens für Entwicklungszwecke
 - Automatisierte Bereitstellung einer Self-Service-Umgebung, die häufig von Geschäftsanwendern gewünscht wird.
 
 Bei den Lösungen im Lösungskatalog handelt es sich nicht um Bereitstellungspipelines für eine Workload. Stattdessen können Sie Automatisierungsskripts im Katalog verwenden, um schnell eine Bereitstellungspipeline zu erstellen. Sie können auch eine Lösung im Katalog verwenden, um schnell Plattformkomponenten bereitzustellen, um Workloadaufgaben wie automatisierte Bereitstellung, manuelle Bereitstellung oder Migration zu unterstützen.
@@ -51,7 +51,7 @@ Bei den Lösungen im Lösungskatalog handelt es sich nicht um Bereitstellungspip
 ### <a name="strategic-tasks"></a>Strategische Aufgaben
 
 - Rationalisierung der digitalen Ressourcen:
-  - Überwachung von Einführungplänen und Fortschritten anhand des priorisierten Migrationsbacklogs.
+  - Überwachung von Einführungsplänen und Fortschritten anhand des priorisierten Migrationsbacklogs.
   - Identifizieren Sie Möglichkeiten, um die Cloudeinführung zu beschleunigen, den Aufwand durch die Automatisierung zu reduzieren sowie die Sicherheit, Stabilität und Konsistenz zu verbessern.
   - Priorisieren Sie einen Lösungsbacklog für den Lösungskatalog, der den größten Wert bei anderen strategischen Eingaben bietet.
 - Überprüfen Sie die Releasepläne auf neue Möglichkeiten der Automatisierung.

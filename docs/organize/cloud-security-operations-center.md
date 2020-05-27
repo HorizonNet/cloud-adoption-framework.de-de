@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/30/2020
-ms.openlocfilehash: c966129e01d9cf97af0ac1db0a8ac7bec8efb751
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.date: 05/15/2020
+ms.openlocfilehash: 45fe536ab6ae8efd9a11adb6e7f8776a05f76566
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401130"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815513"
 ---
 <!-- cSpell:ignore CISO MTTA MTTR SIEM NIST SOCs CDOC -->
 
@@ -31,8 +31,8 @@ Das Erkennen von Bedrohungen und die Reaktion darauf wird zurzeit einer bedeuten
 
 - **Aufwertung zum Geschäftsrisikomanagement:** SOC wächst sich zu einer zentralen Komponente des Managements von Geschäftsrisiken für die Organisation aus.
 - **Metriken und Ziele:** Die Nachverfolgung der Effektivität des SOC entwickelt sich von der „Erkennungsgeschwindigkeit“ zu diesen Schlüsselindikatoren weiter:
-  - *Reaktionsfähigkeit* über die durchschnittliche Bestätigungszeit (MTTA)
-  - *Korrekturgeschwindigkeit* über die durchschnittliche Korrekturzeit (MTTR)
+  - _Reaktionsfähigkeit_ über die durchschnittliche Bestätigungszeit (MTTA)
+  - _Korrekturgeschwindigkeit_ über die durchschnittliche Korrekturzeit (MTTR)
 - **Technologieentwicklung:** Die SOC-Technologie entwickelt sich von der exklusiven Verwendung statischer Analysen von Protokollen in einem SIEM-Tool hin zur zusätzlichen Verwendung spezieller Tools und komplexer Analysetechniken. Dies bietet umfassende Erkenntnisse zu Ressourcen, die hochwertige Warnungen sowie eine Untersuchungserfahrung bereitstellen, die die breite Ansicht des SIEM-Tools ergänzen. Beide Tooltypen verwenden zunehmend KI/Maschinelles Lernen (Machine Learning), Verhaltensanalysen und integrierte Threat Intelligence (TI), um ungewöhnliche Aktionen zu erkennen und zu priorisieren, bei denen es sich um einen böswilligen Angreifer handeln könnte.
 - **Bedrohungssuche:** SOCs fügen hypothesengestützte Bedrohungssuchen hinzu, um komplexe Angreifer proaktiv zu identifizieren und störende Fehlalarme aus den Warteschlangen der Analytiker an vorderster Front zu entfernen.
 - **Incident Management:** Disziplin wird so formalisiert, dass nicht technische Elemente von Vorfällen mit juristischen, Kommunikations- und anderen Teams koordiniert werden.

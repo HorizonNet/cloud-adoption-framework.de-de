@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 98c41d102ca54ebcb299989b907e2e6c6b237896
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 9b33b242611a576558c858080581650e67cd8382
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223472"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815428"
 ---
 # <a name="building-technical-skills"></a>Entwickeln von technischen Fähigkeiten
 
@@ -26,7 +26,7 @@ Abhängig von den Motivationen und Geschäftsergebnissen, die mit einer Cloudein
 - [Ausrichten Ihrer Organisation](../get-started/org-alignment.md): Entdecken Sie Ansätze zur Einrichtung der geeigneten Organisationsstrukturen.
 - [Übungen zur Organisationsausrichtung](./index.md): Erhalten Sie eine Übersicht über die Ausrichtung und Teamstrukturen, die Ihnen helfen, bestimmte Ziele zu erreichen.
 - [Einrichten von Teams](../get-started/help.md#establish-teams): Erfahren Siem, wie Sie anhand der folgenden Leitfäden Teams in Ihrer Organisation einrichten, die für die Bereitstellung von Cloudfunktionen verantwortlich sind.
-- [Aufschlüsseln von Silos und Machtbereichen](./fiefdoms-silos.md): Informationen zu zwei gängigen *organisatorischen Antimustern* und Möglichkeiten, das Team zur produktiven Zusammenarbeit zu führen.
+- [Aufschlüsseln von Silos und Machtbereichen](./fiefdoms-silos.md): Informationen zu zwei gängigen _organisatorischen Antimustern_ und Möglichkeiten, das Team zur produktiven Zusammenarbeit zu führen.
 
 ## <a name="environmental-technical-readiness-learning-paths"></a>Lernpfade für die (technische) Bereitschaft der Umgebung
 

@@ -7,12 +7,12 @@ ms.date: 03/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 6a5ae0083e619dc2db975682b5f50c0e8e2f1936
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 919291ade8c760429eb5df4d848f745014912eb6
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224016"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861989"
 ---
 <!-- cSpell:ignore asabbour sabbour kured -->
 
@@ -37,7 +37,7 @@ Die unten angegebene Checkliste und die Ressourcen dienen Ihnen beim Einstieg al
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **Vertrautmachen mit dem Whitepaper zu den Sicherheitsgrundlagen:** Bei den Hauptzielen einer sicheren Kubernetes-Umgebung geht es um die Sicherstellung, dass die ausgeführten Anwendungen geschützt sind, dass die Sicherheitsprobleme schnell ermittelt und behoben werden können und dass ähnliche Probleme in Zukunft verhindert werden. | [Ultimative Anleitung zum Schützen von Kubernetes (Whitepaper)](https://clouddamcdnprodep.azureedge.net/gdc/gdc8LXmoZ/original)     |
 > | **Informieren über die Einrichtung von gehärteten Clusterknoten aus Sicherheitsgründen:** Mit einem aus Sicherheitsgründen gehärteten Hostbetriebssystem wird die Angriffsfläche reduziert und die sichere Bereitstellung von Containern ermöglicht. | [Sicherheitshärtung bei AKS-Hosts für virtuelle Computer](https://docs.microsoft.com/azure/aks/security-hardened-vm-host-image)     |
-> | **Einrichten der rollenbasierten Zugriffssteuerung (RBAC) für Cluster:** Mit diesem Steuerungsmechanismus können Sie Benutzern oder Benutzergruppen die Berechtigung für bestimmte Aktionen (z. B. Ressourcen erstellen bzw. ändern oder Protokolle zur Workload ausgeführter Anwendungen anzeigen) zuweisen. | [Grundlegendes zur rollenbasierten Zugriffssteuerung (RBAC) in Kubernetes (Video)](https://www.youtube.com/watch?v=G3R24JSlGjY&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=12) <br/> [Integrieren von Azure Active Directory in Azure Kubernetes Service](https://docs.microsoft.com/azure/aks/azure-ad-integration) <br/> [Definieren des Zugriffs auf die Kubernetes-Konfigurationsdatei in Azure Kubernetes Service (AKS) mithilfe der rollenbasierten Zugriffssteuerung von Azure](https://docs.microsoft.com/azure/aks/control-kubeconfig-access)   |
+> | **Einrichten der rollenbasierten Zugriffssteuerung (RBAC) für Cluster:** Mit diesem Steuerungsmechanismus können Sie Benutzern oder Benutzergruppen die Berechtigung für bestimmte Aktionen (z. B. Ressourcen erstellen bzw. ändern oder Protokolle zur Workload ausgeführter Anwendungen anzeigen) zuweisen. | [Grundlegendes zur rollenbasierten Zugriffssteuerung (RBAC) in Kubernetes (Video)](https://www.youtube.com/watch?v=G3R24JSlGjY&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=12) <br> [Integrieren von Azure Active Directory in Azure Kubernetes Service](https://docs.microsoft.com/azure/aks/azure-ad-integration) <br> [Definieren des Zugriffs auf die Kubernetes-Konfigurationsdatei in Azure Kubernetes Service (AKS) mithilfe der rollenbasierten Zugriffssteuerung von Azure](https://docs.microsoft.com/azure/aks/control-kubeconfig-access)   |
 
 ## <a name="deploy-to-production-and-apply-best-practices"></a>Bereitstellen für die Produktion und Anwendungen von bewährten Methoden
 
@@ -62,7 +62,7 @@ Beim Vorbereiten der Anwendung für die Produktion sollten Sie einen Mindestsatz
 > | **Beschränken des ausgehenden Datenverkehrs eines Clusters:** Hier wird beschrieben, welche Ports und Adressen zugelassen werden müssen, wenn Sie den ausgehenden Datenverkehr für den Cluster einschränken. Sie können Azure Firewall oder eine Firewallappliance eines Drittanbieters verwenden, um den ausgehenden Datenverkehr zu schützen und diese erforderlichen Ports und Adressen zu definieren. | [Steuern des ausgehenden Datenverkehrs für Clusterknoten in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/limit-egress-traffic) |
 > | **Schützen des Datenverkehrs mit einer Web Application Firewall (WAF):** Verwenden Sie Azure Application Gateway als Controller für den eingehenden Datenverkehr von Kubernetes-Clustern.  | [Was ist der Application Gateway-Eingangscontroller?](https://docs.microsoft.com/azure/application-gateway/ingress-controller-overview)    |
 > | **Anwenden von Sicherheits- und Kernelupdates auf Workerknoten:** Grundlegendes zur Umgebung für AKS-Knotenupdates Sicherheitsupdates werden automatisch auf Linux-Knoten in AKS angewendet, um Ihre Cluster zu schützen. Diese Updates enthalten Sicherheitsfixes für das Betriebssystem oder Kernelupdates. Einige dieser Updates erfordern den Neustart eines Knotens, um den Vorgang abzuschließen. | [Anwenden von Sicherheits- und Kernelupdates auf Linux-Knoten in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/node-updates-kured) |
-> | **Konfigurieren einer Lösung für die Container- und Clusterüberprüfung:** Überprüfen Sie die in Azure Container Registry angeordneten Container, und verschaffen Sie sich tieferen Einblick in Ihre Clusterknoten, den Clouddatenverkehr und Sicherheitskontrollen. | [Integration von Security Center in Azure Container Registry](https://docs.microsoft.com/azure/security-center/azure-container-registry-integration) <br/> [Integration von Security Center in Azure Kubernetes Service](https://docs.microsoft.com/azure/security-center/azure-kubernetes-service-integration)  |
+> | **Konfigurieren einer Lösung für die Container- und Clusterüberprüfung:** Überprüfen Sie die in Azure Container Registry angeordneten Container, und verschaffen Sie sich tieferen Einblick in Ihre Clusterknoten, den Clouddatenverkehr und Sicherheitskontrollen. | [Integration von Security Center in Azure Container Registry](https://docs.microsoft.com/azure/security-center/azure-container-registry-integration) <br> [Integration von Security Center in Azure Kubernetes Service](https://docs.microsoft.com/azure/security-center/azure-kubernetes-service-integration)  |
 
 ## <a name="optimize-and-scale"></a>Optimieren und Skalieren
 

@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/30/2020
-ms.openlocfilehash: df8df76ac903329b21e4d543793250e70bb0afa8
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.date: 05/15/2020
+ms.openlocfilehash: b5b8d72c3f4b42d58a903b2fe9c2a8b33ebc1d67
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400958"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755515"
 ---
 # <a name="cloud-security-architecture-functions"></a>Funktionen der Cloudsicherheitsarchitektur
 
@@ -24,7 +24,7 @@ Die Sicherheitsarchitektur wird von verschiedenen Faktoren beeinflusst:
 
 - **Kontinuierliches Beteiligungsmodell:** Die fortlaufende Freigabe von Softwareupdates und Cloudfeatures macht feste Beteiligungsmodelle überflüssig. Architekten sollten sich bei allen Teams beteiligen, die an technischen Themenbereichen arbeiten, um die Entscheidungsfindung entlang des Lebenszyklus der Funktionen dieser Teams anzuleiten.
 - **Sicherheit aus der Cloud:** Integrieren von Sicherheitsfunktionen aus der Cloud, um die Aktivierungszeit und die laufenden Wartungskosten (Hardware, Software, Zeit und Aufwand) zu verringern.
-- **Sicherheit der Cloud:** Sicherstellen der Abdeckung aller Cloudressourcen, einschließlich SaaS-Anwendungen (Software-as-a-Service), IaaS-VMs (Infrastructure-as-a-Service) und PaaS-Anwendungen und -Dienste (Platform-as-a-Service).  Dies sollte die Ermittlung und Sicherheit von sanktionierten und nicht sanktionierten Diensten umfassen.
+- **Sicherheit der Cloud:** Sicherstellen der Abdeckung aller Cloudressourcen, einschließlich SaaS-Anwendungen (Software-as-a-Service), IaaS-VMs (Infrastructure-as-a-Service) und PaaS-Anwendungen und -Dienste (Platform-as-a-Service). Dies sollte die Ermittlung und Sicherheit von sanktionierten und nicht sanktionierten Diensten umfassen.
 - **Identitätsintegration:** Sicherheitsarchitekten sollten eine enge Abstimmung mit Identitätsteams sicherstellen, um Organisationen bei der Erfüllung der doppelten Ziele zu helfen, Produktivität zu ermöglichen und Sicherheitszusicherungen zu schaffen.
 - **Integration des internen Kontexts** in Sicherheitsentwürfe, wie z. B. Kontext aus der Statusverwaltung und Vorfällen, die vom Security Operations [Center] (SOC) untersucht wurden. Dies sollte Elemente wie relative Risikobewertungen von Benutzerkonten und Geräten, Vertraulichkeit von Daten sowie wichtige Grenzen der Sicherheitsisolation beinhalten, die aktiv zu schützen sind.
 

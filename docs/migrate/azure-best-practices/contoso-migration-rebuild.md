@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 04e5d34da71fb67ce6608aea5f1db5dc6f90f705
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: e09df6f954a410dedde7ecd77fd7b8bd5d429241
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401114"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862227"
 ---
 <!-- docsTest:ignore SmartHotel360 SmartHotel360-Backend Pet.Checker vcenter.contoso.com contoso-datacenter git aks ContosoRG PetCheckerFunction -->
 
@@ -109,11 +109,11 @@ Für dieses Szenario benötigt Contoso Folgendes:
 
 <!-- markdownlint-disable MD033 -->
 
-**Anforderungen** | **Details**
---- | ---
-Azure-Abonnement | <li> Contoso hat in einem früheren Artikel Abonnements erstellt. Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/pricing/free-trial) erstellen. <li> Wenn Sie ein kostenloses Konto erstellen, sind Sie der Administrator Ihres Abonnements und können alle Aktionen durchführen. <li> Falls Sie ein vorhandenes Abonnement verwenden und nicht der Administrator sind, müssen Sie mit dem Administrator zusammenarbeiten, damit er Ihnen Berechtigungen vom Typ „Besitzer“ oder „Mitwirkender“ zuweist.
-Azure-Infrastruktur | <li> Informieren Sie sich, [wie Contoso eine Azure-Infrastruktur einrichtet](./contoso-migration-infrastructure.md).
-Voraussetzungen für Entwickler | Contoso benötigt die folgenden Tools auf einer Entwicklerarbeitsstation: <li>  [Visual Studio 2017 Community Edition: Version 15.5](https://visualstudio.microsoft.com) <li> .NET-Workload aktiviert <li> [Git-Client](https://git-scm.com) <li> [Azure PowerShell](https://azure.microsoft.com/downloads) <li> [Azure-Befehlszeilenschnittstelle](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) <li> [Docker CE (Windows 10) oder Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install) für die Verwendung von Windows-Containern festgelegt
+| **Anforderungen** | **Details** |
+| --- | --- |
+| Azure-Abonnement | <li> Contoso hat in einem früheren Artikel Abonnements erstellt. Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/pricing/free-trial) erstellen. <li> Wenn Sie ein kostenloses Konto erstellen, sind Sie der Administrator Ihres Abonnements und können alle Aktionen durchführen. <li> Falls Sie ein vorhandenes Abonnement verwenden und nicht der Administrator sind, müssen Sie mit dem Administrator zusammenarbeiten, damit er Ihnen Berechtigungen vom Typ „Besitzer“ oder „Mitwirkender“ zuweist. |
+| Azure-Infrastruktur | <li> Informieren Sie sich, [wie Contoso eine Azure-Infrastruktur einrichtet](./contoso-migration-infrastructure.md). |
+| Voraussetzungen für Entwickler | Contoso benötigt die folgenden Tools auf einer Entwicklerarbeitsstation: <li>  [Visual Studio 2017 Community Edition: Version 15.5](https://visualstudio.microsoft.com) <li> .NET-Workload aktiviert <li> [Git-Client](https://git-scm.com) <li> [Azure PowerShell](https://azure.microsoft.com/downloads) <li> [Azure-Befehlszeilenschnittstelle](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) <li> [Docker CE (Windows 10) oder Docker EE (Windows Server)](https://docs.docker.com/docker-for-windows/install) für die Verwendung von Windows-Containern festgelegt |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -152,39 +152,37 @@ Die Contoso-Administratoren führen die Bereitstellung wie folgt durch:
 
 2. Sie führen das Skript zum Erstellen des Managed Kubernetes-Clusters mithilfe von AKS und Azure Container Registry aus.
 
-   ![AKS](./media/contoso-migration-rebuild/aks1.png)
+    ![AKS](./media/contoso-migration-rebuild/aks1.png)
 
 3. Bei geöffneter Datei aktualisiert Contoso den $location-Parameter in **eastus2** und speichert die Datei.
 
-   ![AKS](./media/contoso-migration-rebuild/aks2.png)
+    ![AKS](./media/contoso-migration-rebuild/aks2.png)
 
 4. Sie wählen die Optionen **Ansicht** > **Integriertes Terminal** aus, um das integrierte Terminal in Visual Studio Code zu öffnen.
 
-   ![AKS](./media/contoso-migration-rebuild/aks3.png)
+    ![AKS](./media/contoso-migration-rebuild/aks3.png)
 
 5. In dem in PowerShell integrierten Terminal meldet sich Contoso bei Azure mit dem Befehl „Connect-AzureRmAccount“ an. [Informieren Sie sich](https://docs.microsoft.com/powershell/azure/get-started-azureps) über die ersten Schritte mit PowerShell.
 
-   ![AKS](./media/contoso-migration-rebuild/aks4.png)
+    ![AKS](./media/contoso-migration-rebuild/aks4.png)
 
 6. Contoso authentifiziert die Azure CLI, indem der Befehl `az login` ausgeführt wird und die Anweisungen für die Authentifizierung mithilfe eines Webbrowsers befolgt werden. Weitere Informationen zur Anmeldung bei der Azure CLI finden Sie [hier](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest).
 
-   ![AKS](./media/contoso-migration-rebuild/aks5.png)
+    ![AKS](./media/contoso-migration-rebuild/aks5.png)
 
 7. Contoso führt den folgenden Befehl aus, mit dem es den Ressourcengruppennamen **ContosoRG**, den Namen des AKS-Clusters, **smarthotel-aks-eus2**, und den neuen Registrierungsnamen übergibt.
 
-   ```PowerShell
-   .\gen-aks-env.ps1  -resourceGroupName ContosoRg -orchestratorName smarthotelakseus2 -registryName smarthotelacreus2
-   ```
+    `.\gen-aks-env.ps1  -resourceGroupName ContosoRg -orchestratorName smarthotelakseus2 -registryName smarthotelacreus2`
 
-   ![AKS](./media/contoso-migration-rebuild/aks6.png)
+    ![AKS](./media/contoso-migration-rebuild/aks6.png)
 
 8. Azure erstellt eine andere Ressourcengruppe, die die Ressourcen für den AKS-Cluster enthält.
 
-   ![AKS](./media/contoso-migration-rebuild/aks7.png)
+    ![AKS](./media/contoso-migration-rebuild/aks7.png)
 
 9. Nachdem die Bereitstellung abgeschlossen ist, installieren sie das Befehlszeilentool `kubectl`. Das Tool ist bereits in Azure Cloud Shell installiert.
 
-   `az aks install-cli`
+    `az aks install-cli`
 
 10. Contoso überprüft die Verbindung mit dem Cluster, indem es den Befehl `kubectl get nodes` ausführt. Der Knoten weist den gleichen Namen wie die VM in der automatisch erstellten Ressourcengruppe auf.
 
@@ -275,9 +273,7 @@ Die Bereitstellung erfolgt wie folgt:
 
 2. Sie verwenden die Datei „deploy.cmd“ zur Bereitstellung der Azure-Ressourcen in der Ressourcengruppe **ContosoRG** und der Region **EUS2**, indem sie den folgenden Befehl eingeben:
 
-    ```azurecli
-    .\deploy.cmd azuredeploy ContosoRG -c eastus2
-    ```
+    `.\deploy.cmd azuredeploy ContosoRG -c eastus2`
 
     ![Bereitstellen des Back-Ends](./media/contoso-migration-rebuild/backend1.png)
 
@@ -433,11 +429,11 @@ Contoso-Administratoren stellen im Azure-Portal die Funktionen-App bereit.
 
 1. Sie wählen **Funktionen-App** aus.
 
-   ![Erstellen einer Funktionen-App](./media/contoso-migration-rebuild/function-app1.png)
+    ![Erstellen einer Funktionen-App](./media/contoso-migration-rebuild/function-app1.png)
 
 2. Sie geben einen App-Namen an (**smarthotelpetchecker**). Es platziert die Ressource in der Produktionsressourcengruppe **ContosoRG**. Es legt den Hostingort auf **Verbrauchstarif** fest und platziert die App in der Region USA, Osten 2. Daraufhin wird neben einem neuen Speicherkonto auch eine Application Insights-Instanz für die Überwachung erstellt.
 
-   ![Einstellungen für Funktions-Apps](./media/contoso-migration-rebuild/function-app2.png)
+    ![Einstellungen für Funktions-Apps](./media/contoso-migration-rebuild/function-app2.png)
 
 3. Nach der Bereitstellung der App navigieren sie zur Adresse der App, um zu überprüfen, ob diese erfolgreich erstellt wurde.
 
@@ -447,7 +443,7 @@ Contoso-Administratoren erstellen zwei verschiedene Projekte für die Front-End-
 
 1. In Azure DevOps erstellen sie ein **SmartHotelFrontend**-Projekt.
 
-   ![Front-End-Projekt](./media/contoso-migration-rebuild/function-app1.png)
+    ![Front-End-Projekt](./media/contoso-migration-rebuild/function-app1.png)
 
 2. Sie importieren das Git-Repository [SmartHotel360 front end](https://github.com/Microsoft/SmartHotel360-Website) in das neue Projekt.
 
