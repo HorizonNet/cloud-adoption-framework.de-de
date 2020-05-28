@@ -6,17 +6,17 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
-ms.date: 04/04/2020
-ms.openlocfilehash: e2a761a998a42ebb1f6e8042bd19fb4013c9b786
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: 611565362d5828aab075acb23230acd65d269010
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230418"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83752017"
 ---
 # <a name="get-started-central-it-team"></a>Erste Schritte: Zentrales IT-Team
 
-Wenn mehrere Teams diesem einen Team relativ schnell bei der Cloudeinführung folgen, ist zusätzliche Unterstützung durch die vorhandenen IT-Mitarbeiter erforderlich. Diese Mitarbeiter verfügen aber möglicherweise nicht über die Kenntnisse und Erfahrung, um die Cloud mit cloudnativen Tools zu unterstützen. Daher wird häufig ein zentrales IT-Team gebildet, das die Cloudnutzung steuert.
+Wenn mehrere Teams diesem einen Team relativ schnell bei der Cloudeinführung folgen, ist zusätzliche Unterstützung durch die vorhandenen IT-Mitarbeiter erforderlich. Diese Mitarbeiter verfügen möglicherweise nicht über die Kenntnisse und Erfahrung, um die Cloud mit cloudnativen Tools zu unterstützen. Daher wird häufig ein zentrales IT-Team gebildet, das die Cloudnutzung steuert.
 
 > [!WARNING]
 > Zentrale IT-Funktionen sollten nur dann in der Cloud angewendet werden, wenn die vorhandene lokale Bereitstellung auf einem zentralen IT-Modell basiert. Wenn das aktuelle lokale Modell auf delegierter Steuerung basiert, ziehen Sie ein Cloudkompetenzzentrum in Betracht, das eine kompatiblere Alternative darstellen kann.
@@ -32,7 +32,7 @@ Wenn mehrere Teams diesem einen Team relativ schnell bei der Cloudeinführung fo
 
 Aus moderner Sicht sind IT-Ressourcen global verteilt. Zuständigkeiten werden delegiert. Die Betriebsverwaltung erfolgt durch eine Kombination aus internen Mitarbeitern, Anbietern verwalteter Dienste und Cloudanbietern. In der digitalen Wirtschaft werden IT-Verwaltungsfunktionen langsam durch ein Modell mit self-service-basierten und delegierten Steuerungsfunktionen ersetzt, das klare Leitlinien für die Durchsetzung von Governance aufweist. Die zentrale IT kann einen wertvollen Beitrag zur Cloudeinführung leisten, indem sie zum Cloudbroker und Partner für Innovationen und geschäftliche Agilität wird.
 
-Die zentrale IT ist als Funktion gut aufgestellt, um wertvolle Kenntnisse und Vorgehensweisen aus den vorhandenen lokalen Modellen zu extrahieren und auf die Cloudbereitstellung zu übertragen. Dieser Prozess erfordert jedoch Veränderungen. Um die Cloudeinführung in großem Umfang zu unterstützen, sind neue Prozesse, neue Fähigkeiten und neue Tools erforderlich. Wenn sich die zentrale IT-Abteilung an diese Anforderungen anpassen kann, wird sie zu einem wichtigen Partner bei einem Cloudeinführungsprojekt.
+Die zentrale IT ist als Funktion gut aufgestellt, um wertvolle Kenntnisse und Vorgehensweisen aus den vorhandenen lokalen Modellen zu extrahieren und auf die Cloudbereitstellung zu übertragen. Dieser Vorgang erfordert Änderungen. Um die Cloudeinführung in großem Umfang zu unterstützen, sind neue Prozesse, neue Fähigkeiten und neue Tools erforderlich. Wenn sich die zentrale IT-Abteilung an diese Anforderungen anpassen kann, wird sie zu einem wichtigen Partner bei einem Cloudeinführungsprojekt.
 
 ## <a name="deliverables"></a>Ergebnisse
 

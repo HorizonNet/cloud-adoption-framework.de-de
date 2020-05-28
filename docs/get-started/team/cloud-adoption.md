@@ -6,17 +6,21 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
-ms.date: 04/04/2020
-ms.openlocfilehash: cb831deaf758d26d15df0d8797f6fda7d0e8dfbf
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: 33744f6911ec724c517a7fa93979a8adbdd370c1
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230414"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814461"
 ---
 # <a name="get-started-build-a-cloud-adoption-team"></a>Erste Schritte: Aufbauen eines Cloudeinführungsteams
 
-Cloudeinführungsteams sind das moderne Äquivalent zu technischen Implementierungs- oder Projektteams. Die Charakteristik der Cloud kann jedoch eine dynamischere Teamstruktur erfordern. Einige Cloudeinführungsteams konzentrieren sich ausschließlich auf die Cloudmigration, während andere Teams sich schwerpunktmäßig mit Innovationen beschäftigen, die Cloudtechnologien nutzen. Einige Teams verfügen über das breite technische Fachwissen, das erforderlich ist, um umfangreiche Einführungsbestrebungen wie eine vollständige Rechenzentrumsmigration durchzuführen, während andere einen engeren technischen Fokus haben und mitunter zwischen Projekten wechseln, um bestimmte Ziele zu erreichen. Ein Beispiel wäre etwa ein Team von Datenplattformspezialisten, das bei der Konvertierung virtueller SQL-Computer in SQL-PaaS-Instanzen mitwirkt.
+Cloudeinführungsteams sind das moderne Äquivalent zu technischen Implementierungs- oder Projektteams. Die Natur der Cloud kann dynamischere Teamstrukturen erfordern.
+
+Einige Cloudeinführungsteams konzentrieren sich ausschließlich auf die Cloudmigration, andere Teams beschäftigen sich schwerpunktmäßig mit Innovationen, die Cloudtechnologien nutzen. Einige Teams verfügen über das umfassende technische Fachwissen, das erforderlich ist, um große Implementierungsbemühungen wie eine vollständige Rechenzentrumsmigration abzuschließen, andere Teams haben einen engeren technischen Schwerpunkt.
+
+Ein kleineres Team kann zwischen Projekten wechseln, um bestimmte Ziele zu erreichen. Beispielsweise könnte sich ein Team von Datenplattformspezialisten darauf konzentrieren, bei der Konvertierung von virtuellen Computern (VMs) von SQL-Datenbank in SQL-PaaS-Instanzen zu helfen.
 
 ![Erste Schritte beim Aufbau eines Cloudeinführungsteams](../../_images/get-started/adoption-team-map.png)
 
@@ -24,20 +28,20 @@ Cloudeinführungsteams sind das moderne Äquivalent zu technischen Implementieru
 
 Von Cloudeinführungsteams wird in der Regel mindestens eine der folgenden Arten von Einführungen durchgeführt:
 
-    - Migration vorhandener Workloads
-    - Modernisierung vorhandener Workloads und Ressourcen
-    - Architekturänderungen für vorhandene Workloads und Ressourcen
-    - Entwicklung neuer Workloads
+- Migration vorhandener Workloads
+- Modernisierung vorhandener Workloads und Ressourcen
+- Architekturänderungen für vorhandene Workloads und Ressourcen
+- Entwicklung neuer Workloads
 
-Für die Einführung eines beliebigen IT-Portfolios wird üblicherweise eine Kombination dieser Fähigkeiten benötigt. Unglücklicherweise erfordern diese unterschiedlichen Bestrebungen jeweils unterschiedliche Fähigkeiten und Ansätze. Je höher die Spezialisierung eines Einführungsteams im Zusammenhang mit diesen Bestrebungen, desto effektiver und effizienter kann das Team die jeweilige Aufgabe bewältigen. Andererseits kann sich die Beherrschung aller Implementierungsoptionen des gesamten Cloudeinführungsspektrums als kaum lösbare Aufgabe erweisen.
+Für die Einführung eines beliebigen IT-Portfolios wird üblicherweise eine Kombination dieser Maßnahmen benötigt. Leider sind für jeden Typ andere Fertigkeiten und Denkrichtungen erforderlich. Je höher die Spezialisierung eines Einführungsteams ist, desto effektiver und effizienter kann das Team die jeweilige Aufgabe bewältigen. Andererseits kann sich die Beherrschung aller Implementierungsoptionen des gesamten Cloudeinführungsspektrums als kaum lösbare Aufgabe für diese spezialisierteren Teams erweisen.
 
 Orientieren Sie sich daher beim Aufbau eines Cloudeinführungsteams zunächst an einer der Einführungsmethoden, um die Entwicklung der Fähigkeiten des gesamten Teams zu beschleunigen.
 
 **Ziele:**
 
 - Ermitteln Sie, welche Methodik am besten zum Team passt: die Migrationsmethodik oder die Innovationsmethodik.
-- Jede Methodik verfügt über ein vierstufiges Onboardingverfahren zur Vermittlung grundlegender Kenntnisse für die Tools und Prozesse, die erforderlich sind, um diese Bestrebung optimal umzusetzen. Nehmen Sie sich als Team etwas Zeit, um anhand der ersten Schritte zu ermitteln, welche Tools und Szenarien Sie voraussichtlich in den ersten Iterationen benötigen.
-- Aktualisieren Sie die [RACI-Vorlage](../../organize/raci-alignment.md) Ihres Unternehmens, damit andere besser nachvollziehen können, wer dem Team angehört und auf welche Methodik sich das Team konzentriert.
+- Jede Methodik verfügt über ein vierstufiges Onboardingverfahren, das dem Team hilft, die Tools und Prozesse zu verstehen, die erforderlich sind, um diese Bestrebung optimal umzusetzen. Nehmen Sie sich als Team etwas Zeit, um anhand der ersten Schritte zu ermitteln, welche Tools und Szenarien Sie voraussichtlich in den ersten Iterationen benötigen.
+- Aktualisieren Sie die [RACI-Vorlage](../../organize/raci-alignment.md) (Responsible, Accountable, Consulted und Informed) Ihres Unternehmens, damit andere besser nachvollziehen können, wer dem Team angehört und auf welche Methodik sich das Team konzentriert.
 
 **Hinweis zur Erreichung der Ziele:**
 
@@ -45,7 +49,7 @@ Orientieren Sie sich daher beim Aufbau eines Cloudeinführungsteams zunächst an
 - In der [Übersicht über die Innovationsmethodik](../../innovate/index.md) werden der Prozess, die Tools und die Ansätze zum Hinzufügen cloudnativer Workloads zum Portfolio beschrieben.
 - Machen Sie sich mit den [Beweggründen](../../strategy/motivations.md) für diese Bestrebung vertraut, um zu ermitteln, ob sie eher zu Migrationsbestrebungen oder eher zu Innovationsbestrebungen passen.
 
-## <a name="step-2-align-your-team-to-other-supporting-teams"></a>Schritt 2: Ausrichten Ihres Teams an anderen unterstützenden Teams
+## <a name="step-2-align-your-team-with-other-supporting-teams"></a>Schritt 2: Ausrichten Ihres Teams mit anderen unterstützenden Teams
 
 Wenn die Cloudeinführungsbestrebung Ihres Unternehmens weit genug vorangeschritten ist, um über unterstützende Teams zu verfügen, finden Sie in der [RACI-Vorlage](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) Ihres Unternehmens ggf. eine Liste der Teams und Experten für Bereiche wie Cloudgovernance, Cloudbetrieb und Cloudkompetenzzentrum sowie andere ähnliche Teams.
 
@@ -56,12 +60,11 @@ Wenn die Cloudeinführungsbestrebung Ihres Unternehmens weit genug vorangeschrit
 
 **Hinweis zur Erreichung der Ziele:**
 
-- Unter [Auswerten der Unternehmensrichtlinie](../../govern/corporate-policy.md) werden die Schritte zum Definieren der Unternehmensrichtlinie beschrieben, durch die möglicherweise Entscheidungen eingeschränkt werden, die gefahrlos in der Cloudumgebung des Unternehmens getroffen werden können.
+- Unter [Auswerten der Unternehmensrichtlinie](../../govern/corporate-policy.md) werden die Schritte zum Definieren der Unternehmensrichtlinie beschrieben, durch die möglicherweise Entscheidungen eingeschränkt werden, die das Team gefahrlos in der Cloudumgebung des Unternehmens treffen kann.
 - In den [Governancedisziplinen](../../govern/corporate-policy.md) werden die Arten von Kontrollen oder disziplinierten Prozessen beschrieben, die das Governanceteam wahrscheinlich implementiert hat, um eine sichere und konforme Cloudeinführung zu ermöglichen.
 - In der [Verwaltungsmethodik](../../manage/index.md) werden die Überlegungen erläutert, die in eine Cloudbetriebsbaseline einfließen, um eine grundlegende Betriebsverwaltung bereitzustellen.
 
 <!-- markdownlint-disable MD033 -->
-<br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
@@ -69,19 +72,19 @@ Wenn die Cloudeinführungsbestrebung Ihres Unternehmens weit genug vorangeschrit
 
 ## <a name="step-3-begin-your-adoption-journey"></a>Schritt 3: Starten des Einführungsprozesses
 
-Abhängig von der Art des Einführungsteams, dem Sie angehören, beginnen Sie mit einem von zwei Prozessen:
+Abhängig von der Art des Einführungsteams, dem Sie angehören, beginnen Sie mit einem dieser Prozesse:
 
 - Erste Schritte: Migrieren von Workloads zur Cloud
 - Erste Schritte: Erstellen neuer Produkte oder Dienste
 
-In diesen Leitfäden sind jeweils Informationen für verschiedene Teams mit variierendem Zuständigkeits- und Verantwortlichkeitsgrad angegeben. Orientieren Sie sich an diesen Angaben, um die Rolle Ihres Teams in Relation zum restlichen Prozess zu verstehen. Darüber hinaus geben diese Referenzen Aufschluss über den Grad der Unterstützung, die Sie innerhalb des Unternehmens erhalten.
+Diese Leitfäden zu den ersten Schritten bieten Anleitungen für verschiedene Teams, die zusammen mit den unterschiedlichen Verantwortlichkeiten und Zuständigkeiten aufgeführt werden. Orientieren Sie sich an diesen Leitfäden, um die Rolle Ihres Teams in Relation zum restlichen Prozess zu verstehen. Sie geben auch Aufschluss über den Grad der Unterstützung, die Sie innerhalb des Unternehmens erwarten können.
 
-Letztendlich ist das Cloudeinführungsteam für die Umsetzung zugewiesener Migrationsbestrebungen bzw. die Entwicklung neuer Produkte verantwortlich. Unterstützende Teams müssen zwar die Durchführung von Schritten sicherstellen, es liegt jedoch in der Verantwortung des jeweiligen Cloudeinführungsteams, dafür zu sorgen, dass sie die Unterstützung erhalten, die sie benötigen, um erfolgreich zu sein. Das Einführungsteam sollte bei der Durchführung dieser Schritte möglichst mit anderen Teams zusammenarbeiten, falls das verantwortliche Team nicht vorhanden ist oder mehr Unterstützung bei der Bewältigung der Schritte benötigt, für die es zuständig ist.
+Letztendlich ist das Cloudeinführungsteam für die Umsetzung zugewiesener Migrationsbestrebungen bzw. die Entwicklung neuer Produkte verantwortlich. Unterstützende Teams müssen zwar die Durchführung der einzelnen Schritte sicherstellen, es liegt jedoch in der Verantwortung des jeweiligen Cloudeinführungsteams, dafür zu sorgen, dass das unterstützende Team die Unterstützung erhält, die es benötigt, um erfolgreich zu sein. Wenn das verantwortliche Team noch nicht vorhanden ist oder mehr Unterstützung benötigt, um seine verantwortlichen Schritte zu erfüllen, wird das Einführungsteam ermutigt, sich mit anderen Teams zusammenzuschließen, um seine Ziele zu erreichen.
 
 **Ziele:**
 
 - Optimieren Sie die Umsetzung der zugehörigen Methodik für Ihren Einführungsansatz.
-- Unterstützen Sie andere Teams bei der Durchführung ihrer Schritte, wenn diese Schritte Ihrer Einführung im Wege stehen.
+- Unterstützen Sie andere Teams bei der Durchführung ihrer verantwortlichen Schritte selbst dann, wenn diese Schritte Ihren Einführungsmaßnahmen im Wege stehen.
 
 **Hinweis zur Erreichung der Ziele:**
 
@@ -95,11 +98,11 @@ Alle anderen Schritte in diesen Prüflisten dienen dazu, die Verwaltbarkeit der 
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Letztendlich ist das Cloudeinführungsteam für den Erfolg verantwortlich. | <li> Cloudgovernanceteam <li> Cloudbetriebsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung <li> Cloudstrategieteam |
+| <li> Cloudeinführungsteam | <li> Cloudgovernanceteam <li> Cloudbetriebsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung <li> Cloudstrategieteam |
 
 ## <a name="step-4-expand-your-skills-with-scenarios-and-best-practices"></a>Schritt 4: Erweitern Ihrer Kenntnisse mit Szenarien und bewährten Methoden
 
-Nach ein, zwei Einführungsiterationen ist das Team mit den Grundlagen der primären Einführungsmethodik vertraut. Nun ist das Team wahrscheinlich bereit für weitere Szenarien und für die Implementierung einiger zusätzlicher bewährter Methoden. Die folgenden Links führen jeweils zu einer Seite für einen Abschnitt des Inhaltsverzeichnisses. Anhand der dort bereitgestellten Listen kann sich das Team mit beiden Arten von Informationen vertraut machen und seine Kenntnisse erweitern.
+Nach ein oder zwei Iterationen ist das Cloudeinführungsteam mit den Grundlagen der primären Methodik vertraut. Nun ist das Team wahrscheinlich bereit für weitere Szenarien und für die Implementierung einiger zusätzlicher bewährter Methoden.
 
 **Ziele:**
 
@@ -107,16 +110,20 @@ Nach ein, zwei Einführungsiterationen ist das Team mit den Grundlagen der prim�
 
 **Hinweis zur Erreichung der Ziele:**
 
+Das Team kann seine Fähigkeiten überprüfen und erweitern, indem es die folgenden Anleitungen durcharbeitet:
+
 - Migrieren Sie neue Arten von Workloads, oder bewältigen Sie komplexere Migrationsherausforderungen durch [Szenarien](../../migrate/azure-best-practices/contoso-migration-overview.md) und [bewährte Methoden](../../migrate/azure-best-practices/index.md).
-- Entwickeln Sie innovative cloudnative Lösungen, oder bewältigen Sie komplexere Innovationsherausforderungen durch [Szenarien](../../innovate/kubernetes/index.md) und [bewährte Methoden](../../innovate/best-practices/index.md).
+- Entwickeln Sie Innovationen mithilfe cloudnativer Lösungen, oder bewältigen Sie komplexere Innovationsherausforderungen durch [Szenarien](../../innovate/kubernetes/index.md) und [bewährte Methoden](../../innovate/best-practices/index.md).
 
 **Verantwortliches Team:**
 
-Das Cloudeinführungsteam ist für die Erweiterung der Kenntnisse verantwortlich.
+- Das Cloudeinführungsteam ist für die Erweiterung seiner Kenntnisse verantwortlich.
 
 ## <a name="step-5-build-a-cloud-adoption-factory"></a>Schritt 5: Aufbauen einer Cloudeinführungsfactory
 
-Da das Team nach und nach immer besser in die verschiedenen Einführungsszenarien eingearbeitet ist, können Sie in kürzerer Zeit mehr erreichen. Dieser Abschnitt hebt Ihre Einführungsmöglichkeiten auf die nächste Stufe. Der Ansatz der Cloudeinführungsfactory betrachtet die Prozesse hinter den Einführungsbestrebungen. Den Großteil des Zeitaufwands für die Migration und die Entwicklung von Innovationen machen die vielen Besprechungen aus, die auf mangelndes Verständnis oder mangelnde Transparenz zurückzuführen sind. Eindeutig definierte Prozesse und Interaktionen für diverse Phasen der Cloudeinführung tragen dazu bei, kulturelle und politische Hindernisse zu beseitigen.
+Da das Team nach und nach immer besser in die verschiedenen Einführungsszenarien eingearbeitet ist, können Sie in kürzerer Zeit mehr erreichen. Dieser Abschnitt des Leitfadens hebt die Einführungsmöglichkeiten des Teams auf die nächste Stufe.
+
+Der Ansatz der Cloudeinführungsfactory betrachtet die Prozesse hinter den Einführungsbestrebungen. Den Großteil des Zeitaufwands für die Migration und die Entwicklung von Innovationen machen die vielen Besprechungen aus, die auf mangelndes Verständnis oder mangelnde klare Kommunikation zurückzuführen sind. Eindeutig definierte Prozesse und Interaktionen für diverse Phasen der Cloudeinführung tragen dazu bei, kulturelle und politische Hindernisse zu beseitigen.
 
 **Ziele:**
 
@@ -129,12 +136,12 @@ Da das Team nach und nach immer besser in die verschiedenen Einführungsszenarie
 
 **Verantwortliches Team:**
 
-Das Cloudeinführungsteam ist für den Aufbau der Prozesse verantwortlich, die die Einführung noch weiter voranbringen.
+- Das Cloudeinführungsteam ist für den Aufbau der Prozesse verantwortlich, die die Einführung noch weiter voranbringen.
 
 ## <a name="whats-next"></a>Nächste Schritte
 
-Die Einführung ist großartig, aber eine unkontrollierte Einführung kann zu unerwarteten Ergebnissen führen. Koordinieren Sie die Cloudeinführung mit [Cloudgovernancefunktionen](../../organize/cloud-governance.md), um die Einführung und die Anwendung bewährter Methoden zu beschleunigen und gleichzeitig unternehmerische sowie technische Risiken zu verringern.
+Die Cloudeinführung ist ein erstrebenswertes Ziel, aber eine unkontrollierte Einführung kann zu unerwarteten Ergebnissen führen. Um die Einführung und die Anwendung bewährter Methoden zu beschleunigen und gleichzeitig unternehmerische sowie technische Risiken zu verringern, koordinieren Sie die Cloudeinführung mit [Cloudgovernancefunktionen](../../organize/cloud-governance.md).
 
-Diese beiden Teams sorgen zwar für ein ausgewogenes Verhältnis von Cloudeinführungsbestrebungen, dies wird jedoch als MVP betrachtet, da das Ergebnis möglicherweise nicht nachhaltig ist. Jedes Team hat viele Aufgaben, wie in den [RACI-Diagrammen (_Responsible, Accountable, Consulted, Informed_)](../../organize/raci-alignment.md) erläutert wird.
+Die Ausrichtung mit dem Cloudgovernanceteam sorgt für ein Gleichgewicht in Bezug auf die Cloudbereitstellungsmaßnahmen, aber dies gilt als MVP (Minimal Viable Product), da es möglicherweise nicht nachhaltig ist. Jedes Team hat mehrere Aufgaben, wie in den [RACI-Diagrammen](../../organize/raci-alignment.md) unten gezeigt wird.
 
-Weitere Informationen finden Sie unter [Antimuster in Unternehmen: Silos und Machtbereiche](../../organize/fiefdoms-silos.md).
+Weitere Informationen zum Überwinden von [Antimustern in Organisationen: Silos und Machtbereiche](../../organize/fiefdoms-silos.md).

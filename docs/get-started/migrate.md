@@ -3,16 +3,16 @@ title: 'Erste Schritte: Beschleunigen der Migration'
 description: Empfohlene Schritte für die Ausrichtung von Beteiligten, die Migrationsplanung, das Bereitstellen einer Zielzone und das Migrieren Ihrer ersten 10 Workloads.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 3c61f18aaa2814d9ac92e176524ef9fb448f67a4
-ms.sourcegitcommit: 605752e331f6d8d8ab98d79f400f74f96d7c6a48
+ms.openlocfilehash: b943259df90851704c8a4035da10d313589eb5b2
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83424118"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83752849"
 ---
 # <a name="get-started-accelerate-migration"></a>Erste Schritte: Beschleunigen der Migration
 
@@ -33,7 +33,7 @@ Wenn Ihr Migrationsszenario atypisch ist, können Sie eine personalisierte Bewer
 
 ## <a name="get-started"></a>Erste Schritte
 
-Der für die Migration von Workloads erforderliche technische Aufwand und Vorgang ist relativ unkompliziert. Es ist wichtig, den Migrationsprozess effizient abzuschließen. Die strategische Bereitschaft zur Migration besitzt jedoch einen noch größeren Einfluss auf den Zeitplan und den erfolgreichen Abschluss der gesamten Migration.
+Der für die Migration von Workloads erforderliche technische Aufwand und Vorgang ist relativ unkompliziert. Es ist wichtig, den Migrationsprozess effizient abzuschließen. Die strategische Bereitschaft zur Migration besitzt einen noch größeren Einfluss auf den Zeitplan und den erfolgreichen Abschluss der gesamten Migration.
 
 Um die Einführung zu beschleunigen, müssen Sie Maßnahmen ergreifen, um das Cloudeinführungsteam während der Migration zu unterstützen. Dieser Leitfaden umreißt diese iterativen Aufgaben, um Kunden auf dem richtigen Weg zu einer Cloudmigration zu unterstützen. Um die Wichtigkeit der unterstützenden Schritte zu zeigen, wird die Migration in diesem Artikel als Schritt 10 aufgeführt. In Wirklichkeit wird das Cloudeinführungsteam wahrscheinlich parallel zu den Schritten 4 oder 5 mit seiner ersten Pilotmigration beginnen.
 
@@ -71,7 +71,7 @@ Partner, Microsoft-Dienste oder verschiedene Microsoft-Programme sind verfügbar
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudstrategieteam | <li> Cloudeinführungsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
+| <li> Cloudstrategieteam | <li> Cloudeinführungsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT |
 
 ## <a name="step-3-gather-data-and-analyze-assets-and-workloads"></a>Schritt 3: Erfassen von Daten und Analysieren von Ressourcen und Workloads
 
@@ -96,7 +96,7 @@ Ermittlung und Bewertung bieten eine tiefere Ebene der technischen Ausrichtung u
 
 ## <a name="step-4-make-a-business-case"></a>Schritt 4: Erstellen eines Geschäftsszenarios
 
-Das Erstellen des Geschäftsszenarios für die Migration ist wahrscheinlich eine iterative Konversation zwischen Beteiligten. Bewerten Sie in diesem ersten Durchgang bei der Erstellung des Geschäftsszenarios die anfängliche Wertschöpfung aus einer potenziellen Cloudmigration. Ziel dieses Schritts ist es, sicherzustellen, dass alle Beteiligten sich auf eine einfache Frage konzentrieren: Ist die allgemeine Cloudeinführung basierend auf den verfügbaren Daten eine kluge Geschäftsentscheidung?
+Das Erstellen des Geschäftsszenarios für die Migration ist wahrscheinlich eine iterative Konversation zwischen Beteiligten. Bewerten Sie in diesem ersten Durchgang bei der Erstellung des Geschäftsszenarios die anfängliche Wertschöpfung aus einer potenziellen Cloudmigration. Ziel dieses Schritts ist es, sicherzustellen, dass sich alle Beteiligten eine einfache Frage stellen: Ist die allgemeine Einführung der Cloud angesichts der verfügbaren Daten eine kluge Geschäftsentscheidung?
 
 - Der [Aufbau eines Geschäftsfalls für die Cloudmigration](../strategy/cloud-migration-business-case.md) ist ein guter Ausgangspunkt für die Entwicklung eines Geschäftsfalls für die Migration. Die Klarheit von Formeln und Tools kann die geschäftliche Begründung unterstützen.
 
@@ -181,7 +181,7 @@ Der für die Migration der ersten 10 Workloads erforderliche technische Aufwand
 
 ![Phasen der iterativen Migrationsbemühungen: Bewertung, Bereitstellung, Freigabe](../_images/migrate/methodology-effort-only.png)
 
-Cloudmigrationstools ermöglichen es, alle VMs in einem Rechenzentrum in einem Durchgang oder einer Iteration zu migrieren. Es ist eher üblich, bei jeder Iterationen eine geringere Anzahl von Workloads zu migrieren. Eine Aufteilung der Migration in kleinere Wellen oder Releases erfordert mehr Planung. Aber eine geringere Anzahl reduziert technische Risiken und die Auswirkungen des organisatorischen Change Management.
+Cloudmigrationstools ermöglichen es, alle VMs in einem Rechenzentrum in einem Durchgang oder einer Iteration zu migrieren. Es ist eher üblich, bei jeder Iterationen eine geringere Anzahl von Workloads zu migrieren. Das Aufteilen der Migration in kleinere Einheiten oder Releases erfordert mehr Planung, kleinere Workloadmengen verringern jedoch die technischen Risiken und die Auswirkungen des Change Management der Organisation.
 
 Mit jeder Iteration wird das Cloudeinführungsteam beim Migrieren von Workloads besser. Mit diesen Schritten startet das technische Team in diese Reifekurve:
 
@@ -199,7 +199,7 @@ Fortlaufende Verbesserung der Fähigkeit des Einführungsteams, Workloads zu mig
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudeinführungsteam | <li> Cloudstrategieteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
+| <li> Cloudeinführungsteam | <li> Cloudstrategieteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT |
 
 ## <a name="step-9-hand-off-production-workloads-to-cloud-governance"></a>Schritt 9: Übergeben von Produktionsworkloads an Cloudgovernance
 
@@ -212,15 +212,14 @@ Governance ist ein wichtiger Faktor für den langfristigen Erfolg einer beliebig
 
 - Bereitstellen einer ersten Grundlage für Governance.
 - Abschließen eines Governancebenchmarks, um zukünftige Verbesserungen zu planen.
-- Zeitachsenrisiko:
-    - Verbesserung der Richtlinien- und Governanceimplementierung kann eine Woche bis vier weitere Wochen pro Fachrichtung hinzufügen.
+- Zeitplanrisiko: Die Verbesserung der Richtlinien- und Governanceimplementierung kann eine Woche bis vier weitere Wochen pro Fachrichtung hinzufügen.
 
 <!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudgovernanceteam | <li> Cloudstrategieteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
+| <li> Cloudgovernanceteam | <li> Cloudstrategieteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT |
 
 ## <a name="step-10-hand-off-production-workloads-to-cloud-operations"></a>Schritt 10: Übergeben von Produktionsworkloads an den Cloudbetrieb
 
@@ -235,17 +234,17 @@ Vorgangsverwaltung ist eine weitere Voraussetzung für eine erfolgreiche Migrati
 
 - Bereitstellen einer Verwaltungsbaseline.
 - Vervollständigen der Arbeitsmappe zum Operations Management.
-- Identifizieren von Workloads, die eine Azure Architecture Review-Bewertung erfordern.
+- Identifizieren von Workloads, die eine Microsoft Azure Well-Architected Review-Bewertung erfordern.
 - Zeitachsenrisiken:
-  - Überprüfen der Arbeitsmappe: Geschätzt eine Stunde pro Anwendungsbesitzer.
-  - Abschließen der Azure Architecture Review-Bewertung: Geschätzt eine Stunde pro Anwendung.
+  - Überprüfen der Arbeitsmappe: Planen Sie eine Stunde pro Anwendungsbesitzer ein.
+  - Schließen Sie die Microsoft Azure Well-Architected Review-Bewertung ab: Planen Sie eine Stunde pro Anwendung ein.
 
 <!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudbetriebsteam | <li> Cloudstrategieteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
+| <li> Cloudbetriebsteam | <li> Cloudstrategieteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT |
 
 ## <a name="value-statement"></a>Wertaussage
 

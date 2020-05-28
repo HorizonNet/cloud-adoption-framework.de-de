@@ -3,16 +3,16 @@ title: Neues
 description: Enthält Informationen zu kürzlich durchgeführten Updates für das Framework für die Einführung der Microsoft Cloud (Microsoft Cloud Adoption Framework) für Azure.
 author: JanetCThomas
 ms.author: janet
-ms.date: 03/27/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: f4dcf7409e9aa8eceb548f0bd54d0decdab7357e
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 3f57409adfa399e267cf14f1f24a3b380ed1bf85
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83620878"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862380"
 ---
 <!-- markdownlint-disable MD024 -->
 
@@ -24,10 +24,11 @@ Dieses Framework wurde in Zusammenarbeit mit Kunden, Partnern und internen Micro
 
 ## <a name="may-15-2020"></a>15. Mai 2020
 
-Basierend auf Feedback haben wir neue Inhalte erstellt, um Ihnen den Einstieg in die Verwendung des Cloud Adoption Frameworks zu erleichtern. Die neuen Leitfäden zu den ersten Schritten helfen Ihnen, im Framework basierend auf den gewünschten Zielvorgaben zu navigieren.
+Basierend auf Feedback haben wir neue Inhalte erstellt, um Ihnen den Einstieg in die Verwendung des Cloud Adoption Frameworks zu erleichtern. Die neuen Leitfäden zu den ersten Schritten helfen Ihnen, im Framework basierend auf den gewünschten Zielvorgaben zu navigieren. Wir haben auch eine neue Angebotsseite erstellt, um Ihnen das Auffinden von Anleitungen, Tools, Lernmodulen und Programmen zu erleichtern, die eine erfolgreiche Cloudeinführungsjourney unterstützen.
 
 | Artikel | BESCHREIBUNG |
 |---|---|
+| [Cloud Adoption Framework für Azure](../index.yml) | Die Angebotsseite für das Cloud Adoption Framework wurde umgestaltet, um Ihnen das Auffinden von Anleitungen, Tools, Lernmodulen und Programmen zu erleichtern, die eine erfolgreiche Cloudeinführungsjourney unterstützen. |
 | [Erste Schritte mit dem Cloud Adoption Framework](./index.md) | Beginnen Sie hier, um einen Leitfaden mit ersten Schritten auszuwählen, der für Ihre Zielvorgaben in Bezug auf die Cloudeinführung geeignet ist. Diese gängigen Szenarien bieten eine Roadmap für das Microsoft Cloud Adoption Framework für Azure.|
 | [Verstehen und Dokumentieren grundlegender Ausrichtungsentscheidungen](./cloud-concepts.md) | Informieren Sie sich über die anfänglichen Entscheidungen, die von jedem Teammitglied verstanden werden sollten, das an der Cloudeinführung beteiligt ist. |
 | [Grundlegendes zur Portfoliohierarchie und deren Ausrichtung](../reference/fundamental-concepts/hosting-hierarchy.md) | Erfahren Sie, wie eine Portfoliohierarchie zeigt, wie Ihre Workloads und die unterstützenden Dienste zusammenpassen. |

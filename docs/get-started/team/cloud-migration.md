@@ -6,17 +6,17 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
-ms.date: 04/04/2020
-ms.openlocfilehash: 1e67eba9c26787268fe8ce75e4540d03dca48e9d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: d6d1d60ce89aa6ab809bb413a0d56ecea5ceb352
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230358"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83751831"
 ---
 # <a name="get-started-build-a-cloud-migration-team"></a>Erste Schritte: Aufbauen eines Cloudmigrationsteams
 
-Cloudmigrationsteams sind das moderne Äquivalent zu technischen Implementierungs- oder Projektteams. Die Charakteristik der Cloud kann jedoch eine dynamischere Teamstruktur erfordern. Einige Migrationsteams konzentrieren sich ausschließlich auf die Cloudmigration, während andere Teams sich schwerpunktmäßig mit Innovationen beschäftigen, die Cloudtechnologien nutzen. Einige Teams verfügen über das breite technische Fachwissen, das erforderlich ist, um große Einführungsbemühungen wie eine vollständige Rechenzentrumsmigration abzuschließen, während andere einen engeren technischen Fokus haben und zwischen Projekten wechseln können, um bestimmte Ziele zu erreichen, z. B. ein Team von Datenplattformspezialisten, das bei der Konvertierung von SQL-VMs in SQL-PaaS-Instanzen mitwirkt.
+Cloudmigrationsteams sind das moderne Äquivalent zu technischen Implementierungs- oder Projektteams. Die Charakteristik der Cloud kann eine dynamischere Teamstruktur erfordern. Einige Migrationsteams konzentrieren sich ausschließlich auf die Cloudmigration, während andere Teams sich schwerpunktmäßig mit Innovationen beschäftigen, die Cloudtechnologien nutzen. Einige Teams verfügen über das breite technische Fachwissen, das erforderlich ist, um große Einführungsbemühungen wie eine vollständige Rechenzentrumsmigration abzuschließen, während andere einen engeren technischen Fokus haben und zwischen Projekten wechseln können, um bestimmte Ziele zu erreichen, z. B. ein Team von Datenplattformspezialisten, das bei der Konvertierung von SQL-VMs in SQL-PaaS-Instanzen mitwirkt.
 
 Unabhängig von der Art oder Anzahl der Cloudmigrationsteams bieten diese Teams in der Regel fachliche Expertise für IT, Geschäftsanalysen oder Implementierungspartner.
 
@@ -55,7 +55,7 @@ Es wird empfohlen, dass Teams, die Cloudeinführungsfunktionen bereitstellen, si
 
 Dabei ist es am besten, wenn sich diese Teams täglich selbstständig treffen. Das Ziel täglicher Besprechungen ist es, das Backlog schnell zu aktualisieren, die Ergebnisse und heute zu erledigende Aufgaben sowie blockierte Bereiche zu kommunizieren, die zusätzliche externe Unterstützung erfordern.
 
-Releasezeitpläne und Iterationszeitspannen sind für jedes Unternehmen spezifisch. Allerdings ist ein Zeitraum von einer bis vier Wochen pro Iteration die durchschnittliche Dauer. Unabhängig vom Iterations- oder Releaserhythmus wird empfohlen, dass das Team am Ende jedes Releases alle unterstützenden Teams trifft, um das Releaseergebnis zu kommunizieren und die kommenden Bemühungen neu zu priorisieren. Es ist auch wichtig, sich am Ende eines jeden Sprints als Team mit dem [Cloudkompetenzzentrums](./cloud-center-of-excellence.md)- oder [Cloudgovernanceteam](./cloud-governance.md) zu treffen, um sich auf gemeinsame Bemühungen und jeglichen Unterstützungsbedarf einzustellen.
+Releasezeitpläne und Iterationszeitspannen sind für jedes Unternehmen spezifisch. Ein Zeitraum von einer Woche bis zu vier Wochen pro Iteration ist die durchschnittliche Dauer. Unabhängig vom Iterations- oder Releaserhythmus wird empfohlen, dass das Team am Ende jedes Releases alle unterstützenden Teams trifft, um das Releaseergebnis zu kommunizieren und die kommenden Bemühungen neu zu priorisieren. Es ist auch wichtig, sich am Ende eines jeden Sprints als Team mit dem [Cloudkompetenzzentrums](./cloud-center-of-excellence.md)- oder [Cloudgovernanceteam](./cloud-governance.md) zu treffen, um sich auf gemeinsame Bemühungen und jeglichen Unterstützungsbedarf einzustellen.
 
 Einige der technischen Aufgaben, die mit der Einführung der Cloud verbunden sind, können sich wiederholen. Teammitglieder sollten alle drei bis sechs Monate rotieren, um Probleme mit der Mitarbeiterzufriedenheit zu vermeiden und relevante Qualifikationen zu erhalten. Ein wechselnder Platz im [Cloudkompetenzzentrums](./cloud-center-of-excellence.md)- oder [Cloudgovernanceteam](./cloud-governance.md) kann eine ausgezeichnete Gelegenheit bieten, die Mitarbeiter zu motivieren und Innovationen zu nutzen.
 

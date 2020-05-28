@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
-ms.date: 04/04/2020
-ms.openlocfilehash: 59e01530d66fe55e76123a6de229944b4259175c
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: ebccc9b47cc12b0b54b9a7aec1c88d2a7e733816
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230394"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814307"
 ---
 <!-- cSpell:ignore deprioritize -->
 
@@ -95,11 +95,11 @@ In intakten cloudaffinen Unternehmen erfolgt dieser Verhandlungsprozess als dyna
 
 An der Arbeit des Cloudkompetenzzentrums sind stark ausgelastete Teams beteiligt. Es ist wichtig, die natürliche Zusammenarbeit zu fördern und den Fortschritt anhand eines gemeinsamen Repositorys bzw. Lösungskatalogs nachzuverfolgen. Erhöhen Sie die Anzahl natürlicher Interaktionen, aber halten Sie die Zahl der Besprechungen möglichst gering. Nachdem mehr Erfahrung mit dem CCoE-Ansatz gesammelt wurde, sollten die Teams versuchen, dedizierte Besprechungen nach Möglichkeit zu reduzieren. Die Teilnahme an wiederkehrenden Besprechungen, z. B. Releasebesprechungen unter Vorsitz des Teams für die Cloudeinführung, ermöglicht die Beisteuerung von Daten. Eine Besprechung nach jeder erneuten Bereitstellung des Releaseplans ist für dieses Team dagegen nur von geringer Bedeutung.
 
-**Unterstützung und Einbindung der Projektbeteiligten aus dem betriebswirtschaftlichen Bereich:** CCoE-Teams können in einigen Bereichen schnelle Erfolge erzielen. Die übergeordneten Ziele, z.B. geschäftliche Flexibilität und eine Verkürzung der Zeit bis zur Markteinführung, können aber deutlich mehr Zeit benötigen. Während des Entwicklungsprozesses besteht ein hohes Risiko, dass es im Cloudkompetenzzentrum zu einer Entmutigung kommt oder dass das Personal für die Arbeit an anderen IT-Projekten herangezogen wird.
+**Unterstützung und Einbindung der Projektbeteiligten aus dem betriebswirtschaftlichen Bereich:** CCoE-Teams können in einigen Bereichen schnelle Erfolge erzielen. Die übergeordneten Ziele, z. B. geschäftliche Flexibilität und eine Verkürzung der Zeit bis zur Markteinführung, können deutlich mehr Zeit benötigen. Während des Entwicklungsprozesses besteht ein hohes Risiko, dass es im Cloudkompetenzzentrum zu einer Entmutigung kommt oder dass das Personal für die Arbeit an anderen IT-Projekten herangezogen wird.
 
 Für die ersten sechs bis neun Monate der Arbeit des Cloudkompetenzzentrums empfehlen wir Ihnen, dass sich Projektbeteiligte aus dem betriebswirtschaftlichen Bereich Zeit für monatliche Besprechungen mit der IT-Führungsebene und den Verantwortlichen des Cloudkompetenzzentrums freihalten. Für diese Besprechungen müssen keine besonderen Formalitäten eingehalten werden. Es ist in Bezug auf den Erfolg des Cloudkompetenzzentrums schon viel wert, wenn die Mitglieder des Cloudkompetenzzentrums und deren Führungskräfte an die Bedeutung dieses Programms erinnert werden.
 
-Außerdem wird empfohlen, dass die Projektbeteiligten aus dem betriebswirtschaftlichen Bereich über den Fortschritt und die Schwierigkeiten des CCoE-Teams auf dem Laufenden gehalten werden. Bei einem Großteil der Arbeit scheint es sich nur um technische Einzelheiten zu handeln. Es ist aber wichtig, dass die Projektbeteiligten aus dem betriebswirtschaftlichen Bereich über den Fortschritt des Plans informiert sind, damit sie eingreifen können, wenn das Team schwächelt oder durch andere Prioritäten abgelenkt wird.
+Außerdem wird empfohlen, dass die Projektbeteiligten aus dem betriebswirtschaftlichen Bereich über den Fortschritt und die Schwierigkeiten des CCoE-Teams auf dem Laufenden gehalten werden. Bei einem Großteil der Arbeit scheint es sich nur um technische Einzelheiten zu handeln. Es ist wichtig, dass die Projektbeteiligten aus dem betriebswirtschaftlichen Bereich über den Fortschritt des Plans informiert sind, damit sie eingreifen können, wenn das Team schwächelt oder durch andere Prioritäten abgelenkt wird.
 
 **Unterstützung der Vision durch Projektbeteiligte aus dem IT-Bereich:** Für ein erfolgreiches CCoE-Projekt sind viele Verhandlungen mit Mitgliedern des bestehenden IT-Teams erforderlich. Wenn diese sorgfältig und gut durchgeführt werden, besteht das Ergebnis darin, dass die gesamte IT-Abteilung zur Lösung beiträgt und kein Problem mit der Veränderung hat. Wenn dies nicht der Fall ist, möchten einige Mitglieder des bestehenden IT-Teams bestimmte Kontrollmechanismen aus unterschiedlichen Gründen ggf. in der Hand behalten. Wenn dies der Fall ist, ist die Unterstützung von Projektbeteiligten aus dem IT-Bereich für den Erfolg des Cloudkompetenzzentrums von entscheidender Bedeutung. Eine allgemeine Ermutigung und die Stärkung der übergeordneten Ziele des Cloudkompetenzzentrums ist wichtig, um zu verhindern, dass die Verhandlungen durch Blockierer gestört werden. In seltenen Fällen müssen Projektbeteiligte aus dem IT-Bereich unter Umständen sogar eingreifen und einen Konflikt lösen oder eine Pattsituation beseitigen, damit die Arbeit des Cloudkompetenzzentrums fortgesetzt werden kann.
 
@@ -119,7 +119,7 @@ Bei einem CCoE-Modell müssen die folgenden Funktionsbereiche zusammenarbeiten:
 
 Dieses Modell erfordert außerdem die Unterstützung durch die Führungsebene und die wichtigsten Projektbeteiligten.
 
-Die Führungsebene der IT-Abteilung ist der erste und offensichtlichste Projektbeteiligte. IT-Manager spielen eine wichtige Rolle. Während dieses Prozesses wird aber auch die Unterstützung des CIO und anderer leitender IT-Mitarbeiter benötigt.
+Die Führungsebene der IT-Abteilung ist der erste und offensichtlichste Projektbeteiligte. IT-Manager spielen eine wichtige Rolle. Während dieses Prozesses ist die Unterstützung des CIO und anderer leitender IT-Mitarbeiter wesentlich.
 
 Weniger offensichtlich ist die Beteiligung der zuständigen Personen aus dem betriebswirtschaftlichen Bereich. Geschäftliche Flexibilität und eine Verkürzung der Zeit bis zur Markteinführung sind wichtige Motivationsfaktoren bei der Schaffung eines Cloudkompetenzzentrums. Beispiele für Projektbeteiligte aus der Betriebswirtschaft sind Branchenleiter, Finanzführungskräfte, Führungskräfte aus dem operativen Bereich und Verantwortliche für Geschäftsprodukte.
 

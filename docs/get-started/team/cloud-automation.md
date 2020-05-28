@@ -6,19 +6,19 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
-ms.date: 04/04/2020
-ms.openlocfilehash: bbb9f557f68fc50ef38c34371fe5b550375c335b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: 4c560271b86b384aa0ba43763344bd0a5335f239
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83230406"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814221"
 ---
 # <a name="get-started-build-a-cloud-automation-team"></a>Erste Schritte: Zusammenstellen eines Cloudautomatisierungsteams
 
 Dieser Leitfaden hilft Ihnen dabei, die Ziele und Zwecke eines Automatisierungsteams zu verstehen, das an einer Cloudeinführung arbeitet.
 
-Während der Cloudeinführung erschließen Funktionen für die Cloudautomatisierung das Potenzial von DevOps und einem cloudnativen Ansatz. Das Fachwissen in jedem dieser Bereiche kann die Einführung und Innovation beschleunigen.
+Während der Cloudeinführung erschließen Funktionen für die Cloudautomatisierung das Potenzial von DevOps und einem cloudnativen Ansatz. Das Fachwissen in diesen Bereichen kann die Einführung und Innovation beschleunigen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -37,7 +37,7 @@ Beispiele für Lösungen im Katalog:
 - Ein Skript zum Bereitstellen einer Containeanwendung.
 - Eine Resource Manager-Vorlage zum Bereitstellen eines SQL HA AO-Clusters.
 - Beispielcode zum Erstellen einer Bereitstellungspipeline mit Azure DevOps.
-- Eine Azure DevTest Labs-Instanz des ERP-Systems des Unternehmens für Entwicklungszwecke
+- Eine Azure DevTest Labs-Instanz des ERP-Systems des Unternehmens für Entwicklungszwecke.
 - Automatisierte Bereitstellung einer Self-Service-Umgebung, die häufig von Geschäftsanwendern gewünscht wird.
 
 Bei den Lösungen im Lösungskatalog handelt es sich nicht um Bereitstellungspipelines für eine Workload. Stattdessen können Sie Automatisierungsskripts im Katalog verwenden, um schnell eine Bereitstellungspipeline zu erstellen. Sie können auch eine Lösung im Katalog verwenden, um schnell Plattformkomponenten bereitzustellen, um Workloadaufgaben wie automatisierte Bereitstellung, manuelle Bereitstellung oder Migration zu unterstützen.

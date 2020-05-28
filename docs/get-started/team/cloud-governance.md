@@ -6,33 +6,33 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
-ms.date: 04/04/2020
-ms.openlocfilehash: ac6696cf71d43fb8cae3ec5d7e8fe455cf18d989
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.date: 05/15/2020
+ms.openlocfilehash: f27ca49738a987780729b9354e9a4653d5ecafcd
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400181"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814238"
 ---
 # <a name="get-started-build-a-cloud-governance-team"></a>Erste Schritte: Aufstellen eines Cloudgovernanceteams
 
-Mit einem Cloudgovernanceteam wird sichergestellt, dass Risiken und die Risikotoleranz richtig ausgewertet und verwaltet werden. Dieses Team sorgt dafür, dass Risiken, die für das Unternehmen nicht tolerierbar sind, richtig identifiziert werden. Die Mitarbeiter dieses Teams steuern Risiken mithilfe von Unternehmensrichtlinien.
+Mit einem Cloudgovernanceteam wird sichergestellt, dass Risiken bei der Cloudeinführung und die Risikotoleranz richtig ausgewertet und verwaltet werden. Das Team identifiziert Risiken, die vom Unternehmen nicht toleriert werden können, und wandelt sie in geltende Unternehmensrichtlinien um.
 
 ![Einstieg in die Aufstellung eines Cloudgovernanceteams](../../_images/get-started/governance-team-map.png)
 
-## <a name="step-1-determine-if-a-cloud-governance-team-is-needed"></a>Schritt 1: Ermitteln, ob ein Cloudgovernanceteam benötigt wird
+## <a name="step-1-determine-whether-a-cloud-governance-team-is-needed"></a>Schritt 1: Ermitteln, ob ein Cloudgovernanceteam benötigt wird
 
-Die offizielle Empfehlung für das Cloud Adoption Framework lautet, dass immer ein Cloudgovernanceteam aufgestellt werden sollte. Dieses Team ist unter Umständen anfänglich sehr klein. Unabhängig von seiner Größe erfüllt es aber eine wichtige Funktion. Falls kein Team benötigt wird, sollten die Aufgaben, die mit [Cloudgovernancefunktionen](../../organize/cloud-governance.md) verbunden sind, einer Gruppe oder Einzelperson übertragen werden.
+Die offizielle Empfehlung für das Cloud Adoption Framework für Azure lautet, dass immer ein Cloudgovernanceteam aufgestellt werden sollte. Dieses Team ist unter Umständen anfänglich sehr klein. Unabhängig von seiner Größe erfüllt es eine wichtige Funktion. Falls kein Team benötigt wird, sollten die Aufgaben, die mit [Cloudgovernancefunktionen](../../organize/cloud-governance.md) verbunden sind, einer Gruppe oder Einzelperson in einem vorhandenen Einführungsteam übertragen werden.
 
-**Zielvorgaben:**
+**Ziele:**
 
-- Ermitteln Sie, ob Sie ein Cloudgovernanceteam benötigen.
-- Dokumentieren Sie die Entscheidung und die verantwortlichen Personen in der [RACI-Vorlage](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) auf der Registerkarte für die organisatorische Ausrichtung.
+- Ermitteln, ob ein Cloudgovernanceteam benötigt wird.
+- Dokumentieren der Entscheidung und der verantwortlichen Personen in der [RACI-Vorlage (Responsible, Accountable, Consulted und Informed)](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) im Arbeitsblatt `Org Alignment`.
 
-**Hinweis zur Erreichung der Zielvorgaben:**
+**Hinweis zur Erreichung der Ziele:**
 
-- Die [Cloudgovernancefunktionen](../../organize/cloud-governance.md) sind unter Umständen bereits auf mehrere Einzelpersonen oder Teams verteilt. Es ist nicht entscheidend, dass ein Team mit dem Namen „Cloudgovernanceteam“ vorhanden ist. Die erforderlichen Aufgaben sollten aber einer verantwortlichen Person oder einem Team übertragen werden.
-- Falls die langfristige Cloudeinführungsstrategie des Unternehmens über eine Zielzone in einer Cloudumgebung bereitgestellt werden kann, ist der Aufwand für die Governance- und Operations-Maßnahmen ggf. so gering, dass eine Person bzw. ein Team ausreicht. Der Name dieses Teams enthält dann vermutlich nicht die Bezeichnung „Cloudgovernance“, weil es darüber hinaus noch viele weitere Aufgaben erfüllt. Auch für ein Team dieser Art kann mit dem folgenden Leitfaden zum Einstieg aber sichergestellt werden, dass das Team diese wichtige Governanceaufgabe erfüllen kann.
+- Die [Cloudgovernancefunktionen](../../organize/cloud-governance.md) sind unter Umständen bereits auf mehrere Einzelpersonen oder Teams verteilt. Ein Team mit dem Titel „Cloudgovernanceteam“ ist nicht wichtig, aber die erforderlichen Funktionen sollten einer verantwortlichen Partei oder einem Team übertragen werden.
+- Falls die langfristige Cloudeinführungsstrategie des Unternehmens über eine Zielzone in einer Cloudumgebung bereitgestellt werden kann, ist der Aufwand für die Governance- und Operationsmaßnahmen ggf. so gering, dass eine Person bzw. ein Team ausreicht. Es ist unwahrscheinlich, dass dieses Team als „Cloudgovernanceteam“ bezeichnet wird, da es zahlreiche Funktionen jenseits von Cloudgovernance erfüllt. Selbst bei diesem Team kann dieser Leitfaden zu den ersten Schritten beim Sicherstellen helfen, dass es diese wichtige Funktion der Governance bereitstellen kann.
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -43,7 +43,9 @@ Die offizielle Empfehlung für das Cloud Adoption Framework lautet, dass immer e
 
 ## <a name="step-2-align-with-other-teams"></a>Schritt 2: Ausrichten an anderen Teams
 
-Das Governanceteam sorgt für die Konsistenz und die Einhaltung der allgemeinen Richtlinien. Diese Richtlinien sind das Ergebnis einer fortlaufenden Ausrichtung an anderen Teams. Vor dem Festlegen von Richtlinien oder von automatisierten Maßnahmen für Cloudgovernance sollte sich das Cloudgovernanceteam mit anderen Teams absprechen, die in der RACI-Vorlage angegeben sind, um die gemeinsame Ausrichtung in Bezug auf kritische Themen sicherzustellen, z. B. Sicherheit, Kosten, Leistung, Betrieb und Bereitstellung. Die Schritte 4 und 5 können diese Ausrichtung vereinfachen.
+Das Governanceteam sorgt für die Konsistenz und die Einhaltung der allgemeinen Richtlinien. Diese Richtlinien sind das Ergebnis einer fortlaufenden Ausrichtung an anderen Teams.
+
+Bevor es Richtlinien oder automatisierte Cloudgovernance festlegt, sollte das Cloudgovernanceteam mit anderen Teams zusammenarbeiten, die in der RACI-Vorlage identifiziert werden. Dadurch wird die Konzentration auf wichtige Themen (z. B. Sicherheit, Kosten, Leistung, Betrieb und Bereitstellung) sichergestellt. Die Schritte 4 und 5 können diese Abstimmung vereinfachen.
 
 **Ziele:**
 
@@ -64,16 +66,16 @@ Das Governanceteam sorgt für die Konsistenz und die Einhaltung der allgemeinen 
 
 ## <a name="step-3-establish-a-cadence-with-other-teams"></a>Schritt 3: Festlegen eines gemeinsamen Rhythmus mit anderen Teams
 
-Die Umstellung auf die Cloud erfolgt normalerweise in mehreren Wellen (bzw. Releases). Ein regelmäßiger Rhythmus, der an diesen Releases ausgerichtet ist, ermöglicht dem Cloudgovernanceteam eine Vorausschau und die Erkennung von Risiken, die mit der nächsten Welle verbunden sind. Indem das Governanceteam in der Planungs- und Prüfungsphase mit den Teams für die Bereiche Strategie, Einführung und Operations in Verbindung bleibt, kann es bevorstehende Risiken besser überblicken.
+Die Cloudeinführung erfolgt normalerweise in mehreren Wellen bzw. Releases. Ein regelmäßiger Rhythmus, der an diesen Releases ausgerichtet ist, ermöglicht dem Cloudgovernanceteam eine Vorausschau und die Erkennung von Risiken, die mit der nächsten Welle verbunden sind. Indem das Governanceteam in der Planungs- und Prüfungsphase mit den Teams für die Bereiche Strategie, Einführung und Operations in Verbindung bleibt, kann es bevorstehende Risiken besser überblicken.
 
-**Zielvorgaben:**
+**Ziele:**
 
-- Etablieren Sie einen gemeinsamen Rhythmus mit den einzelnen unterstützenden Teams. Richten Sie diesen Rhythmus nach Möglichkeit an den Release- und Planungszyklen aus.
+- Etablieren Sie einen gemeinsamen Rhythmus mit den unterstützenden Teams. Stimmen Sie diesen Rhythmus nach Möglichkeit auf die Release- und Planungszyklen ab.
 - Legen Sie einen separaten Rhythmus direkt mit dem Cloudstrategieteam (bzw. einzelnen Teammitgliedern) fest, nach dem die Risiken der nächsten Welle der Einführung überprüft werden, und ermitteln Sie die Toleranz des Teams in Bezug auf diese Risiken.
 
-**Hinweis zur Erreichung der Zielvorgaben:**
+**Hinweis zur Erreichung der Ziele:**
 
-- Unter den [Cloudgovernancefunktionen](../../organize/cloud-governance.md#deliverable) finden Sie weitere Informationen zur Einhaltung von Rhythmen.
+- Weitere Informationen zur Besprechungshäufigkeit finden Sie unter [Cloudgovernancefunktionen](../../organize/cloud-governance.md#deliverable).
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -84,9 +86,9 @@ Die Umstellung auf die Cloud erfolgt normalerweise in mehreren Wellen (bzw. Rele
 
 ## <a name="step-4-review-the-methodology"></a>Schritt 4: Überprüfen der Methodik
 
-Sehen Sie sich die Governance-Methodik des Cloud Adoption Framework an, um die Bestimmung einer Zukunftsvision für Governance und die Auswahl eines funktionierenden Ansatzes zur Erreichung dieser Vision zu vereinfachen.
+Sehen Sie sich die Governancemethodik im Cloud Adoption Framework an, um die Bestimmung einer Zukunftsvision für Governance und die Auswahl eines funktionierenden Ansatzes zur Erreichung dieser Vision zu vereinfachen.
 
-**Zielvorgaben:**
+**Ziele:**
 
 - Verschaffen Sie sich einen Überblick über die Methodik, den Ansatz und die Implementierung der Governance-Methodik.
 
@@ -100,45 +102,45 @@ Sehen Sie sich die Governance-Methodik des Cloud Adoption Framework an, um die B
 
 ## <a name="step-5-complete-the-governance-benchmark"></a>Schritt 5: Durchführen der Governance-Benchmarkbewertung
 
-Governance ist ein weites Feld. Diese kurze Bewertung kann Ihnen bei der Ermittlung eines Ansatzpunkts helfen.
+Governance ist ein weites Feld. Eine kurze Bewertung kann dem Team bei der Ermittlung eines Ausgangspunkts helfen.
 
-**Zielvorgaben:**
+**Ziele:**
 
-- Führen Sie die Governance-Benchmarkbewertung basierend auf Gesprächen mit verschiedenen Projektbeteiligten durch (oder bitten Sie andere Teams, die Bewertung selbst durchzuführen).
+- Führen Sie die Governance-Benchmarkbewertung basierend auf Gesprächen mit verschiedenen Projektbeteiligten durch. Oder bitten Sie andere Teams, die Bewertung eigenständig abzuschließen.
 
-**Hinweis zur Erreichung der Zielvorgaben:**
+**Hinweis zur Erreichung der Ziele:**
 
-- Bewerten Sie Ihre Governanceanforderungen und -prioritäten, indem Sie das [Governance-Benchmarktool](../../govern/benchmark.md) verwenden.
+- Verwenden Sie den [Governancebenchmark](../../govern/benchmark.md), um Ihre Governanceanforderungen und -prioritäten zu bewerten.
 
 **Verantwortliches Team:**
 
-- Das Cloudgovernanceteam sollte die Lücken erkennen, die mit dem Governance-Benchmarktool ermittelt wurden, und entsprechende Governancelösungen bereitstellen, mit denen diese Lücken geschlossen werden können.
+- Das Cloudgovernanceteam sollte die Lücken erkennen, die mit dem Governance-Benchmarktool ermittelt wurden, und dann entsprechende Governancelösungen bereitstellen, mit denen diese Lücken geschlossen werden können.
 
 ## <a name="step-6-implement-the-initial-governance-best-practice-and-configuration"></a>Schritt 6: Implementieren der anfänglichen bewährten Methoden und der Konfiguration für Governance
 
 Die Governance-Methodik umfasst zwei Ansätze zur Schaffung einer Governancegrundlage als Ausgangsbasis. Sehen Sie sich die beiden Ansätze an, und implementieren Sie den Ansatz, der Ihre Anforderungen am besten erfüllt.
 
-**Zielvorgaben:**
+**Ziele:**
 
 - Stellen Sie die grundlegenden Governancetools und Organisationskonfigurationen bereit, die für die Umgebung während der nächsten Wellen der Einführung erforderlich sind.
 
-**Hinweis zur Erreichung der Zielvorgaben:**
+**Hinweis zur Erreichung der Ziele:**
 
-- Lesen Sie den Leitfaden zu den [ersten bewährten Methoden](../../govern/initial-foundation.md) in Bezug auf die Konfiguration und Implementierung.
+- Eine Anleitung zur Konfiguration und Implementierung finden Sie unter [Einrichten einer ersten Grundlage für Cloudgovernance](../../govern/initial-foundation.md).
 
 **Verantwortliches Team:**
 
 - Das Cloudgovernanceteam ist dafür verantwortlich, die bewährten Governancemethoden zu überprüfen und zu implementieren und eine erste Grundlage für Governance zu schaffen.
 
-## <a name="step-7-continuously-improve-the-governance-maturity"></a>Schritt 7: Fortlaufendes Verbessern des Entwicklungsstands in Bezug auf Governance
+## <a name="step-7-continuously-improve-governance-maturity"></a>Schritt 7: Fortlaufendes Verbessern des Entwicklungsstands in Bezug auf Governance
 
-Die Governanceanforderungen nehmen zu, wenn die Cloudeinführung weiter voranschreitet. Stellen Sie die Ausrichtung am Plan für die laufende Einführung sicher, um dafür zu sorgen, dass beim gewählten Governanceansatz die richtigen Ebenen und Kontrollen eingehalten werden.
+Die Governanceanforderungen nehmen zu, wenn weitere Cloudeinführungsmaßnahmen abgeschlossen werden. Stellen Sie die Ausrichtung am Plan für die laufende Einführung sicher, um dafür zu sorgen, dass beim gewählten Governanceansatz die richtigen Ebenen und Kontrollen eingehalten werden.
 
-**Zielvorgaben:**
+**Ziele:**
 
 - Implementieren Sie Governanceverbesserungen als Schutz vor sich ändernden Risiken und Governanceanforderungen.
 
-**Hinweis zur Erreichung der Zielvorgaben:**
+**Hinweis zur Erreichung der Ziele:**
 
 - Implementieren Sie [erweiterte Governanceszenarien](../../govern/foundation-improvements.md), um die anfängliche Governancegrundlage zu verbessern.
 
@@ -148,13 +150,13 @@ Die Governanceanforderungen nehmen zu, wenn die Cloudeinführung weiter voransch
 
 ## <a name="step-8-evaluate-landing-zone-changes"></a>Schritt 8: Auswerten von Änderungen der Zielzone
 
-Wenn Zielzonen bereitgestellt und erweitert werden, können sich neue Risiken oder Governanceverletzungen ergeben. Überprüfen Sie die Konfigurationen von Zielzonen regelmäßig, um Abweichungen von der Richtlinie zu ermitteln, die mit den nativen Governancetools in der Cloud nicht erkannt werden. Stellen Sie sicher, dass für jede Zielzonenbereitstellung die Richtlinien für die entsprechenden Governancevorgaben eingehalten werden.
+Wenn Zielzonen bereitgestellt und erweitert werden, können sich neue Risiken oder Governanceverletzungen ergeben. Überprüfen Sie die Konfigurationen von Zielzonen regelmäßig, um alle Abweichungen von der Richtlinie zu ermitteln, die mit den nativen Governancetools in der Cloud nicht erkannt werden. Stellen Sie sicher, dass für jede Zielzonenbereitstellung die Richtlinien für die entsprechenden Governancevorgaben eingehalten werden.
 
-**Zielvorgaben:**
+**Ziele:**
 
-- Unterstützen Sie das Cloudplattformteam bei der Entwicklung von Verbesserungen der Zielzone, bei denen die Governancerichtlinien eingehalten werden.
+- Unterstützen Sie das Cloudplattformteam bei der Entwicklung von Verbesserungen der Zielzone, bei denen die Governancerichtlinien eingehalten werden müssen.
 
-**Hinweis zur Erreichung der Zielvorgaben:**
+**Hinweis zur Erreichung der Ziele:**
 
 - Verbessern der [Governance von Zielzonen](../../ready/considerations/landing-zone-governance.md).
 
@@ -164,11 +166,11 @@ Wenn Zielzonen bereitgestellt und erweitert werden, können sich neue Risiken od
 
 ## <a name="step-9-adoption-handoffs"></a>Schritt 9: Übertragung von Aufgaben während der Einführung
 
-Wenn neue Einführungsmaßnahmen abgeschlossen werden, überträgt das Cloudeinführungsteam betriebsbezogene Zuständigkeiten an das Cloudbetriebsteam und an Cloudgovernanceteams. Behalten Sie die Ausrichtung auf Einführungsreleases bei, um eine ordnungsgemäße Dokumentation sowie die Einhaltung von Richtlinien sicherzustellen und die Verantwortung für die Workloads zu übernehmen.
+Wenn neue Einführungsmaßnahmen abgeschlossen werden, überträgt das Cloudeinführungsteam betriebsbezogene Zuständigkeiten an das Cloudbetriebsteam und an Cloudgovernanceteams. Behalten Sie die Ausrichtung auf die Häufigkeit von Einführungsreleases bei, um eine ordnungsgemäße Dokumentation sowie die Einhaltung von Richtlinien sicherzustellen und dem Team dabei zu helfen, die Verantwortung für die Workloads zu übernehmen.
 
 **Ziele:**
 
-- Führen Sie eine regelmäßige Überprüfung der Aufgaben durch, die von Cloudeinführungsteams übertragen werden, und akzeptieren Sie sie.
+- Führen Sie eine regelmäßige Überprüfung der Aufgaben durch, die von anderen Cloudeinführungsteams übertragen werden, und akzeptieren Sie sie.
 
 **Hinweis zur Erreichung der Ziele:**
 
@@ -185,4 +187,4 @@ Wenn neue Einführungsmaßnahmen abgeschlossen werden, überträgt das Cloudeinf
 
 Jedes Unternehmen ist einzigartig, und dies gilt auch für die jeweiligen Governanceanforderungen. Wählen Sie die Entwicklungsstufe, die zu Ihrer Organisation passt, und verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) als Anleitung für die Methoden, Prozesse und Tools, um diese Stufe zu erreichen.
 
-Während der Weiterentwicklung der Cloudgovernance werden Teams in die Lage versetzt, die Einführung der Cloud schneller zu betreiben. Wenn weiter kontinuierlich an der Cloudeinführung gearbeitet wird, werden in der Regel auch die anderen IT-Abläufe weiterentwickelt. Stellen Sie entweder ein [Cloudbetriebsteam](./cloud-operations.md) auf, oder sprechen Sie sich mit Ihrem Cloudbetriebsteam ab, um sicherzustellen, dass Governance Teil der Entwicklungsmaßnahmen für den Operations-Bereich ist.
+Während der Weiterentwicklung der Cloudgovernance werden Teams in die Lage versetzt, die Einführung der Cloud schneller zu betreiben. Wenn weiter kontinuierlich an der Cloudeinführung gearbeitet wird, werden in der Regel auch die anderen IT-Abläufe weiterentwickelt. Stellen Sie entweder ein [Cloudbetriebsteam](./cloud-operations.md) auf, oder sprechen Sie sich mit Ihrem Cloudbetriebsteam ab, um sicherzustellen, dass Governance Teil der Entwicklungsmaßnahmen für den Operationsbereich ist.

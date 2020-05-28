@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
-ms.date: 04/04/2020
-ms.openlocfilehash: af65cff02d7c3768bf5fca554334923cf2172937
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.date: 05/15/2020
+ms.openlocfilehash: 02317405adc974e9836bb3e64b881da3296e3d8e
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400165"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862431"
 ---
 # <a name="get-started-build-a-cloud-operations-team"></a>Erste Schritte: Aufbauen eines Cloudbetriebsteams
 
@@ -20,24 +20,23 @@ Ein Betriebsteam konzentriert sich auf die Überwachung, Reparatur und Problembe
 
 ![Erste Schritte für den Aufbau eines Cloudbetriebsteams](../../_images/get-started/operations-team-map.png)
 
-## <a name="step-1-determine-if-a-cloud-operations-team-is-needed"></a>Schritt 1: Ermitteln, ob ein Cloudbetriebsteam benötigt wird
+## <a name="step-1-determine-whether-a-cloud-operations-team-is-needed"></a>Schritt 1: Ermitteln, ob ein Cloudbetriebsteam benötigt wird
 
-Vor der Veröffentlichung von Workloads muss zunächst eine Einigung hinsichtlich der Zuständigkeit für die Bereitstellung von [Cloudbetriebsfunktionen](../../organize/cloud-governance.md) erzielt werden. Bei manchen Portfolios sind möglicherweise weiterhin das DevOps- und das Cloudeinführungsteam für operative Aufgaben zuständig. In anderen Fällen werden laufende operative Aufgaben unter Umständen von einem verwalteten Dienstanbieter mit Cloudbetriebserfahrung übernommen.
+Vor der Veröffentlichung von Workloads muss zunächst eine Einigung hinsichtlich der Zuständigkeit für die Bereitstellung von [Cloudbetriebsfunktionen](../../organize/cloud-operations.md) erzielt werden. Bei manchen Portfolios sind möglicherweise weiterhin das DevOps- und das Cloudeinführungsteam für operative Aufgaben zuständig. In anderen Fällen werden laufende operative Aufgaben unter Umständen von einem verwalteten Dienstanbieter mit Cloudbetriebserfahrung übernommen.
 
 Sollten keine DevOps- oder Dienstanbietervereinbarungen für den Betrieb vorliegen, ist davon auszugehen, dass sich jemand aus der IT-Abteilung um laufende operative Aufgaben im Zusammenhang mit der Verwaltung von Produktionsworkloads kümmern muss.
 
 **Ziele:**
 
-- Ermitteln Sie, ob ein Cloudbetriebsteam benötigt wird.
-- Dokumentieren Sie die Entscheidung und die verantwortlichen Personen in der [RACI-Vorlage](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) auf der Registerkarte für die organisatorische Ausrichtung.
+- Ermitteln, ob ein Cloudbetriebsteam benötigt wird.
+- Dokumentieren der Entscheidung und der verantwortlichen Personen in der [RACI-Vorlage (Responsible, Accountable, Consulted und Informed)](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) im Arbeitsblatt `Org Alignment`.
 
 **Hinweis zur Erreichung der Ziele:**
 
-- Die [Cloudbetriebsfunktionen](../../organize/cloud-operations.md) sind unter Umständen bereits auf mehrere Einzelpersonen oder Teams verteilt. Sie müssen entscheiden, ob ein Cloudbetriebsteam benötigt wird. Produktionsworkloads sind jedoch immer mit einem gewissen Betriebsaufwand verbunden.
-- Falls die langfristige Cloudeinführungsstrategie des Unternehmens über eine Zielzone in einer Cloudumgebung bereitgestellt werden kann, ist der Governance- und Betriebsaufwand ggf. so gering, dass eine einzelne Person bzw. ein einzelnes Team ausreicht. Dieses Team wird dann wahrscheinlich nicht als Cloudbetriebsteam bezeichnet, da es verschiedene Aufgaben erfüllt. Doch auch für dieses Team oder diese Person sind die folgenden Informationen hilfreich, um zu gewährleisten, dass das Team bzw. die Person diese wichtige Betriebsaufgabe bewältigen kann.
+- [Cloudbetriebsfunktionen](../../organize/cloud-operations.md) sind unter Umständen bereits auf mehrere Einzelpersonen oder Teams verteilt. Entscheiden Sie, ob ein Cloudbetriebsteam erforderlich ist. Produktionsworkloads sind immer mit einem gewissen Betriebsaufwand verbunden.
+- Falls die langfristige Cloudeinführungsstrategie des Unternehmens über eine Zielzone in einer Cloudumgebung bereitgestellt werden kann, ist der Governance- und Betriebsaufwand ggf. so gering, dass eine einzelne Person bzw. ein einzelnes Team ausreicht. Dieses Team wird dann wahrscheinlich nicht als Cloudbetriebsteam bezeichnet, da es verschiedene Aufgaben erfüllt. Für diese Einzelperson oder dieses Team können Sie mithilfe der folgenden Anleitungen sicherstellen, dass diese wichtige Betriebsfunktion bereitgestellt werden kann.
 
 <!-- markdownlint-disable MD033 -->
-<br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
@@ -45,37 +44,39 @@ Sollten keine DevOps- oder Dienstanbietervereinbarungen für den Betrieb vorlieg
 
 ## <a name="step-2-align-with-other-teams"></a>Schritt 2: Abstimmen mit anderen Teams
 
-Operative Zuständigkeiten für alle Workloads im Produktionsportfolio gehen auf das Betriebsteam über. Diese Zuständigkeiten können sich abhängig von den Erwartungen und den Verpflichtungen, die gegenüber dem Unternehmen eingegangen wurden, von Workload zu Workload unterscheiden. Die Architekturentscheidungen migrations- und innovationsorientierter Cloudeinführungsteams haben auch Einfluss auf betriebsbezogene Zusagen, die abgegeben werden können. Vor der Implementierung von Verfahren für den laufenden Betrieb ist es wichtig, sich mit anderen Teams abzustimmen. Das Cloudbetriebssystem sollte sich mit anderen in der RACI-Vorlage angegebenen Teams absprechen, um für Einigkeit bei wichtigen Themen wie Sicherheit, Kosten, Leistung, Governance und Bereitstellung zu sorgen. Die Schritte 4 und 5 können diese Abstimmung vereinfachen.
+Operative Zuständigkeiten für alle Workloads im Produktionsportfolio gehen auf das Cloudbetriebsteam über. Diese Zuständigkeiten können sich abhängig von den Erwartungen und den Verpflichtungen, die vom Team gegenüber den Unternehmensbeteiligten eingegangen wurden, von Workload zu Workload unterscheiden. Die Architekturentscheidungen migrations- und innovationsorientierter Cloudeinführungsteams besitzen auch Einfluss auf betriebsbezogene Zusagen des Teams.
+
+Bevor das Cloudbetriebsteam laufende Betriebspraktiken implementiert, ist es wichtig, dass es sich mit anderen Teams abstimmt. Das Team sollte sich mit anderen in der RACI-Vorlage angegebenen Teams absprechen, um für Einigkeit bei wichtigen Themen wie Sicherheit, Kosten, Leistung, Governance und Bereitstellung zu sorgen. Die Schritte 4 und 5 können diese Abstimmung vereinfachen.
 
 **Ziele:**
 
-- Besprechen Sie den aktuellen Zustand der Implementierung und die Pläne zur laufenden Einführung mit jedem Team.
+- Besprechen des aktuellen Zustands der Implementierung und der Pläne zur laufenden Einführung mit jedem Team.
 
 **Hinweis zur Erreichung der Ziele:**
 
-- Sehen Sie sich gemeinsam mit Mitgliedern des Cloudstrategieteams die [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) Ihres Unternehmens an, um sich über Beweggründe und Metriken sowie über die Strategie zu informieren.
+- Sehen Sie sich gemeinsam mit Mitgliedern des Cloudstrategieteams die [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) Ihres Unternehmens an, um sich über Beweggründe des Teams und Metriken sowie über die Strategie zu informieren.
 - Sehen Sie sich gemeinsam mit Mitgliedern des Cloudeinführungsteams die [Vorlage für den Cloudeinführungsplan](../../plan/template.md) Ihres Unternehmens an, um sich mit dem Zeitplan und den Prioritäten vertraut zu machen.
-- Beginnen Sie mit der Ausarbeitung der [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx), um die betriebsbezogenen Anforderungen und Verpflichtungen für das Unternehmen nachzuvollziehen.
+- Beginnen Sie mit der Ausarbeitung der [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx), um die betriebsbezogenen Anforderungen und Verpflichtungen des Teams für das Unternehmen nachzuvollziehen.
 
 <!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudbetriebsteam | <li> Cloudstrategieteam <li> Cloudeinführungsteam <li> Cloudgovernanceteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
+| <li>  Cloudbetriebsteam | <li> Cloudstrategieteam <li> Cloudeinführungsteam <li> Cloudgovernanceteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
 
-## <a name="step-3-establish-cadence-with-other-teams"></a>Schritt 3: Festlegen eines gemeinsamen Rhythmus mit anderen Teams
+## <a name="step-3-establish-a-cadence-with-other-teams"></a>Schritt 3: Festlegen eines gemeinsamen Rhythmus mit anderen Teams
 
 Die Cloudeinführung erfolgt normalerweise in mehreren Wellen bzw. Releases. Ein regelmäßiger, auf diese Releases abgestimmter Rhythmus ermöglicht es dem Cloudbetriebsteam, sich auf Übergaben vorzubereiten, die jeweils am Ende der nächsten Welle anstehen. Durch die Abstimmung mit den Strategie-, Einführungs- und Governanceteams während der Planungs- und Prüfungsphase kann das Betriebsteam zukünftigen betrieblichen Anforderungen stets einen Schritt voraus sein.
 
 **Ziele:**
 
-- Etablieren Sie einen gemeinsamen Rhythmus mit den einzelnen unterstützenden Teams. Stimmen Sie diesen Rhythmus nach Möglichkeit auf die Release- und Planungszyklen ab.
+- Etablieren eines gemeinsamen Rhythmus mit den unterstützenden Teams. Stimmen Sie diesen Rhythmus nach Möglichkeit auf die Release- und Planungszyklen ab.
 - Etablieren Sie direkt mit dem Cloudstrategieteam (oder mit einzelnen Teammitgliedern) einen separaten Rhythmus für die Überprüfung betrieblicher Anforderungen im Zusammenhang mit der nächsten Welle der Einführung.
 
 **Hinweis zur Erreichung der Ziele:**
 
-- Weitere Informationen zu Besprechungsrhythmen finden Sie in den [Cloudbetriebsfunktionen](../../organize/cloud-operations.md#deliverables).
+- Weitere Anleitungen zur Häufigkeit von Besprechungen finden Sie im Abschnitt „Zielvorgaben“ unter [Cloudbetriebsfunktionen](../../organize/cloud-operations.md#deliverables).
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -86,7 +87,7 @@ Die Cloudeinführung erfolgt normalerweise in mehreren Wellen bzw. Releases. Ein
 
 ## <a name="step-4-review-the-methodology"></a>Schritt 4: Überprüfen der Methodik
 
-Sehen Sie sich die Verwaltungsmethodik des Cloud Adoption Framework an, um die Entwicklung einer Zukunftsvision für die Betriebsverwaltung und eines funktionierenden Ansatzes zur Erreichung dieser Vision zu vereinfachen.
+Um eine Zukunftsvision für die Betriebsverwaltung und einen Arbeitsansatz zur Verwirklichung dieser Vision zu entwickeln, sollten Sie sich die Verwaltungsmethodik im Cloud Adoption Framework ansehen.
 
 **Ziele:**
 
@@ -94,7 +95,7 @@ Sehen Sie sich die Verwaltungsmethodik des Cloud Adoption Framework an, um die E
 
 **Hinweis zur Erreichung der Ziele:**
 
-- Machen Sie sich mit der [Verwaltungsmethodik](../../manage/index.md) vertraut.
+- Sehen Sie sich die [Verwaltungsmethodik im Cloud Adoption Framework ](../../manage/index.md) an.
 
 **Verantwortliches Team:**
 
@@ -114,15 +115,15 @@ Falls in Ihren Cloudumgebungen noch keine Verfahren für den Betrieb bereitgeste
 
 **Verantwortliches Team:**
 
-- Das Cloudbetriebsteam ist für die Betriebsbaseline verantwortlich.
+- Das Cloudbetriebsteam ist für die Implementierung der Betriebsbaseline verantwortlich.
 
 ## <a name="step-6-align-business-commitments"></a>Schritt 6: Ausrichten geschäftlicher Zusagen
 
-Überprüfen Sie Zusagen der Betriebsbaseline für das Unternehmen. Auf der Grundlage dieser Baseline lassen sich die allgemeinen Anforderungen für die Mehrzahl der Workloads bewerten. Darüber hinaus ermöglicht der Prozess die Identifizierung von Beteiligten im Unternehmen für verschiedene Workloads sowie die Dokumentation ihrer aktuellen betrieblichen Erwartungen.
+Überprüfen Sie Zusagen der Betriebsbaseline des Teams für Unternehmensbeteiligte. Auf der Grundlage dieser Baseline lassen sich die allgemeinen Anforderungen für die Mehrzahl der Workloads bewerten. Darüber hinaus ermöglicht der Prozess Ihnen die Identifizierung von Beteiligten für verschiedene Workloads sowie die Dokumentation ihrer aktuellen betrieblichen Erwartungen.
 
 **Ziele:**
 
-- Dokumentieren Sie die geschäftlichen Erwartungen.
+- Dokumentieren der Erwartungen von Unternehmensbeteiligten.
 - Ermitteln Sie, ob für bestimmte Workloads oder Plattformen erweiterte Vorgänge erforderlich sind.
 
 **Hinweis zur Erreichung der Ziele:**
@@ -132,21 +133,21 @@ Falls in Ihren Cloudumgebungen noch keine Verfahren für den Betrieb bereitgeste
 
 **Verantwortliches Team:**
 
-- Das Cloudbetriebsteam muss mit den geschäftlichen Erwartungen vertraut sein und ist für die kontinuierliche betriebliche Ausrichtung auf diese Erwartungen verantwortlich.
+- Das Cloudbetriebsteam muss mit den geschäftlichen Erwartungen vertraut sein und ist für die kontinuierliche Ausrichtung auf diese Erwartungen verantwortlich.
 
 ## <a name="step-7-operations-maturity"></a>Schritt 7: Betriebsreife
 
-Durch operative Verbesserungen können sich einige Optionen ergeben:
+Das Team kann durch kontinuierliche Betriebsoptimierungen die folgenden Ziele erreichen:
 
 - Optimieren der Betriebsbaseline
 - Verbessern des Plattformbetriebs
-- Implementieren workloadspezifischer Vorgänge
+- Implementieren workloadspezifischer Vorgänge.
 
 Mit der zunehmenden Umstellung von Workloads auf den Cloudbetrieb wird auch der Bedarf für operative Verbesserungen deutlicher.
 
 **Ziele:**
 
-- Verbessern Sie die Betriebsreife, um die Erfüllung geschäftliche Zusagen zu unterstützen.
+- Verbessern der Betriebsreife, um die Erfüllung von Zusagen für Geschäftsbeteiligte zu unterstützen.
 
 **Hinweis zur Erreichung der Ziele:**
 
@@ -158,18 +159,17 @@ Mit der zunehmenden Umstellung von Workloads auf den Cloudbetrieb wird auch der 
 
 ## <a name="step-8-scale-operations-consistency-through-governance"></a>Schritt 8: Skalieren der Betriebskonsistenz mittels Governance
 
-Stimmen Sie sich im Zuge der Entwicklung der Betriebsreife regelmäßig mit dem Cloudgovernanceteam ab, um Betriebsanforderungen auf das gesamte Portfolio anzuwenden.
+Mit zunehmender Reife der Betriebsplanung sollte sich das Team regelmäßig mit dem Cloudgovernanceteam abstimmen, um die Betriebsanforderungen auf das gesamte Portfolio anzuwenden.
 
 **Ziele:**
 
-- Unterstützen Sie das Cloudgovernanceteam bei der Implementierung neuer Ressourcenkonsistenzanforderungen.
+- Unterstützen Sie das Cloudgovernanceteam bei der Implementierung neuer Anforderungen an die Ressourcenkonsistenz.
 
 **Hinweis zur Erreichung der Ziele:**
 
-- Ein Beispiel für eine Ressourcenkonsistenzverbesserung mit Governanceerzwingung finden Sie [hier](../../govern/guides/complex/resource-consistency-improvement.md).
+- Weitere Informationen finden Sie im [Leitfaden zur Verbesserung der Ressourcenkonsistenz](../../govern/guides/complex/resource-consistency-improvement.md).
 
 <!-- markdownlint-disable MD033 -->
-<br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
@@ -177,7 +177,7 @@ Stimmen Sie sich im Zuge der Entwicklung der Betriebsreife regelmäßig mit dem 
 
 ## <a name="step-9-adoption-handoffs"></a>Schritt 9: Übertragung von Aufgaben während der Einführung
 
-Wenn neue Einführungsmaßnahmen abgeschlossen werden, überträgt das Cloudeinführungsteam betriebsbezogene Zuständigkeiten an das Cloudbetriebsteam und an Cloudgovernanceteams. Behalten Sie die Ausrichtung auf Einführungsreleases bei, um eine ordnungsgemäße Dokumentation sowie die Einhaltung von Richtlinien sicherzustellen und die Verantwortung für die Workloads zu übernehmen.
+Wenn neue Einführungsmaßnahmen abgeschlossen werden, überträgt das Cloudeinführungsteam betriebsbezogene Zuständigkeiten an das Cloudbetriebs- und das Cloudgovernanceteam. Das Team sollte die Ausrichtung auf Einführungsreleases beibehalten, um eine ordnungsgemäße Dokumentation sowie die Einhaltung von Richtlinien sicherzustellen und die Verantwortung für die Workloads zu übernehmen.
 
 **Ziele:**
 
@@ -188,7 +188,6 @@ Wenn neue Einführungsmaßnahmen abgeschlossen werden, überträgt das Cloudeinf
 - Legen Sie einen Prozess für das [Durchführen des Onboardings für neue Workloads und Ressourcen](https://docs.microsoft.com/azure/azure-resource-manager/custom-providers/concepts-resource-onboarding) fest.
 
 <!-- markdownlint-disable MD033 -->
-<br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
@@ -196,11 +195,11 @@ Wenn neue Einführungsmaßnahmen abgeschlossen werden, überträgt das Cloudeinf
 
 ## <a name="whats-next"></a>Nächste Schritte
 
-Da Einführung und Abläufe einer Skalierung unterliegen, ist es wichtig, bewährte Methoden für die Governance zu definieren und zu automatisieren, die vorhandene IT-Anforderungen erweitern. Der Aufbau eines CCoE-Teams (Cloud Center of Excellence, Cloudkompetenzzentrum) ist ein wichtiger Schritt für die Skalierung von Cloudeinführung, Cloudbetrieb und Cloudgovernance.
+Da Einführung und Abläufe einer Skalierung unterliegen, ist es wichtig, bewährte Methoden für die Governance zu definieren und zu automatisieren, die vorhandene IT-Anforderungen erweitern. Der Aufbau eines CCoE-Teams (Cloud Center of Excellence, Cloudkompetenzzentrum) ist ein wichtiger Schritt hin zur Skalierung von Cloudeinführung, Cloudbetrieb und Cloudgovernance.
 
 Weitere Informationen:
 
 - [CCoE-Funktionen (Cloud Center of Excellence, Cloudkompetenzzentrum)](../../organize/cloud-center-of-excellence.md)
 - [Antimuster in Unternehmen: Silos und Machtbereiche](../../organize/fiefdoms-silos.md)
 
-Es wird beschrieben, wie Sie Teams übergreifend Zuständigkeiten zuordnen, indem Sie eine so genannte RACI-Matrix entwickeln und damit bestimmen, welche Teams verantwortlich sind (responsible), rechenschaftspflichtig sind (accountable), konsultiert werden (consulted) und zu informieren sind (informed). Laden Sie die [RACI-Tabellenvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) herunter, und passen Sie sie an.
+Abstimmen von Verantwortlichkeiten in den Teams, indem eine teamübergreifende Matrix entwickelt wird, die die RACI-Parteien identifiziert. Laden Sie die [RACI-Tabellenvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) herunter, und passen Sie sie an.

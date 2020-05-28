@@ -3,16 +3,16 @@ title: 'Erste Schritte: Ausrichten Ihrer Organisation'
 description: Hier finden Sie empfohlene Schritte zum Ausrichten Ihrer Organisation, damit Sie für eine erfolgreiche Cloudeinführung bereit sind.
 author: JanetCThomas
 ms.author: janet
-ms.date: 05/05/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: f40e0ecf16ceb1d3af7c3b99eb111d09a975b6da
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 7ab2ea31c90215efd37c2ab0d65f8a8c7baf24b1
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621162"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814289"
 ---
 # <a name="get-started-align-your-organization"></a>Erste Schritte: Ausrichten Ihrer Organisation
 
@@ -45,7 +45,7 @@ Nachdem Sie die Antworten auf diese Fragen dokumentiert haben, verwenden Sie [Pl
 
 ## <a name="step-3-determine-how-teams-align-within-your-organization"></a>Schritt 3: Festlegen der Ausrichtung von Teams in Ihrer Organisation
 
-Die folgenden Organisationsstrukturen müssen nicht unbedingt einem Organisationsdiagramm (Organigramm) zugeordnet sein. Organigramme spiegeln im Allgemeinen die Strukturen des Steuerungsmanagement wider. Umgekehrt dienen die folgenden Organisationsstrukturen zur Erfassung der Ausrichtung von Rollen und Zuständigkeiten. 
+Die folgenden Organisationsstrukturen müssen nicht unbedingt einem Organisationsdiagramm (Organigramm) zugeordnet sein. Organigramme spiegeln im Allgemeinen die Strukturen des Steuerungsmanagement wider. Umgekehrt dienen die folgenden Organisationsstrukturen zur Erfassung der Ausrichtung von Rollen und Zuständigkeiten.
 
 In einer agilen Matrixorganisation lassen sich diese Strukturen u. U. am besten als virtuelle Teams (oder V-Teams) darstellen. Es spricht nichts dagegen, dass V-Teams in einem Organigramm dargestellt werden, aber es ist kein formales Organigramm erforderlich, um ein effektives Betriebsmodell zu erzielen.
 
@@ -74,7 +74,7 @@ Einführung erfordert Wachstum, und dasselbe gilt für die Notwendigkeit, Gleich
 
 ## <a name="step-5-align-raci-charts"></a>Schritt 5: Ausrichten von RACI-Diagrammen
 
-Auf jeder Reifegradstufe wechselt die Verantwortlichkeit für verschiedene Cloudfunktionen zu neuen Teams. Diese Verlagerung der Verantwortlichkeit ermöglicht schnellere Migrations- und Innovationszyklen, indem Hindernisse für Veränderung beseitigt und automatisiert werden. Für eine geeignete Ausrichtung von Zuweisungen bietet der Artikel über [RACI-Ausrichtung](../organize/raci-alignment.md) ein RACI-Diagramm für jede der referenzierten Organisationsstrukturen.
+Auf jeder Reifegradstufe wechselt die Verantwortlichkeit für verschiedene Cloudfunktionen zu neuen Teams. Diese Verlagerung der Verantwortlichkeit ermöglicht schnellere Migrations- und Innovationszyklen, indem Hindernisse für Veränderung beseitigt und automatisiert werden. Für eine geeignete Ausrichtung von Zuweisungen bietet der Artikel zur [RACI-Ausrichtung](../organize/raci-alignment.md) ein RACI-Diagramm für die einzelnen Organisationsstrukturen.
 
 ## <a name="additional-information"></a>Zusätzliche Informationen
 
