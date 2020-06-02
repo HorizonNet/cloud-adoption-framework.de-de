@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 66419aa1ec4ebf7a1513ae064edd3b24e98758b9
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 00eefa3b865adf4230a77ed2062bef0a7cf0e854
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224288"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753600"
 ---
 # <a name="software-defined-networking-cloud-dmz"></a>Softwaredefiniertes Netzwerk: Cloud-DMZ
 
@@ -37,7 +37,7 @@ Das Bereitstellen einer Cloud-DMZ beinhaltet die folgenden Annahmen:
 Ihr für den Umstieg auf die Cloud zuständiges Team muss die folgenden Aspekte berücksichtigen, wenn die Implementierung einer virtuellen Netzwerkarchitektur mit Cloud-DMZ erwogen wird:
 
 - Durch die Verbindung von lokalen Netzwerken mit Cloudnetzwerken steigt die Komplexität Ihrer Sicherheitsanforderungen. Auch wenn Verbindungen zwischen Cloudnetzwerken und der lokalen Umgebung geschützt ist, müssen Sie dennoch dafür sorgen, dass Cloudressourcen geschützt sind. Alle öffentlichen IP-Adressen, die für den Zugriff auf cloudbasierte Workloads erstellt werden, müssen mit einer [öffentlichen DMZ](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) oder [Azure Firewall](https://docs.microsoft.com/azure/firewall/overview) ordnungsgemäß geschützt werden.
-- Die Cloud-DMZ-Architektur wird häufig als Ausgangspunkt verwendet, während die Konnektivität weiter abgesichert und die Sicherheitsrichtlinien zwischen lokalen und Cloudnetzwerken abgestimmt werden, was eine breitere Einführung einer vollständig hybriden Netzwerkarchitektur ermöglicht. Dies kann jedoch auch für isolierte Bereitstellungen mit spezifischen Sicherheits-, Identitäts- und Konnektivitätsanforderungen gelten, die der Cloud-DMZ-Ansatz erfüllt.
+- Die Cloud-DMZ-Architektur wird häufig als Ausgangspunkt verwendet, während die Konnektivität weiter abgesichert und die Sicherheitsrichtlinien zwischen lokalen und Cloudnetzwerken abgestimmt werden, was eine breitere Einführung einer vollständig hybriden Netzwerkarchitektur ermöglicht. Dies kann auch für isolierte Bereitstellungen mit spezifischen Sicherheits-, Identitäts- und Konnektivitätsanforderungen gelten, die der Cloud-DMZ-Ansatz erfüllt.
 
 ## <a name="learn-more"></a>Weitere Informationen
 

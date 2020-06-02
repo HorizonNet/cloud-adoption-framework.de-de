@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b55a8fbd96f83339cbc696ac9e3c15cbc2916924
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 974a500a846cfe1a907d91b1b055d6b75b94a3d9
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217692"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755213"
 ---
 # <a name="risk-tolerance-metrics-and-indicators-in-the-security-baseline-discipline"></a>Risikotoleranzmetriken und -indikatoren in der Disziplin „Sicherheitsbaseline“
 
@@ -39,7 +39,7 @@ Jede Organisation weist unterschiedliche Sicherheitsumgebungen und -anforderunge
 
 ## <a name="risk-tolerance-indicators"></a>Risikotoleranzindikatoren
 
-Cloudplattformen bieten eine Reihe von Basisfunktionen, die es kleinen Bereitstellungsteams ermöglichen, grundlegende Sicherheitseinstellungen ohne umfangreiche zusätzliche Planung zu konfigurieren. Infolgedessen stellen kleine Dev/Test- oder experimentelle erste Workloads, die keine sensiblen Daten enthalten, ein relativ geringes Risiko dar und werden wahrscheinlich keine hohen Anforderungen in Bezug auf eine formale Richtlinie für die Sicherheitsbaseline bedeuten. Sobald jedoch wichtige Daten oder geschäftskritische Funktionen in die Cloud verschoben werden, steigen die Sicherheitsrisiken, während die Toleranz für diese Risiken schnell abnimmt. Je mehr Ihrer Daten und Funktionen in der Cloud bereitgestellt werden, desto wahrscheinlicher ist es, dass höhere Investitionen in die Disziplin „Sicherheitsbaseline“ erforderlich sind.
+Cloudplattformen bieten eine Reihe von Basisfunktionen, die es kleinen Bereitstellungsteams ermöglichen, grundlegende Sicherheitseinstellungen ohne umfangreiche zusätzliche Planung zu konfigurieren. Infolgedessen stellen kleine Dev/Test- oder experimentelle erste Workloads, die keine sensiblen Daten enthalten, ein relativ geringes Risiko dar und werden wahrscheinlich keine hohen Anforderungen in Bezug auf eine formale Richtlinie für die Sicherheitsbaseline bedeuten. Sobald wichtige Daten oder geschäftskritische Funktionen in die Cloud verschoben werden, steigen die Sicherheitsrisiken, während die Toleranz für diese Risiken schnell abnimmt. Je mehr Ihrer Daten und Funktionen in der Cloud bereitgestellt werden, desto wahrscheinlicher ist es, dass höhere Investitionen in die Disziplin „Sicherheitsbaseline“ erforderlich sind.
 
 In den frühen Phasen der Cloudeinführung arbeiten Sie mit Ihrem IT-Sicherheitsteam und den Projektbeteiligten des Unternehmens zusammen, um [Geschäftsrisiken](./business-risks.md) im Zusammenhang mit der Sicherheit zu identifizieren, und bestimmen anschließend eine akzeptable Baseline für die Sicherheitsrisikotoleranz. Dieser Abschnitt des Cloud Adoption Framework enthält einige Beispiele. Die Risiken und Baselines in Ihrem Unternehmen bzw. bei Ihren Bereitstellungen weichen im Detail möglicherweise davon ab.
 

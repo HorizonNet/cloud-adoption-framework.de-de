@@ -7,18 +7,18 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: d1e8542b1fe53c88773bd477fe7872b6fac02288
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 2780347386db755cab9cc2c0a69549a75463c820
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223489"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862550"
 ---
 # <a name="initial-organization-alignment"></a>Erstausrichtung der Organisation
 
 Der wichtigste Aspekt eines jeden Cloudeinführungsplans ist die Ausrichtung der Mitarbeiter, die den Plan in die Tat umsetzen werden. Kein Plan ist vollständig, bis Sie seine Aspekte verstanden haben, die Personen betreffen.
 
-Eine echte Organisationsausrichtung erfordert Zeit. Es wird wichtig sein, eine langfristige Organisationsausrichtung zu etablieren, insbesondere da die Einführung der Cloud über die gesamte Unternehmens- und IT-Kultur hinweg erfolgt. Ausrichtung ist so wichtig, dass ihr [ein ganzer Abschnitt](../organize/index.md) in der Organisationsmethodik des Cloud Adoption Framework gewidmet wurde.
+Eine echte Organisationsausrichtung erfordert Zeit. Es wird wichtig sein, eine langfristige Organisationsausrichtung zu etablieren, insbesondere da die Einführung der Cloud über die gesamte Unternehmens- und IT-Kultur hinweg erfolgt. Ausrichtung ist so wichtig, dass ihr ein ganzer Abschnitt in der [Organisationsmethodik](../organize/index.md) des Cloud Adoption Framework gewidmet wurde.
 
 Eine vollständige Organisationsausrichtung ist kein erforderlicher Bestandteil des Cloudeinführungsplans. Allerdings ist eine gewisse anfängliche Organisationsausrichtung erforderlich. In diesem Artikel wird ein Ausgangspunkt für die bewährte Methode zur Organisationsausrichtung beschrieben. Der vorliegende Leitfaden kann Ihnen helfen, Ihren Plan abzuschließen und Ihre Teams auf die Einführung der Cloud vorzubereiten. Wenn Sie bereit sind, können Sie den Abschnitt [Organisationsausrichtung](../organize/index.md) verwenden, um diesen Leitfaden für Ihr Organisation anzupassen.
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0860dfc137b8aaa9ad39beeebb3856786eee1318
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 927c42b216ff22aa3b721c5f741e49fe089e2923
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218304"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755970"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>Einführung in die Einhaltung gesetzlicher Bestimmungen
 
@@ -23,7 +23,7 @@ Die Einhaltung von Vorschriften bezieht sich auf die Disziplin und den Prozess, 
 
 Compliance ist für multinationale Organisationen eine große Herausforderung, insbesondere in streng regulierten Branchen wie Gesundheitswesen und Finanzdienstleistungen. Es gelten viele Standards und Bestimmungen, die sich in bestimmten Fällen häufig ändern können. Dadurch ist es schwierig für Unternehmen, mit ständig weiterentwickelten internationalen Gesetzen zur elektronischen Datenverarbeitung Schritt zu halten.
 
-Wie bei Sicherheitskontrollen sollten Organisationen sich über die Unterteilung der Zuständigkeiten bezüglich der Einhaltung gesetzlicher Bestimmungen in der Cloud im Klaren sein. Cloudanbieter bemühen sich sicherzustellen, dass ihre Plattformen und Dienste die gesetzlichen Bestimmungen einhalten. Unternehmen müssen aber auch bestätigen, dass ihre Anwendungen, die Infrastruktur, von der diese Anwendungen abhängen, und die von Drittanbietern bereitgestellten Dienste ebenfalls als konform zertifiziert sind.
+Wie bei Sicherheitskontrollen sollten Organisationen sich über die Unterteilung der Zuständigkeiten bezüglich der Einhaltung gesetzlicher Bestimmungen in der Cloud im Klaren sein. Cloudanbieter bemühen sich sicherzustellen, dass ihre Plattformen und Dienste die gesetzlichen Bestimmungen einhalten. Organisationen müssen auch bestätigen, dass ihre Anwendungen, die Infrastruktur, von der diese Anwendungen abhängen, und die von Drittanbietern bereitgestellten Dienste ebenfalls als konform zertifiziert sind.
 
 Im Folgenden finden Sie Beschreibungen von behördlichen Vorschriften in verschiedenen Branchen und Regionen:
 

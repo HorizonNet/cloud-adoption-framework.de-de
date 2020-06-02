@@ -3,16 +3,16 @@ title: Testgesteuerte Entwicklung für Zielzonen
 description: Testgesteuerte Entwicklung für Zielzonen
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 0eb8597e32f14685e1f1fc69a51673fb1d1d360f
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: d7aa0f388f68e876569ef2e8c3638b77af8ed033
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621806"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755727"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones"></a>Testgesteuerte Entwicklung (TDD) für Zielzonen
 
@@ -20,7 +20,7 @@ Die testgesteuerte Entwicklung ist ein allgemeiner Softwareentwicklungs- und Dev
 
 ![Testgesteuerter Entwicklungsprozess für Cloudzielzonen](../../_images/ready/test-driven-development-process.png)
 
-In der Cloud stellt die Infrastruktur die Ausgabe von Code dar. Ein gut strukturierter, getesteter und überprüfter Code erzeugt eine entwicklungsfähige Zielzone. Gemäß der [Definition von Zielzonen](../landing-zone/index.md): „Eine Zielzone eine durch Code vorbereitete Umgebung zum Hosten Ihrer Workloads. Sie umfasst grundlegende Funktionen unter Verwendung eines definierten Satzes von Clouddiensten und bewährten Methoden, sodass Sie **für die erfolgreiche Durchführung eingerichtet** sind.“ In diesem Artikel wird ein Ansatz vorgestellt, bei dem die testgesteuerte Entwicklung verwendet wird, um den letzten Teil dieser Definition zu erfüllen und gleichzeitig die Anforderungen an Qualität, Sicherheit, Betrieb und Governance zu erfüllen.
+In der Cloud stellt die Infrastruktur die Ausgabe von Code dar. Ein gut strukturierter, getesteter und überprüfter Code erzeugt eine entwicklungsfähige Zielzone. Gemäß der [Definition von Zielzonen](../landing-zone/index.md) ist „eine Zielzone eine mittels Code vorab bereitgestellte Umgebung zum Hosten Ihrer Workloads. Sie umfasst grundlegende Funktionen unter Verwendung eines definierten Satzes von Clouddiensten und bewährten Methoden, sodass Sie **für die erfolgreiche Durchführung eingerichtet** sind.“ In diesem Artikel wird ein Ansatz vorgestellt, bei dem die testgesteuerte Entwicklung verwendet wird, um den letzten Teil dieser Definition zu erfüllen und gleichzeitig die Anforderungen an Qualität, Sicherheit, Betrieb und Governance zu erfüllen.
 
 Dieser Ansatz kann verwendet werden, um einfache Featureanforderungen während der frühen Entwicklung zu erfüllen. Dieser Prozess kann zu einem späteren Zeitpunkt im Lebenszyklus der Cloudeinführung verwendet werden, um Anforderungen an Sicherheit, Betrieb, Governance oder Compliance zu erfüllen.
 

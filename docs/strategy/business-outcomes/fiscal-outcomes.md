@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: bea618638223cc35a429106aa0d59983a16ec511
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 374fe7d5aee3a2277f3bd8c6188f132756e538a1
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401181"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815360"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>Beispiele für Finanzergebnisse
 
@@ -96,7 +96,7 @@ Bevor Sie jedoch einen Transformationsvorschlag mit dieser Art von Überlegungen
 
 Ist ein Betriebskostenmodell gewünscht, kann das folgende Beispiel ein tragfähiges Geschäftsergebnis sein:
 
-- **Beispiel:** Das Rechenzentrum eines Unternehmens wird derzeit jährlich mit _x US-Dollar_ für die nächsten drei Jahre abgeschrieben. Im nächsten Jahr wird für eine Aktualisierung der Hardware ein zusätzlicher Kostenaufwand von _y US-Dollar_ erwartet. Wir können die Kapitalkosten in ein Betriebskostenmodell mit einer gleichmäßigen Rate von _z US-Dollar_ pro Monat umwandeln, wodurch eine bessere Verwaltung und Zurechenbarkeit der Betriebskosten für die Technologie möglich wird.
+- **Beispiel:** Das Rechenzentrum eines Unternehmens wird derzeit jährlich mit _x US-Dollar_ für die nächsten drei Jahre abgeschrieben. Im nächsten Jahr wird für eine Aktualisierung der Hardware ein zusätzlicher Kostenaufwand von _y US-Dollar_ erwartet. Wir können die Kapitalkosten in ein Betriebskostenmodell mit einer gleichmäßigen Rate von _z US-Dollar_ pro Monat umwandeln, wodurch eine bessere Verwaltung und Zurechenbarkeit der Betriebskosten für die Technologie möglich wird.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

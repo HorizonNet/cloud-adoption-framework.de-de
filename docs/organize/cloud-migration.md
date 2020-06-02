@@ -6,17 +6,17 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/04/2020
-ms.openlocfilehash: 876705322aad42ac2dac0eb29d7291d6d6df71ec
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.date: 05/15/2020
+ms.openlocfilehash: a5b3caa04e3f87c30236425aff770e82e0a37b4c
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401004"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755580"
 ---
 # <a name="cloud-migration-functions"></a>Cloudmigrationsfunktionen
 
-Cloudmigrationsteams sind das moderne Äquivalent zu technischen Implementierungs- oder Projektteams. Die Charakteristik der Cloud kann jedoch eine dynamischere Teamstruktur erfordern. Einige Migrationsteams konzentrieren sich ausschließlich auf die Cloudmigration, während andere Teams sich schwerpunktmäßig mit Innovationen beschäftigen, die Cloudtechnologien nutzen. Einige Teams verfügen über das breite technische Fachwissen, das erforderlich ist, um große Einführungsbemühungen wie eine vollständige Rechenzentrumsmigration abzuschließen, während andere einen engeren technischen Fokus haben und zwischen Projekten wechseln können, um bestimmte Ziele zu erreichen, z. B. ein Team von Datenplattformspezialisten, das bei der Konvertierung von SQL-VMs in SQL-PaaS-Instanzen mitwirkt.
+Cloudmigrationsteams sind das moderne Äquivalent zu technischen Implementierungs- oder Projektteams. Die Charakteristik der Cloud kann aber eine dynamischere Teamstruktur erfordern. Einige Migrationsteams konzentrieren sich ausschließlich auf die Cloudmigration, während andere Teams sich schwerpunktmäßig mit Innovationen beschäftigen, die Cloudtechnologien nutzen. Einige Teams verfügen über das breite technische Fachwissen, das erforderlich ist, um große Einführungsbemühungen wie eine vollständige Rechenzentrumsmigration abzuschließen, während andere einen engeren technischen Fokus haben und zwischen Projekten wechseln können, um bestimmte Ziele zu erreichen, z. B. ein Team von Datenplattformspezialisten, das bei der Konvertierung von SQL-VMs in SQL-PaaS-Instanzen mitwirkt.
 
 Unabhängig von der Art oder Anzahl der Cloudmigrationsteams bieten diese Teams in der Regel fachliche Expertise für IT, Geschäftsanalysen oder Implementierungspartner.
 

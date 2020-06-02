@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 37826614e405ddb5cb15db62ffce7cfe43b2ec20
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 88f153d80df79098c4228a6012f513f42f3a2f64
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216638"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756412"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>Plattformspezialisierung für die Cloudverwaltung
 
@@ -32,7 +32,7 @@ In dieser Tabelle werden einige gängige Prozesse, Tools und potenzielle Auswirk
 
 | Prozess | Tool | Zweck  | Vorgeschlagene Verwaltungsebene |
 |---|---|---|---|
-| Verbessern des Systementwurfs | Azure Architecture Framework | Verbessern des Architekturentwurfs der Plattform, um Vorgänge zu verbessern | – |
+| Verbessern des Systementwurfs | Microsoft Azure Well-Architected Framework | Verbessern des Architekturentwurfs der Plattform, um Vorgänge zu verbessern | – |
 | Automatisieren der Bereinigung | Azure-Automatisierung | Reagieren auf erweiterte Plattformdaten mit plattformspezifischer Automatisierung | Plattformbetrieb |
 | Dienstkatalog | Center für verwaltete Anwendungen | Bereitstellen eines Self-Service-Katalogs genehmigter Lösungen, die Organisationsstandards erfüllen | Plattformbetrieb |
 | Containerleistung | Azure Monitor für Container | Überwachung und Diagnose von Containern | Plattformbetrieb |
@@ -61,9 +61,9 @@ Die Plattformspezialisierung besteht aus einer disziplinierten Ausführung der f
 
 Das Verbessern des Systementwurfs ist der effektivste Ansatz zur Optimierung des Betriebs jeder gängigen Plattform. Durch Verbesserungen des Systementwurfs können die Stabilität erhöht und Betriebsunterbrechungen verringert werden. Der Entwurf einzelner Systeme wird für die Umgebungssicht nicht berücksichtigt, die das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure einnimmt.
 
-Als Ergänzung zum Framework für die Cloudeinführung bietet das Azure Architecture Framework bewährte Methoden zur Verbesserung der Resilienz und des Entwurfs eines bestimmten Systems. Diese Entwurfsverbesserungen können für den Systementwurf einer Plattform oder einer bestimmten Workload übernommen werden.
+Als Ergänzung zum Framework für die Cloudeinführung bietet das Microsoft Azure Well-Architected Framework bewährte Methoden zur Verbesserung der Resilienz und des Entwurfs eines bestimmten Systems. Diese Entwurfsverbesserungen können für den Systementwurf einer Plattform oder einer bestimmten Workload übernommen werden.
 
-Azure Architecture Framework konzentriert sich auf die Verbesserung von fünf Grundpfeilern des Systementwurfs:
+Das Microsoft Azure Well-Architected Framework konzentriert sich auf die Verbesserung von fünf Grundpfeilern des Systementwurfs:
 
 - **Skalierbarkeit:** Skalieren der allgemeinen Plattformressourcen, um eine gestiegene Last zu bewältigen.
 - **Verfügbarkeit:** Verringern von Geschäftsunterbrechungen durch Verlängern der potenziellen Betriebszeit.
@@ -75,7 +75,7 @@ Technische Schulden und architektonische Mängel verursachen die meisten Unterbr
 
 Die folgende Registerkarte **Automatisierte Korrektur** zeigt Wege zur Behebung von technischen Schulden, die nicht behandelt werden können oder sollten.
 
-Erfahren Sie mehr über das [Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/guide/pillars) zum Verbessern des Systementwurfs.
+Erfahren Sie mehr über das [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/guide/pillars) zum Verbessern des Systementwurfs.
 
 Bei zunehmender Verbesserung des Systementwurfs kehren Sie zu diesem Artikel zurück, um neue Möglichkeiten zur Verbesserung und Skalierung dieser Verbesserungen in Ihrer Umgebung zu finden.
 

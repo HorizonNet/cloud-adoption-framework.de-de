@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b56c599be38c83c325ffbd00fba077452019e0e3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 4850fe8377c642ae7af2c763ee28c13d90f25b61
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220395"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754984"
 ---
 # <a name="deployment-acceleration-policy-compliance-processes"></a>Beschleunigung der Bereitstellung – Prozesse für die Richtlinienkonformität
 
-In diesem Artikel wird ein Ansatz für die Prozesse zur Einhaltung der Richtlinien beschrieben, mit denen die [Disziplin „Beschleunigung der Bereitstellung“](./index.md) gesteuert wird. Eine wirkungsvolle Governance für die Cloudkonfiguration beginnt mit sich wiederholenden manuellen Prozessen, die zum Erkennen von Problemen und zum Festlegen der Richtlinien entwickelt wurden, die diese Risiken minimieren sollen. Sie können diese Prozesse jedoch auch automatisieren und mit Tools unterstützen, um den durch die Governance bedingten Mehraufwand zu reduzieren und eine schnellere Reaktion auf Abweichungen zu ermöglichen.
+In diesem Artikel wird ein Ansatz für die Prozesse zur Einhaltung der Richtlinien beschrieben, mit denen die [Disziplin „Beschleunigung der Bereitstellung“](./index.md) gesteuert wird. Eine wirkungsvolle Governance für die Cloudkonfiguration beginnt mit sich wiederholenden manuellen Prozessen, die zum Erkennen von Problemen und zum Festlegen der Richtlinien entwickelt wurden, die diese Risiken minimieren sollen. Sie können diese Prozesse automatisieren und ergänzen, um den durch die Governance bedingten Mehraufwand zu reduzieren und eine schnellere Reaktion auf Abweichungen zu ermöglichen.
 
 ## <a name="planning-review-and-reporting-processes"></a>Planungs-, Prüfungs- und Berichterstellungsprozesse
 
@@ -61,7 +61,7 @@ Die folgenden Auslöser und Durchsetzungsmaßnahmen sind Beispiele, die Sie bei 
 
 Verwenden Sie die [Vorlage zur Disziplin „Beschleunigung der Bereitstellung“](./template.md) zum Dokumentieren der Prozesse und Auslöser, die sich am aktuellen Cloudeinführungsplan orientieren.
 
-Anleitungen zur Ausführung von Cloudverwaltungsrichtlinien in Abstimmung mit Einführungsplänen finden Sie im Artikel über Verbesserungen von Disziplinen.
+Anleitungen zur Ausführung von Cloudverwaltungsrichtlinien in Abstimmung mit Einführungsplänen finden Sie unter [Verbesserung der Disziplin „Beschleunigung der Bereitstellung“](./discipline-improvement.md).
 
 > [!div class="nextstepaction"]
 > [Verbesserung der Disziplin „Beschleunigung der Bereitstellung“](./discipline-improvement.md)

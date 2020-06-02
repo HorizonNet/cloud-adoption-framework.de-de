@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 93aec136df947f9df94d188dffce79f037cf8fed
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 0f85ccbd46587724cba23b859722c4f4fcdc3e88
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621557"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756327"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
@@ -146,9 +146,9 @@ Die folgende Tabelle enthält Namensmuster für einige Beispieltypen von Azure-R
 
 | Entität | `Scope` | Länge | Schreibweise | Gültige Zeichen | Vorgeschlagenes Muster | Beispiel |
 | --- | --- | --- | --- | --- | --- | --- |
-| Resource group | Subscription | 1-90 | Groß-/Kleinschreibung nicht beachten | Alphanumerisch, Unterstrich, Klammern, Bindestrich, Punkt (außer am Ende) und Unicode-Zeichen | `<service short name>-<environment>-rg` | `profx-prod-rg` |
-| Verfügbarkeitsgruppe | Resource group | 1-80 | Groß-/Kleinschreibung nicht beachten | Alphanumerisch, Unterstrich und Bindestrich | `<service-short-name>-<context>-as` | `profx-sql-as` |
-| Tag | Zugeordnete Entität | 512 (Name), 256 (Wert) | Groß-/Kleinschreibung nicht beachten | Alphanumerisch | `"key" : "value"` | `"department" : "Central IT"` |
+| Resource group | Subscription | 1-90 | Groß-/Kleinschreibung nicht beachten | Alphanumerisch, Unterstrich, Klammern, Bindestrich, Punkt (außer am Ende) und Unicode-Zeichen | `<service short name>-<environment>-Rg` | `profx-prod-rg` |
+| Verfügbarkeitsgruppe | Resource group | 1-80 | Groß-/Kleinschreibung nicht beachten | Alphanumerisch, Unterstrich und Bindestrich | `<service-short-name>-<context>-As` | `profx-SQL-as` |
+| Tag | Zugeordnete Entität | 512 (Name), 256 (Wert) | Groß-/Kleinschreibung nicht beachten | Alphanumerisch | `"Key" : "value"` | `"Department" : "Central IT"` |
 
 # <a name="resource-tags"></a>[Ressourcentags](#tab/ResourceTags)
 
@@ -158,8 +158,8 @@ Nach dem Anwenden von Tags können Sie alle Ressourcen in Ihrem Abonnement abruf
 
 Sie können Tags auch für viele andere Dinge verwenden. Sie werden häufig für folgende Aufgaben genutzt:
 
-- **Metadaten und Dokumentation**: Durch Anwenden eines Tags wie „ProjectOwner“ können Administratoren problemlos Details zu den Ressourcen anzeigen, an denen sie arbeiten.
-- **Automatisierung:** Unter Umständen verfügen Sie über regelmäßig ausgeführte Skripts, die basierend auf einem Tagwert wie „ShutdownTime“ oder „DeprovisionDate“ eine Aktion durchführen können.
+- **Metadaten und Dokumentation**: Durch Anwenden eines Tags wie `projectowner` können Administratoren problemlos Details zu den Ressourcen anzeigen, an denen sie arbeiten.
+- **Automatisierung:** Unter Umständen verfügen Sie über regelmäßig ausgeführte Skripts, die basierend auf einem Tagwert wie `shutdowntime` oder `deprovisiondate` eine Aktion durchführen können.
 - **Kostenoptimierung:** Sie können den Teams und Mitarbeitern, die für die Kosten verantwortlich sind, Ressourcen zuweisen. In Azure Cost Management können Sie das Kostenstellentag als Filter anwenden, um die Gebühren basierend auf der Nutzung eines Teams oder einer Abteilung zu melden.
 
 Jede Ressource oder Ressourcengruppe kann maximal 50 Tagname-Wert-Paare aufweisen. Diese Einschränkung gilt nur für Tags, die direkt auf die Ressourcengruppe oder die Ressource angewendet werden.

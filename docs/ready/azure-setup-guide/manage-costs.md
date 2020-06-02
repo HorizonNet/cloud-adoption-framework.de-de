@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: f80d8de3133f6579673cd9cfc04a1ab2a8660539
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: db27550b06f498c8bb4b7f65c7e50c80a4e47c0d
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621609"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756361"
 ---
 <!-- cSpell:ignore dchimes -->
 
@@ -38,7 +38,7 @@ Azure Cost Management bietet verschiedene Funktionen für die Kostenprognose und
 ### <a name="predict-and-manage-costs"></a>Prognostizieren und Verwalten von Kosten
 
 1. Wechseln Sie zu [Kostenverwaltung + Abrechnung](https://portal.azure.com/#blade/Microsoft_Azure_Billing/ModernBillingMenuBlade/Overview).
-1. Wählen Sie **Cost Management** aus.
+1. Wählen Sie **Kostenverwaltung** aus.
 1. Sehen Sie sich die Features zum Analysieren und Optimieren von Cloudkosten an.
 
 ### <a name="manage-invoices-and-payment-methods"></a>Verwalten von Rechnungen und Zahlungsmethoden
@@ -54,14 +54,14 @@ Unser Abrechnungs- und Abonnementsupport steht Azure-Kunden täglich rund um die
 
 So übermitteln Sie eine neue Supportanfrage:
 
-1. Navigieren Sie zu [Hilfe und Support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
+1. Navigieren Sie zu [Hilfe + Support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
 1. Wählen Sie **Neue Supportanfrage** aus.
 
 ### <a name="view-a-support-request"></a>Anzeigen einer Supportanfrage
 
 So zeigen Sie Ihre Supportanfragen und deren Status an:
 
-1. Navigieren Sie zu [Hilfe und Support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
+1. Navigieren Sie zu [Hilfe + Support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
 1. Wählen Sie **Alle Supportanfragen** aus.
 
 ## <a name="learn-more"></a>Weitere Informationen

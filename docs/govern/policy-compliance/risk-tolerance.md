@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 9855b9d56025af86f62dc4e7f055e1584cbbe993
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: e5dd2effba64b4aee4a60f8264e8ca9499a0f5fd
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218287"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755953"
 ---
 # <a name="evaluate-risk-tolerance"></a>Evaluieren der Risikotoleranz
 
@@ -39,15 +39,15 @@ Oben sind einige der gängigsten von Kunden genannten Risiken aufgeführt. Das C
 
 ## <a name="understand-risk-tolerance"></a>Verstehen der Risikotoleranz
 
-Die Identifikation von Risiken ist ein relativ direkter Prozess. IT-bezogene Risiken sind in der Regel branchenübergreifend identisch. Die Toleranz für diese Risiken ist jedoch spezifisch für jede Organisation. An diesem Punkt laufen Gespräche zwischen Unternehmen und IT tendenziell auseinander. Die beiden Gesprächspartner sprechen im Wesentlichen eine andere Sprache. Die folgenden Vergleiche und Fragen sollen als Einstieg für Diskussionen dienen, die es beiden Parteien ermöglichen, die Risikobereitschaft besser zu verstehen und einzuschätzen.
+Die Identifikation von Risiken ist ein relativ direkter Prozess. IT-bezogene Risiken sind in der Regel branchenübergreifend identisch. Die Toleranz für diese Risiken ist für jede Organisation spezifisch. An diesem Punkt laufen Gespräche zwischen Unternehmen und IT tendenziell auseinander. Die beiden Gesprächspartner sprechen im Wesentlichen eine andere Sprache. Die folgenden Vergleiche und Fragen sollen als Einstieg für Diskussionen dienen, die es beiden Parteien ermöglichen, die Risikobereitschaft besser zu verstehen und einzuschätzen.
 
 ## <a name="simple-use-case-for-comparison"></a>Einfacher Anwendungsfall zum Vergleich
 
-Um die Risikotoleranz zu verstehen, untersuchen wir die Kundendaten. Wenn ein Unternehmen in einer beliebigen Branche Kundendaten auf einem ungesicherten Server ablegt, bleibt das technische Risiko, ob diese Daten kompromittiert oder gestohlen werden, mehr oder weniger gleich. Wie ein Unternehmen dieses Risiko jedoch toleriert, hängt stark von Art und potenziellem Wert der Daten ab.
+Um die Risikotoleranz zu verstehen, untersuchen wir die Kundendaten. Wenn ein Unternehmen in einer beliebigen Branche Kundendaten auf einem ungesicherten Server ablegt, bleibt das technische Risiko, ob diese Daten kompromittiert oder gestohlen werden, mehr oder weniger gleich. Die Toleranz für dieses Risiko hängt stark von Art und potenziellem Wert der Daten ab.
 
 - Unternehmen im Gesundheits- und Finanzwesen in den Vereinigten Staaten unterliegen strikten Konformitätsanforderungen von Drittanbietern. Es wird vorausgesetzt, dass personenbezogene Daten sowie gesundheitsbezogene Daten extrem vertraulich zu behandeln sind. Für diese Arten von Unternehmen gibt es schwerwiegende Konsequenzen, wenn sie an dem oben beschriebenen Risikoszenario beteiligt sind. Ihre Toleranz wird dementsprechend extrem gering sein. Alle innerhalb oder außerhalb des Netzwerks veröffentlichten Kundendaten müssen durch diese Drittanbieter-Konformitätsrichtlinien verwaltet werden.
 - Ein Spieleunternehmen, dessen Kundendaten sich auf Benutzernamen, Spielzeiten und Bestenlisten beschränken, muss abgesehen von einem Imageschaden wahrscheinlich keine schwerwiegenden Folgen befürchten, wenn es das oben beschriebene riskante Verhalten an den Tag legt. Ungeschützte Daten sind zwar gefährdet, die Auswirkungen sind jedoch gering. Daher ist die Risikotoleranz in diesem Fall hoch.
-- Ein mittelständisches Unternehmen, das Tausenden von Kunden einen Teppichreinigungsdienst anbietet, fällt zwischen diese beiden Toleranzextreme. Kundendaten sind möglicherweise ausführlicher und enthalten Details wie Adresse oder Telefonnummer. Beide können als personenbezogene Informationen betrachtet werden, die zu schützen sind. Allerdings gibt es möglicherweise keine spezifische Governanceanforderung, die vorschreibt, dass die Daten abgesichert werden müssen. Aus der IT-Perspektive ist die Antwort einfach: Die Daten müssen geschützt werden. Aus geschäftlicher Sicht ist die Sache möglicherweise nicht so einfach. Das Unternehmen benötigt weitere Details, bevor es ein Maß an Toleranz für dieses Risiko ermitteln kann.
+- Ein mittelständisches Unternehmen, das Tausenden von Kunden einen Teppichreinigungsdienst anbietet, fällt zwischen diese beiden Toleranzextreme. Kundendaten sind möglicherweise ausführlicher und enthalten Details wie Adressen und Telefonnummern. Beide werden als personenbezogene Informationen betrachtet, die zu schützen sind, es besteht aber keine spezifische Governanceanforderung, die vorschreibt, dass die Daten abgesichert werden müssen. Aus der IT-Perspektive ist die Antwort einfach: Die Daten müssen geschützt werden. Aus geschäftlicher Sicht ist die Sache möglicherweise nicht so einfach. Das Unternehmen benötigt weitere Details, bevor es ein Maß an Toleranz für dieses Risiko ermitteln kann.
 
 Der nächste Abschnitt enthält einige Beispielfragen, anhand derer das Unternehmen ein Maß an Risikotoleranz für den obigen und andere Anwendungsfälle festlegen kann.
 
@@ -80,7 +80,7 @@ Diese grundlegenden Fragen führen zu vielen weiteren Fragen. Nachdem Sie einen 
 - Was wird vom Unternehmen benötigt, um die Kosten zu überprüfen?
 - Welche weiteren Vorteile können sich aus der Lösung ergeben, die dieses Risiko beseitigt?
 
-Diese Fragen vereinfachen die technischen Lösungen zu sehr, die für das Management oder die Beseitigung von Risiken erforderlich sind. Die Fragen kommunizieren diese Lösungen jedoch in einer Weise, die dem Unternehmen einen schnellen Einstieg in den Entscheidungsprozess ermöglicht.
+Diese Fragen vereinfachen die technischen Lösungen zu sehr, die für das Management oder die Beseitigung von Risiken erforderlich sind, sie kommunizieren diese Lösungen jedoch in einer Weise, die dem Unternehmen einen schnellen Einstieg in den Entscheidungsprozess ermöglicht.
 
 **Wahrscheinlichkeit von Datenverlusten:** Fragen zum Ermitteln der Wahrscheinlichkeit, dass der Risikofall eintritt. Dieser Bereich ist am schwierigsten zu beziffern. Stattdessen wird empfohlen, das Cloudgovernanceteam basierend auf den zugrunde liegenden Daten Kategorien festlegen zu lassen, mit deren Hilfe die Wahrscheinlichkeit vermittelt werden kann. Die folgenden Fragen können beim Erstellen von für das Team sinnvollen Kategorien hilfreich sein.
 
@@ -94,10 +94,10 @@ Nach Beantwortung dieser und weiterer Fragen nach Ermessen des Cloudgovernancete
 
 - **Keine Anhaltspunkte:** Es gab noch nicht genügend Untersuchungen, um die Wahrscheinlichkeit zu ermitteln.
 - **Geringes Risiko:** Aktuelle Untersuchungen deuten darauf hin, dass es unwahrscheinlich ist, dass das Risiko eintritt.
-- **Zukünftiges Risiko:** Die aktuelle Wahrscheinlichkeit ist gering. Bei fortgesetzter Einführung wäre jedoch eine neue Analyse erforderlich.
+- **Zukünftiges Risiko:** Die aktuelle Wahrscheinlichkeit ist gering. Bei fortgesetzter Einführung wäre eine neue Analyse erforderlich.
 - **Mittleres Risiko:** Es ist wahrscheinlich, dass sich das Risiko auf das Unternehmen auswirkt.
 - **Hohes Risiko:** Im Lauf der Zeit wird es zunehmend wahrscheinlicher, dass das Unternehmen dieses Risiko eingeht.
-- **Abnehmendes Risiko:** Das Risiko ist mittel bis hoch. Die Wahrscheinlichkeit von Auswirkungen lässt sich jedoch durch Maßnahmen in der IT oder im Unternehmen reduzieren.
+- **Abnehmendes Risiko:** Das Risiko ist mittel bis hoch. Die Wahrscheinlichkeit von Auswirkungen lässt sich durch Maßnahmen in der IT oder im Unternehmen reduzieren.
 
 **Ermitteln der Toleranz:**
 

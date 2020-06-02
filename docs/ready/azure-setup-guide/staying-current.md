@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: d0c3379da2962236dfb64ff45a5a9495b8a3fc36
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 25972ae001dd9cb153a2f6ae5e75f627ce86b7d6
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80808786"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756310"
 ---
 <!-- cSpell:ignore jelledruyts andym endjin -->
 
@@ -31,7 +31,7 @@ Cloudplattformen wie Microsoft Azure verändern sich schneller, als es viele Unt
 Die folgenden Ressourcen können Ihnen dabei helfen, mit Azure auf dem Laufenden zu bleiben:
 
 - [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview)
-  - Service Health und Warnungen stellen zeitnah Benachrichtigungen über bestehende Dienstprobleme, geplante Wartungsmaßnahmen und Integritätsempfehlungen bereit. Diese Ressource enthält auch Informationen zu den Features, die aus Azure entfernt werden.
+  - Service Health-Warnungen stellen zeitnah Benachrichtigungen über bestehende Dienstprobleme, geplante Wartungsmaßnahmen und Integritätsempfehlungen bereit. Diese Ressource enthält auch Informationen zu den Features, die aus Azure entfernt werden.
 - [Azure-Updates](https://azure.microsoft.com/updates)
   - Abonnieren Sie Azure-Updates, um Ankündigungen zu Produktupdates zu erhalten. Kurze Zusammenfassungen enthalten Links zu ausführlicheren Informationen, wodurch Updates leicht nachvollziehbar sind.
   - Führen Sie das Abonnieren per [RSS](https://azurecomcdn.azureedge.net/updates/feed) durch.
@@ -59,7 +59,7 @@ Unter den folgenden Ressourcen finden Sie weitere Inhalte, die Ihnen helfen, bez
 - [Azure Charts](https://azurecharts.com)*
   - In dieser Visualisierung sind alle Azure-Updates der letzten sechs Monate dargestellt. Sie enthält weitere hilfreiche Diagramme und Hilfsprogramme, die Sie bei der Nachverfolgung von Azure-Änderungen unterstützen.
 - [AzAdvertizer](https://www.azadvertizer.net)*
-  - Release- und Änderungsnachverfolgung für Azure Governance-Funktionen, z. B. Azure Policy, Richtlinieninitiativen, Richtlinienaliase und rollenbasierte Zugriffssteuerung (RBAC).
+  - Release- und Änderungsnachverfolgung für Azure-Governancefunktionen, z. B. Azure Policy, Richtlinieninitiativen, Richtlinienaliase und rollenbasierte Zugriffssteuerung (RBAC).
 - [Wöchentlicher Azure-Newsletter (Azure Weekly)](https://azureweekly.info)*
   - Dieser von [endjin](https://endjin.com) bereitgestellte Newsletter enthält eine Zusammenfassung der wichtigsten News der Woche zu Microsoft Azure. Er enthält auch interessante historische Inhalte.
   - Abonnieren Sie dies per [E-Mail](https://azureweekly.info).

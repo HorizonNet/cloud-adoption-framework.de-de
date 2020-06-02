@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 41134eacc0fbb5356fdff1a56dc292465e6e8750
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f874edbb899512cce5a3868ffa7426b188cedb7d
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223880"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756446"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>Umsetzen von Entwurfsprinzipien und erweiterten Vorgängen
 
@@ -75,9 +75,9 @@ Im Rahmen jeder Spezialisierung erfolgt der folgende vierstufige Prozess in eine
 
 ### <a name="improve-system-design"></a>Verbessern des Systementwurfs
 
-Das Verbessern des Systementwurfs ist der effektivste Ansatz zur Optimierung des Betriebs jeder gängigen Plattform. Verbesserungen des Systementwurfs können die Stabilität erhöhen und Betriebsunterbrechungen verringern. Der Entwurf einzelner Systeme wird für die Umgebungssicht nicht berücksichtigt, die das Framework für die Cloudeinführung (Cloud Adoption Framework) einnimmt. Als Ergänzung dieses Frameworks bietet das Azure Architecture Framework bewährte Methoden zur Verbesserung der Resilienz und des Entwurfs eines bestimmten Systems. Sie können diese Entwurfsverbesserungen für den Systementwurf einer Plattform oder einer bestimmten Workload übernehmen.
+Das Verbessern des Systementwurfs ist der effektivste Ansatz zur Optimierung des Betriebs jeder gängigen Plattform. Verbesserungen des Systementwurfs können die Stabilität erhöhen und Betriebsunterbrechungen verringern. Der Entwurf einzelner Systeme wird für die Umgebungssicht nicht berücksichtigt, die das Framework für die Cloudeinführung (Cloud Adoption Framework) einnimmt. Ergänzend zu diesem Framework bietet das Microsoft Azure Well-Architected Framework bewährte Methoden zur Verbesserung der Resilienz und des Entwurfs eines bestimmten Systems. Sie können diese Entwurfsverbesserungen für den Systementwurf einer Plattform oder einer bestimmten Workload übernehmen.
 
-Das Azure Architecture Framework konzentriert sich auf die Verbesserung von fünf Grundpfeilern des Systementwurfs:
+Das Microsoft Azure Well-Architected Framework konzentriert sich auf die Verbesserung von fünf Grundpfeilern des Systementwurfs:
 
 - **Skalierbarkeit:** Skalieren der allgemeinen Plattformressourcen, um eine gestiegene Last zu bewältigen.
 - **Verfügbarkeit:** Verringern von Geschäftsunterbrechungen durch Verlängern der potenziellen Betriebszeit.
@@ -87,7 +87,7 @@ Das Azure Architecture Framework konzentriert sich auf die Verbesserung von fün
 
 Die meisten Betriebsunterbrechungen sind Folge einer Form von technischen Schulden oder einer unzulänglichen Architektur. Bei bestehenden Bereitstellungen können Verbesserungen des Systementwurfs als das Abtragen bestehender technischer Schulden angesehen werden. Bei Neubereitstellungen können Verbesserungen des Systementwurfs als das Vermeiden technischer Schulden verstanden werden. Der nächste Abschnitt, „Automatisierte Korrektur“, befasst sich mit Möglichkeiten, technische Schulden anzugehen, die nicht beseitigt werden können oder sollten.
 
-Um den Systementwurf zu verbessern, erfahren Sie mehr über das [Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/guide/pillars). Bei zunehmender Verbesserung Ihres Systementwurfs kehren Sie zu diesem Artikel zurück, um neue Möglichkeiten zur Verbesserung und Skalierung dieser Verbesserungen in Ihrer Umgebung zu finden.
+Um den Systementwurf zu verbessern, erfahren Sie mehr über das [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/guide/pillars). Bei zunehmender Verbesserung Ihres Systementwurfs kehren Sie zu diesem Artikel zurück, um neue Möglichkeiten zur Verbesserung und Skalierung dieser Verbesserungen in Ihrer Umgebung zu finden.
 
 ### <a name="automated-remediation"></a>Automatisierte Korrektur
 

@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d9643f0bc303c6557d02f107fc91c7654c25ec0d
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: bab10ca8c3055cfa3b2ca94bec0eb8f052a096de
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621788"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755713"
 ---
 # <a name="first-landing-zone"></a>Erste Landezone
 
@@ -41,8 +41,8 @@ Die Auswahl der ersten Zielzone hängt von verschiedenen Variablen ab. In der fo
 
 | Zielzone                                 | Erfahrung mit der Cloud  | Skalieren             | Ermittlungszeit | Produktionsbereit | Hybrid             | Sensible Daten     | Unternehmenskritisch   | Kompatibilität         |
 |----------------------------------------------|-------------------|-------------------|----------------|------------------|--------------------|--------------------|--------------------|--------------------|
-| [CAF-Migrationslandezone](./migrate-landing-zone.md)     | Cloud-Einsteiger      | < 1.000 Ressourcen    | 1 bis 5 Tage    | Begrenzter Umfang -> | Erweiterung erforderlich | Erweiterung erforderlich | Erweiterung erforderlich | Erweiterung erforderlich |
-| [CAF Terraform-Zielzone](./terraform-landing-zone.md) | Verschiedene Vorlagen | Verschiedene Vorlagen | 10 bis 20 Wochen | Begrenzter Umfang -> | Module verfügbar  | Module verfügbar  | Module verfügbar  | Module verfügbar  |
+| [CAF-Migrationslandezone](./migrate-landing-zone.md)     | Cloud-Einsteiger      | < 1.000 Ressourcen    | 1 bis 5 Tage    | Begrenzter Umfang -> | Erweiterung erforderlich | Erweiterung erforderlich | Erweiterung erforderlich | Erweiterung erforderlich |
+| [CAF Terraform-Zielzone](./terraform-landing-zone.md) | Verschiedene Vorlagen | Verschiedene Vorlagen | 10 bis 20 Wochen | Begrenzter Umfang -> | Module verfügbar  | Module verfügbar  | Module verfügbar  | Module verfügbar  |
 
 In der folgenden Tabelle werden die gleichen Zielzonen aus einer etwas anderen Perspektive angezeigt, um technische Entscheidungsprozesse zu unterstützen.
 

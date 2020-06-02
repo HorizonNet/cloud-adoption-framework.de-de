@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 574dba7b2c5db10b007dcf6cb7ecdd6dc93a0111
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: dd3d1b0bcbef071c1b5d819071a0f539948ec273
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401160"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861054"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
@@ -255,7 +255,7 @@ Im [Leitfaden zur Azure-Datenbankmigration](https://datamigration.microsoft.com)
 
 Bei Projekten, die nicht nachverfolgt und verwaltet werden, treten eher Probleme auf. Um ein erfolgreiches Ergebnis zu gewährleisten, empfehlen wir dringend, ein Projektmanagementtool zu verwenden. Es gibt viele verschiedene Tools, und Projektmanager in Ihrer Organisation haben möglicherweise bereits einen Favoriten.
 
-Als Tool für die Projektverwaltung während einer Cloudmigration wird Azure DevOps empfohlen. Das Framework für die Cloudeinführung enthält ein Tool zur automatischen Bereitstellung einer Projektvorlage, um die Verwendung von Azure DevOps zu beschleunigen. Diese Vorlage umfasst die Aufgaben, die bei einer Migration üblicherweise ausgeführt werden. Stellen Sie die Vorlage wie [hier](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/template) beschrieben bereit. Anschließend können Sie die Vorlage ändern, um sie auf die zu migrierenden [Workloads](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/workloads) und [Ressourcen](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/assets) abzustimmen.
+Als Tool für die Projektverwaltung während einer Cloudmigration wird Azure DevOps empfohlen. Das Framework für die Cloudeinführung enthält ein Tool zur automatischen Bereitstellung einer Projektvorlage, um die Verwendung von Azure DevOps zu beschleunigen. Diese Vorlage umfasst die Aufgaben, die bei einer Migration üblicherweise ausgeführt werden. Stellen Sie die Vorlage mithilfe der Anweisungen unter [Cloudeinführungsplan und Azure DevOps](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/template) bereit. Anschließend können Sie die Vorlage ändern, um sie auf die zu migrierenden [Workloads](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/workloads) und [Ressourcen](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/assets) abzustimmen.
 
 Microsoft bietet außerdem folgende Projektverwaltungstools zur Erweiterung des Funktionsspektrums an:
 

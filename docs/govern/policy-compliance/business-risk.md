@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: e0da2ec011f2fc6a823868d877780906ab472111
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 07c7534397f2664113cae33b66ca635766f6eb11
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224305"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862312"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -45,9 +45,9 @@ Während einer Cloudtransformation haben sowohl das Unternehmen als auch das IT-
 
 ## <a name="what-is-a-business-risk-mvp"></a>Was ist ein Geschäftsrisiko-MVP?
 
-**Minimum Viable Product** ist ein gängiger Ausdruck, um die kleinste Einheit einer Ressource zu definieren, die einen spürbaren Wert erzeugen kann. Bei einem Geschäftsrisiko-MVP geht das Cloudgovernanceteam zunächst davon aus, dass einige Ressourcen irgendwann in einer Cloudumgebung bereitgestellt werden. Es ist zu diesem Zeitpunkt nicht bekannt, was diese Ressourcen sind, und das Team kann sich nicht sicher sein, welche Arten von Daten für diese Ressourcen gespeichert werden.
+**Minimum Viable Product (MVP)** ist ein gängiger Ausdruck, um die kleinste Einheit einer Ressource zu definieren, die einen spürbaren Wert erzeugen kann. Bei einem Geschäftsrisiko-MVP geht das Cloudgovernanceteam zunächst davon aus, dass einige Ressourcen irgendwann in einer Cloudumgebung bereitgestellt werden. Es ist zu diesem Zeitpunkt nicht bekannt, was diese Ressourcen sind, und das Team kann sich nicht sicher sein, welche Arten von Daten für diese Ressourcen gespeichert werden.
 
-Beim Planen des Geschäftsrisikos kann das Cloudgovernanceteam für den ungünstigsten Fall vorsorgen und der Cloud jede erdenkliche Richtlinie zuordnen. Die Identifizierung aller potenziellen Geschäftsrisiken für alle Cloudnutzungsszenarien kann jedoch erheblichen Zeit- und Arbeitsaufwand erfordern, was die Implementierung von Governance für Ihre Cloudworkloads verzögern kann. Dies ist nicht empfehlenswert, aber es ist eine Option.
+Beim Planen des Geschäftsrisikos kann das Cloudgovernanceteam für den ungünstigsten Fall vorsorgen und der Cloud jede erdenkliche Richtlinie zuordnen. Die Identifizierung aller potenziellen Geschäftsrisiken für alle Cloudnutzungsszenarien kann erheblichen Zeit- und Arbeitsaufwand erfordern, was die Implementierung von Governance für Ihre Cloudworkloads verzögern kann. Dies ist nicht empfehlenswert, aber es ist eine Option.
 
 Im Gegensatz dazu kann ein MVP-Ansatz es dem Team ermöglichen, einen anfänglichen Ausgangspunkt und eine Reihe von Annahmen zu definieren, die für die meisten/alle Ressourcen gelten würden. Dieses Geschäftsrisiko-MVP unterstützt anfängliche Implementierungen in kleinem Maßstab oder Testcloudbereitstellungen und dient dann als Grundlage für die schrittweise Identifizierung und Behebung neuer Risiken, wenn Geschäftsanforderungen entstehen oder zusätzliche Workloads in Ihre Cloudumgebung aufgenommen werden. Dieser Prozess ermöglicht es Ihnen, Governance während des gesamten Cloudübernahmeprozesses anzuwenden.
 

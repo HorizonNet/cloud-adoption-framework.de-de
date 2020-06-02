@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: f68976fd07ea5a35078b70d3f18b656e6ba3f683
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: a513c5727473d1e42b7fbecb6e0015aeb311fd0d
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223506"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755283"
 ---
 # <a name="organizational-antipatterns-silos-and-fiefdoms"></a>Antimuster in Unternehmen: Silos und Machtbereiche
 
@@ -59,7 +59,7 @@ Auch in toxischen Unternehmenskulturen sollte es durch die Arbeit des CCoE und d
 
 ## <a name="it-silos"></a>IT-Silos
 
-Teammitglieder in einem IT-Silos definieren sich häufig über ihre Verbindung mit einer kleinen Zahl von IT-Anbietern oder einen bestimmten Bereich technischer Spezialisierung. IT-Silos dürfen jedoch nicht mit IT-Machtbereichen verwechselt werden. Bei Silos stehen Benutzerfreundlichkeit und Leidenschaft im Vordergrund, und sie sind in der Regel leichter in den Griff zu bekommen als die angstgesteuerten Beweggründe für Machtbereiche.
+Teammitglieder in einem IT-Silos definieren sich häufig über ihre Verbindung mit einer kleinen Zahl von IT-Anbietern oder einen bestimmten Bereich technischer Spezialisierung. IT-Silos dürfen aber nicht mit IT-Machtbereichen verwechselt werden. Bei Silos stehen Benutzerfreundlichkeit und Leidenschaft im Vordergrund, und sie sind in der Regel leichter in den Griff zu bekommen als die angstgesteuerten Beweggründe für Machtbereiche.
 
 Dieses Antimuster entsteht oft aus einer gemeinsamen Leidenschaft für eine bestimmte Lösung. Die IT-Silos werden dann durch die besonderen Fähigkeiten des Teams gestärkt, nachdem in diese bestimmte Lösung investiert wurde. Durch diese besonderen Fähigkeiten kann die Arbeit zur Einführung der Cloud beschleunigt werden, sofern der Widerstand gegen die Veränderung beseitigt werden kann. Es kann auch zu größeren Blockaden kommen, wenn die Silos aufgelöst werden oder die Teammitglieder die Optionen nicht richtig evaluieren können. Glücklicherweise kann für IT-Silos häufig eine Lösung gefunden werden, ohne dass das Organigramm erheblich geändert werden muss.
 

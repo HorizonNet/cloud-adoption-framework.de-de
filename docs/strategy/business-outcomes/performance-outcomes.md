@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 5b96c9216619a881ec9ad5a09e77ef9b3955bdb0
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: dc0fa352d96f7d1194566006d3d9d1e98eb46b87
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216281"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862635"
 ---
 # <a name="examples-of-performance-outcomes"></a>Beispiele für Leistungsergebnisse
 
@@ -26,7 +26,7 @@ Die größten Cloud Computing-Dienste werden in einem globalen Netzwerk aus sich
 
 Transformieren Sie Ihr Business, und senken Sie die Kosten – mit einer energieeffizienten Infrastruktur, die weltweit mehr als 100 Einrichtungen mit höchsten Sicherheitsstandards umfasst, die in einem der größten Netzwerke der Erde miteinander verbunden sind. Azure verfügt über mehr globale Regionen als jeder andere Cloudanbieter. Dies bietet die Größenordnung, die erforderlich ist, um Anwendungen und Benutzer weltweit näher zusammenzubringen, die Datenresidenz sicherzustellen und den Kunden umfassende Optionen hinsichtlich Compliance und Ausfallsicherheit bereitzustellen.
 
-- **Beispiel 1:** Ein Dienstleistungsunternehmen arbeitete mit einem Hostinganbieter, der mehrere Ressourcen für die Infrastruktur des Unternehmens hostete. Diese Systeme fielen häufig aus und hatten eine schlechte Leistung. Das Unternehmen migrierte seine Ressourcen zu Azure, um die SLA und Steuermöglichkeiten bei der Leistung der Cloud zu nutzen. Die aufgetretenen Ausfallzeiten kosteten das Unternehmen etwa 15.000 USD pro Minute. Bei vier bis acht Stunden Ausfallzeit pro Monat konnte diese Transformation der Organisation einfach gerechtfertigt werden.
+- **Beispiel 1:** Ein Dienstleistungsunternehmen arbeitete mit einem Hostinganbieter, der mehrere Ressourcen für die Infrastruktur des Unternehmens hostete. Diese Systeme fielen häufig aus und hatten eine schlechte Leistung. Das Unternehmen migrierte seine Ressourcen zu Azure, um die SLA und Steuermöglichkeiten bei der Leistung der Cloud zu nutzen. Jede Ausfallzeit würde das Unternehmen etwa 15.000 US-Dollar pro Minute kosten. Bei vier bis acht Stunden Ausfallzeit pro Monat konnte diese Transformation der Organisation einfach gerechtfertigt werden.
 
 - **Beispiel 2:** Ein Investmentunternehmen für Endverbraucher befand sich in einer frühen Phase der Entwicklung einer cloudfähigen Anwendung. Agile-Prozesse und DevOps entwickelten sich gut, aber die Anwendungsleistung unterlag zu großen Schwankungen. Da diese Transformation etwas umfangreicher war, startete das Unternehmen ein Programm zur Überwachung und automatisierten Größenanpassung basierend auf der Nachfrage. So konnte das Unternehmen mithilfe der Azure-Tools zur Leistungsüberwachung Probleme bei der Größenanpassung beheben und dadurch bei den Transaktionen einen erstaunlichen Zuwachs von fünf Prozent erzielen.
 

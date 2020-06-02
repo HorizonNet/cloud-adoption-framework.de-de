@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6cd6d309b5c44c55d0409b759950662eccb9f50a
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1a2c1f53e5559c9ca161cad5b68266f0cd1ff83d
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220446"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755013"
 ---
 # <a name="motivations-and-business-risks-in-the-deployment-acceleration-discipline"></a>Beweggründe und Geschäftsrisiken in der Disziplin „Beschleunigung der Bereitstellung“
 
@@ -25,7 +25,7 @@ In diesem Artikel werden die Gründe behandelt, die Kunden in der Regel im Rahme
 
 Lokale Systeme werden häufig mit Basisimages oder Installationsskripts bereitgestellt. In der Regel ist eine weitere Konfiguration erforderlich, die möglicherweise aus mehreren Schritten besteht oder manuelle Eingriffe erfordert. Diese manuellen Prozesse sind fehleranfällig und verursachen oftmals „Konfigurationsabweichungen“, die eine zeitintensive Problembehandlung und Korrekturmaßnahmen erfordern.
 
-Die meisten Azure-Ressourcen können manuell über das Azure-Portal bereitgestellt und konfiguriert werden. Dieser Ansatz ist möglicherweise für Ihre Anforderungen ausreichend, wenn Sie nur wenige Ressourcen verwalten müssen. Wenn Ihr Ressourcenbestand in der Cloud wächst, sollte Ihr Unternehmen jedoch damit beginnen, Automatisierung in seine Bereitstellungsprozesse zu integrieren, um sicherzustellen, dass seine Cloudressourcen Konfigurationsverschiebungen oder andere durch manuelle Prozesse verursachte Probleme vermeiden. Die Einführung eines DevOps- oder [DevSecOps](https://www.microsoft.com/devsecops)-Ansatzes ist häufig die beste Möglichkeit zum Verwalten Ihrer Bereitstellungen, wenn Ihre Bemühungen zur Cloudeinführung ausgereifter werden.
+Die meisten Azure-Ressourcen können manuell über das Azure-Portal bereitgestellt und konfiguriert werden. Dieser Ansatz ist möglicherweise für Ihre Anforderungen ausreichend, wenn Sie nur wenige Ressourcen verwalten müssen. Wenn Ihr Ressourcenbestand in der Cloud wächst, sollte Ihre Organisation damit beginnen, Automatisierung in die Bereitstellungsprozesse zu integrieren, um sicherzustellen, dass die Cloudressourcen Konfigurationsverschiebungen oder andere durch manuelle Prozesse verursachte Probleme vermeiden. Die Einführung eines DevOps- oder [DevSecOps](https://www.microsoft.com/devsecops)-Ansatzes ist häufig die beste Möglichkeit zum Verwalten Ihrer Bereitstellungen, wenn Ihre Bemühungen zur Cloudeinführung ausgereifter werden.
 
 Ein ausgereifter Plan für die Beschleunigung der Bereitstellung stellt sicher, dass Ihre Cloudressourcen ordnungsgemäß und einheitlich bereitgestellt, aktualisiert und konfiguriert werden und diesen Zustand auch beibehalten. Die Ausgereiftheit der Strategie zur Beschleunigung der Bereitstellung kann auch bei Ihrer [Kostenverwaltungsstrategie](../cost-management/index.md) einen bedeutenden Faktor darstellen. Mit einer automatischen Bereitstellung und Konfiguration Ihrer Cloudressourcen können Sie Ressourcen zentral herunterskalieren oder freigeben, wenn die Nachfrage niedrig oder zeitgebunden ist, sodass Sie Ressourcen nur nach Bedarf bezahlen.
 

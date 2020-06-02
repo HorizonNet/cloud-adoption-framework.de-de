@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 17b39eba50b11ee1124e174f3bc89f3e6dada3e2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ebad1c02e22f00532ebb1fa0d16fc4b156ea9253
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218253"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755932"
 ---
 # <a name="motivations-and-business-risks-in-the-resource-consistency-discipline"></a>Motivationen und Geschäftsrisiken in der Disziplin „Ressourcenkonsistenz“
 
@@ -23,7 +23,7 @@ In diesem Artikel werden die Gründe beschrieben, warum Kunden typischerweise ei
 
 ## <a name="relevance"></a>Relevance
 
-Wenn es um die Bereitstellung von Ressourcen und Workloads geht, bietet die Cloud eine höhere Agilität und Flexibilität als die meisten herkömmlichen lokalen Rechenzentren. Allerdings sind diese potenziellen, cloudbasierten Vorteile auch an mögliche Verwaltungsnachteile gekoppelt, die den Erfolg Ihrer Cloudeinführung ernsthaft gefährden können. Welche Ressourcen haben Sie bereitgestellt? Welche Teams besitzen welche Ressourcen? Verfügen Sie über genügend Ressourcen, die eine Workload unterstützen? Woher wissen Sie, ob Workloads fehlerfrei sind?
+Wenn es um die Bereitstellung von Ressourcen und Workloads geht, bietet die Cloud eine höhere Agilität und Flexibilität als die meisten herkömmlichen lokalen Rechenzentren. Diese potenziellen, cloudbasierten Vorteile bringen auch mögliche Verwaltungsnachteile mit sich, die den Erfolg Ihrer Cloudeinführung ernsthaft gefährden können. Welche Ressourcen haben Sie bereitgestellt? Welche Teams besitzen welche Ressourcen? Verfügen Sie über genügend Ressourcen, die eine Workload unterstützen? Woher wissen Sie, ob Workloads fehlerfrei sind?
 
 Ressourcenkonsistenz ist entscheidend, um sicherzustellen, dass Ressourcen konsistent und auf reproduzierbare Weise bereitgestellt, aktualisiert und konfiguriert werden, und dass Dienstunterbrechungen minimiert und in möglichst kurzer Zeit behoben werden.
 

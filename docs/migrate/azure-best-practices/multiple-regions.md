@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 1b4859d3adbfdedc1ff8d5322398e350ba9d72de
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 0445ba3048a7b16b792cd144c29d1643aefe0d09
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400834"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815309"
 ---
 # <a name="azure-regions"></a>Azure-Regionen
 
@@ -47,7 +47,7 @@ Jede robuste Cloudbereitstellung ist auf ein sorgfältig durchdachtes Netzwerk a
 
   - Azure Storage unterstützt [georedundanten Speicher (GRS)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs). Das bedeutet, dass drei Kopien Ihrer Daten in Ihrer primären Region und drei zusätzliche Kopien in der gekoppelten Region gespeichert werden. Die Speicherkopplung für GRS kann nicht geändert werden.
   - Dienste, die auf Azure Storage-GRS basieren, können von dieser Regionskopplung profitieren. Ihre Anwendungen und das Netzwerk müssen dazu entsprechend ausgerichtet sein.
-  - Falls Sie GRS nicht für Ihre regionalen Resilienzanforderungen nutzen möchten, wird davon _abgeraten_, die gekoppelte Region als sekundäre Region zu verwenden. Ein regionaler Ausfall hat aufgrund der Ressourcenmigration eine hohe Auslastung der Ressourcen in der gekoppelten Region zur Folge. Die Umgehung dieser hohen Auslastung kann Ihnen einen Geschwindigkeitsvorteil bei der Wiederherstellung verschaffen, wenn Sie für die Wiederherstellung einen alternativen Standort nutzen.
+  - Falls Sie GRS nicht für Ihre regionalen Resilienzanforderungen nutzen möchten, sollten Sie die gekoppelte Region nicht als sekundäre Region verwenden. Ein regionaler Ausfall hat aufgrund der Ressourcenmigration eine hohe Auslastung der Ressourcen in der gekoppelten Region zur Folge. Die Umgehung dieser hohen Auslastung kann Ihnen einen Geschwindigkeitsvorteil bei der Wiederherstellung verschaffen, wenn Sie für die Wiederherstellung einen alternativen Standort nutzen.
   > [!WARNING]
   > Verwenden Sie Azure-GRS nicht für VM-Sicherungen oder -Wiederherstellungen. Nutzen Sie stattdessen [Azure Backup](https://azure.microsoft.com/services/backup) und [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery) in Kombination mit [verwalteten Azure-Datenträgern](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview), um die Resilienz Ihrer IaaS-Workloads zu unterstützen.
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 777f89ea13c33ad5318c221d07c7c8ea3958c06c
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 9e4358b631008ef83a7b2635d5c2774a1e059815
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621448"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755254"
 ---
 <!-- cSpell:ignore ccoe -->
 
@@ -38,7 +38,7 @@ Unternehmensstrukturen bewegen sich in der Regel durch ein allgemeines Reifegrad
 5. [Operative Ausrichtung](#operational-alignment)
 6. [Cloudkompetenzzentrum (CCoE)](#cloud-center-of-excellence)
 
-Die meisten Unternehmen beginnen mit wenig mehr als einem _Cloudeinführungsteam_. Wir empfehlen jedoch, eine Organisationsstruktur aufzubauen, die mehr an der Struktur [Bewährte Methode: Minimum Viable Product](#best-practice-minimum-viable-product-mvp) ausgerichtet ist.
+Die meisten Unternehmen beginnen mit wenig mehr als einem _Cloudeinführungsteam_. Es wird jedoch empfohlen, dass Sie eine Organisationsstruktur einrichten, die der Struktur [MVP – Bewährte Methode](#best-practice-minimum-viable-product-mvp) ähnlicher ist.
 
 ## <a name="cloud-adoption-team-only"></a>Nur Cloudeinführungsteam
 

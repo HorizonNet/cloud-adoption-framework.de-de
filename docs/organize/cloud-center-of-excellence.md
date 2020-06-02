@@ -3,17 +3,17 @@ title: Grundlegendes zu den CCoE-Funktionen (Cloud Center of Excellence, Cloudko
 description: Grundlegendes zu den Funktionen eines Cloudkompetenzzentrums (Cloud Center of Excellence, CCoE), einschließlich der Quelle, des Umfangs und der Ergebnisse.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/20/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 0f4ccda8c5f05f24fae2b32715029a42e8c33348
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 749a6d4693b07102c0904eca72b87a53998d6b59
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215771"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755771"
 ---
 <!-- cSpell:ignore ccoe deprioritize -->
 
@@ -117,7 +117,7 @@ Der Fortschritt bei der Schaffung des Cloudkompetenzzentrums kann durch die Unte
 
 Diese Datenpunkte stellen keinen Angriff auf die IT-Abteilung dar. Stattdessen ermöglichen sie es, dass für das Cloudkompetenzzentrum aus der Vergangenheit gelernt wird, indem auf realistische Weise der Rückstand dokumentiert und ein Plan für Verbesserungen aufgestellt wird.
 
-**Fortlaufende Unterstützung und Einbindung:** CCoE-Teams können in einigen Bereichen schnelle Erfolge erzielen. Die übergeordneten Ziele, z.B. geschäftliche Flexibilität und eine Verkürzung der Zeit bis zur Markteinführung, können aber deutlich mehr Zeit benötigen. Während des Entwicklungsprozesses besteht ein hohes Risiko, dass es im Cloudkompetenzzentrum zu einer Entmutigung kommt oder dass das Personal für die Arbeit an anderen IT-Projekten herangezogen wird.
+**Fortlaufende Unterstützung und Einbindung:** CCoE-Teams können in einigen Bereichen schnelle Erfolge erzielen. Die übergeordneten Ziele, z. B. geschäftliche Flexibilität und eine Verkürzung der Zeit bis zur Markteinführung, können aber deutlich mehr Zeit benötigen. Während des Entwicklungsprozesses besteht ein hohes Risiko, dass es im Cloudkompetenzzentrum zu einer Entmutigung kommt oder dass das Personal für die Arbeit an anderen IT-Projekten herangezogen wird.
 
 Für die ersten sechs bis neun Monate der Arbeit des Cloudkompetenzzentrums empfehlen wir Ihnen, dass sich Projektbeteiligte aus dem betriebswirtschaftlichen Bereich Zeit für monatliche Besprechungen mit der IT-Führungsebene und den Verantwortlichen des Cloudkompetenzzentrums freihalten. Für diese Besprechungen müssen keine besonderen Formalitäten eingehalten werden. Es ist in Bezug auf den Erfolg des Cloudkompetenzzentrums schon viel wert, wenn die Mitglieder des Cloudkompetenzzentrums und deren Führungskräfte an die Bedeutung dieses Programms erinnert werden.
 
@@ -129,7 +129,7 @@ Außerdem wird empfohlen, dass die Projektbeteiligten aus dem betriebswirtschaft
 
 **Fokussiert bleiben:** Ein Cloudkompetenzzentrum kann für alle IT-Teams mit begrenzten Ressourcen eine erhebliche Verpflichtung darstellen. Wenn kompetente Architekten von kurzfristigen Projekten abgezogen werden, damit sie sich auf langfristige Ziele konzentrieren können, kann dies zu Schwierigkeiten für Teammitglieder führen, die nicht Teil des Cloudkompetenzzentrums sind. Es ist wichtig, dass die IT-Führungskräfte und die Projektbeteiligten aus dem IT-Bereich im Hinblick auf das Ziel des Cloudkompetenzzentrums fokussiert bleiben. Die Unterstützung der IT-Führungskräfte und Projektbeteiligten aus dem IT-Bereich wird benötigt, um zu verdeutlichen, dass die CCoE-Aufgaben Vorrang vor dem normalen Tagesgeschäft haben und dadurch nicht gestört werden sollten.
 
-**Puffer einbauen:** Das CCoE-Team experimentiert mit neuen Ansätzen. Einige dieser Ansätze passen nicht gut zu vorhandenen Vorgängen oder technischen Einschränkungen. Es besteht ein reelles Risiko, dass das Cloudkompetenzzentrum durch andere Teams unter Druck gerät oder quasi in Regress genommen wird, wenn Experimente nicht erfolgreich sind. Es ist wichtig, das Team zu ermutigen und vor den Konsequenzen von „Fail-Fast“-Lerneffekten zu schützen. Es ist genauso wichtig, dem Team dessen Zuständigkeit für das Erzielen von Fortschritten zu verdeutlichen und sicherzustellen, dass aus diesen Experimenten gelernt wird und bessere Lösungen gefunden werden.
+**Puffer einbauen:** Das CCoE-Team experimentiert mit neuen Ansätzen. Einige dieser Ansätze passen nicht gut zu vorhandenen Vorgängen oder technischen Einschränkungen. Es besteht ein reelles Risiko, dass das Cloudkompetenzzentrum durch andere Teams unter Druck gerät oder quasi in Regress genommen wird, wenn Experimente nicht erfolgreich sind. Es ist wichtig, das Team zu ermutigen und vor den Konsequenzen von Fail-Fast-Lerneffekten zu schützen. Es ist genauso wichtig, dem Team dessen Zuständigkeit für das Erzielen von Fortschritten zu verdeutlichen und sicherzustellen, dass aus diesen Experimenten gelernt wird und bessere Lösungen gefunden werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

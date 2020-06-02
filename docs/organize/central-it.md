@@ -3,23 +3,23 @@ title: Grundlegendes zu den zentralen IT-Funktionen
 description: Grundlegendes zu den Funktionen dees zentralen IT-Teams, einschließlich der Quelle, des Umfangs, der Ergebnisse und der Risiken.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/20/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 4f12b19227559b299b71ab64a95ef75396951183
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: dafa11ea95fdbcf62b389ae4e589fde75320af92
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216553"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755838"
 ---
 # <a name="central-it-functions"></a>Zentrale IT-Funktionen
 
 Wenn die Cloudeinführung hochskaliert wird, reichen Cloudgovernancefunktionen allein möglicherweise nicht mehr aus, um das gesamte Einführungsprojekt zu regulieren. Wenn diese Einführung schrittweise erfolgt, entwickeln Teams meist nach und nach die Fähigkeiten und Prozesse, die sie für die Arbeit in der Cloud benötigen.
 
-Wenn jedoch ein Cloudeinführungsteam die Cloud nutzt, um ein wichtiges und prestigeträchtiges Geschäftsergebnis zu erzielen, ist eine sukzessive Einführung selten der Fall. Erfolg zieht Erfolg nach sich. Dies gilt auch für die Cloudeinführung, dann aber im Maßstab der Cloud. Wenn mehrere Teams diesem einen Team relativ schnell bei der Cloudeinführung folgen, ist zusätzliche Unterstützung durch die vorhandenen IT-Mitarbeiter erforderlich. Diese Mitarbeiter verfügen aber möglicherweise nicht über die Kenntnisse und Erfahrung, um die Cloud mit cloudnativen Tools zu unterstützen. So wird häufig ein zentrales IT-Team gebildet, das die Cloudnutzung reguliert.
+Wenn aber ein Cloudeinführungsteam die Cloud nutzt, um ein wichtiges und prestigeträchtiges Geschäftsergebnis zu erzielen, ist eine sukzessive Einführung selten der Fall. Erfolg zieht Erfolg nach sich. Dies gilt auch für die Cloudeinführung, dann aber im Maßstab der Cloud. Wenn mehrere Teams diesem einen Team relativ schnell bei der Cloudeinführung folgen, ist zusätzliche Unterstützung durch die vorhandenen IT-Mitarbeiter erforderlich. Diese Mitarbeiter verfügen aber möglicherweise nicht über die Kenntnisse und Erfahrung, um die Cloud mit cloudnativen IT-Tools zu unterstützen. Daher wird häufig ein zentrales IT-Team gebildet, das die Cloudnutzung steuert.
 
 > [!CAUTION]
 > Dies ist zwar ein gängiger Schritt im Reifeprozess, kann jedoch ein hohes Risiko für die Einführung bergen und Innovationen und Migrationsaufgaben blockieren, wenn er nicht effektiv ausgeführt wird. Im Abschnitt zu Risiken weiter unten in diesem Artikel erfahren Sie, wie Sie das Risiko minimieren, dass die Zentralisierung ein kulturelles Antimuster wird.
@@ -82,7 +82,7 @@ Jede Cloudfunktion und alle Phasen der Organisationsreife sind durch das Wort �
 
 Aus moderner Sicht sind IT-Ressourcen global verteilt. Zuständigkeiten werden delegiert. Die Betriebsverwaltung erfolgt durch eine Kombination aus internen Mitarbeitern, Anbietern verwalteter Dienste und Cloudanbietern. In der digitalen Wirtschaft werden IT-Verwaltungsfunktionen langsam durch ein Modell mit self-service-basierten und delegierten Steuerungsfunktionen ersetzt, das klare Leitlinien für die Durchsetzung von Governance aufweist. Die zentrale IT kann einen wertvollen Beitrag zur Cloudeinführung leisten, indem sie zum Cloudbroker und Partner für Innovationen und geschäftliche Agilität wird.
 
-Die zentrale IT ist als Funktion gut aufgestellt, um wertvolle Kenntnisse und Vorgehensweisen aus den vorhandenen lokalen Modellen zu extrahieren und auf die Cloudbereitstellung zu übertragen. Dieser Prozess erfordert jedoch Veränderungen. Um die Cloudeinführung in großem Umfang zu unterstützen, sind neue Prozesse, neue Fähigkeiten und neue Tools erforderlich. Wenn sich die zentrale IT-Abteilung an diese Anforderungen anpassen kann, wird sie zu einem wichtigen Partner bei einem Cloudeinführungsprojekt. Wenn die zentrale IT-Abteilung diese Anpassung nicht schafft oder versucht, die Cloud als Katalysator für eine sehr differenzierte Steuerung zu nutzen, wird sie schnell zu einem Hindernis für Einführung, Innovationen und Migration.
+Die zentrale IT ist als Funktion gut aufgestellt, um wertvolle Kenntnisse und Vorgehensweisen aus den vorhandenen lokalen Modellen zu extrahieren und auf die Cloudbereitstellung zu übertragen. Dieser Prozess erfordert aber Veränderungen. Um die Cloudeinführung in großem Umfang zu unterstützen, sind neue Prozesse, neue Fähigkeiten und neue Tools erforderlich. Wenn sich die zentrale IT-Abteilung an diese Anforderungen anpassen kann, wird sie zu einem wichtigen Partner bei einem Cloudeinführungsprojekt. Wenn die zentrale IT-Abteilung diese Anpassung nicht schafft oder versucht, die Cloud als Katalysator für eine sehr differenzierte Steuerung zu nutzen, wird sie schnell zu einem Hindernis für Einführung, Innovation und Migration.
 
 Dieses Risiko lässt sich anhand von Geschwindigkeit und Flexibilität ermessen. Die Cloud vereinfacht die schnelle Einführung neuer Technologien. Wenn neue Cloudfunktionen innerhalb weniger Minuten bereitgestellt werden können, aber die zentrale IT Wochen oder sogar Monate benötigt, um diese zu prüfen, blockieren diese zentralisierten Prozesse den Geschäftserfolg. In diesem Fall sollten Sie alternative Strategien für die IT-Bereitstellung bedenken.
 
@@ -102,7 +102,7 @@ Diese Beispielgeschichte veranschaulicht den Ansatz, den ein ausgereiftes zentra
 
 Contoso, LLC hat ein zentrales IT-Modell für die Unterstützung der Cloudressourcen des Unternehmens eingeführt. Um dieses Modell bereitzustellen, hat das Unternehmen strikte Kontrollen für verschiedene gemeinsam genutzte Dienste wie eingehende Netzwerkverbindungen implementiert. Dank dieses klugen Schachzugs konnte Contoso, LLC die Risiken für die Cloudumgebung senken und ein einzelnes Gerät bereitstellen, das beim Auftreten einer Sicherheitsverletzung sämtlichen Datenverkehr blockiert. Die Sicherheitsbaseline des Unternehmens gibt vor, dass sämtlicher eingehender Datenverkehr durch ein freigegebenes Gerät fließen muss, das vom zentralen IT-Team verwaltet wird.
 
-Nun benötigt eins der Cloudeinführungsteams eine Umgebung mit einer dedizierten und speziell konfigurierten eingehenden Netzwerkverbindung, um eine bestimmte Cloudtechnologie zu nutzen. Ein zentrales IT-Team, das noch nicht den entsprechenden Reifegrad aufweist, würde diese Anforderung einfach ablehnen und die vorhandenen Prozesse über die Einführungsanforderungen stellen. Das zentrale IT-Team von Contoso reagierte anders. Das Team hat schnell eine einfache, vierteilige Lösung für dieses Dilemma gefunden:
+Nun benötigt aber eins der Cloudeinführungsteams eine Umgebung mit einer dedizierten und speziell konfigurierten eingehenden Netzwerkverbindung, um eine bestimmte Cloudtechnologie zu nutzen. Ein zentrales IT-Team, das noch nicht den entsprechenden Reifegrad aufweist, würde diese Anforderung einfach ablehnen und die vorhandenen Prozesse über die Einführungsanforderungen stellen. Das zentrale IT-Team von Contoso reagierte anders. Das Team hat schnell eine einfache, vierteilige Lösung für dieses Dilemma gefunden:
 
   1. **Klassifizierung**: Da das Cloudeinführungsteam sich in der Frühphase der neuen Lösung befand und keine vertraulichen Daten oder unternehmenskritischen Anforderungen vorhanden waren, wurden die Ressourcen in der Umgebung als risikoarm und nicht kritisch eingestuft. Eine effektive Klassifizierung ist ein Zeichen für den Reifegrad in der zentralen IT. Wenn alle Ressourcen und Umgebungen klassifiziert werden, können klarere Richtlinien eingerichtet werden.
   1. **Verhandlung**: Eine Klassifizierung allein ist nicht ausreichend. Gemeinsam genutzte Dienste wurden implementiert, um vertrauliche und unternehmenskritische Ressourcen konsistent betreiben zu können. Eine Änderung der Regeln würde die Governance- und Compliancerichtlinien gefährden, die für diejenigen Ressourcen eingerichtet wurde, die einen höheren Schutz benötigen. Die Unterstützung einer Cloudeinführung darf nicht auf Kosten der Stabilität, Sicherheit oder Governance erfolgen. Dies führte zu Verhandlungen mit dem Einführungsteam, um bestimmte Fragen zu beantworten. Kann ein unternehmensgeführtes DevOps-Team die betriebliche Verwaltung für diese Umgebung übernehmen? Würde diese Lösung direkten Zugriff auf andere interne Ressourcen erfordern? Wenn das Cloudeinführungsteam mit diesen Kompromissen einverstanden ist, kann eingehender Datenverkehr möglich sein.

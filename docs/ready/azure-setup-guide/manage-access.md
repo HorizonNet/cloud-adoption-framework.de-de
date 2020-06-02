@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 94f51b92b50dabff8551e30e476d2738c3f2fef7
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: e8f20079df4a0e3e55a93e1a35734673d53a0634
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621647"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862516"
 ---
 <!-- cSpell:ignore LijuKodicheraJayadevan -->
 
@@ -30,7 +30,7 @@ Bei der Planung Ihrer Strategie für die Zugriffssteuerung erteilen Sie Benutzer
 
 Wenn Sie Ihre Vorgehensweise für die Zugriffssteuerung planen, empfehlen wir die Zusammenarbeit mit Personen in Ihrer Organisation, die über Rollen für die folgenden Bereiche verfügen: „Sicherheit und Konformität“, „IT-Verwaltung“ und „Enterprise-Architekt“.
 
-Das Framework für die Cloudeinführung (Cloud Adoption Framework) bietet zusätzliche Anleitungen zur Verwendung der [ rollenbasierter Zugriffssteuerung](../considerations/roles.md) im Rahmen Ihrer Cloudeinführungsbemühungen.
+Das Cloud Adoption Framework bietet zusätzliche Anleitungen zur Verwendung der [ rollenbasierten Zugriffssteuerung](../considerations/roles.md) bei Ihren Cloudeinführungsmaßnahmen.
 
 ::: zone target="chromeless"
 

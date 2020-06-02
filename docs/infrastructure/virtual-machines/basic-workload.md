@@ -7,12 +7,12 @@ ms.date: 12/31/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8432a00865d29767b48292541255f88f9d451665
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0b4f0738e93d08be4f61183272b459eb7856aad1
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217471"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862210"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>Bereitstellen einer grundlegenden Workload in Azure
 
@@ -26,7 +26,7 @@ Darüber hinaus ermöglicht diese Isolierung ein weiteres Konzept namens DevOps.
 
 ## <a name="basic-workload"></a>Grundlegende Workload
 
-Eine _grundlegende Workload_ wird üblicherweise als einzelne Webanwendung oder als virtuelles Netzwerk (VNET) mit virtuellem Computer (Virtual Machine, VM) definiert.
+Eine _grundlegende Workload_ wird üblicherweise als einzelne Webanwendung oder als virtuelles Netzwerk mit virtuellem Computer (Virtual Machine, VM) definiert.
 
 > [!NOTE]
 > Die Anwendungsentwicklung wird in diesem Leitfaden nicht behandelt. Weitere Informationen zur Entwicklung von Anwendungen in Azure finden Sie im [Azure-Anwendungsarchitekturleitfaden](https://docs.microsoft.com/azure/architecture/guide).

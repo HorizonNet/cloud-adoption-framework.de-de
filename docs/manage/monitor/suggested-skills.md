@@ -3,16 +3,16 @@ title: Qualifikationsbereitschaft für Cloudüberwachung
 description: Qualifikationsbereitschaft für Cloudüberwachung
 author: BrianBlanchard
 ms.author: magoedte
-ms.date: 05/05/2020
+ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c32ecde3bc5929bc8ed360b1d792e5f2345bfd8f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d7d621f8f25b5369c4b9d39341c3e735b0996493
+ms.sourcegitcommit: 871d0256a2d448e22b4ab8054e906fc2db946518
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223676"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "83705940"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -20,11 +20,11 @@ ms.locfileid: "83223676"
 
 Das Ziel der Phase „Planung“ Ihrer Migrationsjourney besteht darin, die notwendigen Pläne für die Implementierung zu entwickeln. In den Plänen muss auch festgelegt werden, wie Sie diese Workloads abarbeiten, bevor die Umstellung bzw. die Freigabe für die Produktion erfolgt (und nicht danach). Die Beteiligten im Unternehmen erwarten nützliche Dienste, die ohne Störungen funktionieren. IT-Mitarbeiter merken, dass sie neue Qualifikationen erwerben und sich anpassen müssen, damit sie die integrierten Azure-Dienste sicher verwenden können, um Ressourcen in Azure und in Hybridumgebungen effektiv zu überwachen.
 
-Die Entwicklung der erforderlichen Qualifikationen kann mit den folgenden Lernpfaden beschleunigt werden:
+Das Erlangen der erforderlichen Qualifikationen kann mit den folgenden Lernpfaden beschleunigt werden. Diese sind so organisiert, dass mit dem Erlernen der Grundlagen begonnen wird, und dann eine Verzweigung in drei primäre Themenbereiche erfolgt: Infrastruktur, Anwendung und Datenanalyse.  
+
+## <a name="fundamentals"></a>Grundlagen
 
 - In der Einführung in [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview) werden die grundlegenden Konzepte der Verwaltung und Bereitstellung von Azure-Ressourcen beschrieben. Die IT-Mitarbeiter, die die Überwachungsumgebung im gesamten Unternehmen verwalten, sollten mit Verwaltungsbereichen, rollenbasierter Zugriffssteuerung (RBAC), Azure Resource Manager-Vorlagen und der Verwaltung von Ressourcen per Azure CLI und Azure PowerShell vertraut sein.
-
-- Informieren Sie sich über das Schützen von Ressourcen mit Richtlinien, rollenbasierter Zugriffssteuerung und anderen Azure-Diensten, indem Sie den Artikel [Implementieren der Sicherheit für die Ressourcenverwaltung in Azure](https://docs.microsoft.com/learn/paths/implement-resource-mgmt-security) lesen.
 
 - In der Einführung in [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) wird beschrieben, wie Sie Azure Policy zum Erstellen, Zuweisen und Verwalten von Richtlinien verwenden können. Mit Azure Policy können Sie die Azure Monitor-Agents bereitstellen und konfigurieren, die Überwachung mit Azure Monitor für VMs und Azure Security Center ermöglichen, Diagnoseeinstellungen bereitstellen, Gastkonfigurationseinstellungen überwachen und vieles mehr.
 
@@ -33,19 +33,43 @@ Die Entwicklung der erforderlichen Qualifikationen kann mit den folgenden Lernpf
   - [Verwenden der Azure CLI](https://www.linkedin.com/learning/learning-azure-management-tools/use-the-azure-cli)
   - [Erste Schritte mit Azure PowerShell](https://www.linkedin.com/learning/learning-azure-management-tools/understand-azure-powershell)
 
-- Informieren Sie sich darüber, wie Sie [Protokollabfragen in Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-queries) schreiben. Die Kusto-Abfragesprache ist die Hauptressource für das Schreiben von Azure Monitor-Protokollabfragen, um Protokolldaten für die erfassten Daten aus Azure und die Abhängigkeiten von Hybridressourcenanwendungen (einschließlich Liveanwendung) zu untersuchen und zu analysieren.
+- Informieren Sie sich über das Schützen von Ressourcen mit Richtlinien, rollenbasierter Zugriffssteuerung und anderen Azure-Diensten, indem Sie den Artikel [Implementieren der Sicherheit für die Ressourcenverwaltung in Azure](https://docs.microsoft.com/learn/paths/implement-resource-mgmt-security) lesen.
+
+- In der Einführung zum [Überwachen von Microsoft Azure-Ressourcen und -Workloads](https://app.pluralsight.com/library/courses/microsoft-azure-resources-workloads-monitoring-update/table-of-contents) wird beschrieben, wie Sie Microsoft Azure-Überwachungstools zum Überwachen von Azure-Netzwerkressourcen sowie lokalen Ressourcen verwenden.
+
+## <a name="infrastructure-monitoring"></a>Infrastrukturüberwachung
+
+- Unter [Entwerfen einer Überwachungsstrategie für die Infrastruktur in Microsoft Azure](https://www.pluralsight.com/courses/microsoft-azure-monitoring-strategy-infrastructure-design-update) erwerben Sie grundlegende Kenntnisse der Überwachungsfunktionen und -lösungen in Azure. 
+
+- Anhand des Videos zum [Überwachen von Kubernetes-Clustern](https://www.youtube.com/watch?time_continue=3&v=RjsNmapggPU&feature=emb_logo) für fortgeschrittene Benutzer können Sie sich ausführlicher mit der Überwachung Ihres Kubernetes-Clusters mit Azure Monitor für Container vertraut machen.
+
+- Erfahren Sie, wie Sie mit Azure Monitor Daten aus [Azure Storage und HDInsight](https://www.pluralsight.com/courses/microsoft-azure-data-storage-monitoring) überwachen können.
+
+- Unter [Microsoft Azure-Datenbanküberwachung: Playbook](https://www.pluralsight.com/courses/microsoft-azure-database-playbook-monitoring) werden die wichtigsten Überwachungsfunktionen vorgestellt, mit denen Sie Einblicke und umsetzbare Schritte für Azure SQL-Datenbank, Azure SQL Data Warehouse und Azure Cosmos DB erhalten.
+
+- [Überwachen von hybriden Microsoft Azure-Cloudnetzwerken](https://www.pluralsight.com/courses/microsoft-azure-hybrid-cloud-networks-monitoring) ist ein Kurs für fortgeschrittene Benutzer, in dem gezeigt wird, wie Sie mithilfe von Azure-Überwachungstools virtuelle Azure-Netzwerke und virtuelle private Netzwerkverbindungen für Ihre Implementierung einer Hybridcloud visualisieren, verwalten und optimieren können.
+
+- Der Artikel [Azure Arc für Server](https://docs.microsoft.com/azure/azure-arc/servers/overview) enthält eine Beschreibung dazu, wie Sie Ihre außerhalb von Azure gehosteten Windows- und Linux-Computer auf ähnliche Weise wie Ihre nativen virtuellen Azure-Computer verwalten können.
+
+## <a name="application-monitoring"></a>Anwendungsüberwachung
 
 - Informieren Sie sich darüber, wie [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) Ihnen das Anzeigen der Verfügbarkeit und Leistung Ihrer Anwendungen und Dienste an einem zentralen Ort ermöglicht. Von Pluralsight werden die folgenden Kurse angeboten:
 
-  - Unter [Überwachen von Microsoft Azure-Ressourcen und -Workloads](https://app.pluralsight.com/library/courses/microsoft-azure-resources-workloads-monitoring-update/table-of-contents) wird beschrieben, wie Sie Microsoft Azure-Überwachungstools zum Überwachen von Azure-Netzwerkressourcen sowie lokalen Ressourcen verwenden.
+  - Unter [Microsoft Azure DevOps-Techniker: Optimieren von Feedbackmechanismen](https://www.pluralsight.com/courses/microsoft-azure-optimize-feedback-mechanisms) können Sie sich darauf vorbereiten, Azure Monitor, einschließlich Application Insights, für die Überwachung und Optimierung Ihrer Webanwendungen zu verwenden.
 
-  - Unter [Microsoft Azure DevOps-Techniker: Optimieren von Feedbackmechanismen](https://www.pluralsight.com/courses/microsoft-azure-optimize-feedback-mechanisms) können Sie sich darauf vorbereiten, Azure Monitor, einschließlich Application Insights und Log Analytics, für die Überwachung und Optimierung Ihrer Webanwendungen zu verwenden.
-
+  - [Microsoft Azure-Entwickler: Leistungsüberwachung](https://app.pluralsight.com/library/courses/microsoft-azure-performance-monitoring). Beginnen Sie mit diesem Kurs zur Verwendung von Azure Monitor Application Insights für die End-to-End-Überwachung Ihrer Anwendungskomponenten, die in Azure ausgeführt werden.
+  
   - Unter [Microsoft Azure-Datenbanküberwachung: Playbook](https://www.pluralsight.com/courses/microsoft-azure-database-playbook-monitoring) wird beschrieben, wie Sie die Überwachung von Azure SQL-Datenbank, Azure SQL Data Warehouse und Azure Cosmos DB implementieren und nutzen.
 
   - In dem Kurs [Instrumentieren von Anwendungen mit Azure Monitor Application Insights](https://app.pluralsight.com/library/courses/microsoft-azure-application-insights-web-application-instrument) wird ausführlich beschrieben, wie Sie das Application Insights SDK zum Sammeln von Telemetriedaten und Ereignissen einer App mit Angular- und Node.js-Komponenten verwenden.
 
-- Der Artikel [Azure Arc für Server](https://docs.microsoft.com/azure/azure-arc/servers/overview) enthält eine Beschreibung dazu, wie Sie Ihre außerhalb von Azure gehosteten Windows- und Linux-Computer auf ähnliche Weise wie Ihre nativen virtuellen Azure-Computer verwalten können.
+  - Bei [Anwendungsdebuggen und -profilerstellung](https://www.pluralsight.com/courses/devintersection-azureai-session-31) handelt es sich um eine Aufzeichnung einer Microsoft-Konferenzsitzung zur Verwendung und Interpretation von Daten, die vom Application Insights-Momentaufnahmedebugger und Profiler in Azure Monitor bereitgestellt werden.
+
+## <a name="data-analysis"></a>Datenanalyse
+
+- Informieren Sie sich darüber, wie Sie [Protokollabfragen in Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-queries) schreiben. Die Kusto-Abfragesprache ist die Hauptressource für das Schreiben von Azure Monitor-Protokollabfragen, um Protokolldaten für die erfassten Daten aus Azure und die Abhängigkeiten von Hybridressourcenanwendungen (einschließlich Liveanwendung) zu untersuchen und zu analysieren. 
+
+- [Kusto-Abfragesprache (Kusto Query Language, KQL) für Einsteiger](https://www.pluralsight.com/courses/kusto-query-language-kql-from-scratch) ist ein umfassender Kurs, der ausführliche Beispiele für eine große Bandbreite von Anwendungsfällen und Techniken für die Protokollanalyse in Azure Monitor-Protokollen enthält. 
 
 ## <a name="deeper-skills-exploration"></a>Ausführlichere Untersuchung von Fähigkeiten
 

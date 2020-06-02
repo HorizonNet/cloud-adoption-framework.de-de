@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 72bc453ba9ce0feb90e6dceaf73cd89ded0c64e0
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: a167cce023fc4d69a2099af7cfa305a14393e446
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221330"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753278"
 ---
 # <a name="rationalize-the-digital-estate"></a>Rationalisieren der digitalen Ressourcen
 
@@ -53,13 +53,13 @@ Die vollständige Rationalisierung von umfassenden digitalen Ressourcen ist risi
 
 ### <a name="inventory-reduce-discovery-data-points"></a>Bestand: Reduzieren von Ermittlungsdatenpunkten
 
-Nur wenige Organisationen investieren die Zeit, Energie und Kosten, die erforderlich sind, um einen präzisen Echtzeitbestand für die digitalen Ressourcen vorzuhalten. Verlust, Diebstahl, Aktualisierungszyklen und der Einstellungsprozess von Mitarbeitern sind häufige Gründe, um die ausführliche Nachverfolgung der Ressourcen auf Endbenutzergeräten zu rechtfertigen. Die Rendite (Return on Investment, ROI), die sich aus der Verwaltung eines präzisen Servers und Anwendungsbestands in einem herkömmlichen lokalen Datencenter ergibt, ist aber häufig nur gering. Die meisten IT-Organisationen müssen dringendere Probleme als die Nachverfolgung der Nutzung von festen Ressourcen in einem Datencenter lösen.
+Nur wenige Organisationen investieren die Zeit, Energie und Kosten, die erforderlich sind, um einen präzisen Echtzeitbestand für die digitalen Ressourcen vorzuhalten. Verlust, Diebstahl, Aktualisierungszyklen und der Einstellungsprozess von Mitarbeitern sind häufige Gründe, um die ausführliche Nachverfolgung der Ressourcen auf Endbenutzergeräten zu rechtfertigen. Die Rendite (Return on Investment, ROI), die sich aus der Verwaltung eines präzisen Servers und Anwendungsbestands in einem herkömmlichen lokalen Datencenter ergibt, ist häufig nur gering. Die meisten IT-Organisationen müssen dringendere Probleme als die Nachverfolgung der Nutzung von festen Ressourcen in einem Datencenter lösen.
 
 Bei einer Cloudtransformation korreliert der Bestand direkt mit den Betriebskosten. Für eine korrekte Planung werden genaue Bestandsdaten benötigt. Unglücklicherweise können Entscheidungen aufgrund der aktuell verfügbaren Optionen zum Scannen von Umgebungen um Wochen oder Monate verzögert werden. Glücklicherweise kann die Datensammlung durch einige Tricks beschleunigt werden.
 
 Das Agent-basierte Scannen wird am häufigsten als Verzögerungsgrund genannt. Die stabilen Daten, die für eine herkömmliche Rationalisierung benötigt werden, können oft nur erfasst werden, indem auf jeder Ressource ein Agent ausgeführt wird. Diese Abhängigkeit von Agents führt oft zu einer Verlangsamung des Prozesses, weil unter Umständen Rückmeldungen aus den Bereichen Sicherheit, Betrieb und Verwaltung erforderlich sind.
 
-Bei einem inkrementellen Rationalisierungsprozess kann eine Lösung ohne Agents für eine erste Ermittlung genutzt werden, um schneller erste Entscheidungen treffen zu können. Je nach dem Komplexitätsgrad in der Umgebung ist möglicherweise trotzdem eine agentbasierte Lösung erforderlich. Sie kann jedoch aus dem kritischen Pfad zu Geschäftsänderungen entfernt werden.
+Bei einem inkrementellen Rationalisierungsprozess kann eine Lösung ohne Agents für eine erste Ermittlung genutzt werden, um schneller erste Entscheidungen treffen zu können. Je nach Komplexitätsebene in der Umgebung ist unter Umständen trotzdem noch eine Lösung mit Agents erforderlich, aber sie ist nicht mehr Teil des kritischen Pfads zur Weiterentwicklung des Unternehmens.
 
 ### <a name="quantitative-analysis-streamline-decisions"></a>Quantitative Analyse: Optimieren von Entscheidungen
 
@@ -85,7 +85,7 @@ Das Ergebnis des vorherigen Abschnitts ist eine grobe Rationalisierung mit viele
 
 In einer herkömmlichen lokalen Umgebung hat das Hosten von kleinen, ungenutzten Ressourcen selten erhebliche Auswirkungen auf die jährlichen Kosten. Mit einigen Ausnahmen macht der Bedarf an Vollzeitmitarbeitern für das Analysieren und Außerbetriebnehmen der jeweiligen Ressource die Kosteneinsparungen, die sich aus dem Beschneiden und Außerbetriebnehmen dieser Ressourcen ergeben, wieder zunichte.
 
-Wenn Sie aber auf ein Cloudabrechnungsmodell umstellen, können durch die Außerbetriebnahme von Ressourcen erhebliche Einsparungen bei den jährlichen Betriebskosten und beim Anschubaufwand für die Migration erzielt werden.
+Wenn Sie auf ein Cloudabrechnungsmodell umstellen, können durch die Außerbetriebnahme von Ressourcen erhebliche Einsparungen bei den jährlichen Betriebskosten und beim Anschubaufwand für die Migration erzielt werden.
 
 Es ist nicht ungewöhnlich, dass Organisationen mindestens 20% ihrer digitalen Ressourcen außer Betrieb nehmen, nachdem sie eine quantitative Analyse durchgeführt haben. Wir empfehlen, eine weitere qualitative Analyse durchzuführen, bevor eine solche Maßnahme durchgeführt wird. Nach der Bestätigung der Entscheidung kann die Außerbetriebnahme dieser Ressourcen zum ersten ROI bei der Cloudmigration führen. Häufig ist dies einer der wichtigsten Faktoren zur Kosteneinsparung. Daher sollte das Cloudstrategieteam die Überprüfung und die Außerbetriebnahme von Ressourcen überwachen, und zwar parallel zur Ausführung der [Migrationsmethode](../migrate/index.md), um einen frühen finanziellen Gewinn zu erzielen.
 
@@ -155,7 +155,7 @@ Das Cloudeinführungsteam führt wahrscheinlich Iterationen durch, bei denen sic
 
 ## <a name="end-state"></a>Endzustand
 
-Im Laufe der Zeit führen das Cloudeinführungs- und das Cloudstrategieteam eine vollständige Rationalisierung des Bestands gemeinsam durch. Bei diesem inkrementellen Ansatz können die Teams den Rationalisierungsprozess aber immer schneller abarbeiten. Außerdem ergeben sich aus dem Transformationsprozess früher greifbare Geschäftsergebnisse, ohne dass zuerst ein hoher Analyseaufwand anfällt.
+Im Laufe der Zeit führen das Cloudeinführungs- und das Cloudstrategieteam gemeinsam eine vollständige Rationalisierung des Bestands durch. Bei diesem inkrementellen Ansatz können die Teams den Rationalisierungsprozess immer schneller abarbeiten. Außerdem ergeben sich aus dem Transformationsprozess früher greifbare Geschäftsergebnisse, ohne dass zuerst ein hoher Analyseaufwand anfällt.
 
 In einigen Fällen ist das Finanzmodell möglicherweise zu eng gefasst, um ohne weitere Rationalisierungsmaßnahmen eine Entscheidung treffen zu können. In solchen Fällen benötigen Sie vielleicht einen herkömmlicheren Rationalisierungsansatz.
 

@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 38b5ebc82052869294eb7ad49e50a1d54b5a696f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: c25ee0bfe2b435ae091d673226c8976da1bf1a25
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214955"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862533"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>Pfad für die Qualifikationsbereitschaft während der Phase „Planung“ einer Migrationsreise
 
@@ -44,7 +44,7 @@ Die Rechtfertigung der Investition für die Einführung der Cloud kann eine tief
 Indem Sie die gewünschten Fallstudie auf die aktuellen und zukünftigen digitalen Ressourcen abstimmen, können Sie Ihre Fallstudie verfeinern. Diese Artikel können die Entwicklung einer Rationalisierung der digitalen Ressourcen lenken:
 
 - [Inkrementelle Rationalisierung](../digital-estate/rationalize.md): Ein flexibler Rationalisierungsansatz, der spät gebundene technische Entscheidungen richtig integriert.
-- [Die fünf Phasen der Rationalisierung](../digital-estate/5-rs-of-rationalization.md): Grundlegendes zu den verschiedenen Rationalisierungsoptionen.
+- Die [fünf Phasen der Rationalisierung](../digital-estate/5-rs-of-rationalization.md): Grundlegendes zu den verschiedenen Rationalisierungsoptionen.
 
 ## <a name="create-a-migration-backlog-technical-plan"></a>Erstellen eines Migrationsrückstands (technischer Plan)
 

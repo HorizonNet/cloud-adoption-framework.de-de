@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5e0e9b51ec666d48b886f37913a4a0d5441dd78d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: dd4f6b58d3d8f1a1d1b6348ae83979c37c9305bc
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217777"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755869"
 ---
 # <a name="motivations-and-business-risks-in-the-security-baseline-discipline"></a>Motivationen und Geschäftsrisiken in der Disziplin „Sicherheitsbaseline“
 
@@ -38,7 +38,7 @@ Die Disziplin „Sicherheitsbaseline“ umfasst die Unternehmensrichtlinien und 
 
 Die Disziplin „Sicherheitsbaseline“ befasst sich mit den wichtigsten sicherheitsbezogenen Geschäftsrisiken. Arbeiten Sie mit Ihrem Unternehmen zusammen, um diese Risiken zu identifizieren und auf Relevanz zu überwachen, um sie bei der Planung und Implementierung Ihrer Cloudbereitstellungen zu berücksichtigen.
 
-Die Risiken werden je nach Organisation unterschiedlich sein, aber die folgenden allgemeinen sicherheitsbezogenen Risiken können als Ausgangspunkt für Diskussionen innerhalb Ihres Cloudgovernanceteams verwendet werden:
+Die Risiken sind je nach Organisation verschieden. Verwenden Sie die folgende Liste allgemeiner sicherheitsbezogener Risiken als Ausgangspunkt für Diskussionen innerhalb Ihres Cloudgovernanceteams:
 
 - **Verletzung des Datenschutzes:** Unbeabsichtigte Offenlegung oder Verlust sensibler, in der Cloud gehosteter Daten kann zum Verlust von Kunden, vertraglichen Problemen oder rechtlichen Konsequenzen führen.
 - **Dienstunterbrechung:** Ausfälle und andere Leistungsprobleme aufgrund unsicherer Infrastrukturen führen zu Unterbrechungen des normalen Betriebs und können Produktivitäts- oder Umsatzeinbußen zur Folge haben.

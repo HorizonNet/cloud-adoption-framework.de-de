@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: BrianBlanchard
 ms.custom: virtual-network
-ms.openlocfilehash: 6029f3d46f3a59adc465d47d9545a017d04487e6
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 2c7a57f339ad241f3d2f448a61d0553d1487bde7
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216400"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862618"
 ---
 # <a name="role-based-access-control"></a>Rollenbasierte Zugriffssteuerung
 
@@ -37,7 +37,7 @@ Verwenden Sie bei der Planung Ihrer Zugriffssteuerungsstrategie ein Modell mit d
 ![Vorgeschlagenes Muster für die Verwendung von RBAC](../../_images/azure-best-practices/rbac-least-privilege.png)
 
 > [!NOTE]
-> Je spezifischer oder detaillierter die Berechtigungen sind, die Sie definieren, desto wahrscheinlicher werden Ihre Zugriffssteuerungen komplex und schwer zu verwalten sein. Dies trifft vor allem dann zu, wenn die Größe Ihrer Cloudumgebung zunimmt. Vermeiden Sie ressourcenspezifische Berechtigungen. Verwenden Sie statt dessen [Verwaltungsgruppen](https://docs.microsoft.com/azure/governance/management-groups) für unternehmensweite Zugriffssteuerung und [Ressourcengruppen](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#resource-groups) für Zugriffssteuerungen innerhalb von Abonnements. Vermeiden Sie auch benutzerspezifische Berechtigungen. Weisen Sie stattdessen [Gruppen in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups) Zugriffsberechtigungen zu.
+> Je spezifischer oder detaillierter die Berechtigungen sind, die Sie definieren, desto wahrscheinlicher werden Ihre Zugriffssteuerungen komplex und schwer zu verwalten sein. Dies trifft vor allem dann zu, wenn die Größe Ihrer Cloudumgebung zunimmt. Vermeiden Sie ressourcenspezifische Berechtigungen. Verwenden Sie stattdessen [Verwaltungsgruppen](https://docs.microsoft.com/azure/governance/management-groups) für unternehmensweite Zugriffssteuerung und [Ressourcengruppen](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#resource-groups) für Zugriffssteuerungen innerhalb von Abonnements. Vermeiden Sie auch benutzerspezifische Berechtigungen. Weisen Sie stattdessen [Gruppen in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups) Zugriffsberechtigungen zu.
 
 ## <a name="use-built-in-rbac-roles"></a>Verwenden integrierter RBAC-Rollen
 
@@ -75,7 +75,7 @@ Die folgende Tabelle zeigt ein allgemeines Muster für die Aufteilung des IT-Zus
 
 | Group | Allgemeiner Rollenname | Aufgaben |
 | --- | --- | --- |
-| Sicherheitsvorgänge | SecOps | Bietet eine allgemeine Sicherheitsübersicht.  <br><br> Festlegung und Durchsetzung von Sicherheitsrichtlinien wie Verschlüsselung im Ruhezustand. <br><br> Verwaltet Verschlüsselungsschlüssel. <br><br> Verwaltet Firewallregeln. |
+| Sicherheitsvorgänge | SecOps | Bietet eine allgemeine Sicherheitsübersicht. <br> Festlegung und Durchsetzung von Sicherheitsrichtlinien wie Verschlüsselung im Ruhezustand. <br><br> Verwaltet Verschlüsselungsschlüssel. <br><br> Verwaltet Firewallregeln. |
 | Netzwerkvorgänge | NetOps | Verwaltet die Netzwerkkonfiguration und den Betrieb in virtuellen Netzwerken wie Routen und Peerings. |
 | Systembetrieb | SysOps | Gibt die Optionen für die Compute- und Speicherinfrastruktur an und verwaltet die bereitgestellten Ressourcen. |
 | Entwicklung, Test und Betrieb | DevOps | Erstellt Workloadfunktionen und -anwendungen und stellt sie bereit. <br><br> Betreibt Funktionen und Anwendungen, um Vereinbarungen zum Servicelevel (Service Level Agreements, SLAs) und andere Qualitätsstandards einzuhalten. |

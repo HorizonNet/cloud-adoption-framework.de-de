@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c973dfbdf7cb4fede3520465b2192b7f821cec1d
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 1fa20d37c5cc7813220ff5862743f3179f4aefcd
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80434142"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861513"
 ---
 <!-- cSpell:ignore HKEY kusto -->
 
@@ -32,9 +32,9 @@ Um das Nachverfolgen von Dateiinhalten für die Datei „hosts“ zu aktivieren,
 
 Sie können auch eine Warnung für Änderungen an Dateien hinzufügen, die Sie nachverfolgen. Nehmen Sie z. B. an, dass Sie eine Warnung für Änderungen an der Datei „hosts“ festlegen möchten. Wählen Sie **Log Analytics** in der Befehlsleiste oder die Protokollsuche für den verknüpften Log Analytics-Arbeitsbereich aus. Verwenden Sie in Log Analytics die folgende Abfrage, um nach Änderungen an der Datei „hosts“ zu suchen:
 
-```kusto
-ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and FileSystemPath contains "hosts"
-```
+  ```kusto
+  ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and FileSystemPath contains "hosts"
+  ```
 
 ![Screenshot des Log Analytics-Abfrage-Editors im Azure-Portal](./media/change-tracking2.png)
 
@@ -98,7 +98,7 @@ Verwenden Sie die folgende Abfrage, um Änderungen an bekannten Registrierungssc
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Erfahren Sie, wie Sie mit Azure Automation [Zeitpläne für Updates](./update-schedules.md) erstellen, um Updates für Ihre Server zu verwalten.
+Erfahren Sie, wie Azure Automation [Zeitpläne für Updates](./update-schedules.md) erstellen kann, um Updates für Ihre Server zu verwalten.
 
 > [!div class="nextstepaction"]
 > [Erstellen von Zeitplänen für Updates](./update-schedules.md)

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 36b194f1985a9d277315207ea685d5fff94a87a0
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 159c102931d192e3a4fc77a3f16edc1fbe98f576
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400685"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862397"
 ---
 # <a name="evaluate-corporate-policy"></a>Auswerten der Unternehmensrichtlinie
 
@@ -21,7 +21,7 @@ ms.locfileid: "83400685"
 
 | | |
 |---|---|
-| Jede Änderung von Geschäftsprozessen oder Technologieplattformen birgt Risiken für ein Unternehmen. Cloud Governance-Teams, deren Mitglieder manchmal auch als Cloudverwalter bezeichnet werden, haben die Aufgabe, diese Risiken mit minimaler Unterbrechung der Einführungs- oder Innovationsanstrengungen zu minimieren. <br><br> Cloud Governance erfordert jedoch mehr als nur die technische Implementierung. Subtile Änderungen in der Unternehmensgeschichte oder den Unternehmensrichtlinien können die Einführungsbemühungen erheblich beeinträchtigen. Vor der Implementierung ist es wichtig, beim Definieren der Unternehmensrichtlinie über die IT hinauszuschauen. | [![Abbildung des Governancemodells des Cloud Adoption Frameworks: Unternehmensrichtlinien und Governancedusziplinen](../_images/operational-transformation-govern-thumbnail.png)](../_images/operational-transformation-govern-large.png#lightbox) <br> _Abbildung 1: Visuelle Darstellung der Unternehmensrichtlinie und der fünf Disziplinen von Cloud Governance._ |
+| Jede Änderung von Geschäftsprozessen oder Technologieplattformen birgt Risiken für ein Unternehmen. Cloud Governance-Teams, deren Mitglieder manchmal auch als Cloudverwalter bezeichnet werden, haben die Aufgabe, diese Risiken mit minimaler Unterbrechung der Einführungs- oder Innovationsanstrengungen zu minimieren. <br><br> Cloudgovernance erfordert aber mehr als nur die technische Implementierung. Subtile Änderungen in der Unternehmensgeschichte oder den Unternehmensrichtlinien können die Einführungsbemühungen erheblich beeinträchtigen. Vor der Implementierung ist es wichtig, beim Definieren der Unternehmensrichtlinie über die IT hinauszuschauen. | [![Abbildung des Governancemodells des Cloud Adoption Frameworks: Unternehmensrichtlinien und Governancedusziplinen](../_images/operational-transformation-govern-thumbnail.png)](../_images/operational-transformation-govern-large.png#lightbox) <br> _Abbildung 1: Visuelle Darstellung der Unternehmensrichtlinie und der fünf Disziplinen von Cloud Governance._ |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -44,4 +44,4 @@ Das Definieren der Unternehmensrichtlinie konzentriert sich auf die Identifizier
 Erfahren Sie, wie Sie Ihre Unternehmensrichtlinie für die Cloud vorbereiten können.
 
 > [!div class="nextstepaction"]
-> [Vorbereiten der Unternehmensrichtlinie für die Cloud](./policy-compliance/index.md)
+> [Vorbereiten Ihrer Unternehmensrichtlinie für die Cloud](./policy-compliance/index.md)

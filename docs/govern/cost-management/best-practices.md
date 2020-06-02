@@ -3,16 +3,16 @@ title: Kosten- und Größenanpassung von Azure-Ressourcen
 description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um sich mit den bewährten Methoden für die Kosten- und Größenanpassung von Ressourcen in Azure vertraut zu machen.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: df2231a5e60bebf25124cfdc42110c13f80833e3
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 237ec750ddc8be3614d686c325458f12e9b0f5d9
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400649"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862363"
 ---
 <!-- docsTest:ignore ARO -->
 
@@ -25,7 +25,7 @@ Unter Beachtung aller Fachrichtungen von Governance ist Kostenmanagement ein wie
 
 ## <a name="best-practices-by-team-and-accountability"></a>Bewährte Methoden nach Team und Verantwortlichkeit
 
-Das Kostenmanagement im gesamten Unternehmen ist eine Funktion von Cloudgovernance und Cloudvorgängen. Alle Entscheidungen des Kostenmanagements bewirken jedoch eine Änderung der Ressourcen, die eine Workload unterstützen. Wirken sich diese Änderungen auf die Architektur einer Workload aus, sind weitere Überlegungen anzustellen, um die Auswirkungen auf Endbenutzer und Geschäftsfunktionen zu minimieren. Das Cloudeinführungsteam, das diese Workload konfiguriert oder entwickelt hat, ist wahrscheinlich dafür zuständig, diese Arten von Änderungen abzuschließen.
+Das Kostenmanagement im gesamten Unternehmen ist eine Funktion von Cloudgovernance und Cloudvorgängen. Alle Entscheidungen des Kostenmanagements bewirken eine Änderung der Ressourcen, die eine Workload unterstützen. Wirken sich diese Änderungen auf die Architektur einer Workload aus, sind weitere Überlegungen anzustellen, um die Auswirkungen auf Endbenutzer und Geschäftsfunktionen zu minimieren. Das Cloudeinführungsteam, das diese Workload konfiguriert oder entwickelt hat, ist wahrscheinlich dafür zuständig, diese Arten von Änderungen abzuschließen.
 
 - **Kennzeichnung (Tagging) ist für jede Art von Governance von entscheidender Bedeutung.** Stellen Sie sicher, dass bei allen Workloads und Ressourcen [ordnungsgemäße Benennungs- und Kennzeichnungskonventionen](../../ready/azure-best-practices/naming-and-tagging.md) eingehalten werden, und [setzen Sie Kennzeichnungskonventionen mithilfe von Azure Policy durch](https://docs.microsoft.com/azure/governance/policy/tutorials/govern-tags).
 - **Bestimmen von Gelegenheiten zur richtigen Dimensionierung.** Überprüfen Sie Ihre aktuelle Ressourcennutzung und die Leistungsanforderungen in der gesamten Umgebung.
@@ -34,7 +34,7 @@ Das Kostenmanagement im gesamten Unternehmen ist eine Funktion von Cloudgovernan
 
 ## <a name="operational-cost-management-best-practices"></a>Bewährte Methoden für das betriebliche Kostenmanagement
 
-Die folgenden bewährten Methoden werden in der Regel von einem Mitglied des Cloudgovernance- oder Cloudbetriebsteams in Einklang mit Patching- und anderen geplanten Wartungsvorgängen befolgt. Jeder dieser bewährten Methoden wird später in diesem Artikel ein handlungsrelevanter Leitfaden zugeordnet.
+Die folgenden bewährten Methoden werden in der Regel von einem Mitglied des Cloudgovernance- oder Cloudbetriebsteams in Einklang mit Patching- und anderen geplanten Wartungsvorgängen befolgt. Diesen bewährten Methoden wird später in diesem Artikel ein handlungsrelevanter Leitfaden zugeordnet.
 
 - **Kennzeichnung (Tagging) ist für jede Art von Governance von entscheidender Bedeutung:** Stellen Sie sicher, dass bei allen Workloads und Ressourcen [ordnungsgemäße Benennungs- und Kennzeichnungskonventionen](../../ready/azure-best-practices/naming-and-tagging.md) eingehalten werden, und [setzen Sie Kennzeichnungskonventionen mithilfe von Azure Policy durch](https://docs.microsoft.com/azure/governance/policy/tutorials/govern-tags).
 - **Bestimmen von Gelegenheiten zur richtigen Dimensionierung:** Untersuchen Sie Ihre derzeitige Ressourcenauslastung und Leistungsanforderungen für die gesamte Umgebung, um Ressourcen zu ermitteln, die über einen längeren Zeitraum (normalerweise mehr als 90 Tage) nicht ausgelastet waren.
@@ -48,7 +48,7 @@ Die folgenden bewährten Methoden werden in der Regel von einem Mitglied des Clo
 
 ## <a name="workload-cost-management-best-practices"></a>Bewährte Methoden für das Kostenmanagement von Workloads
 
-Bevor Sie Änderungen der Architektur vornehmen, sollten Sie sich mit dem technischen Leiter für die Workload besprechen. Es sollte eine Überprüfung der Workload mit der [Azure-Architekturüberprüfung](https://docs.microsoft.com/assessments/?id=azure-architecture-review) und dem [Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/framework) ausgeführt werden, um fundierte Entscheidungen zu den folgenden Architekturänderungen treffen zu können.
+Bevor Sie Änderungen der Architektur vornehmen, sollten Sie sich mit dem technischen Leiter für die Workload besprechen. Es sollte eine Überprüfung der Workload mit der [Microsoft Azure Well-Architected Review](https://docs.microsoft.com/assessments/?id=azure-architecture-review) und dem [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) ausgeführt werden, um fundierte Entscheidungen zu den folgenden Architekturänderungen treffen zu können.
 
 - **Azure App Service.** Überprüfen Sie die Produktionsanforderungen für alle App Service-Pläne im Premium-Tarif. Ohne ein Verständnis der geschäftlichen Anforderungen für eine Workload und der Konfiguration der zugrunde liegenden Ressourcen kann nur schwer festgestellt werden, ob ein Plan im Premium-Tarif erforderlich ist.
 - **Horizontale vor vertikaler Skalierung.** Die Verwendung mehrerer kleiner Instanzen kann einen einfacheren Skalierungspfad als eine einzelne größere Instanz möglich machen. Dies ermöglicht automatische Skalierung, die zu Kostenoptimierung führt. Vor dem horizontalen Skalieren einer Workload muss das Technikerteam sicherstellen, dass die Anwendung idempotent ist. Für eine horizontale Skalierung müssen möglicherweise zuerst Änderungen am Code und an der Konfiguration verschiedener Anwendungsebenen vorgenommen werden.
@@ -85,7 +85,7 @@ Um eine Prognose für Ihre monatliche Rechnung für Azure-Ressourcen aufzustelle
 **Weitere Informationen**:
 
 - Verwenden Sie den [Azure-Preisrechner](https://azure.microsoft.com/pricing/calculator).
-- Verschaffen Sie sich einen [Überblick über Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview).
+- Sehen Sie sich die [Übersicht zu Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) an.
 - Lesen Sie Informationen zu [Azure Migrate-Bewertungen](https://docs.microsoft.com/azure/migrate/concepts-assessment-calculation).
 - Erfahren Sie mehr über den [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
 
@@ -93,7 +93,7 @@ Um eine Prognose für Ihre monatliche Rechnung für Azure-Ressourcen aufzustelle
 
 Sie können eine Reihe von Optionen auswählen, wenn Sie virtuelle Azure-Computer bereitstellen, um Workloads zu unterstützen. Jeder VM-Typ verfügt über bestimmte Features und verschiedene Kombinationen aus CPU, Arbeitsspeicher und Datenträgern. VMs werden wie folgt gruppiert:
 
-| **Typ** | **Details** | **Verwenden Sie** |
+| type | Details | Zweck |
 |---|---|---|
 | **Allgemeiner Zweck** | Ausgewogenes Verhältnis von CPU zu Arbeitsspeicher. | Geeignet für Tests und Entwicklung, kleine bis mittelgroße Datenbanken, geringe bis mittelgroße Mengen. | Webserver für den Datenverkehr. |
 | **Compute-optimiert** | Hohes Verhältnis von CPU zu Arbeitsspeicher. | Gut geeignet für mittlere Webserver, Network Appliances, Stapelverarbeitungsvorgänge, Anwendungsserver. |
@@ -126,9 +126,9 @@ Azure bietet verschiedene Arten von Speicherdaten.
 
 <!-- markdownlint-disable MD033 -->
 
-| **Datentyp** | **Details** | **Verwendung** |
+| Datentyp | Details | Verwendung |
 | ---|---|---|
-| **Blobs** | Optimiert für die Speicherung großer Mengen von unstrukturierten Objekten wie z. B. Text- oder Binärdaten. | Zugriff auf Daten von überall her über HTTP/HTTPS. | Verwendung für Szenarios mit Streaming und wahlfreiem Zugriff. Beispielsweise um einem Browser Bilder und Dokumente direkt bereitzustellen, Video und Audio zu streamen und Sicherungs- und Notfallwiederherstellungsdaten zu speichern. |
+| **Blobs** | Optimiert für die Speicherung großer Mengen von unstrukturierten Objekten wie z. B. Text- oder Binärdaten. | Zugriff auf Daten von überall her über HTTP/HTTPS. <br><br> Verwendung für Szenarios mit Streaming und wahlfreiem Zugriff. Beispielsweise um einem Browser Bilder und Dokumente direkt bereitzustellen, Video und Audio zu streamen und Sicherungs- und Notfallwiederherstellungsdaten zu speichern. |
 | **Dateien** | Verwaltete Dateifreigaben, auf die über SMB 3.0 zugegriffen wird. | Verwendung beim Migrieren lokaler Dateifreigaben sowie zur Bereitstellung von mehrfachem Zugriff und mehreren Verbindungen, um Daten abzulegen. |
 | **Datenträger** | Basierend auf Seitenblobs. <br><br> Datenträgertyp (Geschwindigkeit): HDD Standard, SSD Standard, SSD Premium oder Ultra Disks. <br><br> Datenträgerverwaltung: Nicht verwaltet (Sie verwalten Datenträgereinstellungen und Speicher) oder verwaltet (Sie wählen den Datenträgertyp aus, und Azure verwaltet diesen Datenträger für Sie). | Verwendung von Premium-Datenträgern für VMs. Verwendung von verwalteten Datenträgern für einfache Verwaltung und Skalierung. |
 | **Warteschlangen** | Speichern und Abrufen großer Mengen von Nachrichten mittels Zugriff über authentifizierte Aufrufe (HTTP oder HTTPS). | Verbinden von App-Komponenten mit asynchronem Message Queuing. |
@@ -142,7 +142,7 @@ Azure Storage bietet verschiedene Optionen für den Zugriff auf Blockblobdaten. 
 
 <!-- markdownlint-disable MD033 -->
 
-| **Zugriffsebene** | **Details** | **Verwendung** |
+| Zugriffsebene | Details | Verwendung |
 | --- | --- | --- |
 | **Heiße Ebene** | Höhere Speicherkosten, geringere Zugriffs- und Transaktionskosten <br><br> Dies ist die Standardzugriffsebene. | Verwendung für Daten, die aktiv und mit häufigem Zugriff verwendet werden. |
 | **Kalte Ebene** | Geringere Speicherkosten, höhere Zugriffs- und Transaktionskosten. <br><br> Speicherung für mindestens 30 Tage. | Kurzfristige Speicherung, Daten sind verfügbar, aber Zugriff erfolgt nur selten. |
@@ -156,7 +156,7 @@ Azure bietet verschiedene Typen von Speicherkonten und Leistungsstufen.
 
 <!-- markdownlint-disable MD033 -->
 
-| **Kontotyp** | **Details** | **Verwendung** |
+| Kontotyp | Details | Verwendung |
 | --- | --- | --- |
 | **Stufe „Universell V2 Standard“** | Unterstützt Blobs (Block, Seiten, Anfüge), Dateien, Datenträger, Warteschlangen und Tabellen. <br><br> Unterstützt die Zugriffsebenen „Heiß“, „Kalt“ und „Archiv“. Zonenredundanter Speicher (ZRS) wird unterstützt. | Verwendung für die meisten Szenarios und die meisten Typen von Daten. Standardspeicherkonten können auf HDDs oder SSDs basieren. |
 | **Stufe „Universell V2 Premium“** | Unterstützt die Blobspeicherdaten (Seitenblobs). Unterstützt die Zugriffsebenen „Heiß“, „Kalt“ und „Archiv“. ZRS wird unterstützt. <br><br> Speicherung auf SSDs. | Microsoft empfiehlt die Verwendung für alle VMs. |
@@ -169,7 +169,7 @@ Azure bietet verschiedene Typen von Speicherkonten und Leistungsstufen.
 
 Speicherkonten können verschiedene Arten von Redundanz für Resilienz und Hochverfügbarkeit verwenden.
 
-| **Typ** | **Details** | **Verwendung** |
+| type | Details | Verwendung |
 | --- | --- | --- |
 | **Lokal redundanter Speicher (LRS)** | Schützt vor einem lokalen Ausfall durch Replikation in eine einzelne Speichereinheit in einer gesonderten Fehler- und Updatedomäne. Behält mehrere Kopien Ihrer Daten in einem Rechenzentrum. Stellt eine Dauerhaftigkeit von mindestens 99,999999999 Prozent (11 Neunen) für Objekte in einem bestimmten Jahr bereit. | Erwägen Sie, ob Ihre Anwendung Daten speichert, die problemlos wiederhergestellt werden können. |
 | **Zonenredundanter Speicher (ZRS)** | Schützt vor Rechenzentrumsausfällen, indem über drei Speichercluster in einer einzelnen Region hinweg repliziert wird. Jeder Speichercluster ist physisch unabhängig und befindet sich in einer eigenen Verfügbarkeitszone. Bietet eine Dauerhaftigkeit von mindestens 99,9999999999 Prozent (12 Neunen) für Objekte für ein bestimmtes Jahr, indem mehrere Kopien Ihrer Daten in mehreren Rechenzentren oder mehreren Regionen gespeichert werden. | Überlegen Sie, ob Sie Konsistenz, Dauerhaftigkeit und Hochverfügbarkeit benötigen. Schützt eventuell nicht vor einem regionalen Notfall, wenn mehrere Zonen dauerhaft betroffen sind. |
@@ -178,11 +178,11 @@ Speicherkonten können verschiedene Arten von Redundanz für Resilienz und Hochv
 
 **Weitere Informationen**:
 
-- [Sehen Sie sich](https://azure.microsoft.com/pricing/details/storage) die Preise für Azure Storage an.
-- [Weitere Informationen zum](https://docs.microsoft.com/azure/storage/common/storage-import-export-service) Azure Import/Export für die Übernahme großer Datenmengen in Azure-Blobs und Azure Files.
-- [Vergleichen Sie](https://docs.microsoft.com/azure/storage/common/storage-introduction) Datentypen für Blobs, Dateien und Datenträgerspeicher.
+- Sehen Sie sich die [Preise für Azure Storage](https://azure.microsoft.com/pricing/details/storage) an.
+- Erfahren Sie mehr über das Verwenden des [Azure Import/Export-Diensts](https://docs.microsoft.com/azure/storage/common/storage-import-export-service), um große Datenmengen sicher in Azure Blob Storage und Azure Files zu importieren.
+- Vergleichen Sie [Datentypen für Blobs, Dateien und Datenträgerspeicher](https://docs.microsoft.com/azure/storage/common/storage-introduction).
 - Informieren Sie sich genauer zu [Zugriffsebenen](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers).
-- [Informationen zu ](https://docs.microsoft.com/azure/storage/common/storage-account-overview) verschiedene Typen von Speicherkonten.
+- Erfahren Sie mehr über [verschiedene Typen von Speicherkonten](https://docs.microsoft.com/azure/storage/common/storage-account-overview).
 - Informieren Sie sich zu [Azure Storage-Redundanz](https://docs.microsoft.com/azure/storage/common/storage-redundancy), einschließlich LRS, ZRS, GRS und GRS mit Lesezugriff.
 - Weitere Informationen zu [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction).
 
@@ -207,7 +207,7 @@ Eine integriertes Portfolio aus lokalen und Azure-Produkten von Microsoft generi
 
 - [Werfen Sie einen Blick auf](https://azure.microsoft.com/pricing/hybrid-benefit) den Einsparungsrechner für Azure-Hybridvorteil.
 - Weitere Informationen zu [Azure-Hybridvorteil für Windows Server](https://azure.microsoft.com/pricing/hybrid-benefit).
-- [Sehen Sie sich die](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance) Preisinformationen für virtuelle Azure-Computer mit SQL Server an.
+- Sehen Sie sich die [Preisinformationen für virtuelle Azure-Computer mit SQL Server](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance) an.
 
 ## <a name="best-practice-use-reserved-vm-instances"></a>Bewährte Methode: Reservierte VM-Instanzen verwenden
 
@@ -237,9 +237,9 @@ Um dies zu erreichen, können Sie Azure Cost Management-APIs verwenden. Nachdem 
 
 **Weitere Informationen**:
 
-- [Erhalten Sie einen Überblick](https://docs.microsoft.com/azure/billing/billing-consumption-api-overview) über die Azure-Nutzungs-APIs.
-- [Erfahren Sie mehr über](https://docs.microsoft.com/power-bi/desktop-connect-azure-consumption-insights) das Herstellen einer Verbindung mit Azure Consumption Insights in Power BI Desktop.
-- [Erfahren Sie, wie Sie](https://docs.microsoft.com/azure/billing/billing-manage-access) den Zugriff auf Abrechnungsinformationen für Azure mithilfe der rollenbasierten Zugriffssteuerung (RBAC) verwalten.
+- Lesen Sie die [Übersicht über Azure-Nutzungs-APIs](https://docs.microsoft.com/azure/billing/billing-consumption-api-overview).
+- Erfahren Sie mehr über das [Herstellen einer Verbindung mit Azure Consumption Insights in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-connect-azure-consumption-insights).
+- Erfahren Sie, wie Sie [den Zugriff auf Abrechnungsinformationen für Azure mithilfe der rollenbasierten Zugriffssteuerung (RBAC) verwalten](https://docs.microsoft.com/azure/billing/billing-manage-access).
 
 ## <a name="best-practice-monitor-resource-utilization"></a>Bewährte Methode: Ressourcennutzung überwachen
 
@@ -253,8 +253,8 @@ In Azure bezahlen Sie für die Nutzung, also wenn Ressourcen tatsächlich genutz
 
 **Weitere Informationen**:
 
-- Verschaffen Sie sich einen Überblick über [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) und [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview).
-- [Erhalten Sie](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations) Advisor-Empfehlungen zu Kosten.
+- Lesen Sie Übersichten über [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) und [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview).
+- Erhalten Sie [Azure Advisor-Empfehlungen zu Kosten](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations).
 - Erfahren Sie, wie Sie [Kosten anhand von Empfehlungen optimieren](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations) und [unerwartete Gebühren vermeiden](https://docs.microsoft.com/azure/billing/billing-getting-started).
 - Erfahren Sie mehr über das [Toolkit zur Azure-Ressourcenoptimierung (ARO)](https://github.com/azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit).
 
@@ -306,11 +306,11 @@ In Azure Cost Management können Sie folgende Aktionen ausführen:
 
 **Weitere Informationen**:
 
-- [Einen Überblick erhalten](https://docs.microsoft.com/azure/cost-management/overview) über Azure Cost Management.
-- [Erfahren Sie, wie Sie](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices) Ihre Cloudinvestitionen mit Azure Cost Management optimieren.
-- [Erfahren Sie, wie Sie](https://docs.microsoft.com/azure/cost-management/use-reports) Azure Cost Management-Berichte verwenden.
-- [Erhalten Sie ein Tutorial](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations) zum Optimieren von Kosten mithilfe von Empfehlungen.
-- [Sehen Sie sich](https://docs.microsoft.com/rest/api/consumption/budgets) die Azure Consumption-APIs an.
+- Lesen Sie die [Übersicht über Azure Cost Management](https://docs.microsoft.com/azure/cost-management/overview).
+- Erfahren Sie, wie Sie Ihre [Cloudinvestitionen mit Azure Cost Management optimieren](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices).
+- Erfahren Sie, wie Sie [Azure Cost Management-Berichte](https://docs.microsoft.com/azure/cost-management/use-reports) verwenden.
+- Sehen Sie sich ein Tutorial zum [Optimieren von Kosten mithilfe von Empfehlungen](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations) an.
+- Sehen Sie sich die [Azure Consumption-APIs](https://docs.microsoft.com/rest/api/consumption/budgets) an.
 
 ## <a name="best-practice-implement-resource-group-budgets"></a>Bewährte Methode: Budgets für Ressourcengruppen implementieren
 
@@ -321,8 +321,8 @@ Häufig werden Ressourcengruppen verwendet, um Kostengrenzen darzustellen. Zusam
 
 **Weitere Informationen**:
 
-- [Informieren Sie sich, wie Sie](https://docs.microsoft.com/azure/billing/billing-cost-management-budget-scenario) Kosten mit Azure-Budgets verwalten.
-- [Absolvieren Sie ein Tutorial](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets), um ein Azure-Budget zu erstellen und zu verwalten.
+- Informieren Sie sich über das [Verwalten von Kosten mit Azure-Budgets](https://docs.microsoft.com/azure/billing/billing-cost-management-budget-scenario).
+- Sehen Sie sich ein Tutorial zum [Erstellen und Verwalten eines Azure-Budgets](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets) an.
 
 ## <a name="best-practice-review-azure-advisor-recommendations"></a>Bewährte Methode: Arbeiten Sie Azure Advisor-Empfehlungen durch
 
@@ -344,11 +344,11 @@ Wenn Sie Ressourcen in Azure verschieben und die Diagnoseprotokollierung für si
 
 **Weitere Informationen**:
 
-- [Informationen zum](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-usage-and-estimated-costs) Überwachen der Nutzung und der geschätzten Kosten.
+- Erfahren Sie mehr über das [Überwachen der Nutzung und der geschätzten Kosten](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-usage-and-estimated-costs).
 
 ## <a name="best-practice-optimize-storage"></a>Bewährte Methode: Speicher optimieren
 
-Wenn Sie vor der Einführung bewährte Methoden für die Auswahl von Speicher befolgt haben, ernten Sie wahrscheinlich einige Vorteile. Es wird allerdings wahrscheinlich noch zusätzliche Speicherkosten geben, die Sie noch weiter optimieren können. Im Laufe der Zeit veralten Blobs und Dateien. Daten werden eventuell nicht mehr verwendet, doch die gesetzliche Anforderungen können verlangen, dass Sie sie noch für einen bestimmten Zeitraum beibehalten müssen. Solche Daten müssen Sie also nicht unbedingt auf Hochleistungsspeicher lagern, den Sie für die ursprüngliche Einführung verwendet haben.
+Wenn Sie vor der Einführung bewährte Methoden für die Auswahl von Speicher befolgt haben, profitieren Sie wahrscheinlich von einigen Vorteilen. Sie können wahrscheinlich noch zusätzliche Speicherkosten optimieren. Im Laufe der Zeit veralten Blobs und Dateien. Daten werden eventuell nicht mehr verwendet, doch die gesetzliche Anforderungen können verlangen, dass Sie sie noch für einen bestimmten Zeitraum beibehalten müssen. Solche Daten müssen Sie also nicht unbedingt auf Hochleistungsspeicher lagern, den Sie für die ursprüngliche Einführung verwendet haben.
 
 Das Identifizieren und Verschieben veralteter Daten in kostengünstigere Speicherbereiche kann große Auswirkungen auf Ihr monatliches Speicherbudget und damit einhergehende Kosteneinsparungen haben. Azure bietet viele Möglichkeiten, um Ihnen bei der Identifizierung und anschließenden Speicherung dieser veralteten Daten zu helfen.
 
@@ -358,7 +358,8 @@ Das Identifizieren und Verschieben veralteter Daten in kostengünstigere Speiche
 **Weitere Informationen**:
 
 - Informieren Sie sich genauer zu [Zugriffsebenen](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers).
-- [Erhalten Sie eine Übersicht über](https://docs.microsoft.com/azure/azure-monitor/overview) StorSimple und [StorSimple-Preise](https://azure.microsoft.com/pricing/details/storsimple).
+- Lesen Sie die [Übersicht über StorSimple](https://docs.microsoft.com/azure/azure-monitor/overview).
+- Sehen Sie sich die [Preise für StorSimple](https://azure.microsoft.com/pricing/details/storsimple) an.
 
 ## <a name="best-practice-automate-vm-optimization"></a>Bewährte Methode: VM-Optimierung automatisieren
 
@@ -368,9 +369,9 @@ Sie können einen virtuellen Computer mit Azure Automation, VM-Skalierungsgruppe
 
 **Weitere Informationen**:
 
-- [Erfahren Sie, wie Sie](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-vertical-scale-reprovision) vertikale automatische Skalierung verwenden.
-- [Planen](https://azure.microsoft.com/updates/azure-devtest-labs-schedule-vm-auto-start) des automatischen Starts einer VM.
-- [Informationen, wie Sie ](https://docs.microsoft.com/azure/automation/automation-solution-vm-management) VMs außerhalb von Nutzungszeiten in Azure Automation starten oder beenden.
+- Erfahren Sie mehr über die [vertikale automatische Skalierung](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-vertical-scale-reprovision).
+- Sehen Sie sich [Azure DevTest Labs: Planen des automatischen Starts von VMs](https://azure.microsoft.com/updates/azure-devtest-labs-schedule-vm-auto-start) an.
+- Informieren Sie sich über das [Starten oder Beenden von VMs außerhalb von Nutzungszeiten in Azure Automation](https://docs.microsoft.com/azure/automation/automation-solution-vm-management).
 - Informieren Sie sich genauer zu [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) und dem [Toolkit zur Azure-Ressourcenoptimierung (ARO)](https://github.com/azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit).
 
 ## <a name="best-practice-use-logic-apps-and-runbooks-with-budgets-api"></a>Bewährte Methode: Logic Apps und Runbooks mit der API für Budgets verwenden

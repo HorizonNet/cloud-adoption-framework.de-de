@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 213fc070f648a43d285e59948bb567502f944603
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: dfbde6cb7008ce33a77afde238b2b550ec397d23
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218780"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754710"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>Governanceleitfaden für Standardunternehmen: Die Geschichte hinter der Governancestrategie
 
@@ -23,7 +23,7 @@ Die folgende Geschichte schildert einen Anwendungsfall für die Governance währ
 
 Die Unternehmensleitung stellte Anfang des Jahres Pläne vor, um dem Business mit verschiedenen Ansätzen neue Impulse zu geben. Sie macht Druck, damit das Kundenerlebnis verbessert wird und das Unternehmen Marktanteile gewinnt. Sie möchte auch neue Produkte und Dienste anbieten, die das Unternehmen als Vordenker und Vorreiter in der Branche positionieren. Parallel dazu hat die Unternehmensleitung Verfahren initiiert, um Ressourcenverschwendung und unnötige Kosten zu vermeiden. Diese Aktionen scheinen auf den ersten Blick einschüchternd, zeigen aber, dass bei diesem Ansatz so viel Kapital wie möglich auf zukünftiges Wachstum konzentriert wird.
 
-In der Vergangenheit war der CIO des Unternehmens von diesen strategischen Gesprächen ausgeschlossen. Da aber die Zukunftsvision untrennbar mit technischem Wachstum verbunden ist, wird die IT-Abteilung an der Entwicklung und Ausarbeitung dieser großen Pläne beteiligt. Die IT muss nun Lösungen und Support auf neue Weise bereitstellen. Das Team ist auf diese Veränderungen nicht vorbereitet und wird wahrscheinlich mit der Lernkurve zu kämpfen haben.
+In der Vergangenheit war der CIO des Unternehmens von diesen strategischen Gesprächen ausgeschlossen. Da die Zukunftsvision untrennbar mit technischem Wachstum verbunden ist, wird die IT-Abteilung an der Entwicklung und Ausarbeitung dieser großen Pläne beteiligt. Die IT muss nun Lösungen und Support auf neue Weise bereitstellen. Das Team ist auf diese Veränderungen nicht vorbereitet und wird wahrscheinlich mit der Lernkurve zu kämpfen haben.
 
 ## <a name="business-characteristics"></a>Geschäftsmerkmale
 

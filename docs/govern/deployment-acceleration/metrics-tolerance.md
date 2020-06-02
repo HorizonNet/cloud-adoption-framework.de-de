@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ed92a62d83092a54aa86c58f7b453768fe71ad1f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1ab0d2c8657889a8f4ee16bd4dd9ca4f631b32c2
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220276"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754970"
 ---
 # <a name="risk-tolerance-metrics-and-indicators-in-the-deployment-acceleration-discipline"></a>Metriken und Indikatoren der Risikotoleranz in der Disziplin „Beschleunigung der Bereitstellung“
 
@@ -21,7 +21,7 @@ Lernen Sie, die Risikotoleranz von Unternehmen im Zusammenhang mit der Disziplin
 
 ## <a name="metrics"></a>Metriken
 
-Die Beschleunigung der Bereitstellung konzentriert sich auf Risiken im Hinblick auf die Konfiguration, Bereitstellung, Aktualisierung und Verwaltung von Cloudressourcen. Die folgenden Informationen sind bei der Einführung dieser Cloud Governance-Disziplin hilfreich:
+Die Beschleunigung der Bereitstellung konzentriert sich auf Risiken im Hinblick auf die Konfiguration, Bereitstellung, Aktualisierung und Verwaltung von Cloudressourcen. Die folgenden Informationen sind bei der Einführung der Disziplin „Beschleunigung der Bereitstellung“ hilfreich:
 
 - **Bereitstellungsfehler:** Prozentsatz von Bereitstellungen mit Fehlern oder falsch konfigurierten Ressourcen.
 - **Bereitstellungszeit:** Die Zeitspanne, die zum Bereitstellen von Updates auf einem vorhandenen System benötigt wird.

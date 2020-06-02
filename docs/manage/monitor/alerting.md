@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 0f9c71ec1ee9ce258def9abb297e89567399aeb9
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: d072ed1ac5abaa4f0c5cf3051d6585b4b5b13b24
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400808"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861394"
 ---
 <!-- cSpell:ignore kusto multiresource multisignal -->
 
@@ -66,9 +66,9 @@ Azure Monitor verfügt über vier Arten von Warnungen, die auf gewisse Weise an 
 
 - [Protokollabfragewarnung](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-log-query): Verfügbar für Warnmeldungen zu Inhalten in den Application Insights- oder Azure-Protokollspeichern. Das Auslösen von Warnungen basierend auf arbeitsbereichsübergreifenden Abfragen ist ebenfalls möglich.
 
-- [Aktivitätsprotokollwarnung](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log): Warnungen zu Elementen im Aktivitätsprotokollspeicher mit Ausnahme von Service Health-Daten.
+- [Aktivitätsprotokollwarnung](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log): Warnungen zu Elementen im Aktivitätsprotokollspeicher mit Ausnahme von Azure Service Health-Daten.
 
-- [Service Health-Warnung](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications): Ein besonderer Warnungstyp, der ausschließlich für Service Health-Probleme verwendet wird, die aus dem Aktivitätsprotokollspeicher stammen, etwa Ausfälle und anstehende geplante Wartungsarbeiten. Beachten Sie, dass dieser Warnungstyp über [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview), einen Begleitdienst von Azure Monitor, konfiguriert wird.
+- [Azure Service Health-Warnung](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications): Ein besonderer Warnungstyp, der ausschließlich für Azure Service Health-Probleme verwendet wird, die aus dem Aktivitätsprotokollspeicher stammen, etwa Ausfälle und anstehende geplante Wartungsarbeiten. Beachten Sie, dass dieser Warnungstyp über [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview), einen Begleitdienst von Azure Monitor, konfiguriert wird.
 
 ### <a name="enable-alerting-through-partner-tools"></a>Aktivieren von Warnungen über Partnertools
 
@@ -84,7 +84,7 @@ Azure Monitor bietet Unterstützung für die Integration mit anderen Überwachun
 |---| ---| --- |
 | Azure Monitor für Container | Berechnete durchschnittliche Leistungsdaten von Knoten und Pods werden in den Metrikspeicher geschrieben. | Erstellen Sie Metrikwarnungen, wenn Sie basierend auf Abweichungen der im Zeitverlauf gemessenen aggregierten Nutzungsleistung benachrichtigt werden möchten. |
 | | Anhand von Perzentilen aus Knoten, Controllern, Containern und Pods berechnete Leistungsdaten werden in den Protokollspeicher geschrieben. Containerprotokolle und Bestandsinformationen werden ebenfalls in den Protokollspeicher geschrieben. | Erstellen Sie Protokollabfragewarnungen, wenn Sie basierend auf Abweichungen der gemessenen Auslastung von Clustern und Containern benachrichtigt werden möchten. Protokollabfragewarnungen können auch basierend auf Podphasen- und Statusknotenzählungen konfiguriert werden. |
-Azure Monitor für VMs | Metriken zu Integritätskriterien werden in den Metrikspeicher geschrieben. | Warnungen werden generiert, wenn sich der Integritätsstatus von „Fehlerfrei“ in „Fehlerhaft“ ändert. Diese Warnung unterstützt nur Aktionsgruppen, die zum Senden von SMS- oder E-Mail-Benachrichtigungen konfiguriert sind. |
+| Azure Monitor für VMs | Metriken zu Integritätskriterien werden in den Metrikspeicher geschrieben. | Warnungen werden generiert, wenn sich der Integritätsstatus von „Fehlerfrei“ in „Fehlerhaft“ ändert. Diese Warnung unterstützt nur Aktionsgruppen, die zum Senden von SMS- oder E-Mail-Benachrichtigungen konfiguriert sind. |
 | | Zuordnungsdaten und Leistungsprotokolldaten zum Gastbetriebssystem werden in den Protokollspeicher geschrieben. | Es werden Protokollabfragewarnungen erstellt. |
 
 <!-- docsTest:ignore "speed driven by cost" -->
@@ -128,4 +128,4 @@ Beachten Sie unbedingt die [Einschränkungen zur Anzahl der Warnungen, die Sie e
 
 ### <a name="best-query-experience"></a>Optimales Abfrageverhalten
 
-Wenn Sie nach Trends in Ihrem gesamten Datenbestand suchen, ist es sinnvoll, sämtliche Ihrer Daten in Azure-Protokolle zu importieren – es sei denn, die Daten befinden sich bereits in Application Insights. Sie können Abfragen über beide Arbeitsbereiche hinweg erstellen, deshalb ist eine Verschiebung von Daten zwischen diesen Tools nicht erforderlich. Sie können außerdem Aktivitätsprotokoll- und Service Health-Daten in Ihren Log Analytics-Arbeitsbereich importieren. Sie bezahlen für diese Erfassung und Speicherung, aber alle Ihre Daten werden zur Analyse und Abfrage an einem Ort gesammelt. Dieser Ansatz gibt Ihnen auch die Möglichkeit, komplexe Abfragebedingungen zu erstellen und bei diesen zu warnen.
+Wenn Sie nach Trends in Ihrem gesamten Datenbestand suchen, ist es sinnvoll, sämtliche Ihrer Daten in Azure-Protokolle zu importieren – es sei denn, die Daten befinden sich bereits in Application Insights. Sie können Abfragen über beide Arbeitsbereiche hinweg erstellen, deshalb ist eine Verschiebung von Daten zwischen diesen Tools nicht erforderlich. Sie können außerdem Aktivitätsprotokoll- und Azure Service Health-Daten in Ihren Log Analytics-Arbeitsbereich importieren. Sie bezahlen für diese Erfassung und Speicherung, aber alle Ihre Daten werden zur Analyse und Abfrage an einem Ort gesammelt. Dieser Ansatz gibt Ihnen auch die Möglichkeit, komplexe Abfragebedingungen zu erstellen und bei diesen zu warnen.

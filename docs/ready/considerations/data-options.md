@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: af1ba2cbf55d0c144241676f59e6ad154ea1b5f2
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 74fc5b90484bbbc8f72568eb83bbca7c8eb25afb
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83620417"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755799"
 ---
 <!-- cSpell:ignore HDFS -->
 
@@ -40,7 +40,7 @@ Die Beantwortung der folgenden Fragen zu Ihren Workloads ist hilfreich, um basie
 - **Verwenden Ihre Workloads Spaltenfamiliendaten?** [Apache HBase in Azure HDInsight](https://docs.microsoft.com/azure/hdinsight/hbase/apache-hbase-overview) basiert auf Apache Hadoop. Apache HBase unterstützt große Mengen von unstrukturierten und halbstrukturierten Daten in einer schemalosen Datenbank, die nach Spaltenfamilien organisiert ist.
 - **Werden für Ihre Workloads Datenanalysefunktionen mit hoher Kapazität benötigt?** Sie können [Azure SQL Data Warehouse](https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is) zum effektiven Speichern und Abfragen von strukturierten Daten im Petabytebereich verwenden. Für unstrukturierte Big Data-Workloads können Sie [Azure Data Lake](https://azure.microsoft.com/solutions/data-lake) zum Speichern und Analysieren von Dateien im Petabytebereich und von Billionen von Objekten verwenden.
 - **Werden für Ihre Workloads Suchmaschinenfunktionen benötigt?** Sie können [Azure Search](https://docs.microsoft.com/azure/search/search-what-is-azure-search) zum Erstellen cloudbasierter Suchindizes mit KI-Erweiterung verwenden, die in Ihre Anwendungen integriert werden können.
-- **Verwenden Ihre Workloads Zeitreihendaten?** [Azure Time Series Insights](https://docs.microsoft.com/azure/time-series-insights/time-series-insights-overview) ist zum Speichern, Visualisieren und Abfragen großer Mengen von Zeitreihendaten ausgelegt, z.B. der von IoT-Geräten generierten Daten.
+- **Verwenden Ihre Workloads Zeitreihendaten?** [Azure Time Series Insights](https://docs.microsoft.com/azure/time-series-insights/time-series-insights-overview) ist zum Speichern, Visualisieren und Abfragen großer Mengen von Zeitreihendaten ausgelegt, z. B. der von IoT-Geräten generierten Daten.
 
 > [!NOTE]
 > Weitere Informationen zum Bewerten von Datenbankoptionen für die einzelnen Anwendungen oder Dienste finden Sie im [Leitfaden zur Azure-Anwendungsarchitektur](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-comparison).
@@ -79,6 +79,6 @@ Ein Teil Ihrer Compliancemaßnahmen kann die Steuerung des physischen Speicheror
 
 Wenn Sie Ihre Landezonenumgebung vorbereiten, können Sie Kontrollelemente einrichten, die einschränken, welche Datenspeicher von Benutzern bereitgestellt werden können. Kontrollelemente können Ihnen als Hilfe beim Verwalten von Kosten und Eindämmen von Sicherheitsrisiken dienen, während Entwickler und IT-Teams weiterhin Ressourcen bereitstellen und konfigurieren können, die zum Unterstützen Ihrer Workloads benötigt werden.
 
-Nachdem Sie die Anforderungen Ihrer Landezone identifiziert und dokumentiert haben, können Sie [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) nutzen, um zu steuern, welche Datenbankressourcen von Benutzern erstellt werden dürfen. Kontrollelemente können [die Erstellung von Datenbankressourcentypen zulassen oder verweigern](https://docs.microsoft.com/azure/governance/policy/samples/allowed-resource-types). Beispielsweise können Sie festlegen, dass Benutzer nur Azure SQL-Datenbank-Ressourcen erstellen können. Sie können die zulässigen Optionen bei der Erstellung einer Ressource auch über eine Richtlinie steuern, z.B. das [Einschränken der Bereitstellung von SQL-Datenbank-SKUs](https://docs.microsoft.com/azure/governance/policy/samples/allowed-sql-db-skus) oder das [Zulassen nur von bestimmten Versionen von SQL Server](https://docs.microsoft.com/azure/governance/policy/samples/require-sql-12), die auf einem virtuellen IaaS-Computer installiert werden können.
+Nachdem Sie die Anforderungen Ihrer Landezone identifiziert und dokumentiert haben, können Sie [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) nutzen, um zu steuern, welche Datenbankressourcen von Benutzern erstellt werden dürfen. Kontrollelemente können [die Erstellung von Datenbankressourcentypen zulassen oder verweigern](https://docs.microsoft.com/azure/governance/policy/samples/allowed-resource-types). Beispielsweise können Sie festlegen, dass Benutzer nur Azure SQL-Datenbank-Ressourcen erstellen können. Sie können die zulässigen Optionen bei der Erstellung einer Ressource auch über eine Richtlinie steuern, z. B. das [Einschränken der Bereitstellung von SQL-Datenbank-SKUs](https://docs.microsoft.com/azure/governance/policy/samples/allowed-sql-db-skus) oder das [Zulassen nur von bestimmten Versionen von SQL Server](https://docs.microsoft.com/azure/governance/policy/samples/require-sql-12), die auf einem virtuellen IaaS-Computer installiert werden können.
 
-Der Bereich von Richtlinien kann auf Ressourcen, Ressourcengruppen, Abonnements oder Verwaltungsgruppen festgelegt werden. Darüber hinaus können diese Richtlinien auch in [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview)-Definitionen eingebunden und in der gesamten Cloudumgebung wiederholt angewendet werden.
+Der Bereich von Richtlinien kann auf Ressourcen, Ressourcengruppen, Abonnements oder Verwaltungsgruppen festgelegt werden. Darüber hinaus können diese Richtlinien auch in [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/overview)-Definitionen eingebunden und in der gesamten Cloudumgebung wiederholt angewendet werden.

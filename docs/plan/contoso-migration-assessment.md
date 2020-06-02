@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: bc1753821e61ee0a7af74bc720a56ec8962ecded
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: dba69e75565658b0101a1849ca3d90e21890fa4a
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214581"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862601"
 ---
 <!-- docsTest:disable TODO -->
 
@@ -131,8 +131,10 @@ Hier ist angegeben, wie Contoso die Bewertung durchführt:
 > - **Schritt 5: Vorbereiten der Abhängigkeitsanalyse mit Azure Migrate.** Contoso installiert Azure Migrate-Agents auf den virtuellen Computern, damit das Unternehmen die Zuordnung der Abhängigkeiten zwischen virtuellen Computern anzeigen kann.
 > - **Schritt 6: Bewerten der virtuellen Computer mit Azure Migrate.** Contoso überprüft die Abhängigkeiten, gruppiert die virtuellen Computern und führt die Bewertung durch. Nach Abschluss der Bewertung wird sie von Contoso als Vorbereitung auf die Migration analysiert.
 
-    > [!NOTE]
-    > Assessments shouldn't just be limited to using tooling to discover information about your environment. You should also schedule time to speak to business owners, end users, and other members of the IT department to fully understand of what is happening in the environment and understand factors that tooling cannot tell you. 
+<!-- -->
+
+> [!NOTE]
+> Bewertungen sollten nicht nur auf den Einsatz von Tools beschränkt sein, um Informationen zu Ihrer Umgebung zu ermitteln. Sie sollten auch Zeit für Gespräche mit Geschäftsinhabern, Endbenutzern und anderen Mitgliedern der IT-Abteilung einplanen, um sich ein umfassendes Bild von den Vorgängen in der Umgebung zu machen und Faktoren zu verstehen, die von Tools nicht angezeigt werden können.
 
 ## <a name="step-1-download-and-install-data-migration-assistant"></a>Schritt 1: Herunterladen und Installieren des Datenmigrations-Assistenten
 
@@ -286,7 +288,7 @@ Vor der Bereitstellung der VM überprüft Contoso, ob die OVA-Datei sicher ist:
 
     **Beispiel:**
 
-    ```C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256```
+    `C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256`
 
 3. Der generierte Hash sollte mit den Hashwerten übereinstimmen, die im Abschnitt [Überprüfen der Sicherheit](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security) des Tutorials [Bewerten von virtuellen VMware-Computern für die Migration](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware) aufgeführt sind.
 
@@ -489,13 +491,13 @@ Eine Bewertung verfügt über eine Zuverlässigkeitsstufe, die zwischen 1 und 5 
 - Zuverlässigkeitsstufen sind nützlich, wenn Sie die _leistungsbasierte Größenanpassung_ verwenden. Unter Umständen verfügt Azure Migrate nicht über genügend Datenpunkte für die nutzungsbasierte Größenanpassung. Bei der Größenanpassung vom Typ _Wie lokal_ wird die Zuverlässigkeit immer mit 5 Sternen bewertet, da Azure Migrate über alle Datenpunkte verfügt, die zum Bestimmen der VM-Größe erforderlich sind.
 - Die Zuverlässigkeitsstufe für die Bewertung ist abhängig davon, wie viele Datenpunkte verfügbar sind (in Prozent):
 
-   | Verfügbarkeit von Datenpunkten | Zuverlässigkeitsstufe |
-   | --- | --- |
-   | 0 % bis 20 % | 1 Stern |
-   | 21 % bis 40 % | 2 Sterne |
-   | 41 % bis 60 % | 3 Sterne |
-   | 61 % bis 80 % | 4 Sterne |
-   | 81 % bis 100 % | 5 Sterne |
+    | Verfügbarkeit von Datenpunkten | Zuverlässigkeitsstufe |
+    | --- | --- |
+    | 0 % bis 20 % | 1 Stern |
+    | 21 % bis 40 % | 2 Sterne |
+    | 41 % bis 60 % | 3 Sterne |
+    | 61 % bis 80 % | 4 Sterne |
+    | 81 % bis 100 % | 5 Sterne |
 
 #### <a name="verify-azure-readiness"></a>Überprüfen der Azure-Bereitschaft
 

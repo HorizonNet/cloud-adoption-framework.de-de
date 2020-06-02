@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: bbe36f12e6331a85f024af1835b66c30e35bf430
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: e11fb95356f4f7364b544e896a4566b1a3188e85
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218644"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754454"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>Metriken, Indikatoren und Risikotoleranz für die Identitätsbaseline
 
@@ -40,7 +40,7 @@ Es folgen Beispiele für nützliche Metriken, die Sie erfassen sollten, um die R
 
 ## <a name="risk-tolerance-indicators"></a>Risikotoleranzindikatoren
 
-Risiken im Hinblick auf die Identitätsbaseline beruhen zum größten Teil auf der Komplexität der Identitätsinfrastruktur in Ihrer Organisation. Wenn alle Ihre Benutzer und Gruppen über ein einziges Verzeichnis oder einen einzigen nativen Cloudidentitätsanbieter mit minimaler Integration in andere Dienste verwaltet werden, ist Ihre Risikostufe wahrscheinlich relativ gering. Wenn Ihr Unternehmen jedoch wächst, müssen Ihre Identitätsverwaltungsysteme möglicherweise kompliziertere Szenarien wie z.B. mehrere Verzeichnisse unterstützen, um Ihre interne Organisation oder den Verbund mit externen Identitätsanbietern abzubilden. Mit komplexeren Systemen steigt auch das Risiko.
+Risiken im Hinblick auf die Identitätsbaseline beruhen zum größten Teil auf der Komplexität der Identitätsinfrastruktur in Ihrer Organisation. Wenn alle Ihre Benutzer und Gruppen über ein einziges Verzeichnis oder einen einzigen nativen Cloudidentitätsanbieter mit minimaler Integration in andere Dienste verwaltet werden, ist Ihre Risikostufe wahrscheinlich relativ gering. Wenn Ihre Geschäftsanforderungen steigen, müssen Ihre Identitätsverwaltungsysteme möglicherweise kompliziertere Szenarien wie z. B. mehrere Verzeichnisse unterstützen, um Ihre interne Organisation oder den Verbund mit externen Identitätsanbietern abzubilden. Mit komplexeren Systemen steigt auch das Risiko.
 
 In den frühen Phasen der Cloudeinführung arbeiten Sie mit Ihrem IT-Sicherheitsteam und den Projektbeteiligten des Unternehmens zusammen, um [Geschäftsrisiken](./business-risks.md) im Zusammenhang mit der Identität zu identifizieren, und bestimmen anschließend eine akzeptable Baseline für die Identitätsrisikotoleranz. Dieser Abschnitt des Cloud Adoption Framework enthält einige Beispiele. Die Risiken und Baselines in Ihrem Unternehmen bzw. bei Ihren Bereitstellungen weichen im Detail möglicherweise davon ab.
 

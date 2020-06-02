@@ -3,23 +3,23 @@ title: Grundlegendes zu Cloudeinführungsfunktionen
 description: Erfahren Sie, wie Cloudeinführungsfunktionen technische Lösungen ermöglichen, sodass Sie Ihre Teams entsprechend besetzen können.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/20/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: ac8307d3af159f3d6d35ccf2ded55f77786a33d7
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: c2f030d594a3bdb3ef195252187ae3c033c06e27
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215873"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755812"
 ---
 # <a name="cloud-adoption-functions"></a>Cloudeinführungsfunktionen
 
 Cloudeinführungsfunktionen ermöglichen die Implementierung technischer Lösungen in der Cloud. Wie bei jedem IT-Projekt entscheiden die Personen, die die eigentliche Arbeit leisten, über den Erfolg. Die Teams, die die notwendigen Cloudeinführungsfunktionen bereitstellen, können aus verschiedenen fachlichen Ansprechpartnern oder Implementierungspartnern bestehen.
 
-Cloudeinführungsteams sind das moderne Äquivalent zu technischen Implementierungs- oder Projektteams. Die Charakteristik der Cloud kann jedoch eine dynamischere Teamstruktur erfordern. Einige Teams konzentrieren sich ausschließlich auf die Cloudmigration, während andere Teams sich schwerpunktmäßig mit Innovationen beschäftigen, die Cloudtechnologien nutzen. Einige Teams verfügen über das umfassende technische Fachwissen, das erforderlich ist, um große Implementierungsbemühungen wie eine vollständige Rechenzentrumsmigration abzuschließen. Andere Teams haben einen engeren technischen Fokus und wechseln möglicherweise zwischen den Projekten, um bestimmte Ziele zu erreichen. Ein Beispiel wäre ein Team von Datenplattformspezialisten, das bei der Konvertierung von SQL-VMs in SQL-PaaS-Instanzen hilft.
+Cloudeinführungsteams sind das moderne Äquivalent zu technischen Implementierungs- oder Projektteams. Die Charakteristik der Cloud kann aber eine dynamischere Teamstruktur erfordern. Einige Teams konzentrieren sich ausschließlich auf die Cloudmigration, während andere Teams sich schwerpunktmäßig mit Innovationen beschäftigen, die Cloudtechnologien nutzen. Einige Teams verfügen über das umfassende technische Fachwissen, das erforderlich ist, um große Implementierungsbemühungen wie eine vollständige Rechenzentrumsmigration abzuschließen. Andere Teams haben einen engeren technischen Fokus und wechseln möglicherweise zwischen den Projekten, um bestimmte Ziele zu erreichen. Ein Beispiel wäre ein Team von Datenplattformspezialisten, das bei der Konvertierung von SQL-VMs in SQL-PaaS-Instanzen hilft.
 
 Unabhängig von der Art oder Anzahl der Cloudeinführungsteams wird die für die Cloudeinführung erforderliche Funktionalität durch fachliche Ansprechpartner aus den Bereichen IT, Geschäftsanalyse oder Implementierungspartner bereitgestellt.
 

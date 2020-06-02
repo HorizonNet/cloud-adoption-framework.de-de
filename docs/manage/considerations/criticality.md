@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 2114b212718adb22b190f854de665e0d59fa50a4
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 68bfe3b1acfb6a48fdda7e4d9583adcadac29893
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83398458"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815207"
 ---
 # <a name="business-criticality-in-cloud-management"></a>Geschäftliche Wichtigkeit der Cloudverwaltung
 
@@ -20,8 +20,7 @@ In jedem Unternehmen gibt es eine kleine Anzahl von Workloads, die so wichtig si
 
 Am anderen Ende des Spektrums gibt es einige Workloads, die monatelang nicht verwendet werden. Ausfälle oder Leistungseinbußen solcher Workloads sind zwar nicht wünschenswert, aber die Auswirkungen sind isoliert und begrenzt.
 
-Eine genaue Kenntnis der Wichtigkeit jeder Workload im IT-Portfolio ist der erste Schritt auf dem Weg zu gegenseitigen Zusagen für die Cloudverwaltung.
-Das folgende Diagramm veranschaulicht eine allgemeine Ausrichtung zwischen der zu befolgenden Wichtigkeitsskala und den Standardzusagen der geschäftlichen Seite.
+Eine genaue Kenntnis der Wichtigkeit jeder Workload im IT-Portfolio ist der erste Schritt auf dem Weg zu gegenseitigen Zusagen für die Cloudverwaltung. Das folgende Diagramm veranschaulicht eine allgemeine Ausrichtung zwischen der zu befolgenden Wichtigkeitsskala und den Standardzusagen der geschäftlichen Seite.
 
 ![Ausrichtung zwischen Wichtigkeit und Verwaltungsebene](../../_images/manage/cloud-criticality-alignment.png)
 
@@ -46,7 +45,7 @@ Die meisten Unternehmen nutzen zusätzliche Klassifizierungen der Wichtigkeit, d
 
 ## <a name="importance-of-accurate-criticality"></a>Die richtige Einstufung der Wichtigkeit
 
-Später in diesem Cloudeinführungsprozess wird das Cloudverwaltungsteam diese Klassifizierung verwenden, um den Aufwand zu ermitteln, der erforderlich ist, um die Anforderungen der verschiedenen Wichtigkeitsstufen zu erfüllen. In lokalen Umgebungen wird die operative Verwaltung häufig zentral eingekauft und als notwendige geschäftliche Belastung ohne oder mit nur wenig zusätzlichen Betriebskosten behandelt. In der Cloud wird die operative Verwaltung (wie alle Komponenten in der Cloud) pro Ressource als monatliche Betriebskosten erworben.
+Später in diesem Cloudeinführungsprozess wird das Cloudverwaltungsteam diese Klassifizierung verwenden, um den Aufwand zu ermitteln, der erforderlich ist, um die Anforderungen der verschiedenen Wichtigkeitsstufen zu erfüllen. In lokalen Umgebungen wird die operative Verwaltung häufig zentral eingekauft und als notwendige geschäftliche Belastung ohne oder mit nur wenig zusätzlichen Betriebskosten behandelt. Wie alle Clouddienste wird die operative Verwaltung pro Ressource als monatliche Betriebskosten erworben.
 
 Da es in der Cloud eine klare und direkte Beziehung zwischen Kosten und operativem Betrieb gibt, ist es wichtig, die Kosten und die gewünschten Wichtigkeitsskalen richtig auszurichten.
 
@@ -60,8 +59,8 @@ Basierend auf der vorhergehenden Tabelle der Wichtigkeitsskala empfehlen wir Ihn
 
 Die folgenden Schritte gelten, wenn Sie die Arbeitsmappe [Operations Management](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) verwenden, um die Cloudverwaltung zu planen.
 
-1. Erfassen Sie die Wichtigkeitsskala auf der Registerkarte **Scale** der Arbeitsmappe.
-2. Aktualisieren Sie jede Workload auf den Blättern _Example_ oder _Clean Template_, um die standardmäßige Wichtigkeit in der Spalte _Criticality_ wiederzugeben.
+1. Erfassen Sie die Wichtigkeitsskala im Arbeitsblatt `Scale`.
+2. Aktualisieren Sie jede Workload entweder im Arbeitsblatt `Example` oder im Arbeitsblatt `Clean Template`, um die standardmäßige Wichtigkeit in der Spalte `Criticality` wiederzugeben.
 3. Das Unternehmen sollte die richtigen Werte eingeben, um Abweichungen von der standardmäßigen Wichtigkeit widerzuspiegeln.
 
 ## <a name="next-steps"></a>Nächste Schritte

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ac55b8e0918000955924aa735fb46cd9518b9b57
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d87969a9c7b06512a74fac42dc1f57492d1ee3cb
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217998"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756038"
 ---
 <!-- cSpell:ignore MTBF MTTR -->
 
@@ -50,7 +50,7 @@ Jede Organisation verfügt über die verschiedenen Betriebsszenarien, aber die f
 
 Cloudplattformen bieten eine Reihe von Basisfunktionen, die es Bereitstellungsteams ermöglichen, kleine Bereitstellungen effektiv zu verwalten, ohne umfangreiche zusätzliche Planung oder Prozesse. Infolgedessen stellen kleine Entwicklungs-/Test- oder experimentelle erste Workloads, die eine relativ geringe Anzahl cloudbasierter Ressourcen umfassen, ein geringes Risiko dar und werden wahrscheinlich keine hohen Anforderungen in Bezug auf eine formale Richtlinie für die Ressourcenkonsistenz stellen.
 
-Mit zunehmender Größe Ihrer Cloudumgebung wird jedoch auch die Komplexität der Verwaltung Ihrer Ressourcen deutlich schwieriger werden. Mit steigender Anzahl von Ressourcen in der Cloud erhält die Fähigkeit zur Identifizierung des Besitzes von Ressourcen und die nützliche Kontrolle von Ressourcen eine kritische Bedeutung für die Minimierung von Risiken. Wenn zunehmend unternehmenskritische Workloads in der Cloud bereitgestellt werden, wird die Verfügbarkeitsdauer des Diensts kritischer, und die Toleranz für potenzielle Kostenüberschreitungen durch Dienstunterbrechungen nimmt schnell ab.
+Mit zunehmender Größe Ihrer Cloudumgebung wird auch die Komplexität der Verwaltung Ihrer Ressourcen deutlich schwieriger werden. Mit steigender Anzahl von Ressourcen in der Cloud erhält die Fähigkeit zur Identifizierung des Besitzes von Ressourcen und die nützliche Kontrolle von Ressourcen eine kritische Bedeutung für die Minimierung von Risiken. Wenn zunehmend unternehmenskritische Workloads in der Cloud bereitgestellt werden, wird die Verfügbarkeitsdauer des Diensts kritischer, und die Toleranz für potenzielle Kostenüberschreitungen durch Dienstunterbrechungen nimmt schnell ab.
 
 In den frühen Phasen der Cloudeinführung arbeiten Sie mit Ihrem IT-Betriebsteam und den Projektbeteiligten des Unternehmens zusammen, um [Geschäftsrisiken](./business-risks.md) im Zusammenhang mit der Ressourcenkonsistenz zu identifizieren, und bestimmen anschließend eine akzeptable Baseline für die Risikotoleranz. Dieser Abschnitt des Cloud Adoption Framework enthält einige Beispiele. Die Risiken und Baselines in Ihrem Unternehmen bzw. bei Ihren Bereitstellungen weichen im Detail möglicherweise davon ab.
 

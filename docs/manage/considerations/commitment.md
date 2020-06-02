@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0ca1c1804b2c7116ed61e05a10a221b472a2807d
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: a03035c749b57d60bf02db6ed0f019a873aecfc5
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83398759"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815275"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Die geschäftliche Verpflichtung in der Cloudverwaltung
 
@@ -114,7 +114,7 @@ In den folgenden Berechnungen werden Formeln erläutert, die Ihnen dabei helfen,
 
 ### <a name="estimate-outage-hours-per-year"></a>Geschätzter Ausfall (Stunden pro Jahr)
 
-„Composite SLA“ (zusammengesetzte SLA) ist die Vereinbarung zum Service Level, die auf der Bereitstellung der einzelnen Ressourcen in der Workload basiert. Dieses Feld steuert den _geschätzten Ausfall_ (in der Arbeitsmappe mit _Est. Outage_ beschriftet). Um den geschätzten Ausfall in Stunden pro Jahr zu berechnen, ohne die Arbeitsmappe zu verwenden, wenden Sie die folgende Formel an:
+„Composite SLA“ (zusammengesetzte SLA) ist die Vereinbarung zum Service Level, die auf der Bereitstellung der einzelnen Ressourcen in der Workload basiert. Dieses Feld steuert den _geschätzten Ausfall_ (in der Arbeitsmappe mit `Est. Outage` bezeichnet). Um den geschätzten Ausfall in Stunden pro Jahr zu berechnen, ohne die Arbeitsmappe zu verwenden, wenden Sie die folgende Formel an:
 
 > _Geschätzter Ausfall = (1 - Prozentsatz der zusammengesetzten SLA) &#215; Anzahl von Stunden pro Jahr_
 
@@ -122,7 +122,7 @@ In der Arbeitsmappe wird der Standardwert von _8.760 Stunden pro Jahr_ verwendet
 
 ### <a name="standard-loss-impact"></a>Standardmäßige Auswirkungen von Datenverlust
 
-Die _standardmäßigen Auswirkungen von Datenverlust_ (Titel _Standard impact_ in der Arbeitsmappe) prognostizieren die finanziellen Auswirkungen eines Ausfalls, vorausgesetzt, dass die Vorhersage _geschätzter Ausfall_ korrekt ist. Um diese Vorhersage ohne Verwendung der Arbeitsmappe zu berechnen, wenden Sie die folgende Formel an:
+Die _standardmäßigen Auswirkungen von Datenverlust_ (in der Arbeitsmappe mit `Standard Impact` bezeichnet) prognostizieren die finanziellen Auswirkungen eines Ausfalls, vorausgesetzt, dass die Vorhersage des _geschätzten Ausfalls_ korrekt ist. Um diese Vorhersage ohne Verwendung der Arbeitsmappe zu berechnen, wenden Sie die folgende Formel an:
 
 > _Standardmäßige Auswirkung = geschätzter Ausfall bei drei Neunen der Betriebszeit &#215; Zeit-Wert-Auswirkung_
 
@@ -130,7 +130,7 @@ Dies dient als Grundlage für die Kosten, wenn die Geschäftsbeteiligten entsche
 
 ### <a name="composite-sla-impact"></a>Auswirkung der zusammengesetzten SLA
 
-Die _Auswirkung der zusammengesetzten SLA_ (Titel _Commitment level impact_ (Auswirkung der Verpflichtungsebene) in der Arbeitsmappe) stellt die aktualisierten fiskalischen Auswirkungen dar, basierend auf den Änderungen der Betriebszeit-SLA. Anhand dieser Berechnung können Sie die projizierten finanziellen Auswirkungen beider Optionen vergleichen. Um diese vorhergesagte Auswirkung ohne die Arbeitsmappe zu berechnen, wenden Sie die folgende Formel an:
+Die _Auswirkung der zusammengesetzten SLA_ (in der Arbeitsmappe mit `Commitment level impact` bezeichnet) stellt die aktualisierten fiskalischen Auswirkungen dar, basierend auf den Änderungen der Betriebszeit-SLA. Anhand dieser Berechnung können Sie die projizierten finanziellen Auswirkungen beider Optionen vergleichen. Um diese vorhergesagte Auswirkung ohne die Arbeitsmappe zu berechnen, wenden Sie die folgende Formel an:
 
 > _Auswirkung der zusammengesetzten SLA = geschätzter Ausfall &#215; Zeit-Wert-Auswirkung_
 

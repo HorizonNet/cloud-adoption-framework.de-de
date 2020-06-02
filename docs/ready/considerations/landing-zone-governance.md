@@ -3,16 +3,16 @@ title: Verbessern der Governance von Zielzonen
 description: Verbessern der Governance von Zielzonen
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 9f0005c3d84f1a9f49c3756932838bbe5634269d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: fd500f00ecd021a1d05904c675d63a64e8b6764b
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83213952"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756531"
 ---
 # <a name="improve-landing-zone-governance"></a>Verbessern der Governance von Zielzonen
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 0be49567a459915dbe4b8e8db90feae9b47a1e5c
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 857cc9622e71d6ee464fd9d324c6d94e77b0276e
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223183"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756344"
 ---
 <!-- cSpell:ignore timleyden tileyden -->
 
@@ -63,9 +63,9 @@ Weitere Informationen finden Sie in der [Azure Monitor-Dokumentation](https://do
 
 # <a name="azure-service-health"></a>[Azure Service Health](#tab/AzureServiceHealth)
 
-Azure Service Health bietet eine personalisierte Darstellung der Integrität der von Ihnen verwendeten Azure-Dienste und -Regionen. In Service Health werden Informationen zu aktiven Problemen veröffentlicht, um Sie über die Auswirkungen auf Ihre Ressourcen zu informieren. Während der Problembehandlung werden Sie mit regelmäßigen Aktualisierungen stets auf dem Laufenden gehalten.
+Azure Service Health bietet eine personalisierte Darstellung der Integrität der von Ihnen verwendeten Azure-Dienste und -Regionen. In Azure Service Health werden Informationen zu aktiven Problemen veröffentlicht, um Sie über die Auswirkungen auf Ihre Ressourcen zu informieren. Während der Problembehandlung werden Sie mit regelmäßigen Aktualisierungen stets auf dem Laufenden gehalten.
 
-In Service Health werden auch geplante Wartungsmaßnahmen veröffentlicht, um Sie über Änderungen zu informieren, die ggf. Auswirkungen auf die Verfügbarkeit Ihrer Ressourcen haben. Richten Sie Service Health-Warnungen ein, um eine Benachrichtigung zu erhalten, wenn die von Ihnen verwendeten Azure-Dienste und -Regionen ggf. von Dienstproblemen, geplanten Wartungsmaßnahmen oder anderen Änderungen betroffen sind.
+In Azure Service Health werden auch geplante Wartungsmaßnahmen veröffentlicht, um Sie über Änderungen zu informieren, die ggf. Auswirkungen auf die Verfügbarkeit Ihrer Ressourcen haben. Richten Sie Service Health-Warnungen ein, um eine Benachrichtigung zu erhalten, wenn die von Ihnen verwendeten Azure-Dienste und -Regionen ggf. von Dienstproblemen, geplanten Wartungsmaßnahmen oder anderen Änderungen betroffen sind.
 
 Azure Service Health umfasst Folgendes:
 
@@ -91,11 +91,11 @@ Gehen Sie wie folgt vor, um eine Service Health-Warnung einzurichten:
 
 ::: zone target="docs"
 
-Wechseln Sie zum [Azure-Portal](https://portal.azure.com/#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/healthalerts), um eine Service Health-Warnung einzurichten.
+Wechseln Sie zum [Azure-Portal](https://portal.azure.com/#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/healthalerts), um eine Azure Service Health-Warnung einzurichten.
 
 ## <a name="learn-more"></a>Weitere Informationen
 
-Weitere Informationen finden Sie in der [Azure Service Health-Dokumentation](https://docs.microsoft.com/azure/service-health).
+Weitere Informationen finden Sie unter [Azure Service Health](https://docs.microsoft.com/azure/service-health).
 
 ::: zone-end
 
@@ -107,7 +107,7 @@ Azure Advisor ist ein kostenloser, personalisierter Cloudberater, der Sie bei de
 - **Sicherheit**: Der Ratgeber hilft beim Erkennen von Bedrohungen und Sicherheitsrisiken, die zu Sicherheitslücken führen können. Die Empfehlungen können ggf. das Anwenden einer Datenträgerverschlüsselung oder das Aktivieren von Netzwerksicherheitsgruppen umfassen.
 - **Leistung:** Der Ratgeber hilft, die Geschwindigkeit Ihrer Anwendungen zu verbessern. Die Empfehlungen können ggf. die Erhöhung der SQL-Abfrageleistung durch die Erstellung von Indizes oder eine Neukonfiguration Ihrer Traffic Manager-Einstellungen umfassen.
 - **Kosten:** Mit dem Ratgeber können Sie Ihre Gesamtausgaben für Azure senken und optimieren. Die Empfehlungen können beispielsweise das Ändern der Größe oder das Herunterfahren von virtuellen Computern mit zu geringer Auslastung oder den Umstieg auf Azure-Reservierungen beinhalten, um die Gesamtkosten zu senken.
-- **Betriebliche Exzellenz:** Zur Verbesserung der Prozess- und Workfloweffizienz und -verwaltbarkeit. Empfehlungen können das Einrichten und Erzwingen von Azure Policy-Regeln, das Reparieren von ungültigen Protokollwarnungsregeln und das Konfigurieren Azure Service Health-Warnungen beinhalten.
+- **Betriebliche Exzellenz:** Zur Verbesserung der Prozess- und Workfloweffizienz und -verwaltbarkeit. Empfehlungen können das Einrichten und Erzwingen von Azure Policy-Regeln, das Reparieren von ungültigen Protokollwarnungsregeln und das Konfigurieren Service Health-Warnungen beinhalten.
 
 Empfehlungen in Advisor basieren auf den von Ihnen bereitgestellten Ressourcen und den Aktionen, die Sie in Azure durchführen. Sie können Advisor regelmäßig auf die neuesten Empfehlungen überprüfen.
 
@@ -135,7 +135,7 @@ Azure Security Center spielt auch bei Ihrer Überwachungsstrategie eine wichtige
 
 Wenn Security Center eine Bedrohung erkennt, wird eine Sicherheitswarnung mit Schritten ausgelöst, die Sie ausführen müssen, um auf einen Angriff zu reagieren. Darüber hinaus wird ein Bericht mit Informationen zur erkannten Bedrohung bereitgestellt.
 
-Azure Security Center wird in zwei Tarifen angeboten: Free und Standard. Features wie die Sicherheitsempfehlungen stehen kostenlos zur Verfügung. Der Standard-Tarif bietet zusätzlichen Schutz, etwa eine erweiterte Bedrohungserkennung sowie Schutz vor Bedrohungen für Hybrid Cloud-Workloads.
+Azure Security Center wird in zwei Tarifen angeboten: Free und Standard. Features wie die Sicherheitsempfehlungen stehen kostenlos zur Verfügung. Der Standard-Tarif bietet zusätzlichen Schutz – etwa eine erweiterte Bedrohungserkennung sowie Schutz vor Bedrohungen für Hybrid Cloud-Workloads.
 
 ::: zone target="chromeless"
 

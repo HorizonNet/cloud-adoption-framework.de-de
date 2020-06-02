@@ -3,17 +3,17 @@ title: Dokumentation zum Microsoft Cloud Adoption Framework für Azure
 description: Erhalten Sie Tools, Anleitungen und Berichte, die Ihnen helfen, Strategien zu entwickeln und die gewünschten Geschäftsergebnisse in allen Phasen des Lebenszyklus der Cloudeinführung voranzutreiben.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 05/04/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
-ms.openlocfilehash: 06ac22741c7b61b59ae308444833852f2fcbff08
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: b6c88d978b6b7750bd687e411663d5828f6f4257
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621459"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815479"
 ---
 <!-- markdownlint-disable MD026 -->
 
@@ -42,9 +42,7 @@ Im Cloud Adoption Framework werden bewährte Methoden für die Cloudeinführung 
 
 ## <a name="understand-the-lifecycle"></a>Grundlegendes zum Lebenszyklus
 
-Jede der oben genannten Methoden ist Teil eines umfassenden Cloudeinführungs-Lebenszyklus. In der folgenden Abbildung werden die einzelnen Methoden miteinander verknüpft, um den gesamten Lebenszyklus zu veranschaulichen. Das Framework für die Cloudeinführung ist ein vollständiges Lebenszyklus-Framework, das Kunden in jeder Einführungsphase unterstützt, indem es Methoden als spezifische Ansätze zur Bewältigung gängiger Hindernisse bereitstellt.
-
-<!-- cSpell:ignore caf -->
+Jede der oben genannten Methoden ist Teil eines umfassenden Cloudeinführungs-Lebenszyklus. Das Cloud Adoption Framework ist ein vollständiges Lebenszyklus-Framework, das Kunden in jeder Einführungsphase unterstützt, indem es Methoden als spezifische Ansätze zur Bewältigung gängiger Hindernisse bereitstellt, wie es hier gezeigt wird.
 
 ::: image type="content" source="./_images/caf-overview-new.svg" alt-text="Overview of the Cloud Adoption Framework" :::
 

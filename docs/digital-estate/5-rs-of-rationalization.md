@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 21504538837030bf9a6ab84e42a09f365386fa78
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 5c4098e2d5655d3b0fbb7fcb1c5a0470547421f3
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214802"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83753560"
 ---
 # <a name="cloud-rationalization"></a>Cloudrationalisierung
 
@@ -21,7 +21,7 @@ Cloudrationalisierung bezeichnet die Untersuchung von Ressourcen, um die bestmö
 
 ## <a name="rationalization-context"></a>Rationalisierungskontext
 
-Die in diesem Artikel aufgeführten „fünf Phasen der Rationalisierung“ sind eine großartige Möglichkeit zur Bezeichnung eines potenziellen zukünftigen Zustands für jede Workload, die als Cloudkandidat betrachtet wird. Dieser Bezeichnungsprozess sollte jedoch in den richtigen Kontext gesetzt werden, bevor Sie versuchen, eine Umgebung zu rationalisieren. Überprüfen Sie die folgenden Mythen, um diesen Kontext bereitzustellen:
+Die in diesem Artikel aufgeführten _fünf Phasen der Rationalisierung_ sind eine großartige Möglichkeit zur Bezeichnung eines potenziellen zukünftigen Zustands für jede Workload, die als Cloudkandidat betrachtet wird. Dieser Bezeichnungsprozess sollte in den richtigen Kontext gesetzt werden, bevor Sie versuchen, eine Umgebung zu rationalisieren. Überprüfen Sie die folgenden Mythen, um diesen Kontext bereitzustellen:
 
 ### <a name="myth-its-easy-to-make-rationalization-decisions-early-in-the-process"></a>Mythos: Es ist einfach, Rationalisierungsentscheidungen in einem frühen Stadium des Prozesses zu treffen.
 

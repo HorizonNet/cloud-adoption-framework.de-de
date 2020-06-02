@@ -3,16 +3,16 @@ title: Beginnen mit Zielzonen auf Unternehmensebene
 description: Beginnen mit Zielzonen auf Unternehmensebene
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 1e34cf58fd3f9827a3cf8dd1ffd866fdcfcca1f7
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3eb1e11a50236d078c5dd9b1cc6f317bdfc96823
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215227"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755759"
 ---
 # <a name="start-with-enterprise-scale-landing-zones"></a>Beginnen mit Zielzonen auf Unternehmensebene
 
@@ -61,7 +61,7 @@ Jede der folgenden Vorlagen bietet den Kunden eine anfängliche Zielzone auf Unt
 
 - [ISO 27001: Gemeinsame Dienste](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared)
 - [ISO 27001: App Service-Umgebungs-/SQL-Datenbank-Workload](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload)
-- [UK Official und UK NHS: Governance](https://docs.microsoft.com/azure/governance/blueprints/samples/ukofficial)
+- [UK OFFICIAL und UK NHS: Governance](https://docs.microsoft.com/azure/governance/blueprints/samples/ukofficial)
 
 Die zusätzlichen Beispiele im Artikel [Azure-Blaupausenbeispiele](https://docs.microsoft.com/azure/governance/blueprints/samples) können als „Rot/Grün“-Test für Zielzonen auf Unternehmensebene verwendet werden. Die Anwendung dieser Blaupausen würde sicherstellen, dass eine Umgebung vor der Einführung die Konformitätsstandard erfüllt. Dieser spätere Ansatz ist besonders nützlich, um Zielzonen von Drittanbietern oder Partnern zu überprüfen, bevor die Cloud eingeführt wird:
 

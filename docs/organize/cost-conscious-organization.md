@@ -7,12 +7,12 @@ ms.date: 09/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
-ms.openlocfilehash: dbf5f3364277ad3a245796e47523cb803a074d31
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0304d2a8f8794f7cc191f494179c3bbb9080d00d
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216417"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815462"
 ---
 # <a name="build-a-cost-conscious-organization"></a>Schaffen einer kostenbewussten Organisation
 
@@ -35,7 +35,7 @@ _Abbildung 1: Darstellung einer kostenbewussten Organisation_.
 
 - **Optimierung:** Bei der Optimierung werden Kosteneinsparungen erzielt. Während der Optimierung werden die Ressourcenzuordnungen geändert, um die Kosten von verschiedenen unterstützenden Workloads zu senken. Für diesen Prozess sind Iterationen und Experimentiervorgänge erforderlich. Mit jeder Reduzierung der Kosten verringert sich die Leistung. Für die Ermittlung der richtigen Balance zwischen der Kostenkontrolle und der gewünschten Endbenutzerleistung werden unter Umständen Beiträge mehrerer Parteien benötigt.
 
-In den folgenden Abschnitten werden die Rollen beschrieben, die das _Cloudstrategieteam_, _Cloudeinführungsteam_, _Cloudgovernanceteam_ und _Cloudkompetenzzentrum_ (CCoE) jeweils bei der Entwicklung einer kostenbewussten Organisation spielen.
+In den folgenden Abschnitten werden die Rollen beschrieben, die verschiedene Teams bei der Entwicklung einer kostenbewussten Organisation spielen.
 
 ## <a name="cloud-strategy-team"></a>Cloudstrategieteam
 

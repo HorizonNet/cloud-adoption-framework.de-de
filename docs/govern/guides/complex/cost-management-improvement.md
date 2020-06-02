@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 31c8f460f60258a8da6444ae017194a6fd684e43
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 6ea51d75a2c75fd8e75ade42eb3c9fe15def67b4
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400547"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754960"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Cost Management“
 
@@ -23,7 +23,7 @@ Dieser Artikel führt die Geschichte fort, indem dem Minimum Viable Product-Gove
 
 Die Einführung hat sich über den im Governance-MVP definierten Toleranzindikator hinaus entwickelt. Die Steigerung in den Ausgaben rechtfertigt jetzt den Aufwand an Zeit seitens des Cloudgovernanceteams für die Überwachung und Kontrolle von Ausgabenmustern.
 
-Als treibende Kraft der Innovation wird IT nicht mehr in erster Linie als Kostenstelle betrachtet. Da die IT-Organisation Mehrwert generiert, stimmen der CIO und CFO überein, dass jetzt die Zeit gekommen ist, die Rolle der IT im Unternehmen zu verändern. Unter anderem will der CFO einen Direktvergütungsansatz bei der cloudbasierten Abrechnung für die kanadische Niederlassung einer der Geschäftseinheiten testen. Eins der beiden stillgelegten Rechenzentren hostete exklusiv Ressourcen für den operativen Betrieb der besagten Geschäftseinheit in Kanada. In diesem Modell werden der kanadischen Niederlassung der Geschäftseinheit die Betriebsausgaben im Zusammenhang mit den gehosteten Ressourcen direkt in Rechnung gestellt. Dieses Modell ermöglicht der IT, sich weniger auf die Verwaltung der Ausgaben anderer als vielmehr auf die Wertschöpfung zu konzentrieren. Bevor dieser Übergang erfolgen kann, müssen jedoch Kostenverwaltungstools implementiert worden sein.
+Als treibende Kraft der Innovation wird IT nicht mehr in erster Linie als Kostenstelle betrachtet. Da die IT-Organisation Mehrwert generiert, stimmen der CIO und CFO überein, dass jetzt die Zeit gekommen ist, die Rolle der IT im Unternehmen zu verändern. Unter anderem will der CFO einen Direktvergütungsansatz bei der cloudbasierten Abrechnung für die kanadische Niederlassung einer der Geschäftseinheiten testen. Eins der beiden stillgelegten Rechenzentren hostete exklusiv Ressourcen für den operativen Betrieb der besagten Geschäftseinheit in Kanada. In diesem Modell werden der kanadischen Niederlassung der Geschäftseinheit die Betriebsausgaben im Zusammenhang mit den gehosteten Ressourcen direkt in Rechnung gestellt. Dieses Modell ermöglicht der IT, sich weniger auf die Verwaltung der Ausgaben anderer als vielmehr auf die Wertschöpfung zu konzentrieren. Bevor dieser Übergang erfolgen kann, müssen Kostenverwaltungstools implementiert worden sein.
 
 ### <a name="changes-in-the-current-state"></a>Änderungen des aktuellen Status
 
@@ -31,7 +31,7 @@ In der vorherigen Phase dieser Erzählung hat das IT-Team Produktionsworkloads m
 
 Seit diesem Zeitpunkt haben sich einige Dinge geändert, die sich auf die Governance auswirken:
 
-- 5\.000 Ressourcen wurden aus den beiden zur Stilllegung markierten Rechenzentren entfernt. Auftragswesen und IT-Sicherheit heben nun die Bereitstellung der verbleibenden physischen Ressourcen auf.
+- 5\.000 Ressourcen wurden aus den beiden zur Außerbetriebnahme gekennzeichneten Rechenzentren entfernt. Auftragswesen und IT-Sicherheit heben nun die Bereitstellung der verbleibenden physischen Ressourcen auf.
 - Die Anwendungsentwicklungsteams haben CI/CD-Pipelines implementiert, um einige native Cloudanwendungen bereitzustellen, die erhebliche Auswirkungen auf das Kundenerlebnis haben.
 - Das Business Intelligence-Team hat Aggregations-, Zusammenstellungs-, Erkenntnis- und Prognoseprozesse entwickelt, die konkrete Vorteile für den Geschäftsbetrieb bringen. Diese Prognosen ermöglichen jetzt kreative neue Produkte und Dienstleistungen.
 

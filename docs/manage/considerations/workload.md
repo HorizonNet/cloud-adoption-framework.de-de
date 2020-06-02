@@ -7,18 +7,20 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 92453f3323a2479160bd7bd45e6ef5101c1d9f1b
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 1b3f21999cea35de59f30d882f9d8b104169952c
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430133"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815224"
 ---
 # <a name="workload-operations-in-cloud-management"></a>Workloadvorgänge in der Cloudverwaltung
 
 Einige Workloads sind für den Erfolg des Unternehmens wichtig. Für diese Workloads reicht eine Verwaltungsbaseline nicht aus, um die erforderlichen Geschäftsverpflichtungen für die Cloudverwaltung zu erfüllen. Möglicherweise reicht der Plattformbetrieb nicht einmal aus, um Geschäftsverpflichtungen zu erfüllen. Diese äußerst wichtige Teilmenge von Workloads erfordert eine spezielle Konzentration auf die Workloadfunktionen und ihre Unterstützung.
 
 Im Gegenzug kann die Investition in Workloadvorgänge zu einer verbesserten Leistung, geringeren Risiken bei Unterbrechung des Geschäftsbetriebs und einer schnelleren Wiederherstellung führen, wenn Systemfehler auftreten. In diesem Artikel wird ein Ansatz erläutert, wie Sie in den fortlaufenden Betrieb dieser Workloads mit hoher Priorität investieren, um bessere Geschäftsverpflichtungen zu erzielen.
+
+<!-- docsTest:disable Pareto -->
 
 ## <a name="when-to-invest-in-workload-operations"></a>Wann sollten Sie in Workloadvorgänge investieren?
 
@@ -80,7 +82,7 @@ Die besten Pläne für Workloadvorgänge erfordern weiterhin eine Bereinigung. D
 
 ### <a name="automated-remediation"></a>Automatisierte Korrektur
 
-Durch die Anwendung des Pareto-Prinzips können wir sagen, dass 80 Prozent der negativen Geschäftsauswirkungen wahrscheinlich auf 20 Prozent der Servicefälle zurückzuführen sind. Wenn diese Vorfälle nicht in normalen Entwicklungszyklen behandelt werden können, können Investitionen in die Automatisierung der Bereinigung die Geschäftsunterbrechungen erheblich verringern.
+Durch die Anwendung des Pareto-Prinzips können wir sagen, dass 80 Prozent der negativen Geschäftsauswirkungen wahrscheinlich auf 20 Prozent der Servicevorfälle zurückzuführen sind. Wenn diese Vorfälle nicht in normalen Entwicklungszyklen behandelt werden können, können Investitionen in die Automatisierung der Bereinigung die Geschäftsunterbrechungen erheblich verringern.
 
 ### <a name="improved-system-design"></a>Verbessertes Systemdesign
 
@@ -92,7 +94,7 @@ Im Falle der Auflösung technischer Schulden und der automatisierten Bereinigung
 - **Verwaltung:** Operative Prozesse, die für die Ausführung eines Systems in der Produktion sorgen.
 - **Sicherheit**: Schützen von Anwendungen und Daten vor Bedrohungen.
 
-Um den Gesamtbetrieb zu verbessern, bietet das [Azure Architecture Framework](https://docs.microsoft.com/azure/architecture/guide/pillars) einen Ansatz zur Bewertung spezifischer Workloads hinsichtlich der Einhaltung dieser Vorgaben. Sie können diese Eckpfeiler sowohl auf den Plattform- als auch den Workloadbetrieb anwenden.
+Um den Gesamtbetrieb zu verbessern, bietet das [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/guide/pillars) einen Ansatz zur Bewertung spezifischer Workloads hinsichtlich der Einhaltung dieser Vorgaben. Sie können diese Eckpfeiler sowohl auf den Plattform- als auch den Workloadbetrieb anwenden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

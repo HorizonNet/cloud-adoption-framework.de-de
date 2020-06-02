@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 5fe16c365c3b51f275e337e39c39538816765645
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: e60d7810e1ddf8cf63f3ded16ba990f08e4ac63f
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214751"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83814697"
 ---
-<!-- docsTest:ignore windows -->
-
 # <a name="approaches-to-digital-estate-planning"></a>Ansätze für die Planung digitaler Ressourcen
 
 Die Planung digitaler Ressourcen kann je nach gewünschten Ergebnissen und Größe der vorhandenen Ressourcen auf unterschiedlichste Weise erfolgen. Es gibt verschiedene Ansätze, die Sie wählen können. Es ist wichtig, die Erwartungen in Bezug auf den Ansatz in den frühen Planungszyklen festzulegen. Unklare Erwartungen führen häufig zu Verzögerungen bei weiteren Bestandserfassungen. In diesem Artikel werden drei Ansätze für die Analyse beschrieben.

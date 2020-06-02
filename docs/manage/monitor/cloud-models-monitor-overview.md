@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 7fedacff566fb25e7bb166b62ee711f461209f07
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 8256c043677ecaf5b540553b27ddb5f1488b5132
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223812"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756140"
 ---
 <!-- cSpell:ignore savision -->
 
@@ -86,7 +86,7 @@ In der folgenden Tabelle werden die Anforderungen zusammengefasst, die für Azur
 | Überwachen von VM-Workloads | Ja, eingeschränkt <br>  Kann IIS- und SQL Server-Fehlerprotokolle, Windows-Ereignisse und Leistungsindikatoren erfassen. Erfordert die Erstellung benutzerdefinierter Abfragen, Warnungen und Visualisierungen. | Ja <br>  Unterstützt die Überwachung der meisten Serverworkloads mit verfügbaren Management Packs. Erfordert entweder den Windows-Agent von Log Analytics oder den Operations Manager-Agent auf der VM und die Rückmeldung an die Verwaltungsgruppe im Unternehmensnetzwerk. |
 | Überwachen von Azure-IaaS | Ja | Ja <br>  Unterstützt die Überwachung der meisten Infrastrukturkomponenten im Unternehmensnetzwerk. Verfolgt Verfügbarkeitsstatus, Metriken und Warnungen für virtuelle Azure-Computer, SQL und Speicher über das Azure-Management Pack. |
 | Überwachen von Azure-PaaS | Ja | Ja, eingeschränkt <br><br> Richtet sich danach, was im Azure Management Pack unterstützt wird. |
-| Überwachen des Azure-Diensts | Ja | Ja <br><br> Management Packs bieten zwar derzeit keine native Überwachung der Integrität des Azure-Diensts, Sie können aber benutzerdefinierte Workflows erstellen, um Integritätswarnungen zum Azure-Dienst abzufragen. Verwenden Sie die Azure-REST-API, um Warnungen über Ihr vorhandenes Benachrichtigungssystem zu erhalten. |
+| Überwachen des Azure-Diensts | Ja | Ja <br><br> Management Packs bieten zwar derzeit keine native Überwachung von Azure Service Health, Sie können aber benutzerdefinierte Workflows erstellen, um Service Health-Warnungen abzufragen. Verwenden Sie die Azure-REST-API, um Warnungen über Ihr vorhandenes Benachrichtigungssystem zu erhalten. |
 | Moderne Webanwendungsüberwachung | Ja | Nein |
 | Legacy-Webanwendungsüberwachung | Ja, eingeschränkt je nach SDK <br><br> Unterstützt die Überwachung älterer Versionen von .NET- und Java-Webanwendungen. | Ja, eingeschränkt |
 | Überwachen von Azure Kubernetes Service-Containern | Ja | Nein |

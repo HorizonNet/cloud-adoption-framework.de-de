@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 601481112f2d8144596951e1a68bd7d0bda0b95a
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: d9aaa631aab30c2a35719425c6249d80a8aff53b
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621764"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755673"
 ---
 <!-- cSpell:ignore vCPUs jumpbox -->
 
@@ -22,7 +22,7 @@ Die _Zielzone für die Migration_ ist eine Umgebung, die bereitgestellt und auf 
 
 ## <a name="deploy-the-first-landing-zone"></a>Bereitstellen Ihrer ersten Zielzone
 
-Bevor Sie die Migrationszielzonen-Blaupause im Cloud Adoption Framework verwenden, lesen Sie die folgenden Annahmen, Entscheidungen und Leitlinien für die Implementierung. Wenn diese Anleitung dem gewünschten Cloudeinführungsplan entspricht, kann die [Migrationszielzonen-Blaupause](https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone) mithilfe der [Bereitstellungsschritte][deploy-sample]bereitgestellt werden.
+Bevor Sie die Migrationszielzonen-Blaupause im Cloud Adoption Framework verwenden, lesen Sie die folgenden Annahmen, Entscheidungen und Leitlinien für die Implementierung. Wenn diese Anleitung dem gewünschten Cloudeinführungsplan entspricht, kann die [Migrationszielzonen-Blaupause](https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone) mithilfe der [Bereitstellungsschritte][deploy-sample] bereitgestellt werden.
 
 > [!div class="nextstepaction"]
 > [Bereitstellen des Blaupausenbeispiels][deploy-sample]
@@ -50,9 +50,9 @@ Die folgenden Entscheidungen werden in der Blaupause für die Landezone widerges
 | Netzwerk                      | Es wird ein virtuelles Netzwerk mit Subnetzen für Gateway, Firewall, Jumpbox und Landezone erstellt.  | [Netzwerkentscheidungen](../considerations/networking-options.md)                                                                                                                                                                                                                       |
 | Identity                     | Es wird angenommen, dass das Abonnement bereits einer Azure Active Directory-Instanz zugeordnet ist. | [Bewährte Methoden für die Identitätsverwaltung](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) |
 | Richtlinie                       | Bei dieser Blaupause wird derzeit davon ausgegangen, dass keine Azure-Richtlinien angewendet werden müssen.                        |                                                                                                                                                                                                                                                                                       |
-| Abonnemententwurf          | N/V: wurde für ein einzelnes Produktionsabonnement entworfen.                                              | [Erstellen der anfänglichen Abonnements](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                                      |
-| Ressourcengruppen              | N/V: wurde für ein einzelnes Produktionsabonnement entworfen.                                              | [Skalieren von Abonnements](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                                                 |
-| Verwaltungsgruppen            | N/V: wurde für ein einzelnes Produktionsabonnement entworfen.                                              | [Organisieren und Verwalten von Abonnements](../azure-best-practices/organize-subscriptions.md)                                                                                                                                                                                                |
+| Abonnemententwurf          | N/V: Wurde für ein einzelnes Produktionsabonnement entworfen.                                              | [Erstellen der anfänglichen Abonnements](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                                      |
+| Ressourcengruppen              | N/V: Wurde für ein einzelnes Produktionsabonnement entworfen.                                              | [Skalieren von Abonnements](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                                                 |
+| Verwaltungsgruppen            | N/V: Wurde für ein einzelnes Produktionsabonnement entworfen.                                              | [Organisieren und Verwalten von Abonnements](../azure-best-practices/organize-subscriptions.md)                                                                                                                                                                                                |
 | Daten                         | –                                                                                               | [Auswählen der richtigen Bereitstellungsoption in Azure SQL](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas) und [Auswählen des richtigen Datenspeichers](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)                       |
 | Storage                      | –                                                                                               | [Leitfaden zu Azure Storage](../considerations/storage-options.md)                                                                                                                                                                                                                        |
 | Standards für Benennung und Kennzeichnung | –                                                                                               | [Best Practices zur Benennung und Kennzeichnung](../azure-best-practices/naming-and-tagging.md)                                                                                                                                                                                                    |
@@ -77,4 +77,4 @@ Wen Sie Ihre erste Zielzone bereitgestellt haben, können Sie Ihre [Zielzone erw
 
 <!-- links -->
 
-[deploy-sample]: https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone/deploy
+[Deploy-sample]: https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone/deploy

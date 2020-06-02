@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 04cd90b03565eb2aa7895f52b7d2ece296904a1f
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 02bd4f4c36df13b91c0338c32e40538d617ac229
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83620390"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756548"
 ---
 # <a name="azure-fundamental-concepts"></a>Grundlegende Konzepte in Azure
 
@@ -64,7 +64,7 @@ Die Kontoadministratorrolle für ein Azure-Abonnement wird dem E-Mail-Konto zuge
 
 Standardmäßig wird die Dienstadministratorrolle für ein Abonnement auch dem E-Mail-Konto zugewiesen, das zum Erstellen des Azure-Abonnements verwendet wird. Der Dienstadministrator verfügt über Berechtigungen für das Abonnement, die einem RBAC-basierten Besitzer entsprechen. Der Dienstadministrator besitzt außerdem Vollzugriff auf das Azure-Portal. Der Kontoadministrator kann den Dienstadministrator in ein anderes E-Mail-Konto ändern.
 
-Wenn Sie ein Azure-Abonnement erstellen, können Sie es einem vorhandenen Azure AD-Mandanten zuordnen. Andernfalls wird ein neuer Azure AD-Mandant mit einem zugehörigen Verzeichnis erstellt. Die Rolle „globaler Administrator“ im Azure AD Verzeichnis wird dem E-Mail-Konto zugewiesen, das zum Erstellen des Azure AD Abonnements verwendet wird.
+Wenn Sie ein Azure-Abonnement erstellen, können Sie es einem vorhandenen Azure AD-Mandanten zuordnen. Andernfalls wird ein neuer Azure AD-Mandant mit einem zugehörigen Verzeichnis erstellt. Die Rolle des globalen Administrators im Azure AD-Verzeichnis wird dem E-Mail-Konto zugewiesen, das zum Erstellen des Azure AD-Abonnements verwendet wird.
 
 Ein E-Mail-Konto kann mehreren Azure-Abonnements zugeordnet sein. Der Kontoadministrator kann ein Abonnement in ein anderes Konto übertragen.
 

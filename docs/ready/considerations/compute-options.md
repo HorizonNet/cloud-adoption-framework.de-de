@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 42ace02c82ffbb034f3405a6c699d7b0d29fbf1e
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 2e4aad0e866ee7ffd3fb0eeb3e2688b24aa5dae1
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621512"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756276"
 ---
 # <a name="review-your-compute-options"></a>Überprüfen Ihrer Computeoptionen
 
@@ -38,7 +38,7 @@ Die Beantwortung der folgenden Fragen zu Ihren Workloads ist hilfreich, um basie
 - **Können Ihre Anwendungen oder Dienste Container nutzen?** Wenn sich Ihre Anwendungen gut für ein containerisiertes Hosting eignen, können Sie die Vorteile der Ressourceneffizienz, Skalierbarkeit und Orchestrierung nutzen, die von [Containerdiensten in Azure](https://azure.microsoft.com/product-categories/containers) bereitgestellt werden. Sowohl [verwaltete Azure-Datenträger](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) als auch [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) können für die permanente Speicherung in containerisierten Anwendungen verwendet werden.
 - **Sind Ihre Anwendungen web- oder API-basiert, und verwenden sie PHP, ASP.NET, Node.js oder ähnliche Technologien?** Web-Apps können für verwaltete [App Service](https://docs.microsoft.com/azure/app-service/overview)-Instanzen bereitgestellt werden, sodass keine virtuelle Computer für Hostingzwecke verwaltet werden müssen.
 - **Benötigen Sie die volle Kontrolle über das Betriebssystem und die Hostingumgebung Ihrer Workload?** Wenn Sie die Hostingumgebung, einschließlich Betriebssystem, Datenträger, lokal ausgeführte Software und andere Konfigurationen, steuern müssen, können Sie für das Hosting Ihrer Anwendungen und Dienste [Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines) verwenden. Zusätzlich zur Auswahl der Größen und Leistungsstufen Ihres virtuellen Computers wirken sich Ihre Entscheidungen hinsichtlich des Speichers virtueller Datenträger auf die Leistung und SLAs aus, die mit ihren IaaS-Workloads (Infrastructure-as-a-Service) in Zusammenhang stehen. Weitere Informationen finden Sie in der Dokumentation zu [Azure Disk Storage](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview).
-- **Umfasst ihre Workload HPC-Funktionen (High Performance Computing)?** [Azure Batch](https://docs.microsoft.com/azure/batch/batch-technical-overview) ermöglicht eine Auftragsplanung und automatische Skalierung von Computeressourcen, sodass Sie problemlos umfangreiche parallele und HPC-Anwendungen in der Cloud ausführen können.
+- **Umfasst ihre Workload HPC-Funktionen (High Performance Computing)?** [Azure Batch](https://docs.microsoft.com/azure/batch/batch-technical-overview) ermöglicht eine Auftragsplanung und automatische Skalierung von Computeressourcen als Plattformdienst, sodass Sie problemlos umfangreiche parallele und HPC-Anwendungen in der Cloud ausführen können.
 - **Werden Ihre Anwendungen eine Microservicesarchitektur verwenden?** Anwendungen, die eine Microservicearchitektur verwenden, können die Vorteile mehrerer optimierter Computetechnologien nutzen. Unabhängige, ereignisgesteuerte Workloads können mit [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview) skalierbare, serverlose Anwendungen erstellen, die keine Infrastruktur benötigen. Für Anwendungen, die mehr Kontrolle über die Umgebung erfordern, in der Microservices ausgeführt werden, können Sie Containerdienste wie [Azure Container Instances](https://docs.microsoft.com/azure/container-instances/container-instances-overview), [Azure Kubernetes Service](https://docs.microsoft.com/azure/aks/intro-kubernetes) und [Azure Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview) verwenden.
 
 > [!NOTE]
@@ -80,4 +80,4 @@ Wenn Sie Ihre Landezonenumgebung vorbereiten, können Sie Kontrollelemente einri
 
 Nachdem Sie die Anforderungen Ihrer Landezone identifiziert und dokumentiert haben, können Sie [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) nutzen, um zu steuern, welche Computeressourcen von Benutzern erstellt werden dürfen. Kontrollelemente können [die Erstellung von Computeressourcentypen zulassen oder verweigern](https://docs.microsoft.com/azure/governance/policy/samples/allowed-resource-types). Beispielsweise können Sie festlegen, dass Benutzer nur Azure App Service- oder Azure Functions-Ressourcen erstellen können. Mit Policy können auch die zulässigen Optionen beim Erstellen einer Ressource gesteuert werden, z.B. das [Einschränken der Bereitstellung von SKUs für virtuelle Computer](https://docs.microsoft.com/azure/governance/policy/samples/allowed-skus-storage) oder das [Zulassen nur von bestimmten VM-Images](https://docs.microsoft.com/azure/governance/policy/samples/allowed-custom-images).
 
-Der Bereich von Richtlinien kann auf Ressourcen, Ressourcengruppen, Abonnements oder Verwaltungsgruppen festgelegt werden. Darüber hinaus können diese Richtlinien auch in [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview)-Definitionen eingebunden und in der gesamten Cloudumgebung wiederholt angewendet werden.
+Der Bereich von Richtlinien kann auf Ressourcen, Ressourcengruppen, Abonnements oder Verwaltungsgruppen festgelegt werden. Darüber hinaus können diese Richtlinien auch in [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/overview)-Definitionen eingebunden und in der gesamten Cloudumgebung wiederholt angewendet werden.

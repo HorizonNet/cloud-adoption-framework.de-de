@@ -4,22 +4,22 @@ titleSuffix: Microsoft Cloud Adoption Framework for Azure
 description: Prozess zum Refactoring von Zielzonen
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8e1576afb56afd79a1028658609dc62c25775f75
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: b7be19e3d17f55a30d7c544c660b3a417247fd8a
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621592"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755685"
 ---
 # <a name="refactor-landing-zones"></a>Umgestalten von Zielzonen
 
 Eine Zielzone ist eine **mittels Code vorab bereitgestellte** Umgebung zum Hosten Ihrer Workloads. Da die Infrastruktur der Zielzone im Code definiert ist, kann sie ähnlich wie jede andere Codebasis umgestaltet werden. Refactoring ist der Prozess der Änderung oder Umstrukturierung des Quellcodes, um die Ausgabe dieses Codes zu optimieren, ohne seinen Zweck oder seine zentrale Funktion zu ändern.
 
-Die Ready-Methode verwendet das Konzept des Refactoring, um die Migration zu beschleunigen und häufige Hindernisse zu beseitigen. Die Schritte in der Ready-Übersicht beschreiben einen Prozess, der mit einer vordefinierten Zielzonenvorlage beginnt, die am besten auf Ihre Hostingfunktion abgestimmt ist. Dann wird der Quellcode umgestaltet oder ergänzt, um die Funktionen der Landezonen so zu erweitern, dass sie diese Funktion durch verbesserte Sicherheit, Abläufe oder Governance bereitstellen können. Die folgende Abbildung veranschaulicht das Konzept des Refactorings.
+Die Ready-Methode verwendet das Konzept des Refactoring, um die Migration zu beschleunigen und häufige Hindernisse zu beseitigen. Die Schritte in der Übersicht zur Bereitschaft beschreiben einen Prozess, der mit einer vordefinierten Zielzonenvorlage beginnt, die am besten auf Ihre Hostingfunktion abgestimmt ist. Dann wird der Quellcode umgestaltet oder ergänzt, um die Funktionen der Landezonen so zu erweitern, dass sie diese Funktion durch verbesserte Sicherheit, Abläufe oder Governance bereitstellen können. Die folgende Abbildung veranschaulicht das Konzept des Refactorings.
 
 ![Abbildung zum Refactoring der Zielzone – Beschrieben in einem späteren Abschnitt dieses Artikels](../../_images/ready/refactor.png)
 
@@ -100,7 +100,7 @@ Der Abschnitt der Ready-Methode über die Erweiterung Ihrer Zielzone wird Ihnen 
 
 ![Parallele Iteration der Zielzone](../../_images/ready/refactor-methodologies.png)
 
-Jeder Unterabschnitt von „Erweitern Ihrer Zielzone“ weist auf eine der in der obigen Abbildung dargestellten Ergänzungen hin. Über diese grundlegenden Ergänzungen hinaus werden die tiefer gehenden Methoden (z. B. „Govern“ oder „Manage“) dieses Frameworks dazu beitragen, über grundlegende Änderungen der Zielzone hinauszugehen und langfristige Regelungen umzusetzen.
+Jeder Unterabschnitt von „Erweitern Ihrer Zielzone“ weist auf eine der in der obigen Abbildung dargestellten Ergänzungen hin. Über diese grundlegenden Ergänzungen hinaus werden die tiefer gehenden Methoden (z. B. Governance oder Verwaltung) dieses Frameworks dazu beitragen, über grundlegende Änderungen der Zielzone hinauszugehen und langfristige Regelungen umzusetzen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

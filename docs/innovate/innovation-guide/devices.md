@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b7967a97a48e987db623de9abff304a4e0b4458c
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 0b876c402f18492b956b5ae561107ec6b57e63ee
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621302"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83862108"
 ---
 <!-- cSpell:ignore umarmohamedusman umarm Moovit -->
 
@@ -37,12 +37,12 @@ Azure-Kunden verwenden eine ständig wachsende Anzahl von vernetzten Systemen un
 > [!div class="checklist"]
 >
 > - Industrieanlagen
-> - HoloLens 2
-> - Azure Sphere
-> - Kinect DK
+> - [Microsoft HoloLens 2](https://docs.microsoft.com/hololens)
+> - [Azure Sphere](https://docs.microsoft.com/azure-sphere/product-overview/what-is-azure-sphere)
+> - [Azure Kinect DK](https://docs.microsoft.com/azure/kinect-dk/about-azure-kinect-dk)
 > - Drohnen
-> - Azure SQL-Datenbank-Edge
-> - IoT Plug & Play
+> - [Azure SQL Edge](https://docs.microsoft.com/azure/azure-sql-edge/overview)
+> - [Dokumentation zu IoT Plug & Play (Vorschauversion)](https://docs.microsoft.com/azure/iot-pnp/overview-iot-plug-and-play)
 
 <!-- markdownlint-disable MD025 -->
 

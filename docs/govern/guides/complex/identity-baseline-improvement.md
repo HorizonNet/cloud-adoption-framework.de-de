@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ada273d5de7f0579848e102781f7a1f40d91bef2
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 9f239c0cb5cadad59ca687f156b04c095ee7b3c1
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400539"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754928"
 ---
 <!-- cSpell:ignore CFO's MPLS -->
 
@@ -26,8 +26,8 @@ In diesem Artikel wird die Lösung weiterentwickelt, indem dem Governance-MVP St
 Die geschäftliche Begründung für die Cloudmigration der zwei Rechenzentren wurde vom CFO genehmigt. Im Rahmen der technischen Machbarkeitsstudie wurden mehrere Hindernisse entdeckt:
 
 - Geschützte Daten und geschäftskritische Anwendungen machen 25 % der Workload in den beiden Rechenzentren aus. Beide lassen sich erst nach einer Modernisierung der aktuellen Governance-Richtlinien für vertrauliche personenbezogene Informationen und geschäftskritische Anwendungen lösen.
-- 7 % der Ressourcen in diesen Rechenzentren sind nicht cloudkompatibel. Sie werden vor der Ende des Rechenzentrumsvertrags in ein alternatives Rechenzentrum ausgelagert.
-- Bei 15 % der Ressourcen im Rechenzentrum (750 virtuelle Computer) besteht eine Abhängigkeit von Legacyauthentifizierung oder mehrstufiger Authentifizierung von Drittanbietern.
+- 7 % der Ressourcen in diesen Rechenzentren sind nicht cloudkompatibel. Sie werden vor der Ende des Rechenzentrumsvertrags in ein alternatives Rechenzentrum ausgelagert.
+- Bei 15 % der Ressourcen im Rechenzentrum (750 virtuelle Computer) besteht eine Abhängigkeit von Legacyauthentifizierung oder mehrstufiger Authentifizierung von Drittanbietern.
 - Die VPN-Verbindung, die bestehende Rechenzentren und Azure verbindet, bietet hinsichtlich Datenübertragungsgeschwindigkeiten oder Latenz keine ausreichende Kapazität, um die Menge der Ressourcen innerhalb der zweijährigen Frist bis zur Stilllegung des Rechenzentrums zu migrieren.
 
 Die zwei ersten Hindernisse werden parallel verwaltet. Dieser Artikel behandelt die Beseitigung des dritten und vierten Hindernisses.
@@ -38,7 +38,7 @@ Das Cloudgovernanceteam wächst. Da zusätzliche Unterstützung bei der Identit�
 
 ### <a name="changes-in-the-current-state"></a>Änderungen des aktuellen Status
 
-Das IT-Team hat die Genehmigung, mit den Plänen von CIO und CFO zur Stilllegung von zwei Rechenzentren fortzufahren. Allerdings äußert die IT Bedenken, dass 750 (15 %) der Ressourcen in diesen Rechenzentren an einen anderen Ort außerhalb der Cloud ausgelagert werden müssen.
+Das IT-Team hat die Genehmigung, mit den Plänen von CIO und CFO zur Stilllegung von zwei Rechenzentren fortzufahren. Das Team äußert Bedenken, dass 750 (15 %) der Ressourcen in diesen Rechenzentren an einen anderen Ort außerhalb der Cloud ausgelagert werden müssen.
 
 ### <a name="incrementally-improve-the-future-state"></a>Inkrementelles Verbessern des zukünftigen Status
 

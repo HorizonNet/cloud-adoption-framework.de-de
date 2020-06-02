@@ -7,12 +7,12 @@ ms.date: 04/02/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7a95247fb479b1c9413c5c61fb499d1f9c4e70c4
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 2688faf21c6a42846db246172fba6aabc8eca56f
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223574"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815173"
 ---
 <!-- cSpell:ignore givenscj -->
 
@@ -85,7 +85,7 @@ Die Artikel der Reihe werden unten zusammengefasst.
 
 **Artikel** | **Details**
 --- | ---
-[Zuweisen eines neuen Hosts für eine App auf einer Azure-VM und einer verwalteten Azure SQL-Datenbank-Instanz](./contoso-migration-rehost-vm-sql-managed-instance.md) | Dieser Artikel enthält ein Beispiel für eine „Lift and Shift“-Migration zu Azure für eine lokale App. Dazu gehört die Migration der Front-End-VM der App mithilfe von Azure Migrate und der App-Datenbank sowie des [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) zu einer verwalteten Azure SQL-Datenbankinstanz.
+[Zuweisen eines neuen Hosts für eine App auf einer Azure-VM und einer verwalteten Azure SQL-Datenbank-Instanz](./contoso-migration-rehost-vm-sql-managed-instance.md) | Dieser Artikel enthält ein Beispiel für eine „Lift and Shift“-Migration zu Azure für eine lokale App. Dazu gehört die Migration der Front-End-VM der App mithilfe von Azure Migrate und der App-Datenbank zu einer verwalteten Azure SQL-Datenbank-Instanz mithilfe des [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
 [Zuweisen eines neuen Hosts für eine App auf virtuellen Azure-Computern mithilfe von SQL Server Always On-Verfügbarkeitsgruppen](./contoso-migration-rehost-vm-sql-ag.md) | Dieses Beispiel zeigt, wie Sie eine App und Daten mit von Azure gehosteten SQL Server-VMs migrieren können. Dabei wird Azure Migrate verwendet, um die App-VMs zu migrieren, und der Azure Database Migration Service, um die App-Datenbank zu einem SQL Servercluster zu migrieren, das durch eine Always On-Verfügbarkeitsgruppe geschützt wird.
 
 ### <a name="aspnet-php-and-java-apps"></a>ASP.NET-, PHP- und Java-Apps

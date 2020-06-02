@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0837950a32a57fba595166c1b78c18aea0385417
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0882b34dc9b83d6da5926b350db35ab7ecb28495
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214462"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754575"
 ---
 # <a name="identity-baseline-policy-compliance-processes"></a>Identitätsbaseline: Prozesse für Richtlinienkonformität
 
@@ -21,7 +21,7 @@ In diesem Artikel wird ein Ansatz für Prozesse zur Einhaltung von Richtlinien b
 
 ## <a name="planning-review-and-reporting-processes"></a>Planungs-, Prüfungs- und Berichterstellungsprozesse
 
-Identitätsverwaltungstools bieten Funktionen und Features, die Benutzerverwaltung und Zugriffssteuerung innerhalb einer Cloudbereitstellung erheblich unterstützen. Sie erfordern aber auch gut durchdachte Prozesse und Richtlinien, um die Ziele Ihres Unternehmens zu unterstützen. Nachstehend sind eine Reihe von Beispielprozessen ausgeführt, die häufig im Rahmen der Disziplin „Identitätsbaseline“ verwendet werden. Beim Planen der Prozesse, die Ihnen die fortgesetzte Aktualisierung der Identitätsrichtlinie aufgrund von geschäftlichen Änderungen und Feedback von den IT-Teams (deren Aufgabe es ist, den Governanceleitfaden in die Tat umzusetzen) erlauben, können Sie diese Beispiele als Ausgangspunkt verwenden.
+Identitätsverwaltungstools bieten Funktionen und Features, die Benutzerverwaltung und Zugriffssteuerung innerhalb einer Cloudbereitstellung erheblich unterstützen. Sie erfordern auch gut durchdachte Prozesse und Richtlinien, um die Ziele Ihrer Organisation zu unterstützen. Nachstehend sind eine Reihe von Beispielprozessen ausgeführt, die häufig im Rahmen der Disziplin „Identitätsbaseline“ verwendet werden. Beim Planen der Prozesse, die Ihnen die fortgesetzte Aktualisierung der Identitätsrichtlinie aufgrund von geschäftlichen Änderungen und Feedback von den IT-Teams (deren Aufgabe es ist, den Governanceleitfaden in die Tat umzusetzen) erlauben, können Sie diese Beispiele als Ausgangspunkt verwenden.
 
 **Anfängliche Risikobewertung und Planung:** Als Teil Ihrer erstmaligen Einführung der Disziplin „Identitätsbaseline“ identifizieren Sie Ihre Kerngeschäftsrisiken und Toleranzen im Zusammenhang mit der Identitätsverwaltung in der Cloud. Verwenden Sie diese Informationen, um spezifische technische Risiken mit Mitgliedern Ihrer IT-Teams zu besprechen, die für die Verwaltung von Identitätsdiensten verantwortlich sind, und entwickeln Sie einen grundlegenden Satz von Sicherheitsrichtlinien zur Minimierung dieser Risiken, um Ihre erste Governancestrategie zu formulieren.
 

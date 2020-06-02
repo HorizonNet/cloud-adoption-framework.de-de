@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: c5eebc5bbc73aa73858daa4b11a3578af8ccc6d9
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 7a09f6fe1dd337d1c42eb193cc23c9aa9519e6b9
+ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219086"
+ms.lasthandoff: 05/24/2020
+ms.locfileid: "83815411"
 ---
 # <a name="balance-competing-priorities"></a>Ausgewogenheit konkurrierender Prioritäten
 
@@ -58,7 +58,7 @@ Das Hauptziel der Strategiemethodik ist das Erreichen eines Konsens zwischen den
 - Im **Umfang der anfänglichen Planung** hinsichtlich der technischen Implementierung in der Cloud sind häufig viele Annahmen vorhanden. Dies ist besonders dann der Fall, wenn das Team Kompetenzlücken oder die Umgebung Ermittlungslücken aufweist und bezüglich der Workloads keine architektonischen Endzustände vorhanden sind. Alle diese Annahmen sind in detaillierten Plänen zur Cloudeinführung üblich. Experimente, Pilotprojekte und eine qualitative Analyse sind erforderlich, um diese Annahmen zu beseitigen.
 - Bei **verzögerten technischen Entscheidungen** wird davon ausgegangen, dass eine Entscheidung genauer ist, je später sie getroffen wird. Die folgenden Prinzipien der agilen Produktplanung unterstützen das Verzögern technischer Entscheidungen, damit sie zum richtigen Zeitpunkt mit genügend Informationen getroffen werden können. Dieser Ansatz führt jedoch zu mehr Unklarheit im ursprünglichen Plan.
 
-**Mindestumfang:** Agile Ansätze zur Produktentwicklung werden empfohlen, um ein schnelles Handeln innerhalb umsetzbarer Pläne voranzutreiben. Laut der Planungsmethodik sind die folgenden Schritte zum Erreichen dieser Ausgewogenheit empfehlenswert. Inventarisieren Sie mit automatisierten Ermittlungstools alle digitalen Ressourcen, aber planen Sie die nächsten ein bis drei Monate in inkrementellen Schritten. Die richtige Ausrichtung des Unternehmens sollte schnell voranschreiten. Erstellen Sie einen Bereitschaftsplan für die Fähigkeiten des zugeteilten Teams. Nutzen Sie die Vorlage für den Cloudeinführungsplan, um schnell einen anfänglichen Backlog bereitzustellen.
+**Mindestumfang:** Agile Ansätze zur Produktentwicklung werden empfohlen, um ein schnelles Handeln innerhalb umsetzbarer Pläne voranzutreiben. Laut der Planungsmethodik sind die folgenden Schritte zum Erreichen dieser Ausgewogenheit empfehlenswert. Inventarisieren Sie mit automatisierten Ermittlungstools alle digitalen Ressourcen, aber planen Sie die nächsten ein bis drei Monate in inkrementellen Schritten. Die richtige Ausrichtung der Organisation sollte schnell voranschreiten. Erstellen Sie einen Bereitschaftsplan für die Fähigkeiten des zugeteilten Teams. Nutzen Sie die Vorlage für den Cloudeinführungsplan, um schnell einen anfänglichen Backlog bereitzustellen.
 
 **Beispiel zum erweiterten Umfang:** Manchmal ist die Bereitstellung eines Cloudeinführungsplans eine Reaktion auf ein zeitkritisches oder äußerst wichtiges Geschäftsereignis. Wenn für den Erfolg viele Ressourcen innerhalb eines bestimmten Zeitraums verschoben werden müssen, werden die oben beschriebenen Schritte häufig im Rahmen eines umfassenderen Planungsaufwands befolgt. Der Schlüssel zum Erfolg ist in solchen Szenarien, zunächst den Anfang zu planen und dann den gesamten Prozess. Mit diesem Ansatz wird die Wahrscheinlichkeit blockierter Geschäftsergebnisse bei der Planung reduziert.
 
@@ -88,7 +88,7 @@ Während der Migration ist es üblich, dass die Einführungsteams davon ausgehen
 
 **Mindestumfang:** Verwenden Sie während der Planung in der Frühphase die Option für das erneute Hosten, und seien Sie sich dabei bewusst, dass diese Option eine anfängliche Geschäftsannahme und keine technische Entscheidung ist. Bei der Migrationsmethodik stellt das Cloudeinführungsteam dann diese Annahme für jede migrierte Workload in Frage. Diese Methodik folgt dem Ansatz „Bewertung/Migration/Förderung“ für jede Workload oder Workloadgruppe, die eine Migrationsfactory bildet. Während der Bewertungsphase wertet das Einführungsteam die technische Eignung sowie die Architektur der einzelnen Workloads aus. Diese Bewertungsmaßnahmen führen selten zu einem reinen Lift & Shift-Ansatz, da viele der Architekturkomponenten zum Zwecke von Refactoring und Modernisierung ausgewählt werden.
 
-**Beispiel zum erweiterten Umfang:** Bei unternehmenskritischen oder äußerst wichtigen Workloads, etwa bei einem Mainframe oder einer Microserviceanwendung mit mehreren Ebenen, kann in der Beurteilungsphase eine umfassendere Einschätzung der Workload erforderlich sein. In solchen Situationen, in denen die Architektur neu überdacht wird, sollten Kunden die Azure-Architekturüberprüfung und Azure Architecture Framework nutzen, um die Anforderungen an die Workload während der Bewertung zu einzuschränken.
+**Beispiel zum erweiterten Umfang:** Bei unternehmenskritischen oder äußerst wichtigen Workloads, etwa bei einem Mainframe oder einer Microserviceanwendung mit mehreren Ebenen, kann in der Beurteilungsphase eine umfassendere Einschätzung der Workload erforderlich sein. In solchen Situationen, in denen die Architektur neu überdacht wird, sollten Kunden die Microsoft Azure Well-Architected Review und das Microsoft Azure Well-Architected Framework nutzen, um die Anforderungen an die Workload während der Bewertung einzuschränken.
 
 ## <a name="balance-during-the-innovate-phase"></a>Gleichgewicht während der Innovationsphase
 
@@ -101,7 +101,7 @@ Bei echten kundenorientierten Innovationen kommt es immer wieder zu Konflikten b
 
 **Mindestumfang:** Die Innovationsmethodik veranschaulicht, wie sich Strategie und Pläne durch einen Konsens über den Geschäftswert integrieren lassen. Anschließend werden im Leitfaden cloudnative Tools vorgestellt, mit denen die einzelnen Innovationsmöglichkeiten beschleunigt werden. Außerdem finden Sie darin bewährte Methoden zur Implementierung. Der Abschnitt zu Prozessverbesserungen beschreibt unter Berücksichtigung von Plänen und Strategien bei der Cloudeinführung Ansätze für die Entwicklung eines Blicks auf Kundenanforderungen. Dieser Ansatz konzentriert sich darauf, Innovationen mit so wenig Technologie wie möglich zu erreichen.
 
-**Beispiel zum erweiterten Umfang:** Manchmal ist eine Innovation abhängig von unternehmenskritischen oder hochsensiblen Workloads. Wenn es sich bei dem „Kunden“ um einen internen Benutzer handelt, kann der Entwicklungsaufwand während der frühesten Iterationen sowohl unternehmenskritisch als auch hochsensibel sein. Für diese Szenarien sollten die Einführungsteams die Azure-Architekturüberprüfung und Azure Architecture Framework verwenden, um das fortgeschrittene Architekturdesign frühzeitig zu bewerten.
+**Beispiel zum erweiterten Umfang:** Manchmal ist eine Innovation abhängig von unternehmenskritischen oder hochsensiblen Workloads. Wenn es sich bei dem „Kunden“ um einen internen Benutzer handelt, kann der Entwicklungsaufwand während der frühesten Iterationen sowohl unternehmenskritisch als auch hochsensibel sein. Für diese Szenarien sollten die Einführungsteams die Microsoft Azure Well-Architected Review und das Microsoft Azure Well-Architected Framework verwenden, um das fortgeschrittene Architekturdesign frühzeitig zu bewerten.
 
 ## <a name="balance-during-the-govern-phase"></a>Gleichgewicht während der Governancephase
 
@@ -127,7 +127,7 @@ Das IT-Geschäftsmodell hinsichtlich der Verwaltung von Vorgängen hat sich im l
 
 **Mindestumfang:** Laut der Verwaltungsmethodik ist es ratsam, eine cloudnative No-Ops-Baseline einzurichten. Mit dem Wissen, dass die No-Ops-Baseline nicht alle Geschäftsanforderungen erfüllt, müssen Sie mit dem Unternehmen zusammenarbeiten, um Verpflichtungen zu definieren und Investitionen besser abzustimmen. Erweitern Sie die Baseline, um allgemeine Anforderungen für alle Workloads zu erfüllen. Anschließend ermöglichen Sie es Plattformteams oder Teams mit spezifischen Workloads, gut verwaltete Lösungen in einer gut verwalteten Umgebung aufrechtzuerhalten.
 
-**Beispiel zum erweiterten Umfang:** In den meisten Umgebungen ist es ein kleiner Prozentsatz der Workloads, deren Geschäftswert umfassende Investitionen in den IT-Betrieb rechtfertigt. In diesen Szenarien kann das IT-Team die Azure-Architekturüberprüfung und Azure Architecture Framework nutzen, um umfassendere Abläufe zu leiten.
+**Beispiel zum erweiterten Umfang:** In den meisten Umgebungen ist es ein kleiner Prozentsatz der Workloads, deren Geschäftswert umfassende Investitionen in den IT-Betrieb rechtfertigt. In diesen Szenarien kann das IT-Team die Microsoft Azure Well-Architected Review und das Microsoft Azure Well-Architected Framework nutzen, um umfassendere Abläufe zu leiten.
 
 ## <a name="balance-during-the-organize-phase"></a>Gleichgewicht während der Organisationsphase
 

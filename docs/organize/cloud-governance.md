@@ -6,13 +6,13 @@ ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
-ms.date: 04/20/2020
-ms.openlocfilehash: 1ccda999eb0327f7694374b0589321ca0965f1c2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.date: 05/15/2020
+ms.openlocfilehash: dfa8275bb96fc075e099b19c9c4b9b81d1714131
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215754"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83755594"
 ---
 <!-- docsTest:ignore IS -->
 
@@ -85,7 +85,7 @@ Keine Governance: Es kommt häufig vor, dass Organisationen die Umstellung auf d
 
 Die Anstrengungen dieser Personen sind deutlich besser als die Szenarien „Keine Governance“ oder „Blockade der Governance“. Diese Arbeit ist zwar sehr lobenswert, aber dieser Ansatz sollte nicht mit Governance verwechselt werden. Für richtige Governance ist mehr erforderlich als nur die sporadische Unterstützung zur Erzielung von Einheitlichkeit (dem Ziel jedes guten Governanceansatzes). Die Informationen unter „Die fünf Disziplinen der Cloudgovernance“ können hierbei als Hilfe dienen.
 
-**Cloudverwalter:** Diese Bezeichnung (Englisch: Cloud Custodian) ist für viele Cloudarchitekten, die auf die frühen Phasen der Governance spezialisiert sind, zu einer Auszeichnung geworden. Zu Beginn der Governancemethoden scheinen die Ergebnisse den Resultaten der Personen, die freiwillig an die Governance herangehen, zu ähneln. Es gibt jedoch einen grundlegenden Unterschied. Ein Cloudverwalter hat einen Plan im Kopf. In dieser Phase der Entwicklung muss das Team Zeit dafür aufwenden, die Unordnung zu beseitigen, die von den Cloudarchitekten nach dem vorherigen Schritt hinterlassen wurde. Der Cloudverwalter richtet seine Arbeit aber nach der gut strukturierten Unternehmensrichtlinie aus. Außerdem nutzt er Governancetools, die beispielsweise im Governance-MVP beschrieben sind.
+**Cloudverwalter:** Diese Bezeichnung (Englisch: Cloud Custodian) ist für viele Cloudarchitekten, die auf die frühen Phasen der Governance spezialisiert sind, zu einer Auszeichnung geworden. Zu Beginn der Governancemethoden scheinen die Ergebnisse den Resultaten der Personen, die freiwillig an die Governance herangehen, zu ähneln. Es gibt aber einen grundlegenden Unterschied. Ein Cloudverwalter hat einen Plan im Kopf. In dieser Phase der Entwicklung muss das Team Zeit dafür aufwenden, die Unordnung zu beseitigen, die von den Cloudarchitekten nach dem vorherigen Schritt hinterlassen wurde. Der Cloudverwalter richtet seine Arbeit aber nach der gut strukturierten Unternehmensrichtlinie aus. Außerdem nutzt er Governancetools, die beispielsweise im Governance-MVP beschrieben sind.
 
 Ein weiterer grundlegender Unterschied zwischen einem Cloudverwalter und einem freiwilligen Governance-Akteur besteht in der Unterstützung durch die Führungsebene. Der Freiwillige leistet zusätzliche Stunden über die normalen Erwartungen hinaus, weil er lernen und aktiv sein möchte. Der Cloudverwalter erhält Unterstützung von der Führungsebene, was die Reduzierung der täglichen Aufgaben betrifft. So wird sichergestellt, dass regelmäßig Zeit zur Verfügung steht, die für die Verbesserung der Cloudgovernance genutzt werden kann.
 

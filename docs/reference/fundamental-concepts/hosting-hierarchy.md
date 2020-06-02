@@ -3,16 +3,16 @@ title: Grundlegendes zur Portfoliohierarchie und deren Ausrichtung
 description: Grundlegendes zur Portfoliohierarchie und deren Ausrichtung
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 07466c048560c771fefd6d5d4769da2c5d42d548
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 816224c77f5825e7bae1e63e5a77db648b5dcfd8
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400857"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756106"
 ---
 <!-- cSpell:ignore matrixed ISVs -->
 
@@ -38,7 +38,7 @@ Wenn Sie Ihre erste Workload bereitstellen, kann es sein, dass die Workload und 
 
 Obwohl die Bedingungen variieren können, umfassen alle IT-Lösungen Ressourcen und Workloads:
 
-- **Ressource:** Die kleinste Einheit technischer Funktionen, die eine Workload oder Lösung unterstützen.
+- **Objekt:** Die kleinste Einheit technischer Funktionen, die eine Workload oder Lösung unterstützen.
 - **Workload:** Die kleinste Einheit des IT-Supports für das Unternehmen. Eine Workload ist eine Sammlung von Ressourcen (Infrastruktur, Anwendungen und Daten), die ein gemeinsames Geschäftsziel oder die Ausführung eines allgemeinen Geschäftsprozesses unterstützen.
 
 Wenn Unternehmen Workloads mithilfe von Matrix- oder zentralisierten Ansätzen unterstützen, besteht wahrscheinlich eine umfassendere Hierarchie zur Unterstützung dieser Workloads:
@@ -63,8 +63,8 @@ Ein verantwortliches Team verwaltet jede Ebene der Portfoliohierarchie. Die folg
 - **Portfolio:** Das Cloudstrategieteam und das Cloudkompetenzzentrum (CCoE) nutzen die Strategie- und Planungsmethodiken, um Entscheidungen zu steuern, die das Gesamtportfolio betreffen. Das Cloudstrategieteam ist für die Unternehmensebene der Cloudportfoliohierarchie verantwortlich. Das Cloudstrategieteam sollte auch über Entscheidungen in Bezug auf die Umgebung, Zielzonen und Workloads mit hoher Priorität informiert werden.
 - **Cloudplattformen:** Das Cloudgovernanceteam ist für die Disziplinen verantwortlich, die in Übereinstimmung mit der Governancemethodik die Konsistenz in den einzelnen Umgebungen sicherstellen. Das Cloudgovernanceteam ist für die Governance aller Ressourcen in allen Umgebungen verantwortlich. Das Cloudgovernanceteam sollte bei Änderungen, die möglicherweise eine Ausnahme erfordern, oder beim Ändern der geltenden Richtlinien konsultiert werden. Das Cloudgovernanceteam sollte auch über den Fortschritt bei der Workload- und Objekteinführung informiert werden.
 - **Zielzonen und Cloudumgebung:** Das Cloudplattformteam ist für die Entwicklung der Zielzonen und Plattformumgebungen verantwortlich, die die Einführung unterstützen. Das Cloudautomatisierungsteam ist für die Automatisierung der Entwicklung und laufenden Unterstützung dieser Zielzonen und Plattformhilfsprogrammen verantwortlich. Beide Teams verwenden die Bereitschaftsmethodik als Leitfaden für die Implementierung. Beide Teams sollten über den Fortschritt bei der Workloadeinführung und über alle Änderungen im Unternehmen oder in der Umgebung informiert werden.
-- **Workloads**: Die Einführung erfolgt auf der Workloadebene. Cloudeinführungsteams verwenden die Migrations- und Innovationsmethodiken, um skalierbare Prozesse zur Beschleunigung der Einführung einzurichten. Nachdem die Einführung abgeschlossen ist, wird der Besitz der Workloads wahrscheinlich an ein Cloudbetriebsteam übertragen, das die Verwaltungsmethodik zur Steuerung des Operations Managements verwendet. Beide Teams sollten mit der Verwendung des Azure Architecture Framework vertraut sein, um detaillierte architekturbezogene Entscheidungen zu treffen, die sich auf die von ihnen unterstützten Workloads auswirken. Beide Teams sollten über Änderungen an Zielzonen und Umgebungen informiert werden. Beide Teams können gelegentlich zu Features der Zielzone beitragen.
-- **Ressourcen**: Für die Objekte ist in der Regel das Cloudbetriebsteam zuständig. Dieses Team verwendet die Verwaltungsbaseline in der Verwaltungsmethodik, um Entscheidungen des Operations Managements zu leiten. Es sollte auch Azure Advisor und das Azure Architecture Framework nutzen, um detaillierte Änderungen an den Ressourcen und der Architektur vorzunehmen, die für die Anforderungen der Vorgänge erforderlich sind.
+- **Workloads**: Die Einführung erfolgt auf der Workloadebene. Cloudeinführungsteams verwenden die Migrations- und Innovationsmethodiken, um skalierbare Prozesse zur Beschleunigung der Einführung einzurichten. Nachdem die Einführung abgeschlossen ist, wird der Besitz der Workloads wahrscheinlich an ein Cloudbetriebsteam übertragen, das die Verwaltungsmethodik zur Steuerung des Operations Managements verwendet. Beide Teams sollten mit der Verwendung des Microsoft Azure Well-Architected Framework vertraut sein, um detaillierte architekturbezogene Entscheidungen zu treffen, die sich auf die von ihnen unterstützten Workloads auswirken. Beide Teams sollten über Änderungen an Zielzonen und Umgebungen informiert werden. Beide Teams können gelegentlich zu Features der Zielzone beitragen.
+- **Ressourcen**: Für die Objekte ist in der Regel das Cloudbetriebsteam zuständig. Dieses Team verwendet die Verwaltungsbaseline in der Verwaltungsmethodik, um Entscheidungen des Operations Managements zu leiten. Es sollte auch Azure Advisor und das Microsoft Azure Well-Architected Framework nutzen, um detaillierte Änderungen an den Ressourcen und der Architektur vorzunehmen, die für die Anforderungen der Vorgänge erforderlich sind.
 
 ### <a name="accountability-variants"></a>Verantwortlichkeitsvarianten:
 
@@ -78,11 +78,11 @@ Die folgenden Beispiele veranschaulichen die Portfoliohierarchie.
 
 ### <a name="cots-workloads"></a>COTS-Workloads
 
-Traditionell bevorzugen Unternehmen COTS-Softwarelösungen zur Unterstützung von Geschäftsprozessen. Diese Lösungen werden installiert, konfiguriert und dann betrieben. Nach der Konfiguration gibt es kaum Änderungen an der Lösungsarchitektur. 
+Traditionell bevorzugen Unternehmen COTS-Softwarelösungen zur Unterstützung von Geschäftsprozessen. Diese Lösungen werden installiert, konfiguriert und dann betrieben. Nach der Konfiguration gibt es kaum Änderungen an der Lösungsarchitektur.
 
 In diesen Szenarien endet jede Cloudeinführung von COTS-Lösungen mit dem Übergang zu einem Cloudbetriebsteam. Das Cloudbetriebsteam wird dann zum technischen Besitzer dieser Software und übernimmt die Verantwortung für die Verwaltung von Konfiguration, Kosten, Patchzyklen und anderen betrieblichen Anforderungen.
 
-Zu diesen Workloads gehören Buchhaltungspakete, Logistiksoftware oder branchenspezifische Lösungen. In der Microsoft-Terminologie werden die Anbieter dieser Pakete als unabhängige Softwareanbieter bezeichnet. Viele unabhängige Softwareanbieter bieten einen Dienst zur Bereitstellung und Wartung einer Instanz ihres Softwarepakets in Ihren Abonnements an. Sie können auch eine Version des Softwarepakets anbieten, die in ihrer eigenen in der Cloud gehosteten Umgebung ausgeführt wird und eine PaaS-Alternative (Platform-as-a-Service) zur Workload bietet. 
+Zu diesen Workloads gehören Buchhaltungspakete, Logistiksoftware oder branchenspezifische Lösungen. In der Microsoft-Terminologie werden die Anbieter dieser Pakete als unabhängige Softwareanbieter bezeichnet. Viele unabhängige Softwareanbieter bieten einen Dienst zur Bereitstellung und Wartung einer Instanz ihres Softwarepakets in Ihren Abonnements an. Sie können auch eine Version des Softwarepakets anbieten, die in ihrer eigenen in der Cloud gehosteten Umgebung ausgeführt wird und eine PaaS-Alternative (Platform-as-a-Service) zur Workload bietet.
 
 Mit Ausnahme von PaaS-Angeboten sind Cloudbetriebsteams dafür verantwortlich, grundlegende betriebliche Complianceanforderungen für diese Workloads sicherzustellen. Ein Cloudbetriebsteam sollte mit dem Cloudgovernanceteam zusammenarbeiten, um Kosten, Leistung und andere Architektursäulen auszurichten.
 
@@ -104,7 +104,7 @@ In beiden Szenarien fungiert das Cloudbetriebsteam in der Regel als langfristige
 
 ### <a name="mission-critical-workloads"></a>Unternehmenskritische Workloads
 
-In jedem Unternehmen sind einige wenige Workloads zu wichtig für das Geschäft, als dass sie scheitern dürften. Bei diesen unternehmenskritischen Workloads gibt es in der Regel Betriebs- und Entwicklungsbesitzer mit verschiedenen Verantwortungsebenen. Diese Teams sollten betriebliche und architekturbezogene Änderungen aufeinander abstimmen, um Störungen der Produktionslösung zu minimieren. 
+In jedem Unternehmen sind einige wenige Workloads zu wichtig für das Geschäft, als dass sie scheitern dürften. Bei diesen unternehmenskritischen Workloads gibt es in der Regel Betriebs- und Entwicklungsbesitzer mit verschiedenen Verantwortungsebenen. Diese Teams sollten betriebliche und architekturbezogene Änderungen aufeinander abstimmen, um Störungen der Produktionslösung zu minimieren.
 
 Diese Szenarien erfordern einen starken Schwerpunkt auf die Trennung von Aufgaben. Um eine Aufgabentrennung zu erreichen, wird das Betriebsteam im Allgemeinen die Verantwortung für alltägliche betriebliche Änderungen in der Produktionsumgebung übernehmen. Wenn diese betrieblichen Änderungen eine architekturbezogene Änderung erfordern, werden sie vom Entwicklungs- oder Einführungsteam in einer Nicht-Produktionsumgebung durchgeführt, bevor das Betriebsteam die Änderungen in der Produktionsumgebung anwendet.
 
@@ -116,11 +116,11 @@ Es ist wichtig, die strategischen Ziele der Bemühungen zur Cloudeinführung zu 
 
 ### <a name="innovation-or-development-led-portfolio"></a>Innovations- oder entwicklungsorientiertes Portfolio
 
-Einige Unternehmen, insbesondere schnell wachsende etablierte Startups, haben einen überdurchschnittlich hohen Anteil an benutzerdefinierten Entwicklungsprojekten. In entwicklungsintensiven Portfolios werden Umgebung, Zielzone und Workloads oft komprimiert, und es kann bestimmte Umgebungen (Produktions- oder Nicht-Produktionsumgebungen) für bestimmte Workloads geben. Daraus ergibt sich ein Verhältnis von 1:1 zwischen Umgebung, Zielzone und Workload. 
+Einige Unternehmen, insbesondere schnell wachsende etablierte Startups, haben einen überdurchschnittlich hohen Anteil an benutzerdefinierten Entwicklungsprojekten. In entwicklungsintensiven Portfolios werden Umgebung, Zielzone und Workloads oft komprimiert, und es kann bestimmte Umgebungen (Produktions- oder Nicht-Produktionsumgebungen) für bestimmte Workloads geben. Daraus ergibt sich ein Verhältnis von 1:1 zwischen Umgebung, Zielzone und Workload.
 
 Da die Umgebung benutzerdefinierte Lösungen hostet, könnte außerdem die DevOps-Pipeline und Berichterstellung auf Anwendungsebene den Bedarf an Betriebs- und Verwaltungsfunktionen ersetzen. Für diese Kunden ist ein reduzierter Fokus auf Betrieb, Governance oder andere unterstützende Rollen wahrscheinlich. Typisch ist auch eine stärkere Betonung der Verantwortlichkeiten der Teams für die Cloudeinführung und die Cloudautomatisierung.
 
-**Portfolioausrichtung:** Das IT-Portfolio wird sich wahrscheinlich auf Workloads und Workloadbesitzer konzentrieren, um kritische Entscheidungen zur Architektur zu fördern. Diese Teams werden wahrscheinlich mehr Wert in der Azure Architecture Framework-Anleitung während der Einführungs- und Betriebsaktivitäten finden.
+**Portfolioausrichtung:** Das IT-Portfolio wird sich wahrscheinlich auf Workloads und Workloadbesitzer konzentrieren, um kritische Entscheidungen zur Architektur zu fördern. Für diese Teams wird wahrscheinlich die Anleitung zum Microsoft Azure Well-Architected Framework während der Einführungs- und Betriebsaktivitäten größeren Wert haben.
 
 **Definitionen der Grenzen:** Die logischen Grenzen, selbst auf Unternehmensebene, werden sich wahrscheinlich auf die Segmentierung von Produktions- und Nicht-Produktionsumgebungen konzentrieren. Es kann auch eine klare Segmentierung zwischen den Produkten im Softwareportfolio des Unternehmens geben. Gelegentlich kann es auch eine Segmentierung zwischen Entwicklung und gehosteten Kundeninstanzen geben.
 

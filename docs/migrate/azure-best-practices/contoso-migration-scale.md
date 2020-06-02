@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: cb8fba789ef2f8d66d1f1a7a6480d37e662fc525
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: c0b0bde877de2ae03decebe1b0237e1ba406e453
+ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222299"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83861071"
 ---
 <!-- docsTest:ignore ARO POC Y/N None/Some/Severe Rehost/Refactor/Rearchitect/Rebuild -->
 
@@ -352,7 +352,7 @@ Contoso benötigt Einblicke in die Integrität und Leistung der gerade migrierte
 
 - Mithilfe dieser Tools kann Contoso ganz einfach Daten aus verschiedenen Quellen sammeln und umfassende Erkenntnisse gewinnen. Contoso kann beispielsweise die CPU-, Datenträger- und Arbeitsspeichernutzung der VMs messen, Anwendungen und Netzwerkabhängigkeiten auf mehreren VMs anzeigen und die Entwicklung der Anwendungsleistung verfolgen.
 - Contoso nutzt diese Cloudüberwachungstools, um Maßnahmen zu ergreifen und Integrationen in Dienstlösungen durchzuführen.
-- [Erfahren Sie mehr](https://docs.microsoft.com/azure/azure-monitor/overview) über die Überwachung in Azure.
+- Erfahren Sie mehr über die [Überwachung in Azure](https://docs.microsoft.com/azure/azure-monitor/overview).
 
 ### <a name="business-continuity-and-disaster-recovery"></a>Business Continuity & Disaster Recovery
 

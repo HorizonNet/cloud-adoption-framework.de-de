@@ -7,12 +7,12 @@ ms.date: 04/14/2020
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.topic: article
-ms.openlocfilehash: eda7866700edb0a1e86776f1b0f23d95799d5b67
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 3968e453eb89a0f00d7fd23eeec90fb6a947cd05
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621578"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756055"
 ---
 <!-- cSpell:ignore Terraform's -->
 
@@ -63,7 +63,7 @@ Das Cloud Adoption Framework umfasst Tools, mit denen Sie technische Änderungen
 
 | Resource | BESCHREIBUNG |
 |----------|-------------|
-| [Azure-Architekturüberprüfung](https://docs.microsoft.com/assessments/?id=azure-architecture-review) | Diese Onlinebewertung wird dazu beitragen, Workload-spezifische Architekturen und Betriebsoptionen zu definieren. |
+| [Microsoft Azure Well-Architected Review](https://docs.microsoft.com/assessments/?id=azure-architecture-review) | Diese Onlinebewertung wird dazu beitragen, Workload-spezifische Architekturen und Betriebsoptionen zu definieren. |
 | [Bewährte&nbsp;Methoden&nbsp;für&nbsp;Quellcode](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/manage/Automation-Best-Practices) | Dieser bereitstellbare Quellcode ergänzt und beschleunigt die Einführung bewährter Methoden für Azure-Serververwaltungsdienste. Verwenden Sie diesen Quellcode, um das Operations Management schnell zu ermöglichen und eine betriebliche Baseline zu erstellen. |
 | [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) | Dokumentieren Sie Entscheidungen zum Operations Management in der Cloud und erleichtern Sie Unterhaltungen mit dem Unternehmen, um eine Abstimmung in Bezug auf SLAs, Investitionen in die Resilienz und die Budgetzuweisung im Zusammenhang mit dem Betrieb zu gewährleisten. |
 

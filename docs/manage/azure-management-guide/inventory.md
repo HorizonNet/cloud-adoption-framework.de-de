@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 126699d4d5e8d69f230047f16654d5ccb635a8e2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: e6cae79ab54c4b1389f9f74ab291575e16831b38
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216723"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756429"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Bestand und Transparenz in Azure
 
@@ -48,9 +48,9 @@ In der folgenden Tabelle wird für jede Umgebung auf Unternehmensniveau der empf
 
 ::: zone-end
 
-Azure Service Health bietet eine personalisierte Darstellung der Integrität Ihrer Azure-Dienste und -Regionen. In Service Health werden Informationen zu aktiven Problemen veröffentlicht, um Sie über die Auswirkungen auf Ihre Ressourcen zu informieren. Während der Problembehandlung werden Sie mit regelmäßigen Aktualisierungen stets auf dem Laufenden gehalten.
+Azure Service Health bietet eine personalisierte Darstellung der Integrität Ihrer Azure-Dienste und -Regionen. In Azure Service Health werden Informationen zu aktiven Problemen veröffentlicht, um Sie über die Auswirkungen auf Ihre Ressourcen zu informieren. Während der Problembehandlung werden Sie mit regelmäßigen Aktualisierungen stets auf dem Laufenden gehalten.
 
-In Service Health werden auch geplante Wartungsmaßnahmen veröffentlicht, um Sie über Änderungen zu informieren, die Auswirkungen auf die Verfügbarkeit von Ressourcen haben können. Richten Sie Service Health-Warnungen ein, um eine Benachrichtigung zu erhalten, wenn Ihre Azure-Dienste und -Regionen ggf. von Dienstproblemen, geplanten Wartungsmaßnahmen oder anderen Änderungen betroffen sind.
+In Azure Service Health werden auch geplante Wartungsmaßnahmen veröffentlicht, um Sie über Änderungen zu informieren, die Auswirkungen auf die Verfügbarkeit von Ressourcen haben können. Richten Sie Service Health-Warnungen ein, um eine Benachrichtigung zu erhalten, wenn Ihre Azure-Dienste und -Regionen ggf. von Dienstproblemen, geplanten Wartungsmaßnahmen oder anderen Änderungen betroffen sind.
 
 Azure Service Health umfasst Folgendes:
 
@@ -80,11 +80,11 @@ Gehen Sie wie folgt vor, um eine Service Health-Warnung einzurichten:
 
 ::: zone target="docs"
 
-Wechseln Sie zum [Azure-Portal](https://portal.azure.com/#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/healthalerts), um eine Service Health-Warnung einzurichten.
+Wechseln Sie zum [Azure-Portal](https://portal.azure.com/#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/healthalerts), um Service Health-Warnungen einzurichten.
 
 ### <a name="learn-more"></a>Weitere Informationen
 
-Weitere Informationen finden Sie in der [Azure Service Health-Dokumentation](https://docs.microsoft.com/azure/service-health).
+Weitere Informationen finden Sie unter [Azure Service Health](https://docs.microsoft.com/azure/service-health).
 
 ## <a name="log-analytics"></a>Log Analytics
 

@@ -3,16 +3,16 @@ title: Testgesteuerte Entwicklung (TDD) für Zielzonen in Azure
 description: Testgesteuerte Entwicklung (TDD) für Zielzonen in Azure
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2020
+ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 13dc523902e5db36abf559a25c6edba44f912613
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: f2d5e12dbeb9cf86fdc3b09768a513f084889531
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621542"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83756293"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones-in-azure"></a>Testgesteuerte Entwicklung (TDD) für Zielzonen in Azure
 
@@ -31,7 +31,7 @@ Die folgenden Beispiele werden von Microsoft für Governancezwecke zur Verfügun
 - Azure Blueprints bietet verschiedene [Blaupausenmuster](https://docs.microsoft.com/azure/governance/blueprints/samples), die Richtlinien für Tests und Vorlagen für die Bereitstellung enthalten. Diese Blaupausenmuster können den Entwicklungs-, Bereitstellungs- und Testaufwand in TDD-Zyklen beschleunigen.
 - Azure Policy umfasst auch [integrierte Richtlinieninitiativen](https://docs.microsoft.com/azure/governance/policy/samples/built-in-initiatives), die dazu dienen könnten, die vollständige „Definition of Done“ für eine Zielzone zu testen und durchzusetzen. Azure Policy umfasst [integrierte Richtliniendefinitionen](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies), die individuelle Akzeptanzkriterien innerhalb der „Definition of Done“ erfüllen können.
 - Azure Graph enthält fortgeschrittene [Abfragebeispiele](https://docs.microsoft.com/azure/governance/resource-graph/samples/advanced), die für fortgeschrittene Testszenarien verwendet werden können, um zu verstehen, wie die Workloads innerhalb einer Zielzone bereitgestellt werden.
-- [Azure Schnellstartvorlagen](https://azure.microsoft.com/resources/templates) stellen Quellcodevorlagen zur Verfügung, um die Bereitstellung der Zielzone und der Workload zu beschleunigen.
+- [Azure-Schnellstartvorlagen](https://azure.microsoft.com/resources/templates) stellen Quellcodevorlagen zur Verfügung, um die Bereitstellung der Zielzone und der Workload zu beschleunigen.
 
 Jedes der obigen Beispiele kann als Tool zur Beschleunigung von TDD-Zyklen verwendet werden. Diese Beispiele werden mit den Governancetools in den folgenden Abschnitten ausgeführt, die es Cloudplattformteams ermöglichen, ihren eigenen Quellcode und ihre eigenen Tests zu erstellen.
 

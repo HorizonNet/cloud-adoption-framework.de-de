@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1c25a98eaa63e6cd6f71ac571ec4e006ad7c4946
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 44e3cb4488833b2c47d101ed6b5600872d4ccf62
+ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219936"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83754768"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-cost-management-discipline"></a>Governanceleitfaden für Standardunternehmen: Verbessern der Disziplin „Cost Management“
 
@@ -34,7 +34,7 @@ Seit diesem Zeitpunkt haben sich einige Dinge geändert, die sich auf die Govern
 - Das Migrationsteam hat mit der Migration von VMs aus dem Produktionsdatencenter begonnen.
 - Die Anwendungsentwicklungsteams übertragen aktiv Produktionsanwendungen über CI/CD-Pipelines in die Cloud. Diese Anwendungen können als Reaktion auf Benutzeranforderungen skaliert werden.
 - Das Business Intelligence-Team der IT-Abteilung hat verschiedene Predictive Analytics-Tools in der Cloud bereitgestellt. Die Menge der Daten, die in der Cloud aggregiert werden, wächst beständig.
-- All dieses Wachstum unterstützt überzeugende Geschäftsergebnisse. Allerdings haben die Kosten begonnen, sich zu vervielfachen. Die prognostizierten Budgets wachsen schneller als erwartet. Der CFO benötigt verbesserte Ansätze für das Kostenmanagement.
+- All dieses Wachstum unterstützt überzeugende Geschäftsergebnisse. Die Kosten sind in die Höhe geschnellt. Die prognostizierten Budgets wachsen schneller als erwartet. Der CFO benötigt verbesserte Ansätze für das Kostenmanagement.
 
 ### <a name="incrementally-improve-the-future-state"></a>Inkrementelles Verbessern des zukünftigen Status
 
