@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7ab2ea31c90215efd37c2ab0d65f8a8c7baf24b1
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 91e9199d8d4dee4a52b0d558f16bb3fcd344bf78
+ms.sourcegitcommit: d2a6430eba5aa3db4a21b8dc4f1c9996224b9cb3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83814289"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "84149371"
 ---
 # <a name="get-started-align-your-organization"></a>Erste Schritte: Ausrichten Ihrer Organisation
 
@@ -70,7 +70,9 @@ Dieser bewährte Ansatz gilt als MVP (Minimum Viable Product), weil er mögliche
 
 Einführung erfordert Wachstum, und dasselbe gilt für die Notwendigkeit, Gleichgewicht und Struktur zu schaffen. Um diese Anforderungen zu erfüllen, folgen Unternehmen oft einem Prozess zur Ausreifung ihrer Organisationsstrukturen.
 
-![Abbildung des Zyklus des Organisationsreifegrads](../_images/ready/org-ready-maturity.png)
+Sehen Sie sich dieses Video an, um einen Überblick über allgemeine Teamstrukturen in den verschiedenen Phasen des Organisationsreifegrads zu erhalten.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4wvTS]
 
 ## <a name="step-5-align-raci-charts"></a>Schritt 5: Ausrichten von RACI-Diagrammen
 
