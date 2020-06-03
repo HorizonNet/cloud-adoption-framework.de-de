@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: c356554dbdca417708d7eb9698d9729270d8e981
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: e8ec09b9653af39e950dd5cbd814417b35022963
+ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401018"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84023473"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc AOAG SQLAOG SQLAOGAVSET contosoadmin contosocloudwitness MSSQLSERVER BEPOOL contosovmsacc SHAOG NSGs inetpub iisreset -->
 
@@ -183,7 +183,7 @@ Contoso-Administratoren richten den Cluster wie folgt ein:
 **Benötigen Sie weitere Hilfe?**
 
 - [Hilfe](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-server-provision#1-configure-basic-settings) zur Bereitstellung einer SQL Server-VM.
-- [Weitere Informationen](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-prereq#create-sql-server-vms) zum Konfigurieren von VMs für verschiedene SQL Server-SKUs.
+- Weitere Informationen zum [Konfigurieren von VMs für verschiedene SQL Server-SKUs](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-prereq#create-sql-server-vms)
 
 ## <a name="step-2-deploy-and-set-up-the-cluster"></a>Schritt 2: Bereitstellen und Einrichten des Clusters
 
@@ -312,8 +312,8 @@ Das Unternehmen geht bei der Erstellung der Regel wie folgt vor:
 
 **Benötigen Sie weitere Hilfe?**
 
-- [Übersicht](https://docs.microsoft.com/azure/load-balancer/load-balancer-overview) über Azure Load Balancer.
-- [Weitere Informationen](https://docs.microsoft.com/azure/load-balancer/tutorial-load-balancer-basic-internal-portal) zum Erstellen eines Lastenausgleichs.
+- Lesen Sie den Artikel [Was versteht man unter Azure Load Balancer?](https://docs.microsoft.com/azure/load-balancer/load-balancer-overview).
+- Weitere Informationen zum [Erstellen eines Lastenausgleichs](https://docs.microsoft.com/azure/load-balancer/tutorial-load-balancer-basic-internal-portal)
 
 ## <a name="step-4-prepare-azure-for-azure-migrate"></a>Schritt 4: Vorbereiten von Azure für Azure Migrate
 
@@ -381,7 +381,7 @@ Nach der Migration möchte Contoso eine Verbindung mit den Azure VMs herstellen 
 
 5. Benötigen Sie weitere Hilfe?
 
-   - [Informationen](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration) zum Vorbereiten von virtuellen Computern für die Migration
+   - Erfahren Sie mehr über das [Vorbereiten von VMs für die Migration](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration).
 
 ## <a name="step-6-replicate-the-on-premises-vms-to-azure"></a>Schritt 6: Replizieren der lokalen VMs in Azure
 
@@ -493,7 +493,7 @@ Nachdem Contoso die Einrichtung abgeschlossen hat, verfügt das Unternehmen nun 
 
 - Weitere Informationen zum Erstellen einer [Verfügbarkeitsgruppe](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#create-the-availability-group) und eines [Listeners](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-tutorial#configure-listener).
 - Sie können den Vorgang [Einrichten des Clusters für die Verwendung der IP-Adresse des Lastenausgleichs](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener#configure-the-cluster-to-use-the-load-balancer-ip-address) manuell durchführen.
-- [Weitere Informationen](https://docs.microsoft.com/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2) zum Erstellen und Verwenden von SAS.
+- Weitere Informationen zum [Erstellen und Verwenden von SAS](https://docs.microsoft.com/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2)
 
 ## <a name="step-9-migrate-the-vm-with-azure-migrate"></a>Schritt 9: Migration der virtuellen Computer mit Azure Migrate
 
@@ -545,9 +545,9 @@ Der letzte Schritt im Migrationsprozess besteht in der Aktualisierung der Verbin
 
 **Benötigen Sie weitere Hilfe?**
 
-- [Informationen](https://docs.microsoft.com/azure/site-recovery/tutorial-dr-drill-azure) zum Ausführen eines Testfailovers.
+- [Erfahren Sie mehr](https://docs.microsoft.com/azure/site-recovery/tutorial-dr-drill-azure) zum Ausführen eines Testfailovers.
 - [Informationen](https://docs.microsoft.com/azure/site-recovery/site-recovery-create-recovery-plans) zum Erstellen eines Wiederherstellungsplans.
-- [Informationen](https://docs.microsoft.com/azure/site-recovery/site-recovery-failover) zum Ausführen eines Failovers für Azure.
+- Informationen zum [Ausführen eines Failovers für Azure](https://docs.microsoft.com/azure/site-recovery/site-recovery-failover)
 
 ### <a name="clean-up-after-migration"></a>Bereinigung nach der Migration
 

@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: ba44b786e63a0f7a9c63a527b6abbb1074a410fb
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 359282dc962c72334bd390324fab0ca66f62a65c
+ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219545"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84023405"
 ---
 # <a name="create-update-schedules"></a>Erstellen von Zeitplänen für Updates
 
@@ -20,7 +20,7 @@ Sie können Zeitpläne für Updates über das Azure-Portal oder die neuen PowerS
 
 Informationen zum Erstellen eines Zeitplans für Updates über das Azure-Portal finden Sie unter [Planen einer Updatebereitstellung](https://docs.microsoft.com/azure/automation/automation-tutorial-update-management#schedule-an-update-deployment).
 
-Das Modul „Az.Automation“ unterstützt jetzt die Konfiguration der Updateverwaltung mit Azure PowerShell. Die [Version 1.7.0](https://www.powershellgallery.com/packages/Az/1.7.0) des Moduls bietet Unterstützung für das Cmdlet [New-AzAutomationUpdateManagementAzureQuery](https://docs.microsoft.com/powershell/module/az.automation/new-azautomationupdatemanagementazurequery?view=azps-1.7.0). Mit diesem Cmdlet können Sie Tags, Speicherort und gespeicherte Suchen verwenden, um Zeitpläne für Updates für eine flexible Gruppe von Computern zu konfigurieren.
+Das Modul `Az.Automation` unterstützt jetzt die Konfiguration der Updateverwaltung mit Azure PowerShell. Die [Version 1.7.0](https://www.powershellgallery.com/packages/Az/1.7.0) des Moduls bietet Unterstützung für das Cmdlet [New-AzAutomationUpdateManagementAzureQuery](https://docs.microsoft.com/powershell/module/az.automation/new-azautomationupdatemanagementazurequery?view=azps-1.7.0). Mit diesem Cmdlet können Sie Tags, Speicherort und gespeicherte Suchen verwenden, um Zeitpläne für Updates für eine flexible Gruppe von Computern zu konfigurieren.
 
 ## <a name="example-script"></a>Beispielskript
 

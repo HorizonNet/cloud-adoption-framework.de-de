@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: fd0ffac8427dc1ae4674f4b2ebcb0b6e336727ae
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: cd92cce8ea9eafc95b5b37e2ba4056c961b29a38
+ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223591"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84023439"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc contosoosticket osticket InnoDB binlog systemctl NSGs distros -->
 
@@ -140,7 +140,7 @@ Das Unternehmen geht bei der Einrichtung dieser Komponenten wie folgt vor:
 
 **Benötigen Sie weitere Hilfe?**
 
-[Informieren Sie sich](https://docs.microsoft.com/azure/migrate) zum Einrichten des Tools für die Azure Migrate- Servermigration“ kommunizieren kann.
+Erfahren Sie mehr über das Einrichten des [Tools für die Azure Migrate- Servermigration](https://docs.microsoft.com/azure/migrate/migrate-services-overview#azure-migrate-server-migration-tool).
 
 ## <a name="step-2-prepare-on-premises-vmware-for-azure-migrate-server-migration"></a>Schritt 2: Vorbereiten der lokalen VMware-Instanz für die Azure Migrate- Servermigration
 
@@ -152,7 +152,7 @@ Nach der Migration zu Azure möchte Contoso eine Verbindung mit den replizierten
 
 **Benötigen Sie weitere Hilfe?**
 
-- [Informationen](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prepare-vms-for-migration) zum Vorbereiten von virtuellen Computern für die Migration.
+- Erfahren Sie mehr über das [Vorbereiten von VMs für die Migration](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-linux-vm#prepare-vms-for-migration).
 
 ## <a name="step-3-replicate-the-on-premises-vms"></a>Schritt 3: Replizieren der lokalen VMs
 
@@ -269,8 +269,8 @@ Der letzte Schritt im Migrationsprozess besteht in der Aktualisierung der Verbin
 
 **Benötigen Sie weitere Hilfe?**
 
-- [Erfahren Sie mehr](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration) zum Ausführen einer Testmigration.
-- [Informationen](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms) zur Migration von virtuellen Computern zu Azure.
+- Erfahren Sie mehr über das [Ausführen einer Testmigration](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration).
+- Informationen zur [Migration von virtuellen Computern zu Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms)
 
 ## <a name="clean-up-after-migration"></a>Bereinigung nach der Migration
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: e09df6f954a410dedde7ecd77fd7b8bd5d429241
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: db53dbb9e024cdde817b80a79dae3e3e789d9c16
+ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862227"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84023541"
 ---
 <!-- docsTest:ignore SmartHotel360 SmartHotel360-Backend Pet.Checker vcenter.contoso.com contoso-datacenter git aks ContosoRG PetCheckerFunction -->
 
@@ -162,7 +162,7 @@ Die Contoso-Administratoren führen die Bereitstellung wie folgt durch:
 
     ![AKS](./media/contoso-migration-rebuild/aks3.png)
 
-5. In dem in PowerShell integrierten Terminal meldet sich Contoso bei Azure mit dem Befehl „Connect-AzureRmAccount“ an. [Informieren Sie sich](https://docs.microsoft.com/powershell/azure/get-started-azureps) über die ersten Schritte mit PowerShell.
+5. In dem in PowerShell integrierten Terminal melden sie sich bei Azure mit dem Befehl `Connect-AzureRmAccount` an. Weitere Informationen finden Sie unter [Erste Schritte mit Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps).
 
     ![AKS](./media/contoso-migration-rebuild/aks4.png)
 

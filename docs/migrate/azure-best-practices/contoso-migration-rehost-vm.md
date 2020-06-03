@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 61edff97499b0d9bf5b9d5e4349c548431bdf395
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 146760046dc82b80e347ca2b71ca2ac5f8c090e0
+ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223557"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84023422"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless -->
 
@@ -128,7 +128,7 @@ Contoso-Administratoren gehen bei der Ausführung der Migration wie folgt vor:
 Im Folgenden werden die Azure-Komponenten aufgeführt, die Contoso für die Migration der VMs zu Azure benötigt:
 
 - Ein VNET, in dem sich Azure-VMs befinden, wenn diese während einer Migration erstellt werden.
-- Azure Migrate: Tool für die Azure Migrate-Servermigration (OVA) wurde bereitgestellt und konfiguriert.
+- Azure Migrate: Das Tool für die Azure Migrate-Servermigration (OVA) wurde bereitgestellt und konfiguriert.
 
 Das Unternehmen geht bei der Einrichtung dieser Komponenten wie folgt vor:
 
@@ -167,8 +167,7 @@ Das Unternehmen geht bei der Einrichtung dieser Komponenten wie folgt vor:
 
 **Benötigen Sie weitere Hilfe?**
 
-[Informieren Sie sich](https://docs.microsoft.com/azure/migrate) zum Einrichten des Tools für die Azure Migrate- Servermigration“ kommunizieren kann.
-
+Erfahren Sie mehr über das Einrichten des [Tools für die Azure Migrate- Servermigration](https://docs.microsoft.com/azure/migrate/migrate-services-overview#azure-migrate-server-migration-tool).
 ### <a name="prepare-on-premises-vms"></a>Vorbereiten von lokalen VMs
 
 Nach der Migration möchte Contoso eine Verbindung mit den Azure VMs herstellen und Azure die Erlaubnis zum Verwalten der VMs geben. Dazu führen Contoso-Administratoren vor der Migration folgende Schritte aus:
@@ -196,7 +195,7 @@ Nach der Migration möchte Contoso eine Verbindung mit den Azure VMs herstellen 
 
 5. Benötigen Sie weitere Hilfe?
 
-   - [Informationen](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration) zum Vorbereiten von virtuellen Computern für die Migration
+   - Erfahren Sie mehr über das [Vorbereiten von VMs für die Migration](https://docs.microsoft.com/azure/migrate/contoso-migration-rehost-vm#prepare-vms-for-migration).
 
 ## <a name="step-2-replicate-the-on-premises-vms"></a>Schritt 2: Replizieren der lokalen VMs
 
@@ -283,8 +282,8 @@ Die Contoso-Administratoren führen jetzt eine vollständige Migration aus.
 
 **Benötigen Sie weitere Hilfe?**
 
-- [Erfahren Sie mehr](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration) zum Ausführen einer Testmigration.
-- [Informationen](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms) zur Migration von virtuellen Computern zu Azure.
+- Erfahren Sie mehr über das [Ausführen einer Testmigration](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration).
+- Informationen zur [Migration von virtuellen Computern zu Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms)
 
 ## <a name="clean-up-after-migration"></a>Bereinigung nach der Migration
 

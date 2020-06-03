@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 0e288b29077d68ee4b0c0522537abe0baaa276ac
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1de34dc3a37414a87bdc89b233af2e2564d44b10
+ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223693"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84023490"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc smarthotel SQLMI SHWCF SHWEB -->
 
@@ -159,7 +159,7 @@ Die Contoso-Administratoren richten das virtuelle Netzwerk folgendermaßen ein:
     - **SQLMI-DS-EUS2** (10.235.0.0.25).
     - **SQLMI-SAW-EUS2** (10.235.0.128/29). Dieses Subnetz wird verwendet, um ein Verzeichnis an die verwaltete Instanz anzufügen.
 
-      ![Verwaltete Instanz – Erstellen eines virtuellen Netzwerks](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-vnet.png)
+      ![Verwaltete Instanz: Erstellen eines virtuellen Netzwerks](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-vnet.png)
 
 4. Nach der Bereitstellung des virtuellen Netzwerks und der Subnetze wird das folgende Netzwerkpeering eingerichtet:
 
@@ -179,7 +179,7 @@ Die Contoso-Administratoren richten das virtuelle Netzwerk folgendermaßen ein:
 
 **Benötigen Sie weitere Hilfe?**
 
-- Sehen Sie sich eine Übersicht über die [verwaltete Azure SQL-Datenbank-Instanz](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) an.
+- Lesen Sie die [Übersicht über verwaltete Azure SQL-Datenbank-Instanzen](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance).
 - Informieren Sie sich über das [Erstellen eines virtuellen Netzwerks für eine verwaltete Azure SQL-Datenbank-Instanz](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-configure-vnet-subnet).
 - Erfahren Sie, wie Sie das [Peering einrichten](https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-peering).
 - Erfahren Sie, wie Sie die [DNS-Einstellungen für Azure Active Directory aktualisieren](https://docs.microsoft.com/azure/active-directory-domain-services/tutorial-create-instance).
@@ -191,7 +191,7 @@ Die verwaltete Instanz wird in einem privaten virtuellen Netzwerk angeordnet. Co
 Contoso berücksichtigt die folgenden Faktoren:
 
 - Die Routingtabelle enthält einen Satz mit Regeln (Routen), mit denen angegeben wird, wie von der verwalteten Instanz gesendete Pakete im virtuellen Netzwerk weitergeleitet werden sollen.
-- Die Routingtabelle bezieht sich auf Subnetze, in denen verwalteten Instanzen bereitgestellt werden. Jedes Paket, das ein Subnetz verlässt, wird auf Grundlage der entsprechenden Routingtabelle verarbeitet.
+- Die Routingtabelle bezieht sich auf Subnetze, in denen verwaltete Instanzen bereitgestellt werden. Jedes Paket, das ein Subnetz verlässt, wird auf Grundlage der entsprechenden Routingtabelle verarbeitet.
 - Ein Subnetz kann nur einer Routingtabelle zugeordnet sein.
 - Für die Erstellung von Routingtabellen in Microsoft Azure fallen keine zusätzlichen Gebühren an.
 
@@ -415,7 +415,7 @@ Nach der Migration muss Contoso die folgenden Schritte zur Bereinigung ausführe
 
 - Entfernen der lokalen VMs aus dem vCenter-Bestand.
 - Entfernen der VMs aus lokalen Sicherungsaufträgen.
-- Aktualisieren der internen Dokumentation zur Anzeige der neuen Speicherorte für die App SmartHotel360 Anzeigen, dass die Datenbank in einer verwalteten Azure SQL-Datenbank-Instanz und das Front-End in zwei Web-Apps ausgeführt wird.
+- Aktualisieren der internen Dokumentation zur Anzeige der neuen Speicherorte für die App SmartHotel360 Anzeigen, dass die Datenbank in Azure SQL Managed Instance und das Front-End in zwei Web-Apps ausgeführt wird
 - Überprüfen sämtlicher Ressourcen, die mit den außer Betrieb genommenen VMs interagieren, und Aktualisieren sämtlicher relevanter Einstellungen oder Dokumentationen, um die neue Konfiguration widerzuspiegeln.
 
 ## <a name="review-the-deployment"></a>Überprüfen der Bereitstellung

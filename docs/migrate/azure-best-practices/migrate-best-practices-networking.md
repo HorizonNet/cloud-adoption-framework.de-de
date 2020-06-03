@@ -7,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8e0c340e8d0dffb36c692ee3f3b8d4b0ece978a0
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 5064de8d3fe2ca435aba7aa6322d0e6e47e65c1a
+ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861088"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "84023456"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -376,9 +376,9 @@ _Beispiel für eine Anwendungssicherheitsgruppe_
 
 | **Regelname** | **Zweck** | **Details** |
 | --- | --- | --- |
-| Allow-HTTP-Inbound-Internet | Hiermit wird Datenverkehr aus dem Internet an die Webserver zugelassen. Eingehender Datenverkehr aus dem Internet wird durch die Standardsicherheitsregel „DenyAllInbound“ verweigert, daher ist keine zusätzliche Regel für die Anwendungssicherheitsgruppen „AsgLogic“ oder „AsgDb“ erforderlich. | Priorität: 100 <br><br> Quelle: Internet <br><br> Quellport: \* <br><br> Ziel: AsgWeb <br><br> Zielport: 80 <br><br> Protokoll: TCP <br><br> Zugriff: Zulassen. |
-| Deny-Database-All | Die Standardsicherheitsregel „AllowVNetInBound“ erlaubt die gesamte Kommunikation zwischen Ressourcen im gleichen VNET, daher ist diese Regel erforderlich, um den Datenverkehr von allen Ressourcen zu verweigern. | Priorität: 120 <br><br> Quelle: \* <br><br> Quellport: \* <br><br> Ziel: AsgDb <br><br> Zielport: 1433 <br><br> Protokoll: All <br><br> Zugriff: Verweigern. |
-| Allow-Database-BusinessLogic | Diese Regel lässt Datenverkehr von der Anwendungssicherheitsgruppe „AsgLogic“ an die Anwendungssicherheitsgruppe „AsgDb“ zu. Da die Priorität für diese Regel höher ist als die Priorität der Regel „Deny-Database-All“, wird diese Regel zuerst verarbeitet. Dies führt dazu, dass Datenverkehr von der Anwendungssicherheitsgruppe „AsgLogic“ zugelassen und jeglicher andere Datenverkehr blockiert wird. | Priorität: 110 <br><br> Quelle: AsgLogic <br><br> Quellport: \* <br><br> Ziel: AsgDb <br><br> Zielport: 1433 <br><br> Protokoll: TCP <br><br> Zugriff: Zulassen. |
+| `Allow-HTTP-Inbound-Internet` | Hiermit wird Datenverkehr aus dem Internet an die Webserver zugelassen. Eingehender Datenverkehr aus dem Internet wird durch die Standardsicherheitsregel `DenyAllInbound` verweigert, daher ist keine zusätzliche Regel für die Anwendungssicherheitsgruppen `AsgLogic` oder `AsgDb` erforderlich. | Priorität: `100`<br><br> Quelle: `internet`<br/><br/> Quellport: `*`<br/><br/> Ziel: `AsgWeb`<br/><br/> Zielport: `80`<br/><br/> Protokoll: `TCP`<br/><br/> Zugriff: `Allow` |
+| `Deny-Database-All` | Die Standardsicherheitsregel `AllowVNetInBound` erlaubt die gesamte Kommunikation zwischen Ressourcen im gleichen VNET, daher ist diese Regel erforderlich, um den Datenverkehr von allen Ressourcen zu verweigern. | Priorität: `120`<br/><br/> Quelle: `*`<br/><br/> Quellport: `*`<br/><br/> Ziel: `AsgDb`<br/><br/> Zielport: `1433`<br/><br/> Protokoll: `All`<br/><br/> Zugriff: `Deny` |
+| `Allow-Database-BusinessLogic` | Diese Regel lässt Datenverkehr von der Anwendungssicherheitsgruppe `AsgLogic` an die Anwendungssicherheitsgruppe `AsgDb` zu. Da die Priorität für diese Regel höher ist als die Priorität der Regel `Deny-Database-All`, wird diese Regel zuerst verarbeitet. Dies führt dazu, dass Datenverkehr von der Anwendungssicherheitsgruppe `AsgLogic` zugelassen und jeglicher andere Datenverkehr blockiert wird. | Priorität: `110`<br/><br/> Quelle: `AsgLogic`<br/><br/> Quellport: `*`<br/><br/> Ziel: `AsgDb`<br/><br/> Zielport: `1433`<br/><br/> Protokoll: `TCP`<br/><br/> Zugriff: `Allow` |
 
 <!--markdownlint-enable MD033 -->
 

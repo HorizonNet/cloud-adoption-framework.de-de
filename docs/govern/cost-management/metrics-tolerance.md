@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: abaa95421c8e6acdec724f40e5b0e1cd30b7babf
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 8c4387575f9cb9190327f2d644a60695809e185a
+ms.sourcegitcommit: 09a2cb66863f7f7fe69568c5ed007ab9f360b85e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815054"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84300993"
 ---
 # <a name="risk-tolerance-metrics-and-indicators-in-the-cost-management-discipline"></a>Risikotoleranzmetriken und -indikatoren in der Disziplin „Kostenverwaltung“
 
@@ -49,7 +49,7 @@ Nachdem Sie [Geschäftsrisiken](./business-risks.md) ermittelt haben, identifizi
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Dokumentieren Sie mit der [Richtlinienvorlage „Kostenverwaltung“](./template.md) die Metriken und Toleranzindikatoren, die sich an dem aktuellen Cloudeinführungsplan orientieren.
+Dokumentieren Sie mit der [Vorlage zur Disziplin „Kostenverwaltung“](./template.md) die Metriken und Toleranzindikatoren, die sich an dem aktuellen Cloudeinführungsplan orientieren.
 
 Nutzen Sie Beispielrichtlinien für Kostenverwaltung als Ausgangspunkt für die Entwicklung Ihrer eigenen Richtlinien, um bestimmte Geschäftsrisiken zu behandeln, die Ihren Plänen für die Einführung der Cloud entsprechen.
 
