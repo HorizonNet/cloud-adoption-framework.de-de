@@ -7,15 +7,13 @@ ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 6686f90a860cbf2ce5042833cec7e928df2b1099
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 9b363ea7fc2febaccfd2df14596b025d52a943a2
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621737"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787655"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="develop-a-cloud-adoption-plan"></a>Entwickeln eines Cloudeinführungsplans
 
 Ein Cloudeinführungsplan dient dazu, die ehrgeizigen Ziele einer Cloudeinführungsstrategie in einen umsetzbaren Plan zu verwandeln. Alle Cloudteams können sich bei der technischen Umsetzung am Cloudeinführungsplan orientieren und ihre Arbeit an der Geschäftsstrategie ausrichten.

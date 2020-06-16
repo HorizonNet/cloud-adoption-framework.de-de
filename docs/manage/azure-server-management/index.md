@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: ae03aa1186aab3503f8d5397e5d397f0fa086b26
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 9e39f1e1589374b438009f423aadf0195837e5cb
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80426544"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785445"
 ---
 # <a name="overview-of-azure-server-management-services"></a>Übersicht über Azure-Serververwaltungsdienste
 
@@ -25,8 +25,6 @@ Dieser Abschnitt des Microsoft-Frameworks für die Cloudeinführung stellt einen
 Die Informationen wurden der Einfachheit halber in drei Phasen unterteilt:
 
 ![Die drei Onboardingphasen der Azure-Serververwaltungssuite](./media/operations-stages.png)
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="why-use-azure-server-management-services"></a>Was spricht für die Verwendung von Azure-Serververwaltungsdiensten?
 

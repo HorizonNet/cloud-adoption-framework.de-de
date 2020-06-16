@@ -7,15 +7,13 @@ ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 05a2d46bff1bc68bfaad32427170c8e6e5035963
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 32a261bc94cc00fad8d44e0a7699b4bda27fbbee
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621687"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787164"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="develop-a-cloud-adoption-strategy"></a>Entwickeln einer Cloudeinführungsstrategie
 
 Die Cloud verfügt über grundlegende Technologievorteile, die Ihrem Unternehmen bei der Durchführung verschiedener Geschäftsstrategien als Hilfe dienen können. Durch die Nutzung cloudbasierter Ansätze können Sie die Geschäftsagilität verbessern, Kosten senken, die Markteinführungszeit verkürzen und die Erschließung neuer Märkte ermöglichen. Um dieses große Potenzial zu nutzen, sollten Sie als Erstes Ihre Geschäftsstrategie so dokumentieren, dass sie sowohl für Cloudtechniker verständlich als auch für Projektbeteiligte aus dem betriebswirtschaftlichen Bereich annehmbar ist.

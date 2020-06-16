@@ -7,15 +7,13 @@ ms.date: 03/27/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 5284af93b76ae2396e753914264861492b65356f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d298be02fcb27b0f7165d36c045455decc3a8908
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218763"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84788131"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="what-business-outcomes-are-associated-with-transformation-journeys"></a>Welche Geschäftsergebnisse sind mit Transformationsprozessen verbunden?
 
 Die erfolgreichsten Transformationsprozesse beginnen im Hinblick auf ein Geschäftsergebnis. Die Cloudeinführung kann kostenintensiv und zeitaufwendig sein. Die Förderung des richtigen Maßes an Unterstützung durch die IT und andere Geschäftsfelder ist entscheidend für den Erfolg. Diese Artikelreihe wurde entwickelt, um Kunden bei der Identifizierung von Geschäftsergebnissen zu unterstützen, die prägnant und definiert sind sowie erkennbare Ergebnisse oder Veränderungen bei der geschäftlichen Leistung bewirken, unterstützt durch eine bestimmte Maßnahme.

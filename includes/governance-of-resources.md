@@ -1,7 +1,7 @@
 <!-- TEMPLATE FILE - DO NOT ADD METADATA -->
 <!-- markdownlint-disable MD002 MD041 -->
 > [!NOTE]
->Im Falle von Änderungen an Ihren Geschäftsanforderungen ermöglichen Ihnen Azure-Verwaltungsgruppen eine einfache Reorganisation Ihrer Verwaltungshierarchie und Abonnementgruppenzuweisungen. Beachten Sie jedoch, dass Richtlinien- und Rollenzuweisungen, die auf eine Verwaltungsgruppe angewendet werden, an alle Abonnements unterhalb dieser Gruppe in der Hierarchie vererbt werden. Wenn Sie beabsichtigen, Abonnements zwischen Verwaltungsgruppen neu zuzuweisen, stellen Sie sicher, dass Ihnen alle Änderungen der Richtlinien und Rollenzuweisungen bekannt sind, die sich daraus ergeben können. Weitere Informationen finden Sie in der [Dokumentation zu Azure-Verwaltungsgruppen](https://docs.microsoft.com/azure/governance/management-groups).
+> Im Falle von Änderungen an Ihren Geschäftsanforderungen ermöglichen Ihnen Azure-Verwaltungsgruppen eine einfache Reorganisation Ihrer Verwaltungshierarchie und Abonnementgruppenzuweisungen. Beachten Sie jedoch, dass Richtlinien- und Rollenzuweisungen, die auf eine Verwaltungsgruppe angewendet werden, an alle Abonnements unterhalb dieser Gruppe in der Hierarchie vererbt werden. Wenn Sie beabsichtigen, Abonnements zwischen Verwaltungsgruppen neu zuzuweisen, stellen Sie sicher, dass Ihnen alle Änderungen der Richtlinien und Rollenzuweisungen bekannt sind, die sich daraus ergeben können. Weitere Informationen finden Sie in der [Dokumentation zu Azure-Verwaltungsgruppen](https://docs.microsoft.com/azure/governance/management-groups).
 
 ### <a name="governance-of-resources"></a>Governance von Ressourcen
 

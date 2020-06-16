@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 67412e36a4048d1441679458bbff5a90bbceaa84
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: cd5e3d69709dc2fbbf9b79fcca3bf0efc63b021b
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214775"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787026"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Governanceleitfaden für Standardunternehmen
 
@@ -60,8 +60,6 @@ Sobald dieses MVP bereitgestellt ist, können zusätzliche Ebenen der Governance
 - [Ressourcenkonfigurationen für unternehmenskritische Anwendungen](./resource-consistency-improvement.md)
 - [Steuerelemente für die Kostenverwaltung](./cost-management-improvement.md)
 - [Steuerelemente für die Multi-Cloud-Entwicklung](./multicloud-improvement.md)
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="what-does-this-guidance-provide"></a>Was bietet dieser Leitfaden?
 

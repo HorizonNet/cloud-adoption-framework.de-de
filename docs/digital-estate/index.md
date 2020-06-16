@@ -7,15 +7,13 @@ ms.date: 12/10/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 3711ea0ec99260456f15e0997fabe3a8381e15a1
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 721f87e52d78cd05056d5abe402c4bba5607b10e
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222622"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786125"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="what-is-a-digital-estate"></a>Worum handelt es sich bei digitalen Ressourcen?
 
 Digitale Ressourcen finden sich in jedem modernen Unternehmen. Eine digitale Ressource ähnelt einer physischen Ressource und ist ein abstrakter Verweis auf eine Sammlung konkreter eigener Ressourcen. Im digitalen Bereich handelt es sich bei diesen Ressourcen unter anderem um virtuelle Computer (VMs), Server, Anwendungen und Daten. Digitale Ressourcen sind also im Grunde alle IT-Ressourcen, die Unternehmensprozessen und unterstützenden Vorgängen zugrunde liegen.
