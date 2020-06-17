@@ -169,28 +169,54 @@ items:
             href: ready/azure-setup-guide/monitoring-reporting.md
           - name: Sicherstellen des aktuellen Stands von Azure
             href: ready/azure-setup-guide/staying-current.md
-      - name: Erste Landezone
+      - name: Azure-Zielzonen
         items:
           - name: Was ist eine Zielzone?
             href: ready/landing-zone/index.md
-          - name: Umgestalten von Zielzonen
-            href: ready/landing-zone/refactor.md
-          - name: Wählen Ihrer ersten Zielzone
-            href: ready/landing-zone/first-landing-zone.md
-          - name: Blaupause für die Migrationszielzone
-            href: ready/landing-zone/migrate-landing-zone.md
-          - name: Terraform-Zielzonen
-            href: ready/landing-zone/terraform-landing-zone.md
-      - name: Erweitern der Zielzone
-        items:
-          - name: Übersicht
-            href: ready/considerations/index.md
-          - name: Testgesteuerte Entwicklung (TDD) für Zielzonen
-            href: ready/considerations/test-driven-development.md
-          - name: Testgesteuerte Entwicklung (TDD) der Zielzone in Azure
-            href: ready/considerations/azure-test-driven-development.md
+          - name: Entwurfsbereiche
+            href: ready/landing-zone/design-areas.md
+          - name: Optionen für die Implementierung
+            href: ready/landing-zone/implementation-options.md
+          - name: Auf Unternehmensniveau beginnen
+            items:
+              - name: Übersicht
+                href: ready/enterprise-scale/index.md
+              - name: Implementieren von Zielzonen auf Unternehmensebene
+                href: ready/enterprise-scale/implementation.md
+              - name: Aufbau
+                href: ready/enterprise-scale/architecture.md
+              - name: Entwurfsprinzipien
+                href: ready/enterprise-scale/design-principles.md
+              - name: Entwurfsrichtlinien
+                href: ready/enterprise-scale/design-guidelines.md
+              - name: Wichtige Entwurfsbereiche
+                items:
+                  - name: "Unternehmensregistrierung und Azure\_AD-Mandanten"
+                    href: ready/enterprise-scale/enterprise-enrollment-and-azure-ad-tenants.md
+                  - name: Identitäts- und Zugriffsverwaltung
+                    href: ready/enterprise-scale/identity-and-access-management.md
+                  - name: Organisation von Verwaltungsgruppen und Abonnements
+                    href: ready/enterprise-scale/management-group-and-subscription-organization.md
+                  - name: Netzwerktopologie und -konnektivität
+                    href: ready/enterprise-scale/network-topology-and-connectivity.md
+                  - name: Verwaltung und Überwachung
+                    href: ready/enterprise-scale/management-and-monitoring.md
+                  - name: Business Continuity & Disaster Recovery
+                    href: ready/enterprise-scale/business-continuity-and-disaster-recovery.md
+                  - name: 'Sicherheit, Governance und Compliance'
+                    href: ready/enterprise-scale/security-governance-and-compliance.md
+                  - name: Plattformautomatisierung und DevOps
+                    href: ready/enterprise-scale/platform-automation-and-devops.md
+              - name: Implementierungsrichtlinien
+                href: ready/enterprise-scale/implementation-guidelines.md
           - name: Klein anfangen und erweitern
             items:
+              - name: CAF-Migrationsblaupause
+                href: ready/landing-zone/migrate-landing-zone.md
+              - name: CAF-Basisblaupause
+                href: ready/landing-zone/foundation-blueprint.md
+              - name: Terraform-Zielzonen
+                href: ready/landing-zone/terraform-landing-zone.md
               - name: Grundlegende Überlegungen zu Zielzonen
                 items:
                   - name: Übersicht
@@ -227,10 +253,14 @@ items:
                     href: 'https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
                   - name: Bewährte Methoden für die Azure-Betriebssicherheit
                     href: 'https://docs.microsoft.com/azure/security/fundamentals/operational-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-          - name: Auf Unternehmensniveau beginnen
+          - name: Infrastructure-as-Code-Theorie
             items:
-              - name: Übersicht
-                href: ready/considerations/enterprise-scale.md
+              - name: Umgestalten von Zielzonen
+                href: ready/landing-zone/refactor.md
+              - name: Testgesteuerte Entwicklung (TDD) für Zielzonen
+                href: ready/considerations/test-driven-development.md
+              - name: Testgesteuerte Entwicklung (TDD) der Zielzone in Azure
+                href: ready/considerations/azure-test-driven-development.md
       - name: Bewährte Methoden
         items:
           - name: Übersicht
@@ -245,6 +275,8 @@ items:
                 href: ready/azure-best-practices/organize-subscriptions.md
               - name: Benennung und Markierung
                 href: ready/azure-best-practices/naming-and-tagging.md
+              - name: Verschieben von Ressourcen
+                href: 'https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
           - name: Netzwerk
             items:
               - name: Sicherheit von Netzwerkgrenzen

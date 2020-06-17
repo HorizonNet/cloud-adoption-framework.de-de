@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 69c46eb18c3181ed1f4301847786ebb538ee46fe
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 85144ae698427ad81cad9516f28a5102b8bdedba
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83754863"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786278"
 ---
 # <a name="cloud-governance-guides"></a>Cloudgovernance-Leitfäden
 
@@ -49,7 +49,7 @@ Um mit einer Governancelösung zu beginnen, wählen Sie eine der beiden folgende
 <!-- docsTest:ignore "Azure Virtual Datacenter" -->
 
 > [!WARNING]
-> Ein robusterer Ausgangspunkt für die Governance kann erforderlich sein. Beachten Sie in solchen Fällen das Modell des [virtuellen Azure-Rechenzentrums](#azure-virtual-datacenter), das [weiter unten](#azure-virtual-datacenter) kurz beschrieben wird. Dieser Ansatz wird häufig bei einer unternehmensweiten Einführung vorgeschlagen, insbesondere bei einem Umfang von über 10.000 Ressourcen. Er ist auch die Standardwahl bei komplexen Governanceszenarien, wenn eine der folgenden Anforderungen erfüllt werden muss: umfangreiche Complianceanforderungen von Drittanbietern, tiefgreifendes Fachwissen oder Parität mit ausgereiften IT-Governancerichtlinien und Complianceanforderungen.
+> Ein robusterer Ausgangspunkt für die Governance kann erforderlich sein. In solchen Fällen sollten Sie die [CAF-Zielzone auf Unternehmensebene](../../ready/enterprise-scale/index.md) in Betracht ziehen. Bei diesem Ansatz stehen Einführungsteams im Fokus, die mittelfristig (innerhalb von 24 Monaten) das Ziel haben, mehr als 1.000 Assets (Apps, Infrastruktur- oder Datenassets) in der Cloud zu hosten. Die CAF-Zielzone auf Unternehmensebene ist die erste Wahl für komplexe Governanceszenarien für diese umfangreicheren Cloudeinführungsmaßnahmen.
 
 <!-- markdownlint-disable MD028 -->
 
@@ -80,26 +80,28 @@ Um mit einer Governancelösung zu beginnen, wählen Sie eine der beiden folgende
 | Kostenverwaltung&mdash;Cloudabrechnung | Showbackmodell Abrechnung wird über IT zentralisiert. | Chargebackmodell Die Abrechnung kann durch IT-Beschaffung verteilt werden. |
 | Sicherheitsbaseline&mdash;geschützte Daten | Unternehmensfinanzdaten und IP. Eingeschränkte Kundendaten. Keine Complianceanforderungen von Drittanbietern. | Mehrere Sammlungen von Finanzdaten und personenbezogenen Daten von Kunden. Möglicherweise muss Drittanbietercompliance berücksichtigt werden. |
 
-## <a name="azure-virtual-datacenter"></a>Virtuelles Azure-Rechenzentrum
+## <a name="caf-enterprise-scale-landing-zone"></a>CAF-Zielzone auf Unternehmensebene
 
-Mit dem virtuelle Azure-Rechenzentrum können Sie die Funktionen der Azure-Cloudplattform optimal nutzen und gleichzeitig den Sicherheits- und Governanceanforderungen eines Unternehmens gerecht werden.
+Mit der [CAF-Zielzone auf Unternehmensebene](../../ready/enterprise-scale/index.md) können Sie die Funktionen der Azure-Cloudplattform optimal nutzen und gleichzeitig den Sicherheits- und Governanceanforderungen eines Unternehmens gerecht werden.
 
 Im Vergleich zu herkömmlichen lokalen Umgebungen ermöglicht Azure es Workload-Entwicklungsteams und ihren Geschäftssponsoren, die Vorteile der erhöhten Bereitstellungsagilität von Cloudplattformen zu nutzen. Da sich Ihre Bemühungen zur Cloudeinführung auf unternehmenskritische Daten und Workloads ausdehnen, kann diese Agilität im Widerspruch zu den von Ihren IT-Teams festgelegten Anforderungen an Unternehmenssicherheit und Richtlinieneinhaltung stehen. Dies gilt insbesondere für große Unternehmen, in denen bereits ausgereifte Governance- und Regulierungsanforderungen vorhanden sind.
 
-Der Ansatz des virtuellen Azure-Rechenzentrums ist dafür ausgelegt, diese Bedenken im Lebenszyklus der Einführung frühzeitig zu berücksichtigen. Dazu werden Modelle, Referenzarchitekturen, Beispiele für Automatisierungsartefakte und Anleitungen bereitstellt, um während der Enterprise Cloud-Einführung ein Gleichgewicht zwischen Entwickler- und IT-Governanceanforderungen zu erreichen. Im Mittelpunkt dieses Ansatzes steht das Konzept eines virtuellen Rechenzentrums selbst: die Implementierung von Isolationsgrenzen rund um Ihre Cloudinfrastruktur durch den Einsatz von Zugriffs- und Sicherheitskontrollen, Netzwerkrichtlinien und Complianceüberwachung.
+Die Architektur einer CAF-Zielzone auf Unternehmensebene ist darauf ausgelegt, diese Aspekte im Lebenszyklus der Einführung frühzeitig zu berücksichtigen. Dazu werden Architekturen, Implementierungen und Anleitungen bereitgestellt, um während der Enterprise Cloud-Einführung ein Gleichgewicht zwischen Cloudeinführungsteams und zentralen IT-Governanceanforderungen zu erzielen. Im Mittelpunkt dieses Ansatzes steht das Konzept einer Shared Services-Architektur und gut verwalteter Zielzonen.
 
-Ein virtuelles Rechenzentrum kann als Ihre eigene isolierte Cloud innerhalb der Azure-Plattform betrachtet werden, die Managementprozesse, gesetzliche Anforderungen und Sicherheitsprozesse integriert, die von Ihren Governancerichtlinien gefordert werden. Innerhalb dieser virtuellen Grenze bietet das virtuelle Azure-Rechenzentrum Beispielmodelle für die Bereitstellung von Workloads bei gleichzeitiger Sicherstellung einer konsistenten Compliance sowie grundlegende Hinweise zur Implementierung der Trennung von Rollen und Verantwortlichkeiten einer Organisation in der Cloud.
+Eine CAF-Zielzone auf Unternehmensebene stellt Ihre eigene isolierte Cloud innerhalb der Azure-Plattform bereit, die Managementprozesse, gesetzliche Anforderungen und Sicherheitsprozesse integriert, die von Ihren Governancerichtlinien gefordert werden. Innerhalb dieser virtuellen Grenze bietet die CAF-Zielzone auf Unternehmensebene Beispielmodelle für die Bereitstellung von Workloads bei gleichzeitiger Sicherstellung einer konsistenten Compliance sowie grundlegende Hinweise zur Implementierung der Trennung von Rollen und Verantwortlichkeiten einer Organisation in der Cloud.
 
-### <a name="azure-virtual-datacenter-assumptions"></a>Annahmen für virtuelle Azure-Rechenzentren
+### <a name="caf-enterprise-scale-landing-zone-qualifications"></a>Voraussetzungen für die CAF-Zielzone auf Unternehmensebene
 
-Obwohl kleinere Teams von den Modellen und Empfehlungen des virtuellen Azure-Rechenzentrums profitieren können, wurde dieser Ansatz entwickelt, um IT-Gruppen von Unternehmen bei der Verwaltung großer Cloudumgebungen zu unterstützen. Für Organisationen, die die folgenden Kriterien erfüllen, wird empfohlen, bei der Gestaltung der Azure-basierten Cloudinfrastruktur den Leitfaden zum virtuellen Azure-Rechenzentrum zu beachten:
+Kleinere Teams können von der Architektur und den Empfehlungen der CAF-Zielzone auf Unternehmensebene profitieren. Unser Ziel ist es, die Implementierungen der CAF-Zielzone auf Unternehmensebene weiter zu optimieren, um sie benutzerfreundlicher für kleinere Teams zu gestalten. Derzeit ist dieser Ansatz darauf ausgerichtet, zentrale IT-Teams bei der Verwaltung umfangreicher Cloudumgebungen zu unterstützen.
+
+Beim Ansatz der [CAF-Zielzone auf Unternehmensebene](../../ready/enterprise-scale/index.md) stehen Einführungsteams im Fokus, die mittelfristig (innerhalb von 24 Monaten) das Ziel haben, **mehr als 1.000 Assets (Apps, Infrastruktur- oder Datenassets) in der Cloud zu hosten**.
+
+Bei Organisationen, die die folgenden Kriterien erfüllen, können Sie ebenfalls mit der [CAF-Zielzone auf Unternehmensebene](../../ready/enterprise-scale/index.md) beginnen:
 
 - Ihr Unternehmen unterliegt gesetzlichen Bestimmungen, die eine zentrale Überwachung erfordern.
 - Sie müssen die Einhaltung allgemeiner Richtlinien und Governancebestimmungen sowie die zentrale IT-Kontrolle über die wichtigsten Dienste sicherstellen.
 - Ihre Branche hängt von einer komplexen Plattform ab, die umfassende Steuerungsmechanismen und tiefgehendes Fachwissen erfordert. Dies ist am häufigsten bei großen Unternehmen in den Bereichen Finanzen, Herstellung, und Öl und Gas der Fall.
 - Ihre bestehenden IT-Governancerichtlinien erfordern eine engere Parität mit bestehenden Funktionen, auch in frühen Phasen der Einführung.
-
-Weitere Informationen finden Sie im Artikel zum Framework für die Cloudeinführung im Abschnitt zum [virtuellen Azure-Rechenzentrum](../../reference/vdc.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

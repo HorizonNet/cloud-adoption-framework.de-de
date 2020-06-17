@@ -7,12 +7,12 @@ ms.date: 05/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b5792eb9fbff305bde35a795d062e7c8586a5811
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 47ca228af7d88d4a02ac9481c9be7dd804dceda5
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621371"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787893"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Cloudmigration im Cloud Adoption Framework
 
@@ -60,7 +60,7 @@ Im Folgenden finden Sie einen Überblick über die Phasen des oben dargestellten
 
 Migrationsiterationen bieten durch die Migration von Ressourcen und Workloads technischen Nutzen. Eine Migrationswelle ist die kleinste Sammlung von Workloads, die einen greif- und messbaren geschäftlichen Mehrwert bieten. Am Ende jeder Iteration sollte ein Bericht über die durchgeführten technischen Aufgaben erstellt werden. Über geschäftliche Veränderungen und die strategische Planung wird jedoch im Allgemeinen auf etwas höherer Ebene entschieden. Während sich das Cloudeinführungsteam um die Migration kümmert, konzentriert sich das Cloudstrategieteam auf die Planung der nächsten ein bis zwei Migrationswellen. Das Cloudstrategieteam verfolgt auch den technischen Fortschritt in Form einer Lernmetrik nach, um die Zeitvorgaben für die geschäftliche Wertschöpfung besser zu verstehen. In dieser Hinsicht sind Migrationswellen die iterative Change Management-Methode zur Nachverfolgung von Geschäftsergebnissen, beteiligten Personen und Zeitplänen.
 
-Wie die Grafik im vorherigen Abschnitt zeigt, bieten Prozesse innerhalb der Methoden [Planung](../plan/index.md) und [Bereitschaft](../ready/index.md) sowie in gewissem Maße der Methode [Strategie](../strategy/index.md) des Cloud Adoption Framework Leitlinien für die Planung und Verwaltung der Migrationswellen. Durch die Verwaltung dieser Wellen werden die Migrationsaufgaben priorisiert und definiert, die von den technischen Teams erledigt werden müssen.
+Wie die Grafik im vorherigen Abschnitt zeigt, bieten Prozesse innerhalb der Methoden [Planung](../plan/index.md) und [Bereitschaft](../ready/index.md) sowie in gewissem Maße innerhalb der Methode [Strategie](../strategy/index.md) des Cloud Adoption Framework Leitlinien für die Planung und Verwaltung der Migrationswellen. Durch die Verwaltung dieser Wellen werden die Migrationsaufgaben priorisiert und definiert, die von den technischen Teams erledigt werden müssen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
