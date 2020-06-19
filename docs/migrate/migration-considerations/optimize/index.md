@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1e101a75d3b13cc8cbcb6512d6a0a8b29674d5aa
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 4ca17f40d32bd09e3fb4833b53a2bacfbfe3b484
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214207"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993514"
 ---
 # <a name="release-workloads"></a>Freigeben von Workloads
 
@@ -20,7 +20,7 @@ Nach der Bereitstellung einer Sammlung von Workloads und der zugehörigen unters
 
 Ziel der „Freigabe von Workloads“ ist es, migrierte Workloads für die Höherstufung in die Produktion vorzubereiten.
 
-## <a name="definition-of-_done_"></a>Definition von _Fertig_.
+## <a name="definition-of-done"></a>Definition of Done
 
 Der Optimierungsprozess ist abgeschlossen, wenn eine Workload richtig konfiguriert, skaliert und in der Produktionsumgebung bereitgestellt wurde.
 

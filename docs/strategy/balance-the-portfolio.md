@@ -7,16 +7,13 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: f241899ff97b3ded1e5c2c82c4b0c6724843a411
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 32ea202317ecddab49bed0944212f3f7be7e724c
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218967"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84788182"
 ---
-<!-- docsTest:ignore "Team 1" "Team 2" -->
-<!-- cSpell:ignore CSAT -->
-
 # <a name="balance-the-portfolio"></a>Ausgewogenheit des Portfolios
 
 Die Cloudeinführung ist ein Portfolioverwaltungsschritt, der raffiniert als technische Implementierung getarnt ist. Wie bei jeder Form der Portfolioverwaltung ist die Ausgewogenheit des Portfolios von entscheidender Bedeutung. Auf strategischer Ebene bedeutet dies, Migration, Innovation und Experimentieren so in Einklang zu bringen, dass die Cloud optimal genutzt wird. Wenn der Aufwand zur Cloudeinführung zu stark in eine bestimmte Richtung tendiert, werden die Einführungsaktivitäten komplexer. Dieser Artikel führt den Leser durch Methoden, mit denen die Ausgewogenheit des Portfolios erzielt wird.
@@ -25,7 +22,8 @@ Die Cloudeinführung ist ein Portfolioverwaltungsschritt, der raffiniert als tec
 
 Die Ausgewogenheit des Portfolios ist ein strategischer Aspekt. Daher ist der in diesem Artikel vorgestellte Ansatz gleichermaßen strategisch. Um die Strategie auf datengesteuerte Entscheidungen zu gründen, wird in diesem Artikel vorausgesetzt, dass der Leser die vorhandenen [digitalen Ressourcen](../digital-estate/index.md) ausgewertet oder mit diesem Prozess begonnen hat. Das Ziel dieses Ansatzes ist, die Evaluierung der Workloads zu unterstützen, um die Ausgewogenheit des Portfolios durch qualitative Fragen und Portfoliooptimierung sicherzustellen.
 
-<!-- docsTest:ignore 2M months years datacenters improvement TODO -->
+<!-- docsTest TODO: Handle capitalization following numbers and back-ticks -->
+<!-- cSpell:ignore 2M months years datacenters improvement CSAT -->
 
 ### <a name="document-business-outcomes"></a>Dokumentieren von Geschäftsergebnissen
 

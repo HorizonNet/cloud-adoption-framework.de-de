@@ -7,20 +7,18 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: cc7558e9adf16d962e086307e213af990ff60e92
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: de561a28e1b6b0bf6253bcb082ded110e84572c3
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219001"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84788148"
 ---
 # <a name="how-to-use-the-business-outcome-template"></a>Verwenden der Vorlage für Geschäftsergebnisse
 
 Wie in der [Übersicht zu Geschäftsergebnissen](./index.md) erläutert, kann es schwierig sein, die Lücke zwischen geschäftlichen und technischen Konversationen zu schließen. Diese einfache Vorlage soll Teams dabei unterstützen, Geschäftsergebnisse einheitlich zu erfassen, die später bei der Entwicklung von Strategien zur Kundentransformation verwendet werden können.
 
 Laden Sie die [Arbeitsmappe mit der Vorlage für Geschäftsergebnisse](https://archcenter.blob.core.windows.net/cdn/business-outcome-template.xlsx) herunter, und beginnen Sie mit dem Sammeln von Ideen sowie dem Verfolgen von Geschäftsergebnissen. Lesen Sie den Rest des Artikels, um zu erfahren, wie Sie die Vorlage verwenden. Lesen Sie den Artikel über [Geschäftsergebnisse](./index.md). Dort finden Sie Ideen zu möglichen Geschäftsergebnissen, die in Gesprächen mit Führungskräften zur Sprache kommen könnten.
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="use-the-business-outcome-template"></a>Verwenden der Vorlage für Geschäftsergebnisse
 

@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2e4aad0e866ee7ffd3fb0eeb3e2688b24aa5dae1
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: a995ac179320d8d1a2c81e3d64b3af3c048b5898
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756276"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84994129"
 ---
 # <a name="review-your-compute-options"></a>Überprüfen Ihrer Computeoptionen
 
@@ -38,7 +38,7 @@ Die Beantwortung der folgenden Fragen zu Ihren Workloads ist hilfreich, um basie
 - **Können Ihre Anwendungen oder Dienste Container nutzen?** Wenn sich Ihre Anwendungen gut für ein containerisiertes Hosting eignen, können Sie die Vorteile der Ressourceneffizienz, Skalierbarkeit und Orchestrierung nutzen, die von [Containerdiensten in Azure](https://azure.microsoft.com/product-categories/containers) bereitgestellt werden. Sowohl [verwaltete Azure-Datenträger](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) als auch [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) können für die permanente Speicherung in containerisierten Anwendungen verwendet werden.
 - **Sind Ihre Anwendungen web- oder API-basiert, und verwenden sie PHP, ASP.NET, Node.js oder ähnliche Technologien?** Web-Apps können für verwaltete [App Service](https://docs.microsoft.com/azure/app-service/overview)-Instanzen bereitgestellt werden, sodass keine virtuelle Computer für Hostingzwecke verwaltet werden müssen.
 - **Benötigen Sie die volle Kontrolle über das Betriebssystem und die Hostingumgebung Ihrer Workload?** Wenn Sie die Hostingumgebung, einschließlich Betriebssystem, Datenträger, lokal ausgeführte Software und andere Konfigurationen, steuern müssen, können Sie für das Hosting Ihrer Anwendungen und Dienste [Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines) verwenden. Zusätzlich zur Auswahl der Größen und Leistungsstufen Ihres virtuellen Computers wirken sich Ihre Entscheidungen hinsichtlich des Speichers virtueller Datenträger auf die Leistung und SLAs aus, die mit ihren IaaS-Workloads (Infrastructure-as-a-Service) in Zusammenhang stehen. Weitere Informationen finden Sie in der Dokumentation zu [Azure Disk Storage](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview).
-- **Umfasst ihre Workload HPC-Funktionen (High Performance Computing)?** [Azure Batch](https://docs.microsoft.com/azure/batch/batch-technical-overview) ermöglicht eine Auftragsplanung und automatische Skalierung von Computeressourcen als Plattformdienst, sodass Sie problemlos umfangreiche parallele und HPC-Anwendungen in der Cloud ausführen können.
+- **Umfasst ihre Workload HPC-Funktionen (High Performance Computing)?** [Azure Batch](https://docs.microsoft.com/azure/batch/batch-technical-overview) ermöglicht eine Auftragsplanung und automatische Skalierung von Computeressourcen, sodass Sie problemlos umfangreiche parallele und HPC-Anwendungen in der Cloud ausführen können.
 - **Werden Ihre Anwendungen eine Microservicesarchitektur verwenden?** Anwendungen, die eine Microservicearchitektur verwenden, können die Vorteile mehrerer optimierter Computetechnologien nutzen. Unabhängige, ereignisgesteuerte Workloads können mit [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview) skalierbare, serverlose Anwendungen erstellen, die keine Infrastruktur benötigen. Für Anwendungen, die mehr Kontrolle über die Umgebung erfordern, in der Microservices ausgeführt werden, können Sie Containerdienste wie [Azure Container Instances](https://docs.microsoft.com/azure/container-instances/container-instances-overview), [Azure Kubernetes Service](https://docs.microsoft.com/azure/aks/intro-kubernetes) und [Azure Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview) verwenden.
 
 > [!NOTE]
@@ -62,7 +62,7 @@ In der folgenden Tabelle sind einige häufige Nutzungsszenarien und die empfohle
 
 ## <a name="regional-availability"></a>Regionale Verfügbarkeit
 
-Mit Azure können Sie Dienste in der Größenordnung bereitstellen, die Sie benötigen, um Ihre Kunden und Partner zu erreichen, _wo auch immer diese sich befinden_. Ein wichtiger Faktor bei der Planung Ihrer Cloudbereitstellung ist die Ermittlung, in welcher Azure-Region Ihre Workloadressourcen gehostet werden.
+Mit Azure können Sie Dienste in der Größenordnung bereitstellen, die Sie benötigen, um Ihre Kunden und Partner zu erreichen, **wo auch immer diese sich befinden**. Ein wichtiger Faktor bei der Planung Ihrer Cloudbereitstellung ist die Ermittlung, in welcher Azure-Region Ihre Workloadressourcen gehostet werden.
 
 Einige Computeoptionen, z.B. Azure App Service, sind in den meisten Azure-Regionen allgemein verfügbar. Einige Computedienste werden jedoch nur in bestimmten Regionen unterstützt. Einige Typen von virtuellen Computern und die zugehörigen Speichertypen haben eine begrenzte regionale Verfügbarkeit. Bevor Sie die Entscheidung treffen, in welchen Regionen Sie Ihre Computeressourcen bereitstellen, empfehlen wir Ihnen die [Seite zu den Regionen](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=azure-vmware-cloudsimple,cloud-services,batch,container-instances,app-service,service-fabric,functions,kubernetes-service,virtual-machine-scale-sets,virtual-machines), um den aktuellen Status der regionalen Verfügbarkeit zu überprüfen.
 

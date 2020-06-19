@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 0d38c59c75c2119043f04cdeb9c10402bfce53c2
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 1947ed8ccadae4f2f2d289bc3c58e9206fbe533d
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83753528"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993685"
 ---
 # <a name="resource-consistency-decision-guide"></a>Leitfaden zur Entscheidungsfindung bei der Ressourcenkonsistenz
 
@@ -37,7 +37,7 @@ Ressourcengruppen fungieren als Container für Ressourcen mit einem gemeinsamen 
 1. Werden die Inhalte der Ressourcengruppe gemeinsam und von den gleichen Personen oder Teams verwaltet, aktualisiert und überwacht?
 1. Werden die Inhalte der Ressourcengruppe gemeinsam ausgemustert?
 
-Falls Sie eine der obigen Fragen mit _Nein_ beantwortet haben, sollte die betreffende Ressource in einer anderen Ressourcengruppe platziert werden.
+Falls Sie eine der obigen Fragen mit **Nein** beantwortet haben, sollte die betreffende Ressource in einer anderen Ressourcengruppe platziert werden.
 
 > [!IMPORTANT]
 > Ressourcengruppen sind auch regionsspezifisch. Nicht selten befinden sich Ressourcen innerhalb derselben Ressourcengruppe aber in unterschiedlichen Regionen, da sie wie oben beschrieben gemeinsam verwaltet werden. Weitere Informationen zur Auswahl von Regionen finden Sie unter [Mehrere Regionen](../../migrate/azure-best-practices/multiple-regions.md).

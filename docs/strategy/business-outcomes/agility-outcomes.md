@@ -7,20 +7,18 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: feff683b4b19018895cc7eb9ac3ede6b03cd5300
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d9bd12087b21f8ace7ffc8501073b84650ada458
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218933"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84788165"
 ---
 # <a name="examples-of-agility-outcomes"></a>Beispiele für Agilitätsergebnisse
 
 Wie bereits in der [Übersicht über die Geschäftsergebnisse](./index.md) beschrieben, können mehrere mögliche Geschäftsergebnisse als Grundlage für Unterhaltungen zur Transformationsjourney mit dem Unternehmen dienen. In diesem Artikel konzentrieren wir uns auf eine gängige Geschäftskennzahl: die Unternehmensflexibilität. Kenntnisse der Marktposition Ihres Unternehmens und der Wettbewerber können Ihnen dabei helfen, die Geschäftsergebnisse als Ziel der Transformationsjourney des Unternehmens zu formulieren.
 
 In der Vergangenheit wurden Chief Investment Officers und IT-Teams als eine Säule für die Stabilität zentraler unternehmenskritischer Prozesse angesehen. Dies gilt auch weiterhin. Nur wenige Unternehmen funktionieren gut, wenn ihre IT-Plattform nicht stabil ist. Allerdings wird in der heutigen Geschäftswelt noch viel mehr erwartet. Die IT kann mehr als nur eine weitere Kostenstelle sein, indem sie mit anderen Bereichen kooperiert, um neue Möglichkeiten am Markt zu erschließen. Viele Chief Investment Officers und Führungskräfte setzen die Stabilität einfach als Grundwerte für die IT voraus. Für diese Führungskräfte ist geschäftliche Flexibilität das Maß für den Anteil der IT am Unternehmen.
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="why-is-agility-so-important"></a>Warum ist Agilität so wichtig?
 
