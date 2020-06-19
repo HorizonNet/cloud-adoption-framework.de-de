@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8c4387575f9cb9190327f2d644a60695809e185a
-ms.sourcegitcommit: 09a2cb66863f7f7fe69568c5ed007ab9f360b85e
+ms.openlocfilehash: 9683591170546cd5c23b7adf4c0d5d6a1be6038e
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "84300993"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993028"
 ---
 # <a name="risk-tolerance-metrics-and-indicators-in-the-cost-management-discipline"></a>Risikotoleranzmetriken und -indikatoren in der Disziplin „Kostenverwaltung“
 
@@ -41,7 +41,7 @@ In den frühen Phasen der Cloudeinführung erarbeiten Sie zusammen mit Ihrem Unt
 Nachdem Sie [Geschäftsrisiken](./business-risks.md) ermittelt haben, identifizieren Sie gemeinsam mit dem Unternehmen Benchmarks, anhand derer Sie Auslöser identifizieren können, die diese Risiken potenziell erhöhen können. Es folgen einige Beispiele für den Vergleich von Metriken wie den oben genannten mit Ihrer Risikotoleranz-Baseline als Indikator, dass das Unternehmen weiter in die Kostenverwaltung investieren muss.
 
 - **Engagementgesteuert (am häufigsten):** Ein Unternehmen, das sich vorgenommen hat, in diesem Jahr _x Mio. USD_ für einen Cloudanbieter auszugeben. Es erfordert eine Kostenverwaltungsdisziplin, um sicherzustellen, dass das Unternehmen seine Ausgabenziele nicht um mehr als 20 Prozent überschreitet und mindestens 90 Prozent dieser Vorgabe verwendet.
-- **Prozentsatztrigger:** Ein Unternehmen mit Cloudausgaben, die für die Produktionssysteme stabil sind. Wenn sich dieser Wert um mehr als _x Prozent_ ändert, ist eine Kostenverwaltungsdisziplin eine sinnvolle Investition.
+- **Prozentsatztrigger:** Ein Unternehmen mit Cloudausgaben, die für die Produktionssysteme stabil sind. Wenn sich dieser Wert um mehr als _x %_ ändert, ist eine Kostenverwaltungsdisziplin eine sinnvolle Investition.
 - **Trigger bei Überdimensionierung:** Ein Unternehmen, das glaubt, dass die bereitgestellten Lösungen überdimensioniert sind. Kostenverwaltung ist so lange eine Investition mit hoher Priorität, bis ein vernünftiger Abgleich zwischen Bereitstellung und Ressourcennutzung nachgewiesen wird.
 - **Trigger bei monatlichen Ausgaben:** Ein Unternehmen, das monatlich mehr als _x Tausend USD_ ausgibt und dies als Kostenobergrenze ansieht. Wenn die Ausgaben diesen Betrag in einem bestimmten Monat übersteigen, muss eine Investition in die Kostenverwaltung erfolgen.
 - **Trigger bei jährlichen Ausgaben:** Ein Unternehmen mit einem Budget für IT-Forschung und -Entwicklung, das Ausgaben von _x Tausend USD_ pro Jahr für Cloudexperimente zulässt. Möglicherweise werden Produktionsworkloads in der Cloud ausgeführt, diese werden aber weiter als experimentelle Lösungen angesehen, wenn das Budget diesen Betrag nicht überschreitet. Wird das Budget überschritten, muss es als Produktionsinvestition behandelt werden, und Ausgaben müssen strikt überwacht werden.

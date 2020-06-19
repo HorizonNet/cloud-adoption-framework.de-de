@@ -8,16 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: governance
-ms.openlocfilehash: 00d5709aeb0a922b8f8c5efd26abafe70d70a237
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 7008ba1cb2efbf154324598dc73f32fdbefff5bf
+ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755159"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84812917"
 ---
 <!-- cSpell:ignore PDU -->
-
-<!-- markdownlint-disable MD026 -->
 
 # <a name="how-does-azure-work"></a>Wie funktioniert Azure?
 
@@ -27,11 +25,13 @@ Azure ist die öffentliche Cloudplattform von Microsoft. Azure umfasst eine gro�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2ixGo]
 
+<!-- markdownlint-enable MD034 -->
+
 Wie andere Cloudplattformen auch, basiert Azure auf einer Technologie, die als _Virtualisierung_ bezeichnet wird. Ein Großteil der Computerhardware kann per Software emuliert werden, da es sich bei Computerhardware in den meisten Fällen lediglich um einen Satz mit Anweisungen handelt, die permanent oder semipermanent in Silizium codiert sind. Indem eine Emulationsebene verwendet wird, mit der Softwareanweisungen Hardwareanweisungen zugeordnet werden, kann virtualisierte Hardware so per Software ausgeführt werden, als ob es sich wirklich um Hardware handeln würde.
 
 Im Wesentlichen umfasst die Cloud eine Gruppe von physischen Servern in einem oder mehreren Rechenzentren, auf denen virtualisierte Hardware im Namen der Kunden ausgeführt wird. Wie wird es also für die Cloud erreicht, dass Millionen von Instanzen virtualisierter Hardware für Millionen von Kunden gleichzeitig erstellt, gestartet, beendet und gelöscht werden können?
 
-Wir sehen uns die Architektur der Hardware im Rechenzentrum an. Jedes Rechenzentrum verfügt über eine Sammlung von Servern, die in Serverracks angeordnet sind. Jedes Serverrack enthält viele Server**blades** sowie einen Netzwerkswitch für die Netzwerkkonnektivität und eine Stromversorgungseinheit für die Stromversorgung. Racks werden auch in größeren Einheiten gruppiert, die als _Cluster_ bezeichnet werden.
+Wir sehen uns die Architektur der Hardware im Rechenzentrum an. Jedes Rechenzentrum verfügt über eine Sammlung von Servern, die in Serverracks angeordnet sind. Jedes Serverrack enthält viele Server_blades_ sowie einen Netzwerkswitch für die Netzwerkkonnektivität und eine Stromversorgungseinheit für die Stromversorgung. Racks werden auch in größeren Einheiten gruppiert, die als _Cluster_ bezeichnet werden.
 
 Innerhalb jedes Racks oder Clusters haben die meisten Server die Aufgabe, diese virtualisierten Hardwareinstanzen im Namen des Benutzers auszuführen. Auf einigen Servern wird jedoch Software für die Cloudverwaltung ausgeführt, die als Fabric Controller bezeichnet wird. Der _Fabric Controller_ ist eine verteilte Anwendung mit vielen Aufgaben. Er dient zum Zuordnen von Diensten, Überwachen der Integrität des Servers und der darauf ausgeführten Dienste und Wiederherstellen der Serverintegrität nach einem Ausfall.
 

@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d469df5110822024f93c261e9ec63dbe0f143ca2
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 077f6f36fba1b8267fecf6ce3926aa2dd9ae8e1b
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862295"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786873"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="conduct-a-cloud-policy-review"></a>Durchführen einer Überprüfung von Cloudrichtlinien
 
 Eine Überprüfung von Cloudrichtlinien ist der erste Schritt zur [Governance-Einsatzreife](../index.md) in der Cloud. Das Ziel dieses Prozesses ist eine Modernisierung der vorhandenen IT-Unternehmensrichtlinien. Nach seinem Abschluss bieten die aktualisierten Richtlinien eine gleichwertige Ebene des Risikomanagements für cloudbasierte Ressourcen. In diesem Artikel wird der Prozess zur Überprüfung von Cloudrichtlinien und deren Bedeutung erläutert.

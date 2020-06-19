@@ -7,18 +7,16 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: bb7ff19f7def1d41fa8a205667345ae0673503e4
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 377ee74df593438b9bfda6ad5a2e780051d6f9b7
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83399400"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786618"
 ---
 # <a name="define-corporate-policy-for-cloud-governance"></a>Definieren von Unternehmensrichtlinien für Cloudgovernance
 
 Nachdem Sie die bekannten Risiken und damit verbundene Risikotoleranzen für den Weg Ihrer Organisation in die Cloud analysiert haben, besteht Ihr nächster Schritt darin, eine Richtlinie einzurichten, die diese Risiken explizit behandelt und die Schritte, um sie nach Möglichkeit zu verringern, definiert.
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="how-can-corporate-it-policy-become-cloud-ready"></a>Wie kann für die IT-Unternehmensrichtlinie die Bereitschaft für die Cloud erzielt werden?
 
@@ -35,8 +33,6 @@ Cloudgovernance ist das Resultat kontinuierlicher Bemühungen zur Einführung, d
 Ein Framework für die Einführung der Cloud hebt sich durch seinen Kaufzyklus sowie durch die Ermöglichung einer authentischen Transformation ab. Da keine umfangreichen Kapitalinvestitionen für Anschaffungen erforderlich sind, können Techniker bereits früher mit dem Test- und Einführungsprozess beginnen. In den meisten Unternehmenskulturen kann die Tatsache, dass Kapitalausgaben kein Hindernis für die Einführung mehr sind, zu kürzeren Feedbackschleifen, einem organischen Wachstum und inkrementeller Ausführung führen.
 
 Die Einführung der Cloud erfordert ein Umdenken bei der Governance. In vielen Organisationen verbessert und verstärkt die Transformation der Unternehmensrichtlinien die Governance, da Richtlinien inkrementell geändert und diese Änderungen automatisch durchgesetzt werden. Gestützt wird dieser Ansatz durch neu definierte Funktionen, die Sie mit Ihrem Clouddienstanbieter konfigurieren.
-
-<!-- markdownlint-enable MD026 -->
 
 ## <a name="review-existing-policies"></a>Überprüfen vorhandener Richtlinien
 

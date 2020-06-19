@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 105c25258fba28fe61cc127e1f1e602c0c822202
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 227165dcfa7f86003807d1d2063a0a3d26f5fe5d
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216128"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787825"
 ---
 # <a name="promotion-models-single-step-staged-or-flight"></a>Höherstufungsmodelle: „in einem Schritt“, „gestaffelt“ oder „Flight“
 
@@ -26,7 +26,7 @@ In jedem der folgenden Höherstufungsmodelle repliziert und staffelt das ausgew�
 
 - **Höherstufung in einem Schritt.** Bei einem Höherstufungsmodell des Typs _in einem Schritt_ wird der Stagingprozess als Höherstufungsprozess verdoppelt. Nachdem alle Ressourcen gestaffelt wurden, wird der Datenverkehr für Endbenutzer umgeleitet, und aus Staging wird Produktion. In solch einem Fall ist Höherstufung ein Teil des Migrationsprozesses. Dies ist das schnellste Migrationsmodell. Allerdings erschwert dieser Ansatz die Integration stabiler Test- oder Optimierungsaktivitäten. Darüber hinaus wird bei diesem Modelltyp vorausgesetzt, dass das Migrationsteam Zugriff auf die Staging- und Produktionsumgebung hat, wodurch die Trennung von Aufgaben in einigen Umgebungen gefährdet ist.
   > [!NOTE]
-  >Im Inhaltsverzeichnis für diese Website ist die Höherstufungsaktivität als Teil des Optimierungsprozesses aufgeführt. In einem Modell des Typs „ein Schritt“ erfolgt die Höherstufung während des Migrationsprozesses. Bei Verwendung dieses Modells sollten Rollen und Zuständigkeiten aktualisiert werden, um dies zu berücksichtigen.
+  > Im Inhaltsverzeichnis für diese Website ist die Höherstufungsaktivität als Teil des Optimierungsprozesses aufgeführt. In einem Modell des Typs „ein Schritt“ erfolgt die Höherstufung während des Migrationsprozesses. Bei Verwendung dieses Modells sollten Rollen und Zuständigkeiten aktualisiert werden, um dies zu berücksichtigen.
 - **Gestaffelt.** In einem _gestaffelten_ Höherstufungsmodell wird die Workload nach ihrer Staffelung als migriert betrachtet, aber noch nicht höhergestuft. Vor der Höherstufung durchläuft die migrierte Workload eine Reihe von Leistungstests, geschäftsbezogenen Tests und Optimierungsänderungen. Zu einem späteren Zeitpunkt wird sie dann in Verbindung mit einem Plan für geschäftsbezogene Tests höhergestuft. Dieser Ansatz verbessert das Kosten-/Leistungsverhältnis, während eine Geschäftsvalidierung einfacher zu erhalten ist.
 - **Flight.** Im Höherstufungsmodell des Typs _Flight_ sind die Modelle des Typs „in einem Schritt“ und „gestaffelt“ kombiniert. In einem „Flight“-Modell werden die Ressourcen im Workload wie „Produktion nach dem Ziel im Stagingprozess“ behandelt. Nach einem verkürzten Zeitraum von automatisierten Tests wird der Produktionsdatenverkehr an die Workload weitergeleitet. Allerdings handelt es sich dabei um eine Teilmenge des Datenverkehrs. Dieser Datenverkehr dient als der erste Flight von Produktion und Tests. Vorausgesetzt, dass die Workload im Hinblick auf Feature und Leistung ausgeführt wird, wird zusätzlicher Datenverkehr migriert. Nachdem der gesamte Produktionsdatenverkehr auf die neuen Ressourcen verschoben wurde, wird die Workload als vollständig höhergestuft betrachtet.
 

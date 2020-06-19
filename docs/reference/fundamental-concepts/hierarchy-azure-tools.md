@@ -7,15 +7,13 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 17d6368eb8e0d55e8ad8107601a690046af1c2e9
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: ae57f79aeb4976a2c6306728f354ab972f3b33e3
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755637"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84788114"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="how-do-azure-products-support-the-portfolio-hierarchy"></a>Wie unterstützen die Azure-Produkte die Portfoliohierarchie?
 
 In [Verstehen und Ausrichten der Portfoliohierarchie](./hosting-hierarchy.md) wurde durch eine Reihe von Definitionen für die Portfoliohierarchie und die Rollenzuordnung eine Bereichshierarchie für die meisten Portfolioansätze festgelegt. Wie in diesem Artikel beschrieben, benötigen Sie möglicherweise nicht jede der nachstehend beschriebenen Ebenen oder jeden der nachstehenden _Bereiche_. Die Minimierung der Anzahl der Ebenen reduziert die Komplexität, sodass diese Ebenen nicht alle Anforderung angesehen werden sollten.

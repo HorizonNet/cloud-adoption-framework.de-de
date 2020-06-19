@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c2a087fec598e2b9d581370f76e35aefef88048f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: fac64038c805eed0566554dd42551b32f4294900
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224186"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786227"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="establish-policy-adherence-processes"></a>Festlegen von Prozessen zur Einhaltung von Richtlinien
 
 Nachdem Sie Ihre Cloudrichtlinienanweisungen eingerichtet und ein erstes Entwurfshandbuch geschrieben haben, müssen Sie eine Strategie entwickeln, die sicherstellt, dass die Cloudbereitstellung konform zu Ihren Richtlinienanforderungen bleibt. Diese Strategie muss die fortlaufenden Überprüfungs- und Kommunikationsprozesse Ihres Cloudgovernanceteams einschließen, Kriterien für Handlungen bei Richtlinienverstößen festlegen und die Anforderungen für automatisierte Überwachungs- und Compliancesysteme definieren, die Verstöße erkennen und Aktionen zur Problembehebung auslösen.

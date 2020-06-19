@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 91e9199d8d4dee4a52b0d558f16bb3fcd344bf78
-ms.sourcegitcommit: d2a6430eba5aa3db4a21b8dc4f1c9996224b9cb3
+ms.openlocfilehash: d26c60bc2f2dad96710b834f58976dd17fda4a5d
+ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "84149371"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84812971"
 ---
 # <a name="get-started-align-your-organization"></a>Erste Schritte: Ausrichten Ihrer Organisation
 
@@ -72,7 +72,11 @@ Einführung erfordert Wachstum, und dasselbe gilt für die Notwendigkeit, Gleich
 
 Sehen Sie sich dieses Video an, um einen Überblick über allgemeine Teamstrukturen in den verschiedenen Phasen des Organisationsreifegrads zu erhalten.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4wvTS]
+<!-- markdownlint-disable MD034 -->
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wvTS]
+
+<!-- markdownlint-enable MD034 -->
 
 ## <a name="step-5-align-raci-charts"></a>Schritt 5: Ausrichten von RACI-Diagrammen
 

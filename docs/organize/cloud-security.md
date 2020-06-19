@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 68ce6816dbcbbc1770ac8a51a6d77329e65b4eca
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 58fa0ac8b3c522318472f4adbe4ae8d28d2f8636
+ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755310"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84813295"
 ---
 <!-- cSpell:ignore MarkSimos -->
 
@@ -26,8 +26,6 @@ Das folgende Diagramm und die Dokumentation stellen eine ideale Sicht der Funkti
 
 **Sicherheit ist eine gemeinsame Aufgabe:** Es ist entscheidend, dass sich Personen im Sicherheitsteam gegenseitig als Teil eines ganzen Sicherheitsteams sehen, das wiederum Teil der gesamten Organisation und Teil einer größeren Sicherheitscommunity ist, die sich gegen dieselben Angreifer verteidigt. Diese ganzheitliche Sichtweise ermöglicht es dem Team in der Regel, gut zu arbeiten. Es ist besonders wichtig, da die Teams alle ungeplanten Lücken und Überschneidungen verarbeiten müssen, die während der Entwicklung von Rollen und Zuständigkeiten erkannt werden.
 
-<!-- cSpell:ignore apsec -->
-
 ## <a name="security-functions"></a>Sicherheitsfunktionen
 
 Jeder der folgenden Artikel bietet Informationen zu einer der Funktionen. Jeder Artikel enthält eine Zusammenfassung der Ziele, wie sich die Funktion aufgrund der Bedrohungsumgebung oder der Änderungen an der Cloudtechnologie entwickeln kann, sowie die Beziehungen und Abhängigkeiten, die für den Erfolg entscheidend sind.
@@ -37,7 +35,7 @@ Jeder der folgenden Artikel bietet Informationen zu einer der Funktionen. Jeder 
 - [Sicherheitsarchitektur](./cloud-security-architecture.md)
 - [Sicherheitscomplianceverwaltung](./cloud-security-compliance-management.md)
 - [Personensicherheit](./cloud-security-people.md)
-- [Anwendungssicherheit und DevSecOps](./cloud-security-apsec-devsecops.md)
+- [Anwendungssicherheit und DevSecOps](./cloud-security-application-security-devsecops.md)
 - [Datensicherheit](./cloud-security-data-security.md)
 - [Infrastruktur- und Endpunktsicherheit](./cloud-security-infrastructure-endpoint.md)
 - [Identität und Schlüssel](./cloud-security-identity-keys.md)

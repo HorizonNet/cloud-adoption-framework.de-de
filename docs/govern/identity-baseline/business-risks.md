@@ -8,18 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 370dfa7a040a41e22f23741ca30cf3a305de7f29
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 49ec30f5a623e3be0c06f4c019669bfd9d3e6006
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219885"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786261"
 ---
 # <a name="motivations-and-business-risks-in-the-identity-baseline-discipline"></a>Motivationen und Geschäftsrisiken in der Disziplin „Identitätsbaseline“
 
 In diesem Artikel werden die Gründe beschrieben, warum Kunden typischerweise eine Disziplin „Identitätsbaseline“ in ihre Cloud Governance-Strategie integrieren. Darüber hinaus werden einige Beispiele für Geschäftsrisiken aufgeführt, die zu Richtlinienanweisungen führen.
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="relevance"></a>Relevance
 

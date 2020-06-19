@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c3a7fe76da6fd98f5e37d96cdcbc5426c7f5dea2
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: bfb401486443aae9a086d98b9d93c80dea710074
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862584"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84994052"
 ---
 <!-- cSpell:ignore HDFS databox Avere HANA ACLs Isilon DFSR Cloudera -->
 
@@ -139,7 +139,7 @@ Mit Azure Disk Encryption können Sie verwaltete Datenträger, die als Betriebss
 
 ## <a name="regional-availability"></a>Regionale Verfügbarkeit
 
-Mit Azure können Sie Dienste in der Größenordnung bereitstellen, die Sie benötigen, um Ihre Kunden und Partner _unabhängig von ihrem Standort_ zu erreichen. Auf den Seiten zur regionalen Verfügbarkeit von [Managed Disks](https://azure.microsoft.com/global-infrastructure/services/?products=managed-disks) und [Azure Storage](https://azure.microsoft.com/global-infrastructure/services/?products=storage) werden die Regionen aufgeführt, in denen diese Dienste verfügbar sind. Indem Sie die regionale Verfügbarkeit der Dienste im Voraus überprüfen, können Sie die für Ihre Workload- und Kundenanforderungen richtige Entscheidung treffen.
+Mit Azure können Sie Dienste in der Größenordnung bereitstellen, die Sie benötigen, um Ihre Kunden und Partner **unabhängig von ihrem Standort** zu erreichen. Auf den Seiten zur regionalen Verfügbarkeit von [Managed Disks](https://azure.microsoft.com/global-infrastructure/services/?products=managed-disks) und [Azure Storage](https://azure.microsoft.com/global-infrastructure/services/?products=storage) werden die Regionen aufgeführt, in denen diese Dienste verfügbar sind. Indem Sie die regionale Verfügbarkeit der Dienste im Voraus überprüfen, können Sie die für Ihre Workload- und Kundenanforderungen richtige Entscheidung treffen.
 
 Verwaltete Datenträger sind in allen Azure-Regionen verfügbar, in denen SSD Premium und SSD Standard angeboten werden. Auch wenn SSD Ultra derzeit als öffentliche Vorschauversion verfügbar ist, wird diese Option nur in einer Verfügbarkeitszone angeboten: der Region „USA, Osten 2“. Überprüfen Sie die regionale Verfügbarkeit, während Sie unternehmenskritische Workloads der obersten Ebene planen, für die SSD Ultra benötigt wird.
 

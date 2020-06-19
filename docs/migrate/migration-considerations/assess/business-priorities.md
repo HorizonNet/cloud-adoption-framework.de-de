@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8dea3f98b73c6df7c6b667da56411c78cb02d581
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 6f2bac40952af40376e57243c75c4dd6910d2bc1
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215482"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787842"
 ---
 # <a name="business-priorities-maintaining-alignment"></a>Geschäftliche Prioritäten: Ausrichten auf die Beibehaltung
 
@@ -23,8 +23,6 @@ Die Zeitspanne, die für die Rationalisierung oder den Übergang einer Workload 
 Leider wartet der Markt nicht, bis ein Übergang in einem Unternehmen erfolgt ist. Die Verhaltensmuster von Kunden ändern sich von selbst – und das oft unerwartet. Die Wahrnehmung eines Unternehmens und seiner Produkte auf dem Markt kann durch soziale Medien oder die Positionierung eines Wettbewerbers beeinflusst werden. Schnelle und unerwartete Marktänderungen machen es erforderlich, dass Unternehmen flexibel sind und schnell reagieren.
 
 Die Fähigkeit zum Ausführen von Prozessen und technischen Übergängen erfordert konsistente und stabile Maßnahmen. Um auf die Marktbedingungen zu reagieren, sind schnelle Entscheidungen und flexible Aktionen erforderlich. Da sich diese beiden widersprechen, kann es leicht geschehen, dass die Ausrichtung von Prioritäten nicht mehr stimmt. Dieser Artikel beschreibt Methoden, mit denen die Ausrichtung von Übergangen während der Migration beibehalten werden kann.
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="how-can-business-and-technical-priorities-stay-aligned-during-a-migration"></a>Wie können geschäftliche und technische Prioritäten während einer Migration aufeinander abgestimmt bleiben?
 

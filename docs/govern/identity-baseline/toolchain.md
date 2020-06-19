@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1a5dc85aba4b5bd37bc65682bd039ecf57658624
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 71d813526d739984390fc671c44245b21ce078f1
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862329"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786244"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Tools für Identitätsbaseline in Azure
 
@@ -55,15 +55,13 @@ Im Folgenden finden Sie eine Tabelle der nativen Tools, die bei der Verfeinerung
 <!-- markdownlint-disable MD033 -->
 <!-- docsTest:ignore UserPrincipalName SamAccountName -->
 
-<!-- TODO: Fix link for Azure Active Directory admin center -->
-
 | Aspekt | Kennworthashsynchronisierung + nahtloses einmaliges Anmelden | Passthrough-Authentifizierung + nahtloses einmaliges Anmelden | Verbund mit AD FS |
 | --- | --- | --- | --- |
 | Wo findet Authentifizierung statt? | In der Cloud | In der Cloud nach einem sicheren Kennwortüberprüfungsaustausch mit dem lokalen Authentifizierungs-Agent | Lokal |
 | Welche lokalen Serveranforderungen gibt es über das Bereitstellungssystem hinaus: Azure AD Connect? | Keine | Ein Server für jeden zusätzlichen Authentifizierungs-Agent | Mindestens zwei AD FS-Server <br><br> Mindestens zwei WAP-Server im Umkreis-/DMZ-Netzwerk |
 | Welche lokalen Anforderungen hinsichtlich Internet und Netzwerk gibt es über das Bereitstellungssystem hinaus? | Keine | [Ausgehender Internetzugriff](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-quick-start) von den Servern, auf denen Authentifizierung-Agents ausgeführt werden | [Eingehender Internetzugriff](https://docs.microsoft.com/windows-server/identity/ad-fs/overview/ad-fs-requirements) auf WAP-Server im Umkreisnetzwerk <br><br> Eingehender Netzwerkzugriff auf AD FS-Server von WAP-Servern im Umkreisnetzwerk <br><br> Netzwerklastenausgleich |
 | Ist ein SSL-Zertifikat erforderlich? | Nein | Nein | Ja |
-| Gibt es eine Systemüberwachungslösung? | Nicht erforderlich | Agent-Status, bereitgestellt von [Azure Active Directory Admin Center](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-pass-through-authentication) | [Azure AD Connect Health](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-adfs) |
+| Gibt es eine Systemüberwachungslösung? | Nicht erforderlich | Agent-Status, bereitgestellt von [Azure Active Directory Admin Center](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-pass-through-authentication#general-issues) | [Azure AD Connect Health](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-adfs) |
 | Erhalten Benutzer einmaliges Anmelden für Cloudressourcen über Geräte, die in die Domäne eingebunden sind und zum Unternehmensnetzwerk gehören? | Ja, mit [nahtlosem einmaligen Anmelden](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso) | Ja, mit [nahtlosem einmaligen Anmelden](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso) | Ja |
 | Welche Anmeldetypen werden unterstützt? | Benutzerprinzipalname + Kennwort <br><br>  Integrierte Windows-Authentifizierung mit [nahtlosem einmaligen Anmelden](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso) <br><br> [Alternative Anmelde-ID](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom) | Benutzerprinzipalname + Kennwort <br><br> Integrierte Windows-Authentifizierung mit [nahtlosem einmaligen Anmelden](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso) <br><br> [Alternative Anmelde-ID](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-faq) | Benutzerprinzipalname + Kennwort <br><br> SamAccountName + Kennwort <br><br> Integrierte Windows-Authentifizierung <br><br> [Zertifikat- und Smartcard-Authentifizierung](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-user-certificate-authentication) <br><br> [Alternative Anmelde-ID](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configuring-alternate-login-id) |
 | Wird Windows Hello for Business unterstützt? | [Modell der schlüsselbasierten Vertrauensstellung](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification) <br><br> [Modell der Zertifikatvertrauensstellung mit Intune](https://microscott.azurewebsites.net/2017/12/16/setting-up-windows-hello-for-business-with-intune) | [Modell der schlüsselbasierten Vertrauensstellung](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification) <br><br> [Modell der Zertifikatvertrauensstellung mit Intune](https://microscott.azurewebsites.net/2017/12/16/setting-up-windows-hello-for-business-with-intune) | [Modell der schlüsselbasierten Vertrauensstellung](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification) <br><br> [Modell der Zertifikatvertrauensstellung](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-key-trust-adfs) |

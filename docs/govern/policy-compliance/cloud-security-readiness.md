@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 53549ed01b9656ba4ce365e4707b411bdae2db1f
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: aa579f628ccb6f0dfb28bfe23e782580330dd3c1
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862278"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786839"
 ---
 <!-- cSpell:ignore CISO -->
 
@@ -21,8 +21,6 @@ ms.locfileid: "83862278"
 Empfehlungen von Microsoft wie beispielsweise das Cloud Adoption Framework (CAF) sind nicht dafür konzipiert, die einzigartigen Sicherheitsbedingungen von Tausenden von Unternehmen zu ermitteln, die von dieser Dokumentation unterstützt werden, oder als Anleitung für diese Bedingungen zu dienen. Bei der Migration in die Cloud wird die Rolle des Chief Information Security Officer bzw. Chief Information Security Office (CISO) nicht durch Cloudtechnologien verdrängt. Ganz im Gegenteil: Der CISO und das CISO-Team sind noch besser und enger integriert. Für diese Anleitung wird vorausgesetzt, dass Sie mit CISO-Prozessen vertraut sind und diese modernisieren möchten, um eine Cloudtransformation zu ermöglichen.
 
 Die Einführung der Cloud ermöglicht die Verwendung von Diensten, die in herkömmlichen IT-Umgebungen nur selten berücksichtigt wurden. Self-Service- oder automatisierte Bereitstellungen werden häufig von für die Anwendungsentwicklung zuständigen oder anderen IT-Teams ausgeführt, die traditionell nicht an der Produktionsbereitstellung beteiligt sind. In einigen Organisationen verfügen Geschäftsbenutzer ebenfalls über Self-Service-Funktionen. Dadurch können neue Sicherheitsanforderungen entstehen, die in lokalen Bereitstellungen nicht benötigt wurden. Die zentralisierte Sicherheit stellt eine größere Herausforderung dar, und häufig sind IT-Abteilung und Geschäftsbereiche gemeinsam dafür verantwortlich. Dieser Artikel kann einen CISO bei der Vorbereitung auf diesen Ansatz und der Umsetzung einer inkrementellen Governance unterstützen.
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="how-can-a-ciso-prepare-for-the-cloud"></a>Wie kann sich ein CISO auf die Cloud vorbereiten?
 

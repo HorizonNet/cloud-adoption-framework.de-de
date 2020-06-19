@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d7d621f8f25b5369c4b9d39341c3e735b0996493
-ms.sourcegitcommit: 871d0256a2d448e22b4ab8054e906fc2db946518
+ms.openlocfilehash: 6672d86f215360f1024b233f62a48eb390b52a52
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "83705940"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785173"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -39,7 +39,7 @@ Das Erlangen der erforderlichen Qualifikationen kann mit den folgenden Lernpfade
 
 ## <a name="infrastructure-monitoring"></a>Infrastrukturüberwachung
 
-- Unter [Entwerfen einer Überwachungsstrategie für die Infrastruktur in Microsoft Azure](https://www.pluralsight.com/courses/microsoft-azure-monitoring-strategy-infrastructure-design-update) erwerben Sie grundlegende Kenntnisse der Überwachungsfunktionen und -lösungen in Azure. 
+- Unter [Entwerfen einer Überwachungsstrategie für die Infrastruktur in Microsoft Azure](https://www.pluralsight.com/courses/microsoft-azure-monitoring-strategy-infrastructure-design-update) erwerben Sie grundlegende Kenntnisse der Überwachungsfunktionen und -lösungen in Azure.
 
 - Anhand des Videos zum [Überwachen von Kubernetes-Clustern](https://www.youtube.com/watch?time_continue=3&v=RjsNmapggPU&feature=emb_logo) für fortgeschrittene Benutzer können Sie sich ausführlicher mit der Überwachung Ihres Kubernetes-Clusters mit Azure Monitor für Container vertraut machen.
 
@@ -67,9 +67,9 @@ Das Erlangen der erforderlichen Qualifikationen kann mit den folgenden Lernpfade
 
 ## <a name="data-analysis"></a>Datenanalyse
 
-- Informieren Sie sich darüber, wie Sie [Protokollabfragen in Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-queries) schreiben. Die Kusto-Abfragesprache ist die Hauptressource für das Schreiben von Azure Monitor-Protokollabfragen, um Protokolldaten für die erfassten Daten aus Azure und die Abhängigkeiten von Hybridressourcenanwendungen (einschließlich Liveanwendung) zu untersuchen und zu analysieren. 
+- Informieren Sie sich darüber, wie Sie [Protokollabfragen in Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-queries) schreiben. Die Kusto-Abfragesprache ist die Hauptressource für das Schreiben von Azure Monitor-Protokollabfragen, um Protokolldaten für die erfassten Daten aus Azure und die Abhängigkeiten von Hybridressourcenanwendungen (einschließlich Liveanwendung) zu untersuchen und zu analysieren.
 
-- [Kusto-Abfragesprache (Kusto Query Language, KQL) für Einsteiger](https://www.pluralsight.com/courses/kusto-query-language-kql-from-scratch) ist ein umfassender Kurs, der ausführliche Beispiele für eine große Bandbreite von Anwendungsfällen und Techniken für die Protokollanalyse in Azure Monitor-Protokollen enthält. 
+- [Kusto-Abfragesprache (Kusto Query Language, KQL) für Einsteiger](https://www.pluralsight.com/courses/kusto-query-language-kql-from-scratch) ist ein umfassender Kurs, der ausführliche Beispiele für eine große Bandbreite von Anwendungsfällen und Techniken für die Protokollanalyse in Azure Monitor-Protokollen enthält.
 
 ## <a name="deeper-skills-exploration"></a>Ausführlichere Untersuchung von Fähigkeiten
 

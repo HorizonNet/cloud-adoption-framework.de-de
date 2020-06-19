@@ -7,15 +7,13 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 31c0335cd4f1a6d8ef8e4793e3f6fb4fa383d339
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: cbb80dacdb34cc4ab11cf2d3435a0e8d4ff86e73
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221483"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84784986"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="first-cloud-adoption-project"></a>Erstes Cloudeinführungsprojekt
 
 Die Planung der Cloudeinführung ist mit einer Lernkurve und Zeitaufwand verbunden. Selbst für erfahrene Teams nimmt die richtige Planung viel Zeit in Anspruch: Zeit, um die Projektbeteiligten aufeinander abzustimmen, Zeit, um Daten zu sammeln und zu analysieren, Zeit, um langfristige Entscheidungen zu überprüfen, und Zeit, um Menschen, Prozesse und Technologien aufeinander abzustimmen. Bei den produktivsten Einführungsbemühungen wächst die Planung parallel zur Einführung weiter und verbessert sich mit jedem Release und jeder Workloadmigration in die Cloud. Es ist wichtig, den Unterschied zwischen einem Cloudeinführungsplan und einer Cloudeinführungsstrategie zu kennen. Sie benötigen eine klar definierte Strategie, um die Implementierung eines Cloudeinführungsplans zu vereinfachen und zu unterstützen.

@@ -7,20 +7,18 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: e5dd2effba64b4aee4a60f8264e8ca9499a0f5fd
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: dc848313ba3d09cc6030a7fd613aa7a89b783e8a
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755953"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786210"
 ---
 # <a name="evaluate-risk-tolerance"></a>Evaluieren der Risikotoleranz
 
 Jede Geschäftsentscheidung führt zu neuen Risiken. Jede Investition in beliebigen Bereichen bringt ein Verlustrisiko mit sich. Neue Produkte oder Dienste bergen das Risiko eines Marktversagens. Durch Änderungen an aktuellen Produkten oder Diensten kann sich der Marktanteil verringern. Die Cloudtransformation ist keine Wunderlösung für die alltäglichen Geschäftsrisiken. Im Gegenteil – durch verbundene Lösungen (Cloud oder lokal) werden neue Risiken eingeführt. Die Bereitstellung von Ressourcen für mit dem Netzwerk verbundene Einrichtungen erweitert zudem das Profil potenzieller Bedrohungen, indem Sicherheitslücken einer viel größeren, globalen Community zugänglich gemacht werden. Glücklicherweise sind Cloudanbieter mit den geänderten, erhöhten und zusätzlichen Risiken vertraut. Sie investieren in hohem Maße in die Minderung und Bewältigung dieser Risiken im Interesse ihrer Kunden.
 
 Dieser Artikel beschäftigt sich nicht vorrangig mit Cloudrisiken. Er befasst sich vielmehr mit den geschäftlichen Risiken, die mit den verschiedenen Formen der Cloudtransformation in Zusammenhang stehen. Im weiteren Verlauf dieses Artikels verlagert sich der Fokus auf die Diskussion von Möglichkeiten, die Risikotoleranz des Unternehmens zu verstehen.
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="what-business-risks-are-associated-with-a-cloud-transformation"></a>Welche geschäftlichen Risiken sind mit einer Cloudtransformation verbunden?
 

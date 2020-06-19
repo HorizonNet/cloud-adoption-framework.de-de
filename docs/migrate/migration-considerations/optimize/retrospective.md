@@ -7,15 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 00f6b12994b11d0bc1930c71cfa44f64769e3105
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 96ddb1944401990086191be7ceb500c038eb1d2d
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80429100"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787757"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="how-do-retrospectives-help-build-a-growth-mindset"></a>Wie helfen Retrospektiven beim Entwickeln einer wachstumsorientierten Mentalität?
 
 „Die Kultur isst die Strategie zum Frühstück.“ Der beste Migrationsplan kann leicht zunichte gemacht werden, wenn er nicht auf höchster Ebene unterstützt wird. Lernen, Wachsen und sogar Scheitern sind die Kernstücke einer wachstumsorientierten Mentalität. Sie stehen auch im Mittelpunkt jeder Transformation.

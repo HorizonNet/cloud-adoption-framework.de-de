@@ -8,18 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ebad1c02e22f00532ebb1fa0d16fc4b156ea9253
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 3ce9fd30d23bfc72121f1dffc9dbf8edd6b228b6
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755932"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786506"
 ---
 # <a name="motivations-and-business-risks-in-the-resource-consistency-discipline"></a>Motivationen und Geschäftsrisiken in der Disziplin „Ressourcenkonsistenz“
 
 In diesem Artikel werden die Gründe beschrieben, warum Kunden typischerweise eine Disziplin „Ressourcenkonsistenz“ in ihre Cloud Governance-Strategie integrieren. Darüber hinaus werden einige Beispiele für mögliche Geschäftsrisiken aufgeführt, die zu Richtlinienanweisungen führen können.
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="relevance"></a>Relevance
 

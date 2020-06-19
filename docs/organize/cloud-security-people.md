@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: d954d3869edc6f668d4375b87a91d519c50e17d1
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: ac85b955ccc69f981038d38b97873c2db82021da
+ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755394"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84813256"
 ---
 # <a name="people-security-functions-in-the-cloud"></a>Funktionen für Personensicherheit in der Cloud
 
@@ -41,8 +41,6 @@ Personensicherheit geht üblicherweise mit den folgenden Arten von Rollen einher
 - Sicherheitsvorgänge, für Insiderrisiko
 - Physische Sicherheit, für Insiderrisiko
 
-<!-- cSpell:ignore apsec -->
-
 ## <a name="next-steps"></a>Nächste Schritte
 
-Sehen Sie sich die Funktion von [Anwendungssicherheit und DevSecOps](./cloud-security-apsec-devsecops.md) an.
+Sehen Sie sich die Funktion von [Anwendungssicherheit und DevSecOps](./cloud-security-application-security-devsecops.md) an.

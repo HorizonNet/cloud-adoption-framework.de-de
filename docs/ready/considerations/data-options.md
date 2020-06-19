@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 74fc5b90484bbbc8f72568eb83bbca7c8eb25afb
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 36f473f768d499619f2749491bbc7753696cba79
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755799"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84994103"
 ---
 <!-- cSpell:ignore HDFS -->
 
@@ -63,7 +63,7 @@ In der folgenden Tabelle sind einige häufige Anforderungen für Nutzungsszenari
 
 ## <a name="regional-availability"></a>Regionale Verfügbarkeit
 
-Mit Azure können Sie Dienste in der Größenordnung bereitstellen, die Sie benötigen, um Ihre Kunden und Partner zu erreichen, _wo auch immer diese sich befinden_. Ein wichtiger Faktor bei der Planung Ihrer Cloudbereitstellung ist die Ermittlung, in welcher Azure-Region Ihre Workloadressourcen gehostet werden.
+Mit Azure können Sie Dienste in der Größenordnung bereitstellen, die Sie benötigen, um Ihre Kunden und Partner zu erreichen, **wo auch immer diese sich befinden**. Ein wichtiger Faktor bei der Planung Ihrer Cloudbereitstellung ist die Ermittlung, in welcher Azure-Region Ihre Workloadressourcen gehostet werden.
 
 Die meisten Datenbankdienste sind in den meisten Azure-Regionen allgemein verfügbar. Es gibt aber einige Regionen (vor allem für Behörden), in denen nur eine Teilmenge dieser Produkte unterstützt wird. Bevor Sie die Entscheidung treffen, in welchen Regionen Sie Ihre Datenbankressourcen bereitstellen, empfehlen wir Ihnen die [Seite zu den Regionen](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=data-factory,sql-server-stretch-database,redis-cache,database-migration,sql-data-warehouse,postgresql,mariadb,cosmos-db,mysql,sql-database), um den aktuellen Status der regionalen Verfügbarkeit zu überprüfen.
 

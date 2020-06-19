@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 0f85ccbd46587724cba23b859722c4f4fcdc3e88
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: ee7c32a075ffa633d6791b14a1b4c6f0c963073d
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756327"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787553"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
@@ -140,7 +140,7 @@ Die folgende Tabelle enthält Namensmuster für einige Beispieltypen von Azure-R
 ::: zone target="docs"
 
 >[!TIP]
->Verwenden Sie möglichst keine Sonderzeichen (`-` oder `_`) als erstes oder letztes Zeichen eines Namens. Diese Zeichen führen bei den meisten Validierungsregeln zu einem Fehler.
+> Verwenden Sie möglichst keine Sonderzeichen (`-` oder `_`) als erstes oder letztes Zeichen eines Namens. Diese Zeichen führen bei den meisten Validierungsregeln zu einem Fehler.
 
 ::: zone-end
 

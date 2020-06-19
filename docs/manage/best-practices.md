@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 3e1134d6ea4538a6b0f4c26418c0009d3810a25a
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: cc3c7dc19eae0ba6b2aa38c40062e5da2421a770
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216655"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84992957"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>Einrichten von Betriebsverwaltungsverfahren in der Cloud
 
@@ -35,7 +35,7 @@ Mit beiden bewährten Methoden wird auf eine künftige angestrebte Methodik für
 
 **Geschäftliche Ausrichtung:** In der Verwaltungsmethodik werden alle Workloads nach Wichtigkeit und Geschäftswert klassifiziert. Diese Klassifizierung kann dann durch eine Auswirkungsanalyse gemessen werden, die den mit Leistungseinbußen oder Betriebsunterbrechungen verbundenen Verlustwert berechnet. Mit diesen konkreten Umsatzauswirkungen können Cloudbetriebsteams mit dem Unternehmen zusammenarbeiten, um eine Zusage zu machen, die Kosten und Leistung in Einklang bringt.
 
-**Disziplinen für den Cloudbetrieb:** Nachdem das Unternehmen ausgerichtet wurde, ist es viel einfacher, die richtigen Disziplinen des Cloudbetriebs für die einzelnen Workloads nachzuverfolgen und Berichte dazu zu erstellen. Die Entscheidungen in jeder Disziplin können dann in Zusagebedingungen umgewandelt werden, die für das Unternehmen leicht verständlich sind. Dieser kooperative Ansatz macht den Geschäftsbeteiligten zu einem Partner bei der Suche nach dem richtigen Verhältnis von Kosten und Leistung.
+**Disziplinen für den Cloudbetrieb:** Nachdem das Unternehmen ausgerichtet wurde, ist es viel einfacher, die richtigen Disziplinen des Cloudbetriebs für die einzelnen Workloads nachzuverfolgen und Berichte dazu zu erstellen. Die Entscheidungen in jeder Disziplin können dann in Zusagebedingungen umgewandelt werden, die für das Unternehmen leicht verständlich sind. Dieser kooperative Ansatz macht den Geschäftsbeteiligten zu einem Partner bei der Suche nach dem richtigen Verhältnis zwischen Kosten und Leistung.
 
 - **Bestand und Transparenz:** Betriebsverwaltung erfordert mindestens ein Mittel zur Bestandsaufnahme von Ressourcen und zur Schaffung von Transparenz über den Ausführungsstatus jeder Ressource.
 - **Betriebsbezogene Compliance:** Eine regelmäßige Verwaltung von Konfiguration, Größe, Kosten und Leistung von Ressourcen ist für die Erfüllung der Leistungserwartungen unverzichtbar.

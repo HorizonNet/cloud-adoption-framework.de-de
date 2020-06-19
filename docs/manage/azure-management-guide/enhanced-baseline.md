@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 4d17c8fe7251a4ce5281f94d8776ba5ceaddd181
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 0086b76c93a6a1491b7715ca568a43bdc40c1ab0
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621232"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84992863"
 ---
 <!-- cSpell:ignore ITSMC -->
 
@@ -22,7 +22,7 @@ ms.locfileid: "83621232"
 
 In den ersten drei Disziplinen der Cloudverwaltung wird eine Verwaltungsbaseline beschrieben. In den vorangehenden Artikeln dieses Leitfadens wurde ein MVP (Minimum Viable Product) für Cloudverwaltungsdienste erläutert, das als Verwaltungsbaseline bezeichnet wird. Dieser Artikel beschreibt einige allgemeine Verbesserungen der Baseline.
 
-Der Zweck einer Verwaltungsbaseline besteht darin, ein stimmiges Angebot zu schaffen, das für _alle_ unterstützten Workloads ein Mindestmaß an geschäftlicher Verpflichtung vorsieht. Diese Baseline für allgemeine, wiederholbare Verwaltungsangebote ermöglicht es dem Team, eine äußerst optimierte Betriebsführung mit nur minimalen Abweichungen zu gewährleisten.
+Der Zweck einer Verwaltungsbaseline besteht darin, ein stimmiges Angebot zu schaffen, das für **alle** unterstützten Workloads ein Mindestmaß an geschäftlicher Verpflichtung vorsieht. Diese Baseline für allgemeine, wiederholbare Verwaltungsangebote ermöglicht es dem Team, eine äußerst optimierte Betriebsführung mit nur minimalen Abweichungen zu gewährleisten.
 
 Möglicherweise ist jedoch eine größere Verpflichtung für das Unternehmen erforderlich, die über das Standardangebot hinausgeht. Die folgende Abbildung und Liste skizzieren drei Möglichkeiten, um über die Verwaltungsbaseline hinauszugehen.
 

@@ -7,15 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 8dba91bf7bd87395d3b5c55cf99480f8c6a54bd4
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 8546e1a86c39f286e30a2a476242a626b85c69a0
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221449"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787264"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="how-will-global-market-decisions-affect-the-transformation-journey"></a>Wie wirken sich globale Marktentscheidungen auf die Transformationsjourney aus?
 
 Die Cloud eröffnet ganz neue Möglichkeiten – und zwar auf globaler Ebene. Es gibt sehr viel weniger Hürden für globale Vorgänge, sodass Unternehmen Ressourcen für einen Markt bereitstellen können, ohne große Investitionen in neue Rechenzentren vornehmen zu müssen. Leider führt dies auch zu erheblich mehr Komplexität aus technischer und rechtlicher Sicht.
