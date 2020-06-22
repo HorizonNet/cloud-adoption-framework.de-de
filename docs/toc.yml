@@ -99,6 +99,8 @@ items:
             href: strategy/global-markets.md
           - name: Definieren der Sicherheitsstrategie
             href: strategy/define-security-strategy.md
+          - name: Definieren der Überwachungsstrategie
+            href: strategy/monitoring-strategy.md
       - name: Für die Strategie relevante Qualifikationen
         href: strategy/suggested-skills.md
   - name: Planen

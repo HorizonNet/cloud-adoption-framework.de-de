@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 2865f9a7ceb6d20828e76ad4da3a7ae5ebd81ba3
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: dac89280547cf219ad604d7c6dce609979100520
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83753488"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075863"
 ---
 <!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
 
@@ -68,7 +68,7 @@ Verwenden Sie im Rahmen Ihres Planungsprozesses die folgenden Fragen, um festzus
 - Müssen Ihre Benennungs- und Markierungsrichtlinien in vorhandene Benennungs- und Organisationsrichtlinien innerhalb Ihres Unternehmens integriert werden?
 - Werden Sie ein Abrechnungssystem mit verbrauchsbasierter Kostenzuteilung implementieren? Müssen Sie Ressourcen zu Buchhaltungsinformationen für Abteilungen, Geschäftsbereiche und Teams zuordnen, die über eine einfache Aufschlüsselung auf der Abonnementebene hinausgehen?
 - Muss die Markierung Details wie Anforderungen zur Einhaltung gesetzlicher Bestimmungen für eine Ressource darstellen? Wie sieht es mit betriebsbezogenen Details wie Anforderungen an die Betriebszeiten, Zeitpläne für Patches oder Sicherheitsanforderungen aus?
-- Welche Tags sind für alle Ressourcen basierend auf der zentralen IT-Richtlinie erforderlich? Welche Tags werden optional sein? Dürfen einzelne Teams eigene benutzerdefinierte Markierungsschemas implementieren?
+- Welche Tags sind für alle Ressourcen basierend auf der zentralisierten IT-Richtlinie erforderlich? Welche Tags werden optional sein? Dürfen einzelne Teams eigene benutzerdefinierte Markierungsschemas implementieren?
 
 Die unten aufgeführten allgemeinen Markierungsmuster zeigen beispielhaft, wie das Markieren zum Organisieren von Cloudressourcen verwendet werden kann. Diese Muster sind nicht als exklusiv gedacht und können parallel verwendet werden, wodurch sich mehrere Möglichkeiten der Organisation von Ressourcen auf der Grundlage der Anforderungen Ihres Unternehmens ergeben.
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 490aec877e4a841cc746da8e2fa712da8d7e10b1
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 3be6a82c2538d20cd147bb5be03bfaf10c67015f
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621497"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076865"
 ---
 # <a name="manage-organizational-alignment"></a>Verwalten der Organisationsausrichtung
 
@@ -47,7 +47,7 @@ Im Folgenden finden Sie eine Liste der Funktionen, die für eine erfolgreiche Ei
 - [Cloudstrategie](./cloud-strategy.md): Ausrichten von technischen Änderungen an Geschäftsanforderungen
 - [Cloudeinführung](./cloud-adoption.md): Bereitstellen von technischen Lösungen
 - [Cloudgovernance](./cloud-governance.md): Risikomanagement
-- [Zentrale IT-Abteilung](./central-it.md): Unterstützung durch vorhandene IT-Mitarbeiter
+- [Zentrales IT-Team:](./central-it.md) Unterstützung durch vorhandene IT-Mitarbeiter
 - [Cloudbetrieb](./cloud-operations.md): Unterstützung und Betrieb von eingeführten Lösungen
 - [Cloudkompetenzzentrum](./cloud-center-of-excellence.md): Verbessern der Qualität, Geschwindigkeit und Resilienz der Einführung
 - [Cloudplattform](./cloud-platform.md): Betrieb und Ausreifung der Plattform

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: f7675852a6d9b59e0d06873fee028b701dc729e3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f7196c8348c7559cec2c5544cb7a4bb0223778f6
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215052"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076673"
 ---
 # <a name="subscription-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Abonnements
 
@@ -48,14 +48,14 @@ Wenn eine Organisation der Cloud neue Workloads hinzufügt, können unterschiedl
 
 ### <a name="application-category-strategy"></a>Auf Anwendungskategorien basierende Strategie
 
-Mit zunehmender Cloudnutzung einer Organisation werden in der Regel weitere Abonnements hinzugefügt, um Anwendungen zu unterstützen, die sich in puncto geschäftliche Bedeutung, Konformitätsanforderungen, Zugriffssteuerung oder Datenschutzanforderungen erheblich unterscheiden. Die Abonnements zur Unterstützung dieser Anwendungskategorien orientieren sich an den anfänglichen Produktions- und Nichtproduktionsabonnements und sind entweder in der Produktions- oder in der Nichtproduktionsverwaltungsgruppe organisiert. Diese Abonnements befinden sich in der Regel im Besitz der zentralen IT-Abteilung und werden von den entsprechenden Mitarbeitern verwaltet.
+Mit zunehmender Cloudnutzung einer Organisation werden in der Regel weitere Abonnements hinzugefügt, um Anwendungen zu unterstützen, die sich in puncto geschäftliche Bedeutung, Konformitätsanforderungen, Zugriffssteuerung oder Datenschutzanforderungen erheblich unterscheiden. Die Abonnements zur Unterstützung dieser Anwendungskategorien orientieren sich an den anfänglichen Produktions- und Nichtproduktionsabonnements und sind entweder in der Produktions- oder in der Nichtproduktionsverwaltungsgruppe organisiert. Diese Abonnements befinden sich in der Regel im Besitz eines zentralen IT-Teams und werden von den entsprechenden Mitarbeitern verwaltet.
 
 ![Auf Anwendungskategorien basierende Strategie](../../_images\decision-guides\decision-guide-subscriptions-hierarchy.png)
 
 Jede Organisation kategorisiert ihre Anwendungen anders. Oftmals werden Abonnements basierend auf bestimmten Anwendungen oder Diensten oder nach Anwendungsarchetypen getrennt. Diese Kategorisierung dient häufig zur Unterstützung von Workloads, die voraussichtlich einen Großteil der begrenzten Ressourcen eines Abonnements beanspruchen, oder zur Trennung unternehmenskritischer Workloads, um sicherzustellen, dass sie nicht mit anderen Workloads um diese begrenzten Ressourcen konkurrieren. In Anschluss folgen einige Workloads, die ein separates Abonnement rechtfertigen:
 
 - Unternehmenskritische Workloads
-- Anwendungen, die in Ihrem Unternehmen Teil der _Umsatzkosten_ (Cost Of Goods Sold, COGS) sind. Beispiel: Jede Instanz des Widgets von Unternehmen X enthält ein Azure IoT-Modul, das Telemetriedaten sendet. Dies erfordert unter Umständen ein dediziertes Abonnement zu Buchhaltungs-/Governancezwecken im Rahmen von COGS.
+- Anwendungen, die in Ihrem Unternehmen Teil der Umsatzkosten (Cost Of Goods Sold, COGS) sind. Beispiel: Jedes von einem Unternehmen hergestellte Widget enthält ein Azure IoT-Modul, das Telemetriedaten sendet. Dies erfordert unter Umständen ein dediziertes Abonnement zu Buchhaltungs- oder Governancezwecken im Rahmen von COGS.
 - Anwendungen, die behördlichen Anforderungen wie HIPAA oder FedRAMP unterliegen.
 
 ### <a name="functional-strategy"></a>Funktionale Strategie

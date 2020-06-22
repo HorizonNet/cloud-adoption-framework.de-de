@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 3c89c5347032d0dcec68344066ac00028fedb7bd
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: c9a4a7759388dcbd812e26a482c18a1e48de67eb
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83753791"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075925"
 ---
 <!-- cSpell:ignore Kerberos NTLM SAML -->
 
@@ -79,7 +79,7 @@ Angenommen, Sie haben Workloads, die von einer anspruchsbasierten Authentifizier
 
 Dieses Muster erfordert die Bereitstellung virtueller Computer mit ausgeführtem Active Directory in Ihren cloudbasierten virtuellen Netzwerken, um Active Directory Domain Services (AD DS) für Ressourcen in der Cloud bereitzustellen. Alle bestehenden Anwendungen und Dienste, die in Ihr Cloudnetzwerk migrieren, sollten in der Lage sein, nach geringfügigen Änderungen diese von der Cloud gehosteten Verzeichnisserver zu nutzen.
 
-Es ist wahrscheinlich, dass Ihre bestehenden Verzeichnisse und Domänendienste weiterhin in Ihrer lokalen Umgebung verwendet werden. In diesem Szenario wird empfohlen, dass Sie auch die Verzeichnissynchronisierung verwenden, um einen gemeinsamen Satz von Benutzern und Rollen sowohl in der Cloud- als auch in der lokalen Umgebung bereitzustellen.
+Es ist wahrscheinlich, dass Ihre bestehenden Verzeichnisse und Domänendienste weiterhin in Ihrer lokalen Umgebung verwendet werden. In diesem Szenario sollten Sie auch die Verzeichnissynchronisierung verwenden, um einen gemeinsamen Satz von Benutzern und Rollen sowohl in der Cloudumgebung als auch in der lokalen Umgebung bereitzustellen.
 
 **Annahmen für in der Cloud gehostete Domänendienste:** Für eine Verzeichnismigration wird Folgendes angenommen:
 

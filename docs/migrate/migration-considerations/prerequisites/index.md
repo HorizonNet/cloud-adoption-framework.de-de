@@ -7,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 500df8bb2ff239a34b2eb87dbe9f6eb2f215c005
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1ab9dc80830c40754cbd68dbd4f39242f3204676
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222078"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84994146"
 ---
 # <a name="prerequisites-for-migration"></a>Voraussetzungen für die Migration
 
-Bevor Sie mit der Migration beginnen, muss die _Umgebung_ Ihres Migrationsziels auf die bevorstehenden Änderungen vorbereitet werden. In diesem Fall bezieht sich die Umgebung auf die technische Grundlage in der Cloud. Umwelt umfasst auch das Geschäftsumfeld und die Einstellung, die die Migration vorantreibt. Ebenso umfasst die Umgebung die Kultur der Teams, die die Änderungen durchführen und die die Ergebnisse erhalten. Mangelnde Vorbereitung auf diese Änderungen ist der häufigste Grund für Fehler bei Migrationen. Diese Artikelreihe führt Sie durch die empfohlenen Voraussetzungen für die Vorbereitung der Umgebung.
+Bevor Sie mit der Migration beginnen, muss die Umgebung Ihres Migrationsziels auf die bevorstehenden Änderungen vorbereitet werden. In diesem Fall bezieht sich _Umgebung_ auf die technische Grundlage in der Cloud. Umwelt umfasst auch das Geschäftsumfeld und die Einstellung, die die Migration vorantreibt. Ebenso umfasst die Umgebung die Kultur der Teams, die die Änderungen durchführen und die die Ergebnisse erhalten. Mangelnde Vorbereitung auf diese Änderungen ist der häufigste Grund für Fehler bei Migrationen. Diese Artikelreihe führt Sie durch die empfohlenen Voraussetzungen für die Vorbereitung der Umgebung.
 
 ## <a name="objective"></a>Ziel
 

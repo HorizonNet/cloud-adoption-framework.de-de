@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 85144ae698427ad81cad9516f28a5102b8bdedba
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: f8f45a16e3699977dce152a06c563844d83b4b1b
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786278"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075520"
 ---
 # <a name="cloud-governance-guides"></a>Cloudgovernance-Leitfäden
 
@@ -86,7 +86,7 @@ Mit der [CAF-Zielzone auf Unternehmensebene](../../ready/enterprise-scale/index.
 
 Im Vergleich zu herkömmlichen lokalen Umgebungen ermöglicht Azure es Workload-Entwicklungsteams und ihren Geschäftssponsoren, die Vorteile der erhöhten Bereitstellungsagilität von Cloudplattformen zu nutzen. Da sich Ihre Bemühungen zur Cloudeinführung auf unternehmenskritische Daten und Workloads ausdehnen, kann diese Agilität im Widerspruch zu den von Ihren IT-Teams festgelegten Anforderungen an Unternehmenssicherheit und Richtlinieneinhaltung stehen. Dies gilt insbesondere für große Unternehmen, in denen bereits ausgereifte Governance- und Regulierungsanforderungen vorhanden sind.
 
-Die Architektur einer CAF-Zielzone auf Unternehmensebene ist darauf ausgelegt, diese Aspekte im Lebenszyklus der Einführung frühzeitig zu berücksichtigen. Dazu werden Architekturen, Implementierungen und Anleitungen bereitgestellt, um während der Enterprise Cloud-Einführung ein Gleichgewicht zwischen Cloudeinführungsteams und zentralen IT-Governanceanforderungen zu erzielen. Im Mittelpunkt dieses Ansatzes steht das Konzept einer Shared Services-Architektur und gut verwalteter Zielzonen.
+Die Architektur einer CAF-Zielzone auf Unternehmensebene ist darauf ausgelegt, diese Aspekte im Lebenszyklus der Einführung frühzeitig zu berücksichtigen. Dazu werden Architekturen, Implementierungen und Anleitungen bereitgestellt, um während der Enterprise Cloud-Einführung ein Gleichgewicht zwischen den Anforderungen der Cloudeinführungsteams und des zentralen IT-Teams zu erzielen. Im Mittelpunkt dieses Ansatzes steht das Konzept einer Shared Services-Architektur und gut verwalteter Zielzonen.
 
 Eine CAF-Zielzone auf Unternehmensebene stellt Ihre eigene isolierte Cloud innerhalb der Azure-Plattform bereit, die Managementprozesse, gesetzliche Anforderungen und Sicherheitsprozesse integriert, die von Ihren Governancerichtlinien gefordert werden. Innerhalb dieser virtuellen Grenze bietet die CAF-Zielzone auf Unternehmensebene Beispielmodelle für die Bereitstellung von Workloads bei gleichzeitiger Sicherstellung einer konsistenten Compliance sowie grundlegende Hinweise zur Implementierung der Trennung von Rollen und Verantwortlichkeiten einer Organisation in der Cloud.
 
@@ -99,7 +99,7 @@ Beim Ansatz der [CAF-Zielzone auf Unternehmensebene](../../ready/enterprise-scal
 Bei Organisationen, die die folgenden Kriterien erfüllen, können Sie ebenfalls mit der [CAF-Zielzone auf Unternehmensebene](../../ready/enterprise-scale/index.md) beginnen:
 
 - Ihr Unternehmen unterliegt gesetzlichen Bestimmungen, die eine zentrale Überwachung erfordern.
-- Sie müssen die Einhaltung allgemeiner Richtlinien und Governancebestimmungen sowie die zentrale IT-Kontrolle über die wichtigsten Dienste sicherstellen.
+- Sie müssen die Einhaltung allgemeiner Richtlinien und Governancebestimmungen sowie die zentralisierte IT-Kontrolle über die wichtigsten Dienste sicherstellen.
 - Ihre Branche hängt von einer komplexen Plattform ab, die umfassende Steuerungsmechanismen und tiefgehendes Fachwissen erfordert. Dies ist am häufigsten bei großen Unternehmen in den Bereichen Finanzen, Herstellung, und Öl und Gas der Fall.
 - Ihre bestehenden IT-Governancerichtlinien erfordern eine engere Parität mit bestehenden Funktionen, auch in frühen Phasen der Einführung.
 
