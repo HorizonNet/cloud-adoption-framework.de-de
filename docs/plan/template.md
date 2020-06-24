@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: cb0b963b68fbad8d883e7cbbfd107cc774136ad0
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: c25279222a0a1dbd9531ffe6e941e1ffc1046051
+ms.sourcegitcommit: b94dab2545384e44650136b17dc9f708ccdc3c7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401082"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "85195095"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Cloudeinführungsplan und Azure DevOps
 
@@ -39,6 +39,8 @@ Weitere Unterstützung und Anleitungen für dieses Tool finden Sie unter [Azure 
 Wenn das Planprojekt bereitgestellt wurde, können Sie es mithilfe von Microsoft Excel ändern. Mit Microsoft Excel können Sie neue Workloads oder Ressourcen wesentlich einfacher im Plan erstellen als mithilfe der Azure DevOps-Browseroberfläche.
 
 Wenn Sie Ihre Arbeitsstation für die Massenbearbeitung vorbereiten möchten, lesen Sie [Massenhinzufügen oder -bearbeiten von Arbeitselementen mit Microsoft Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
+
+Einige Benutzer möchten ggf. Project verwenden, um ihre Aufgaben nachzuverfolgen, ein Backlog zu erstellen und Ressourcen zuzuweisen. Die Schritte zum Verbinden von Project mit Azure DevOps finden Sie [hier](https://docs.microsoft.com/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project?view=tfs-2018).
 
 ## <a name="use-the-cloud-adoption-plan"></a>Verwenden des Cloudeinführungsplans
 
