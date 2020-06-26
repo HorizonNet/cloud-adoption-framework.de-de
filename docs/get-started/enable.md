@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 54ea9341cfcd5064a6cae737f302ef03736f21af
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 8eaded2f79ce16e2dfa0bc5730093abfd2e5ee32
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83752863"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786091"
 ---
 # <a name="enable-customer-success-with-a-sound-operating-model"></a>Ermöglichen des Kundenerfolgs mit einem soliden Betriebsmodell
 
@@ -45,7 +45,7 @@ Die grundlegenden Prinzipien eines gut verwalteten Betriebsmodells basieren auf 
 
 ![Gemeinsame Architekturprinzipien](../_images/shared-principles.png)
 
-[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview), das [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) und die Lösungen im [Azure Architecture Center](https://docs.microsoft.com/azure/architecture) beruhen auf den oben genannten Prinzipien.
+[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview), das [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) und die Lösungen im [Azure Architecture Center](https://docs.microsoft.com/azure/architecture) beruhen auf diesen Prinzipien.
 
 - [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) wertet die Prinzipien für einzelne Ressourcen über Lösungen, Workloads und das gesamte Portfolio hinweg aus.
 - [Azure Architecture Center](https://docs.microsoft.com/azure/architecture) wendet diese Prinzipien an, um bestimmte technische Lösungen zu entwickeln und zu verwalten.

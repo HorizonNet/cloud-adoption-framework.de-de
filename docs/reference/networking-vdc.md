@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 7fc85776fee5078b17fc9e7d91b184d2ba550a66
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: db7f16e8a283e5b5c7b786ef7097584b85109330
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862686"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85077227"
 ---
 <!-- docsTest:disable TODO -->
 <!-- cSpell:ignore tracsman jonor rossort NVAs iptables WAFs DDOS ITSM LLAP anycast vwan -->
@@ -26,8 +26,6 @@ Anwendungen, die aus einer lokalen Umgebung migriert werden, profitieren von der
 Microsoft Azure stellt Dienste mit Hyperskalierung und Infrastruktur mit Funktionen und Zuverlässigkeit auf Unternehmensniveau bereit. Mit diesen Diensten und der Infrastruktur haben Sie viele Möglichkeiten in Bezug auf die Hybridkonnektivität, sodass Kunden die Wahl haben, ob sie über das Internet oder über eine private Netzwerkverbindung darauf zugreifen möchten. Außerdem können Microsoft-Partner erweiterte Funktionen in Form von Sicherheitsdiensten und virtuellen Geräten anbieten, die für die Verwendung in Azure optimiert sind.
 
 Mit Azure können Kunden ihre Infrastruktur nahtlos auf die Cloud ausdehnen und Architekturen mit mehreren Ebenen erstellen.
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="what-is-a-virtual-datacenter"></a>Was ist ein virtuelles Rechenzentrum?
 
@@ -191,11 +189,11 @@ Der Name jeder Rollengruppe sollte ein eindeutiges Präfix aufweisen. Anhand die
 
 Viele Organisationen verwenden in etwa die folgenden Gruppen, um Rollen bereitzustellen:
 
-- Die zentrale IT-Gruppe **Corp** verfügt über die Besitzrechte zum Steuern von Infrastrukturkomponenten. Beispiele hierfür sind Netzwerke und die Sicherheit. Der Gruppe muss über die Rolle „Mitwirkender“ für das Abonnement, die Kontrolle über den Hub und die Rechte eines Mitwirkenden des virtuellen Netzwerks in den Spokes verfügen. Große Unternehmen teilen diese Verwaltungsaufgaben häufig zwischen mehreren Teams auf, beispielsweise zwischen einer Gruppe für Netzwerkvorgänge **CorpNetOps**, die sich ausschließlich um den Netzwerkbetrieb kümmert, und einer Gruppe für Sicherheitsvorgänge **CorpSecOps**, die für die Firewall- und Sicherheitsrichtlinien verantwortlich ist. In diesem speziellen Fall müssen zwei unterschiedliche Gruppen für die Zuweisung dieser benutzerdefinierten Rollen erstellt werden.
+- Das zentrale IT-Team **Corp** verfügt über die Besitzrechte zum Steuern von Infrastrukturkomponenten. Beispiele hierfür sind Netzwerke und die Sicherheit. Der Gruppe muss über die Rolle „Mitwirkender“ für das Abonnement, die Kontrolle über den Hub und die Rechte eines Mitwirkenden des virtuellen Netzwerks in den Spokes verfügen. Große Unternehmen teilen diese Verwaltungsaufgaben häufig zwischen mehreren Teams auf, beispielsweise zwischen einer Gruppe für Netzwerkvorgänge **CorpNetOps**, die sich ausschließlich um den Netzwerkbetrieb kümmert, und einer Gruppe für Sicherheitsvorgänge **CorpSecOps**, die für die Firewall- und Sicherheitsrichtlinien verantwortlich ist. In diesem speziellen Fall müssen zwei unterschiedliche Gruppen für die Zuweisung dieser benutzerdefinierten Rollen erstellt werden.
 - Die für die Entwicklung und Tests zuständige Gruppe **AppDevOps** ist für die Bereitstellung von App- oder Dienstworkloads verantwortlich. Diese Gruppe übernimmt die Rolle des VM-Mitwirkenden für IaaS-Bereitstellungen oder eine oder mehrere Rollen von PaaS-Mitwirkenden. Informationen dazu finden Sie unter [Integrierte Rollen für die rollenbasierte Zugriffssteuerung in Azure][Roles]. Optional benötigt das Entwicklungs- und Testteam möglicherweise Einblick in Sicherheitsrichtlinien (Netzwerksicherheitsgruppen) und Routingrichtlinien (benutzerdefinierte Routen) im Hub oder einem bestimmte Spoke. Zusätzlich zur Rolle des Mitwirkenden für Workloads benötigt diese Gruppe auch die Rolle des Netzwerklesers.
 - Die Betriebs- und Wartungsgruppe **CorpInfraOps** oder **AppInfraOps** ist für die Verwaltung von Workloads in der Produktion zuständig. Diese Gruppe muss ein Mitwirkender des Abonnements von Workloads in jedem Produktionsabonnement sein. Manche Organisationen sollten zudem prüfen, ob sie ein zusätzliches Team für den Eskalationssupport mit der Rolle des Mitwirkenden des Abonnements in der Produktion und im zentralen Hub-Abonnement benötigen. Diese zusätzliche Gruppe behebt potenzielle Konfigurationsprobleme in der Produktionsumgebung.
 
-Das virtuelle Rechenzentrum ist so ausgelegt, dass es für Gruppen, die für zentrale IT-Gruppen zur Verwaltung des Hubs erstellt wurden, entsprechende Gruppen auf Workloadebene gibt. Zusätzlich zur Verwaltung der Hub-Ressourcen können nur die zentralen IT-Gruppen den externen Zugriff und die Berechtigungen auf oberster Ebene für das Abonnement steuern. Workloadgruppen sind ebenfalls in der Lage, Ressourcen und Berechtigungen ihres eigenen virtuellen Netzwerks unabhängig von der zentralen IT zu steuern.
+Das virtuelle Rechenzentrum ist so ausgelegt, dass es für Gruppen, die für zentrale IT-Teams zur Verwaltung des Hubs erstellt wurden, entsprechende Gruppen auf Workloadebene gibt. Zusätzlich zur Verwaltung der Hub-Ressourcen können nur die zentralen IT-Teams den externen Zugriff und die Berechtigungen auf oberster Ebene für das Abonnement steuern. Workloadgruppen sind ebenfalls in der Lage, Ressourcen und Berechtigungen ihres eigenen virtuellen Netzwerks unabhängig vom zentralen IT-Team zu steuern.
 
 Das virtuelle Rechenzentrum ist partitioniert, damit mehrere Projekte in unterschiedlichen Branchenanwendungen sicher gehostet werden können. Alle Projekte erfordern unterschiedliche isolierte Umgebungen (Dev, UAT und Produktion). Einzelne Azure-Abonnements für jede dieser Umgebungen können natürliche Isolationsstufen darstellen.
 
@@ -207,7 +205,7 @@ In der Regel ist eine Umgebung (oder Ebene) in der IT ein System, in dem mehrere
 
 Eine übliche Architektur für diese Arten von Umgebungen mit mehreren Ebenen besteht aus einer DevOps-Umgebung für Entwicklung und Tests, einer UAT-Umgebung für das Staging und einer Produktionsumgebung. Organisationen können einzelne oder mehrere Azure AD-Mandanten nutzen, um Zugriff auf und Rechte für diese Umgebungen zu definieren. Die vorherige Abbildung veranschaulicht die Verwendung von zwei verschiedenen Azure AD-Mandanten: einen für DevOps und UAT und der andere ausschließlich für die Produktion.
 
-Wenn mehrere Azure AD-Mandanten vorhanden sind, müssen die Umgebungen getrennt werden. Für den Zugriff auf einen anderen Azure AD-Mandanten muss sich dieselbe Benutzergruppe (z. B. die zentrale IT) mit einem anderen URI authentifizieren, um die Rollen oder Berechtigungen der DevOps-Umgebung oder der Produktionsumgebung eines Projekts zu ändern. Die Verwendung unterschiedlicher Benutzerauthentifizierungen für den Zugriff auf verschiedene Umgebungen reduziert das Risiko möglicher Ausfälle und anderer Probleme durch menschliches Versagen.
+Wenn mehrere Azure AD-Mandanten vorhanden sind, müssen die Umgebungen getrennt werden. Für den Zugriff auf einen anderen Azure AD-Mandanten muss sich dieselbe Benutzergruppe (z.B. das zentrale IT-Team) mit einem anderen URI authentifizieren, um die Rollen oder Berechtigungen der DevOps-Umgebung oder der Produktionsumgebung eines Projekts zu ändern. Die Verwendung unterschiedlicher Benutzerauthentifizierungen für den Zugriff auf verschiedene Umgebungen reduziert das Risiko möglicher Ausfälle und anderer Probleme durch menschliches Versagen.
 
 #### <a name="component-type-infrastructure"></a>Komponententyp: Infrastruktur
 
@@ -251,7 +249,7 @@ Komponenten des Umkreisnetzwerks:
 - [Azure Firewall][AzFW] und [Azure Firewall Manager][AzFWMgr]
 - [DDoS Protection Standard][DDoS]
 
-In der Regel sind die zentralen IT- und Sicherheitsteams für die Anforderungsdefinition und die Vorgänge in den Umkreisnetzwerken verantwortlich.
+In der Regel sind das zentrale IT-Team und die Sicherheitsteams für die Anforderungsdefinition und die Vorgänge in den Umkreisnetzwerken verantwortlich.
 
 ![7][7]
 

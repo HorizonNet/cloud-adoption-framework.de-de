@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: f27ca49738a987780729b9354e9a4653d5ecafcd
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 1129098d5a99defd309c4a252991e31be623808f
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83814238"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075854"
 ---
 # <a name="get-started-build-a-cloud-governance-team"></a>Erste Schritte: Aufstellen eines Cloudgovernanceteams
 
@@ -49,7 +49,7 @@ Bevor es Richtlinien oder automatisierte Cloudgovernance festlegt, sollte das Cl
 
 **Ziele:**
 
-- Besprechen Sie den aktuellen Zustand der Implementierung und die Pläne zur laufenden Einführung mit jedem Team.
+- Besprechen des aktuellen Zustands der Implementierung und der Pläne zur laufenden Einführung mit jedem Team.
 
 **Hinweis zur Erreichung der Ziele:**
 
@@ -70,7 +70,7 @@ Die Cloudeinführung erfolgt normalerweise in mehreren Wellen bzw. Releases. Ein
 
 **Ziele:**
 
-- Etablieren Sie einen gemeinsamen Rhythmus mit den unterstützenden Teams. Stimmen Sie diesen Rhythmus nach Möglichkeit auf die Release- und Planungszyklen ab.
+- Etablieren eines gemeinsamen Rhythmus mit den unterstützenden Teams. Stimmen Sie diesen Rhythmus nach Möglichkeit auf die Release- und Planungszyklen ab.
 - Legen Sie einen separaten Rhythmus direkt mit dem Cloudstrategieteam (bzw. einzelnen Teammitgliedern) fest, nach dem die Risiken der nächsten Welle der Einführung überprüft werden, und ermitteln Sie die Toleranz des Teams in Bezug auf diese Risiken.
 
 **Hinweis zur Erreichung der Ziele:**

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e11fb95356f4f7364b544e896a4566b1a3188e85
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 9bcd56e88d0f15db38b78b43f8d9b0ce16f02e44
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83754454"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993018"
 ---
 # <a name="identity-baseline-metrics-indicators-and-risk-tolerance"></a>Metriken, Indikatoren und Risikotoleranz für die Identitätsbaseline
 
@@ -52,7 +52,7 @@ Legen Sie nach der Einigung auf eine Baseline minimale Benchmarks fest, die eine
 - **Trigger durch in der Cloud gehostete Verzeichnisdienste.** Ein Unternehmen, das _x_ virtuelle Active Directory-Servercomputer (VMs) in der Cloud hostet oder _x_ Organisationseinheiten (OUs) auf diesen cloudbasierten Servern verwaltet, kann durch die Investition in die Disziplin „Identitätsbaseline“ profitieren, um die Integration in lokale oder andere externe Identitätsdienste zu optimieren.
 - **Trigger durch Verbund.** Ein Unternehmen, das einen Identitätsverbund mit _x_ externen Identitätsverwaltungsystemen implementiert, kann von einer Investition in die Disziplin „Identitätsbaseline“ profitieren, um eine konsistente, organisationsweite Richtlinie für alle Verbundmitglieder sicherzustellen.
 - **Trigger durch erhöhte Zugriffsrechte.** Ein Unternehmen, in dem mehr als _x %_ der Benutzer erweiterte Zugriffsrechte für Verwaltungstools und Ressourcen besitzen, sollte eine Investition in die Disziplin „Identitätsbaseline“ in Betracht ziehen, um das Risiko einer unbeabsichtigten übermäßigen Zugriffsbereitstellung für Benutzer zu mindern.
-- **Trigger durch RBAC.** Ein Unternehmen, in dem weniger als _x %_ der Ressourcen die Methoden der rollenbasierten Zugriffssteuerung verwenden, sollte eine Investition in die Disziplin „Identitätsbaseline“ in Betracht ziehen, um optimierte Möglichkeiten für die Zuweisung des Benutzerzugriffs für Ressourcen zu identifizieren.
+- **Trigger durch RBAC.** Ein Unternehmen, in dem weniger als _x %_ der Ressourcen die Methoden der rollenbasierten Zugriffssteuerung verwenden, sollte eine Investition in die Disziplin „Identitätsbaseline“ in Betracht ziehen, um optimierte Möglichkeiten für die Zuweisung des Benutzerzugriffs für Ressourcen zu identifizieren.
 - **Trigger durch Authentifizierungsfehler.** Ein Unternehmen, in dem bei mehr als _x Prozent_ der Versuche Authentifizierungsfehler auftreten, sollten in die Disziplin „Identitätsbaseline“ investieren, um sicherzustellen, dass die Authentifizierungsmethoden keinen externen Angriffen ausgesetzt sind und dass sich Benutzer ordnungsgemäß authentifizieren können.
 - **Trigger durch Autorisierungsfehler.** Ein Unternehmen, in dem Zugriffsversuche in mehr als _x %_ der Zeit abgelehnt werden, sollten in die Disziplin „Identitätsbaseline“ investieren, um die Anwendung und Aktualisierung der Zugangssteuerung zu verbessern und potenziell böswillige Zugriffsversuche zu identifizieren.
 - **Trigger durch kompromittierte Konten.** Ein Unternehmen mit mehreren kompromittierten Konten sollte in die Disziplin „Identitätsbaseline“ investieren, um sowohl die Sicherheit von Authentifizierungsmechanismen zu erhöhen als auch die Mechanismen zur Minimierung von Risiken im Zusammenhang mit kompromittierten Konten zu verbessern.

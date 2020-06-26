@@ -1,19 +1,18 @@
 ---
 title: Umgestalten von Zielzonen
-titleSuffix: Microsoft Cloud Adoption Framework for Azure
-description: Prozess zum Refactoring von Zielzonen
+description: Prozess zum Refactoring von Zielzonen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b7be19e3d17f55a30d7c544c660b3a417247fd8a
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 2252b1c575c3fa853d0da05e75c964a63cfb3285
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755685"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075022"
 ---
 # <a name="refactor-landing-zones"></a>Umgestalten von Zielzonen
 
@@ -31,11 +30,11 @@ Die beiden primären Hindernisse sind in einer Überzeugung verwurzelt: Die Clou
 
 ### <a name="blocker-acting-too-soon"></a>Hindernis: Zu frühes Handeln
 
-Es bedurfte Jahre und erheblicher Anstrengungen, um den aktuellen Stand hinsichtlich Sicherheit, Governance und Betrieb im derzeitigen Rechenzentrum zu erreichen. Außerdem waren Beobachtungen, Lernprozesse und Anpassungen erforderlich, um den eindeutigen Einschränkungen dieser Umgebung zu entsprechen. Das Replizieren derselben Verfahren und Konfigurationen wird einige Zeit in Anspruch nehmen. Das Erreichen einer 100%igen Featureparität kann auch zu einer Umgebung führen, die in der Cloud unterdurchschnittlich leistungsfähig ist. Dieser Paritätsansatz führt außerdem häufig zu erheblichen ungeplanten Ausgabenüberschreitungen in der Cloudumgebung. Versuchen Sie nicht, die aktuellen Zustandsanforderungen auf eine zukünftige Zustandsumgebung als eine Art „Tor zu einer frühen Phase“ anzuwenden. Ein solcher Ansatz erweist sich selten als profitabel.
+Es bedurfte Jahre und erheblicher Anstrengungen, um den aktuellen Stand hinsichtlich Sicherheit, Governance und Betrieb im derzeitigen Rechenzentrum zu erreichen. Außerdem waren Beobachtungen, Lernprozesse und Anpassungen erforderlich, um den eindeutigen Einschränkungen dieser Umgebung zu entsprechen. Das Replizieren derselben Verfahren und Konfigurationen wird einige Zeit in Anspruch nehmen. Das Erreichen einer vollständigen Featureparität kann auch zu einer Umgebung führen, die in der Cloud unterdurchschnittlich leistungsfähig ist. Dieser Paritätsansatz führt außerdem häufig zu erheblichen ungeplanten Ausgabenüberschreitungen in der Cloudumgebung. Versuchen Sie nicht, die aktuellen Zustandsanforderungen auf eine zukünftige Zustandsumgebung als eine Art „Tor zu einer frühen Phase“ anzuwenden. Ein solcher Ansatz erweist sich selten als profitabel.
 
 ![Allgemeines Hindernis: Zu frühes Handeln](../../_images/ready/blocker-act-too-soon.png)
 
-In der obigen Abbildung hat der Kunde ein Ziel von 100 Workloads, die in der Cloud existieren. Um dies zu erreichen, wird der Kunde wahrscheinlich seine erste Workload bereitstellen. Dann ihre ersten 10 oder so Workloads, bevor sie bereit sind, eines dieser Workloads für die Produktion freizugeben. Schließlich werden sie das Ziel des Einführungsplans erreichen und über ein robustes Portfolio in der Cloud verfügen. Das rote X in der Abbildung zeigt jedoch, wo Kunden häufig nicht weiterkommen. Das Warten auf eine 100%ige Ausrichtung kann die erste Workload um Wochen, Monate oder sogar Jahre verzögern.
+In der obigen Abbildung hat der Kunde ein Ziel von 100 Workloads, die in der Cloud ausgeführt werden. Um dies zu erreichen, wird der Kunde wahrscheinlich seine erste Workload bereitstellen. Dann ihre ersten ca. 10 Workloads, bevor sie bereit sind, eines dieser Workloads für die Produktion freizugeben. Schließlich werden sie das Ziel des Einführungsplans erreichen und über ein robustes Portfolio in der Cloud verfügen. Das rote _x_ in der Abbildung zeigt jedoch, wo Kunden häufig nicht weiterkommen. Das Warten auf eine vollständige Ausrichtung kann die erste Workload um Wochen, Monate oder sogar Jahre verzögern.
 
 ### <a name="blocker-acting-too-late"></a>Hindernis: Zu spätes Handeln
 
@@ -56,7 +55,11 @@ Der Rest dieses Artikels konzentriert sich auf einige wesentliche Einschränkung
 
 ## <a name="theory"></a>Theorie
 
-Das Konzept des Refactoring einer Zielzone ist in der Theorie einfach, erfordert jedoch geeignete Schutzmaßnahmen. Das oben dargestellte Konzept skizziert den grundlegenden Flow wie folgt. Wenn Sie bereit sind, Ihre erste Zielzone zu erstellen, beginnen Sie mit einer anfänglichen Zielzone, die über eine Vorlage definiert wird. Nachdem diese Zielzone bereitgestellt ist, verwenden Sie die Entscheidungsstrukturen in den nachfolgenden Artikeln unter dem Abschnitt „Erweitern Ihrer Zielzone“ dieser Artikelserie (siehe Inhaltsverzeichnis), um Ihre ursprüngliche Zielzone umzugestalten und zu ergänzen. Wiederholen Sie Entscheidungsstrukturen und Refactoring, bis Sie über eine für den Unternehmenseinsatz bereite Umgebung verfügen, die den erhöhten Anforderungen Ihrer Sicherheits-, Betriebs- und Governanceteams entspricht.
+Das Konzept der Umgestaltung einer Zielzone ist einfach, erfordert jedoch geeignete Schutzmaßnahmen. Das oben dargestellte Konzept skizziert den grundlegenden Flow:
+
+- Wenn Sie bereit sind, Ihre erste Zielzone zu erstellen, beginnen Sie mit einer anfänglichen Zielzone, die über eine Vorlage definiert wird.
+- Nachdem diese Zielzone bereitgestellt ist, verwenden Sie die Entscheidungsstrukturen in den nachfolgenden Artikeln unter dem Abschnitt `Expand your landing zone` im Inhaltsverzeichnis, um Ihre ursprüngliche Zielzone umzugestalten und zu ergänzen.
+- Wiederholen Sie Entscheidungsstrukturen und Umgestaltung, bis Sie über eine für den Unternehmenseinsatz bereite Umgebung verfügen, die den erhöhten Anforderungen Ihrer Sicherheits-, Betriebs- und Governanceteams entspricht.
 
 ## <a name="development-approach"></a>Entwicklungsansatz
 
@@ -82,7 +85,7 @@ Alle anfänglichen Zielzonenvorlagen weisen Einschränkungen auf. Schutzmaßnahm
 
 Als Beispiel für die Einrichtung von Schutzmaßnahmen für das Refactoring lassen Sie uns den Entwicklungsansatz im vorherigen Beispiel und die Blaupause für die CAF-Migrationszielzone vergleichen.
 
-- Gemäß den [Annahmedetails der Blaupause für die CAF-Migrationszielzone](./migrate-landing-zone.md#assumptions) ist diese anfängliche Zielzone nicht für vertrauliche Daten oder unternehmenskritische Workloads ausgelegt. Diese Features müssen durch Refactoring hinzugefügt werden.
+- Gemäß den [Annahmen der Blaupause für die CAF-Migrationszielzone](./migrate-landing-zone.md#assumptions) ist diese anfängliche Zielzone nicht für vertrauliche Daten oder unternehmenskritische Workloads ausgelegt. Diese Features müssen durch Refactoring hinzugefügt werden.
 - In diesem Beispiel nehmen wir an, dass das Portfolio von 100 Workloads Hostingfunktionen für sowohl unternehmenskritische als auch vertrauliche Daten erfordern wird.
 
 Um diese beiden konkurrierenden Anforderungen ausgewogen zu gestalten, werden das Einführungsteam und das Plattformteam unter den folgenden vereinbarten Bedingungen arbeiten:
@@ -104,7 +107,7 @@ Jeder Unterabschnitt von „Erweitern Ihrer Zielzone“ weist auf eine der in de
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-[Wählen Sie Ihre erste Zielzone aus](./first-landing-zone.md), um mit den ersten Schritten des Refactoringprozesses zu beginnen.
+Führen Sie für den Einstieg in einen Umgestaltungsprozess die ersten Schritte mit [Azure-Zielzonen](./index.md) aus.
 
 > [!div class="nextstepaction"]
-> [Wählen Ihrer ersten Zielzone](./first-landing-zone.md)
+> [Azure-Zielzonen](./index.md)

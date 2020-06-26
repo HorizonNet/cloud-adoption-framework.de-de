@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e70a448cb96f7e6a790731cd558627e03a543b49
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 9c833689b183f1817c8cb403dc1098330b899df7
+ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756582"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800026"
 ---
 <!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers Pointnext -->
 
@@ -64,9 +64,10 @@ Azure Stack wird in zwei Bereitstellungsoptionen angeboten:
 
 Sie können Azure Stack-Initiativen beschleunigen, indem Sie das vollständige Azure-Ökosystem nutzen:
 
-<!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers -->
+<!-- docsTest:ignore "EMC Services" "Infront Consulting Group" "HPE Pointnext" -->
+<!-- cSpell:ignore ISVs Bitnami DXC EMC Infront Yourhosting Revera Avanade Pulsant PWC PricewaterhouseCoopers -->
 
 - Azure stellt sicher, dass die meisten Anwendungen und Dienste, die für Azure zertifiziert sind, auch in Azure Stack funktionieren. Mehrere unabhängige Softwarehersteller (ISVs) erweitern ihre Lösungen auf Azure Stack. Zu diesen ISVs gehören Bitnami, Docker, Kemp Technologies, Pivotal Cloud Foundry, Red Hat Enterprise Linux und SUSE Linux.
 - Sie können Azure Stack wahlweise als einen vollständig verwalteten Dienst bereitstellen und betreiben. Mehrere Partner werden in Kürze Angebote für verwaltete Dienste in Azure und Azure Stack anbieten. Zu diesen Partnern gehören Tieto, Yourhosting, Revera, Pulsant und NTT. Diese Partner liefern verwaltete Dienste für Azure durch das Cloud Solution Provider-Programm (CSP). Sie erweitern ihre Angebote um die Einbeziehung von Hybridlösungen.
 - Als Beispiel für eine umfassende, vollständig verwaltete Hybrid Cloud Lösung bietet Avanade ein All-in-One-Angebot. Es umfasst Cloudtransformationsdienste, Software, Infrastruktur, Einrichtung und Konfiguration sowie kontinuierlich verwaltete Dienste. Auf diese Weise können Kunden Azure Stack genauso nutzen, sie es heute mit Azure tun.
-- Anbieter können dazu beitragen, Modernisierungsinitiativen für Anwendungen zu beschleunigen, indem sie für die Kunden End-to-End-Lösungen mit Azure erstellen. Sie verfügen über umfassende Kenntnisse zu Azure sowie Fach- und Branchenwissen und kennen sich mit Prozessen aus, z. B. DevOps. Jede Azure Stack-Cloud ist für einen Anbieter die Möglichkeit, die Lösung zu entwerfen und die Systembereitstellung anzuleiten und zu beeinflussen. Darüber hinaus können sie die enthaltenen Funktionen anzupassen und Betriebsaktivitäten umzusetzen. Beispiele für Anbieter sind u. a. Avanade, DXC, Dell EMC Services, Infront Consulting Group, HPE Pointnext und PwC (früher PricewaterhouseCoopers).
+- Anbieter können dazu beitragen, Modernisierungsinitiativen für Anwendungen zu beschleunigen, indem sie für die Kunden End-to-End-Lösungen mit Azure erstellen. Sie verfügen über umfassende Kenntnisse zu Azure sowie Fach- und Branchenwissen und kennen sich mit Prozessen aus, z. B. DevOps. Jede Azure Stack-Cloud ist für einen Anbieter die Möglichkeit, die Lösung zu entwerfen und die Systembereitstellung anzuleiten und zu beeinflussen. Darüber hinaus können sie die enthaltenen Funktionen anpassen und Betriebsaktivitäten umsetzen. Beispiele für Anbieter sind u. a. Avanade, DXC, Dell EMC Services, Infront Consulting Group, HPE Pointnext und PwC (früher PricewaterhouseCoopers).

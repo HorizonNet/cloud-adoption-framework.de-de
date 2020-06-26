@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: b3c963341e7e13020cb4e67fca29db14569fa6b3
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: b3998f05afa4bd0b8e0fe972674d84318ff63ac4
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223948"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075385"
 ---
 # <a name="inventory-and-visibility-in-cloud-management"></a>Bestand und Transparenz bei der Cloudverwaltung
 

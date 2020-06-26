@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: a5b3caa04e3f87c30236425aff770e82e0a37b4c
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: eedd956934022db81fbc8380db27a3831ab1b197
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755580"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85077195"
 ---
 # <a name="cloud-migration-functions"></a>Cloudmigrationsfunktionen
 
@@ -75,7 +75,7 @@ Um eine optimale Zusammenarbeit und Effizienz zu erzielen, wird empfohlen, dass 
 
 Weitere Unterstützung durch vorhandene IT-Mitarbeiter ist möglicherweise erforderlich. Die IT kann einen wertvollen Beitrag zur Cloudeinführung leisten, indem sie zum Cloudbroker und Partner für Innovationen und geschäftliche Agilität wird.
 
-- [Zuständigkeiten der zentralen IT](../organize/central-it.md)
+- [Zuständigkeiten des zentralen IT-Teams](../organize/central-it.md)
 
 ## <a name="whats-next"></a>Nächste Schritte
 

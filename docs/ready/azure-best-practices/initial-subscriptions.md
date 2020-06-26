@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 975248025ff170ff872fdd5970f548a8fc83c953
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 8a1b1838617c9d82c4e8cca239aa4abc9d853f3c
+ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215397"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84799958"
 ---
 # <a name="create-your-initial-azure-subscriptions"></a>Erstellen Ihrer anfänglichen Azure-Abonnements
 
@@ -46,7 +46,7 @@ Wenn Innovationsziele ein Teil Ihrer Strategie für die Cloudeinführung sind, e
 
 ## <a name="shared-services-subscription"></a>Abonnement für gemeinsam genutzte Dienste
 
-Wenn Sie planen, **innerhalb von 24 Monaten mehr als 1.000 VMs oder Compute-Instanzen in der Cloud** zu hosten, erstellen Sie ein weiteres Azure-Abonnement für gemeinsame genutzte Dienste. So sind Sie von vornherein darauf vorbereitet, Ihre endgültige Unternehmensarchitektur zu unterstützen.
+Wenn Sie planen, **innerhalb von 24 Monaten mehr als 1.000 VMs oder Compute-Instanzen in der Cloud** zu hosten, erstellen Sie ein weiteres Azure-Abonnement für gemeinsame genutzte Dienste. So sind Sie darauf vorbereitet, Ihre endgültige Unternehmensarchitektur zu unterstützen.
 
 ![Ein anfängliches Abonnementmodell, das Schlüssel neben Feldern mit der Bezeichnung „Produktion“ und „Gemeinsam genutzte Dienste“ zeigt](../../_images/ready/initial-subscription-model-with-shared-services.png)
 

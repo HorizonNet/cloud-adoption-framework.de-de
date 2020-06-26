@@ -7,16 +7,14 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 69f92ffaeb30b59bfa8ac2aeaea9aaad02e9aaeb
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 5b1788558ecda13c2e95292fa503092a68fdd2ad
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216230"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85074641"
 ---
 <!-- cSpell:ignore CIOs -->
-
-<!-- markdownlint-disable MD026 -->
 
 # <a name="what-is-cloud-accounting"></a>Was ist Cloudbuchhaltung?
 
@@ -26,7 +24,7 @@ Die Cloud verändert, wie die IT-Abteilung Kosten abrechnet, wie unter [Erstelle
 
 Es ist häufig korrekt, IT als Kostenstelle zu betrachten. Beim herkömmlichen Buchhaltungsmodell für die IT galt diese praktisch als Einkäufer für alle IT-Ressourcen. Wie im Artikel [Finanzmodelle](./financial-models.md) beschrieben, kann diese Zentralisierung des Einkaufs auch Softwarelizenzen, wiederkehrende Gebühren für CRM-Lizenzen, den Erwerb von Mitarbeitercomputern und andere große Ausgaben umfassen.
 
-Wenn die IT als Kostenstelle abgerechnet wird, erfolgt die Bewertung der IT häufig auch aus Sicht des Beschaffungsmanagements. Diese Sichtweise macht es für die Unternehmensleitung schwierig, den tatsächlichen Wert der IT-Abteilung zu beurteilen. Beschaffungskosten verzerren die Sicht auf die IT, da sie andere Werte überdecken, die der Organisation hinzugefügt werden. In dieser Ansicht wird beschrieben, warum der IT-Bereich häufig mit zum Verantwortungsbereich des Chief Financial Officer (CFO) oder Chief Operating Officer (COO) gehört. Allerdings ist diese Sichtweise auf die IT sehr beschränkt und kurzsichtig.
+Wenn die IT als Kostenstelle abgerechnet wird, erfolgt die Bewertung der IT häufig auch aus Sicht des Beschaffungsmanagements. Diese Sichtweise macht es für die Unternehmensleitung schwierig, den tatsächlichen Wert der IT-Abteilung zu beurteilen. Beschaffungskosten verzerren die Sicht auf die IT, da sie andere Werte überdecken, die der Organisation hinzugefügt werden. In dieser Ansicht wird beschrieben, warum der IT-Bereich häufig mit zum Verantwortungsbereich des Chief Financial Officer (CFO) oder Chief Operating Officer (COO) gehört. Allerdings ist diese Sichtweise auf die IT sehr beschränkt und ggf. kurzsichtig.
 
 ## <a name="central-it-accounting-profit-center-model"></a>Zentrale IT-Buchhaltung (Profitcentermodell)
 

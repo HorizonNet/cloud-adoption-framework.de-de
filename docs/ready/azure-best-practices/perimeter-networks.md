@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 889a524c26b06a3252dc84d9fa36426cdc07b88c
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 222008cde15fdd0aef0a46ac3937fadade7e6cc9
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223353"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076713"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs WAFs -->
 
@@ -31,7 +31,7 @@ Umkreisnetzwerken nutzen die folgenden Azure-Funktionen und -Dienste:
 - [Azure-Lastenausgleich][alb]
 - [Azure Application Gateway][appgw] und [Web Application Firewall (WAF)][appgwwaf]
 - [Öffentliche IP-Adressen][PIP]
-- [Azure Front Door Service][afd] mit [Web Application Firewall][afdwaf]
+- [Azure Front Door][afd] mit [Web Application Firewall][afdwaf]
 - [Azure Firewall][Azure-firewall]
 
 > [!NOTE]
@@ -40,7 +40,7 @@ Umkreisnetzwerken nutzen die folgenden Azure-Funktionen und -Dienste:
 > - [Implementieren einer DMZ zwischen Azure und Ihrem lokalen Rechenzentrum](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)
 > - [Implementieren einer DMZ zwischen Azure und dem Internet](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
 
-Normalerweise sind Ihre zentralen IT- und Sicherheitsteams für die Anforderungendefinition und den Betrieb Ihrer Umkreisnetzwerke verantwortlich.
+Normalerweise sind Ihr zentrales IT-Team und die und Sicherheitsteams für die Anforderungendefinition und den Betrieb Ihrer Umkreisnetzwerke verantwortlich.
 
 ![Beispiel für eine Hub-and-Spoke-Netzwerktopologie](../../_images/azure-best-practices/network-high-level-perimeter-networks.png)
 
@@ -82,15 +82,17 @@ Azure Load Balancer kann auch die Integrität der verschiedenen Serverinstanzen 
 
 Als Beispiel für die Verwendung einer Hub-and-Spoke-Netzwerktopologie kann ein externer Lastausgleich sowohl für den Hub als auch für die Spokes bereitgestellt werden. Im Hub leitet der Lastenausgleich Datenverkehr effizient an Dienste in den Spokes weiter. In den Spokes verwalten Lastenausgleichsmodule Anwendungsdatenverkehr.
 
-## <a name="azure-front-door-service"></a>Azure Front Door Service
+## <a name="azure-front-door"></a>Azure Front Door
 
-[Azure Front Door Service][afd] von Microsoft stellt eine hochverfügbare und hochgradig skalierbare Plattform für die Beschleunigung von Webanwendungen und einen globalen HTTPS-Lastenausgleich bereit. Sie können Azure Front Door Service verwenden, Ihre dynamischen Webanwendungen und statischen Inhalte zu erstellen, auszuführen und aufzuskalieren. Azure Front Door Service wird an mehr als 100 Standorten im Edgebereich des globalen Netzwerks von Microsoft ausgeführt.
+[Azure Front Door][afd] von Microsoft stellt eine hochverfügbare und hochgradig skalierbare Plattform für die Beschleunigung von Webanwendungen und einen globalen HTTPS-Lastenausgleich bereit. Sie können Azure Front Door verwenden, Ihre dynamischen Webanwendungen und statischen Inhalte zu erstellen, auszuführen und aufzuskalieren. Azure Front Door Service wird an mehr als 100 Standorten im Edgebereich des globalen Netzwerks von Microsoft ausgeführt.
 
-Azure Front Door Service stellt für Ihre Anwendung einheitliche Automatisierung der Regions-/Stempelwartung, BCDR-Automatisierung, einheitliche Client-/Benutzerinformationen, Zwischenspeicherung und Erkenntnisse zu Ihren Diensten bereit. Die Plattform bietet Leistung, Zuverlässigkeit, Support-SLAs. Außerdem bietet sie Konformitätszertifizierungen und überwachbare Sicherheitsverfahren, die von Azure entwickelt, betrieben und nativ unterstützt werden.
+Azure Front Door stellt für Ihre Anwendung einheitliche Automatisierung der Regions-/Stempelwartung, BCDR-Automatisierung, einheitliche Client-/Benutzerinformationen, Zwischenspeicherung und Erkenntnisse zu Ihren Diensten bereit. Die Plattform bietet Leistung, Zuverlässigkeit, Support-SLAs. Außerdem bietet sie Konformitätszertifizierungen und überwachbare Sicherheitsverfahren, die von Azure entwickelt, betrieben und nativ unterstützt werden.
 
 ## <a name="azure-application-gateway"></a>Azure Application Gateway
 
 [Azure Application Gateway][appgw] ist ein dediziertes virtuelles Gerät, mit dem ein verwalteter Controller zur Anwendungsbereitstellung (Application Delivery Controller, ADC) bereitgestellt wird. Es bietet verschiedene Lastenausgleichsfunktionen der Ebene 7 für Ihre Anwendung.
+
+<!-- docsTest:ignore "application gateway" TODO -->
 
 Mit Azure Application Gateway können Sie die Produktivität von Webfarmen optimieren, indem Sie die CPU-intensive SSL-Beendigung an das Anwendungsgateway auslagern. Darüber hinaus werden weitere Routingfunktionen der Ebene 7 bereitgestellt. Hierzu gehören beispielsweise die Roundrobin-Verteilung des eingehenden Datenverkehrs, cookiebasierte Sitzungsaffinität, Routing auf URL-Pfadbasis und die Möglichkeit zum Hosten mehrerer Websites hinter einem einzelnen Anwendungsgateway.
 

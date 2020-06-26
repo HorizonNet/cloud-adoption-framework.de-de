@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 17edc2b008421648a195ab82878d82dcb791bfaa
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3965468ff290ddbd91257c7ba8825d0c737f38a3
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215945"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84994170"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>Benchmarking und Größenänderung von Cloudressourcen
 
@@ -22,11 +22,9 @@ Bei den herkömmlichen lokalen IT-Modellen ist die Anforderung von IT-Systemen k
 
 In der Cloud entfallen durch die Kostenrechnungs- und Bereitstellungsmodelle die Zeitverzögerungen, die zu Überkäufen führen. Wenn zusätzliche Ressourcen benötigt werden, kann beinahe sofort zentral oder horizontal hochskaliert werden. Das bedeutet, dass Assets sicher verkleinert werden können, um Ressourcen- und Kostenaufwand zu minimieren. Beim Benchmarking und bei der Optimierung versucht das Cloudeinführungsteam, ein ausgewogenes Verhältnis zwischen Leistung und Kosten zu finden, indem Ressourcen bereitgestellt werden, die nicht größer oder kleiner sind, als es der Produktionsbedarf erfordert.
 
-<!-- markdownlint-disable MD026 -->
-
 ## <a name="should-assets-be-optimized-during-or-after-the-migration"></a>Sollten Ressourcen während oder nach der Migration optimiert werden?
 
-Wann sollte eine Ressource optimiert werden &mdash; während oder nach der Migration? Die einfache Antwort lautet: _in beiden Fällen_. Das ist aber nicht ganz zutreffend. Zur Erläuterung sind nachfolgend zwei grundlegende Szenarien für die Optimierung der Ressourcengröße angegeben:
+Wann sollte eine Ressource optimiert werden – während oder nach der Migration? Die einfache Antwort lautet: **in beiden Fällen**. Das ist aber nicht ganz zutreffend. Zur Erläuterung sind nachfolgend zwei grundlegende Szenarien für die Optimierung der Ressourcengröße angegeben:
 
 - **Geplante Größenänderung.** Häufig ist eine Ressource deutlich zu groß und nicht ausgelastet, und ihre Größe sollte während der Bereitstellung geändert werden. Um festzustellen, ob die Größe einer Ressource erfolgreich geändert wurde, ist in diesem Fall ein Benutzerakzeptanztest nach der Migration erforderlich. Wenn ein Poweruser keine Leistungs- oder Funktionalitätsverluste während des Tests feststellt, kann davon ausgegangen werden, dass die Größe der Ressource erfolgreich geändert wurde.
 - **Optimierung.** In Fällen, in denen der Optimierungsbedarf unklar ist, sollten IT-Teams einen datengesteuerten Ansatz zur Verwaltung der Ressourcengröße verwenden. Anhand von Benchmarks der Ressourcenleistung kann ein IT-Team fundierte Entscheidungen zu den Aspekten Größe, Dienste, Skalierung und Architektur einer Lösung treffen, die sich am besten für diese Lösung eignen. Es können dann nach der Migration Größenänderungen vorgenommen und Leistungstheorien getestet werden.

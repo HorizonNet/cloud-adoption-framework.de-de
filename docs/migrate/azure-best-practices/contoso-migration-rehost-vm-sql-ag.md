@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: e8ec09b9653af39e950dd5cbd814417b35022963
-ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
+ms.openlocfilehash: 7682617184f7b9bcb3ffda775097163e4fac2716
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84023473"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993868"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc AOAG SQLAOG SQLAOGAVSET contosoadmin contosocloudwitness MSSQLSERVER BEPOOL contosovmsacc SHAOG NSGs inetpub iisreset -->
 
@@ -258,7 +258,7 @@ Nach der Aktivierung von Always On kann Contoso die Always On-Verfügbarkeitsgru
 
 ## <a name="step-3-deploy-the-azure-load-balancer"></a>Schritt 3: Bereitstellen von Azure Load Balancer
 
-Contoso-Administratoren möchten nun ein internes Lastenausgleichsmodul bereitstellen, das sich vor den Clusterknoten befindet. Das Lastenausgleichsmodul ist für Datenverkehr empfangsbereit und leitet diesen an den entsprechenden Knoten weiter.
+Contoso-Administratoren möchten nun ein internes Lastenausgleichsmodul vor den Clusterknoten bereitstellen. Das Lastenausgleichsmodul ist für Datenverkehr empfangsbereit und leitet diesen an den entsprechenden Knoten weiter.
 
 ![Lastenausgleich](./media/contoso-migration-rehost-vm-sql-ag/architecture-lb.png)
 

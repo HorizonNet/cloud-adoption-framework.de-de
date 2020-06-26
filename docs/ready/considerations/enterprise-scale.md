@@ -7,20 +7,18 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3eb1e11a50236d078c5dd9b1cc6f317bdfc96823
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 5df1812f069e56c2622c6a9620b4470424657214
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755759"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076687"
 ---
 # <a name="start-with-enterprise-scale-landing-zones"></a>Beginnen mit Zielzonen auf Unternehmensebene
 
-Mitunter ist es für ein Cloudplattformteam nicht ratsam, klein anzufangen und dann zu skalieren. Die Teams arbeiteten jahrelang unter den Einschränkungen der bestehenden lokalen Umgebung des Unternehmens, um den aktuellen Entwicklungsstand in den Bereichen Sicherheit, Betrieb und Governance zu erreichen. Es wird einige Zeit dauern, bis die gewünschten Prozesse, Tools und Architekturen auf der Grundlage der neuen Einschränkungen einer jeden Cloudumgebung repliziert werden können. Um diesen Lernprozess zu beschleunigen, ist ein etwas anderer Startpunkt erforderlich. Beim Vergleich der folgenden Abbildung mit der [frühen Refactoring-Anleitung innerhalb dieser Methodik](../landing-zone/refactor.md) ist die grundlegende Änderung der Startpunkt, der jetzt komplexer ist und zu dem später in diesem Artikel weitere Informationen folgen werden.
+Mitunter ist es für ein Cloudplattformteam unklug, klein anzufangen und sich zu vergrößern. Die Teams arbeiteten jahrelang unter den Einschränkungen der bestehenden lokalen Umgebung des Unternehmens, um den aktuellen Entwicklungsstand in den Bereichen Sicherheit, Betrieb und Governance zu erreichen. Es wird einige Zeit dauern, bis die gewünschten Prozesse, Tools und Architekturen auf der Grundlage der neuen Einschränkungen einer jeden Cloudumgebung repliziert werden können. Um diesen Lernprozess zu beschleunigen, ist ein etwas anderer Startpunkt erforderlich. Beim Vergleich der folgenden Abbildung mit der [frühen Refactoring-Anleitung innerhalb dieser Methodik](../landing-zone/refactor.md) ist die grundlegende Änderung der Startpunkt, der jetzt komplexer ist und zu dem später in diesem Artikel weitere Informationen folgen werden.
 
 ![Abbildung zum Refactoring der Zielzone – Beschrieben in einem späteren Abschnitt dieses Artikels](../../_images/ready/refactor-enterprise-scale.png)
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="qualifiers-should-i-start-with-enterprise-scale"></a>Qualifizierer: Sollte ich auf Unternehmensniveau beginnen?
 
@@ -51,7 +49,7 @@ Empfohlene Qualifikationen:
 
 Wenn diese Qualifikationen innerhalb des Cloudplattformteams nicht verfügbar sind (durch Mitarbeiter, Partner oder andere Supportmechanismen), wird der Ansatz „im kleinen Rahmen starten und erweitern“ wahrscheinlich schneller die Unternehmensbereitschaft mit einer qualitativ hochwertigeren Ausgabe erreichen. Ein solcher Ansatz würde einen weniger kostenintensiven Kompetenzerwerb innerhalb des bestehenden Teams ermöglichen.
 
-## <a name="start-with-an-enterprise-scale-landing-zones"></a>Beginnen mit Zielzonen auf Unternehmensebene
+## <a name="start-with-an-enterprise-scale-landing-zone"></a>Beginnen mit einer Zielzone auf Unternehmensebene
 
 Microsoft investiert seit langem in Tools und Ansätze, um Kunden die Entwicklung und Verwaltung von Zielzonen auf Unternehmensniveau zu erleichtern. In den letzten Jahren hat diese Investition zu Leitfäden und Tools in ganz Azure geführt. Dieser Investitionsansatz wird fortgesetzt und kann zu regelmäßigen Aktualisierungen dieses Abschnitts dieses bestimmten Artikels führen.
 
@@ -67,8 +65,7 @@ Die zusätzlichen Beispiele im Artikel [Azure-Blaupausenbeispiele](https://docs.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Wählen Sie eine der Zielzonenblaupausen auf Unternehmensebene aus.
-Von dort aus kann derselbe Leitfaden in [im kleinem Rahmen starten und erweitern](./index.md) verwendet werden, um Ihre unternehmensweiten Zielzonen so zu erweitern, dass sie Ihren unterschiedlichen Anforderungen entsprechen.
+Wählen Sie eine der Zielzonen auf Unternehmensebene aus. Von dort aus kann derselbe Leitfaden in [im kleinem Rahmen starten und erweitern](./index.md) verwendet werden, um Ihre unternehmensweiten Zielzonen so zu erweitern, dass sie Ihren unterschiedlichen Anforderungen entsprechen.
 
 > [!div class="nextstepaction"]
 > [Setzen Sie den Leitfaden „im kleinen Rahmen starten und erweitern“ fort, indem Sie Ihre Zielzone auf Unternehmensebene als anfängliche Quelle nutzen.](./index.md)

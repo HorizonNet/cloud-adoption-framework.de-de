@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 761c6c7a8bed468a7d2c9005365a815fbe48e8ae
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: a4777d30c6719842d6d866879ac7d87bc67050df
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83752886"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076574"
 ---
 # <a name="get-started-design-and-configuration"></a>Erste Schritte: Entwurf und Konfiguration
 
@@ -43,7 +43,7 @@ Eine klare und präzise Geschäftsstrategie unterstützt das Cloudplattformteam 
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams | Informierte Teams |
 | --- | --- | --- |
-| <li> Cloudstrategieteam | <li> Cloudeinführungsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT | <li> Cloudplattformteam |
+| <li> Cloudstrategieteam | <li> Cloudeinführungsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung | <li> Cloudplattformteam |
 
 ## <a name="step-2-assess-the-digital-estate"></a>Schritt 2: Bewerten der digitalen Ressourcen
 
@@ -106,13 +106,13 @@ Anfänglich benötigt das Cloudeinführungsteam eine Zielzone, die die Anforderu
 **Ziele:**
 
 - Bereitstellen einer ersten Zielzone für anfängliche Migrationen mit geringem Risiko.
-- Entwickeln eines Plans für die Umgestaltung mit dem CCoE-Team (Cloud Center of Excellence, Cloudkompetenzzentrum) oder der zentralen IT.
+- Entwickeln eines Plans für die Umgestaltung mit dem Cloudkompetenzzentrum oder der zentralen IT-Abteilung.
 - Zeitachsenrisiken:
   - Governance-, Betriebs- und Sicherheitsanforderungen für die ersten zehn Workloads können diesen Prozess verlangsamen. Die eigentliche Umgestaltung der ersten Zielzone und der nachfolgenden Zielzonen dauert länger, sollte aber parallel zu den Migrationsmaßnahmen erfolgen.
 
 **Hinweis zur Erreichung der Ziele:**
 
-- [Auswählen einer Zielzone](../ready/landing-zone/first-landing-zone.md): Verwenden Sie diesen Artikel, um den richtigen Ansatz für die Bereitstellung einer Zielzone basierend auf Ihrem kurzfristigen Einführungsplan zu ermitteln. Stellen Sie dann diese standardisierte Codebasis bereit.
+- [Auswählen einer Zielzone](../ready/landing-zone/index.md): Verwenden Sie diesen Abschnitt, um den richtigen Ansatz für die Bereitstellung einer Zielzone basierend auf Ihrem kurzfristigen Einführungsplan zu ermitteln. Stellen Sie dann diese standardisierte Codebasis bereit.
 - [Erweitern der Zielzone](../ready/considerations/index.md): Versuchen Sie noch nicht, langfristige Governance-, Sicherheits- oder Vorgangseinschränkungen zu erfüllen, es sei denn, Sie müssen den kurzfristigen Einführungsplan unterstützen.
 
 <!-- markdownlint-disable MD033 -->
@@ -120,7 +120,7 @@ Anfänglich benötigt das Cloudeinführungsteam eine Zielzone, die die Anforderu
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudplattformteam | <li> Cloudeinführungsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT |
+| <li> Cloudplattformteam | <li> Cloudeinführungsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
 
 ## <a name="step-5-deploy-an-initial-governance-foundation"></a>Schritt 5: Bereitstellen einer ersten Grundlage für Governance
 
@@ -146,7 +146,7 @@ Wenn diese Entscheidungen getroffen werden, fließen sie wieder in die parallel 
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams | Zu Rate gezogene Teams |
 | --- | --- | --- |
-| <li> Cloudgovernanceteam | <li> Cloudstrategieteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT | <li> Cloudplattformteam |
+| <li> Cloudgovernanceteam | <li> Cloudstrategieteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung | <li> Cloudplattformteam |
 
 ## <a name="step-6-implement-an-operations-baseline"></a>Schritt 6: Implementieren einer Betriebsbaseline
 
@@ -175,7 +175,7 @@ Wenn diese Pläne erstellt werden, fließen sie wieder in die parallel stattfind
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams | Zu Rate gezogene Teams |
 | --- | --- | --- |
-| <li> Cloudbetriebsteam | <li> Cloudstrategieteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT | <li> Cloudplattformteam |
+| <li> Cloudbetriebsteam | <li> Cloudstrategieteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung | <li> Cloudplattformteam |
 
 ## <a name="step-7-expand-the-landing-zone"></a>Schritt 7: Erweitern der Zielzone
 
@@ -201,7 +201,7 @@ Wenn das Cloudeinführungsteam mit den ersten Migrationen beginnt, kann das Clou
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudplattformteam | <li> Cloudeinführungsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT |
+| <li> Cloudplattformteam | <li> Cloudeinführungsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
 
 ## <a name="value-statement"></a>Wertaussage
 

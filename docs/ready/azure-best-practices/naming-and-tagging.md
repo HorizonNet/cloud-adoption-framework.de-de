@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: d3a0e4c640588dda3e97d7ecc24039869d87dd94
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: a0060f6d92b7479158fd46f951e994cc0dcb9d60
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621675"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076735"
 ---
-<!-- docsTest:disable TODO -->
+<!-- docsTest:disable -->
 <!-- cSpell:ignore westeurope usgovia accountlookup messagequery -->
 
 # <a name="recommended-naming-and-tagging-conventions"></a>Empfohlene Namens- und Kennzeichnungskonventionen
@@ -64,17 +64,17 @@ Verwenden Sie möglichst kurze Namenskomponenten, um zu verhindern, dass die Lä
 
 | Namenskomponente            | BESCHREIBUNG                                                                                                                                                                                                      | Beispiele                                         |
 |-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| Geschäftseinheit               | Oberste Abteilung Ihres Unternehmens, die Besitzer des Abonnements oder der Workload ist, zu dem oder der die Ressource gehört. In kleineren Unternehmen kann diese Komponente ein einzelnes Organisationselement des Unternehmens auf oberster Ebene darstellen. | _fin_, _mktg_, _produkt_, _it_, _konzern_           |
-| Abonnementtyp           | Zusammenfassende Beschreibung des Zwecks des Abonnements, das die Ressource enthält. Häufig nach Umgebungstyp der Bereitstellung oder nach bestimmten Workloads aufgeschlüsselt.                                                       | _Prod_, _Freigabe_, _Client_                       |
-| Anwendungs- oder Dienstname | Der Name der Anwendung, der Workload oder des Diensts, zu der oder dem die Ressource gehört.                                                                                                                                    | _navigator_, _emissionen_, _sharepoint_, _hadoop_ |
-| Bereitstellungsumgebung      | Die von der Ressource unterstützte Phase des Entwicklungslebenszyklus der Workload.                                                                                                                              | _Prod_, _Entw_, _QA_, _Stage_, _Test_             |
-| Region                      | Die Azure-Region, in der die Ressource bereitgestellt wird.                                                                                                                                                                 | _westus_, _eastus2_, _westeurope_, _usgovia_     |
+| Geschäftseinheit               | Oberste Abteilung Ihres Unternehmens, die Besitzer des Abonnements oder der Workload ist, zu dem oder der die Ressource gehört. In kleineren Unternehmen kann diese Komponente ein einzelnes Organisationselement des Unternehmens auf oberster Ebene darstellen. | `fin`, `mktg`, `product`, `it`, `corp`           |
+| Abonnementtyp           | Zusammenfassende Beschreibung des Zwecks des Abonnements, das die Ressource enthält. Häufig nach Umgebungstyp der Bereitstellung oder nach bestimmten Workloads aufgeschlüsselt.                                                       | `prod`, `shared`, `client`                       |
+| Anwendungs- oder Dienstname | Der Name der Anwendung, der Workload oder des Diensts, zu der oder dem die Ressource gehört.                                                                                                                                    | `navigator`, `emissions`, `sharepoint`, `hadoop` |
+| Bereitstellungsumgebung      | Die von der Ressource unterstützte Phase des Entwicklungslebenszyklus der Workload.                                                                                                                              | `prod`, `dev`, `qa`, `stage`, `test`             |
+| Region                      | Die Azure-Region, in der die Ressource bereitgestellt wird.                                                                                                                                                                 | `westus`, `eastus2`, `westeurope`, `usgovia`     |
 
 ### <a name="recommended-resource-type-prefixes"></a>Empfohlene Präfixe für Ressourcentypen
 
 Jede Workload kann aus vielen einzelne Ressourcen und Diensten bestehen. Ein Einbinden von Ressourcentyppräfixen in Ihre Ressourcennamen erleichtert die visuelle Erkennung von Anwendungs- oder Dienstkomponenten.
 
-Die folgende Liste enthält empfohlene Azure-Ressourcentypenpräfixe, die Sie verwenden sollten, wenn Sie Ihre Namenskonventionen definieren.
+Diese Liste enthält empfohlene Azure-Ressourcentypenpräfixe, die Sie verwenden sollten, wenn Sie Ihre Namenskonventionen definieren.
 
 <!-- cSpell:ignore apim snet traf vmss stvm arcm ntfns sqldb psql sqldw sqlstrdb ssimp srch hbase appi migr -->
 
@@ -188,6 +188,7 @@ Die folgende Liste enthält empfohlene Azure-Ressourcentypenpräfixe, die Sie ve
 | Ressourcentyp              | Namenspräfix |
 |-------------------------|-------------|
 | Blaupause               | bp-         |
+| Blaupausenzuweisung    | bpa-        |
 | Schlüsseltresor               | kv-         |
 | Log Analytics-Arbeitsbereich | log-        |
 | Application Insights    | appi-       |
@@ -220,13 +221,15 @@ Welche Tags Sie für Ressourcen anwenden und welche Tags erforderlich oder optio
 | Enddatum des Projekts   | Datum, zu dem die Deaktivierung der Anwendung, Workload oder dieses Diensts geplant ist.                                                                                                                                         | _EndDate_         | _{Datum}_                                                   |
 | Environment               | Bereitstellungsumgebung der Anwendung, Workload oder dieses Diensts.                                                                                                                                                     | _Env_             | _Prod_, _Entw_, _QA_, _Stage_, _Test_                       |
 | Name des Besitzers                | Besitzer der Anwendung, der Workload oder des Diensts.                                                                                                                                                                      | _Besitzer_           | _{E-Mail}_                                                  |
-| Name der anfordernden Person            | Der Benutzer, der die Erstellung dieser Anwendung angefordert hat.                                                                                                                                                                 | _Requestor_       | _{E-Mail}_                                                  |
+| Name der anfordernden Person            | Der Benutzer, der die Erstellung dieser Anwendung angefordert hat.                                                                                                                                                                 | _Name der anfordernden Person_       | _{E-Mail}_                                                  |
 | Dienstklasse             | Vereinbarung zum Servicelevel der Anwendung, der Workload oder des Diensts.                                                                                                                                              | _ServiceClass_    | _Dev_, _Bronze_, _Silver_, _Gold_                          |
 | Startdatum des Projekts | Datum, zu dem die Anwendung, Workload oder dieser Dienst erstmalig bereitgestellt wurde.                                                                                                                                                  | _StartDate_       | _{Datum}_                                                   |
 
 ## <a name="example-names"></a>Namensbeispiele
 
 Der folgende Abschnitt enthält einige Namensbeispiele für häufige Azure-Ressourcentypen bei der Bereitstellung einer Unternehmenscloud.
+
+<!-- TODO: Use tick marks for names. -->
 
 <!-- cSpell:ignore mktgsharepoint acctlookupsvc vmhadoop vmtest vmsharepoint vmnavigator vmsqlnode stvmstcoreeastus stvmpmcoreeastus stvmstplmeastus stvmsthadoopeastus stnavigatordata stemissionsoutput stdiag stdiagsh ssimpnavigatorprod ssimpemissionsdev dlanavigatorprod dlsnavigatorprod dlaemissionsdev dlsemissionsdev weballow rdpallow sqlallow dnsblocked cloudapp azurewebsites servicebus -->
 
@@ -236,87 +239,87 @@ Der folgende Abschnitt enthält einige Namensbeispiele für häufige Azure-Resso
 
 | Ressourcentyp                      | `Scope`                              | Format                                                      | Beispiele                                                                                                                |
 |---------------------------------|------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| Subscription                    | Account/ <br> Enterprise Agreement | \<Geschäftseinheit\>-\<Abonnementtyp\>-\<\#\#\#\>          | <li> mktg-prod-001  <li> konzern-freigabe-001 <li> fin-client-001 |
-| Resource group                  | Subscription                       | rg-\<App- oder Dienstname\>-\<Abonnementtyp\>-\<\#\#\#\> | <li> rg-mktgsharepoint-prod-001  <li> rg-kontnachschldien-freigabe-001  <li> rg-ad-verz-dienste-freigabe-001 |
-| API Management-Dienstinstanz | Global                             | apim-\<App- oder Dienstname\>                                | apim-navigator-prod                                                                                                     |
+| Subscription                    | Account/ <br> Enterprise Agreement | \<Business Unit\>-\<Subscription type\>-\<\#\#\#\>          | <li> mktg-prod-001  <li> konzern-freigabe-001 <li> fin-client-001 |
+| Resource group                  | Subscription                       | rg-\<App or service name\>-\<Subscription type\>-\<\#\#\#\> | <li> rg-mktgsharepoint-prod-001  <li> rg-kontnachschldien-freigabe-001  <li> rg-ad-verz-dienste-freigabe-001 |
+| API Management-Dienstinstanz | Global                             | apim-\<App or service name\>                                | apim-navigator-prod                                                                                                     |
 
 ### <a name="example-names-networking"></a>Namensbeispiele: Netzwerk
 
 | Ressourcentyp                   | `Scope`           | Format                                                               | Beispiele                                                                                                                      |
 |------------------------------|-----------------|----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Virtuelles Netzwerk              | Resource group  | vnet-\<Abonnementtyp\>-\<Region\>-\<\#\#\#\>                     | <li> vnet-freigabe-usaosten2-001  <li> vnet-prod-usawesten-001  <li> vnet-client-usaosten2-001 |
-| Subnet                       | Virtuelles Netzwerk | snet-\<Abonnement\>-\<Unterregion\>-\<\#\#\#\>                       | <li> snet-freigabe-usaosten2-001  <li> snet-prod-usawesten-001  <li> snet-client-usaosten2-001 |
-| Netzwerkschnittstelle (NIC)      | Resource group  | nic-\<\#\#\>-\<VM-Name\>-\<Abonnement\>\<\#\#\#\>                   | <li> nic-01-dc1-freigabe-001  <li> nic-02-vmhadoop1-prod-001  <li> nic-02-vmtest1-client-001 |
-| Öffentliche IP-Adresse            | Resource group  | pip-\<VM-Name oder App-Namen\>-\<Umgebung\>-\<Unterregion\>-\<\#\#\#\> | <li> pip-dc1-freigabe-usaosten2-001  <li> pip-hadoop-prod-usawesten-001 |
-| Load Balancer                | Resource group  | lb-\<App-Name oder Rolle\>\<Umgebung\>\<\#\#\#\>                     | <li> lb-navigator-prod-001  <li> lb-sharepoint-entw-001 |
-| Netzwerksicherheitsgruppe (NSG) | Subnetz oder NIC   | nsg-\<Richtlinienname oder App-Name\>-\<\#\#\#\>                           | <li> nsg-weberlaub-001  <li> nsg-rdperlaub-001  <li> nsg-sqlerlaub-001  <li> nsg-dnsblocked-001 |
-| Lokales Netzwerkgateway        | Virtuelles Gateway | lgw-\<Abonnementtyp\>-\<Region\>-\<\#\#\#\>                      | <li> lgw-shared-eastus2-001  <li> lgw-prod-westus-001  <li> lgw-client-eastus2-001 |
-| Gateway des virtuellen Netzwerks      | Virtuelles Netzwerk | vgw-\<Abonnementtyp\>-\<Region\>-\<\#\#\#\>                      | <li> vgw-shared-eastus2-001 <li> vgw-prod-westus-001 <li> vgw-client-eastus2-001 |
-| Standort-zu-Standort-Verbindung      | Resource group  | cn-\<Name des lokalen Gateways\>-to-\<Name des virtuellen Gateways\>                | <li> cn-lgw-shared-eastus2-001-to-vgw-shared-eastus2-001 <li> cn-lgw-shared-eastus2-001-to-shared-westus-001 |
-| VPN-Verbindung               | Resource group  | cn-\<Abonnement1\>\<Region1\>-to-\<Abonnement2\>\<Region2\>-     | <li> cn-freigabe-usaosten2-to-freigabe-usawesten <li> cn-prod-usaosten2-to-prod-usawesten |
-| Routingtabelle                  | Resource group  | route-\<Name der Routentabelle\>                                           | <li> route-navigator <li> route-sharepoint |
-| DNS-Bezeichnung                    | Global          | \<Eintrag von VM\>.[\<Region\>.cloudapp.azure.com]                   | <li> dc1.usawesten.cloudapp.azure.com <li> web1.usaosten2.cloudapp.azure.com |
+| Virtuelles Netzwerk              | Resource group  | vnet-\<Subscription type\>-\<Region\>-\<\#\#\#\>                     | <li> vnet-freigabe-usaosten2-001  <li> vnet-prod-usawesten-001  <li> vnet-client-usaosten2-001 |
+| Subnet                       | Virtuelles Netzwerk | snet-\<subscription\>-\<subregion\>-\<\#\#\#\>                       | <li> snet-freigabe-usaosten2-001  <li> snet-prod-usawesten-001  <li> snet-client-usaosten2-001 |
+| Netzwerkschnittstelle (NIC)      | Resource group  | nic-\<\#\#\>-\<vm name\>-\<subscription\>\<\#\#\#\>                   | <li> nic-01-dc1-freigabe-001  <li> nic-02-vmhadoop1-prod-001  <li> nic-02-vmtest1-client-001 |
+| Öffentliche IP-Adresse            | Resource group  | pip-\<vm name or app name\>-\<Environment\>-\<subregion\>-\<\#\#\#\> | <li> pip-dc1-freigabe-usaosten2-001  <li> pip-hadoop-prod-usawesten-001 |
+| Load Balancer                | Resource group  | lb-\<app name or role\>\<Environment\>\<\#\#\#\>                     | <li> lb-navigator-prod-001  <li> lb-sharepoint-entw-001 |
+| Netzwerksicherheitsgruppe (NSG) | Subnetz oder NIC   | nsg-\<policy name or app name\>-\<\#\#\#\>                           | <li> nsg-weberlaub-001  <li> nsg-rdperlaub-001  <li> nsg-sqlerlaub-001  <li> nsg-dnsblocked-001 |
+| Lokales Netzwerkgateway        | Virtuelles Gateway | lgw-\<Subscription type\>-\<Region\>-\<\#\#\#\>                      | <li> lgw-shared-eastus2-001  <li> lgw-prod-westus-001  <li> lgw-client-eastus2-001 |
+| Gateway des virtuellen Netzwerks      | Virtuelles Netzwerk | vgw-\<Subscription type\>-\<Region\>-\<\#\#\#\>                      | <li> vgw-shared-eastus2-001 <li> vgw-prod-westus-001 <li> vgw-client-eastus2-001 |
+| Standort-zu-Standort-Verbindung      | Resource group  | cn-\<local gateway name\>-to-\<virtual gateway name\>                | <li> cn-lgw-shared-eastus2-001-to-vgw-shared-eastus2-001 <li> cn-lgw-shared-eastus2-001-to-shared-westus-001 |
+| VPN-Verbindung               | Resource group  | cn-\<subscription1\>\<region1\>-to-\<subscription2\>\<region2\>-     | <li> cn-freigabe-usaosten2-to-freigabe-usawesten <li> cn-prod-usaosten2-to-prod-usawesten |
+| Routingtabelle                  | Resource group  | route-\<route table name\>                                           | <li> route-navigator <li> route-sharepoint |
+| DNS-Bezeichnung                    | Global          | \<A record of vm\>.<region\>.cloudapp.azure.com                   | <li> dc1.usawesten.cloudapp.azure.com <li> web1.usaosten2.cloudapp.azure.com |
 
 ### <a name="example-names-compute-and-web"></a>Namensbeispiele: Compute und Web
 
 | Ressourcentyp                  | `Scope`          | Format                                                              | Beispiele                                                                                                                          |
 |-----------------------------|----------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Virtueller Computer             | Resource group | vm\<Richtlinienname oder App-Name\>\<\#\#\#\>                              | <li> vmnavigator001 <li> vmsharepoint001 <li> vmsqlknoten001 <li> vmhadoop001 |
-| VM-Speicherkonto          | Global         | stvm\<Leistungstyp\>\<App-Name oder Prod.-Name\>\<Region\>\<\#\#\#\> | <li> stvmstcoreusaosten2001 <li> stvmpmcoreusaosten2001 <li> stvmstplmusaosten2001 <li> stvmsthadoopusaosten2001 |
-| Web-App                     | Global         | app-\<App-Name\>-\<Umgebung\>-\<\#\#\#\>.[{azurewebsites.net}]   | <li> app-navigator-prod-001.azurewebsites.net <li> app-accountlookup-dev-001.azurewebsites.net |
-| Funktionen-App                | Global         | func-\<App-Name\>-\<Umgebung\>-\<\#\#\#\>.[{azurewebsites.net}]  | <li> func-navigator-prod-001.azurewebsites.net <li> func-accountlookup-dev-001.azurewebsites.net |
-| Clouddienst               | Global         | cld-\<App-Name\>-\<Umgebung\>-\<\#\#\#\>.[{cloudapp.net}]        | <li> cld-navigator-prod-001.azurewebsites.net <li> cld-accountlookup-dev-001.azurewebsites.net |
-| Notification Hub            | Resource group | ntf-\<App-Name\>-\<Umgebung\>                                    | <li> ntf-navigator-prod <li> ntf-emissions-dev |
-| Notification Hubs-Namespace | Global         | ntfns-\<App-Name\>-\<Umgebung\>                                  | <li> ntfns-navigator-prod <li> ntfns-emissions-dev |
+| Virtueller Computer             | Resource group | vm\<policy name or app name\>\<\#\#\#\>                              | <li> vmnavigator001 <li> vmsharepoint001 <li> vmsqlknoten001 <li> vmhadoop001 |
+| VM-Speicherkonto          | Global         | stvm\<performance type\>\<app name or prod name\>\<region\>\<\#\#\#\> | <li> stvmstcoreusaosten2001 <li> stvmpmcoreusaosten2001 <li> stvmstplmusaosten2001 <li> stvmsthadoopusaosten2001 |
+| Web-App                     | Global         | app-\<App Name\>-\<Environment\>-\<\#\#\#\>.[{azurewebsites.net}]   | <li> app-navigator-prod-001.azurewebsites.net <li> app-accountlookup-dev-001.azurewebsites.net |
+| Funktionen-App                | Global         | func-\<App Name\>-\<Environment\>-\<\#\#\#\>.[{azurewebsites.net}]  | <li> func-navigator-prod-001.azurewebsites.net <li> func-accountlookup-dev-001.azurewebsites.net |
+| Clouddienst               | Global         | cld-\<App Name\>-\<Environment\>-\<\#\#\#\>.[{cloudapp.net}]        | <li> cld-navigator-prod-001.azurewebsites.net <li> cld-accountlookup-dev-001.azurewebsites.net |
+| Notification Hub            | Resource group | ntf-\<App Name\>-\<Environment\>                                    | <li> ntf-navigator-prod <li> ntf-emissions-dev |
+| Notification Hubs-Namespace | Global         | ntfns-\<App Name\>-\<Environment\>                                  | <li> ntfns-navigator-prod <li> ntfns-emissions-dev |
 
 ### <a name="example-names-databases"></a>Namensbeispiele: Datenbanken
 
 | Ressourcentyp                     | `Scope`              | Format                                 | Beispiele                                                                  |
 |--------------------------------|--------------------|----------------------------------------|---------------------------------------------------------------------------|
-| Azure SQL-Datenbank-Server      | Global             | sql-\<App-Name\>-\<Umgebung\>       | <li> sql-navigator-prod <li> sql-emissions-dev |
-| Azure SQL-Datenbank             | Azure SQL-Datenbank | sqldb-\<Datenbankname>-\<Umgebung\> | <li> sqldb-users-prod <li> sqldb-users-dev |
-| Azure Cosmos DB-Datenbank       | Global             | cosmos-\<App-Name\>-\<Umgebung\>    | <li> cosmos-navigator-prod <li> cosmos-emissions-dev |
-| Azure Cache for Redis-Instanz | Global             | redis-\<App-Name\>-\<Umgebung\>     | <li> redis-navigator-prod <li> redis-emissionen-entw |
-| MySQL-Datenbank                 | Global             | mysql-\<App-Name\>-\<Umgebung\>     | <li> mysql-navigator-prod <li> mysql-emissionen-entw |
-| PostgreSQL-Datenbank            | Global             | psql-\<App-Name\>-\<Umgebung\>      | <li> psql-navigator-prod <li> psql-emissions-dev |
-| Azure SQL Data Warehouse       | Global             | sqldw-\<App-Name\>-\<Umgebung\>     | <li> sqldw-navigator-prod <li> sqldw-emissionen-entw |
-| SQL Server Stretch Database    | Azure SQL-Datenbank | sqlstrdb-\<App-Name\>-\<Umgebung\>  | <li> sqlstrdb-navigator-prod <li> sqlstrdb-emissionen-entw |
+| Azure SQL-Datenbank-Server      | Global             | sql-\<App Name\>-\<Environment\>       | <li> sql-navigator-prod <li> sql-emissions-dev |
+| Azure SQL-Datenbank             | Azure SQL-Datenbank | sqldb-\<Database Name>-\<Environment\> | <li> sqldb-users-prod <li> sqldb-users-dev |
+| Azure Cosmos DB-Datenbank       | Global             | cosmos-\<App Name\>-\<Environment\>    | <li> cosmos-navigator-prod <li> cosmos-emissions-dev |
+| Azure Cache for Redis-Instanz | Global             | redis-\<App Name\>-\<Environment\>     | <li> redis-navigator-prod <li> redis-emissionen-entw |
+| MySQL-Datenbank                 | Global             | mysql-\<App Name\>-\<Environment\>     | <li> mysql-navigator-prod <li> mysql-emissionen-entw |
+| PostgreSQL-Datenbank            | Global             | psql-\<App Name\>-\<Environment\>      | <li> psql-navigator-prod <li> psql-emissions-dev |
+| Azure SQL Data Warehouse       | Global             | sqldw-\<App Name\>-\<Environment\>     | <li> sqldw-navigator-prod <li> sqldw-emissionen-entw |
+| SQL Server Stretch Database    | Azure SQL-Datenbank | sqlstrdb-\<App Name\>-\<Environment\>  | <li> sqlstrdb-navigator-prod <li> sqlstrdb-emissionen-entw |
 
 ### <a name="example-names-storage"></a>Namensbeispiele: Storage
 
 | Ressourcentyp                        | `Scope`  | Format                                                                        | Beispiele                                                              |
 |-----------------------------------|--------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| Speicherkonto (allgemeine Nutzung)     | Global | st\<Speichername\>\<\#\#\#\>                                                  | <li> stnavigatordaten001 <li> stemissionenausgabe001 |
-| Speicherkonto (Diagnoseprotokolle) | Global | stdiag\<erste 2 Buchstaben vom Abonnementnamen und die Nummer\>\<Region\>\<\#\#\#\> | <li> stdiagsh001usaosten2001 <li> stdiagsh001usawesten001 |
-| Azure StorSimple                  | Global | ssimp\<App-Name\>\<Umgebung\>                                              | <li> ssimpnavigatorprod <li> ssimpemissionenentw |
+| Speicherkonto (allgemeine Nutzung)     | Global | st\<storage name\>\<\#\#\#\>                                                  | <li> stnavigatordaten001 <li> stemissionenausgabe001 |
+| Speicherkonto (Diagnoseprotokolle) | Global | stdiag\<first 2 letters of subscription name and number\>\<region\>\<\#\#\#\> | <li> stdiagsh001usaosten2001 <li> stdiagsh001usawesten001 |
+| Azure StorSimple                  | Global | ssimp\<App Name\>\<Environment\>                                              | <li> ssimpnavigatorprod <li> ssimpemissionenentw |
 
 ### <a name="example-names-ai-and-machine-learning"></a>Namensbeispiele: KI und maschinelles Lernen
 
 | Ressourcentyp                       | `Scope`          | Format                            | Beispiele                                                          |
 |----------------------------------|----------------|-----------------------------------|-------------------------------------------------------------------|
-| Azure Cognitive Search           | Global         | srch-\<App-Name\>-\<Umgebung\> | <li> srch-navigator-prod <li> srch-emissionen-entw |
-| Azure Cognitive Services         | Resource group | cog-\<App-Name\>-\<Umgebung\>  | <li> cog-navigator-prod <li> cog-emissions-dev |
-| Azure Machine Learning-Arbeitsbereich | Resource group | mlw-\<App-Name\>-\<Umgebung\>  | <li> mlw-navigator-prod <li> mlw-emissions-dev |
+| Azure Cognitive Search           | Global         | srch-\<App Name\>-\<Environment\> | <li> srch-navigator-prod <li> srch-emissionen-entw |
+| Azure Cognitive Services         | Resource group | cog-\<App Name\>-\<Environment\>  | <li> cog-navigator-prod <li> cog-emissions-dev |
+| Azure Machine Learning-Arbeitsbereich | Resource group | mlw-\<App Name\>-\<Environment\>  | <li> mlw-navigator-prod <li> mlw-emissions-dev |
 
 ### <a name="example-names-analytics-and-iot"></a>Namensbeispiele: Analytics und IoT
 
 | Ressourcentyp                  | `Scope`          | Format                              | Beispiele                                                              |
 |-----------------------------|----------------|-------------------------------------|-----------------------------------------------------------------------|
-| Azure Data Factory          | Global         | adf-\<App-Name\>\<Umgebung\>     | <li> adf-navigator-prod <li> adf-emissions-dev |
-| Azure Stream Analytics      | Resource group | asa-\<App-Name\>-\<Umgebung\>    | <li> asa-navigator-prod <li> asa-emissionen-entw |
-| Data Lake Analytics-Konto | Global         | dla\<App-Name\>\<Umgebung\>      | <li> dlanavigatorprod <li> dlaemissionenentw |
-| Data Lake Storage-Konto   | Global         | dls\<App-Name\>\<Umgebung\>      | <li> dlsnavigatorprod <li> dlsemissionenentw |
-| Event Hub                   | Global         | evh-\<App-Name\>-\<Umgebung\>    | <li> anh-navigator-prod <li> anh-emissionen-entw |
-| HDInsight: HBase-Cluster   | Global         | hbase-\<App-Name\>-\<Umgebung\>  | <li> hbase-navigator-prod <li> hbase-emissions-dev |
-| HDInsight: Hadoop-Cluster  | Global         | hadoop-\<App-Name\>-\<Umgebung\> | <li> hadoop-navigator-prod <li> hadoop-emissions-dev |
-| HDInsight: Spark-Cluster   | Global         | spark-\<App-Name\>-\<Umgebung\>  | <li> spark-navigator-prod <li> spark-emissions-dev  |
-| IoT Hub                     | Global         | iot-\<App-Name\>-\<Umgebung\>    | <li> iot-navigator-prod <li> iot-emissions-dev |
-| Power BI Embedded           | Global         | pbi-\<App-Name\>\<Umgebung\>     | <li> pbi-navigator-prod <li> pbi-emissions-dev |
+| Azure Data Factory          | Global         | adf-\<App Name\>\<Environment\>     | <li> adf-navigator-prod <li> adf-emissions-dev |
+| Azure Stream Analytics      | Resource group | asa-\<App Name\>-\<Environment\>    | <li> asa-navigator-prod <li> asa-emissionen-entw |
+| Data Lake Analytics-Konto | Global         | dla\<App Name\>\<Environment\>      | <li> dlanavigatorprod <li> dlaemissionenentw |
+| Data Lake Storage-Konto   | Global         | dls\<App Name\>\<Environment\>      | <li> dlsnavigatorprod <li> dlsemissionenentw |
+| Event Hub                   | Global         | evh-\<App Name\>-\<Environment\>    | <li> anh-navigator-prod <li> anh-emissionen-entw |
+| HDInsight: HBase-Cluster   | Global         | hbase-\<App Name\>-\<Environment\>  | <li> hbase-navigator-prod <li> hbase-emissions-dev |
+| HDInsight: Hadoop-Cluster  | Global         | hadoop-\<App Name\>-\<Environment\> | <li> hadoop-navigator-prod <li> hadoop-emissions-dev |
+| HDInsight: Spark-Cluster   | Global         | spark-\<App Name\>-\<Environment\>  | <li> spark-navigator-prod <li> spark-emissions-dev  |
+| IoT Hub                     | Global         | iot-\<App Name\>-\<Environment\>    | <li> iot-navigator-prod <li> iot-emissions-dev |
+| Power BI Embedded           | Global         | pbi-\<App Name\>\<Environment\>     | <li> pbi-navigator-prod <li> pbi-emissions-dev |
 
 ### <a name="example-names-integration"></a>Namensbeispiele: Integration
 
 | Ressourcentyp        | `Scope`       | Format                                                     | Beispiele                                                      |
 |-------------------|-------------|------------------------------------------------------------|---------------------------------------------------------------|
-| Service Bus       | Global      | sb-\<App-Name\>-\<Umgebung\>.[{servicebus.windows.net}] | <li> sb-navigator-prod <li> sb-emissionen-entw |
-| Service Bus-Warteschlange | Service Bus | sbq-\<Abfragedeskriptor\>                                   | <li> sbq-nachrabfrage |
-| Service Bus-Topic | Service Bus | sbt-\<Abfragedeskriptor\>                                   | <li> sbt-messagequery |
+| Service Bus       | Global      | sb-\<App Name\>-\<Environment\>.[{servicebus.windows.net}] | <li> sb-navigator-prod <li> sb-emissionen-entw |
+| Service Bus-Warteschlange | Service Bus | sbq-\<query descriptor\>                                   | <li> sbq-nachrabfrage |
+| Service Bus-Topic | Service Bus | sbt-\<query descriptor\>                                   | <li> sbt-messagequery |

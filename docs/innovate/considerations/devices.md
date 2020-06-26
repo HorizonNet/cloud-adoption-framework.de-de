@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 2fd3bfb329131e2ec344131ba3e2cbf8bc189a8f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0b786293386ae85bca7d29865639f839dd79ead4
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219732"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993930"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>Umgebungserfahrungen: Interagieren mit Geräten
 
@@ -52,7 +52,7 @@ Azure App Service ist ein gutes Beispiel für diesen Ansatz. Während der ersten
 Mixed Reality-Lösungen stellen die nächste Stufe von Umgebungserfahrungen dar. Bei diesem Ansatz wird die Umgebung des Kunden ergänzt oder repliziert, um die Realität zu erweitern, in der der Kunde agieren kann.
 
 > [!IMPORTANT]
-> Wenn ein VR-Gerät (Virtual Reality) benötigt wird und *nicht bereits Teil der unmittelbaren Umgebung oder des natürlichen Verhaltens eines Kunden* ist, dann ist Augmented oder Virtual Reality eher eine alternative Erfahrung als eine Umgebungserfahrung.
+> Wenn ein VR-Gerät (Virtual Reality) benötigt wird und nicht bereits Teil der unmittelbaren Umgebung oder des natürlichen Verhaltens eines Kunden ist, dann ist Augmented oder Virtual Reality eher eine alternative Erfahrung als eine Umgebungserfahrung.
 
 Mixed Reality-Umgebungen treten bei mobilen Mitarbeitern im Außendienst immer häufiger auf. Ihr Einsatz steigt noch schneller in Branchen, die Zusammenarbeit oder Fachkompetenz erfordern, die auf dem lokalen Markt nicht ohne Weiteres verfügbar ist. Situationen, in denen eine zentralisierte Implementierungsunterstützung für ein komplexes Produkt für Mitarbeiter an einem entfernten Standort erforderlich ist, bieten sich besonders für Augmented Reality an. In diesen Szenarien können das zentrale Supportteam und die Remotemitarbeiter Augmented Reality einsetzen, um Fehler zu beheben und das Produkt zu installieren.
 

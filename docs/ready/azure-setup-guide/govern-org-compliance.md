@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: a44dcdf49d2dad17236f4f1dc009758acf4230fc
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 9465a5889f70fa95f8570cd7ffd746b40462fa6e
+ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621623"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84800009"
 ---
 <!-- cSpell:ignore tvuylsteke >
 
@@ -53,6 +53,8 @@ So erstellen Sie eine Blaupause
 ::: zone-end
 
 ::: zone target="docs"
+
+<!-- docsTest:ignore "Next : Artifacts" "Blueprints: Get started" "Blueprints: Blueprint definitions" -->
 
 1. Wechseln Sie zu [Blaupausen: Erste Schritte](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted).
 1. Wählen Sie im Abschnitt **Blaupause erstellen** die Option **Erstellen** aus.

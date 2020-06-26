@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b3535e9dc05b495c7f8ca166c388027e600af065
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: e1441a6bd9606d82b81e35e97d8edf50f2f7c29b
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862145"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785633"
 ---
 <!-- cSpell:ignore billyclaymyersmsft wimyers functionapp -->
 
@@ -134,8 +134,6 @@ Visual Studio App Center bietet auch einen Benachrichtigungsdienst, bei dem mit 
 - [DevOps-Lösungen](https://azure.microsoft.com/solutions/devops)
 
 # <a name="create-cloud-native-apps"></a>[Erstellen cloudnativer Apps](#tab/CloudNative)
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="what-are-cloud-native-applications"></a>Was sind cloudnative Anwendungen?
 
@@ -295,9 +293,9 @@ Azure Red Hat OpenShift bietet flexible Self-Service-Bereitstellung vollständig
 
 Beim Übergang aus der anfänglichen Testphase sollten Sie Möglichkeiten zum Isolieren und Beheben von Fehlerquellen prüfen. Aufgrund der verteilten Umgebung der Azure-Cloudplattform können Sie Ihre Anwendung so gestalten, dass Fehler minimiert werden und gleichzeitig die Leistung verbessert wird.
 
-## <a name="azure-front-door-service"></a>Azure Front Door Service
+## <a name="azure-front-door"></a>Azure Front Door
 
-Azure Front Door Service bietet einen skalierbaren, sicheren Einstiegspunkt, den Sie für die weltweite Bereitstellung Ihrer Anwendung nutzen können. Azure Front Door Service kombiniert die Optimierung des Datenverkehrs für optimale Leistung und sofortiges globales Failover. Azure Front Door Service sollte gegenüber Azure Traffic Manager bevorzugt werden, wenn eine Beendigung der TLS-Protokollierung (SSL-Auslagerung) oder eine Verarbeitung der Anwendungsschicht pro HTTP/HTTPS-Anforderung benötigt wird.
+Azure Front Door bietet einen skalierbaren, sicheren Einstiegspunkt, den Sie für die weltweite Bereitstellung Ihrer Anwendung nutzen können. Azure Front Door kombiniert die Optimierung des Datenverkehrs für optimale Leistung und sofortiges globales Failover. Azure Front Door sollte gegenüber Azure Traffic Manager bevorzugt werden, wenn eine Beendigung der TLS-Protokollierung (SSL-Auslagerung) oder eine Verarbeitung der Anwendungsschicht pro HTTP/HTTPS-Anforderung benötigt wird.
 
 ### <a name="action"></a>Aktion
 
@@ -341,11 +339,11 @@ Zum Konfigurieren oder Überwachen von Traffic Manager-Profilen gehen Sie folgen
 
 ## <a name="azure-content-delivery-network"></a>Azure Content Delivery Network
 
-Azure bietet ein verteiltes Content Delivery Network (CDN), mit dem Sie die zeitnahe Bereitstellung von Inhalten sicherstellen können, indem Sie diese in der Nähe Ihrer Benutzer zwischenspeichern. Dieses Zwischenspeichern hilft, die Erfahrungen Ihrer Kunden zu verbessern. Beim Herunterladen von Inhalten werden auch Probleme vermieden, die durch Netzwerkprobleme verursacht werden, die zwischen dem CDN-Endpunkt und dem Rechenzentrum auftreten, das Ihre Anwendung hostet. Content Delivery Network kann auch von Anwendungen verwendet werden, die nicht in Azure gehostet werden.
+Azure bietet ein verteiltes Content Delivery Network (CDN), mit dem Sie die zeitnahe Bereitstellung von Inhalten sicherstellen können, indem Sie diese in der Nähe Ihrer Benutzer zwischenspeichern. Dieses Zwischenspeichern hilft, die Erfahrungen Ihrer Kunden zu verbessern. Beim Herunterladen von Inhalten werden auch Probleme vermieden, die durch Netzwerkprobleme verursacht werden, die zwischen dem CDN-Endpunkt und dem Rechenzentrum auftreten, das Ihre Anwendung hostet. Azure CDN kann auch von Anwendungen verwendet werden, die nicht in Azure gehostet werden.
 
 ### <a name="action"></a>Aktion
 
-So konfigurieren oder überwachen Sie Content Delivery Network-Profile:
+Zum Konfigurieren oder Überwachen von Azure CDN-Profilen gehen Sie folgendermaßen vor:
 
 1. Navigieren Sie zu **CDN-Profile**.
 2. Konfigurieren eines neuen Profils: Wählen Sie **Hinzufügen** aus, und befolgen Sie die Anweisungen.

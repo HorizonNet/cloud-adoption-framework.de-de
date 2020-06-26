@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: f874edbb899512cce5a3868ffa7426b188cedb7d
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: c7751291689fb269eb68514173d143eac85fa87d
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756446"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85074872"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>Umsetzen von Entwurfsprinzipien und erweiterten Vorgängen
 
@@ -47,9 +47,9 @@ Es gibt zwei Spezialisierungsbereiche:
 - **Plattformspezialisierung:** Investieren in den laufenden Betrieb einer gemeinsam genutzten Plattform und Verteilen der Investition auf mehrere Workloads.
 - **Workloadspezialisierung:** Investieren in den laufenden Betrieb einer bestimmten Workload, was in der Regel für unternehmenskritische Workloads reserviert ist.
 
-### <a name="central-it-or-cloud-center-of-excellence-ccoe"></a>Zentrale IT oder Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE)
+### <a name="central-it-team-or-cloud-center-of-excellence-ccoe"></a>Zentrales IT-Team oder Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE)
 
-Entscheidungen für eine Plattform- oder Workloadspezialisierung basieren auf der Kritizität und den Auswirkungen der einzelnen Workloads. Diese Entscheidungen sind jedoch auch ein Indiz größerer kultureller Entscheidungen zwischen den Organisationsmodellen einer zentralen IT und eines CCoE.
+Entscheidungen für eine Plattform- oder Workloadspezialisierung basieren auf der Kritizität und den Auswirkungen der einzelnen Workloads. Diese Entscheidungen sind jedoch auch ein Indiz größerer kultureller Entscheidungen zwischen den Organisationsmodellen eines zentralen IT-Teams und eines CCoE.
 
 Eine Workloadspezialisierung löst häufig eine kulturelle Änderung aus. Sowohl die konventionelle IT als auch die zentrale IT bilden Prozesse aus, die eine skalierbare Unterstützung bieten können. Die Skalierung der Unterstützung ist für wiederholbare Dienste besser realisierbar, die in einer Verwaltungsbaseline, einer erweiterten Baseline oder sogar im Plattformbetrieb angesiedelt sind. Eine Workloadspezialisierung lässt sich häufig nicht skalieren. Dieser Mangel an Skalierbarkeit erschwert es einer zentralisierten IT-Organisation, die notwendige Unterstützung zu leisten, ohne die Grenzen der Skalierbarkeit der Organisation zu erreichen.
 
@@ -62,7 +62,7 @@ Die natürliche Abstimmung von Rollen in einem CCoE wird wie folgt dargestellt:
 - Die Cloudverwaltung stellt die Verwaltungsbaseline zentral bereit und unterstützt die Nutzung des Dienstkatalogs.
 - Allerdings trägt der Geschäftsbereich (in Form eines geschäftsbereichsorientierten DevOps- oder Cloudeinführungsteams) die Verantwortung für die täglichen auf Workloads, Pipelines oder Leistung bezogenen Abläufe.
 
-Bei der Koordination von Verwaltungsbereichen können die Modelle der zentralen IT und des CCoE bei minimalem kulturellem Wandel im Allgemeinen auf der Plattformspezialisierung aufsetzen. Das Aufsetzen auf der Workloadspezialisierung könnte für Teams in einer zentralen IT-Organisation etwas komplexer sein.
+Bei der Koordination von Verwaltungsbereichen können Modelle mit zentralem IT-Team und CCoE bei minimalem kulturellem Wandel im Allgemeinen auf der Plattformspezialisierung aufsetzen. Das Aufsetzen auf der Workloadspezialisierung könnte für Teams in einem zentralen IT-Team etwas komplexer sein.
 
 ## <a name="management-specialization-processes"></a>Verwaltungsspezialisierungsprozesse
 
@@ -75,19 +75,19 @@ Im Rahmen jeder Spezialisierung erfolgt der folgende vierstufige Prozess in eine
 
 ### <a name="improve-system-design"></a>Verbessern des Systementwurfs
 
-Das Verbessern des Systementwurfs ist der effektivste Ansatz zur Optimierung des Betriebs jeder gängigen Plattform. Verbesserungen des Systementwurfs können die Stabilität erhöhen und Betriebsunterbrechungen verringern. Der Entwurf einzelner Systeme wird für die Umgebungssicht nicht berücksichtigt, die das Framework für die Cloudeinführung (Cloud Adoption Framework) einnimmt. Ergänzend zu diesem Framework bietet das Microsoft Azure Well-Architected Framework bewährte Methoden zur Verbesserung der Resilienz und des Entwurfs eines bestimmten Systems. Sie können diese Entwurfsverbesserungen für den Systementwurf einer Plattform oder einer bestimmten Workload übernehmen.
+Das Verbessern des Systementwurfs ist der effektivste Ansatz zur Optimierung des Betriebs jeder gängigen Plattform. Verbesserungen des Systementwurfs können die Stabilität erhöhen und Betriebsunterbrechungen verringern. Der Entwurf einzelner Systeme wird für die Umgebungssicht nicht berücksichtigt, die das Framework für die Cloudeinführung (Cloud Adoption Framework) einnimmt.
 
-Das Microsoft Azure Well-Architected Framework konzentriert sich auf die Verbesserung von fünf Grundpfeilern des Systementwurfs:
+Als Ergänzung zu diesem Framework bietet das [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) Grundsätze zum Verbessern einer Plattform oder einer bestimmten Workload. Der Schwerpunkt des Frameworks liegt auf der Verbesserung von fünf Säulen der Architekturexzellenz:
 
-- **Skalierbarkeit:** Skalieren der allgemeinen Plattformressourcen, um eine gestiegene Last zu bewältigen.
-- **Verfügbarkeit:** Verringern von Geschäftsunterbrechungen durch Verlängern der potenziellen Betriebszeit.
-- **Resilienz:** Verkürzen von Wiederherstellungszeiten und so der Dauer von Unterbrechungen.
-- **Sicherheit**: Schützen von Anwendungen und Daten vor externen Bedrohungen.
-- **Verwaltung:** Spezifisch für diese allgemeinen Plattformressourcen erfolgende Betriebsprozesse.
+- **Kostenoptimierung:** Verwalten der Kosten zur Maximierung des erzielten Werts.
+- **Betriebliche Exzellenz:** Verfolgen der operativen Prozesse, die für die Ausführung eines Systems in der Produktion sorgen.
+- **Effiziente Leistung:** Skalieren Sie Systeme so, dass Sie in Bezug auf Änderungen der Last flexibel sind.
+- **Zuverlässigkeit:** Entwerfen Sie Systeme so, dass sie nach Ausfällen wiederhergestellt und weiterhin ausgeführt werden können.
+- **Sicherheit**: Schützen Sie Anwendungen und Daten vor Bedrohungen.
 
 Die meisten Betriebsunterbrechungen sind Folge einer Form von technischen Schulden oder einer unzulänglichen Architektur. Bei bestehenden Bereitstellungen können Verbesserungen des Systementwurfs als das Abtragen bestehender technischer Schulden angesehen werden. Bei Neubereitstellungen können Verbesserungen des Systementwurfs als das Vermeiden technischer Schulden verstanden werden. Der nächste Abschnitt, „Automatisierte Korrektur“, befasst sich mit Möglichkeiten, technische Schulden anzugehen, die nicht beseitigt werden können oder sollten.
 
-Um den Systementwurf zu verbessern, erfahren Sie mehr über das [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/guide/pillars). Bei zunehmender Verbesserung Ihres Systementwurfs kehren Sie zu diesem Artikel zurück, um neue Möglichkeiten zur Verbesserung und Skalierung dieser Verbesserungen in Ihrer Umgebung zu finden.
+Um den Systementwurf zu verbessern, erfahren Sie mehr über das [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework). Bei zunehmender Verbesserung Ihres Systementwurfs kehren Sie zu diesem Artikel zurück, um neue Möglichkeiten zur Verbesserung und Skalierung dieser Verbesserungen in Ihrer Umgebung zu finden.
 
 ### <a name="automated-remediation"></a>Automatisierte Korrektur
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: BrianBlanchard
 ms.custom: virtual-network
-ms.openlocfilehash: 2c7a57f339ad241f3d2f448a61d0553d1487bde7
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 5527ca51f08b3eaf6a5bb6d022ad5a8696f502b6
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862618"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076105"
 ---
 # <a name="role-based-access-control"></a>Rollenbasierte Zugriffssteuerung
 
@@ -49,7 +49,7 @@ Azure bietet eine Vielzahl integrierter Rollendefinitionen mit drei Kernrollen f
 
 Ausgehend von diesen grundlegenden Zugriffsebenen bieten zusätzliche integrierte Rollen detailliertere Steuerungsmöglichkeiten für den Zugriff auf bestimmte Ressourcentypen oder Azure-Funktionen. Beispielsweise können Sie den Zugriff auf virtuelle Computer mithilfe der folgenden integrierten Rollen verwalten:
 
-- Mit der Rolle [Anmeldeinformationen des VM-Administrators](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-administrator-login) können Sie virtuelle Computer im Portal anzeigen und sich als _Administrator_ anmelden.
+- Mit der Rolle [Anmeldeinformationen des VM-Administrators](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-administrator-login) können Sie virtuelle Computer im Portal anzeigen und sich als `administrator` anmelden.
 - Die Rolle [Mitwirkender für virtuelle Computer](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-contributor) ermöglicht Ihnen das Verwalten von virtuellen Computern, aber nicht den Zugriff darauf oder auf das virtuelle Netzwerk oder das Speicherkonto, mit dem sie verbunden sind.
 - Die Rolle [Anmeldeinformationen für VM-Benutzer](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-user-login) kann virtuelle Computer im Portal anzeigen und sich als normaler Benutzer anmelden.
 
@@ -84,4 +84,6 @@ Die folgende Tabelle zeigt ein allgemeines Muster für die Aufteilung des IT-Zus
 
 Die Aufschlüsselung von Aktionen und Berechtigungen in diese Standardrollen ist oft für alle Ihre Anwendungen, Abonnements oder die gesamte Cloudumgebung gleich, auch wenn diese Rollen von verschiedenen Personen auf verschiedenen Ebenen ausgeführt werden. Dementsprechend können Sie einen gemeinsamen Satz von RBAC-Rollendefinitionen erstellen, die für verschiedene Bereiche innerhalb Ihrer Umgebung gelten. Benutzern und Gruppen kann dann eine gemeinsame Rolle zugewiesen werden, jedoch nur für den Bereich der Ressourcen, Ressourcengruppen, Abonnements oder Verwaltungsgruppen, für deren Verwaltung sie verantwortlich sind.
 
-In einer [Hub-and-Spoke-Netzwerktopologie](../azure-best-practices/hub-spoke-network-topology.md) mit mehreren Abonnements könnten Sie z. B. einen gemeinsamen Satz von Rollendefinitionen für den Hub und alle Workloadspokes haben. Die NetOps-Rolle eines Hubabonnements kann Mitgliedern der zentralen IT-Abteilung der Organisation zugewiesen werden, die für die Aufrechterhaltung des Netzwerkbetriebs für gemeinsame Dienste verantwortlich sind, die von allen Workloads genutzt werden. Die NetOps-Rolle eines Workloadspokeabonnements kann dann Mitgliedern dieses spezifischen Workloadteams zugewiesen werden, sodass sie das Netzwerk innerhalb dieses Abonnements konfigurieren können, um ihre Workloadanforderungen optimal zu unterstützen. Für beide wird die gleiche Rollendefinition verwendet, aber die bereichsbasierte Zuordnungen stellen sicher, dass Benutzer nur über den Zugriff verfügen, den sie für ihre Arbeit benötigen.
+<!-- cSpell:ignore NetOps SecOps " -->
+
+In einer [Hub-and-Spoke-Netzwerktopologie](../azure-best-practices/hub-spoke-network-topology.md) mit mehreren Abonnements könnten Sie z. B. einen gemeinsamen Satz von Rollendefinitionen für den Hub und alle Workloadspokes haben. Die NetOps-Rolle eines Hubabonnements kann Mitgliedern des zentralen IT-Teams der Organisation zugewiesen werden, die für die Aufrechterhaltung des Netzwerkbetriebs für gemeinsame Dienste verantwortlich sind, die von allen Workloads genutzt werden. Die NetOps-Rolle eines Workloadspokeabonnements kann dann Mitgliedern dieses spezifischen Workloadteams zugewiesen werden, sodass sie das Netzwerk innerhalb dieses Abonnements konfigurieren können, um ihre Workloadanforderungen optimal zu unterstützen. Für beide wird die gleiche Rollendefinition verwendet, aber die bereichsbasierte Zuordnungen stellen sicher, dass Benutzer nur über den Zugriff verfügen, den sie für ihre Arbeit benötigen.

@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 9c4a98c05f1a3cda8265b928c1a71556f1288e30
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 41393cab0775dedd634be966a5677d6839cb1c14
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216247"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84994206"
 ---
 # <a name="examples-of-global-reach-outcomes"></a>Beispiele für globale Reichweitenergebnisse
 
@@ -26,7 +26,7 @@ Bei Cloudlösungen werden die Kosten für die Globalisierung an den Cloudanbiete
 
 Die Erschließung eines neuen Markts kann während einer Transformation eines der wichtigsten Geschäftsergebnisse sein. Durch die Möglichkeit einer schnellen Bereitstellung von Ressourcen ohne längerfristige Verpflichtung in einem Markt können leitende Vertriebs- und Betriebsmitarbeiter Optionen erkunden, die in der Vergangenheit nicht einmal in Erwägung gezogen worden wären.
 
-- **Beispiel:** Ein Kosmetikhersteller hat einen Trend entdeckt. Einige Produkte werden in die Region Asien-Pazifik geliefert, obwohl dort keine Vertriebsteams arbeiten. Die Mindestanforderungen an die Systeme für Außendienstmitarbeiter sind zwar niedrig, aber die Latenz verhindert eine RAS-Lösung. Um trotzdem von diesem Trend profitieren zu können, möchte der Vertriebsleiter ein Experiment mit Vertriebsteams in Japan und Südkorea starten. Da das Unternehmen bereits zur Cloud migriert ist, konnte es die erforderlichen Systeme in Japan und Südkorea innerhalb weniger Tage bereitstellen. So konnte der Vertriebsleiter den Umsatz in der Region innerhalb von drei Monaten um _x Prozent_ steigern. Diese beiden Märkte übertreffen andere Regionen auf der Welt auch weiterhin und führen zu Vertriebschancen in der gesamten Region.
+- **Beispiel:** Ein Kosmetikhersteller hat einen Trend entdeckt. Einige Produkte werden in die Region Asien-Pazifik geliefert, obwohl dort keine Vertriebsteams arbeiten. Die Mindestanforderungen an die Systeme für Außendienstmitarbeiter sind zwar niedrig, aber die Latenz verhindert eine RAS-Lösung. Um trotzdem von diesem Trend profitieren zu können, möchte der Vertriebsleiter ein Experiment mit Vertriebsteams in Japan und Südkorea starten. Da das Unternehmen bereits zur Cloud migriert ist, konnte es die erforderlichen Systeme in Japan und Südkorea innerhalb weniger Tage bereitstellen. So konnte der Vertriebsleiter den Umsatz in der Region innerhalb von drei Monaten um _x %_ steigern. Diese beiden Märkte übertreffen andere Regionen auf der Welt auch weiterhin und führen zu Vertriebschancen in der gesamten Region.
 
 ## <a name="data-sovereignty"></a>Datenhoheit
 

@@ -8,18 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: dd4f6b58d3d8f1a1d1b6348ae83979c37c9305bc
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 5f4feaf4bbc9ffb78d58a86c42dcd28b4eb785c7
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755869"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785620"
 ---
 # <a name="motivations-and-business-risks-in-the-security-baseline-discipline"></a>Motivationen und Geschäftsrisiken in der Disziplin „Sicherheitsbaseline“
 
 In diesem Artikel werden die Gründe beschrieben, warum Kunden typischerweise eine Disziplin „Sicherheitsbaseline“ in ihre Cloud Governance-Strategie integrieren. Darüber hinaus werden einige Beispiele für mögliche Geschäftsrisiken aufgeführt, die zu Richtlinienanweisungen führen können.
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="relevance"></a>Relevance
 
@@ -32,7 +30,7 @@ Wie viel Sie in Sicherheitsrichtlinien und -prozesse investieren, hängt größt
 Die Disziplin „Sicherheitsbaseline“ umfasst die Unternehmensrichtlinien und manuellen Prozesse, die Sie einführen können, um Ihre Cloudbereitstellung vor Sicherheitsrisiken zu schützen.
 
 > [!NOTE]
->Obwohl es wichtig ist, die [Disziplin „Identitätsbaseline“](../identity-baseline/index.md) im Kontext der Disziplin „Sicherheitsbaseline“ zu verstehen und zu wissen, in welchem Zusammenhang dies mit Zugriffskontrolle steht, wird die Identitätsbaseline in den [fünf Disziplinen der Cloudgovernance](../index.md) als eigenständige Disziplin behandelt.
+> Obwohl es wichtig ist, die [Disziplin „Identitätsbaseline“](../identity-baseline/index.md) im Kontext der Disziplin „Sicherheitsbaseline“ zu verstehen und zu wissen, in welchem Zusammenhang dies mit Zugriffskontrolle steht, wird die Identitätsbaseline in den [fünf Disziplinen der Cloudgovernance](../index.md) als eigenständige Disziplin behandelt.
 
 ## <a name="business-risk"></a>Geschäftsrisiken
 

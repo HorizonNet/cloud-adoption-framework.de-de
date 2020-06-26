@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8a5a9fee1d8625cb2732e725aee924f1fd3984d3
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: cf33fabd3b3b7cfb6b1deadd127a8b8fb13b559d
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815496"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076077"
 ---
 <!-- cSpell:ignore paas NVAs VPNs -->
 
@@ -39,7 +39,7 @@ Die Beantwortung der folgenden Fragen zu Ihren Workloads ist hilfreich, um basie
 - **Kann über das Internet auf Ihre Workloads zugegriffen werden?** Azure bietet Dienste, die Sie beim Verwalten und Sichern des externen Zugriffs auf Ihre Anwendungen und Dienste unterstützen:
   - [Azure Firewall](https://docs.microsoft.com/azure/firewall/overview)
   - [Network Appliances](https://azure.microsoft.com/solutions/network-appliances)
-  - [Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor/front-door-overview)
+  - [Azure Front Door](https://docs.microsoft.com/azure/frontdoor/front-door-overview)
   - [Azure Application Gateway](https://docs.microsoft.com/azure/application-gateway)
   - [Azure Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)
 - **Müssen Sie eine benutzerdefinierte DNS-Verwaltung unterstützen?** [Azure DNS](https://docs.microsoft.com/azure/dns/dns-overview) ist ein Hostingdienst für DNS-Domänen. Azure DNS bietet eine Namensauflösung mithilfe der Azure-Infrastruktur. Wenn Ihre Workloads eine Namensauflösung erfordern, die von den Azure DNS-Features nicht durchgeführt werden kann, müssen Sie möglicherweise Zusatzlösungen bereitstellen. Wenn Ihre Workloads außerdem Active Directory-Dienste erfordern, sollten Sie die Verwendung von [Azure Active Directory Domain Services](https://docs.microsoft.com/azure/active-directory-domain-services/overview) in Betracht ziehen, um die Azure DNS-Funktionen zu ergänzen. Um weitere Funktionen für Ihre Anforderungen zu nutzen, können Sie auch [benutzerdefinierte virtuelle IaaS-Computer bereitstellen](https://docs.microsoft.com/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances).
@@ -54,17 +54,17 @@ Ein Azure-Netzwerk bietet mehrere Produkte und Dienste, die verschiedene Netzwer
 | --- | --- |
 | Ich benötige die Netzwerkinfrastruktur zum Verbinden sämtlicher Komponenten – von virtuellen Computern bis hin zu eingehenden VPN-Verbindungen. | [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network) |
 | Ich muss Lastenausgleich für ein- und ausgehenden Verbindungen und Anforderungen an meine Anwendungen oder Dienste ausführen. | [Azure-Lastenausgleich](https://docs.microsoft.com/azure/load-balancer) |
-| Ich möchte die Bereitstellung von Anwendungsserverfarmen optimieren und gleichzeitig die Anwendungssicherheit durch eine Web Application Firewall erhöhen. | [Azure Application Gateway](https://docs.microsoft.com/azure/application-gateway) <br> [Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor) |
+| Ich möchte die Bereitstellung von Anwendungsserverfarmen optimieren und gleichzeitig die Anwendungssicherheit durch eine Web Application Firewall erhöhen. | [Azure Application Gateway](https://docs.microsoft.com/azure/application-gateway) <br> [Azure Front Door](https://docs.microsoft.com/azure/frontdoor) |
 | Ich muss für sichere Nutzung des Internets für den Zugriff auf Azure Virtual Networks mit leistungsstarken VPN-Gateways sorgen. | [Azure VPN Gateway](https://docs.microsoft.com/azure/vpn-gateway) |
 | Ich möchte superschnelle DNS-Antworten und extrem hohe Verfügbarkeit für alle meine Domänenanforderungen sicherstellen. | [Azure DNS](https://docs.microsoft.com/azure/dns) |
-| Ich muss die Bereitstellung von Inhalten mit hoher Bandbreite für Kunden auf der ganzen Welt beschleunigen – von Anwendungen und gespeicherten Inhalten bis hin zum Streamen von Videos. | [Azure Content Delivery Network](https://docs.microsoft.com/azure/cdn) |
+| Ich muss die Bereitstellung von Inhalten mit hoher Bandbreite für Kunden auf der ganzen Welt beschleunigen – von Anwendungen und gespeicherten Inhalten bis hin zum Streamen von Videos. | [Azure Content Delivery Network (CDN)](https://docs.microsoft.com/azure/cdn) |
 | Ich muss meine Azure-Anwendungen vor DDoS-Angriffen schützen. | [Azure DDoS Protection](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) |
-| Ich muss den Datenverkehr optimal auf Dienste in Azure-Regionen auf der ganzen Welt verteilen und gleichzeitig für Hochverfügbarkeit und Reaktionsfähigkeit sorgen. | [Azure Traffic Manager](https://docs.microsoft.com/azure/traffic-manager) <br><br> [Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor) |
+| Ich muss den Datenverkehr optimal auf Dienste in Azure-Regionen auf der ganzen Welt verteilen und gleichzeitig für Hochverfügbarkeit und Reaktionsfähigkeit sorgen. | [Azure Traffic Manager](https://docs.microsoft.com/azure/traffic-manager) <br><br> [Azure Front Door](https://docs.microsoft.com/azure/frontdoor) |
 | Ich muss für Konnektivität in einem privaten Netzwerk sorgen, sodass aus meinem Unternehmensnetzwerken so auf Microsoft-Clouddienste zugreifen kann, als befänden diese sich in meinem eigenen Datencenter. | [Azure ExpressRoute](https://docs.microsoft.com/azure/expressroute) |
 | Ich möchte Überwachung und Diagnose von Bedingungen auf der Ebene des Netzwerkszenarios bereitstellen. | [Azure Network Watcher](https://docs.microsoft.com/azure/network-watcher) |
 | Ich benötige native Firewallfunktionen mit integrierter Hochverfügbarkeit, uneingeschränkter Cloudskalierbarkeit und ganz ohne Wartungsaufwand. | [Azure Firewall](https://docs.microsoft.com/azure/firewall/overview) |
 | Ich muss Geschäftsniederlassungen, Einzelhandelsstandorte und Standorte sicher verbinden. | [Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan) |
-| Ich benötige einen skalierbaren Bereitstellungspunkt mit erweiterter Sicherheit für globale Webanwendungen, die auf Microservices basieren. | [Azure Front Door Service](https://docs.microsoft.com/azure/frontdoor) |
+| Ich benötige einen skalierbaren Bereitstellungspunkt mit erweiterter Sicherheit für globale Webanwendungen, die auf Microservices basieren. | [Azure Front Door](https://docs.microsoft.com/azure/frontdoor) |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -88,13 +88,14 @@ Die folgende Tabelle bietet einen Überblick über die wichtigsten Szenarien, di
 
 ### <a name="azure-virtual-datacenter"></a>Virtuelles Azure-Rechenzentrum
 
-Zusätzlich zur Verwendung dieser Architekturmuster sollte Ihre IT-Unternehmensgruppen, die umfangreiche Cloudumgebungen verwalten, sich die [Informationen zu virtuellen Azure-Rechenzentren](../../reference/vdc.md) ansehen, wenn Sie eine Azure-basierte Cloudinfrastruktur entwerfen. Ein virtuelles Azure-Rechenzentrum stellt einen kombinierten Ansatz für die Einrichtung von Netzwerken, Sicherheit, Verwaltung und Infrastruktur für Organisationen bereit, die folgende Kriterien erfüllen:
+Zusätzlich zur Verwendung dieser Architekturmuster sollte Ihre IT-Unternehmensgruppen, die umfangreiche Cloudumgebungen verwalten, sich die [CAF-Zielzone auf Unternehmensebene](../../ready/enterprise-scale/index.md) ansehen. Wenn Sie Ihre Azure-basierte Cloudinfrastruktur entwerfen, bietet die CAF-Zielzone auf Unternehmensebene einen kombinierten Ansatz für Netzwerk, Sicherheit, Verwaltung und Infrastruktur, wenn Sie mittelfristig (innerhalb von 24 Monaten) das Ziel haben, **mehr als 1.000 Ressourcen (Apps, Infrastruktur oder Datenbestände) in der Cloud zu hosten**.
 
-- Ihr Unternehmen unterliegt gesetzlichen Bestimmungen, die zentrale Überwachungs- und Überprüfungsfunktionen erfordern.
-- Ihre Cloudumgebung besteht aus über 10.000 virtuellen IaaS-Computern oder einer vergleichbaren Anzahl von PaaS-Diensten.
-- Sie müssen agile Bereitstellungsfunktionen für Workloads zur Unterstützung von Entwicklungs- und Betriebsteams bereitstellen und gleichzeitig die Einhaltung allgemeiner Richtlinien und Governancebestimmungen sowie die zentrale IT-Kontrolle über die wichtigsten Dienste sicherstellen.
-- Ihre Branche hängt von einer komplexen Plattform ab, die tiefgehendes Fachwissen erfordert (z. B. Finanzen, Öl und Gas oder Herstellung).
-- Ihre vorhandenen IT-Governancerichtlinien erfordern eine engere Parität mit vorhandenen Funktionen, auch in frühen Phasen der Einführung.
+Bei Organisationen, die die folgenden Kriterien erfüllen, können Sie ebenfalls mit der [CAF-Zielzone auf Unternehmensebene](../../ready/enterprise-scale/index.md) beginnen:
+
+- Ihr Unternehmen unterliegt gesetzlichen Bestimmungen, die eine zentrale Überwachung erfordern.
+- Sie müssen die Einhaltung allgemeiner Richtlinien und Governancebestimmungen sowie die zentralisierte IT-Kontrolle über die wichtigsten Dienste sicherstellen.
+- Ihre Branche hängt von einer komplexen Plattform ab, die umfassende Steuerungsmechanismen und tiefgehendes Fachwissen erfordert. Dies ist am häufigsten bei großen Unternehmen im Bereich Finanzen, Öl und Gas oder Herstellung der Fall.
+- Ihre bestehenden IT-Governancerichtlinien erfordern eine engere Parität mit bestehenden Funktionen, auch in frühen Phasen der Einführung.
 
 ## <a name="follow-azure-networking-best-practices"></a>Nutzen von bewährten Methoden für Netzwerke von Azure
 

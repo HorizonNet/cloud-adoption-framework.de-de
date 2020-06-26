@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 1b3f21999cea35de59f30d882f9d8b104169952c
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: ba2a227f0ee12322d7d306b1bad2ff3c1a325e26
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815224"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785241"
 ---
 # <a name="workload-operations-in-cloud-management"></a>Workloadvorgänge in der Cloudverwaltung
 
@@ -94,7 +94,7 @@ Im Falle der Auflösung technischer Schulden und der automatisierten Bereinigung
 - **Verwaltung:** Operative Prozesse, die für die Ausführung eines Systems in der Produktion sorgen.
 - **Sicherheit**: Schützen von Anwendungen und Daten vor Bedrohungen.
 
-Um den Gesamtbetrieb zu verbessern, bietet das [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/guide/pillars) einen Ansatz zur Bewertung spezifischer Workloads hinsichtlich der Einhaltung dieser Vorgaben. Sie können diese Eckpfeiler sowohl auf den Plattform- als auch den Workloadbetrieb anwenden.
+Um den Gesamtbetrieb zu verbessern, bietet das [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) einen Ansatz zur Bewertung spezifischer Workloads hinsichtlich der Einhaltung dieser Vorgaben. Berücksichtigen Sie diese Eckpfeiler sowohl für den Plattform- als auch den Workloadbetrieb.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

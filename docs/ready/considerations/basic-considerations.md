@@ -7,12 +7,12 @@ ms.date: 04/09/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 98160a01647907609bfbc1b16d9a4ffe8e23e06c
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: de6299dd2dc7c8623137d77576ae681306abe375
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621525"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85077069"
 ---
 # <a name="landing-zone-considerations"></a>Überlegungen zu Landezonen
 
@@ -26,7 +26,7 @@ Diese Abbildung zeigt die wichtigsten Überlegungen bei der Implementierung eine
 
 Landezonen stellen eine Struktur für Hostingoptionen bereit. Die Struktur wird explizit über Governancekontrollen oder organisch durch die Einführung von Diensten innerhalb der Landezone erstellt. Die Informationen in den folgenden Artikeln helfen Ihnen beim Treffen von Entscheidungen, die in die Blaupause oder in andere Automatisierungsskripts zur Erstellung Ihrer Landezone einfließen:
 
-- [Entscheidungen zum Computeentwurf](./compute-options.md): Richten Sie Computeoptionen auf den Zweck der Landezone aus, um die operative Komplexität zu minimieren. Diese Entscheidung kann mithilfe von Automatisierungstoolketten wie Azure Policy-Initiativen und Landezonenblaupausen erzwungen werden.
+- [Entscheidungen zum Computeentwurf](./compute-options.md): Richten Sie Computeoptionen auf den Zweck der Landezone aus, um die operative Komplexität zu minimieren. Diese Entscheidung kann mithilfe von Automatisierungstoolketten wie Azure Policy-Initiativen und Landezonen erzwungen werden.
 - [Entscheidungen zum Speicherentwurf](./storage-options.md): Wählen Sie die richtige Azure Storage-Lösung für Ihre Workloadanforderungen aus.
 - [Entscheidungen zum Netzwerkentwurf](./networking-options.md): Wählen Sie die Netzwerkdienste, -tools und -architekturen aus, die die Workload-, Governance- und Konnektivitätsanforderungen Ihrer Organisation unterstützen.
 - [Entscheidungen zum Datenbankentwurf](./data-options.md): Hier erfahren Sie, welche Datenbanktechnologie am besten für Ihre Workloadanforderungen geeignet ist.

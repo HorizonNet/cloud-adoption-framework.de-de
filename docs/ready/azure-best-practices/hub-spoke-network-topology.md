@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 7e5512cba033adca5c3e88be265d45b5f8bc8f3c
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: 712cbc1338f1dce6fce2d724383233f84477baf8
+ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621421"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84799975"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs -->
 
@@ -36,9 +36,9 @@ Kleinere Cloudumgebungen profitieren möglicherweise nicht von der zusätzlichen
 
 ## <a name="overview"></a>Übersicht
 
-![Beispiele zur Hub-and-Spoke-Netzwerktopologie][1]
+![Beispiele zur Hub-and-Spoke-Netzwerktopologie](../../_images/azure-best-practices/network-hub-spoke-high-level.png)
 
-Wie in der Abbildung gezeigt, unterstützt Azure zwei Arten von Hub-and-Spoke-Entwürfen. Kommunikation, freigegebene Ressourcen und zentralisierte Sicherheitsrichtlinien („virtueller Netzwerkhub“ im Diagramm) oder ein virtueller WAN-Typ („Virtual WAN“ im Diagramm) für umfassende Kommunikation zwischen Branches oder zwischen einem Branch und Azure werden unterstützt.
+Wie in der Abbildung gezeigt, unterstützt Azure zwei Arten von Hub-and-Spoke-Entwürfen. Kommunikation, freigegebene Ressourcen und zentralisierte Sicherheitsrichtlinien (im Diagramm als `VNet hub` bezeichnet) oder auf Azure Virtual WAN basierender Entwurf (im Diagramm als `Virtual WAN` bezeichnet) für umfassende Kommunikation zwischen Branches oder zwischen einem Branch und Azure werden unterstützt.
 
 Ein Hub ist eine zentrale Netzwerkzone, die den ein- oder ausgehenden Datenverkehr zwischen Zonen steuert und überprüft: im Internet, lokal und in den Spokes. Die Hub-Spoke-Topologie stellt für Ihre IT-Abteilung eine effektive Möglichkeit zum Erzwingen von Sicherheitsrichtlinien an einem zentralen Ort dar. Außerdem verringert sie das Risiko von Fehlkonfigurationen und Offenlegungen.
 
@@ -63,9 +63,9 @@ In Azure wird jede Komponente, unabhängig vom Typ, in einem Azure-Abonnement be
 
 Eine einzelne Hub-and-Spoke-Implementierung kann auf eine große Anzahl von Spokes hochskaliert werden. Dabei gelten jedoch wie bei jedem IT-System gewisse Plattformbeschränkungen. Die Hub-Bereitstellung ist an ein bestimmtes Azure-Abonnement gebunden. Beispielsweise kann eine maximale Anzahl von Peerings in virtuellen Netzwerken gelten. Weitere Informationen finden Sie unter [Einschränkungen für Azure-Abonnements und Dienste, Kontingente und Einschränkungen](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits).
 
-In Fällen, in denen diese Beschränkungen ggf. ein Problem darstellen, kann die Architektur weiter hochskaliert werden, indem das Modell von einem einzelnen Hub und Spoke auf ein Cluster von Hubs und Spokes erweitert wird. Mehrere Hubs in mindestens einer Azure-Region können mithilfe von Peering in virtuellen Netzwerken, ExpressRoute, Virtual WAN oder einem Site-to-Site-VPN miteinander verbunden werden.
+In Fällen, in denen diese Beschränkungen ggf. ein Problem darstellen, kann die Architektur weiter hochskaliert werden, indem das Modell von einem einzelnen Hub und Spoke auf ein Cluster von Hubs und Spokes erweitert wird. Mehrere Hubs in mindestens einer Azure-Region können mithilfe von Peering in virtuellen Netzwerken, ExpressRoute, Azure Virtual WAN oder einem Site-to-Site-VPN miteinander verbunden werden.
 
-![Cluster mit Hubs und Spokes][2]
+![Cluster mit Hubs und Spokes](../../_images/azure-best-practices/network-hub-spokes-cluster.png)
 
 Die Einführung von mehreren Hubs erhöht die Kosten und den Verwaltungsaufwand für das System. Dies lässt sich nur durch Skalierbarkeit, Systemeinschränkungen oder Redundanz und die regionale Replikation zum Erzielen von Leistung für Benutzer oder Notfallwiederherstellung rechtfertigen. In Szenarien, die mehrere Hubs erfordern, sollten alle Hubs die gleichen Dienste anbieten, um die Vorgänge nicht zu erschweren.
 
@@ -77,12 +77,6 @@ Ein Architekt möchte vielleicht eine Workload mit mehreren Ebenen in mehreren v
 
 Ein typisches Beispiel für dieses Szenario ist die Platzierung von Anwendungsverarbeitungsservern in einem Spoke oder virtuellen Netzwerk. Die Datenbank wird dann in einem anderen Spoke oder virtuellen Netzwerk bereitgestellt. In diesem Fall ist es einfach, die Spokes mittels Peering in virtuellen Netzwerken zu verbinden und das Durchlaufen des Hubs dabei zu vermeiden. Die Lösung besteht darin, Architektur und Sicherheit sorgfältig zu überprüfen, um sicherzustellen, dass durch die Umgehung des Hubs keine wichtigen Sicherheits- oder Überwachungspunkte umgangen werden, die nur im Hub vorhanden sind.
 
-![Spokes, die eine Verbindung untereinander und mit einem Hub herstellen][3]
+![Spokes, die eine Verbindung untereinander und mit einem Hub herstellen](../../_images/azure-best-practices/network-spoke-to-spoke.png)
 
 Spokes können auch mit einem Spoke verbunden werden, der als Hub fungiert. Bei diesem Ansatz wird eine Hierarchie mit zwei Ebenen erstellt: Der Spoke auf der höheren Ebene (Ebene 0) wird der Hub der unteren Spokes (Stufe 1) in der Hierarchie. Die Spokes einer Hub-and-Spoke-Implementierung eines virtuellen Rechenzentrums sind zum Weiterleiten des Datenverkehrs an den zentralen Hub erforderlich, damit der Datenverkehr an sein Ziel im lokalen Netzwerk oder im öffentlichen Internet geleitet werden kann. Eine Architektur mit zwei Hubebenen führt komplexes Routing ein, das die Vorteile einer einfachen Hub-and-Spoke-Beziehung aufhebt.
-
-<!-- images -->
-
-[1]: ../../_Images/azure-best-practices/network-hub-spoke-high-level.png "Allgemeines Beispiel für Hub-and-Spoke"
-[2]: ../../_Images/azure-best-practices/network-hub-spokes-cluster.png "Cluster mit Hubs und Spokes"
-[3]: ../../_Images/azure-best-practices/network-spoke-to-spoke.png "Spoke-zu-Spoke"

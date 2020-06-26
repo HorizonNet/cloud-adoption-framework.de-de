@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 79c428da9d0be27c209fcc30686225217832dbe1
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 31cace97b3c34b5b32ad2e92fbb9f783cd19d89f
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862499"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076558"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>Erste Schritte: Beschleunigen neuer Produkt- und Dienstinnovationen in der Cloud
 
@@ -36,7 +36,7 @@ Erstellen Sie zur Vermeidung gängiger Hindernisse eine klare und prägnante Ges
 
 - [Beweggründe](../strategy/motivations.md): Der erste Schritt bei der strategischen Ausrichtung besteht darin, einen Konsens über die Beweggründe für die Innovationsbestrebungen zu erzielen. Beginnen Sie mit dem Verstehen und Kategorisieren von Beweggründen und gemeinsamen Themen verschiedener Beteiligter aus dem Geschäfts- und IT-Bereich.
 - [Geschäftsergebnisse](../strategy/business-outcomes/index.md): Nachdem die Beweggründe ausgerichtet wurden, können die gewünschten Geschäftsergebnisse erfasst werden. Diese Informationen stellt klare Metriken bereit, mit denen Sie die Gesamttransformation messen können.
-- [Ausgewogenheit des Portfolios](../strategy/balance-the-portfolio.md): Innovation ist nicht der richtige Einführungspfad für alle Workloads. Dieser Einführungsansatz eignet sich eher für neue, benutzerdefinierte Anwendungen oder Workloads, für die eine Umstrukturierung oder vollständige Neuerstellung _erforderlich_ ist. Wenn die Beweggründe stark zu Innovationen für alle Workloads tendieren, ist es wichtig, das Portfolio zu untersuchen, um sicherzustellen, dass sich mit den entsprechenden Investitionen die gewünschte Rendite (Return On Investment, ROI) erzielen lässt. Die Modernisierung bestimmter Ressourcen sowie kleinere Neuerstellungen können zwar innovativ sein, hierfür sind jedoch ggf. folgende Informationen besser geeignet: [Erste Schritte: Beschleunigen der Migration](./migrate.md).
+- [Ausgewogenheit des Portfolios](../strategy/balance-the-portfolio.md): Innovation ist nicht der richtige Einführungspfad für alle Workloads. Dieser Einführungsansatz eignet sich eher für neue, benutzerdefinierte Anwendungen oder Workloads, für die eine Umstrukturierung oder vollständige Neuerstellung **erforderlich** ist. Wenn die Beweggründe stark zu Innovationen für alle Workloads tendieren, ist es wichtig, das Portfolio zu untersuchen, um sicherzustellen, dass sich mit den entsprechenden Investitionen die gewünschte Rendite (Return On Investment, ROI) erzielen lässt. Die Modernisierung bestimmter Ressourcen sowie kleinere Neuerstellungen können zwar innovativ sein, hierfür sind jedoch ggf. folgende Informationen besser geeignet: [Erste Schritte: Beschleunigen der Migration](./migrate.md).
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -171,13 +171,13 @@ Alle in der Cloud gehosteten Ressourcen befinden sich in einer Zielzone. Für di
 **Ziele:**
 
 - Stellen Sie in der Anfangsphase einer Innovation eine erste Zielzone für erste Experimente mit geringem Risiko bereit.
-- Entwickeln Sie einen Plan für die Umgestaltung mit dem Cloudkompetenzzentrum oder der zentralen IT-Abteilung, um sicherzustellen, dass er mit Governance-, Sicherheits- und Betriebsaspekten in Einklang steht.
+- Entwickeln Sie einen Plan für die Umgestaltung mit dem Cloudkompetenzzentrum oder des zentralen IT-Teams, um sicherzustellen, dass er mit Governance-, Sicherheits- und Betriebsaspekten in Einklang steht.
 - Zeitachsenrisiken:
   - Governance-, Betriebs- und Sicherheitsanforderungen für die ersten zehn Workloads können diesen Prozess verlangsamen. Die eigentliche Umgestaltung der ersten Zielzone und der nachfolgenden Zielzonen dauert länger, sollte aber parallel zu den Migrationsmaßnahmen erfolgen.
 
 **Hinweis zur Erreichung der Ziele:**
 
-- [Auswählen einer Zielzone](../ready/landing-zone/first-landing-zone.md): Verwenden Sie diesen Artikel, um den richtigen Ansatz für die Bereitstellung einer Zielzone basierend auf Ihrem Einführungsmuster zu ermitteln. Stellen Sie dann diese standardisierte Codebasis bereit.
+- [Auswählen einer Zielzone](../ready/landing-zone/index.md): Ermitteln Sie anhand dieses Abschnitts den richtigen Ansatz für die Bereitstellung einer Zielzone basierend auf Ihrem Einführungsmuster. Stellen Sie dann diese standardisierte Codebasis bereit.
 - [Erweitern der Zielzone](../ready/considerations/index.md): Identifizieren Sie unabhängig vom Ausgangspunkt Lücken in der bereitgestellten Zielzone, um erforderliche Komponenten für Ressourcenorganisation, Sicherheit, Governance, Compliance und Betrieb hinzuzufügen.
 
 <!-- markdownlint-disable MD033 -->

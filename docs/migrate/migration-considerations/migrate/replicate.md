@@ -7,15 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2f09b7894782a038c7e39e85f0a93c2a49b20b07
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 32dbff24bf4a6ec49c4136bdef6d5e10c3bf83d0
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223540"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993530"
 ---
-<!-- markdownlint-disable MD026 -->
-
 # <a name="what-role-does-replication-play-in-the-migration-process"></a>Welche Rolle spielt die Replikation im Migrationsprozess?
 
 Lokale Rechenzentren sind mit physischen Ressourcen wie Servern, Appliances und Netzwerkgeräten gefüllt. Ein Server ist jedoch nur eine physische Hülle. Der eigentliche Wert ergibt sich durch den Binärcode, der auf dem Server ausgeführt wird. Die Anwendungen und Daten sind der Zweck für das Rechenzentrum. Dies sind die primären Binärdateien, die migriert werden müssen. Unterstützt werden diese Anwendungen und Datenspeicher durch andere digitale Ressourcen und Binärquellen, wie Betriebssysteme, Netzwerkrouten, Dateien und Sicherheitsprotokolle.
@@ -24,7 +22,7 @@ Die Replikation stellt die eigentliche Basis der Migration dar. Es ist der Proze
 
 ## <a name="required-prerequisites-to-replication"></a>Erforderliche Voraussetzungen für die Replikation
 
-Vor der Replikation müssen die _neue Plattform_ und die Hardware für den Empfang der Binärdateikopien vorbereitet werden. Im Artikel zu [Voraussetzungen](../prerequisites/index.md) sind die Mindestanforderungen an die Umgebung beschrieben, um eine sichere und Hochleistungsplattform für den Empfang der Binärdateireplikate zu erstellen.
+Vor der Replikation müssen die neue Plattform und die Hardware für den Empfang der Binärdateikopien vorbereitet werden. Im Artikel zu [Voraussetzungen](../prerequisites/index.md) sind die Mindestanforderungen an die Umgebung beschrieben, um eine sichere und Hochleistungsplattform für den Empfang der Binärdateireplikate zu erstellen.
 
 Die _Quellbinärdateien_ müssen ebenfalls für die Replikation und Synchronisierung vorbereitet werden. Die Artikel zur Bewertung, Architektur und Problembehandlung befassen sich jeweils mit den Aktionen, mit denen sichergestellt wird, dass die Quellbinärdatei für die Replikation und Synchronisierung bereit ist.
 

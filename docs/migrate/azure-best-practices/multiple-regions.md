@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 0445ba3048a7b16b792cd144c29d1643aefe0d09
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 636b0e2554fb9ab25134a226ef3bdd7aae067bb3
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815309"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076785"
 ---
 # <a name="azure-regions"></a>Azure-Regionen
 
@@ -85,8 +85,6 @@ Die folgende Tabelle kann beim Dokumentieren der Ergebnisse aus den oben genannt
 | Nordamerika | Canada      | Nein              | Kunden              | Ja                         | Ja                           |
 | Europa        | Deutschland     | Ja             | Partner und Kunden | Nein – nur Netzwerk           | Ja                           |
 | Asien-Pazifik  | Südkorea | Ja             | Partner               | Ja                         | Nein                            |
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="relevance-of-data-sovereignty"></a>Relevanz der Datenhoheit
 

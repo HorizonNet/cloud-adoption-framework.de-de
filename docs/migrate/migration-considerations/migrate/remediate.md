@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1d6d9569ab95705cd1058af74cf448283f1a2eef
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f2d9250dec7a157fdee2dc908c34625e970aeef1
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216111"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076158"
 ---
 # <a name="remediate-assets-prior-to-migration"></a>Korrigieren von Ressourcen vor der Migration
 
@@ -42,7 +42,7 @@ Wenn ein Rechenzentrum ordentlich verwaltet, gepatcht und aktualisiert wird, sin
 
 ## <a name="decision-framework"></a>Entscheidungsrahmen
 
-Die Korrektur kleinerer Workloads kann unter Umständen sehr einfach sein. Aus diesem Grund empfiehlt es sich, für die erste Migration eine kleinere Workload auszuwählen. Wenn Ihr Migrationsaufwand zunimmt und Sie mit größeren Workloads beginnen, kann sich die Korrektur zu einem zeitaufwendigen und teuren Prozess entwickeln. So kann z. B. der Aufwand für eine Migration von Windows Server 2003 mit einem Pool von mehr als 5.000 virtuellen Computern und deren Ressourcen eine Migration um Monate verzögern. Wenn solche umfangreichen Korrekturen notwendig sind, sollten Sie für Ihre Entscheidungen die folgenden Fragen beantworten:
+Die Korrektur kleinerer Workloads kann sehr einfach sein. Deshalb sollten Sie für Ihre erste Migration eine kleinere Workload wählen. Wenn Ihr Migrationsaufwand zunimmt und Sie mit größeren Workloads beginnen, kann sich die Korrektur zu einem zeitaufwendigen und teuren Prozess entwickeln. So kann z. B. der Aufwand für eine Migration von Windows Server 2003 mit einem Pool von mehr als 5.000 virtuellen Computern und deren Ressourcen eine Migration um Monate verzögern. Wenn solche umfangreichen Korrekturen notwendig sind, sollten Sie für Ihre Entscheidungen die folgenden Fragen beantworten:
 
 - Wurden alle von der Korrektur betroffenen Workloads ermittelt und im Migrationsbacklog erfasst?
 - Führt bei den nicht betroffenen Workloads eine Migration zu einer ähnlichen Rendite (ROI)?

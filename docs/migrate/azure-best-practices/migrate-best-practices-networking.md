@@ -7,12 +7,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5064de8d3fe2ca435aba7aa6322d0e6e47e65c1a
-ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
+ms.openlocfilehash: b2b8dcce16fd0e6d277160f1177347f887488712
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84023456"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993863"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -33,7 +33,7 @@ Azure bietet virtuelle Netzwerke mit folgenden Funktionen:
 - Sie können in jedem Azure-Abonnement und jeder Azure-Region mehrere VNets implementieren.
 - Jedes VNet ist von anderen VNets isoliert.
 - VNETs können private und öffentliche IP-Adressen enthalten, die in [RFC 1918](https://tools.ietf.org/html/rfc1918) definiert sind und in der CIDR-Notation dargestellt werden. Auf öffentliche IP-Adressen, die im Adressraum eines VNETs angegeben wurden, kann über das Internet nicht direkt zugegriffen werden.
-- VNETs können sich mittels VNET-Peering miteinander verbinden. Verbundene VNETs können sich in derselben oder in verschiedenen Regionen befinden. Daher können Ressourcen in einem VNET eine Verbindung mit Ressourcen in anderen VNETs herstellen.
+- VNETs können sich mittels Peering virtueller Netzwerke miteinander verbinden. Verbundene VNETs können sich in derselben oder in verschiedenen Regionen befinden. Daher können Ressourcen in einem VNET eine Verbindung mit Ressourcen in anderen VNETs herstellen.
 - Azure leitet Datenverkehr standardmäßig zwischen Subnetzen innerhalb eines VNET, verbundenen VNETs, lokalen Netzwerken und dem Internet weiter.
 
 Bei der Planung Ihrer VNET-Topologie sollten Sie überlegen, wie Sie die IP-Adressräume anordnen, ein Hub-Spoke-Netzwerk implementieren, VNETs in Subnetze segmentieren, DNS einrichten und Azure-Verfügbarkeitszonen implementieren möchten.
@@ -42,9 +42,9 @@ Bei der Planung Ihrer VNET-Topologie sollten Sie überlegen, wie Sie die IP-Adre
 
 Wenn Sie im Rahmen der Migration VNETs erstellen, ist es wichtig, Ihren VNET-IP-Adressraum zu planen.
 
-- Sie müssen einen Adressraum zuweisen, der für jedes VNET nicht größer als ein CIDR-Bereich von /16 ist. VNETs ermöglichen die Nutzung von 65.536 IP-Adressen. Die Zuweisung eines kleineren Präfixes als /16 (z. B. /15 mit 131.072 Adressen) führt dazu, dass die überzähligen IP-Adressen nicht für andere Bereiche genutzt werden können. IP-Adressen dürfen keinesfalls verschwendet werden, selbst wenn sie sich in den durch RFC 1918 definierten privaten Bereichen befinden.
+- Sie müssen einen Adressraum zuweisen, der für jedes VNET nicht größer als der CIDR-Bereich `/16` ist. VNETs ermöglichen die Nutzung von 65.536 IP-Adressen. Die Zuweisung eines kleineren Präfixes als `/16` (z. B. `/15` mit 131.072 Adressen) führt dazu, dass die überzähligen IP-Adressen nicht für andere Bereiche genutzt werden können. IP-Adressen dürfen keinesfalls verschwendet werden, selbst wenn sie sich in den durch RFC 1918 definierten privaten Bereichen befinden.
 - Der VNET-Adressraum darf sich nicht mit lokalen Netzwerkbereichen überschneiden.
-- Die Netzwerkadressenübersetzung (NAT) darf nicht verwendet werden.
+- Verwenden Sie nicht die Netzwerkadressenübersetzung (Network Address Translation, NAT).
 - Überlappende Adressen können zu Netzwerken führen, mit denen keine Verbindung hergestellt werden kann, und zu einem Routing, das nicht ordnungsgemäß funktioniert. Wenn Netzwerke überlappen, müssen Sie das Netzwerk neu entwerfen oder die Netzwerkadressenübersetzung (NAT) verwenden.
 
 **Weitere Informationen**:
@@ -73,9 +73,9 @@ _Hub-Spoke-Topologie_
 
 **Weitere Informationen**:
 
-- [Erfahren Sie mehr](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke) über Hub-Spoke-Topologien.
-- Erhalten Sie Netzwerkempfehlungen für die Ausführung von Azure-VMs unter [Windows](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/windows-vm) und [Linux](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/linux-vm).
-- Informieren Sie sich über [VNET-Peering](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview).
+- Erfahren Sie mehr über eine [Hub-Spoke-Topologie](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke).
+- Erhalten Sie Netzwerkempfehlungen für die Ausführung von [Windows-VMs](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/windows-vm) und [Linux-VMs](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/linux-vm).
+- Erfahren Sie mehr zum [Peering virtueller Netzwerke](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview).
 
 ## <a name="best-practice-design-subnets"></a>Bewährte Methode: Entwerfen von Subnetzen
 
@@ -212,7 +212,7 @@ Wenn Sie ein VPN-Gateway in Azure erstellen, müssen Sie ein spezielles Subnetz 
 
 Der Netzwerkdienst Azure Virtual WAN bietet für eine mehrere VPN-Verbindungen optimierte und automatisierte Konnektivität zwischen Filialen über Azure.
 
-- Per Virtual WAN können Sie Filialgeräte für die Kommunikation mit Azure verbinden und konfigurieren. Dies ist manuell oder durch die Nutzung von Geräten eines bevorzugten Anbieters über einen Virtual WAN-Partner möglich.
+- Per Virtual WAN können Sie Filialgeräte für die Kommunikation mit Azure verbinden und konfigurieren. Dies ist manuell oder durch die Nutzung von Geräten eines bevorzugten Anbieters über einen Azure Virtual WAN-Partner möglich.
 - Die Nutzung von Geräten eines bevorzugten Anbieters ermöglicht eine einfache Verwendung, Konnektivität und Konfigurationsverwaltung.
 - Über das integrierte Azure WAN-Dashboard können Sie anhand der Problembehandlung sofort Erkenntnisse gewinnen, um Zeit zu sparen. Zudem können Sie auf einfache Weise umfangreiche Site-to-Site-Verbindungen überwachen.
 

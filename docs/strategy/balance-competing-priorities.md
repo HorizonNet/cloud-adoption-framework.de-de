@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 7a09f6fe1dd337d1c42eb193cc23c9aa9519e6b9
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: ee5ef7d171002d21b104b8fad7a33a77a57cfaa9
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815411"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84788199"
 ---
 # <a name="balance-competing-priorities"></a>Ausgewogenheit konkurrierender Prioritäten
 
@@ -88,7 +88,7 @@ Während der Migration ist es üblich, dass die Einführungsteams davon ausgehen
 
 **Mindestumfang:** Verwenden Sie während der Planung in der Frühphase die Option für das erneute Hosten, und seien Sie sich dabei bewusst, dass diese Option eine anfängliche Geschäftsannahme und keine technische Entscheidung ist. Bei der Migrationsmethodik stellt das Cloudeinführungsteam dann diese Annahme für jede migrierte Workload in Frage. Diese Methodik folgt dem Ansatz „Bewertung/Migration/Förderung“ für jede Workload oder Workloadgruppe, die eine Migrationsfactory bildet. Während der Bewertungsphase wertet das Einführungsteam die technische Eignung sowie die Architektur der einzelnen Workloads aus. Diese Bewertungsmaßnahmen führen selten zu einem reinen Lift & Shift-Ansatz, da viele der Architekturkomponenten zum Zwecke von Refactoring und Modernisierung ausgewählt werden.
 
-**Beispiel zum erweiterten Umfang:** Bei unternehmenskritischen oder äußerst wichtigen Workloads, etwa bei einem Mainframe oder einer Microserviceanwendung mit mehreren Ebenen, kann in der Beurteilungsphase eine umfassendere Einschätzung der Workload erforderlich sein. In solchen Situationen, in denen die Architektur neu überdacht wird, sollten Kunden die Microsoft Azure Well-Architected Review und das Microsoft Azure Well-Architected Framework nutzen, um die Anforderungen an die Workload während der Bewertung einzuschränken.
+**Beispiel zum erweiterten Umfang:** Bei unternehmenskritischen oder äußerst wichtigen Workloads, etwa bei einem Mainframe oder einer Microserviceanwendung mit mehreren Ebenen, kann in der Beurteilungsphase eine umfassendere Einschätzung der Workload erforderlich sein. In solchen Situationen, in denen die Architektur neu überdacht wird, sollten Kunden die Microsoft Azure Well-Architected Review und das [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) nutzen, um die Anforderungen an die Workload während der Bewertung einzuschränken.
 
 ## <a name="balance-during-the-innovate-phase"></a>Gleichgewicht während der Innovationsphase
 

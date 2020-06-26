@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: ddf148a71baba3a7675a9e5bb77eb44d07fe0354
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 4ad936390af2d1c869c424381b2f235ffb611a1c
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224101"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993891"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>Häufige Herausforderungen und Hindernisse bei Innovationen
 
@@ -27,14 +27,14 @@ Die folgende Liste zeigt einige der häufigsten Herausforderungen bei der Einfü
 ### <a name="external-challenges"></a>Externe Herausforderungen
 
 - **Time-to-Market**: In der digitalen Wirtschaft ist die Time-to-Market einer der wichtigsten Indikatoren für die Marktdominanz. Überraschenderweise hat die Auswirkungen der Time-to-Market wenig mit der Positionierung oder einem frühen Marktanteil zu tun. Beide Faktoren sind unbeständig und temporär. Die Vorteile der Time-to-Market entspringen der einfachen Wahrheit, dass eine längere Marktpräsenz Ihrer Lösung mehr Zeit für Lernprozesse, Iterationen und Verbesserungen bedeutet. Konzentrieren Sie sich verstärkt auf die schnelle Definition und die schnelle Erstellung eines effektiven Minimum Viable Product (MVP), um die Time-to-Market zu verkürzen und die Lernmöglichkeiten effektiver zu nutzen.
-- **Herausforderungen durch den Wettbewerb**: Dominante etablierte Unternehmen reduzieren die Möglichkeiten, Kunden einzubinden und von diesen zu lernen. Mitbewerber sorgen für Druck von außen, Produkte schneller zu liefern. Erstellen Sie die Lösung schnell, sorgen Sie aber gleichzeitig dafür, dass Sie die _Measures_ richtig verstehen. Durch klar definierte Nischen erhalten Sie aussagekräftigere Measures aus Feedback, und Sie können Partner enger einbeziehen und von ihnen _lernen_. So erzielen Sie insgesamt bessere Lösungen.
+- **Herausforderungen durch den Wettbewerb**: Dominante etablierte Unternehmen reduzieren die Möglichkeiten, Kunden einzubinden und von diesen zu lernen. Mitbewerber sorgen für Druck von außen, Produkte schneller zu liefern. Erstellen Sie die Lösung schnell, sorgen Sie aber gleichzeitig dafür, dass Sie die _Measures_ richtig verstehen. Durch klar definierte Nischen erhalten Sie aussagekräftigere Measures aus Feedback, und Sie können Partner enger einbeziehen und von ihnen lernen. So erzielen Sie insgesamt bessere Lösungen.
 - **Ihre Kunden verstehen**: Die Empathie für Kunden beginnt damit, dass Sie Ihre Kunden verstehen. Eine der größten Herausforderungen für innovative Unternehmen ist die Fähigkeit, Messwerte und Erkenntnisse innerhalb des Zyklus „Erstellen-Messen-Lernen“ schnell zu kategorisieren. Es ist wichtig, die Kundenperspektive im Hinblick auf Marktsegmentierung, Kanäle und Arten von Beziehungen zu verstehen. Während des gesamten Zyklus „Erstellen-Messen-Lernen“ helfen diese Datenpunkte dabei, Empathie zu erzeugen und gewonnene Erkenntnisse umzusetzen.
 
 ### <a name="internal-challenges"></a>Interne Herausforderungen
 
 - **Auswählen von Innovationskandidaten**: Wenn es um Innovationen geht, entstehen in stabilen Unternehmen immer neue potenzielle Erfindungen. Viele von ihnen erstellen überzeugende Geschäftsfälle, die hohe Renditen erwarten lassen und verlockende Tabellenkalkulationen zur Rechtfertigung von Geschäftsvorgängen generieren. Wie im Artikel zur Erstellung von Lösungen beschrieben, sollten _Lösungen mit Kundenempathie erstellt_ und solchen Erfindungen vorgezogen werden, die nur auf Gewinnprognosen basieren. Wenn sich im Vorschlag keine Empathie für Kunden erkennen lässt, ist eine langfristige Einführung und Akzeptanz unwahrscheinlich.
 - **Ausgewogenheit des Portfolios**: Bei den meisten Technologieimplementierungen geht es nicht primär darum, den Markt zu verändern oder das Leben von Kunden zu verbessern. In einer durchschnittlichen IT-Abteilung werden mehr als 80 % aller Workloads für die Automatisierung grundlegender Prozesse eingesetzt. Da Innovationen heute so einfach sind, ist es verlockend, solche Lösungen neu zu entwerfen. In den meisten Fällen lässt sich für diese Workloads die gleiche oder eine bessere Leistung erzielen, indem die Lösung migriert oder modernisiert wird, ohne dass grundlegende Geschäftslogik oder Datenprozesse geändert werden müssen. Finden Sie das richtige Gleichgewicht für Ihre Portfolio, um Innovationsstrategien zu bevorzugen, die mit klarem Blick auf die Anforderungen der Kunden (extern oder intern) _erstellt_ werden können. Befolgen Sie für alle anderen Workloads einen Migrationspfad mit Blick auf finanzielle Ergebnisse.
-- **Beibehalten des Fokus und Schützen von Prioritäten**: Wenn eine Innovationszusage gemacht wurde, ist es wichtig, den Fokus des Teams aufrechtzuerhalten. Während der ersten Iteration einer _Erstellungsphase_ lässt sich ein Team relativ einfach dafür begeistern, die Zukunft Ihrer Kunden zu verändern. Dieses erste MVP-Release ist jedoch erst der Anfang. Wahre Innovation entsteht in jedem Erstellen-Messen-Lernen-Zyklus, in dem das Team aus den Feedbackschleifen lernt, um eine noch bessere Lösung zu finden. Der wichtigste Beitrag, den Sie als führende Kraft eines Innovationsprozesses leisten können, besteht darin, die Fokussierung des Teams aufrecht zu erhalten und Innovationsprioritäten während der nachfolgenden, weniger spannenden Erstellungsiterationen im Blick zu haben.
+- **Beibehalten des Fokus und Schützen von Prioritäten**: Wenn eine Innovationszusage gemacht wurde, ist es wichtig, den Fokus des Teams aufrechtzuerhalten. Während der ersten Iteration einer Erstellungsphase lässt sich ein Team relativ einfach dafür begeistern, die Zukunft Ihrer Kunden zu verändern. Dieses erste MVP-Release ist jedoch erst der Anfang. Wahre Innovation entsteht in jedem Erstellen-Messen-Lernen-Zyklus, in dem das Team aus den Feedbackschleifen lernt, um eine noch bessere Lösung zu finden. Der wichtigste Beitrag, den Sie als führende Kraft eines Innovationsprozesses leisten können, besteht darin, die Fokussierung des Teams aufrecht zu erhalten und Innovationsprioritäten während der nachfolgenden, weniger spannenden Erstellungsiterationen im Blick zu haben.
 
 ## <a name="invention-challenges"></a>Herausforderungen bei Erfindungen
 

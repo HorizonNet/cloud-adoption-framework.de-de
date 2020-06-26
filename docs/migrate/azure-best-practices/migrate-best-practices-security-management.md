@@ -7,12 +7,12 @@ ms.date: 12/08/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 56abab2dbbc1acaa397fd04564bec45a8ebc5f8e
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 8233d262a8f6ea7f2ecd573cf33aff8d46f74f4b
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862567"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85077255"
 ---
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
 
@@ -262,7 +262,7 @@ Häufig bietet die Verwendung nur eines Ressourcengruppenamens für Ressourcen n
 
 ## <a name="best-practice-implement-blueprints"></a>Bewährte Methode: Implementieren von Blaupausen
 
-Genau wie eine Blaupause, mit der Ingenieure oder Architekten die Entwurfsparameter für ein Projekt skizzieren, ermöglicht es der Azure Blueprints-Dienst Cloudarchitekten und zentralen IT-Gruppen, eine wiederholbare Gruppe von Azure-Ressourcen zu definieren, mit der die Standards, Muster und Anforderungen einer Organisation implementiert und durchgesetzt werden. Mit Azure Blueprints können Entwicklungsteams schnell neue Umgebungen erstellen und bereitstellen, die die Konformitätsanforderungen der Organisation erfüllen und über eine Reihe integrierter Komponenten (z. B. Netzwerk) zur Beschleunigung der Entwicklung und Bereitstellung verfügen.
+Genau wie eine Blaupause, mit der Ingenieure oder Architekten die Entwurfsparameter für ein Projekt skizzieren, ermöglicht es der Azure Blueprints-Dienst Cloudarchitekten und zentralen IT-Teams, eine wiederholbare Gruppe von Azure-Ressourcen zu definieren, mit der die Standards, Muster und Anforderungen einer Organisation implementiert und durchgesetzt werden. Mit Azure Blueprints können Entwicklungsteams schnell neue Umgebungen erstellen und bereitstellen, die die Konformitätsanforderungen der Organisation erfüllen und über eine Reihe integrierter Komponenten (z. B. Netzwerk) zur Beschleunigung der Entwicklung und Bereitstellung verfügen.
 
 - Verwenden Sie Blaupausen, um die Bereitstellung von Ressourcengruppen, Azure Resource Manager-Vorlagen sowie Richtlinien- und Rollenzuweisungen zu orchestrieren.
 - Blaupausen werden in einer global verteilten Azure Cosmos DB-Instanz gespeichert. Blaupausenobjekte werden in mehreren Azure-Regionen repliziert. Die Replikation bietet geringe Latenzen, Hochverfügbarkeit und konsistenten Zugriff auf Blaupausen – unabhängig davon, in welcher Region eine Blaupause Ihre Ressourcen bereitstellt.

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: dd3d1b0bcbef071c1b5d819071a0f539948ec273
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: d8b0e83352fdaf0151f93e5fcd85036d843ce886
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861054"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075249"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
@@ -109,7 +109,7 @@ Weitere Informationen finden Sie unter
 
 ## <a name="azure-database-migration-service"></a>Azure Database Migration Service
 
-Azure Database Migration Service ist ein vollständig verwalteter Dienst, der die nahtlose Migration von mehreren Datenbankquellen zu Azure-Datenplattformen mit minimaler Ausfallzeit ermöglicht (Onlinemigrationen). Azure Database Migration Service führt alle erforderlichen Schritte durch. Sie können Ihre Migrationsprojekte mit der Gewissheit initiieren, dass die Migration unter Verwendung der von Microsoft empfohlenen bewährten Methoden erfolgt.
+Azure Database Migration Service ist ein vollständig verwalteter Dienst, der die nahtlose Migration von mehreren Datenbankquellen zu Azure-Datenplattformen mit minimaler Ausfallzeit ermöglicht (Onlinemigrationen). Azure Database Migration Service führt alle erforderlichen Schritte durch. Sie können Ihre Migrationsprojekte mit der Gewissheit starten, dass die Migration unter Verwendung der von Microsoft empfohlenen bewährten Methoden erfolgt.
 
 ### <a name="create-an-azure-database-migration-service-instance"></a>Erstellen einer Instanz von Azure Database Migration Service
 

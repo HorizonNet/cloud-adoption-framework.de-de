@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: dd818e65e6f9064119b27dfb5ea87b8a04bda671
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: c481087665e777a4c461d260e2e558a620fda32c
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222129"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85077150"
 ---
 <!-- cSpell:ignore migrateable -->
 
@@ -30,7 +30,7 @@ Das Ziel einer Einführung kann einen wesentlichen Einfluss auf die empfohlene V
 
 Kein Unternehmen würde sich nur eines dieser Ergebnisse zum Ziel setzen. Ohne Betriebsvorgänge gibt es keine Kunden und umgekehrt. Die Cloudeinführung ist da keine Ausnahmen. Unternehmen arbeiten in der Regel daran, jedes dieser Ergebnisse zu erzielen, aber bei dem Versuch, sich auf alle gleichzeitig zu konzentrieren, können die Bemühungen im Einzelnen zu gering ausfallen und zu verlangsamten Fortschritten bei den Arbeiten führen, die den größten Nutzen für Ihre Geschäftsanforderungen bringen könnten.
 
-Diese Voraussetzung bedeutet nicht, dass Sie eines dieser drei Ziele auswählen müssen, sondern dass Sie Ihrem Cloudstrategieteam und Cloudeinführungsteam helfen, eine Reihe von operativen Prioritäten als Leitfaden für die Ausführung in den nächsten drei bis sechs Monaten festzulegen. Zur Festlegung dieser Prioritäten wird eine Rangfolge für die drei einzelnen Optionen _von der wichtigsten_ zu der _am wenigsten wichtigen_ aufgestellt, da sie in Bezug zu den Maßnahmen stehen, zu denen dieses Team in den nächsten ein bis zwei Quartalen beitragen kann.
+Diese Voraussetzung bedeutet nicht, dass Sie eines dieser drei Ziele auswählen müssen, sondern dass Sie Ihrem Cloudstrategieteam und Cloudeinführungsteam helfen, eine Reihe von operativen Prioritäten als Leitfaden für die Ausführung in den nächsten drei bis sechs Monaten festzulegen. Zur Festlegung dieser Prioritäten wird eine Rangfolge für die drei einzelnen Optionen von der wichtigsten zu der am wenigsten wichtigen aufgestellt, da sie in Bezug zu den Maßnahmen stehen, zu denen dieses Team in den nächsten ein bis zwei Quartalen beitragen kann.
 
 ### <a name="act-on-migration-outcomes"></a>Maßnahmen für Migrationsergebnisse
 
@@ -64,8 +64,8 @@ Während des Prozesses der [Rationalisierung digitaler Ressourcen](../../../digi
 
 Der Umfang der Migration ist die nächste wichtige vorab erforderliche Entscheidung. Die Prozesse, die zum Migrieren von 1.000 Ressourcen erforderlich sind, unterscheiden sich von dem Prozess zum Verschieben von 10.000 Ressourcen. Bevor Sie mit der Migration beginnen, ist es wichtig, die folgenden Fragen zu beantworten:
 
-- **Wie viele Ressourcen unterstützen derzeit die zu migrierenden Workloads?** Ressourcen umfassen Datenstrukturen, Anwendungen, virtuelle Computer und erforderliche IT-Geräte. Es wird empfohlen, für die erste Migration eine relativ kleine Workload auszuwählen.
-- **Für wie viele dieser Ressourcen ist eine Migration geplant?** Es ist üblich, dass ein Prozentsatz der Ressourcen während eines Migrationsprozesses beendet wird, da keine weitere Abhängigkeit für Endbenutzer besteht.
+- **Wie viele Ressourcen unterstützen derzeit die zu migrierenden Workloads?** Ressourcen umfassen Datenstrukturen, Anwendungen, virtuelle Computer und erforderliche IT-Geräte. Wählen Sie für die erste Migration eine relativ kleine Workload.
+- **Für wie viele dieser Ressourcen ist eine Migration geplant?** Es ist üblich, dass einige Ressourcen während eines Migrationsprozesses beendet werden, da keine weitere Abhängigkeit für Endbenutzer besteht.
 - **Welche Top-Down-Schätzungen gibt es für den Umfang migrierbarer Ressourcen?** Schätzen Sie für die zur Migration anstehenden Workloads die Anzahl der unterstützenden Ressourcen wie Anwendungen, virtuelle Computer, Datenquellen und IT-Geräte. Anleitungen zum Identifizieren relevanter Ressourcen finden Sie im Abschnitt [Digitale Ressourcen](../../../digital-estate/index.md) des Framework für die Cloudeinführung.
 
 ### <a name="effort-timing"></a>Zeitliche Festlegung des Aufwands

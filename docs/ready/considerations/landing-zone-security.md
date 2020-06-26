@@ -1,24 +1,24 @@
 ---
 title: Erhöhen der Sicherheit von Zielzonen
-description: Erhöhen der Sicherheit von Zielzonen
+description: Erhöhen der Sicherheit von Zielzonen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 116c628d31267fafe50d8a870f9e6c83d3c51f3c
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: c015b54a10b7b1ef76969148dbea263d37353562
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756497"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076138"
 ---
 <!-- cSpell:ignore SIEM -->
 
 # <a name="improve-landing-zone-security"></a>Erhöhen der Sicherheit von Zielzonen
 
-Wenn Workloads oder die Zielzone, in der sie gehostet werden, den Zugriff auf vertrauliche Daten oder unternehmenskritische Systeme erfordern, ist es wichtig, die Daten und Ressourcen zu schützen. Die Verbesserung der Sicherheit von Zielzonen baut auf dem [testgesteuerten Entwicklungsansatz für Zielzonen](./test-driven-development.md) auf, indem die Zielzone erweitert oder umgestaltet wird, um den erhöhten Sicherheitsanforderungen gerecht zu werden.
+Wenn eine Workload oder die Zielzonen, in der sie gehostet wird, den Zugriff auf vertrauliche Daten oder unternehmenskritische Systeme erfordern, ist es wichtig, die Daten und Ressourcen zu schützen. Die Verbesserung der Sicherheit von Zielzonen baut auf dem [testgesteuerten Entwicklungsansatz für Zielzonen](./test-driven-development.md) auf, indem die Zielzone erweitert oder umgestaltet wird, um den erhöhten Sicherheitsanforderungen gerecht zu werden.
 
 ## <a name="landing-zone-security-best-practices"></a>Bewährte Sicherheitsmethoden für Zielzonen
 

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5f9217e64919198feb2b55cf068ca3dc5133309e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f3b3987c016a5fbf76355a27eec720c5620cdc34
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222435"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993762"
 ---
 # <a name="predict-and-influence"></a>Vorhersagen und Beeinflussen
 
@@ -32,7 +32,15 @@ Eine Vielzahl von Anwendungen und Umgebungserfahrungen nutzen Daten, um Vorhersa
 
 ## <a name="develop-predictive-capabilities"></a>Entwickeln prädiktiver Fähigkeiten
 
-Lösungen, die durchgängig genaue prädiktive Fähigkeiten bieten, weisen in der Regel fünf Kernmerkmale auf: _Daten_, _Erkenntnisse_, _Muster_, _Vorhersagen_ und _Interaktionen_. Alle Aspekte sind erforderlich, um prädiktive Fähigkeiten zu entwickeln. Wie alle großen Innovationen erfordert die Entwicklung prädiktiver Fähigkeiten eine [Verpflichtung zur Iteration](./index.md#commitment-to-iteration). Bei jeder Iteration reifen ein oder mehrere der folgenden Merkmale, um immer komplexere Kundenhypothesen für gültig zu erklären.
+Lösungen, die durchgängig genaue prädiktive Fähigkeiten bieten, weisen in der Regel fünf Kernmerkmale auf:
+
+    - Daten
+    - Einblicke
+    - Muster
+    - Vorhersagen (Predictions)
+    - Interaktionen
+
+Alle Aspekte sind erforderlich, um prädiktive Fähigkeiten zu entwickeln. Wie alle großen Innovationen erfordert die Entwicklung prädiktiver Fähigkeiten eine [Verpflichtung zur Iteration](./index.md#commitment-to-iteration). Bei jeder Iteration reifen ein oder mehrere der folgenden Merkmale, um immer komplexere Kundenhypothesen für gültig zu erklären.
 
 ![Schritte beim Entwickeln prädiktiver Fähigkeiten](../../_images/innovate/predict-and-influence.png)
 
