@@ -7,26 +7,26 @@ ms.date: 10/17/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 2ee786e1a9c7f6b4cb4699aec01d647cabc37827
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 8cecbdcf475f243533b9b7215729dd15de4a51e3
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223659"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785190"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Einrichten einer Überprüfung der Einsatztauglichkeit
 
 Wenn Ihr Unternehmen damit beginnt, Workloads in Azure auszuführen, besteht der nächste Schritt darin, einen Prozess zur _Überprüfung der Einsatztauglichkeit_ einzurichten. In diesem Prozess werden die _nicht funktionalen_ Anforderungen für diese Workloads aufgelistet, implementiert und iterativ überprüft. Nicht funktionale Anforderungen beziehen sich auf das erwartete betriebliche Verhalten des Diensts.
 
-Es gibt fünf wesentliche Kategorien nicht funktionaler Anforderungen, die als [Säulen der Softwarequalität](https://docs.microsoft.com/azure/architecture/guide/pillars) bezeichnet werden:
+Es gibt fünf wesentliche Kategorien nicht funktionaler Anforderungen, die als die [Säulen der Architekturexzellenz](https://docs.microsoft.com/azure/architecture/framework) bezeichnet werden:
 
-- Skalierbarkeit
-- Verfügbarkeit
-- Resilienz (einschließlich Business Continuity und Disaster Recovery (BCDR))
-- Verwaltung
+- Kostenoptimierung
+- Optimaler Betrieb
+- Effiziente Leistung
+- Zuverlässigkeit
 - Sicherheit
 
-Mit einem Prozess zur Überprüfung der Einsatztauglichkeit lässt sich sicherstellen, dass Ihre unternehmenskritischen Workloads den Erwartungen Ihres Unternehmens in Bezug auf die Qualitätssäulen entsprechen.
+Mit einem Prozess zur Überprüfung der Einsatztauglichkeit lässt sich sicherstellen, dass Ihre unternehmenskritischen Workloads den Erwartungen Ihres Unternehmens in Bezug auf die Säulen entsprechen.
 
 Erstellen Sie einen Prozess zur Überprüfung auf Einsatztauglichkeit, um vollständig zu verstehen, welche Probleme sich aus der Ausführung von Workloads in einer Produktionsumgebung ergeben, und wie diese Probleme behoben und gelöst werden können. Dieser Artikel beschreibt eine allgemeine Überprüfung der Einsatztauglichkeit, die Ihr Unternehmen nutzen kann, um dieses Ziel zu erreichen.
 
@@ -121,13 +121,17 @@ Passen Sie die Details des Prozesses und der Besprechung so an, dass sie Ihre sp
 
 ## <a name="recommended-resources"></a>Empfohlene Ressourcen
 
-- [Säulen der Softwarequalität](https://docs.microsoft.com/azure/architecture/guide/pillars).
-    Dieser Abschnitt des Architekturleitfadens für Azure-Anwendungen beschreibt die fünf Säulen der Softwarequalität: Skalierbarkeit, Verfügbarkeit, Resilienz, Verwaltung und Sicherheit.
+- [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework): Erfahren Sie mehr über die Grundsätze zum Verbessern der Qualität einer Workload. Das Framework besteht aus fünf Säulen der Architekturexzellenz:
+  - Kostenoptimierung
+  - Optimaler Betrieb
+  - Effiziente Leistung
+  - Zuverlässigkeit
+  - Sicherheit
 - [Zehn Entwurfsprinzipien für Azure-Anwendungen](https://docs.microsoft.com/azure/architecture/guide/design-principles).
-    Dieser Abschnitt des Architekturleitfadens für Azure-Anwendungen beschreibt eine Reihe von Entwurfsprinzipien, um Ihre Anwendung skalierbarer, belastbarer und verwaltbarer zu machen.
+    Befolgen Sie die folgenden Entwurfsprinzipien, um die Skalierbarkeit, Resilienz und Verwaltbarkeit Ihrer Anwendung zu optimieren.
 - [Entwerfen robuster Anwendungen für Azure](https://docs.microsoft.com/azure/architecture/resiliency).
-    In diesem Leitfaden werden der Begriff _Resilienz_ und die dazugehörigen Konzepte definiert. Anschließend wird der Prozess zur Erreichung von Resilienz beschrieben. Hierzu wird ein strukturierter Ansatz für die Lebensdauer einer Anwendung verwendet – vom Entwurf und der Implementierung über die Bereitstellung bis zum Betrieb.
+    Erstellen und pflegen Sie zuverlässige Systeme mit einem strukturierten Ansatz für die Lebensdauer einer Anwendung – vom Entwurf und der Implementierung über die Bereitstellung bis zum Betrieb.
 - [Cloudentwurfsmuster](https://docs.microsoft.com/azure/architecture/patterns).
-    Diese Entwurfsmuster unterstützen Engineeringteams, wenn sie Anwendungen basierend auf den Säulen der Softwarequalität erstellen.
+    Verwenden Sie Entwurfsmuster, um Anwendungen anhand der Säulen der Architekturexzellenz zu erstellen.
 - [Azure Advisor:](https://docs.microsoft.com/azure/advisor)
-    Advisor bietet basierend auf Ihrer Nutzung und Ihren Konfigurationen personalisierte Empfehlungen zum Optimieren Ihrer Ressourcen im Hinblick auf Hochverfügbarkeit, Sicherheit, Leistung und Kosten.
+    Azure Advisor bietet basierend auf Ihrer Nutzung und Ihren Konfigurationen personalisierte Empfehlungen zum Optimieren Ihrer Ressourcen im Hinblick auf Hochverfügbarkeit, Sicherheit, Leistung und Kosten.

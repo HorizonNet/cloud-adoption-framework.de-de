@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b07ded7b1d2ede7bc354709a798180daedfdae3b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 101c4a962583f522bedc8e6fa5d99587141871c1
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216162"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785003"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategie für Governance bzw. Compliance
 
@@ -30,14 +30,11 @@ Die Konfiguration der grundlegenden Azure-Umgebung kann sich erheblich ändern, 
 
 **ISO 27001-Blaupausen für die Compliance**: Für Kunden, die Compliancestandards gemäß ISO einhalten müssen, kann das [Blaupausenbeispiel „ISO 27001: Gemeinsame Dienste“](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared) als effektiveres MVP dienen, um umfassendere Governanceeinschränkungen bereits frühzeitig im iterativen Prozess zu generieren. Das [Blaupausenbeispiel „ISO 27001: App Service-Umgebungs-/SQL-Datenbank-Workload“](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload) baut auf dieser Blaupause auf, um Kontrollen zuzuordnen und eine allgemeine Architektur für eine Anwendungsumgebung bereitzustellen. Wenn weitere Blaupausen für die Compliance veröffentlicht werden, werden wir hier auch auf diese verweisen.
 
-<!-- TODO: Refactor VDC content below. -->
-<!-- docsTest:ignore "Azure Virtual Datacenter" -->
-
-**Virtuelles Azure-Rechenzentrum:** Ein robusterer Ausgangspunkt für die Governance kann erforderlich sein. Ziehen Sie in solchen Fällen das [virtuelle Azure-Rechenzentrum](../../reference/vdc.md) (Virtual Datacenter, VDC) in Betracht. Dieser Ansatz wird häufig bei einer unternehmensweiten Einführung vorgeschlagen, insbesondere bei einem Umfang von über 10.000 Ressourcen. Er ist auch die Standardwahl bei komplexen Governanceszenarien, wenn eine der folgenden Anforderungen erfüllt werden muss: umfangreiche Complianceanforderungen von Drittanbietern, tiefgreifendes Fachwissen oder Parität mit ausgereiften IT-Governancerichtlinien und Complianceanforderungen.
+**CAF-Zielzone auf Unternehmensebene:** Ein robusterer Ausgangspunkt für die Governance kann erforderlich sein. In solchen Fällen sollten Sie die [CAF-Zielzone auf Unternehmensebene](../../ready/enterprise-scale/index.md) in Betracht ziehen. Bei diesem Ansatz stehen Einführungsteams im Fokus, die mittelfristig (innerhalb von 24 Monaten) das Ziel haben, mehr als 1.000 Assets (Apps, Infrastruktur- oder Datenassets) in der Cloud zu hosten. Die CAF-Zielzone auf Unternehmensebene ist die erste Wahl für komplexe Governanceszenarien für diese umfangreicheren Cloudeinführungsmaßnahmen.
 
 ### <a name="partnership-option-to-complete-prerequisites"></a>Partnerschaften zum Erfüllen von Voraussetzungen
 
-**Microsoft Services**: Microsoft Services stellt Lösungsangebote bereit, die am Cloud Adoption Framework-Governancemodell, an Complianceblaupausen oder an Optionen des virtuellen Rechenzentrums ausgerichtet werden können, um sicherzustellen, dass das am besten geeignete Modell für Governance bzw. Compliance zum Einsatz kommt. Nutzen Sie das Lösungsangebot [Secure Cloud Insights (SCI)](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf), um ein datengesteuertes Bild einer Kundenbereitstellung in Azure zu erhalten und den Reifegrad der Azure-Implementierung des Kunden zu überprüfen. Gleichzeitig lässt sich ermitteln, ob vorhandene Bereitstellungsarchitekturen optimiert sowie Sicherheits- und Verfügbarkeitsrisiken im Hinblick auf die Governance eliminiert werden können. Basierend auf den Erkenntnissen sollten Sie folgende Ansätze ausführen:
+**Microsoft Services**: Microsoft Services stellt Lösungsangebote bereit, die am Cloud Adoption Framework-Governancemodell, an Complianceblaupausen oder an Optionen der CAF-Zielzone auf Unternehmensebene ausgerichtet werden können, um sicherzustellen, dass das am besten geeignete Modell für Governance bzw. Compliance zum Einsatz kommt. Nutzen Sie das Lösungsangebot [Secure Cloud Insights (SCI)](https://download.microsoft.com/download/C/7/C/C7CEA89D-7BDB-4E08-B998-737C13107361/Secure_Cloud_Insights_Datasheet_EN_US.pdf), um ein datengesteuertes Bild einer Kundenbereitstellung in Azure zu erhalten und den Reifegrad der Azure-Implementierung des Kunden zu überprüfen. Gleichzeitig lässt sich ermitteln, ob vorhandene Bereitstellungsarchitekturen optimiert und Sicherheits- und Verfügbarkeitsrisiken hinsichtlich der Governance eliminiert werden können. Basierend auf den Erkenntnissen sollten Sie folgende Ansätze ausführen:
 
 - **Cloudgrundlagen**: Legen Sie mithilfe des Lösungsangebots [Hybrid Cloud Foundation (HCF)](https://download.microsoft.com/download/D/8/7/D872DFD0-1C46-4145-95E4-B5EAB2958B96/Hybrid_Cloud_Foundation_Datasheet_EN_US.pdf) die wichtigsten Entwürfe, Muster und die Governancearchitektur des Kunden für Azure fest. Ordnen Sie die Anforderungen des Kunden der jeweils am besten geeigneten Referenzarchitektur zu. Implementieren Sie ein Minimum Viable Product, bestehend aus gemeinsam genutzten Diensten und IaaS-Workloads.
 - **Cloudmodernisierung**: Nutzen Sie das Lösungsangebot [Cloud Modernization](https://download.microsoft.com/download/3/7/3/373F90E3-8568-44F3-B096-CD9C1CD28AB7/Cloud_Modernization_Datasheet_EN_US.pdf) (Cloudmodernisierung) als umfassende Vorgehensweise zum Verschieben von Anwendungen, Daten und Infrastrukturen in eine unternehmensfähige Cloud sowie zum Optimieren und Modernisieren nach der Cloudbereitstellung.

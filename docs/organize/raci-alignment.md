@@ -8,22 +8,22 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: ed1bce61d2a5ba51459df60e94949e0cdd5e533d
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: fed517b2241ebbffccbefd71ab5741dac52b5bae
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815445"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075204"
 ---
 <!-- cSpell:ignore ccoe -->
 
 # <a name="align-responsibilities-across-teams"></a>Zuordnen von Zuständigkeiten zu Teams
 
-Erfahren Sie, wie Sie Zuständigkeiten zu Teams zuordnen, indem Sie eine so genannte _RACI_-Matrix entwickeln, mit der bestimmt wird, welche Teams verantwortlich sind (responsible), rechenschaftspflichtig sind (accountable), konsultiert werden (consulted) und zu informieren sind (informed). Dieser Artikel bietet eine RACI-Beispielmatrix für die unter [Einrichten von Teamstrukturen](./organization-structures.md) beschriebenen Organisationsstrukturen:
+Es wird beschrieben, wie Sie Teams übergreifend Zuständigkeiten zuordnen, indem Sie eine so genannte RACI-Matrix entwickeln und damit bestimmen, welche Teams _verantwortlich sind (responsible), rechenschaftspflichtig sind (accountable), konsultiert werden (consulted) und zu informieren sind (informed)_ . Dieser Artikel bietet eine RACI-Beispielmatrix für die unter [Einrichten von Teamstrukturen](./organization-structures.md) beschriebenen Organisationsstrukturen:
 
 - [Nur Cloudeinführungsteam](#cloud-adoption-team-only)
 - [MVP – Bewährte Methode](#best-practice-minimum-viable-product-mvp)
-- [Zentrale IT-Abteilung](#central-it)
+- [Zentrales IT-Team](#central-it-team)
 - [Strategische Ausrichtung](#strategic-alignment)
 - [Operative Ausrichtung](#operational-alignment)
 - [Cloudkompetenzzentrum (CCoE)](#cloud-center-of-excellence-ccoe)
@@ -54,15 +54,15 @@ Die letzte Zeile jeder Tabelle (mit Ausnahme der ersten) enthält einen Link zu 
 |                          |                                       |                                       |                                       |                                           |                                                                                   |                                                                               |                                                                               |                                                                                   |
 | Ausgerichtete Cloudfunktionen | [Cloudeinführung](./cloud-adoption.md) | [Cloudstrategie](./cloud-strategy.md) | [Cloudstrategie](./cloud-strategy.md) | [Cloudbetrieb](./cloud-operations.md) | [CCoE](./cloud-center-of-excellence.md) und [Cloudgovernance](./cloud-governance.md) | [CCoE](./cloud-center-of-excellence.md) - [Cloudplattform](./cloud-platform.md) | [CCoE](./cloud-center-of-excellence.md) und [Cloudplattform](./cloud-platform.md) | [CCoE](./cloud-center-of-excellence.md) und [Cloudautomatisierung](./cloud-automation.md) |
 
-## <a name="central-it"></a>Zentrale IT-Abteilung
+## <a name="central-it-team"></a>Zentrales IT-Team
 
 |                          | Lösungsbereitstellung                     | Geschäftliche Ausrichtung                    | Change Management                     | Lösungsvorgänge                       | Governance                                | Plattformreife             | Plattformbetrieb           | Plattformautomatisierung           |
 | ------------------------ | ------------------------------------- | ------------------------------------- | ------------------------------------- | ----------------------------------------- | ----------------------------------------- | ----------------------------- | ----------------------------- | ----------------------------- |
 | Cloudeinführungsteam      | Verantwortlich                           | Verantwortlich                           | Zuständig                           | Zuständig                               | Informiert                                  | Informiert                      | Informiert                      | Informiert                      |
 | Cloudgovernanceteam    | Zu Rate gezogen                             | Informiert                              | Informiert                              | Informiert                                  | Verantwortlich                               | Zu Rate gezogen                     | Zuständig                   | Informiert                      |
-| Zentrale IT-Abteilung               | Zu Rate gezogen                             | Informiert                              | Verantwortlich                           | Verantwortlich                               | Zuständig                               | Verantwortlich                   | Verantwortlich                   | Verantwortlich                   |
+| Zentrales IT-Team               | Zu Rate gezogen                             | Informiert                              | Verantwortlich                           | Verantwortlich                               | Zuständig                               | Verantwortlich                   | Verantwortlich                   | Verantwortlich                   |
 |                          |                                       |                                       |                                       |                                           |                                           |                               |                               |                               |
-| Ausgerichtete Cloudfunktionen | [Cloudeinführung](./cloud-adoption.md) | [Cloudstrategie](./cloud-strategy.md) | [Cloudstrategie](./cloud-strategy.md) | [Cloudbetrieb](./cloud-operations.md) | [Cloud Governance](./cloud-governance.md) | [Zentrale IT-Abteilung](./central-it.md) | [Zentrale IT-Abteilung](./central-it.md) | [Zentrale IT-Abteilung](./central-it.md) |
+| Ausgerichtete Cloudfunktionen | [Cloudeinführung](./cloud-adoption.md) | [Cloudstrategie](./cloud-strategy.md) | [Cloudstrategie](./cloud-strategy.md) | [Cloudbetrieb](./cloud-operations.md) | [Cloud Governance](./cloud-governance.md) | [Zentrales IT-Team](./central-it.md) | [Zentrales IT-Team](./central-it.md) | [Zentrales IT-Team](./central-it.md) |
 
 ## <a name="strategic-alignment"></a>Strategische Ausrichtung
 

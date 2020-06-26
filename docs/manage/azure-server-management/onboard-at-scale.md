@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 368c5b44513ee98cb7f361305bfe1de468474a03
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 83739453ac8d9466c01656788a22baaec4e78e5a
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861530"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785428"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -36,7 +36,7 @@ In diesem Artikel werden die drei Prozesse behandelt, die zum Durchführen diese
 
 Für alle Verwaltungslösungen, die unter [Azure-Verwaltungstools und -dienste](./tools-services.md) beschrieben sind, muss der Log Analytics-Agent auf virtuellen Azure-Computern und lokalen Servern installiert sein. Sie können das Onboarding für Ihre Azure-VMs mit Azure Policy bedarfsabhängig durchführen. Weisen Sie eine Richtlinie zu, um sicherzustellen, dass der Agent auf Ihren Azure-VMs installiert ist und eine Verbindung mit dem richtigen Log Analytics-Arbeitsbereich besteht.
 
-Azure Policy verfügt über eine integrierte [Richtlinieninitiative](https://docs.microsoft.com/azure/governance/policy/concepts/definition-structure#initiatives), die den Log Analytics-Agent und den [Microsoft Dependency-Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent) umfasst, der für Azure Monitor für VMs benötigt wird.
+Azure Policy verfügt über eine [integrierte Richtlinieninitiative](https://docs.microsoft.com/azure/governance/policy/concepts/definition-structure#initiatives), die den Log Analytics-Agent und den [Microsoft Dependency-Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent) umfasst, der für Azure Monitor für VMs benötigt wird.
 
 <!-- TODOBACKLOG: Add these when available.
 **Preview:** Enable Azure Monitor for virtual machine scale sets.
@@ -56,7 +56,7 @@ So weisen Sie die im vorherigen Abschnitt beschriebenen Richtlinien zu
 
 2. Legen Sie auf der Seite **Richtlinie zuweisen** den **Bereich** fest, indem Sie die Auslassungspunkte (...) und dann entweder eine Verwaltungsgruppe oder ein Abonnement auswählen. Wählen Sie optional eine Ressourcengruppe aus. Wählen Sie anschließend unten auf der Seite **Bereich** die Option **Auswählen**. Mit dem Bereich wird bestimmt, welchen Ressourcen bzw. welcher Ressourcengruppe die Richtlinie zugewiesen wird.
 
-3. Wählen Sie die Auslassungspunkte ( **…** ) neben der Option **Richtliniendefinition** aus, um die Liste mit den verfügbaren Definitionen zu öffnen. Sie können die Initiativendefinition filtern, indem Sie im Feld **Suche** den Suchbegriff **Azure Monitor** eingeben:
+3. Wählen Sie die Auslassungspunkte ( **...** ) neben der Option **Richtliniendefinition** aus, um die Liste mit den verfügbaren Definitionen zu öffnen. Sie können die Initiativendefinition filtern, indem Sie im Feld **Suche** den Suchbegriff **Azure Monitor** eingeben:
 
     ![Screenshot: Benutzeroberfläche für Richtlinien im Portal](./media/onboarding-at-scale2.png)
 
@@ -66,7 +66,7 @@ So weisen Sie die im vorherigen Abschnitt beschriebenen Richtlinien zu
 
     ![Screenshot: Benutzeroberfläche für Richtlinien im Portal](./media/onboarding-at-scale3.png)
 
-6. Aktivieren Sie das Kontrollkästchen **Speicherort der verwalteten Identität**. Wenn diese Richtlinie den Typ [DeployIfNotExists](https://docs.microsoft.com/azure/governance/policy/concepts/effects#deployifnotexists) aufweist, ist für die Bereitstellung der Richtlinie eine verwaltete Identität erforderlich. Im Portal wird das Konto gemäß der Auswahl des Kontrollkästchens erstellt.
+6. Aktivieren Sie das Kontrollkästchen **Speicherort der verwalteten Identität**. Wenn diese Richtlinie den Typ `[DeployIfNotExists](https://docs.microsoft.com/azure/governance/policy/concepts/effects#deployifnotexists)` aufweist, ist für die Bereitstellung der Richtlinie eine verwaltete Identität erforderlich. Im Portal wird das Konto gemäß der Auswahl des Kontrollkästchens erstellt.
 
 7. Wählen Sie **Zuweisen** aus.
 

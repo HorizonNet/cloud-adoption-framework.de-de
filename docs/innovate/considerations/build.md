@@ -7,20 +7,20 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 15bc194c124a8f278028f9cbcd508a18641d9a43
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: e895c3ed8f11f618ca19ae45d9c7cb26acc76925
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815156"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993962"
 ---
 <!--docsTest:ignore "Oxford English Dictionary" -->
 
 # <a name="build-with-customer-empathy"></a>Erstellen von Lösungen mit Blick auf die Kundenanforderungen
 
-„Not macht erfinderisch“. Dieses Sprichwort verdeutlicht die Unverwüstlichkeit des menschlichen Geistes und unseren natürlichen Erfindungsdrang. Wie im Oxford English Dictionary erläutert wird: „Wenn der Bedarf für etwas zwingend erforderlich wird, ist man gezwungen, Wege zu finden, dieses Ziel umzusetzen oder zu erreichen“. Nur wenige würden diese universellen Wahrheiten über Erfindungsreichtum leugnen. Jedoch wie unter [Innovation in der digitalen Wirtschaft](./index.md) beschrieben, erfordert Innovation ein Gleichgewicht zwischen _Erfindung_ neuer und _Einführung_ vorhandener Technologien.
+„Not macht erfinderisch“. Dieses Sprichwort verdeutlicht die Unverwüstlichkeit des menschlichen Geistes und unseren natürlichen Erfindungsdrang. Wie im Oxford English Dictionary erläutert wird: „Wenn der Bedarf für etwas zwingend erforderlich wird, ist man gezwungen, Wege zu finden, dieses Ziel umzusetzen oder zu erreichen“. Nur wenige würden diese universellen Wahrheiten über Erfindungsreichtum leugnen. Wie unter [Innovation in der digitalen Wirtschaft](./index.md) beschrieben, erfordert jedoch Innovation ein Gleichgewicht zwischen Erfindung neuer und Einführung vorhandener Technologien.
 
-In Fortführung dieser Analogie stammen Innovationen aus einem größeren Bereich. _Kundenanforderungen sind ein wichtiger treibender Faktor für Innovationen._ Die Entwicklung einer Lösung, die Innovationen vorantreibt, erfordert einen berechtigten Kundenbedarf – einen Bedarf, der den Kunden dazu bringt, zurückzukehren, um kritische Herausforderungen zu lösen. Diese Lösungen basieren auf den Bedürfnissen eines Kunden und nicht auf seinen Wünschen oder Launen. Um die wahren Bedürfnisse von Kunden zu ermitteln, beginnen wir mit Empathie – einem tiefen Verständnis für die Erfahrungen des Kunden. Empathie ist eine unterentwickelte soziale Kompetenz bei vielen Engineers, Produktmanagern und sogar Führungskräften. Glücklicherweise haben die vielfältigen Interaktionen und das rasante Tempo bei der Entwicklung der Rolle des Cloudarchitekten bereits den Anstoß dazu gegeben, dieses Einfühlungsvermögen zu entwickeln.
+In Fortführung dieser Analogie stammen Innovationen aus einem größeren Bereich. _Kundenanforderungen sind ein wichtiger treibender Faktor für Innovationen._ Die Entwicklung einer Lösung, die Innovationen vorantreibt, erfordert einen berechtigten Kundenbedarf, der den Kunden dazu bewegt, zurückzukehren, um kritische Herausforderungen zu lösen. Diese Lösungen basieren auf den Bedürfnissen eines Kunden und nicht auf seinen Wünschen oder Launen. Um seine wahren Bedürfnisse zu ermitteln, beginnen wir mit Empathie – einem tiefen Verständnis für die Erfahrungen des Kunden. Empathie ist eine unterentwickelte soziale Kompetenz bei vielen Engineers, Produktmanagern und sogar Führungskräften. Glücklicherweise haben die vielfältigen Interaktionen und das rasante Tempo bei der Entwicklung der Rolle des Cloudarchitekten bereits den Anstoß dazu gegeben, dieses Einfühlungsvermögen zu entwickeln.
 
 Warum ist Empathie so wichtig? Von der ersten Veröffentlichung eines Minimum Viable Product (MVP) bis hin zur allgemeinen Verfügbarkeit einer marktgerechten Lösung hilft uns die Kundenempathie, die Erfahrungen des Kunden zu verstehen und zu teilen. Empathie hilft uns dabei, eine bessere Lösung zu entwickeln. Noch wichtiger ist, dass Empathie uns besser positioniert, Lösungen zu erfinden, die die Übernahme von Technologien fördern. In einer digitalen Wirtschaft können diejenigen, die am ehesten bereit sind, sich in die Kundenbedürfnisse einzufühlen, eine bessere Zukunft erschaffen, die den Markt neu definiert und anführt.
 

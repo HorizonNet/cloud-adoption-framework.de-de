@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0396ccaf952bc9d7812304af5d1d9c9952b751cc
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: de26df188d2e6e240b07abde8c284bf57cb232db
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219630"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84992844"
 ---
 # <a name="phase-2-onboarding-azure-server-management-services"></a>Phase 2: Onboarding für Azure-Serververwaltungsdienste
 
@@ -38,7 +38,7 @@ Das folgende Diagramm zeigt das empfohlene Bereitstellungsmodell für Verwaltung
 
 ![Diagramm des empfohlenen Bereitstellungsmodells](./media/recommended-deployment.png)
 
-Wie im vorherigen Diagramm dargestellt, verfügt der Log Analytics-Agent sowohl über eine _auto-enroll_- als auch über eine _opt-in_-Konfiguration für lokale Server:
+Wie im vorherigen Diagramm dargestellt, verfügt der Log Analytics-Agent über zwei Konfigurationen für lokale Server:
 
 - **Auto-enroll:** Wenn der Log Analytics-Agent auf einem Server installiert und für die Verbindung mit einem Arbeitsbereich konfiguriert ist, werden die in diesem Arbeitsbereich aktivierten Lösungen automatisch auf den Server angewendet.
 - **Opt-in:** Auch wenn der Agent installiert und mit dem Arbeitsbereich verbunden ist, wird die Lösung nicht angewendet, es sei denn, sie wird der Bereichskonfiguration des Servers im Arbeitsbereich hinzugefügt.

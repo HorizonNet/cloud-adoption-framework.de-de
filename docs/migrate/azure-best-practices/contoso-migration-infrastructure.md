@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: cf026f32e52f5742525e655cd904e152e849bcd6
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: cbe349d5ad7fa7ddf5ad4f58c8c29e63bc26cda7
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861972"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785394"
 ---
 <!-- cSpell:ignore deltadan CSPs untrust CIDR RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
 
@@ -170,8 +170,6 @@ Die Administratoren von Contoso richten Azure-Ressourcengruppen wie in der folge
 | `ContosoFailoverRG` | Diese Gruppe dient als Landungszone für Ressourcen bei einem Failovervorgang. |
 | `ContosoNetworkingRG` | Diese Gruppe enthält alle Netzwerkressourcen. |
 | `ContosoRG` | Diese Gruppe enthält Ressourcen im Zusammenhang mit Produktionsanwendungen und -datenbanken. |
-
-<!-- markdownlint-disable MD026 -->
 
 Die Ressourcengruppen werden in folgender Weise erstellt:
 
@@ -368,7 +366,7 @@ Das [Peering virtueller Netzwerke](https://docs.microsoft.com/azure/virtual-netw
 
 #### <a name="hub-to-hub-across-regions"></a>Hub-zu-Hub über Regionen hinweg
 
-Contoso wird einen Hub in jeder Region bereitstellen. Bei einem Hub handelt es sich um ein virtuelles Netzwerk in Azure, das als zentraler Konnektivitätspunkt für Ihr lokales Netzwerk fungiert. Die Hub-VNets sind untereinander mithilfe von globalem VNet-Peering verbunden. Globales VNet-Peering verbindet VNets über die Grenzen von Azure-Regionen hinweg.
+Contoso wird einen Hub in jeder Region bereitstellen. Bei einem Hub handelt es sich um ein virtuelles Netzwerk in Azure, das als zentraler Konnektivitätspunkt für Ihr lokales Netzwerk fungiert. Die Hub-VNets werden über globales VNet-Peering miteinander verbunden, wobei VNets über Azure-Regionen hinweg miteinander verbunden werden.
 
 - Der Hub in jeder Region ist mittels Peering mit seinem Partnerhub in der anderen Region verbunden.
 - Der Hub ist mittels Peering mit jedem Netzwerk in seiner Region verbunden und kann Verbindungen mit allen Netzwerkressourcen herstellen.
@@ -568,7 +566,7 @@ Die Administratoren von Contoso haben entschieden, dass der Azure DNS-Dienst kei
 
 Neben den lokalen Domänencontrollern implementiert Contoso zur Unterstützung der Azure-Netzwerke noch vier weitere Domänencontroller (jeweils zwei pro Region). Contoso stellt also Folgendes in Azure bereit:
 
-| **Region** | **DC** | **VNET** | **Subnetz** | **IP-Adresse** |
+| Region | SL | VNet | Subnet | IP-Adresse |
 | --- | --- | --- | --- | --- |
 | EUS2 | CONTOSODC3 | VNET-PROD-EUS2 | PROD-DC-EUS2 | 10.245.42.4 |
 | EUS2 | CONTOSODC4 | VNET-PROD-EUS2 | PROD-DC-EUS2 | 10.245.42.5 |

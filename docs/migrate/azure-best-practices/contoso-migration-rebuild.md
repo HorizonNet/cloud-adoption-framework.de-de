@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: db53dbb9e024cdde817b80a79dae3e3e789d9c16
-ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
+ms.openlocfilehash: 0dc11884a761b41a2c4da02d60b55b01eab3e59a
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84023541"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785530"
 ---
 <!-- docsTest:ignore SmartHotel360 SmartHotel360-Backend Pet.Checker vcenter.contoso.com contoso-datacenter git aks ContosoRG PetCheckerFunction -->
 
@@ -96,12 +96,12 @@ Contoso bewertet den vorgeschlagen Entwurf anhand einer Liste mit Vor- und Nacht
 
 ### <a name="azure-services"></a>Azure-Dienste
 
-**Service** | **Beschreibung** | **Kosten**
---- | --- | ---
-[AKS](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Vereinfacht die Verwaltung, die Bereitstellung und den Betrieb von Kubernetes. Nutzt einen vollständig verwalteten Orchestrierungsdienst für Kubernetes-Container. | AKS ist ein kostenloser Dienst. Nur die virtuellen Computer sowie die entsprechenden verbrauchten Speicher- und Netzwerkressourcen müssen bezahlt werden. [Weitere Informationen](https://azure.microsoft.com/pricing/details/kubernetes-service)
-[Azure-Funktionen](https://azure.microsoft.com/services/functions) | Beschleunigt die Entwicklung mit einer ereignisbasierten, serverlosen Computeumgebung. Die Skalierung erfolgt bedarfsabhängig. | Nur verbrauchte Ressourcen müssen bezahlt werden. Der Plan wird basierend auf dem Ressourcenverbrauch und den Ausführungen pro Sekunde berechnet. [Weitere Informationen](https://azure.microsoft.com/pricing/details/functions)
-[Azure Container Registry](https://azure.microsoft.com/services/container-registry) | Speichert Images für alle Arten von Containerbereitstellungen. | Die Kosten ergeben sich aus Features, Speicher und Nutzungsdauer. [Weitere Informationen](https://azure.microsoft.com/pricing/details/container-registry)
-[Azure App Service](https://azure.microsoft.com/services/app-service/containers) | Es können schnell Web-Apps, mobile Apps und API-Apps der Unternehmensklasse auf jeder Plattform erstellt, bereitgestellt und skaliert werden. | App Service-Pläne werden sekundengenau abgerechnet. [Weitere Informationen](https://azure.microsoft.com/pricing/details/app-service/windows)
+| Dienst | BESCHREIBUNG | Kosten |
+|---|---|---|
+| [AKS](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Vereinfacht die Verwaltung, die Bereitstellung und den Betrieb von Kubernetes. Nutzt einen vollständig verwalteten Orchestrierungsdienst für Kubernetes-Container. | AKS ist ein kostenloser Dienst. Nur die virtuellen Computer sowie die entsprechenden verbrauchten Speicher- und Netzwerkressourcen müssen bezahlt werden. [Weitere Informationen](https://azure.microsoft.com/pricing/details/kubernetes-service) |
+| [Azure-Funktionen](https://azure.microsoft.com/services/functions) | Beschleunigt die Entwicklung mit einer ereignisbasierten, serverlosen Computeumgebung. Die Skalierung erfolgt bedarfsabhängig. | Nur verbrauchte Ressourcen müssen bezahlt werden. Der Plan wird basierend auf dem Ressourcenverbrauch und den Ausführungen pro Sekunde berechnet. [Weitere Informationen](https://azure.microsoft.com/pricing/details/functions) |
+| [Azure Container Registry](https://azure.microsoft.com/services/container-registry) | Speichert Images für alle Arten von Containerbereitstellungen. | Die Kosten ergeben sich aus Features, Speicher und Nutzungsdauer. [Weitere Informationen](https://azure.microsoft.com/pricing/details/container-registry) |
+| [Azure App Service](https://azure.microsoft.com/services/app-service/containers) | Es können schnell Web-Apps, mobile Apps und API-Apps der Unternehmensklasse auf jeder Plattform erstellt, bereitgestellt und skaliert werden. | App Service-Pläne werden sekundengenau abgerechnet. [Weitere Informationen](https://azure.microsoft.com/pricing/details/app-service/windows) |
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -202,7 +202,7 @@ Die Contoso-Administratoren führen die Bereitstellung wie folgt durch:
 
 Contoso erstellt ein Azure DevOps-Projekt, konfiguriert einen CI-Build zum Erstellen des Containers und überträgt ihn dann mithilfe von Push an die Containerregistrierung. In den Anweisungen in diesem Abschnitt wird das Repository [SmartHotel360-Backend](https://github.com/Microsoft/SmartHotel360-Backend) verwendet.
 
-1. Unter „visualstudio.com“ erstellen sie eine neue Organisation (**contosodevops360.visualstudio.com**) und konfigurieren sie für die Verwendung von Git.
+1. Unter `visualstudio.com` erstellt Contoso eine neue Organisation (**contosodevops360.visualstudio.com**) und konfiguriert sie für die Verwendung von Git.
 
 2. Sie erstellen ein neues Projekt (**SmartHotelBackend**) mithilfe von Git für die Versionskontrolle und Agile für den Workflow.
 
@@ -423,9 +423,9 @@ Contoso-Administratoren stellen die Web-App mithilfe des Azure-Portals bereit.
 
     ![Web-App-Stagingslot](./media/contoso-migration-rebuild/web-app3.png)
 
-### <a name="provision-the-azure-function-app"></a>Bereitstellen der Azure-Funktionen-App
+### <a name="provision-the-function-app"></a>Bereitstellen der Funktions-App
 
-Contoso-Administratoren stellen im Azure-Portal die Funktionen-App bereit.
+Contoso-Administratoren stellen im Azure-Portal die Funktions-App bereit.
 
 1. Sie wählen **Funktionen-App** aus.
 

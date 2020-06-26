@@ -7,19 +7,19 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 61777d3fa99c8692c8db91281dfdc0914e9f2b59
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 492a1f58848c0889bc80d6e5b535019e785f5c34
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861564"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785462"
 ---
 # <a name="common-azure-policy-examples"></a>Allgemeine Azure Policy-Beispiele
 
 [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) kann Ihnen helfen, Governance auf Ihre Cloudressourcen anzuwenden. Dieser Dienst kann Ihnen beim Erstellen von Leitlinien helfen, die die unternehmensweite Compliance mit den Anforderungen der Governancerichtlinien sicherstellen. Verwenden Sie zum Erstellen von Richtlinien entweder das Azure-Portal oder PowerShell-Cmdlets. Dieser Artikel enthält Beispiele für PowerShell-Cmdlets.
 
 > [!NOTE]
-> Mit Azure Policy werden Erzwingungsrichtlinien (**deployIfNotExists**) nicht automatisch auf vorhandenen virtuellen Computern bereitgestellt. Um die Compliance virtueller Computer sicherzustellen, ist eine Bereinigung erforderlich. Weitere Informationen finden Sie unter [Korrigieren nicht konformer Ressourcen mit Azure Policy](https://docs.microsoft.com/azure/governance/policy/how-to/remediate-resources).
+> Mit Azure Policy werden Erzwingungsrichtlinien (`DeployIfNotExists`) nicht automatisch auf vorhandenen virtuellen Computern bereitgestellt. Um die Compliance virtueller Computer sicherzustellen, ist eine Bereinigung erforderlich. Weitere Informationen finden Sie unter [Korrigieren nicht konformer Ressourcen mit Azure Policy](https://docs.microsoft.com/azure/governance/policy/how-to/remediate-resources).
 
 ## <a name="common-policy-examples"></a>Allgemeine Beispiele für Richtlinien
 

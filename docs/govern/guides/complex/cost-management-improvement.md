@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 6ea51d75a2c75fd8e75ade42eb3c9fe15def67b4
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: ccc413343ccaf6db5425000c1dca44010976eb79
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83754960"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075580"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Cost Management“
 
@@ -68,7 +68,7 @@ In diesem Abschnitt des Artikels wird der Governance-MVP-Entwurf so verbessert, 
 2. Implementieren von Azure Cost Management.
     1. Festlegen des richtigen Zugriffsumfangs, um ihn mit dem Abonnementmuster und dem Ressourcengruppierungsmuster abzustimmen. Unter der Annahme der Angleichung an das in früheren Artikeln definierte Governance-MVP sollte dies Zugriff im Geltungsbereich des **Registrierungskontos** für das Cloudgovernanceteam erfordern, das die Berichterstellung auf hoher Ebene durchführt. Zusätzliche Teams außerhalb der Governance, wie etwa das kanadische Beschaffungsteam, benötigen Zugriff im **Ressourcengruppenumfang**.
     2. Einrichten eines Budgets in Azure Cost Management.
-    3. Überprüfen Sie die anfänglichen Empfehlungen, und reagieren Sie entsprechend. Es empfiehlt sich, zur Unterstützung des Berichterstellungsprozesses einen sich wiederholenden Prozess einzurichten.
+    3. Überprüfen Sie die anfänglichen Empfehlungen, und reagieren Sie entsprechend. Richten Sie zur Unterstützung des Berichterstellungsprozesses einen sich wiederholenden Prozess ein.
     4. Konfigurieren Sie die Azure Cost Management-Berichterstellung mit anfänglicher und regelmäßiger Ausführung.
 3. Aktualisieren von Azure Policy.
     1. Überwachen Sie die Tagging-, Verwaltungsgruppen-, Abonnement- und Ressourcengruppenwerte, um Abweichungen zu identifizieren.

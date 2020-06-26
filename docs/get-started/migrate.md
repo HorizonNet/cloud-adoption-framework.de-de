@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: b943259df90851704c8a4035da10d313589eb5b2
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 65a201886f9cbc67a58aa5bd14f53e928d4495b8
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83752849"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076505"
 ---
 # <a name="get-started-accelerate-migration"></a>Erste Schritte: Beschleunigen der Migration
 
@@ -71,7 +71,7 @@ Partner, Microsoft-Dienste oder verschiedene Microsoft-Programme sind verfügbar
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudstrategieteam | <li> Cloudeinführungsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT |
+| <li> Cloudstrategieteam | <li> Cloudeinführungsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
 
 ## <a name="step-3-gather-data-and-analyze-assets-and-workloads"></a>Schritt 3: Erfassen von Daten und Analysieren von Ressourcen und Workloads
 
@@ -157,13 +157,13 @@ Vorhandene Mitarbeiter können eine praktische Rolle bei der Migration spielen, 
 
 Alle migrierten Ressourcen werden innerhalb einer Zielzone bereitgestellt. Anfänglich ist die Zielzone einfach, um kleinere Workloads zu unterstützen. Im Laufe der Zeit wird sie skaliert, um komplexere Workloads zu ermöglichen.
 
-- [Auswählen einer Zielzone](../ready/landing-zone/first-landing-zone.md): Verwenden Sie diesen Artikel, um den richtigen Ansatz für die Bereitstellung einer Zielzone basierend auf Ihrem Einführungsmuster zu ermitteln. Stellen Sie dann diese standardisierte Codebasis bereit.
+- [Auswählen einer Zielzone](../ready/landing-zone/index.md): Ermitteln Sie anhand dieses Abschnitts den richtigen Ansatz für die Bereitstellung einer Zielzone basierend auf Ihrem Einführungsmuster. Stellen Sie dann diese standardisierte Codebasis bereit.
 - [Erweitern der Zielzone](../ready/considerations/index.md): Identifizieren Sie unabhängig vom Ausgangspunkt Lücken in der bereitgestellten Zielzone, um erforderliche Komponenten für Ressourcenorganisation, Sicherheit, Governance, Compliance und Betrieb hinzuzufügen.
 
 **Ziele:**
 
 - Bereitstellen einer ersten Zielzone für anfängliche Migrationen mit geringem Risiko.
-- Entwickeln eines Plans für die Umgestaltung mit dem Cloudkompetenzzentrum oder der zentralen IT.
+- Entwickeln eines Plans für die Umgestaltung mit dem Cloudkompetenzzentrum oder der zentralen IT-Abteilung.
 - Zeitachsenrisiken:
   - Governance-, Betriebs- und Sicherheitsanforderungen für die ersten zehn Workloads können diesen Prozess verlangsamen.
   - Die eigentliche Umgestaltung der ersten Zielzone und der nachfolgenden Zielzonen dauert länger, sollte aber parallel zu den Migrationsmaßnahmen erfolgen.
@@ -199,7 +199,7 @@ Fortlaufende Verbesserung der Fähigkeit des Einführungsteams, Workloads zu mig
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudeinführungsteam | <li> Cloudstrategieteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT |
+| <li> Cloudeinführungsteam | <li> Cloudstrategieteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
 
 ## <a name="step-9-hand-off-production-workloads-to-cloud-governance"></a>Schritt 9: Übergeben von Produktionsworkloads an Cloudgovernance
 
@@ -219,7 +219,7 @@ Governance ist ein wichtiger Faktor für den langfristigen Erfolg einer beliebig
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudgovernanceteam | <li> Cloudstrategieteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT |
+| <li> Cloudgovernanceteam | <li> Cloudstrategieteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
 
 ## <a name="step-10-hand-off-production-workloads-to-cloud-operations"></a>Schritt 10: Übergeben von Produktionsworkloads an den Cloudbetrieb
 
@@ -244,7 +244,7 @@ Vorgangsverwaltung ist eine weitere Voraussetzung für eine erfolgreiche Migrati
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudbetriebsteam | <li> Cloudstrategieteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT |
+| <li> Cloudbetriebsteam | <li> Cloudstrategieteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
 
 ## <a name="value-statement"></a>Wertaussage
 

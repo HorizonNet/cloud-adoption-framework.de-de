@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 3f57409adfa399e267cf14f1f24a3b380ed1bf85
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 56319956688e0fcee5b2987c0b789e2af340d5e3
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862380"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075603"
 ---
 <!-- markdownlint-disable MD024 -->
 
@@ -21,6 +21,29 @@ ms.locfileid: "83862380"
 Hier ist eine Liste mit den Änderungen angegeben, die kürzlich am Framework für die Cloudeinführung vorgenommen wurden.
 
 Dieses Framework wurde in Zusammenarbeit mit Kunden, Partnern und internen Microsoft-Teams entwickelt. Neuer und aktualisierter Inhalt wird veröffentlicht, sobald er verfügbar ist. Mit diesen Releases können Sie die Anleitung zusammen mit uns testen, überprüfen und optimieren. Wir laden Sie ein, als Partner mit uns gemeinsam das Framework für die Cloudeinführung für Azure zu entwickeln.
+
+## <a name="june-15-2020"></a>15. Juni 2020
+
+Die ordnungsgemäße Konfiguration der Cloudumgebung ist häufig das erste und gängigste technische Hindernis während der Cloudeinführung. Der Schwerpunkt dieser Veröffentlichung liegt im Wesentlichen auf Anleitungen, mit denen Sie Bereitstellung von Cloudumgebungen beschleunigen können. Um dieses gängige Hindernis zu überwinden, werden im Cloud Adoption Framework für Azure die **Azure-Zielzonen** eingeführt.
+
+| Artikel | BESCHREIBUNG |
+|---|---|
+| [Azure-Zielzonen](../ready/landing-zone/index.md) | Azure-Zielzonen erstellen eine gängige Gruppe von Entwurfsbereichen und Implementierungsoptionen, mit denen das Erstellen von Umgebungen gemäß dem Cloudeinführungsplan und dem Cloudbetriebsmodell beschleunigt wird. In diesem neuen Artikel werden Azure-Zielzonen eindeutiger erläutert. |
+| [Azure-Zielzonen – Entwurfsbereiche](../ready/landing-zone/design-areas.md) | Alle Azure-Zielzonen haben eine gemeinsame Gruppe von acht Entwurfsbereichen. Vor dem Bereitstellen einer der Azure-Zielzonen sollten Kunden beim Treffen wichtiger Entscheidungen jeden dieser Entwürfe untersuchen. |
+| [Azure-Zielzonen – Implementierungsoptionen](../ready/landing-zone/implementation-options.md) | Wählen Sie die beste Implementierungsoption für Azure-Zielzonen aus, je nach Ihrem Cloudeinführungsplan und dem Cloudbetriebsmodell. |
+
+Die vorhandenen CAF-Blaupausendefinitionen und CAF-Terraform-Module bieten Ihnen einen Ausgangspunkt für die Implementierung von Azure-Zielzonen. Einige Kunden wünschen sich jedoch eine umfassendere Implementierungsoption, die den Anforderungen von Cloudeinführungsplänen auf Unternehmensebene gerecht wird. In dieser Version wird den Implementierungsoptionen für Azure-Zielzonen die Option für **CAF-Zielzonen auf Unternehmensebene** hinzugefügt, um diese Anforderung zu erfüllen. Im Folgenden sind einige Artikel aufgelistet, die Ihnen den Einstieg in die Arbeit mit der CAF-Architektur auf Unternehmensebene und mit Referenzimplementierungen erleichtern.
+
+| Artikel | BESCHREIBUNG |
+|---|---|
+| [Übersicht zur Unternehmensebene](../ready/enterprise-scale/index.md) | Übersicht über die Skalierung auf Unternehmensebene |
+| [Implementieren von Zielzonen auf Unternehmensebene](../ready/enterprise-scale/implementation.md) | Schnelle Implementierungsoptionen und GitHub-Beispiele |
+| [Architektur auf Unternehmensebene](../ready/enterprise-scale/architecture.md) | Verstehen der Architektur hinter der Unternehmensebene |
+| [Entwurfsprinzipien für die Unternehmensebene](../ready/enterprise-scale/design-principles.md) | Erfahren Sie mehr über architekturbezogene Entwurfsprinzipien, an denen sich Entscheidungen während der Implementierung orientieren, um zu bewerten, ob dieser Ansatz für Ihr Cloudbetriebsmodell geeignet ist. |
+| [Entwurfsrichtlinie für die Unternehmensebene](../ready/enterprise-scale/design-guidelines.md) | Bewerten Sie die Richtlinien für die Unternehmensebene, ob diese den gängigen Entwurfsbereichen von Azure-Zielzonen gerecht werden. |
+| [Implementierungsrichtlinien](../ready/enterprise-scale/implementation-guidelines.md) | Untersuchen Sie die Aktivitäten, die vor dem Bereitstellen für eine Implementierung auf Unternehmensebene erforderlich sind. |
+
+Partner sind ein wichtiger Aspekt der erfolgreichen Cloudeinführung. Über das die gesamte Anleitung zum Cloudeinführungs-Framework haben wir Referenzen hinzugefügt, die verdeutlichen, welche wichtige Rolle Partner spielen und wie Kunden Partner besser einbinden können. Eine Liste der validierten CAF-Partner finden Sie unter den [Angeboten CAF-orientierter Partner](https://aka.ms/adopt/partneroffers) sowie unter [Azure Expert MSP-Partner](https://www.microsoft.com/en-us/solution-providers/search?cacheId=9c2fed4f-f9e2-42fb-8966-4c565f08f11e) und [Advanced Specialist-Partner](https://www.microsoft.com/azure/partners/advspec).
 
 ## <a name="may-15-2020"></a>15. Mai 2020
 
@@ -65,7 +88,7 @@ Weitere Iteration der Verfeinerung von Migrationsmethodik und Bereitschaftsmetho
 | [Erhöhen der Sicherheit von Zielzonen](../ready/considerations/landing-zone-security.md)                       | **Neuer Artikel:** Übersicht über die bewährten Methoden in diesem Abschnitt, mit einem Rückbezug auf den TDD-Zyklus |
 | [Verbessern des Betriebs von Zielzonen](../ready/considerations/landing-zone-operations.md)                       | **Neuer Artikel:** Liste der bewährten Methoden in der „Manage“-Methodik, mit einem Übergang zu diesem modularen Ansatz zur Verbesserung von Betrieb, Zuverlässigkeit und Leistung. |
 | [Verbessern der Governance von Zielzonen](../ready/considerations/landing-zone-governance.md)                       | **Neuer Artikel:** Liste der bewährten Methoden in der „Govern“-Methodik, mit einem Übergang zu diesem modularen Ansatz zur Verbesserung von Governance, Cost Management und Skalierung. |
-| [Auf Unternehmensniveau beginnen](../ready/considerations/enterprise-scale.md)                       | **Neuer Artikel:** Veranschaulichen Sie einen Ansatz, der die Unterschiede im Prozess aufzeigt, wenn ein Kunde mit Zielzonenvorlagen auf Unternehmensniveau beginnt. Dieser Artikel hilft Kunden dabei, die Qualifizierer zu verstehen, die diese Entscheidung unterstützen würden. |
+| [Auf Unternehmensniveau beginnen](../ready/enterprise-scale/index.md)                       | **Neuer Artikel:** Veranschaulichen Sie einen Ansatz, der die Unterschiede im Prozess aufzeigt, wenn ein Kunde mit Zielzonenvorlagen auf Unternehmensniveau beginnt. Dieser Artikel hilft Kunden dabei, die Qualifizierer zu verstehen, die diese Entscheidung unterstützen würden. |
 | Aktualisieren des Inhaltsverzeichnisses                       | Das Inhaltsverzeichnis wurde aktualisiert, um die neuen Artikel widerzuspiegeln.  |
 
 ## <a name="march-27-2020"></a>27. März 2020
@@ -116,9 +139,9 @@ Als Reaktion auf das erhaltene Feedback zur Kontinuität des Migrationsansatzes 
 | Artikel                                                                   | BESCHREIBUNG                                                                                                              |
 |---------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | [Was&nbsp;ist&nbsp;eine&nbsp;Zielzone?&nbsp;](../ready/landing-zone/index.md)                 | **Neuer Artikel:** Enthält eine Definition des Begriffs „Zielzone“.                                                      |
-| [Erste Zielzone](../ready/landing-zone/first-landing-zone.md)         | **Neuer Artikel:** Enthält weitere Informationen zum Vergleich verschiedener Zielzonen.                                                     |
-| [CAF-Migrationslandezone](../ready/landing-zone/migrate-landing-zone.md) | Die Definition der Blaupause für das Framework für die Cloudeinführung wurde von der Auswahl der ersten Zielzone getrennt.         |
-| [Terraform-Zielzone](../ready/landing-zone/terraform-landing-zone.md) | Wurde in den neuen Abschnitt „Zielzone“ der Bereitschaftsmethodik verschoben, um Terraform in Bezug auf Zielzonen als wichtigere Komponente darzustellen. |
+| Erste Landezone         | **Neuer Artikel:** Enthält weitere Informationen zum Vergleich verschiedener Zielzonen.                                                     |
+| [Zielzone für CAF-Migration](../ready/landing-zone/migrate-landing-zone.md) | Hiermit wurde die Blaupausendefinition von der Auswahl der ersten Zielzone getrennt.         |
+| [CAF-Terraform-Module](../ready/landing-zone/terraform-landing-zone.md) | Wurde in den neuen Abschnitt „Zielzone“ der Bereitschaftsmethodik verschoben, um Terraform in Bezug auf Zielzonen als wichtigere Komponente darzustellen. |
 
 ### <a name="migration-updates"></a>Aktualisierungen in Bezug auf die Migration
 

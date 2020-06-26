@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: dba69e75565658b0101a1849ca3d90e21890fa4a
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: ef1c9ea599a61561a6cff9d78c8d167129f13a26
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862601"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993814"
 ---
 <!-- docsTest:disable TODO -->
 
-<!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc OSTICKETWEB OSTICKETMYSQL smarthotelapp ctypes ctypeslib prereqs -->
+<!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL CONTOSODC contosohost vcenter prereqs ctypes ctypeslib smarthotelapp -->
 
 # <a name="assess-on-premises-workloads-for-migration-to-azure"></a>Bewerten lokaler Workloads für die Migration zu Azure
 
@@ -33,8 +33,8 @@ Als Einstieg und zum besseren Verständnis der beteiligten Technologie bewertet 
 
 | App-Name | Plattform | App-Ebenen | Details |
 | --- | --- | --- | --- |
-| SmartHotel360 <br><br> (Verwaltung der Reiseanforderungen von Contoso) | Wird mit einer SQL Server-Datenbank unter Windows ausgeführt | App mit zwei Schichten. Die Front-End-ASP.NET-Website wird auf einer VM (**WEBVM**) und die SQL Server-Instanz auf einer anderen VM (**SQLVM**) ausgeführt. | VMs sind VMware, die auf einem mit vCenter Server verwalteten ESXi-Host ausgeführt werden. <br><br> Sie können die Beispiel-App von [GitHub](https://github.com/Microsoft/SmartHotel360) herunterladen. |
-| osTicket <br><br> (Service Desk-App von Contoso) | Wird auf Linux/Apache mit MySQL PHP (LAMP) ausgeführt | App mit zwei Schichten. Eine Front-End-PHP-Website wird auf einer VM (**OSTICKETWEB**) und die MySQL-Datenbank auf einer anderen VM (**OSTICKETMYSQL**) ausgeführt. | Die App wird von Kundendienst-Apps verwendet, um Probleme für die internen Mitarbeitern und externen Kunden zu verfolgen. <br><br> Sie können das Beispiel von [GitHub](https://github.com/osTicket/osTicket) herunterladen. |
+| SmartHotel360 <br><br> (Verwaltung der Reiseanforderungen von Contoso) | Wird mit einer SQL Server-Datenbank unter Windows ausgeführt | App mit zwei Schichten. Die Front-End-ASP.NET-Website wird auf einer VM (`WEBVM`) und die SQL Server-Instanz wird auf einer anderen VM (`SQLVM`) ausgeführt. | VMs werden auf einem VMware ESXi-Host ausgeführt, der von vCenter Server verwaltet wird. <br><br> Sie können die Beispiel-App von [GitHub](https://github.com/Microsoft/SmartHotel360) herunterladen. |
+| osTicket <br><br> (Service Desk-App von Contoso) | Wird auf Linux/Apache mit MySQL PHP (LAMP) ausgeführt | App mit zwei Schichten. Eine Front-End-PHP-Website wird auf einer VM (`OSTICKETWEB`) und die MySQL-Datenbank auf einer anderen VM (`OSTICKETMYSQL`) ausgeführt. | Die App wird von Kundendienst-Apps verwendet, um Probleme für die internen Mitarbeitern und externen Kunden zu verfolgen. <br><br> Sie können das Beispiel von [GitHub](https://github.com/osTicket/osTicket) herunterladen. |
 
 <!-- markdownlint-enable MD033 -->
 
@@ -197,7 +197,7 @@ Die Ergebnisse werden angezeigt, sobald sie verfügbar sind. Wenn Contoso Proble
     ![Datenmigrations-Assistent – Bericht mit Featureempfehlungen](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-6.png)
 
     > [!NOTE]
-    > Contoso sollte [Transparent Data Encryption für alle SQL Server-Datenbanken aktivieren](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017). Dies ist noch wichtiger, wenn sich eine Datenbank in der Cloud befindet, als wenn sie lokal gehostet wird. Transparent Data Encryption sollte erst nach der Migration aktiviert werden. Wenn Transparent Data Encryption bereits aktiviert ist, muss Contoso das Zertifikat bzw. den asymmetrischen Schlüssel in die Masterdatenbank des Zielservers verschieben. Erfahren Sie, wie Sie [eine per Transparent Data Encryption geschützte Datenbank auf eine andere SQL Server-Instanz verschieben](https://docs.microsoft.com/sql/relational-databases/security/encryption/move-a-tde-protected-database-to-another-sql-server?view=sql-server-2017).
+    > Contoso sollte [Transparent Data Encryption für alle SQL Server-Datenbanken aktivieren](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017). Dies ist noch wichtiger, wenn sich eine Datenbank in der Cloud befindet, als wenn sie lokal gehostet wird. Transparent Data Encryption sollte erst nach der Migration aktiviert werden. Wenn Transparent Data Encryption bereits aktiviert ist, muss Contoso das Zertifikat bzw. den asymmetrischen Schlüssel in die `master`-Datenbank des Zielservers verschieben. Erfahren Sie, wie Sie [eine per Transparent Data Encryption geschützte Datenbank auf eine andere SQL Server-Instanz verschieben](https://docs.microsoft.com/sql/relational-databases/security/encryption/move-a-tde-protected-database-to-another-sql-server?view=sql-server-2017).
 
 3. Contoso kann die Bewertung im JSON- oder CSV-Format exportieren.
 
@@ -281,14 +281,13 @@ Richten Sie wie folgt ein neues Azure Migrate-Projekt ein:
 Vor der Bereitstellung der VM überprüft Contoso, ob die OVA-Datei sicher ist:
 
 1. Auf dem Computer, auf dem die Datei heruntergeladen wurde, öffnet Contoso ein Eingabeaufforderungsfenster mit Administratorrechten.
-
 2. Contoso führt den folgenden Befehl aus, um den Hash für die OVA-Datei zu generieren:
 
-    `C:\>CertUtil -HashFile <file_location> [Hashing Algorithm]`
+    `C:\> CertUtil -HashFile <file_location> [Hashing Algorithm]`
 
     **Beispiel:**
 
-    `C:\>CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256`
+    `C:\> CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256`
 
 3. Der generierte Hash sollte mit den Hashwerten übereinstimmen, die im Abschnitt [Überprüfen der Sicherheit](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security) des Tutorials [Bewerten von virtuellen VMware-Computern für die Migration](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware) aufgeführt sind.
 
@@ -315,7 +314,6 @@ Jetzt kann Contoso die heruntergeladene Datei auf die vCenter Server-Instanz imp
 Contoso führt jetzt den Collector aus, um VMs zu ermitteln. Derzeit unterstützt der Collector nur **Englisch (USA)** als Sprache des Betriebssystems und der Collectoroberfläche.
 
 1. In der Konsole des vSphere-Clients wählt Contoso die Option **Konsole öffnen**. Contoso gibt die Einstellungen für das Akzeptieren der Lizenzbedingungen und für Kennwörter für den virtuellen Collectorcomputer an.
-
 2. Contoso wählt auf dem Desktop die Verknüpfung mit dem **Konfigurations-Manager für Microsoft Azure-Appliances** aus.
 
     ![Konsole des vSphere-Clients – Collectorverknüpfung](../migrate/azure-best-practices/media/contoso-migration-assessment/collector-shortcut-v2.png)
@@ -329,7 +327,7 @@ Contoso führt jetzt den Collector aus, um VMs zu ermitteln. Derzeit unterstütz
 
     ![Azure Migrate-Collector – Überprüfen der erforderlichen Komponenten](../migrate/azure-best-practices/media/contoso-migration-assessment/collector-verify-prereqs-v2.png)
 
-5. Melden Sie sich bei Ihrem **Azure**-Konto an, und wählen Sie das Abonnement- und Migrationsprojekt aus, das Sie zuvor erstellt haben. Geben Sie auch einen Namen für die **Appliance** ein, damit Sie sie im Azure-Portal identifizieren können.
+5. Melden Sie sich bei Ihrem Azure-Konto an, und wählen Sie das Abonnement und das Migrationsprojekt aus, das Sie zuvor erstellt haben. Geben Sie auch einen Namen für die **Appliance** ein, damit Sie sie im Azure-Portal identifizieren können.
 
 6. Unter **vCenter Server-Details angeben** gibt Contoso den Namen (FQDN) oder die IP-Adresse der vCenter Server-Instanz und die schreibgeschützten Anmeldeinformationen für die Ermittlung ein.
 
@@ -368,10 +366,10 @@ Contoso erstellt vor der Installation der Agents eine Momentaufnahme, damit eine
 1. Unter **Computer** wählt Contoso den Computer aus. In der Spalte **Abhängigkeiten** wählt Contoso die Option **Installation erforderlich**.
 
 2. Im Bereich **Computer ermitteln** führt Contoso folgende Schritte aus:
-    - Der Microsoft Monitoring Agent (MMA) und der Microsoft Dependency-Agent werden für jeden virtuellen Windows-Computer heruntergeladen.
-    - Der MMA und der Dependency-Agent werden für jeden virtuellen Linux-Computer heruntergeladen.
+    - Der Microsoft Monitoring Agent und der Microsoft Dependency-Agent werden für jede Windows-VM heruntergeladen.
+    - Der Microsoft Monitoring Agent und der Microsoft Dependency-Agent werden für jede Linux-VM heruntergeladen.
 
-3. Contoso kopiert die ID und den Schlüssel des Arbeitsbereichs. Contoso benötigt für die MMA-Installation die Arbeitsbereichs-ID und den zugehörigen Schlüssel.
+3. Contoso kopiert die ID und den Schlüssel des Arbeitsbereichs. Contoso benötigt für die Installation des Microsoft Monitoring Agent die Arbeitsbereichs-ID und den zugehörigen Schlüssel.
 
     ![Agent-Download](../migrate/azure-best-practices/media/contoso-migration-assessment/download-agents.png)
 
@@ -395,13 +393,13 @@ Contoso führt die Installation auf jeder VM durch.
 
 5. Unter **Bereit zur Installation** installiert Contoso den MMA.
 
-#### <a name="install-the-dependency-agent-on-windows-vms"></a>Installieren des Abhängigkeits-Agents unter Windows-VMs
+#### <a name="install-the-microsoft-dependency-agent-on-windows-vms"></a>Installieren des Microsoft Dependency-Agents auf Windows-VMs
 
-1. Contoso doppelklickt auf den heruntergeladenen Dependency-Agent.
+1. Contoso doppelklickt auf den heruntergeladenen Agent.
 
 2. Contoso akzeptiert die Lizenzbedingungen und wartet, bis die Installation abgeschlossen wurde.
 
-    ![Einrichtung des Dependency-Agents: Installation](../migrate/azure-best-practices/media/contoso-migration-assessment/dependency-agent.png)
+    ![Installieren des Microsoft Dependency-Agents](../migrate/azure-best-practices/media/contoso-migration-assessment/dependency-agent.png)
 
 ### <a name="install-the-agents-on-linux-vms"></a>Installieren des Agents auf Linux-VMs
 
@@ -413,11 +411,11 @@ Contoso führt die Installation auf jeder VM durch.
 
     `sudo apt-get install python-ctypeslib`
 
-1. Contoso muss den Befehl zur Installation des MMA-Agents als Root-Benutzer ausführen. Um zum Root-Benutzer zu werden, führt Contoso den folgenden Befehl aus und gibt dann das Kennwort für den Root-Benutzer ein:
+2. Contoso muss den Befehl zur Installation des MMA-Agents als Root-Benutzer ausführen. Um zum Root-Benutzer zu werden, führt Contoso den folgenden Befehl aus und gibt dann das Kennwort für den Root-Benutzer ein:
 
     `sudo -i`
 
-1. Contoso installiert den MMA:
+3. Contoso installiert den MMA:
 
     - Contoso gibt die Arbeitsbereichs-ID und den Schlüssel für den Befehl ein.
     - Die Befehle sind für 64-Bit.
@@ -426,13 +424,13 @@ Contoso führt die Installation auf jeder VM durch.
 
         `wget https://raw.githubusercontent.com/Microsoft/OMS-Agent-for-Linux/master/installer/scripts/onboard_agent.sh && sh onboard_agent.sh -w 6b7fcaff-7efb-4356-ae06-516cacf5e25d -s k7gAMAw5Bk8pFVUTZKmk2lG4eUciswzWfYLDTxGcD8pcyc4oT8c6ZRgsMy3MmsQSHuSOcmBUsCjoRiG2x9A8Mg==`
 
-#### <a name="install-the-dependency-agent-on-linux-vms"></a>Installieren des Abhängigkeits-Agents auf Linux-VMs
+#### <a name="install-the-microsoft-dependency-agent-on-linux-vms"></a>Installieren des Microsoft Dependency-Agents auf Linux-VMs
 
-Nach der MMA-Installation installiert Contoso den Dependency-Agent auf den virtuellen Linux-Computern:
+Nach der Installation des Microsoft Monitoring Agent installiert Contoso den Microsoft Dependency-Agent auf den Linux-VMs:
 
-1. Der Dependency-Agent wird mithilfe von „InstallDependencyAgent-Linux64.bin“ auf den Linux-Computern installiert. Hierbei handelt es sich um ein Shellskript mit einer selbstextrahierenden Binärdatei. Contoso führt die Datei mit „sh“ aus oder fügt der Datei selbst Ausführungsberechtigungen hinzu.
+1. Der Microsoft Dependency-Agent wird mithilfe von `InstallDependencyAgent-Linux64.bin` auf den Linux-Computern installiert. Hierbei handelt es sich um ein Shellskript mit einer selbstextrahierenden Binärdatei. Contoso führt die Datei mit `sh` aus oder fügt der Datei selbst Ausführungsberechtigungen hinzu.
 
-2. Contoso installiert den Dependency-Agent für Linux als Root-Benutzer:
+2. Contoso installiert den Linux-Dependency-Agent als Root-Benutzer:
 
     `wget --content-disposition https://aka.ms/dependencyagentlinux -O InstallDependencyAgent-Linux64.bin && sudo sh InstallDependencyAgent-Linux64.bin -s`
 
@@ -457,8 +455,7 @@ Contoso kann jetzt die Abhängigkeiten der Computer überprüfen, und eine Grupp
 
     ![Azure Migrate – Anzeigen der Gruppenabhängigkeiten](../migrate/azure-best-practices/media/contoso-migration-assessment/sqlvm-dependencies.png)
 
-4. Contoso wählt die VMs aus, die der Gruppe hinzugefügt werden sollen (SQLVM und WEBVM). Contoso hält die STRG-TASTE gedrückt, während es auf mehrere virtuelle Computer klickt, um sie auszuwählen.
-
+4. Contoso wählt die VMs aus, die der Gruppe hinzugefügt werden sollen (SQLVM und WEBVM). Contoso hält beim Auswählen mehrerer VMs die Taste `Ctrl` gedrückt.
 5. Contoso wählt **Gruppe erstellen** und gibt dann einen Namen ein (**smarthotelapp**).
 
     > [!NOTE]
@@ -468,7 +465,7 @@ Contoso kann jetzt die Abhängigkeiten der Computer überprüfen, und eine Grupp
 
 1. Unter **Gruppen** öffnet Contoso die Gruppe (**smarthotelapp**) und wählt dann die Option **Bewertung erstellen**.
 
-    ![Azure Migrate – Erstellen einer Bewertung](../migrate/azure-best-practices/media/contoso-migration-assessment/run-vm-assessment.png)
+    ![Von der Azure Erstellen einer Bewertung](../migrate/azure-best-practices/media/contoso-migration-assessment/run-vm-assessment.png)
 
 2. Um die Bewertung anzuzeigen, wählt Contoso **Verwalten** > **Bewertungen**.
 
@@ -514,7 +511,7 @@ Im Bewertungsbericht sind die in der Tabelle zusammengefassten Informationen ent
 | Einstellung | Anzeige | Details |
 | --- | --- | --- |
 | **Azure-VM-Bereitschaft** | Gibt an, ob die VM für die Migration bereit ist. | Mögliche Status: <li> Bereit für Azure <li> Bereit mit Bedingungen <li> Nicht bereit für Azure <li> Bereitschaft unbekannt <br><br> Wenn eine VM nicht bereit ist, werden in Azure Migrate einige Lösungsschritte angezeigt. |
-| **Azure-VM-Größe** | Für VMs, die bereit sind, stellt Azure Migrate eine Empfehlung zur Größe der Azure-VM bereit. | Die Empfehlung für die Größenanpassung richtet sich nach den Bewertungseigenschaften: <li> Wenn Sie die leistungsbasierte Größenanpassung verwendet haben, wird bei der Größenanpassung der Leistungsverlauf der VMs berücksichtigt. <li> Wenn Sie die Größenanpassung vom Typ _Wie lokal_ verwendet haben, basiert die Größenanpassung auf der Größe des lokalen virtuellen Computers, <li> und es werden keine Nutzungsdaten verwendet. |
+| **Azure-VM-Größe** | Für VMs, die bereit sind, stellt Azure Migrate eine Empfehlung zur Größe der Azure-VM bereit. | Die Empfehlung für die Größenanpassung richtet sich nach den Bewertungseigenschaften: <li> Wenn Sie die leistungsbasierte Größenanpassung verwendet haben, wird bei der Größenanpassung der Leistungsverlauf der VMs berücksichtigt. <li> Wenn Sie die Größenanpassung vom Typ _Wie lokal_ verwendet haben, basiert die Größenanpassung auf der Größe und Nutzung der lokalen VMs. <li> Daten werden nicht verwendet. |
 | **Vorgeschlagenes Tool** | Da auf den Azure-Computern die Agents ausgeführt werden, prüft Azure Migrate die Prozesse, die im Computer ausgeführt werden. Es wird ermittelt, ob der Computer ein Datenbankcomputer ist. | |
 | **VM-Informationen** | Im Bericht werden die Einstellungen für die lokale VM angezeigt, z.B. Betriebssystem, Starttyp und Informationen zu Datenträger und Speicher. | |
 

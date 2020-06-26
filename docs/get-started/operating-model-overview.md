@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 3c73d4baaa71b87c749483a8fb5ba9f53bb72d70
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: b3f72f4fb73550c3e2a421cb9965b8ac0c75b80e
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83752714"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786074"
 ---
 # <a name="improve-operations"></a>Optimieren von Vorgängen
 
@@ -33,6 +33,6 @@ Die grundlegenden Prinzipien eines gut verwalteten Betriebsmodells basieren auf 
 
 ![Gemeinsame Architekturprinzipien](../_images/shared-principles.png)
 
-[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview), das [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) und die Lösungen im [Azure Architecture Center](https://docs.microsoft.com/azure/architecture) beruhen auf den oben genannten Prinzipien. Azure Advisor wertet die Prinzipien für einzelne Ressourcen aus. Das Azure Architecture Center wendet diese Prinzipien an, um durchdachte Lösungen bereitzustellen. Microsoft Azure Well-Architected Framework trägt dazu bei, ein ausgewogenes Verhältnis dieser Prinzipien innerhalb einer Workload zu erreichen, um Entscheidungen in Bezug auf die Architektur zu treffen.
+[Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview), das [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) und die Lösungen im [Azure Architecture Center](https://docs.microsoft.com/azure/architecture) beruhen auf den oben genannten Prinzipien. Azure Advisor wertet die Prinzipien für einzelne Ressourcen aus. Das Azure Architecture Center wendet diese Prinzipien an, um durchdachte Lösungen bereitzustellen. Das Microsoft Azure Well-Architected Framework trägt dazu bei, ein ausgewogenes Verhältnis dieser Prinzipien innerhalb einer Workload zu erreichen, um Entscheidungen in Bezug auf die Architektur zu treffen.
 
 Mit dem Cloud Adoption Framework wird eine durchdachte Umgebung sichergestellt, indem diese Prinzipien auf das Portfolio der Workloads und die unterstützenden Umgebungen angewendet werden.

@@ -7,12 +7,12 @@ ms.date: 04/14/2020
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.topic: article
-ms.openlocfilehash: 3968e453eb89a0f00d7fd23eeec90fb6a947cd05
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: c098fbf86771b9520d7530354ab993f956683050
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756055"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85077183"
 ---
 <!-- cSpell:ignore Terraform's -->
 
@@ -43,8 +43,8 @@ Das Cloud Adoption Framework umfasst Tools, mit denen Sie technische Änderungen
 | [Vorlage für die Nachverfolgung der Benennung und Markierung](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/CAF%20Readiness%20Naming%20and%20Tagging%20tracking%20template.xlsx) | Dokumentieren Sie Entscheidungen über Benennungs- und Markierungsstandards, um Einheitlichkeit zu gewährleisten und die Zeit für das Onboarding zu verkürzen. |
 | [&nbsp;CAF-Basisblaupause&nbsp;](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone-governance) | Verwenden Sie eine einfache Implementierung einer anfänglichen Governancegrundlage, um praktische Erfahrungen mit Governancetools in Azure bereitzustellen. |
 | [Blaupause für die CAF-Migrationszielzone](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone) | Bereitstellung und Vorbereitung auf das Hosten von Workloads, die aus einer lokalen Umgebung zu Azure migriert werden. Weitere Informationen zu dieser Blaupause finden Sie unter [Entwickeln einer Migrationszielzone](../ready/landing-zone/migrate-landing-zone.md). |
-| [Blaupause der Terraform-Zielzone](../ready/landing-zone/terraform-landing-zone.md) | Open-Source-Codebasis für die Terraform-Version der CAF-Zielzonenblaupausen. |
-| [Terraform-Registrierung](https://registry.terraform.io/search?q=aztfmod) | Die gefilterte Website der Terraform-Registrierung, um alle Module des Cloud Adoption Framework aufzulisten, die zum Erstellen einer Terraform-Zielzone erforderlich sind. |
+| [Terraform-Module](../ready/landing-zone/terraform-landing-zone.md) | Open-Source-Codebasis für die Terraform-Version der CAF-Zielzonen. |
+| [Terraform-Registrierung](https://registry.terraform.io/search?q=aztfmod) | Die gefilterte Website der Terraform-Registrierung, um alle Module des Cloud Adoption Framework aufzulisten, die zum Erstellen einer Zielzone über Terraform erforderlich sind. |
 
 ## <a name="govern"></a>Steuern
 

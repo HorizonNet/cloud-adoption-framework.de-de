@@ -7,12 +7,12 @@ ms.date: 09/22/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 2b1cfc3ed38889a8767a979e1abf6e4712d463b8
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: c09124d6a09ee3350fb6a1b605c493a51d15bb4a
+ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221636"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "84813238"
 ---
 <!-- cSpell:ignore rodend -->
 
@@ -23,7 +23,7 @@ Das Azure-Unternehmensgerüst wurde in das Microsoft Cloud Adoption Framework f�
 Lesen Sie die folgenden Artikel, um mit der Verwendung des Cloud Adoption Framework zu beginnen:
 
 - [Sicherstellen der Umgebungsbereitschaft für den Cloudeinführungsplan](../ready/index.md)
-- [Bereitstellen einer Landezone für die Migration](../ready/landing-zone/migrate-landing-zone.md)
+- [Azure-Zielzonen](../ready/landing-zone/index.md)
 - [Überlegungen zu Landezonen](../ready/considerations/index.md)
 
 Den veralteten Inhalt finden Sie im Artikel zum [Azure-Unternehmensgerüst](./migration-with-enterprise-scaffold.md).

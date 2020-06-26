@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7297e568f2fe16a2e499217af47d091c88544559
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 6ee0387a0de73af6b26a4a2396582bf790f2ec65
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219919"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84786975"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-resource-consistency-discipline"></a>Governanceleitfaden für Standardunternehmen: Verbessern der Disziplin „Ressourcenkonsistenz“
 
@@ -91,7 +91,7 @@ In diesem Abschnitt des Artikels wird der Governance-MVP-Entwurf so geändert, d
     1. Überprüfen und erzwingen Sie die Wichtigkeits- und Datenklassifizierung für alle Abonnements, um Abonnements mit unternehmenskritischen Ressourcen zu identifizieren.
     2. Überwachen und erzwingen Sie die ausschließliche Verwendung genehmigter Images.
 5. Azure Monitor-Implementierung:
-    1. Nachdem eine unternehmenskritische Workload identifiziert wurde, erstellen Sie einen Azure Monitor-Arbeitsbereich.
+    1. Nachdem eine unternehmenskritische Workload identifiziert wurde, erstellen Sie einen Azure Monitor Log Analytics-Arbeitsbereich.
     2. Während der Bereitstellungstests stellt das Cloud Operations-Team die erforderlichen Agents bereit und testet die Ermittlung.
 6. Aktualisieren Sie Azure Policy für alle Abonnements, die unternehmenskritische Anwendungen enthalten.
     1. Überwachen und erzwingen Sie die Anwendung einer NSG auf alle NICs und Subnetze. Die Netzwerk- und die IT-Sicherheit definieren die NSG.

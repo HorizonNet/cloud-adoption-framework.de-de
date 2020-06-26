@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 33744f6911ec724c517a7fa93979a8adbdd370c1
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 9a35e4d9f693362597d301f1ec8d01efdb7887f4
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83814461"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076228"
 ---
 # <a name="get-started-build-a-cloud-adoption-team"></a>Erste Schritte: Aufbauen eines Cloudeinführungsteams
 
@@ -68,7 +68,7 @@ Wenn die Cloudeinführungsbestrebung Ihres Unternehmens weit genug vorangeschrit
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Das Cloudstrategieteam ist über den gesamten Lebenszyklus der Cloudeinführung hinweg für eine klare RACI-Struktur zuständig. | Machen Sie sich mit den Angaben und Anforderungen folgender Teams/Stellen vertraut: <li> Cloudgovernanceteam <li> Cloudbetriebsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung <li> Andere in der RACI-Vorlage aufgeführte Cloudeinführungsteams oder Personen |
+| <li> Das Cloudstrategieteam ist über den gesamten Lebenszyklus der Cloudeinführung hinweg für eine klare RACI-Struktur zuständig. | Machen Sie sich mit den Angaben und Anforderungen folgender Teams/Stellen vertraut: <li> Cloudgovernanceteam <li> Cloudbetriebsteam <li> Cloudkompetenzzentrum (CCoE) oder zentrales IT-Team <li> Andere in der RACI-Vorlage aufgeführte Cloudeinführungsteams oder Personen |
 
 ## <a name="step-3-begin-your-adoption-journey"></a>Schritt 3: Starten des Einführungsprozesses
 
@@ -98,7 +98,7 @@ Alle anderen Schritte in diesen Prüflisten dienen dazu, die Verwaltbarkeit der 
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudeinführungsteam | <li> Cloudgovernanceteam <li> Cloudbetriebsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung <li> Cloudstrategieteam |
+| <li> Cloudeinführungsteam | <li> Cloudgovernanceteam <li> Cloudbetriebsteam <li> Cloudkompetenzzentrum (CCoE) oder zentrales IT-Team <li> Cloudstrategieteam |
 
 ## <a name="step-4-expand-your-skills-with-scenarios-and-best-practices"></a>Schritt 4: Erweitern Ihrer Kenntnisse mit Szenarien und bewährten Methoden
 

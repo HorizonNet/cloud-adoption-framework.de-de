@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a03035c749b57d60bf02db6ed0f019a873aecfc5
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: a289070e0c42fb4b647d74980102539d64dde874
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815275"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075417"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Die geschäftliche Verpflichtung in der Cloudverwaltung
 
@@ -59,13 +59,13 @@ In einer herkömmlichen lokalen Umgebung werden die Kosten für die Verwaltung d
 
 Organisationen können auch entscheiden, [einige ihrer laufenden Verwaltungsfunktionen an einen Dienstanbieter auszulagern](https://aka.ms/adopt/partneroffers). Diese Dienstanbieter können Organisationen mit [Azure Lighthouse](https://azure.microsoft.com/services/azure-lighthouse) ermöglichen, den Zugriff auf ihre Ressourcen genauer zu steuern sowie einen umfassenderen Einblick in die von den Dienstanbietern ausgeführten Aktionen zu erhalten.
 
-- **Delegierte Verantwortung:** Da es nicht erforderlich ist, zu zentralisieren und einen Mehraufwand für die Betriebsverwaltung vorauszusetzen, erwägen die IT-Abteilungen vieler Organisationen neue Ansätze. Ein gängiger Ansatz wird als _Delegierte Verantwortung_ bezeichnet. In einem Cloudkompetenzzentrum-Modell bieten Plattformvorgänge und Plattformautomatisierung Self-Service-Verwaltungstools, die unabhängig von einem zentralen IT-Betriebsteam von unternehmensgeführten Betriebsteams genutzt werden können. Dieser Ansatz ermöglicht den Beteiligten im Unternehmen eine umfassende Kontrolle verwaltungsrelevanter Budgets. Außerdem kann das Cloudkompetenzzentrum (CCoE) so sicherstellen, dass ein minimaler Satz von Schutzmaßnahmen ordnungsgemäß implementiert wird. In diesem Modell fungiert die IT als Broker und Führer, um dem Unternehmen zu helfen, vernünftige Entscheidungen zu treffen. Geschäftsvorgänge überwachen tägliche Vorgänge abhängiger Workloads.
+- **Delegierte Verantwortung:** Da es nicht erforderlich ist, zu zentralisieren und einen Mehraufwand für die Betriebsverwaltung vorauszusetzen, erwägen die IT-Abteilungen vieler Organisationen neue Ansätze. Ein gängiger Ansatz wird als _Delegierte Verantwortung_ bezeichnet. In einem Modell mit Cloudkompetenzzentrum bieten Plattformvorgänge und Plattformautomatisierung Self-Service-Verwaltungstools, die unabhängig von einem zentralen IT-Betriebsteam von geschäftsorientierten Betriebsteams genutzt werden können. Dieser Ansatz ermöglicht den Beteiligten im Unternehmen eine umfassende Kontrolle verwaltungsrelevanter Budgets. Außerdem kann das Cloudkompetenzzentrum (CCoE) so sicherstellen, dass ein minimaler Satz von Schutzmaßnahmen ordnungsgemäß implementiert wird. In diesem Modell fungiert die IT als Broker und Führer, um dem Unternehmen zu helfen, vernünftige Entscheidungen zu treffen. Geschäftsvorgänge überwachen tägliche Vorgänge abhängiger Workloads.
 
-- **Zentralisierte Verantwortung:** Complianceanforderungen, technische Komplexität und einige freigegebene Dienstmodelle erfordern möglicherweise ein _zentrales IT_-Modell. In diesem Modell nimmt die IT-Abteilung weiterhin ihre Verantwortlichkeiten für die Betriebsverwaltung wahr. Umgebungsentwurf, Verwaltungskontrollen und Governancetools können zentral verwaltet und gesteuert werden, was die Rolle der Beteiligten im Unternehmen einschränkt, wenn Verpflichtungen zur Verwaltung eingegangen werden. Die Transparenz hinsichtlich Kosten und Architektur von Cloudansätzen erleichtern es der zentralisierten IT stark, die Kosten und Verwaltungsebene für die einzelnen Workloads zu kommunizieren.
+- **Zentralisierte Verantwortung:** Complianceanforderungen, technische Komplexität und einige freigegebene Dienstmodelle erfordern möglicherweise ein Modell mit einem _zentralen IT-Team_. In diesem Modell nimmt die IT-Abteilung weiterhin ihre Verantwortlichkeiten für die Betriebsverwaltung wahr. Umgebungsentwurf, Verwaltungskontrollen und Governancetools können zentral verwaltet und gesteuert werden, was die Rolle der Beteiligten im Unternehmen einschränkt, wenn Verpflichtungen zur Verwaltung eingegangen werden. Die Transparenz hinsichtlich Kosten und Architektur von Cloudansätzen erleichtern es der zentralisierten IT stark, die Kosten und Verwaltungsebene für die einzelnen Workloads zu kommunizieren.
 
 - **Gemischtes Modell:** Die Klassifizierung ist der Kern eines _gemischten Modells_ für Verantwortlichkeiten für die Betriebsverwaltung. Unternehmen, die sich mitten im Wandel von „lokal“ zur Cloud befinden, benötigen möglicherweise für eine Weile ein „Zuerst lokal“-Betriebsmodell. Unternehmen mit strengen Complianceanforderungen oder die von langfristigen Verträgen mit IT-Outsourcinganbietern abhängen, benötigen möglicherweise ein zentralisiertes Betriebsmodell.
 
-  Unabhängig von ihren Einschränkungen müssen Unternehmen heute innovativ sein. Wenn eine schnelle Innovation mitten in einem Modell einer zentralen IT mit zentralisierter Verantwortung gedeihen muss, könnte ein gemischter Ansatz für ein Gleichgewicht sorgen. Bei diesem Ansatz bietet die zentrale IT ein zentralisiertes Betriebsmodell für alle Workloads, die unternehmenskritisch sind oder vertrauliche Informationen enthalten. Gleichzeitig können alle anderen Klassifizierungen der Workload in einer Cloudumgebung platziert werden, die für delegierte Verantwortlichkeiten entworfen wurde. Der Ansatz der zentralisierten Verantwortlichkeit dient als allgemeines Betriebsmodell. Das Unternehmen besitzt dann die Flexibilität, ein spezialisiertes Betriebsmodell basierend auf dem erforderlichen Niveau von Unterstützung und Vertraulichkeit anzunehmen.
+  Unabhängig von ihren Einschränkungen müssen Unternehmen heute innovativ sein. Wenn eine schnelle Innovation mitten in einem Modell einer zentralen IT mit zentralisierter Verantwortung gedeihen muss, könnte ein gemischter Ansatz für ein Gleichgewicht sorgen. Bei diesem Ansatz stellt ein zentrales IT-Team ein zentralisiertes Betriebsmodell für alle Workloads bereit, die unternehmenskritisch sind oder vertrauliche Informationen enthalten. Gleichzeitig können alle anderen Klassifizierungen der Workload in einer Cloudumgebung platziert werden, die für delegierte Verantwortlichkeiten entworfen wurde. Der Ansatz der zentralisierten Verantwortlichkeit dient als allgemeines Betriebsmodell. Das Unternehmen besitzt dann die Flexibilität, ein spezialisiertes Betriebsmodell basierend auf dem erforderlichen Niveau von Unterstützung und Vertraulichkeit anzunehmen.
 
 Der erste Schritt besteht in der Verpflichtung zu einem Verantwortlichkeitsansatz, der dann die folgenden Verpflichtungen prägt.
 
@@ -86,7 +86,7 @@ Vor dem Ausführen der Zahlen ist es wichtig, die weichen Kostenfaktoren zu betr
 Einige Beispiele für diese weichen Kostenfaktoren sind:
 
 - Tägliche Verwendung einer Workload durch den Vorstand oder den CEO.
-- Nutzung einer Workload durch Top-_x Prozent_ von Kunden, was an anderer Stelle größere Auswirkungen auf den Umsatz bewirkt.
+- Nutzung einer Workload durch die größten _x %_ von Kunden, was an anderer Stelle größere Auswirkungen auf den Umsatz nach sich zieht.
 - Auswirkung auf die Zufriedenheit der Mitarbeiter.
 
 Der nächste Datenpunkt, der erforderlich ist, um eine Verpflichtung einzugehen, ist eine Liste der weichen Kostenfaktoren. Diese Faktoren müssen in dieser Phase nicht dokumentiert werden, aber der Geschäftsbeteiligte sollte die Wichtigkeit dieser Faktoren und deren Ausschluss aus den folgenden Berechnungen beachten.

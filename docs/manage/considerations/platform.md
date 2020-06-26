@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d9c493436196a8cf95453d1822dfa43df0fa6b5c
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: cf0c049c50f6335587e60eb73aa2e55e81e1f908
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755987"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075335"
 ---
 # <a name="platform-operations-in-cloud-management"></a>Plattformbetrieb in der Cloudverwaltung
 
@@ -36,7 +36,7 @@ Zur Bezugnahme wird ein Dienstkatalog in der Frühphase in einigen Unternehmen a
 
 ### <a name="build-the-service-catalog"></a>Erstellen des Dienstkatalogs
 
-Die Cloudverwaltung ist nur selten erfolgreich, wenn ein Dienstleistungskatalog wie in einem Silo isoliert bereitgestellt wird. Die ordnungsgemäße Entwicklung des Katalogs erfordert eine Partnerschaft in der gesamten zentralen IT oder dem Cloudkompetenzzentrum (CCoE). Dieser Ansatz ist in der Regel am erfolgreichsten, wenn eine IT-Organisation einen gewissen CCoE-Reifegrad erreicht, kann aber früher umgesetzt werden.
+Die Cloudverwaltung ist nur selten erfolgreich, wenn ein Dienstleistungskatalog wie in einem Silo isoliert bereitgestellt wird. Die ordnungsgemäße Entwicklung des Katalogs erfordert eine Partnerschaft im gesamten zentralen IT-Team oder dem Cloudkompetenzzentrum (CCoE). Dieser Ansatz ist in der Regel am erfolgreichsten, wenn eine IT-Organisation einen gewissen CCoE-Reifegrad erreicht, kann aber früher umgesetzt werden.
 
 Beim Erstellen des Dienstkatalogs im Rahmen eines CCoE-Modells errichtet das Cloudplattformteam die Plattform im gewünschten Zustand. Das Cloudgovernance- und Cloudsicherheitsteam überprüfen Governance und Konformität innerhalb der Bereitstellung. Das Cloudverwaltungsteam richtet den laufenden Betrieb der Plattform ein. Und das Cloudautomatisierungsteam erstellt ein Paket der Plattform für eine skalierbare, wiederholbare Bereitstellung.
 
@@ -47,15 +47,15 @@ Nachdem die Plattform verpackt ist, kann das Cloudverwaltungsteam sie dem wachse
 
 ## <a name="define-your-own-platform-operations"></a>Definieren des eigenen Plattformbetriebs
 
-Obwohl Verwaltungstools und -prozesse dazu beitragen können, den Plattformbetrieb zu verbessern, reicht das oft nicht aus, um die gewünschten Zustände an Stabilität und Zuverlässigkeit zu erreichen. Echter Plattformbetrieb erfordert eine Fokussierung auf die Eckpfeiler der Architekturqualität. Wenn eine Plattform eine höhere Investition in den Betrieb rechtfertigt, sollten die folgenden fünf Eckpfeiler berücksichtigt werden, bevor die Plattform in einen Dienstkatalog aufgenommen wird:
+Obwohl Verwaltungstools und -prozesse dazu beitragen können, den Plattformbetrieb zu verbessern, reicht das oft nicht aus, um die gewünschten Zustände an Stabilität und Zuverlässigkeit zu erreichen. Echter Plattformbetrieb erfordert eine Fokussierung auf die Säulen der Architekturexzellenz. Wenn eine Plattform eine höhere Investition in den Betrieb rechtfertigt, berücksichtigen Sie die folgenden fünf Säulen, bevor die Plattform in einen Dienstkatalog aufgenommen wird:
 
-- **Skalierbarkeit:** Die Fähigkeit eines Systems, eine höhere Last zu verarbeiten.
-- **Verfügbarkeit:** Der prozentuale Zeitanteil, in dem ein System funktioniert und erreichbar ist.
-- **Resilienz:** Die Fähigkeit eines Systems, nach Ausfällen eine Wiederherstellung durchzuführen und die Betriebsbereitschaft sicherzustellen.
-- **Verwaltung:** Die operativen Prozesse, die für die Ausführung eines Systems in der Produktion sorgen.
-- **Sicherheit**: Schützen von Anwendungen und Daten vor Bedrohungen.
+- **Kostenoptimierung:** Verwalten der Kosten zur Maximierung des erzielten Werts.
+- **Betriebliche Exzellenz:** Verfolgen der operativen Prozesse, die für die Ausführung eines Systems in der Produktion sorgen.
+- **Effiziente Leistung:** Skalieren Sie Systeme so, dass Sie in Bezug auf Änderungen der Last flexibel sind.
+- **Zuverlässigkeit:** Entwerfen Sie Systeme so, dass sie nach Ausfällen wiederhergestellt und weiterhin ausgeführt werden können.
+- **Sicherheit**: Schützen Sie Anwendungen und Daten vor Bedrohungen.
 
-Das [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/guide/pillars) bietet einen Ansatz zur Bewertung spezifischer Workloads hinsichtlich der Einhaltung dieser Vorgaben, um so den Gesamtbetrieb zu verbessern. Diese Eckpfeiler können sowohl für den Plattform- als auch den Workloadbetrieb gelten.
+Das [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) bietet einen Ansatz zur Bewertung spezifischer Workloads hinsichtlich der Einhaltung dieser Vorgaben, um so den Gesamtbetrieb zu verbessern. Diese Eckpfeiler können sowohl für den Plattform- als auch den Workloadbetrieb gelten.
 
 ## <a name="get-started-with-specific-platforms"></a>Erste Schritte mit bestimmten Plattformen
 

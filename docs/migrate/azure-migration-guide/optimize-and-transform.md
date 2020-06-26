@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 17ba2d635e702faedec3c3441c5171c88d8fc59e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 86be2dfc12efe36afbc88fed74c0e8a60395f91f
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217131"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993555"
 ---
 <!-- markdownlint-disable MD025 DOCSMD001 -->
 
@@ -24,7 +24,7 @@ Nachdem Sie Ihre Dienste zu Azure migriert haben, beinhaltet die nächste Phase 
 
 In dieser Phase bietet sich auch die Möglichkeit, die Umgebung zu optimieren und mögliche Transformationen der Umgebung durchzuführen. Angenommen, Sie haben z. B. eine „Rehosting“-Migration durchgeführt. Da Ihre Dienste nun in Azure ausgeführt werden, können Sie die Konfiguration oder genutzten Dienste der Lösung überprüfen und möglicherweise einige Refactoringvorgänge durchführen, um die Funktionen der Lösung zu modernisieren und zu erweitern.
 
-Im weiteren Verlauf dieses Artikels werden die Tools zum Optimieren der migrierten Workload behandelt. Wenn die beste Leistungsverteilung und Kosteneffizienz erreicht wurde, kann eine Workload in die Produktion hochgestuft werden. Anleitungen zu den Optionen zum Höherstufen finden Sie in den Artikeln zur Prozessverbesserung zum [Optimieren und Höherstufen](../migration-considerations/optimize/index.md).
+Im weiteren Verlauf dieses Artikels werden die Tools zum Optimieren der migrierten Workload behandelt. Wenn Ausgewogenheit zwischen Leistung und Kosten erreicht wurde, kann eine Workload in die Produktion hochgestuft werden. Anleitungen zu den Optionen zum Höherstufen finden Sie in den Artikeln zur Prozessverbesserung zum [Optimieren und Höherstufen](../migration-considerations/optimize/index.md).
 
 # <a name="right-size-assets"></a>[Größenbestimmung der Ressourcen](#tab/optimize)
 

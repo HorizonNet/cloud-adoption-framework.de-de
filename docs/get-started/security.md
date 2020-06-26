@@ -7,18 +7,18 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 0ea7caddcc0bcc6e5f2564c2833341b54b9347e3
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 92f42ff82b6ff944de13a360bd5135b31f7de372
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83752261"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85076354"
 ---
 <!-- cSpell:ignore CISO passwordless -->
 
 # <a name="get-started-implement-security-across-the-enterprise-environment"></a>Erste Schritte: Implementieren von Sicherheit in der gesamten Unternehmensumgebung
 
-Sicherheit trägt dazu bei, die Vertraulichkeit, Integrität und Verfügbarkeit für ein Unternehmen zu gewährleisten. Sicherheitsmaßnahmen konzentrieren sich in erster Linie auf den Schutz vor potenziellen Auswirkungen auf Vorgänge, die durch interne und externe böswillige und unbeabsichtigte Handlungen verursacht werden. 
+Sicherheit trägt dazu bei, die Vertraulichkeit, Integrität und Verfügbarkeit für ein Unternehmen zu gewährleisten. Sicherheitsmaßnahmen konzentrieren sich in erster Linie auf den Schutz vor potenziellen Auswirkungen auf Vorgänge, die durch interne und externe böswillige und unbeabsichtigte Handlungen verursacht werden.
 
 Dieser Leitfaden beschreibt die wichtigsten ersten Schritte, mit denen das Geschäftsrisiko durch Cybersicherheitsangriffe gemindert oder vermieden werden kann. Er unterstützt Sie beim schnellen Einrichten wesentlicher Sicherheitspraktiken in der Cloud und dem Integrieren von Sicherheit in Ihren Cloudeinführungsprozess.
 
@@ -69,7 +69,7 @@ Zusätzlich zur Erfüllung aller expliziten gesetzlichen Complianceanforderungen
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudsicherheitsteam <br><br><br> | <li> Cloudstrategieteam <li> Cloudeinführungsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
+| <li> Cloudsicherheitsteam <br><br><br> | <li> Cloudstrategieteam <li> Cloudeinführungsteam <li> Cloudkompetenzzentrum (CCoE) oder zentrales IT-Team |
 
 In diesem ersten Schritt sollten die Governanceteams auch damit beginnen, die Schaffung von Sicherheitsgrundlinien zu koordinieren, die in allen Umgebungen überwacht, verwaltet und durchgesetzt werden können. Weitere Anleitungen zu dieser Einrichtung finden Sie später in Schritt 4.
 
@@ -125,9 +125,9 @@ Erfolgreiche Programme integrieren diese Elemente in ihren Sicherheitsstrategiep
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Führungsteam für Sicherheit (Chief Information Security Officer (CISO) oder gleichwertig) | <li> Cloudstrategieteam <li> Cloudsicherheitsteam <li> Cloudeinführungsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
+| <li> Führungsteam für Sicherheit (Chief Information Security Officer (CISO) oder gleichwertig) | <li> Cloudstrategieteam <li> Cloudsicherheitsteam <li> Cloudeinführungsteam <li> Cloudkompetenzzentrum (CCoE) oder zentrales IT-Team |
 
-**Genehmigung der Strategie:** 
+**Genehmigung der Strategie:**
 
 Führungskräfte und Geschäftsleiter mit Rechenschaftspflicht für Ergebnisse oder Risiken der Geschäftsbereiche innerhalb der Organisation sollten diese Strategie genehmigen. Diese Gruppe kann je nach Organisation den Vorstand einschließen.
 
@@ -150,12 +150,12 @@ Sicherheitsplanung und Planung der Cloudbereitstellung sollten nicht isoliert vo
     - [Azure-Komponenten und -Referenzmodell](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#azure-components-and-reference-model-2151), um die Planung und den Entwurf von Azure-Sicherheitsrollen zu beschleunigen.
 
       ![Azure-Verwaltungsmodell](../_images/security/azure-administration-model.png)
-      
+
       ![Azure RBAC-Modell](../_images/security/azure-rbac-model.png)
     - [Cybersicherheits-Referenzarchitektur von Microsoft](https://aka.ms/mcra) zum Aufbau einer Cybersicherheitsarchitektur für ein hybrides Unternehmen, das sowohl lokale als auch Cloudressourcen umfasst.
     - [SOC-Referenzarchitektur (Security Operations Center)](https://docs.microsoft.com/security/compass/security-operations-videos-and-decks#part-1-introduction---soc-learnings-strategies-and-technical-integration-2430) zur Modernisierung der Sicherheitserkennung, -reaktion und -wiederherstellung.
     - [Zero-Trust-Referenzarchitektur für Benutzerzugriff](https://docs.microsoft.com/security/ciso-workshop/ciso-workshop-module-3#part-5-zero-trust-user-access-reference-architecture-842) zur Modernisierung der Zugriffssteuerungsarchitektur für Cloudgenerierung.
-    - [Azure Security Center](https://docs.microsoft.com/azure/security-center/) und [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/) als Hilfe beim Schützen von Cloudressourcen.
+    - [Azure Security Center](https://docs.microsoft.com/azure/security-center) und [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security) als Hilfe beim Schützen von Cloudressourcen.
   - **Sicherheitsbewusstsein und Schulungsplan**, damit alle Teams über wichtige grundlegende Sicherheitskenntnisse verfügen.
   - **Kennzeichnung der Ressourcensensitivität** zur Bestimmung sensibler Ressourcen mithilfe einer Taxonomie, die sich an den Auswirkungen auf das Geschäft orientiert. Die Taxonomie wird gemeinsam von Geschäftsbeteiligten, Sicherheitsteams und anderen interessierten Parteien erstellt.
 
@@ -187,9 +187,9 @@ Dies sollte kein herkömmlicher detaillierter Plan für 3 bis 5 Jahre sein. Di
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudsicherheitsteam | <li> Cloudstrategieteam <li> Cloudgovernanceteam <li> Alle Risikoteams in Ihrer Organisation <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
+| <li> Cloudsicherheitsteam | <li> Cloudstrategieteam <li> Cloudgovernanceteam <li> Alle Risikoteams in Ihrer Organisation <li> Cloudkompetenzzentrum (CCoE) oder zentrales IT-Team |
 
-**Genehmigung des Sicherheitsplans:** 
+**Genehmigung des Sicherheitsplans:**
 
 Das Sicherheitsführungsteam (CISO oder Äquivalent) sollte den Plan genehmigen.
 
@@ -205,7 +205,7 @@ Während der Implementierung der [Zielzone](https://docs.microsoft.com/azure/clo
 
 **Hinweis zur Erreichung der Ziele:**
 
-- **Kombinieren von vorhandener Anforderungen und Cloudempfehlungen:** Beginnen Sie mit den empfohlenen Anleitungen, und passen Sie diese dann an Ihre individuellen Sicherheitsanforderungen an. Bei dem Versuch, lokale Richtlinien und Standards durchzusetzen, sind wir auf Herausforderungen gestoßen, da diese sich oft auf veraltete Technologie oder Sicherheitsansätze beziehen. 
+- **Kombinieren von vorhandener Anforderungen und Cloudempfehlungen:** Beginnen Sie mit den empfohlenen Anleitungen, und passen Sie diese dann an Ihre individuellen Sicherheitsanforderungen an. Bei dem Versuch, lokale Richtlinien und Standards durchzusetzen, sind wir auf Herausforderungen gestoßen, da diese sich oft auf veraltete Technologie oder Sicherheitsansätze beziehen.
 
   Microsoft hat einen Leitfaden veröffentlicht, der Sie bei der Erstellung Ihrer Sicherheitsbaselines unterstützt:
   - [Azure-Sicherheitsstandards für Strategie und Architektur](https://docs.microsoft.com/security/compass/compass): Strategie- und Architekturempfehlungen zur Gestaltung der Sicherheitshaltung Ihrer Umgebung.
@@ -216,7 +216,7 @@ Während der Implementierung der [Zielzone](https://docs.microsoft.com/azure/clo
   Microsoft bietet verschiedene native Funktionen in Azure, um dies zu ermöglichen:
   - [Secure Score](https://docs.microsoft.com/azure/security-center/secure-score-security-controls): Verwenden Sie eine gewichtete Bewertung Ihres Azure-Sicherheitsstatus, um die Sicherheitsmaßnahmen und -projekte in Ihrer Organisation nachzuverfolgen.
   - [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview): Cloudarchitekten und zentrale IT-Gruppen können eine wiederholbare Gruppe von Azure-Ressourcen definieren, mit der die Standards, Muster und Anforderungen einer Organisation implementiert und erzwungen werden.
-  - [Azure Policy](https://docs.microsoft.com/azure/governance/policy/): Dies ist die Grundlage der Sichtbarkeits- und Steuerungsfunktionen, die von den anderen Diensten verwendet werden. Azure Policy ist in [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager) integriert, sodass Sie Änderungen prüfen und Richtlinien für jede Ressource in Azure vor, während oder nach ihrer Erstellung durchsetzen können.
+  - [Azure Policy](https://docs.microsoft.com/azure/governance/policy): Dies ist die Grundlage der Sichtbarkeits- und Steuerungsfunktionen, die von den anderen Diensten verwendet werden. Azure Policy ist in [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager) integriert, sodass Sie Änderungen prüfen und Richtlinien für jede Ressource in Azure vor, während oder nach ihrer Erstellung durchsetzen können.
 - [Verbessern des Betriebs von Zielzonen](../ready/considerations/landing-zone-security.md): Verwenden Sie bewährte Methoden zur Verbesserung der Sicherheit innerhalb einer Zielzone.
 
 <!-- markdownlint-disable MD033 -->
@@ -224,7 +224,7 @@ Während der Implementierung der [Zielzone](https://docs.microsoft.com/azure/clo
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudsicherheitsteam | <li> Cloudeinführungsteam <li> Cloudplattformteam <li> Cloudstrategieteam <li> Cloudgovernanceteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
+| <li> Cloudsicherheitsteam | <li> Cloudeinführungsteam <li> Cloudplattformteam <li> Cloudstrategieteam <li> Cloudgovernanceteam <li> Cloudkompetenzzentrum (CCoE) oder zentrales IT-Team |
 
 ## <a name="step-5-secure-existing-cloud-workloads"></a>Schritt 5: Sichern vorhandener Cloudworkloads
 
@@ -251,7 +251,7 @@ Weitere Informationen finden Sie unter [Identifizieren und Klassifizieren von un
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudeinführungsteam | <li> Cloudeinführungsteam <li> Cloudstrategieteam <li> Cloudsicherheitsteam <li> Cloudgovernanceteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
+| <li> Cloudeinführungsteam | <li> Cloudeinführungsteam <li> Cloudstrategieteam <li> Cloudsicherheitsteam <li> Cloudgovernanceteam <li> Cloudkompetenzzentrum (CCoE) oder zentrales IT-Team |
 
 ## <a name="step-6-govern-to-manage-and-improve-security-posture"></a>Schritt 6: Steuern der Verwaltung und Verbesserung des Sicherheitsstatus
 
@@ -275,7 +275,7 @@ Die konsequente Anwendung von Sicherheitsanforderungen kommt von soliden Governa
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudgovernanceteam | <li> Cloudstrategieteam <li> Cloudsicherheitsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
+| <li> Cloudgovernanceteam | <li> Cloudstrategieteam <li> Cloudsicherheitsteam <li> Cloudkompetenzzentrum (CCoE) oder zentrales IT-Team |
 
 ## <a name="next-steps"></a>Nächste Schritte
 

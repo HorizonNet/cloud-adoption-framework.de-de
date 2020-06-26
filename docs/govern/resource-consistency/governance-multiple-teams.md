@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 84c1c1d8d6d483955e0b3928de7566f9ded4ffcb
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: dae28215075c89683fd5b8825d4bb67cbf1d8180
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756157"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993755"
 ---
 <!-- cSpell:ignore netops -->
 
@@ -222,7 +222,7 @@ Das sich ergebende Verwaltungsmodell ähnelt dem Modell aus dem ersten Beispiel,
 
 Wir sehen uns jetzt ein Modell für die Ressourcenverwaltung an, bei dem mehrere Abonnements verwendet werden. Bei diesem Modell richten Sie die drei Umgebungen jeweils auf ein separates Abonnement aus: ein Abonnement vom Typ **Gemeinsame Dienste**, ein Abonnement für die **Produktion** und ein Abonnement für die **Entwicklung**. Für dieses Modell müssen ähnliche Aspekte wie für ein Modell mit nur einem Abonnement berücksichtigt werden, und Sie müssen die Entscheidung treffen, wie Ressourcengruppen auf Workloads ausgerichtet werden. Ermittelt ist bereits, dass die Anforderung zur Isolation von Workloads durch die Erstellung einer Ressourcengruppe für jede Workload erfüllt wird. Daher verwenden Sie dieses Modell auch in diesem Beispiel.
 
-1. Bei diesem Modell gibt es drei Abonnements: **Freigegebene Infrastruktur**, **Produktion** und **Entwicklung**. Für diese drei Abonnements ist jeweils ein Abonnementbesitzer erforderlich, und in dem einfachen Beispiel verwenden Sie für alle drei das gleiche Benutzerkonto. Die Ressourcen für **Freigegebene Infrastruktur** werden auf ähnliche Weise wie in den ersten beiden Beispielen weiter oben verwaltet. Die erste Workload wird der Ressourcengruppe **app1-rg** in der Umgebung **Produktion** und der Ressourcengruppe gleichen Namens in der Umgebung **Entwicklung** zugeordnet. Das **App1-Workloadbesitzer**-Konto wird den Ressourcengruppen jeweils mit der Rolle *Mitwirkender** hinzugefügt.
+1. Bei diesem Modell gibt es drei Abonnements: **Freigegebene Infrastruktur**, **Produktion** und **Entwicklung**. Für diese drei Abonnements ist jeweils ein Abonnementbesitzer erforderlich, und in dem einfachen Beispiel verwenden Sie für alle drei das gleiche Benutzerkonto. Die Ressourcen für **Freigegebene Infrastruktur** werden auf ähnliche Weise wie in den ersten beiden Beispielen weiter oben verwaltet. Die erste Workload wird der Ressourcengruppe **app1-rg** in der Umgebung **Produktion** und der Ressourcengruppe gleichen Namens in der Umgebung **Entwicklung** zugeordnet. Das **App1-Workloadbesitzer**-Konto wird den Ressourcengruppen jeweils mit der Rolle **Mitwirkender** hinzugefügt.
 
     ![Hinzufügen von Mitwirkenden](../../_images/govern/design/governance-3-17.png)
 

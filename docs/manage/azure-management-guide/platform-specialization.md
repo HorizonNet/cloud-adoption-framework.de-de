@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 88f153d80df79098c4228a6012f513f42f3a2f64
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 6d4b2e0677b896bf61e4c57b49dda548a6719b69
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756412"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84785479"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>Plattformspezialisierung für die Cloudverwaltung
 
@@ -61,21 +61,19 @@ Die Plattformspezialisierung besteht aus einer disziplinierten Ausführung der f
 
 Das Verbessern des Systementwurfs ist der effektivste Ansatz zur Optimierung des Betriebs jeder gängigen Plattform. Durch Verbesserungen des Systementwurfs können die Stabilität erhöht und Betriebsunterbrechungen verringert werden. Der Entwurf einzelner Systeme wird für die Umgebungssicht nicht berücksichtigt, die das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure einnimmt.
 
-Als Ergänzung zum Framework für die Cloudeinführung bietet das Microsoft Azure Well-Architected Framework bewährte Methoden zur Verbesserung der Resilienz und des Entwurfs eines bestimmten Systems. Diese Entwurfsverbesserungen können für den Systementwurf einer Plattform oder einer bestimmten Workload übernommen werden.
+Als Ergänzung zu diesem Framework bietet das [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) Grundsätze zum Verbessern einer Plattform oder einer bestimmten Workload. Der Schwerpunkt des Frameworks liegt auf der Verbesserung von fünf Säulen der Architekturexzellenz:
 
-Das Microsoft Azure Well-Architected Framework konzentriert sich auf die Verbesserung von fünf Grundpfeilern des Systementwurfs:
-
-- **Skalierbarkeit:** Skalieren der allgemeinen Plattformressourcen, um eine gestiegene Last zu bewältigen.
-- **Verfügbarkeit:** Verringern von Geschäftsunterbrechungen durch Verlängern der potenziellen Betriebszeit.
-- **Resilienz:** Verkürzen von Wiederherstellungszeiten und so der Dauer von Unterbrechungen.
-- **Sicherheit**: Schützen von Anwendungen und Daten vor externen Bedrohungen.
-- **Verwaltung:** Spezifisch für diese allgemeinen Plattformressourcen erfolgende Betriebsprozesse.
+- **Kostenoptimierung:** Verwalten der Kosten zur Maximierung des erzielten Werts.
+- **Betriebliche Exzellenz:** Verfolgen der operativen Prozesse, die für die Ausführung eines Systems in der Produktion sorgen.
+- **Effiziente Leistung:** Skalieren Sie Systeme so, dass Sie in Bezug auf Änderungen der Last flexibel sind.
+- **Zuverlässigkeit:** Entwerfen Sie Systeme so, dass sie nach Ausfällen wiederhergestellt und weiterhin ausgeführt werden können.
+- **Sicherheit**: Schützen Sie Anwendungen und Daten vor Bedrohungen.
 
 Technische Schulden und architektonische Mängel verursachen die meisten Unterbrechungen des Geschäftsbetriebs. Bei bestehenden Bereitstellungen können Verbesserungen des Systementwurfs als das Abtragen bestehender technischer Schulden angesehen werden. Bei neuen Bereitstellungen können Sie diese Verbesserungen als Vermeidung von technischen Schulden betrachten.
 
 Die folgende Registerkarte **Automatisierte Korrektur** zeigt Wege zur Behebung von technischen Schulden, die nicht behandelt werden können oder sollten.
 
-Erfahren Sie mehr über das [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/guide/pillars) zum Verbessern des Systementwurfs.
+Erfahren Sie mehr über das [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) zum Verbessern des Systementwurfs.
 
 Bei zunehmender Verbesserung des Systementwurfs kehren Sie zu diesem Artikel zurück, um neue Möglichkeiten zur Verbesserung und Skalierung dieser Verbesserungen in Ihrer Umgebung zu finden.
 

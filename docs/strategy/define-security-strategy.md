@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: d97c47610999e525b967786ac9ce766788739c25
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 45131ce44d9fb65b677b1b85a5dcf2894be0b446
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755616"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84994222"
 ---
 <!-- cSpell:ignore MarkSimos NIST CISO COVID -->
 
@@ -47,7 +47,7 @@ Viele Unternehmen beginnen damit, Cloudressourcen als zusätzliches _virtuelles 
 
 Sicherheit erzeugt natürlich entsprechende Spannungen, die Prozesse verlangsamen. Es ist entscheidend zu erkennen, welche Elemente in Ihren DevOps- und IT-Prozessen fehlerfrei sind und welche nicht:
 
-- **Normale Spannungen:** Ähnlich wie der Widerstand beim Training einen Muskel stärker macht, stärkt die Integration des richtigen Maßes an Sicherheitspannungen das System oder die App, indem zum richtigen Zeitpunkt kritisches Denken erzwungen wird. Dies geschieht in der Regel in Form einer Überlegung, warum und wie ein Angreifer versuchen könnte, eine Anwendung oder ein System während des Entwurfs anzugreifen, sowie durch Überprüfung, Identifizierung und idealerweise Behebung potenzieller Sicherheitsrisiken, die ein Angreifer in Softwarecode, Konfigurationen oder betrieblichen Methoden ausnutzen kann.
+- **Normale Spannungen:** Ähnlich wie der Widerstand beim Training einen Muskel stärker macht, stärkt die Integration des richtigen Maßes an Sicherheitspannungen das System oder die App, indem zum richtigen Zeitpunkt kritisches Denken erzwungen wird. Dies geschieht in der Regel in Form einer Überlegung, wie und warum ein Angreifer versuchen könnte, eine Anwendung oder ein System während des Entwurfs anzugreifen, sowie durch Überprüfung, Identifizierung und idealerweise Behebung potenzieller Sicherheitsrisiken, die ein Angreifer in Softwarecode, Konfigurationen oder betrieblichen Methoden ausnutzen kann.
 - **Fehlerhafte Spannungen:** Verhindern einen größeren Wert, als sie schützen. Dies geschieht häufig, wenn die von Tools generierten Sicherheitsfehler eine hohe „False Positive“-Rate aufweisen (z. B. Fehlalarme) oder wenn der Aufwand zur Entdeckung oder Behebung von Sicherheitsproblemen die möglichen Auswirkungen eines Angriffs bei weitem übersteigt.
 
 ### <a name="standalone-and-integrated-responsibilities"></a>Eigenständige und integrierte Verantwortlichkeiten
@@ -147,12 +147,12 @@ Die Entwicklung eines resilienten Sicherheitsstatus in der Cloud erfordert mehre
 
 - **Modernisieren der Infrastruktur- und Anwendungssicherheit:** Bei technischen Elementen, die unter der Kontrolle der Organisation stehen, sollten Sie der Modernisierung der Sicherheitstools und den damit verbundenen Qualifikationen Vorrang einräumen, um Deckungslücken für die Sicherung von Ressourcen in der Cloud zu minimieren. Dies setzt sich aus zwei verschiedenen, sich ergänzenden Maßnahmen zusammen:
 
-  - **Sicherheit der Infrastruktur:** Organisationen sollten die Vorteile der Cloud nutzen, um ihren Ansatz zum Schutz und zur Überwachung der gemeinsamen Komponenten zu modernisieren, die von vielen Anwendungen wie Betriebssystemen, Netzwerken und der Containerinfrastruktur verwendet werden. Diese Cloudfunktionen können oft auch die Verwaltung von Infrastrukturkomponenten sowohl in IaaS- als auch in lokalen Umgebungen umfassen. Die Optimierung dieser Strategie ist wichtig, da diese Infrastruktur eine Abhängigkeit von den darauf ausgeführten Anwendungen und Daten darstellt, die häufig kritische Geschäftsprozesse ermöglichen und entscheidende Geschäftsdaten speichern.
+  - **Sicherheit der Infrastruktur:** Organisationen sollten die Cloud nutzen, um ihren Ansatz zum Schutz und zur Überwachung der gemeinsamen Komponenten zu modernisieren, die von vielen Anwendungen wie Betriebssystemen, Netzwerken und der Containerinfrastruktur verwendet werden. Diese Cloudfunktionen können oft auch die Verwaltung von Infrastrukturkomponenten sowohl in IaaS- als auch in lokalen Umgebungen umfassen. Die Optimierung dieser Strategie ist wichtig, da diese Infrastruktur eine Abhängigkeit von den darauf ausgeführten Anwendungen und Daten darstellt, die häufig kritische Geschäftsprozesse ermöglichen und entscheidende Geschäftsdaten speichern.
   - **Anwendungssicherheit:** Organisationen sollten auch die Art und Weise modernisieren, wie sie die eindeutigen Anwendungen und Technologien sichern, die von ihrer oder für ihre Organisation entwickelt werden. Mit der Einführung agiler DevOps-Prozesse, dem zunehmenden Einsatz von Open-Source-Komponenten und der Einführung von Cloud-APIs und Clouddiensten, die Anwendungskomponenten ersetzen oder Anwendungen miteinander verbinden, verändert sich diese Disziplin zusehends.
 
     Es ist entscheidend, hier richtig vorzugehen, da diese Anwendungen häufig kritische Geschäftsprozesse ermöglichen und entscheidende Geschäftsdaten speichern.
 
-  - **Moderner Umkreis:** Organisationen sollten über einen umfassenden Ansatz zum Schutz von Daten über alle Workloads hinweg verfügen, Organisationen sollten einen modernen Umkreis von konsistenten, zentral verwalteten Identitätskontrollen einrichten, um ihre Daten, Geräte und Konten zu schützen. Dies wird stark beeinflusst durch eine Zero Trust-Strategie, die in Modul 3 des CISO-Workshops und hier in weiteren Ressourcen ausführlich diskutiert wird.
+  - **Moderner Umkreis:** Organisationen sollten über einen umfassenden Ansatz zum Schutz von Daten über alle Workloads hinweg verfügen, Organisationen sollten einen modernen Umkreis von konsistenten, zentral verwalteten Identitätskontrollen einrichten, um ihre Daten, Geräte und Konten zu schützen. Dies wird stark beeinflusst durch eine Zero Trust-Strategie, die in [Modul 3 des CISO-Workshops](https://docs.microsoft.com/en-us/security/ciso-workshop/ciso-workshop-module-3) ausführlich diskutiert wird.
 
 ### <a name="security-and-trust"></a>Sicherheit und Vertrauenswürdigkeit
 
@@ -181,7 +181,7 @@ In diesem Abschnitt werden die wichtigsten Beziehungen beschrieben, die sich auf
 
 - **Zwischen Anwendungs- und Infrastrukturteams (und Cloudanbietern):** Diese Beziehung ist aufgrund der zahlreichen Trends in der IT- und Sicherheitsbranche, die darauf abzielen, die Innovationsgeschwindigkeit und Entwicklerproduktivität zu erhöhen, erheblichen Veränderungen unterworfen.
 
-  Die alten Standards und betrieblichen Funktionen wurden gestört, aber es entstehen immer noch neue Standards und Funktionen, sodass wir empfehlen, die Mehrdeutigkeit zu akzeptieren, mit der aktuellen Denkweise Schritt zu halten und mit dem zu experimentieren, was für Ihre Organisationen funktionieren kann, bis es funktioniert. Es wird nicht empfohlen, in diesem Bereich „abzuwarten“, da dies Ihrer Organisation einen erheblichen Wettbewerbsnachteil bringen könnte.
+  Die alten Standards und betrieblichen Funktionen wurden gestört, aber es entstehen immer noch neue Standards und Funktionen, sodass wir empfehlen, die Mehrdeutigkeit zu akzeptieren, mit der aktuellen Denkweise Schritt zu halten und mit dem zu experimentieren, was für Ihre Organisationen funktionieren kann, bis es funktioniert. Es wird nicht empfohlen, in diesem Bereich „abzuwarten“, da dies einen erheblichen Wettbewerbsnachteil Ihrer Organisation bewirken könnte.
 
   Diese Trends stellen die traditionellen Standards für Rollen und Beziehungen von Anwendungen und Infrastruktur in Frage:
 

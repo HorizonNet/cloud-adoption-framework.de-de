@@ -8,20 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9bcd4fb4a516062c053322932e1de878f4ec9095
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 339de4106b9e31576b4f6986ac1f766972b8f0de
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756174"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993129"
 ---
 # <a name="resource-access-management-in-azure"></a>Ressourcenzugriffsverwaltung in Azure
 
 [Governancemethodik](../index.md) beschreibt die fünf Disziplinen der Cloudgovernance, einschließlich Ressourcenverwaltung. In den Ausführungen zur [Ressourcenzugriffsgovernance](./index.md) wird erläutert, wie sich die Ressourcenzugriffsverwaltung in die Disziplin der Ressourcenverwaltung eingliedert. Bevor Sie fortfahren und sich darüber informieren, wie Sie ein Modell für die Ressourcenkontrolle entwerfen, sollten Sie sich unbedingt mit den Kontrollen vertraut machen, die in Azure für die Ressourcenzugriffsverwaltung verwendet werden. Die Konfiguration dieser Kontrollen für die Ressourcenzugriffsverwaltung ist die Grundlage Ihres Modells für die Ressourcenkontrolle.
 
 Sehen Sie sich erst einmal genauer an, wie Ressourcen in Azure bereitgestellt werden.
-
-<!-- markdownlint-disable MD026 -->
 
 ## <a name="what-is-an-azure-resource"></a>Was ist eine Azure-Ressource?
 
@@ -32,16 +30,16 @@ _Abbildung 1: Ressource_
 
 ## <a name="what-is-an-azure-resource-group"></a>Was ist eine Azure-Ressourcengruppe?
 
-In Azure muss jede Ressource zu einer [Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#resource-groups) gehören. Eine Ressourcengruppe ist einfach ein logisches Konstrukt, mit dem mehrere Ressourcen gruppiert werden, damit sie gemeinsam als einzelne Entität _auf der Grundlage von Lebenszyklus und Sicherheit_ verwaltet werden können. Beispielsweise können Ressourcen, die über einen ähnlichen Lebenszyklus verfügen, z.B. die Ressourcen für eine [n-schichtige Anwendung](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier), als Gruppe erstellt oder gelöscht werden. Anders ausgedrückt: Alles, was zusammen erstellt, verwaltet und ausgemustert wird, gehört in eine gemeinsame Ressourcengruppe.
+In Azure muss jede Ressource zu einer [Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#resource-groups) gehören. Eine Ressourcengruppe ist einfach ein logisches Konstrukt, mit dem mehrere Ressourcen gruppiert werden, damit sie gemeinsam als einzelne Entität **auf der Grundlage von Lebenszyklus und Sicherheit** verwaltet werden können. Beispielsweise können Ressourcen, die über einen ähnlichen Lebenszyklus verfügen, z.B. die Ressourcen für eine [n-schichtige Anwendung](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier), als Gruppe erstellt oder gelöscht werden. Anders ausgedrückt: Alle Elemente, die zusammen erstellt, verwaltet und außer Betrieb genommen werden, gehören in eine gemeinsame Ressourcengruppe.
 
 ![Diagramm einer Ressourcengruppe, die eine Ressource enthält](../../_images/govern/design/governance-1-10.png)
 _Abbildung 2: Eine Ressourcengruppe enthält eine Ressource._
 
-Ressourcengruppen und die darin enthaltenen Ressourcen sind einem Azure-**Abonnement** zugeordnet.
+Ressourcengruppen und die darin enthaltenen Ressourcen sind einem Azure-Abonnement zugeordnet.
 
 ## <a name="what-is-an-azure-subscription"></a>Was ist ein Azure-Abonnement?
 
-Ein Azure-Abonnement ähnelt einer Ressourcengruppe darin, dass es sich um ein logisches Konstrukt handelt, unter dem Ressourcengruppen und die zugehörigen Ressourcen gruppiert werden. Darüber hinaus ist ein Azure-Abonnement auch noch den Kontrollen zugeordnet, die von Azure Resource Manager genutzt werden. Sehen Sie sich Azure Resource Manager genauer an, um sich über die Beziehung dieses Diensts zu einem Azure-Abonnement zu informieren.
+Ein Azure-_Abonnement_ ähnelt einer Ressourcengruppe darin, dass es sich um ein logisches Konstrukt handelt, unter dem Ressourcengruppen und die zugehörigen Ressourcen gruppiert werden. Darüber hinaus ist ein Azure-Abonnement auch noch den Kontrollen zugeordnet, die von Azure Resource Manager genutzt werden. Sehen Sie sich Azure Resource Manager genauer an, um sich über die Beziehung dieses Diensts zu einem Azure-Abonnement zu informieren.
 
 ![Diagramm eines Azure-Abonnements](../../_images/govern/design/governance-1-11.png)
 _Abbildung 3: Ein Azure-Abonnement._
@@ -63,10 +61,10 @@ Diese Clients stellen zwar über die RESTful-API eine Verbindung mit Azure Resou
 ![Azure-Ressourcenanbieter](../../_images/govern/design/governance-1-14.png)
 _Abbildung 6: Azure-Ressourcenanbieter_
 
-Wenn ein Client eine Anforderung zur Verwaltung einer bestimmten Ressource sendet, stellt Azure Resource Manager eine Verbindung mit dem Ressourcenanbieter für diesen Ressourcentyp her, damit die Anforderung abgeschlossen werden kann. Wenn ein Client beispielsweise eine Anforderung zur Verwaltung einer VM-Ressource sendet, stellt Azure Resource Manager eine Verbindung mit dem Ressourcenanbieter **Microsoft.compute** her.
+Wenn ein Client eine Anforderung zur Verwaltung einer bestimmten Ressource sendet, stellt Azure Resource Manager eine Verbindung mit dem Ressourcenanbieter für diesen Ressourcentyp her, damit die Anforderung abgeschlossen werden kann. Wenn ein Client beispielsweise eine Anforderung zur Verwaltung einer VM-Ressource sendet, stellt Azure Resource Manager eine Verbindung mit dem `Microsoft.Compute`-Ressourcenanbieter her.
 
 ![Azure Resource Manager stellt eine Verbindung mit dem Ressourcenanbieter „Microsoft.Compute“ her.](../../_images/govern/design/governance-1-15.png)
-_Abbildung 7: Azure Resource Manager stellt eine Verbindung mit dem Ressourcenanbieter **Microsoft.Compute** her, um die in der Clientanforderung angegebene Ressource zu verwalten._
+_Abbildung 7: Azure Resource Manager stellt eine Verbindung mit dem `Microsoft.Compute`-Ressourcenanbieter her, um die in der Clientanforderung angegebene Ressource zu verwalten._
 
 Azure Resource Manager setzt voraus, dass der Client einen Bezeichner für das Abonnement sowie für die Ressourcengruppe angibt, damit die VM-Ressource verwaltet werden kann.
 
@@ -77,7 +75,7 @@ Die erste Kontrolle besteht darin, dass eine Anforderung von einem geprüften Be
 ![Azure Active Directory](../../_images/govern/design/governance-1-16.png)
 _Abbildung 8: Azure Active Directory._
 
-In Azure AD werden Benutzer in **Mandanten** segmentiert. Ein Mandant ist ein logisches Konstrukt, das eine sichere, dedizierte Instanz von Azure AD darstellt, die in der Regel einer Organisation zugeordnet ist. Jedes Abonnement ist einem Azure AD-Mandanten zugeordnet.
+In Azure AD werden Benutzer in Mandanten segmentiert. Ein _Mandant_ ist ein logisches Konstrukt, das eine sichere, dedizierte Instanz von Azure AD repräsentiert, die in der Regel einer Organisation zugeordnet ist. Jedes Abonnement ist einem Azure AD-Mandanten zugeordnet.
 
 ![Ein Azure AD-Mandant, der einem Abonnement zugeordnet ist](../../_images/govern/design/governance-1-17.png)
 _Abbildung 9: Ein Azure AD-Mandant, der einem Abonnement zugeordnet ist._
@@ -89,7 +87,7 @@ Die nächste Kontrolle ist eine Überprüfung, ob der Benutzer über ausreichend
 ![Benutzer, die RBAC-Rollen zugewiesen sind](../../_images/govern/design/governance-1-18.png)
 _Abbildung 10: Jedem Benutzer im Mandanten wird mindestens eine RBAC-Rolle zugewiesen._
 
-Mit einer RBAC-Rolle wird ein Satz mit Berechtigungen angegeben, die einem Benutzer für eine bestimmte Ressource zur Verfügung stehen. Wenn die Rolle dem Benutzer zugewiesen wird, werden diese Berechtigungen angewendet. Mit der [integrierten Rolle**Besitzer**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner) kann ein Benutzer für eine Ressource beispielsweise alle Aktionen durchführen.
+Mit einer RBAC-Rolle wird ein Satz mit Berechtigungen angegeben, die einem Benutzer für eine bestimmte Ressource zur Verfügung stehen. Wenn die Rolle dem Benutzer zugewiesen wird, werden diese Berechtigungen angewendet. Mit der [integrierten Rolle `owner`](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner) kann ein Benutzer beispielsweise eine beliebige Aktion für eine Ressource ausführen.
 
 Die nächste Kontrolle umfasst eine Überprüfung, ob die Anforderung gemäß den Einstellungen, die für die [Azure-Ressourcenrichtlinie](https://docs.microsoft.com/azure/governance/policy) angegeben wurden, zulässig ist. Mit Azure-Ressourcenrichtlinien werden die Vorgänge angegeben, die für eine bestimmte Ressource zulässig sind. Mithilfe einer Azure-Ressourcenrichtlinie kann beispielsweise angegeben werden, dass Benutzer nur einen bestimmten Typ eines virtuellen Computers bereitstellen dürfen.
 

@@ -7,25 +7,75 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d9aaa631aab30c2a35719425c6249d80a8aff53b
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 9cca384f3c4e38e6a8a023210aca18c2e92c60dc
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755673"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85074680"
 ---
-<!-- cSpell:ignore vCPUs jumpbox -->
-
 # <a name="deploy-a-migration-landing-zone"></a>Bereitstellen einer Landezone für die Migration
 
 Die _Zielzone für die Migration_ ist eine Umgebung, die bereitgestellt und auf das Hosten von Workloads vorbereitet wurde, die von einer lokalen Umgebung nach Azure migriert werden.
 
-## <a name="deploy-the-first-landing-zone"></a>Bereitstellen Ihrer ersten Zielzone
+## <a name="deploy-the-blueprint"></a>Bereitstellen der Blaupause
 
-Bevor Sie die Migrationszielzonen-Blaupause im Cloud Adoption Framework verwenden, lesen Sie die folgenden Annahmen, Entscheidungen und Leitlinien für die Implementierung. Wenn diese Anleitung dem gewünschten Cloudeinführungsplan entspricht, kann die [Migrationszielzonen-Blaupause](https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone) mithilfe der [Bereitstellungsschritte][deploy-sample] bereitgestellt werden.
+Bevor Sie die CAF-Migrationszielzonen-Blaupause im Cloud Adoption Framework verwenden, machen Sie sich mit den folgenden Entwurfsprinzipien, Annahmen, Entscheidungen und Leitlinien für die Implementierung vertraut. Wenn diese Anleitung dem gewünschten Cloudeinführungsplan entspricht, kann die [CAF-Migrationszielzonen-Blaupause](https://docs.microsoft.com/azure/governance/blueprints/samples/caf-migrate-landing-zone) mithilfe der [Bereitstellungsschritte][deploy-sample] bereitgestellt werden.
 
 > [!div class="nextstepaction"]
 > [Bereitstellen des Blaupausenbeispiels][deploy-sample]
+
+## <a name="design-principles"></a>Entwurfsprinzipien
+
+Diese Implementierungsoption bietet einen wertenden Ansatz für die allgemeinen Entwurfsbereiche, die allen Azure-Zielzonen gemeinsam sind. Weitere technische Details finden Sie in den Annahmen und Entscheidungen unten.
+
+### <a name="deployment-options"></a>Bereitstellungsoptionen
+
+Mit dieser Implementierungsoption wird ein _Minimum Viable Product (MVP)_ bereitgestellt, um eine Migration zu starten. Im Verlauf der Migration verfolgt der Kunde bei paralleler Anleitung einen modularen Umgestaltungsansatz zum Ausbau des Betriebsmodells; hierbei kommen die [Governancemethodik](../../govern/index.md) und die [Manage-Methodik](../../manage/index.md) zur Anwendung, um die komplexen Themen parallel zu den anfänglichen Migrationsmaßnahmen zu adressieren.
+
+Die von diesem MVP-Ansatz bereitgestellten spezifischen Ressourcen werden unten im [Abschnitt zu Entscheidungen](#decisions) aufgeführt.
+
+### <a name="enterprise-enrollment"></a>Unternehmensregistrierung
+
+Diese Implementierungsoption nimmt hinsichtlich der Unternehmensregistrierung keine inhärente Position ein. Dieser Ansatz ist so konzipiert, dass er unabhängig von Vertragsvereinbarungen mit Microsoft oder Microsoft-Partnern auf Kunden anwendbar ist. Es wird angenommen, dass der Kunde vor der Bereitstellung dieser Implementierungsoption ein Zielabonnement erstellt hat.
+
+### <a name="identity"></a>Identity
+
+Bei dieser Implementierungsoption wird davon ausgegangen, dass das Zielabonnement in Einklang mit [bewährten Methoden der Identitätsverwaltung](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) bereits einer Azure Active Directory-Instanz zugeordnet ist.
+
+### <a name="network-topology-and-connectivity"></a>Netzwerktopologie und -konnektivität
+
+Bei dieser Implementierungsoption wird ein virtuelles Netzwerk mit Subnetzen für Gateway, Firewall, Jumpbox und Zielzone erstellt. In der nächsten Iteration befolgt das Team den [Leitfaden für Entscheidungen zum Netzwerkentwurf](../considerations/networking-options.md), um in Einklang mit [bewährten Methoden der Netzwerksicherheit](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) die geeignete Form von Konnektivität zwischen dem Gatewaysubnetz und anderen Netzwerken zu implementieren.
+
+### <a name="resource-organization"></a>Ressourcenorganisation
+
+Bei dieser Implementierungsoption wird eine einzelne Zielzone erstellt, in der Ressourcen in Workloads organisiert sind, die durch spezifische Ressourcengruppen definiert sind. Durch die Auswahl dieses minimalistischen Ansatzes für die Ressourcenorganisation werden die technischen Entscheidungen der Ressourcenorganisation auf einen Zeitpunkt verschoben, zu dem Cloudbetriebsmodell des Teams eindeutiger definiert ist.
+
+Dieser Ansatz beruht auf der Annahme, dass die Cloudeinführungsmaßnahmen die [Abonnementgrenzen](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits) nicht überschreiten. Diese Option setzt auch begrenzte architekturbezogene Komplexitäts- und Sicherheitsanforderungen in dieser Zielzone voraus.
+
+Sollte sich dies im Rahmen des Cloudeinführungsplans ändern, muss die Ressourcenorganisation u. U. anhand der Anleitung in der [Governancemethodik](../../govern/index.md) umgestaltet werden.
+
+### <a name="governance-disciplines"></a>Disziplinen der Governance
+
+Bei dieser Implementierungsoption werden keine Governancetools implementiert. Bei fehlender definierter Richtlinienautomatisierung sollte diese Zielzone nicht für unternehmenskritische Workloads oder vertrauliche Daten verwendet werden. Es wird davon ausgegangen, dass diese Zielzone für eine begrenzte Produktionsbereitstellung verwendet wird, um Lern-, Iterations- und Entwicklungszwecke des allgemeinen Betriebsmodells parallel zu diesen frühen Phasen der Migration zu initiieren.
+
+Um die parallele Entwicklung von Disziplinen der Governance zu beschleunigen, sehen Sie sich die [Governancemethodik](../../govern/index.md) an, und überlegen Sie, ob Sie zusätzlich zur Blaupause für die CAF-Migrationszielzone die [Blaupause für CAF-Grundlagen](./foundation-blueprint.md) bereitstellen möchten.
+
+> [!WARNING]
+> Mit der Weiterentwicklung der Disziplinen der Governance ist möglicherweise eine Umgestaltung erforderlich. Möglicherweise ist eine Umgestaltung erforderlich. Insbesondere müssen später Ressourcen [in ein neues Abonnement oder eine neue Ressourcengruppe verschoben werden](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json).
+
+### <a name="operations-baseline"></a>Betriebsbaseline
+
+Bei dieser Implementierungsoption werden keine Vorgänge implementiert. Bei fehlender definierter Betriebsbaseline sollte diese Zielzone nicht für unternehmenskritische Workloads oder vertrauliche Daten verwendet werden. Es wird davon ausgegangen, dass diese Zielzone für eine begrenzte Produktionsbereitstellung verwendet wird, um Lern-, Iterations- und Entwicklungszwecke des allgemeinen Betriebsmodells parallel zu diesen frühen Phasen der Migration zu initiieren.
+
+Wenn Sie die parallele Entwicklung einer Betriebsbaseline beschleunigen möchten, sehen Sie sich die [Manage-Methodik](../../manage/index.md) an, und überlegen Sie, ob Sie den [Azure-Serververwaltungsleitfaden](../../manage/azure-server-management/index.md) bereitstellen möchten.
+
+> [!WARNING]
+> Mit der Weiterentwicklung der Betriebsbaseline ist möglicherweise eine Umgestaltung erforderlich. Insbesondere müssen später Ressourcen [in ein neues Abonnement oder eine neue Ressourcengruppe verschoben werden](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json).
+
+### <a name="business-continuity-and-disaster-recovery-bcdr"></a>Geschäftskontinuität und Notfallwiederherstellung (Business Continuity Disaster Recovery, BCDR)
+
+Bei dieser Implementierungsoption wird keine BCDR-Lösung implementiert. Es wird angenommen, dass die Lösung für Schutz und Wiederherstellung durch die Entwicklung der Betriebsbaseline adressiert wird.
 
 ## <a name="assumptions"></a>Annahmen
 
@@ -61,7 +111,7 @@ Die folgenden Entscheidungen werden in der Blaupause für die Landezone widerges
 
 ## <a name="customize-or-deploy-a-landing-zone"></a>Anpassen oder Bereitstellen einer Zielzone
 
-Erfahren Sie mehr, und laden Sie ein Referenzbeispiel der CAF-Migrationszielzonen-Blaupause für die Bereitstellung oder Anpassung von [Azure Blueprints-Beispielen][deploy-sample] herunter.
+Erfahren Sie mehr, und laden Sie ein Referenzbeispiel der CAF-Migrationszielzonen-Blaupause für die Bereitstellung oder Anpassung von [Azure-Blaupausenbeispielen][deploy-sample] herunter.
 
 > [!div class="nextstepaction"]
 > [Bereitstellen des Blaupausenbeispiels][deploy-sample]
@@ -70,7 +120,7 @@ Eine Anleitung zu den Anpassungen, die in dieser Blaupause oder der resultierend
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Wen Sie Ihre erste Zielzone bereitgestellt haben, können Sie Ihre [Zielzone erweitern](../considerations/index.md).
+Nach dem Bereitstellen Ihrer ersten Zielzone können Sie Ihre [Zielzone erweitern](../considerations/index.md).
 
 > [!div class="nextstepaction"]
 > [Erweitern der Zielzone](../considerations/index.md)

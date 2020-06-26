@@ -1,18 +1,18 @@
 ---
 title: 'Erste Schritte: Zusammenstellen eines Cloudplattformteams'
-description: Anhand dieses Leitfadens kann das Cloudplattformteam den Projektumfang sowie die Zielvorgaben und Funktionen nachvollziehen, für die es verantwortlich ist.
+description: Anhand dieses Leitfadens kann das Cloudplattformteam den angegebenen Projektumfang sowie die Zielvorgaben und Funktionen nachvollziehen.
 author: JanetCThomas
 ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: c7753434a9ce901693938651f303add90bb6002b
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 28abe413c521bdb4915548fbdbafc8a0be4fc532
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83751954"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075655"
 ---
 # <a name="get-started-build-a-cloud-platform-team"></a>Erste Schritte: Zusammenstellen eines Cloudplattformteams
 
@@ -56,7 +56,7 @@ Das Fachwissen über Cloudplattformen kommt in der Regel aus einem Arbeitsteam. 
 - Auf dem Laufenden bleiben mit neuen Innovationen in der Cloudplattform.
 - Bereitstellen neuer Cloudfunktionen zur Unterstützung der Wertschöpfung im Unternehmen.
 - Empfehlen von Self-Service-Lösungen
-- Sicherstellen, dass Lösungen die bestehenden Governance- und Complianceanforderungen erfüllen
+- Sicherstellen, dass Lösungen die bestehenden Governance- und Complianceanforderungen erfüllen.
 - Erstellen und Validieren der Bereitstellung der Plattformarchitektur
 - Überprüfen der Releasepläne für Quellen neuer Plattformanforderungen
 

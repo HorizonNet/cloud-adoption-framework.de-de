@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 56679ce685bf13942049aa99bbaba4b61e0ea619
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 5e9ac42087394f532e508e5d1be6a1119c3f8b9e
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862414"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075641"
 ---
 # <a name="get-started-build-a-cloud-strategy-team"></a>Erste Schritte: Zusammenstellen eines Cloudstrategieteams
 
@@ -48,8 +48,6 @@ Das Zusammenstellen eines Cloudstrategieteams ist aus den folgenden Gründen hä
 | **Die Cloudeinführung stellt ein Risiko für das Unternehmen dar.** | <li> Wenn die Migration nicht innerhalb des vorgegebenen Zeitfensters abgeschlossen wird, hat dies negative Auswirkungen auf die Marktposition oder höhere Hostingkosten zur Folge. <li> Für die Cloudeinführung vorgesehene Workloads müssen vor Datenlecks geschützt werden, die sich auf den geschäftlichen Erfolg oder die Kundensicherheit auswirken können. <li> Die zur Messung der Ergebnisse der Cloudeinführung verwendeten Metriken sind geschäftsrelevant, wodurch eine Abhängigkeit vom technischen Erfolg und ein entsprechendes Risiko besteht. |
 
 Wenn einer oder alle der oben genannten Gründe Ihre bestehenden geschäftlichen Überlegungen widerspiegeln, werden Ihnen die Informationen im Rest dieses Artikels dabei helfen, Ihr Cloudstrategieteam aufzubauen.
-
-<!-- markdownlint-disable MD026 -->
 
 **Verantwortliche Person oder verantwortliches Team:**
 
@@ -120,7 +118,7 @@ Die Gespräche, die Sie in diesem Schritt führen, können dazu beitragen, einen
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudstrategieteam | <li> Cloudgovernanceteam <li> Cloudeinführungsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT |
+| <li> Cloudstrategieteam | <li> Cloudgovernanceteam <li> Cloudeinführungsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
 
 ## <a name="step-5-establish-business-outcomes"></a>Schritt 5: Definieren der Geschäftsergebnisse
 
@@ -165,7 +163,7 @@ Jedes Mitglied des Strategieteams sollte gängige Mythen und Ansätze für die g
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudstrategieteam | <li> Cloudgovernanceteam <li> Cloudeinführungsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT |
+| <li> Cloudstrategieteam | <li> Cloudgovernanceteam <li> Cloudeinführungsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
 
 ## <a name="step-7-support-adoption-through-a-regular-cadence"></a>Schritt 7: Unterstützen der Einführung durch einen regelmäßigen Besprechungsrhythmus.
 
@@ -189,7 +187,7 @@ Nachdem das Cloudstrategieteam eine Entscheidung bezüglich der Strategie für d
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudstrategieteam | <li> Cloudgovernanceteam <li> Cloudeinführungsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT |
+| <li> Cloudstrategieteam | <li> Cloudgovernanceteam <li> Cloudeinführungsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
 
 ## <a name="whats-next"></a>Nächste Schritte
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: cd6f89162b2975313f0eebcd4e3e1385787f8ee7
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f45418b85c0f7afbae2ea23586693c7de5054b79
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217437"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075489"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>Workloadspezialisierung für die Cloudverwaltung
 
@@ -39,7 +39,7 @@ Die Workloadspezialisierung besteht aus einer disziplinierten Ausführung der fo
 
 Eine Workloadspezialisierung löst häufig eine kulturelle Änderung in traditionellen IT-Erstellungsprozessen aus, die sich auf die Bereitstellung einer Verwaltungsbaseline, einer erweiterten Baseline und des Plattformbetriebs konzentrieren. Diese Angebotstypen können über die gesamte Umgebung hinweg skaliert werden. Die Workloadspezialisierung ähnelt in der Ausführung der Plattformspezialisierung. Im Gegensatz zu gängigen Plattformen lässt sich die für einzelne Workloads erforderliche Spezialisierung allerdings häufig nicht skalieren.
 
-Wenn eine Workloadspezialisierung erforderlich ist, wird die Betriebsverwaltung häufig über eine zentrale IT-Perspektive hinaus weiterentwickelt. In Cloud Adoption Framework wird als Ansatz die Verteilung von Cloudverwaltungsfunktionen vorgeschlagen.
+Wenn eine Workloadspezialisierung erforderlich ist, wird die Betriebsverwaltung häufig über eine zentralisierte IT-Perspektive hinaus weiterentwickelt. In Cloud Adoption Framework wird als Ansatz die Verteilung von Cloudverwaltungsfunktionen vorgeschlagen.
 
 In diesem Modell werden Betriebsaufgaben wie Überwachung, Bereitstellung, DevOps und andere innovationsorientierte Funktionen in eine spezielle für die Anwendungsentwicklung oder eine Geschäftseinheit zuständige Organisation verlagert. Das Cloudplattformteam und das Kernteam für die Cloudüberwachung erfüllen dabei weiterhin alle Anforderungen der Verwaltungsbaseline in der Umgebung.
 

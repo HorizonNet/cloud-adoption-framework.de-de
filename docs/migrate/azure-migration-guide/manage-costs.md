@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0ce3b5ee28983851e97c10360cf6707b4e3c17d1
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: a8daf90b03d4040d03c8a6432c6a7150183a0fb9
+ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214513"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "84787859"
 ---
 <!-- cSpell:ignore bandersmsft -->
 
@@ -53,7 +53,7 @@ Diese manuellen Kostenrechner können einzeln verwendet werden, um potenzielle A
 
 **Voraussetzungen:** Beim Rest dieser Registerkarte wird davon ausgegangen, dass der Leser Azure Migrate bereits mit einer Sammlung von zu migrierenden Ressourcen (Infrastruktur, Apps und Daten) gefüllt hat. Der vorherige Artikel über Bewertungen enthält Anweisungen zum Sammeln der Ausgangsdaten. Sobald die Daten gefüllt wurden, führen Sie die nächsten Schritte aus, um die monatlichen Kosten basierend auf den gesammelten Daten zu schätzen.
 
-Azure Migrate berechnet **monatliche Kostenschätzungen** basierend auf Daten, die vom Collector und der Dienstzuordnung erfasst wurden. Mit den folgenden Schritten werden die Kostenschätzungen geladen:
+Azure Migrate berechnet monatliche Kostenschätzungen basierend auf Daten, die vom Collector und der Dienstzuordnung erfasst wurden. Mit den folgenden Schritten werden die Kostenschätzungen geladen:
 
 1. Navigieren Sie im Portal zu „Azure Migrate-Bewertung“.
 1. Wählen Sie auf der Seite **Übersicht** des Projekts die Option **+ Bewertung erstellen** aus.
@@ -68,7 +68,7 @@ Die unten abgebildete resultierende Schätzung identifiziert die monatlichen Kos
 
 ![Ansicht der Kostendetails](./media/manage-costs/compute-storage-monthly-cost-estimate.png)
 
-_Abbildung 1: Abbildung der Ansicht „Kostendetails“ einer Bewertung in Azure Migrate._
+_Abbildung 1: Diagramm der Ansicht „Kostendetails“ einer Bewertung in Azure Migrate._
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

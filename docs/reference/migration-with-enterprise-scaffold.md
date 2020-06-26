@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 1e25d89d5c4beccb3b1f32e846028b8d93e41a11
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 329f421d5c4755e69a856511718f18c53e8db24b
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756123"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84994030"
 ---
 <!-- docsTest:disable -->
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
@@ -21,7 +21,7 @@ ms.locfileid: "83756123"
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure-Unternehmensgerüst: Präskriptive Abonnementgovernance
 
 > [!NOTE]
-> Azure-Unternehmensgerüste wurden in das Microsoft Cloud Adoption Framework integriert. Der Inhalt dieses Artikels wird jetzt im Abschnitt zur [Bereitschaft](../ready/index.md) des neuen Frameworks dargestellt. Dieser Artikel wird Anfang 2020 zurückgezogen. Informationen zur Verwendung des neuen Prozesses finden Sie unter [Übersicht zur Bereitschaft](../ready/index.md), [Erstellen Ihrer ersten Landezone](../ready/landing-zone/migrate-landing-zone.md) und [Überlegungen zur Landezone](../ready/considerations/index.md).
+> Azure-Unternehmensgerüste wurden in das Microsoft Cloud Adoption Framework integriert. Der Inhalt dieses Artikels wird jetzt im Abschnitt zur [Bereitschaft](../ready/index.md) des neuen Frameworks dargestellt. Dieser Artikel wird Anfang 2020 zurückgezogen. Informationen zur Verwendung des neuen Prozesses finden Sie unter [Übersicht zur Bereitschaft](../ready/index.md), [Azure-Zielzonen](../ready/landing-zone/index.md) und [Überlegungen zur Zielzone](../ready/considerations/index.md).
 
 Immer mehr Unternehmen führen für Mobilität und Flexibilität eine öffentliche Cloud ein. Sie setzen auf die Stärken der Cloud, um Umsatz zu generieren und die Ressourcennutzung im Unternehmen zu optimieren. Microsoft Azure bietet eine Vielzahl von Diensten und Funktionen, die Unternehmen wie Bausteine zusammenstellen können, um ein umfangreiches Spektrum an Workloads und Anwendungen zu berücksichtigen.
 
@@ -101,7 +101,7 @@ Die ersten beiden Muster werden am häufigsten verwendet und sind sehr empfehlen
 
 ### <a name="resource-groups"></a>Ressourcengruppen
 
-Mit Azure Resource Manager können Sie Ressourcen in aussagekräftige Gruppen für Verwaltung, Abrechnung oder natürliche Affinität aufteilen. Ressourcengruppen sind Container für Ressourcen, die einen gemeinsamen Lebenszyklus aufweisen oder gleiche Attribute wie „alle SQL Server“ oder „Anwendung A“ verwenden.
+Mit Azure Resource Manager können Sie Ressourcen in aussagekräftigen Gruppen für Verwaltung, Abrechnung oder natürliche Affinität organisieren. Ressourcengruppen sind Container für Ressourcen, die einen gemeinsamen Lebenszyklus aufweisen oder gleiche Attribute wie „alle SQL Server“ oder „Anwendung A“ verwenden.
 
 Ressourcengruppen dürfen nicht geschachtelt sein, und Ressourcen dürfen nur zu einer einzigen Ressourcengruppe gehören. Einige Aktionen gelten für alle Ressourcen in einer Ressourcengruppe. Durch das Löschen einer Ressourcengruppe werden beispielsweise alle Ressourcen innerhalb der Ressourcengruppe entfernt. Ähnlich wie bei Abonnements gibt es beim Erstellen von Ressourcengruppen allgemeine Muster: Workloads der „herkömmlichen IT“ und Workloads der „agilen IT“:
 
@@ -169,7 +169,7 @@ In [diesem GitHub-Repository](https://github.com/azure/azure-policy) finden Sie 
 
 Eine der ersten und entscheidendsten Fragen, die Sie sich vor dem Einstieg in die öffentliche Cloud stellen sollten, lautet „Wer darf auf die Ressourcen zugreifen und wie dieser Zugriff gesteuert werden kann. Die Steuerung des Zugriffs auf das Azure-Portal und die Ressourcen im Portal ist entscheidend für die langfristige Sicherheit Ihrer Objekte in der Cloud.
 
-Um den Zugriff auf Ihre Ressourcen zu sichern, konfigurieren Sie zuerst Ihren Identitätsanbieter und dann die Rollen und den Zugriff. Azure Active Directory (Azure AD) – verknüpft mit Ihrem lokalen Active Directory – ist die Grundlage von Identitäten in Azure. Azure AD ist allerdings _nicht_ dasselbe wie ein lokales Active Directory, und es ist wichtig zu wissen, was ein Azure AD-Mandant ist und wie Mandanten mit Ihrer Azure-Registrierung in Verbindung stehen. Sehen Sie sich die verfügbaren [Informationen](../govern/resource-consistency/resource-access-management.md) an, um ein solides Grundwissen zu Azure AD und dem lokalen Active Directory zu erhalten. Um Ihr Active Directory mit Azure AD zu verbinden und zu synchronisieren, installieren und konfigurieren Sie das [Azure AD Connect-Tool](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) lokal.
+Um den Zugriff auf Ihre Ressourcen zu sichern, konfigurieren Sie zuerst Ihren Identitätsanbieter und dann die Rollen und den Zugriff. Azure Active Directory (Azure AD) – verknüpft mit Ihrem lokalen Active Directory – ist die Grundlage von Identitäten in Azure. Azure AD ist jedoch **nicht** dasselbe wie ein lokales Active Directory, und es ist wichtig zu wissen, was ein Azure AD-Mandant ist und wie Mandanten mit Ihrer Azure-Registrierung in Verbindung stehen. Lesen Sie die Ausführungen zum [Verwalten des Ressourcenzugriffs in Azure](../govern/resource-consistency/resource-access-management.md) durch, um ein umfassendes Verständnis von Azure AD und lokalen Active Directory-Instanzen zu erlangen. Um Ihre lokale Active Directory-Instanz mit Azure AD zu verbinden und zu synchronisieren, installieren und konfigurieren Sie das [Azure AD Connect-Tool](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) lokal.
 
 ![Diagramm der AD-Architektur](../_images/reference/ad-architecture.png)
 
@@ -183,7 +183,7 @@ Beim Implementieren des rollenbasierten Zugriffs empfiehlt es sich dringend, fol
 - Befolgen Sie das Prinzip, die **geringsten Rechte** zu gewähren, die zur Erledigung der erwarteten Arbeit erforderlich sind.
 
 > [!IMPORTANT]
->Nutzen Sie die Funktionen [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) (PIM), Azure [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) und [Bedingter Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/overview), um für mehr Sicherheit und Transparenz für alle administrativen Aktivitäten in sämtlichen Azure-Abonnements zu sorgen. Diese Funktionen werden mit einer gültigen Azure AD Premium-Lizenz (je nach Feature) bereitgestellt, um Ihre Identitäten noch besser zu sichern und zu verwalten. Azure AD PIM ermöglicht den Just-in-Time-Verwaltungszugriff mit einem Genehmigungsworkflow sowie die vollständige Überwachung der Aktivierungen und Aktivitäten eines Administrators. Azure Multi-Factor Authentication ist eine weitere wichtige Funktion und ermöglicht eine zweistufige Überprüfung bei der Anmeldung beim Azure-Portal. In Kombination mit den Steuerungsmöglichkeiten des bedingten Zugriffs können Sie das Risiko einer Kompromittierung effektiv senken.
+> Nutzen Sie die Funktionen [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) (PIM), Azure [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) und [Bedingter Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/overview), um für mehr Sicherheit und Transparenz für alle administrativen Aktivitäten in sämtlichen Azure-Abonnements zu sorgen. Diese Funktionen werden mit einer gültigen Azure AD Premium-Lizenz (je nach Feature) bereitgestellt, um Ihre Identitäten noch besser zu sichern und zu verwalten. Azure AD PIM ermöglicht den Just-in-Time-Verwaltungszugriff mit einem Genehmigungsworkflow sowie die vollständige Überwachung der Aktivierungen und Aktivitäten eines Administrators. Azure Multi-Factor Authentication ist eine weitere wichtige Funktion und ermöglicht eine zweistufige Überprüfung bei der Anmeldung beim Azure-Portal. In Kombination mit den Steuerungsmöglichkeiten des bedingten Zugriffs können Sie das Risiko einer Kompromittierung effektiv senken.
 
 Die Planung und Vorbereitung von Identität und Zugriffssteuerung sowie das Befolgen von [bewährten Methoden beim Azure Identity Management](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices) stellt eine der besten Strategien für die Risikominderung dar, die Sie anwenden könne, und sollte für jede Bereitstellung als obligatorisch betrachtet werden.
 
@@ -196,7 +196,7 @@ Eines der größten Hindernisse bei der Einführung der Cloud sind seit jeher Be
 Das [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) bietet eine einheitliche Ansicht des Sicherheitsstatus aller Ressourcen in Ihrer Umgebung sowie Funktionen für einen erweiterten Schutz vor Bedrohungen. Das Azure Security Center ist eine offene Plattform, über die Microsoft-Partner Softwareanwendungen erstellen können, die eingebunden werden und die Funktionalität erweitern. Die grundlegenden Funktionen von Azure Security Center (kostenloser Tarif) bieten Bewertungen und Empfehlungen, die Ihren Sicherheitsstatus verbessern. Die zahlungspflichtigen Tarife bieten zusätzliche wertvolle Funktionen wie z.B. Just-in-Time-Zugriff und adaptive Anwendungssteuerung (per Whitelists).
 
 > [!TIP]
->Azure Security Center ist ein sehr leistungsfähiges Tool, das fortlaufend mit neuen Funktionen verbessert wird, mit denen Sie Bedrohungen erkennen und Ihr Unternehmen schützen können. Es wird dringend empfohlen, Azure Security Center stets zu aktivieren.
+> Azure Security Center ist ein sehr leistungsfähiges Tool, das fortlaufend mit neuen Funktionen verbessert wird, mit denen Sie Bedrohungen erkennen und Ihr Unternehmen schützen können. Es wird dringend empfohlen, Azure Security Center stets zu aktivieren.
 
 ### <a name="locks-for-azure-resources"></a>Sperren für Azure-Ressourcen
 

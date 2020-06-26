@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 0503ba04a97362b63c6e616b79d1153f3ba691c2
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 822866cfd944cd47a3eff96a24a6e0f09a69634f
+ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224169"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "84993968"
 ---
 # <a name="engage-through-applications"></a>Einbinden durch Anwendungen
 
@@ -93,7 +93,7 @@ Wenn eine Anwendung nicht einfach erweitert werden kann, ist es möglicherweise 
 
 ## <a name="operating-model-innovations"></a>Betriebsmodellinnovationen
 
-Zusätzlich zu modernen, innovativen Ansätzen für die App-Erstellung gibt es auch einige bedeutende Neuerungen beim App-_Betrieb_. Diese Ansätze haben viele organisatorische Veränderungen angeregt. Eine der herausragendsten ist das Betriebsmodell [Cloudkompetenzzentrum](../../organize/cloud-center-of-excellence.md). Wenn die Geschäftsteams vollständig personell ausgestattet und ausgereift sind, können sie ihre eigene betriebliche Unterstützung für eine Lösung bereitstellen.
+Zusätzlich zu modernen, innovativen Ansätzen für die App-Erstellung gibt es auch einige bedeutende Neuerungen beim App-Betrieb. Diese Ansätze haben viele organisatorische Veränderungen angeregt. Eine der herausragendsten ist das Betriebsmodell [Cloudkompetenzzentrum](../../organize/cloud-center-of-excellence.md). Wenn die Geschäftsteams vollständig personell ausgestattet und ausgereift sind, können sie ihre eigene betriebliche Unterstützung für eine Lösung bereitstellen.
 
 Der Typ des Self-Service-Betriebsverwaltungsmodells in einem Cloudkompetenzzentrum ermöglicht strengere Kontrollen und schnellere Iterationen innerhalb der Lösungsumgebung. Diese Ziele werden durch Übertragung betrieblicher Kontrolle und Verantwortlichkeit an das Geschäftsteam erreicht.
 

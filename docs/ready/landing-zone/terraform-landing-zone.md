@@ -7,14 +7,14 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8eee7eeaf2406a94ee703054ed5f1b9e369bf5a2
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: b7c73bda075ce0e9826fdf4738c203ff68709be8
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755655"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075006"
 ---
-<!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars -->
+<!-- cSpell:ignore arnaudlh arnaul Arnaud vCPUs eastasia southeastasia lalogs tfvars NetworkMonitoring ADAssessment ADReplication AgentHealthAssessment DnsAnalytics KeyVaultAnalytics -->
 
 # <a name="use-terraform-to-build-your-landing-zones"></a>Verwenden von Terraform zum Erstellen Ihrer Zielzonen
 
@@ -45,7 +45,7 @@ Die bereitgestellten Komponenten und ihre Zwecke sind:
 | Ressourcengruppen | Kernressourcengruppen, die für die Grundlage benötigt werden |
 | Aktivitätsprotokollierung | Überwachung aller Abonnementaktivitäten und Archivierung: <li> Speicherkonto <li> Azure Event Hubs |
 | Diagnoseprotokollierung | Alle Vorgangsprotokolle, die für eine bestimmte Anzahl von Tagen beibehalten werden: <li> Speicherkonto <li> Event Hubs |
-| Log Analytics | Speichert alle Vorgangsprotokolle. Bereitstellen allgemeiner Lösungen zum umfassenden Überprüfen der bewährten Methoden von Anwendungen: <li> NetworkMonitoring <li> ADAssessment <li> ADReplication <li> AgentHealthAssessment <li> DnsAnalytics <li> KeyVaultAnalytics |
+| Log Analytics | Speichert die Vorgangsprotokolle. Bereitstellen allgemeiner Lösungen zum umfassenden Überprüfen der bewährten Methoden von Anwendungen: <li> NetworkMonitoring <li> AdAssessment <li> AdReplication <li> AgentHealthAssessment <li> DnsAnalytics <li> KeyVaultAnalytics |
 | Azure Security Center | Sicherheitsmetriken und -warnungen, die an E-Mailadressen und Telefonnummern gesendet werden |
 
 <!-- markdownlint-enable MD033 -->
@@ -67,7 +67,7 @@ Wenn diese Annahmen mit Ihrer aktuellen Umgebung übereinstimmen, kann diese Bla
 
 ## <a name="design-decisions"></a>Entwurfsentscheidungen
 
-Die folgenden Entscheidungen werden in der Terraform-Zielzone widergespiegelt:
+Die folgenden Entscheidungen werden in den CAF Terraform-Modulen widergespiegelt:
 
 | Komponente              | Entscheidungen                                                                                                                                                                                                                                                                | Alternative Ansätze                                                                                                                                                                                                                                          |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -88,18 +88,19 @@ Die folgenden Entscheidungen werden in der Terraform-Zielzone widergespiegelt:
 
 Bei allen Ressourcen und Ressourcengruppen müssen mindestens die folgenden Tags vorhanden sein:
 
-| Tagname          | BESCHREIBUNG                                                                                        | Schlüssel             | Beispielwert                                    |
-|-------------------|----------------------------------------------------------------------------------------------------|-----------------|--------------------------------------------------|
-| Geschäftseinheit     | Oberste Abteilung Ihres Unternehmens, die Besitzer des Abonnements oder der Workload ist, zu dem oder der die Ressource gehört. | Businessunit    | Finance, marketing, {Produktname}, corp, shared |
-| Kostenstelle       | Buchhaltungskostenstelle, die dieser Ressource zugeordnet ist.                                              | Costcenter      | Number                                           |
-| Notfallwiederherstellung | Geschäftliche Bedeutung der Anwendung, Workload oder dieses Diensts.                                     | Dr              | Dr-enabled, non-dr-enabled                       |
-| Environment       | Bereitstellungsumgebung der Anwendung, Workload oder dieses Diensts.                                   | Env             | Prod, dev, QA, stage, test, training             |
-| Name des Besitzers        | Besitzer der Anwendung, der Workload oder des Diensts.                                                    | Besitzer           | Email                                            |
-| Bereitstellungstyp   | Definiert, wie die Ressourcen verwaltet werden.                                                    | Deploymenttype  | Manual, Terraform                                |
-| Version           | Version der bereitgestellten Blaupause.                                                                 | Version         | V0.1                                             |
-| Anwendungsname  | Der Name der Anwendung, des Diensts oder der Workload, womit die Ressource verknüpft ist.             | Applicationname | „App-Name“                                       |
+<!-- TODO: Review capitalization and hyphenation -->
+<!-- TODO: Eliminate either "Tag name" or "Key" column -->
 
-<!-- cSpell:ignore caf -->
+| Tagname          | BESCHREIBUNG                                                                                        | Schlüssel             | Beispielwerte                                    |
+|-------------------|----------------------------------------------------------------------------------------------------|-------------------|--------------------------------------------------|
+| Geschäftseinheit     | Oberste Abteilung Ihres Unternehmens, die Besitzer des Abonnements oder der Workload ist, zu dem oder der die Ressource gehört. | `BusinessUnit`    | `finance`, `marketing`, `<product-name>`, `corp`, `shared` |
+| Kostenstelle       | Buchhaltungskostenstelle, die dieser Ressource zugeordnet ist.                                              | `CostCenter`      | `<cost-center-number>`                                     |
+| Notfallwiederherstellung | Geschäftliche Bedeutung der Anwendung, Workload oder dieses Diensts.                                     | `DR`              | `dr-enabled`, `non-dr-enabled`                   |
+| Environment       | Bereitstellungsumgebung der Anwendung, Workload oder dieses Diensts.                                   | `Env`             | `prod`, `dev`, `qa`, `staging`, `test`, `training` |
+| Name des Besitzers        | Besitzer der Anwendung, der Workload oder des Diensts.                                                    | `Owner`           | `email`                                            |
+| Bereitstellungstyp   | Definiert, wie die Ressourcen verwaltet werden.                                                    | `DeploymentType`  | `manual`, `terraform`                                |
+| Version           | Version der bereitgestellten Blaupause.                                                                 | `Version`         | `v0.1`                                             |
+| Anwendungsname  | Der Name der Anwendung, des Diensts oder der Workload, womit die Ressource verknüpft ist.             | `ApplicationName` | `<app-name>`                                       |
 
 ## <a name="customize-and-deploy-your-first-landing-zone"></a>Anpassen und Bereitstellen Ihrer ersten Zielzone
 

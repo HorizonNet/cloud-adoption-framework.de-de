@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 8256c043677ecaf5b540553b27ddb5f1488b5132
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 4eb15ffbbe11f79bcb9ebe198369cc109a10780e
+ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756140"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85075302"
 ---
 <!-- cSpell:ignore savision -->
 
@@ -172,7 +172,7 @@ Eine Migration zur Cloud stellt Sie zwar vor einige Herausforderungen, bietet ab
 
 - Definieren Sie Standards und Methoden für die Überwachung zwischen den Hybrid- und Cloudressourcen, eine Überwachungsbaseline für jede Ressource, Warnungsschwellenwerte usw.  
 
-- Konfigurieren Sie rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC), um Benutzern und Gruppen nur den Zugriff zu gewähren, den sie zum Überwachen von Daten aus Ressourcen benötigen, für deren Verwaltung sie zuständig sind.
+- Konfigurieren Sie rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC), um Benutzern und Gruppen nur den Zugriff zu gewähren, den sie zum Überwachen von Daten aus den von ihnen verwalteten Ressourcen benötigen.
 
 - Schließen Sie Automatisierungs- und Self-Service-Funktionen ein, sodass jedes Team selbst Überwachungs- und Warnungskonfigurationen nach Bedarf erstellen, optimieren und aktivieren kann.
 
