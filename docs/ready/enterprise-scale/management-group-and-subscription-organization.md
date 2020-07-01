@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8e120a450bdc2d129e092c1e2de4a118a9437a29
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: d74b03459c306143a02936e22ef47dea4ab9d9a9
+ms.sourcegitcommit: 1c123a413725f7d2bfce91e9a6fb9e8c8c59f37b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075052"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85335954"
 ---
 # <a name="management-group-and-subscription-organization"></a>Organisation von Verwaltungsgruppen und Abonnements
 
@@ -66,7 +66,8 @@ Abonnements sind eine Verwaltungs-, Abrechnungs- und Skalierungseinheit in Azure
 - Abonnements stellen eine Verwaltungsgrenze für Governance und Isolation bereit, wodurch eine klare Trennung von Zuständigkeiten geschaffen wird.
 
 - Es gibt einen manuellen Prozess (zukünftige Automatisierung ist geplant), mit dem ein Azure AD-Mandant so eingeschränkt werden kann, dass er nur Abonnements mit Unternehmensregistrierung verwendet. Dadurch wird die Erstellung von MSDN-Abonnements im Bereich der Stammverwaltungsgruppe verhindert.
-  **Entwurfsempfehlungen:**
+
+**Entwurfsempfehlungen:**
 
 - Behandeln Sie Abonnements als demokratisierte Verwaltungseinheit, die sich an geschäftlichen Anforderungen und Prioritäten orientiert.
 

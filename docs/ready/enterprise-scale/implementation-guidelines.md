@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2d15a5f70430a86da18195c58326dd9b573198c6
-ms.sourcegitcommit: b94dab2545384e44650136b17dc9f708ccdc3c7d
+ms.openlocfilehash: 392e1e9625f631a76cd7584d4cc31485bcea8f0a
+ms.sourcegitcommit: 7c16b2857b00520bec3c4f6e9844ceac33970846
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "85195112"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85766789"
 ---
 <!-- cSpell:ignore interdomain VMSS -->
 
@@ -90,6 +90,7 @@ Für eine Operationalisierung im großen Stil müssen bei diesen Aktivitäten di
 9. (Optional:) Konfigurieren Sie ExpressRoute Global Reach für das Herstellen von Verbindungen mit lokalen HQs/DCs, wenn mehrere lokale Standorte über ExpressRoute mit Azure verbunden sind. Befolgen Sie die Anleitung unter [Konfigurieren von ExpressRoute Global Reach](https://docs.microsoft.com/azure/expressroute/expressroute-howto-set-global-reach).
 
 Die folgende Liste enthält Azure Policy-Zuweisungen, die beim Implementieren von Netzwerkressourcen für eine Bereitstellung auf Unternehmensebene verwendet werden:
+
 | Name                     | BESCHREIBUNG                                                                            |
 |--------------------------|----------------------------------------------------------------------------------------|
 | [Deploy-FirewallPolicy](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-FirewallPolicy.parameters.json)  | Erstellt eine Firewallrichtlinie. |

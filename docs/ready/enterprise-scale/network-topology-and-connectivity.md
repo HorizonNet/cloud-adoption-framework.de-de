@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: bff08721f87b8ecb14b2e63107108e3d0bc8911c
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 4363ead6a4319629df964f3efa4ace802ac81ee4
+ms.sourcegitcommit: 1c123a413725f7d2bfce91e9a6fb9e8c8c59f37b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075191"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85335988"
 ---
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
 
@@ -84,7 +84,7 @@ Bei DNS handelt es sich um ein kritisches Entwurfsthema in der gesamten unterneh
 
 Die Netzwerktopologie ist ein wichtiges grundlegendes Element der unternehmensweiten Architektur, da sie letztendlich bestimmt, wie Anwendungen miteinander kommunizieren können. In diesem Abschnitt werden relevante Technologien und Topologieansätze für Azure-Unternehmensbereitstellungen erläutert, die sich auf zwei Kernansätze konzentrieren: auf Azure Virtual WAN basierende Topologien und herkömmliche Topologien.
 
-Eine Netzwerktopologie, die auf Azure Virtual WAN basiert, ist der bevorzugte Ansatz auf Unternehmensebene für umfangreiche Bereitstellungen in mehreren Regionen, bei denen der Kunde seine globalen Standorte sowohl mit Azure als auch lokal verbinden muss. Eine Virtual WAN-Netzwerktopologie sollte auch dann verwendet werden, wenn der Kunde SD-WAN-Bereitstellungen komplett in Azure integriert verwenden möchte. Virtual WAN wird Interkonnektivitätsanforderungen in großem Stil gerecht. Da es sich um einen von Microsoft verwalteten Dienst handelt, verringert er außerdem die generelle Komplexität des Netzwerks und kann zur Modernisierung des Kundennetzwerks beitragen.
+Eine Netzwerktopologie, die auf Azure Virtual WAN basiert, ist der bevorzugte Ansatz auf Unternehmensebene für umfangreiche Bereitstellungen in mehreren Regionen, bei denen der Kunde seine globalen Standorte sowohl mit Azure als auch lokal verbinden muss. Eine Virtual WAN-Netzwerktopologie sollte auch dann verwendet werden, wenn der Kunde softwaredefinierte WAN-Bereitstellungen (SD-WAN) komplett in Azure integriert verwenden möchte. Virtual WAN wird Interkonnektivitätsanforderungen in großem Stil gerecht. Da es sich um einen von Microsoft verwalteten Dienst handelt, verringert er außerdem die generelle Komplexität des Netzwerks und kann zur Modernisierung des Kundennetzwerks beitragen.
 
 Für Kunden, die nur Ressourcen in wenigen Azure-Regionen bereitstellen möchten, sollte eine herkömmliche Azure-Netzwerktopologie verwendet werden. Sie benötigen kein globales Netzwerk mit Interkonnektivität, haben eine geringe Anzahl von Remotestandorten oder Zweigstellen pro Region (weniger als 30) oder benötigen vollständige Kontrolle und Granularität für das manuelle Konfigurieren ihres Azure-Netzwerks. Diese herkömmliche Topologie unterstützt diese Kunden dabei, ein sicheres Netzwerkfundament in Azure zu erstellen.
 

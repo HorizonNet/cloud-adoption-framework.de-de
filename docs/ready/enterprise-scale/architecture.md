@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: csu
-ms.openlocfilehash: f67482821816fb48a2e44ab66715bd1804f9863a
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: fad625eb7b2cd1ebcfefe3a5ac27be6682ad00d2
+ms.sourcegitcommit: 7c16b2857b00520bec3c4f6e9844ceac33970846
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85077046"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85766850"
 ---
 <!-- cSpell:ignore CAF -->
 
@@ -39,7 +39,7 @@ Unter [Überlegungen zu Zielzonen](../../ready/considerations/index.md) finden S
 
 - **Primärer Zweck:** Mit eingeschränkten Refaktoringmöglichkeiten und einer sorgfältig definierten Abonnementstrategie lassen sich die Zielzonen des Kunden schneller weiterentwickeln und ausbauen. Mit den CAF-Zielzonen auf Unternehmensebene wird der primäre Zweck der Zielzone erweitert, damit auch Aspekten wie Governance, Compliance, Sicherheit und Betriebsverwaltung Rechnung getragen werden kann. Jeder dieser Aspekte wird bei der ersten Veröffentlichung der Zielzonen und der unterstützenden gemeinsamen Dienste berücksichtigt.
 
-Diese Vorgehensweise lässt sich mit einer Situation vergleichen, in der zunächst die Verfügbarkeit von Gas-, Wasser- und Stromleitungen sichergestellt wird, bevor neue Häuser gebaut werden. Im vorliegenden Kontext werden die Netzwerk-, Identitäts- und Zugriffsverwaltung sowie die Richtlinien, Verwaltung und Überwachung als gemeinsame „Versorgungsdienste“ betrachtet, die für eine optimierte Anwendungsmigration verfügbar sein müssen, bevor der Vorgang gestartet wird.
+Diese Vorgehensweise lässt sich mit einer Situation vergleichen, in der zunächst die Verfügbarkeit von Gas-, Wasser- und Stromleitungen sichergestellt wird, bevor neue Häuser gebaut werden. Im vorliegenden Kontext werden die Netzwerk-, Identitäts- und Zugriffsverwaltung sowie die Richtlinien, Verwaltung und Überwachung als gemeinsame Versorgungsdienste betrachtet, die für eine optimierte Anwendungsmigration verfügbar sein müssen, bevor der Vorgang gestartet wird.
 
 ![Zielzone](./media/lz-design.png)
 _Abbildung 1: Zielzonenaufbau._
@@ -70,6 +70,8 @@ Zusätzlich zu den oben aufgeführten Aspekten müssen bei Entwurf, Konfiguratio
 
 ![Architektur für CAF-Zielzonen auf Unternehmensebene](./media/ns-arch.png)
 _Abbildung 2: Architektur für CAF-Zielzonen auf Unternehmensebene._
+
+_Laden Sie eine [Visio-Datei](https://github.com/microsoft/CloudAdoptionFramework/blob/master/ready/enterprise-scale-architecture.vsdx) herunter, die dieses Architekturdiagramm enthält._
 
 ## <a name="next-steps"></a>Nächste Schritte
 

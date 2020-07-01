@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c3b364a42e69a1064122091780bbf66fe3424f6c
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 62c1c9cd21d2fb3382fde876ef38a39e7c7aec20
+ms.sourcegitcommit: 1c123a413725f7d2bfce91e9a6fb9e8c8c59f37b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85077169"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "85335971"
 ---
 # <a name="identity-and-access-management"></a>Identitäts- und Zugriffsverwaltung
 
@@ -73,7 +73,7 @@ _Abbildung 1: Identitäts- und Zugriffsverwaltung._
 
 - Nutzen Sie innerhalb des Azure AD-Mandanten benutzerdefinierte RBAC-Rollendefinitionen unter Berücksichtigung der folgenden Schlüsselrollen:
 
-| Rolle | Zweck | Aktionen | Keine Aktionen |
+| Role | Verwendung | Aktionen | Keine Aktionen |
 |---|---|---|---|
 | Besitzer der Azure-Plattform               | Verwaltung des Lebenszyklus von Verwaltungsgruppen und Abonnements                                                           | `*`                                                                                                                                                                                                                  |                                                                                                                                                                                         |
 | Netzwerkverwaltung (NetOps)        | Plattformweite Verwaltung globaler Konnektivität: Virtuelle Netzwerke (VNETs), benutzerdefinierte Routen (UDR), Netzwerksicherheitsgruppen (NSGs), virtuelle Netzwerkappliances (NVAs), virtuelle private Netzwerke (VPNs), ExpressRoute u. a.            | `*/read`, `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*`                              |                                                                                                                                                                               |
@@ -91,7 +91,7 @@ _Abbildung 1: Identitäts- und Zugriffsverwaltung._
 
 ### <a name="planning-for-authentication-inside-a-landing-zone"></a>Planen der Authentifizierung innerhalb einer Zielzone
 
-Eine wichtige Entwurfsentscheidung, die eine Organisation bei der Einführung von Azure treffen muss, ist, ob die bestehende lokale Identitätsdomäne auf Azure ausgedehnt oder eine ganz neue Domäne eingerichtet werden soll. Die Anforderungen an die Authentifizierung innerhalb der Zielzone müssen sorgfältig geprüft und in Pläne zur Bereitstellung von Active Directory Domain Services (AD DS) unter Windows Server, Azure AD Domain Services oder beider Dienste eingebunden werden. Die meisten Azure-Umgebungen nutzen mindestens Azure AD für die Authentifizierung bei der Azure-Fabric und lokale AD DS-Hostauthentifizierung und -Gruppenrichtlinienverwaltung.
+Eine wichtige Entwurfsentscheidung, die eine Organisation bei der Einführung von Azure treffen muss, ist, ob die bestehende lokale Identitätsdomäne auf Azure ausgedehnt oder ob eine ganz neue Domäne eingerichtet werden soll. Die Anforderungen an die Authentifizierung innerhalb der Zielzone müssen sorgfältig geprüft und in Pläne zur Bereitstellung von Active Directory Domain Services (AD DS) unter Windows Server, Azure AD Domain Services oder beider Dienste eingebunden werden. Die meisten Azure-Umgebungen nutzen mindestens Azure AD für die Authentifizierung bei der Azure-Fabric und lokale AD DS-Hostauthentifizierung und -Gruppenrichtlinienverwaltung.
 
 **Überlegungen zum Entwurf:**
 
