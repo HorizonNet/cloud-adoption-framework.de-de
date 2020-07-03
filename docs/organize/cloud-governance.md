@@ -54,7 +54,7 @@ Beteiligen Sie die folgenden Teilnehmer an Cloudgovernanceaktivitäten:
 - Führungskräfte aus dem mittleren Management und direkt Mitwirkende in Schlüsselrollen sollten das Unternehmen repräsentieren und an der Evaluierung von Risikotoleranzen mitarbeiten.
 - Die Cloudgovernancefunktionen werden durch eine Erweiterung des [Cloudstrategieteams](./cloud-strategy.md) bereitgestellt. Ebenso wie vom CIO und den betriebswirtschaftlichen Führungskräften erwartet wird, dass sie sich an Funktionen für die Cloudstrategie beteiligen, wird von ihren direkt unterstellten Mitarbeitern erwartet, dass sie sich an Aktivitäten für die Cloudgovernance beteiligen.
 - Mitarbeiter aus dem betriebswirtschaftlichen Bereich, die der Geschäftseinheit angehören, die eng mit der Bereichsleistung zusammenarbeitet, sollten in die Lage versetzt werden, Entscheidungen in Bezug auf unternehmensbezogene und technische Risiken zu treffen.
-- Für die Informationstechnologie (IT) und die Informationssicherheit (IS) zuständige Mitarbeiter, die sich mit den technischen Aspekten der Cloudtransformation auskennen, können wechselnde Funktionen ausfüllen, anstatt nur für die Cloudgovernancefunktionen.
+- Für die Informationstechnologie (IT) und die Informationssicherheit zuständige Mitarbeiter, die sich mit den technischen Aspekten der Cloudtransformation auskennen, können wechselnde Funktionen ausfüllen, anstatt nur für die Cloudgovernancefunktionen.
 
 ## <a name="deliverable"></a>Ergebnisse
 
