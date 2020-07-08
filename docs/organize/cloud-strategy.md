@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/05/2020
-ms.openlocfilehash: 686bac552a1c91efd7bbfede22221a0e61b6bcfa
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 5b97c1efba9a0efc976404bea9680cf2baaa0d94
+ms.sourcegitcommit: 7ff5c7a12412b1af0090b8eebd25b024f7830a57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401248"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "85814352"
 ---
 # <a name="cloud-strategy-functions"></a>Cloudstrategiefunktionen
 
@@ -85,9 +85,9 @@ Das Cloudstrategieteam treibt die kritischen Priorisierungs- und Ermittlungsbem�
 
 Mitglieder des Cloudstrategieteams müssen in der Lage sein, Zeit für die Planung und Entwicklung der Cloudstrategie zuzuteilen:
 
-- In der frühen Planungsphase sollten Sie jede Woche eine Stunde einplanen, um sich mit dem Team zu treffen. Nachdem der Einführungsplan konkretisiert ist (in der Regel innerhalb von 4 bis 6 Wochen), kann der Zeitaufwand verringert werden.
+- In der frühen Planungsphase sollten Sie jede Woche eine Stunde einplanen, um sich mit dem Team zu treffen. Nachdem der Einführungsplan konkretisiert ist (in der Regel innerhalb von 4–6 Wochen), kann der Zeitaufwand verringert werden.
 - Während der gesamten Einführungsbemühungen sollten Sie jeden Monat ein bis zwei Stunden einplanen, um die Fortschritte zu überprüfen und die weiteren Prioritäten zu bestätigen.
-- Von delegierten Mitgliedern des Führungsteams wird wahrscheinlich bei Bedarf zusätzliche Zeit benötigt. Jedes Mitglied des Cloud-Strategie-Teams sollte einen Delegierten ernennen, der 5 bis 10 Stunden pro Woche zur Verfügung stellen kann, um laufende Priorisierungsfragen zu unterstützen und über dringende Anforderungen zu berichten.
+- Von delegierten Mitgliedern des Führungsteams wird wahrscheinlich bei Bedarf zusätzliche Zeit benötigt. Jedes Mitglied des Cloud-Strategie-Teams sollte einen Delegierten ernennen, der 5–10 Stunden pro Woche zur Verfügung stellen kann, um laufende Priorisierungsfragen zu unterstützen und über dringende Anforderungen zu berichten.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
