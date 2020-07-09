@@ -1,18 +1,20 @@
 ---
 title: Cloudmigration
-description: Hier erfahren Sie, wie Sie die iterativen Prozesse zum Bewerten, Migrieren, Optimieren, Schützen und Verwalten der Workloads einrichten, die Sie zur Cloud migrieren möchten.
+description: Migrieren Sie zu Azure. Erfahren Sie mehr über die Phasen der Migration. Bereiten Sie sich mithilfe eines iterativen Prozesses zur Bewertung, Migration, Optimierung, Sicherung und Verwaltung von Workloads auf eine erfolgreiche Migration zu Azure vor.
+keywords: Azure-Cloudmigration, Cloudeinführung, zu Azure migrieren, Lift & Shift, Migrationswellen, Migrationsplanung, Migrationsmethodik, Cloud-Migrationsframework
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 47ca228af7d88d4a02ac9481c9be7dd804dceda5
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.custom: azure-migrate-seo
+ms.openlocfilehash: 25bf28c450f5b12e01f825d1aa76681986d97cba
+ms.sourcegitcommit: bdf40eca6647ecab5cbed05f527a3f6542d37899
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787893"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "86058982"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Cloudmigration im Cloud Adoption Framework
 
@@ -56,7 +58,7 @@ Im Folgenden finden Sie einen Überblick über die Phasen des oben dargestellten
 > [!NOTE]
 > Beim Erstellen einer Migrationsfactory entscheiden sich manche Teams vielleicht, jede der obigen Phasen auf mehrere Teams und mehrere Sprints zu verteilen. Diese Vorgehensweise kann die Wiederholbarkeit verbessern und die Migration beschleunigen.
 
-## <a name="migration-waves"></a>Migrationswellen
+## <a name="migration-waves-and-iterative-change-management"></a>Migrationswellen und iteratives Change Management
 
 Migrationsiterationen bieten durch die Migration von Ressourcen und Workloads technischen Nutzen. Eine Migrationswelle ist die kleinste Sammlung von Workloads, die einen greif- und messbaren geschäftlichen Mehrwert bieten. Am Ende jeder Iteration sollte ein Bericht über die durchgeführten technischen Aufgaben erstellt werden. Über geschäftliche Veränderungen und die strategische Planung wird jedoch im Allgemeinen auf etwas höherer Ebene entschieden. Während sich das Cloudeinführungsteam um die Migration kümmert, konzentriert sich das Cloudstrategieteam auf die Planung der nächsten ein bis zwei Migrationswellen. Das Cloudstrategieteam verfolgt auch den technischen Fortschritt in Form einer Lernmetrik nach, um die Zeitvorgaben für die geschäftliche Wertschöpfung besser zu verstehen. In dieser Hinsicht sind Migrationswellen die iterative Change Management-Methode zur Nachverfolgung von Geschäftsergebnissen, beteiligten Personen und Zeitplänen.
 
@@ -64,7 +66,7 @@ Wie die Grafik im vorherigen Abschnitt zeigt, bieten Prozesse innerhalb der Meth
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Die oben aufgeführten Schritte und nachfolgende Leitfäden zur Migrationsmethodik können Ihnen bei der Entwicklung von Qualifikationen helfen, die die Durchführung der Prozesse innerhalb der einzelnen Migrationssprints verbessern. Der [Leitfaden zur Azure-Migration](./azure-migration-guide/index.md) ist eine kurze Artikelreihe, in der die gängigsten Tools und Ansätze für Ihre erste Migrationswelle erläutert werden.
+Die oben aufgeführten Schritte und nachfolgende Leitfäden zur Migrationsmethodik können Ihnen bei der Entwicklung von Qualifikationen helfen, die Prozesse innerhalb der einzelnen Migrationssprints verbessern. Der [Leitfaden zur Azure-Migration](./azure-migration-guide/index.md) ist eine kurze Artikelreihe, in der die gängigsten Tools und Ansätze für Ihre erste Migrationswelle erläutert werden.
 
 > [!div class="nextstepaction"]
 > [Leitfaden zur Azure-Migration](./azure-migration-guide/index.md)
