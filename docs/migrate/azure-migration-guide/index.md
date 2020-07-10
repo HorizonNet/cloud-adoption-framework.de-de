@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 10525a8bf3c49646d99e5e99de6372c0c1d570ee
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: b05470f702c302ade30ab3d9f4a6a47268ed682b
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815292"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194458"
 ---
 # <a name="azure-migration-guide-before-you-start"></a>Leitfaden zur Azure-Migration: Vorbereitung
 
@@ -56,8 +56,6 @@ Während die in diesem Leitfaden behandelten Tools eine Vielzahl von Migrationss
 - Ihre Branche verfügt über minimale gesetzliche Anforderungen, die für diese Migration relevant sind.
 
 Wenn eine dieser Bedingungen nicht auf Ihre Situation zutrifft, sollten Sie stattdessen die [bewährten Methoden für die Cloudmigration](../azure-best-practices/index.md) berücksichtigen. Außerdem empfehlen wir Ihnen, Unterstützung von einem unserer Microsoft-Teams oder -Partner anzufordern, um komplexere Migrationen durchzuführen. Kunden, die mit Microsoft oder zertifizierten Partnern zusammenarbeiten, sind in diesen Szenarien erfolgreicher. Weitere Informationen zur Anforderung von Unterstützung finden Sie in diesem Leitfaden.
-
-<!-- markdownlint-enable MD033 -->
 
 ::: zone target="docs"
 
