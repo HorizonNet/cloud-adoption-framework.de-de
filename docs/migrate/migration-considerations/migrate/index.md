@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ce653ab8c37eb4e034647cb8022adaf391f1949f
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: c118a09f2d233ebc2123c3b66128291bf06e14a3
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815343"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194441"
 ---
 # <a name="deploy-workloads"></a>Bereitstellen von Workloads
 
@@ -22,7 +22,7 @@ Nachdem Workloads bewertet wurden, können sie in der Cloud bereitgestellt oder 
 
 Das Ziel einer Migration ist es, eine einzelne Workload in die Cloud zu migrieren.
 
-## <a name="definition-of-_done_"></a>Definition von _Fertig_.
+## <a name="definition-of-done"></a>Definition of Done
 
 Die Migrationsphase ist abgeschlossen, wenn eine Workload in der Cloud bereitgestellt und testbereit ist, einschließlich aller abhängigen Ressourcen, die für die Funktion der Workload erforderlich sind. Während des Optimierungsprozesses wird die Workload für den Einsatz in der Produktionsumgebung vorbereitet.
 

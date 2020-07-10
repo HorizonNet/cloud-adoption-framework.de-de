@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1ab9dc80830c40754cbd68dbd4f39242f3204676
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 010af9c5f3988c3a4cef05a1d9e3284e1d550675
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84994146"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194356"
 ---
 # <a name="prerequisites-for-migration"></a>Voraussetzungen für die Migration
 
@@ -29,7 +29,7 @@ Bevor Sie mit der Cloudmigration beginnen, lesen Sie die Anleitung [Plan](../../
 - [Erste Schritte: Beschleunigen der Migration](../../../get-started/migrate.md)
 - [„Warum wechseln wir in die Cloud?“](../../../strategy/motivations.md)
 
-## <a name="definition-of-_done_"></a>Definition von _Fertig_.
+## <a name="definition-of-done"></a>Definition of Done
 
 Die Voraussetzungen sind erfüllt, wenn die folgenden Punkte zutreffen:
 

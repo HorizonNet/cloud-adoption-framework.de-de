@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f5bcde9c0eab879eea9c49a7ab46338a141cb1cb
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 027dd52f4a7cbb4535eca5a9b338296864f2bc25
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217012"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194900"
 ---
 # <a name="assess-workloads-and-validate-assumptions-before-migration"></a>Bewerten von Workloads und Validieren von Annahmen vor der Migration
 
@@ -26,7 +26,7 @@ Der Prozess _Bewerten_ ist die erste von vier inkrementellen Aktivitäten, die i
 
 Bewerten eines Migrationskandidaten und Bewerten der Workload, der zugehörigen Ressourcen und der Abhängigkeiten vor der Migration.
 
-## <a name="definition-of-_done_"></a>Definition von _Fertig_.
+## <a name="definition-of-done"></a>Definition of Done
 
 Dieser Prozess ist abgeschlossen, wenn die folgenden Punkte über einen einzelnen Migrationskandidaten bekannt sind:
 

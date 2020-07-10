@@ -8,20 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 3be6a82c2538d20cd147bb5be03bfaf10c67015f
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: ce029948d6d44ce8193b0d4dfb81fa61e40b7c9e
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076865"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194220"
 ---
 # <a name="manage-organizational-alignment"></a>Verwalten der Organisationsausrichtung
 
 Die Cloudeinführung ist ohne gut organisierte Teams nicht möglich. Für eine erfolgreiche Cloudeinführung sind umfassend geschulte Mitarbeiter notwendig, die in Übereinstimmung mit klar definierten Geschäftszielen und in einer gut verwalteten Umgebung die richtige Arbeit machen. Die Bereitstellung eines effektiven Betriebsmodells für die Cloud erfordert den Aufbau von Organisationsstrukturen, die mit geeigneten Personen besetzt sind. Dieser Artikel beschreibt einen Ansatz zur Einrichtung und Aufrechterhaltung der richtigen Organisationsstrukturen in vier Schritten.
 
 Die folgenden Aufgaben unterstützen Sie bei der Erstellung einer Landezone für die Cloudeinführung.
-
-<!-- markdownlint-disable MD033 -->
 
 | | |
 |---|---|

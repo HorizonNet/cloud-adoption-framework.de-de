@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8a33ae2b86c7e78b4148e656f56080c403c5db47
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: d70180eca7ffe7d291e1e30f2486ab6863a38ed5
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621283"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193268"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>Cloudverwaltung im Framework für die Cloudeinführung
 
@@ -22,14 +22,12 @@ Die Bereitstellung einer [Cloudstrategie ](../strategy/index.md) erfordert eine 
 
 Zur Vorbereitung auf diese Phase des Cloudeinführungszyklus empfiehlt das Framework die folgenden Übungen:
 
-<!-- markdownlint-disable MD033 -->
-
 | | |
 |---|---|
 | <br> ![1](../_images/icons/1.png) | <br> [Einrichten einer Verwaltungsbasislinie](./azure-management-guide/index.md): Definieren Sie die wichtigen Klassifizierungen, Cloudverwaltungstools und Prozesse, die für die Bereitstellung Ihrer Mindestverpflichtung zur Betriebsverwaltung erforderlich sind.                                |
 | <br> ![2](../_images/icons/2.png) | <br> [Definieren von geschäftlichen Verpflichtungen](./considerations/business-alignment.md): Dokumentieren Sie die unterstützten Workloads, um betriebliche Verpflichtungen beim Unternehmen herzustellen und Investitionen für die Cloudverwaltung für jede Workload zu vereinbaren.                                |
 | <br> ![3](../_images/icons/3.png) | <br> [Erweitern der Verwaltungsbaseline](./best-practices.md): Ausgehend von geschäftlichen Verpflichtungen und Betriebsentscheidungen nutzen Sie die mitgelieferten bewährten Methoden, um die erforderlichen Cloudverwaltungstools zu implementieren.                                |
-| <br> ![4](../_images/icons/4.png) | <br> [Erweiterte Vorgänge und Entwurfsprinzipien](./design-principles.md): Für Plattformen oder Workloads, die ein höheres Maß an Geschäftsverpflichtungen erfordern, ist möglicherweise eine umfassendere Architekturüberprüfung erforderlich, damit die Verpflichtungen in Bezug auf Resilienz und Zuverlässigkeit gewährleistet sind.  |
+| <br> ![4](../_images/icons/4.png) | <br> [Erweiterte Vorgänge und Entwurfsprinzipien](./design-principles.md): Für Plattformen oder Workloads, die ein höheres Maß an Geschäftsverpflichtungen erfordern, ist möglicherweise eine umfassendere Architekturüberprüfung erforderlich, damit die Verpflichtungen in Bezug auf Resilienz und Zuverlässigkeit gewährleistet sind. |
 
 Mit den oben beschriebenen Schritten erstellen Sie Handlungsansätze, um die Verwaltungsmethoden des Frameworks für die Cloudeinführung bereitzustellen.
 
