@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: cd9454d33e15a862a68ba299cc10036fdb0c8ac9
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 65a3686a402681d76b5d91665eb00cb8bdd6e5c3
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83754440"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233697"
 ---
 # <a name="governance-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Governance für die Einführung der Microsoft Cloud für Azure (Microsoft Cloud Adoption Framework)
 
@@ -25,10 +25,10 @@ Cloudgovernance ist ein iterativer Prozess. Bei Organisationen mit vorhandenen R
 
 | | |
 |---|---|
-| <br> ![1](../_Images/icons/1.png) | <br> [Methodik](./methodology.md): Entwickeln Sie ein Grundverständnis der Methodik, die der Cloudgovernance im Framework für die Cloudeinführung zugrunde liegt, um eine Lösung für den Endzustand zu planen. |
-| <br> ![2](../_Images/icons/2.png) | <br> [Vergleichstest](./benchmark.md): Bewerten Sie den Ist- und Sollzustand, um sich vorstellen zu können, wie das Framework angewendet werden kann. |
-| <br> ![3](../_Images/icons/3.png) | <br> [Anfängliche Governancegrundlage](./initial-foundation.md): Beschränken Sie sich bei Ihren Governancebemühungen zunächst auf eine geringe Anzahl problemlos implementierbarer Governancetools. Diese anfängliche Governancegrundlage wird als MVP (Minimum Viable Product) bezeichnet.                                |
-| <br> ![4](../_Images/icons/4.png) | <br> [Verbessern der anfänglichen Governancegrundlage](./foundation-improvements.md): Fügen Sie während der gesamten Umsetzung des Cloudeinführungsplans nach und nach Governancekontrollen hinzu, um im Rahmen des gesamten Prozesses materielle Risiken abzudecken. |
+| <br> ![1](../_images/icons/1.png) | <br> [Methodik](./methodology.md): Entwickeln Sie ein Grundverständnis der Methodik, die der Cloudgovernance im Framework für die Cloudeinführung zugrunde liegt, um eine Lösung für den Endzustand zu planen. |
+| <br> ![2](../_images/icons/2.png) | <br> [Vergleichstest](./benchmark.md): Bewerten Sie den Ist- und Sollzustand, um sich vorstellen zu können, wie das Framework angewendet werden kann. |
+| <br> ![3](../_images/icons/3.png) | <br> [Anfängliche Governancegrundlage](./initial-foundation.md): Beschränken Sie sich bei Ihren Governancebemühungen zunächst auf eine geringe Anzahl problemlos implementierbarer Governancetools. Diese anfängliche Governancegrundlage wird als MVP (Minimum Viable Product) bezeichnet.                                |
+| <br> ![4](../_images/icons/4.png) | <br> [Verbessern der anfänglichen Governancegrundlage](./foundation-improvements.md): Fügen Sie während der gesamten Umsetzung des Cloudeinführungsplans nach und nach Governancekontrollen hinzu, um im Rahmen des gesamten Prozesses materielle Risiken abzudecken. |
 
 ## <a name="objective-of-this-content"></a>Ziel dieses Inhalts
 
