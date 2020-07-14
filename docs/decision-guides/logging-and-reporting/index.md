@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 5aa8f25ea54fc6ab8df5728bc742f6f3c9ff3886
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 92e7882eed949f6e93062017e5079b2135065a22
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862465"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193931"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Protokollierung und Berichterstellung
 
@@ -55,7 +55,7 @@ Individuelle Protokollierungslösungen auf der Basis von Azure Monitor können j
 
 Es kann einen erheblichen Neuentwicklungsaufwand für Anwendungen und Dienste erfordern, die in die Cloud migriert werden, um cloudbasierte Protokollierungs- und Berichterstellungslösungen wie Azure Monitor zu nutzen. Lassen Sie in diesen Fällen ggf. zu, dass diese Workloads weiterhin Telemetriedaten an bestehende lokale Systeme senden.
 
-Um diesen Ansatz unterstützen zu können, müssen Ihre Cloudressourcen in der Lage sein, über eine Kombination aus [Hybridnetzwerken](../software-defined-network/hybrid.md) und [in der Cloud gehosteten Domänendiensten](../identity/index.md#cloud-hosted-domain-services) direkt mit Ihren lokalen Systemen zu kommunizieren. Bei dieser Konfiguration fungiert das virtuelle Cloudnetzwerk als Netzwerkerweiterung der lokalen Umgebung. Daher können in der Cloud gehostete Workloads direkt mit Ihrem lokalen Protokollierungs- und Berichterstellungssystem kommunizieren.
+Um diesen Ansatz unterstützen zu können, müssen Ihre Cloudressourcen über eine Kombination aus [Hybridnetzwerken](../software-defined-network/hybrid.md) und [in der Cloud gehosteten Domänendiensten](../identity/index.md#cloud-hosted-domain-services) direkt mit Ihren lokalen Systemen kommunizieren. Bei dieser Konfiguration fungiert das virtuelle Cloudnetzwerk als Netzwerkerweiterung der lokalen Umgebung. Daher können in der Cloud gehostete Workloads direkt mit Ihrem lokalen Protokollierungs- und Berichterstellungssystem kommunizieren.
 
 Dieser Ansatz macht sich Ihre bereits getätigten Investitionen in Überwachungstools zunutze, wobei nur geringfügige Änderungen an allen in der Cloud bereitgestellten Anwendungen oder Diensten vorgenommen werden. Dies ist während einer Migration per Lift & Shift oft der schnellste Ansatz zur Unterstützung der Überwachung. Allerdings werden keine Protokolldaten erfasst, die von cloudbasierten PaaS- und SaaS-Ressourcen generiert werden, und es werden alle VM-bezogenen Protokolle ausgeklammert, die von der Cloudplattform selbst erstellt werden, wie z. B. der VM-Status. Daher sollte dieses Muster nur eine temporäre Lösung sein, bis eine umfassendere hybride Überwachungslösung implementiert ist.
 

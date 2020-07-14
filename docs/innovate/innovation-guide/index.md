@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 1718a1f41ceaa167583681146dbd046dccfb7987
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 59111ad2bac9cf3b4fca2053a7d4b56d88c0cb89
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756242"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86190990"
 ---
 ::: zone target="docs"
 
@@ -41,7 +41,7 @@ In diesem Leitfaden lernen Sie Folgendes:
 > - **Demokratisieren von Daten:** Mit Daten allein können Sie bereits innovative Lösungen für Ihre Kunden fördern. Stellen Sie allgemeine Datenoptionen in Azure bereit.
 > - **Interagieren über Apps:** Einige Innovationen erfordern eine ansprechende Umgebung. Nutzen Sie cloudnative Anwendungsplattformen, um solche Umgebungen zu schaffen.
 > - **Fördern von Akzeptanz:** Innovationen sind großartig, jedoch müssen Schwachpunkte beseitigt werden, um die Akzeptanz zu steigern. Stellen Sie für CI/CD, DevOps und andere Befürworter der Einführung eine Basis bereit.
-> - **Interagieren über Geräte:** Schaffen Sie Umgebungserfahrungen, um dem Kunden Ihre Apps und Daten näher zu bringen. IoT, Mixed Reality und mobile Umgebungen sind mit Azure einfacher umzusetzen.
+> - **Interagieren über Geräte:** Schaffen Sie Umgebungserfahrungen, um dem Kunden Ihre Anwendungen und Daten näher zu bringen. IoT, Mixed Reality und mobile Umgebungen sind mit Azure einfacher umzusetzen.
 > - **Vorhersagen und Beeinflussen:** Suchen Sie nach Datenmustern. Nutzen Sie diese Muster, um das Verhalten von Kunden mithilfe von Azure-basierten Predictive Analytics-Tools vorherzusagen und zu beeinflussen.
 
 ::: zone target="docs"

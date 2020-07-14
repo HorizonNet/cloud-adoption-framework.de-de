@@ -8,13 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 01619281c3531c18afe3fc031b9f1fde1f7d4f0b
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: ca1a65d0c385a7fc57e66b4c3f41157363a8a392
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83754002"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86191908"
 ---
+<!-- cSpell:ignore BYOK -->
+
 # <a name="encryption-decision-guide"></a>Leitfaden zur Entscheidungsfindung für die Verschlüsselung
 
 Das Verschlüsseln von Daten schützt vor nicht autorisiertem Zugriff. Eine ordnungsgemäß implementierte Verschlüsselung bietet zusätzliche Ebenen der Sicherheit für Ihre cloudbasierten Workloads und dient als Schutz vor Angreifern und anderen nicht autorisierten Benutzern – innerhalb und außerhalb Ihrer Organisation und Ihrer Netzwerke.
@@ -50,9 +52,9 @@ Bei der cloudnativen Schlüsselverwaltung werden alle Schlüssel und Geheimnisse
 - Sie vertrauen der Cloudlösung für die Schlüsselverwaltung beim Erstellen, Verwalten und Hosten der Geheimnisse und Schlüssel Ihres Unternehmens.
 - Sie ermöglichen allen lokalen Anwendungen und Diensten, die auf den Zugriff auf Verschlüsselungsdienste oder Geheimnisse angewiesen sind, den Zugriff auf das Schlüsselverwaltungssystem in der Cloud.
 
-### <a name="bring-your-own-key"></a>Bring Your Own Key
+### <a name="bring-your-own-key-byok"></a>Bring Your Own Key (BYOK)
 
-Bei einem Bring-Your-Own-Key-Ansatz generieren Sie die Schlüssel auf dedizierter HSM-Hardware in Ihrer lokalen Umgebung und übertragen diese dann sicher an ein cloudbasiertes Verwaltungssystem wie Azure Key Vault zur Verwendung mit Ihren in der Cloud gehosteten Ressourcen.
+Bei einem BYOK-Ansatz generieren Sie die Schlüssel auf dedizierter HSM-Hardware in Ihrer lokalen Umgebung und übertragen diese dann sicher an ein cloudbasiertes Verwaltungssystem wie Azure Key Vault zur Verwendung mit Ihren in der Cloud gehosteten Ressourcen.
 
 **Voraussetzungen für Bring-Your-Own-Key:** Das lokale Generieren von Schlüsseln und deren Verwendung mit einem cloudbasierten Schlüsselverwaltungssystem umfasst die folgenden Annahmen:
 

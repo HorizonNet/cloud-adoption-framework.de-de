@@ -9,20 +9,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: azure-migrate-seo
-ms.openlocfilehash: 25bf28c450f5b12e01f825d1aa76681986d97cba
-ms.sourcegitcommit: bdf40eca6647ecab5cbed05f527a3f6542d37899
+ms.openlocfilehash: fe1b1a484e7f1766e76929204f7c63089aea4913
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86058982"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86235244"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Cloudmigration im Cloud Adoption Framework
 
 Der [Cloudeinführungsplan](../plan/index.md) jedes Unternehmens beinhaltet Workloads, die keine umfangreichen Investitionen in die Erstellung neuer Geschäftslogik rechtfertigen. Diese Workloads können mithilfe verschiedener Methoden in die Cloud migriert werden: per Lift & Shift, per Lift & Optimize oder mittels Modernisierung. Jeder diese Methoden wird als Migration betrachtet. In den folgenden Aufgaben werden die iterativen Prozesse zum Bewerten, Migrieren, Optimieren, Schützen und Verwalten dieser Workloads vermittelt.
 
 Zur Vorbereitung auf diese Phase des Cloudeinführungszyklus werden die folgenden Schritte empfohlen:
-
-<!-- markdownlint-disable MD033 -->
 
 | | |
 |---|---|
@@ -31,9 +29,9 @@ Zur Vorbereitung auf diese Phase des Cloudeinführungszyklus werden die folgende
 | <br> ![3](../_images/icons/3.png) | <br> [Bewährte Methoden:](./azure-best-practices/index.md) Gehen Sie allgemeine Migrationsanforderungen durch die Anwendung einheitlicher Best Practices an.                                |
 | <br> ![4](../_images/icons/4.png) | <br> [Prozessverbesserungen](./migration-considerations/index.md): Die Migration ist stark prozessorientiert. Nutzen Sie diese Prozessverbesserungen, um verschiedene Aspekte Ihrer Migration zu bewerten und weiterzuentwickeln und auf Veränderungen bei den Migrationsaufgaben zu reagieren.                        |
 
-<!-- markdownlint-enable MD033 -->
-
 Diese Migrationsmethodik und die obigen Schritte basieren auf den folgenden Annahmen:
+
+<!-- docsTest:ignore "plan, ready, and Adopt methodologies" -->
 
 - Die Methodik zum Steuern von Migrationssprints steht im Einklang mit Migrationswellen oder -releases, die mithilfe der Methoden „Planung“, „Bereitschaft“ und „Einführung“ definiert werden. Innerhalb jedes Migrationssprints wird ein Batch von Workloads zur Cloud migriert.
 - Vor der Migration von Workloads wurde mindestens eine [Zielzone](../ready/index.md) identifiziert, konfiguriert und bereitgestellt, um die Anforderungen des kurzfristigen Cloudeinführungsplan zu erfüllen.

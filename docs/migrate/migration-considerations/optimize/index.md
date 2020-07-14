@@ -7,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4ca17f40d32bd09e3fb4833b53a2bacfbfe3b484
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: dfe4b4ddfe263baefb07d9ee24b70687278df1ce
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993514"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233935"
 ---
 # <a name="release-workloads"></a>Freigeben von Workloads
 
-Nach der Bereitstellung einer Sammlung von Workloads und der zugehörigen unterstützenden Ressourcen in der Cloud müssen die Workloads vorbereitet werden, bevor sie freigegeben werden können. In dieser Phase der Migration werden Auslastungstests und Tests im Unternehmen für die Sammlung von Workloads durchgeführt. Anschließend werden sie optimiert und dokumentiert. Nachdem die Geschäfts- und IT-Teams Workloadbereitstellungen geprüft und genehmigt haben, können die Workloads freigegeben oder für den laufenden Betrieb an Governance-, Sicherheits- und operative Teams übergeben werden.
+Nach der Bereitstellung einer Sammlung von Workloads und der zugehörigen unterstützenden Ressourcen in der Cloud müssen die Workloads vorbereitet werden, bevor sie freigegeben werden können. In dieser Phase der Migration werden Auslastungstests und Validierungen im Unternehmen für die Sammlung von Workloads durchgeführt. Anschließend werden sie optimiert und dokumentiert. Nachdem die Geschäfts- und IT-Teams Workloadbereitstellungen geprüft und genehmigt haben, können die Workloads freigegeben oder für den laufenden Betrieb an Governance-, Sicherheits- und operative Teams übergeben werden.
 
 Ziel der „Freigabe von Workloads“ ist es, migrierte Workloads für die Höherstufung in die Produktion vorzubereiten.
 

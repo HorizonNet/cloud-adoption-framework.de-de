@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 010af9c5f3988c3a4cef05a1d9e3284e1d550675
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 321ce198cf4e2ad4486719e1702266540313277a
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194356"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86235380"
 ---
 # <a name="prerequisites-for-migration"></a>Voraussetzungen für die Migration
 
@@ -24,7 +24,7 @@ Stellen Sie die geschäftliche, kulturelle und technische Bereitschaft sicher, b
 
 ## <a name="review-business-drivers"></a>Überprüfen der geschäftlichen Faktoren
 
-Bevor Sie mit der Cloudmigration beginnen, lesen Sie die Anleitung [Plan](../../../strategy/index.md) (Planen) und [Ready](../../../ready/index.md) (Bereit) im Cloud Adoption Framework, um sicherzustellen, dass Ihr Unternehmen auf Einführungs- und Migrationsprozesse für die Cloud vorbereitet ist. Überprüfen Sie insbesondere die Unternehmensanforderungen und die erwarteten Ergebnisse, die die Migration unterstützen:
+Bevor Sie mit der Cloudmigration beginnen, lesen Sie die Anleitungen [Planungsmethodik](../../../plan/index.md) und [Bereitschaftsmethodik](../../../ready/index.md) im Cloud Adoption Framework, um sicherzustellen, dass Ihr Unternehmen auf Einführungs- und Migrationsprozesse für die Cloud vorbereitet ist. Überprüfen Sie insbesondere die Unternehmensanforderungen und die erwarteten Ergebnisse, die die Migration unterstützen:
 
 - [Erste Schritte: Beschleunigen der Migration](../../../get-started/migrate.md)
 - [„Warum wechseln wir in die Cloud?“](../../../strategy/motivations.md)
