@@ -9,14 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 794f500b50a4376cc52861a61dbc70a8a9197114
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: 22da52f3cdec09d3337c320875076c579bb5bb61
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86233714"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373151"
 ---
-# <a name="azure-migration-guide-before-you-start"></a>Leitfaden zur Azure-Migration: Vorbereitung
+# <a name="azure-migration-guide-overview"></a>Azure-Migrationsleitfaden: Übersicht
 
 Die [Migrationsmethodik des Frameworks für die Cloudeinführung (Cloud Adoption Framework)](../index.md) leitet Leser durch einen iterativen Prozess der Migration einer Workload oder einer kleinen Sammlung von Workloads pro Release. In jeder Iteration wird der Prozess der Bewertung, Migration, Optimierung und Höherstufung verfolgt, um sicherzustellen, dass die Workloads den Produktionsanforderungen entsprechen können. Mit diesem cloudunabhängigen Prozess kann eine Migration zu einem beliebigen Cloudanbieter durchgeführt werden.
 

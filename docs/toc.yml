@@ -157,9 +157,9 @@ items:
         href: ready/index.md
       - name: Azure-Einrichtungsleitfaden
         items:
-          - name: Vorbereitung
+          - name: 'Einrichtungsleitfaden: Übersicht'
             href: ready/azure-setup-guide/index.md
-          - name: Organisieren Ihrer Ressourcen
+          - name: Organisieren von Ressourcen
             href: ready/azure-setup-guide/organize-resources.md
           - name: Verwalten des Zugriffs
             href: ready/azure-setup-guide/manage-access.md
@@ -335,7 +335,7 @@ items:
             href: migrate/index.md
           - name: Leitfaden zur Azure-Migration
             items:
-              - name: Vorbereitung
+              - name: 'Migrationsleitfaden: Übersicht'
                 href: migrate/azure-migration-guide/index.md
               - name: Bewerten von Workloads
                 href: migrate/azure-migration-guide/assess.md
@@ -345,7 +345,7 @@ items:
                 href: migrate/azure-migration-guide/optimize-and-transform.md
               - name: Auf Migration ausgerichtete Kostenkontrollmechanismen
                 href: migrate/azure-migration-guide/manage-costs.md
-              - name: Erhalten von Unterstützung
+              - name: Unterstützung
                 href: migrate/azure-migration-guide/assistance.md
           - name: Migrationsszenarios
             items:
@@ -707,17 +707,17 @@ items:
             href: innovate/index.md
           - name: Azure-Innovationsleitfaden
             items:
-              - name: Vorbereitung
+              - name: 'Innovationsleitfaden: Übersicht'
                 href: innovate/innovation-guide/index.md
               - name: Vorbereiten für Kundenfeedback
                 href: innovate/innovation-guide/adoption.md
               - name: Demokratisieren von Daten
                 href: innovate/innovation-guide/data.md
-              - name: Interagieren über Apps
+              - name: Einbinden von Kunden durch Apps
                 href: innovate/innovation-guide/apps.md
               - name: Unterstützen der Einführung
                 href: innovate/innovation-guide/ci-cd.md
-              - name: Interagieren mit Geräten
+              - name: Interagieren über Geräte
                 href: innovate/innovation-guide/devices.md
               - name: Vorhersagen und Beeinflussen
                 href: innovate/innovation-guide/predict.md
