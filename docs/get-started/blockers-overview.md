@@ -1,18 +1,18 @@
 ---
 title: Überwinden von Hindernissen bei der Cloudeinführung
 description: Verwenden Sie zum Überwinden von Hindernissen das Cloud Adoption Framework. Diese Szenarien bieten eine Roadmap für das Cloud Adoption Framework.
-author: JanetCThomas
-ms.author: janet
+author: alexbuckgit
+ms.author: abuck
 ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 6ae30bea30c80644e30f5f18b44a07d01c49131a
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 4966c2bb2b363602205e8d7bcf9a2683041169d7
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83753257"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233527"
 ---
 # <a name="accelerate-adoption"></a>Schnellere Einführung
 

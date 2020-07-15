@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 6d4b2e0677b896bf61e4c57b49dda548a6719b69
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 73b49894ae375e5c5995e33057d29b48a61e57e2
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84785479"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86190752"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>Plattformspezialisierung für die Cloudverwaltung
 
@@ -30,7 +30,7 @@ Workload- und Plattformbetrieb erfordern Änderungen von Entwurfs- und Architekt
 
 In dieser Tabelle werden einige gängige Prozesse, Tools und potenzielle Auswirkungen beschrieben, die in den optimierten Verwaltungsbaselines der Kunden üblich sind.
 
-| Prozess | Tool | Zweck  | Vorgeschlagene Verwaltungsebene |
+| Prozess | Tool | Zweck | Vorgeschlagene Verwaltungsebene |
 |---|---|---|---|
 | Verbessern des Systementwurfs | Microsoft Azure Well-Architected Framework | Verbessern des Architekturentwurfs der Plattform, um Vorgänge zu verbessern | – |
 | Automatisieren der Bereinigung | Azure-Automatisierung | Reagieren auf erweiterte Plattformdaten mit plattformspezifischer Automatisierung | Plattformbetrieb |

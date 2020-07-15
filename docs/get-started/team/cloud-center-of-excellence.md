@@ -1,18 +1,18 @@
 ---
 title: 'Erste Schritte: Zusammenstellen eines Cloudkompetenzzentrums'
 description: Anhand dieses Leitfadens kann ein CCoE-Team (Cloud Center of Excellence, Cloudkompetenzzentrum) den Projektumfang sowie die Zielvorgaben und die Funktionen nachvollziehen, die für eine erfolgreiche Cloudeinführung erforderlich sind.
-author: JanetCThomas
-ms.author: janet
+author: alexbuckgit
+ms.author: abuck
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: ebccc9b47cc12b0b54b9a7aec1c88d2a7e733816
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 9219724008228f9843d5c1790b72d679579b18f7
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83814307"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233631"
 ---
 <!-- cSpell:ignore deprioritize -->
 

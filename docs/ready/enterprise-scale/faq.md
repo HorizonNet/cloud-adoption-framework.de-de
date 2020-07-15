@@ -1,18 +1,18 @@
 ---
 title: Häufig gestellte Fragen
 description: Häufig gestellte Fragen.
-author: BrianBlanchard
-ms.author: brblanch
+author: alexbuckgit
+ms.author: abuck
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: befa3a167d38dc49120255b7ba7f5a992be8d888
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 049a2849e2569caaf4940ba98bf67e6f3056be61
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076914"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86235142"
 ---
 # <a name="faq"></a>Häufig gestellte Fragen
 

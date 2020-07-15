@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: caa4349293df5387c4ba62aa265499d4140d3f9f
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: e8c464f7985dde96b3a2c09823c47266c104f58e
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076458"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86191806"
 ---
 # <a name="get-started-manage-cloud-costs"></a>Erste Schritte: Verwalten von Cloudkosten
 
@@ -50,7 +50,7 @@ Diese Zielvorgabe sind das Ergebnis von einigen wiederkehrenden Aufgaben:
 
   - Arbeiten mit [allgemeinen bewährten Methoden für Kosten](../govern/cost-management/best-practices.md), um die Größe und die Kosten zu reduzieren und nicht verwendete Computer zu beenden.
   - Anwenden von [Hybridnutzungsvorteilen](../govern/cost-management/best-practices.md#best-practice-take-advantage-of-azure-hybrid-benefit), um die Lizenzierungskosten zu reduzieren.
-  - Ausrichten von [reservierten Instanzen](../govern/cost-management/best-practices.md#best-practice-use-reserved-vm-instances), um Ressourcenkosten zu senken.
+  - Ausrichten von [reservierten Instanzen](../govern/cost-management/best-practices.md#best-practice-use-azure-reserved-vm-instances), um Ressourcenkosten zu senken.
   - [Überwachen der Ressourcennutzung](../govern/cost-management/best-practices.md#best-practice-monitor-resource-utilization), um Auswirkungen auf die Ressourcenleistung zu minimieren.
   - [Verringern der Kosten, die sich nicht auf die Produktion beziehen](../govern/cost-management/best-practices.md#best-practice-reduce-nonproduction-costs) durch Richtlinien zum Steuern von Nicht-Produktionsumgebungen.
   - Reagieren auf [Empfehlungen zur Kostenoptimierung](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json).
@@ -138,7 +138,7 @@ Die Bereitschaftsmethodik des Microsoft Cloud Adoption Framework für Azure konz
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudeinführungsteam | <li> Cloudstrategieteam <li> Cloudgovernanceteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
+| <li> Cloudeinführungsteam | <li> Cloudstrategieteam <li> Cloudgovernanceteam <li> Cloudkompetenzzentrum (CCoE) oder zentrales IT-Team |
 
 ## <a name="step-5-complete-waves-of-migration-effort"></a>Schritt 5: Abschließen von Phasen der Migrationsbemühungen
 
@@ -165,7 +165,7 @@ Langfristige Betriebskosten sind ein gängiges Thema in jedem Bereich von Verbes
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudeinführungsteam | <li> Cloudstrategieteam <li> Cloudgovernanceteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
+| <li> Cloudeinführungsteam | <li> Cloudstrategieteam <li> Cloudgovernanceteam <li> Cloudkompetenzzentrum (CCoE) oder zentrales IT-Team |
 
 ## <a name="step-6-drive-customer-focused-innovation"></a>Schritt 6: Fördern kundenorientierter Innovation
 

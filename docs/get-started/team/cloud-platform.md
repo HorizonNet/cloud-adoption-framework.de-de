@@ -1,18 +1,18 @@
 ---
 title: 'Erste Schritte: Zusammenstellen eines Cloudplattformteams'
 description: Anhand dieses Leitfadens kann das Cloudplattformteam den angegebenen Projektumfang sowie die Zielvorgaben und Funktionen nachvollziehen.
-author: JanetCThomas
-ms.author: janet
+author: alexbuckgit
+ms.author: abuck
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 28abe413c521bdb4915548fbdbafc8a0be4fc532
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 98fcaa9902b3572135856bfcd955c197a677b487
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075655"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233204"
 ---
 # <a name="get-started-build-a-cloud-platform-team"></a>Erste Schritte: Zusammenstellen eines Cloudplattformteams
 

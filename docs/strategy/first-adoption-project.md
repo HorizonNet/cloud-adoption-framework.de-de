@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: cbb80dacdb34cc4ab11cf2d3435a0e8d4ff86e73
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 35df4edd8437cea20f0bc397be901443c21015a5
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84784986"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194645"
 ---
 # <a name="first-cloud-adoption-project"></a>Erstes Cloudeinführungsprojekt
 
@@ -51,6 +51,8 @@ Zur Unterstützung der obigen Kriterien enthält diese Liste ein Beispiel für e
 - **Beweggründe für Migration:** Wenn eine Migration der primäre Beweggrund ist, ist es ratsam, mit der Migration einer unkritischen Workload zu beginnen. Für die Migration Ihrer ersten Workload können der [Leitfaden für die Azure-Einrichtung](../ready/azure-setup-guide/index.md) und der [Leitfaden zur Azure-Migration](../migrate/azure-migration-guide/index.md) als Anleitung herangezogen werden.
 
 - **Beweggründe für Innovation:** Wenn Innovationen der primäre Beweggrund sind, könnte die Erstellung einer gezielten Entwicklungs-/Testumgebung ein ideales erstes Projekt sein.
+
+<!-- docsTest:ignore "data migration services" -->
 
 Weitere Beispiele für erste Einführungsprojekte sind unter anderem:
 

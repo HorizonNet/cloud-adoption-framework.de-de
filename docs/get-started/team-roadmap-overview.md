@@ -1,18 +1,18 @@
 ---
 title: Leitfäden mit ersten Schritten für Cloudeinführungsteams
 description: Verwenden Sie diese Leitfäden mit ersten Schritten, um die Ziele und Zuständigkeiten der Teams zu verstehen, die für Ihre Cloudbereitstellung verantwortlich sind. Diese Leitfäden bieten eine Roadmap für das Cloud Adoption Framework.
-author: JanetCThomas
-ms.author: janet
+author: alexbuckgit
+ms.author: abuck
 ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 72d6f233f1dbdda60a0f48dbc89449915c013cf8
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 492e6348954c4e4b21e570688d693e0333223598
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83751998"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233306"
 ---
 # <a name="getting-started-guides-for-cloud-adoption-teams"></a>Leitfäden mit ersten Schritten für Cloudeinführungsteams
 

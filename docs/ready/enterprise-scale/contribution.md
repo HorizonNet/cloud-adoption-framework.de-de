@@ -1,18 +1,18 @@
 ---
 title: Leitfaden für Mitwirkende an Beiträgen
 description: Leitfaden für Mitwirkende an Beiträgen.
-author: BrianBlanchard
-ms.author: brblanch
+author: alexbuckgit
+ms.author: abuck
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 843604f4c7aa9f8e032ffe879cdb8fc0d9b0ff48
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: cc9676ec0e35cbb75b1884524d8c23b87c174460
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076954"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86235108"
 ---
 # <a name="contribution-guide"></a>Leitfaden für Mitwirkende an Beiträgen
 
@@ -96,7 +96,7 @@ Um die Entwicklung und Komponententests zu vereinfachen, wenn mehrere Entwickler
     }],
 ```
 
-Um sicherzustellen, dass Fehlerbehebungen in der aktuellen API-Version berücksichtigt werden, ist eine [allgemeine Vorlage mit mehreren Ressourcen](https://raw.githubusercontent.com/uday31in/AzOps/master/src/template.json) verfügbar.
+Um sicherzustellen, dass Fehlerbehebungen in der aktuellen API-Version berücksichtigt werden, ist eine [allgemeine Vorlage mit mehreren Ressourcen](https://github.com/uday31in/AzOps/blob/main/template/template.json) verfügbar.
 
 - Template.parameters.json
 
@@ -216,7 +216,7 @@ Get-AzPolicyAlias -ListAvailable
 
 Für die Azure CLI:
 
-```cli
+```bash
 # List all available providers
 
 az provider list --query [*].namespace

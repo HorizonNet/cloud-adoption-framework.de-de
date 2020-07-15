@@ -1,18 +1,18 @@
 ---
 title: 'Erste Schritte: Ausrichten eines zentralen IT-Teams'
 description: Anhand dieses Leitfadens kann das zentrale IT-Team den Projektumfang sowie die Zielvorgaben und die Funktionen nachvollziehen, die für eine erfolgreiche Cloudeinführung erforderlich sind.
-author: JanetCThomas
-ms.author: janet
+author: alexbuckgit
+ms.author: abuck
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: eee0bd9cb59b3deaf7aa87c0758dcd70c1cb51c8
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 54cc5a5d2438ddd0350cf3873c391d489f8df2e2
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076219"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233901"
 ---
 # <a name="get-started-align-a-central-it-team"></a>Erste Schritte: Ausrichten eines zentralen IT-Teams
 
