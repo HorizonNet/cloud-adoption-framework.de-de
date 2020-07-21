@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7ae8fa0dd1de1544eb50b55995e1bf9368369319
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: 521b3fd8f991ba1d5ff3900637dd10d865984735
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373218"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86448944"
 ---
 # <a name="azure-innovation-guide-overview"></a>Azure-Innovationsleitfaden: Übersicht
 
@@ -33,7 +33,7 @@ In diesem Leitfaden lernen Sie Folgendes:
 >
 > - **Verwalten von Kundenfeedback:** Richten Sie Tools und Prozesse ein, um die Erstellen-Messen-Lernen-Feedbackschleife mithilfe von GitHub und Azure DevOps zu verwalten.
 > - **Demokratisieren von Daten:** Mit Daten allein können Sie bereits innovative Lösungen für Ihre Kunden fördern. Stellen Sie allgemeine Datenoptionen in Azure bereit.
-> - **Interagieren über Apps:** Einige Innovationen erfordern eine ansprechende Umgebung. Nutzen Sie cloudnative Anwendungsplattformen, um solche Umgebungen zu schaffen.
+> - **Interagieren über Anwendungen**: Einige Innovationen erfordern eine ansprechende Umgebung. Nutzen Sie cloudnative Anwendungsplattformen, um solche Umgebungen zu schaffen.
 > - **Fördern von Akzeptanz:** Innovationen sind großartig, jedoch müssen Schwachpunkte beseitigt werden, um die Akzeptanz zu steigern. Stellen Sie für CI/CD, DevOps und andere Befürworter der Einführung eine Basis bereit.
 > - **Interagieren über Geräte:** Schaffen Sie Umgebungserfahrungen, um dem Kunden Ihre Anwendungen und Daten näher zu bringen. IoT, Mixed Reality und mobile Umgebungen sind mit Azure einfacher umzusetzen.
 > - **Vorhersagen und Beeinflussen:** Suchen Sie nach Datenmustern. Nutzen Sie diese Muster, um das Verhalten von Kunden mithilfe von Azure-basierten Predictive Analytics-Tools vorherzusagen und zu beeinflussen.

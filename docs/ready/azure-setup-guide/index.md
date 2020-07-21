@@ -3,18 +3,18 @@ title: 'Azure-Einrichtungsleitfaden: Vorbereitung'
 description: Anhand einer Schritt-für-Schritt-Anleitung wird beschrieben, wie Sie Azure effizient für Ihre Organisation einrichten.
 author: timleyden
 ms.author: kfollis
-ms.date: 04/09/2019
+ms.date: 07/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: c17aa1a2f12a7949792229665aa73884deb63ac8
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: 331e8bf4274c9f2259516acd41b451f3b9a259f6
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373355"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450814"
 ---
 <!-- cSpell:ignore timleyden -->
 
@@ -27,7 +27,7 @@ ms.locfileid: "86373355"
 
 ::: zone-end
 
-Bevor Sie mit der Erstellung und Bereitstellung von Lösungen mit Azure-Diensten beginnen, müssen Sie Ihre Umgebung vorbereiten. In diesem Leitfaden werden Features vorgestellt, mit denen Sie Ihre Ressourcen strukturieren, Kosten im Auge behalten und Ihre Organisation schützen und verwalten können. Weitere Informationen, bewährte Methoden und Überlegungen im Zusammenhang mit der Vorbereitung Ihrer Cloudumgebung finden Sie im [Abschnitt zur Bereitschaft des Frameworks für die Cloudeinführung](../index.md).
+Bevor Sie mit der Erstellung und Bereitstellung von Lösungen mit Azure-Diensten beginnen, müssen Sie Ihre Umgebung vorbereiten. In diesem Leitfaden werden Features vorgestellt, mit denen Sie Ihre Ressourcen strukturieren, Kosten im Auge behalten und Ihre Organisation schützen und verwalten können. Weitere Informationen, bewährte Methoden und Überlegungen im Zusammenhang mit der Vorbereitung Ihrer Cloudumgebung finden Sie im [Abschnitt zur Bereitschaft](../index.md) des Cloud Adoption Frameworks.
 
 Sie lernen Folgendes:
 

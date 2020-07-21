@@ -7,12 +7,12 @@ ms.date: 05/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 760b97f268c9696ee73c9ae4e4c3b9b1475ffafa
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: fbe43c1769eed4b7ad0a032b7af11a0755d954cd
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862193"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449148"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Cloudinnovationen im Cloud Adoption Framework
 
@@ -43,8 +43,8 @@ Die Bereitschaft zu den neuen Qualifikationen und Aufgaben, die mit der Cloudein
 
 Hier finden Sie einige Beispiele für rollenspezifische Lernpfade in Microsoft Learn, die auf die Innovationsmethodik des Cloud Adoption Framework abgestimmt sind.
 
-[Verwalten von Containern in Azure:](https://docs.microsoft.com/learn/paths/administer-containers-in-azure) Azure Container Instances (ACI) bietet die schnellste und einfachste Methode zum Ausführen von Containern in Azure. In diesem Lernpfad erfahren Sie, wie Sie Container erstellen und verwalten und wie Sie mit ACI elastische Skalierungen für Kubernetes bereitstellen.
+[Verwalten von Containern in Azure:](https://docs.microsoft.com/learn/paths/administer-containers-in-azure) Azure Container Instances ist die schnellste und einfachste Methode zum Ausführen von Containern in Azure. In diesem Lernpfad erfahren Sie, wie Sie Container erstellen und verwalten und wie Sie mit Azure Container Instances elastische Skalierungen für Kubernetes bereitstellen.
 
 [Erstellen serverloser Anwendungen:](https://docs.microsoft.com/learn/paths/create-serverless-applications) Azure Functions ermöglicht die Erstellung von ereignisgesteuerten Compute-On-Demand-Systemen, die durch verschiedene externe Ereignisse ausgelöst werden können. Lesen Sie, wie Sie Funktionen nutzen, um serverseitige Logik auszuführen und serverlose Architekturen zu erstellen.
 
-Weitere Lernpfade finden Sie im [Learn-Katalog](https://docs.microsoft.com/learn/browse). Verwenden Sie den Filter **Rollen**, um Lernpfade an ihrer Rolle auszurichten.
+Weitere Lernpfade finden Sie im [Microsoft Learn-Katalog](https://docs.microsoft.com/learn/browse). Verwenden Sie den Filter **Rollen**, um Lernpfade an ihrer Rolle auszurichten.

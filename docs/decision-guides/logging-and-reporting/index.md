@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 92e7882eed949f6e93062017e5079b2135065a22
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 05498e7e1163f627b33f1a555aa3870e4bebd868
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193931"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450712"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Protokollierung und Berichterstellung
 
@@ -59,7 +59,7 @@ Um diesen Ansatz unterstützen zu können, müssen Ihre Cloudressourcen über ei
 
 Dieser Ansatz macht sich Ihre bereits getätigten Investitionen in Überwachungstools zunutze, wobei nur geringfügige Änderungen an allen in der Cloud bereitgestellten Anwendungen oder Diensten vorgenommen werden. Dies ist während einer Migration per Lift & Shift oft der schnellste Ansatz zur Unterstützung der Überwachung. Allerdings werden keine Protokolldaten erfasst, die von cloudbasierten PaaS- und SaaS-Ressourcen generiert werden, und es werden alle VM-bezogenen Protokolle ausgeklammert, die von der Cloudplattform selbst erstellt werden, wie z. B. der VM-Status. Daher sollte dieses Muster nur eine temporäre Lösung sein, bis eine umfassendere hybride Überwachungslösung implementiert ist.
 
-Rein lokale Annahmen:
+Annahmen für eine rein lokale Lösung:
 
 - Sie müssen Protokolldaten nur in Ihrer lokalen Umgebung vorhalten, entweder zur Unterstützung technischer Anforderungen oder aufgrund von gesetzlichen oder richtlinienspezifischen Anforderungen.
 - Ihre lokalen Systeme unterstützen keine hybriden Protokollierungs- und Berichterstellungs- bzw. Gatewayaggregationslösungen.

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 03b7e13a14c2b3d9a6fe6e2b2757f065e041b3f9
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: fc3e2aa9ea201e203c961275f26305cbfd5d45ed
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86191228"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450168"
 ---
 # <a name="cloud-governance-guides"></a>Cloudgovernance-Leitfäden
 
@@ -77,8 +77,8 @@ Um mit einer Governancelösung zu beginnen, wählen Sie eine der beiden folgende
 
 | State | Standardorganisation | Komplexes Unternehmen |
 |---|---|---|
-| Kostenverwaltung&mdash;Cloudabrechnung | Showbackmodell Abrechnung wird über IT zentralisiert. | Chargebackmodell Die Abrechnung kann durch IT-Beschaffung verteilt werden. |
-| Sicherheitsbaseline&mdash;geschützte Daten | Unternehmensfinanzdaten und IP. Eingeschränkte Kundendaten. Keine Complianceanforderungen von Drittanbietern. | Mehrere Sammlungen von Finanzdaten und personenbezogenen Daten von Kunden. Möglicherweise muss Drittanbietercompliance berücksichtigt werden. |
+| Kostenverwaltung: Cloudabrechnung | Showbackmodell Abrechnung wird über IT zentralisiert. | Chargebackmodell Die Abrechnung kann durch IT-Beschaffung verteilt werden. |
+| Sicherheitsbaseline: Geschützte Daten | Unternehmensfinanzdaten und IP. Eingeschränkte Kundendaten. Keine Complianceanforderungen von Drittanbietern. | Mehrere Sammlungen von Finanzdaten und personenbezogenen Daten von Kunden. Möglicherweise muss Drittanbietercompliance berücksichtigt werden. |
 
 ## <a name="caf-enterprise-scale-landing-zone"></a>CAF-Zielzone auf Unternehmensebene
 

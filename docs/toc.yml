@@ -63,6 +63,10 @@ items:
         items:
           - name: Übersicht
             href: strategy/business-outcomes/index.md
+          - name: Dateninnovationen
+            href: strategy/business-outcomes/data-innovations.md
+          - name: Demokratisierung von Daten
+            href: strategy/business-outcomes/data-democratization.md
           - name: Finanzergebnisse
             href: strategy/business-outcomes/fiscal-outcomes.md
           - name: Agilitätsergebnisse
@@ -101,6 +105,8 @@ items:
             href: strategy/define-security-strategy.md
           - name: Definieren der Überwachungsstrategie
             href: strategy/monitoring-strategy.md
+          - name: Verantwortungsbewusste künstliche Intelligenz
+            href: strategy/responsible-ai.md
       - name: Für die Strategie relevante Qualifikationen
         href: strategy/suggested-skills.md
   - name: Planen
@@ -151,6 +157,8 @@ items:
         items:
           - name: Bewertung von digitalen Ressourcen in Azure
             href: plan/contoso-migration-assessment.md
+          - name: Planen einer Data Warehouse-Migration
+            href: plan/data-warehouse-migration.md
   - name: Bereit
     items:
       - name: Übersicht
@@ -350,6 +358,8 @@ items:
           - name: Migrationsszenarios
             items:
               - name: Übersicht
+                href: scenarios/index.md
+              - name: Übersicht über Contoso
                 href: migrate/azure-best-practices/contoso-migration-overview.md
               - name: Windows Server-Workloads
                 items:
@@ -491,6 +501,22 @@ items:
                         href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-zerto?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Einrichten einer privaten CloudSimple-Cloud als Standort für die Notfallwiederherstellung mithilfe von VMware SRM
                         href: 'https://docs.microsoft.com/azure/vmware-cloudsimple/disaster-recovery-site-recovery-manager?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
+              - name: Windows Virtual Desktop
+                items:
+                  - name: Übersicht
+                    href: scenarios/wvd/index.md
+                  - name: Planung
+                    href: scenarios/wvd/plan.md
+                  - name: Überprüfen der Azure-Zielzone
+                    href: scenarios/wvd/ready.md
+                  - name: Proof of Concept
+                    href: scenarios/wvd/proof-of-concept.md
+                  - name: Bewerten
+                    href: scenarios/wvd/migrate-assess.md
+                  - name: Migrieren (oder Bereitstellen)
+                    href: scenarios/wvd/migrate-deploy.md
+                  - name: Release
+                    href: scenarios/wvd/migrate-release.md
               - name: Datenplattformen
                 items:
                   - name: Übersicht
@@ -575,6 +601,30 @@ items:
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Onlinemigration von Oracle zu Azure Database for PostgreSQL
                         href: 'https://docs.microsoft.com/azure/dms/tutorial-oracle-azure-postgresql-online?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
+              - name: Azure Stack
+                items:
+                  - name: Übersicht
+                    href: scenarios/azure-stack/index.md
+                  - name: Planung
+                    href: scenarios/azure-stack/plan.md
+                  - name: Überprüfen der Azure-Zielzone
+                    href: scenarios/azure-stack/ready.md
+                  - name: Bewerten
+                    href: scenarios/azure-stack/migrate-assess.md
+                  - name: Migrieren (oder Bereitstellen)
+                    href: scenarios/azure-stack/migrate-deploy.md
+                  - name: Steuern
+                    href: scenarios/azure-stack/govern.md
+              - name: Analytics-Lösungen
+                items:
+                  - name: Übersicht
+                    href: migrate/azure-best-practices/analytics/analytics-solutions-overview.md
+                  - name: Teradata
+                    href: migrate/azure-best-practices/analytics/analytics-solutions-teradata.md
+                  - name: Netezza
+                    href: migrate/azure-best-practices/analytics/analytics-solutions-netezza.md
+                  - name: Exadata
+                    href: migrate/azure-best-practices/analytics/analytics-solutions-exadata.md
               - name: Mainframes
                 items:
                   - name: Übersicht
@@ -627,6 +677,10 @@ items:
                 href: migrate/azure-best-practices/migrate-best-practices-costs.md
               - name: Skalieren einer Migration
                 href: migrate/azure-best-practices/contoso-migration-scale.md
+              - name: Datendefinitionssprachen für die Schemamigration
+                href: migrate/azure-best-practices/analytics/schema-migration-ddl.md
+              - name: Hochverfügbarkeit für Azure Synapse
+                href: migrate/azure-best-practices/analytics/azure-synapse.md
               - name: Governance oder Compliance
                 href: migrate/azure-best-practices/governance-or-compliance.md
           - name: Prozessverbesserungen
@@ -719,13 +773,13 @@ items:
                 href: innovate/innovation-guide/ci-cd.md
               - name: Interagieren über Geräte
                 href: innovate/innovation-guide/devices.md
-              - name: Vorhersagen und Beeinflussen
+              - name: Innovationen mit KI
                 href: innovate/innovation-guide/predict.md
           - name: Innovationsszenarien
             items:
               - name: Kubernetes
                 items:
-                  - name: Übersicht über Innovationsszenarien
+                  - name: Innovation mit Kubernetes
                     href: innovate/kubernetes/index.md
                   - name: Anwendungsentwicklung und Bereitstellung
                     href: innovate/kubernetes/application-development.md
@@ -733,6 +787,16 @@ items:
                     href: innovate/kubernetes/cluster-design-operations.md
                   - name: Cluster- und Anwendungssicherheit
                     href: innovate/kubernetes/cluster-application-security.md
+              - name: Künstliche Intelligenz (KI)
+                items:
+                  - name: Innovationen mit KI
+                    href: innovate/ai/index.md
+                  - name: Machine Learning
+                    href: innovate/ai/machine-learning.md
+                  - name: KI-Apps und -Agents
+                    href: innovate/ai/ai-applications.md
+                  - name: Knowledge Mining
+                    href: innovate/ai/knowledge-mining.md
           - name: Bewährte Methoden
             items:
               - name: Übersicht und Azure-Toolkette
@@ -901,6 +965,8 @@ items:
                     items:
                       - name: Continuous Integration mit Azure Pipelines und GitHub
                         href: 'https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration'
+                      - name: "MLOps mit Azure Machine\_Learning"
+                        href: manage/mlops-machine-learning.md
                   - name: Zuverlässiges Testen
                     items:
                       - name: Verwalten und Nachverfolgen von Testplänen
@@ -979,30 +1045,30 @@ items:
                         href: 'https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-c2d-guidance?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Azure IoT-Konfiguration für die Cloud-zu-Gerät-Kommunikation
                         href: 'https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-c2d-guidance?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-              - name: Vorhersagen und Beeinflussen
+              - name: Innovationen mit KI
                 items:
                   - name: Übersicht
                     href: innovate/best-practices/predict.md
-                  - name: Muster
+                  - name: Machine Learning
                     items:
+                      - name: Was ist Machine Learning?
+                        href: innovate\best-practices\machine-learning.md
                       - name: Azure Machine Learning-Workflow
                         href: 'https://docs.microsoft.com/azure/machine-learning/concept-azure-machine-learning-architecture?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: ScaleR in HDInsight-Lösung
-                        href: 'https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-r-scaler-sparkr?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
                       - name: Analysieren von Daten mit Azure Machine Learning
                         href: 'https://docs.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-get-started-analyze-with-azure-machine-learning?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                  - name: Vorhersagen (Predictions)
+                  - name: KI-Apps und -Agents
                     items:
+                      - name: Was sind KI-Apps?
+                        href: innovate\best-practices\ai-applications.md
+                      - name: Was sind KI-Agents?
+                        href: innovate\best-practices\conversational-ai.md
                       - name: Bereitstellen von Vorhersagen
                         href: 'https://docs.microsoft.com/azure/machine-learning/how-to-deploy-and-where?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Einrichten von HDInsight-Clustern
-                        href: 'https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-provision-linux-clusters?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                  - name: Interaktionen
+                  - name: Knowledge Mining
                     items:
-                      - name: Azure Machine Learning von Experimenten zu Betriebsdiensten
-                        href: 'https://docs.microsoft.com/azure/machine-learning/studio/model-progression-experiment-to-web-service?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
-                      - name: Operationalisieren von ML Services in Azure HDInsight
-                        href: 'https://docs.microsoft.com/azure/hdinsight/r-server/r-server-operationalize?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
+                      - name: "Was ist Azure Cognitive\_Search?"
+                        href: innovate\best-practices\cognitive-search.md
           - name: Prozessverbesserungen
             items:
               - name: Übersicht
@@ -1355,6 +1421,8 @@ items:
             href: organize/cloud-platform.md
           - name: Cloudautomatisierungsfunktionen
             href: organize/cloud-automation.md
+          - name: Clouddatenfunktionen
+            href: organize/cloud-data.md
           - name: Cloudsicherheitsfunktionen
             items:
               - name: Funktionen des Cloudsicherheitsteams

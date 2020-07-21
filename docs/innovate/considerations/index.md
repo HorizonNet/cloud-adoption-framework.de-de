@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d46518dca8738efd1b1e22f8d276102e198fc6be
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: bc06bdb894fc4ac3f92eab87de86abad3dc2d026
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219681"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449233"
 ---
 # <a name="innovation-in-the-digital-economy"></a>Innovation in der digitalen Wirtschaft
 
@@ -61,7 +61,7 @@ Transparenz ist wichtig, da das Messen der Auswirkungen für Kunden nicht die Fr
 
 ## <a name="commitment-to-iteration"></a>Verpflichtung zu Iterationen
 
-Über alle Innovationszyklen hinweg gilt nur ein Versprechen als glaubwürdig – beim ersten Versuch wird man es nicht richtig machen. Mithilfe von Messungen können Sie besser verstehen, welche Anpassungen vorgenommen werden müssen, um die gewünschten Ergebnisse zu erzielen. Änderungen, die zu den gewünschten Ergebnissen führen, stammen aus Iterationen des Prozesses „Erstellen-Messen-Lernen“. Das Cloudeinführungsteam und das Cloudstrategieteam müssen eine iterative Denkweise anwenden, bevor Sie eine wachstumsorientierte Mentalität oder den Ansatz „Erstellen-Messen-Lernen“ annehmen.
+Nur ein Versprechen besitzt über alle Innovationszyklen hinweg Gültigkeit: Beim ersten Versuch werden Sie es nicht richtig machen. Mithilfe von Messungen können Sie besser verstehen, welche Anpassungen vorgenommen werden müssen, um die gewünschten Ergebnisse zu erzielen. Änderungen, die zu den gewünschten Ergebnissen führen, stammen aus Iterationen des Prozesses „Erstellen-Messen-Lernen“. Das Cloudeinführungsteam und das Cloudstrategieteam müssen eine iterative Denkweise anwenden, bevor Sie eine wachstumsorientierte Mentalität oder den Ansatz „Erstellen-Messen-Lernen“ annehmen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
