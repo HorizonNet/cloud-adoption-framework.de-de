@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 828d83af5dcf615453dfe295b4c809901bc230ec
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 107dd9b693a50d56816115ee641f4d78c18c7fa8
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194832"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479907"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Bewährte Methoden für die Azure-Bereitschaft
 
@@ -44,7 +44,7 @@ Bereiten Sie Ihre Cloudnetzwerkinfrastruktur auf die Unterstützung Ihrer Worklo
 Entwerfen Sie Ihre Identitäts- und Zugriffssteuerungsinfrastruktur, um die Sicherheit und Verwaltungseffizienz Ihrer Workloads zu optimieren.
 
 - [Azure-Identitätsverwaltung und Sicherheit der Zugriffssteuerung – Bewährte Methoden](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json). Hier werden einige bewährte Methoden zur Identitätsverwaltung und Zugriffssteuerung mit integrierten Azure-Funktionen beschrieben.
-- [Best Practices für die rollenbasierte Zugriffssteuerung](../considerations/roles.md). Ermöglichen Sie eine präzise gruppenbasierte Zugriffsverwaltung für Ressourcen, deren Struktur auf Benutzerrollen basiert.
+- [Best Practices für die rollenbasierte Zugriffssteuerung](../considerations/roles.md). Ermöglichen Sie eine präzise und gruppenbasierte Zugriffsverwaltung für Ressourcen, deren Struktur auf Benutzerrollen basiert.
 - [Schützen des privilegierten Zugriffs für hybride und Cloudbereitstellungen in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-admin-roles-secure?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json). Stellen Sie sicher, dass der Administratorzugriff und privilegierte Konten Ihrer Organisation sowohl in der Cloudumgebung als auch in der lokalen Umgebung sicher sind.
 
 ## <a name="storage"></a>Storage

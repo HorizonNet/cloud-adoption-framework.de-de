@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: fbda37f60f3766062733e8dedfb0d8bd7969066f
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 6287cb0f1ea73032728c9394f2d1f74fcc81409a
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787451"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479658"
 ---
 # <a name="expand-your-landing-zone"></a>Erweitern der Zielzone
 
@@ -23,6 +23,7 @@ Dieser Abschnitt der Bereitschaftsmethodik basiert auf den Prinzipien des [Refac
 Das Erweitern Ihrer Zielzone ist ein Code First-Ansatz, mit dem Sie die folgenden Prinzipien in die Zielzone und auf breiterer Basis in Ihre gesamte Cloudumgebung einbetten können.
 
 ![Gemeinsame Architekturprinzipien](../../_images/ready/shared-principles.png)
+_Abbildung 1: Gemeinsame Architekturprinzipien_
 
 [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview), das [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) und die Lösungen in [Azure Architecture Center](https://docs.microsoft.com/azure/architecture) beruhen auf den gleichen Architekturprinzipien.
 

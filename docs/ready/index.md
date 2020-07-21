@@ -7,16 +7,16 @@ ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 1e273edfe148953f6d8be4f8a2f9706d58294903
-ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
+ms.openlocfilehash: 078f1c97b3ecf9e0ca3901f811a74cde9806bc50
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84813372"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479465"
 ---
 # <a name="ensure-the-environment-is-prepared-for-the-cloud-adoption-plan"></a>Sicherstellen der Umgebungsbereitschaft für den Cloudeinführungsplan
 
-Bevor Sie mit der Einführung beginnen können, müssen Sie eine Landezone zum Hosten der Workloads erstellen, die Sie in der Cloud erstellen oder in die Cloud migrieren möchten. In diesem Abschnitt des Frameworks wird Schritt für Schritt erläutert, wie Sie eine Landezone erstellen.
+Bevor Sie mit der Einführung beginnen können, müssen Sie eine Zielzone zum Hosten der Workloads erstellen, die Sie in der Cloud erstellen oder zur Cloud migrieren möchten. In diesem Abschnitt des Frameworks wird Schritt für Schritt erläutert, wie Sie eine Zielzone erstellen.
 
 Die folgenden Aufgaben unterstützen Sie bei der Erstellung einer Landezone für die Cloudeinführung.
 

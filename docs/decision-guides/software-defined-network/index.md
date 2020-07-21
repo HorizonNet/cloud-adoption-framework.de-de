@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 8f90848374e4d427ac814c6e24547999ba3dde66
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 7ca89c067d821013be07ebb6814c49e330505946
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215159"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478054"
 ---
 # <a name="software-defined-networking-decision-guide"></a>Leitfaden zur Entscheidungsfindung für softwaredefinierte Netzwerke
 
@@ -54,7 +54,7 @@ Erfahren Sie mehr über die wichtigsten Architekturen für softwaredefinierte Ne
 
 - **[Reine PaaS-Lösung](./paas-only.md):** Die meisten PaaS-Produkte (Platform as a Service) unterstützen eine begrenzte Anzahl integrierter Netzwerkfunktionen und erfordern möglicherweise kein explizit definiertes softwaredefiniertes Netzwerk zur Unterstützung der Anforderungen der Workload.
 - **[Cloudnativ](./cloud-native.md):** Eine cloudnative Architektur unterstützt cloudbasierte Workloads über virtuelle Netzwerke, die auf den Standardfunktionen für softwaredefinierte Netzwerke der Cloudplattform basieren, ohne auf lokale oder andere externe Ressourcen angewiesen zu sein.
-- **[Cloud-DMZ](./cloud-dmz.md):** Unterstützt eingeschränkte Konnektivität zwischen Ihrem lokalen und Cloudnetzwerk, die durch die Implementierung einer DMZ geschützt ist, die den Datenverkehr zwischen den beiden Umgebungen sorgfältig kontrolliert.
+- **[Cloud-DMZ](./cloud-dmz.md):** Unterstützt eingeschränkte Konnektivität zwischen Ihrem lokalen und cloudbasierten Netzwerk, die durch die Implementierung eines Umkreisnetzwerks geschützt ist, das den Datenverkehr zwischen den beiden Umgebungen sorgfältig kontrolliert.
 - **[Hybrid](./hybrid.md):** Die hybride Cloud-Netzwerkarchitektur ermöglicht es virtuellen Netzwerken in vertrauenswürdigen Cloudumgebungen, auf Ihre lokalen Ressourcen zuzugreifen und umgekehrt.
 - **[Hub-and-Spoke-Modell](./hub-spoke.md):** Die Hub-and-Spoke-Architektur ermöglicht Ihnen, externe Konnektivität und gemeinsam genutzte Dienste zentral zu verwalten, einzelne Workloads zu isolieren und mögliche Abonnementgrenzen zu umgehen.
 
