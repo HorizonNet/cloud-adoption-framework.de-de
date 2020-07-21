@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 331e8bf4274c9f2259516acd41b451f3b9a259f6
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: f76f72adfa13bee745627b93608a14996c9e8a00
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450814"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479805"
 ---
 <!-- cSpell:ignore timleyden -->
 
@@ -27,7 +27,7 @@ ms.locfileid: "86450814"
 
 ::: zone-end
 
-Bevor Sie mit der Erstellung und Bereitstellung von Lösungen mit Azure-Diensten beginnen, müssen Sie Ihre Umgebung vorbereiten. In diesem Leitfaden werden Features vorgestellt, mit denen Sie Ihre Ressourcen strukturieren, Kosten im Auge behalten und Ihre Organisation schützen und verwalten können. Weitere Informationen, bewährte Methoden und Überlegungen im Zusammenhang mit der Vorbereitung Ihrer Cloudumgebung finden Sie im [Abschnitt zur Bereitschaft](../index.md) des Cloud Adoption Frameworks.
+Bevor Sie mit der Erstellung und Bereitstellung von Lösungen mit Azure-Diensten beginnen, müssen Sie Ihre Umgebung vorbereiten. In diesem Leitfaden werden Features vorgestellt, mit denen Sie Ihre Ressourcen strukturieren, Kosten im Auge behalten und Ihre Organisation schützen und verwalten können. Weitere Informationen, bewährte Methoden und Überlegungen im Zusammenhang mit der Vorbereitung Ihrer Cloudumgebung finden Sie im [Abschnitt zur Bereitschaft des Frameworks für die Cloudeinführung](../index.md).
 
 Sie lernen Folgendes:
 
