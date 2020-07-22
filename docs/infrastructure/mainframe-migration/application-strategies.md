@@ -1,18 +1,18 @@
 ---
 title: Migrationsstrategien für Mainframe-Apps
-description: Hier finden Sie Informationen zu Strategien wie Zuweisung eines neuen Hosts, Außerbetriebnahme, Neuerstellung oder Austausch von Apps, um sie aus Mainframeumgebungen zu Azure zu migrieren.
+description: Hier finden Sie Informationen zu Strategien wie Zuweisung eines neuen Hosts, Außerbetriebnahme, Neuerstellung oder Austausch von Anwendungen, um sie aus Mainframeumgebungen zu Azure zu migrieren.
 author: njray
 ms.author: v-nanra
 ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: eb599b892e5cb3e898faf84fb1bd8b65b8d9d03b
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 11f13f38508d480a86eab45ba9bcfe805c27a180
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815071"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193778"
 ---
 <!-- cSpell:ignore njray nanra Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX TIP dbextents Raincode Tmax -->
 
@@ -126,7 +126,7 @@ Die verteilten Architekturen der Cloud basieren auf einem anderen Satz aus Entwi
 
 ## <a name="migrate-databases-and-data"></a>Migrieren von Datenbanken und Daten
 
-Die Anwendungsmigration umfasst in der Regel das Zuweisen eines neuen Hosts für die Datenschicht. Sie können Ihre SQL Server-, Open Source- und anderen relationalen Datenbanken mit [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) zu vollständig verwalteten Lösungen in Azure migrieren, z.B. zu [verwalteten Azure SQL-Datenbank-Instanzen](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance), [Azure Database for PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview) und [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview).
+Die Anwendungsmigration umfasst in der Regel das Zuweisen eines neuen Hosts für die Datenschicht. Sie können Ihre SQL Server-, Open Source- und anderen relationalen Datenbanken mit [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) zu vollständig verwalteten Lösungen in Azure migrieren, z. B. [Azure SQL Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance), [Azure Database for PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview) und [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview).
 
 Beispielsweise können Sie die Migration durchführen, wenn in der Mainframedatenschicht Folgendes verwendet wird:
 

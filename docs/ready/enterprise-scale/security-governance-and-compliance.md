@@ -1,24 +1,24 @@
 ---
-title: Sicherheit, Governance und Compliance
-description: Sicherheit, Governance und Compliance.
+title: 'CAF: Sicherheitsgovernance und Compliance auf Unternehmensebene'
+description: Erfahren Sie mehr über Sicherheitsgovernance und Compliance auf Unternehmensebene im Microsoft Cloud Adoption Framework für Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 96f685cc3f38022696d7eb9e12aca8e651ff80a4
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 4cb0baf0a5f64b2720ef9cf8c3a4b6dae6299688
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076821"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86235278"
 ---
-# <a name="security-governance-and-compliance"></a>Sicherheit, Governance und Compliance
+# <a name="caf-enterprise-scale-security-governance-and-compliance"></a>CAF: Sicherheitsgovernance und Compliance auf Unternehmensebene
 
 ## <a name="define-encryption-and-key-management"></a>Definieren von Verschlüsselung und Schlüsselverwaltung
 
-Verschlüsselung ist ein wichtiger Schritt zur Gewährleistung von Datenschutz, Compliance und Data Residency in Microsoft Azure. Die Verschlüsselung ist auch bei vielen Unternehmenskunden einer der wichtigsten Sicherheitsaspekte. In diesem Abschnitt werden die Entwurfsüberlegungen und -empfehlungen in Bezug auf Verschlüsselung und Schlüsselverwaltung behandelt.
+Verschlüsselung ist ein wichtiger Schritt zur Gewährleistung von Datenschutz, Compliance und Data Residency in Microsoft Azure. Die Verschlüsselung ist auch bei vielen Unternehmen einer der wichtigsten Sicherheitsaspekte. In diesem Abschnitt werden die Entwurfsüberlegungen und -empfehlungen in Bezug auf Verschlüsselung und Schlüsselverwaltung behandelt.
 
 **Überlegungen zum Entwurf:**
 
@@ -34,7 +34,8 @@ Verschlüsselung ist ein wichtiger Schritt zur Gewährleistung von Datenschutz, 
 
 - Schlüsselrotation und Ablauf von Geheimnissen.
 
-  Beschaffung und Signierung von Zertifikaten mit Key Vault: ([Informationen zu Zertifikaten](https://docs.microsoft.com/azure/key-vault/certificates/about-certificates)) Warnungen/Benachrichtigungen und automatisierte Zertifikatverlängerungen.
+  - Zertifikatbeschaffung und -signierung mit Key Vault ([über Zertifikate](https://docs.microsoft.com/azure/key-vault/certificates/about-certificates))
+  - Warnungen/Benachrichtigungen und automatisierte Zertifikatverlängerungen
 
 - Anforderungen an die Notfallwiederherstellung für Schlüssel, Zertifikate und Geheimnisse.
 
@@ -46,19 +47,17 @@ Verschlüsselung ist ein wichtiger Schritt zur Gewährleistung von Datenschutz, 
 
 - Delegierte Key Vault-Instanziierung und privilegierter Zugriff: ([sicherer Zugriff](https://docs.microsoft.com/azure/key-vault/general/secure-your-key-vault))
 
-- Anforderungen im Zusammenhang mit der Nutzung benutzerdefinierter Schlüssel für native Verschlüsselungsmechanismen wie Speicherdienstverschlüsselung: ([Vom Kunden verwaltete Schlüssel](https://docs.microsoft.com/azure/storage/common/storage-encryption-keys-portal))
-
-- Vollständige Datenträgerverschlüsselung für virtuelle Computer (VMs).
-
-- Verschlüsselung von Daten während der Übertragung.
-
-- Verschlüsselung ruhender Daten.
+- Anforderungen im Zusammenhang mit der Nutzung benutzerdefinierter Schlüssel für native Verschlüsselungsmechanismen wie Azure-Speicherdienstverschlüsselung (Storage Service Encryption, SSE):
+  - [Kundenseitig verwaltete Schlüssel](https://docs.microsoft.com/azure/storage/common/storage-encryption-keys-portal).
+  - Vollständige Datenträgerverschlüsselung für virtuelle Computer (VMs).
+  - Verschlüsselung von Daten während der Übertragung.
+  - Verschlüsselung ruhender Daten.
 
 **Entwurfsempfehlungen:**
 
-- Nutzen Sie ein Key Vault-Verbundmodell, um Beschränkungen des Transaktionsumfangs zu vermeiden.
+- Nutzen Sie ein Azure Key Vault-Verbundmodell, um Beschränkungen des Transaktionsumfangs zu vermeiden.
 
-- Stellen Sie Key Vault mit Richtlinien für vorläufiges und endgültiges Löschen bereit, damit Aufbewahrungsschutz für gelöschte Objekte aktiviert werden kann.
+- Stellen Sie Azure Key Vault mit Richtlinien für vorläufiges und endgültiges Löschen bereit, damit Aufbewahrungsschutz für gelöschte Objekte aktiviert werden kann.
 
 - Befolgen Sie ein Modell der geringsten Rechte, indem Sie die Autorisierung zum permanenten Löschen von Schlüsseln, Geheimnissen und Zertifikaten auf spezielle benutzerdefinierte Azure Active Directory-Rollen beschränken.
 
@@ -116,7 +115,7 @@ Governance stellt Mechanismen und Prozesse zum Beibehalten der Kontrolle über I
 
 ## <a name="define-security-monitoring-and-an-audit-policy"></a>Definieren der Sicherheitsüberwachung und einer Überwachungsrichtlinie
 
-Für Unternehmenskunden ist es unerlässlich, einen Einblick in die Vorgänge innerhalb ihrer Cloudumgebung zu erhalten. Die Sicherheitsüberwachung und Überwachungsprotokollierung der Dienste auf der Azure-Plattform ist eine wesentliche Komponente eines skalierbaren Frameworks.
+Für ein Unternehmen ist es unerlässlich, einen Einblick in die Vorgänge innerhalb seiner Cloudumgebung zu erhalten. Die Sicherheitsüberwachung und Überwachungsprotokollierung der Dienste auf der Azure-Plattform ist eine wesentliche Komponente eines skalierbaren Frameworks.
 
 **Überlegungen zum Entwurf:**
 
@@ -156,7 +155,7 @@ Für Unternehmenskunden ist es unerlässlich, einen Einblick in die Vorgänge in
 
 ## <a name="plan-for-platform-security"></a>Planen der Plattformsicherheit
 
-Es ist unerlässlich, eine stabile Sicherheitslage aufrechtzuerhalten, wenn Unternehmenskunden Azure einführen. Neben Sichtbarkeit müssen Sie in der Lage sein, die anfänglichen Einstellungen und Änderungen zu bestimmen, während sich die Azure-Dienste weiterentwickeln. Daher ist die Planung der Plattformsicherheit von großer Bedeutung.
+Sie müssen eine stabile Sicherheitslage aufrechterhalten, wenn Sie Azure einführen. Neben Sichtbarkeit müssen Sie in der Lage sein, die anfänglichen Einstellungen und Änderungen zu bestimmen, während sich die Azure-Dienste weiterentwickeln. Daher ist die Planung der Plattformsicherheit von großer Bedeutung.
 
 **Überlegungen zum Entwurf:**
 
@@ -170,23 +169,23 @@ Es ist unerlässlich, eine stabile Sicherheitslage aufrechtzuerhalten, wenn Unte
 
 **Entwurfsempfehlungen:**
 
-- Eine gemeinsame Untersuchung jedes erforderlichen Diensts muss im Kontext der zugrunde liegenden benutzerdefinierten Anforderungen erfolgen. Wenn der Kunde seine eigenen Schlüssel einsetzen möchte, wird dies möglicherweise nicht von allen in Frage kommenden Diensten unterstützt. Entsprechende Abhilfemaßnahmen müssen umgesetzt werden, damit Inkonsistenzen die gewünschten Ergebnisse nicht beeinträchtigen. Wählen Sie geeignete Regionspaare und Regionen für die Notfallwiederherstellung, die Latenz minimieren.
+- Eine gemeinsame Untersuchung jedes erforderlichen Diensts muss im Kontext Ihrer zugrunde liegenden Anforderungen erfolgen. Wenn Sie Ihre eigenen Schlüssel einsetzen möchte, wird dies möglicherweise nicht von allen in Frage kommenden Diensten unterstützt. Entsprechende Abhilfemaßnahmen müssen umgesetzt werden, damit Inkonsistenzen die gewünschten Ergebnisse nicht beeinträchtigen. Wählen Sie geeignete Regionspaare und Regionen für die Notfallwiederherstellung, die Latenz minimieren.
 
-- Entwickeln Sie einen Plan zur Erstellung einer Whitelist für die Sicherheit, um die Sicherheitskonfiguration, Überwachung und Warnungen von Diensten sowie deren Integration in bestehende Systeme zu beurteilen.
+- Entwickeln Sie einen Plan zum Erstellen einer Zulassungsliste für die Sicherheit, um die Sicherheitskonfiguration, Überwachung und Warnungen von Diensten sowie deren Integration in bestehende Systeme zu beurteilen.
 
-- Legen Sie vor dem Erstellen einer Whitelist für Azure-Dienste einen Plan zur Reaktion auf Vorfälle fest.
+- Legen Sie vor dem Erstellen einer Zulassungsliste für Azure-Dienste einen Plan zur Reaktion auf Vorfälle fest.
 
 - Nutzen Sie Azure AD-Berichtsfunktionen zum Generieren von Überwachungsberichten zur Zugriffssteuerung.
 
-- Stimmen Sie die Sicherheitsanforderungen von Kunden mit Roadmaps für die Azure-Plattform ab, um bei neu veröffentlichten Sicherheitssteuerungen auf dem Laufenden zu bleiben.
+- Stimmen Sie Ihre Sicherheitsanforderungen mit Roadmaps für die Azure-Plattform ab, um bei neu veröffentlichten Sicherheitssteuerungen auf dem Laufenden zu bleiben.
 
 - Setzen Sie ggf. einen Zero-Trust-Ansatz für den Zugriff auf die Azure-Plattform um.
 
-## <a name="service-enablement-framework"></a>Framework für das Zulassen von Diensten
+## <a name="service-enablement-framework"></a>Dienstaktivierungsframework
 
 Wenn Geschäftsbereiche die Bereitstellung von Workloads in Azure anfordern, ist ein zusätzlicher Einblick in eine Workload erforderlich, um zu bestimmen, wie ein angemessenes Maß an Governance, Sicherheit und Compliance erreicht werden kann. Wenn ein neuer Dienst benötigt wird, für den noch kein Onboarding durchgeführt wurde, muss der Dienst zugelassen werden. Die folgende Tabelle bietet ein Framework zur Beurteilung der Sicherheitsbereitschaft von Azure-Diensten in Unternehmen:
 
-| Bewertung                    | Kategorie                                                              | Kriterien                                                                                                                                     |
+| Bewertung                    | Category                                                              | Kriterien                                                                                                                                     |
 |------------------------------|-----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Sicherheit                     | Netzwerkendpunkt                                                      | Verfügt der Dienst über einen öffentlichen Endpunkt, der außerhalb eines virtuellen Netzwerks zugänglich ist?                                                                |
 |                              |                                                                       | Werden Endpunkte virtueller Netzwerkdienste unterstützt?                                                                                                      |
@@ -222,8 +221,8 @@ Wenn Geschäftsbereiche die Bereitstellung von Workloads in Azure anfordern, ist
 | Governance                   | Export und Import von Daten                                                  | Erlaubt der Dienst, Daten sicher und verschlüsselt zu importieren und zu exportieren?                                                                     |
 |                              | Datenschutz und -nutzung                                                  | Können Microsoft-Techniker auf die Daten zugreifen?                                                                                                     |
 |                              |                                                                       | Wird jede Interaktion des Microsoft-Supports mit dem Dienst überwacht?                                                                               |
-|                              | Data Residency                                                        | Sind Daten auf die Region der Dienstbereitstellung beschränkt?                                                                                          |
-| Vorgänge                   | Überwachung                                                            | Ist der Dienst in Azure Monitor integriert?                                                                                               |
+|                              | Datenresidenz                                                        | Sind Daten auf die Region der Dienstbereitstellung beschränkt?                                                                                          |
+| Operationen (Operations)                   | Überwachung                                                            | Ist der Dienst in Azure Monitor integriert?                                                                                               |
 |                              | Sicherungsverwaltung                                                     | Welche Workloaddaten müssen gesichert werden?                                                                                                       |
 |                              |                                                                       | Wie werden Sicherungen aufgezeichnet?                                                                                                                    |
 |                              |                                                                       | Wie oft können Sicherungen durchgeführt werden?                                                                                                         |
@@ -238,7 +237,7 @@ Wenn Geschäftsbereiche die Bereitstellung von Workloads in Azure anfordern, ist
 |                              |                                                                       | Was ist die Einheit für horizontale Skalierung?                                                                                                        |
 |                              | Patch- und Updateverwaltung                                             | Muss der Dienst gepatcht werden oder wird er vom Dienst abstrahiert?                                                                        |
 |                              |                                                                       | Wie häufig werden Patches angewendet, und können sie automatisiert werden?                                                                                |
-|                              | Überwachung                                                                 | Werden geschachtelte Vorgänge auf Steuerungsebenen erfasst (z. B. AKS oder Azure Databricks)?                                                                      |
+|                              | Audit                                                                 | Werden geschachtelte Vorgänge auf Steuerungsebenen erfasst (z. B. AKS oder Azure Databricks)?                                                                      |
 |                              |                                                                       | Werden wichtige Aktivitäten auf Datenebene aufgezeichnet?                                                                                                      |
 |                              | Konfigurationsverwaltung                                              | Werden Tags unterstützt und ein `put`-Schema für alle Ressourcen bereitgestellt?                                                                             |
 | Compliance von Azure-Diensten     | Dienstnachweis, Zertifizierung und externe Überprüfungen                | Ist der Dienst mit PCI/ISO/SOC konform?                                                                                                        |

@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 93b5f540e8b7a501a7491f406d15296f2245e6ee
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: ea137df62336139abf7a6a90b47f33ee710854be
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076810"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86235227"
 ---
 # <a name="landing-zone-implementation-options"></a>Implementierungsoptionen für Zielzonen
 
@@ -32,10 +32,8 @@ Neben den empfohlenen Entwurfsbereichen ist die Entwicklungsgeschwindigkeit der 
 
 Unten sind einige der Implementierungsoptionen für Zielzonen sowie die Variablen aufgeführt, die maßgebend für die Entscheidung sein können.
 
-<!-- docsTest:ignore "CAF Enterprise-scale" "CAF Terraform" -->
-
 | Implementierungsoption | BESCHREIBUNG | Bereitstellungsgeschwindigkeit | Tiefere Entwurfsprinzipien | Anweisungen zur Bereitstellung |
-|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|
 | [Blaupause für die CAF-Migrationszielzone](./migrate-landing-zone.md) | Stellt die Grundlage für das Migrieren von Ressourcen mit geringem Risiko dar. | Klein anfangen | [Entwurfsprinzipien](./migrate-landing-zone.md#design-principles) | [Bereitstellen](./migrate-landing-zone.md) |
 | [CAF-Basisblaupause](./foundation-blueprint.md) | Hiermit werden die Tools hinzugefügt, die für den Einstieg in die Entwicklung einer Governance-Strategie mindestens erforderlich sind. | Klein anfangen | [Entwurfsprinzipien](./foundation-blueprint.md#design-principles) | [Bereitstellen](./foundation-blueprint.md) |
 | [CAF-Zielzone auf Unternehmensebene](./enterprise-scale.md) | Stellt eine für Unternehmen geeignete Plattformgrundlage mit allen erforderlichen gemeinsamen Diensten zum Unterstützen des kompletten IT-Portfolios bereit. | Unternehmensebene | [Entwurfsprinzipien](../enterprise-scale/design-principles.md) | [Bereitstellen](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/contoso/Readme.md) |

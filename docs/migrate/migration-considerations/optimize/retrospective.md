@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 96ddb1944401990086191be7ceb500c038eb1d2d
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 50a1f40a6594faa9cda9594ce87d2e91cdca0ad3
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787757"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86235125"
 ---
 # <a name="how-do-retrospectives-help-build-a-growth-mindset"></a>Wie helfen Retrospektiven beim Entwickeln einer wachstumsorientierten Mentalität?
 

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 0b786293386ae85bca7d29865639f839dd79ead4
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 078caffbec94748404202e193a0931a8a1be3777
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993930"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86191194"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>Umgebungserfahrungen: Interagieren mit Geräten
 
@@ -26,11 +26,11 @@ Das Leben in der digitalen Wirtschaft ist voller Ablenkungen. Wir alle werden mi
 
 ## <a name="interact-with-devices"></a>Interagieren mit Geräten
 
-Eine standardmäßige Weboberfläche ist die verbreitetste Anwendungsentwicklungstechnik zur Erfüllung von Kundenbedürfnissen. Bei diesem Ansatz wird davon ausgegangen, dass sich der Kunde am Computer befindet. Wenn Ihr Kunde seine Bedürfnisse stets am Laptop erfüllt, entwickeln Sie eine Web-App. Diese Web-App bietet dem Kunden in diesem Szenario eine Umgebungserfahrung. Wir wissen jedoch, dass dieses Szenario in unserer aktuellen Zeit immer seltener und weniger wahrscheinlich wird.
+Eine standardmäßige Weboberfläche ist die verbreitetste Anwendungsentwicklungstechnik zur Erfüllung von Kundenbedürfnissen. Bei diesem Ansatz wird davon ausgegangen, dass sich der Kunde am Computer befindet. Wenn Ihr Kunde seine Bedürfnisse stets am Laptop erfüllt, entwickeln Sie eine Webanwendung. Diese Anwendung bietet dem Kunden in diesem Szenario eine Umgebungserfahrung. Wir wissen jedoch, dass dieses Szenario in unserer aktuellen Zeit immer seltener und weniger wahrscheinlich wird.
 
 ![Umgebungserfahrungen](../../_images/innovate/ambient-experiences.png)
 
-Umgebungserfahrungen erfordern heutzutage in der Regel mehr als eine Web-App. Durch [Messungen](./measure.md) und [Lernen vom Kunden](./learn.md) kann das Verhalten, das zum Bedürfnisauslöser des Kunden führt, beobachtet, verfolgt und genutzt werden, um eine bessere Umgebungserfahrung zu schaffen. In der folgenden Liste werden einige Ansätze zur Einbeziehung von Umgebungslösungen in Ihre Hypothesen zusammengefasst. Weitere Details dazu finden Sie in den folgenden Abschnitten.
+Umgebungserfahrungen erfordern heutzutage in der Regel mehr als eine Webanwendung. Durch [Messungen](./measure.md) und [Lernen vom Kunden](./learn.md) kann das Verhalten, das zum Bedürfnisauslöser des Kunden führt, beobachtet, verfolgt und genutzt werden, um eine bessere Umgebungserfahrung zu schaffen. In der folgenden Liste werden einige Ansätze zur Einbeziehung von Umgebungslösungen in Ihre Hypothesen zusammengefasst. Weitere Details dazu finden Sie in den folgenden Abschnitten.
 
 - **[Mobiles Erlebnis:](#mobile-experience)** Wie Laptops sind auch mobile Apps in Kundenumgebungen allgegenwärtig. In einigen Situationen kann dies ein ausreichendes Maß an Interaktivität bieten, um eine adäquate Lösung für die Umgebung zu realisieren.
 - **[Mixed Reality](#mixed-reality):** Mitunter muss die typische Umgebung eines Kunden geändert werden, um eine entsprechende Interaktion zu ermöglichen. Dadurch wird eine Art falsche Realität geschaffen, in der der Kunde mit der Lösung interagiert und sein Bedürfnis erfüllt werden kann. In diesem Fall ist die Lösung innerhalb der falschen Realität umgebungsgerecht.

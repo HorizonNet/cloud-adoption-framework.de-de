@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5cfe118ff57f998aa6b641c19ede3e89ee29420a
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 11bf144f9023e6c0b51de8223edc31c62d396ee6
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83754615"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193812"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Governanceleitfaden für Standardunternehmen: Verbessern der Disziplin „Sicherheitsbaseline“
 
@@ -31,7 +31,7 @@ Der Unterschied mag geringfügig erscheinen, ist aber beim Erstellen einer gover
 
 ### <a name="changes-in-the-current-state"></a>Änderungen des aktuellen Status
 
-Zu Beginn dieser Geschichte arbeiteten die Anwendungsentwicklungsteams noch mit Entwicklungs-/Testkapazität, und das BI-Team befand sich noch in der Experimentierphase. Die IT-Abteilung betrieb zwei gehostete Infrastrukturumgebungen namens „Prod“ und „DR“.
+Zu Beginn dieser Geschichte arbeiteten die Anwendungsentwicklungsteams noch mit Entwicklungs-/Testkapazität, und das BI-Team befand sich noch in der Experimentierphase. Die IT-Abteilung betrieb zwei gehostete Infrastrukturumgebungen namens `prod` und `DR`.
 
 Seit diesem Zeitpunkt haben sich einige Dinge geändert, die sich auf die Governance auswirken:
 
@@ -79,7 +79,7 @@ Die folgenden Änderungen an der Richtlinie verringern die neuen Risiken und ver
 9. Nach Möglichkeit muss die Knotenkonfigurationsverwaltung Richtlinienanforderungen auf die Konfiguration aller Gastbetriebssysteme anwenden.
 10. Governancetools müssen durchsetzen, dass automatische Updates für alle bereitgestellten Ressourcen aktiviert sind. Verstöße müssen von Betriebsmanagementteams überprüft und in Übereinstimmung mit den Betriebsrichtlinien beseitigt werden. Ressourcen, die nicht automatisch aktualisiert werden, müssen in Prozesse einbezogen werden, die IT Operations unterstehen.
 11. Für die Erstellung neuer Abonnements oder Verwaltungsgruppen für unternehmenskritische Anwendungen oder geschützte Daten ist eine Überprüfung durch das Cloudgovernanceteam erforderlich, um sicherzustellen, dass die richtige Blaupause zugewiesen wird.
-12. Das Zugriffsmodell der geringsten Rechte wird auf alle Verwaltungsgruppen oder Abonnements angewendet, die unternehmenskritische Apps oder geschützte Daten enthalten.
+12. Das Zugriffsmodell der geringsten Rechte wird auf alle Verwaltungsgruppen oder Abonnements angewendet, die unternehmenskritische Anwendungen oder geschützte Daten enthalten.
 13. Trends und Exploits, die mögliche Auswirkungen auf Cloudbereitstellungen haben, müssen vom Sicherheitsteam regelmäßig überprüft werden, damit Updates für in der Cloud verwendete Sicherheitsverwaltungstools bereitgestellt werden.
 14. Bereitstellungstools müssen vom Cloudgovernanceteam genehmigt werden, um eine kontinuierliche Governance für bereitgestellte Ressourcen sicherzustellen.
 15. Bereitstellungsskripts müssen in einem zentralen Repository aufbewahrt werden, das für das Cloudgovernanceteam zur regelmäßigen Überprüfung und Überwachung zugänglich ist.

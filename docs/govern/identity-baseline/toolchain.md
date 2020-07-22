@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 71d813526d739984390fc671c44245b21ce078f1
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: fefbea898dbdc0d2fbabc7c80a902df7c5d3994d
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786244"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86191245"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Tools für Identitätsbaseline in Azure
 
@@ -27,13 +27,13 @@ Die folgenden Tools sind im Ermittlungshandbuch zur Hybrididentität enthalten.
 
 **Active Directory (IaaS):** Eine Instanz der Active Directory-Anwendung, die auf einem virtuellen Computer in Azure ausgeführt wird.
 
-Die Identität ist die Steuerebene für IT-Sicherheit. Die Authentifizierung ist für eine Organisation daher der Zugriffsschutz für die Cloud. Organisationen benötigen eine Steuerebene für die Identität, mit der ihre Sicherheit gestärkt und die Cloud-Apps vor Eindringlingen geschützt werden.
+Die Identität ist die Steuerebene für IT-Sicherheit. Die Authentifizierung ist für eine Organisation daher der Zugriffsschutz für die Cloud. Organisationen benötigen eine Steuerebene für die Identität, mit der ihre Sicherheit gestärkt und die Cloudanwendungen vor Eindringlingen geschützt werden.
 
 ## <a name="cloud-authentication"></a>Cloudauthentifizierung
 
-Die Wahl der richtigen Authentifizierungsmethode ist die erste Hürde für Organisationen, die ihre Apps in die Cloud verschieben möchten.
+Die Wahl der richtigen Authentifizierungsmethode ist die erste Hürde für Organisationen, die ihre Anwendungen in die Cloud verschieben möchten.
 
-Wenn Sie diese Methode wählen, übernimmt Azure AD die Anmeldung für Benutzer. In Verbindung mit dem nahtlosen einmaligen Anmelden (SSO) können sich Benutzer bei Cloud-Apps anmelden, ohne ihre Anmeldeinformationen erneut eingeben zu müssen. Bei der Cloudauthentifizierung können Sie zwischen zwei Optionen wählen:
+Wenn Sie diese Methode wählen, übernimmt Azure AD die Anmeldung für Benutzer. In Verbindung mit dem nahtlosen einmaligen Anmelden (SSO) können sich Benutzer bei Cloudanwendungen anmelden, ohne ihre Anmeldeinformationen erneut eingeben zu müssen. Bei der Cloudauthentifizierung können Sie zwischen zwei Optionen wählen:
 
 **Azure AD-Kennworthashsynchronisierung:** Dies ist der einfachste Weg, die Authentifizierung für lokale Verzeichnisobjekte in Azure AD zu ermöglichen. Diese Methode kann auch mit jeder beliebigen anderen Methode als Backupfailover-Authentifizierungsmethode verwendet werden, falls Ihr lokaler Server ausfällt.
 
