@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 4cb0baf0a5f64b2720ef9cf8c3a4b6dae6299688
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: a0543327e50ad50e4e3ada792999bc057c53e499
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86235278"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479448"
 ---
 # <a name="caf-enterprise-scale-security-governance-and-compliance"></a>CAF: Sicherheitsgovernance und Compliance auf Unternehmensebene
 
@@ -181,11 +181,13 @@ Sie müssen eine stabile Sicherheitslage aufrechterhalten, wenn Sie Azure einfü
 
 - Setzen Sie ggf. einen Zero-Trust-Ansatz für den Zugriff auf die Azure-Plattform um.
 
+<!-- docsTest:ignore "and conditional access" -->
+
 ## <a name="service-enablement-framework"></a>Dienstaktivierungsframework
 
 Wenn Geschäftsbereiche die Bereitstellung von Workloads in Azure anfordern, ist ein zusätzlicher Einblick in eine Workload erforderlich, um zu bestimmen, wie ein angemessenes Maß an Governance, Sicherheit und Compliance erreicht werden kann. Wenn ein neuer Dienst benötigt wird, für den noch kein Onboarding durchgeführt wurde, muss der Dienst zugelassen werden. Die folgende Tabelle bietet ein Framework zur Beurteilung der Sicherheitsbereitschaft von Azure-Diensten in Unternehmen:
 
-| Bewertung                    | Category                                                              | Kriterien                                                                                                                                     |
+| Bewertung                    | Kategorie                                                              | Kriterien                                                                                                                                     |
 |------------------------------|-----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Sicherheit                     | Netzwerkendpunkt                                                      | Verfügt der Dienst über einen öffentlichen Endpunkt, der außerhalb eines virtuellen Netzwerks zugänglich ist?                                                                |
 |                              |                                                                       | Werden Endpunkte virtueller Netzwerkdienste unterstützt?                                                                                                      |
@@ -221,8 +223,8 @@ Wenn Geschäftsbereiche die Bereitstellung von Workloads in Azure anfordern, ist
 | Governance                   | Export und Import von Daten                                                  | Erlaubt der Dienst, Daten sicher und verschlüsselt zu importieren und zu exportieren?                                                                     |
 |                              | Datenschutz und -nutzung                                                  | Können Microsoft-Techniker auf die Daten zugreifen?                                                                                                     |
 |                              |                                                                       | Wird jede Interaktion des Microsoft-Supports mit dem Dienst überwacht?                                                                               |
-|                              | Datenresidenz                                                        | Sind Daten auf die Region der Dienstbereitstellung beschränkt?                                                                                          |
-| Operationen (Operations)                   | Überwachung                                                            | Ist der Dienst in Azure Monitor integriert?                                                                                               |
+|                              | Data Residency                                                        | Sind Daten auf die Region der Dienstbereitstellung beschränkt?                                                                                          |
+| Vorgänge                   | Überwachung                                                            | Ist der Dienst in Azure Monitor integriert?                                                                                               |
 |                              | Sicherungsverwaltung                                                     | Welche Workloaddaten müssen gesichert werden?                                                                                                       |
 |                              |                                                                       | Wie werden Sicherungen aufgezeichnet?                                                                                                                    |
 |                              |                                                                       | Wie oft können Sicherungen durchgeführt werden?                                                                                                         |
@@ -237,7 +239,7 @@ Wenn Geschäftsbereiche die Bereitstellung von Workloads in Azure anfordern, ist
 |                              |                                                                       | Was ist die Einheit für horizontale Skalierung?                                                                                                        |
 |                              | Patch- und Updateverwaltung                                             | Muss der Dienst gepatcht werden oder wird er vom Dienst abstrahiert?                                                                        |
 |                              |                                                                       | Wie häufig werden Patches angewendet, und können sie automatisiert werden?                                                                                |
-|                              | Audit                                                                 | Werden geschachtelte Vorgänge auf Steuerungsebenen erfasst (z. B. AKS oder Azure Databricks)?                                                                      |
+|                              | Überwachung                                                                 | Werden geschachtelte Vorgänge auf Steuerungsebenen erfasst (z. B. AKS oder Azure Databricks)?                                                                      |
 |                              |                                                                       | Werden wichtige Aktivitäten auf Datenebene aufgezeichnet?                                                                                                      |
 |                              | Konfigurationsverwaltung                                              | Werden Tags unterstützt und ein `put`-Schema für alle Ressourcen bereitgestellt?                                                                             |
 | Compliance von Azure-Diensten     | Dienstnachweis, Zertifizierung und externe Überprüfungen                | Ist der Dienst mit PCI/ISO/SOC konform?                                                                                                        |
