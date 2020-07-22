@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 401acfb2a0689fe54d43c29a8ab32a8d6e218670
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 7ac8fe1ffb7318b3e705b4586de300cd1ee6a58f
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219766"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449709"
 ---
 # <a name="tools-to-interact-with-devices-in-azure"></a>Tools für die Interaktion mit Geräten in Azure
 
@@ -37,7 +37,7 @@ In Azure werden häufig die folgenden Tools genutzt, um digitale Erfindungen auf
 
 | Category | Tools |
 |---|---|
-| Mobile Oberflächen | <li> Azure App Service <li> PowerApps <li> Microsoft Flow <li> Intune |
+| Mobile Oberflächen | <li> Azure App Service <li> Power Apps <li> Power Automate <li> Intune |
 | Mixed Reality | <li> Unity <li> Azure Spatial Anchors <li> HoloLens |
 | Integrierte Realität | <li> Azure IoT Hub <li> Azure Sphere <li> Azure Kinect DK |
 | Angepasste Realität | <li> IoT Cloud-zu-Gerät <li> Azure Digital Twins + HoloLens |

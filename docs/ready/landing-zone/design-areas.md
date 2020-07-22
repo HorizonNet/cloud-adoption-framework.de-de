@@ -7,14 +7,16 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: ff839cb704ce79910fc29d6954712a0337a53e1e
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 3ec600379b185ae5ab084d80f3d2a6374ba0703e
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85077014"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479431"
 ---
-# <a name="modular-design-areas-considered-by-all-azure-landing-zones"></a>Modulare Entwurfsbereiche, die von allen Azure-Zielzonen berücksichtigt werden
+<!-- TODO: Refactor terms: "design area", "well-architected" -->
+
+# <a name="design-areas-of-a-well-architected-landing-zone"></a>Entwurfsbereich einer gut konzipierten Zielzone
 
 Jede Implementierungsoption für Azure-Zielzonen bietet einen Bereitstellungsansatz und definierte Entwurfsprinzipien, anhand derer Sie die folgenden Entwurfsbereiche implementieren können. Lesen vor dem Auswählen einer Implementierungsoption diesen Artikel, um sich mit diesen Entwurfsbereichen vertraut zu machen.
 
@@ -23,7 +25,7 @@ Jede Implementierungsoption für Azure-Zielzonen bietet einen Bereitstellungsans
 
 Ungeachtet der Bereitstellungsoption sollte jeder der folgenden Punkte bedacht werden, und es sind Entscheidungen für jeden Entwurfsbereich zu treffen. Diese Entscheidungen wirken sich auf die Plattformgrundlage aus, von der die einzelnen Zielzonen abhängig sind.
 
-| Entwurfsbereiche  | Ziel  | Relevante Methodiken |
+| Entwurfsbereiche | Ziel  | Relevante Methodiken |
 |---|---|---|
 | Unternehmensregistrierung | Für Unternehmenskunden mit einer Azure-Zusage ist die ordnungsgemäße Erstellung und Registrierung eines Mandanten ein wichtiger Schritt. | Bereit |
 | Identity | IAM (Identity & Access Management, Identitäts- und Zugriffsverwaltung) ist eine primäre Sicherheitsgrenze in der öffentlichen Cloud. Sie stellt die Grundlage für jede sichere und vollständig kompatible Architektur dar. | Bereit |
