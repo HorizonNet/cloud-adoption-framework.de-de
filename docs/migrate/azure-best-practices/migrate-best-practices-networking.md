@@ -1,18 +1,18 @@
 ---
-title: Einrichten von Netzwerken für zu Azure migrierte Workloads
+title: Bewährte Methoden zum Einrichten von Netzwerken für zu Azure migrierte Workloads
 description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um sich über bewährte Methoden (Best Practices) zum Einrichten von Netzwerken für Ihre migrierten Workloads zu informieren.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 12/04/2018
+ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b2b8dcce16fd0e6d277160f1177347f887488712
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: c3ca563579ea8879d944fb59372e213faa942f18
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993863"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194526"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -85,18 +85,18 @@ Um Isolation innerhalb eines VNET bereitzustellen, segmentieren Sie es in mindes
 - Standardmäßig leitet Azure Netzwerkdatenverkehr zwischen allen Subnetzen in einem VNET weiter.
 - Ihre Subnetzentscheidungen basieren auf Ihren technischen und organisatorischen Anforderungen.
 - Sie erstellen Subnetze mithilfe der CIDR-Notation.
-- Beim Treffen der Entscheidung zum Netzwerkbereich für Subnetze ist unbedingt zu beachten, dass Azure aus jedem Subnetz fünf IP-Adressen zurückbehält, die nicht verwendet werden können. Wenn Sie beispielsweise das kleinste verfügbare Subnetz von /29 (mit acht IP-Adressen) erstellen, behält Azure fünf Adressen zurück, sodass Sie nur über drei verwendbare Adressen verfügen, die den Hosts im Subnetz zugewiesen werden können.
-- In den meisten Fällen verwenden Sie /28 als das kleinste Subnetz.
+- Beim Treffen der Entscheidung zum Netzwerkbereich für Subnetze ist unbedingt zu beachten, dass Azure aus jedem Subnetz fünf IP-Adressen zurückbehält, die nicht verwendet werden können. Wenn Sie beispielsweise das kleinste verfügbare Subnetz von `/29` (mit acht IP-Adressen) erstellen, behält Azure fünf Adressen zurück, sodass Sie nur über drei verwendbare Adressen verfügen, die den Hosts im Subnetz zugewiesen werden können.
+- In den meisten Fällen verwenden Sie `/28` als das kleinste Subnetz.
 
 **Beispiel:**
 
-Die Tabelle zeigt ein Beispiel für ein VNET mit einem Adressbereich von 10.245.16.0/20 (segmentiert in Subnetze) für eine geplante Migration.
+Die Tabelle zeigt ein Beispiel für ein VNET mit einem Adressbereich von `10.245.16.0/20` (segmentiert in Subnetze) für eine geplante Migration.
 
-| **Subnetz** | **CIDR** | **Adressen** | **Verwenden Sie** |
+| Subnet | CIDR | Adressen | Verwendung |
 | --- | --- | --- | --- |
-| DEV-FE-EUS2 | 10.245.16.0/22 | 1019 | Front-End/Webschicht-VMs |
-| DEV-APP-EUS2 | 10.245.20.0/22 | 1019 | App-Schicht-VMs |
-| DEV-DB-EUS2 | 10.245.24.0/23 | 507 | Datenbank-VMs |
+| `DEV-FE-EUS2` | `10.245.16.0/22` | 1019 | Front-End/Webschicht-VMs |
+| `DEV-APP-EUS2` | `10.245.20.0/22` | 1019 | App-Schicht-VMs |
+| `DEV-DB-EUS2` | `10.245.24.0/23` | 507 | Datenbank-VMs |
 
 **Weitere Informationen**:
 
@@ -105,7 +105,7 @@ Die Tabelle zeigt ein Beispiel für ein VNET mit einem Adressbereich von 10.245.
 
 ## <a name="best-practice-set-up-a-dns-server"></a>Bewährte Methode: Einrichten eines DNS-Servers
 
-Azure fügt standardmäßig einen DNS-Server hinzu, wenn Sie ein VNET bereitstellen. So können Sie schnell VNETs erstellen und Ressourcen bereitstellen. Dieser DNS-Server bietet jedoch nur Dienste für die Ressourcen im jeweiligen VNET an. Wenn Sie mehrere VNETs miteinander verbinden oder von den VNETs aus eine Verbindung mit einem lokalen Server herstellen möchten, benötigen Sie zusätzliche Funktionen zur Namensauflösung. Beispielsweise muss Active Directory möglicherweise DNS-Namen zwischen virtuellen Netzwerken auflösen. Zu diesem Zweck stellen Sie Ihren eigenen benutzerdefinierten DNS-Server in Azure bereit.
+Azure fügt standardmäßig einen DNS-Server hinzu, wenn Sie ein VNET bereitstellen. So können Sie schnell VNETs erstellen und Ressourcen bereitstellen. Dieser DNS-Server bietet aber nur Dienste für die Ressourcen im jeweiligen VNET an. Wenn Sie mehrere VNETs miteinander verbinden oder von den VNETs aus eine Verbindung mit einem lokalen Server herstellen möchten, benötigen Sie zusätzliche Funktionen zur Namensauflösung. Beispielsweise muss Active Directory möglicherweise DNS-Namen zwischen virtuellen Netzwerken auflösen. Zu diesem Zweck stellen Sie Ihren eigenen benutzerdefinierten DNS-Server in Azure bereit.
 
 - DNS-Server in einem virtuellen Netzwerk können DNS-Abfragen an die rekursiven Resolver in Azure weiterleiten. Dadurch können Sie Hostnamen innerhalb dieses virtuellen Netzwerks auflösen. Beispielsweise kann ein in Azure ausgeführter Domänencontroller auf DNS-Abfragen für die eigenen Domänen antworten und alle anderen Abfragen an Azure weiterleiten.
 - Durch die DNS-Weiterleitung sind sowohl Ihre lokalen Ressourcen (über den Domänencontroller) als auch die von Azure bereitgestellten Hostnamen (über die Weiterleitung) für die virtuellen Computer sichtbar. Der Zugriff auf die rekursiven Resolver in Azure wird über die virtuelle IP-Adresse `168.63.129.16` bereitgestellt.
@@ -125,20 +125,20 @@ Azure fügt standardmäßig einen DNS-Server hinzu, wenn Sie ein VNET bereitstel
 
 ## <a name="best-practice-set-up-availability-zones"></a>Bewährte Methode: Einrichten von Verfügbarkeitszonen
 
-Verfügbarkeitszonen sorgen für höhere Verfügbarkeit, um Ihre Apps und Daten vor Rechenzentrumsausfällen zu schützen.
+Verfügbarkeitszonen sorgen für höhere Verfügbarkeit, um Ihre Anwendungen und Daten vor Rechenzentrumsausfällen zu schützen.
 
 - Verfügbarkeitszonen sind eindeutige physische Standorte in einer Azure-Region.
 - Jede Zone besteht aus mindestens einem Rechenzentrum, dessen Stromversorgung, Kühlung und Netzwerkbetrieb unabhängig funktionieren.
 - Zur Gewährleistung der Resilienz sind in allen aktivierten Regionen mindestens drei separate Zonen vorhanden.
 - Die physische Trennung von Verfügbarkeitszonen innerhalb einer Region schützt Anwendungen und Daten vor Ausfällen von Rechenzentren.
-- Zonenredundante Dienste replizieren Ihre Anwendungen und Daten zum Schutz vor Single Points of Failure in mehrere Verfügbarkeitszonen. Mit Verfügbarkeitszonen bietet Azure eine Betriebszeit-SLA von 99,99 Prozent für VMs.
+- Zonenredundante Dienste replizieren Ihre Anwendungen und Daten in mehreren Verfügbarkeitszonen, um sie vor Single Points of Failure zu schützen. Mit Verfügbarkeitszonen bietet Azure eine Betriebszeit-SLA von 99,99 Prozent für VMs.
 
     ![Verfügbarkeitszone](./media/migrate-best-practices-networking/availability-zone.png) _Verfügbarkeitszone_
 
 - Planen und integrieren Sie Hochverfügbarkeit in Ihre Migrationsarchitektur, indem Sie Ihre Compute-, Speicher-, Netzwerk- und Datenressourcen in eine Zone aufnehmen und in anderen Zonen replizieren. Azure-Dienste, die Verfügbarkeitszonen unterstützen, können in zwei Kategorien unterteilt werden:
   - **Zonendienste:** Sie ordnen eine Ressource einer bestimmten Zone – z B. VMs, verwalteten Datenträgern oder IP-Adressen – zu.
   - **Zonenredundante Dienste:** Die Ressource wird zonenübergreifend automatisch repliziert, z. B. zonenredundanter Speicher oder Azure SQL-Datenbank.
-- Sie können eine Standard-Azure-Last bereitstellen, die mit dem Internet zugewandten Workloads oder App-Schichten ausgeglichen wird, um zonengebundene Fehlertoleranz bereitzustellen.
+- Sie können eine Standard-Azure-Last bereitstellen, die mit dem Internet zugewandten Workloads oder Logikschichten ausgeglichen wird, um zonengebundene Fehlertoleranz bereitzustellen.
 
     ![Lastenausgleich](./media/migrate-best-practices-networking/load-balancer.png) _Lastenausgleich_
 
@@ -150,7 +150,7 @@ Verfügbarkeitszonen sorgen für höhere Verfügbarkeit, um Ihre Apps und Daten 
 
 Für eine erfolgreiche Migration ist es wichtig, eine Verbindung zwischen lokalen Unternehmensnetzwerke mit Azure herzustellen. Dadurch entsteht eine Always On-Verbindung, die als Hybridcloudnetzwerk bezeichnet wird. In diesem Netzwerk werden den Unternehmensbenutzern Dienste aus der Azure-Cloud bereitgestellt. Es gibt zwei Optionen zum Erstellen dieser Art von Netzwerk:
 
-- **Site-to-Site-VPN**: Sie erstellen eine Site-to-Site-Verbindung zwischen Ihrem kompatiblen lokalen VPN-Gerät und einem Azure-VPN-Gateway, das in einem VNET bereitgestellt wird. Jede autorisierte lokale Ressource kann auf VNETs zugreifen. Die Site-to-Site-Kommunikation wird durch einen verschlüsselten Tunnel über das Internet gesendet.
+- **Site-to-Site-VPN:** Sie erstellen eine Site-to-Site-Verbindung zwischen Ihrem kompatiblen lokalen VPN-Gerät und einem Azure-VPN-Gateway, das in einem VNET bereitgestellt wird. Jede autorisierte lokale Ressource kann auf VNETs zugreifen. Die Site-to-Site-Kommunikation wird durch einen verschlüsselten Tunnel über das Internet gesendet.
 - **Azure ExpressRoute:** Sie stellen eine Azure ExpressRoute-Verbindung zwischen Ihrem lokalen Netzwerk und Azure über einen ExpressRoute-Partner her. Diese Verbindung ist privat, und der Datenverkehr wird nicht über das Internet geleitet.
 
 **Weitere Informationen**:
@@ -170,7 +170,7 @@ Zum Implementieren eines Site-to-Site-VPN richten Sie ein VPN-Gateway in Azure e
   - Der Wechsel verursacht eine kurze Unterbrechung.
   - Bei der geplanten Wartung sollte die Konnektivität innerhalb von 10 bis 15 Sekunden wiederhergestellt werden.
   - Bei ungeplanten Problemen dauert die Verbindungswiederherstellung länger – schlimmstenfalls zwischen einer und anderthalb Minuten.
-  - P2S-VPN-Clientverbindungen (Point-to-Site) mit dem Gateway werden getrennt, und die Benutzer müssen die Verbindungen von den Clientcomputern aus neu herstellen.
+  - Point-to-Site-VPN-Clientverbindungen mit dem Gateway werden getrennt, und die Benutzer müssen die Verbindungen von den Clientcomputern aus neu herstellen.
 
 Beim Einrichten eines Site-to-Site-VPN gehen Sie folgendermaßen vor:
 
@@ -197,11 +197,11 @@ _Site-to-Site-VPN_
 
 ### <a name="best-practice-configure-a-gateway-for-vpn-gateways"></a>Bewährte Methode: Konfigurieren eines Gateways für VPN-Gateways
 
-Wenn Sie ein VPN-Gateway in Azure erstellen, müssen Sie ein spezielles Subnetz namens „GatewaySubnet“ verwenden. Beachten Sie bei der Erstellung dieses Subnetzes folgende bewährte Methoden:
+Wenn Sie ein VPN-Gateway in Azure erstellen, müssen Sie ein spezielles Subnetz namens `GatewaySubnet` verwenden. Beachten Sie bei der Erstellung dieses Subnetzes folgende bewährte Methoden:
 
-- Das Gatewaysubnetz kann eine maximale Präfixlänge von 29 aufweisen (z.B. 10.119.255.248/29). Aktuell wird empfohlen, eine Präfixlänge von 27 zu verwenden (z.B. 10.119.255.224/27).
+- `GatewaySubnet` kann eine maximale Präfixlänge von 29 aufweisen (z. B. `10.119.255.248/29`). Aktuell wird empfohlen, eine Präfixlänge von 27 zu verwenden (z. B. `10.119.255.224/27`).
 - Wenn Sie den Adressraum des Gatewaysubnetzes definieren, verwenden Sie den allerletzten Teil des VNET-Adressraums.
-- Wenn Sie das Azure GatewaySubnet verwenden, stellen Sie dem Gatewaysubnetz keine VMs oder andere Geräte wie z.B. Application Gateway bereit.
+- Wenn Sie das Subnetz Ihres Azure-Gateways verwenden, stellen Sie dem Gatewaysubnetz keine VMs oder andere Geräte wie z. B. Application Gateway bereit.
 - Weisen Sie diesem Subnetz keine Netzwerksicherheitsgruppe (NSG) zu. Dadurch würde die Funktion des Gateways beendet.
 
 **Weitere Informationen**:
@@ -225,7 +225,7 @@ Mit dem Azure ExpressRoute-Dienst erweitern Sie Ihre lokale Infrastruktur in die
 - ExpressRoute-Verbindungen können über ein IP-VPN-Netzwerk (Any-to-Any), ein Point-to-Point-Ethernet-Netzwerk oder über einen Konnektivitätsanbieter hergestellt werden. Sie verlaufen nicht über das öffentliche Internet.
 - ExpressRoute-Verbindungen bieten bei gleichbleibenden Wartezeiten mehr Sicherheit und Zuverlässigkeit sowie höhere Geschwindigkeiten (bis zu 10 GBit/s).
 - ExpressRoute ist nützlich für virtuelle Rechenzentren, weil Kunden von den Konformitätsregeln privater Verbindungen profitieren.
-- Mit ExpressRoute Direct können Sie bei höherem Bandbreitenbedarf eine direkte 100-GBit/s-Verbindung mit Microsoft-Routern herstellen.
+- Mit ExpressRoute Direct können Sie bei höherem Bandbreitenbedarf eine direkte 100 GBit/s-Verbindung mit Microsoft-Routern herstellen.
 - ExpressRoute verwendet BGP zum Austauschen von Routen zwischen lokalen Netzwerken, Azure-Instanzen und öffentlichen Microsoft-Adressen.
 
 Für die Bereitstellung von ExpressRoute-Verbindungen ist in der Regel ein ExpressRoute-Dienstanbieter erforderlich. Für einen schnellen Einstieg werden anfangs üblicherweise Site-to-Site-VPN-Verbindungen für die Konnektivität zwischen dem virtuellen Rechenzentrum und lokalen Ressourcen verwendet. Anschließend erfolgt die Migration zu einer ExpressRoute-Verbindung, wenn eine physische Verbindung mit Ihrem Dienstanbieter eingerichtet wurde.
@@ -237,39 +237,39 @@ Für die Bereitstellung von ExpressRoute-Verbindungen ist in der Regel ein Expre
 
 ### <a name="best-practice-optimize-expressroute-routing-with-bgp-communities"></a>Bewährte Methode: Optimieren von ExpressRoute-Routing mit BGP-Communitys
 
-Wenn Sie mehrere ExpressRoute-Verbindungen nutzen, verfügen Sie über mehr als einen Weg zur Herstellung einer Verbindung mit Microsoft. Dies kann ein suboptimales Routing zur Folge haben, und Ihr Datenverkehr verwendet möglicherweise einen längeren Pfad zu Microsoft bzw. von Microsoft zu Ihrem Netzwerk. Je länger der Netzwerkpfad, desto höher die Latenz. Die Latenz wirkt sich direkt auf die App-Leistung und die Benutzerfreundlichkeit aus.
+Wenn Sie mehrere ExpressRoute-Verbindungen nutzen, verfügen Sie über mehr als einen Weg zur Herstellung einer Verbindung mit Microsoft. Dies kann ein suboptimales Routing zur Folge haben, und Ihr Datenverkehr verwendet möglicherweise einen längeren Pfad zu Microsoft bzw. von Microsoft zu Ihrem Netzwerk. Je länger der Netzwerkpfad, desto höher die Latenz. Die Latenz wirkt sich direkt auf die Anwendungsleistung und die Benutzerfreundlichkeit aus.
 
 **Beispiel:**
 
 Schauen wir uns ein Beispiel an:
 
-- Sie verfügen über zwei Niederlassungen in den USA: eine in Los Angeles und eine in New York.
+- Sie verfügen über zwei Niederlassungen in den USA: eine in Los Angeles und eine in New York City.
 - Die Niederlassungen sind über ein WAN verbunden, wobei es sich entweder um Ihr eigenes Backbonenetzwerk oder die IP-VPN-Verbindung Ihres Dienstanbieters handeln kann.
-- Sie verfügen über zwei ExpressRoute-Verbindungen – eine in der Region „USA, Westen“ und eine in der Region „USA, Osten“ –, die ebenfalls per WAN verbunden sind. Es sind also zwei Wege zum Herstellen der Verbindung mit dem Microsoft-Netzwerk vorhanden.
+- Sie verfügen über zwei ExpressRoute-Verbindungen – eine in der Region `West US` und eine in der Region `East US` –, die ebenfalls per WAN verbunden sind. Es sind also zwei Wege zum Herstellen der Verbindung mit dem Microsoft-Netzwerk vorhanden.
 
 **Problem:**
 
-Nehmen Sie weiter an, dass Sie über jeweils eine Azure-Bereitstellung (z.B. Azure App Service) in „USA, Westen“ und „USA, Osten“ verfügen.
+Nehmen Sie weiter an, dass Sie über jeweils eine Azure-Bereitstellung (z. B. Azure App Service) in `West US` und `East US` verfügen.
 
 - Die Benutzer in beiden Niederlassungen sollen auf die nächstgelegenen Azure-Dienste zugreifen, um eine optimale Leistung zu erzielen.
-- Daher sollen Benutzer in Los Angeles eine Verbindung mit der Azure-Region „USA, Westen“ und Benutzer in New York eine Verbindung mit der Azure-Region „USA, Osten“ herstellen.
+- Daher sollen Benutzer in Los Angeles eine Verbindung mit der Azure-Region `West US` und Benutzer in New York eine Verbindung mit der Azure-Region `East US` herstellen.
 - Dies funktioniert für Benutzer an der Ostküste, aber nicht für Benutzer an der Westküste. Das Problem ist Folgendes:
-  - Für jede ExpressRoute-Leitung kündigen wir sowohl das Präfix in der Azure-Region „USA, Osten“ (23.100.0.0/16) als auch das Präfix in der Azure-Region „USA, Westen“ (13.100.0.0/16) an.
+  - Für jede ExpressRoute-Leitung kündigen wir sowohl das Präfix in der Azure-Region `East US` (`23.100.0.0/16`) als auch das Präfix in der Azure-Region `West US` (`13.100.0.0/16`) an.
   - Wenn nicht bekannt ist, welches Präfix aus welcher Region stammt, werden die Präfixe nicht unterschiedlich behandelt.
-  - Ihr WAN geht möglicherweise davon aus, dass beide Präfixe näher bei „USA, Osten“ als bei „USA, Westen“ liegen, und leitet daher Benutzer aus beiden Niederlassungen an die ExpressRoute-Leitung in „USA, Osten“ weiter, sodass für Benutzer in der Niederlassung in Los Angeles eine suboptimale Leistung erzielt wird.
+  - Ihr WAN geht möglicherweise davon aus, dass beide Präfixe näher bei `East US` als bei `West US` liegen, und leitet daher Benutzer aus beiden Niederlassungen an die ExpressRoute-Leitung in `East US` weiter, sodass für Benutzer in der Niederlassung in Los Angeles eine suboptimale Leistung erzielt wird.
 
 ![VPN](./media/migrate-best-practices-networking/bgp1.png)
 _Nicht optimierte Verbindung über BGP-Communitys_
 
 **Lösung:**
 
-Zum Optimieren des Routings für die Benutzer beider Niederlassungen müssen Sie wissen, welches Präfix für die Azure-Region „USA, Westen“ und welches Präfix für die Region „USA, Osten“ gilt. Sie können diese Informationen mithilfe von BGP-Communitywerten codieren.
+Zum Optimieren des Routings für die Benutzer beider Niederlassungen müssen Sie wissen, welches Präfix für die Azure-Region `West US` und welches Präfix für die Region `East US` gilt. Sie können diese Informationen mithilfe von BGP-Communitywerten codieren.
 
-- Sie weisen jeder Azure-Region einen eindeutigen BGP-Communitywert zu. Beispiel: „12076:51004“ für „USA, Osten“ und „12076:51006“ für „USA, Westen“.
+- Sie weisen jeder Azure-Region einen eindeutigen BGP-Communitywert zu. Beispiel: 12076:51004 für `East US` und 12076:51006 für `West US`.
 - Damit ist klar, welches Präfix zu welcher Azure-Region gehört, sodass Sie eine bevorzugte ExpressRoute-Leitung konfigurieren können.
 - Da Sie BGP zum Austauschen von Routinginformationen verwenden, können Sie über die lokale Einstellung von BGP das Routing beeinflussen.
-- In unserem Beispiel weisen Sie 13.100.0.0/16 in „USA, Westen“ einen höheren Wert für die lokale Einstellung als für „USA, Osten“ zu (bzw. einen höheren Wert für die lokale Einstellung für 23.100.0.0/16 in „USA, Osten“ als in „USA, Westen“).
-- Diese Konfiguration stellt bei Verfügbarkeit beider Pfade zu Microsoft sicher, dass Benutzer in Los Angeles über die westliche Leitung eine Verbindung mit der Azure-Region „USA, Westen“ herstellen und Benutzer in New York über die östliche Leitung eine Verbindung mit der Azure-Region „USA, Osten“. Das Routing ist somit auf beiden Seiten optimiert.
+- In unserem Beispiel weisen Sie `13.100.0.0/16` in `West US` einen höheren Wert für die lokale Einstellung als für `East US` zu (bzw. einen höheren Wert für die lokale Einstellung für `23.100.0.0/16` in `East US` als in `West US`).
+- Diese Konfiguration stellt bei Verfügbarkeit beider Pfade zu Microsoft sicher, dass Benutzer in Los Angeles über die westliche Leitung eine Verbindung mit der Region `West US` herstellen und Benutzer in New York über die östliche Leitung eine Verbindung mit der Region `East US`. Das Routing ist somit auf beiden Seiten optimiert.
 
 ![VPN](./media/migrate-best-practices-networking/bgp2.png)
 _Optimierte Verbindung über BGP-Communitys_
@@ -286,6 +286,8 @@ Die Verantwortung für das Schützen von VNETs liegt zu gleichen Teilen bei Micr
 
 - Lesen Sie eine [Übersicht über bewährte Methoden für die Netzwerksicherheit](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices).
 - Erfahren Sie mehr über das [Entwerfen sicherer Netzwerke](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm#security).
+
+<!-- docsTest:ignore "IDS/IPS" -->
 
 ## <a name="best-practice-implement-an-azure-perimeter-network"></a>Bewährte Methode: Implementieren eines Azure-Umkreisnetzwerks
 
@@ -336,10 +338,10 @@ Ein Diensttag steht für eine Gruppe von IP-Adresspräfixen. Durch Verwendung ei
 - Microsoft verwaltet die Adresspräfixe, die einem Diensttag zugeordnet sind, und aktualisiert das Diensttag automatisch, wenn sich die Adressen ändern.
 - Sie können kein eigenes Diensttag erstellen und auch nicht angeben, welche IP-Adressen in einem Tag enthalten sind.
 
-Diensttags ersparen Ihnen die manuelle Arbeit beim Zuweisen einer Regel zu Gruppen von Azure-Diensten. Wenn Sie beispielsweise einem VNET-Subnetz mit Webservern den Zugriff auf eine Azure SQL-Datenbank ermöglichen möchten, müssen Sie eine Ausgangsregel für Port 1433 erstellen und das Diensttag **Sql** verwenden.
+Diensttags ersparen Ihnen die manuelle Arbeit beim Zuweisen einer Regel zu Gruppen von Azure-Diensten. Wenn Sie beispielsweise einem Subnetz mit Webservern den Zugriff auf Azure SQL-Datenbank ermöglichen möchten, können Sie eine Ausgangsregel für Port 1433 erstellen und das Diensttag **Sql** verwenden.
 
 - Dieses **Sql**-Tag gibt die Adresspräfixe der Azure SQL-Datenbank- und Azure SQL Data Warehouse-Dienste an.
-- Wenn Sie **Sql** als Wert angeben, wird der Datenverkehr für Sql zugelassen oder verweigert.
+- Wenn Sie **Sql** als Wert angeben, wird der Datenverkehr für SQL zugelassen oder verweigert.
 - Falls Sie den Zugriff auf **Sql** nur für eine bestimmte Region zulassen möchten, können Sie die betreffende Region angeben. Wenn Sie den Zugriff auf Azure SQL-Datenbank beispielsweise nur für die Region „USA, Osten“ zulassen möchten, können Sie **Sql.EastUS** für das Diensttag angeben.
 - Das Tag steht für den Dienst, aber nicht für bestimmte Instanzen des Diensts. Beispielsweise steht das Tag für den Azure SQL-Datenbank-Dienst, aber nicht für eine bestimmte SQL-Datenbank oder einen bestimmten SQL-Server.
 - Alle Adresspräfixe, für die dieses Tag steht, werden auch durch das **Internet**-Tag repräsentiert.
@@ -351,7 +353,7 @@ Diensttags ersparen Ihnen die manuelle Arbeit beim Zuweisen einer Regel zu Grupp
 
 ## <a name="best-practice-use-application-security-groups"></a>Bewährte Methode: Verwenden von Anwendungssicherheitsgruppen
 
-Mit Anwendungssicherheitsgruppen können Sie die Netzwerksicherheit als natürliche Erweiterung einer App-Struktur konfigurieren.
+Mit Anwendungssicherheitsgruppen können Sie die Netzwerksicherheit als natürliche Erweiterung einer Anwendungsstruktur konfigurieren.
 
 - Anhand von Anwendungssicherheitsgruppen können Sie virtuelle Computer gruppieren und Netzwerksicherheitsrichtlinien definieren.
 - Anwendungssicherheitsgruppen ermöglichen Ihnen die bedarfsabhängige Wiederverwendung Ihrer Sicherheitsrichtlinie, ohne dass Sie explizite IP-Adressen manuell warten müssen.
@@ -362,25 +364,21 @@ Mit Anwendungssicherheitsgruppen können Sie die Netzwerksicherheit als natürli
 ![Anwendungssicherheitsgruppe](./media/migrate-best-practices-networking/asg.png)
 _Beispiel für eine Anwendungssicherheitsgruppe_
 
-| **Netzwerkschnittstelle** | **Anwendungssicherheitsgruppe** |
+| Netzwerkschnittstelle | Anwendungssicherheitsgruppe |
 | --- | --- |
-| NIC1 | AsgWeb |
-| NIC2 | AsgWeb |
-| NIC3 | AsgLogic |
-| NIC4 | AsgDb |
+| `NIC1` | `AsgWeb` |
+| `NIC2` | `AsgWeb` |
+| `NIC3` | `AsgLogic` |
+| `NIC4` | `AsgDb` |
 
 - In unserem Beispiel gehört jede Netzwerkschnittstelle nur einer Anwendungssicherheitsgruppe an, aber tatsächlich kann eine Schnittstelle mehreren Gruppen angehören (in Übereinstimmung mit der Azure-Grenzwerten).
-- Keiner der Netzwerkschnittstellen ist eine NSG zugeordnet. NSG1 ist beiden Subnetzen zugeordnet und enthält die folgenden Regeln.
+- Keiner der Netzwerkschnittstellen ist eine NSG zugeordnet. `NSG1` ist beiden Subnetzen zugeordnet und enthält die folgenden Regeln.
 
-<!-- markdownlint-disable MD033 -->
-
-| **Regelname** | **Zweck** | **Details** |
+| Regelname | Zweck | Details |
 | --- | --- | --- |
-| `Allow-HTTP-Inbound-Internet` | Hiermit wird Datenverkehr aus dem Internet an die Webserver zugelassen. Eingehender Datenverkehr aus dem Internet wird durch die Standardsicherheitsregel `DenyAllInbound` verweigert, daher ist keine zusätzliche Regel für die Anwendungssicherheitsgruppen `AsgLogic` oder `AsgDb` erforderlich. | Priorität: `100`<br><br> Quelle: `internet`<br/><br/> Quellport: `*`<br/><br/> Ziel: `AsgWeb`<br/><br/> Zielport: `80`<br/><br/> Protokoll: `TCP`<br/><br/> Zugriff: `Allow` |
-| `Deny-Database-All` | Die Standardsicherheitsregel `AllowVNetInBound` erlaubt die gesamte Kommunikation zwischen Ressourcen im gleichen VNET, daher ist diese Regel erforderlich, um den Datenverkehr von allen Ressourcen zu verweigern. | Priorität: `120`<br/><br/> Quelle: `*`<br/><br/> Quellport: `*`<br/><br/> Ziel: `AsgDb`<br/><br/> Zielport: `1433`<br/><br/> Protokoll: `All`<br/><br/> Zugriff: `Deny` |
-| `Allow-Database-BusinessLogic` | Diese Regel lässt Datenverkehr von der Anwendungssicherheitsgruppe `AsgLogic` an die Anwendungssicherheitsgruppe `AsgDb` zu. Da die Priorität für diese Regel höher ist als die Priorität der Regel `Deny-Database-All`, wird diese Regel zuerst verarbeitet. Dies führt dazu, dass Datenverkehr von der Anwendungssicherheitsgruppe `AsgLogic` zugelassen und jeglicher andere Datenverkehr blockiert wird. | Priorität: `110`<br/><br/> Quelle: `AsgLogic`<br/><br/> Quellport: `*`<br/><br/> Ziel: `AsgDb`<br/><br/> Zielport: `1433`<br/><br/> Protokoll: `TCP`<br/><br/> Zugriff: `Allow` |
-
-<!--markdownlint-enable MD033 -->
+| `Allow-HTTP-Inbound-Internet` | Hiermit wird Datenverkehr aus dem Internet an die Webserver zugelassen. Eingehender Datenverkehr aus dem Internet wird durch die Standardsicherheitsregel `DenyAllInbound` verweigert, daher ist keine zusätzliche Regel für die Anwendungssicherheitsgruppen `AsgLogic` oder `AsgDb` erforderlich. | Priorität: `100`<br><br> Quelle: `internet` <br><br> Quellport: `*` <br><br> Ziel: `AsgWeb` <br><br> Zielport: `80` <br><br> Protokoll: `TCP` <br><br> Zugriff: `Allow` |
+| `Deny-Database-All` | Die Standardsicherheitsregel `AllowVNetInBound` erlaubt die gesamte Kommunikation zwischen Ressourcen im gleichen VNET, daher ist diese Regel erforderlich, um den Datenverkehr von allen Ressourcen zu verweigern. | Priorität: `120` <br><br> Quelle: `*` <br><br> Quellport: `*` <br><br> Ziel: `AsgDb` <br><br> Zielport: `1433` <br><br> Protokoll: `All` <br><br> Zugriff: `Deny` |
+| `Allow-Database-BusinessLogic` | Diese Regel lässt Datenverkehr von der Anwendungssicherheitsgruppe `AsgLogic` an die Anwendungssicherheitsgruppe `AsgDb` zu. Da die Priorität für diese Regel höher ist als die Priorität der Regel `Deny-Database-All`, wird diese Regel zuerst verarbeitet. Dies führt dazu, dass Datenverkehr von der Anwendungssicherheitsgruppe `AsgLogic` zugelassen und jeglicher andere Datenverkehr blockiert wird. | Priorität: `110` <br><br> Quelle: `AsgLogic` <br><br> Quellport: `*` <br><br> Ziel: `AsgDb` <br><br> Zielport: `1433` <br><br> Protokoll: `TCP` <br><br> Zugriff: `Allow` |
 
 - Regeln, in denen eine Anwendungssicherheitsgruppe als Quelle oder Ziel angegeben ist, werden nur auf Netzwerkschnittstellen angewendet, bei denen es sich um Mitglieder der Anwendungssicherheitsgruppe handelt. Wenn die Netzwerkschnittstelle nicht Mitglied einer Anwendungssicherheitsgruppe ist, wird die Regel nicht auf die Netzwerkschnittstelle angewendet, auch wenn die Netzwerksicherheitsgruppe dem Subnetz zugeordnet ist.
 
@@ -392,7 +390,7 @@ _Beispiel für eine Anwendungssicherheitsgruppe_
 
 Durch VNET-Dienstendpunkte wird Ihr privater VNET-Adressraum und die Identität Ihres VNET über eine direkte Verbindung auf Azure-Dienste erweitert.
 
-- Mit Endpunkten können Sie Ihre kritischen Azure-Dienstressourcen auf Ihre virtuellen Netzwerke beschränken und somit schützen. Der Datenverkehr aus Ihrem VNET an den Azure-Dienst verbleibt immer im Backbone-Netzwerk von Microsoft Azure.
+- Mit Endpunkten können Sie Ihre kritischen Azure-Dienstressourcen auf Ihre virtuellen Netzwerke beschränken und somit schützen. Der Datenverkehr aus Ihrem VNET an den Azure-Dienst verbleibt immer im Backbone-Netzwerk von Azure.
 - Der private VNET-Adressraum kann sich überschneiden und daher nicht zur eindeutigen Identifizierung von Datenverkehr aus einem VNET verwendet werden.
 - Nachdem Dienstendpunkte in Ihrem VNET aktiviert wurden, können Sie Ressourcen von Azure-Diensten schützen, indem Sie den Dienstressourcen eine VNET-Regel hinzufügen. Auf diese Weise erhöhen Sie die Sicherheit, da der Ressourcenzugriff über das öffentliche Internet vollständig verhindert und nur Datenverkehr aus Ihrem VNET zugelassen wird.
 
@@ -446,7 +444,7 @@ _Azure Firewall_
 
 ## <a name="best-practice-deploy-a-web-application-firewall-waf"></a>Bewährte Methode: Bereitstellen einer Web Application Firewall (WAF)
 
-Webanwendungen sind zunehmend Ziele böswilliger Angriffe, die allgemein bekannte Sicherheitslücken ausnutzen. Zu den Exploits gehören üblicherweise Angriffe durch Einschleusung von SQL-Befehlen oder Angriffe durch websiteübergreifende Skripts. Das Verhindern solcher Angriffe im Anwendungscode ist oft schwierig und erfordert strenge Wartung, Patching und Überwachung auf verschiedenen Ebenen der Anwendungstopologie. Eine zentrale Web Application Firewall vereinfacht die Sicherheitsverwaltung erheblich und ermöglicht App-Administratoren einen Schutz vor Bedrohungen und Angriffen. Mit einer Web Application Firewall können Sie schneller auf Sicherheitsrisiken reagieren, weil bekannte Schwachstellen an einem zentralen Ort gepatcht werden, statt einzelne Webanwendungen separat zu sichern. Vorhandene Anwendungsgateways lassen sich problemlos in ein Anwendungsgateway mit Web Application Firewall konvertieren.
+Webanwendungen sind zunehmend Ziele böswilliger Angriffe, die allgemein bekannte Sicherheitslücken ausnutzen. Zu den Exploits gehören üblicherweise Angriffe durch Einschleusung von SQL-Befehlen oder Angriffe durch websiteübergreifende Skripts. Das Verhindern solcher Angriffe im Anwendungscode ist oft schwierig und erfordert strenge Wartung, Patching und Überwachung auf verschiedenen Ebenen der Anwendungstopologie. Eine zentrale Web Application Firewall vereinfacht die Sicherheitsverwaltung erheblich und ermöglicht Anwendungsadministratoren einen Schutz vor Bedrohungen und Angriffen. Mit einer Web Application Firewall können Sie schneller auf Sicherheitsrisiken reagieren, weil bekannte Schwachstellen an einem zentralen Ort gepatcht werden, statt einzelne Webanwendungen separat zu sichern. Vorhandene Anwendungsgateways lassen sich problemlos in ein Anwendungsgateway mit Web Application Firewall konvertieren.
 
 Die Web Application Firewall (WAF) ist ein Feature von Azure Application Gateway.
 
@@ -454,8 +452,8 @@ Die Web Application Firewall (WAF) ist ein Feature von Azure Application Gateway
 - Dieser Schutz wird ohne Änderung des Back-End-Codes bereitgestellt.
 - Hinter einem Application Gateway können Sie mehrere Web-Apps gleichzeitig schützen.
 - WAF ist in Azure Security Center integriert.
-- Sie können WAF-Regeln und Regelgruppen an Ihre App-Anforderungen anpassen.
-- Als bewährte Methode sollten Sie eine WAF vor jeder aus dem Web zugänglichen App verwenden, einschließlich Apps auf virtuellen Azure-Computern oder Azure App Service.
+- Sie können WAF-Regeln und Regelgruppen an Ihre Anwendungsanforderungen anpassen.
+- Als bewährte Methode sollten Sie eine WAF vor jeder aus dem Web zugänglichen Anwendung verwenden, einschließlich Anwendungen auf virtuellen Azure-Computern oder Azure App Service.
 
 **Weitere Informationen**:
 
@@ -493,15 +491,11 @@ Für komplexere Netzwerktopologien können Sie Sicherheitsprodukte von Microsoft
 
 Im Hub wird das Umkreisnetzwerk (mit Zugriff auf das Internet) normalerweise über eine Azure Firewall, eine Firewallfarm oder eine Web Application Firewall (WAF) verwaltet. Betrachten Sie die folgenden Vergleiche.
 
-<!-- markdownlint-disable MD033 -->
-
-| **Firewalltyp** | **Details** |
+| Firewalltyp | Details |
 | --- | --- |
 | WAFs | Web-Anwendungen sind üblich und weisen häufig Sicherheitsrisiken und Exploits auf. <br><br> WAFs sind spezifischer als eine generische Firewall und auf das Erkennen von Angriffen auf Webanwendungen (HTTP/HTTPS) ausgelegt. <br><br> Verglichen mit herkömmlichen Firewalls weisen WAFs einen Satz von bestimmten Features auf, um den internen Webserver vor Bedrohungen zu schützen. |
 | Azure Firewall | Wie eine Farm von Firewalls mit virtuellen Netzwerkappliances verwendet Azure Firewall einen allgemeinen Verwaltungsmechanismus und einen Satz von Sicherheitsregeln zum Schutz der in den Spoke-Netzwerken gehosteten Workloads und zum Steuern des Zugriffs auf lokale Netzwerke. <br><br> In Azure Firewall ist die Skalierbarkeit integriert. |
 | Firewalls mit virtuellen Netzwerkappliances | Wie Azure Firewall verwenden Farms von Firewalls mit virtuellen Netzwerkappliances einen allgemeinen Verwaltungsmechanismus und einen Satz von Sicherheitsregeln zum Schutz der in den Spokes gehosteten Workloads und zum Steuern des Zugriffs auf lokale Netzwerke. <br><br> Firewalls mit virtuellen Netzwerkappliances können manuell hinter einem Lastenausgleich skaliert werden. <br><br> Eine Firewallfarm mit virtuellen Netzwerkappliances verfügt über weniger spezialisierte Software als ein WAF, muss aber einen umfassenderen Anwendungsbereich filtern und alle Arten von ein- oder ausgehendem Datenverkehr überprüfen. <br><br> Wenn Sie virtuelle Netzwerkappliances verwenden möchten, finden Sie diese im Azure Marketplace. |
-
-<!--markdownlint-enable MD033 -->
 
 Es wird empfohlen, eine Gruppe von Azure-Firewalls (oder virtuellen Netzwerkappliances) für Datenverkehr aus dem Internet zu verwenden und eine andere für Datenverkehr mit lokalem Ursprung.
 
