@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 1129098d5a99defd309c4a252991e31be623808f
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: ff5b2dba1cdb95cdcc007ba5cea52b86a902584d
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075854"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233323"
 ---
 # <a name="get-started-build-a-cloud-governance-team"></a>Erste Schritte: Aufstellen eines Cloudgovernanceteams
 
@@ -27,7 +27,7 @@ Die offizielle Empfehlung für das Cloud Adoption Framework für Azure lautet, d
 **Ziele:**
 
 - Ermitteln, ob ein Cloudgovernanceteam benötigt wird.
-- Dokumentieren der Entscheidung und der verantwortlichen Personen in der [RACI-Vorlage (Responsible, Accountable, Consulted und Informed)](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) im Arbeitsblatt `Org Alignment`.
+- Zuordnen übergreifender Zuständigkeiten für Teams, indem eine sogenannte RACI-Matrix entwickelt und damit bestimmt wird, welche Teams _verantwortlich sind (responsible), rechenschaftspflichtig sind (accountable), konsultiert werden (consulted) und zu informieren sind (informed)_ . Dokumentieren der Entscheidung und der verantwortlichen Personen mithilfe der [RACI-Vorlage](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) im Arbeitsblatt `Org Alignment`.
 
 **Hinweis zur Erreichung der Ziele:**
 

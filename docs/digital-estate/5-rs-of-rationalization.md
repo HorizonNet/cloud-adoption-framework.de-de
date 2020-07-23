@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 5c4098e2d5655d3b0fbb7fcb1c5a0470547421f3
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 775dea2eb2bb91a1434714b151710fbb3c96ea8d
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83753560"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86190480"
 ---
 # <a name="cloud-rationalization"></a>Cloudrationalisierung
 
@@ -123,7 +123,7 @@ In manchen Szenarien kann die Kluft, die für die Weiterverwendung einer Anwendu
 Häufige Motive können Folgendes umfassen:
 
 - Beschleunigung von Innovationen.
-- Schnelleres Erstellen von Apps.
+- Schnellere Anwendungserstellung.
 - Senkung der Betriebskosten.
 
 Faktoren für die quantitative Analyse:

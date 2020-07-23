@@ -1,5 +1,5 @@
 ---
-title: Unternehmensregistrierung und Azure Active Directory-Mandanten
+title: Enterprise Agreement-Registrierung und Azure Active Directory-Mandanten
 description: Unternehmensregistrierung und Azure Active Directory-Mandanten.
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,29 +7,29 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a5c9f562e521ec1e04b598b9c2c55deceb72e45e
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: eee2f462490a8c69c0c772b11f8877380e790c7b
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076968"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194696"
 ---
-# <a name="enterprise-enrollment-and-azure-active-directory-tenants"></a>Unternehmensregistrierung und Azure Active Directory-Mandanten
+# <a name="enterprise-agreement-enrollment-and-azure-active-directory-tenants"></a>Enterprise Agreement-Registrierung und Azure Active Directory-Mandanten
 
 ## <a name="planning-for-enterprise-enrollment"></a>Planen der Unternehmensregistrierung
 
-Eine Unternehmensregistrierung, die häufig auch als Enterprise Agreement bezeichnet wird, stellt die Geschäftsbeziehung zwischen Microsoft und dem Kunden in Bezug auf dessen Nutzung von Azure dar. Sie ist Grundlage für die Abrechnung für alle Kundenabonnements und wirkt sich auf die Verwaltung der Kundenressourcen aus. Die Unternehmensregistrierung (auch als EA bezeichnet) wird über ein Azure Enterprise-Portal verwaltet. Die Azure-Unternehmensregistrierung bildet häufig die Hierarchie einer Organisation ab, einschließlich ihrer Abteilungen, Konten und Abonnements. Diese Hierarchie stellt Kostenerfassungsgruppen innerhalb einer Organisation dar.
+Eine Enterprise Agreement-Registrierung (EA) stellt die Geschäftsbeziehung zwischen Microsoft und der Art und Weise dar, wie Ihre Organisation Azure verwendet. Sie bildet die Grundlage für die Abrechnung für alle Ihre Abonnements und wirkt sich auf die Verwaltung Ihrer digitalen Ressourcen aus. Ihre EA-Registrierung wird über ein Azure-Unternehmensportal verwaltet. Eine Registrierung bildet häufig die Hierarchie einer Organisation ab, einschließlich ihrer Abteilungen, Konten und Abonnements. Diese Hierarchie stellt Kostenerfassungsgruppen innerhalb einer Organisation dar.
 
 ![Azure EA-Hierarchien](./media/ea.png)
-_Abbildung 1: Eine Azure-Unternehmensregistrierungshierarchie._
+_Abbildung 1: Eine Azure EA-Registrierungshierarchie._
 
 - Mithilfe von Abteilungen werden Kosten in logische Gruppierungen segmentiert, und ein Budget bzw. Kontingent wird auf Abteilungsebene festgelegt (Hinweis: Das Kontingent dient zu Berichterstattungszwecken und wird nicht strikt erzwungen).
 
 - Konten sind Organisationseinheiten im Azure Enterprise-Portal, über die Abonnements verwaltet und Berichte aufgerufen werden können.
 
-- Abonnements sind die kleinste Einheit im Azure Enterprise-Portal. Dabei handelt es sich um Container für Azure-Dienste, die vom Dienstadministrator verwaltet werden. Hier stellt eine Organisation Azure-Dienste bereit.
+- Abonnements sind die kleinste Einheit im Azure Enterprise-Portal. Dabei handelt es sich um Container für Azure-Dienste, die vom Dienstadministrator verwaltet werden. Hier stellt Ihre Organisation Azure-Dienste bereit.
 
-- Über Unternehmensregistrierungsrollen sind Benutzer mit ihrer funktionalen Rolle verknüpft. Die folgenden Rollen sind vorhanden:
+- Über EA-Registrierungsrollen sind Benutzer mit ihrer funktionalen Rolle verknüpft. Die folgenden Rollen sind vorhanden:
   - Unternehmensadministrator
   - Abteilungsadministrator
   - Kontobesitzer
@@ -38,9 +38,9 @@ _Abbildung 1: Eine Azure-Unternehmensregistrierungshierarchie._
 
 **Überlegungen zum Entwurf:**
 
-- Die Registrierung stellt eine hierarchische Organisationsstruktur bereit, mit der die Verwaltung von Kundenabonnements gesteuert wird.
+- Die Registrierung stellt eine hierarchische Organisationsstruktur bereit, mit der die Verwaltung von Abonnements gesteuert wird.
 
-- Mehrere Kundenumgebungen können auf EA-Kontoebene getrennt werden, um die ganzheitliche Abgrenzung zu unterstützen.
+- Mehrere Umgebungen können auf EA-Kontoebene getrennt werden, um die ganzheitliche Abgrenzung zu unterstützen.
 
 - Einer einzelnen Registrierung können mehrere Administratoren zugewiesen werden.
 
@@ -60,7 +60,7 @@ _Abbildung 1: Eine Azure-Unternehmensregistrierungshierarchie._
 
 - Weisen Sie jedem Konto ein Budget zu, und richten Sie eine Warnung für das betreffende Budget ein.
 
-- Eine Organisation kann über eine Vielzahl von Strukturen verfügen, z. B. nach Funktionen, Abteilungen, geografischer Verteilung, Matrix oder Teamstruktur. Bilden Sie anhand der Organisationsstruktur die Struktur der Organisation in Bezug auf die Unternehmensregistrierung ab.
+- Eine Organisation kann über eine Vielzahl von Strukturen verfügen, z. B. nach Funktionen, Abteilungen, geografischer Verteilung, Matrix oder Teamstruktur. Verwenden Sie die Organisationsstruktur, um Ihre Organisationsstruktur auf Ihre Registrierungshierarchie abzubilden.
 
 - Erstellen Sie eine neue Abteilung für IT, wenn Geschäftsbereiche über unabhängige IT-Funktionen verfügen.
 
@@ -80,17 +80,17 @@ _Abbildung 1: Eine Azure-Unternehmensregistrierungshierarchie._
 
 Ein Azure AD Mandanten ermöglich die Identitäts- und Zugriffsverwaltung. Diese ist ein wichtiger Bestandteil Ihrer Sicherheitsvorkehrungen, mit denen Sie sicherstellen, dass authentifizierte und autorisierte Benutzer nur Zugriff auf die Ressourcen haben, für die Sie Zugriffsberechtigungen besitzen. Azure AD bietet diese Dienste nicht nur für in Azure bereitgestellte Anwendungen und Dienste, sondern auch für Dienste und Anwendungen, die außerhalb von Azure bereitgestellt werden (z. B. lokal oder in Drittanbieter-Clouds). Azure AD wird auch von SaaS-Anwendungen (Software-as-a-Service) wie Microsoft 365 und Azure Marketplace verwendet. Organisationen, die bereits lokale Active Directory-Instanzen verwenden, können Ihre vorhandene Infrastruktur nutzen und die Authentifizierung durch die Integration mit Azure AD auf die Cloud ausweiten. Jedes Azure AD-Verzeichnis verfügt über mindestens eine Domäne. Einem Verzeichnis können viele Abonnements zugeordnet sein, jedoch nur ein Azure AD-Mandant.
 
-Während der Azure AD Entwurfsphase sind grundlegende Sicherheitsfragen zu beantworten, z. B. wie eine Organisation Anmeldeinformationen verwaltet und wie Benutzerzugriff, Anwendungszugriff und programmgesteuerter Zugriff gesteuert werden.
+Während der Azure AD Entwurfsphase sind grundlegende Sicherheitsfragen zu beantworten, z. B. wie Ihre Organisation Anmeldeinformationen verwaltet und wie Benutzerzugriff, Anwendungszugriff und programmgesteuerter Zugriff gesteuert werden.
 
 **Überlegungen zum Entwurf:**
 
-- Mehrere Azure AD-Mandanten können in derselben Unternehmensregistrierung aktiv sein.
+- Mehrere Azure AD-Mandanten können in derselben Registrierung aktiv sein.
 
 **Entwurfsempfehlungen:**
 
 - Verwenden Sie das nahtlose einmalige Anmelden von Azure AD entsprechend der ausgewählten [Planungstopologie](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies).
 
-- Verfügt Ihre Organisation über keine Identitätsinfrastruktur, beginnen Sie mit der Implementierung einer auf Azure AD beschränkten Identitätsbereitstellung. Eine solche Bereitstellung mit [Azure AD Domain Services](https://docs.microsoft.com/azure/active-directory-domain-services) und [Microsoft Enterprise Mobility + Security](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) bietet End-to-End-Schutz für SaaS und Unternehmensanwendungen sowie für Geräte.
+- Verfügt Ihre Organisation über keine Identitätsinfrastruktur, beginnen Sie mit der Implementierung einer auf Azure AD beschränkten Identitätsbereitstellung. Eine solche Bereitstellung mit [Azure AD Domain Services](https://docs.microsoft.com/azure/active-directory-domain-services) und [Microsoft Enterprise Mobility + Security](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) bietet End-to-End-Schutz für SaaS-Anwendungen, Unternehmensanwendungen und für Geräte.
 
 - Die mehrstufige Authentifizierung stellt eine weitere Sicherheitsebene und eine zweite Authentifizierungsbarriere dar. Erzwingen Sie die [mehrstufige Authentifizierung](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks) und [Richtlinien für bedingten Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) für alle privilegierten Konten, um die Sicherheit zu erhöhen.
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: ee7c32a075ffa633d6791b14a1b4c6f0c963073d
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 19392b3fc1027cec77b0111bcd46d86cd58d33a2
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787553"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373117"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
@@ -24,7 +24,7 @@ Die Organisation Ihrer cloudbasierten Ressourcen ist entscheidend für die Siche
 
 <!-- markdownlint-disable MD024 MD025 -->
 
-# <a name="azure-management-groups-and-hierarchy"></a>[Azure-Verwaltungsgruppen und -Hierarchie](#tab/AzureManagementGroupsAndHierarchy)
+## <a name="azure-management-groups-and-hierarchy"></a>[Azure-Verwaltungsgruppen und -Hierarchie](#tab/AzureManagementGroupsAndHierarchy)
 
 Azure bietet vier Verwaltungsebenen: Verwaltungsgruppen, Abonnements, Ressourcengruppen und Ressourcen. In der folgenden Abbildung ist die Beziehung dieser Ebenen dargestellt.
 
@@ -35,7 +35,7 @@ Azure bietet vier Verwaltungsebenen: Verwaltungsgruppen, Abonnements, Ressourcen
 - **Ressourcengruppen**: Eine Ressourcengruppe ist ein logischer Container, in dem Azure-Ressourcen wie Web-Apps, Datenbanken und Speicherkonten bereitgestellt und verwaltet werden.
 - **Ressourcen:** Ressourcen sind Instanzen von Diensten, die Sie erstellen. Hierzu zählen beispielsweise virtuelle Computer, Speicher oder SQL-Datenbanken.
 
-## <a name="scope-of-management-settings"></a>Umfang der Verwaltungseinstellungen
+### <a name="scope-of-management-settings"></a>Umfang der Verwaltungseinstellungen
 
 Sie können Verwaltungseinstellungen, z. B. Richtlinien und die rollenbasierte Zugriffssteuerung, auf allen Verwaltungsebenen anwenden. Die von Ihnen ausgewählte Ebene bestimmt, wie umfassend die Einstellung angewendet wird. Niedrigere Ebenen erben die Einstellungen von höheren Ebenen. Wenn Sie beispielsweise eine Richtlinie auf ein Abonnement anwenden, wird sie auch auf alle Ressourcengruppen und Ressourcen des Abonnements angewendet.
 
@@ -47,25 +47,25 @@ Arbeiten Sie zur Planung Ihrer Konformitätsstrategie mit Personen in Ihrer Orga
 
 ::: zone target="docs"
 
-## <a name="create-a-management-level"></a>Erstellen einer Verwaltungsebene
+### <a name="create-a-management-level"></a>Erstellen einer Verwaltungsebene
 
 Sie können eine Verwaltungsgruppe, weitere Abonnements oder Ressourcengruppen erstellen.
 
-### <a name="create-a-management-group"></a>Erstellen einer Verwaltungsgruppe
+#### <a name="create-a-management-group"></a>Erstellen einer Verwaltungsgruppe
 
 Erstellen Sie eine Verwaltungsgruppe, um die Verwaltung von Zugriff, Richtlinien und Konformität für mehrere Abonnements zu vereinfachen.
 
 1. Navigieren Sie zu [Verwaltungsgruppen](https://portal.azure.com/#blade/Microsoft_Azure_ManagementGroups/HierarchyBlade).
 2. Wählen Sie **Verwaltungsgruppe hinzufügen**.
 
-### <a name="create-a-subscription"></a>Erstellen eines Abonnements
+#### <a name="create-a-subscription"></a>Erstellen eines Abonnements
 
 Verwenden Sie Abonnements, um Kosten und Ressourcen zu verwalten, die von Benutzern, Teams oder Projekten verursacht bzw. erstellt werden.
 
 1. Navigieren Sie zu [Abonnements](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade).
 1. Wählen Sie **Hinzufügen**.
 
-### <a name="create-a-resource-group"></a>Erstellen einer Ressourcengruppe
+#### <a name="create-a-resource-group"></a>Erstellen einer Ressourcengruppe
 
 Erstellen Sie eine Ressourcengruppe für Ressourcen wie Web-Apps, Datenbanken und Speicherkonten mit gleichem Lebenszyklus, gleichen Berechtigungen und gleichen Richtlinien.
 
@@ -75,7 +75,7 @@ Erstellen Sie eine Ressourcengruppe für Ressourcen wie Web-Apps, Datenbanken un
 1. Geben Sie einen Namen für die **Ressourcengruppe** ein.
 1. Wählen Sie eine **Region** für den Standort der Ressourcengruppe aus.
 
-## <a name="learn-more"></a>Weitere Informationen
+### <a name="learn-more"></a>Weitere Informationen
 
 Weitere Informationen finden Sie unter:
 
@@ -91,7 +91,7 @@ Weitere Informationen finden Sie unter:
 
 ::: zone target="chromeless"
 
-## <a name="actions"></a>Aktionen
+### <a name="actions"></a>Aktionen
 
 **Erstellen einer Verwaltungsgruppe**:
 
@@ -125,7 +125,7 @@ Erstellen Sie eine Ressourcengruppe für Ressourcen wie Web-Apps, Datenbanken un
 
 ::: zone-end
 
-# <a name="naming-standards"></a>[Benennungsstandards](#tab/NamingStandards)
+## <a name="naming-standards"></a>[Benennungsstandards](#tab/NamingStandards)
 
 Mit einem durchdachten Benennungsstandard lassen sich Ressourcen im Azure-Portal, in einer Abrechnung und in Automatisierungsskripts leichter identifizieren. Ihre Namensstrategie sollte geschäftliche und operative Details als Bestandteile von Ressourcennamen einbeziehen:
 
@@ -150,7 +150,7 @@ Die folgende Tabelle enthält Namensmuster für einige Beispieltypen von Azure-R
 | Verfügbarkeitsgruppe | Resource group | 1-80 | Groß-/Kleinschreibung nicht beachten | Alphanumerisch, Unterstrich und Bindestrich | `<service-short-name>-<context>-As` | `profx-SQL-as` |
 | Tag | Zugeordnete Entität | 512 (Name), 256 (Wert) | Groß-/Kleinschreibung nicht beachten | Alphanumerisch | `"Key" : "value"` | `"Department" : "Central IT"` |
 
-# <a name="resource-tags"></a>[Ressourcentags](#tab/ResourceTags)
+## <a name="resource-tags"></a>[Ressourcentags](#tab/ResourceTags)
 
 Tags sind nützlich, um Ihre Ressourcen und Ressourcengruppen schnell identifizieren zu können. Durch Anwenden von Tags können Sie Ihre Azure-Ressourcen logisch nach Kategorien organisieren. Jedes Tag besteht aus einem Namen und einem Wert. So können Sie beispielsweise den Namen „Umgebung“ und den Wert „Produktion“ auf alle Ressourcen in der Produktion anwenden. Tags sollten den Kontext über die zugehörige Workload oder Anwendung der Ressource, betriebliche Anforderungen und Angaben zum Besitzer einbeziehen.
 
@@ -160,7 +160,7 @@ Sie können Tags auch für viele andere Dinge verwenden. Sie werden häufig für
 
 - **Metadaten und Dokumentation**: Durch Anwenden eines Tags wie `projectowner` können Administratoren problemlos Details zu den Ressourcen anzeigen, an denen sie arbeiten.
 - **Automatisierung:** Unter Umständen verfügen Sie über regelmäßig ausgeführte Skripts, die basierend auf einem Tagwert wie `shutdowntime` oder `deprovisiondate` eine Aktion durchführen können.
-- **Kostenoptimierung:** Sie können den Teams und Mitarbeitern, die für die Kosten verantwortlich sind, Ressourcen zuweisen. In Azure Cost Management können Sie das Kostenstellentag als Filter anwenden, um die Gebühren basierend auf der Nutzung eines Teams oder einer Abteilung zu melden.
+- **Kostenoptimierung:** Sie können den Teams und Mitarbeitern, die für die Kosten verantwortlich sind, Ressourcen zuweisen. In der Azure-Kostenverwaltung und -Abrechnung können Sie das Kostenstellentag als Filter anwenden, um die Gebühren basierend auf der Nutzung eines Teams oder einer Abteilung zu melden.
 
 Jede Ressource oder Ressourcengruppe kann maximal 50 Tagname-Wert-Paare aufweisen. Diese Einschränkung gilt nur für Tags, die direkt auf die Ressourcengruppe oder die Ressource angewendet werden.
 
@@ -168,7 +168,7 @@ Weitere Empfehlungen und Beispiele zur Kennzeichnung finden Sie unter [Empfohlen
 
 ::: zone target="docs"
 
-## <a name="apply-a-resource-tag"></a>Anwenden eines Ressourcentags
+### <a name="apply-a-resource-tag"></a>Anwenden eines Ressourcentags
 
 So wenden Sie ein Tag auf eine Ressourcengruppe an:
 
@@ -177,7 +177,7 @@ So wenden Sie ein Tag auf eine Ressourcengruppe an:
 1. Wählen Sie **Tags zuweisen** aus.
 1. Geben Sie einen neuen Namen und Wert ein, oder verwenden Sie die Dropdownliste, um einen bereits vorhandenen Namen und Wert auszuwählen.
 
-## <a name="learn-more"></a>Weitere Informationen
+### <a name="learn-more"></a>Weitere Informationen
 
 Weitere Informationen finden Sie unter [Verwenden von Tags zum Organisieren von Azure-Ressourcen](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources).
 
@@ -185,7 +185,7 @@ Weitere Informationen finden Sie unter [Verwenden von Tags zum Organisieren von 
 
 ::: zone target="chromeless"
 
-## <a name="action"></a>Aktion
+### <a name="action"></a>Aktion
 
 **Anwenden eines Ressourcentags**:
 

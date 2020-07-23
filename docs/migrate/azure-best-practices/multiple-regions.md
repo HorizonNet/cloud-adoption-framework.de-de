@@ -1,21 +1,21 @@
 ---
-title: Leitfaden zur Entscheidungsfindung für Regionen
+title: Leitfaden zur Entscheidungsfindung für Azure-Regionen
 description: Erfahren Sie mehr über Cloudplattformregionen sowie die Faktoren und Merkmale, die sich auf die Auswahl ihrer Azure-Region auswirken können.
 author: doodlemania2
 ms.author: dermar
-ms.date: 10/17/2019
+ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 636b0e2554fb9ab25134a226ef3bdd7aae067bb3
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 8728d9c2dac9e5bea9a59cab01e3399c1ccd780c
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076785"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194543"
 ---
-# <a name="azure-regions"></a>Azure-Regionen
+# <a name="azure-regions-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Azure-Regionen
 
 Azure besteht aus zahlreichen Regionen auf der ganzen Welt. Jede [Azure-Region](https://azure.microsoft.com/global-infrastructure/regions) hat bestimmte Merkmale, weshalb die Wahl der zu verwendenden Region überaus wichtig ist.
 
@@ -43,7 +43,7 @@ Bei näherer Betrachtung der obigen Komplexitäten wird deutlich, wie wichtig di
 
 Jede robuste Cloudbereitstellung ist auf ein sorgfältig durchdachtes Netzwerk angewiesen, wobei auch Azure-Regionen eine Rolle spielen. Nach Berücksichtigung der obigen Kriterien für die Wahl der Bereitstellungsregionen muss das Netzwerk bereitgestellt werden. Eine umfassende Besprechung des Netzwerks würde den Rahmen dieses Artikels sprengen, es sind jedoch unter anderem folgende Punkte zu beachten:
 
-- Azure-Regionen werden paarweise bereitgestellt. Für den Fall eines schwerwiegenden Ausfalls einer Region wird eine andere Region innerhalb derselben geopolitischen Grenze als gekoppelte Region festgelegt. Die Bereitstellung in Regionspaaren sollte als primäre und sekundäre Resilienzstrategie in Erwägung gezogen werden. „Brasilien, Süden“ ist eine erwähnenswerte Ausnahme, da die gekoppelte Region in diesem Fall „USA, Süden-Mitte“ ist. Weitere Informationen finden Sie unter [Azure-Regionspaare](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
+- Azure-Regionen werden paarweise bereitgestellt. Für den Fall eines schwerwiegenden Ausfalls einer Region wird eine andere Region innerhalb derselben geopolitischen Grenze als gekoppelte Region festgelegt. Die Bereitstellung in Regionspaaren sollte als primäre und sekundäre Resilienzstrategie in Erwägung gezogen werden. `Brazil South` ist eine erwähnenswerte Ausnahme, da die gekoppelte Region in diesem Fall `South Central US` ist. Weitere Informationen finden Sie unter [Azure-Regionspaare](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).
 
   - Azure Storage unterstützt [georedundanten Speicher (GRS)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-grs). Das bedeutet, dass drei Kopien Ihrer Daten in Ihrer primären Region und drei zusätzliche Kopien in der gekoppelten Region gespeichert werden. Die Speicherkopplung für GRS kann nicht geändert werden.
   - Dienste, die auf Azure Storage-GRS basieren, können von dieser Regionskopplung profitieren. Ihre Anwendungen und das Netzwerk müssen dazu entsprechend ausgerichtet sein.
@@ -62,7 +62,7 @@ Jede robuste Cloudbereitstellung ist auf ein sorgfältig durchdachtes Netzwerk a
 - Neben der Bereitstellung in mehreren Regionen für die Notfallwiederherstellung entscheiden sich viele Organisationen für eine Bereitstellung mit Aktiv/Aktiv-Muster, sodass kein Failover erforderlich ist. Dies hat außerdem den Vorteil eines globalen Lastenausgleichs, einer höheren Fehlertoleranz und einer höheren Netzwerkleistung. Wenn Sie dieses Muster nutzen möchten, müssen Ihre Anwendungen die Aktiv/Aktiv-Ausführung in mehreren Regionen unterstützen.
 
 > [!WARNING]
-> Azure-Regionen sind hochverfügbare Konstrukte mit SLAs für die darin ausgeführten Dienste. Geschäftskritische Anwendungen sollten jedoch niemals von einer einzelnen Region abhängig sein. Planen Sie stets für regionale Ausfälle, und üben Sie Wiederherstellungs- und Problembehebungsschritte.
+> Azure-Regionen sind hochverfügbare Konstrukte mit SLAs für die darin ausgeführten Dienste. Geschäftskritische Anwendungen sollten aber niemals von einer einzelnen Region abhängig sein. Planen Sie stets für regionale Ausfälle, und üben Sie Wiederherstellungs- und Problembehebungsschritte.
 
 Nachdem Sie sich mit der Netzwerktopologie auseinandergesetzt haben, die zur Gewährleistung der Betriebsbereitschaft benötigt wird, sind zusätzliche Dokumentations- und Prozessabstimmungsschritte erforderlich. Anhand der folgenden Punkte können Sie die potenziellen Herausforderungen bewerten und eine allgemeine Vorgehensweise festlegen:
 
@@ -104,7 +104,7 @@ Der Standort vorhandener Rechenzentren kann eine Migrationsstrategie beeinflusse
 
 **Architekturentscheidungen**: Das Festlegen der Zielregion ist einer der ersten Schritte beim Entwerfen einer Migrationsstrategie. Der Standort der vorhandenen Assets spielt dabei häufig eine Rolle. Darüber hinaus können die Verfügbarkeit von Clouddiensten und die Kosten pro Einheit für diese Dienste zwischen Regionen variieren. Daher spielt die Kenntnis des aktuellen und des zukünftigen Standorts von Assets eine Rolle bei Architekturentscheidungen und Budgetschätzungen.
 
-**Abhängigkeiten zwischen Rechenzentren**: Basierend auf der oben stehenden Tabelle ist es wahrscheinlich, dass zwischen den verschiedenen Rechenzentren auf der ganzen Welt Abhängigkeiten bestehen. In vielen Unternehmen dieser Größenordnung sind diese Abhängigkeiten möglicherweise nicht sorgfältig dokumentiert oder werden nicht richtig verstanden. Die Vorgehensweisen, die zum Evaluieren von Benutzerprofilen verwendet werden, helfen dabei, einige dieser Abhängigkeiten zu identifizieren. Während des Bewertungsprozesses werden jedoch weitere Schritte vorgeschlagen, um die Risiken zu minimieren, die mit dieser Komplexität einhergehen.
+**Abhängigkeiten zwischen Rechenzentren**: Basierend auf der oben stehenden Tabelle ist es wahrscheinlich, dass zwischen den verschiedenen Rechenzentren auf der ganzen Welt Abhängigkeiten bestehen. In vielen Unternehmen dieser Größenordnung sind diese Abhängigkeiten möglicherweise nicht sorgfältig dokumentiert oder werden nicht richtig verstanden. Die Vorgehensweisen, die zum Evaluieren von Benutzerprofilen verwendet werden, helfen dabei, einige dieser Abhängigkeiten zu identifizieren. Während des Bewertungsprozesses werden aber weitere Schritte vorgeschlagen, um die Risiken zu minimieren, die mit dieser Komplexität einhergehen.
 
 ## <a name="implementing-the-general-approach"></a>Implementieren der allgemeinen Vorgehensweise
 
@@ -122,7 +122,7 @@ Wenn das Team mit dem grundlegenden Ansatz zufrieden und die Bereitschaft entspr
 - **Anfängliche Bewertung des digitalen Eigentums**: Jedes Mal, wenn der Komplexitätsgrad einer Migrationsstrategie erhöht wird, sollte eine Bewertung des digitalen Eigentums durchgeführt werden. Unterstützung hierbei finden Sie in den Anleitungen zur [Bewertung des digitalen Eigentums](../../digital-estate/index.md).
   - **Weitere Anforderungen in Bezug auf das digitale Eigentum**: Richten Sie Kennzeichnungsrichtlinien ein, um alle Workloads zu ermitteln, die von Anforderungen an die Datenhoheit betroffen sind. Die Kennzeichnungspflicht sollte bei der Bewertung des digitalen Eigentums beginnen und bis zu den migrierten Assets beibehalten werden.
 - **Evaluieren eines Hub-and-Spoke-Modells**: In verteilten Systemen existieren häufig allgemeine Abhängigkeiten. Diese Abhängigkeiten können häufig durch Implementierung eines Hub-and-Spoke-Modells verarbeitet werden. Ein solches Modell gehört nicht zum Umfang des Migrationsprozesses, sollte aber bei weiteren Iterationen der [Bereitschaftsprozesse](../../ready/index.md) Berücksichtigung finden.
-- **Priorisierung des Migrationsbacklogs**: Wenn Netzwerkänderungen erforderlich sind, um die Produktionsbereitstellung einer Workload zu unterstützen, die mehrere Regionen unterstützt, muss das Cloudstrategieteam Eskalationen in Bezug auf diese Netzwerkänderungen nachverfolgen und verwalten. Die Unterstützung auf höherer Ebene der Unternehmenshierarchie hilft beim Beschleunigen der Änderung. Wichtiger ist jedoch, dass das Strategieteam die Möglichkeit erhält, das Backlog neu zu priorisieren, um sicherzustellen, dass globale Workloads nicht durch Netzwerkänderungen ausgebremst werden. Solche Workloads sollten erst priorisiert werden, nachdem die Netzwerkänderungen abgeschlossen sind.
+- **Priorisierung des Migrationsbacklogs**: Wenn Netzwerkänderungen erforderlich sind, um die Produktionsbereitstellung einer Workload zu unterstützen, die mehrere Regionen unterstützt, muss das Cloudstrategieteam Eskalationen in Bezug auf diese Netzwerkänderungen nachverfolgen und verwalten. Die Unterstützung auf höherer Ebene der Unternehmenshierarchie hilft beim Beschleunigen der Änderung. Wichtiger ist aber, dass das Strategieteam die Möglichkeit erhält, das Backlog neu zu priorisieren, um sicherzustellen, dass globale Workloads nicht durch Netzwerkänderungen ausgebremst werden. Solche Workloads sollten erst priorisiert werden, nachdem die Netzwerkänderungen abgeschlossen sind.
 
 Anhand dieser Voraussetzungen lassen sich Prozesse einrichten, mit denen diese Komplexität während der Umsetzung der Migrationsstrategie bewältigt werden kann.
 
@@ -156,8 +156,7 @@ Beim Migrieren einer Anwendung, die in mehreren Regionen bereitgestellt werden m
 
 **Entwurf der Netzwerkbandbreite**: Während der Replikation und der fortlaufenden Synchronisierung werden binäre Daten über das Netzwerk vom Quellrechenzentrum zum Site Recovery-Tresor im Azure-Zielrechenzentrum verschoben. Dieser Prozess verbraucht Bandbreite. Die Duplizierung der Workload in eine zweite Region verdoppelt die verbrauchte Bandbreitenmenge. Wenn die Bandbreite begrenzt ist oder eine Workload ein hohes Maß an Konfiguration oder Datenabweichung beinhaltet, kann dies zu Konflikten hinsichtlich des Zeitraums führen, der für den Abschluss der Migration erforderlich ist. Wichtiger noch: Es könnte sich auf das Benutzererlebnis oder die Anwendungsleistung auswirken, wenn Benutzer bzw. Anwendungen noch auf die Bandbreite des Quellrechenzentrums angewiesen sind.
 
-**Datensynchronisierung**: Häufig wird die Bandbreite bei der Synchronisierung der Datenplattform am meisten beansprucht. Wie in den Referenzarchitekturen für [Webanwendungen in mehreren Regionen](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/multi-region) und [n-schichtige Anwendungen in mehreren Regionen](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/multi-region-sql-server) definiert, ist eine Synchronisierung der Daten häufig erforderlich, um die Anwendungen auf dem gleichen Stand zu halten. Wenn dies der gewünschte Betriebszustand der Anwendung ist, kann es klug sein, eine vollständige Synchronisierung zwischen der Quelldatenplattform und den einzelnen Cloudplattformen durchzuführen, bevor die Anwendung und die Assets der mittleren Schicht migriert werden.
-**Datensynchronisierung**: Häufig wird die Bandbreite bei der Synchronisierung der Datenplattform am meisten beansprucht. Wie in den Referenzarchitekturen für [Webanwendungen in mehreren Regionen](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/multi-region) und [n-schichtige Anwendungen in mehreren Regionen](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/multi-region-sql-server) definiert, ist eine Synchronisierung der Daten häufig erforderlich, um die Anwendungen auf dem gleichen Stand zu halten. Wenn dies der gewünschte Betriebszustand der Anwendung ist, kann es klug sein, eine vollständige Synchronisierung zwischen der Quelldatenplattform und den einzelnen Cloudplattformen durchzuführen, bevor die Anwendung und die Assets der mittleren Schicht migriert werden.
+**Datensynchronisierung**: Häufig wird die Bandbreite bei der Synchronisierung der Datenplattform am meisten beansprucht. Wie in den Referenzarchitekturen für [Webanwendungen in mehreren Regionen](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/multi-region) und [n-schichtige Anwendungen in mehreren Regionen](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/multi-region-sql-server) definiert, ist eine Synchronisierung der Daten häufig erforderlich, um die Anwendungen auf dem gleichen Stand zu halten. Wenn dies der gewünschte Betriebszustand der Anwendung ist, kann es klug sein, eine vollständige Synchronisierung zwischen der Quelldatenplattform und den einzelnen Cloudplattformen durchzuführen, bevor die Anwendung und die Assets der mittleren Schicht migriert werden. **Datensynchronisierung**: Häufig wird die Bandbreite bei der Synchronisierung der Datenplattform am meisten beansprucht. Wie in den Referenzarchitekturen für [Webanwendungen in mehreren Regionen](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/multi-region) und [n-schichtige Anwendungen in mehreren Regionen](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/multi-region-sql-server) definiert, ist eine Synchronisierung der Daten häufig erforderlich, um die Anwendungen auf dem gleichen Stand zu halten. Wenn dies der gewünschte Betriebszustand der Anwendung ist, kann es klug sein, eine vollständige Synchronisierung zwischen der Quelldatenplattform und den einzelnen Cloudplattformen durchzuführen, bevor die Anwendung und die Assets der mittleren Schicht migriert werden.
 
 **Azure-zu-Azure-Notfallwiederherstellung**: Eine alternative Option kann die Komplexität weiter verringern. Wenn Zeitpläne und Datensynchronisierung eine zweistufige Bereitstellung vorsehen, könnte die [Azure-zu-Azure-Notfallwiederherstellung](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-architecture) eine akzeptable Lösung sein. In diesem Szenario wird die Workload mithilfe eines Entwurfs mit einem einzelnen Site Recovery-Tresor und Konfigurations- oder Prozessserver zum ersten Azure-Rechenzentrum migriert. Nachdem die Workload getestet wurde, kann sie aus den migrierten Assets in einem zweiten Azure-Rechenzentrum wiederhergestellt werden. Diese Vorgehensweise reduziert die Auswirkungen auf Ressourcen im Quellrechenzentrum und profitiert von den höheren Übertragungsgeschwindigkeiten und den hohen Bandbreitenkapazitäten zwischen Azure-Rechenzentren.
 

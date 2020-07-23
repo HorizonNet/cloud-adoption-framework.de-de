@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 252db2665a4ea7d64947cfd8a973013b6a17e97b
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 8df057c63b12a5f3ea48a0469f0e8ca74eb0d741
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862448"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86190463"
 ---
 # <a name="align-cost-models-with-the-digital-estate-to-forecast-cloud-costs"></a>Abstimmen von Kostenmodellen mit digitalen Ressourcen zur Prognose von Cloudkosten
 
@@ -27,4 +27,4 @@ Azure-Preistools ermöglichen Ihnen eine transparente und exakte Verwaltung von 
 
 - [Azure-Preisrechner](https://azure.microsoft.com/pricing/calculator): Berechnen Sie mit unserem Preisrechner Ihre voraussichtlichen monatlichen Kosten. Über das Abrechnungsportal können Sie jederzeit Ihre tatsächliche Kontonutzung und Rechnung überprüfen. Richten Sie automatische Abrechnungswarnungen per E-Mail ein, damit Sie informiert werden, wenn Ihre Ausgaben einen von Ihnen festgelegten Betrag übersteigen.
 
-- [Azure Cost Management](https://azure.microsoft.com/services/cost-management): Azure Cost Management ist eine Kostenverwaltungslösung, die Ihnen das effektive Verwenden und Verwalten von Azure und anderen Cloudressourcen erleichtert. Erfassen Sie Cloudnutzungs- und Abrechnungsdaten von Azure, Amazon Web Services und Google Cloud Platform mithilfe von Anwendungsprogrammierschnittstellen (APIs). Diese Daten bieten einen umfassenden Überblick über die Ressourcennutzung sowie über die Kosten auf verschiedenen Cloudplattformen in einer einzelnen einheitlichen Ansicht. Überwachen Sie kontinuierlich die Cloudnutzung sowie Kostentrends. Behalten Sie Ihre tatsächlichen Cloudausgaben im Blick, um Budgetüberschreitungen zu vermeiden. Erkennen Sie ungewöhnliche Ausgaben und Ineffizienzen. Verwenden Sie historische Daten, um die Genauigkeit von Cloudnutzungs- und Ausgabenprognosen zu verbessern.
+- [Azure-Kostenverwaltung und -Abrechnung](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview): Die Azure-Kostenverwaltung und -Abrechnung ist eine Kostenverwaltungslösung, die Sie bei der effektiven Verwendung und Verwaltung von Azure und anderen Cloudressourcen unterstützt. Erfassen Sie Cloudnutzungs- und Abrechnungsdaten von Azure, Amazon Web Services und Google Cloud Platform mithilfe von Anwendungsprogrammierschnittstellen (APIs). Diese Daten bieten einen umfassenden Überblick über die Ressourcennutzung sowie über die Kosten auf verschiedenen Cloudplattformen in einer einzelnen einheitlichen Ansicht. Überwachen Sie kontinuierlich die Cloudnutzung sowie Kostentrends. Behalten Sie Ihre tatsächlichen Cloudausgaben im Blick, um Budgetüberschreitungen zu vermeiden. Erkennen Sie ungewöhnliche Ausgaben und Ineffizienzen. Verwenden Sie historische Daten, um die Genauigkeit von Cloudnutzungs- und Ausgabenprognosen zu verbessern.

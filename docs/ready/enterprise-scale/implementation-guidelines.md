@@ -1,42 +1,46 @@
 ---
-title: Implementierungsrichtlinien
-description: Implementierungsrichtlinien.
+title: Richtlinien für die CAF-Implementierung auf Unternehmensebene
+description: Hier finden Sie Informationen zu den Richtlinien für die CAF-Implementierung auf Unternehmensebene im Microsoft Cloud Adoption Framework für Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 392e1e9625f631a76cd7584d4cc31485bcea8f0a
-ms.sourcegitcommit: 7c16b2857b00520bec3c4f6e9844ceac33970846
+ms.openlocfilehash: 5fee6cc6eefb8529209172d40d6fc3aa73ef8bc3
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85766789"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373168"
 ---
-<!-- cSpell:ignore interdomain VMSS -->
+<!-- cSpell:ignore interdomain VMSS VWAN -->
 
-# <a name="implementation-guidelines"></a>Implementierungsrichtlinien
+# <a name="caf-enterprise-scale-implementation-guidelines"></a>Richtlinien für die CAF-Implementierung auf Unternehmensebene
 
 Dieser Abschnitt enthält eine Beschreibung des Einstiegs in die plattformnative Referenzimplementierung auf Unternehmensebene und der Entwurfsziele.
 
 Es gibt drei Kategorien von Aktivitäten, die erforderlich sind, um die Architektur auf Unternehmensebene zu implementieren:
 
+<!-- docsTest:disable -->
+
 1. **Zu erfüllende Anforderungen für die Architektur auf Unternehmensebene:** Diese Kategorie umfasst Aktivitäten, die von den Azure- und Azure AD-Administratoren durchgeführt werden müssen, um eine anfängliche Konfiguration einzurichten. Diese Aktivitäten sind von Natur aus sequenziell, und es handelt sich hauptsächlich um einmalige Aktivitäten.
 
-2. **Aktivieren einer neuen Region (_Datei > Neu > Region_):** Diese Aktivitäten sind jeweils erforderlich, wenn die Plattform auf Unternehmensebene auf eine neue Azure-Region erweitert werden muss.
+2. **Aktivieren einer neuen Region („Datei“ > „Neu“ > „Region“):** Diese Aktivitäten sind jeweils erforderlich, wenn die Plattform auf Unternehmensebene auf eine neue Azure-Region erweitert werden muss.
 
-3. **Bereitstellen einer neuen Zielzone (_Datei > Neu > Zielzone_):** Hierbei handelt es sich um wiederkehrende Aktivitäten, die erforderlich sind, um eine neue Zielzone zu instanziieren.
+3. **Bereitstellen einer neuen Zielzone („Datei“ > „Neu“ > „Zielzone“):** Hierbei handelt es sich um wiederkehrende Aktivitäten, die erforderlich sind, um eine neue Zielzone zu instanziieren.
+
+<!-- docsTest:enable -->
 
 Für eine Operationalisierung im großen Stil müssen bei diesen Aktivitäten die IaC-Prinzipien (Infrastructure-as-Code) befolgt und Bereitstellungspipelines für die Automatisierung verwendet werden.
 
-## <a name="what-must-be-true-for-an-enterprise-scale-landing-zone"></a>Zu erfüllende Voraussetzungen für eine Zielzone auf Unternehmensebene
+## <a name="what-must-be-true-for-a-caf-enterprise-scale-landing-zone"></a>Zu erfüllende Voraussetzungen für eine CAF-Zielzone auf Unternehmensebene
 
 ### <a name="enterprise-agreement-ea-enrollment-and-azure-ad-tenants"></a>Enterprise Agreement-Registrierung (EA) und Azure AD-Mandanten
 
 1. Richten Sie den EA-Administrator und das Benachrichtigungskonto ein.
 
-2. Erstellen Sie Abteilungen: Geschäftsdomänen/geobasierte/Organisation.
+2. Erstellen Sie Abteilungen: business domains/geo-based/org.
 
 3. Erstellen Sie unter einer Abteilung ein EA-Konto.
 
@@ -50,7 +54,7 @@ Für eine Operationalisierung im großen Stil müssen bei diesen Aktivitäten di
 
 2. Definieren Sie ein Abonnementbereitstellungskriterium zusammen mit den Zuständigkeiten eines Abonnementbesitzers.
 
-3. Erstellen Sie Verwaltungs-, Konnektivitäts- und Identitätsabonnements für Plattformverwaltung, globale Netzwerke und Konnektivitäts- und Identitätsressourcen, z. B. AD-Domänencontroller.
+3. Erstellen Sie Verwaltungs-, Konnektivitäts- und Identitätsabonnements für Plattformverwaltung, globale Netzwerke und Konnektivitäts- und Identitätsressourcen, z. B. Active Directory-Domänencontroller.
 
 4. Richten Sie ein Git-Repository zum Hosten von IaC und Dienstprinzipalen für die Verwendung mit einer CI/CD-Pipeline für die Plattform ein.
 
@@ -58,11 +62,11 @@ Für eine Operationalisierung im großen Stil müssen bei diesen Aktivitäten di
 
 6. Erstellen Sie die Azure Policy-Zuweisungen in der unten angegebenen Tabelle für die Zielzonen.
 
-| Name                  | BESCHREIBUNG                                                                                   |
+| Name                  | Beschreibung                                                                                   |
 |-----------------------|-----------------------------------------------------------------------------------------------|
-| [Deny-PublicEndpoints](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policySetDefinitions-Deny-PublicEndpoints.parameters.json)  | Verweigert die Erstellung von Diensten mit öffentlichen Endpunkten in allen Zielzonen.                    |
-| [Deploy-VM-Backup](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-VM-Backup.parameters.json)      | Stellt sicher, dass die Sicherung konfiguriert ist und für alle VMs in den Zielzonen bereitgestellt wird.                |
-| [Deploy-VNet](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vNet.parameters.json)           | Stellt sicher, dass für alle Zielzonen ein VNET bereitgestellt wurde und dass es per Peering mit dem regionalen virtuellen Hub verknüpft ist. |
+| [`Deny-PublicEndpoints`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policySetDefinitions-Deny-PublicEndpoints.parameters.json) | Verweigert die Erstellung von Diensten mit öffentlichen Endpunkten in allen Zielzonen. |
+| [`Deploy-VM-Backup`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/Landing%20Zones/.AzState/Microsoft.Authorization_policyAssignments-Deploy-VM-Backup.parameters.json) | Stellt sicher, dass die Sicherung konfiguriert ist und für alle VMs in den Zielzonen bereitgestellt wird. |
+| [`Deploy-VNet`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vNet.parameters.json) | Stellt sicher, dass für alle Zielzonen ein VNET bereitgestellt wurde und dass es per Peering mit dem regionalen virtuellen Hub verknüpft ist. |
 
 ### <a name="global-networking-and-connectivity"></a>Globale Netzwerke und Konnektivität
 
@@ -83,7 +87,7 @@ Für eine Operationalisierung im großen Stil müssen bei diesen Aktivitäten di
 
 6. Schützen Sie VNET-Datenverkehr für virtuelle Hubs mit NSGs.
 
-7. (Optional:) Richten Sie Verschlüsselung über privates ExpressRoute-Peering ein. Befolgen Sie die Anleitung unter [ExpressRoute-Verschlüsselung: IPsec über ExpressRoute für Virtual WAN](https://docs.microsoft.com/en-us/azure/virtual-wan/vpn-over-expressroute).
+7. (Optional:) Richten Sie Verschlüsselung über privates ExpressRoute-Peering ein. Befolgen Sie die Anleitung unter [ExpressRoute-Verschlüsselung: IPsec über ExpressRoute für Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/vpn-over-expressroute).
 
 8. (Optional:) Verbinden Sie Branches über VPN mit dem virtuellen Hub. Befolgen Sie die Anleitung unter [Tutorial: Erstellen einer Site-to-Site-Verbindung per Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-site-to-site-portal).
 
@@ -91,11 +95,11 @@ Für eine Operationalisierung im großen Stil müssen bei diesen Aktivitäten di
 
 Die folgende Liste enthält Azure Policy-Zuweisungen, die beim Implementieren von Netzwerkressourcen für eine Bereitstellung auf Unternehmensebene verwendet werden:
 
-| Name                     | BESCHREIBUNG                                                                            |
+| Name                     | Beschreibung                                                                            |
 |--------------------------|----------------------------------------------------------------------------------------|
-| [Deploy-FirewallPolicy](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-FirewallPolicy.parameters.json)  | Erstellt eine Firewallrichtlinie. |
-| [Deploy-VHub](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vHUB.parameters.json)        | Diese Richtlinie dient zum Bereitstellen eines virtuellen Hubs, von Azure Firewall und von Gateways (VPN/ExpressRoute) sowie zum Konfigurieren der Standardroute zu Azure Firewall in verbundenen VNETs. |
-| [Deploy-VWAN](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vWAN.parameters.json)            | Bereitstellen eines virtuellen WAN                             |
+| [`Deploy-FirewallPolicy`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-FirewallPolicy.parameters.json) | Erstellt eine Firewallrichtlinie. |
+| [`Deploy-VHub`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vHUB.parameters.json) | Diese Richtlinie dient zum Bereitstellen eines virtuellen Hubs sowie von Azure Firewall und von VPN-/ExpressRoute-Gateways und zum Konfigurieren der Standardroute zu Azure Firewall in verbundenen VNETs. |
+| [`Deploy-VWAN`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vWAN.parameters.json)| Stellt eine Virtual WAN-Instanz bereit. |
 
 ### <a name="security-governance-and-compliance"></a>Sicherheit, Governance und Compliance
 
@@ -103,7 +107,7 @@ Die folgende Liste enthält Azure Policy-Zuweisungen, die beim Implementieren vo
 
 2. Erstellen Sie benutzerdefinierte Azure RBAC-Rollendefinitionen.
 
-3. Ermöglichen Sie Azure AD PIM, und ermitteln Sie Azure-Ressourcen für Privileged Identity Management-Vorgänge.
+3. Ermöglichen Sie Azure AD PIM, und ermitteln Sie Azure-Ressourcen für Privileged Identity Management-Vorgänge.
 
 4. Erstellen Sie auf Azure AD beschränkte Gruppen für die Azure-Steuerungsebenenverwaltung von Ressourcen mit Azure AD PIM.
 
@@ -115,34 +119,34 @@ Die folgende Liste enthält Azure Policy-Zuweisungen, die beim Implementieren vo
 
 Die folgenden Richtlinien sollten verwendet werden, um den Konformitätsstatus unternehmensweit zu erzwingen.
 
-| Name                       | BESCHREIBUNG                                                        |
+| Name                       | Beschreibung                                                        |
 |----------------------------|--------------------------------------------------------------------|
-| [Allowed-ResourceLocation](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Allowed-ResourceLocation.parameters.json)   | Gibt die zulässige Region an, in der Ressourcen bereitgestellt werden können.       |
-| [Allowed-RGLocation](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Allowed-RGLocation.parameters.json)         | Gibt die zulässige Region an, in der Ressourcengruppen bereitgestellt werden können. |
-| [Denied-Resources](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Denied-Resources.parameters.json)           | Ressourcen, die für das Unternehmen verweigert werden.                           |
-| [Deny-AppGW-Without-WAF](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deny-AppGW-Without-WAF.parameters.json)     | Ermöglicht die Bereitstellung von Anwendungsgateways mit WAF-Aktivierung.              |
-| [Deny-IP-Forwarding](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deny-IP-Forwarding.parameters.json)         | Verweigert die IP-Weiterleitung.                                                 |
-| [Deny-RDP-From-Internet](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deny-RDP-From-Internet.parameters.json)     | Verweigert RDP-Verbindungen aus dem Internet.                                 |
-| [Deny-Subnet-Without-Nsg](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deny-Subnet-Without-Nsg.parameters.json)    | Verweigert die Subnetzerstellung ohne NSG.                                |
-| [Deploy-ASC-CE](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-ASC-CE.parameters.json)              | Dient zur Bereitstellung des fortlaufenden ASC-Exports für den Arbeitsbereich.                          |
-| [Deploy-ASC-Monitoring](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-ASC-Monitoring.parameters.json)      | Dient zum Aktivieren der Überwachung in Azure Security Center.                         |
-| [Deploy-ASC-Standard](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-ASC-Standard.parameters.json)        | Stellt sicher, dass für Abonnements Security Center Standard aktiviert ist.  |
-| [Deploy-Diag-ActivityLog](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Diag-ActivityLog.parameters.json)    | Ermöglicht die Verwendung von Aktivitätsprotokollen für die Diagnose und die Weiterleitung an LA.             |
-| [Deploy-Diag-LogAnalytics](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Diag-LogAnalytics.parameters.json)   |                                                                    |
-| [Deploy-VM-Monitoring](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-VM-Monitoring.parameters.json)       | Stellt sicher, dass die VM-Überwachung aktiviert ist.  
+| [`Allowed-ResourceLocation`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyAssignments-Allowed-ResourceLocation.parameters.json)   | Gibt die zulässige Region an, in der Ressourcen bereitgestellt werden können. |
+| [`Allowed-RGLocation`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyAssignments-Allowed-RGLocation.parameters.json)         | Gibt die zulässige Region an, in der Ressourcengruppen bereitgestellt werden können. |
+| [`Denied-Resources`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyAssignments-Denied-Resources.parameters.json)           | Ressourcen, die für das Unternehmen verweigert werden. |
+| [`Deny-AppGW-Without-WAF`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deny-AppGW-Without-WAF.parameters.json)     | Ermöglicht die Bereitstellung von Anwendungsgateways mit aktivierter WAF. |
+| [`Deny-IP-Forwarding`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyAssignments-Deny-IP-Forwarding.parameters.json)         | Verweigert die IP-Weiterleitung. |
+| [`Deny-RDP-From-Internet`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyAssignments-Deny-RDP-From-Internet.parameters.json)     | Verweigert RDP-Verbindungen aus dem Internet. |
+| [`Deny-Subnet-Without-Nsg`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deny-Subnet-Without-Nsg.parameters.json)    | Verweigert die Subnetzerstellung ohne NSG. |
+| [`Deploy-ASC-CE`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-ASC-CE.parameters.json)              | Dient zum Einrichten des fortlaufenden Exports von Security Center in Ihren Log Analytics-Arbeitsbereich. |
+| [`Deploy-ASC-Monitoring`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyAssignments-Deploy-ASC-Monitoring.parameters.json)      | Aktiviert die Überwachung in Azure Security Center. |
+| [`Deploy-ASC-Standard`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-ASC-Standard.parameters.json)        | Stellt sicher, dass Security Center Standard für Abonnements aktiviert ist. |
+| [`Deploy-Diag-ActivityLog`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Diagnostics-ActivityLog.parameters.json) | Ermöglicht die Verwendung von Aktivitätsprotokollen für die Diagnose und die Weiterleitung an Log Analytics. |
+| [`Deploy-Diag-LogAnalytics`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Log-Analytics.parameters.json) | |
+| [`Deploy-VM-Monitoring`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Diagnostics-VM.parameters.json) | Stellt sicher, dass die VM-Überwachung aktiviert ist. |
 
-### <a name="platform-indentity"></a>Plattformidentität
+### <a name="platform-identity"></a>Plattformidentität
 
 1. Falls Sie sich für die Erstellung der Identitätsressourcen über Azure Policy entscheiden, sollten Sie die unten in der Tabelle angegebenen Richtlinien dem Identitätsabonnement zuweisen. Hierdurch kann von Azure Policy sichergestellt werden, dass die unten in der Liste enthaltenen Ressourcen basierend auf den angegebenen Parametern erstellt werden.
 
-2. Stellen Sie die AD-Domänencontroller bereit.
+2. Stellen Sie die Active Directory-Domänencontroller bereit.
 
 In der folgenden Liste sind Richtlinien aufgeführt, die verwendet werden können, wenn Identitätsressourcen für eine Bereitstellung auf Unternehmensebene implementiert werden.
 
-| Name                         | BESCHREIBUNG                                                               |
+| Name                         | Beschreibung                                                               |
 |------------------------------|---------------------------------------------------------------------------|
-| [DataProtectionSecurityCenter](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-DataProtectionSecurityCenter.parameters.json) | ASC-DataProtection-Element, das von Azure Security Center automatisch erstellt wird.         |
-| [Deploy-VNet-Identity](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vNet.parameters.json)         | Dient zum Bereitstellen eines VNET unter dem Identitätsabonnement, um beispielsweise einen DC zu hosten.     |
+| [`DataProtectionSecurityCenter`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState) | Von Azure Security Center automatisch erstellter Datenschutz. |
+| [`Deploy-VNet-Identity`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vNet.parameters.json) | Stellt ein VNET zu Hostingzwecken unter dem Identitätsabonnement bereit (Beispiel: DC). |
 
 ### <a name="platform-management-and-monitoring"></a>Plattformverwaltung und -überwachung
 
@@ -156,17 +160,18 @@ In der folgenden Liste sind Richtlinien aufgeführt, die verwendet werden könne
 
 5. Falls Sie sich für die Erstellung der Ressourcen für die Plattformverwaltung über Azure Policy entscheiden, sollten Sie die unten in der Tabelle angegebenen Richtlinien dem Verwaltungsabonnement zuweisen. Hierdurch kann von Azure Policy sichergestellt werden, dass die unten in der Liste enthaltenen Ressourcen basierend auf den angegebenen Parametern erstellt werden.
 
-| Name                   | BESCHREIBUNG                                                                            |
+| Name                   | Beschreibung                                                                            |
 |------------------------|----------------------------------------------------------------------------------------|
-| [Deploy-LA-Config](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-LA-Config.parameters.json)       | Wird für die Konfiguration des Log Analytics-Arbeitsbereichs verwendet.                                           |
-| [Deploy-Log-Analytics](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Log-Analytics.parameters.json)   | Stellt einen Log Analytics-Arbeitsbereich bereit. |
+| [`Deploy-LA-Config`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-LA-Config.parameters.json) | Konfiguration des Log Analytics-Arbeitsbereichs. |
+| [`Deploy-Log-Analytics`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Log-Analytics.parameters.json) | Stellt einen Log Analytics-Arbeitsbereich bereit. |
 
 ## <a name="file--new--region"></a>**Datei > Neu > Region**
 
 1. Falls Sie sich für die Erstellung der Netzwerkressourcen über Azure Policy entscheiden, sollten Sie die unten in der Tabelle angegebenen Richtlinien dem Konnektivitätsabonnement zuweisen. Hierdurch kann von Azure Policy sichergestellt werden, dass die unten in der Liste enthaltene Ressource basierend auf den angegebenen Parametern erstellt wird.
-   - Erstellen Sie innerhalb des Konnektivitätsabonnements einen neuen virtuellen Hub im vorhandenen virtuellen WAN.
-   - Schützen Sie den virtuellen Hub, indem Sie Azure Firewall auf dem virtuellen Hub bereitstellen und vorhandene oder neue Firewallrichtlinien mit Azure Firewall verknüpfen.
-   - Stellen Sie sicher, dass alle mit einem sicheren virtuellen Hub verbundenen VNETs per Azure Firewall geschützt sind.
+
+    - Erstellen Sie unter dem Konnektivitätsabonnement einen neuen virtuellen Hub innerhalb der vorhandenen Virtual WAN-Instanz.
+    - Schützen Sie den virtuellen Hub, indem Sie Azure Firewall auf dem virtuellen Hub bereitstellen und vorhandene oder neue Firewallrichtlinien mit Azure Firewall verknüpfen.
+    - Stellen Sie sicher, dass alle mit einem sicheren virtuellen Hub verbundenen VNETs per Azure Firewall geschützt sind.
 
 2. Verbinden Sie den virtuellen Hub entweder per ExpressRoute oder VPN mit dem lokalen Netzwerk.
 
@@ -174,14 +179,18 @@ In der folgenden Liste sind Richtlinien aufgeführt, die verwendet werden könne
 
 4. (Optional:) Richten Sie Verschlüsselung über privates ExpressRoute-Peering ein.
 
-| Name                     | BESCHREIBUNG                                                                            |
+| Name                     | Beschreibung                                                                            |
 |--------------------------|----------------------------------------------------------------------------------------|
-| [Deploy-VHub](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vHUB.parameters.json)        | Diese Richtlinie dient zum Bereitstellen eines virtuellen Hubs, von Azure Firewall und von Gateways (VPN/ExpressRoute) sowie zum Konfigurieren der Standardroute zu Azure Firewall in verbundenen VNETs. |
+| [`Deploy-VHub`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560/contoso/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vHUB.parameters.json) | Diese Richtlinie dient zum Bereitstellen eines virtuellen Hubs, von Azure Firewall und von Gateways (VPN/ExpressRoute) sowie zum Konfigurieren der Standardroute zu Azure Firewall in verbundenen VNETs. |
+
+<!-- docsTest:disable -->
 
 ## <a name="file---new---landing-zone-for-applications-and-workloads"></a>Datei > Neu > Zielzone für Anwendungen und Workloads
 
+<!-- docsTest:enable -->
+
 1. Erstellen Sie ein Abonnement, und verschieben Sie es unter den Verwaltungsgruppenbereich `Landing Zones`.
 
-2. Erstellen Sie Azure AD-Gruppen für das Abonnement: Besitzer, Leser, Mitwirkender usw.
+2. Erstellen Sie Azure AD-Gruppen für das Abonnement (beispielsweise `Owner`, `Reader` und `Contributor`).
 
 3. Erstellen Sie Azure AD PIM-Berechtigungen für eingerichtete Azure AD-Gruppen.

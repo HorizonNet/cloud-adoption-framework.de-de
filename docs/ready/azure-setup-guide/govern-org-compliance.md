@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 9465a5889f70fa95f8570cd7ffd746b40462fa6e
-ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
+ms.openlocfilehash: 3725963273a870cb753f3c939fbf69f5f8dc36b6
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84800009"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373083"
 ---
 <!-- cSpell:ignore tvuylsteke >
 
@@ -24,7 +24,7 @@ ms.locfileid: "84800009"
 
 Wenn Sie Unternehmensrichtlinien festlegen und Ihre Governancestrategien planen, können Sie Tools und Dienste wie Azure Policy, Azure Blueprints und Azure Security Center verwenden, um die Governanceentscheidungen Ihres Unternehmens durchzusetzen und zu automatisieren. Verwenden Sie vor Beginn Ihrer Governanceplanung das [Governancebenchmarktool](https://cafbaseline.com), um potenzielle Lücken im Cloudgovernanceansatz Ihres Unternehmens zu identifizieren. Weitere Informationen zum Entwickeln von Governanceprozessen finden Sie in der [Governancemethodologie](../../govern/index.md).
 
-# <a name="azure-blueprints"></a>[Azure Blueprint](#tab/AzureBlueprints)
+## <a name="azure-blueprints"></a>[Azure Blueprint](#tab/AzureBlueprints)
 
 Azure Blueprints ermöglicht es Cloudarchitekten und zentralen IT-Gruppen, eine wiederholbare Gruppe von Azure-Ressourcen zu definieren, mit der die Standards, Muster und Anforderungen einer Organisation implementiert und erzwungen werden. Azure Blueprints ermöglicht es Entwicklungsteams, schnell neue Umgebungen zu erstellen und einzurichten und darauf zu vertrauen, dass sie im Rahmen der organisatorischen Compliance mithilfe einer Reihe von integrierten Komponenten (z. B. dem Netzwerk) arbeiten, um die Entwicklung und Bereitstellung zu beschleunigen.
 
@@ -35,7 +35,7 @@ Blaupausen sind eine deklarative Möglichkeit zum Orchestrieren der Bereitstellu
 - Azure Resource Manager-Vorlagen.
 - Ressourcengruppen.
 
-## <a name="create-a-blueprint"></a>Erstellen einer Blaupause
+### <a name="create-a-blueprint"></a>Erstellen einer Blaupause
 
 So erstellen Sie eine Blaupause
 
@@ -65,7 +65,7 @@ So erstellen Sie eine Blaupause
 
 ::: zone-end
 
-## <a name="publish-a-blueprint"></a>Veröffentlichen einer Blaupause
+### <a name="publish-a-blueprint"></a>Veröffentlichen einer Blaupause
 
 Veröffentlichen Sie wie folgt ein Blaupausenartefakt für Ihr Abonnement:
 
@@ -91,7 +91,7 @@ Veröffentlichen Sie wie folgt ein Blaupausenartefakt für Ihr Abonnement:
 
 ::: zone target="docs"
 
-## <a name="learn-more"></a>Weitere Informationen
+### <a name="learn-more"></a>Weitere Informationen
 
 Weitere Informationen finden Sie unter:
 
@@ -101,7 +101,7 @@ Weitere Informationen finden Sie unter:
 
 ::: zone-end
 
-# <a name="azure-policy"></a>[Azure Policy](#tab/AzurePolicy)
+## <a name="azure-policy"></a>[Azure Policy](#tab/AzurePolicy)
 
 Azure Policy ist ein Dienst, mit dem Sie Richtlinien erstellen, zuweisen und verwalten können. Mit diesen Richtlinien werden unterschiedliche Regeln für Ihre Ressourcen erzwungen, damit diese stets mit Ihren Unternehmensstandards und Vereinbarungen zum Servicelevel konform bleiben. Mit Azure Policy werden Ihre Ressourcen gescannt, um diejenigen zu ermitteln, die nicht mit den von Ihnen implementierten Richtlinien konform sind. Sie können beispielsweise über eine Richtlinie verfügen, die in Ihrer Umgebung nur die Ausführung einer bestimmten VM-Größe zulässt. Wenn Sie diese Richtlinie implementieren, werden damit bereits vorhandene virtuelle Computer in Ihrer Umgebung sowie alle neu bereitgestellten virtuellen Computer ausgewertet. Bei der Richtlinienauswertung werden Konformitätsereignisse generiert, die Sie für die Überwachung und Berichterstellung verwenden können.
 
@@ -114,7 +114,7 @@ Ziehen Sie allgemeine Richtlinien für die folgenden Aufgaben in Betracht:
 
 ::: zone target="chromeless"
 
-## <a name="action"></a>Aktion
+### <a name="action"></a>Aktion
 
 Weisen Sie einer Verwaltungsgruppe, einem Abonnement oder einer Ressourcengruppe eine integrierte Richtlinie zu.
 
@@ -124,14 +124,14 @@ Weisen Sie einer Verwaltungsgruppe, einem Abonnement oder einer Ressourcengruppe
 
 ::: zone target="docs"
 
-## <a name="apply-a-policy"></a>Anwenden einer Richtlinie
+### <a name="apply-a-policy"></a>Anwenden einer Richtlinie
 
 So wenden Sie eine Richtlinie auf eine Ressourcengruppe an:
 
 1. Wechseln Sie zu [Azure Policy](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/GettingStarted).
 1. Wählen Sie **Richtlinie zuweisen**.
 
-## <a name="learn-more"></a>Weitere Informationen
+### <a name="learn-more"></a>Weitere Informationen
 
 Weitere Informationen finden Sie unter:
 
@@ -140,7 +140,7 @@ Weitere Informationen finden Sie unter:
 
 ::: zone-end
 
-# <a name="azure-security-center"></a>[Azure Security Center](#tab/AzureSecurityCenter)
+## <a name="azure-security-center"></a>[Azure Security Center](#tab/AzureSecurityCenter)
 
 Azure Security Center ist eine wichtige Komponente Ihrer Governancestrategie. Sie unterstützt Ihre Sicherheit aus den folgenden Gründen optimal:
 
@@ -158,7 +158,7 @@ Viele Sicherheitsfeatures, z. B. Sicherheitsrichtlinie und Empfehlungen, sind k
 
 Wechseln Sie zum [Azure-Portal](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/SecurityMenuBlade/0), um Azure Security Center zu erkunden.
 
-## <a name="learn-more"></a>Weitere Informationen
+### <a name="learn-more"></a>Weitere Informationen
 
 Weitere Informationen finden Sie unter:
 
@@ -171,7 +171,7 @@ Weitere Informationen finden Sie unter:
 
 ::: zone target="chromeless"
 
-## <a name="action"></a>Aktion
+### <a name="action"></a>Aktion
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Security/SecurityMenuBlade/SecurityMenuBlade/0]" submitText="Explore Azure Security Center" :::
 

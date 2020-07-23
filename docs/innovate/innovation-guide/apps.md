@@ -9,26 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e1441a6bd9606d82b81e35e97d8edf50f2f7c29b
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 1ea314a40af6ce271a3563773acce783ac956201
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84785633"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373304"
 ---
 <!-- cSpell:ignore billyclaymyersmsft wimyers functionapp -->
 
-::: zone target="docs"
-
-# <a name="azure-innovation-guide-engage-customers-through-apps"></a>Azure-Innovationsleitfaden: Einbinden von Kunden durch Apps
-
-::: zone-end
-
-::: zone target="chromeless"
-
 # <a name="engage-customers-through-apps"></a>Einbinden von Kunden durch Apps
-
-::: zone-end
 
 Innovation mit Apps umfasst sowohl die Modernisierung Ihrer vorhandenen Apps, die lokal gehostet werden, als auch die Erstellung von cloudnativen Apps mithilfe von Containern oder serverlosen Technologien. Azure bietet PaaS-Dienste wie Azure App Service, um die vorhandenen Web- und API-Apps, die zur Bereitstellung in Azure in .NET, .NET Core, Java, Node.js, Ruby, Python oder PHP geschrieben wurden, problemlos zu modernisieren.
 
@@ -36,17 +26,17 @@ Mit einem Open-Standard-Containermodell ist das Erstellen von Microservices oder
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="deliver-value-faster"></a>[Schnelleres Liefern von Ergebnissen](#tab/DeliverValueFaster)
+## <a name="deliver-value-faster"></a>[Schnelleres Liefern von Ergebnissen](#tab/DeliverValueFaster)
 
 Einer der Vorteile von cloudbasierten Lösungen ist die Möglichkeit, Feedback schneller zu sammeln und Ihren Benutzern Ergebnisse zu liefern. Unabhängig davon, ob es sich bei dem Benutzer um einen externen Kunden oder einen Benutzer in Ihrem eigenen Unternehmen handelt, je schneller Sie Feedback zu Ihren Anwendungen erhalten, desto besser.
 
-## <a name="azure-app-service"></a>Azure App Service
+### <a name="azure-app-service"></a>Azure App Service
 
 Azure App Service bietet eine Hostingumgebung für Ihre Anwendungen, durch die Infrastrukturverwaltung und Betriebssystempatching unnötig werden. Dieser Dienst ermöglicht eine automatisierte Skalierung, um die Anforderungen Ihrer Benutzer zu erfüllen, bei gleichzeitiger Bindung an von Ihnen definierte Grenzen, um die Kosten in Schach zu halten.
 
 Azure App Service bietet erstklassige Unterstützung für Sprachen wir ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP und Python. Wenn Sie einen anderen Laufzeitstapel hosten müssen, können Sie mit Web-App für Container schnell und einfach einen Docker-Container innerhalb von App Service hosten und so Ihren benutzerdefinierten Codestapel in einer Umgebung hosten, die Ihnen den Umgang mit Servern erspart.
 
-### <a name="action"></a>Aktion
+#### <a name="action"></a>Aktion
 
 Zum Konfigurieren oder Überwachen von Azure App Service-Bereitstellungen gehen Sie folgendermaßen vor:
 
@@ -64,13 +54,13 @@ Zum Konfigurieren oder Überwachen von Azure App Service-Bereitstellungen gehen 
 
 ::: zone-end
 
-## <a name="azure-cognitive-services"></a>Azure Cognitive Services
+### <a name="azure-cognitive-services"></a>Azure Cognitive Services
 
 Mit Azure Cognitive Services können Sie erweiterte intelligente Funktionen direkt in Ihre App einbringen, und zwar über eine Reihe von APIs, mit denen Sie die von Microsoft unterstützten KI- und Machine Learning-Algorithmen nutzen können.
 
 <!-- markdownlint-disable MD024 -->
 
-### <a name="action"></a>Aktion
+#### <a name="action"></a>Aktion
 
 Zum Konfigurieren oder Überwachen von Azure Cognitive Service-Bereitstellungen gehen Sie folgendermaßen vor:
 
@@ -88,11 +78,11 @@ Zum Konfigurieren oder Überwachen von Azure Cognitive Service-Bereitstellungen 
 
 ::: zone-end
 
-## <a name="azure-bot-service"></a>Azure Bot Service
+### <a name="azure-bot-service"></a>Azure Bot Service
 
 Azure Bot Services erweitern Ihre Standardanwendung durch das Hinzufügen einer natürlichen Bot-Schnittstelle, die KI und Machine Learning nutzt, um eine neue Möglichkeit der Interaktion mit Ihren Kunden zu schaffen.
 
-### <a name="action"></a>Aktion
+#### <a name="action"></a>Aktion
 
 Zum Konfigurieren oder Überwachen von Azure Bot Services-Bereitstellungen gehen Sie folgendermaßen vor:
 
@@ -110,11 +100,11 @@ Zum Konfigurieren oder Überwachen von Azure Bot Services-Bereitstellungen gehen
 
 ::: zone-end
 
-## <a name="azure-devops"></a>Azure DevOps
+### <a name="azure-devops"></a>Azure DevOps
 
 Ihr Weg der Innovation wird letztendlich in Richtung DevOps führen. Microsoft verfügt bereits seit langem über ein lokales Produkt mit der Bezeichnung Team Foundation Server (TFS). Auf unserem eigenen Weg der Innovation haben wir Azure DevOps als cloudbasierten Dienst zur Bereitstellung von Build- und Releasetools entwickelt, die viele Sprachen und Ziele für Ihre Releases unterstützen. Weitere Informationen finden Sie unter [Azure DevOps](https://docs.microsoft.com/azure/devops).
 
-## <a name="visual-studio-app-center"></a>Visual Studio App Center
+### <a name="visual-studio-app-center"></a>Visual Studio App Center
 
 Da mobile Apps immer beliebter werden, wächst die Notwendigkeit einer Plattform, die automatisierte Tests auf realen Geräten verschiedener Konfigurationen ermöglicht. Visual Studio App Center bietet nicht nur einen Ort, an dem Sie Ihre Anwendungen übergreifend für iOS, Android, Windows und macOS testen können, sondern bietet auch eine Überwachungsplattform, die Azure Application Insights nutzen kann, um Ihre Telemetriedaten schnell und einfach zu analysieren. Weitere Informationen finden Sie unter [Visual Studio App Center](https://docs.microsoft.com/appcenter).
 
@@ -133,9 +123,9 @@ Visual Studio App Center bietet auch einen Benachrichtigungsdienst, bei dem mit 
 - [Dokumentation für das Azure SDK für Go](https://docs.microsoft.com/azure/go)
 - [DevOps-Lösungen](https://azure.microsoft.com/solutions/devops)
 
-# <a name="create-cloud-native-apps"></a>[Erstellen cloudnativer Apps](#tab/CloudNative)
+## <a name="create-cloud-native-apps"></a>[Erstellen cloudnativer Apps](#tab/CloudNative)
 
-## <a name="what-are-cloud-native-applications"></a>Was sind cloudnative Anwendungen?
+### <a name="what-are-cloud-native-applications"></a>Was sind cloudnative Anwendungen?
 
 Cloudnative Anwendungen sind prinzipell auf die Cloudskalierung und Leistung ausgerichtet. Sie sind basierend auf Microservicesarchitekturen lose gekoppelt, verwenden verwaltete Dienste, können beobachtet werden und nutzen Continuous Delivery-Prozesse, um Zuverlässigkeit und eine kürzere Markteinführungszeit zu gewährleisten. In der Regel sind sie portabel und können in dynamischen Umgebungen wie öffentlichen, privaten und hybriden Clouds ausgeführt werden. Cloudnative Anwendungen werden im Allgemeinen mit mindestens einem der folgenden Ansätze erstellt:
 
@@ -143,7 +133,7 @@ Cloudnative Anwendungen sind prinzipell auf die Cloudskalierung und Leistung aus
 - Serverlos
 - Container
 
-## <a name="microservices"></a>Microservices
+### <a name="microservices"></a>Microservices
 
 Microservices sind ein Architekturstil für Software. Apps bestehen darin aus kleinen, unabhängigen Modulen, die miteinander über gut definierte API-Verträge kommunizieren. Diese Dienstmodule sind hochgradig entkoppelte Bausteine, die klein genug sind, um eine einzelne Funktionalität zu implementieren. Microservices bieten Ihnen folgende Möglichkeiten:
 
@@ -153,7 +143,7 @@ Microservices sind ein Architekturstil für Software. Apps bestehen darin aus kl
 - Isolieren von Fehlerquellen
 - Schnelleres Liefern von Ergebnissen
 
-### <a name="azure-kubernetes-service-aks"></a>Azure Kubernetes Service (AKS)
+### <a name="microservices-azure-kubernetes-service-aks"></a>Microservices: Azure Kubernetes Service (AKS)
 
 Nutzen Sie einen vollständig verwalteten Kubernetes-Dienst, um die Bereitstellung, das Upgrade und die Skalierung von Clusterressourcen bei Bedarf zu verwalten. AKS vereinfacht die Bereitstellung und Verwaltung von containerbasierten Anwendungen. Der Dienst umfasst die serverlose Plattform Kubernetes, integrierte CI/CD-Funktionen (Continuous Integration/Continuous Delivery) sowie Sicherheit und Governance auf Unternehmensniveau. Ihre Entwicklungs- und Betriebsteams können gemeinsam auf einer Plattform arbeiten, um Anwendungen ohne Bedenken schnell erstellen, ausliefern und skalieren zu können.
 
@@ -175,9 +165,15 @@ So konfigurieren oder überwachen Sie einen AKS-Dienst
 
 ::: zone-end
 
-## <a name="event-based-solutions"></a>Ereignisbasierte Lösungen
+### <a name="serverless-solutions"></a>Serverlose Lösungen
 
-### <a name="azure-functions"></a>Azure-Funktionen
+Erstellen Sie cloudnative Apps mithilfe einer vollständig verwalteten Plattform, die die Skalierung, Verfügbarkeit und Leistung für Sie verwaltet, ohne dass Sie Infrastruktur bereitstellen und verwalten müssen. Vorteile serverloser Lösungen von Azure sind unter anderem:
+
+- Höhere Entwicklergeschwindigkeit.
+- Optimieren der Teamleistung.
+- Optimieren der Auswirkungen auf das Unternehmen.
+
+### <a name="serverless-solutions-azure-functions"></a>Serverlose Lösungen: Azure-Funktionen
 
 Azure Functions bietet eine Plattform zum Ausführen kleiner Codeeinheiten oder Funktionen in der Cloud. Functions kann eine Möglichkeit sein, mit dem Umgestalten Ihres Codes in eine Microservicearchitektur zu beginnen.
 
@@ -190,8 +186,8 @@ Ein weiterer Vorteil von Functions ist die Möglichkeit, dass die Funktionen dur
 Zum Konfigurieren oder Überwachen von Azure Functions-Bereitstellungen gehen Sie folgendermaßen vor:
 
 1. Navigieren Sie zu **Funktions-App**.
-2. Konfigurieren einer neuen App: Wählen Sie **Hinzufügen** aus, und befolgen Sie die Anweisungen.
-3. Verwalten vorhandener Apps: Wählen Sie in der Liste der Funktions-Apps die gewünschte App aus.
+2. Konfigurieren Sie eine neue Funktions-App: Wählen Sie **Hinzufügen** aus, und befolgen Sie die Anweisungen.
+3. Verwalten Sie bereits vorhandene Funktions-Apps: Wählen Sie in der Liste der Funktions-Apps die gewünschte App aus.
 
 ::: zone target="chromeless"
 
@@ -203,15 +199,7 @@ Zum Konfigurieren oder Überwachen von Azure Functions-Bereitstellungen gehen Si
 
 ::: zone-end
 
-## <a name="serverless-solutions"></a>Serverlose Lösungen
-
-Erstellen Sie cloudnative Apps mithilfe einer vollständig verwalteten Plattform, die die Skalierung, Verfügbarkeit und Leistung für Sie verwaltet, ohne dass Sie Infrastruktur bereitstellen und verwalten müssen. Vorteile serverloser Lösungen von Azure sind unter anderem:
-
-- Höhere Entwicklergeschwindigkeit.
-- Optimieren der Teamleistung.
-- Optimieren der Auswirkungen auf das Unternehmen.
-
-### <a name="azure-logic-apps"></a>Azure Logic Apps
+### <a name="serverless-solutions-azure-logic-apps"></a>Serverlose Lösungen: Azure Logic Apps
 
 Integrieren Sie Daten und Apps, anstatt komplexen Integrationscode zwischen sehr unterschiedlichen Systemen zu schreiben. Erstellen Sie serverlose Workflows visuell mithilfe von Azure Logic Apps, und verwenden Sie Ihre eigenen APIs, serverlosen Funktionen oder vorkonfigurierten Software-as-a-Service-Connectors (SaaS), einschließlich Salesforce, Microsoft Office 365 und Dropbox.
 
@@ -220,8 +208,8 @@ Integrieren Sie Daten und Apps, anstatt komplexen Integrationscode zwischen sehr
 Zum Konfigurieren oder Überwachen von Azure Logic Apps gehen Sie folgendermaßen vor:
 
 1. Navigieren Sie zu **Logic Apps**.
-2. Konfigurieren einer neuen App: Wählen Sie **Hinzufügen** aus, und befolgen Sie die Anweisungen.
-3. Verwalten vorhandener Apps: Wählen Sie die gewünschte Logik-App aus der Liste aus.
+2. Konfigurieren Sie eine neue Logik-App: Wählen Sie **Hinzufügen** aus, und befolgen Sie die Anweisungen.
+3. Verwalten Sie bereits vorhandene Logik-Apps: Wählen Sie die gewünschte Logik-App aus der Liste aus.
 
 ::: zone target="chromeless"
 
@@ -233,7 +221,7 @@ Zum Konfigurieren oder Überwachen von Azure Logic Apps gehen Sie folgendermaße
 
 ::: zone-end
 
-### <a name="serverless-api-management"></a>Serverlose API-Verwaltung
+### <a name="serverless-solutions-api-management"></a>Serverlose Lösungen: API Management
 
 Veröffentlichen, schützen, transformieren, verwalten und überwachen Sie APIs mit Azure API Management, einem vollständig verwalteten Dienst, der ein Nutzungsmodell beinhaltet, das für serverlose Anwendungen optimal entwickelt und implementiert wurde.
 
@@ -255,15 +243,15 @@ Zum Konfigurieren oder Überwachen von API Management-Diensten gehen Sie folgend
 
 ::: zone-end
 
-## <a name="containers"></a>Container
+### <a name="containers"></a>Container
 
 Für die Modernisierung Ihres Anwendungsportfolios bietet Azure verschiedene Containerdienste an, um Ihre vorhandenen Anwendungen zu Containern zu migrieren und cloudnative Microservicesanwendungen zu erstellen, damit Sie Ihren Benutzern schneller einen Mehrwert bieten können. Verwenden Sie umfassende Entwickler- und CI/CD-Tools zum Entwickeln, Aktualisieren und Verwalten Ihrer containerbasierten Anwendungen. Verwalten Sie Container bedarfsorientiert mit einem vollständig verwalteten Orchestrierungsdienst für Kubernetes-Container, der in Azure Active Directory integriert ist. Unabhängig davon, an welchem Punkt der App-Modernisierung Sie sich befinden, beschleunigen Sie Ihre Entwicklung containerbasierter Anwendungen, und erfüllen Sie gleichzeitig Ihre Sicherheitsanforderungen.
 
-### <a name="azure-container-instances"></a>Azure Container Instances
+### <a name="containers-azure-container-instances"></a>Container: Azure Container Instances
 
 Bedarfsgesteuertes Ausführen von Docker-Containern in einer verwalteten, serverlosen Azure-Umgebung. Azure Container Instances ist eine Lösung für alle Szenarien, die in isolierten Containern ohne Orchestrierung betrieben werden können. Wenn Sie Ihre Workloads in Container Instances ausführen, können Sie sich auf den Entwurf und die Entwicklung Ihrer Anwendungen konzentrieren, statt die zugrundeliegende Infrastruktur verwalten zu müssen.
 
-### <a name="action"></a>Aktion
+#### <a name="action"></a>Aktion
 
 Zum Konfigurieren oder Überwachen von Containerinstanzen gehen Sie folgendermaßen vor:
 
@@ -281,23 +269,23 @@ Zum Konfigurieren oder Überwachen von Containerinstanzen gehen Sie folgenderma�
 
 ::: zone-end
 
-### <a name="azure-red-hat-openshift"></a>Azure Red Hat OpenShift
+### <a name="containers-azure-red-hat-openshift"></a>Container: Azure Red Hat OpenShift
 
 Azure Red Hat OpenShift bietet flexible Self-Service-Bereitstellung vollständig verwalteter OpenShift-Cluster. Halten Sie gesetzliche Bestimmungen ein, und konzentrieren Sie sich auf die Entwicklung Ihrer Anwendungen, während die Master-, Infrastruktur- und Anwendungsknoten sowohl von Microsoft als auch von Red Hat gepatcht, aktualisiert und überwacht werden. Wählen Sie Ihre eigenen Registrierungs-, Netzwerk-, Speicher- und CI/CD-Lösungen aus. Sie können sich auch für einen Schnelleinstieg entscheiden, indem Sie integrierte Lösungen mit automatisierter Quellcodeverwaltung, Container- und Anwendungsbuilds, Bereitstellungen, Skalierung und Integritätsverwaltung verwenden.
 
-### <a name="learn-more"></a>Weitere Informationen
+#### <a name="learn-more"></a>Weitere Informationen
 
 - [Azure Red Hat OpenShift](https://docs.microsoft.com/azure/openshift/intro-openshift)
 
-# <a name="isolate-points-of-failure"></a>[Isolieren von Fehlerquellen](#tab/IsolatePointsOfFailure)
+## <a name="isolate-points-of-failure"></a>[Isolieren von Fehlerquellen](#tab/IsolatePointsOfFailure)
 
 Beim Übergang aus der anfänglichen Testphase sollten Sie Möglichkeiten zum Isolieren und Beheben von Fehlerquellen prüfen. Aufgrund der verteilten Umgebung der Azure-Cloudplattform können Sie Ihre Anwendung so gestalten, dass Fehler minimiert werden und gleichzeitig die Leistung verbessert wird.
 
-## <a name="azure-front-door"></a>Azure Front Door
+### <a name="azure-front-door"></a>Azure Front Door
 
 Azure Front Door bietet einen skalierbaren, sicheren Einstiegspunkt, den Sie für die weltweite Bereitstellung Ihrer Anwendung nutzen können. Azure Front Door kombiniert die Optimierung des Datenverkehrs für optimale Leistung und sofortiges globales Failover. Azure Front Door sollte gegenüber Azure Traffic Manager bevorzugt werden, wenn eine Beendigung der TLS-Protokollierung (SSL-Auslagerung) oder eine Verarbeitung der Anwendungsschicht pro HTTP/HTTPS-Anforderung benötigt wird.
 
-### <a name="action"></a>Aktion
+#### <a name="action"></a>Aktion
 
 Zum Konfigurieren oder Überwachen von Front Door-Instanzen gehen Sie folgendermaßen vor:
 
@@ -315,11 +303,11 @@ Zum Konfigurieren oder Überwachen von Front Door-Instanzen gehen Sie folgenderm
 
 ::: zone-end
 
-## <a name="traffic-manager"></a>Traffic Manager
+### <a name="traffic-manager"></a>Traffic Manager
 
 Traffic Manager bietet einen DNS-basierten Lastenausgleich, der basierend auf verschiedenen Regeln weitergeleitet werden kann. Durch diese Funktion wird Resilienz bei Ausfall bereitgestellter Dienste gewährleistet. Sie können Traffic Manager auch mit einer Stapelfunktion nutzen, damit sowohl fehlerbasiertes als auch leistungsbasiertes Routing verwendet werden kann, um bestmögliche Leistung basierend auf der Geografie zu bieten.
 
-### <a name="action"></a>Aktion
+#### <a name="action"></a>Aktion
 
 Zum Konfigurieren oder Überwachen von Traffic Manager-Profilen gehen Sie folgendermaßen vor:
 
@@ -337,11 +325,11 @@ Zum Konfigurieren oder Überwachen von Traffic Manager-Profilen gehen Sie folgen
 
 ::: zone-end
 
-## <a name="azure-content-delivery-network"></a>Azure Content Delivery Network
+### <a name="azure-content-delivery-network"></a>Azure Content Delivery Network
 
 Azure bietet ein verteiltes Content Delivery Network (CDN), mit dem Sie die zeitnahe Bereitstellung von Inhalten sicherstellen können, indem Sie diese in der Nähe Ihrer Benutzer zwischenspeichern. Dieses Zwischenspeichern hilft, die Erfahrungen Ihrer Kunden zu verbessern. Beim Herunterladen von Inhalten werden auch Probleme vermieden, die durch Netzwerkprobleme verursacht werden, die zwischen dem CDN-Endpunkt und dem Rechenzentrum auftreten, das Ihre Anwendung hostet. Azure CDN kann auch von Anwendungen verwendet werden, die nicht in Azure gehostet werden.
 
-### <a name="action"></a>Aktion
+#### <a name="action"></a>Aktion
 
 Zum Konfigurieren oder Überwachen von Azure CDN-Profilen gehen Sie folgendermaßen vor:
 

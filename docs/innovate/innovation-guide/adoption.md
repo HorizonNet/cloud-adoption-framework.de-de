@@ -9,24 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: db526c15a4e33f9531a404c8c257d9c6b5b90261
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 257c02ae6ac6fcb878386ca64897ec44352b68ad
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222316"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373321"
 ---
-::: zone target="docs"
-
-# <a name="azure-innovation-guide-prepare-for-customer-feedback"></a>Azure-Innovationsleitfaden: Vorbereiten für Kundenfeedback
-
-::: zone-end
-
-::: zone target="chromeless"
-
 # <a name="prepare-for-customer-feedback"></a>Vorbereiten für Kundenfeedback
-
-::: zone-end
 
 Einführung, Interaktion und Bindung von Benutzern sind der Schlüssel für erfolgreiche Innovation. Warum?
 
@@ -49,7 +39,7 @@ Zum Anzeigen quantitativer Daten für Ihre Anwendungen gehen Sie folgendermaßen
 
 1. Navigieren Sie zu **Application Insights**.
    - Wenn Ihre Anwendung nicht in der Liste angezeigt wird, wählen Sie **Hinzufügen** aus, und befolgen Sie die Anweisungen, um mit der Konfiguration von Application Insights zu beginnen.
-   - Wenn die gewünschte App in der Liste enthalten ist, wählen Sie die Anwendung aus.
+   - Wenn die gewünschte Anwendung in der Liste enthalten ist, wählen Sie sie aus.
 1. Der Bereich **Übersicht** enthält einige Statistiken für die Anwendung. Wählen Sie **Anwendungsdashboard** aus, um ein benutzerdefiniertes Dashboard für Daten zu erstellen, die für ihre Hypothese von größerer Relevanz sind.
 
 ::: zone target="chromeless"
@@ -88,7 +78,7 @@ Zum Aufzeichnen quantitativer Daten für Ihre APIs gehen Sie folgendermaßen vor
 
 1. Navigieren Sie zu **API Management-Dienste**.
 2. Wählen Sie die gewünschte API aus der Liste aus.
-3. Klicken Sie im Abschnitt **Überwachung** auf **Diagnoseeinstellungen**.
+3. Wählen Sie im Abschnitt **Überwachung** die Option **Diagnoseeinstellungen** aus.
 
 Zum Anzeigen quantitativer Daten für Ihre APIs gehen Sie folgendermaßen vor:
 
@@ -124,7 +114,7 @@ Feedback wird in Form von User Storys im Backlog (oder Board) aufgezeichnet. Dor
 
 ### <a name="action"></a>Aktion
 
-Azure Boards und Azure Pipelines erfordern ein Portal, das von GitHub und Azure getrennt ist. Steigen Sie in [Azure DevOps Services](https://azure.microsoft.com/services/devops) ein.
+Azure Boards und Azure Pipelines erfordern ein Portal, das von GitHub und Azure getrennt ist. Steigen Sie in [Azure DevOps Services](https://docs.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops) ein.
 
 ::: zone-end
 
