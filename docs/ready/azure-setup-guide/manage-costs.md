@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Kosten und Abrechnung für Azure-Ressourcen
+title: Verwalten von Kosten und Abrechnung für Ihre Azure-Ressourcen
 description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um sich mit Rechnungen vertraut zu machen und zu erfahren, wie Sie Budgets und Zahlungen für Ihre Azure-Ressourcen einrichten.
 author: dchimes
 ms.author: kfollis
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: e7d04e91c8ec5a97d302d47ed5c52e7d58e6aae5
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: b041a7cc996ac3606228f1231d2f4ecd9af51655
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86233136"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450729"
 ---
 <!-- cSpell:ignore dchimes -->
 
