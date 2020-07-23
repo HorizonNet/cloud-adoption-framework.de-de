@@ -1,18 +1,18 @@
 ---
 title: Bereitstellen einer grundlegenden Workload in Azure
-description: Hier finden Sie Informationen zu Kernkomponenten der Cloudinfrastruktur sowie zu grundlegenden Workloads wie grundlegenden Web-Apps, einzelnen virtuellen Computern und virtuellen Netzwerken.
+description: Hier finden Sie Informationen zu Kernkomponenten der Cloudinfrastruktur sowie zu grundlegenden Workloads wie grundlegenden Webanwendungen, einzelnen virtuellen Computern und virtuellen Netzwerken.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 12/31/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0b4f0738e93d08be4f61183272b459eb7856aad1
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 92c0d9deb038e1c89d3db5ca5bfc72cace2d2ff9
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862210"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193727"
 ---
 # <a name="deploy-a-basic-workload-in-azure"></a>Bereitstellen einer grundlegenden Workload in Azure
 
@@ -35,7 +35,7 @@ Jede dieser Bereitstellungen erfordert eine _Ressourcengruppe_ – ganz gleich, 
 
 ## <a name="basic-web-application-paas"></a>Einfache Webanwendung (PaaS)
 
-Wählen Sie für eine einfache Webanwendung eine der 5-Minuten-Schnellstartanleitungen der [Dokumentation zu Web-Apps](https://docs.microsoft.com/azure/app-service) aus, und führen Sie die jeweiligen Schritte aus.
+Wählen Sie für eine einfache Webanwendung eine der 5-Minuten-Schnellstartanleitungen der [Dokumentation zu Azure App Service](https://docs.microsoft.com/azure/app-service) aus, und führen Sie die jeweiligen Schritte aus.
 
 > [!NOTE]
 > In einigen Schnellstartanleitungen wird standardmäßig eine Ressourcengruppe bereitgestellt. In diesem Fall muss nicht explizit eine Ressourcengruppe erstellt werden. Stellen Sie die Webanwendung andernfalls in der oben erstellten Ressourcengruppe bereit.

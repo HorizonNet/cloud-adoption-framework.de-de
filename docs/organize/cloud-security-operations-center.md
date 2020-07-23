@@ -7,13 +7,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: c5cba8021128f765b272cd61d4262342fe1592cb
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: ffb7f04de4a9d4b8e6b3d379269dc60ca161113b
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787723"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194288"
 ---
+<!-- docsTest:ignore "Cyber Defense Operations Center" -->
 <!-- cSpell:ignore CISO MTTA MTTR SIEM NIST SOCs CDOC -->
 
 # <a name="cloud-soc-functions"></a>Cloud-SOC-Funktionen
@@ -31,9 +32,9 @@ Das Erkennen von Bedrohungen und die Reaktion darauf wird zurzeit einer bedeuten
 
 - **Aufwertung zum Geschäftsrisikomanagement:** SOC wächst sich zu einer zentralen Komponente des Managements von Geschäftsrisiken für die Organisation aus.
 - **Metriken und Ziele:** Die Nachverfolgung der Effektivität des SOC entwickelt sich von der „Erkennungsgeschwindigkeit“ zu diesen Schlüsselindikatoren weiter:
-  - _Reaktionsfähigkeit_ über die durchschnittliche Bestätigungszeit (MTTA)
-  - _Korrekturgeschwindigkeit_ über die durchschnittliche Korrekturzeit (MTTR)
-- **Technologieentwicklung:** Die SOC-Technologie entwickelt sich von der exklusiven Verwendung statischer Analysen von Protokollen in einem SIEM-Tool hin zur zusätzlichen Verwendung spezieller Tools und komplexer Analysetechniken. Dies bietet umfassende Erkenntnisse zu Ressourcen, die hochwertige Warnungen sowie eine Untersuchungserfahrung bereitstellen, die die breite Ansicht des SIEM-Tools ergänzen. Beide Tooltypen verwenden zunehmend KI/Maschinelles Lernen (Machine Learning), Verhaltensanalysen und integrierte Threat Intelligence (TI), um ungewöhnliche Aktionen zu erkennen und zu priorisieren, bei denen es sich um einen böswilligen Angreifer handeln könnte.
+  - _Reaktionsfähigkeit_ über die durchschnittliche Bestätigungszeit (MTTA).
+  - _Korrekturgeschwindigkeit_ über die durchschnittliche Korrekturzeit (MTTR).
+- **Technologieentwicklung:** Die SOC-Technologie entwickelt sich von der exklusiven Verwendung statischer Analysen von Protokollen in einem SIEM-Tool hin zur zusätzlichen Verwendung spezieller Tools und komplexer Analysetechniken. Dies bietet umfassende Erkenntnisse zu Ressourcen, die hochwertige Warnungen sowie eine Untersuchungserfahrung bereitstellen, die die breite Ansicht des SIEM-Tools ergänzen. Beide Tooltypen verwenden zunehmend KI und maschinelles Lernen, Verhaltensanalysen und integrierte Threat Intelligence, um ungewöhnliche Aktionen zu erkennen und zu priorisieren, bei denen es sich um einen böswilligen Angreifer handeln könnte.
 - **Bedrohungssuche:** SOCs fügen hypothesengestützte Bedrohungssuchen hinzu, um komplexe Angreifer proaktiv zu identifizieren und störende Fehlalarme aus den Warteschlangen der Analytiker an vorderster Front zu entfernen.
 - **Incident Management:** Disziplin wird so formalisiert, dass nicht technische Elemente von Vorfällen mit juristischen, Kommunikations- und anderen Teams koordiniert werden.
 **Integration von internem Kontext:** Um bei der Priorisierung von SOC-Aktivitäten zu helfen, wie relative Risikobewertungen von Benutzerkonten und Geräten, Vertraulichkeit von Daten und Anwendungen sowie wichtige Grenzen der Sicherheitsisolation, um eine enge Verteidigung zu gewährleisten.

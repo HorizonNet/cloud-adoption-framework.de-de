@@ -7,12 +7,12 @@ ms.date: 03/03/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0708c394cca50c64813b7eea04a1239586c825af
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 6ea44ec9861e92b6fda60be99c1b2aab0b413b47
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80527721"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86235057"
 ---
 # <a name="workload-classification-before-migration"></a>Workloadklassifizierung vor der Migration
 
@@ -35,7 +35,7 @@ Arbeiten Sie zu einem möglichst frühen Zeitpunkt mit Ihren Teams für die Sich
 
 ## <a name="mission-criticality"></a>Kritikalität
 
-Wie im Artikel zur [Wichtigkeit von Workloads](../../../manage/considerations/criticality.md) beschrieben, ist die Wichtigkeit (Kritikalität) einer Workload ein Maß dafür, wie stark die Auswirkungen für ein Unternehmen bei einem Ausfall sind. Mit diesem Datenpunkt können Betriebsverwaltungs- und Sicherheitsteams Risiken zu Ausfällen und Sicherheitsverletzungen evaluieren. Während der Bewertung sollte das Cloudeinführungsteam für jede Workload, die für die Migration bestimmt ist, die „Kritikalität“ für das Unternehmen evaluieren und diese Klassifizierungsinformationen den Unterstützungsteams zur Verfügung stellen. Bei Workloads vom Typ „Niedrig“ oder „“Nicht unterstützt“ ergeben sich meist nur geringe Auswirkungen auf die Unterstützungsteams. Wenn es aber um Workloads vom Typ „Unternehmenskritisch“ oder „Kritisch für Geschäftseinheit“ geht, sind die betriebsbezogenen Abhängigkeiten stärker ausgeprägt.
+Wie im Artikel zur [Wichtigkeit von Workloads](../../../manage/considerations/criticality.md) beschrieben, ist die Wichtigkeit (Kritikalität) einer Workload ein Maß dafür, wie stark die Auswirkungen für ein Unternehmen bei einem Ausfall sind. Mit diesem Datenpunkt können Betriebsverwaltungs- und Sicherheitsteams Risiken zu Ausfällen und Sicherheitsverletzungen evaluieren. Während der Bewertung sollte das Cloudeinführungsteam für jede Workload, die für die Migration bestimmt ist, die „Kritikalität“ für das Unternehmen evaluieren und diese Klassifizierungsinformationen den Unterstützungsteams zur Verfügung stellen. Bei Workloads vom Typ „Niedrig“ oder „Nicht unterstützt“ ergeben sich meist nur geringe Auswirkungen auf die Unterstützungsteams. Wenn es aber um Workloads vom Typ „Unternehmenskritisch“ oder „Kritisch für Geschäftseinheit“ geht, sind die betriebsbezogenen Abhängigkeiten stärker ausgeprägt.
 
 Arbeiten Sie zu einem möglichst frühen Zeitpunkt mit Ihren Teams für die Sicherheit und den Betrieb zusammen, um Folgendes zu definieren:
 

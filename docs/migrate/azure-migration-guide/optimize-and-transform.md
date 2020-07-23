@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 86be2dfc12efe36afbc88fed74c0e8a60395f91f
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: f011bae35204c2acff3f8b9b48df61f9528499a3
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993555"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86372947"
 ---
 <!-- markdownlint-disable MD025 DOCSMD001 -->
 
@@ -26,7 +26,7 @@ In dieser Phase bietet sich auch die Möglichkeit, die Umgebung zu optimieren un
 
 Im weiteren Verlauf dieses Artikels werden die Tools zum Optimieren der migrierten Workload behandelt. Wenn Ausgewogenheit zwischen Leistung und Kosten erreicht wurde, kann eine Workload in die Produktion hochgestuft werden. Anleitungen zu den Optionen zum Höherstufen finden Sie in den Artikeln zur Prozessverbesserung zum [Optimieren und Höherstufen](../migration-considerations/optimize/index.md).
 
-# <a name="right-size-assets"></a>[Größenbestimmung der Ressourcen](#tab/optimize)
+## <a name="right-size-assets"></a>[Größenbestimmung der Ressourcen](#tab/optimize)
 
 Die Größe aller Azure-Dienste mit einem nutzungsbasierten Kostenmodell kann über das Azure-Portal, die Befehlszeilenschnittstelle oder PowerShell geändert werden. Der erste Schritt bei der Bestimmung der richtigen Größe eines Diensts ist die Überprüfung der zugehörigen Nutzungsmetriken. Der Azure Monitor-Dienst ermöglicht den Zugriff auf diese Metriken. Möglicherweise müssen Sie die Erfassung der Metriken für den zu analysierenden Dienst konfigurieren und eine angemessene Zeit einplanen, damit aussagekräftige Daten basierend auf Ihren Workloadmustern gesammelt werden.
 
@@ -41,7 +41,7 @@ Die Größe aller Azure-Dienste mit einem nutzungsbasierten Kostenmodell kann ü
 
 Es folgen einige allgemeine Dienste, deren Größe Sie ändern können.
 
-## <a name="resize-a-virtual-machine"></a>Ändern der Größe eines virtuellen Computers
+### <a name="resize-a-virtual-machine"></a>Ändern der Größe eines virtuellen Computers
 
 In Azure Migrate wird als Teil der Bewertungsphase vor der Migration eine Analyse zur richtigen Größenanpassung durchgeführt, sodass die Größe virtueller Computer, die mit diesem Tool migriert werden, wahrscheinlich bereits entsprechend Ihren Anforderungen vor der Migration angepasst ist.
 
@@ -68,11 +68,11 @@ Ein Ändern der Größe von virtuellen Produktionscomputern kann zu Dienstunterb
 
 Partner können die Nutzung über das Partner Center überprüfen.
 
-- [Microsoft Azure-VM-Größe für die maximale Reservierungsnutzung](https://docs.microsoft.com/partner-center/azure-usage)
+- [Azure-VM-Größe für die maximale Reservierungsnutzung](https://docs.microsoft.com/partner-center/azure-usage)
 
 ::: zone-end
 
-## <a name="resize-a-storage-account"></a>Ändern der Größe eines Speicherkontos
+### <a name="resize-a-storage-account"></a>Ändern der Größe eines Speicherkontos
 
 1. Navigieren Sie zu **Speicherkonten**.
 1. Wählen Sie das gewünschte Speicherkonto aus.
@@ -85,7 +85,7 @@ Partner können die Nutzung über das Partner Center überprüfen.
 
 ::: zone-end
 
-## <a name="resize-a-sql-database"></a>Ändern der Größe einer SQL-Datenbank
+### <a name="resize-a-sql-database"></a>Ändern der Größe einer SQL-Datenbank
 
 1. Navigieren Sie zu **SQL-Datenbanken** oder **SQL Server-Instanzen**, und wählen Sie dann den Server aus.
 1. Wählen Sie die gewünschte Datenbank aus.
@@ -98,11 +98,11 @@ Partner können die Nutzung über das Partner Center überprüfen.
 
 ::: zone-end
 
-# <a name="cost-management"></a>[Kostenmanagement](#tab/ManageCost)
+## <a name="cost-management"></a>[Kostenmanagement](#tab/ManageCost)
 
 Es ist wichtig, eine kontinuierliche Kostenanalyse und -überprüfung durchzuführen. Dadurch können Sie die Größe von Ressourcen nach Bedarf anpassen, um Kosten und Workload auszugleichen.
 
-Azure Cost Management unterbreitet Ihnen mithilfe von Azure Advisor Empfehlungen zur Kostenoptimierung. Azure Advisor zeigt Ihnen Möglichkeiten der Optimierung und Steigerung der Effizienz auf, indem ungenutzte oder nicht ausreichend genutzte Ressourcen ermittelt werden.
+Azure Cost Management und Abrechnung unterbreitet Ihnen mithilfe von Azure Advisor Empfehlungen zur Kostenoptimierung Azure Advisor zeigt Ihnen Möglichkeiten der Optimierung und Steigerung der Effizienz auf, indem ungenutzte oder nicht ausreichend genutzte Ressourcen ermittelt werden.
 
 1. Wählen Sie **Kostenverwaltung + Abrechnung** aus.
 1. Wählen Sie **Ratgeberempfehlungen** und die Registerkarte **Kosten** aus.

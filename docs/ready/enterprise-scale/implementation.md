@@ -1,22 +1,22 @@
 ---
-title: Implementieren von Zielzonen auf Unternehmensebene in Azure
-description: Prüfen Sie Optionen zur Implementierung der Architektur auf Unternehmensebene.
+title: Implementieren von CAF-Zielzonen auf Unternehmensebene in Azure
+description: Prüfen Sie Optionen zur Implementierung der CAF-Architektur auf Unternehmensebene.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b804810e23213dc6ebedbe94aa9ea7c1af91cc8e
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 2b17a23a67ae4dde719710fdf2f7d70c42126f99
+ms.sourcegitcommit: 4bbd5f6444d033ef1f38dc6f3bad7b914a82f68f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076869"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86128322"
 ---
-# <a name="implement-enterprise-scale-landing-zones-in-azure"></a>Implementieren von Zielzonen auf Unternehmensebene in Azure
+# <a name="implement-caf-enterprise-scale-landing-zones-in-azure"></a>Implementieren von CAF-Zielzonen auf Unternehmensebene in Azure
 
-Wenn Geschäftsanforderungen eine vielfältige Anfangsimplementierung von Zielzonen verlangen, mit vollständiger Integration von Governance, Sicherheit und Vorgängen von Anfang an, schlägt Microsoft das Befolgen der Beispieloptionen für die Unternehmensebene auf dieser Seite vor. Bei diesem Ansatz können Sie das Microsoft Azure-Portal oder Infrastructure-as-Code zum Einrichten und Konfigurieren Ihrer Umgebung verwenden. Sie können auch zwischen dem Portal und Infrastructure-as-Code wechseln (empfohlen), sobald Ihre Organisation dafür bereit ist. Wie bei anderen Infrastructure-as-Code-Ansätze in Microsoft Azure benötigen Sie Kenntnisse in Bezug auf Azure Resource Manager-Vorlagen und GitHub.
+Wenn Geschäftsanforderungen eine vielfältige Anfangsimplementierung von Zielzonen verlangen, mit vollständiger Integration von Governance, Sicherheit und Vorgängen von Anfang an, verwenden Sie die hier aufgelisteten Beispieloptionen auf Unternehmensebene. Mit diesem Ansatz können Sie das Microsoft Azure-Portal oder Infrastructure-as-Code zum Einrichten und Konfigurieren Ihrer Umgebung verwenden. Sie können auch zwischen dem Portal und Infrastructure-as-Code wechseln (empfohlen), sobald Ihre Organisation dafür bereit ist. Wie bei anderen Infrastructure-as-Code-Ansätze in Microsoft Azure benötigen Sie Kenntnisse in Bezug auf Azure Resource Manager-Vorlagen und GitHub.
 
 ## <a name="example-implementation"></a>Beispielimplementierung
 
@@ -30,4 +30,4 @@ In der folgenden Tabelle sind Beispiele für modulare Implementierungen aufgefü
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Bei diesen Beispielen handelt es sich um eine einfache Bereitstellungsoption zur Unterstützung des kontinuierlichen Lernens für den unternehmensweiten Ansatz. Bevor Sie diese Beispiele in einer Produktionsversion auf Unternehmensebene nutzen, sollten Sie sich zunächst die [Architektur auf Unternehmensebene](./architecture.md) ansehen.
+Diese Beispiele bieten eine einfache Bereitstellungsoption zur Unterstützung des kontinuierlichen Lernens für den unternehmensweiten Ansatz. Bevor Sie diese Beispiele in einer Produktionsversion auf Unternehmensebene nutzen, sollten Sie sich zunächst die [Architektur auf Unternehmensebene](./architecture.md) ansehen.

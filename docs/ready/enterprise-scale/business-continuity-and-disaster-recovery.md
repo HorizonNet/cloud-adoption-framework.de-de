@@ -1,24 +1,24 @@
 ---
-title: Business Continuity & Disaster Recovery
-description: Business Continuity & Disaster Recovery
+title: CAF Business Continuity & Disaster Recovery auf Unternehmensebene
+description: Erfahren Sie mehr über Business Continuity & Disaster Recovery auf Unternehmensebene im Microsoft Cloud Adoption Framework für Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e20448cac2f08f895cc3fb1ff430156cb7a20f46
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 5e397ed17e9596933629c3d6375546df1e0d9a31
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076997"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194781"
 ---
-# <a name="business-continuity-and-disaster-recovery"></a>Business Continuity & Disaster Recovery
+# <a name="caf-enterprise-scale-business-continuity-and-disaster-recovery"></a>CAF Business Continuity & Disaster Recovery auf Unternehmensebene
 
 ## <a name="planning-for-business-continuity-and-disaster-recovery"></a>Planung für Business Continuity & Disaster Recovery
 
-Dieser Abschnitt soll den Lesern die Anforderungen der Kunden an die Notfallwiederherstellung (Disaster Recovery, DR) näher bringen, sodass sie geeignete Funktionen auf Plattformebene entwerfen können, die von den Anwendungsworkloads zur Erfüllung ihrer spezifischen Anforderungen an Wiederherstellungszeit (Recovery Time Objective, RTO) und Wiederherstellungspunkt (Recovery Point Objective, RPO) genutzt werden können.
+Erfassen Sie Anforderungen an die Notfallwiederherstellung (Disaster Recovery, DR), sodass Sie geeignete Funktionen auf Plattformebene entwerfen können, die von den Anwendungsworkloads zur Erfüllung ihrer spezifischen Anforderungen an Wiederherstellungszeit (Recovery Time Objective, RTO) und Wiederherstellungspunkt (Recovery Point Objective, RPO) genutzt werden können.
 
 **Überlegungen zum Entwurf:**
 
@@ -42,7 +42,7 @@ Dieser Abschnitt soll den Lesern die Anforderungen der Kunden an die Notfallwied
 
 - Konsistente Sicherungen für Anwendungen und Daten
 
-  - VM-Momentaufnahmen und Verwendung von Microsoft Azure Backup und Recovery Services-Tresoren
+  - VM-Momentaufnahmen und Verwendung von Azure Backup und Recovery Services-Tresoren
 
   - Abonnementlimits schränken die Anzahl von Recovery Services-Tresoren und die Größe jedes Tresors ein
 

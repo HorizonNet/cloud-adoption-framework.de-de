@@ -1,18 +1,18 @@
 ---
 title: Verwaltung und Überwachung
-description: Verwaltung und Überwachung.
+description: Untersuchen Sie, wie eine Microsoft Azure Enterprise-Umgebung mit zentralisierter Verwaltung und Überwachung auf Plattformebene im laufenden Betrieb gepflegt wird.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 46f98753dda7590daa725c5bd4c0c43a53190871
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 98f0cfccdaec32d00f3097f2f6b79f124c913aa6
+ms.sourcegitcommit: 4bbd5f6444d033ef1f38dc6f3bad7b914a82f68f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85077117"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86128226"
 ---
 # <a name="management-and-monitoring"></a>Verwaltung und Überwachung
 
@@ -38,7 +38,7 @@ _Abbildung 1: Plattformverwaltung und -überwachung._
 
   - Ereignisse zur Ressourcenintegrität
 
-- Protokollieren der Sicherheitsüberwachung und Erreichen eines horizontalen Sicherheitsfokus in der gesamten Azure-Umgebung des Kunden:
+- Protokollieren der Sicherheitsüberwachung und Erreichen eines horizontalen Sicherheitsfokus in der gesamten Azure-Umgebung Ihrer Organisation:
 
   - Mögliche Integration mit lokalen SIEM-Systemen (Security Information & Event Management) wie ServiceNow oder ArcSight
 
@@ -96,7 +96,7 @@ Im Zusammenhang mit der Architektur auf Unternehmensebene geht es bei der zentra
 
 ## <a name="planning-for-app-management-and-monitoring"></a>Planen der App-Verwaltung und -Überwachung
 
-Zur Ausweitung des vorherigen Abschnitts wird hier die diesem Abschnitt die Verbundverwaltung und -überwachung von App-Workloads der Kunden in Erwägung gezogen. Außerdem wird erläutert, wie Anwendungsteams diese Workloads operativ verwalten können.
+Zur Ausweitung des vorherigen Abschnitts wird hier die diesem Abschnitt die Verbundverwaltung und -überwachung von App-Workloads in Erwägung gezogen. Außerdem wird erläutert, wie Anwendungsteams diese Workloads operativ verwalten können.
 
 **Überlegungen zum Entwurf:**
 

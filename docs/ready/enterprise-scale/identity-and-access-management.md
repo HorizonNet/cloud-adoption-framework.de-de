@@ -1,24 +1,24 @@
 ---
 title: Identitäts- und Zugriffsverwaltung
-description: Identitäts- und Zugriffsverwaltung.
+description: Untersuchen Sie Entwurfsüberlegungen und Empfehlungen zur Identitäts- und Zugriffsverwaltung in einer Unternehmensumgebung.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 62c1c9cd21d2fb3382fde876ef38a39e7c7aec20
-ms.sourcegitcommit: 1c123a413725f7d2bfce91e9a6fb9e8c8c59f37b
+ms.openlocfilehash: 8c634942d867bdc55bba84b15ac0789a4abd27a0
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85335971"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194679"
 ---
 # <a name="identity-and-access-management"></a>Identitäts- und Zugriffsverwaltung
 
 Identität ist die Grundlage für einen hohen Prozentsatz der garantierten Sicherheit. Identität ermöglicht Zugriff auf Grundlage ihrer Authentifizierung und von Autorisierungssteuerungen in Clouddiensten, um Daten und Ressourcen zu schützen und zu bestimmen, welche Anforderungen zulässig sind.
 
-Identity and Access Management (IAM) ist für die Sicherheit an den Grenzen der öffentlichen Cloud zuständig und muss als Grundlage jeder sicheren und vollständig konformen Architektur einer öffentlichen Cloud verstanden werden. Microsoft Azure bietet eine umfassende Reihe von Diensten, Tools und Referenzarchitekturen, die es Organisationen ermöglichen, äußerst sichere, betriebseffiziente Umgebungen einzurichten, die nachstehend erläutert werden.
+Identity and Access Management (IAM) ist für die Sicherheit an den Grenzen der öffentlichen Cloud zuständig und muss als Grundlage jeder sicheren und vollständig konformen Architektur einer öffentlichen Cloud verstanden werden. Microsoft Azure bietet eine umfassende Reihe von Diensten, Tools und Referenzarchitekturen, die es Organisationen ermöglichen, äußerst sichere, betriebseffiziente Umgebungen einzurichten, die hier erläutert werden.
 
 In diesem Abschnitt werden Entwurfsüberlegungen und Empfehlungen zur Identitäts- und Zugriffsverwaltung in einer Unternehmensumgebung untersucht.
 
@@ -91,7 +91,7 @@ _Abbildung 1: Identitäts- und Zugriffsverwaltung._
 
 ### <a name="planning-for-authentication-inside-a-landing-zone"></a>Planen der Authentifizierung innerhalb einer Zielzone
 
-Eine wichtige Entwurfsentscheidung, die eine Organisation bei der Einführung von Azure treffen muss, ist, ob die bestehende lokale Identitätsdomäne auf Azure ausgedehnt oder ob eine ganz neue Domäne eingerichtet werden soll. Die Anforderungen an die Authentifizierung innerhalb der Zielzone müssen sorgfältig geprüft und in Pläne zur Bereitstellung von Active Directory Domain Services (AD DS) unter Windows Server, Azure AD Domain Services oder beider Dienste eingebunden werden. Die meisten Azure-Umgebungen nutzen mindestens Azure AD für die Authentifizierung bei der Azure-Fabric und lokale AD DS-Hostauthentifizierung und -Gruppenrichtlinienverwaltung.
+Eine wichtige Entwurfsentscheidung, die eine Organisation bei der Einführung von Azure treffen muss, ist, ob die bestehende lokale Identitätsdomäne auf Azure ausgedehnt oder eine ganz neue Domäne eingerichtet werden soll. Die Anforderungen an die Authentifizierung innerhalb der Zielzone müssen sorgfältig geprüft und in Pläne zur Bereitstellung von Active Directory Domain Services (AD DS) unter Windows Server, Azure AD Domain Services oder beider Dienste eingebunden werden. Die meisten Azure-Umgebungen nutzen mindestens Azure AD für die Authentifizierung bei der Azure-Fabric und lokale AD DS-Hostauthentifizierung und -Gruppenrichtlinienverwaltung.
 
 **Überlegungen zum Entwurf:**
 

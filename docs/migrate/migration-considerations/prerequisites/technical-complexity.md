@@ -7,28 +7,30 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 192084599f91c050b3922cd17ba0db7ffbecb97b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 81313b96e11b58d13c0052a48b066dfb992c8216
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215928"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233341"
 ---
 <!-- cSpell:ignore ITSM TOGAF -->
 
-# <a name="prepare-for-technical-complexity-agile-change-management"></a>Vorbereiten der technischen Komplexität: Agile Change Management
+# <a name="prepare-for-technical-complexity-agile-change-management"></a>Bereiten Sie sich auf technische Komplexität vor: Flexibles Change Management
 
 Wenn mit nur einer Codezeile die Bereitstellung eines kompletten Rechenzentrums aufgehoben und neu erstellt werden kann, können herkömmliche Verfahren nicht mehr mithalten. Die Anleitungen im Cloud Adoption Framework basieren u. a. auf Methoden wie dem IT-Service-Management (ITSM) oder dem Open Group Architecture Framework (TOGAF). Um allerdings auch bei geschäftlichen Änderungen flexibel und reaktionsfähig zu bleiben, werden diese Methoden in diesem Framework an Agile-Verfahren und DevOps-Ansätze angepasst.
 
 Beim Umstieg auf ein Agile-Modell mit Schwerpunkt auf Flexibilität und Iterationen werden die technische Komplexität und das Change Management anders behandelt als beim herkömmlichen Wasserfallmodell mit einer linearen Folge von Migrationsschritten. In diesem Artikel wird ein allgemeiner Ansatz für das Change Management in einem Agile-basierten Migrationsablauf beschrieben. Am Ende dieses Artikels verfügen Sie über allgemeine Kenntnisse über die Ebenen des Change Managements und die Dokumentation bei einem inkrementellen Migrationsansatz. Um basierend auf diesen Kenntnissen Agile-Methoden umzusetzen, sind weitere Schulungen und Entscheidungen erforderlich. Mit diesem Artikel sollen Cloudarchitekten auf Gespräche mit dem Projektmanagement vorbereitet werden, um diesen das allgemeine Konzept des Change Managements bei dieser Vorgehensweise zu erläutern.
 
+<!-- docsTest:ignore INVEST -->
+
 ## <a name="address-technical-complexity"></a>Erläutern der technischen Komplexität
 
-Wenn technische Systeme geändert werden, können Komplexität und gegenseitige Abhängigkeiten Risiken für die Projektpläne darstellen. Cloudmigrationsvorgänge sind da keine Ausnahme. Beim Verschieben von Tausenden – oder Zehntausenden – von Ressourcen in die Cloud steigern sich diese Risiken noch einmal. Die Erkennung und Zuordnung aller Abhängigkeiten bei großen digitalen Umgebungen könnte Jahre dauern. Nur wenige Unternehmen können sich einen derartig langen Zyklus erlauben. Um die Notwendigkeiten für Architekturanalyse und Geschäftsbeschleunigung abzugleichen, liegt der Fokus beim Framework für die Cloudeinführung bei der Verwaltung des Product Backlogs auf einem „INVEST-Modell“. In den folgenden Abschnitten wird dieser Modelltyp zusammengefasst.
+Wenn technische Systeme geändert werden, können Komplexität und gegenseitige Abhängigkeiten Risiken für die Projektpläne darstellen. Cloudmigrationsvorgänge sind da keine Ausnahme. Beim Verschieben von Tausenden (oder Zehntausenden) von Ressourcen in die Cloud steigern sich diese Risiken noch einmal. Die Erkennung und Zuordnung aller Abhängigkeiten bei großen digitalen Umgebungen könnte Jahre dauern. Nur wenige Unternehmen können sich einen derartig langen Zyklus erlauben. Um die Notwendigkeiten für Architekturanalyse und Geschäftsbeschleunigung abzugleichen, liegt der Fokus beim Framework für die Cloudeinführung bei der Verwaltung des Product Backlogs auf einem „INVEST-Modell“. In den folgenden Abschnitten wird dieser Modelltyp zusammengefasst.
 
 ## <a name="invest-in-workloads"></a>INVEST-Modell bei Workloads
 
-Der Begriff _Workload_ taucht im Cloud Adoption Framework immer wieder auf. Eine Workload ist eine Einheit von Anwendungsfunktionalität, die zur Cloud migriert werden kann. Dabei kann es sich um eine einzelne Anwendung, eine Anwendungsebene oder eine Sammlung einer Anwendung handeln. Die Definition ist flexibel und kann während der verschiedenen Phasen der Migration variieren. Im Cloud Adoption Framework wird zur Definition einer Workload der Begriff _INVEST_ verwendet.
+Der Begriff _Workload_ taucht im Cloud Adoption Framework immer wieder auf. Eine Workload ist eine Einheit von Anwendungsfunktionalität, die zur Cloud migriert werden kann. Dabei kann es sich um eine einzelne Anwendung, eine Anwendungsebene oder eine Sammlung einer Anwendung handeln. Die Definition ist flexibel und kann während der verschiedenen Phasen der Migration variieren. Im Cloud Adoption Framework wird zur Definition einer Workload der Begriff *INVEST* verwendet.
 
 INVEST ist ein allgemeines Akronym bei vielen Agile-Verfahren, um User Storys oder Product Backlog Items zu schreiben, bei denen es sich jeweils um Ausgabeeinheiten von Agile-Projektverwaltungstools handelt. Die messbare Einheit der Ausgabe einer Migration ist eine migrierte Workload. Im Cloud Adoption Framework wird das Akronym INVEST etwas anders verwendet, um Workloads zu definieren:
 

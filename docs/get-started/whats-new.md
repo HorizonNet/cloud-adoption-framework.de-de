@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 56319956688e0fcee5b2987c0b789e2af340d5e3
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 72ba0190010412dd00fa4bdfd2013e99382cd9c5
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075603"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193863"
 ---
 <!-- markdownlint-disable MD024 -->
 
@@ -29,10 +29,10 @@ Die ordnungsgemäße Konfiguration der Cloudumgebung ist häufig das erste und g
 | Artikel | BESCHREIBUNG |
 |---|---|
 | [Azure-Zielzonen](../ready/landing-zone/index.md) | Azure-Zielzonen erstellen eine gängige Gruppe von Entwurfsbereichen und Implementierungsoptionen, mit denen das Erstellen von Umgebungen gemäß dem Cloudeinführungsplan und dem Cloudbetriebsmodell beschleunigt wird. In diesem neuen Artikel werden Azure-Zielzonen eindeutiger erläutert. |
-| [Azure-Zielzonen – Entwurfsbereiche](../ready/landing-zone/design-areas.md) | Alle Azure-Zielzonen haben eine gemeinsame Gruppe von acht Entwurfsbereichen. Vor dem Bereitstellen einer der Azure-Zielzonen sollten Kunden beim Treffen wichtiger Entscheidungen jeden dieser Entwürfe untersuchen. |
-| [Azure-Zielzonen – Implementierungsoptionen](../ready/landing-zone/implementation-options.md) | Wählen Sie die beste Implementierungsoption für Azure-Zielzonen aus, je nach Ihrem Cloudeinführungsplan und dem Cloudbetriebsmodell. |
+| [Azure-Zielzonen: Entwurfsbereiche](../ready/landing-zone/design-areas.md) | Alle Azure-Zielzonen haben eine gemeinsame Gruppe von acht Entwurfsbereichen. Vor dem Bereitstellen einer der Azure-Zielzonen sollten Kunden beim Treffen wichtiger Entscheidungen jeden dieser Entwürfe untersuchen. |
+| [Azure-Zielzonen: Optionen für die Implementierung](../ready/landing-zone/implementation-options.md) | Wählen Sie die beste Implementierungsoption für Azure-Zielzonen aus, je nach Ihrem Cloudeinführungsplan und dem Cloudbetriebsmodell. |
 
-Die vorhandenen CAF-Blaupausendefinitionen und CAF-Terraform-Module bieten Ihnen einen Ausgangspunkt für die Implementierung von Azure-Zielzonen. Einige Kunden wünschen sich jedoch eine umfassendere Implementierungsoption, die den Anforderungen von Cloudeinführungsplänen auf Unternehmensebene gerecht wird. In dieser Version wird den Implementierungsoptionen für Azure-Zielzonen die Option für **CAF-Zielzonen auf Unternehmensebene** hinzugefügt, um diese Anforderung zu erfüllen. Im Folgenden sind einige Artikel aufgelistet, die Ihnen den Einstieg in die Arbeit mit der CAF-Architektur auf Unternehmensebene und mit Referenzimplementierungen erleichtern.
+Die vorhandenen CAF-Blaupausendefinitionen und CAF-Terraform-Module bieten Ihnen einen Ausgangspunkt für die Implementierung von Azure-Zielzonen. Einige Kunden benötigen jedoch eine umfassendere Implementierungsoption, die den Anforderungen von Cloudeinführungsplänen auf Unternehmensebene gerecht wird. In dieser Version wird den Implementierungsoptionen für Azure-Zielzonen die Option für **CAF-Zielzonen auf Unternehmensebene** hinzugefügt, um diese Anforderung zu erfüllen. Im Folgenden sind einige Artikel aufgelistet, die Ihnen den Einstieg in die Arbeit mit der CAF-Architektur auf Unternehmensebene und mit Referenzimplementierungen erleichtern.
 
 | Artikel | BESCHREIBUNG |
 |---|---|
@@ -43,7 +43,7 @@ Die vorhandenen CAF-Blaupausendefinitionen und CAF-Terraform-Module bieten Ihnen
 | [Entwurfsrichtlinie für die Unternehmensebene](../ready/enterprise-scale/design-guidelines.md) | Bewerten Sie die Richtlinien für die Unternehmensebene, ob diese den gängigen Entwurfsbereichen von Azure-Zielzonen gerecht werden. |
 | [Implementierungsrichtlinien](../ready/enterprise-scale/implementation-guidelines.md) | Untersuchen Sie die Aktivitäten, die vor dem Bereitstellen für eine Implementierung auf Unternehmensebene erforderlich sind. |
 
-Partner sind ein wichtiger Aspekt der erfolgreichen Cloudeinführung. Über das die gesamte Anleitung zum Cloudeinführungs-Framework haben wir Referenzen hinzugefügt, die verdeutlichen, welche wichtige Rolle Partner spielen und wie Kunden Partner besser einbinden können. Eine Liste der validierten CAF-Partner finden Sie unter den [Angeboten CAF-orientierter Partner](https://aka.ms/adopt/partneroffers) sowie unter [Azure Expert MSP-Partner](https://www.microsoft.com/en-us/solution-providers/search?cacheId=9c2fed4f-f9e2-42fb-8966-4c565f08f11e) und [Advanced Specialist-Partner](https://www.microsoft.com/azure/partners/advspec).
+Partner sind ein wichtiger Aspekt der erfolgreichen Cloudeinführung. Über das die gesamte Anleitung zum Cloudeinführungs-Framework haben wir Referenzen hinzugefügt, die verdeutlichen, welche wichtige Rolle Partner spielen und wie Kunden Partner besser einbinden können. Eine Liste der validierten CAF-Partner finden Sie unter den [Angeboten CAF-orientierter Partner](https://aka.ms/adopt/partneroffers) sowie unter [Azure Expert MSP-Partner](https://www.microsoft.com/solution-providers/search?cacheId=9c2fed4f-f9e2-42fb-8966-4c565f08f11e) und [Advanced Specialist-Partner](https://www.microsoft.com/azure/partners/advspec).
 
 ## <a name="may-15-2020"></a>15. Mai 2020
 
@@ -74,8 +74,8 @@ Weitere Iteration der Verfeinerung von Migrationsmethodik und Bereitschaftsmetho
 
 | Artikel                                                                                                                 | BESCHREIBUNG                                                                                                                                                                                |
 |-------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Migrationsmethodik](../migrate/index.md)                       | Diese Änderungen rationalisieren die Phasen des Migrationsaufwands (Bewertung, Bereitstellung und Freigabe der Workloads). Durch die Änderungen werden auch die Details bezüglich des Backlogs der Migration beseitigt. Das Entfernen dieser Details und der Verweis auf die Methoden „Plan“, „Ready“ und „Adopt“ (Planen, Vorbereiten und Einführen) schafft stattdessen Flexibilität für verschiedene Cloudeinführungsprogramme, um diese besser auf die Methodik abzustimmen.  |
-| Aktualisieren des Inhaltsverzeichnisses                       | Die Inhaltsverzeichnisse des Leitfadens zur Azure-Migration und der Prozessverbesserungen wurden aktualisiert, um die Änderungen in der Methodik widerzuspiegeln.  |
+| [Migrationsmethodik](../migrate/index.md)                       | Diese Änderungen rationalisieren die Phasen des Migrationsaufwands (Bewertung, Bereitstellung und Freigabe der Workloads). Durch die Änderungen werden auch die Details bezüglich des Backlogs der Migration beseitigt. Das Entfernen dieser Details und der Verweis auf die Methoden „Plan“, „Ready“ und „Adopt“ (Planen, Vorbereiten und Einführen) schafft stattdessen Flexibilität für verschiedene Cloudeinführungsprogramme, um diese besser auf die Methodik abzustimmen. |
+| Aktualisiertes Inhaltsverzeichnis | Die Inhaltsverzeichnisse des Leitfadens zur Azure-Migration und der Prozessverbesserungen wurden aktualisiert, um die Änderungen in der Methodik widerzuspiegeln. |
 
 ### <a name="ready-updates"></a>Aktualisierungen in Bezug auf die Bereitschaft
 
@@ -89,7 +89,7 @@ Weitere Iteration der Verfeinerung von Migrationsmethodik und Bereitschaftsmetho
 | [Verbessern des Betriebs von Zielzonen](../ready/considerations/landing-zone-operations.md)                       | **Neuer Artikel:** Liste der bewährten Methoden in der „Manage“-Methodik, mit einem Übergang zu diesem modularen Ansatz zur Verbesserung von Betrieb, Zuverlässigkeit und Leistung. |
 | [Verbessern der Governance von Zielzonen](../ready/considerations/landing-zone-governance.md)                       | **Neuer Artikel:** Liste der bewährten Methoden in der „Govern“-Methodik, mit einem Übergang zu diesem modularen Ansatz zur Verbesserung von Governance, Cost Management und Skalierung. |
 | [Auf Unternehmensniveau beginnen](../ready/enterprise-scale/index.md)                       | **Neuer Artikel:** Veranschaulichen Sie einen Ansatz, der die Unterschiede im Prozess aufzeigt, wenn ein Kunde mit Zielzonenvorlagen auf Unternehmensniveau beginnt. Dieser Artikel hilft Kunden dabei, die Qualifizierer zu verstehen, die diese Entscheidung unterstützen würden. |
-| Aktualisieren des Inhaltsverzeichnisses                       | Das Inhaltsverzeichnis wurde aktualisiert, um die neuen Artikel widerzuspiegeln.  |
+| Aktualisieren des Inhaltsverzeichnisses                       | Das Inhaltsverzeichnis wurde aktualisiert, um die neuen Artikel widerzuspiegeln. |
 
 ## <a name="march-27-2020"></a>27. März 2020
 

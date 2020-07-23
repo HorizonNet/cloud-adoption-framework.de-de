@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d74b03459c306143a02936e22ef47dea4ab9d9a9
-ms.sourcegitcommit: 1c123a413725f7d2bfce91e9a6fb9e8c8c59f37b
+ms.openlocfilehash: 6e317dc33372e32ed175c646426a52e2a93c939f
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85335954"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194917"
 ---
 # <a name="management-group-and-subscription-organization"></a>Organisation von Verwaltungsgruppen und Abonnements
 
@@ -55,7 +55,7 @@ Verwaltungsgruppenstrukturen innerhalb eines Azure AD-Mandanten (Azure Active Di
 
 ## <a name="subscription-organization-and-governance"></a>Organisation und Governance von Abonnements
 
-Abonnements sind eine Verwaltungs-, Abrechnungs- und Skalierungseinheit in Azure, die beim Entwerfen für eine umfassende Azure-Einführung eine wichtige Rolle spielt. Dieser Abschnitt unterstützt beim Erfassen von Kundenabonnementanforderungen und Entwurfszielabonnements anhand von kritischen Faktoren wie Umgebungstyp, Eigentum und Governancemodell, Organisationsstruktur und Anwendungsportfolios.
+Abonnements sind eine Verwaltungs-, Abrechnungs- und Skalierungseinheit in Azure, die beim Entwerfen für eine umfassende Azure-Einführung eine wichtige Rolle spielt. Dieser Abschnitt unterstützt Sie beim Erfassen von Abonnementanforderungen und Entwurfszielabonnements anhand von kritischen Faktoren wie Umgebungstyp, Eigentum und Governancemodell, Organisationsstruktur und Anwendungsportfolios.
 
 **Überlegungen zum Entwurf:**
 
@@ -65,7 +65,7 @@ Abonnements sind eine Verwaltungs-, Abrechnungs- und Skalierungseinheit in Azure
 
 - Abonnements stellen eine Verwaltungsgrenze für Governance und Isolation bereit, wodurch eine klare Trennung von Zuständigkeiten geschaffen wird.
 
-- Es gibt einen manuellen Prozess (zukünftige Automatisierung ist geplant), mit dem ein Azure AD-Mandant so eingeschränkt werden kann, dass er nur Abonnements mit Unternehmensregistrierung verwendet. Dadurch wird die Erstellung von MSDN-Abonnements im Bereich der Stammverwaltungsgruppe verhindert.
+- Es gibt einen manuellen Prozess (zukünftige Automatisierung ist geplant), mit dem ein Azure AD-Mandant so eingeschränkt werden kann, dass er nur Enterprise Agreement-Registrierungsabonnements (EA) verwendet. Dadurch wird die Erstellung von MSDN-Abonnements im Bereich der Stammverwaltungsgruppe verhindert.
 
 **Entwurfsempfehlungen:**
 
@@ -137,6 +137,6 @@ Die Kostentransparenz für eine technische Umgebung ist eine entscheidende Verwa
 
 **Entwurfsempfehlungen:**
 
-- Verwenden Sie Azure Cost Management für die Kostenaggregation, und machen Sie diese für Anwendungsbesitzer verfügbar.
+- Verwenden Sie Azure Cost Management und Abrechnung für die Kostenaggregation, und machen Sie diese für Anwendungsbesitzer verfügbar.
 
 - Verwenden Sie Azure-Ressourcentags zum Kategorisieren und Gruppieren von Kosten. Damit können Sie einen Mechanismus der verbrauchsbasierten Kostenzuteilung für Workloads nutzen, die ein Abonnement gemeinsam nutzen, oder für eine bestimmte Workload, die sich über mehrere Abonnements erstreckt.

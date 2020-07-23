@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b80acbe78ad8d4ad1cc50346db5a16ba20dbb38a
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 0a3288c992c09ebd4da7285225da7b295b1cc626
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787876"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373049"
 ---
 # <a name="assess-workloads-and-refine-plans"></a>Bewerten von Workloads und Optimieren von Plänen
 
@@ -22,11 +22,11 @@ Die Ressourcen in diesem Handbuch helfen Ihnen, die einzelnen Workloads zu bewer
 
 <!-- markdownlint-disable MD025 -->
 
-# <a name="tools"></a>[Tools](#tab/Tools)
+## <a name="tools"></a>[Tools](#tab/Tools)
 
 Wenn Sie die Anweisungen in den obigen Links nicht befolgt haben, benötigen Sie wahrscheinlich Daten und ein Bewertungstool, um fundierte Migrationsentscheidungen treffen zu können. Azure Migrate ist das native Tool für die Bewertung **und** die Migration zu Azure. Führen Sie diese Schritte aus (sofern nicht bereits geschehen), um ein neues Servermigrationsprojekt zu erstellen und die erforderlichen Daten zu erfassen.
 
-## <a name="azure-migrate"></a>Azure Migrate
+### <a name="azure-migrate"></a>Azure Migrate
 
 Mit Azure Migrate werden die lokale Infrastrukturen, Anwendungen und Daten für die Migration zu Azure bewertet. Dieser Dienst:
 
@@ -38,7 +38,7 @@ Wenn Sie einen Lift & Shift-Ansatz verwenden möchten oder sich in einer früh
 
 ![Übersicht über Azure Migrate](./media/assess/azure-migrate-overview-1.png)
 
-### <a name="create-a-new-server-migration-project"></a>Erstellen eines neuen Servermigrationsprojekts
+#### <a name="create-a-new-server-migration-project"></a>Erstellen eines neuen Servermigrationsprojekts
 
 Führen Sie diese Schritte aus, um mit Azure Migrate mit einer Servermigrationsbewertung zu beginnen:
 
@@ -48,10 +48,10 @@ Führen Sie diese Schritte aus, um mit Azure Migrate mit einer Servermigrationsb
 1. Wählen Sie unter **Server ermitteln, bewerten und migrieren** die Option **Tools hinzufügen** aus.
 1. Wählen Sie unter **Projekt migrieren** Ihr Azure-Abonnement aus, und erstellen Sie anschließend bei Bedarf eine Ressourcengruppe.
 1. Geben Sie unter **Projektdetails** den Projektnamen und die geografische Region an, in der Sie das Projekt erstellen möchten. Wählen Sie anschließend **Weiter** aus.
-1. Wählen Sie unter **Bewertungstool auswählen** die Option **Hinzufügen eines Bewertungstools vorerst überspringen > Weiter** aus.
-1. Wählen Sie unter **Migrationstool auswählen** Folgendes aus: **Azure Migrate: Servermigrationsziel > Weiter**.
+1. Wählen Sie unter **Bewertungstool auswählen** die Option **Hinzufügen eines Bewertungstools vorerst überspringen** >  und anschließend **Weiter** aus.
+1. Wählen Sie unter **Migrationstool auswählen** Folgendes aus: **Azure Migrate: Servermigration** > **Weiter**.
 1. Überprüfen Sie die Einstellungen unter **Überprüfen + Tools hinzufügen**, und wählen Sie anschließend **Tools hinzufügen** aus.
-1. Nachdem Sie das Tool hinzugefügt haben, wird es unter **Azure Migrate-Projekt > Server > Migrationstools** angezeigt.
+1. Nachdem Sie das Tool hinzugefügt haben, wird es unter **Azure Migrate-Projekt** > **Server** > **Migrationstools** angezeigt.
 
 ::: zone target="chromeless"
 
@@ -61,7 +61,7 @@ Führen Sie diese Schritte aus, um mit Azure Migrate mit einer Servermigrationsb
 
 ::: zone target="docs"
 
-### <a name="learn-more"></a>Weitere Informationen
+#### <a name="learn-more"></a>Weitere Informationen
 
 - [Übersicht über Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview)
 - [Migrieren von physischen oder virtuellen Servern zu Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
@@ -69,13 +69,13 @@ Führen Sie diese Schritte aus, um mit Azure Migrate mit einer Servermigrationsb
 
 ::: zone-end
 
-## <a name="service-map"></a>Dienstzuordnung
+### <a name="service-map"></a>Dienstzuordnung
 
 Service Map ermittelt automatisch Anwendungskomponenten auf Windows- und Linux-Systemen und stellt die Kommunikation zwischen Diensten dar. Mit Service Map können Sie die Server Ihrer Vorstellung gemäß anzeigen – als verbundene Systeme, die wichtige Dienste bereitstellen. Dienstzuordnung zeigt Verbindungen zwischen Servern, Prozessen, ein- und ausgehende Verbindungslatenz und Ports über die gesamte TCP-Verbindungsarchitektur an. Außer der Installation eines Agents ist keine weitere Konfiguration erforderlich.
 
 Für Azure Migrate wird die Dienstzuordnung verwendet, um die Berichterstellungsfunktionen und Abhängigkeiten für die Umgebung zu verbessern. Diese Integration ist unter [Visualisierung von Abhängigkeiten](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization) ausführlich beschrieben. Wenn Sie den Azure Migrate-Dienst verwenden, können Sie ohne weitere Schritte die Dienstzuordnung konfigurieren und ihre Vorteile nutzen. Die folgenden Anweisungen dienen als Referenz, falls Sie die Dienstzuordnung für andere Zwecke oder Projekte verwenden möchten.
 
-### <a name="enable-dependency-visualization-using-service-map"></a>Aktivieren der Visualisierung von Abhängigkeiten mithilfe der Dienstzuordnung
+#### <a name="enable-dependency-visualization-using-service-map"></a>Aktivieren der Visualisierung von Abhängigkeiten mithilfe der Dienstzuordnung
 
 Zur Verwendung der Visualisierung von Abhängigkeiten müssen Sie Agents auf alle lokalen Computer, die Sie analysieren möchten, herunterladen und dort installieren.
 
@@ -85,12 +85,12 @@ Zur Verwendung der Visualisierung von Abhängigkeiten müssen Sie Agents auf all
 
 <!-- markdownlint-disable MD024 -->
 
-### <a name="learn-more"></a>Weitere Informationen
+#### <a name="learn-more"></a>Weitere Informationen
 
 - [Verwenden der Dienstzuordnungslösung in Azure](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
 - [Azure Migrate und Dienstzuordnung: Visualisierung von Abhängigkeiten](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
 
-# <a name="challenge-assumptions"></a>[Hinterfragen von Annahmen](#tab/Challenge-Assumptions)
+## <a name="challenge-assumptions"></a>[Hinterfragen von Annahmen](#tab/Challenge-Assumptions)
 
 Bei einer idealen Migration wäre jede Ressource (Infrastruktur, App oder Daten) mit einer Cloudplattform kompatibel und migrations- oder modernisierungsfähig. In der Praxis sollte jedoch nicht jede Workload in die Cloud migriert werden. Nicht jede Ressource ist mit Cloudplattformen kompatibel. Vor der Migration einer Workload in die Cloud ist es wichtig, alle Workloads und alle zugehörigen Ressourcen (Infrastruktur, Apps und Daten) zu bewerten.
 
@@ -98,15 +98,15 @@ In der [Planmethodik des Cloud Adoption Framework](../../plan/index.md) wird die
 
 Die obigen Links deuten darauf hin, dass Annahmen akzeptabel sind und während der Planungsphase der Migration häufig empfohlen werden. Jetzt ist es jedoch an der Zeit, etwas zu tun. Diese Annahmen sollten vor der Migration zur Cloud für jede Workload hinterfragt werden.
 
-## <a name="two-steps-of-incremental-rationalization"></a>Zwei Schritte der inkrementellen Rationalisierung
+### <a name="two-steps-of-incremental-rationalization"></a>Zwei Schritte der inkrementellen Rationalisierung
 
 Zwei gleich wichtige Schritte sind erforderlich, um die [inkrementelle Rationalisierung](../../digital-estate/rationalize.md#incremental-rationalization) erfolgreich bereitzustellen. Beide Schritte erfordern Daten und Erkenntnisse zur Umgebung. Bei jedem Ansatz werden jedoch die Zeit und die Detailgranularität berücksichtigt, die bei einer erfolgreichen Migration erforderlich sind.
 
-- [Releaseplanung – Zehn Anwendungen](../../digital-estate/rationalize.md#release-planning): Während der anfänglichen Rationalisierung und der Releaseplanung kommt nur eine der [fünf Phasen der Rationalisierung](../../digital-estate/5-rs-of-rationalization.md) zum Einsatz. Schätzen und planen Sie basierend auf der Rationalisierungsoption, die am besten mit den im [Dokument zur Cloudeinführungsstrategie](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) definierten Beweggründen übereinstimmt.
+- [Releaseplanung – Zehn Anwendungen](../../digital-estate/rationalize.md#release-planning): Während der anfänglichen Rationalisierung und der Releaseplanung kommt nur eine der [fünf Phasen der Rationalisierung](../../digital-estate/5-rs-of-rationalization.md) zum Einsatz. Schätzen und planen Sie basierend auf der Rationalisierungsoption, die am besten mit den in der [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) definierten Beweggründen übereinstimmt.
 
 - **Ausführliche Bewertung der einzelnen Workloads:** Die mit der Releaseplanung „Zehn Anwendungen“ verbundenen Annahmen sind annehmbar, um einen Plan zu erstellen. Diese Annahmen können jedoch signifikante Probleme verursachen, wenn sie vor der Migration nicht ausgewertet werden.
 
-## <a name="challenge-assumptions-and-update-the-plan"></a>Hinterfragen von Annahmen und Aktualisieren des Plans
+### <a name="challenge-assumptions-and-update-the-plan"></a>Hinterfragen von Annahmen und Aktualisieren des Plans
 
 Überprüfen Sie die Bewertungsdaten in Azure Migrate oder dem gewählten Bewertungstool. Diese Daten bieten Erkenntnisse zu Kompatibilitätsproblemen, Wartungsanforderungen, Vorschläge zur Größenanpassung und andere Überlegungen.
 
@@ -114,17 +114,17 @@ Setzen Sie vor der Migration diese Daten zusammen mit den Gesprächen zur Ermitt
 
 Der erste Schritt beim Hinterfragen dieser Annahmen ist eine [Überprüfung aller fünf Phasen der Rationalisierung](../../digital-estate/rationalize.md).
 
-    - Funktioniert der angenommene Rationalisierungsansatz für diese Workload? Ist er der beste Ansatz?
-    - Wirkt sich eine der [physikalischen Grundlagen der Replikation](../migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication) auf die Migration dieser Workload aus?
-    - Sind für diese Workload [Korrekturmaßnahmen](../migration-considerations/assess/evaluate.md) vor der Migration erforderlich?
+- Funktioniert der angenommene Rationalisierungsansatz für diese Workload? Ist er der beste Ansatz?
+- Wirkt sich eine der [physikalischen Grundlagen der Replikation](../migration-considerations/migrate/replicate.md#replication-risks---physics-of-replication) auf die Migration dieser Workload aus?
+- Sind für diese Workload [Korrekturmaßnahmen](../migration-considerations/assess/evaluate.md) vor der Migration erforderlich?
 
 Solche Fragen helfen Ihnen dabei, Annahmen zu hinterfragen und die beste Vorgehensweise für jede Workload zu ermitteln.
 
 Eine erweiterte Liste mit Fragen und einen definierten Prozess für die Überprüfung von Annahmen finden Sie unter [Validierung von Bewertungsannahmen vor der Migration](../migration-considerations/assess/index.md).
 
-# <a name="scenarios-and-stakeholders"></a>[Szenarien und Beteiligte](#tab/Scenarios)
+## <a name="scenarios-and-stakeholders"></a>[Szenarien und Beteiligte](#tab/Scenarios)
 
-## <a name="scenarios"></a>Szenarien
+### <a name="scenarios"></a>Szenarien
 
 In diesem Leitfaden werden die folgenden Szenarien behandelt:
 
@@ -141,7 +141,7 @@ Durch den Aufbau eines Cloudstrategieteams aus diesen wichtigen Projektbeteiligt
 
 Weitere Informationen zur Vorbereitung Ihrer Organisation auf die Cloudmigration finden Sie unter [Erstausrichtung der Organisation](../../plan/initial-org-alignment.md) des Frameworks für die Cloudeinführung.
 
-# <a name="timelines"></a>[Zeitpläne](#tab/Timelines)
+## <a name="timelines"></a>[Zeitpläne](#tab/Timelines)
 
 Kunden können das in dieser Anleitung beschriebene Migrationsszenario in der Regel in einem bis sechs Monaten umsetzen.
 
@@ -153,7 +153,7 @@ Bei der Bewertung des Zeitplans der Migration ist u. a.Folgendes zu berücksich
 - **Change Management:** Hat Ihr Unternehmen spezifische Anforderungen an die Implementierung und Genehmigung von Änderungen?
 - **Branchenvorschriften:** Müssen Sie Segment- oder Branchenvorschriften einhalten?
 
-# <a name="cost-management"></a>[Kostenmanagement](#tab/ManageCost)
+## <a name="cost-management"></a>[Kostenmanagement](#tab/ManageCost)
 
 Die Bewertung Ihrer Umgebung ist eine Möglichkeit, um einen Schritt zur Kostenanalyse einzuschließen. Anhand der bei den Bewertungsprozessen erfassten Daten sollten Sie in der Lage sein, die Kosten zu analysieren und vorherzusagen. Diese Kostenvorhersage sollte sowohl die verbrauchsbasierten Dienstkosten als auch alle einmaligen Kosten (z. B. erhöhter Dateneingang) berücksichtigen.
 

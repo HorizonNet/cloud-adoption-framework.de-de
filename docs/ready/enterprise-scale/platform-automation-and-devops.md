@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 743665aa8872fd16f55339041fa14d3e4dc01645
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: c8031c619eb419f72852fd8cd70e5540a80930d2
+ms.sourcegitcommit: 4bbd5f6444d033ef1f38dc6f3bad7b914a82f68f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075984"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "86128089"
 ---
 # <a name="platform-automation-and-devops"></a>Plattformautomatisierung und DevOps
 
@@ -21,7 +21,7 @@ _Abbildung 1: Plattformautomatisierung und DevOps_
 
 ## <a name="planning-for-a-devops-approach"></a>Planen eines DevOps-Ansatzes
 
-Viele traditionelle Modelle für den IT-Betrieb sind nicht mit der Cloud kompatibel, und die Kunden müssen betriebliche und organisatorische Veränderungen vornehmen, um die Migrationsziele des Unternehmens zu erreichen. Es wird dringend empfohlen, sowohl für Anwendungsteams als auch für zentrale Teams einen DevOps-Ansatz zu wählen.
+Viele traditionelle Modelle für den IT-Betrieb sind nicht mit der Cloud kompatibel, und die Organisationen müssen betriebliche und organisatorische Veränderungen vornehmen, um die Migrationsziele des Unternehmens zu erreichen. Es wird dringend empfohlen, sowohl für Anwendungsteams als auch für zentrale Teams einen DevOps-Ansatz zu wählen.
 
 **Überlegungen zum Entwurf:**
 
@@ -31,7 +31,7 @@ Viele traditionelle Modelle für den IT-Betrieb sind nicht mit der Cloud kompati
 
 - Investitionen in technische Funktionen und Ressourcen sind von entscheidender Bedeutung.
 
-- Der Kunde kann interne und externe DevOps-Rollen und -Funktionen aus einer Vielzahl von Quellen zusammenstellen, die der Strategie der Organisation entsprechen.
+- Sie können interne und externe DevOps-Rollen und -Funktionen aus einer Vielzahl von Quellen zusammenstellen, die der Strategie Ihrer Organisation entsprechen.
 
 - Für einige Legacy-Apps verfügt das zugehörige App-Team möglicherweise nicht über die technischen Ressourcen, die für die Anpassung an eine DevOps-Strategie erforderlich sind.
 
@@ -83,7 +83,7 @@ Richten Sie ein funktionsübergreifendes DevOps Plattformteam ein, um Ihre unter
 
   - Netzwerkverwaltung (App-Ressourcen)
 
-  - In einigen Fällen möchten Kunden AppDevOps möglicherweise in feiner abgestuften Rollen aufteilen, z. B. AppDataOps für die Datenbankverwaltung mit traditionellen Datenbankadministratorrollen oder AppSecOps, wenn es sich um Anwendungen mit höheren Sicherheitsanforderungen handelt.
+  - In einigen Fällen möchten Sie AppDevOps möglicherweise in feiner abgestuften Rollen aufteilen, z. B. AppDataOps für die Datenbankverwaltung mit traditionellen Datenbankadministratorrollen oder AppSecOps, wenn es sich um Anwendungen mit höheren Sicherheitsanforderungen handelt.
 
 - Stellen Sie eine zentrale App-DevOps-Funktion zur Unterstützung von Apps bereit, für die weder DevOps-Fähigkeiten vorhanden sind noch ein Geschäftsfall vorliegt, um diese Fähigkeiten bereitzustellen (z. B. Legacy-Apps mit minimalem Entwicklungsbedarf).
 
@@ -97,7 +97,7 @@ Richten Sie ein funktionsübergreifendes DevOps Plattformteam ein, um Ihre unter
 
 ## <a name="define-central-and-federated-responsibilities"></a>Definieren von zentralen und dezentralen Zuständigkeiten
 
-Die Verteilung von Rollen, Zuständigkeiten und Vertrauensbeziehungen zwischen zentralen IT-Teams und App-Teams ist von entscheidender Bedeutung für die operativen Veränderungen, die Kunden bei der Einführung der Cloud im großen Stil durchlaufen müssen.
+Die Verteilung von Rollen, Zuständigkeiten und Vertrauensbeziehungen zwischen zentralen IT-Teams und App-Teams ist von entscheidender Bedeutung für die operativen Veränderungen, die Ihre Organisation bei der Einführung der Cloud im großen Stil durchlaufen müssen.
 
 **Überlegungen zum Entwurf:**
 

@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4e3c9b7e924f1285389430ea9aae93cdecffea89
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: fc04c5fa27425ebdbaa82f5b98f8e526e4695f9a
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222010"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233272"
 ---
 <!-- cSpell:ignore Getting Started -->
 
@@ -24,7 +24,7 @@ Es gibt vier verschiedene Prozesse, die in der Migrationsmethodik iterativ abges
 
 ## <a name="prerequisites-skilling-resources"></a>Voraussetzungen betreffende Ressourcen zur Befähigung
 
-Die Implementierung von „Migration“-Prozessen baut auf den Qualifikationen auf, die in den Phasen [Planung](../strategy/suggested-skills.md) und [Bereitschaft](../organize/suggested-skills.md) der Migrationsjourney erworben wurden.
+Die Implementierung von Prozessen der Migrationsmethodik baut auf den Qualifikationen auf, die in den Phasen [Planung](../strategy/suggested-skills.md) und [Bereitschaft](../organize/suggested-skills.md) der Migrationsjourney erworben wurden.
 
 ## <a name="assess-skilling-resources"></a>Ressourcen zur Befähigung zum Bewerten
 
@@ -39,7 +39,7 @@ Die folgenden Tools können dem Team dabei helfen, Bewertungen auszuführen:
 Während der Bewertungsprozesse entwerfen Architekten Lösungen für die einzelnen Workloads. Die folgenden Ressourcen zur Befähigung können Architekten auf diese Aufgaben vorbereiten:
 
 - [Grundlagen der Cloudarchitektur](https://www.pluralsight.com/courses/cloud-architecture-foundations): Ein Pluralsight-Kurs zur Unterstützung bei der Entwicklung der richtigen grundlegenden Lösungen.
-- [Microsoft Azure-Architektur – Erste Schritte](https://www.pluralsight.com/courses/azure-architecture-getting-started): Ein Pluralsight-Kurs, der Architekten Grundlagenwissen zur Azure-Architektur vermittelt.
+- [Microsoft Azure-Architektur: Erste Schritte](https://www.pluralsight.com/courses/azure-architecture-getting-started): Ein Pluralsight-Kurs, der Architekten Grundlagenwissen zur Azure-Architektur vermittelt.
 - [Entwerfen von Migrationsvorgängen für Microsoft Azure](https://www.pluralsight.com/courses/microsoft-azure-migrations-designing): Ein Pluralsight-Kurs zur Unterstützung von Architekten beim Entwurf einer Migrationslösung.
 
 ## <a name="migrate-skilling-resources"></a>Ressourcen zur Befähigung zum Migrieren
