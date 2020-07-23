@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 65a201886f9cbc67a58aa5bd14f53e928d4495b8
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 2e20b63bed8ef337f89546049632dd2c8babf539
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076505"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233544"
 ---
 # <a name="get-started-accelerate-migration"></a>Erste Schritte: Beschleunigen der Migration
 
@@ -254,7 +254,7 @@ Mithilfe der in diesem Leitfaden beschriebenen Schritte können Ihre Teams ihre 
 
 Das Cloud Adoption Framework ist eine Lebenszykluslösung. Es kann Ihnen dabei helfen, eine Migration zu beginnen. Es kann Ihnen aber auch helfen, die Reife der Teams, die die Migrationsbemühungen unterstützen, zu fördern. Die folgenden Teams können die nächsten Schritte ausführen, um ihre Anstrengungen noch weiter zu optimieren. Diese parallelen Prozesse sind nicht linear und sollten nicht als Hindernisse betrachtet werden. Stattdessen handelt es sich jeweils um einen parallelen Wertstrom, der dazu beiträgt, die allgemeine Bereitschaft Ihres Unternehmens für die Cloud zu verbessern.
 
-| Team  | Nächste Iteration |
+| Team | Nächste Iteration |
 |---|---|
 | Cloudeinführungsteam&nbsp;&nbsp; | [Prozessverbesserungen](../migrate/migration-considerations/index.md) bieten Einblicke auf dem Weg zu einer Migrationsfactory mit effizienten fortlaufenden Migrationsfunktionen. |
 | Cloudstrategieteam&nbsp;&nbsp; | Die [Strategiemethodik](../strategy/index.md) und die [Planungsmethodik](../plan/index.md) sind iterative Prozesse, die sich mit dem Einführungsplan weiterentwickeln. Kehren Sie zu diesen Übersichtsseiten zurück, und führen Sie Ihre geschäftlichen und technischen Strategien weiter aus. |

@@ -7,14 +7,14 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9b73743b9616d01a92b570f0022bdb72fd0372bf
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 4beabe757ae299dac06cbcdc1764ffa786ca5c74
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215890"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86235312"
 ---
-# <a name="prepare-for-cultural-complexity-aligning-roles-and-responsibilities"></a>Vorbereiten auf kulturelle Komplexität: Abstimmen von Rollen und Zuständigkeiten
+# <a name="prepare-for-cultural-complexity-aligning-roles-and-responsibilities"></a>Vorbereiten auf die kulturelle Komplexität: Ausrichten von Rollen und Zuständigkeiten
 
 Grundkenntnisse der Kultur, die für den Betrieb der vorhandenen Rechenzentren erforderlich ist, sind für den Erfolg jeder Migration von großer Bedeutung. In einigen Organisationen ist die Verwaltung von Rechenzentren Aufgabe zentraler IT-Betriebsteams. In diesen zentralen Teams sind die Rollen und Zuständigkeiten innerhalb des Teams klar definiert und bekannt. Bei größeren Unternehmen, insbesondere solchen, die an Complianceanforderungen Dritter gebunden sind, ist die Kultur tendenziell facettenreicher und komplexer. Kulturelle Komplexität kann zu Hindernissen führen, die schwer zu verstehen und nur mit großem Zeitaufwand zu überwinden sind.
 
@@ -43,7 +43,7 @@ Letztlich ist das Cloudeinführungsteam für jede dieser Aktivitäten verantwort
 Jeder Prozess im Rahmen der Besprechung der Migrationsprinzipien des Framework für die Cloudeinführung beinhaltet einen Prozessartikel, in dem spezifische Aktivitäten zur Abstimmung von Rollen und Zuständigkeiten beschrieben sind. Aus Gründen der Eindeutigkeit während der Ausführung sollten jeder Aktivität eine einzige verantwortliche Partei sowie alle verantwortlichen Parteien, die zur Unterstützung dieser Aktivitäten erforderlich sind, zugewiesen werden. Die folgende Liste enthält eine Reihe allgemeiner Rollen und Zuständigkeiten, die eine stärkere Auswirkung auf die Durchführung der Migration haben. Diese Rollen sollten in einer frühen Phase der Migration festgelegt werden.
 
 > [!NOTE]
-> In der folgenden Tabelle sollte eine verantwortliche Partei mit der Abstimmung von Rollen beginnen. Diese Spalte sollte an die bestehenden Prozesse angepasst werden, um eine effiziente Ausführung zu gewährleisten. Im Idealfall sollte eine einzelne Person als verantwortliche Partei benannt werden.
+> In der folgenden Tabelle sollte eine verantwortliche Partei mit der Abstimmung von Rollen beginnen. Diese Spalte sollte an die bestehenden Prozesse angepasst werden, um eine effiziente Ausführung zu gewährleisten. Im Idealfall sollte eine einzelne Person als verantwortliche Partei zugewiesen werden.
 
 | Prozess | Aktivität | BESCHREIBUNG | Verantwortliche Partei |
 |---------|---------|---------|---------|

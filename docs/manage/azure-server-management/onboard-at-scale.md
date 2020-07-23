@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 83739453ac8d9466c01656788a22baaec4e78e5a
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 7315046a8ddb1d314c11a7a2ef17ea636270e73d
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84785428"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193642"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -50,7 +50,7 @@ Azure Policy verfügt über eine [integrierte Richtlinieninitiative](https://doc
 
 So weisen Sie die im vorherigen Abschnitt beschriebenen Richtlinien zu
 
-1. Navigieren Sie im Azure-Portal zu **Azure Policy** > **Zuweisungen** > **Initiative zuweisen**.
+1. Navigieren Sie im Azure-Portal zu **Richtlinie** > **Zuweisungen** > **Initiative zuweisen**.
 
     ![Screenshot: Benutzeroberfläche für Richtlinien im Portal](./media/onboarding-at-scale1.png)
 
@@ -66,7 +66,7 @@ So weisen Sie die im vorherigen Abschnitt beschriebenen Richtlinien zu
 
     ![Screenshot: Benutzeroberfläche für Richtlinien im Portal](./media/onboarding-at-scale3.png)
 
-6. Aktivieren Sie das Kontrollkästchen **Speicherort der verwalteten Identität**. Wenn diese Richtlinie den Typ `[DeployIfNotExists](https://docs.microsoft.com/azure/governance/policy/concepts/effects#deployifnotexists)` aufweist, ist für die Bereitstellung der Richtlinie eine verwaltete Identität erforderlich. Im Portal wird das Konto gemäß der Auswahl des Kontrollkästchens erstellt.
+6. Aktivieren Sie das Kontrollkästchen **Speicherort der verwalteten Identität**. Wenn diese Richtlinie den Typ [`DeployIfNotExists`](https://docs.microsoft.com/azure/governance/policy/concepts/effects#deployifnotexists) aufweist, ist für die Bereitstellung der Richtlinie eine verwaltete Identität erforderlich. Im Portal wird das Konto gemäß der Auswahl des Kontrollkästchens erstellt.
 
 7. Wählen Sie **Zuweisen** aus.
 

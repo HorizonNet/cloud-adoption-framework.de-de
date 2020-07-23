@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 83ce5d4a2c4cb44ebd66f1f784002660bad6c86f
-ms.sourcegitcommit: 7660521b631ea092fb805df9c9d28ad3024287ff
+ms.openlocfilehash: d838b2bf1e05152fc9273746b264d8f2da3b77e5
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83621660"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194628"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Nachverfolgen von Kosten für Geschäftseinheiten, Umgebungen oder Projekte
 
@@ -28,7 +28,7 @@ Ressourcen sind alle virtuellen Computer, Datenquellen und Anwendungen, die in d
 
 ### <a name="classification"></a>Klassifizierung
 
-_Tagging_ ist eine einfache Möglichkeit zum Klassifizieren von Ressourcen. Beim Tagging werden einer Ressource Metadaten zugeordnet. Diese Metadaten können verwendet werden, um die Ressource anhand verschiedener Datenpunkte zu klassifizieren. Wenn Tags im Rahmen einer Aufgabe für die Kostenverwaltung zum Klassifizieren von Ressourcen verwendet werden, benötigen Unternehmen häufig die folgenden Tags: Geschäftseinheit, Abteilung, Abrechnungscode, Geografie, Umgebung, Projekt, Workload oder „Anwendungskategorisierung“. Azure Cost Management kann diese Tags zum Erstellen von verschiedenen Ansichten der Kostendaten verwenden.
+_Tagging_ ist eine einfache Möglichkeit zum Klassifizieren von Ressourcen. Beim Tagging werden einer Ressource Metadaten zugeordnet. Diese Metadaten können verwendet werden, um die Ressource anhand verschiedener Datenpunkte zu klassifizieren. Wenn Tags im Rahmen einer Aufgabe für die Kostenverwaltung zum Klassifizieren von Ressourcen verwendet werden, benötigen Unternehmen häufig die folgenden Tags: Geschäftseinheit, Abteilung, Abrechnungscode, Geografie, Umgebung, Projekt, Workload oder „Anwendungskategorisierung“. Azure Cost Management und Abrechnung kann diese Tags zum Erstellen von verschiedenen Ansichten der Kostendaten verwenden.
 
 Das Tagging ist das wichtigste Verahren, wenn es um das Verständnis der Daten im Rahmen der Kostenberichterstattung geht. Es ist ein wesentlicher Bestandteil jeder gut verwalteten Umgebung. Darüber hinaus ist dies der erste Schritt zur Erzielung von Governance für eine Umgebung.
 
@@ -75,7 +75,7 @@ Die generell empfohlene bewährte Methode besteht darin, ein Modell mit geringst
 
 <!-- docsTest:ignore Owner Contributor Reader "Cost Management Contributor" "Cost Management Reader" -->
 
-Azure Cost Management unterstützt für jeden der Bereiche die folgenden integrierten Rollen:
+Azure Cost Management und Abrechnung unterstützt für jeden der Bereiche die folgenden integrierten Rollen:
 
 - [Besitzer:](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner) Ermöglicht das Anzeigen von Kosten und das Verwalten sämtlicher Aspekte, einschließlich Kostenkonfiguration.
 - [Mitwirkender](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor): Ermöglicht das Anzeigen von Kosten und das Verwalten sämtlicher Aspekte, z. B. der Kostenkonfiguration, aber ausschließlich der Zugriffssteuerung.
@@ -83,7 +83,7 @@ Azure Cost Management unterstützt für jeden der Bereiche die folgenden integri
 - [Cost Management: Mitwirkender](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-contributor): Ermöglicht das Anzeigen der Kosten und das Verwalten der Kostenkonfiguration.
 - [Cost Management: Leser](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#cost-management-reader): Ermöglicht Ihnen das Anzeigen der Kostendaten und -konfiguration.
 
-Die allgemeine bewährte Methode besteht darin, Mitgliedern aller Teams die Rolle „Kostenverwaltung: Mitwirkender“ zuzuweisen. Mit dieser Rolle wird der Zugriff für die Erstellung und Verwaltung von Budgets und Exporten gewährt, um die Kosten effektiver zu überwachen und zu dokumentieren. Mitglieder des [Cloudstrategieteams](../../organize/cloud-strategy.md) sollten jedoch nur auf „Cost Management: Leser“ festgelegt werden. Das liegt daran, dass Sie nicht am Einrichten von Budgets innerhalb des Azure Cost Management-Tools beteiligt sind.
+Die allgemeine bewährte Methode besteht darin, Mitgliedern aller Teams die Rolle „Kostenverwaltung: Mitwirkender“ zuzuweisen. Mit dieser Rolle wird der Zugriff für die Erstellung und Verwaltung von Budgets und Exporten gewährt, um die Kosten effektiver zu überwachen und zu dokumentieren. Mitglieder des [Cloudstrategieteams](../../organize/cloud-strategy.md) sollten jedoch nur auf „Cost Management: Leser“ festgelegt werden. Das liegt daran, dass Sie nicht am Einrichten von Budgets innerhalb des Tools für Azure Cost Management und Abrechnung beteiligt sind.
 
 ### <a name="scope"></a>`Scope`
 
@@ -115,13 +115,13 @@ Mit den folgenden Bereichs- und Rolleneinstellungen wird die erforderliche Trans
 
 ## <a name="additional-cost-management-resources"></a>Zusätzliche Ressourcen für die Kostenverwaltung
 
-Azure Cost Management ist ein gut dokumentiertes Tool zum Festlegen von Budgets und Erhalten von Einblick in die Cloudkosten für Azure oder AWS. Nachdem Sie Zugriff auf eine gut verwaltete Umgebungshierarchie eingerichtet haben, helfen Ihnen die folgenden Artikel weiter, wenn es um die Verwendung dieses Tools zum Überwachen und Kontrollieren von Kosten geht.
+Azure Cost Management und Abrechnung ist ein gut dokumentiertes Tool zum Festlegen von Budgets und Erhalten von Einblick in die Cloudkosten für Azure oder AWS. Nachdem Sie Zugriff auf eine gut verwaltete Umgebungshierarchie eingerichtet haben, helfen Ihnen die folgenden Artikel weiter, wenn es um die Verwendung dieses Tools zum Überwachen und Kontrollieren von Kosten geht.
 
-### <a name="get-started-with-azure-cost-management"></a>Erste Schritte mit Azure Cost Management
+### <a name="get-started-with-azure-cost-management-and-billing"></a>Erste Schritte mit Azure Cost Management und Abrechnung
 
-Wenn Sie mit der Verwendung von Azure Cost Management beginnen möchten, lesen Sie [Optimieren der Cloudinvestitionen mit Azure Cost Management](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json).
+Wenn Sie mit der Verwendung von Azure Cost Management und Abrechnung beginnen möchten, lesen Sie [Optimieren der Cloudinvestitionen mit Azure Cost Management und Abrechnung](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json).
 
-### <a name="use-azure-cost-management"></a>Azure Cost Management verwenden
+### <a name="use-azure-cost-management-and-billing"></a>Verwenden von Azure Cost Management und Abrechnung
 
 - [Erstellen und Verwalten von Budgets](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets)
 - [Exportieren von Kostendaten](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-export-acm-data)
@@ -130,7 +130,7 @@ Wenn Sie mit der Verwendung von Azure Cost Management beginnen möchten, lesen S
 
 <-- docsTest: „AWS-Kosten und -Verbrauch“ -->
 
-### <a name="use-azure-cost-management-to-govern-aws-costs"></a>Verwenden von Azure Cost Management zum Steuern von AWS-Kosten
+### <a name="use-azure-cost-management-and-billing-to-govern-aws-costs"></a>Verwenden von Azure Cost Management und Abrechnung zum Steuern von AWS-Kosten
 
 - [Einrichten und Konfigurieren der Integration von AWS-Kosten- und -Nutzungsberichten](https://docs.microsoft.com/azure/cost-management-billing/costs/aws-integration-set-up-configure)
 - [Verwalten von AWS-Kosten](https://docs.microsoft.com/azure/cost-management/aws-integration-manage)

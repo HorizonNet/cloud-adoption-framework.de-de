@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a17f1c0293b3807afa912cc25b6f9ebbabd1ebe9
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: a731afb2dc97384a4156f5781a7e13be40f54000
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83754911"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86191330"
 ---
 <!-- cSpell:ignore CDO's CIO's -->
 
@@ -23,11 +23,11 @@ Die folgende Geschichte schildert einen Anwendungsfall für die [Governance wäh
 
 ## <a name="back-story"></a>Hintergrund
 
-Bei der Interaktion mit diesem Unternehmen verlangen Kunden nach mehr Benutzerfreundlichkeit. Die aktuelle Oberfläche führte zum Marktzerfall und hat den Vorstand zur Einstellung eines Chief Digital Officers (CDO) veranlasst. Der CDO arbeitet mit den Marketing- und Vertriebsmitarbeitern zusammen, um eine digitale Transformation voranzutreiben, die benutzerfreundlichere Oberflächen unterstützt. Darüber hinaus habe mehrere Unternehmenseinheiten vor kurzem Data Scientists eingestellt, um Daten zu pflegen und zahlreiche manuelle Funktionen durch Lernen und Vorhersagen zu verbessern. Die IT-Abteilung unterstützt diese Aktivitäten so umfassend wie möglich. Es gibt „Schatten-IT-Aktivitäten“, die außerhalb der erforderlichen Governance- und Sicherheitskontrollen stattfinden.
+Bei der Interaktion mit diesem Unternehmen verlangen Kunden nach mehr Benutzerfreundlichkeit. Die aktuelle Oberfläche führte zum Marktzerfall und hat den Vorstand zur Einstellung eines Chief Digital Officers (CDO) veranlasst. Der CDO arbeitet mit den Abteilungen für Marketing und Vertrieb, um eine digitale Transformation voranzutreiben und ein besseres Benutzererlebnis zu ermöglichen. Darüber hinaus habe mehrere Unternehmenseinheiten vor kurzem Data Scientists eingestellt, um Daten zu pflegen und zahlreiche manuelle Funktionen durch Lernen und Vorhersagen zu verbessern. Die IT-Abteilung unterstützt diese Aktivitäten so umfassend wie möglich. Es gibt „Schatten-IT-Aktivitäten“, die außerhalb der erforderlichen Governance- und Sicherheitskontrollen stattfinden.
 
 Außerdem hat die IT-Organisation ihre eigenen Herausforderungen zu meistern. Die Finanzabteilung plant Kürzungen des IT-Budgets in den nächsten fünf Jahren, die ab diesem Jahr zu Einschnitten in den Ausgaben führen. Im Gegensatz dazu zwingen DSGVO und andere Anforderungen an die Datenhoheit die IT-Abteilung zu Investitionen in Ressourcen in weiteren Ländern, um Daten lokalisieren zu lassen. In zwei der bestehenden Rechenzentren sind Hardwareaktualisierungen überfällig, was zu Problemen bei der Zufriedenheit von Mitarbeitern und Kunden führt. Für drei weitere Rechenzentren sind Hardwareaktualisierungen im Rahmen der Ausführung des Fünf-Jahres-Plans erforderlich. Der Leiter der Finanzabteilung (CFO) drängt die Leiterin der IT-Abteilung (CIO) dazu, die Cloud als Alternative für diese Rechenzentren in Betracht zu ziehen, um Kapital freizugeben.
 
-Die CIO hat innovative Ideen, die dem Unternehmen helfen können, ist jedoch zusammen mit ihren Teams damit ausgelastet, akute Brände zu löschen und Kosten zu kontrollieren. Bei einem Mittagessen mit dem CDO und einem der Leiter einer Unternehmenseinheit konnte das Gespräch über die Cloudmigration das Interesse der Kollegen des CIO wecken. Die drei Führungskräfte möchten sich mithilfe der Cloud gegenseitig dabei unterstützen, ihre Geschäftsziele zu erreichen, und haben die Untersuchungs- und die Planungsphase der Cloudeinführung eingeleitet.
+Die CIO hat innovative Ideen, die dem Unternehmen helfen können, ist jedoch zusammen mit ihren Teams damit ausgelastet, akute Brände zu löschen und Kosten zu kontrollieren. Bei einem Mittagessen mit dem CDO und einem der Leiter einer Unternehmenseinheit konnte die CIO im Gespräch über die Cloudmigration das Interesse der beiden Kollegen wecken. Die drei Führungskräfte möchten sich mithilfe der Cloud gegenseitig dabei unterstützen, ihre Geschäftsziele zu erreichen, und haben die Untersuchungs- und die Planungsphase der Cloudeinführung eingeleitet.
 
 ## <a name="business-characteristics"></a>Geschäftsmerkmale
 
@@ -47,7 +47,7 @@ Aktuell befinden sich IT und Cloudbetrieb des Unternehmens in folgendem Zustand:
 - Die IT hat die Cloud eingeführt, indem alle E-Mail-Konten der Endbenutzer zu Office 365 migriert wurden. Diese Migration wurde vor mehr als sechs Monaten abgeschlossen. Seit damals wurden nur wenige IT-Ressourcen in der Cloud bereitgestellt.
 - Das primäre Entwicklungsteam des CDO arbeitet in einer Dev/Test-Kapazität, um die nativen Cloudfunktionen kennenzulernen.
 - Eine Unternehmenseinheit experimentiert mit Big Data in der Cloud. Das BI-Team innerhalb der IT ist an diesen Bestrebungen beteiligt.
-- Die vorhandene IT-Governancerichtlinie sieht vor, dass personenbezogene Kundeninformationen und Finanzdaten auf Ressourcen zu hosten sind, die dem Unternehmen direkt gehören. Diese Richtlinie blockiert den Einstieg in die Cloud für unternehmenskritische Apps oder geschützte Daten.
+- Die vorhandene IT-Governancerichtlinie sieht vor, dass personenbezogene Kundeninformationen und Finanzdaten auf Ressourcen zu hosten sind, die dem Unternehmen direkt gehören. Diese Richtlinie blockiert den Einstieg in die Cloud für unternehmenskritische Anwendungen oder geschützte Daten.
 - IT-Investitionen werden größtenteils durch Kapitalkosten gesteuert. Diese Investitionen werden jährlich geplant und umfassen häufig Pläne für die laufende Wartung sowie festgelegte Aktualisierungszyklen von drei bis fünf Jahren, je nach Rechenzentrum.
 - Die meisten Investitionen in Technologie, die dem Jahresplan nicht entsprechen, werden durch Schatten-IT-Aktivitäten getätigt. Dieser Aufwand wird normalerweise von Unternehmenseinheiten verwaltet und durch die Betriebskosten der Unternehmenseinheit abgedeckt.
 

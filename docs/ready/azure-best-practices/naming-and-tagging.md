@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: a0060f6d92b7479158fd46f951e994cc0dcb9d60
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 938bbc706fdb4aa500cb55021ec73d17dcfc6e1e
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076735"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194577"
 ---
 <!-- docsTest:disable -->
 <!-- cSpell:ignore westeurope usgovia accountlookup messagequery -->
@@ -212,7 +212,7 @@ Welche Tags Sie für Ressourcen anwenden und welche Tags erforderlich oder optio
 
 | Tag-Name                  | BESCHREIBUNG                                                                                                                                                                                                          | Schlüssel               | Beispielwert                                              |
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|------------------------------------------------------------|
-| Anwendungsname          | Der Name der Anwendung, des Diensts oder der Workload, mit der die Ressource verknüpft ist.                                                                                                                                       | _ApplicationName_ | _{App-Name}_                                               |
+| Anwendungsname          | Der Name der Anwendung, des Diensts oder der Workload, mit der die Ressource verknüpft ist.                                                                                                                                       | _ApplicationName_ | _{Anwendungsname}_                                               |
 | Name der genehmigenden Person             | Die Person, die für das Genehmigen der Kosten zuständig ist, die mit dieser Ressource verbunden sind.                                                                                                                                                     | _Approver_        | _{E-Mail}_                                                  |
 | Erforderliches/genehmigtes Budget  | Der Geldbetrag, der für diese Anwendung, diesen Dienst oder diese Workload zugeordnet ist.                                                                                                                                                          | _BudgetAmount_    | _{\$}_                                                     |
 | Geschäftseinheit             | Oberste Abteilung Ihres Unternehmens, die Besitzer des Abonnements oder der Workload ist, zu dem oder der die Ressource gehört. In kleineren Unternehmen kann dieses Tag ein einzelnes Organisations- oder freigegebenes Element des Unternehmens auf oberster Ebene darstellen. | _BusinessUnit_    | _FINANZEN_, _MARKETING_, _{Produktname}_ , _CORP_, _FREIGABE_ |
@@ -293,7 +293,7 @@ Der folgende Abschnitt enthält einige Namensbeispiele für häufige Azure-Resso
 | Speicherkonto (Diagnoseprotokolle) | Global | stdiag\<first 2 letters of subscription name and number\>\<region\>\<\#\#\#\> | <li> stdiagsh001usaosten2001 <li> stdiagsh001usawesten001 |
 | Azure StorSimple                  | Global | ssimp\<App Name\>\<Environment\>                                              | <li> ssimpnavigatorprod <li> ssimpemissionenentw |
 
-### <a name="example-names-ai-and-machine-learning"></a>Namensbeispiele: KI und maschinelles Lernen
+### <a name="example-names-ai-and-machine-learning"></a>Namensbeispiele: KI und Machine Learning
 
 | Ressourcentyp                       | `Scope`          | Format                            | Beispiele                                                          |
 |----------------------------------|----------------|-----------------------------------|-------------------------------------------------------------------|

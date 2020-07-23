@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7050b4b40508f9ac133322600625e016c270bb15
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: cee35d0166c8ffa4cd1401c1ccff2ff4bef13ba0
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219562"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193251"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Azure-Serververwaltungstools und -dienste
 
@@ -41,7 +41,7 @@ Zum Schutz Ihrer Daten müssen Sicherung, Hochverfügbarkeit, Verschlüsselung, 
 
 Wenn Sie Datenschutzstrategien erstellen, sollten Sie zunächst überlegen, Ihre Workloadanwendungen in ihre verschiedenen Ebenen aufzuteilen. Dieser Ansatz hilft, da jede Ebene in der Regel einen eigenen, individuellen Schutzplan erfordert. Weitere Informationen über das Entwerfen von robusten Anwendungen finden Sie unter [Entwerfen robuster Anwendungen für Azure](https://docs.microsoft.com/azure/architecture/resiliency).
 
-Der einfachste Datenschutz sind Sicherungen. Sie sollten nicht nur Daten, sondern auch Serverkonfigurationen sichern, um den Wiederherstellungsprozess im Falle eines Serverausfalls zu beschleunigen. Die Sicherung ist ein wirksamer Mechanismus zur Handhabung versehentlicher Datenlöschung und Ransomwareangriffe. [Azure Backup](https://docs.microsoft.com/azure/backup) kann Ihnen beim Schützen von Daten auf Azure- und lokalen Servern unter Windows oder Linux helfen. Weitere Informationen darüber, was Backup leisten kann, und Anleitungen dazu finden Sie in der [Dokumentation zu Azure Backup](https://docs.microsoft.com/azure/backup/backup-overview).
+Der einfachste Datenschutz sind Sicherungen. Sie sollten nicht nur Daten, sondern auch Serverkonfigurationen sichern, um den Wiederherstellungsprozess im Falle eines Serverausfalls zu beschleunigen. Die Sicherung ist ein wirksamer Mechanismus zur Handhabung versehentlicher Datenlöschung und Ransomwareangriffe. [Azure Backup](https://docs.microsoft.com/azure/backup) kann Ihnen beim Schützen von Daten auf Azure- und lokalen Servern unter Windows oder Linux helfen. Weitere Informationen darüber, was Backup leisten kann, und Anleitungen dazu finden Sie in der [Übersicht zum Azure Backup-Dienst](https://docs.microsoft.com/azure/backup/backup-overview).
 
 Die Wiederherstellung über eine Sicherung kann sehr lange dauern. Gemäß Branchenstandard dauert dies in der Regel einen Tag. Wenn eine Workload für Hardware- oder Rechenzentrumsausfälle eine Geschäftskontinuität erfordert, sollten Sie die Verwendung der Datenreplikation in Betracht ziehen. [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) bietet eine fortlaufende Replikation Ihrer VMs – eine Lösung, die minimalen Datenverlust ermöglicht. Site Recovery unterstützt u. a. auch folgende Replikationsszenarien:
 

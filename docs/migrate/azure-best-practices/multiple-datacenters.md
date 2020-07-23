@@ -3,16 +3,16 @@ title: Mehrere Rechenzentren
 description: Mehrere Rechenzentren
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 04/04/2019
+ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2ee44d3e83dde52e03dbe2dffca7edc51899da0e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a84856d4b734ba29333a03d476eafa05420eceb5
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80636433"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194560"
 ---
 # <a name="multiple-datacenters"></a>Mehrere Rechenzentren
 
@@ -36,7 +36,7 @@ Bei einer Umfangserweiterung auf mehrere Rechenzentren steht die größte Änder
 
 ### <a name="suggested-action-during-the-assess-process"></a>Empfohlene Aktion während des Bewertungsprozesses
 
-**Evaluieren von rechenzentrumsübergreifenden Abhängigkeiten**: Die [Tools für die Visualisierung von Abhängigkeiten in Azure Migrate](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization) helfen bei der Ermittlung von Abhängigkeiten. Die Verwendung dieser Tools vor der Migration ist eine allgemeine bewährte Methode. Wenn es aber um globale Komplexität geht, wird diese Verwendung zu einem notwendigen Schritt im Bewertungsprozess. Die Visualisierung durch die [Gruppierung von Abhängigkeiten](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies) kann dabei helfen, die IP-Adressen und Ports aller Assets zu ermitteln, die zur Unterstützung der Workload erforderlich sind.
+**Evaluieren von rechenzentrumsübergreifenden Abhängigkeiten**: Die [Tools für die Visualisierung von Abhängigkeiten in Azure Migrate](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization) helfen bei der Ermittlung von Abhängigkeiten. Die Verwendung dieses Toolsets vor der Migration ist im Allgemeinen eine bewährte Methode. Wenn es aber um globale Komplexität geht, wird diese Verwendung zu einem notwendigen Schritt im Bewertungsprozess. Die Visualisierung durch die [Gruppierung von Abhängigkeiten](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies) kann dabei helfen, die IP-Adressen und Ports aller Assets zu ermitteln, die zur Unterstützung der Workload erforderlich sind.
 
 > [!IMPORTANT]
 > Zwei wichtige Hinweise: Erstens muss ein Experte, der über Kenntnisse zu Assetplatzierung und IP-Adressschemas verfügt, Assets identifizieren, die sich in einem sekundären Rechenzentrum befinden. Zweitens müssen sowohl Downstreamabhängigkeiten als auch Clients in der Visualisierung evaluiert werden, um bidirektionale Abhängigkeiten zu verstehen.

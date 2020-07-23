@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: db7f16e8a283e5b5c7b786ef7097584b85109330
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 88c6225915e023bfd148cc0663c7781a11af730d
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85077227"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86235414"
 ---
 <!-- docsTest:disable TODO -->
 <!-- cSpell:ignore tracsman jonor rossort NVAs iptables WAFs DDOS ITSM LLAP anycast vwan -->
@@ -368,7 +368,7 @@ Die Möglichkeiten für Workloads sind endlos. Im Folgenden finden Sie einige de
 
 ![10][10]
 
-Diese Beispiele beschreiben nicht einmal andeutungsweise die vielfältigen Typen von Workloads, die Sie in Azure erstellen können: Möglich ist alles von einer einfachen Web- und SQL-App bis hin zu aktuellen Entwicklungen in IoT, Big Data, ML, KI und vielem mehr.
+Diese Beispiele beschreiben nicht einmal andeutungsweise die vielfältigen Typen von Workloads, die Sie in Azure erstellen können: Möglich ist alles von einer einfachen Web- und SQL-App bis hin zu aktuellen Entwicklungen in IoT, Big Data, maschinellem Lernen, KI und vielem mehr.
 
 ### <a name="highly-availability-multiple-virtual-datacenters"></a>Hochverfügbarkeit: mehrere virtuelle Rechenzentren
 

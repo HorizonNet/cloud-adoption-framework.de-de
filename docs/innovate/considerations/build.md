@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: e895c3ed8f11f618ca19ae45d9c7cb26acc76925
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 66f1de5c339b237e780bf50c82438ce6831fb3c3
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993962"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193659"
 ---
 <!--docsTest:ignore "Oxford English Dictionary" -->
 
@@ -77,7 +77,7 @@ Bei jeder Iterationen kann eine MVP-Lösung viele verschiedene Formen annehmen. 
 
 In einigen Fällen ist der schnellste Weg zur Innovation die vorübergehende vollständige Vermeidung dieser Disziplinen, bis das Cloudeinführungsteam überzeugt ist, dass die Hypothese sorgfältig überprüft wurde. Von einem Technologieunternehmen wie Microsoft stammend könnte diese Empfehlung kontraintuitiv klingen. Dies bekräftigt jedoch nur, dass Kundenanforderungen, nicht eine bestimmte Technologieentscheidung, bei einer MVP-Lösung die höchste Priorität haben.
 
-In der Regel besteht eine MVP-Lösung aus einer einfachen Web-App oder Datenlösung mit minimalen Funktionen und begrenztem Feinschliff. Für Unternehmen, die über professionelle Entwicklungskompetenz verfügen, ist dies oft der schnellste Weg zum Lernen und Iterieren. Die folgende Liste enthält einige andere Ansätze, die ein Team zur Erstellung eines MVP anwenden kann:
+In der Regel besteht eine MVP-Lösung aus einer einfachen Anwendung oder Datenlösung mit minimalen Funktionen und begrenztem Feinschliff. Für Unternehmen, die über professionelle Entwicklungskompetenz verfügen, ist dies oft der schnellste Weg zum Lernen und Iterieren. Die folgende Liste enthält einige andere Ansätze, die ein Team zur Erstellung eines MVP anwenden kann:
 
 - Ein Vorhersagealgorithmus, der in 99 Prozent der Fälle falsch ist, aber spezifische gewünschte Ergebnisse zeigt.
 - Ein IoT-Gerät, das nicht sicher in Produktionsumgebungen kommunizieren würde, aber den Mehrwert von Daten innerhalb eines Prozesses nahezu in Echtzeit aufzeigen kann.

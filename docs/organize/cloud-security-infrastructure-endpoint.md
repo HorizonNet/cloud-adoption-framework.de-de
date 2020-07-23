@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 427ab031953652c32c77a24e73fb0a0e4cfa10af
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 597dfc5537d7b8d136dde5bd2a199590ccb72ca2
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755435"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194305"
 ---
 # <a name="function-of-cloud-infrastructure-and-endpoint-security"></a>Funktion von Cloudinfrastruktur und Endpunktsicherheit
 
@@ -26,7 +26,7 @@ Softwaredefinierte Rechenzentren und andere Cloudtechnologien helfen bei der Bew
 - **Verwaltung von Sicherheitsrisiken** entwickelt sich zu einem kritischen Teil der generellen Sicherheitsstatusverwaltung.
 - Das **Hinzufügen von Containertechnologien**, die von Infrastruktur- und Netzwerkteams verwaltet und gesichert werden sollen, während die Organisation diese Technologie in der Breite einführt. Ein Beispiel finden Sie unter [Containersicherheit in Security Center](https://docs.microsoft.com/azure/security-center/container-security).
 - **Sicherheits-Agent-Konsolidierung** und Toolvereinfachung, um den Wartungs- und Leistungsaufwand von Sicherheits-Agents und -Tools zu verringern.
-- **Whitelisting von Anwendungen** und interne Netzwerkfilterung lassen sich wesentlich einfacher konfigurieren und für in der Cloud gehostete Server bereitstellen (mithilfe von per Machine Learning generierten Regelsätzen). Azure-Beispiele finden Sie unter [Adaptive Anwendungssteuerung](https://docs.microsoft.com/azure/security-center/security-center-adaptive-application) und [Adaptive Netzwerkhärtung](https://docs.microsoft.com/azure/security-center/security-center-adaptive-network-hardening).
+- **Zulassungslisten von Anwendungen** und interne Netzwerkfilterung lassen sich wesentlich einfacher konfigurieren und für in der Cloud gehostete Server bereitstellen (mithilfe von per Machine Learning generierten Regelsätzen). Azure-Beispiele finden Sie unter [Adaptive Anwendungssteuerung](https://docs.microsoft.com/azure/security-center/security-center-adaptive-application) und [Adaptive Netzwerkhärtung](https://docs.microsoft.com/azure/security-center/security-center-adaptive-network-hardening).
 - **Automatisierte Vorlagen** zum Konfigurieren der Infrastruktur und Sicherheit lassen sich wesentlich leichter mit softwaredefinierten Rechenzentren in der Cloud verwenden. Ein Azure-Beispiel ist [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview).
 - **Just-in-Time (JIT)- und „Just Enough“ (JEA)-Zugriff** ermöglichen die praktische Anwendung der Prinzipien der geringsten Berechtigungen auf privilegierten Zugriff für Server und Endpunkte.
 - Die **Benutzeroberfläche** wird zu einem kritischen Aspekt, da Benutzer zunehmend ihre Endpunktgeräte auswählen oder kaufen können.

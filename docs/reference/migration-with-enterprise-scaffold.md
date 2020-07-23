@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 329f421d5c4755e69a856511718f18c53e8db24b
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 604017caee1225766c2e7bc84b19c09f2a6d4235
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84994030"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194407"
 ---
 <!-- docsTest:disable -->
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
@@ -54,7 +54,7 @@ Die folgende Abbildung zeigt die Komponenten des Gerüsts. Das Fundament ist ein
 
 ## <a name="define-your-hierarchy"></a>Definieren der Hierarchie
 
-Das Gerüst basiert auf der Hierarchie der Azure Enterprise-Registrierung bis hin zu den Abonnements und Ressourcengruppen sowie auf deren Beziehungen untereinander. Die Unternehmensregistrierung definiert die Form und die Nutzung der Azure-Dienste in Ihrem Unternehmen unter vertraglichen Aspekten. Im Rahmen des Enterprise Agreement können Sie die Umgebung weiter in Abteilungen und Konten und in Abonnements und Ressourcengruppen unterteilen, um Ihre Organisationsstruktur widerzuspiegeln.
+Das Gerüst basiert auf der Hierarchie der Enterprise Agreement-Registrierung (EA) bis hin zu den Abonnements und Ressourcengruppen sowie auf deren Beziehungen untereinander. Die Registrierung definiert die Form und die Nutzung der Azure-Dienste in Ihrem Unternehmen unter vertraglichen Aspekten. Im Rahmen des Enterprise Agreement können Sie die Umgebung weiter in Abteilungen und Konten und in Abonnements und Ressourcengruppen unterteilen, um Ihre Organisationsstruktur widerzuspiegeln.
 
 ![Hierarchy](../_images/reference/agreement.png)
 
@@ -64,7 +64,7 @@ Jedes Unternehmen ist anders, und die Hierarchie der oben gezeigten Abbildung l�
 
 ### <a name="departments-and-accounts"></a>Abteilungen und Konten
 
-Die drei allgemeinen Muster für Azure-Registrierungen sind:
+Die drei allgemeinen Muster für EA-Registrierungen sind:
 
 - Das auf **Funktionen** basierende Muster:
 
@@ -169,11 +169,11 @@ In [diesem GitHub-Repository](https://github.com/azure/azure-policy) finden Sie 
 
 Eine der ersten und entscheidendsten Fragen, die Sie sich vor dem Einstieg in die öffentliche Cloud stellen sollten, lautet „Wer darf auf die Ressourcen zugreifen und wie dieser Zugriff gesteuert werden kann. Die Steuerung des Zugriffs auf das Azure-Portal und die Ressourcen im Portal ist entscheidend für die langfristige Sicherheit Ihrer Objekte in der Cloud.
 
-Um den Zugriff auf Ihre Ressourcen zu sichern, konfigurieren Sie zuerst Ihren Identitätsanbieter und dann die Rollen und den Zugriff. Azure Active Directory (Azure AD) – verknüpft mit Ihrem lokalen Active Directory – ist die Grundlage von Identitäten in Azure. Azure AD ist jedoch **nicht** dasselbe wie ein lokales Active Directory, und es ist wichtig zu wissen, was ein Azure AD-Mandant ist und wie Mandanten mit Ihrer Azure-Registrierung in Verbindung stehen. Lesen Sie die Ausführungen zum [Verwalten des Ressourcenzugriffs in Azure](../govern/resource-consistency/resource-access-management.md) durch, um ein umfassendes Verständnis von Azure AD und lokalen Active Directory-Instanzen zu erlangen. Um Ihre lokale Active Directory-Instanz mit Azure AD zu verbinden und zu synchronisieren, installieren und konfigurieren Sie das [Azure AD Connect-Tool](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) lokal.
+Um den Zugriff auf Ihre Ressourcen zu sichern, konfigurieren Sie zuerst Ihren Identitätsanbieter und dann die Rollen und den Zugriff. Azure Active Directory (Azure AD) – verknüpft mit Ihrem lokalen Active Directory – ist die Grundlage von Identitäten in Azure. Azure AD ist jedoch **nicht** dasselbe wie ein lokales Active Directory, und es ist wichtig zu wissen, was ein Azure AD-Mandant ist und wie Mandanten mit Ihrer Registrierung in Verbindung stehen. Lesen Sie die Ausführungen zum [Verwalten des Ressourcenzugriffs in Azure](../govern/resource-consistency/resource-access-management.md) durch, um ein umfassendes Verständnis von Azure AD und lokalen Active Directory-Instanzen zu erlangen. Um Ihre lokale Active Directory-Instanz mit Azure AD zu verbinden und zu synchronisieren, installieren und konfigurieren Sie das [Azure AD Connect-Tool](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) lokal.
 
 ![Diagramm der AD-Architektur](../_images/reference/ad-architecture.png)
 
-Als Azure ursprünglich veröffentlicht wurde, waren Zugriffssteuerungen für ein Abonnement sehr einfach: Administrator oder Co-Administrator. Durch den Zugriff auf ein Abonnement im klassischen Modell war Zugriff auf alle Ressourcen im Portal möglich. Dieses Fehlen einer präziseren Steuerung hat zur Zunahme von Abonnements geführt, um eine angemessene Zugriffssteuerung für eine Azure-Registrierung bereitzustellen. Diese Zunahme von Abonnements ist nicht mehr erforderlich. Mit der rollenbasierten Zugriffssteuerung (Role-Based Access Control, RBAC) können Sie Benutzer zu Standardrollen zuweisen, die Zugriffsrechte als „Besitzer“, „Mitwirkender“ oder „Leser“ gewähren. Sie können auch selbst Rollen erstellen.
+Als Azure ursprünglich veröffentlicht wurde, waren Zugriffssteuerungen für ein Abonnement sehr einfach: Administrator oder Co-Administrator. Durch den Zugriff auf ein Abonnement im klassischen Modell war Zugriff auf alle Ressourcen im Portal möglich. Dieses Fehlen einer präziseren Steuerung hat zur Zunahme von Abonnements geführt, um eine angemessene Zugriffssteuerung für eine Registrierung bereitzustellen. Diese Zunahme von Abonnements ist nicht mehr erforderlich. Mit der rollenbasierten Zugriffssteuerung (Role-Based Access Control, RBAC) können Sie Benutzer zu Standardrollen zuweisen, die Zugriffsrechte als „Besitzer“, „Mitwirkender“ oder „Leser“ gewähren. Sie können auch selbst Rollen erstellen.
 
 Beim Implementieren des rollenbasierten Zugriffs empfiehlt es sich dringend, folgende Punkte zu beachten:
 
@@ -193,8 +193,7 @@ Eines der größten Hindernisse bei der Einführung der Cloud sind seit jeher Be
 
 ### <a name="azure-security-center"></a>Azure Security Center
 
-Das [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) bietet eine einheitliche Ansicht des Sicherheitsstatus aller Ressourcen in Ihrer Umgebung sowie Funktionen für einen erweiterten Schutz vor Bedrohungen. Das Azure Security Center ist eine offene Plattform, über die Microsoft-Partner Softwareanwendungen erstellen können, die eingebunden werden und die Funktionalität erweitern. Die grundlegenden Funktionen von Azure Security Center (kostenloser Tarif) bieten Bewertungen und Empfehlungen, die Ihren Sicherheitsstatus verbessern. Die zahlungspflichtigen Tarife bieten zusätzliche wertvolle Funktionen wie z.B. Just-in-Time-Zugriff und adaptive Anwendungssteuerung (per Whitelists).
-
+Das [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) bietet eine einheitliche Ansicht des Sicherheitsstatus aller Ressourcen in Ihrer Umgebung sowie Funktionen für einen erweiterten Schutz vor Bedrohungen. Das Azure Security Center ist eine offene Plattform, über die Microsoft-Partner Softwareanwendungen erstellen können, die eingebunden werden und die Funktionalität erweitern. Die grundlegenden Funktionen von Azure Security Center (kostenloser Tarif) bieten Bewertungen und Empfehlungen, die Ihren Sicherheitsstatus verbessern. Die zahlungspflichtigen Tarife bieten zusätzliche wertvolle Funktionen wie z. B. Just-in-Time-Zugriff und adaptive Anwendungssteuerung (Zulassungslisten).
 > [!TIP]
 > Azure Security Center ist ein sehr leistungsfähiges Tool, das fortlaufend mit neuen Funktionen verbessert wird, mit denen Sie Bedrohungen erkennen und Ihr Unternehmen schützen können. Es wird dringend empfohlen, Azure Security Center stets zu aktivieren.
 
@@ -253,7 +252,7 @@ Sie können diese Daten auf verschiedenen Ebenen betrachten und Aktionen daraus 
 
 ### <a name="deep-application-monitoring"></a>Umfassende Anwendungsüberwachung
 
-- **Application Insights:** Mit Application Insights können Sie anwendungsspezifische Telemetriedaten sammeln und die Leistung, Verfügbarkeit und Nutzung von Anwendungen in der Cloud oder Ihrer lokalen Umgebung überwachen. Statten Sie zu diesem Zweck Ihre Anwendung mit den unterstützten SDKs für verschiedene Sprachen aus, wie etwa .NET, JavaScript, JAVA, Node.js, Ruby und Python. Application Insights-Ereignisse werden im gleichen Log Analytics-Datenspeicher erfasst, der die Infrastruktur- und Sicherheitsüberwachung unterstützt, sodass Sie Ereignisse mithilfe einer umfangreichen Abfragesprache über einen bestimmten Zeitraum korrelieren und aggregieren können.
+- **Application Insights:** Mit Application Insights können Sie anwendungsspezifische Telemetriedaten sammeln und die Leistung, Verfügbarkeit und Nutzung von Anwendungen in der Cloud oder Ihrer lokalen Umgebung überwachen. Statten Sie zu diesem Zweck Ihre Anwendung mit den unterstützten SDKs für verschiedene Sprachen aus, wie etwa .NET, JavaScript, Java, Node.js, Ruby und Python. Application Insights-Ereignisse werden im gleichen Log Analytics-Datenspeicher erfasst, der die Infrastruktur- und Sicherheitsüberwachung unterstützt, sodass Sie Ereignisse mithilfe einer umfangreichen Abfragesprache über einen bestimmten Zeitraum korrelieren und aggregieren können.
 
 ### <a name="deep-infrastructure-monitoring"></a>Umfassende Infrastrukturüberwachung
 
@@ -289,12 +288,12 @@ Diese Tools stellen Ihnen sofortige Informationen zu Kosten bereit und bieten di
 
 - **Power BI – Azure Consumption Insights:** Möchten Sie selbst Visualisierungen für Ihre Organisation erstellen? Dann ist das Azure Consumption Insights-Inhaltspaket für Power BI das Tool Ihrer Wahl. Mit diesem Inhaltspaket und Power BI können Sie benutzerdefinierte Visualisierungen für Ihre Organisation erstellen, tiefer greifende Kostenanalysen durchführen und weitere Datenquellen zur Erweiterung der Lösung hinzufügen.
 
-- **Azure Consumption-APIs:** Die [Consumption-APIs](https://docs.microsoft.com/rest/api/consumption) bietet programmgesteuerten Zugriff auf die Kosten- und Nutzungsdaten sowie Informationen zu Budgets, reservierten Instanzen und Marketplace-Gebühren. Diese APIs sind nur für Enterprise-Registrierungen und einige Web Direct-Abonnements zugänglich, bieten Ihnen aber die Möglichkeit, Ihre Kostendaten in Ihre eigenen Tools und Data Warehouses zu integrieren. Sie können auch über die [Azure CLI auf diese APIs zugreifen](https://docs.microsoft.com/cli/azure/consumption?view=azure-cli-latest).
+- **Azure Consumption-APIs:** Die [Consumption-APIs](https://docs.microsoft.com/rest/api/consumption) bietet programmgesteuerten Zugriff auf die Kosten- und Nutzungsdaten sowie Informationen zu Budgets, reservierten Instanzen und Marketplace-Gebühren. Diese APIs sind nur für EA-Registrierungen und einige Web Direct-Abonnements zugänglich, bieten Ihnen aber die Möglichkeit, Ihre Kostendaten in Ihre eigenen Tools und Data Warehouses zu integrieren. Sie können auch über die [Azure CLI auf diese APIs zugreifen](https://docs.microsoft.com/cli/azure/consumption?view=azure-cli-latest).
 
 Kunden, die langfristige und erfahrene Cloudanwender sind, befolgen bestimmte Best Practices:
 
 - **Aktive Überwachung der Kosten.** Organisationen, die bereits über viel Erfahrung mit Azure verfügen, überwachen die Kosten fortlaufend und ergreifen bei Bedarf Maßnahmen. Einige Organisationen setzen sogar dediziertes Personal ein, das Analysen durchführt und Änderungen an der Nutzung vorschlägt. Dies macht sich in dem Moment mehr als bezahlt, wenn ein HDInsight-Cluster ermittelt wird, der bereits seit mehreren Monaten ungenutzt ausgeführt wird.
-- **Reservierte VM-Instanzen verwenden.** Ein weiterer wichtiger Faktor für das Kostenmanagement in der Cloud ist die Verwendung des am besten geeigneten Tools für jeden Auftrag. Wenn Sie über eine IaaS-VM verfügen, die rund um die Uhr aktiv bleiben muss, können Sie mit einer reservierten VM-Instanz viel Geld sparen. Um das richtige Gleichgewicht zwischen dem automatischen Herunterfahren von VMs und der Verwendung von reservierten VM-Instanzen zu finden, sind viel Erfahrung und sorgfältige Analysen erforderlich.
+- **Verwenden von Azure Reserved VM Instances** Ein weiterer wichtiger Faktor für das Kostenmanagement in der Cloud ist die Verwendung des am besten geeigneten Tools für jeden Auftrag. Wenn Sie über eine IaaS-VM verfügen, die rund um die Uhr aktiv bleiben muss, können Sie mit einer reservierten Instanz viel Geld sparen. Um das richtige Gleichgewicht zwischen dem automatischen Herunterfahren von VMs und der Verwendung von reservierten Instanzen zu finden, sind viel Erfahrung und sorgfältige Analysen erforderlich.
 - **Effektive Verwendung der Automatisierung.** Viele Workloads müssen nicht jeden Tag ausgeführt werden. Selbst wenn Sie eine VM nur vier Stunden pro Tag abschalten, können Sie 15 % Kosten sparen. Die Automatisierung amortisiert sich sehr schnell.
 - **Verwenden von Ressourcentags für mehr Transparenz.** Wie in diesem Artikel bereits ausgeführt, ermöglicht die Verwendung von Ressourcentags eine bessere Kostenanalyse.
 

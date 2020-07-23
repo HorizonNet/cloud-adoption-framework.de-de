@@ -7,13 +7,17 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 117f8bebd157069703add28348667abe88ddf96e
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a689de5ddf48ff095a59d362571c75791cf10eff
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80432429"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86235295"
 ---
+<!-- cSpell:ignore Eason -->
+
+<!-- docsTest:ignore "Eason Matrix" -->
+
 # <a name="business-change-plan"></a>Geschäftsbezogener Änderungsplan
 
 In der Vergangenheit lag die Veröffentlichung neuer Workloads im Verantwortungsbereich der IT. Auch die Leitung einer tief greifenden Veränderung wie der Migration eines Rechenzentrums oder einer Cloudmigration könnte der IT-Abteilung übertragen werden. Beim herkömmlichen Ansatz könnten aber Möglichkeiten für zusätzliche Unternehmenswerte verpasst werden. Aus diesem Grund wird vor der Umstellung einer migrierten Workload auf die Produktion ein umfassenderer Ansatz für die Benutzereinführung empfohlen. In diesem Artikel werden mögliche Vorteile durch die Umsetzung eines geschäftsbezogenen Änderungsplans für den Standardplan zur Benutzereinführung beschrieben.
@@ -25,8 +29,7 @@ Pläne für die Benutzereinführung konzentrieren sich meist darauf, wie Benutze
 Obwohl Ansätze variieren können, sind allgemeine Schemas in den meisten Plänen zur Benutzereinführung enthalten. Diese Schemas basieren in der Regel auf einer Risikokontrolle und einem Ansatz zur Vereinfachung der Übernahme von inkrementeller Verbesserung. Die Eason-Matrix in der folgenden Abbildung stellt die Ideen hinter diesen Schemas für verschiedene Einführungsarten dar.
 
 ![Eason-Matrix mit Fragen zur Benutzereinführung](../../../_images/migrate/eason-matrix.jpg)
-
-*Eason-Matrix der Arten von Benutzereinführungen*
+_Diagramm: Eason-Matrix der Arten von Benutzereinführungen._
 
 Diese Schemas basieren häufig auf der Annahme, dass sich Benutzer bei der Einführung neuer Lösungen hauptsächlich auf die Risikokontrolle und die Vereinfachung der Veränderung konzentrieren sollten. Darüber hinaus konzentriert sich die IT vor allem auf die Risiken aus der technologischen Änderung sowie deren Umsetzung.
 
@@ -66,6 +69,8 @@ Nachdem die Änderungen für das Geschäft dokumentiert und geplant wurden, kön
 
 ## <a name="references"></a>References
 
-<!-- cSpell:ignore Eason -->
+<!-- docsTest:disable -->
 
-- Eason, K. (1988) _Information technology and organizational change_, New York: Taylor und Francis (Änderungen bei Unternehmenstechnologien und -abläufen).
+- Eason, K. (1988) _Information Technology and Organizational Change_, New York: Taylor und Francis (Änderungen bei Unternehmenstechnologien und -abläufen).
+
+<!-- docsTest:enable -->

@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a995ac179320d8d1a2c81e3d64b3af3c048b5898
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: cd30fda724c94b3c0464267da83ea7e4dd033925
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84994129"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86195104"
 ---
 # <a name="review-your-compute-options"></a>Überprüfen Ihrer Computeoptionen
 
@@ -48,7 +48,7 @@ Die Beantwortung der folgenden Fragen zu Ihren Workloads ist hilfreich, um basie
 
 In der folgenden Tabelle sind einige häufige Nutzungsszenarien und die empfohlenen Computedienste für die Verarbeitung aufgeführt:
 
-| **Szenario** | **Computedienst** |
+| Szenario  | Computedienst |
 | --- | --- |
 | Ich muss virtuelle Linux- und Windows-Computer innerhalb weniger Sekunden mit den gewünschten Konfigurationen bereitstellen. | [Dokumentation zu virtuellen Computern](https://azure.microsoft.com/services/virtual-machines) |
 | Ich muss Hochverfügbarkeit durch automatische Skalierung von Tausenden von VMs in wenigen Minuten erzielen. | [Skalierungsgruppen für virtuelle Computer](https://azure.microsoft.com/services/virtual-machine-scale-sets) |
@@ -78,6 +78,6 @@ Ein Teil ihrer Compliancemaßnahmen kann die Steuerung des physischen Speicheror
 
 Wenn Sie Ihre Landezonenumgebung vorbereiten, können Sie Kontrollelemente einrichten, die einschränken, welche Ressourcen von den einzelnen Benutzern bereitgestellt werden können. Diese Kontrollelemente können Ihnen als Hilfe beim Verwalten von Kosten und Eindämmen von Sicherheitsrisiken dienen, während Entwickler und IT-Teams weiterhin Ressourcen bereitstellen und konfigurieren können, die zum Unterstützen Ihrer Workloads benötigt werden.
 
-Nachdem Sie die Anforderungen Ihrer Landezone identifiziert und dokumentiert haben, können Sie [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) nutzen, um zu steuern, welche Computeressourcen von Benutzern erstellt werden dürfen. Kontrollelemente können [die Erstellung von Computeressourcentypen zulassen oder verweigern](https://docs.microsoft.com/azure/governance/policy/samples/allowed-resource-types). Beispielsweise können Sie festlegen, dass Benutzer nur Azure App Service- oder Azure Functions-Ressourcen erstellen können. Mit Policy können auch die zulässigen Optionen beim Erstellen einer Ressource gesteuert werden, z.B. das [Einschränken der Bereitstellung von SKUs für virtuelle Computer](https://docs.microsoft.com/azure/governance/policy/samples/allowed-skus-storage) oder das [Zulassen nur von bestimmten VM-Images](https://docs.microsoft.com/azure/governance/policy/samples/allowed-custom-images).
+Nachdem Sie die Anforderungen Ihrer Landezone identifiziert und dokumentiert haben, können Sie [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) nutzen, um zu steuern, welche Computeressourcen von Benutzern erstellt werden dürfen. Kontrollelemente können [die Erstellung von Computeressourcentypen zulassen oder verweigern](https://docs.microsoft.com/azure/governance/policy/samples/allowed-resource-types). Beispielsweise können Sie festlegen, dass Benutzer nur Azure App Service- oder Azure Functions-Ressourcen erstellen können. Mit Policy können auch die zulässigen Optionen beim Erstellen einer Ressource gesteuert werden, z.B. das [Einschränken der Bereitstellung von SKUs für virtuelle Computer](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies#compute) oder das [Zulassen nur von bestimmten VM-Images](https://docs.microsoft.com/azure/governance/policy/samples/allowed-custom-images).
 
 Der Bereich von Richtlinien kann auf Ressourcen, Ressourcengruppen, Abonnements oder Verwaltungsgruppen festgelegt werden. Darüber hinaus können diese Richtlinien auch in [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/overview)-Definitionen eingebunden und in der gesamten Cloudumgebung wiederholt angewendet werden.

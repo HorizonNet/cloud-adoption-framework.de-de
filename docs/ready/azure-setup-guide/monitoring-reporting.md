@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 965e2021a03429782352889a15a8632ec1a84641
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 1894872688948e3f4b80d8e52095cf15b40f8f50
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787536"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86372862"
 ---
 <!-- cSpell:ignore timleyden tileyden -->
 
@@ -22,7 +22,7 @@ ms.locfileid: "84787536"
 
 Azure bietet verschiedene Dienste, die zusammen eine umfassende Lösung zum Erfassen, Analysieren und Nutzen von Telemetriedaten aus Ihren Anwendungen und den unterstützenden Azure-Ressourcen bilden. Diese Dienste lassen sich zudem erweitern, um kritische lokale Ressourcen zu überwachen und eine hybride Überwachungsumgebung zu erhalten.
 
-# <a name="azure-monitor"></a>[Azure Monitor](#tab/AzureMonitor)
+## <a name="azure-monitor"></a>[Azure Monitor](#tab/AzureMonitor)
 
 Azure Monitor ist ein separater einheitlicher Hub für alle Überwachungs- und Diagnosedaten in Azure. Sie können Azure Monitor verwenden, um Einblicke in ihre Ressourcen zu erhalten. Mit Azure Monitor können Sie Probleme ermitteln und beheben und die Leistung optimieren. Sie können auch das Kundenverhalten besser verstehen.
 
@@ -45,7 +45,7 @@ Auf dem Azure Marketplace finden Sie noch weitere Lösungen zur Überwachung and
 
 Wechseln Sie zum [Azure-Portal](https://portal.azure.com/#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/overview), um Azure Monitor zu erkunden.
 
-## <a name="learn-more"></a>Weitere Informationen
+### <a name="learn-more"></a>Weitere Informationen
 
 Weitere Informationen finden Sie in der [Azure Monitor-Dokumentation](https://docs.microsoft.com/azure/monitoring-and-diagnostics).
 
@@ -55,13 +55,13 @@ Weitere Informationen finden Sie in der [Azure Monitor-Dokumentation](https://do
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-## <a name="action"></a>Aktion
+### <a name="action"></a>Aktion
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/overview]" submitText="Explore Azure Monitor" :::
 
 ::: zone-end
 
-# <a name="azure-service-health"></a>[Azure Service Health](#tab/AzureServiceHealth)
+## <a name="azure-service-health"></a>[Azure Service Health](#tab/AzureServiceHealth)
 
 Azure Service Health bietet eine personalisierte Darstellung der Integrität der von Ihnen verwendeten Azure-Dienste und -Regionen. In Azure Service Health werden Informationen zu aktiven Problemen veröffentlicht, um Sie über die Auswirkungen auf Ihre Ressourcen zu informieren. Während der Problembehandlung werden Sie mit regelmäßigen Aktualisierungen stets auf dem Laufenden gehalten.
 
@@ -77,7 +77,7 @@ Azure Service Health umfasst Folgendes:
 
 <!-- markdownlint-disable MD024 -->
 
-## <a name="action"></a>Aktion
+### <a name="action"></a>Aktion
 
 Gehen Sie wie folgt vor, um eine Service Health-Warnung einzurichten:
 
@@ -93,18 +93,18 @@ Gehen Sie wie folgt vor, um eine Service Health-Warnung einzurichten:
 
 Wechseln Sie zum [Azure-Portal](https://portal.azure.com/#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/healthalerts), um eine Azure Service Health-Warnung einzurichten.
 
-## <a name="learn-more"></a>Weitere Informationen
+### <a name="learn-more"></a>Weitere Informationen
 
 Weitere Informationen finden Sie unter [Azure Service Health](https://docs.microsoft.com/azure/service-health).
 
 ::: zone-end
 
-# <a name="azure-advisor"></a>[Azure Advisor](#tab/AzureAdvisor)
+## <a name="azure-advisor"></a>[Azure Advisor](#tab/AzureAdvisor)
 
 Azure Advisor ist ein kostenloser, personalisierter Cloudberater, der Sie bei der Einhaltung und Umsetzung bewährter Methoden für Azure-Bereitstellungen unterstützt. Azure Advisor analysiert Ihre Ressourcenkonfiguration sowie Ihre Nutzungstelemetriedaten und empfiehlt Lösungen für die Umgebungsoptimierung. Die Empfehlungen sind in folgende Kategorien unterteilt:
 
 - **Hochverfügbarkeit:** Der Ratgeber hilft, die ununterbrochene Verfügbarkeit Ihrer unternehmenskritischen Anwendungen zu verbessern. Die Empfehlungen können ggf. auch das Hinzufügen von virtuellen Computern zu einer Verfügbarkeitsgruppe oder das Hinzufügen von georedundanten Endpunkten umfassen.
-- **Sicherheit**: Der Ratgeber hilft beim Erkennen von Bedrohungen und Sicherheitsrisiken, die zu Sicherheitslücken führen können. Die Empfehlungen können ggf. das Anwenden einer Datenträgerverschlüsselung oder das Aktivieren von Netzwerksicherheitsgruppen umfassen.
+- **Sicherheit**: Der Ratgeber hilft beim Erkennen von Bedrohungen und Sicherheitsrisiken, die zu Sicherheitslücken führen können. Die Empfehlungen können ggf. das Anwenden einer Azure-Datenträgerverschlüsselung oder das Aktivieren von Netzwerksicherheitsgruppen umfassen.
 - **Leistung:** Der Ratgeber hilft, die Geschwindigkeit Ihrer Anwendungen zu verbessern. Die Empfehlungen können ggf. die Erhöhung der SQL-Abfrageleistung durch die Erstellung von Indizes oder eine Neukonfiguration Ihrer Traffic Manager-Einstellungen umfassen.
 - **Kosten:** Mit dem Ratgeber können Sie Ihre Gesamtausgaben für Azure senken und optimieren. Die Empfehlungen können beispielsweise das Ändern der Größe oder das Herunterfahren von virtuellen Computern mit zu geringer Auslastung oder den Umstieg auf Azure-Reservierungen beinhalten, um die Gesamtkosten zu senken.
 - **Betriebliche Exzellenz:** Zur Verbesserung der Prozess- und Workfloweffizienz und -verwaltbarkeit. Empfehlungen können das Einrichten und Erzwingen von Azure Policy-Regeln, das Reparieren von ungültigen Protokollwarnungsregeln und das Konfigurieren Service Health-Warnungen beinhalten.
@@ -113,7 +113,7 @@ Empfehlungen in Advisor basieren auf den von Ihnen bereitgestellten Ressourcen u
 
 ::: zone target="chromeless"
 
-## <a name="action"></a>Aktion
+### <a name="action"></a>Aktion
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Expert/AdvisorBlade]" submitText="Explore Azure Advisor" :::
 
@@ -123,13 +123,13 @@ Empfehlungen in Advisor basieren auf den von Ihnen bereitgestellten Ressourcen u
 
 Wechseln Sie zum [Azure-Portal](https://portal.azure.com/#blade/Microsoft_Azure_Expert/AdvisorBlade), um Azure Advisor zu erkunden.
 
-## <a name="learn-more"></a>Weitere Informationen
+### <a name="learn-more"></a>Weitere Informationen
 
 Weitere Informationen finden Sie in der [Azure Advisor-Dokumentation](https://docs.microsoft.com/azure/advisor).
 
 ::: zone-end
 
-# <a name="azure-security-center"></a>[Azure Security Center](#tab/AzureSecurityCenter)
+## <a name="azure-security-center"></a>[Azure Security Center](#tab/AzureSecurityCenter)
 
 Azure Security Center spielt auch bei Ihrer Überwachungsstrategie eine wichtige Rolle. Hiermit können Sie die Sicherheit Ihrer Computer und Netzwerke, Ihres Speichers, Ihrer Datendienste und Ihrer Anwendungen überwachen. Security Center ermöglicht eine erweiterte Bedrohungserkennung basierend auf maschinellem Lernen und Verhaltensanalysen, um für Ihre Azure-Ressourcen aktive Bedrohungen zu identifizieren. Darüber hinaus ist ein Schutz vor Bedrohungen vorhanden, bei dem Schadsoftware oder anderer unerwünschter Code blockiert wird und die Fläche für Brute-Force- und andere Netzwerkangriffe verkleinert wird.
 
@@ -139,7 +139,7 @@ Azure Security Center wird in zwei Tarifen angeboten: Free und Standard. Feature
 
 ::: zone target="chromeless"
 
-## <a name="action"></a>Aktion
+### <a name="action"></a>Aktion
 
 **Testen Sie den Standard-Tarif in den ersten 30 Tagen kostenlos.**
 
@@ -153,7 +153,7 @@ Nachdem Sie Sicherheitsrichtlinien für die Ressourcen eines Abonnements aktivie
 
 Wechseln Sie zum [Azure-Portal](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/SecurityMenuBlade/0), um Azure Security Center zu erkunden.
 
-## <a name="learn-more"></a>Weitere Informationen
+### <a name="learn-more"></a>Weitere Informationen
 
 Weitere Informationen finden Sie in der [Azure Security Center-Dokumentation](https://docs.microsoft.com/azure/security-center).
 

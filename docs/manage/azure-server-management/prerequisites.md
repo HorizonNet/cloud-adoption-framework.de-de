@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 1a85c1abd6cadb53df8862ea5eb3558811c7cd87
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 3afc881c3f99d740bf6d9146db2cb5024be56ac8
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075619"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193574"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>Phase 1: Erforderliche Planung für Azure-Serververwaltungsdienste
 
@@ -55,7 +55,7 @@ Beachten Sie bei der Vorbereitung der Arbeitsbereiche und Konten, die Sie für d
 - **Azure-Geografien und Einhaltung gesetzlicher Bestimmungen**: Azure-Regionen sind in _Geografien_ unterteilt. Eine [Azure-Geografie](https://azure.microsoft.com/global-infrastructure/geographies) sorgt dafür, dass Anforderungen an Datenresidenz, Datenhoheit, Compliance und Ausfallsicherheit innerhalb geografischer Grenzen erfüllt werden. Wenn Ihre Workloads der Datenhoheit oder anderen Compliance-Anforderungen unterliegen, müssen der Arbeitsbereich und die Automation-Konten in Regionen innerhalb derselben Azure-Geografie wie die Workloadressourcen bereitgestellt werden, die sie unterstützen.
 - **Anzahl von Arbeitsbereichen**: Als ein Leitprinzip erstellen Sie die minimale Anzahl von Arbeitsbereichen, die pro Azure-Geografie erforderlich sind. Es wird mindestens ein Arbeitsbereich für jede Azure-Geographie empfohlen, in der sich Ihre Compute- oder Speicherressourcen befinden. Diese erste Ausrichtung trägt dazu bei, künftige regulatorische Probleme bei der Migration von Daten in verschiedene Geografien zu vermeiden.
 - **Datenaufbewahrung und Obergrenzen**: Möglicherweise müssen Sie beim Erstellen von Arbeitsbereichen oder Automation-Konten auch Datenaufbewahrungsrichtlinien oder Anforderungen an die Datenobergrenze berücksichtigen. Weitere Informationen zu diesen Prinzipien und zusätzliche Überlegungen bei der Planung Ihrer Arbeitsbereiche finden Sie unter [Verwalten von Protokolldaten und Arbeitsbereichen in Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access).
-- **Regionszuordnung**: Das Verknüpfen eines Log Analytics-Arbeitsbereich und eines Azure Automation-Kontos wird nur zwischen bestimmten Azure-Regionen unterstützt. Wenn beispielsweise der Log Analytics-Arbeitsbereich in der Region `EastUS` gehostet wird, muss das verknüpfte Automation-Konto in der Region `EastUS2` erstellt werden, um mit Verwaltungsdiensten verwendet zu werden. Wenn Sie über ein Automation-Konto verfügen, das in einer anderen Regionen erstellt wurde, kann dafür keine Verknüpfung mit einem Arbeitsbereich in `EastUS` erstellt werden. Die Wahl der Bereitstellungsregion kann die Anforderungen an die Azure-Geografie erheblich beeinflussen. Entscheiden Sie mithilfe der [Regionszuordnungstabelle](https://docs.microsoft.com/azure/automation/how-to/region-mappings), welche Region Ihre Arbeitsbereiche und Automation-Konten hosten soll.
+- **Regionszuordnung**: Das Verknüpfen eines Log Analytics-Arbeitsbereich und eines Azure Automation-Kontos wird nur zwischen bestimmten Azure-Regionen unterstützt. Wenn beispielsweise der Log Analytics-Arbeitsbereich in der Region `East US` gehostet wird, muss das verknüpfte Automation-Konto in der Region `East US 2` erstellt werden, um mit Verwaltungsdiensten verwendet zu werden. Wenn Sie über ein Automation-Konto verfügen, das in einer anderen Regionen erstellt wurde, kann dafür keine Verknüpfung mit einem Arbeitsbereich in `East US` erstellt werden. Die Wahl der Bereitstellungsregion kann die Anforderungen an die Azure-Geografie erheblich beeinflussen. Entscheiden Sie mithilfe der [Regionszuordnungstabelle](https://docs.microsoft.com/azure/automation/how-to/region-mappings), welche Region Ihre Arbeitsbereiche und Automation-Konten hosten soll.
 - **Multihoming für Arbeitsbereiche**: Der Azure Log Analytics-Agent unterstützt Multihoming in einigen Szenarien, für den Agent gelten jedoch mehrere Einschränkungen und Herausforderungen, wenn er in dieser Konfiguration ausgeführt wird. Sofern Microsoft es nicht für Ihr bestimmtes Szenario empfohlen hat, konfigurieren Sie Multihoming nicht für den Log Analytics-Agent.
 
 ## <a name="resource-placement-examples"></a>Beispiele für die Platzierung von Ressourcen

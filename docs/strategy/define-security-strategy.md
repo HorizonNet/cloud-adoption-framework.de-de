@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 45131ce44d9fb65b677b1b85a5dcf2894be0b446
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 16bfbd8b7502978f2c1cab3d031ad7840de04d45
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84994222"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194730"
 ---
 <!-- cSpell:ignore MarkSimos NIST CISO COVID -->
 
@@ -152,7 +152,7 @@ Die Entwicklung eines resilienten Sicherheitsstatus in der Cloud erfordert mehre
 
     Es ist entscheidend, hier richtig vorzugehen, da diese Anwendungen häufig kritische Geschäftsprozesse ermöglichen und entscheidende Geschäftsdaten speichern.
 
-  - **Moderner Umkreis:** Organisationen sollten über einen umfassenden Ansatz zum Schutz von Daten über alle Workloads hinweg verfügen, Organisationen sollten einen modernen Umkreis von konsistenten, zentral verwalteten Identitätskontrollen einrichten, um ihre Daten, Geräte und Konten zu schützen. Dies wird stark beeinflusst durch eine Zero Trust-Strategie, die in [Modul 3 des CISO-Workshops](https://docs.microsoft.com/en-us/security/ciso-workshop/ciso-workshop-module-3) ausführlich diskutiert wird.
+  - **Moderner Umkreis:** Organisationen sollten über einen umfassenden Ansatz zum Schutz von Daten über alle Workloads hinweg verfügen, Organisationen sollten einen modernen Umkreis von konsistenten, zentral verwalteten Identitätskontrollen einrichten, um ihre Daten, Geräte und Konten zu schützen. Dies wird stark beeinflusst durch eine Zero Trust-Strategie, die in [Modul 3 des CISO-Workshops](https://docs.microsoft.com/security/ciso-workshop/ciso-workshop-module-3) ausführlich diskutiert wird.
 
 ### <a name="security-and-trust"></a>Sicherheit und Vertrauenswürdigkeit
 
@@ -250,6 +250,6 @@ In diesem Abschnitt werden die wichtigsten Beziehungen beschrieben, die sich auf
   - **Verwenden mehrerer Clouds:** Viele Organisationen verfolgen faktisch oder absichtlich eine Multicloudstrategie. Dies kann ein absichtliches Ziel sein, um die Abhängigkeit von einem einzelnen Anbieter zu verringern oder um auf einzigartige Fähigkeiten zuzugreifen, kann aber auch passieren, wenn Entwickler bevorzugte oder vertraute Clouddienste gewählt haben oder Ihre Organisation ein anderes Unternehmen erworben hat. Unabhängig von den Gründen kann diese Strategie potenzielle Risiken und Kosten mit sich bringen, die es zu bewältigen gilt, einschließlich:
 
     - **Ausfallzeiten aufgrund mehrerer Abhängigkeiten:** Systeme, die so konzipiert sind, dass sie sich auf mehrere Clouds stützen, sind einem größeren Ausfallrisiko ausgesetzt, da Unterbrechungen bei den Cloudanbietern (oder bei der Nutzung durch Ihr Team) einen Ausfall bzw. eine Unterbrechung Ihres Geschäfts verursachen könnten. Diese erhöhte Systemkomplexität würde auch die Wahrscheinlichkeit von Störungsereignissen erhöhen, da die Teammitglieder ein komplexeres System wahrscheinlich weniger gut verstehen werden.
-    - **Verhandlungsstärke:** Größere Organisationen sollten auch erwägen, ob eine Einzelcloudstrategie (gegenseitige Verpflichtung/Partnerschaft) oder eine Multicloudstrategie (Fähigkeit zur Verlagerung von Geschäften) einen größeren Einfluss auf ihre(n) Cloudanbieter erzielt, damit die Featureanforderungen ihrer Organisation priorisiert werden.
+    - **Verhandlungsstärke:** Größere Organisationen sollten auch erwägen, ob eine Einzelcloudstrategie (gegenseitige Verpflichtung/Partnerschaft) oder eine Multicloudstrategie (Fähigkeit zur Verlagerung von Geschäften) einen größeren Einfluss auf ihre Cloudanbieter erzielt, damit die Featureanforderungen ihrer Organisation priorisiert werden.
     - **Erhöhter Wartungsaufwand:** Die IT- und Sicherheitsressourcen sind bereits jetzt durch ihre bestehende Workload und das Schritthalten mit den Änderungen einer einzelnen Cloudplattform überlastet. Jede zusätzliche Plattform erhöht diesen Zusatzaufwand noch weiter und führt dazu, dass die Teammitglieder von höherwertigen Aktivitäten wie der Rationalisierung technischer Prozesse zur Beschleunigung von Geschäftsinnovationen, der Beratung von Unternehmensgruppen zur effektiveren Nutzung von Technologien usw. abgezogen werden.
     - **Personalfragen und Training:** Organisationen berücksichtigen häufig nicht den Personalbedarf, der für die Unterstützung mehrerer Plattformen erforderlich ist, und das erforderliche Training zur Aufrechterhaltung des Wissens und der Aktualität von neuen Features, die in einem schnellen Tempo veröffentlicht werden.

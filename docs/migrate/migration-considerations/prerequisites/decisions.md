@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c481087665e777a4c461d260e2e558a620fda32c
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 07c9024d1d2af4a19fb1be9a53de6b5da78edd0c
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85077150"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86235397"
 ---
 <!-- cSpell:ignore migrateable -->
 
@@ -24,7 +24,7 @@ Während der Migration wirken sich mehrere Faktoren auf Entscheidungen und Ausf�
 
 Das Ziel einer Einführung kann einen wesentlichen Einfluss auf die empfohlene Vorgehensweise zur Ausführung haben.
 
-- **Migration.** Dringende Geschäftsfaktoren, schnelle Einführung oder Kosteneinsparungen sind Beispiele für operative Ergebnisse. Diese Ergebnisse sind von zentraler Bedeutung für Bemühungen, die den Geschäftswert durch transitive Änderungen im IT-Bereich oder Betriebsmodelle steigern. Der Abschnitt „Migration“ des Framework für die Cloudeinführung konzentriert sich stark auf Geschäftsergebnisse, bei denen die Migration im Mittelpunkt steht.
+- **Migration.** Dringende Geschäftsfaktoren, schnelle Einführung oder Kosteneinsparungen sind Beispiele für operative Ergebnisse. Diese Ergebnisse sind von zentraler Bedeutung für Bemühungen, die den Geschäftswert durch transitive Änderungen im IT-Bereich oder Betriebsmodelle steigern. Die Methode „Migration“ im Framework für die Cloudeinführung konzentriert sich stark auf Geschäftsergebnisse, bei denen die Migration im Mittelpunkt steht.
 - **Anwendungsinnovationen:** Die Verbesserung des Kundenerlebnisses und der wachsende Marktanteil sind Beispiele für inkrementelle Ergebnisse. Die Ergebnisse resultieren aus einer Sammlung von inkrementellen Änderungen, die sich auf die Bedürfnisse und Wünsche der aktuellen Kunden konzentrieren.
 - **Datenbasierte Innovationen:** Neue Produkte oder Dienstleistungen, insbesondere solche, die sich durch die Leistungsfähigkeit von Daten ergeben, sind Beispiele für disruptive Ergebnisse. Diese Ergebnisse stammen von Experimenten und Vorhersagen, bei denen Daten zur Disruption des Status quo auf dem Markt verwendet werden.
 
@@ -52,9 +52,9 @@ Bevor Sie Entscheidungen treffen, die langfristige Auswirkungen auf das aktuelle
 
 ### <a name="effort-type"></a>Aufwandstyp
 
-Bei jeder Migration von bedeutender Größe (über 250 virtuelle Computer) werden Ressourcen mithilfe einer Vielzahl von Übergangsoptionen migriert, die anhand von fünf Rationalisierungsmöglichkeiten erläutert werden: _Zuweisen eines neuen Hosts_, _Umgestalten_, _Umstrukturieren_, _Neuerstellen_ und _Ersetzen_.
+Bei jeder Migration von bedeutender Größe (über 250 virtuelle Computer) werden Ressourcen mithilfe einer Vielzahl von Übergangsoptionen migriert, die anhand von fünf Rationalisierungsmöglichkeiten erläutert werden: _Zuweisen eines neuen Hosts_, _Umgestalten_, _Überarbeiten_, _Neu erstellen_ und _Ersetzen_.
 
-Einige Workloads werden durch einen Prozess der _Neuerstellung_ oder _Umstrukturierung_ modernisiert, wodurch modernere Anwendungen mit neuen Funktionen und technischen Möglichkeiten entstellt werden. Andere Ressourcen durchlaufen einen Prozess der _Umgestaltung_, z. B. eine Umstellung auf Container oder andere modernere Hosting- und Betriebsansätze, die sich nicht unbedingt auf die Codebasis der Lösungen auswirken. Im Allgemeinen durchlaufen virtuelle Computer und andere Ressourcen, die gut etabliert sind, einen Prozess zum _Zuweisen eines neuen Hosts_, bei dem diese Ressourcen vom Rechenzentrum in die Cloud übergehen. Einige Workloads könnten möglicherweise in die Cloud migriert werden, sollten aber stattdessen durch dienstbasierte (SaaS-basierte) Clouddienste _ersetzt_ werden, die derselben Geschäftsanforderung entsprechen, z. B. durch Verwendung von Office 365 als Alternative zur Migration von Exchange Server-Instanzen.
+Einige Workloads werden durch einen Prozess der _Neuerstellung_ oder _Umstrukturierung_ modernisiert, wodurch modernere Anwendungen mit neuen Funktionen und technischen Möglichkeiten entstellt werden. Andere Ressourcen durchlaufen einen Prozess der _Umgestaltung_, z. B. eine Umstellung auf Container oder andere modernere Hosting- und Betriebsansätze, die sich nicht unbedingt auf die Codebasis der Lösungen auswirken. Im Allgemeinen durchlaufen virtuelle Computer und andere Ressourcen, die gut etabliert sind, einen Prozess zum _Zuweisen eines neuen Hosts_, bei dem diese Ressourcen vom Rechenzentrum in die Cloud übergehen. Einige Workloads könnten möglicherweise in die Cloud migriert werden, sollten aber stattdessen durch dienstbasierte (SaaS-basierte) Clouddienste _ersetzt_ werden, die derselben Geschäftsanforderung entsprechen, z. B. durch Verwendung von Office 365 als Alternative zur Migration von Exchange Server-Instanzen.
 
 In den meisten Szenarien erzeugt ein Geschäftsereignis eine zwingende Funktion, die dazu führt, dass ein hoher Prozentsatz der Ressourcen vorübergehend mithilfe des Prozesses zum _Zuweisen eines neuen Hosts_ migriert wird, gefolgt von einem bedeutenderen sekundären Übergang mithilfe einer der anderen Migrationsstrategien, nachdem sie sich in der Cloud befinden. Dieser Prozess wird häufig als ein _Übergang in die Cloud_ bezeichnet.
 
@@ -78,7 +78,7 @@ Dokumentieren Sie vor dem Fortfahren die folgenden Annahmen, und teilen Sie dies
 
 - Geschäftsergebnisse.
 - Rollen, die für die Migrationsprozesse _Bewerten_, _Migrieren_, _Optimieren_ und _Sichern und Verwalten_ dokumentiert und präzisiert sind.
-- Definition of Done, für die Migrationsprozesse _Bewerten_, _Migrieren_, _Optimieren_ und _Sichern und Verwalten_ separat dokumentiert und präzisiert.
+- Definition of Done, separat für diese Migrationsprozesse dokumentiert und optimiert.
 - Aufwandstyp.
 - Aufwandsumfang.
 - Zeitliche Festlegung des Aufwands.

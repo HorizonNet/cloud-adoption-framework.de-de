@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: b396bef511aad0e715f8d4391f26882357da5378
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: d3f772ec4bec79b3f9473d2a0ee6b2a2035f145b
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993378"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194169"
 ---
-# <a name="building-technical-skills"></a>Entwickeln von technischen Fähigkeiten
+# <a name="build-technical-skills"></a>Erwerben von technischen Kompetenzen
 
 Die organisatorische und Umgebungsbereitschaft (technisch) können möglicherweise neue Qualifikationen sowohl für technische als auch für nicht technische Mitwirkende erfordern. Die folgenden Informationen können Ihre Organisation beim Erwerb der erforderlichen Qualifikationen unterstützen.
 
@@ -55,7 +55,7 @@ Die folgenden Informationen beschreiben Ressourcen für zusätzliches Lernen.
 
 ### <a name="typical-mappings-of-cloud-it-roles"></a>Typische Zuordnungen von Cloud-IT-Rollen
 
-Microsoft und seine Partner bieten eine Vielzahl von Optionen für alle Zielgruppen zur Erweiterung ihrer Qualifikationen zur Verwendung von Microsoft Azure-Diensten.
+Microsoft und seine Partner bieten eine Vielzahl von Optionen für alle Zielgruppen zur Erweiterung ihrer Qualifikationen zur Verwendung von Azure-Diensten.
 
 - [Microsoft IT Pro Career Center](https://www.microsoft.com/itpro): Eine kostenlose Onlineressource zur Begleitung Ihres Karrierewegs in der Cloud. Erfahren Sie von Branchenexperten mehr über Ihre Cloudrolle und die benötigten Qualifikationen. Folgen Sie in Ihrem eigenen Tempo einem Lehrplan, um die Fähigkeiten zu erlangen, die Sie benötigen, um auf dem aktuellen Stand zu bleiben.
 

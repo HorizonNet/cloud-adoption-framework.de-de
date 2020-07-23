@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ccc413343ccaf6db5425000c1dca44010976eb79
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 5a193c9b54bac12023130b6e365f866dc8f3ca36
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075580"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86191653"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Cost Management“
 
@@ -57,7 +57,7 @@ Die folgenden Änderungen an der Richtlinie verringern die neuen Risiken und ver
 - Alle Kosten müssen zum Zweck der Rechnungslegung einer Geschäftsfunktion zugeordnet sein.
 - Cloudressourcen sollten fortlaufend auf Optimierungsmöglichkeiten überprüft werden.
 - Cloudgovernancetools müssen die Optionen für die Dimensionierung von Ressourcen auf eine genehmigte Liste mit Konfigurationen beschränken. Die Tools müssen sicherstellen, dass alle Ressourcen ermittelbar sind und von der Kostenüberwachungslösung verfolgt werden.
-- Während der Bereitstellungsplanung sollten alle erforderlichen Cloudressourcen, die dem Hosten von Produktionsworkloads dienen, dokumentiert werden. Diese Dokumentation kann bei der Verfeinerung der Budgets und bei der Vorbereitung zusätzlicher Automatisierungstools helfen, um den Einsatz teurerer Optionen zu vermeiden. Dabei sollten verschiedene vom Cloudanbieter angebotene Diskontierungstools, z.B. reservierte Instanzen oder Lizenzkostenreduzierungen, in Betracht gezogen werden.
+- Während der Bereitstellungsplanung sollten alle erforderlichen Cloudressourcen, die dem Hosten von Produktionsworkloads dienen, dokumentiert werden. Diese Dokumentation kann bei der Verfeinerung der Budgets und bei der Vorbereitung zusätzlicher Automatisierungstools helfen, um den Einsatz teurerer Optionen zu vermeiden. Während dieses Prozesses sollten verschiedene vom Cloudanbieter angebotene Rabattierungstools wie z. B. Azure Reserved Virtual Machine Instances oder Lizenzkostenreduzierungen in Betracht gezogen werden.
 - Alle Besitzer von Anwendungen sind verpflichtet, an Schulungen zu Praktiken zur Optimierung von Workloads teilzunehmen, um die Cloudkosten besser zu kontrollieren.
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>Inkrementelle Verbesserungen der bewährten Methoden

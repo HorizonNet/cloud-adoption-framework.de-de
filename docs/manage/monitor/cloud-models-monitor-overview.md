@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 4eb15ffbbe11f79bcb9ebe198369cc109a10780e
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 07d57372adc8aadcac25f3eb7bd406dabff2a80f
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075302"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233884"
 ---
 <!-- cSpell:ignore savision -->
 
@@ -43,18 +43,14 @@ Durch die Überwachung jeder dieser Abhängigkeiten und das Erfassen der richtig
 
 In der folgenden Tabelle werden die empfohlenen Ansätze zur Überwachung der einzelnen Ebenen des Stapels zusammengefasst:
 
-<!-- markdownlint-disable MD033 -->
-
 | Ebene | Resource | `Scope` | Methode |
 |---|---|---|---|
-| Application | Eine webbasierte Anwendung, die auf der .NET-, .NET Core-, Java-, JavaScript- und Node.js-Plattform auf einem virtuellen Azure-Computer, in Azure App Service, Azure Service Fabric, Azure Functions und Azure Cloud Services ausgeführt wird. | Überwachen einer Livewebanwendung, um automatisch Leistungsanomalien zu erkennen, Codeausnahmen und -probleme zu erkennen und Analysedaten zum Benutzerverhalten zu erfassen. |  Application Insights (ein Feature von Azure Monitor). |
+| Application | Eine webbasierte Anwendung, die auf der .NET-, .NET Core-, Java-, JavaScript- und Node.js-Plattform auf einem virtuellen Azure-Computer, in Azure App Service, Azure Service Fabric, Azure Functions und Azure Cloud Services ausgeführt wird. | Überwachen einer Livewebanwendung, um automatisch Leistungsanomalien zu erkennen, Codeausnahmen und -probleme zu erkennen und Analysedaten zum Benutzerverhalten zu erfassen. | Application Insights (ein Feature von Azure Monitor). |
 | Azure-Ressourcen: Platform-as-a-Service (PaaS) | Azure-Datenbankdienste (z.B. SQL oder MySQL). | Azure-Datenbank für SQL-Leistungsmetriken. | Aktivieren der Diagnoseprotokollierung zum Streamen von SQL-Daten an Azure Monitor-Protokolle. |
 | Azure-Ressourcen: Infrastructure-as-a-Service (IaaS) | 1. Azure Storage <br> 2. Azure Application Gateway <br>  3. Netzwerksicherheitsgruppen <br>  4. Azure Traffic Manager <br>  5. Azure Virtual Machines <br>  6. Azure Kubernetes Service/Azure Container Instances | 1. Kapazität, Verfügbarkeit und Leistung. <br>  2. Leistungs- und Diagnoseprotokolle (Aktivitäten, Zugriff, Leistung und Firewall). <br>  3. Überwachung von Ereignissen bei der Anwendung von Regeln und Regelzähler für die Häufigkeit der Anwendung von Regeln zum Ablehnen oder Zulassen <br>  4. Überwachung der Verfügbarkeit des Endpunktstatus. <br>  5. Überwachung von Kapazität, Verfügbarkeit und Leistung in einem VM-Gastbetriebssystem (OS). Zuordnung von auf den virtuellen Computern gehosteten App-Abhängigkeiten, einschließlich der Sichtbarkeit aktiver Netzwerkverbindungen zwischen Servern, der Latenz für eingehende und ausgehende Verbindungen und der Ports in jeder über TCP verbundenen Architektur. <br>  6. Überwachung von Kapazität, Verfügbarkeit und Leistung von Workloads, die auf Containern und Containerinstanzen ausgeführt werden. | 1. Speichermetriken für Blob Storage <br>  2. Aktivieren der Diagnoseprotokollierung und Konfigurieren des Streamings von Daten an Azure Monitor-Protokolle. <br>  3. Aktivieren der Diagnoseprotokollierung von Netzwerksicherheitsgruppen und Konfigurieren des Streamings von Daten an Azure Monitor-Protokolle. <br>  4. Aktivieren der Diagnoseprotokollierung von Traffic Manager-Endpunkten und Konfigurieren des Streamings von Daten an Azure Monitor-Protokolle. <br>  5. Aktivieren von Azure Monitor für VMs. <br>  6. Aktivieren von Azure Monitor für Container. |
 | Netzwerk | Kommunikation zwischen dem virtuellen Computer und einem oder mehreren Endpunkten (ein anderer virtueller Computer, ein vollqualifizierter Domänenname, ein URI oder eine IPv4-Adresse). | Überwachung von Änderungen der Erreichbarkeit, Latenz und Netzwerktopologie zwischen der VM und dem Endpunkt. | Azure Network Watcher. |
 | Azure-Abonnement | Azure Service Health und grundlegende Ressourcenintegrität. | <li> Für einen Dienst oder eine Ressource durchgeführte Verwaltungsmaßnahmen. <li> Die Dienstintegrität eines Azure-Diensts hat sich verschlechtert, oder er ist nicht verfügbar. <li> Bei einer Azure-Ressource vom Azure-Dienst erkannte Integritätsprobleme. <li> Mit der Azure-Autoskalierung durchgeführte Vorgänge zeigen einen Fehler oder eine Ausnahme an. <li> Mit Azure Policy durchgeführte Vorgänge zeigen an, dass eine zulässige oder abgelehnte Aktion ausgeführt wurde. <li> Datensatz der in Azure Security Center generierten Warnungen. | Im Aktivitätsprotokoll für Überwachung und Warnungen unter Verwendung von Azure Resource Manager bereitgestellt. |
 | Azure-Mandant | Azure Active Directory | Aktivieren der Diagnoseprotokollierung und Konfigurieren des Streamings von Daten an Azure Monitor-Protokolle. |
-
-<!-- markdownlint-enable MD033 -->
 
 ## <a name="hybrid-cloud-monitoring"></a>Überwachen der Hybrid Cloud
 
@@ -72,19 +68,17 @@ Beachten Sie die folgenden wichtigen technischen Aspekte:
 
 In der folgenden Tabelle werden die Anforderungen zusammengefasst, die für Azure Monitor und System Center Operations Manager bei der Überwachung des Hybrid Cloud-Modells basierend auf einem gemeinsamen Satz von Kriterien gelten.
 
-<!-- markdownlint-disable MD033 -->
-
 | Anforderung | Azure Monitor | Operations Manager |
 |---|---|---|
-| Infrastrukturanforderungen | Nein | Ja <br>  Erfordert mindestens einen Verwaltungsserver sowie eine SQL Server-Instanz, um die operative Datenbank und die Reporting-Data Warehouse-Datenbank zu hosten. Die Komplexität nimmt zu, wenn Hochverfügbarkeit und Notfallwiederherstellung erforderlich sind, und es Computer an mehreren Standorten, nicht vertrauenswürdige Systeme und andere komplexe Entwurfsüberlegungen gibt. |
-| Eingeschränkte Konnektivität: kein Internet <br>  oder isoliertes Netzwerk | Nein | Ja |
+| Infrastrukturanforderungen | Nein | Ja <br><br> Erfordert mindestens einen Verwaltungsserver sowie eine SQL Server-Instanz, um die operative Datenbank und die Reporting-Data Warehouse-Datenbank zu hosten. Die Komplexität nimmt zu, wenn Hochverfügbarkeit und Notfallwiederherstellung erforderlich sind, und es Computer an mehreren Standorten, nicht vertrauenswürdige Systeme und andere komplexe Entwurfsüberlegungen gibt. |
+| Eingeschränkte Konnektivität – kein Internet oder isoliertes Netzwerk | Nein | Ja |
 | Eingeschränkte Konnektivität: kontrollierter Internetzugang | Ja | Ja |
 | Eingeschränkte Konnektivität: häufige Unterbrechungen | Ja | Ja |
 | Konfigurierbare Integritätsüberwachung | Nein | Ja |
-| Web-App-Verfügbarkeitstest (isoliertes Netzwerk) | Ja, eingeschränkt <br>  Azure Monitor bietet eingeschränkte Unterstützung in diesem Bereich und erfordert benutzerdefinierte Firewallausnahmen. | Ja |
+| Web-App-Verfügbarkeitstest (isoliertes Netzwerk) | Ja, eingeschränkt <br><br> Azure Monitor bietet eingeschränkte Unterstützung in diesem Bereich und erfordert benutzerdefinierte Firewallausnahmen. | Ja |
 | Web-App-Verfügbarkeitstest (global verteilt) | Nein | Ja |
-| Überwachen von VM-Workloads | Ja, eingeschränkt <br>  Kann IIS- und SQL Server-Fehlerprotokolle, Windows-Ereignisse und Leistungsindikatoren erfassen. Erfordert die Erstellung benutzerdefinierter Abfragen, Warnungen und Visualisierungen. | Ja <br>  Unterstützt die Überwachung der meisten Serverworkloads mit verfügbaren Management Packs. Erfordert entweder den Windows-Agent von Log Analytics oder den Operations Manager-Agent auf der VM und die Rückmeldung an die Verwaltungsgruppe im Unternehmensnetzwerk. |
-| Überwachen von Azure-IaaS | Ja | Ja <br>  Unterstützt die Überwachung der meisten Infrastrukturkomponenten im Unternehmensnetzwerk. Verfolgt Verfügbarkeitsstatus, Metriken und Warnungen für virtuelle Azure-Computer, SQL und Speicher über das Azure-Management Pack. |
+| Überwachen von VM-Workloads | Ja, eingeschränkt <br><br> Kann IIS- und SQL Server-Fehlerprotokolle, Windows-Ereignisse und Leistungsindikatoren erfassen. Erfordert die Erstellung benutzerdefinierter Abfragen, Warnungen und Visualisierungen. | Ja <br><br> Unterstützt die Überwachung der meisten Serverworkloads mit verfügbaren Management Packs. Erfordert entweder den Windows-Agent von Log Analytics oder den Operations Manager-Agent auf der VM und die Rückmeldung an die Verwaltungsgruppe im Unternehmensnetzwerk. |
+| Überwachen von Azure-IaaS | Ja | Ja <br><br> Unterstützt die Überwachung der meisten Infrastrukturkomponenten im Unternehmensnetzwerk. Verfolgt Verfügbarkeitsstatus, Metriken und Warnungen für virtuelle Azure-Computer, SQL und Speicher über das Azure-Management Pack. |
 | Überwachen von Azure-PaaS | Ja | Ja, eingeschränkt <br><br> Richtet sich danach, was im Azure Management Pack unterstützt wird. |
 | Überwachen des Azure-Diensts | Ja | Ja <br><br> Management Packs bieten zwar derzeit keine native Überwachung von Azure Service Health, Sie können aber benutzerdefinierte Workflows erstellen, um Service Health-Warnungen abzufragen. Verwenden Sie die Azure-REST-API, um Warnungen über Ihr vorhandenes Benachrichtigungssystem zu erhalten. |
 | Moderne Webanwendungsüberwachung | Ja | Nein |
@@ -96,8 +90,6 @@ In der folgenden Tabelle werden die Anforderungen zusammengefasst, die für Azur
 | End-to-End-Diagnose, Analyse der Grundursache und rechtzeitige Problembehandlung | Ja | Ja, eingeschränkt <br><br> Unterstützt die End-to-End-Diagnose und Problembehandlung nur für lokale Infrastrukturen und Anwendungen. Verwendet andere System Center-Komponenten oder Partnerlösungen. |
 | Interaktive Visualisierungen (Dashboards) | Ja | Ja, eingeschränkt <br><br> Stellt grundlegende Dashboards über die HTML5-Webkonsole oder über eine erweiterte Benutzeroberfläche von Partnerlösungen wie Squared Up oder Savision bereit. |
 | Integration in IT- oder DevOps-Tools | Ja | Ja, eingeschränkt |
-
-<!-- markdownlint-enable MD033 -->
 
 ### <a name="collect-and-stream-monitoring-data-to-third-party-or-on-premises-tools"></a>Sammeln und Streamen von Überwachungsdaten an Tools von Drittanbietern oder lokale Tools
 

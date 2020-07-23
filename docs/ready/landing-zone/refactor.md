@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2252b1c575c3fa853d0da05e75c964a63cfb3285
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 97d906504424761264bc550c8ce82dac2cc5cbd0
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075022"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86195206"
 ---
 # <a name="refactor-landing-zones"></a>Umgestalten von Zielzonen
 
@@ -20,7 +20,7 @@ Eine Zielzone ist eine **mittels Code vorab bereitgestellte** Umgebung zum Hoste
 
 Die Ready-Methode verwendet das Konzept des Refactoring, um die Migration zu beschleunigen und häufige Hindernisse zu beseitigen. Die Schritte in der Übersicht zur Bereitschaft beschreiben einen Prozess, der mit einer vordefinierten Zielzonenvorlage beginnt, die am besten auf Ihre Hostingfunktion abgestimmt ist. Dann wird der Quellcode umgestaltet oder ergänzt, um die Funktionen der Landezonen so zu erweitern, dass sie diese Funktion durch verbesserte Sicherheit, Abläufe oder Governance bereitstellen können. Die folgende Abbildung veranschaulicht das Konzept des Refactorings.
 
-![Abbildung zum Refactoring der Zielzone – Beschrieben in einem späteren Abschnitt dieses Artikels](../../_images/ready/refactor.png)
+![Abbildung zum Refactoring der Zielzone, die später in diesem Artikel beschrieben wird.](../../_images/ready/refactor.png)
 
 ## <a name="common-blockers"></a>Allgemeine Hindernisse
 

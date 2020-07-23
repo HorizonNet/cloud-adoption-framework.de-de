@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: abe6fb81a1108e291d0a4f12382172a5f6b39e4d
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: dcbc8d7906bd18a225b9fb2b116b4acc3bd0f395
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861479"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193132"
 ---
 <!-- cSpell:ignore opsman ITSM -->
 
@@ -27,7 +27,7 @@ Dieser Artikel bietet eine allgemeine Übersicht über unsere Überwachungsplatt
 
 ## <a name="the-story-of-system-center-operations-manager"></a>Die Geschichte von System Center Operations Manager
 
-Im Jahr 2000 sind wir mit Microsoft Operations Manager (MOM) 2000 in den Bereich Operations Management eingestiegen. Im Jahr 2007 haben wir eine überarbeitete Version des Produkts namens System Center Operations Manager auf den Markt gebracht. Sie bot mehr als nur die einfache Überwachung eines Windows-Servers und konzentrierte sich auf die stabile End-to-End-Überwachung von Diensten und Anwendungen, einschließlich heterogene Plattformen, Netzwerkgeräte und anderen Anwendungs- und Dienstabhängigkeiten. Es handelt sich um eine etablierte, unternehmensweite Überwachungsplattform für lokale Umgebungen, die in dieser Branche in derselben Klasse wie IBM Tivoli oder HP Operations Manager angeordnet ist. Sie ist gewachsen, um die Überwachung von Compute- und Plattformressourcen zu unterstützen, die in Azure, Amazon Web Services (AWS) und unter anderen Cloudanbietern ausgeführt werden.
+Im Jahr 2000 sind wir mit Microsoft Operations Manager 2000 in den Bereich Operations Management eingestiegen. Im Jahr 2007 haben wir eine überarbeitete Version des Produkts, System Center Operations Manager, auf den Markt gebracht. Sie bot mehr als nur die einfache Überwachung eines Windows-Servers und konzentrierte sich auf die stabile End-to-End-Überwachung von Diensten und Anwendungen, einschließlich heterogene Plattformen, Netzwerkgeräte und anderen Anwendungs- und Dienstabhängigkeiten. Es handelt sich um eine etablierte, unternehmensweite Überwachungsplattform für lokale Umgebungen, die in dieser Branche in derselben Klasse wie IBM Tivoli oder HP Operations Manager angeordnet ist. Sie ist gewachsen, um die Überwachung von Compute- und Plattformressourcen zu unterstützen, die in Azure, Amazon Web Services (AWS) und unter anderen Cloudanbietern ausgeführt werden.
 
 ## <a name="the-story-of-azure-monitor"></a>Die Geschichte von Azure Monitor
 

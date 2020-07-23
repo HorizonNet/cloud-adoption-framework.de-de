@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: ac85b955ccc69f981038d38b97873c2db82021da
-ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
+ms.openlocfilehash: 275be63f3b39d1236132b945fd9698482e33b18f
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84813256"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194271"
 ---
 # <a name="people-security-functions-in-the-cloud"></a>Funktionen für Personensicherheit in der Cloud
 
@@ -24,7 +24,7 @@ Die Modernisierung dieser Funktion umfasst Folgendes:
 
 - **Steigerung des positiven Engagements** von Benutzern durch Gamification und positive Verstärkung/Ausbildung, anstatt sich ausschließlich auf negative Verstärkungsansätze wie herkömmliches „Phishing und Bestrafung“-Lösungen zu verlassen.
 - **Menschliches Engagement von hoher Qualität:** Die Kommunikation und Schulung des Sicherheitsbewusstseins sollten qualitativ hochwertige Produktionen sein, die Empathie und emotionale Bindung fördern, um die menschliche Seite von Mitarbeitern anzusprechen und die Mission des Unternehmens zu betonen.
-- **Realistische Erwartungen:** Akzeptieren, dass Benutzer manchmal auf Phishing-E-Mails klicken werden, und Erfolgsmetriken auf die Verringerung der Klickrate konzentrieren, anstatt zu erwarten, dass 100 % aller Klicks unterbunden werden können.
+- **Realistische Erwartungen:** Akzeptieren Sie, dass Benutzer manchmal Phishing-E-Mails öffnen, und konzentrieren Sie sich stattdessen bei den Erfolgsmetriken darauf, die Rate zu reduzieren, anstatt zu erwarten, dass das Öffnen zu 100 Prozent gestoppt wird.
 - **Änderung der Organisationskultur:** Die Unternehmensführung muss eine intendierte Kulturänderung antreiben, um Sicherheit bei jedem Mitglied der Organisation zur Priorität zu machen.
 - **Erhöhung des Fokus auf Insider-Risiken**, um das Unternehmen dabei zu unterstützen, wertvolle Geschäftsgeheimnisse und andere Daten mit hoch profitablen illegalen Anwendungsfällen (etwa Kundenstandorte, Kommunikationsdatensätze) zu schützen.
 - **Verbesserte Erkennung von Insider-Risiken**, die Cloudfunktionen für die Aktivitätsprotokollierung, Verhaltensanalysen und maschinelles Lernen (Machine Learning) nutzt.

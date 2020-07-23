@@ -9,26 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0b876c402f18492b956b5ae561107ec6b57e63ee
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: ded639348eaee2053d6f02e4179694df7e193b0b
+ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862108"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "86373253"
 ---
 <!-- cSpell:ignore umarmohamedusman umarm Moovit -->
 
-::: zone target="docs"
-
-# <a name="azure-innovation-guide-interact-through-devices"></a>Azure-Innovationsleitfaden: Interagieren über Geräte
-
-::: zone-end
-
-::: zone target="chromeless"
-
 # <a name="interact-through-devices"></a>Interagieren über Geräte
-
-::: zone-end
 
 Nehmen Sie Innovationen durch zeitweise verbundene und lernfähige Edge-Geräte vor. Orchestrieren Sie Millionen solcher Geräte, erwerben und verarbeiten Sie unbegrenzte Datenmengen, und profitieren Sie von einer wachsenden Anzahl von auf verschiedenen Geräten genutzten Funktionen, für die mehrere Sinne genutzt werden können. Für Geräte im Edge-Bereich Ihres Netzwerks bietet Azure ein Framework zum Erstellen immersiver und effektiver Geschäftslösungen. Durch universelles Computing, das durch Azure in Kombination mit KI-Technologie ermöglicht wird, können Sie jede vorstellbare Art intelligenter Anwendungen und Systeme erstellen.
 
@@ -64,7 +54,6 @@ Dies sind einige der Features, die Sie nutzen können:
 ### <a name="learn-more"></a>Weitere Informationen
 
 - [IoT Hub](https://docs.microsoft.com/azure/iot-hub)
-
 - [Azure IoT Hub Device Provisioning Service (DPS)](https://docs.microsoft.com/azure/iot-dps)
 
 ::: zone-end
@@ -144,7 +133,7 @@ Zum Erstellen von Azure Digital Twins gehen Sie folgendermaßen vor:
 
 ## <a name="location-intelligence"></a>[Location Intelligence](#tab/AzureMaps)
 
-Zusätzlich zu herkömmlichen Standortfunktionen wie „In der Nähe“, „Verkehr“ und „Route“ ermöglicht es der Azure Maps-Dienst Unternehmen, Lösungen mit Location Intelligence in Echtzeit zu erstellen, die von den renommierten Partnern für Mobilitätstechnologie **TomTom** und **Moovit** gestellt wird. Integrieren Sie mit Geodiensten mühelos komplexe Standort- und Mobilitätsfunktionen in Ihre Anwendungen.
+Zusätzlich zu herkömmlichen Standortfunktionen wie „In der Nähe“, „Verkehr“ und „Route“ ermöglicht es der Azure Maps-Dienst Unternehmen, Lösungen mit Location Intelligence in Echtzeit zu erstellen, die von den renommierten Partnern für Mobilitätstechnologie TomTom und Moovit gestellt wird. Integrieren Sie mit Geodiensten mühelos komplexe Standort- und Mobilitätsfunktionen in Ihre Anwendungen.
 
 **Datendienstvorschau:** Sie können Geodaten zur Verwendung bei räumlichen Vorgängen oder bei der Bildkomposition hochladen und speichern, um die Latenz zu senken, die Produktivität zu erhöhen und neue Szenarien in Ihren Anwendungen zu ermöglichen.
 
@@ -191,7 +180,9 @@ Azure Spatial Anchors besteht aus einem verwalteten Dienst und Client-SDKs für 
 
 ::: zone target="docs"
 
-- [Azure Spatial Anchors](https://azure.microsoft.com/services/spatial-anchors)
+### <a name="learn-more"></a>Weitere Informationen
+
+- [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview)
 
 ::: zone-end
 
@@ -222,8 +213,7 @@ Der Renderingprozess ist rechenintensiv. Es kann sein, das viele Frames oder Bil
 
 ### <a name="learn-more"></a>Weitere Informationen
 
-- [Azure Remote Rendering](https://azure.microsoft.com/services/remote-rendering)
-
+- [Azure Remote Rendering](https://docs.microsoft.com/azure/remote-rendering/overview/about)
 - [Rendern mit Azure](https://docs.microsoft.com/azure/batch/batch-rendering-service)
 
 ::: zone-end

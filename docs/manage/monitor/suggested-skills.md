@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6672d86f215360f1024b233f62a48eb390b52a52
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 65f28f92e731eac11a337ab9b191b7d0bc09101b
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84785173"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86193064"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -35,7 +35,7 @@ Das Erlangen der erforderlichen Qualifikationen kann mit den folgenden Lernpfade
 
 - Informieren Sie sich über das Schützen von Ressourcen mit Richtlinien, rollenbasierter Zugriffssteuerung und anderen Azure-Diensten, indem Sie den Artikel [Implementieren der Sicherheit für die Ressourcenverwaltung in Azure](https://docs.microsoft.com/learn/paths/implement-resource-mgmt-security) lesen.
 
-- In der Einführung zum [Überwachen von Microsoft Azure-Ressourcen und -Workloads](https://app.pluralsight.com/library/courses/microsoft-azure-resources-workloads-monitoring-update/table-of-contents) wird beschrieben, wie Sie Microsoft Azure-Überwachungstools zum Überwachen von Azure-Netzwerkressourcen sowie lokalen Ressourcen verwenden.
+- Unter [Überwachen von Microsoft Azure-Ressourcen und -Workloads](https://app.pluralsight.com/library/courses/microsoft-azure-resources-workloads-monitoring-update/table-of-contents) wird beschrieben, wie Sie Azure-Überwachungstools zum Überwachen von Azure-Netzwerkressourcen sowie lokalen Ressourcen verwenden.
 
 ## <a name="infrastructure-monitoring"></a>Infrastrukturüberwachung
 
@@ -81,7 +81,7 @@ Microsoft und seine Partner bieten eine Vielzahl von Optionen für alle Zielgrup
 
 - [Microsoft IT Pro Career Center](https://www.microsoft.com/itpro): Kostenlose Onlineressource zur Begleitung Ihres Karrierewegs in der Cloud. Profitieren Sie von den Empfehlungen von Branchenexperten für Ihre Cloudrolle und zu den Fähigkeiten, mit denen Sie sie erreichen. Folgen Sie in Ihrem eigenen Tempo einem Lehrplan, um die Fähigkeiten zu erlangen, die Sie am meisten benötigen, um auf dem aktuellen Stand zu bleiben.
 
-Mit unseren [Microsoft Azure-Zertifizierungstrainings und -prüfungen]( https://www.microsoft.com/learning/certification-overview.aspx) können Sie Ihr Wissen rund um Azure belegen und sich offizielle Anerkennung verschaffen.
+Mit unseren [Azure-Zertifizierungstrainings und -prüfungen](https://www.microsoft.com/learning/certification-overview.aspx) können Sie Ihr Wissen rund um Azure belegen und sich offizielle Anerkennung verschaffen.
 
 ## <a name="azure-devops-and-project-management"></a>Azure DevOps und Projektmanagement
 

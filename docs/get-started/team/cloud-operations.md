@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 08090044ab0d97f8bdcf5258b0df0cbcb4c54bcd
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 27d633b20419b49e32ba1296318e67098d9a7ba9
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075761"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233356"
 ---
 # <a name="get-started-build-a-cloud-operations-team"></a>Erste Schritte: Aufbauen eines Cloudbetriebsteams
 
@@ -29,7 +29,7 @@ Sollten keine DevOps- oder Dienstanbietervereinbarungen für den Betrieb vorlieg
 **Ziele:**
 
 - Ermitteln, ob ein Cloudbetriebsteam benötigt wird.
-- Dokumentieren der Entscheidung und der verantwortlichen Personen in der [RACI-Vorlage (Responsible, Accountable, Consulted und Informed)](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) im Arbeitsblatt `Org Alignment`.
+- Zuordnen übergreifender Zuständigkeiten für Teams, indem eine sogenannte RACI-Matrix entwickelt und damit bestimmt wird, welche Teams _verantwortlich sind (responsible), rechenschaftspflichtig sind (accountable), konsultiert werden (consulted) und zu informieren sind (informed)_ . Dokumentieren der Entscheidung und der verantwortlichen Personen in der [RACI-Vorlage](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) im Arbeitsblatt `Org Alignment`.
 
 **Hinweis zur Erreichung der Ziele:**
 

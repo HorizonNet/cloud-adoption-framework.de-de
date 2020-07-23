@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: cf33fabd3b3b7cfb6b1deadd127a8b8fb13b559d
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 8314433ae406bbc97ddc8ef998cfeb5d8cf49d20
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076077"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86195036"
 ---
 <!-- cSpell:ignore paas NVAs VPNs -->
 
@@ -50,7 +50,7 @@ Ein Azure-Netzwerk bietet mehrere Produkte und Dienste, die verschiedene Netzwer
 
 <!-- markdownlint-disable MD033 -->
 
-| **Szenario** | **Netzwerkprodukt oder -dienst** |
+| Szenario | Netzwerkprodukt oder -dienst |
 | --- | --- |
 | Ich benötige die Netzwerkinfrastruktur zum Verbinden sämtlicher Komponenten – von virtuellen Computern bis hin zu eingehenden VPN-Verbindungen. | [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network) |
 | Ich muss Lastenausgleich für ein- und ausgehenden Verbindungen und Anforderungen an meine Anwendungen oder Dienste ausführen. | [Azure-Lastenausgleich](https://docs.microsoft.com/azure/load-balancer) |
@@ -74,8 +74,8 @@ Nachdem Sie die Azure-Netzwerkdienste ermittelt haben, die Sie zur Unterstützun
 
 Die folgende Tabelle bietet einen Überblick über die wichtigsten Szenarien, die von diesen Mustern unterstützt werden:
 
-| **Szenario**                                                                                                                                                                                                                                                                                                                                                          | **Vorgeschlagene Netzwerkarchitektur**                                                  |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| Szenario  | Vorgeschlagene Netzwerkarchitektur                                                  |
+| --- | --- |
 | Alle in Azure gehosteten Workloads, die in Ihrer Zielzone bereitgestellt werden, sind vollständig PaaS-basiert, erfordern kein virtuelles Netzwerk und gehören nicht zu einem größeren Cloudeinführungsprojekt mit IaaS-Ressourcen.                                                                                                                                                          | [Reine PaaS-Lösung](../../decision-guides/software-defined-network/paas-only.md)            |
 | Ihre in Azure gehosteten Workloads stellen IaaS-basierte Ressourcen wie z.B. virtuelle Computer bereit oder benötigen aus einem anderen Grund ein virtuelles Netzwerk, erfordern aber keine Konnektivität zu Ihrer lokalen Umgebung.                                                                                                                                                                            | [Cloudnativ](../../decision-guides/software-defined-network/cloud-native.md)      |
 | Ihre in Azure gehosteten Workloads erfordern begrenzten Zugriff auf lokale Ressourcen, Sie müssen Cloudverbindungen aber als nicht vertrauenswürdig behandeln.                                                                                                                                                                                                                             | [Cloud-DMZ](../../decision-guides/software-defined-network/cloud-dmz.md)            |

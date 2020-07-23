@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 456e9105cd4d8425681664bc9cbcb74d54f7f58f
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 9e06a96c7e7397680e26b326f02a055013ec29ee
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400574"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86191789"
 ---
 # <a name="improve-your-initial-cloud-governance-foundation"></a>Verbessern der ersten Grundlage für die Cloud Governance
 
@@ -29,7 +29,7 @@ Die folgenden bewährten Methoden können jederzeit auf die ursprüngliche Gover
 | Risiko/Bedarf | Standardunternehmen | Komplexes Unternehmen |
 |---|---|---|
 | Vertrauliche Daten in der Cloud | [Verbesserung der Disziplin](./guides/standard/security-baseline-improvement.md) | [Verbesserung der Disziplin](./guides/complex/security-baseline-improvement.md) |
-| Unternehmenskritische Apps in der Cloud | [Verbesserung der Disziplin](./guides/standard/resource-consistency-improvement.md) | [Verbesserung der Disziplin](./guides/complex/resource-consistency-improvement.md) |
+| Unternehmenskritische Anwendungen in der Cloud | [Verbesserung der Disziplin](./guides/standard/resource-consistency-improvement.md) | [Verbesserung der Disziplin](./guides/complex/resource-consistency-improvement.md) |
 | Kostenmanagement für die Cloud | [Verbesserung der Disziplin](./guides/standard/cost-management-improvement.md) | [Verbesserung der Disziplin](./guides/complex/cost-management-improvement.md) |
 | Verwenden mehrerer Clouds | [Verbesserung der Disziplin](./guides/standard/multicloud-improvement.md) | [Verbesserung der Disziplin](./guides/complex/multicloud-improvement.md) |
 | Komplexe/Legacy-Identitätsverwaltung | – | [Verbesserung der Disziplin](./guides/complex/identity-baseline-improvement.md) |

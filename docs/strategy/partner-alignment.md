@@ -7,14 +7,14 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 096657f869f591a8ef758ce5b5ed2f504b07a894
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: da60b9a2844c612f5c712f23cacabd30fbc06655
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83401318"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194951"
 ---
-<!-- cSpell:ignore CSPs MSPs -->
+<!-- cSpell:ignore MSPs -->
 
 # <a name="strategy-for-partner-alignment"></a>Strategie für die Partnerausrichtung
 
@@ -59,7 +59,7 @@ Sie sind bei Ihrem Vorhaben nicht allein. Es gibt mehrere Optionen, um Ihr Team 
 ### <a name="azure-solution-providers"></a>Azure-Lösungsanbieter
 
 Microsoft Certified Solution Providers sind darauf spezialisiert, weltweit moderne Kundenlösungen auf der Grundlage von Microsoft-Technologien bereitzustellen. Optimieren Sie mit Unterstützung eines erfahrenen Partners Ihr Business in der Cloud.
-**[Cloudlösungspartner finden](https://www.microsoft.com/solution-providers/home).** Ein zertifizierter CSP unterstützt Sie dabei, das Potenzial der Cloud optimal auszuschöpfen, indem er die geschäftlichen Ziele für eine Einführung der Cloud bewertet, die richtige Cloudlösung zur Erfüllung Ihrer Geschäftsanforderungen ermittelt und Ihrem Unternehmen dabei hilft, agiler und effizienter zu werden.
+**[Suchen eines Cloud Solution Providers (CSP)](https://www.microsoft.com/solution-providers/home).** Ein zertifizierter CSP unterstützt Sie dabei, das Potenzial der Cloud optimal auszuschöpfen, indem er die geschäftlichen Ziele für eine Einführung der Cloud bewertet, die richtige Cloudlösung zur Erfüllung Ihrer Geschäftsanforderungen ermittelt und Ihrem Unternehmen dabei hilft, agiler und effizienter zu werden.
 
 Azure Expert Managed Services Provider (MSP) haben sich einer Überprüfung durch Dritte unterzogen, um eine höhere Stufe von Qualifikationen zu validieren, die durch zertifizierte Mitarbeiterzahlen, Kundenreferenzen, den jährlichen Verbrauch von Azure im großen Stil und andere Kriterien nachgewiesen wird.
 **[Partner für verwaltete Dienste suchen](https://www.microsoft.com/solution-providers/search?cacheid=16a3b49b-fef2-449d-bdf0-628008114cca).** Ein Azure-Partner für verwaltete Dienste (Managed Service Partner, MSP) unterstützt Unternehmen beim Übergang zu Azure und steht ihnen bei allen Aspekten der Cloud Journey mit Rat und Tat zur Seite. Von der Beratung über die Migration bis hin zum Prozessmanagement zeigen Cloud-MSPs Kunden die Vorteile auf, die eine Einführung der Cloud mit sich bringt. Sie sind auch eine zentrale Anlaufstelle für allgemeine Unterstützung, Bereitstellung sowie Fragen zur Abrechnung – all dies mit einem flexiblen Modell mit nutzungsbasierter Bezahlung.

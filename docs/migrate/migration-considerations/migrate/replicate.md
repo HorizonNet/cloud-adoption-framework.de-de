@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 32dbff24bf4a6ec49c4136bdef6d5e10c3bf83d0
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: da95ec01cd328ce159f55f3bed843ef163a64bfe
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993530"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86234836"
 ---
 # <a name="what-role-does-replication-play-in-the-migration-process"></a>Welche Rolle spielt die Replikation im Migrationsprozess?
 
@@ -40,9 +40,9 @@ Beim Planen der Replikation einer Binärquelle an einem neuen Ziel sind einige w
 
 Jedes dieser physikalischen Gesetze birgt die folgenden Risiken, die sich häufig auf Migrationspläne auswirken:
 
-- **Replikationszeit.** Fortschrittliche Replikationstools können die grundlegenden physikalischen Gesetze nicht außer Kraft setzen &mdash; die Replikation erfordert Zeit und Bandbreite. Pläne sollten realistische Zeitvorgaben enthalten, die dem Zeitraum entsprechen, der für die Replikation von Binärdateien benötigt wird. Die _insgesamt verfügbare Migrationsbandbreite_ ist die Menge an Aufwärtsbandbreite, gemessen in Megabit pro Sekunde (Mbit/s) oder Gigabit pro Sekunde (GBit/s), die nicht durch andere Geschäftsanforderungen mit höherer Priorität belegt ist. Der _Gesamtspeicher für die Migration_ ist der gesamte Speicherplatz, gemessen in Gigabyte oder Terabyte, der benötigt wird, um eine Momentaufnahme aller zu migrierenden Ressourcen zu speichern. Eine erste Schätzung der Zeit kann berechnet werden, indem der _Gesamtspeicher für die Migration_ durch die _insgesamt verfügbare Migrationsbandbreite_ dividiert wird. Beachten Sie die Konvertierung von Bits in Bytes. Eine genauere Berechnung der Zeit finden Sie im folgenden Absatz „Kumulativer Effekt von Datenträgerabweichungen“.
+- **Replikationszeit.** Die Replikation erfordert Zeit und Bandbreite. Pläne sollten realistische Zeitvorgaben enthalten, die dem Zeitraum entsprechen, der für die Replikation von Binärdateien benötigt wird. Die _insgesamt verfügbare Migrationsbandbreite_ ist die Menge an Aufwärtsbandbreite, gemessen in Megabit pro Sekunde (Mbit/s) oder Gigabit pro Sekunde (GBit/s), die nicht durch andere Geschäftsanforderungen mit höherer Priorität belegt ist. Der _Gesamtspeicher für die Migration_ ist der gesamte Speicherplatz, gemessen in Gigabyte oder Terabyte, der benötigt wird, um eine Momentaufnahme aller zu migrierenden Ressourcen zu speichern. Eine erste Schätzung der Zeit kann berechnet werden, indem der _Gesamtspeicher für die Migration_ durch die _insgesamt verfügbare Migrationsbandbreite_ dividiert wird. Beachten Sie die Konvertierung von Bits in Bytes. Eine genauere Berechnung der Zeit finden Sie im folgenden Absatz „Kumulativer Effekt von Datenträgerabweichungen“.
 - **Kumulativer Effekt von Datenträgerabweichungen.** Vom Zeitpunkt der Replikation bis zur Höherstufung einer Ressource in die Produktion müssen die Quell- und Zielbinärdateien synchronisiert bleiben. Eine _Abweichung_ der Binärdateien verbraucht zusätzliche Bandbreite, da alle Änderungen an der Binärdatei wiederkehrend repliziert werden müssen. Während der Synchronisierung müssen alle Abweichungen der Binärdateien in die Berechnung des Gesamtspeichers für die Migration einbezogen werden. Je länger es dauert, eine Ressource in die Produktion hochzustufen, desto mehr kumulative Abweichungen treten auf. Je mehr Ressourcen synchronisiert werden, desto mehr Bandbreite wird gebraucht. Da jede Ressource in synchronisiertem Zustand gehalten wird, geht ein weiterer Teil der insgesamt verfügbaren Migrationsbandbreite verloren.
-- **Zeit bis zur Geschäftsänderung.** Wie im vorherigen Absatz, „Kumulativer Effekt von Datenträgerabweichungen“, erwähnt, hat die Synchronisationszeit eine kumulative negative Auswirkung auf die Migrationsgeschwindigkeit. Die Priorisierung des Migrationsbacklogs und die erweiterte Vorbereitung für den [geschäftsbezogenen Änderungsplan](../optimize/business-change-plan.md) sind für die Migrationsgeschwindigkeit von entscheidender Bedeutung. Der wichtigste Test für die geschäftliche und technische Anpassung während einer Migration ist das Tempo der Höherstufung. Je schneller eine Ressource in die Produktion hochgestuft werden kann, desto weniger Auswirkungen haben Datenträgerabweichungen auf die Bandbreite und desto mehr Bandbreite/Zeit kann der Replikation der nächsten Workload zugewiesen werden.
+- **Zeit bis zur Geschäftsänderung.** Wie bereits erwähnt, hat die Synchronisierungszeit eine kumulative negative Auswirkung auf die Migrationsgeschwindigkeit. Die Priorisierung des Migrationsbacklogs und die erweiterte Vorbereitung für den [geschäftsbezogenen Änderungsplan](../optimize/business-change-plan.md) sind für die Migrationsgeschwindigkeit von entscheidender Bedeutung. Der wichtigste Test für die geschäftliche und technische Anpassung während einer Migration ist das Tempo der Höherstufung. Je schneller eine Ressource in die Produktion hochgestuft werden kann, desto weniger Auswirkungen haben Datenträgerabweichungen auf die Bandbreite und desto mehr Bandbreite/Zeit kann der Replikation der nächsten Workload zugewiesen werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

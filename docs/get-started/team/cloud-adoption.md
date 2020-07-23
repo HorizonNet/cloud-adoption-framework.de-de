@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 9a35e4d9f693362597d301f1ec8d01efdb7887f4
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 6c138afdd5a60dafe21a523e608c714ba2b49070
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076228"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86233680"
 ---
 # <a name="get-started-build-a-cloud-adoption-team"></a>Erste Schritte: Aufbauen eines Cloudeinführungsteams
 
@@ -41,7 +41,7 @@ Orientieren Sie sich daher beim Aufbau eines Cloudeinführungsteams zunächst an
 
 - Ermitteln Sie, welche Methodik am besten zum Team passt: die Migrationsmethodik oder die Innovationsmethodik.
 - Jede Methodik verfügt über ein vierstufiges Onboardingverfahren, das dem Team hilft, die Tools und Prozesse zu verstehen, die erforderlich sind, um diese Bestrebung optimal umzusetzen. Nehmen Sie sich als Team etwas Zeit, um anhand der ersten Schritte zu ermitteln, welche Tools und Szenarien Sie voraussichtlich in den ersten Iterationen benötigen.
-- Aktualisieren Sie die [RACI-Vorlage](../../organize/raci-alignment.md) (Responsible, Accountable, Consulted und Informed) Ihres Unternehmens, damit andere besser nachvollziehen können, wer dem Team angehört und auf welche Methodik sich das Team konzentriert.
+- Zuordnen übergreifender Zuständigkeiten für Teams, indem eine sogenannte RACI-Matrix entwickelt und damit bestimmt wird, welche Teams _verantwortlich sind (responsible), rechenschaftspflichtig sind (accountable), konsultiert werden (consulted) und zu informieren sind (informed)_ . Aktualisieren Sie die [RACI-Vorlage](../../organize/raci-alignment.md) Ihres Unternehmens, damit andere besser nachvollziehen können, wer dem Team angehört und auf welche Methodik sich das Team konzentriert.
 
 **Hinweis zur Erreichung der Ziele:**
 

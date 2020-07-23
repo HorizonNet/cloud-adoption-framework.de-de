@@ -3,23 +3,23 @@ title: Umgestalten einer Team Foundation Server-Bereitstellung zu Azure DevOps S
 description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie Sie Ihre lokale Bereitstellung von Team Foundation Server (TFS) umgestalten, indem Sie sie zu Azure DevOps Services in Azure migrieren.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/11/2018
+ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: a50223154345f513c0c5437991a7e88be1283a4b
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: c62a017b3569bf57cb447976b8d45a36b95a02fd
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075966"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86194118"
 ---
-<!-- cSpell:ignore contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME azuredevopsmigration validateonly -->
+<!-- cSpell:ignore contosodev contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring smarthotelcontainer identitymaplog CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME sqlpackage SSDT azuredevopsmigration validateonly ImportType -->
 
 # <a name="refactor-a-team-foundation-server-deployment-to-azure-devops-services"></a>Umgestalten einer Team Foundation Server-Bereitstellung zu Azure DevOps Services
 
-In diesem Artikel wird gezeigt, wie das fiktive Unternehmen Contoso seine lokale Team Foundation Server-Bereitstellung (TFS) durch Migration zu Azure DevOps Services in Azure umgestaltet. Das Contoso-Entwicklungsteam hat in den letzten fünf Jahren TFS für die Zusammenarbeit im Team und die Quellcodeverwaltung verwendet. Nun möchte es für Entwicklungen und Tests sowie für die Quellcodeverwaltung auf eine cloudbasierte Lösung umsteigen. Azure DevOps Services spielt eine wichtige Rolle bei der Migration zu einem Azure DevOps-Modell und der Entwicklung neuer nativer Cloud-Apps.
+In diesem Artikel wird gezeigt, wie das fiktive Unternehmen Contoso seine lokale Team Foundation Server-Bereitstellung (TFS) durch Migration zu Azure DevOps Services in Azure umgestaltet. Das Contoso-Entwicklungsteam hat in den letzten fünf Jahren TFS für die Zusammenarbeit im Team und die Quellcodeverwaltung verwendet. Nun möchte es für Entwicklungen und Tests sowie für die Quellcodeverwaltung auf eine cloudbasierte Lösung umsteigen. Azure DevOps Services spielt eine wichtige Rolle bei der Migration zu einem Azure DevOps-Modell und der Entwicklung neuer nativer Cloud-Anwendungen.
 
 ## <a name="business-drivers"></a>Business-Treiber
 
@@ -68,13 +68,11 @@ Contoso wird den Migrationsprozess wie folgt abschließen:
 
 Für die Ausführung dieses Szenarios benötigt Contoso Folgendes.
 
-<!-- markdownlint-disable MD033 -->
-
-| **Anforderungen** | **Details** |
+| Anforderungen | Details |
 | --- | --- |
-| **Azure-Abonnement** | Contoso hat in einem früheren Artikel dieser Reihe Abonnements erstellt. Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/pricing/free-trial) erstellen. <br><br> Wenn Sie ein kostenloses Konto erstellen, sind Sie der Administrator Ihres Abonnements und können alle Aktionen durchführen. <br><br> Falls Sie ein vorhandenes Abonnement verwenden und nicht der Administrator sind, müssen Sie mit dem Administrator zusammenarbeiten, damit er Ihnen Berechtigungen vom Typ „Besitzer“ oder „Mitwirkender“ zuweist. <br><br> Wenn Sie detailliertere Berechtigungen benötigen, lesen Sie [diesen Artikel](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control). |
+| **Azure-Abonnement** | Contoso hat in einem früheren Artikel dieser Reihe Abonnements erstellt. Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/free) erstellen. <br><br> Wenn Sie ein kostenloses Konto erstellen, sind Sie der Administrator Ihres Abonnements und können alle Aktionen durchführen. <br><br> Falls Sie ein vorhandenes Abonnement verwenden und nicht der Administrator sind, müssen Sie mit dem Administrator zusammenarbeiten, damit er Ihnen Berechtigungen vom Typ „Besitzer“ oder „Mitwirkender“ zuweist. <br><br> Wenn Sie detailliertere Berechtigungen benötigen, lesen Sie [diesen Artikel](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control). |
 | **Azure-Infrastruktur** | Contoso richtet die Azure-Infrastruktur ein, wie in [Azure infrastructure for migration (Azure-Infrastruktur für die Migration)](./contoso-migration-infrastructure.md) beschrieben. |
-| **Lokaler TFS-Server** | Lokal muss entweder TFS 2018 Upgrade 2 ausgeführt werden, oder das Upgrade muss während dieses Vorgangs erfolgen. |
+| **Lokaler TFS-Server** | Lokal muss entweder TFS 2018 Upgrade 2 ausgeführt werden, oder das Upgrade muss während dieses Vorgangs erfolgen. |
 
 ## <a name="scenario-steps"></a>Szenarioschritte
 
@@ -82,15 +80,15 @@ Contoso geht bei der Migration wie folgt vor:
 
 > [!div class="checklist"]
 >
-> - **Schritt 1: Erstellen eines Azure-Speicherkontos.** Dieses Speicherkonto wird beim Migrationsvorgang verwendet.
-> - **Schritt 2: Upgrade von TFS.** Contoso aktualisiert seine Bereitstellung auf TFS 2018 Upgrade 2.
+> - **Schritt 1: Erstellen eines Azure Storage-Kontos.** Dieses Speicherkonto wird beim Migrationsvorgang verwendet.
+> - **Schritt 2: Upgrade von TFS.** Contoso aktualisiert seine Bereitstellung auf TFS 2018 Upgrade 2.
 > - **Schritt 3: Überprüfen der Sammlung.** Contoso überprüft die TFS-Sammlung als Vorbereitung auf die Migration.
 > - **Schritt 4: Erstellen der Vorbereitungsdatei.** Contoso erstellt die Migrationsdateien mit dem TFS-Migrationstool.
 
-## <a name="step-1-create-a-storage-account"></a>Schritt 1: Speicherkonto erstellen
+## <a name="step-1-create-a-storage-account"></a>Schritt 1: Erstellen eines Speicherkontos
 
-1. Die Contoso-Administratoren erstellen im Azure-Portal ein Speicherkonto (**contosodevmigration**).
-2. Das Konto wird in die sekundäre Region platziert, die das Unternehmen für das Failover zu „USA, Mitte“ verwendet. Ein allgemeines Standardkonto mit lokal redundantem Speicher wird verwendet.
+1. Die Contoso-Administratoren erstellen im Azure-Portal ein Speicherkonto (`contosodevmigration`).
+2. Das Konto wird in der sekundären Region platziert, die das Unternehmen für das Failover verwendet (`Central US`). Ein allgemeines Standardkonto mit lokal redundantem Speicher wird verwendet.
 
     ![Speicherkonto](./media/contoso-migration-tfs-vsts/storage1.png)
 
@@ -98,6 +96,8 @@ Contoso geht bei der Migration wie folgt vor:
 
 - [Einführung in Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction)
 - [Informationen zu Azure-Speicherkonten](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account)
+
+<!-- docsTest:ignore "Server Configuration Wizard" "Configure Features Wizard" "Detach Team Project Collection Wizard" -->
 
 ## <a name="step-2-upgrade-tfs"></a>Schritt 2: Upgrade von TFS
 
@@ -120,7 +120,7 @@ Das Upgrade wird wie folgt durchgeführt:
 
     ![TFS](./media/contoso-migration-tfs-vsts/upgrade3.png)
 
-4. Nach der Überprüfung führt der Assistent das Upgrade durch.
+4. Nach der Überprüfung führt der Serverkonfigurations-Assistent das Upgrade durch.
 
      ![TFS](./media/contoso-migration-tfs-vsts/upgrade4.png)
 
@@ -137,7 +137,7 @@ Informationen zum Durchführen von Upgrades für TFS finden Sie [hier](https://d
 
 ## <a name="step-3-validate-the-tfs-collection"></a>Schritt 3: Überprüfen der TFS-Sammlung
 
-Die Contoso-Administratoren führen das TFS-Migrationstool für die ContosoDev-Sammlungsdatenbank aus, um diese vor der Migration zu überprüfen.
+Die Contoso-Administratoren führen das TFS-Migrationstool für die `contosodev`-Sammlungsdatenbank aus, um diese vor der Migration zu überprüfen.
 
 1. Sie laden das [TFS-Migrationstool](https://www.microsoft.com/download/details.aspx?id=54274) herunter und entpacken es. Es muss unbedingt die Version für das ausgeführte TFS-Update heruntergeladen werden. Die Version kann in die Verwaltungskonsole eingecheckt werden.
 
@@ -145,7 +145,7 @@ Die Contoso-Administratoren führen das TFS-Migrationstool für die ContosoDev-S
 
 2. Das Tool zur Überprüfung wird ausgeführt, indem die URL der Projektsammlung angegeben wird:
 
-        `TfsMigrator validate /collection:http://contosotfs:8080/tfs/ContosoDev`
+    `TfsMigrator validate /collection:http://contosotfs:8080/tfs/ContosoDev`
 
 3. Im Tool wird ein Fehler angezeigt.
 
@@ -167,7 +167,7 @@ Die Contoso-Administratoren führen das TFS-Migrationstool für die ContosoDev-S
 
     ![TFS](./media/contoso-migration-tfs-vsts/collection7.png)
 
-8. Eine Azure AD-Anmeldeseite wird angezeigt, und die Administratoren geben die Anmeldeinformationen eines globalen Administratorbenutzers ein.
+8. Eine Azure AD-Anmeldeseite wird angezeigt, und die Administratoren geben die Anmeldeinformationen eines globalen Administratorbenutzers ein.
 
      ![TFS](./media/contoso-migration-tfs-vsts/collection8.png)
 
@@ -186,11 +186,11 @@ Nach Abschluss der Überprüfung können die Contoso-Administratoren mithilfe de
      ![Vorbereiten](./media/contoso-migration-tfs-vsts/prep1.png)
 
     Im Vorbereitungsschritt wird Folgendes ausgeführt:
-    - Die Sammlung wird überprüft, um eine Liste aller Benutzer abzurufen, und das Identitätszuordnungsprotokoll (**IdentityMapLog.csv**) wird aufgefüllt.
+    - Die Sammlung wird überprüft, um eine Liste aller Benutzer abzurufen, und das Identitätszuordnungsprotokoll (`IdentityMapLog.csv`) wird aufgefüllt.
     - Die Verbindung mit Azure Active Directory wird vorbereitet, um nach einer Übereinstimmung für jede Identität zu suchen.
-    - Contoso hat Azure AD schon bereitgestellt und mit Azure AD Connect synchronisiert, sodass es bei der Vorbereitung möglich sein sollte, die entsprechenden Identitäten zu finden und als aktiv zu markieren.
+    - Contoso hat Azure AD schon bereitgestellt und mit Azure AD Connect synchronisiert, sodass es bei der Vorbereitung möglich sein sollte, die entsprechenden Identitäten zu finden und als **Aktiv** zu markieren.
 
-2. Eine Azure AD-Anmeldeseite wird angezeigt, und die Administratoren geben die Anmeldeinformationen eines globalen Administratorbenutzers ein.
+2. Eine Azure AD-Anmeldeseite wird angezeigt, und die Administratoren geben die Anmeldeinformationen eines globalen Administratorbenutzers ein.
 
     ![Vorbereiten](./media/contoso-migration-tfs-vsts/prep2.png)
 
@@ -198,11 +198,11 @@ Nach Abschluss der Überprüfung können die Contoso-Administratoren mithilfe de
 
     ![Vorbereiten](./media/contoso-migration-tfs-vsts/prep3.png)
 
-4. Die Administratoren können jetzt sehen, dass sowohl die Datei „IdentityMapLog.csv“ als auch die Datei „import.json“ in einem neuen Ordner erstellt wurden.
+4. Die Administratoren können jetzt sehen, dass sowohl die Datei `IdentityMapLog.csv` als auch die Datei `import.json` in einem neuen Ordner erstellt wurden.
 
     ![Vorbereiten](./media/contoso-migration-tfs-vsts/prep4.png)
 
-5. Die Datei „import.json“ enthält Importeinstellungen. Sie enthält Informationen wie den Namen der gewünschten Organisation und Informationen zum Speicherkonto. Die meisten Felder werden automatisch aufgefüllt. Einige Felder erfordern eine Benutzereingabe. Contoso öffnet die Datei und fügt den Namen der Azure DevOps Services-Organisation hinzu, der erstellt werden soll: **contosodevmigration**. Bei diesem Namen lautet die Azure DevOps Services-URL **contosodevmigration.visualstudio.com**.
+5. Die Datei `import.json` enthält Importeinstellungen. Sie enthält Informationen wie den Namen der gewünschten Organisation und Informationen zum Speicherkonto. Die meisten Felder werden automatisch aufgefüllt. Einige Felder erfordern eine Benutzereingabe. Contoso öffnet die Datei und fügt den Namen der Azure DevOps Services-Organisation hinzu, der erstellt werden soll: `contosodevmigration`. Bei diesem Namen lautet die Azure DevOps Services-URL `contosodevmigration.visualstudio.com`.
 
     ![Vorbereiten](./media/contoso-migration-tfs-vsts/prep5.png)
 
@@ -223,18 +223,20 @@ Ist die Vorbereitung abgeschlossen, können sich die Contoso-Administratoren nun
 
 Bevor sie mit der Verwendung beginnen, planen die Administratoren Ausfallzeiten mit dem Entwicklungsteam, um die Sammlung für die Migration offline zu schalten. Der Migrationsprozess umfasst folgende Schritte:
 
-1. **Trennen der Sammlung.** Identitätsdaten für die Sammlung befinden sich in der Konfigurationsdatenbank des TFS-Servers, solange die Sammlung angefügt und online ist. Wenn eine Sammlung vom TFS-Server getrennt wird, wird eine Kopie dieser Identitätsdaten erstellt und mit der Sammlung für den Transport gepackt. Ohne diese Daten kann der Identitätsteil des Imports nicht ausgeführt werden. Die Sammlung sollte getrennt gelassen werden, bis der Import abgeschlossen ist, da anderenfalls nicht die beim Import erfolgten Änderungen importiert werden können.
-2. **Generieren einer Sicherung.** Der nächste Schritt des Migrationsvorgangs besteht darin, eine Sicherung zu generieren, die in Azure DevOps Services importiert werden kann. Datenschichtanwendungs-Pakete (Data-Tier Application Package, DACPAC) stellen ein SQL Server-Feature dar, mit dem Datenbankänderungen in eine einzelne Datei gepackt und auf anderen SQL-Instanzen bereitgestellt werden können. Diese können auch direkt in Azure DevOps Services wiederhergestellt werden und werden als Verpackungsmethode verwendet, um Sammlungsdaten zur Cloud zu migrieren. Contoso verwendet das Tool „SqlPackage.exe“, um die DACPAC-Datei zu generieren. Dieses Tool ist in SQL Server Data Tools enthalten.
+1. **Trennen der Sammlung.** Identitätsdaten für die Sammlung befinden sich in der Konfigurationsdatenbank des TFS-Servers, solange die Sammlung angefügt und online ist. Wenn eine Sammlung vom TFS-Server getrennt wird, wird eine Kopie dieser Identitätsdaten erstellt und mit der Sammlung für den Transport gepackt. Ohne diese Daten kann der Identitätsteil des Imports nicht ausgeführt werden. Es wird empfohlen, die Sammlung getrennt zu lassen, bis der Import abgeschlossen ist, da anderenfalls nicht die beim Import aufgetretenen Änderungen importiert werden können.
+2. **Generieren einer Sicherung.** Der nächste Schritt des Migrationsvorgangs besteht darin, eine Sicherung zu generieren, die in Azure DevOps Services importiert werden kann. Datenschichtanwendungs-Pakete (Data-Tier Application Package, DACPAC) stellen ein SQL Server-Feature dar, mit dem Datenbankänderungen in eine einzelne Datei gepackt und auf anderen SQL-Instanzen bereitgestellt werden können. Diese können auch direkt in Azure DevOps Services wiederhergestellt werden und werden als Verpackungsmethode verwendet, um Sammlungsdaten zur Cloud zu migrieren. Contoso verwendet das Tool `sqlpackage.exe`, um die DACPAC-Datei zu generieren. Dieses Tool ist in SQL Server Data Tools enthalten.
 3. **Hochladen in den Speicher.** Nachdem die DACPAC-Datei erstellt wurde, wird sie in Azure Storage hochgeladen. Nach dem Upload wird sie mit einer Shared Access Signature (SAS) versehen, damit das TFS-Migrationstool auf den Speicher zugreifen kann.
 4. **Ausfüllen der Importfelder.** Contoso kann danach die fehlenden Felder in der Importdatei ausfüllen, einschließlich der DACPAC-Einstellung. Für den Einstieg legt das Unternehmen fest, dass ein _Probeimport_ ausgeführt werden soll, um vor der vollständigen Migration zu überprüfen, dass alles ordnungsgemäß funktioniert.
 5. **Ausführen eines Probeimports.** Durch einen Probeimport kann die Migration von Sammlungen getestet werden. Probeläufe weisen eine begrenzte Lebensdauer auf und werden daher gelöscht, bevor eine Produktionsmigration ausgeführt wird. Sie werden nach einer festgelegten Dauer automatisch gelöscht. Ein Hinweis zu dem Zeitpunkt, an dem der Probelauf gelöscht wird, wird in der E-Mail über die erfolgreiche Durchführung angegeben, nachdem der Importvorgang abgeschlossen ist. Berücksichtigen Sie dies, und passen Sie Ihre Planung entsprechend an.
-6. **Durchführen der Produktionsmigration.** Nach Abschluss der Probemigration führen die Contoso-Administratoren die endgültige Migration durch, indem sie die Datei **import.json** aktualisieren und den Import wiederholen.
+6. **Durchführen der Produktionsmigration.** Nach Abschluss der Probemigration führen die Contoso-Administratoren die endgültige Migration durch, indem sie die Datei `import.json` aktualisieren und den Import wiederholen.
+
+<!-- docsTest:ignore "TFS Administration Console" -->
 
 ### <a name="detach-the-collection"></a>Trennen der Sammlung
 
 Vor dem Trennen der Sammlung erstellen die Contoso-Administratoren eine lokale SQL Server-Sicherung und eine VMware-Momentaufnahme des TFS-Servers.
 
-1. In der TFS-Verwaltungskonsole wählt Contoso die Sammlung aus, die getrennt werden soll (**ContosoDev**).
+1. In der TFS-Verwaltungskonsole wählt Contoso die Sammlung aus, die getrennt werden soll (`ContosoDev`).
 
     ![Migrieren](./media/contoso-migration-tfs-vsts/migrate1.png)
 
@@ -266,13 +268,13 @@ Vor dem Trennen der Sammlung erstellen die Contoso-Administratoren eine lokale S
 
 Contoso erstellt eine Sicherung (DACPAC) für den Import in Azure DevOps Services.
 
-- SqlPackage.exe in SQL Server Data Tools wird verwendet, um die DACPAC-Datei zu erstellen. Es sind mehrere Versionen von SqlPackage.exe in SQL Server Data Tools installiert, die sich im Ordner mit Namen wie etwa „120“, „130“ und „140“ befinden. Es ist wichtig, die richtige Version zu verwenden, um die DACPAC-Datei vorzubereiten.
+- Das Hilfsprogramm `sqlpackage.exe` in SQL Server Data Tools (SSDT) wird verwendet, um die DACPAC-Datei zu erstellen. Es sind mehrere Versionen von `sqlpackage.exe` in SQL Server Data Tools installiert, die sich in Ordnern mit Namen wie `120`, `130` und `140` befinden. Es ist wichtig, die richtige Version zu verwenden, um die DACPAC-Datei vorzubereiten.
 
-- Bei TFS 2018-Importen muss SqlPackage.exe aus dem Ordner „140“ oder höher verwendet werden. Bei CONTOSOTFS befindet sich diese Datei im folgenden Ordner: `C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\140`
+- Bei TFS 2018-Importen muss `sqlpackage.exe` aus dem Ordner `140` oder höher verwendet werden. Bei `CONTOSOTFS` befindet sich diese Datei im folgenden Ordner: `C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\140`
 
 Die DACPAC-Datei wird von den Contoso-Administratoren wie folgt generiert:
 
-1. Contoso öffnet eine Eingabeaufforderung und navigiert zum Speicherort von „SQLPackage.exe“. Contoso gibt den folgenden Befehl ein, um die DACPAC-Datei zu generieren:
+1. Contoso öffnet eine Eingabeaufforderung und navigiert zum Speicherort von `sqlpackage.exe`. Contoso gibt den folgenden Befehl ein, um die DACPAC-Datei zu generieren:
 
     `SqlPackage.exe /sourceconnectionstring:"Data Source=SQLSERVERNAME\INSTANCENAME;Initial Catalog=Tfs_ContosoDev;Integrated Security=True" /targetFile:C:\TFSMigrator\Tfs_ContosoDev.dacpac /action:extract /p:ExtractAllTableData=true /p:IgnoreUserLoginMappings=true /p:IgnorePermissions=true /p:Storage=Memory`
 
@@ -294,7 +296,7 @@ Nachdem die DACPAC-Datei erstellt wurde, wird es von Contoso in Azure Storage ho
 
     ![Upload](./media/contoso-migration-tfs-vsts/backup5.png)
 
-2. Contoso stellt eine Verbindung mit dem jeweiligen Abonnement her und sucht das Speicherkonto, das das Unternehmen für die Migration erstellt hat (**contosodevmigration**). Contoso erstellt einen neuen Blobcontainer: **azuredevopsmigration**.
+2. Contoso stellt eine Verbindung mit dem jeweiligen Abonnement her und sucht das Speicherkonto, das das Unternehmen für die Migration erstellt hat (`contosodevmigration`). Contoso erstellt einen neuen Blobcontainer: `azuredevopsmigration`.
 
     ![Upload](./media/contoso-migration-tfs-vsts/backup6.png)
 
@@ -320,13 +322,13 @@ Nachdem die DACPAC-Datei erstellt wurde, wird es von Contoso in Azure Storage ho
 
 ### <a name="fill-in-the-import-settings"></a>Ausfüllen der Importeinstellungen
 
-In einem vorherigen Schritt haben die Contoso-Administratoren einen Teil der Importspezifikationsdatei (import.json) ausgefüllt. Nun muss das Unternehmen die übrigen Einstellungen hinzufügen.
+In einem vorherigen Schritt haben die Contoso-Administratoren einen Teil der Importspezifikationsdatei (`import.json`) ausgefüllt. Nun muss das Unternehmen die übrigen Einstellungen hinzufügen.
 
-Contoso öffnet die Datei „import.json“ und füllt die folgenden Felder aus:
+Contoso öffnet die Datei `import.json` und füllt die folgenden Felder aus:
 
 - **Standort:** Speicherort des SAS-Schlüssels, der oben generiert wurde.
-- **Dacpac:** Hier wird der Name der DACPAC-Datei festgelegt, die Sie in das Speicherkonto hochgeladen haben. Schließen Sie die Erweiterung „DACPAC“ ein.
-- **ImportType:** Dieser wird vorerst auf DryRun festgelegt.
+- **Dacpac:** Hier wird der Name der DACPAC-Datei festgelegt, die Sie in das Speicherkonto hochgeladen haben. Schließen Sie die Erweiterung `.dacpac` ein.
+- **ImportType:** Dieser wird vorerst auf `DryRun` festgelegt.
 
 ![Importieren von Einstellungen](./media/contoso-migration-tfs-vsts/import1.png)
 
@@ -334,7 +336,7 @@ Contoso öffnet die Datei „import.json“ und füllt die folgenden Felder aus:
 
 Die Contoso-Administratoren beginnen mit der Ausführung einer Probemigration, um sicherzustellen, dass alles wie erwartet funktioniert.
 
-1. Contoso öffnet eine Eingabeaufforderung und navigiert zum Speicherort von „TfsMigration“ (`C:\TFSMigrator`).
+1. Contoso öffnet eine Eingabeaufforderung und navigiert zum Speicherort von `TfsMigrator` (`C:\TFSMigrator`).
 2. Im ersten Schritt überprüft Contoso die Importdatei. Anschließend sollte sichergestellt werden, dass die Datei ordnungsgemäß formatiert ist und dass der SAS-Schlüssel funktioniert.
 
     `TfsMigrator import /importFile:C:\TFSMigrator\import.json /validateonly`
@@ -361,7 +363,7 @@ Die Contoso-Administratoren beginnen mit der Ausführung einer Probemigration, u
 
     ![Probelauf](./media/contoso-migration-tfs-vsts/test4.png)
 
-8. Das Azure AD-Anmeldefenster wird angezeigt und sollte mit der Contoso-Administratoranmeldung durchgeführt werden.
+8. Das Azure AD-Anmeldefenster wird angezeigt und sollte mit der Contoso-Administratoranmeldung ausgefüllt werden.
 
     ![Probelauf](./media/contoso-migration-tfs-vsts/test5.png)
 
@@ -394,7 +396,7 @@ Die Contoso-Administratoren beginnen mit der Ausführung einer Probemigration, u
 Wenn der Probelauf abgeschlossen ist, fahren die Contoso-Administratoren mit der Produktionsmigration fort. Contoso löscht den Probelauf, aktualisiert die Importeinstellungen und führt den Import erneut aus.
 
 1. Im Azure DevOps Services-Portal löscht Contoso die Organisation für den Probelauf.
-2. Es aktualisiert die Datei „import.json“, um **ImportType** auf **ProductionRun** festzulegen.
+2. Es aktualisiert die Datei `import.json`, um **ImportType** auf **ProductionRun** festzulegen.
 
     ![Bereitstellung](./media/contoso-migration-tfs-vsts/full1.png)
 
@@ -403,7 +405,7 @@ Wenn der Probelauf abgeschlossen ist, fahren die Contoso-Administratoren mit der
 
     ![Bereitstellung](./media/contoso-migration-tfs-vsts/full2.png)
 
-5. Bei der Azure AD-Anmeldung geben die Administratoren eine Contoso-Administratoranmeldung an.
+5. Bei der Azure AD-Anmeldung geben die Administratoren eine Contoso-Administratoranmeldung an.
 
     ![Bereitstellung](./media/contoso-migration-tfs-vsts/full3.png)
 
@@ -435,7 +437,7 @@ Wenn der Probelauf abgeschlossen ist, fahren die Contoso-Administratoren mit der
 
 Nach Abschluss der Migration möchte Contoso eine Migration von TFVC nach Git für die Quellcodeverwaltung durchführen. Contoso muss den Quellcode, der sich derzeit in der Azure DevOps Services-Organisation befindet, als Git-Repositorys in dieselbe Organisation importieren.
 
-1. Im Azure DevOps Services-Portal öffnet Contoso eines der TFVC-Repositorys ( **$/PolicyConnect**) und überprüft dieses.
+1. Im Azure DevOps Services-Portal öffnet Contoso eines der TFVC-Repositorys (`$/PolicyConnect`) und überprüft dieses.
 
     ![Git](./media/contoso-migration-tfs-vsts/git1.png)
 
@@ -443,7 +445,7 @@ Nach Abschluss der Migration möchte Contoso eine Migration von TFVC nach Git f�
 
     ![Git](./media/contoso-migration-tfs-vsts/git2.png)
 
-3. Als **Quelltyp** wählt Contoso **TFVC** aus und gibt den Pfad zum Repository an. Das Unternehmen hat sich dazu entschlossen, nicht den Verlauf zu migrieren.
+3. Als **Quelltyp** wählt Contoso `TFVC` aus und gibt den Pfad zum Repository an. Das Unternehmen hat sich dazu entschlossen, nicht den Verlauf zu migrieren.
 
     ![Git](./media/contoso-migration-tfs-vsts/git3.png)
 
@@ -454,7 +456,7 @@ Nach Abschluss der Migration möchte Contoso eine Migration von TFVC nach Git f�
 
     ![Git](./media/contoso-migration-tfs-vsts/git4.png)
 
-5. Es wiederholt den Prozess für das zweite Repository ( **$/SmartHotelContainer**).
+5. Das Unternehmen wiederholt den Prozess für das zweite Repository (`$/smarthotelcontainer`).
 
     ![Git](./media/contoso-migration-tfs-vsts/git5.png)
 

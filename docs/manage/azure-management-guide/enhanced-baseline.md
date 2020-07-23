@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0086b76c93a6a1491b7715ca568a43bdc40c1ab0
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 3cf2d02139061841d188271c61011b2439ae14db
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84992863"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86234020"
 ---
 <!-- cSpell:ignore ITSMC -->
 
@@ -35,12 +35,12 @@ Möglicherweise ist jedoch eine größere Verpflichtung für das Unternehmen erf
 - **Workloadbetrieb:**
   - Größte Investition pro Workloadvorgang.
   - Höchster Resilienzgrad.
-  - Empfohlen für etwa 20 % der Workloads, die den Geschäftswert erzeugen.
+  - Empfohlen für etwa 20 Prozent der Workloads, die den Geschäftswert erzeugen.
   - In der Regel für Workloads von hoher Wichtigkeit oder unternehmenskritische Workloads reserviert.
 - **Plattformbetrieb:**
   - Die Betriebsinvestition ist auf viele Workloads verteilt.
   - Verbesserungen der Resilienz betreffen alle Workloads, die die definierte Plattform nutzen.
-  - Empfohlen für die ca. 20 % der Plattformen, die die höchste Wichtigkeit aufweisen.
+  - Empfohlen für die ca. 20 Prozent der Plattformen, die die höchste Wichtigkeit aufweisen.
   - In der Regel für Workloads von mittlerer bis hoher Wichtigkeit reserviert.
 
 Workload- und Plattformbetrieb erfordern Änderungen von Entwurfs- und Architekturprinzipien. Diese Änderungen können Zeit in Anspruch nehmen und zu erhöhten Betriebskosten führen. Um die Anzahl der Workloads zu reduzieren, die solche Investitionen erfordern, kann eine optimierte Verwaltungsbaseline eine ausreichende Verbesserung zur Erfüllung geschäftlicher Verpflichtungen bewirken.

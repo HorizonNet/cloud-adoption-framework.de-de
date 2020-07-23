@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 32ea202317ecddab49bed0944212f3f7be7e724c
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 1023b64d32018a1a9e7db35d11ec84568168aa40
+ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84788182"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "86195019"
 ---
 # <a name="balance-the-portfolio"></a>Ausgewogenheit des Portfolios
 
@@ -80,7 +80,7 @@ Um die Komplexität zu reduzieren, sollten Sie einen herkömmlichen Ansatz zur P
   - Ist diese Anwendung eine Drittanbieteranwendung?
   - Wurde das Budget genehmigt, um in den nächsten 12 Monaten in die fortlaufende Entwicklung der Anwendung zu investieren?
   - Würde eine weitere Entwicklung dieser Anwendung die Benutzerfreundlichkeit verbessern? Stellt sie ein Differenzierungsmerkmal im Wettbewerb dar? Bringt sie dem Unternehmen zusätzlichen Umsatz?
-  - Tragen die Daten innerhalb dieser Workload zu einer Downstreaminnovation im Zusammenhang mit BI, Machine Learning, IoT oder verwandten Technologien bei?
+  - Tragen die Daten innerhalb dieser Workload zu einer Downstreaminnovation im Zusammenhang mit BI, maschinellem Lernen, IoT oder verwandten Technologien bei?
   - Ist die Workload mit modernen Anwendungsplattformen wie Azure App Service kompatibel?
 - Die Antworten auf die oben genannten Fragen und beliebige andere erforderliche qualitativen Analysen würden sich dann auf Anpassungen des priorisierten Backlogs auswirken. Diese Anpassungen können Folgendes umfassen:
   - Wenn eine Workload mit einer PaaS-Lösung ersetzt werden könnte, könnte sie vollständig aus dem Migrationsbacklog entfernt werden. Mindestens würde eine zusätzliche Sorgfaltspflicht, zwischen Zuweisen eines neuen Hosts und Ersetzen zu entscheiden, als Aufgabe hinzugefügt, die vorübergehend die Priorität der Workload im Migrationsbacklog verringern würde.

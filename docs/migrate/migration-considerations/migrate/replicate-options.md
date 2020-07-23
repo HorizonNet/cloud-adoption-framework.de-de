@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b4ca27772401d99672110d26f0ee9f1da16a2f30
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3be996a02a42505e6bd8168c8d05649387bb3da1
+ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83216094"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "86234887"
 ---
 # <a name="replication-options"></a>Replikationsoptionen
 
@@ -45,7 +45,7 @@ Nachdem Sie die lokale und Cloudinfrastruktur im Hinblick auf die Migration bewe
 
 Dieser Dienst verringert die Komplexität Ihrer Cloudmigration, da Sie nur einen einzigen umfassenden Dienst statt verschiedener Tools benötigen. [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) ist als nahtlose End-to-End-Lösung für die Migration von lokalen SQL Server-Datenbanken in die Cloud konzipiert. Es handelt sich um einen vollständig verwalteten Dienst, der die nahtlose Migration von mehreren Datenbankquellen zu Azure-Datenplattformen mit minimaler Ausfallzeit ermöglicht. Der Dienst integriert einige Funktionen vorhandener Tools und Dienste und bietet Kunden eine umfassende, hochverfügbare Lösung.
 
-Der Dienst verwendet den Datenmigrations-Assistenten, um Bewertungsberichte zu generieren, die Empfehlungen bezüglich der Änderungen enthalten, die vor einer Migration erforderlich sind. Sie müssen ggf. entsprechende Aufgaben durchführen. Wenn Sie bereit sind, den Migrationsprozess zu starten, führt Azure Database Migration Service alle entsprechenden Schritte aus. Sie können den Prozess starten und müssen sich nicht weiter um Ihre Migrationsprojekte kümmern, da Sie sich darauf verlassen können, dass die Migration mit den von Microsoft bestimmten bewährten Methoden erfolgt.
+Der Dienst verwendet den Datenmigrations-Assistenten, um Bewertungsberichte zu generieren, die Empfehlungen bezüglich der Änderungen enthalten, die vor einer Migration erforderlich sind. Sie müssen ggf. entsprechende Aufgaben durchführen. Wenn Sie zum Starten der Migration bereit sind, führt Azure Database Migration Service alle entsprechenden Schritte aus. Sie können den Prozess starten und müssen sich nicht weiter um Ihre Migrationsprojekte kümmern, da Sie sich darauf verlassen können, dass die Migration mit den von Microsoft bestimmten bewährten Methoden erfolgt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
