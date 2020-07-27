@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 66f1de5c339b237e780bf50c82438ce6831fb3c3
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 64332dc7479c9c587fd9aaa4af7a58bb50060af6
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193659"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478853"
 ---
 <!--docsTest:ignore "Oxford English Dictionary" -->
 
@@ -26,7 +26,7 @@ Warum ist Empathie so wichtig? Von der ersten Veröffentlichung eines Minimum Vi
 
 ## <a name="how-to-build-with-empathy"></a>Entwickeln von Lösungen mit Empathie
 
-Planung ist naturgemäß eine Übung zur Definition von Annahmen. Je mehr wir planen, desto mehr Annahmen schleichen sich in die Grundlage einer guten Idee ein. Annahmen sind oft ein Produkt der Selbstempathie – mit anderen Worten: „Was würde ich wollen, wenn ich in dieser Position wäre?“ Mit der Erstellungsphase zu beginnen, minimiert die Zeit, in der Annahmen in eine Lösung einfließen können. Dieser Ansatz beschleunigt auch die Feedbackschleife durch echte Kunden, löst frühere Lernmöglichkeiten aus und stärkt die Empathie.
+Planung ist naturgemäß eine Übung zur Definition von Annahmen. Je mehr wir planen, desto mehr Annahmen schleichen sich in die Grundlage einer guten Idee ein. Annahmen sind tendenziell das Produkt von Eigenempathie. Anders ausgedrückt: „Was würde ich wollen, wenn ich in dieser Position wäre?“. Mit der Erstellungsphase zu beginnen, minimiert die Zeit, in der Annahmen in eine Lösung einfließen können. Dieser Ansatz beschleunigt auch die Feedbackschleife durch echte Kunden, löst frühere Lernmöglichkeiten aus und stärkt die Empathie.
 
 > [!CAUTION]
 > Die richtige Definition dessen, was erstellt werden soll, kann schwierig sein und erfordert etwas Übung. Wenn Sie etwas zu schnell erstellen, kann es sein, dass die Lösung nicht den Kundenanforderungen entspricht. Wenn Sie zu viel Zeit mit dem Versuch verbringen, die anfänglichen Kundenbedürfnisse und -lösungsanforderungen zu verstehen, kann der Markt den Bedarf decken, bevor Sie die Chance haben, überhaupt eine Lösung zu erstellen. In beiden Szenarien kann die Lernchance deutlich verzögert oder verringert werden. Manchmal können die Daten sogar beschädigt werden.
@@ -39,10 +39,10 @@ Um diesen Balanceakt zu unterstützen, werden in den folgenden beiden Abschnitte
 
 Das Erstellen einer Lösung mit Empathie bedeutet, dass Sie eine Lösung basierend auf definierten Hypothesen erstellen, die einen bestimmten Kundenbedarf veranschaulichen. Die folgenden Schritte helfen Ihnen, eine Hypothese zu formulieren, die das Erstellen einer Lösung mit Empathie unterstützt.
 
-1. Wenn Sie eine Lösung mit Empathie erstellen, steht der Kunde immer im Mittelpunkt. Diese Absicht kann viele Formen annehmen. Sie können auf einen Kundenarchetypen, eine bestimmte Person oder sogar auf ein Bild eines Kunden inmitten des Problems verweisen, das Sie lösen möchten. Beachten Sie auch den Unterschied zwischen internen Kunden (Mitarbeiter oder Partner) und externen (Konsumenten oder Geschäftskunden). Diese Definition ist die erste zu testende Hypothese: Können wir diesem bestimmten Kunden helfen?
-2. Verstehen der Benutzerfreundlichkeit. Mit Empathie eine Lösung zu erstellen bedeutet, dass Sie die Erfahrung des Kunden nachvollziehen und seine Herausforderungen verstehen. Diese Mentalität gibt die nächste zu testende Hypothese vor: Können wir diesem spezifischen Kunden bei dieser zu bewältigenden Herausforderung helfen?
-3. Definieren einer einfachen Lösung für eine einzelne Herausforderung. Das Personen, Prozesse und fachliche Ansprechpartner übergreifende Vertrauen auf Fachwissen führt zu einer möglichen Lösung. Dies ist die vollständige Hypothese, die getestet werden soll: Können wir diesem spezifischen Kunden bei dieser zu bewältigenden Herausforderung mit der vorgeschlagenen Lösung helfen?
-4. Treffen einer Wertaussage. Welchen langfristigen Wert möchten Sie für diese Kunden bereitstellen? Die Antwort auf diese Frage ergibt Ihre vollständige Hypothese: Wie wird das Leben dieser Kunden verbessert, wenn die vorgeschlagene Lösung genutzt wird, um diese zu bewältigende Herausforderung anzugehen?
+1. Wenn Sie eine Lösung mit Empathie erstellen, steht der Kunde immer im Mittelpunkt. Diese Absicht kann viele Formen annehmen. Sie können auf einen Kundenarchetypen, eine bestimmte Person oder sogar auf ein Bild eines Kunden inmitten des Problems verweisen, das Sie lösen möchten. Beachten Sie auch den Unterschied zwischen internen Kunden (Mitarbeiter oder Partner) und externen (Konsumenten oder Geschäftskunden). Diese Definition ist die erste Hypothese, die getestet wird: Können wir diesem spezifischen Kunden helfen?
+2. Verstehen der Benutzerfreundlichkeit. Mit Empathie eine Lösung zu erstellen bedeutet, dass Sie die Erfahrung des Kunden nachvollziehen und seine Herausforderungen verstehen. Diese Denkweise führt zur nächsten zu testende Hypothese: Können wir diesem spezifischen Kunden bei dieser zu bewältigenden Herausforderung helfen?
+3. Definieren einer einfachen Lösung für eine einzelne Herausforderung. Das Personen, Prozesse und fachliche Ansprechpartner übergreifende Vertrauen auf Fachwissen führt zu einer möglichen Lösung. Dies ist die vollständige zu testende Hypothese: Können wir diesem spezifischen Kunden bei dieser zu bewältigenden Herausforderung mit der vorgeschlagenen Lösung helfen?
+4. Treffen einer Wertaussage. Welchen langfristigen Wert möchten Sie für diese Kunden bereitstellen? Die Antwort ergibt Ihre vollständige Hypothese: Wie wird sich das Leben dieser Kunden verbessern, wenn sie die vorgeschlagene Lösung nutzen, um diese zu bewältigende Herausforderung anzugehen?
 
 Dieser letzte Schritt ist der Höhepunkt einer durch Empathie gesteuerten Hypothese. Dabei werden die Zielgruppe, das Problem, die Lösung und die Metrik definiert, anhand derer eine Verbesserung vorgenommen werden muss, in deren Zentrum der Kunde steht. Während der Measure- und Lernphasen sollte jede Hypothese getestet werden. Änderungen beim Kunden, bei der Problemstellung oder bei der Lösung werden erwartet, wenn das Team mehr Empathie für den angesprochenen Kundenstamm entwickelt.
 
@@ -59,7 +59,7 @@ Bei jeder Iteration einer Feedbackschleife aus Erstellen, Messen und Lernen wird
 
 Ein MVP ist die kleinste erforderliche Einheit des Aufwands (Erfindung, Engineering, Anwendungsentwicklung oder Datenarchitektur), um genügend Anteile einer Lösung zu schaffen, um _mit dem Kunden_ zu lernen. Das Ziel jedes MVP besteht darin, einige oder alle der vorherigen Hypothesen zu testen und Feedback direkt vom Kunden zu erhalten. Das Ergebnis ist keine elegante Anwendung mit allen Funktionen, die erforderlich sind, um Ihre Branche zu verändern. Das gewünschte Ergebnis jeder Iteration ist eine Lernmöglichkeit: eine Chance, eine Hypothese eingehender zu testen.
 
-Das _Festlegen eines Zeitrahmens_ ist eine Standardmethode, um sicherzustellen, dass ein Produkt schlank bleibt. Stellen Sie z. B. sicher, dass Ihr Entwicklungsteam glaubt, dass die Lösung in einer einzigen Iteration erstellt werden kann, um einen schnellen Test zu ermöglichen. Um die Verwendung von Geschwindigkeit, Iterationen und Releases zur Definition der minimalen Mittel besser zu verstehen, lesen Sie [Planen von Geschwindigkeit, Iterationen, Release und Iterationspfaden](../../plan/iteration-paths.md).
+Das _Festlegen eines Zeitrahmens_ (Timebox) ist eine Standardmethode, um sicherzustellen, dass ein Produkt schlank bleibt. Stellen Sie z. B. sicher, dass Ihr Entwicklungsteam glaubt, dass die Lösung in einer einzigen Iteration erstellt werden kann, um einen schnellen Test zu ermöglichen. Um die Verwendung von Geschwindigkeit, Iterationen und Releases zur Definition der minimalen Mittel besser zu verstehen, lesen Sie [Planen von Geschwindigkeit, Iterationen, Release und Iterationspfaden](../../plan/iteration-paths.md).
 
 ### <a name="reduce-complexity-and-delay-technical-spikes"></a>Reduzieren der Komplexität und Verzögern von technische Spitzen
 
@@ -105,9 +105,7 @@ Es gibt viele gesetzliche, Compliance- und Branchenanforderungen, die einen alte
 
 ## <a name="references"></a>References
 
-<!-- cSpell:ignore Ries -->
-
-Einige Konzepte in diesem Artikel basieren auf Themen, die in [_The Lean Startup_](http://theleanstartup.com/book) von Eric Ries beschrieben werden.
+Einige Konzepte in diesem Artikel basieren auf Themen, die in [The Lean Startup](http://theleanstartup.com/book) von Eric Ries beschrieben werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

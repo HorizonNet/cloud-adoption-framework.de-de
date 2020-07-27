@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d2246b71dea7397b724b69b429827ffd9b0801e5
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: af71b68e61eff8c8c6ce508f2d91a19fece06583
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194509"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450899"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 
@@ -22,7 +22,7 @@ Bei einer Cloudmigration werden Ressourcen über das Netzwerk zwischen dem vorha
 
 ## <a name="general-scope-expansion"></a>Allgemeine Umfangserweiterung
 
-Die meisten Aufgaben dieser Umfangserweiterung finden in den Prozessen für die Erfüllung von Voraussetzungen, die Bewertung und die Optimierung einer Migration statt.
+Die meisten Aufgaben dieser Umfangserweiterung finden in den Phasen für die Erfüllung von Voraussetzungen, die Bewertung und die Optimierung einer Migration statt.
 
 ## <a name="suggested-prerequisites"></a>Empfohlene Voraussetzungen
 
@@ -53,11 +53,11 @@ Wenn die Verbindung mit Azure verfügbar ist, sollte vor Verwendung von Data Box
 
 **Abweichungsanalyse:** Jede offline zu übertragende Ressource sollte auf Speicher- und Konfigurationsabweichungen analysiert werden. Die Speicherabweichung ist das Ausmaß der Änderungen im zugrunde liegenden Speicher im zeitlichen Verlauf. Die Konfigurationsabweichung ist die Änderung in der Konfiguration der Ressource im zeitlichen Verlauf. Ab dem Zeitpunkt, an dem der Speicher kopiert wird, bis zu dem Zeitpunkt, an dem die Ressource in die Produktion hochgestuft wird, kann eine Abweichung verloren gehen. Wenn diese Abweichung in der migrierten Ressource berücksichtigt werden soll, ist eine Synchronisierung zwischen der lokalen Ressource und der migrierten Ressource erforderlich. Dies sollte zur Berücksichtigung bei der Durchführung der Migration gekennzeichnet werden.
 
-## <a name="migrate-process-changes"></a>Änderungen am Migrationsprozess
+## <a name="migration-process-changes"></a>Änderungen für den Migrationsprozess
 
 Bei Verwendung von Methoden zur Offlineübertragung sind [Replikationsprozesse](../migration-considerations/migrate/replicate.md) wahrscheinlich nicht erforderlich. [Synchronisierungsprozesse](../migration-considerations/migrate/replicate.md) können dagegen weiterhin erforderlich sein. Die Ergebnisse der im Bewertungsprozess durchgeführten Abweichungsanalyse geben Auskunft über die während der Migration erforderlichen Aufgaben, wenn eine Ressource offline übertragen wird.
 
-### <a name="suggested-action-during-the-migrate-process"></a>Empfohlene Aktion während des Migrationsprozesses
+### <a name="suggested-action-during-the-migration-process"></a>Empfohlene Aktion während des Migrationsprozesses
 
 **Kopieren des Speichers:** Diese Vorgehensweise kann für die Übertragung von HDFS-Daten, Sicherungen, Archiven, Dateiservern oder Anwendungen verwendet werden. In vorhandenen technischen Anleitungen wird erläutert, wie Daten auf diese Weise aus einem [HDFS-Speicher](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-migrate-on-premises-hdfs-cluster) oder mithilfe von [SMB](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data), [NFS](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-nfs), [REST](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-rest) oder des [Datenkopierdiensts](https://docs.microsoft.com/azure/databox/data-box-deploy-copy-data-via-copy-service) von Datenträgern in Data Box übertragen werden.
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e3f2a6156d282e2db6fb8a7206251447f9e48f71
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 4521a164a0fa549f6789a93baf469d40a693b1d4
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219800"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479074"
 ---
 # <a name="security-baseline-sample-policy-statements"></a>Beispiele für Richtlinienanweisungen der Sicherheitsbaseline
 
@@ -55,7 +55,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine sicherh
 
 **Richtlinienanweisung:** Kein Subnetz mit geschützten Daten ist direkt über das öffentliche Internet oder rechenzentrumsübergreifend zugänglich. Der Zugriff auf diese Subnetze muss über zwischengeschaltete Subnetze geroutet werden. Der gesamte Zugriff auf diese Subnetze muss über eine Firewalllösung erfolgen, die Funktionen zur Paketüberprüfung und Sperrfunktionen durchführen kann.
 
-**Potenzielle Entwurfsoption:** Sichern Sie in Azure öffentliche Endpunkte durch Bereitstellen einer [DMZ zwischen dem öffentlichen Internet und Ihrem cloudbasierten Netzwerk](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json). Erwägen Sie die Bereitstellung, Konfiguration und Automatisierung von [Azure Firewall](https://docs.microsoft.com/azure/firewall/overview).
+**Potenzielle Entwurfsoption:** Schützen Sie in Azure öffentliche Endpunkte durch Bereitstellen eines [Umkreisnetzwerks zwischen dem öffentlichen Internet und Ihrem cloudbasierten Netzwerk](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json). Erwägen Sie die Bereitstellung, Konfiguration und Automatisierung von [Azure Firewall](https://docs.microsoft.com/azure/firewall/overview).
 
 ## <a name="ddos-protection"></a>DDoS-Schutz
 

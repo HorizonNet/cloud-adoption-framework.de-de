@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 938bbc706fdb4aa500cb55021ec73d17dcfc6e1e
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 2ec657fce5047dda0e068692aac895eae5554940
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194577"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479856"
 ---
 <!-- docsTest:disable -->
 <!-- cSpell:ignore westeurope usgovia accountlookup messagequery -->
@@ -37,8 +37,9 @@ Das Ändern von Ressourcennamen kann schwierig sein. Legen Sie eine umfassende N
 
 Eine Benennungs- und Kennzeichnungsstrategie beinhaltet geschäftliche und operative Details als Komponenten von Ressourcennamen und Metadatentags:
 
-- Mit der unternehmensbezogenen Seite dieser Strategie wird sichergestellt, dass Ressourcennamen und Tags die Organisationsinformationen enthalten, die zum Identifizieren der Teams benötigt werden. Verwenden Sie eine Ressource zusammen mit den Geschäftsbesitzern, die für die Ressourcenkosten verantwortlich sind.
-- Die operative Seite stellt sicher, dass Namen und Kennzeichnungen (Tags) Informationen enthalten, anhand denen IT-Teams die Workload, die Anwendung, die Umgebung, die Wichtigkeit und weitere Informationen erkennen können, die für die Verwaltung von Ressourcen nützlich sind.
+Mit der unternehmensbezogenen Seite dieser Strategie wird sichergestellt, dass Ressourcennamen und Tags die Organisationsinformationen enthalten, die zum Identifizieren der Teams benötigt werden. Verwenden Sie eine Ressource zusammen mit den Geschäftsbesitzern, die für die Ressourcenkosten verantwortlich sind.
+
+Die operative Seite stellt sicher, dass Namen und Kennzeichnungen (Tags) Informationen enthalten, anhand denen IT-Teams die Workload, die Anwendung, die Umgebung, die Wichtigkeit und weitere Informationen erkennen können, die für die Verwaltung von Ressourcen nützlich sind.
 
 ## <a name="resource-naming"></a>Benennen von Ressourcen
 
@@ -50,7 +51,7 @@ Anhand des Namens können Sie schnell den Typ der Ressource, deren zugehörige W
 
 Alle Azure-Ressourcentypen weisen einen Bereich auf, der die Ebene definiert, auf der Ressourcennamen eindeutig sein müssen. Eine Ressource muss einen eindeutigen Namen innerhalb ihres Bereichs aufweisen.
 
-Ein virtuelles Netzwerk hat beispielsweise einen Ressourcengruppenbereich, was bedeutet, dass es in einer bestimmten Ressourcengruppe nur ein Netzwerk namens `vnet-prod-westus-001` geben darf. Andere Ressourcengruppen können ihr eigenes virtuelles Netzwerk namens `vnet-prod-westus-001` haben. Subnetze, um ein weiteres Beispiel zu nennen, gehören in den Bereich eines virtuellen Netzwerks. Daher muss jedes Subnetz innerhalb eines virtuellen Netzwerks eindeutig benannt sein.
+Ein virtuelles Netzwerk hat beispielsweise einen Ressourcengruppenbereich, was bedeutet, dass es in einer bestimmten Ressourcengruppe nur ein Netzwerk namens `vnet-prod-westus-001` geben darf. Andere Ressourcengruppen können ein eigenes virtuelles Netzwerk mit dem Namen `vnet-prod-westus-001` aufweisen. Subnetze gehören in den Bereich eines virtuellen Netzwerks, daher muss jedes Subnetz innerhalb eines virtuellen Netzwerks eindeutig benannt sein.
 
 Einige Ressourcennamen, etwa PaaS-Dienste mit öffentlichen Endpunkten oder DNS-Bezeichnungen virtueller Maschinen, haben globale Bereiche, was bedeutet, dass sie auf der gesamten Azure-Plattform eindeutig sein müssen.
 

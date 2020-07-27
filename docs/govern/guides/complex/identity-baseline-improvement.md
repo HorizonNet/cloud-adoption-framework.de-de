@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 52131e3d5fd93eb48ee0cbc941f5cffe48375daf
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 659dad6ad975fc19272348c6b5c3f148ea9f527b
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86191551"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478019"
 ---
 <!-- cSpell:ignore MPLS -->
 
@@ -77,7 +77,7 @@ Der Governance-MVP-Entwurf wird so geändert, dass er neue Azure-Richtlinien und
 
 Dies sind die neuen Best Practices:
 
-- **Blaupause für ein sicheres hybrides virtuelles Netzwerk:** Die lokale Seite des Hybridnetzwerks sollte so konfiguriert werden, dass sie Kommunikation zwischen der folgenden Lösung und den lokalen Active Directory-Servern zulässt. Für diese Best Practices ist es erforderlich, dass eine DMZ Active Directory Domain Services über Netzwerkgrenzen hinweg aktiviert.
+- **Blaupause für ein sicheres hybrides virtuelles Netzwerk:** Die lokale Seite des Hybridnetzwerks sollte so konfiguriert werden, dass sie Kommunikation zwischen der folgenden Lösung und den lokalen Active Directory-Servern zulässt. Für diese bewährte Methode muss ein Umkreisnetzwerk Active Directory Domain Services über Netzwerkgrenzen hinweg aktivieren.
 - **Azure Resource Manager-Vorlagen**:
     1. Definieren Sie eine Netzwerksicherheitsgruppe, um externen Datenverkehr zu blockieren und internen Datenverkehr zuzulassen.
     2. Stellen Sie zwei virtuelle Active Directory-Computer als Paar mit Lastenausgleich auf der Grundlage eines Golden Image bereit. Beim ersten Start führt dieses Image ein PowerShell-Skript aus, um den Domänenbeitritt und die Registrierung bei den Domänendiensten vorzunehmen. Weitere Informationen finden Sie unter [Erweitern von Active Directory Domain Services (AD DS) auf Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain).

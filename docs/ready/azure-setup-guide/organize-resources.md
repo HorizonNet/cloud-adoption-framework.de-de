@@ -1,5 +1,5 @@
 ---
-title: Effizientes Organisieren von Azure-Ressourcen
+title: Effizientes Organisieren Ihrer Azure-Ressourcen
 description: Informationen zu bewährten Methoden zur effektiven Organisation Ihrer Azure-Ressourcen, um die Ressourcenverwaltung zu vereinfachen.
 author: laraaleite
 ms.author: kfollis
@@ -9,16 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 19392b3fc1027cec77b0111bcd46d86cd58d33a2
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: 1dc3abc11ba3163934a5c9b58c0ed496ec0dbfd8
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373117"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450695"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
-# <a name="organize-your-azure-resources"></a>Organisieren Ihrer Azure-Ressourcen
+# <a name="organize-your-azure-resources-effectively"></a>Effizientes Organisieren Ihrer Azure-Ressourcen
 
 Die Organisation Ihrer cloudbasierten Ressourcen ist entscheidend für die Sicherung, Verwaltung und Nachverfolgung der mit Ihren Workloads verbundenen Kosten. Definieren Sie zum Organisieren Ihrer Ressourcen eine Verwaltungsgruppenhierarchie, befolgen Sie eine gut durchdachte Namenskonvention, und wenden Sie Ressourcentagging an.
 
@@ -28,7 +28,7 @@ Die Organisation Ihrer cloudbasierten Ressourcen ist entscheidend für die Siche
 
 Azure bietet vier Verwaltungsebenen: Verwaltungsgruppen, Abonnements, Ressourcengruppen und Ressourcen. In der folgenden Abbildung ist die Beziehung dieser Ebenen dargestellt.
 
-   ![Diagramm, das die Beziehungen zwischen den Ebenen der Verwaltungshierarchie zeigt](./media/organize-resources/scope-levels.png)
+   ![Diagramm, das die Beziehungen zwischen den Ebenen der Verwaltungshierarchie zeigt](./media/organize-resources/scope-levels.png) _Abbildung 1: Wie sich die vier Ebenen des Verwaltungsbereichs zueinander verhalten._
 
 - **Verwaltungsgruppen**: Diese Gruppen sind Container, mit denen Sie Zugriff, Richtlinien und Konformität für mehrere Abonnements verwalten können. Alle Abonnements in einer Verwaltungsgruppe erben automatisch die auf die Verwaltungsgruppe angewendeten Bedingungen.
 - **Abonnements**: Ein Abonnement schafft eine logische Zuordnung zwischen Benutzerkonten und den von diesen Benutzerkonten erstellten Ressourcen. Für jedes Abonnement gelten Einschränkungen oder Kontingente für die Menge an Ressourcen, die Sie erstellen und verwenden können. Organisationen können Abonnements verwenden, um die Kosten und Ressourcen zu verwalten, die von Benutzern, Teams oder Projekten erstellt werden.
@@ -63,7 +63,10 @@ Erstellen Sie eine Verwaltungsgruppe, um die Verwaltung von Zugriff, Richtlinien
 Verwenden Sie Abonnements, um Kosten und Ressourcen zu verwalten, die von Benutzern, Teams oder Projekten verursacht bzw. erstellt werden.
 
 1. Navigieren Sie zu [Abonnements](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade).
-1. Wählen Sie **Hinzufügen**.
+2. Wählen Sie **Hinzufügen**.
+
+> [!NOTE]
+> Abonnements können auch programmgesteuert erstellt werden. Weitere Informationen finden Sie unter [Programmgesteuertes Erstellen von Azure Enterprise-Abonnements](https://docs.microsoft.com/azure/azure-resource-manager/management/programmatically-create-subscription?tabs=azure-powershell).
 
 #### <a name="create-a-resource-group"></a>Erstellen einer Ressourcengruppe
 
@@ -129,9 +132,9 @@ Erstellen Sie eine Ressourcengruppe für Ressourcen wie Web-Apps, Datenbanken un
 
 Mit einem durchdachten Benennungsstandard lassen sich Ressourcen im Azure-Portal, in einer Abrechnung und in Automatisierungsskripts leichter identifizieren. Ihre Namensstrategie sollte geschäftliche und operative Details als Bestandteile von Ressourcennamen einbeziehen:
 
-- Die unternehmensbezogene Seite dieser Strategie sollte sicherstellen, dass Ressourcennamen die Organisationsinformationen enthalten, die zum Identifizieren der Teams benötigt werden. Verwenden Sie eine Ressource zusammen mit den Geschäftsbesitzern, die für die Ressourcenkosten verantwortlich sind.
+Die unternehmensbezogene Seite dieser Strategie sollte sicherstellen, dass Ressourcennamen die Organisationsinformationen enthalten, die zum Identifizieren der Teams benötigt werden. Verwenden Sie eine Ressource zusammen mit den Geschäftsbesitzern, die für die Ressourcenkosten verantwortlich sind.
 
-- Auf der operativen Seite sollte sichergestellt werden, dass die Namen von IT-Teams benötigte Informationen enthalten. Verwenden Sie die Details, die die Workload, Anwendung, Umgebung, Wichtigkeit und andere Informationen identifizieren, die für die Verwaltung von Ressourcen nützlich sind.
+Auf der operativen Seite sollte sichergestellt werden, dass die Namen von IT-Teams benötigte Informationen enthalten. Verwenden Sie die Details, die die Workload, Anwendung, Umgebung, Wichtigkeit und andere Informationen identifizieren, die für die Verwaltung von Ressourcen nützlich sind.
 
 Für die verschiedenen Ressourcentypen gelten unterschiedliche [Benennungsregeln und Einschränkungen](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-name-rules). Weitere Informationen und Empfehlungen, die speziell auf die Unterstützung von Bemühungen zur Einführung von Enterprise Clouds abzielen, finden Sie in der [Anleitung zu Benennung und Tagging](../azure-best-practices/naming-and-tagging.md) für das Framework für die Cloudeinführung (Cloud Adoption Framework).
 

@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6aa2780ba7b788701a71f366b03df4a1ccec32fc
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 1ee767432546a0b3ed5ff1a3a6530eb00fa6506b
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193846"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478309"
 ---
 <!-- docsTest:ignore ARO -->
 
@@ -96,7 +96,7 @@ Sie können eine Reihe von Optionen auswählen, wenn Sie virtuelle Azure-Compute
 
 | type | Details | Verwendung |
 |---|---|---|
-| **Allgemeiner Zweck** | Ausgewogenes Verhältnis von CPU zu Arbeitsspeicher. | Geeignet für Tests und Entwicklung, kleine bis mittelgroße Datenbanken, geringe bis mittelgroße Mengen. | Webserver für den Datenverkehr. |
+| **Allgemeiner Zweck** | Ausgewogenes Verhältnis von CPU zu Arbeitsspeicher. | Gut geeignet für Tests und Entwicklung, kleine bis mittlere Datenbanken, Webserver mit geringer bis mittlerer Auslastung. |
 | **Compute-optimiert** | Hohes Verhältnis von CPU zu Arbeitsspeicher. | Gut geeignet für mittlere Webserver, Network Appliances, Stapelverarbeitungsvorgänge, Anwendungsserver. |
 | **Arbeitsspeicheroptimiert** | Hohes Verhältnis von Speicher zu CPU. | Gut geeignet für relationale Datenbanken, mittlere bis große Caches, In-Memory-Analysen. |
 | **Speicheroptimiert** | Datenträgerdurchsatz und E/A-Vorgänge auf hohem Niveau. | Geeignet für Big Data sowie SQL- und NoSQL-Datenbanken. |

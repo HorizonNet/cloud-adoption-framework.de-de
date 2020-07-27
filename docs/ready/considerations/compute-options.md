@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: cd30fda724c94b3c0464267da83ea7e4dd033925
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: e2f0eaf711cb52c400f63ae33131f295a66c9e84
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86195104"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479737"
 ---
 # <a name="review-your-compute-options"></a>Überprüfen Ihrer Computeoptionen
 
@@ -24,7 +24,8 @@ Im Rahmen der Evaluierung und Vorbereitung Ihrer Landezone müssen Sie alle Comp
 
 Verwenden Sie für alle Anwendungen oder Dienste, die Sie in Ihrer Landezonenumgebung bereitstellen, die folgende Entscheidungsstruktur als Ausgangspunkt für die Ermittlung der Anforderungen der Computedienste:
 
-![Entscheidungsstruktur für Azure-Computedienste](../../_images/ready/compute-decision-tree.png)
+![Entscheidungsstruktur: Azure-Computedienste](../../_images/ready/compute-decision-tree.png)
+_Abbildung 1: Entscheidungsstruktur für Azure-Computedienste._
 
 > [!NOTE]
 > Weitere Informationen zum Bewerten von Computeoptionen für die einzelnen Anwendungen oder Dienste finden Sie im [Leitfaden zur Azure-Anwendungsarchitektur](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree).
@@ -33,8 +34,8 @@ Verwenden Sie für alle Anwendungen oder Dienste, die Sie in Ihrer Landezonenumg
 
 Die Beantwortung der folgenden Fragen zu Ihren Workloads ist hilfreich, um basierend auf der Entscheidungsstruktur für Azure-Computedienste Entscheidungen treffen zu können:
 
-- **Erstellen Sie neue Anwendungen und Dienste, oder migrieren Sie von bestehenden lokalen Workloads?** Die Entwicklung neuer Anwendungen im Rahmen Ihrer Cloudeinführungsmaßnahmen ermöglicht es Ihnen, die Vorteile moderner cloudbasierter Hostingtechnologien bereits in der Entwurfsphase voll auszuschöpfen.
-- **Wenn Sie bestehende Workloads migrieren, können diese dann die Vorteile moderner Cloudtechnologien nutzen?** Die Migration der lokalen Workloads erfordert eine Analyse: Können Sie vorhandene Anwendungen und Dienste auf einfache Weise optimieren, um moderne Cloudtechnologien zu nutzen, oder funktioniert ein _Lift-and-Shift_-Ansatz für Ihre Workloads besser?
+- **Erstellen Sie neue Anwendungen und Dienste, oder migrieren Sie von bestehenden lokalen Workloads?** Die Entwicklung neuer Anwendungen im Rahmen Ihrer Cloudeinführungsmaßnahmen ermöglicht es Ihnen, die Vorteile moderner cloudbasierter Hostingtechnologien bereits ab der Entwurfsphase voll auszuschöpfen.
+- **Wenn Sie bestehende Workloads migrieren, können diese dann die Vorteile moderner Cloudtechnologien nutzen?** Zum Migrieren von lokalen Workloads ist eine Analyse erforderlich. Können Sie vorhandene Anwendungen und Dienste auf einfache Weise optimieren, um moderne Cloudtechnologien zu nutzen, oder funktioniert für Ihre Workloads ein Ansatz per Lift & Shift besser?
 - **Können Ihre Anwendungen oder Dienste Container nutzen?** Wenn sich Ihre Anwendungen gut für ein containerisiertes Hosting eignen, können Sie die Vorteile der Ressourceneffizienz, Skalierbarkeit und Orchestrierung nutzen, die von [Containerdiensten in Azure](https://azure.microsoft.com/product-categories/containers) bereitgestellt werden. Sowohl [verwaltete Azure-Datenträger](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview) als auch [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) können für die permanente Speicherung in containerisierten Anwendungen verwendet werden.
 - **Sind Ihre Anwendungen web- oder API-basiert, und verwenden sie PHP, ASP.NET, Node.js oder ähnliche Technologien?** Web-Apps können für verwaltete [App Service](https://docs.microsoft.com/azure/app-service/overview)-Instanzen bereitgestellt werden, sodass keine virtuelle Computer für Hostingzwecke verwaltet werden müssen.
 - **Benötigen Sie die volle Kontrolle über das Betriebssystem und die Hostingumgebung Ihrer Workload?** Wenn Sie die Hostingumgebung, einschließlich Betriebssystem, Datenträger, lokal ausgeführte Software und andere Konfigurationen, steuern müssen, können Sie für das Hosting Ihrer Anwendungen und Dienste [Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines) verwenden. Zusätzlich zur Auswahl der Größen und Leistungsstufen Ihres virtuellen Computers wirken sich Ihre Entscheidungen hinsichtlich des Speichers virtueller Datenträger auf die Leistung und SLAs aus, die mit ihren IaaS-Workloads (Infrastructure-as-a-Service) in Zusammenhang stehen. Weitere Informationen finden Sie in der Dokumentation zu [Azure Disk Storage](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview).
@@ -64,7 +65,7 @@ In der folgenden Tabelle sind einige häufige Nutzungsszenarien und die empfohle
 
 Mit Azure können Sie Dienste in der Größenordnung bereitstellen, die Sie benötigen, um Ihre Kunden und Partner zu erreichen, **wo auch immer diese sich befinden**. Ein wichtiger Faktor bei der Planung Ihrer Cloudbereitstellung ist die Ermittlung, in welcher Azure-Region Ihre Workloadressourcen gehostet werden.
 
-Einige Computeoptionen, z.B. Azure App Service, sind in den meisten Azure-Regionen allgemein verfügbar. Einige Computedienste werden jedoch nur in bestimmten Regionen unterstützt. Einige Typen von virtuellen Computern und die zugehörigen Speichertypen haben eine begrenzte regionale Verfügbarkeit. Bevor Sie die Entscheidung treffen, in welchen Regionen Sie Ihre Computeressourcen bereitstellen, empfehlen wir Ihnen die [Seite zu den Regionen](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=azure-vmware-cloudsimple,cloud-services,batch,container-instances,app-service,service-fabric,functions,kubernetes-service,virtual-machine-scale-sets,virtual-machines), um den aktuellen Status der regionalen Verfügbarkeit zu überprüfen.
+Einige Computeoptionen wie z. B. Azure App Service sind in den meisten Azure-Regionen allgemein verfügbar, während andere Computedienste nur in bestimmten Regionen unterstützt werden. Einige Typen von virtuellen Computern und die zugehörigen Speichertypen haben eine begrenzte regionale Verfügbarkeit. Bevor Sie die Entscheidung treffen, in welchen Regionen Sie Ihre Computeressourcen bereitstellen, empfehlen wir Ihnen die [Seite zu den Regionen](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=azure-vmware-cloudsimple,cloud-services,batch,container-instances,app-service,service-fabric,functions,kubernetes-service,virtual-machine-scale-sets,virtual-machines), um den aktuellen Status der regionalen Verfügbarkeit zu überprüfen.
 
 Sie können die [Seite „Azure-Regionen“](https://azure.microsoft.com/global-infrastructure/regions) besuchen, um weitere Informationen zur globalen Azure-Infrastruktur zu erhalten. Sie können auch die Seite mit den [verfügbaren Produkten nach Region](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=all) verwenden, um spezifische Informationen dazu zu erhalten, welche Dienste in den einzelnen Azure-Regionen verfügbar sind.
 

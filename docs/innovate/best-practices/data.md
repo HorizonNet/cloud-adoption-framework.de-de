@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 85b24ecd5045554181cd88aa9671ab8f85fcad25
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: c29e32370fdb46fabb3157f33eff1dec0e0a0006
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193744"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449726"
 ---
 # <a name="tools-to-democratize-data-in-azure"></a>Tools zum Demokratisieren von Daten in Azure
 
@@ -46,8 +46,8 @@ In Azure werden häufig die folgenden Tools genutzt, um digitale Erfindungen in 
 - [Azure-Datenbank für PostgreSQL](https://docs.microsoft.com/azure/postgresql)
 - [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql)
 - [Azure Database for MariaDB](https://docs.microsoft.com/azure/mariadb)
-- [Azure Database for PostgreSQL Hyperscale](https://docs.microsoft.com/azure/postgresql/concepts-hyperscale-nodes)
-- [Azure Data Lake](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)
+- [Azure Database for PostgreSQL-Hyperscale](https://docs.microsoft.com/azure/postgresql/concepts-hyperscale-nodes)
+- [Azure Data Lake-Speicher](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction)
 - [Azure Database Migration Service](https://docs.microsoft.com/azure/dms)
 - [Azure SQL-Datenbank mit oder ohne verwaltete Azure SQL-Instanz](https://docs.microsoft.com/azure/sql-database)
 - [Azure Data Factory](https://docs.microsoft.com/azure/data-factory)
@@ -57,7 +57,7 @@ In Azure werden häufig die folgenden Tools genutzt, um digitale Erfindungen in 
 - [SQL Server Stretch Database](https://docs.microsoft.com/sql/sql-server/stretch-database)
 - [Azure StorSimple](https://docs.microsoft.com/azure/storsimple)
 - [Azure Files](https://docs.microsoft.com/azure/storage/files)
-- [Azure-Dateisynchronisierung ](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning)
+- [Azure-Dateisynchronisierung](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning)
 - [PolyBase](https://docs.microsoft.com/sql/relational-databases/polybase)
 
 Wenn die Erfindung für eine Einführung in größerem Maßstab bereit ist, erfordern alle Aspekte jeder Lösung eine Verfeinerung und technische Reife. In diesem Fall werden wahrscheinlich weitere dieser Dienste erforderlich sein. Verwenden Sie das Inhaltsverzeichnis auf der linken Seite für die Anleitung zu den Azure-Tools, die für Ihren Prozess zum Testen der Hypothese relevant sind.

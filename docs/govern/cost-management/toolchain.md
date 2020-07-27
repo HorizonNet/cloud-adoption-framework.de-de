@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2433e5bc74b059911575165df39f6ce3a1d1f8d8
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 6355c5f5a80e915a3b2b82b99c06c388e9e0f8d2
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193880"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450304"
 ---
 # <a name="cost-management-tools-in-azure"></a>Cost Management-Tools in Azure
 
@@ -29,7 +29,7 @@ Im Folgenden ist eine Liste der nativen Azure-Tools aufgeführt, die zur Ausreif
 | Budgetkontrolle     | Nein         | Ja         | Nein         | Ja         |
 | Überwachen der Ausgaben für eine einzelne Ressource    | Ja         | Ja         | Ja         | Nein         |
 | Überwachen der Ausgaben für mehrere Ressourcen    | Nein         | Ja        | Ja         | Nein         |
-| Steuern der Ausgaben für eine einzelne Ressource     | Ja – manuelle Größenanpassung         | Ja         | Nein         | Ja         |
+| Steuern der Ausgaben für eine einzelne Ressource     | Ja, manuelle Größenanpassung         | Ja         | Nein         | Ja         |
 | Durchsetzen der Ausgaben für mehrere Ressourcen    | Nein         | Ja         | Nein         | Ja         |
 | Erzwingen von Kostenmetadaten für Ressourcen    | Nein         | Nein         | Nein         | Ja         |
 | Überwachen und Erkennen von Trends     | Ja          | Ja        | Ja         | Nein         |

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 8728d9c2dac9e5bea9a59cab01e3399c1ccd780c
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: bcc79f58eef7b455e6cbfee9c6e897af9c5d3b27
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194543"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450882"
 ---
 # <a name="azure-regions-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Azure-Regionen
 
@@ -135,7 +135,9 @@ Beim Umgang mit Komplexitäten in Zusammenhang mit globalen Assets und der globa
 **Evaluieren von rechenzentrumsübergreifenden Abhängigkeiten**: Die [Tools für die Visualisierung von Abhängigkeiten in Azure Migrate](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization) helfen bei der Ermittlung von Abhängigkeiten. Die Verwendung dieser Tools vor der Migration ist eine bewährte Vorgehensweise. Wenn es um globale Komplexität geht, wird diese Verwendung zu einem notwendigen Schritt im Bewertungsprozess. Die Visualisierung durch die [Gruppierung von Abhängigkeiten](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies) kann dabei helfen, die IP-Adressen und Ports aller Assets zu ermitteln, die zur Unterstützung der Workload erforderlich sind.
 
 > [!IMPORTANT]
-> Zwei wichtige Hinweise: Erstens muss ein Experte, der über Kenntnisse zu Assetplatzierung und IP-Adressschemas verfügt, Assets identifizieren, die sich in einem sekundären Rechenzentrum befinden. Zweitens müssen sowohl Downstreamabhängigkeiten als auch Clients in der Visualisierung evaluiert werden, um bidirektionale Abhängigkeiten zu verstehen.
+>
+> - Ein Experte, der über Kenntnisse zu Ressourcenplatzierung und IP-Adressschemas verfügt, muss Ressourcen identifizieren, die sich in einem sekundären Rechenzentrum befinden.
+> - Werten Sie sowohl Downstreamabhängigkeiten als auch Clients im visuellen Element aus, um bidirektionale Abhängigkeiten zu verstehen.
 
 **Erkennen der globalen Auswirkungen auf Benutzer**: Die Ergebnisse der Benutzerprofilanalyse sollten alle Workloads bezeichnen, die durch globale Benutzerprofile beeinflusst werden. Wenn sich ein Migrationskandidat auf der Liste der betroffenen Workloads befindet, sollte sich der Architekt, der die Migration vorbereitet, mit den Experten für Netzwerkfunktionen und Betrieb beraten, um Netzwerkrouting und Leistungserwartungen zu überprüfen. Eine Mindestanforderung ist, dass die Architektur eine ExpressRoute-Verbindung zwischen dem nächstgelegenen Netzwerkbetriebszentrum und Azure umfasst. Die [Referenzarchitektur für ExpressRoute-Verbindungen](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/expressroute) kann bei der Konfiguration der notwendigen Verbindung helfen.
 
@@ -144,11 +146,11 @@ Beim Umgang mit Komplexitäten in Zusammenhang mit globalen Assets und der globa
 > [!WARNING]
 > Bei Verwendung einer der gerade genannten Referenzarchitekturen müssen möglicherweise bestimmte Datenelemente von Replikationsprozessen ausgeschlossen werden, um Datenhoheitsanforderungen zu erfüllen. Dadurch wird ein weiterer Schritt zum Prozess der Höherstufung hinzugefügt.
 
-## <a name="migrate-process-changes"></a>Änderungen am Migrationsprozess
+## <a name="migration-process-changes"></a>Änderungen für den Migrationsprozess
 
 Beim Migrieren einer Anwendung, die in mehreren Regionen bereitgestellt werden muss, muss das Cloudeinführungsteam einige Überlegungen berücksichtigen. Hierzu gehören der Entwurf des Azure Site Recovery-Tresors, des Konfigurations-/Prozessservers, der Netzwerkbandbreite sowie die Datensynchronisierung.
 
-### <a name="suggested-action-during-the-migrate-process"></a>Empfohlene Aktion während des Migrationsprozesses
+### <a name="suggested-action-during-the-migration-process"></a>Empfohlene Aktion während des Migrationsprozesses
 
 **Entwurf des Azure Site Recovery-Tresors**: Azure Site Recovery ist das empfohlene Tool für die cloudnative Replikation und Synchronisierung von digitalen Assets in Azure. Site Recovery repliziert Daten zum Asset in einen Site Recovery-Tresor, der an ein bestimmtes Abonnement in einer bestimmten Region und einem bestimmten Azure-Rechenzentrum gebunden ist. Beim Replizieren von Assets in eine zweite Region ist möglicherweise ein zweiter Site Recovery-Tresor erforderlich.
 

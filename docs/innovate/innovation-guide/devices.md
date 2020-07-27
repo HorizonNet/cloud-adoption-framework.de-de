@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: ded639348eaee2053d6f02e4179694df7e193b0b
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: c739459e26f83bf5e41f89bb22750632bc7e4afe
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373253"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86448995"
 ---
 <!-- cSpell:ignore umarmohamedusman umarm Moovit -->
 
@@ -22,7 +22,7 @@ ms.locfileid: "86373253"
 
 Nehmen Sie Innovationen durch zeitweise verbundene und lernfähige Edge-Geräte vor. Orchestrieren Sie Millionen solcher Geräte, erwerben und verarbeiten Sie unbegrenzte Datenmengen, und profitieren Sie von einer wachsenden Anzahl von auf verschiedenen Geräten genutzten Funktionen, für die mehrere Sinne genutzt werden können. Für Geräte im Edge-Bereich Ihres Netzwerks bietet Azure ein Framework zum Erstellen immersiver und effektiver Geschäftslösungen. Durch universelles Computing, das durch Azure in Kombination mit KI-Technologie ermöglicht wird, können Sie jede vorstellbare Art intelligenter Anwendungen und Systeme erstellen.
 
-Azure-Kunden verwenden eine ständig wachsende Anzahl von vernetzten Systemen und Geräten, die Daten sammeln und analysieren – nahe an Benutzern, Daten oder beidem. Benutzer erhalten Echtzeiteinblicke und -funktionen, die von schnell reagierenden und kontextbezogenen Anwendungen bereitgestellt werden. Indem Teile der Workload in den Edge-Bereich verschoben werden, benötigen diese Geräte weniger Zeit für das Senden von Nachrichten in die Cloud und können schneller auf räumliche Ereignisse reagieren.
+Azure-Kunden verwenden eine ständig wachsende Anzahl von vernetzten Systemen und Geräten, die Daten sammeln und analysieren (nahe an Benutzern, Daten oder beidem). Benutzer erhalten Echtzeiterkenntnisse und -darstellungen, die von schnell reagierenden und kontextbezogenen Anwendungen bereitgestellt werden. Indem Teile der Workload in den Edge-Bereich verschoben werden, benötigen diese Geräte weniger Zeit für das Senden von Nachrichten in die Cloud und können schneller auf räumliche Ereignisse reagieren.
 
 > [!div class="checklist"]
 >
@@ -32,7 +32,7 @@ Azure-Kunden verwenden eine ständig wachsende Anzahl von vernetzten Systemen un
 > - [Azure Kinect DK](https://docs.microsoft.com/azure/kinect-dk/about-azure-kinect-dk)
 > - Drohnen
 > - [Azure SQL Edge](https://docs.microsoft.com/azure/azure-sql-edge/overview)
-> - [Dokumentation zu IoT Plug & Play (Vorschauversion)](https://docs.microsoft.com/azure/iot-pnp/overview-iot-plug-and-play)
+> - [IoT Plug & Play](https://docs.microsoft.com/azure/iot-pnp/overview-iot-plug-and-play)
 
 <!-- markdownlint-disable MD025 -->
 
@@ -53,7 +53,7 @@ Dies sind einige der Features, die Sie nutzen können:
 
 ### <a name="learn-more"></a>Weitere Informationen
 
-- [IoT Hub](https://docs.microsoft.com/azure/iot-hub)
+- [Azure IoT Hub](https://docs.microsoft.com/azure/iot-hub)
 - [Azure IoT Hub Device Provisioning Service (DPS)](https://docs.microsoft.com/azure/iot-dps)
 
 ::: zone-end
@@ -119,7 +119,7 @@ Zum Erstellen von Azure Digital Twins gehen Sie folgendermaßen vor:
 1. Wählen Sie im linken Bereich **Ressource erstellen**.
 2. Suchen Sie nach **Digital Twins**, und wählen Sie dann **Digital Twins** aus.
 3. Wählen Sie **Erstellen** aus, um den Bereitstellungsprozess zu starten.
-4. Zum Überprüfen vorhandener Digital Twins wählen Sie diese Schaltfläche aus:
+4. Wählen Sie zum Überprüfen vorhandener Digital Twins diese Schaltfläche aus:
 
 <!-- markdownlint-disable DOCSMD001 -->
 
@@ -135,7 +135,7 @@ Zum Erstellen von Azure Digital Twins gehen Sie folgendermaßen vor:
 
 Zusätzlich zu herkömmlichen Standortfunktionen wie „In der Nähe“, „Verkehr“ und „Route“ ermöglicht es der Azure Maps-Dienst Unternehmen, Lösungen mit Location Intelligence in Echtzeit zu erstellen, die von den renommierten Partnern für Mobilitätstechnologie TomTom und Moovit gestellt wird. Integrieren Sie mit Geodiensten mühelos komplexe Standort- und Mobilitätsfunktionen in Ihre Anwendungen.
 
-**Datendienstvorschau:** Sie können Geodaten zur Verwendung bei räumlichen Vorgängen oder bei der Bildkomposition hochladen und speichern, um die Latenz zu senken, die Produktivität zu erhöhen und neue Szenarien in Ihren Anwendungen zu ermöglichen.
+**Azure Maps-Datendienst (Vorschauversion):** Sie können Geodaten zur Verwendung bei räumlichen Vorgängen oder bei der Bildkomposition hochladen und speichern, um die Latenz zu senken, die Produktivität zu erhöhen und neue Szenarien in Ihren Anwendungen zu ermöglichen.
 
 **Räumliche Vorgänge:** Verbessern Sie die Location Intelligence mit einer Bibliothek aus häufig genutzten räumlichen Berechnungen, z.B. zum Geofencing, zur Ermittlung des am nächsten gelegenen Punkts und des Kreisabstands sowie für Puffer.
 
@@ -153,7 +153,7 @@ Zusätzlich zu herkömmlichen Standortfunktionen wie „In der Nähe“, „Verk
 
 ### <a name="action"></a>Aktion
 
-Zum Verwenden von Location Intelligence gehen Sie folgendermaßen vor:
+So verwenden Sie Location Intelligence
 
 1. Navigieren Sie zu **Azure Maps-Konten**.
 2. Wählen Sie **Azure Maps-Konten erstellen** aus.
@@ -172,9 +172,9 @@ Mit Azure Spatial Anchors können Entwickler Mixed Reality-Plattformen verwenden
 
 **Die echte Welt um Kontext ergänzen:** Vermitteln Sie Ihren Benutzern ein besseres Verständnis ihrer Daten – und zwar genau an dem Ort und zu dem Zeitpunkt, zu dem sie diese benötigen. Dafür müssen Sie einfach Ihre digitalen Inhalte an relevanten physischen Orten platzieren und verbinden.
 
-**Hologramme auf verschiedenen Geräten freigeben:** Beschleunigen Sie die Entscheidungsfindung, indem Sie Ihr Team und Ihre Kunden in 3D auf den gewünschten Geräten unterstützen. Spatial Anchors erleichtert es Personen, die sich an demselben Ort befinden, an Mixed Reality-Anwendungen für mehrere Benutzer teilzunehmen.
+**Hologramme auf verschiedenen Geräten freigeben:** Beschleunigen Sie die Entscheidungsfindung, indem Sie Ihr Team und Ihre Kunden in 3D auf den gewünschten Geräten unterstützen. Raumanker vereinfachen es für Personen, die sich am selben Ort befinden, an Mixed Reality-Anwendungen für mehrere Benutzer teilzunehmen.
 
-**Ansprechende Erfahrungen:** Verbinden Sie Spatial Anchors-Instanzen miteinander, indem Sie Beziehungen zwischen diesen herstellen, und stellen Sie eine Benutzeroberfläche bereit, die zwei oder mehr Points of Interest enthält, mit denen ein Benutzer interagieren muss, um eine Aufgabe zu erfüllen. Mit Ihrer Anwendung kann ein Benutzer ein virtuelles Element in der realen Welt platzieren. In einer Industrieumgebung kann ein Benutzer beispielsweise Kontextinformationen zu einem Computer erhalten, indem er mit einer unterstützten Gerätekamera darauf zeigt.
+**Ansprechende Erfahrungen:** Verbinden Sie Spatial Anchors-Instanzen miteinander, indem Sie Beziehungen zwischen diesen herstellen, und stellen Sie eine Benutzeroberfläche bereit, die zwei oder mehr Points of Interest enthält, mit denen ein Benutzer interagieren muss, um eine Aufgabe zu erfüllen. Mit Ihrer Anwendung kann ein Benutzer ein virtuelles Artefakt in der realen Welt platzieren. In einer Industrieumgebung kann ein Benutzer beispielsweise Kontextinformationen zu einem Computer erhalten, indem er mit einer unterstützten Gerätekamera darauf zeigt.
 
 Azure Spatial Anchors besteht aus einem verwalteten Dienst und Client-SDKs für unterstützte Geräteplattformen.
 
@@ -190,10 +190,10 @@ Azure Spatial Anchors besteht aus einem verwalteten Dienst und Client-SDKs für 
 
 ### <a name="action"></a>Aktion
 
-Zum Verwenden räumlicher Erfahrungen gehen Sie folgendermaßen vor:
+So verwenden Sie Azure Spatial Anchors
 
-1. Navigieren Sie zu **Spatial Anchors-Konten**.
-2. Wählen Sie **Spatial Anchors-Konten erstellen** aus.
+1. Navigieren Sie zu **Spatial Anchors accounts** (Spatial Anchors-Konten).
+2. Wählen Sie **Create Spatial Anchors account** (Spatial Anchors-Konto erstellen) aus.
 
 <!-- markdownlint-disable DOCSMD001 -->
 

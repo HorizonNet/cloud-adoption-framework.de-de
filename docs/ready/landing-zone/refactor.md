@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 97d906504424761264bc550c8ce82dac2cc5cbd0
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: b2e7559e042fba1b70509963acaddf9ec5ea3eaf
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86195206"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479276"
 ---
 # <a name="refactor-landing-zones"></a>Umgestalten von Zielzonen
 
@@ -20,11 +20,12 @@ Eine Zielzone ist eine **mittels Code vorab bereitgestellte** Umgebung zum Hoste
 
 Die Ready-Methode verwendet das Konzept des Refactoring, um die Migration zu beschleunigen und häufige Hindernisse zu beseitigen. Die Schritte in der Übersicht zur Bereitschaft beschreiben einen Prozess, der mit einer vordefinierten Zielzonenvorlage beginnt, die am besten auf Ihre Hostingfunktion abgestimmt ist. Dann wird der Quellcode umgestaltet oder ergänzt, um die Funktionen der Landezonen so zu erweitern, dass sie diese Funktion durch verbesserte Sicherheit, Abläufe oder Governance bereitstellen können. Die folgende Abbildung veranschaulicht das Konzept des Refactorings.
 
-![Abbildung zum Refactoring der Zielzone, die später in diesem Artikel beschrieben wird.](../../_images/ready/refactor.png)
+![Abbildung zum Refactoring einer Zielzone – beschrieben in einem späteren Abschnitt dieses Artikels](../../_images/ready/refactor.png)
+_Abbildung 1: Refactoring einer Zielzone_
 
 ## <a name="common-blockers"></a>Allgemeine Hindernisse
 
-Wenn Kunden die Cloud einführen, sind Überlegungen zur Zielzone das häufigste Hindernis für die Einführung und die cloudbezogenen Geschäftsergebnisse. Kunden neigen dazu, sich einem der beiden folgenden Hindernisse zuzuwenden. Oftmals tendieren verschiedene Teams jeweils zu einem dieser beiden Hindernisse, was zu kulturellen Deadlocks führt, die eine Einführung erschweren.
+Wenn Kunden die Cloud einführen, sind Überlegungen zur Zielzone das häufigste Hindernis für die Einführung und die cloudbezogenen Geschäftsergebnisse. Kunden neigen dazu, sich einem der beiden folgenden Hindernisse zuzuwenden. Verschiedene Teams tendieren jeweils zu einem dieser beiden Hindernisse und sind dadurch kulturellen Deadlocks ausgesetzt, die eine Einführung erschweren.
 
 Die beiden primären Hindernisse sind in einer Überzeugung verwurzelt: Die Cloudumgebung und die vorhandenen Rechenzentren sollten in Bezug auf Betrieb, Governance und Sicherheit (nahezu) eine Featureparität aufweisen. Dies ist ein vernünftiges langfristiges Ziel. Aber das Problem ist das sensible Gleichgewicht zwischen dem Timing zur Erreichung dieses Ziels und der Geschwindigkeit, die zur Erzielung von Geschäftsergebnissen erforderlich ist.
 
@@ -32,15 +33,17 @@ Die beiden primären Hindernisse sind in einer Überzeugung verwurzelt: Die Clou
 
 Es bedurfte Jahre und erheblicher Anstrengungen, um den aktuellen Stand hinsichtlich Sicherheit, Governance und Betrieb im derzeitigen Rechenzentrum zu erreichen. Außerdem waren Beobachtungen, Lernprozesse und Anpassungen erforderlich, um den eindeutigen Einschränkungen dieser Umgebung zu entsprechen. Das Replizieren derselben Verfahren und Konfigurationen wird einige Zeit in Anspruch nehmen. Das Erreichen einer vollständigen Featureparität kann auch zu einer Umgebung führen, die in der Cloud unterdurchschnittlich leistungsfähig ist. Dieser Paritätsansatz führt außerdem häufig zu erheblichen ungeplanten Ausgabenüberschreitungen in der Cloudumgebung. Versuchen Sie nicht, die aktuellen Zustandsanforderungen auf eine zukünftige Zustandsumgebung als eine Art „Tor zu einer frühen Phase“ anzuwenden. Ein solcher Ansatz erweist sich selten als profitabel.
 
-![Allgemeines Hindernis: Zu frühes Handeln](../../_images/ready/blocker-act-too-soon.png)
+![Häufiges Hindernis: Zu frühes Handeln](../../_images/ready/blocker-act-too-soon.png)
+_Abbildung 2: Zu frühes Handeln als häufiges Hindernis_
 
-In der obigen Abbildung hat der Kunde ein Ziel von 100 Workloads, die in der Cloud ausgeführt werden. Um dies zu erreichen, wird der Kunde wahrscheinlich seine erste Workload bereitstellen. Dann ihre ersten ca. 10 Workloads, bevor sie bereit sind, eines dieser Workloads für die Produktion freizugeben. Schließlich werden sie das Ziel des Einführungsplans erreichen und über ein robustes Portfolio in der Cloud verfügen. Das rote _x_ in der Abbildung zeigt jedoch, wo Kunden häufig nicht weiterkommen. Das Warten auf eine vollständige Ausrichtung kann die erste Workload um Wochen, Monate oder sogar Jahre verzögern.
+In der obigen Abbildung hat der Kunde ein Ziel von 100 Workloads, die in der Cloud ausgeführt werden. Dazu stellt der Kunde wahrscheinlich seine erste Workload und dann ungefähr die ersten zehn Workloads bereit, bevor er für die Veröffentlichung einer Workload in der Produktion bereit ist. Schließlich werden sie das Ziel des Einführungsplans erreichen und über ein robustes Portfolio in der Cloud verfügen. Das rote _x_ in der Abbildung zeigt jedoch, wo Kunden häufig nicht weiterkommen. Das Warten auf eine vollständige Ausrichtung kann die erste Workload um Wochen, Monate oder sogar Jahre verzögern.
 
 ### <a name="blocker-acting-too-late"></a>Hindernis: Zu spätes Handeln
 
 Andererseits kann ein zu spätes Handeln erhebliche langfristige Folgen für den Erfolg der Bemühungen um die Einführung der Cloud haben. Wenn das Team mit dem Erreichen der Featureparität wartet, bis der Einführungsaufwand abgeschlossen ist, wird es auf unnötige Hindernisse stoßen und mehrere Eskalationen benötigen, um den Aufwand auf Kurs zu halten.
 
-![Allgemeines Hindernis: Zu spätes Handeln](../../_images/ready/blocker-act-too-late.png)
+![Häufiges Hindernis: Zu spätes Handeln](../../_images/ready/blocker-act-too-late.png)
+_Abbildung 3: Zu spätes Handeln als häufiges Hindernis_
 
 Ähnlich wie bei zu frühem Handeln wartet der Kunde in dieser Abbildung zu lange, um über Zielzonen hinweg die Unternehmensbereitschaft zu erreichen. Durch zu langes Warten wird der Kunde hinsichtlich des Umfangs beim Refactoring und der Erweiterung eingeschränkt, die er in der Umgebung durchführen kann. Diese Einschränkungen werden ihre Möglichkeiten für einen anhaltenden Erfolg begrenzen.
 
@@ -63,16 +66,17 @@ Das Konzept der Umgestaltung einer Zielzone ist einfach, erfordert jedoch geeign
 
 ## <a name="development-approach"></a>Entwicklungsansatz
 
-Der Vorteil eines auf Refactoring basierenden Ansatzes ist die Möglichkeit, parallele Iterationspfade für die Entwicklung zu erzeugen. Die folgende Abbildung zeigt ein Beispiel für zwei parallele Iterationspfade: Cloudeinführung und Cloudplattform. Beide schreiten in ihrem eigenen Tempo voran, wobei ein minimales Risiko besteht, zum Hindernis für den täglichen Aufwand beider Teams zu werden. Die Anpassung an den Einführungsplan und die Schutzmaßnahmen für das Refactoring schaffen eine Reihe von Vereinbarungen hinsichtlich der Meilensteine, die klare zukünftige Zustandsabhängigkeiten bereitstellen.
+Der Vorteil eines auf Refactoring basierenden Ansatzes ist die Möglichkeit, parallele Iterationspfade für die Entwicklung zu erzeugen. Die folgende Abbildung zeigt ein Beispiel für zwei parallele Iterationspfade: Cloudeinführung und Cloudplattform. Beide schreiten in ihrem eigenen Tempo voran, wobei ein minimales Risiko besteht, zum Hindernis für den täglichen Aufwand beider Teams zu werden. Die Anpassung an den Einführungsplan und die Schutzmaßnahmen für das Refactoring können zu Vereinbarungen hinsichtlich Meilensteinen und zu Gewissheit über zukünftige Zustandsabhängigkeiten führen.
 
 ![Parallele Iteration der Zielzone](../../_images/ready/iterations.png)
+_Abbildung 4: Parallele Iteration der Zielzone_
 
 In den obigen Beispieliterationspfaden migriert das Cloudeinführungsteam sein Portfolio von 100 Workloads in die Cloud. Parallel dazu konzentriert sich das Cloudplattformteam darauf, dem Cloudeinführungsplan voraus zu sein, um sicherzustellen, dass die Umgebung auf diese Workloads vorbereitet ist.
 
 In diesem Beispiel werden die geplanten Iterationen wie folgt ausgeführt:
 
 - Das Cloudplattformteam beginnt die Entwicklungsmaßnahmen mit der Bereitstellung einer ersten Zielzone. Diese Zielzone ermöglicht es dem Cloudeinführungsteam, die erste Workload bereitzustellen und zu testen.
-- Um die nächste Bereitstellung von 10 Workloads durch das Cloudeinführungsteam vorzubereiten, arbeitet das Cloudplattformteam im Voraus an der Umgestaltung und Ergänzung einer verbundenen Umgebung und behandelt die Cloud als ein Umkreisnetzwerk (DMZ).
+- Zur Vorbereitung auf die nächste Bereitstellung von 10 Workloads durch das Cloudeinführungsteam arbeitet das Cloudplattformteam im Voraus an der Umgestaltung und der Ergänzung einer verbundenen Umgebung und behandelt die Cloud als ein Umkreisnetzwerk.
 - Bevor das Einführungsteam seine erste Produktionsworkload freigeben kann, verlangt das Sicherheitsteam eine Sicherheitsüberprüfung. Während das Einführungsteam seine ersten 10 Workloads bereitstellt, schreitet das Plattformteam bei der Definition und Implementierung der Sicherheitsanforderungen voran.
 - Wenn die erste Workload für die Produktion freigegeben wird, sollten beide Teams über ausreichende Erfahrungen verfügen, um sich auf ein längerfristiges Modell mit freigegebenen Diensten vorzubereiten. Die Zentralisierung der zentralen Dienstarchitekturen wird dazu beitragen, Governance- und Betriebsteam aufeinander abzustimmen. Die Zentralisierung der zentralen Dienste wird dazu beitragen, das Einführungsteam auf die Skalierung und Freigabe der nächsten Wellen von Produktionsworkloads vorzubereiten.
 - Wenn sich das Team seinem Ziel nähert, 100 Workloads zu migrieren, wird das Team natürlich beginnen, sich mehr in Richtung eines Kollaborationsmodells und einer Teamstruktur für ein Cloudkompetenzzentrum zu bewegen.
@@ -88,10 +92,10 @@ Als Beispiel für die Einrichtung von Schutzmaßnahmen für das Refactoring lass
 - Gemäß den [Annahmen der Blaupause für die CAF-Migrationszielzone](./migrate-landing-zone.md#assumptions) ist diese anfängliche Zielzone nicht für vertrauliche Daten oder unternehmenskritische Workloads ausgelegt. Diese Features müssen durch Refactoring hinzugefügt werden.
 - In diesem Beispiel nehmen wir an, dass das Portfolio von 100 Workloads Hostingfunktionen für sowohl unternehmenskritische als auch vertrauliche Daten erfordern wird.
 
-Um diese beiden konkurrierenden Anforderungen ausgewogen zu gestalten, werden das Einführungsteam und das Plattformteam unter den folgenden vereinbarten Bedingungen arbeiten:
+Um diese beiden konkurrierenden Anforderungen ausgewogen zu gestalten, einigen sich das Einführungsteam und das Plattformteam auf die Arbeit unter den folgenden Bedingungen:
 
 - Das Cloudeinführungsteam wird Produktionsworkloads, die keinen Zugriff auf vertrauliche Daten haben und nicht als unternehmenskritisch eingestuft werden, priorisieren.
-- Vor der Produktionsfreigabe wird das Sicherheits- und Betriebsteam die Anpassung an die vorherige Richtlinie überprüfen.
+- Vor der Produktionsfreigabe überprüft das Sicherheits- und Betriebsteam die Ausrichtung an der vorherigen Richtlinie.
 - Das Cloudplattformteam wird mit den Sicherheits- und Governanceteams zusammenarbeiten, um eine Sicherheitsbaseline zu implementieren. Sobald die Sicherheit die Implementierung genehmigt hat, wird das Einführungsteam für die Migration von Workloads, die Zugriff auf einige vertrauliche Daten haben, zugelassen.
 - Das Cloudplattformteam wird mit dem Betriebsteam zusammenarbeiten, um eine Verwaltungsbaseline zu implementieren. Sobald das Betriebsteam die Implementierung genehmigt hat, wird das Einführungsteam für die Migration von Workloads mit höherer Wichtigkeit zugelassen.
 
@@ -99,11 +103,12 @@ In diesem Beispiel ermöglichen die oben genannten vereinbarten Bedingungen dem 
 
 ## <a name="meeting-long-term-requirements-while-refactoring"></a>Erfüllen langfristiger Anforderungen beim Refactoring
 
-Der Abschnitt der Ready-Methode über die Erweiterung Ihrer Zielzone wird Ihnen helfen, sich auf die längerfristigen Anforderungen einzustellen. Während das Cloudeinführungsteam gemäß seinem Einführungsplan voranschreitet, bietet der Abschnitt über die Erweiterung Ihrer Zielzone eine Orientierungshilfe bei der Entscheidungsfindung und beim Refactoring in Übereinstimmung mit den sich entwickelnden Anforderungen der verschiedenen Teams.
+Der Abschnitt der Ready-Methode über die Erweiterung Ihrer Zielzone wird Ihnen helfen, sich auf die längerfristigen Anforderungen einzustellen. Während das Cloudeinführungsteam gemäß seinem Einführungsplan voranschreitet, lesen Sie [Erweitern Ihrer Zielzone](../considerations/index.md) als Orientierungshilfe bei der Entscheidungsfindung und beim Refactoring entsprechend den wechselnden Anforderungen der verschiedenen Teams.
 
 ![Parallele Iteration der Zielzone](../../_images/ready/refactor-methodologies.png)
+_Abbildung 5: Weiterführende Methoden zur Unterstützung einer parallelen Iteration der Zielzone_
 
-Jeder Unterabschnitt von „Erweitern Ihrer Zielzone“ weist auf eine der in der obigen Abbildung dargestellten Ergänzungen hin. Über diese grundlegenden Ergänzungen hinaus werden die tiefer gehenden Methoden (z. B. Governance oder Verwaltung) dieses Frameworks dazu beitragen, über grundlegende Änderungen der Zielzone hinauszugehen und langfristige Regelungen umzusetzen.
+Jeder Unterabschnitt von [Erweitern Ihrer Zielzone](../considerations/index.md) weist auf eine der in der obigen Abbildung dargestellten Ergänzungen hin. Über diese grundlegenden Ergänzungen hinaus werden die tiefer gehenden Methoden (z. B. Governance oder Verwaltung) dieses Frameworks dazu beitragen, über grundlegende Änderungen der Zielzone hinauszugehen und langfristige Regelungen umzusetzen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

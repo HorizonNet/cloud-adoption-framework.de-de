@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 88c6225915e023bfd148cc0663c7781a11af730d
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: c886494236a71d86241c9f8d94379389fb5b0654
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86235414"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479380"
 ---
 <!-- docsTest:disable TODO -->
 <!-- cSpell:ignore tracsman jonor rossort NVAs iptables WAFs DDOS ITSM LLAP anycast vwan -->
@@ -144,7 +144,7 @@ Der Hub enthält oft die allgemeinen Dienstkomponenten, die von den Spokes genut
 
 Ein virtuelles Rechenzentrum reduziert die Gesamtkosten mithilfe der gemeinsamen Hubinfrastruktur, die mehrere Spokes umfasst.
 
-Die Rolle eines jeden Spokes kann über verschiedene Arten von Workloads gehostet werden. Die Spokes können auch einen modularen Ansatz für wiederholbare Bereitstellungen der gleichen Workloads bieten. Beispiele hierfür sind Entwicklung und Tests, Benutzerakzeptanztests (User Acceptance Testing, UAT), Präproduktion und Produktion. Mit den Spokes können auch verschiedene Gruppen in Ihrer Organisation getrennt und aktiviert werden. Ein Beispiel hierfür sind DevOps-Gruppen. Innerhalb eines Spokes ist es möglich, eine einfache Workload oder komplexe Workloads mit mehreren Ebenen mit einer Datenverkehrssteuerung zwischen den Ebenen bereitzustellen.
+Die Rolle eines jeden Spokes kann über verschiedene Arten von Workloads gehostet werden. Die Spokes können auch einen modularen Ansatz für wiederholbare Bereitstellungen der gleichen Workloads bieten. Beispiele hierfür sind Dev/Test, Benutzerakzeptanztests, Präproduktion und Produktion. Mit den Spokes können auch verschiedene Gruppen in Ihrer Organisation getrennt und aktiviert werden. Ein Beispiel hierfür sind DevOps-Gruppen. Innerhalb eines Spokes ist es möglich, eine einfache Workload oder komplexe Workloads mit mehreren Ebenen mit einer Datenverkehrssteuerung zwischen den Ebenen bereitzustellen.
 
 ### <a name="subscription-limits-and-multiple-hubs"></a>Abonnementlimit und mehrere Hubs
 
@@ -155,7 +155,7 @@ Die Rolle eines jeden Spokes kann über verschiedene Arten von Workloads gehoste
 
 In Azure wird jede Komponente, unabhängig vom Typ, in einem Azure-Abonnement bereitgestellt. Die Isolation von Azure-Komponenten in verschiedenen Azure-Abonnements kann die Anforderungen verschiedener Branchenanwendungen erfüllen, z.B. das Einrichten unterschiedlicher Zugriffs- und Autorisierungsebenen.
 
-Ein einzelne Implementierung eines virtuellen Rechenzentrums kann auf eine große Anzahl von Spokes hochskaliert werden, wobei aber wie bei jedem IT-System gewisse Plattformbeschränkungen gelten. Die Hub-Bereitstellung ist an ein bestimmtes Azure-Abonnement gebunden. Für dieses gelten Einschränkungen, wie z. B. eine maximale Anzahl von Peerings virtueller Netzwerke. Weitere Informationen finden Sie unter [Grenzwerte für Azure-Abonnements und Dienste, Kontingente und Einschränkungen][limits].) In Fällen, in denen diese Beschränkungen ein Problem darstellen, kann die Architektur weiter hochskaliert werden, indem das Modell von einem einzelnen Hub und Spoke auf ein Cluster von Hub und Spokes erweitert wird. Mehrere Hubs in einer oder mehreren Azure-Regionen können mithilfe von Peering virtueller Netzwerke, ExpressRoute, Virtual WAN oder einem Site-to-Site-VPN miteinander verbunden werden.
+Ein einzelne Implementierung eines virtuellen Rechenzentrums kann auf eine große Anzahl von Spokes hochskaliert werden, wobei aber wie bei jedem IT-System gewisse Plattformbeschränkungen gelten. Die Hub-Bereitstellung ist an ein bestimmtes Azure-Abonnement gebunden. Für dieses gelten Einschränkungen, wie z. B. eine maximale Anzahl von Peerings virtueller Netzwerke. Weitere Informationen finden Sie unter [Grenzwerte, Kontingente und Einschränkungen für Azure-Abonnements und -Dienste][limits]. In Fällen, in denen diese Beschränkungen ein Problem darstellen, kann die Architektur weiter hochskaliert werden, indem das Modell von einem einzelnen Hub und Spoke auf ein Cluster von Hub und Spokes erweitert wird. Mehrere Hubs in einer oder mehreren Azure-Regionen können mithilfe von Peering virtueller Netzwerke, ExpressRoute, Virtual WAN oder einem Site-to-Site-VPN miteinander verbunden werden.
 
 ![2][2]
 
@@ -190,7 +190,7 @@ Der Name jeder Rollengruppe sollte ein eindeutiges Präfix aufweisen. Anhand die
 Viele Organisationen verwenden in etwa die folgenden Gruppen, um Rollen bereitzustellen:
 
 - Das zentrale IT-Team **Corp** verfügt über die Besitzrechte zum Steuern von Infrastrukturkomponenten. Beispiele hierfür sind Netzwerke und die Sicherheit. Der Gruppe muss über die Rolle „Mitwirkender“ für das Abonnement, die Kontrolle über den Hub und die Rechte eines Mitwirkenden des virtuellen Netzwerks in den Spokes verfügen. Große Unternehmen teilen diese Verwaltungsaufgaben häufig zwischen mehreren Teams auf, beispielsweise zwischen einer Gruppe für Netzwerkvorgänge **CorpNetOps**, die sich ausschließlich um den Netzwerkbetrieb kümmert, und einer Gruppe für Sicherheitsvorgänge **CorpSecOps**, die für die Firewall- und Sicherheitsrichtlinien verantwortlich ist. In diesem speziellen Fall müssen zwei unterschiedliche Gruppen für die Zuweisung dieser benutzerdefinierten Rollen erstellt werden.
-- Die für die Entwicklung und Tests zuständige Gruppe **AppDevOps** ist für die Bereitstellung von App- oder Dienstworkloads verantwortlich. Diese Gruppe übernimmt die Rolle des VM-Mitwirkenden für IaaS-Bereitstellungen oder eine oder mehrere Rollen von PaaS-Mitwirkenden. Informationen dazu finden Sie unter [Integrierte Rollen für die rollenbasierte Zugriffssteuerung in Azure][Roles]. Optional benötigt das Entwicklungs- und Testteam möglicherweise Einblick in Sicherheitsrichtlinien (Netzwerksicherheitsgruppen) und Routingrichtlinien (benutzerdefinierte Routen) im Hub oder einem bestimmte Spoke. Zusätzlich zur Rolle des Mitwirkenden für Workloads benötigt diese Gruppe auch die Rolle des Netzwerklesers.
+- Die für die Entwicklung und Tests zuständige Gruppe **AppDevOps** ist für die Bereitstellung von App- oder Dienstworkloads verantwortlich. Diese Gruppe übernimmt die Rolle des VM-Mitwirkenden für IaaS-Bereitstellungen oder eine oder mehrere Rollen von PaaS-Mitwirkenden. Weitere Informationen finden Sie unter [Integrierte Rollen für Azure-Ressourcen][Roles]. Optional benötigt das Entwicklungs- und Testteam möglicherweise Einblick in Sicherheitsrichtlinien (Netzwerksicherheitsgruppen) und Routingrichtlinien (benutzerdefinierte Routen) im Hub oder einem bestimmte Spoke. Zusätzlich zur Rolle des Mitwirkenden für Workloads benötigt diese Gruppe auch die Rolle des Netzwerklesers.
 - Die Betriebs- und Wartungsgruppe **CorpInfraOps** oder **AppInfraOps** ist für die Verwaltung von Workloads in der Produktion zuständig. Diese Gruppe muss ein Mitwirkender des Abonnements von Workloads in jedem Produktionsabonnement sein. Manche Organisationen sollten zudem prüfen, ob sie ein zusätzliches Team für den Eskalationssupport mit der Rolle des Mitwirkenden des Abonnements in der Produktion und im zentralen Hub-Abonnement benötigen. Diese zusätzliche Gruppe behebt potenzielle Konfigurationsprobleme in der Produktionsumgebung.
 
 Das virtuelle Rechenzentrum ist so ausgelegt, dass es für Gruppen, die für zentrale IT-Teams zur Verwaltung des Hubs erstellt wurden, entsprechende Gruppen auf Workloadebene gibt. Zusätzlich zur Verwaltung der Hub-Ressourcen können nur die zentralen IT-Teams den externen Zugriff und die Berechtigungen auf oberster Ebene für das Abonnement steuern. Workloadgruppen sind ebenfalls in der Lage, Ressourcen und Berechtigungen ihres eigenen virtuellen Netzwerks unabhängig vom zentralen IT-Team zu steuern.
@@ -236,7 +236,7 @@ Infrastrukturkomponenten bieten die folgenden Funktionen:
 
 Mit den Komponenten eines Umkreisnetzwerks (das gelegentlich auch als DMZ-Netzwerk bezeichnet wird) können Sie Verbindungen zwischen Ihren lokalen oder physischen Rechenzentrumsnetzwerken und darüber hinaus Konnektivität mit dem Internet herstellen. Ihre Netzwerk- und Sicherheitsteams verwenden in der Regel viel Zeit auf den Umkreis.
 
-Eingehende Pakete sollten durch die Sicherheitsgeräte im Hub geleitet werden, bevor sie die Back-End-Server und -Dienste in den Spokes erreichen. Beispiele für diese Sicherheitsgeräte sind die Firewall, IDS und IPS. Von den Workloads an das Internet gesendete Pakete sollten ebenfalls über die Sicherheitsgeräte im Umkreisnetzwerk geleitet werden, bevor sie das Netzwerk verlassen. Mit diesem Fluss können Richtlinien erzwungen, überprüft und überwacht werden.
+Eingehende Pakete sollten durch die Sicherheitsgeräte im Hub geleitet werden, bevor sie die Back-End-Server und -Dienste in den Spokes erreichen. Beispiele hierfür sind die Firewall, IDS und IPS. Von den Workloads an das Internet gesendete Pakete sollten ebenfalls über die Sicherheitsgeräte im Umkreisnetzwerk geleitet werden, bevor sie das Netzwerk verlassen. Mit diesem Fluss können Richtlinien erzwungen, überprüft und überwacht werden.
 
 Komponenten des Umkreisnetzwerks:
 

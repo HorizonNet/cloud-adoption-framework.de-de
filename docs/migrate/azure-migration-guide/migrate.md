@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 6dc3ea82120c89181b6d4d2ecffaccb6d77e99f5
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: e398c486192f2f0606765fadf1079f7b62afe923
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86372893"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450797"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
@@ -130,7 +130,7 @@ Nach der Registrierung des Ressourcenanbieters können Sie eine Azure Database M
 1. Wählen Sie **+ Ressource erstellen** aus, und suchen Sie im Marketplace nach **Azure Database Migration Service**.
 1. Schließen Sie den Assistenten „Migrationsdienst erstellen“ ab, und wählen Sie anschließend **Erstellen** aus.
 
-Der Dienst ist nun bereit, die unterstützten Quelldatenbanken (z. B. SQL Server, MySQL, PostgreSQL oder MongoDB) zu migrieren.
+Der Dienst ist jetzt bereit, die unterstützten Quelldatenbanken auf Zielplattformen wie SQL Server, MySQL, PostgreSQL oder MongoDB zu migrieren.
 
 ::: zone target="chromeless"
 
@@ -270,7 +270,7 @@ Dies sind nicht die einzigen verfügbaren Tools. Viele weitere Tools von Drittan
 
 Die Migration in Cloudtechnologien bietet eine großartige Gelegenheit, Ihre Organisation für DevOps und CI/CD einzurichten. Selbst wenn Ihre Organisation nur Infrastruktur verwaltet, können Sie, wenn Sie beginnen, Ihre Infrastruktur als Code zu verwalten und die Branchenmuster und -praktiken für DevOps zu verwenden, Ihre Agilität durch CI/CD-Pipelines erhöhen und sich so schneller an Änderungs-, Wachstums-, Release- und sogar Wiederherstellungszenarien anpassen.
 
-Azure DevOps bietet alle erforderlichen Funktionen und die Integration mit Azure, lokalen Umgebungen und sogar anderen Clouds. Weitere Informationen finden Sie unter [Azure DevOps-Dienste](https://docs.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops). Ein angeleitetes Training finden Sie unter [CI/CD mit Azure DevOps – Schnellstart](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html).
+Azure DevOps bietet die erforderlichen Funktionen und die Integration mit Azure, lokalen Umgebungen und sogar anderen Clouds. Weitere Informationen finden Sie unter [Azure DevOps](https://azure.microsoft.com/services/devops). Ein angeleitetes Training finden Sie unter [Schnellstart: CI/CD mit Azure DevOps](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html).
 
 ### <a name="suggested-skills"></a>Empfohlene Qualifikationen
 

@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 1fe5e8efc4ea76a5716e671e3bf562de41db4f62
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 693e1f7e625cfd05ba28190ecd75afff39b3ddc3
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194815"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479499"
 ---
 <!-- cSpell:ignore HDFS databox Avere HANA ACLs NetApp Isilon DFSR Cloudera -->
 
@@ -117,7 +117,7 @@ Informieren Sie sich nach dem Identifizieren der Azure-Tools, die Ihre Anforderu
 
 ## <a name="data-redundancy-and-availability"></a>Datenredundanz und -verfügbarkeit
 
-Azure Storage verfügt über verschiedene Redundanzoptionen, mit denen die Langlebigkeit und Hochverfügbarkeit basierend auf den Kundenanforderungen sichergestellt wird: lokal redundanter Speicher (LRS), zonenredundanter Speicher (ZRS), georedundanter Speicher (GRS) und georedundanter Speicher mit Lesezugriff (RA-GRS).
+Azure Storage verfügt über verschiedene Redundanzoptionen, mit denen die Dauerhaftigkeit und Hochverfügbarkeit basierend auf den Kundenanforderungen sichergestellt wird: lokal redundanter Speicher, zonenredundanter Speicher, georedundanter Speicher (GRS) und georedundanter Speicher mit Lesezugriff (RA-GRS).
 
 Weitere Informationen zu diesen Funktionen und zur Auswahl der besten Redundanzoption für Ihre Anwendungsfälle finden Sie unter [Azure Storage-Redundanz](https://docs.microsoft.com/azure/storage/common/storage-redundancy). Die Vereinbarungen zum Servicelevel (SLAs) für Speicherdienste verfügen zudem über Garantien mit finanzieller Absicherung. Weitere Informationen finden Sie in der [SLA für Managed Disks](https://azure.microsoft.com/support/legal/sla/managed-disks/v1_0), der [SLA für Virtual Machines](https://azure.microsoft.com/support/legal/sla/virtual-machines/v1_8) und der [SLA für Speicherkonten](https://azure.microsoft.com/support/legal/sla/storage/v1_4).
 

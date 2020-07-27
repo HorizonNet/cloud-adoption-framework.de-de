@@ -8,14 +8,14 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: e8226bc42f4d6af0451a420efc8b08c4ed4672db
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: ad7f767e9f657a85ef2c16e84625631a2f2b7c61
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194985"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86451001"
 ---
-<!-- cSpell:ignore SIEM -->
+<!-- cSpell:ignore SIEM Nagios Zabbix DIKW -->
 
 # <a name="cloud-monitoring-guide-formulate-a-monitoring-strategy"></a>Leitfaden zur Cloudüberwachung: Formulieren einer Überwachungsstrategie
 
@@ -23,7 +23,7 @@ Während Sie Ihre digitale Transformation hin zur Cloud vollziehen, ist es wicht
 
 ## <a name="where-to-start"></a>Einstieg
 
-Um den Weg in die Cloud zu ebnen, greifen Sie auf die Cloud Adoption Framework-Phasen [Strategie](./index.md) und [Planen](../plan/index.md) zurück. Durch Überwachung werden Motivationen, Geschäftsergebnisse und Initiativen beeinflusst und gerechtfertigt. Schließen Sie die Überwachung in diese Phasen, Ihre Initiativen und Ihre Projekte ein. Untersuchen Sie beispielsweise, wie im Rahmen des ersten Einführungsprojekts ein frühzeitiges Betriebsmanagement in Azure etabliert wird. Stellen Sie sich vor, wie das Cloudbetriebsmodell aussehen muss, einschließlich Rolle der Überwachung. Der Überwachung ist am besten mit einem dienstorientierten Ansatz als betriebliche Aufgabe gedient, bei der die Zuständigen für die Überwachung als Berater und Anbieter von Fachwissen für Benutzer im IT-Bereich und den Fachbereichen fungieren.
+Um den Weg in die Cloud zu ebnen, greifen Sie auf die Cloud Adoption Framework-Phasen [Strategie](./index.md) und [Planen](../plan/index.md) zurück. Durch Überwachung werden Motivationen, Geschäftsergebnisse und Initiativen beeinflusst und gerechtfertigt. Binden Sie Überwachung in die Phasen „Strategie“ und „Planen“, Ihre Initiativen und Projekte ein. Untersuchen Sie beispielsweise, wie im Rahmen des ersten Einführungsprojekts ein frühzeitiges Betriebsmanagement in Azure etabliert wird. Stellen Sie sich vor, wie das Cloudbetriebsmodell aussehen muss, einschließlich Rolle der Überwachung. Der Überwachung ist am besten mit einem dienstorientierten Ansatz als betriebliche Aufgabe gedient, bei der die Zuständigen für die Überwachung als Berater und Anbieter von Fachwissen für Benutzer im IT-Bereich und den Fachbereichen fungieren.
 
 Es folgen wichtige Bereiche, die eine zuverlässige Überwachungsstrategie maßgeblich beeinflussen:
 
@@ -37,7 +37,7 @@ Es folgen wichtige Bereiche, die eine zuverlässige Überwachungsstrategie maßg
 
 - Erfassen Sie nur die Metriken und Protokolle, die für Fachbereiche die und IT-Abteilung sinnvoll, messbar und feststellbar sind.
 
-- Definieren Sie einen Plan zur Integration in bestehende ITSM-Lösungen (z. B. Remedy, ServiceNow usw.) zur Generierung von Vorfällen oder vorgelagerten Überwachung. Bestimmen Sie, welche Benachrichtigung weitergeleitet werden sollen, ob eine Ergänzung der Benachrichtigungsinformationen erforderlich ist, um bestimmte Filteranforderungen zu unterstützen, und wie die Konfiguration erfolgen soll.
+- Definieren Sie einen Plan zur Integration in bestehende ITSM-Lösungen (z. B. Remedy oder ServiceNow) zur Generierung von Vorfällen oder Upstreamüberwachung. Bestimmen Sie, welche Benachrichtigung weitergeleitet werden sollen, ob eine Ergänzung der Benachrichtigungsinformationen erforderlich ist, um bestimmte Filteranforderungen zu unterstützen, und wie die Konfiguration erfolgen soll.
 
 - Machen Sie sich klar, wer Transparenz braucht, welche Informationen wem angezeigt werden müssen und wie diese entsprechend der Rolle und Zuständigkeit visualisiert werden sollten.
 
@@ -53,7 +53,7 @@ Als Systemarchitekt oder strategischer Planer müssen Sie möglicherweise eine e
 
 3. Die Prozesse Ihrer Überwachungslösung effizienter gestalten, schneller und reibungsloser nach Maß arbeiten und auch Änderungen schneller vornehmen.
 
-4. Erläutern, wie Ihre Organisation die Überwachung auf Grundlage von Cloudmodellen planen und durchführen wird. Arbeiten Sie auf das Ziel hin, Ihre Anforderungen beim Umstieg der Organisation von IaaS auf PaaS und dann auf SaaS zu reduzieren.  
+4. Erläutern, wie Ihre Organisation die Überwachung auf Grundlage von Cloudmodellen planen und durchführen wird. Arbeiten Sie auf das Ziel hin, Ihre Anforderungen beim Umstieg der Organisation von IaaS auf PaaS und dann auf SaaS zu reduzieren.
 
 ## <a name="determine-what-you-have"></a>Bestimmen der aktuellen Situation
 
@@ -61,7 +61,7 @@ Als Experte für die Bewältigung von Aufgaben arbeiten Sie möglicherweise eng 
 
 ## <a name="high-level-modeling"></a>Erstellen eines allgemeinen Modells
 
-Da die Fachbereiche bestimmen, welche Dienste in die Cloud verlagert werden sollen, müssen Sie Ihre Ressourcen sorgfältig einsetzen. Lokal sind Sie für die Überwachung verantwortlich und haben hohe Investitionen getätigt. Beim Umstieg auf SaaS-Dienste entfällt beispielsweise nicht Ihre Verantwortung für die Überwachung. Sie entscheiden, wer Zugriff benötigt, wer Benachrichtigungen empfängt und wer einen Mindestzugriff auf Analysen braucht. [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/) und [Azure Arc](https://azure.microsoft.com/services/azure-arc/) sind Azure-Dienste mit der Flexibilität, Überwachungsszenarien in allen vier Cloudmodellen und nicht nur Ressourcen innerhalb von Azure abzudecken. Außerdem müssen Sie, wie nachstehend gezeigt, über die üblichen Cloudmodelle hinausblicken. Wenn Sie in Ihrem Unternehmen Office-Apps einsetzen, die von [Microsoft 365](https://docs.microsoft.com/microsoft-365/?view=o365-worldwide)-Diensten bereitgestellt werden, müssen Sie zusätzlich zum [Azure Security Center](https://docs.microsoft.com/azure/security-center/) die Überwachung von Sicherheit und Compliance mit Microsoft 365 einbeziehen. Dazu gehören Identitäten, Endpunktverwaltung und Geräteüberwachung außerhalb Ihres Unternehmensnetzwerks.
+Da die Fachbereiche bestimmen, welche Dienste in die Cloud verlagert werden sollen, müssen Sie Ihre Ressourcen sorgfältig einsetzen. Lokal sind Sie für die Überwachung verantwortlich und haben hohe Investitionen getätigt. Beim Umstieg auf SaaS-Dienste entfällt beispielsweise nicht Ihre Verantwortung für die Überwachung. Sie entscheiden, wer Zugriff benötigt, wer Benachrichtigungen empfängt und wer einen Mindestzugriff auf Analysen braucht. [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/) und [Azure Arc](https://azure.microsoft.com/services/azure-arc/) sind Azure-Dienste mit der Flexibilität, Überwachungsszenarien in allen vier Cloudmodellen und nicht nur Ressourcen innerhalb von Azure abzudecken. Außerdem müssen Sie, wie nachstehend gezeigt, über die üblichen Cloudmodelle hinausblicken. Wenn Sie in Ihrem Unternehmen Microsoft Office-Apps einsetzen, die von [Microsoft 365](https://docs.microsoft.com/microsoft-365/?view=o365-worldwide)-Diensten bereitgestellt werden, müssen Sie zusätzlich zum [Azure Security Center](https://docs.microsoft.com/azure/security-center/) die Überwachung von Sicherheit und Compliance mit Microsoft 365 einbeziehen. Dazu gehören Identitäten, Endpunktverwaltung und Geräteüberwachung außerhalb Ihres Unternehmensnetzwerks.
 
 ![Diagramm von Cloudmodellen](./media/monitoring-strategy/cloud-models.png)
 
@@ -73,7 +73,7 @@ Bedenken Sie die Rolle, die Überwachung bei Strategien zum schrittweisen Schüt
 
 - Aktivitätsprotokolle und Sicherheitsüberwachung werden benötigt, um die Nutzung von Verzeichnissen und die externe gemeinsame Nutzung sensibler Inhalte zu messen, um in einem inkrementellen Ansatz über Schutzfunktionen zu informieren und die richtige Balance bei der Überwachung des Datenschutzes zu erreichen.
 
-- Richtlinien und Baselines bilden die Grundlage für das Optimierungsziel (Migration, Lift & Shift, Neugestaltung) und stärken die Zuversicht, dass Daten und Informationen aus lokalen Umgebungen in Clouddienste migriert werden können.
+- Richtlinien und Baselines bilden die Grundlage für das Optimierungsziel (Migration, Lift & Shift oder Neugestaltung) und stärken die Zuversicht, dass Daten und Informationen aus lokalen Umgebungen in Clouddienste migriert werden können.
 
 Im weiteren Verlauf dieses Leitfadens gehen wir auf einige übliche Überwachungsszenarien bzw. Anwendungsfälle ein, die zur Beschleunigung der Einführung beitragen werden.
 
@@ -83,11 +83,11 @@ Definieren Sie Ihre aktuelle und künftige Architektur der Systemverwaltung, die
 
 - Aufwenden begrenzter Ressourcen zur Konsolidierung Ihrer Investitionen in die Überwachung
 
-- Entscheiden, wie die Überwachung dazu beitragen kann, die künftigen von Ihrem Unternehmen benötigten Dienste zu nutzen: Cloudüberwachung überaus skalierbarer, resilienter und global ausgerichteter Clouddienste
+- Entscheiden Sie, wie die Überwachung die künftigen von Ihrem Unternehmen benötigten Dienste aktivieren kann: Cloudüberwachung überaus skalierbarer, resilienter und global ausgerichteter Clouddienste
 
 - Abstimmen der Überwachung auf die künftigen Dienste und Ressourcen, die Sie in der Cloud überwachen werden
 
-- Erkennen von Überwachungslücken in den drei Dimensionen (Tiefe, Breite und Umfang) des Integritätsmodells.
+- Erkennen von Überwachungslücken in den drei Dimensionen (Tiefe, Breite und Umfang) des Integritätsmodells
 
 - Modellieren der finanziellen Aspekte, Kosten und Begleitfaktoren für eine Kosten-Nutzen-Analyse
 
@@ -109,11 +109,11 @@ Einige wichtige Fragen lauten:
 
 - Was ist mit den Netzwerkpunkten zwischen Ihrer Netzwerkinfrastruktur und der Netzwerkkonnektivität mit Dienst- und Anwendungsendpunkten, die uns sagt, wann wir oder der Cloudanbieter zuständig sind?
 
-- Was sind die Grenzen von Sicherheitsvorgängen im Vergleich zu Integrität und Leistung? Wie können wir SecOps Zusammenfassungen von Integrität und Status und umgekehrt den Besitzern der Dienste zur Verfügung stellen?
+- Was sind die Grenzen von SecOps gegenüber Integrität und Leistung? Wie können wir SecOps Zusammenfassungen von Integrität und Status und umgekehrt den Besitzern der Dienste zur Verfügung stellen?
 
 Hier nun einige Überlegungen zum Zusammensetzen dieser Architektur:
 
-- Ein Datenflussansatz, der bei den Dienstressourcen startet und sich im Stapel hocharbeitet: Metriken und Protokolldaten, die von der Infrastruktur, IoT-Geräten, mobilen Geräten und anderen ausgegeben werden. Befinden sich alle Gegenstände unter Verwaltungs- und Überwachungstools (mittlere Ebene)? Bewegen von Daten nach oben und nach außen (ITSM-Tools, globale Überwachung, Security Information and Event Management [SIEM], benutzerdefinierte Ergänzung von Warnungen usw.).
+- Ein Datenflussansatz, der bei den Dienstressourcen startet und sich im Stapel hocharbeitet: Metriken und Protokolldaten, die von der Infrastruktur, IoT-Geräten, mobilen Geräten und anderen ausgegeben werden. Befinden sich alle Gegenstände unter Verwaltungs- und Überwachungstools (mittlere Ebene)? Bewegen von Daten nach oben und nach außen (ITSM-Tools, globale Überwachung, Security Information and Event Management [SIEM], benutzerdefinierte Ergänzung von Warnungen und andere).
 
 - Ob mit [System Center Operations Manager](https://docs.microsoft.com/system-center/scom/welcome?view=sc-om-2019) oder anderen Überwachungstools fortgefahren werden soll.
 
@@ -162,7 +162,6 @@ In Azure müssen Sie bestimmte Überwachungsdaten absichern, die von Ressourcen 
 Ihre Überwachungsstrategie sollte diese Komponenten enthalten:
 
 - Trennen nicht überwachungsbezogener Daten von Überwachungsdaten
-
 - Beschränken des Zugriffs auf Ressourcen
 
 ### <a name="consider-business-continuity"></a>Geschäftskontinuität
@@ -170,7 +169,6 @@ Ihre Überwachungsstrategie sollte diese Komponenten enthalten:
 Azure Monitor sammelt, indiziert und analysiert in Echtzeit von Computern und Ressourcen generierte Daten, um Ihre Betriebsabläufe und Geschäftsentscheidungen zu unterstützen. In seltenen Fällen kann es vorkommen, dass auf Einrichtungen in einer gesamten Region nicht zugegriffen werden kann, beispielsweise aufgrund von Netzwerkfehlern. Naturkatastrophen können dazu führen, dass eine Region vollständig ausfällt. Indem Sie sich auf diese Dienste in der Cloud verlassen, konzentriert sich Ihre Planung nicht auf Resilienz und Hochverfügbarkeit von Infrastruktur, sondern auf die Planung in diesen Bereichen:
 
 - Verfügbarkeit für die Datenerfassung aus allen Ihren abhängigen Diensten und Ressourcen in Azure, aus Ressourcen in anderen Clouds und aus der lokalen Umgebung.
-
 - Datenverfügbarkeit für Einblicke, Lösungen, Arbeitsmappen und andere Visualisierungen, Warnungen, Integration mit ITSM und anderen Diensten der Steuerungsebene in Azure zur Unterstützung Ihrer betrieblichen Anforderungen.
 
 Erstellen Sie einen Wiederherstellungsplan, der die Wiederherstellung von Daten, Netzwerkausfälle, Fehler abhängiger Dienste und regionsweite Dienstunterbrechungen abdeckt.
@@ -193,9 +191,9 @@ Zu Lernzyklen gehört es, Überwachungsdaten und Einblicke in die Hände von Fü
 
 ![Überwachungs- und Steuerungsstrategie](./media/monitoring-strategy/monitoring-and-control-strategy.png)
 
-<!-cSpell:ignore DIKW -->
+<!-- docsTest:ignore "Data to Information, Knowledge, and Wisdom" -->
 
-<Sup>1</Sup> Die **Wissenspyramide** ist eine häufig genutzte Methode mit Ursprung im Wissensmanagement zum Erläutern der Möglichkeiten, mithilfe einer Komponente aus Aktionen und Entscheidungen von **Zeichen**, **Daten**, **Informationen** zu **Wissen** zu gelangen.
+<Sup>1</Sup> Die Wissenspyramide ist eine häufig genutzte Methode mit Ursprung im Wissensmanagement zum Erläutern der Möglichkeiten, mithilfe einer Komponente aus Aktionen und Entscheidungen von Zeichen, Daten, Informationen zu Wissen zu gelangen.
 
 Die Überwachung ist grundlegend für Dienste, die Sie in Azure erstellen. Ihre Strategie kann sich mit diesen vier Disziplinen der modernen Überwachung befassen, um Ihnen dabei zu helfen, ein praktikables Mindestmaß an Überwachung zu definieren und Vertrauen in die einzelnen Schritte zu gewinnen. Die Verlagerung Ihrer Fähigkeiten von reaktiv zu proaktiv und die Skalierung ihrer Reichweite auf Endbenutzer sind dabei nur ein Ziel.
 
@@ -209,29 +207,27 @@ Die Überwachung ist grundlegend für Dienste, die Sie in Azure erstellen. Ihre 
 
 - **Reagieren:** Ausgehend vom Kontext bekannter Probleme, die sich beobachten und messen lassen, bewerten Sie, was als Fehler, automatische Behebung oder manuelle Reaktion auf Grundlage dessen gilt, was als Vorfall, Problem oder Änderung eingestuft wird.
 
-- **Lernen und Verbessern:** Anbieter und Benutzer, die an Lernzyklen teilnehmen, müssen die tatsächlichen Überwachungsdaten in Form von Einblicken, Berichten und Arbeitsmappen verwerten, um den gewünschten Dienst kontinuierlich zu verbessern und die Konfiguration der Überwachung abzustimmen und zu optimieren. Wichtig ist auch, dass sich die Überwachungskonfiguration parallel zu Änderungen des Diensts verändert (Beispiel: neu, modifiziert, ausgemustert usw.) und weiterhin im Einklang mit der tatsächlichen Leistungsgarantie des Diensts steht.
+- **Lernen und Verbessern:** Anbieter und Benutzer, die an Lernzyklen teilnehmen, müssen die tatsächlichen Überwachungsdaten in Form von Einblicken, Berichten und Arbeitsmappen verwerten, um den gewünschten Dienst kontinuierlich zu verbessern und die Konfiguration der Überwachung abzustimmen und zu optimieren. Wichtig ist auch, dass sich die Überwachungskonfiguration parallel zu Änderungen des Diensts verändert (Beispiel: neu, modifiziert oder ausgemustert) und weiterhin im Einklang mit der tatsächlichen Leistungsgarantie des Diensts steht.
 
-Um Ihnen zu helfen, Überwachungspläne mit der Strategie abzustimmen, nutzen Sie die folgende Tabelle, um die verschiedenen möglichen Überwachungsszenarien detaillierter zu kategorisieren. Dazu kommen die fünf **Rs** der Rationalisierung zum Einsatz, die zuvor in der Cloud Adoption Framework-Phase „Planen“ eingeführt wurden. Wenn Sie Systems Center Operations Manager einsetzen, stehen Ihnen Hybrid- und Cloudoptionen zur Verfügung, um Ihre Investition optimal zu nutzen.
+Um Ihnen zu helfen, Überwachungspläne mit der Strategie abzustimmen, nutzen Sie die folgende Tabelle, um die verschiedenen möglichen Überwachungsszenarien detaillierter zu kategorisieren. Dazu kommen die fünf Rs der Rationalisierung zum Einsatz, die zuvor in der Phase „Planen“ eingeführt wurden. Wenn Sie System Center Operations Manager einsetzen, stehen Ihnen Hybrid- und Cloudoptionen zur Verfügung, um Ihre Investition optimal zu nutzen.
 
-<!-- cSpell:ignore Zabbix Nagios -->
-
-| type | Überwachungsziel | Beispielziel |
+| Typ | Überwachungsziel | Beispielziel |
 |-----|---------------------|------------------|
 | 1 | Nur lokal | System Center Operations Manager. Sie setzen die Überwachung von Diensten, Infrastruktur und Netzwerken bis hin zur Anwendungsschicht in eigenen Rechenzentren ohne Cloudunterstützung fort. |
 | 2 | Von lokaler zu cloudbasierter Lösung | Sie setzen weiterhin System Center Operations Manager ein und wenden die Management Packs für Microsoft 365 und Azure an. |
 | 3 | Lokal zu/mit Cloud (kooperativ), wobei Dienste sowohl in der Cloud als auch lokal ausgeführt werden | Sie richten eine anfängliche Überwachung mit Azure Monitor ein. Sie verbinden Azure Monitor mit System Center Operations Manager und Warnungsquellen wie Zabbix oder Nagios. Sie stellen Azure Monitor-Überwachungs-Agents im Multi-Homing mit System Center Operations Manager zur gemeinsamen Überwachung bereit. |
-| 4 | Hybridmigration | Sie überwachen die Migration, z. B. von Exchange Server zu Microsoft 365 Exchange Online. Exchange Online Service Health und Dienstnutzung, Sicherheit und Konformität &mdash; alles in Microsoft 365. Sie setzen die Überwachung von lokalem Exchange Server mit System Center Operations Manager schrittweise außer Betrieb, bis die Migration abgeschlossen ist. |
-| 5 | Dauerhaft hybrid | System Center Operations Manager, Azure AD, Azure Monitor, Azure Security Center, Intune &mdash; eine Palette von Tools für verschiedene digitale Ressourcen. |
-| 6 | Cloudbasiert | Azure Monitor, Azure Policy, Azure Security Center, Microsoft 365, Azure Service Health, Azure Resource Health usw. |
+| 4 | Hybridmigration | Sie überwachen die Migration, z. B. von Microsoft Exchange Server zu Microsoft 365 Exchange Online. Exchange Online Service Health und Dienstnutzung, Sicherheit und Konformität – alles in Microsoft 365. Sie setzen die Überwachung von lokalem Exchange mit System Center Operations Manager schrittweise außer Betrieb, bis die Migration abgeschlossen ist. |
+| 5 | Dauerhaft hybrid | System Center Operations Manager, Azure AD, Azure Monitor, Azure Security Center, Intune und anderen. Eine Palette von Tools für verschiedene digitale Ressourcen. |
+| 6 | Cloudnativ | Azure Monitor, Azure Policy, Azure Security Center, Microsoft 365, Azure Service Health, Azure Resource Health und andere. |
 | 7 | Mandanten im Besitz mehrerer Clouds (Konsolidierung) | Sie zentralisieren die Überwachung vieler Mandanten. Azure Lighthouse, Azure Policy, Azure Monitor und Azure Sentinel. |
-| 8 | Ökosystem mit mehreren Clouds | Sie zentralisieren die Überwachung verschiedener Cloudanbieter: Microsoft, Amazon, Google usw. |
+| 8 | Ökosystem mit mehreren Clouds | Sie zentralisieren die Überwachung verschiedener Cloudanbieter: Microsoft, Amazon, Google und andere. |
 | 9 | Anbieter > Benutzer | Sie überwachen Lösungen und Dienste als Cloudanbieter. |
 
 ## <a name="formulate-monitoring-requirements"></a>Formulieren von Überwachungsanforderungen
 
 Im Verlauf dieses Prozesses wird deutlich, dass es langfristig noch viel zu tun geben könnte. Schlussendlich dehnt sich Ihre Sichtweise über das Firmennetzwerk hinaus auf die Arbeitsumgebung, auf Geräte und Endpunkte und weiter nach außen zur Grenze mit Identität als Sicherheit aus. Der mit Cloudüberwachung definierte neue Ansatz ist ein starker Motivator im Gegensatz zur auf Rechenzentren und Arbeitsstätten ausgerichteten Denkweise.
 
-Sie können Azure jetzt einsetzen, um nach und nach mit dem Verwalten aller oder einiger Aspekte Ihrer lokalen Ressourcen zu beginnen, sogar für Dienste, die Sie weiterhin lokal betreiben werden. Darüber hinaus sollte die Strategie die Überwachung betreffenden Zuständigkeitsgrenzen in Abstimmung mit der Strategie zur Cloudeinführung des Unternehmens definieren, und zwar basierend auf dem Clouddienstmodell, das Ihr Unternehmen einführt. Sogar für auf IaaS basierende Dienste erhalten Sie Metriken, Protokolle, Sichten und Warnfunktionen über Azure Service Health. In diesem Dienst konfigurieren Sie Benachrichtigungen anhand der Überwachung der Verfügbarkeit Ihrer Azure-Ressourcen mit Azure Resource Health. Bei SaaS-Diensten wie Microsoft 365 ist vieles bereits inbegriffen, weshalb Sie den entsprechenden Zugriff auf Portale, Dashboards, Analysen und Warnungen konfigurieren müssen. Aus Dienstsicht hat ein großer Dienst mit verteilten Komponenten wie Microsoft 365 Exchange Online eine Reihe von Zielen, die nicht nur auf das Beobachten von Integrität und Status beschränkt sind.
+Sie können Azure jetzt einsetzen, um nach und nach mit dem Verwalten aller oder einiger Aspekte Ihrer lokalen Ressourcen zu beginnen, sogar für Dienste, die Sie weiterhin lokal betreiben werden. Darüber hinaus sollte die Strategie die Überwachung betreffenden Zuständigkeitsgrenzen in Abstimmung mit der Strategie zur Cloudeinführung des Unternehmens definieren, und zwar basierend auf dem Clouddienstmodell, das Ihr Unternehmen einführt. Sogar für auf IaaS basierende Dienste erhalten Sie Metriken, Protokolle, Sichten und Warnfunktionen über Azure Service Health. In diesem Dienst konfigurieren Sie Benachrichtigungen anhand der Überwachung der Verfügbarkeit Ihrer Azure-Ressourcen mit Resource Health. Bei SaaS-Diensten wie Microsoft 365 ist vieles bereits inbegriffen, weshalb Sie den entsprechenden Zugriff auf Portale, Dashboards, Analysen und Warnungen konfigurieren müssen. Aus Dienstsicht hat ein großer Dienst mit verteilten Komponenten wie Microsoft 365 Exchange Online eine Reihe von Zielen, die nicht nur auf das Beobachten von Integrität und Status beschränkt sind.
 
 | Hauptzielsetzung | Ergebnis |
 |-------------------|------------------|
@@ -248,7 +244,7 @@ Sie können Azure jetzt einsetzen, um nach und nach mit dem Verwalten aller oder
 | Kapazitäts- und Leistungsüberwachung | Zur Unterstützung der Systemüberwachung benötigen Sie möglicherweise mehr Detailtiefe und Spezialisierung. |
 | Änderungs- und Complianceüberwachung | Sie können die Konfigurationsverwaltung von Ressourcen beobachten, messen, auswerten und verbessern, die nun auch Sicherheit in die Definition einbeziehen sollte, und zwar beeinflusst durch den sinnvollen Einsatz von Azure Policy zur Standardisierung von Überwachungskonfigurationen und zur Erzwingung einer Sicherheitshärtung. Protokollieren Sie Daten, um nach wichtigen Änderungen an Ressourcen zu filtern. |
 | Identitäts- und Zugriffsüberwachung | Sie können Nutzung und Sicherheit von Active Directory, Azure Active Directory und Identitätsmanagement, das zum Integrieren von Benutzern, Anwendungen, Geräten und anderen Ressourcen unabhängig vom Standort dient, beobachten, messen, auswerten und verbessern. |
-| Information Protection | Nicht nur Azure Monitor, sondern je nach Plan auch Azure Information Protection bieten Nutzungsanalysen, die für die Entwicklung einer zuverlässigen Information Protection-Strategie für Azure und Microsoft entscheidend sind. |
+| Informationsschutz | Nicht nur Azure Monitor, sondern je nach Plan auch Azure Information Protection bieten Nutzungsanalysen, die für die Entwicklung einer zuverlässigen Information Protection-Strategie für Azure und Microsoft entscheidend sind. |
 | Datenschutzüberwachung | Organisationen sehen sich mit einem wachsenden Bedarf an Datenschutz konfrontiert, der den Schutz des digitalen Datenbestands, die Klassifizierung von Daten und die Verhinderung von Datenverlust einschließt, um das Risiko von Datenschutzverletzungen und -verstößen zu mindern. Microsoft 365 Information Protection bietet Überwachungsfunktionen, die auch in Azure Monitor integriert werden können. |
 | Bedrohungsmanagement und integrierter Schutz vor Bedrohungen | In der Cloud werden die getrennten, herkömmlichen Rollen bei der Sicherheitsüberwachung mit der Systemüberwachung zusammengeführt. Der integrierte Schutz vor Bedrohungen umfasst beispielsweise die Überwachung, um einen optimalen Zero Trust-Zustand schneller zu erreichen. Die Integration von Azure Advanced Threat Protection ermöglicht eine Migration von der Nutzung von System Center Operations Manager zur Überwachung von Active Directory und die Integration Ihrer auf die Active Directory-Sicherheit bezogenen Signale zur Erkennung komplexer Angriffe in Hybridumgebungen. |
 
@@ -260,15 +256,15 @@ Nehmen Sie in Ihre Strategie und Ihr Betriebsmodell auf, wie Sie Überwachungspl
 
 | Agile-Begriff | Einzuschließende Informationen | Beispiele |
 |----------|---------------|--------|
-| Epics | Umfassende Überwachung <<br> Initiativen der Überwachungsstrategie | Azure-Cloudüberwachung konsolidieren <br> Überwachen der Hybrid Cloud<br> Überwachen der privaten Cloud<br> Zentralen Überwachungsdienst einrichten |
-| Features | Individuelle Überwachung <br> Pläne und Projekte | Überwachungsanforderungen <br> Überwachungsnutzer und -anbieter<br> Ziele<br> Tools<br> Zeitplan |
+| Epics | Umfassende Überwachung <br> Initiativen der Überwachungsstrategie | Azure-Cloudüberwachung konsolidieren <br> Überwachen der Hybrid Cloud <br> Überwachen der privaten Cloud <br> Zentralen Überwachungsdienst einrichten |
+| Features | Individuelle Überwachung <br> Pläne und Projekte | Überwachungsanforderungen <br> Überwachungsnutzer und -anbieter <br> Ziele <br> Tools <br> Zeitplan |
 | User Stories und Aufgaben | Das Endergebnis ist eine Überwachungskonfiguration oder -lösung | Netzwerküberwachung (z. B. ExpressRoute) <br> Standardisierte IaaS-VM-Überwachung (z. B. Azure Monitor für VMs, Application Insights, Azure Policy, Einstellungen, Richtlinien, Berichte, Arbeitsbereiche) |
 
 ## <a name="establish-minimum-governance"></a>Festlegen minimaler Governance
 
 Legen Sie so früh wie möglich fest, wie Sie Ihre Investitionen in die Cloudüberwachung regeln möchten. Denken Sie daran, dass Azure Monitor ein *Mandantendienst* mit Einblick in Verwaltungsgruppen und Abonnements ist und Benutzer mit der rollenbasierten Zugriffssteuerung von Azure in ihren Aktionen eingeschränkt werden können.
 
-Legen Sie in Azure-Zugriffsberechtigungen entsprechend der jeweiligen Rolle und Zuständigkeit fest. Es wird empfohlen, den Zugriff auf die Rolle **Leser** für Überwachungsbenutzer so früh wie möglich festzulegen und dann festzulegen, wem die Rolle **Mitwirkender** gewährt wird.
+Legen Sie in Azure-Zugriffsberechtigungen entsprechend der jeweiligen Rolle und Zuständigkeit fest. Es wird empfohlen, den Zugriff auf die Rolle `Reader` für Überwachungsbenutzer so früh wie möglich festzulegen und dann festzulegen, wem die Rolle `Contributor` gewährt wird.
 
 Bestimmen Sie zunächst die Rollen, die Ressourcengruppen in Azure als Teil Ihres Frameworks für Governance besitzen und verwalten werden:
 

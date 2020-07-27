@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a84856d4b734ba29333a03d476eafa05420eceb5
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 7a2a2684eb0b23c4a2f0c9b93665de1c52442050
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194560"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450933"
 ---
 # <a name="multiple-datacenters"></a>Mehrere Rechenzentren
 
@@ -39,13 +39,16 @@ Bei einer Umfangserweiterung auf mehrere Rechenzentren steht die größte Änder
 **Evaluieren von rechenzentrumsübergreifenden Abhängigkeiten**: Die [Tools für die Visualisierung von Abhängigkeiten in Azure Migrate](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization) helfen bei der Ermittlung von Abhängigkeiten. Die Verwendung dieses Toolsets vor der Migration ist im Allgemeinen eine bewährte Methode. Wenn es aber um globale Komplexität geht, wird diese Verwendung zu einem notwendigen Schritt im Bewertungsprozess. Die Visualisierung durch die [Gruppierung von Abhängigkeiten](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies) kann dabei helfen, die IP-Adressen und Ports aller Assets zu ermitteln, die zur Unterstützung der Workload erforderlich sind.
 
 > [!IMPORTANT]
-> Zwei wichtige Hinweise: Erstens muss ein Experte, der über Kenntnisse zu Assetplatzierung und IP-Adressschemas verfügt, Assets identifizieren, die sich in einem sekundären Rechenzentrum befinden. Zweitens müssen sowohl Downstreamabhängigkeiten als auch Clients in der Visualisierung evaluiert werden, um bidirektionale Abhängigkeiten zu verstehen.
+>
+> - Ein Experte, der über Kenntnisse zu Ressourcenplatzierung und IP-Adressschemas verfügt, muss Ressourcen identifizieren, die sich in einem sekundären Rechenzentrum befinden.
+> - Werten Sie sowohl Downstreamabhängigkeiten als auch Clients im visuellen Element aus, um bidirektionale Abhängigkeiten zu verstehen.
 
-## <a name="migrate-process-changes"></a>Änderungen am Migrationsprozess
+
+## <a name="migration-process-changes"></a>Änderungen für den Migrationsprozess
 
 Die Migration mehrerer Rechenzentren ähnelt der Konsolidierung von Rechenzentren. Nach der Migration ist die Cloud die einzige Rechenzentrumslösung für mehrere Assets. Die wahrscheinlichste Umfangserweiterung während des Migrationsprozesses ist die Überprüfung und Ausrichtung von IP-Adressen.
 
-### <a name="suggested-action-during-the-migrate-process"></a>Empfohlene Aktion während des Migrationsprozesses
+### <a name="suggested-action-during-the-migration-process"></a>Empfohlene Aktion während des Migrationsprozesses
 
 Folgende Aktivitäten tragen in hohem Maß zum Erfolg einer Cloudmigration bei:
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 84bd6cbef97428aacb81d4d6136439a1c9c1f3f6
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: a3ac7a38018f7ca44115fb1d46396e16961dfe3e
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86199234"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478428"
 ---
 <!-- TODO: Verify GraphDBMS term -->
 <!-- cSpell:ignore ColumnStore GraphDBMS mysqldump Navicat phpMyAdmin -->
@@ -22,41 +22,44 @@ ms.locfileid: "86199234"
 
 In diesem Artikel wird gezeigt, wie das fiktive Unternehmen Contoso die Migration seiner lokalen Open-Source-MariaDB-Datenbankplattform zu Azure geplant und durchgeführt hat.
 
-Contoso zieht die Verwendung von MariaDB gegenüber MySQL aus mehreren Gründe vor. Dazu gehören die unzähligen Speicher-Engines, die Cache- und Indexleistung, die Open-Source-Unterstützung mit Features und Erweiterungen sowie die ColumnStore-Unterstützung für Analysen. Das Ziel der Migration ist es, MariaDB weiterhin zu verwenden, ohne sich Gedanken über die Verwaltung der dafür benötigten Umgebung zu machen.
+Contoso verwendet aus folgenden Gründen MariaDB anstelle von MySQL:
+- Unzählige Speicher-Engines. 
+- Cache- und Indexleistung.
+- Open-Source-Unterstützung mit Features und Erweiterungen.
+- Analytics ColumnStore-Unterstützung.
+
+Das Migrationsziel des Unternehmens ist es, MariaDB weiterhin zu verwenden, ohne sich Gedanken über die Verwaltung der dafür benötigten Umgebung zu machen.
 
 ## <a name="business-drivers"></a>Business-Treiber
 
-Das IT Leadership-Team hat eng mit den Geschäftspartnern zusammengearbeitet, um zu verstehen, was das Unternehmen mit dieser Migration erreichen möchte:
+Das IT Leadership-Team hat eng mit den Geschäftspartnern zusammengearbeitet, um zu verstehen, was das Unternehmen mit dieser Migration erreichen möchte. Sie wünschen Folgendes:
 
 - **Erhöhen der Verfügbarkeit.** Bei der lokalen MariaDB-Umgebung von Contoso sind Probleme mit der Verfügbarkeit aufgetreten. Die Anwendungen, die diesen Datenspeicher nutzen, müssen für das Unternehmen zuverlässiger werden.
-
-- **Effizienzsteigerung.** Contoso muss unnötige Verfahren beseitigen und Prozesse für Entwickler und Benutzer optimieren. Die IT-Abteilung muss schnell sein, weder Geld noch Zeit verschwenden, und Kundenanforderungen schneller bearbeiten.
-
-- **Steigerung der Flexibilität.**  Die Contoso-IT-Abteilung muss schneller auf die Unternehmensanforderungen reagieren. Die IT-Experten müssen schneller reagieren als die Änderungen im Marketplace geschehen, um den Erfolg in einer globalen Wirtschaft zu garantieren. IT darf nicht im Weg stehen oder zum Geschäftshindernis werden.
-
-- **Skalierung.** Da das Unternehmen erfolgreich wächst, muss die Contoso-IT Systeme bereitstellen, die mit der gleichen Geschwindigkeit wachsen können.
+- **Effizienzsteigerung.** Contoso muss unnötige Verfahren beseitigen und Prozesse für Entwickler und Benutzer optimieren. Die IT-Abteilung muss schnell sein und darf weder Geld noch Zeit verschwenden, um Kundenanforderungen schneller zu bearbeiten.
+- **Steigerung der Flexibilität.** Die Contoso-IT-Abteilung muss schneller auf die Unternehmensanforderungen reagieren. Die IT-Experten müssen schneller reagieren als die Änderungen im Marketplace geschehen, um den Erfolg in einer globalen Wirtschaft zu garantieren. IT darf nicht im Weg stehen oder zum Geschäftshindernis werden.
+- **Skalierung.** Da das Unternehmen erfolgreich wächst, muss die IT-Abteilung von Contoso Systeme bereitstellen, die mit derselben Geschwindigkeit mitwachsen.
 
 ## <a name="migration-goals"></a>Migrationsziele
 
-Das Cloudteam von Contoso hat sich Ziele für die Migration gesetzt, anhand derer die beste Migrationsmethode bestimmt wird.
+Das Cloudteam von Contoso hat sich folgende Ziele für die Migration gesetzt. Anhand dieser Ziele wird die beste Migrationsmethode bestimmt.
 
-| Anforderungen | Details |
+| Requirements (Anforderungen) | Details |
 | --- | --- |
 | **Verfügbarkeit** | Derzeit haben interne Mitarbeiter Schwierigkeiten mit der Hostingumgebung für die MariaDB-Instanz. Contoso wünscht eine Verfügbarkeit der Datenbankschicht von nahezu 99,99 Prozent. |
-| **Skalierbarkeit** | Der lokale Datenbankhost weist schnell keine Kapazität mehr auf, und Contoso braucht eine Möglichkeit, die Instanzen über die aktuellen Einschränkungen hinaus zu skalieren oder zentral herunterzuskalieren, wenn sich die Geschäftsumgebung ändert, um so Kosten zu sparen. |
+| **Skalierbarkeit** | Die Kapazität des lokalen Datenbankhosts geht schnell zur Neige. Contoso erfordert eine Möglichkeit, seine Instanzen über die derzeitigen Beschränkungen hinaus zu skalieren oder herunterzuskalieren, wenn sich die Geschäftsumgebung ändert, um Kosten zu sparen. |
 | **Leistung** | Die Personalabteilung von Contoso muss täglich, wöchentlich und monatlich mehrere Berichte ausführen. Beim Ausführen dieser Berichte werden erhebliche Leistungsprobleme bei der Anwendung für die Mitarbeiter festgestellt. Die Berichte müssen ausgeführt werden, ohne dass sich dies auf die Anwendungsleistung auswirkt. |
-| **Sicherheit** | Contoso muss sicher sein, dass nur die internen Anwendungen auf die Datenbank zugreifen können und sie nicht über das Internet sichtbar oder zugänglich ist. |
-| **Überwachung** | Contoso verwendet derzeit Tools zum Überwachen der Metriken von MariaDB und zum Bereitstellen von Benachrichtigungen bei Auftreten von CPU-, Arbeitsspeicher- oder Speicherproblemen. Dieselben Möglichkeiten sollen auch in Azure bereitstehen. |
-| **Geschäftskontinuität** | Der Personaldatenspeicher ist ein wichtiger Bestandteil der täglichen Abläufe bei Contoso und die Ausfallzeit im Fall einer Beschädigung oder Wiederherstellung soll minimiert werden. |
-| **Azure** | Contoso möchte die Anwendung in Azure verschieben, ohne dass sie auf VMs ausgeführt wird. In den Anforderungen von Contoso ist angegeben, dass in der Datenschicht auf Azure-PaaS-Dienste zurückgegriffen werden soll. |
+| **Security** | Contoso muss sicher sein, dass nur die internen Anwendungen auf die Datenbank zugreifen können und sie nicht über das Internet sichtbar oder zugänglich ist. |
+| **Überwachung** | Contoso verwendet derzeit Tools zum Überwachen der Metriken der MariaDB-Datenbank und zum Bereitstellen von Benachrichtigungen bei Auftreten von CPU-, Arbeitsspeicher- oder Speicherproblemen. Das Unternehmen möchte in Azure über dieselben Funktionen verfügen. |
+| **Geschäftskontinuität** | Der Personaldatenspeicher ist ein wichtiger Teil der täglichen Abläufe bei Contoso. Die Ausfallzeit muss im Fall einer Beschädigung oder Wiederherstellung minimiert werden. |
+| **Azure** | Contoso möchte die Anwendung in Azure verschieben, ohne dass sie auf VMs ausgeführt wird. In den Anforderungen von Contoso ist angegeben, dass in der Datenschicht auf Azure-PaaS-Dienste (Platform-as-a-Service) zurückgegriffen werden soll. |
 
 ## <a name="solution-design"></a>Lösungsentwurf
 
-Nachdem die Ziele und Anforderungen formuliert wurden, entwirft und überprüft Contoso eine Bereitstellungslösung und identifiziert den Migrationsprozess sowie die für die Migration genutzten Tools und Dienste.
+Nachdem die Ziele und Anforderungen formuliert wurden, entwirft und prüft Contoso eine Bereitstellungslösung und bestimmt den Migrationsprozess. Auch die für die Migration verwendeten Tools und Dienste werden identifiziert.
 
 ### <a name="current-application"></a>Aktuelle Anwendung
 
-MariaDB hostet Mitarbeiterdaten, die für alle Belange der Personalabteilung des Unternehmens verwendet werden. Eine [LAMP-basierte](https://wikipedia.org/wiki/LAMP_(software_bundle)) Anwendung wird als Front-End zum Verarbeiten von Personalanfragen der Mitarbeiter verwendet. Contoso hat 100.000 Mitarbeiter weltweit, und daher ist die Betriebszeit für die Datenbanken sehr wichtig.
+In der MariaDB-Datenbank werden Mitarbeiterdaten gehostet, die für alle Belange der Personalabteilung des Unternehmens verwendet werden. Eine [LAMP-basierte](https://wikipedia.org/wiki/LAMP_(software_bundle)) Anwendung wird als Front-End zum Verarbeiten von Personalanfragen der Mitarbeiter verwendet. Contoso hat 100.000 Mitarbeiter weltweit, und daher ist die Betriebszeit für die Datenbanken wichtig.
 
 ### <a name="proposed-solution"></a>Vorgeschlagene Lösung
 
@@ -66,19 +69,19 @@ MariaDB hostet Mitarbeiterdaten, die für alle Belange der Personalabteilung des
 
 ### <a name="database-considerations"></a>Überlegungen zu Datenbanken
 
-Im Rahmen des Lösungsentwurfs hat Contoso die in Azure verfügbaren Features für das Hosting der MariaDB-Datenbanken geprüft. Die folgenden Überlegungen waren ausschlaggebend für die Entscheidung für Azure.
+Im Rahmen des Lösungsentwurfs hat Contoso die in Azure verfügbaren Features für das Hosting der MariaDB-Datenbanken geprüft. Die folgenden Überlegungen haben dabei im Unternehmen zu der Entscheidung für Azure geführt:
 
-- Ähnlich wie Azure SQL unterstützt auch Azure Database for MariaDB [Firewallregeln](https://docs.microsoft.com/azure/mariadb/concepts-firewall-rules).
+- Ähnlich wie Azure SQL-Datenbank unterstützt auch Azure Database for MariaDB [Firewallregeln](https://docs.microsoft.com/azure/mariadb/concepts-firewall-rules).
 - Azure Database for MariaDB kann mit [Azure Virtual Network](https://docs.microsoft.com/azure/mariadb/concepts-data-access-security-vnet) verwendet werden, um zu verhindern, dass die Instanz öffentlich zugänglich ist.
-- Azure Database for MariaDB verfügt über die erforderlichen Compliance- und Datenschutzzertifizierungen, die Contoso für die Prüfer einhalten muss.
+- Azure Database for MariaDB verfügt über die erforderlichen Compliance- und Datenschutzzertifizierungen, die Contoso für seine Prüfer einhalten muss.
 - Die Verarbeitungsleistung für Berichte und Anwendung wird durch die Verwendung von Lesereplikaten verbessert.
-- Der Dienst kann mithilfe von [Private Link](https://docs.microsoft.com/azure/mariadb/concepts-data-access-security-private-link) nur für den internen Netzwerkdatenverkehr (kein öffentlicher Zugriff) verfügbar gemacht werden.
-- Das Unternehmen hat entschieden, nicht zu Azure Database for MySQL zu wechseln, da möglicherweise in Zukunft das MariaDB ColumnStore- und GraphDBMS-Datenbankmodell verwendet werden soll.
-- Die [Bandbreite und Latenz](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways) zwischen der Anwendung und der Datenbank ist je nach ausgewähltem Gateway (ExpressRoute oder Site-to-Site-VPN) ausreichend.
+- Der Dienst kann mithilfe von [Azure Private Link](https://docs.microsoft.com/azure/mariadb/concepts-data-access-security-private-link) nur für den internen Netzwerkdatenverkehr (kein öffentlicher Zugriff) verfügbar gemacht werden.
+- Contoso hat entschieden, nicht zu Azure Database for MySQL zu wechseln, da möglicherweise in Zukunft das MariaDB ColumnStore- und GraphDBMS-Datenbankmodell verwendet werden soll.
+- Die [Bandbreite und Wartezeit](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways) zwischen der Anwendung und der Datenbank ist je nach ausgewähltem Gateway (Azure ExpressRoute oder Site-to-Site-VPN) ausreichend.
 
 ### <a name="solution-review"></a>Überprüfung der Lösung
 
-Contoso wertet den vorgeschlagen Entwurf durch Erstellen einer Liste mit Vor- und Nachteilen aus.
+Contoso bewertet den vorgeschlagen Entwurf anhand einer Liste mit Vor- und Nachteilen.
 
 | Aspekt | Details |
 | --- | --- |
@@ -87,8 +90,8 @@ Contoso wertet den vorgeschlagen Entwurf durch Erstellen einer Liste mit Vor- un
 
 ## <a name="proposed-architecture"></a>Vorgeschlagene Architektur
 
-![Szenarioarchitektur](./media/contoso-migration-mariadb-to-azure/architecture.png)
-_Abbildung 1: Szenarioarchitektur_
+![Diagramm mit der Szenarioarchitektur.](./media/contoso-migration-mariadb-to-azure/architecture.png)
+_Abbildung 1: Szenarioarchitektur_
 
 ### <a name="migration-process"></a>Migrationsprozess
 
@@ -98,30 +101,31 @@ Bevor Sie die MariaDB-Datenbanken migrieren können, müssen Sie sicherstellen, 
 
 Unterstützte Versionen:
 
-- MariaDB verwendet das Benennungsschema „X.Y.Z“. X ist die Hauptversion, Y die Nebenversion und Z die Patchversion.
+- MariaDB verwendet das Benennungsschema „X.Y.Z“. Beispiel: X ist die Hauptversion, Y die Nebenversion und Z die Patchversion.
 - Azure unterstützt derzeit 10.2.25 und 10.3.16.
-- Upgrades für Patchupdates werden von Azure automatisch verwaltet. Beispiel: 10.2.21 auf 10.2.23. Upgrades von Neben- und Hauptversionen werden nicht unterstützt. Ein Upgrade von MariaDB 10.2 auf MariaDB 10.3 wird beispielsweise nicht unterstützt. Wenn Sie von 10.2 auf 10.3 upgraden möchten, führen Sie eine Datenbanksicherung und dann die Wiederherstellung auf einem Server aus, der mit der Engine-Zielversion erstellt wurde.
+- Upgrades für Patchupdates werden von Azure automatisch verwaltet. Beispiele sind 10.2.21 bis 10.2.23. Upgrades von Neben- und Hauptversionen werden nicht unterstützt. Ein Upgrade von MariaDB 10.2 auf MariaDB 10.3 wird beispielsweise nicht unterstützt. Wenn Sie von 10.2 auf 10.3 upgraden möchten, führen Sie eine Datenbanksicherung und dann die Wiederherstellung auf einem Server aus, der mit der Engine-Zielversion erstellt wurde.
 
 Netzwerk:
 
-Contoso muss eine Verbindung über das Gateway des virtuellen Netzwerks zwischen der lokalen Umgebung und dem virtuellen Netzwerk einrichten, in dem sich die MariaDB-Datenbank befindet. Dadurch kann die lokale Anwendung über das Gateway auf die Datenbank zugreifen, wenn die Verbindungszeichenfolgen aktualisiert werden.
+Contoso muss eine Verbindung über das Gateway des virtuellen Netzwerks zwischen der lokalen Umgebung und dem virtuellen Netzwerk einrichten, in dem sich die MariaDB-Datenbank befindet. Durch diese Verbindung kann die lokale Anwendung über das Gateway auf die Datenbank zugreifen, wenn die Verbindungszeichenfolgen aktualisiert werden.
 
-  ![Migrationsprozess](./media/contoso-migration-mariadb-to-azure/migration-process.png) _Abbildung 2: Der Migrationsprozess_
+  ![Diagramm zum Migrationsprozess.](./media/contoso-migration-mariadb-to-azure/migration-process.png)
+  _Abbildung 2: Der Migrationsvorgang._
 
 #### <a name="migration"></a>Migration
 
-Da MariaDB sehr große Ähnlichkeit mit MySQL hat, können dieselben gängigen Hilfsprogramme und Tools wie MySQL Workbench, mysqldump, Toad oder Navicat zum Herstellen einer Verbindung und zum Migrieren von Daten zu Azure Database for MariaDB verwendet werden.
+Da MariaDB große Ähnlichkeit mit MySQL hat, kann Contoso dieselben gängigen Hilfsprogramme und Tools wie MySQL Workbench, mysqldump, Toad oder Navicat zum Herstellen einer Verbindung und zum Migrieren von Daten zu Azure Database for MariaDB verwenden.
 
 Contoso hat zum Migrieren seiner Datenbanken die folgenden Schritte ausgeführt.
 
-- Ermitteln Sie die lokale MariaDB-Version, indem Sie die folgenden Befehle ausführen und die Ausgabe beobachten. In den meisten Fällen sollte Ihre Version in Bezug auf das Schema und die Datensicherung keine große Rolle spielen. Wenn Sie Features auf Anwendungsebene verwenden, sollten Sie sicherstellen, dass diese Anwendungen mit der Zielversion in Azure kompatibel sind.
+- Ermitteln Sie die lokale MariaDB-Version, indem Sie die folgenden Befehle ausführen und die Ausgabe beobachten. In den meisten Fällen sollte Ihre Version in Bezug auf das Schema und die Datensicherung keine große Rolle spielen. Wenn Sie Features auf Anwendungsebene verwenden, stellen Sie sicher, dass diese Anwendungen mit der Zielversion in Azure kompatibel sind.
 
   ```cmd
     mysql -h localhost -u root -P
   ```
 
-  ![Migrationsprozess](./media/contoso-migration-mariadb-to-azure/mariadb_version.png)
-  _Abbildung 4: Ermitteln der lokalen MariaDB-Version_
+  ![Screenshot zum Ermitteln der lokalen MariaDB-Version.](./media/contoso-migration-mariadb-to-azure/mariadb_version.png)
+  _Abbildung 3: Ermitteln der lokalen MariaDB-Version_
 
 - Erstellen Sie eine neue MariaDB-Instanz in Azure:
 
@@ -129,24 +133,24 @@ Contoso hat zum Migrieren seiner Datenbanken die folgenden Schritte ausgeführt.
   - Wählen Sie **Ressource hinzufügen** aus.
   - Suchen Sie nach `MariaDB`.
 
-    ![Migrationsprozess](./media/contoso-migration-mariadb-to-azure/azure-mariadb-create.png)
-    _Abbildung 4: Neue MariaDB-Instanz in Azure_
+    ![Screenshot zeigt eine neue MariaDB-Instanz in Azure.](./media/contoso-migration-mariadb-to-azure/azure-mariadb-create.png)
+    _Abbildung 4: Neue MariaDB-Instanz in Azure_
 
   - Klicken Sie auf **Erstellen**.
   - Wählen Sie Ihr Abonnement und die Ressourcengruppe aus.
   - Wählen Sie einen Servernamen und einen Standort aus.
-  - Wählen Sie die Zielversion aus (10.2 oder 10.3).
+  - Wählen Sie Ihre Zielversion aus (10.2 oder 10.3).
   - Wählen Sie Compute und Speicher aus.
   - Geben Sie einen Administratorbenutzername und ein Kennwort ein.
   - Klicken Sie auf **Überprüfen + erstellen**.
 
-    ![Migrationsprozess](./media/contoso-migration-mariadb-to-azure/azure_mariadb_create.png)
-    _Abbildung 5: Überprüfen und Erstellen_
+    ![Screenshot zeigt den Bildschirm zum Erstellen des MariaDB-Servers.](./media/contoso-migration-mariadb-to-azure/azure_mariadb_create.png)
+    _Abbildung 5: Überprüfen und Erstellen_
 
   - Klicken Sie auf **Erstellen**.
   - Notieren Sie sich den Serverhostnamen, den Benutzernamen und das Kennwort.
   - Wählen Sie **Verbindungssicherheit** aus.
-  - Wählen Sie **Client-IP hinzufügen** aus (die IP-Adresse, von der Sie die Datenbank anschließend wiederherstellen).
+  - Wählen Sie **Client-IP hinzufügen** aus (die IP-Adresse, von der aus Sie die Datenbank wiederherstellen).
   - Wählen Sie **Speichern** aus.
 
 - Führen Sie die folgenden Befehle aus, um die Datenbank mit dem Namen `Employees` zu exportieren. Wiederholen Sie dies für jede Datenbank:
@@ -155,7 +159,7 @@ Contoso hat zum Migrieren seiner Datenbanken die folgenden Schritte ausgeführt.
     mysqldump -h localhost -u root -p -–skip-triggers -–single-transaction –-extended-insert -–order-by-primary -–disable-keys Employees > Employees.sql
     ```
 
-- Stellen Sie die Datenbank wieder her. Setzen Sie den Endpunkt für Ihre Azure Database for MariaDB-Instanz und den Benutzernamen ein.
+- Stellen Sie die Datenbank wieder her. Setzen Sie den Endpunkt für Ihre Azure Database for MariaDB-Instanz und den Benutzernamen ein:
 
   ```cmd
   mysql -h {name}.mariadb.database.azure.com -u user@{name} -p –ssl
@@ -164,7 +168,7 @@ Contoso hat zum Migrieren seiner Datenbanken die folgenden Schritte ausgeführt.
   source employees.sql;
   ```
 
-- Überprüfen Sie mithilfe von phpMyAdmin oder einem ähnlichen Tool (MySQL Workbench, Toad und Navicat), die Wiederherstellung, indem Sie die Anzahl der Datensätze in jeder Tabelle prüfen.
+- Überprüfen Sie mithilfe von phpMyAdmin oder einem ähnlichen Tool (z. B. MySQL Workbench, Toad und Navicat) die Wiederherstellung, indem Sie die Anzahl der Datensätze in jeder Tabelle prüfen.
 - Aktualisieren Sie alle Anwendungsverbindungszeichenfolgen, sodass Sie auf die migrierte Datenbank verweisen.
 - Testen Sie alle Anwendungen auf ordnungsgemäßen Betrieb.
 
@@ -174,28 +178,30 @@ Nach einer überprüften erfolgreichen Migration muss Contoso die Sicherungsdate
 
 ## <a name="review-the-deployment"></a>Überprüfen der Bereitstellung
 
-Da die migrierten Ressourcen in Azure enthalten sind, muss Contoso die neue Infrastruktur vollständig operationalisieren und sichern.
+Da die migrierten Ressourcen in Azure enthalten sind, muss Contoso seine neue Infrastruktur vollständig operationalisieren und schützen.
 
 ### <a name="security"></a>Sicherheit
 
-- Contoso muss sicherstellen, dass die neue Azure Database for MariaDB-Instanz und die Datenbanken geschützt sind. [Weitere Informationen](https://docs.microsoft.com/azure/mariadb/concepts-security)
-- Contoso muss die [Firewallregeln](https://docs.microsoft.com/azure/mariadb/concepts-firewall-rules) und die Konfigurationseinstellungen des virtuellen Netzwerks überprüfen, um sicherzustellen, dass Verbindungen auf die Anwendungen beschränkt sind, die Zugriff benötigen.
+Contoso muss Folgendes durchführen:
+
+- Sicherstellen, dass die neue Azure Database for MariaDB-Instanz und die Datenbanken geschützt sind. Weitere Informationen finden Sie unter [Sicherheit in Azure Database for MariaDB](https://docs.microsoft.com/azure/mariadb/concepts-security).
+- Die [Firewallregeln](https://docs.microsoft.com/azure/mariadb/concepts-firewall-rules) und die Konfigurationseinstellungen des virtuellen Netzwerks überprüfen, um sicherzustellen, dass Verbindungen auf die Anwendungen beschränkt sind, die Zugriff benötigen.
 - Contoso muss Anforderungen für ausgehende IP-Adressen konfigurieren, um Verbindungen mit den [Gateway-IP-Adressen](https://docs.microsoft.com/azure/mariadb/concepts-connectivity-architecture) von MariaDB zuzulassen.
 - Contoso muss alle Anwendungen zur Verwendung von [SSL](https://docs.microsoft.com/azure/mariadb/concepts-ssl-connection-security)-Verbindungen mit den Datenbanken aktualisieren.
 - Contoso sollte [Private Link](https://docs.microsoft.com/azure/mariadb/concepts-data-access-security-private-link) einrichten, damit der gesamte Datenverkehr der Datenbanken innerhalb von Azure und des lokalen Netzwerks bleibt.
 - Contoso sollte [Azure Advanced Threat Protection (ATP)](https://docs.microsoft.com/azure/mariadb/concepts-data-access-and-security-threat-protection) aktivieren.
-- Contoso muss die Protokollanalyse konfigurieren, um die Sicherheit zu überwachen und Warnungen zu relevanten Einträgen zu erhalten.
+- Die Protokollanalyse konfigurieren, um die Sicherheit sowie relevante Einträge zu überwachen und Warnungen zu senden.
 
 ### <a name="backups"></a>Backups
 
-Mithilfe der Geowiederherstellung kann sichergestellt werden, dass die Azure Database for MariaDB-Datenbanken gesichert sind. Mit dieser Funktion können Sicherungen erstellt werden, die im Fall eines regionalen Ausfalls in einer gekoppelten Region verfügbar sind.
+Mithilfe der Geowiederherstellung kann sichergestellt werden, dass die Azure Database for MariaDB-Datenbanken gesichert sind. Auf diese Weise können im Falle eines regionalen Ausfalls Sicherungen in Regionspaaren verwendet werden.
 
 > [!IMPORTANT]
 > Stellen Sie sicher, dass die Azure Database for MariaDB-Ressource über eine [Ressourcensperre](https://docs.microsoft.com/azure/azure-resource-manager/management/lock-resources) verfügt und nicht gelöscht werden kann. Gelöschte Server können nicht wiederhergestellt werden.
 
 ### <a name="licensing-and-cost-optimization"></a>Lizenzierung und Kostenoptimierung
 
-- Azure Database for MariaDB kann zentral hoch- oder herunterskaliert werden. Daher ist die Leistungsüberwachung von Server und Datenbanken wichtig, um sicherzustellen, dass die Anforderungen erfüllt und gleichzeitig die Kosten möglichst gering gehalten werden.
+- Azure Database for MariaDB kann hoch- und herunterskaliert werden. Die Leistungsüberwachung des Servers und der Datenbanken ist wichtig, um sicherzustellen, dass Ihre Anforderungen erfüllt und die Kosten so gering wie möglich gehalten werden.
 - Sowohl für CPU als auch für Speicher können Kosten anfallen. Sie können zwischen verschiedenen Tarifen wählen. Achten Sie darauf, dass ein passender Tarif für die Datenworkloads ausgewählt ist.
 - Jedes Lesereplikat wird auf Grundlage der ausgewählten Compute- und Speicheroptionen berechnet.
 - Verwenden Sie reservierte Kapazitäten, um Kosten zu sparen.

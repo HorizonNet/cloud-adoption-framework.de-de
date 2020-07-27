@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 74dc8af9d2cb23e2c0c2b096d03f89f5ed2c8049
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 96f93ad2d7a73984a69ca36235a58557eac0d1a9
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86191381"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450491"
 ---
 <!-- TODO: Rationalize name formats. -->
 
@@ -91,7 +91,7 @@ _Abbildung 3: Ein Abonnement mit einem Dienstadministrator, dem die integrierte 
 
 <!-- docsTest:ignore "resource group A" "resource groups A and B" "workload owner A" -->
 
-1. Im ersten Beispiel verfügt **Workloadbesitzer A** über keine Berechtigungen für den Abonnementbereich. Er hat standardmäßig keine Verwaltungsrechte für den Ressourcenzugriff. Dieser Benutzer möchte die Ressourcen für seine Workload bereitstellen und verwalten. Er muss sich an den **Dienstadministrator** wenden, um die Erstellung einer Ressourcengruppe anzufordern.
+1. Im ersten Beispiel verfügt **Workloadbesitzer A** über keine Berechtigungen für den Abonnementbereich und er hat standardmäßig keine Verwaltungsrechte für den Ressourcenzugriff. Dieser Benutzer möchte die Ressourcen für seine Workload bereitstellen und verwalten. Er muss sich an den **Dienstadministrator** wenden, um die Erstellung einer Ressourcengruppe anzufordern.
     ![Workloadbesitzer fordert Erstellung von Ressourcengruppe A an.](../../_images/govern/design/governance-2-2.png)
 2. Der **Dienstadministrator** prüft die Anforderung und erstellt die **Ressourcengruppe A**. **Workloadbesitzer A** verfügt an diesem Punkt immer noch nicht über Berechtigungen zur Durchführung von Aktionen.
     ![Dienstadministrator erstellt Ressourcengruppe A.](../../_images/govern/design/governance-2-3.png)
@@ -112,7 +112,7 @@ An diesem Punkt ist jeder Workloadbesitzer in seiner eigenen Ressourcengruppe is
 ![Abonnement mit Ressourcengruppen A und B](../../_images/govern/design/governance-2-10.png)
 _Abbildung 4: Ein Abonnement mit zwei Workloadbesitzern, isoliert in ihrer eigenen Ressourcengruppe_
 
-Dieses Modell ist ein Modell der geringsten Berechtigung: Jedem Benutzer wird jeweils die richtige Berechtigung für den richtigen Ressourcenverwaltungsbereich zugewiesen.
+Dieses Modell ist ein Modell mit geringstmöglichen Rechten. Jedem Benutzer wird jeweils die richtige Berechtigung für den richtigen Ressourcenverwaltungsbereich zugewiesen.
 
 Bedenken Sie, dass jede Aufgabe in diesem Beispiel vom **Dienstadministrator** durchgeführt wurde. Dies ist zwar nur ein einfaches Beispiel, und es scheint kein Problem darzustellen, da es nur um zwei Workloadbesitzer geht. Es ist aber leicht vorstellbar, welche Probleme sich für eine große Organisation ergeben können. Beim **Dienstadministrator** können beispielsweise Engpässe auftreten, wenn sich eine große Zahl von Anforderungen staut und es zu Verzögerungen kommt.
 
@@ -201,7 +201,7 @@ Dies bedeutet, dass der **App2-Workloadbesitzer** dazu berechtigt war, sein eige
 
 Als Nächstes sehen wir uns ein einzelnes Abonnement mit mehreren Ressourcengruppen für unterschiedliche Umgebungen und Workloads an. Beachten Sie, dass die Ressourcen für die einzelnen Umgebungen im vorherigen Beispiel leicht identifizierbar waren, da sie sich in derselben Ressourcengruppe befunden haben. Nachdem diese Gruppierung nun nicht mehr vorhanden ist, müssen Sie eine Namenskonvention für Ressourcengruppen nutzen, um diese Funktionalität bereitzustellen.
 
-1. Die Ressourcen für die **freigegebene Infrastruktur** verfügen bei diesem Modell weiterhin über eine separate Ressourcengruppe. Hier ändert sich also nichts. Für jede Workload sind zwei Ressourcengruppen erforderlich: jeweils eine für die Umgebung für die **Entwicklung** und die **Produktion**. Für die erste Workload erstellt das **Abonnementbesitzer**-Konto zwei Ressourcengruppen. Sie heißen `app1-prod-rg` und `app1-dev-rg`. Wie bereits beschrieben, wird für die Ressourcen mit dieser Namenskonvention angegeben, dass sie der ersten Workload **app1** und entweder der Umgebung **dev** (Entwicklung) oder **prod** (Produktion) zugeordnet sind. Das **Abonnementbesitzer**-Konto fügt den **App1-Workloadbesitzer** der Ressourcengruppe mit der Rolle **Mitwirkender** hinzu.
+1. Die Ressourcen für die **freigegebene Infrastruktur** verfügen bei diesem Modell weiterhin über eine separate Ressourcengruppe. Hier ändert sich also nichts. Für jede Workload sind zwei Ressourcengruppen erforderlich: jeweils eine für die Umgebung für die **Entwicklung** und die **Produktion**. Für die erste Workload erstellt das **Abonnementbesitzer**-Konto zwei Ressourcengruppen. Sie heißen `app1-prod-rg` und `app1-dev-rg`. Wie bereits beschrieben, wird für die Ressourcen mit dieser Namenskonvention angegeben, dass sie der ersten Workload `app1` und entweder der Umgebung **Entwicklung** oder **Produktion** zugeordnet sind. Das **Abonnementbesitzer**-Konto fügt den **App1-Workloadbesitzer** der Ressourcengruppe mit der Rolle **Mitwirkender** hinzu.
     ![Hinzufügen von Mitwirkenden](../../_images/govern/design/governance-3-12.png)
 2. Ähnlich wie im ersten Beispiel stellt der **App1-Workloadbesitzer** ein virtuelles Netzwerk mit dem Namen `app1-prod-vnet` in der Umgebung für die **Produktion** und ein weiteres mit dem Namen `app1-dev-vnet` in der Umgebung für die **Entwicklung** bereit. Der **App1-Workloadbesitzer** sendet eine Anforderung an den Benutzer für den **Netzwerkbetrieb**, um eine Peeringverbindung zu erstellen. Beachten Sie Folgendes: Der **App1-Workloadbesitzer** fügt die gleichen Tags wie im ersten Beispiel hinzu, und der Grenzwertzähler wurde auf 997 virtuelle Netzwerke verringert, die für das Abonnement verbleiben.
     ![Erstellen einer Peeringverbindung](../../_images/govern/design/governance-3-13.png)
@@ -268,7 +268,7 @@ Folgen Sie diesen Schritten:
 5. Der Azure-Kontoadministrator [fügt den Abonnements jeweils den Abonnementdienstbesitzer hinzu](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#to-assign-a-user-as-an-administrator).
 6. Erstellen Sie einen Genehmigungsprozess, damit **Workloadbesitzer** die Erstellung von Ressourcengruppen anfordern können. Der Genehmigungsprozess kann auf verschiedene Arten (beispielsweise per E-Mail) implementiert werden. Alternativ können Sie ein Prozessverwaltungstool wie [SharePoint-Workflows](https://support.office.com/article/introduction-to-sharepoint-workflow-07982276-54e8-4e17-8699-5056eff4d9e3) verwenden. Der Genehmigungsprozess kann wie folgt aussehen:
     - Der **Workloadbesitzer** erstellt eine Stückliste mit Azure-Ressourcen, die in der **Entwicklungsumgebung**, in der **Produktionsumgebung** oder in beiden benötigt werden, und übermittelt sie an den **Abonnementbesitzer**.
-    - Der **Abonnementbesitzer** prüft die Stückliste und die angeforderten Ressourcen, um sicherzustellen, dass sie für die geplante Verwendung angemessen sind (etwa durch Überprüfung, ob die angeforderten [VM-Größen](https://docs.microsoft.com/azure/virtual-machines/windows/sizes) korrekt sind).
+    - Der **Abonnementbesitzer** prüft die Stückliste und die angeforderten Ressourcen, um sicherzustellen, dass sie für die geplante Verwendung angemessen sind, z. B. durch Überprüfung, ob die angeforderten [VM-Größen](https://docs.microsoft.com/azure/virtual-machines/windows/sizes) korrekt sind.
     - Wird die Anforderung nicht genehmigt, erhält der **Workloadbesitzer** eine entsprechende Benachrichtigung. Wenn die Anforderung genehmigt wird, führt der **Abonnementbesitzer** die [Erstellung der angeforderten Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/manage-resource-groups-portal#create-resource-groups) unter Einhaltung der [Benennungskonventionen](../../ready/azure-best-practices/naming-and-tagging.md) Ihrer Organisation durch, [fügt den **Workloadbesitzer** hinzu](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal#add-a-role-assignment) (mit der [Rolle **Mitwirkender**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor)) und informiert den **Workloadbesitzer** über die Erstellung der Ressourcengruppe.
 7. Erstellen Sie einen Genehmigungsprozess, damit Workloadbesitzer beim Besitzer der gemeinsamen Infrastruktur eine Verbindung mit Peering virtueller Netzwerke anfordern können. Dieser Genehmigungsprozess kann genau wie im vorherigen Schritt per E-Mail oder unter Verwendung eines Prozessverwaltungstools implementiert werden.
 

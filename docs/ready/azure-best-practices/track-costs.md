@@ -1,5 +1,5 @@
 ---
-title: Nachverfolgen von Kosten für Geschäftseinheiten und Umgebungen
+title: Nachverfolgen von Kosten für Geschäftseinheiten, Umgebungen oder Projekte
 description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um sich mit den Entscheidungen und Implementierungsansätzen zur Erstellung von Nachverfolgungsmechanismen vertraut zu machen.
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,18 +7,19 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d838b2bf1e05152fc9273746b264d8f2da3b77e5
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 91bc0fce8f22f897b0957eeca9bbbb8fdb714ee6
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194628"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479822"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Nachverfolgen von Kosten für Geschäftseinheiten, Umgebungen oder Projekte
 
 Für das [Schaffen einer kostenbewussten Organisation](../../organize/cost-conscious-organization.md) ist Transparenz und ein gut definierter Zugriff auf kostenbezogene Daten erforderlich (bzw. ein entsprechender Bereich). In diesem Artikel zu den bewährten Methoden werden Entscheidungen und Implementierungsansätze für die Erstellung von angemessenen Mechanismen für die Nachverfolgung beschrieben.
 
-![Darstellung des Prozesses für Kostenbewusstsein](../../_images/ready/cost-optimization-process.png)
+![Darstellung des kostenbewussten Verfahrens](../../_images/ready/cost-optimization-process.png)
+_Abbildung 1: Darstellung eines kostenbewussten Verfahrens_
 
 ## <a name="establish-a-well-managed-environment-hierarchy"></a>Aufstellen einer gut verwalteten Umgebungshierarchie
 
@@ -32,10 +33,7 @@ _Tagging_ ist eine einfache Möglichkeit zum Klassifizieren von Ressourcen. Beim
 
 Das Tagging ist das wichtigste Verahren, wenn es um das Verständnis der Daten im Rahmen der Kostenberichterstattung geht. Es ist ein wesentlicher Bestandteil jeder gut verwalteten Umgebung. Darüber hinaus ist dies der erste Schritt zur Erzielung von Governance für eine Umgebung.
 
-Um Kosteninformationen übergreifend für Geschäftseinheiten, Umgebungen und Projekte genau nachverfolgen zu können, muss zunächst ein Standard für das Tagging definiert werden. Im zweiten Schritt wird sichergestellt, dass dieser Standard für das Tagging einheitlich angewendet wird. Die Artikel zu den folgenden Themen enthalten Informationen zu diesen Schritten:
-
-- [Entwickeln von Standards für Benennung und Tagging](../azure-best-practices/naming-and-tagging.md)
-- [Einrichten eines Governance-MVP zum Erzwingen von Standards für das Tagging](../../govern/guides/complex/index.md)
+Um Kosteninformationen übergreifend für Geschäftseinheiten, Umgebungen und Projekte genau nachverfolgen zu können, muss zunächst ein Standard für das Tagging definiert werden. Im zweiten Schritt wird sichergestellt, dass dieser Standard für das Tagging einheitlich angewendet wird. Die folgenden Artikel können bei Folgendem helfen: [Entwickeln von Standards für Benennung und Kennzeichnung](../azure-best-practices/naming-and-tagging.md) und [Einrichten eines Governance-MVP zum Erzwingen von Kennzeichnungsstandards](../../govern/guides/complex/index.md).
 
 ### <a name="resource-organization"></a>Ressourcenorganisation
 
@@ -43,7 +41,8 @@ Es gibt mehrere Ansätze zum Organisieren von Ressourcen. In diesem folgenden Ab
 
 Bei einem großen Unternehmen erstellt das folgende Modell für Verwaltungsgruppen, Abonnements und Ressourcengruppen eine Hierarchie, die jedem Team die richtige Transparenz zum Ausführen seiner Aufgaben ermöglicht. Wenn das Unternehmen Kostenkontrolle benötigt, um eine Budgetüberschreitung zu verhindern, kann es Governancetools wie Azure Blueprints oder Azure Policy auf die Abonnements der Struktur anwenden, um zukünftige Fehler bei den Kosten zu vermeiden.
 
-![Abbildung der Ressourcenorganisation für ein großes Unternehmen](../../_images/govern/large-enterprise-resource-organization.png)
+![Diagramm der Ressourcenorganisation für ein großes Unternehmen](../../_images/govern/large-enterprise-resource-organization.png)
+_Abbildung 2: Ressourcenorganisation für ein großes Unternehmen_
 
 In der Abbildung obem enthält der Stamm der Hierarchie mit den Verwaltungsgruppen jeweils einen Knoten pro Geschäftseinheit. In diesem Beispiel benötigt ein multinationales Unternehmen transparenten Einblick in die regionalen Geschäftseinheiten, und für jede Geschäftseinheit der Hierarchie wird ein Knoten für eine geografische Region erstellt.
 
@@ -66,8 +65,7 @@ Im restlichen Artikel wird vorausgesetzt, dass der Ansatz mit der bewährten Met
 
 Die Verwaltung der Kosten ist eine Teamaktivität. Im Abschnitt zur Bereitschaft von Organisationen des Frameworks für die Cloudeinführung (Cloud Adoption Framework) ist eine geringe Anzahl von Kernteams definiert. Es wird beschrieben, wie diese Teams die Schritte der Cloudeinführung unterstützen. In diesem Artikel werden die Teamdefinitionen eingehender erläutert, um den Bereich und die Rollen zu definieren, die den Mitgliedern der einzelnen Teams zugewiesen werden müssen, um für die Kostenverwaltungsdaten den richtigen Transparenzgrad zu erzielen.
 
-- Mit **Rollen** wird definiert, welche Schritte ein Benutzer für verschiedene Ressourcen ausführen kann.
-- **Bereich** definiert, für welche Ressourcen (Benutzer, Gruppe, Dienstprinzipal oder verwaltete Identität) ein Benutzer diese Aufgaben ausführen kann.
+Mit **Rollen** wird definiert, welche Schritte ein Benutzer für verschiedene Ressourcen ausführen kann. Der **Bereich** legt fest, für welche Ressourcen (Benutzer, Gruppe, Dienstprinzipal oder verwaltete Identität) ein Benutzer diese Aufgaben ausführen kann.
 
 Die generell empfohlene bewährte Methode besteht darin, ein Modell mit geringstmöglichen Rechten zu verwenden, um Personen verschiedenen Rollen und Bereichen zuzuweisen.
 
@@ -128,7 +126,7 @@ Wenn Sie mit der Verwendung von Azure Cost Management und Abrechnung beginnen m�
 - [Optimieren von Kosten anhand von Empfehlungen](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
 - [Verwenden von Kostenwarnungen zum Überwachen von Verbrauch und Ausgaben](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending)
 
-<-- docsTest: „AWS-Kosten und -Verbrauch“ -->
+<!-- docsTest: "AWS Cost and Usage" -->
 
 ### <a name="use-azure-cost-management-and-billing-to-govern-aws-costs"></a>Verwenden von Azure Cost Management und Abrechnung zum Steuern von AWS-Kosten
 

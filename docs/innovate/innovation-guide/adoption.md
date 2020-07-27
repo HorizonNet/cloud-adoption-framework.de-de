@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 257c02ae6ac6fcb878386ca64897ec44352b68ad
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: 4830928bb0b7765ca05a11ceee7c859b2dc2608a
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373321"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478632"
 ---
 # <a name="prepare-for-customer-feedback"></a>Vorbereiten für Kundenfeedback
 
@@ -25,7 +25,7 @@ Beim Erstellen einer innovativen neuen Lösung geht es nicht darum, dem Benutzer
 - **Quantitative Tests (Testen von Feedback):** Dieses Feedback misst die Aktionen, die wir erwarten.
 - **Qualitative Tests (Kundenfeedback):** Dieses Feedback informiert uns, was diese Metriken aus Sicht des Kunden bedeuten.
 
-Bevor Sie Feedbackschleifen integrieren, benötigen Sie ein freigegebenes Repository für Ihre Lösung. Ein zentralisiertes Repository bietet die Möglichkeit, das gesamte Feedback zu Ihrem Projekt aufzuzeichnen und darauf zu reagieren. [GitHub](https://github.com) ist der zentrale Aufbewahrungsort für Open Source-Software. Dies ist auch eine der am häufigsten verwendeten Plattformen für das Hosting des Quellcoderepositorys für kommerziell entwickelte Apps. Der Artikel zum [Erstellen von GitHub-Repositorys](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml) kann Ihnen bei den ersten Schritten mit Ihrem Repository helfen.
+Bevor Sie Feedbackschleifen integrieren, benötigen Sie ein freigegebenes Repository für Ihre Lösung. Ein zentralisiertes Repository bietet die Möglichkeit, das gesamte Feedback zu Ihrem Projekt aufzuzeichnen und darauf zu reagieren. [GitHub](https://github.com) ist der zentrale Aufbewahrungsort für Open Source-Software. Dies ist auch eine der am häufigsten verwendeten Plattformen für das Hosting des Quellcoderepositorys für kommerziell entwickelte Anwendungen. Der Artikel zum [Erstellen von GitHub-Repositorys](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml) kann Ihnen bei den ersten Schritten mit Ihrem Repository helfen.
 
 Jedes der folgenden Tools in Azure kann in Projekte integriert werden, die in GitHub gehostet werden (oder ist mit ihnen kompatibel):
 
@@ -54,7 +54,7 @@ Zum Anzeigen quantitativer Daten für Ihre Anwendungen gehen Sie folgendermaßen
 
 ::: zone target="docs"
 
-Um die Daten zu Ihren Apps anzuzeigen, navigieren Sie zum [Azure-Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Insights%2FComponents).
+Um die Daten zu Ihren Anwendungen anzuzeigen, navigieren Sie zum [Azure-Portal](https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.Insights%2FComponents).
 
 ::: zone-end
 
@@ -68,7 +68,7 @@ Um die Daten zu Ihren Apps anzuzeigen, navigieren Sie zum [Azure-Portal](https:/
 
 Die vernetzte Wirtschaft verändert die Art und Weise, in der Unternehmen Innovationen entwickeln. Märkte und Branchen werden schneller als je zuvor gestört. Störungen treten in vielen Formen auf, und Unternehmen müssen sich mit dem _Dilemma des Innovators_ auseinandersetzen: Wie kann das Tempo des Wandels festgelegt werden, ohne die laufende Geschäftsaktivität zu beeinträchtigen?
 
-Unternehmen verwenden extern APIs, um die Interaktion mit ihren Kunden und Partnern zu ändern. Intern verwenden sie APIs, um verschiedene Teile des Unternehmens nahtlos miteinander zu verbinden. Die API-Struktur basiert auf vier Bausteinen: soziale Netzwerke, mobile Apps, Analysen und Cloud. Apps und Dienste können schnell und kostengünstig verknüpft werden, um ein erweitertes Wertversprechen zu schaffen.
+Unternehmen verwenden extern APIs, um die Interaktion mit ihren Kunden und Partnern zu ändern. Intern verwenden sie APIs, um verschiedene Teile des Unternehmens nahtlos miteinander zu verbinden. Die API-Struktur basiert auf vier Bausteinen: soziale Netzwerke, mobile Apps, Analysen und Cloud. Anwendungen und Dienste können schnell und kostengünstig verknüpft werden, um ein erweitertes Wertversprechen zu schaffen.
 
 <!-- markdownlint-disable MD024 -->
 
@@ -90,7 +90,7 @@ Zum Anzeigen quantitativer Daten für Ihre APIs gehen Sie folgendermaßen vor:
 
 <!-- markdownlint-disable DOCSMD001 -->
 
-::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2FService]" submitText="Go to API Management services" :::
+::: form action="OpenBlade[#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.ApiManagement%2FService]" submitText="Go to API Management Services" :::
 
 <!-- markdownlint-enable DOCSMD001 -->
 
@@ -114,7 +114,7 @@ Feedback wird in Form von User Storys im Backlog (oder Board) aufgezeichnet. Dor
 
 ### <a name="action"></a>Aktion
 
-Azure Boards und Azure Pipelines erfordern ein Portal, das von GitHub und Azure getrennt ist. Steigen Sie in [Azure DevOps Services](https://docs.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops) ein.
+Azure Boards und Azure Pipelines erfordern ein Portal, das von GitHub und Azure getrennt ist. Steigen Sie in [Azure DevOps Services](https://docs.microsoft.com/azure/devops/user-guide/what-is-azure-devops) ein.
 
 ::: zone-end
 
@@ -153,7 +153,7 @@ Zum Anzeigen aktueller Bereitstellungen in ihrer Pipeline gehen Sie folgenderma�
 
 1. Navigieren Sie zu **App Services**.
 2. Wählen Sie die gewünschte Anwendung aus der Liste aus.
-3. Wählen Sie im Bereich „App Services“ im Abschnitt **Bereitstellung** die Option **Bereitstellungscenter** aus.
+3. Wählen Sie im Bereich **App Services** im Abschnitt **Bereitstellung** die Option **Bereitstellungscenter** aus.
 
 ::: zone target="chromeless"
 
@@ -176,4 +176,4 @@ Um Ihre Anwendungen in App Service anzuzeigen, wechseln Sie zum [Azure-Portal](h
 Beginnen Sie mit dem Erstellen Ihrer Bereitstellungspipelines:
 
 - [Erstellen Ihrer ersten Pipeline](https://docs.microsoft.com/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=tfs-2018-2)
-- [GitHub-Releaseaufgaben](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/github-release?view=azure-devops)
+- [`GitHub Release`-Aufgaben](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/github-release?view=azure-devops)

@@ -7,16 +7,16 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 9cca384f3c4e38e6a8a023210aca18c2e92c60dc
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 1b1821a40df2f221855642c168e3a7bf13c56492
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85074680"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479210"
 ---
-# <a name="deploy-a-migration-landing-zone"></a>Bereitstellen einer Landezone für die Migration
+# <a name="deploy-a-migration-landing-zone-in-azure"></a>Bereitstellen einer Landezone in Azure
 
-Die _Zielzone für die Migration_ ist eine Umgebung, die bereitgestellt und auf das Hosten von Workloads vorbereitet wurde, die von einer lokalen Umgebung nach Azure migriert werden.
+Die Zielzone für die Migration ist eine Umgebung, die bereitgestellt und auf das Hosten von Workloads vorbereitet wurde, die von einer lokalen Umgebung nach Azure migriert werden.
 
 ## <a name="deploy-the-blueprint"></a>Bereitstellen der Blaupause
 
@@ -31,9 +31,9 @@ Diese Implementierungsoption bietet einen wertenden Ansatz für die allgemeinen 
 
 ### <a name="deployment-options"></a>Bereitstellungsoptionen
 
-Mit dieser Implementierungsoption wird ein _Minimum Viable Product (MVP)_ bereitgestellt, um eine Migration zu starten. Im Verlauf der Migration verfolgt der Kunde bei paralleler Anleitung einen modularen Umgestaltungsansatz zum Ausbau des Betriebsmodells; hierbei kommen die [Governancemethodik](../../govern/index.md) und die [Manage-Methodik](../../manage/index.md) zur Anwendung, um die komplexen Themen parallel zu den anfänglichen Migrationsmaßnahmen zu adressieren.
+Mit dieser Implementierungsoption wird ein Minimum Viable Product (MVP) bereitgestellt, um eine Migration zu starten. Im Verlauf der Migration verfolgt der Kunde bei paralleler Anleitung einen modularen Umgestaltungsansatz zum Ausbau des Betriebsmodells; hierbei kommen die [Governancemethodik](../../govern/index.md) und die [Manage-Methodik](../../manage/index.md) zur Anwendung, um die komplexen Themen parallel zu den anfänglichen Migrationsmaßnahmen zu adressieren.
 
-Die von diesem MVP-Ansatz bereitgestellten spezifischen Ressourcen werden unten im [Abschnitt zu Entscheidungen](#decisions) aufgeführt.
+Die von diesem MVP-Ansatz bereitgestellten spezifischen Ressourcen werden unten im Abschnitt zu [Entscheidungen](#decisions) aufgeführt.
 
 ### <a name="enterprise-enrollment"></a>Unternehmensregistrierung
 
@@ -84,7 +84,7 @@ Diese anfängliche Zielzone umfasst folgende Annahmen bzw. Einschränkungen. Wen
 - **Grenzwerte für Abonnements**: Bei der Einführung ist nicht damit zu rechnen, dass [Abonnementgrenzwerte](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits) überschritten werden.
 - **Compliance**: In dieser Landezone sind keine Complianceanforderungen von Dritten zu beachten.
 - **Komponenten der Architektur**: Die Komplexität der Architektur erfordert keine zusätzlichen Produktionsabonnements.
-- **Gemeinsam genutzte Dienste**: Es sind keine gemeinsam genutzten Dienste in Azure vorhanden, die erfordern, dass dieses Abonnement wie ein Spoke in einer Hub-and-Spoke-Architektur behandelt wird.
+- **Gemeinsam genutzte Dienste**: Keiner der vorhandenen gemeinsam genutzten Dienste in Azure erfordert, dass dieses Abonnement wie ein Spoke in einer Hub-and-Spoke-Architektur behandelt wird.
 - **Begrenzter Produktionsbereich:** Diese Zielzone könnte Produktionsworkloads hosten. Sie ist jedoch keine geeignete Umgebung für vertrauliche Daten oder unternehmenskritische Workloads.
 
 Wenn diese Annahmen mit Ihren aktuellen Anforderungen in Bezug auf die Einführung übereinstimmen, ist diese Blaupause möglicherweise ein guter Ausgangspunkt zum Erstellen einer Zielzone.

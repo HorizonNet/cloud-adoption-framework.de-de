@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 1023b64d32018a1a9e7db35d11ec84568168aa40
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 7f625e71668d8dbdd37d553897720ec1ee8c28e3
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86195019"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450984"
 ---
 # <a name="balance-the-portfolio"></a>Ausgewogenheit des Portfolios
 
@@ -49,7 +49,7 @@ Die Anleitung in Bezug auf [inkrementelle Rationalisierung der digitalen Ressour
 
 In der Tabelle im obigen Abschnitt [Dokumentieren von Geschäftsergebnissen](#document-business-outcomes) fehlt ein entscheidendes Ergebnis, das das höchste Ziel der IT-Kostenreduzierung unterstützen würde. Wenn die IT-Kostenreduzierung an einer beliebigen Stelle in der Liste der Geschäftsergebnisse rangiert, ist es wichtig, das Potenzial der Außerkraftsetzung oder Deaktivierung von Workloads zu berücksichtigen. In einigen Szenarien können Kosteneinsparungen erzielt werden, indem Workloads, die keine kurzfristige Rendite garantieren, nicht migriert werden. Einige Kunden berichteten von Kosteneinsparungen, die mehr als 20% der Kostenreduzierungen insgesamt ausmachen, durch Außerkraftsetzung von nicht ausgelasteten Workloads.
 
-Im Interesse eines ausgewogenen Portfolios und um Entscheidungen zur Außerkraftsetzung und Deaktivierung besser widerzuspiegeln, werden das Cloudstrategieteam und das Cloudeinführungsteam aufgefordert, zu jeder Workload im Bewertungs- und Migrationsprozess folgende Fragen zu stellen:
+Im Interesse eines ausgewogenen Portfolios und um Entscheidungen zur Außerkraftsetzung und Deaktivierung besser widerzuspiegeln, sind das Cloudstrategieteam und das Cloudeinführungsteam aufgefordert, zu jeder Workload im Bewertungs- und Migrationsprozess folgende Fragen zu stellen:
 
 - Wurde die Workload in den letzten sechs Monaten von Endbenutzern verwendet?
 - Ist der Endbenutzer-Datenverkehr konsistent, oder wächst er?
@@ -91,7 +91,7 @@ Um die Komplexität zu reduzieren, sollten Sie einen herkömmlichen Ansatz zur P
 
 Die für die einzelnen Workloads durchgeführten qualitativen Analysen sollten sich nicht auf diese Fragen beschränken, sind jedoch wegweisend für eine Konversation, die das Behandeln der Komplexität eines nicht ausgewogenen Portfolios betrifft.
 
-## <a name="migrate-process-changes"></a>Änderungen am Migrationsprozess
+## <a name="migration-process-changes"></a>Änderungen für den Migrationsprozess
 
 Während der Migration können Aktivitäten zum Herstellen der Ausgewogenheit des Portfolios sich negativ auf die Geschwindigkeit der Migration auswirken (die Geschwindigkeit, mit der Ressourcen migriert werden). Die folgende Anleitung behandelt, warum Aktivitäten in einer bestimmten Weise ausgerichtet werden sollten, um Unterbrechungen der Migrationsaktivitäten zu vermeiden.
 

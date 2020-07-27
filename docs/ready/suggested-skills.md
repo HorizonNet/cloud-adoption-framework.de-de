@@ -1,5 +1,5 @@
 ---
-title: Pfad für die Qualifikationsbereitschaft
+title: Pfad für die Qualifikationsbereitschaft während der Phase „Bereitschaft“ eines Migrationspfads
 description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie Sie die für Ihre Migrationsjourney benötigten Qualifikationen sicherstellen.
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 0e89b1f19770e9a0f4225704287593447dc63305
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: dc08d48310b2b574f66c82d6cf14a19de34ce3a6
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86195155"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478137"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>Pfad für die Qualifikationsbereitschaft während der Phase „Bereitschaft“ eines Migrationspfads
 
@@ -20,7 +20,7 @@ Während der Phase „Bereitschaft“ eines Migrationspfads ist das Ziel die Vor
 
 ## <a name="organizational-readiness-learning-paths"></a>Lernpfade für die organisatorische Bereitschaft
 
-Abhängig von den Motivationen und Geschäftsergebnissen, die mit einer Cloudeinführung verbunden sind, kann es notwendig sein, dass Führungskräfte neue Organisationsstrukturen oder virtuelle Teams (v-Teams) aufbauen, um verschiedene Funktionen zu ermöglichen. Die folgenden Artikel helfen dabei, die Qualifikationen zu entwickeln, die notwendig sind, um diese Teams in Übereinstimmung mit den gewünschten Ergebnissen zu strukturieren:
+Abhängig von den Motivationen und Geschäftsergebnissen, die mit einer Cloudeinführung verbunden sind, kann es notwendig sein, dass Führungskräfte neue Organisationsstrukturen oder virtuelle Teams aufbauen, um verschiedene Funktionen zu ermöglichen. Die folgenden Artikel helfen dabei, die Qualifikationen zu entwickeln, die notwendig sind, um diese Teams in Übereinstimmung mit den gewünschten Ergebnissen zu strukturieren:
 
 - [Erstausrichtung der Organisation](./index.md): Übersicht über die organisatorische Ausrichtung und verschiedene Teamstrukturen zum Erreichen bestimmter Ziele.
 - [Aufschlüsseln von Silos und Machtbereichen](../organize/fiefdoms-silos.md): Grundlegendes zu zwei gängigen organisatorischen Antimustern und Möglichkeiten, das Team zur produktiven Zusammenarbeit zu führen.

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 52cbb07489b3b053a2db19a14b47c53b5a67a79a
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: a21b41583789d25f00d8dfb81ac1e9b8943af004
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193710"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449777"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>Sammeln von Daten durch Migration und Modernisierung vorhandener Datenquellen
 
@@ -20,15 +20,15 @@ Unternehmen verfügen häufig über verschiedene Arten von vorhandenen Daten, di
 
 ## <a name="use-of-this-article"></a>Verwendung dieses Artikels
 
-In diesem Artikel werden eine Reihe von Ansätzen beschrieben, die am Migrationsprozess ausgerichtet sind. Sie können diese Ansätze am besten an der standardmäßigen Migrationstoolkette ausrichten.
+In diesem Artikel werden verschiedene Ansätze nach der Migrationsmethodik beschrieben. Sie können diese Ansätze am besten an der standardmäßigen Migrationstoolkette ausrichten.
 
-Während des Bewertungsprozesses in der Migrationsmethodik bewertet ein Cloudeinführungsteam den aktuellen und den gewünschten zukünftigen Status der migrierten Ressource. Wenn dieser Prozess zu einem Innovationsprojekt gehört, können beide Cloudeinführungsteams diesen Artikel verwenden, um bei solchen Entscheidungen zu helfen.
+Während der Bewertungsphase in der Migrationsmethodik bewertet ein Cloudeinführungsteam den aktuellen und den gewünschten zukünftigen Zustand der migrierten Ressource. Wenn dieser Prozess zu einem Innovationsprojekt gehört, können beide Cloudeinführungsteams diesen Artikel verwenden, um bei solchen Entscheidungen zu helfen.
 
 ## <a name="primary-toolset"></a>Das primäre Toolset
 
 Wenn Sie lokale Daten migrieren und modernisieren, ist die häufigste Wahl des Azure-Tools [Azure Database Migration Service](https://docs.microsoft.com/azure/dms). Dieser Dienst ist Teil der umfassenderen [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview)-Toolkette. Für bestehende SQL Server-Datenquellen kann der [Datenmigrations-Assistent](https://docs.microsoft.com/sql/dma/dma-overview) Ihnen helfen, eine kleine Anzahl von Datenstrukturen zu bewerten und zu migrieren.
 
-Um Oracle- und NoSQL-Migrationen zu unterstützen, können Sie auch den [Database Migration Service](https://docs.microsoft.com/azure/dms) für bestimmte Arten von Quelle-zu-Ziel-Datenbanken verwenden. Beispiele hierfür sind Oracle zu PostgreSQL und MongoDB zu Azure Cosmos DB. Häufiger verwenden Einführungsteams Partnertools oder benutzerdefinierte Skripts, um zu Azure Cosmos DB, Azure HDInsight oder Optionen virtueller Computer auf Basis von IaaS (Infrastructure-as-a-Service) zu migrieren.
+Um Oracle- und NoSQL-Migrationen zu unterstützen, können Sie auch den [Database Migration Service](https://docs.microsoft.com/azure/dms) für bestimmte Arten von Quelle-zu-Ziel-Datenbanken verwenden. Beispiele hierfür sind das Migrieren von Oracle-Datenbanken zu PostgreSQL oder von MongoDB-Datenbanken zu Azure Cosmos DB. Häufiger verwenden Einführungsteams Partnertools oder benutzerdefinierte Skripts, um zu Azure Cosmos DB, Azure HDInsight oder Optionen virtueller Computer auf Basis von IaaS (Infrastructure-as-a-Service) zu migrieren.
 
 ## <a name="considerations-and-guidance"></a>Überlegungen und Anleitungen
 
@@ -55,5 +55,5 @@ Es wird empfohlen, dass Sie Ihre akzeptablen Ausfallzeiten für das Geschäft fe
 | RDS SQL Server | Azure SQL-Datenbank oder Azure SQL Managed Instance | Database Migration Service | Online | [Tutorial](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online) |
 | MySQL | Azure Database for MySQL | Database Migration Service | Online | [Tutorial](https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online) |
 | PostgreSQL | Azure Database for PostgreSQL | Database Migration Service | Online | [Tutorial](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online) |
-| MongoDB | Mongo-API von Azure Cosmos DB | Database Migration Service | Offline | [Tutorial](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db) |
-| MongoDB | Mongo-API von Azure Cosmos DB | Database Migration Service | Online | [Tutorial](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online) |
+| MongoDB | Azure Cosmos DB-API für MongoDB | Database Migration Service | Offline | [Tutorial](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db) |
+| MongoDB | Azure Cosmos DB-API für MongoDB | Database Migration Service | Online | [Tutorial](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online) |

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: 604017caee1225766c2e7bc84b19c09f2a6d4235
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: ad28bd8bc6a8586daa3f272aa5fa4e7be1d22cac
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194407"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450746"
 ---
 <!-- docsTest:disable -->
 <!-- cSpell:ignore rodend subscope ITSM Hashi -->
@@ -318,7 +318,7 @@ Die Automatisierung ist ein Vollzeitjob und wird sehr schnell zu einer der wicht
 
 Wie im Abschnitt zur Automatisierung beschrieben, sollte es das Ziel Ihrer Organisation sein, Ressourcen mithilfe von Vorlagen und Skripts mit Quellcodeverwaltung bereitzustellen und interaktive Konfigurationsaktivitäten in Ihren Umgebungen so weit wie möglich zu reduzieren. Dieser „Infrastruktur als Code“-Ansatz sowie ein strikter DevOps-Prozess für Continuous Deployment kann die Konsistenz sicherstellen und Abweichungen zwischen Ihren Umgebungen minimieren. Nahezu jede Azure-Ressource lässt sich über [Azure Resource Manager und JSON-Vorlagen](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-template-deploy) bereitstellen – in Kombination mit PowerShell oder der plattformübergreifenden Azure CLI und Tools wie Terraform von HashiCorp (mit erstklassigem Support und Integration in die Azure Cloud Shell).
 
-In Artikeln wie [Best Practices für die Verwendung von Azure Resource Manager-Vorlagen](https://blogs.msdn.microsoft.com/mvpawardprogram/2018/05/01/azure-resource-manager) finden Sie eine hervorragende Erörterung von bewährten Methoden und Erfahrungswerten bei der Anwendung von DevOps-Verfahren auf Azure Resource Manager-Vorlagen mit der [Azure DevOps](https://docs.microsoft.com/azure/devops/user-guide/?view=vsts)-Toolkette. Investieren Sie in den Zeit- und Arbeitsaufwand, der notwendig ist, um einen grundlegenden Satz an Vorlagen zu entwickeln, die genau auf die Anforderungen Ihrer Organisation zugeschnitten sind. Entwickeln Sie außerdem Continuous Delivery-Pipelines mit DevOps-Toolketten (z.B. Azure DevOps, Jenkins, Bamboo, TeamCity und Concourse) speziell für Ihre Produktions- und QA-Umgebungen. Auf GitHub finden Sie eine umfangreiche Bibliothek mit [Azure-Schnellstartvorlagen](https://github.com/azure/azure-quickstart-templates), die Sie als Startpunkt für Ihre eigenen Vorlagen verwenden können – so können Sie mit Azure DevOps im Handumdrehen cloudbasierte Bereitstellungspipelines erstellen.
+In Artikeln wie [Best Practices für die Verwendung von Azure Resource Manager-Vorlagen](https://blogs.msdn.microsoft.com/mvpawardprogram/2018/05/01/azure-resource-manager) finden Sie eine hervorragende Erörterung von bewährten Methoden und Erfahrungswerten bei der Anwendung von DevOps-Verfahren auf Azure Resource Manager-Vorlagen mit der [Azure DevOps](https://docs.microsoft.com/azure/devops/user-guide/?view=vsts)-Toolkette. Investieren Sie in den Zeit- und Arbeitsaufwand, der notwendig ist, um einen grundlegenden Satz an Vorlagen zu entwickeln, die genau auf die Anforderungen Ihrer Organisation zugeschnitten sind. Entwickeln Sie außerdem Continuous Delivery-Pipelines mit DevOps-Toolketten (z.B. Azure DevOps, Jenkins, Bamboo, TeamCity und Concourse) speziell für Ihre Produktions- und QA-Umgebungen. Auf GitHub finden Sie eine umfangreiche Bibliothek mit [Azure-Schnellstartvorlagen](https://github.com/azure/azure-quickstart-templates), die Sie als Ausgangspunkt für Ihre eigenen Vorlagen verwenden können – so können Sie mit Azure DevOps im Handumdrehen cloudbasierte Bereitstellungspipelines erstellen.
 
 Beherzigen Sie diese Best Practices: Für Produktionsabonnements oder Ressourcengruppen sollte Ihr Ziel immer sein, RBAC-basierte Sicherheitsfunktionen zu verwenden, um interaktive Benutzer standardmäßig zu deaktivieren. Nutzen Sie zudem auf Dienstprinzipalen basierende automatisierte Continuous Delivery-Pipelines, um sämtliche Ressourcen und den gesamten Anwendungscode bereitzustellen. Administratoren oder Entwickler sollten niemals das Azure-Portal verwenden, um Ressourcen interaktiv zu konfigurieren. DevOps auf diesem Level erfordert gemeinsame Anstrengungen und nutzt alle Konzepte des Azure-Gerüsts. So können Sie für eine konsistente und geschützte Umgebung sorgen, die die Skalierungsanforderungen Ihrer Organisation erfüllt.
 

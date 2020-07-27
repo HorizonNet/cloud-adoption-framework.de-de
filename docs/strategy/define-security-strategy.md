@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 16bfbd8b7502978f2c1cab3d031ad7840de04d45
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 531700838739c416819f5dfd329b1d0f6bac63a5
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194730"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86451018"
 ---
 <!-- cSpell:ignore MarkSimos NIST CISO COVID -->
 
@@ -145,7 +145,7 @@ Die Entwicklung eines resilienten Sicherheitsstatus in der Cloud erfordert mehre
 
 - **Vertrauen ist gut – Kontrolle ist besser:** Bei den Verantwortlichkeiten, die der Cloudanbieter wahrnimmt, sollten Organisationen den Ansatz „Vertrauen ist gut – Kontrolle ist besser“ verfolgen. Organisationen sollten die Sicherheitsmethoden ihrer Cloudanbieter und die von ihnen angebotenen Sicherheitskontrollen auswerten, um sicherzustellen, dass der Cloudanbieter die Sicherheitsanforderungen der Organisation erfüllt.
 
-- **Modernisieren der Infrastruktur- und Anwendungssicherheit:** Bei technischen Elementen, die unter der Kontrolle der Organisation stehen, sollten Sie der Modernisierung der Sicherheitstools und den damit verbundenen Qualifikationen Vorrang einräumen, um Deckungslücken für die Sicherung von Ressourcen in der Cloud zu minimieren. Dies setzt sich aus zwei verschiedenen, sich ergänzenden Maßnahmen zusammen:
+- **Modernisieren der Infrastruktur- und Anwendungssicherheit:** Bei technischen Elementen, die von der Organisation kontrolliert werden, sollten Sie der Modernisierung der Sicherheitstools und den damit verbundenen Qualifikationen Vorrang einräumen, um Deckungslücken für die Sicherung von Ressourcen in der Cloud zu minimieren. Dies setzt sich aus zwei verschiedenen, sich ergänzenden Maßnahmen zusammen:
 
   - **Sicherheit der Infrastruktur:** Organisationen sollten die Cloud nutzen, um ihren Ansatz zum Schutz und zur Überwachung der gemeinsamen Komponenten zu modernisieren, die von vielen Anwendungen wie Betriebssystemen, Netzwerken und der Containerinfrastruktur verwendet werden. Diese Cloudfunktionen können oft auch die Verwaltung von Infrastrukturkomponenten sowohl in IaaS- als auch in lokalen Umgebungen umfassen. Die Optimierung dieser Strategie ist wichtig, da diese Infrastruktur eine Abhängigkeit von den darauf ausgeführten Anwendungen und Daten darstellt, die häufig kritische Geschäftsprozesse ermöglichen und entscheidende Geschäftsdaten speichern.
   - **Anwendungssicherheit:** Organisationen sollten auch die Art und Weise modernisieren, wie sie die eindeutigen Anwendungen und Technologien sichern, die von ihrer oder für ihre Organisation entwickelt werden. Mit der Einführung agiler DevOps-Prozesse, dem zunehmenden Einsatz von Open-Source-Komponenten und der Einführung von Cloud-APIs und Clouddiensten, die Anwendungskomponenten ersetzen oder Anwendungen miteinander verbinden, verändert sich diese Disziplin zusehends.
@@ -156,10 +156,10 @@ Die Entwicklung eines resilienten Sicherheitsstatus in der Cloud erfordert mehre
 
 ### <a name="security-and-trust"></a>Sicherheit und Vertrauenswürdigkeit
 
-Beachten Sie, dass die Verwendung des Wortes „Vertrauenswürdigkeit“ im Bereich der Sicherheit verwirrend sein kann. In dieser Dokumentation wird auf zwei Arten darauf Bezug genommen, die nützliche Anwendungen dieses Konzepts veranschaulichen:
+Beachten Sie, dass die Verwendung des Worts *Vertrauen* im Kontext der Sicherheit verwirrend sein kann. In dieser Dokumentation wird auf zwei Arten darauf Bezug genommen, die nützliche Anwendungen dieses Konzepts veranschaulichen:
 
 - [Zero Trust](https://www.microsoft.com/security/business/zero-trust) ist ein in der Branche gebräuchlicher Begriff für einen strategischen Sicherheitsansatz, der davon ausgeht, dass ein Unternehmens- oder Intranetnetzwerk schädlich ist (nicht vertrauenswürdig) und die Sicherheit entsprechend gestaltet.
-- [Vertrauen ist gut – Kontrolle ist besser](https://en.wikipedia.org/wiki/trust,_but_verify) ist ein Ausdruck, der das Wesen zweier unterschiedlicher Organisationen erfasst, die trotz einiger anderer potenziell divergierender Interessen auf ein gemeinsames Ziel hinarbeiten. Damit werden viele der Nuancen der frühen Phasen der Partnerschaft mit einem kommerziellen Cloudanbieter für Organisationen prägnant erfasst.
+- [Vertrauen ist gut – Kontrolle ist besser](https://wikipedia.org/wiki/trust,_but_verify) ist ein Ausdruck, der das Wesen zweier unterschiedlicher Organisationen erfasst, die trotz einiger anderer potenziell divergierender Interessen auf ein gemeinsames Ziel hinarbeiten. Damit werden viele der Nuancen der frühen Phasen der Partnerschaft mit einem kommerziellen Cloudanbieter für Organisationen prägnant erfasst.
 
 Ein Cloudanbieter und seine Methoden und Prozesse können verantwortlich sein, vertragliche und rechtliche Anforderungen zu erfüllen, und könnten Vertrauen gewinnen oder verlieren. Ein Netzwerk ist eine nicht lebendige Verbindung, die keine Konsequenzen tragen kann, wenn sie von Angreifern ausgenutzt wird (ähnlich wie Sie eine Straße oder ein Auto nicht für Kriminelle zur Verantwortung ziehen können, die diese benutzen).
 

@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 08597bc09225c5444ee7ba2ac5cb867d9678cb64
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: c085c3b197306b4774daa5fcc5d9f0501db30eef
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194026"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479482"
 ---
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
 
@@ -70,7 +70,7 @@ Bei DNS handelt es sich um ein kritisches Entwurfsthema in der gesamten unterneh
 
 - Für Umgebungen, in denen die Namensauflösung in Azure und in der lokalen Umgebung erforderlich ist, verwenden Sie die vorhandene DNS-Infrastruktur (z. B. in Active Directory integriertes DNS). Diese muss auf mindestens zwei Azure-VMs bereitgestellt sein, und Sie müssen DNS-Einstellungen in VNets für die Verwendung dieser DNS-Server konfigurieren.
 
-  - Privates Azure DNS kann weiterhin verwendet werden, wenn die Azure-Zone mit privatem DNS mit den VNets verknüpft ist und DNS-Server als Hybrid-Konfliktlöser mit bedingter Weiterleitung an lokale DNS-Namen (z. B. `onprem.contoso.com`) mit lokalen DNS-Servern verwendet werden. Lokale Server können mit bedingten Weiterleitungen an Konfliktlöser-VMs in Azure für die Zone mit privatem Azure-DNS (z. B. `azure.contoso.com`) konfiguriert werden.
+- Privates Azure DNS kann weiterhin verwendet werden, wenn die Azure-Zone mit privatem DNS mit den VNets verknüpft ist und DNS-Server als Hybrid-Konfliktlöser mit bedingter Weiterleitung an lokale DNS-Namen (z. B. `onprem.contoso.com`) mit lokalen DNS-Servern verwendet werden. Lokale Server können mit bedingten Weiterleitungen an Konfliktlöser-VMs in Azure für die Zone mit privatem Azure-DNS (z. B. `azure.contoso.com`) konfiguriert werden.
 
 - Für besondere Workloads, die ihr eigenes DNS erfordern und dieses bereitstellen (z. B. Red Hat OpenShift), sollte die jeweils bevorzugte DNS-Lösung verwendet werden.
 
@@ -181,7 +181,7 @@ _Abbildung 4: Eine herkömmliche Azure-Netzwerktopologie._
 
 **Überlegungen zum Entwurf:**
 
-- Es gibt verschiedene Netzwerktopologien zum Verbinden von VNets in mehreren Zielzonen: ein großes flaches VNet, mehrere VNets, die über mehrere ExpressRoute-Leitungen oder -Verbindungen verbunden sind, Hub-and-Spoke, Full Mesh und Hybrid.
+- Es können verschiedene Netzwerktopologien von VNets in mehreren Zielzonen verbinden: ein großes flaches VNet, mehrere VNets, die über mehrere ExpressRoute-Leitungen oder -Verbindungen verbunden sind, Hub-and-Spoke, Full Mesh und Hybrid.
 
 - VNets überschreiten keine Abonnementgrenzen, aber die Konnektivität zwischen VNets in verschiedenen Abonnements kann entweder über das Peering virtueller Netzwerke, über eine ExpressRoute-Leitung oder mithilfe von VPN-Gateways erreicht werden.
 
@@ -225,11 +225,11 @@ _Abbildung 4: Eine herkömmliche Azure-Netzwerktopologie._
 
   - Es besteht eine starke Abhängigkeit von zentralisierten NVAs und einem komplexen/präzisen Routing.
 
-- Verwenden Sie für regionale Bereitstellungen hauptsächlich die Hub-Spoke-Topologie, wobei Zielzonen-VNets über das Peering virtueller Netzwerke mit einem zentralen Hub-VNet für die Konnektivität zwischen lokalen Standorten über ExpressRoute verbunden sind. VPN wird für die Zweigstellenkonnektivität verwendet, Spoke-to-Spoke-Konnektivität über NVAs und UDRs sichergestellt und der Schutz für ausgehenden Datenverkehr in das Internet über NVA erfolgt, wie in der Abbildung unten veranschaulicht.
+- Verwenden Sie für regionale Bereitstellungen hauptsächlich die Hub-and-Spoke-Topologie, wobei Zielzonen-VNets über das Peering virtueller Netzwerke mit einem zentralen Hub-VNet für die Konnektivität zwischen lokalen Standorten über ExpressRoute verbunden sind. VPN wird für die Zweigstellenkonnektivität verwendet, Spoke-to-Spoke-Konnektivität über NVAs und UDRs sichergestellt und der Schutz für ausgehenden Datenverkehr in das Internet über NVA erfolgt, wie in der Abbildung unten veranschaulicht.
 
-![Netzwerktopologie und -konnektivität](./media/hub-and-spoke-topology.png)
+![Netzwerktopologie und -konnektivität](./media/hub and spoke-topology.png)
 
-_Abbildung 5: Hub-Spoke-Netzwerktopologie._
+_Abbildung 5: Hub-and-Spoke-Netzwerktopologie._
 
 - Wenn ein hohes Maß an Isolation erforderlich ist, für bestimmte Geschäftseinheiten eine dedizierte ExpressRoute-Bandbreite benötigt wird oder die maximale Anzahl von Verbindungen pro ExpressRoute-Gateway (bis zu vier) erreicht wird, verwenden Sie die verschiedenen VNets, die mit einer Topologie mit mehreren ExpressRoute-Leitungen verbunden sind. Dies wird in der folgenden Abbildung dargestellt:
 
@@ -292,7 +292,7 @@ In diesem Abschnitt wird die Netzwerktopologie erweitert, um empfohlene Modelle 
 
 - Stellen Sie ein zonenredundantes ExpressRoute-Gateway in den unterstützten Azure-Regionen bereit.
 
-- Verwenden Sie ExpressRoute Direct für Szenarien, in denen eine Bandbreite von mehr als 10 GBit/s oder dedizierte 10/100 GBit/s-Ports benötigt werden.
+- Verwenden Sie ExpressRoute Direct für Szenarien, in denen eine Bandbreite von mehr als 10 GBit/s oder dedizierte 10/100 GBit/s-Ports benötigt werden.
 
 - Wird eine geringe Latenzzeit benötigt oder muss der Durchsatz zwischen einem lokalen Standort und Azure mehr als 10 GBit/s betragen, aktivieren Sie FastPath, um das ExpressRoute-Gateway vom Datenpfad zu umgehen.
 
@@ -378,13 +378,14 @@ In diesem Abschnitt werden empfohlene Konnektivitätsmodelle für die eingehende
 
 - Wenn Drittanbieter-NVAs zum Schützen/Filtern von Ost-West- und/oder Süd-Nord-Datenverkehr benötigt werden:
 
-- Stellen Sie für Virtual WAN-Netzwerktopologien die NVAs in einem separaten VNet bereit (z. B. einem NVA-VNet), und verbinden Sie es mit dem regionalen Virtual WAN-Hub und den Zielzonen, die Zugriff auf NVAs benötigen (siehe Beschreibung in diesem [Artikel](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-route-table-portal)). Stellen Sie für Nicht-Virtual WAN-Netzwerktopologien die Drittanbieter-NVAs im VNet des zentralen Hubs bereit.
+   - Stellen Sie für Virtual WAN-Netzwerktopologien die NVAs in einem separaten VNet bereit (z. B. einem NVA-VNet), und verbinden Sie es mit dem regionalen Virtual WAN-Hub und den Zielzonen, die Zugriff auf NVAs benötigen (siehe Beschreibung in diesem [Artikel](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-route-table-portal)).
+   - Stellen Sie für Nicht-Virtual WAN-Netzwerktopologien die Drittanbieter-NVAs im VNet des zentralen Hubs bereit.
 
 - Wenn NVAs von Drittanbietern für eingehende HTTP/S-Verbindungen erforderlich sind, sollten Sie in einem Zielzonen-VNet und zusammen mit den Apps bereitgestellt werden, die sie schützen und für das Internet verfügbar machen.
 
 - Schützen Sie mit [Azure DDoS Protection Standard-Schutzplänen](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) alle öffentlichen Endpunkte, die in Ihren VNets gehostet werden.
 
-- Replizieren Sie keine lokalen DMZ-Konzepte und -Architekturen in Azure, da Sie vergleichbare Sicherheitsfunktionen in Azure wie in Ihrer lokalen Umgebung erhalten können, die Implementierung und Architektur jedoch an die Cloud angepasst werden müssen.
+- Replizieren Sie keine lokalen Umkreisnetzwerkkonzepte und -architekturen in Azure. Ähnliche Sicherheitsfunktionen sind in Azure verfügbar, aber die Implementierung und die Architektur müssen an die Cloud angepasst werden.
 
 ## <a name="planning-for-app-delivery"></a>Planen der Bereitstellung von Apps
 

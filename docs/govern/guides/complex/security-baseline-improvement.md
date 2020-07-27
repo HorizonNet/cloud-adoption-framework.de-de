@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 215653ba60e548061abe68c42fb8c88541414ecf
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 8eab8688ee5afdc37ed4f740f4ebdc2215d4abb6
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86191313"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450219"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Sicherheitsbaseline“
 
@@ -121,7 +121,7 @@ Die neuen bewährten Methoden lassen sich in zwei Kategorien unterteilen: Untern
     4. Wenden Sie die Blaupause `corporate-it-subscription-blueprint` auf die einzelnen regionalen Instanzen an.
     5. Dadurch wird für jede Geschäftseinheit in jeder Region ein Hub eingerichtet. Hinweis: Weitere Kosteneinsparungen könnten durch die gemeinsame Nutzung von Hubs durch die Geschäftseinheiten in jeder Region erzielt werden.
 6. Integrieren von Gruppenrichtlinienobjekten (GPO) über DSC (Desired State Configuration):
-    1. Konvertieren eines GPO in DSC: Das [Projekt zur Microsoft-Baselineverwaltung](https://github.com/microsoft/baselinemanagement) auf GitHub kann diese Aufgabe beschleunigen. Stellen Sie sicher, dass DSC im Repository parallel zu den Resource Manager-Vorlagen gespeichert wird.
+    1. Konvertieren eines GPO in DSC. Das [Projekt zur Microsoft-Baselineverwaltung](https://github.com/microsoft/baselinemanagement) auf GitHub kann diese Aufgabe beschleunigen. Stellen Sie sicher, dass DSC im Repository parallel zu den Resource Manager-Vorlagen gespeichert wird.
     2. Stellen Sie Azure Automation State Configuration für alle Instanzen des Unternehmens-IT-Abonnements bereit. Mit Azure Automation kann DSC auf virtuelle Computer angewendet werden, die in unterstützten Abonnements innerhalb der Verwaltungsgruppe bereitgestellt werden.
     3. In der aktuellen Roadmap ist die Aktivierung benutzerdefinierter Gastkonfigurationsrichtlinien als Ziel festgelegt. Wenn dieses Feature veröffentlicht wird, ist die Verwendung von Azure Automation in dieser bewährten Methode nicht mehr erforderlich.
 
