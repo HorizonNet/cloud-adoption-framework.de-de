@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 81a6ca5f7b642cb2e8723e6861bf61afe8242003
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 5dca866a7d948caa59bba7981fc3569f7a10f47d
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85077033"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479523"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones"></a>Testgesteuerte Entwicklung (TDD) für Zielzonen
 
@@ -28,7 +28,7 @@ Dieser Ansatz kann verwendet werden, um einfache Featureanforderungen während d
 
 „Für die erfolgreiche Durchführung eingerichtet“ ist eine subjektive Aussage. Diese Aussage liefert dem Cloudplattformteam während der Entwicklung der Zielzone oder für den Refactoringaufwand wenig verwertbare Informationen. Diese fehlende Eindeutigkeit kann zu enttäuschten Erwartungen und Sicherheitsrisiken in einer Cloudumgebung führen. Bevor eine Zielzone umgestaltet oder erweitert wird, sollte sich das Cloudplattformteam Klarheit über die „Definition of Done“ für jede Zielzone verschaffen.
 
-Die „Definition of Done“ ist eine einfache Vereinbarung zwischen dem Cloudplattformteam und anderen betroffenen Teams. Diese Vereinbarung skizziert die erwarteten Features mit Mehrwert, die in jeglichem Bereitstellungsaufwand für Zielzonen enthalten sein sollten. Oftmals ist die „Definition of Done“ eine Prüfliste, die mit dem kurzfristigen Cloudeinführungsplan übereinstimmt. In ausgereiften Prozessen werden die erwarteten Features in der Prüfliste jeweils eigene Akzeptanzkriterien aufweisen, um noch mehr Klarheit zu schaffen. Wenn die Features mit Mehrwert jeweils die Akzeptanzkriterien erfüllen, ist die Zielzone ausreichend konfiguriert, um den Erfolg der aktuellen Welle oder die Freisetzung des Einführungsaufwands zu ermöglichen.
+Die „Definition of Done“ ist eine einfache Vereinbarung zwischen dem Cloudplattformteam und anderen betroffenen Teams. Diese Vereinbarung skizziert die erwarteten Features mit Mehrwert, die in jeglichem Bereitstellungsaufwand für Zielzonen enthalten sein sollten. Die Definition of Done ist häufig eine Prüfliste, die auf den kurzfristigen Cloudeinführungsplan ausgerichtet ist. In ausgereiften Prozessen werden die erwarteten Features in der Prüfliste jeweils eigene Akzeptanzkriterien aufweisen, um noch mehr Klarheit zu schaffen. Wenn die Features mit Mehrwert jeweils die Akzeptanzkriterien erfüllen, ist die Zielzone ausreichend konfiguriert, um den Erfolg der aktuellen Welle oder die Freisetzung des Einführungsaufwands zu ermöglichen.
 
 Da die Teams zusätzliche Workloads und Cloudfeatures einführen, werden die „Definition of Done“ sowie die Akzeptanzkriterien zunehmend komplexer.
 
@@ -55,7 +55,7 @@ Für einen anfänglichen Migrationsaufwand kann die „Definition of Done“ zu 
 - Netzwerksegmentierung zur Anpassung an den vorgeschlagenen Netzwerkentwurf.
 - Zugriff auf Compute-, Speicher- und Netzwerkressourcen zur Bewältigung der Workloads, die auf die Ermittlung digitaler Ressourcen ausgerichtet sind.
 - Benennungs- und Kennzeichnungsschema für die einfache Anwendung.
-- Diese Umgebung sollte als _Umkreisnetzwerk (DMZ)_ mit Zugang zum öffentlichen Internet behandelt werden.
+- Diese Umgebung muss als Umkreisnetzwerk mit Zugriff auf das öffentliche Internet behandelt werden.
 - Während des Einführungsaufwands wünscht das Cloudeinführungsteam einen temporären Zugriff auf die Umgebung, um Dienstkonfigurationen zu ändern.
 - Nur zur Kenntnisnahme: Vor der Produktionsfreigabe erfordern diese Workloads eine Integration mit dem Unternehmensidentitätsanbieter, um die fortlaufende Identität und den Zugriff für Vorgangsverwaltungzwecke zu regeln. Zu diesem Zeitpunkt sollte der Zugriff des Cloudeinführungsteams widerrufen werden.
 

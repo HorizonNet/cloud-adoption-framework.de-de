@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 98a772a2c20aba6689ec66593bd15571c74cec33
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: 0ac9256adda2b310592d69685a183b790790228a
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373270"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449012"
 ---
 # <a name="democratize-data"></a>Demokratisieren von Daten
 
@@ -44,9 +44,9 @@ Azure Data Catalog setzt bei den Ermittlungsanforderungen der Datenconsumer an u
 
 #### <a name="action"></a>Aktion
 
-Sie können pro Organisation nur einen Azure Data Catalog verwenden. Wenn für Ihr Unternehmen bereits ein Datenkatalog erstellt wurde, können Sie keine weiteren Kataloge hinzufügen.
+Pro Organisation kann immer nur eine einzelne Azure Data Catalog-Instanz verwendet werden. Wenn für Ihr Unternehmen bereits ein Katalog erstellt wurde, können keine weiteren Kataloge hinzugefügt werden.
 
-Zum Erstellen eines Azure Data Catalog für Ihre Organisation gehen Sie folgendermaßen vor:
+So erstellen Sie einen Katalog für Ihre Organisation:
 
 1. Navigieren Sie zu **Azure Data Catalog**.
 2. Klicken Sie auf **Erstellen**.
@@ -67,12 +67,13 @@ Ein ausgewogenes Gleichgewicht zwischen offener Freigabe von Daten und der Kontr
 
 > [!div class="checklist"]
 >
-> - Erstellen einer Datenfreigabe
-> - Hinzufügen von Datasets zu Ihrer Datenfreigabe
-> - Aktivieren eines Synchronisierungszeitplans für Ihre Datenfreigabe
-> - Hinzufügen von Empfängern zu Ihrer Datenfreigabe
+> - Erstellen Sie eine Datenfreigabe.
+> - Fügen Sie Ihrer Datenfreigabe Datasets hinzu.
+> - Aktivieren Sie einen Synchronisierungszeitplan für Ihre Datenfreigabe.
+> - Fügen Sie Ihrer Datenfreigabe Empfänger hinzu.
 
 ::: zone target="docs"
+
 **Zur [Azure Data Share-Dokumentation](https://docs.microsoft.com/azure/data-share) navigieren**
 
 ::: zone-end

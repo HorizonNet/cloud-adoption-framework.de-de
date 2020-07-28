@@ -9,16 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 08ce97b44442e172a7111c190279ae6e331556d6
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: 7a0ce99165ab62fbf40e36feaf9343f39f984485
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373287"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449036"
 ---
 # <a name="empower-adoption"></a>Unterstützen der Einführung
 
-Sie wissen, dass Innovation für den geschäftlichen Erfolg von entscheidender Bedeutung ist. Sie erreichen Innovation nicht allein durch Einführung neuer Technologien. Sie müssen den Schwerpunkt auf die Unterstützung der Personen legen, die Veränderungen ermöglichen und den neuen Wert schaffen, den Sie anstreben. _Entwickler_ stehen im Mittelpunkt der digitalen Transformation, und damit sie mehr erreichen können, müssen Sie die Entwicklergeschwindigkeit erhöhen. Um die kreative Energie der Entwicklerteams freizusetzen, müssen Sie ihnen helfen, produktiv Lösungen zu erstellen, die globale und sichere Zusammenarbeit zu fördern und Barrieren zu beseitigen, damit sie Innovationen skalieren können.
+Sie wissen, dass Innovation für den geschäftlichen Erfolg von entscheidender Bedeutung ist. Sie erreichen Innovation nicht allein durch Einführung neuer Technologien. Sie müssen den Schwerpunkt auf die Unterstützung der Personen legen, die Veränderungen ermöglichen und den neuen Wert schaffen, den Sie anstreben. Entwickler stehen im Mittelpunkt der digitalen Transformation. Damit sie mehr erreichen können, müssen Sie die Entwicklergeschwindigkeit erhöhen. Um die kreative Energie der Entwicklerteams freizusetzen, müssen Sie ihnen helfen, produktiv Lösungen zu erstellen, die globale und sichere Zusammenarbeit zu fördern und Barrieren zu beseitigen, damit sie Innovationen skalieren können.
 
 ## <a name="generate-value"></a>Generieren von Mehrwert
 
@@ -43,7 +43,7 @@ Um den Erfindungsreichtum von Entwicklern zu fördern, ist eine höhere Entwickl
 ### <a name="build-productively"></a>Produktives Erstellen
 
 Es gibt mehrere Bereiche, in denen Azure Ihnen beim produktiven Erstellen von Lösungen behilflich sein kann:
-  
+
 > [!div class="checklist"]
 >
 > - Sicherstellen, dass Entwickler in ihrem Bereich kompetent werden und bleiben, indem die Erweiterung Ihres Wissens gefördert wird.
@@ -61,7 +61,7 @@ Azure DevOps bietet erstklassige Tools für jeden Entwickler. Mit Azure-Entwickl
 
 ::: zone target="docs"
 
-**Rufen Sie die [Dokumentation zu den ersten Schritten mit Azure DevOps](https://docs.microsoft.com/azure/devops/user-guide/?view=azure-devops) auf.**
+**Zur [Azure DevOps-Dokumentation](https://docs.microsoft.com/azure/devops/user-guide/?view=azure-devops)**
 
 ::: zone-end
 
@@ -96,7 +96,7 @@ GitHub, die größte Entwicklercommunity weltweit, ist das Herzstück der Open-S
 
 ### <a name="open-source-innovation"></a>Open-Source-Innovation
 
-Für Innovationen verwenden viele Entwickler Open-Source-Code. 80 bis 90 Prozent der neuen Anwendungsentwicklung beginnt mit Open-Source-Code. Bei Open-Source geht es nicht nur um Code. Es geht auch darum, dass sich Communitys und Entwickler auf der ganzen Welt vernetzen. Durch die Nutzung eines offenen Entwicklungsmodells mit GitHub können Teams innovativ sein und zusammenarbeiten, Sicherheitsrisiken frühzeitig erkennen und fachliches Talent entdecken. Entwicklungsteams von Unternehmen können GitHub-Repositorys in Microsoft Teams und Azure integrieren. Teams ist die einzige Lösung, die Chats, Sprache und Zusammenarbeit mit der Leistungsfähigkeit von Microsoft Office-Apps, Meetings und Workflows von Geschäftsprozessen auf einer einzigen Benutzeroberfläche vereint. Es ist der Dreh- und Angelpunkt für Teamarbeit und Innovation.
+Für Innovationen verwenden viele Entwickler Open-Source-Code. 80 bis 90 Prozent der neuen Anwendungsentwicklung beginnt mit Open-Source-Code. Bei Open-Source geht es nicht nur um Code. Es geht auch darum, dass sich Communitys und Entwickler auf der ganzen Welt vernetzen. Durch die Nutzung eines offenen Entwicklungsmodells mit GitHub können Teams innovativ sein und zusammenarbeiten, Sicherheitsrisiken frühzeitig erkennen und fachliches Talent entdecken. Entwicklungsteams von Unternehmen können GitHub-Repositorys in Microsoft Teams und Azure integrieren. Teams ist die einzige Lösung, die Chats, Sprache und Zusammenarbeit mit der Leistungsfähigkeit von Microsoft Office-Anwendungen, Meetings und Workflows von Geschäftsprozessen auf einer einzelnen Benutzeroberfläche vereint. Es ist der Dreh- und Angelpunkt für Teamarbeit und Innovation.
 
 ### <a name="learn-more"></a>Weitere Informationen
 
@@ -111,13 +111,15 @@ Unternehmen verwenden GitHub zum Hosten von Quellcode und nutzen Azure Pipelines
 
 ### <a name="characteristics-of-innovative-applications"></a>Merkmale innovativer Anwendungen
 
-Mit Azure können Ihre Entwickler cloudnative Anwendungen mithilfe moderner kanonischer Anwendungsmuster erstellen. Azure unterstützt und bietet alle Bausteine, die ihre Entwicklerteams benötigen, um Anwendungen zu erstellen, die Container, verwaltete Datenbanken, künstliche Intelligenz und serverlose Funktionen verwenden.
+Mit Azure können Ihre Entwickler cloudnative Anwendungen mithilfe moderner kanonischer Anwendungsmuster erstellen. Azure unterstützt und bietet alle Bausteine, die Ihre Entwicklerteams benötigen, um Anwendungen zu erstellen, die Container, verwaltete Datenbanken, KI und serverlose Funktionen nutzen.
 
 ### <a name="scale-innovation"></a>Skalieren von Innovation
 
 Die Förderung von Innovation für Kundenerlebnisse und Branchenanwendungen hat für jeden Unternehmensführer sehr hohe Priorität. Ganz gleich, ob Sie Web-, Mobile-, IoT- oder Mixed-Reality-Erfahrungen schaffen: Innovation ist der Schlüssel für den zukünftigen Erfolg Ihres Unternehmens. Zum Skalieren von Innovationen müssen sich Organisationen auf das Packen und Senden Ihres einzigartigen Geschäftswerts als zusammensetzbare Dienste konzentrieren, damit Partner und Mitarbeiter problemlos und effizient an der gemeinsamen Wertschöpfung teilhaben können.
 
-Azure verfügt über ein einzigartiges Angebot, das Ihnen hilft, Innovationen in Ihrer Organisation zu fördern und zu skalieren. Um zu mehr Innovationen anzuregen, können professionelle Entwickler heute Anwendungen und Bausteine erstellen, die es anderen Experten in Ihrem Unternehmen ermöglichen, Anwendungen auf einer zuverlässigen Grundlage zu erstellen. Mit Azure profitieren sie von Anfang an von der Sicherheit durch ein Team von Experten und der proaktiven Compliance, der Unternehmen, Regierungen und Startups vertrauen.
+<!-- docsTest:ignore "spark and scale" -->
+
+Azure verfügt über ein einzigartiges Angebot, das Ihnen hilft, Innovationen in Ihrer Organisation zu fördern und zu skalieren. Zur Innovationsförderung können professionelle Entwickler heute Anwendungen und Bausteine erstellen, die es anderen Experten in Ihrem Unternehmen ermöglichen, Anwendungen auf einer zuverlässigen Grundlage zu erstellen. Mit Azure profitieren sie von Anfang an von der Sicherheit durch ein Team von Experten und der proaktiven Compliance, der Unternehmen, Regierungen und Startups vertrauen.
 
 ## <a name="liveops-innovation"></a>[LiveOps-Innovation](#tab/LiveOps)
 
@@ -125,7 +127,7 @@ Azure verfügt über ein einzigartiges Angebot, das Ihnen hilft, Innovationen in
 
 Innovative Organisationen setzen auf eine Strategie mit Livevorgängen (LiveOps). LiveOps ist ein Entwurfsprozess für die kontinuierliche Zusammenarbeit mit Kunden. Im Mittelpunkt steht die End-to-End-Begleitung des Kunden. Es handelt sich um einen Ansatz für den Entwurf und die Ausrichtung, der sich darauf konzentriert, Ihren Kunden einen Wert zu bieten mit Schwerpunkt auf Kundenzufriedenheit und Ergebnissen.
 
-LiveOps unterstützt auch die Humanisierung von Daten. Durch einen LiveOps-Ansatz werden Daten handlungsrelevanter, sodass Ihre Organisation Aktionen in Echtzeit ausführen kann, die sich auf Ihre Apps, Ihre Kunden und Ihr Geschäft auswirken. Es ist ein Prozess, der sich auf das Experimentieren konzentriert, wobei der Schwerpunkt auf Iteration und Entwicklung liegt, sodass konsistente und häufige Änderungen unterstützt werden. LiveOps ist eine Methode zum Kombinieren von DevOps mit Ihrem CRM.
+LiveOps unterstützt auch die Humanisierung von Daten. Durch einen LiveOps-Ansatz werden Daten handlungsrelevanter, sodass Ihre Organisation Aktionen in Echtzeit ausführen kann, die sich auf Ihre Anwendungen, Ihre Kunden und Ihr Geschäft auswirken. Es ist ein Prozess, der sich auf das Experimentieren konzentriert, wobei der Schwerpunkt auf Iteration und Entwicklung liegt, sodass konsistente und häufige Änderungen unterstützt werden. LiveOps ist eine Methode zum Kombinieren von DevOps mit Ihrem CRM.
 
 ### <a name="liveops-transition"></a>LiveOps-Übergang
 
@@ -133,7 +135,7 @@ Spieleentwicklung ist ein Beispiel für eine Branche, die schon heute auf LiveOp
 
 ### <a name="azure-playfab"></a>Azure PlayFab
 
-[Azure PlayFab](https://docs.microsoft.com/gaming/playfab/what-is-playfab) ist eine umfassende Back-End-Plattform für Livespiele und ein Beispiel für eine führende LiveOps-Anwendungsplattform. Mit Azure PlayFab können Sie Ihren Code fortlaufend überwachen, Echtzeitanalysen abrufen und Echtzeitupdates veröffentlichen, um Ihre Apps zu optimieren und die Monetarisierung zu steigern. Das Ziel von PlayFab ist es, die intelligente Cloud für Spiele bereitzustellen und Entwickler in die Lage zu versetzen, ihre Spieler besser einzubeziehen, zu binden und zu monetarisieren.
+[Azure PlayFab](https://docs.microsoft.com/gaming/playfab/what-is-playfab) ist eine umfassende Back-End-Plattform für Livespiele und ein Beispiel für eine führende LiveOps-Anwendungsplattform. Mit Azure PlayFab können Sie Ihren Code fortlaufend überwachen, Echtzeitanalysen nutzen und Echtzeitupdates veröffentlichen, um Ihre Anwendungen zu optimieren und die Monetarisierung zu steigern. Das Ziel von PlayFab ist es, die intelligente Cloud für Spiele bereitzustellen und Entwickler in die Lage zu versetzen, ihre Spieler besser einzubeziehen, zu binden und zu monetarisieren.
 
 PlayFab bietet differenzierte, margenstärkere LiveOps-Tools und -Dienste, um die Rentabilität zu steigern und die Lebensdauer der Spiele zu verlängern. PlayFab ist vollständig geräte- und plattformunabhängig und kann leicht in soziale Netzwerke von Identitätsanbietern wie Facebook oder Steam, Store-Plattformen zum Orchestrieren des Handels und Geräteplattformen wie iOS, Android, Xbox und PlayStation integriert werden. Der Azure-Datenbestand ermöglicht es PlayFab, intelligente Dienste bereitzustellen, die unseren Kunden helfen, bessere Spiele zu erstellen und intelligentere Entscheidungen zu treffen, Spieler zu gewinnen und zu halten und schneller zu lernen, indem mehr Experimente durchgeführt und schneller wiederholt werden.
 

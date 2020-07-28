@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c015b54a10b7b1ef76969148dbea263d37353562
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: f2c90b709495196a1d81459c6a09dc887efc7d62
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076138"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479584"
 ---
 <!-- cSpell:ignore SIEM -->
 

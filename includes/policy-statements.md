@@ -14,7 +14,7 @@ Sicherheitsbaseline:
 
 - Jede in der Cloud bereitgestellte Ressource muss eine genehmigte Datenklassifizierung haben.
 - Keine Ressourcen, die mit einer geschützten Datenebene identifiziert werden, können in der Cloud bereitgestellt werden, solange nicht genügend Anforderungen für Sicherheit und Governance genehmigt und implementiert werden können.
-- Solange keine minimalen Netzwerksicherheitsanforderungen überprüft und gesteuert werden können, werden Cloudumgebungen als demilitarisierte Zone betrachtet und sollten ähnliche Anforderungen an die Verbindung mit anderen Rechenzentren oder internen Netzwerken erfüllen.
+- Solange keine minimalen Netzwerksicherheitsanforderungen überprüft und gesteuert werden können, werden Cloudumgebungen als Umkreisnetzwerk betrachtet und sollten ähnliche Anforderungen an die Verbindung mit anderen Rechenzentren oder internen Netzwerken erfüllen.
 
 Ressourcenkonsistenz:
 
@@ -34,7 +34,7 @@ Beschleunigung der Bereitstellung:
 
 ## <a name="processes"></a>Prozesse
 
-Für die kontinuierliche Überwachung und Durchsetzung dieser Governancerichtlinien wurde kein Budget zugeordnet. Aus diesem Grund stehen dem Cloudgovernanceteam einige Ad-hoc-Methoden zur Verfügung, um die Einhaltung von Richtlinienanweisungen zu überwachen.
+Für die kontinuierliche Überwachung und Durchsetzung dieser Governancerichtlinien wurde kein Budget zugeordnet. Aus diesem Grund stehen dem Cloudgovernanceteam improvisierte Methoden zur Verfügung, um die Einhaltung von Richtlinienanweisungen zu überwachen.
 
 - **Bildung:** Das Cloudgovernanceteam investiert Zeit in die Schulung der Cloudeinführungsteams in den Governanceleitfäden, die diese Richtlinien unterstützen.
 - **Bereitstellungsprüfungen:** Vor der Bereitstellung einer Ressource überprüft das Cloudgovernanceteam den Governanceleitfaden mit den Cloudeinführungsteams.

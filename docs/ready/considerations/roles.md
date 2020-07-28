@@ -1,6 +1,6 @@
 ---
 title: Empfohlene rollenbasierte Zugriffssteuerung
-description: Es wird beschrieben, wie Sie die Aufgaben innerhalb Ihres Teams trennen und die rollenbasierte Zugriffssteuerung nutzen, damit Benutzer und Gruppen ihre Aufgaben erfüllen können.
+description: Hier erfahren Sie, wie Sie die Aufgaben innerhalb Ihres Teams trennen und die rollenbasierte Zugriffssteuerung nutzen, damit Benutzer und Gruppen ihre Aufgaben erfüllen können.
 author: rotycenh
 ms.author: brblanch
 ms.date: 11/28/2018
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: BrianBlanchard
 ms.custom: virtual-network
-ms.openlocfilehash: 5527ca51f08b3eaf6a5bb6d022ad5a8696f502b6
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: e88785c98dcf9d5b20ce7d28682541d6c4f9b61e
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076105"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479550"
 ---
 # <a name="role-based-access-control"></a>Rollenbasierte Zugriffssteuerung
 
@@ -78,7 +78,7 @@ Die folgende Tabelle zeigt ein allgemeines Muster für die Aufteilung des IT-Zus
 | Sicherheitsvorgänge | SecOps | Bietet eine allgemeine Sicherheitsübersicht. <br> Festlegung und Durchsetzung von Sicherheitsrichtlinien wie Verschlüsselung im Ruhezustand. <br><br> Verwaltet Verschlüsselungsschlüssel. <br><br> Verwaltet Firewallregeln. |
 | Netzwerkvorgänge | NetOps | Verwaltet die Netzwerkkonfiguration und den Betrieb in virtuellen Netzwerken wie Routen und Peerings. |
 | Systembetrieb | SysOps | Gibt die Optionen für die Compute- und Speicherinfrastruktur an und verwaltet die bereitgestellten Ressourcen. |
-| Entwicklung, Test und Betrieb | DevOps | Erstellt Workloadfunktionen und -anwendungen und stellt sie bereit. <br><br> Betreibt Funktionen und Anwendungen, um Vereinbarungen zum Servicelevel (Service Level Agreements, SLAs) und andere Qualitätsstandards einzuhalten. |
+| Entwicklung, Test und Betrieb | DevOps | Erstellt Workloadfunktionen und -anwendungen und stellt sie bereit. <br><br> Betreibt Features und Anwendungen, um Vereinbarungen zum Servicelevel und andere Qualitätsstandards einzuhalten. |
 
 <!-- markdownlint-enable MD033 -->
 

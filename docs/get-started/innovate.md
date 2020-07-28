@@ -3,16 +3,16 @@ title: 'Erste Schritte: Erstellen neuer Produkte und Dienste in der Cloud'
 description: Hier finden Sie Informationen zur Innovationsmethodik – einem Ansatz, an dem Sie sich bei der Entwicklung neuer Cloudprodukte und -dienste orientieren können.
 author: JanetCThomas
 ms.author: janet
-ms.date: 05/15/2020
+ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 31cace97b3c34b5b32ad2e92fbb9f783cd19d89f
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 9530b4edb5eee0838a9bdbffe0b5ed39675bdc10
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076558"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450525"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>Erste Schritte: Beschleunigen neuer Produkt- und Dienstinnovationen in der Cloud
 
@@ -21,6 +21,12 @@ Die Erstellung neuer Produkte und Dienste in der Cloud erfordert eine andere Her
 Dieser Leitfaden basiert auf den Abschnitten des Cloud Adoption Framework, die in der folgenden Abbildung hervorgehoben sind. Innovationen sind zwar weniger berechenbar als eine Standardmigration, passen aber immer noch in den Kontext des weiter gefassten Cloudeinführungsplans. Dieser Leitfaden kann Ihrem Unternehmen dabei helfen, die für Innovationsbestrebungen nötige Unterstützung zu bieten und die Struktur bereitzustellen, die zum Aufbau eines ausgeglichenen Portfolios im Rahmen der Cloudeinführung erforderlich ist.
 
 ![Erste Schritte zum Beschleunigen von Innovationen in der Cloud](../_images/get-started/innovation-map.png)
+
+## <a name="preparation"></a>Vorbereitung
+
+Das KI-Reifegradmodell unterstützt Sie bei der Entwicklung Ihrer Innovationsstrategie. Hierbei handelt es sich um ein kostenloses Tool, das Organisationen dabei hilft, zu bewerten, ob sie für die Erstellung und den Betrieb KI-basierter Systeme bereit sind. Es gibt vier Reifegrade: grundlegend, annähernd, ambitioniert und ausgereift. Jeder dieser Reifegrade umfasst gewisse Kriterien, auf deren Grundlage sich ermitteln lässt, ob Ihre Organisation in der Lage ist, bestimmte Arten von KI-Lösungen einzuführen, die damit verbundenen Risiken zu bewältigen und entsprechende Strategien zu implementieren. Die Bewertung dauert zwischen fünf und zehn Minuten und ermittelt die Bereitschaft Ihrer Organisation in vier Kategorien: Strategie, Kultur, Organisationsmerkmale und Fähigkeiten. Durch die Ermittlung Ihrer Fähigkeiten können wir ein Ergebnis für Ihre Organisation berechnen und eine Schätzung der KI-Innovationsreife in Form einer Kurve abgeben.
+
+Verwenden Sie das [KI-Reifegradmodell](https://aiready.microsoft.com), um die KI-Reife Ihrer Organisation für die Erstellung KI-basierter Systeme zu bewerten. Nach Abschluss der Bewertung erhalten Sie ein Ergebnis mit Ihrer geschätzten KI-Innovationsreife.
 
 ## <a name="step-1-document-the-business-strategy"></a>Schritt 1: Dokumentieren der Geschäftsstrategie
 
@@ -43,7 +49,7 @@ Erstellen Sie zur Vermeidung gängiger Hindernisse eine klare und prägnante Ges
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudstrategieteam | <li> Cloudeinführungsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
+| <li> Cloudstrategieteam | <li> Cloudeinführungsteam <li> Cloudkompetenzzentrum (CCoE) oder zentrales IT-Team |
 
 ## <a name="step-2-evaluate-the-business-justification"></a>Schritt 2: Bewerten der geschäftlichen Begründung
 
@@ -162,7 +168,7 @@ Definieren Sie den Plan für langfristige operative Zuständigkeiten für die ge
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudbetriebsteam <li> Cloudeinführungsteam | <li> Cloudstrategieteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
+| <li> Cloudbetriebsteam <li> Cloudeinführungsteam | <li> Cloudstrategieteam <li> Cloudkompetenzzentrum (CCoE) oder zentrales IT-Team |
 
 ## <a name="step-7-deploy-an-aligned-landing-zone"></a>Schritt 7: Bereitstellen einer ausgerichteten Zielzone
 
@@ -208,6 +214,18 @@ Die Innovationsmethodik bietet Informationen zu gängigen Tools und Produktverwa
 - [Azure-Innovationsleitfaden](../innovate/innovation-guide/index.md): Verwenden Sie den Azure-Innovationsleitfaden, um die Bereitstellung innovativer Lösungen zu beschleunigen. Machen Sie sich hierzu mit den Tools und Prozessen vertraut, die Ihnen dabei helfen, ein Minimum Viable Product (MVP) zu erstellen.
 - [Bewährte Methoden für Innovationen](../innovate/best-practices/index.md): Kombinieren von Azure-Diensten, um eine Toolkette für digitale Innovationen zu erstellen.
 - [Feedbackschleifen](../innovate/considerations/adoption.md): Entwickeln Sie verbesserte Feedbackschleifen, um Ihre Kunden schnell mit beeindruckenden Innovationen zu versorgen.
+
+## <a name="step-9-assess-the-innovation-maturity-of-your-organization"></a>Schritt 9: Bewerten der Innovationsreife Ihrer Organisation
+
+Das KI-Reifegradmodell unterstützt Sie bei der Entwicklung Ihrer Innovationsstrategie. Hierbei handelt es sich um ein kostenloses Tool, das Organisationen dabei hilft, zu bewerten, ob sie für die Erstellung und den Betrieb KI-basierter Systeme bereit sind. Es gibt vier Reifegrade: grundlegend, annähernd, ambitioniert und ausgereift. Jeder dieser Reifegrade umfasst gewisse Kriterien, auf deren Grundlage sich ermitteln lässt, ob Ihre Organisation in der Lage ist, bestimmte Arten von KI-Lösungen einzuführen. Des Weiteren werden entsprechende Risiken und Strategien identifiziert. Die Bewertung dauert zwischen fünf und zehn Minuten und ermittelt die Bereitschaft Ihrer Organisation in vier Kategorien: Strategie, Kultur, Organisationsmerkmale und Fähigkeiten.  Durch diese Ermittlung können wir ein Ergebnis für Ihre Organisation berechnen und eine Schätzung der KI-Innovationsreife in Form einer Kurve abgeben.
+
+**Ziele:**
+
+- Verwenden Sie das [KI-Reifegradmodell](https://aiready.microsoft.com), um die KI-Reife Ihrer Organisation für die Erstellung KI-basierter Systeme zu bewerten.
+
+**Hinweis zur Erreichung der Ziele:**
+
+- Nach Abschluss der Bewertung wird von dem Tool ein Ergebnis mit Ihrer geschätzten KI-Innovationsreife ausgegeben.
 
 <!-- markdownlint-disable MD033 -->
 <br>

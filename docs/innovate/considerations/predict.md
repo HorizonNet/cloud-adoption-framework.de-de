@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f3b3987c016a5fbf76355a27eec720c5620cdc34
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 01d12f284d90c1d483c5b5044aafd683f2a674b6
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993762"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449131"
 ---
 # <a name="predict-and-influence"></a>Vorhersagen und Beeinflussen
 
@@ -28,17 +28,17 @@ Eine Vielzahl von Anwendungen und Umgebungserfahrungen nutzen Daten, um Vorhersa
 
 - **E-Commerce:** Basierend auf dem, was andere ähnliche Verbraucher gekauft haben, schlägt eine E-Commerce-Website Produkte vor, die sich der Kunde ggf. in seinen Warenkorb legen sollte.
 - **Angepasste Realität:** Das Internet der Dinge (IoT) bietet fortgeschrittenere Instanzen der prädiktiven Funktionalität. Ein Gerät an einer Montagelinie erkennt z. B. einen Anstieg der Temperatur einer Maschine. Ein cloudbasiertes prädiktives Modell bestimmt, wie reagiert werden soll. Gestützt auf diese Vorhersage verlangsamt ein anderes Gerät die Montagelinie, damit die Maschine abkühlen kann.
-- **Konsumgüter:** Mobiltelefone, intelligente Häuser und sogar Ihr Auto verwenden alle prädiktive Fähigkeiten, um das Benutzerverhalten basierend auf Faktoren wie Standort oder Tageszeit vorzuschlagen. Wenn eine Vorhersage und die Ausgangshypothese ausgerichtet sind, führt die Vorhersage zu Maßnahmen. In einem sehr ausgereiften Stadium kann diese Ausrichtung Produkte wie selbstfahrende Autos zur Realität werden lassen.
+- **Konsumgüter:** Mobiltelefone, Smart Home-Lösungen und sogar Autos verwenden Vorhersagefunktionen, um das Benutzerverhalten auf der Grundlage von Faktoren wie Standort oder Tageszeit vorherzusagen. Wenn eine Vorhersage und die Ausgangshypothese ausgerichtet sind, führt die Vorhersage zu Maßnahmen. In einem sehr ausgereiften Stadium kann diese Ausrichtung Produkte wie selbstfahrende Autos zur Realität werden lassen.
 
 ## <a name="develop-predictive-capabilities"></a>Entwickeln prädiktiver Fähigkeiten
 
 Lösungen, die durchgängig genaue prädiktive Fähigkeiten bieten, weisen in der Regel fünf Kernmerkmale auf:
 
-    - Daten
-    - Einblicke
-    - Muster
-    - Vorhersagen (Predictions)
-    - Interaktionen
+- Daten
+- Einblicke
+- Muster
+- Vorhersagen (Predictions)
+- Interaktionen
 
 Alle Aspekte sind erforderlich, um prädiktive Fähigkeiten zu entwickeln. Wie alle großen Innovationen erfordert die Entwicklung prädiktiver Fähigkeiten eine [Verpflichtung zur Iteration](./index.md#commitment-to-iteration). Bei jeder Iteration reifen ein oder mehrere der folgenden Merkmale, um immer komplexere Kundenhypothesen für gültig zu erklären.
 
@@ -49,7 +49,7 @@ Alle Aspekte sind erforderlich, um prädiktive Fähigkeiten zu entwickeln. Wie a
 
 ## <a name="data"></a>Daten
 
-Die Daten sind das grundlegendste der zuvor genannten Merkmale. Jede der Fachrichtungen für die Entwicklung digitaler Erfindungen erzeugt Daten. Diese Daten tragen natürlich zur Entwicklung von Vorhersagen bei. Weitere Informationen zu Möglichkeiten, Daten in eine prädiktive Lösung einzubringen, finden Sie unter [Demokratisierung von Daten](./data.md) und [Interaktion mit Geräten](./devices.md).
+Die Daten sind das grundlegendste der zuvor genannten Merkmale. Jede der Fachrichtungen für die Entwicklung digitaler Erfindungen erzeugt Daten. Diese Daten tragen natürlich zur Entwicklung von Vorhersagen bei. Weitere Informationen zu Möglichkeiten, Daten in eine Vorhersagelösung einzubringen, finden Sie unter [Demokratisierung von Daten](./data.md) und [Interaktion mit Geräten](./devices.md).
 
 Zur Bereitstellung prädiktiver Fähigkeiten können eine Reihe von Datenquellen genutzt werden:
 
@@ -65,7 +65,7 @@ Ausgehend von Erkenntnissen werden beim maschinellen Lernen prädiktive Modelle 
 
 [Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml) ist der cloudbasierte Dienst in Azure zum Entwickeln und Trainieren von Modellen, die auf Ihren Daten basieren. Dieses Tool bietet auch einen [Workflow zur Beschleunigung der Entwicklung von Algorithmen für maschinelles Lernen](https://docs.microsoft.com/azure/machine-learning/service/concept-azure-machine-learning-architecture). Mit diesem Workflow können Algorithmen über eine grafische Oberfläche oder in Python entwickelt werden.
 
-Für leistungsfähigere Machine Learning-Modelle bieten [ML-Dienste in Azure HDInsight](https://docs.microsoft.com/azure/hdinsight/r-server/r-server-overview) eine Plattform für maschinelles Lernen, die auf Apache Hadoop-Clustern basiert. Dieser Ansatz ermöglicht eine präzisere Steuerung der zugrunde liegenden Cluster, Speicher und Computeknoten. Azure HDInsight bietet auch eine noch umfassendere Integration durch Tools wie ScaleR und SparkR, um Vorhersagen auf der Grundlage integrierter und erfasster Daten zu erstellen und sogar mit Daten aus einem Stream zu arbeiten. Die [Lösung zur Vorhersage von Flugverspätungen](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-r-scaler-sparkr) demonstriert jede dieser erweiterten Möglichkeiten, wenn sie zur Vorhersage von Flugverspätungen basierend auf Wetterbedingungen verwendet wird. Die HDInsight-Lösung bietet Unternehmen auch Steuerungsmechanismen für Datensicherheit, Netzwerkzugriff und Leistungsüberwachung, um Muster zu operationalisieren.
+Für stabilere Machine Learning-Modelle bieten [ML-Dienste in Azure HDInsight](https://docs.microsoft.com/azure/hdinsight/r-server/r-server-overview) eine Plattform für maschinelles Lernen, die auf Apache Hadoop-Clustern basiert. Dieser Ansatz ermöglicht eine präzisere Steuerung der zugrunde liegenden Cluster, Speicher und Computeknoten. Azure HDInsight bietet auch eine noch umfassendere Integration durch Tools wie ScaleR und SparkR, um Vorhersagen auf der Grundlage integrierter und erfasster Daten zu erstellen und sogar mit Daten aus einem Stream zu arbeiten. Die [Lösung zur Vorhersage von Flugverspätungen](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-r-scaler-sparkr) demonstriert jede dieser erweiterten Möglichkeiten, wenn sie zur Vorhersage von Flugverspätungen basierend auf Wetterbedingungen verwendet wird. Die HDInsight-Lösung bietet Unternehmen auch Steuerungsmechanismen für Datensicherheit, Netzwerkzugriff und Leistungsüberwachung, um Muster zu operationalisieren.
 
 ## <a name="predictions"></a>Vorhersagen (Predictions)
 
@@ -85,7 +85,7 @@ Erfahren Sie mehr darüber, wie Sie mit einer [Lösung mit angepasster Realität
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nachdem Sie sich mit den [Erfindungsdisziplinen](./invention.md) und der [innovativen Methodik](./index.md) vertraut gemacht haben, sind Sie jetzt bereit zu erfahren, wie Sie [Lösungen mit Blick auf die Kundenanforderungen entwickeln](./build.md).
+Nachdem Sie sich mit den [Erfindungsdisziplinen](./invention.md) und der [innovativen Methodik](./index.md) vertraut gemacht haben, können Sie sich als Nächstes der [Entwicklung von Lösungen mit Blick auf die Kundenanforderungen](./build.md) widmen.
 
 > [!div class="nextstepaction"]
 > [Entwickeln von Lösungen mit Blick auf die Kundenanforderungen](./build.md)

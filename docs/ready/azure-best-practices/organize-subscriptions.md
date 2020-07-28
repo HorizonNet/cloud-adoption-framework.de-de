@@ -7,20 +7,20 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 0e9115387360b46015114d6069fcedb9afb43d58
-ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
+ms.openlocfilehash: cf0c2477375d6d59f6a0eefc7711f51c2512f99e
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84799652"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479890"
 ---
 # <a name="organize-and-manage-multiple-azure-subscriptions"></a>Organisieren und Verwalten mehrerer Azure-Abonnements
 
-Wenn Sie nur über wenige Abonnements verfügen, ist deren unabhängige Verwaltung relativ einfach. Sobald die Anzahl Ihrer Abonnements zunimmt, sollten Sie jedoch zur Verwaltung der Abonnements und Ressourcen eine Verwaltungsgruppenhierarchie erstellen.
+Falls Sie nur über einige wenige Abonnements verfügen, ist deren unabhängige Verwaltung relativ einfach. Bei einer größeren Menge von Abonnements sollten Sie zur Verwaltung Ihrer Abonnements und Ressourcen allerdings eine Verwaltungsgruppenhierarchie erstellen.
 
 ## <a name="azure-management-groups"></a>Azure-Verwaltungsgruppen
 
-Azure-Verwaltungsgruppen ermöglichen eine effiziente Verwaltung von Zugriff, Richtlinien und Compliance für die Abonnements einer Organisation. Jede Verwaltungsgruppe ist ein Container für ein oder mehrere Abonnements.
+Azure-Verwaltungsgruppen unterstützen Sie bei der effizienten Verwaltung des Zugriffs, der Richtlinien und der Compliance für Ihre Abonnements. Jede Verwaltungsgruppe ist ein Container für ein oder mehrere Abonnements.
 
 Verwaltungsgruppen werden in einer einzigen Hierarchie angeordnet. Sie definieren diese Hierarchie in Ihrem Azure AD-Mandanten, um sie an der Struktur und den Anforderungen Ihrer Organisation auszurichten. Die oberste Ebene wird als _Stammverwaltungsgruppe_ bezeichnet. Sie können bis zu sechs Ebenen von Verwaltungsgruppen in der Hierarchie definieren. Jedes Abonnement gehört nur zu einer einzigen Verwaltungsgruppe.
 
@@ -34,11 +34,12 @@ Der Verwaltungsbereich von Azure umfasst vier Ebenen:
 Alle Zugriffsrichtlinien oder anderen Richtlinien, die auf einer bestimmten Hierarchieebene angewendet werden, werden von den darunter liegenden Ebenen geerbt. Ein Ressourcen- oder Abonnementbesitzer kann eine geerbte Richtlinie nicht ändern. Diese Einschränkung trägt zur Verbesserung der Governance bei.
 
 > [!NOTE]
-> Eine Tagvererbung wird derzeit noch nicht unterstützt, aber in Kürze verfügbar sein.
+> Tagvererbung wird zwar noch nicht unterstützt, aber demnächst zur Verfügung gestellt.
 
 Mit diesem Vererbungsmodell können Sie die Abonnements in Ihrer Hierarchie so anordnen, dass jedes Abonnement die entsprechenden Richtlinien und Sicherheitsvorgaben erfüllt.
 
-![Vier Bereichsebenen zum Organisieren Ihrer Azure-Ressourcen](../../ready/azure-setup-guide/media/organize-resources/scope-levels.png)
+![Die vier Bereichsebenen für die Strukturierung Ihrer Azure-Ressourcen](../../ready/azure-setup-guide/media/organize-resources/scope-levels.png)
+_Abbildung 1: Die vier Bereichsebenen für die Strukturierung Ihrer Azure-Ressourcen_
 
 Jede Zugriffs- oder Richtlinienzuweisung in der Stammverwaltungsgruppe gilt für alle Ressourcen im Verzeichnis. Überlegen Sie sorgfältig, welche Elemente Sie in diesem Bereich definieren. Fügen Sie nur die Zuordnungen hinzu, über die Sie verfügen müssen.
 
@@ -51,13 +52,15 @@ Wenn Sie ein Abonnement in eine vorhandene Verwaltungsgruppe verschieben, erbt e
 Wenn Sie davon ausgehen, dass Ihre Azure-Umgebung wächst, sollten Sie jetzt Verwaltungsgruppen für Produktion und Nichtproduktion erstellen und geeignete Richtlinien und Zugriffssteuerungen auf der Verwaltungsgruppenebene anwenden. Neue Abonnements erben die entsprechenden Kontrollen, wenn Sie den Verwaltungsgruppen hinzugefügt werden.
 
 ![Beispiel für eine Verwaltungsgruppenhierarchie](../../_images/ready/management-group-hierarchy-v2.png)
+_Abbildung 2: Beispiel für eine Verwaltungsgruppenhierarchie_
 
 ## <a name="example-use-cases"></a>Beispiele für Anwendungsfälle
 
 Im Anschluss folgen einige einfache Beispiele für die Trennung verschiedener Workloads mithilfe von Verwaltungsgruppen:
 
-- **Produktions- und Nichtproduktionsworkloads:** Verwenden Sie Verwaltungsgruppen, um die Verwaltung verschiedener Rollen und Richtlinien für Produktions- und Nichtproduktionsabonnements zu vereinfachen. Beispielsweise können Nichtproduktionsabonnements Entwicklern Zugriff für Mitwirkende gewähren, während sie in der Produktion nur Lesezugriff haben.
-- **Interne Dienste und externe Dienste:** Unternehmen haben oft unterschiedliche Anforderungen, Richtlinien und Rollen für interne Dienste und externe kundenorientierte Dienste.
+**Produktions- und Nichtproduktionsworkloads:** Verwenden Sie Verwaltungsgruppen, um die Verwaltung verschiedener Rollen und Richtlinien für Produktions- und Nichtproduktionsabonnements zu vereinfachen. So können Entwickler beispielsweise in produktionsfremden Abonnements über Zugriff für Mitwirkende und in Produktionsabonnements lediglich über Lesezugriff verfügen.
+
+**Interne Dienste und externe Dienste:** Unternehmen haben oft unterschiedliche Anforderungen, Richtlinien und Rollen für interne Dienste und externe kundenorientierte Dienste.
 
 ## <a name="related-resources"></a>Zugehörige Ressourcen
 

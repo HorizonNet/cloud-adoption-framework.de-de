@@ -21,11 +21,11 @@ Ein softwaredefiniertes Netzwerk ist ein wichtiger Anfangsaspekt der Sicherheits
 
 Da keine Anforderungen bestehen, geht die IT-Sicherheit auf Nummer sicher und verlangt ein [Cloud-DMZ](~/decision-guides/software-defined-network/cloud-dmz.md)-Muster. Das bedeutet, dass die Governance der Azure-Bereitstellungen selbst sehr gering sein wird.
 
-- Azure-Abonnements können per VPN eine Verbindung mit einem vorhandenen Rechenzentrum herstellen, müssen aber alle vorhandenen lokalen Richtlinien der IT-Governance in Bezug auf die Verbindung einer demilitarisierte Zone mit geschützten Ressourcen befolgen. Eine Implementierungsanleitung in Bezug auf die VPN-Konnektivität finden Sie unter [VPN-Referenzarchitektur](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn).
+- Azure-Abonnements können eine VPN-Verbindung mit einem vorhandenen Rechenzentrum herstellen, müssen aber alle vorhandenen lokalen IT-Governancerichtlinien in Bezug auf die Verbindung eines Umkreisnetzwerks mit geschützten Ressourcen einhalten. Einen Implementierungsleitfaden für VPN-Konnektivität finden Sie unter [Über ein VPN-Gateway mit Azure verbundenes lokales Netzwerk](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn).
 - Entscheidungen in Bezug auf das Subnetz, die Firewall und das Routing werden derzeit auf die einzelnen Anwendungs-/Workloadleads verschoben.
 - Vor der Freigabe geschützter Daten oder unternehmenskritischer Workloads sind zusätzliche Analysen erforderlich.
 
-Bei diesem Muster können Cloudnetzwerke eine Verbindung mit lokalen Ressourcen nur über ein bestehendes VPN herstellen, das mit Azure kompatibel ist. Der Datenverkehr über diese Verbindung wird wie jeder andere Datenverkehr aus einer demilitarisierten Zone behandelt. Für das lokale Edgegerät sind möglicherweise weitere Überlegungen erforderlich, um den Datenverkehr von Azure sicher zu verarbeiten.
+Bei diesem Muster können Cloudnetzwerke eine Verbindung mit lokalen Ressourcen nur über ein bestehendes VPN herstellen, das mit Azure kompatibel ist. Der Datenverkehr über diese Verbindung wird wie jeder andere Datenverkehr aus einem Umkreisnetzwerk behandelt. Für das lokale Edgegerät sind möglicherweise weitere Überlegungen erforderlich, um den Datenverkehr von Azure sicher zu verarbeiten.
 
 Das Cloudgovernanceteam hat Mitglieder der Netzwerk- und IT-Sicherheitsteams proaktiv zu regelmäßigen Besprechungen eingeladen, um den Netzwerkanforderungen und Risiken einen Schritt voraus zu bleiben.
 

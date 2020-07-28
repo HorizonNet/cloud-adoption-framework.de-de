@@ -1,5 +1,5 @@
 ---
-title: Ermöglichen des Kundenerfolgs mit einem soliden Betriebsmodell
+title: Ermöglichen des Kundenerfolgs mithilfe eines solides Betriebsmodells und einer entsprechenden Organisationsausrichtung
 description: Verwenden Sie das kostenlose Self-Service-Framework für die Cloudeinführung (Cloud Adoption Framework) und andere Tools, die Sie bei der Entscheidungsfindung im Zusammenhang mit der Cloudeinführung unterstützen und dazu beitragen, den Erfolg von Kunden sicherzustellen.
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,16 +7,23 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 8eaded2f79ce16e2dfa0bc5730093abfd2e5ee32
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: ac6df9dafb43af14f41d94c8dde4416aceccf231
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786091"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450542"
 ---
-# <a name="enable-customer-success-with-a-sound-operating-model"></a>Ermöglichen des Kundenerfolgs mit einem soliden Betriebsmodell
+# <a name="enable-customer-success-with-a-sound-operating-model-and-organizational-alignment"></a>Ermöglichen des Kundenerfolgs mithilfe eines solides Betriebsmodells und einer entsprechenden Organisationsausrichtung
 
-Oftmals hat der Kundenerfolg bei der Cloudeinführung wenig mit technischen Fähigkeiten oder einführungsbezogenen Projekten zu tun. Ihr Betriebsmodell bietet Möglichkeiten, um die Einführung zu ermöglichen, oder möglicherweise Hindernisse, die die Cloudeinführung verlangsamen können.
+Der Kundenerfolg bei der Cloudeinführung hat häufig wenig mit technischen Fähigkeiten oder einführungsbezogenen Projekten zu tun. Ihr Betriebsmodell bietet Möglichkeiten, um die Einführung zu ermöglichen, oder möglicherweise Hindernisse, die die Cloudeinführung verlangsamen können.
+
+## <a name="alignment"></a>Ausrichtung
+
+Die Abstimmung zwischen geschäftlichen und technischen Teams ist insbesondere im Kontext der Innovationsförderung für den Erfolg Ihrer Lösung entscheidend.
+
+- Für Projektbeteiligte im geschäftlichen Bereich haben wir die [KI Business School von Microsoft](https://www.microsoft.com/ai/ai-business-school) geschaffen, um die Entwicklung von Geschäftsstrategien zu unterstützen und Beispiele für bewährte Methoden bereitzustellen.
+- Für Projektbeteiligte im technischen Bereich stehen die [KI-Lernpfade von Microsoft](https://docs.microsoft.com/learn/) zur Verfügung, um sie bei der Erstellung neuer KI-Skills unterstützen.
 
 ## <a name="blockers"></a>Hindernisse
 

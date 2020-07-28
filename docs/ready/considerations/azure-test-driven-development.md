@@ -1,51 +1,52 @@
 ---
-title: Testgesteuerte Entwicklung (TDD) für Zielzonen in Azure
-description: Testgesteuerte Entwicklung (TDD) für Zielzonen in Azure
+title: Testgesteuerte Entwicklung für Zielzonen in Azure
+description: Testgesteuerte Entwicklung für Zielzonen in Azure.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f2d5e12dbeb9cf86fdc3b09768a513f084889531
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 8d44734998d3a59391d9fcceb8f39704b845bafc
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756293"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479788"
 ---
-# <a name="test-driven-development-tdd-for-landing-zones-in-azure"></a>Testgesteuerte Entwicklung (TDD) für Zielzonen in Azure
+# <a name="test-driven-development-for-landing-zones-in-azure"></a>Testgesteuerte Entwicklung für Zielzonen in Azure
 
-Wie im vorhergehenden Artikel über [testgesteuerte Entwicklung für Zielzonen](./test-driven-development.md) beschrieben, beginnen TDD-Zyklen mit einem Test, der die Akzeptanzkriterien eines bestimmten Features validiert, das für die Bereitstellung des Cloudeinführungsplans erforderlich ist. Die Erweiterung oder das Refactoring der Zielzone kann dann getestet werden, um zu bestätigen, dass die Akzeptanzkriterien erfüllt sind. In diesem Artikel wird eine cloudnative Toolkette in Azure vorgestellt, um testgesteuerte Entwicklungszyklen zu automatisieren.
+Wie im vorhergehenden Artikel über [testgesteuerte Entwicklung (Test-Driven Development, TDD) für Zielzonen](./test-driven-development.md) beschrieben, beginnen TDD-Zyklen mit einem Test, der die Akzeptanzkriterien eines bestimmten Features validiert, das für die Bereitstellung des Cloudeinführungsplans erforderlich ist. Die Erweiterung oder das Refactoring der Zielzone kann dann getestet werden, um zu bestätigen, dass die Akzeptanzkriterien erfüllt sind. In diesem Artikel wird eine cloudnative Toolkette in Azure vorgestellt, um testgesteuerte Entwicklungszyklen zu automatisieren.
 
 ## <a name="azure-tools-to-support-landing-zone-tdd-cycles"></a>Azure-Tools zur Unterstützung der TDD-Zyklen von Zielzonen
 
-![Testgesteuerte Entwicklungstools in Azure](../../_images/ready/azure-tdd-tools.png)
+![Tools für die testgesteuerte Entwicklung in Azure](../../_images/ready/azure-tdd-tools.png)
+_Abbildung 1: Tools für die testgesteuerte Entwicklung in Azure_
 
-Die Toolkette der Azure-nativen Governanceprodukte und -dienste kann leicht in die testgesteuerte Entwicklung für die Erstellung von Zielzonen integriert werden. Jedes dieser Tools dient einem bestimmten Zweck, wodurch die Entwicklung, das Testen und die Bereitstellung Ihrer Zielzone in Übereinstimmung mit TDD-Zyklen erleichtert wird.
+Die Toolkette der Azure-nativen Governanceprodukte und -dienste lässt sich problemlos in die testgesteuerte Entwicklung für die Erstellung von Zielzonen integrieren. Jedes dieser Tools dient einem bestimmten Zweck, wodurch die Entwicklung, das Testen und die Bereitstellung Ihrer Zielzone in Übereinstimmung mit TDD-Zyklen erleichtert wird.
 
 ## <a name="microsoft-provided-test-and-deployment-templates-to-accelerate-tdd"></a>Von Microsoft bereitgestellte Test- und Bereitstellungsvorlagen zum Beschleunigen von TDD
 
-Die folgenden Beispiele werden von Microsoft für Governancezwecke zur Verfügung gestellt. Jedes davon kann jedoch als Test oder Testreihe in einem testgesteuerten Entwicklungszyklus für Zielzonen verwendet werden. Weitere Informationen zu den einzelnen Tools finden Sie im folgenden Abschnitt.
+Die folgenden Beispiele werden von Microsoft für Governancezwecke zur Verfügung gestellt. Sie können jeweils als Test oder Testreihe in einem testgesteuerten Entwicklungszyklus für Zielzonen verwendet werden. Die folgenden Abschnitte enthalten weitere Informationen zu den einzelnen Tools:
 
-- Azure Blueprints bietet verschiedene [Blaupausenmuster](https://docs.microsoft.com/azure/governance/blueprints/samples), die Richtlinien für Tests und Vorlagen für die Bereitstellung enthalten. Diese Blaupausenmuster können den Entwicklungs-, Bereitstellungs- und Testaufwand in TDD-Zyklen beschleunigen.
+- Azure Blueprints bietet verschiedene [Blaupausenbeispiele](https://docs.microsoft.com/azure/governance/blueprints/samples), die Richtlinien für Tests und Vorlagen für die Bereitstellung enthalten. Diese Blaupausenmuster können den Entwicklungs-, Bereitstellungs- und Testaufwand in TDD-Zyklen beschleunigen.
 - Azure Policy umfasst auch [integrierte Richtlinieninitiativen](https://docs.microsoft.com/azure/governance/policy/samples/built-in-initiatives), die dazu dienen könnten, die vollständige „Definition of Done“ für eine Zielzone zu testen und durchzusetzen. Azure Policy umfasst [integrierte Richtliniendefinitionen](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies), die individuelle Akzeptanzkriterien innerhalb der „Definition of Done“ erfüllen können.
 - Azure Graph enthält fortgeschrittene [Abfragebeispiele](https://docs.microsoft.com/azure/governance/resource-graph/samples/advanced), die für fortgeschrittene Testszenarien verwendet werden können, um zu verstehen, wie die Workloads innerhalb einer Zielzone bereitgestellt werden.
 - [Azure-Schnellstartvorlagen](https://azure.microsoft.com/resources/templates) stellen Quellcodevorlagen zur Verfügung, um die Bereitstellung der Zielzone und der Workload zu beschleunigen.
 
-Jedes der obigen Beispiele kann als Tool zur Beschleunigung von TDD-Zyklen verwendet werden. Diese Beispiele werden mit den Governancetools in den folgenden Abschnitten ausgeführt, die es Cloudplattformteams ermöglichen, ihren eigenen Quellcode und ihre eigenen Tests zu erstellen.
+Die oben angegebenen Beispiele können zur Beschleunigung von TDD-Zyklen verwendet werden. Sie werden mit den Governancetools in den folgenden Abschnitten ausgeführt und ermöglichen es Cloudplattformteams, ihren eigenen Quellcode und ihre eigenen Tests zu erstellen.
 
 ## <a name="azure-governance-tools-that-can-accelerate-tdd-cycles"></a>Azure Governance-Tools, die TDD-Zyklen beschleunigen können
 
-[Azure Policy](https://docs.microsoft.com/azure/governance/policy): Wenn die Bereitstellungen oder versuchten Bereitstellungen von den Governancerichtlinien abweichen, kann Azure Policy automatische Erkennung, Schutz und Lösung bieten. Aber Azure Policy bietet auch den primären Mechanismus zum Testen von Akzeptanzkriterien in Ihrer „Definition of Done“. In einem TDD-Zyklus kann eine Richtliniendefinition erstellt werden, um ein einzelnes Akzeptanzkriterium zu testen. Ebenso können alle Akzeptanzkriterien zu einer Richtlinieninitiative hinzugefügt werden, die dem gesamten Abonnement zugewiesen wird. Dieser Ansatz sieht einen Mechanismus für „Rot-Tests“ vor, bevor die Zielzone modifiziert wird. Nachdem die Zielzone der"Definition of Done" entspricht, kann sie dazu verwendet werden, die Testkriterien durchzusetzen, um Codeänderungen zu vermeiden, die ein Fehlschlagen des Tests in zukünftigen Versionen verursachen würden.
+[Azure Policy](https://docs.microsoft.com/azure/governance/policy): Wenn die Bereitstellungen oder versuchten Bereitstellungen von den Governancerichtlinien abweichen, kann Azure Policy automatische Erkennung, Schutz und Lösung bieten. Aber Azure Policy bietet auch den primären Mechanismus zum Testen von Akzeptanzkriterien in Ihrer Definition of Done. In einem TDD-Zyklus kann eine Richtliniendefinition erstellt werden, um ein einzelnes Akzeptanzkriterium zu testen. Ebenso können alle Akzeptanzkriterien zu einer Richtlinieninitiative hinzugefügt werden, die dem gesamten Abonnement zugewiesen wird. Dieser Ansatz bietet einen Mechanismus für Rot-Tests, bevor die Zielzone geändert wird. Wenn die Zielzone der Definition of Done entspricht, kann sie zur Erzwingung der Testkriterien verwendet werden, um Codeänderungen zu vermeiden, die in zukünftigen Releases zu Testfehlern führen würden.
 
 [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints): Azure Blueprint gruppiert Richtlinien und andere Bereitstellungstools in einem wiederholbaren Paket, das mehreren Zielzonen zugeordnet werden kann. Blaupausen erweisen sich als nützlich, wenn mehrere Einführungsbemühungen eine gemeinsame „Definition of Done“ aufweisen, die Sie im Laufe der Zeit vielleicht aktualisieren möchten. Sie können auch bei späteren Bemühungen zur Erweiterung und Umgestaltung von Zielzonen bei deren Bereitstellung helfen.
 
-[Azure Resource Graph](https://docs.microsoft.com/azure/governance/resource-graph): Resource Graph bietet eine Abfragesprache zur Erstellung datengesteuerter Tests auf der Grundlage von Informationen über die in einer Zielzone bereitgestellten Ressourcen. Später im Einführungsplan kann dieses Tool auch komplexe Tests definieren, die auf den Interaktionen zwischen den Workloadressourcen und der zugrunde liegenden Cloudumgebung basieren.
+[Azure Resource Graph](https://docs.microsoft.com/azure/governance/resource-graph/overview): Resource Graph bietet eine Abfragesprache zur Erstellung datengesteuerter Tests auf der Grundlage von Informationen über die in einer Zielzone bereitgestellten Ressourcen. Später im Einführungsplan kann dieses Tool auch komplexe Tests definieren, die auf den Interaktionen zwischen den Workloadressourcen und der zugrunde liegenden Cloudumgebung basieren.
 
-[Azure Resource Manager-Vorlagen](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview): Diese Vorlagen stellen den primären Quellcode für jede in Azure bereitgestellte Umgebung zur Verfügung. Wenn Tools von Drittanbietern, wie Terraform, zur Entwicklung von Quellcode verwendet werden, der eine Zielzone vorsieht, generieren die Tools ihre eigenen Vorlagen. Diese Vorlagen werden dann an Azure Resource Manager übermittelt.
+[Azure Resource Manager-Vorlagen](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview): Diese Vorlagen stellen den primären Quellcode für jede in Azure bereitgestellte Umgebung zur Verfügung. Einige Drittanbietertools wie etwa Terraform generieren ihre eigenen ARM-Vorlagen, die dann an Azure Resource Manager übermittelt werden.
 
-[Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview): Resource Manager bietet eine konsistente Plattform für den Aufbau und die Bereitstellung von Funktionen. Diese Plattform verwaltet die Bereitstellung einer Zielzone vom Quellcode aus.
+[Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview): Resource Manager bietet eine konsistente Plattform für den Aufbau und die Bereitstellung von Funktionen. Von dieser Plattform können Zielzonen auf der Grundlage von Quellcodedefinitionen bereitgestellt werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

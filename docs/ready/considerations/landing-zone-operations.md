@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f7e60e97a38b38351e8f90ac90caf3925225ac68
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: ffdfd350247d2cb1c6ff3cd367fbaf12ab6585e3
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075079"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479625"
 ---
 # <a name="improve-landing-zone-operations"></a>Verbessern des Betriebs von Zielzonen
 
@@ -38,7 +38,8 @@ Die [Manage-Methodik](../../manage/index.md) bietet eine allgemeine Anleitung f�
 
 <!-- cSpell:ignore caf -->
 
-![Manage-Methodik](../../_images/manage/caf-manage.png)
+![Verwaltungsmethodik](../../_images/manage/caf-manage.png)
+_Abbildung 1: Die CAF-Verwaltungsmethodik_
 
 1. [Einrichten einer Verwaltungsbasislinie](../../manage/azure-server-management/index.md): Eine Verwaltungsbasislinie bildet die Grundlage für das Operations Management. Der Leitfaden in diesem ersten Schritt kann auf jede beliebige Zielzone angewandt werden, um die ersten Vorgänge zu verbessern.
 2. [Definieren von geschäftlichen Verpflichtungen](../../manage/considerations/business-alignment.md): Das Verständnis der Wichtigkeit und der Auswirkungen jeder Workload innerhalb einer Zielzone wird eine „Definition of Done“ für alle laufenden Verwaltungsverbesserungen für jede Zielzone festlegen. Im Rahmen dieses Prozesses werden auch die Anforderungen an die Zuverlässigkeit, Leistung und den Betrieb der einzelnen Workloads ermittelt.
@@ -50,6 +51,7 @@ Die [Manage-Methodik](../../manage/index.md) bietet eine allgemeine Anleitung f�
 Bevor irgendwelche Sicherheitsverbesserungen in Angriff genommen werden, ist es wichtig, die „Definition of Done“ und alle „Akzeptanzkriterien“ zu verstehen. Weitere Informationen finden Sie in den Artikeln [Testgesteuerte Entwicklung von Zielzonen](./test-driven-development.md) und [Testgesteuerte Entwicklung in Azure](./azure-test-driven-development.md).
 
 ![Testgesteuerter Entwicklungsprozess für Cloudzielzonen](../../_images/ready/test-driven-development-process.png)
+_Abbildung 2: Der testgesteuerte Entwicklungsprozess für Cloudzielzonen_
 
 ## <a name="next-steps"></a>Nächste Schritte
 

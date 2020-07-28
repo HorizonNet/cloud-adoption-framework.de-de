@@ -1,49 +1,32 @@
 ---
 title: Innovationstools zur Vorhersage und Beeinflussung
 description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um Analysetools zu finden, die Sie bei der Mustererkennung, bei der Integration von Vorhersagen sowie bei der Beeinflussung des Kundenverhaltens unterstützen.
-author: BrianBlanchard
-ms.author: brblanch
-ms.date: 10/17/2019
+author: v-hanki
+ms.author: janet
+ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 9c261154f502fa96b053caead0ea999697a6f6b4
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: 0d410c4e1bd5978ded2c53f7ecebf69ea233006d
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80433428"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449641"
 ---
-# <a name="tools-to-predict-and-influence-data-in-azure"></a>Tools zum Vorhersagen und Beeinflussen von Daten in Azure
+# <a name="innovate-with-ai"></a>Innovationen mit KI
 
-Wie im Konzeptartikel zu [Vorhersagen und Beeinflussen](../considerations/predict.md) beschrieben, können Computer und KI Muster viel besser erkennen als Menschen. Durch den Einsatz von cloudbasierten Analysetools können Sie Muster leicht erkennen und auf die Anforderungen Ihrer Kunden anwenden. Der Einsatz dieser Tools führt zu Vorhersagen zu den besten Ergebnissen. Wenn diese Vorhersagen wieder in die Kundenerlebnisse integriert werden, können sie die Verhaltensmuster Ihrer Kunden durch Interaktionen beeinflussen.
+Mithilfe von KI kann Ihr Unternehmen Vorhersagen zu Kundenanforderungen treffen, Geschäftsprozesse automatisieren, verborgene Informationen aus unstrukturierten Daten gewinnen und neue Wege der Interaktion mit Kunden schaffen, um bessere Erfahrungen zu bieten.
 
-![Der Ansatz des Frameworks für die Cloudeinführung zum Vorhersagen und Beeinflussen](../../_images/innovate/predict-and-influence.png)
+Diese Art der digitalen Erfindung lässt sich durch die im Anschluss aufgeführten Lösungsbereiche beschleunigen. Bewährte Methoden und technische Leitfäden zur Beschleunigung digitaler Erfindungen werden links im Inhaltsverzeichnis auf dieser Seite aufgeführt. Diese Artikel sind nach Lösungsbereich gruppiert:
 
-## <a name="alignment-to-the-methodology"></a>Ausrichtung auf die Methodik
-
-Sie können diese Art der digitalen Erfindung durch jede Phase des folgenden Prozesses beschleunigen. Die Phasen richten sich nach der im vorhergehenden Bild dargestellten Methodik. Technische Leitfäden zum Beschleunigen digitaler Erfindungen werden links im Inhaltsverzeichnis auf dieser Seite aufgeführt. Diese Artikel sind nach Phasen geordnet, um sie an der Methodik auszurichten.
-
-Im vorhergehenden Bild sind Daten und Erkenntnisse an den bewährten Methoden ausgerichtet, die im Artikel [Demokratisieren von Daten](./data.md) beschrieben werden. Wenn Experten Erkenntnisse gewinnen, die möglicherweise wiederholbar sind, können sie folgende drei Schritte ausführen, um diese Erkenntnisse weiterzuentwickeln:
-
-- **Muster**: Suchen und definieren Sie Muster, um Vorhersagemodelle zu erstellen.
-- **Vorhersagen**: Wenden Sie Muster auf Kundendaten an, um Ergebnisse basierend auf dem Modell und dem zugrunde liegenden Muster vorherzusagen.
-- **Interaktionen**: Nutzen Sie die Vorhersagen in einer Anwendung oder Datenquelle, um eine Interaktion mit Ihrem Kunden zu fördern.
-
-## <a name="toolchain"></a>Toolkette
-
-In Azure werden häufig die folgenden Tools genutzt, um digitale Erfindungen in allen vorhergehenden Phasen zu beschleunigen:
-
-- [Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning)
-- [Azure HDInsight](https://docs.microsoft.com/azure/hdinsight)
-- [Hadoop R ScaleR](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-r-scaler-sparkr)
-- [Azure Synapse Analytics](https://docs.microsoft.com/azure/synapse-analytics)
-
-Die Einsatzmöglichkeiten jedes Tools in den Phasen „Vorhersagen“ und „Beeinflussen“ spiegeln sich im Inhaltsverzeichnis auf der linken Seite wider.
+- Machine Learning
+- KI-Anwendungen und -Agents
+- Knowledge Mining
 
 ## <a name="get-started"></a>Erste Schritte
 
-Im Inhaltsverzeichnis auf der linken Seite werden viele Artikel beschrieben. Diese Artikel helfen Ihnen bei den ersten Schritten mit den einzelnen Tools in dieser Toolkette.
+Im Inhaltsverzeichnis auf der linken Seite werden viele Artikel beschrieben. Diese Artikel helfen Ihnen bei den ersten Schritten mit den einzelnen Lösungsbereichen.
 
 > [!NOTE]
 > Mit einigen Links verlassen Sie das Cloud Adoption Framework und erhalten weitergehende Informationen.
