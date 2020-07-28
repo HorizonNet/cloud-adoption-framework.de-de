@@ -1,22 +1,22 @@
 ---
 title: Bereitstellen einer CAF-Basisblaupause in Azure
-description: Erfahren Sie, wie Sie eine CAF-Basisblaupause in Azure bereitstellen.
+description: Hier erfahren Sie, wie Sie eine CAF-Basisblaupause in Azure bereitstellen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 672feabf0bb15d47ffdedbe85279bb7ff9228172
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: ea53df3a8d349299e08ecc0681b4dd24dc71336a
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075903"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86448213"
 ---
 <!-- docsTest:ignore "CAF Foundation blueprint" -->
 
-# <a name="deploy-a-caf-foundation-blueprint"></a>Bereitstellen einer CAF-Basisblaupause
+# <a name="deploy-a-caf-foundation-blueprint-in-azure"></a>Bereitstellen einer CAF-Basisblaupause in Azure
 
 Mit der CAF-Basisblaupause wird keine Zielzone bereitgestellt. Stattdessen werden die erforderlichen Tools für ein Governance-MVP (Minimum Viable Product) bereitgestellt, um mit der Entwicklung Ihrer Governancedisziplinen zu beginnen. Diese Blaupause kann zusätzlich zu einer vorhandenen Zielzone verwendet werden und mit einer einzigen Aktion auf die Blaupause für die CAF-Migrationszielzone angewendet werden.
 
@@ -33,11 +33,11 @@ Diese Implementierungsoption bietet einen wertenden Ansatz für die allgemeinen 
 
 ### <a name="deployment-options"></a>Bereitstellungsoptionen
 
-Mit dieser Implementierungsoption wird ein _Minimum Viable Product (MVP)_ als Grundlage für Ihre Governancedisziplinen bereitgestellt. Das Team befolgt einen modularen Refactoring-basierten Ansatz, um die Governancedisziplinen unter Verwendung der [Governancemethodik](../../govern/index.md) weiterzuentwickeln.
+Mit dieser Implementierungsoption wird ein MVP als Grundlage für Ihre Governancedisziplinen bereitgestellt. Das Team befolgt einen modularen Refactoring-basierten Ansatz, um die Governancedisziplinen unter Verwendung der [Governancemethodik](../../govern/index.md) weiterzuentwickeln.
 
 ### <a name="enterprise-enrollment"></a>Unternehmensregistrierung
 
-Diese Implementierungsoption nimmt hinsichtlich der Unternehmensregistrierung keine inhärente Position ein. Vielmehr ist dieser Ansatz so konzipiert, dass er unabhängig von Vertragsvereinbarungen mit Microsoft oder Microsoft-Partnern auf Kunden anwendbar ist. Es wird angenommen, dass der Kunde vor der Bereitstellung dieser Implementierungsoption ein Zielabonnement erstellt hat.
+Diese Implementierungsoption nimmt hinsichtlich der Unternehmensregistrierung keine inhärente Position ein. Vielmehr ist dieser Ansatz so konzipiert, dass er unabhängig von Vertragsvereinbarungen mit Microsoft oder Microsoft-Partnern auf Kunden anwendbar ist. Vor der Bereitstellung dieser Implementierungsoption wird davon ausgegangen, dass der Kunde ein Zielabonnement erstellt hat.
 
 ### <a name="identity"></a>Identity
 

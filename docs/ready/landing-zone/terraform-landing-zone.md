@@ -1,18 +1,18 @@
 ---
 title: Verwenden von Terraform zum Erstellen Ihrer Zielzonen
-description: Erfahren Sie, wie Sie mit Terraform Ihre Zielzonen erstellen.
+description: Hier erfahren Sie, wie Sie Ihre Zielzonen mit Terraform von HashiCorp erstellen.
 author: arnaudlh
 ms.author: arnaul
 ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 36a73de789219591719df284ffaed5ba2c73ae1e
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 36394895c88aecf0307ec46415d04fd974168b42
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86195189"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479159"
 ---
 <!-- cSpell:ignore arnaudlh arnaul Arnaud eastasia southeastasia vCPUs lalogs tfvars NetworkMonitoring ADAssessment ADReplication AgentHealthAssessment DnsAnalytics KeyVaultAnalytics -->
 
@@ -33,6 +33,7 @@ Die Wiederverwendung von Komponenten ist ein grundlegendes Prinzip von Infrastru
 In der ersten Zielzone werden die folgenden Komponenten in Ihrem Abonnement bereitgestellt:
 
 ![Grundlegende Zielzone mit Terraform](../../_images/ready/foundations-terraform-landing-zone.png)
+_Abbildung 1: Grundlegende Zielzone mit Terraform_
 
 ## <a name="capabilities"></a>Funktionen
 
@@ -61,7 +62,7 @@ Beim Definieren dieser anfänglichen Landezone wurden folgende Annahmen bzw. Ein
 - **Grenzwerte für Abonnements**: Bei der Einführung ist unwahrscheinlich, dass [Abonnementgrenzwerte](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits) überschritten werden. Zwei allgemeine Anzeichen dafür sind eine VM-Anzahl von über 25.000 oder eine vCPU-Anzahl von über 10.000.
 - **Compliance**: Für diese Landezone sind keine Complianceanforderungen von Dritten zu beachten.
 - **Komponenten der Architektur**: Die Komplexität der Architektur erfordert keine zusätzlichen Produktionsabonnements.
-- **Gemeinsam genutzte Dienste**: Es sind keine gemeinsam genutzten Dienste in Azure vorhanden, die erfordern, dass dieses Abonnement wie ein Spoke in einer Hub-and-Spoke-Architektur behandelt wird.
+- **Gemeinsam genutzte Dienste**: Keiner der vorhandenen gemeinsam genutzten Dienste in Azure erfordert, dass dieses Abonnement wie ein Spoke in einer Hub-and-Spoke-Architektur behandelt wird.
 
 Wenn diese Annahmen mit Ihrer aktuellen Umgebung übereinstimmen, kann diese Blaupause ein guter Ausgangspunkt für die Erstellung Ihrer Zielzone sein.
 
@@ -203,10 +204,7 @@ Nachdem Sie die Konfiguration überprüft haben, können Sie die Konfiguration w
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Die grundlegende Zielzone bildet die Basis für eine aufgeschlüsselte komplexe Umgebung. Diese Edition bietet eine Reihe einfacher Funktionen, die folgendermaßen erweitert werden kann:
-
-- Hinzufügen weiterer Module zur Blaupause.
-- Überlagern mit weiteren Zielzonen.
+Die grundlegende Zielzone bildet die Basis für eine aufgeschlüsselte komplexe Umgebung. Diese Edition bietet eine Reihe einfacher Funktionen, die durch Hinzufügen weiterer Blaupausenmodule oder durch Überlagern mit weiteren Zielzonen erweitert werden können.
 
 Das Überlagern mit weiteren Zielzonen ist eine bewährte Vorgehensweise, um Systeme zu entkoppeln, jede einzelne von Ihnen verwendete Komponente zu versionieren und schnelle Innovation und Stabilität für Ihre Infrastructure-as-Code-Bereitstellung zu ermöglichen.
 
