@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 1dc3abc11ba3163934a5c9b58c0ed496ec0dbfd8
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 0f022693cdf8191a1c4e978a4545bfc117ed055f
+ms.sourcegitcommit: 622a7c5f1b47c9ad0a1c1ed3caa98bad6cf9d9c2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450695"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87115095"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
@@ -149,8 +149,8 @@ Die folgende Tabelle enthält Namensmuster für einige Beispieltypen von Azure-R
 
 | Entität | `Scope` | Länge | Schreibweise | Gültige Zeichen | Vorgeschlagenes Muster | Beispiel |
 | --- | --- | --- | --- | --- | --- | --- |
-| Resource group | Subscription | 1-90 | Groß-/Kleinschreibung nicht beachten | Alphanumerisch, Unterstrich, Klammern, Bindestrich, Punkt (außer am Ende) und Unicode-Zeichen | `<service short name>-<environment>-Rg` | `profx-prod-rg` |
-| Verfügbarkeitsgruppe | Resource group | 1-80 | Groß-/Kleinschreibung nicht beachten | Alphanumerisch, Unterstrich und Bindestrich | `<service-short-name>-<context>-As` | `profx-SQL-as` |
+| Resource group | Subscription | 1-90 | Groß-/Kleinschreibung nicht beachten | Alphanumerisch, Unterstrich, Klammern, Bindestrich, Punkt (außer am Ende) und Unicode-Zeichen | `<service short name>-<environment>-rg` | `profx-prod-rg` |
+| Verfügbarkeitsgruppe | Resource group | 1-80 | Groß-/Kleinschreibung nicht beachten | Alphanumerisch, Unterstrich und Bindestrich | `<service-short-name>-<context>-as` | `profx-SQL-as` |
 | Tag | Zugeordnete Entität | 512 (Name), 256 (Wert) | Groß-/Kleinschreibung nicht beachten | Alphanumerisch | `"Key" : "value"` | `"Department" : "Central IT"` |
 
 ## <a name="resource-tags"></a>[Ressourcentags](#tab/ResourceTags)
