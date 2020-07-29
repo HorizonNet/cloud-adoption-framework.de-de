@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 96aa859856ff173c4b613496ac5017114177a902
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 7223289dcb5ad5af5d66b9352d4b4df40064cb48
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193676"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449556"
 ---
 # <a name="create-customer-partnerships-through-the-build-measure-learn-feedback-loop"></a>Aufbauen von Kundenpartnerschaften über die Feedbackschleife „Erstellen-Messen-Lernen“
 
@@ -38,7 +38,7 @@ Jede Phase des Prozesses hilft Ihnen dabei, bessere Lösungen mit und für Ihre 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Informieren Sie sich über das [Erstellen mit Blick auf die Kundenanforderungen](./build.md), um Ihren Erstellen-Messen-Lernen-Zyklus zu beginnen.
+Erfahren Sie, wie Sie [Lösungen mit Blick auf die Kundenanforderungen entwickeln](./build.md), um Ihren Build-Measure-Learn-Zyklus zu beginnen.
 
 > [!div class="nextstepaction"]
 > [Erstellen mit Blick auf die Kundenanforderungen](./build.md)

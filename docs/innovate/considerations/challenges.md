@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 4ad936390af2d1c869c424381b2f235ffb611a1c
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: dc11bbcedbfa346c0bc08d46d88da101a6a34e67
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993891"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449386"
 ---
 # <a name="common-blockers-and-challenges-to-innovation"></a>Häufige Herausforderungen und Hindernisse bei Innovationen
 
@@ -58,7 +58,7 @@ In einer digitalen Wirtschaft besteht die größte Herausforderung für Architek
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Basierend auf den erworbenen Kenntnissen zum Erstellen-Messen-Lernen-Modell und zur Mentalität in Bezug auf Wachstum sind Sie jetzt bereit, innerhalb der [innovativen Methodik](./index.md)[digitale Erfindungen zu entwickeln](./invention.md).
+Durch die erworbenen Kenntnisse zum Erstellen-Messen-Lernen-Modell und zur Mentalität in Bezug auf Wachstum sind Sie jetzt bereit, innerhalb der [innovativen Methodik](./index.md) [digitale Erfindungen zu entwickeln](./invention.md).
 
 > [!div class="nextstepaction"]
 > [Entwickeln digitaler Erfindungen](./invention.md)

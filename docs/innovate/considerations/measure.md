@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: bb7399f6c937ed433d4d8610a15153c10f01659c
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: b3191d766be3996192bf1f970a11ca8d71d2a633
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222503"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478683"
 ---
 # <a name="measure-for-customer-impact"></a>Messen der Auswirkungen für Kunden
 
@@ -75,7 +75,5 @@ Wenn Lernmetriken akkumuliert werden, kann das Team damit beginnen, [von Kunden 
 
 > [!div class="nextstepaction"]
 > [Lernen von Kunden](./learn.md)
-
-<!-- cSpell:ignore Ries -->
 
 Einige der Konzepte in diesem Artikel bauen auf Themen auf, die zuerst in [The Lean Startup](http://theleanstartup.com/book) (Der schlanke Start) von Eric Ries beschrieben wurden.

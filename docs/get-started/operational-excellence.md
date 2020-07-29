@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 948a4b9dc03fd7353112f52e605d515819bc6ceb
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 6372e7cb8d90cb7a13c55f04dd2ac0714d06c681
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076484"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450508"
 ---
 # <a name="get-started-deliver-operational-excellence-during-digital-transformation"></a>Erste Schritte: Bereitstellen des optimalen Betriebs während der digitalen Transformation
 

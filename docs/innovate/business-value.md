@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5ddbd7a8f3780d4dc65492c9298119d0095f91db
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f93b0a643a5751f4090a82a0688b1ed1073533e1
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222588"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449471"
 ---
 # <a name="build-consensus-on-the-business-value-of-innovation"></a>Erzielen eines Konsenses zum Geschäftswert der Cloudinnovation
 
@@ -43,9 +43,11 @@ Wenn ein oder zwei Antworten auf die richtige Ausrichtung hinweisen, freuen Sie 
 
 Wenn eins der Teams in 30 Minuten keine der vier Fragen beantworten konnte, werden die Ausrichtung und die Überlegungen in den folgenden Abschnitten wahrscheinlich einen erheblichen Einfluss auf diese und andere Bemühungen haben. Lesen Sie die folgenden Abschnitte sorgfältig.
 
+<!-- docsTest:ignore "Strategy, Plan, Ready, and Adopt" -->
+
 ## <a name="address-the-big-picture-first"></a>Zuerst das große Ganze
 
-Das Framework für die Cloudeinführung (Cloud Adoption Framework) folgt einem vorgeschriebenen Pfad durch die folgenden Phasen: Strategie, Planung, Bereitschaft und Einführung. Cloudinnovationen gehören in die Einführungsphase dieses Prozesses. Die Antworten auf die [qualifizierenden Fragen](#qualifying-questions) drei und vier betreffen Ergebnisse und Beweggründe. Wenn diese Antworten falsch ausgerichtet sind, deutet dies darauf hin, dass Ihr Unternehmen in der Strategiephase des Lebenszyklus der Cloudeinführung etwas verpasst hat. Hierbei kommen verschiedene der folgenden Szenarien in Frage.
+Das Cloud Adoption Framework folgt einem vorgeschriebenen Pfad mit vier Phasen: Strategie, Planung, Bereitschaft und Einführung. Cloudinnovationen sind der Einführungsphase dieses Prozesses zuzuordnen. Die Antworten auf die [qualifizierenden Fragen](#qualifying-questions) drei und vier betreffen Ergebnisse und Beweggründe. Wenn diese Antworten nicht passen, deutet dies darauf hin, dass Ihr Unternehmen in der Strategiephase des Lebenszyklus der Cloudeinführung etwas vergessen hat. Hierbei kommen verschiedene der folgenden Szenarien in Frage.
 
 - **Chance: Ausrichtung**: Wenn geschäftliche Beteiligte sich nicht auf Beweggründe und Geschäftsergebnisse in Bezug auf ein Cloudinnovationsprojekt einigen können, ist dies ein Symptom für eine größere Herausforderung. Die Übungen in der [Strategiemethodik](../strategy/index.md) können hilfreich sein, um eine Ausrichtung der geschäftlichen Beteiligten zu erreichen. Darüber hinaus empfiehlt es sich dringend, dass dieselben Beteiligten ein [Cloudstrategieteam](../organize/cloud-strategy.md) bilden, das sich regelmäßig trifft.
 

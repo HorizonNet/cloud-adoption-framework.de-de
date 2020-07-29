@@ -7,20 +7,20 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 822866cfd944cd47a3eff96a24a6e0f09a69634f
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 72f5a35bbf4fa248b82dce36fb345ee22a6b96f0
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993968"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449573"
 ---
-# <a name="engage-through-applications"></a>Einbinden durch Anwendungen
+# <a name="engage-via-applications"></a>Interagieren über Apps
 
 Wie in [Demokratisieren von Daten](./data.md) erläutert, sind Daten das neue Öl. Sie sind der Kraftstoff für die meisten Innovationen in der digitalen Wirtschaft. Im Rahmen dieser Analogie sind Anwendungen die Tankstellen und die Infrastruktur, die erforderlich sind, damit dieser Kraftstoff in die richtigen Hände gelangt.
 
-In einigen Fällen reichen die Daten allein aus, um Änderungen voranzutreiben und Kundenanforderungen zu erfüllen. In der Regel erfordert die Lösung von Kundenanforderungen, dass Anwendungen die Daten strukturieren und für Benutzerfreundlichkeit sorgen. Mit Anwendungen binden wir den Benutzer ein. Sie sind die Heimat der Prozesse, die erforderlich sind, um auf Auslöser der Kunden zu reagieren. Mit ihnen stellen Kunden Daten bereit und erhalten Anleitungen. In diesem Artikel werden einige Grundsätze erläutert, die Ihnen bei der Ausrichtung der richtigen Anwendungslösung auf der Grundlage der zu validierenden Hypothesen helfen.
+In einigen Fällen reichen die Daten allein aus, um Änderungen voranzutreiben und Kundenanforderungen zu erfüllen. In der Regel erfordert die Lösung von Kundenanforderungen, dass Anwendungen die Daten strukturieren und für Benutzerfreundlichkeit sorgen. Mit Apps interagieren wir mit den Benutzern, und sie sind die Heimat der Prozesse, die erforderlich sind, um auf Auslöser der Kunden zu reagieren. Mit Apps können Kunden Daten bereitstellen und Anleitungen erhalten. In diesem Artikel werden einige Grundsätze erläutert, die Ihnen bei der Ausrichtung der richtigen Anwendungslösung auf der Grundlage der zu validierenden Hypothesen helfen.
 
-![Einbinden durch Apps](../../_images/innovate/engage-via-apps.png)
+![Interagieren über Apps](../../_images/innovate/engage-via-apps.png)
 
 ## <a name="shared-code"></a>Freigegebener Code
 
@@ -28,14 +28,14 @@ Teams, die schneller und präziser auf Kundenfeedback, Marktänderungen und Inno
 
 Um für Innovationen bereit zu sein, sollte die gesamte Anwendungsentwicklung mit einem Repository für freigegebenen Code beginnen. Das gängigste Tool für die Verwaltung von Coderepositorys ist [GitHub](https://guides.github.com), wo Sie sehr schnell ein Repository für freigegebenen Code erstellen können. Alternativ bietet [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) einen Satz von Tools zur Versionskontrolle in Azure DevOps Services, mit denen Sie Ihren Code verwalten können. Azure Repos stellt zwei Arten der Versionskontrolle bereit:
 
-- [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git): verteilte Versionskontrolle.
-- [Team Foundation-Versionskontrolle (TFVC)](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc): zentralisierte Versionskontrolle.
+- [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git): verteilte Versionskontrolle
+- [Team Foundation-Versionskontrolle (TFVC):](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc) zentrale Versionskontrolle
 
 ## <a name="citizen-developers"></a>Entwickler ohne Programmiererfahrung
 
 Professionelle Entwickler sind eine wichtige Komponente der Innovation. Wenn eine Hypothese bedarfsabhängig korrekt ist, müssen professionelle Entwickler die Lösung für die Skalierung stabilisieren und vorbereiten. Die meisten Prinzipien, auf die in diesem Artikel verwiesen wird, müssen von professionellen Entwicklern unterstützt werden. Leider deuten aktuelle Trends darauf hin, dass nicht genügend professionelle Entwickler für die Nachfrage zur Verfügung stehen. Darüber hinaus können Kosten und Geschwindigkeit der Innovation ungünstiger ausfallen, wenn die strengen Maßstäbe professioneller Entwicklung angewandt werden. Als Reaktion auf diese Herausforderungen sind Entwickler ohne Programmiererfahrung eine Alternative, um den Entwicklungsaufwand zu skalieren und frühe Hypothesetests zu beschleunigen.
 
-Der Einsatz von Entwicklern ohne Programmiererfahrung könnte sinnvoll sein, wenn frühe Hypothesen mithilfe von Tools wie [PowerApps](https://docs.microsoft.com/powerapps/powerapps-overview) für App-Schnittstellen, [AI Builder](https://docs.microsoft.com/powerapps/use-ai-builder) für Prozesse und Vorhersagen, [Microsoft Power Automate](https://docs.microsoft.com/power-automate) für Workflows oder [Power BI](https://docs.microsoft.com/power-bi) für den Datenverbrauch überprüft werden können.
+Der Einsatz von Entwicklern ohne Programmiererfahrung könnte sinnvoll sein, wenn frühe Hypothesen mithilfe von Tools wie [Power Apps](https://docs.microsoft.com/powerapps/powerapps-overview) für App-Schnittstellen, [AI Builder](https://docs.microsoft.com/powerapps/use-ai-builder) für Prozesse und Vorhersagen, [Microsoft Power Automate](https://docs.microsoft.com/power-automate) für Workflows oder [Power BI](https://docs.microsoft.com/power-bi) für den Datenverbrauch überprüft werden können.
 
 > [!NOTE]
 > Beim Einsatz von Entwicklern ohne Programmiererfahrung zum Testen von Hypothesen sollten einige professionelle Entwickler mit Unterstützung, Überprüfung und Anleitung helfen. Nachdem eine Hypothese bedarfsabhängig überprüft wurde, beschleunigt ein Prozess, der die Anwendung in ein stabileres Programmiermodell überführt, die Rendite der Innovation. Wenn professionelle Entwickler schon früh in die Prozessdefinitionen einbezogen werden, können daraus später sauberere Übergänge resultieren.

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: governance
-ms.openlocfilehash: 7008ba1cb2efbf154324598dc73f32fdbefff5bf
-ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
+ms.openlocfilehash: 5cbb5e5cb68a8dd55beb13800a3d03a7d722b2fc
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84812917"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450372"
 ---
 <!-- cSpell:ignore PDU -->
 

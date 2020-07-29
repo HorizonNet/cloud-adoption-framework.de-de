@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 339de4106b9e31576b4f6986ac1f766972b8f0de
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: c4a3c3b7f093f226895bccede7efcfdba94cd002
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993129"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479346"
 ---
 # <a name="resource-access-management-in-azure"></a>Ressourcenzugriffsverwaltung in Azure
 
@@ -53,10 +53,10 @@ _Abbildung 4: Azure Resource Manager._
 
 In der folgenden Abbildung sind drei Clients dargestellt: [PowerShell](https://docs.microsoft.com/powershell/azure/overview), das [Azure-Portal](https://portal.azure.com) und die [Azure CLI](https://docs.microsoft.com/cli/azure):
 
-![Diagramm von Azure-Clients, die eine Verbindung mit der Azure Resource Manager-API herstellen](../../_images/govern/design/governance-1-13.png)
-_Abbildung 5: Azure-Clients stellen eine Verbindung mit der RESTful-API von Azure Resource Manager her._
+![Diagramm von Azure-Clients, die eine Verbindung mit der Resource Manager-REST-API herstellen](../../_images/govern/design/governance-1-13.png)
+_Abbildung 5: Azure-Clients stellen eine Verbindung mit der Resource Manager-REST-API her._
 
-Diese Clients stellen zwar über die RESTful-API eine Verbindung mit Azure Resource Manager her, aber Azure Resource Manager umfasst keine Funktionen zum direkten Verwalten von Ressourcen. Stattdessen verfügen die meisten Ressourcentypen in Azure über ihren eigenen [Ressourcenanbieter](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#terminology).
+Diese Clients stellen zwar über die REST-API eine Verbindung mit Resource Manager her, aber Resource Manager umfasst keine Funktionen zum direkten Verwalten von Ressourcen. Stattdessen verfügen die meisten Ressourcentypen in Azure über ihren eigenen [Ressourcenanbieter](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#terminology).
 
 ![Azure-Ressourcenanbieter](../../_images/govern/design/governance-1-14.png)
 _Abbildung 6: Azure-Ressourcenanbieter_

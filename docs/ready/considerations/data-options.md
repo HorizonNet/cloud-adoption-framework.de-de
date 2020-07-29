@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f1dfc50e5512edc0e219dcdb86bae52d0626a038
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: c0b07017a5392b910011c4dc0217b8359e367ba8
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86195070"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479720"
 ---
 <!-- cSpell:ignore HDFS -->
 
@@ -27,6 +27,7 @@ Im Rahmen der Evaluierung und Vorbereitung Ihrer Landezone müssen Sie die Daten
 Verwenden Sie für alle Anwendungen oder Dienste, die Sie in Ihrer Landezonenumgebung bereitstellen, die folgende Entscheidungsstruktur als Ausgangspunkt für die Ermittlung der geeigneten Datenspeicherdienste, die verwendet werden sollen:
 
 ![Entscheidungsstruktur für Azure-Datenbankdienste](../../_images/ready/data-decision-tree.png)
+_Abbildung 1: Eine Entscheidungsstruktur für Azure-Datenbankdienste._
 
 ### <a name="key-questions"></a>Kernfragen
 

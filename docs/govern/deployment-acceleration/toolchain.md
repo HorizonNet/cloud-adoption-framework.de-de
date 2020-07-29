@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 356373e71bc12c7927debdb64f036f8774809860
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 9689944dc5c109143981cf59478f251d9cbfc06f
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220225"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478224"
 ---
 # <a name="deployment-acceleration-tools-in-azure"></a>Tools für die Beschleunigung der Bereitstellung in Azure
 
@@ -35,7 +35,7 @@ Im Folgenden ist eine Liste der Azure-Tools aufgeführt, die zur Ausreifung der 
 
 Im Folgenden finden Sie zusätzliche Tools, die für die Umsetzung spezieller Ziele im Zusammenhang mit der Beschleunigung der Bereitstellung möglicherweise erforderlich sind. Oft kommen diese Tools außerhalb des Governance-Teams zum Einsatz, werden aber immer noch als Aspekt der Disziplin „Beschleunigung der Bereitstellung“ betrachtet.
 
-|  | [Azure portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)  | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) | [Azure DevOps](https://docs.microsoft.com/azure/devops) | [Azure Backup](https://docs.microsoft.com/azure/backup/backup-overview) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
+|  | [Azure portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)  | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) | [Azure DevOps](https://docs.microsoft.com/azure/devops/user-guide/what-is-azure-devops) | [Azure Backup](https://docs.microsoft.com/azure/backup/backup-overview) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
 |---------|---------|---------|---------|---------|---------|---------|
 | Manuelle Bereitstellung (einzelne Ressource)     | Ja | Ja  | Nein  | Nicht effizient | Nein | Ja |
 | Manuelle Bereitstellung (vollständige Umgebung)     | Nicht effizient | Ja | Nein  | Nicht effizient | Nein | Ja |

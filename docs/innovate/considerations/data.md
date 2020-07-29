@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 20ba243ff81397aa475f13b61b14f6889fc89f95
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 1f404b33b526130a3b5205d1835d5981b7d04cea
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193693"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478819"
 ---
 # <a name="democratize-data"></a>Demokratisieren von Daten
 
@@ -75,7 +75,7 @@ Mit cloudbasierten Tools stehen diese Techniken in Form von Tools mit nutzungsab
 
 **Erfassung:** Einige Daten befinden sich nicht in einem vorhandenen Datenspeicher. Wenn diese temporären Daten eine primäre Quelle für die Innovation sind, sollten alternative Ansätze in Erwägung gezogen werden. Temporäre Daten finden Sie in einer Vielzahl von vorhandenen Quellen, z. B. Anwendungen, APIs, Datenströme, IoT-Geräte, Blockchain, Anwendungscache, Medieninhalt oder sogar Flatfiles.
 
-Diese unterschiedlichen Datenformen können Sie im Rahmen einer OLAP- oder Big Data-Lösung in einen zentralen Datenspeicher integrieren. Für frühe Iterationen von Erstellen-Messen-Lernen-Zyklen ist eine OLTP-Lösung (Online Transactional Processing) jedoch möglicherweise mehr als ausreichend, um eine Kundenhypothese zu validieren. OLTP-Lösungen sind nicht für alle Berichterstellungsszenarien die qualitativ hochwertigste Lösung. Wenn Sie jedoch [Beim Erstellen einen Blick auf die Kundenanforderungen behalten](./build.md), sollten Sie sich mehr auf die Kundenanforderungen als auf die Entscheidungen zu den technischen Tools konzentrieren. Nachdem die Kundenhypothese bedarfsabhängig überprüft wurde, ist möglicherweise eine geeignetere Plattform erforderlich. Die Referenzarchitektur für [OLTP-Datenspeicher](https://docs.microsoft.com/azure/architecture/data-guide/relational-data/online-transaction-processing) kann bei der Ermittlung des für Ihre Lösung am besten geeigneten Datenspeichers helfen.
+Diese unterschiedlichen Datenformen können Sie im Rahmen einer OLAP- oder Big Data-Lösung in einen zentralen Datenspeicher integrieren. Für frühe Iterationen von Erstellen-Messen-Lernen-Zyklen ist eine OLTP-Lösung (Online Transactional Processing) jedoch möglicherweise mehr als ausreichend, um eine Kundenhypothese zu überprüfen. OLTP-Lösungen sind nicht für alle Berichterstellungsszenarios die beste Lösung. Wenn Sie jedoch [Beim Erstellen einen Blick auf die Kundenanforderungen behalten](./build.md), sollten Sie sich mehr auf die Kundenanforderungen als auf die Entscheidungen zu den technischen Tools konzentrieren. Nachdem die Kundenhypothese bedarfsabhängig überprüft wurde, ist möglicherweise eine geeignetere Plattform erforderlich. Die Referenzarchitektur für [OLTP-Datenspeicher](https://docs.microsoft.com/azure/architecture/data-guide/relational-data/online-transaction-processing) kann bei der Ermittlung des für Ihre Lösung am besten geeigneten Datenspeichers helfen.
 
 **Virtualisieren:** Die Integration und Erfassung von Daten kann manchmal die Innovation bremsen. Wenn bereits eine Lösung für die Datenvirtualisierung verfügbar ist, stellt dies möglicherweise ein geeigneteren Ansatz dar. Erfassung und Integration können sowohl Speicher- als auch Entwicklungsanforderungen duplizieren, die Datenlatenz steigern, die Angriffsfläche vergrößern, Qualitätsprobleme verursachen und den Governanceaufwand erhöhen. Die Datenvirtualisierung ist eine zeitgemäße Alternative, bei der die ursprünglichen Daten an einem einzigen Ort gespeichert werden und Pass-Through- oder zwischengespeicherte Abfragen der Quelldaten erstellt werden.
 

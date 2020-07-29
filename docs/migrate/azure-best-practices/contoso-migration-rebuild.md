@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 280c2712528f0dd5b46bc17af6fde416ba499661
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: a0592177a3a7bd08b8f29ad632a0bf61b6294e6a
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86235091"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449539"
 ---
 <!-- docsTest:ignore "Enable .NET" SmartHotel360 SmartHotel360-Backend Pet.Checker contoso-datacenter git aks PetCheckerFunction -->
 
@@ -258,7 +258,10 @@ Contoso erstellt ein Azure DevOps-Projekt, konfiguriert einen CI-Build zum Erste
 
 ### <a name="deploy-the-back-end-infrastructure"></a>Bereitstellen der Back-End-Infrastruktur
 
-Mithilfe des erstellten AKS-Clusters und der Docker-Imagebuilds stellen Contoso-Administratoren nun die restliche Infrastruktur bereit, die von Back-End-Microservices genutzt wird. In den Anweisungen in diesem Abschnitt wird das Repository [SmartHotel360-Backend](https://github.com/Microsoft/SmartHotel360-Backend) verwendet. Der Ordner `/deploy/k8s/arm` enthält ein einziges Skript zum Erstellen aller Elemente.
+Mithilfe des erstellten AKS-Clusters und der Docker-Imagebuilds stellen Contoso-Administratoren nun die restliche Infrastruktur bereit, die von Back-End-Microservices genutzt wird.
+
+- In den Anweisungen in diesem Abschnitt wird das Repository [SmartHotel360-Backend](https://github.com/Microsoft/SmartHotel360-Backend) verwendet.
+- Der Ordner `/deploy/k8s/arm` enthält ein einziges Skript zum Erstellen aller Elemente.
 
 Die Bereitstellung erfolgt wie folgt:
 

@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: f6b6a715d8dc8ea9335ca482f22a54f23278aabe
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 5fc14f4ae460e3f2543754c2f99b5e278ea87815
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076411"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450474"
 ---
 # <a name="get-started-ensure-consistent-performance-across-a-portfolio"></a>Erste Schritte: Sicherstellen konsistenter Leistung in einem Portfolio
 
@@ -72,13 +72,13 @@ Im Zuge der Optimierung der Verwaltungsbaseline ist es wichtig, dass die entspre
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudgovernanceteam | <li> Cloudstrategieteam <li> Cloudbetriebsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
+| <li> Cloudgovernanceteam | <li> Cloudstrategieteam <li> Cloudbetriebsteam <li> Cloudkompetenzzentrum (CCoE) oder zentrales IT-Team |
 
 ## <a name="step-3-define-strategy"></a>Schritt 3: Definieren der Strategie
 
 Strategische Entscheidungen wirken sich unmittelbar auf die Leistung sowie indirekt auf den Einführungslebenszyklus und letztendlich auf langfristige Vorgänge aus. Eine klare Strategie trägt zur Verbesserung der Leistungsbestrebungen im gesamten Portfolio bei. Darüber hinaus kann das Betriebsteam dank dieser Klarheit besser nachvollziehen, für welche Workloads ein gewisses Maß an Spezialisierung und erweiterte Vorgänge erforderlich sind.
 
-**Ziele:**
+**Zielvorgaben:**
 
 - Erfassen Sie Beweggründe, Ergebnisse und geschäftliche Begründungen in der [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx).
 - Stellen Sie sicher, dass die Verwaltungsbaseline eine auf die strategische Richtung der Cloudeinführung abgestimmte betriebliche Unterstützung bietet.
@@ -94,7 +94,7 @@ Strategische Entscheidungen wirken sich unmittelbar auf die Leistung sowie indir
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudstrategieteam | <li> Cloudgovernanceteam <li> Cloudbetriebsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
+| <li> Cloudstrategieteam | <li> Cloudgovernanceteam <li> Cloudbetriebsteam <li> Cloudkompetenzzentrum (CCoE) oder zentrales IT-Team |
 
 ## <a name="step-4-assess-and-plan-for-workload-adoption"></a>Schritt 4: Bewerten und Planen der Workloadeinführung
 
@@ -111,7 +111,7 @@ Wenn Sie den Plan verstehen, können Sie auch das Cloudbetriebsteam in den Entwi
 **Hinweis zur Erreichung der Ziele:**
 
 - [Erfassen von Bestandsdaten](../digital-estate/inventory.md): Richten Sie eine Datenquelle für die Analyse des digitalen Bestands vor der Einführung ein.
-- [Bewährte Methode: Azure Migrate](../plan/contoso-migration-assessment.md): Verwenden Sie Azure Migrate, um den Bestand zu erfassen.
+- [Bewährte Methode: Azure Migrate:](../plan/contoso-migration-assessment.md) Verwenden Sie Azure Migrate, um den Bestand zu erfassen.
 - [Inkrementelle Rationalisierung](../digital-estate/rationalize.md#incremental-rationalization): Verwenden Sie während der inkrementellen Rationalisierung eine quantitative Analyse, um Cloudkandidaten für Budgetierungszwecke zu identifizieren.
 - [Abstimmen von Kostenmodellen und Vorhersagemodellen](../digital-estate/calculate.md): Verwenden Sie Azure Cost Management, um Kosten- und Vorhersagemodelle durch [Erstellen von Budgets](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) abzustimmen.
 - [Entwickeln Ihres Cloudeinführungsplans](../plan/plan-intro.md#build-your-cloud-adoption-plan): Erstellen Sie einen Plan mit handlungsrelevanten Details zu Workloads und Ressourcen sowie zum zeitlichen Ablauf.
@@ -155,7 +155,7 @@ Der langfristige Betrieb kann durch die Entscheidungen beeinflusst werden, die S
 - Überprüfen Sie die Einhaltung von Entwurfsrichtlinien und Betriebsanforderungen für Ressourcenkonsistenz.
 - Dokumentieren Sie alle erweiterten Betriebsanforderungen in der [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx).
 
-**Hinweis zur Erreichung der Ziele:**
+**Hinweis zur Erreichung der Zielvorgaben:**
 
 - [Prüfliste zur Bereitschaft der Umgebung](../migrate/migration-considerations/prerequisites/planning-checklist.md)
 - [Prüfliste vor der Höherstufung](../migrate/migration-considerations/optimize/ready.md)

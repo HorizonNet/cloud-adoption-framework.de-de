@@ -1,22 +1,22 @@
 ---
-title: Innovationstools für die Interaktion über Apps
-description: Hier finden Sie Informationen zu Azure-Tools, die die Entwicklung von Apps beschleunigen, die mit der Innovationsmethodik des Frameworks für die Cloudeinführung (Cloud Adoption Framework) in Einklang stehen.
+title: Innovationstools für die Interaktion über Anwendungen
+description: Hier finden Sie Informationen zu Azure-Tools, die die Entwicklung von Anwendungen beschleunigen, die mit der Innovationsmethodik des Cloud Adoption Framework in Einklang stehen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: fe217a1fb6379522d8afccc9640bdd32409eb1cd
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: b92edee6919eebc9371e2f018e0bd2422634ca74
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219817"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86449845"
 ---
-# <a name="tools-to-engage-via-apps-in-azure"></a>Tools zum Interagieren durch Apps in Azure
+# <a name="tools-to-engage-via-applications-in-azure"></a>Tools für die Interaktion über Anwendungen in Azure
 
-Wie unter [Interagieren über Apps](../considerations/apps.md) beschrieben, können Anwendungen ein wichtiger Aspekt einer MVP-Lösung sein. Häufig werden Anwendungen benötigt, um eine Hypothese zu testen. Dieser Artikel hilft Ihnen beim Kennenlernen der Tools, die Azure zum Beschleunigen der Entwicklung dieser Anwendungen bereitstellt.
+Wie unter [Einbinden durch Anwendungen](../considerations/apps.md) beschrieben, können Anwendungen ein wichtiger Aspekt einer MVP-Lösung sein. Häufig werden Anwendungen benötigt, um eine Hypothese zu testen. Dieser Artikel hilft Ihnen beim Kennenlernen der Tools, die Azure zum Beschleunigen der Entwicklung dieser Anwendungen bereitstellt.
 
 ![Der Cloud Adoption Framework-Ansatz für die Interaktion über Apps](../../_images/innovate/engage-via-apps.png)
 
@@ -24,7 +24,7 @@ Wie unter [Interagieren über Apps](../considerations/apps.md) beschrieben, kön
 
 Sie können diese Art der digitalen Erfindung durch jeden der nachfolgend aufgeführten Ansätze beschleunigen. Die vorhergehende Abbildung veranschaulicht auch diese Ansätze. Technische Leitfäden zum Beschleunigen digitaler Erfindungen werden links im Inhaltsverzeichnis auf dieser Seite aufgeführt. Diese Artikel sind nach ihren Ansätzen gruppiert, um den Leitfaden an der Gesamtmethodik auszurichten.
 
-Für diesen Artikel können Sie davon ausgehen, dass alle Erfindungen, die in einer Anwendung resultieren, aus einer freigegebenen Lösung stammen, wie im Artikel zur [Unterstützung der Einführung](./ci-cd.md) beschrieben. Gehen Sie auch davon aus, dass jede Anwendung zu einer Art von Kundenerlebnis führt (sowohl für interne als auch für externe Kunden).
+Nehmen Sie für die Zwecke dieses Artikels an, dass alle Erfindungen, aus denen eine Anwendung hervorgeht, aus einer gemeinsamen Lösung stammen, wie unter [Tools zum Unterstützen der Einführung in Azure](./ci-cd.md) beschrieben. Gehen Sie auch davon aus, dass jede Anwendung zu einer Art von Kundenerlebnis führt (sowohl für interne als auch für externe Kunden).
 
 Basierend auf diesen Annahmen sind die folgenden drei Wege die häufigsten für Cloudeinführungsteams, die digitale Erfindungen entwickeln:
 
@@ -42,8 +42,8 @@ Je nachdem, welchen Weg das Cloudeinführungsteam einschlägt, bietet Azure Tool
 - Azure Kubernetes Service (AKS)
 - Azure Migrate
 - Azure Stack
-- PowerApps
-- Microsoft Flow
+- Power Apps
+- Power Automate
 - Power BI
 
 ## <a name="get-started"></a>Erste Schritte

@@ -7,18 +7,19 @@ ms.date: 04/09/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: de6299dd2dc7c8623137d77576ae681306abe375
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 335c323ce5669d82c5751a0ee58867b3c792b3fd
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85077069"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479760"
 ---
 # <a name="landing-zone-considerations"></a>Überlegungen zu Landezonen
 
 Eine Landezone ist der Grundbaustein jeder Cloudeinführungsumgebung. Der Begriff _Landezone_ bezeichnet eine Umgebung, die zum Hosten von Workloads in einer Cloudumgebung wie Azure bereitgestellt und vorbereitet wurde. Bei jeder Iteration der Bereitschaftsmethodik des Frameworks für die Cloudeinführung (Cloud Adoption Framework) wird letztendlich eine voll funktionsfähige Landezone angestrebt.
 
 ![Überlegungen zu Landezonen](../../_images/ready/landing-zone-considerations.png)
+_Abbildung 1: Überlegungen zu Landezonen._
 
 Diese Abbildung zeigt die wichtigsten Überlegungen bei der Implementierung einer Landezonenbereitstellung. Die Überlegungen können in drei Kategorien unterteilt werden: Hosting, Azure-Grundlagen und Governance.
 
@@ -40,7 +41,7 @@ Jede Landezone ist Teil einer umfassenderen Lösung zur Strukturierung von Resso
 
 ## <a name="governance-considerations"></a>Governanceüberlegungen
 
-Die Governancemethodik des Frameworks für die Cloudeinführung (Cloud Adoption Framework) bietet einen Prozess für die allgemeine Umgebungssteuerung. Es gibt jedoch zahlreiche Anwendungsfälle, in denen Governanceentscheidungen für jede einzelne Zielzone getroffen werden müssen. In vielen Szenarien werden Governancebaselines zwar ganzheitlich eingerichtet, aber für einzelne Zielzonen erzwungen. Dies gilt für die ersten Landezonen, die eine Organisation bereitstellt.
+Die Governancemethodik des Frameworks für die Cloudeinführung (Cloud Adoption Framework) bietet einen Prozess für die allgemeine Umgebungssteuerung. In zahlreichen Anwendungsfällen müssen Sie möglicherweise Governanceentscheidungen für jede einzelne Zielzone treffen. In vielen Szenarien werden Governancebaselines zwar ganzheitlich eingerichtet, aber für einzelne Zielzonen erzwungen. Dies gilt für die ersten Landezonen, die eine Organisation bereitstellt.
 
 Die folgenden Artikel unterstützen Sie beim Treffen governancebezogener Entscheidungen zur Landezone. Sie können jede Entscheidung in Ihre Governancebaselines einbeziehen.
 

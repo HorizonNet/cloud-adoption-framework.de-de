@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4850fe8377c642ae7af2c763ee28c13d90f25b61
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 3975afb6f81dda9c1b68070de8d251da741d55e9
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83754984"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450270"
 ---
 # <a name="deployment-acceleration-policy-compliance-processes"></a>Beschleunigung der Bereitstellung – Prozesse für die Richtlinienkonformität
 
@@ -55,7 +55,7 @@ Die folgenden Auslöser und Durchsetzungsmaßnahmen sind Beispiele, die Sie bei 
 
 - **Unerwartete Änderungen in der Konfiguration erkannt.** Wenn sich die Konfiguration einer Ressource unerwartet ändert, arbeiten Sie mit IT-Mitarbeitern und Workloadbesitzern zusammen, um die Hauptursache zu identifizieren und einen Plan zur Problembehandlung zu entwickeln.
 - **Konfiguration der neuen Ressourcen entspricht nicht der Richtlinie.** Arbeiten Sie mit DevOps-Teams und Workloadbesitzern zusammen, um die Richtlinien für die Beschleunigung der Bereitstellung beim Projektstart zu überprüfen, damit jeder Beteiligte die relevanten Anforderungen der Richtlinie versteht.
-- **Fehler bei der Bereitstellung oder Konfigurationsprobleme führen zu Verzögerungen in Projektzeitplänen.** Arbeiten Sie mit Entwicklungsteams und Workloadbesitzern zusammen, um sicherzustellen, dass das Team versteht, wie die Bereitstellung von cloudbasierten Ressourcen hinsichtlich Konsistenz und Wiederholbarkeit automatisiert werden kann. Vollautomatische Bereitstellungen sollten früh im Entwicklungszyklus gefordert sein. Eine Umsetzung zu einem späteren Zeitpunkt im Entwicklungszyklus führt in der Regel zu unerwarteten Problemen und Verzögerungen.
+- **Fehler bei der Bereitstellung oder Konfigurationsprobleme führen zu Verzögerungen in Projektzeitplänen.** Arbeiten Sie mit Entwicklungsteams und Workloadbesitzern zusammen, um sicherzustellen, dass das Team versteht, wie die Bereitstellung von cloudbasierten Ressourcen hinsichtlich Konsistenz und Wiederholbarkeit automatisiert werden kann. Vollständig automatisierte Bereitstellungen sollten früh im Entwicklungszeitraum erforderlich sein. Der spätere Versuch führt in der Regel zu unerwarteten Problemen und Verzögerungen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

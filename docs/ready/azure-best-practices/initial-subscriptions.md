@@ -1,18 +1,18 @@
 ---
 title: Erstellen Ihrer anfänglichen Azure-Abonnements
-description: Beginnen Sie mit der Einführung von Azure, indem Sie Ihre anfänglichen Abonnements erstellen.
+description: In diesem Artikel erhalten Sie Informationen zum Beginn der Cloudeinführung durch das Erstellen Ihrer anfänglichen Abonnements.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8a1b1838617c9d82c4e8cca239aa4abc9d853f3c
-ms.sourcegitcommit: 568037e0d2996e4644c11eb61f96362a402759ec
+ms.openlocfilehash: 1e5105a9296ec3059c979bb0a7adc3b46aa99998
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84799958"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479924"
 ---
 # <a name="create-your-initial-azure-subscriptions"></a>Erstellen Ihrer anfänglichen Azure-Abonnements
 
@@ -26,6 +26,7 @@ Erstellen Sie zunächst zwei Abonnements:
 - Erstellen Sie ein zweites Abonnement, das als Nichtproduktionsumgebung (Dev/Test) verwendet werden soll. Nutzen Sie dazu ein [Angebot für Azure Dev/Test](https://azure.microsoft.com/pricing/dev-test), um die Kosten niedrig zu halten.
 
 ![Ein anfängliches Abonnementmodell, das Schlüssel neben Feldern mit der Bezeichnung „Produktion“ und „Nichtproduktion“ zeigt](../../_images/ready/initial-subscription-model.png)
+_Abbildung 1: Ein anfängliches Abonnementmodell, das Schlüssel neben Feldern mit der Bezeichnung „Produktion“ und „Nichtproduktion“ zeigt_
 
 <!-- docsTest:ignore Dev/Test -->
 
@@ -43,12 +44,14 @@ Dieser Ansatz hat viele Vorteile:
 Wenn Innovationsziele ein Teil Ihrer Strategie für die Cloudeinführung sind, erwägen Sie die Erstellung eines oder mehrerer Sandboxabonnements. Sie können Sicherheitsrichtlinien anwenden, um diese Testabonnements von Ihren Produktions- und Nichtproduktionsumgebungen zu isolieren. In diesen isolierten Umgebungen können Benutzer problemlos mit Azure-Funktionen experimentieren. Verwenden Sie zum Erstellen dieser Abonnements ein Azure Dev/Test-Angebot.
 
 ![Ein anfängliches Abonnementmodell, das Schlüssel neben Feldern mit der Bezeichnung „Produktion“, „Nichtproduktion“ und „Sandboxes“ zeigt](../../_images/ready/initial-subscription-model-with-sandboxes.png)
+_Abbildung 2: Ein Abonnementmodell mit Sandboxabonnements_
 
 ## <a name="shared-services-subscription"></a>Abonnement für gemeinsam genutzte Dienste
 
 Wenn Sie planen, **innerhalb von 24 Monaten mehr als 1.000 VMs oder Compute-Instanzen in der Cloud** zu hosten, erstellen Sie ein weiteres Azure-Abonnement für gemeinsame genutzte Dienste. So sind Sie darauf vorbereitet, Ihre endgültige Unternehmensarchitektur zu unterstützen.
 
 ![Ein anfängliches Abonnementmodell, das Schlüssel neben Feldern mit der Bezeichnung „Produktion“ und „Gemeinsam genutzte Dienste“ zeigt](../../_images/ready/initial-subscription-model-with-shared-services.png)
+_Abbildung 3: Ein Abonnementmodel mit freigegebenen Diensten_
 
 ## <a name="next-steps"></a>Nächste Schritte
 

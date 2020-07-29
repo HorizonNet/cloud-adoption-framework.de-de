@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 964c1b4e97f994602baea8b54066bcbc78cf5e13
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 31c010e60c21890803b0897394ec63530ee34cd4
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076305"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450440"
 ---
 # <a name="get-started-improve-reliability-with-the-right-controls"></a>Erste Schritte: Verbessern der Zuverlässigkeit mit den richtigen Steuerungen
 
@@ -126,7 +126,7 @@ Wenn Sie den Einführungsplan mit der Analyse des digitalen Bestands abstimmen, 
 **Hinweis zur Erreichung der Ziele:**
 
 - [Erfassen von Bestandsdaten](../digital-estate/inventory.md): Richten Sie eine Datenquelle für die Analyse des digitalen Bestands vor der Einführung ein.
-- [Bewährte Methoden – Azure Migrate](../plan/contoso-migration-assessment.md): Verwenden Sie Azure Migrate, um den Bestand zu erfassen.
+- [Bewährte Methode: Azure Migrate:](../plan/contoso-migration-assessment.md) Verwenden Sie Azure Migrate, um den Bestand zu erfassen.
 - [Inkrementelle Rationalisierung](../digital-estate/rationalize.md#incremental-rationalization): Während der inkrementellen Rationalisierung kann eine quantitative Analyse Cloudkandidaten zu Budgetierungszwecken identifizieren.
 - [Abstimmen von Kostenmodellen und Vorhersagemodellen](../digital-estate/calculate.md): Verwenden Sie Azure Cost Management, um Kosten- und Vorhersagemodelle durch [Erstellen von Budgets](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) abzustimmen.
 - [Entwickeln Ihres Cloudeinführungsplans](../plan/plan-intro.md#build-your-cloud-adoption-plan): Erstellen Sie einen Plan mit handlungsrelevanten Details zu Workloads und Ressourcen sowie zum zeitlichen Ablauf.

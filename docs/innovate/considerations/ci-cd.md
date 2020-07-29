@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 54a2892ed657c08ee6c984798a61c1ff10716257
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 6b0aebc9c565cb60a83d5b4b0cfc3054d79b7ed1
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219749"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478836"
 ---
 <!-- cSpell:ignore deprioritize -->
 
@@ -22,11 +22,11 @@ Der ultimative Test der Innovation ist die Reaktion des Kunden auf Ihre Erfindun
 
 ## <a name="reduce-friction-that-affects-adoption"></a>Verringern von Reibungen, die sich auf die Einführung auswirken
 
-Es gibt einige Hauptreibungspunkte bei der Einführung, die durch eine Kombination aus Technologie und Prozessen minimiert werden können. Für Leser mit Kenntnissen von Continuous Integration (CI) und Continuous Deployment (CD) oder DevOps-Prozessen wird das Folgende sehr vertraut sein. Dieser Artikel schafft einen Ausgangspunkt für Cloudeinführungsteams, der Innovation und Feedbackschleifen anregt. Künftig könnten sich auf der Grundlage dieses Ausgangspunkts stabilere CI/CD- oder DevOps-Ansätze entwickeln, wenn die Produkte und Teams ausgereift sind.
+Einige Hauptreibungspunkte bei der Einführung können durch eine Kombination aus Technologie und Prozessen minimiert werden. Für Leser mit Kenntnissen von Continuous Integration (CI) und Continuous Deployment (CD) oder DevOps-Prozessen wird das Folgende sehr vertraut sein. Dieser Artikel schafft einen Ausgangspunkt für Cloudeinführungsteams, der Innovation und Feedbackschleifen anregt. Künftig könnten sich auf der Grundlage dieses Ausgangspunkts stabilere CI/CD- oder DevOps-Ansätze entwickeln, wenn die Produkte und Teams ausgereift sind.
 
 Wie unter [Messen der Auswirkungen für Kunden](./measure.md) beschrieben, erfordert die positive Validierung jeder Hypothese Iterationen und Entschlossenheit. Während eines beliebigen Innovationszyklus werden Sie weit mehr Niederlagen als Siege erleben. Dies entspricht dem erwarteten Verhalten. Wenn jedoch Kundenanforderung, Hypothese und Lösung bedarfsabhängig ausgerichtet werden, ändert sich die Welt rasch. Dieser Artikel zielt darauf ab, die [technischen Spitzen](./build.md#reduce-complexity-and-delay-technical-spikes) zu minimieren, die die Innovation bremsen, aber dennoch sicherzustellen, dass Sie einige solide bewährte Methoden anwenden. Auf diese Weise kann das Team Entwürfe für einen zukünftigen Erfolg entwickeln und dabei die aktuellen Anforderungen der Kunden erfüllen.
 
-## <a name="empower-adoption-the-maturity-model"></a>Unterstützung der Einführung: das Reifemodell
+## <a name="empower-adoption-the-maturity-model"></a>Unterstützung der Einführung: Das Reifegradmodell
 
 Das Hauptziel der [Innovationsmethodik](./index.md) ist das Schaffen von Kundenpartnerschaften und Beschleunigen von Feedbackschleifen, was zu Marktinnovationen führen wird. In der folgenden Abbildung und den folgenden Abschnitten werden die anfänglichen Implementierungen beschrieben, die diese Methodik unterstützen.
 
@@ -47,7 +47,7 @@ Wie unter [Messen der Auswirkungen für Kunden](./measure.md) beschrieben, erfor
 
 Zum Skalieren von Innovationen gibt es kein wertvolleres Tool als eine freigegebene Codebasis für die Lösung. Leider gibt es keine zuverlässige Möglichkeit, vorherzusagen, mit welcher Iteration oder welchem MVP die gewinnende Kombination erzielt wird. Daher ist es nie zu früh, eine freigegebene Codebasis oder ein Repository einzurichten. Dies ist die einzige [technische Spitze](./build.md#reduce-complexity-and-delay-technical-spikes), die nie verzögert werden sollte. Wenn das Team verschiedene MVP-Lösungen durchläuft, ermöglicht ein freigegebenes Repository mühelose Zusammenarbeit und beschleunigte Entwicklung. Wenn Änderungen der Lösung Lernmetriken beeinträchtigen, können Sie mit der Versionskontrolle ein Rollback auf eine frühere, effektivere Version der Lösung durchführen.
 
-Das gängigste Tool für die Verwaltung von Coderepositorys ist [GitHub](https://guides.github.com). Damit lässt sich in wenigen Schritten ein gemeinsam genutztes Coderepository erstellen. Außerdem kann das Feature [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) von Azure DevOps zum Erstellen eines [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git)- oder [Team Foundation](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc)-Repositorys verwendet werden.
+Das gängigste Tool für die Verwaltung von Coderepositorys ist [GitHub](https://guides.github.com). Damit lässt sich in wenigen Schritten ein gemeinsam genutztes Coderepository erstellen. Außerdem kann das Feature [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) von Azure DevOps zum Erstellen eines [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git)- oder [TFVC](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc)-Repositorys verwendet werden.
 
 ## <a name="feedback-loops"></a>Feedbackschleifen
 
@@ -63,8 +63,7 @@ Wenn Einführungen skaliert werden und eine Hypothese sich bedarfsabhängig eine
 
 In Continuous Integration werden Codeänderungen häufig in den Hauptbranch zusammengeführt. Automatisierte Build- und Testprozesse stellen sicher, dass der Code im Hauptbranch immer Produktionsqualität aufweist. Dies garantiert, dass Entwickler zusammenarbeiten, um gemeinsam genutzte Lösungen zu entwickeln, die exakte und zuverlässige Feedbackschleifen bieten.
 
-Azure DevOps und [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines) bieten mit nur wenigen Schritten Continuous Integration-Funktionen für GitHub oder eine Vielzahl anderer Repositorys.
-Erfahren Sie mehr über [Continuous Integration](https://docs.microsoft.com/azure/devops/learn/what-is-continuous-integration), oder führen Sie die [praktischen Übungseinheiten](https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration) aus, um weitere Informationen zu erhalten. Es gibt auch Lösungsarchitekturen, die die Erstellung Ihrer [CI/CD-Pipelines über Azure DevOps](https://azure.microsoft.com/solutions/devops) beschleunigen.
+Azure DevOps und [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines) bieten mit nur wenigen Schritten Continuous Integration-Funktionen für GitHub oder eine Vielzahl anderer Repositorys. Erfahren Sie mehr über [Continuous Integration](https://docs.microsoft.com/azure/devops/learn/what-is-continuous-integration), oder führen Sie die [praktischen Übungseinheiten](https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration) aus, um weitere Informationen zu erhalten. Lösungsarchitekturen sind verfügbar, die die Erstellung Ihrer [CI/CD-Pipelines über Azure DevOps](https://azure.microsoft.com/solutions/devops) beschleunigen können.
 
 ## <a name="reliable-testing"></a>Zuverlässiges Testen
 

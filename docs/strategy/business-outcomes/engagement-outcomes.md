@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 309132227df915f6673d1d5509a64f9d796af40c
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: b778ec6d71797d272155b1c72f82a0d50fd5a928
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218899"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450644"
 ---
 <!-- cSpell:ignore ExakTime -->
 
@@ -45,6 +45,12 @@ Während kundenorientierter Transformationen wie cloudfähiger Anwendungsinnovat
 > Vice President für Softwareentwicklung bei
 >
 > ExakTime
+
+## <a name="intelligent-contact-center"></a>Intelligentes Contact Center
+
+Kundenzufriedenheit und Benutzerfreundlichkeit sind der Kern erfolgreicher Organisationen. Wenn Sie dafür sorgen, dass sich Ihre Mitarbeiter auf erstklassigen Kundendienst konzentrieren können, schaffen Sie die Basis für langfristige Kundenloyalität. Mit der heute verfügbaren KI-Technologie können viele Schritte während eines Kundenanrufes automatisiert werden, sodass der Contact Center-Agent mehr Zeit für erstklassigen Kundendienst hat.
+
+- **Beispiel:** Ein Versicherungsunternehmen hat durch Erstellen einer Azure Bot Service-Lösung digitale Agents implementiert, um schnell auf Kundenanforderungen über seine Website zu reagieren, und eine mobile App. Im Rahmen der Ausdehnung einer verbesserten Kundendiensterfahrung auf das Contact Center hat das Versicherungsunternehmen eine Live-Anruftranskription, Standpunktanalyse und Schlüsselbegriffserkennung implementiert, um den Contact Center-Agent bei den empfohlenen nächsten Schritten und der Formularverarbeitung zu unterstützen. Dies verringerte die Zahl wiederholter Anrufe von Kunden beim Contact Center und ermöglichte dem Contact Center-Agent, sich mehr darauf zu konzentrieren, eine optimale Kundenerfahrung zu bieten statt administrative und operative Tätigkeiten auszuführen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

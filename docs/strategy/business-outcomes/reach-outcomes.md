@@ -7,13 +7,14 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 774d910786a5458244298228669126410a78afd8
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 10c58651c21f4b220242fdf540202a87f6d151d4
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194968"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450950"
 ---
+<!-- cSpell:ignore Personalizer -->
 <!-- docsTest:ignore "global reach" -->
 
 # <a name="examples-of-global-reach-outcomes"></a>Beispiele für globale Reichweitenergebnisse
@@ -29,6 +30,8 @@ Bei Cloudlösungen werden die Kosten für die Globalisierung an den Cloudanbiete
 Die Erschließung eines neuen Markts kann während einer Transformation eines der wichtigsten Geschäftsergebnisse sein. Durch die Möglichkeit einer schnellen Bereitstellung von Ressourcen ohne längerfristige Verpflichtung in einem Markt können leitende Vertriebs- und Betriebsmitarbeiter Optionen erkunden, die in der Vergangenheit nicht einmal in Erwägung gezogen worden wären.
 
 - **Beispiel:** Ein Kosmetikhersteller hat einen Trend entdeckt. Einige Produkte werden in die Region Asien-Pazifik geliefert, obwohl dort keine Vertriebsteams arbeiten. Die Mindestanforderungen an die Systeme für Außendienstmitarbeiter sind zwar niedrig, aber die Latenz verhindert eine RAS-Lösung. Um trotzdem von diesem Trend profitieren zu können, möchte der Vertriebsleiter ein Experiment mit Vertriebsteams in Japan und Südkorea starten. Da das Unternehmen bereits zur Cloud migriert ist, konnte es die erforderlichen Systeme in Japan und Südkorea innerhalb weniger Tage bereitstellen. So konnte der Vertriebsleiter den Umsatz in der Region innerhalb von drei Monaten um _x %_ steigern. Diese beiden Märkte übertreffen andere Regionen auf der Welt auch weiterhin und führen zu Vertriebschancen in der gesamten Region.
+
+- **Beispiel:** Ein Onlinehändler, der weltweit Produkte versendet, kann mit seinen Kunden Zeitzonen übergreifend und in mehreren Sprachen zusammenarbeiten, indem er eine Azure Bot Service-Lösung zusammen mit Cognitive Services wie z. B. Translator, Language Understanding (LUIS), QnA Maker und Textanalyse verwendet. So erhalten seine Kunden die benötigten Informationen zum richtigen Zeitpunkt in ihrer Sprache. Der Einzelhändler passt die Benutzeroberfläche und die Katalogangebote nach den regionalen Vorlieben und um die Verfügbarkeit sicherzustellen mit dem Dienst [Personalisierung](https://azure.microsoft.com/services/cognitive-services/personalizer/) für seine Kunden weiter an.
 
 ## <a name="data-sovereignty"></a>Datenhoheit
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 00eefa3b865adf4230a77ed2062bef0a7cf0e854
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 553827517b7ef96c648e56e11287a688cd695af9
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83753600"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478003"
 ---
 # <a name="software-defined-networking-cloud-dmz"></a>Softwaredefiniertes Netzwerk: Cloud-DMZ
 

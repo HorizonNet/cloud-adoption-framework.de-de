@@ -7,15 +7,13 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: bdc4f36460acdb86e1bee55969044ad03b198285
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 861340fa1477f20a0af0a9794903e8a41f95e771
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83224118"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86478802"
 ---
-<!-- cSpell:ignore Satya Nadella Ries -->
-
 # <a name="learn-with-customers"></a>Lernen von Kunden
 
 Unsere aktuellen Kunden sind unsere beste Ressource zum Lernen. Sie helfen uns beim [Erstellen von Lösungen mit Blick auf die Kundenanforderungen](./build.md), indem sie uns als Partner dabei unterstützen, die beste Lösung für ihre Bedürfnisse zu finden. Sie tragen auch dazu bei, eine MVP-Lösung (Minimum Viable Product) zu erzeugen, indem sie Metriken generieren, anhand derer wir [die Auswirkungen auf den Kunden messen](./measure.md). In diesem Artikel wird beschrieben, wie Sie mit und von unseren Kundenpartnern lernen können.
@@ -52,7 +50,7 @@ Dass die Microsoft-Kultur in den letzten Jahren intern einem radikalen Wandel un
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Im nächsten Schritt zum Verstehen dieser Methodik können [häufige Herausforderungen und Hindernisse bei Innovationen](./challenges.md) Sie auf die Änderungen vorbereiten, die vor Ihnen liegen.
+Nutzen Sie im nächsten Schritt den Artikel [Häufige Herausforderungen und Hindernisse bei Innovationen](./challenges.md), um diese Methodik zu verstehen und sich auf die Änderungen vorzubereiten, die vor Ihnen liegen.
 
 > [!div class="nextstepaction"]
 > [Grundlegendes zu häufigen Herausforderungen und Hindernissen](./challenges.md)

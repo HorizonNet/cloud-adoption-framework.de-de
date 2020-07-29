@@ -7,12 +7,12 @@ ms.date: 03/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 919291ade8c760429eb5df4d848f745014912eb6
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 4af9516fe50068a76c4b85ae64bbb907410ee7ab
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861989"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86448808"
 ---
 <!-- cSpell:ignore asabbour sabbour kured -->
 
@@ -35,7 +35,7 @@ Die unten angegebene Checkliste und die Ressourcen dienen Ihnen beim Einstieg al
 >
 > | Checkliste  | Ressourcen |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
-> | **Vertrautmachen mit dem Whitepaper zu den Sicherheitsgrundlagen:** Bei den Hauptzielen einer sicheren Kubernetes-Umgebung geht es um die Sicherstellung, dass die ausgeführten Anwendungen geschützt sind, dass die Sicherheitsprobleme schnell ermittelt und behoben werden können und dass ähnliche Probleme in Zukunft verhindert werden. | [Ultimative Anleitung zum Schützen von Kubernetes (Whitepaper)](https://clouddamcdnprodep.azureedge.net/gdc/gdc8LXmoZ/original)     |
+> | **Vertrautmachen mit dem Whitepaper zu den Sicherheitsgrundlagen:** Bei den Hauptzielen einer sicheren Kubernetes-Umgebung geht es um die Sicherstellung, dass die ausgeführten Anwendungen geschützt sind, dass die Sicherheitsprobleme schnell ermittelt und behoben werden können und dass ähnliche Probleme in Zukunft verhindert werden. | [Leitfaden für den Schutz von Kubernetes (Whitepaper)](https://clouddamcdnprodep.azureedge.net/gdc/gdc8LXmoZ/original)     |
 > | **Informieren über die Einrichtung von gehärteten Clusterknoten aus Sicherheitsgründen:** Mit einem aus Sicherheitsgründen gehärteten Hostbetriebssystem wird die Angriffsfläche reduziert und die sichere Bereitstellung von Containern ermöglicht. | [Sicherheitshärtung bei AKS-Hosts für virtuelle Computer](https://docs.microsoft.com/azure/aks/security-hardened-vm-host-image)     |
 > | **Einrichten der rollenbasierten Zugriffssteuerung (RBAC) für Cluster:** Mit diesem Steuerungsmechanismus können Sie Benutzern oder Benutzergruppen die Berechtigung für bestimmte Aktionen (z. B. Ressourcen erstellen bzw. ändern oder Protokolle zur Workload ausgeführter Anwendungen anzeigen) zuweisen. | [Grundlegendes zur rollenbasierten Zugriffssteuerung (RBAC) in Kubernetes (Video)](https://www.youtube.com/watch?v=G3R24JSlGjY&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=12) <br> [Integrieren von Azure Active Directory in Azure Kubernetes Service](https://docs.microsoft.com/azure/aks/azure-ad-integration) <br> [Definieren des Zugriffs auf die Kubernetes-Konfigurationsdatei in Azure Kubernetes Service (AKS) mithilfe der rollenbasierten Zugriffssteuerung von Azure](https://docs.microsoft.com/azure/aks/control-kubeconfig-access)   |
 

@@ -1,18 +1,18 @@
 ---
 title: Grundlegende Konzepte in Azure
-description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um sich über die grundlegenden Konzepte und Bestimmungen von Azure und ihren Zusammenhang zu informieren.
+description: Verwenden Sie das Cloud Adoption Framework für Azure, um sich über die grundlegenden Konzepte und Bestimmungen von Azure und ihren Zusammenhang zu informieren.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 02bd4f4c36df13b91c0338c32e40538d617ac229
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: fbb7455347584b9b86ad4dcf3f9d923ffaa669af
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83756548"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479686"
 ---
 # <a name="azure-fundamental-concepts"></a>Grundlegende Konzepte in Azure
 

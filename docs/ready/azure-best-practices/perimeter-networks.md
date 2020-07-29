@@ -9,20 +9,20 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 222008cde15fdd0aef0a46ac3937fadade7e6cc9
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 4e97a1140d80a201489e86b5652a15b11b508e60
+ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076713"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86479873"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs WAFs -->
 
 # <a name="perimeter-networks"></a>Umkreisnetzwerke
 
-[Umkreisnetzwerke][perimeter-network] sorgen für sichere Konnektivität zwischen Ihren Cloudnetzwerken und Ihren lokalen oder physischen Datencenternetzwerken (sowie für Internetkonnektivität). Sie werden auch als „entmilitarisierte Zonen“ (DMZ) bezeichnet.
+[Umkreisnetzwerke][perimeter-network] sorgen für sichere Konnektivität zwischen Ihren Cloudnetzwerken und Ihren lokalen oder physischen Datencenternetzwerken (sowie für Internetkonnektivität). Ein Umkreisnetzwerk wird manchmal als „demilitarisierte Zone“ oder „DMZ“ bezeichnet.
 
-Damit Umkreisnetzwerke effektiv sind, müssen eingehende Pakete über Sicherheitsgeräte geleitet werden, die in sicheren Subnetzen gehostet werden, bevor sie zu Back-End-Servern gelangen. Beispiele hierfür sind Firewall, Angriffserkennungssysteme und Eindringschutzsysteme. Von Workloads an das Internet gesendete Pakete sollten ebenfalls über die Sicherheitsgeräte im Umkreisnetzwerk geleitet werden, bevor sie das Netzwerk verlassen. Dieser Fluss dient der Richtlinienerzwingung, Überprüfung und Überwachung.
+Damit Umkreisnetzwerke effektiv sind, müssen eingehende Pakete über Sicherheitsgeräte geleitet werden, die in sicheren Subnetzen gehostet werden, bevor sie zu Back-End-Servern gelangen. Beispiele hierfür sind die Firewall, Intrusion-Detection-Systeme und Intrusion-Prevention-Systeme. Von Workloads an das Internet gesendete Pakete sollten ebenfalls über die Sicherheitsgeräte im Umkreisnetzwerk geleitet werden, bevor sie das Netzwerk verlassen. Dieser Fluss dient der Richtlinienerzwingung, Überprüfung und Überwachung.
 
 Umkreisnetzwerken nutzen die folgenden Azure-Funktionen und -Dienste:
 
@@ -37,12 +37,13 @@ Umkreisnetzwerken nutzen die folgenden Azure-Funktionen und -Dienste:
 > [!NOTE]
 > Azure-Referenzarchitekturen bieten Beispielvorlagen, die Sie für die Implementierung Ihrer eigenen Umkreisnetzwerke verwenden können:
 >
-> - [Implementieren einer DMZ zwischen Azure und Ihrem lokalen Rechenzentrum](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)
-> - [Implementieren einer DMZ zwischen Azure und dem Internet](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
+> - [Implementieren eines Umkreisnetzwerks zwischen Azure und Ihrem lokalen Rechenzentrum](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)
+> - [Implementieren eines Umkreisnetzwerks zwischen Azure und dem Internet](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
 
 Normalerweise sind Ihr zentrales IT-Team und die und Sicherheitsteams für die Anforderungendefinition und den Betrieb Ihrer Umkreisnetzwerke verantwortlich.
 
 ![Beispiel für eine Hub-and-Spoke-Netzwerktopologie](../../_images/azure-best-practices/network-high-level-perimeter-networks.png)
+_Abbildung 1: Beispiel für eine Hub-and-Spoke-Netzwerktopologie_
 
 Das obige Diagramm enthält ein Beispiel für eine [Hub-and-Spoke-Netzwerktopologie](./hub-spoke-network-topology.md), in dem die Durchsetzung von zwei Umkreisnetzwerken mit Zugriff auf das Internet und ein lokales Netzwerk implementiert wird. Beide Perimeter befinden sich im DMZ-Hub. Im DMZ-Hub kann das Umkreisnetzwerk für das Internet hochskaliert werden und so viele Branchenanwendungen über mehrere Farmen von WAFs und Azure Firewall-Instanzen unterstützen, die zum Schutz der virtuellen Spoke-Netzwerke beitragen. Der Hub ermöglicht je nach Bedarf außerdem Konnektivität über VPN oder Azure ExpressRoute.
 
@@ -106,7 +107,7 @@ Einige Azure-Features ermöglichen Ihnen, einer [öffentlichen IP-Adresse][PIP] 
 
 [Azure DDoS Protection Standard][DDoS] stellt über den Diensttarif [Basic][DDoS] hinaus zusätzliche Funktionen zur Bedrohungsabwehr bereit, die speziell für Azure Virtual Network-Ressourcen optimiert sind. DDoS Protection Standard kann auf einfache Weise aktiviert werden und erfordert keine Änderungen der Anwendung.
 
-Sie können Schutzrichtlinien über dedizierte Datenverkehrsüberwachung und Machine Learning-Algorithmen optimieren. Richtlinien werden auf öffentliche IP-Adressen angewendet, die in virtuellen Netzwerken bereitgestellten Ressourcen zugeordnet sind. Beispiele hierfür sind Instanzen von Azure Load Balancer, Azure Application Gateway und Azure Service Fabric.
+Sie können Schutzrichtlinien über dedizierte Datenverkehrsüberwachung und Machine Learning-Algorithmen optimieren. Richtlinien werden auf öffentliche IP-Adressen angewendet, die in virtuellen Netzwerken bereitgestellten Ressourcen zugeordnet sind. Beispiele hierfür sind Instanzen von Azure Load Balancer, Application Gateway und Service Fabric.
 
 Über Azure Monitor-Ansichten steht Echtzeittelemetrie sowohl während eines Angriffs als auch für den Verlauf zur Verfügung. Mit der Web Application Firewall in Azure Application Gateway können Sie Schutz auf Anwendungsebene hinzufügen. Der Schutz wird für öffentliche Azure-IPv4-Adressen bereitgestellt.
 

@@ -7,12 +7,12 @@ ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c13936beacf44700078fad59bd93f7754d8ddd99
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 6745e271700280b87800fbb76d603242bf561b19
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861768"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86448757"
 ---
 <!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
 
@@ -37,7 +37,7 @@ Die unten angegebene Checkliste und die Ressourcen dienen Ihnen beim Einstieg al
 >
 > | Checkliste  | Ressourcen |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
-> | **Ermitteln der wichtigen Aspekte in Bezug auf den Netzwerkentwurf:** Machen Sie sich mit den Aspekten des Clusternetzwerkentwurfs vertraut, vergleichen Sie Netzwerkmodelle, und wählen Sie das Kubernetes-Netzwerk-Plug-In aus, das Ihre Anforderungen erfüllt.    | [Kubenet- und Azure Container Networking Interface-Netzwerke (CNI)](https://docs.microsoft.com/azure/aks/concepts-network#azure-virtual-networks) <br> [Verwenden von kubenet-Netzwerken mit Ihren eigenen IP-Adressbereichen in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/configure-kubenet) <br> [Konfigurieren von Azure CNI-Netzwerken in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/configure-azure-cni) <br> [Sicherer Netzwerkentwurf für einen AKS-Cluster](https://github.com/azure/sg-aks-workshop/blob/master/cluster-design/NetworkDesign.md) |
+> | **Ermitteln der wichtigen Aspekte in Bezug auf den Netzwerkentwurf:** Machen Sie sich mit den Aspekten des Clusternetzwerkentwurfs vertraut, vergleichen Sie Netzwerkmodelle, und wählen Sie das Kubernetes-Netzwerk-Plug-In aus, das Ihre Anforderungen erfüllt.    | [Kubenet-Netzwerkschnittstelle und Azure Container Networking Interface (CNI)](https://docs.microsoft.com/azure/aks/concepts-network#azure-virtual-networks) <br> [Verwenden von kubenet-Netzwerken mit Ihren eigenen IP-Adressbereichen in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/configure-kubenet) <br> [Konfigurieren von Azure CNI-Netzwerken in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/configure-azure-cni) <br> [Sicherer Netzwerkentwurf für einen AKS-Cluster](https://github.com/azure/sg-aks-workshop/blob/master/cluster-design/NetworkDesign.md) |
 > | **Erstellen mehrerer Knotenpools:** Zur Unterstützung von Anwendungen, die über unterschiedliche Compute- oder Speicheranforderungen verfügen, können Sie Ihren Cluster optional mit mehreren Knotenpools konfigurieren. Verwenden Sie zusätzliche Knotenpools beispielsweise zum Bereitstellen von GPUs für rechenintensive Anwendungen oder für den Zugriff auf leistungsstarken SSD-Speicher.   | [Erstellen und Verwalten mehrerer Knotenpools für einen Cluster in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/use-multiple-node-pools) |
 > | **Treffen einer Entscheidung zu Verfügbarkeitsanforderungen:** Um eine höhere Verfügbarkeit Ihrer Anwendungen zu gewährleisten, können Cluster über Verfügbarkeitszonen verteilt werden. Diese Zonen sind physisch getrennte Rechenzentren innerhalb einer bestimmten Region. Wenn die Clusterkomponenten auf mehrere Zonen verteilt sind, kann Ihr Cluster einen Fehler in einer dieser Zonen tolerieren. Ihre Anwendungen und Verwaltungsabläufe sind auch bei Problemen in einem gesamten Rechenzentrum weiterhin verfügbar.   | [Erstellen eines Azure Kubernetes Service-Clusters (AKS), der Verfügbarkeitszonen verwendet](https://docs.microsoft.com/azure/aks/availability-zones) |
 

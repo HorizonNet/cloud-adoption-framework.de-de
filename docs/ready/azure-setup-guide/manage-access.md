@@ -1,6 +1,6 @@
 ---
-title: Verwalten des Zugriffs auf Ihre Azure-Umgebung
-description: Hier erfahren Sie, wie Sie mit der rollenbasierten Zugriffssteuerung (RBAC) die Steuerung des Zugriffs auf Ihre Azure-Umgebung einrichten.
+title: Verwalten des Zugriffs auf Ihre Azure-Umgebung per rollenbasierter Zugriffssteuerung
+description: Hier erfahren Sie, wie Sie mit der rollenbasierten Zugriffssteuerung die Steuerung des Zugriffs auf Ihre Azure-Umgebung einrichten.
 author: LijuKodicheraJayadevan
 ms.author: kfollis
 ms.date: 04/09/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 9d1684b7d8dbde2fc507fa41f99c22ebe42ea587
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 7b05c894d326a49703b92d71590f0217349bc7fe
+ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194611"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "86450916"
 ---
 <!-- cSpell:ignore LijuKodicheraJayadevan -->
 
@@ -27,6 +27,7 @@ RBAC bietet eine ausführliche Zugriffsverwaltung für Ressourcen in Azure. Sie 
 Bei der Planung Ihrer Strategie für die Zugriffssteuerung erteilen Sie Benutzern die geringsten zum Ausführen ihrer Aufgaben erforderlichen Rechte. Die folgende Abbildung zeigt ein vorgeschlagenes Muster für die Zuweisung von RBAC.
 
 ![Diagramm mit RBAC-Rollen](./media/manage-access/role-examples.png)
+_Abbildung 1: RBAC-Rollen._
 
 Wenn Sie Ihre Vorgehensweise für die Zugriffssteuerung planen, empfehlen wir die Zusammenarbeit mit Personen in Ihrer Organisation, die über Rollen für die folgenden Bereiche verfügen: „Sicherheit und Konformität“, „IT-Verwaltung“ und „Enterprise-Architekt“.
 
@@ -88,7 +89,7 @@ So gewähren Sie einem Benutzer Zugriff auf ein Abonnement:
 
 Weitere Informationen finden Sie unter:
 
-- [Was ist die rollenbasierte Zugriffssteuerung (RBAC)?](https://docs.microsoft.com/azure/role-based-access-control/overview)
+- [Was ist die rollenbasierte Zugriffssteuerung (Azure Role-Based Access Control, Azure RBAC)?](https://docs.microsoft.com/azure/role-based-access-control/overview)
 - [Cloud Adoption Framework: Verwenden von rollenbasierter Zugriffssteuerung](../considerations/roles.md)
 
 ::: zone-end
