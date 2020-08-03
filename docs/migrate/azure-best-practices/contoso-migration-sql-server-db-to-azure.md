@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 44269a67e406abe6f67c2b5e233d4ea676f45163
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: e341378d4d363344a36cfabb3f9b5374262d9e6f
+ms.sourcegitcommit: 65e8d2fc3ef31f2bb11a50f7c7a2d1eb116a6632
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86199278"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254941"
 ---
 <!-- cSpell:ignore BACPAC FILESTREAM -->
 
@@ -57,7 +57,7 @@ Das Cloudteam von Contoso hat sich folgende Ziele für die verschiedenen Migrati
 
 ## <a name="solution-design"></a>Lösungsentwurf
 
-Contoso hat bereits eine [Migrationsbewertung](https://docs.microsoft.com/azure/cloud-adoption-framework/plan/contoso-migration-assessment) für seine digitalen Ressourcen mithilfe von [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) und dem [Dienstzuordnungsfeature](https://docs.microsoft.com/azure/azure-monitor/insights/service-map) durchgeführt.
+Contoso hat bereits eine [Migrationsbewertung](https://docs.microsoft.com/azure/cloud-adoption-framework/plan/contoso-migration-assessment) für seine digitalen Ressourcen mithilfe von [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) durchgeführt.
 
 Die Bewertung ergibt mehrere Workloads, die auf mehrere Abteilungen verteilt sind. Die Gesamtgröße des Migrationsprojekts erfordert ein gesamtes Projektmanagementbüro, das die Besonderheiten der Kommunikation, der Ressourcen und der Zeitplanung verwaltet.
 
@@ -100,7 +100,7 @@ Datenmigrationen folgen einem wiederholbaren Standardmuster. Dazu gehören die f
 
 #### <a name="step-1-discovery"></a>Schritt 1: Ermittlung
 
-Contoso hat Azure Migrate und das Dienstzuordnungsfeature verwendet, um die Abhängigkeiten in der Contoso-Umgebung offen zu legen. Mithilfe von Azure Migrate können Anwendungskomponenten in Windows- und Linux-Systemen automatisch erkannt und die Kommunikation zwischen Diensten zugeordnet werden. Mithilfe des Dienstzuordnungsfeatures von Azure Migrate wurden die Verbindungen zwischen Contoso-Servern, Prozessen, der Latenz zwischen eingehenden und ausgehenden Verbindungen und Ports in der über TCP verbundenen Architektur offengelegt. Contoso musste einfach nur [Microsoft Monitoring Agent](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows) und den [Microsoft Dependency-Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) installieren.
+Contoso hat Azure Migrate verwendet, um die Abhängigkeiten in der Contoso-Umgebung offenzulegen. Mithilfe von Azure Migrate können Anwendungskomponenten in Windows- und Linux-Systemen automatisch erkannt und die Kommunikation zwischen Diensten zugeordnet werden. Mithilfe von Azure Migrate wurden auch die Verbindungen zwischen Contoso-Servern, Prozessen, der Latenz zwischen eingehenden und ausgehenden Verbindungen und Ports in der über TCP verbundenen Architektur offengelegt.
 
 Außerdem fügte Contoso seinem Azure Migrate-Projekt den Datenmigrations-Assistenten hinzu. Durch Auswahl dieses Tools können die Datenbanken für die Migration zu Azure bewertet werden.
 

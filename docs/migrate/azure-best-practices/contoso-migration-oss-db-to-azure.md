@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: b035b70e73fe976dff2944ec2988c351b67be83a
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: f259663be5e6572cfcdd0724daa62173769e4709
+ms.sourcegitcommit: 65e8d2fc3ef31f2bb11a50f7c7a2d1eb116a6632
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86478326"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254992"
 ---
 # <a name="migrate-open-source-databases-to-azure"></a>Migration von Open-Source-Datenbanken zu Azure
 
@@ -50,7 +50,7 @@ Das Cloudteam von Contoso hat sich folgende Ziele für die verschiedenen Migrati
 
 ## <a name="solution-design"></a>Lösungsentwurf
 
-Contoso hat bereits eine [Migrationsbewertung](https://docs.microsoft.com/azure/cloud-adoption-framework/plan/contoso-migration-assessment) für seine digitalen Ressourcen mithilfe von [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) und dem [Dienstzuordnungsfeature](https://docs.microsoft.com/azure/azure-monitor/insights/service-map) durchgeführt.
+Contoso hat bereits eine [Migrationsbewertung](https://docs.microsoft.com/azure/cloud-adoption-framework/plan/contoso-migration-assessment) für seine digitalen Ressourcen mithilfe von [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) durchgeführt.
 
 ![Diagramm zum Migrationsprozess.](./media/contoso-migration-oss-db-to-azure/migration-process.png)
 _Abbildung 1: Migrationsvorgang_
@@ -92,9 +92,9 @@ Datenmigrationen folgen einem Standardmuster, das wiederholt werden kann. Dazu g
 
 #### <a name="step-1-discovery"></a>Schritt 1: Ermittlung
 
-Contoso hat Azure Migrate und das Dienstzuordnungsfeature verwendet, um die Abhängigkeiten in der Contoso-Umgebung offen zu legen. Mithilfe von Azure Migrate können Anwendungskomponenten in Windows- und Linux-Systemen automatisch erkannt und die Kommunikation zwischen Diensten zugeordnet werden. Mithilfe des Dienstzuordnungsfeatures von Azure Migrate legte das Unternehmen die Verbindungen zwischen Contoso-Servern, Prozessen, der Latenz zwischen eingehenden und ausgehenden Verbindungen und Ports in der über TCP verbundenen Architektur offen. Contoso musste einfach nur [Microsoft Monitoring Agent](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows) und den [Microsoft Dependency-Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) installieren.
+Contoso hat Azure Migrate verwendet, um die Abhängigkeiten in der Contoso-Umgebung offenzulegen. Mithilfe von Azure Migrate können Anwendungskomponenten in Windows- und Linux-Systemen automatisch erkannt und die Kommunikation zwischen Diensten zugeordnet werden. Mithilfe von Azure Migrate wurden auch die Verbindungen zwischen Contoso-Servern, Prozessen, der Latenz zwischen eingehenden und ausgehenden Verbindungen und Ports in der über TCP verbundenen Architektur des Unternehmens offengelegt. Contoso musste einfach nur [Microsoft Monitoring Agent](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows) und den [Microsoft Dependency-Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) installieren.
 
-Bei der Azure-Migration konnte Contoso mehr als 300 Datenbankinstanzen identifizieren, die migriert werden müssen. Von diesen Instanzen können etwa 40 Prozent zu PaaS-basierten Diensten verschoben werden. Die verbleibenden 60 Prozent der Instanzen müssen zu einem IaaS-basierten Ansatz mit einer VM verschoben werden, die die entsprechende Datenbanksoftware ausführt.
+Contoso konnte mehr als 300 Datenbankinstanzen identifizieren, die migriert werden müssen. Von diesen Instanzen können etwa 40 Prozent zu PaaS-basierten Diensten verschoben werden. Die verbleibenden 60 Prozent der Instanzen müssen zu einem IaaS-basierten Ansatz mit einer VM verschoben werden, die die entsprechende Datenbanksoftware ausführt.
 
 #### <a name="step-2-application-assessment"></a>Schritt 2: Anwendungsbewertung
 

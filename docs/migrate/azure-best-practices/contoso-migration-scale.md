@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 89f1f986bbe38162745e592e450ed13591936ad7
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: adde78f5eddf1229f6b73cdf0dfafb618843072f
+ms.sourcegitcommit: 65e8d2fc3ef31f2bb11a50f7c7a2d1eb116a6632
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86234189"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87254975"
 ---
 <!-- docsTest:ignore ARO POC Y/N None/Some/Severe Rehost/Refactor/Rearchitect/Rebuild -->
 
@@ -161,8 +161,8 @@ Contoso muss Azure Migrate verwenden, um den Umfang dieser Migration richtig zu 
 
 Contoso verwendet Azure Migrate folgendermaßen:
 
-- Contoso organisiert VMs in vCenter in Ordner. Dies erleichtert die Fokussierung bei den Bewertungen der VMs in einem bestimmten Ordner.
-- Azure Migrate verwendet die Azure-Dienstzuordnung, um Abhängigkeiten zwischen Computern zu bewerten. Zu diesem Zweck müssen auf den VMs, die bewertet werden sollen, Agents installiert werden.
+- Contoso organisiert VMs in vCenter in Ordnern. Dies erleichtert die Fokussierung bei den Bewertungen der VMs in einem bestimmten Ordner.
+- Contoso bewertet Abhängigkeiten zwischen Computern. Zu diesem Zweck müssen auf den VMs, die bewertet werden sollen, Agents installiert werden.
   - Contoso verwendet automatisierte Skripts, um die erforderlichen Windows- oder Linux-Agents zu installieren.
   - Mithilfe dieser Skripts kann Contoso eine Pushinstallation auf VMs innerhalb eines vCenter-Ordners ausführen.
 

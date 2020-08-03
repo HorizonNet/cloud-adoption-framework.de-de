@@ -3,16 +3,16 @@ title: Neues
 description: Enthält Informationen zu kürzlich durchgeführten Updates für das Framework für die Einführung der Microsoft Cloud (Microsoft Cloud Adoption Framework) für Azure.
 author: JanetCThomas
 ms.author: janet
-ms.date: 05/15/2020
+ms.date: 07/21/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 72ba0190010412dd00fa4bdfd2013e99382cd9c5
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 619709a29e5effc542662987864d4c755aeca496
+ms.sourcegitcommit: 622a7c5f1b47c9ad0a1c1ed3caa98bad6cf9d9c2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193863"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "87115083"
 ---
 <!-- markdownlint-disable MD024 -->
 
@@ -22,11 +22,43 @@ Hier ist eine Liste mit den Änderungen angegeben, die kürzlich am Framework f�
 
 Dieses Framework wurde in Zusammenarbeit mit Kunden, Partnern und internen Microsoft-Teams entwickelt. Neuer und aktualisierter Inhalt wird veröffentlicht, sobald er verfügbar ist. Mit diesen Releases können Sie die Anleitung zusammen mit uns testen, überprüfen und optimieren. Wir laden Sie ein, als Partner mit uns gemeinsam das Framework für die Cloudeinführung für Azure zu entwickeln.
 
+## <a name="july-17-2020"></a>17. Juli 2020
+Im Rahmen dieses Releases werden einige neue Szenarios hinzugefügt, die die Umsetzung der Cloudeinführung erleichtern.
+
+### <a name="migration-scenarios"></a>Migrationsszenarios
+
+Die neue [Übersichtsseite zu Migrationsszenarios](../scenarios/index.md) basiert auf der CAF-Methodologie für Migrationen, um zu zeigen, wie Azure das #OneMigrate-Versprechen umsetzt. Außerdem stehen Ansätze zur Verfügung, mehrere Szenarios von direkten oder Drittanbietern zu Azure zu migrieren. Dazu gehören drei neue Migrationsszenarios:
+
+| Artikel | Beschreibung |
+|---|---|
+| [Windows Virtual Desktop](../scenarios/wvd/index.md) | Es ermöglicht Produktivitätssteigerungen und beschleunigt die Migration verschiedener Workloads, um die Endbenutzererfahrung zu unterstützen. |
+| [Azure Stack](../scenarios/azure-stack/index.md) | Hier erhalten Sie Informationen zum Bereitstellen von Azure in Ihrem Rechenzentrum mithilfe von Azure Stack Hub. |
+
+### <a name="analytics-in-caf"></a>Analysen im CAF
+Das Microsoft Cloud Adoption Framework umfasst ab sofort auch Analyselösungen. In diesen neuen Themen liegt der Fokus auf den Best Practices für das Umsetzen von Analyselösungen während der Cloudeinführung.
+
+| Artikel | Beschreibung |
+|---|---|
+| [Analytics-Lösungen](../migrate/azure-best-practices/analytics/analytics-solutions-overview.md) | In diesem Artikel erhalten Sie Informationen zur Migration von lokalen Legacyumgebungen einschließlich Teradata, Netezza und Exadata zur Modernisierung von Analyselösungen. |
+| [Hochverfügbarkeit für Azure Synapse Analytics](../migrate/azure-best-practices/analytics/azure-synapse.md) | Hier erhalten Sie Informationen zu einem der wichtigsten Vorteile einer modernen, cloudbasierten Infrastruktur, der integrierten Hochverfügbarkeit und Notfallwiederherstellung. |
+| [Datendefinitionssprachen (DDLs) für die Schemamigration](../migrate/azure-best-practices/analytics/schema-migration-ddl.md) | Hier erhalten Sie Informationen zu den Datenbankobjekten und zugehörigen Prozessen bei der Vorbereitung einer Migration vorhandener Daten. |
+
+### <a name="ai-in-caf"></a>KI im CAF
+KI-Lösungen (künstliche Intelligenz) und Best Practices sind ab sofort im Microsoft Cloud Adoption Framework integriert. Diese KI-Lösungen unterstützen Sie bei der Beschleunigung von Innovationen mithilfe von Vorhersagen zu den Anforderungen von Kunden. Außerdem können Geschäftsprozesse automatisiert, Informationen erhoben und neue Möglichkeiten für die Kundenbindung erschlossen werden. Zudem kann die Servicequalität insgesamt während der Cloudeinführung verbessert werden.
+
+| Artikel | Beschreibung |
+|---|---|
+| [Verantwortungsbewusste künstliche Intelligenz](../strategy/responsible-ai.md) | Hier erhalten Sie Informationen zu KI-Prinzipien, die bei der Implementierung von KI-Lösungen berücksichtigt werden sollten. Außerdem erfahren Sie, wie Sie eine Strategie für verantwortungsbewusste künstliche Intelligenz etablieren. |
+| [Azure-Innovationsleitfaden: Innovationen mit KI](../innovate/innovation-guide/predict.md) | Hier erhalten Sie Informationen zu Innovationen mit KI. Außerdem finden Sie die für Ihre Implementierungsanforderungen am besten geeigneten Lösungen. |
+| [Künstliche Intelligenz (KI) im Cloud Adoption Framework](../innovate/ai/index.md) | Das Cloud Adoption Framework ist ein präskriptives Framework, das die Tools, Programme und Inhalte (Best Practices, Konfigurationsvorlagen und Architekturleitfäden) bietet, mit denen Sie die Einführung von KI und cloudnativen Methoden im großen Stil vereinfachen können. |
+| [MLOps mit Azure Machine Learning](../manage/mlops-machine-learning.md) | Hier erhalten Sie Informationen zu Best Practices zu MLOps mit Azure Machine Learning. |
+| [Innovationen mit KI](../innovate/best-practices/predict.md) | Hier erhalten Sie Informationen zu KI-Lösungen (Machine Learning, KI-Apps und -Agents, Wissensgewinnung) und zu Best Practices, die digitale Erfindungen beschleunigen können. | 
+
 ## <a name="june-15-2020"></a>15. Juni 2020
 
 Die ordnungsgemäße Konfiguration der Cloudumgebung ist häufig das erste und gängigste technische Hindernis während der Cloudeinführung. Der Schwerpunkt dieser Veröffentlichung liegt im Wesentlichen auf Anleitungen, mit denen Sie Bereitstellung von Cloudumgebungen beschleunigen können. Um dieses gängige Hindernis zu überwinden, werden im Cloud Adoption Framework für Azure die **Azure-Zielzonen** eingeführt.
 
-| Artikel | BESCHREIBUNG |
+| Artikel | Beschreibung |
 |---|---|
 | [Azure-Zielzonen](../ready/landing-zone/index.md) | Azure-Zielzonen erstellen eine gängige Gruppe von Entwurfsbereichen und Implementierungsoptionen, mit denen das Erstellen von Umgebungen gemäß dem Cloudeinführungsplan und dem Cloudbetriebsmodell beschleunigt wird. In diesem neuen Artikel werden Azure-Zielzonen eindeutiger erläutert. |
 | [Azure-Zielzonen: Entwurfsbereiche](../ready/landing-zone/design-areas.md) | Alle Azure-Zielzonen haben eine gemeinsame Gruppe von acht Entwurfsbereichen. Vor dem Bereitstellen einer der Azure-Zielzonen sollten Kunden beim Treffen wichtiger Entscheidungen jeden dieser Entwürfe untersuchen. |
@@ -62,7 +94,7 @@ Basierend auf Feedback haben wir neue Inhalte erstellt, um Ihnen den Einstieg in
 
 Wir haben alle Tools und Vorlagen für die Cloudeinführung an einem Ort zusammengeführt, damit sie leichter zu finden sind.
 
-| Artikel | BESCHREIBUNG |
+| Artikel | Beschreibung |
 |----------|-------------|
 | [Tools und Vorlagen](../reference/tools-templates.md) | Hier finden Sie die Tools, Vorlagen und Bewertungen, mit deren Hilfe Sie die Cloudeinführung beschleunigen können. |
 
@@ -79,7 +111,7 @@ Weitere Iteration der Verfeinerung von Migrationsmethodik und Bereitschaftsmetho
 
 ### <a name="ready-updates"></a>Aktualisierungen in Bezug auf die Bereitschaft
 
-| Artikel                                                                                                                 | BESCHREIBUNG                                                                                                                                                                                |
+| Artikel                                                                                                                 | Beschreibung                                                                                                                                                                                |
 |-------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Umgestalten von Zielzonen](../ready/landing-zone/refactor.md)                       | **Neuer Artikel:** Ausgehend von Workshops zur Bereitschaftsmethodik veranschaulicht dieser Artikel die Theorie, mit einer anfänglichen Vorlage zu beginnen, Entscheidungsstrukturen und Refactoring zu nutzen, um die Zielzone zu erweitern, und sich auf einen zukünftigen Zustand der Unternehmensbereitschaft zuzubewegen. |
 | [Erweitern der Zielzone](../ready/considerations/index.md)                       | **Neuer Artikel:** Baut auf dem Abschnitt über parallele Iterationen des Artikels zum Refactoring auf, um zu zeigen, wie verschiedene Arten von Zielzonenerweiterungen gemeinsame Prinzipien in die unterstützende Plattform einbetten würden. Der ursprüngliche Inhalt für diese Übersicht wurde in den Knoten [Grundlegende Überlegungen zu Zielzonen](../ready/considerations/basic-considerations.md) im Inhaltsverzeichnis verschoben. |
@@ -97,7 +129,7 @@ Wir haben einen Leitfaden zu den anfänglichen Abonnements hinzugefügt, die Sie
 
 ### <a name="ready-updates"></a>Aktualisierungen in Bezug auf die Bereitschaft
 
-| Artikel                                                                                                                 | BESCHREIBUNG                                                                                                                                                                                |
+| Artikel                                                                                                                 | Beschreibung                                                                                                                                                                                |
 |-------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Erstellen Ihrer anfänglichen Azure-Abonnements](../ready/azure-best-practices/initial-subscriptions.md)                       | **Neuer Artikel:** Erstellen Sie Ihre anfänglichen Produktions- und Nichtproduktionsabonnements, und entscheiden Sie, ob Sie Sandboxabonnements sowie ein Abonnement für gemeinsame Dienste erstellen. |
 | [Erstellen zusätzlicher Abonnements zum Skalieren Ihrer Azure-Umgebung](../ready/azure-best-practices/scale-subscriptions.md) | Hier erfahren Sie mehr über die Gründe für das Erstellen zusätzlicher Abonnements sowie das Verschieben von Ressourcen zwischen Abonnements, und Sie erhalten Tipps zum Erstellen neuer Abonnements.                                                   |
@@ -109,7 +141,7 @@ Wir haben eine ausführliche Anleitung hinzugefügt, in der die Tools, Programme
 
 ### <a name="kubernetes"></a>Kubernetes
 
-| Artikel                                                                                     | BESCHREIBUNG                                                                                                                                                                           |
+| Artikel                                                                                     | Beschreibung                                                                                                                                                                           |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Anwendungsentwicklung und Bereitstellung](../innovate/kubernetes/application-development.md) | **Neuer Artikel:** Enthält Prüflisten, Ressourcen und bewährte Methoden für die Planung der Anwendungsentwicklung, die Konfiguration von CI/CD-Pipelines und die Implementierung von Websitezuverlässigkeits-Engineering (Site Reliability Engineering) für Kubernetes. |
 | [Clusterentwurf und Vorgänge](../innovate/kubernetes/cluster-design-operations.md) | **Neuer Artikel:** Enthält Prüflisten, Ressourcen und bewährte Methoden für Clusterkonfiguration, Netzwerkentwurf, zukunftssichere Skalierbarkeit, Geschäftskontinuität und Notfallwiederherstellung für Kubernetes. |
@@ -123,20 +155,20 @@ Als Reaktion auf das erhaltene Feedback zur Kontinuität des Migrationsansatzes 
 
 ### <a name="strategy-updates"></a>Aktualisierungen in Bezug auf die Strategie
 
-| Artikel                                                                       | BESCHREIBUNG                                                                                                                                    |
+| Artikel                                                                       | Beschreibung                                                                                                                                    |
 |-------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Ausgewogenheit des Portfolios](../strategy/balance-the-portfolio.md)                 | Dieser Artikel wurde verschoben, damit er zu einem früheren Zeitpunkt der Strategiemethodik erscheint. So erhalten Sie an einem früheren Punkt des Lebenszyklus Einblick in den Denkprozess. |
 | [Abstimmen&nbsp;konkurrierender&nbsp;Prioritäten](../strategy/balance-competing-priorities.md) | **Neuer Artikel:** Es wird beschrieben, wie Sie Prioritäten für Methodiken so abstimmen, dass dies Ihrer Strategie nützt.                                         |
 
 ### <a name="plan-updates"></a>Aktualisierungen in Bezug auf den Plan
 
-| Artikel                                                                       | BESCHREIBUNG                                                                                                                                                                           |
+| Artikel                                                                       | Beschreibung                                                                                                                                                                           |
 |-------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Bewährte Methoden&nbsp;für&nbsp;Bewertungen](../plan/contoso-migration-assessment.md) | Dieser Artikel wurde in den neuen Abschnitt „Bewährte Methoden“ der Planmethodik verschoben. So erhalten Sie zu einem früheren Zeitpunkt des Lebenszyklus Einblick in die Bewertung von lokalen Umgebungen. |
 
 ### <a name="ready-updates"></a>Aktualisierungen in Bezug auf die Bereitschaft
 
-| Artikel                                                                   | BESCHREIBUNG                                                                                                              |
+| Artikel                                                                   | Beschreibung                                                                                                              |
 |---------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | [Was&nbsp;ist&nbsp;eine&nbsp;Zielzone?&nbsp;](../ready/landing-zone/index.md)                 | **Neuer Artikel:** Enthält eine Definition des Begriffs „Zielzone“.                                                      |
 | Erste Landezone         | **Neuer Artikel:** Enthält weitere Informationen zum Vergleich verschiedener Zielzonen.                                                     |
@@ -145,7 +177,7 @@ Als Reaktion auf das erhaltene Feedback zur Kontinuität des Migrationsansatzes 
 
 ### <a name="migration-updates"></a>Aktualisierungen in Bezug auf die Migration
 
-| Artikel                                                                                          | BESCHREIBUNG                                                                                                                                                             |
+| Artikel                                                                                          | Beschreibung                                                                                                                                                             |
 |--------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Übersicht](../migrate/azure-migration-guide/index.md)                                            | Diese Aktualisierung umfasst eine eindeutigere Beschreibung des Leitfadens und eine Verringerung der Schritte.                                                                                                        |
 | [Bewerten](../migrate/azure-migration-guide/assess.md)                                             | Der Abschnitt „Hinterfragen der Annahmen“ wurde hinzugefügt, um zu verdeutlichen, wie diese Bewertungsebene zum Ansatz zur inkrementellen Bewertung passt, der in der Planmethodik beschrieben ist. |
