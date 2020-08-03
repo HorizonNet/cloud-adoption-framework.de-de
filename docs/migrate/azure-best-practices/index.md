@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: seo-azure-migrate
-ms.openlocfilehash: 86114f9a8a721d5475716d05f78c4cdc8a25637c
-ms.sourcegitcommit: bf0dac78ae25cc141408384399952622cc8f9cbf
+ms.openlocfilehash: 81f5fe9bf3f67031ffc35caf960009f0c3491c2c
+ms.sourcegitcommit: 580a6f66a0d0f3f5b755c68d757a84b2351a432f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87412272"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87472790"
 ---
 # <a name="azure-cloud-migration-best-practices-checklist"></a>Prüfliste mit bewährten Methoden für die Azure-Cloudmigration
 
@@ -28,9 +28,9 @@ Die folgenden Prüflisten enthalten Best Practices für die Azure-Cloudmigration
 
 ## <a name="migration-best-practices-for-technology-driven-scope-expansion"></a>Best Practices für die Migration für die technologieorientierte Umfangserweiterung
 
-- **[VMware-Migration](./vmware-host.md):** Das Migrieren von VMware-Hosts kann den gesamten Migrationsprozess beschleunigen. Jeder migrierte VMware-Host kann mithilfe eines Lift-and-Shift-Ansatzes mehrere Workloads in die Cloud verschieben. Nach der Migration können diese VMs und Workloads in VMware verbleiben oder zu modernen Cloudfunktionen migriert werden.
-- **[SQL Server-Migration](./sql-migration.md):** Das Migrieren von SQL Server-Instanzen kann den gesamten Migrationsprozess beschleunigen. Jede migrierte SQL Server-Instanz kann mehrere Datenbanken und Dienste verschieben, was zu einer Beschleunigung mehrerer Workloads beitragen kann.
-- **[Mehrere Rechenzentren](./multiple-datacenters.md):** Die Migration mehrerer Rechenzentren erhöht die Komplexität erheblich. Während der Prozesse zur Bewertung, Migration, Optimierung und Verwaltung werden zur Vorbereitung auf komplexere Umgebungen zusätzliche Überlegungen erläutert.
+- **[VMware-Migration](./vmware-host.md):** Das Migrieren von VMware-Hosts kann den gesamten Migrationsprozess beschleunigen. Jeder migrierte VMware-Host kann mehrere Workloads in die Cloud verschieben. Nach der Migration können diese VMs und Workloads in VMware verbleiben oder zu modernen Cloudfunktionen migriert werden.
+- **[SQL Server-Migration](./sql-migration.md):** Das Migrieren von SQL Server-Instanzen kann den gesamten Migrationsprozess beschleunigen. Jede migrierte Instanz kann mehrere Datenbanken und Dienste verschieben, was zu einer Beschleunigung mehrerer Workloads beitragen kann.
+- **[Mehrere Rechenzentren](./multiple-datacenters.md):** Die Migration mehrerer Rechenzentren erhöht die Komplexität erheblich. Während der einzelnen Prozesse zum Verschieben (Bewertung, Migration, Optimierung und Verwaltung) werden zur Vorbereitung auf komplexere Umgebungen zusätzliche Überlegungen erläutert.
 - **[Datenanforderungen überschreiten Netzwerkkapazität](./network-capacity-exceeded.md):** Unternehmen entscheiden sich häufig für eine Migration zur Cloud, da die Kapazität, Geschwindigkeit und Stabilität eines bestehenden Rechenzentrums nicht mehr zufriedenstellend ist. Leider erhöhen dieselben Einschränkungen die Komplexität des Migrationsprozesses, was eine zusätzliche Planung während der Bewertungs- und Migrationsprozesse erfordert.
 - **[Strategie für Governance bzw. Compliance](./governance-or-compliance.md):** Wenn Governance und Compliance für den Erfolg einer Migration entscheidend sind, ist eine zusätzliche Abstimmung zwischen IT-Governanceteams und dem Cloudeinführungsteam erforderlich.
 
@@ -38,12 +38,12 @@ Die folgenden Prüflisten enthalten Best Practices für die Azure-Cloudmigration
 
 - [Einrichten von Netzwerken für zu Azure migrierte Workloads](./migrate-best-practices-networking.md)
 - [Bereitstellen einer Migrationsinfrastruktur](./contoso-migration-infrastructure.md)
-- [Kostenermittlung und Größenanpassung von Workloads, die zu Azure migriert werden](./migrate-best-practices-costs.md)
+- [Kostenermittlung und Größenanpassung von zu Azure migrierten Workloads](./migrate-best-practices-costs.md)
 - [Skalieren einer Migration zu Azure](./contoso-migration-scale.md)
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Bei der Überprüfung der Best Practices für die Azure-Migration sind [mehrere Rechenzentren](./multiple-datacenters.md) ein guter Ausgangspunkt.
+Bei der Überprüfung der Best Practices für die Azure-Migration ist folgender Artikel ein guter Ausgangspunkt:
 
 > [!div class="nextstepaction"]
 > [Mehrere Rechenzentren](./multiple-datacenters.md)
