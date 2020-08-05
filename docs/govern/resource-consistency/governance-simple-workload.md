@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: adbfaceb51618d50e64e81e571038671533135c7
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: fef5e1ccd6ac928ccf870ffff2029d43aba78143
+ms.sourcegitcommit: abbc6283f9f63a71333e0129ecdd8ad291517776
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450134"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87524033"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>Governance-Entwurf für eine einfache Workload
 
@@ -111,11 +111,6 @@ Als Nächstes muss Ihr Azure-**Kontobesitzer** ein [Abonnement erstellen](https:
 Nachdem das Abonnement erstellt und Ihr Azure AD-Mandant zugeordnet wurde, können Sie [den **Workloadbesitzer** dem Abonnement mit der integrierten Rolle **Besitzer** hinzufügen](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#to-assign-a-user-as-an-administrator).
 
 ## <a name="next-steps"></a>Nächste Schritte
-
-> [!div class="nextstepaction"]
-> [Bereitstellen einer grundlegenden Workload in Azure](../../infrastructure/virtual-machines/basic-workload.md)
-
-<!-- --->
 
 > [!div class="nextstepaction"]
 > [Informationen zum Ressourcenzugriff für mehrere Teams](./governance-multiple-teams.md)
