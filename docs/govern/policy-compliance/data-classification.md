@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0696eb9b3720519fe26641322fa8b50caf020620
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 781b45eac5f03333add896545e9a32f867473934
+ms.sourcegitcommit: 9662234674e663bc7d4bc134d303520cb146bd95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84994197"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "87560422"
 ---
 # <a name="what-is-data-classification"></a>Was ist die Datenklassifizierung?
 
@@ -39,11 +39,17 @@ In der nachstehenden Liste sind die von Microsoft verwendeten Klassifizierungen 
 
 Ressourcentags sind eine gute Methode zum Speichern von Metadaten. Sie können diese Tags zum Anwenden von Datenklassifizierungen auf bereitgestellte Ressourcen verwenden. Auch wenn das Kennzeichnen von Cloudressourcen keinen Ersatz für eine formale Datenklassifizierung darstellt, ist es ein wertvolles Hilfsmittel für das Verwalten von Ressourcen und das Anwenden von Richtlinien. [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) ist eine hervorragende Lösung, die Sie bei der Klassifizierung von Daten unterstützt – ganz gleich, ob sich diese in der lokalen Umgebung, in Azure oder an einem anderen Ort befinden. Diese Lösung sollte als Teil einer allgemeinen Klassifizierungsstrategie betrachtet werden.
 
-Weitere Informationen zu Tags für Ressourcen in Azure finden Sie unter [Verwenden von Tags zum Organisieren von Azure-Ressourcen und Verwaltungshierarchie](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources).
+## <a name="take-action"></a>Ausführen einer Aktion
+
+Versehen Sie Ressourcen mit einer definierten Datenklassifizierung. 
+
+- Sehen Sie sich in [einem der umsetzbaren Governanceleitfäden](../guides/index.md) Beispiele für das Anwenden von Tags innerhalb Ihres Portfolios an.
+- Lesen Sie den Artikel [Empfohlene Namens- und Kennzeichnungskonventionen](../../ready/azure-best-practices/naming-and-tagging.md#metadata-tags), um einen umfassenderen Kennzeichnungsstandard zu definieren.
+- Weitere Informationen zu Tags für Ressourcen in Azure finden Sie unter [Verwenden von Tags zum Organisieren von Azure-Ressourcen und Verwaltungshierarchie](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources).
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Wenden Sie Datenklassifizierungen im Rahmen eines der handlungsrelevanten Governanceleitfäden an.
+Lesen Sie auch den Artikel zum Schützen sensibler Daten aus dieser Artikelreihe. Der nächste Artikel enthält Informationen zum Umgang mit als vertraulich oder streng vertraulich klassifizierten Daten:
 
 > [!div class="nextstepaction"]
-> [Auswählen eines umsetzbaren Governanceleitfadens](../guides/index.md)
+> [Schützen von Datenlösungen](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)

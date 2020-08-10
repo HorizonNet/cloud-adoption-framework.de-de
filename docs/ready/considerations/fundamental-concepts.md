@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: fbb7455347584b9b86ad4dcf3f9d923ffaa669af
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 5c77156723fe1b5b54a775250bf368f886c4d101
+ms.sourcegitcommit: abbc6283f9f63a71333e0129ecdd8ad291517776
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479686"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87523982"
 ---
 # <a name="azure-fundamental-concepts"></a>Grundlegende Konzepte in Azure
 
@@ -60,7 +60,7 @@ Azure definiert drei Arten von Rollen für die Verwaltung von Abonnements, Ident
 - Rollenbasierte Zugriffssteuerung in Azure
 - Azure AD-Administrator (Azure Active Directory)
 
-Die Kontoadministratorrolle für ein Azure-Abonnement wird dem E-Mail-Konto zugewiesen, das zum Erstellen des Azure-Abonnements verwendet wird. Der Kontoadministrator ist der Besitzer des Abonnements, an den die Abrechnung erfolgt. Der Kontoadministrator kann die Abonnementdetails im [Azure-Kontocenter](https://account.azure.com/subscriptions) verwalten.
+Die Kontoadministratorrolle für ein Azure-Abonnement wird dem E-Mail-Konto zugewiesen, das zum Erstellen des Azure-Abonnements verwendet wird. Der Kontoadministrator ist der Besitzer des Abonnements, an den die Abrechnung erfolgt. Der Kontoadministrator kann über das Azure-Portal [Abonnementadministratoren verwalten](https://docs.microsoft.com/azure/cost-management-billing/manage/add-change-subscription-administrator).
 
 Standardmäßig wird die Dienstadministratorrolle für ein Abonnement auch dem E-Mail-Konto zugewiesen, das zum Erstellen des Azure-Abonnements verwendet wird. Der Dienstadministrator verfügt über Berechtigungen für das Abonnement, die einem RBAC-basierten Besitzer entsprechen. Der Dienstadministrator besitzt außerdem Vollzugriff auf das Azure-Portal. Der Kontoadministrator kann den Dienstadministrator in ein anderes E-Mail-Konto ändern.
 

@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: e8c464f7985dde96b3a2c09823c47266c104f58e
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 8243189c2db4c49d8d1f69e09c459e716130e46e
+ms.sourcegitcommit: abbc6283f9f63a71333e0129ecdd8ad291517776
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86191806"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87523999"
 ---
 # <a name="get-started-manage-cloud-costs"></a>Erste Schritte: Verwalten von Cloudkosten
 
@@ -27,6 +27,8 @@ Governance ist der Eckpfeiler der Kostenoptimierung innerhalb jedes großen Unte
 ## <a name="step-1-optimize-enterprise-costs"></a>Schritt 1: Optimieren der Unternehmenskosten
 
 Das Cloudgovernanceteam ist gut darauf vorbereitet, überhöhte oder ungeplante Ausgaben durch eine Kombination aus Leistungsüberwachung, Reduzierung der Ressourcengröße und sichere Beendigung ungenutzter Ressourcen zu bewerten und dagegen vorzugehen. Kostenoptimierung in Unternehmen beginnt mit einem gemeinsamen Teamverständnis der Tools, Prozesse und Abhängigkeiten, die erforderlich sind, um auf Kostenbelange auf Umgebungsebene klug zu reagieren.
+
+<!-- docsTest:ignore "your cost management policies" -->
 
 **Zielvorgaben:**
 
@@ -74,7 +76,7 @@ Wie unter [Schaffen einer kostenbewussten Organisation](../organize/cost-conscio
 
 Strategische Entscheidungen wirken sich direkt auf die Kostenkontrolle aus, durchlaufen den Einführungslebenszyklus und werden zu langfristigen Vorgängen. Strategische Klarheit verbessert die Kostenoptimierungsanstrengungen, die vom Governanceteam gesteuert werden.
 
-**Zielvorgaben:**
+**Ziele:**
 
 - Erfassen Sie Beweggründe, Ergebnisse und geschäftliche Begründungen in der [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx).
 - Erstellen des ersten Budgets mit Azure Cost Management.
@@ -138,7 +140,7 @@ Die Bereitschaftsmethodik des Microsoft Cloud Adoption Framework für Azure konz
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudeinführungsteam | <li> Cloudstrategieteam <li> Cloudgovernanceteam <li> Cloudkompetenzzentrum (CCoE) oder zentrales IT-Team |
+| <li> Cloudeinführungsteam | <li> Cloudstrategieteam <li> Cloudgovernanceteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
 
 ## <a name="step-5-complete-waves-of-migration-effort"></a>Schritt 5: Abschließen von Phasen der Migrationsbemühungen
 

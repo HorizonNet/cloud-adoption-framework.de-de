@@ -7,19 +7,18 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f9bf1205ae4e2d076b6213d1e0edb1cea4847ec5
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 23aadfaf252cdeffcf0aebb336db28dec80c2ab8
+ms.sourcegitcommit: 580a6f66a0d0f3f5b755c68d757a84b2351a432f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194492"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87473198"
 ---
 # <a name="sql-server-migration-best-practices-for-azure"></a>Bewährte Methoden für die SQL Server-Migration für Azure
 
-Durch die Migration einer vollständigen SQL Server-Instanz zu Azure können Sie die standardmäßige Migrationsmethodik beschleunigen, die im Cloud Adoption Framework beschrieben und unten dargestellt wird.
+Durch die Migration von SQL Server zu Azure können Sie die im Cloud Adoption Framework beschriebene Standardmethodik beschleunigen. Der Prozess ist im folgenden Diagramm dargestellt:
 
-![Cloud Adoption Framework-Migrationsmodell](../../_images/migrate/methodology.png)
+![Diagramm: Cloud Adoption Framework-Migrationsmodell](../../_images/migrate/methodology.png)
+*Abbildung 1*
 
-## <a name="migration-best-practices"></a>Bewährte Methoden für die Migration
-
-Das Inhaltsverzeichnis auf der linken Seite führt bewährte Methoden auf, die die Ausführung der SQL Server-Migration mithilfe des Leitfadens zur Azure-Datenbankmigration, mit Azure Database Migration Service oder anderen Tools unterstützen können. Legen Sie ein Lesezeichen für diese Seite an, um schnell auf die vollständige Liste der bewährten Methoden zugreifen zu können.
+Das Inhaltsverzeichnis auf der linken Seite enthält bewährte Methoden für die Durchführung Ihrer SQL Server-Migration. Für die Migration können Sie den Leitfaden zur Azure-Datenbankmigration, Azure Database Migration Service oder andere Tools verwenden. Legen Sie ein Lesezeichen für diese Seite an, um schnell auf die vollständige Liste der bewährten Methoden zugreifen zu können.

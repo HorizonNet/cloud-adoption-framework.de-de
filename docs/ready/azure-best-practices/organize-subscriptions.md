@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: cf0c2477375d6d59f6a0eefc7711f51c2512f99e
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: bb28cc9869500f26c2b981c8968a920bf5691ca6
+ms.sourcegitcommit: 580a6f66a0d0f3f5b755c68d757a84b2351a432f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479890"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "87473164"
 ---
 # <a name="organize-and-manage-multiple-azure-subscriptions"></a>Organisieren und Verwalten mehrerer Azure-Abonnements
 
@@ -58,7 +58,7 @@ _Abbildung 2: Beispiel für eine Verwaltungsgruppenhierarchie_
 
 Im Anschluss folgen einige einfache Beispiele für die Trennung verschiedener Workloads mithilfe von Verwaltungsgruppen:
 
-**Produktions- und Nichtproduktionsworkloads:** Verwenden Sie Verwaltungsgruppen, um die Verwaltung verschiedener Rollen und Richtlinien für Produktions- und Nichtproduktionsabonnements zu vereinfachen. So können Entwickler beispielsweise in produktionsfremden Abonnements über Zugriff für Mitwirkende und in Produktionsabonnements lediglich über Lesezugriff verfügen.
+**Produktions- und Nichtproduktionsworkloads:** Verwenden Sie Verwaltungsgruppen, um die Verwaltung verschiedener Rollen und Richtlinien für Produktions- und Nichtproduktionsabonnements zu vereinfachen. So können Entwickler beispielsweise in Produktionsabonnements über Zugriff für Mitwirkende und in produktionsfremden Abonnements lediglich über Lesezugriff verfügen.
 
 **Interne Dienste und externe Dienste:** Unternehmen haben oft unterschiedliche Anforderungen, Richtlinien und Rollen für interne Dienste und externe kundenorientierte Dienste.
 

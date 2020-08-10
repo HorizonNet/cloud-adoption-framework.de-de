@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 98f0cfccdaec32d00f3097f2f6b79f124c913aa6
-ms.sourcegitcommit: 4bbd5f6444d033ef1f38dc6f3bad7b914a82f68f
+ms.openlocfilehash: 76ec9e472eb91768acd293f0053d09ca59a91f5d
+ms.sourcegitcommit: 9662234674e663bc7d4bc134d303520cb146bd95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86128226"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "87560456"
 ---
 # <a name="management-and-monitoring"></a>Verwaltung und Überwachung
 
@@ -96,7 +96,7 @@ Im Zusammenhang mit der Architektur auf Unternehmensebene geht es bei der zentra
 
 ## <a name="planning-for-app-management-and-monitoring"></a>Planen der App-Verwaltung und -Überwachung
 
-Zur Ausweitung des vorherigen Abschnitts wird hier die diesem Abschnitt die Verbundverwaltung und -überwachung von App-Workloads in Erwägung gezogen. Außerdem wird erläutert, wie Anwendungsteams diese Workloads operativ verwalten können.
+Zur Erweiterung des vorherigen Abschnitts wird in diesem Abschnitt ein Verbundmodell betrachtet, und es wird erläutert, wie Anwendungsteams diese Workloads operativ verwalten können.
 
 **Überlegungen zum Entwurf:**
 

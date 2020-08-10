@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 96f93ad2d7a73984a69ca36235a58557eac0d1a9
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: cb8942b451c750190975108d2b880a3f4e251908
+ms.sourcegitcommit: abbc6283f9f63a71333e0129ecdd8ad291517776
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450491"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87524050"
 ---
 <!-- TODO: Rationalize name formats. -->
 
@@ -261,7 +261,7 @@ Folgen Sie diesen Schritten:
     - Die Person, die als Abonnementbesitzer für die einzelnen Abonnements fungiert, die den einzelnen Umgebungen zugeordnet sind. Hinweis: Dies ist nur erforderlich, wenn der **Dienstadministrator** des Abonnements nicht für die Verwaltung des Ressourcenzugriffs für die einzelnen Abonnements/Umgebungen zuständig ist.
     - Die Person, die als **Netzwerkbetriebsbenutzer** fungiert.
     - Die Personen, die als **Workloadbesitzer** fungieren.
-4. Der Azure-Kontoadministrator erstellt über das [Azure-Kontoportal](https://account.azure.com/subscriptions) die drei folgenden Abonnements:
+4. Der Azure-Kontoadministrator [erstellt drei Azure-Abonnements](https://docs.microsoft.com/azure/cost-management-billing/manage/create-subscription):
     - Ein Abonnement für die **gemeinsame Infrastruktur**.
     - Ein Abonnement für die **Produktionsumgebung**.
     - Ein Abonnement für die **Entwicklungsumgebung**
@@ -277,8 +277,3 @@ Nach der Implementierung Ihres Governance-Modells können Sie Ihre gemeinsamen I
 ## <a name="related-resources"></a>Zugehörige Ressourcen
 
 [Integrierte Rollen für die rollenbasierte Zugriffssteuerung in Azure](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)
-
-## <a name="next-steps"></a>Nächste Schritte
-
-> [!div class="nextstepaction"]
-> [Weitere Informationen zum Bereitstellen einer grundlegenden Infrastruktur](../../infrastructure/virtual-machines/basic-workload.md)

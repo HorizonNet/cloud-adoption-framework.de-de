@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c085c3b197306b4774daa5fcc5d9f0501db30eef
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: d285b19349477dfe99780a4584956d13a5a4b361
+ms.sourcegitcommit: abbc6283f9f63a71333e0129ecdd8ad291517776
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479482"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "87524016"
 ---
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
 
@@ -332,7 +332,7 @@ Aufbauen auf den vorigen Abschnitten zur Konnektivität werden in diesem Abschni
 
 - Azure PaaS-Dienste, die in ein VNet eingeschleust wurden, führen immer noch Vorgänge auf der Verwaltungsebene mit öffentlichen IP-Adressen durch. Stellen Sie mit benutzerdefinierten Routen und Netzwerksicherheitsgruppen sicher, dass diese Kommunikation im VNet gesperrt wird.
 
-- Verwenden Sie Private Link (sofern verfügbar) für die freigegebenen Azure PaaS-Dienste. Private Link ist für einige Dienste allgemein verfügbar und liegt für eine Vielzahl von Diensten in der öffentlichen Vorschauversion vor. Die Private Link-Verfügbarkeit wird [hier](https://docs.microsoft.com/azure/private-link/private-link-overview#availability) ausführlich erläutert.
+- Verwenden Sie Private Link (sofern verfügbar) für die freigegebenen Azure PaaS-Dienste. Private Link ist für einige Dienste allgemein verfügbar und liegt für eine Vielzahl von Diensten in der öffentlichen Vorschauversion vor. Weitere Informationen finden Sie unter [Verfügbarkeit](https://docs.microsoft.com/azure/private-link/private-link-overview#availability).
 
 - Greifen Sie auf Azure PaaS-Dienste von lokalen Standorten über privates ExpressRoute-Peering zu, und verwenden Sie dabei VNet-Einschleusung für dedizierte Azure-Dienste oder Azure Private Link für verfügbare gemeinsame Azure-Dienste. Verwenden Sie ExpressRoute mit Microsoft-Peering, um von einem lokalen Standort aus auf Azure-PaaS-Dienste zuzugreifen, wenn VNet-Einschleusung und Private Link nicht verfügbar sind. Dadurch wird der Transit über das öffentliche Internet vermieden.
 
@@ -378,8 +378,8 @@ In diesem Abschnitt werden empfohlene Konnektivitätsmodelle für die eingehende
 
 - Wenn Drittanbieter-NVAs zum Schützen/Filtern von Ost-West- und/oder Süd-Nord-Datenverkehr benötigt werden:
 
-   - Stellen Sie für Virtual WAN-Netzwerktopologien die NVAs in einem separaten VNet bereit (z. B. einem NVA-VNet), und verbinden Sie es mit dem regionalen Virtual WAN-Hub und den Zielzonen, die Zugriff auf NVAs benötigen (siehe Beschreibung in diesem [Artikel](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-route-table-portal)).
-   - Stellen Sie für Nicht-Virtual WAN-Netzwerktopologien die Drittanbieter-NVAs im VNet des zentralen Hubs bereit.
+  - Stellen Sie für Virtual WAN-Netzwerktopologien die NVAs in einem separaten VNet bereit (z. B. einem NVA-VNet), und verbinden Sie es mit dem regionalen Virtual WAN-Hub und den Zielzonen, die Zugriff auf NVAs benötigen (siehe Beschreibung in diesem [Artikel](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-route-table-portal)).
+  - Stellen Sie für Nicht-Virtual WAN-Netzwerktopologien die Drittanbieter-NVAs im VNet des zentralen Hubs bereit.
 
 - Wenn NVAs von Drittanbietern für eingehende HTTP/S-Verbindungen erforderlich sind, sollten Sie in einem Zielzonen-VNet und zusammen mit den Apps bereitgestellt werden, die sie schützen und für das Internet verfügbar machen.
 
