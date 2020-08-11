@@ -7,22 +7,22 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: e43e0010398fcb9d297d7246cb95a1d1c1a2246a
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 758180e4f8771dab5502636eab3da8d9f9e0847a
+ms.sourcegitcommit: d31a9043d1ae9283ed126bf118ca26d1d18d6948
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86449676"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88040664"
 ---
 # <a name="develop-digital-inventions-in-azure"></a>Entwickeln digitaler Innovationen in Azure
 
-Azure kann die Entwicklung der einzelnen Bereiche digitaler Innovationen beschleunigen. In diesem Abschnitt des Cloud Adoption Framework wird die [Innovationsmethodik](../considerations/index.md) erweitert. In diesem Abschnitt wird veranschaulicht, wie Sie Azure-Dienste kombinieren können, um eine Toolkette für digitale Erfindungen zu erstellen.
+Azure kann die Entwicklung der einzelnen Bereiche digitaler Innovationen beschleunigen. In diesem Abschnitt des Cloud Adoption Framework für Azure wird die [Innovationsmethodik](../considerations/index.md) erweitert. In diesem Abschnitt wird veranschaulicht, wie Sie Azure-Dienste kombinieren können, um eine Toolkette für digitale Erfindungen zu erstellen.
 
 ## <a name="alignment-to-the-methodology"></a>Ausrichtung auf die Methodik
 
 Für digitale Innovationen in Azure stehen viele Kombinationen von cloudbasierten Tools zur Verfügung. In der folgenden Artikelreihe werden einige Tools veranschaulicht, die eng mit dieser Innovationsmethodik verbunden sind. Die folgende Abbildung enthält eine Übersicht über die Ausrichtung der verschiedenen Tools auf die einzelnen Innovationsarten.
 
-![Toolkette des Cloud Adoption Framework](../../_images/innovate/innovate-toolchain.png)
+![Diagramm mit der Toolkette des Cloud Adoption Framework](../../_images/innovate/innovate-toolchain.png)
 
 ## <a name="toolchain"></a>Toolkette
 
