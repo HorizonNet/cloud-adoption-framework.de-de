@@ -7,12 +7,12 @@ ms.date: 10/17/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8cecbdcf475f243533b9b7215729dd15de4a51e3
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: e02602545a229664f22b546a2ee39066c5fdc338
+ms.sourcegitcommit: 264382fcb31ad0c6387c15a74127f288f8920995
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84785190"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87805493"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Einrichten einer Überprüfung der Einsatztauglichkeit
 
@@ -42,7 +42,7 @@ Wie in [Erste Schritte: Beschleunigen der Migration](../get-started/migrate.md) 
 
 Während dieses Vorgangs liegt der Schwerpunkt häufig auf den Features des Dienstanbieters: dem Satz der _funktionalen_ Anforderungen, die vom Dienst ausgeführt werden sollen. Ein Produktlieferdienst benötigt beispielsweise Funktionen zum Bestimmen des Quell- und Zielortes des Produkts, zur Verfolgung des Produkts während der Lieferung und zum Senden von Benachrichtigungen an Kunden.
 
-Im Gegensatz dazu beziehen sich die _nicht funktionalen_ Anforderungen auf Eigenschaften wie die [Verfügbarkeit](https://docs.microsoft.com/azure/architecture/checklist/availability), [Resilienz](https://docs.microsoft.com/azure/architecture/resiliency) und [Skalierbarkeit](https://docs.microsoft.com/azure/architecture/checklist/scalability) des Diensts. Diese Eigenschaften unterscheiden sich von den funktionalen Anforderungen, da sie die endgültige Funktion eines bestimmten Features im Dienst nicht direkt beeinflussen. Diese nicht funktionalen Anforderungen beziehen sich jedoch auf die Leistung und Kontinuität des Diensts.
+Im Gegensatz dazu beziehen sich die _nicht funktionalen_ Anforderungen auf Eigenschaften wie die [Verfügbarkeit](https://docs.microsoft.com/azure/architecture/checklist/availability), [Resilienz](https://docs.microsoft.com/azure/architecture/resiliency) und [Skalierbarkeit](/azure/architecture/framework/scalability/performance-efficiency) des Diensts. Diese Eigenschaften unterscheiden sich von den funktionalen Anforderungen, da sie die endgültige Funktion eines bestimmten Features im Dienst nicht direkt beeinflussen. Diese nicht funktionalen Anforderungen beziehen sich jedoch auf die Leistung und Kontinuität des Diensts.
 
 Sie können einige nicht funktionale Anforderungen in Form einer Vereinbarung zum Servicelevel (SLA) festlegen. Beispielsweise können Sie die Dienstkontinuität als Prozentsatz der Verfügbarkeit ausdrücken: „99,99 Prozent der Zeit verfügbar“. Andere nicht funktionale Anforderungen können schwieriger zu definieren sein und sich mit zunehmendem Produktionsbedarf ändern. So könnte beispielsweise ein verbraucherorientierter Dienst nach einem Popularitätsschub mit unerwarteten Durchsatzanforderungen konfrontiert werden.
 
