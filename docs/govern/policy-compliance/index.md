@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1b4618809e5b6723f82accdb05fd44f6c100937f
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 016bca5abeaed55dadfec0bdadfd0ad4a4d4f251
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86191262"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195404"
 ---
 # <a name="prepare-corporate-it-policy-for-the-cloud"></a>Vorbereiten der IT-Unternehmensrichtlinie für die Cloud
 
@@ -55,7 +55,7 @@ Der erste Schritt in der neuen Partnerschaft zwischen Ihren Cloudgovernance- und
 
 So ist z. B. das Geschäftsrisiko für ein Unternehmen, das fünf virtuelle Computer bereitstellt, die keine HBI-Daten (High Business Impact) enthalten, gering. Später im Cloudeinführungsprozess, wenn die Anzahl der virtuellen Computer auf 1.000 angestiegen ist und das Unternehmen damit beginnt, solche Daten zu verschieben, steigt das geschäftliche Risiko.
 
-Das Richtlinien-MVP versucht, eine erforderliche Grundlage für Richtlinien zu definieren, die für die Bereitstellung der ersten _x_ virtuellen Computer oder die ersten _x_ Anwendungen, wobei _x_ eine kleine, aber sinnvolle Menge der einzuführenden Einheiten darstellt. Dieser Richtliniensatz erfordert einige Einschränkungen, enthält aber die grundlegenden Aspekte, die erforderlich sind, um schnell von einer inkrementellen Cloudeinführung zur nächsten zu wachsen. Durch die inkrementelle Richtlinienentwicklung wird diese Governancestrategie erweitert im Lauf der Zeit. Durch langsame, subtile Veränderungen entsteht für das Richtlinien-MVP Featureparität mit den Ergebnissen der Richtlinienüberprüfung.
+Das Richtlinien-MVP versucht, eine erforderliche Grundlage für Richtlinien zu definieren, die für die Bereitstellung der ersten *x* virtuellen Computer oder die ersten *x* Anwendungen, wobei *x* eine kleine, aber sinnvolle Menge der einzuführenden Einheiten darstellt. Dieser Richtliniensatz erfordert einige Einschränkungen, enthält aber die grundlegenden Aspekte, die erforderlich sind, um schnell von einer inkrementellen Cloudeinführung zur nächsten zu wachsen. Durch die inkrementelle Richtlinienentwicklung wird diese Governancestrategie erweitert im Lauf der Zeit. Durch langsame, subtile Veränderungen entsteht für das Richtlinien-MVP Featureparität mit den Ergebnissen der Richtlinienüberprüfung.
 
 ## <a name="incremental-policy-growth"></a>Inkrementelles Richtlinienwachstum
 

@@ -7,12 +7,12 @@ ms.date: 03/27/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 48cbb33ed40286f1201f85b67d75809e487b83d4
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 85fe35eb9cc70af231989aa6d05b7a70df3c594b
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86195002"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196258"
 ---
 # <a name="what-business-outcomes-are-associated-with-transformation-journeys"></a>Welche Geschäftsergebnisse sind mit Transformationsprozessen verbunden?
 
@@ -20,7 +20,7 @@ Die erfolgreichsten Transformationsprozesse beginnen im Hinblick auf ein Geschä
 
 Bei jeder Cloudtransformation unterstützt die Möglichkeit zur Formulierung von Geschäftsergebnissen die Transparenz sowie funktionsübergreifende Partnerschaften. Der Rahmenplan für Geschäftsergebnisse beginnt mit einer einfachen Vorlage, die technisch versierten Personen hilft, eine Übereinstimmung zu erzielen und zu dokumentieren. Diese Vorlage kann für verschiedene Beteiligte verwendet werden, um eine Vielzahl von Geschäftsergebnissen zu erfassen, die jeweils durch die Transformationsprozesse eines Unternehmens beeinflusst werden können. Sie können diese Vorlage elektronisch oder – noch besser – auf einem Whiteboard verwenden, um mit Führungskräften und Beteiligten ergebnisorientierte Diskussionen zu führen.
 
-Weitere Informationen zu Geschäftsergebnissen und zur zugehörigen Vorlage finden Sie unter [Dokumentieren von Geschäftsergebnissen](./business-outcome-template.md), oder laden Sie die [Vorlage für Geschäftsergebnisse](https://archcenter.blob.core.windows.net/cdn/business-outcome-template.xlsx) herunter.
+Weitere Informationen zu Geschäftsergebnissen und zur zugehörigen Vorlage finden Sie unter [Dokumentieren von Geschäftsergebnissen](./business-outcome-template.md), oder laden Sie die [Vorlage für Geschäftsergebnisse](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/strategy/business-outcome-template.xlsx) herunter.
 
 ## <a name="prepare-for-conversations-with-different-personas"></a>Vorbereiten auf Gespräche mit verschiedenen Personas
 
