@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ef9ac0935b21a1294dc77e631223fc0e24dcef0d
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 888f31f26afcbe920fe088fb513ab2f0428d7d09
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193761"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195226"
 ---
 <!-- cSpell:ignore nanra njray dbspaces dbextents VSAM RACF LPARS ASSGN DLBL EXTENT LIBDEF EXEC IPLs -->
 
@@ -73,7 +73,7 @@ Folgende Mainframevorgänge sind typisch:
 
 - **Job Control Language (JCL):** Geben Sie die erforderlichen Ressourcen zum Verarbeiten von Batchaufträgen an. JCL überträgt diese Informationen über eine Reihe von Auftragssteuerungsanweisungen auf z/OS. Grundlegendes JCL enthält sechs Typen von Anweisungen: JOB, ASSGN, DLBL, EXTENT, LIBDEF und EXEC. Ein Auftrag kann mehrere EXEC-Anweisungen (Schritte) enthalten, und jeder Schritt kann mehrere LIBDEF-, ASSGN-, DLBL- und EXTENT-Anweisungen aufweisen.
 
-- **Initial Program Load (IPL):**  Bezieht sich auf das Laden einer Kopie des Betriebssystems von einem Datenträger in den tatsächlichen Speicher eines Prozessors und ihre Ausführung. IPLs dienen zur Wiederherstellung nach Downtime. Ein IPL entspricht dem Starten des Betriebssystems auf Windows- oder Linux-VMs.
+- **Initial Program Load (IPL):** Bezieht sich auf das Laden einer Kopie des Betriebssystems von einem Datenträger in den tatsächlichen Speicher eines Prozessors und ihre Ausführung. IPLs dienen zur Wiederherstellung nach Downtime. Ein IPL entspricht dem Starten des Betriebssystems auf Windows- oder Linux-VMs.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
