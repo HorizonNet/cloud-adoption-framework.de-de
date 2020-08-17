@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ca1a65d0c385a7fc57e66b4c3f41157363a8a392
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: b43c20579bceb855c77adb3b4e7919254fa50d5a
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86191908"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196144"
 ---
 <!-- cSpell:ignore BYOK -->
 
@@ -130,7 +130,7 @@ Weitere Informationen zur Verschlüsselung und Schlüsselverwaltung in Azure fin
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-„Verschlüsselung“ ist nur eine der Kernkomponenten der Infrastruktur, die architekturspezifische Entscheidungen während eines Cloudeinführungsprozesses erfordert. Navigieren Sie zur [Übersicht über Leitfäden zur Entscheidungsfindung](../index.md), um mehr über alternative Muster oder Modelle zu erfahren, die bei Entwurfsentscheidungen für andere Arten von Infrastrukturen verwendet werden.
+„Verschlüsselung“ ist nur eine der Kernkomponenten der Infrastruktur, die architekturspezifische Entscheidungen während eines Cloudeinführungsprozesses erfordert. Navigieren Sie zur Übersicht über Leitfäden zur architekturbezogenen Entscheidungsfindung, um mehr über alternative Muster oder Modelle zu erfahren, die bei Entwurfsentscheidungen für andere Arten von Infrastrukturen verwendet werden.
 
 > [!div class="nextstepaction"]
-> [Leitfaden zur architekturbezogenen Entscheidungsfindung](../index.md)
+> [Übersicht über Leitfäden zur architekturbezogenen Entscheidungsfindung](../index.md)

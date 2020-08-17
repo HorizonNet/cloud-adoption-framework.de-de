@@ -1,5 +1,5 @@
 ---
-title: Ein Migrationsansatz für die Einführung von Azure
+title: Ansatz der Einzelmigration für die Einführung von Azure
 description: Azure Migrate bietet einen Migrationsansatz, mit dem Sie Ihr gesamtes IT-Portfolio migrieren und modernisieren können.
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,27 +7,25 @@ ms.date: 10/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f8135b59ed583a2c790b1f78a6b1f940fe4a0acd
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 5d42febd3d8ad662edf17973d6f5285b448b0e27
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86451492"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196536"
 ---
 <!-- docsTest:ignore "One Migration" -->
 <!-- cSpell:ignore HANA -->
 
-# <a name="one-migration-approach-to-migrating-the-it-portfolio"></a>Ein Migrationsansatz für die Migration des gesamten IT-Portfolios
+# <a name="the-one-migration-approach-to-migrating-the-it-portfolio"></a>Ansatz der Einzelmigration für die Migration des IT-Portfolios
 
-Sowohl Azure als auch Azure Migrate sind für das Hosting von Microsoft-Technologien bekannt. Vielleicht wissen Sie aber nicht, dass Azure auch Migrationen unterstützt, die über Windows und SQL Server hinausgehen. Die in der Migrationsmethodik dokumentierten Migrationsszenarien beruhen sowohl für die Migration von Microsoft- als auch von Drittanbietertechnologien auf den gleichen einheitlichen Richtlinien und Prozessen.
+Sowohl Azure als auch Azure Migrate sind für das Hosting von Microsoft-Technologien bekannt. Vielleicht wissen Sie aber nicht, dass Azure auch Migrationen unterstützt, die über Windows und SQL Server hinausgehen. Die in der Migrationsmethodik dokumentierten Szenarien für die *Einzelmigration* beruhen sowohl für die Migration von Microsoft- als auch von Drittanbietertechnologien auf den gleichen einheitlichen Richtlinien und Prozessen.
 
 ## <a name="migration-scenarios"></a>Migrationsszenarios
 
-Die folgende Abbildung zeigt eine Reihe von Migrationsszenarien, die auf der gleichen iterativen Methodik für die Migration und Modernisierung beruhen.
+Das folgende Diagramm und die folgende Tabelle zeigen eine Reihe von Szenarien, die auf der gleichen iterativen Methodik für die Migration und Modernisierung beruhen.
 
-![Cloud Adoption Framework-Migrationsmodell](../_images/migrate/one-migrate.png)
-
-### <a name="links-to-migration-scenarios"></a>Links zu Migrationsszenarien
+![Diagramm: Cloud Adoption Framework-Migrationsmodell](../_images/migrate/one-migrate.png)
 
 | | | | |
 |---------|---------|---------|---------|
@@ -37,15 +35,15 @@ Die folgende Abbildung zeigt eine Reihe von Migrationsszenarien, die auf der gle
 | **Hybrid** | [Azure Stack](./azure-stack/index.md) | [VMware](../migrate/azure-best-practices/vmware-host.md) | |
 | **Weitere Szenarien** | [Sichere Workloads](../migrate/azure-best-practices/migrate-best-practices-security-management.md) | [Mainframes](../infrastructure/mainframe-migration/index.md) | NetApp und SAP HANA |
 
-## <a name="migrate-methodology"></a>Migrationsmethodik
+## <a name="migration-methodology"></a>Migrationsmethodik
 
-Bei jedem der Migrationsszenarien beruht die Migration vorhandener Workloads zur Cloud auf den gleichen einheitlichen Prozessen.
+In jedem der vorhergehenden Migrationsszenarien werden Sie durch den gleichen grundlegenden Prozess geleitet, wenn Sie Ihre bestehenden Workloads in die Cloud verlagern, wie hier gezeigt:
 
-![Cloud Adoption Framework-Migrationsmodell](../_images/migrate/methodology.png)
+![Diagramm: Cloud Adoption Framework-Migrationsmodell](../_images/migrate/methodology.png)
 
-Strukturieren Sie Migrationswellen, um die Releases mehrerer Workloads zu steuern. Das Erstellen eines Cloudeinführungsplans und Einrichten von Azure-Zielzonen im Rahmen der Planungs- und Bereitschaftsmethodik erleichtert Ihnen die Strukturierung Ihrer Migrationswellen.
+In jedem Szenario strukturieren Sie Migrationswellen, um die Releases mehrerer Workloads zu steuern. Das Erstellen eines Cloudeinführungsplans und Einrichten von Azure-Zielzonen im Rahmen der Planungs- und Bereitschaftsmethodik erleichtert Ihnen die Strukturierung Ihrer Migrationswellen.
 
-Befolgen Sie während jeder Iteration die Migrationsmethodik, um Workloads zu bewerten, bereitzustellen und freizugeben. Wenn Sie diese Prozesse an Ihre speziellen Szenarien anpassen möchten, klicken Sie auf eines der oben aufgeführten Migrationsszenarien, um weiterführende Informationen anzuzeigen.
+Befolgen Sie während jeder Iteration die Migrationsmethodik, um Workloads zu bewerten, bereitzustellen und freizugeben. Wenn Sie diese Prozesse an die speziellen Szenarien Ihrer Organisation anpassen möchten, klicken Sie auf eines der in der Tabelle aufgeführten Migrationsszenarien, um weiterführende Informationen anzuzeigen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

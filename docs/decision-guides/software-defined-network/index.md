@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 7ca89c067d821013be07ebb6814c49e330505946
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: a98a60937bf01eaa3fc4a9a7f7ba594e281a008e
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86478054"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196065"
 ---
 # <a name="software-defined-networking-decision-guide"></a>Leitfaden zur Entscheidungsfindung für softwaredefinierte Netzwerke
 
@@ -67,7 +67,7 @@ Weitere Informationen zu softwaredefinierten Netzwerken (SDN) in Azure finden Si
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Softwaredefinierte Netzwerke sind nur eine der Kernkomponenten der Infrastruktur, die architekturspezifische Entscheidungen während eines Cloudeinführungsprozesses erfordern. Besuchen Sie die [Übersicht über Leitfäden zur Entscheidungsfindung](../index.md), um mehr über alternative Muster oder Modelle zu erfahren, die bei Entwurfsentscheidungen für andere Arten von Infrastrukturen verwendet werden.
+Softwaredefinierte Netzwerke sind nur eine der Kernkomponenten der Infrastruktur, die architekturspezifische Entscheidungen während eines Cloudeinführungsprozesses erfordern. Besuchen Sie die Übersicht über Leitfäden zur architekturbezogenen Entscheidungsfindung, um mehr über alternative Muster oder Modelle zu erfahren, die bei Entwurfsentscheidungen für andere Arten von Infrastrukturen verwendet werden.
 
 > [!div class="nextstepaction"]
 > [Leitfaden zur architekturbezogenen Entscheidungsfindung](../index.md)

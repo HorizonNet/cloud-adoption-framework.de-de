@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: c9a4a7759388dcbd812e26a482c18a1e48de67eb
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: aa4f565bafeafa0eea09ca940a4ca90a9ff46eed
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075925"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196182"
 ---
 <!-- cSpell:ignore Kerberos NTLM SAML -->
 
@@ -109,7 +109,7 @@ Weitere Informationen über Identitätsdienste in Azure finden Sie unter:
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-„Identität“ ist nur eine der Kernkomponenten der Infrastruktur, die architekturspezifische Entscheidungen während eines Cloudeinführungsprozesses erfordert. Navigieren Sie zur [Übersicht über Leitfäden zur Entscheidungsfindung](../index.md), um mehr über alternative Muster oder Modelle zu erfahren, die bei Entwurfsentscheidungen für andere Arten von Infrastrukturen verwendet werden.
+„Identität“ ist nur eine der Kernkomponenten der Infrastruktur, die architekturspezifische Entscheidungen während eines Cloudeinführungsprozesses erfordert. Navigieren Sie zur Übersicht über Leitfäden zur architekturbezogenen Entscheidungsfindung, um mehr über alternative Muster oder Modelle zu erfahren, die bei Entwurfsentscheidungen für andere Arten von Infrastrukturen verwendet werden.
 
 > [!div class="nextstepaction"]
-> [Leitfaden zur architekturbezogenen Entscheidungsfindung](../index.md)
+> [Übersicht über Leitfäden zur architekturbezogenen Entscheidungsfindung](../index.md)

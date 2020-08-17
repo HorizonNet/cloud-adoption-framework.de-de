@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 05498e7e1163f627b33f1a555aa3870e4bebd868
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: ccd87b73976cb87069bf05463f05a1e22e2caf75
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450712"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196118"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Protokollierung und Berichterstellung
 
@@ -123,7 +123,7 @@ Die Unterstützung der Protokollierung mehrerer Clouds erfordert oft den Einsatz
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-„Protokollierung und Berichterstellung“ ist nur eine der Kernkomponenten der Infrastruktur, die architekturspezifische Entscheidungen während eines Cloudeinführungsprozesses erfordert. Besuchen Sie die [Übersicht über Leitfäden zur Entscheidungsfindung](../index.md), um mehr über alternative Muster oder Modelle zu erfahren, die bei Entwurfsentscheidungen für andere Arten von Infrastrukturen verwendet werden.
+„Protokollierung und Berichterstellung“ ist nur eine der Kernkomponenten der Infrastruktur, die architekturspezifische Entscheidungen während eines Cloudeinführungsprozesses erfordert. Besuchen Sie die Übersicht über Leitfäden zur architekturbezogenen Entscheidungsfindung, um mehr über alternative Muster oder Modelle zu erfahren, die bei Entwurfsentscheidungen für andere Arten von Infrastrukturen verwendet werden.
 
 > [!div class="nextstepaction"]
 > [Leitfaden zur architekturbezogenen Entscheidungsfindung](../index.md)

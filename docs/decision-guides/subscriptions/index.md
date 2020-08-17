@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a726d8eeeb572ce64cf905c3b40932c58ffd1b92
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 48956811e324e5a0fc3a8e1b10194399c1483faf
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86191925"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196081"
 ---
 # <a name="subscription-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Abonnements
 
@@ -84,7 +84,7 @@ Verwaltungsgruppenhierarchien können bis zu sechs Ebenen umfassen. Dieses Maß 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-„Abonnemententwurf“ ist nur eine der Kernkomponenten der Infrastruktur, die architekturspezifische Entscheidungen während eines Cloudeinführungsprozesses erfordert. Besuchen Sie die [Übersicht über Leitfäden zur Entscheidungsfindung](../index.md), um mehr über zusätzliche Strategien zu erfahren, die bei Entwurfsentscheidungen für andere Arten von Infrastrukturen verwendet werden.
+„Abonnemententwurf“ ist nur eine der Kernkomponenten der Infrastruktur, die architekturspezifische Entscheidungen während eines Cloudeinführungsprozesses erfordert. Besuchen Sie die Übersicht über Leitfäden zur architekturbezogenen Entscheidungsfindung, um mehr über zusätzliche Strategien zu erfahren, die bei Entwurfsentscheidungen für andere Arten von Infrastrukturen verwendet werden.
 
 > [!div class="nextstepaction"]
 > [Leitfaden zur architekturbezogenen Entscheidungsfindung](../index.md)

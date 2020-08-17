@@ -7,12 +7,12 @@ ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 9b363ea7fc2febaccfd2df14596b025d52a943a2
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 0fab533dee7f5a256bb2a640611b647988f056ac
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787655"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88194794"
 ---
 # <a name="develop-a-cloud-adoption-plan"></a>Entwickeln eines Cloudeinführungsplans
 
@@ -29,4 +29,4 @@ Die folgenden Aufgaben helfen Ihnen dabei, Ihre Technologiestrategie zu dokument
 | <br> ![3](../_images/icons/3.png) | <br> [Plan für die Qualifikationsbereitschaft](./adapt-roles-skills-processes.md): Erstellen Sie einen Plan für den Umgang mit Qualifikationslücken.                                |
 | <br> ![4](../_images/icons/4.png) | <br> [Cloudeinführungsplan](./plan-intro.md): Entwickeln Sie einen Cloudeinführungsplan für das Change Management im Zusammenhang mit digitalen Ressourcen, Qualifikationen und der Organisation.                        |
 
-Laden Sie die [Strategie- und Planungsvorlage des Frameworks für die Cloudeinführung](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) herunter, und erfassen Sie die Ergebnisse der einzelnen Aufgaben, während Sie Ihre Cloudeinführungsstrategie ausarbeiten. Erfahren Sie auch etwas über die [fünf Phasen der Cloudrationalisierung](../digital-estate/5-rs-of-rationalization.md), um Ihren Cloudeinführungsplan zu erstellen.
+Laden Sie die [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) herunter, und erfassen Sie die Ergebnisse der einzelnen Aufgaben, während Sie Ihre Cloudeinführungsstrategie ausarbeiten. Erfahren Sie auch etwas über die [fünf Phasen der Cloudrationalisierung](../digital-estate/5-rs-of-rationalization.md), um Ihren Cloudeinführungsplan zu erstellen.
