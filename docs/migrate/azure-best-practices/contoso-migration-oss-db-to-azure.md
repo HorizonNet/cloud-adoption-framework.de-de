@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: f259663be5e6572cfcdd0724daa62173769e4709
-ms.sourcegitcommit: 65e8d2fc3ef31f2bb11a50f7c7a2d1eb116a6632
+ms.openlocfilehash: 9169417f75434a176767fb20182a1bdd99a70bbf
+ms.sourcegitcommit: 452e09b543e7b84f943db5b02480ba2d18afd939
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254992"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87866195"
 ---
 # <a name="migrate-open-source-databases-to-azure"></a>Migration von Open-Source-Datenbanken zu Azure
 
@@ -92,7 +92,7 @@ Datenmigrationen folgen einem Standardmuster, das wiederholt werden kann. Dazu g
 
 #### <a name="step-1-discovery"></a>Schritt 1: Ermittlung
 
-Contoso hat Azure Migrate verwendet, um die Abhängigkeiten in der Contoso-Umgebung offenzulegen. Mithilfe von Azure Migrate können Anwendungskomponenten in Windows- und Linux-Systemen automatisch erkannt und die Kommunikation zwischen Diensten zugeordnet werden. Mithilfe von Azure Migrate wurden auch die Verbindungen zwischen Contoso-Servern, Prozessen, der Latenz zwischen eingehenden und ausgehenden Verbindungen und Ports in der über TCP verbundenen Architektur des Unternehmens offengelegt. Contoso musste einfach nur [Microsoft Monitoring Agent](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows) und den [Microsoft Dependency-Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) installieren.
+Contoso hat Azure Migrate verwendet, um die Abhängigkeiten in der Contoso-Umgebung offenzulegen. Mithilfe von Azure Migrate können Anwendungskomponenten in Windows- und Linux-Systemen automatisch erkannt und die Kommunikation zwischen Diensten zugeordnet werden. Mithilfe von Azure Migrate wurden auch die Verbindungen zwischen Contoso-Servern, Prozessen, der Wartezeit zwischen eingehenden und ausgehenden Verbindungen und Ports in der über TCP verbundenen Architektur offengelegt. Contoso musste einfach nur [Microsoft Monitoring Agent](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows) und den [Microsoft Dependency-Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) installieren.
 
 Contoso konnte mehr als 300 Datenbankinstanzen identifizieren, die migriert werden müssen. Von diesen Instanzen können etwa 40 Prozent zu PaaS-basierten Diensten verschoben werden. Die verbleibenden 60 Prozent der Instanzen müssen zu einem IaaS-basierten Ansatz mit einer VM verschoben werden, die die entsprechende Datenbanksoftware ausführt.
 

@@ -1,18 +1,18 @@
 ---
 title: Beispiele für Kundenbindungsergebnisse
-description: Enthält Beispiele für die Kundenbindung, mit denen Sie sich damit vertraut machen können, was Kunden während der geschäftlichen Transformation benötigen und wie das entsprechende Ökosystem aussieht.
+description: In diesem Artikel finden Sie Beispiele für die Kundenbindung, mit denen Sie sich damit vertraut machen können, was Kunden während der geschäftlichen Transformation benötigen und wie das entsprechende Ökosystem aussieht.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: b778ec6d71797d272155b1c72f82a0d50fd5a928
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 3e538347d8215f66f81875ce5f0532744ac0a526
+ms.sourcegitcommit: d31a9043d1ae9283ed126bf118ca26d1d18d6948
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450644"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88040917"
 ---
 <!-- cSpell:ignore ExakTime -->
 
@@ -20,41 +20,38 @@ ms.locfileid: "86450644"
 
 Wie bereits in der [Übersicht über die Geschäftsergebnisse](./index.md) beschrieben, können mehrere mögliche Geschäftsergebnisse als Grundlage für Unterhaltungen zur Transformationsjourney mit dem Unternehmen dienen. In diesem Artikel konzentrieren wir uns auf eine gängige Geschäftskennzahl: die Kundenbindung. Kenntnisse über die Wünsche und Umgebung der Kunden helfen dabei, Geschäftsergebnisse zu formulieren, die dem Ziel der Transformationsjourney eines Unternehmens entsprechen.
 
-Bei Dateninnovationen in der Cloud wird Kundenbindung vorausgesetzt. Aggregieren von Daten, Testen von Theorien, Erweitern von Erkenntnissen und Begründen von kulturellen Änderungen – jede dieser Funktionen erfordert ein hohes Maß an Kundenbindung. Bei Anwendungsinnovationen in der Cloud ist diese Art der Kundenbindung ein Entwicklungsziel.
+Bei Dateninnovationen in der Cloud wird Kundenbindung vorausgesetzt. Die folgenden Funktionen sind möglicherweise störungsanfällig und erfordern eine hohe Kundenbindung:
 
-Bei Kundenbindungsergebnissen geht es das Erfüllen und Übertreffen von Kundenerwartungen. Als absolute Baseline für eine Kundenbindungen setzen die Kunden voraus, dass Produkte und Dienste leistungsstark und zuverlässig sind. Sind sie das nicht, verstehen Führungskräfte sehr schnell, welchen Geschäftswert die Leistungs- und Zuverlässigkeitsergebnisse haben. Für Unternehmen, die schon weiter sind, ist die Geschwindigkeit der Integration von Erkenntnissen und Beobachtungen ein grundlegendes Geschäftsergebnis.
+- Aggregieren von Daten
+- Testen von Theorien
+- Erweitern von Erkenntnissen
+- Kommunizieren von Kulturänderung
 
-Im Folgenden finden Sie Beispiele und Ergebnisse im Zusammenhang mit der Kundenbindung:
+Bei Kundenbindungsergebnissen geht es um das Erfüllen und Übertreffen von Kundenerwartungen. Als absolute Baseline für Kundenbindungen setzen die Kunden voraus, dass Produkte und Dienste leistungsstark und zuverlässig sind. Sind sie das nicht, verstehen Führungskräfte sehr schnell, welchen Geschäftswert die Leistungs- und Zuverlässigkeitsergebnisse haben. Für Unternehmen, die schon weiter sind, ist die Geschwindigkeit der Integration von Erkenntnissen und Beobachtungen ein grundlegendes Geschäftsergebnis.
+
+Im Folgenden finden Sie Beispiele und Ergebnisse im Zusammenhang mit der Kundenbindung.
 
 ## <a name="cycle-time"></a>Zykluszeit
 
-Während kundenorientierter Transformationen wie cloudfähiger Anwendungsinnovationen profitieren Kunden von der direkten Bindung, und sie können sehen, dass ihre Wünsche vom Entwicklungsteam schnell erfüllt werden. Zykluszeit ist ein Six Sigma-Begriff, der die Dauer vom Anfang bis zum Ende einer Funktion meint. Für Führungskräfte mit starker Kundenorientierung, die große Anstrengungen zur Verbesserung der Kundenbindung unternehmen, kann die Zykluszeit ein wichtiges Geschäftsergebnis sein.
+Während kundenorientierter Transformationen wie cloudfähiger Anwendungsinnovationen profitieren Kunden von der direkten Bindung. Außerdem können sie sehen, dass ihre Wünsche vom Entwicklungsteam schnell erfüllt werden. Zykluszeit ist ein Six Sigma-Begriff, der die Dauer vom Anfang bis zum Ende einer Funktion meint. Für Führungskräfte mit starker Kundenorientierung, die große Anstrengungen zur Verbesserung der Kundenbindung unternehmen, kann die Zykluszeit ein wichtiges Geschäftsergebnis sein.
 
-- **Beispiel:** Ein Dienstleistungsunternehmen, das B2B-Dienste (Business-to-Business) bereitstellt, versucht, auf einem wettbewerbsintensiven Markt seinen Marktanteil zu halten. Kunden, die zu einem Konkurrenten gewechselt sind, haben festgestellt, dass die übermäßig komplexe technische Lösung die eigenen Geschäftsprozesse beeinträchtigt und der Hauptgrund für den Wechsel ist. In diesem Fall ist Zykluszeit eine unbedingte Notwendigkeit. Heutzutage dauert es 12 Monate, bis ein Feature von der Anforderung bis zum Release gelangt. Wenn es vom Führungsteam priorisiert wird, kann dieser Zyklus auf sechs bis neun Monate verkürzt werden. Das Team konnte die Zykluszeit über eine cloudfähige Anwendungsinnovation, cloudnative Anwendungsmodelle und die Integration mit Azure DevOps auf einen Monat verkürzen. So können das Unternehmen und die Anwendungsentwicklungsteams viel direkter mit den Kunden interagieren.
+### <a name="example"></a>Beispiel
 
-<!--docsTest:ignore "Wayne Wise" "Vice President of Software Development" -->
+Ein Dienstleistungsunternehmen, das B2B-Dienste (Business-to-Business) bereitstellt, versucht, auf einem wettbewerbsintensiven Markt seinen Marktanteil zu halten. Kunden, die zu einem Konkurrenten gewechselt sind, haben festgestellt, dass die übermäßig komplexe technische Lösung die eigenen Geschäftsprozesse beeinträchtigt und der Hauptgrund für den Wechsel ist. In diesem Fall ist Zykluszeit eine unbedingte Notwendigkeit.
 
-> **ExakTime**
->
-> Arbeitszeitverwaltung löst sich mit Cloudtechnologie von lokalen Einschränkungen. ExakTime begibt sich mit Microsoft Azure auf den Weg zu einer optimierten flexiblen Produktentwicklung – und die Kunden profitieren von einem noch robusteren und einfacher zu bedienenden Produkt mit einer Vielzahl neuer Funktionen.
->
-> „Jetzt kann sich ein Entwickler an seinen Computer setzen und bei einer Idee einen Webdienst oder eine Azure-Instanz einrichten, seine Idee testen, dabei auf Testdaten verweisen und sein Konzept auf den Weg bringen. In der Zeit, die es bisher gedauert hätte, nur die Voraussetzungen für den Test bereitzustellen, können wir jetzt die komplette Funktion schreiben.“
->
-> Wayne Wise
->
-> Vice President für Softwareentwicklung bei
->
-> ExakTime
+Heutzutage dauert es 12 Monate, bis ein Feature von der Anforderung bis zum Release gelangt. Wenn es vom Führungsteam priorisiert wird, kann dieser Zyklus auf sechs bis neun Monate verkürzt werden. Das Team kann die Zykluszeit auf einen Monat senken, indem ein cloudfähiger Anwendungsinnovationsansatz, cloudnative Anwendungsmodelle und Azure DevOps-Integration verwendet wird. So können Unternehmens- und Anwendungsentwicklungsteams freigestellt werden, um direkter mit Kunden zu interagieren.
 
 ## <a name="intelligent-contact-center"></a>Intelligentes Contact Center
 
 Kundenzufriedenheit und Benutzerfreundlichkeit sind der Kern erfolgreicher Organisationen. Wenn Sie dafür sorgen, dass sich Ihre Mitarbeiter auf erstklassigen Kundendienst konzentrieren können, schaffen Sie die Basis für langfristige Kundenloyalität. Mit der heute verfügbaren KI-Technologie können viele Schritte während eines Kundenanrufes automatisiert werden, sodass der Contact Center-Agent mehr Zeit für erstklassigen Kundendienst hat.
 
-- **Beispiel:** Ein Versicherungsunternehmen hat durch Erstellen einer Azure Bot Service-Lösung digitale Agents implementiert, um schnell auf Kundenanforderungen über seine Website zu reagieren, und eine mobile App. Im Rahmen der Ausdehnung einer verbesserten Kundendiensterfahrung auf das Contact Center hat das Versicherungsunternehmen eine Live-Anruftranskription, Standpunktanalyse und Schlüsselbegriffserkennung implementiert, um den Contact Center-Agent bei den empfohlenen nächsten Schritten und der Formularverarbeitung zu unterstützen. Dies verringerte die Zahl wiederholter Anrufe von Kunden beim Contact Center und ermöglichte dem Contact Center-Agent, sich mehr darauf zu konzentrieren, eine optimale Kundenerfahrung zu bieten statt administrative und operative Tätigkeiten auszuführen.
+### <a name="example"></a>Beispiel
+
+Ein Versicherungsunternehmen hat digitale Agents implementiert, die schnell auf Kundenanfragen reagieren können. Diese digitalen Agents stehen sowohl auf der Unternehmenswebsite als auch über eine mobile App des Unternehmens zur Verfügung, indem eine Azure Bot Service-Lösung erstellt wird. Im Rahmen der Ausdehnung einer verbesserten Servicequalität auf das Contact Center hat das Versicherungsunternehmen eine Live-Anruftranskription, Standpunktanalyse und Schlüsselbegriffserkennung implementiert. So kann der Contact Center-Agent bei den empfohlenen nächsten Schritten und der Formularverarbeitung unterstützt werden. Dies verringerte die Zahl wiederholter Anrufe von Kunden beim Contact Center und ermöglichte dem Contact Center-Agent, sich mehr darauf zu konzentrieren, eine optimale Servicequalität zu bieten.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Erfahren Sie mehr über [Leistungsergebnisse](./performance-outcomes.md).
+Erfahren Sie mehr über Leistungsergebnisse.
 
 > [!div class="nextstepaction"]
 > [Leistungsergebnisse](./performance-outcomes.md)

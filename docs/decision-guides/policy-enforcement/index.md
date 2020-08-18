@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 75d89b4b626a8e31bdaf6c0022f4bc98dd4161d6
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 7d6acf087cc378edceedc9c6ce3d7992c327c2e1
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88196115"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88277651"
 ---
 # <a name="policy-enforcement-decision-guide"></a>Leitfaden zur Entscheidungsfindung für die Richtlinienerzwingung
 
@@ -44,13 +44,13 @@ Bei Einzelabonnements und einfachen Cloudbereitstellungen lassen sich viele Unte
 
 Ein erster Schritt, der über die einfache Nutzung der Richtlinienerzwingungsmechanismen der Azure-Plattform hinausgeht, besteht darin, die Überprüfung der Einhaltung von Organisationsrichtlinien für cloudbasierte Anwendungen und Dienste zu ermöglichen. Dies beinhaltet unter anderem die Implementierung von Benachrichtigungsfunktionen, um Verantwortliche auf nicht mehr konforme Ressourcen aufmerksam zu machen. Die wirksame [Protokollierung und Berichterstellung](../logging-and-reporting/index.md) des Konformitätsstatus Ihrer Cloudworkloads ist ein wichtiger Bestandteil einer Unternehmensstrategie zur Richtlinienerzwingung.
 
-Wenn Ihre Cloudinfrastruktur wächst, können Sie mithilfe zusätzlicher Tools, z.B. [Azure Security Center](https://docs.microsoft.com/azure/security-center), die integrierte Sicherheit und Bedrohungserkennung verwenden und die zentrale Richtlinienverwaltung sowie Warnungen für Ihre lokalen und Cloudressourcen nutzen.
+Wenn Ihre Cloudinfrastruktur wächst, können Sie mithilfe zusätzlicher Tools, z.B. [Azure Security Center](/azure/security-center), die integrierte Sicherheit und Bedrohungserkennung verwenden und die zentrale Richtlinienverwaltung sowie Warnungen für Ihre lokalen und Cloudressourcen nutzen.
 
 ## <a name="policy-enforcement"></a>Durchsetzung von Richtlinien
 
 In Azure können Konfigurationseinstellungen und Ressourcenerstellungsregeln auf der Verwaltungsgruppen-, Abonnement- oder Ressourcengruppenebene angewendet werden, um die Richtlinieneinhaltung sicherzustellen.
 
-[Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) ist ein Azure-Dienst zum Erstellen, Zuweisen und Verwalten von Richtlinien. Mit diesen Richtlinien werden verschiedene Regeln und Auswirkungen für Ihre Ressourcen erzwungen, damit diese stets mit Ihren Unternehmensstandards und Vereinbarungen zum Servicelevel (Service Level Agreements, SLA) konform bleiben. Mit Azure Policy werden Ihre Ressourcen auf Nichteinhaltung der zugewiesenen Richtlinien überprüft. Angenommen, Sie möchten beispielsweise die SKU-Größe von virtuellen Computern in der Umgebung beschränken. Nach dem Implementieren einer entsprechenden Richtlinie werden neue und vorhandene Ressourcen in Bezug auf ihre Konformität ausgewertet. Mit der richtigen Richtlinie können vorhandene Ressourcen in Konformität gebracht werden.
+[Azure Policy](/azure/governance/policy/overview) ist ein Azure-Dienst zum Erstellen, Zuweisen und Verwalten von Richtlinien. Mit diesen Richtlinien werden verschiedene Regeln und Auswirkungen für Ihre Ressourcen erzwungen, damit diese stets mit Ihren Unternehmensstandards und Vereinbarungen zum Servicelevel (Service Level Agreements, SLA) konform bleiben. Mit Azure Policy werden Ihre Ressourcen auf Nichteinhaltung der zugewiesenen Richtlinien überprüft. Angenommen, Sie möchten beispielsweise die SKU-Größe von virtuellen Computern in der Umgebung beschränken. Nach dem Implementieren einer entsprechenden Richtlinie werden neue und vorhandene Ressourcen in Bezug auf ihre Konformität ausgewertet. Mit der richtigen Richtlinie können vorhandene Ressourcen in Konformität gebracht werden.
 
 ## <a name="cross-organization-policy"></a>Organisationsübergreifende Richtlinie
 
@@ -60,7 +60,7 @@ In Ihrem [Abonnemententwurf](../subscriptions/index.md) muss die Richtlinie an I
 
 ## <a name="automated-enforcement"></a>Automatisierte Erzwingung
 
-Während standardisierte Bereitstellungsvorlagen in kleinerem Umfang wirksam sind, ermöglicht [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview) eine umfassende standardisierte Bereitstellung und Bereitstellungsorchestrierung von Azure-Lösungen. Workloads in mehreren Abonnements können mit konsistenten Richtlinieneinstellungen für alle erstellten Ressourcen bereitgestellt werden.
+Während standardisierte Bereitstellungsvorlagen in kleinerem Umfang wirksam sind, ermöglicht [Azure Blueprints](/azure/governance/blueprints/overview) eine umfassende standardisierte Bereitstellung und Bereitstellungsorchestrierung von Azure-Lösungen. Workloads in mehreren Abonnements können mit konsistenten Richtlinieneinstellungen für alle erstellten Ressourcen bereitgestellt werden.
 
 Für IT-Umgebungen mit Integration von lokalen und Cloudressourcen müssen Sie möglicherweise Protokollierungs- und Berichterstellungssysteme verwenden, um Funktionen für die Hybridüberwachung bereitzustellen. Operative Überwachungssysteme von Drittanbietern oder benutzerdefinierte operative Überwachungssysteme umfassen möglicherweise weitere Funktionen zur Richtlinienerzwingung. Bei größeren oder schon länger bestehenden Cloudumgebungen sollten Sie sich Gedanken dazu machen, wie Sie diese Systeme am besten mit Ihren Cloudressourcen integrieren.
 

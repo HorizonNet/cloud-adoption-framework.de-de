@@ -12,12 +12,12 @@ metadata:
   author: JanetCThomas
   ms.author: janet
   ms.date: 05/15/2020
-  ms.openlocfilehash: b6774a9cee6c154a73dd8a33a33c1da338b21f68
-  ms.sourcegitcommit: e21c0f8a5179eaa3358f041f01a80e220feffdd6
-  ms.translationtype: 
+  ms.openlocfilehash: d65281dd02e597745a3864d04d9ec106e8692012
+  ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+  ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 07/06/2020
-  ms.locfileid: "86014277"
+  ms.lasthandoff: 08/17/2020
+  ms.locfileid: "88279997"
 highlightedContent:
   items:
   - title: Starten Ihrer Cloud Journey
@@ -139,25 +139,25 @@ tools:
   items:
   - title: Framework für die Einführung der Microsoft Cloud (Microsoft Cloud Adoption Framework)
     imageSrc: ./_images/learn-caf-logo.png
-    url: https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/index
+    url: /learn/modules/microsoft-cloud-adoption-framework-for-azure/index
   - title: Azure-Grundlagen
     imageSrc: ./_images/learn-azure-fundamentals-logo.png
-    url: https://docs.microsoft.com/learn/paths/azure-fundamentals
+    url: /learn/paths/azure-fundamentals
   - title: Kennenlernen des Geschäftswerts von Microsoft Azure
     imageSrc: ./_images/learn-business-value-of-azure-logo.png
-    url: https://docs.microsoft.com/learn/paths/learn-business-value-of-azure
+    url: /learn/paths/learn-business-value-of-azure
 conceptualContent:
   title: Bewertungen
   summary: Bewertungen helfen Ihnen bei der Planung Ihrer Cloud Journey. Verwenden Sie diese, um Unterschiede zwischen Ihrem aktuellen und dem gewünschten Zustand zu identifizieren. Wir stellen personalisierte kuratierte Empfehlungen bereit, die Ihnen helfen, den gewünschten Zustand zu erreichen.
   items:
   - title: Cloud Journey Tracker
     links:
-    - url: https://docs.microsoft.com/assessments/?mode=pre-assessment&id=cloud-journey-tracker
+    - url: /assessments/?id=cloud-journey-tracker&mode=pre-assessment
       itemType: get-started
       text: Identifizieren Sie Ihren Cloudeinführungspfad basierend auf den Anforderungen Ihres Unternehmens.
   - title: Tool zur strategischen Migrationsbewertung und Bereitschaft (INTELLIGENT)
     links:
-    - url: https://docs.microsoft.com/assessments/?mode=pre-assessment&id=Strategic-Migration-Assessment
+    - url: /assessments/?id=Strategic-Migration-Assessment&mode=pre-assessment
       itemType: get-started
       text: Beseitigen von Migrationshindernissen, Verbessern von Prozessen und Befördern des Geschäftserfolgs.
   - title: Governancebenchmark
@@ -167,7 +167,7 @@ conceptualContent:
       text: Identifizieren Sie die Lücken zwischen Ihrem derzeitigen Zustand und den geschäftlichen Prioritäten, und holen Sie sich die richtigen Ressourcen, um diese Lücken zu schließen.
   - title: Microsoft Azure Well-Architected-Bewertung
     links:
-    - url: https://docs.microsoft.com/assessments/?mode=pre-assessment&id=azure-architecture-review
+    - url: /assessments/?id=azure-architecture-review&mode=pre-assessment
       itemType: architecture
       text: Untersuchen Sie, wie Sie über die grundlegenden Vorgänge für Prioritätsworkloads hinausgehen.
 additionalContent:
@@ -184,4 +184,4 @@ additionalContent:
     - title: Einen Partner suchen
       summary: Einen Partner suchen, der Sie bei den ersten Schritten unterstützt
       url: https://aka.ms/adopt/findapartner
-  footer: Erfahren Sie, warum das Cloud Adoption Framework für Ihr Unternehmen geeignet ist. [https://aka.ms/adopt](https://azure.microsoft.com/cloud-adoption-framework)
+  footer: See why the Cloud Adoption Framework is right for your business. [https://aka.ms/adopt](https://azure.microsoft.com/cloud-adoption-framework)

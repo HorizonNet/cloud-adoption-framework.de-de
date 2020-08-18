@@ -7,12 +7,12 @@ ms.date: 05/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: fbe43c1769eed4b7ad0a032b7af11a0755d954cd
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 8b5c74387ea0d5cd16d93be222c546f301e8531f
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86449148"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88284451"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Cloudinnovationen im Cloud Adoption Framework
 
@@ -24,12 +24,10 @@ Zur Vorbereitung auf diese Phase des Cloudeinführungszyklus empfiehlt das Frame
 
 <!-- markdownlint-disable MD033 -->
 
-| | |
-|---|---|
-| <br> ![1](../_images/icons/1.png)     | <br> [Einigkeit über den Geschäftswert](./business-value.md): Ermitteln Sie vor dem Treffen einer Entscheidung in Bezug auf technische Lösungen, wie neue Innovationen den Geschäftswert steigern können. Lassen Sie diesen Wert in Ihre Cloudstrategie einfließen. Bei dieser inkrementellen Methodik kommt der Geschäftswert durch eine Hypothese über Kundenanforderungen zum Ausdruck.                                |
-| <br> ![2](../_images/icons/2.png)     | <br> [Azure-Innovationsleitfaden](./innovation-guide/index.md): Azure umfasst Cloudtools, mit denen die Bereitstellung innovativer Lösungen beschleunigt werden kann. Je nach Ihrer Zielsetzung kann es sein, dass Sie verschiedene Kombinationen von Tools erwägen. Wir empfehlen Ihnen, ein „minimal überlebensfähiges Produkt“ (Minimum Viable Product, MVP) zu erstellen, das nur die grundlegenden Tools aufweist.                                |
-| <br> ![3](../_images/icons/3.png)     | <br> [Bewährte Methoden:](./best-practices/index.md) Ihre architekturbezogenen Entscheidungen sollten den bewährten Methoden für jedes Tool in der Toolkette entsprechen. Indem Sie sich an diese Methoden halten, können Sie die Lösungsentwicklung beschleunigen und ein Referenzmodell für solide Architekturentwürfe schaffen.                                |
-| <br> ![4](../_images/icons/4.png)     | <br> [Feedbackschleifen](./considerations/adoption.md): Bei jeder Iteration bieten die zu entwickelnden Lösungen Ihren Teams die Möglichkeit, gemeinsam mit den Kunden zu lernen. Schnelle und präzise Feedbackschleifen bei der Zusammenarbeit mit Ihren Kunden vereinfachen für Sie das Testen, Messen und Lernen – und führen somit letztendlich zu einer Verkürzung des Zeitraums bis zur Markteinführung. Erfahren Sie, wie Azure und GitHub Feedbackschleifen beschleunigen.                        |
+- [Einigkeit über den Geschäftswert](./business-value.md): Ermitteln Sie vor dem Treffen einer Entscheidung in Bezug auf technische Lösungen, wie neue Innovationen den Geschäftswert steigern können. Lassen Sie diesen Wert in Ihre Cloudstrategie einfließen. Bei dieser inkrementellen Methodik kommt der Geschäftswert durch eine Hypothese über Kundenanforderungen zum Ausdruck.
+- [Azure-Innovationsleitfaden](./innovation-guide/index.md): Azure umfasst Cloudtools, mit denen die Bereitstellung innovativer Lösungen beschleunigt werden kann. Je nach Ihrer Zielsetzung kann es sein, dass Sie verschiedene Kombinationen von Tools erwägen. Wir empfehlen Ihnen, ein „minimal überlebensfähiges Produkt“ (Minimum Viable Product, MVP) zu erstellen, das nur die grundlegenden Tools aufweist.
+- [Bewährte Methoden:](./best-practices/index.md) Ihre architekturbezogenen Entscheidungen sollten den bewährten Methoden für jedes Tool in der Toolkette entsprechen. Indem Sie sich an diese Methoden halten, können Sie die Lösungsentwicklung beschleunigen und ein Referenzmodell für solide Architekturentwürfe schaffen.
+- [Feedbackschleifen](./considerations/adoption.md): Bei jeder Iteration bieten die zu entwickelnden Lösungen Ihren Teams die Möglichkeit, gemeinsam mit den Kunden zu lernen. Schnelle und präzise Feedbackschleifen bei der Zusammenarbeit mit Ihren Kunden vereinfachen für Sie das Testen, Messen und Lernen – und führen somit letztendlich zu einer Verkürzung des Zeitraums bis zur Markteinführung. Erfahren Sie, wie Azure und GitHub Feedbackschleifen beschleunigen.
 
 ## <a name="innovation-summary"></a>Zusammenfassung der Innovation
 
@@ -43,8 +41,8 @@ Die Bereitschaft zu den neuen Qualifikationen und Aufgaben, die mit der Cloudein
 
 Hier finden Sie einige Beispiele für rollenspezifische Lernpfade in Microsoft Learn, die auf die Innovationsmethodik des Cloud Adoption Framework abgestimmt sind.
 
-[Verwalten von Containern in Azure:](https://docs.microsoft.com/learn/paths/administer-containers-in-azure) Azure Container Instances ist die schnellste und einfachste Methode zum Ausführen von Containern in Azure. In diesem Lernpfad erfahren Sie, wie Sie Container erstellen und verwalten und wie Sie mit Azure Container Instances elastische Skalierungen für Kubernetes bereitstellen.
+[Verwalten von Containern in Azure:](/learn/paths/administer-containers-in-azure) Azure Container Instances ist die schnellste und einfachste Methode zum Ausführen von Containern in Azure. In diesem Lernpfad erfahren Sie, wie Sie Container erstellen und verwalten und wie Sie mit Azure Container Instances elastische Skalierungen für Kubernetes bereitstellen.
 
-[Erstellen serverloser Anwendungen:](https://docs.microsoft.com/learn/paths/create-serverless-applications) Azure Functions ermöglicht die Erstellung von ereignisgesteuerten Compute-On-Demand-Systemen, die durch verschiedene externe Ereignisse ausgelöst werden können. Lesen Sie, wie Sie Funktionen nutzen, um serverseitige Logik auszuführen und serverlose Architekturen zu erstellen.
+[Erstellen serverloser Anwendungen:](/learn/paths/create-serverless-applications) Azure Functions ermöglicht die Erstellung von ereignisgesteuerten Compute-On-Demand-Systemen, die durch verschiedene externe Ereignisse ausgelöst werden können. Lesen Sie, wie Sie Funktionen nutzen, um serverseitige Logik auszuführen und serverlose Architekturen zu erstellen.
 
-Weitere Lernpfade finden Sie im [Microsoft Learn-Katalog](https://docs.microsoft.com/learn/browse). Verwenden Sie den Filter **Rollen**, um Lernpfade an ihrer Rolle auszurichten.
+Weitere Lernpfade finden Sie im [Microsoft Learn-Katalog](/learn/browse). Verwenden Sie den Filter **Rollen**, um Lernpfade an ihrer Rolle auszurichten.

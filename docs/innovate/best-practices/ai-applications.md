@@ -1,46 +1,44 @@
 ---
 title: Was sind KI-Anwendungen?
-description: Was ist Cognitive Search?
+description: Hier erfahren Sie, wie Sie mit Azure Cognitive Services KI-Funktionen und -Innovationen in Ihre Anwendungen integrieren können.
 author: v-hanki
 ms.author: janet
 ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 7d35679a95dd91cd563fd6fe4be45519895e0fd3
-ms.sourcegitcommit: 26aee3c6f596bb8a9f1e16af93cdf94e41a61dee
+ms.openlocfilehash: d83ce295c46267d5e04eeab79ffbe715f4db40c5
+ms.sourcegitcommit: d31a9043d1ae9283ed126bf118ca26d1d18d6948
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87400461"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88040761"
 ---
 <!-- cSpell:ignore Personalizer -->
 
 # <a name="what-are-ai-applications"></a>Was sind KI-Anwendungen?
 
-In Azure können Sie schneller intelligente Anwendungen mit bereits integrierter KI erstellen und dabei die Tools und Technologien Ihrer Wahl verwenden.
+In Azure können Sie schneller intelligente Anwendungen mithilfe von Tools und Technologien Ihrer Wahl und integrierter KI entwickeln.
 
-- **Unkompliziertes Erstellen und Bereitstellen an jedem Ort:** Nutzen Sie die vorhandenen Fähigkeiten Ihres Teams sowie Ihre vertrauten und bevorzugten Tools, um intelligente Anwendungen zu erstellen und ohne Codeänderungen bereitzustellen. Einmal erstellte Anwendungen können anschließend überall bereitgestellt werden – sei es in der Cloud, lokal oder auf Edgegeräten. Dabei können Sie darauf vertrauen, dass sie weltweit in auf mehr Rechenzentren verteilt werden als bei jedem anderen Anbieter.
+- **Unkompliziertes Erstellen und Bereitstellen an jedem Ort:** Nutzen Sie die Fähigkeiten Ihres Teams und bereits bekannte Tools, um intelligente Anwendungen zu entwickeln und ohne Codeänderungen bereitzustellen. Sie können diese Anwendungen ein einziges Mal erstellen und dann in der Cloud, lokal und auf Edgegeräten bereitstellen. Sie können sich auf eine globale Verteilung auf mehr Rechenzentren verlassen als bei jedem anderen Anbieter.
+- **Verwenden einer offenen Plattform, um etwas zu bewirken:** Verwenden Sie Ihre bevorzugten Technologien – einschließlich Open Source. Azure unterstützt eine Reihe von Bereitstellungsoptionen, beliebten Stapeln und Sprachen sowie eine umfangreiche Sammlung von Daten-Engines. Machen Sie sich diese Flexibilität sowie die Leistung, Skalierbarkeit und Sicherheit von Microsoft-Technologien zunutze, um Anwendungen für jedes beliebige Szenario zu entwickeln.
+- **Entwickeln von Anwendungen mit integrierter Intelligenz:** Mit Azure können Sie problemlos intelligente Anwendungen erstellen, da nur diese Plattform Analysen und native KI für Ihre Daten bietet – unabhängig davon, wo sich diese befinden oder welche Sprache Sie verwenden. Sie können viele verschiedene [kognitive APIs](https://azure.microsoft.com/services/cognitive-services/) nutzen, um ganz einfach neue Komponenten in Ihre Anwendungen zu integrieren, um menschenähnliche Intelligenz zu erzielen.
 
-- **Verwenden einer offenen Plattform, um etwas zu bewirken:** Wählen Sie Ihre bevorzugten Technologien – einschließlich Open Source. Azure unterstützt eine Reihe von Bereitstellungsoptionen, beliebten Stapeln und Sprachen sowie eine umfangreiche Sammlung von Daten-Engines. Machen Sie sich diese Flexibilität sowie die Leistung, Skalierbarkeit und Sicherheit von Microsoft-Technologien zunutze, um Anwendungen für jedes beliebige Szenario zu entwickeln.
+## <a name="what-is-azure-cognitive-services"></a>Was ist Azure Cognitive Services?
 
-- **Entwickeln von Anwendungen mit integrierter Intelligenz:** Mit Azure können Sie problemlos intelligente Anwendungen erstellen, da nur diese Plattform Analysen und native KI für Ihre Daten bietet – unabhängig davon, wo sich diese befinden oder welche Sprache Sie verwenden. Nutzen Sie verschiedenste [kognitive APIs](https://azure.microsoft.com/services/cognitive-services/), um ganz einfach neue Erfahrungen in Ihre Anwendungen zu integrieren und menschenähnliche Intelligenz zu erzielen.
+Azure Cognitive Services kann durch ein paar wenige Codezeilen das Integrieren von KI-Funktionen und -Innovationen in Anwendungen vereinfachen. Azure Cognitive Services unterstützt Sie beim Entwickeln von Anwendungen, die im Zusammenhang mit Ihren Geschäftsprozessen sehen, hören, sprechen, verstehen und sogar Schlussfolgerungen ziehen können. Cognitive Services bietet benutzerfreundliche KI, die sich problemlos in Ihre Anwendungen integrieren lässt.
 
-## <a name="what-are-azure-cognitive-services"></a>Was ist Azure Cognitive Services?
-
-Azure Cognitive Services kann die Integration von KI in Ihre Anwendungen vereinfachen und die neuesten Durchbrüche in der KI nutzbar machen – alles mit ein paar einfachen Codezeilen. Die Lösung ermöglicht die Erstellung von Anwendungen, die sehen, hören, sprechen, verstehen und sogar zu vernünftigen Geschäftsprozessen beitragen können. Azure Cognitive Services bietet benutzerfreundliche KI, die sich problemlos in Ihre Anwendung integrieren lässt.
-
-Azure Cognitive Services sind APIs, SDKs und Dienste, die Entwicklern beim Erstellen intelligenter Anwendungen helfen, ohne direkte KI- oder Data Science-Fähigkeiten oder -Kenntnisse zu haben. Mit Azure Cognitive Services können Entwickler ganz einfach kognitive Funktionen in ihre Anwendungen integrieren. Das Ziel von Azure Cognitive Services ist es, Entwicklern zu helfen, Anwendungen zu entwickeln, die sehen, hören, sprechen, verstehen und sogar schlussfolgern können. Der Katalog der Dienste innerhalb von Azure Cognitive Services kann in fünf Hauptkategorien unterteilt werden: Bildanalyse, Spracheingabe, Sprache, Websuche und Entscheidungen.
+Es handelt sich dabei um APIs, SDKs und Dienste, die Entwicklern beim Erstellen intelligenter Anwendungen helfen, ohne dass direkte Fertigkeiten oder Kenntnisse in den Bereichen KI oder Data Science erforderlich sind. Mit Cognitive Services können Entwickler ganz einfach kognitive Features in ihre Anwendungen integrieren. Die dort verfügbaren Dienste können in fünf Hauptkategorien unterteilt werden: Sehen, Sprechen, Sprache, Websuche und Entscheidungsfindung.
 
 ### <a name="vision-apis"></a>Bildanalyse-APIs
 
 | Dienstname | Dienstbeschreibung |
 | --- | --- |
-| [Maschinelles Sehen](https://docs.microsoft.com/azure/cognitive-services/computer-vision/) | Über den Dienst für maschinelles Sehen haben Sie Zugriff auf erweiterte Algorithmen für die Bildverarbeitung und die Rückgabe von Informationen. |
-| [Custom Vision](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home) | Mit dem Custom Vision-Dienst können Sie benutzerdefinierte Bildklassifizierungen erstellen. |
-| [Gesichtserkennung](https://docs.microsoft.com/azure/cognitive-services/face/) | Der Gesichtserkennungsdienst ermöglicht den Zugriff auf erweiterte Algorithmen zur Gesichtserkennung, wodurch die Ermittlung von Gesichtsmerkmalen sowie die Gesichtserkennung ermöglicht wird. |
-| [Formularerkennung](https://docs.microsoft.com/azure/cognitive-services/form-recognizer/) (Vorschauversion) | Die Formularerkennung identifiziert und extrahiert Schlüssel-Wert-Paare und Tabellendaten aus Formulardokumenten und gibt dann strukturierte Daten aus, die auch die Beziehungen in der ursprünglichen Datei umfassen. |
-| [Freihanderkennung](https://docs.microsoft.com/azure/cognitive-services/ink-recognizer/) (Vorschauversion) | Die Freihanderkennung ermöglicht das Erkennen und Analysieren von Daten, Formen und handschriftlichen Inhalten aus Freihandeingaben sowie die Ausgabe einer Dokumentstruktur mit allen erkannten Entitäten. |
+| [Maschinelles Sehen](https://docs.microsoft.com/azure/cognitive-services/computer-vision/) | Über die API „maschinelles Sehen“ haben Sie Zugriff auf erweiterte Algorithmen für die Bildverarbeitung und die Rückgabe von Informationen. |
+| [Custom Vision](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home) | Mit Custom Vision können Sie benutzerdefinierte Bildklassifizierungen entwickeln. |
+| [Gesichtserkennung](https://docs.microsoft.com/azure/cognitive-services/face/) | Der Gesichtserkennungsdienst ermöglicht den Zugriff auf erweiterte Gesichtserkennungsalgorithmen, die Gesichtsmerkmale erkennen. |
+| [Formularerkennung](https://docs.microsoft.com/azure/cognitive-services/form-recognizer/) (Vorschauversion) | Die Formularerkennung identifiziert und extrahiert Schlüssel-Wert-Paare und Tabellendaten aus Formulardokumenten. Anschließend werden strukturierte Daten ausgegeben, die die Beziehungen in der Originaldatei enthalten. |
+| [Freihanderkennung](https://docs.microsoft.com/azure/cognitive-services/ink-recognizer/) (Vorschauversion) | Die Freihanderkennung ermöglicht das Erkennen und Analysieren von Strichdaten, Formen und handschriftlichen Inhalten aus Freihandeingaben sowie die Ausgabe einer Dokumentstruktur mit allen erkannten Entitäten. |
 | [Video Indexer](https://docs.microsoft.com/azure/cognitive-services/video-indexer/video-indexer-overview) | Video Indexer ermöglicht es Ihnen, Erkenntnisse aus Ihren Videos zu extrahieren. |
 
 ### <a name="speech-apis"></a>Spracherkennungs-APIs
@@ -50,16 +48,16 @@ Azure Cognitive Services sind APIs, SDKs und Dienste, die Entwicklern beim Erste
 | [Spracheingabe](https://docs.microsoft.com/azure/cognitive-services/speech-service/) | Der Spracherkennungsdienst erweitert Anwendungen um sprachaktivierte Features. |
 | [Sprechererkennung](https://docs.microsoft.com/azure/cognitive-services/speaker-recognition/home "Sprechererkennungs-API") (Vorschauversion) | Die Sprechererkennungs-API stellt Algorithmen zur Sprecheridentifikation und -verifizierung zur Verfügung. |
 | [Bing-Spracheingabe](https://docs.microsoft.com/azure/cognitive-services/speech/home) (wird eingestellt) | Die Bing-Spracheingabe-API bietet Ihnen eine einfache Möglichkeit, sprachaktivierte Features in Ihren Anwendungen zu erstellen. |
-| [Sprachübersetzung](https://docs.microsoft.com/azure/cognitive-services/translator-speech/) (wird eingestellt) | Die Sprachübersetzung ist ein Dienst für maschinelle Übersetzungen. |
+| [Sprachübersetzung](https://docs.microsoft.com/azure/cognitive-services/translator-speech/) (wird eingestellt) | Die Sprachübersetzung ist ein Dienst zur maschinellen Übersetzung. |
 
 ### <a name="language-apis"></a>Sprache-APIs
 
 | Dienstname | Dienstbeschreibung |
 | --- | -- |
 | [Language Understanding (LUIS)](https://docs.microsoft.com/azure/cognitive-services/luis/) | Mit dem LUIS-Dienst (Language Understanding) kann Ihre Anwendung frei formulierte Anliegen von Personen verstehen. |
-| [QnA Maker](https://docs.microsoft.com/azure/cognitive-services/qnamaker/index "QnA Maker") | QnA Maker ermöglicht es Ihnen, aus Ihren teilstrukturierten Inhalten einen Frage- und Antwortdienst zu erstellen. |
-| [Textanalyse](https://docs.microsoft.com/azure/cognitive-services/text-analytics/) | Die Textanalyse bietet die Verarbeitung natürlicher Sprache für unformatierten Text für die Stimmungsanalyse, die Schlüsselbegriffserkennung und die Sprachenerkennung. |
-| [Translator](https://docs.microsoft.com/azure/cognitive-services/translator/) | Translator ermöglicht eine maschinenbasierte Textübersetzung in Quasi-Echtzeit. |
+| [QnA Maker](https://docs.microsoft.com/azure/cognitive-services/qnamaker/index "QnA Maker") | Der QnA Maker ermöglicht es Ihnen, aus Ihren teilstrukturierten Inhalten einen Frage- und Antwortdienst zu erstellen. |
+| [Textanalyse](https://docs.microsoft.com/azure/cognitive-services/text-analytics/) | Die Textanalyse bietet die Verarbeitung von natürlicher Sprache für unformatierten Text für die Standpunktanalyse, die Schlüsselbegriffserkennung und die Sprachenerkennung. |
+| [Translator](https://docs.microsoft.com/azure/cognitive-services/translator/) | Translator ermöglicht eine maschinelle Textübersetzung nahezu in Echtzeit. |
 
 ### <a name="decision-apis"></a>Entscheidungs-APIs
 
@@ -67,19 +65,19 @@ Azure Cognitive Services sind APIs, SDKs und Dienste, die Entwicklern beim Erste
 | --- | --- |
 | [Anomalieerkennung](https://docs.microsoft.com/azure/cognitive-services/anomaly-detector/) (Vorschauversion) | Die Anomalieerkennung bietet Ihnen die Möglichkeit, Abweichungen in Ihren Zeitreihendaten zu überwachen und zu erkennen. |
 | [Content Moderator](https://docs.microsoft.com/azure/cognitive-services/content-moderator/overview "Content Moderator") | Der Content Moderator bietet die Überwachung auf möglicherweise anstößige, unerwünschte und risikobehaftete Inhalte. |
-| [Personalisierung](https://docs.microsoft.com/azure/cognitive-services/personalizer/) | Mit der Personalisierung können Sie die beste Benutzeroberfläche für Ihre Benutzer auswählen und dabei in Echtzeit von deren Verhalten lernen. |
+| [Personalisierung](https://docs.microsoft.com/azure/cognitive-services/personalizer/) | Die Personalisierung ermöglicht es Ihnen, Informationen über das Echtzeitverhalten von Benutzern zu erhalten, um die am besten geeignete Darstellung auszuwählen. |
 
 ### <a name="supported-cultural-languages"></a>Unterstützte Kultursprachen
 
 Cognitive Services unterstützt eine Vielzahl von Kultursprachen auf Dienstebene. Sie finden die Sprachenverfügbarkeit für jede API in der [Liste unterstützter Sprachen](https://docs.microsoft.com/azure/cognitive-services/language-support).
 
-### <a name="securing-resources"></a>Sichern von Ressourcen
+### <a name="secure-resources"></a>Sichere Ressourcen
 
-Azure Cognitive Services bietet ein mehrschichtiges Sicherheitsmodell – einschließlich [Authentifizierung](https://docs.microsoft.com/azure/cognitive-services/authentication) per Azure Active Directory-Anmeldeinformationen, gültigem Ressourcenschlüssel und [Azure Virtual Network](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-virtual-networks).
+Cognitive Services bietet ein mehrschichtiges Sicherheitsmodell – einschließlich [Authentifizierung](https://docs.microsoft.com/azure/cognitive-services/authentication) über Azure Active Directory-Anmeldeinformationen, einem gültigem Ressourcenschlüssel und [Azure Virtual Network](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-virtual-networks).
 
 ### <a name="container-support"></a>Containerunterstützung
 
-Cognitive Services stellt Container für die Bereitstellung in der Azure-Cloud oder lokal bereit. Weitere Informationen zu Cognitive Services-Containern finden Sie [hier](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-container-support).
+Cognitive Services stellt Container für die Bereitstellung in der Cloud oder lokal bereit. Weitere Informationen zu Cognitive Services-Containern finden Sie [hier](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-container-support).
 
 <!-- docsTest:ignore "HIPAA BAA" "CSA STAR" -->
 
@@ -93,16 +91,16 @@ Informationen zum Datenschutz und zur Datenverwaltung finden Sie im [Microsoft T
 
 ## <a name="how-are-cognitive-services-and-azure-machine-learning-similar"></a>Inwiefern ähneln sich Cognitive Services und Azure Machine Learning?
 
-Beide haben zwar die Verbesserung des Geschäftsbetriebs durch den Einsatz von KI zum Ziel, unterscheiden sich jedoch bei der Bereitstellung in den jeweiligen Angeboten. Im Grundsatz sind die Zielgruppen unterschiedlich:
+Cognitive Services und Azure Machine Learning haben beide das Ziel, KI zur Verbesserung des Geschäftsbetriebs zu nutzen. In den jeweiligen Angeboten wird diese Funktion jedoch unterschiedlich bereitgestellt. Im Grundsatz sind die Zielgruppen unterschiedlich:
 
-- Cognitive Services sind für Entwickler vorgesehen, die keine Machine Learning-Erfahrung haben.
-- Azure Machine Learning ist auf Data Scientists zugeschnitten.
+- Cognitive Services ist für Entwickler gedacht, die über keine Erfahrung im Bereich maschinelles Lernen verfügen.
+- Machine Learning ist auf die Bedürfnisse von Data Scientists zugeschnitten.
 
 ## <a name="how-is-a-cognitive-service-different-from-machine-learning"></a>Inwiefern unterscheidet sich ein Cognitive Service von maschinellem Lernen?
 
-Ein Cognitive Service stellt ein trainiertes Modell bereit. Dabei werden Daten und ein Algorithmus miteinander verknüpft und über eine REST-API oder ein SDK verfügbar gemacht. Abhängig von Ihrem Szenario können Sie diesen Dienst innerhalb von Minuten implementieren. Ein Cognitive Service liefert Antworten für allgemeine Probleme, etwa Schlüsselwörter in Texten oder Elementerkennung in Bildern.
+Ein Cognitive Service stellt ein trainiertes Modell bereit. Dieses Modell verknüpft die Daten mit einem Algorithmus und ist über eine REST-API oder ein SDK verfügbar. Abhängig von Ihrem Szenario können Sie diesen Dienst innerhalb weniger Minuten implementieren. Ein Cognitive Service liefert Antworten für allgemeine Probleme, etwa Schlüsselwörter in Texten oder Elementerkennung in Bildern.
 
-Machine Learning ist ein Prozess, für dessen erfolgreiche Implementierung üblicherweise ein längerer Zeitraum erforderlich ist. Diese Zeit wird für Datensammlung, Bereinigung, Transformation, Algorithmusauswahl, Modelltraining und Bereitstellung aufgewendet, um die gleiche Funktionalität zu erreichen, die von einem Cognitive Service bereitgestellt wird. Mit maschinellem Lernen ist es möglich, Antworten auf hochspezialisierte und/oder spezifische Probleme bereitzustellen. Diese mit maschinellem Lernen zu lösenden Probleme erfordern Vertrautheit mit der spezifischen Thematik und den Daten des betreffenden Problems sowie entsprechendes Know-how.
+Machine Learning ist ein Prozess, für dessen erfolgreiche Implementierung üblicherweise ein längerer Zeitraum erforderlich ist. Diese Zeit wird für Datensammlung, Bereinigung, Transformation, Algorithmusauswahl, Modelltraining und Bereitstellung aufgewendet, um die gleiche Funktionalität zu erreichen, die von einem Cognitive Service bereitgestellt wird. Mit maschinellem Lernen ist es möglich, Antworten auf hochspezialisierte oder spezifische Probleme bereitzustellen. Diese mit maschinellem Lernen zu lösenden Probleme erfordern Vertrautheit mit der spezifischen Thematik und den Daten des betreffenden Problems sowie ein entsprechendes Know-how.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

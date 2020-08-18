@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a98a60937bf01eaa3fc4a9a7f7ba594e281a008e
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 6cc107d743516160917d863fa69d2aa5a5aaa4a7
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88196065"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88278603"
 ---
 # <a name="software-defined-networking-decision-guide"></a>Leitfaden zur Entscheidungsfindung für softwaredefinierte Netzwerke
 
@@ -62,8 +62,8 @@ Erfahren Sie mehr über die wichtigsten Architekturen für softwaredefinierte Ne
 
 Weitere Informationen zu softwaredefinierten Netzwerken (SDN) in Azure finden Sie hier:
 
-- [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview). In Azure wird die zentrale SDN-Funktionalität von Azure Virtual Network bereitgestellt, das als Cloud analog zu physischen lokalen Netzwerken fungiert. Virtuelle Netzwerke fungieren auch als Standardisolationsgrenze zwischen Ressourcen auf der Plattform.
-- [Bewährte Methoden für die Netzwerksicherheit in Azure](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices). Empfehlungen des Azure-Sicherheitsteams für das Konfigurieren Ihrer virtuellen Netzwerke, um Sicherheitsrisiken zu minimieren.
+- [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview). In Azure wird die zentrale SDN-Funktionalität von Azure Virtual Network bereitgestellt, das als Cloud analog zu physischen lokalen Netzwerken fungiert. Virtuelle Netzwerke fungieren auch als Standardisolationsgrenze zwischen Ressourcen auf der Plattform.
+- [Bewährte Methoden für die Netzwerksicherheit in Azure](/azure/security/fundamentals/network-best-practices). Empfehlungen des Azure-Sicherheitsteams für das Konfigurieren Ihrer virtuellen Netzwerke, um Sicherheitsrisiken zu minimieren.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 10f15acb1d64a5ce66ba12b61809ae15e4bd458d
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: c749237029542e8757af75b9a83aaba8cd917055
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86451469"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88279623"
 ---
 <!-- docsTest:ignore InterpretML FairLearn -->
 
@@ -28,8 +28,7 @@ Machen Sie zur Vorbereitung auf diese Phase des Cloudeinführungszyklus die folg
 
 <!-- markdownlint-disable MD033 -->
 
-| | |
-|---|---|
-| ![Symbol für Element 1](../../_images/icons/1.png) | <br> [Entwicklung, Bereitstellung und Verwaltung von Machine Learning-Modellen:](https://azure.microsoft.com/overview/ai-platform/dev-resources/) Sehen Sie sich Muster und Vorgehensweisen zum Entwickeln Ihrer eigenen Machine Learning-Modelle an, einschließlich MLOps, automatisierter Machine Learning- (AutoML) und verantwortungsbewusster ML-Lerntools wie InterpretML und FairLearn. |
-| ![Symbol für Element 2](../../_images/icons/2.png) | <br> [Hinzufügen von domänenspezifischen KI-Modellen zu Ihren Anwendungen:](https://www.oreilly.com/library/view/building-intelligent-apps/9781492058632/) Hier erhalten Sie Informationen zu bewährten Methoden für das Hinzufügen von KI-Funktionen zu Ihren Anwendungen mit Cognitive Services. Außerdem erfahren Sie mehr über die wichtigsten Szenarien, die von diesen Diensten unterstützt werden. [Erstellen Ihrer eigenen interaktiven KI-Lösung](https://www.oreilly.com/library/view/a-developers-guide/9781492080619/): Hier erfahren Sie, wie Sie Ihren eigenen virtuellen Assistenten erstellen – eine interaktive KI-Anwendung, die Sprache und Text versteht, große Mengen von Informationen erkennt und intelligent antwortet. |
-| ![Symbol für Element 3](../../_images/icons/3.png) | <br> [Erstellen von KI-basierten Knowledge Mining-Lösungen:](https://azure.microsoft.com/resources/a-developers-guide-to-building-ai-driven-knowledge-mining-solutions/) Hier erfahren Sie, wie Sie mit Knowledge Mining strukturierte Daten aus ihren unstrukturierten Inhalten extrahieren und verwertbare Informationen aus den vielen Daten Ihrer Organisation gewinnen. |
+- [Entwicklung, Bereitstellung und Verwaltung von Machine Learning-Modellen:](https://azure.microsoft.com/overview/ai-platform/dev-resources/) Sehen Sie sich Muster und Vorgehensweisen zum Entwickeln Ihrer eigenen Machine Learning-Modelle an, einschließlich MLOps, automatisierter Machine Learning- (AutoML) und verantwortungsbewusster ML-Lerntools wie InterpretML und FairLearn.
+- [Hinzufügen von domänenspezifischen KI-Modellen zu Ihren Anwendungen:](https://www.oreilly.com/library/view/building-intelligent-apps/9781492058632/) Hier erhalten Sie Informationen zu bewährten Methoden für das Hinzufügen von KI-Funktionen zu Ihren Anwendungen mit Cognitive Services. Außerdem erfahren Sie mehr über die wichtigsten Szenarien, die von diesen Diensten unterstützt werden.
+- [Erstellen Ihrer eigenen interaktiven KI-Lösung](https://www.oreilly.com/library/view/a-developers-guide/9781492080619/): Hier erfahren Sie, wie Sie Ihren eigenen virtuellen Assistenten erstellen – eine interaktive KI-Anwendung, die Sprache und Text versteht, große Mengen von Informationen erkennt und intelligent antwortet.
+- [Erstellen von KI-basierten Knowledge Mining-Lösungen:](https://azure.microsoft.com/resources/a-developers-guide-to-building-ai-driven-knowledge-mining-solutions/) Hier erfahren Sie, wie Sie mit Knowledge Mining strukturierte Daten aus ihren unstrukturierten Inhalten extrahieren und verwertbare Informationen aus den vielen Daten Ihrer Organisation gewinnen.

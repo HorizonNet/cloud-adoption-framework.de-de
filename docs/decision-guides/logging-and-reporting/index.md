@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: ccd87b73976cb87069bf05463f05a1e22e2caf75
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 728531a3d46cc2f3a7d3d94f63cbf71b83b103cd
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88196118"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88278926"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Protokollierung und Berichterstellung
 
@@ -40,7 +40,7 @@ Bei der Planung Ihrer Bereitstellung müssen Sie berücksichtigen, wo Protokolld
 
 ### <a name="cloud-native"></a>Cloudnativ
 
-Wenn es in Ihrer Organisation derzeit an bewährten Protokollierungs- und Berichtssystemen fehlt oder Ihre geplante Bereitstellung nicht in bestehende lokale oder andere externe Überwachungssysteme integriert werden muss, ist eine cloudnative SaaS-Lösung wie [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) die einfachste Wahl.
+Wenn es in Ihrer Organisation derzeit an bewährten Protokollierungs- und Berichtssystemen fehlt oder Ihre geplante Bereitstellung nicht in bestehende lokale oder andere externe Überwachungssysteme integriert werden muss, ist eine cloudnative SaaS-Lösung wie [Azure Monitor](/azure/azure-monitor/overview) die einfachste Wahl.
 
 Bei diesem Szenario werden die Protokolldaten erfasst und in der Cloud gespeichert, während die Protokollierungs- und Berichterstellungstools, die Informationen verarbeiten und IT-Mitarbeitern zugänglich machen, von der Azure-Plattform und Azure Monitor bereitgestellt werden.
 
@@ -68,7 +68,7 @@ Annahmen für eine rein lokale Lösung:
 
 ### <a name="gateway-aggregation"></a>Gatewayaggregation
 
-Für Szenarien, in denen die Menge der cloudbasierten Telemetriedaten groß ist oder Protokolldaten für bestehende lokale Überwachungssysteme geändert werden müssen, bevor sie verarbeitet werden können, kann ein Dienst zur [Gatewayaggregation](https://docs.microsoft.com/azure/architecture/patterns/gateway-aggregation) von Protokolldaten erforderlich sein.
+Für Szenarien, in denen die Menge der cloudbasierten Telemetriedaten groß ist oder Protokolldaten für bestehende lokale Überwachungssysteme geändert werden müssen, bevor sie verarbeitet werden können, kann ein Dienst zur [Gatewayaggregation](/azure/architecture/patterns/gateway-aggregation) von Protokolldaten erforderlich sein.
 
 Ein Gatewaydienst wird bei Ihrem Cloudanbieter bereitgestellt. Anschließend werden relevante Anwendungen und Dienste so konfiguriert, dass Telemetriedaten anstatt an ein Standardprotokollierungssystem an das Gateway übertragen werden. Das Gateway kann anschließend die Daten verarbeiten, indem es sie aggregiert, kombiniert oder anderweitig formatiert, bevor es sie dann zur Erfassung und Analyse an Ihren Überwachungsdienst übermittelt.
 
@@ -114,12 +114,12 @@ Die Unterstützung der Protokollierung mehrerer Clouds erfordert oft den Einsatz
 
 ## <a name="learn-more"></a>Weitere Informationen
 
-[Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) ist der Azure-Standarddienst für Berichterstellung und Überwachung. Die Lösung umfasst Folgendes:
+[Azure Monitor](/azure/azure-monitor/overview) ist der Azure-Standarddienst für Berichterstellung und Überwachung. Die Lösung umfasst Folgendes:
 
 - Eine einheitliche Plattform für das Sammeln von App-Telemetriedaten, Host-Telemetriedaten (wie z.B. VMs), Containermetriken, Azure-Plattformmetriken und Ereignisprotokollen.
 - Visualisierung, Abfragen, Warnungen und Analysetools. Der Dienst kann Einblicke in virtuelle Computer, Gastbetriebssysteme, virtuelle Netzwerke und workloadbezogene Anwendungsereignisse liefern.
-- [REST-APIs](https://docs.microsoft.com/azure/azure-monitor/platform/rest-api-walkthrough) für die Integration in externe Dienste und die Automatisierung von Überwachungs- und Benachrichtigungsdiensten.
-- [Integration](https://docs.microsoft.com/azure/azure-monitor/platform/partners) in zahlreiche beliebte Dienste von Drittanbietern.
+- [REST-APIs](/azure/azure-monitor/platform/rest-api-walkthrough) für die Integration in externe Dienste und die Automatisierung von Überwachungs- und Benachrichtigungsdiensten.
+- [Integration](/azure/azure-monitor/platform/partners) in zahlreiche beliebte Dienste von Drittanbietern.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

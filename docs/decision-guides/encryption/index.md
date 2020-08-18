@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: b43c20579bceb855c77adb3b4e7919254fa50d5a
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: f7d3add62dd4127f0a74537f57e75051b5fd72dd
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88196144"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88279028"
 ---
 <!-- cSpell:ignore BYOK -->
 
@@ -123,9 +123,9 @@ Die Verschlüsselung von Daten in Gebrauch umfasst das Schützen von Daten in ni
 
 Weitere Informationen zur Verschlüsselung und Schlüsselverwaltung in Azure finden Sie unter:
 
-- **[Übersicht über die Azure-Verschlüsselung](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview):** Eine ausführliche Beschreibung zur Verwendung der Verschlüsselung in Azure zum Schutz sowohl ruhender Daten als auch von Daten bei der Übertragung.
-- **[Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/overview):** Key Vault ist das primäre Schlüsselverwaltungssystem zum Speichern und Verwalten von kryptografischen Schlüsseln, Geheimnissen und Zertifikaten in Azure.
-- **[Bewährte Methoden für Datensicherheit und Datenverschlüsselung in Azure](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices):** Eine Diskussion über die bewährten Methoden von Azure zur Datensicherheit und Datenverschlüsselung.
+- **[Übersicht über die Azure-Verschlüsselung](/azure/security/fundamentals/encryption-overview):** Eine ausführliche Beschreibung zur Verwendung der Verschlüsselung in Azure zum Schutz sowohl ruhender Daten als auch von Daten bei der Übertragung.
+- **[Azure Key Vault](/azure/key-vault/general/overview):** Key Vault ist das primäre Schlüsselverwaltungssystem zum Speichern und Verwalten von kryptografischen Schlüsseln, Geheimnissen und Zertifikaten in Azure.
+- **[Bewährte Methoden für Datensicherheit und Datenverschlüsselung in Azure](/azure/security/fundamentals/data-encryption-best-practices):** Eine Diskussion über die bewährten Methoden von Azure zur Datensicherheit und Datenverschlüsselung.
 - **[Azure Confidential Computing](https://azure.microsoft.com/solutions/confidential-compute):** Die Confidential Computing-Initiative von Azure stellt Tools und Technologien zum Erstellen von vertrauenswürdigen Ausführungsumgebungen und anderen Verschlüsselungsmechanismen zum Schützen von Daten in Gebrauch bereit.
 
 ## <a name="next-steps"></a>Nächste Schritte

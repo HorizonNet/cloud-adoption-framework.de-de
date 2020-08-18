@@ -1,45 +1,44 @@
 ---
 title: Demokratisierung von Daten
-description: Statten Sie Unternehmen mit Dateninnovation und einem zentralen Datenrepository als alleingültige Datenquelle aus.
+description: Optimieren Sie Ihr Unternehmen mit Dateninnovationen und einem zentralen Datenrepository.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/22/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: d54276568938919f4da117208a5f25154ac9115b
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: c22cf44e9f03d900d6d8474a5c71cb2bdb0e8242
+ms.sourcegitcommit: d31a9043d1ae9283ed126bf118ca26d1d18d6948
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86452619"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88040965"
 ---
 # <a name="data-democratization"></a>Demokratisierung von Daten
 
-Durch Dateninnovation und einen modernen Datenbestand kann das gesamte Unternehmen vom Projektbeteiligten aus dem IT-Bereich bis hin zum Datenprofi Aktionen über dieses zentrale Datenrepository ausführen, das zur alleingültigen Datenquelle wird.
+Viele Unternehmen verfügen über Data Warehouses in ihren Rechenzentren, die verschiedenen Teilen des Unternehmens beim Analysieren von Daten und Treffen von Entscheidungen helfen. Vertriebs-, Marketing- und Finanzabteilungen verlassen sich bei der Erstellung von Standardberichten und -dashboards auf diese Systeme. Darüber hinaus beschäftigen Unternehmen Business Analysts, die Ad-hoc-Abfragen und Analysen für Daten in Data Marts ausführen. Diese Data Marts verwenden Self-Service-Business-Intelligence-Tools, um mehrdimensionale Analysen durchzuführen.
 
-Heute verfügen viele Unternehmen schon seit langem über Data Warehouses für Analysezwecke in ihren Rechenzentren, um die Entscheidungsfindung in verschiedenen Bereichen ihres Unternehmens zu unterstützen. Solche Systeme werden insbesondere von den Vertriebs-, Marketing- und Finanzabteilungen zum Erstellen von Standardberichten und Dashboards genutzt. Darüber hinaus werden Business Analysts beauftragt, Ad-hoc-Abfragen und -Analysen von Daten in Data Marts durchzuführen, die für mehrdimensionale Analysen mithilfe von Self-Service-Business Intelligence-Tools (BI) konzipiert sind.  
+Ein Unternehmen, das Dateninnovationen und einen modernen Datenbestand nutzt, kann eine große Bandbreite von Mitwirkenden unterstützen, von Beteiligten im IT-Bereich bis hin zu Datenexperten und weiteren Personen. Diese können dieses Repository mit zentralisierten Daten, das häufig als „Single Source of Truth“ bezeichnet wird, als Handlungsgrundlage verwenden.
 
-Azure Synapse Analytics ist ein einzelner Dienst für nahtlose Zusammenarbeit und beschleunigten Erkenntnisgewinn.
+Azure Synapse Analytics ist ein einzelner Dienst für nahtlose Zusammenarbeit und schnelleren Erkenntnisgewinn. Damit Sie diesen Dienst besser verstehen, sollten Sie sich zunächst mit den verschiedenen Rollen und Fertigkeiten im Zusammenhang mit einem typischen Datenbestand befassen:
 
 **Data Warehousing**: *Datenbankadministratoren* unterstützen die Verwaltung von Data Lakes und Data Warehouses, wobei Workloads intelligent optimiert und Daten automatisch gesichert werden.
 
 **Datenintegration**: *Data Engineers* nutzen eine codefreie Umgebung, um problemlos mehrere Quellen und Datentypen zu verbinden.
 
-**Big Data und Machine Learning**: *Data Scientists* erstellen schnell Proofs of Concept und stellen Ressourcen bei Bedarf bereit, wobei sie in der Sprache Ihrer Wahl arbeiten (T-SQL, Python, Scala, .NET, SparkSQL).
+**Big Data und maschinelles Lernen:** *Data Scientists* erstellen schnell Proofs of Concept und stellen Ressourcen nach Bedarf bereit. Dabei arbeiten sie in der Sprache ihrer Wahl (z. B. T-SQL, Python, Scala, .NET oder SparkSQL).
 
-**Verwaltung und Sicherheit**: *IT-Profis* schützen und verwalten Daten effizienter, erfüllen Datenschutzanforderungen und sichern den Zugriff auf Cloud- und Hybridkonfigurationen.
+**Verwaltung und Sicherheit:** *IT-Profis* schützen und verwalten Daten effizienter, setzen Datenschutzanforderungen durch und sichern den Zugriff auf Cloud- und Hybridkonfigurationen.
 
-**Business Intelligence**: *Business Analysts* greifen auf sichere Weise auf Datasets zu, erstellen Dashboards und geben Daten innerhalb und außerhalb ihrer Organisation frei.
+**Business Intelligence**: *Business Analysts* greifen sicher auf Datasets zu, erstellen Dashboards und geben Daten innerhalb und außerhalb ihrer Organisation frei.
 
-Ein Beispiel einer klassischen Data Warehouse-Architektur ist in Abbildung 1 dargestellt. Hier werden bekannte strukturierte Daten aus wichtigen Transaktionsverarbeitungssystemen extrahiert, in einen Stagingbereich kopiert, aus dem sie bereinigt werden, transformiert und in Produktionstabellen in einem Data Warehouse integriert. Häufig werden hier historische Transaktionsdaten über mehrere Jahre inkrementell aufgebaut, um die Daten zur Verfügung zu stellen, die erforderlich sind, um Veränderungen beim Umsatz, das Kaufverhalten von Kunden und die Kundensegmentierung im zeitlichen Verlauf zu verstehen und eine jährliche Finanzberichterstattung und -analyse als Hilfe bei der Entscheidungsfindung bereitzustellen. Von dort aus werden Teilmengen von Daten in Data Marts extrahiert, um Aktivitäten zu analysieren, die mit einem bestimmten Geschäftsprozess in Zusammenhang stehen, und so die Entscheidungsfindung in einem bestimmten Teil des Unternehmens zu unterstützen.
+Das folgende Diagramm zeigt ein Beispiel für eine klassische Data-Warehouse-Architektur. Hier werden bekannte strukturierte Daten aus wichtigen Transaktionsverarbeitungssystemen extrahiert und in einen Stagingbereich kopiert. Dort werden sie bereinigt, transformiert und in Produktionstabellen in einem Data Warehouse integriert. Häufig werden hier historische Transaktionsdaten für mehrere Jahre inkrementell gespeichert. So werden die Daten zur Verfügung gestellt, die erforderlich sind, um Änderungen beim Umsatz, dem Kaufverhalten von Kunden und der Kundensegmentierung im zeitlichen Verlauf zu verstehen. Ebenfalls bereitgestellt werden eine jährliche Finanzberichterstattung und -analyse als Hilfe bei der Entscheidungsfindung.
 
-![Klassisches Data Warehouse: die wichtigsten Datenquellen für ein Data Warehouse sind Datenbanken für Transaktionsanwendungen](../../_images/analytics/the-classic-data-warehouse.png)
+Von dort werden Teilmengen von Daten in Data Marts extrahiert, um Aktivitäten in Zusammenhang mit einem bestimmten Geschäftsprozess zu analysieren. Dies ist hilfreich bei der Entscheidungsfindung in bestimmten Teilen des Unternehmens.
 
-Damit ein Unternehmen effizient arbeiten kann, werden alle Arten von Daten für unterschiedliche Fähigkeiten und Rollen benötigt. Sie brauchen Rohdaten, die bereinigt wurden, damit Data Scientists Machine Learning-Modelle erstellen können. Sie benötigen bereinigte und strukturierte Daten, damit ein Data Warehouse eine zuverlässige Leistung für Geschäftsanwendungen und Dashboards bietet. Vor allem müssen Sie in der Lage sein, in wenigen Minuten und nicht in Tagen von Rohdaten zu Erkenntnissen zu gelangen. Diese Fähigkeit kann nur Azure Synapse bieten. Azure Synapse ist der einzige Analysedienst weltweit, der über ein natives, integriertes Business Intelligence-Tool mit Power BI verfügt, das es ermöglicht, innerhalb von Minuten von Rohdaten zu einem Dashboard mit Erkenntnissen zu gelangen, und das alles mit nur einem Dienst innerhalb einer einzigen Schnittstelle.
+![Diagramm des klassischen Data Warehouse](../../_images/analytics/the-classic-data-warehouse.png)
 
-## <a name="next-steps"></a>Nächste Schritte
+Damit ein Unternehmen effizient arbeiten kann, benötigt es alle Arten von Daten zu den oben beschriebenen verschiedenen Fertigkeiten und Rollen. Sie brauchen Rohdaten, die bereinigt wurden, damit Data Scientists Machine Learning-Modelle erstellen können. Sie benötigen bereinigte und strukturierte Daten, damit ein Data Warehouse eine zuverlässige Leistung für Geschäftsanwendungen und Dashboards bietet. Vor allem müssen Sie in der Lage sein, in wenigen Minuten und nicht in Tagen von Rohdaten zu Erkenntnissen zu gelangen.
 
-<!-- TODO: More detail needed here. -->
+Azure Synapse Analytics verfügt mit Power BI über ein natives, integriertes Business-Intelligence-Tool. Dadurch können Sie basierend auf Rohdaten in nur wenigen Minuten ein Dashboard mit Erkenntnissen vollständig erstellen und müssen dafür nur einen Dienst über eine einzige Schnittstelle verwenden.
 
-Clouddatenteam

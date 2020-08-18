@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b62a27c0eda1940e32e06717c2c195e6565f9e30
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: dd3d7ccb2dab6baf0093e9ada857b4ccb74dd19a
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86234938"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88285131"
 ---
 # <a name="cloud-adoption-framework-migration-model"></a>Cloud Adoption Framework-Migrationsmodell
 
@@ -46,7 +46,7 @@ Cloudnative Strategien und PaaS-Strategien (Platform-as-a-Service) _erstellen_ l
 
 Die Cloud Adoption Framework-Migrationsmodell basiert auf einem inkrementellen Cloudtransformationsprozess. Es wird davon ausgegangen, dass Ihr Unternehmen mit einem anfänglichen Cloudmigrationsaufwand mit begrenztem Umfang beginnt, den wir allgemein als die erste Workload bezeichnen. Diese Bemühungen werden sich iterativ auf weitere Workloads ausweiten, wenn Ihre Betriebsteams die Migrationsprozesse optimieren und verbessern.
 
-Tools für Cloudmigrationen wie [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) können ganze Rechenzentren mit Zehntausenden virtuellen Computern migrieren. Selten können jedoch das Unternehmen und die bestehenden IT-Abteilungen ein so hohes Änderungstempo bewältigen. Daher unterteilen viele Unternehmen einen Migrationsaufwand in mehrere Iterationen, indem sie eine Workload (oder eine Sammlung von Workloads) pro Iteration verschieben.
+Tools für Cloudmigrationen wie [Azure Site Recovery](/azure/site-recovery/site-recovery-overview) können ganze Rechenzentren mit Zehntausenden virtuellen Computern migrieren. Selten können jedoch das Unternehmen und die bestehenden IT-Abteilungen ein so hohes Änderungstempo bewältigen. Daher unterteilen viele Unternehmen einen Migrationsaufwand in mehrere Iterationen, indem sie eine Workload (oder eine Sammlung von Workloads) pro Iteration verschieben.
 
 Die Prinzipien dieses inkrementellen Modells basieren auf der Ausführung von Prozessen und Voraussetzungen, auf die in der folgenden Infografik verwiesen wird.
 

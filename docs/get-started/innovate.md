@@ -7,30 +7,24 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 9530b4edb5eee0838a9bdbffe0b5ed39675bdc10
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 94c66af70be7c3683e459719eb6e2a73e74e66d9
+ms.sourcegitcommit: 264382fcb31ad0c6387c15a74127f288f8920995
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450525"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87805448"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>Erste Schritte: Beschleunigen neuer Produkt- und Dienstinnovationen in der Cloud
 
-Die Erstellung neuer Produkte und Dienste in der Cloud erfordert eine andere Herangehensweise als die Migration. Die Innovationsmethodik im Cloud Adoption Framework für Azure etabliert einen Ansatz, der als Leitfaden für die Entwicklung neuer Produkte und Dienste dienen kann.
+Die Entwicklung neuer Produkte und Dienste in der Cloud erfordert eine andere Herangehensweise als die Migration. Die Innovationsmethodik im Cloud Adoption Framework für Azure etabliert einen Ansatz, der als Leitfaden für die Entwicklung neuer Produkte und Dienste dienen kann.
 
-Dieser Leitfaden basiert auf den Abschnitten des Cloud Adoption Framework, die in der folgenden Abbildung hervorgehoben sind. Innovationen sind zwar weniger berechenbar als eine Standardmigration, passen aber immer noch in den Kontext des weiter gefassten Cloudeinführungsplans. Dieser Leitfaden kann Ihrem Unternehmen dabei helfen, die für Innovationsbestrebungen nötige Unterstützung zu bieten und die Struktur bereitzustellen, die zum Aufbau eines ausgeglichenen Portfolios im Rahmen der Cloudeinführung erforderlich ist.
+Dieser Leitfaden basiert auf den Abschnitten des Cloud Adoption Framework, die in der folgenden Abbildung hervorgehoben sind. Innovationen sind zwar weniger vorhersehbar als eine Standardmigration, passen aber dennoch in den Kontext des weiter gefassten Cloudeinführungsplans. Dieser Leitfaden kann Ihrem Unternehmen dabei helfen, die für Innovationen erforderliche Unterstützung zu bieten und eine Struktur für den Aufbau eines ausgewogenen Portfolios im Rahmen der Cloudeinführung bereitzustellen.
 
-![Erste Schritte zum Beschleunigen von Innovationen in der Cloud](../_images/get-started/innovation-map.png)
-
-## <a name="preparation"></a>Vorbereitung
-
-Das KI-Reifegradmodell unterstützt Sie bei der Entwicklung Ihrer Innovationsstrategie. Hierbei handelt es sich um ein kostenloses Tool, das Organisationen dabei hilft, zu bewerten, ob sie für die Erstellung und den Betrieb KI-basierter Systeme bereit sind. Es gibt vier Reifegrade: grundlegend, annähernd, ambitioniert und ausgereift. Jeder dieser Reifegrade umfasst gewisse Kriterien, auf deren Grundlage sich ermitteln lässt, ob Ihre Organisation in der Lage ist, bestimmte Arten von KI-Lösungen einzuführen, die damit verbundenen Risiken zu bewältigen und entsprechende Strategien zu implementieren. Die Bewertung dauert zwischen fünf und zehn Minuten und ermittelt die Bereitschaft Ihrer Organisation in vier Kategorien: Strategie, Kultur, Organisationsmerkmale und Fähigkeiten. Durch die Ermittlung Ihrer Fähigkeiten können wir ein Ergebnis für Ihre Organisation berechnen und eine Schätzung der KI-Innovationsreife in Form einer Kurve abgeben.
-
-Verwenden Sie das [KI-Reifegradmodell](https://aiready.microsoft.com), um die KI-Reife Ihrer Organisation für die Erstellung KI-basierter Systeme zu bewerten. Nach Abschluss der Bewertung erhalten Sie ein Ergebnis mit Ihrer geschätzten KI-Innovationsreife.
+![Diagramm des Cloud Adoption Framework einschließlich der Innovationsmethodik](../_images/get-started/innovation-map.png)
 
 ## <a name="step-1-document-the-business-strategy"></a>Schritt 1: Dokumentieren der Geschäftsstrategie
 
-Erstellen Sie zur Vermeidung gängiger Hindernisse eine klare und prägnante Geschäftsstrategie für Innovationen. Die Ausrichtung von Projektbeteiligten im Hinblick auf Beweggründe und erwartete Geschäftsergebnisse beeinflusst die Entscheidungen, die vom Cloudeinführungsteam getroffen werden.
+Erstellen Sie zur Vermeidung gängiger Hindernisse eine klare und prägnante Geschäftsstrategie für Innovationen. Die Einigkeit der Projektbeteiligten im Hinblick auf Beweggründe und erwartete Geschäftsergebnisse beeinflusst die Entscheidungen, die das Cloudeinführungsteam trifft.
 
 **Ziele:**
 
@@ -40,24 +34,24 @@ Erstellen Sie zur Vermeidung gängiger Hindernisse eine klare und prägnante Ges
 
 **Hinweis zur Erreichung der Ziele:**
 
-- [Beweggründe](../strategy/motivations.md): Der erste Schritt bei der strategischen Ausrichtung besteht darin, einen Konsens über die Beweggründe für die Innovationsbestrebungen zu erzielen. Beginnen Sie mit dem Verstehen und Kategorisieren von Beweggründen und gemeinsamen Themen verschiedener Beteiligter aus dem Geschäfts- und IT-Bereich.
-- [Geschäftsergebnisse](../strategy/business-outcomes/index.md): Nachdem die Beweggründe ausgerichtet wurden, können die gewünschten Geschäftsergebnisse erfasst werden. Diese Informationen stellt klare Metriken bereit, mit denen Sie die Gesamttransformation messen können.
-- [Ausgewogenheit des Portfolios](../strategy/balance-the-portfolio.md): Innovation ist nicht der richtige Einführungspfad für alle Workloads. Dieser Einführungsansatz eignet sich eher für neue, benutzerdefinierte Anwendungen oder Workloads, für die eine Umstrukturierung oder vollständige Neuerstellung **erforderlich** ist. Wenn die Beweggründe stark zu Innovationen für alle Workloads tendieren, ist es wichtig, das Portfolio zu untersuchen, um sicherzustellen, dass sich mit den entsprechenden Investitionen die gewünschte Rendite (Return On Investment, ROI) erzielen lässt. Die Modernisierung bestimmter Ressourcen sowie kleinere Neuerstellungen können zwar innovativ sein, hierfür sind jedoch ggf. folgende Informationen besser geeignet: [Erste Schritte: Beschleunigen der Migration](./migrate.md).
+- [Beweggründe](../strategy/motivations.md): Der erste Schritt bei der strategischen Ausrichtung besteht darin, einen Konsens über die Beweggründe für die Innovationsbestrebungen zu erzielen. Beginnen Sie mit dem Verstehen und Kategorisieren von Beweggründen und gemeinsamen Themen der Beteiligten aus dem Geschäftsbereich und dem IT-Bereich.
+- [Geschäftsergebnisse](../strategy/business-outcomes/index.md): Nachdem die Beweggründe ausgerichtet wurden, können die gewünschten Geschäftsergebnisse erfasst werden. Diesen Informationen können Sie klare Metriken entnehmen, mit denen Sie die Gesamttransformation messen können.
+- [Ausgewogene Gestaltung des Portfolios:](../strategy/balance-the-portfolio.md) Innovation ist nicht der richtige Einführungspfad für alle Workloads. Dieser Einführungsansatz eignet sich eher für neue, benutzerdefinierte Anwendungen oder Workloads, für die eine Umstrukturierung oder vollständige Neuerstellung *erforderlich* ist. Wenn die Beweggründe stark zu Innovationen für alle Workloads tendieren, ist es wichtig, das Portfolio zu überprüfen, um sicherzustellen, dass sich mit diesen Investitionen die gewünschte Rendite erzielen lässt. Die Modernisierung bestimmter Ressourcen sowie kleinere Neuerstellungen können zwar innovativ sein, hierfür sind jedoch ggf. folgende Informationen besser geeignet: [Erste Schritte: Beschleunigen der Migration](./migrate.md).
 
 <!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudstrategieteam | <li> Cloudeinführungsteam <li> Cloudkompetenzzentrum (CCoE) oder zentrales IT-Team |
+| <li> Cloudstrategieteam | <li> Cloudeinführungsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
 
 ## <a name="step-2-evaluate-the-business-justification"></a>Schritt 2: Bewerten der geschäftlichen Begründung
 
-Bewerten Sie in diesem ersten Durchgang für die Erstellung des Geschäftsszenarios die anfängliche Wertschöpfung einer potenziellen Cloudeinführung. Ziel dieses Schritts ist es, sicherzustellen, dass sich alle Beteiligten eine einfache Frage stellen: Ist die allgemeine Einführung der Cloud angesichts der verfügbaren Daten eine kluge Geschäftsentscheidung? Auf der Grundlage dieser Fragestellung kann das Team besser ermitteln, wie dieses Innovationsprojekt dazu beiträgt, die prognostizierten Anforderungen der Endbenutzer im Rahmen des Ziels der Cloudeinführung zu erfüllen.
+Bewerten Sie in diesem ersten Durchgang für die Erstellung des Geschäftsszenarios die anfängliche Wertschöpfung einer potenziellen Cloudeinführung. In diesem Schritt soll anhand einer einfachen Frage eine gemeinsame Linie für alle Beteiligten erzielt werden: Ist die Einführung der Cloud allgemein angesichts der verfügbaren Daten eine kluge Geschäftsentscheidung? Auf der Grundlage dieser Fragestellung kann das Team besser gemeinsam ermitteln, wie dieses Innovationsprojekt dazu beiträgt, die prognostizierten Anforderungen der Benutzer im Rahmen des Ziels der Cloudeinführung zu erfüllen.
 
 **Ziele:**
 
-- Verwenden Sie die [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx), um die geschäftliche Begründung zu erfassen.
+- Verwenden Sie die [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx), um die geschäftliche Begründung festzuhalten.
 
 **Hinweis zur Erreichung der Ziele:**
 
@@ -73,20 +67,22 @@ Bewerten Sie in diesem ersten Durchgang für die Erstellung des Geschäftsszenar
 
 ## <a name="step-3-gather-data-and-analyze-assets-and-workloads"></a>Schritt 3: Erfassen von Daten und Analysieren von Ressourcen und Workloads
 
-In den meisten Unternehmen können Innovationen durch die Nutzung bereits vorhandener Ressourcen wie Anwendungen, virtuellen Computern und Daten beschleunigt werden. Bei der Innovationsplanung ist es wichtig zu verstehen, wie und wann diese Ressourcen in die Cloud migriert werden.
+In den meisten Unternehmen können Innovationen durch die Nutzung bereits vorhandener Ressourcen wie Anwendungen, virtuellen Computern (VMs) und Daten beschleunigt werden. Bei der Innovationsplanung ist es wichtig zu verstehen, wie und wann diese Ressourcen in die Cloud migriert werden.
 
 **Ziele:**
 
-- Rohdaten zum vorhandenen Bestand (etwa Anwendungen, virtuelle Computer und Daten).
+- Erfassen Sie Rohdaten zum vorhandenen Bestand (z. B. Anwendungen, VMs und Daten).
 - Wenn die vorgeschlagene Innovation von vorhandenem Bestand abhängt, erstellen Sie Folgendes:
   - Quantitative Analyse des unterstützenden Bestands, der zur Unterstützung der geplanten Innovation erforderlich ist
   - Qualitative Analyse aller unterstützenden Workloads, die für die Bereitstellung der Innovation erforderlich sind
-- Berechnen Sie die Kosten des neuen Bestands, der zur Unterstützung der Innovationsbestrebungen erforderlich ist.
+- Berechnen Sie die Kosten des neuen Bestands, der für die Innovationsbestrebungen erforderlich ist.
 - Aktualisieren Sie die geschäftliche Begründung in der [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) mit präziseren Berechnungen.
 
-**Hinweis zur Erreichung der Ziele:**
+**Leitfaden zur Erreichung der Zielvorgaben:**
 
-Ermittlung und Bewertung ermöglichen eine fundiertere technische Ausrichtung, um einen Aktionsplan für die Migration aller abhängigen Workloads auszuarbeiten, die für die geplante Innovation erforderlich sind. Dieses Szenario ist eine weit verbreitete Vorgehensweise bei Unternehmen mit bereits vorhandenen Datenquellen, zentralisierten Anwendungen oder erforderlichen Dienstebenen, die für die Bereitstellung der Innovation im Kontext des restlichen Unternehmens erforderlich sind. Sollten abhängige Systeme vorhanden sein, können Sie sich bei der Ermittlung und Bewertung an den folgenden Artikeln orientieren.
+Ermittlung und Bewertung bieten eine präzisere Anpassung auf technischer Ebene. Anschließend können Sie einen Aktionsplan für die Migration aller abhängigen Workloads erstellen, die für die geplante Innovation erforderlich sind. Dieses Szenario ist eine weit verbreitete Vorgehensweise bei Unternehmen mit bereits vorhandenen Datenquellen, zentralisierten Anwendungen oder Dienstebenen, die für die Bereitstellung von Innovationen im Kontext des restlichen Unternehmens erforderlich sind. 
+
+Sollten abhängige Systeme vorhanden sein, können Sie sich bei der Ermittlung und Bewertung an den folgenden Artikeln orientieren:
 
 - [Vorhandener Systembestand](../digital-estate/inventory.md): Der erste Schritt besteht darin, sich auf der Grundlage eines programm- und datengesteuerten Ansatzes mit dem Ist-Zustand vertraut zu machen. Ermitteln und sammeln Sie Daten, um alle Bewertungsaktivitäten zu ermöglichen.
 - [Inkrementelle Rationalisierung](../digital-estate/rationalize.md#incremental-rationalization): Optimieren der Bewertungsbemühungen, um sich möglicherweise sogar zur Unterstützung des Geschäftsszenarios auf eine qualitative Analyse aller Ressourcen zu konzentrieren. Fügen Sie dann eine umfassende qualitative Analyse für die ersten zehn Workloads hinzu.
@@ -115,7 +111,7 @@ Wenn neue Innovationen von vorhandenen Workloads oder Ressourcen abhängig sind,
 
 - [Vorlage für den Cloudeinführungsplan](../plan/template.md): Bereitstellen der Basisvorlage.
 - [Workloadausrichtung](../plan/workloads.md): Definieren von Workloads im Backlog.
-- [Aufwandsausrichtung](../plan/assets.md): Richten Sie Ressourcen und Workloads im Backlog aus, um den Aufwand für priorisierte Workloads eindeutig zu definieren.
+- [Aufwandsausrichtung](../plan/assets.md): Passen Sie Ressourcen und Workloads im Rückstand an, um den Aufwand für priorisierte Workloads eindeutig zu definieren.
 - [Ausrichtung von Personen und Zeit](../plan/iteration-paths.md): Legen Sie Iteration, Geschwindigkeit und Releases für die Workloads fest.
 
 <!-- markdownlint-disable MD033 -->
@@ -127,7 +123,7 @@ Wenn neue Innovationen von vorhandenen Workloads oder Ressourcen abhängig sind,
 
 ## <a name="step-5-align-governance-requirements-to-your-adoption-plan"></a>Schritt 5: Ausrichten der Governanceanforderungen an Ihrem Einführungsplan
 
-Zahlreiche Hindernisse lassen sich bereits im Vorfeld vermeiden, indem die geplanten Innovationen mit dem Governanceteam besprochen werden. Manchmal sind für innovative neue Lösungen möglicherweise Vorgehensweisen erforderlich, die nicht als solide Governancemethoden betrachtet werden. Einige dieser erforderlichen Features werden unter Umständen sogar durch Tools für die automatisierte Governanceerzwingung blockiert.
+Zahlreiche Hindernisse lassen sich bereits im Vorfeld vermeiden, indem die geplanten Innovationen mit dem Governanceteam besprochen werden. Manchmal sind für innovative neue Lösungen möglicherweise Vorgehensweisen erforderlich, die nicht als solide Governancemethoden betrachtet werden. Einige dieser erforderlichen Features werden möglicherweise sogar durch automatisierte Tools für die Durchsetzung der Governance blockiert.
 
 **Ziele:**
 
@@ -136,10 +132,10 @@ Zahlreiche Hindernisse lassen sich bereits im Vorfeld vermeiden, indem die gepla
 
 **Hinweis zur Erreichung der Ziele:**
 
-Diese Links helfen dem Einführungsteam dabei, den vom Cloudgovernanceteam verfolgten Ansatz besser zu verstehen.
+Diese Links helfen dem Einführungsteam dabei, den vom Cloudgovernanceteam verfolgten Ansatz besser zu verstehen:
 
 - [Governanceansatz](../govern/index.md): Diese Methodik beschreibt einen Prozess für Überlegungen zu Unternehmensrichtlinien und -prozessen. Dann können Sie die Fachrichtungen aufbauen, die erforderlich sind, um Governance in Ihrem gesamten Cloudunternehmen zu gewährleisten.
-- [Definieren der Unternehmensrichtlinie](../govern/corporate-policy.md): Identifizieren und mindern Sie Geschäftsrisiken.
+- [Definieren der Unternehmensrichtlinie:](../govern/corporate-policy.md) Identifizieren und mindern Sie Geschäftsrisiken.
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -150,11 +146,11 @@ Diese Links helfen dem Einführungsteam dabei, den vom Cloudgovernanceteam verfo
 
 ## <a name="step-6-define-operational-needs-and-business-commitments"></a>Schritt 6: Definieren betrieblicher Anforderungen und geschäftlicher Verpflichtungen
 
-Definieren Sie den Plan für langfristige operative Zuständigkeiten für die geplante Innovation. Ist die festgelegte Verwaltungsbaseline für Ihre betrieblichen Anforderungen ausreichend? Falls nicht, prüfen Sie spezifische Finanzierungsoptionen im Zusammenhang mit der Technologie, die diese Innovation unterstützt.
+Definieren Sie den Plan für langfristige operative Zuständigkeiten für die geplante Innovation. Entspricht die festgelegte Verwaltungsbaseline Ihren betrieblichen Anforderungen? Falls nicht, prüfen Sie spezifische Finanzierungsoptionen im Zusammenhang mit der Technologie, die diese Innovation unterstützt.
 
 **Ziele:**
 
-- Führen Sie [Microsoft Azure Well-Architected Review](https://docs.microsoft.com/assessments/?id=azure-architecture-review) durch, um verschiedene Architektur- und Betriebsentscheidungen zu bewerten.
+- Führen Sie die [Microsoft Azure-Architekturüberprüfung](https://docs.microsoft.com/assessments/?id=azure-architecture-review) durch, um verschiedene Architektur- und Betriebsentscheidungen zu bewerten.
 - Passen Sie die [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) an, um ggf. erforderliche erweiterte Vorgänge zu berücksichtigen.
 
 **Hinweis zur Erreichung der Ziele:**
@@ -168,18 +164,20 @@ Definieren Sie den Plan für langfristige operative Zuständigkeiten für die ge
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudbetriebsteam <li> Cloudeinführungsteam | <li> Cloudstrategieteam <li> Cloudkompetenzzentrum (CCoE) oder zentrales IT-Team |
+| <li> Cloudbetriebsteam <li> Cloudeinführungsteam | <li> Cloudstrategieteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
 
 ## <a name="step-7-deploy-an-aligned-landing-zone"></a>Schritt 7: Bereitstellen einer ausgerichteten Zielzone
 
-Alle in der Cloud gehosteten Ressourcen befinden sich in einer Zielzone. Für diese Zielzone gelten ggf. explizite Governance-, Sicherheits- und Betriebsanforderungen. Es kann sich dabei aber auch um ein ganz neues Abonnement ohne Unterstützung durch andere Teams handeln. In beiden Szenarien ist es wichtig, mit einer Zielzone zu beginnen, die von Anfang an auf die Governance- und Betriebsanforderungen ausgerichtet ist. Die Verwendung einer freigegebenen Zielzone hilft Ihrem Team dabei, Richtlinienverstöße bei der Entwicklung frühzeitig zu erkennen (und nicht erst, wenn die Lösung in der Produktionsumgebung veröffentlicht wird). Eine frühzeitige Erkennung trägt dazu bei, Hindernisse zu beseitigen, und gibt dem Einführungs- und dem Governanceteam genügend Zeit für die Implementierung von Änderungen.
+Alle in der Cloud gehosteten Ressourcen befinden sich in einer Zielzone. Für diese Zielzone gelten ggf. explizite Governance-, Sicherheits- und Betriebsanforderungen. Es kann sich dabei aber auch um ein neues Abonnement ohne Unterstützung durch andere Teams handeln. In allen Szenarios ist es wichtig, mit einer Zielzone zu beginnen, die von Anfang an auf die Governance- und Betriebsanforderungen abgestimmt ist. 
+
+Die Verwendung einer freigegebenen Zielzone bereits bei Beginn hilft Ihrem Team dabei, Richtlinienverstöße frühzeitig bei der Entwicklung zu erkennen und nicht erst, wenn die Lösung für die Produktion freigegeben wird. Bei einer frühen Erkennung kann Ihr Team Hindernisse beseitigen, und das Einführungs- und das Governanceteam haben genug Zeit, Änderungen vorzunehmen.
 
 **Ziele:**
 
 - Stellen Sie in der Anfangsphase einer Innovation eine erste Zielzone für erste Experimente mit geringem Risiko bereit.
-- Entwickeln Sie einen Plan für die Umgestaltung mit dem Cloudkompetenzzentrum oder des zentralen IT-Teams, um sicherzustellen, dass er mit Governance-, Sicherheits- und Betriebsaspekten in Einklang steht.
+- Entwickeln Sie zusammen mit dem Cloudkompetenzzentrum oder dem zentralen IT-Team einen Plan für das Refactoring, um sicherzustellen, dass dieser mit Governance-, Sicherheits- und Betriebsaspekten in Einklang steht.
 - Zeitachsenrisiken:
-  - Governance-, Betriebs- und Sicherheitsanforderungen für die ersten zehn Workloads können diesen Prozess verlangsamen. Die eigentliche Umgestaltung der ersten Zielzone und der nachfolgenden Zielzonen dauert länger, sollte aber parallel zu den Migrationsmaßnahmen erfolgen.
+  - Governance-, Betriebs- und Sicherheitsanforderungen für die ersten zehn Workloads können diesen Prozess verlangsamen. Das Refactoring der ersten Zielzone und der nachfolgenden Zielzonen dauert länger, sollte aber parallel zu den Migrationsmaßnahmen erfolgen.
 
 **Hinweis zur Erreichung der Ziele:**
 
@@ -217,7 +215,9 @@ Die Innovationsmethodik bietet Informationen zu gängigen Tools und Produktverwa
 
 ## <a name="step-9-assess-the-innovation-maturity-of-your-organization"></a>Schritt 9: Bewerten der Innovationsreife Ihrer Organisation
 
-Das KI-Reifegradmodell unterstützt Sie bei der Entwicklung Ihrer Innovationsstrategie. Hierbei handelt es sich um ein kostenloses Tool, das Organisationen dabei hilft, zu bewerten, ob sie für die Erstellung und den Betrieb KI-basierter Systeme bereit sind. Es gibt vier Reifegrade: grundlegend, annähernd, ambitioniert und ausgereift. Jeder dieser Reifegrade umfasst gewisse Kriterien, auf deren Grundlage sich ermitteln lässt, ob Ihre Organisation in der Lage ist, bestimmte Arten von KI-Lösungen einzuführen. Des Weiteren werden entsprechende Risiken und Strategien identifiziert. Die Bewertung dauert zwischen fünf und zehn Minuten und ermittelt die Bereitschaft Ihrer Organisation in vier Kategorien: Strategie, Kultur, Organisationsmerkmale und Fähigkeiten.  Durch diese Ermittlung können wir ein Ergebnis für Ihre Organisation berechnen und eine Schätzung der KI-Innovationsreife in Form einer Kurve abgeben.
+Das KI-Reifegradmodell unterstützt Sie bei der Entwicklung Ihrer Innovationsstrategie. Hierbei handelt es sich um ein kostenloses Tool, das Organisationen dabei hilft, zu bewerten, ob sie für die Erstellung und den Betrieb KI-basierter Systeme bereit sind. Es gibt vier Reifegrade: grundlegend, annähernd, ambitioniert und ausgereift. Jeder dieser Reifegrade umfasst gewisse Kriterien, auf deren Grundlage sich ermitteln lässt, ob Ihre Organisation in der Lage ist, bestimmte Arten von KI-Lösungen einzuführen, die damit verbundenen Risiken zu mindern und Strategien zu implementieren. 
+
+Die Bewertung dauert zwischen fünf und zehn Minuten und ermittelt die Bereitschaft Ihrer Organisation in vier Kategorien: Strategie, Kultur, Organisationsmerkmale und Fähigkeiten. Durch die Bewertung in diesen Kategorien kann das KI-Reifegradmodell ein Ergebnis für Ihre Organisation berechnen und eine Schätzung bezüglich der KI-Innovationsreife in Form einer Kurve abgeben.
 
 **Ziele:**
 
@@ -225,7 +225,7 @@ Das KI-Reifegradmodell unterstützt Sie bei der Entwicklung Ihrer Innovationsstr
 
 **Hinweis zur Erreichung der Ziele:**
 
-- Nach Abschluss der Bewertung wird von dem Tool ein Ergebnis mit Ihrer geschätzten KI-Innovationsreife ausgegeben.
+- Nach Abschluss der Bewertung gibt das Tool ein Ergebnis für Ihre geschätzte KI-Innovationsreife aus.
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -240,7 +240,9 @@ Die in diesem Leitfaden beschriebenen Schritte helfen Ihnen und Ihren Teams dabe
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Das Cloud Adoption Framework ist eine Lebenszykluslösung. Es kann Ihnen dabei helfen, eine Innovationsjourney zu beginnen. Es kann Ihnen aber auch helfen, die Reife der Teams, die die Innovationsbemühungen unterstützen, zu fördern. Die folgenden Teams können die nächsten Schritte ausführen, um ihre Anstrengungen noch weiter zu optimieren. Diese parallelen Prozesse sind nicht linear und sollten nicht als Hindernisse betrachtet werden. Stattdessen handelt es sich jeweils um einen parallelen Wertstrom, der dazu beiträgt, die allgemeine Bereitschaft Ihres Unternehmens für die Cloud zu verbessern.
+Das Cloud Adoption Framework ist eine Lebenszykluslösung. Es kann Ihnen dabei helfen, eine Innovationsjourney zu beginnen. Es kann Ihrer Organisation nicht nur dabei helfen, mit der Entwicklung von Innovationen zu beginnen, sondern auch dazu beitragen, den Innovationsreifegrad der Teams zu erhöhen, die die Innovationsbestrebungen unterstützen. 
+
+Die folgenden Teams können die nächsten Schritte ausführen, um ihre Anstrengungen noch weiter zu optimieren. Diese parallelen Prozesse sind nicht linear und sollten nicht als Hindernisse betrachtet werden. Stattdessen handelt es sich jeweils um einen parallelen Wertstrom, der dazu beiträgt, die allgemeine Bereitschaft Ihres Unternehmens für die Cloud zu verbessern.
 
 | Team | Nächste Iteration |
 |---|---|

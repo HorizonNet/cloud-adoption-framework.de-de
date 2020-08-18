@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: a9d3cb085de5e35d8e4db85f67390d670d816410
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 566d1e586b2d110d2d2ae75ab2c04496876d6963
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786159"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88278904"
 ---
 # <a name="migration-tools-decision-guide"></a>Entscheidungsleitfaden zur Wahl des Migrationstools
 
@@ -39,7 +39,7 @@ Im Einklang mit der Schwerpunktsetzung des Cloud Adoption Framework auf die [ink
 
 ## <a name="learn-more"></a>Weitere Informationen
 
-- **[Cloudgrundlagen: Übersicht über Azure-Computeoptionen](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree):** Bietet Informationen über die Möglichkeiten der Azure IaaS- und PaaS-Computeoptionen.
-- **[Cloudgrundlagen: Auswählen des richtigen Datenspeichers](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview):** Erläutert die auf der Azure-Plattform verfügbaren PaaS-Speicheroptionen.
+- **[Cloudgrundlagen: Übersicht über Azure-Computeoptionen](/azure/architecture/guide/technology-choices/compute-decision-tree):** Bietet Informationen über die Möglichkeiten der Azure IaaS- und PaaS-Computeoptionen.
+- **[Cloudgrundlagen: Auswählen des richtigen Datenspeichers](/azure/architecture/guide/technology-choices/data-store-overview):** Erläutert die auf der Azure-Plattform verfügbaren PaaS-Speicheroptionen.
 - **[Bewährte Methoden für die Migration: Datenanforderungen überschreiten Netzwerkkapazität während einer Migration](../../migrate/azure-best-practices/network-capacity-exceeded.md):** Erläutert alternative Datenmigrationsmechanismen für Szenarien, in denen die Datenmigration durch die verfügbare Netzwerkbandbreite beeinträchtigt wird.
-- **[SQL-Datenbank: Auswählen der richtigen SQL Server-Option in Azure](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines):** Erläuterung der Optionen und geschäftlichen Begründung für die Entscheidung, Ihre SQL Server-Workloads in einer verwalteten Infrastruktur- oder einer verwalteten Dienstumgebung (IaaS bzw. PaaS) bereitzustellen.
+- **[SQL-Datenbank: Auswählen der richtigen SQL Server-Option in Azure](/azure/sql-database/sql-database-paas-vs-sql-server-iaas#business-motivations-for-choosing-databases-managed-instances-or-sql-virtual-machines):** Erläuterung der Optionen und geschäftlichen Begründung für die Entscheidung, Ihre SQL Server-Workloads in einer verwalteten Infrastruktur- oder einer verwalteten Dienstumgebung (IaaS bzw. PaaS) bereitzustellen.

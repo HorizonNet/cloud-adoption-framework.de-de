@@ -3,17 +3,17 @@ title: 'Leitfaden zur Cloudüberwachung: Warnungen'
 description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu ermitteln, wann Azure Monitor bzw. System Center Operations Manager in Microsoft Azure verwendet werden sollte.
 author: MGoedtel
 ms.author: magoedte
-ms.date: 06/26/2019
+ms.date: 08/05/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: d072ed1ac5abaa4f0c5cf3051d6585b4b5b13b24
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 9eab764cf3c5ce1aa36a26a8b3608959cfa5ef04
+ms.sourcegitcommit: 264382fcb31ad0c6387c15a74127f288f8920995
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861394"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87805476"
 ---
 <!-- cSpell:ignore kusto multiresource multisignal -->
 
@@ -50,11 +50,11 @@ Abhängig vom Feature und der verwendeten Konfiguration können Sie Überwachung
 
 - **Azure Monitor-Metrikdatenbank**: Eine Zeitreihendatenbank, die hauptsächlich für die Metriken der Azure Monitor-Plattform verwendet wird, in die aber auch Metrikdaten von Application Insights gespiegelt werden. Bei Informationen in dieser Datenbank wird am schnellsten gewarnt.
 
-- **Application Insights-Protokollspeicher**: Eine Datenbank, die die meisten Application Insights-Telemetriedaten in Protokollform speichert.
+- **Application Insights-Ressource:** Eine Datenbank, die die meisten Application Insights-Telemetriedaten in Protokollform speichert.
 
-- **Azure Monitor-Protokollspeicher**: Der primäre Speicher für Azure-Protokolldaten. Andere Tools können Daten an diesen Speicher leiten und in den Protokollen von Azure Monitor analysiert werden. Abfragen von Protokollwarnungen weisen aufgrund der Erfassung und Indizierung eine höhere Wartezeit auf. Diese Wartezeit beträgt in der Regel 5-10 Minuten, kann aber unter bestimmten Umständen höher sein.
+- **Log Analytics-Arbeitsbereich in Azure Monitor:** Der primäre Speicher für Azure-Protokolldaten. Andere Tools können Daten an diesen Speicher leiten und in den Protokollen von Azure Monitor analysiert werden. Abfragen von Protokollwarnungen weisen aufgrund der Erfassung und Indizierung eine höhere Wartezeit auf. Diese Wartezeit beträgt in der Regel 5-10 Minuten, kann aber unter bestimmten Umständen höher sein.
 
-- **Aktivitätsprotokollspeicher**: Wird für alle Aktivitätsprotokoll- und Dienstintegritätsereignisse verwendet. Eine dedizierte Warnungserstellung ist möglich. Dieser Speicher enthält Ereignisse auf Abonnementebene, die für Objekte in Ihrem Abonnement auftreten, wie sie von außen wahrgenommen werden. Ein Beispiel könnte sein, wenn eine Richtlinie festgelegt wird oder auf eine Ressource zugegriffen oder diese gelöscht wird.
+- **Aktivitätsprotokoll:** Wird für alle Aktivitätsprotokoll- und Dienstintegritätsereignisse verwendet. Eine dedizierte Warnungserstellung ist möglich. Dieser Speicher enthält Ereignisse auf Abonnementebene, die für Objekte in Ihrem Abonnement auftreten, wie sie von außen wahrgenommen werden. Ein Beispiel könnte sein, wenn eine Richtlinie festgelegt wird oder auf eine Ressource zugegriffen oder diese gelöscht wird.
 
 - **Azure Storage**: Universeller Speicher, der von der Azure-Diagnose und anderen Überwachungstools unterstützt wird. Es ist eine kostengünstige Option zur Langzeitaufbewahrung der Überwachungstelemetriedaten. Für in diesem Dienst gespeicherte Daten werden keine Warnungen unterstützt.
 
@@ -62,13 +62,13 @@ Abhängig vom Feature und der verwendeten Konfiguration können Sie Überwachung
 
 Azure Monitor verfügt über vier Arten von Warnungen, die auf gewisse Weise an das Repository gebunden sind, in denen die Daten gespeichert werden:
 
-- [Metrikwarnung](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric): Warnungen zu Daten in der Azure Monitor-Metrikdatenbank. Warnungen werden ausgelöst, wenn ein überwachter Wert einen benutzerdefinierten Schwellenwert überschreitet. Wenn der Wert wieder „normal“ ist, wird erneut eine Warnung ausgelöst.
+- [Metrikwarnung](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric): Hier finden Sie Warnungen zu Metrikdaten in Azure Monitor. Warnungen werden ausgelöst, wenn ein überwachter Wert einen benutzerdefinierten Schwellenwert überschreitet. Wenn der Wert wieder „normal“ ist, wird erneut eine Warnung ausgelöst.
 
-- [Protokollabfragewarnung](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-log-query): Verfügbar für Warnmeldungen zu Inhalten in den Application Insights- oder Azure-Protokollspeichern. Das Auslösen von Warnungen basierend auf arbeitsbereichsübergreifenden Abfragen ist ebenfalls möglich.
+- [Protokollabfragewarnung](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-log-query): Diese Warnung steht für Warnungen zu Protokolldaten aus Application Insights- oder Azure Monitor-Protokollen zur Verfügung. Das Auslösen von Warnungen basierend auf arbeitsbereichsübergreifenden Abfragen ist ebenfalls möglich.
 
-- [Aktivitätsprotokollwarnung](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log): Warnungen zu Elementen im Aktivitätsprotokollspeicher mit Ausnahme von Azure Service Health-Daten.
+- [Aktivitätsprotokollwarnung](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log): Hier finden Sie Warnungen zu Elementen im Aktivitätsprotokollspeicher mit Ausnahme von Azure Service Health-Daten.
 
-- [Azure Service Health-Warnung](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications): Ein besonderer Warnungstyp, der ausschließlich für Azure Service Health-Probleme verwendet wird, die aus dem Aktivitätsprotokollspeicher stammen, etwa Ausfälle und anstehende geplante Wartungsarbeiten. Beachten Sie, dass dieser Warnungstyp über [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview), einen Begleitdienst von Azure Monitor, konfiguriert wird.
+- [Azure Service Health-Warnung](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-activity-log-service-notifications): Ein besonderer Warnungstyp, der ausschließlich für Azure Service Health-Probleme verwendet wird, die aus dem Aktivitätsprotokoll stammen, etwa Ausfälle und anstehende geplante Wartungsarbeiten. Beachten Sie, dass dieser Warnungstyp über [Azure Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview), einen Begleitdienst von Azure Monitor, konfiguriert wird.
 
 ### <a name="enable-alerting-through-partner-tools"></a>Aktivieren von Warnungen über Partnertools
 
@@ -78,14 +78,14 @@ Azure Monitor bietet Unterstützung für die Integration mit anderen Überwachun
 
 ### <a name="specialized-azure-monitoring-offerings"></a>Spezielle Azure-Überwachungsangebote
 
-[Verwaltungslösungen](https://docs.microsoft.com/azure/azure-monitor/insights/solutions-inventory) speichern zugehörige Daten in der Regel im Azure-Protokollspeicher. Die beiden Ausnahmen sind Azure Monitor für VMs und Azure Monitor für Container. In der folgenden Tabelle wird das Warnungserlebnis basierend auf dem jeweiligen Datentyp und dem Speicherort beschrieben.
+[Verwaltungslösungen](https://docs.microsoft.com/azure/azure-monitor/insights/solutions-inventory) speichern zugehörige Daten in der Regel in Azure Monitor-Protokollen. Die beiden Ausnahmen sind Azure Monitor für VMs und Azure Monitor für Container. In der folgenden Tabelle wird das Warnungserlebnis basierend auf dem jeweiligen Datentyp und dem Speicherort beschrieben.
 
 | Lösung | Datentyp | Warnungsverhalten |
 |---| ---| --- |
-| Azure Monitor für Container | Berechnete durchschnittliche Leistungsdaten von Knoten und Pods werden in den Metrikspeicher geschrieben. | Erstellen Sie Metrikwarnungen, wenn Sie basierend auf Abweichungen der im Zeitverlauf gemessenen aggregierten Nutzungsleistung benachrichtigt werden möchten. |
-| | Anhand von Perzentilen aus Knoten, Controllern, Containern und Pods berechnete Leistungsdaten werden in den Protokollspeicher geschrieben. Containerprotokolle und Bestandsinformationen werden ebenfalls in den Protokollspeicher geschrieben. | Erstellen Sie Protokollabfragewarnungen, wenn Sie basierend auf Abweichungen der gemessenen Auslastung von Clustern und Containern benachrichtigt werden möchten. Protokollabfragewarnungen können auch basierend auf Podphasen- und Statusknotenzählungen konfiguriert werden. |
-| Azure Monitor für VMs | Metriken zu Integritätskriterien werden in den Metrikspeicher geschrieben. | Warnungen werden generiert, wenn sich der Integritätsstatus von „Fehlerfrei“ in „Fehlerhaft“ ändert. Diese Warnung unterstützt nur Aktionsgruppen, die zum Senden von SMS- oder E-Mail-Benachrichtigungen konfiguriert sind. |
-| | Zuordnungsdaten und Leistungsprotokolldaten zum Gastbetriebssystem werden in den Protokollspeicher geschrieben. | Es werden Protokollabfragewarnungen erstellt. |
+| Azure Monitor für Container | Berechnete durchschnittliche Leistungsdaten von Knoten und Pods werden in die Metrikdatenbank geschrieben. | Erstellen Sie Metrikwarnungen, wenn Sie basierend auf Abweichungen der im Zeitverlauf gemessenen aggregierten Nutzungsleistung benachrichtigt werden möchten. |
+| | Anhand von Perzentilen aus Knoten, Controllern, Containern und Pods berechnete Leistungsdaten werden in den Arbeitsbereich geschrieben. Containerprotokolle und Bestandsinformationen werden ebenfalls in den Arbeitsbereich geschrieben. | Erstellen Sie Protokollabfragewarnungen, wenn Sie basierend auf Abweichungen der gemessenen Auslastung von Clustern und Containern benachrichtigt werden möchten. Protokollabfragewarnungen können auch basierend auf Podphasen- und Statusknotenzählungen konfiguriert werden. |
+| Azure Monitor für VMs | Integritätskriterien sind in der Metrikdatenbank gespeicherte Metriken. | Warnungen werden generiert, wenn sich der Integritätsstatus von „Fehlerfrei“ in „Fehlerhaft“ ändert. Diese Warnung unterstützt nur Aktionsgruppen, die zum Senden von SMS- oder E-Mail-Benachrichtigungen konfiguriert sind. |
+| | Zuordnungsdaten und Leistungsprotokolldaten zum Gastbetriebssystem werden in den Log Analytics-Arbeitsbereich geschrieben. | Es werden Protokollabfragewarnungen erstellt. |
 
 <!-- docsTest:ignore "speed driven by cost" -->
 
@@ -99,11 +99,11 @@ Allerdings gibt es einige wichtige Hinweise zu dieser Regel.
 
 - Die schnellste Methode, um Warnungen zu diesen Daten auszulösen, besteht darin, sie als benutzerdefinierte Metriken zu importieren. Verwenden Sie dazu die Azure-Diagnoseerweiterung und dann eine Metrikwarnung. Einige benutzerdefinierte Metriken befinden sich jedoch aktuell in der Vorschau und sind [kostenintensiver als andere Optionen](https://azure.microsoft.com/pricing/details/monitor).
 
-- Die günstigste, aber langsamste Methode ist die, Daten an den Azure Kusto-Protokollspeicher zu senden. Die Ausführung des Log Analytics-Agents auf der VM ist die beste Möglichkeit, alle Gastbetriebssystemmetriken und Protokolldaten in diesem Speicher abzurufen.
+- Die günstigste Option, die jedoch eine Erfassungslatenz aufweist, ist das Senden an einen Log Analytics-Arbeitsbereich. Die Ausführung des Log Analytics-Agents auf der VM ist die beste Möglichkeit, alle Gastbetriebssystemmetriken und Protokolldaten im Arbeitsbereich abzurufen.
 
-- Sie können Daten an beide Speicher senden, indem Sie sowohl die Erweiterung als auch den Agent auf derselben VM ausführen. Sie können dann schnell Warnungen auslösen, aber die Gastbetriebssystemdaten auch in komplexeren Suchvorgängen kombiniert mit anderen Telemetrieanwendungen verwenden.
+- Auch das Senden zur Speicherung als Metrik und Protokoll in Azure Monitor ist möglich, indem sowohl die Diagnoseerweiterung als auch der Log Analytics-Agent auf derselben VM ausgeführt werden. Sie können dann schnell Warnungen auslösen, aber die Gastbetriebssystemdaten auch in komplexeren Abfragen kombiniert mit anderen Telemetrieanwendungen verwenden.
 
-**Importieren von lokalen Daten**: Wenn Sie versuchen, Abfragen über lokale und Azure-Computer hinweg zu stellen und zu überwachen, können Sie mit dem Log Analytics-Agent Daten des Gastbetriebssystems erfassen. Sie können dann ein Feature namens [Protokolle zu Metriken](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric-logs) verwenden, um diese Metriken in den Metrikenspeicher zu integrieren. Bei dieser Methode wird ein Teil des Erfassungsvorgangs im Azure-Protokollspeicher umgangen, und die Daten sind deshalb früher in der Metrikdatenbank verfügbar.
+**Importieren von lokalen Daten**: Wenn Sie versuchen, Abfragen über lokale und Azure-Computer hinweg zu stellen und zu überwachen, können Sie mit dem Log Analytics-Agent Daten des Gastbetriebssystems erfassen. Sie können dann ein Feature namens [Protokolle zu Metriken](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric-logs) verwenden, um diese Metriken in Azure Monitor zu erfassen und zu speichern. Bei dieser Methode wird ein Teil des Erfassungsvorgangs in Azure Monitor-Protokollen umgangen, und die Daten sind deshalb früher verfügbar.
 
 ### <a name="minimize-alerts"></a>Minimieren von Warnungen
 
@@ -116,7 +116,7 @@ Wenn Sie Azure Monitor nicht für VMs verwenden, erleichtern Sie die Erstellung 
 
 - [Dynamische Schwellwerte](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-dynamic-thresholds): Dynamische Schwellwerte überprüfen die Aktivität der Ressource über einen festgelegten Zeitraum und erstellen Ober- und Untergrenzen für das „Normalverhalten“. Wenn die überwachte Metrik diese Schwellwerte unter- oder überschreitet, erhalten Sie eine Warnung.
 
-- [Multisignalwarnungen](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts): Sie können eine Metrikwarnung erstellen, die eine Kombination aus zwei verschiedenen Eingaben für zwei verschiedene Ressourcentypen verwendet. Wenn Sie z. B. einen Alarm auslösen möchten, wenn die CPU-Auslastung einer VM über 90 Prozent beträgt und die Nachrichten in einer bestimmten Azure Service Bus-Warteschlange zur Einspeisung in diese VM eine bestimmte Anzahl überschreiten, können Sie dies ohne Erstellung einer Protokollabfrage erreichen. Diese Funktion funktioniert nur für zwei Signale. Wenn Sie eine komplexere Abfrage verwenden möchten, müssen Sie Ihre Metrikdaten im Azure Monitor-Protokollspeicher erfassen und eine Protokollabfrage erstellen.
+- [Multisignalwarnungen](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts): Sie können eine Metrikwarnung erstellen, die eine Kombination aus zwei verschiedenen Eingaben für zwei verschiedene Ressourcentypen verwendet. Wenn Sie z. B. einen Alarm auslösen möchten, wenn die CPU-Auslastung einer VM über 90 Prozent beträgt und die Nachrichten in einer bestimmten Azure Service Bus-Warteschlange zur Einspeisung in diese VM eine bestimmte Anzahl überschreiten, können Sie dies ohne Erstellung einer Protokollabfrage erreichen. Diese Funktion funktioniert nur für zwei Signale. Wenn Sie eine komplexere Abfrage verwenden möchten, müssen Sie Ihre Metrikdaten im Log Analytics-Arbeitsbereich erfassen und eine Protokollabfrage verwenden.
 
 - [Warnungen zu mehreren Ressourcen](https://azure.microsoft.com/blog/monitor-at-scale-in-azure-monitor-with-multi-resource-metric-alerts): Azure Monitor ermöglicht die Verwendung einer einzelnen Metrikwarnungsregel, die auf alle VM-Ressourcen angewendet wird. Mit diesem Feature können Sie Zeit sparen, da Sie nicht für jede VM einzeln Warnungen erstellen müssen. Der Preis für diesen Warnungstyp ist gleich. Unabhängig davon, ob Sie 50 Warnungen zur Überwachung der CPU-Auslastung für 50 VMs oder eine Warnung zur Überwachung der CPU-Auslastung für alle 50 VMs erstellen, fallen für Sie die gleichen Kosten an. Sie können diese Art von Warnungen auch in Kombination mit dynamischen Schwellenwerten verwenden.
 

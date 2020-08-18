@@ -1,20 +1,20 @@
 ---
-title: Implementieren von CAF-Zielzonen auf Unternehmensebene in Azure
-description: Prüfen Sie Optionen zur Implementierung der CAF-Architektur auf Unternehmensebene.
+title: Implementieren von Cloud Adoption Framework-Zielzonen auf Unternehmensebene in Azure
+description: Informieren Sie sich über die Optionen zum Implementieren des Cloud Adoption Framework für die Azure-Architektur auf Unternehmensniveau.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 164a52dc11673e454ff7ad63fc7c4ddc4617395d
-ms.sourcegitcommit: 9662234674e663bc7d4bc134d303520cb146bd95
+ms.openlocfilehash: 238dd2621349cf396eda9ff3ff2c075f3475ced4
+ms.sourcegitcommit: d31a9043d1ae9283ed126bf118ca26d1d18d6948
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87560439"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "88040863"
 ---
-# <a name="implement-caf-enterprise-scale-landing-zones-in-azure"></a>Implementieren von CAF-Zielzonen auf Unternehmensebene in Azure
+# <a name="implement-cloud-adoption-framework-enterprise-scale-landing-zones-in-azure"></a>Implementieren von Cloud Adoption Framework-Zielzonen auf Unternehmensebene in Azure
 
 Wenn Geschäftsanforderungen eine vielfältige Anfangsimplementierung von Zielzonen verlangen, mit vollständiger Integration von Governance, Sicherheit und Vorgängen von Anfang an, verwenden Sie die hier aufgelisteten Beispieloptionen auf Unternehmensebene. Mit diesem Ansatz können Sie das Microsoft Azure-Portal oder Infrastructure-as-Code zum Einrichten und Konfigurieren Ihrer Umgebung verwenden. Sie können auch zwischen dem Portal und Infrastructure-as-Code wechseln (empfohlen), sobald Ihre Organisation dafür bereit ist.
 

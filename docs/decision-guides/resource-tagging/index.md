@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: b5f613fb79fc30fe9ea2a5c3e817ff54174f4ded
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 817cc502f00cf6b8afece839719626653618c451
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88196036"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88278841"
 ---
 <!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
 
@@ -27,8 +27,8 @@ Die Organisation cloudbasierter Ressourcen ist eine wichtige Aufgabe für die IT
   - [Cloudbuchhaltungsmodelle](../../strategy/cloud-accounting.md)
   - [ROI-Berechnungen](../../strategy/financial-models.md#return-on-investment)
   - [Nachverfolgung der Kosten](../../ready/azure-best-practices/track-costs.md)
-  - [Budgets](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
-  - [Warnungen](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
+  - [Budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
+  - [Warnungen](/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
   - [Nachverfolgung und Berichterstellung für wiederkehrende Ausgaben](../../govern/cost-management/compliance-processes.md)
   - [Optimierungen nach der Implementierung](../../govern/cost-management/discipline-improvement.md#operate-and-post-implementation)
   - [Taktiken zur Kostenoptimierung](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)
@@ -55,7 +55,7 @@ Bei Markierungsschemas mit geschäftlichem Fokus (beispielsweise Buchhaltung, Un
 Eine standardisierte Namenskonvention ist der Ausgangspunkt für die Organisation Ihrer in der Cloud gehosteten Ressourcen. Mit einem ordnungsgemäß strukturierten Benennungssystem können Sie Ressourcen sowohl zu Verwaltungs- als auch zu Abrechnungszwecken schnell identifizieren. Wenn in anderen Teilen Ihrer Organisation bereits IT-Namenskonventionen vorhanden sind, wägen Sie ab, ob Sie Ihre Namenskonventionen für die Cloud darauf abstimmen oder separate cloudbasierte Standards einrichten möchten.
 
 > [!NOTE]
-> [Benennungsregeln und -einschränkungen](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-name-rules) unterscheiden sich je nach Azure-Ressource. Ihre Namenskonventionen müssen diesen Regeln entsprechen.
+> [Benennungsregeln und -einschränkungen](/azure/azure-resource-manager/management/resource-name-rules) unterscheiden sich je nach Azure-Ressource. Ihre Namenskonventionen müssen diesen Regeln entsprechen.
 
 ## <a name="resource-tagging-patterns"></a>Ressourcenmarkierungsmuster
 
@@ -91,7 +91,7 @@ Die unten aufgeführten allgemeinen Markierungsmuster zeigen beispielhaft, wie d
 Weitere Informationen zur Benennung und Markierung in Azure finden Sie unter:
 
 - [Namenskonventionen für Azure-Ressourcen](../../ready/azure-best-practices/naming-and-tagging.md). In dieser Anleitung finden Sie empfohlene Benennungskonventionen für Azure-Ressourcen.
-- [Verwenden von Tags zum Organisieren von Azure-Ressourcen und Verwaltungshierarchie](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources). Sie können Tags in Azure sowohl auf der Ressourcengruppenebene als auch auf der Ebene einzelner Ressourcen anwenden. So können Sie Abrechnungsberichte anhand der angewendeten Markierungen unterschiedlich detailliert gestalten.
+- [Verwenden von Tags zum Organisieren von Azure-Ressourcen und Verwaltungshierarchie](/azure/azure-resource-manager/management/tag-resources). Sie können Tags in Azure sowohl auf der Ressourcengruppenebene als auch auf der Ebene einzelner Ressourcen anwenden. So können Sie Abrechnungsberichte anhand der angewendeten Markierungen unterschiedlich detailliert gestalten.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
