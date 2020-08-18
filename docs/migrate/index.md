@@ -1,6 +1,6 @@
 ---
 title: Cloudmigration
-description: Migrieren Sie zu Azure. Erfahren Sie mehr über die Phasen der Migration. Bereiten Sie sich mithilfe eines iterativen Prozesses zur Bewertung, Migration, Optimierung, Sicherung und Verwaltung von Workloads auf eine erfolgreiche Migration zu Azure vor.
+description: Bereiten Sie sich mithilfe eines iterativen Prozesses zur Bewertung, Migration, Optimierung, Sicherung und Verwaltung von Workloads auf eine erfolgreiche Migration zu Azure vor.
 keywords: Azure-Cloudmigration, Cloudeinführung, zu Azure migrieren, Lift & Shift, Migrationswellen, Migrationsplanung, Migrationsmethodik, Cloud-Migrationsframework
 author: BrianBlanchard
 ms.author: brblanch
@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: seo-azure-migrate
-ms.openlocfilehash: 4eac016a83a0986d927645ef6330c13e67be03b6
-ms.sourcegitcommit: 622a7c5f1b47c9ad0a1c1ed3caa98bad6cf9d9c2
+ms.openlocfilehash: 1ae26921bef5ad9d14988075b18970348b0fe045
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87115116"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88284978"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Cloudmigration im Cloud Adoption Framework
 
@@ -22,12 +22,10 @@ Der [Cloudeinführungsplan](../plan/index.md) jedes Unternehmens beinhaltet Work
 
 Zur Vorbereitung auf diese Phase des Cloudeinführungszyklus werden die folgenden Schritte empfohlen:
 
-| | |
-|---|---|
-| <br> ![1](../_images/icons/1.png) | <br> [Migrieren Ihrer ersten Workload](./azure-migration-guide/index.md): Machen Sie sich mithilfe des Leitfadens zur Azure-Migration mit den nativen Azure-Tools und dem Ansatz für die Migration vertraut.                                |
-| <br> ![2](../_images/icons/2.png) | <br> [Migrationsszenarios](./azure-best-practices/index.md): Nutzen Sie zusätzliche Migrationstools und -ansätze für weitere Migrationsszenarien.                                |
-| <br> ![3](../_images/icons/3.png) | <br> [Bewährte Methoden:](./azure-best-practices/index.md) Gehen Sie allgemeine Migrationsanforderungen durch die Anwendung einheitlicher Best Practices an.                                |
-| <br> ![4](../_images/icons/4.png) | <br> [Prozessverbesserungen](./migration-considerations/index.md): Die Migration ist stark prozessorientiert. Nutzen Sie diese Prozessverbesserungen, um verschiedene Aspekte Ihrer Migration zu bewerten und weiterzuentwickeln und auf Veränderungen bei den Migrationsaufgaben zu reagieren.                        |
+- [Migrieren Ihrer ersten Workload](./azure-migration-guide/index.md): Machen Sie sich mithilfe des Leitfadens zur Azure-Migration mit den nativen Azure-Tools und dem Ansatz für die Migration vertraut.
+- [Migrationsszenarios](./azure-best-practices/index.md): Nutzen Sie zusätzliche Migrationstools und -ansätze für weitere Migrationsszenarien.
+- [Bewährte Methoden:](./azure-best-practices/index.md) Gehen Sie allgemeine Migrationsanforderungen durch die Anwendung einheitlicher Best Practices an.
+- [Prozessverbesserungen](./migration-considerations/index.md): Die Migration ist stark prozessorientiert. Nutzen Sie diese Prozessverbesserungen, um verschiedene Aspekte Ihrer Migration zu bewerten und weiterzuentwickeln und auf Veränderungen bei den Migrationsaufgaben zu reagieren.
 
 Diese Migrationsmethodik und die obigen Schritte basieren auf den folgenden Annahmen:
 
