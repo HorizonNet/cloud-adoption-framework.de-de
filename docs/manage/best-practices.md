@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: cc3c7dc19eae0ba6b2aa38c40062e5da2421a770
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 54c6e5d3dc292e3380fe0b51b265165b8fed3f28
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84992957"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574889"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>Einrichten von Betriebsverwaltungsverfahren in der Cloud
 
@@ -43,6 +43,6 @@ Mit beiden bewährten Methoden wird auf eine künftige angestrebte Methodik für
 - **Plattformbetrieb:** Alle IT-Umgebungen umfassen eine Reihe von gemeinsam genutzten Plattformen. Diese Plattformen können Datenspeicher wie SQL Server oder Azure HDInsight beinhalten. Andere gängige Plattformen sind Containerlösungen wie Azure Kubernetes Service (AKS). Unabhängig von den Plattformen liegt der Schwerpunkt bezüglich des Reifegrads des Plattformbetriebs auf der Anpassung von Vorgängen basierend darauf, wie die gemeinsam genutzten Plattformen bereitgestellt, konfiguriert und durch Workloads genutzt werden.
 - **Workloadbetrieb:** Auf der höchsten Stufe der betrieblichen Reife können Cloudbetriebsteams Vorgänge für kritische Workloads optimieren. Bei diesen Workloads können verfügbare Daten zur Automatisierung der Problembehandlung, der Größenanpassung oder des Schutzes von Workloads auf der Grundlage ihrer Auslastung genutzt werden.
 
-Zusätzliche Anleitungen wie der [Entwurf eines Überprüfungsframeworks (Codename: Cloudentwurfsprinzipien)](https://docs.microsoft.com/azure/architecture/framework/resiliency/overview) können dabei helfen, detaillierte architekturbezogene Entscheidungen zu jeder Workload innerhalb der zuvor beschriebenen Disziplinen zu treffen.
+Zusätzliche Anleitungen wie der [Entwurf eines Überprüfungsframeworks (Codename: Cloudentwurfsprinzipien)](/azure/architecture/framework/resiliency/overview) können dabei helfen, detaillierte architekturbezogene Entscheidungen zu jeder Workload innerhalb der zuvor beschriebenen Disziplinen zu treffen.
 
 Dieser Abschnitt des Cloud Adoption Framework baut auf jedem der vorhergehenden Themen auf, um einen ausgereiften Cloudbetrieb in Ihrem Unternehmen zu fördern.

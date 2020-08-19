@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: bd98ff4e52faceea4c7dd48a2363efc5ebe87da2
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 7942cc63341b3f15f770d6f23dca3e56bc606b65
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755466"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574736"
 ---
 # <a name="function-of-identity-and-key-management-in-the-cloud"></a>Funktion von Identitäts- und Schlüsselverwaltung in der Cloud
 
@@ -31,7 +31,7 @@ Die Modernisierung der Datenidentitäts- und Schlüsselverwaltung wird wie folgt
   - Ausgedehnter Satz von Verzeichnissen und Identitätsverwaltungssystemen von Drittanbietern.
   - Fehlende klare Standardisierung und Besitz der Anwendungsidentitätsstrategie.
 - Angriffe zum Diebstahl von Anmeldeinformationen bleiben eine Bedrohung mit großen Auswirkungen und von hoher Wahrscheinlichkeit, die es zu abzumildern gilt.
-- Dienstkonten und Anwendungskonten bleiben weiterhin eine der größten Herausforderungen, deren Lösung jedoch leichter wird. Identitätsteams sollten die Cloudfunktionen, die dies lösen, aktiv nutzen, so z. B. [verwaltete Identitäten von Azure AD](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview).
+- Dienstkonten und Anwendungskonten bleiben weiterhin eine der größten Herausforderungen, deren Lösung jedoch leichter wird. Identitätsteams sollten die Cloudfunktionen, die dies lösen, aktiv nutzen, so z. B. [verwaltete Identitäten von Azure AD](/azure/active-directory/managed-identities-azure-resources/overview).
 
 ## <a name="team-composition-and-key-relationships"></a>Teamzusammensetzung und wichtige Beziehungen
 

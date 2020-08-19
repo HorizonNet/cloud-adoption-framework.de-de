@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 07c9024d1d2af4a19fb1be9a53de6b5da78edd0c
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: 46cc58d9f347987624d0cf3ebb1f9cf02740e87c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86235397"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88575246"
 ---
 <!-- cSpell:ignore migrateable -->
 
@@ -46,7 +46,7 @@ Wenn Daten, Experimente, Forschung und Entwicklung (R&D) oder neue Produkte in d
 
 ## <a name="effort"></a>Aufwand
 
-Der Migrationsaufwand kann je nach Größe und Komplexität der beteiligten Workloads stark variieren. Eine kleinere Workloadmigration mit ein paar Hundert virtuellen Computern (VMs) ist ein taktischer Prozess, der möglicherweise mithilfe automatisierter Tools wie [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) implementiert wird. Umgekehrt erfordert eine große Unternehmensmigration von Zehntausenden von Workloads einen sehr strategischen Prozess und kann eine umfangreiche Umgestaltung, Neuerstellung und Ersetzung bestehender Anwendungen mit Integration von Platform-as-a-Service (PaaS)- und Software-as-a-Service (SaaS)-Funktionen beinhalten. [Das Identifizieren und Ausgleichen des Umfangs](../../../strategy/balance-the-portfolio.md) Ihrer geplanten Migrationen ist von entscheidender Bedeutung.
+Der Migrationsaufwand kann je nach Größe und Komplexität der beteiligten Workloads stark variieren. Eine kleinere Workloadmigration mit ein paar Hundert virtuellen Computern (VMs) ist ein taktischer Prozess, der möglicherweise mithilfe automatisierter Tools wie [Azure Migrate](/azure/migrate/migrate-services-overview) implementiert wird. Umgekehrt erfordert eine große Unternehmensmigration von Zehntausenden von Workloads einen sehr strategischen Prozess und kann eine umfangreiche Umgestaltung, Neuerstellung und Ersetzung bestehender Anwendungen mit Integration von Platform-as-a-Service (PaaS)- und Software-as-a-Service (SaaS)-Funktionen beinhalten. [Das Identifizieren und Ausgleichen des Umfangs](../../../strategy/balance-the-portfolio.md) Ihrer geplanten Migrationen ist von entscheidender Bedeutung.
 
 Bevor Sie Entscheidungen treffen, die langfristige Auswirkungen auf das aktuelle Migrationsprogramm haben könnten, ist es wichtig, dass Sie sich über die folgenden Entscheidungen einig sind.
 
@@ -77,7 +77,7 @@ Häufig ist ein zwingendes und zeitkritisches Geschäftsereignis der Grund für 
 Dokumentieren Sie vor dem Fortfahren die folgenden Annahmen, und teilen Sie diese dem Cloudstrategieteam und den Cloudeinführungsteams mit:
 
 - Geschäftsergebnisse.
-- Rollen, die für die Migrationsprozesse _Bewerten_, _Migrieren_, _Optimieren_ und _Sichern und Verwalten_ dokumentiert und präzisiert sind.
+- Rollen, die für die Migrationsprozesse *Bewerten*, *Migrieren*, *Optimieren* und *Sichern und Verwalten* dokumentiert und präzisiert sind.
 - Definition of Done, separat für diese Migrationsprozesse dokumentiert und optimiert.
 - Aufwandstyp.
 - Aufwandsumfang.

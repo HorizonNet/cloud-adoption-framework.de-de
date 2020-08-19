@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: a97faee54c05f22c35dd674f74aa38d02456f526
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 0c1dd56f5d7c5216693b726de9cb6fbf15a59b8f
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450678"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574464"
 ---
 <!-- docsTest:ignore "Azure Info Hub" "Azure Charts" "Azure Weekly" -->
 <!-- cSpell:ignore jelledruyts andym endjin AzAdvertizer -->
@@ -31,10 +31,10 @@ Cloudplattformen wie Azure verändern sich schneller, als es viele Unternehmen g
 
 Die folgenden Ressourcen können Ihnen dabei helfen, mit Azure auf dem Laufenden zu bleiben:
 
-- **Azure Service Health:** Warnungen von [Service Health](https://docs.microsoft.com/azure/service-health/service-health-overview) informieren zeitnah über bestehende Dienstprobleme, geplante Wartungsmaßnahmen und Integritätsempfehlungen. Darüber hinaus umfassen diese Warnungen auch Informationen zu Azure-Features, deren Deaktivierung geplant ist.
+- **Azure Service Health:** Warnungen von [Service Health](/azure/service-health/service-health-overview) informieren zeitnah über bestehende Dienstprobleme, geplante Wartungsmaßnahmen und Integritätsempfehlungen. Darüber hinaus umfassen diese Warnungen auch Informationen zu Azure-Features, deren Deaktivierung geplant ist.
 - **Azure-Updates:** Ankündigungen für Produktupdates finden Sie unter [Azure-Updates](https://azure.microsoft.com/updates). Kurze Zusammenfassungen enthalten Links zu ausführlicheren Informationen, was die Updates sehr übersichtlich macht. Abonnieren Sie den [RSS-Feed zu Azure-Updates](https://azurecomcdn.azureedge.net/updates/feed).
 - **Azure-Blog:** Im [Azure-Blog](https://azure.microsoft.com/blog) werden die wichtigsten Ankündigungen für die Azure-Plattform kommuniziert. Folgen Sie diesen Blog, um wichtige Informationen zu erhalten auf dem neuesten Stand zu bleiben. Abonnieren Sie den [RSS-Feed für den Azure-Blog](https://azurecomcdn.azureedge.net/blog/feed).
-- **Dienstspezifische Blogs:**   Für viele Azure-Dienste werden eigene Blogs veröffentlicht, denen Sie folgen können, wenn Sie diese Dienste verwenden. Die für Sie interessanten Dienste finden Sie per Websuche.
+- **Dienstspezifische Blogs:** Für viele Azure-Dienste werden eigene Blogs veröffentlicht, denen Sie folgen können, wenn Sie diese Dienste verwenden. Die für Sie interessanten Dienste finden Sie per Websuche.
 - **Azure Info Hub:** Im inoffiziellen [Azure Info Hub](https://azureinfohub.azurewebsites.net) werden die meisten der hier aufgeführten Ressourcen zusammengefasst. Nutzen Sie Links zu einzelnen Diensten, um ausführliche Informationen zu erhalten und dienstspezifischen Blogs zu finden. Abonnieren Sie den [RSS-Feed für den Azure Info Hub](https://azureinfohub.azurewebsites.net/Feed?serviceTitle=Azure). \*
 
 <!-- markdownlint-disable MD025 -->

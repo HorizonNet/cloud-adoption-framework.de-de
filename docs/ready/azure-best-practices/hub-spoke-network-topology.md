@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 2a23c7bfb70bda73c44a65f29e0f75d440e5e15c
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 81d00bb2076c936b06b6ac7a00ef19d0b0d43565
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479941"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574753"
 ---
 <!-- cSpell:ignore tracsman jonor rossort NVAs -->
 
@@ -23,7 +23,7 @@ ms.locfileid: "86479941"
 _Hub-and-Spoke_ ist ein Netzwerkmodell für die effiziente Verwaltung verbreiteter Kommunikations- oder Sicherheitsanforderungen. Es hilft auch dabei, Azure-Abonnementeinschränkungen zu vermeiden. Dieses Modell berücksichtigt die folgenden Punkte:
 
 - **Kosteneinsparungen und Effizienz der Verwaltung.** Zentralisierung von Diensten, die von mehreren Workloads, z.B. Network Virtual Appliances (NVAs) und DNS-Servern an einem zentralen Standort gemeinsam genutzt werden können. Auf diese Weise kann die IT-Abteilung redundante Ressourcen und den Verwaltungsaufwand minimieren.
-- **Überwinden von Abonnementgrenzen**. Große cloudbasierte Workloads können den Einsatz von mehr Ressourcen erfordern, als in einem einzelnen Azure-Abonnement zulässig sind. Durch ein Peering virtueller Netzwerke für eine Workload aus verschiedenen Abonnements zu einem zentralen Hub können diese Grenzwerte umgangen werden. Weitere Informationen finden Sie unter [Grenzwerte für Azure-Abonnements](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits).
+- **Überwinden von Abonnementgrenzen**. Große cloudbasierte Workloads können den Einsatz von mehr Ressourcen erfordern, als in einem einzelnen Azure-Abonnement zulässig sind. Durch ein Peering virtueller Netzwerke für eine Workload aus verschiedenen Abonnements zu einem zentralen Hub können diese Grenzwerte umgangen werden. Weitere Informationen finden Sie unter [Grenzwerte für Azure-Abonnements](/azure/azure-resource-manager/management/azure-subscription-service-limits).
 - **Trennung von Zuständigkeiten.** Sie können einzelne Workloads zwischen zentralen IT-Teams und für Workloads zuständige Teams bereitstellen.
 
 Kleinere Cloudumgebungen profitieren möglicherweise nicht von der zusätzlichen Struktur und den Funktionen, die dieses Modell bietet. Für größere Cloudeinführungsaktivitäten sollte jedoch die Implementierung einer Hub-and-Spoke-Architektur in Erwägung gezogen werden, wenn für sie bereits die oben aufgeführten Bedenken gelten.
@@ -31,8 +31,8 @@ Kleinere Cloudumgebungen profitieren möglicherweise nicht von der zusätzlichen
 > [!NOTE]
 > Die Website für Azure-Referenzarchitekturen enthält Beispielvorlagen, die Sie als Grundlage für die Implementierung Ihrer eigenen Hub-and-Spoke-Netzwerke verwenden können:
 >
-> - [Implementieren einer Hub-and-Spoke-Netzwerktopologie in Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
-> - [Implementieren einer Hub-and-Spoke-Netzwerktopologie mit gemeinsamen Diensten in Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
+> - [Implementieren einer Hub-and-Spoke-Netzwerktopologie in Azure](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
+> - [Implementieren einer Hub-and-Spoke-Netzwerktopologie mit gemeinsamen Diensten in Azure](/azure/architecture/reference-architectures/hybrid-networking/shared-services)
 
 ## <a name="overview"></a>Übersicht
 
@@ -46,7 +46,7 @@ Ein Hub ist eine zentrale Netzwerkzone, die den ein- oder ausgehenden Datenverke
 Der Hub enthält oft die allgemeinen Dienstkomponenten, die von den Spokes genutzt werden. Im Folgenden finden Sie einige Beispiele für allgemeine zentrale Dienste:
 
 - Die Windows Server Active Directory-Infrastruktur, die für die Benutzerauthentifizierung von Drittanbietern, die über nicht vertrauenswürdige Netzwerke zugreifen, erforderlich ist, bevor sie Zugriff auf die Workloads im Spoke erhalten. Dies beinhaltet die zugehörigen Active Directory-Verbunddienste (Active Directory Federation Services, AD FS).
-- Ein DNS-Dienst, mit dem die Namen der Workloads in den Spokes aufgelöst werden, um lokal und über das Internet auf Ressourcen zuzugreifen, wenn [Azure DNS](https://docs.microsoft.com/azure/dns/dns-overview) nicht verwendet wird.
+- Ein DNS-Dienst, mit dem die Namen der Workloads in den Spokes aufgelöst werden, um lokal und über das Internet auf Ressourcen zuzugreifen, wenn [Azure DNS](/azure/dns/dns-overview) nicht verwendet wird.
 - Eine Public Key-Infrastruktur (PKI), mit der das einmalige Anmelden in Workloads implementiert wird.
 - Flusssteuerung des TCP- und UDP-Datenverkehrs zwischen den Spoke-Netzwerkzonen und dem Internet.
 - Flusssteuerung zwischen den Spokes und dem lokalen Netzwerk.
@@ -62,7 +62,7 @@ Mit den Spokes können auch verschiedene Gruppen in Ihrer Organisation getrennt 
 
 In Azure wird jede Komponente, unabhängig vom Typ, in einem Azure-Abonnement bereitgestellt. Die Isolation von Azure-Komponenten in verschiedenen Azure-Abonnements kann die Anforderungen verschiedener Branchenanwendungen erfüllen, z.B. das Einrichten unterschiedlicher Zugriffs- und Autorisierungsebenen.
 
-Eine einzelne Hub-and-Spoke-Implementierung kann auf eine große Anzahl von Spokes hochskaliert werden. Dabei gelten jedoch wie bei jedem IT-System gewisse Plattformbeschränkungen. Die Hub-Bereitstellung ist an ein bestimmtes Azure-Abonnement gebunden. Beispielsweise kann eine maximale Anzahl von Peerings in virtuellen Netzwerken gelten. Weitere Informationen finden Sie unter [Einschränkungen für Azure-Abonnements und Dienste, Kontingente und Einschränkungen](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits).
+Eine einzelne Hub-and-Spoke-Implementierung kann auf eine große Anzahl von Spokes hochskaliert werden. Dabei gelten jedoch wie bei jedem IT-System gewisse Plattformbeschränkungen. Die Hub-Bereitstellung ist an ein bestimmtes Azure-Abonnement gebunden. Beispielsweise kann eine maximale Anzahl von Peerings in virtuellen Netzwerken gelten. Weitere Informationen finden Sie unter [Einschränkungen für Azure-Abonnements und Dienste, Kontingente und Einschränkungen](/azure/azure-resource-manager/management/azure-subscription-service-limits).
 
 In Fällen, in denen diese Beschränkungen ggf. ein Problem darstellen, kann die Architektur weiter hochskaliert werden, indem das Modell von einem einzelnen Hub und Spoke auf ein Cluster von Hubs und Spokes erweitert wird. Mehrere Hubs in mindestens einer Azure-Region können mithilfe von Peering in virtuellen Netzwerken, ExpressRoute, Azure Virtual WAN oder einem Site-to-Site-VPN miteinander verbunden werden.
 

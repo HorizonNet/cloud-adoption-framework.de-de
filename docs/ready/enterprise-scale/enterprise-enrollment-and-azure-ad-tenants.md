@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3e09a40f5f2066f6cbbf3c375784a27615395a4a
-ms.sourcegitcommit: d31a9043d1ae9283ed126bf118ca26d1d18d6948
+ms.openlocfilehash: 8deee8d727fea6fd1f8f1ee43027cf72919871d2
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88040557"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574685"
 ---
 # <a name="enterprise-agreement-enrollment-and-azure-active-directory-tenants"></a>Enterprise Agreement-Registrierung und Azure Active Directory-Mandanten
 
@@ -72,10 +72,10 @@ Während der Azure AD-Entwurfsphase sind grundlegende Sicherheitsfragen zu beant
 
 **Entwurfsempfehlungen:**
 
-- Verwenden Sie das nahtlose einmalige Anmelden von Azure AD entsprechend der ausgewählten [Planungstopologie](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies).
-- Verfügt Ihre Organisation über keine Identitätsinfrastruktur, beginnen Sie mit der Implementierung einer auf Azure AD beschränkten Identitätsbereitstellung. Eine solche Bereitstellung mit [Azure AD Domain Services](https://docs.microsoft.com/azure/active-directory-domain-services) und [Microsoft Enterprise Mobility + Security](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) bietet End-to-End-Schutz für SaaS-Anwendungen, Unternehmensanwendungen und für Geräte.
-- Die mehrstufige Authentifizierung stellt eine weitere Sicherheitsebene und eine zweite Authentifizierungsbarriere dar. Erzwingen Sie die [mehrstufige Authentifizierung](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks) und [Richtlinien für bedingten Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) für alle privilegierten Konten, um die Sicherheit zu erhöhen.
-- Planen und implementieren Sie [Notfallzugriffs-](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access) oder Break-Glass-Konten, um eine mandantenweite Kontensperrung zu vermeiden.
-- Verwenden Sie [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) für die Identitäts- und Zugriffsverwaltung.
+- Verwenden Sie das nahtlose einmalige Anmelden von Azure AD entsprechend der ausgewählten [Planungstopologie](/azure/active-directory/hybrid/plan-connect-topologies).
+- Verfügt Ihre Organisation über keine Identitätsinfrastruktur, beginnen Sie mit der Implementierung einer auf Azure AD beschränkten Identitätsbereitstellung. Eine solche Bereitstellung mit [Azure AD Domain Services](/azure/active-directory-domain-services) und [Microsoft Enterprise Mobility + Security](/mem/intune/fundamentals/what-is-intune) bietet End-to-End-Schutz für SaaS-Anwendungen, Unternehmensanwendungen und für Geräte.
+- Die mehrstufige Authentifizierung stellt eine weitere Sicherheitsebene und eine zweite Authentifizierungsbarriere dar. Erzwingen Sie die [mehrstufige Authentifizierung](/azure/active-directory/authentication/concept-mfa-howitworks) und [Richtlinien für bedingten Zugriff](/azure/active-directory/conditional-access/overview) für alle privilegierten Konten, um die Sicherheit zu erhöhen.
+- Planen und implementieren Sie [Notfallzugriffs-](/azure/active-directory/users-groups-roles/directory-emergency-access) oder Break-Glass-Konten, um eine mandantenweite Kontensperrung zu vermeiden.
+- Verwenden Sie [Azure AD Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) für die Identitäts- und Zugriffsverwaltung.
 - Wenn Dev/Test und Produktion aus Identitätssicht isolierte Umgebungen sein sollen, trennen Sie sie auf Mandantenebene über mehrere Mandanten.
 - Erstellen Sie keinen neuen Azure AD-Mandanten, es sei denn, dies ist aufgrund der Identitäts- und Zugriffsverwaltung und wegen vorhandener Prozesse zwingend erforderlich.

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 7a9845d302289567d96c807e110520dc6cac497a
-ms.sourcegitcommit: 9662234674e663bc7d4bc134d303520cb146bd95
+ms.openlocfilehash: 6b3540a46e4f031056bffddb029d6723f14d0e93
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87560490"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88575212"
 ---
 <!-- cSpell:ignore contosodev contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring smarthotelcontainer identitymaplog CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME sqlpackage SSDT azuredevopsmigration validateonly ImportType -->
 
@@ -70,7 +70,7 @@ Zum Ausführen dieses Szenarios muss Contoso die folgenden Voraussetzungen erfü
 
 | Requirements (Anforderungen) | Details |
 | --- | --- |
-| **Azure-Abonnement** | Contoso hat in einem früheren Artikel dieser Reihe Abonnements erstellt. Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/free) erstellen. <br><br> Wenn Sie ein kostenloses Konto erstellen, sind Sie der Administrator Ihres Abonnements und können alle Aktionen durchführen. <br><br> Falls Sie ein vorhandenes Abonnement verwenden und nicht der Administrator sind, müssen Sie mit dem Administrator zusammenarbeiten, damit er Ihnen Berechtigungen vom Typ „Besitzer“ oder „Mitwirkender“ zuweist. <br><br> Falls Sie präzisere Berechtigungen benötigen, helfen Ihnen die Informationen unter [Verwalten des Site Recovery-Zugriffs mit rollenbasierter Zugriffssteuerung (Role-Based Access Control, RBAC)](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control) weiter. |
+| **Azure-Abonnement** | Contoso hat in einem früheren Artikel dieser Reihe Abonnements erstellt. Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/free) erstellen. <br><br> Wenn Sie ein kostenloses Konto erstellen, sind Sie der Administrator Ihres Abonnements und können alle Aktionen durchführen. <br><br> Falls Sie ein vorhandenes Abonnement verwenden und nicht der Administrator sind, müssen Sie mit dem Administrator zusammenarbeiten, damit er Ihnen Berechtigungen vom Typ „Besitzer“ oder „Mitwirkender“ zuweist. <br><br> Falls Sie präzisere Berechtigungen benötigen, helfen Ihnen die Informationen unter [Verwalten des Site Recovery-Zugriffs mit rollenbasierter Zugriffssteuerung (Role-Based Access Control, RBAC)](/azure/site-recovery/site-recovery-role-based-linked-access-control) weiter. |
 | **Azure-Infrastruktur** | Contoso richtet die Azure-Infrastruktur ein, wie unter [Bereitstellen einer Migrationsinfrastruktur](./contoso-migration-infrastructure.md) beschrieben. |
 | **Lokale Team Foundation Server-Instanz** | Die lokale Instanz muss entweder Team Foundation Server 2018 Upgrade 2 ausführen, oder im Rahmen dieses Vorgangs muss ein Upgrade durchgeführt werden. |
 
@@ -94,8 +94,8 @@ Contoso geht bei der Migration wie folgt vor:
 
 **Benötigen Sie weitere Hilfe?**
 
-- [Einführung in Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction)
-- [Informationen zu Azure-Speicherkonten](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account)
+- [Einführung in Azure Storage](/azure/storage/common/storage-introduction)
+- [Informationen zu Azure-Speicherkonten](/azure/storage/common/storage-create-storage-account)
 
 <!-- docsTest:ignore "Server Configuration Wizard" "Configure Features Wizard" "Detach Team Project Collection Wizard" -->
 
@@ -104,8 +104,8 @@ Contoso geht bei der Migration wie folgt vor:
 Die Contoso-Administratoren führen ein Upgrade der Team Foundation Server-Instanz auf Team Foundation Server 2018 Update 2 durch. Vor der Durchführung führen sie folgende Schritte aus:
 
 - Herunterladen von [Team Foundation Server 2018 Update 2](https://visualstudio.microsoft.com/downloads)
-- Überprüfen der [Hardwareanforderungen](https://docs.microsoft.com/azure/devops/server/requirements)
-- Lesen der [Versionshinweise](https://docs.microsoft.com/visualstudio/releasenotes/tfs2018-relnotes) und der [Upgradehinweise](https://docs.microsoft.com/azure/devops/server/upgrade/get-started#before-you-upgrade-to-tfs-2018)
+- Überprüfen der [Hardwareanforderungen](/azure/devops/server/requirements)
+- Lesen der [Versionshinweise](/visualstudio/releasenotes/tfs2018-relnotes) und der [Upgradehinweise](/azure/devops/server/upgrade/get-started#before-you-upgrade-to-tfs-2018)
 
 Das Upgrade wird wie folgt durchgeführt:
 
@@ -130,11 +130,11 @@ Das Upgrade wird wie folgt durchgeführt:
      ![Screenshot des Product Backlog-Bereichs zum Überprüfen der Team Foundation Server-Installation](./media/contoso-migration-tfs-vsts/upgrade5.png)
 
 > [!NOTE]
-> Einige Team Foundation Server-Upgrades müssen den Featurekonfigurations-Assistenten ausführen, wenn das Upgrade abgeschlossen ist. [Weitere Informationen](https://docs.microsoft.com/azure/devops/reference/configure-features-after-upgrade?utm_source=ms&utm_medium=guide&utm_campaign=vstsdataimportguide&view=vsts)
+> Einige Team Foundation Server-Upgrades müssen den Featurekonfigurations-Assistenten ausführen, wenn das Upgrade abgeschlossen ist. [Weitere Informationen](/azure/devops/reference/configure-features-after-upgrade?utm_campaign=vstsdataimportguide&utm_medium=guide&utm_source=ms&view=vsts)
 
 **Benötigen Sie weitere Hilfe?**
 
-Erfahren Sie mehr über [Upgrades von Team Foundation Server](https://docs.microsoft.com/azure/devops/server/upgrade/get-started).
+Erfahren Sie mehr über [Upgrades von Team Foundation Server](/azure/devops/server/upgrade/get-started).
 
 ## <a name="step-3-validate-the-team-foundation-server-collection"></a>Schritt 3: Überprüfen der Team Foundation Server-Sammlung
 
@@ -222,17 +222,17 @@ Nach Abschluss der Überprüfung können die Contoso-Administratoren mithilfe de
 
 Wenn die Vorbereitung abgeschlossen ist, können sich die Contoso-Administratoren auf die Migration konzentrieren. Nach der Migration erfolgt der Wechsel von TFVC zu Git für die Versionskontrolle.
 
-Bevor sie loslegen, planen die Administratoren Ausfallzeiten mit dem Entwicklungsteam, damit sie planen können, wann sie die Sammlung für die Migration offline schalten. 
+Bevor sie loslegen, planen die Administratoren Ausfallzeiten mit dem Entwicklungsteam, damit sie planen können, wann sie die Sammlung für die Migration offline schalten.
 
 Dies ist der ausgeführte Migrationsprozess:
 
-1. **Trennen der Sammlung**. Die Identitätsdaten für die Sammlung befinden sich in der Konfigurationsdatenbank der Team Foundation Server-Instanz, solange die Sammlung angefügt und online ist. 
+1. **Trennen der Sammlung**. Die Identitätsdaten für die Sammlung befinden sich in der Konfigurationsdatenbank der Team Foundation Server-Instanz, solange die Sammlung angefügt und online ist.
 
-    Wenn eine Sammlung von der Team Foundation Server-Instanz getrennt wird, wird eine Kopie dieser Identitätsdaten erstellt und mit der Sammlung für den Transport gepackt. Ohne diese Daten kann der Identitätsteil des Imports nicht ausgeführt werden. 
+    Wenn eine Sammlung von der Team Foundation Server-Instanz getrennt wird, wird eine Kopie dieser Identitätsdaten erstellt und mit der Sammlung für den Transport gepackt. Ohne diese Daten kann der Identitätsteil des Imports nicht ausgeführt werden.
 
     Wir empfehlen, die Sammlung getrennt zu lassen, bis der Import abgeschlossen ist, da beim Import aufgetretene Änderungen nicht importiert werden können.
 
-1. **Generieren einer Sicherung**. Der nächste Schritt besteht darin, eine Sicherung zu generieren, die in Azure DevOps Services importiert werden kann. Die Datenschichtanwendungs-Pakete (Data-Tier Application Package, DACPAC) stellen ein SQL Server-Feature dar, mit dem Datenbankänderungen in eine einzelne Datei gepackt und auf anderen SQL-Instanzen bereitgestellt werden können. 
+1. **Generieren einer Sicherung**. Der nächste Schritt besteht darin, eine Sicherung zu generieren, die in Azure DevOps Services importiert werden kann. Die Datenschichtanwendungs-Pakete (Data-Tier Application Package, DACPAC) stellen ein SQL Server-Feature dar, mit dem Datenbankänderungen in eine einzelne Datei gepackt und auf anderen SQL-Instanzen bereitgestellt werden können.
 
     Die Sicherung kann auch direkt in Azure DevOps Services wiederhergestellt werden und wird als Verpackungsmethode verwendet, um Sammlungsdaten zur Cloud zu migrieren. Contoso verwendet das Tool `sqlpackage.exe`, um die DACPAC-Datei zu generieren. Dieses Tool ist in SQL Server Data Tools enthalten.
 
@@ -347,7 +347,7 @@ Sie öffnen die Datei *import.json* und füllen die folgenden Felder aus:
 Die Contoso-Administratoren führen eine Probemigration durch, um sicherzustellen, dass alles wie erwartet funktioniert.
 
 1. Sie öffnen eine Eingabeaufforderung und navigieren zum Speicherort von `TfsMigrator` (`C:\TFSMigrator`).
-1. Anschließend möchten sie sicherstellen, dass die Datei ordnungsgemäß formatiert ist und dass der SAS-Schlüssel funktioniert. Sie überprüfen die Importdatei mithilfe des folgenden Befehls: 
+1. Anschließend möchten sie sicherstellen, dass die Datei ordnungsgemäß formatiert ist und dass der SAS-Schlüssel funktioniert. Sie überprüfen die Importdatei mithilfe des folgenden Befehls:
 
     `TfsMigrator import /importFile:C:\TFSMigrator\import.json /validateonly`
 
@@ -479,13 +479,13 @@ Nachdem die Migration abgeschlossen ist, möchten die Administratoren von Contos
 
 **Benötigen Sie weitere Hilfe?**
 
-Weitere Informationen finden Sie unter [Importieren von Repositorys aus TFVC in Git](https://docs.microsoft.com/azure/devops/repos/git/import-from-TFVC?view=vsts).
+Weitere Informationen finden Sie unter [Importieren von Repositorys aus TFVC in Git](/azure/devops/repos/git/import-from-TFVC?view=vsts).
 
 ## <a name="clean-up-after-migration"></a>Bereinigung nach der Migration
 
 Nachdem die Migration abgeschlossen wurde, muss das Contoso-Team folgende Schritte ausführen:
 
-- Informationen zu zusätzlichen Importaktionen finden Sie im Artikel mit den Schritten [nach dem Import](https://docs.microsoft.com/azure/devops/articles/migration-post-import?view=vsts).
+- Informationen zu zusätzlichen Importaktionen finden Sie im Artikel mit den Schritten [nach dem Import](/azure/devops/articles/migration-post-import?view=vsts).
 - Sie müssen die TFVC-Repositorys entweder löschen oder in den schreibgeschützten Modus versetzen. Die Codebasen dürfen nicht verwendet werden, für deren Verlauf kann jedoch auf diese verwiesen werden.
 
 ## <a name="post-migration-training"></a>Schulungen nach der Migration

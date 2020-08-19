@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 65d1ac327bc5a36e1dca12ab121825751be3b53f
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: d494bad6c5a64972ba317411ca2fcc4ab92ef857
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214241"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574566"
 ---
 # <a name="align-assets-to-prioritized-workloads"></a>Ausrichten von Ressourcen auf priorisierte Workloads
 
@@ -39,7 +39,7 @@ Das Ziel dieser vorhergehenden Datenpunkte ist es, den relativen technischen Auf
 
 Azure Migrate bietet eine Reihe von Gruppierungsfunktionen, die die Aggregation von Anwendungen, VMs, Datenquellen und Abhängigkeiten beschleunigen können. Nachdem die Workloads konzeptionell definiert wurden, können sie als Grundlage für die Gruppierung von Ressourcen auf Basis der Abhängigkeitszuordnung verwendet werden.
 
-Die Azure Migrate-Dokumentation bietet eine Anleitung zum [Gruppieren von Computern auf Basis von Abhängigkeiten](https://docs.microsoft.com/azure/migrate/how-to-create-group-machine-dependencies).
+Die Azure Migrate-Dokumentation bietet eine Anleitung zum [Gruppieren von Computern auf Basis von Abhängigkeiten](/azure/migrate/how-to-create-group-machine-dependencies).
 
 ## <a name="configuration-management-database"></a>Datenbank für Konfigurationsverwaltung
 

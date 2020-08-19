@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 0aaa503df3394faa51ec24eeec054ae7ffaac4a8
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 6e83c1deceed6e6c49e197d88d60ea641b00b1c5
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450763"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88575229"
 ---
 <!-- cSpell:ignore tvuylsteke >
 
@@ -95,9 +95,9 @@ Veröffentlichen Sie wie folgt ein Blaupausenartefakt für Ihr Abonnement:
 
 Weitere Informationen finden Sie unter:
 
-- [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints)
+- [Azure Blueprint](/azure/governance/blueprints)
 - [Cloud Adoption Framework: Leitfaden zur Entscheidungsfindung bei der Ressourcenkonsistenz](../../decision-guides/resource-consistency/index.md)
-- [Standardbasierte Blaupausenbeispiele](https://docs.microsoft.com/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
+- [Standardbasierte Blaupausenbeispiele](/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
 
 ::: zone-end
 
@@ -135,7 +135,7 @@ So wenden Sie eine Richtlinie auf eine Ressourcengruppe an:
 
 Weitere Informationen finden Sie unter:
 
-- [Azure Policy](https://docs.microsoft.com/azure/governance/policy)
+- [Azure Policy](/azure/governance/policy)
 - [Cloud Adoption Framework: Leitfaden zur Entscheidungsfindung für die Richtlinienerzwingung](../../decision-guides/policy-enforcement/index.md)
 
 ::: zone-end
@@ -162,8 +162,8 @@ Wechseln Sie zum [Azure-Portal](https://portal.azure.com/#blade/Microsoft_Azure_
 
 Weitere Informationen finden Sie unter:
 
-- [Azure Security Center](https://docs.microsoft.com/azure/security-center)
-- [Just-in-Time-VM-Zugriff](https://docs.microsoft.com/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
+- [Azure Security Center](/azure/security-center)
+- [Just-in-Time-VM-Zugriff](/azure/security-center/security-center-just-in-time#how-does-just-in-time-access-work)
 - [Security Center – Preise](https://azure.microsoft.com/pricing/details/security-center)
 - [Cloud Adoption Framework: Disziplin „Sicherheitsbaseline“](../../govern/security-baseline/index.md)
 

@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8d44734998d3a59391d9fcceb8f39704b845bafc
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 2bae2a2d9d5392296e8ad522ecf686e3d58b23da
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479788"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574260"
 ---
 # <a name="test-driven-development-for-landing-zones-in-azure"></a>Testgesteuerte Entwicklung für Zielzonen in Azure
 
@@ -29,24 +29,24 @@ Die Toolkette der Azure-nativen Governanceprodukte und -dienste lässt sich prob
 
 Die folgenden Beispiele werden von Microsoft für Governancezwecke zur Verfügung gestellt. Sie können jeweils als Test oder Testreihe in einem testgesteuerten Entwicklungszyklus für Zielzonen verwendet werden. Die folgenden Abschnitte enthalten weitere Informationen zu den einzelnen Tools:
 
-- Azure Blueprints bietet verschiedene [Blaupausenbeispiele](https://docs.microsoft.com/azure/governance/blueprints/samples), die Richtlinien für Tests und Vorlagen für die Bereitstellung enthalten. Diese Blaupausenmuster können den Entwicklungs-, Bereitstellungs- und Testaufwand in TDD-Zyklen beschleunigen.
-- Azure Policy umfasst auch [integrierte Richtlinieninitiativen](https://docs.microsoft.com/azure/governance/policy/samples/built-in-initiatives), die dazu dienen könnten, die vollständige „Definition of Done“ für eine Zielzone zu testen und durchzusetzen. Azure Policy umfasst [integrierte Richtliniendefinitionen](https://docs.microsoft.com/azure/governance/policy/samples/built-in-policies), die individuelle Akzeptanzkriterien innerhalb der „Definition of Done“ erfüllen können.
-- Azure Graph enthält fortgeschrittene [Abfragebeispiele](https://docs.microsoft.com/azure/governance/resource-graph/samples/advanced), die für fortgeschrittene Testszenarien verwendet werden können, um zu verstehen, wie die Workloads innerhalb einer Zielzone bereitgestellt werden.
+- Azure Blueprints bietet verschiedene [Blaupausenbeispiele](/azure/governance/blueprints/samples), die Richtlinien für Tests und Vorlagen für die Bereitstellung enthalten. Diese Blaupausenmuster können den Entwicklungs-, Bereitstellungs- und Testaufwand in TDD-Zyklen beschleunigen.
+- Azure Policy umfasst auch [integrierte Richtlinieninitiativen](/azure/governance/policy/samples/built-in-initiatives), die dazu dienen könnten, die vollständige „Definition of Done“ für eine Zielzone zu testen und durchzusetzen. Azure Policy umfasst [integrierte Richtliniendefinitionen](/azure/governance/policy/samples/built-in-policies), die individuelle Akzeptanzkriterien innerhalb der „Definition of Done“ erfüllen können.
+- Azure Graph enthält fortgeschrittene [Abfragebeispiele](/azure/governance/resource-graph/samples/advanced), die für fortgeschrittene Testszenarien verwendet werden können, um zu verstehen, wie die Workloads innerhalb einer Zielzone bereitgestellt werden.
 - [Azure-Schnellstartvorlagen](https://azure.microsoft.com/resources/templates) stellen Quellcodevorlagen zur Verfügung, um die Bereitstellung der Zielzone und der Workload zu beschleunigen.
 
 Die oben angegebenen Beispiele können zur Beschleunigung von TDD-Zyklen verwendet werden. Sie werden mit den Governancetools in den folgenden Abschnitten ausgeführt und ermöglichen es Cloudplattformteams, ihren eigenen Quellcode und ihre eigenen Tests zu erstellen.
 
 ## <a name="azure-governance-tools-that-can-accelerate-tdd-cycles"></a>Azure Governance-Tools, die TDD-Zyklen beschleunigen können
 
-[Azure Policy](https://docs.microsoft.com/azure/governance/policy): Wenn die Bereitstellungen oder versuchten Bereitstellungen von den Governancerichtlinien abweichen, kann Azure Policy automatische Erkennung, Schutz und Lösung bieten. Aber Azure Policy bietet auch den primären Mechanismus zum Testen von Akzeptanzkriterien in Ihrer Definition of Done. In einem TDD-Zyklus kann eine Richtliniendefinition erstellt werden, um ein einzelnes Akzeptanzkriterium zu testen. Ebenso können alle Akzeptanzkriterien zu einer Richtlinieninitiative hinzugefügt werden, die dem gesamten Abonnement zugewiesen wird. Dieser Ansatz bietet einen Mechanismus für Rot-Tests, bevor die Zielzone geändert wird. Wenn die Zielzone der Definition of Done entspricht, kann sie zur Erzwingung der Testkriterien verwendet werden, um Codeänderungen zu vermeiden, die in zukünftigen Releases zu Testfehlern führen würden.
+[Azure Policy](/azure/governance/policy): Wenn die Bereitstellungen oder versuchten Bereitstellungen von den Governancerichtlinien abweichen, kann Azure Policy automatische Erkennung, Schutz und Lösung bieten. Aber Azure Policy bietet auch den primären Mechanismus zum Testen von Akzeptanzkriterien in Ihrer Definition of Done. In einem TDD-Zyklus kann eine Richtliniendefinition erstellt werden, um ein einzelnes Akzeptanzkriterium zu testen. Ebenso können alle Akzeptanzkriterien zu einer Richtlinieninitiative hinzugefügt werden, die dem gesamten Abonnement zugewiesen wird. Dieser Ansatz bietet einen Mechanismus für Rot-Tests, bevor die Zielzone geändert wird. Wenn die Zielzone der Definition of Done entspricht, kann sie zur Erzwingung der Testkriterien verwendet werden, um Codeänderungen zu vermeiden, die in zukünftigen Releases zu Testfehlern führen würden.
 
-[Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints): Azure Blueprint gruppiert Richtlinien und andere Bereitstellungstools in einem wiederholbaren Paket, das mehreren Zielzonen zugeordnet werden kann. Blaupausen erweisen sich als nützlich, wenn mehrere Einführungsbemühungen eine gemeinsame „Definition of Done“ aufweisen, die Sie im Laufe der Zeit vielleicht aktualisieren möchten. Sie können auch bei späteren Bemühungen zur Erweiterung und Umgestaltung von Zielzonen bei deren Bereitstellung helfen.
+[Azure Blueprints](/azure/governance/blueprints): Azure Blueprint gruppiert Richtlinien und andere Bereitstellungstools in einem wiederholbaren Paket, das mehreren Zielzonen zugeordnet werden kann. Blaupausen erweisen sich als nützlich, wenn mehrere Einführungsbemühungen eine gemeinsame „Definition of Done“ aufweisen, die Sie im Laufe der Zeit vielleicht aktualisieren möchten. Sie können auch bei späteren Bemühungen zur Erweiterung und Umgestaltung von Zielzonen bei deren Bereitstellung helfen.
 
-[Azure Resource Graph](https://docs.microsoft.com/azure/governance/resource-graph/overview): Resource Graph bietet eine Abfragesprache zur Erstellung datengesteuerter Tests auf der Grundlage von Informationen über die in einer Zielzone bereitgestellten Ressourcen. Später im Einführungsplan kann dieses Tool auch komplexe Tests definieren, die auf den Interaktionen zwischen den Workloadressourcen und der zugrunde liegenden Cloudumgebung basieren.
+[Azure Resource Graph](/azure/governance/resource-graph/overview): Resource Graph bietet eine Abfragesprache zur Erstellung datengesteuerter Tests auf der Grundlage von Informationen über die in einer Zielzone bereitgestellten Ressourcen. Später im Einführungsplan kann dieses Tool auch komplexe Tests definieren, die auf den Interaktionen zwischen den Workloadressourcen und der zugrunde liegenden Cloudumgebung basieren.
 
-[Azure Resource Manager-Vorlagen](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview): Diese Vorlagen stellen den primären Quellcode für jede in Azure bereitgestellte Umgebung zur Verfügung. Einige Drittanbietertools wie etwa Terraform generieren ihre eigenen ARM-Vorlagen, die dann an Azure Resource Manager übermittelt werden.
+[Azure Resource Manager-Vorlagen](/azure/azure-resource-manager/templates/overview): Diese Vorlagen stellen den primären Quellcode für jede in Azure bereitgestellte Umgebung zur Verfügung. Einige Drittanbietertools wie etwa Terraform generieren ihre eigenen ARM-Vorlagen, die dann an Azure Resource Manager übermittelt werden.
 
-[Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview): Resource Manager bietet eine konsistente Plattform für den Aufbau und die Bereitstellung von Funktionen. Von dieser Plattform können Zielzonen auf der Grundlage von Quellcodedefinitionen bereitgestellt werden.
+[Azure Resource Manager](/azure/azure-resource-manager/management/overview): Resource Manager bietet eine konsistente Plattform für den Aufbau und die Bereitstellung von Funktionen. Von dieser Plattform können Zielzonen auf der Grundlage von Quellcodedefinitionen bereitgestellt werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

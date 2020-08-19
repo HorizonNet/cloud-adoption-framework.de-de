@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 740cd161f78fd8e4254786af65212c730af237b1
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 8a163d17a0c50d8482f3e311a4ae240f071b36c9
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787638"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574311"
 ---
 # <a name="define-and-prioritize-workloads-for-a-cloud-adoption-plan"></a>Definieren und Priorisieren von Workloads für einen Cloudeinführungsplan
 
@@ -43,7 +43,7 @@ Wenn die Entscheidung gegen eine Rationalisierung der digitalen Ressourcen fäll
 
 Im vorherigen Artikel, [Cloudeinführungsplan und Azure DevOps](./template.md), haben Sie einen Cloudeinführungsplan in Azure DevOps erstellt.
 
-Die Workloads in der Liste des 10er-Ansatzes können jetzt in Ihrem Cloudeinführungsplan dargestellt werden. Die einfachste Möglichkeit hierzu ist die Massenbearbeitung in Microsoft Excel. Wenn Sie Ihre Arbeitsstation für die Massenbearbeitung vorbereiten möchten, lesen Sie [Massenhinzufügen oder -bearbeiten von Arbeitselementen mit Microsoft Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
+Die Workloads in der Liste des 10er-Ansatzes können jetzt in Ihrem Cloudeinführungsplan dargestellt werden. Die einfachste Möglichkeit hierzu ist die Massenbearbeitung in Microsoft Excel. Wenn Sie Ihre Arbeitsstation für die Massenbearbeitung vorbereiten möchten, lesen Sie [Massenhinzufügen oder -bearbeiten von Arbeitselementen mit Microsoft Excel](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
 
 In Schritt 5 dieses Artikels werden Sie angewiesen, **Eingabeliste** auszuwählen. Wählen Sie stattdessen **Abfrageliste** aus. Wählen Sie dann aus der Dropdownlist **Abfrage auswählen** die Abfrage **Workloadvorlage** aus. Diese Abfrage lädt alle Arbeitselemente im Zusammenhang mit der Migration eines einzelnen Workloads in Ihre Tabellenkalkulation.
 

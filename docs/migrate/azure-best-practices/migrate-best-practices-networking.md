@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8e577809097a17f99e79cf6cc1de3a57ebbcd73a
-ms.sourcegitcommit: 580a6f66a0d0f3f5b755c68d757a84b2351a432f
+ms.openlocfilehash: 0831b76e4712ea616171d62703f36c026bca8246
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87473147"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574855"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -52,9 +52,9 @@ Weitere Tipps für die Planung:
 
 **Weitere Informationen**:
 
-- Lesen Sie die [Übersicht über Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview).
-- Sehen Sie sich die [häufig gestellten Fragen zu Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-faq) an.
-- Erfahren Sie mehr über [Grenzwerte für Azure-Netzwerke](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits).
+- Lesen Sie die [Übersicht über Azure Virtual Network](/azure/virtual-network/virtual-networks-overview).
+- Sehen Sie sich die [häufig gestellten Fragen zu Azure Virtual Network](/azure/virtual-network/virtual-networks-faq) an.
+- Erfahren Sie mehr über [Grenzwerte für Azure-Netzwerke](/azure/azure-resource-manager/management/azure-subscription-service-limits).
 
 ## <a name="best-practice-implement-a-hub-and-spoke-network-topology"></a>Bewährte Methode: Implementieren einer Hub-and-Spoke-Netzwerktopologie
 
@@ -73,9 +73,9 @@ _Abbildung 1: Hub-and-Spoke-Topologie_
 
 **Weitere Informationen**:
 
-- Machen Sie sich mit einer [Hub-and-Spoke-Topologie](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke) vertraut.
-- Erhalten Sie Netzwerkempfehlungen für die Ausführung von [Windows-VMs](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/windows-vm) und [Linux-VMs](https://docs.microsoft.com/azure/architecture/reference-architectures/n-tier/linux-vm).
-- Erfahren Sie mehr zum [Peering virtueller Netzwerke](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview).
+- Machen Sie sich mit einer [Hub-and-Spoke-Topologie](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke) vertraut.
+- Erhalten Sie Netzwerkempfehlungen für die Ausführung von [Windows-VMs](/azure/architecture/reference-architectures/n-tier/windows-vm) und [Linux-VMs](/azure/architecture/reference-architectures/n-tier/linux-vm).
+- Erfahren Sie mehr zum [Peering virtueller Netzwerke](/azure/virtual-network/virtual-network-peering-overview).
 
 ## <a name="best-practice-design-subnets"></a>Bewährte Methode: Entwerfen von Subnetzen
 
@@ -100,8 +100,8 @@ Die Tabelle enthält ein Beispiel für ein virtuelles Netzwerk mit einem (in Sub
 
 **Weitere Informationen**:
 
-- Erfahren Sie mehr über das [Entwerfen von Subnetzen](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm#segmentation).
-- [Erfahren Sie](https://docs.microsoft.com/azure/migrate/contoso-migration-infrastructure), wie ein fiktives Unternehmen (Contoso) seine Netzwerkinfrastruktur für die Migration vorbereitet hat.
+- Erfahren Sie mehr über das [Entwerfen von Subnetzen](/azure/virtual-network/virtual-network-vnet-plan-design-arm#segmentation).
+- [Erfahren Sie](/azure/migrate/contoso-migration-infrastructure), wie ein fiktives Unternehmen (Contoso) seine Netzwerkinfrastruktur für die Migration vorbereitet hat.
 
 ## <a name="best-practice-set-up-a-dns-server"></a>Bewährte Methode: Einrichten eines DNS-Servers
 
@@ -121,7 +121,7 @@ Von Azure wird standardmäßig ein DNS-Server hinzugefügt, wenn Sie ein virtuel
 
 **Weitere Informationen**:
 
-- Erfahren Sie mehr über die [Namensauflösung, wenn Sie einen eigenen DNS-Server verwenden](https://docs.microsoft.com/azure/migrate/contoso-migration-infrastructure).
+- Erfahren Sie mehr über die [Namensauflösung, wenn Sie einen eigenen DNS-Server verwenden](/azure/migrate/contoso-migration-infrastructure).
 - Erfahren Sie mehr über [DNS-Benennungsregeln und -Einschränkungen](../../ready/azure-best-practices/naming-and-tagging.md).
 
 ## <a name="best-practice-set-up-availability-zones"></a>Bewährte Methode: Einrichten von Verfügbarkeitszonen
@@ -135,7 +135,7 @@ Im Anschluss folgen einige weitere Punkte, die bei der Einrichtung von Verfügba
 - Mit Verfügbarkeitszonen bietet Azure eine Betriebszeit-SLA von 99,99 Prozent für virtuelle Computer.
 
     ![Diagramm: Verfügbarkeitszonen innerhalb einer Azure-Region](./media/migrate-best-practices-networking/availability-zone.png)
-    
+
     _Abbildung 3: Verfügbarkeitszonen_
 
 - Planen und integrieren Sie Hochverfügbarkeit in Ihre Migrationsarchitektur, indem Sie Ihre Compute-, Speicher-, Netzwerk- und Datenressourcen in eine Zone aufnehmen und in anderen Zonen replizieren. Azure-Dienste, die Verfügbarkeitszonen unterstützen, können in zwei Kategorien unterteilt werden:
@@ -147,7 +147,7 @@ Im Anschluss folgen einige weitere Punkte, die bei der Einrichtung von Verfügba
 
 **Weitere Informationen**:
 
-- Lesen Sie die [Übersicht über Verfügbarkeitszonen](https://docs.microsoft.com/azure/availability-zones/az-overview).
+- Lesen Sie die [Übersicht über Verfügbarkeitszonen](/azure/availability-zones/az-overview).
 
 ## <a name="design-hybrid-cloud-networking"></a>Entwerfen von Hybridcloudnetzwerken
 
@@ -158,7 +158,7 @@ Für eine erfolgreiche Migration ist es wichtig, eine Verbindung zwischen lokale
 
 **Weitere Informationen**:
 
-- Erfahren Sie mehr über [Hybridcloudnetzwerke](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/vpn).
+- Erfahren Sie mehr über [Hybridcloudnetzwerke](/azure/architecture/reference-architectures/hybrid-networking/vpn).
 
 ## <a name="best-practice-implement-a-highly-available-site-to-site-vpn"></a>Bewährte Methode: Implementieren eines hochverfügbaren Site-to-Site-VPN
 
@@ -192,13 +192,13 @@ _Abbildung 5: Site-to-Site-VPN_
 
 **Weitere Informationen**:
 
-- Informieren Sie sich über [kompatible lokale VPN-Geräte](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
-- Lesen Sie die [Übersicht über Azure-VPN-Gateways](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways).
-- Erhalten Sie Informationen zu [hochverfügbaren VPN-Verbindungen](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable).
-- Erfahren Sie mehr über das [Planen und Entwerfen eines VPN-Gateways](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-plan-design).
-- Informieren Sie sich über [VPN-Gatewayeinstellungen](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings#gwsku).
-- Informieren Sie sich über [Gateway-SKUs](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku).
-- Informieren Sie sich über das [Einrichten des BGP mit Azure-VPN-Gateways](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-bgp-overview).
+- Informieren Sie sich über [kompatible lokale VPN-Geräte](/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
+- Lesen Sie die [Übersicht über Azure-VPN-Gateways](/azure/vpn-gateway/vpn-gateway-about-vpngateways).
+- Erhalten Sie Informationen zu [hochverfügbaren VPN-Verbindungen](/azure/vpn-gateway/vpn-gateway-highlyavailable).
+- Erfahren Sie mehr über das [Planen und Entwerfen eines VPN-Gateways](/azure/vpn-gateway/vpn-gateway-plan-design).
+- Informieren Sie sich über [VPN-Gatewayeinstellungen](/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings#gwsku).
+- Informieren Sie sich über [Gateway-SKUs](/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku).
+- Informieren Sie sich über das [Einrichten des BGP mit Azure-VPN-Gateways](/azure/vpn-gateway/vpn-gateway-bgp-overview).
 
 ### <a name="best-practice-configure-a-gateway-for-vpn-gateways"></a>Bewährte Methode: Konfigurieren eines Gateways für VPN-Gateways
 
@@ -221,7 +221,7 @@ Bei Verwendung mehrerer VPN-Verbindungen bietet der Azure Virtual WAN-Netzwerkd
 - Die Nutzung von Geräten eines bevorzugten Anbieters ermöglicht eine einfache Verwendung, Konnektivität und Konfigurationsverwaltung.
 - Im integrierten Azure Virtual WAN-Dashboard können Sie umgehend Erkenntnisse zur Problembehandlung gewinnen, um Zeit zu sparen. Zudem können Sie auf einfache Weise umfangreiche Site-to-Site-Verbindungen überwachen.
 
-**Weitere Informationen**: Erfahren Sie mehr über [Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about).
+**Weitere Informationen**: Erfahren Sie mehr über [Azure Virtual WAN](/azure/virtual-wan/virtual-wan-about).
 
 ### <a name="best-practice-implement-expressroute-for-mission-critical-connections"></a>Bewährte Methode: Implementieren von ExpressRoute für unternehmenskritische Verbindungen
 
@@ -237,8 +237,8 @@ Für die Bereitstellung von ExpressRoute-Verbindungen ist in der Regel ein Expre
 
 **Weitere Informationen**:
 
-- Sehen Sie sich eine [Übersicht](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) über ExpressRoute an.
-- Informieren Sie sich über [ExpressRoute Direct](https://docs.microsoft.com/azure/expressroute/expressroute-erdirect-about).
+- Sehen Sie sich eine [Übersicht](/azure/expressroute/expressroute-introduction) über ExpressRoute an.
+- Informieren Sie sich über [ExpressRoute Direct](/azure/expressroute/expressroute-erdirect-about).
 
 ### <a name="best-practice-optimize-expressroute-routing-with-bgp-communities"></a>Bewährte Methode: Optimieren von ExpressRoute-Routing mit BGP-Communitys
 
@@ -281,7 +281,7 @@ _Abbildung 7: Optimierte Verbindung über BGP-Communitys_
 
 **Weitere Informationen**:
 
-- Erfahren Sie mehr über das [Optimieren des Routings](https://docs.microsoft.com/azure/expressroute/expressroute-optimize-routing).
+- Erfahren Sie mehr über das [Optimieren des Routings](/azure/expressroute/expressroute-optimize-routing).
 
 ## <a name="secure-virtual-networks"></a>Sichere virtuelle Netzwerke
 
@@ -289,8 +289,8 @@ Die Verantwortung für den Schutz virtueller Netzwerke liegt zu gleichen Teilen 
 
 **Weitere Informationen**:
 
-- Lesen Sie eine [Übersicht über bewährte Methoden für die Netzwerksicherheit](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices).
-- Erfahren Sie mehr über das [Entwerfen sicherer Netzwerke](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm#security).
+- Lesen Sie eine [Übersicht über bewährte Methoden für die Netzwerksicherheit](/azure/security/fundamentals/network-best-practices).
+- Erfahren Sie mehr über das [Entwerfen sicherer Netzwerke](/azure/virtual-network/virtual-network-vnet-plan-design-arm#security).
 
 <!-- docsTest:ignore "IDS/IPS" -->
 
@@ -313,7 +313,7 @@ _Abbildung 8: Bereitstellung eines Umkreisnetzwerks_
 
 **Weitere Informationen**:
 
-- Erfahren Sie mehr über die [Bereitstellung eines Umkreisnetzwerks zwischen Azure und Ihrem lokalen Rechenzentrum](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz).
+- Erfahren Sie mehr über die [Bereitstellung eines Umkreisnetzwerks zwischen Azure und Ihrem lokalen Rechenzentrum](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz).
 
 ## <a name="best-practice-filter-virtual-network-traffic-with-nsgs"></a>Bewährte Methode: Filtern des Datenverkehrs virtueller Netzwerke mit NSGs
 
@@ -353,8 +353,8 @@ Diensttags ersparen Ihnen die manuelle Arbeit beim Zuweisen einer Regel zu Grupp
 
 **Weitere Informationen**:
 
-- Lesen Sie Informationen zu [Netzwerksicherheitsgruppen (NSGs)](https://docs.microsoft.com/azure/virtual-network/security-overview).
-- Informieren Sie sich über [die für NSGs verfügbaren Diensttags](https://docs.microsoft.com/azure/virtual-network/security-overview#service-tags).
+- Lesen Sie Informationen zu [Netzwerksicherheitsgruppen (NSGs)](/azure/virtual-network/security-overview).
+- Informieren Sie sich über [die für NSGs verfügbaren Diensttags](/azure/virtual-network/security-overview#service-tags).
 
 ## <a name="best-practice-use-application-security-groups"></a>Bewährte Methode: Verwenden von Anwendungssicherheitsgruppen
 
@@ -388,7 +388,7 @@ Regeln, in denen eine Anwendungssicherheitsgruppe als Quelle oder Ziel angegeben
 
 **Weitere Informationen**:
 
-- Informieren Sie sich über [Anwendungssicherheitsgruppen](https://docs.microsoft.com/azure/virtual-network/security-overview#application-security-groups).
+- Informieren Sie sich über [Anwendungssicherheitsgruppen](/azure/virtual-network/security-overview#application-security-groups).
 
 ### <a name="best-practice-secure-access-to-paas-by-using-virtual-network-service-endpoints"></a>Bewährte Methode: Sicheres Zugreifen auf PaaS unter Verwendung von VNET-Dienstendpunkten
 
@@ -403,7 +403,7 @@ _Abbildung 10: Dienstendpunkte_
 
 **Weitere Informationen**:
 
-- Informieren Sie sich über [VNET-Dienstendpunkte](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview).
+- Informieren Sie sich über [VNET-Dienstendpunkte](/azure/virtual-network/virtual-network-service-endpoints-overview).
 
 ## <a name="best-practice-control-public-ip-addresses"></a>Bewährte Methode: Steuern öffentlicher IP-Adressen
 
@@ -419,8 +419,8 @@ _Abbildung 10: Dienstendpunkte_
 
 **Weitere Informationen**:
 
-- [Öffentliche IP-Adressen in Azure](https://docs.microsoft.com/azure/virtual-network/virtual-network-ip-addresses-overview-arm#public-ip-addresses)
-- [Verwalten des Zugriffs auf virtuelle Computer mithilfe des Just-In-Time-Features](https://docs.microsoft.com/azure/security-center/security-center-just-in-time)
+- [Öffentliche IP-Adressen in Azure](/azure/virtual-network/virtual-network-ip-addresses-overview-arm#public-ip-addresses)
+- [Verwalten des Zugriffs auf virtuelle Computer mithilfe des Just-In-Time-Features](/azure/security-center/security-center-just-in-time)
 
 ## <a name="take-advantage-of-azure-security-features-for-networking"></a>Nutzen von Azure-Sicherheitsfeatures für Netzwerke
 
@@ -445,8 +445,8 @@ Im Anschluss folgen einige Punkte, die beachtet werden müssen, wenn Sie den Die
 
 **Weitere Informationen**:
 
-- Lesen Sie die [Übersicht über Azure Firewall](https://docs.microsoft.com/azure/firewall/overview).
-- Erfahren Sie mehr über [FQDN-Tags in Azure Firewall](https://docs.microsoft.com/azure/firewall/fqdn-tags).
+- Lesen Sie die [Übersicht über Azure Firewall](/azure/firewall/overview).
+- Erfahren Sie mehr über [FQDN-Tags in Azure Firewall](/azure/firewall/fqdn-tags).
 
 ## <a name="best-practice-deploy-web-application-firewall"></a>Bewährte Methode: Bereitstellen der Web Application Firewall
 
@@ -465,8 +465,8 @@ Im Anschluss folgen einige zusätzliche Hinweise zur WAF:
 
 **Weitere Informationen**:
 
-- Erfahren Sie mehr über die [WAF](https://docs.microsoft.com/azure/application-gateway/waf-overview).
-- Informieren Sie sich über [WAF-Einschränkungen und -Ausschlüsse](https://docs.microsoft.com/azure/application-gateway/application-gateway-waf-configuration).
+- Erfahren Sie mehr über die [WAF](/azure/application-gateway/waf-overview).
+- Informieren Sie sich über [WAF-Einschränkungen und -Ausschlüsse](/azure/application-gateway/application-gateway-waf-configuration).
 
 ## <a name="best-practice-implement-azure-network-watcher"></a>Bewährte Methode: Implementieren von Azure Network Watcher
 
@@ -486,8 +486,8 @@ Im Anschluss finden Sie einige weitere Details:
 
 **Weitere Informationen**:
 
-- Lesen Sie die [Übersicht über Network Watcher](https://docs.microsoft.com/azure/network-watcher).
-- Erfahren Sie mehr über [NSG-Datenflussprotokolle](https://docs.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-overview).
+- Lesen Sie die [Übersicht über Network Watcher](/azure/network-watcher).
+- Erfahren Sie mehr über [NSG-Datenflussprotokolle](/azure/network-watcher/network-watcher-nsg-flow-logging-overview).
 
 ## <a name="use-partner-tools-in-azure-marketplace"></a>Verwenden von Partnertools im Azure Marketplace
 
@@ -511,7 +511,7 @@ Es wird empfohlen, eine Gruppe von Azure-Firewalls (oder virtuellen Netzwerkappl
 
 **Weitere Informationen**:
 
-- Informieren Sie sich über die [Verwendung virtueller Netzwerkappliances in einem virtuellen Azure-Netzwerk](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz).
+- Informieren Sie sich über die [Verwendung virtueller Netzwerkappliances in einem virtuellen Azure-Netzwerk](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

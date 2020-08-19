@@ -7,20 +7,20 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 359282dc962c72334bd390324fab0ca66f62a65c
-ms.sourcegitcommit: 6fef15cc3a8af725dc743e19f127513bc58dd257
+ms.openlocfilehash: c418233559d93b59a468caa24fe43984184898ec
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84023405"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574940"
 ---
 # <a name="create-update-schedules"></a>Erstellen von Zeitplänen für Updates
 
 Sie können Zeitpläne für Updates über das Azure-Portal oder die neuen PowerShell-Cmdlet-Module verwalten.
 
-Informationen zum Erstellen eines Zeitplans für Updates über das Azure-Portal finden Sie unter [Planen einer Updatebereitstellung](https://docs.microsoft.com/azure/automation/automation-tutorial-update-management#schedule-an-update-deployment).
+Informationen zum Erstellen eines Zeitplans für Updates über das Azure-Portal finden Sie unter [Planen einer Updatebereitstellung](/azure/automation/automation-tutorial-update-management#schedule-an-update-deployment).
 
-Das Modul `Az.Automation` unterstützt jetzt die Konfiguration der Updateverwaltung mit Azure PowerShell. Die [Version 1.7.0](https://www.powershellgallery.com/packages/Az/1.7.0) des Moduls bietet Unterstützung für das Cmdlet [New-AzAutomationUpdateManagementAzureQuery](https://docs.microsoft.com/powershell/module/az.automation/new-azautomationupdatemanagementazurequery?view=azps-1.7.0). Mit diesem Cmdlet können Sie Tags, Speicherort und gespeicherte Suchen verwenden, um Zeitpläne für Updates für eine flexible Gruppe von Computern zu konfigurieren.
+Das Modul `Az.Automation` unterstützt jetzt die Konfiguration der Updateverwaltung mit Azure PowerShell. Die [Version 1.7.0](https://www.powershellgallery.com/packages/Az/1.7.0) des Moduls bietet Unterstützung für das Cmdlet [New-AzAutomationUpdateManagementAzureQuery](/powershell/module/az.automation/new-azautomationupdatemanagementazurequery?view=azps-1.7.0). Mit diesem Cmdlet können Sie Tags, Speicherort und gespeicherte Suchen verwenden, um Zeitpläne für Updates für eine flexible Gruppe von Computern zu konfigurieren.
 
 ## <a name="example-script"></a>Beispielskript
 
@@ -33,7 +33,7 @@ Das Beispielskript in diesem Abschnitt veranschaulicht die Verwendung von Taggin
   - Verfügt über ein `Production`-Tag mit einem auf `true` festgelegten Wert.
 - Wendet den Updatezeitplan auf die abgefragten Computer an und legt ein zweistündiges Updatefenster fest.
 
-Bevor Sie das Beispielskript ausführen, müssen Sie sich mit dem Cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) anmelden. Stellen Sie beim Starten des Skripts die folgenden Informationen zur Verfügung:
+Bevor Sie das Beispielskript ausführen, müssen Sie sich mit dem Cmdlet [Connect-AzAccount](/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0) anmelden. Stellen Sie beim Starten des Skripts die folgenden Informationen zur Verfügung:
 
 - Zielabonnement-ID
 - Zielressourcengruppe

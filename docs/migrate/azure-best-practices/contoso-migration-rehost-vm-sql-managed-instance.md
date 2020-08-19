@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 0f3dc360bf67c68d80968ac017541e50c2e032e4
-ms.sourcegitcommit: 580a6f66a0d0f3f5b755c68d757a84b2351a432f
+ms.openlocfilehash: de1f4f046a81f002ee35014051982844682c6dce
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87473079"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88575042"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless SQLMI iisreset -->
 
@@ -105,9 +105,9 @@ Contoso migriert die Web- und Datenschichten seiner SmartHotel360-Anwendung mit 
 
 | Dienst | BESCHREIBUNG | Kosten |
 | --- | --- | --- |
-| [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Azure Database Migration Service ermöglicht die nahtlose Migration mehrerer Datenbankquellen zu Azure-Datenplattformen mit minimaler Downtime. | Informieren Sie sich über die [unterstützten Regionen](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability) und die [Preise für Azure Database Migration Service](https://azure.microsoft.com/pricing/details/database-migration). |
-| [Verwaltete Azure SQL-Datenbank-Instanz](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | SQL Managed Instance ist ein verwalteter Datenbankdienst, der eine vollständig verwaltete SQL Server-Instanz in der Azure-Cloud darstellt. Bei diesem Dienst wird der gleiche Code wie bei der neuesten Version der Microsoft SQL Server-Datenbank-Engine genutzt, und er verfügt über die neuesten Features, Leistungsverbesserungen und Sicherheitspatches. | Bei Verwendung einer in Azure ausgeführten Instanz von SQL Managed Instance fallen Gebühren je nach Kapazität an. Lesen Sie mehr zu den [Preisen für SQL Managed Instance](https://azure.microsoft.com/pricing/details/sql-database/managed). |
-| [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) | Contoso verwendet Azure Migrate, um seine VMware-VMs zu bewerten. Azure Migrate bewertet die Eignung der Computer für die Migration. Der Dienst stellt Schätzungen zur Größe und zu den Kosten für die Ausführung in Azure bereit. | Azure Migrate ist ohne Aufpreis erhältlich. Je nach den Tools (Originalanbieter oder ISV), die für die Bewertung und Migration verwendet werden, können aber ggf. Gebühren anfallen. Weitere Informationen zu den Preisen von Azure Migrate finden Sie [hier](https://azure.microsoft.com/pricing/details/azure-migrate). |
+| [Azure Database Migration Service](/azure/dms/dms-overview) | Azure Database Migration Service ermöglicht die nahtlose Migration mehrerer Datenbankquellen zu Azure-Datenplattformen mit minimaler Downtime. | Informieren Sie sich über die [unterstützten Regionen](/azure/dms/dms-overview#regional-availability) und die [Preise für Azure Database Migration Service](https://azure.microsoft.com/pricing/details/database-migration). |
+| [Verwaltete Azure SQL-Datenbank-Instanz](/azure/sql-database/sql-database-managed-instance) | SQL Managed Instance ist ein verwalteter Datenbankdienst, der eine vollständig verwaltete SQL Server-Instanz in der Azure-Cloud darstellt. Bei diesem Dienst wird der gleiche Code wie bei der neuesten Version der Microsoft SQL Server-Datenbank-Engine genutzt, und er verfügt über die neuesten Features, Leistungsverbesserungen und Sicherheitspatches. | Bei Verwendung einer in Azure ausgeführten Instanz von SQL Managed Instance fallen Gebühren je nach Kapazität an. Lesen Sie mehr zu den [Preisen für SQL Managed Instance](https://azure.microsoft.com/pricing/details/sql-database/managed). |
+| [Azure Migrate](/azure/migrate/migrate-services-overview) | Contoso verwendet Azure Migrate, um seine VMware-VMs zu bewerten. Azure Migrate bewertet die Eignung der Computer für die Migration. Der Dienst stellt Schätzungen zur Größe und zu den Kosten für die Ausführung in Azure bereit. | Azure Migrate ist ohne Aufpreis erhältlich. Je nach den Tools (Originalanbieter oder ISV), die für die Bewertung und Migration verwendet werden, können aber ggf. Gebühren anfallen. Weitere Informationen zu den Preisen von Azure Migrate finden Sie [hier](https://azure.microsoft.com/pricing/details/azure-migrate). |
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -118,8 +118,8 @@ Contoso und andere Benutzer müssen für dieses Szenario die unten angegebenen V
 | **Azure-Abonnement** | Contoso hat bereits im ersten Artikel dieser Reihe ein Abonnement erstellt. Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/free) erstellen. <br><br> Wenn Sie ein kostenloses Konto erstellen, sind Sie der Administrator Ihres Abonnements und können alle Aktionen durchführen. <br><br> Falls Sie ein vorhandenes Abonnement verwenden und nicht der Administrator sind, sollten Sie mit dem Administrator des Abonnements zusammenarbeiten, damit er Ihnen für die erforderlichen Ressourcengruppen und Ressourcen Berechtigungen vom Typ „Besitzer“ oder „Mitwirkender“ zuweist. |
 | **Azure-Infrastruktur** | Contoso richtet die Azure-Infrastruktur ein, wie unter [Bereitstellen einer Migrationsinfrastruktur](./contoso-migration-infrastructure.md) beschrieben. |
 | **Lokale Server** | Auf dem lokalen vCenter-Server sollte Version 5.5, 6.0 oder 6.5 ausgeführt werden. <br><br> Auf einem ESXi-Host sollte die Version 5.5, 6.0 oder 6.5 ausgeführt werden. <br><br> Mindestens eine VMware-VM sollte auf dem ESXi-Host ausgeführt werden. |
-| **Lokale VMs** | [Überprüfen Sie Linux-Computer](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros), deren Ausführung unter Azure unterstützt wird. |
-| **Database Migration Service** | Für Azure Database Migration Service benötigen Sie ein [kompatibles lokales VPN-Gerät](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices). <br><br> Sie müssen das lokale VPN-Gerät konfigurieren können. Es muss über eine externe öffentliche IPv4-Adresse verfügen. Diese Adresse darf sich nicht hinter einem NAT-Gerät befinden. <br><br> Stellen Sie sicher, dass Sie Zugriff auf Ihre lokale SQL Server-Datenbank haben. <br><br> Windows-Firewall sollte auf die Quelldatenbank-Engine zugreifen können. Informieren Sie sich, wie Sie [Windows Defender Firewall für den Datenbank-Engine-Zugriff konfigurieren](https://docs.microsoft.com/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access). <br><br> Wenn sich eine Firewall vor dem Datenbankcomputer befindet, sollten Sie Regeln hinzufügen, um den Zugriff auf die Datenbank und auf Dateien über SMB-Port 445 zuzulassen. <br><br> Für die zum Herstellen einer Verbindung zwischen der SQL Server-Quellinstanz und der jeweiligen SQL Managed Instance-Zielinstanz verwendeten Anmeldeinformationen muss sichergestellt sein, dass es sich jeweils um Mitglieder der Serverrolle „sysadmin“ handelt. <br><br> Sie benötigen eine Netzwerkfreigabe in der lokalen Datenbank, die von Azure Database Migration Service zum Sichern der Quelldatenbank verwendet werden kann. <br><br> Vergewissern Sie sich, dass das Dienstkonto, mit dem die SQL Server-Quellinstanz ausgeführt wird, über Schreibberechtigungen für die Netzwerkfreigabe verfügt. <br><br> Notieren Sie sich einen Windows-Benutzernamen, der über eine Berechtigung für Vollzugriff auf die Netzwerkfreigabe verfügt, und das zugehörige Kennwort. Azure Database Migration Service verwendet diese Benutzeranmeldeinformationen, um Sicherungsdateien in den Azure Storage-Container hochzuladen. <br><br> Bei der SQL Server Express-Installation wird das TCP/IP-Protokoll standardmäßig auf **Deaktiviert** gesetzt. Stellen Sie sicher, dass es aktiviert ist. |
+| **Lokale VMs** | [Überprüfen Sie Linux-Computer](/azure/virtual-machines/linux/endorsed-distros), deren Ausführung unter Azure unterstützt wird. |
+| **Database Migration Service** | Für Azure Database Migration Service benötigen Sie ein [kompatibles lokales VPN-Gerät](/azure/vpn-gateway/vpn-gateway-about-vpn-devices). <br><br> Sie müssen das lokale VPN-Gerät konfigurieren können. Es muss über eine externe öffentliche IPv4-Adresse verfügen. Diese Adresse darf sich nicht hinter einem NAT-Gerät befinden. <br><br> Stellen Sie sicher, dass Sie Zugriff auf Ihre lokale SQL Server-Datenbank haben. <br><br> Windows-Firewall sollte auf die Quelldatenbank-Engine zugreifen können. Informieren Sie sich, wie Sie [Windows Defender Firewall für den Datenbank-Engine-Zugriff konfigurieren](/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access). <br><br> Wenn sich eine Firewall vor dem Datenbankcomputer befindet, sollten Sie Regeln hinzufügen, um den Zugriff auf die Datenbank und auf Dateien über SMB-Port 445 zuzulassen. <br><br> Für die zum Herstellen einer Verbindung zwischen der SQL Server-Quellinstanz und der jeweiligen SQL Managed Instance-Zielinstanz verwendeten Anmeldeinformationen muss sichergestellt sein, dass es sich jeweils um Mitglieder der Serverrolle „sysadmin“ handelt. <br><br> Sie benötigen eine Netzwerkfreigabe in der lokalen Datenbank, die von Azure Database Migration Service zum Sichern der Quelldatenbank verwendet werden kann. <br><br> Vergewissern Sie sich, dass das Dienstkonto, mit dem die SQL Server-Quellinstanz ausgeführt wird, über Schreibberechtigungen für die Netzwerkfreigabe verfügt. <br><br> Notieren Sie sich einen Windows-Benutzernamen, der über eine Berechtigung für Vollzugriff auf die Netzwerkfreigabe verfügt, und das zugehörige Kennwort. Azure Database Migration Service verwendet diese Benutzeranmeldeinformationen, um Sicherungsdateien in den Azure Storage-Container hochzuladen. <br><br> Bei der SQL Server Express-Installation wird das TCP/IP-Protokoll standardmäßig auf **Deaktiviert** gesetzt. Stellen Sie sicher, dass es aktiviert ist. |
 
 ## <a name="scenario-steps"></a>Szenarioschritte
 
@@ -143,10 +143,10 @@ Contoso benötigt ein Subnetz, das die folgenden Anforderungen erfüllt, um eine
 - Nachdem die verwaltete Instanz erstellt wurde, sollte Contoso dem Subnetz keine Ressourcen mehr hinzufügen.
 - Dem Subnetz darf keine Netzwerksicherheitsgruppe zugeordnet sein.
 - Das Subnetz muss über eine benutzerdefinierte Routingtabelle verfügen. Die einzige zugewiesene Route sollte `0.0.0.0/0` sein (nächster Hop „Internet“).
-- Wenn ein optionales benutzerdefiniertes DNS für das virtuelle Netzwerk angegeben wird, muss die virtuelle IP-Adresse `168.63.129.16` für die rekursiven Resolver in Azure zur Liste hinzugefügt werden. Informieren Sie sich, wie Sie [ein benutzerdefiniertes DNS für SQL Managed Instance konfigurieren](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns).
+- Wenn ein optionales benutzerdefiniertes DNS für das virtuelle Netzwerk angegeben wird, muss die virtuelle IP-Adresse `168.63.129.16` für die rekursiven Resolver in Azure zur Liste hinzugefügt werden. Informieren Sie sich, wie Sie [ein benutzerdefiniertes DNS für SQL Managed Instance konfigurieren](/azure/sql-database/sql-database-managed-instance-custom-dns).
 - Dem Subnetz darf kein Dienstendpunkt (Speicher oder SQL) zugeordnet sein. Dienstendpunkte sollten im virtuellen Netzwerk deaktiviert sein.
-- Das Subnetz muss mindestens 16 IP-Adressen aufweisen. Informieren Sie sich über das [Bestimmen der Größe des Subnetzes für verwaltete Instanzen](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-vnet-configuration).
-- In der Hybridumgebung von Contoso sind benutzerdefinierte DNS-Einstellungen erforderlich. Contoso konfiguriert die DNS-Einstellungen so, dass mindestens ein Azure DNS-Server des Unternehmens genutzt wird. Informieren Sie sich über die [DNS-Anpassung](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns).
+- Das Subnetz muss mindestens 16 IP-Adressen aufweisen. Informieren Sie sich über das [Bestimmen der Größe des Subnetzes für verwaltete Instanzen](/azure/sql-database/sql-database-managed-instance-vnet-configuration).
+- In der Hybridumgebung von Contoso sind benutzerdefinierte DNS-Einstellungen erforderlich. Contoso konfiguriert die DNS-Einstellungen so, dass mindestens ein Azure DNS-Server des Unternehmens genutzt wird. Informieren Sie sich über die [DNS-Anpassung](/azure/sql-database/sql-database-managed-instance-custom-dns).
 
 ### <a name="set-up-a-virtual-network-for-the-managed-instance"></a>Einrichten eines virtuellen Netzwerks für die verwaltete Instanz
 
@@ -178,10 +178,10 @@ Die Contoso-Administratoren führen Folgendes durch, um das virtuelle Netzwerk e
 
 **Benötigen Sie weitere Hilfe?**
 
-- Lesen Sie die [Übersicht zu SQL Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance).
-- Informieren Sie sich über das [Konfigurieren eines vorhandenen virtuellen Netzwerks für Azure SQL Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-vnet-configuration).
-- Erfahren Sie, wie Sie das [Peering einrichten](https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-peering).
-- Erfahren Sie, wie Sie die [DNS-Einstellungen für Azure Active Directory aktualisieren](https://docs.microsoft.com/azure/active-directory-domain-services/tutorial-create-instance).
+- Lesen Sie die [Übersicht zu SQL Managed Instance](/azure/sql-database/sql-database-managed-instance).
+- Informieren Sie sich über das [Konfigurieren eines vorhandenen virtuellen Netzwerks für Azure SQL Managed Instance](/azure/sql-database/sql-database-managed-instance-vnet-configuration).
+- Erfahren Sie, wie Sie das [Peering einrichten](/azure/virtual-network/virtual-network-manage-peering).
+- Erfahren Sie, wie Sie die [DNS-Einstellungen für Azure Active Directory aktualisieren](/azure/active-directory-domain-services/tutorial-create-instance).
 
 ### <a name="set-up-routing"></a>Einrichten des Routings
 
@@ -210,7 +210,7 @@ Contoso berücksichtigt die folgenden Faktoren:
 
 **Benötigen Sie weitere Hilfe?**
 
-Informieren Sie sich über das [Einrichten von Routen für eine verwaltete Instanz](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-get-started).
+Informieren Sie sich über das [Einrichten von Routen für eine verwaltete Instanz](/azure/sql-database/sql-database-managed-instance-get-started).
 
 ### <a name="create-a-managed-instance"></a>Erstellen einer verwalteten Instanz
 
@@ -230,7 +230,7 @@ Nun können die Contoso-Administratoren eine Instanz von SQL Managed Instance 
 
 **Benötigen Sie weitere Hilfe?**
 
-Informieren Sie sich, wie Sie [eine verwaltete Instanz bereitstellen](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-get-started).
+Informieren Sie sich, wie Sie [eine verwaltete Instanz bereitstellen](/azure/sql-database/sql-database-managed-instance-get-started).
 
 ## <a name="step-2-prepare-azure-database-migration-service"></a>Schritt 2: Vorbereiten von Azure Database Migration Service
 
@@ -260,8 +260,8 @@ Anschließend werden die folgenden Schritte ausgeführt:
 
 **Benötigen Sie weitere Hilfe?**
 
-- Informieren Sie sich, wie Sie [Azure Database Migration Service einrichten](https://docs.microsoft.com/azure/dms/quickstart-create-data-migration-service-portal).
-- Erfahren Sie, wie Sie [eine SAS erstellen und verwenden](https://docs.microsoft.com/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2).
+- Informieren Sie sich, wie Sie [Azure Database Migration Service einrichten](/azure/dms/quickstart-create-data-migration-service-portal).
+- Erfahren Sie, wie Sie [eine SAS erstellen und verwenden](/azure/storage/blobs/storage-dotnet-shared-access-signature-part-2).
 
 ## <a name="step-3-prepare-azure-for-the-azure-migrate-server-migration-tool"></a>Schritt 3: Vorbereiten von Azure für das Azure Migrate- Tool für die Servermigration
 
@@ -323,7 +323,7 @@ Die Contoso-Administratoren richten diese Komponenten ein, indem sie die folgend
 
 **Benötigen Sie weitere Hilfe?**
 
-Informieren Sie sich über die [Azure Migrate-Appliance](https://docs.microsoft.com/azure/migrate/migrate-services-overview#azure-migrate-server-migration-tool).
+Informieren Sie sich über die [Azure Migrate-Appliance](/azure/migrate/migrate-services-overview#azure-migrate-server-migration-tool).
 
 ### <a name="prepare-on-premises-vms"></a>Vorbereiten von lokalen VMs
 
@@ -343,8 +343,8 @@ Nach der Migration möchte Contoso eine Verbindung mit den Azure VMs herstellen 
 
 1. Sie installieren den Azure-Agent:
 
-    - [Azure Linux-Agent](https://docs.microsoft.com/azure/virtual-machines/extensions/agent-linux)
-    - [Azure Windows-Agent](https://docs.microsoft.com/azure/virtual-machines/extensions/agent-windows)
+    - [Azure Linux-Agent](/azure/virtual-machines/extensions/agent-linux)
+    - [Azure Windows-Agent](/azure/virtual-machines/extensions/agent-windows)
 
 1. Weitere Überlegungen:
 
@@ -353,7 +353,7 @@ Nach der Migration möchte Contoso eine Verbindung mit den Azure VMs herstellen 
 
 **Benötigen Sie weitere Hilfe?**
 
-Erfahren Sie, wie Sie [VMs auf die Migration vorbereiten](https://docs.microsoft.com/azure/migrate/prepare-for-migration).
+Erfahren Sie, wie Sie [VMs auf die Migration vorbereiten](/azure/migrate/prepare-for-migration).
 
 ## <a name="step-5-replicate-the-on-premises-vms"></a>Schritt 5: Replizieren der lokalen VMs
 
@@ -387,7 +387,7 @@ Nachdem die Ermittlung abgeschlossen ist, können sie mit der Replikation von VM
     - Sie wählen die Option **Nein** aus, falls sie den Azure-Hybridvorteil nicht anwenden möchten. Anschließend wählen sie **Weiter** aus.
     - Sie wählen **Ja** aus, wenn sie über Windows Server-Computer verfügen, die durch aktive Software Assurance- oder Windows Server-Abonnements abgedeckt sind, und den Vorteil auf die zu migrierenden Computer anwenden möchten. Anschließend wählen sie **Weiter** aus.
 
-1. Sie überprüfen unter **Compute** den VM-Namen, die Größe, den Typ des Betriebssystemdatenträgers und die Verfügbarkeitsgruppe. Die VMs müssen die [Azure-Anforderungen](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#vmware-requirements) erfüllen.
+1. Sie überprüfen unter **Compute** den VM-Namen, die Größe, den Typ des Betriebssystemdatenträgers und die Verfügbarkeitsgruppe. Die VMs müssen die [Azure-Anforderungen](/azure/migrate/migrate-support-matrix-vmware#vmware-requirements) erfüllen.
 
     - **Größe des virtuellen Computers:** Bei Verwendung von Bewertungsempfehlungen enthält die Dropdownliste „VM-Größe“ die empfohlene Größe. Andernfalls wählt Azure Migrate eine Größe basierend auf der größten Übereinstimmung im Azure-Abonnement aus. Alternativ können sie unter **Azure-VM-Größe** manuell eine Größe auswählen.
     - **Betriebssystemdatenträger:** Sie geben den Betriebssystemdatenträger (Startdatenträger) für die VM an. Der Betriebssystemdatenträger enthält den Bootloader und das Installationsprogramm des Betriebssystems.
@@ -500,9 +500,9 @@ Der letzte Schritt im Migrationsprozess besteht darin, dass die Contoso-Administ
 
 **Benötigen Sie weitere Hilfe?**
 
-- Informieren Sie sich über die [Durchführung eines Testfailovers](https://docs.microsoft.com/azure/site-recovery/tutorial-dr-drill-azure).
-- Informieren Sie sich über das [Erstellen eines Wiederherstellungsplans](https://docs.microsoft.com/azure/site-recovery/site-recovery-create-recovery-plans).
-- Erfahren Sie, wie Sie [das Failover in Azure ausführen](https://docs.microsoft.com/azure/site-recovery/site-recovery-failover).
+- Informieren Sie sich über die [Durchführung eines Testfailovers](/azure/site-recovery/tutorial-dr-drill-azure).
+- Informieren Sie sich über das [Erstellen eines Wiederherstellungsplans](/azure/site-recovery/site-recovery-create-recovery-plans).
+- Erfahren Sie, wie Sie [das Failover in Azure ausführen](/azure/site-recovery/site-recovery-failover).
 
 ## <a name="clean-up-after-migration"></a>Bereinigung nach der Migration
 
@@ -527,24 +527,24 @@ Das Contoso-Sicherheitsteam überprüft die Azure-VMs und die Instanz von SQL Ma
 
 - Das Team überprüft die Netzwerksicherheitsgruppen, die zum Steuern des Zugriffs für den virtuellen Computer verwendet werden. Mit Netzwerksicherheitsgruppen kann sichergestellt werden, dass nur Datenverkehr fließt, der für die Anwendung zulässig ist.
 - Das Sicherheitsteam von Contoso erwägt auch, die Daten auf dem Datenträger per Azure Disk Encryption und Azure Key Vault zu schützen.
-- Das Team aktiviert die Bedrohungserkennung auf der verwalteten Instanz. Bei der Bedrohungserkennung wird eine Benachrichtigung mit dem Hinweis, dass ein Ticket erstellt werden soll, an das Sicherheitsteam von Contoso bzw. das Service Desk-System gesendet. Lesen Sie mehr zur [Bedrohungserkennung für SQL Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-threat-detection).
+- Das Team aktiviert die Bedrohungserkennung auf der verwalteten Instanz. Bei der Bedrohungserkennung wird eine Benachrichtigung mit dem Hinweis, dass ein Ticket erstellt werden soll, an das Sicherheitsteam von Contoso bzw. das Service Desk-System gesendet. Lesen Sie mehr zur [Bedrohungserkennung für SQL Managed Instance](/azure/sql-database/sql-database-managed-instance-threat-detection).
 
      ![Screenshot mit dem Bereich für die Sicherheit in SQL Managed Instance: Bildschirm „Bedrohungserkennung“](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-security.png)
 
-Weitere Informationen zu den Sicherheitsmethoden für VMs finden Sie unter [Bewährte Sicherheitsmethoden für IaaS-Workloads in Azure](https://docs.microsoft.com/azure/security/fundamentals/iaas).
+Weitere Informationen zu den Sicherheitsmethoden für VMs finden Sie unter [Bewährte Sicherheitsmethoden für IaaS-Workloads in Azure](/azure/security/fundamentals/iaas).
 
 ### <a name="business-continuity-and-disaster-recovery"></a>Business Continuity & Disaster Recovery
 
 Zur Sicherstellung der Geschäftskontinuität und Notfallwiederherstellung führt Contoso die folgenden Aktionen durch:
 
-- **Schützen von Daten.** Contoso sichert die Daten auf den VMs mithilfe des Azure Backup-Diensts. Weitere Informationen finden Sie unter [Ein Überblick über die Sicherung von Azure-VMs](https://docs.microsoft.com/azure/backup/backup-azure-vms-introduction).
-- **Aufrechterhalten des Anwendungsbetriebs.** Contoso repliziert die Anwendungs-VMs in Azure mithilfe von Site Recovery in einer sekundären Region. Informieren Sie sich über das [Einrichten der Notfallwiederherstellung in einer sekundären Azure-Region für einen virtuellen Azure-Computer](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
-- **Weitere Informationen.** Contoso ruft weitere Informationen zum Verwalten der Instanz von SQL Managed Instance ab, z. B. [Datenbanksicherungen](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups).
+- **Schützen von Daten.** Contoso sichert die Daten auf den VMs mithilfe des Azure Backup-Diensts. Weitere Informationen finden Sie unter [Ein Überblick über die Sicherung von Azure-VMs](/azure/backup/backup-azure-vms-introduction).
+- **Aufrechterhalten des Anwendungsbetriebs.** Contoso repliziert die Anwendungs-VMs in Azure mithilfe von Site Recovery in einer sekundären Region. Informieren Sie sich über das [Einrichten der Notfallwiederherstellung in einer sekundären Azure-Region für einen virtuellen Azure-Computer](/azure/site-recovery/azure-to-azure-quickstart).
+- **Weitere Informationen.** Contoso ruft weitere Informationen zum Verwalten der Instanz von SQL Managed Instance ab, z. B. [Datenbanksicherungen](/azure/sql-database/sql-database-automated-backups).
 
 ### <a name="licensing-and-cost-optimization"></a>Lizenzierung und Kostenoptimierung
 
 - Contoso verfügt über eine vorhandene Lizenzierung für WEBVM. Contoso konvertiert die vorhandene Azure-VM, um die günstigeren Preise über den Azure-Hybridvorteil zu nutzen.
-- Contoso verwendet [Azure Cost Management und Abrechnung](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview), um sicherzustellen, dass das von den IT-Führungskräften festgelegte Budget vom Unternehmen nicht überschritten wird.
+- Contoso verwendet [Azure Cost Management und Abrechnung](/azure/cost-management-billing/cost-management-billing-overview), um sicherzustellen, dass das von den IT-Führungskräften festgelegte Budget vom Unternehmen nicht überschritten wird.
 
 ## <a name="conclusion"></a>Zusammenfassung
 

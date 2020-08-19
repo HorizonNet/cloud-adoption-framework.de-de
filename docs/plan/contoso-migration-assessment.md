@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: 500cf5558f69281c1a5e29fda57d84ece7c07677
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 24557e154d5c30dd3755a4c8b7c0b8d82040883c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194152"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574481"
 ---
 <!-- docsTest:disable TODO -->
 
@@ -72,9 +72,9 @@ Contoso nutzt Microsoft-Tools für seine Migrationsbewertung. Die Tools sind an 
 
 | Technologie | BESCHREIBUNG | Kosten |
 | --- | --- | --- |
-| [Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso nutzt den Datenmigrations-Assistenten, um Kompatibilitätsprobleme zu bewerten und zu erkennen, die ggf. die Datenbankfunktionalität des Unternehmens in Azure beeinträchtigen können. Mit dem Datenmigrations-Assistenten wird die Featureparität zwischen SQL-Quellen und -Zielen bewertet. Er stellt Empfehlungen zu Verbesserungen der Leistung und Zuverlässigkeit bereit. | Der Datenmigrations-Assistent ist ein kostenloses Tool, das heruntergeladen werden kann. |
-| [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) | Contoso nutzt den Azure Migrate-Dienst, um seine VMware-VMs zu bewerten. Azure Migrate bewertet die Eignung der Computer für die Migration. Der Dienst stellt Schätzungen zur Größe und zu den Kosten für die Ausführung in Azure bereit. | Azure Migrate ist ohne Aufpreis erhältlich. Es können jedoch durch die Tools (Originalanbieter oder ISV), die Sie zur Bewertung und Migration verwenden, Gebühren anfallen. Weitere Informationen zu den Preisen von Azure Migrate finden Sie [hier](https://azure.microsoft.com/pricing/details/azure-migrate).  |
-| [Dienstzuordnung](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-service-map) | Für Azure Migrate wird eine Dienstzuordnung verwendet, um Abhängigkeiten zwischen Computern anzuzeigen, die das Unternehmen migrieren möchte. | Die Dienstzuordnung ist Teil von Azure Monitor-Protokollen. Derzeit kann Contoso die Dienstzuordnung 180 Tage lang nutzen, ohne dass Gebühren anfallen. |
+| [Data Migration Assistant](/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso nutzt den Datenmigrations-Assistenten, um Kompatibilitätsprobleme zu bewerten und zu erkennen, die ggf. die Datenbankfunktionalität des Unternehmens in Azure beeinträchtigen können. Mit dem Datenmigrations-Assistenten wird die Featureparität zwischen SQL-Quellen und -Zielen bewertet. Er stellt Empfehlungen zu Verbesserungen der Leistung und Zuverlässigkeit bereit. | Der Datenmigrations-Assistent ist ein kostenloses Tool, das heruntergeladen werden kann. |
+| [Azure Migrate](/azure/migrate/migrate-services-overview) | Contoso nutzt den Azure Migrate-Dienst, um seine VMware-VMs zu bewerten. Azure Migrate bewertet die Eignung der Computer für die Migration. Der Dienst stellt Schätzungen zur Größe und zu den Kosten für die Ausführung in Azure bereit. | Azure Migrate ist ohne Aufpreis erhältlich. Es können jedoch durch die Tools (Originalanbieter oder ISV), die Sie zur Bewertung und Migration verwenden, Gebühren anfallen. Weitere Informationen zu den Preisen von Azure Migrate finden Sie [hier](https://azure.microsoft.com/pricing/details/azure-migrate).  |
+| [Dienstzuordnung](/azure/operations-management-suite/operations-management-suite-service-map) | Für Azure Migrate wird eine Dienstzuordnung verwendet, um Abhängigkeiten zwischen Computern anzuzeigen, die das Unternehmen migrieren möchte. | Die Dienstzuordnung ist Teil von Azure Monitor-Protokollen. Derzeit kann Contoso die Dienstzuordnung 180 Tage lang nutzen, ohne dass Gebühren anfallen. |
 
 In diesem Szenario lädt Contoso den Datenmigrations-Assistenten herunter und führt ihn aus, um die lokale SQL Server-Datenbank für seine Reise-App zu bewerten. Contoso verwendet Azure Migrate mit Zuordnung von Abhängigkeiten, um die App-VMs zu bewerten, bevor die Migration zu Azure migriert wird.
 
@@ -109,8 +109,8 @@ Contoso und andere Benutzer müssen für diese Bewertung die folgenden Vorausset
 - Mindestens zwei lokale VMware-VMs (mit Ausführung einer SQL Server-Datenbank auf einer VM).
 - Berechtigungen zum Installieren von Azure Migrate-Agents auf jeder VM.
 - Die VMs sollten über eine direkte Internetverbindung verfügen.
-  - Sie können den Internetzugriff auf die [erforderlichen URLs](https://docs.microsoft.com/azure/migrate/concepts-collector) beschränken.
-  - Wenn Ihre virtuellen Computer nicht mit dem Internet verbunden sind, muss das Azure [Log Analytics-Gateway](https://docs.microsoft.com/azure/azure-monitor/platform/gateway) darauf installiert sein, und Agent-Datenverkehr muss damit weitergeleitet werden.
+  - Sie können den Internetzugriff auf die [erforderlichen URLs](/azure/migrate/concepts-collector) beschränken.
+  - Wenn Ihre virtuellen Computer nicht mit dem Internet verbunden sind, muss das Azure [Log Analytics-Gateway](/azure/azure-monitor/platform/gateway) darauf installiert sein, und Agent-Datenverkehr muss damit weitergeleitet werden.
 - Der vollqualifizierte Domänenname (Fully Qualified Domain Name, FQDN) des virtuellen Computers, auf dem die SQL Server-Instanz ausgeführt wird, für die Datenbankbewertung.
 - Für die Windows Firewall auf der SQL Server-VM sollten externe Verbindungen über TCP-Port 1433 (Standard) zugelassen sein. Dieses Setup ermöglicht die Verbindungsherstellung für den Datenmigrations-Assistenten.
 
@@ -193,7 +193,7 @@ Die Ergebnisse werden angezeigt, sobald sie verfügbar sind. Wenn Contoso Proble
     ![Datenmigrations-Assistent: Bericht mit Featureempfehlungen](../migrate/azure-best-practices/media/contoso-migration-assessment/dma-assessment-6.png)
 
     > [!NOTE]
-    > Contoso sollte [Transparent Data Encryption für alle SQL Server-Datenbanken aktivieren](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017). Dies ist noch wichtiger, wenn sich eine Datenbank in der Cloud befindet, als wenn sie lokal gehostet wird. Transparent Data Encryption sollte erst nach der Migration aktiviert werden. Wenn Transparent Data Encryption bereits aktiviert ist, muss Contoso das Zertifikat bzw. den asymmetrischen Schlüssel in die `master`-Datenbank des Zielservers verschieben. Erfahren Sie, wie Sie [eine per Transparent Data Encryption geschützte Datenbank auf eine andere SQL Server-Instanz verschieben](https://docs.microsoft.com/sql/relational-databases/security/encryption/move-a-tde-protected-database-to-another-sql-server?view=sql-server-2017).
+    > Contoso sollte [Transparent Data Encryption für alle SQL Server-Datenbanken aktivieren](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017). Dies ist noch wichtiger, wenn sich eine Datenbank in der Cloud befindet, als wenn sie lokal gehostet wird. Transparent Data Encryption sollte erst nach der Migration aktiviert werden. Wenn Transparent Data Encryption bereits aktiviert ist, muss Contoso das Zertifikat bzw. den asymmetrischen Schlüssel in die `master`-Datenbank des Zielservers verschieben. Erfahren Sie, wie Sie [eine per Transparent Data Encryption geschützte Datenbank auf eine andere SQL Server-Instanz verschieben](/sql/relational-databases/security/encryption/move-a-tde-protected-database-to-another-sql-server?view=sql-server-2017).
 
 3. Contoso kann die Bewertung im JSON- oder CSV-Format exportieren.
 
@@ -201,8 +201,8 @@ Die Ergebnisse werden angezeigt, sobald sie verfügbar sind. Wenn Contoso Proble
 > Gehen Sie für umfangreichere Bewertungen wie folgt vor:
 >
 > - Führen Sie mehrere Bewertungen gleichzeitig durch, und zeigen Sie den Status der Bewertungen auf der Seite **Alle Bewertungen** an.
-> - Fassen Sie die Bewertungen in einer [SQL Server-Datenbank](https://docs.microsoft.com/sql/dma/dma-consolidatereports?view=ssdt-18vs2017) zusammen.
-> - Fassen Sie die Bewertungen in einem [Power BI-Bericht](https://docs.microsoft.com/sql/dma/dma-powerbiassesreport?view=ssdt-18vs2017) zusammen.
+> - Fassen Sie die Bewertungen in einer [SQL Server-Datenbank](/sql/dma/dma-consolidatereports?view=ssdt-18vs2017) zusammen.
+> - Fassen Sie die Bewertungen in einem [Power BI-Bericht](/sql/dma/dma-powerbiassesreport?view=ssdt-18vs2017) zusammen.
 
 ## <a name="step-3-prepare-for-vm-assessment-by-using-azure-migrate"></a>Schritt 3: Vorbereiten der VM-Bewertung mit Azure Migrate
 
@@ -223,7 +223,7 @@ Contoso vergewissert sich, dass es über Berechtigungen zum Erstellen einer VM p
 
 ### <a name="verify-ports"></a>Überprüfen der Ports
 
-Die Contoso-Bewertung verwendet Abhängigkeitszuordnung. Für die Abhängigkeitszuordnung muss ein Agent auf VMs installiert werden, auf die zugegriffen wird. Der Agent muss über den TCP-Port 443 jeder VM jeweils eine Verbindung mit Azure herstellen können. Informieren Sie sich über die [Verbindungsanforderungen](https://docs.microsoft.com/azure/log-analytics/log-analytics-concept-hybrid).
+Die Contoso-Bewertung verwendet Abhängigkeitszuordnung. Für die Abhängigkeitszuordnung muss ein Agent auf VMs installiert werden, auf die zugegriffen wird. Der Agent muss über den TCP-Port 443 jeder VM jeweils eine Verbindung mit Azure herstellen können. Informieren Sie sich über die [Verbindungsanforderungen](/azure/log-analytics/log-analytics-concept-hybrid).
 
 ## <a name="step-4-discover-vms"></a>Schritt 4: VMs ermitteln
 
@@ -285,7 +285,7 @@ Vor der Bereitstellung der VM überprüft Contoso, ob die OVA-Datei sicher ist:
 
     `C:\> CertUtil -HashFile C:\AzureMigrate\AzureMigrate.ova SHA256`
 
-3. Der generierte Hash sollte mit den Hashwerten übereinstimmen, die im Abschnitt [Überprüfen der Sicherheit](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#verify-security) des Tutorials [Bewerten von virtuellen VMware-Computern für die Migration](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware) aufgeführt sind.
+3. Der generierte Hash sollte mit den Hashwerten übereinstimmen, die im Abschnitt [Überprüfen der Sicherheit](/azure/migrate/tutorial-assess-vmware#verify-security) des Tutorials [Bewerten von virtuellen VMware-Computern für die Migration](/azure/migrate/tutorial-assess-vmware) aufgeführt sind.
 
 ### <a name="create-the-collector-appliance"></a>Erstellen der Collectorappliance
 
@@ -465,7 +465,7 @@ Contoso kann jetzt die Abhängigkeiten der Computer überprüfen, und eine Grupp
 
 2. Um die Bewertung anzuzeigen, wählt Contoso **Verwalten** > **Bewertungen**.
 
-Contoso verwendet die Standardeinstellungen für Bewertungen, aber Sie können die [Einstellungen auch anpassen](https://docs.microsoft.com/azure/migrate/how-to-modify-assessment).
+Contoso verwendet die Standardeinstellungen für Bewertungen, aber Sie können die [Einstellungen auch anpassen](/azure/migrate/how-to-modify-assessment).
 
 ### <a name="analyze-the-vm-assessment"></a>Analysieren der VM-Bewertung
 

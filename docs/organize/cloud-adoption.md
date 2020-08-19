@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: c2f030d594a3bdb3ef195252187ae3c033c06e27
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: a1e12ac1ca226d9605a1d5b296582636e9275303
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755812"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574294"
 ---
 # <a name="cloud-adoption-functions"></a>Cloudeinführungsfunktionen
 
@@ -35,10 +35,10 @@ Um eine optimale Zusammenarbeit und Effizienz zu erzielen, wird empfohlen, dass 
 
 ## <a name="preparation"></a>Vorbereitung
 
-- [Erstellen eines Azure-Kontos](https://docs.microsoft.com/learn/modules/create-an-azure-account): Der erste Schritt beim Verwenden von Azure ist, ein Konto zu erstellen.
-- [Azure-Portal](https://docs.microsoft.com/learn/modules/tour-azure-portal): Führen Sie die Tour durch die Features und Dienste im Azure-Portal durch, und passen Sie das Portal an.
-- [Einführung in Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure): Erste Schritte mit Azure. Erstellen und konfigurieren Sie Ihren ersten virtuellen Computer in der Cloud.
-- [Azure-Grundlagen](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer): Erfahren Sie mehr über Cloudkonzepte, deren Vorteile, vergleichen und kontrastieren Sie grundlegende Strategien, und entdecken Sie das breite Angebot der in Azure verfügbaren Dienste.
+- [Erstellen eines Azure-Kontos](/learn/modules/create-an-azure-account): Der erste Schritt beim Verwenden von Azure ist, ein Konto zu erstellen.
+- [Azure-Portal](/learn/modules/tour-azure-portal): Führen Sie die Tour durch die Features und Dienste im Azure-Portal durch, und passen Sie das Portal an.
+- [Einführung in Azure](/learn/modules/welcome-to-azure): Erste Schritte mit Azure. Erstellen und konfigurieren Sie Ihren ersten virtuellen Computer in der Cloud.
+- [Azure-Grundlagen](/learn/paths/azure-for-the-data-engineer): Erfahren Sie mehr über Cloudkonzepte, deren Vorteile, vergleichen und kontrastieren Sie grundlegende Strategien, und entdecken Sie das breite Angebot der in Azure verfügbaren Dienste.
 - Sehen Sie sich die [Migrationsmethodik](../migrate/index.md) an.
 
 ## <a name="minimum-scope"></a>Mindestumfang

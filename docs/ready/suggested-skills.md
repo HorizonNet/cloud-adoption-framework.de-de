@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: dc08d48310b2b574f66c82d6cf14a19de34ce3a6
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: c4f8e3cb34f901699ebfa5506fe9e657a71dde6c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86478137"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88575093"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>Pfad für die Qualifikationsbereitschaft während der Phase „Bereitschaft“ eines Migrationspfads
 
@@ -29,16 +29,16 @@ Abhängig von den Motivationen und Geschäftsergebnissen, die mit einer Cloudein
 
 Während der Vorbereitungsphase werden die technischen Mitarbeiter aufgefordert, eine Migrationslandezone zu schaffen, die in der Lage ist, Workloads, die in die Cloud migriert wurden, zu hosten, zu betreiben und zu verwalten. Die Entwicklung der erforderlichen Qualifikationen kann mit den folgenden Lernpfaden beschleunigt werden:
 
-- [Erstellen eines Azure-Kontos](https://docs.microsoft.com/learn/modules/create-an-azure-account): Der erste Schritt beim Verwenden von Azure ist, ein Konto zu erstellen. Ihr Konto enthält die Azure-Dienste, die Sie bereitstellen, und behandelt Ihre persönlichen Einstellungen wie Identität, Abrechnung und Voreinstellungen.
-- [Azure-Portal](https://docs.microsoft.com/learn/modules/tour-azure-portal): Führen Sie die Tour durch die Features und Dienste im Azure-Portal durch, und passen Sie das Portal an.
-- [Einführung in Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure): Erste Schritte mit Azure mit Erstellen und Konfigurieren Ihres ersten virtuellen Computers in der Cloud.
-- [Sicherheit, Verantwortung und Vertrauenswürdigkeit in Azure](https://docs.microsoft.com/learn/modules/intro-to-security-in-azure): Erläutern der grundlegenden Konzepte zum Schützen Ihrer Infrastruktur und Daten, wenn Sie in der Cloud arbeiten. Verstehen, wo Ihre Zuständigkeiten liegen, und was Azure Ihnen abnimmt.
-- [Verwalten von Ressourcen in Azure](https://docs.microsoft.com/learn/paths/manage-resources-in-azure): Es wird beschrieben, wie Sie die Azure-Befehlszeile und das Webportal verwenden, um cloudbasierte Ressourcen zu erstellen, zu verwalten und zu steuern.
-- [Erstellen einer VM](https://docs.microsoft.com/learn/modules/create-windows-virtual-machine-in-azure): Erstellen eines virtuellen Computers mit dem Azure-Portal.
-- [Azure-Netzwerke](https://docs.microsoft.com/learn/modules/intro-to-azure-networking): Informationen über die Grundlagen von Azure-Netzwerken und wie Azure-Netzwerktechnik die Resilienz verbessern und die Latenz verringern kann.
-- [Computeoptionen in Azure](https://docs.microsoft.com/learn/modules/intro-to-azure-compute): Informationen über die Azure-Computedienste.
-- [Schützen von Ressourcen mit der rollenbasierten Zugriffssteuerung (Role-Based Access Control, RBAC)](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac): Verwenden von RBAC zum Sichern von Ressourcen.
-- [Datenspeicheroptionen](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure): Vorteile des Azure-Datenspeichers.
+- [Erstellen eines Azure-Kontos](/learn/modules/create-an-azure-account): Der erste Schritt beim Verwenden von Azure ist, ein Konto zu erstellen. Ihr Konto enthält die Azure-Dienste, die Sie bereitstellen, und behandelt Ihre persönlichen Einstellungen wie Identität, Abrechnung und Voreinstellungen.
+- [Azure-Portal](/learn/modules/tour-azure-portal): Führen Sie die Tour durch die Features und Dienste im Azure-Portal durch, und passen Sie das Portal an.
+- [Einführung in Azure](/learn/modules/welcome-to-azure): Erste Schritte mit Azure mit Erstellen und Konfigurieren Ihres ersten virtuellen Computers in der Cloud.
+- [Sicherheit, Verantwortung und Vertrauenswürdigkeit in Azure](/learn/modules/intro-to-security-in-azure): Erläutern der grundlegenden Konzepte zum Schützen Ihrer Infrastruktur und Daten, wenn Sie in der Cloud arbeiten. Verstehen, wo Ihre Zuständigkeiten liegen, und was Azure Ihnen abnimmt.
+- [Verwalten von Ressourcen in Azure](/learn/paths/manage-resources-in-azure): Es wird beschrieben, wie Sie die Azure-Befehlszeile und das Webportal verwenden, um cloudbasierte Ressourcen zu erstellen, zu verwalten und zu steuern.
+- [Erstellen einer VM](/learn/modules/create-windows-virtual-machine-in-azure): Erstellen eines virtuellen Computers mit dem Azure-Portal.
+- [Azure-Netzwerke](/learn/modules/intro-to-azure-networking): Informationen über die Grundlagen von Azure-Netzwerken und wie Azure-Netzwerktechnik die Resilienz verbessern und die Latenz verringern kann.
+- [Computeoptionen in Azure](/learn/modules/intro-to-azure-compute): Informationen über die Azure-Computedienste.
+- [Schützen von Ressourcen mit der rollenbasierten Zugriffssteuerung (Role-Based Access Control, RBAC)](/learn/modules/secure-azure-resources-with-rbac): Verwenden von RBAC zum Sichern von Ressourcen.
+- [Datenspeicheroptionen](/learn/modules/intro-to-data-in-azure): Vorteile des Azure-Datenspeichers.
 
 Während der Phase „Bereitschaft“ werden Architekten aufgefordert, Lösungen zu entwickeln, die alle Azure-Umgebungen umfassen. Die folgenden qualifizierenden Ressourcen können Architekten auf diese Aufgaben vorbereiten:
 
@@ -64,16 +64,16 @@ Microsoft Learn ist ein neuer Lernansatz. Die Bereitschaft zu den neuen Qualifik
 
 Die folgenden Beispiele sind einige angepasste Lernpfade auf Microsoft Learn, die sich an der Bereitschaftsmethodik des Framework für die Cloudeinführung (Cloud Adoption Framework) ausrichten:
 
-[Azure-Grundlagen](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer): Erfahren Sie mehr über Cloud-Konzepte wie Hochverfügbarkeit, Skalierbarkeit, Elastizität, Flexibilität, Fehlertoleranz und Notfallwiederherstellung. Informieren Sie sich über die Vorteile von Cloud Computing in Azure und wie Sie damit Zeit und Geld sparen können. Vergleichen Sie grundlegende Strategien für den Übergang zur Azure-Cloud und stellen Sie diese gegenüber. Untersuchen Sie den Umfang der in Azure verfügbaren Dienste, einschließlich Compute, Netzwerk, Speicher und Sicherheit.
+[Azure-Grundlagen](/learn/paths/azure-for-the-data-engineer): Erfahren Sie mehr über Cloud-Konzepte wie Hochverfügbarkeit, Skalierbarkeit, Elastizität, Flexibilität, Fehlertoleranz und Notfallwiederherstellung. Informieren Sie sich über die Vorteile von Cloud Computing in Azure und wie Sie damit Zeit und Geld sparen können. Vergleichen Sie grundlegende Strategien für den Übergang zur Azure-Cloud und stellen Sie diese gegenüber. Untersuchen Sie den Umfang der in Azure verfügbaren Dienste, einschließlich Compute, Netzwerk, Speicher und Sicherheit.
 
-[Verwalten von Ressourcen in Azure](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer): Es wird beschrieben, wie Sie die Azure-Befehlszeile und das Webportal verwenden, um cloudbasierte Ressourcen zu erstellen, zu verwalten und zu steuern.
+[Verwalten von Ressourcen in Azure](/learn/paths/azure-for-the-data-engineer): Es wird beschrieben, wie Sie die Azure-Befehlszeile und das Webportal verwenden, um cloudbasierte Ressourcen zu erstellen, zu verwalten und zu steuern.
 
-[Verwalten von Infrastrukturressourcen in Azure](https://docs.microsoft.com/learn/paths/administer-infrastructure-resources-in-azure): Erfahren Sie, wie Sie Ressourcen virtueller Computer erstellen, verwalten, schützen und skalieren.
+[Verwalten von Infrastrukturressourcen in Azure](/learn/paths/administer-infrastructure-resources-in-azure): Erfahren Sie, wie Sie Ressourcen virtueller Computer erstellen, verwalten, schützen und skalieren.
 
-[Speichern von Daten in Azure](https://docs.microsoft.com/learn/paths/store-data-in-azure): Azure bietet eine Vielzahl von Speichermöglichkeiten für unterschiedliche Datentypen: unstrukturierte, relationale, Archivdaten und viele mehr. Erfahren Sie mehr über die Grundlagen der Speicherverwaltung in Azure, darüber, wie Sie ein Speicherkonto erstellen und das richtige Modell für die Daten auswählen, die in der Cloud gespeichert werden sollen.
+[Speichern von Daten in Azure](/learn/paths/store-data-in-azure): Azure bietet eine Vielzahl von Speichermöglichkeiten für unterschiedliche Datentypen: unstrukturierte, relationale, Archivdaten und viele mehr. Erfahren Sie mehr über die Grundlagen der Speicherverwaltung in Azure, darüber, wie Sie ein Speicherkonto erstellen und das richtige Modell für die Daten auswählen, die in der Cloud gespeichert werden sollen.
 
-[Konstruieren großartiger Lösungen in Azure](https://docs.microsoft.com/learn/paths/architect-great-solutions-in-azure): Erfahren Sie, wie Sie in Azure sichere, skalierbare und leistungsstarke Lösungen entwerfen und erstellen, indem Sie die Grundprinzipien jeder guten Architektur untersuchen.
+[Konstruieren großartiger Lösungen in Azure](/learn/paths/architect-great-solutions-in-azure): Erfahren Sie, wie Sie in Azure sichere, skalierbare und leistungsstarke Lösungen entwerfen und erstellen, indem Sie die Grundprinzipien jeder guten Architektur untersuchen.
 
 ## <a name="learn-more"></a>Weitere Informationen
 
-Weitere Lernpfade finden Sie im [Microsoft Learn-Katalog](https://docs.microsoft.com/learn/browse). Verwenden Sie den Filter **Rollen**, um Lernpfade an ihrer Rolle auszurichten.
+Weitere Lernpfade finden Sie im [Microsoft Learn-Katalog](/learn/browse). Verwenden Sie den Filter **Rollen**, um Lernpfade an ihrer Rolle auszurichten.

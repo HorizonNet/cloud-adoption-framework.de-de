@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 81313b96e11b58d13c0052a48b066dfb992c8216
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: 4e607d9374e2b8bffb209cbb3bddecca337ad8af
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86233341"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574634"
 ---
 <!-- cSpell:ignore ITSM TOGAF -->
 
@@ -103,7 +103,7 @@ Das Cloudeinführungsteam stellt in einem einzelnen Sprint oder einer Iteration 
 
 ### <a name="large-or-complex-sprint-structures"></a>Strukturen für große oder komplexe Sprints
 
-Bei einer kleinen Migration mit einem eigenständigen Migrationsteam kann ein einzelner Sprint alle vier Phasen der Migration für eine einzelne Workload umfassen (_Bewerten_, _Migrieren_, _Optimieren_ sowie _Schützen und Verwalten_). Häufiger wird jedoch jeder dieser Prozesse von mehreren Teams mit unterschiedlichen Arbeitselementen für zahlreiche Sprints ausgeführt. Je nach Art der Aufgabe, Aufwand und Rollen können diese Sprints unterschiedliche Formen annehmen.
+Bei einer kleinen Migration mit einem eigenständigen Migrationsteam kann ein einzelner Sprint alle vier Phasen der Migration für eine einzelne Workload umfassen (*Bewerten*, *Migrieren*, *Optimieren* sowie *Schützen und Verwalten*). Häufiger wird jedoch jeder dieser Prozesse von mehreren Teams mit unterschiedlichen Arbeitselementen für zahlreiche Sprints ausgeführt. Je nach Art der Aufgabe, Aufwand und Rollen können diese Sprints unterschiedliche Formen annehmen.
 
 - **Migrationsfactory:** Umfangreiche Migrationsvorgänge erfordern in einigen Fällen einen Ansatz, der einer Factory im Ausführungsmodell ähnelt. Bei diesem Modell wird den verschiedenen Teams die Ausführung eines spezifischen Migrationsprozesses (oder einer Teilmenge des Prozesses) zugeordnet. Nach Abschluss des Vorgangs wird das Ergebnis des Sprints eines Teams in das Backlog des nächsten Teams übernommen. Dies ist ein effizienter Ansatz für umfangreiche Migrationsvorgänge für das Rehosting vieler großer Workloads mit Tausenden virtuellen Computern, die die Phasen Bewertung, Architektur, Korrektur und Migration durchlaufen. Damit dieser Ansatz funktioniert, ist jedoch unbedingt eine neue homogene Umgebung mit optimierten Change Management- und Genehmigungsprozessen erforderlich.
 - **Migrationswellen:** Eine weitere Möglichkeit, die auch bei großen Migrationsvorgängen funktioniert, ist ein Wellenmodell. Bei diesem Modell ist die Arbeitsaufteilung nicht annähernd so klar. Die Teams übernehmen selbst die Ausführung von Migrationsprozessen für einzelne Workloads. Damit ändert sich jedoch die Art jedes Sprints. In einem Sprint kann das Team die Aufgaben für die Bewertung und Architektur abschließen. In einem weiteren Sprint könnte es den Migrationsvorgang beenden. Der Schwerpunkt eines weiteren Sprints könnte auf der Optimierung und dem Produktionsrelease liegen. Bei diesem Ansatz kann ein Kernteam die Übersicht über alle Workloads und die erforderlichen Prozesse behalten. Wenn Sie diesen Ansatz verfolgen, könnten die Vielfalt der Fähigkeiten und die unterschiedlichen Kontexte möglicherweise die Geschwindigkeit des Teams und damit den gesamten Migrationsprozess verlangsamen. Darüber hinaus können Hürden bei Genehmigungszyklen zu beträchtlichen Verzögerungen führen. Es ist bei diesem Modell wichtig, die Optionen im Releasebacklog im Blick zu behalten, damit das Team auch in Sperrzeiten weiterarbeitet. Außerdem ist es wichtig, die Teammitglieder untereinander zu schulen und sicherzustellen, dass die Fähigkeiten auch für den jeweiligen Sprint angemessen sind.

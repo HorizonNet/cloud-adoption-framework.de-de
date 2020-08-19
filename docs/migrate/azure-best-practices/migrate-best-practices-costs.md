@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b22f93d4251f03c87ecdeb6dbef8ea932f48476f
-ms.sourcegitcommit: 580a6f66a0d0f3f5b755c68d757a84b2351a432f
+ms.openlocfilehash: 65bc254466009e0e5efbb458c6e4426fdad8a96b
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87473249"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574702"
 ---
 <!-- docsTest:ignore ARO -->
 
@@ -65,9 +65,9 @@ Um eine Prognose für Ihre monatliche Rechnung für migrierte Workloads aufzuste
 **Weitere Informationen**:
 
 - [Verwenden](https://azure.microsoft.com/pricing/calculator) des Azure-Preisrechners.
-- Sehen Sie sich die [Übersicht zu Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) an.
-- [Lesen von Informationen zu](https://docs.microsoft.com/azure/migrate/concepts-assessment-calculation) Azure Migrate-Bewertungen.
-- Erfahren Sie mehr über [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview).
+- Sehen Sie sich die [Übersicht zu Azure Migrate](/azure/migrate/migrate-services-overview) an.
+- [Lesen von Informationen zu](/azure/migrate/concepts-assessment-calculation) Azure Migrate-Bewertungen.
+- Erfahren Sie mehr über [Azure Database Migration Service](/azure/dms/dms-overview).
 
 ## <a name="best-practice-right-size-vms"></a>Bewährte Methode: Richtige Größe von virtuellen Computern anpassen
 
@@ -88,9 +88,9 @@ Sie können eine Reihe von Optionen auswählen, wenn Sie virtuelle Azure-Compute
 
 **Weitere Informationen**:
 
-- Erfahren Sie mehr zu [VM-Typen und -Größenanpassung](https://docs.microsoft.com/azure/virtual-machines/windows/sizes) sowie zur Zuordnung von Größen zu Typen.
-- Planen Sie [Größen für VM-Instanzen](https://docs.microsoft.com/azure/cloud-services/cloud-services-sizes-specs).
-- Arbeiten Sie eine [Beispielbewertung für das fiktive Unternehmen Contoso](https://docs.microsoft.com/azure/migrate/contoso-migration-assessment) durch.
+- Erfahren Sie mehr zu [VM-Typen und -Größenanpassung](/azure/virtual-machines/windows/sizes) sowie zur Zuordnung von Größen zu Typen.
+- Planen Sie [Größen für VM-Instanzen](/azure/cloud-services/cloud-services-sizes-specs).
+- Arbeiten Sie eine [Beispielbewertung für das fiktive Unternehmen Contoso](/azure/migrate/contoso-migration-assessment) durch.
 
 ## <a name="best-practice-select-the-right-storage"></a>Bewährte Methode: Den richtigen Speicher auswählen
 
@@ -147,12 +147,12 @@ Speicherkonten können verschiedene Arten von Redundanz für Resilienz und Hochv
 **Weitere Informationen**:
 
 - Sehen Sie sich die [Preise für Azure Storage](https://azure.microsoft.com/pricing/details/storage) an.
-- Informieren Sie sich über [Azure Import/Export](https://docs.microsoft.com/azure/storage/common/storage-import-export-service).
-- Vergleichen Sie [Datentypen für Blobs, Dateien und Datenträgerspeicher](https://docs.microsoft.com/azure/storage/common/storage-decide-blobs-files-disks).
-- Informieren Sie sich genauer zu [Zugriffsebenen](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers).
-- Erfahren Sie mehr über [verschiedene Typen von Speicherkonten](https://docs.microsoft.com/azure/storage/common/storage-account-overview).
-- Informieren Sie sich zu [Azure Storage-Redundanz](https://docs.microsoft.com/azure/storage/common/storage-redundancy), einschließlich LRS, ZRS, GRS und GRS mit Lesezugriff.
-- Weitere Informationen zu [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction).
+- Informieren Sie sich über [Azure Import/Export](/azure/storage/common/storage-import-export-service).
+- Vergleichen Sie [Datentypen für Blobs, Dateien und Datenträgerspeicher](/azure/storage/common/storage-decide-blobs-files-disks).
+- Informieren Sie sich genauer zu [Zugriffsebenen](/azure/storage/blobs/storage-blob-storage-tiers).
+- Erfahren Sie mehr über [verschiedene Typen von Speicherkonten](/azure/storage/common/storage-account-overview).
+- Informieren Sie sich zu [Azure Storage-Redundanz](/azure/storage/common/storage-redundancy), einschließlich LRS, ZRS, GRS und GRS mit Lesezugriff.
+- Weitere Informationen zu [Azure Files](/azure/storage/files/storage-files-introduction).
 
 ## <a name="best-practice-take-advantage-of-azure-hybrid-benefit"></a>Bewährte Methode: Nutzen von Azure-Hybridvorteil
 
@@ -162,7 +162,7 @@ Ein Portfolio, mit dem lokale Microsoft-Software mit Azure integriert wird, kann
 
 - [Werfen Sie einen Blick auf](https://azure.microsoft.com/pricing/hybrid-benefit) den Einsparungsrechner für Azure-Hybridvorteil.
 - Weitere Informationen zu [Azure-Hybridvorteil für Windows Server](https://azure.microsoft.com/pricing/hybrid-benefit).
-- Sehen Sie sich die [Preisinformationen für virtuelle Azure-Computer mit SQL Server](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance) an.
+- Sehen Sie sich die [Preisinformationen für virtuelle Azure-Computer mit SQL Server](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance) an.
 
 ## <a name="best-practice-use-reserved-vm-instances"></a>Bewährte Methode: Reservierte VM-Instanzen verwenden
 
@@ -180,9 +180,9 @@ _Abbildung 3: Azure Reserved VM Instances_
 
 **Weitere Informationen**:
 
-- Informieren Sie sich zu [Azure-Reservierungen](https://docs.microsoft.com/azure/cost-management-billing/reservations/save-compute-costs-reservations).
+- Informieren Sie sich zu [Azure-Reservierungen](/azure/cost-management-billing/reservations/save-compute-costs-reservations).
 - Lesen Sie [Azure Reserved VM Instances: Häufig gestellte Fragen](https://azure.microsoft.com/pricing/reserved-vm-instances/#faq)
-- Lesen Sie die [Preisinformationen für Azure-VMs mit SQL Server](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance).
+- Lesen Sie die [Preisinformationen für Azure-VMs mit SQL Server](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-pricing-guidance).
 
 ## <a name="best-practice-aggregate-cloud-spending-across-subscriptions"></a>Bewährte Methode: Aggregieren der übergreifenden Cloudausgaben für Abonnements
 
@@ -192,9 +192,9 @@ Um dies zu erreichen, können Sie Azure Cost Management und Abrechnung-APIs verw
 
 **Weitere Informationen**:
 
-- Lesen Sie die [Übersicht über Azure-Nutzungs-APIs](https://docs.microsoft.com/azure/billing/billing-consumption-api-overview).
-- Erfahren Sie mehr über das [Herstellen einer Verbindung mit Azure Consumption Insights in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-connect-azure-consumption-insights).
-- Informieren Sie sich darüber, wie Sie [den Zugriff auf Abrechnungsinformationen für Azure mithilfe der rollenbasierten Zugriffssteuerung (RBAC) verwalten](https://docs.microsoft.com/azure/billing/billing-manage-access).
+- Lesen Sie die [Übersicht über Azure-Nutzungs-APIs](/azure/billing/billing-consumption-api-overview).
+- Erfahren Sie mehr über das [Herstellen einer Verbindung mit Azure Consumption Insights in Power BI Desktop](/power-bi/desktop-connect-azure-consumption-insights).
+- Informieren Sie sich darüber, wie Sie [den Zugriff auf Abrechnungsinformationen für Azure mithilfe der rollenbasierten Zugriffssteuerung (RBAC) verwalten](/azure/billing/billing-manage-access).
 
 ## <a name="after-migration"></a>Nach der Migration
 
@@ -233,11 +233,11 @@ Mit Azure Cost Management und Abrechnung haben Sie folgende Möglichkeiten:
 
 **Weitere Informationen**:
 
-- Lesen Sie die [Übersicht zu Azure Cost Management und Abrechnung](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview).
-- Erfahren Sie, wie Sie [Cloudinvestitionen mit Azure Cost Management und Abrechnung optimieren](https://docs.microsoft.com/azure/cost-management-billing/costs/cost-mgt-best-practices).
-- Erfahren Sie mehr über [Berichte von Azure Cost Management und Abrechnung](https://docs.microsoft.com/azure/cost-management/use-reports).
-- Erhalten Sie ein [Tutorial zum Optimieren von Kosten mithilfe von Empfehlungen](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations).
-- Sehen Sie sich die [Azure Consumption-APIs](https://docs.microsoft.com/rest/api/consumption/budgets) an.
+- Lesen Sie die [Übersicht zu Azure Cost Management und Abrechnung](/azure/cost-management-billing/cost-management-billing-overview).
+- Erfahren Sie, wie Sie [Cloudinvestitionen mit Azure Cost Management und Abrechnung optimieren](/azure/cost-management-billing/costs/cost-mgt-best-practices).
+- Erfahren Sie mehr über [Berichte von Azure Cost Management und Abrechnung](/azure/cost-management/use-reports).
+- Erhalten Sie ein [Tutorial zum Optimieren von Kosten mithilfe von Empfehlungen](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations).
+- Sehen Sie sich die [Azure Consumption-APIs](/rest/api/consumption/budgets) an.
 
 ## <a name="best-practice-monitor-resource-utilization"></a>Bewährte Methode: Ressourcennutzung überwachen
 
@@ -252,9 +252,9 @@ Sie können die VM-Nutzung mithilfe von Microsoft-Tools überwachen, z. B. Azur
 
 **Weitere Informationen**:
 
-- Lesen Sie Übersichten über [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) und [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview).
-- [Erhalten Sie Azure Advisor-Empfehlungen zu Kosten](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations).
-- Erfahren Sie, wie Sie [Kosten anhand von Empfehlungen optimieren](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations) und [unerwartete Gebühren vermeiden](https://docs.microsoft.com/azure/billing/billing-getting-started).
+- Lesen Sie Übersichten über [Azure Monitor](/azure/azure-monitor/overview) und [Azure Advisor](/azure/advisor/advisor-overview).
+- [Erhalten Sie Azure Advisor-Empfehlungen zu Kosten](/azure/advisor/advisor-cost-recommendations).
+- Erfahren Sie, wie Sie [Kosten anhand von Empfehlungen optimieren](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations) und [unerwartete Gebühren vermeiden](/azure/billing/billing-getting-started).
 - Erfahren Sie mehr über das [Toolkit zur Azure-Ressourcenoptimierung (ARO)](https://github.com/azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit).
 
 ## <a name="best-practice-implement-resource-group-budgets"></a>Bewährte Methode: Budgets für Ressourcengruppen implementieren
@@ -263,8 +263,8 @@ Häufig kann es nützlich sein, Kostengrenzen an Ressourcengruppen auszurichten.
 
 **Weitere Informationen**:
 
-- Informieren Sie sich über das [Verwalten von Kosten mit Azure-Budgets](https://docs.microsoft.com/azure/billing/billing-cost-management-budget-scenario).
-- Sehen Sie sich ein Tutorial zum [Erstellen und Verwalten eines Azure-Budgets](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets) an.
+- Informieren Sie sich über das [Verwalten von Kosten mit Azure-Budgets](/azure/billing/billing-cost-management-budget-scenario).
+- Sehen Sie sich ein Tutorial zum [Erstellen und Verwalten eines Azure-Budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets) an.
 
 ## <a name="best-practice-optimize-azure-monitor-retention"></a>Bewährte Methode: Azure Monitor-Aufbewahrung optimieren
 
@@ -278,7 +278,7 @@ Wenn Sie Ressourcen in Azure verschieben und die Diagnoseprotokollierung für si
 
 **Weitere Informationen**:
 
-- Erfahren Sie mehr über das [Überwachen der Nutzung und der geschätzten Kosten](https://docs.microsoft.com/azure/azure-monitor/platform/usage-estimated-costs).
+- Erfahren Sie mehr über das [Überwachen der Nutzung und der geschätzten Kosten](/azure/azure-monitor/platform/usage-estimated-costs).
 
 ## <a name="best-practice-optimize-storage"></a>Bewährte Methode: Speicher optimieren
 
@@ -291,8 +291,8 @@ Das Identifizieren und Verschieben veralteter Daten in kostengünstigere Speiche
 
 **Weitere Informationen**:
 
-- Informieren Sie sich genauer zu [Zugriffsebenen](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers).
-- Lesen Sie die [Übersicht über StorSimple](https://docs.microsoft.com/azure/azure-monitor/overview).
+- Informieren Sie sich genauer zu [Zugriffsebenen](/azure/storage/blobs/storage-blob-storage-tiers).
+- Lesen Sie die [Übersicht über StorSimple](/azure/azure-monitor/overview).
 - Sehen Sie sich die [Preise für StorSimple](https://azure.microsoft.com/pricing/details/storsimple) an.
 
 ## <a name="best-practice-automate-vm-optimization"></a>Bewährte Methode: VM-Optimierung automatisieren
@@ -303,10 +303,10 @@ Sie können einen virtuellen Computer mit Azure Automation, VM-Skalierungsgruppe
 
 **Weitere Informationen**:
 
-- Erfahren Sie mehr über die [vertikale automatische Skalierung](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-vertical-scale-reprovision).
+- Erfahren Sie mehr über die [vertikale automatische Skalierung](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-vertical-scale-reprovision).
 - [Planen des automatischen Starts einer VM](https://azure.microsoft.com/updates/azure-devtest-labs-schedule-vm-auto-start).
-- Informieren Sie sich über das [Starten oder Beenden von VMs außerhalb von Nutzungszeiten in Azure Automation](https://docs.microsoft.com/azure/automation/automation-solution-vm-management).
-- Informieren Sie sich genauer zu [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) und dem [Toolkit zur Azure-Ressourcenoptimierung (ARO)](https://github.com/azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit).
+- Informieren Sie sich über das [Starten oder Beenden von VMs außerhalb von Nutzungszeiten in Azure Automation](/azure/automation/automation-solution-vm-management).
+- Informieren Sie sich genauer zu [Azure Advisor](/azure/advisor/advisor-overview) und dem [Toolkit zur Azure-Ressourcenoptimierung (ARO)](https://github.com/azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit).
 
 ## <a name="best-practices-use-azure-logic-apps-and-runbooks-with-budgets-api"></a>Bewährten Methoden: Verwenden von Azure Logic Apps und Runbooks mit der API für Budgets
 
@@ -316,8 +316,8 @@ Mithilfe der Azure-Ressourcennutzungs- und -Gebührenkarten-APIs können Sie Ihr
 
 **Weitere Informationen**:
 
-- Informieren Sie sich über die [Azure-API für Budgets](https://docs.microsoft.com/rest/api/consumption/budgets).
-- Gewinnen Sie Erkenntnisse zur Nutzung mit den [Azure-Abrechnungs-APIs](https://docs.microsoft.com/azure/billing/billing-usage-rate-card-overview).
+- Informieren Sie sich über die [Azure-API für Budgets](/rest/api/consumption/budgets).
+- Gewinnen Sie Erkenntnisse zur Nutzung mit den [Azure-Abrechnungs-APIs](/azure/billing/billing-usage-rate-card-overview).
 
 ## <a name="best-practice-implement-serverless-technologies"></a>Bewährte Methode: Serverlose Technologien implementieren
 

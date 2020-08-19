@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 237757b19f8289a6659d3a9c5a6275bbb4d4d7d4
-ms.sourcegitcommit: 9662234674e663bc7d4bc134d303520cb146bd95
+ms.openlocfilehash: 1cf17ea35f313c400b5a08cd91dd0b968da9ece1
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87560473"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574872"
 ---
 <!-- docsTest:ignore "Bulk Migration" "Cold Migration" -->
 
@@ -23,7 +23,7 @@ Wenn das fiktive Unternehmen Contoso seine virtuellen VMware-Computer (VMs) aus 
 
 | Migrationsoptionen | Ergebnis |
 | --- | --- |
-| [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/) | <li>[Bewerten](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware) und [Migrieren](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware) lokaler VMs <li>Ausführen von Workloads per Azure IaaS (Infrastructure-as-a-Service) <li>Verwalten von VMs mit [Azure Resource Manager](https://azure.microsoft.com/features/resource-manager/) |
+| [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/) | <li>[Bewerten](/azure/migrate/tutorial-assess-vmware) und [Migrieren](/azure/migrate/tutorial-migrate-vmware) lokaler VMs <li>Ausführen von Workloads per Azure IaaS (Infrastructure-as-a-Service) <li>Verwalten von VMs mit [Azure Resource Manager](https://azure.microsoft.com/features/resource-manager/) |
 | [Azure VMware Solution](https://azure.microsoft.com/overview/azure-vmware) | <li>Verwenden der VMware HCX-Lösung (Hybrid Cloud Extension) oder von vMotion zum Verschieben von lokalen VMs <li>Ausführen nativer VMware-Workloads auf Azure-Bare-Metal-Hardware <li>Verwalten von VMs mit vSphere |
 
 In diesem Artikel wird Azure VMware Solution von Contoso verwendet, um eine private Cloud in Azure zu erstellen, die nativen Zugriff auf VMware vCenter sowie andere von VMware unterstützte Tools für die Workloadmigration hat. Contoso kann Azure VMware Solution in dem sicheren Wissen verwenden, dass es sich um ein Erstanbieterangebot von Microsoft handelt, das auf VMware basiert.
@@ -76,8 +76,8 @@ Aktuelle Features der Architektur von Contoso:
 
 Für die vorgeschlagene Architektur führt Contoso die folgende Schritte aus:
 
-- Bereitstellen einer [privaten Azure VMware Solution-Cloud](https://docs.microsoft.com/azure/azure-vmware/concepts-private-clouds-clusters) in der Azure-Region „USA, Westen“
-- Herstellen einer Verbindung zwischen dem lokalen Rechenzentrum und dem in „USA, Westen“ ausgeführten Azure VMware Solution-Dienst mithilfe von virtuellen Netzwerken und [ExpressRoute](https://docs.microsoft.com/azure/azure-vmware/concepts-networking) mit Aktivierung von Global Reach
+- Bereitstellen einer [privaten Azure VMware Solution-Cloud](/azure/azure-vmware/concepts-private-clouds-clusters) in der Azure-Region „USA, Westen“
+- Herstellen einer Verbindung zwischen dem lokalen Rechenzentrum und dem in „USA, Westen“ ausgeführten Azure VMware Solution-Dienst mithilfe von virtuellen Netzwerken und [ExpressRoute](/azure/azure-vmware/concepts-networking) mit Aktivierung von Global Reach
 - Migrieren von VMs zu einer dedizierten Azure VMware Solution-Instanz mithilfe von [VMware Hybrid Cloud Extension (HCX)](https://docs.vmware.com/en/VMware-HCX/services/user-guide/GUID-D0CD0CC6-3802-42C9-9718-6DA5FEC246C6.html)
 
 ![Diagramm: Vorgeschlagene Architektur](./media/contoso-migration-vmware-to-azure/on-premises-stretched-network-expressroute.png)
@@ -123,16 +123,16 @@ Contoso muss sein Netzwerk planen, um Azure Virtual Network und die Konnektivit
 
 Diese Konnektivität wird über Azure ExpressRoute bereitgestellt und erfordert bestimmte Netzwerkadressbereiche und Firewallports, um die Dienste zu aktivieren. Diese Verbindung mit hoher Bandbreite und geringer Latenz ermöglicht Contoso den Zugriff auf Dienste, die unter seinem Azure-Abonnement aus der privaten Cloud von Azure VMware Solution ausgeführt werden.
 
-Contoso muss ein IP-Adressschema mit einem nicht überlappenden Adressraum für seine [virtuellen Netzwerke](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm) planen. Für das [ExpressRoute-Gateway](https://docs.microsoft.com/azure/expressroute/expressroute-about-virtual-network-gateways) muss das Unternehmen ein Gatewaysubnetz hinzufügen.
+Contoso muss ein IP-Adressschema mit einem nicht überlappenden Adressraum für seine [virtuellen Netzwerke](/azure/virtual-network/virtual-network-vnet-plan-design-arm) planen. Für das [ExpressRoute-Gateway](/azure/expressroute/expressroute-about-virtual-network-gateways) muss das Unternehmen ein Gatewaysubnetz hinzufügen.
 
-Die private Cloud von Azure VMware Solution wird über eine weitere Azure ExpressRoute-Verbindung mit dem virtuellen Azure-Netzwerk von Contoso verbunden. Der Global Reach-Dienst von ExpressRoute wird aktiviert, um eine [direkte Verbindung](https://docs.microsoft.com/azure/azure-vmware/concepts-networking#on-premises-interconnectivity) zwischen den lokalen VMs und den in der privaten Cloud von Azure VMware Solution ausgeführten VMs zuzulassen. Zum Aktivieren von Global Reach ist die ExpressRoute-Premium-SKU ist erforderlich.
+Die private Cloud von Azure VMware Solution wird über eine weitere Azure ExpressRoute-Verbindung mit dem virtuellen Azure-Netzwerk von Contoso verbunden. Der Global Reach-Dienst von ExpressRoute wird aktiviert, um eine [direkte Verbindung](/azure/azure-vmware/concepts-networking#on-premises-interconnectivity) zwischen den lokalen VMs und den in der privaten Cloud von Azure VMware Solution ausgeführten VMs zuzulassen. Zum Aktivieren von Global Reach ist die ExpressRoute-Premium-SKU ist erforderlich.
 
 ![Diagramm: ExpressRoute Global Reach mit Azure VMware Solution](./media/contoso-migration-vmware-to-azure/adjacency-overview-drawing-double.png)
 
 Für private Clouds von Azure VMware Solution ist mindestens ein CIDR-Netzwerkadressblock vom Typ `/22` für Subnetze erforderlich. Für die Verbindungsherstellung mit lokalen Umgebungen und virtuellen Netzwerken darf der Netzwerkadressblock keine Überlappung aufweisen.
 
 >[!NOTE]
-> Weitere Informationen zur Netzwerkplanung für Azure VMware Solution finden Sie unter [Netzwerkprüfliste für die Azure-VMware-Lösung (Azure VMware Solution, AVS)](https://docs.microsoft.com/azure/azure-vmware/tutorial-network-checklist/).
+> Weitere Informationen zur Netzwerkplanung für Azure VMware Solution finden Sie unter [Netzwerkprüfliste für die Azure-VMware-Lösung (Azure VMware Solution, AVS)](/azure/azure-vmware/tutorial-network-checklist/).
 
 ### <a name="step-2-create-an-azure-vmware-solution-private-cloud"></a>Schritt 2: Erstellen einer privaten Cloud von Azure VMware Solution
 
@@ -140,11 +140,11 @@ Nachdem die Planung für das Netzwerk und die IP-Adressen abgeschlossen ist, fü
 
 Eine private Cloud von Azure VMware Solution ist ein isoliertes softwaredefiniertes VMware-Rechenzentrum, das ESXi-Hosts, vCenter, vSAN und NSX unterstützt. Der Stapel wird auf dedizierten und isolierten Bare-Metal-Hardwareknoten in einer Azure-Region ausgeführt. Die anfängliche Bereitstellung für eine private Cloud von Azure VMware Solution muss mindestens drei Hosts umfassen. Später können nacheinander weitere Host hinzugefügt werden. Pro Cluster sind bis zu 16 Hosts möglich.
 
-Weitere Informationen finden Sie unter [Azure VMware Solution (Vorschau): Konzepte – Private Clouds und Cluster](https://docs.microsoft.com/azure/azure-vmware/concepts-private-clouds-clusters).
+Weitere Informationen finden Sie unter [Azure VMware Solution (Vorschau): Konzepte – Private Clouds und Cluster](/azure/azure-vmware/concepts-private-clouds-clusters).
 
 Private Clouds von Azure VMware Solution werden über das Azure VMware Solution-Portal verwaltet. Contoso verfügt über eine eigene vCenter Server-Instanz in einer eigenen Verwaltungsdomäne.
 
-Informationen zur Erstellung einer privaten Cloud von Azure VMware Solution finden Sie unter [Tutorial: Bereitstellen einer privaten AVS-Cloud in Azure](https://docs.microsoft.com/azure/azure-vmware/tutorial-create-private-cloud).
+Informationen zur Erstellung einer privaten Cloud von Azure VMware Solution finden Sie unter [Tutorial: Bereitstellen einer privaten AVS-Cloud in Azure](/azure/azure-vmware/tutorial-create-private-cloud).
 
 1. Zunächst registriert das Contoso-Team den Azure VMware Solution-Anbieter bei Azure, indem es den folgenden Befehl ausführt:
 
@@ -164,7 +164,7 @@ Informationen zur Erstellung einer privaten Cloud von Azure VMware Solution find
 
 Für eine private Cloud von Azure VMware Solution ist ein virtuelles Netzwerk erforderlich. Da Azure VMware Solution eine lokale vCenter-Instanz während der Vorschauphase nicht unterstützt, muss Contoso für die Integration in seine lokale Umgebung weitere Schritte ausführen. Indem eine ExpressRoute-Leitung und ein Gateway für virtuelle Netzwerke eingerichtet wird, stellt das Team für seine virtuellen Netzwerke eine Verbindung mit der privaten Cloud von Azure VMware Solution her.
 
-Weitere Informationen finden Sie unter [Tutorial: Konfigurieren des Netzwerks für Ihre private VMware-Cloud in Azure](https://docs.microsoft.com/azure/azure-vmware/tutorial-configure-networking).
+Weitere Informationen finden Sie unter [Tutorial: Konfigurieren des Netzwerks für Ihre private VMware-Cloud in Azure](/azure/azure-vmware/tutorial-configure-networking).
 
 1. Das Contoso-Team erstellt zunächst ein virtuelles Netzwerk mit einem Gatewaysubnetz.
 
@@ -183,7 +183,7 @@ Weitere Informationen finden Sie unter [Tutorial: Konfigurieren des Netzwerks f�
 
     ![Screenshot: Bereich „Verbindung hinzufügen“ zum Verbinden von ExpressRoute mit dem virtuellen Netzwerk](./media/contoso-migration-vmware-to-azure/add-connection.png)
 
-Weitere Informationen finden Sie unter [Tutorial: Hier erfahren Sie, wie Sie auf eine private AVS-Cloud (Azure VMware Solution, Azure-VMware-Lösung) zugreifen](https://docs.microsoft.com/azure/azure-vmware/tutorial-access-private-cloud).
+Weitere Informationen finden Sie unter [Tutorial: Hier erfahren Sie, wie Sie auf eine private AVS-Cloud (Azure VMware Solution, Azure-VMware-Lösung) zugreifen](/azure/azure-vmware/tutorial-access-private-cloud).
 
 ### <a name="step-4-migrate-by-using-vmware-hcx"></a>Schritt 4: Migrieren mit VMware HCX
 
@@ -192,13 +192,13 @@ Um VMware-VMs mithilfe von HCX zu Azure zu migrieren, muss das Contoso-Team die 
 - Installieren und Konfigurieren von VMware HCX
 - Durchführen der Migrationen zu Azure mit HCX
 
-Weitere Informationen finden Sie unter [Installieren von HCX für eine Azure-VMware-Lösung](https://docs.microsoft.com/azure/azure-vmware/hybrid-cloud-extension-installation).
+Weitere Informationen finden Sie unter [Installieren von HCX für eine Azure-VMware-Lösung](/azure/azure-vmware/hybrid-cloud-extension-installation).
 
 <!-- docsTest:ignore L2 -->
 
 #### <a name="install-and-configure-vmware-hcx-for-the-public-cloud"></a>Installieren und Konfigurieren von VMware HCX für die öffentliche Cloud
 
-[VMware HCX](https://cloud.vmware.com/vmware-hcx) ist ein VMware-Produkt, das Teil der Standardinstallation von Azure VMware Solution ist. Standardmäßig wird HCX Advanced installiert, kann aber auf HCX Enterprise aktualisiert werden, da zusätzliche Features und Funktionen erforderlich sind. 
+[VMware HCX](https://cloud.vmware.com/vmware-hcx) ist ein VMware-Produkt, das Teil der Standardinstallation von Azure VMware Solution ist. Standardmäßig wird HCX Advanced installiert, kann aber auf HCX Enterprise aktualisiert werden, da zusätzliche Features und Funktionen erforderlich sind.
 
 Azure VMware Solution automatisiert die Cloud Manager-Komponente von HCX in Azure VMware Solution. Der Dienst stellt die Aktivierungsschlüssel des Kunden sowie einen Downloadlink zur Connector-HCX-Appliance bereit, die lokal und in der vCenter-Domäne eines Kunden konfiguriert werden muss. Diese Elemente werden dann mit dem Cloudgerät von Azure VMware Solution gekoppelt, damit Kunden Dienste wie Migration und L2-Stretching nutzen können.
 
@@ -206,7 +206,7 @@ Azure VMware Solution automatisiert die Cloud Manager-Komponente von HCX in Azur
 
    ![Screenshot: Fenster „OVF-Vorlage bereitstellen“](./media/contoso-migration-vmware-to-azure/configure-template.png)
 
-   Informationen zur Installation und Konfiguration von HCX für Ihre private Cloud von Azure VMware Solution finden Sie unter [Installieren von HCX für eine Azure-VMware-Lösung](https://docs.microsoft.com/azure/azure-vmware/hybrid-cloud-extension-installation).
+   Informationen zur Installation und Konfiguration von HCX für Ihre private Cloud von Azure VMware Solution finden Sie unter [Installieren von HCX für eine Azure-VMware-Lösung](/azure/azure-vmware/hybrid-cloud-extension-installation).
 
 - Beim Konfigurieren von HCX hat das Team die Aktivierung der Migration und andere Optionen ausgewählt, z. B. Notfallwiederherstellung.
 
@@ -246,6 +246,8 @@ Bei dieser Migrationsmethode wird das VMware-NFC-Protokoll (Near-Field Communica
 Bei VMware HCX mit vMotion mit Replikationsunterstützung (Replication Assisted vMotion, RAV) sind die Vorteile der VMware HCX-Massenmigration, z. B. parallele Vorgänge, Resilienz und Zeitplanung, mit den Vorteilen der VMware HCX vMotion-Migration, z. B. keine Ausfallzeit bei der Migration des VM-Status, vereint.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
+
 Weitere technische Informationen zu VMware finden Sie in der Dokumentation unter:
+
 - [VMware HCX-Dokumentation](https://docs.vmware.com/en/VMware-HCX/index.html)
 - [Migrieren von virtuellen Computern per VMware HCX](https://docs.vmware.com/en/VMware-HCX/services/user-guide/GUID-D0CD0CC6-3802-42C9-9718-6DA5FEC246C6.html?hWord=N4IghgNiBcIBIGEAaACAtgSwOYCcwBcMB7AOxAF8g)

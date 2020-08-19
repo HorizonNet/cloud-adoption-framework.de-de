@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 666e74e440909901b51c9cfc580c879f3a85db75
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 9e7980b54d46f96399904152884d6ed5fe4ac4bc
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755335"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574277"
 ---
 <!--docsTest:ignore TVM -->
 
@@ -31,7 +31,7 @@ Die Statusverwaltung führt hierfür einen strukturierten Ansatz ein, wobei Folg
 - **Bedrohungs- und Sicherheitsrisikoverwaltung (TVM)** , um eine ganzheitliche Sicht der Angriffsfläche und des Risikos von Organisationen zu ermöglichen und diese in die Entscheidungsfindung zum Betrieb und Engineering zu integrieren.
 - **Ermitteln von Freigaberisiken:** Um die Exposition von Daten des unternehmerischen geistigen Eigentums in sowohl sanktionierten als auch nicht sanktionierten Clouddiensten zu verstehen.
 - **Verwaltung des Cloudsicherheitsstatus**, um Vorteile der Cloudinstrumentierung zu nutzen, um Sicherheitsverbesserungen zu überwachen und zu priorisieren.
-- **Technische Richtlinie:** Anwenden von Sicherungen, um die Standards und Richtlinien der Organisation auf technischen Systemen zu überwachen und dort zu erzwingen. Siehe Azure Policy und [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview).
+- **Technische Richtlinie:** Anwenden von Sicherungen, um die Standards und Richtlinien der Organisation auf technischen Systemen zu überwachen und dort zu erzwingen. Siehe Azure Policy und [Azure Blueprints](/azure/governance/blueprints/overview).
 - Systeme und Architekturen sowie spezifische Anwendungen zur **Bedrohungsmodellierung**.
 
 **Resultierende Disziplin:** Die Sicherheitsstatusverwaltung unterbricht viele Normen der Sicherheitsorganisation auf positive Weise mit diesen neuen Funktionen und kann Zuständigkeiten zwischen Rollen verlagern oder neue Rollen erzeugen.

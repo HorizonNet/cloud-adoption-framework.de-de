@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4e303d1e179d8ed6f90b5e823381cf8b31827df4
-ms.sourcegitcommit: 580a6f66a0d0f3f5b755c68d757a84b2351a432f
+ms.openlocfilehash: f38e8de88c38ef27ca6148bd5ff61c1dfdbc1b7e
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87472875"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574804"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategie für Governance bzw. Compliance
 
@@ -28,7 +28,7 @@ Die Konfiguration der grundlegenden Azure-Umgebung kann sich erheblich ändern, 
 
 **Allgemeine Vorgehensweise für die Governance**: Für die meisten Organisationen ist das [Cloud Adoption Framework-Governancemodell](../../govern/guides/index.md) ausreichend. Es besteht aus der Implementierung eines Minimum Viable Product (MVP), gefolgt von zielgerichteten Iterationen der Governancereife, um konkrete Risiken zu beseitigen, die im Einführungsplan identifiziert wurden. Diese Vorgehensweise stellt die mindestens erforderlichen Tools bereit, um eine konsistente Governance einzurichten, und das Team kann diese nachvollziehen. Dann werden die Tools erweitert, um allgemeine Probleme hinsichtlich der Governance zu lösen.
 
-**ISO 27001-Blaupausen für die Compliance:** Wenn Ihre Organisation ISO-Compliancestandards einhalten muss, kann das [Blaupausenbeispiel „ISO 27001: Gemeinsame Dienste“](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-shared) als effektiveres MVP fungieren. Durch die Blaupause können umfassendere Governanceeinschränkungen bereits frühzeitig im iterativen Prozess zu generiert werden. Das [Blaupausenbeispiel „ISO 27001: App Service-Umgebungs-/SQL-Datenbank-Workload“](https://docs.microsoft.com/azure/governance/blueprints/samples/iso27001-ase-sql-workload) baut auf der Blaupause für gemeinsame Dienste auf, um Kontrollen zuzuordnen und eine allgemeine Architektur für eine Anwendungsumgebung bereitzustellen.
+**ISO 27001-Blaupausen für die Compliance:** Wenn Ihre Organisation ISO-Compliancestandards einhalten muss, kann das [Blaupausenbeispiel „ISO 27001: Gemeinsame Dienste“](/azure/governance/blueprints/samples/iso27001-shared) als effektiveres MVP fungieren. Durch die Blaupause können umfassendere Governanceeinschränkungen bereits frühzeitig im iterativen Prozess zu generiert werden. Das [Blaupausenbeispiel „ISO 27001: App Service-Umgebungs-/SQL-Datenbank-Workload“](/azure/governance/blueprints/samples/iso27001-ase-sql-workload) baut auf der Blaupause für gemeinsame Dienste auf, um Kontrollen zuzuordnen und eine allgemeine Architektur für eine Anwendungsumgebung bereitzustellen.
 
 **CAF-Zielzone (Cloud Adoption Framework) auf Unternehmensebene:** Es kann sein, dass Sie einen robusteren Ausgangspunkt für die Governance benötigen. In diesem Fall können Sie ggf. die [CAF-Zielzonen auf Unternehmensebene](../../ready/enterprise-scale/index.md) verwenden. Bei der CAF-Zielzone (Cloud Adoption Framework) auf Unternehmensebene stehen Einführungsteams im Fokus, die mittelfristig (innerhalb von 24 Monaten) das Ziel haben, mehr als 1.000 Assets (Anwendungen, Infrastruktur oder Datenassets) in der Cloud zu hosten. Die CAF-Zielzone auf Unternehmensebene ist die *erste Wahl* für komplexe Governanceszenarien für diese umfangreicheren Cloudeinführungsmaßnahmen.
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: b041a7cc996ac3606228f1231d2f4ecd9af51655
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 41abba9cadeca1951f6316e49a0d2d58c6ef6569
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450729"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574515"
 ---
 <!-- cSpell:ignore dchimes -->
 
@@ -68,7 +68,7 @@ So zeigen Sie Ihre Supportanfragen und deren Status an:
 
 Weitere Informationen finden Sie unter:
 
-- [Dokumentation zur Abrechnungs- und Kostenverwaltung in Azure](https://docs.microsoft.com/azure/billing)
+- [Dokumentation zur Abrechnungs- und Kostenverwaltung in Azure](/azure/billing)
 - [Cloud Adoption Framework: Nachverfolgen von Kosten für Geschäftseinheiten, Umgebungen oder Projekte](../azure-best-practices/track-costs.md)
 - [Cloud Adoption Framework: Disziplin „Cost Management“](../../govern/cost-management/index.md)
 

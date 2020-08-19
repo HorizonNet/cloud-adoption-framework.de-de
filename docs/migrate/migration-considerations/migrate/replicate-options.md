@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3be996a02a42505e6bd8168c8d05649387bb3da1
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: 294a165ac2aa7f70c5d47accf83abeb38713b28a
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86234887"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574651"
 ---
 # <a name="replication-options"></a>Replikationsoptionen
 
@@ -22,7 +22,7 @@ Im Cloud Adoption Framework wird davon ausgegangen, dass Azure Migrate (oder Azu
 
 ## <a name="azure-site-recovery-also-known-as-azure-migrate"></a>Azure Site Recovery (auch als Azure Migrate bezeichnet)
 
-[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) orchestriert und verwaltet die Notfallwiederherstellung für Azure-VMs, lokale virtuelle Computer und physische Server. Sie können Site Recovery auf verwenden, um die Migration lokaler Computer und anderer Cloudanbieter nach Azure zu verwalten. Replizieren Sie lokale Computer in Azure oder Azure-VMs in eine sekundäre Region. Dann führen Sie für die VM ein Failover vom primären an den sekundären Standort aus und schließen den Migrationsprozess ab. Mit Azure Site Recovery können Sie verschiedene Migrationsszenarien umsetzen:
+[Azure Site Recovery](/azure/site-recovery/site-recovery-overview) orchestriert und verwaltet die Notfallwiederherstellung für Azure-VMs, lokale virtuelle Computer und physische Server. Sie können Site Recovery auf verwenden, um die Migration lokaler Computer und anderer Cloudanbieter nach Azure zu verwalten. Replizieren Sie lokale Computer in Azure oder Azure-VMs in eine sekundäre Region. Dann führen Sie für die VM ein Failover vom primären an den sekundären Standort aus und schließen den Migrationsprozess ab. Mit Azure Site Recovery können Sie verschiedene Migrationsszenarien umsetzen:
 
 - **Migrieren vom lokalen Standort nach Azure**: Migrieren Sie lokale VMware-VMs, Hyper-V-VMs und physische Server nach Azure. Hierzu führen Sie fast die gleichen Schritte wie bei einer vollständigen Notfallwiederherstellung durch. Sie führen allerdings kein Failback der Computer von Azure an den lokalen Standort aus.
 - **Migrieren zwischen Azure-Regionen**: Migrieren Sie Azure-VMs von einer Azure-Region in eine andere. Nach Abschluss der Migration konfigurieren Sie die Notfallwiederherstellung für die Azure-VMs, die sich jetzt in der sekundären Region befinden, dem Migrationsziel.
@@ -43,7 +43,7 @@ Nachdem Sie die lokale und Cloudinfrastruktur im Hinblick auf die Migration bewe
 
 ## <a name="azure-database-migration-service"></a>Azure Database Migration Service
 
-Dieser Dienst verringert die Komplexität Ihrer Cloudmigration, da Sie nur einen einzigen umfassenden Dienst statt verschiedener Tools benötigen. [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) ist als nahtlose End-to-End-Lösung für die Migration von lokalen SQL Server-Datenbanken in die Cloud konzipiert. Es handelt sich um einen vollständig verwalteten Dienst, der die nahtlose Migration von mehreren Datenbankquellen zu Azure-Datenplattformen mit minimaler Ausfallzeit ermöglicht. Der Dienst integriert einige Funktionen vorhandener Tools und Dienste und bietet Kunden eine umfassende, hochverfügbare Lösung.
+Dieser Dienst verringert die Komplexität Ihrer Cloudmigration, da Sie nur einen einzigen umfassenden Dienst statt verschiedener Tools benötigen. [Azure Database Migration Service](/azure/dms/dms-overview) ist als nahtlose End-to-End-Lösung für die Migration von lokalen SQL Server-Datenbanken in die Cloud konzipiert. Es handelt sich um einen vollständig verwalteten Dienst, der die nahtlose Migration von mehreren Datenbankquellen zu Azure-Datenplattformen mit minimaler Ausfallzeit ermöglicht. Der Dienst integriert einige Funktionen vorhandener Tools und Dienste und bietet Kunden eine umfassende, hochverfügbare Lösung.
 
 Der Dienst verwendet den Datenmigrations-Assistenten, um Bewertungsberichte zu generieren, die Empfehlungen bezüglich der Änderungen enthalten, die vor einer Migration erforderlich sind. Sie müssen ggf. entsprechende Aufgaben durchführen. Wenn Sie zum Starten der Migration bereit sind, führt Azure Database Migration Service alle entsprechenden Schritte aus. Sie können den Prozess starten und müssen sich nicht weiter um Ihre Migrationsprojekte kümmern, da Sie sich darauf verlassen können, dass die Migration mit den von Microsoft bestimmten bewährten Methoden erfolgt.
 

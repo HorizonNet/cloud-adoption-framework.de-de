@@ -8,12 +8,12 @@ ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: ad7f767e9f657a85ef2c16e84625631a2f2b7c61
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 021f3c9913a09bf0b32dd5913b54cbd839ff380e
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86451001"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574209"
 ---
 <!-- cSpell:ignore SIEM Nagios Zabbix DIKW -->
 
@@ -61,7 +61,7 @@ Als Experte für die Bewältigung von Aufgaben arbeiten Sie möglicherweise eng 
 
 ## <a name="high-level-modeling"></a>Erstellen eines allgemeinen Modells
 
-Da die Fachbereiche bestimmen, welche Dienste in die Cloud verlagert werden sollen, müssen Sie Ihre Ressourcen sorgfältig einsetzen. Lokal sind Sie für die Überwachung verantwortlich und haben hohe Investitionen getätigt. Beim Umstieg auf SaaS-Dienste entfällt beispielsweise nicht Ihre Verantwortung für die Überwachung. Sie entscheiden, wer Zugriff benötigt, wer Benachrichtigungen empfängt und wer einen Mindestzugriff auf Analysen braucht. [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/) und [Azure Arc](https://azure.microsoft.com/services/azure-arc/) sind Azure-Dienste mit der Flexibilität, Überwachungsszenarien in allen vier Cloudmodellen und nicht nur Ressourcen innerhalb von Azure abzudecken. Außerdem müssen Sie, wie nachstehend gezeigt, über die üblichen Cloudmodelle hinausblicken. Wenn Sie in Ihrem Unternehmen Microsoft Office-Apps einsetzen, die von [Microsoft 365](https://docs.microsoft.com/microsoft-365/?view=o365-worldwide)-Diensten bereitgestellt werden, müssen Sie zusätzlich zum [Azure Security Center](https://docs.microsoft.com/azure/security-center/) die Überwachung von Sicherheit und Compliance mit Microsoft 365 einbeziehen. Dazu gehören Identitäten, Endpunktverwaltung und Geräteüberwachung außerhalb Ihres Unternehmensnetzwerks.
+Da die Fachbereiche bestimmen, welche Dienste in die Cloud verlagert werden sollen, müssen Sie Ihre Ressourcen sorgfältig einsetzen. Lokal sind Sie für die Überwachung verantwortlich und haben hohe Investitionen getätigt. Beim Umstieg auf SaaS-Dienste entfällt beispielsweise nicht Ihre Verantwortung für die Überwachung. Sie entscheiden, wer Zugriff benötigt, wer Benachrichtigungen empfängt und wer einen Mindestzugriff auf Analysen braucht. [Azure Monitor](/azure/azure-monitor/) und [Azure Arc](https://azure.microsoft.com/services/azure-arc/) sind Azure-Dienste mit der Flexibilität, Überwachungsszenarien in allen vier Cloudmodellen und nicht nur Ressourcen innerhalb von Azure abzudecken. Außerdem müssen Sie, wie nachstehend gezeigt, über die üblichen Cloudmodelle hinausblicken. Wenn Sie in Ihrem Unternehmen Microsoft Office-Apps einsetzen, die von [Microsoft 365](/microsoft-365/?view=o365-worldwide)-Diensten bereitgestellt werden, müssen Sie zusätzlich zum [Azure Security Center](/azure/security-center/) die Überwachung von Sicherheit und Compliance mit Microsoft 365 einbeziehen. Dazu gehören Identitäten, Endpunktverwaltung und Geräteüberwachung außerhalb Ihres Unternehmensnetzwerks.
 
 ![Diagramm von Cloudmodellen](./media/monitoring-strategy/cloud-models.png)
 
@@ -115,7 +115,7 @@ Hier nun einige Überlegungen zum Zusammensetzen dieser Architektur:
 
 - Ein Datenflussansatz, der bei den Dienstressourcen startet und sich im Stapel hocharbeitet: Metriken und Protokolldaten, die von der Infrastruktur, IoT-Geräten, mobilen Geräten und anderen ausgegeben werden. Befinden sich alle Gegenstände unter Verwaltungs- und Überwachungstools (mittlere Ebene)? Bewegen von Daten nach oben und nach außen (ITSM-Tools, globale Überwachung, Security Information and Event Management [SIEM], benutzerdefinierte Ergänzung von Warnungen und andere).
 
-- Ob mit [System Center Operations Manager](https://docs.microsoft.com/system-center/scom/welcome?view=sc-om-2019) oder anderen Überwachungstools fortgefahren werden soll.
+- Ob mit [System Center Operations Manager](/system-center/scom/welcome?view=sc-om-2019) oder anderen Überwachungstools fortgefahren werden soll.
 
 - Die wirtschaftlichen Kosten.
 

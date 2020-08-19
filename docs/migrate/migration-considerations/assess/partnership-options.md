@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0902d72f2d11e3a930182c5ee88e18c9095d9574
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: 6ed3f2231350ecf93a561600946e13419f630735
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86234989"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88575263"
 ---
 <!-- cSpell:ignore CSPs MSPs -->
 
@@ -35,10 +35,10 @@ Wenn eine Organisation plant, eine Azure-Migration selbstständig durchzuführen
 
 - **Bewertungs- und Migrationstools**: Azure bietet eine umfassende Palette an Tools, die in verschiedenen Phasen Ihrer Cloudtransformation verwendet werden können, beispielsweise zur Bewertung Ihrer vorhandenen Infrastruktur. Weitere Informationen finden Sie im Abschnitt „Bewerten“ des folgenden Kapitels „Migration“.
 - **[Microsoft Cloud Adoption Framework](../../index.md)** : Dieses Framework bietet eine strukturierte Vorgehensweise zur Cloudeinführung und -migration. Es basiert auf Best Practices aus vielen von Microsoft unterstützten Kundenprojekten und ist in eine Reihe verschiedener Schritte unterteilt: von der Architektur über den Entwurf bis hin zur Implementierung. Sie erhalten für jeden Schritt Anleitungen, die Sie beim Entwurf der Anwendungsarchitektur unterstützen.
-- **[Cloudentwurfsmuster](https://docs.microsoft.com/azure/architecture/patterns)** : Azure bietet nützliche Cloudentwurfsmuster für das Erstellen von zuverlässigen, skalierbaren und sicheren Workloads in der Cloud. Jedes Muster beschreibt das Problem, das mit diesem Muster gelöst werden kann, und enthält Überlegungen zum Anwenden des Musters sowie ein Beispiel auf der Grundlage von Azure. Die meisten der Muster enthalten Codebeispiele oder -ausschnitte, die die Implementierung des Musters in Azure veranschaulichen. Sie sind jedoch für alle verteilten Systeme relevant, unabhängig davon, ob diese in Azure oder auf anderen Cloudplattformen gehostet werden.
-- **[Cloudgrundlagen](https://docs.microsoft.com/azure/architecture/guide)** : Grundlagen bieten Basisinformationen zur Implementierung von Kernkonzepten. Dieser Leitfaden hilft Technikern dabei, Lösungen zu bewerten, die über einen einzelnen Azure-Dienst hinausgehen.
-- **[Beispielszenarien](https://docs.microsoft.com/azure/architecture/example-scenario)** : Dieser Leitfaden bietet Referenzen von echten Kundenimplementierungen und beschreibt die Tools, Ansätze und Prozesse, die Kunden in der Vergangenheit befolgt haben, um bestimmte geschäftliche Ziele zu erreichen.
-- **[Referenzarchitekturen](https://docs.microsoft.com/azure/architecture/reference-architectures)** : Referenzarchitekturen sind nach Szenarien angeordnet, wobei verwandte Architekturen gruppiert sind. Jede Architektur umfasst Best Practices sowie Überlegungen in Bezug auf die Skalierbarkeit, Verfügbarkeit, Verwaltbarkeit und Sicherheit. Bei einem Großteil wird außerdem eine bereitstellbare Lösung angegeben.
+- **[Cloudentwurfsmuster](/azure/architecture/patterns)** : Azure bietet nützliche Cloudentwurfsmuster für das Erstellen von zuverlässigen, skalierbaren und sicheren Workloads in der Cloud. Jedes Muster beschreibt das Problem, das mit diesem Muster gelöst werden kann, und enthält Überlegungen zum Anwenden des Musters sowie ein Beispiel auf der Grundlage von Azure. Die meisten der Muster enthalten Codebeispiele oder -ausschnitte, die die Implementierung des Musters in Azure veranschaulichen. Sie sind jedoch für alle verteilten Systeme relevant, unabhängig davon, ob diese in Azure oder auf anderen Cloudplattformen gehostet werden.
+- **[Cloudgrundlagen](/azure/architecture/guide)** : Grundlagen bieten Basisinformationen zur Implementierung von Kernkonzepten. Dieser Leitfaden hilft Technikern dabei, Lösungen zu bewerten, die über einen einzelnen Azure-Dienst hinausgehen.
+- **[Beispielszenarien](/azure/architecture/example-scenario)** : Dieser Leitfaden bietet Referenzen von echten Kundenimplementierungen und beschreibt die Tools, Ansätze und Prozesse, die Kunden in der Vergangenheit befolgt haben, um bestimmte geschäftliche Ziele zu erreichen.
+- **[Referenzarchitekturen](/azure/architecture/reference-architectures)** : Referenzarchitekturen sind nach Szenarien angeordnet, wobei verwandte Architekturen gruppiert sind. Jede Architektur umfasst Best Practices sowie Überlegungen in Bezug auf die Skalierbarkeit, Verfügbarkeit, Verwaltbarkeit und Sicherheit. Bei einem Großteil wird außerdem eine bereitstellbare Lösung angegeben.
 
 ## <a name="fasttrack-for-azure"></a>FastTrack for Azure
 
