@@ -7,16 +7,16 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: bb2bae4d7568fbeeae1c17b919e1a155ea0b4185
-ms.sourcegitcommit: 76edf563a08ff7dc81c3fc2dc6c8972ab3b4c55b
+ms.openlocfilehash: 9684ad72587b1132632a53d15385e2f396311536
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88237133"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88575025"
 ---
 # <a name="azure-stack-a-strategic-option-for-running-azure-in-your-datacenter"></a>Azure Stack: Eine strategische Option zum Ausführen von Azure in Ihrem Rechenzentrum
 
-Microsoft verfolgt einen Cloud-First-Ansatz für die Anwendungs- und Datenspeicherung. Die Priorität besteht darin, Anwendungen und Daten in eine oder mehrere der Hyperscale-Clouds zu verschieben, zu denen die globale Azure-Option aber auch gebietsschemaspezifische Sovereign Clouds wie Azure Deutschland oder Azure Government zählen. 
+Microsoft verfolgt einen Cloud-First-Ansatz für die Anwendungs- und Datenspeicherung. Die Priorität besteht darin, Anwendungen und Daten in eine oder mehrere der Hyperscale-Clouds zu verschieben, zu denen die globale Azure-Option aber auch gebietsschemaspezifische Sovereign Clouds wie Azure Deutschland oder Azure Government zählen.
 
 Azure Stack Hub fungiert als eine weitere Instanz einer Sovereign Cloud, unabhängig davon, ob sie von Kunden in ihren Rechenzentren betrieben oder über einen Cloud-Dienstanbieter genutzt wird. Azure Stack Hub ist jedoch keine Hyperscale-Cloud, und Microsoft veröffentlicht oder unterstützt keine Vereinbarungen zum Service Level für Azure Stack Hub.
 

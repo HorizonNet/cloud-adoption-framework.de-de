@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 728531a3d46cc2f3a7d3d94f63cbf71b83b103cd
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: afd3b0ae34827a2b4d191a402a2a8a95d8ce4c10
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88278926"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574158"
 ---
 # <a name="logging-and-reporting-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Protokollierung und Berichterstellung
 
@@ -110,6 +110,7 @@ Spiegelung des lokalen zentrierten Ansatzes: In diesem Szenario würden cloudbas
 ### <a name="multicloud"></a>Verwenden mehrerer Clouds
 
 Die Integration von Protokollierungs- und Berichterstellungsfunktionen auf einer Plattform mit mehreren Clouds kann kompliziert sein. Die für die jeweiligen Plattformen angebotenen Dienste sind oft nicht direkt vergleichbar, und auch die Protokollierungs- und Telemetriefunktionen dieser Dienste unterscheiden sich.
+
 Die Unterstützung der Protokollierung mehrerer Clouds erfordert oft den Einsatz von Gatewaydiensten, um Protokolldaten in ein gemeinsames Format zu konvertieren, bevor Daten an eine hybride Protokollierungslösung übermittelt werden.
 
 ## <a name="learn-more"></a>Weitere Informationen
