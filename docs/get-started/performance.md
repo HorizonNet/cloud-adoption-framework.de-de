@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 5fc14f4ae460e3f2543754c2f99b5e278ea87815
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 04f105ea9db34d1321056fc325324ed4be038f0b
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450474"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569313"
 ---
 # <a name="get-started-ensure-consistent-performance-across-a-portfolio"></a>Erste Schritte: Sicherstellen konsistenter Leistung in einem Portfolio
 
@@ -63,7 +63,7 @@ Im Zuge der Optimierung der Verwaltungsbaseline ist es wichtig, dass die entspre
 
 **Hinweis zur Erreichung der Ziele:**
 
-- Stellen Sie sicher, dass alle Workloads und Ressourcen die [richtigen Benennungs- und Kennzeichnungskonventionen](../ready/azure-best-practices/naming-and-tagging.md) befolgen. [Erzwingen Sie Kennzeichnungskonventionen mithilfe von Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/govern-tags) mit einem speziellen Schwerpunkt auf Tags für „Wichtigkeit“.
+- Stellen Sie sicher, dass alle Workloads und Ressourcen die [richtigen Benennungs- und Kennzeichnungskonventionen](../ready/azure-best-practices/naming-and-tagging.md) befolgen. [Erzwingen Sie Kennzeichnungskonventionen mithilfe von Azure Policy](/azure/governance/policy/tutorials/govern-tags) mit einem speziellen Schwerpunkt auf Tags für „Wichtigkeit“.
 - Sollten Sie noch nicht mit Cloudgovernance vertraut sein, verwenden Sie die Governancemethodik, um [Governancerichtlinien, -prozesse und -disziplinen](../govern/index.md) einzurichten.
 - Falls Sie noch keine Erfahrung mit der Governancedisziplin „Cost Management“ haben, befassen Sie sich ggf. mit dem folgenden [Artikel zur Verbesserung der Kostenverwaltung](../govern/guides/complex/cost-management-improvement.md) (insbesondere mit dem [Abschnitt zur Implementierung](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)).
 
@@ -80,7 +80,7 @@ Strategische Entscheidungen wirken sich unmittelbar auf die Leistung sowie indir
 
 **Zielvorgaben:**
 
-- Erfassen Sie Beweggründe, Ergebnisse und geschäftliche Begründungen in der [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx).
+- Erfassen Sie Beweggründe, Ergebnisse und geschäftliche Begründungen in der [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx).
 - Stellen Sie sicher, dass die Verwaltungsbaseline eine auf die strategische Richtung der Cloudeinführung abgestimmte betriebliche Unterstützung bietet.
 
 **Hinweis zur Erreichung der Ziele:**
@@ -104,7 +104,7 @@ Wenn Sie den Plan verstehen, können Sie auch das Cloudbetriebsteam in den Entwi
 
 **Ziele:**
 
-- Aktualisieren Sie die [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) mit Änderungen, die durch die Analyse des digitalen Bestands ausgelöst wurden.
+- Aktualisieren Sie die [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) mit Änderungen, die durch die Analyse des digitalen Bestands ausgelöst wurden.
 - Arbeiten Sie mit dem Cloudbetriebsteam zusammen, um die Wichtigkeit und die geschäftlichen Auswirkungen der einzelnen Workloads im kurz- und langfristigen Einführungsplan eindeutig zu definieren.
 - Erarbeiten Sie zusammen mit dem Cloudbetriebsteam einen Zeitplan für die Betriebsbereitschaft.
 
@@ -113,7 +113,7 @@ Wenn Sie den Plan verstehen, können Sie auch das Cloudbetriebsteam in den Entwi
 - [Erfassen von Bestandsdaten](../digital-estate/inventory.md): Richten Sie eine Datenquelle für die Analyse des digitalen Bestands vor der Einführung ein.
 - [Bewährte Methode: Azure Migrate:](../plan/contoso-migration-assessment.md) Verwenden Sie Azure Migrate, um den Bestand zu erfassen.
 - [Inkrementelle Rationalisierung](../digital-estate/rationalize.md#incremental-rationalization): Verwenden Sie während der inkrementellen Rationalisierung eine quantitative Analyse, um Cloudkandidaten für Budgetierungszwecke zu identifizieren.
-- [Abstimmen von Kostenmodellen und Vorhersagemodellen](../digital-estate/calculate.md): Verwenden Sie Azure Cost Management, um Kosten- und Vorhersagemodelle durch [Erstellen von Budgets](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) abzustimmen.
+- [Abstimmen von Kostenmodellen und Vorhersagemodellen](../digital-estate/calculate.md): Verwenden Sie Azure Cost Management, um Kosten- und Vorhersagemodelle durch [Erstellen von Budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json) abzustimmen.
 - [Entwickeln Ihres Cloudeinführungsplans](../plan/plan-intro.md#build-your-cloud-adoption-plan): Erstellen Sie einen Plan mit handlungsrelevanten Details zu Workloads und Ressourcen sowie zum zeitlichen Ablauf.
 
 <!-- markdownlint-disable MD033 -->

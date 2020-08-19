@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
-ms.openlocfilehash: 576c6d1fecc908011edeb447595e025819439cc7
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 9af04bd1c67c7db877552572d3fd2e7954ac5046
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194006"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570095"
 ---
 # <a name="what-is-the-microsoft-cloud-adoption-framework-for-azure"></a>Was ist das Microsoft Cloud Adoption Framework für Azure?
 
@@ -29,9 +29,7 @@ Mithilfe der bewährten Methoden des Microsoft Cloud Adoption Framework für Azu
 
 Im Cloud Adoption Framework werden bewährte Methoden für die Cloudeinführung von Microsoft-Mitarbeitern, -Partnern und -Kunden zusammengeführt. Das Framework stellt eine Reihe von Tools, Anleitungen und Inhalten bereit, die Sie bei der Entwicklung von Technologie-, Geschäfts- und Personalstrategien unterstützen, damit Sie mit Ihren Maßnahmen für die Cloudeinführung die gewünschten Geschäftsergebnisse erzielen können. Diese Anleitungen sind auf die folgenden Phasen des Lebenszyklus einer Cloudeinführung ausgerichtet, sodass Sie jederzeit problemlos auf die passenden Informationen zugreifen können.
 
-<!-- markdownlint-disable MD033 -->
-
-| | | | | |
+|  |  |  |  |  |
 |--|--|--|--|--|
 | <br> ![Strategiesymbol](./_images/icons/strategy.png) | <br> [Strategie](./strategy/index.md):&nbsp;Definieren&nbsp;der&nbsp;Geschäftsbegründung&nbsp;und der erwarteten Ergebnisse der Einführung. | <br> ![Planungssymbol](./_images/icons/plan.png) | <br> [Planung](./plan/index.md):&nbsp;Ausrichten&nbsp;umsetzbarer&nbsp;Einführungspläne&nbsp;an Geschäftsergebnissen. |
 | <br> ![Symbol „Bereit“](./_images/icons/ready.png)       | <br> [Bereit:](./ready/index.md) Hier erfahren Sie, wie Sie die Cloudumgebung für die geplanten Änderungen vorbereiten. | <br> ![Migrationssymbol](./_images/icons/adopt.png) | <br> [Migration](./migrate/index.md): Hier erfahren Sie, wie Sie bereits vorhandene Workloads migrieren und modernisieren. |

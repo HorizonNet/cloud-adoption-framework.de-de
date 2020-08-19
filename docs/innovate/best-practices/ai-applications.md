@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d83ce295c46267d5e04eeab79ffbe715f4db40c5
-ms.sourcegitcommit: d31a9043d1ae9283ed126bf118ca26d1d18d6948
+ms.openlocfilehash: 076248ef6fbbf119d29e159aac54aadc56d6bbc0
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88040761"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568531"
 ---
 <!-- cSpell:ignore Personalizer -->
 
@@ -34,50 +34,50 @@ Es handelt sich dabei um APIs, SDKs und Dienste, die Entwicklern beim Erstellen 
 
 | Dienstname | Dienstbeschreibung |
 | --- | --- |
-| [Maschinelles Sehen](https://docs.microsoft.com/azure/cognitive-services/computer-vision/) | Über die API „maschinelles Sehen“ haben Sie Zugriff auf erweiterte Algorithmen für die Bildverarbeitung und die Rückgabe von Informationen. |
-| [Custom Vision](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home) | Mit Custom Vision können Sie benutzerdefinierte Bildklassifizierungen entwickeln. |
-| [Gesichtserkennung](https://docs.microsoft.com/azure/cognitive-services/face/) | Der Gesichtserkennungsdienst ermöglicht den Zugriff auf erweiterte Gesichtserkennungsalgorithmen, die Gesichtsmerkmale erkennen. |
-| [Formularerkennung](https://docs.microsoft.com/azure/cognitive-services/form-recognizer/) (Vorschauversion) | Die Formularerkennung identifiziert und extrahiert Schlüssel-Wert-Paare und Tabellendaten aus Formulardokumenten. Anschließend werden strukturierte Daten ausgegeben, die die Beziehungen in der Originaldatei enthalten. |
-| [Freihanderkennung](https://docs.microsoft.com/azure/cognitive-services/ink-recognizer/) (Vorschauversion) | Die Freihanderkennung ermöglicht das Erkennen und Analysieren von Strichdaten, Formen und handschriftlichen Inhalten aus Freihandeingaben sowie die Ausgabe einer Dokumentstruktur mit allen erkannten Entitäten. |
-| [Video Indexer](https://docs.microsoft.com/azure/cognitive-services/video-indexer/video-indexer-overview) | Video Indexer ermöglicht es Ihnen, Erkenntnisse aus Ihren Videos zu extrahieren. |
+| [Maschinelles Sehen](/azure/cognitive-services/computer-vision/) | Über die Maschinelles Sehen-API haben Sie Zugriff auf erweiterte Algorithmen für die Bildverarbeitung und die Rückgabe von Informationen. |
+| [Custom Vision](/azure/cognitive-services/custom-vision-service/home) | Mit Custom Vision können Sie benutzerdefinierte Bildklassifizierungen entwickeln. |
+| [Gesichtserkennung](/azure/cognitive-services/face/) | Der Gesichtserkennungsdienst ermöglicht den Zugriff auf erweiterte Gesichtserkennungsalgorithmen, die Gesichtsmerkmale erkennen. |
+| [Formularerkennung](/azure/cognitive-services/form-recognizer/) (Vorschauversion) | Die Formularerkennung identifiziert und extrahiert Schlüssel-Wert-Paare und Tabellendaten aus Formulardokumenten. Anschließend werden strukturierte Daten ausgegeben, die die Beziehungen in der Originaldatei enthalten. |
+| [Freihanderkennung](/azure/cognitive-services/ink-recognizer/) (Vorschauversion) | Die Freihanderkennung ermöglicht das Erkennen und Analysieren von Strichdaten, Formen und handschriftlichen Inhalten aus Freihandeingaben sowie die Ausgabe einer Dokumentstruktur mit allen erkannten Entitäten. |
+| [Video Indexer](/azure/cognitive-services/video-indexer/video-indexer-overview) | Video Indexer ermöglicht es Ihnen, Erkenntnisse aus Ihren Videos zu extrahieren. |
 
 ### <a name="speech-apis"></a>Spracherkennungs-APIs
 
 | Dienstname | Dienstbeschreibung |
 | --- | --- |
-| [Spracheingabe](https://docs.microsoft.com/azure/cognitive-services/speech-service/) | Der Spracherkennungsdienst erweitert Anwendungen um sprachaktivierte Features. |
-| [Sprechererkennung](https://docs.microsoft.com/azure/cognitive-services/speaker-recognition/home "Sprechererkennungs-API") (Vorschauversion) | Die Sprechererkennungs-API stellt Algorithmen zur Sprecheridentifikation und -verifizierung zur Verfügung. |
-| [Bing-Spracheingabe](https://docs.microsoft.com/azure/cognitive-services/speech/home) (wird eingestellt) | Die Bing-Spracheingabe-API bietet Ihnen eine einfache Möglichkeit, sprachaktivierte Features in Ihren Anwendungen zu erstellen. |
-| [Sprachübersetzung](https://docs.microsoft.com/azure/cognitive-services/translator-speech/) (wird eingestellt) | Die Sprachübersetzung ist ein Dienst zur maschinellen Übersetzung. |
+| [Spracheingabe](/azure/cognitive-services/speech-service/) | Der Spracherkennungsdienst erweitert Anwendungen um sprachaktivierte Features. |
+| [Sprechererkennung](/azure/cognitive-services/speaker-recognition/home "Sprechererkennungs-API") (Vorschauversion) | Die Sprechererkennungs-API stellt Algorithmen zur Sprecheridentifikation und -verifizierung zur Verfügung. |
+| [Bing-Spracheingabe](/azure/cognitive-services/speech/home) (wird eingestellt) | Die Bing-Spracheingabe-API bietet Ihnen eine einfache Möglichkeit, sprachaktivierte Features in Ihren Anwendungen zu erstellen. |
+| [Sprachübersetzung](/azure/cognitive-services/translator-speech/) (wird eingestellt) | Die Sprachübersetzung ist ein Dienst zur maschinellen Übersetzung. |
 
 ### <a name="language-apis"></a>Sprache-APIs
 
 | Dienstname | Dienstbeschreibung |
 | --- | -- |
-| [Language Understanding (LUIS)](https://docs.microsoft.com/azure/cognitive-services/luis/) | Mit dem LUIS-Dienst (Language Understanding) kann Ihre Anwendung frei formulierte Anliegen von Personen verstehen. |
-| [QnA Maker](https://docs.microsoft.com/azure/cognitive-services/qnamaker/index "QnA Maker") | Der QnA Maker ermöglicht es Ihnen, aus Ihren teilstrukturierten Inhalten einen Frage- und Antwortdienst zu erstellen. |
-| [Textanalyse](https://docs.microsoft.com/azure/cognitive-services/text-analytics/) | Die Textanalyse bietet die Verarbeitung von natürlicher Sprache für unformatierten Text für die Standpunktanalyse, die Schlüsselbegriffserkennung und die Sprachenerkennung. |
-| [Translator](https://docs.microsoft.com/azure/cognitive-services/translator/) | Translator ermöglicht eine maschinelle Textübersetzung nahezu in Echtzeit. |
+| [Language Understanding (LUIS)](/azure/cognitive-services/luis/) | Mit dem LUIS-Dienst (Language Understanding) kann Ihre Anwendung frei formulierte Anliegen von Personen verstehen. |
+| [QnA Maker](/azure/cognitive-services/qnamaker/index "QnA Maker") | Der QnA Maker ermöglicht es Ihnen, aus Ihren teilstrukturierten Inhalten einen Frage- und Antwortdienst zu erstellen. |
+| [Textanalyse](/azure/cognitive-services/text-analytics/) | Die Textanalyse bietet die Verarbeitung von natürlicher Sprache für unformatierten Text für die Standpunktanalyse, die Schlüsselbegriffserkennung und die Sprachenerkennung. |
+| [Translator](/azure/cognitive-services/translator/) | Translator ermöglicht eine maschinelle Textübersetzung nahezu in Echtzeit. |
 
 ### <a name="decision-apis"></a>Entscheidungs-APIs
 
 | Dienstname | Dienstbeschreibung |
 | --- | --- |
-| [Anomalieerkennung](https://docs.microsoft.com/azure/cognitive-services/anomaly-detector/) (Vorschauversion) | Die Anomalieerkennung bietet Ihnen die Möglichkeit, Abweichungen in Ihren Zeitreihendaten zu überwachen und zu erkennen. |
-| [Content Moderator](https://docs.microsoft.com/azure/cognitive-services/content-moderator/overview "Content Moderator") | Der Content Moderator bietet die Überwachung auf möglicherweise anstößige, unerwünschte und risikobehaftete Inhalte. |
-| [Personalisierung](https://docs.microsoft.com/azure/cognitive-services/personalizer/) | Die Personalisierung ermöglicht es Ihnen, Informationen über das Echtzeitverhalten von Benutzern zu erhalten, um die am besten geeignete Darstellung auszuwählen. |
+| [Anomalieerkennung](/azure/cognitive-services/anomaly-detector/) (Vorschauversion) | Die Anomalieerkennung bietet Ihnen die Möglichkeit, Abweichungen in Ihren Zeitreihendaten zu überwachen und zu erkennen. |
+| [Content Moderator](/azure/cognitive-services/content-moderator/overview "Content Moderator") | Der Content Moderator bietet die Überwachung auf möglicherweise anstößige, unerwünschte und risikobehaftete Inhalte. |
+| [Personalisierung](/azure/cognitive-services/personalizer/) | Die Personalisierung ermöglicht es Ihnen, Informationen über das Echtzeitverhalten von Benutzern zu erhalten, um die am besten geeignete Darstellung auszuwählen. |
 
 ### <a name="supported-cultural-languages"></a>Unterstützte Kultursprachen
 
-Cognitive Services unterstützt eine Vielzahl von Kultursprachen auf Dienstebene. Sie finden die Sprachenverfügbarkeit für jede API in der [Liste unterstützter Sprachen](https://docs.microsoft.com/azure/cognitive-services/language-support).
+Cognitive Services unterstützt eine Vielzahl von Kultursprachen auf Dienstebene. Sie finden die Sprachenverfügbarkeit für jede API in der [Liste unterstützter Sprachen](/azure/cognitive-services/language-support).
 
 ### <a name="secure-resources"></a>Sichere Ressourcen
 
-Cognitive Services bietet ein mehrschichtiges Sicherheitsmodell – einschließlich [Authentifizierung](https://docs.microsoft.com/azure/cognitive-services/authentication) über Azure Active Directory-Anmeldeinformationen, einem gültigem Ressourcenschlüssel und [Azure Virtual Network](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-virtual-networks).
+Cognitive Services bietet ein mehrschichtiges Sicherheitsmodell – einschließlich [Authentifizierung](/azure/cognitive-services/authentication) über Azure Active Directory-Anmeldeinformationen, einem gültigem Ressourcenschlüssel und [Azure Virtual Network](/azure/cognitive-services/cognitive-services-virtual-networks).
 
 ### <a name="container-support"></a>Containerunterstützung
 
-Cognitive Services stellt Container für die Bereitstellung in der Cloud oder lokal bereit. Weitere Informationen zu Cognitive Services-Containern finden Sie [hier](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-container-support).
+Cognitive Services stellt Container für die Bereitstellung in der Cloud oder lokal bereit. Weitere Informationen zu Cognitive Services-Containern finden Sie [hier](/azure/cognitive-services/cognitive-services-container-support).
 
 <!-- docsTest:ignore "HIPAA BAA" "CSA STAR" -->
 
@@ -104,5 +104,5 @@ Machine Learning ist ein Prozess, für dessen erfolgreiche Implementierung übli
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- Informieren Sie sich ausführlicher über [Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/).
-- Machen Sie sich mit [bewährten Methoden für KI-Architekturen](https://docs.microsoft.com/azure/architecture/solution-ideas/articles/ai-at-the-edge) vertraut.
+- Informieren Sie sich ausführlicher über [Cognitive Services](/azure/cognitive-services/).
+- Machen Sie sich mit [bewährten Methoden für KI-Architekturen](/azure/architecture/solution-ideas/articles/ai-at-the-edge) vertraut.

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: 0bb22264d0a03a9fe19030af4a0057118b71756f
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: d7c7f8438c8dc4a68d7e8e46678477119975d449
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86448706"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571132"
 ---
 <!-- cSpell:ignore Savision -->
 
@@ -93,7 +93,7 @@ In der folgenden Tabelle werden die Anforderungen zusammengefasst, die für Azur
 
 ### <a name="collect-and-stream-monitoring-data-to-third-party-or-on-premises-tools"></a>Sammeln und Streamen von Überwachungsdaten an Tools von Drittanbietern oder lokale Tools
 
-Um Metriken und Protokolle von Azure-Infrastruktur- und Plattformressourcen zu sammeln, müssen Sie die Azure-Diagnoseprotokolle für diese Ressourcen aktivieren. Darüber hinaus können Sie mit Azure-VMs Metriken und Protokolle vom Gastbetriebssystem erfassen, indem Sie die Erweiterung der Azure-Diagnose aktivieren. Um die von Ihren Azure-Ressourcen ausgegebenen Diagnosedaten an Ihre lokalen Tools oder Ihren Anbieter von verwalteten Diensten weiterzuleiten, konfigurieren Sie [Event Hubs](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-logs-stream-event-hubs) so, dass die Daten an diese Ziele gestreamt werden.
+Um Metriken und Protokolle von Azure-Infrastruktur- und Plattformressourcen zu sammeln, müssen Sie die Azure-Diagnoseprotokolle für diese Ressourcen aktivieren. Darüber hinaus können Sie mit Azure-VMs Metriken und Protokolle vom Gastbetriebssystem erfassen, indem Sie die Erweiterung der Azure-Diagnose aktivieren. Um die von Ihren Azure-Ressourcen ausgegebenen Diagnosedaten an Ihre lokalen Tools oder Ihren Anbieter von verwalteten Diensten weiterzuleiten, konfigurieren Sie [Event Hubs](/azure/azure-monitor/platform/diagnostic-logs-stream-event-hubs) so, dass die Daten an diese Ziele gestreamt werden.
 
 ### <a name="monitor-with-system-center-operations-manager"></a>Überwachung mit System Center Operations Manager
 
@@ -119,7 +119,7 @@ Im Management Pack wird definiert, wie die einzelnen Abhängigkeiten und Kompone
 
 Auf Anwendungsebene bietet Operations Manager grundlegende Funktionen zur Überwachung der Anwendungsleistung für einige ältere Versionen von .NET und Java. Wenn bestimmte Anwendungen innerhalb Ihrer Hybrid Cloud-Umgebung offline oder vom Netzwerk isoliert ausgeführt werden, sodass sie nicht mit einem öffentlichen Clouddienst kommunizieren können, ist die Application Performance Monitoring-Komponente (APM) von Operations Manager in einigen Szenarien möglicherweise eine geeignete Option. Für Anwendungen, die nicht auf Legacyplattformen ausgeführt werden, sondern sowohl lokal als auch in einer öffentlichen Cloud gehostet werden, die Kommunikation über eine Firewall (entweder direkt oder über einen Proxy) mit Azure ermöglicht, verwenden Sie Azure Monitor Application Insights. Dieser Dienst ermöglicht eine detaillierte Überwachung auf Codeebene mit erstklassiger Unterstützung für ASP.NET, ASP.NET Core, Java, JavaScript und Node.js.
 
-Sie sollten für jede Webanwendung, auf die von einer externen Seite aus zugegriffen werden kann, eine Art synthetischer Transaktion aktivieren, die als [Verfügbarkeitsüberwachung]( https://docs.microsoft.com/azure/azure-monitor/app/monitor-web-app-availability) bezeichnet wird. Es ist wichtig zu wissen, ob Ihre Anwendung oder ein kritischer HTTP-/HTTPS-Endpunkt, auf den sich die Anwendung stützt, verfügbar und reaktionsfähig ist. Mit der Verfügbarkeitsüberwachung von Application Insights können Sie die Tests in mehreren Azure-Rechenzentren durchführen und erhalten so einen Einblick in die Integrität Ihrer Anwendung aus globaler Perspektive.
+Sie sollten für jede Webanwendung, auf die von einer externen Seite aus zugegriffen werden kann, eine Art synthetischer Transaktion aktivieren, die als [Verfügbarkeitsüberwachung](/azure/azure-monitor/app/monitor-web-app-availability) bezeichnet wird. Es ist wichtig zu wissen, ob Ihre Anwendung oder ein kritischer HTTP-/HTTPS-Endpunkt, auf den sich die Anwendung stützt, verfügbar und reaktionsfähig ist. Mit der Verfügbarkeitsüberwachung von Application Insights können Sie die Tests in mehreren Azure-Rechenzentren durchführen und erhalten so einen Einblick in die Integrität Ihrer Anwendung aus globaler Perspektive.
 
 Operations Manager kann zwar in Azure gehostete Ressourcen überwachen, aber Azure Monitor bietet einige Vorteile, da die Stärken von Azure Monitor die Beschränkungen von Operations Manager aufheben und eine stabile Grundlage für die Unterstützung der Migration von Operations Manager bilden können. Im Folgenden beleuchten wir diese Stärken und Schwächen im Einzelnen und bieten Empfehlungen für die Integration von Azure Monitor in die Überwachungsstrategie für Ihre Hybridumgebung.  
 
@@ -172,7 +172,7 @@ Eine Migration zur Cloud stellt Sie zwar vor einige Herausforderungen, bietet ab
 
 Durch Verwendung von System Center Operations Manager wird eine ganzheitliche Überwachung von Azure Stack ermöglicht. Insbesondere können Sie die Workloads überwachen, die im Mandanten, auf Ressourcenebene, auf den virtuellen Computern und in der Infrastruktur ausgeführt werden, die Azure Stack (physische Server und Netzwerkswitches) hostet.
 
-Eine ganzheitliche Überwachung ist außerdem durch eine Kombination der in Azure Stack enthaltenen [Funktionen zur Infrastrukturüberwachung](https://docs.microsoft.com/azure/azure-stack/azure-stack-monitor-health) möglich. Mithilfe dieser Funktionen können Sie die Integrität und Warnungen für eine Azure Stack-Region und den [Azure Monitor-Dienst](https://docs.microsoft.com/azure/azure-stack/user/azure-stack-metrics-azure-data) in Azure Stack anzeigen. Dort werden für die meisten Dienste grundlegende Infrastrukturmetriken und Protokolle bereitgestellt.
+Eine ganzheitliche Überwachung ist außerdem durch eine Kombination der in Azure Stack enthaltenen [Funktionen zur Infrastrukturüberwachung](/azure/azure-stack/azure-stack-monitor-health) möglich. Mithilfe dieser Funktionen können Sie die Integrität und Warnungen für eine Azure Stack-Region und den [Azure Monitor-Dienst](/azure/azure-stack/user/azure-stack-metrics-azure-data) in Azure Stack anzeigen. Dort werden für die meisten Dienste grundlegende Infrastrukturmetriken und Protokolle bereitgestellt.
 
 Wenn Sie bereits in Operations Manager investiert haben, überwachen Sie die Verfügbarkeit und den Integritätszustand von Azure Stack-Bereitstellungen einschließlich Regionen, Ressourcenanbieter, Updates, Aktualisierungsläufe, Skalierungseinheiten, Einheitsknoten, Infrastrukturrollen und deren Instanzen (logische Einheiten bestehend aus den Hardwareressourcen) mit dem Management Pack von Azure Stack. Dieses Management Pack verwendet die REST-APIs des Integritäts- und des Updateressourcenanbieters, um mit Azure Stack zu kommunizieren. Die physischen Server und Speichergeräte können Sie mit den Management Packs der OEM-Anbieter (z. B. von Lenovo, Hewlett Packard oder Dell) überwachen. Operations Manager kann die Netzwerkswitches nativ überwachen, um grundlegende Statistiken zu SNMP zu erfassen. Die Überwachung der Workloads des Mandanten ist mit dem Azure-Management Pack durch Ausführung zweier grundlegender Schritte möglich. Konfigurieren Sie zunächst das Abonnement, das überwacht werden soll, und fügen Sie dann die Monitore für dieses Abonnement hinzu.
 

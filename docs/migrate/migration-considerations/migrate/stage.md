@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8d1f6c4b5f0f672b9dd6b7fb9adc5b0fce4a54a6
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: 72f793383bd525b48f3f8ae30cd6e0d470ddba64
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86234819"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88193288"
 ---
 # <a name="understand-staging-activities-during-a-migration"></a>Verstehen der Stagingaktivitäten während einer Migration
 
@@ -29,7 +29,7 @@ In der Stagingphase sind Assets möglicherweise noch nicht für die Nutzung in d
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nachdem Assets in der Stagingphase getestet und dokumentiert wurden, können Sie mit [Aktivitäten zur Optimierung](../optimize/index.md) fortfahren.
+Nachdem Assets in der Stagingphase getestet und dokumentiert wurden, können Sie mit Aktivitäten zur Optimierung fortfahren.
 
 > [!div class="nextstepaction"]
 > [Optimieren von migrierten Workloads](../optimize/index.md)

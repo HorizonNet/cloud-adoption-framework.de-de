@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f1e991a83c79be3e829bce618a50243b74c2c90f
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: 433c806c241b95600fcb840353c9c14e4d1aa8e1
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400727"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573444"
 ---
 <!-- cSpell:ignore offboarding preintegration -->
 
@@ -72,9 +72,9 @@ Für die erfolgreiche Migration einer Umgebung muss eine Reihe von technischen u
   - Aktivieren Sie bei einem vorhandenen Verbund Mandanteneinschränkungen für Administratorkonten.
 - Integrieren Sie Ihre lokalen und Cloudverzeichnisse.
 - Ziehen Sie die Verwendung der folgenden Zugriffsmodelle in Betracht:
-  - Zugriffsmodell [Verwaltung mit den geringsten Rechten](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models).
-  - Zugriffsmodell [Privileged Identity Management (PIM)](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure).
-- Legen Sie alle vor der Integration erforderlichen Details endgültig fest, und machen Sie sich mit den [bewährten Sicherheitsmethoden für die Identitätsverwaltung und Zugriffssteuerung](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices) vertraut.
+  - Zugriffsmodell [Verwaltung mit den geringsten Rechten](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models).
+  - Zugriffsmodell [Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure).
+- Legen Sie alle vor der Integration erforderlichen Details endgültig fest, und machen Sie sich mit den [bewährten Sicherheitsmethoden für die Identitätsverwaltung und Zugriffssteuerung](/azure/security/fundamentals/identity-management-best-practices) vertraut.
   - Aktivieren der einzelnen Identität, des einmaligen Anmeldens (SSO), auch als nahtloses einmaliges Anmelden bekannt.
   - Konfigurieren der mehrstufigen Authentifizierung für Administratoren
   - Bei Bedarf Konsolidieren oder Integrieren von Identitätsanbietern
@@ -103,7 +103,7 @@ Migration ist ein inkrementeller Prozess, bei dem der Schwerpunkt auf der Verlag
 - Vergewissern Sie sich, dass das einmalige Anmelden (SSO) und das nahtlose einmalige Anmelden für Ihre Anwendungen wie erwartet funktionieren.
 - Verringern oder entfernen Sie alternative Identitätsspeicher.
 - Überprüfen Sie die Notwendigkeit von Identitätsspeichern in Apps oder Datenbanken. Identitäten, die außerhalb eines geeigneten Identitätsanbieters (von Erstanbietern oder Drittanbietern) liegen, können ein Risiko für die Anwendung und die Benutzer darstellen.
-- Aktivieren Sie den bedingten Zugriff für [lokale Verbundanwendungen](https://docs.microsoft.com/azure/active-directory/devices/overview).
+- Aktivieren Sie den bedingten Zugriff für [lokale Verbundanwendungen](/azure/active-directory/devices/overview).
 - Verteilen Sie Identitäten auf globale Regionen in mehreren Hubs mit Synchronisierung zwischen den Regionen.
 - Richten Sie einen Verbund mit zentraler rollenbasierter Zugriffssteuerung (RBAC) ein.
 
@@ -134,7 +134,7 @@ Nachdem die Transformation abgeschlossen ist, müssen Governance und Betrieb wä
 - Ziehen Sie die Implementierung eines DevSecOps-Ansatzes (Development Security Operations) in Betracht.
 - Führen Sie eine Auswirkungsanalyse durch, um die Ergebnisse bei Kosten, Sicherheit und Benutzerakzeptanz zu messen.
 - Erstellen Sie in regelmäßigen Abständen Auswirkungsberichte, in denen die Änderungen bei vom System erstellten Metriken aufgezeigt und die Geschäftsauswirkungen der [Hybrididentitätsstrategie](../../decision-guides/identity/index.md) abgeschätzt werden.
-- Richten Sie die in [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro) empfohlene integrierte Überwachung ein.
+- Richten Sie die in [Azure Security Center](/azure/security-center/security-center-intro) empfohlene integrierte Überwachung ein.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

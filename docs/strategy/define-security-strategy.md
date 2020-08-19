@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 531700838739c416819f5dfd329b1d0f6bac63a5
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 7f52dfb9c58e619a4d626960ac3115575985253a
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86451018"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572645"
 ---
 <!-- cSpell:ignore MarkSimos NIST CISO COVID -->
 
@@ -96,7 +96,7 @@ Für viele Organisationen ist dieser Zustand schon Realität, da sie in den letz
 
 Die Funktionen des [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework) dienen als nützlicher Leitfaden dafür, wie Investitionen zwischen den komplementären Aktivitäten der Identifizierung, der Sicherung, der Erkennung, der Reaktion und der Wiederherstellung in einer resilienten Strategie ausgeglichen werden können.
 
-Weitere Informationen zur Resilienz der Cybersicherheit und zu den letztendlichen Zielen von Cybersicherheitskontrollen finden Sie unter [Wie halten Sie das Risiko Ihrer Organisation gering?](https://docs.microsoft.com/azure/architecture/framework/security/resilience).
+Weitere Informationen zur Resilienz der Cybersicherheit und zu den letztendlichen Zielen von Cybersicherheitskontrollen finden Sie unter [Wie halten Sie das Risiko Ihrer Organisation gering?](/azure/architecture/framework/security/resilience).
 
 ### <a name="how-the-cloud-is-changing-security"></a>Auswirkungen der Cloud auf die Sicherheit
 
@@ -152,7 +152,7 @@ Die Entwicklung eines resilienten Sicherheitsstatus in der Cloud erfordert mehre
 
     Es ist entscheidend, hier richtig vorzugehen, da diese Anwendungen häufig kritische Geschäftsprozesse ermöglichen und entscheidende Geschäftsdaten speichern.
 
-  - **Moderner Umkreis:** Organisationen sollten über einen umfassenden Ansatz zum Schutz von Daten über alle Workloads hinweg verfügen, Organisationen sollten einen modernen Umkreis von konsistenten, zentral verwalteten Identitätskontrollen einrichten, um ihre Daten, Geräte und Konten zu schützen. Dies wird stark beeinflusst durch eine Zero Trust-Strategie, die in [Modul 3 des CISO-Workshops](https://docs.microsoft.com/security/ciso-workshop/ciso-workshop-module-3) ausführlich diskutiert wird.
+  - **Moderner Umkreis:** Organisationen sollten über einen umfassenden Ansatz zum Schutz von Daten über alle Workloads hinweg verfügen, Organisationen sollten einen modernen Umkreis von konsistenten, zentral verwalteten Identitätskontrollen einrichten, um ihre Daten, Geräte und Konten zu schützen. Dies wird stark beeinflusst durch eine Zero Trust-Strategie, die in [Modul 3 des CISO-Workshops](/security/ciso-workshop/ciso-workshop-module-3) ausführlich diskutiert wird.
 
 ### <a name="security-and-trust"></a>Sicherheit und Vertrauenswürdigkeit
 
@@ -240,7 +240,7 @@ In diesem Abschnitt werden die wichtigsten Beziehungen beschrieben, die sich auf
 
   - **Sicherheit**: Befolgt der Cloudanbieter die bewährten Methoden der Branche hinsichtlich der Sicherheit? Wurde dies von unabhängigen Regulierungsbehörden überprüft?
 
-    - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/risk-score) ermöglicht es Ihnen, die Nutzung von über 16.000 Cloud-Apps zu ermitteln, die abhängig von mehr als 70 Risikofaktoren klassifiziert und bewertet werden, um Ihnen laufend Einblicke in die Cloudnutzung, Schatten-IT und das Risiko der Schatten-IT für Ihre Organisation zu gewähren.
+    - [Microsoft Cloud App Security](/cloud-app-security/risk-score) ermöglicht es Ihnen, die Nutzung von über 16.000 Cloud-Apps zu ermitteln, die abhängig von mehr als 70 Risikofaktoren klassifiziert und bewertet werden, um Ihnen laufend Einblicke in die Cloudnutzung, Schatten-IT und das Risiko der Schatten-IT für Ihre Organisation zu gewähren.
     - Das [Microsoft Service Trust-Portal](https://servicetrust.microsoft.com) stellt Kunden Zertifizierungen zur Einhaltung gesetzlicher Bestimmungen, Überwachungsberichte, Penetrationstests und vieles mehr zur Verfügung. Diese Dokumente enthalten viele Details zu internen Sicherheitsmaßnahmen (insbesondere den SOC 2, Typ 2-Bericht und den Systemsicherheitsplan „FedRAMP Moderate“).
 
   - **Mitbewerber des Unternehmens:** Ist der Cloudanbieter ein bedeutender Mitbewerber in Ihrer Branche? Verfügen Sie über einen ausreichenden Schutz durch den Clouddienstvertrag oder andere Mittel, um Ihr Unternehmen vor potenziell feindlichen Aktionen zu schützen?

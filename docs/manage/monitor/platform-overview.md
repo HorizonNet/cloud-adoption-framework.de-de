@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: dcbc8d7906bd18a225b9fb2b116b4acc3bd0f395
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: d8ab1c31744d3e714d62018bccabd747136f454c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193132"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571200"
 ---
 <!-- cSpell:ignore opsman ITSM -->
 
@@ -81,7 +81,7 @@ Azure Monitor ist ein SaaS-Angebot (Software-as-a-Service), bei dem die gesamte 
 
 #### <a name="agents"></a>Agents
 
-Operations Manager sammelt nur Daten direkt von Agents, die auf [Windows-Computern](https://docs.microsoft.com/system-center/scom/plan-planning-agent-deployment?view=sc-om-1807#windows-agent) installiert sind. Er kann Daten aus dem Operations Manager SDK übernehmen, aber dieser Ansatz wird in der Regel für Partner verwendet, die das Produkt durch benutzerdefinierte Anwendungen erweitern, und nicht zur Erfassung von Überwachungsdaten. Er kann Daten von anderen Quellen wie [Linux-Computern](https://docs.microsoft.com/system-center/scom/plan-planning-agent-deployment?view=sc-om-1807#linuxunix-agent) und Netzwerkgeräten erfassen. Dazu werden spezielle Module verwendet, die auf dem Windows-Agent ausgeführt werden, der über eine Remoteverbindung auf diese anderen Geräte zugreift.
+Operations Manager sammelt nur Daten direkt von Agents, die auf [Windows-Computern](/system-center/scom/plan-planning-agent-deployment?view=sc-om-1807#windows-agent) installiert sind. Er kann Daten aus dem Operations Manager SDK übernehmen, aber dieser Ansatz wird in der Regel für Partner verwendet, die das Produkt durch benutzerdefinierte Anwendungen erweitern, und nicht zur Erfassung von Überwachungsdaten. Er kann Daten von anderen Quellen wie [Linux-Computern](/system-center/scom/plan-planning-agent-deployment?view=sc-om-1807#linuxunix-agent) und Netzwerkgeräten erfassen. Dazu werden spezielle Module verwendet, die auf dem Windows-Agent ausgeführt werden, der über eine Remoteverbindung auf diese anderen Geräte zugreift.
 
 ![Diagramm zum Operations Manager-Agent](./media/monitoring-management-guidance-cloud-and-on-premises/data-collection-opsman-agents-optimized.svg)
 
@@ -89,7 +89,7 @@ Der Operations Manager-Agent kann Daten aus mehreren Datenquellen auf dem lokale
 
 #### <a name="management-packs"></a>Management Packs
 
-Operations Manager führt die gesamte Überwachung mit Workflows (Regeln, Monitore und Objektermittlungen) durch. Diese Workflows werden in einem [Management Pack](https://docs.microsoft.com/system-center/scom/manage-overview-management-pack?view=sc-om-2019) zusammengefasst und an Agents verteilt. Für eine Vielzahl von Produkten und Diensten, die vordefinierte Regeln und Monitore enthalten, sind Management Packs verfügbar. Sie können auch Ihr eigenes Management Pack für eigene Anwendungen und benutzerdefinierte Szenarien erstellen.
+Operations Manager führt die gesamte Überwachung mit Workflows (Regeln, Monitore und Objektermittlungen) durch. Diese Workflows werden in einem [Management Pack](/system-center/scom/manage-overview-management-pack?view=sc-om-2019) zusammengefasst und an Agents verteilt. Für eine Vielzahl von Produkten und Diensten, die vordefinierte Regeln und Monitore enthalten, sind Management Packs verfügbar. Sie können auch Ihr eigenes Management Pack für eigene Anwendungen und benutzerdefinierte Szenarien erstellen.
 
 #### <a name="monitoring-configuration"></a>Überwachungskonfiguration
 

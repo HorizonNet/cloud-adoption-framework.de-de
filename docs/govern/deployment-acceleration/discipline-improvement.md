@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3851fbc2634f98ce7e993be5cca14d89f523abf1
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: ce44848473da0a2eb5ec98406427e1ea8e46208d
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83400623"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573682"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>Verbesserung der Disziplin „Beschleunigung der Bereitstellung“
 
@@ -51,7 +51,7 @@ Diese Entwicklungsphase der Governance überbrückt die Lücke zwischen Geschäf
 
 - Führen Sie vollständig automatisierte Bereitstellungen bei neuen cloudbasierten Anwendungen frühzeitig im Entwicklungsprozess ein. Diese Investition verbessert die Zuverlässigkeit für Ihre Testprozesse und stellt die Konsistenz über all Ihre Entwicklungs-, Qualitätssicherungs- und Produktionsumgebungen hinweg sicher.
 - Speichern Sie alle Bereitstellungsartefakte, z.B. Bereitstellungsvorlagen oder Konfigurationsskripts, auf einer Plattform für die Quellcodeverwaltung wie GitHub oder Azure DevOps.
-- Speichern Sie alle Geheimnisse, Kennwörter, Zertifikate und Verbindungszeichenfolgen in [Azure Key Vault](https://docs.microsoft.com/azure/key-vault).
+- Speichern Sie alle Geheimnisse, Kennwörter, Zertifikate und Verbindungszeichenfolgen in [Azure Key Vault](/azure/key-vault).
 - Ziehen Sie die Durchführung eines Pilottests in Betracht, bevor Sie Ihre [Toolkette für die Beschleunigung der Bereitstellung](./toolchain.md) implementieren, um sicherzustellen, dass diese Ihre Bereitstellungen so weit wie möglich optimiert. Wenden Sie Feedback aus den Pilottests während der Phase vor der Bereitstellung an, und wiederholen Sie die Tests ggf.
 - Bewerten Sie die logische und physische Architektur Ihrer Anwendungen, und identifizieren Sie Möglichkeiten, um die Bereitstellung von Anwendungsressourcen zu automatisieren oder Teile der Architektur mithilfe anderer cloudbasierter Ressourcen zu verbessern.
 - Aktualisieren Sie das Dokument mit Architekturrichtlinien mit den Plänen für die Bereitstellung und die Akzeptanz durch Benutzer, und geben Sie es an die wichtigsten Beteiligten weiter.

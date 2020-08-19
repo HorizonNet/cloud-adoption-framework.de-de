@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 3afc881c3f99d740bf6d9146db2cb5024be56ac8
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 978524f0677c54627818ebe80a550c4334dcf66f
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193574"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571897"
 ---
 # <a name="phase-1-prerequisite-planning-for-azure-server-management-services"></a>Phase 1: Erforderliche Planung für Azure-Serververwaltungsdienste
 
@@ -33,20 +33,20 @@ In den folgenden Abschnitten wird die erforderliche Planung und Vorbereitung der
 
 Viele der Dienste, die Sie für das Onboarding der Azure-Verwaltungsdienste nutzen werden, erfordern einen Log Analytics-Arbeitsbereich und ein verknüpftes Azure Automation-Konto.
 
-Ein [Log Analytics-Arbeitsbereich](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace) ist eine spezifische Umgebung für das Speichern von Azure Monitor-Protokolldaten. Jeder Arbeitsbereich verfügt über ein eigenes Datenrepository und eine eigene Konfiguration. Datenquellen und Lösungen sind so konfiguriert, dass sie ihre Daten in bestimmten Arbeitsbereichen speichern. Azure-Überwachungslösungen erfordern, dass alle Server mit einem Arbeitsbereich verbunden sind, damit ihre Protokolldaten gespeichert und abgerufen werden können.
+Ein [Log Analytics-Arbeitsbereich](/azure/azure-monitor/learn/quick-create-workspace) ist eine spezifische Umgebung für das Speichern von Azure Monitor-Protokolldaten. Jeder Arbeitsbereich verfügt über ein eigenes Datenrepository und eine eigene Konfiguration. Datenquellen und Lösungen sind so konfiguriert, dass sie ihre Daten in bestimmten Arbeitsbereichen speichern. Azure-Überwachungslösungen erfordern, dass alle Server mit einem Arbeitsbereich verbunden sind, damit ihre Protokolldaten gespeichert und abgerufen werden können.
 
-Einige der Verwaltungsdienste erfordern ein [Azure Automation-Konto](https://docs.microsoft.com/azure/automation/automation-intro). Mit diesem Konto und den Funktionen von Azure Automation können Sie Azure-Dienste und andere öffentliche Systeme integrieren, um Ihre Serververwaltungsprozesse bereitzustellen, zu konfigurieren und zu verwalten.
+Einige der Verwaltungsdienste erfordern ein [Azure Automation-Konto](/azure/automation/automation-intro). Mit diesem Konto und den Funktionen von Azure Automation können Sie Azure-Dienste und andere öffentliche Systeme integrieren, um Ihre Serververwaltungsprozesse bereitzustellen, zu konfigurieren und zu verwalten.
 
 Die folgenden Azure-Serververwaltungsdienste erfordern einen verknüpften Log Analytics-Arbeitsbereich und ein Automation-Konto:
 
-- [Azure-Updateverwaltung](https://docs.microsoft.com/azure/automation/automation-update-management)
-- [Änderungsnachverfolgung und Bestand](https://docs.microsoft.com/azure/automation/change-tracking)
-- [Hybrid-Runbook-Worker](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker)
-- [Desired State Configuration](https://docs.microsoft.com/azure/virtual-machines/extensions/dsc-overview)
+- [Azure-Updateverwaltung](/azure/automation/automation-update-management)
+- [Änderungsnachverfolgung und Bestand](/azure/automation/change-tracking)
+- [Hybrid-Runbook-Worker](/azure/automation/automation-hybrid-runbook-worker)
+- [Desired State Configuration](/azure/virtual-machines/extensions/dsc-overview)
 
 Die zweite Phase dieses Leitfadens konzentriert sich auf die Bereitstellung von Diensten und Automatisierungsskripten. Es zeigt Ihnen, wie Sie einen Log Analytics-Arbeitsbereich und ein Automation-Konto erstellen. In diesem Leitfaden erfahren Sie auch, wie Sie mithilfe von Azure Policy sicherstellen, dass neue virtuelle Computer mit dem richtigen Arbeitsbereich verbunden sind.
 
-Bei den in diesem Leitfaden behandelten Beispiele wird von einer Bereitstellung ausgegangen, bei der noch keine Server in der Cloud bereitgestellt sind. Weitere Informationen zu den Prinzipien und Überlegungen bei der Planung Ihrer Arbeitsbereiche finden Sie unter [Verwalten von Protokolldaten und Arbeitsbereichen in Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access).
+Bei den in diesem Leitfaden behandelten Beispiele wird von einer Bereitstellung ausgegangen, bei der noch keine Server in der Cloud bereitgestellt sind. Weitere Informationen zu den Prinzipien und Überlegungen bei der Planung Ihrer Arbeitsbereiche finden Sie unter [Verwalten von Protokolldaten und Arbeitsbereichen in Azure Monitor](/azure/azure-monitor/platform/manage-access).
 
 ## <a name="planning-considerations"></a>Überlegungen zur Planung
 
@@ -54,8 +54,8 @@ Beachten Sie bei der Vorbereitung der Arbeitsbereiche und Konten, die Sie für d
 
 - **Azure-Geografien und Einhaltung gesetzlicher Bestimmungen**: Azure-Regionen sind in _Geografien_ unterteilt. Eine [Azure-Geografie](https://azure.microsoft.com/global-infrastructure/geographies) sorgt dafür, dass Anforderungen an Datenresidenz, Datenhoheit, Compliance und Ausfallsicherheit innerhalb geografischer Grenzen erfüllt werden. Wenn Ihre Workloads der Datenhoheit oder anderen Compliance-Anforderungen unterliegen, müssen der Arbeitsbereich und die Automation-Konten in Regionen innerhalb derselben Azure-Geografie wie die Workloadressourcen bereitgestellt werden, die sie unterstützen.
 - **Anzahl von Arbeitsbereichen**: Als ein Leitprinzip erstellen Sie die minimale Anzahl von Arbeitsbereichen, die pro Azure-Geografie erforderlich sind. Es wird mindestens ein Arbeitsbereich für jede Azure-Geographie empfohlen, in der sich Ihre Compute- oder Speicherressourcen befinden. Diese erste Ausrichtung trägt dazu bei, künftige regulatorische Probleme bei der Migration von Daten in verschiedene Geografien zu vermeiden.
-- **Datenaufbewahrung und Obergrenzen**: Möglicherweise müssen Sie beim Erstellen von Arbeitsbereichen oder Automation-Konten auch Datenaufbewahrungsrichtlinien oder Anforderungen an die Datenobergrenze berücksichtigen. Weitere Informationen zu diesen Prinzipien und zusätzliche Überlegungen bei der Planung Ihrer Arbeitsbereiche finden Sie unter [Verwalten von Protokolldaten und Arbeitsbereichen in Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access).
-- **Regionszuordnung**: Das Verknüpfen eines Log Analytics-Arbeitsbereich und eines Azure Automation-Kontos wird nur zwischen bestimmten Azure-Regionen unterstützt. Wenn beispielsweise der Log Analytics-Arbeitsbereich in der Region `East US` gehostet wird, muss das verknüpfte Automation-Konto in der Region `East US 2` erstellt werden, um mit Verwaltungsdiensten verwendet zu werden. Wenn Sie über ein Automation-Konto verfügen, das in einer anderen Regionen erstellt wurde, kann dafür keine Verknüpfung mit einem Arbeitsbereich in `East US` erstellt werden. Die Wahl der Bereitstellungsregion kann die Anforderungen an die Azure-Geografie erheblich beeinflussen. Entscheiden Sie mithilfe der [Regionszuordnungstabelle](https://docs.microsoft.com/azure/automation/how-to/region-mappings), welche Region Ihre Arbeitsbereiche und Automation-Konten hosten soll.
+- **Datenaufbewahrung und Obergrenzen**: Möglicherweise müssen Sie beim Erstellen von Arbeitsbereichen oder Automation-Konten auch Datenaufbewahrungsrichtlinien oder Anforderungen an die Datenobergrenze berücksichtigen. Weitere Informationen zu diesen Prinzipien und zusätzliche Überlegungen bei der Planung Ihrer Arbeitsbereiche finden Sie unter [Verwalten von Protokolldaten und Arbeitsbereichen in Azure Monitor](/azure/azure-monitor/platform/manage-access).
+- **Regionszuordnung**: Das Verknüpfen eines Log Analytics-Arbeitsbereich und eines Azure Automation-Kontos wird nur zwischen bestimmten Azure-Regionen unterstützt. Wenn beispielsweise der Log Analytics-Arbeitsbereich in der Region `East US` gehostet wird, muss das verknüpfte Automation-Konto in der Region `East US 2` erstellt werden, um mit Verwaltungsdiensten verwendet zu werden. Wenn Sie über ein Automation-Konto verfügen, das in einer anderen Regionen erstellt wurde, kann dafür keine Verknüpfung mit einem Arbeitsbereich in `East US` erstellt werden. Die Wahl der Bereitstellungsregion kann die Anforderungen an die Azure-Geografie erheblich beeinflussen. Entscheiden Sie mithilfe der [Regionszuordnungstabelle](/azure/automation/how-to/region-mappings), welche Region Ihre Arbeitsbereiche und Automation-Konten hosten soll.
 - **Multihoming für Arbeitsbereiche**: Der Azure Log Analytics-Agent unterstützt Multihoming in einigen Szenarien, für den Agent gelten jedoch mehrere Einschränkungen und Herausforderungen, wenn er in dieser Konfiguration ausgeführt wird. Sofern Microsoft es nicht für Ihr bestimmtes Szenario empfohlen hat, konfigurieren Sie Multihoming nicht für den Log Analytics-Agent.
 
 ## <a name="resource-placement-examples"></a>Beispiele für die Platzierung von Ressourcen
@@ -92,12 +92,12 @@ In einem alternativen Modell für große Umgebungen kann das Anwendungsentwicklu
 
 Nachdem Sie die beste Methode zum Platzieren und Organisieren von Arbeitsbereich-Konto-Paaren gewählt haben, stellen Sie sicher, dass Sie diese Ressourcen erstellt haben, bevor Sie mit dem Onboardingprozess beginnen. In den Automation-Beispielen weiter unten in diesem Leitfaden wird ein Paar aus einem Arbeitsbereich und einem Automation-Konto für Sie erstellt. Wenn Sie jedoch das Onboarding über das Portal durchführen möchten und nicht über ein vorhandenes Paar aus Arbeitsbereich und Automation-Konto verfügen, müssen Sie eines erstellen.
 
-Informationen zum Erstellen eines Log Analytics-Arbeitsbereichs über das Azure-Portal finden Sie unter [Erstellen eines Arbeitsbereichs](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace#create-a-workspace). Erstellen Sie anschließend ein entsprechendes Automation-Konto für jeden Arbeitsbereich, indem Sie die Schritte in [Erstellen eines Azure Automation-Kontos](https://docs.microsoft.com/azure/automation/automation-quickstart-create-account) ausführen.
+Informationen zum Erstellen eines Log Analytics-Arbeitsbereichs über das Azure-Portal finden Sie unter [Erstellen eines Arbeitsbereichs](/azure/azure-monitor/learn/quick-create-workspace#create-a-workspace). Erstellen Sie anschließend ein entsprechendes Automation-Konto für jeden Arbeitsbereich, indem Sie die Schritte in [Erstellen eines Azure Automation-Kontos](/azure/automation/automation-quickstart-create-account) ausführen.
 
 > [!NOTE]
 > Wenn Sie ein Automation-Konto über das Azure-Portal erstellen, versucht das Portal standardmäßig, „Ausführen als“-Konten sowohl für Ressourcen des Azure Resource Manager-Bereitstellungsmodells als auch des klassischen Bereitstellungsmodells zu erstellen. Wenn Sie keine klassischen virtuellen Computer in Ihrer Umgebung verwenden und nicht der Co-Admin im Abonnement sind, erstellt das Portal ein Konto vom Typ „Ausführen als“ für Resource Manager, generiert bei der Bereitstellung des klassischen „Ausführen als“-Kontos jedoch einen Fehler. Wenn Sie nicht beabsichtigen, klassische Ressourcen zu unterstützen, können Sie diesen Fehler ignorieren.
 >
-> „Ausführen als“-Konten können auch mithilfe von [PowerShell](https://docs.microsoft.com/azure/automation/manage-runas-account#creating-a-run-as-account-using-powershell) erstellt werden.
+> „Ausführen als“-Konten können auch mithilfe von [PowerShell](/azure/automation/manage-runas-account#creating-a-run-as-account-using-powershell) erstellt werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

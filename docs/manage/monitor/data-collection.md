@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: a8b8a6c043a5a9b5f666d4a9e1d31d4990ff6380
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 0ee10a89165130dbe29101bef3e31faf76fe7a7d
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223795"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571087"
 ---
 # <a name="cloud-monitoring-guide-collect-the-right-data"></a>Leitfaden zur Cloudüberwachung: Erfassen der richtigen Daten
 
@@ -26,7 +26,7 @@ Planen Sie die Überwachung und Migration sorgfältig. Starten Sie mit dem Einbe
 - Wie setzt sich der Dienst zusammen? Werden diese Abhängigkeiten aktuell überwacht? Sind in diesem Fall mehrere Tools beteiligt? Gibt es eine Möglichkeit der Konsolidierung, ohne Risiken einzugehen?
 - Was ist die SLA des Diensts, und wie kann ich sie messen und melden?
 - Wie sollte das Dienstdashboard aussehen, wenn ein Vorfall auftritt? Wie sollte das Dienstdashboard für den Besitzer des Diensts und das Team, das den Dienst unterstützt, aussehen?
-- Welche Metriken produziert die Ressource, die ich überwachen muss?  
+- Welche Metriken produziert die Ressource, die ich überwachen muss?
 - Wie werden der Besitzer des Diensts, Supportteams und andere Personen die Protokolle durchsuchen?
 
 Ihre Antworten auf diese Fragen bestimmen zusammen mit den Kriterien für die Warnungen, wie Sie die Überwachungsplattform nutzen werden. Wenn Sie von einer bestehenden Überwachungsplattform oder einem Satz von Überwachungstools migrieren, nutzen Sie die Migration als Gelegenheit, die von Ihnen gesammelten Signale neu zu bewerten. Dies gilt insbesondere jetzt, da mehrere Kostenfaktoren bei der Migration oder Integration in eine cloudbasierte Überwachungsplattform wie Azure Monitor zu berücksichtigen sind. Denken Sie daran, dass die Überwachung von Daten handlungsrelevant sein muss. Sie müssen optimierte Daten gesammelt haben, um Ihnen umfassende Übersicht über den allgemeinen Zustand des Diensts zu bieten. Die zum Identifizieren realer Vorfälle definierte Instrumentierung sollte so einfach, vorhersehbar und zuverlässig wie möglich sein.

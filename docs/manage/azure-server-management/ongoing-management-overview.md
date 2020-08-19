@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d006773b66bf9e41301c4d2e9b34018394594e28
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: adeda043b1631caf19975163c3433f7aa9bef12a
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430533"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571880"
 ---
 # <a name="phase-3-ongoing-management-and-security"></a>Phase 3: Kontinuierliche Verwaltung und Sicherheit
 
@@ -28,7 +28,7 @@ Nach dem Onboarding der Azure-Serververwaltungsdienste müssen Sie sich auf die 
 
 Das Azure Security Center ist der zentrale Punkt, an dem Sie die Sicherheit für Ihre Umgebung verwalten können. Es werden eine Gesamtbewertung und gezielte Empfehlungen angezeigt.
 
-Es wird empfohlen, die Empfehlungen dieses Diensts zu überprüfen und zu implementieren. Informationen zu den zusätzlichen Vorteilen von Azure Security Center finden Sie unter [Befolgen der Azure Security Center-Empfehlungen](https://docs.microsoft.com/azure/migrate/migrate-best-practices-security-management#best-practice-follow-azure-security-center-recommendations).
+Es wird empfohlen, die Empfehlungen dieses Diensts zu überprüfen und zu implementieren. Informationen zu den zusätzlichen Vorteilen von Azure Security Center finden Sie unter [Befolgen der Azure Security Center-Empfehlungen](/azure/migrate/migrate-best-practices-security-management#best-practice-follow-azure-security-center-recommendations).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

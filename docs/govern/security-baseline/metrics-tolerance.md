@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 974a500a846cfe1a907d91b1b055d6b75b94a3d9
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: eb051191f156bd8a4c7a9453449b6591b8838921
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755213"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195251"
 ---
 # <a name="risk-tolerance-metrics-and-indicators-in-the-security-baseline-discipline"></a>Risikotoleranzmetriken und -indikatoren in der Disziplin „Sicherheitsbaseline“
 
@@ -47,11 +47,11 @@ Legen Sie nach der Einigung auf eine Baseline minimale Benchmarks fest, die eine
 
 - **Trigger für geschäftskritische Workloads.** Ein Unternehmen, das geschäftskritische Workloads in der Cloud bereitstellt, sollte in die Disziplin „Sicherheitsbaseline“ investieren, um mögliche Unterbrechungen des Diensts oder die Offenlegung sensibler Daten zu verhindern.
 - **Trigger für geschützte Daten.** Ein Unternehmen, das Daten in der Cloud hostet, die als vertraulich, privat oder anderweitig rechtlich bedenklich eingestuft werden können. Es ist eine Disziplin „Sicherheitsbaseline“ erforderlich, um sicherzustellen, dass diese Daten nicht verloren gehen, offengelegt oder gestohlen werden.
-- **Trigger für externe Angriffe.** Ein Unternehmen, bei dem _x_-mal im Monat schwere Angriffe auf die Netzwerkinfrastruktur stattfinden, kann von der Disziplin „Sicherheitsbaseline“ profitieren.
-- **Trigger für Einhaltung von Standards.** Ein Unternehmen, bei dem mehr als _x %_ seiner Ressourcen nicht den Sicherheitsstandards entsprechen, sollte in die Disziplin „Sicherheitsbaseline“ investieren, um sicherzustellen, dass Standards in der gesamten IT-Infrastruktur konsistent angewendet werden.
-- **Trigger für Größe der Cloudumgebung.** Ein Unternehmen, das mehr als _x_ Anwendungen, Dienste oder Datenquellen hostet. Große Cloudbereitstellungen können von Investitionen in die Disziplin „Sicherheitsbaseline“ profitieren, um sicherzustellen, dass ihre gesamte Angriffsfläche angemessen vor unbefugtem Zugriff oder anderen externen Bedrohungen geschützt ist.
-- **Trigger für Konformität der Sicherheitssoftware.** Ein Unternehmen, in dem auf weniger als _x %_ der bereitgestellten virtuellen Computer die gesamte erforderliche Sicherheitssoftware installiert ist. Mithilfe der Disziplin „Sicherheitsbaseline“ kann sichergestellt werden, dass Software konsistent auf allen Computern installiert ist.
-- **Trigger für Patching.** Ein Unternehmen, in dem auf bereitgestellten virtuellen Computern oder Diensten in den letzten _x_ Tagen keine Betriebssystem- oder Softwarepatches angewendet wurden. Mithilfe der Disziplin „Sicherheitsbaseline“ kann sichergestellt werden, dass Patches innerhalb eines erforderlichen Zeitplans auf dem neuesten Stand gehalten werden.
+- **Trigger für externe Angriffe.** Ein Unternehmen, bei dem *x*-mal im Monat schwere Angriffe auf die Netzwerkinfrastruktur stattfinden, kann von der Disziplin „Sicherheitsbaseline“ profitieren.
+- **Trigger für Einhaltung von Standards.** Ein Unternehmen, bei dem mehr als *x %* seiner Ressourcen nicht den Sicherheitsstandards entsprechen, sollte in die Disziplin „Sicherheitsbaseline“ investieren, um sicherzustellen, dass Standards in der gesamten IT-Infrastruktur konsistent angewendet werden.
+- **Trigger für Größe der Cloudumgebung.** Ein Unternehmen, das mehr als *x* Anwendungen, Dienste oder Datenquellen hostet. Große Cloudbereitstellungen können von Investitionen in die Disziplin „Sicherheitsbaseline“ profitieren, um sicherzustellen, dass ihre gesamte Angriffsfläche angemessen vor unbefugtem Zugriff oder anderen externen Bedrohungen geschützt ist.
+- **Trigger für Konformität der Sicherheitssoftware.** Ein Unternehmen, in dem auf weniger als *x %* der bereitgestellten virtuellen Computer die gesamte erforderliche Sicherheitssoftware installiert ist. Mithilfe der Disziplin „Sicherheitsbaseline“ kann sichergestellt werden, dass Software konsistent auf allen Computern installiert ist.
+- **Trigger für Patching.** Ein Unternehmen, in dem auf bereitgestellten virtuellen Computern oder Diensten in den letzten *x* Tagen keine Betriebssystem- oder Softwarepatches angewendet wurden. Mithilfe der Disziplin „Sicherheitsbaseline“ kann sichergestellt werden, dass Patches innerhalb eines erforderlichen Zeitplans auf dem neuesten Stand gehalten werden.
 - **Sicherheitsorientiert.** Einige Unternehmen haben strenge Anforderungen in Bezug auf Sicherheit und Vertraulichkeit von Daten, selbst für Test- und experimentelle Workloads. Diese Unternehmen müssen in die Disziplin „Sicherheitsbaseline“ investieren, bevor mit Bereitstellungen begonnen werden kann.
 
 Die genauen Metriken und Auslöser, die Sie zum Bemessen der Risikotoleranz verwenden, und die Höhe der Investitionen in die Disziplin „Sicherheitsbaseline“ sind für Ihre Organisation spezifisch, doch sollten die oben genannten Beispiele eine hilfreiche Diskussionsgrundlage für Ihr Cloudgovernanceteam darstellen.

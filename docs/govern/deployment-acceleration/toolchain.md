@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9689944dc5c109143981cf59478f251d9cbfc06f
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 0f24b44be27111461e2374d12b8bdc75ca0aabb2
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86478224"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573614"
 ---
 # <a name="deployment-acceleration-tools-in-azure"></a>Tools für die Beschleunigung der Bereitstellung in Azure
 
@@ -23,26 +23,26 @@ Cloudverwalter, -überwacher und -architekten mit Interesse an der Governance we
 
 Im Folgenden ist eine Liste der Azure-Tools aufgeführt, die zur Ausreifung der Richtlinien und Prozesse beitragen können, die diese Disziplin unterstützen.
 
-|  | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) | [Azure-Verwaltungsgruppen](https://docs.microsoft.com/azure/governance/management-groups) | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview) | [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints/overview) | [Azure Resource Graph](https://docs.microsoft.com/azure/governance/resource-graph/overview) | [Azure Cost Management](https://docs.microsoft.com/azure/cost-management) |
+|  | [Azure Policy](/azure/governance/policy/overview) | [Azure-Verwaltungsgruppen](/azure/governance/management-groups) | [Azure Resource Manager](/azure/azure-resource-manager/management/overview) | [Azure Blueprint](/azure/governance/blueprints/overview) | [Azure Resource Graph](/azure/governance/resource-graph/overview) | [Azure Cost Management](/azure/cost-management) |
 |---------|---------|---------|---------|---------|---------|---------|
-| Unternehmensrichtlinien implementieren     | Ja | Nein  | Nein  | Nein | Nein | Nein |
-| Richtlinien zwischen Abonnements anwenden     | Erforderlich | Ja  | Nein  | Nein | Nein | Nein |
-| Definierte Ressourcen bereitstellen     | Nein | Nein  | Ja  | Nein | Nein | Nein |
-| Vollständig konforme Umgebungen erstellen      | Erforderlich | Erforderlich  | Erforderlich  | Ja | Nein | Nein |
-| Richtlinien überprüfen      | Ja | Nein  | Nein  | Nein | Nein | Nein |
-| Azure-Ressourcen abfragen      | Nein | Nein  | Nein  | Nein | Ja | Nein |
-| Kosten von Ressourcen berichten      | Nein | Nein  | Nein  | Nein | Nein | Ja |
+| **Unternehmensrichtlinien implementieren**     | Ja | Nein  | Nein  | Nein | Nein | Nein |
+| **Richtlinien zwischen Abonnements anwenden**     | Erforderlich | Ja  | Nein  | Nein | Nein | Nein |
+| **Definierte Ressourcen bereitstellen**     | Nein | Nein  | Ja  | Nein | Nein | Nein |
+| **Vollständig konforme Umgebungen erstellen**      | Erforderlich | Erforderlich  | Erforderlich  | Ja | Nein | Nein |
+| **Richtlinien überprüfen**      | Ja | Nein  | Nein  | Nein | Nein | Nein |
+| **Azure-Ressourcen abfragen**      | Nein | Nein  | Nein  | Nein | Ja | Nein |
+| **Kosten von Ressourcen berichten**      | Nein | Nein  | Nein  | Nein | Nein | Ja |
 
 Im Folgenden finden Sie zusätzliche Tools, die für die Umsetzung spezieller Ziele im Zusammenhang mit der Beschleunigung der Bereitstellung möglicherweise erforderlich sind. Oft kommen diese Tools außerhalb des Governance-Teams zum Einsatz, werden aber immer noch als Aspekt der Disziplin „Beschleunigung der Bereitstellung“ betrachtet.
 
-|  | [Azure portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)  | [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) | [Azure DevOps](https://docs.microsoft.com/azure/devops/user-guide/what-is-azure-devops) | [Azure Backup](https://docs.microsoft.com/azure/backup/backup-overview) | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) |
+|  | [Azure portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Resource Manager](/azure/azure-resource-manager/management/overview)  | [Azure Policy](/azure/governance/policy/overview) | [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops) | [Azure Backup](/azure/backup/backup-overview) | [Azure Site Recovery](/azure/site-recovery/site-recovery-overview) |
 |---------|---------|---------|---------|---------|---------|---------|
-| Manuelle Bereitstellung (einzelne Ressource)     | Ja | Ja  | Nein  | Nicht effizient | Nein | Ja |
-| Manuelle Bereitstellung (vollständige Umgebung)     | Nicht effizient | Ja | Nein  | Nicht effizient | Nein | Ja |
-| Automatische Bereitstellung (vollständige Umgebung)     | Nein  | Ja  | Nein  | Ja  | Nein | Ja |
-| Konfiguration einzelner Ressource aktualisieren     | Ja | Ja | Nicht effizient | Nicht effizient | Nein | Ja – während der Replikation |
-| Konfiguration vollständiger Umgebung aktualisieren     | Nicht effizient | Ja | Ja | Ja  | Nein | Ja – während der Replikation |
-| Konfigurationsabweichung verwalten     | Nicht effizient | Nicht effizient | Ja  | Ja  | Nein | Ja – während der Replikation |
-| Automatische Pipeline zum Bereitstellen von Code und Konfigurieren von Ressourcen (DevOps) erstellen     | Nein | Nein | Nein | Ja | Nein | Nein |
+| **Manuelle Bereitstellung (einzelne Ressource)**     | Ja | Ja  | Nein  | Nicht effizient | Nein | Ja |
+| **Manuelle Bereitstellung (vollständige Umgebung)**     | Nicht effizient | Ja | Nein  | Nicht effizient | Nein | Ja |
+| **Automatische Bereitstellung (vollständige Umgebung)**     | Nein  | Ja  | Nein  | Ja  | Nein | Ja |
+| **Konfiguration einzelner Ressource aktualisieren**     | Ja | Ja | Nicht effizient | Nicht effizient | Nein | Ja – während der Replikation |
+| **Konfiguration vollständiger Umgebung aktualisieren**     | Nicht effizient | Ja | Ja | Ja  | Nein | Ja – während der Replikation |
+| **Konfigurationsabweichung verwalten**     | Nicht effizient | Nicht effizient | Ja  | Ja  | Nein | Ja – während der Replikation |
+| **Automatische Pipeline zum Bereitstellen von Code und Konfigurieren von Ressourcen (DevOps) erstellen**     | Nein | Nein | Nein | Ja | Nein | Nein |
 
 Abgesehen von den oben erwähnten nativen Azure-Tools verwenden Kunden häufig Tools von Drittanbietern, um die Beschleunigung der Bereitstellung und DevOps-Bereitstellungen zu vereinfachen.

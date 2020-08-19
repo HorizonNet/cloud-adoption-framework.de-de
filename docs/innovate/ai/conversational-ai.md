@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: b73d7243ec3db4b6f36066674b140adcb20b9219
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 47d69db490f22f5c6513f5b6e26b559026b33728
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86452614"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568684"
 ---
 # <a name="conversational-ai"></a>Konversations-KI
 
@@ -36,24 +36,24 @@ Machen Sie sich mit Azure Bot Service und Microsoft Bot Framework vertraut.
 - Bot Framework ist ein Open-Source-Angebot, das ein SDK (verfügbar in C#, JavaScript, Python und Java) bereitstellt, das Sie beim Entwerfen, Entwickeln und Testen Ihres Bots unterstützt. Außerdem bietet es mit dem Bot Framework Composer einen kostenlosen visuellen Zeichenbereich und mit dem Bot Framework Emulator ein Testtool.
 - Azure Bot Service ist ein dedizierter Dienst in Azure, der es Ihnen ermöglicht, Ihren Bot in Azure zu hosten oder zu veröffentlichen und mit beliebten Kanälen zu verbinden.
 
-- [Erfahren Sie mehr über Azure Bot Service und Bot Framework.](https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0)
-- [Prinzipien des Bot-Entwurfs](https://docs.microsoft.com/azure/bot-service/bot-service-design-principles?view=azure-bot-service-4.0)
-- [Finden Sie die neuesten Versionen des Bot Framework SDK und der Tools.](https://docs.microsoft.com/azure/bot-service/what-is-new?view=azure-bot-service-4.0)
+- [Erfahren Sie mehr über Azure Bot Service und Bot Framework.](/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0)
+- [Prinzipien des Bot-Entwurfs](/azure/bot-service/bot-service-design-principles?view=azure-bot-service-4.0)
+- [Finden Sie die neuesten Versionen des Bot Framework SDK und der Tools.](/azure/bot-service/what-is-new?view=azure-bot-service-4.0)
 
 Eine der einfachsten Möglichkeiten für den Einstieg stellt QnA Maker dar. Dieser Dienst ist Teil von Azure Cognitive Services und kann ein Dokument mit häufig gestellten Fragen oder eine Website innerhalb von Minuten in eine Frage-Antwort-Umgebung verwandeln.
 
-- [Erfahren Sie, wie Sie mit QnA Maker schnell einen Bot mit Frage-Antwort-Funktion erstellen.](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-add-qna?view=azure-bot-service-4.0&tabs=csharp)
+- [Erfahren Sie, wie Sie mit QnA Maker schnell einen Bot mit Frage-Antwort-Funktion erstellen.](/azure/bot-service/bot-builder-tutorial-add-qna?tabs=csharp&view=azure-bot-service-4.0)
 - [Direktes Testen des QnA Maker-Diensts](https://www.qnamaker.ai/)
 
 Herunterladen und Verwenden des Bot Framework SDK und der Tools für die Bot-Entwicklung
 
-- [5-Minuten-Schnellstartanleitungen für Bot Framework Composer](https://docs.microsoft.com/composer/)
-- [Erstellen und Testen von Bots mit dem Bot Framework SDK (C#, JavaScript, Python)](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-sdk-quickstart?view=azure-bot-service-4.0)
+- [5-Minuten-Schnellstartanleitungen für Bot Framework Composer](/composer/)
+- [Erstellen und Testen von Bots mit dem Bot Framework SDK (C#, JavaScript, Python)](/azure/bot-service/dotnet/bot-builder-dotnet-sdk-quickstart?view=azure-bot-service-4.0)
 
 Erfahren Sie, wie Sie Cognitive Services hinzufügen, um Ihren Bot noch intelligenter zu gestalten.
 
 - [Entwicklerhandbuch zum Erstellen von KI-Anwendungen](https://www.oreilly.com/library/view/a-developers-guide/9781492080619/) (E-Book)
-- [Weitere Informationen zu Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/)
+- [Weitere Informationen zu Cognitive Services](/azure/cognitive-services/)
 
 Erfahren Sie, wie Sie einen eigenen virtuellen Assistenten mit Bot Framework-Solution Accelerators erstellen, und wählen Sie einen allgemeinen Satz von Skills aus, z. B. Kalender, E-Mail, Point of Interest oder Aufgaben.
 

@@ -7,12 +7,12 @@ ms.date: 06/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 048a19ac39b9488ad8ea68c269637d5052f00eee
-ms.sourcegitcommit: d31a9043d1ae9283ed126bf118ca26d1d18d6948
+ms.openlocfilehash: 249424c9aea50df96c94f479c06e3ae28a0d522b
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88040897"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196279"
 ---
 <!-- docsTest:ignore InterpretML FairLearn -->
 
@@ -53,7 +53,7 @@ Diese Leitlinien helfen Ihnen dabei, potenzielle Probleme während des gesamten 
 Es gibt Tools, die Entwicklern und Data Scientists dabei helfen können, KI-Systeme zu verstehen, zu schützen und zu kontrollieren. Diese können aus einer Vielzahl von Quellen stammen, z. B. aus Azure Machine Learning, Open-Source-Projekten oder der Forschung.
 
 - **Verstehen:** KI-Systeme können sich aus verschiedensten Gründen unerwartet verhalten. Softwaretools können Ihnen dabei helfen, das Verhalten Ihrer KI-Systeme zu verstehen, damit Sie sie besser an Ihre Anforderungen anpassen können. Beispiele für diese Art von Tools sind InterpretML und Fairlearn.
-- **Schützen:**  KI-Systeme basieren auf Daten. Softwaretools können Ihnen dabei helfen, diese Daten durch Gewährleistung von Datenschutz und Vertraulichkeit zu schützen. Beispiele hierfür sind das vertrauliche Computing für Machine Learning, der differenzielle Datenschutz mit WhiteNoise, die homomorphe Verschlüsselung mit SEAL und Presidio.
+- **Schützen:** KI-Systeme basieren auf Daten. Softwaretools können Ihnen dabei helfen, diese Daten durch Gewährleistung von Datenschutz und Vertraulichkeit zu schützen. Beispiele hierfür sind das vertrauliche Computing für Machine Learning, der differenzielle Datenschutz mit WhiteNoise, die homomorphe Verschlüsselung mit SEAL und Presidio.
 - **Kontrolle**: Verantwortungsbewusste KI erfordert Governance und Kontrolle während des gesamten Entwicklungszyklus. Azure Machine Learning bietet einen Überwachungspfad für bessere Nachverfolgbarkeit, Herkunftsermittlung und Kontrolle, um gesetzliche Anforderungen zu erfüllen. Beispiele wären etwa Überwachungspfad und Nachverfolgbarkeit.
 
 ## <a name="next-steps"></a>Nächste Schritte

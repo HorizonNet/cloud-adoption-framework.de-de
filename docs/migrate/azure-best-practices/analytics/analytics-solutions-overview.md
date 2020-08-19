@@ -7,18 +7,18 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3bf67daa8466618aa79669811e62881a5c8b5a3c
-ms.sourcegitcommit: 99151759b9d7dfc4e8aab345750eeae82d18d547
+ms.openlocfilehash: d907e2234338fa2f00776c2d9df7a58e78986393
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88075810"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88193979"
 ---
 <!-- cSpell:ignore Netezza Teradata Exadata Giga GigaOM MPP -->
 
 # <a name="azure-synapse-analytics-solutions"></a>Azure Synapse Analytics-Lösungen
 
-Die aktuell auf dem Markt verfügbaren Angebote werden den wachsenden Anforderungen einer Organisation nicht gerecht. Ältere lokale Umgebungen wie Teradata, Netezza und Oracle Exadata sind teuer, innovationshemmend und unflexibel. Unternehmen, die lokale Systeme verwenden, erwägen jetzt, innovative Cloud-, Infrastructure-as-a-Service- und Platform-as-a-Service-Angebote in neueren Umgebungen wie Azure zu nutzen. 
+Die aktuell auf dem Markt verfügbaren Angebote werden den wachsenden Anforderungen einer Organisation nicht gerecht. Ältere lokale Umgebungen wie Teradata, Netezza und Oracle Exadata sind teuer, innovationshemmend und unflexibel. Unternehmen, die lokale Systeme verwenden, erwägen jetzt, innovative Cloud-, Infrastructure-as-a-Service- und Platform-as-a-Service-Angebote in neueren Umgebungen wie Azure zu nutzen.
 
 Viele Organisationen sind bereit, kostenintensive Aufgaben wie die Infrastrukturwartung und die Plattformentwicklung an einen Cloudanbieter abzugeben. In Microsoft Azure hat eine Organisation Zugriff auf eine global verfügbare, hochsichere und skalierbare Cloudumgebung, die Azure Synapse Analytics in einem Ökosystem unterstützter Tools und Funktionen umfasst.
 

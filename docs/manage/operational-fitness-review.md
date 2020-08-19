@@ -7,18 +7,18 @@ ms.date: 10/17/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e02602545a229664f22b546a2ee39066c5fdc338
-ms.sourcegitcommit: 264382fcb31ad0c6387c15a74127f288f8920995
+ms.openlocfilehash: eb0b5b529bd649ee398631f528ffaa7c79470bad
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87805493"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570877"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Einrichten einer Überprüfung der Einsatztauglichkeit
 
 Wenn Ihr Unternehmen damit beginnt, Workloads in Azure auszuführen, besteht der nächste Schritt darin, einen Prozess zur _Überprüfung der Einsatztauglichkeit_ einzurichten. In diesem Prozess werden die _nicht funktionalen_ Anforderungen für diese Workloads aufgelistet, implementiert und iterativ überprüft. Nicht funktionale Anforderungen beziehen sich auf das erwartete betriebliche Verhalten des Diensts.
 
-Es gibt fünf wesentliche Kategorien nicht funktionaler Anforderungen, die als die [Säulen der Architekturexzellenz](https://docs.microsoft.com/azure/architecture/framework) bezeichnet werden:
+Es gibt fünf wesentliche Kategorien nicht funktionaler Anforderungen, die als die [Säulen der Architekturexzellenz](/azure/architecture/framework) bezeichnet werden:
 
 - Kostenoptimierung
 - Optimaler Betrieb
@@ -42,12 +42,12 @@ Wie in [Erste Schritte: Beschleunigen der Migration](../get-started/migrate.md) 
 
 Während dieses Vorgangs liegt der Schwerpunkt häufig auf den Features des Dienstanbieters: dem Satz der _funktionalen_ Anforderungen, die vom Dienst ausgeführt werden sollen. Ein Produktlieferdienst benötigt beispielsweise Funktionen zum Bestimmen des Quell- und Zielortes des Produkts, zur Verfolgung des Produkts während der Lieferung und zum Senden von Benachrichtigungen an Kunden.
 
-Im Gegensatz dazu beziehen sich die _nicht funktionalen_ Anforderungen auf Eigenschaften wie die [Verfügbarkeit](https://docs.microsoft.com/azure/architecture/checklist/availability), [Resilienz](https://docs.microsoft.com/azure/architecture/resiliency) und [Skalierbarkeit](/azure/architecture/framework/scalability/performance-efficiency) des Diensts. Diese Eigenschaften unterscheiden sich von den funktionalen Anforderungen, da sie die endgültige Funktion eines bestimmten Features im Dienst nicht direkt beeinflussen. Diese nicht funktionalen Anforderungen beziehen sich jedoch auf die Leistung und Kontinuität des Diensts.
+Im Gegensatz dazu beziehen sich die _nicht funktionalen_ Anforderungen auf Eigenschaften wie die [Verfügbarkeit](/azure/architecture/checklist/availability), [Resilienz](/azure/architecture/resiliency) und [Skalierbarkeit](/azure/architecture/framework/scalability/performance-efficiency) des Diensts. Diese Eigenschaften unterscheiden sich von den funktionalen Anforderungen, da sie die endgültige Funktion eines bestimmten Features im Dienst nicht direkt beeinflussen. Diese nicht funktionalen Anforderungen beziehen sich jedoch auf die Leistung und Kontinuität des Diensts.
 
 Sie können einige nicht funktionale Anforderungen in Form einer Vereinbarung zum Servicelevel (SLA) festlegen. Beispielsweise können Sie die Dienstkontinuität als Prozentsatz der Verfügbarkeit ausdrücken: „99,99 Prozent der Zeit verfügbar“. Andere nicht funktionale Anforderungen können schwieriger zu definieren sein und sich mit zunehmendem Produktionsbedarf ändern. So könnte beispielsweise ein verbraucherorientierter Dienst nach einem Popularitätsschub mit unerwarteten Durchsatzanforderungen konfrontiert werden.
 
 > [!NOTE]
-> Weitere Informationen zu den Anforderungen an die Resilienz finden Sie unter [Entwerfen zuverlässiger Azure-Anwendungen](https://docs.microsoft.com/azure/architecture/reliability#define-requirements). Dieser Artikel enthält Erläuterungen zu Konzepten wie RPO (Recovery Point Objective), RTO (Recovery Time Objective) und SLA.
+> Weitere Informationen zu den Anforderungen an die Resilienz finden Sie unter [Entwerfen zuverlässiger Azure-Anwendungen](/azure/architecture/reliability#define-requirements). Dieser Artikel enthält Erläuterungen zu Konzepten wie RPO (Recovery Point Objective), RTO (Recovery Time Objective) und SLA.
 
 ## <a name="process-for-operational-fitness-review"></a>Prozess zur Überprüfung der Einsatztauglichkeit
 
@@ -69,7 +69,7 @@ Die Schritte in dieser Phase schaffen die Voraussetzungen für eine regelmäßig
 
 1. **Analysieren der Dienstabhängigkeiten**. Die meisten Geschäftsvorgänge erfordern eine Orchestrierung zwischen mehreren unterstützenden Diensten. Es ist wichtig, die Abhängigkeiten zwischen den Diensten und dem Fluss unternehmenskritischer Transaktionen durch diese Dienste zu verstehen.
 
-    Berücksichtigen Sie auch die Abhängigkeiten zwischen lokalen Diensten und Azure-Diensten. Im Beispiel des Warenkorbs kann der Inventarbestands Verwaltungsdienst lokal gehostet werden und Daten erfassen, die von Mitarbeitern in einem physischen Lager eingegeben werden. Es kann jedoch vorkommen, dass Daten nicht lokal in einem Azure-Dienst ([z.B. Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction)) oder in einer Datenbank ([z.B. Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction)) gespeichert werden.
+    Berücksichtigen Sie auch die Abhängigkeiten zwischen lokalen Diensten und Azure-Diensten. Im Beispiel des Warenkorbs kann der Inventarbestands Verwaltungsdienst lokal gehostet werden und Daten erfassen, die von Mitarbeitern in einem physischen Lager eingegeben werden. Es kann jedoch vorkommen, dass Daten nicht lokal in einem Azure-Dienst ([z.B. Azure Storage](/azure/storage/common/storage-introduction)) oder in einer Datenbank ([z.B. Azure Cosmos DB](/azure/cosmos-db/introduction)) gespeichert werden.
 
 Eine Ausgabe aus diesen Aktivitäten ist ein Satz von _Scorecardmetriken_ für Dienstvorgänge. Die Scorecard misst Kriterien wie Verfügbarkeit, Skalierbarkeit und Notfallwiederherstellung. Scorecardmetriken drücken die operativen Kriterien aus, deren Erfüllung Sie vom Dienst erwarten. Diese Metriken können auf jeder Granularitätsstufe ausgedrückt werden, die für den Dienstvorgang geeignet ist.
 
@@ -121,17 +121,17 @@ Passen Sie die Details des Prozesses und der Besprechung so an, dass sie Ihre sp
 
 ## <a name="recommended-resources"></a>Empfohlene Ressourcen
 
-- [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework): Erfahren Sie mehr über die Grundsätze zum Verbessern der Qualität einer Workload. Das Framework besteht aus fünf Säulen der Architekturexzellenz:
+- [Microsoft Azure Well-Architected Framework](/azure/architecture/framework): Erfahren Sie mehr über die Grundsätze zum Verbessern der Qualität einer Workload. Das Framework besteht aus fünf Säulen der Architekturexzellenz:
   - Kostenoptimierung
   - Optimaler Betrieb
   - Effiziente Leistung
   - Zuverlässigkeit
   - Sicherheit
-- [Zehn Entwurfsprinzipien für Azure-Anwendungen](https://docs.microsoft.com/azure/architecture/guide/design-principles).
+- [Zehn Entwurfsprinzipien für Azure-Anwendungen](/azure/architecture/guide/design-principles).
     Befolgen Sie die folgenden Entwurfsprinzipien, um die Skalierbarkeit, Resilienz und Verwaltbarkeit Ihrer Anwendung zu optimieren.
-- [Entwerfen robuster Anwendungen für Azure](https://docs.microsoft.com/azure/architecture/resiliency).
+- [Entwerfen robuster Anwendungen für Azure](/azure/architecture/resiliency).
     Erstellen und pflegen Sie zuverlässige Systeme mit einem strukturierten Ansatz für die Lebensdauer einer Anwendung – vom Entwurf und der Implementierung über die Bereitstellung bis zum Betrieb.
-- [Cloudentwurfsmuster](https://docs.microsoft.com/azure/architecture/patterns).
+- [Cloudentwurfsmuster](/azure/architecture/patterns).
     Verwenden Sie Entwurfsmuster, um Anwendungen anhand der Säulen der Architekturexzellenz zu erstellen.
-- [Azure Advisor:](https://docs.microsoft.com/azure/advisor)
+- [Azure Advisor:](/azure/advisor)
     Azure Advisor bietet basierend auf Ihrer Nutzung und Ihren Konfigurationen personalisierte Empfehlungen zum Optimieren Ihrer Ressourcen im Hinblick auf Hochverfügbarkeit, Sicherheit, Leistung und Kosten.

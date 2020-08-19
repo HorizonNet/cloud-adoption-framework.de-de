@@ -7,12 +7,12 @@ ms.date: 05/22/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: c22cf44e9f03d900d6d8474a5c71cb2bdb0e8242
-ms.sourcegitcommit: d31a9043d1ae9283ed126bf118ca26d1d18d6948
+ms.openlocfilehash: 82bc64cace037fad5dd259e903d9e3a9a0e06e18
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88040965"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196733"
 ---
 # <a name="data-democratization"></a>Demokratisierung von Daten
 
@@ -41,4 +41,3 @@ Von dort werden Teilmengen von Daten in Data Marts extrahiert, um Aktivitäten i
 Damit ein Unternehmen effizient arbeiten kann, benötigt es alle Arten von Daten zu den oben beschriebenen verschiedenen Fertigkeiten und Rollen. Sie brauchen Rohdaten, die bereinigt wurden, damit Data Scientists Machine Learning-Modelle erstellen können. Sie benötigen bereinigte und strukturierte Daten, damit ein Data Warehouse eine zuverlässige Leistung für Geschäftsanwendungen und Dashboards bietet. Vor allem müssen Sie in der Lage sein, in wenigen Minuten und nicht in Tagen von Rohdaten zu Erkenntnissen zu gelangen.
 
 Azure Synapse Analytics verfügt mit Power BI über ein natives, integriertes Business-Intelligence-Tool. Dadurch können Sie basierend auf Rohdaten in nur wenigen Minuten ein Dashboard mit Erkenntnissen vollständig erstellen und müssen dafür nur einen Dienst über eine einzige Schnittstelle verwenden.
-

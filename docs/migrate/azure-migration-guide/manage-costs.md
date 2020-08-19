@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 33dc9a27eb04462f7195f537d8e2d4edacc36ca9
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: 5e6034308a11a8347c3b5126756c6a87d3fe98c0
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373100"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570452"
 ---
 <!-- cSpell:ignore bandersmsft -->
 
@@ -72,7 +72,7 @@ _Abbildung 1: Abbildung der Ansicht „Kostendetails“ einer Bewertung in Azure
 
 ### <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-- [Einrichten und Überprüfen einer Bewertung mit Azure Migrate](https://docs.microsoft.com/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
+- [Einrichten und Überprüfen einer Bewertung mit Azure Migrate](/azure/migrate/tutorial-assess-vmware#set-up-an-assessment)
 - Einen umfassenderen Plan zur Kostenverwaltung für eine größere Anzahl von Ressourcen (Infrastruktur, Apps und Daten) bietet das [Governancemodell für das Framework für die Cloudeinführung (Cloud Adoption Framework)](../../govern/guides/index.md). Informationen hierzu finden Sie unter [Übersicht über die Disziplin „Kostenverwaltung“](../../govern/cost-management/index.md) und [Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Cost Management“](../../govern/guides/complex/cost-management-improvement.md).
 
 ## <a name="estimate-and-optimize-vm-costs-during-and-after-migration"></a>[Schätzen und Optimieren der VM-Kosten während und nach der Migration](#tab/EstimateOptimize)
@@ -107,8 +107,8 @@ Anhand dieser Analyse können Sie die Gesamtkosten, das Budget (falls vorhanden)
 ### <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 - Einen umfassenderen Plan zur Kostenverwaltung für eine größere Anzahl von Ressourcen (Infrastruktur, Apps und Daten) bietet das [Governancemodell für das Framework für die Cloudeinführung (Cloud Adoption Framework)](../../govern/guides/index.md). Informationen hierzu finden Sie unter [Übersicht über die Disziplin „Kostenverwaltung“](../../govern/cost-management/index.md) und [Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Cost Management“](../../govern/guides/complex/cost-management-improvement.md).
-- Weitere Informationen zu Azure Advisor finden Sie unter [Reduzieren der Dienstkosten mit Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations).
-- Weitere Informationen zu Azure Cost Management und dem Azure-Abrechnungsportal finden Sie unter [Verstehen von und Arbeiten mit Bereichen](https://docs.microsoft.com/azure/cost-management/understand-work-scopes) und [Schnellstart: Ermitteln und Analysieren von Kosten mit der Kostenanalyse](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis).
+- Weitere Informationen zu Azure Advisor finden Sie unter [Reduzieren der Dienstkosten mit Azure Advisor](/azure/advisor/advisor-cost-recommendations).
+- Weitere Informationen zu Azure Cost Management und dem Azure-Abrechnungsportal finden Sie unter [Verstehen von und Arbeiten mit Bereichen](/azure/cost-management/understand-work-scopes) und [Schnellstart: Ermitteln und Analysieren von Kosten mit der Kostenanalyse](/azure/cost-management/quick-acm-cost-analysis).
 
 ## <a name="tips-and-tricks-to-optimize-costs"></a>[Tipps und Tricks zur Kostenoptimierung](#tab/TipsTricks)
 
@@ -132,7 +132,7 @@ Sprechen Sie mit Ihrem Microsoft-Kundenbetreuer, um zu verstehen, wie Sie aktuel
 
 ### <a name="azure-reservations"></a>Azure-Reservierungen
 
-Mit [Azure-Reservierungen](https://docs.microsoft.com/azure/cost-management-billing/reservations/save-compute-costs-reservations) können Sie Computekapazitäten für Ihre virtuellen Computer oder SQL-Datenbank-Instanzen für ein Jahr oder drei Jahre im Voraus erwerben. Bei der Vorauszahlung können Sie einen Rabatt für die Ressourcen in Anspruch nehmen, die Sie nutzen. Reservierungen können die Computekosten für Ihre virtuellen Computer oder SQL-Datenbank-Instanzen mit einer Vorauszahlung für ein Jahr oder drei Jahre erheblich reduzieren (um bis zu 72 Prozent im Vergleich zu den Preisen bei nutzungsbasierter Bezahlung). Reservierungen bieten einen Abrechnungsrabatt und wirken sich nicht auf den Laufzeitstatus Ihrer virtuellen Computer oder SQL-Datenbank-Instanzen aus.
+Mit [Azure-Reservierungen](/azure/cost-management-billing/reservations/save-compute-costs-reservations) können Sie Computekapazitäten für Ihre virtuellen Computer oder SQL-Datenbank-Instanzen für ein Jahr oder drei Jahre im Voraus erwerben. Bei der Vorauszahlung können Sie einen Rabatt für die Ressourcen in Anspruch nehmen, die Sie nutzen. Reservierungen können die Computekosten für Ihre virtuellen Computer oder SQL-Datenbank-Instanzen mit einer Vorauszahlung für ein Jahr oder drei Jahre erheblich reduzieren (um bis zu 72 Prozent im Vergleich zu den Preisen bei nutzungsbasierter Bezahlung). Reservierungen bieten einen Abrechnungsrabatt und wirken sich nicht auf den Laufzeitstatus Ihrer virtuellen Computer oder SQL-Datenbank-Instanzen aus.
 
 ### <a name="use-azure-hybrid-benefit"></a>Verwenden des Azure-Hybridvorteils
 
@@ -140,7 +140,7 @@ Wenn in Ihren lokalen Bereitstellungen Windows Server- oder SQL Server-Lizenzen 
 
 ### <a name="low-priority-vms-with-batch"></a>VMs mit niedriger Priorität mit Batch
 
-Für Hintergrundprozesse mit niedrigerer Priorität stellt Batch eine Möglichkeit zum Verwalten von Hintergrunddienst-VMs und zum Senken der Kosten dar. Allerdings sollten Sie vor der Auswahl dieser Rabattoption verstehen, welche Auswirkungen [VMs mit niedriger Priorität mit Batch](https://docs.microsoft.com/azure/batch/batch-low-pri-vms) auf die Leistung haben.
+Für Hintergrundprozesse mit niedrigerer Priorität stellt Batch eine Möglichkeit zum Verwalten von Hintergrunddienst-VMs und zum Senken der Kosten dar. Allerdings sollten Sie vor der Auswahl dieser Rabattoption verstehen, welche Auswirkungen [VMs mit niedriger Priorität mit Batch](/azure/batch/batch-low-pri-vms) auf die Leistung haben.
 
 ### <a name="additional-resources"></a>Zusätzliche Ressourcen
 

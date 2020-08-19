@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: d1ae5369d1edc9374e4a5f8f6297bae47e71b94a
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 39b9d4781b5caabed5524577be9819e4544ec665
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86478411"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567154"
 ---
 <!-- cSpell:ignore mysqldump InnoDB binlog Navicat -->
 
@@ -63,14 +63,14 @@ Verwenden von Azure Database Migration Service, um die Datenbank zu einer Azur
 
 Im Rahmen des Lösungsentwurfs hat Contoso die in Azure verfügbaren Features für das Hosting der MySQL-Daten geprüft. Die folgenden Überlegungen haben dabei im Unternehmen zu der Entscheidung für Azure geführt:
 
-- Ähnlich wie Azure SQL-Datenbank unterstützt auch Azure Database for MySQL [Firewallregeln](https://docs.microsoft.com/azure/mysql/concepts-firewall-rules).
-- Azure Database for MySQL kann mit [Azure Virtual Network](https://docs.microsoft.com/azure/mysql/concepts-data-access-and-security-vnet) verwendet werden, um zu verhindern, dass die Instanz öffentlich zugänglich ist.
+- Ähnlich wie Azure SQL-Datenbank unterstützt auch Azure Database for MySQL [Firewallregeln](/azure/mysql/concepts-firewall-rules).
+- Azure Database for MySQL kann mit [Azure Virtual Network](/azure/mysql/concepts-data-access-and-security-vnet) verwendet werden, um zu verhindern, dass die Instanz öffentlich zugänglich ist.
 - Azure Database for MySQL verfügt über die erforderlichen Compliance- und Datenschutzzertifizierungen, die Contoso für seine Prüfer einhalten muss.
 - Die Verarbeitungsleistung für Berichte und Anwendung wird durch die Verwendung von Lesereplikaten verbessert.
-- Der Dienst kann mithilfe von [Azure Private Link](https://docs.microsoft.com/azure/mysql/concepts-data-access-security-private-link) nur für den internen Netzwerkdatenverkehr (kein öffentlicher Zugriff) verfügbar gemacht werden.
+- Der Dienst kann mithilfe von [Azure Private Link](/azure/mysql/concepts-data-access-security-private-link) nur für den internen Netzwerkdatenverkehr (kein öffentlicher Zugriff) verfügbar gemacht werden.
 - Contoso hat entschieden, nicht zu Azure Database for MySQL zu wechseln, da möglicherweise in Zukunft das MariaDB ColumnStore- und GraphDBMS-Datenbankmodell verwendet werden soll.
 - Abgesehen von den MySQL-Features ist Contoso ein Befürworter echter Open-Source-Projekte und entscheidet sich gegen den Einsatz von MySQL.
-- Die [Bandbreite und Wartezeit](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways) zwischen der Anwendung und der Datenbank ist je nach ausgewähltem Gateway (Azure ExpressRoute oder Site-to-Site-VPN) ausreichend.
+- Die [Bandbreite und Wartezeit](/azure/vpn-gateway/vpn-gateway-about-vpngateways) zwischen der Anwendung und der Datenbank ist je nach ausgewähltem Gateway (Azure ExpressRoute oder Site-to-Site-VPN) ausreichend.
 
 ### <a name="solution-review"></a>Überprüfung der Lösung
 
@@ -78,8 +78,8 @@ Contoso bewertet den vorgeschlagen Entwurf anhand einer Liste mit Vor- und Nacht
 
 | Aspekt | Details |
 | --- | --- |
-| **Vorteile** | Azure Database for MySQL bietet eine finanziell abgesicherte Vereinbarung zum Service Level (SLA) von 99,99 Prozent für [Hochverfügbarkeit](https://docs.microsoft.com/azure/mysql/concepts-high-availability). <br><br> Azure bietet die Möglichkeit, während Spitzenladezeiten jedes Quartal zentral hoch- oder herunterzuskalieren. Contoso kann durch den Kauf von [reservierter Kapazität](https://docs.microsoft.com/azure/mysql/concept-reserved-pricing) noch weitere Einsparungen erzielen. <br><br> Azure bietet Funktionen zur Point-in-Time-Wiederherstellung und Geowiederherstellung für Azure Database for MySQL. <br><br> |
-| **Nachteile** | Contoso ist auf die MySQL-Releaseversionen beschränkt, die in Azure unterstützt werden. Dies sind aktuell die Versionen 10.2 und 10.3. <br><br> Azure Database for MySQL weist einige [Einschränkungen](https://docs.microsoft.com/azure/mysql/concepts-limits) auf, z. B. das Herunterskalieren des Speichers. |
+| **Vorteile** | Azure Database for MySQL bietet eine finanziell abgesicherte Vereinbarung zum Service Level (SLA) von 99,99 Prozent für [Hochverfügbarkeit](/azure/mysql/concepts-high-availability). <br><br> Azure bietet die Möglichkeit, während Spitzenladezeiten jedes Quartal zentral hoch- oder herunterzuskalieren. Contoso kann durch den Kauf von [reservierter Kapazität](/azure/mysql/concept-reserved-pricing) noch weitere Einsparungen erzielen. <br><br> Azure bietet Funktionen zur Point-in-Time-Wiederherstellung und Geowiederherstellung für Azure Database for MySQL. <br><br> |
+| **Nachteile** | Contoso ist auf die MySQL-Releaseversionen beschränkt, die in Azure unterstützt werden. Dies sind aktuell die Versionen 10.2 und 10.3. <br><br> Azure Database for MySQL weist einige [Einschränkungen](/azure/mysql/concepts-limits) auf, z. B. das Herunterskalieren des Speichers. |
 
 ## <a name="proposed-architecture"></a>Vorgeschlagene Architektur
 
@@ -109,7 +109,7 @@ _Abbildung 2: Der Migrationsvorgang._
 
 #### <a name="migration"></a>Migration
 
-Die Administratoren von Contoso migrieren die Datenbank mithilfe von Azure Database Migration Service, indem sie die Schritte im [ausführlichen Migrationstutorial](https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online) befolgen. Sie können Online-, Offline- und Hybridmigrationen (Vorschauversion) von MySQL 5.6 oder 5.7 ausführen.
+Die Administratoren von Contoso migrieren die Datenbank mithilfe von Azure Database Migration Service, indem sie die Schritte im [ausführlichen Migrationstutorial](/azure/dms/tutorial-mysql-azure-mysql-online) befolgen. Sie können Online-, Offline- und Hybridmigrationen (Vorschauversion) von MySQL 5.6 oder 5.7 ausführen.
 
 > [!NOTE]
 > MySQL 8.0 wird in Azure Database for MySQL unterstützt. Das Database Migration Service-Tool unterstützt diese Version noch nicht.
@@ -153,7 +153,7 @@ Da die migrierten Ressourcen in Azure enthalten sind, muss Contoso seine neue In
 
 Contoso muss Folgendes durchführen:
 
-- Sicherstellen, dass die neue Azure Database for MySQL-Instanz und die Datenbanken geschützt sind. Weitere Informationen finden Sie unter [Sicherheit in Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/concepts-security).
+- Sicherstellen, dass die neue Azure Database for MySQL-Instanz und die Datenbanken geschützt sind. Weitere Informationen finden Sie unter [Sicherheit in Azure Database for MySQL](/azure/mysql/concepts-security).
 - Die Konfiguration der Firewall und des virtuellen Netzwerks überprüfen.
 - Contoso sollte Private Link einrichten, damit der gesamte Datenverkehr der Datenbanken innerhalb von Azure und des lokalen Netzwerks bleibt.
 - Contoso sollte Azure Advanced Threat Protection aktivieren.

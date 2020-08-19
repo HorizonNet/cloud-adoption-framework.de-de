@@ -7,12 +7,12 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 11f13f38508d480a86eab45ba9bcfe805c27a180
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: acd549f4ccfce0ce8ff115817e6aed1f2c12b938
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193778"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568922"
 ---
 <!-- cSpell:ignore njray nanra Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX TIP dbextents Raincode Tmax -->
 
@@ -52,7 +52,7 @@ Die Leistung cloudbasierter Umgebungen beruht auf parallelen Computeressourcen u
 
 ### <a name="data-ingestion-systems"></a>Datenerfassungssysteme
 
-Mainframes erfassen große Datenbatches aus Einzelhandel, Finanzdienstleistungen, Fertigung und anderen Verarbeitungslösungen. Mit Azure können Sie einfache Befehlszeilen-Hilfsprogramme wie z.B. [AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy) zum Kopieren von Daten in und aus dem Speicherort verwenden. Sie können auch den [Azure Data Factory](https://docs.microsoft.com/azure/data-factory/introduction)-Dienst verwenden, um Daten aus unterschiedlichen Datenspeichern zu erfassen und datengesteuerte Workflows zu erstellen und zu planen.
+Mainframes erfassen große Datenbatches aus Einzelhandel, Finanzdienstleistungen, Fertigung und anderen Verarbeitungslösungen. Mit Azure können Sie einfache Befehlszeilen-Hilfsprogramme wie z.B. [AzCopy](/azure/storage/common/storage-use-azcopy) zum Kopieren von Daten in und aus dem Speicherort verwenden. Sie können auch den [Azure Data Factory](/azure/data-factory/introduction)-Dienst verwenden, um Daten aus unterschiedlichen Datenspeichern zu erfassen und datengesteuerte Workflows zu erstellen und zu planen.
 
 Neben Emulationsumgebungen stellt Azure auch PaaS-Lösungen (Platform-as-a-Service) und Analysedienste bereit, mit denen vorhandene Mainframe-Umgebungen erweitert werden können.
 
@@ -64,7 +64,7 @@ TP-Monitore sind von verschiedenen Herstellern erhältlich und werden auf virtue
 
 ![Migration einer Mainframe-Umgebung per „Lift & Shift“ zu Azure mithilfe von Emulationssoftware](../../_images/mainframe-migration/mainframe-vs-azure.png)
 
-In Azure werden Emulationsumgebungen verwendet, um den TP-Manager und die Batchaufträge auszuführen, die JCL nutzen. In der Datenschicht wird DB2 durch [Azure SQL-Datenbank](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) ersetzt, obwohl auch Microsoft SQL Server, DB2 LUW oder Oracle Database verwendet werden können. Ein Emulator unterstützt IMS, VSAM und SEQ. Die Systemverwaltungstools des Mainframes werden durch Azure-Dienste und Software von anderen Herstellern ersetzt, die auf virtuellen Computern ausgeführt werden.
+In Azure werden Emulationsumgebungen verwendet, um den TP-Manager und die Batchaufträge auszuführen, die JCL nutzen. In der Datenschicht wird DB2 durch [Azure SQL-Datenbank](/azure/sql-database/sql-database-technical-overview) ersetzt, obwohl auch Microsoft SQL Server, DB2 LUW oder Oracle Database verwendet werden können. Ein Emulator unterstützt IMS, VSAM und SEQ. Die Systemverwaltungstools des Mainframes werden durch Azure-Dienste und Software von anderen Herstellern ersetzt, die auf virtuellen Computern ausgeführt werden.
 
 Die Funktionalität für Bildschirmverarbeitung und Formulareinträge wird häufig über Webserver implementiert, die mit Datenbank-APIs wie ADO, ODBC und JDBC für den Datenzugriff und Transaktionen kombiniert werden können. Die genaue Zusammenstellung zu verwendender Azure-IaaS-Komponenten hängt vom bevorzugten Betriebssystem ab. Beispiel:
 
@@ -76,7 +76,7 @@ Die Funktionalität für Bildschirmverarbeitung und Formulareinträge wird häuf
 
 Batchvorgänge in Azure unterscheiden sich von der typischen Batchumgebung auf Mainframes. Mainframebatchaufträge sind in der Regel serieller Natur, und ihre Leistung hängt von den IOPS ab, die vom Mainframebackbone ermöglicht werden. Die Leistung cloudbasierter Umgebungen beruht auf parallelen Computeressourcen und Hochgeschwindigkeitsnetzwerken.
 
-Um die Batchleistung mithilfe von Azure zu optimieren, ziehen Sie die [Compute](https://docs.microsoft.com/azure/virtual-machines/windows/overview)-, [Speicher](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction)-, [Netzwerk](https://azure.microsoft.com/blog/maximize-your-vm-s-performance-with-accelerated-networking-now-generally-available-for-both-windows-and-linux)- und [Überwachungsoptionen](https://docs.microsoft.com/azure/azure-monitor/overview) wie folgt in Betracht.
+Um die Batchleistung mithilfe von Azure zu optimieren, ziehen Sie die [Compute](/azure/virtual-machines/windows/overview)-, [Speicher](/azure/storage/blobs/storage-blobs-introduction)-, [Netzwerk](https://azure.microsoft.com/blog/maximize-your-vm-s-performance-with-accelerated-networking-now-generally-available-for-both-windows-and-linux)- und [Überwachungsoptionen](/azure/azure-monitor/overview) wie folgt in Betracht.
 
 ### <a name="compute"></a>Compute
 
@@ -94,7 +94,7 @@ Verwendung:
 
 Verwendung:
 
-- [Azure SSD Premium](https://docs.microsoft.com/azure/virtual-machines/windows/premium-storage) oder [Azure SSD Ultra](https://docs.microsoft.com/azure/virtual-machines/windows/disks-ultra-ssd) für maximal verfügbare IOPS.
+- [Azure SSD Premium](/azure/virtual-machines/windows/premium-storage) oder [Azure SSD Ultra](/azure/virtual-machines/windows/disks-ultra-ssd) für maximal verfügbare IOPS.
 
 - Striping mit mehreren Datenträgern für mehr IOPS pro Speichergröße.
 
@@ -102,11 +102,11 @@ Verwendung:
 
 ### <a name="networking"></a>Netzwerk
 
-- Verwenden Sie den [beschleunigten Azure-Netzwerkbetrieb](https://docs.microsoft.com/azure/virtual-network/create-vm-accelerated-networking-powershell), um Wartezeiten zu verringern.
+- Verwenden Sie den [beschleunigten Azure-Netzwerkbetrieb](/azure/virtual-network/create-vm-accelerated-networking-powershell), um Wartezeiten zu verringern.
 
 ### <a name="monitoring"></a>Überwachung
 
-- Verwenden Sie Überwachungstools. [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview), [Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview) und die Azure-Protokolle ermöglichen Administratoren die Überwachung einer übermäßigen Auslastung von Batchausführungen und helfen bei der Beseitigung von Engpässen.
+- Verwenden Sie Überwachungstools. [Azure Monitor](/azure/azure-monitor/overview), [Application Insights](/azure/application-insights/app-insights-overview) und die Azure-Protokolle ermöglichen Administratoren die Überwachung einer übermäßigen Auslastung von Batchausführungen und helfen bei der Beseitigung von Engpässen.
 
 ## <a name="migrate-development-environments"></a>Migrieren von Entwicklungsumgebungen
 
@@ -126,7 +126,7 @@ Die verteilten Architekturen der Cloud basieren auf einem anderen Satz aus Entwi
 
 ## <a name="migrate-databases-and-data"></a>Migrieren von Datenbanken und Daten
 
-Die Anwendungsmigration umfasst in der Regel das Zuweisen eines neuen Hosts für die Datenschicht. Sie können Ihre SQL Server-, Open Source- und anderen relationalen Datenbanken mit [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) zu vollständig verwalteten Lösungen in Azure migrieren, z. B. [Azure SQL Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance), [Azure Database for PostgreSQL](https://docs.microsoft.com/azure/postgresql/overview) und [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/overview).
+Die Anwendungsmigration umfasst in der Regel das Zuweisen eines neuen Hosts für die Datenschicht. Sie können Ihre SQL Server-, Open Source- und anderen relationalen Datenbanken mit [Azure Database Migration Service](/azure/dms/dms-overview) zu vollständig verwalteten Lösungen in Azure migrieren, z. B. [Azure SQL Managed Instance](/azure/sql-database/sql-database-managed-instance), [Azure Database for PostgreSQL](/azure/postgresql/overview) und [Azure Database for MySQL](/azure/mysql/overview).
 
 Beispielsweise können Sie die Migration durchführen, wenn in der Mainframedatenschicht Folgendes verwendet wird:
 
@@ -168,7 +168,7 @@ Das Verschieben von Lösungen aus einem Mainframe nach Azure kann eine _mehrstuf
 
 In einem häufigen Szenario wird eine Anwendung nach Azure verschoben, während die von der Anwendung verwendeten Daten auf dem Mainframe bleiben. Eine spezielle Software wird verwendet, um den Anwendungen in Azure den Zugriff auf Daten auf dem Mainframe zu ermöglichen. Glücklicherweise stellen zahlreiche Lösungen die Integration zwischen Azure und vorhandenen Mainframe-Umgebungen, die Unterstützung für Hybridszenarien und die Migration über einen längeren Zeitraum bereit. Microsoft-Partner, unabhängige Softwarehersteller und Systemintegratoren können Sie bei diesem Prozess unterstützen.
 
-Eine Möglichkeit ist beispielsweise [Microsoft Host Integration Server](https://docs.microsoft.com/host-integration-server). Diese Lösung stellt die verteilte Architektur relationaler Datenbanken (DRDA) bereit, die erforderlich ist, damit Anwendungen in Azure auf Daten in DB2 auf dem Mainframe zugreifen können. Zu weiteren Optionen für die Integration von Mainframes in Azure zählen Lösungen von IBM, Attunity, Codit und anderen Anbietern sowie Open Source-Optionen.
+Eine Möglichkeit ist beispielsweise [Microsoft Host Integration Server](/host-integration-server). Diese Lösung stellt die verteilte Architektur relationaler Datenbanken (DRDA) bereit, die erforderlich ist, damit Anwendungen in Azure auf Daten in DB2 auf dem Mainframe zugreifen können. Zu weiteren Optionen für die Integration von Mainframes in Azure zählen Lösungen von IBM, Attunity, Codit und anderen Anbietern sowie Open Source-Optionen.
 
 ## <a name="partner-solutions"></a>Partnerlösungen
 
@@ -182,8 +182,8 @@ Azure bietet eine bewährte, hoch verfügbare und skalierbare Infrastruktur für
 
 Weitere Informationen finden Sie in den folgenden Ressourcen:
 
-- [Erste Schritte mit Azure](https://docs.microsoft.com/azure)
+- [Erste Schritte mit Azure](/azure)
 
 - [Bereitstellen von IBM DB2 pureScale in Azure](https://azure.microsoft.com/resources/deploy-ibm-db2-purescale-on-azure)
 
-- [Dokumentation zu Host Integration Server](https://docs.microsoft.com/host-integration-server)
+- [Dokumentation zu Host Integration Server](/host-integration-server)

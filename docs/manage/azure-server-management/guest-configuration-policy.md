@@ -7,16 +7,16 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 938934e1a45d8f8abebede6cca8dcd9987cfb7e0
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: d18a716ff7935c3759e4703994273f5a75f372f2
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83861462"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567171"
 ---
 # <a name="guest-configuration-policy"></a>Gastkonfigurationsrichtlinie
 
-Sie können mit der Erweiterung für die [Gastkonfiguration](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration) von Azure Policy Konfigurationseinstellungen in einem virtuellen Computer überprüfen. Die Gastkonfiguration wird derzeit nur auf virtuellen Azure-Computern unterstützt.
+Sie können mit der Erweiterung für die [Gastkonfiguration](/azure/governance/policy/concepts/guest-configuration) von Azure Policy Konfigurationseinstellungen in einem virtuellen Computer überprüfen. Die Gastkonfiguration wird derzeit nur auf virtuellen Azure-Computern unterstützt.
 
 Um die Liste der Gastkonfigurationsrichtlinien zu finden, suchen Sie nach der Kategorie „Gastkonfiguration“ auf der Portalseite von Azure Policy. Oder führen Sie dieses Cmdlet in einem PowerShell-Fenster aus, um die Liste zu finden:
 
@@ -43,7 +43,7 @@ Verwenden Sie das folgende PowerShell-Beispielskript, um diese Richtlinien für 
 - Überprüfen Sie, ob die Einstellungen für die Kennwortsicherheit auf Windows- und Linux-Computern ordnungsgemäß eingestellt sind.
 - Stellen Sie sicher, dass Zertifikate auf virtuellen Windows-Computern nicht in Kürze ablaufen.
 
- Bevor Sie dieses Skript ausführen, verwenden Sie das Cmdlet [Connect-AzAccount](https://docs.microsoft.com/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0), um sich anzumelden. Wenn Sie das Skript ausführen, müssen Sie den Namen des Abonnements angeben, auf das Sie die Richtlinien anwenden möchten.
+ Bevor Sie dieses Skript ausführen, verwenden Sie das Cmdlet [Connect-AzAccount](/powershell/module/az.accounts/connect-azaccount?view=azps-2.1.0), um sich anzumelden. Wenn Sie das Skript ausführen, müssen Sie den Namen des Abonnements angeben, auf das Sie die Richtlinien anwenden möchten.
 
 ```powershell
 

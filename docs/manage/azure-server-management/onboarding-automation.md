@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: d7cd6222ec973177b1b7f2edeb2df451b17348a7
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 340e779abb1864a5644a96c9d1a4611b3a40415b
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193591"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571982"
 ---
 # <a name="automate-onboarding"></a>Automatisieren des Onboardings
 
@@ -22,7 +22,7 @@ Dieser Leitfaden enthält ein unterstützendes GitHub-Repository mit Beispielcod
 
 Die Beispieldateien veranschaulichen, wie Sie Azure PowerShell-Cmdlets verwenden können, um folgende Aufgaben zu automatisieren:
 
-- Erstellen Sie einen [Log Analytics-Arbeitsbereich](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access). (Oder verwenden Sie einen vorhandenen Arbeitsbereich, wenn er den Anforderungen entspricht. Weitere Informationen finden Sie unter [Arbeitsbereichsplanung](./prerequisites.md#log-analytics-workspace-and-automation-account-planning).)
+- Erstellen Sie einen [Log Analytics-Arbeitsbereich](/azure/azure-monitor/platform/manage-access). (Oder verwenden Sie einen vorhandenen Arbeitsbereich, wenn er den Anforderungen entspricht. Weitere Informationen finden Sie unter [Arbeitsbereichsplanung](./prerequisites.md#log-analytics-workspace-and-automation-account-planning).)
 
 - Erstellen Sie ein Automatisierungskonto, oder verwenden Sie ein vorhandenes Konto, das die Anforderungen erfüllt. Weitere Informationen finden Sie unter [Arbeitsbereichsplanung](./prerequisites.md#log-analytics-workspace-and-automation-account-planning).
 

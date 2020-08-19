@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: e6eb6532fdc79b93e0f1bba67a7b3e6b91f5fbf4
-ms.sourcegitcommit: d31a9043d1ae9283ed126bf118ca26d1d18d6948
+ms.openlocfilehash: 277d208ccdb2dda3e25994893f07c542cb3e87bf
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88040845"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573172"
 ---
 <!-- cSpell:ignore Twilio -->
 
@@ -37,7 +37,7 @@ Azure Bot Service und Bot Framework bieten integrierte Tools und Dienste, die di
 
 ### <a name="plan"></a>Planen
 
-Ein umfassendes Verständnis der Ziele, Prozesse und Benutzeranforderungen ist wichtig für das Erstellen eines erfolgreichen Bots. Machen Sie sich vor dem Programmieren mit dem [Entwurfsleitfaden](https://docs.microsoft.com/azure/bot-service/bot-service-design-principles?view=azure-bot-service-4.0) für Bots vertraut, um Informationen zu bewährten Methoden und Anforderungen für Ihren Bot zu erhalten. Sie können einen einfachen Bot erstellen oder komplexere Funktionen wie Spracheingabe, Verständnis natürlicher Sprache oder Beantwortung von Fragen hinzufügen.
+Ein umfassendes Verständnis der Ziele, Prozesse und Benutzeranforderungen ist wichtig für das Erstellen eines erfolgreichen Bots. Machen Sie sich vor dem Programmieren mit dem [Entwurfsleitfaden](/azure/bot-service/bot-service-design-principles?view=azure-bot-service-4.0) für Bots vertraut, um Informationen zu bewährten Methoden und Anforderungen für Ihren Bot zu erhalten. Sie können einen einfachen Bot erstellen oder komplexere Funktionen wie Spracheingabe, Verständnis natürlicher Sprache oder Beantwortung von Fragen hinzufügen.
 
 Berücksichtigen Sie beim Entwerfen Ihres Bots in der Planungsphase die folgenden Aspekte:
 
@@ -52,43 +52,43 @@ Berücksichtigen Sie beim Entwerfen Ihres Bots in der Planungsphase die folgende
   - Wie kann der Erfolg gemessen werden?
   - Welche Messungen sollen verwendet werden, um den Dienst zu verbessern?
 
-Weitere Informationen zum Entwerfen Ihres Bots finden Sie in den [Prinzipien des Bot-Entwurfs](https://docs.microsoft.com/azure/bot-service/bot-service-design-principles?view=azure-bot-service-4.0).
+Weitere Informationen zum Entwerfen Ihres Bots finden Sie in den [Prinzipien des Bot-Entwurfs](/azure/bot-service/bot-service-design-principles?view=azure-bot-service-4.0).
 
 ### <a name="build"></a>Entwickeln
 
-Ihr Bot ist ein Webdienst, der eine Konversationsoberfläche implementiert und mit dem Bot Framework-Dienst kommuniziert, um Nachrichten und Ereignisse zu senden und zu empfangen. Bot Framework Service ist eine Komponente von Azure Bot Service und Bot Framework. Sie können Bots in einer beliebigen Anzahl von Umgebungen und Sprachen erstellen. Sie können mit der Bot-Entwicklung im [Azure-Portal](https://docs.microsoft.com/azure/bot-service/bot-service-quickstart?view=azure-bot-service-4.0) beginnen oder Vorlagen für [C#, JavaScript oder Python](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-sdk-quickstart?view=azure-bot-service-4.0) verwenden, um Ihren Bot lokal zu entwickeln. Sie haben auch Zugriff auf eine Vielzahl von [Beispielen](https://github.com/microsoft/botbuilder-samples), die zahlreiche der über das SDK verfügbaren Funktionen veranschaulichen. Diese Beispiele eignen sich hervorragend für Entwickler, die sich einen Ausgangspunkt mit mehr Features wünschen.
+Ihr Bot ist ein Webdienst, der eine Konversationsoberfläche implementiert und mit dem Bot Framework-Dienst kommuniziert, um Nachrichten und Ereignisse zu senden und zu empfangen. Bot Framework Service ist eine Komponente von Azure Bot Service und Bot Framework. Sie können Bots in einer beliebigen Anzahl von Umgebungen und Sprachen erstellen. Sie können mit der Bot-Entwicklung im [Azure-Portal](/azure/bot-service/bot-service-quickstart?view=azure-bot-service-4.0) beginnen oder Vorlagen für [C#, JavaScript oder Python](/azure/bot-service/dotnet/bot-builder-dotnet-sdk-quickstart?view=azure-bot-service-4.0) verwenden, um Ihren Bot lokal zu entwickeln. Sie haben auch Zugriff auf eine Vielzahl von [Beispielen](https://github.com/microsoft/botbuilder-samples), die zahlreiche der über das SDK verfügbaren Funktionen veranschaulichen. Diese Beispiele eignen sich hervorragend für Entwickler, die sich einen Ausgangspunkt mit mehr Features wünschen.
 
 Im Rahmen von Azure Bot Service und Bot Framework stehen zusätzliche Komponenten zur Verfügung, mit denen Sie die Funktionalität Ihres Bots erweitern können.
 
 | Funktion | BESCHREIBUNG | Link |
 | --- | --- | --- |
-| Hinzufügen der Verarbeitung natürlicher Sprache | Ermöglichen Sie es Ihrem Bot, natürliche Sprache zu verstehen, Rechtschreibfehler zu erkennen, Sprachfunktionen zu verwenden sowie die Absichten des Benutzers zu erkennen. | Verwenden von [LUIS](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-luis?view=azure-bot-service-4.0) (Language Understanding Intelligent Service) |
-| Beantworten von Fragen | Fügen Sie eine Wissensdatenbank hinzu, um Fragen von Benutzern auf natürlichere, mit einer Unterhaltung vergleichbare Weise zu beantworten. | Verwenden von [QnA Maker](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-qna?view=azure-bot-service-4.0) |
-| Verwalten mehrerer Modelle | Wenn Sie mehrere Modelle nutzen (z. B. für LUIS und QnA Maker), können Sie auf intelligente Weise ermitteln, wann welches Modell für die Konversation des Bots verwendet werden sollte. | [Dispatch](https://docs.microsoft.com/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0)-Tool |
-| Hinzufügen von Karten und Schaltflächen | Verbessern Sie die Benutzerfreundlichkeit durch die Verwendung von anderen Medien als Text, z. B. Grafiken, Menüs und Karten. | [Hinzufügen von Karten](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-add-media-attachments?view=azure-bot-service-4.0) |
+| Hinzufügen der Verarbeitung natürlicher Sprache | Ermöglichen Sie es Ihrem Bot, natürliche Sprache zu verstehen, Rechtschreibfehler zu erkennen, Sprachfunktionen zu verwenden sowie die Absichten des Benutzers zu erkennen. | Verwenden von [LUIS](/azure/bot-service/bot-builder-howto-v4-luis?view=azure-bot-service-4.0) (Language Understanding Intelligent Service) |
+| Beantworten von Fragen | Fügen Sie eine Wissensdatenbank hinzu, um Fragen von Benutzern auf natürlichere, mit einer Unterhaltung vergleichbare Weise zu beantworten. | Verwenden von [QnA Maker](/azure/bot-service/bot-builder-howto-qna?view=azure-bot-service-4.0) |
+| Verwalten mehrerer Modelle | Wenn Sie mehrere Modelle nutzen (z. B. für LUIS und QnA Maker), können Sie auf intelligente Weise ermitteln, wann welches Modell für die Konversation des Bots verwendet werden sollte. | [Dispatch](/azure/bot-service/bot-builder-tutorial-dispatch?view=azure-bot-service-4.0)-Tool |
+| Hinzufügen von Karten und Schaltflächen | Verbessern Sie die Benutzerfreundlichkeit durch die Verwendung von anderen Medien als Text, z. B. Grafiken, Menüs und Karten. | [Hinzufügen von Karten](/azure/bot-service/bot-builder-howto-add-media-attachments?view=azure-bot-service-4.0) |
 
 > [!NOTE]
-> Diese Tabelle stellt keine vollständige Liste dar. Weitere Informationen finden Sie in der [Dokumentation zu Azure Bot Service](https://docs.microsoft.com/azure/bot-service/).
+> Diese Tabelle stellt keine vollständige Liste dar. Weitere Informationen finden Sie in der [Dokumentation zu Azure Bot Service](/azure/bot-service/).
 
 ### <a name="test"></a>Testen
 
 Bots sind komplexe Anwendungen mit vielen verschiedenen Komponenten, die zusammenarbeiten. Wie bei jeder komplexen Anwendung kann diese Komplexität zu einigen interessanten Fehlern oder zu einem unerwartetem Verhalten Ihres Bots führen. Testen Sie Ihren Bot, bevor Sie ihn veröffentlichen. Wir bieten mehrere Methoden zum Testen von Bots, bevor sie zur Verwendung freigegeben werden:
 
-- Testen Sie Ihren Bot lokal mit dem [Emulator](https://docs.microsoft.com/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-4.0). Bot Framework Emulator ist eine eigenständige Anwendung, die nicht nur über eine Chatschnittstelle, sondern auch über Debug- und Abfragetools verfügt, mit denen Sie das Verhalten Ihres Bots nachvollziehen können. Der Emulator kann neben Ihrer in der Entwicklung befindlichen Botanwendung lokal ausgeführt werden.
-- Testen Sie Ihren Bot im [Web](https://docs.microsoft.com/azure/bot-service/bot-service-manage-test-webchat?view=azure-bot-service-4.0). Sobald Ihr Bot über das Azure-Portal konfiguriert wurde, ist er auch über eine Webchat-Schnittstelle erreichbar. Die Webchat-Schnittstelle eignet sich sehr gut, um Testern und anderen Personen, die nicht direkt auf den ausgeführten Code zugreifen können, Zugriff auf Ihren Bot zu gewähren.
-- Führen Sie mit dem Update des Bot Framework-SDK aus dem Juli einen [Komponententest für Ihren Bot](https://docs.microsoft.com/azure/bot-service/unit-test-bots) durch.
+- Testen Sie Ihren Bot lokal mit dem [Emulator](/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-4.0). Bot Framework Emulator ist eine eigenständige Anwendung, die nicht nur über eine Chatschnittstelle, sondern auch über Debug- und Abfragetools verfügt, mit denen Sie das Verhalten Ihres Bots nachvollziehen können. Der Emulator kann neben Ihrer in der Entwicklung befindlichen Botanwendung lokal ausgeführt werden.
+- Testen Sie Ihren Bot im [Web](/azure/bot-service/bot-service-manage-test-webchat?view=azure-bot-service-4.0). Sobald Ihr Bot über das Azure-Portal konfiguriert wurde, ist er auch über eine Webchat-Schnittstelle erreichbar. Die Webchat-Schnittstelle eignet sich sehr gut, um Testern und anderen Personen, die nicht direkt auf den ausgeführten Code zugreifen können, Zugriff auf Ihren Bot zu gewähren.
+- Führen Sie mit dem Update des Bot Framework-SDK aus dem Juli einen [Komponententest für Ihren Bot](/azure/bot-service/unit-test-bots) durch.
 
 ### <a name="publish"></a>Veröffentlichen
 
-Wenn Sie bereit sind, Ihren Bot im Web verfügbar zu machen, [veröffentlichen Sie ihn in Azure](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-deploy-azure?view=azure-bot-service-4.0) oder in Ihrem eigenen Webdienst oder Rechenzentrum. Eine Adresse im öffentlichen Internet ist der erste Schritt, um Ihren Bots auf Ihrer Website oder in Chatkanälen verfügbar zu machen.
+Wenn Sie bereit sind, Ihren Bot im Web verfügbar zu machen, [veröffentlichen Sie ihn in Azure](/azure/bot-service/bot-builder-howto-deploy-azure?view=azure-bot-service-4.0) oder in Ihrem eigenen Webdienst oder Rechenzentrum. Eine Adresse im öffentlichen Internet ist der erste Schritt, um Ihren Bots auf Ihrer Website oder in Chatkanälen verfügbar zu machen.
 
 ### <a name="connect"></a>Verbinden
 
-Verbinden Sie Ihren Bot mit Kanälen wie Facebook, Messenger, Kik, Skype, Slack, Microsoft Teams, Telegram, Text/SMS, Twilio, Cortana und Skype. Bot Framework nimmt Ihnen den Großteil der erforderlichen Aufgaben rund um das Senden und Empfangen von Nachrichten über diese verschiedenen Plattformen ab. Ihre Botanwendung empfängt einen einheitlichen, normalisierten Nachrichtenstrom – unabhängig von der Anzahl und Art der Kanäle, mit denen sie verbunden ist. Informationen zum Hinzufügen von Kanälen finden Sie unter [Verbinden eines Bots mit Kanälen](https://docs.microsoft.com/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0).
+Verbinden Sie Ihren Bot mit Kanälen wie Facebook, Messenger, Kik, Skype, Slack, Microsoft Teams, Telegram, Text/SMS, Twilio, Cortana und Skype. Bot Framework nimmt Ihnen den Großteil der erforderlichen Aufgaben rund um das Senden und Empfangen von Nachrichten über diese verschiedenen Plattformen ab. Ihre Botanwendung empfängt einen einheitlichen, normalisierten Nachrichtenstrom – unabhängig von der Anzahl und Art der Kanäle, mit denen sie verbunden ist. Informationen zum Hinzufügen von Kanälen finden Sie unter [Verbinden eines Bots mit Kanälen](/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0).
 
 ### <a name="evaluate"></a>Evaluieren
 
-Verwenden Sie die im Azure-Portal erfassten Daten, um Möglichkeiten zur Verbesserung der Funktionen und der Leistung Ihres Bots zu ermitteln. Sie können einen Servicelevel und Instrumentierungsdaten wie Datenverkehr, Latenz und Integrationen abrufen. Analytics bieten außerdem Berichterstellung für Benutzer-, Nachrichten- und Kanaldaten auf Konversationsebene. Weitere Informationen finden Sie unter [Botanalyse](https://docs.microsoft.com/azure/bot-service/bot-service-manage-analytics?view=azure-bot-service-4.0).
+Verwenden Sie die im Azure-Portal erfassten Daten, um Möglichkeiten zur Verbesserung der Funktionen und der Leistung Ihres Bots zu ermitteln. Sie können einen Servicelevel und Instrumentierungsdaten wie Datenverkehr, Latenz und Integrationen abrufen. Analytics bieten außerdem Berichterstellung für Benutzer-, Nachrichten- und Kanaldaten auf Konversationsebene. Weitere Informationen finden Sie unter [Botanalyse](/azure/bot-service/bot-service-manage-analytics?view=azure-bot-service-4.0).
 
 <!-- docsTest:ignore "John Doe" "Jane Doe" -->
 
@@ -98,23 +98,23 @@ In diesem Abschnitt finden Sie Informationen zu allgemeinen Mustern für die Imp
 
 - **Wissensdatenbank:** Ein Wissensbot kann so entworfen werden, dass er Informationen zu so gut wie jedem Thema bereitstellt. So kann ein Wissensbot beispielsweise Fragen zu Veranstaltungen beantworten, etwa: „Welche Veranstaltungen zu Bots finden auf dieser Konferenz statt?“ oder „Wann findet das nächste Reggaekonzert statt?“. Ein anderer Bot beantwortet hingegen möglicherweise IT-bezogene Fragen wie „Wie aktualisiere ich mein Betriebssystem?“. Wieder ein anderer Bot beantwortet möglicherweise Fragen zu Kontakten wie „Wer ist John Doe?“. oder „Wie lautet die E-Mail-Adresse von Laura Becker?“
 
-   Informationen zu den Entwurfselementen für Wissensbots finden Sie unter [Entwerfen von Wissensbots](https://docs.microsoft.com/azure/bot-service/bot-service-design-pattern-knowledge-base?view=azure-bot-service-4.0).
+   Informationen zu den Entwurfselementen für Wissensbots finden Sie unter [Entwerfen von Wissensbots](/azure/bot-service/bot-service-design-pattern-knowledge-base?view=azure-bot-service-4.0).
 
 - **Übergabe an einen Menschen:** In bestimmten Situationen muss die Unterhaltung möglicherweise immer noch an einen Menschen übergeben werden – ganz gleich, über wie viel künstliche Intelligenz ein Bot verfügt. In solchen Fällen sollte der Bot erkennen, wann eine Übergabe erforderlich ist, und dem Benutzer eine reibungslose Übergabe ermöglichen.
 
-   Informationen zu Mustern für die Übergabe finden Sie unter [Übergeben von Konversationen von einem Bot an einen Menschen](https://docs.microsoft.com/azure/bot-service/bot-service-design-pattern-handoff-human?view=azure-bot-service-4.0).
+   Informationen zu Mustern für die Übergabe finden Sie unter [Übergeben von Konversationen von einem Bot an einen Menschen](/azure/bot-service/bot-service-design-pattern-handoff-human?view=azure-bot-service-4.0).
 
-- **Einbetten eines Bots in eine Anwendung:** Bots befinden sich zwar in den meisten Fällen außerhalb von Anwendungen, können aber auch mit Anwendungen integriert werden. Beispielsweise können Sie einen [Wissensbot](https://docs.microsoft.com/azure/bot-service/bot-service-design-pattern-knowledge-base?view=azure-bot-service-4.0) in eine Anwendung einbetten, um Benutzer bei der Suche nach Informationen zu unterstützen. Sie können auch einen Bot in eine Helpdeskanwendung einbetten, der dann als erste Anlaufstelle für eingehende Benutzeranfragen fungiert. Der Bot kann unabhängig einfache Probleme lösen und kompliziertere Fälle an einen menschlichen Mitarbeiter [übergeben](https://docs.microsoft.com/azure/bot-service/bot-service-design-pattern-handoff-human?view=azure-bot-service-4.0).
+- **Einbetten eines Bots in eine Anwendung:** Bots befinden sich zwar in den meisten Fällen außerhalb von Anwendungen, können aber auch mit Anwendungen integriert werden. Beispielsweise können Sie einen [Wissensbot](/azure/bot-service/bot-service-design-pattern-knowledge-base?view=azure-bot-service-4.0) in eine Anwendung einbetten, um Benutzer bei der Suche nach Informationen zu unterstützen. Sie können auch einen Bot in eine Helpdeskanwendung einbetten, der dann als erste Anlaufstelle für eingehende Benutzeranfragen fungiert. Der Bot kann unabhängig einfache Probleme lösen und kompliziertere Fälle an einen menschlichen Mitarbeiter [übergeben](/azure/bot-service/bot-service-design-pattern-handoff-human?view=azure-bot-service-4.0).
 
-   Weitere Informationen dazu, wie Sie einen Bot in eine Anwendung integrieren können, finden Sie unter [Einbetten eines Bots in eine App](https://docs.microsoft.com/azure/bot-service/bot-service-design-pattern-embed-app?view=azure-bot-service-4.0).
+   Weitere Informationen dazu, wie Sie einen Bot in eine Anwendung integrieren können, finden Sie unter [Einbetten eines Bots in eine App](/azure/bot-service/bot-service-design-pattern-embed-app?view=azure-bot-service-4.0).
 
 - **Einbetten eines Bots in eine Website:** Bots können nicht nur in Anwendungen, sondern auch in Websites eingebettet werden, um mehrere Kommunikationsmöglichkeiten über verschiedene Kanäle zu bieten.
 
-   Weitere Informationen dazu, wie Sie einen Bot in eine Website integrieren können, finden Sie unter [Einbetten eines Bots in eine Website](https://docs.microsoft.com/azure/bot-service/bot-service-design-pattern-embed-web-site?view=azure-bot-service-4.0).
+   Weitere Informationen dazu, wie Sie einen Bot in eine Website integrieren können, finden Sie unter [Einbetten eines Bots in eine Website](/azure/bot-service/bot-service-design-pattern-embed-web-site?view=azure-bot-service-4.0).
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 - Lesen Sie Whitepaper über maschinelles Lernen und E-Books zu [Azure Bot Service](https://azure.microsoft.com/resources/whitepapers/search/?service=bot-service).
-- Machen Sie sich mit [KI-Architekturen und Architekturen für maschinelles Lernen](https://docs.microsoft.com/azure/architecture/browse/) vertraut.
+- Machen Sie sich mit [KI-Architekturen und Architekturen für maschinelles Lernen](/azure/architecture/browse/) vertraut.
 - Lesen Sie das E-Book zum [Erstellen intelligenter Anwendungen mit kognitiven APIs](https://azure.microsoft.com/resources/building-intelligent-apps-with-cognitive-apis/).
 - Machen Sie sich mit [häufig gestellten Fragen zur Chatbotarchitektur](https://azure.microsoft.com/resources/faq-chatbot-architecture/) vertraut.

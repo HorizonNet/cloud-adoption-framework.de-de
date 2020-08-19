@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 89f7d7986281a5e5a6409623905ebaaa6fe00fe1
-ms.sourcegitcommit: 26aee3c6f596bb8a9f1e16af93cdf94e41a61dee
+ms.openlocfilehash: be46b1d4d0848782ae2906498f38ba9bc45e180b
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87400529"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567324"
 ---
 <!-- cSpell:ignore benstegink msiexec Logix Lakeside SysTrack Robocopy UPD UPDs -->
 
@@ -23,7 +23,7 @@ Bei Windows Virtual Desktop handelt es sich um einen umfassenden in der Cloud au
 
 | Migrationsoptionen | Ergebnis |
 |--- | --- |
-| [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) | Bewerten und Migrieren lokaler RDS-Umgebungen. <br><br> Ausführen von Workloads mithilfe von Azure Windows Virtual Desktop <br><br> Verwalten von Windows Virtual Desktop mit der [Windows Virtual Desktop-Verwaltungsoberfläche](https://github.com/Azure/RDS-Templates/tree/master/wvd-templates/wvd-management-ux). |
+| [Azure Migrate](/azure/migrate/migrate-services-overview) | Bewerten und Migrieren lokaler RDS-Umgebungen. <br><br> Ausführen von Workloads mithilfe von Azure Windows Virtual Desktop <br><br> Verwalten von Windows Virtual Desktop mit der [Windows Virtual Desktop-Verwaltungsoberfläche](https://github.com/Azure/RDS-Templates/tree/master/wvd-templates/wvd-management-ux). |
 
 > [!NOTE]
 > Dieser Artikel konzentriert sich auf die Verwendung von Windows Virtual Desktop in Azure zum Verschieben einer lokalen RDS-Umgebung zu Azure.
@@ -117,12 +117,12 @@ Contoso stellt den Windows Virtual Desktop-Dienst in der Azure-Region `East US 2
 1. Stellen Sie sicher, dass Domänendienste, entweder Active Directory oder Azure Active Directory Domain Services, mit Azure Active Directory (Azure AD) synchronisiert werden. Stellen Sie sicher, dass über das Azure-Abonnement und das virtuelle Netzwerk auf den Domänendienst zugegriffen werden kann, um mit dem Ort verbunden zu sein, an dem Windows Virtual Desktop bereitgestellt wird.
 
     > [!NOTE]
-    > Erfahren Sie mehr über [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express) für die Synchronisierung lokaler Active Directory-Instanzen mit Azure AD.
+    > Erfahren Sie mehr über [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-express) für die Synchronisierung lokaler Active Directory-Instanzen mit Azure AD.
 
     <!-- -->
 
     > [!NOTE]
-    > Erfahren Sie mehr über die Bereitstellung von [Azure Active Directory Domain Services](https://docs.microsoft.com/azure/active-directory-domain-services/tutorial-create-instance) und die Synchronisierung von Azure AD mit ihnen.
+    > Erfahren Sie mehr über die Bereitstellung von [Azure Active Directory Domain Services](/azure/active-directory-domain-services/tutorial-create-instance) und die Synchronisierung von Azure AD mit ihnen.
 
 1. Erstellen Sie ein neues Azure Migrate-Projekt.
 
@@ -210,7 +210,7 @@ Mit dem Azure-Portal erstellt Contoso eine Windows Virtual Desktop-Umgebung für
 
     > [!NOTE]
     > In diesem Schritt kann Contoso kein neues virtuelles Netzwerk erstellt werden. Vor diesem Schritt sollte Contoso bereits ein virtuelles Netzwerk erstellt haben, das Zugriff auf Active Directory hat.
-    
+
    <!-- -->
 
     > [!NOTE]
@@ -295,16 +295,16 @@ Jetzt, wo die virtuellen Desktops und Anwendungsserver in Azure ausgeführt werd
 
 Das Sicherheitsteam von Contoso überprüft die Azure-VMs auf eventuell vorhandene Sicherheitsprobleme. Zur Steuerung des Zugriffs überprüft das Team die Netzwerksicherheitsgruppen (NSGs) für die virtuellen Computer. Mithilfe von Netzwerksicherheitsgruppen wird sichergestellt, dass nur für die Anwendung zulässiger Datenverkehr diese erreichen kann. Das Team zieht darüber hinaus in Betracht, die Daten über Azure Disk Encryption und Azure Key Vault auf dem Datenträger zu sichern.
 
-Weitere Informationen finden Sie unter [Bewährte Sicherheitsmethoden für IaaS-Workloads in Azure](https://docs.microsoft.com/azure/security/fundamentals/iaas).
+Weitere Informationen finden Sie unter [Bewährte Sicherheitsmethoden für IaaS-Workloads in Azure](/azure/security/fundamentals/iaas).
 
 ## <a name="business-continuity-and-disaster-recovery"></a>Business Continuity & Disaster Recovery
 
-Für die Business Continuity & Disaster Recovery (BCDR) sichert Contoso die Daten auf den virtuellen Computern mit Azure Backup, um sie zu schützen. Weitere Informationen finden Sie unter [Ein Überblick über die Sicherung von Azure-VMs](https://docs.microsoft.com/azure/backup/backup-azure-vms-introduction).
+Für die Business Continuity & Disaster Recovery (BCDR) sichert Contoso die Daten auf den virtuellen Computern mit Azure Backup, um sie zu schützen. Weitere Informationen finden Sie unter [Ein Überblick über die Sicherung von Azure-VMs](/azure/backup/backup-azure-vms-introduction).
 
 ### <a name="licensing-and-cost-optimization"></a>Lizenzierung und Kostenoptimierung
 
 - [Microsoft 365-Lizenzen](https://azure.microsoft.com/pricing/details/virtual-desktop/) werden für die Desktop-Bereitstellungen verwendet.
-- Contoso aktiviert [Azure Cost Management und das Azure-Abrechnungsportal](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview), um die Überwachung und Verwaltung der Azure-Ressourcen zu unterstützen.
+- Contoso aktiviert [Azure Cost Management und das Azure-Abrechnungsportal](/azure/cost-management-billing/cost-management-billing-overview), um die Überwachung und Verwaltung der Azure-Ressourcen zu unterstützen.
 - Contoso verfügt über eine Lizenzierung für die virtuellen Computer und nutzt den Azure-Hybridvorteil für Anwendungsserver. Contoso wird die vorhandenen virtuellen Azure-Computer konvertieren, um von diesen Preisen zu profitieren.
 
 ## <a name="conclusion"></a>Zusammenfassung

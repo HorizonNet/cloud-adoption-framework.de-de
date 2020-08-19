@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 127a553b94f4432fe08bbf7772407b401339470b
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: 8a76d0bec6958bbed8abac2f0defe50a8233a480
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86235023"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570231"
 ---
 # <a name="estimate-cloud-costs"></a>Schätzen der Cloudkosten
 
@@ -22,7 +22,7 @@ Während der Migration gibt es mehrere Faktoren, die sich auf Entscheidungen und
 
 Die Größe Ihrer digitalen Ressourcen wirkt sich direkt auf Migrationsentscheidungen aus. Migrationen, die weniger als 250 virtuelle Computer umfassen, können sehr viel leichter geschätzt werden als eine Migration mit 10.000 oder mehr virtuellen Computern. Es wird dringend empfohlen, eine kleinere Workload für die erste Migration auszuwählen. Dies gibt Ihrem Team die Gelegenheit zu lernen, wie die Kosten für eine einfache Migration geschätzt werden, bevor versucht wird, die Kosten größerer und komplexerer Workloadmigrationen zu schätzen.
 
-Beachten Sie jedoch, dass kleinere Migrationen mit nur einer Workload eine sehr unterschiedliche Menge an unterstützenden Ressourcen umfassen können. Wenn die Migration weniger als 1.000 virtuelle Computer betrifft, ist ein Tool wie [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) wahrscheinlich ausreichend, um Daten zum Bestand zu sammeln und die Kosten zu prognostizieren. Weitere Tooloptionen für die Kostenschätzung sind im Artikel zu [Kostenberechnungen für digitale Ressourcen](../../../digital-estate/calculate.md) beschrieben.
+Beachten Sie jedoch, dass kleinere Migrationen mit nur einer Workload eine sehr unterschiedliche Menge an unterstützenden Ressourcen umfassen können. Wenn die Migration weniger als 1.000 virtuelle Computer betrifft, ist ein Tool wie [Azure Migrate](/azure/migrate/migrate-services-overview) wahrscheinlich ausreichend, um Daten zum Bestand zu sammeln und die Kosten zu prognostizieren. Weitere Tooloptionen für die Kostenschätzung sind im Artikel zu [Kostenberechnungen für digitale Ressourcen](../../../digital-estate/calculate.md) beschrieben.
 
 Bei digitalen Ressourcen mit 1.000 Einheiten und mehr ist es möglich, eine Schätzung in vier oder fünf umsetzbare Iterationen aufzuteilen, um den Schätzungsprozess überschaubar zu machen. Bei größeren Ressourcenumgebungen oder wenn ein höheres Maß an Prognosegenauigkeit erforderlich ist, wird wahrscheinlich ein umfassenderer Ansatz erforderlich sein, wie er im Abschnitt [Digitale Ressourcen](../../../digital-estate/index.md) des Framework für die Cloudeinführung beschrieben ist.
 

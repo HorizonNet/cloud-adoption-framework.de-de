@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: a3ac7a38018f7ca44115fb1d46396e16961dfe3e
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 4cc1aeed8df6c546722ac70977e08f6619f41f21
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86478428"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570741"
 ---
 <!-- TODO: Verify GraphDBMS term -->
 <!-- cSpell:ignore ColumnStore GraphDBMS mysqldump Navicat phpMyAdmin -->
@@ -23,7 +23,8 @@ ms.locfileid: "86478428"
 In diesem Artikel wird gezeigt, wie das fiktive Unternehmen Contoso die Migration seiner lokalen Open-Source-MariaDB-Datenbankplattform zu Azure geplant und durchgeführt hat.
 
 Contoso verwendet aus folgenden Gründen MariaDB anstelle von MySQL:
-- Unzählige Speicher-Engines. 
+
+- Unzählige Speicher-Engines.
 - Cache- und Indexleistung.
 - Open-Source-Unterstützung mit Features und Erweiterungen.
 - Analytics ColumnStore-Unterstützung.
@@ -71,13 +72,13 @@ In der MariaDB-Datenbank werden Mitarbeiterdaten gehostet, die für alle Belange
 
 Im Rahmen des Lösungsentwurfs hat Contoso die in Azure verfügbaren Features für das Hosting der MariaDB-Datenbanken geprüft. Die folgenden Überlegungen haben dabei im Unternehmen zu der Entscheidung für Azure geführt:
 
-- Ähnlich wie Azure SQL-Datenbank unterstützt auch Azure Database for MariaDB [Firewallregeln](https://docs.microsoft.com/azure/mariadb/concepts-firewall-rules).
-- Azure Database for MariaDB kann mit [Azure Virtual Network](https://docs.microsoft.com/azure/mariadb/concepts-data-access-security-vnet) verwendet werden, um zu verhindern, dass die Instanz öffentlich zugänglich ist.
+- Ähnlich wie Azure SQL-Datenbank unterstützt auch Azure Database for MariaDB [Firewallregeln](/azure/mariadb/concepts-firewall-rules).
+- Azure Database for MariaDB kann mit [Azure Virtual Network](/azure/mariadb/concepts-data-access-security-vnet) verwendet werden, um zu verhindern, dass die Instanz öffentlich zugänglich ist.
 - Azure Database for MariaDB verfügt über die erforderlichen Compliance- und Datenschutzzertifizierungen, die Contoso für seine Prüfer einhalten muss.
 - Die Verarbeitungsleistung für Berichte und Anwendung wird durch die Verwendung von Lesereplikaten verbessert.
-- Der Dienst kann mithilfe von [Azure Private Link](https://docs.microsoft.com/azure/mariadb/concepts-data-access-security-private-link) nur für den internen Netzwerkdatenverkehr (kein öffentlicher Zugriff) verfügbar gemacht werden.
+- Der Dienst kann mithilfe von [Azure Private Link](/azure/mariadb/concepts-data-access-security-private-link) nur für den internen Netzwerkdatenverkehr (kein öffentlicher Zugriff) verfügbar gemacht werden.
 - Contoso hat entschieden, nicht zu Azure Database for MySQL zu wechseln, da möglicherweise in Zukunft das MariaDB ColumnStore- und GraphDBMS-Datenbankmodell verwendet werden soll.
-- Die [Bandbreite und Wartezeit](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways) zwischen der Anwendung und der Datenbank ist je nach ausgewähltem Gateway (Azure ExpressRoute oder Site-to-Site-VPN) ausreichend.
+- Die [Bandbreite und Wartezeit](/azure/vpn-gateway/vpn-gateway-about-vpngateways) zwischen der Anwendung und der Datenbank ist je nach ausgewähltem Gateway (Azure ExpressRoute oder Site-to-Site-VPN) ausreichend.
 
 ### <a name="solution-review"></a>Überprüfung der Lösung
 
@@ -85,8 +86,8 @@ Contoso bewertet den vorgeschlagen Entwurf anhand einer Liste mit Vor- und Nacht
 
 | Aspekt | Details |
 | --- | --- |
-| **Vorteile** | Azure Database for MariaDB bietet eine finanziell abgesicherte Vereinbarung zum Service Level (SLA) von 99,99 Prozent für [Hochverfügbarkeit](https://docs.microsoft.com/azure/mariadb/concepts-high-availability). <br><br> Azure bietet die Möglichkeit, während Spitzenladezeiten jedes Quartal zentral hoch- oder herunterzuskalieren. Contoso kann durch den Kauf von [reservierter Kapazität](https://docs.microsoft.com/azure/mariadb/concept-reserved-pricing) noch weitere Einsparungen erzielen. <br><br> Azure bietet Funktionen zur Point-in-Time-Wiederherstellung und Geowiederherstellung für Azure Database for MariaDB. <br><br> |
-| **Nachteile** | Contoso ist auf die MariaDB-Releaseversionen beschränkt, die in Azure unterstützt werden. Dies sind aktuell die Versionen 10.2 und 10.3. <br><br> Azure Database for MariaDB weist einige [Einschränkungen](https://docs.microsoft.com/azure/mariadb/concepts-limits) auf, z. B. das Herunterskalieren des Speichers. |
+| **Vorteile** | Azure Database for MariaDB bietet eine finanziell abgesicherte Vereinbarung zum Service Level (SLA) von 99,99 Prozent für [Hochverfügbarkeit](/azure/mariadb/concepts-high-availability). <br><br> Azure bietet die Möglichkeit, während Spitzenladezeiten jedes Quartal zentral hoch- oder herunterzuskalieren. Contoso kann durch den Kauf von [reservierter Kapazität](/azure/mariadb/concept-reserved-pricing) noch weitere Einsparungen erzielen. <br><br> Azure bietet Funktionen zur Point-in-Time-Wiederherstellung und Geowiederherstellung für Azure Database for MariaDB. <br><br> |
+| **Nachteile** | Contoso ist auf die MariaDB-Releaseversionen beschränkt, die in Azure unterstützt werden. Dies sind aktuell die Versionen 10.2 und 10.3. <br><br> Azure Database for MariaDB weist einige [Einschränkungen](/azure/mariadb/concepts-limits) auf, z. B. das Herunterskalieren des Speichers. |
 
 ## <a name="proposed-architecture"></a>Vorgeschlagene Architektur
 
@@ -184,12 +185,12 @@ Da die migrierten Ressourcen in Azure enthalten sind, muss Contoso seine neue In
 
 Contoso muss Folgendes durchführen:
 
-- Sicherstellen, dass die neue Azure Database for MariaDB-Instanz und die Datenbanken geschützt sind. Weitere Informationen finden Sie unter [Sicherheit in Azure Database for MariaDB](https://docs.microsoft.com/azure/mariadb/concepts-security).
-- Die [Firewallregeln](https://docs.microsoft.com/azure/mariadb/concepts-firewall-rules) und die Konfigurationseinstellungen des virtuellen Netzwerks überprüfen, um sicherzustellen, dass Verbindungen auf die Anwendungen beschränkt sind, die Zugriff benötigen.
-- Contoso muss Anforderungen für ausgehende IP-Adressen konfigurieren, um Verbindungen mit den [Gateway-IP-Adressen](https://docs.microsoft.com/azure/mariadb/concepts-connectivity-architecture) von MariaDB zuzulassen.
-- Contoso muss alle Anwendungen zur Verwendung von [SSL](https://docs.microsoft.com/azure/mariadb/concepts-ssl-connection-security)-Verbindungen mit den Datenbanken aktualisieren.
-- Contoso sollte [Private Link](https://docs.microsoft.com/azure/mariadb/concepts-data-access-security-private-link) einrichten, damit der gesamte Datenverkehr der Datenbanken innerhalb von Azure und des lokalen Netzwerks bleibt.
-- Contoso sollte [Azure Advanced Threat Protection (ATP)](https://docs.microsoft.com/azure/mariadb/concepts-data-access-and-security-threat-protection) aktivieren.
+- Sicherstellen, dass die neue Azure Database for MariaDB-Instanz und die Datenbanken geschützt sind. Weitere Informationen finden Sie unter [Sicherheit in Azure Database for MariaDB](/azure/mariadb/concepts-security).
+- Die [Firewallregeln](/azure/mariadb/concepts-firewall-rules) und die Konfigurationseinstellungen des virtuellen Netzwerks überprüfen, um sicherzustellen, dass Verbindungen auf die Anwendungen beschränkt sind, die Zugriff benötigen.
+- Contoso muss Anforderungen für ausgehende IP-Adressen konfigurieren, um Verbindungen mit den [Gateway-IP-Adressen](/azure/mariadb/concepts-connectivity-architecture) von MariaDB zuzulassen.
+- Contoso muss alle Anwendungen zur Verwendung von [SSL](/azure/mariadb/concepts-ssl-connection-security)-Verbindungen mit den Datenbanken aktualisieren.
+- Contoso sollte [Private Link](/azure/mariadb/concepts-data-access-security-private-link) einrichten, damit der gesamte Datenverkehr der Datenbanken innerhalb von Azure und des lokalen Netzwerks bleibt.
+- Contoso sollte [Azure Advanced Threat Protection (ATP)](/azure/mariadb/concepts-data-access-and-security-threat-protection) aktivieren.
 - Die Protokollanalyse konfigurieren, um die Sicherheit sowie relevante Einträge zu überwachen und Warnungen zu senden.
 
 ### <a name="backups"></a>Backups
@@ -197,7 +198,7 @@ Contoso muss Folgendes durchführen:
 Mithilfe der Geowiederherstellung kann sichergestellt werden, dass die Azure Database for MariaDB-Datenbanken gesichert sind. Auf diese Weise können im Falle eines regionalen Ausfalls Sicherungen in Regionspaaren verwendet werden.
 
 > [!IMPORTANT]
-> Stellen Sie sicher, dass die Azure Database for MariaDB-Ressource über eine [Ressourcensperre](https://docs.microsoft.com/azure/azure-resource-manager/management/lock-resources) verfügt und nicht gelöscht werden kann. Gelöschte Server können nicht wiederhergestellt werden.
+> Stellen Sie sicher, dass die Azure Database for MariaDB-Ressource über eine [Ressourcensperre](/azure/azure-resource-manager/management/lock-resources) verfügt und nicht gelöscht werden kann. Gelöschte Server können nicht wiederhergestellt werden.
 
 ### <a name="licensing-and-cost-optimization"></a>Lizenzierung und Kostenoptimierung
 

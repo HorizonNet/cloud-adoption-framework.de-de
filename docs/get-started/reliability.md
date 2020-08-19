@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 31c010e60c21890803b0897394ec63530ee34cd4
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 385bfcaefd7fcb5dab78e9dd80478a0fe2c7d644
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450440"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569262"
 ---
 # <a name="get-started-improve-reliability-with-the-right-controls"></a>Erste Schritte: Verbessern der Zuverlässigkeit mit den richtigen Steuerungen
 
@@ -51,7 +51,7 @@ Nicht alle Workloads werden gleich erstellt. In jeder Umgebung gibt es Workloads
   - [Betriebsbezogene Compliance](../manage/considerations/operational-compliance.md): Die höchsten Prozentsätze von Ausfällen sind in der Regel auf Änderungen der Ressourcenkonfiguration oder schlechte Wartungspraktiken zurückzuführen. Befolgen Sie den [Leitfaden zur Azure-Serververwaltung](../manage/azure-server-management/index.md), um cloudnative Tools zur Verwaltung von Patches und Änderungen an der Ressourcenkonfiguration zu implementieren.
   - [Schutz und Wiederherstellung](../manage/considerations/protect.md): Ausfälle sind auf jeder Plattform unvermeidlich. Wenn eine Unterbrechung auftritt, können Sie sich mit [Sicherungs- und Wiederherstellungslösungen](../manage/azure-management-guide/protect-recover.md) vorbereiten, um die Dauer zu minimieren.
 - [Erweiterter Betrieb](../manage/design-principles.md): Verwenden Sie die Verwaltungsbaseline als Grundlage für Ihren Austausch über die [Geschäftsausrichtung](../manage/considerations/business-alignment.md). Die hilft Ihnen, [Wichtigkeit](../manage/considerations/criticality.md), [Geschäftsauswirkungen](../manage/considerations/impact.md) und [Betriebsverpflichtungen](../manage/considerations/commitment.md) klar zu benennen. Die Geschäftsausrichtung hilft bei der Quantifizierung und Validierung von Anforderungen für eine [erweiterte Baseline](../manage/azure-management-guide/enhanced-baseline.md), der Verwaltung spezifischer [Technologieplattformen](../manage/azure-management-guide/workload-specialization.md) oder [workloadspezifischer Vorgänge](../manage/azure-management-guide/platform-specialization.md).
-- **Durchführen einer Architekturüberprüfung:** Zum Erfüllen von Betriebsanforderungen sind möglicherweise Architekturänderungen auf Workloadebene erforderlich. [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework/cost/tradeoffs) und [Microsoft Azure Well-Architected Review](https://docs.microsoft.com/assessments?id=azure-architecture-review) können diese Gespräche mit dem technischen Besitzer einer bestimmten Workload unterstützen.
+- **Durchführen einer Architekturüberprüfung:** Zum Erfüllen von Betriebsanforderungen sind möglicherweise Architekturänderungen auf Workloadebene erforderlich. [Microsoft Azure Well-Architected Framework](/azure/architecture/framework/cost/tradeoffs) und [Microsoft Azure Well-Architected Review](/assessments?id=azure-architecture-review) können diese Gespräche mit dem technischen Besitzer einer bestimmten Workload unterstützen.
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -71,7 +71,7 @@ Unternehmenszuverlässigkeit erfordert eine konsistente Anwendung der Verwaltung
 
 **Hinweis zur Erreichung der Ziele:**
 
-- Stellen Sie sicher, dass alle Workloads und Ressourcen die [richtigen Benennungs- und Kennzeichnungskonventionen](../ready/azure-best-practices/naming-and-tagging.md) befolgen. [Erzwingen Sie Kennzeichnungskonventionen mithilfe von Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/govern-tags) mit einem speziellen Schwerpunkt auf Tags für „Wichtigkeit“.
+- Stellen Sie sicher, dass alle Workloads und Ressourcen die [richtigen Benennungs- und Kennzeichnungskonventionen](../ready/azure-best-practices/naming-and-tagging.md) befolgen. [Erzwingen Sie Kennzeichnungskonventionen mithilfe von Azure Policy](/azure/governance/policy/tutorials/govern-tags) mit einem speziellen Schwerpunkt auf Tags für „Wichtigkeit“.
 - Sollten Sie noch nicht mit Cloudgovernance vertraut sein, verwenden Sie die Governancemethodik, um [Governancerichtlinien, -prozesse und -disziplinen](../govern/index.md) einzurichten.
 - Wenn Sie mit der Disziplin „Cost Management“ noch nicht vertraut sind, befolgen Sie die Anweisungen im Artikel [Cost Management-Verbesserungen](../govern/guides/complex/cost-management-improvement.md). Konzentrieren Sie sich auf den Abschnitt [Implementierung](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices).
 
@@ -91,7 +91,7 @@ Strategische Entscheidungen wirken sich direkt auf die Zuverlässigkeit aus. Sie
 
 **Ziele:**
 
-- Erfassen Sie Beweggründe, Ergebnisse und geschäftliche Begründungen in der [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx).
+- Erfassen Sie Beweggründe, Ergebnisse und geschäftliche Begründungen in der [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx).
 - Stellen Sie sicher, dass die Verwaltungsbaseline eine auf die strategische Richtung der Cloudeinführung abgestimmte betriebliche Unterstützung bietet.
 
 **Hinweis zur Erreichung der Ziele:**
@@ -115,7 +115,7 @@ Wenn Sie den Einführungsplan mit der Analyse des digitalen Bestands abstimmen, 
 
 **Ziele:**
 
-- Aktualisieren der [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx), um die Änderung widerzuspiegeln, die für die Umsetzung der gewünschten Strategie erforderlich ist. Die aufgezeichneten Änderungen können Folgendes umfassen:
+- Aktualisieren der [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx), um die Änderung widerzuspiegeln, die für die Umsetzung der gewünschten Strategie erforderlich ist. Die aufgezeichneten Änderungen können Folgendes umfassen:
 
   - Eine Bewertung des vorhandenen digitalen Bestands.
   - Einen Cloudeinführungsplan, der die erforderlichen Änderungen und die damit verbundenen Aufgaben widerspiegelt.
@@ -128,7 +128,7 @@ Wenn Sie den Einführungsplan mit der Analyse des digitalen Bestands abstimmen, 
 - [Erfassen von Bestandsdaten](../digital-estate/inventory.md): Richten Sie eine Datenquelle für die Analyse des digitalen Bestands vor der Einführung ein.
 - [Bewährte Methode: Azure Migrate:](../plan/contoso-migration-assessment.md) Verwenden Sie Azure Migrate, um den Bestand zu erfassen.
 - [Inkrementelle Rationalisierung](../digital-estate/rationalize.md#incremental-rationalization): Während der inkrementellen Rationalisierung kann eine quantitative Analyse Cloudkandidaten zu Budgetierungszwecken identifizieren.
-- [Abstimmen von Kostenmodellen und Vorhersagemodellen](../digital-estate/calculate.md): Verwenden Sie Azure Cost Management, um Kosten- und Vorhersagemodelle durch [Erstellen von Budgets](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) abzustimmen.
+- [Abstimmen von Kostenmodellen und Vorhersagemodellen](../digital-estate/calculate.md): Verwenden Sie Azure Cost Management, um Kosten- und Vorhersagemodelle durch [Erstellen von Budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json) abzustimmen.
 - [Entwickeln Ihres Cloudeinführungsplans](../plan/plan-intro.md#build-your-cloud-adoption-plan): Erstellen Sie einen Plan mit handlungsrelevanten Details zu Workloads und Ressourcen sowie zum zeitlichen Ablauf.
 
 <!-- markdownlint-disable MD033 -->

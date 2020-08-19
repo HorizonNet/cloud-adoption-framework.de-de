@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 16b0e1835f358eb4df98e06bb241f2ec0f7c5e8d
-ms.sourcegitcommit: 580a6f66a0d0f3f5b755c68d757a84b2351a432f
+ms.openlocfilehash: 9bdf860480e75348d0d234f7b068d8762ccf0174
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87473113"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567613"
 ---
 <!-- cSpell:ignore givenscj WEBVM SQLVM contosohost vcenter contosodc smarthotel SQLMI SHWCF SHWEB -->
 
@@ -29,7 +29,7 @@ Das IT-Führungsteam von Contoso hat eng mit den Geschäftspartnern zusammengear
 
 - **Unternehmenswachstum**. Contoso wächst, und damit steigt die Last auf seinen lokalen Systeme und Infrastrukturen.
 - **Steigern der Effizienz**. Contoso muss unnötige Verfahren beseitigen und Prozesse für Entwickler und Benutzer optimieren. Die IT-Abteilung muss schnell sein, weder Geld noch Zeit verschwenden, und Kundenanforderungen schneller bearbeiten.
-- **Steigern der Flexibilität**.  Die Contoso-IT-Abteilung muss schneller auf die Unternehmensanforderungen reagieren. Sie muss schneller reagieren können, als sich die Gegebenheiten des Markts ändern, damit das Unternehmen auf dem globalen Markt Erfolg hat. Ihre Reaktionszeit darf nicht im Weg stehen oder zum Geschäftshindernis werden.
+- **Steigern der Flexibilität**. Die Contoso-IT-Abteilung muss schneller auf die Unternehmensanforderungen reagieren. Sie muss schneller reagieren können, als sich die Gegebenheiten des Markts ändern, damit das Unternehmen auf dem globalen Markt Erfolg hat. Ihre Reaktionszeit darf nicht im Weg stehen oder zum Geschäftshindernis werden.
 - **Skalierung:** Bei einer Anwendung für Hunderttausende oder Millionen von Mandanten sind Ansätze mit gemeinsamer Datenbanknutzung vorteilhaft, z.B. Da das Unternehmen erfolgreich wächst, muss die Contoso-IT Systeme bereitstellen, die mit der gleichen Geschwindigkeit wachsen können.
 - **Senken der Kosten:** Contoso möchte die Lizenzierungskosten minimieren.
 
@@ -97,10 +97,10 @@ Contoso wertet seinen vorgeschlagenen Entwurf aus, indem das Unternehmen eine Li
 
 | Dienst | BESCHREIBUNG | Kosten |
 | --- | --- | --- |
-| [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Azure Database Migration Service ermöglicht die nahtlose Migration mehrerer Datenbankquellen zu Azure-Datenplattformen mit minimaler Downtime. | Informieren Sie sich über die [unterstützten Regionen](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability) und die [Preise für Azure Database Migration Service](https://azure.microsoft.com/pricing/details/database-migration). |
-| [Verwaltete Azure SQL-Datenbank-Instanz](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) | SQL Managed Instance ist ein verwalteter Datenbankdienst, der eine vollständig verwaltete SQL Server-Instanz in Azure darstellt. Sie nutzt den gleichen Code wie die neueste Version der Microsoft SQL Server-Datenbank-Engine und verfügt über die neuesten Features, Leistungsverbesserungen und Sicherheitspatches. | Bei der Verwendung einer in Azure ausgeführten verwalteten SQL-Instanz fallen Gebühren je nach Kapazität an. Informieren Sie sich über die [Preise für SQL Managed Instance](https://azure.microsoft.com/pricing/details/sql-database/managed). |
-| [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) | Hilft beim Erstellen leistungsstarker Cloudanwendungen auf einer vollständig verwalteten Plattform. | Die Kosten basieren auf Größe, Standort und Nutzungsdauer. [Weitere Informationen](https://azure.microsoft.com/pricing/details/app-service/windows) |
-| [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/what-is-azure-pipelines) | Azure Pipelines stellt eine CI/CD-Pipeline (Continuous Integration/Continuous Deployment) für die Anwendungsentwicklung bereit. Die Pipeline beginnt bei einem Git-Repository für die Verwaltung von Anwendungscode, einem Buildsystem zum Erstellen von Paketen und anderen Buildartefakten sowie einem Releaseverwaltungssystem zum Bereitstellen von Änderungen in Entwicklungs-, Test- und Produktionsumgebungen. |
+| [Azure Database Migration Service](/azure/dms/dms-overview) | Azure Database Migration Service ermöglicht die nahtlose Migration mehrerer Datenbankquellen zu Azure-Datenplattformen mit minimaler Downtime. | Informieren Sie sich über die [unterstützten Regionen](/azure/dms/dms-overview#regional-availability) und die [Preise für Azure Database Migration Service](https://azure.microsoft.com/pricing/details/database-migration). |
+| [Verwaltete Azure SQL-Datenbank-Instanz](/azure/sql-database/sql-database-managed-instance) | SQL Managed Instance ist ein verwalteter Datenbankdienst, der eine vollständig verwaltete SQL Server-Instanz in Azure darstellt. Sie nutzt den gleichen Code wie die neueste Version der Microsoft SQL Server-Datenbank-Engine und verfügt über die neuesten Features, Leistungsverbesserungen und Sicherheitspatches. | Bei der Verwendung einer in Azure ausgeführten verwalteten SQL-Instanz fallen Gebühren je nach Kapazität an. Informieren Sie sich über die [Preise für SQL Managed Instance](https://azure.microsoft.com/pricing/details/sql-database/managed). |
+| [Azure App Service](/azure/app-service/overview) | Hilft beim Erstellen leistungsstarker Cloudanwendungen auf einer vollständig verwalteten Plattform. | Die Kosten basieren auf Größe, Standort und Nutzungsdauer. [Weitere Informationen](https://azure.microsoft.com/pricing/details/app-service/windows) |
+| [Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines) | Azure Pipelines stellt eine CI/CD-Pipeline (Continuous Integration/Continuous Deployment) für die Anwendungsentwicklung bereit. Die Pipeline beginnt bei einem Git-Repository für die Verwaltung von Anwendungscode, einem Buildsystem zum Erstellen von Paketen und anderen Buildartefakten sowie einem Releaseverwaltungssystem zum Bereitstellen von Änderungen in Entwicklungs-, Test- und Produktionsumgebungen. |
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -132,10 +132,10 @@ Contoso benötigt ein Subnetz, das die folgenden Anforderungen erfüllt, um eine
 - Nachdem die verwaltete Instanz erstellt wurde, sollte Contoso dem Subnetz keine Ressourcen mehr hinzufügen.
 - Dem Subnetz darf keine Netzwerksicherheitsgruppe zugeordnet sein.
 - Das Subnetz muss über eine benutzerdefinierte Routingtabelle verfügen. Die einzige zugewiesene Route sollte `0.0.0.0/0` sein (nächster Hop „Internet“).
-- Wenn ein optionales benutzerdefiniertes DNS für das virtuelle Netzwerk angegeben wird, muss die virtuelle IP-Adresse `168.63.129.16` für die rekursiven Resolver in Azure zur Liste hinzugefügt werden. Informieren Sie sich über das [Konfigurieren eines benutzerdefinierten DNS für Azure SQL Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns).
+- Wenn ein optionales benutzerdefiniertes DNS für das virtuelle Netzwerk angegeben wird, muss die virtuelle IP-Adresse `168.63.129.16` für die rekursiven Resolver in Azure zur Liste hinzugefügt werden. Informieren Sie sich über das [Konfigurieren eines benutzerdefinierten DNS für Azure SQL Managed Instance](/azure/sql-database/sql-database-managed-instance-custom-dns).
 - Dem Subnetz darf kein Dienstendpunkt (Speicher oder SQL) zugeordnet sein. Dienstendpunkte sollten im virtuellen Netzwerk deaktiviert sein.
-- Das Subnetz muss mindestens 16 IP-Adressen aufweisen. Informieren Sie sich über das [Bestimmen der Größe des Subnetzes für verwaltete Instanzen](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-configure-vnet-subnet).
-- In der Hybridumgebung von Contoso sind benutzerdefinierte DNS-Einstellungen erforderlich. Contoso konfiguriert die DNS-Einstellungen so, dass mindestens ein Azure DNS-Server des Unternehmens genutzt wird. Informieren Sie sich über die [DNS-Anpassung](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-custom-dns).
+- Das Subnetz muss mindestens 16 IP-Adressen aufweisen. Informieren Sie sich über das [Bestimmen der Größe des Subnetzes für verwaltete Instanzen](/azure/sql-database/sql-database-managed-instance-configure-vnet-subnet).
+- In der Hybridumgebung von Contoso sind benutzerdefinierte DNS-Einstellungen erforderlich. Contoso konfiguriert die DNS-Einstellungen so, dass mindestens ein Azure DNS-Server des Unternehmens genutzt wird. Informieren Sie sich über die [DNS-Anpassung](/azure/sql-database/sql-database-managed-instance-custom-dns).
 
 ### <a name="set-up-a-virtual-network-for-the-managed-instance"></a>Einrichten eines virtuellen Netzwerks für die verwaltete Instanz
 
@@ -167,10 +167,10 @@ Die Contoso-Administratoren richten das virtuelle Netzwerk folgendermaßen ein:
 
 **Benötigen Sie weitere Hilfe?**
 
-- Lesen Sie die [Übersicht zu SQL Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance).
-- Informieren Sie sich über das [Konfigurieren eines vorhandenen virtuellen Netzwerks für Azure SQL Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-configure-vnet-subnet).
-- Erfahren Sie, wie Sie das [Peering einrichten](https://docs.microsoft.com/azure/virtual-network/virtual-network-manage-peering).
-- Erfahren Sie, wie Sie die [DNS-Einstellungen für Azure Active Directory aktualisieren](https://docs.microsoft.com/azure/active-directory-domain-services/tutorial-create-instance).
+- Lesen Sie die [Übersicht zu SQL Managed Instance](/azure/sql-database/sql-database-managed-instance).
+- Informieren Sie sich über das [Konfigurieren eines vorhandenen virtuellen Netzwerks für Azure SQL Managed Instance](/azure/sql-database/sql-database-managed-instance-configure-vnet-subnet).
+- Erfahren Sie, wie Sie das [Peering einrichten](/azure/virtual-network/virtual-network-manage-peering).
+- Erfahren Sie, wie Sie die [DNS-Einstellungen für Azure Active Directory aktualisieren](/azure/active-directory-domain-services/tutorial-create-instance).
 
 ### <a name="set-up-routing"></a>Einrichten des Routings
 
@@ -199,7 +199,7 @@ Die Contoso-Administratoren führen die folgenden Schritte aus, um das Routing e
 
 **Benötigen Sie weitere Hilfe?**
 
-Informieren Sie sich über das [Einrichten von Routen für eine verwaltete Instanz](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-get-started).
+Informieren Sie sich über das [Einrichten von Routen für eine verwaltete Instanz](/azure/sql-database/sql-database-managed-instance-get-started).
 
 ### <a name="create-a-managed-instance"></a>Erstellen einer verwalteten Instanz
 
@@ -218,11 +218,11 @@ Jetzt können die Administratoren von Contoso eine verwaltete SQL-Instanz bereit
 
 **Benötigen Sie weitere Hilfe?**
 
-Informieren Sie sich über das [Bereitstellen einer verwalteten Instanz](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-get-started).
+Informieren Sie sich über das [Bereitstellen einer verwalteten Instanz](/azure/sql-database/sql-database-managed-instance-get-started).
 
 ## <a name="step-2-migrate-via-azure-database-migration-service"></a>Schritt 2: Migrieren mithilfe von Azure Database Migration Service
 
-Die Administratoren von Contoso migrieren die verwaltete Instanz mithilfe von Azure Database Migration Service, indem sie die Anweisungen im [ausführlichen Migrationstutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online) befolgen. Sie können Online-, Offline- und Hybridmigrationen (Vorschauversion) ausführen.
+Die Administratoren von Contoso migrieren die verwaltete Instanz mithilfe von Azure Database Migration Service, indem sie die Anweisungen im [ausführlichen Migrationstutorial](/azure/dms/tutorial-sql-server-azure-sql-online) befolgen. Sie können Online-, Offline- und Hybridmigrationen (Vorschauversion) ausführen.
 
 Contoso-Administratoren gehen im Wesentlichen wie folgt vor:
 
@@ -411,21 +411,21 @@ Nachdem die Ressourcen nun zu Azure migriert wurden, muss Contoso die neue Infra
 
 ### <a name="security"></a>Sicherheit
 
-- Contoso muss sicherstellen, dass die neue Datenbank `SmartHotel-Registration` geschützt ist. [Weitere Informationen](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)
+- Contoso muss sicherstellen, dass die neue Datenbank `SmartHotel-Registration` geschützt ist. [Weitere Informationen](/azure/sql-database/sql-database-security-overview)
 - Insbesondere muss Contoso die Web-Apps für die Verwendung von SSL mit Zertifikaten aktualisieren.
 
 ### <a name="backups"></a>Backups
 
-- Das Contoso-Team muss die Sicherungsanforderungen für die Datenbank in Azure SQL Managed Instance überprüfen. [Weitere Informationen](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)
-- Es muss sich auch über die Verwaltung von Sicherungen und Wiederherstellungen in SQL-Datenbank informieren. [Erfahren Sie mehr über automatische Sicherungen.](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)
-- Das Unternehmen muss die Implementierung von Failovergruppen berücksichtigen, um ein regionales Failover für die Datenbank bereitzustellen. [Weitere Informationen](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview)
+- Das Contoso-Team muss die Sicherungsanforderungen für die Datenbank in Azure SQL Managed Instance überprüfen. [Weitere Informationen](/azure/sql-database/sql-database-automated-backups)
+- Es muss sich auch über die Verwaltung von Sicherungen und Wiederherstellungen in SQL-Datenbank informieren. [Erfahren Sie mehr über automatische Sicherungen.](/azure/sql-database/sql-database-automated-backups)
+- Das Unternehmen muss die Implementierung von Failovergruppen berücksichtigen, um ein regionales Failover für die Datenbank bereitzustellen. [Weitere Informationen](/azure/sql-database/sql-database-geo-replication-overview)
 - Es muss hinsichtlich der Resilienz die Bereitstellung der Web-App in der Hauptregion (`East US 2`) und der sekundären Region (`Central US`) in Erwägung ziehen. Das Team könnte den Traffic Manager konfigurieren, um ein Failover während regionaler Ausfälle sicherzustellen.
 
 ### <a name="licensing-and-cost-optimization"></a>Lizenzierung und Kostenoptimierung
 
 - Nachdem alle Ressourcen bereitgestellt wurden, weist Contoso Azure-Tags basierend auf seiner [Infrastrukturplanung](./contoso-migration-infrastructure.md#set-up-tagging) zu.
 - Die gesamte Lizenzierung ist in die Kosten für die PaaS-Dienste integriert, die Contoso verwendet. Diese Kosten werden über das Enterprise Agreement verrechnet.
-- Contoso verwendet die [Azure-Kostenverwaltung und -Abrechnung](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview), um sicherzustellen, dass das von den IT-Führungskräften festgelegte Budget nicht überschritten wird.
+- Contoso verwendet die [Azure-Kostenverwaltung und -Abrechnung](/azure/cost-management-billing/cost-management-billing-overview), um sicherzustellen, dass das von den IT-Führungskräften festgelegte Budget nicht überschritten wird.
 
 ## <a name="conclusion"></a>Zusammenfassung
 

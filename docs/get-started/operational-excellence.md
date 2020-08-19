@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 6372e7cb8d90cb7a13c55f04dd2ac0714d06c681
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 39c19414011a55a5583a215332c699ee4d3f3b16
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450508"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569330"
 ---
 # <a name="get-started-deliver-operational-excellence-during-digital-transformation"></a>Erste Schritte: Bereitstellen des optimalen Betriebs während der digitalen Transformation
 
@@ -38,7 +38,7 @@ Eine klare Geschäftsstrategie ist die Grundlage für jede digitale Transformati
 
 **Ziele:**
 
-- Erfassen Sie Beweggründe, Ergebnisse und geschäftliche Begründungen in der [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx).
+- Erfassen Sie Beweggründe, Ergebnisse und geschäftliche Begründungen in der [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx).
 - Stellen Sie sicher, dass die Lernmetriken verstanden werden und im Abschnitt mit den Geschäftsergebnissen enthalten sind. Diese Metriken leiten Aktivitäten für den optimalen Betrieb und die Berichterstellung der IT.
 
 **Hinweis zur Erreichung der Ziele:**
@@ -61,7 +61,7 @@ Organisatorisches Change Management ist ein iterativer Ansatz zur subtilen Neuau
 
 **Ziele:**
 
-- Aktualisieren der [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx), um die Änderung widerzuspiegeln, die für die Umsetzung der gewünschten Strategie erforderlich ist. Die aufgezeichneten Änderungen können Folgendes umfassen:
+- Aktualisieren der [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx), um die Änderung widerzuspiegeln, die für die Umsetzung der gewünschten Strategie erforderlich ist. Die aufgezeichneten Änderungen können Folgendes umfassen:
 
   - Eine Bewertung des vorhandenen digitalen Bestands.
   - Einen Cloudeinführungsplan, der die erforderlichen Änderungen und die damit verbundenen Aufgaben widerspiegelt.
@@ -73,7 +73,7 @@ Organisatorisches Change Management ist ein iterativer Ansatz zur subtilen Neuau
 - [Erfassen von Bestandsdaten](../digital-estate/inventory.md): Richten Sie eine Datenquelle für die Analyse des digitalen Bestands vor der Einführung ein.
 - [Bewährte Methode: Azure Migrate](../plan/contoso-migration-assessment.md): Verwenden Sie Azure Migrate, um den Bestand zu erfassen.
 - [Inkrementelle Rationalisierung](../digital-estate/rationalize.md#incremental-rationalization): Während der inkrementellen Rationalisierung identifiziert eine quantitative Analyse Cloudkandidaten zu Budgetierungszwecken.
-- [Abstimmen von Kostenmodellen und Vorhersagemodellen](../digital-estate/calculate.md): Verwenden Sie Azure Cost Management, um Kosten- und Vorhersagemodelle durch [Erstellen von Budgets](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) abzustimmen.
+- [Abstimmen von Kostenmodellen und Vorhersagemodellen](../digital-estate/calculate.md): Verwenden Sie Azure Cost Management, um Kosten- und Vorhersagemodelle durch [Erstellen von Budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json) abzustimmen.
 - [Entwickeln Ihres Cloudeinführungsplans](../plan/plan-intro.md#build-your-cloud-adoption-plan): Erstellen Sie einen Plan mit handlungsrelevanten Details zu Workloads und Ressourcen sowie zum zeitlichen Ablauf.
 
 <!-- markdownlint-disable MD033 -->

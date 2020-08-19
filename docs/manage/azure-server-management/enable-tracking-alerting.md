@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0ea3e0c136f54d926a92fea5d856dbd7964c93e3
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: a8826b82e9ec3aa503e79e0aa5345a3a494a2bef
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86190650"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567545"
 ---
 <!-- cSpell:ignore HKEY kusto -->
 
@@ -24,11 +24,11 @@ Standardmäßig überwacht der Azure Automation-Inventarisierungsdienst keine Da
 
 ![Screenshot der Ansicht des Automation-Bestands im Azure-Portal](./media/change-tracking1.png)
 
-Weitere Informationen zu den einzelnen Registrierungsschlüsseln finden Sie unter [Änderungsnachverfolgung für Registrierungsschlüssel](https://docs.microsoft.com/azure/automation/automation-change-tracking#registry-key-change-tracking). Wählen Sie einen beliebigen Schlüssel zur Auswertung aus und aktivieren Sie ihn dann. Die Einstellung wird auf alle virtuellen Computer angewendet, die im aktuellen Arbeitsbereich aktiviert sind.
+Weitere Informationen zu den einzelnen Registrierungsschlüsseln finden Sie unter [Änderungsnachverfolgung für Registrierungsschlüssel](/azure/automation/automation-change-tracking#registry-key-change-tracking). Wählen Sie einen beliebigen Schlüssel zur Auswertung aus und aktivieren Sie ihn dann. Die Einstellung wird auf alle virtuellen Computer angewendet, die im aktuellen Arbeitsbereich aktiviert sind.
 
 Sie können den Dienst auch verwenden, um wichtige Dateiänderungen zu verfolgen. Sie können z. B. die Datei „C:\windows\system32\drivers\etc\hosts“ nachverfolgen, da sie vom Betriebssystem zum Zuordnen von Hostnamen und IP-Adressen verwendet wird. Änderungen an dieser Datei können zu Konnektivitätsproblemen führen oder den Datenverkehr zu gefährlichen Websites umleiten.
 
-Um das Nachverfolgen von Dateiinhalten für die Datei „hosts“ zu aktivieren, führen Sie die Schritte unter [Aktivieren der Nachverfolgung von Dateiinhalten](https://docs.microsoft.com/azure/automation/change-tracking-file-contents#enable-file-content-tracking) aus.
+Um das Nachverfolgen von Dateiinhalten für die Datei „hosts“ zu aktivieren, führen Sie die Schritte unter [Aktivieren der Nachverfolgung von Dateiinhalten](/azure/automation/change-tracking-file-contents#enable-file-content-tracking) aus.
 
 Sie können auch eine Warnung für Änderungen an Dateien hinzufügen, die Sie nachverfolgen. Nehmen Sie z. B. an, dass Sie eine Warnung für Änderungen an der Datei „hosts“ festlegen möchten. Wählen Sie **Log Analytics** in der Befehlsleiste oder die Protokollsuche für den verknüpften Log Analytics-Arbeitsbereich aus. Verwenden Sie in Log Analytics die folgende Abfrage, um nach Änderungen an der Datei „hosts“ zu suchen:
 

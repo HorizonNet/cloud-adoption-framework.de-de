@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e3d8f8cf6a4406eae9bedc1ebc461613bb0fef84
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: e82727e6d8f90ecf3681ff8a85096088b4a6de70
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84785547"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572186"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Bestand und Transparenz in Azure
 
@@ -84,7 +84,7 @@ Wechseln Sie zum [Azure-Portal](https://portal.azure.com/#blade/Microsoft_Azure_
 
 ### <a name="learn-more"></a>Weitere Informationen
 
-Weitere Informationen finden Sie unter [Azure Service Health](https://docs.microsoft.com/azure/service-health).
+Weitere Informationen finden Sie unter [Azure Service Health](/azure/service-health).
 
 ## <a name="log-analytics"></a>Log Analytics
 
@@ -95,7 +95,7 @@ Weitere Informationen finden Sie unter [Azure Service Health](https://docs.micro
 
 ::: zone-end
 
-Ein [Log Analytics-Arbeitsbereich](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace) ist eine spezifische Umgebung für das Speichern von Azure Monitor-Protokolldaten. Jeder Arbeitsbereich verfügt über ein eigenes Datenrepository und eine eigene Konfiguration. Datenquellen und Lösungen sind so konfiguriert, dass sie ihre Daten in bestimmten Arbeitsbereichen speichern. Azure-Überwachungslösungen erfordern, dass alle Server mit einem Arbeitsbereich verbunden sind, damit ihre Protokolldaten gespeichert und abgerufen werden können.
+Ein [Log Analytics-Arbeitsbereich](/azure/azure-monitor/learn/quick-create-workspace) ist eine spezifische Umgebung für das Speichern von Azure Monitor-Protokolldaten. Jeder Arbeitsbereich verfügt über ein eigenes Datenrepository und eine eigene Konfiguration. Datenquellen und Lösungen sind so konfiguriert, dass sie ihre Daten in bestimmten Arbeitsbereichen speichern. Azure-Überwachungslösungen erfordern, dass alle Server mit einem Arbeitsbereich verbunden sind, damit ihre Protokolldaten gespeichert und abgerufen werden können.
 
 ::: zone target="chromeless"
 
@@ -113,7 +113,7 @@ Ein [Log Analytics-Arbeitsbereich](https://docs.microsoft.com/azure/azure-monito
 
 ### <a name="learn-more"></a>Weitere Informationen
 
-Weitere Informationen finden Sie in der [Dokumentation zum Erstellen eines Log Analytics-Arbeitsbereichs](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace).
+Weitere Informationen finden Sie in der [Dokumentation zum Erstellen eines Log Analytics-Arbeitsbereichs](/azure/azure-monitor/learn/quick-create-workspace).
 
 ## <a name="azure-monitor"></a>Azure Monitor
 
@@ -148,10 +148,10 @@ Azure Monitor ist ein separater einheitlicher Hub für alle Überwachungs- und D
 
  Beginnen Sie mit der Überwachung von:
 
-- [Anwendungen](https://docs.microsoft.com/azure/application-insights/app-insights-overview)
-- [Container](https://docs.microsoft.com/azure/monitoring/monitoring-container-overview)
-- [Virtuelle Computer](https://docs.microsoft.com/azure/monitoring/monitoring-service-map)
-- [Netzwerke](https://docs.microsoft.com/azure/networking/network-monitoring-overview)
+- [Anwendungen](/azure/application-insights/app-insights-overview)
+- [Container](/azure/monitoring/monitoring-container-overview)
+- [Virtuelle Computer](/azure/monitoring/monitoring-service-map)
+- [Netzwerke](/azure/networking/network-monitoring-overview)
 
 Auf dem Azure Marketplace finden Sie noch weitere Lösungen zur Überwachung anderer Ressourcen.
 
@@ -159,7 +159,7 @@ Wechseln Sie zum [Azure-Portal](https://portal.azure.com/#blade/Microsoft_Azure_
 
 ### <a name="learn-more"></a>Weitere Informationen
 
-Weitere Informationen finden Sie in der [Azure Monitor-Dokumentation](https://docs.microsoft.com/azure/monitoring-and-diagnostics).
+Weitere Informationen finden Sie in der [Azure Monitor-Dokumentation](/azure/monitoring-and-diagnostics).
 
 ## <a name="onboard-solutions"></a>Onboarding von Lösungen
 

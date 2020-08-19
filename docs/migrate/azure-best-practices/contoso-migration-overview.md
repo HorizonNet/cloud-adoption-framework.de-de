@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 33be59a80186795bf33ee4a22e3dc98534624090
-ms.sourcegitcommit: 26aee3c6f596bb8a9f1e16af93cdf94e41a61dee
+ms.openlocfilehash: afae06e0a9bd432a2901e245b28917c37efe6e9a
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87400478"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567086"
 ---
 # <a name="overview-of-application-migration-examples-for-azure"></a>Übersicht über Beispiele für eine Anwendungsmigration für Azure
 
@@ -78,7 +78,7 @@ Bei dieser Reihe liegt der Schwerpunkt auf den einzelnen Migrationsszenarien, di
 | Artikel | Details |
 | --- | --- |
 | [Migrieren von SQL Server-Datenbanken zu Azure](./contoso-migration-sql-server-db-to-azure.md) | In diesem Artikel wird gezeigt, wie das fiktive Unternehmen Contoso verschiedene lokale SQL Server-Datenbanken bewertet und die Migration zu Azure geplant und durchgeführt hat. |
-| [Zuweisen eines neuen Hosts für eine Anwendung auf einer Azure-VM und in einer verwalteten SQL-Instanz](./contoso-migration-rehost-vm-sql-managed-instance.md) | Dieser Artikel enthält ein Beispiel für eine Lift & Shift-Migration zu Azure für eine lokale Anwendung. Dazu gehört die Migration der virtuellen Front-End-Computer der Anwendung mithilfe von Azure Migrate und der Anwendungsdatenbank zu SQL Managed Instance mithilfe von [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview). |
+| [Zuweisen eines neuen Hosts für eine Anwendung auf einer Azure-VM und in einer verwalteten SQL-Instanz](./contoso-migration-rehost-vm-sql-managed-instance.md) | Dieser Artikel enthält ein Beispiel für eine Lift & Shift-Migration zu Azure für eine lokale Anwendung. Dazu gehört die Migration der virtuellen Front-End-Computer der Anwendung mithilfe von Azure Migrate und der Anwendungsdatenbank zu SQL Managed Instance mithilfe von [Azure Database Migration Service](/azure/dms/dms-overview). |
 | [Zuweisen eines neuen Hosts für eine Anwendung auf Azure-VMs mithilfe von SQL Server Always On-Verfügbarkeitsgruppen](./contoso-migration-rehost-vm-sql-ag.md) | In diesem Beispiel wird gezeigt, wie Sie eine Anwendung und Daten mit von Azure gehosteten SQL Server-VMs migrieren. Dabei wird Azure Migrate verwendet, um die virtuellen Anwendungscomputer zu migrieren, und Database Migration Service, um die Anwendungsdatenbank zu einem SQL Server-Cluster zu migrieren, der durch eine Always On-Verfügbarkeitsgruppe geschützt wird. |
 
 ### <a name="linux-and-open-source-databases"></a>Linux- und Open-Source-Datenbanken
@@ -89,7 +89,7 @@ Bei dieser Reihe liegt der Schwerpunkt auf den einzelnen Migrationsszenarien, di
 | [Migrieren von MySQL zu Azure](./contoso-migration-mysql-to-azure.md) | In diesem Artikel wird gezeigt, wie das fiktive Unternehmen Contoso die Migration seiner lokalen Open-Source-MySQL-Datenbankplattform zu Azure geplant und durchgeführt hat. |
 | [Migrieren von PostgreSQL zu Azure](./contoso-migration-postgresql-to-azure.md) | In diesem Artikel wird gezeigt, wie das fiktive Unternehmen Contoso die Migration seiner lokalen Open-Source-PostgreSQL-Datenbankplattform zu Azure geplant und durchgeführt hat. |
 | [Migrieren von MariaDB zu Azure](./contoso-migration-mariadb-to-azure.md) | In diesem Artikel wird gezeigt, wie das fiktive Unternehmen Contoso die Migration seiner lokalen Open-Source-MariaDB-Datenbankplattform zu Azure geplant und durchgeführt hat. |
-| [Zuweisen eines neuen Hosts für eine Linux-Anwendung auf Azure-VMs und Azure Database for MySQL](./contoso-migration-rehost-linux-vm-mysql.md) | Dieser Artikel enthält ein Beispiel für die Migration einer von Linux gehosteten Anwendung zu Azure-VMs mithilfe von Azure Migrate. Die Anwendungsdatenbank wird mithilfe von [Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) zu Azure Database for MySQL migriert. |
+| [Zuweisen eines neuen Hosts für eine Linux-Anwendung auf Azure-VMs und Azure Database for MySQL](./contoso-migration-rehost-linux-vm-mysql.md) | Dieser Artikel enthält ein Beispiel für die Migration einer von Linux gehosteten Anwendung zu Azure-VMs mithilfe von Azure Migrate. Die Anwendungsdatenbank wird mithilfe von [Database Migration Service](/azure/dms/dms-overview) zu Azure Database for MySQL migriert. |
 | [Zuweisen eines neuen Hosts für eine Linux-Anwendung auf Azure-VMs](./contoso-migration-rehost-linux-vm.md) | In diesem Beispiel wird gezeigt, wie Sie mithilfe von Azure Migrate eine Lift & Shift-Migration einer Linux-basierten Anwendung zu virtuellen Azure-Computern durchführen. |
 
 ### <a name="devtest-workloads"></a>Dev/Test-Workloads
@@ -103,8 +103,8 @@ Bei dieser Reihe liegt der Schwerpunkt auf den einzelnen Migrationsszenarien, di
 
 | Artikel | Details |
 | --- | --- |
-| [Umgestalten einer Windows-Anwendung mithilfe von App Service und SQL-Datenbank](./contoso-migration-refactor-web-app-sql.md) | Dieses Beispiel zeigt, wie Sie eine lokale Windows-basierte Anwendung zu einer Azure-Web-App migrieren und die Anwendungsdatenbank mithilfe von [Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) zu einer Azure SQL Server-Instanz migrieren. |
-| [Umgestalten einer lokalen Anwendung zu einer Azure App Service-Web-App und einer Instanz von SQL Managed Instance](./contoso-migration-refactor-web-app-sql-managed-instance.md) | Dieses Beispiel zeigt, wie Sie eine lokale Windows-basierte Anwendung zu einer Azure-Web-App migrieren und die Anwendungsdatenbank mithilfe von [Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) zu SQL Managed Instance migrieren. |
+| [Umgestalten einer Windows-Anwendung mithilfe von App Service und SQL-Datenbank](./contoso-migration-refactor-web-app-sql.md) | Dieses Beispiel zeigt, wie Sie eine lokale Windows-basierte Anwendung zu einer Azure-Web-App migrieren und die Anwendungsdatenbank mithilfe von [Database Migration Service](/azure/dms/dms-overview) zu einer Azure SQL Server-Instanz migrieren. |
+| [Umgestalten einer lokalen Anwendung zu einer Azure App Service-Web-App und einer Instanz von SQL Managed Instance](./contoso-migration-refactor-web-app-sql-managed-instance.md) | Dieses Beispiel zeigt, wie Sie eine lokale Windows-basierte Anwendung zu einer Azure-Web-App migrieren und die Anwendungsdatenbank mithilfe von [Database Migration Service](/azure/dms/dms-overview) zu SQL Managed Instance migrieren. |
 | [Umgestalten einer Linux-Anwendung für mehrere Regionen mit Azure App Service, Traffic Manager und Azure Database for MySQL](./contoso-migration-refactor-linux-app-service-mysql.md) | Dieses Beispiel zeigt, wie Sie eine lokale Linux-basierte Anwendung per Traffic Manager zu einer Azure-Web-App in mehreren Azure-Regionen migrieren, um sie für Continuous Delivery in GitHub zu integrieren. Die Anwendungsdatenbank wird zu einer Azure Database for MySQL-Instanz migriert. |
 | [Neuerstellen einer Anwendung in Azure](./contoso-migration-rebuild.md) | Dieser Artikel enthält ein Beispiel für die Neuerstellung einer lokalen Anwendung unter Verwendung einer Reihe von Azure-Funktionen und verwalteten Diensten. Hierzu zählen App Service, AKS, Azure Functions, Azure Cognitive Services und Azure Cosmos DB. |
 | [Umgestalten von Team Foundation Server in Azure DevOps Services](./contoso-migration-tfs-vsts.md) | Dieser Artikel zeigt eine Beispielmigration einer lokalen Team Foundation Server-Bereitstellung zu Azure DevOps Services in Azure. |

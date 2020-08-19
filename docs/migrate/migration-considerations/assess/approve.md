@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 27f8773e5baee86c6837ea6922411e0a92b045a1
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 218b7ce544d74f46aa178d2e1315d7b5cb63d5a1
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450780"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196699"
 ---
 <!-- cSpell:ignore ITIL -->
 
@@ -69,7 +69,7 @@ Wenn möglich, sollten technische Änderungen während des Bewertungsprozesses e
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Mithilfe dieser bewährten Methoden sollte es einfacher sein, eine ordnungsgemäße und risikoarme Genehmigung in die Migrationsmaßnahmen zu integrieren. Nachdem die Änderungen der Workloads genehmigt wurden, ist das Cloudeinführungsteam zum [Migrieren von Workloads](../migrate/index.md) bereit.
+Mithilfe dieser bewährten Methoden sollte es einfacher sein, eine ordnungsgemäße und risikoarme Genehmigung in die Migrationsmaßnahmen zu integrieren. Nachdem die Änderungen der Workloads genehmigt wurden, ist das Cloudeinführungsteam zum Migrieren von Workloads bereit.
 
 > [!div class="nextstepaction"]
 > [Migrieren von Workloads](../migrate/index.md)

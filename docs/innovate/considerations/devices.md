@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 6e0d7cc4a1894ad4a34d94d241fbb2b992f8686f
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: b871e4d9e1c11b177fdda4abb873f63e6ba182bb
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86449318"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572339"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>Umgebungserfahrungen: Interagieren mit Geräten
 
@@ -47,7 +47,7 @@ Die erste Phase der Umgebungserfahrung stellt das Lösen des Benutzers vom Compu
 
 Wenn Kunden mobil sind und häufig ihren Standort wechseln, kann dies die relevanteste Form der Umgebungserfahrung für eine bestimmte Lösung sein. Im letzten Jahrzehnt wurden Innovationen häufig durch die Integration vorhandener Lösungen in eine mobile Umgebung ausgelöst.
 
-Azure App Service ist ein gutes Beispiel für diesen Ansatz. Während der ersten Iterationen kann die [Web-App-Funktion von Azure App Service](https://docs.microsoft.com/azure/app-service/overview) zum Testen der Hypothese verwendet werden. Mit zunehmender Komplexität der Hypothesen kann die [mobile App-Funktion von Azure App Service](https://docs.microsoft.com/azure/app-service-mobile) die Web-App so erweitern, dass sie auf einer Vielzahl mobiler Plattformen ausgeführt wird.
+Azure App Service ist ein gutes Beispiel für diesen Ansatz. Während der ersten Iterationen kann die [Web-App-Funktion von Azure App Service](/azure/app-service/overview) zum Testen der Hypothese verwendet werden. Mit zunehmender Komplexität der Hypothesen kann die [mobile App-Funktion von Azure App Service](/azure/app-service-mobile) die Web-App so erweitern, dass sie auf einer Vielzahl mobiler Plattformen ausgeführt wird.
 
 ## <a name="mixed-reality"></a>Mixed Reality
 
@@ -58,7 +58,7 @@ Mixed Reality-Lösungen stellen die nächste Stufe von Umgebungserfahrungen dar.
 
 Mixed Reality-Umgebungen treten bei mobilen Mitarbeitern im Außendienst immer häufiger auf. Ihr Einsatz steigt noch schneller in Branchen, die Zusammenarbeit oder Fachkompetenz erfordern, die auf dem lokalen Markt nicht ohne Weiteres verfügbar ist. Situationen, in denen eine zentralisierte Implementierungsunterstützung für ein komplexes Produkt für Mitarbeiter an einem entfernten Standort erforderlich ist, bieten sich besonders für Augmented Reality an. In diesen Szenarien können das zentrale Supportteam und die Remotemitarbeiter Augmented Reality einsetzen, um Fehler zu beheben und das Produkt zu installieren.
 
-Betrachten Sie beispielsweise den Fall eines Raumankers. Raumanker ermöglichen Ihnen das Erzeugen von Mixed Reality-Umgebungen mit Objekten, die ihre jeweilige Position im Zeitverlauf geräteübergreifend beibehalten. Durch Raumanker kann ein bestimmtes Verhalten erfasst, aufgezeichnet und beibehalten werden, das eine Umgebungserfahrung bietet, wenn der Benutzer das nächste Mal innerhalb dieser erweiterten Umgebung arbeitet. [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview) ist ein Dienst, der diese Logik in die Cloud verlagert und es ermöglicht, Erfahrungen zwischen Geräten und sogar zwischen Lösungen zu teilen.
+Betrachten Sie beispielsweise den Fall eines Raumankers. Raumanker ermöglichen Ihnen das Erzeugen von Mixed Reality-Umgebungen mit Objekten, die ihre jeweilige Position im Zeitverlauf geräteübergreifend beibehalten. Durch Raumanker kann ein bestimmtes Verhalten erfasst, aufgezeichnet und beibehalten werden, das eine Umgebungserfahrung bietet, wenn der Benutzer das nächste Mal innerhalb dieser erweiterten Umgebung arbeitet. [Azure Spatial Anchors](/azure/spatial-anchors/overview) ist ein Dienst, der diese Logik in die Cloud verlagert und es ermöglicht, Erfahrungen zwischen Geräten und sogar zwischen Lösungen zu teilen.
 
 ## <a name="integrated-reality"></a>Integrierte Realität
 
@@ -70,9 +70,9 @@ Diese Erfahrung ist ideal, wenn sich eine bestimmte Art von Gerät stets in der 
 
 Beispiele für integrierte Realität in Azure sind u. a.:
 
-- [Azure IoT-Lösungen (Internet of Things, Internet der Dinge):](https://docs.microsoft.com/azure/iot-fundamentals) Mehrere Dienste in Azure, die alle bei der Verwaltung von Geräten und dem Fluss von Daten von diesen Geräten in die Cloud und zurück zu Endbenutzern helfen
-- [Azure Sphere:](https://docs.microsoft.com/azure-sphere) Azure Sphere ist eine Kombination aus Hardware und Software, die eine standardmäßig sichere Möglichkeit bietet, einem bestehenden Gerät zu ermöglichen, Daten zwischen sich und Azure IoT-Lösungen sicher zu übertragen
-- [Azure Kinect DK:](https://docs.microsoft.com/azure/Kinect-dk) KI-Sensoren mit erweiterten Modellen für maschinelles Sehen und Sprache Diese Sensoren können visuelle und Audiodaten aus der unmittelbaren Umgebung erfassen und als Eingaben an Ihre Lösung übermitteln.
+- [Azure IoT-Lösungen (Internet of Things, Internet der Dinge):](/azure/iot-fundamentals) Mehrere Dienste in Azure, die alle bei der Verwaltung von Geräten und dem Fluss von Daten von diesen Geräten in die Cloud und zurück zu Endbenutzern helfen
+- [Azure Sphere:](/azure-sphere) Azure Sphere ist eine Kombination aus Hardware und Software, die eine standardmäßig sichere Möglichkeit bietet, einem bestehenden Gerät zu ermöglichen, Daten zwischen sich und Azure IoT-Lösungen sicher zu übertragen
+- [Azure Kinect DK:](/azure/Kinect-dk) KI-Sensoren mit erweiterten Modellen für maschinelles Sehen und Sprache Diese Sensoren können visuelle und Audiodaten aus der unmittelbaren Umgebung erfassen und als Eingaben an Ihre Lösung übermitteln.
 
 Sie können diese drei Tools zum Sammeln von Daten aus der natürlichen Umgebung zum Zeitpunkt der Kundenanforderung verwenden. Anschließend kann Ihre Lösung auf diese Dateneingaben reagieren, um das Bedürfnis zu erfüllen, manchmal bevor der Kunde überhaupt weiß, dass ein Auslöser für dieses Bedürfnis entstanden ist.
 
@@ -84,11 +84,11 @@ Virtuelle Assistenten und intelligente Lautsprecher sind ein gutes Beispiel für
 
 Fabrikhallen auf der ganzen Welt bieten zusätzliche Beispiele für angepasste Realität. In frühen Phasen integrierter Realität erkannten Sensoren von Geräten Bedingungen wie Überhitzung und warnten dann einen menschlichen Bediener über eine Anwendung. Bei der angepassten Realität ist der Kunde möglicherweise weiterhin beteiligt, aber die Feedbackschleife ist enger. In einer Fabrikhalle mit angepasster Realität erkennt ein Gerät eine Überhitzung in einer kritischen Maschine irgendwo an der Montagelinie. An anderer Stelle in der Halle verlangsamt dann ein zweites Gerät die Produktion etwas, damit die Maschine abkühlen kann. Nachdem der Vorfall behoben wurde, wird das Tempo wieder aufgenommen. In dieser Situation spielt der Kunde keine wesentliche Rolle mehr. Der Kunde verwendet Ihre Anwendung, um die Regeln festzulegen und zu verstehen, wie sich diese Regeln auf die Produktion ausgewirkt haben – er ist jedoch kein erforderlicher Teil der Feedbackschleife mehr.
 
-Die in den Dokumentationen zu [Azure IoT](https://docs.microsoft.com/azure/iot-fundamentals), [Azure Sphere](https://docs.microsoft.com/azure-sphere) und [Azure Kinect DK](https://docs.microsoft.com/azure/kinect-dk) beschriebenen Azure-Dienste könnten jeweils Komponenten einer Lösung für angepasste Realität sein. Ihre ursprüngliche Anwendungs- und Geschäftslogik dient dabei als Vermittler zwischen den Eingaben aus der Umgebung und den Änderungen, die an der physischen Umgebung vorgenommen werden müssen.
+Die in den Dokumentationen zu [Azure IoT](/azure/iot-fundamentals), [Azure Sphere](/azure-sphere) und [Azure Kinect DK](/azure/Kinect-dk) beschriebenen Azure-Dienste könnten jeweils Komponenten einer Lösung für angepasste Realität sein. Ihre ursprüngliche Anwendungs- und Geschäftslogik dient dabei als Vermittler zwischen den Eingaben aus der Umgebung und den Änderungen, die an der physischen Umgebung vorgenommen werden müssen.
 
 Ein digitaler Zwilling ist ein weiteres Beispiel für angepasste Realität. Dieser Begriff bezieht sich auf eine digitale Darstellung eines physischen Geräts, das über Computer-, mobile oder Mixed Reality-Formate dargestellt wird. Im Gegensatz zu weniger komplexen 3D-Modellen spiegelt ein digitaler Zwilling Daten wider, die von einem realen Gerät in der physischen Umgebung gesammelt wurden. Diese Lösung ermöglicht dem Benutzer, mit der digitalen Darstellung auf eine Weise zu interagieren, die in der realen Welt unmöglich wäre. Bei diesem Ansatz passen physische Geräte eine Mixed Reality-Umgebung an. Die Lösung sammelt jedoch nach wie vor Daten aus einer Lösung mit integrierter Realität und nutzt diese, um die Realität der aktuellen Umgebung des Kunden zu gestalten.
 
-In Azure dient ein Dienst namens [Azure Digital Twins](https://docs.microsoft.com/azure/digital-twins/about-digital-twins) zum Erstellen von und Zugreifen auf digitale Zwillinge.
+In Azure dient ein Dienst namens [Azure Digital Twins](/azure/digital-twins/about-digital-twins) zum Erstellen von und Zugreifen auf digitale Zwillinge.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

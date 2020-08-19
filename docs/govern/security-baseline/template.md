@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7a76999130144b2ac67913f0c9f1974456e442c0
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ae81ab5fa018c6739a6c52334b1bbc8ac444563f
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217709"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195211"
 ---
 # <a name="security-baseline-discipline-template"></a>Vorlage zur Disziplin „Sicherheitsbaseline“
 
@@ -24,7 +24,7 @@ Während Ihre Planung voranschreitet, verwenden Sie die Struktur dieser Vorlage 
 > [!IMPORTANT]
 > Diese Vorlage ist ein eingeschränktes Beispiel. Vor dem Aktualisieren dieser Vorlage entsprechend Ihren Anforderungen prüfen Sie die nachfolgenden Schritte zum Definieren einer effektiven Disziplin „Sicherheitsbaseline“ im Rahmen Ihrer Strategie für Cloud Governance.
 
-[Vorlage zur Disziplin „Sicherheitsbaseline“ herunterladen](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Security%20Baseline%20Discipline%20Template.docx)
+[Vorlage zur Disziplin „Sicherheitsbaseline“ herunterladen](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/security-baseline-discipline-template.docx)
 
 ## <a name="next-steps"></a>Nächste Schritte
 

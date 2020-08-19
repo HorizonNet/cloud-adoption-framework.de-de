@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: bb28cc9869500f26c2b981c8968a920bf5691ca6
-ms.sourcegitcommit: 580a6f66a0d0f3f5b755c68d757a84b2351a432f
+ms.openlocfilehash: 237dfb1dc054362b94f626b226727cee89f30537
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87473164"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569891"
 ---
 # <a name="organize-and-manage-multiple-azure-subscriptions"></a>Organisieren und Verwalten mehrerer Azure-Abonnements
 
@@ -66,9 +66,9 @@ Im Anschluss folgen einige einfache Beispiele für die Trennung verschiedener Wo
 
 In den folgenden Ressourcen erfahren Sie mehr über das Organisieren und Verwalten Ihrer Azure-Ressourcen.
 
-- [Organisieren Ihrer Ressourcen mit Azure-Verwaltungsgruppen](https://docs.microsoft.com/azure/governance/management-groups)
-- [Erhöhen der Zugriffsrechte zum Verwalten aller Azure-Abonnements und Verwaltungsgruppen](https://docs.microsoft.com/azure/role-based-access-control/elevate-access-global-admin)
-- [Verschieben von Azure-Ressourcen in eine andere Ressourcengruppe oder ein anderes Abonnement](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription)
+- [Organisieren Ihrer Ressourcen mit Azure-Verwaltungsgruppen](/azure/governance/management-groups)
+- [Erhöhen der Zugriffsrechte zum Verwalten aller Azure-Abonnements und Verwaltungsgruppen](/azure/role-based-access-control/elevate-access-global-admin)
+- [Verschieben von Azure-Ressourcen in eine andere Ressourcengruppe oder ein anderes Abonnement](/azure/azure-resource-manager/management/move-resource-group-and-subscription)
 
 ## <a name="next-steps"></a>Nächste Schritte
 

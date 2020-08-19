@@ -7,16 +7,16 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 6b0aebc9c565cb60a83d5b4b0cfc3054d79b7ed1
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: d1572d7da20a1b5e1dfe642ebce3404c3482f412
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86478836"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573155"
 ---
 <!-- cSpell:ignore deprioritize -->
 
-# <a name="empower-adoption"></a>Unterstützen der Einführung
+# <a name="empower-adoption-with-digital-invention"></a>Unterstützen der Einführung durch digitale Innovationen
 
 Der ultimative Test der Innovation ist die Reaktion des Kunden auf Ihre Erfindung. Hat sich die Hypothese als wahr erwiesen? Verwenden Kunden die Lösung? Wird sie den Anforderungen des gewünschten Prozentsatzes von Benutzern gerecht? Das Wichtigste: Kommen sie wieder? Alle diese Fragen können erst nach der Bereitstellung der MVP-Lösung (Minimum Viable Product) gestellt werden. In diesem Artikel konzentrieren wir uns auf die Disziplin der Unterstützung der Einführung.
 
@@ -39,7 +39,7 @@ Das Hauptziel der [Innovationsmethodik](./index.md) ist das Schaffen von Kundenp
 - [Lösungsbereitstellung](#solution-deployment): Stellen Sie Lösungen bereit, damit das Team Änderungen schnell für Kunden freigeben kann.
 - [Integrierte Messung](#integrated-measurements): Fügen Sie der Feedbackschleife Lernmetriken für eine klare Analyse durch das gesamte Team hinzu.
 
-Um technische Spitzen zu minimieren, setzen Sie voraus, dass die Reife in den einzelnen Prinzipien anfänglich niedrig ist. Planen Sie jedoch definitiv voraus durch Orientierung an Tools und Prozessen, die sich präziser werdenden Hypothesen anpassen können. In Azure ermöglichen [GitHub](https://guides.github.com) und [Azure DevOps](https://docs.microsoft.com/azure/devops) kleinen Teams, mit geringen Reibungsverlusten zu beginnen. Diese Teams könnten wachsen und Tausende von Entwicklern einbeziehen, die gemeinsam an skalierten Lösungen arbeiten und Hunderte von Kundenhypothesen testen. Im restlichen Teil dieses Artikels wird der Ansatz „Groß planen, klein beginnen“ zur Unterstützung der Einführung zu jedem dieser Prinzipien veranschaulicht.
+Um technische Spitzen zu minimieren, setzen Sie voraus, dass die Reife in den einzelnen Prinzipien anfänglich niedrig ist. Planen Sie jedoch definitiv voraus durch Orientierung an Tools und Prozessen, die sich präziser werdenden Hypothesen anpassen können. In Azure ermöglichen [GitHub](https://guides.github.com) und [Azure DevOps](/azure/devops) kleinen Teams, mit geringen Reibungsverlusten zu beginnen. Diese Teams könnten wachsen und Tausende von Entwicklern einbeziehen, die gemeinsam an skalierten Lösungen arbeiten und Hunderte von Kundenhypothesen testen. Im restlichen Teil dieses Artikels wird der Ansatz „Groß planen, klein beginnen“ zur Unterstützung der Einführung zu jedem dieser Prinzipien veranschaulicht.
 
 ## <a name="shared-solution"></a>Freigegebene Lösung
 
@@ -47,7 +47,7 @@ Wie unter [Messen der Auswirkungen für Kunden](./measure.md) beschrieben, erfor
 
 Zum Skalieren von Innovationen gibt es kein wertvolleres Tool als eine freigegebene Codebasis für die Lösung. Leider gibt es keine zuverlässige Möglichkeit, vorherzusagen, mit welcher Iteration oder welchem MVP die gewinnende Kombination erzielt wird. Daher ist es nie zu früh, eine freigegebene Codebasis oder ein Repository einzurichten. Dies ist die einzige [technische Spitze](./build.md#reduce-complexity-and-delay-technical-spikes), die nie verzögert werden sollte. Wenn das Team verschiedene MVP-Lösungen durchläuft, ermöglicht ein freigegebenes Repository mühelose Zusammenarbeit und beschleunigte Entwicklung. Wenn Änderungen der Lösung Lernmetriken beeinträchtigen, können Sie mit der Versionskontrolle ein Rollback auf eine frühere, effektivere Version der Lösung durchführen.
 
-Das gängigste Tool für die Verwaltung von Coderepositorys ist [GitHub](https://guides.github.com). Damit lässt sich in wenigen Schritten ein gemeinsam genutztes Coderepository erstellen. Außerdem kann das Feature [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) von Azure DevOps zum Erstellen eines [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git)- oder [TFVC](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc)-Repositorys verwendet werden.
+Das gängigste Tool für die Verwaltung von Coderepositorys ist [GitHub](https://guides.github.com). Damit lässt sich in wenigen Schritten ein gemeinsam genutztes Coderepository erstellen. Außerdem kann das Feature [Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops) von Azure DevOps zum Erstellen eines [Git](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git)- oder [TFVC](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc)-Repositorys verwendet werden.
 
 ## <a name="feedback-loops"></a>Feedbackschleifen
 
@@ -55,7 +55,7 @@ Den Kunden zu einem Teil der Lösung zu machen, ist der Schlüssel zum Aufbau vo
 
 Jeder Feedbackpunkt ist eine potenzielle Lösung für die Kundenanforderung. Noch wichtiger ist, dass jedes direkte Feedback eines Kunden eine Chance zur Verbesserung der Partnerschaft ist. Wenn Feedback es in eine MVP-Lösung schafft, stoßen Sie mit dem Kunden darauf an. Selbst wenn manches Feedback nicht umsetzbar ist, signalisiert schon das Eingestehen der Entscheidung, dem Feedback keine Priorität einzuräumen, eine [Wachstumsmentalität](./learn.md#growth-mindset) und einen Schwerpunkt auf [fortlaufendem Lernen](./learn.md#continuous-learning).
 
-[Azure DevOps](https://docs.microsoft.com/azure/devops) bietet Möglichkeiten, [Feedback anzufordern, bereitzustellen und zu verwalten](https://docs.microsoft.com/azure/devops/project/feedback). Jedes dieser Tools zentralisiert Feedback, sodass das Team Feedback umsetzen und Folgeaktivitäten im Dienste einer transparenten Feedbackschleife leisten kann.
+[Azure DevOps](/azure/devops) bietet Möglichkeiten, [Feedback anzufordern, bereitzustellen und zu verwalten](/azure/devops/project/feedback). Jedes dieser Tools zentralisiert Feedback, sodass das Team Feedback umsetzen und Folgeaktivitäten im Dienste einer transparenten Feedbackschleife leisten kann.
 
 ## <a name="continuous-integration"></a>Continuous Integration
 
@@ -63,7 +63,7 @@ Wenn Einführungen skaliert werden und eine Hypothese sich bedarfsabhängig eine
 
 In Continuous Integration werden Codeänderungen häufig in den Hauptbranch zusammengeführt. Automatisierte Build- und Testprozesse stellen sicher, dass der Code im Hauptbranch immer Produktionsqualität aufweist. Dies garantiert, dass Entwickler zusammenarbeiten, um gemeinsam genutzte Lösungen zu entwickeln, die exakte und zuverlässige Feedbackschleifen bieten.
 
-Azure DevOps und [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines) bieten mit nur wenigen Schritten Continuous Integration-Funktionen für GitHub oder eine Vielzahl anderer Repositorys. Erfahren Sie mehr über [Continuous Integration](https://docs.microsoft.com/azure/devops/learn/what-is-continuous-integration), oder führen Sie die [praktischen Übungseinheiten](https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration) aus, um weitere Informationen zu erhalten. Lösungsarchitekturen sind verfügbar, die die Erstellung Ihrer [CI/CD-Pipelines über Azure DevOps](https://azure.microsoft.com/solutions/devops) beschleunigen können.
+Azure DevOps und [Azure Pipelines](/azure/devops/pipelines) bieten mit nur wenigen Schritten Continuous Integration-Funktionen für GitHub oder eine Vielzahl anderer Repositorys. Erfahren Sie mehr über [Continuous Integration](/azure/devops/learn/what-is-continuous-integration), oder führen Sie die [praktischen Übungseinheiten](https://www.azuredevopslabs.com/labs/azuredevops/continuousintegration) aus, um weitere Informationen zu erhalten. Lösungsarchitekturen sind verfügbar, die die Erstellung Ihrer [CI/CD-Pipelines über Azure DevOps](https://azure.microsoft.com/solutions/devops) beschleunigen können.
 
 ## <a name="reliable-testing"></a>Zuverlässiges Testen
 
@@ -71,7 +71,7 @@ Fehler in einer Lösung können falsch positive oder falsch negative Ergebnisse 
 
 Während der frühen Iterationen einer MVP-Lösung werden Fehler erwartet; Early Adopters könnten sie vielleicht sogar gern verzeihen. In frühen Releases finden in der Regel keine Akzeptanztests statt. Ein Aspekt des Entwickelns von Lösungen mit Blick auf die Kundenanforderungen ist jedoch die Validierung von Anforderung und Hypothese. Beides kann mit Komponententests auf Codeebene und manuellen Akzeptanztests vor der Bereitstellung durchgeführt werden. Zusammen tragen sie zur Zuverlässigkeit des Testens bei. Sie sollten eine klar definierte Reihe von Build-, Komponenten- und Akzeptanztests automatisieren. Diese stellen zuverlässige Metriken im Zusammenhang mit präziseren Anpassungen an die Hypothese und die resultierende Lösung sicher.
 
-Das Feature [Azure Test Plans](https://docs.microsoft.com/azure/devops/test/track-test-status?view=azure-devops) bietet Tools zum Entwickeln und Einsetzen von Testplänen während der manuellen oder automatisierten Testausführung.
+Das Feature [Azure Test Plans](/azure/devops/test/track-test-status?view=azure-devops) bietet Tools zum Entwickeln und Einsetzen von Testplänen während der manuellen oder automatisierten Testausführung.
 
 ## <a name="solution-deployment"></a>Bereitstellung von Lösungen
 
@@ -87,13 +87,13 @@ Während der ersten Iteration einer MVP-Lösung ist die manuelle Bereitstellung 
 
 Eine frühe Investition kann zu Zeitverlust führen. Noch wichtiger ist, dass sie zu Abhängigkeiten von der Releasepipeline führen kann, die das Team gegen eine frühe Wende resistenter machen. Nach den ersten Iterationen, oder wenn Kundenfeedback einen potenziellen Erfolg suggeriert, sollte schnell ein fortgeschritteneres Bereitstellungsmodell eingeführt werden.
 
-In jeder Phase der Hypothesenvalidierung bieten Azure DevOps und [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines) Continuous Delivery- und Continuous Deployment-Funktionen. Erfahren Sie mehr über [Continuous Delivery](https://docs.microsoft.com/azure/devops/learn/what-is-continuous-delivery), oder sehen Sie sich die [praktische Übung](https://www.azuredevopslabs.com/labs/azuredevops/continuousdeployment) an. Lösungsarchitekturen können die Erstellung Ihrer [CI/CD-Pipelines über Azure DevOps](https://azure.microsoft.com/solutions/devops) auch beschleunigen.
+In jeder Phase der Hypothesenvalidierung bieten Azure DevOps und [Azure Pipelines](/azure/devops/pipelines) Continuous Delivery- und Continuous Deployment-Funktionen. Erfahren Sie mehr über [Continuous Delivery](/azure/devops/learn/what-is-continuous-delivery), oder sehen Sie sich die [praktische Übung](https://www.azuredevopslabs.com/labs/azuredevops/continuousdeployment) an. Lösungsarchitekturen können die Erstellung Ihrer [CI/CD-Pipelines über Azure DevOps](https://azure.microsoft.com/solutions/devops) auch beschleunigen.
 
 ## <a name="integrated-measurements"></a>Integrierte Messungen
 
 Beim [Messen der Auswirkungen für Kunden](./measure.md) ist es wichtig, dass Sie verstehen, wie Kunden auf Änderungen in der Lösung reagieren. Diese als _Telemetriedaten_ bezeichneten Daten bieten Einblicke in die Aktionen, die ein Benutzer (oder eine Kohorte von Benutzern) beim Arbeiten mit der Lösung durchführte. Aus diesen Daten kann einfach eine quantitative Validierung der Hypothese gewonnen werden. Diese Metriken können dann verwendet werden, um die Lösung anzupassen und differenziertere Hypothesen zu generieren. Diese subtileren Änderungen tragen dazu bei, die anfängliche Lösung in nachfolgenden Iterationen ausreifen zu lassen, sodass die Einführung schließlich bedarfsabhängig wiederholt wird.
 
-In Azure bietet [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) die Tools und die Schnittstelle zum Erfassen und Überprüfen der Daten aus den Kundenerfahrungen. Sie können diese Beobachtungen und Einblicke verwenden, um den Rückstand mithilfe von [Azure Boards](https://docs.microsoft.com/azure/devops/boards) zu verbessern.
+In Azure bietet [Azure Monitor](/azure/azure-monitor/overview) die Tools und die Schnittstelle zum Erfassen und Überprüfen der Daten aus den Kundenerfahrungen. Sie können diese Beobachtungen und Einblicke verwenden, um den Rückstand mithilfe von [Azure Boards](/azure/devops/boards) zu verbessern.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: aa579f628ccb6f0dfb28bfe23e782580330dd3c1
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 31d24872c3ed2f13d7c4bada472fb5a0b194e86c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786839"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573257"
 ---
 <!-- cSpell:ignore CISO -->
 
@@ -45,7 +45,7 @@ Kenntnisse der Cloud sind von grundlegender Bedeutung für eine [Richtlinienübe
 - [Sicherheitsentwicklungszyklus, interne Überwachungen](https://www.microsoft.com/sdl)
 - [Obligatorische Sicherheitsschulung, Hintergrundüberprüfungen](https://downloads.cloudsecurityalliance.org/star/self-assessment/StandardResponsetoRequestforInformationWindowsAzureSecurityPrivacy.docx)
 - [Penetrationstests, Angriffserkennung, DDoS, Überwachungen und Protokollierung](https://www.microsoft.com/security/business/operations)
-- [Hochmodernes Rechenzentrum](https://www.microsoft.com/cloud-platform/global-datacenters), physische Sicherheit, [sicheres Netzwerk](https://docs.microsoft.com/azure/security/security-network-overview)
+- [Hochmodernes Rechenzentrum](https://www.microsoft.com/cloud-platform/global-datacenters), physische Sicherheit, [sicheres Netzwerk](/azure/security/security-network-overview)
 - [Microsoft Azure Security Response in the Cloud](https://aka.ms/securityresponsepaper) (Sicherheitsreaktion von Microsoft Azure in der Cloud)
 
 **Datenschutz und Kontrolle:**

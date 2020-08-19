@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 65f28f92e731eac11a337ab9b191b7d0bc09101b
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 2dc370df56042894903da00b14c9a37f06d17e1c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193064"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571013"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -24,16 +24,16 @@ Das Erlangen der erforderlichen Qualifikationen kann mit den folgenden Lernpfade
 
 ## <a name="fundamentals"></a>Grundlagen
 
-- In der Einführung in [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview) werden die grundlegenden Konzepte der Verwaltung und Bereitstellung von Azure-Ressourcen beschrieben. Die IT-Mitarbeiter, die die Überwachungsumgebung im gesamten Unternehmen verwalten, sollten mit Verwaltungsbereichen, rollenbasierter Zugriffssteuerung (RBAC), Azure Resource Manager-Vorlagen und der Verwaltung von Ressourcen per Azure CLI und Azure PowerShell vertraut sein.
+- In der Einführung in [Azure Resource Manager](/azure/azure-resource-manager/management/overview) werden die grundlegenden Konzepte der Verwaltung und Bereitstellung von Azure-Ressourcen beschrieben. Die IT-Mitarbeiter, die die Überwachungsumgebung im gesamten Unternehmen verwalten, sollten mit Verwaltungsbereichen, rollenbasierter Zugriffssteuerung (RBAC), Azure Resource Manager-Vorlagen und der Verwaltung von Ressourcen per Azure CLI und Azure PowerShell vertraut sein.
 
-- In der Einführung in [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) wird beschrieben, wie Sie Azure Policy zum Erstellen, Zuweisen und Verwalten von Richtlinien verwenden können. Mit Azure Policy können Sie die Azure Monitor-Agents bereitstellen und konfigurieren, die Überwachung mit Azure Monitor für VMs und Azure Security Center ermöglichen, Diagnoseeinstellungen bereitstellen, Gastkonfigurationseinstellungen überwachen und vieles mehr.
+- In der Einführung in [Azure Policy](/azure/governance/policy/overview) wird beschrieben, wie Sie Azure Policy zum Erstellen, Zuweisen und Verwalten von Richtlinien verwenden können. Mit Azure Policy können Sie die Azure Monitor-Agents bereitstellen und konfigurieren, die Überwachung mit Azure Monitor für VMs und Azure Security Center ermöglichen, Diagnoseeinstellungen bereitstellen, Gastkonfigurationseinstellungen überwachen und vieles mehr.
 
-- Lesen Sie die Einführung in die [Azure-Befehlszeilenschnittstelle (CLI)](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest). Hierbei handelt es sich um unsere plattformübergreifende Befehlszeilenumgebung zum Verwalten von Azure-Ressourcen. Sehen Sie sich auch die Einführung in [Azure PowerShell](https://docs.microsoft.com/powershell/azure/?view=azps-3.6.1) an. Im Rahmen des Anfängerkurses zum [Erlernen von Azure-Verwaltungstools](https://www.linkedin.com/learning/learning-azure-management-tools) werden von LinkedIn Sitzungen zur Azure CLI und zu PowerShell-Programmiersprachen angeboten:
+- Lesen Sie die Einführung in die [Azure-Befehlszeilenschnittstelle (CLI)](/cli/azure/get-started-with-azure-cli?view=azure-cli-latest). Hierbei handelt es sich um unsere plattformübergreifende Befehlszeilenumgebung zum Verwalten von Azure-Ressourcen. Sehen Sie sich auch die Einführung in [Azure PowerShell](/powershell/azure/?view=azps-3.6.1) an. Im Rahmen des Anfängerkurses zum [Erlernen von Azure-Verwaltungstools](https://www.linkedin.com/learning/learning-azure-management-tools) werden von LinkedIn Sitzungen zur Azure CLI und zu PowerShell-Programmiersprachen angeboten:
 
   - [Verwenden der Azure CLI](https://www.linkedin.com/learning/learning-azure-management-tools/use-the-azure-cli)
   - [Erste Schritte mit Azure PowerShell](https://www.linkedin.com/learning/learning-azure-management-tools/understand-azure-powershell)
 
-- Informieren Sie sich über das Schützen von Ressourcen mit Richtlinien, rollenbasierter Zugriffssteuerung und anderen Azure-Diensten, indem Sie den Artikel [Implementieren der Sicherheit für die Ressourcenverwaltung in Azure](https://docs.microsoft.com/learn/paths/implement-resource-mgmt-security) lesen.
+- Informieren Sie sich über das Schützen von Ressourcen mit Richtlinien, rollenbasierter Zugriffssteuerung und anderen Azure-Diensten, indem Sie den Artikel [Implementieren der Sicherheit für die Ressourcenverwaltung in Azure](/learn/paths/implement-resource-mgmt-security) lesen.
 
 - Unter [Überwachen von Microsoft Azure-Ressourcen und -Workloads](https://app.pluralsight.com/library/courses/microsoft-azure-resources-workloads-monitoring-update/table-of-contents) wird beschrieben, wie Sie Azure-Überwachungstools zum Überwachen von Azure-Netzwerkressourcen sowie lokalen Ressourcen verwenden.
 
@@ -49,11 +49,11 @@ Das Erlangen der erforderlichen Qualifikationen kann mit den folgenden Lernpfade
 
 - [Überwachen von hybriden Microsoft Azure-Cloudnetzwerken](https://www.pluralsight.com/courses/microsoft-azure-hybrid-cloud-networks-monitoring) ist ein Kurs für fortgeschrittene Benutzer, in dem gezeigt wird, wie Sie mithilfe von Azure-Überwachungstools virtuelle Azure-Netzwerke und virtuelle private Netzwerkverbindungen für Ihre Implementierung einer Hybridcloud visualisieren, verwalten und optimieren können.
 
-- Der Artikel [Azure Arc für Server](https://docs.microsoft.com/azure/azure-arc/servers/overview) enthält eine Beschreibung dazu, wie Sie Ihre außerhalb von Azure gehosteten Windows- und Linux-Computer auf ähnliche Weise wie Ihre nativen virtuellen Azure-Computer verwalten können.
+- Der Artikel [Azure Arc für Server](/azure/azure-arc/servers/overview) enthält eine Beschreibung dazu, wie Sie Ihre außerhalb von Azure gehosteten Windows- und Linux-Computer auf ähnliche Weise wie Ihre nativen virtuellen Azure-Computer verwalten können.
 
 ## <a name="application-monitoring"></a>Anwendungsüberwachung
 
-- Informieren Sie sich darüber, wie [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) Ihnen das Anzeigen der Verfügbarkeit und Leistung Ihrer Anwendungen und Dienste an einem zentralen Ort ermöglicht. Von Pluralsight werden die folgenden Kurse angeboten:
+- Informieren Sie sich darüber, wie [Azure Monitor](/azure/azure-monitor/overview) Ihnen das Anzeigen der Verfügbarkeit und Leistung Ihrer Anwendungen und Dienste an einem zentralen Ort ermöglicht. Von Pluralsight werden die folgenden Kurse angeboten:
 
   - Unter [Microsoft Azure DevOps-Techniker: Optimieren von Feedbackmechanismen](https://www.pluralsight.com/courses/microsoft-azure-optimize-feedback-mechanisms) können Sie sich darauf vorbereiten, Azure Monitor, einschließlich Application Insights, für die Überwachung und Optimierung Ihrer Webanwendungen zu verwenden.
 
@@ -67,7 +67,7 @@ Das Erlangen der erforderlichen Qualifikationen kann mit den folgenden Lernpfade
 
 ## <a name="data-analysis"></a>Datenanalyse
 
-- Informieren Sie sich darüber, wie Sie [Protokollabfragen in Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-queries) schreiben. Die Kusto-Abfragesprache ist die Hauptressource für das Schreiben von Azure Monitor-Protokollabfragen, um Protokolldaten für die erfassten Daten aus Azure und die Abhängigkeiten von Hybridressourcenanwendungen (einschließlich Liveanwendung) zu untersuchen und zu analysieren.
+- Informieren Sie sich darüber, wie Sie [Protokollabfragen in Azure Monitor](/azure/azure-monitor/log-query/get-started-queries) schreiben. Die Kusto-Abfragesprache ist die Hauptressource für das Schreiben von Azure Monitor-Protokollabfragen, um Protokolldaten für die erfassten Daten aus Azure und die Abhängigkeiten von Hybridressourcenanwendungen (einschließlich Liveanwendung) zu untersuchen und zu analysieren.
 
 - [Kusto-Abfragesprache (Kusto Query Language, KQL) für Einsteiger](https://www.pluralsight.com/courses/kusto-query-language-kql-from-scratch) ist ein umfassender Kurs, der ausführliche Beispiele für eine große Bandbreite von Anwendungsfällen und Techniken für die Protokollanalyse in Azure Monitor-Protokollen enthält.
 
@@ -91,13 +91,13 @@ Im Rahmen der Migration zu einer Cloudüberwachungsplattform muss das IT-Team, d
 
 Weitere Informationen finden Sie in den folgenden Artikeln:
 
-- [Erste Schritte mit Azure DevOps](https://docs.microsoft.com/learn/modules/get-started-with-devops)
+- [Erste Schritte mit Azure DevOps](/learn/modules/get-started-with-devops)
 
-- [Informationen zur White Belt Foundation des DevOps-Dojos](https://docs.microsoft.com/learn/paths/devops-dojo-white-belt-foundation)
+- [Informationen zur White Belt Foundation des DevOps-Dojos](/learn/paths/devops-dojo-white-belt-foundation)
 
-- [Weiterentwickeln Ihrer DevOps-Methoden](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices)
+- [Weiterentwickeln Ihrer DevOps-Methoden](/learn/paths/evolve-your-devops-practices)
 
-- [Automatisieren von Bereitstellungen mit Azure DevOps](https://docs.microsoft.com/learn/paths/automate-deployments-azure-devops)
+- [Automatisieren von Bereitstellungen mit Azure DevOps](/learn/paths/automate-deployments-azure-devops)
 
 ## <a name="other-considerations"></a>Weitere Überlegungen
 
@@ -107,4 +107,4 @@ Lesen Sie das [Whitepaper zu ITIL v4 und Cloud Computing](https://www.axelos.co
 
 ## <a name="learn-more"></a>Weitere Informationen
 
-Weitere Lernpfade finden Sie im [Microsoft Learn-Katalog](https://docs.microsoft.com/learn/browse). Verwenden Sie den Filter „Rollen“, um Lernpfade an ihrer Rolle auszurichten.
+Weitere Lernpfade finden Sie im [Microsoft Learn-Katalog](/learn/browse). Verwenden Sie den Filter „Rollen“, um Lernpfade an ihrer Rolle auszurichten.

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 73b49894ae375e5c5995e33057d29b48a61e57e2
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: d8674f04199a108dce424b81329697c3a25bfc03
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86190752"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567783"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>Plattformspezialisierung für die Cloudverwaltung
 
@@ -61,7 +61,7 @@ Die Plattformspezialisierung besteht aus einer disziplinierten Ausführung der f
 
 Das Verbessern des Systementwurfs ist der effektivste Ansatz zur Optimierung des Betriebs jeder gängigen Plattform. Durch Verbesserungen des Systementwurfs können die Stabilität erhöht und Betriebsunterbrechungen verringert werden. Der Entwurf einzelner Systeme wird für die Umgebungssicht nicht berücksichtigt, die das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure einnimmt.
 
-Als Ergänzung zu diesem Framework bietet das [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) Grundsätze zum Verbessern einer Plattform oder einer bestimmten Workload. Der Schwerpunkt des Frameworks liegt auf der Verbesserung von fünf Säulen der Architekturexzellenz:
+Als Ergänzung zu diesem Framework bietet das [Microsoft Azure Well-Architected Framework](/azure/architecture/framework) Grundsätze zum Verbessern einer Plattform oder einer bestimmten Workload. Der Schwerpunkt des Frameworks liegt auf der Verbesserung von fünf Säulen der Architekturexzellenz:
 
 - **Kostenoptimierung:** Verwalten der Kosten zur Maximierung des erzielten Werts.
 - **Betriebliche Exzellenz:** Verfolgen der operativen Prozesse, die für die Ausführung eines Systems in der Produktion sorgen.
@@ -73,7 +73,7 @@ Technische Schulden und architektonische Mängel verursachen die meisten Unterbr
 
 Die folgende Registerkarte **Automatisierte Korrektur** zeigt Wege zur Behebung von technischen Schulden, die nicht behandelt werden können oder sollten.
 
-Erfahren Sie mehr über das [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) zum Verbessern des Systementwurfs.
+Erfahren Sie mehr über das [Microsoft Azure Well-Architected Framework](/azure/architecture/framework) zum Verbessern des Systementwurfs.
 
 Bei zunehmender Verbesserung des Systementwurfs kehren Sie zu diesem Artikel zurück, um neue Möglichkeiten zur Verbesserung und Skalierung dieser Verbesserungen in Ihrer Umgebung zu finden.
 
@@ -92,7 +92,7 @@ Einige technische Schulden können nicht angegangen werden. Die Lösung ist mög
 
 Wenn die Beseitigung technischer Schulden nicht der gewünschte Ansatz ist, ist die automatisierte Korrektur häufig der nächste Schritt. Der gängigste Ansatz für die automatisierte Korrektur ist der Einsatz von Azure Automation und Azure Monitor zur Erkennung von Trends und Bereitstellung automatisierter Korrekturen.
 
-Anleitungen zur automatisierten Korrektur finden Sie unter [Azure Automation und Warnungen](https://docs.microsoft.com/azure/automation/automation-create-alert-triggered-runbook).
+Anleitungen zur automatisierten Korrektur finden Sie unter [Azure Automation und Warnungen](/azure/automation/automation-create-alert-triggered-runbook).
 
 ::: zone target="docs"
 
@@ -111,7 +111,7 @@ Das Cloudplattform- und Cloudautomatisierungsteam stimmen sich ab, um wiederholb
 
 Um die Akzeptanz zu maximieren und den Wartungsaufwand einer optimierten Plattform zu minimieren, sollten Sie die Plattform in einen Azure-Dienstkatalog aufnehmen. Jede Anwendung im Katalog kann über den Dienstkatalog für den internen Einsatz oder als Marketplace-Angebot für externe Nutzer bereitgestellt werden.
 
-Anweisungen zur Veröffentlichung in einem Dienstkatalog finden Sie in der Artikelreihe zum [Veröffentlichen in einem Dienstkatalog](https://docs.microsoft.com/azure/managed-applications/publish-service-catalog-app).
+Anweisungen zur Veröffentlichung in einem Dienstkatalog finden Sie in der Artikelreihe zum [Veröffentlichen in einem Dienstkatalog](/azure/managed-applications/publish-service-catalog-app).
 
 ### <a name="deploy-applications-from-the-service-catalog"></a>Bereitstellen von Anwendungen aus dem Dienstkatalog
 
@@ -159,6 +159,6 @@ Sowohl Plattformspezialisierung als auch Plattformbetrieb hängen von funktionie
 
 Container und SQL Server sind die beiden am häufigsten verwendeten zentral verwalteten Plattformen. Diese Artikel können Ihnen bei den ersten Schritten mit der fortlaufend verbesserten Datensammlung auf diesen Plattformen helfen:
 
-- [Containerleistung](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview)
-- [PaaS-Datenbankleistung](https://docs.microsoft.com/azure/azure-monitor/insights/azure-sql)
-- [IaaS-Datenbankleistung](https://docs.microsoft.com/azure/azure-monitor/insights/sql-assessment)
+- [Containerleistung](/azure/azure-monitor/insights/container-insights-overview)
+- [PaaS-Datenbankleistung](/azure/azure-monitor/insights/azure-sql)
+- [IaaS-Datenbankleistung](/azure/azure-monitor/insights/sql-assessment)

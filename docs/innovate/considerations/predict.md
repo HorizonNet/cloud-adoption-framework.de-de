@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 01d12f284d90c1d483c5b5044aafd683f2a674b6
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 082f8cfcd3cb8d0e01a49bf5a1da32b77c4050fd
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86449131"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568174"
 ---
 # <a name="predict-and-influence"></a>Vorhersagen und Beeinflussen
 
@@ -63,19 +63,19 @@ Menschen haben immer versucht, Muster in großen Datenmengen zu erkennen. Zu die
 
 Ausgehend von Erkenntnissen werden beim maschinellen Lernen prädiktive Modelle entwickelt und angewendet, um die Muster in Daten bestmöglich auszunutzen. Durch mehrere Iterationen von Training, Tests und Anpassung können diese Modelle und Algorithmen künftige Ergebnisse genau vorhersagen.
 
-[Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml) ist der cloudbasierte Dienst in Azure zum Entwickeln und Trainieren von Modellen, die auf Ihren Daten basieren. Dieses Tool bietet auch einen [Workflow zur Beschleunigung der Entwicklung von Algorithmen für maschinelles Lernen](https://docs.microsoft.com/azure/machine-learning/service/concept-azure-machine-learning-architecture). Mit diesem Workflow können Algorithmen über eine grafische Oberfläche oder in Python entwickelt werden.
+[Azure Machine Learning](/azure/machine-learning/service/overview-what-is-azure-ml) ist der cloudbasierte Dienst in Azure zum Entwickeln und Trainieren von Modellen, die auf Ihren Daten basieren. Dieses Tool bietet auch einen [Workflow zur Beschleunigung der Entwicklung von Algorithmen für maschinelles Lernen](/azure/machine-learning/service/concept-azure-machine-learning-architecture). Mit diesem Workflow können Algorithmen über eine grafische Oberfläche oder in Python entwickelt werden.
 
-Für stabilere Machine Learning-Modelle bieten [ML-Dienste in Azure HDInsight](https://docs.microsoft.com/azure/hdinsight/r-server/r-server-overview) eine Plattform für maschinelles Lernen, die auf Apache Hadoop-Clustern basiert. Dieser Ansatz ermöglicht eine präzisere Steuerung der zugrunde liegenden Cluster, Speicher und Computeknoten. Azure HDInsight bietet auch eine noch umfassendere Integration durch Tools wie ScaleR und SparkR, um Vorhersagen auf der Grundlage integrierter und erfasster Daten zu erstellen und sogar mit Daten aus einem Stream zu arbeiten. Die [Lösung zur Vorhersage von Flugverspätungen](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-r-scaler-sparkr) demonstriert jede dieser erweiterten Möglichkeiten, wenn sie zur Vorhersage von Flugverspätungen basierend auf Wetterbedingungen verwendet wird. Die HDInsight-Lösung bietet Unternehmen auch Steuerungsmechanismen für Datensicherheit, Netzwerkzugriff und Leistungsüberwachung, um Muster zu operationalisieren.
+Für stabilere Machine Learning-Modelle bieten [ML-Dienste in Azure HDInsight](/azure/hdinsight/r-server/r-server-overview) eine Plattform für maschinelles Lernen, die auf Apache Hadoop-Clustern basiert. Dieser Ansatz ermöglicht eine präzisere Steuerung der zugrunde liegenden Cluster, Speicher und Computeknoten. Azure HDInsight bietet auch eine noch umfassendere Integration durch Tools wie ScaleR und SparkR, um Vorhersagen auf der Grundlage integrierter und erfasster Daten zu erstellen und sogar mit Daten aus einem Stream zu arbeiten. Die [Lösung zur Vorhersage von Flugverspätungen](/azure/hdinsight/hdinsight-hadoop-r-scaler-sparkr) demonstriert jede dieser erweiterten Möglichkeiten, wenn sie zur Vorhersage von Flugverspätungen basierend auf Wetterbedingungen verwendet wird. Die HDInsight-Lösung bietet Unternehmen auch Steuerungsmechanismen für Datensicherheit, Netzwerkzugriff und Leistungsüberwachung, um Muster zu operationalisieren.
 
 ## <a name="predictions"></a>Vorhersagen (Predictions)
 
 Nachdem ein Muster erstellt und trainiert wurde, können Sie es über APIs anwenden, die Vorhersagen während der Bereitstellung einer digitalen Erfahrung treffen können. Die meisten dieser APIs basieren auf einem sorgfältig trainierten Modell, das auf einem Muster in Ihren Daten basiert. Da immer mehr Kunden tägliche Workloads in der Cloud bereitstellen, führen die von Cloudanbietern verwendeten Vorhersage-APIs zu einer immer schnelleren Akzeptanz.
 
-[Azure Cognitive Services](https://docs.microsoft.com/azure/cognitive-services) ist ein Beispiel einer prädiktive API, die von einem Cloudanbieter entwickelt wurde. Dieser Dienst umfasst prädiktive APIs zur Inhaltsmoderation, Anomalieerkennung und Vorschläge zur Personalisierung von Inhalten. Diese APIs sind sofort einsatzbereit und basieren auf bekannten Inhaltsmustern, mit denen Microsoft Modelle trainiert hat. Jede dieser APIs trifft Vorhersagen auf Grundlage der Daten, die Sie in die API einpflegen.
+[Azure Cognitive Services](/azure/cognitive-services) ist ein Beispiel einer prädiktive API, die von einem Cloudanbieter entwickelt wurde. Dieser Dienst umfasst prädiktive APIs zur Inhaltsmoderation, Anomalieerkennung und Vorschläge zur Personalisierung von Inhalten. Diese APIs sind sofort einsatzbereit und basieren auf bekannten Inhaltsmustern, mit denen Microsoft Modelle trainiert hat. Jede dieser APIs trifft Vorhersagen auf Grundlage der Daten, die Sie in die API einpflegen.
 
-[Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning) ermöglicht die Bereitstellung maßgeschneiderter Algorithmen, die Sie ausschließlich auf Grundlage Ihrer eigenen Daten erstellen und trainieren können. Erfahren Sie mehr über die Bereitstellung von Vorhersagen mit [Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/service/how-to-deploy-and-where).
+[Azure Machine Learning](/azure/machine-learning) ermöglicht die Bereitstellung maßgeschneiderter Algorithmen, die Sie ausschließlich auf Grundlage Ihrer eigenen Daten erstellen und trainieren können. Erfahren Sie mehr über die Bereitstellung von Vorhersagen mit [Azure Machine Learning](/azure/machine-learning/service/how-to-deploy-and-where).
 
-Unter [Einrichten von HDInsight-Clustern](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-provision-linux-clusters) werden die Prozesse zur Bereitstellung von Vorhersagen erörtert, die für ML Services in Azure HDInsight entwickelt wurden.
+Unter [Einrichten von HDInsight-Clustern](/azure/hdinsight/hdinsight-hadoop-provision-linux-clusters) werden die Prozesse zur Bereitstellung von Vorhersagen erörtert, die für ML Services in Azure HDInsight entwickelt wurden.
 
 ## <a name="interactions"></a>Interaktionen
 

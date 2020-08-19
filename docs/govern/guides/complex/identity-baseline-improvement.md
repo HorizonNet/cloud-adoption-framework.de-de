@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 659dad6ad975fc19272348c6b5c3f148ea9f527b
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 3582e2c940f37e5137b66bb430d09a3f1a200004
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86478019"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573597"
 ---
 <!-- cSpell:ignore MPLS -->
 
@@ -80,7 +80,7 @@ Dies sind die neuen Best Practices:
 - **Blaupause für ein sicheres hybrides virtuelles Netzwerk:** Die lokale Seite des Hybridnetzwerks sollte so konfiguriert werden, dass sie Kommunikation zwischen der folgenden Lösung und den lokalen Active Directory-Servern zulässt. Für diese bewährte Methode muss ein Umkreisnetzwerk Active Directory Domain Services über Netzwerkgrenzen hinweg aktivieren.
 - **Azure Resource Manager-Vorlagen**:
     1. Definieren Sie eine Netzwerksicherheitsgruppe, um externen Datenverkehr zu blockieren und internen Datenverkehr zuzulassen.
-    2. Stellen Sie zwei virtuelle Active Directory-Computer als Paar mit Lastenausgleich auf der Grundlage eines Golden Image bereit. Beim ersten Start führt dieses Image ein PowerShell-Skript aus, um den Domänenbeitritt und die Registrierung bei den Domänendiensten vorzunehmen. Weitere Informationen finden Sie unter [Erweitern von Active Directory Domain Services (AD DS) auf Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/adds-extend-domain).
+    2. Stellen Sie zwei virtuelle Active Directory-Computer als Paar mit Lastenausgleich auf der Grundlage eines Golden Image bereit. Beim ersten Start führt dieses Image ein PowerShell-Skript aus, um den Domänenbeitritt und die Registrierung bei den Domänendiensten vorzunehmen. Weitere Informationen finden Sie unter [Erweitern von Active Directory Domain Services (AD DS) auf Azure](/azure/architecture/reference-architectures/identity/adds-extend-domain).
 - Azure Policy: Wenden Sie die NSG auf alle Ressourcen an.
 - Azure-Blaupause:
     1. Erstellen Sie eine Blaupause mit dem Namen `active-directory-virtual-machines`.

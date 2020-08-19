@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a69c196d76db7f633acdfcf0aff6ad72a11872e5
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 6cdcc1b37b875f08d9221fe4ca855fc8b0bf7fa7
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83215023"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574022"
 ---
 # <a name="software-defined-networking-cloud-native"></a>Softwaredefiniertes Netzwerk: Cloudnativ
 
@@ -40,5 +40,5 @@ Zusätzliche Aspekte, die Ihr für den Umstieg auf die Cloud zuständiges Team b
 
 Weitere Informationen zu cloudnativen virtuellen Netzwerken in Azure finden Sie hier:
 
-- [Azure Virtual Network-Leitfäden](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm): Neu erstellte virtuelle Netzwerke sind standardmäßig cloudnativ. Befolgen Sie diese Anleitungen bei der Planung des Entwurfs und der Bereitstellung Ihrer virtuellen Netzwerke.
-- [Azure-Netzwerkgrenzwerte](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#networking-limits): Die einzelnen virtuellen Netzwerke und die verbundenen Ressourcen befinden sich jeweils in einem einzelnen Abonnement. Diese Ressourcen unterliegen Abonnementgrenzen.
+- [Azure Virtual Network-Leitfäden](/azure/virtual-network/virtual-network-vnet-plan-design-arm): Neu erstellte virtuelle Netzwerke sind standardmäßig cloudnativ. Befolgen Sie diese Anleitungen bei der Planung des Entwurfs und der Bereitstellung Ihrer virtuellen Netzwerke.
+- [Azure-Netzwerkgrenzwerte](/azure/azure-resource-manager/management/azure-subscription-service-limits#networking-limits): Die einzelnen virtuellen Netzwerke und die verbundenen Ressourcen befinden sich jeweils in einem einzelnen Abonnement. Diese Ressourcen unterliegen Abonnementgrenzen.

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c739459e26f83bf5e41f89bb22750632bc7e4afe
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: aba505bea5b8bafc8a8d49a04c2a0086363d9cc4
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86448995"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567868"
 ---
 <!-- cSpell:ignore umarmohamedusman umarm Moovit -->
 
@@ -27,12 +27,12 @@ Azure-Kunden verwenden eine ständig wachsende Anzahl von vernetzten Systemen un
 > [!div class="checklist"]
 >
 > - Industrieanlagen
-> - [Microsoft HoloLens 2](https://docs.microsoft.com/hololens)
-> - [Azure Sphere](https://docs.microsoft.com/azure-sphere/product-overview/what-is-azure-sphere)
-> - [Azure Kinect DK](https://docs.microsoft.com/azure/kinect-dk/about-azure-kinect-dk)
+> - [Microsoft HoloLens 2](/hololens)
+> - [Azure Sphere](/azure-sphere/product-overview/what-is-azure-sphere)
+> - [Azure Kinect DK](/azure/kinect-dk/about-azure-kinect-dk)
 > - Drohnen
-> - [Azure SQL Edge](https://docs.microsoft.com/azure/azure-sql-edge/overview)
-> - [IoT Plug & Play](https://docs.microsoft.com/azure/iot-pnp/overview-iot-plug-and-play)
+> - [Azure SQL Edge](/azure/azure-sql-edge/overview)
+> - [IoT Plug & Play](/azure/iot-pnp/overview-iot-plug-and-play)
 
 <!-- markdownlint-disable MD025 -->
 
@@ -53,8 +53,8 @@ Dies sind einige der Features, die Sie nutzen können:
 
 ### <a name="learn-more"></a>Weitere Informationen
 
-- [Azure IoT Hub](https://docs.microsoft.com/azure/iot-hub)
-- [Azure IoT Hub Device Provisioning Service (DPS)](https://docs.microsoft.com/azure/iot-dps)
+- [Azure IoT Hub](/azure/iot-hub)
+- [Azure IoT Hub Device Provisioning Service (DPS)](/azure/iot-dps)
 
 ::: zone-end
 
@@ -106,7 +106,7 @@ Erstellen Sie wiederverwendbare, hochgradig skalierbare und raumbezogene Umgebun
 
 ### <a name="learn-more"></a>Weitere Informationen
 
-- [Azure Digital Twins](https://docs.microsoft.com/azure/digital-twins/about-digital-twins)
+- [Azure Digital Twins](/azure/digital-twins/about-digital-twins)
 
 ::: zone-end
 
@@ -145,7 +145,7 @@ Zusätzlich zu herkömmlichen Standortfunktionen wie „In der Nähe“, „Verk
 
 ### <a name="learn-more"></a>Weitere Informationen
 
-- [Azure Maps](https://docs.microsoft.com/azure/azure-maps)
+- [Azure Maps](/azure/azure-maps)
 
 ::: zone-end
 
@@ -182,7 +182,7 @@ Azure Spatial Anchors besteht aus einem verwalteten Dienst und Client-SDKs für 
 
 ### <a name="learn-more"></a>Weitere Informationen
 
-- [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview)
+- [Azure Spatial Anchors](/azure/spatial-anchors/overview)
 
 ::: zone-end
 
@@ -213,8 +213,8 @@ Der Renderingprozess ist rechenintensiv. Es kann sein, das viele Frames oder Bil
 
 ### <a name="learn-more"></a>Weitere Informationen
 
-- [Azure Remote Rendering](https://docs.microsoft.com/azure/remote-rendering/overview/about)
-- [Rendern mit Azure](https://docs.microsoft.com/azure/batch/batch-rendering-service)
+- [Azure Remote Rendering](/azure/remote-rendering/overview/about)
+- [Rendern mit Azure](/azure/batch/batch-rendering-service)
 
 ::: zone-end
 

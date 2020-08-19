@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: cc3d8ddfc599a33e28874774e92915b964aa4e3c
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 9323dbd07f5de6ab4ed525b6f3a54db921ac0f7d
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86190871"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572033"
 ---
 <!-- cSpell:ignore WSUS getting started -->
 
@@ -53,7 +53,7 @@ Verwenden Sie für Computer, die mit der Updateverwaltung verwaltet werden, die 
 - Azure Automation Hybrid Runbook Worker.
 - Microsoft Update oder Windows Server Update Services (WSUS) für Windows-Computer.
 
-Weitere Informationen finden Sie unter [Updateverwaltungslösung](https://docs.microsoft.com/azure/automation/automation-update-management).
+Weitere Informationen finden Sie unter [Updateverwaltungslösung](/azure/automation/automation-update-management).
 
 > [!WARNING]
 > Bevor Sie die Updateverwaltung verwenden, müssen Sie virtuelle Computer oder ein ganzes Abonnement in Log Analytics und Azure Automation integrieren.
@@ -126,8 +126,8 @@ So wenden Sie eine Richtlinie auf eine Ressourcengruppe an:
 
 Weitere Informationen finden Sie unter:
 
-- [Azure Policy](https://docs.microsoft.com/azure/azure-policy)
-- [Azure Policy: Gastkonfiguration](https://docs.microsoft.com/azure/governance/policy/concepts/guest-configuration)
+- [Azure Policy](/azure/azure-policy)
+- [Azure Policy: Gastkonfiguration](/azure/governance/policy/concepts/guest-configuration)
 - [Cloud Adoption Framework: Leitfaden zur Entscheidungsfindung für die Richtlinienerzwingung](../../decision-guides/policy-enforcement/index.md)
 
 ## <a name="azure-blueprints"></a>Azure Blueprint
@@ -214,8 +214,8 @@ So veröffentlichen Sie Blaupausenartefakte für Ihr Abonnement:
 
 Weitere Informationen finden Sie unter:
 
-- [Azure Blueprint](https://docs.microsoft.com/azure/governance/blueprints)
+- [Azure Blueprint](/azure/governance/blueprints)
 - [Cloud Adoption Framework: Leitfaden zur Entscheidungsfindung bei der Ressourcenkonsistenz](../../decision-guides/resource-consistency/index.md)
-- [Standardbasierte Blaupausenbeispiele](https://docs.microsoft.com/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
+- [Standardbasierte Blaupausenbeispiele](/azure/governance/blueprints/samples/index#standards-based-blueprint-samples)
 
 ::: zone-end

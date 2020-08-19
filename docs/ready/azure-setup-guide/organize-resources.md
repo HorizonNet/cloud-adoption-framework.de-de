@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 0f022693cdf8191a1c4e978a4545bfc117ed055f
-ms.sourcegitcommit: 622a7c5f1b47c9ad0a1c1ed3caa98bad6cf9d9c2
+ms.openlocfilehash: e623658907c4f6e97574e1e8c0012933a6233e8f
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87115095"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572900"
 ---
 <!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
 
@@ -66,7 +66,7 @@ Verwenden Sie Abonnements, um Kosten und Ressourcen zu verwalten, die von Benutz
 2. Wählen Sie **Hinzufügen**.
 
 > [!NOTE]
-> Abonnements können auch programmgesteuert erstellt werden. Weitere Informationen finden Sie unter [Programmgesteuertes Erstellen von Azure Enterprise-Abonnements](https://docs.microsoft.com/azure/azure-resource-manager/management/programmatically-create-subscription?tabs=azure-powershell).
+> Abonnements können auch programmgesteuert erstellt werden. Weitere Informationen finden Sie unter [Programmgesteuertes Erstellen von Azure Enterprise-Abonnements](/azure/azure-resource-manager/management/programmatically-create-subscription?tabs=azure-powershell).
 
 #### <a name="create-a-resource-group"></a>Erstellen einer Ressourcengruppe
 
@@ -86,9 +86,9 @@ Weitere Informationen finden Sie unter:
 - [Erstellen Ihrer anfänglichen Abonnements](../azure-best-practices/initial-subscriptions.md)
 - [Erstellen zusätzlicher Azure-Abonnements zum Skalieren Ihrer Azure-Umgebung](../azure-best-practices/scale-subscriptions.md)
 - [Organisieren und Verwalten Ihrer Azure-Abonnements](../azure-best-practices/organize-subscriptions.md)
-- [Organisieren Ihrer Ressourcen mit Azure-Verwaltungsgruppen](https://docs.microsoft.com/azure/azure-resource-manager/management-groups-overview)
+- [Organisieren Ihrer Ressourcen mit Azure-Verwaltungsgruppen](/azure/azure-resource-manager/management-groups-overview)
 - [Grundlegendes zur Ressourcenzugriffsverwaltung in Azure](../../govern/resource-consistency/resource-access-management.md)
-- [Einschränkungen bei Abonnementdiensten](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)
+- [Einschränkungen bei Abonnementdiensten](/azure/azure-resource-manager/management/azure-subscription-service-limits)
 
 ::: zone-end
 
@@ -136,7 +136,7 @@ Die unternehmensbezogene Seite dieser Strategie sollte sicherstellen, dass Resso
 
 Auf der operativen Seite sollte sichergestellt werden, dass die Namen von IT-Teams benötigte Informationen enthalten. Verwenden Sie die Details, die die Workload, Anwendung, Umgebung, Wichtigkeit und andere Informationen identifizieren, die für die Verwaltung von Ressourcen nützlich sind.
 
-Für die verschiedenen Ressourcentypen gelten unterschiedliche [Benennungsregeln und Einschränkungen](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-name-rules). Weitere Informationen und Empfehlungen, die speziell auf die Unterstützung von Bemühungen zur Einführung von Enterprise Clouds abzielen, finden Sie in der [Anleitung zu Benennung und Tagging](../azure-best-practices/naming-and-tagging.md) für das Framework für die Cloudeinführung (Cloud Adoption Framework).
+Für die verschiedenen Ressourcentypen gelten unterschiedliche [Benennungsregeln und Einschränkungen](/azure/azure-resource-manager/management/resource-name-rules). Weitere Informationen und Empfehlungen, die speziell auf die Unterstützung von Bemühungen zur Einführung von Enterprise Clouds abzielen, finden Sie in der [Anleitung zu Benennung und Tagging](../azure-best-practices/naming-and-tagging.md) für das Framework für die Cloudeinführung (Cloud Adoption Framework).
 
 Die folgende Tabelle enthält Namensmuster für einige Beispieltypen von Azure-Ressourcen.
 
@@ -182,7 +182,7 @@ So wenden Sie ein Tag auf eine Ressourcengruppe an:
 
 ### <a name="learn-more"></a>Weitere Informationen
 
-Weitere Informationen finden Sie unter [Verwenden von Tags zum Organisieren von Azure-Ressourcen](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources).
+Weitere Informationen finden Sie unter [Verwenden von Tags zum Organisieren von Azure-Ressourcen](/azure/azure-resource-manager/management/tag-resources).
 
 ::: zone-end
 

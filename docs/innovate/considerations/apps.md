@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 72f5a35bbf4fa248b82dce36fb345ee22a6b96f0
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 2b6bcc51e0cdbb7d7b326b385dfbe41e8b3ed856
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86449573"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568259"
 ---
 # <a name="engage-via-applications"></a>Interagieren über Apps
 
@@ -26,16 +26,16 @@ In einigen Fällen reichen die Daten allein aus, um Änderungen voranzutreiben u
 
 Teams, die schneller und präziser auf Kundenfeedback, Marktänderungen und Innovationschancen reagieren können, führen in der Regeln ihre Märkte bei Innovationen an. Das erste Prinzip innovativer Anwendungen wird in der [Übersicht zur Wachstumsmentalität](./learn.md#growth-mindset) unter „Freigeben des Codes“, erläutert. Im Lauf der Zeit ergeben sich Innovationen aus dem kulturellen Fokus. Um Innovationen aufrechtzuerhalten, sind unterschiedliche Perspektiven und Beiträge erforderlich.
 
-Um für Innovationen bereit zu sein, sollte die gesamte Anwendungsentwicklung mit einem Repository für freigegebenen Code beginnen. Das gängigste Tool für die Verwaltung von Coderepositorys ist [GitHub](https://guides.github.com), wo Sie sehr schnell ein Repository für freigegebenen Code erstellen können. Alternativ bietet [Azure Repos](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops) einen Satz von Tools zur Versionskontrolle in Azure DevOps Services, mit denen Sie Ihren Code verwalten können. Azure Repos stellt zwei Arten der Versionskontrolle bereit:
+Um für Innovationen bereit zu sein, sollte die gesamte Anwendungsentwicklung mit einem Repository für freigegebenen Code beginnen. Das gängigste Tool für die Verwaltung von Coderepositorys ist [GitHub](https://guides.github.com), wo Sie sehr schnell ein Repository für freigegebenen Code erstellen können. Alternativ bietet [Azure Repos](/azure/devops/repos/get-started/what-is-repos?view=azure-devops) einen Satz von Tools zur Versionskontrolle in Azure DevOps Services, mit denen Sie Ihren Code verwalten können. Azure Repos stellt zwei Arten der Versionskontrolle bereit:
 
-- [Git](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git): verteilte Versionskontrolle
-- [Team Foundation-Versionskontrolle (TFVC):](https://docs.microsoft.com/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc) zentrale Versionskontrolle
+- [Git](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#git): verteilte Versionskontrolle
+- [Team Foundation-Versionskontrolle (TFVC):](/azure/devops/repos/get-started/what-is-repos?view=azure-devops#tfvc) zentrale Versionskontrolle
 
 ## <a name="citizen-developers"></a>Entwickler ohne Programmiererfahrung
 
 Professionelle Entwickler sind eine wichtige Komponente der Innovation. Wenn eine Hypothese bedarfsabhängig korrekt ist, müssen professionelle Entwickler die Lösung für die Skalierung stabilisieren und vorbereiten. Die meisten Prinzipien, auf die in diesem Artikel verwiesen wird, müssen von professionellen Entwicklern unterstützt werden. Leider deuten aktuelle Trends darauf hin, dass nicht genügend professionelle Entwickler für die Nachfrage zur Verfügung stehen. Darüber hinaus können Kosten und Geschwindigkeit der Innovation ungünstiger ausfallen, wenn die strengen Maßstäbe professioneller Entwicklung angewandt werden. Als Reaktion auf diese Herausforderungen sind Entwickler ohne Programmiererfahrung eine Alternative, um den Entwicklungsaufwand zu skalieren und frühe Hypothesetests zu beschleunigen.
 
-Der Einsatz von Entwicklern ohne Programmiererfahrung könnte sinnvoll sein, wenn frühe Hypothesen mithilfe von Tools wie [Power Apps](https://docs.microsoft.com/powerapps/powerapps-overview) für App-Schnittstellen, [AI Builder](https://docs.microsoft.com/powerapps/use-ai-builder) für Prozesse und Vorhersagen, [Microsoft Power Automate](https://docs.microsoft.com/power-automate) für Workflows oder [Power BI](https://docs.microsoft.com/power-bi) für den Datenverbrauch überprüft werden können.
+Der Einsatz von Entwicklern ohne Programmiererfahrung könnte sinnvoll sein, wenn frühe Hypothesen mithilfe von Tools wie [Power Apps](/powerapps/powerapps-overview) für App-Schnittstellen, [AI Builder](/powerapps/use-ai-builder) für Prozesse und Vorhersagen, [Microsoft Power Automate](/power-automate) für Workflows oder [Power BI](/power-bi) für den Datenverbrauch überprüft werden können.
 
 > [!NOTE]
 > Beim Einsatz von Entwicklern ohne Programmiererfahrung zum Testen von Hypothesen sollten einige professionelle Entwickler mit Unterstützung, Überprüfung und Anleitung helfen. Nachdem eine Hypothese bedarfsabhängig überprüft wurde, beschleunigt ein Prozess, der die Anwendung in ein stabileres Programmiermodell überführt, die Rendite der Innovation. Wenn professionelle Entwickler schon früh in die Prozessdefinitionen einbezogen werden, können daraus später sauberere Übergänge resultieren.
@@ -82,11 +82,11 @@ Das Erweitern einer Lösung ist eine gängige Form der Modernisierung. Diese Vor
 
 - Die vorhandene Geschäftslogik sollte die vorhandene Kundenanforderung erfüllen (oder dem nahekommen).
 - Eine verbesserte Benutzerfreundlichkeit würde die Anforderungen einer bestimmten Kundenkohorte besser erfüllen.
-- Die Geschäftslogik, die für die MVP-Lösung (Minimum Viable Product) erforderlich ist, wurde zentralisiert – üblicherweise über einen [N-Schichten](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier)-, Webdienste-, API- oder [Microservices](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices)-Entwurf. Dieser Ansatz besteht darin, die vorhandene Lösung mit einer neuen, in der Cloud gehosteten Umgebung zu umschließen. In Azure befände sich diese Lösung wahrscheinlich in Azure App Service.
+- Die Geschäftslogik, die für die MVP-Lösung (Minimum Viable Product) erforderlich ist, wurde zentralisiert – üblicherweise über einen [N-Schichten](/azure/architecture/guide/architecture-styles/n-tier)-, Webdienste-, API- oder [Microservices](/azure/architecture/guide/architecture-styles/microservices)-Entwurf. Dieser Ansatz besteht darin, die vorhandene Lösung mit einer neuen, in der Cloud gehosteten Umgebung zu umschließen. In Azure befände sich diese Lösung wahrscheinlich in Azure App Service.
 
 ### <a name="rebuild-an-existing-solution"></a>Neuerstellen einer vorhandenen Lösung
 
-Wenn eine Anwendung nicht einfach erweitert werden kann, ist es möglicherweise erforderlich, die Lösung umzugestalten. Bei diesem Ansatz wird die Workload in die Cloud migriert. Nach der Migration der Anwendung werden Teile davon geändert oder dupliziert, als Webdienste oder [Microservices](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices), die parallel zur vorhandenen Lösung bereitgestellt werden. Die parallele dienstbasierte Lösung könnte wie eine erweiterte Lösung behandelt werden. Diese Lösung würde einfach die vorhandene Lösung mit einer neuen, in der Cloud gehosteten Umgebung umschließen. In Azure befände sich diese Lösung wahrscheinlich in Azure App Service.
+Wenn eine Anwendung nicht einfach erweitert werden kann, ist es möglicherweise erforderlich, die Lösung umzugestalten. Bei diesem Ansatz wird die Workload in die Cloud migriert. Nach der Migration der Anwendung werden Teile davon geändert oder dupliziert, als Webdienste oder [Microservices](/azure/architecture/guide/architecture-styles/microservices), die parallel zur vorhandenen Lösung bereitgestellt werden. Die parallele dienstbasierte Lösung könnte wie eine erweiterte Lösung behandelt werden. Diese Lösung würde einfach die vorhandene Lösung mit einer neuen, in der Cloud gehosteten Umgebung umschließen. In Azure befände sich diese Lösung wahrscheinlich in Azure App Service.
 
 > [!CAUTION]
 > Das Refactoring bzw. Neuentwerfen von Lösungen oder Zentralisieren von Geschäftslogik kann, im Gegensatz zu einer Kundenwertquelle, schnell zu einer zeitaufwendigen [technischen Herausforderung](./build.md#reduce-complexity-and-delay-technical-spikes) werden. Dies ist ein Risiko für die Innovation, insbesondere in der Frühphase der Hypothesenvalidierung. Mit etwas Kreativität beim Entwerfen einer Lösung sollte ein Pfad zum MVP vorhanden sein, der kein Refactoring vorhandener Lösungen erfordert. Es ist ratsam, das Refactoring zu verzögern, bis die anfängliche Hypothese bedarfsabhängig überprüft werden kann.
@@ -103,9 +103,9 @@ Wenn Sie versuchen, die globale Nachfrage nach einer vorhandenen Lösung zu skal
 
 Je mehr in einer Lösung verwaltet werden muss, desto langsamer wird die Lösung durchlaufen. Das bedeutet, dass Sie die Innovation beschleunigen können, indem Sie die Auswirkungen von Vorgängen auf die verfügbare Bandbreite reduzieren.
 
-Zur Vorbereitung auf die vielen Iterationen, die für die Bereitstellung einer innovativen Lösung erforderlich sind, ist vorausschauendes Denken wichtig. Minimieren Sie beispielsweise die Betriebsbelastungen frühzeitig im Prozess, indem Sie serverlose Optionen bevorzugen. In Azure könnten serverlose Anwendungsoptionen [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) oder [Container](https://docs.microsoft.com/azure/containers) beinhalten.
+Zur Vorbereitung auf die vielen Iterationen, die für die Bereitstellung einer innovativen Lösung erforderlich sind, ist vorausschauendes Denken wichtig. Minimieren Sie beispielsweise die Betriebsbelastungen frühzeitig im Prozess, indem Sie serverlose Optionen bevorzugen. In Azure könnten serverlose Anwendungsoptionen [Azure App Service](/azure/app-service/overview) oder [Container](/azure/containers) beinhalten.
 
-Parallel bietet Azure serverlose Transaktionsdatenoptionen, die ebenfalls den Mehraufwand reduzieren. Der [Azure-Produktkatalog](https://docs.microsoft.com/azure) bietet Datenbankoptionen, die Daten ohne eine vollständige Datenplattform hosten.
+Parallel bietet Azure serverlose Transaktionsdatenoptionen, die ebenfalls den Mehraufwand reduzieren. Der [Azure-Produktkatalog](/azure) bietet Datenbankoptionen, die Daten ohne eine vollständige Datenplattform hosten.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

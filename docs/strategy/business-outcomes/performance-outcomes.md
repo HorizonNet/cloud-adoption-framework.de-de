@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: dc0fa352d96f7d1194566006d3d9d1e98eb46b87
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: 52bec9b36c1e0aba845647f4617fb0aca97695d0
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862635"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196188"
 ---
 # <a name="examples-of-performance-outcomes"></a>Beispiele für Leistungsergebnisse
 
@@ -44,7 +44,7 @@ Azure Site Recovery vereinfacht das Testen der Notfallwiederherstellung, indem S
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Informationen zum [Verwenden der Vorlage für Geschäftsergebnisse](./business-outcome-template.md).
+Informationen zum Verwenden der Vorlage für Geschäftsergebnisse.
 
 > [!div class="nextstepaction"]
 > [Verwenden der Vorlage für Geschäftsergebnisse](./business-outcome-template.md)

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: c54ae037cef0486f27a4a7fc441e643a1678dd03
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 0f4e8cc17d094efc490a16ea3f740435b97a20fe
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86478564"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568089"
 ---
 <!-- cSpell:ignore billyclaymyersmsft wimyers functionapp -->
 
@@ -100,25 +100,25 @@ Zum Konfigurieren oder Überwachen von Azure Bot Service-Bereitstellungen gehen 
 
 ### <a name="azure-devops"></a>Azure DevOps
 
-Ihr Weg der Innovation wird letztendlich in Richtung DevOps führen. Microsoft verfügt bereits seit langem über ein lokales Produkt mit der Bezeichnung Team Foundation Server (TFS). Auf unserem eigenen Weg der Innovation haben wir Azure DevOps als cloudbasierten Dienst zur Bereitstellung von Build- und Releasetools entwickelt, die viele Sprachen und Ziele für Ihre Releases unterstützen. Weitere Informationen finden Sie unter [Azure DevOps](https://docs.microsoft.com/azure/devops).
+Ihr Weg der Innovation wird letztendlich in Richtung DevOps führen. Microsoft verfügt bereits seit langem über ein lokales Produkt mit der Bezeichnung Team Foundation Server (TFS). Auf unserem eigenen Weg der Innovation haben wir Azure DevOps als cloudbasierten Dienst zur Bereitstellung von Build- und Releasetools entwickelt, die viele Sprachen und Ziele für Ihre Releases unterstützen. Weitere Informationen finden Sie unter [Azure DevOps](/azure/devops).
 
 ### <a name="visual-studio-app-center"></a>Visual Studio App Center
 
-Da mobile Apps immer beliebter werden, wächst die Notwendigkeit einer Plattform, die automatisierte Tests auf realen Geräten verschiedener Konfigurationen ermöglicht. Visual Studio App Center bietet nicht nur einen Ort, an dem Sie Ihre Anwendungen übergreifend für iOS, Android, Windows und macOS testen können, sondern bietet auch eine Überwachungsplattform, die Azure Application Insights nutzen kann, um Ihre Telemetriedaten schnell und einfach zu analysieren. Weitere Informationen finden Sie unter [Visual Studio App Center](https://docs.microsoft.com/appcenter).
+Da mobile Apps immer beliebter werden, wächst die Notwendigkeit einer Plattform, die automatisierte Tests auf realen Geräten verschiedener Konfigurationen ermöglicht. Visual Studio App Center bietet nicht nur einen Ort, an dem Sie Ihre Anwendungen übergreifend für iOS, Android, Windows und macOS testen können, sondern bietet auch eine Überwachungsplattform, die Azure Application Insights nutzen kann, um Ihre Telemetriedaten schnell und einfach zu analysieren. Weitere Informationen finden Sie unter [Visual Studio App Center](/appcenter).
 
-Visual Studio App Center bietet auch einen Benachrichtigungsdienst, mit dem Sie mit einem einzelnen Aufruf plattformübergreifend Benachrichtigungen an Ihre Anwendung senden können, ohne dass jeder Benachrichtigungsdienst einzeln kontaktiert werden muss. Weitere Informationen finden Sie unter [Visual Studio App Center Push (ACP)](https://docs.microsoft.com/appcenter/push).
+Visual Studio App Center bietet auch einen Benachrichtigungsdienst, mit dem Sie mit einem einzelnen Aufruf plattformübergreifend Benachrichtigungen an Ihre Anwendung senden können, ohne dass jeder Benachrichtigungsdienst einzeln kontaktiert werden muss. Weitere Informationen finden Sie unter [Visual Studio App Center Push (ACP)](/appcenter/push).
 
 ### <a name="learn-more"></a>Weitere Informationen
 
-- [App Service: Übersicht](https://docs.microsoft.com/azure/app-service/overview)
-- [Web-App für Container: Ausführen eines benutzerdefinierten Containers](https://docs.microsoft.com/azure/app-service/containers/quickstart-docker)
-- [Einführung in Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview)
-- [Azure für .NET- und .NET Core-Entwickler](https://docs.microsoft.com/dotnet/azure/?view=azure-dotnet)
-- [Dokumentation für das Azure-SDK für Python](https://docs.microsoft.com/azure/python)
-- [Azure für Java-Cloudentwickler](https://docs.microsoft.com/azure/java/?view=azure-java-stable)
-- [Erstellen einer PHP-Web-App in Azure](https://docs.microsoft.com/azure/app-service/app-service-web-get-started-php)
-- [Dokumentation für das Azure SDK für JavaScript](https://docs.microsoft.com/azure/javascript)
-- [Dokumentation für das Azure SDK für Go](https://docs.microsoft.com/azure/go)
+- [App Service: Übersicht](/azure/app-service/overview)
+- [Web-App für Container: Ausführen eines benutzerdefinierten Containers](/azure/app-service/containers/quickstart-docker)
+- [Einführung in Azure Functions](/azure/azure-functions/functions-overview)
+- [Azure für .NET- und .NET Core-Entwickler](/dotnet/azure/?view=azure-dotnet)
+- [Dokumentation für das Azure-SDK für Python](/azure/python)
+- [Azure für Java-Cloudentwickler](/azure/java/?view=azure-java-stable)
+- [Erstellen einer PHP-Web-App in Azure](/azure/app-service/app-service-web-get-started-php)
+- [Dokumentation für das Azure SDK für JavaScript](/azure/javascript)
+- [Dokumentation für das Azure SDK für Go](/azure/go)
 - [DevOps-Lösungen](https://azure.microsoft.com/solutions/devops)
 
 ## <a name="create-cloud-native-applications"></a>[Erstellen cloudnativer Anwendungen](#tab/CloudNative)
@@ -175,9 +175,9 @@ Erstellen Sie cloudnative Apps mithilfe einer vollständig verwalteten Plattform
 
 Azure Functions bietet eine Plattform zum Ausführen kleiner Codeeinheiten oder Funktionen in der Cloud. Functions kann eine Möglichkeit sein, mit dem Umgestalten Ihres Codes in eine Microservicearchitektur zu beginnen.
 
-Die Azure Functions-Runtime unterstützt viele Sprachen, einschließlich C#, Java, JavaScript und Python. Eine vollständige Liste finden Sie unter [In Azure Functions unterstützte Sprachen](https://docs.microsoft.com/azure/azure-functions/supported-languages).
+Die Azure Functions-Runtime unterstützt viele Sprachen, einschließlich C#, Java, JavaScript und Python. Eine vollständige Liste finden Sie unter [In Azure Functions unterstützte Sprachen](/azure/azure-functions/supported-languages).
 
-Ein weiterer Vorteil von Functions ist die Möglichkeit, dass die Funktionen durch unterschiedliche Aktionen und Ereignisse wie HTTP-Trigger, Trigger mit Timer und Trigger aus anderen Azure-Diensten wie Blob Storage, Event Grid und Service Bus ausgelöst werden können. Weitere Informationen zu Triggern und Bindungen finden Sie unter [Konzepte für Azure Functions-Trigger und -Bindungen](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings).
+Ein weiterer Vorteil von Functions ist die Möglichkeit, dass die Funktionen durch unterschiedliche Aktionen und Ereignisse wie HTTP-Trigger, Trigger mit Timer und Trigger aus anderen Azure-Diensten wie Blob Storage, Event Grid und Service Bus ausgelöst werden können. Weitere Informationen zu Triggern und Bindungen finden Sie unter [Konzepte für Azure Functions-Trigger und -Bindungen](/azure/azure-functions/functions-triggers-bindings).
 
 #### <a name="action"></a>Aktion
 
@@ -273,7 +273,7 @@ Azure Red Hat OpenShift bietet flexible Self-Service-Bereitstellung vollständig
 
 #### <a name="learn-more"></a>Weitere Informationen
 
-- [Azure Red Hat OpenShift](https://docs.microsoft.com/azure/openshift/intro-openshift)
+- [Azure Red Hat OpenShift](/azure/openshift/intro-openshift)
 
 ## <a name="isolate-points-of-failure"></a>[Isolieren von Fehlerquellen](#tab/IsolatePointsOfFailure)
 
@@ -347,6 +347,6 @@ Zum Konfigurieren oder Überwachen von Azure CDN-Profilen gehen Sie folgenderma�
 
 ### <a name="learn-more"></a>Weitere Informationen
 
-- [Azure Front Door](https://docs.microsoft.com/azure/frontdoor/front-door-overview)
-- [Traffic Manager](https://docs.microsoft.com/azure/traffic-manager)
-- [Übersicht über das Azure Content Delivery Network (CDN)](https://docs.microsoft.com/azure/cdn)
+- [Azure Front Door](/azure/frontdoor/front-door-overview)
+- [Traffic Manager](/azure/traffic-manager)
+- [Übersicht über das Azure Content Delivery Network (CDN)](/azure/cdn)

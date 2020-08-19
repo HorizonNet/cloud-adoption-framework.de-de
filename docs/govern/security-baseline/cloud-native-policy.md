@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 11de19074526634af368916d5e58511c6f51ca90
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 5b8459378a4e435bc88b5f7623d08f3f61f52f5c
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193795"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195295"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Richtlinie zur cloudnativen Sicherheitsbaseline
 
@@ -94,7 +94,7 @@ Selbst bei dieser Investition in die cloudnative Sicherheitsbaseline empfiehlt e
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nachdem Sie sich mit der Beispielrichtlinie für die Sicherheitsbaseline für cloudnative Lösungen vertraut gemacht haben, können Sie nun zum [Leitfaden zur Überprüfung von Richtlinien](../policy-compliance/cloud-policy-review.md) zurückkehren und anhand dieser Beispielrichtlinie eigene Richtlinien für die Cloudeinführung erstellen.
+Nachdem Sie sich mit der Beispielrichtlinie für die Sicherheitsbaseline für cloudnative Lösungen vertraut gemacht haben, können Sie nun zum Leitfaden zur Überprüfung von Richtlinien zurückkehren und anhand dieser Beispielrichtlinie eigene Richtlinien für die Cloudeinführung erstellen.
 
 > [!div class="nextstepaction"]
 > [Erstellen Ihrer eigenen Richtlinien unter Verwendung des Leitfadens zur Überprüfung von Richtlinien](../policy-compliance/cloud-policy-review.md)

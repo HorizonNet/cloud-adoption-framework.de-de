@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c4a3c3b7f093f226895bccede7efcfdba94cd002
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: cb1ec2e0a90fb1f41a85de7c5588ad32b5e4f7b3
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479346"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569381"
 ---
 # <a name="resource-access-management-in-azure"></a>Ressourcenzugriffsverwaltung in Azure
 
@@ -30,7 +30,7 @@ _Abbildung 1: Ressource_
 
 ## <a name="what-is-an-azure-resource-group"></a>Was ist eine Azure-Ressourcengruppe?
 
-In Azure muss jede Ressource zu einer [Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#resource-groups) gehören. Eine Ressourcengruppe ist einfach ein logisches Konstrukt, mit dem mehrere Ressourcen gruppiert werden, damit sie gemeinsam als einzelne Entität **auf der Grundlage von Lebenszyklus und Sicherheit** verwaltet werden können. Beispielsweise können Ressourcen, die über einen ähnlichen Lebenszyklus verfügen, z.B. die Ressourcen für eine [n-schichtige Anwendung](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier), als Gruppe erstellt oder gelöscht werden. Anders ausgedrückt: Alle Elemente, die zusammen erstellt, verwaltet und außer Betrieb genommen werden, gehören in eine gemeinsame Ressourcengruppe.
+In Azure muss jede Ressource zu einer [Ressourcengruppe](/azure/azure-resource-manager/management/overview#resource-groups) gehören. Eine Ressourcengruppe ist einfach ein logisches Konstrukt, mit dem mehrere Ressourcen gruppiert werden, damit sie gemeinsam als einzelne Entität **auf der Grundlage von Lebenszyklus und Sicherheit** verwaltet werden können. Beispielsweise können Ressourcen, die über einen ähnlichen Lebenszyklus verfügen, z.B. die Ressourcen für eine [n-schichtige Anwendung](/azure/architecture/guide/architecture-styles/n-tier), als Gruppe erstellt oder gelöscht werden. Anders ausgedrückt: Alle Elemente, die zusammen erstellt, verwaltet und außer Betrieb genommen werden, gehören in eine gemeinsame Ressourcengruppe.
 
 ![Diagramm einer Ressourcengruppe, die eine Ressource enthält](../../_images/govern/design/governance-1-10.png)
 _Abbildung 2: Eine Ressourcengruppe enthält eine Ressource._
@@ -46,17 +46,17 @@ _Abbildung 3: Ein Azure-Abonnement._
 
 ## <a name="what-is-azure-resource-manager"></a>Was ist Azure Resource Manager?
 
-Unter [Wie funktioniert Azure?](../../get-started/what-is-azure.md) haben Sie erfahren, dass Azure über ein Front-End mit vielen Diensten verfügt, über die alle Funktionen von Azure orchestriert werden. Einer dieser Dienste ist der [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager). Er hostet die RESTful-API, die von Clients zum Verwalten von Ressourcen verwendet wird.
+Unter [Wie funktioniert Azure?](../../get-started/what-is-azure.md) haben Sie erfahren, dass Azure über ein Front-End mit vielen Diensten verfügt, über die alle Funktionen von Azure orchestriert werden. Einer dieser Dienste ist der [Azure Resource Manager](/azure/azure-resource-manager). Er hostet die RESTful-API, die von Clients zum Verwalten von Ressourcen verwendet wird.
 
 ![Diagramm von Azure Resource Manager](../../_images/govern/design/governance-1-12.png)
 _Abbildung 4: Azure Resource Manager._
 
-In der folgenden Abbildung sind drei Clients dargestellt: [PowerShell](https://docs.microsoft.com/powershell/azure/overview), das [Azure-Portal](https://portal.azure.com) und die [Azure CLI](https://docs.microsoft.com/cli/azure):
+In der folgenden Abbildung sind drei Clients dargestellt: [PowerShell](/powershell/azure/overview), das [Azure-Portal](https://portal.azure.com) und die [Azure CLI](/cli/azure):
 
 ![Diagramm von Azure-Clients, die eine Verbindung mit der Resource Manager-REST-API herstellen](../../_images/govern/design/governance-1-13.png)
 _Abbildung 5: Azure-Clients stellen eine Verbindung mit der Resource Manager-REST-API her._
 
-Diese Clients stellen zwar über die REST-API eine Verbindung mit Resource Manager her, aber Resource Manager umfasst keine Funktionen zum direkten Verwalten von Ressourcen. Stattdessen verfügen die meisten Ressourcentypen in Azure über ihren eigenen [Ressourcenanbieter](https://docs.microsoft.com/azure/azure-resource-manager/management/overview#terminology).
+Diese Clients stellen zwar über die REST-API eine Verbindung mit Resource Manager her, aber Resource Manager umfasst keine Funktionen zum direkten Verwalten von Ressourcen. Stattdessen verfügen die meisten Ressourcentypen in Azure über ihren eigenen [Ressourcenanbieter](/azure/azure-resource-manager/management/overview#terminology).
 
 ![Azure-Ressourcenanbieter](../../_images/govern/design/governance-1-14.png)
 _Abbildung 6: Azure-Ressourcenanbieter_
@@ -70,7 +70,7 @@ Azure Resource Manager setzt voraus, dass der Client einen Bezeichner für das A
 
 Nachdem Sie sich mit der Funktionsweise von Azure Resource Manager vertraut gemacht haben, kehren Sie zu der Beschreibung zurück, wie ein Azure-Abonnement den von Azure Resource Manager verwendeten Kontrollen zugeordnet ist. Bevor eine Anforderung zur Durchführung der Ressourcenverwaltung von Azure Resource Manager ausgeführt werden kann, werden einige Kontrollmechanismen überprüft.
 
-Die erste Kontrolle besteht darin, dass eine Anforderung von einem geprüften Benutzer durchgeführt werden muss und Azure Resource Manager über eine vertrauenswürdige Beziehung mit [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory) verfügt, um die Funktionen für die Benutzeridentität bereitstellen zu können.
+Die erste Kontrolle besteht darin, dass eine Anforderung von einem geprüften Benutzer durchgeführt werden muss und Azure Resource Manager über eine vertrauenswürdige Beziehung mit [Azure Active Directory (Azure AD)](/azure/active-directory) verfügt, um die Funktionen für die Benutzeridentität bereitstellen zu können.
 
 ![Azure Active Directory](../../_images/govern/design/governance-1-16.png)
 _Abbildung 8: Azure Active Directory._
@@ -82,19 +82,19 @@ _Abbildung 9: Ein Azure AD-Mandant, der einem Abonnement zugeordnet ist._
 
 Für jede Clientanforderung zur Verwaltung einer Ressource unter einem bestimmten Abonnement ist es erforderlich, dass der Benutzer im zugeordneten Azure AD-Mandanten über ein Konto verfügt.
 
-Die nächste Kontrolle ist eine Überprüfung, ob der Benutzer über ausreichende Berechtigungen zum Senden der Anforderungen verfügt. Berechtigungen werden Benutzern über die [rollenbasierte Zugriffssteuerung (RBAC)](https://docs.microsoft.com/azure/role-based-access-control) zugewiesen.
+Die nächste Kontrolle ist eine Überprüfung, ob der Benutzer über ausreichende Berechtigungen zum Senden der Anforderungen verfügt. Berechtigungen werden Benutzern über die [rollenbasierte Zugriffssteuerung (RBAC)](/azure/role-based-access-control) zugewiesen.
 
 ![Benutzer, die RBAC-Rollen zugewiesen sind](../../_images/govern/design/governance-1-18.png)
 _Abbildung 10: Jedem Benutzer im Mandanten wird mindestens eine RBAC-Rolle zugewiesen._
 
-Mit einer RBAC-Rolle wird ein Satz mit Berechtigungen angegeben, die einem Benutzer für eine bestimmte Ressource zur Verfügung stehen. Wenn die Rolle dem Benutzer zugewiesen wird, werden diese Berechtigungen angewendet. Mit der [integrierten Rolle `owner`](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner) kann ein Benutzer beispielsweise eine beliebige Aktion für eine Ressource ausführen.
+Mit einer RBAC-Rolle wird ein Satz mit Berechtigungen angegeben, die einem Benutzer für eine bestimmte Ressource zur Verfügung stehen. Wenn die Rolle dem Benutzer zugewiesen wird, werden diese Berechtigungen angewendet. Mit der [integrierten Rolle `owner`](/azure/role-based-access-control/built-in-roles#owner) kann ein Benutzer beispielsweise eine beliebige Aktion für eine Ressource ausführen.
 
-Die nächste Kontrolle umfasst eine Überprüfung, ob die Anforderung gemäß den Einstellungen, die für die [Azure-Ressourcenrichtlinie](https://docs.microsoft.com/azure/governance/policy) angegeben wurden, zulässig ist. Mit Azure-Ressourcenrichtlinien werden die Vorgänge angegeben, die für eine bestimmte Ressource zulässig sind. Mithilfe einer Azure-Ressourcenrichtlinie kann beispielsweise angegeben werden, dass Benutzer nur einen bestimmten Typ eines virtuellen Computers bereitstellen dürfen.
+Die nächste Kontrolle umfasst eine Überprüfung, ob die Anforderung gemäß den Einstellungen, die für die [Azure-Ressourcenrichtlinie](/azure/governance/policy) angegeben wurden, zulässig ist. Mit Azure-Ressourcenrichtlinien werden die Vorgänge angegeben, die für eine bestimmte Ressource zulässig sind. Mithilfe einer Azure-Ressourcenrichtlinie kann beispielsweise angegeben werden, dass Benutzer nur einen bestimmten Typ eines virtuellen Computers bereitstellen dürfen.
 
 ![Azure-Ressourcenrichtlinie](../../_images/govern/design/governance-1-19.png)
 _Abbildung 11: Azure-Ressourcenrichtlinie_
 
-Mit der nächsten Kontrolle wird sichergestellt, dass für die Anforderung kein [Grenzwert für das Azure-Abonnement](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits) überschritten wird. Beispielsweise gilt für alle Abonnements ein Grenzwert von 980 Ressourcengruppen pro Abonnement. Wenn eine Anforderung zur Bereitstellung einer weiteren Ressourcengruppe eingeht, wird dies verweigert, falls der Grenzwert bereits erreicht ist.
+Mit der nächsten Kontrolle wird sichergestellt, dass für die Anforderung kein [Grenzwert für das Azure-Abonnement](/azure/azure-resource-manager/management/azure-subscription-service-limits) überschritten wird. Beispielsweise gilt für alle Abonnements ein Grenzwert von 980 Ressourcengruppen pro Abonnement. Wenn eine Anforderung zur Bereitstellung einer weiteren Ressourcengruppe eingeht, wird dies verweigert, falls der Grenzwert bereits erreicht ist.
 
 ![Azure-Ressourcenlimits](../../_images/govern/design/governance-1-20.png)
 _Abbildung 12: Azure-Ressourcengrenzwerte_

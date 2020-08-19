@@ -7,18 +7,18 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7cf5e9609b7c9bab7cacc0fa62930d4fe195681e
-ms.sourcegitcommit: 99151759b9d7dfc4e8aab345750eeae82d18d547
+ms.openlocfilehash: a55838413812f29069b39cee7f49391eb4ac2ec3
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88075827"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570809"
 ---
 <!-- cSpell:ignore Netezza Informatica Talend InMon zonemap CBTs Attunity Wherescape nzlua CBT NZPLSQL DELIM TABLENAME ORC Parquet nzsql nzunload mpp -->
 
 # <a name="azure-synapse-analytics-solutions-and-migration-for-netezza"></a>Azure Synapse Analytics-Lösungen und Migrieren von Netezza
 
-Da IBM die Unterstützung für Netezza einstellt, erwägen viele Unternehmen, die derzeit auf Data-Warehouse-Systeme von Netezza setzen, die Vorteile der innovativen Cloud-, Infrastructure-as-a-Service- und Platform-as-a-Service-Angebote von neueren Umgebungen wie Azure zu nutzen. Viele Organisationen sind bereit, kostenintensive Aufgaben wie die Infrastrukturwartung und die Plattformentwicklung an einen Cloudanbieter abzugeben. 
+Da IBM die Unterstützung für Netezza einstellt, erwägen viele Unternehmen, die derzeit auf Data-Warehouse-Systeme von Netezza setzen, die Vorteile der innovativen Cloud-, Infrastructure-as-a-Service- und Platform-as-a-Service-Angebote von neueren Umgebungen wie Azure zu nutzen. Viele Organisationen sind bereit, kostenintensive Aufgaben wie die Infrastrukturwartung und die Plattformentwicklung an einen Cloudanbieter abzugeben.
 
 Azure Synapse Analytics ist ein unbegrenzter Analysedienst, der Data Warehousing auf Unternehmensniveau mit Big Data-Analysen vereint. Er ermöglicht flexible Datenabfragen nach Ihren Vorstellungen und im großen Stil mithilfe von serverlosen On-Demand-Ressourcen oder bereitgestellten Ressourcen. In diesem Artikel erfahren Sie, wie Sie die Migration von einem Netezza-Legacysystem zu Azure Synapse planen.
 
@@ -38,7 +38,7 @@ Im Allgemeinen kann der Migrationsprozess in die Schritte untergliedert werden, 
 | :----------------- | :----------------------------- | :---------------- |
 | <ul><li> Festlegen des Umfangs: Was soll migriert werden?</li><li>Erstellen eines Inventars der zu migrierenden Daten und Prozesse</li><li>Definieren der Änderungen am Datenmodell</li><li>Ermitteln der am besten geeigneten Azure- und Drittanbietertools und -features, die verwendet werden sollen</li><li>Frühzeitige Schulung von Mitarbeitern für die neue Plattform</li><li>Einrichten der Azure-Zielplattform</li></ul> |  <ul><li> Einfaches Beginnen im kleinen Umfang</li><li>Automatisieren, wann immer möglich</li><li>Verwenden von integrierten Azure-Tools und -Features zum Verringern des Migrationsaufwands</li><li>Migrieren von Metadaten für Tabellen und Sichten</li><li>Migrieren relevanter historischer Daten</li><li>Migrieren oder Umgestalten von gespeicherten Prozeduren und Geschäftsprozessen</li><li>Migrieren oder Umgestalten der inkrementelle Ladevorgänge im Rahmen von ETL/ELT</li></ul> | <ul><li> Überwachen und Dokumentieren aller Migrationsphasen</li><li>Nutzen der gewonnenen Erfahrungen zum Erstellen einer Vorlage für zukünftige Migrationsvorgänge</li><li>Neuerstellen des Datenmodells bei Bedarf unter Verwendung der Leistung und Skalierbarkeit der neuen Plattform</li><li>Testen von Anwendungen und Abfragetools</li><li>Erstellen von Benchmarks für die Abfrageleistung und Optimieren derselben</li></ul> |
 
-Bei der Migration einer Netezza-Legacyumgebung zu Azure Synapse müssen Sie zusätzlich zu den allgemeineren Themen, die in der Netezza-Dokumentation beschrieben werden, weitere konkrete Aspekte berücksichtigen. 
+Bei der Migration einer Netezza-Legacyumgebung zu Azure Synapse müssen Sie zusätzlich zu den allgemeineren Themen, die in der Netezza-Dokumentation beschrieben werden, weitere konkrete Aspekte berücksichtigen.
 
 ## <a name="initial-migration-workload"></a>Erste Migrationsworkload
 
@@ -80,7 +80,7 @@ Bei der Planung einer Migration von einer Netezza-Legacyumgebung zu Azure Synaps
 
 In einer Netezza-Umgebung werden verschiedene Teile der Gesamtumgebung unter Umständen auf mehreren separaten Datenbanken bereitgestellt. Beispielsweise kann eine separate Datenbank für die Datenerfassung und Stagingtabellen vorhanden sein, eine Datenbank für zentrale Warehouse-Tabellen und eine weitere Datenbank für Data Marts (manchmal auch als *semantische Ebene* bezeichnet). Die Verarbeitung von separaten Datenbanken als ETL-/ELT-Pipelines in Azure Synapse erfordert möglicherweise die Implementierung von datenbankübergreifenden Verknüpfungen und die Verschiebung von Daten zwischen den separaten Datenbanken.
 
-Die Azure Synapse-Umgebung verfügt über ein Singleton. Tabellen werden mithilfe von Schemas in logisch getrennte Gruppen unterteilt. Es wird empfohlen, die separaten Datenbanken, die Sie von Netezza migrieren, mithilfe von mehreren Schemas in der Azure Synapse-Zielumgebung zu imitieren. Falls Sie in der Netezza-Umgebung Schemas verwendet haben, müssen Sie möglicherweise die Namenskonvention ändern, um die vorhandenen Netezza-Tabellen und -Sichten in die neue Umgebung verschieben zu können. Sie können beispielsweise die vorhandenen Netezza-Schema- und -Tabellennamen mit dem neuen Azure Synapse-Tabellennamen verketten und mithilfe der Schemanamen die Namen der ursprünglichen separaten Datenbanken in der neuen Umgebung beibehalten. 
+Die Azure Synapse-Umgebung verfügt über ein Singleton. Tabellen werden mithilfe von Schemas in logisch getrennte Gruppen unterteilt. Es wird empfohlen, die separaten Datenbanken, die Sie von Netezza migrieren, mithilfe von mehreren Schemas in der Azure Synapse-Zielumgebung zu imitieren. Falls Sie in der Netezza-Umgebung Schemas verwendet haben, müssen Sie möglicherweise die Namenskonvention ändern, um die vorhandenen Netezza-Tabellen und -Sichten in die neue Umgebung verschieben zu können. Sie können beispielsweise die vorhandenen Netezza-Schema- und -Tabellennamen mit dem neuen Azure Synapse-Tabellennamen verketten und mithilfe der Schemanamen die Namen der ursprünglichen separaten Datenbanken in der neuen Umgebung beibehalten.
 
 Eine andere Möglichkeit ist die Verwendung von SQL-Sichten für die zugrunde liegenden Tabellen, um die logischen Strukturen beizubehalten. SQL-Sichten weisen die folgenden potenziellen Nachteile auf:
 
@@ -113,7 +113,7 @@ In Netezza werden einige Datenbankobjekte implementiert, die in Azure Synapse ni
 
   In Azure Synapse können Sie ein ähnliches Ergebnis durch Partitionierungen oder durch die Verwendung anderer Indextypen erzielen.
 
-- **Materialisierte Sichten:** Für Netezza wird empfohlen, dass Benutzer mindestens eine materialisierte Sicht für große Tabellen erstellen, die über viele Spalten verfügen und in denen nur einige dieser Spalten regelmäßig abgefragt werden. Materialisierte Sichten werden automatisch vom System verwaltet, wenn Daten in der Basistabelle aktualisiert werden. 
+- **Materialisierte Sichten:** Für Netezza wird empfohlen, dass Benutzer mindestens eine materialisierte Sicht für große Tabellen erstellen, die über viele Spalten verfügen und in denen nur einige dieser Spalten regelmäßig abgefragt werden. Materialisierte Sichten werden automatisch vom System verwaltet, wenn Daten in der Basistabelle aktualisiert werden.
 
   Microsoft bietet in Azure Synapse aktuell Vorschausupport für materialisierte Sichten mit der gleichen Funktionalität wie Netezza an.
 
@@ -121,11 +121,11 @@ In Netezza werden einige Datenbankobjekte implementiert, die in Azure Synapse ni
 
   Einige Drittanbieter bieten Tools und Dienste an, mit denen Migrationstasks automatisiert werden können, einschließlich der Datentypzuordnung. Wenn in der Netezza-Umgebung bereits ein ETL-Tool von Drittanbietern wie Informatica oder Talend verwendet wird, können Sie damit alle erforderlichen Datentransformationen implementieren.
 
-- **Syntax der SQL-Datenbearbeitungssprache:** Zwischen der Syntax der SQL-Datenbearbeitungssprache von Netezza SQL und Azure Synapse bestehen einige Unterschiede, die Sie beachten sollten. 
+- **Syntax der SQL-Datenbearbeitungssprache:** Zwischen der Syntax der SQL-Datenbearbeitungssprache von Netezza SQL und Azure Synapse bestehen einige Unterschiede, die Sie beachten sollten.
 
   Nachstehend finden Sie eine Übersicht über die wichtigsten Funktionen und die Unterschiede:
 
-  - `STRPOS`: In Netezza gibt die Funktion `STRPOS` die Position einer Teilzeichenfolge innerhalb einer Zeichenfolge zurück. Die entsprechende Funktion in Azure Synapse ist `CHARINDEX`, die Reihenfolge der Argumente ist jedoch umgekehrt. 
+  - `STRPOS`: In Netezza gibt die Funktion `STRPOS` die Position einer Teilzeichenfolge innerhalb einer Zeichenfolge zurück. Die entsprechende Funktion in Azure Synapse ist `CHARINDEX`, die Reihenfolge der Argumente ist jedoch umgekehrt.
 
     In Netezza:
 
@@ -135,7 +135,7 @@ In Netezza werden einige Datenbankobjekte implementiert, die in Azure Synapse ni
 
     `SELECT CHARINDEX('def', 'abcdef') ...`
 
-  - `AGE`: Netezza unterstützt den `AGE`-Operator, um das Intervall zwischen zwei temporalen Werten zu ermitteln, z. B. zwischen Zeitstempeln und Datumsangaben. 
+  - `AGE`: Netezza unterstützt den `AGE`-Operator, um das Intervall zwischen zwei temporalen Werten zu ermitteln, z. B. zwischen Zeitstempeln und Datumsangaben.
   
      Dies ist ein Beispiel aus Netezza:
 
@@ -175,13 +175,13 @@ Berücksichtigen Sie die folgenden Informationen bei der Planung der Metadaten- 
 
 - **Generieren von DDL-Anweisungen (Data Definition Language, Datendefinitionssprache):** Vorhandene `CREATE TABLE`- und `CREATE VIEW`-Skripts in Netezza können bearbeitet werden, um die entsprechenden Definitionen zu erstellen (bei Bedarf mit geänderten Datentypen, wie zuvor beschrieben). Diese Aufgabe umfasst in der Regel das Entfernen oder Ändern von Netezza-spezifischen Klauseln, z. B. `ORGANIZE ON`.
 
-  In Netezza werden die Informationen, die die aktuellen Tabellen- und Sichtdefinitionen angeben, in den Systemkatalogtabellen verwaltet. Systemkatalogtabellen sind die beste Quelle für diese Informationen, weil sie mit hoher Wahrscheinlichkeit auf dem neuesten Stand und vollständig sind. Die benutzerseitig verwaltete Dokumentation ist möglicherweise nicht mit den aktuellen Tabellendefinitionen synchron. 
+  In Netezza werden die Informationen, die die aktuellen Tabellen- und Sichtdefinitionen angeben, in den Systemkatalogtabellen verwaltet. Systemkatalogtabellen sind die beste Quelle für diese Informationen, weil sie mit hoher Wahrscheinlichkeit auf dem neuesten Stand und vollständig sind. Die benutzerseitig verwaltete Dokumentation ist möglicherweise nicht mit den aktuellen Tabellendefinitionen synchron.
   
   Sie können mithilfe eines Hilfsprogramms wie „nz_ddl_table“ in Netezza auf Systemkatalogtabellen zugreifen. Mithilfe dieser Tabellen können Sie `CREATE TABLE`-DDL-Anweisungen generieren, die Sie dann für die entsprechenden Tabellen in Azure Synapse bearbeiten können. Migrations- und ETL-Tools von Drittanbietern verwenden dieselben Kataloginformationen, um dasselbe Ergebnis zu erzielen.
 
 - **Datenextraktion:** Mithilfe von standardmäßig verfügbaren Netezza-Hilfsprogrammen wie „nzsql“ und „nzunload“ sowie mithilfe von externen Tabellen können Sie Rohdaten extrahieren, um diese aus einer vorhandenen Netezza-Tabelle in eine durch Trennzeichen getrennte Flatfile zu migrieren. Komprimieren Sie die Dateien mithilfe von gzip, und nutzen Sie anschließend AzCopy oder einen Azure-Datentransportdienst wie Azure Data Box, um die Dateien in Azure Blob Storage hochzuladen.
 
-  Während einer Migration müssen Daten so effizient wie möglich extrahiert werden. In Bezug auf Netezza wird empfohlen, externe Tabellen zu verwenden, weil dies die schnellste Methode ist. Sie können mehrere Extraktionen parallel ausführen, um den Durchsatz der Datenextraktion zu maximieren. 
+  Während einer Migration müssen Daten so effizient wie möglich extrahiert werden. In Bezug auf Netezza wird empfohlen, externe Tabellen zu verwenden, weil dies die schnellste Methode ist. Sie können mehrere Extraktionen parallel ausführen, um den Durchsatz der Datenextraktion zu maximieren.
   
   Im Folgenden finden Sie ein einfaches Beispiel für die Extraktion einer externen Tabelle:
 
@@ -210,13 +210,13 @@ In Bezug auf die Optimierung bestehen gewisse Unterschiede zwischen den Plattfor
 
    Azure Synapse sieht eine zusätzliche Methode vor, um kleine und große Tabellen in einem Sternschemamodell lokal zu verknüpfen. Dies wird oft als *Verknüpfung zwischen einer Dimensions- und einer Faktentabelle* bezeichnet. Bei diesem Vorgang wird die kleinere Dimensionstabelle auf allen Knoten repliziert. Dies stellt sicher, dass jeder Wert des Verknüpfungsschlüssels für die größere Tabelle eine übereinstimmende Dimensionszeile enthält, die lokal verfügbar ist. Der Mehraufwand für die Replikation der Dimensionstabelle ist relativ gering, sofern die Tabellen nicht groß sind. Andernfalls wäre die Verwendung einer Hashverteilung (wie zuvor beschrieben) vorzuziehen.
 
-- **Datenindizierung:** Azure Synapse bietet verschiedene benutzerdefinierbare Indizierungsoptionen. Diese unterscheiden sich jedoch in der Funktionsweise und der Nutzung von den systemseitig verwalteten Zonenzuordnungen in Netezza. Weitere Informationen zu den Indizierungsoptionen in Azure Synapse finden Sie unter [Indextabellen in einem Azure Synapse-SQL-Pool](https://docs.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-index).
+- **Datenindizierung:** Azure Synapse bietet verschiedene benutzerdefinierbare Indizierungsoptionen. Diese unterscheiden sich jedoch in der Funktionsweise und der Nutzung von den systemseitig verwalteten Zonenzuordnungen in Netezza. Weitere Informationen zu den Indizierungsoptionen in Azure Synapse finden Sie unter [Indextabellen in einem Azure Synapse-SQL-Pool](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-index).
 
    Vorhandene systemseitig verwaltete Zonenzuordnungen in der Netezza-Quellumgebung können einen nützlichen Hinweis auf die aktuelle Verwendungsweise von Daten geben. Außerdem können sie darauf hindeuten, welche Spalten in der Azure Synapse-Umgebung indiziert werden sollten.
 
 - **Datenpartitionierung:** Im Data Warehouse eines Unternehmens können Faktentabellen Milliarden von Datenzeilen enthalten. Die Partitionierung ist eine Methode, um die Wartung und das Abfragen dieser Tabellen zu optimieren. Durch Aufteilen der Tabellen in separate Teile wird die Menge der Daten reduziert, die gleichzeitig verarbeitet werden. Die Partitionierung einer Tabelle wird in der `CREATE TABLE`-Anweisung definiert.
 
-  Für die Partitionierung kann nur ein Feld pro Tabelle verwendet werden. Bei dem für die Partitionierung verwendeten Feld handelt es sich häufig um ein Datumsfeld, da viele Abfragen nach Datum oder nach einem Datumsbereich gefiltert werden. Die Partitionierung einer Tabelle kann nach dem ersten Laden geändert werden. Zu diesem Zweck müssen Sie die Tabelle mit einer neuen Verteilung neu erstellen, die die `CREATE TABLE AS SELECT`-Anweisung verwendet. Eine ausführliche Erläuterung der Partitionierung in Azure Synapse finden Sie unter [Partitionieren von Tabellen in einem Synapse-SQL-Pool](https://docs.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-partition).
+  Für die Partitionierung kann nur ein Feld pro Tabelle verwendet werden. Bei dem für die Partitionierung verwendeten Feld handelt es sich häufig um ein Datumsfeld, da viele Abfragen nach Datum oder nach einem Datumsbereich gefiltert werden. Die Partitionierung einer Tabelle kann nach dem ersten Laden geändert werden. Zu diesem Zweck müssen Sie die Tabelle mit einer neuen Verteilung neu erstellen, die die `CREATE TABLE AS SELECT`-Anweisung verwendet. Eine ausführliche Erläuterung der Partitionierung in Azure Synapse finden Sie unter [Partitionieren von Tabellen in einem Synapse-SQL-Pool](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-partition).
 
 - **PolyBase zum Laden von Daten:** PolyBase ist die effizienteste Methode, um große Datenmengen in ein Warehouse zu laden. Mit PolyBase können Daten auch in parallelen Streams geladen werden.
 

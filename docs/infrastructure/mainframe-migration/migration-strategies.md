@@ -7,12 +7,12 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a693decfa8e2178069b005c129fa30188c577f2c
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: cc968a5434518ada3d809fb8e22bec4c4e0e0dc2
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83398796"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568769"
 ---
 <!-- cSpell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
 
@@ -51,7 +51,7 @@ Im Vergleich dazu bietet Azure SLAs (Service Level Agreements, Vereinbarungen zu
 
 Azure sorgt für zusätzliche Verfügbarkeit durch Replizieren von Daten von mehreren Speichergeräten – entweder lokal oder in anderen geografischen Regionen. Sollte ein Ausfall in Azure auftreten, können Computeressourcen entweder auf lokaler oder auf regionaler Ebene auf die replizierten Daten zugreifen.
 
-Wenn Sie Azure-PaaS-Ressourcen (Platform-as-a-Service) wie [Azure SQL-Datenbank](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) und [Azure Cosmos-Datenbank](https://docs.microsoft.com/azure/cosmos-db/introduction) verwenden, kann Azure automatisch ein Failover ausführen. Bei Verwendung von Azure-IaaS (Infrastructure-as-a-Service) wird das Failover von bestimmten Systemfunktionen ausgeführt, z.B. von Always On-Features, Failoverclusterinstanzen und Verfügbarkeitsgruppen in SQL Server.
+Wenn Sie Azure-PaaS-Ressourcen (Platform-as-a-Service) wie [Azure SQL-Datenbank](/azure/sql-database/sql-database-technical-overview) und [Azure Cosmos-Datenbank](/azure/cosmos-db/introduction) verwenden, kann Azure automatisch ein Failover ausführen. Bei Verwendung von Azure-IaaS (Infrastructure-as-a-Service) wird das Failover von bestimmten Systemfunktionen ausgeführt, z.B. von Always On-Features, Failoverclusterinstanzen und Verfügbarkeitsgruppen in SQL Server.
 
 ## <a name="scalability"></a>Skalierbarkeit
 
@@ -63,7 +63,7 @@ Darüber hinaus bietet eine solche Funktion eng gekoppelte Computeressourcen, di
 
 Kunden mit Mainframesystemen unterhalten in der Regel Standorte für eine Notfallwiederherstellung oder verlassen sich auf einen unabhängigen Mainframeanbieter, um Notfallsituationen schnell zu beseitigen. Die Synchronisierung mit einem Standort für die Notfallwiederherstellung erfolgt häufig über Offlinekopien der Daten. Bei beiden Optionen fallen hohe Kosten an.
 
-Automatisierte Georedundanz ist auch per Mainframekopplung verfügbar. Dieser Ansatz ist jedoch kostspielig und wird in der Regel nur für unternehmenskritische Systeme verwendet. Im Gegensatz dazu bietet Azure kostengünstige Optionen, die sich leicht implementieren lassen, für [Sicherung](https://docs.microsoft.com/azure/backup/backup-overview), [Wiederherstellung](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) und [Redundanz](https://docs.microsoft.com/azure/storage/common/storage-redundancy) auf lokaler oder regionale Ebene oder über Georedundanz.
+Automatisierte Georedundanz ist auch per Mainframekopplung verfügbar. Dieser Ansatz ist jedoch kostspielig und wird in der Regel nur für unternehmenskritische Systeme verwendet. Im Gegensatz dazu bietet Azure kostengünstige Optionen, die sich leicht implementieren lassen, für [Sicherung](/azure/backup/backup-overview), [Wiederherstellung](/azure/site-recovery/site-recovery-overview) und [Redundanz](/azure/storage/common/storage-redundancy) auf lokaler oder regionale Ebene oder über Georedundanz.
 
 ## <a name="storage"></a>Storage
 
@@ -76,7 +76,7 @@ Der physische Speicher in Mainframes kann verschiedene Typen unterteilt werden:
 - **Zentraler Speicher:** Befindet sich direkt auf dem Mainframeprozessor und wird auch als Prozessor- oder echter Speicher bezeichnet.
 - **Zusätzlicher Speicher:** Diese Art Speicher ist getrennt vom Mainframe und wird auch als Auslagerungsspeicher bezeichnet. DASDs sind ein Beispiel hierfür.
 
-Die Cloud bietet eine Reihe von flexiblen, skalierbaren Optionen, und Sie zahlen nur für die Optionen, die Sie tatsächlich benötigen. [Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction) bietet einen massiv skalierbaren Objektspeicher für Datenobjekte, einen Dateisystemdienst für die Cloud, einen zuverlässigen Messagingspeicher und einen NoSQL-Speicher. Für VMs bieten verwaltete und nicht verwaltete Datenträger einen dauerhaften und sicheren Speicher.
+Die Cloud bietet eine Reihe von flexiblen, skalierbaren Optionen, und Sie zahlen nur für die Optionen, die Sie tatsächlich benötigen. [Azure Storage](/azure/storage/common/storage-introduction) bietet einen massiv skalierbaren Objektspeicher für Datenobjekte, einen Dateisystemdienst für die Cloud, einen zuverlässigen Messagingspeicher und einen NoSQL-Speicher. Für VMs bieten verwaltete und nicht verwaltete Datenträger einen dauerhaften und sicheren Speicher.
 
 ## <a name="mainframe-development-and-testing"></a>Entwicklung und Testing auf Mainframesystemen
 

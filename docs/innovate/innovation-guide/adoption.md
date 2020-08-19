@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 4830928bb0b7765ca05a11ceee7c859b2dc2608a
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 8d8e25dfaa7f39eb2c647fbe3a8a7c0f1d3d1fcd
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86478632"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568123"
 ---
 # <a name="prepare-for-customer-feedback"></a>Vorbereiten für Kundenfeedback
 
@@ -25,7 +25,7 @@ Beim Erstellen einer innovativen neuen Lösung geht es nicht darum, dem Benutzer
 - **Quantitative Tests (Testen von Feedback):** Dieses Feedback misst die Aktionen, die wir erwarten.
 - **Qualitative Tests (Kundenfeedback):** Dieses Feedback informiert uns, was diese Metriken aus Sicht des Kunden bedeuten.
 
-Bevor Sie Feedbackschleifen integrieren, benötigen Sie ein freigegebenes Repository für Ihre Lösung. Ein zentralisiertes Repository bietet die Möglichkeit, das gesamte Feedback zu Ihrem Projekt aufzuzeichnen und darauf zu reagieren. [GitHub](https://github.com) ist der zentrale Aufbewahrungsort für Open Source-Software. Dies ist auch eine der am häufigsten verwendeten Plattformen für das Hosting des Quellcoderepositorys für kommerziell entwickelte Anwendungen. Der Artikel zum [Erstellen von GitHub-Repositorys](https://docs.microsoft.com/azure/devops/pipelines/repos/github?view=azure-devops&tabs=yaml) kann Ihnen bei den ersten Schritten mit Ihrem Repository helfen.
+Bevor Sie Feedbackschleifen integrieren, benötigen Sie ein freigegebenes Repository für Ihre Lösung. Ein zentralisiertes Repository bietet die Möglichkeit, das gesamte Feedback zu Ihrem Projekt aufzuzeichnen und darauf zu reagieren. [GitHub](https://github.com) ist der zentrale Aufbewahrungsort für Open Source-Software. Dies ist auch eine der am häufigsten verwendeten Plattformen für das Hosting des Quellcoderepositorys für kommerziell entwickelte Anwendungen. Der Artikel zum [Erstellen von GitHub-Repositorys](/azure/devops/pipelines/repos/github?tabs=yaml&view=azure-devops) kann Ihnen bei den ersten Schritten mit Ihrem Repository helfen.
 
 Jedes der folgenden Tools in Azure kann in Projekte integriert werden, die in GitHub gehostet werden (oder ist mit ihnen kompatibel):
 
@@ -60,9 +60,9 @@ Um die Daten zu Ihren Anwendungen anzuzeigen, navigieren Sie zum [Azure-Portal](
 
 ### <a name="learn-more"></a>Weitere Informationen
 
-- [Einrichten von Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/learn/quick-monitor-portal)
-- [Erste Schritte mit Azure Monitor Application Insights](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-users)
-- [Erstellen eines Telemetriedashboards](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-app-dashboards)
+- [Einrichten von Azure Monitor](/azure/azure-monitor/learn/quick-monitor-portal)
+- [Erste Schritte mit Azure Monitor Application Insights](/azure/azure-monitor/learn/tutorial-users)
+- [Erstellen eines Telemetriedashboards](/azure/azure-monitor/learn/tutorial-app-dashboards)
 
 ## <a name="quantitative-feedback-for-apis"></a>[Quantitatives Feedback für APIs](#tab/Quantitative-APIs)
 
@@ -104,7 +104,7 @@ Um den API Management-Dienst zu öffnen, navigieren Sie zum [Azure-Portal](https
 
 ### <a name="learn-more"></a>Weitere Informationen
 
-- [Verwenden von Azure Monitor zum Abrufen von Feedback zu APIs](https://docs.microsoft.com/azure/api-management/api-management-howto-use-azure-monitor)
+- [Verwenden von Azure Monitor zum Abrufen von Feedback zu APIs](/azure/api-management/api-management-howto-use-azure-monitor)
 
 ## <a name="qualitative-feedback"></a>[Qualitatives Feedback](#tab/Qualitative)
 
@@ -114,7 +114,7 @@ Feedback wird in Form von User Storys im Backlog (oder Board) aufgezeichnet. Dor
 
 ### <a name="action"></a>Aktion
 
-Azure Boards und Azure Pipelines erfordern ein Portal, das von GitHub und Azure getrennt ist. Steigen Sie in [Azure DevOps Services](https://docs.microsoft.com/azure/devops/user-guide/what-is-azure-devops) ein.
+Azure Boards und Azure Pipelines erfordern ein Portal, das von GitHub und Azure getrennt ist. Steigen Sie in [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops) ein.
 
 ::: zone-end
 
@@ -140,8 +140,8 @@ Zum Erstellen eines DevOps-Projekts gehen Sie folgendermaßen vor:
 
 Diese Artikel helfen Ihnen, Feedback zu zentralisieren und zu verwalten, indem Sie Azure Boards zusammen mit GitHub verwenden:
 
-- [Erste Schritte mit Azure Boards](https://docs.microsoft.com/azure/devops/boards/get-started/?view=azure-devops)
-- [Azure Boards und GitHub](https://docs.microsoft.com/azure/devops/boards/github?view=azure-devops)
+- [Erste Schritte mit Azure Boards](/azure/devops/boards/get-started/?view=azure-devops)
+- [Azure Boards und GitHub](/azure/devops/boards/github?view=azure-devops)
 
 ## <a name="close-the-loop-with-pipelines"></a>[Schließen der Schleife mit Pipelines](#tab/pipelines)
 
@@ -175,5 +175,5 @@ Um Ihre Anwendungen in App Service anzuzeigen, wechseln Sie zum [Azure-Portal](h
 
 Beginnen Sie mit dem Erstellen Ihrer Bereitstellungspipelines:
 
-- [Erstellen Ihrer ersten Pipeline](https://docs.microsoft.com/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=tfs-2018-2)
-- [`GitHub Release`-Aufgaben](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/github-release?view=azure-devops)
+- [Erstellen Ihrer ersten Pipeline](/azure/devops/pipelines/create-first-pipeline?tabs=tfs-2018-2&view=azure-devops)
+- [`GitHub Release`-Aufgaben](/azure/devops/pipelines/tasks/utility/github-release?view=azure-devops)

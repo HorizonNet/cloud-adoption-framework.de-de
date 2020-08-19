@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: dbb5a0385c1cca951b6525ffa0c989c507afdf39
-ms.sourcegitcommit: 163e703d9cbf90b26d96087c836a9cbd94fc7e35
+ms.openlocfilehash: 92ef126050899ec2c888f55ef412efc2f79f897d
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87963328"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88193939"
 ---
 <!-- cSpell:ignore DDLs Attunity "Attunity Replicate" "Attunity Visibility" Inmon Denodo Teradata Netezza Wherescape DMVs multinode equi Datometry -->
 
@@ -47,7 +47,7 @@ Die Größe der unkomprimierten Rohdaten in den zu migrierenden Tabellen ist ein
 
 Die neue Zielplattform enthält zudem einen Komprimierungsfaktor und Indizierungsaufwand. Diese unterscheiden sich jedoch wahrscheinlich vom Quellsystem. Im Preis für Azure Synapse Analytics-Speicher sind auch Momentaufnahmesicherungen für sieben Tage enthalten. Dies kann sich auf die Gesamtkosten für den benötigten Speicher im Vergleich zur vorhandenen Umgebung auswirken.
 
-Sie können die Leistungsoptimierung für das Datenmodell bis zu einem späten Zeitpunkt des Migrationsvorgangs verzögern und so planen, dass sie erst durchgeführt wird, wenn echte Datenvolumes im Data Warehouse vorhanden sind. Es wird jedoch empfohlen, einige Optionen für die Leistungsoptimierung schon vorher zu implementieren. 
+Sie können die Leistungsoptimierung für das Datenmodell bis zu einem späten Zeitpunkt des Migrationsvorgangs verzögern und so planen, dass sie erst durchgeführt wird, wenn echte Datenvolumes im Data Warehouse vorhanden sind. Es wird jedoch empfohlen, einige Optionen für die Leistungsoptimierung schon vorher zu implementieren.
 
 Beispielsweise ist es in Azure Synapse Analytics sinnvoll, kleine Dimensionstabellen als replizierte Tabellen und große Faktentabellen als gruppierte Columnstore-Indizes zu definieren. Ebenso geben Indizes, die in der Quellumgebung definiert sind, einen guten Hinweis darauf, welche Spalten von der Indizierung in der neuen Umgebung profitieren können. Wenn Sie diese Informationen beim anfänglichen Definieren der Tabellen vor dem Laden verwenden, sparen Sie später im Prozess Zeit.
 
@@ -58,7 +58,7 @@ Möglicherweise kann auch das vorhandene Data Warehouse vor der Migration verein
 - Löschen oder archivieren Sie nicht verwendete Tabellen vor der Migration, um eine Migration nicht verwendeter Daten zu vermeiden. Durch das Archivieren in Azure Blob Storage und das Definieren der Daten als externe Tabelle können die Daten zu geringeren Kosten verfügbar bleiben.
 - Konvertieren Sie physische Data Marts mithilfe von Datenvirtualisierungssoftware in virtuelle Data Marts, um den Migrationsumfang zu verringern. Diese Konvertierung verbessert auch die Agilität und senkt die Gesamtbetriebskosten. Sie können diese als Modernisierungsmaßnahme während der Migration betrachten.
 
-Ein Ziel des Migrationsdurchlaufs kann auch die Modernisierung des Warehouse sein, indem das zugrunde liegende Datenmodell geändert wird. Ein Beispiel hierfür ist der Wechsel von einem Inmon-Datenmodell zu einem Datentresoransatz. Sie sollten darüber während der Vorbereitungsphase entscheiden und eine Strategie für den Übergang zum Migrationsplan etablieren. 
+Ein Ziel des Migrationsdurchlaufs kann auch die Modernisierung des Warehouse sein, indem das zugrunde liegende Datenmodell geändert wird. Ein Beispiel hierfür ist der Wechsel von einem Inmon-Datenmodell zu einem Datentresoransatz. Sie sollten darüber während der Vorbereitungsphase entscheiden und eine Strategie für den Übergang zum Migrationsplan etablieren.
 
 In diesem Szenario wird empfohlen, zuerst das Datenmodell auf die neue Plattform zu migrieren und dann in Azure Synapse Analytics zum neuen Modell zu wechseln. Verwenden Sie die Skalierbarkeits- und Leistungsfeatures der Plattform, um die Transformation auszuführen, ohne das Quellsystem zu beeinträchtigen.
 
@@ -83,7 +83,7 @@ Es stehen außerdem Produkte und Dienste von Microsoft-Partnern zur Verfügung, 
 
 ### <a name="data-marts-physical-or-virtual"></a>Data Marts: physisch oder virtuell
 
-Organisationen mit älteren Data-Warehouse-Umgebungen erstellen häufig Data Marts, die den Abteilungen oder Geschäftsfunktionen gute Ad-hoc-Self-Service-Abfragen und Berichtsleistung ermöglichen. Ein Data Mart besteht in der Regel aus einer Teilmenge des Data Warehouse und enthält aggregierte Versionen der ursprünglichen Daten. Da es sich meistens um ein dimensionales Datenmodell handelt, sind benutzerfreundliche Tools wie Tableau, MicroStrategy und Microsoft Power BI enthalten, um Daten einfach und schnell abzufragen. 
+Organisationen mit älteren Data-Warehouse-Umgebungen erstellen häufig Data Marts, die den Abteilungen oder Geschäftsfunktionen gute Ad-hoc-Self-Service-Abfragen und Berichtsleistung ermöglichen. Ein Data Mart besteht in der Regel aus einer Teilmenge des Data Warehouse und enthält aggregierte Versionen der ursprünglichen Daten. Da es sich meistens um ein dimensionales Datenmodell handelt, sind benutzerfreundliche Tools wie Tableau, MicroStrategy und Microsoft Power BI enthalten, um Daten einfach und schnell abzufragen.
 
 Eine Verwendung von Data Marts besteht darin, die Daten in einer nutzbaren Form verfügbar zu machen, selbst wenn das zugrunde liegende Warehouse-Datenmodell z. B. ein Datentresor ist. Dieser Ansatz wird auch als Modell mit drei Ebenen bezeichnet.
 
@@ -94,7 +94,7 @@ Wenn diese Data Marts als physische Tabellen implementiert werden, sind zusätzl
 Mit der Einführung relativ kostengünstiger skalierbarer MPP-Architekturen (Massively Parallel Processing) wie Azure Synapse Analytics und deren inhärenten Leistungsfeatures können Sie Data-Mart-Funktionen ggf. bereitstellen, ohne den Mart als physische Tabellen zu instanziieren. Nutzen Sie eine der folgenden Methoden, um die Data Marts im Prinzip zu virtualisieren:
 
 - SQL-Sichten im primären Data Warehouse
-- Eine Virtualisierungsschicht, die Features wie Azure Synapse Analytics-Sichten oder Drittanbieterprodukte für die Virtualisierung wie Denodo verwendet 
+- Eine Virtualisierungsschicht, die Features wie Azure Synapse Analytics-Sichten oder Drittanbieterprodukte für die Virtualisierung wie Denodo verwendet
 
 Durch diesen Ansatz wird der Bedarf für zusätzlichen Speicher oder zusätzliche Aggregationsverarbeitungen reduziert oder entfällt. Zudem müssen insgesamt weniger Datenbankobjekte migriert werden.
 
@@ -175,7 +175,7 @@ Je nach Quellumgebung können bei der Datenmigration einige Probleme auftreten:
 - Es können geringfügige Unterschiede bestehen, wie `NULL`-Daten in unterschiedlichen Datenbankprodukten verarbeitet werden. Beispiele hierfür sind die Sortierreihenfolge und die Verarbeitung leerer Zeichenfolgen.
 - `DATE`-, `TIME`-, `INTERVAL`- und `TIME ZONE`-Daten und zugehörige Funktionen können von Produkt zu Produkt stark variieren.
 
-Testen Sie gründlich, ob diese zu den gewünschten Ergebnissen in der Zielumgebung führen. Beim Migrationsdurchlauf können Fehler oder falsche Ergebnisse aufgedeckt werden, die derzeit Teil des vorhandenen Quellsystems sind. Der Migrationsprozess bietet eine gute Gelegenheit, Anomalien zu korrigieren. 
+Testen Sie gründlich, ob diese zu den gewünschten Ergebnissen in der Zielumgebung führen. Beim Migrationsdurchlauf können Fehler oder falsche Ergebnisse aufgedeckt werden, die derzeit Teil des vorhandenen Quellsystems sind. Der Migrationsprozess bietet eine gute Gelegenheit, Anomalien zu korrigieren.
 
 #### <a name="best-practices-for-defining-columns-in-azure-synapse-analytics"></a>Bewährte Methoden für das Definieren von Spalten in Azure Synapse Analytics
 
@@ -249,7 +249,7 @@ Die Roundrobin-Tabellenverteilung ist die Standardoption. Hierbei werden die Dat
 
 Das System weist die Zeile einem Hashbucket zu – einem Task, der auf einem Hashalgorithmus basiert, der auf einen benutzerdefinierten Schlüssel (wie `CUSTOMER_ID` im vorherigen Beispiel) angewendet wurde. Der Bucket wird dann einem bestimmten Knoten zugewiesen, und alle Datenzeilen, die auf denselben Wert hashverteilt sind, werden demselben Verarbeitungsknoten zugeordnet.
 
-Diese Methode eignet sich für große Tabellen, die häufig mithilfe eines Schlüssels verknüpft oder aggregiert werden. Bei anderen großen Tabellen, die verknüpft werden sollen, sollte nach Möglichkeit ein Hash für denselben Schlüssel verwendet werden. Wenn mehrere Kandidaten für den Hashschlüssel vorhanden sind, wählen Sie den am häufigsten verknüpften aus. 
+Diese Methode eignet sich für große Tabellen, die häufig mithilfe eines Schlüssels verknüpft oder aggregiert werden. Bei anderen großen Tabellen, die verknüpft werden sollen, sollte nach Möglichkeit ein Hash für denselben Schlüssel verwendet werden. Wenn mehrere Kandidaten für den Hashschlüssel vorhanden sind, wählen Sie den am häufigsten verknüpften aus.
 
 Die Hashspalte sollte keine NULL-Werte enthalten und ist in der Regel keine Datumsspalte, da bei vielen Abfragen nach Datum gefiltert wird. Das Hashing ist in der Regel effizienter, wenn der zu hashende Schlüssel ein Integerwert statt `CHAR` oder `VARCHAR` ist. Vermeiden Sie außerdem Schlüssel mit einem stark verzerrten Wertebereich, z. B. eine geringe Anzahl von Schlüsselwerten, die einen hohen Prozentsatz der Datenzeilen darstellen.
 
@@ -277,7 +277,7 @@ Gruppierte Columnstore-Indizes sind die Standardindizierungsoption in Azure Syna
 
 #### <a name="clustered-index"></a>Gruppierter Index
 
-Wenn es erforderlich ist, eine einzelne Zeile oder eine kleine Anzahl von Zeilen regelmäßig aus einer großen Tabelle auf Grundlage einer starken Filterbedingung abzurufen, kann ein gruppierter Index effizienter als ein gruppierter Columnstore-Index sein. Pro Tabelle ist nur ein gruppierter Index zulässig. 
+Wenn es erforderlich ist, eine einzelne Zeile oder eine kleine Anzahl von Zeilen regelmäßig aus einer großen Tabelle auf Grundlage einer starken Filterbedingung abzurufen, kann ein gruppierter Index effizienter als ein gruppierter Columnstore-Index sein. Pro Tabelle ist nur ein gruppierter Index zulässig.
 
 #### <a name="non-clustered-index"></a>Nicht gruppierter Index
 
@@ -303,7 +303,7 @@ In Data-Warehouse-Umgebungen ist es üblich, ein rollierendes Fenster detaillier
 
 ### <a name="statistics"></a>Statistik
 
-Wenn eine Abfrage an Azure Synapse Analytics übermittelt wird, wird sie zuerst vom Abfrageoptimierer verarbeitet. Der Optimierer bestimmt die besten internen Methoden, um die Abfrage effizient auszuführen. 
+Wenn eine Abfrage an Azure Synapse Analytics übermittelt wird, wird sie zuerst vom Abfrageoptimierer verarbeitet. Der Optimierer bestimmt die besten internen Methoden, um die Abfrage effizient auszuführen.
 
 Zudem vergleicht der Optimierer die verschiedenen Abfrageausführungspläne, die auf Grundlage eines kostenbasierten Algorithmus verfügbar sind. Die Genauigkeit der Kostenschätzungen hängt von der verfügbaren Statistik ab. Sie sollten deshalb dafür sorgen, dass die Statistiken auf dem neuesten Stand sind.
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8eab8688ee5afdc37ed4f740f4ebdc2215d4abb6
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 9d89f3a9330ed81ba6644be4d5ce3101775fbe91
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450219"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573580"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Sicherheitsbaseline“
 
@@ -101,11 +101,11 @@ In diesem Abschnitt wird der Governance-MVP-Entwurf so geändert, dass er neue A
 
 Die neuen bewährten Methoden lassen sich in zwei Kategorien unterteilen: Unternehmens-IT (Hub) und Cloudeinführung (Spoke).
 
-**Einrichten eines Hub-and-Spoke-Abonnements für die Unternehmens-IT zum Zentralisieren der Sicherheitsbaseline:** In dieser bewährten Methode wird die vorhandene Governancekapazität von einer [Hub-and-Spoke-Topologie mit Shared Services](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services) umschlossen, mit einigen wichtigen Ergänzungen des Cloudgovernanceteams.
+**Einrichten eines Hub-and-Spoke-Abonnements für die Unternehmens-IT zum Zentralisieren der Sicherheitsbaseline:** In dieser bewährten Methode wird die vorhandene Governancekapazität von einer [Hub-and-Spoke-Topologie mit Shared Services](/azure/architecture/reference-architectures/hybrid-networking/shared-services) umschlossen, mit einigen wichtigen Ergänzungen des Cloudgovernanceteams.
 
 1. Azure DevOps-Repository. Erstellen Sie in Azure DevOps ein Repository zur Speicherung und Versionsverwaltung für alle relevanten Azure Resource Manager-Vorlagen und Skriptkonfigurationen.
 2. Hub-and-Spoke-Vorlage:
-    1. Die Anleitung in der [Hub-and-Spoke-Topologie mit Shared Services](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services) kann zum Generieren von Resource Manager-Vorlagen für die Ressourcen verwendet werden, die in einem Unternehmens-IT-Hub erforderlich sind.
+    1. Die Anleitung in der [Hub-and-Spoke-Topologie mit Shared Services](/azure/architecture/reference-architectures/hybrid-networking/shared-services) kann zum Generieren von Resource Manager-Vorlagen für die Ressourcen verwendet werden, die in einem Unternehmens-IT-Hub erforderlich sind.
     2. Mit diesen Vorlagen kann diese Struktur im Rahmen einer zentralen Governancestrategie wiederholbar gemacht werden.
     3. Zusätzlich zur aktuellen Referenzarchitektur wird empfohlen, eine NSG-Vorlage zu erstellen, die alle Anforderungen zu Portsperren oder Zulassungslisten für das virtuelle Netzwerk erfasst, das die Firewall hosten soll. Diese Netzwerksicherheitsgruppe unterscheidet sich von früheren Gruppen, da sie die erste Netzwerksicherheitsgruppe ist, die öffentlichen Datenverkehr in ein virtuelles Netzwerk zulässt.
 3. Erstellen von Azure-Richtlinien. Erstellen Sie eine Richtlinie namens `hub NSG enforcement`, um die Konfiguration der Netzwerksicherheitsgruppe zu erzwingen, die einem in diesem Abonnement erstellten virtuellen Netzwerk zugewiesen ist. Wenden Sie die integrierten Richtlinien für die Gastkonfiguration wie folgt an:
@@ -130,11 +130,11 @@ Die neuen bewährten Methoden lassen sich in zwei Kategorien unterteilen: Untern
 In früheren iterativen Änderungen der bewährten Methoden haben wir Netzwerksicherheitsgruppen so definiert, dass sie den öffentlichen Verkehr blockieren und den internen Verkehr zulassen. Darüber hinaus wurden durch die Azure-Blaupause vorübergehend DMZ- und Active Directory-Funktionen erstellt. Im Rahmen dieser Iteration werden wir diese Ressourcen ein wenig anpassen und so eine neue Version der Azure-Blaupause erstellen.
 
 1. Vorlage zum Netzwerkpeering. Mit dieser Vorlage wird das virtuelle Netzwerk in den einzelnen Abonnements mit dem virtuellen Hub-Netzwerk im Unternehmens-IT-Abonnement gekoppelt.
-    1. Die Referenzarchitektur aus dem vorherigen Abschnitt ([Hub-and-Spoke-Topologie mit Shared Services](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)) generierte eine Resource Manager-Vorlage für das Aktivieren des Peerings virtueller Netzwerke.
+    1. Die Referenzarchitektur aus dem vorherigen Abschnitt ([Hub-and-Spoke-Topologie mit Shared Services](/azure/architecture/reference-architectures/hybrid-networking/shared-services)) generierte eine Resource Manager-Vorlage für das Aktivieren des Peerings virtueller Netzwerke.
     2. Diese Vorlage kann als Anleitung zum Ändern der DMZ-Vorlage aus der vorherigen Governanceiteration verwendet werden.
     3. Jetzt fügen wir dem virtuellen DMZ-Netzwerk, das zuvor per VPN mit dem lokalen Edge-Gerät verbunden war, das Peering virtueller Netzwerke hinzu.
     4. Sie sollten das VPN außerdem aus dieser Vorlage entfernen und sicherstellen, dass kein Datenverkehr direkt an das lokale Rechenzentrum weitergeleitet wird, ohne das Unternehmens-IT-Abonnement und die Firewalllösung zu durchlaufen. Dieses VPN kann auch als Failoververbindung im Fall eines ExpressRoute-Verbindungsausfalls festgelegt werden.
-    5. Azure Automation erfordert zusätzliche [Netzwerkkonfiguration](https://docs.microsoft.com/azure/automation/automation-dsc-overview#network-planning), damit DSC auf gehostete VMs angewendet werden kann.
+    5. Azure Automation erfordert zusätzliche [Netzwerkkonfiguration](/azure/automation/automation-dsc-overview#network-planning), damit DSC auf gehostete VMs angewendet werden kann.
 2. Ändern Sie die Netzwerksicherheitsgruppe. Blockieren Sie den gesamten öffentlichen **und** den direkten lokalen Datenverkehr in der Netzwerksicherheitsgruppe. Der einzige eingehende Datenverkehr sollte über den virtuellen Netzwerkpeer im Unternehmens-IT-Abonnement erfolgen.
     1. In der vorherigen Iteration wurde eine Netzwerksicherheitsgruppe erstellt, die den gesamten öffentlichen Datenverkehr blockiert und den gesamten internen Datenverkehr zulässt. Jetzt möchten wir diese Netzwerksicherheitsgruppe etwas verschieben.
     2. In der neuen Konfiguration der Netzwerksicherheitsgruppe wird der gesamte öffentliche Datenverkehr sowie der gesamte Datenverkehr aus dem lokalen Datencenter blockiert.

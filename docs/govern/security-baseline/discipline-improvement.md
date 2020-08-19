@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9fe2d91971e13ded533747e079fc52063feaf70d
-ms.sourcegitcommit: bd9872320b71245d4e9a359823be685e0f4047c5
+ms.openlocfilehash: f240ca121f52d08d1a666c7a5f0ee5f396779c7c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "83862244"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569007"
 ---
 # <a name="security-baseline-discipline-improvement"></a>Verbesserung der Disziplin „Sicherheitsbaseline“
 
@@ -68,7 +68,7 @@ Für die erfolgreiche Migration einer Umgebung muss eine Reihe von technischen u
 - Bestimmen Sie die [Verschlüsselungsstrategie](../../decision-guides/encryption/index.md) Ihrer Organisation für in der Cloud gehostete Daten.
 - Bewerten Sie die [Identitätsstrategie](../../decision-guides/identity/index.md) Ihrer Cloudbereitstellung. Bestimmen Sie, wie Ihre cloudbasierte Identitätslösung mit lokalen Identitätsanbietern koexistieren oder in diese integriert werden kann.
 - Bestimmen Sie Richtlinien für die Netzwerkgrenze für Ihren [Software Defined Networking (SDN)](../../decision-guides/software-defined-network/index.md)-Entwurf, um sichere virtualisierte Netzwerkfunktionen zu gewährleisten.
-- Bewerten Sie die Richtlinien für den [Zugriff mit den geringsten Rechten](https://docs.microsoft.com/azure/active-directory/users-groups-roles/roles-delegate-by-task) Ihrer Organisation, und verwenden Sie aufgabenbasierte Rollen, um den Zugriff auf bestimmte Ressourcen zu ermöglichen.
+- Bewerten Sie die Richtlinien für den [Zugriff mit den geringsten Rechten](/azure/active-directory/users-groups-roles/roles-delegate-by-task) Ihrer Organisation, und verwenden Sie aufgabenbasierte Rollen, um den Zugriff auf bestimmte Ressourcen zu ermöglichen.
 - Wenden Sie Sicherheits- und Überwachungsmechanismen auf alle Clouddienste und virtuellen Computer an.
 - Automatisieren Sie [Sicherheitsrichtlinien](../../decision-guides/policy-enforcement/index.md), wo dies möglich ist.
 - Überprüfen Sie Ihre Richtlinie für die Sicherheitsbaseline, und bestimmen Sie, ob Sie Ihre Pläne gemäß den Anleitungen für Best Practices, wie sie z. B. im [Security Development Lifecycle](https://www.microsoft.com/sdl) angegeben sind, ändern müssen.
@@ -117,5 +117,5 @@ Nachdem Sie nun das Konzept von Cloud-Sicherheitsgovernance verstanden haben, er
 
 > [!div class="nextstepaction"]
 > [Informationen zum Sicherheitsleitfaden für Azure](./azure-security-guidance.md)
-> [Einführung in Azure Security](https://docs.microsoft.com/azure/security/fundamentals/overview)
+> [Einführung in Azure Security](/azure/security/fundamentals/overview)
 > [Informationen zur Protokollierung, Berichterstellung und Überwachung](../../decision-guides/logging-and-reporting/index.md)

@@ -7,12 +7,12 @@ ms.date: 03/23/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e12898f47ce75f6a42ba7f0379e197e266271588
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f9503d5d54605f2f02491747e414c19dbaa07519
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223438"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572968"
 ---
 # <a name="get-started-on-a-skills-readiness-path"></a>Erste Schritte mit dem Pfad für die Qualifikationsbereitschaft
 
@@ -45,10 +45,10 @@ Nachfolgend finden Sie einige Beispiele für angepasste Lernpfade auf Microsoft 
 
 <!-- docsTest:ignore "on premises" -->
 
-[Weiterentwickeln Ihrer DevOps-Methoden](https://docs.microsoft.com/learn/paths/evolve-your-devops-practices): DevOps vereint Personen, Prozesse und Produkte, um wertvolle Continuous Delivery für Ihre Endbenutzer zu ermöglichen. Azure DevOps umfasst eine Reihe von Diensten, die Ihnen die erforderlichen Tools für diese Aufgaben zur Verfügung stellen. Mit Azure DevOps können Sie jede beliebige Anwendung in der Cloud oder lokal erstellen, testen und bereitstellen.
+[Weiterentwickeln Ihrer DevOps-Methoden](/learn/paths/evolve-your-devops-practices): DevOps vereint Personen, Prozesse und Produkte, um wertvolle Continuous Delivery für Ihre Endbenutzer zu ermöglichen. Azure DevOps umfasst eine Reihe von Diensten, die Ihnen die erforderlichen Tools für diese Aufgaben zur Verfügung stellen. Mit Azure DevOps können Sie jede beliebige Anwendung in der Cloud oder lokal erstellen, testen und bereitstellen.
 
-[Azure für Data Engineers](https://docs.microsoft.com/learn/paths/azure-for-the-data-engineer): Erfahren Sie, wie sich die Welt der Daten entwickelt hat und wie die Einführung von Cloudtechnologien Unternehmen neue Möglichkeiten eröffnet. Sie lernen die verschiedenen verfügbaren Datenplattformtechnologien kennen und erfahren, wie ein Data Engineer diese Technologien zum Vorteil einer Organisation nutzen kann.
+[Azure für Data Engineers](/learn/paths/azure-for-the-data-engineer): Erfahren Sie, wie sich die Welt der Daten entwickelt hat und wie die Einführung von Cloudtechnologien Unternehmen neue Möglichkeiten eröffnet. Sie lernen die verschiedenen verfügbaren Datenplattformtechnologien kennen und erfahren, wie ein Data Engineer diese Technologien zum Vorteil einer Organisation nutzen kann.
 
 ## <a name="learn-more"></a>Weitere Informationen
 
-Weitere Lernpfade finden Sie im [Microsoft Learn-Katalog](https://docs.microsoft.com/learn/browse). Verwenden Sie den Filter „Rollen“, um Lernpfade an Ihrer Rolle auszurichten.
+Weitere Lernpfade finden Sie im [Microsoft Learn-Katalog](/learn/browse). Verwenden Sie den Filter „Rollen“, um Lernpfade an Ihrer Rolle auszurichten.

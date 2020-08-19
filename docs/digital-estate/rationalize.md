@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: a167cce023fc4d69a2099af7cfa305a14393e446
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: e2a2016d07e95503cc73353a81065dc72ef845a5
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83753278"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88278484"
 ---
 # <a name="rationalize-the-digital-estate"></a>Rationalisieren der digitalen Ressourcen
 
@@ -27,9 +27,9 @@ Die Rationalisierung ist leicht verständlich, wenn Sie sich den herkömmlichen 
 
 **Quantitative Analyse:** In der Entscheidungsstruktur bilden quantitative Fragen die Grundlage der ersten Entscheidungsebene. Häufige Fragen umfassen Folgendes:
 
-    - Wird die Ressource derzeit genutzt?
-    - Wenn ja, ist sie optimiert, und hat sie die richtige Größe?
-    - Welche Abhängigkeiten bestehen zwischen Ressourcen? Diese Fragen sind für die Klassifizierung des Bestands von entscheidender Bedeutung.
+- Wird die Ressource derzeit genutzt?
+- Wenn ja, ist sie optimiert, und hat sie die richtige Größe?
+- Welche Abhängigkeiten bestehen zwischen Ressourcen? Diese Fragen sind für die Klassifizierung des Bestands von entscheidender Bedeutung.
 
 **Qualitative Analyse:** Für die nächsten Entscheidungen wird menschliche Intelligenz in Form einer qualitativen Analyse benötigt. Oft gelten die hier gestellten Fragen nur speziell für die Lösung und können nur von Beteiligten des Unternehmens und Hauptbenutzern beantwortet werden. Diese Entscheidungen verzögern den Prozess normalerweise, wodurch die Dinge erheblich verlangsamt werden. Bei dieser Analyse werden in der Regel 40 bis 80 Vollzeitmitarbeiter-Stunden pro Anwendung verbraucht.
 

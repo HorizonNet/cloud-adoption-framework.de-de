@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7a0ce99165ab62fbf40e36feaf9343f39f984485
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 6341f2e227b24416000479066e63a5ebf136927c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86449036"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568072"
 ---
 # <a name="empower-adoption"></a>Unterstützen der Einführung
 
@@ -61,7 +61,7 @@ Azure DevOps bietet erstklassige Tools für jeden Entwickler. Mit Azure-Entwickl
 
 ::: zone target="docs"
 
-**Zur [Azure DevOps-Dokumentation](https://docs.microsoft.com/azure/devops/user-guide/?view=azure-devops)**
+**Zur [Azure DevOps-Dokumentation](/azure/devops/user-guide/?view=azure-devops)**
 
 ::: zone-end
 
@@ -101,7 +101,7 @@ Für Innovationen verwenden viele Entwickler Open-Source-Code. 80 bis 90 Prozent
 ### <a name="learn-more"></a>Weitere Informationen
 
 - [Open-Source in Azure](https://azure.microsoft.com/overview/choose-azure-opensource)
-- [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-overview)
+- [Microsoft Teams](/MicrosoftTeams/teams-overview)
 
 ## <a name="innovation-characteristics"></a>[Innovationsmerkmale](#tab/Characteristics)
 
@@ -135,8 +135,8 @@ Spieleentwicklung ist ein Beispiel für eine Branche, die schon heute auf LiveOp
 
 ### <a name="azure-playfab"></a>Azure PlayFab
 
-[Azure PlayFab](https://docs.microsoft.com/gaming/playfab/what-is-playfab) ist eine umfassende Back-End-Plattform für Livespiele und ein Beispiel für eine führende LiveOps-Anwendungsplattform. Mit Azure PlayFab können Sie Ihren Code fortlaufend überwachen, Echtzeitanalysen nutzen und Echtzeitupdates veröffentlichen, um Ihre Anwendungen zu optimieren und die Monetarisierung zu steigern. Das Ziel von PlayFab ist es, die intelligente Cloud für Spiele bereitzustellen und Entwickler in die Lage zu versetzen, ihre Spieler besser einzubeziehen, zu binden und zu monetarisieren.
+[Azure PlayFab](/gaming/playfab/what-is-playfab) ist eine umfassende Back-End-Plattform für Livespiele und ein Beispiel für eine führende LiveOps-Anwendungsplattform. Mit Azure PlayFab können Sie Ihren Code fortlaufend überwachen, Echtzeitanalysen nutzen und Echtzeitupdates veröffentlichen, um Ihre Anwendungen zu optimieren und die Monetarisierung zu steigern. Das Ziel von PlayFab ist es, die intelligente Cloud für Spiele bereitzustellen und Entwickler in die Lage zu versetzen, ihre Spieler besser einzubeziehen, zu binden und zu monetarisieren.
 
 PlayFab bietet differenzierte, margenstärkere LiveOps-Tools und -Dienste, um die Rentabilität zu steigern und die Lebensdauer der Spiele zu verlängern. PlayFab ist vollständig geräte- und plattformunabhängig und kann leicht in soziale Netzwerke von Identitätsanbietern wie Facebook oder Steam, Store-Plattformen zum Orchestrieren des Handels und Geräteplattformen wie iOS, Android, Xbox und PlayStation integriert werden. Der Azure-Datenbestand ermöglicht es PlayFab, intelligente Dienste bereitzustellen, die unseren Kunden helfen, bessere Spiele zu erstellen und intelligentere Entscheidungen zu treffen, Spieler zu gewinnen und zu halten und schneller zu lernen, indem mehr Experimente durchgeführt und schneller wiederholt werden.
 
-**Navigieren zur [Dokumentation für Azure PlayFab](https://docs.microsoft.com/gaming/playfab)**
+**Navigieren zur [Dokumentation für Azure PlayFab](/gaming/playfab)**

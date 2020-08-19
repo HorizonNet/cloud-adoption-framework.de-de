@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e22a33e3de09c3e1dfb9f4adc8bfed023ea1b821
-ms.sourcegitcommit: 580a6f66a0d0f3f5b755c68d757a84b2351a432f
+ms.openlocfilehash: 5f8b0d2a1f834b82adf47ef7f965315caf8ae1b8
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87473130"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567766"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc OSTICKETWEB OSTICKETMYSQL osTicket contosoosticket trafficmanager InnoDB binlog DBHOST DBUSER CNAME -->
 
@@ -88,8 +88,8 @@ Contoso schließt den Migrationsprozess wie folgt ab:
 | --- | --- | --- |
 | [Azure App Service](https://azure.microsoft.com/services/app-service) | Der Dienst wird für die Ausführung und Skalierung von Anwendungen mit dem Azure-Platform-as-a-Service-Dienst (PaaS) für Websites genutzt. | Der Preis richtet sich nach der Größe der Instanzen und den benötigten Features. [Weitere Informationen](https://azure.microsoft.com/pricing/details/app-service/windows) |
 | [Azure Traffic Manager](https://azure.microsoft.com/services/traffic-manager) | Ein Lastenausgleichsmodul, das Domain Name System (DNS) verwendet, um Benutzer zu Azure oder externen Websites und Diensten zu leiten | Der Preis richtet sich nach der Anzahl der empfangenen DNS-Abfragen und der Anzahl der überwachten Endpunkte. | [Weitere Informationen](https://azure.microsoft.com/pricing/details/traffic-manager) |
-| [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Azure Database Migration Service ermöglicht die nahtlose Migration von mehreren Datenbankquellen zu Azure-Datenplattformen bei minimaler Ausfallzeit. | Informieren Sie sich über die [unterstützten Regionen](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability) und die [Preise für den Database Migration Service](https://azure.microsoft.com/pricing/details/database-migration). |
-| [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql) | Die Datenbank basiert auf der Open-Source-MySQL-Datenbank-Engine. Sie stellt eine vollständig verwaltete, für Unternehmen geeignete MySQL Community-Datenbank für die Entwicklung und Bereitstellung von Anwendungen bereit. | Der Preis richtet sich nach den Compute-, Speicher- und Sicherungsanforderungen. [Weitere Informationen](https://azure.microsoft.com/pricing/details/mysql) |
+| [Azure Database Migration Service](/azure/dms/dms-overview) | Azure Database Migration Service ermöglicht die nahtlose Migration von mehreren Datenbankquellen zu Azure-Datenplattformen bei minimaler Ausfallzeit. | Informieren Sie sich über die [unterstützten Regionen](/azure/dms/dms-overview#regional-availability) und die [Preise für den Database Migration Service](https://azure.microsoft.com/pricing/details/database-migration). |
+| [Azure Database for MySQL](/azure/mysql) | Die Datenbank basiert auf der Open-Source-MySQL-Datenbank-Engine. Sie stellt eine vollständig verwaltete, für Unternehmen geeignete MySQL Community-Datenbank für die Entwicklung und Bereitstellung von Anwendungen bereit. | Der Preis richtet sich nach den Compute-, Speicher- und Sicherungsanforderungen. [Weitere Informationen](https://azure.microsoft.com/pricing/details/mysql) |
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -136,8 +136,8 @@ Die Administratoren von Contoso stellen mithilfe von Azure App Service zwei Web-
 
 **Benötigen Sie weitere Hilfe?**
 
-- Erfahren Sie mehr über [Azure App Service-Web-Apps](https://docs.microsoft.com/azure/app-service/overview).
-- Erfahren Sie mehr über [Azure App Service unter Linux](https://docs.microsoft.com/azure/app-service/containers/app-service-linux-intro).
+- Erfahren Sie mehr über [Azure App Service-Web-Apps](/azure/app-service/overview).
+- Erfahren Sie mehr über [Azure App Service unter Linux](/azure/app-service/containers/app-service-linux-intro).
 
 ## <a name="step-2-set-up-traffic-manager"></a>Schritt 2: Einrichten von Traffic Manager
 
@@ -157,8 +157,8 @@ Die Administratoren von Contoso richten Traffic Manager ein, um eingehende Weban
 
 **Benötigen Sie weitere Hilfe?**
 
-- Erfahren Sie mehr über [Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview).
-- Erfahren Sie mehr über das [Routing von Datenverkehr zu einem prioritätsbasierten Endpunkt](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-configure-priority-routing-method).
+- Erfahren Sie mehr über [Traffic Manager](/azure/traffic-manager/traffic-manager-overview).
+- Erfahren Sie mehr über das [Routing von Datenverkehr zu einem prioritätsbasierten Endpunkt](/azure/traffic-manager/traffic-manager-configure-priority-routing-method).
 
 ## <a name="step-3-provision-azure-database-for-mysql"></a>Schritt 3: Bereitstellen von Azure Database for MySQL
 
@@ -192,7 +192,7 @@ Es gibt mehrere Möglichkeiten, die MySQL-Datenbank zu verschieben. Bei jeder Op
 
 ### <a name="step-4a-migrate-the-database-via-azure-database-migration-service"></a>Schritt 4a: Migrieren der Datenbank mithilfe von Azure Database Migration Service
 
-Die Administratoren von Contoso migrieren die Datenbank mithilfe von Azure Database Migration Service, indem sie die Schritte im [ausführlichen Migrationstutorial](https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online) befolgen. Sie können Online-, Offline- und Hybridmigrationen (Vorschauversion) von MySQL 5.6 oder 5.7 ausführen.
+Die Administratoren von Contoso migrieren die Datenbank mithilfe von Azure Database Migration Service, indem sie die Schritte im [ausführlichen Migrationstutorial](/azure/dms/tutorial-mysql-azure-mysql-online) befolgen. Sie können Online-, Offline- und Hybridmigrationen (Vorschauversion) von MySQL 5.6 oder 5.7 ausführen.
 
 > [!NOTE]
 > MySQL 8.0 wird in Azure Database for MySQL unterstützt, das Database Migration Service-Tool unterstützt diese Version jedoch noch nicht.
@@ -202,9 +202,9 @@ Contoso geht im Wesentlichen wie folgt vor:
 - Das Unternehmen stellt sicher, dass alle Voraussetzungen für die Migration erfüllt sind:
   - Die Version der MySQL-Datenbankserverquelle muss der von Azure Database for MySQL unterstützten Version entsprechen. Azure Database for MySQL unterstützt die MySQL Community Edition, die InnoDB-Speicher-Engine sowie die Migration zwischen Quellen und Zielen mit derselben Version.  
   - Es aktiviert die binäre Protokollierung in `my.ini` (Windows) oder `my.cnf` (Unix). Andernfalls tritt im Migrations-Assistenten der folgende Fehler auf:  
-      
+
     „Fehler bei der binären Protokollierung. Die Variable "binlog_row_image" weist den Wert "minimal" auf. Ändern Sie diesen in "full". Weitere Informationen finden Sie unter `https://go.microsoft.com/fwlink/?linkid=873009`.“
-    
+
   - Der Benutzer muss über die Rolle `ReplicationAdmin` verfügen.  
   - Migrieren Sie die Datenbankschemas ohne Fremdschlüssel und Trigger.  
 - Sie erstellen ein virtuelles privates Netzwerk (VPN), das über ExpressRoute oder VPN mit dem lokalen Netzwerk verbunden ist.  
@@ -347,7 +347,7 @@ Im letzten Schritt des Migrationsprozesses konfigurieren die Administratoren von
     ![Screenshot des Bereichs „Bereitstellungsoptionen“](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app4.png)
 
 5. Sie wiederholen die obigen Schritte für die sekundäre Web-App osticket-cus.
-6. Nachdem die Site konfiguriert wurde, ist sie über das Traffic Manager-Profil erreichbar. Der DNS-Name ist der neue Speicherort der Anwendung osTicket. [Weitere Informationen](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record)
+6. Nachdem die Site konfiguriert wurde, ist sie über das Traffic Manager-Profil erreichbar. Der DNS-Name ist der neue Speicherort der Anwendung osTicket. [Weitere Informationen](/azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record)
 
     ![Screenshot des Traffic Manager-Profilbereichs mit dem DNS-Namen](./media/contoso-migration-refactor-linux-app-service-mysql/configure-app5.png)
 
@@ -390,14 +390,14 @@ Da die Anwendung jetzt ausgeführt wird, muss Contoso seine neue Infrastruktur v
 
 ### <a name="security"></a>Sicherheit
 
-Das Sicherheitsteam von Contoso hat die Anwendung auf Sicherheitsprobleme überprüft. Dabei hat es festgestellt, dass die Kommunikation zwischen der Anwendung osTicket und der MySQL-Datenbankinstanz nicht für SSL konfiguriert ist. Das Team muss dies tun, um sicherzustellen, dass der Datenbankverkehr nicht gehackt werden kann. [Weitere Informationen](https://docs.microsoft.com/azure/mysql/howto-configure-ssl)
+Das Sicherheitsteam von Contoso hat die Anwendung auf Sicherheitsprobleme überprüft. Dabei hat es festgestellt, dass die Kommunikation zwischen der Anwendung osTicket und der MySQL-Datenbankinstanz nicht für SSL konfiguriert ist. Das Team muss dies tun, um sicherzustellen, dass der Datenbankverkehr nicht gehackt werden kann. [Weitere Informationen](/azure/mysql/howto-configure-ssl)
 
 ### <a name="backups"></a>Backups
 
 - Die osTicket-Web-Apps enthalten keine Zustandsdaten und müssen daher auch nicht gesichert werden.
-- Das Team von Contoso muss die Sicherung für die Datenbank nicht konfigurieren. Azure Database for MySQL erstellt automatisch Serversicherungen und -speicher. Das Team hat sich für die Georedundanz für die Datenbank entschieden, damit sie robust und einsatzbereit ist. Sicherungen können verwendet werden, um für ihren Server den Stand zu einem bestimmten Zeitpunkt wiederherzustellen. [Weitere Informationen](https://docs.microsoft.com/azure/mysql/concepts-backup)
+- Das Team von Contoso muss die Sicherung für die Datenbank nicht konfigurieren. Azure Database for MySQL erstellt automatisch Serversicherungen und -speicher. Das Team hat sich für die Georedundanz für die Datenbank entschieden, damit sie robust und einsatzbereit ist. Sicherungen können verwendet werden, um für ihren Server den Stand zu einem bestimmten Zeitpunkt wiederherzustellen. [Weitere Informationen](/azure/mysql/concepts-backup)
 
 ### <a name="licensing-and-cost-optimization"></a>Lizenzierung und Kostenoptimierung
 
 - Es gibt keine Lizenzierungsprobleme für die PaaS-Bereitstellung.
-- Contoso verwendet die [Azure-Kostenverwaltung und -Abrechnung](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview), um sicherzustellen, dass das von den IT-Führungskräften festgelegte Budget nicht überschritten wird.
+- Contoso verwendet die [Azure-Kostenverwaltung und -Abrechnung](/azure/cost-management-billing/cost-management-billing-overview), um sicherzustellen, dass das von den IT-Führungskräften festgelegte Budget nicht überschritten wird.

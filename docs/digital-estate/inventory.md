@@ -7,12 +7,12 @@ ms.date: 12/10/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8d24987d13467742ab004f386a5acf4e173566ff
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 2d3939eb72b66ab930afbcf44efea73262a66cb1
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221347"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196025"
 ---
 # <a name="gather-inventory-data-for-a-digital-estate"></a>Erfassen von Bestandsdaten für digitale Ressourcen
 
@@ -22,7 +22,7 @@ Die Erstellung eines Bestandsverzeichnisses ist der erste Schritt bei der [Planu
 
 Die Bestandsdaten zur Unterstützung eines digitalen Umfelds sind abhängig von der gewünschten digitalen Transformation und dem entsprechenden Transformationsprozess.
 
-- **Cloudmigration:**  Wir empfehlen häufig, dass Sie im Rahmen einer Cloudmigration die Bestandsermittlung mithilfe von Überprüfungstools durchführen, die eine zentrale Liste aller virtueller Computer und Server erstellen. Einige Tools können auch Netzwerkzuordnungen und Abhängigkeiten erstellen, was beim Definieren des Workloadabgleichs hilfreich ist.
+- **Cloudmigration:** Wir empfehlen häufig, dass Sie im Rahmen einer Cloudmigration die Bestandsermittlung mithilfe von Überprüfungstools durchführen, die eine zentrale Liste aller virtueller Computer und Server erstellen. Einige Tools können auch Netzwerkzuordnungen und Abhängigkeiten erstellen, was beim Definieren des Workloadabgleichs hilfreich ist.
 
 - **Anwendungsinnovationen:** Auch bei aktivierter Cloud beginnen Anwendungsinnovationen immer mit dem Kunden. Dabei hat es sich bewährt, zunächst die gesamte Benutzererfahrung zu erfassen. Durch den Abgleich dieser Erfassung mit Anwendungen, APIs, Daten und anderen Ressourcen entsteht ein detaillierter Bestand für die Analyse.
 

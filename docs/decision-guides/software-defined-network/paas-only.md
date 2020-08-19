@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: e5351d14c6200056e4c5b43f622f655a23e79668
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 9a3dae9463e68740178a3303e191470cd3dd6ac5
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83753573"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573971"
 ---
 # <a name="software-defined-networking-paas-only"></a>Softwaredefiniertes Netzwerk: Reine PaaS-Lösung
 
 Wenn Sie eine PaaS-Ressource (Platform as a Service) implementieren, wird im Bereitstellungsprozess automatisch ein angenommenes zugrunde liegendes Netzwerk mit einer begrenzten Anzahl von Steuerungsmöglichkeiten über dieses Netzwerk erstellt, einschließlich Lastenausgleich, Portblockierung und Verbindungen mit anderen PaaS-Diensten.
 
-In Azure können mehrere PaaS-Ressourcentypen [in einem virtuellen Netzwerk bereitgestellt](https://docs.microsoft.com/azure/virtual-network/virtual-network-for-azure-services) oder [mit einem virtuellen Netzwerk verbunden](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) werden, wodurch diese Ressourcen in Ihre bestehende virtuelle Netzwerkinfrastruktur integriert werden. Andere Dienste wie [App Service-Umgebung](https://docs.microsoft.com/azure/app-service/environment/intro), [Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/intro-kubernetes) und [Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-overview) müssen innerhalb eines virtuellen Netzwerks bereitgestellt werden. In vielen Fällen reicht eine reine PaaS-Netzwerkarchitektur, die sich ausschließlich auf die standardmäßigen nativen Netzwerkfunktionen stützt, die von PaaS-Ressourcen nativ bereitgestellt werden, um die Anforderungen an die Konnektivität und Datenverkehrsverwaltung von Workloads zu erfüllen.
+In Azure können mehrere PaaS-Ressourcentypen [in einem virtuellen Netzwerk bereitgestellt](/azure/virtual-network/virtual-network-for-azure-services) oder [mit einem virtuellen Netzwerk verbunden](/azure/virtual-network/virtual-network-service-endpoints-overview) werden, wodurch diese Ressourcen in Ihre bestehende virtuelle Netzwerkinfrastruktur integriert werden. Andere Dienste wie [App Service-Umgebung](/azure/app-service/environment/intro), [Azure Kubernetes Service (AKS)](/azure/aks/intro-kubernetes) und [Service Fabric](/azure/service-fabric/service-fabric-overview) müssen innerhalb eines virtuellen Netzwerks bereitgestellt werden. In vielen Fällen reicht eine reine PaaS-Netzwerkarchitektur, die sich ausschließlich auf die standardmäßigen nativen Netzwerkfunktionen stützt, die von PaaS-Ressourcen nativ bereitgestellt werden, um die Anforderungen an die Konnektivität und Datenverkehrsverwaltung von Workloads zu erfüllen.
 
 Wenn Sie eine reine PaaS-Netzwerkarchitektur in Betracht ziehen, sollten Sie sicherstellen, dass Ihre Annahmen mit Ihren Anforderungen übereinstimmen.
 

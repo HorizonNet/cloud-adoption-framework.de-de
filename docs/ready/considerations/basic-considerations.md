@@ -7,12 +7,12 @@ ms.date: 04/09/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 335c323ce5669d82c5751a0ee58867b3c792b3fd
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 37f99b3d42232b830edede242ac89602561bf7ff
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479760"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572866"
 ---
 # <a name="landing-zone-considerations"></a>Überlegungen zu Landezonen
 
@@ -48,5 +48,5 @@ Die folgenden Artikel unterstützen Sie beim Treffen governancebezogener Entsche
 - **Kostenanforderungen:** Abhängig von den Beweggründen für die Cloudeinführung und den betrieblichen Verpflichtungen, die für diese Umgebung bestehen, müssen möglicherweise verschiedene Kostenverwaltungskonfigurationen für die Landezone geändert werden.
 - **Überwachungsentscheidungen:** Abhängig von den betrieblichen Anforderungen für eine Landezone können verschiedene Überwachungstools bereitgestellt werden. Der Artikel zu Überwachungsentscheidungen unterstützt Sie bei der Ermittlung der hierfür am besten geeigneten Tools.
 - **Rollenbasierte Zugriffssteuerung.** Die [rollenbasierte Zugriffssteuerung](../considerations/roles.md) (Role-Based Access Control, RBAC) in Azure ermöglicht eine präzise gruppenbasierte Zugriffsverwaltung für Ressourcen, deren Struktur auf Benutzerrollen basiert.
-- **Richtlinienentscheidungen.** [Azure Blueprints-Beispiele](https://docs.microsoft.com/azure/governance/blueprints/samples) bieten vorgefertigte Complianceblaupausen, die jeweils vordefinierte Richtlinieninitiativen enthalten. Richtlinienentscheidungen dienen zur Ermittlung der am besten geeigneten Blaupause oder Richtlinieninitiative, basierend auf Ihren Anforderungen und Einschränkungen.
+- **Richtlinienentscheidungen.** [Azure Blueprints-Beispiele](/azure/governance/blueprints/samples) bieten vorgefertigte Complianceblaupausen, die jeweils vordefinierte Richtlinieninitiativen enthalten. Richtlinienentscheidungen dienen zur Ermittlung der am besten geeigneten Blaupause oder Richtlinieninitiative, basierend auf Ihren Anforderungen und Einschränkungen.
 - **Schaffen von [Hybrid Cloud-Konsistenz](./hybrid-consistency.md).** Erstellen Sie Hybrid Cloud-Lösungen, mit denen Ihre Organisation sowohl von den Vorteilen innovativer Cloudfeatures als auch von vielen praktischen Features der lokalen Verwaltung profitiert.

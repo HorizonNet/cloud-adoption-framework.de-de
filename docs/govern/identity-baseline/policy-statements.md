@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9f688988e62cf7783f76cf67d90fdc5b024e4fef
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 598f2a6e8c79020d0e62825066cc8305461de87a
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218576"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573325"
 ---
 # <a name="identity-baseline-sample-policy-statements"></a>Beispiele für Richtlinienanweisungen der Identitätsbaseline
 
@@ -31,7 +31,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine identit
 
 **Richtlinienanweisung:** Alle in der Cloud bereitgestellten Ressourcen sollten mit Identitäten und Rollen kontrolliert werden, die von aktuellen Governancerichtlinien genehmigt werden.
 
-**Potenzielle Entwurfsoptionen:** Der [bedingte Azure Active Directory-Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) ist der Standardmechanismus für die Zugriffssteuerung in Azure.
+**Potenzielle Entwurfsoptionen:** Der [bedingte Azure Active Directory-Zugriff](/azure/active-directory/conditional-access/overview) ist der Standardmechanismus für die Zugriffssteuerung in Azure.
 
 ## <a name="overprovisioned-access"></a>Überdimensionierter Zugriff
 
@@ -42,7 +42,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine identit
 - Das Zugriffsmodell der geringsten Rechte wird auf alle Ressourcen angewandt, die für unternehmenskritische Anwendungen oder geschützte Daten verwendet werden.
 - Erhöhte Berechtigungen müssen eine Ausnahme bleiben, und solche Ausnahmen müssen vom Cloudgovernanceteam erfasst werden. Ausnahmen werden regelmäßig überwacht.
 
-**Potenzielle Entwurfsoptionen:** Machen Sie sich mit den [bewährten Methoden für die Azure-Identitätsverwaltung](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices) vertraut, um eine rollenbasierte Zugriffssteuerung (RBAC) zu implementieren, über die der Zugriff basierend auf den Sicherheitsprinzipien [Need-to-Know](https://wikipedia.org/wiki/Need_to_know) und [geringste Rechte](https://wikipedia.org/wiki/Principle_of_least_privilege) beschränkt wird.
+**Potenzielle Entwurfsoptionen:** Machen Sie sich mit den [bewährten Methoden für die Azure-Identitätsverwaltung](/azure/security/fundamentals/identity-management-best-practices) vertraut, um eine rollenbasierte Zugriffssteuerung (RBAC) zu implementieren, über die der Zugriff basierend auf den Sicherheitsprinzipien [Need-to-Know](https://wikipedia.org/wiki/Need_to_know) und [geringste Rechte](https://wikipedia.org/wiki/Principle_of_least_privilege) beschränkt wird.
 
 ## <a name="lack-of-shared-management-accounts-between-on-premises-and-the-cloud"></a>Fehlende freigegebene Verwaltungskonten zwischen dem lokalen System und der Cloud
 
@@ -58,7 +58,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine identit
 
 **Richtlinienanweisung:** Für alle Konten muss die Anmeldung bei gesicherten Ressourcen über eine Methode der mehrstufigen Authentifizierung erfolgen.
 
-**Potenzielle Entwurfsoptionen:** Implementieren Sie für Azure Active Directory [Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks) als Teil des Prozesses zur Benutzerautorisierung.
+**Potenzielle Entwurfsoptionen:** Implementieren Sie für Azure Active Directory [Azure Multi-Factor Authentication](/azure/active-directory/authentication/concept-mfa-howitworks) als Teil des Prozesses zur Benutzerautorisierung.
 
 ## <a name="isolated-identity-providers"></a>Isolierte Identitätsanbieter
 
@@ -66,7 +66,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine identit
 
 **Richtlinienanweisung:** Die Bereitstellung von Anwendungen, für die eine Kundenauthentifizierung erforderlich ist, erfordert einen genehmigten Identitätsanbieter, der mit dem primären Identitätsanbieter für interne Benutzer kompatibel ist.
 
-**Potenzielle Entwurfsoptionen:** Implementieren Sie einen [Verbund mit Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-fed) zwischen Ihren internen Identitätsanbietern und den Identitätsanbietern von Kunden, oder nutzen Sie [Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b).
+**Potenzielle Entwurfsoptionen:** Implementieren Sie einen [Verbund mit Azure Active Directory](/azure/active-directory/hybrid/whatis-fed) zwischen Ihren internen Identitätsanbietern und den Identitätsanbietern von Kunden, oder nutzen Sie [Azure Active Directory B2B](/azure/active-directory/b2b/what-is-b2b).
 
 ## <a name="identity-reviews"></a>Identitätsüberprüfungen
 

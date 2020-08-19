@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: f746b00773dc4a9fd3a6dc0fe38a8a0e56d94fcc
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 701d4888ebe766603f1a7b33c4b77134867fb7c5
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83222911"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572560"
 ---
 # <a name="build-a-business-justification-for-cloud-migration"></a>Erstellen einer geschäftlichen Begründung für die Cloudmigration
 
@@ -84,7 +84,7 @@ Wenn wir diese Gleichung in ihre Bestandteile zerlegen, ergibt sich ein migratio
 - Einige Cloudanbieter bieten auch Rechner zur Ermittlung von Kostendeltawerten. Microsoft stellt den [Gesamtkostenrechner von Azure](https://azure.microsoft.com/pricing/tco/calculator) zur Verfügung.
 - Bei anspruchsvolleren Kostenstrukturen können Sie erwägen, eine Übung zur [Planung von digitalen Ressourcen](../digital-estate/index.md) durchzuführen.
 - Erstellen Sie eine Schätzung der Kosten für die Migration.
-- Schätzen Sie die Kosten für die zu erwartenden Schulungsmaßnahmen. [Microsoft Learn](https://docs.microsoft.com/learn) kann beim Verringern dieser Kosten eine Hilfe darstellen.
+- Schätzen Sie die Kosten für die zu erwartenden Schulungsmaßnahmen. [Microsoft Learn](/learn) kann beim Verringern dieser Kosten eine Hilfe darstellen.
 - In einigen Unternehmen muss die Zeit, die von vorhandenen Mitarbeitern investiert wird, unter Umständen in die Anfangskosten eingerechnet werden. Hilfe hierzu erhalten Sie von Ihrer Finanzabteilung.
 - Besprechen Sie alle weiteren Kosten oder Gemeinkosten mit der Finanzabteilung, um diese zu bewerten.
 

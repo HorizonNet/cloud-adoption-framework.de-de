@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5a41d4c227c1f96fd4f7e81e893e607bfd51e92b
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 4e7d0642f2b3ae669e5a8a63893249308a3d67db
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217964"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195325"
 ---
 # <a name="resource-consistency-discipline-template"></a>Vorlage zur Disziplin „Ressourcenkonsistenz“
 
@@ -24,7 +24,7 @@ Während Ihre Planung voranschreitet, verwenden Sie die Struktur dieser Vorlage 
 > [!IMPORTANT]
 > Diese Vorlage ist ein eingeschränktes Beispiel. Prüfen Sie vor dem Aktualisieren dieser Vorlage entsprechend Ihren Anforderungen die nachfolgenden Schritte zum Definieren einer effektiven Disziplin der Ressourcenkonsistenz im Rahmen Ihrer Strategie für Cloudgovernance.
 
-[Vorlage zur Disziplin „Ressourcenkonsistenz“ herunterladen](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Resource%20Consistency%20Discipline%20Template.docx)
+[Vorlage zur Disziplin „Ressourcenkonsistenz“ herunterladen](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/resource-consistency-discipline-template.docx)
 
 ## <a name="next-steps"></a>Nächste Schritte
 

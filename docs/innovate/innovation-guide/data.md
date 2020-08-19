@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0ac9256adda2b310592d69685a183b790790228a
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: be3f5c774d91bf0e6e45a068311b35d35f328ba5
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86449012"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567885"
 ---
 # <a name="democratize-data"></a>Demokratisieren von Daten
 
@@ -36,7 +36,7 @@ Azure Data Catalog setzt bei den Ermittlungsanforderungen der Datenconsumer an u
 
 ::: zone target="docs"
 
-**Zur [Azure Data Catalog-Dokumentation](https://docs.microsoft.com/azure/data-catalog) navigieren**
+**Zur [Azure Data Catalog-Dokumentation](/azure/data-catalog) navigieren**
 
 ::: zone-end
 
@@ -74,7 +74,7 @@ Ein ausgewogenes Gleichgewicht zwischen offener Freigabe von Daten und der Kontr
 
 ::: zone target="docs"
 
-**Zur [Azure Data Share-Dokumentation](https://docs.microsoft.com/azure/data-share) navigieren**
+**Zur [Azure Data Share-Dokumentation](/azure/data-share) navigieren**
 
 ::: zone-end
 
@@ -112,7 +112,7 @@ Die Dateninnovationsmöglichkeiten von Azure Time Series Insights sind endlos. D
 
 ::: zone target="docs"
 
-**Zu [Übersicht über Azure Time Series Insights](https://docs.microsoft.com/azure/time-series-insights/time-series-insights-update-overview) navigieren**
+**Zu [Übersicht über Azure Time Series Insights](/azure/time-series-insights/time-series-insights-update-overview) navigieren**
 
 ::: zone-end
 

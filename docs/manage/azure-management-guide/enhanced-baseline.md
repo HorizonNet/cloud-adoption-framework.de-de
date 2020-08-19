@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 3cf2d02139061841d188271c61011b2439ae14db
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: b30aa8ab692f9cb88302075d42d70af405c4dd94
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86234020"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572271"
 ---
 <!-- cSpell:ignore ITSMC -->
 
@@ -49,12 +49,12 @@ In dieser Tabelle werden einige Prozesse, Tools und potenzielle Auswirkungen bes
 
 | Disziplin  | Prozess  | Tool | Potenzielle Auswirkung | Weitere Informationen |
 |---|---|---|---|---|
-| Bestand und Transparenz | Änderungsnachverfolgung für Dienste | Azure Resource Graph | Ein umfassenderer Einblick in Änderungen an Azure-Diensten kann helfen, negative Auswirkungen früher zu erkennen oder schneller zu beheben. | [Übersicht über Azure Resource Graph](https://docs.microsoft.com/azure/governance/resource-graph/overview) |
-| Bestand und Transparenz | ITSM-Integration (IT-Service-Management) | IT Service Management Connector | Eine automatisierte ITSM-Verbindung führt zu früheren Erkenntnissen. | [ITSMC-Connector (IT-Service-Management)](https://docs.microsoft.com/azure/azure-monitor/platform/itsmc-overview) |
+| Bestand und Transparenz | Änderungsnachverfolgung für Dienste | Azure Resource Graph | Ein umfassenderer Einblick in Änderungen an Azure-Diensten kann helfen, negative Auswirkungen früher zu erkennen oder schneller zu beheben. | [Übersicht über Azure Resource Graph](/azure/governance/resource-graph/overview) |
+| Bestand und Transparenz | ITSM-Integration (IT-Service-Management) | IT Service Management Connector | Eine automatisierte ITSM-Verbindung führt zu früheren Erkenntnissen. | [ITSMC-Connector (IT-Service-Management)](/azure/azure-monitor/platform/itsmc-overview) |
 | Betriebsbezogene Compliance | Betriebsautomatisierung | Azure-Automatisierung | Durch automatisierte betriebsbezogene Compliance können Sie auf Änderungen schneller und präziser reagieren. | In den folgenden Abschnitten finden Sie weitere Informationen |
 | Betriebsbezogene Compliance | Leistungsautomatisierung | Azure-Automatisierung | Automatisieren Sie die betriebliche Compliance mit Leistungserwartungen, um allgemeine ressourcenspezifische Probleme mit der Skalierung oder Größenanpassung zu lösen. | In den folgenden Abschnitten finden Sie weitere Informationen |
-| Betriebsbezogene Compliance | Multicloudvorgänge | Azure Automation – Hybrid Runbook Worker | Automatisieren Sie Vorgänge in mehreren Clouds. | [Übersicht über Hybrid Runbook Worker](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker) |
-| Betriebsbezogene Compliance | Gastautomatisierung |  Konfigurieren des gewünschten Zustands (Desired State Configuration, DSC) | Durch die codebasierte Konfiguration von Gastbetriebssystemen können Fehler und Konfigurationsabweichungen verringert werden. | [Übersicht über DSC](https://docs.microsoft.com/powershell/scripting/dsc/overview/overview) |
+| Betriebsbezogene Compliance | Multicloudvorgänge | Azure Automation – Hybrid Runbook Worker | Automatisieren Sie Vorgänge in mehreren Clouds. | [Übersicht über Hybrid Runbook Worker](/azure/automation/automation-hybrid-runbook-worker) |
+| Betriebsbezogene Compliance | Gastautomatisierung |  Konfigurieren des gewünschten Zustands (Desired State Configuration, DSC) | Durch die codebasierte Konfiguration von Gastbetriebssystemen können Fehler und Konfigurationsabweichungen verringert werden. | [Übersicht über DSC](/powershell/scripting/dsc/overview/overview) |
 | Schutz und Wiederherstellung | Benachrichtigung bei Sicherheitsverletzungen | Azure Security Center | Durch Erweitern des Schutzes können Wiederherstellungstrigger bei Sicherheitsverletzungen einbezogen werden. | In den folgenden Abschnitten finden Sie weitere Informationen |
 
 ::: zone target="docs"
@@ -129,6 +129,6 @@ Wechseln Sie zum [Azure-Portal](https://portal.azure.com/#blade/Microsoft_Azure_
 
 ### <a name="learn-more"></a>Weitere Informationen
 
-Weitere Informationen finden Sie in der [Azure Security Center-Dokumentation](https://docs.microsoft.com/azure/security-center).
+Weitere Informationen finden Sie in der [Azure Security Center-Dokumentation](/azure/security-center).
 
 ::: zone-end

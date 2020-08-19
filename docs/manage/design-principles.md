@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c7751291689fb269eb68514173d143eac85fa87d
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 8b0d8896e6805a90aed940262236a8a4a3949cb6
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85074872"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571540"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>Umsetzen von Entwurfsprinzipien und erweiterten Vorgängen
 
@@ -77,7 +77,7 @@ Im Rahmen jeder Spezialisierung erfolgt der folgende vierstufige Prozess in eine
 
 Das Verbessern des Systementwurfs ist der effektivste Ansatz zur Optimierung des Betriebs jeder gängigen Plattform. Verbesserungen des Systementwurfs können die Stabilität erhöhen und Betriebsunterbrechungen verringern. Der Entwurf einzelner Systeme wird für die Umgebungssicht nicht berücksichtigt, die das Framework für die Cloudeinführung (Cloud Adoption Framework) einnimmt.
 
-Als Ergänzung zu diesem Framework bietet das [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) Grundsätze zum Verbessern einer Plattform oder einer bestimmten Workload. Der Schwerpunkt des Frameworks liegt auf der Verbesserung von fünf Säulen der Architekturexzellenz:
+Als Ergänzung zu diesem Framework bietet das [Microsoft Azure Well-Architected Framework](/azure/architecture/framework) Grundsätze zum Verbessern einer Plattform oder einer bestimmten Workload. Der Schwerpunkt des Frameworks liegt auf der Verbesserung von fünf Säulen der Architekturexzellenz:
 
 - **Kostenoptimierung:** Verwalten der Kosten zur Maximierung des erzielten Werts.
 - **Betriebliche Exzellenz:** Verfolgen der operativen Prozesse, die für die Ausführung eines Systems in der Produktion sorgen.
@@ -87,7 +87,7 @@ Als Ergänzung zu diesem Framework bietet das [Microsoft Azure Well-Architected 
 
 Die meisten Betriebsunterbrechungen sind Folge einer Form von technischen Schulden oder einer unzulänglichen Architektur. Bei bestehenden Bereitstellungen können Verbesserungen des Systementwurfs als das Abtragen bestehender technischer Schulden angesehen werden. Bei Neubereitstellungen können Verbesserungen des Systementwurfs als das Vermeiden technischer Schulden verstanden werden. Der nächste Abschnitt, „Automatisierte Korrektur“, befasst sich mit Möglichkeiten, technische Schulden anzugehen, die nicht beseitigt werden können oder sollten.
 
-Um den Systementwurf zu verbessern, erfahren Sie mehr über das [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework). Bei zunehmender Verbesserung Ihres Systementwurfs kehren Sie zu diesem Artikel zurück, um neue Möglichkeiten zur Verbesserung und Skalierung dieser Verbesserungen in Ihrer Umgebung zu finden.
+Um den Systementwurf zu verbessern, erfahren Sie mehr über das [Microsoft Azure Well-Architected Framework](/azure/architecture/framework). Bei zunehmender Verbesserung Ihres Systementwurfs kehren Sie zu diesem Artikel zurück, um neue Möglichkeiten zur Verbesserung und Skalierung dieser Verbesserungen in Ihrer Umgebung zu finden.
 
 ### <a name="automated-remediation"></a>Automatisierte Korrektur
 
@@ -95,7 +95,7 @@ Einige technische Schulden können oder sollten nicht angegangen werden. Grund s
 
 Wenn die Beseitigung technischer Schulden nicht das gewünschte Ziel ist, ist die automatisierte Korrektur häufig der gewünschte nächste Schritt. Der gängigste Ansatz für die automatisierte Korrektur ist der Einsatz von Azure Automation und Azure Monitor zur Erkennung von Trends und Bereitstellung automatisierter Korrekturen.
 
-Anleitungen zur automatisierten Korrektur finden Sie unter [Azure Automation und Warnungen](https://docs.microsoft.com/azure/automation/automation-create-alert-triggered-runbook).
+Anleitungen zur automatisierten Korrektur finden Sie unter [Azure Automation und Warnungen](/azure/automation/automation-create-alert-triggered-runbook).
 
 ### <a name="scale-the-solution-with-a-service-catalog"></a>Skalieren der Lösung mit einem Dienstkatalog
 
@@ -103,12 +103,12 @@ Der Eckpfeiler der Plattformspezialisierung und des Plattformbetriebs ist ein so
 
 Um die Akzeptanz zu maximieren und den Wartungsaufwand einer optimierten Plattform zu minimieren, sollte die Plattform in einen Dienstkatalog aufgenommen werden. Jede Anwendung im Katalog kann über den Dienstkatalog für den internen Einsatz oder als Marketplace-Angebot für externe Nutzer bereitgestellt werden.
 
-Informationen zur Veröffentlichung in einem Dienstkatalog finden Sie in der Reihe zum [Veröffentlichen in einem Dienstkatalog](https://docs.microsoft.com/azure/managed-applications/publish-service-catalog-app).
+Informationen zur Veröffentlichung in einem Dienstkatalog finden Sie in der Reihe zum [Veröffentlichen in einem Dienstkatalog](/azure/managed-applications/publish-service-catalog-app).
 
 ### <a name="continuous-improvement"></a>Fortlaufende Verbesserung
 
 Sowohl Plattformspezialisierung als auch Plattformbetrieb hängen von funktionierenden Feedbackschleifen zwischen dem Einführungs-, Plattform-, Automatisierungs- und Verwaltungsteam ab. Die Kopplung dieser Feedbackschleifen mit Daten ermöglicht jedem Team, kluge Entscheidungen zu treffen. Damit beim Plattformbetrieb langfristige Geschäftsverpflichtungen erfüllt werden, ist es wichtig, für die zentralisierte Plattform spezifische Erkenntnisse zu nutzen. Da Container und SQL Server die beiden am häufigsten verwendeten zentral verwalteten Plattformen sind, sollten Sie mithilfe der folgenden Artikel mit der Datensammlung zur fortlaufenden Verbesserung beginnen:
 
-- [Containerleistung](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview)
-- [PaaS-Datenbankleistung](https://docs.microsoft.com/azure/azure-monitor/insights/azure-sql)
-- [IaaS-Datenbankleistung](https://docs.microsoft.com/azure/azure-monitor/insights/sql-assessment)
+- [Containerleistung](/azure/azure-monitor/insights/container-insights-overview)
+- [PaaS-Datenbankleistung](/azure/azure-monitor/insights/azure-sql)
+- [IaaS-Datenbankleistung](/azure/azure-monitor/insights/sql-assessment)

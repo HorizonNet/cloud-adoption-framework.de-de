@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: csu
-ms.openlocfilehash: 88f1272526ba16b345349a2447d5d17c9c253229
-ms.sourcegitcommit: 99151759b9d7dfc4e8aab345750eeae82d18d547
+ms.openlocfilehash: 697d1e8c57e2e4b7354b8730bbcf5e7653657000
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88075844"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88193196"
 ---
 <!-- cSpell:ignore CAF -->
 
@@ -73,7 +73,7 @@ Zusätzlich zu den hier aufgeführten Aspekten müssen bei Entwurf, Konfiguratio
 
 _Abbildung 2: Architektur für Cloud Adoption Framework-Zielzonen auf Unternehmensniveau_
 
-Laden Sie die [PDF-Datei](https://github.com/microsoft/CloudAdoptionFramework/blob/master/ready/enterprise-scale-architecture.pdf) herunter, die dieses Architekturdiagramm enthält.
+Laden Sie die [PDF-Datei](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/enterprise-scale-architecture.pdf) herunter, die dieses Architekturdiagramm enthält.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

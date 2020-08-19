@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 6d777a1c919e72c55d8c6202ef1c32f44d9444d9
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 8dbfd5324957b7175afc81801873eef8bf5242cf
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219477"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571829"
 ---
 <!-- cSpell:ignore jenhayes -->
 
@@ -27,7 +27,7 @@ Sie sollten nach Möglichkeit nur einen Azure AD-Mandanten für Ihre Organisatio
 - Bestimmte gesetzliche Anforderungen oder Complianceanforderungen gelten.
 - Es gibt Akquisitionen anderer Organisationen (bisweilen zeitlich begrenzt, bis eine langfristige Strategie für die Mandantenkonsolidierung definiert ist).
 
-Falls eine mehrinstanzenfähige Architektur benötigt wird, bietet [Azure Lighthouse](https://docs.microsoft.com/azure/lighthouse/overview) die Möglichkeit, Verwaltungsvorgänge zu zentralisieren und zu optimieren. Abonnements mehrerer Mandanten können für die [delegierte Azure-Ressourcenverwaltung](https://docs.microsoft.com/azure/lighthouse/concepts/azure-delegated-resource-management) integriert werden. Mit dieser Option können angegebene Benutzer im verwaltenden Mandanten [mandantenübergreifende Verwaltungsfunktionen](https://docs.microsoft.com/azure/lighthouse/concepts/cross-tenant-management-experience) zentral und skalierbar ausführen.
+Falls eine mehrinstanzenfähige Architektur benötigt wird, bietet [Azure Lighthouse](/azure/lighthouse/overview) die Möglichkeit, Verwaltungsvorgänge zu zentralisieren und zu optimieren. Abonnements mehrerer Mandanten können für die [delegierte Azure-Ressourcenverwaltung](/azure/lighthouse/concepts/azure-delegated-resource-management) integriert werden. Mit dieser Option können angegebene Benutzer im verwaltenden Mandanten [mandantenübergreifende Verwaltungsfunktionen](/azure/lighthouse/concepts/cross-tenant-management-experience) zentral und skalierbar ausführen.
 
 Angenommen, Ihre Organisation verfügt über einen einzelnen Mandanten, `Tenant A`. Die Organisation beschafft dann zwei weitere Mandanten, `Tenant B` und `Tenant C`, die aus geschäftlichen Gründen separat verwaltet werden müssen.
 
@@ -35,4 +35,4 @@ Ihre Organisation möchte auf allen Mandanten die gleichen Richtliniendefinition
 
 ![Benutzer von Mandant A verwalten Ressourcen auf Mandant B und Mandant C](../_images/manage/enterprise-azure-lighthouse.jpg)
 
-Weitere Informationen finden Sie unter [Azure Lighthouse in Unternehmensszenarien](https://docs.microsoft.com/azure/lighthouse/concepts/enterprise).
+Weitere Informationen finden Sie unter [Azure Lighthouse in Unternehmensszenarien](/azure/lighthouse/concepts/enterprise).

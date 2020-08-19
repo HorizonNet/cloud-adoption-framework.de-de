@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 0aa03d15992df64e43663c38d2199a8f38103bb7
-ms.sourcegitcommit: 580a6f66a0d0f3f5b755c68d757a84b2351a432f
+ms.openlocfilehash: 3e550dafc582742a9cd0c4c83f0fbc416242bc8b
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87473096"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567392"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc smarthotel SHWEB SHWCF -->
 
@@ -58,7 +58,7 @@ Nachdem die Ziele und Anforderungen formuliert wurden, entwirft und prüft Conto
 
 ### <a name="proposed-solution"></a>Vorgeschlagene Lösung
 
-- Für die Datenbankebene der Anwendung hat Contoso Azure SQL-Datenbank mit SQL Server verglichen. Grundlage dafür war der Artikel [Featurevergleich: Azure SQL-Datenbank und Azure SQL Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-features). Die Entscheidung für Azure SQL-Datenbank hat für Contoso verschiedene Gründe:
+- Für die Datenbankebene der Anwendung hat Contoso Azure SQL-Datenbank mit SQL Server verglichen. Grundlage dafür war der Artikel [Featurevergleich: Azure SQL-Datenbank und Azure SQL Managed Instance](/azure/sql-database/sql-database-features). Die Entscheidung für Azure SQL-Datenbank hat für Contoso verschiedene Gründe:
   - Azure SQL-Datenbank ist ein verwalteter relationaler Datenbankdienst. Er bietet eine vorhersagbare Leistung auf mehreren Serviceleveln bei nahezu keinem Administrationsaufwand. Zu den Vorteilen gehören dynamische Skalierbarkeit ohne Ausfallzeiten, integrierte intelligente Optimierung sowie globale Skalierbarkeit und Verfügbarkeit.
   - Contoso kann den einfachen Datenmigrations-Assistenten nutzen, um die Migration der lokalen Datenbank zu Azure SQL-Datenbank zu bewerten.
   - Contoso kann Azure Database Migration Service verwenden, um lokale Datenbanken zu Azure SQL zu migrieren.
@@ -91,11 +91,11 @@ Contoso wertet seinen vorgeschlagenen Entwurf aus, indem das Unternehmen eine Li
 
 | Dienst | BESCHREIBUNG | Kosten |
 | --- | --- | --- |
-| [Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso nutzt den Datenmigrations-Assistenten, um Kompatibilitätsprobleme zu bewerten und zu erkennen, die sich unter Umständen auf die Datenbankfunktionen in Azure auswirken. Der Datenmigrations-Assistent bewertet die Featureparität zwischen SQL-Quellen und -Zielen und empfiehlt Verbesserungen der Leistung und Zuverlässigkeit. | Sie können das Tool kostenlos herunterladen. |
-| [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Azure Database Migration Service ermöglicht die nahtlose Migration mehrerer Datenbankquellen zu Azure-Datenplattformen mit minimaler Downtime. | Informieren Sie sich über die [unterstützten Regionen](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability) und die [Preise für den Database Migration Service](https://azure.microsoft.com/pricing/details/database-migration). |
-| [Azure SQL-Datenbank](https://docs.microsoft.com/azure/azure-sql/database/sql-database-paas-overview) | Ein intelligenter, vollständig verwalteter Dienst für relationale Clouddatenbanken. | Die Kosten basieren auf Features, Durchsatz und Größe. [Weitere Informationen](https://azure.microsoft.com/pricing/details/sql-database/managed) |
-| [Azure App Service](https://docs.microsoft.com/azure/app-service/overview) | Hilft beim Erstellen leistungsstarker Cloudanwendungen auf einer vollständig verwalteten Plattform. | Die Kosten basieren auf Größe, Standort und Nutzungsdauer. [Weitere Informationen](https://azure.microsoft.com/pricing/details/app-service/windows) |
-| [Azure DevOps](https://docs.microsoft.com/azure/azure-portal/tutorial-azureportal-devops) | Stellt die Pipeline für Continuous Integration und Continuous Deployment (CI/CD) für die App-Entwicklung bereit. Die Pipeline beginnt bei einem Git-Repository für die Verwaltung von Anwendungscode, einem Buildsystem zum Erstellen von Paketen und anderen Buildartefakten sowie einem Releaseverwaltungssystem zum Bereitstellen von Änderungen in Entwicklungs-, Test- und Produktionsumgebungen. |
+| [Data Migration Assistant](/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso nutzt den Datenmigrations-Assistenten, um Kompatibilitätsprobleme zu bewerten und zu erkennen, die sich unter Umständen auf die Datenbankfunktionen in Azure auswirken. Der Datenmigrations-Assistent bewertet die Featureparität zwischen SQL-Quellen und -Zielen und empfiehlt Verbesserungen der Leistung und Zuverlässigkeit. | Sie können das Tool kostenlos herunterladen. |
+| [Azure Database Migration Service](/azure/dms/dms-overview) | Azure Database Migration Service ermöglicht die nahtlose Migration mehrerer Datenbankquellen zu Azure-Datenplattformen mit minimaler Downtime. | Informieren Sie sich über die [unterstützten Regionen](/azure/dms/dms-overview#regional-availability) und die [Preise für den Database Migration Service](https://azure.microsoft.com/pricing/details/database-migration). |
+| [Azure SQL-Datenbank](/azure/azure-sql/database/sql-database-paas-overview) | Ein intelligenter, vollständig verwalteter Dienst für relationale Clouddatenbanken. | Die Kosten basieren auf Features, Durchsatz und Größe. [Weitere Informationen](https://azure.microsoft.com/pricing/details/sql-database/managed) |
+| [Azure App Service](/azure/app-service/overview) | Hilft beim Erstellen leistungsstarker Cloudanwendungen auf einer vollständig verwalteten Plattform. | Die Kosten basieren auf Größe, Standort und Nutzungsdauer. [Weitere Informationen](https://azure.microsoft.com/pricing/details/app-service/windows) |
+| [Azure DevOps](/azure/azure-portal/tutorial-azureportal-devops) | Stellt die Pipeline für Continuous Integration und Continuous Deployment (CI/CD) für die App-Entwicklung bereit. Die Pipeline beginnt bei einem Git-Repository für die Verwaltung von Anwendungscode, einem Buildsystem zum Erstellen von Paketen und anderen Buildartefakten sowie einem Releaseverwaltungssystem zum Bereitstellen von Änderungen in Entwicklungs-, Test- und Produktionsumgebungen. |
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -148,12 +148,12 @@ Contoso geht bei der Ausführung der Migration wie folgt vor:
 
 **Benötigen Sie weitere Hilfe?**
 
-- [Erhalten Sie Hilfe](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal) bei der Bereitstellung einer SQL-Datenbank-Instanz.
-- Erfahren Sie mehr zu den [Ressourcenlimits für virtuelle Kerne](https://docs.microsoft.com/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools).
+- [Erhalten Sie Hilfe](/azure/sql-database/sql-database-get-started-portal) bei der Bereitstellung einer SQL-Datenbank-Instanz.
+- Erfahren Sie mehr zu den [Ressourcenlimits für virtuelle Kerne](/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools).
 
 ## <a name="step-2-assess-the-database"></a>Schritt 2: Bewerten der Datenbank
 
-Die Contoso-Administratoren bewerten die Datenbank mithilfe des Datenbankmigrations-Assistenten und migrieren sie anschließend anhand des [Tutorials: Onlinemigration von SQL Server zu einer Einzel- oder Pooldatenbank in Azure SQL-Datenbank mit DMS](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online) mithilfe von Azure Database Migration Service. Sie können Online-, Offline- und Hybridmigrationen (Vorschauversion) ausführen.
+Die Contoso-Administratoren bewerten die Datenbank mithilfe des Datenbankmigrations-Assistenten und migrieren sie anschließend anhand des [Tutorials: Onlinemigration von SQL Server zu einer Einzel- oder Pooldatenbank in Azure SQL-Datenbank mit DMS](/azure/dms/tutorial-sql-server-azure-sql-online) mithilfe von Azure Database Migration Service. Sie können Online-, Offline- und Hybridmigrationen (Vorschauversion) ausführen.
 
 Die Administratoren gehen im Wesentlichen wie folgt vor:
 
@@ -343,21 +343,21 @@ Nachdem die Ressourcen nun zu Azure migriert wurden, muss Contoso die neue Infra
 
 ### <a name="security"></a>Sicherheit
 
-- Contoso muss sicherstellen, dass die neue Datenbank `SmartHotel-Registration` geschützt ist. [Weitere Informationen](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)
+- Contoso muss sicherstellen, dass die neue Datenbank `SmartHotel-Registration` geschützt ist. [Weitere Informationen](/azure/sql-database/sql-database-security-overview)
 - Insbesondere muss Contoso die Web-Apps für die Verwendung von SSL mit Zertifikaten aktualisieren.
 
 ### <a name="backups"></a>Backups
 
-- Das Team von Contoso überprüft die Sicherungsanforderungen für Azure SQL-Datenbank. [Weitere Informationen](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)
-- Es muss sich auch über die Verwaltung von Sicherungen und Wiederherstellungen in SQL-Datenbank informieren. [Erfahren Sie mehr über automatische Sicherungen.](https://docs.microsoft.com/azure/sql-database/sql-database-automated-backups)
-- Das Unternehmen muss die Implementierung von Failovergruppen berücksichtigen, um ein regionales Failover für die Datenbank bereitzustellen. [Weitere Informationen](https://docs.microsoft.com/azure/sql-database/sql-database-geo-replication-overview)
+- Das Team von Contoso überprüft die Sicherungsanforderungen für Azure SQL-Datenbank. [Weitere Informationen](/azure/sql-database/sql-database-automated-backups)
+- Es muss sich auch über die Verwaltung von Sicherungen und Wiederherstellungen in SQL-Datenbank informieren. [Erfahren Sie mehr über automatische Sicherungen.](/azure/sql-database/sql-database-automated-backups)
+- Das Unternehmen muss die Implementierung von Failovergruppen berücksichtigen, um ein regionales Failover für die Datenbank bereitzustellen. [Weitere Informationen](/azure/sql-database/sql-database-geo-replication-overview)
 - Es muss hinsichtlich der Resilienz die Bereitstellung der Web-App in der Hauptregion (`East US 2`) und der sekundären Region (`Central US`) in Erwägung ziehen. Das Team könnte den Traffic Manager konfigurieren, um ein Failover während regionaler Ausfälle sicherzustellen.
 
 ### <a name="licensing-and-cost-optimization"></a>Lizenzierung und Kostenoptimierung
 
 - Nachdem alle Ressourcen bereitgestellt wurden, weist Contoso Azure-Tags basierend auf seiner [Infrastrukturplanung](./contoso-migration-infrastructure.md#set-up-tagging) zu.
 - Die gesamte Lizenzierung ist in die Kosten für die PaaS-Dienste integriert, die Contoso verwendet. Diese Kosten werden über das Enterprise Agreement verrechnet.
-- Contoso verwendet die [Azure-Kostenverwaltung und -Abrechnung](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview), um sicherzustellen, dass das von den IT-Führungskräften festgelegte Budget nicht überschritten wird.
+- Contoso verwendet die [Azure-Kostenverwaltung und -Abrechnung](/azure/cost-management-billing/cost-management-billing-overview), um sicherzustellen, dass das von den IT-Führungskräften festgelegte Budget nicht überschritten wird.
 
 ## <a name="conclusion"></a>Zusammenfassung
 

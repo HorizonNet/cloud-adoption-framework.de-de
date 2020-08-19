@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 9169417f75434a176767fb20182a1bdd99a70bbf
-ms.sourcegitcommit: 452e09b543e7b84f943db5b02480ba2d18afd939
+ms.openlocfilehash: a897563fae2d50bfdc6b6aa00414b5c7d01660a5
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87866195"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570707"
 ---
 # <a name="migrate-open-source-databases-to-azure"></a>Migration von Open-Source-Datenbanken zu Azure
 
@@ -50,7 +50,7 @@ Das Cloudteam von Contoso hat sich folgende Ziele für die verschiedenen Migrati
 
 ## <a name="solution-design"></a>Lösungsentwurf
 
-Contoso hat bereits eine [Migrationsbewertung](https://docs.microsoft.com/azure/cloud-adoption-framework/plan/contoso-migration-assessment) für seine digitalen Ressourcen mithilfe von [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) durchgeführt.
+Contoso hat bereits eine [Migrationsbewertung](../..//plan/contoso-migration-assessment.md) für seine digitalen Ressourcen mithilfe von [Azure Migrate](/azure/migrate/migrate-services-overview) durchgeführt.
 
 ![Diagramm zum Migrationsprozess.](./media/contoso-migration-oss-db-to-azure/migration-process.png)
 _Abbildung 1: Migrationsvorgang_
@@ -68,9 +68,9 @@ Contoso bewertet den vorgeschlagen Entwurf anhand einer Liste mit Vor- und Nacht
 
 Vor der Migration muss die erforderliche Azure-Struktur vorhanden sein, damit die Verwaltungs- und Abrechnungsaspekte der Lösung unterstützt werden können.
 
-Für die Verwaltungsanforderungen wurden mehrere [Verwaltungsgruppen](https://docs.microsoft.com/azure/governance/management-groups/overview) erstellt, um die Organisationsstruktur unterstützen zu können.
+Für die Verwaltungsanforderungen wurden mehrere [Verwaltungsgruppen](/azure/governance/management-groups/overview) erstellt, um die Organisationsstruktur unterstützen zu können.
 
-Für die Abrechnungsanforderungen werden alle Azure-Ressourcen mit entsprechenden [Abrechnungstags](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources) versehen.
+Für die Abrechnungsanforderungen werden alle Azure-Ressourcen mit entsprechenden [Abrechnungstags](/azure/azure-resource-manager/management/tag-resources) versehen.
 
 ### <a name="migration-process"></a>Migrationsprozess
 
@@ -92,7 +92,7 @@ Datenmigrationen folgen einem Standardmuster, das wiederholt werden kann. Dazu g
 
 #### <a name="step-1-discovery"></a>Schritt 1: Ermittlung
 
-Contoso hat Azure Migrate verwendet, um die Abhängigkeiten in der Contoso-Umgebung offenzulegen. Mithilfe von Azure Migrate können Anwendungskomponenten in Windows- und Linux-Systemen automatisch erkannt und die Kommunikation zwischen Diensten zugeordnet werden. Mithilfe von Azure Migrate wurden auch die Verbindungen zwischen Contoso-Servern, Prozessen, der Wartezeit zwischen eingehenden und ausgehenden Verbindungen und Ports in der über TCP verbundenen Architektur offengelegt. Contoso musste einfach nur [Microsoft Monitoring Agent](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows) und den [Microsoft Dependency-Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) installieren.
+Contoso hat Azure Migrate verwendet, um die Abhängigkeiten in der Contoso-Umgebung offenzulegen. Mithilfe von Azure Migrate können Anwendungskomponenten in Windows- und Linux-Systemen automatisch erkannt und die Kommunikation zwischen Diensten zugeordnet werden. Mithilfe von Azure Migrate wurden auch die Verbindungen zwischen Contoso-Servern, Prozessen, der Wartezeit zwischen eingehenden und ausgehenden Verbindungen und Ports in der über TCP verbundenen Architektur offengelegt. Contoso musste einfach nur [Microsoft Monitoring Agent](/azure/log-analytics/log-analytics-agent-windows) und den [Microsoft Dependency-Agent](/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) installieren.
 
 Contoso konnte mehr als 300 Datenbankinstanzen identifizieren, die migriert werden müssen. Von diesen Instanzen können etwa 40 Prozent zu PaaS-basierten Diensten verschoben werden. Die verbleibenden 60 Prozent der Instanzen müssen zu einem IaaS-basierten Ansatz mit einer VM verschoben werden, die die entsprechende Datenbanksoftware ausführt.
 
@@ -110,15 +110,15 @@ Bei der Inventarisierung der Datenbanken wurden die einzelnen Datenbanken überp
 
 | Datenbanktyp | Details | Ziel | Migrationsleitfaden |
 | --- | --- | --- | --- |
-| **MySQL** | Alle unterstützten Versionen werden vor der Migration auf eine unterstützte Version aktualisiert. | Azure Database for MySQL (PaaS) | [Leitfaden](https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online)
-| **PostgreSQL** | Alle unterstützten Versionen werden vor der Migration auf eine unterstützte Version aktualisiert. | Azure Database for PostgreSQL (PaaS) | [Leitfaden](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online) |
+| **MySQL** | Alle unterstützten Versionen werden vor der Migration auf eine unterstützte Version aktualisiert. | Azure Database for MySQL (PaaS) | [Leitfaden](/azure/dms/tutorial-mysql-azure-mysql-online)
+| **PostgreSQL** | Alle unterstützten Versionen werden vor der Migration auf eine unterstützte Version aktualisiert. | Azure Database for PostgreSQL (PaaS) | [Leitfaden](/azure/dms/tutorial-postgresql-azure-postgresql-online) |
 | **MariaDB** | Alle unterstützten Versionen werden vor der Migration auf eine unterstützte Version aktualisiert. | Azure Database for MariaDB (PaaS) | [Leitfaden](https://datamigration.microsoft.com/scenario/mariadb-to-azuremariadb?step=1) |
 
 #### <a name="step-4-migration-planning"></a>Schritt 4: Migrationsplanung
 
-Aufgrund der großen Anzahl der Datenbanken richtete Contoso ein Projektmanagementbüro ein, das den Überblick über die einzelnen Datenbankmigrationsinstanzen behalten sollte. Jedem Unternehmens- und Anwendungsteam wurden [Zuständigkeiten und Verantwortlichkeiten](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/migration-considerations/assess/) zugewiesen.
+Aufgrund der großen Anzahl der Datenbanken richtete Contoso ein Projektmanagementbüro ein, das den Überblick über die einzelnen Datenbankmigrationsinstanzen behalten sollte. Jedem Unternehmens- und Anwendungsteam wurden [Zuständigkeiten und Verantwortlichkeiten](../..//migrate/migration-considerations/assess/index.md) zugewiesen.
 
-Außerdem führte Contoso eine [Überprüfung der Workloads auf die jeweilige Migrationsbereitschaft](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/migration-considerations/assess/evaluate) durch. Bei dieser Überprüfung wurden die Infrastruktur, die Datenbank und die Netzwerkkomponenten untersucht.
+Außerdem führte Contoso eine [Überprüfung der Workloads auf die jeweilige Migrationsbereitschaft](../..//migrate/migration-considerations/assess/evaluate.md) durch. Bei dieser Überprüfung wurden die Infrastruktur, die Datenbank und die Netzwerkkomponenten untersucht.
 
 #### <a name="step-5-test-migrations"></a>Schritt 5: Testmigrationen
 
@@ -128,7 +128,7 @@ Außerdem wurden Rollbackverfahren für die einzelnen Datenbankworkloads herausg
 
 Für die IaaS-basierten Workloads richtete das Unternehmen vorab sämtliche erforderliche Drittanbietersoftware ein.
 
-Nach der Testmigration verwendete Contoso die verschiedenen [Tools für die Kostenschätzung](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/migration-considerations/assess/estimate) von Azure, um ein genaueres Bild der zukünftigen Betriebskosten für die Migration zu erhalten.
+Nach der Testmigration verwendete Contoso die verschiedenen [Tools für die Kostenschätzung](../..//migrate/migration-considerations/assess/estimate.md) von Azure, um ein genaueres Bild der zukünftigen Betriebskosten für die Migration zu erhalten.
 
 #### <a name="step-6-migration"></a>Schritt 6: Migration
 
@@ -146,7 +146,7 @@ Da die migrierten Ressourcen in Azure enthalten sind, muss Contoso seine neue In
 
 Contoso muss Folgendes durchführen:
 
-- Sicherstellen, dass die neuen Datenbankworkloads in Azure geschützt sind. Weitere Informationen finden Sie unter [Übersicht über die Sicherheitsfunktionen von Azure SQL-Datenbank und SQL Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview).
+- Sicherstellen, dass die neuen Datenbankworkloads in Azure geschützt sind. Weitere Informationen finden Sie unter [Übersicht über die Sicherheitsfunktionen von Azure SQL-Datenbank und SQL Managed Instance](/azure/sql-database/sql-database-security-overview).
 - Die Konfiguration der Firewall und des virtuellen Netzwerks überprüfen.
 - Contoso sollte Azure Private Link einrichten, damit der gesamte Datenverkehr der Datenbanken innerhalb von Azure und des lokalen Netzwerks bleibt.
 - Contoso sollte Azure Advanced Threat Protection aktivieren.
@@ -156,7 +156,7 @@ Contoso muss Folgendes durchführen:
 Mithilfe der Geowiederherstellung kann sichergestellt werden, dass die Datenbanken in Azure gesichert sind. Auf diese Weise können im Falle eines regionalen Ausfalls Sicherungen in Regionspaaren verwendet werden.
 
 > [!IMPORTANT]
->Stellen Sie sicher, dass die Azure-Ressource über eine [Ressourcensperre](https://docs.microsoft.com/azure/azure-resource-manager/management/lock-resources) verfügt und nicht gelöscht werden kann. Gelöschte Server können nicht wiederhergestellt werden.
+>Stellen Sie sicher, dass die Azure-Ressource über eine [Ressourcensperre](/azure/azure-resource-manager/management/lock-resources) verfügt und nicht gelöscht werden kann. Gelöschte Server können nicht wiederhergestellt werden.
 
 #### <a name="licensing-and-cost-optimization"></a>Lizenzierung und Kostenoptimierung
 

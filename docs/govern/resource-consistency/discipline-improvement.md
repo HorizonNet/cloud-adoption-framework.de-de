@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4dda94a3ec0439fd30097fb5f9962d3cdb6eeeec
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 3627dda9bbefbd969c7323fc4708eee509902d2c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218202"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573240"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>Verbesserung der Disziplin „Ressourcenkonsistenz“
 
@@ -73,7 +73,7 @@ Für die erfolgreiche Migration einer Umgebung muss eine Reihe von technischen u
 - Definieren Sie Abhängigkeiten zwischen Ressourcen.
 - Implementieren Sie automatisierte Ressourcenskalierung entsprechend der Anforderungen, die in der Planungsphase definiert wurden.
 - Steuern Sie die Zugriffsleistung, um die Qualität der empfangenen Dienste zu messen.
-- Erwägen Sie die Bereitstellung von [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview), um die SLA-Durchsetzung mithilfe von Konfigurationseinstellungen und Ressourcenerstellungsregeln zu verwalten.
+- Erwägen Sie die Bereitstellung von [Azure Policy](/azure/governance/policy/overview), um die SLA-Durchsetzung mithilfe von Konfigurationseinstellungen und Ressourcenerstellungsregeln zu verwalten.
 
 ## <a name="adopt-and-migrate"></a>Einführen und Migrieren
 
@@ -122,7 +122,7 @@ Nachdem die Transformation abgeschlossen ist, müssen Governance und Betrieb wä
 - Unterstützen Sie die für die Cloudeinführung und Cloudstrategie zuständigen Teams, indem Sie diese Anomalien ermitteln und beseitigen.
 - Bestimmen Sie, ob Änderungen an Ihrer Disziplin „Ressourcenkonsistenz“ für Abrechnung und SLAs erforderlich sind.
 - Werten Sie Protokollierungs- und Überwachungstools aus, um festzustellen, ob Ihre lokale, Cloudgateway- oder Hybridlösung angepasst werden muss.
-- Bestimmen Sie für Geschäftseinheiten und geografisch verteilte Gruppen, ob Ihre Organisation weitere Cloudverwaltungsfunktionen (z.B. [Azure-Verwaltungsgruppen](https://docs.microsoft.com/azure/governance/management-groups)) erwägen sollte, um besser die zentralisierte Richtlinie anzuwenden und SLA-Anforderungen zu erfüllen.
+- Bestimmen Sie für Geschäftseinheiten und geografisch verteilte Gruppen, ob Ihre Organisation weitere Cloudverwaltungsfunktionen (z.B. [Azure-Verwaltungsgruppen](/azure/governance/management-groups)) erwägen sollte, um besser die zentralisierte Richtlinie anzuwenden und SLA-Anforderungen zu erfüllen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

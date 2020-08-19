@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0a3288c992c09ebd4da7285225da7b295b1cc626
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: 15c0b4f654607e2e150d547c52edd56e95c5fe89
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373049"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570503"
 ---
 # <a name="assess-workloads-and-refine-plans"></a>Bewerten von Workloads und Optimieren von Plänen
 
@@ -63,8 +63,8 @@ Führen Sie diese Schritte aus, um mit Azure Migrate mit einer Servermigrationsb
 
 #### <a name="learn-more"></a>Weitere Informationen
 
-- [Übersicht über Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview)
-- [Migrieren von physischen oder virtuellen Servern zu Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
+- [Übersicht über Azure Migrate](/azure/migrate/migrate-services-overview)
+- [Migrieren von physischen oder virtuellen Servern zu Azure](/azure/migrate/tutorial-migrate-physical-virtual-machines)
 - [Azure Migrate im Azure-Portal](https://portal.azure.com/#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview)
 
 ::: zone-end
@@ -73,22 +73,22 @@ Führen Sie diese Schritte aus, um mit Azure Migrate mit einer Servermigrationsb
 
 Service Map ermittelt automatisch Anwendungskomponenten auf Windows- und Linux-Systemen und stellt die Kommunikation zwischen Diensten dar. Mit Service Map können Sie die Server Ihrer Vorstellung gemäß anzeigen – als verbundene Systeme, die wichtige Dienste bereitstellen. Dienstzuordnung zeigt Verbindungen zwischen Servern, Prozessen, ein- und ausgehende Verbindungslatenz und Ports über die gesamte TCP-Verbindungsarchitektur an. Außer der Installation eines Agents ist keine weitere Konfiguration erforderlich.
 
-Für Azure Migrate wird die Dienstzuordnung verwendet, um die Berichterstellungsfunktionen und Abhängigkeiten für die Umgebung zu verbessern. Diese Integration ist unter [Visualisierung von Abhängigkeiten](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization) ausführlich beschrieben. Wenn Sie den Azure Migrate-Dienst verwenden, können Sie ohne weitere Schritte die Dienstzuordnung konfigurieren und ihre Vorteile nutzen. Die folgenden Anweisungen dienen als Referenz, falls Sie die Dienstzuordnung für andere Zwecke oder Projekte verwenden möchten.
+Für Azure Migrate wird die Dienstzuordnung verwendet, um die Berichterstellungsfunktionen und Abhängigkeiten für die Umgebung zu verbessern. Diese Integration ist unter [Visualisierung von Abhängigkeiten](/azure/migrate/concepts-dependency-visualization) ausführlich beschrieben. Wenn Sie den Azure Migrate-Dienst verwenden, können Sie ohne weitere Schritte die Dienstzuordnung konfigurieren und ihre Vorteile nutzen. Die folgenden Anweisungen dienen als Referenz, falls Sie die Dienstzuordnung für andere Zwecke oder Projekte verwenden möchten.
 
 #### <a name="enable-dependency-visualization-using-service-map"></a>Aktivieren der Visualisierung von Abhängigkeiten mithilfe der Dienstzuordnung
 
 Zur Verwendung der Visualisierung von Abhängigkeiten müssen Sie Agents auf alle lokalen Computer, die Sie analysieren möchten, herunterladen und dort installieren.
 
-- Der [Microsoft Monitoring Agent](https://docs.microsoft.com/azure/log-analytics/log-analytics-agent-windows) muss auf jedem Computer installiert werden.
-- Der [Microsoft Dependency-Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) muss auf jedem Computer installiert werden.
+- Der [Microsoft Monitoring Agent](/azure/log-analytics/log-analytics-agent-windows) muss auf jedem Computer installiert werden.
+- Der [Microsoft Dependency-Agent](/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) muss auf jedem Computer installiert werden.
 - Falls Sie über Computer ohne Internetverbindung verfügen, ist es erforderlich, auf diese das Log Analytics-Gateway herunterzuladen und dort zu installieren.
 
 <!-- markdownlint-disable MD024 -->
 
 #### <a name="learn-more"></a>Weitere Informationen
 
-- [Verwenden der Dienstzuordnungslösung in Azure](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)
-- [Azure Migrate und Dienstzuordnung: Visualisierung von Abhängigkeiten](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization)
+- [Verwenden der Dienstzuordnungslösung in Azure](/azure/azure-monitor/insights/service-map)
+- [Azure Migrate und Dienstzuordnung: Visualisierung von Abhängigkeiten](/azure/migrate/concepts-dependency-visualization)
 
 ## <a name="challenge-assumptions"></a>[Hinterfragen von Annahmen](#tab/Challenge-Assumptions)
 
@@ -102,7 +102,7 @@ Die obigen Links deuten darauf hin, dass Annahmen akzeptabel sind und während d
 
 Zwei gleich wichtige Schritte sind erforderlich, um die [inkrementelle Rationalisierung](../../digital-estate/rationalize.md#incremental-rationalization) erfolgreich bereitzustellen. Beide Schritte erfordern Daten und Erkenntnisse zur Umgebung. Bei jedem Ansatz werden jedoch die Zeit und die Detailgranularität berücksichtigt, die bei einer erfolgreichen Migration erforderlich sind.
 
-- [Releaseplanung – Zehn Anwendungen](../../digital-estate/rationalize.md#release-planning): Während der anfänglichen Rationalisierung und der Releaseplanung kommt nur eine der [fünf Phasen der Rationalisierung](../../digital-estate/5-rs-of-rationalization.md) zum Einsatz. Schätzen und planen Sie basierend auf der Rationalisierungsoption, die am besten mit den in der [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) definierten Beweggründen übereinstimmt.
+- [Releaseplanung – Zehn Anwendungen](../../digital-estate/rationalize.md#release-planning): Während der anfänglichen Rationalisierung und der Releaseplanung kommt nur eine der [fünf Phasen der Rationalisierung](../../digital-estate/5-rs-of-rationalization.md) zum Einsatz. Schätzen und planen Sie basierend auf der Rationalisierungsoption, die am besten mit den in der [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) definierten Beweggründen übereinstimmt.
 
 - **Ausführliche Bewertung der einzelnen Workloads:** Die mit der Releaseplanung „Zehn Anwendungen“ verbundenen Annahmen sind annehmbar, um einen Plan zu erstellen. Diese Annahmen können jedoch signifikante Probleme verursachen, wenn sie vor der Migration nicht ausgewertet werden.
 

@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 5c77156723fe1b5b54a775250bf368f886c4d101
-ms.sourcegitcommit: abbc6283f9f63a71333e0129ecdd8ad291517776
+ms.openlocfilehash: e0d0019bd11bde0178f4cbcb0a99f2638edf43b2
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87523982"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88566848"
 ---
 # <a name="azure-fundamental-concepts"></a>Grundlegende Konzepte in Azure
 
@@ -60,7 +60,7 @@ Azure definiert drei Arten von Rollen für die Verwaltung von Abonnements, Ident
 - Rollenbasierte Zugriffssteuerung in Azure
 - Azure AD-Administrator (Azure Active Directory)
 
-Die Kontoadministratorrolle für ein Azure-Abonnement wird dem E-Mail-Konto zugewiesen, das zum Erstellen des Azure-Abonnements verwendet wird. Der Kontoadministrator ist der Besitzer des Abonnements, an den die Abrechnung erfolgt. Der Kontoadministrator kann über das Azure-Portal [Abonnementadministratoren verwalten](https://docs.microsoft.com/azure/cost-management-billing/manage/add-change-subscription-administrator).
+Die Kontoadministratorrolle für ein Azure-Abonnement wird dem E-Mail-Konto zugewiesen, das zum Erstellen des Azure-Abonnements verwendet wird. Der Kontoadministrator ist der Besitzer des Abonnements, an den die Abrechnung erfolgt. Der Kontoadministrator kann über das Azure-Portal [Abonnementadministratoren verwalten](/azure/cost-management-billing/manage/add-change-subscription-administrator).
 
 Standardmäßig wird die Dienstadministratorrolle für ein Abonnement auch dem E-Mail-Konto zugewiesen, das zum Erstellen des Azure-Abonnements verwendet wird. Der Dienstadministrator verfügt über Berechtigungen für das Abonnement, die einem RBAC-basierten Besitzer entsprechen. Der Dienstadministrator besitzt außerdem Vollzugriff auf das Azure-Portal. Der Kontoadministrator kann den Dienstadministrator in ein anderes E-Mail-Konto ändern.
 
@@ -68,7 +68,7 @@ Wenn Sie ein Azure-Abonnement erstellen, können Sie es einem vorhandenen Azure 
 
 Ein E-Mail-Konto kann mehreren Azure-Abonnements zugeordnet sein. Der Kontoadministrator kann ein Abonnement in ein anderes Konto übertragen.
 
-Eine detaillierte Beschreibung der Rollen in Azure finden Sie unter [Administratorrollen für klassische Abonnements, Azure RBAC-Rollen und Azure AD-Administratorrollen](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles).
+Eine detaillierte Beschreibung der Rollen in Azure finden Sie unter [Administratorrollen für klassische Abonnements, Azure RBAC-Rollen und Azure AD-Administratorrollen](/azure/role-based-access-control/rbac-and-directory-admin-roles).
 
 ## <a name="subscriptions-and-regions"></a>Abonnements und Regionen
 
@@ -85,16 +85,16 @@ Die folgenden Ressourcen bieten detaillierte Informationen über die Konzepte, d
 
 - [Wie funktioniert Azure?](../../get-started/what-is-azure.md)
 - [Ressourcenzugriffsverwaltung in Azure](../../govern/resource-consistency/resource-access-management.md)
-- [Übersicht über den Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)
-- [Rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC) für Azure-Ressourcen](https://docs.microsoft.com/azure/role-based-access-control/overview)
-- [Was ist Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
-- [Zuordnen oder Hinzufügen eines Azure-Abonnements zu Ihrem Azure Active Directory-Mandanten](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
-- [Topologien für Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies)
-- [Abonnements, Lizenzen, Konten und Mandanten für die Microsoft-Cloudangebote](https://docs.microsoft.com/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
+- [Übersicht über den Azure Resource Manager](/azure/azure-resource-manager/management/overview)
+- [Rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC) für Azure-Ressourcen](/azure/role-based-access-control/overview)
+- [Was ist Azure Active Directory?](/azure/active-directory/fundamentals/active-directory-whatis)
+- [Zuordnen oder Hinzufügen eines Azure-Abonnements zu Ihrem Azure Active Directory-Mandanten](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)
+- [Topologien für Azure AD Connect](/azure/active-directory/hybrid/plan-connect-topologies)
+- [Abonnements, Lizenzen, Konten und Mandanten für die Microsoft-Cloudangebote](/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings)
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nun, da Sie die grundlegenden Azure-Konzepte kennen, geht es als Nächstes um das [Skalieren mit mehreren Azure-Abonnements](../azure-best-practices/scale-subscriptions.md).
+Nun, da Sie die grundlegenden Azure-Konzepte kennen, geht es als Nächstes um das Skalieren mit mehreren Azure-Abonnements.
 
 > [!div class="nextstepaction"]
 > [Skalieren mit mehreren Azure-Abonnements](../azure-best-practices/scale-subscriptions.md)

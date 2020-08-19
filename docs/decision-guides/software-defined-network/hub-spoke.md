@@ -8,30 +8,30 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: c9fbde180874f530191c3d58a8cb86df9906fc10
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: cd1ecfe758fcab297440bc65dcda7da310c25ec5
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86190718"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573988"
 ---
 # <a name="software-defined-networking-hub-and-spoke"></a>Softwaredefiniertes Netzwerk: Hub-and-Spoke-Modell
 
 Im Hub-and-Spoke-Netzwerkmodell wird Ihre auf Azure basierende Cloud-Netzwerkinfrastruktur in mehreren verbundenen virtuellen Netzwerken organisiert. Mithilfe dieses Modells können Sie gängige Kommunikations- oder Sicherheitsanforderungen effizienter bewältigen und mögliche Einschränkungen des Abonnements berücksichtigen.
 
-Im Hub-and-Spoke-Modell ist der _Hub_ ein virtuelles Netzwerk, das als Zentrale für die Verwaltung externer Konnektivitäts- und Hostingdienste dient, die von mehreren Workloads genutzt werden. Die _Spokes_ sind virtuelle Netzwerke, die Workloads hosten und sich über [Peering virtueller Netzwerke](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview) mit dem zentralen Hub verbinden.
+Im Hub-and-Spoke-Modell ist der _Hub_ ein virtuelles Netzwerk, das als Zentrale für die Verwaltung externer Konnektivitäts- und Hostingdienste dient, die von mehreren Workloads genutzt werden. Die _Spokes_ sind virtuelle Netzwerke, die Workloads hosten und sich über [Peering virtueller Netzwerke](/azure/virtual-network/virtual-network-peering-overview) mit dem zentralen Hub verbinden.
 
 Der gesamte Datenverkehr, der in die oder aus den Spoke-Netzwerken der Workload geleitet wird, wird über das Hub-Netzwerk geleitet, wo er weitergeleitet, inspiziert oder anderweitig von zentral verwalteten IT-Regeln oder -Prozessen verwaltet werden kann.
 
 Mit diesem Modell sollen die folgenden Bedenken ausgeräumt werden:
 
 - **Kosteneinsparungen und Effizienz der Verwaltung.** Zentralisierung von Diensten, die von mehreren Workloads, z.B. Network Virtual Appliances (NVAs) und DNS-Servern an einem zentralen Standort gemeinsam genutzt werden können. Auf diese Weise kann die IT-Abteilung redundante Ressourcen und den Verwaltungsaufwand für mehrere Workloads minimieren.
-- **Überwinden von Abonnementgrenzen**. Große cloudbasierte Workloads können den Einsatz von mehr Ressourcen erfordern, als in einem einzelnen Azure-Abonnements zulässig ist. Durch ein Peering virtueller Netzwerke für eine Workload aus verschiedenen Abonnements zu einem zentralen Hub können diese Grenzwerte umgangen werden. Weitere Informationen finden Sie unter [Grenzwerte für Azure-Netzwerke](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#networking-limits).
+- **Überwinden von Abonnementgrenzen**. Große cloudbasierte Workloads können den Einsatz von mehr Ressourcen erfordern, als in einem einzelnen Azure-Abonnements zulässig ist. Durch ein Peering virtueller Netzwerke für eine Workload aus verschiedenen Abonnements zu einem zentralen Hub können diese Grenzwerte umgangen werden. Weitere Informationen finden Sie unter [Grenzwerte für Azure-Netzwerke](/azure/azure-resource-manager/management/azure-subscription-service-limits#networking-limits).
 - **Trennung von Zuständigkeiten.** Die Fähigkeit, einzelne Workloads zwischen zentralen IT-Teams und Workloadteams bereitzustellen.
 
 Das folgende Diagramm zeigt eine exemplarische Hub-and-Spoke-Architektur mit zentral verwalteter Hybridkonnektivität.
 
-![Architektur für Hub-and-Spoke-Netzwerk](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/images/hub-spoke.png)
+![Architektur für Hub-and-Spoke-Netzwerk](/azure/architecture/reference-architectures/hybrid-networking/images/hub-spoke.png)
 
 Die Hub-and-Spoke-Architektur wird häufig zusammen mit der hybriden Netzwerkarchitektur verwendet und bietet eine zentral verwaltete Verbindung mit Ihrer lokalen Umgebung, die von mehreren Workloads gemeinsam genutzt wird. In diesem Szenario durchläuft der gesamte Datenverkehr zwischen den Workloads und den lokalen Standorten den Hub, wo er verwaltet und geschützt werden kann.
 
@@ -46,11 +46,11 @@ Für die Implementieren einer virtuellen Netzwerkarchitektur gemäß Hub-and-Spo
 
 ## <a name="global-hub-and-spoke"></a>Globales Hub-and-Spoke-Modell
 
-Hub-and-Spoke-Architekturen werden häufig mit virtuellen Netzwerken implementiert, die in derselben Azure-Region bereitgestellt werden, um die Wartezeiten zwischen Netzwerken zu minimieren. Große Organisationen mit globaler Reichweite müssen möglicherweise Workloads in mehreren Regionen bereitstellen, um Verfügbarkeit, Notfallwiederherstellung oder die Erfüllung gesetzlicher Anforderungen zu gewährleisten. Das Hub-and-Spoke-Modell kann ein [globalen Peerings virtueller Netzwerke](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview) in Azure nutzen, um die zentralisierte Verwaltung und die gemeinsamen Dienste regionsübergreifend erweitern, um die über die ganze Welt verteilten Workloads zu unterstützen.
+Hub-and-Spoke-Architekturen werden häufig mit virtuellen Netzwerken implementiert, die in derselben Azure-Region bereitgestellt werden, um die Wartezeiten zwischen Netzwerken zu minimieren. Große Organisationen mit globaler Reichweite müssen möglicherweise Workloads in mehreren Regionen bereitstellen, um Verfügbarkeit, Notfallwiederherstellung oder die Erfüllung gesetzlicher Anforderungen zu gewährleisten. Das Hub-and-Spoke-Modell kann ein [globalen Peerings virtueller Netzwerke](/azure/virtual-network/virtual-network-peering-overview) in Azure nutzen, um die zentralisierte Verwaltung und die gemeinsamen Dienste regionsübergreifend erweitern, um die über die ganze Welt verteilten Workloads zu unterstützen.
 
 ## <a name="learn-more"></a>Weitere Informationen
 
 Beispiele für Referenzarchitekturen, in denen gezeigt wird, wie Hub-and-Spoke-Netzwerke in Azure implementiert werden, finden Sie unter:
 
-- [Implementieren einer Hub-and-Spoke-Netzwerktopologie in Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
-- [Implementieren einer Hub-and-Spoke-Netzwerktopologie mit gemeinsamen Diensten in Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services)
+- [Implementieren einer Hub-and-Spoke-Netzwerktopologie in Azure](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
+- [Implementieren einer Hub-and-Spoke-Netzwerktopologie mit gemeinsamen Diensten in Azure](/azure/architecture/reference-architectures/hybrid-networking/shared-services)

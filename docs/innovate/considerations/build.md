@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 64332dc7479c9c587fd9aaa4af7a58bb50060af6
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 363d36df75c6db1007409258f973966a2364c2a7
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86478853"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195040"
 ---
 <!--docsTest:ignore "Oxford English Dictionary" -->
 
@@ -51,7 +51,7 @@ Dieser letzte Schritt ist der Höhepunkt einer durch Empathie gesteuerten Hypoth
 
 Sobald die Kernannahmen nachgewiesen sind, konzentrieren sich die späteren Iterationen auf Wachstumstests zusätzlich zu den Empathietests. Sobald eine Lösung mit Empathie erstellt, getestet und überprüft wurde, können Sie beginnen, den angesprochenen Markt bedarfsabhängig zu verstehen. Dies kann durch eine Erweiterung der oben beschriebenen Standardhypothesenformel erreicht werden. Schätzen Sie auf der Grundlage der verfügbaren Daten die Größe des Gesamtmarkts – d. h. die Anzahl der potenziellen Kunden.
 
-Schätzen Sie davon ausgehend, für wieviel Prozent des Gesamtmarkts eine ähnliche Herausforderung gilt und darum diese Lösung interessant sein könnte. Dies ist Ihr angesprochener Markt. Die nächste zu testende Hypothese lautet: Wie wird sich das Leben von _x_ % Kunden verbessern, wenn sie die vorgeschlagene Lösung nutzen, um diese zu bewältigende Herausforderung anzugehen? Eine kleine Auswahl von Kunden wird wichtige Indikatoren aufzeigen, die einen prozentualen Einfluss auf die Gruppe betroffener Kunden anzeigen.
+Schätzen Sie davon ausgehend, für wieviel Prozent des Gesamtmarkts eine ähnliche Herausforderung gilt und darum diese Lösung interessant sein könnte. Dies ist Ihr angesprochener Markt. Die nächste zu testende Hypothese lautet: Wie wird sich das Leben von *x %* von Kunden verbessern, wenn sie die vorgeschlagene Lösung nutzen, um diese zu bewältigende Herausforderung anzugehen? Eine kleine Auswahl von Kunden wird wichtige Indikatoren aufzeigen, die einen prozentualen Einfluss auf die Gruppe betroffener Kunden anzeigen.
 
 ### <a name="define-a-solution-to-test-the-hypothesis"></a>Definieren einer Lösung zum Testen der Hypothese
 

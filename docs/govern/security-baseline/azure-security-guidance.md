@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e564cbb6f281df05fc717583d3e944bdf3c35e51
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: aae1094414c775bfbd652d681df60c0f3abab675
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84785734"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568956"
 ---
 <!-- cSpell:ignore DPIAs -->
 
@@ -51,7 +51,7 @@ Das **Microsoft Service Trust Portal** enthält ausführliche Informationen und 
 
 ## <a name="unique-intelligent-insights"></a>Spezifische Intelligent Insights
 
-Mit zunehmendem Maße des Volumens und der Komplexität von Sicherheitssignalen dauert es viel zu lange, festzustellen, ob es sich bei den Signalen um glaubwürdige Bedrohungen handelt. Microsoft bietet eine beispiellose Bandbreite der Security Intelligence auf Cloudebene, sodass Sie Bedrohungen schnell erkennen und beheben können. Weitere Informationen finden Sie unter [Übersicht über Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-intro).
+Mit zunehmendem Maße des Volumens und der Komplexität von Sicherheitssignalen dauert es viel zu lange, festzustellen, ob es sich bei den Signalen um glaubwürdige Bedrohungen handelt. Microsoft bietet eine beispiellose Bandbreite der Security Intelligence auf Cloudebene, sodass Sie Bedrohungen schnell erkennen und beheben können. Weitere Informationen finden Sie unter [Übersicht über Azure Security Center](/azure/security-center/security-center-intro).
 
 ## <a name="azure-threat-intelligence"></a>Azure Threat Intelligence
 

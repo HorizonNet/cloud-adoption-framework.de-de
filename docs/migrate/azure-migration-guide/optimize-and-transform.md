@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: f011bae35204c2acff3f8b9b48df61f9528499a3
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: 29bb9f2e21049c00ae125a92d84f168f4261e88a
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86372947"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570299"
 ---
 <!-- markdownlint-disable MD025 DOCSMD001 -->
 
@@ -62,13 +62,13 @@ Ein Ändern der Größe von virtuellen Produktionscomputern kann zu Dienstunterb
 
 ::: zone target="docs"
 
-- [Verwalten von Reservierungen für Azure-Ressourcen](https://docs.microsoft.com/azure/billing/billing-manage-reserved-vm-instance)
-- [Ändern der Größe eines virtuellen Windows-Computers](https://docs.microsoft.com/azure/virtual-machines/windows/resize-vm)
-- [Ändern der Größe eines virtuellen Linux-Computers über die Azure-Befehlszeilenschnittstelle](https://docs.microsoft.com/azure/virtual-machines/linux/change-vm-size)
+- [Verwalten von Reservierungen für Azure-Ressourcen](/azure/billing/billing-manage-reserved-vm-instance)
+- [Ändern der Größe eines virtuellen Windows-Computers](/azure/virtual-machines/windows/resize-vm)
+- [Ändern der Größe eines virtuellen Linux-Computers über die Azure-Befehlszeilenschnittstelle](/azure/virtual-machines/linux/change-vm-size)
 
 Partner können die Nutzung über das Partner Center überprüfen.
 
-- [Azure-VM-Größe für die maximale Reservierungsnutzung](https://docs.microsoft.com/partner-center/azure-usage)
+- [Azure-VM-Größe für die maximale Reservierungsnutzung](/partner-center/azure-usage)
 
 ::: zone-end
 
@@ -128,8 +128,8 @@ Sie können auch **Advisor** verwenden und die Registerkarte **Kosten** auswähl
 
 ::: zone target="docs"
 
-- [Tutorial: Optimieren von Kosten mithilfe von Empfehlungen](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
-- [Vermeiden unerwarteter Gebühren bei der Azure-Abrechnung und -Kostenverwaltung](https://docs.microsoft.com/azure/billing/billing-getting-started)
-- [Schnellstart: Ermitteln und Analysieren von Kosten mit der Kostenanalyse](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis)
+- [Tutorial: Optimieren von Kosten mithilfe von Empfehlungen](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
+- [Vermeiden unerwarteter Gebühren bei der Azure-Abrechnung und -Kostenverwaltung](/azure/billing/billing-getting-started)
+- [Schnellstart: Ermitteln und Analysieren von Kosten mit der Kostenanalyse](/azure/cost-management/quick-acm-cost-analysis)
 
 ::: zone-end

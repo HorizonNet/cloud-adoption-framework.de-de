@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b92f9593c0d35f4c73dc17733d1ae57dbbe599b4
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 1f50e011e0d7a4884f7cb6202895acd4acdeb5f8
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220259"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573648"
 ---
 # <a name="deployment-acceleration-sample-policy-statements"></a>Beschleunigung der Bereitstellung – Beispiele für Richtlinienanweisungen
 
@@ -31,7 +31,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine konfigu
 
 **Richtlinienanweisung:** Alle Ressourcen, die in der Cloud bereitgestellt werden, sollten nach Möglichkeit mithilfe von Vorlagen oder Automatisierungsskripts bereitgestellt werden.
 
-**Potenzielle Entwurfsoptionen:** [Azure Resource Manager-Vorlagen](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview) ermöglichen die Verwendung von „Infrastructure-as-Code“ zum Bereitstellen Ihrer Ressourcen in Azure. Sie können aber auch [Terraform](https://docs.microsoft.com/azure/terraform/terraform-overview) als konsistentes lokales und cloudbasiertes Bereitstellungstool verwenden.
+**Potenzielle Entwurfsoptionen:** [Azure Resource Manager-Vorlagen](/azure/azure-resource-manager/templates/overview) ermöglichen die Verwendung von „Infrastructure-as-Code“ zum Bereitstellen Ihrer Ressourcen in Azure. Sie können aber auch [Terraform](/azure/terraform/terraform-overview) als konsistentes lokales und cloudbasiertes Bereitstellungstool verwenden.
 
 ## <a name="lack-of-visibility-into-system-issues"></a>Mangelnde Transparenz von Systemproblemen
 
@@ -42,7 +42,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine konfigu
 - Wichtige Metriken und Diagnosemaßnahmen werden für alle Produktionssysteme und Komponenten identifiziert. Überwachungs- und Diagnosetools werden auf diese Systeme angewendet und regelmäßig von Mitarbeitern im Betrieb überwacht.
 - Der Betrieb kann auch den Einsatz von Überwachungs- und Diagnosetools in produktionsfernen Umgebungen wie Staging und Qualitätskontrolle erwägen, um Systemprobleme bereits zu identifizieren, bevor sie in der Produktionsumgebung auftreten.
 
-**Potenzielle Entwurfsoptionen:** [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor), einschließlich Log Analytics und Application Insights, stellt Tools zum Sammeln und Analysieren von Telemetriedaten bereit, damit Sie die Leistung Ihrer Anwendungen besser verstehen und proaktiv Probleme identifizieren können, die sich auf die Anwendungen und die zugehörigen Ressourcen auswirken. Darüber hinaus werden im [Azure-Aktivitätsprotokoll](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) alle auf Plattformebene vorgenommenen Änderungen erfasst. Deshalb sollte es auf nicht konforme Änderungen überwacht und überprüft werden.
+**Potenzielle Entwurfsoptionen:** [Azure Monitor](/azure/azure-monitor), einschließlich Log Analytics und Application Insights, stellt Tools zum Sammeln und Analysieren von Telemetriedaten bereit, damit Sie die Leistung Ihrer Anwendungen besser verstehen und proaktiv Probleme identifizieren können, die sich auf die Anwendungen und die zugehörigen Ressourcen auswirken. Darüber hinaus werden im [Azure-Aktivitätsprotokoll](/azure/azure-monitor/platform/activity-logs-overview) alle auf Plattformebene vorgenommenen Änderungen erfasst. Deshalb sollte es auf nicht konforme Änderungen überwacht und überprüft werden.
 
 ## <a name="configuration-security-reviews"></a>Sicherheitsüberprüfungen der Konfiguration
 

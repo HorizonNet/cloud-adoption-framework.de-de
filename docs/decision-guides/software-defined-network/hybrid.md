@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 4fc258b8213842e0cc3428146f83cb9e31bb39df
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 38f0a66e9a5aa1b9adf0a232e3cb37f27ae96459
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214976"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574005"
 ---
 # <a name="software-defined-networking-hybrid-network"></a>Softwaredefiniertes Netzwerk: Hybrides Netzwerk
 
 Die Hybrid Cloud-Netzwerkarchitektur ermöglicht virtuellen Netzwerken den Zugriff auf Ihre lokalen Ressourcen und Dienste und umgekehrt. Dabei wird eine dedizierte WAN-Verbindung wie ExpressRoute oder eine andere Verbindungsmethode zum direkten Verbinden der Netzwerke verwendet.
 
-![Hybrides Netzwerk](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/images/expressroute.png)
+![Hybrides Netzwerk](/azure/architecture/reference-architectures/hybrid-networking/images/expressroute.png)
 
 Aufbauend auf der cloudnativen virtuellen Netzwerkarchitektur wird ein hybrides virtuelles Netzwerk bei seiner ersten Erstellung isoliert. Das Hinzufügen von Konnektivität zur lokalen Umgebung gewährt den ein- und ausgehenden Zugriff auf das lokale Netzwerk, obwohl alle anderen eingehenden Datenströme, die auf Ressourcen im virtuellen Netzwerk abzielen, ausdrücklich zugelassen werden müssen. Sie können die Verbindung mithilfe virtueller Firewallgeräte und Routingregeln schützen, um den Zugriff einzuschränken. Sie können auch genau festlegen, auf welche Dienste in den beiden Netzwerken zugegriffen werden kann, indem Sie cloudnative Routingfunktionen verwenden oder virtuelle Netzwerkappliances (NVAs) zur Verwaltung des Datenverkehrs bereitstellen.
 
@@ -45,4 +45,4 @@ Ihr für den Umstieg auf die Cloud zuständiges Team muss die folgenden Aspekte 
 
 Weitere Informationen zu Hybridnetzwerken in Azure finden Sie hier:
 
-- [Referenzarchitektur für hybride Netzwerke](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/expressroute). Hybride virtuelle Azure-Netzwerke verwenden entweder eine ExpressRoute-Leitung oder Azure VPN, um Ihr virtuelles Netzwerk mit den vorhandenen, nicht von Azure gehosteten IT-Ressourcen Ihrer Organisation zu verbinden. In diesem Artikel werden die Optionen für die Erstellung eines hybriden Netzwerks in Azure erörtert.
+- [Referenzarchitektur für hybride Netzwerke](/azure/architecture/reference-architectures/hybrid-networking/expressroute). Hybride virtuelle Azure-Netzwerke verwenden entweder eine ExpressRoute-Leitung oder Azure VPN, um Ihr virtuelles Netzwerk mit den vorhandenen, nicht von Azure gehosteten IT-Ressourcen Ihrer Organisation zu verbinden. In diesem Artikel werden die Optionen für die Erstellung eines hybriden Netzwerks in Azure erörtert.

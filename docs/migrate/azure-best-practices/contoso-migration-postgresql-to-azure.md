@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: b279577e4be2e841e0e2ae5700ec2833882cb56d
-ms.sourcegitcommit: 26aee3c6f596bb8a9f1e16af93cdf94e41a61dee
+ms.openlocfilehash: 4b3923936052cce1ae973f779bc53ac35a1ba0c1
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87400495"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567290"
 ---
 <!-- cSpell:ignore BYOK postgres psql dvdrental -->
 
@@ -68,7 +68,7 @@ Im Rahmen des Lösungsentwurfs hat Contoso die in Azure verfügbaren Features f�
 - Die Verarbeitungsleistung kann durch die Verwendung von Lesereplikaten verbessert werden.
 - Bring Your Own Key (BYOK) wird für die Datenverschlüsselung unterstützt.
 - Der Dienst kann mithilfe von Azure Private Link nur für den internen Netzwerkdatenverkehr (kein öffentlicher Zugriff) verfügbar gemacht werden.
-- Die [Bandbreite und Wartezeit](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways) zwischen der Anwendung und der Datenbank ist je nach ausgewähltem Gateway (Azure ExpressRoute oder Site-to-Site-VPN) ausreichend.
+- Die [Bandbreite und Wartezeit](/azure/vpn-gateway/vpn-gateway-about-vpngateways) zwischen der Anwendung und der Datenbank ist je nach ausgewähltem Gateway (Azure ExpressRoute oder Site-to-Site-VPN) ausreichend.
 
 ### <a name="solution-review"></a>Überprüfung der Lösung
 
@@ -97,7 +97,7 @@ Es werden nur Migrationen zur gleichen oder einer höheren Version unterstützt.
 
 Microsoft strebt in Azure Database for PostgreSQL (Einzelserver) die Unterstützung von _n-2_-Versionen der PostgreSQL-Engine an. Das bedeutet, dass die aktuelle Hauptversion in Azure (_n_) und die beiden vorherigen Hauptversionen ( _-2_) unterstützt werden.
 
-Aktuelle Informationen zu unterstützten Versionen finden Sie unter [Unterstützte PostgreSQL-Hauptversionen](https://docs.microsoft.com/azure/postgresql/concepts-supported-versions).
+Aktuelle Informationen zu unterstützten Versionen finden Sie unter [Unterstützte PostgreSQL-Hauptversionen](/azure/postgresql/concepts-supported-versions).
 
 > [!NOTE]
 > Automatische Upgrades von Hauptversionen werden nicht unterstützt. Es erfolgt beispielsweise kein automatisches Upgrade von PostgreSQL 9.5 auf PostgreSQL 9.6. Um ein Upgrade auf die nächste Hauptversion durchzuführen, erstellen Sie eine Sicherung der Datenbank, und stellen Sie sie auf einem Server wieder her, der mit der neuen Engine-Version erstellt wurde.
@@ -122,13 +122,13 @@ Contoso muss die aktuelle Datenbank auf Replikationsprobleme überprüfen. Folge
 
 Contoso stehen zum Durchführen der Migration verschiedene Optionen zur Verfügung:
 
-- [Sichern und Wiederherstellen](https://docs.microsoft.com/azure/postgresql/howto-migrate-using-dump-and-restore)
-- [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online)
-- [Import/Export](https://docs.microsoft.com/azure/postgresql/howto-migrate-using-export-and-import)
+- [Sichern und Wiederherstellen](/azure/postgresql/howto-migrate-using-dump-and-restore)
+- [Azure Database Migration Service](/azure/dms/tutorial-postgresql-azure-postgresql-online)
+- [Import/Export](/azure/postgresql/howto-migrate-using-export-and-import)
 
 Contoso hat sich für die Verwendung von Azure Database Migration Service entschieden, damit das Migrationsprojekt für Upgrades der Hauptversion wiederverwendet werden kann. Da eine einzelne Database Migration Service-Aktivität maximal vier Datenbanken unterstützt, richtet Contoso mithilfe der folgenden Schritte mehrere Aufträge ein.
 
-Zur Vorbereitung wird ein virtuelles Netzwerk eingerichtet, um auf die Datenbank zuzugreifen. Zum Erstellen einer virtuellen Netzwerkverbindung mit [VPN-Gateways](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways) stehen mehrere Methoden zur Auswahl.
+Zur Vorbereitung wird ein virtuelles Netzwerk eingerichtet, um auf die Datenbank zuzugreifen. Zum Erstellen einer virtuellen Netzwerkverbindung mit [VPN-Gateways](/azure/vpn-gateway/vpn-gateway-about-vpngateways) stehen mehrere Methoden zur Auswahl.
 
 <!-- docsTest:ignore "Azure Database Migration Services" -->
 
@@ -248,8 +248,8 @@ Zur Vorbereitung wird ein virtuelles Netzwerk eingerichtet, um auf die Datenbank
     _Abbildung 13: Abschließen der Übernahme_
 
       > [!NOTE]
-      > Die vorherigen Schritte in Database Migration Service können auch über die [Azure-Befehlszeilenschnittstelle (Azure CLI)](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online) ausgeführt werden.
-    
+      > Die vorherigen Schritte in Database Migration Service können auch über die [Azure-Befehlszeilenschnittstelle (Azure CLI)](/azure/dms/tutorial-postgresql-azure-postgresql-online) ausgeführt werden.
+
 1. Importieren Sie das Datenbankschema (Schritt 2):
 
       ```cmd
@@ -272,12 +272,12 @@ Da die migrierten Ressourcen in Azure enthalten sind, muss Contoso seine neue In
 
 Contoso muss Folgendes durchführen:
 
-- Sicherstellen, dass die neue Azure Database for PostgreSQL-Instanz und die Datenbanken geschützt sind. Weitere Informationen finden Sie unter [Sicherheit in Azure Database for PostgreSQL – Einzelserver](https://docs.microsoft.com/azure/postgresql/concepts-security).
-- Die [Firewallregeln](https://docs.microsoft.com/azure/postgresql/concepts-firewall-rules) und die Konfigurationseinstellungen des virtuellen Netzwerks überprüfen, um sicherzustellen, dass Verbindungen auf die Anwendungen beschränkt sind, die Zugriff benötigen.
-- Contoso sollte für die Datenverschlüsselung [BYOK](https://docs.microsoft.com/azure/postgresql/concepts-data-encryption-postgresql) implementieren.
-- Contoso muss alle Anwendungen zur Verwendung von [SSL](https://docs.microsoft.com/azure/postgresql/concepts-ssl-connection-security)-Verbindungen mit den Datenbanken aktualisieren.
-- Contoso sollte [Private Link](https://docs.microsoft.com/azure/postgresql/concepts-data-access-and-security-private-link) einrichten, damit der gesamte Datenverkehr der Datenbanken innerhalb von Azure und des lokalen Netzwerks bleibt.
-- Contoso sollte [Azure Advanced Threat Protection (ATP)](https://docs.microsoft.com/azure/postgresql/concepts-data-access-and-security-threat-protection) aktivieren.
+- Sicherstellen, dass die neue Azure Database for PostgreSQL-Instanz und die Datenbanken geschützt sind. Weitere Informationen finden Sie unter [Sicherheit in Azure Database for PostgreSQL – Einzelserver](/azure/postgresql/concepts-security).
+- Die [Firewallregeln](/azure/postgresql/concepts-firewall-rules) und die Konfigurationseinstellungen des virtuellen Netzwerks überprüfen, um sicherzustellen, dass Verbindungen auf die Anwendungen beschränkt sind, die Zugriff benötigen.
+- Contoso sollte für die Datenverschlüsselung [BYOK](/azure/postgresql/concepts-data-encryption-postgresql) implementieren.
+- Contoso muss alle Anwendungen zur Verwendung von [SSL](/azure/postgresql/concepts-ssl-connection-security)-Verbindungen mit den Datenbanken aktualisieren.
+- Contoso sollte [Private Link](/azure/postgresql/concepts-data-access-and-security-private-link) einrichten, damit der gesamte Datenverkehr der Datenbanken innerhalb von Azure und des lokalen Netzwerks bleibt.
+- Contoso sollte [Azure Advanced Threat Protection (ATP)](/azure/postgresql/concepts-data-access-and-security-threat-protection) aktivieren.
 - Contoso sollte die Protokollanalyse konfigurieren, um die Sicherheit sowie relevante Einträge zu überwachen und Warnungen zu erhalten.
 
 ### <a name="backups"></a>Backups

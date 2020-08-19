@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: ecc0dd8b3a91461d5c5d1dd1ce4c062646d974fb
-ms.sourcegitcommit: 7d3fc1e407cd18c4fc7c4964a77885907a9b85c0
+ms.openlocfilehash: a015370bdbc90440606b8089a4c644cad3b853c1
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "80430502"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571846"
 ---
 # <a name="set-up-basic-alerts"></a>Einrichten einfacher Warnungen
 
@@ -20,7 +20,7 @@ Ein wichtiger Faktor bei der Ressourcenverwaltung ist die Benachrichtigung bei a
 
 ## <a name="azure-monitor-alerts"></a>Azure Monitor-Warnungen
 
-Azure Monitor bietet [Warnungsfunktionen](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-overview), um Sie per E-Mail oder Messaging über auftretende Probleme zu informieren. Diese Funktionen basieren auf einer gemeinsamen Datenüberwachungsplattform, die Protokolle und Metriken enthält, die von Ihren Servern und anderen Ressourcen generiert werden. Durch die Verwendung eines allgemeinen Toolsatzes in Azure Monitor können Sie Daten analysieren, die aus mehreren Ressourcen kombiniert wurden, und damit Warnungen auslösen. Diese Trigger können Folgendes umfassen:
+Azure Monitor bietet [Warnungsfunktionen](/azure/azure-monitor/platform/alerts-overview), um Sie per E-Mail oder Messaging über auftretende Probleme zu informieren. Diese Funktionen basieren auf einer gemeinsamen Datenüberwachungsplattform, die Protokolle und Metriken enthält, die von Ihren Servern und anderen Ressourcen generiert werden. Durch die Verwendung eines allgemeinen Toolsatzes in Azure Monitor können Sie Daten analysieren, die aus mehreren Ressourcen kombiniert wurden, und damit Warnungen auslösen. Diese Trigger können Folgendes umfassen:
 
 - Metrikwerte
 - Protokollsuchabfragen
@@ -28,9 +28,9 @@ Azure Monitor bietet [Warnungsfunktionen](https://docs.microsoft.com/azure/azure
 - Integrität der zugrunde liegenden Azure-Plattform
 - Tests für die Verfügbarkeit von Websites
 
-In der [Liste der Azure Monitor-Datenquellen](https://docs.microsoft.com/azure/azure-monitor/platform/data-sources) finden Sie eine ausführlichere Beschreibung der Quellen von Überwachungsdaten, die von diesem Dienst gesammelt wurden.
+In der [Liste der Azure Monitor-Datenquellen](/azure/azure-monitor/platform/data-sources) finden Sie eine ausführlichere Beschreibung der Quellen von Überwachungsdaten, die von diesem Dienst gesammelt wurden.
 
-Ausführliche Informationen zum manuellen Erstellen und Verwalten von Warnungen über das Azure-Portal finden Sie in der [Azure Monitor-Dokumentation](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric).
+Ausführliche Informationen zum manuellen Erstellen und Verwalten von Warnungen über das Azure-Portal finden Sie in der [Azure Monitor-Dokumentation](/azure/azure-monitor/platform/alerts-metric).
 
 ## <a name="automated-deployment-of-recommended-alerts"></a>Automatisierte Bereitstellung empfohlener Warnungen
 

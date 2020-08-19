@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: a5bf1edc6d10d3a0f7f4b3e77fccfa85b6247f89
-ms.sourcegitcommit: 26aee3c6f596bb8a9f1e16af93cdf94e41a61dee
+ms.openlocfilehash: 86feba84b8bec522d887c788f4942492ffa8dce8
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87400563"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567341"
 ---
 <!-- cSpell:ignore givenscj OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc contosoosticket osticket InnoDB binlog systemctl NSGs -->
 
@@ -53,7 +53,7 @@ Szenario:
 - Da Contoso eine Produktionsworkload migriert, befinden sich die Ressourcen dann in der Ressourcengruppe `ContosoRG` für die Produktion.
 - Die `OSTICKETWEB`-Ressource wird in der primären Region (USA, Osten 2) repliziert und im Produktionsnetzwerk (`VNET-PROD-EUS2`) abgelegt:
   - Die Web-VM wird sich im Front-End-Subnetz (`PROD-FE-EUS2`) befinden.
-- Die Anwendungsdatenbank wird mit [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) zu Azure Database for MySQL migriert.
+- Die Anwendungsdatenbank wird mit [Azure Database Migration Service](/azure/dms/dms-overview) zu Azure Database for MySQL migriert.
 - Die lokalen VMs im Rechenzentrum von Contoso werden nach Abschluss der Migration außer Betrieb gesetzt.
 
     ![Diagramm der Szenarioarchitektur.](./media/contoso-migration-rehost-linux-vm-mysql/architecture.png)
@@ -81,9 +81,9 @@ Zur Migration der Datenbank:
 
 | Dienst | BESCHREIBUNG | Kosten |
 | --- | --- | --- |
-| [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) | Contoso verwendet Azure Migrate, um seine VMware-VMs zu bewerten. Azure Migrate bewertet die Eignung der Computer für die Migration. Der Dienst stellt Schätzungen zur Größe und zu den Kosten für die Ausführung in Azure bereit. | [Azure Migrate](https://azure.microsoft.com/pricing/details/azure-migrate) ist ohne Aufpreis erhältlich. Je nach den Tools (Originalanbieter oder ISV), die Sie für die Bewertung und Migration verwenden, können aber ggf. Gebühren anfallen. |
-| [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview) | Database Migration Service ermöglicht die nahtlose Migration von mehreren Datenbankquellen zu Azure-Datenplattformen bei minimaler Ausfallzeit. | Informieren Sie sich über die [unterstützten Regionen](https://docs.microsoft.com/azure/dms/dms-overview#regional-availability) und die [Preise für den Database Migration Service](https://azure.microsoft.com/pricing/details/database-migration). |
-| [Azure Database for MySQL](https://docs.microsoft.com/azure/mysql) | Die Datenbank basiert auf der Open-Source-MySQL-Datenbank-Engine. Sie stellt eine vollständig verwaltete, unternehmensgerechte MySQL Community-Datenbank für die Entwicklung und Bereitstellung von Apps bereit. | Erfahren Sie mehr über [Preise](https://azure.microsoft.com/pricing/details/mysql) und Skalierbarkeits-Optionen zu Azure Database for MySQL. |
+| [Azure Migrate](/azure/migrate/migrate-services-overview) | Contoso verwendet Azure Migrate, um seine VMware-VMs zu bewerten. Azure Migrate bewertet die Eignung der Computer für die Migration. Der Dienst stellt Schätzungen zur Größe und zu den Kosten für die Ausführung in Azure bereit. | [Azure Migrate](https://azure.microsoft.com/pricing/details/azure-migrate) ist ohne Aufpreis erhältlich. Je nach den Tools (Originalanbieter oder ISV), die Sie für die Bewertung und Migration verwenden, können aber ggf. Gebühren anfallen. |
+| [Azure Database Migration Service](/azure/dms/dms-overview) | Database Migration Service ermöglicht die nahtlose Migration von mehreren Datenbankquellen zu Azure-Datenplattformen bei minimaler Ausfallzeit. | Informieren Sie sich über die [unterstützten Regionen](/azure/dms/dms-overview#regional-availability) und die [Preise für den Database Migration Service](https://azure.microsoft.com/pricing/details/database-migration). |
+| [Azure Database for MySQL](/azure/mysql) | Die Datenbank basiert auf der Open-Source-MySQL-Datenbank-Engine. Sie stellt eine vollständig verwaltete, unternehmensgerechte MySQL Community-Datenbank für die Entwicklung und Bereitstellung von Apps bereit. | Erfahren Sie mehr über [Preise](https://azure.microsoft.com/pricing/details/mysql) und Skalierbarkeits-Optionen zu Azure Database for MySQL. |
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -91,10 +91,10 @@ Für dieses Szenario benötigt Contoso Folgendes.
 
 | Requirements (Anforderungen) | Details |
 | --- | --- |
-| **Azure-Abonnement** | Contoso hat in einem früheren Artikel Abonnements erstellt. Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/free) erstellen. <br><br> Wenn Sie ein kostenloses Konto erstellen, sind Sie der Administrator Ihres Abonnements und können alle Aktionen durchführen. <br><br> Falls Sie ein vorhandenes Abonnement verwenden, aber nicht der Administrator sind, sollten Sie den Administrator bitten, Ihnen Berechtigungen vom Typ „Besitzer“ oder „Mitwirkender“ zuzuweisen. <br><br> Falls Sie präzisere Berechtigungen benötigen, helfen Ihnen die Informationen unter [Verwalten des Site Recovery-Zugriffs mit rollenbasierter Zugriffssteuerung (Role-Based Access Control, RBAC)](https://docs.microsoft.com/azure/site-recovery/site-recovery-role-based-linked-access-control) weiter. |
+| **Azure-Abonnement** | Contoso hat in einem früheren Artikel Abonnements erstellt. Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/free) erstellen. <br><br> Wenn Sie ein kostenloses Konto erstellen, sind Sie der Administrator Ihres Abonnements und können alle Aktionen durchführen. <br><br> Falls Sie ein vorhandenes Abonnement verwenden, aber nicht der Administrator sind, sollten Sie den Administrator bitten, Ihnen Berechtigungen vom Typ „Besitzer“ oder „Mitwirkender“ zuzuweisen. <br><br> Falls Sie präzisere Berechtigungen benötigen, helfen Ihnen die Informationen unter [Verwalten des Site Recovery-Zugriffs mit rollenbasierter Zugriffssteuerung (Role-Based Access Control, RBAC)](/azure/site-recovery/site-recovery-role-based-linked-access-control) weiter. |
 | **Azure-Infrastruktur** | Contoso richtet die Azure-Infrastruktur ein, wie in [Contoso – Bereitstellen einer Migrationsinfrastruktur](./contoso-migration-infrastructure.md) beschrieben. |
 | **Lokale Server** | Auf der lokalen vCenter Server-Instanz sollte Version 5.5, 6.0, 6.5 oder 6.7 ausgeführt werden. <br><br> Ein ESXi-Host mit Version 5.5, 6.0, 6.5 oder 6.7. <br><br> Mindestens eine VMware-VM auf dem ESXi-Host. |
-| **Lokale VMs** | [Überprüfen Sie Linux-Computer](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros), deren Ausführung unter Azure unterstützt wird. |
+| **Lokale VMs** | [Überprüfen Sie Linux-Computer](/azure/virtual-machines/linux/endorsed-distros), deren Ausführung unter Azure unterstützt wird. |
 
 ## <a name="scenario-steps"></a>Szenarioschritte
 
@@ -147,7 +147,7 @@ Die Contoso-Administratoren führen zum Einrichten der Komponenten die folgenden
 
 **Benötigen Sie weitere Hilfe?**
 
-Informieren Sie sich über die Einrichtung der [Azure Migrate: Servermigration](https://docs.microsoft.com/azure/migrate/migrate-services-overview#azure-migrate-server-migration-tool).
+Informieren Sie sich über die Einrichtung der [Azure Migrate: Servermigration](/azure/migrate/migrate-services-overview#azure-migrate-server-migration-tool).
 
 ## <a name="step-2-prepare-on-premises-vmware-for-azure-migrate-server-migration"></a>Schritt 2: Vorbereiten der lokalen VMware-Instanz für die Azure Migrate- Servermigration
 
@@ -156,11 +156,11 @@ Nach der Migration zu Azure möchte Contoso eine Verbindung mit den replizierten
 - Für den Zugriff auf virtuelle Azure-Computer müssen sie vor der Migration auf dem lokalen Linux-Computer SSH aktivieren. Bei Ubuntu kann dieser Schritt mit dem folgenden Befehl ausgeführt werden: `sudo apt-get ssh install -y`.
 - Nach Durchführung der Migration können die Administratoren die **Startdiagnose** aktivieren, um einen Screenshot des virtuellen Computers anzuzeigen.
 - Falls dies nicht funktioniert, müssen sie überprüfen, ob der virtuelle Computer ausgeführt wird, und sie sollten die folgenden [Tipps zur Problembehandlung](https://social.technet.microsoft.com/wiki/contents/articles/31666.troubleshooting-remote-desktop-connection-after-failover-using-asr.aspx) lesen.
-- Installieren des [Azure Linux Agents](https://docs.microsoft.com/azure/virtual-machines/extensions/agent-linux).
+- Installieren des [Azure Linux Agents](/azure/virtual-machines/extensions/agent-linux).
 
 **Benötigen Sie weitere Hilfe?**
 
-Erfahren Sie, wie Sie [VMs auf die Migration vorbereiten](https://docs.microsoft.com/azure/migrate/prepare-for-migration).
+Erfahren Sie, wie Sie [VMs auf die Migration vorbereiten](/azure/migrate/prepare-for-migration).
 
 ## <a name="step-3-replicate-vms"></a>Schritt 3: Replizieren von VMs
 
@@ -193,7 +193,7 @@ Nachdem die Ermittlung abgeschlossen ist, können sie mit der Replikation der An
 
     - die Option **Nein** aus, falls Sie den Azure-Hybridvorteil nicht anwenden möchten. Wählen Sie **Weiter**aus.
 
-1. Überprüfen Sie unter **Compute** den VM-Namen, die Größe, den Typ des Betriebssystemdatenträgers und die Verfügbarkeitsgruppe. Die VMs müssen die [Azure-Anforderungen](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware#vmware-requirements) erfüllen.
+1. Überprüfen Sie unter **Compute** den VM-Namen, die Größe, den Typ des Betriebssystemdatenträgers und die Verfügbarkeitsgruppe. Die VMs müssen die [Azure-Anforderungen](/azure/migrate/migrate-support-matrix-vmware#vmware-requirements) erfüllen.
 
     - **Größe des virtuellen Computers:** Bei Verwendung von Bewertungsempfehlungen enthält die Dropdownliste „VM-Größe“ die empfohlene Größe. Andernfalls wählt Azure Migrate eine Größe basierend auf der größten Übereinstimmung im Azure-Abonnement aus. Alternativ können Sie unter **Azure-VM-Größe** manuell eine Größe auswählen.
     - **Betriebssystemdatenträger:** Geben Sie den Betriebssystemdatenträger (Startdatenträger) für die VM an. Der Betriebssystemdatenträger enthält den Bootloader und das Installationsprogramm des Betriebssystems.
@@ -278,7 +278,7 @@ Es gibt mehrere Möglichkeiten, die MySQL-Datenbank zu verschieben. Bei jeder Op
 
 ### <a name="step-6a-migrate-the-database-via-database-migration-service"></a>Schritt 6a: Migrieren der Datenbank per Database Migration Service
 
-Die Administratoren von Contoso migrieren die Datenbank mit Database Migration Service, indem sie die Schritte im [ausführlichen Migrationstutorial](https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online) befolgen. Sie können Online-, Offline- und Hybridmigrationen (Vorschauversion) von MySQL 5.6 oder 5.7 ausführen.
+Die Administratoren von Contoso migrieren die Datenbank mit Database Migration Service, indem sie die Schritte im [ausführlichen Migrationstutorial](/azure/dms/tutorial-mysql-azure-mysql-online) befolgen. Sie können Online-, Offline- und Hybridmigrationen (Vorschauversion) von MySQL 5.6 oder 5.7 ausführen.
 
 > [!NOTE]
 > MySQL 8.0 wird in Azure Database for MySQL unterstützt, aber das Database Migration Service-Tool unterstützt diese Version noch nicht.
@@ -389,8 +389,8 @@ Der letzte Schritt im Migrationsprozess besteht in der Aktualisierung der Verbin
 
 **Benötigen Sie weitere Hilfe?**
 
-- Informieren Sie sich über das [Ausführen einer Testmigration](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#run-a-test-migration).
-- Informieren Sie sich über das [Migrieren von virtuellen Computern zu Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-vmware#migrate-vms).
+- Informieren Sie sich über das [Ausführen einer Testmigration](/azure/migrate/tutorial-migrate-vmware#run-a-test-migration).
+- Informieren Sie sich über das [Migrieren von virtuellen Computern zu Azure](/azure/migrate/tutorial-migrate-vmware#migrate-vms).
 
 ## <a name="review-the-deployment"></a>Überprüfen der Bereitstellung
 
@@ -416,7 +416,7 @@ Das Sicherheitsteam von Contoso überprüft die VM und die Datenbank, um möglic
 - Das Sicherheitsteam erwägt darüber hinaus, die Daten auf den VM-Datenträgern mithilfe von Azure Disk Encryption und Azure Key Vault zu schützen.
 - Die Kommunikation zwischen der VM und der Datenbankinstanz ist nicht für SSL konfiguriert. SSL muss konfiguriert werden, um sicherzustellen, dass der Datenbank-Datenverkehr nicht gehackt werden kann.
 
-Weitere Informationen finden Sie unter [Bewährte Sicherheitsmethoden für IaaS-Workloads in Azure](https://docs.microsoft.com/azure/security/fundamentals/iaas).
+Weitere Informationen finden Sie unter [Bewährte Sicherheitsmethoden für IaaS-Workloads in Azure](/azure/security/fundamentals/iaas).
 
 <!-- docsTest:ignore "Quickstart: Set" -->
 
@@ -424,11 +424,11 @@ Weitere Informationen finden Sie unter [Bewährte Sicherheitsmethoden für IaaS-
 
 Zur Sicherstellung der Geschäftskontinuität und Notfallwiederherstellung führt Contoso die folgenden Aktionen durch:
 
-- **Schützen von Daten.** Contoso sichert die Daten auf der Anwendungs-VM mit den [Sicherungsmöglichkeiten für VMs von Azure](https://docs.microsoft.com/azure/backup/backup-azure-vms-introduction). Das Unternehmen muss die Sicherung für die Datenbank nicht konfigurieren. Azure Database for MySQL erstellt und speichert Serversicherungen automatisch. Contoso hat sich für die Verwendung der Georedundanz für die Datenbank entschieden, damit sie resilient und einsatzbereit für die Produktion ist.
-- **Aufrechterhalten des Anwendungsbetriebs.** Contoso repliziert die virtuellen Anwendungscomputer in Azure mit Site Recovery in einer sekundären Region. Weitere Informationen finden Sie unter [Quickstart: Einrichten der Notfallwiederherstellung in einer sekundären Azure-Region für einen virtuellen Azure-Computer](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-quickstart).
+- **Schützen von Daten.** Contoso sichert die Daten auf der Anwendungs-VM mit den [Sicherungsmöglichkeiten für VMs von Azure](/azure/backup/backup-azure-vms-introduction). Das Unternehmen muss die Sicherung für die Datenbank nicht konfigurieren. Azure Database for MySQL erstellt und speichert Serversicherungen automatisch. Contoso hat sich für die Verwendung der Georedundanz für die Datenbank entschieden, damit sie resilient und einsatzbereit für die Produktion ist.
+- **Aufrechterhalten des Anwendungsbetriebs.** Contoso repliziert die virtuellen Anwendungscomputer in Azure mit Site Recovery in einer sekundären Region. Weitere Informationen finden Sie unter [Quickstart: Einrichten der Notfallwiederherstellung in einer sekundären Azure-Region für einen virtuellen Azure-Computer](/azure/site-recovery/azure-to-azure-quickstart).
 
 ### <a name="licensing-and-cost-optimization"></a>Lizenzierung und Kostenoptimierung
 
 - Nach der Bereitstellung von Ressourcen weist Contoso Azure-Tags zu, die während der [Bereitstellung der Azure-Infrastruktur](./contoso-migration-infrastructure.md#set-up-tagging) definiert wurden.
 - Es gibt keine Lizenzierungsprobleme für die Contoso Ubuntu-Server.
-- Contoso verwendet [Azure Cost Management und Abrechnung](https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview), um sicherzustellen, dass das von den IT-Führungskräften festgelegte Budget vom Unternehmen nicht überschritten wird.
+- Contoso verwendet [Azure Cost Management und Abrechnung](/azure/cost-management-billing/cost-management-billing-overview), um sicherzustellen, dass das von den IT-Führungskräften festgelegte Budget vom Unternehmen nicht überschritten wird.

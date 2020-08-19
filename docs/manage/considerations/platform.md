@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: cf0c049c50f6335587e60eb73aa2e55e81e1f908
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: b642a66e1180e6d777b28d721c7bd18b277e9996
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075335"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571557"
 ---
 # <a name="platform-operations-in-cloud-management"></a>Plattformbetrieb in der Cloudverwaltung
 
@@ -55,7 +55,7 @@ Obwohl Verwaltungstools und -prozesse dazu beitragen können, den Plattformbetri
 - **Zuverlässigkeit:** Entwerfen Sie Systeme so, dass sie nach Ausfällen wiederhergestellt und weiterhin ausgeführt werden können.
 - **Sicherheit**: Schützen Sie Anwendungen und Daten vor Bedrohungen.
 
-Das [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) bietet einen Ansatz zur Bewertung spezifischer Workloads hinsichtlich der Einhaltung dieser Vorgaben, um so den Gesamtbetrieb zu verbessern. Diese Eckpfeiler können sowohl für den Plattform- als auch den Workloadbetrieb gelten.
+Das [Microsoft Azure Well-Architected Framework](/azure/architecture/framework) bietet einen Ansatz zur Bewertung spezifischer Workloads hinsichtlich der Einhaltung dieser Vorgaben, um so den Gesamtbetrieb zu verbessern. Diese Eckpfeiler können sowohl für den Plattform- als auch den Workloadbetrieb gelten.
 
 ## <a name="get-started-with-specific-platforms"></a>Erste Schritte mit bestimmten Plattformen
 

@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b2e7559e042fba1b70509963acaddf9ec5ea3eaf
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 5a00526d5dcac1e7da49e9d0a8af1a6468e0026c
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479276"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196751"
 ---
 # <a name="refactor-landing-zones"></a>Umgestalten von Zielzonen
 
@@ -36,7 +36,7 @@ Es bedurfte Jahre und erheblicher Anstrengungen, um den aktuellen Stand hinsicht
 ![Häufiges Hindernis: Zu frühes Handeln](../../_images/ready/blocker-act-too-soon.png)
 _Abbildung 2: Zu frühes Handeln als häufiges Hindernis_
 
-In der obigen Abbildung hat der Kunde ein Ziel von 100 Workloads, die in der Cloud ausgeführt werden. Dazu stellt der Kunde wahrscheinlich seine erste Workload und dann ungefähr die ersten zehn Workloads bereit, bevor er für die Veröffentlichung einer Workload in der Produktion bereit ist. Schließlich werden sie das Ziel des Einführungsplans erreichen und über ein robustes Portfolio in der Cloud verfügen. Das rote _x_ in der Abbildung zeigt jedoch, wo Kunden häufig nicht weiterkommen. Das Warten auf eine vollständige Ausrichtung kann die erste Workload um Wochen, Monate oder sogar Jahre verzögern.
+In der obigen Abbildung hat der Kunde ein Ziel von 100 Workloads, die in der Cloud ausgeführt werden. Dazu stellt der Kunde wahrscheinlich seine erste Workload und dann ungefähr die ersten zehn Workloads bereit, bevor er für die Veröffentlichung einer Workload in der Produktion bereit ist. Schließlich werden sie das Ziel des Einführungsplans erreichen und über ein robustes Portfolio in der Cloud verfügen. Das rote *x* in der Abbildung zeigt jedoch, wo Kunden häufig nicht weiterkommen. Das Warten auf eine vollständige Ausrichtung kann die erste Workload um Wochen, Monate oder sogar Jahre verzögern.
 
 ### <a name="blocker-acting-too-late"></a>Hindernis: Zu spätes Handeln
 

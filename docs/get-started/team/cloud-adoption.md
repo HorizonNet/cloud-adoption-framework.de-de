@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 6c138afdd5a60dafe21a523e608c714ba2b49070
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: 48d6bb16956f31d5581ab3f6f11d51fd55e0ba49
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86233680"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573886"
 ---
 # <a name="get-started-build-a-cloud-adoption-team"></a>Erste Schritte: Aufbauen eines Cloudeinführungsteams
 
@@ -41,7 +41,7 @@ Orientieren Sie sich daher beim Aufbau eines Cloudeinführungsteams zunächst an
 
 - Ermitteln Sie, welche Methodik am besten zum Team passt: die Migrationsmethodik oder die Innovationsmethodik.
 - Jede Methodik verfügt über ein vierstufiges Onboardingverfahren, das dem Team hilft, die Tools und Prozesse zu verstehen, die erforderlich sind, um diese Bestrebung optimal umzusetzen. Nehmen Sie sich als Team etwas Zeit, um anhand der ersten Schritte zu ermitteln, welche Tools und Szenarien Sie voraussichtlich in den ersten Iterationen benötigen.
-- Zuordnen übergreifender Zuständigkeiten für Teams, indem eine sogenannte RACI-Matrix entwickelt und damit bestimmt wird, welche Teams _verantwortlich sind (responsible), rechenschaftspflichtig sind (accountable), konsultiert werden (consulted) und zu informieren sind (informed)_ . Aktualisieren Sie die [RACI-Vorlage](../../organize/raci-alignment.md) Ihres Unternehmens, damit andere besser nachvollziehen können, wer dem Team angehört und auf welche Methodik sich das Team konzentriert.
+- Zuordnen übergreifender Zuständigkeiten für Teams, indem eine sogenannte RACI-Matrix entwickelt und damit bestimmt wird, welche Teams *verantwortlich sind (responsible), rechenschaftspflichtig sind (accountable), konsultiert werden (consulted) und zu informieren sind (informed)* . Aktualisieren Sie die [RACI-Vorlage](../../organize/raci-alignment.md) Ihres Unternehmens, damit andere besser nachvollziehen können, wer dem Team angehört und auf welche Methodik sich das Team konzentriert.
 
 **Hinweis zur Erreichung der Ziele:**
 
@@ -51,7 +51,7 @@ Orientieren Sie sich daher beim Aufbau eines Cloudeinführungsteams zunächst an
 
 ## <a name="step-2-align-your-team-with-other-supporting-teams"></a>Schritt 2: Ausrichten Ihres Teams mit anderen unterstützenden Teams
 
-Wenn die Cloudeinführungsbestrebung Ihres Unternehmens weit genug vorangeschritten ist, um über unterstützende Teams zu verfügen, finden Sie in der [RACI-Vorlage](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) Ihres Unternehmens ggf. eine Liste der Teams und Experten für Bereiche wie Cloudgovernance, Cloudbetrieb und Cloudkompetenzzentrum sowie andere ähnliche Teams.
+Wenn die Cloudeinführungsbestrebung Ihres Unternehmens weit genug vorangeschritten ist, um über unterstützende Teams zu verfügen, finden Sie in der [RACI-Vorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx) Ihres Unternehmens ggf. eine Liste der Teams und Experten für Bereiche wie Cloudgovernance, Cloudbetrieb und Cloudkompetenzzentrum sowie andere ähnliche Teams.
 
 **Ziele:**
 
@@ -68,7 +68,7 @@ Wenn die Cloudeinführungsbestrebung Ihres Unternehmens weit genug vorangeschrit
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Das Cloudstrategieteam ist über den gesamten Lebenszyklus der Cloudeinführung hinweg für eine klare RACI-Struktur zuständig. | Machen Sie sich mit den Angaben und Anforderungen folgender Teams/Stellen vertraut: <li> Cloudgovernanceteam <li> Cloudbetriebsteam <li> Cloudkompetenzzentrum (CCoE) oder zentrales IT-Team <li> Andere in der RACI-Vorlage aufgeführte Cloudeinführungsteams oder Personen |
+| <li> Das Cloudstrategieteam ist über den gesamten Lebenszyklus der Cloudeinführung hinweg für eine klare RACI-Struktur zuständig. | Machen Sie sich mit den Angaben und Anforderungen folgender Teams/Stellen vertraut: <li> Cloudgovernanceteam <li> Cloudbetriebsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung <li> Andere in der RACI-Vorlage aufgeführte Cloudeinführungsteams oder Personen |
 
 ## <a name="step-3-begin-your-adoption-journey"></a>Schritt 3: Starten des Einführungsprozesses
 

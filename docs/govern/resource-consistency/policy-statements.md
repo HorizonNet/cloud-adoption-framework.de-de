@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d3418eeb2a2d141ac7c3b190b8706a404b1cfbc7
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: f405adb00918c4402e713f6b331a4c084c868ee0
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83217981"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569177"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>Beispiele für Richtlinienanweisungen der Ressourcenkonsistenz
 
@@ -38,7 +38,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine Geschä
   - Environment
 - Mit Governancetools muss die Kennzeichnung (Tagging) im Hinblick auf Kosten, Kritikalität, SLA, Anwendung und Umgebung überprüft werden. Alle Werte müssen sich an vordefinierten Werten ausrichten, die vom Governance-Team verwaltet werden.
 
-**Potenzielle Entwurfsoptionen:** In Azure werden für die meisten Ressourcentypen [Standardmetadatentags der Form „Name-Wert“](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources) unterstützt. [Azure Policy](https://docs.microsoft.com/azure/governance/policy/overview) wird verwendet, um bestimmte Tags im Rahmen der Erstellung von Ressourcen zu erzwingen.
+**Potenzielle Entwurfsoptionen:** In Azure werden für die meisten Ressourcentypen [Standardmetadatentags der Form „Name-Wert“](/azure/azure-resource-manager/management/tag-resources) unterstützt. [Azure Policy](/azure/governance/policy/overview) wird verwendet, um bestimmte Tags im Rahmen der Erstellung von Ressourcen zu erzwingen.
 
 ## <a name="ungoverned-subscriptions"></a>Ungeregelte Abonnements
 
@@ -46,7 +46,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine Geschä
 
 **Richtlinienanweisung:** Für die Erstellung neuer Abonnements oder Verwaltungsgruppen für unternehmenskritische Anwendungen oder geschützte Daten ist eine Überprüfung durch das Cloudgovernanceteam erforderlich. Genehmigte Änderungen werden in eine ordnungsgemäße Blaupausenzuweisung integriert.
 
-**Potenzielle Entwurfsoptionen:** Schränken Sie den administrativen Zugriffs auf die [Azure-Verwaltungsgruppen](https://docs.microsoft.com/azure/governance/management-groups) Ihrer Organisation auf nur genehmigte Governance-Teammitglieder ein, die das Erstellen von Abonnements und den Zugriffssteuerungsprozess kontrollieren.
+**Potenzielle Entwurfsoptionen:** Schränken Sie den administrativen Zugriffs auf die [Azure-Verwaltungsgruppen](/azure/governance/management-groups) Ihrer Organisation auf nur genehmigte Governance-Teammitglieder ein, die das Erstellen von Abonnements und den Zugriffssteuerungsprozess kontrollieren.
 
 ## <a name="manage-updates-to-virtual-machines"></a>Verwalten von Aktualisierungen für virtuelle Computer
 
@@ -54,7 +54,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine Geschä
 
 **Richtlinienanweisung:** Governancetools müssen erzwingen, dass automatische Updates für alle bereitgestellten VMs aktiviert sind. Verstöße müssen von Betriebsmanagementteams überprüft und in Übereinstimmung mit den Betriebsrichtlinien beseitigt werden. Ressourcen, die nicht automatisch aktualisiert werden, müssen in Prozesse einbezogen werden, die IT Operations unterstehen.
 
-**Potenzielle Entwurfsoptionen:** Für in Azure gehostete VMs können Sie konsistente Updateverwaltung bereitstellen, indem Sie die [Updateverwaltungslösung in Azure Automation](https://docs.microsoft.com/azure/automation/automation-update-management) verwenden.
+**Potenzielle Entwurfsoptionen:** Für in Azure gehostete VMs können Sie konsistente Updateverwaltung bereitstellen, indem Sie die [Updateverwaltungslösung in Azure Automation](/azure/automation/automation-update-management) verwenden.
 
 ## <a name="deployment-compliance"></a>Bereitstellungscompliance
 
@@ -65,7 +65,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine Geschä
 - Bereitstellungstools müssen vom Cloudgovernanceteam genehmigt werden, um eine kontinuierliche Governance für bereitgestellte Ressourcen sicherzustellen.
 - Bereitstellungsskripts müssen in einem zentralen Repository aufbewahrt werden, das für das Cloudgovernanceteam zur regelmäßigen Überprüfung und Überwachung zugänglich ist.
 
-**Potenzielle Entwurfsoptionen:** Die konsistente Verwendung von [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints) zum Verwalten automatisierter Bereitstellungen ermöglicht konsistente Bereitstellungen von Azure-Ressourcen, die die Governance-Standards und -Richtlinien Ihrer Organisation einhalten.
+**Potenzielle Entwurfsoptionen:** Die konsistente Verwendung von [Azure Blueprints](/azure/governance/blueprints) zum Verwalten automatisierter Bereitstellungen ermöglicht konsistente Bereitstellungen von Azure-Ressourcen, die die Governance-Standards und -Richtlinien Ihrer Organisation einhalten.
 
 ## <a name="monitoring"></a>Überwachung
 
@@ -76,7 +76,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine Geschä
 - Mit den Governancetools muss überprüft werden, ob alle Ressourcen in die Überwachung auf Ressourcenschwund, Sicherheit, Compliance und Optimierung einbezogen werden.
 - Ferner muss mit den Governancetools überprüft werden, ob für alle Anwendungen und Daten Protokolldaten mit geeignetem Protokolliergrad erfasst werden.
 
-**Potenzielle Entwurfsoptionen:** [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) ist der Standardüberwachungsdienst in Azure, und konsistente Überwachung kann durch die Verwendung von [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints) beim Bereitstellen von Ressourcen erzwungen werden.
+**Potenzielle Entwurfsoptionen:** [Azure Monitor](/azure/azure-monitor/overview) ist der Standardüberwachungsdienst in Azure, und konsistente Überwachung kann durch die Verwendung von [Azure Blueprints](/azure/governance/blueprints) beim Bereitstellen von Ressourcen erzwungen werden.
 
 ## <a name="disaster-recovery"></a>Notfallwiederherstellung
 
@@ -84,7 +84,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine Geschä
 
 **Richtlinienanweisung:** Für alle unternehmenskritischen Anwendungen und geschützten Daten müssen Sicherungs- und Wiederherstellungslösungen implementiert sein, um die geschäftlichen Auswirkungen von Ausfällen oder Systemfehlern zu minimieren.
 
-**Potenzielle Entwurfsoptionen:** Der [Azure Site Recovery-Dienst](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) bietet Funktionen für die Sicherung, Wiederherstellung und Replikation, um die Ausfalldauer in BCDR-Szenarien (Business Continuity & Disaster Recovery) zu minimieren.
+**Potenzielle Entwurfsoptionen:** Der [Azure Site Recovery-Dienst](/azure/site-recovery/site-recovery-overview) bietet Funktionen für die Sicherung, Wiederherstellung und Replikation, um die Ausfalldauer in BCDR-Szenarien (Business Continuity & Disaster Recovery) zu minimieren.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

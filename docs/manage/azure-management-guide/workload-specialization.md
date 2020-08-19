@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 74c304969760e5bc52e318aa33401af12704d55d
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 24fcb5842f6151ac6beba8820391078bd64d3050
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86190735"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567528"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>Workloadspezialisierung für die Cloudverwaltung
 
@@ -60,7 +60,7 @@ Um einen klar strukturierten Workloadbetrieb zu ermöglichen, sind genauere Anga
 1. Wählen Sie **+ Hinzufügen** aus, um eine Application Insights-Ressource zur Überwachung Ihrer Live-Web-App zu erstellen.
 1. Befolgen Sie die Anweisungen auf dem Bildschirm.
 
-Informationen zum Konfigurieren Ihrer Anwendung für die Überwachung finden Sie in der Dokumentation zu [Azure Monitor Application Insights](https://docs.microsoft.com/azure/azure-monitor/azure-monitor-app-hub).
+Informationen zum Konfigurieren Ihrer Anwendung für die Überwachung finden Sie in der Dokumentation zu [Azure Monitor Application Insights](/azure/azure-monitor/azure-monitor-app-hub).
 
 ::: zone target="chromeless"
 

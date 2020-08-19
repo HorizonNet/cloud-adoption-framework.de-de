@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9a3aa20bb2935d99623aab767a9b9194c4bd8def
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 589ba9877b8cbc29b81a529120911557d3a222f4
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83218559"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195579"
 ---
 # <a name="identity-baseline-discipline-template"></a>Vorlage zur Disziplin „Identitätsbaseline“
 
@@ -24,7 +24,7 @@ Während Ihre Planung voranschreitet, verwenden Sie die Struktur dieser Vorlage 
 > [!IMPORTANT]
 > Diese Vorlage ist ein eingeschränktes Beispiel. Prüfen Sie vor dem Aktualisieren dieser Vorlage entsprechend Ihren Anforderungen die nachfolgenden Schritte zum Definieren einer effektiven Disziplin der Identitätsbaseline im Rahmen Ihrer Strategie für Cloudgovernance.
 
-[Vorlage zur Disziplin „Identitätsbaseline“ herunterladen](https://archcenter.blob.core.windows.net/cdn/fusion/governance/Identity%20Baseline%20Discipline%20Template.docx)
+[Vorlage zur Disziplin „Identitätsbaseline“ herunterladen](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/identity-baseline-discipline-template.docx)
 
 ## <a name="next-steps"></a>Nächste Schritte
 

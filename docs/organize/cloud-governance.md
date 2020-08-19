@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: dfa8275bb96fc075e099b19c9c4b9b81d1714131
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 022fee42f79a1a6329b340147e6a2663b43edc63
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755594"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570146"
 ---
 <!-- docsTest:ignore IS -->
 
@@ -40,7 +40,7 @@ Diese Baselinefunktionen helfen Ihnen bei der Identifizierung von Risiken in Bez
 
 - Informieren Sie sich über die [Cloudgovernance-Methodik](../govern/index.md).
 - Führen Sie die [Governance-Benchmarkbewertung](../govern/benchmark.md) durch.
-- [Sicherheit, Verantwortung und Vertrauenswürdigkeit in Azure](https://docs.microsoft.com/learn/modules/intro-to-security-in-azure): Lernen Sie die grundlegenden Konzepte kennen, um Ihre Infrastruktur und Daten in der Cloud zu schützen. Verstehen Sie, wo Ihre Zuständigkeiten liegen und was Azure für Sie übernimmt.
+- [Sicherheit, Verantwortung und Vertrauenswürdigkeit in Azure](/learn/modules/intro-to-security-in-azure): Lernen Sie die grundlegenden Konzepte kennen, um Ihre Infrastruktur und Daten in der Cloud zu schützen. Verstehen Sie, wo Ihre Zuständigkeiten liegen und was Azure für Sie übernimmt.
 - Erfahren Sie, wie Sie gruppenübergreifend arbeiten können, um [Kosten zu verwalten](../organize/cost-conscious-organization.md).
 
 ## <a name="minimum-scope"></a>Mindestumfang

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: cd148f43180f6e3866d83dcb604380aac6b20f69
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 54096b19fe5e72083818cb69a74c1d30694803ae
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193234"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571642"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Die geschäftliche Verpflichtung in der Cloudverwaltung
 
@@ -57,7 +57,7 @@ Die Betriebsverwaltungsbaseline dient als Ausgangspunkt, der in jedem der folgen
 
 In einer herkömmlichen lokalen Umgebung werden die Kosten für die Verwaltung der Umgebung häufig als versunkene Kosten des IT-Betriebs angesetzt. In der Cloud ist die Verwaltung eine gezielte Entscheidung mit direkten Auswirkungen auf das Budget. Die Kosten der einzelnen Verwaltungsfunktionen können den einzelnen in der Cloud ausgeführten Workloads direkter zugeordnet werden. Dieser Ansatz ermöglicht eine bessere Kontrolle, stellt jedoch an Cloudbetriebsteams und Cloudstrategieteams die Anforderung, zunächst eine Verpflichtung zu einer Vereinbarung über Zuständigkeiten einzugehen.
 
-Organisationen können auch entscheiden, [einige ihrer laufenden Verwaltungsfunktionen an einen Dienstanbieter auszulagern](https://aka.ms/adopt/partneroffers). Diese Dienstanbieter können Organisationen mit [Azure Lighthouse](https://docs.microsoft.com/azure/lighthouse/overview) ermöglichen, den Zugriff auf ihre Ressourcen genauer zu steuern sowie einen umfassenderen Einblick in die von den Dienstanbietern ausgeführten Aktionen zu erhalten.
+Organisationen können auch entscheiden, [einige ihrer laufenden Verwaltungsfunktionen an einen Dienstanbieter auszulagern](https://aka.ms/adopt/partneroffers). Diese Dienstanbieter können Organisationen mit [Azure Lighthouse](/azure/lighthouse/overview) ermöglichen, den Zugriff auf ihre Ressourcen genauer zu steuern sowie einen umfassenderen Einblick in die von den Dienstanbietern ausgeführten Aktionen zu erhalten.
 
 - **Delegierte Verantwortung:** Da es nicht erforderlich ist, zu zentralisieren und einen Mehraufwand für die Betriebsverwaltung vorauszusetzen, erwägen die IT-Abteilungen vieler Organisationen neue Ansätze. Ein gängiger Ansatz wird als _Delegierte Verantwortung_ bezeichnet. In einem Modell mit Cloudkompetenzzentrum bieten Plattformvorgänge und Plattformautomatisierung Self-Service-Verwaltungstools, die unabhängig von einem zentralen IT-Betriebsteam von geschäftsorientierten Betriebsteams genutzt werden können. Dieser Ansatz ermöglicht den Beteiligten im Unternehmen eine umfassende Kontrolle verwaltungsrelevanter Budgets. Außerdem kann das Cloudkompetenzzentrum (CCoE) so sicherstellen, dass ein minimaler Satz von Schutzmaßnahmen ordnungsgemäß implementiert wird. In diesem Modell fungiert die IT als Broker und Führer, um dem Unternehmen zu helfen, vernünftige Entscheidungen zu treffen. Geschäftsvorgänge überwachen tägliche Vorgänge abhängiger Workloads.
 
@@ -86,7 +86,7 @@ Vor dem Ausführen der Zahlen ist es wichtig, die weichen Kostenfaktoren zu betr
 Einige Beispiele für diese weichen Kostenfaktoren sind:
 
 - Tägliche Verwendung einer Workload durch den Vorstand oder den CEO.
-- Nutzung einer Workload durch die größten _x %_ von Kunden, was an anderer Stelle größere Auswirkungen auf den Umsatz nach sich zieht.
+- Nutzung einer Workload durch die größten *x %* von Kunden, was an anderer Stelle größere Auswirkungen auf den Umsatz nach sich zieht.
 - Auswirkung auf die Zufriedenheit der Mitarbeiter.
 
 Der nächste Datenpunkt, der erforderlich ist, um eine Verpflichtung einzugehen, ist eine Liste der weichen Kostenfaktoren. Diese Faktoren müssen in dieser Phase nicht dokumentiert werden, aber der Geschäftsbeteiligte sollte die Wichtigkeit dieser Faktoren und deren Ausschluss aus den folgenden Berechnungen beachten.

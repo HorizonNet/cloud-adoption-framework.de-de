@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 72b2651b1b9b9332048f9f2f452feac039346d9c
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 3269f6a94f0aa151f2fbfb3a78e540fef710767c
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755035"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573716"
 ---
 # <a name="cost-management-sample-policy-statements"></a>Beispiele für Cost Management-Richtlinienanweisungen
 
@@ -39,7 +39,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine kostenb
 
 **Richtlinienanweisung:** Jede Cloudbereitstellung muss einer Abrechnungseinheit mit genehmigtem Budget und einem Mechanismus für Budgetlimits zugeordnet werden.
 
-**Entwurfsoptionen:** In Azure kann das Budget mit [Azure Cost Management](https://docs.microsoft.com/azure/cost-management/manage-budgets) gesteuert werden.
+**Entwurfsoptionen:** In Azure kann das Budget mit [Azure Cost Management](/azure/cost-management/manage-budgets) gesteuert werden.
 
 ## <a name="underutilization"></a>Unterauslastung
 
@@ -49,7 +49,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine kostenb
 
 **Entwurfsoptionen:**
 
-- In Azure kann der Vergleich zwischen geplanten Ausgaben und tatsächlichen Ausgaben über [Azure Cost Management](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis) verwaltet werden.
+- In Azure kann der Vergleich zwischen geplanten Ausgaben und tatsächlichen Ausgaben über [Azure Cost Management](/azure/cost-management/quick-acm-cost-analysis) verwaltet werden.
 - Es gibt mehrere Optionen für die Gruppierung von Ressourcen nach Abrechnungseinheit. In Azure muss ein [Ressourcenkonsistenzmodell](../../decision-guides/resource-consistency/index.md) in Verbindung mit dem Governanceteam ausgewählt und auf alle Ressourcen angewendet werden.
 
 ## <a name="overprovisioned-assets"></a>Überdimensionierte Ressourcen
@@ -60,7 +60,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine kostenb
 
 **Entwurfsoptionen:**
 
-- In Azure kann [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-cost-recommendations) Optimierungsempfehlungen bereitstellen.
+- In Azure kann [Azure Advisor](/azure/advisor/advisor-cost-recommendations) Optimierungsempfehlungen bereitstellen.
 - Es gibt mehrere Optionen für die Gruppierung von Ressourcen nach Abrechnungseinheit. In Azure muss ein [Ressourcenkonsistenzmodell](../../decision-guides/resource-consistency/index.md) in Verbindung mit dem Governanceteam ausgewählt und auf alle Ressourcen angewendet werden.
 
 ## <a name="overoptimization"></a>Übermäßige optimierung
@@ -71,7 +71,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine kostenb
 
 **Entwurfsoptionen:**
 
-- In Azure können die [Insights-Features von Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-performance) Sie bei der Analyse der Systemauslastung unterstützen.
+- In Azure können die [Insights-Features von Azure Monitor](/azure/azure-monitor/insights/vminsights-performance) Sie bei der Analyse der Systemauslastung unterstützen.
 - Es gibt mehrere Optionen für die Gruppierung und Markierung von Ressourcen nach Rollen. In Azure sollten Sie ein [Ressourcenkonsistenzmodell](../../decision-guides/resource-consistency/index.md) in Verbindung mit dem Governanceteam auswählen und auf alle Ressourcen anwenden.
 
 ## <a name="next-steps"></a>Nächste Schritte
