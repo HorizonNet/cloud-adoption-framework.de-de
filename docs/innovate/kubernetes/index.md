@@ -7,12 +7,12 @@ ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 377226674d3a07d479d7b8f3e9f8c72e0dfd763e
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 001689cb017e6e4c86d2e79ae880aef74f78cff5
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88284264"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572220"
 ---
 <!-- cSpell:ignore asabbour sabbour -->
 
@@ -26,10 +26,6 @@ Die Liste der erforderlichen Aktionen wird nach Rollen kategorisiert, um eine er
 
 Machen Sie zur Vorbereitung auf diese Phase des Cloudeinführungszyklus die folgenden Übungen:
 
-<!-- markdownlint-disable MD033 -->
-
 - [Anwendungsentwicklung und Bereitstellung:](./application-development.md) Untersuchen Sie Muster und Vorgehensweisen für die Anwendungsentwicklung, konfigurieren Sie CI/CD-Pipelines, und implementieren Sie bewährte Methoden für Websitezuverlässigkeits-Engineering (Site Reliability Engineering, SRE).
 - [Clusterentwurf und Vorgänge:](./cluster-design-operations.md) Identifizieren Sie Clusterkonfiguration und Netzwerkdesign. Gewährleisten Sie zukunftssichere Skalierbarkeit durch die Automatisierung der Infrastrukturbereitstellung. Stellen Sie Hochverfügbarkeit sicher, indem Sie Business Continuity & Disaster Recovery planen.
 - [Cluster- und Anwendungssicherheit:](./cluster-application-security.md) Machen Sie sich mit den grundlegenden Sicherheitsaspekten von Kubernetes vertraut. Weitere Informationen finden Sie im Leitfaden zur sicheren Clustereinrichtung und Anwendungssicherheit.
-
-<!-- markdownlint-enable MD033 -->

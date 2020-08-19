@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c749237029542e8757af75b9a83aaba8cd917055
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 6887955f64b7e878f578219f584a028df6bea8c5
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88279623"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568650"
 ---
 <!-- docsTest:ignore InterpretML FairLearn -->
 
@@ -25,8 +25,6 @@ Die Liste der erforderlichen Aktionen ist nach Rollen in Kategorien zusammengefa
 ## <a name="get-started"></a>Erste Schritte
 
 Machen Sie zur Vorbereitung auf diese Phase des Cloudeinführungszyklus die folgenden Übungen:
-
-<!-- markdownlint-disable MD033 -->
 
 - [Entwicklung, Bereitstellung und Verwaltung von Machine Learning-Modellen:](https://azure.microsoft.com/overview/ai-platform/dev-resources/) Sehen Sie sich Muster und Vorgehensweisen zum Entwickeln Ihrer eigenen Machine Learning-Modelle an, einschließlich MLOps, automatisierter Machine Learning- (AutoML) und verantwortungsbewusster ML-Lerntools wie InterpretML und FairLearn.
 - [Hinzufügen von domänenspezifischen KI-Modellen zu Ihren Anwendungen:](https://www.oreilly.com/library/view/building-intelligent-apps/9781492058632/) Hier erhalten Sie Informationen zu bewährten Methoden für das Hinzufügen von KI-Funktionen zu Ihren Anwendungen mit Cognitive Services. Außerdem erfahren Sie mehr über die wichtigsten Szenarien, die von diesen Diensten unterstützt werden.

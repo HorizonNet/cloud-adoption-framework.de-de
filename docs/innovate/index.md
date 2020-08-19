@@ -7,12 +7,12 @@ ms.date: 05/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8b5c74387ea0d5cd16d93be222c546f301e8531f
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: dcabcd7621e8f877b1f92ef97453a44d6d431b54
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88284451"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568293"
 ---
 # <a name="cloud-innovation-in-the-cloud-adoption-framework"></a>Cloudinnovationen im Cloud Adoption Framework
 
@@ -22,12 +22,12 @@ In diesem Abschnitt des Cloud Adoption Framework liegt der Schwerpunkt auf den E
 
 Zur Vorbereitung auf diese Phase des Cloudeinführungszyklus empfiehlt das Framework die folgenden Übungen:
 
-<!-- markdownlint-disable MD033 -->
-
-- [Einigkeit über den Geschäftswert](./business-value.md): Ermitteln Sie vor dem Treffen einer Entscheidung in Bezug auf technische Lösungen, wie neue Innovationen den Geschäftswert steigern können. Lassen Sie diesen Wert in Ihre Cloudstrategie einfließen. Bei dieser inkrementellen Methodik kommt der Geschäftswert durch eine Hypothese über Kundenanforderungen zum Ausdruck.
-- [Azure-Innovationsleitfaden](./innovation-guide/index.md): Azure umfasst Cloudtools, mit denen die Bereitstellung innovativer Lösungen beschleunigt werden kann. Je nach Ihrer Zielsetzung kann es sein, dass Sie verschiedene Kombinationen von Tools erwägen. Wir empfehlen Ihnen, ein „minimal überlebensfähiges Produkt“ (Minimum Viable Product, MVP) zu erstellen, das nur die grundlegenden Tools aufweist.
-- [Bewährte Methoden:](./best-practices/index.md) Ihre architekturbezogenen Entscheidungen sollten den bewährten Methoden für jedes Tool in der Toolkette entsprechen. Indem Sie sich an diese Methoden halten, können Sie die Lösungsentwicklung beschleunigen und ein Referenzmodell für solide Architekturentwürfe schaffen.
-- [Feedbackschleifen](./considerations/adoption.md): Bei jeder Iteration bieten die zu entwickelnden Lösungen Ihren Teams die Möglichkeit, gemeinsam mit den Kunden zu lernen. Schnelle und präzise Feedbackschleifen bei der Zusammenarbeit mit Ihren Kunden vereinfachen für Sie das Testen, Messen und Lernen – und führen somit letztendlich zu einer Verkürzung des Zeitraums bis zur Markteinführung. Erfahren Sie, wie Azure und GitHub Feedbackschleifen beschleunigen.
+|  |  |
+|--|--|
+| <br> ![1](../_images/icons/1.png) | <br> [Einigkeit über den Geschäftswert](./business-value.md): Ermitteln Sie vor dem Treffen einer Entscheidung in Bezug auf technische Lösungen, wie neue Innovationen den Geschäftswert steigern können. Lassen Sie diesen Wert in Ihre Cloudstrategie einfließen. Bei dieser inkrementellen Methodik kommt der Geschäftswert durch eine Hypothese über Kundenanforderungen zum Ausdruck. |
+| <br> ![2](../_images/icons/2.png) | <br> [Azure-Innovationsleitfaden](./innovation-guide/index.md): Azure umfasst Cloudtools, mit denen die Bereitstellung innovativer Lösungen beschleunigt werden kann. Je nach Ihrer Zielsetzung kann es sein, dass Sie verschiedene Kombinationen von Tools erwägen. Wir empfehlen Ihnen, ein „minimal überlebensfähiges Produkt“ (Minimum Viable Product, MVP) zu erstellen, das nur die grundlegenden Tools aufweist. |
+| <br> ![3](../_images/icons/3.png) | <br> [Bewährte Methoden:](./best-practices/index.md) Ihre architekturbezogenen Entscheidungen sollten den bewährten Methoden für jedes Tool in der Toolkette entsprechen. Indem Sie sich an diese Methoden halten, können Sie die Lösungsentwicklung beschleunigen und ein Referenzmodell für solide Architekturentwürfe schaffen. |
+| <br> ![4](../_images/icons/4.png) | <br> [Feedbackschleifen](./considerations/adoption.md): Bei jeder Iteration bieten die zu entwickelnden Lösungen Ihren Teams die Möglichkeit, gemeinsam mit den Kunden zu lernen. Schnelle und präzise Feedbackschleifen bei der Zusammenarbeit mit Ihren Kunden vereinfachen für Sie das Testen, Messen und Lernen – und führen somit letztendlich zu einer Verkürzung des Zeitraums bis zur Markteinführung. Erfahren Sie, wie Azure und GitHub Feedbackschleifen beschleunigen. |
 
 ## <a name="innovation-summary"></a>Zusammenfassung der Innovation
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 8526c4c8c975e17a0e3d344e1019bb24c591d143
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 92bcd305d963659ff53feca0f233c4a0c1fca312
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88285284"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573104"
 ---
 # <a name="manage-organizational-alignment"></a>Verwalten der Organisationsausrichtung
 
@@ -21,10 +21,12 @@ Die Cloudeinführung ist ohne gut organisierte Teams nicht möglich. Für eine e
 
 Die folgenden Aufgaben unterstützen Sie bei der Erstellung einer Landezone für die Cloudeinführung.
 
-1. [Strukturtyp](#structure-type): Definieren Sie den Typ der Organisationsstruktur, die am besten zu Ihrem Betriebsmodell passt.
-2. [Cloudfunktionen](#understand-required-cloud-functions): Machen Sie sich mit den für die Einführung und den Betrieb der Cloud erforderlichen Cloudfunktionen vertraut.
-3. [Ausgereifte Teamstrukturen](./organization-structures.md): Definieren Sie die Teams, die verschiedene Cloudfunktionen bereitstellen können.
-4. [RACI-Matrix](./raci-alignment.md): Klar definierte Rollen sind ein wichtiger Aspekt eines jeden Betriebsmodells. Nutzen Sie die bereitgestellte RACI-Matrix, um den einzelnen Teams für verschiedene Funktionen des Cloudbetriebsmodells Verantwortung, Verantwortlichkeit, beratende und informierte Rollen zuzuordnen.
+|  |  |
+|--|--|
+| <br> ![1](../_images/icons/1.png) | <br> [Strukturtyp](#structure-type): Definieren Sie den Typ der Organisationsstruktur, die am besten zu Ihrem Betriebsmodell passt. |
+| <br> ![2](../_images/icons/2.png) | <br> [Cloudfunktionen](#understand-required-cloud-functions): Machen Sie sich mit den für die Einführung und den Betrieb der Cloud erforderlichen Cloudfunktionen vertraut. |
+| <br> ![3](../_images/icons/3.png) | <br> [Ausgereifte Teamstrukturen](./organization-structures.md): Definieren Sie die Teams, die verschiedene Cloudfunktionen bereitstellen können. |
+| <br> ![4](../_images/icons/4.png) | <br> [RACI-Matrix](./raci-alignment.md): Klar definierte Rollen sind ein wichtiger Aspekt eines jeden Betriebsmodells. Nutzen Sie die bereitgestellte RACI-Matrix, um den einzelnen Teams für verschiedene Funktionen des Cloudbetriebsmodells Verantwortung, Verantwortlichkeit, beratende und informierte Rollen zuzuordnen. |
 
 ## <a name="structure-type"></a>Strukturtyp
 
