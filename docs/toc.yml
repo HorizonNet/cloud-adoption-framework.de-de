@@ -23,8 +23,6 @@ items:
             href: reference/fundamental-concepts/hosting-hierarchy.md
           - name: Azure-Hierarchieunterstützung
             href: reference/fundamental-concepts/hierarchy-azure-tools.md
-          - name: Terminologie für Betriebsmodelle
-            href: operating-model/terms.md
       - name: Beschleunigen der Migration
         href: get-started/migrate.md
       - name: Erstellen neuer Produkte und Dienste
@@ -179,6 +177,16 @@ items:
             href: ready/azure-setup-guide/monitoring-reporting.md
           - name: Sicherstellen des aktuellen Stands von Azure
             href: ready/azure-setup-guide/staying-current.md
+      - name: Betriebsmodell
+        items:
+          - name: Übersicht
+            href: operating-model/index.md
+          - name: Definieren Ihres Betriebsmodells
+            href: operating-model/define.md
+          - name: Vergleichen gängiger Cloudbetriebsmodelle
+            href: operating-model/compare.md
+          - name: Allgemeine Begriffe im Zusammenhang mit Betriebsmodellen
+            href: operating-model/terms.md
       - name: Azure-Zielzonen
         items:
           - name: Was ist eine Zielzone?
@@ -880,7 +888,7 @@ items:
                           - name: Referenzlösungen für Web-Apps
                             href: /azure/architecture/solution-ideas/articles/scalable-ecommerce-web-app?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
                           - name: "Erstellen einer .NET\_Core-App mit Azure\_SQL-Datenbank"
-                            href: /azure/app-service/app-service-web-tutorial-dotnetcore-sqldb?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
+                            href: /azure/app-service/app-service-web-tutorial-dotnet-sqldatabase
                           - name: "Erstellen einer .NET-App mit Azure\_SQL-Datenbank"
                             href: /azure/app-service/app-service-web-tutorial-dotnet-sqldatabase?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
                           - name: Erstellen einer PHP-App mit MySQL

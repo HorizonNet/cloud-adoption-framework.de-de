@@ -1,55 +1,66 @@
 ---
-title: Einführung in das Betriebsmodell
-description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie Sie ein Betriebsmodell für die Cloud einrichten können.
+title: Grundlegendes zu Cloudbetriebsmodellen
+description: Hier finden Sie grundlegende Informationen zu Cloudbetriebsmodellen sowie zu deren Auswirkungen auf Ihre Cloudeinführungsstrategie.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 10/17/2019
+ms.date: 08/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 1489ad64c9900436ff5c5cc6b76d5660a85d8d71
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: e1c5a12ce47474ccdbfe65c7faa92454b470addd
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83221976"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574787"
 ---
-# <a name="establish-an-operating-model-for-the-cloud"></a>Einrichten eines Betriebsmodells für die Cloud
+<!-- docsTest:ignore GRC -->
+<!-- cspell:ignore reimagine -->
 
-Die Cloudeinführung besteht aus iterativen Maßnahmen, die darauf ausgerichtet sind, welche Aktionen Sie in der Cloud ausführen. Die Cloudstrategie skizziert die digitale Transformation, um Unternehmensprogramme zu unterstützen, wie etwa die Ausführung von Einführungsprojekten verschiedener Teams. Durch Planung und Bereitschaft wird der Erfolg all dieser wichtigen Elemente sichergestellt. Alle Schritte der Cloudeinführung entsprechen konkreten Projekten mit verwaltbaren Zielen, Zeitplänen und Budgets.
+# <a name="understand-cloud-operating-models"></a>Grundlegendes zu Cloudbetriebsmodellen
 
-Die Maßnahmen zur Einführung können relativ einfach nachverfolgt und gemessen werden, auch wenn mehrere Iterationen und Freigaben geplant sind. Jede Phase des Einführungslebenszyklus ist wichtig. In jeder Phase gibt es unter Umständen potenzielle Hindernisse aufgrund geschäftlicher, kultureller und technologischer Einschränkungen. Allerdings ist jede Phase stark vom zugrunde liegenden Betriebsmodell abhängig.
+Die Cloudeinführung ist eine gute Gelegenheit, um sich noch einmal mit dem Betrieb von Technologiesystemen zu befassen. In dieser Artikelreihe werden Cloudbetriebsmodelle und die Aspekte erläutert, die sich auf Ihre Cloudeinführungsstrategie auswirken. Aber zunächst soll der Begriff *Cloudbetriebsmodell* verdeutlicht werden.
 
-**In der Einführung ist beschrieben, was Sie tun, während das Betriebsmodell definiert, wer die Einführung wie ermöglicht.**
+## <a name="define-your-operating-model"></a>Definieren Ihres Betriebsmodells
 
-„Die Kultur isst die Strategie zum Frühstück.“ Das Betriebsmodell verkörpert die IT-Kultur, die in einer Reihe messbarer Prozesse erfasst wird. Wenn die Cloud von einem starken Betriebsmodell unterstützt wird, wird auch die Strategie besser übernommen, was wiederum die Akzeptanz und das Erreichen von Geschäftswerten beschleunigt. Wenn die Einführung hingegen erfolgreich ist, aber kein Betriebsmodell vorhanden ist, ist das Ergebnis unter Umständen zwar beeindruckend, aber sehr kurzlebig. Für den langfristigen Erfolg ist es von entscheidender Bedeutung, dass die Einführungs- und Betriebsmodelle parallel weiterentwickelt werden.
+Bevor Sie Ihre Cloudarchitektur bereitstellen, müssen Sie wissen, wie Sie den Cloudbetrieb gestalten möchten. Machen Sie sich Gedanken über Ihre strategische Ausrichtung, Ihre Personalstruktur und Ihre GRC-Anforderungen (Governance, Risiko und Compliance), um Ihr zukünftiges Cloudbetriebsmodell besser definieren zu können. Anschließend können Azure-Zielzonen verwendet werden, um eine Vielzahl von Architektur- und Implementierungsoptionen für die Unterstützung Ihres Betriebsmodells bereitzustellen. Die nächsten Artikel enthalten einige grundlegende Begriffe sowie Beispiele für gängige Betriebsmodelle aus der Praxis. Diese Informationen helfen Ihnen dabei, sich für die passende Azure-Zielzone zu entscheiden.
 
-## <a name="establish-your-operating-model"></a>Einrichten Ihres Betriebsmodells
+## <a name="what-is-an-operating-model"></a>Was ist ein Betriebsmodell?
 
-Aktuelle Betriebsmodelle können skaliert werden, um die Einführung der Cloud zu unterstützen. Ein modernes Betriebsmodell trägt zur Beseitigung nicht technischer Hindernisse bei der Cloudeinführung bei.
+Als es noch keine Cloudtechnologien gab, haben Technologieteams Betriebsmodelle erstellt, um die Vorteile zu definieren, die Technologie für das Unternehmen hat. IT-Betriebsmodelle von Unternehmen umfassen eine Reihe von Faktoren. Einige sind jedoch immer konsistent: *Ausrichtung auf die Geschäftsstrategie, Strukturierung des Personals, Change Management (oder Einführungsprozesse), Betriebsverwaltung, Governance/Compliance und Sicherheit*. Jeder Faktor ist für den langfristigen Technologiebetrieb entscheidend.
 
-Dieser Abschnitt des Frameworks für die Cloudeinführung stellt ein umsetzbares Betriebsmodell bereit, um Sie bei nicht technischen Entscheidungen zu unterstützen. Dieses Betriebsmodell umfasst drei hilfreiche Methodiken für die Erstellung eines eigenen Cloudbetriebsmodells:
+Wird der Technologiebetrieb in die Cloud verlagert, sind diese wichtigen Prozesse zwar weiterhin relevant, verändern sich aber wahrscheinlich auf die eine oder andere Weise. Aktuelle Betriebsmodelle konzentrieren sich stark auf physische Ressourcen an physischen Standorten, die größtenteils über Investitionszyklen finanziert werden. Diese Ressourcen dienen zur Unterstützung der Workloads, die das Unternehmen benötigt, um den Geschäftsbetrieb aufrechtzuerhalten. Bei den meisten Betriebsmodellen hat die Stabilität der Workloads Priorität. Hierzu wird in die Stabilität der zugrunde liegenden physischen Ressourcen investiert.
 
-- [Steuern](../govern/index.md): Sorgen Sie für Konsistenz während der gesamten Einführung. Orientieren Sie sich an Governance- oder Complianceanforderungen, um eine optimale Verwaltung Ihrer cloudübergreifenden Umgebung zu gewährleisten.
-- [Verwalten](../manage/index.md): Gestalten Sie laufende Prozesse für die Verwaltung des Technologiebetriebs so, dass sie zur Nutzenmaximierung und zur Vermeidung von Störungen beitragen.
-- [Organisieren](../organize/index.md): Bei der Entwicklung des Betriebsmodells entwickelt sich auch die Organisation der unterschiedlichen Teams und Funktionen weiter, die das Betriebsmodell unterstützen.
+## <a name="how-is-a-cloud-operating-model-different"></a>Was ist bei einem Cloudbetriebsmodell anders?
 
-## <a name="align-operating-models"></a>Ausrichten von Betriebsmodellen
+Redundanz im Hardwarestapel ist ein kontinuierlicher Zyklus. Physische Hardware geht kaputt. Die Leistung verschlechtert sich. Probleme mit der Hardware richten sich nur selten nach den vorhersehbaren Budgetzyklen der Investitionsplanung einer Organisation. Der Cloudbetrieb macht Schluss mit ständigen Hardwaremodernisierungen und nächtlichen Patches, indem er den Fokus auf die digitalen Ressourcen verlagert: Betriebssysteme, Anwendungen und Daten. Durch diese Verlagerung von physischen auf digitale Ressourcen verändert sich auch das Technologiebetriebsmodell.
 
-Die Cloud und die digitale Wirtschaft haben aufgezeigt, dass mehrere Betriebsmodelle erforderlich sind. Manchmal geht dieser Bedarf von der Anforderung aus, mehrere Public Clouds zu unterstützen. Meistens entsteht dieser Bedarf jedoch beim Wechsel von einer lokalen Umgebung in die Cloud. In beiden Szenarien ist es wichtig, Betriebsmodelle auszurichten, um maximale Leistung bei minimaler Redundanz zu erreichen.
+Die Verlagerung Ihres Betriebsmodell in die Cloud bedeutet, dass sich die gleichen Personen und Prozesse auf eine höhere Betriebsebene konzentrieren können. Wenn sich Ihre Mitarbeiter nicht mehr auf die Uptime von Servern konzentrieren, ändern sich ihre Erfolgsmetriken. Wenn die Sicherheit nicht mehr von den vier Wänden eines Rechenzentrums abhängt, ändert sich Ihr Bedrohungsprofil. Wenn die Beschaffung kein Innovationshindernis mehr darstellt, ändert sich auch die Geschwindigkeit des Change Managements.
 
-Analysten prognostizieren eine Einführung von Multi-Cloud-Umgebungen bei hohen Volumen. Die Entwicklung geht bei vielen Kunden in diese Richtung. Leider berichten Kunden jedoch von großen Herausforderungen beim Betrieb mehrerer Clouds. Duplizierte Ressourcen, Prozesse, Fertigkeiten und Technologien führen zu höheren Kosten und nicht zu den angekündigten Einsparungen. Um dies zu vermeiden, sollten Kunden ein spezielles Betriebsmodell einführen. Beim Ausrichten von Betriebsmodellen sollte immer ein **allgemeines Betriebsmodell** vorhanden sein. Zusätzliche **spezialisierte Betriebsmodelle** kommen für bestimmte Szenarien zum Einsatz, um Abweichungen vom Standardmodell zu unterstützen.
+Ein *Cloudbetriebsmodell* ist die Gesamtheit von Prozessen und Prozeduren, die definieren, wie Sie Technologie in der Cloud betreiben möchten.
 
-- **Allgemeines Betriebsmodell:** Das allgemeine Betriebsmodell ist für eine einzelne Public oder Private Cloud-Plattform geeignet. Vorgänge dieser Plattform definieren betriebliche Standards, Richtlinien und Prozesse. Dieses Betriebsmodell sollte das primäre Mittel für die weitere Cloudstrategie darstellen. Bei diesem Modell besteht das Ziel darin, den primären Cloudanbieter für den Großteil der Cloudeinführung zu nutzen.
+## <a name="purpose-of-a-cloud-operating-model"></a>Zweck eines Cloudbetriebsmodells
 
-- **Spezialisiertes Cloudbetriebsmodell:** Bestimmte Geschäftsergebnisse sind für einen alternativen Cloudanbieter unter Umständen besser geeignet. Bei einem überzeugenden Geschäftsszenario werden die Standards, Richtlinien und Prozesse vom allgemeinen Betriebsmodell auf den neuen Cloudanbieter angewendet und anschließend an den speziellen Anwendungsfall angepasst.
+Wenn Hardware nicht mehr die grundlegendste Betriebseinheit darstellt, verlagert sich der Schwerpunkt auf die digitalen Ressourcen und die von ihnen unterstützten Workloads. Das Betriebsmodell dient nun also weniger dazu, den Betrieb aufrechtzuerhalten, sondern vielmehr dazu, betriebliche Konsistenz zu gewährleisten.
 
-Wenn Azure die primäre Plattform der Wahl ist, sind die Leitfäden und bewährten Methoden in jedem der oben aufgeführten Abschnitte zu Betriebsmodellen beim Erstellen Ihres Betriebsmodells sehr hilfreich. Dieses Framework berücksichtigt jedoch, dass nicht alle unserer Leser in Azure als primäre Plattform verwenden. Um dieser breiteren Zielgruppe Rechnung zu tragen, kann der theoretische Inhalt in den einzelnen Abschnitten auf Public oder Private Cloud-Betriebsmodelle mit ähnlichen Ergebnissen angewendet werden.
+Mithilfe des [Microsoft Azure Well-Architected Framework](/azure/architecture/framework/) lassen sich Workloadaspekte sehr gut in verschiedene allgemeine Architekturprinzipien zerlegen: Kostenoptimierung, optimaler Betrieb, Leistungseffizienz, Zuverlässigkeit und Sicherheit.
+
+Im Zuge der Umstellung auf eine höhere Betriebsebene helfen diese allgemeinen Architekturprinzipien dabei, den Zweck des Cloudbetriebsmodells neu auszurichten. Wie können wir bei allen Ressourcen und Workloads im Portfolio ein ausgewogenes Verhältnis dieser Architekturprinzipien sicherstellen? Welche Prozesse sind erforderlich, um die Anwendung dieser Prinzipien zu skalieren?
+
+## <a name="reimagine-your-operating-model"></a>Neugestalten Ihres Betriebsmodells
+
+Was bleibt noch zu tun, nachdem Sie Ihr Betriebsmodell aktualisiert haben, um sämtliche Beschaffungs-, Änderungs-, Betriebs- und Schutzaspekte im Zusammenhang mit physischen Ressourcen daraus zu entfernen? Für einige Organisationen stellt das Betriebsmodell nun einen kompletten Neuanfang dar. Bei den meisten Organisationen konnten die Einschränkungen, die sich im Laufe der Jahre entwickelt haben, reduziert werden. In beiden Fällen bietet es sich an, sich Gedanken über die gewünschte Cloudnutzung zu machen.
+
+In diesen Artikeln werden die folgenden Themen behandelt, damit Sie sich Ihr zukünftiges Betriebsmodell besser vorstellen können:
+
+- [Definieren Ihres Cloudbetriebsmodells](./define.md)
+- [Vergleichen gängiger Cloudbetriebsmodelle](./compare.md)
+- [Implementieren Ihres Betriebsmodells mit Azure-Zielzonen](../ready/landing-zone/implementation-options.md)
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Governance ist ein gängiger erster Schritt zur Einrichtung eines Betriebsmodells für die Cloud.
+Informieren Sie sich darüber, wie das Cloud Adoption Framework Sie beim Definieren Ihres Betriebsmodells unterstützt.
 
 > [!div class="nextstepaction"]
-> [Informationen zur Cloudgovernance](../govern/index.md)
+> [Vergleichen gängiger Cloudbetriebsmodelle](./compare.md)

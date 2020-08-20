@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: e971fdb7c28eac52cca6e1086865ca82cc239283
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 4b4954c2f28f8e3334d50ba84f31935c40f1df90
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88279895"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569058"
 ---
 # <a name="security-baseline-discipline-overview"></a>Übersicht über die Disziplin „Sicherheitsbaseline“
 
@@ -35,18 +35,16 @@ Umsetzbare Richtlinienanweisungen und die daraus resultierenden Architekturanfor
 
 ## <a name="develop-governance-policy-statements"></a>Entwickeln von Richtlinienanweisungen für Governance
 
-Die folgenden Ressourcen enthalten Beispiele und mögliche Optionen, die Sie beim Entwickeln der Disziplin „Sicherheitsbaseline“ berücksichtigen sollten. Verwenden Sie die einzelnen Ressourcen als Ausgangspunkte für Diskussionen innerhalb Ihres Cloudgovernanceteams sowie mit betroffenen Geschäfts-, IT- und Sicherheitsteams in Ihrer Organisation, um die Richtlinien und Prozesse auszuarbeiten, die zur Bewältigung sicherheitsrelevanter Risiken erforderlich sind.
+Die folgenden Schritte enthalten Beispiele und mögliche Optionen, die Sie beim Entwickeln der Disziplin „Sicherheitsbaseline“ berücksichtigen sollten. Verwenden Sie die einzelnen Schritte als Ausgangspunkte für Diskussionen innerhalb Ihres Cloudgovernanceteams sowie mit betroffenen Geschäfts-, IT- und Sicherheitsteams in Ihrer Organisation, um die Richtlinien und Prozesse auszuarbeiten, die zur Bewältigung sicherheitsrelevanter Risiken erforderlich sind.
 
-<!-- markdownlint-disable MD033 -->
-
-- [Vorlage für die Disziplin „Sicherheitsbaseline“:](./template.md) Laden Sie die Vorlage zur Dokumentation einer Disziplin vom Typ „Sicherheitsbaseline“ herunter.
-- [Geschäftsrisiken:](./business-risks.md) Machen Sie sich mit den Motiven und Risiken vertraut, die häufig mit der Disziplin „Sicherheitsbaseline“ verbunden sind.
-- [Indikatoren und Metriken:](./metrics-tolerance.md) Indikatoren, um zu verstehen, ob es der richtige Zeitpunkt ist, in die Disziplin „Sicherheitsbaseline“ zu investieren.
-- [Prozesse zur Einhaltung von Richtlinien:](./compliance-processes.md) Empfohlene Prozesse zur Unterstützung der Richtlinieneinhaltung in der Disziplin „Sicherheitsbaseline“.
-- [Einsatzreife:](./discipline-improvement.md) Stimmen Sie die Einsatzreife der Cloudverwaltung mit den Phasen der Cloudeinführung ab.
-- [Toolkette:](./toolchain.md) Azure-Dienste, die zur Unterstützung der Disziplin „Sicherheitsbaseline“ implementiert werden können.
-
-<!-- markdownlint-enable MD033 -->
+|  |  |
+|--|--|
+| <br> ![Vorlagensymbol](../../_images/govern/process-template.png) | <br> [Vorlage für die Disziplin „Sicherheitsbaseline“:](./template.md) Laden Sie die Vorlage zur Dokumentation einer Disziplin vom Typ „Sicherheitsbaseline“ herunter. |
+| <br> ![Risikosymbol](../../_images/govern/process-risks.png) | <br> [Geschäftsrisiken:](./business-risks.md) Machen Sie sich mit den Motiven und Risiken vertraut, die häufig mit der Disziplin „Sicherheitsbaseline“ verbunden sind. |
+| <br> ![Metriksymbol](../../_images/govern/process-metrics.png) | <br> [Indikatoren und Metriken:](./metrics-tolerance.md) Indikatoren, um zu verstehen, ob es der richtige Zeitpunkt ist, in die Disziplin „Sicherheitsbaseline“ zu investieren. |
+| <br> ![Einhaltungssymbol](../../_images/govern/process-enforce.png) | <br> [Prozesse zur Einhaltung von Richtlinien:](./compliance-processes.md) Empfohlene Prozesse zur Unterstützung der Richtlinieneinhaltung in der Disziplin „Sicherheitsbaseline“. |
+| <br> ![Einsatzreifesymbol](../../_images/govern/process-maturity.png) | <br> [Einsatzreife:](./discipline-improvement.md) Stimmen Sie die Einsatzreife der Cloudverwaltung mit den Phasen der Cloudeinführung ab. |
+| <br> ![Toolkettensymbol](../../_images/govern/process-toolchain.png) | <br> [Toolkette:](./toolchain.md) Azure-Dienste, die zur Unterstützung der Disziplin „Sicherheitsbaseline“ implementiert werden können. |
 
 ## <a name="next-steps"></a>Nächste Schritte
 

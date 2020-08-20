@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: bb6a42562b061fef3176927b3e71641786d8467c
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: cf4cc33734b33e0b0c71ca33973bb81397f1f8f2
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88283618"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571421"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>Cloudverwaltung im Framework für die Cloudeinführung
 
@@ -22,10 +22,12 @@ Die Bereitstellung einer [Cloudstrategie ](../strategy/index.md) erfordert eine 
 
 Zur Vorbereitung auf diese Phase des Cloudeinführungszyklus empfiehlt das Framework die folgenden Übungen:
 
-1. [Einrichten einer Verwaltungsbasislinie](./azure-management-guide/index.md): Definieren Sie die wichtigen Klassifizierungen, Cloudverwaltungstools und Prozesse, die für die Bereitstellung Ihrer Mindestverpflichtung zur Betriebsverwaltung erforderlich sind.
-2. [Definieren von geschäftlichen Verpflichtungen](./considerations/business-alignment.md): Dokumentieren Sie die unterstützten Workloads, um betriebliche Verpflichtungen beim Unternehmen herzustellen und Investitionen für die Cloudverwaltung für jede Workload zu vereinbaren.
-3. [Erweitern der Verwaltungsbaseline](./best-practices.md): Ausgehend von geschäftlichen Verpflichtungen und Betriebsentscheidungen nutzen Sie die mitgelieferten bewährten Methoden, um die erforderlichen Cloudverwaltungstools zu implementieren.
-4. [Erweiterte Vorgänge und Entwurfsprinzipien](./design-principles.md): Für Plattformen oder Workloads, die ein höheres Maß an Geschäftsverpflichtungen erfordern, ist möglicherweise eine umfassendere Architekturüberprüfung erforderlich, damit die Verpflichtungen in Bezug auf Resilienz und Zuverlässigkeit gewährleistet sind.
+|  |  |
+|--|--|
+| <br> ![1](../_images/icons/1.png) | <br> [Einrichten einer Verwaltungsbasislinie](./azure-management-guide/index.md): Definieren Sie die wichtigen Klassifizierungen, Cloudverwaltungstools und Prozesse, die für die Bereitstellung Ihrer Mindestverpflichtung zur Betriebsverwaltung erforderlich sind. |
+| <br> ![2](../_images/icons/2.png) | <br> [Definieren von geschäftlichen Verpflichtungen](./considerations/business-alignment.md): Dokumentieren Sie die unterstützten Workloads, um betriebliche Verpflichtungen beim Unternehmen herzustellen und Investitionen für die Cloudverwaltung für jede Workload zu vereinbaren. |
+| <br> ![3](../_images/icons/3.png) | <br> [Erweitern der Verwaltungsbaseline](./best-practices.md): Ausgehend von geschäftlichen Verpflichtungen und Betriebsentscheidungen nutzen Sie die mitgelieferten bewährten Methoden, um die erforderlichen Cloudverwaltungstools zu implementieren. |
+| <br> ![4](../_images/icons/4.png) | <br> [Erweiterte Vorgänge und Entwurfsprinzipien](./design-principles.md): Für Plattformen oder Workloads, die ein höheres Maß an Geschäftsverpflichtungen erfordern, ist möglicherweise eine umfassendere Architekturüberprüfung erforderlich, damit die Verpflichtungen in Bezug auf Resilienz und Zuverlässigkeit erfüllt werden können. |
 
 Mit den oben beschriebenen Schritten erstellen Sie Handlungsansätze, um die Verwaltungsmethoden des Frameworks für die Cloudeinführung bereitzustellen.
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: seo-azure-migrate
-ms.openlocfilehash: 1ae26921bef5ad9d14988075b18970348b0fe045
-ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
+ms.openlocfilehash: 08a7b2dd69e9c2d5dc05a56415aa8bc1faa787ef
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88284978"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570418"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Cloudmigration im Cloud Adoption Framework
 
@@ -22,10 +22,12 @@ Der [Cloudeinführungsplan](../plan/index.md) jedes Unternehmens beinhaltet Work
 
 Zur Vorbereitung auf diese Phase des Cloudeinführungszyklus werden die folgenden Schritte empfohlen:
 
-- [Migrieren Ihrer ersten Workload](./azure-migration-guide/index.md): Machen Sie sich mithilfe des Leitfadens zur Azure-Migration mit den nativen Azure-Tools und dem Ansatz für die Migration vertraut.
-- [Migrationsszenarios](./azure-best-practices/index.md): Nutzen Sie zusätzliche Migrationstools und -ansätze für weitere Migrationsszenarien.
-- [Bewährte Methoden:](./azure-best-practices/index.md) Gehen Sie allgemeine Migrationsanforderungen durch die Anwendung einheitlicher Best Practices an.
-- [Prozessverbesserungen](./migration-considerations/index.md): Die Migration ist stark prozessorientiert. Nutzen Sie diese Prozessverbesserungen, um verschiedene Aspekte Ihrer Migration zu bewerten und weiterzuentwickeln und auf Veränderungen bei den Migrationsaufgaben zu reagieren.
+|  |  |
+|--|--|
+| <br> ![1](../_images/icons/1.png) | <br> [Migrieren Ihrer ersten Workload](./azure-migration-guide/index.md): Machen Sie sich mithilfe des Leitfadens zur Azure-Migration mit den nativen Azure-Tools und dem Ansatz für die Migration vertraut. |
+| <br> ![2](../_images/icons/2.png) | <br> [Migrationsszenarios](./azure-best-practices/index.md): Nutzen Sie zusätzliche Migrationstools und -ansätze für weitere Migrationsszenarien. |
+| <br> ![3](../_images/icons/3.png) | <br> [Bewährte Methoden:](./azure-best-practices/index.md) Gehen Sie allgemeine Migrationsanforderungen durch die Anwendung einheitlicher Best Practices an. |
+| <br> ![4](../_images/icons/4.png) | <br> [Prozessverbesserungen](./migration-considerations/index.md): Die Migration ist stark prozessorientiert. Nutzen Sie diese Prozessverbesserungen, um verschiedene Aspekte Ihrer Migration zu bewerten und weiterzuentwickeln und auf Veränderungen bei den Migrationsaufgaben zu reagieren. |
 
 Diese Migrationsmethodik und die obigen Schritte basieren auf den folgenden Annahmen:
 
@@ -56,7 +58,7 @@ Im Folgenden finden Sie einen Überblick über die Phasen des oben dargestellten
 
 ## <a name="migration-waves-and-iterative-change-management"></a>Migrationswellen und iteratives Change Management
 
-Migrationsiterationen bieten durch die Migration von Ressourcen und Workloads technischen Nutzen. Eine Migrationswelle ist die kleinste Sammlung von Workloads, die einen greif- und messbaren geschäftlichen Mehrwert bieten. Am Ende jeder Iteration sollte ein Bericht über die durchgeführten technischen Aufgaben erstellt werden. Über geschäftliche Veränderungen und die strategische Planung wird jedoch im Allgemeinen auf etwas höherer Ebene entschieden. Während sich das Cloudeinführungsteam um die Migration kümmert, konzentriert sich das Cloudstrategieteam auf die Planung der nächsten ein bis zwei Migrationswellen. Das Cloudstrategieteam verfolgt auch den technischen Fortschritt in Form einer Lernmetrik nach, um die Zeitvorgaben für die geschäftliche Wertschöpfung besser zu verstehen. In dieser Hinsicht sind Migrationswellen die iterative Change Management-Methode zur Nachverfolgung von Geschäftsergebnissen, beteiligten Personen und Zeitplänen.
+Migrationsiterationen bieten durch die Migration von Ressourcen und Workloads technischen Nutzen. Eine Migrationswelle ist die kleinste Sammlung von Workloads, die einen greif- und messbaren geschäftlichen Mehrwert bieten. Am Ende jeder Iteration sollte ein Bericht über die durchgeführten technischen Aufgaben erstellt werden. Über geschäftliche Veränderungen und die strategische Planung wird jedoch in der Regel auf etwas höherer Ebene entschieden. Während sich das Cloudeinführungsteam um die Migration kümmert, konzentriert sich das Cloudstrategieteam auf die Planung der nächsten ein bis zwei Migrationswellen. Das Cloudstrategieteam verfolgt auch den technischen Fortschritt in Form einer Lernmetrik nach, um die Zeitvorgaben für die geschäftliche Wertschöpfung besser zu verstehen. In dieser Hinsicht sind Migrationswellen die iterative Change Management-Methode zur Nachverfolgung von Geschäftsergebnissen, beteiligten Personen und Zeitplänen.
 
 Wie die Grafik im vorherigen Abschnitt zeigt, bieten Prozesse innerhalb der Methoden [Planung](../plan/index.md) und [Bereitschaft](../ready/index.md) sowie in gewissem Maße innerhalb der Methode [Strategie](../strategy/index.md) des Cloud Adoption Framework Leitlinien für die Planung und Verwaltung der Migrationswellen. Durch die Verwaltung dieser Wellen werden die Migrationsaufgaben priorisiert und definiert, die von den technischen Teams erledigt werden müssen.
 
