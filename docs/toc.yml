@@ -272,7 +272,9 @@ items:
                   - name: Bewährte Methoden für die Azure-Netzwerksicherheit
                     href: /azure/security/fundamentals/network-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
                   - name: Bewährte Methoden für die Azure-Betriebssicherheit
-                    href: /azure/security/fundamentals/operational-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
+                    href: 'https://docs.microsoft.com/azure/security/fundamentals/operational-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json'
+          - name: Zielzonen von Partnern
+            href: ready/landing-zone/partner-landing-zone.md
           - name: Infrastructure-as-Code-Theorie
             items:
               - name: Umgestalten von Zielzonen

@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: cf4cc33734b33e0b0c71ca33973bb81397f1f8f2
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 08b75f151806d3d03441845a4acb53e17d3a748d
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571421"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88662097"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>Cloudverwaltung im Framework für die Cloudeinführung
 
@@ -33,7 +33,7 @@ Mit den oben beschriebenen Schritten erstellen Sie Handlungsansätze, um die Ver
 
 <!-- cSpell:ignore CAF -->
 
-![Verwalten der Methoden im Framework für die Cloudeinführung](../_images/manage/caf-manage.png)
+![Verwalten der Methodik des Frameworks für die Cloudeinführung](../_images/manage/caf-manage.png)
 
 Wie im Artikel [Geschäftliche Ausrichtung](./considerations/business-alignment.md) erläutert, sind nicht alle Workloads von entscheidender Bedeutung. Innerhalb eines Portfolios gibt es verschiedene Abstufungen für betriebliche Verwaltungsanforderungen. Die geschäftliche Ausrichtung unterstützt Sie beim Erfassen der geschäftlichen Auswirkungen und beim Aushandeln von Verwaltungskosten für das Unternehmen, um die am besten geeigneten Prozesse und Tools für die operative Verwaltung sicherzustellen.
 
