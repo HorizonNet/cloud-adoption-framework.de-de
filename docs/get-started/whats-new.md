@@ -7,12 +7,12 @@ ms.date: 07/21/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: a03c132a8e5dade32cfa7e8066ebe579fa8b1099
-ms.sourcegitcommit: abbc6283f9f63a71333e0129ecdd8ad291517776
+ms.openlocfilehash: 998a9a5069190e710723d637b22392a03701969e
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87523965"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195703"
 ---
 <!-- markdownlint-disable MD024 -->
 
@@ -23,6 +23,7 @@ Hier ist eine Liste mit den Änderungen angegeben, die kürzlich am Framework f�
 Dieses Framework wurde in Zusammenarbeit mit Kunden, Partnern und internen Microsoft-Teams entwickelt. Neuer und aktualisierter Inhalt wird veröffentlicht, sobald er verfügbar ist. Mit diesen Releases können Sie die Anleitung zusammen mit uns testen, überprüfen und optimieren. Wir laden Sie ein, als Partner mit uns gemeinsam das Framework für die Cloudeinführung für Azure zu entwickeln.
 
 ## <a name="july-17-2020"></a>17. Juli 2020
+
 Im Rahmen dieses Releases werden einige neue Szenarios hinzugefügt, die die Umsetzung der Cloudeinführung erleichtern.
 
 ### <a name="migration-scenarios"></a>Migrationsszenarios
@@ -35,6 +36,7 @@ Die neue [Übersichtsseite zu Migrationsszenarios](../scenarios/index.md) basier
 | [Azure Stack](../scenarios/azure-stack/index.md) | Hier erhalten Sie Informationen zum Bereitstellen von Azure in Ihrem Rechenzentrum mithilfe von Azure Stack Hub. |
 
 ### <a name="analytics-in-caf"></a>Analysen im CAF
+
 Das Microsoft Cloud Adoption Framework umfasst ab sofort auch Analyselösungen. In diesen neuen Themen liegt der Fokus auf den Best Practices für das Umsetzen von Analyselösungen während der Cloudeinführung.
 
 | Artikel | BESCHREIBUNG |
@@ -44,6 +46,7 @@ Das Microsoft Cloud Adoption Framework umfasst ab sofort auch Analyselösungen. 
 | [Datendefinitionssprachen (DDLs) für die Schemamigration](../migrate/azure-best-practices/analytics/schema-migration-ddl.md) | Hier erhalten Sie Informationen zu den Datenbankobjekten und zugehörigen Prozessen bei der Vorbereitung einer Migration vorhandener Daten. |
 
 ### <a name="ai-in-caf"></a>KI im CAF
+
 KI-Lösungen (künstliche Intelligenz) und Best Practices sind ab sofort im Microsoft Cloud Adoption Framework integriert. Diese KI-Lösungen unterstützen Sie bei der Beschleunigung von Innovationen mithilfe von Vorhersagen zu den Anforderungen von Kunden. Außerdem können Geschäftsprozesse automatisiert, Informationen erhoben und neue Möglichkeiten für die Kundenbindung erschlossen werden. Zudem kann die Servicequalität insgesamt während der Cloudeinführung verbessert werden.
 
 | Artikel | BESCHREIBUNG |
@@ -52,13 +55,13 @@ KI-Lösungen (künstliche Intelligenz) und Best Practices sind ab sofort im Micr
 | [Azure-Innovationsleitfaden: Innovationen mit KI](../innovate/innovation-guide/predict.md) | Hier erhalten Sie Informationen zu Innovationen mit KI. Außerdem finden Sie die für Ihre Implementierungsanforderungen am besten geeigneten Lösungen. |
 | [Künstliche Intelligenz (KI) im Cloud Adoption Framework](../innovate/ai/index.md) | Das Cloud Adoption Framework ist ein präskriptives Framework, das die Tools, Programme und Inhalte (Best Practices, Konfigurationsvorlagen und Architekturleitfäden) bietet, mit denen Sie die Einführung von KI und cloudnativen Methoden im großen Stil vereinfachen können. |
 | [MLOps mit Azure Machine Learning](../manage/mlops-machine-learning.md) | Hier erhalten Sie Informationen zu Best Practices zu MLOps mit Azure Machine Learning. |
-| [Innovationen mit KI](../innovate/best-practices/predict.md) | Hier erhalten Sie Informationen zu KI-Lösungen (Machine Learning, KI-Apps und -Agents, Wissensgewinnung) und zu Best Practices, die digitale Erfindungen beschleunigen können. | 
+| [Innovationen mit KI](../innovate/best-practices/predict.md) | Hier erhalten Sie Informationen zu KI-Lösungen (Machine Learning, KI-Apps und -Agents, Wissensgewinnung) und zu Best Practices, die digitale Erfindungen beschleunigen können. |
 
 ## <a name="june-15-2020"></a>15. Juni 2020
 
 Die ordnungsgemäße Konfiguration der Cloudumgebung ist häufig das erste und gängigste technische Hindernis während der Cloudeinführung. Der Schwerpunkt dieser Veröffentlichung liegt im Wesentlichen auf Anleitungen, mit denen Sie Bereitstellung von Cloudumgebungen beschleunigen können. Um dieses gängige Hindernis zu überwinden, werden im Cloud Adoption Framework für Azure die **Azure-Zielzonen** eingeführt.
 
-| Artikel | Beschreibung |
+| Artikel | BESCHREIBUNG |
 |---|---|
 | [Azure-Zielzonen](../ready/landing-zone/index.md) | Azure-Zielzonen erstellen eine gängige Gruppe von Entwurfsbereichen und Implementierungsoptionen, mit denen das Erstellen von Umgebungen gemäß dem Cloudeinführungsplan und dem Cloudbetriebsmodell beschleunigt wird. In diesem neuen Artikel werden Azure-Zielzonen eindeutiger erläutert. |
 | [Azure-Zielzonen: Entwurfsbereiche](../ready/landing-zone/design-areas.md) | Alle Azure-Zielzonen haben eine gemeinsame Gruppe von acht Entwurfsbereichen. Vor dem Bereitstellen einer der Azure-Zielzonen sollten Kunden beim Treffen wichtiger Entscheidungen jeden dieser Entwürfe untersuchen. |
@@ -168,7 +171,7 @@ Als Reaktion auf das erhaltene Feedback zur Kontinuität des Migrationsansatzes 
 
 ### <a name="ready-updates"></a>Aktualisierungen in Bezug auf die Bereitschaft
 
-| Artikel                                                                   | Beschreibung                                                                                                              |
+| Artikel                                                                   | BESCHREIBUNG                                                                                                              |
 |---------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | [Was&nbsp;ist&nbsp;eine&nbsp;Zielzone?&nbsp;](../ready/landing-zone/index.md)                 | **Neuer Artikel:** Enthält eine Definition des Begriffs „Zielzone“.                                                      |
 | Erste Landezone         | **Neuer Artikel:** Enthält weitere Informationen zum Vergleich verschiedener Zielzonen.                                                     |

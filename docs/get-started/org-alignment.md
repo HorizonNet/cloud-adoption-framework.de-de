@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: d26c60bc2f2dad96710b834f58976dd17fda4a5d
-ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
+ms.openlocfilehash: a2d0f8fbe4bbdca6226b555c0b8f96d9309addb6
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84812971"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195886"
 ---
 # <a name="get-started-align-your-organization"></a>Erste Schritte: Ausrichten Ihrer Organisation
 
@@ -86,4 +86,4 @@ Auf jeder Reifegradstufe wechselt die Verantwortlichkeit für verschiedene Cloud
 
 - [Anpassen vorhandener Rollen, Qualifikationen und Prozesse für die Cloud](../plan/adapt-roles-skills-processes.md)
 - [Antimuster in Unternehmen: Silos und Machtbereiche](../organize/fiefdoms-silos.md)
-- [Herunterladen der RACI-Tabellenvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)
+- [Herunterladen der RACI-Vorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx)

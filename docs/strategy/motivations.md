@@ -7,18 +7,16 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 85d18f8f0ce2002cc8186c550f5124ee97cb2aa8
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 73ca873b35ee676258ddb21223bebee28b427f83
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84785037"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572475"
 ---
 # <a name="motivations-why-are-we-moving-to-the-cloud"></a>Beweggründe: Motivationen für den Wechsel in die Cloud
 
-<!-- docsTest:ignore "is a common question" "Our board" -->
-
-„Warum wechseln wir in die Cloud?“ ist eine häufig gestellte Frage von geschäftlichen und technischen Projektbeteiligten. Wenn die Antwort lautet: „Die Geschäftsführung (oder der CIO bzw. andere Entscheider auf dieser Ebene) hat uns gesagt, wir steigen auf die Cloud um“, ist es sehr unwahrscheinlich, dass das Unternehmen die gewünschten Ergebnisse erzielt.
+„Warum wechseln wir in die Cloud?“ Es ist eine häufig gestellte Frage von geschäftlichen und technischen Projektbeteiligten. Wenn die Antwort lautet: „Die Geschäftsführung (oder der CIO bzw. andere Entscheider auf dieser Ebene) hat uns gesagt, wir steigen auf die Cloud um“, ist es sehr unwahrscheinlich, dass das Unternehmen die gewünschten Ergebnisse erzielt.
 
 In diesem Artikel werden einige Beweggründe für die Cloudmigration behandelt, die zu erfolgreicheren Geschäftsergebnissen führen können. Diese Optionen fördern einen Austausch in Bezug auf die Beweggründe und vereinfachen damit schließlich das Erreichen der Geschäftsergebnisse.
 
@@ -30,7 +28,7 @@ Unternehmenstransformationen, die durch die Cloudeinführung unterstützt werden
 
 | Kritische Unternehmensereignisse | Migration | Innovation |
 |---|---|---|
-| Ausstieg aus Rechenzentrum <br><br> Fusionen, Übernahme oder Veräußerung <br><br> Reduzierung der Kapitalkosten <br><br> Ende des Supports für unternehmenskritische Technologien <br><br> Reaktion auf Änderungen bezüglich der Einhaltung gesetzlicher Bestimmungen <br><br> Neue Anforderungen an die Datenhoheit <br><br> Verringerung von Störungen und Verbesserung der IT-Stabilität <br><br> <br><br> | Kostenersparnis <br><br> Verringerung der Anbieter- oder technischen Komplexität <br><br> Optimierung interner Vorgänge <br><br> Erhöhen der Unternehmensflexibilität <br><br> Vorbereitung auf neue technische Funktionen und Möglichkeiten <br><br> Skalierung entsprechend den Marktanforderungen <br><br> Skalierung entsprechend den geografischen Anforderungen <br><br> | Vorbereitung auf neue technische Funktionen und Möglichkeiten <br><br> Entwicklung neuer technischer Funktionen und Möglichkeiten <br><br> Skalierung entsprechend den Marktanforderungen <br><br> Skalierung entsprechend den geografischen Anforderungen <br><br> Verbesserte Kundenzufriedenheit und Kundenbindung <br><br> Transformierung von Produkten oder Diensten <br><br> Revolutionieren des Markts mit neuen Produkten oder Diensten |
+| Ausstieg aus Rechenzentrum <br><br> Fusionen, Übernahme oder Veräußerung <br><br> Reduzierung der Kapitalkosten <br><br> Ende des Supports für unternehmenskritische Technologien <br><br> Reaktion auf Änderungen bezüglich der Einhaltung gesetzlicher Bestimmungen <br><br> Neue Anforderungen an die Datenhoheit <br><br> Verringerung von Störungen und Verbesserung der IT-Stabilität <br><br> <br><br> | Kostenersparnis <br><br> Verringerung der Anbieter- oder technischen Komplexität <br><br> Optimierung interner Vorgänge <br><br> Erhöhen der Unternehmensflexibilität <br><br> Vorbereitung auf neue technische Funktionen und Möglichkeiten <br><br> Skalierung entsprechend den Marktanforderungen <br><br> Skalierung entsprechend den geografischen Anforderungen <br><br> Integration eines komplexen IT-Portfolios <br><br> | Vorbereitung auf neue technische Funktionen und Möglichkeiten <br><br> Entwicklung neuer technischer Funktionen und Möglichkeiten <br><br> Skalierung entsprechend den Marktanforderungen <br><br> Skalierung entsprechend den geografischen Anforderungen <br><br> Verbesserte Kundenzufriedenheit und Kundenbindung <br><br> Transformierung von Produkten oder Diensten <br><br> Revolutionieren des Markts mit neuen Produkten oder Diensten <br><br> Demokratisierung und/oder Self-Service-Umgebungen  |
 
 ## <a name="classify-your-motivations"></a>Klassifizieren Ihrer Beweggründe
 
@@ -46,11 +44,11 @@ Um eine klügere Entscheidungsfindung sicherzustellen, sollten alle Beteiligten 
 
 ## <a name="motivation-driven-strategies"></a>Motivationsorientierte Strategien
 
-In diesem Abschnitt werden die Beweggründe für _Migration_ und _Innovation_ sowie die zugehörigen Strategien hervorgehoben.
+In diesem Abschnitt werden die Beweggründe für *Migration* und *Innovation* sowie die zugehörigen Strategien hervorgehoben.
 
 ### <a name="migration"></a>Migration
 
-Die Beweggründe für _Migration_ weiter oben in der Liste „Beweggründe“ sind die häufigsten (aber nicht unbedingt die wichtigsten) Gründe für einen Wechsel in die Cloud. Diese Ergebnisse sind wichtig, aber sie werden am effektivsten für den Umstieg auf andere, nützlichere Weltbilder genutzt. Dieser wichtige erste Schritt für die Cloudeinführung wird häufig als _Cloudmigration_ bezeichnet. Das Framework bezieht sich auf die Strategie zum Ausführen einer Cloudmigration mit dem Begriff [Migrieren](../get-started/migrate.md).
+Die Beweggründe für *Migration* weiter oben in der Liste „Beweggründe“ sind die häufigsten (aber nicht unbedingt die wichtigsten) Gründe für einen Wechsel in die Cloud. Diese Ergebnisse sind wichtig, aber sie werden am effektivsten für den Umstieg auf andere, nützlichere Weltbilder genutzt. Dieser wichtige erste Schritt für die Cloudeinführung wird häufig als *Cloudmigration* bezeichnet. Das Framework bezieht sich auf die Strategie zum Ausführen einer Cloudmigration mit dem Begriff [Migrieren](../get-started/migrate.md).
 
 Einige Beweggründe passen gut zu einer Migrationsstrategie. Die Motive am Listenanfang werden wahrscheinlich deutlich weniger geschäftliche Auswirkungen haben als die am Listenende.
 
@@ -64,7 +62,7 @@ Einige Beweggründe passen gut zu einer Migrationsstrategie. Die Motive am Liste
 
 ### <a name="innovation"></a>Innovation
 
-Daten sind die neue Ware. Moderne Apps sind die Lieferkette, die die Daten in verschiedene Umgebungen weiterleitet. Auf dem heutigen Geschäftsmarkt findet man nur sehr schwer transformative Produkte oder Dienste, deren Grundlage nicht Daten, Erkenntnisse und Kundenerfahrungen bilden. Die Beweggründe, die weiter unten in der Liste _Innovation_ aufgeführt sind, beziehen sich auf eine Technologiestrategie, die in diesem Framework als [Innovation](../get-started/innovate.md) bezeichnet wird.
+Daten sind die neue Ware. Moderne Anwendungen sind die Lieferkette, die die Daten in verschiedene Umgebungen weiterleitet. Auf dem heutigen Geschäftsmarkt findet man nur sehr schwer transformative Produkte oder Dienste, deren Grundlage nicht Daten, Erkenntnisse und Kundenerfahrungen bilden. Die Beweggründe, die weiter unten in der Liste *Innovation* aufgeführt sind, beziehen sich auf eine Technologiestrategie, die in diesem Framework als [innovative Methodik](../get-started/innovate.md) bezeichnet wird.
 
 Die folgende Liste enthält Beweggründe, die dafür sorgen, dass sich eine IT-Organisation mehr auf eine Innovations- als auf eine Migrationsstrategie konzentriert.
 

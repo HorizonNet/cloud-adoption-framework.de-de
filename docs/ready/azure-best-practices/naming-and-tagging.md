@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 2ec657fce5047dda0e068692aac895eae5554940
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 57d0ea8b033a3a043d9243f1b9ecbcae5e9b9391
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479856"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569874"
 ---
 <!-- docsTest:disable -->
 <!-- cSpell:ignore westeurope usgovia accountlookup messagequery -->
@@ -22,7 +22,7 @@ ms.locfileid: "86479856"
 
 Organisieren Sie Ihre Cloudressourcen so, dass das operative Management und die Buchhaltungsanforderungen unterstützt werden. Gut definierte Namens- und Kennzeichnungskonventionen für Metadaten ermöglichen das schnelle Finden und Verwalten von Ressourcen. Diese Konventionen helfen auch dabei, Cloudnutzungskosten mithilfe von Mechanismen zur Rückbuchung und verbrauchsbasierter Kostenzuteilung an Geschäftsteams auszurichten.
 
-Azure definiert [Benennungsregeln und -einschränkungen für Azure-Ressourcen](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-name-rules). Dieser Leitfaden enthält detaillierte Empfehlungen zur Unterstützung der Enterprise Cloud-Einführung.
+Azure definiert [Benennungsregeln und -einschränkungen für Azure-Ressourcen](/azure/azure-resource-manager/management/resource-name-rules). Dieser Leitfaden enthält detaillierte Empfehlungen zur Unterstützung der Enterprise Cloud-Einführung.
 
 Das Ändern von Ressourcennamen kann schwierig sein. Legen Sie eine umfassende Namenskonvention fest, bevor Sie mit einer größeren Cloudbereitstellung beginnen.
 
@@ -31,7 +31,7 @@ Das Ändern von Ressourcennamen kann schwierig sein. Legen Sie eine umfassende N
 >
 > Verwenden Sie im Verlauf dieser Diskussionen die folgende Vorlage, um die Namens- und Taggingentscheidungen zu erfassen, die Sie treffen, wenn Sie diese Empfehlungen an Ihre speziellen geschäftlichen Anforderungen anpassen.
 >
-> Laden Sie die [Vorlage zum Festhalten von Namens- und Kennzeichnungskonventionen](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/CAF%20Readiness%20Naming%20and%20Tagging%20tracking%20template.xlsx) herunter.
+> Laden Sie die [Vorlage zum Festhalten von Namens- und Kennzeichnungskonventionen](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/naming-and-tagging-conventions-tracking-template.xlsx) herunter.
 
 ## <a name="naming-and-tagging-resources"></a>Benennen und Kennzeichnen von Ressourcen
 
@@ -55,7 +55,7 @@ Ein virtuelles Netzwerk hat beispielsweise einen Ressourcengruppenbereich, was b
 
 Einige Ressourcennamen, etwa PaaS-Dienste mit öffentlichen Endpunkten oder DNS-Bezeichnungen virtueller Maschinen, haben globale Bereiche, was bedeutet, dass sie auf der gesamten Azure-Plattform eindeutig sein müssen.
 
-Für Ressourcennamen gelten Längenbeschränkungen. Daher ist es wichtig, den Kontext, der in einen Namen eingebettet ist, mit dessen Bereich und Länge in Einklang zu bringen, wenn Sie Ihre Namenskonventionen entwickeln. Weitere Informationen finden Sie unter [Benennungsregeln und -einschränkungen für Azure-Ressourcen](https://docs.microsoft.com/azure/azure-resource-manager/management/resource-name-rules).
+Für Ressourcennamen gelten Längenbeschränkungen. Daher ist es wichtig, den Kontext, der in einen Namen eingebettet ist, mit dessen Bereich und Länge in Einklang zu bringen, wenn Sie Ihre Namenskonventionen entwickeln. Weitere Informationen finden Sie unter [Benennungsregeln und -einschränkungen für Azure-Ressourcen](/azure/azure-resource-manager/management/resource-name-rules).
 
 ### <a name="recommended-naming-components"></a>Empfohlene Namenskomponenten
 
@@ -240,21 +240,21 @@ Der folgende Abschnitt enthält einige Namensbeispiele für häufige Azure-Resso
 
 | Ressourcentyp                      | `Scope`                              | Format                                                      | Beispiele                                                                                                                |
 |---------------------------------|------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| Subscription                    | Account/ <br> Enterprise Agreement | \<Business Unit\>-\<Subscription type\>-\<\#\#\#\>          | <li> mktg-prod-001  <li> konzern-freigabe-001 <li> fin-client-001 |
-| Resource group                  | Subscription                       | rg-\<App or service name\>-\<Subscription type\>-\<\#\#\#\> | <li> rg-mktgsharepoint-prod-001  <li> rg-kontnachschldien-freigabe-001  <li> rg-ad-verz-dienste-freigabe-001 |
+| Subscription                    | Account/ <br> Enterprise Agreement | \<Business Unit\>-\<Subscription type\>-\<\#\#\#\>          | <li> mktg-prod-001 <li> konzern-freigabe-001 <li> fin-client-001 |
+| Resource group                  | Subscription                       | rg-\<App or service name\>-\<Subscription type\>-\<\#\#\#\> | <li> rg-mktgsharepoint-prod-001 <li> rg-kontnachschldien-freigabe-001 <li> rg-ad-verz-dienste-freigabe-001 |
 | API Management-Dienstinstanz | Global                             | apim-\<App or service name\>                                | apim-navigator-prod                                                                                                     |
 
 ### <a name="example-names-networking"></a>Namensbeispiele: Netzwerk
 
 | Ressourcentyp                   | `Scope`           | Format                                                               | Beispiele                                                                                                                      |
 |------------------------------|-----------------|----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Virtuelles Netzwerk              | Resource group  | vnet-\<Subscription type\>-\<Region\>-\<\#\#\#\>                     | <li> vnet-freigabe-usaosten2-001  <li> vnet-prod-usawesten-001  <li> vnet-client-usaosten2-001 |
-| Subnet                       | Virtuelles Netzwerk | snet-\<subscription\>-\<subregion\>-\<\#\#\#\>                       | <li> snet-freigabe-usaosten2-001  <li> snet-prod-usawesten-001  <li> snet-client-usaosten2-001 |
-| Netzwerkschnittstelle (NIC)      | Resource group  | nic-\<\#\#\>-\<vm name\>-\<subscription\>\<\#\#\#\>                   | <li> nic-01-dc1-freigabe-001  <li> nic-02-vmhadoop1-prod-001  <li> nic-02-vmtest1-client-001 |
-| Öffentliche IP-Adresse            | Resource group  | pip-\<vm name or app name\>-\<Environment\>-\<subregion\>-\<\#\#\#\> | <li> pip-dc1-freigabe-usaosten2-001  <li> pip-hadoop-prod-usawesten-001 |
-| Load Balancer                | Resource group  | lb-\<app name or role\>\<Environment\>\<\#\#\#\>                     | <li> lb-navigator-prod-001  <li> lb-sharepoint-entw-001 |
-| Netzwerksicherheitsgruppe (NSG) | Subnetz oder NIC   | nsg-\<policy name or app name\>-\<\#\#\#\>                           | <li> nsg-weberlaub-001  <li> nsg-rdperlaub-001  <li> nsg-sqlerlaub-001  <li> nsg-dnsblocked-001 |
-| Lokales Netzwerkgateway        | Virtuelles Gateway | lgw-\<Subscription type\>-\<Region\>-\<\#\#\#\>                      | <li> lgw-shared-eastus2-001  <li> lgw-prod-westus-001  <li> lgw-client-eastus2-001 |
+| Virtuelles Netzwerk              | Resource group  | vnet-\<Subscription type\>-\<Region\>-\<\#\#\#\>                     | <li> vnet-freigabe-usaosten2-001 <li> vnet-prod-usawesten-001 <li> vnet-client-usaosten2-001 |
+| Subnet                       | Virtuelles Netzwerk | snet-\<subscription\>-\<subregion\>-\<\#\#\#\>                       | <li> snet-freigabe-usaosten2-001 <li> snet-prod-usawesten-001 <li> snet-client-usaosten2-001 |
+| Netzwerkschnittstelle (NIC)      | Resource group  | nic-\<\#\#\>-\<vm name\>-\<subscription\>\<\#\#\#\>                   | <li> nic-01-dc1-freigabe-001 <li> nic-02-vmhadoop1-prod-001 <li> nic-02-vmtest1-client-001 |
+| Öffentliche IP-Adresse            | Resource group  | pip-\<vm name or app name\>-\<Environment\>-\<subregion\>-\<\#\#\#\> | <li> pip-dc1-freigabe-usaosten2-001 <li> pip-hadoop-prod-usawesten-001 |
+| Load Balancer                | Resource group  | lb-\<app name or role\>\<Environment\>\<\#\#\#\>                     | <li> lb-navigator-prod-001 <li> lb-sharepoint-entw-001 |
+| Netzwerksicherheitsgruppe (NSG) | Subnetz oder NIC   | nsg-\<policy name or app name\>-\<\#\#\#\>                           | <li> nsg-weberlaub-001 <li> nsg-rdperlaub-001 <li> nsg-sqlerlaub-001 <li> nsg-dnsblocked-001 |
+| Lokales Netzwerkgateway        | Virtuelles Gateway | lgw-\<Subscription type\>-\<Region\>-\<\#\#\#\>                      | <li> lgw-shared-eastus2-001 <li> lgw-prod-westus-001 <li> lgw-client-eastus2-001 |
 | Gateway des virtuellen Netzwerks      | Virtuelles Netzwerk | vgw-\<Subscription type\>-\<Region\>-\<\#\#\#\>                      | <li> vgw-shared-eastus2-001 <li> vgw-prod-westus-001 <li> vgw-client-eastus2-001 |
 | Standort-zu-Standort-Verbindung      | Resource group  | cn-\<local gateway name\>-to-\<virtual gateway name\>                | <li> cn-lgw-shared-eastus2-001-to-vgw-shared-eastus2-001 <li> cn-lgw-shared-eastus2-001-to-shared-westus-001 |
 | VPN-Verbindung               | Resource group  | cn-\<subscription1\>\<region1\>-to-\<subscription2\>\<region2\>-     | <li> cn-freigabe-usaosten2-to-freigabe-usawesten <li> cn-prod-usaosten2-to-prod-usawesten |

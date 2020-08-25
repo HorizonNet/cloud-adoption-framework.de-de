@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 3f5273750025f3dea6f10ccc070896f95f42db6a
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 8fee6b827beec0311054f1cdf5514f8c4910f3a7
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84993260"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88195521"
 ---
 # <a name="govern-methodology-for-the-cloud"></a>Governancemethodik für die Cloud
 
@@ -62,7 +62,7 @@ Die folgende Abbildung zeigt ein einfaches Governance-MVP und drei Governanceite
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Verwenden Sie das [Governance-Benchmarktool](https://cafbaseline.com) im Framework für die Cloudeinführung, um Ihre Transformationsjourney zu bewerten und Schwachstellen in Ihrer Organisation in sechs Schlüsselbereichen zu ermitteln, die im Framework definiert sind.
+Erfahren Sie, wie Sie das Governance-Benchmarktool im Cloud Adoption Framework verwenden, um Ihre Transformationsjourney zu bewerten und Schwachstellen in Ihrer Organisation in sechs Schlüsselbereichen zu ermitteln, die im Framework definiert sind.
 
 > [!div class="nextstepaction"]
 > [Bewerten der Transformationsjourney](./benchmark.md)

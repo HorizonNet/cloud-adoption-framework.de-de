@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 19cb24e043b0afa434032728a8379d7e69fe0a64
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: ef6830c5e7d0c23460390ee2ed1a3db0f7bc6c73
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450457"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573920"
 ---
 <!-- cSpell:ignore CISO passwordless -->
 
@@ -48,28 +48,28 @@ Zusätzlich zur Erfüllung aller expliziten gesetzlichen Complianceanforderungen
 
 - **Technisch:** Mindern von Hauptrisiken und Erhöhen der Sichtbarkeit und Kontrolle von Ressourcen durch die Aktivierung von kennwortloser oder mehrstufiger Authentifizierung für Administratoren und durch Aktivieren des Bedrohungsschutzes für Cloudressourcen.
 
-  - [Kennwortlose oder mehrstufige Authentifizierung für Administratoren](https://docs.microsoft.com/azure/architecture/framework/security/critical-impact-accounts#passwordless-or-multi-factor-authentication-for-admins)
-  - [Sicherheitsvorgänge](https://docs.microsoft.com/azure/architecture/framework/security/security-operations) und [Bedrohungsschutz in Azure Security Center](https://docs.microsoft.com/azure/security-center/threat-protection)
+  - [Kennwortlose oder mehrstufige Authentifizierung für Administratoren](/azure/architecture/framework/security/critical-impact-accounts#passwordless-or-multi-factor-authentication-for-admins)
+  - [Sicherheitsvorgänge](/azure/architecture/framework/security/security-operations) und [Bedrohungsschutz in Azure Security Center](/azure/security-center/threat-protection)
 
 - **Vorgehensweise:** Ermöglichen schneller Sicherheitsentscheidungen und kontinuierlicher Verbesserung durch die Zuweisung von Sicherheitsrollen und -verantwortlichkeiten und durch die Einrichtung eines Prozesses zur Reaktion auf Incidents.
 
-  - [Klare Verantwortlichkeiten](https://docs.microsoft.com/azure/architecture/framework/security/governance#clear-lines-of-responsibility), [Zuweisen von Berechtigungen zum Verwalten der Umgebung](https://docs.microsoft.com/azure/architecture/framework/security/governance#assign-privileges-for-managing-the-environment) und Operationalisieren von Sicherheitsbewertungen <!-- TODO: Improve this and add link to AAF article -->
+  - [Klare Verantwortlichkeiten](/azure/architecture/framework/security/governance#clear-lines-of-responsibility), [Zuweisen von Berechtigungen zum Verwalten der Umgebung](/azure/architecture/framework/security/governance#assign-privileges-for-managing-the-environment) und Operationalisieren von Sicherheitsbewertungen <!-- TODO: Improve this and add link to AAF article -->
   - Sicherheitsrollen und Zuständigkeiten <!-- TODO: add link to bookmark -->
   - [Referenzleitfaden für die Reaktion auf Vorfälle](https://aka.ms/irrg)
 
 - **Personen**: Bereitstellung von Schulungen, Tools und Zugangsmöglichkeiten für Sicherheitsteams, die für eine erfolgreiche Bereitstellung und den Betrieb während des Übergangs zur Cloudumgebung erforderlich sind.
 
   - **Informieren aller Beteiligten über Konzepte**, wie sich Cloud und Cloudsicherheit weiterentwickeln:
-    - [Entwicklung der Bedrohungsumgebung, von Rollen und digitalen Strategien](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#evolution-of-threat-environment-roles--digital-strategies-2004)
-    - [Transformation von Sicherheit, Strategien, Tools und Bedrohungen](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#transformation-of-security-strategies-tools--threats-1513)
-  - **Schulen technischer Mitarbeiter** bezüglich technischer Details der Cloudsicherheitsfunktionen für die verwendeten Plattformen. Microsoft bietet umfassende [Azure-Sicherheitsdokumentation](https://docs.microsoft.com/azure/security).
+    - [Entwicklung der Bedrohungsumgebung, von Rollen und digitalen Strategien](/security/compass/microsoft-security-compass-introduction#evolution-of-threat-environment-roles--digital-strategies-2004)
+    - [Transformation von Sicherheit, Strategien, Tools und Bedrohungen](/security/compass/microsoft-security-compass-introduction#transformation-of-security-strategies-tools--threats-1513)
+  - **Schulen technischer Mitarbeiter** bezüglich technischer Details der Cloudsicherheitsfunktionen für die verwendeten Plattformen. Microsoft bietet umfassende [Azure-Sicherheitsdokumentation](/azure/security).
 
 - **Langfristige architektonische Entscheidungen:** Einrichten einer langfristigen Grundlage, um die richtigen Entscheidungen zu treffen. Es ist schwierig und teuer, diese Grundlage später zu ändern.
 
-  - [Aufbau einer Unternehmenssegmentierungsstrategie und Anpassung der technischen Architekturen an diese Strategie (Netzwerksegmentierung, Identitätssegmentierung usw.)](https://docs.microsoft.com/azure/architecture/framework/security/network-security-containment#align-network-segmentation-with-enterprise-segmentation-strategy)
-  - [Einzelnes Unternehmensverzeichnis](https://docs.microsoft.com/azure/architecture/framework/security/identity#single-enterprise-directory)
-  - [Authentifizierungsstrategie für Dienste](https://docs.microsoft.com/azure/architecture/framework/security/applications-services#prefer-identity-authentication-over-keys)
-  - [Berechtigungszuweisungsstrategie](https://docs.microsoft.com/azure/architecture/framework/security/critical-impact-accounts#avoid-granular-and-custom-permissions)
+  - [Aufbau einer Unternehmenssegmentierungsstrategie und Anpassung der technischen Architekturen an diese Strategie (Netzwerksegmentierung, Identitätssegmentierung usw.)](/azure/architecture/framework/security/network-security-containment#align-network-segmentation-with-enterprise-segmentation-strategy)
+  - [Einzelnes Unternehmensverzeichnis](/azure/architecture/framework/security/identity#single-enterprise-directory)
+  - [Authentifizierungsstrategie für Dienste](/azure/architecture/framework/security/applications-services#prefer-identity-authentication-over-keys)
+  - [Berechtigungszuweisungsstrategie](/azure/architecture/framework/security/critical-impact-accounts#avoid-granular-and-custom-permissions)
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -100,7 +100,7 @@ Wir empfehlen, die Strategie in einer Präsentation festzuhalten, um eine einfac
   - **Vollständige Präsentation:** Diese sollte den vollständigen Satz von Elementen für die Sicherheitsstrategie in der Hauptpräsentation oder in optionalen Referenzfolien enthalten.
   - **Executive-Zusammenfassungen:** Versionen zur Verwendung für Führungskräfte und Vorstandsmitglieder enthalten möglicherweise nur kritische Elemente, die für deren Rolle relevant sind, etwa Risikobereitschaft, höchste Prioritäten oder akzeptierte Risiken.
 
-- Sie können auch Motivationen, Ergebnisse und geschäftliche Begründungen in der [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) aufzeichnen.
+- Sie können auch Motivationen, Ergebnisse und geschäftliche Begründungen in der [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) aufzeichnen.
 
 **Bewährte Methoden für das Entwickeln einer Sicherheitsstrategie:**
 
@@ -124,9 +124,9 @@ Erfolgreiche Programme integrieren diese Elemente in ihren Sicherheitsstrategiep
 
 **Verwandte Ressourcen für zusätzlichen Kontext:**
 
-- [Entwicklung der Bedrohungsumgebung, von Rollen und digitalen Strategien](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#evolution-of-threat-environment-roles--digital-strategies-2004)
+- [Entwicklung der Bedrohungsumgebung, von Rollen und digitalen Strategien](/security/compass/microsoft-security-compass-introduction#evolution-of-threat-environment-roles--digital-strategies-2004)
 
-- [Transformation von Sicherheit, Strategien, Tools und Bedrohungen](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#transformation-of-security-strategies-tools--threats-1513)
+- [Transformation von Sicherheit, Strategien, Tools und Bedrohungen](/security/compass/microsoft-security-compass-introduction#transformation-of-security-strategies-tools--threats-1513)
 
 - Strategieüberlegungen für das Cloud Adoption Framework:
 
@@ -153,7 +153,7 @@ Sicherheitsplanung und Planung der Cloudbereitstellung sollten nicht isoliert vo
 
 **Zielvorgaben:**
 
-- **Systemsicherheitsplan:** Ein Sicherheitsplan sollte Teil der Hauptplanungsdokumentation für die Cloud sein. Dabei kann es sich um ein Dokument handeln, das die [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx), einen detaillierten Foliensatz oder eine Projektdatei verwendet. Je nach Größe, Kultur und Standardverfahren der Organisation kann es auch eine Kombination dieser Formate sein.
+- **Systemsicherheitsplan:** Ein Sicherheitsplan sollte Teil der Hauptplanungsdokumentation für die Cloud sein. Dabei kann es sich um ein Dokument handeln, das die [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx), einen detaillierten Foliensatz oder eine Projektdatei verwendet. Je nach Größe, Kultur und Standardverfahren der Organisation kann es auch eine Kombination dieser Formate sein.
 
   Der Sicherheitsplan sollte alle diese Elemente enthalten:
 
@@ -165,16 +165,16 @@ Sicherheitsplanung und Planung der Cloudbereitstellung sollten nicht isoliert vo
   
     Microsoft stellt Referenzarchitekturen und Technologiefunktionen zur Verfügung, die Sie beim Erstellen Ihrer Architektur und Roadmap unterstützen:
 
-    - [Azure-Komponenten und -Referenzmodell](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#azure-components-and-reference-model-2151), um die Planung und den Entwurf von Azure-Sicherheitsrollen zu beschleunigen.
+    - [Azure-Komponenten und -Referenzmodell](/security/compass/microsoft-security-compass-introduction#azure-components-and-reference-model-2151), um die Planung und den Entwurf von Azure-Sicherheitsrollen zu beschleunigen.
 
       ![Azure-Verwaltungsmodell](../_images/security/azure-administration-model.png)
 
       ![Azure RBAC-Modell](../_images/security/azure-rbac-model.png)
 
     - [Cybersicherheits-Referenzarchitektur von Microsoft](https://aka.ms/mcra) zum Aufbau einer Cybersicherheitsarchitektur für ein hybrides Unternehmen, das sowohl lokale als auch Cloudressourcen umfasst.
-    - [SOC-Referenzarchitektur (Security Operations Center)](https://docs.microsoft.com/security/compass/security-operations-videos-and-decks#part-1-introduction---soc-learnings-strategies-and-technical-integration-2430) zur Modernisierung der Sicherheitserkennung, -reaktion und -wiederherstellung.
-    - [Zero-Trust-Referenzarchitektur für Benutzerzugriff](https://docs.microsoft.com/security/ciso-workshop/ciso-workshop-module-3#part-5-zero-trust-user-access-reference-architecture-842) zur Modernisierung der Zugriffssteuerungsarchitektur für Cloudgenerierung.
-    - [Azure Security Center](https://docs.microsoft.com/azure/security-center) und [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security) als Hilfe beim Schützen von Cloudressourcen.
+    - [SOC-Referenzarchitektur (Security Operations Center)](/security/compass/security-operations-videos-and-decks#part-1-introduction---soc-learnings-strategies-and-technical-integration-2430) zur Modernisierung der Sicherheitserkennung, -reaktion und -wiederherstellung.
+    - [Zero-Trust-Referenzarchitektur für Benutzerzugriff](/security/ciso-workshop/ciso-workshop-module-3#part-5-zero-trust-user-access-reference-architecture-842) zur Modernisierung der Zugriffssteuerungsarchitektur für Cloudgenerierung.
+    - [Azure Security Center](/azure/security-center) und [Microsoft Cloud App Security](/cloud-app-security) als Hilfe beim Schützen von Cloudressourcen.
 
   - **Sicherheitsbewusstsein und Schulungsplan**, damit alle Teams über wichtige grundlegende Sicherheitskenntnisse verfügen.
 
@@ -206,11 +206,11 @@ Ihr Sicherheitsplan ist wahrscheinlich erfolgreicher, wenn die Planung den folge
     - Warum die Fähigkeiten erlernt werden müssen (und die damit verbundenen Vorteile).
     - Wie diese Kenntnisse erworben werden (und Ressourcen bereitgestellt werden, um den Kenntniserwerb zu unterstützen).
   
-    Sie können den Plan mithilfe der [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) dokumentieren. Sie können die Ausbildung Ihrer Teammitglieder auch durch das [Onlinesicherheitstraining von Microsoft](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction) unterstützen.
+    Sie können den Plan mithilfe der [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) dokumentieren. Sie können die Ausbildung Ihrer Teammitglieder auch durch das [Onlinesicherheitstraining von Microsoft](/security/compass/microsoft-security-compass-introduction) unterstützen.
   - **Sorgen für Sicherheitsbewusstsein**, um den Menschen dabei zu helfen, eine echte Verbindung zu ihrem Anteil an der Sicherheit der Organisation herzustellen.
 
 - **Vertrautmachen mit Microsoft-Erkenntnissen und -Anleitungen:** Microsoft hat Einblicke und Perspektiven veröffentlicht, um Ihrer Organisation bei der Planung der Umstellung auf die Cloud und einer modernen Sicherheitsstrategie zu helfen. Das Material umfasst aufgezeichnete Schulungen, Dokumentationen und bewährte Sicherheitsmethoden sowie empfohlene Standards.
-  Technische Anleitungen für die Erstellung Ihres Plans und Ihrer Architektur finden Sie in der [Microsoft-Sicherheitsdokumentation](https://docs.microsoft.com/security).
+  Technische Anleitungen für die Erstellung Ihres Plans und Ihrer Architektur finden Sie in der [Microsoft-Sicherheitsdokumentation](/security).
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -227,7 +227,7 @@ Das Sicherheitsführungsteam (CISO oder Äquivalent) sollte den Plan genehmigen.
 
 Es ist viel einfacher, in einem sicheren Zustand zu beginnen, als die Sicherheit später in Ihrer Umgebung nachzurüsten. Wir empfehlen dringend, mit einer sicheren Konfiguration zu beginnen, um sicherzustellen, dass Workloads in eine sichere Umgebung migriert und dort entwickelt und getestet werden.
 
-Während der Implementierung der [Zielzone](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone) können sich viele Entscheidungen auf Sicherheits- und Risikoprofile auswirken. Das Cloudsicherheitsteam sollte die Konfiguration der Zielzone überprüfen, um sicherzustellen, dass sie den Sicherheitsstandards und -anforderungen der Sicherheitsbaselines Ihrer Organisation entspricht.
+Während der Implementierung der [Zielzone](..//ready/landing-zone/index.md) können sich viele Entscheidungen auf Sicherheits- und Risikoprofile auswirken. Das Cloudsicherheitsteam sollte die Konfiguration der Zielzone überprüfen, um sicherzustellen, dass sie den Sicherheitsstandards und -anforderungen der Sicherheitsbaselines Ihrer Organisation entspricht.
 
 **Ziele:**
 
@@ -238,16 +238,16 @@ Während der Implementierung der [Zielzone](https://docs.microsoft.com/azure/clo
 - **Kombinieren von vorhandener Anforderungen und Cloudempfehlungen:** Beginnen Sie mit den empfohlenen Anleitungen, und passen Sie diese dann an Ihre individuellen Sicherheitsanforderungen an. Bei dem Versuch, lokale Richtlinien und Standards durchzusetzen, sind wir auf Herausforderungen gestoßen, da diese sich oft auf veraltete Technologie oder Sicherheitsansätze beziehen.
 
   Microsoft hat einen Leitfaden veröffentlicht, der Sie bei der Erstellung Ihrer Sicherheitsbaselines unterstützt:
-  - [Azure-Sicherheitsstandards für Strategie und Architektur](https://docs.microsoft.com/security/compass/compass): Strategie- und Architekturempfehlungen zur Gestaltung der Sicherheitshaltung Ihrer Umgebung.
-  - [Vergleichstests für die Azure-Sicherheit:](https://docs.microsoft.com/azure/security/benchmarks/introduction) Spezifische Konfigurationsempfehlungen zum Sichern von Azure-Umgebungen.
-  - [Azure-Sicherheitsbaselinetraining](https://docs.microsoft.com/learn/modules/create-security-baselines).
+  - [Azure-Sicherheitsstandards für Strategie und Architektur](/security/compass/compass): Strategie- und Architekturempfehlungen zur Gestaltung der Sicherheitshaltung Ihrer Umgebung.
+  - [Vergleichstests für die Azure-Sicherheit:](/azure/security/benchmarks/introduction) Spezifische Konfigurationsempfehlungen zum Sichern von Azure-Umgebungen.
+  - [Azure-Sicherheitsbaselinetraining](/learn/modules/create-security-baselines).
 
 - **Bereitstellen von Schutzmaßnahmen:** Schutzmaßnahmen sollten die automatisierte Überwachung und Durchsetzung von Richtlinien umfassen. Für diese neuen Umgebungen sollten die Teams bestrebt sein, die Sicherheitsbaselines der Organisation sowohl zu prüfen als auch durchzusetzen. Diese Maßnahmen können dabei helfen, Sicherheitsüberraschungen während der Entwicklung sowie die Continuous Integration und Continuous Deployment (CI/CD) von Workloads zu minimieren.
 
   Microsoft bietet verschiedene native Funktionen in Azure, um dies zu ermöglichen:
-  - [Secure Score](https://docs.microsoft.com/azure/security-center/secure-score-security-controls): Verwenden Sie eine gewichtete Bewertung Ihres Azure-Sicherheitsstatus, um die Sicherheitsmaßnahmen und -projekte in Ihrer Organisation nachzuverfolgen.
-  - [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview): Cloudarchitekten und zentrale IT-Gruppen können eine wiederholbare Gruppe von Azure-Ressourcen definieren, mit der die Standards, Muster und Anforderungen einer Organisation implementiert und erzwungen werden.
-  - [Azure Policy](https://docs.microsoft.com/azure/governance/policy): Dies ist die Grundlage der Sichtbarkeits- und Steuerungsfunktionen, die von den anderen Diensten verwendet werden. Azure Policy ist in [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager) integriert, sodass Sie Änderungen prüfen und Richtlinien für jede Ressource in Azure vor, während oder nach ihrer Erstellung durchsetzen können.
+  - [Secure Score](/azure/security-center/secure-score-security-controls): Verwenden Sie eine gewichtete Bewertung Ihres Azure-Sicherheitsstatus, um die Sicherheitsmaßnahmen und -projekte in Ihrer Organisation nachzuverfolgen.
+  - [Azure Blueprints](/azure/governance/blueprints/overview): Cloudarchitekten und zentrale IT-Gruppen können eine wiederholbare Gruppe von Azure-Ressourcen definieren, mit der die Standards, Muster und Anforderungen einer Organisation implementiert und erzwungen werden.
+  - [Azure Policy](/azure/governance/policy): Dies ist die Grundlage der Sichtbarkeits- und Steuerungsfunktionen, die von den anderen Diensten verwendet werden. Azure Policy ist in [Azure Resource Manager](/azure/azure-resource-manager) integriert, sodass Sie Änderungen prüfen und Richtlinien für jede Ressource in Azure vor, während oder nach ihrer Erstellung durchsetzen können.
 - [Verbessern des Betriebs von Zielzonen](../ready/considerations/landing-zone-security.md): Verwenden Sie bewährte Methoden zur Verbesserung der Sicherheit innerhalb einer Zielzone.
 
 <!-- markdownlint-disable MD033 -->
@@ -275,7 +275,7 @@ Nachdem Sie sichergestellt haben, dass neue Anwendungen und Zielzone den bewähr
 - Gleichen Sie Betriebs- und Sicherheitsrisiken aus. Da diese Umgebungen möglicherweise Produktionssysteme hosten, die kritische Geschäftsprozesse ermöglichen, müssen Sie Sicherheitsverbesserungen möglicherweise schrittweise implementieren, um das Risiko eines Betriebsausfalls zu vermeiden.
 - Priorisieren Sie die Erkennung und Behebung von Sicherheitsrisiken nach geschäftlicher Wichtigkeit. Beginnen Sie mit Workloads, die bei einer Gefährdung eine hohe geschäftliche Auswirkung haben, und Workloads mit einem hohen Risiko.
 
-Weitere Informationen finden Sie unter [Identifizieren und Klassifizieren von unternehmenskritischen Anwendungen](https://docs.microsoft.com/azure/architecture/framework/security/applications-services?toc=/security/compass/toc.json&bc=/security/compass/breadcrumb/toc.json#identify-and-classify-business-critical-applications).
+Weitere Informationen finden Sie unter [Identifizieren und Klassifizieren von unternehmenskritischen Anwendungen](/azure/architecture/framework/security/applications-services?bc=%2fsecurity%2fcompass%2fbreadcrumb%2ftoc.json&toc=%2fsecurity%2fcompass%2ftoc.json#identify-and-classify-business-critical-applications).
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -292,13 +292,13 @@ Die konsequente Anwendung von Sicherheitsanforderungen kommt von soliden Governa
 
 **Ziele:**
 
-- Sicherstellen, dass die Sicherheitsbaselines der Organisation auf alle relevanten Systeme angewendet werden. Überprüfen von Anomalien anhand eines [Secure Score](https://docs.microsoft.com/azure/security-center/secure-score-security-controls) oder eines ähnlichen Mechanismus.
+- Sicherstellen, dass die Sicherheitsbaselines der Organisation auf alle relevanten Systeme angewendet werden. Überprüfen von Anomalien anhand eines [Secure Score](/azure/security-center/secure-score-security-controls) oder eines ähnlichen Mechanismus.
 - Dokumentieren von Richtlinien, Prozessen und Entwurfsanleitungen für Sicherheitsbaselines in der [Vorlage für die Disziplin „Sicherheitsbaseline“](../govern/security-baseline/template.md).
 
 **Hinweis zur Erreichung der Ziele:**
 
 - Verwenden Sie die gleichen Sicherheitsbaselines und Überwachungsmechanismen, die Sie in [Schritt 4](#step-4-secure-new-workloads) als technische Komponenten zur Überwachung der Baselines erstellt haben. Ergänzen Sie diese Baselines durch Personen- und Prozesssteuerungen, um Konsistenz zu gewährleisten.
-- Stellen Sie sicher, dass alle Workloads und Ressourcen die [richtigen Benennungs- und Kennzeichnungskonventionen](../ready/azure-best-practices/naming-and-tagging.md) befolgen. [Erzwingen Sie Kennzeichnungskonventionen mithilfe von Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/govern-tags) mit einem speziellen Schwerpunkt auf Tags für „Vertraulichkeit der Daten“.
+- Stellen Sie sicher, dass alle Workloads und Ressourcen die [richtigen Benennungs- und Kennzeichnungskonventionen](../ready/azure-best-practices/naming-and-tagging.md) befolgen. [Erzwingen Sie Kennzeichnungskonventionen mithilfe von Azure Policy](/azure/governance/policy/tutorials/govern-tags) mit einem speziellen Schwerpunkt auf Tags für „Vertraulichkeit der Daten“.
 - Sollten Sie noch nicht mit Cloudgovernance vertraut sein, verwenden Sie die Governancemethodik, um [Governancerichtlinien, -prozesse und -disziplinen](../govern/index.md) einzurichten.
 
 <!-- markdownlint-disable MD033 -->
@@ -313,8 +313,8 @@ Die konsequente Anwendung von Sicherheitsanforderungen kommt von soliden Governa
 Mithilfe der Schritte in dieser Anleitung konnten Sie die Strategien, Steuerungen, Prozesse, Fähigkeiten und Kultur implementieren, die für eine konsistente Verwaltung von Sicherheitsrisiken im gesamten Unternehmen erforderlich sind.
 Wenn Sie mit dem Betriebsmodus der Cloudsicherheit fortfahren, sollten Sie diese nächsten Schritte in Betracht ziehen:
 
-- Lesen Sie die [Microsoft-Dokumentation zur Sicherheit](https://docs.microsoft.com/security). Diese dient als technischer Leitfaden, der Sicherheitsexperten bei der Erstellung und Verbesserung von Strategie, Architektur und priorisierten Roadmaps für Cybersicherheit unterstützt.
-- Sehen Sie sich die Sicherheitsinformationen für [integrierte Sicherheitskontrollen für Azure-Dienste](https://docs.microsoft.com/azure/security/fundamentals/security-controls) an.
-- Überprüfen Sie die Azure-Sicherheitstools und -dienste unter [In Azure verfügbare Sicherheitsdienste und -technologien](https://docs.microsoft.com/azure/security/azure-security-services-technologies).
+- Lesen Sie die [Microsoft-Dokumentation zur Sicherheit](/security). Diese dient als technischer Leitfaden, der Sicherheitsexperten bei der Erstellung und Verbesserung von Strategie, Architektur und priorisierten Roadmaps für Cybersicherheit unterstützt.
+- Sehen Sie sich die Sicherheitsinformationen für [integrierte Sicherheitskontrollen für Azure-Dienste](/azure/security/fundamentals/security-controls) an.
+- Überprüfen Sie die Azure-Sicherheitstools und -dienste unter [In Azure verfügbare Sicherheitsdienste und -technologien](/azure/security/azure-security-services-technologies).
 - Besuchen Sie das [Microsoft Trust Center](https://www.microsoft.com/trustcenter/guidance/risk-assessment). Es enthält umfassende Anweisungen, Berichte und zugehörige Dokumentationen, mit denen Sie die Risikobewertungen im Rahmen Ihrer Prozesse zur Einhaltung gesetzlicher Bestimmungen ausführen können.
-- Informieren Sie sich über die Tools von Drittanbietern, die verfügbar sind, um Ihre Sicherheitsanforderungen zu erfüllen. Weitere Informationen finden Sie unter [Integrieren von Sicherheitslösungen in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-partner-integration).
+- Informieren Sie sich über die Tools von Drittanbietern, die verfügbar sind, um Ihre Sicherheitsanforderungen zu erfüllen. Weitere Informationen finden Sie unter [Integrieren von Sicherheitslösungen in Azure Security Center](/azure/security-center/security-center-partner-integration).

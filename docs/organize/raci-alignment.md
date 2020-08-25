@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: fed517b2241ebbffccbefd71ab5741dac52b5bae
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 8f62f44bf872d35c08e7cabeee823d46a6bc34fe
+ms.sourcegitcommit: 917188fa930cadddb03f9e9bbcdd7b630e4ee33e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075204"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88285250"
 ---
 <!-- cSpell:ignore ccoe -->
 
@@ -28,7 +28,7 @@ Es wird beschrieben, wie Sie Teams übergreifend Zuständigkeiten zuordnen, inde
 - [Operative Ausrichtung](#operational-alignment)
 - [Cloudkompetenzzentrum (CCoE)](#cloud-center-of-excellence-ccoe)
 
-Laden Sie die [RACI-Tabellenvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) herunter, und ändern Sie sie, um Entscheidungen bezüglich der Organisationstruktur im Lauf der Zeit nachzuverfolgen.
+Laden Sie die [RACI-Vorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx) herunter, und ändern Sie sie, um Entscheidungen bezüglich der Organisationstruktur im Zeitverlauf nachzuverfolgen.
 
 In den Beispielen in diesem Artikel werden diese RACI-Konstrukte angegeben:
 
@@ -41,13 +41,13 @@ Die letzte Zeile jeder Tabelle (mit Ausnahme der ersten) enthält einen Link zu 
 
 ## <a name="cloud-adoption-team-only"></a>Nur Cloudeinführungsteam
 
-|                     | Lösungsbereitstellung | Geschäftliche Ausrichtung | Change Management | Lösungsvorgänge | Governance  | Plattformreife | Plattformbetrieb | Plattformautomatisierung |
+| Team | Lösungsbereitstellung | Geschäftliche Ausrichtung | Change Management | Lösungsvorgänge | Governance  | Plattformreife | Plattformbetrieb | Plattformautomatisierung |
 | ------------------- | ----------------- | ------------------ | ----------------- | ------------------- | ----------- | ----------------- | ------------------- | ------------------- |
 | Cloudeinführungsteam | Verantwortlich       | Verantwortlich        | Verantwortlich       | Verantwortlich         | Verantwortlich | Verantwortlich       | Verantwortlich         | Verantwortlich         |
 
 ## <a name="best-practice-minimum-viable-product-mvp"></a>Bewährte Methode: Minimum Viable Product (MVP)
 
-|                          | Lösungsbereitstellung                     | Geschäftliche Ausrichtung                    | Change Management                     | Lösungsvorgänge                       | Governance                                                                        | Plattformreife                                                             | Plattformbetrieb                                                           | Plattformautomatisierung                                                               |
+| Team | Lösungsbereitstellung                     | Geschäftliche Ausrichtung                    | Change Management                     | Lösungsvorgänge                       | Governance                                                                        | Plattformreife                                                             | Plattformbetrieb                                                           | Plattformautomatisierung                                                               |
 | ------------------------ | ------------------------------------- | ------------------------------------- | ------------------------------------- | ----------------------------------------- | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | Cloudeinführungsteam      | Verantwortlich                           | Verantwortlich                           | Verantwortlich                           | Verantwortlich                               | Zu Rate gezogen                                                                         | Zu Rate gezogen                                                                     | Zu Rate gezogen                                                                     | Informiert                                                                          |
 | Cloudgovernanceteam    | Zu Rate gezogen                             | Informiert                              | Informiert                              | Informiert                                  | Verantwortlich                                                                       | Verantwortlich                                                                   | Verantwortlich                                                                   | Verantwortlich                                                                       |
@@ -56,7 +56,7 @@ Die letzte Zeile jeder Tabelle (mit Ausnahme der ersten) enthält einen Link zu 
 
 ## <a name="central-it-team"></a>Zentrales IT-Team
 
-|                          | Lösungsbereitstellung                     | Geschäftliche Ausrichtung                    | Change Management                     | Lösungsvorgänge                       | Governance                                | Plattformreife             | Plattformbetrieb           | Plattformautomatisierung           |
+| Team | Lösungsbereitstellung                     | Geschäftliche Ausrichtung                    | Change Management                     | Lösungsvorgänge                       | Governance                                | Plattformreife             | Plattformbetrieb           | Plattformautomatisierung           |
 | ------------------------ | ------------------------------------- | ------------------------------------- | ------------------------------------- | ----------------------------------------- | ----------------------------------------- | ----------------------------- | ----------------------------- | ----------------------------- |
 | Cloudeinführungsteam      | Verantwortlich                           | Verantwortlich                           | Zuständig                           | Zuständig                               | Informiert                                  | Informiert                      | Informiert                      | Informiert                      |
 | Cloudgovernanceteam    | Zu Rate gezogen                             | Informiert                              | Informiert                              | Informiert                                  | Verantwortlich                               | Zu Rate gezogen                     | Zuständig                   | Informiert                      |
@@ -66,7 +66,7 @@ Die letzte Zeile jeder Tabelle (mit Ausnahme der ersten) enthält einen Link zu 
 
 ## <a name="strategic-alignment"></a>Strategische Ausrichtung
 
-|                          | Lösungsbereitstellung                     | Geschäftliche Ausrichtung                    | Change Management                     | Lösungsvorgänge                       | Governance                                                                        | Plattformreife                                                             | Plattformbetrieb                                                           | Plattformautomatisierung                                                               |
+| Team | Lösungsbereitstellung                     | Geschäftliche Ausrichtung                    | Change Management                     | Lösungsvorgänge                       | Governance                                                                        | Plattformreife                                                             | Plattformbetrieb                                                           | Plattformautomatisierung                                                               |
 | ------------------------ | ------------------------------------- | ------------------------------------- | ------------------------------------- | ----------------------------------------- | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | Cloudstrategieteam      | Zu Rate gezogen                             | Verantwortlich                           | Verantwortlich                           | Zu Rate gezogen                                 | Zu Rate gezogen                                                                         | Informiert                                                                      | Informiert                                                                      | Informiert                                                                          |
 | Cloudeinführungsteam      | Verantwortlich                           | Zu Rate gezogen                             | Zuständig                           | Verantwortlich                               | Informiert                                                                          | Informiert                                                                      | Informiert                                                                      | Informiert                                                                          |
@@ -76,7 +76,7 @@ Die letzte Zeile jeder Tabelle (mit Ausnahme der ersten) enthält einen Link zu 
 
 ## <a name="operational-alignment"></a>Operative Ausrichtung
 
-|                          | Lösungsbereitstellung                     | Geschäftliche Ausrichtung                    | Change Management                     | Lösungsvorgänge                       | Governance                                                                        | Plattformreife                                                             | Plattformbetrieb                                                           | Plattformautomatisierung                                                               |
+| Team | Lösungsbereitstellung                     | Geschäftliche Ausrichtung                    | Change Management                     | Lösungsvorgänge                       | Governance                                                                        | Plattformreife                                                             | Plattformbetrieb                                                           | Plattformautomatisierung                                                               |
 | ------------------------ | ------------------------------------- | ------------------------------------- | ------------------------------------- | ----------------------------------------- | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | Cloudstrategieteam      | Zu Rate gezogen                             | Verantwortlich                           | Verantwortlich                           | Zu Rate gezogen                                 | Zu Rate gezogen                                                                         | Informiert                                                                      | Informiert                                                                      | Informiert                                                                          |
 | Cloudeinführungsteam      | Verantwortlich                           | Zu Rate gezogen                             | Zuständig                           | Zu Rate gezogen                                 | Informiert                                                                          | Informiert                                                                      | Informiert                                                                      | Informiert                                                                          |
@@ -87,7 +87,7 @@ Die letzte Zeile jeder Tabelle (mit Ausnahme der ersten) enthält einen Link zu 
 
 ## <a name="cloud-center-of-excellence-ccoe"></a>Cloudkompetenzzentrum (CCoE)
 
-|                          | Lösungsbereitstellung                     | Geschäftliche Ausrichtung                    | Change Management                     | Lösungsvorgänge                       | Governance                                                                        | Plattformreife                                                             | Plattformbetrieb                                                           | Plattformautomatisierung                                                               |
+| Team | Lösungsbereitstellung                     | Geschäftliche Ausrichtung                    | Change Management                     | Lösungsvorgänge                       | Governance                                                                        | Plattformreife                                                             | Plattformbetrieb                                                           | Plattformautomatisierung                                                               |
 | ------------------------ | ------------------------------------- | ------------------------------------- | ------------------------------------- | ----------------------------------------- | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | Cloudstrategieteam      | Zu Rate gezogen                             | Verantwortlich                           | Verantwortlich                           | Zu Rate gezogen                                 | Zu Rate gezogen                                                                         | Informiert                                                                      | Informiert                                                                      | Informiert                                                                          |
 | Cloudeinführungsteam      | Verantwortlich                           | Zu Rate gezogen                             | Zuständig                           | Zu Rate gezogen                                 | Informiert                                                                          | Informiert                                                                      | Informiert                                                                      | Informiert                                                                          |
@@ -100,7 +100,7 @@ Die letzte Zeile jeder Tabelle (mit Ausnahme der ersten) enthält einen Link zu 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Laden Sie die [RACI-Tabellenvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) herunter, und ändern Sie sie, um Entscheidungen bezüglich der Organisationstruktur im Lauf der Zeit nachzuverfolgen. Kopieren und ändern Sie das am nächsten kommende Beispiel aus den RACI-Matrizen in diesem Artikel.
+Laden Sie die RACI-Vorlage herunter, und ändern Sie sie, um Entscheidungen bezüglich der Organisationstruktur im Lauf der Zeit nachzuverfolgen. Kopieren und ändern Sie das am nächsten kommende Beispiel aus den RACI-Matrizen in diesem Artikel.
 
 > [!div class="nextstepaction"]
-> [Herunterladen der RACI-Tabellenvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx)
+> [Herunterladen der RACI-Vorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx)

@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 67b9fe7952523932fe712215b88a1c5dcdcbeb5a
-ms.sourcegitcommit: 264382fcb31ad0c6387c15a74127f288f8920995
+ms.openlocfilehash: 61f1f1959e9a3e0d934e56498dd13462391d0a49
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87805449"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569585"
 ---
 # <a name="enable-customer-success-with-a-sound-operating-model-and-organizational-alignment"></a>Ermöglichen des Kundenerfolgs mithilfe eines solides Betriebsmodells und einer entsprechenden Organisationsausrichtung
 
@@ -23,7 +23,7 @@ Der Kundenerfolg bei der Cloudeinführung hat häufig wenig mit technischen Fäh
 Die Abstimmung zwischen geschäftlichen und technischen Teams ist im Kontext der Innovationsförderung für den Erfolg Ihrer Lösung entscheidend.
 
 - Für Projektbeteiligte im geschäftlichen Bereich haben wir die [KI Business School von Microsoft](https://www.microsoft.com/ai/ai-business-school) geschaffen, um die Entwicklung von Geschäftsstrategien zu unterstützen und Beispiele für bewährte Methoden bereitzustellen.
-- Für Projektbeteiligte im technischen Bereich stehen die [KI-Lernpfade von Microsoft](https://docs.microsoft.com/learn/) zur Verfügung, um sie bei der Erstellung neuer KI-Skills unterstützen.
+- Für Projektbeteiligte im technischen Bereich stehen die [KI-Lernpfade von Microsoft](/learn/) zur Verfügung, um sie bei der Erstellung neuer KI-Skills unterstützen.
 
 ## <a name="blockers"></a>Hindernisse
 
@@ -54,7 +54,7 @@ Die grundlegenden Prinzipien eines gut verwalteten Betriebsmodells basieren auf 
 
 Azure Advisor, das Microsoft Azure Well-Architected Framework und die Lösungen im Azure Architecture Center beruhen auf diesen Prinzipien:
 
-- [Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview) wertet die Prinzipien für einzelne Ressourcen über Lösungen, Workloads und das gesamte Portfolio hinweg aus.
-- [Azure Architecture Center](https://docs.microsoft.com/azure/architecture) wendet diese Prinzipien an, um bestimmte technische Lösungen zu entwickeln und zu verwalten.
-- [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) trägt dazu bei, ein ausgewogenes Verhältnis dieser Prinzipien innerhalb einer Workload zu erreichen, um Entscheidungen in Bezug auf die Architektur zu steuern.
+- [Azure Advisor](/azure/advisor/advisor-overview) wertet die Prinzipien für einzelne Ressourcen über Lösungen, Workloads und das gesamte Portfolio hinweg aus.
+- [Azure Architecture Center](/azure/architecture/) wendet diese Prinzipien an, um bestimmte technische Lösungen zu entwickeln und zu verwalten.
+- [Microsoft Azure Well-Architected Framework](/azure/architecture/framework/) trägt dazu bei, ein ausgewogenes Verhältnis dieser Prinzipien innerhalb einer Workload zu erreichen, um Entscheidungen in Bezug auf die Architektur zu steuern.
 - Das [Cloud Adoption Framework](../index.yml) stellt sicher, dass die Prinzipien im gesamten Portfolio skaliert werden, um Einführungsteams über eine gut verwaltete Umgebung zu befähigen.

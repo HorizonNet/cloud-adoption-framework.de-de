@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a21b41583789d25f00d8dfb81ac1e9b8943af004
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: bf320d60ca9b53d72a063e17b24c498272aa19d8
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86449777"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88568446"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>Sammeln von Daten durch Migration und Modernisierung vorhandener Datenquellen
 
@@ -26,9 +26,9 @@ Während der Bewertungsphase in der Migrationsmethodik bewertet ein Cloudeinfüh
 
 ## <a name="primary-toolset"></a>Das primäre Toolset
 
-Wenn Sie lokale Daten migrieren und modernisieren, ist die häufigste Wahl des Azure-Tools [Azure Database Migration Service](https://docs.microsoft.com/azure/dms). Dieser Dienst ist Teil der umfassenderen [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview)-Toolkette. Für bestehende SQL Server-Datenquellen kann der [Datenmigrations-Assistent](https://docs.microsoft.com/sql/dma/dma-overview) Ihnen helfen, eine kleine Anzahl von Datenstrukturen zu bewerten und zu migrieren.
+Wenn Sie lokale Daten migrieren und modernisieren, ist die häufigste Wahl des Azure-Tools [Azure Database Migration Service](/azure/dms). Dieser Dienst ist Teil der umfassenderen [Azure Migrate](/azure/migrate/migrate-services-overview)-Toolkette. Für bestehende SQL Server-Datenquellen kann der [Datenmigrations-Assistent](/sql/dma/dma-overview) Ihnen helfen, eine kleine Anzahl von Datenstrukturen zu bewerten und zu migrieren.
 
-Um Oracle- und NoSQL-Migrationen zu unterstützen, können Sie auch den [Database Migration Service](https://docs.microsoft.com/azure/dms) für bestimmte Arten von Quelle-zu-Ziel-Datenbanken verwenden. Beispiele hierfür sind das Migrieren von Oracle-Datenbanken zu PostgreSQL oder von MongoDB-Datenbanken zu Azure Cosmos DB. Häufiger verwenden Einführungsteams Partnertools oder benutzerdefinierte Skripts, um zu Azure Cosmos DB, Azure HDInsight oder Optionen virtueller Computer auf Basis von IaaS (Infrastructure-as-a-Service) zu migrieren.
+Um Oracle- und NoSQL-Migrationen zu unterstützen, können Sie auch den [Database Migration Service](/azure/dms) für bestimmte Arten von Quelle-zu-Ziel-Datenbanken verwenden. Beispiele hierfür sind das Migrieren von Oracle-Datenbanken zu PostgreSQL oder von MongoDB-Datenbanken zu Azure Cosmos DB. Häufiger verwenden Einführungsteams Partnertools oder benutzerdefinierte Skripts, um zu Azure Cosmos DB, Azure HDInsight oder Optionen virtueller Computer auf Basis von IaaS (Infrastructure-as-a-Service) zu migrieren.
 
 ## <a name="considerations-and-guidance"></a>Überlegungen und Anleitungen
 
@@ -48,12 +48,12 @@ Es wird empfohlen, dass Sie Ihre akzeptablen Ausfallzeiten für das Geschäft fe
 
 | `Source`  | Ziel  | Tool  | Migrationstyp | Anleitungen |
 |---|---|---|---|---|
-| SQL Server | Azure SQL-Datenbank | Database Migration Service | Offline | [Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql) |
-| SQL Server | Azure SQL-Datenbank | Database Migration Service | Online | [Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online) |
-| SQL Server | Verwaltete Azure SQL-Instanz | Database Migration Service | Offline | [Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance) |
-| SQL Server | Verwaltete Azure SQL-Instanz | Database Migration Service | Online | [Tutorial](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online) |
-| RDS SQL Server | Azure SQL-Datenbank oder Azure SQL Managed Instance | Database Migration Service | Online | [Tutorial](https://docs.microsoft.com/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online) |
-| MySQL | Azure Database for MySQL | Database Migration Service | Online | [Tutorial](https://docs.microsoft.com/azure/dms/tutorial-mysql-azure-mysql-online) |
-| PostgreSQL | Azure Database for PostgreSQL | Database Migration Service | Online | [Tutorial](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online) |
-| MongoDB | Azure Cosmos DB-API für MongoDB | Database Migration Service | Offline | [Tutorial](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db) |
-| MongoDB | Azure Cosmos DB-API für MongoDB | Database Migration Service | Online | [Tutorial](https://docs.microsoft.com/azure/dms/tutorial-mongodb-cosmos-db-online) |
+| SQL Server | Azure SQL-Datenbank | Database Migration Service | Offline | [Tutorial](/azure/dms/tutorial-sql-server-to-azure-sql) |
+| SQL Server | Azure SQL-Datenbank | Database Migration Service | Online | [Tutorial](/azure/dms/tutorial-sql-server-azure-sql-online) |
+| SQL Server | Verwaltete Azure SQL-Instanz | Database Migration Service | Offline | [Tutorial](/azure/dms/tutorial-sql-server-to-managed-instance) |
+| SQL Server | Verwaltete Azure SQL-Instanz | Database Migration Service | Online | [Tutorial](/azure/dms/tutorial-sql-server-managed-instance-online) |
+| RDS SQL Server | Azure SQL-Datenbank oder Azure SQL Managed Instance | Database Migration Service | Online | [Tutorial](/azure/dms/tutorial-rds-sql-server-azure-sql-and-managed-instance-online) |
+| MySQL | Azure Database for MySQL | Database Migration Service | Online | [Tutorial](/azure/dms/tutorial-mysql-azure-mysql-online) |
+| PostgreSQL | Azure Database for PostgreSQL | Database Migration Service | Online | [Tutorial](/azure/dms/tutorial-postgresql-azure-postgresql-online) |
+| MongoDB | Azure Cosmos DB-API für MongoDB | Database Migration Service | Offline | [Tutorial](/azure/dms/tutorial-mongodb-cosmos-db) |
+| MongoDB | Azure Cosmos DB-API für MongoDB | Database Migration Service | Online | [Tutorial](/azure/dms/tutorial-mongodb-cosmos-db-online) |

@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7315046a8ddb1d314c11a7a2ef17ea636270e73d
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 5eeb8bb94ff0de3c1d684bdfd7523657678f9d4b
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86193642"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572067"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -36,7 +36,7 @@ In diesem Artikel werden die drei Prozesse behandelt, die zum Durchführen diese
 
 Für alle Verwaltungslösungen, die unter [Azure-Verwaltungstools und -dienste](./tools-services.md) beschrieben sind, muss der Log Analytics-Agent auf virtuellen Azure-Computern und lokalen Servern installiert sein. Sie können das Onboarding für Ihre Azure-VMs mit Azure Policy bedarfsabhängig durchführen. Weisen Sie eine Richtlinie zu, um sicherzustellen, dass der Agent auf Ihren Azure-VMs installiert ist und eine Verbindung mit dem richtigen Log Analytics-Arbeitsbereich besteht.
 
-Azure Policy verfügt über eine [integrierte Richtlinieninitiative](https://docs.microsoft.com/azure/governance/policy/concepts/definition-structure#initiatives), die den Log Analytics-Agent und den [Microsoft Dependency-Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent) umfasst, der für Azure Monitor für VMs benötigt wird.
+Azure Policy verfügt über eine [integrierte Richtlinieninitiative](/azure/governance/policy/concepts/definition-structure#initiatives), die den Log Analytics-Agent und den [Microsoft Dependency-Agent](/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent) umfasst, der für Azure Monitor für VMs benötigt wird.
 
 <!-- TODOBACKLOG: Add these when available.
 **Preview:** Enable Azure Monitor for virtual machine scale sets.
@@ -44,7 +44,7 @@ Azure Policy verfügt über eine [integrierte Richtlinieninitiative](https://doc
  -->
 
 > [!NOTE]
-> Weitere Informationen zu den unterschiedlichen Agents für die Azure-Überwachung finden Sie unter [Übersicht über die Azure-Überwachungs-Agents](https://docs.microsoft.com/azure/azure-monitor/platform/agents-overview).
+> Weitere Informationen zu den unterschiedlichen Agents für die Azure-Überwachung finden Sie unter [Übersicht über die Azure-Überwachungs-Agents](/azure/azure-monitor/platform/agents-overview).
 
 ### <a name="assign-policies"></a>Zuweisen von Richtlinien
 
@@ -66,7 +66,7 @@ So weisen Sie die im vorherigen Abschnitt beschriebenen Richtlinien zu
 
     ![Screenshot: Benutzeroberfläche für Richtlinien im Portal](./media/onboarding-at-scale3.png)
 
-6. Aktivieren Sie das Kontrollkästchen **Speicherort der verwalteten Identität**. Wenn diese Richtlinie den Typ [`DeployIfNotExists`](https://docs.microsoft.com/azure/governance/policy/concepts/effects#deployifnotexists) aufweist, ist für die Bereitstellung der Richtlinie eine verwaltete Identität erforderlich. Im Portal wird das Konto gemäß der Auswahl des Kontrollkästchens erstellt.
+6. Aktivieren Sie das Kontrollkästchen **Speicherort der verwalteten Identität**. Wenn diese Richtlinie den Typ [`DeployIfNotExists`](/azure/governance/policy/concepts/effects#deployifnotexists) aufweist, ist für die Bereitstellung der Richtlinie eine verwaltete Identität erforderlich. Im Portal wird das Konto gemäß der Auswahl des Kontrollkästchens erstellt.
 
 7. Wählen Sie **Zuweisen** aus.
 
@@ -77,7 +77,7 @@ Nach Abschluss des Assistenten wird die Richtlinienzuweisung in der Umgebung ber
 > [!NOTE]
 > Erstellen Sie den erforderlichen [Log Analytics-Arbeitsbereich und das Azure Automation-Konto](./prerequisites.md#create-a-workspace-and-automation-account), bevor Sie das Onboarding von Azure-Serververwaltungsdiensten auf Servern durchführen.
 
-Für lokale Server müssen Sie den [Log Analytics-Agent und den Microsoft Dependency-Agent](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) manuell herunterladen und installieren und diese Agents anschließend so konfigurieren, dass eine Verbindung mit dem richtigen Arbeitsbereich hergestellt wird. Sie müssen die Arbeitsbereichs-ID und die Schlüsselinformationen angeben. Navigieren Sie im Azure-Portal zu Ihrem Log Analytics-Arbeitsbereich, und wählen Sie **Einstellungen** > **Erweiterte Einstellungen** aus, um diese Informationen zu erhalten.
+Für lokale Server müssen Sie den [Log Analytics-Agent und den Microsoft Dependency-Agent](/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud) manuell herunterladen und installieren und diese Agents anschließend so konfigurieren, dass eine Verbindung mit dem richtigen Arbeitsbereich hergestellt wird. Sie müssen die Arbeitsbereichs-ID und die Schlüsselinformationen angeben. Navigieren Sie im Azure-Portal zu Ihrem Log Analytics-Arbeitsbereich, und wählen Sie **Einstellungen** > **Erweiterte Einstellungen** aus, um diese Informationen zu erhalten.
 
 ![Screenshot: Erweiterte Einstellungen für Log Analytics-Arbeitsbereich im Azure-Portal](./media/onboarding-on-premises.png)
 
@@ -87,9 +87,9 @@ Zur Aktivierung von Lösungen müssen Sie den Log Analytics-Arbeitsbereich konfi
 
 ### <a name="update-management"></a>Updateverwaltung
 
-Für die Lösungen für Updateverwaltung, Änderungsnachverfolgung und Bestand sind sowohl ein Log Analytics-Arbeitsbereich als auch ein Automation-Konto erforderlich. Um sicherzustellen, dass diese Ressourcen richtig konfiguriert sind, empfehlen wir Ihnen, das Onboarding über Ihr Automation-Konto durchzuführen. Weitere Informationen finden Sie unter [Integrieren von Lösungen für die Updateverwaltung, Änderungsnachverfolgung und den Bestand](https://docs.microsoft.com/azure/automation/automation-onboard-solutions-from-automation-account).
+Für die Lösungen für Updateverwaltung, Änderungsnachverfolgung und Bestand sind sowohl ein Log Analytics-Arbeitsbereich als auch ein Automation-Konto erforderlich. Um sicherzustellen, dass diese Ressourcen richtig konfiguriert sind, empfehlen wir Ihnen, das Onboarding über Ihr Automation-Konto durchzuführen. Weitere Informationen finden Sie unter [Integrieren von Lösungen für die Updateverwaltung, Änderungsnachverfolgung und den Bestand](/azure/automation/automation-onboard-solutions-from-automation-account).
 
-Wir empfehlen Ihnen, die Lösung für die Updateverwaltung für alle Server zu aktivieren. Die Updateverwaltung ist für Azure-VMs und lokale Server kostenlos. Wenn Sie die Updateverwaltung über Ihr Automation-Konto aktivieren, wird im Arbeitsbereich eine [Bereichskonfiguration](https://docs.microsoft.com/azure/automation/automation-onboard-solutions-from-automation-account#scope-configuration) erstellt. Aktualisieren Sie den Bereich manuell, um Computer einzubeziehen, die durch den Updateverwaltungsdienst abgedeckt sind.
+Wir empfehlen Ihnen, die Lösung für die Updateverwaltung für alle Server zu aktivieren. Die Updateverwaltung ist für Azure-VMs und lokale Server kostenlos. Wenn Sie die Updateverwaltung über Ihr Automation-Konto aktivieren, wird im Arbeitsbereich eine [Bereichskonfiguration](/azure/automation/automation-onboard-solutions-from-automation-account#scope-configuration) erstellt. Aktualisieren Sie den Bereich manuell, um Computer einzubeziehen, die durch den Updateverwaltungsdienst abgedeckt sind.
 
 Um Ihre vorhandenen und zukünftigen Server abzudecken, müssen Sie die Bereichskonfiguration entfernen. Zeigen Sie dazu Ihr Automation-Konto im Azure-Portal an. Wählen Sie **Updateverwaltung** > **Computer verwalten** > **Auf allen verfügbaren und zukünftigen Computern aktivieren** aus. Durch diese Einstellung kann die Updateverwaltung für alle Azure-VMs verwendet werden, für die eine Verbindung mit dem Arbeitsbereich besteht.
 
@@ -97,7 +97,7 @@ Um Ihre vorhandenen und zukünftigen Server abzudecken, müssen Sie die Bereichs
 
 ### <a name="change-tracking-and-inventory-solutions"></a>Lösungen für Änderungsnachverfolgung und Bestand
 
-Für das Onboarding der Lösungen für die Änderungsnachverfolgung und den Bestand befolgen Sie dieselben Schritte wie für die Updateverwaltung. Weitere Informationen zum Onboarding dieser Lösungen über Ihr Automation-Konto finden Sie unter [Integrieren von Lösungen für die Updateverwaltung, Änderungsnachverfolgung und den Bestand](https://docs.microsoft.com/azure/automation/automation-onboard-solutions-from-automation-account).
+Für das Onboarding der Lösungen für die Änderungsnachverfolgung und den Bestand befolgen Sie dieselben Schritte wie für die Updateverwaltung. Weitere Informationen zum Onboarding dieser Lösungen über Ihr Automation-Konto finden Sie unter [Integrieren von Lösungen für die Updateverwaltung, Änderungsnachverfolgung und den Bestand](/azure/automation/automation-onboard-solutions-from-automation-account).
 
 Die Lösung für die Änderungsnachverfolgung ist für Azure-VMs kostenlos und kostet für lokale Server monatlich 6 USD pro Knoten. Mit diesen Kosten sind die Bereiche Änderungsnachverfolgung, Bestand und Desired State Configuration abgedeckt. Falls Sie nur bestimmte lokale Server registrieren möchten, können Sie diese Server einbinden. Wir empfehlen Ihnen, das Onboarding für Ihre gesamten Produktionsserver durchzuführen.
 
@@ -138,7 +138,7 @@ Führen Sie die folgenden Schritte aus, um die gespeicherte Suche zu erstellen o
 
 ### <a name="azure-activity-log"></a>Azure-Aktivitätsprotokoll
 
-Das [Azure-Aktivitätsprotokoll](https://docs.microsoft.com/azure/azure-monitor/platform/activity-logs-overview) ist ebenfalls Teil von Azure Monitor. Hiermit können Sie Erkenntnisse zu Ereignissen auf Abonnementebene gewinnen, die in Azure eintreten.
+Das [Azure-Aktivitätsprotokoll](/azure/azure-monitor/platform/activity-logs-overview) ist ebenfalls Teil von Azure Monitor. Hiermit können Sie Erkenntnisse zu Ereignissen auf Abonnementebene gewinnen, die in Azure eintreten.
 
 So implementieren Sie diese Lösung
 
@@ -181,11 +181,11 @@ Nachdem die Erstellung abgeschlossen ist, zeigt die Instanz der Arbeitsbereichsr
 
 ### <a name="azure-monitor-for-vms"></a>Azure Monitor für VMs
 
-Sie können [Azure Monitor für VMs](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview) auf der Ansichtsseite für die VM-Instanz so aktivieren, wie dies unter [Aktivieren von Verwaltungsdiensten auf einem einzelnen virtuellen Computer zur Auswertung](./onboard-single-vm.md) beschrieben ist. Sie sollten Lösungen nicht direkt auf der Seite **Lösungen** aktivieren, wie Sie dies für die anderen Lösungen in diesem Artikel vornehmen. Bei Bereitstellungen größeren Umfangs ist es unter Umständen einfacher, die [Automatisierung](./onboarding-automation.md) zu verwenden, um im Arbeitsbereich die richtigen Lösungen zu aktivieren.
+Sie können [Azure Monitor für VMs](/azure/azure-monitor/insights/vminsights-overview) auf der Ansichtsseite für die VM-Instanz so aktivieren, wie dies unter [Aktivieren von Verwaltungsdiensten auf einem einzelnen virtuellen Computer zur Auswertung](./onboard-single-vm.md) beschrieben ist. Sie sollten Lösungen nicht direkt auf der Seite **Lösungen** aktivieren, wie Sie dies für die anderen Lösungen in diesem Artikel vornehmen. Bei Bereitstellungen größeren Umfangs ist es unter Umständen einfacher, die [Automatisierung](./onboarding-automation.md) zu verwenden, um im Arbeitsbereich die richtigen Lösungen zu aktivieren.
 
 ### <a name="azure-security-center"></a>Azure Security Center
 
-Wir empfehlen, für alle Server mindestens das Onboarding für den Free-Tarif von Azure Security Center durchzuführen. Bei dieser Option erhalten Sie grundlegende Sicherheitsbewertungen und umsetzbare Sicherheitsempfehlungen für Ihre Umgebung. Der Standard-Tarife bietet weitere Vorteile. Weitere Informationen finden Sie unter [Azure Security Center – Preise](https://docs.microsoft.com/azure/security-center/security-center-pricing).
+Wir empfehlen, für alle Server mindestens das Onboarding für den Free-Tarif von Azure Security Center durchzuführen. Bei dieser Option erhalten Sie grundlegende Sicherheitsbewertungen und umsetzbare Sicherheitsempfehlungen für Ihre Umgebung. Der Standard-Tarife bietet weitere Vorteile. Weitere Informationen finden Sie unter [Azure Security Center – Preise](/azure/security-center/security-center-pricing).
 
 Führen Sie die folgenden Schritte aus, um den Free-Tarif für Azure Security Center zu aktivieren:
 

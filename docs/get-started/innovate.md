@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 94c66af70be7c3683e459719eb6e2a73e74e66d9
-ms.sourcegitcommit: 264382fcb31ad0c6387c15a74127f288f8920995
+ms.openlocfilehash: 9567b09ef527e59be2c1206cc6933c2f88bc9834
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87805448"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569483"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>Erste Schritte: Beschleunigen neuer Produkt- und Dienstinnovationen in der Cloud
 
@@ -28,7 +28,7 @@ Erstellen Sie zur Vermeidung gängiger Hindernisse eine klare und prägnante Ges
 
 **Ziele:**
 
-- Verwenden Sie die [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx), um Beweggründe und gewünschte Geschäftsergebnisse zu erfassen.
+- Verwenden Sie die [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx), um Beweggründe und gewünschte Geschäftsergebnisse zu erfassen.
 
 <!-- docsTest:ignore "Get started: Accelerate migration" -->
 
@@ -51,7 +51,7 @@ Bewerten Sie in diesem ersten Durchgang für die Erstellung des Geschäftsszenar
 
 **Ziele:**
 
-- Verwenden Sie die [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx), um die geschäftliche Begründung festzuhalten.
+- Verwenden Sie die [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx), um die geschäftliche Begründung festzuhalten.
 
 **Hinweis zur Erreichung der Ziele:**
 
@@ -76,11 +76,11 @@ In den meisten Unternehmen können Innovationen durch die Nutzung bereits vorhan
   - Quantitative Analyse des unterstützenden Bestands, der zur Unterstützung der geplanten Innovation erforderlich ist
   - Qualitative Analyse aller unterstützenden Workloads, die für die Bereitstellung der Innovation erforderlich sind
 - Berechnen Sie die Kosten des neuen Bestands, der für die Innovationsbestrebungen erforderlich ist.
-- Aktualisieren Sie die geschäftliche Begründung in der [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) mit präziseren Berechnungen.
+- Aktualisieren Sie die geschäftliche Begründung in der [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) mit präziseren Berechnungen.
 
 **Leitfaden zur Erreichung der Zielvorgaben:**
 
-Ermittlung und Bewertung bieten eine präzisere Anpassung auf technischer Ebene. Anschließend können Sie einen Aktionsplan für die Migration aller abhängigen Workloads erstellen, die für die geplante Innovation erforderlich sind. Dieses Szenario ist eine weit verbreitete Vorgehensweise bei Unternehmen mit bereits vorhandenen Datenquellen, zentralisierten Anwendungen oder Dienstebenen, die für die Bereitstellung von Innovationen im Kontext des restlichen Unternehmens erforderlich sind. 
+Ermittlung und Bewertung bieten eine präzisere Anpassung auf technischer Ebene. Anschließend können Sie einen Aktionsplan für die Migration aller abhängigen Workloads erstellen, die für die geplante Innovation erforderlich sind. Dieses Szenario ist eine weit verbreitete Vorgehensweise bei Unternehmen mit bereits vorhandenen Datenquellen, zentralisierten Anwendungen oder Dienstebenen, die für die Bereitstellung von Innovationen im Kontext des restlichen Unternehmens erforderlich sind.
 
 Sollten abhängige Systeme vorhanden sein, können Sie sich bei der Ermittlung und Bewertung an den folgenden Artikeln orientieren:
 
@@ -96,7 +96,7 @@ Sollten abhängige Systeme vorhanden sein, können Sie sich bei der Ermittlung u
 
 ## <a name="step-4-plan-for-migration-of-dependent-assets"></a>Schritt 4: Planen der Migration abhängiger Ressourcen
 
-Wenn neue Innovationen von vorhandenen Workloads oder Ressourcen abhängig sind, bietet die Vorlage für den Cloudeinführungsplan einen beschleunigten Ansatz für die Entwicklung eines Projektbacklogs. Das Backlog kann dann geändert werden, um Ermittlungsergebnisse, Rationalisierung, erforderliche Fertigkeiten und Partnerverträge widerzuspiegeln.
+Wenn neue Innovationen von vorhandenen Workloads oder Ressourcen abhängig sind, bietet ein Cloudeinführungsplan einen beschleunigten Ansatz für die Entwicklung eines Projektbacklogs. Das Backlog kann dann geändert werden, um Ermittlungsergebnisse, Rationalisierung, erforderliche Fertigkeiten und Partnerverträge widerzuspiegeln.
 
 **Ziele:**
 
@@ -109,7 +109,7 @@ Wenn neue Innovationen von vorhandenen Workloads oder Ressourcen abhängig sind,
 
 **Hinweis zur Erreichung der Ziele:**
 
-- [Vorlage für den Cloudeinführungsplan](../plan/template.md): Bereitstellen der Basisvorlage.
+- [Cloudeinführungsplan](../plan/template.md): Definieren Sie Ihren Plan anhand der Basisvorlage.
 - [Workloadausrichtung](../plan/workloads.md): Definieren von Workloads im Backlog.
 - [Aufwandsausrichtung](../plan/assets.md): Passen Sie Ressourcen und Workloads im Rückstand an, um den Aufwand für priorisierte Workloads eindeutig zu definieren.
 - [Ausrichtung von Personen und Zeit](../plan/iteration-paths.md): Legen Sie Iteration, Geschwindigkeit und Releases für die Workloads fest.
@@ -150,7 +150,7 @@ Definieren Sie den Plan für langfristige operative Zuständigkeiten für die ge
 
 **Ziele:**
 
-- Führen Sie die [Microsoft Azure-Architekturüberprüfung](https://docs.microsoft.com/assessments/?id=azure-architecture-review) durch, um verschiedene Architektur- und Betriebsentscheidungen zu bewerten.
+- Führen Sie die [Microsoft Azure-Architekturüberprüfung](/assessments/?id=azure-architecture-review) durch, um verschiedene Architektur- und Betriebsentscheidungen zu bewerten.
 - Passen Sie die [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) an, um ggf. erforderliche erweiterte Vorgänge zu berücksichtigen.
 
 **Hinweis zur Erreichung der Ziele:**
@@ -168,7 +168,7 @@ Definieren Sie den Plan für langfristige operative Zuständigkeiten für die ge
 
 ## <a name="step-7-deploy-an-aligned-landing-zone"></a>Schritt 7: Bereitstellen einer ausgerichteten Zielzone
 
-Alle in der Cloud gehosteten Ressourcen befinden sich in einer Zielzone. Für diese Zielzone gelten ggf. explizite Governance-, Sicherheits- und Betriebsanforderungen. Es kann sich dabei aber auch um ein neues Abonnement ohne Unterstützung durch andere Teams handeln. In allen Szenarios ist es wichtig, mit einer Zielzone zu beginnen, die von Anfang an auf die Governance- und Betriebsanforderungen abgestimmt ist. 
+Alle in der Cloud gehosteten Ressourcen befinden sich in einer Zielzone. Für diese Zielzone gelten ggf. explizite Governance-, Sicherheits- und Betriebsanforderungen. Es kann sich dabei aber auch um ein neues Abonnement ohne Unterstützung durch andere Teams handeln. In allen Szenarios ist es wichtig, mit einer Zielzone zu beginnen, die von Anfang an auf die Governance- und Betriebsanforderungen abgestimmt ist.
 
 Die Verwendung einer freigegebenen Zielzone bereits bei Beginn hilft Ihrem Team dabei, Richtlinienverstöße frühzeitig bei der Entwicklung zu erkennen und nicht erst, wenn die Lösung für die Produktion freigegeben wird. Bei einer frühen Erkennung kann Ihr Team Hindernisse beseitigen, und das Einführungs- und das Governanceteam haben genug Zeit, Änderungen vorzunehmen.
 
@@ -215,7 +215,7 @@ Die Innovationsmethodik bietet Informationen zu gängigen Tools und Produktverwa
 
 ## <a name="step-9-assess-the-innovation-maturity-of-your-organization"></a>Schritt 9: Bewerten der Innovationsreife Ihrer Organisation
 
-Das KI-Reifegradmodell unterstützt Sie bei der Entwicklung Ihrer Innovationsstrategie. Hierbei handelt es sich um ein kostenloses Tool, das Organisationen dabei hilft, zu bewerten, ob sie für die Erstellung und den Betrieb KI-basierter Systeme bereit sind. Es gibt vier Reifegrade: grundlegend, annähernd, ambitioniert und ausgereift. Jeder dieser Reifegrade umfasst gewisse Kriterien, auf deren Grundlage sich ermitteln lässt, ob Ihre Organisation in der Lage ist, bestimmte Arten von KI-Lösungen einzuführen, die damit verbundenen Risiken zu mindern und Strategien zu implementieren. 
+Das KI-Reifegradmodell unterstützt Sie bei der Entwicklung Ihrer Innovationsstrategie. Hierbei handelt es sich um ein kostenloses Tool, das Organisationen dabei hilft, zu bewerten, ob sie für die Erstellung und den Betrieb KI-basierter Systeme bereit sind. Es gibt vier Reifegrade: grundlegend, annähernd, ambitioniert und ausgereift. Jeder dieser Reifegrade umfasst gewisse Kriterien, auf deren Grundlage sich ermitteln lässt, ob Ihre Organisation in der Lage ist, bestimmte Arten von KI-Lösungen einzuführen, die damit verbundenen Risiken zu mindern und Strategien zu implementieren.
 
 Die Bewertung dauert zwischen fünf und zehn Minuten und ermittelt die Bereitschaft Ihrer Organisation in vier Kategorien: Strategie, Kultur, Organisationsmerkmale und Fähigkeiten. Durch die Bewertung in diesen Kategorien kann das KI-Reifegradmodell ein Ergebnis für Ihre Organisation berechnen und eine Schätzung bezüglich der KI-Innovationsreife in Form einer Kurve abgeben.
 
@@ -240,7 +240,7 @@ Die in diesem Leitfaden beschriebenen Schritte helfen Ihnen und Ihren Teams dabe
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Das Cloud Adoption Framework ist eine Lebenszykluslösung. Es kann Ihnen dabei helfen, eine Innovationsjourney zu beginnen. Es kann Ihrer Organisation nicht nur dabei helfen, mit der Entwicklung von Innovationen zu beginnen, sondern auch dazu beitragen, den Innovationsreifegrad der Teams zu erhöhen, die die Innovationsbestrebungen unterstützen. 
+Das Cloud Adoption Framework ist eine Lebenszykluslösung. Es kann Ihnen dabei helfen, eine Innovationsjourney zu beginnen. Es kann Ihrer Organisation nicht nur dabei helfen, mit der Entwicklung von Innovationen zu beginnen, sondern auch dazu beitragen, den Innovationsreifegrad der Teams zu erhöhen, die die Innovationsbestrebungen unterstützen.
 
 Die folgenden Teams können die nächsten Schritte ausführen, um ihre Anstrengungen noch weiter zu optimieren. Diese parallelen Prozesse sind nicht linear und sollten nicht als Hindernisse betrachtet werden. Stattdessen handelt es sich jeweils um einen parallelen Wertstrom, der dazu beiträgt, die allgemeine Bereitschaft Ihres Unternehmens für die Cloud zu verbessern.
 

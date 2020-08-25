@@ -9,28 +9,25 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 74db213a6d03eaf3df75f8eed88260bb1e457cee
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 2e8a4b21fa23eef21d0330c1f89e56fd7d56814a
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86448859"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88567834"
 ---
 <!-- cSpell:ignore ONNX -->
 
-::: zone target="docs"
-
-# <a name="azure-innovation-guide-innovate-with-ai"></a>Azure-Innovationsleitfaden: Innovationen mit KI
-
-::: zone-end
-
-::: zone target="chromeless"
-
 # <a name="innovate-with-ai"></a>Innovationen mit KI
 
-::: zone-end
+Als Innovator verfügt Ihr Unternehmen über umfassende Informationen zum Geschäft und seinen Kunden. Mithilfe von KI hat Ihr Unternehmen folgende Möglichkeiten:
 
-Als Innovator verfügt Ihr Unternehmen über umfassende Informationen zum Geschäft und seinen Kunden. Mithilfe von KI kann Ihr Unternehmen Vorhersagen zu Kundenanforderungen machen, Geschäftsprozesse automatisieren, verborgene Informationen in unstrukturierten Daten entdecken und neue Wege der Interaktion mit Kunden schaffen, um bessere Erfahrungen zu bieten. In diesem Artikel werden einige Ansätze für Innovationen mit KI vorgestellt. Die folgende Tabelle kann Sie dabei unterstützen, die beste Lösung für Ihre Implementierungsanforderungen zu finden.
+- Treffen von Vorhersagen zu Kundenanforderungen
+- Automatisieren von Geschäftsprozessen
+- Entdecken von Informationen, die in unstrukturierten Daten verborgen sind
+- Zusammenarbeit mit Kunden auf neue Weise, um bessere Erfahrungen zu bieten
+
+ In diesem Artikel werden einige Ansätze für Innovationen mit KI vorgestellt. Die folgende Tabelle kann Sie dabei unterstützen, die beste Lösung für Ihre Implementierungsanforderungen zu finden.
 
 | Lösungskategorie | BESCHREIBUNG                                                                                                                              | Erforderliche Kenntnisse              |
 |-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|
@@ -38,11 +35,11 @@ Als Innovator verfügt Ihr Unternehmen über umfassende Informationen zum Gesch�
 | KI-Anwendungen und -Agents             | **Azure Cognitive Services** <br> Verwenden domänenspezifischer KI-Modelle für maschinelles Sehen, Sprach- und Texterkennung sowie Entscheidungsfindung, die mit Ihren Daten angepasst werden können <br><br> **Azure Bot Service** <br> Verbessern der Interaktion mit Kunden durch Hinzufügen von Bots zu Ihren Anwendungen und Websites | Entwickler                    |
 | Knowledge Mining            | **Azure Cognitive Search** <br> Entdecken von Erkenntnissen, die in Inhalten wie Dokumenten, Verträgen, Bildern und anderen Datentypen verborgen sind      | Entwickler                    |
 
-## <a name="machine-learning"></a>[Machine Learning](#tab/MachineLearning)
+## <a name="machine-learning"></a>Machine Learning
 
-Azure bietet erweiterte Machine Learning-Funktionen. Mit Azure Machine Learning können Sie Ihre Machine Learning-Modelle schnell und einfach in der Cloud und Edge-übergreifend erstellen, trainieren und bereitstellen. Entwickeln Sie Modelle schneller mit automatisiertem Machine Learning. Verwenden Sie Tools und Frameworks Ihrer Wahl, ohne darauf begrenzt zu sein.
+Azure bietet erweiterte Machine Learning-Funktionen. Mit Azure Machine Learning können Sie Ihre Machine Learning-Modelle in der Cloud und Edge-übergreifend erstellen, trainieren und bereitstellen. Entwickeln Sie Modelle schneller mit automatisiertem maschinellen Lernen. Verwenden Sie Tools und Frameworks Ihrer Wahl, ohne darauf begrenzt zu sein.
 
-Weitere Informationen zu den ersten Schritten mit Azure Machine Learning finden Sie in der [Übersicht über Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/overview-what-is-azure-ml) und im Tutorial zu den [ersten Schritten mit dem ersten Machine Learning-Experiment](https://docs.microsoft.com/azure/machine-learning/tutorial-1st-experiment-sdk-setup). Weitere Informationen zum Open-Source-Modellformat und zur Runtime für Machine Learning finden Sie in der Dokumentation zu [ONNX Runtime](http://onnxruntime.ai).
+Weitere Informationen finden Sie in der [Übersicht über Azure Machine Learning](/azure/machine-learning/overview-what-is-azure-ml) und im Tutorial zu den [ersten Schritten mit dem ersten Machine Learning-Experiment](/azure/machine-learning/tutorial-1st-experiment-sdk-setup). Weitere Informationen zum Open-Source-Modellformat und zur Runtime für Machine Learning finden Sie unter [ONNX Runtime](http://onnxruntime.ai).
 
 <!-- markdownlint-disable MD024 -->
 
@@ -54,7 +51,7 @@ Ein Data Scientist kann mithilfe von Azure Machine Learning ein Modell anhand er
 
 1. Wählen Sie **Hinzufügen** aus, und folgen Sie dann den Schritten im Portal zum Erstellen eines Arbeitsbereichs.
 
-1. Der neue Arbeitsbereich bietet Data Scientists einen codebasierten Ansatz mit wenig Code zum Trainieren, Erstellen, Bereitstellen und Verwalten von Modellen.
+1. Der neue Arbeitsbereich bietet Data Scientists codebasierte Ansätze mit wenig Code zum Trainieren, Erstellen, Bereitstellen und Verwalten von Modellen.
 
 ::: zone target="chromeless"
 
@@ -72,15 +69,15 @@ Navigieren Sie direkt zu Azure Machine Learning-Ressourcen im [Azure-Portal](htt
 
 ::: zone-end
 
-## <a name="ai-applications-and-agents"></a>[KI-Anwendungen und -Agents](#tab/AIAppsAndAgents)
+## <a name="ai-applications-and-agents"></a>KI-Anwendungen und -Agents
 
-Azure bietet eine Reihe von vorgefertigten KI-Diensten mit Namen Cognitive Services zum problemlosen Erstellen von KI-Anwendungen. Außerdem stellt Azure einen Botdienst bereit, der Entwicklern das Erstellen von interaktiven KI-Agents ermöglicht, die die Interaktion zwischen Kunden und Mitarbeitern verbessern.
+Azure bietet eine Reihe von vorgefertigten KI-Diensten mit Namen Cognitive Services zum Erstellen von KI-Anwendungen. Außerdem stellt Azure einen Botdienst bereit, der Entwicklern das Erstellen von interaktiven KI-Agents ermöglicht, die die Interaktion zwischen Kunden und Mitarbeitern verbessern.
 
 ### <a name="ai-applications"></a>KI-Anwendungen
 
-Cognitive Services ermöglicht es Ihnen, die KI-Funktionen für maschinelles Sehen, Sprach- und Texterkennung sowie Entscheidungsfindung in Ihre Anwendungen zu integrieren, ohne dass ein zusätzliches Training für Vorhersagemodelle erforderlich ist. Diese Dienste sind optimal und effektiv, wenn Sie keinen Data Scientist im Team haben, der das Vorhersagemodell trainiert. Für einige Dienste ist kein Training erforderlich. Andere Dienste erfordern nur ein minimales Training.
+Cognitive Services ermöglicht es Ihnen, die KI-Funktionen für maschinelles Sehen, Sprach- und Texterkennung sowie Entscheidungsfindung in Ihre Anwendungen zu integrieren. Bei den meisten Vorhersagemodellen ist kein zusätzliches Training erforderlich. Diese Dienste sind nützlich, wenn keine Data Scientists für das Training des Vorhersagemodells verfügbar sind. Andere Dienste erfordern minimales Training.
 
-Eine Liste der verfügbaren Dienste für maschinelles Sehen, Sprach- und Texterkennung sowie Entscheidungsfindung, einschließlich des möglicherweise erforderlichen Trainingsaufwands, finden Sie in der Dokumentation zu [Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/cognitive-services-and-machine-learning#service-requirements-for-the-data-model).
+Weitere Informationen über das möglicherweise erforderliche Training und eine Liste der verfügbaren Dienste für maschinelles Sehen, Sprach- und Texterkennung sowie Entscheidungsfindung finden Sie in der Dokumentation zu [Cognitive Services](/azure/cognitive-services/cognitive-services-and-machine-learning#service-requirements-for-the-data-model).
 
 #### <a name="action"></a>Aktion
 
@@ -92,9 +89,9 @@ Erste Schritte mit einer Cognitive Services-API:
 
 1. Suchen Sie nach einem Dienst, und wählen Sie ihn aus:
 
-    - Wenn Sie den Namen des Diensts kennen, den Sie verwenden möchten, geben Sie den Namen in das Feld **Marketplace durchsuchen** ein, und wählen Sie dann den Dienst aus.
+    - Wenn Sie den Namen des Diensts kennen, den Sie verwenden möchten, geben Sie den Namen in **Marketplace durchsuchen** ein. Wählen Sie dann den Dienst aus.
 
-    - Um eine Liste der Cognitive Services-APIs anzuzeigen, klicken Sie neben der Überschrift **Cognitive Services** auf **Mehr anzeigen**, und wählen Sie dann den Dienst aus.
+    - Um eine Liste der Cognitive Services-APIs anzuzeigen, klicken Sie neben der Überschrift **Cognitive Services** auf **Mehr anzeigen**. Wählen Sie dann den Dienst aus.
 
 1. Wählen Sie **Erstellen** aus, und führen Sie dann die Schritte im Portal zum Bereitstellen des Diensts aus.
 
@@ -116,9 +113,9 @@ Navigieren Sie direkt zu Cognitive Services im [Azure-Portal](https://portal.azu
 
 ### <a name="ai-agents"></a>KI-Agents
 
-Interagieren Sie mit Ihren Kunden auf natürlichere Weise und verbessern Sie die Kommunikation durch Konversationsumgebungen unterstützt von Bot Framework und Azure Bot Service. Verwenden Sie außerdem Cognitive Services-APIs wie Language Understanding (LUIS), QnA Maker und den Speech-Dienst, damit Ihre Kunden allgemeine Aufgaben selbstständig ausführen können und sich die Mitarbeiter im Callcenter auf differenziertere, hochwertigere Fälle konzentrieren können.
+Interagieren Sie mit Ihren Kunden auf natürlichere Weise und verbessern Sie die Kommunikation durch Konversationsumgebungen unterstützt von Bot Framework und Azure Bot Service. Verwenden Sie darüber hinaus Cognitive Services-APIs wie Language Understanding (LUIS), QnA Maker und den Speech-Dienst. Diese helfen Ihren Kunden bei allgemeinen Aufgaben und lassen Ihren Callcenter-Agents Zeit, sich auf differenziertere, anspruchsvollere Fälle zu konzentrieren.
 
-Weitere Informationen zum Erstellen von Bots finden Sie im Lernpfad für [Azure Bot Service](https://docs.microsoft.com/learn/paths/create-bots-with-the-azure-bot-service/).
+Weitere Informationen zum Erstellen von Bots finden Sie unter [Azure Bot Service](/learn/paths/create-bots-with-the-azure-bot-service/).
 
 #### <a name="action"></a>Aktion
 
@@ -128,7 +125,7 @@ Erste Schritte mit Azure Bot Service:
 
 1. Wählen Sie **Hinzufügen** und dann **Web-App-Bot** oder **Registrierung von Botkanälen** aus.
 
-1. Wählen Sie **Erstellen** aus, und führen Sie dann die Schritte im Portal zum Bereitstellen des Diensts aus.
+1. Klicken Sie auf **Erstellen**. Führen Sie dann die Schritte im Portal zum Bereitstellen des Diensts aus.
 
 ::: zone target="chromeless"
 
@@ -146,19 +143,19 @@ Navigieren Sie direkt zu Azure Bot Service im [Azure-Portal](https://portal.azur
 
 ::: zone-end
 
-## <a name="knowledge-mining"></a>[Knowledge Mining](#tab/KnowledgeMining)
+## <a name="knowledge-mining"></a>Knowledge Mining
 
-Verwenden Sie Azure Cognitive Search, um mögliche Erkenntnisse aus den Inhalten wie Dokumenten, Verträgen, Bildern und Medien zu ziehen. Verwenden Sie den einzigen Cloudsuchdienst mit integrierten KI-Funktionen, entdecken Sie Muster und Beziehungen in Ihren Inhalten, erkennen Sie die Stimmung, extrahieren Sie Schlüsselwörter und vieles mehr.
+Verwenden Sie Azure Cognitive Search, um mögliche Erkenntnisse aus den Inhalten wie Dokumenten, Verträgen, Bildern und Medien zu ziehen. Sie können Muster und Beziehungen in Ihren Inhalten entdecken, Stimmungen verstehen und Schlüsselbegriffe extrahieren.
 
 <!-- docsTest:ignore "Azure Search" -->
 
-Azure Cognitive Search (früher „Azure Search“) verwendet den gleichen integrierten Microsoft-Stapel für natürliche Sprache, der von Bing und Microsoft Office schon seit mehr als einem Jahrzehnt eingesetzt wird, sowie KI-Dienste für maschinelles Sehen, Sprach- und Texterkennung. Verbringen Sie mehr Zeit mit Innovationen und weniger Zeit mit der Verwaltung einer komplexen Cloudsuchlösung.
+Azure Cognitive Search verwendet denselben natürlichen Sprachstapel, den auch Bing und Microsoft Office verwenden. Verbringen Sie mehr Zeit mit Innovationen und weniger Zeit mit der Verwaltung einer komplexen Cloudsuchlösung.
 
-Weitere Informationen finden Sie unter [Was ist Azure Cognitive Search?](https://docs.microsoft.com/azure/search/search-what-is-azure-search)
+Weitere Informationen finden Sie unter [Was ist Azure Cognitive Search?](/azure/search/search-what-is-azure-search)
 
 ### <a name="action"></a>Aktion
 
-Erste Schritte mit Azure Cognitive Search:
+Erste Schritte:
 
 1. Suchen Sie im Azure-Portal nach **Azure Cognitive Search**, und wählen Sie den Eintrag aus.
 

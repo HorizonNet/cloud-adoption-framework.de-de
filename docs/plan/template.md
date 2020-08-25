@@ -1,24 +1,24 @@
 ---
 title: Bereitstellung per Cloudeinführungsplan für Azure DevOps
-description: Es wird beschrieben, wie Sie schnell einen Backlog für Azure DevOps bereitstellen können, indem Sie eine Vorlage für den Cloudeinführungsplan verwenden, mit der Maßnahmen zur Einführung der Cloud auf einen standardisierten Prozess ausgerichtet werden.
+description: Erfahren Sie, wie Sie schnell einen Backlog für Azure DevOps bereitstellen können, indem Sie eine Vorlage verwenden, mit der Maßnahmen zur Einführung der Cloud auf einen standardisierten Prozess ausgerichtet werden.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: c25279222a0a1dbd9531ffe6e941e1ffc1046051
-ms.sourcegitcommit: b94dab2545384e44650136b17dc9f708ccdc3c7d
+ms.openlocfilehash: 178217ef4cb3e4dc744a1c6d297ad4c8a993bcd5
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "85195095"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572917"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Cloudeinführungsplan und Azure DevOps
 
 Azure DevOps ist der Satz cloudbasierter Tools für Azure-Kunden, die iterative Projekte verwalten. Es enthält darüber hinaus Tools für die Verwaltung von Bereitstellungspipelines und andere wichtige Elemente von DevOps.
 
-In diesem Artikel erfahren Sie, wie Sie mithilfe der Vorlage für den Cloudeinführungsplan schnell einen Backlog für Azure DevOps bereitstellen können. Diese Vorlage richtet die Maßnahmen zur Einführung der Cloud auf einen standardisierten Prozess aus, der auf den Vorgaben im Framework für die Cloudeinführung (Cloud Adoption Framework) basiert.
+In diesem Artikel erfahren Sie, wie Sie mithilfe einer Vorlage schnell einen Backlog für Azure DevOps bereitstellen können. Diese Vorlage richtet die Maßnahmen zur Einführung der Cloud auf einen standardisierten Prozess aus, der auf den Vorgaben im Framework für die Cloudeinführung (Cloud Adoption Framework) basiert.
 
 ## <a name="create-your-cloud-adoption-plan"></a>Erstellen Ihres Cloudeinführungsplans
 
@@ -27,20 +27,20 @@ Um den Cloudeinführungsplan bereitzustellen, öffnen Sie den [Azure DevOps Demo
 1. Stellen Sie sicher, dass das Feld **Ausgewählte Vorlage** auf **Cloudeinführungsplan** festgelegt ist. Wenn dies nicht der Fall ist, wählen Sie **Vorlage auswählen** aus, um die richtige Vorlage auszuwählen.
 2. Wählen Sie Ihre Azure DevOps-Organisation im Dropdown-Listenfeld **Organisation auswählen** aus.
 3. Geben Sie einen Namen für das neue Projekt ein. Dieser Name wird für den Cloudeinführungsplan verwendet, wenn er in Ihrem Azure DevOps-Mandanten bereitgestellt wird.
-4. Wählen Sie **Projekt erstellen** aus, um basierend auf der Planvorlage ein neues Projekt in Ihrem Mandanten zu erstellen. Eine Statusanzeige zeigt Ihren Fortschritt bei der Bereitstellung des Projektes an.
+4. Wählen Sie **Projekt erstellen** aus, um basierend auf der Strategie- und Planvorlage ein neues Projekt in Ihrem Mandanten zu erstellen. Eine Statusanzeige zeigt Ihren Fortschritt bei der Bereitstellung des Projektes an.
 5. Wenn die Bereitstellung abgeschlossen ist, wählen Sie **Zu Projekt navigieren** aus, um Ihr neues Projekt anzuzeigen.
 
 Nachdem Ihr Projekt erstellt wurde, lesen Sie weitere Artikel in dieser Serie, um zu erfahren, wie Sie die Vorlage an Ihren Cloudeinführungsplan anpassen.
 
-Weitere Unterstützung und Anleitungen für dieses Tool finden Sie unter [Azure DevOps Services Demo Generator](https://docs.microsoft.com/azure/devops/demo-gen).
+Weitere Unterstützung und Anleitungen für dieses Tool finden Sie unter [Azure DevOps Services Demo Generator](/azure/devops/demo-gen).
 
 ## <a name="bulk-edit-the-cloud-adoption-plan"></a>Massenbearbeitung des Cloudeinführungsplans
 
 Wenn das Planprojekt bereitgestellt wurde, können Sie es mithilfe von Microsoft Excel ändern. Mit Microsoft Excel können Sie neue Workloads oder Ressourcen wesentlich einfacher im Plan erstellen als mithilfe der Azure DevOps-Browseroberfläche.
 
-Wenn Sie Ihre Arbeitsstation für die Massenbearbeitung vorbereiten möchten, lesen Sie [Massenhinzufügen oder -bearbeiten von Arbeitselementen mit Microsoft Excel](https://docs.microsoft.com/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
+Wenn Sie Ihre Arbeitsstation für die Massenbearbeitung vorbereiten möchten, lesen Sie [Massenhinzufügen oder -bearbeiten von Arbeitselementen mit Microsoft Excel](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel?view=azure-devops).
 
-Einige Benutzer möchten ggf. Project verwenden, um ihre Aufgaben nachzuverfolgen, ein Backlog zu erstellen und Ressourcen zuzuweisen. Die Schritte zum Verbinden von Project mit Azure DevOps finden Sie [hier](https://docs.microsoft.com/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project?view=tfs-2018).
+Einige Benutzer möchten ggf. Project verwenden, um ihre Aufgaben nachzuverfolgen, ein Backlog zu erstellen und Ressourcen zuzuweisen. Die Schritte zum Verbinden von Project mit Azure DevOps finden Sie [hier](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project?view=tfs-2018).
 
 ## <a name="use-the-cloud-adoption-plan"></a>Verwenden des Cloudeinführungsplans
 
@@ -53,14 +53,14 @@ Der Cloudeinführungsplan organisiert die Aktivitäten nach Aktivitätsarten:
 
 Auf jeder Ebene werden die Aktivitäten dann basierend auf den Abhängigkeiten sequenziert. Aktivitäten sind mit Artikeln im Cloud Adoption Framework verknüpft, um das vorliegende Ziel oder die Aufgabe zu verdeutlichen.
 
-Die übersichtlichste Darstellung des Cloudeinführungsplans stammt aus der **Epics** Backlog-Ansicht. Hilfe beim Wechseln in die [Epics](https://docs.microsoft.com/azure/devops/boards/backlogs/define-features-epics?view=azure-devops#view-a-backlog-or-portfolio-backlog) Backlog-Ansicht finden Sie im Artikel zum **Anzeigen eines Backlogs**. Anhand dieser Ansicht können Sie die Arbeiten, die erforderlich sind, um die aktuelle Phase des Einführungslebenszyklus abzuschließen, einfach planen und verwalten.
+Die übersichtlichste Darstellung des Cloudeinführungsplans stammt aus der **Epics** Backlog-Ansicht. Hilfe beim Wechseln in die [Epics](/azure/devops/boards/backlogs/define-features-epics?view=azure-devops#view-a-backlog-or-portfolio-backlog) Backlog-Ansicht finden Sie im Artikel zum **Anzeigen eines Backlogs**. Anhand dieser Ansicht können Sie die Arbeiten, die erforderlich sind, um die aktuelle Phase des Einführungslebenszyklus abzuschließen, einfach planen und verwalten.
 
 > [!NOTE]
 > Der aktuelle Status des Cloudeinführungsplans ist stark auf die Migrationsmaßnahmen ausgerichtet. Aufgaben im Zusammenhang mit Governance, Innovation oder Betriebsabläufen müssen manuell aufgefüllt werden.
 
 ## <a name="align-the-cloud-adoption-plan"></a>Ausrichten des Cloudeinführungsplans
 
-Die Übersichtsseiten für die Strategie- und Planungsphasen des Lebenszyklus der Cloudeinführung verweisen jeweils auf die [Strategie- und Planungsvorlage des Cloud Adoption Framework](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx). Diese Vorlage organisiert die Entscheidungen und Datenpunkte, die die Vorlage für den Cloudeinführungsplan auf Ihre spezifischen Einführungspläne abstimmen. Wenn dies noch nicht geschehen ist, sollten Sie die Übungen zu [Strategie](../strategy/index.md) und [Planung](../plan/index.md) durchführen, bevor Sie Ihr neues Projekt ausrichten.
+Die Übersichtsseiten für die Strategie- und Planungsphasen des Lebenszyklus der Cloudeinführung verweisen jeweils auf die [Strategie- und Planvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx). Diese Vorlage organisiert die Entscheidungen und Datenpunkte, die die Vorlage für den Cloudeinführungsplan auf Ihre spezifischen Einführungspläne abstimmen. Wenn dies noch nicht geschehen ist, sollten Sie die Übungen zu [Strategie](../strategy/index.md) und [Planung](../plan/index.md) durchführen, bevor Sie Ihr neues Projekt ausrichten.
 
 Die folgenden Artikel bieten Informationen zur Ausrichtung des Cloudeinführungsplans:
 

@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: ee5ef7d171002d21b104b8fad7a33a77a57cfaa9
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: f3903361b9ce2f4fa353d5d1dc2194c0d987babd
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84788199"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574328"
 ---
 # <a name="balance-competing-priorities"></a>Ausgewogenheit konkurrierender Prioritäten
 
@@ -58,7 +58,7 @@ Das Hauptziel der Strategiemethodik ist das Erreichen eines Konsens zwischen den
 - Im **Umfang der anfänglichen Planung** hinsichtlich der technischen Implementierung in der Cloud sind häufig viele Annahmen vorhanden. Dies ist besonders dann der Fall, wenn das Team Kompetenzlücken oder die Umgebung Ermittlungslücken aufweist und bezüglich der Workloads keine architektonischen Endzustände vorhanden sind. Alle diese Annahmen sind in detaillierten Plänen zur Cloudeinführung üblich. Experimente, Pilotprojekte und eine qualitative Analyse sind erforderlich, um diese Annahmen zu beseitigen.
 - Bei **verzögerten technischen Entscheidungen** wird davon ausgegangen, dass eine Entscheidung genauer ist, je später sie getroffen wird. Die folgenden Prinzipien der agilen Produktplanung unterstützen das Verzögern technischer Entscheidungen, damit sie zum richtigen Zeitpunkt mit genügend Informationen getroffen werden können. Dieser Ansatz führt jedoch zu mehr Unklarheit im ursprünglichen Plan.
 
-**Mindestumfang:** Agile Ansätze zur Produktentwicklung werden empfohlen, um ein schnelles Handeln innerhalb umsetzbarer Pläne voranzutreiben. Laut der Planungsmethodik sind die folgenden Schritte zum Erreichen dieser Ausgewogenheit empfehlenswert. Inventarisieren Sie mit automatisierten Ermittlungstools alle digitalen Ressourcen, aber planen Sie die nächsten ein bis drei Monate in inkrementellen Schritten. Die richtige Ausrichtung der Organisation sollte schnell voranschreiten. Erstellen Sie einen Bereitschaftsplan für die Fähigkeiten des zugeteilten Teams. Nutzen Sie die Vorlage für den Cloudeinführungsplan, um schnell einen anfänglichen Backlog bereitzustellen.
+**Mindestumfang:** Agile Ansätze zur Produktentwicklung werden empfohlen, um ein schnelles Handeln innerhalb umsetzbarer Pläne voranzutreiben. Laut der Planungsmethodik sind die folgenden Schritte zum Erreichen dieser Ausgewogenheit empfehlenswert. Inventarisieren Sie mit automatisierten Ermittlungstools alle digitalen Ressourcen, aber planen Sie die nächsten ein bis drei Monate in inkrementellen Schritten. Die richtige Ausrichtung der Organisation sollte schnell voranschreiten. Erstellen Sie einen Bereitschaftsplan für die Fähigkeiten des zugeteilten Teams. Nutzen Sie die Strategie- und Planvorlage, um schnell einen anfänglichen Backlog bereitzustellen.
 
 **Beispiel zum erweiterten Umfang:** Manchmal ist die Bereitstellung eines Cloudeinführungsplans eine Reaktion auf ein zeitkritisches oder äußerst wichtiges Geschäftsereignis. Wenn für den Erfolg viele Ressourcen innerhalb eines bestimmten Zeitraums verschoben werden müssen, werden die oben beschriebenen Schritte häufig im Rahmen eines umfassenderen Planungsaufwands befolgt. Der Schlüssel zum Erfolg ist in solchen Szenarien, zunächst den Anfang zu planen und dann den gesamten Prozess. Mit diesem Ansatz wird die Wahrscheinlichkeit blockierter Geschäftsergebnisse bei der Planung reduziert.
 
@@ -88,7 +88,7 @@ Während der Migration ist es üblich, dass die Einführungsteams davon ausgehen
 
 **Mindestumfang:** Verwenden Sie während der Planung in der Frühphase die Option für das erneute Hosten, und seien Sie sich dabei bewusst, dass diese Option eine anfängliche Geschäftsannahme und keine technische Entscheidung ist. Bei der Migrationsmethodik stellt das Cloudeinführungsteam dann diese Annahme für jede migrierte Workload in Frage. Diese Methodik folgt dem Ansatz „Bewertung/Migration/Förderung“ für jede Workload oder Workloadgruppe, die eine Migrationsfactory bildet. Während der Bewertungsphase wertet das Einführungsteam die technische Eignung sowie die Architektur der einzelnen Workloads aus. Diese Bewertungsmaßnahmen führen selten zu einem reinen Lift & Shift-Ansatz, da viele der Architekturkomponenten zum Zwecke von Refactoring und Modernisierung ausgewählt werden.
 
-**Beispiel zum erweiterten Umfang:** Bei unternehmenskritischen oder äußerst wichtigen Workloads, etwa bei einem Mainframe oder einer Microserviceanwendung mit mehreren Ebenen, kann in der Beurteilungsphase eine umfassendere Einschätzung der Workload erforderlich sein. In solchen Situationen, in denen die Architektur neu überdacht wird, sollten Kunden die Microsoft Azure Well-Architected Review und das [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) nutzen, um die Anforderungen an die Workload während der Bewertung einzuschränken.
+**Beispiel zum erweiterten Umfang:** Bei unternehmenskritischen oder äußerst wichtigen Workloads, etwa bei einem Mainframe oder einer Microserviceanwendung mit mehreren Ebenen, kann in der Beurteilungsphase eine umfassendere Einschätzung der Workload erforderlich sein. In solchen Situationen, in denen die Architektur neu überdacht wird, sollten Kunden die Microsoft Azure Well-Architected Review und das [Microsoft Azure Well-Architected Framework](/azure/architecture/framework) nutzen, um die Anforderungen an die Workload während der Bewertung einzuschränken.
 
 ## <a name="balance-during-the-innovate-phase"></a>Gleichgewicht während der Innovationsphase
 

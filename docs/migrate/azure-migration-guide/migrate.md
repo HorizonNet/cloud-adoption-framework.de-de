@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e398c486192f2f0606765fadf1079f7b62afe923
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: d8283cc541a98ee3b6d840e405162cff012b01e6
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450797"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88570282"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
@@ -46,12 +46,12 @@ Führen Sie die folgenden Schritte aus, um eine Migration mit Azure Migrate durc
 1. Suchen Sie unter **Alle Dienste** nach Azure Migrate. Wählen Sie **Azure Migrate** aus, um den Vorgang fortzusetzen.
 1. Wählen Sie **Tool hinzufügen**, um Ihr Migrationsprojekt zu starten.
 1. Wählen Sie das Abonnement, die Ressourcengruppe und die Geografie aus, für die die Migration durchgeführt werden soll.
-1. Wählen Sie **Bewertungstool auswählen** > **Azure Migrate: Serverbewertung** >  **Weiter** aus.
+1. Wählen Sie **Bewertungstool auswählen** > **Azure Migrate: Serverbewertung** > **Weiter** aus.
 1. Wählen Sie **Überprüfen + Tools hinzufügen** aus, und überprüfen Sie die Konfiguration. Wählen Sie **Tools hinzufügen** aus, um den Auftrag zur Erstellung des Migrationsprojekts und zur Registrierung der ausgewählten Lösungen zu initiieren.
 
 #### <a name="learn-more"></a>Weitere Informationen
 
-- [Azure Migrate-Tutorial: Migrieren von physischen oder virtualisierten Servern zu Azure](https://docs.microsoft.com/azure/migrate/tutorial-migrate-physical-virtual-machines)
+- [Azure Migrate-Tutorial: Migrieren von physischen oder virtualisierten Servern zu Azure](/azure/migrate/tutorial-migrate-physical-virtual-machines)
 
 ### <a name="azure-site-recovery"></a>Azure Site Recovery
 
@@ -60,7 +60,7 @@ Mit dem Azure Site Recovery-Dienst können Sie die Migration lokaler Ressourcen 
 Die folgenden Schritte beschreiben, wie Sie Site Recovery zur Migration verwenden:
 
 > [!TIP]
-> Abhängig von Ihrem Szenario können sich diese Schritte leicht unterscheiden. Weitere Informationen finden Sie im Artikel [Migrieren von lokalen Computern zu Azure](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure).
+> Abhängig von Ihrem Szenario können sich diese Schritte leicht unterscheiden. Weitere Informationen finden Sie im Artikel [Migrieren von lokalen Computern zu Azure](/azure/site-recovery/migrate-tutorial-on-premises-azure).
 
 #### <a name="prepare-azure-site-recovery-service"></a>Vorbereiten des Azure Site Recovery-Diensts
 
@@ -103,7 +103,7 @@ Die folgenden Schritte beschreiben, wie Sie Site Recovery zur Migration verwende
 
 Weitere Informationen finden Sie unter
 
-- [Migrieren von lokalen Computern zu Azure](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure)
+- [Migrieren von lokalen Computern zu Azure](/azure/site-recovery/migrate-tutorial-on-premises-azure)
 
 ::: zone-end
 
@@ -142,8 +142,8 @@ Der Dienst ist jetzt bereit, die unterstützten Quelldatenbanken auf Zielplattfo
 
 Weitere Informationen finden Sie unter
 
-- [Übersicht über Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview)
-- [Erstellen einer Instanz von Azure Database Migration Service](https://docs.microsoft.com/azure/dms/quickstart-create-data-migration-service-portal)
+- [Übersicht über Azure Database Migration Service](/azure/dms/dms-overview)
+- [Erstellen einer Instanz von Azure Database Migration Service](/azure/dms/quickstart-create-data-migration-service-portal)
 - [Azure Migrate im Azure-Portal](https://portal.azure.com/#blade/Microsoft_Azure_ManagementGroups/HierarchyBlade)
 - [Azure-Portal: Erstellen eines Migrationsprojekts](https://portal.azure.com/#create/Microsoft.AzureMigrate)
 
@@ -167,21 +167,21 @@ Führen Sie die folgenden Schritte aus, um mit der Nutzung des Datenmigrations-A
 1. Wählen Sie **Weiter** aus, um die Bewertung zu starten.
 1. Zeigen Sie die Ergebnisse im Datenmigrations-Assistenten an.
 
-Unternehmen empfehlen wir, dem unter [Bewerten eines Unternehmens und Konsolidieren der Bewertungsberichte mit DMA](https://docs.microsoft.com/sql/dma/dma-consolidatereports) beschriebenen Ansatz zu folgen, um mehrere Server zu bewerten, die Berichte zu kombinieren und dann die bereitgestellten Power BI-Berichte zur Analyse der Ergebnisse zu verwenden.
+Unternehmen empfehlen wir, dem unter [Bewerten eines Unternehmens und Konsolidieren der Bewertungsberichte mit DMA](/sql/dma/dma-consolidatereports) beschriebenen Ansatz zu folgen, um mehrere Server zu bewerten, die Berichte zu kombinieren und dann die bereitgestellten Power BI-Berichte zur Analyse der Ergebnisse zu verwenden.
 
 Weitere Informationen und ausführliche Verwendungsschritte finden Sie unter:
 
-- [Übersicht über den Datenmigrations-Assistenten](https://docs.microsoft.com/sql/dma/dma-overview)
-- [Bewerten eines Unternehmens und Konsolidieren der Bewertungsberichte mit DMA](https://docs.microsoft.com/sql/dma/dma-consolidatereports)
-- [Analysieren der vom Datenmigrations-Assistenten erstellten konsolidierten Bewertungsberichte mit Power BI](https://docs.microsoft.com/sql/dma/dma-powerbiassesreport)
+- [Übersicht über den Datenmigrations-Assistenten](/sql/dma/dma-overview)
+- [Bewerten eines Unternehmens und Konsolidieren der Bewertungsberichte mit DMA](/sql/dma/dma-consolidatereports)
+- [Analysieren der vom Datenmigrations-Assistenten erstellten konsolidierten Bewertungsberichte mit Power BI](/sql/dma/dma-powerbiassesreport)
 
 ### <a name="sql-server-migration-assistant"></a>SQL Server Migration Assistant
 
-Microsoft SQL Server Migration Assistant (SSMA) ist ein Tool zur Automatisierung der Datenbankmigration von Microsoft Access, DB2, MySQL, Oracle und SAP ASE zu SQL Server. Das allgemeine Konzept besteht in der Erfassung, Bewertung und Überprüfung mit diesen Tools. Aufgrund der unterschiedlichen Prozesse für die einzelnen Quellsysteme empfehlen wir Ihnen, die detaillierte [Dokumentation zu SQL Server Migration Assistant](https://docs.microsoft.com/sql/ssma/sql-server-migration-assistant) zu lesen.
+Microsoft SQL Server Migration Assistant (SSMA) ist ein Tool zur Automatisierung der Datenbankmigration von Microsoft Access, DB2, MySQL, Oracle und SAP ASE zu SQL Server. Das allgemeine Konzept besteht in der Erfassung, Bewertung und Überprüfung mit diesen Tools. Aufgrund der unterschiedlichen Prozesse für die einzelnen Quellsysteme empfehlen wir Ihnen, die detaillierte [Dokumentation zu SQL Server Migration Assistant](/sql/ssma/sql-server-migration-assistant) zu lesen.
 
 Weitere Informationen finden Sie unter
 
-- [Übersicht über SQL Server Migration Assistant](https://docs.microsoft.com/sql/ssma/sql-server-migration-assistant)
+- [Übersicht über SQL Server Migration Assistant](/sql/ssma/sql-server-migration-assistant)
 
 ### <a name="database-experimentation-assistant"></a>Assistent für Datenbankexperimente
 
@@ -195,7 +195,7 @@ Der Assistent für Datenbankexperimente enthält die folgenden Workflowaktivitä
 
 Weitere Informationen finden Sie unter
 
-- [Übersicht über den Assistenten für Datenbankexperimente](https://docs.microsoft.com/sql/dea/database-experimentation-assistant-overview)
+- [Übersicht über den Assistenten für Datenbankexperimente](/sql/dea/database-experimentation-assistant-overview)
 
 ### <a name="azure-cosmos-db-data-migration-tool"></a>Azure Cosmos DB: Datenmigrationstool
 
@@ -203,7 +203,7 @@ Das Datenmigrationstool von Azure Cosmos DB kann Daten aus verschiedenen Quelle
 
 Weitere Informationen finden Sie unter
 
-- [Azure Cosmos DB: Datenmigrationstool](https://docs.microsoft.com/azure/cosmos-db/import-data)
+- [Azure Cosmos DB: Datenmigrationstool](/azure/cosmos-db/import-data)
 
 <!-- markdownlint-disable MD025 -->
 
@@ -245,7 +245,7 @@ Movere ist eine Ermittlungslösung, die die notwendigen Daten und Erkenntnisse l
 
 Sie können aus einer Vielzahl erfahrener Systemintegratorpartner und Tools wählen, die Sie bei Ihren Azure Cosmos DB-Migrationen für Ihre NoSQL-Datenbankanforderungen unterstützen.
 
-[Weitere Informationen](https://docs.microsoft.com/azure/cosmos-db/partners-migration-cosmosdb#migration-tools)
+[Weitere Informationen](/azure/cosmos-db/partners-migration-cosmosdb#migration-tools)
 
 Besuchen Sie das [Azure-Migrationscenter](https://azure.microsoft.com/migration/support), um Organisationen zu ermitteln, die verwendungsbereite Partnertechnologielösungen anbieten, die zu Ihren Migrationsszenarien passen, und erfahren Sie mehr über zusätzliche Migrationstools und Supportdienste von Drittanbietern.
 
@@ -255,14 +255,14 @@ Im [Leitfaden zur Azure-Datenbankmigration](https://datamigration.microsoft.com)
 
 Bei Projekten, die nicht nachverfolgt und verwaltet werden, treten eher Probleme auf. Um ein erfolgreiches Ergebnis zu gewährleisten, empfehlen wir dringend, ein Projektmanagementtool zu verwenden. Es gibt viele verschiedene Tools, und Projektmanager in Ihrer Organisation haben möglicherweise bereits einen Favoriten.
 
-Als Tool für die Projektverwaltung während einer Cloudmigration wird Azure DevOps empfohlen. Das Framework für die Cloudeinführung enthält ein Tool zur automatischen Bereitstellung einer Projektvorlage, um die Verwendung von Azure DevOps zu beschleunigen. Diese Vorlage umfasst die Aufgaben, die bei einer Migration üblicherweise ausgeführt werden. Stellen Sie die Vorlage mithilfe der Anweisungen unter [Cloudeinführungsplan und Azure DevOps](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/template) bereit. Anschließend können Sie die Vorlage ändern, um sie auf die zu migrierenden [Workloads](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/workloads) und [Ressourcen](https://docs.microsoft.com/azure/architecture/cloud-adoption/plan/assets) abzustimmen.
+Als Tool für die Projektverwaltung während einer Cloudmigration wird Azure DevOps empfohlen. Das Framework für die Cloudeinführung enthält ein Tool zur automatischen Bereitstellung einer Projektvorlage, um die Verwendung von Azure DevOps zu beschleunigen. Diese Vorlage umfasst die Aufgaben, die bei einer Migration üblicherweise ausgeführt werden. Stellen Sie die Vorlage mithilfe der Anweisungen unter [Cloudeinführungsplan und Azure DevOps](/azure/architecture/cloud-adoption/plan/template) bereit. Anschließend können Sie die Vorlage ändern, um sie auf die zu migrierenden [Workloads](/azure/architecture/cloud-adoption/plan/workloads) und [Ressourcen](/azure/architecture/cloud-adoption/plan/assets) abzustimmen.
 
 Microsoft bietet außerdem folgende Projektverwaltungstools zur Erweiterung des Funktionsspektrums an:
 
 - [Microsoft Planner](https://tasks.office.com): Eine einfache, visuelle Möglichkeit zum Organisieren von Teamwork.
 - [Microsoft Project](https://products.office.com/project/project-and-portfolio-management-software): Projekt- und Portfolioverwaltung, Ressourcenkapazitätsverwaltung, Finanzmanagement, Timesheet- und Zeitplanverwaltung.
 - [Microsoft Teams](https://products.office.com/microsoft-teams): Tool für Zusammenarbeit und Kommunikation im Team. Teams integriert auch Planner und andere Tools, um die Zusammenarbeit zu verbessern.
-- [Azure DevOps Services](https://docs.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops): Die Planungsvorlage des Frameworks für die Cloudeinführung ist zur Verwendung von Azure DevOps nicht erforderlich. Sie können den Dienst ohne die Vorlage verwenden, um Ihre Infrastruktur als Code zu verwalten, oder die Projektverwaltung mithilfe der Arbeitselemente und Boards durchführen. Mit steigender Erfahrung können Sie die CI/CD-Funktionen nutzen.
+- [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops?view=azure-devops): Die Planungsvorlage des Frameworks für die Cloudeinführung ist zur Verwendung von Azure DevOps nicht erforderlich. Sie können den Dienst ohne die Vorlage verwenden, um Ihre Infrastruktur als Code zu verwalten, oder die Projektverwaltung mithilfe der Arbeitselemente und Boards durchführen. Mit steigender Erfahrung können Sie die CI/CD-Funktionen nutzen.
 
 Dies sind nicht die einzigen verfügbaren Tools. Viele weitere Tools von Drittanbietern sind in der Projektmanagementcommunity weit verbreitet.
 
@@ -278,7 +278,7 @@ Microsoft Learn ist ein neuer Lernansatz. Die Bereitschaft zu den neuen Qualifik
 
 Hier sehen Sie ein Beispiel für einen maßgeschneiderten Lernpfad auf Microsoft Learn, der das Setup für den DevOps-Leitfaden im Cloud Adoption Framework ergänzt.
 
-[Erstellen von Anwendungen mit Azure DevOps:](https://docs.microsoft.com/learn/paths/build-applications-with-azure-devops) Arbeiten Sie mit anderen zusammen, um Ihre Anwendungen mit Azure Pipelines und GitHub zu erstellen. Führen Sie in Ihrer Pipeline automatisierte Tests zum Überprüfen der Codequalität aus. Überprüfen Sie den Quellcode und die Komponenten von Drittanbietern auf potenzielle Sicherheitsrisiken. Definieren Sie mehrere Pipelines, die zusammenwirken, um Ihre Anwendung zu erstellen. Erstellen Sie Anwendungen mit von Microsoft gehosteten Agents und mit eigenen Build-Agents.
+[Erstellen von Anwendungen mit Azure DevOps:](/learn/paths/build-applications-with-azure-devops) Arbeiten Sie mit anderen zusammen, um Ihre Anwendungen mit Azure Pipelines und GitHub zu erstellen. Führen Sie in Ihrer Pipeline automatisierte Tests zum Überprüfen der Codequalität aus. Überprüfen Sie den Quellcode und die Komponenten von Drittanbietern auf potenzielle Sicherheitsrisiken. Definieren Sie mehrere Pipelines, die zusammenwirken, um Ihre Anwendung zu erstellen. Erstellen Sie Anwendungen mit von Microsoft gehosteten Agents und mit eigenen Build-Agents.
 
 ## <a name="cost-management"></a>[Kostenmanagement](#tab/ManageCost)
 

@@ -7,12 +7,12 @@ ms.date: 07/01/2010
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4c5c4140bb5735706f8cefbb4f37cdc391601c75
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 301afe5e901685b5069ec73937c86674a1eb17d1
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86452623"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574991"
 ---
 # <a name="windows-virtual-desktop-post-deployment"></a>Nach der Bereitstellung von Windows Virtual Desktop
 
@@ -20,21 +20,21 @@ Der Freigabevorgang für die Migration oder Bereitstellung von Windows Virtual D
 
 - Testen der Leistung und Latenz von Anwendungsgruppen und bereitgestellten Desktops für eine Stichprobe von Benutzern
 - Onboarding von Endbenutzern, um Ihnen das Herstellen folgender Verbindungsmöglichkeiten zu vermitteln:
-  - [Windows-Desktopclient](https://docs.microsoft.com/azure/virtual-desktop/connect-windows-7-and-10)
-  - [Webclient](https://docs.microsoft.com/azure/virtual-desktop/connect-web)
-  - [Android-Client](https://docs.microsoft.com/azure/virtual-desktop/connect-android)
-  - [macOS-Client](https://docs.microsoft.com/azure/virtual-desktop/connect-macos)
-  - [iOS-Client](https://docs.microsoft.com/azure/virtual-desktop/connect-ios)
+  - [Windows-Desktopclient](/azure/virtual-desktop/connect-windows-7-and-10)
+  - [Webclient](/azure/virtual-desktop/connect-web)
+  - [Android-Client](/azure/virtual-desktop/connect-android)
+  - [macOS-Client](/azure/virtual-desktop/connect-macos)
+  - [iOS-Client](/azure/virtual-desktop/connect-ios)
 
 ## <a name="post-deployment"></a>Nach der Bereitstellung
 
-Nach Abschluss der Freigabe werden häufig [Protokollierung und Diagnose für einen besseren Betrieb von Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/diagnostics-log-analytics#push-diagnostics-data-to-your-workspace) hinzugefügt. Betriebsteams integrieren außerdem im Allgemeinen die in einem Pool zusammengefassten Hosts und Desktop-VMs in die [bewährten Methoden für die Azure-Serververwaltung](../../manage/azure-server-management/index.md), um Berichte, Patches und BCDR-Konfigurationen zu verwalten.
+Nach Abschluss der Freigabe werden häufig [Protokollierung und Diagnose für einen besseren Betrieb von Windows Virtual Desktop](/azure/virtual-desktop/diagnostics-log-analytics#push-diagnostics-data-to-your-workspace) hinzugefügt. Betriebsteams integrieren außerdem im Allgemeinen die in einem Pool zusammengefassten Hosts und virtuellen Desktop-Computern in die [bewährten Methoden für die Azure-Serververwaltung](../../manage/azure-server-management/index.md), um Berichte, Patches und Konfigurationen für Business Continuity & Disaster Recovery zu verwalten.
 
-Der Freigabevorgang überschreitet den Rahmen dieses Migrationsszenarios, kann jedoch die Notwendigkeit erkennbar machen, in nachfolgenden Durchläufen weitere Workloads zu Azure zu migrieren. Wenn Sie Office 365 und Azure AD nicht konfiguriert haben, kann das Team nach der Freigabe von Desktopszenarien ein Onboarding dieser Dienste durchführen. In einem Hybridbetriebsmodell können die Betriebsteams auch Intune, System Center oder andere Konfigurationsverwaltungstools integrieren, um Betrieb, Compliance und Sicherheit zu verbessern.
+Obwohl der Freigabevorgang den Rahmen dieses Migrationsszenarios überschreitet, kann der Prozess jedoch die Notwendigkeit erkennbar machen, in nachfolgenden Durchläufen weitere Workloads zu Azure zu migrieren. Wenn Sie Office 365 oder Azure Active Directory nicht konfiguriert haben, kann sich Ihr Cloudeinführungsteam nach der Veröffentlichung der Desktopszenarien für das Onboarding für diese Dienste entscheiden. In einem Hybridbetriebsmodell können die Betriebsteams auch Intune, System Center oder andere Konfigurationsverwaltungstools integrieren, um Betrieb, Compliance und Sicherheit zu verbessern.
 
-## <a name="next-step-your-next-migration-iteration"></a>Nächster Schritt: Ihr nächster Migrationsdurchlauf
+## <a name="next-steps"></a>Nächste Schritte
 
-Nachdem die Migration von Windows Virtual Desktop abgeschlossen ist, kann das Cloudeinführungsteam mit der nächsten szenariospezifischen Migration beginnen. Wenn Sie zusätzliche Desktops migrieren möchten, können Sie auch für die nächste Migration oder Bereitstellung von Windows Virtual Desktop noch einmal auf diese Artikelreihe zurückgreifen.
+Nachdem die Migration von Windows Virtual Desktop abgeschlossen ist, kann Ihr Cloudeinführungsteam mit der nächsten szenariospezifischen Migration beginnen. Wenn Sie zusätzliche Desktops migrieren möchten, können Sie auch für die nächste Migration oder Bereitstellung von Windows Virtual Desktop noch einmal auf diese Artikelreihe zurückgreifen.
 
 - [Planen der Windows Virtual Desktop-Migration oder -Bereitstellung](./plan.md)
 - [Überprüfen Ihrer Umgebung oder der Azure-Zielzone](./ready.md)

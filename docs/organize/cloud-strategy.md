@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/05/2020
-ms.openlocfilehash: 5b97c1efba9a0efc976404bea9680cf2baaa0d94
-ms.sourcegitcommit: 7ff5c7a12412b1af0090b8eebd25b024f7830a57
+ms.openlocfilehash: a776c93023eb0b3f5ca9c8ad4fc26d3723b8997d
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85814352"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574617"
 ---
 # <a name="cloud-strategy-functions"></a>Cloudstrategiefunktionen
 
@@ -36,10 +36,10 @@ Dies hilft dabei, kritische Priorisierungs- und Ermittlungsbemühungen bei der C
 
 ## <a name="preparation"></a>Vorbereitung
 
-- [Lernen Sie den Geschäftswert von Microsoft Azure kennen](https://docs.microsoft.com/learn/paths/learn-business-value-of-azure).
-- [Erfahren Sie, wie Sie mithilfe des Cloud Adoption Frameworks](https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure) die Strategie an Unternehmen, Personen und Technologien ausrichten können.
+- [Lernen Sie den Geschäftswert von Microsoft Azure kennen](/learn/paths/learn-business-value-of-azure).
+- [Erfahren Sie, wie Sie mithilfe des Cloud Adoption Frameworks](/learn/modules/microsoft-cloud-adoption-framework-for-azure) die Strategie an Unternehmen, Personen und Technologien ausrichten können.
 - Studieren Sie den Prozess für die [Cloudeinführungsstrategie](../strategy/index.md).
-- Laden Sie die [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) herunter.
+- Laden Sie die [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) herunter.
 
 ## <a name="minimum-scope"></a>Mindestumfang
 
@@ -93,4 +93,4 @@ Mitglieder des Cloudstrategieteams müssen in der Lage sein, Zeit für die Planu
 
 - Aufstellen eines [Cloudstrategieteams](../get-started/team/cloud-strategy.md)
 - Ausrichten Ihrer Strategie an den [Cloudeinführungsfunktionen](./cloud-adoption.md) durch Aufstellen eines [Cloudeinführungsteams](../get-started/team/cloud-adoption.md), mit dem Sie arbeiten können.
-- Verwenden Sie die [RACI-Tabellenvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx), um Zuständigkeiten zu Teams zuzuordnen.
+- Verwenden Sie die [RACI-Vorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx), um Zuständigkeiten zu Teams zuzuordnen.

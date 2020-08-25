@@ -8,21 +8,19 @@ author: JanetCThomas
 ms.author: janet
 ms.date: 05/15/2020
 ms.subservice: overview
-ms.openlocfilehash: bdcf7b83191c2e4311759c56bd3928207dd00b8a
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 3075f2cc62be70bc8fe5977ca9ca6a78e7214b7b
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83752805"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573903"
 ---
 # <a name="help-finding-the-appropriate-getting-started-guide"></a>Hilfe beim Suchen des passenden Leitfadens zu den ersten Schritten
 
-Das Cloud Adoption Framework kann Sie bei verschiedenen ersten Schritten unterstützen, daher gibt es mehrere Leitfäden zu den ersten Schritten. In diesem Artikel sind diese Leitfäden zusammengefasst, damit Sie einfach den Leitfaden ermitteln können, der am besten zu Ihren aktuellen Herausforderungen passt.
+Das Cloud Adoption Framework kann Sie auf verschiedene Weise bei Ihren ersten Schritten unterstützen, sodass mehrere Leitfäden zu den ersten Schritten bereitgestellt werden. In diesem Artikel sind diese Leitfäden zusammengefasst, damit Sie einfach den Leitfaden ermitteln können, der am besten zu Ihren aktuellen Herausforderungen passt.
 
-<!-- markdownlint-disable MD033 -->
-<br>
+## <a name="what-can-we-help-you-get-started-with"></a>Wobei benötigen Sie Unterstützung?
 
-Wobei benötigen Sie Unterstützung?
 Jeder Link führt Sie zu Fragen, die Kunden in der Regel bei dem Versuch stellen, die folgenden gängigen Ziele zu erreichen:
 
 - [Abstimmen grundlegender Konzepte zum Integrieren einer Person, eines Projekts oder eines Teams](#align-foundation)
@@ -45,8 +43,8 @@ Die Cloud Ihres Unternehmens basiert auf verschiedenen Grundentscheidungen, die 
 
 Die Cloudeinführung erfordert technische Änderungen, für die digitale Transformation mit der Cloud ist jedoch mehr als IT erforderlich. Verwenden Sie diese Leitfäden, um verschiedene Teams zu koordinieren und so die Migration und Innovation zu beschleunigen.
 
-|                                                                                     |                                                                                                                                |
-|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+|  |  |
+|--|--|
 | [Sie möchten vorhandene Workloads zur Cloud migrieren.](./migrate.md)                   | Dieser Leitfaden ist ein idealer Ausgangspunkt, wenn der Schwerpunkt auf der Migration lokaler Workloads zur Cloud liegt. |
 | [Sie möchten neue Produkte und Dienste in der Cloud erstellen.](./innovate.md)             | Dieser Leitfaden hilft Ihnen dabei, sich auf die Bereitstellung innovativer Lösungen in der Cloud vorzubereiten.                                       |
 | [Sie kommen aufgrund des Designs und der Konfiguration der Umgebung nicht weiter.](./design-and-configuration.md) | Anhand dieses Leitfadens können Sie schnell eine Umgebung entwerfen und konfigurieren.                                           |
@@ -55,8 +53,8 @@ Die Cloudeinführung erfordert technische Änderungen, für die digitale Transfo
 
 Bei fortschreitender Einführung der Cloud benötigen Sie ein solides Betriebsmodell, um fundierte Entscheidungen und angemessene Änderungen in der Organisation sicherzustellen. Koordinieren Sie Personen, und verbessern Sie Vorgänge, um Ihr Cloudbetriebsmodell zu entwickeln.
 
-|                                                                                     |                                                                                                                                |
-|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+|  |  |
+|--|--|
 | [Wie wird während der Cloudtransformation optimaler Betrieb gewährleistet?](./operational-excellence.md)                   | Die Schritte in diesem Leitfaden helfen dem Strategieteam dabei, Change Management-Prozesse zu steuern, die für die Sicherstellung eines optimalen Betriebs erforderlich sind. |
 | [Wie werden Unternehmenskosten verwaltet?](./manage-costs.md)                                          | Beginnen Sie mit der Optimierung der Unternehmenskosten, und verwalten Sie die Kosten in der gesamten Umgebung.                                                                           |
 | [Wie wird die Cloudumgebung des Unternehmens konsistent geschützt?](./security.md)             | Mit diesem Leitfaden zu den ersten Schritte können Sie sicherstellen, dass die richtigen Sicherheitsanforderungen im gesamten Unternehmen erfüllt sind, um das Risiko von Sicherheitsverletzungen zu minimieren und die Wiederherstellung nach Sicherheitsverletzungen zu beschleunigen.                                       |
@@ -67,8 +65,8 @@ Bei fortschreitender Einführung der Cloud benötigen Sie ein solides Betriebsmo
 
 Abhängig von Ihrer Einführungsstrategie und dem Betriebsmodell müssen Sie unter Umständen einige Teams zusammenstellen. Die Informationen in diesem Abschnitt unterstützen die neuen Teams bei den ersten Schritten.
 
-|                                                                                     |                                                                                                                                |
-|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+|  |  |
+|--|--|
 | [Wie wird die Organisation ausgerichtet?](./org-alignment.md)                               | Dieser Leitfaden zu den ersten Schritten kann Ihnen bei der Einrichtung einer Organisationsstruktur helfen, die mit geeigneten Mitarbeitern besetzt ist.                               |
 | [Benötige ich ein Cloudstrategieteam?](./team/cloud-strategy.md)     | Dieses Team stellt sicher, dass die Cloudeinführungsbemühungen in Übereinstimmung mit den Geschäftsergebnissen vorangetrieben werden.                                |
 | [Was macht ein Cloudeinführungsteam?](./team/cloud-adoption.md)     | Dieses Team implementiert die im Plan beschriebenen technischen Lösungen gemäß den Governanceanforderungen.             |

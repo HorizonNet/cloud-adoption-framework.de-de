@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: a4777d30c6719842d6d866879ac7d87bc67050df
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: cddaf19da87112c43ae9834aa21736488c51abb4
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85076574"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196012"
 ---
 # <a name="get-started-design-and-configuration"></a>Erste Schritte: Entwurf und Konfiguration
 
@@ -30,7 +30,7 @@ Eine klare und präzise Geschäftsstrategie unterstützt das Cloudplattformteam 
 
 **Ziele:**
 
-- Verwenden der [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx), um Beweggründe, gewünschte Geschäftsergebnisse und die geschäftliche Begründung auf hoher Ebene zu erfassen.
+- Verwenden der [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx), um Beweggründe, gewünschte Geschäftsergebnisse und die geschäftliche Begründung auf hoher Ebene zu erfassen.
 
 **Hinweis zur Erreichung der Zielvorgaben:**
 
@@ -56,7 +56,7 @@ Die Ausgabe der Bewertung des digitalen Bestands ermöglicht dem Cloudplattformt
 - Rohdaten für den vorhandenen Bestand.
 - Quantitative Analyse des vorhandenen Bestands, um die geschäftliche Begründung zu verfeinern.
 - Qualitative Analyse der ersten 10 Workloads.
-- Aktualisierte geschäftliche Begründung in der [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx).
+- Aktualisierte geschäftliche Begründung in der [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx).
 
 **Hinweis zur Erreichung der Zielvorgaben:**
 
@@ -72,7 +72,7 @@ Die Ausgabe der Bewertung des digitalen Bestands ermöglicht dem Cloudplattformt
 
 ## <a name="step-3-create-a-cloud-adoption-plan"></a>Schritt 3: Erstellen eines Cloudeinführungsplans
 
-Die Vorlage für den Cloudeinführungsplan bietet einen beschleunigten Ansatz für die Entwicklung eines Projektbacklogs. Das Backlog kann dann geändert werden, um Bewertungsergebnisse, Rationalisierung, erforderliche Fertigkeiten und Partnerverträge widerzuspiegeln.
+Ihr Cloudeinführungsplan bietet einen beschleunigten Ansatz für die Entwicklung eines Projektbacklogs. Das Backlog kann dann geändert werden, um Bewertungsergebnisse, Rationalisierung, erforderliche Fertigkeiten und Partnerverträge widerzuspiegeln.
 
 Eine Überprüfung des kurzfristigen Cloudeinführungsplans und das Backlog unterstützen das Cloudplattformteam dabei, die Anforderungen der Umgebung in den nächsten Monaten zu verstehen. Dieser Hintergrund ermöglicht es dem Team, die „Definition der Fertigstellung“ für die ersten Zielzonen enger zu fassen.
 
@@ -87,7 +87,7 @@ Eine Überprüfung des kurzfristigen Cloudeinführungsplans und das Backlog unte
 
 **Hinweis zur Erreichung der Ziele:**
 
-- [Vorlage für den Cloudeinführungsplan](../plan/template.md): Bereitstellen der Basisvorlage.
+- [Cloudeinführungsplan](../plan/template.md): Definieren Sie Ihren Plan anhand der Basisvorlage.
 - [Workloadausrichtung](../plan/workloads.md): Definieren von Workloads im Backlog.
 - [Aufwandsausrichtung](../plan/assets.md): Richten Sie Ressourcen und Workloads im Backlog aus, um den Aufwand für priorisierte Workloads eindeutig zu definieren.
 - [Ausrichtung von Personen und Zeit](../plan/iteration-paths.md): Legen Sie Iteration, Geschwindigkeit und Releases für die migrierten Workloads fest.

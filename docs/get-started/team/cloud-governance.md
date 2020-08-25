@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: ff5b2dba1cdb95cdcc007ba5cea52b86a902584d
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: 9c611e196b9bf5777181b99ef184759eb4d56bb6
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86233323"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573869"
 ---
 # <a name="get-started-build-a-cloud-governance-team"></a>Erste Schritte: Aufstellen eines Cloudgovernanceteams
 
@@ -27,7 +27,7 @@ Die offizielle Empfehlung für das Cloud Adoption Framework für Azure lautet, d
 **Ziele:**
 
 - Ermitteln, ob ein Cloudgovernanceteam benötigt wird.
-- Zuordnen übergreifender Zuständigkeiten für Teams, indem eine sogenannte RACI-Matrix entwickelt und damit bestimmt wird, welche Teams _verantwortlich sind (responsible), rechenschaftspflichtig sind (accountable), konsultiert werden (consulted) und zu informieren sind (informed)_ . Dokumentieren der Entscheidung und der verantwortlichen Personen mithilfe der [RACI-Vorlage](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) im Arbeitsblatt `Org Alignment`.
+- Zuordnen übergreifender Zuständigkeiten für Teams, indem eine sogenannte RACI-Matrix entwickelt und damit bestimmt wird, welche Teams *verantwortlich sind (responsible), rechenschaftspflichtig sind (accountable), konsultiert werden (consulted) und zu informieren sind (informed)* . Dokumentieren der Entscheidung und der verantwortlichen Personen mithilfe der [RACI-Vorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx) im Arbeitsblatt `Org Alignment`.
 
 **Hinweis zur Erreichung der Ziele:**
 
@@ -53,8 +53,8 @@ Bevor es Richtlinien oder automatisierte Cloudgovernance festlegt, sollte das Cl
 
 **Hinweis zur Erreichung der Ziele:**
 
-- Sehen Sie sich gemeinsam mit Mitgliedern des Cloudstrategieteams die [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) Ihres Unternehmens an, um sich über Beweggründe und Metriken sowie über die Strategie zu informieren.
-- Sehen Sie sich die [Vorlage für den Cloudeinführungsplan](../../plan/template.md) Ihres Unternehmens zusammen mit Mitgliedern des Cloudeinführungsteams an, um sich mit den Zeitachsen und Prioritäten vertraut zu machen.
+- Sehen Sie sich gemeinsam mit Mitgliedern des Cloudstrategieteams die [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) Ihres Unternehmens an, um sich über Beweggründe und Metriken sowie über die Strategie zu informieren.
+- Sehen Sie sich gemeinsam mit Mitgliedern des Cloudeinführungsteams den [Cloudeinführungsplan](../../plan/template.md) Ihres Unternehmens an, um sich mit dem Zeitplan und den Prioritäten vertraut zu machen.
 - Sehen Sie sich die [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) des Operations-Teams an, um sich über die betriebsbezogenen Anforderungen und Verpflichtungen zu informieren, die für das Unternehmen gelten.
 
 <!-- markdownlint-disable MD033 -->
@@ -174,7 +174,7 @@ Wenn neue Einführungsmaßnahmen abgeschlossen werden, überträgt das Cloudeinf
 
 **Hinweis zur Erreichung der Ziele:**
 
-- Legen Sie einen Prozess für das [Durchführen des Onboardings für neue Workloads und Ressourcen](https://docs.microsoft.com/azure/azure-resource-manager/custom-providers/concepts-resource-onboarding) fest.
+- Legen Sie einen Prozess für das [Durchführen des Onboardings für neue Workloads und Ressourcen](/azure/azure-resource-manager/custom-providers/concepts-resource-onboarding) fest.
 
 <!-- markdownlint-disable MD033 -->
 <br>

@@ -7,27 +7,28 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c8031c619eb419f72852fd8cd70e5540a80930d2
-ms.sourcegitcommit: 4bbd5f6444d033ef1f38dc6f3bad7b914a82f68f
+ms.openlocfilehash: c914d971b97e72d1b5e303fdec7a0df17351b423
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86128089"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574413"
 ---
 # <a name="platform-automation-and-devops"></a>Plattformautomatisierung und DevOps
 
-![Plattformautomatisierung und DevOps](./media/DevOps.png)
-_Abbildung 1: Plattformautomatisierung und DevOps_
+![Diagramm: Plattformautomatisierung und DevOps](./media/DevOps.png)
+
+_Abbildung 1: Plattformautomatisierung und DevOps_
 
 ## <a name="planning-for-a-devops-approach"></a>Planen eines DevOps-Ansatzes
 
-Viele traditionelle Modelle für den IT-Betrieb sind nicht mit der Cloud kompatibel, und die Organisationen müssen betriebliche und organisatorische Veränderungen vornehmen, um die Migrationsziele des Unternehmens zu erreichen. Es wird dringend empfohlen, sowohl für Anwendungsteams als auch für zentrale Teams einen DevOps-Ansatz zu wählen.
+Viele traditionelle Modelle für den IT-Betrieb sind nicht mit der Cloud kompatibel, und die Organisationen müssen betriebliche und organisatorische Veränderungen vornehmen, um die Migrationsziele des Unternehmens zu erreichen. Sie sollten sowohl für Anwendungsteams als auch für zentrale Teams einen DevOps-Ansatz wählen.
 
-**Überlegungen zum Entwurf:**
+### <a name="design-considerations"></a>Überlegungen zum Entwurf
 
-- Für zentrale Teams sollten CI/CD-Pipelines verwendet werden, um Richtliniendefinitionen, Rollendefinitionen, Richtlinienzuweisungen, Verwaltungsgruppenhierarchien und Abonnements zu verwalten. Diese Pipelines stellen sicher, dass mehrere Abonnements operativ verwaltet werden können, während gleichzeitig ein gewünschter Zustand beibehalten wird.
+- Für zentrale Teams sollten Sie für Continuous Integration und Continuous Deployment Pipelines verwenden. Verwenden Sie die Pipelines zur Verwaltung von Richtliniendefinitionen, Rollendefinitionen, Richtlinienzuweisungen, Verwaltungsgruppenhierarchien und Abonnements. Diese Pipelines tragen dazu bei, sicherzustellen, dass Sie mehrere Abonnements operativ verwalten können und gleichzeitig einem gewünschten Zustand entsprechen.
 
-- Das reine Vorhandensein eines DevOps-Modells führt nicht sofort zu leistungsfähigen DevOps-Teams.
+- Die reine Anwendung eines DevOps-Modells führt nicht sofort zu leistungsfähigen DevOps-Teams.
 
 - Investitionen in technische Funktionen und Ressourcen sind von entscheidender Bedeutung.
 
@@ -37,9 +38,9 @@ Viele traditionelle Modelle für den IT-Betrieb sind nicht mit der Cloud kompati
 
 <!-- cSpell:ignore PlatformOps SecOps NetOps AppDevOps AppDataOps AppSecOps -->
 
-**Entwurfsempfehlungen:**
+### <a name="design-recommendations"></a>Entwurfsempfehlungen
 
-Richten Sie ein funktionsübergreifendes DevOps Plattformteam ein, um Ihre unternehmensweite Architektur aufzubauen, zu verwalten und zu warten. Diesem Team sollten Mitglieder aus Ihrem zentralen IT-Team, aus Sicherheits- und Complianceteams sowie aus Geschäftseinheiten angehören, um sicherzustellen, dass ein möglichst umfassendes Spektrum Ihres Unternehmens abgebildet wird. Die nachstehende Liste zeigt einen empfohlenen DevOps-Rollensatz für ein zentrales Plattformteam:
+Richten Sie ein funktionsübergreifendes DevOps Plattformteam ein, um Ihre unternehmensweite Architektur aufzubauen, zu verwalten und zu warten. Diesem Team sollten Mitglieder aus Ihrem zentralen IT-Team, aus Sicherheits- und Complianceteams sowie aus Geschäftseinheiten angehören, um sicherzustellen, dass ein möglichst umfassendes Spektrum Ihres Unternehmens abgebildet wird. Die folgende Liste zeigt einen empfohlenen DevOps-Rollensatz für ein zentrales Plattformteam:
 
 - **PlatformOps** (Platform Operations) für:
 
@@ -65,11 +66,9 @@ Richten Sie ein funktionsübergreifendes DevOps Plattformteam ein, um Ihre unter
 
 - **NetOps** (Network Operations)
 
-- Netzwerkverwaltung (ganzheitlich)
+  - Netzwerkverwaltung (ganzheitlich)
 
-- Ermöglicht App-Besitzern das Erstellen und Verwalten von App-Ressourcen über ein DevOps-Modell. Die Liste unten zeigt die empfohlenen DevOps-Rollen für Anwendungsteams:
-
-- **AppDevOps**
+- **AppDevOps** Ermöglicht App-Besitzern das Erstellen und Verwalten von App-Ressourcen über ein DevOps-Modell. Die folgende Liste zeigt die empfohlenen DevOps-Rollen für Anwendungsteams:
 
   - App-Migration oder -Transformation
 
@@ -83,33 +82,33 @@ Richten Sie ein funktionsübergreifendes DevOps Plattformteam ein, um Ihre unter
 
   - Netzwerkverwaltung (App-Ressourcen)
 
-  - In einigen Fällen möchten Sie AppDevOps möglicherweise in feiner abgestuften Rollen aufteilen, z. B. AppDataOps für die Datenbankverwaltung mit traditionellen Datenbankadministratorrollen oder AppSecOps, wenn es sich um Anwendungen mit höheren Sicherheitsanforderungen handelt.
+  - In einigen Fällen möchten Sie AppDevOps vielleicht in differenziertere Rollen aufteilen, z. B. AppDataOps für die Datenbankverwaltung oder AppSecOps für sicherheitsrelevantere Apps.
 
-- Stellen Sie eine zentrale App-DevOps-Funktion zur Unterstützung von Apps bereit, für die weder DevOps-Fähigkeiten vorhanden sind noch ein Geschäftsfall vorliegt, um diese Fähigkeiten bereitzustellen (z. B. Legacy-Apps mit minimalem Entwicklungsbedarf).
+  - Stellen Sie eine zentrale App-DevOps-Funktion zur Unterstützung von Apps bereit, für die weder DevOps-Fähigkeiten vorhanden sind noch ein Geschäftsfall vorliegt, um diese Fähigkeiten bereitzustellen (z. B. Legacy-Apps mit minimalem Entwicklungsbedarf).
 
-- Verwenden Sie einen richtliniengestützten Ansatz mit klaren RBAC-Grenzen, um über Anwendungsteams hinweg Konsistenz und Sicherheit zu erzwingen. So wird sichergestellt, dass durch eine Kombination von RBAC-Zuweisungen und Azure Policy ein Ansatz der geringsten Rechte verfolgt wird und die Workloads jederzeit mit den Azure Policy-Zuweisungen konform sind.
+  - Verwenden Sie einen richtliniengestützten Ansatz mit klaren RBAC-Grenzen, um über Anwendungsteams hinweg Konsistenz und Sicherheit zu erzwingen. So wird sichergestellt, dass durch eine Kombination von RBAC-Zuweisungen und Azure Policy ein Ansatz der geringsten Rechte verfolgt wird und die Workloads jederzeit mit den Azure Policy-Zuweisungen konform sind.
 
-- Für eine beschleunigte Einführung von Azure sollte das zentrale Plattformteam einen gemeinsamen Satz mit Vorlagen und Bibliotheken erstellen, auf die die Anwendungsteams zurückgreifen können. Beispielsweise kann ein funktionsübergreifender Leitfaden dazu beitragen, Migrationen durch Fachbereichskompetenz zu unterstützen und eine Ausrichtung auf die gesamte Zielarchitektur auf Unternehmensebene zu gewährleisten.
+  - Für eine beschleunigte Einführung von Azure sollte das zentrale Plattformteam einen gemeinsamen Satz mit Vorlagen und Bibliotheken erstellen, auf die die Anwendungsteams zurückgreifen können. Beispielsweise kann ein funktionsübergreifender Leitfaden dazu beitragen, Migrationen durch Fachbereichskompetenz zu unterstützen und eine Ausrichtung auf die gesamte Zielarchitektur auf Unternehmensebene zu gewährleisten.
 
-- Beschränken Sie die Anwendungsteams nicht auf die Verwendung zentraler Artefakte oder Ansätze, da dies die Flexibilität einschränkt. Konsistente Baselinekonfigurationen können über einen richtliniengesteuerten Infrastrukturansatz und RBAC-Zuweisungen erzwungen werden. Dadurch wird sichergestellt, dass App-Teams (Geschäftseinheiten) flexibel genug sind, um Innovationen voranzutreiben, während gleichzeitig ein vordefinierter Satz mit Vorlagen genutzt wird.
+  - Beschränken Sie die Anwendungsteams nicht auf die Verwendung zentraler Artefakte oder Ansätze, da dies ihre Flexibilität einschränkt. Sie können konsistente Baselinekonfigurationen über einen richtliniengesteuerten Infrastrukturansatz und RBAC-Zuweisungen erzwingen. Dadurch wird sichergestellt, dass App-Teams (Geschäftseinheiten) flexibel genug sind, um Innovationen voranzutreiben, während gleichzeitig ein vordefinierter Satz mit Vorlagen genutzt wird.
 
-- Zwingen Sie die Anwendungsteams nicht, einen zentralen Prozess oder eine zentrale Bereitstellungspipeline für die Instanziierung oder Verwaltung von App-Ressourcen zu verwenden. So ist sichergestellt, dass bestehende Teams, die bereits eine DevOps-Pipeline für die App-Bereitstellung nutzen, weiterhin dieselben Tools einsetzen können. Denken Sie daran, dass Sie weiterhin Azure Policy nutzen können, um Leitlinien festzulegen – unabhängig davon, wie Ressourcen in Azure eingesetzt werden.
+  - Zwingen Sie die Anwendungsteams nicht, einen zentralen Prozess oder eine zentrale Bereitstellungspipeline für die Instanziierung oder Verwaltung von App-Ressourcen zu verwenden. Bestehende Teams, die bereits eine DevOps-Pipeline für die App-Bereitstellung nutzen, sollten weiterhin dieselben Tools einsetzen können. Denken Sie daran, dass Sie weiterhin Azure Policy nutzen können, um Leitlinien festzulegen – unabhängig davon, wie Ressourcen in Azure eingesetzt werden.
 
 ## <a name="define-central-and-federated-responsibilities"></a>Definieren von zentralen und dezentralen Zuständigkeiten
 
 Die Verteilung von Rollen, Zuständigkeiten und Vertrauensbeziehungen zwischen zentralen IT-Teams und App-Teams ist von entscheidender Bedeutung für die operativen Veränderungen, die Ihre Organisation bei der Einführung der Cloud im großen Stil durchlaufen müssen.
 
-**Überlegungen zum Entwurf:**
+### <a name="design-considerations"></a>Überlegungen zum Entwurf
 
 Die zentralen Teams sind bestrebt, die vollständige Kontrolle zu behalten, während App-Besitzer versuchen, die Agilität zu maximieren. Die Balance zwischen diesen Zielen kann erheblichen Einfluss auf den Erfolg der Migration haben.
 
-**Entwurfsempfehlungen:**
+### <a name="design-recommendations"></a>Entwurfsempfehlungen
 
-Die folgende Liste zeigt eine empfohlene Verteilung der Zuständigkeiten zwischen dem zentralen IT-Team und den Anwendungsteams, die darauf abzielt, Migrations-/Transformationsaktivitäten mit minimalen zentralen Abhängigkeiten zu ermöglichen und gleichzeitig die zentrale Steuerung von Sicherheit und Betriebsfähigkeit im gesamten Unternehmen zu unterstützen.
+Die folgende Liste enthält eine empfohlene Verteilung der Zuständigkeiten zwischen dem zentralen IT-Team und den Anwendungsteams. Sie sind bestrebt, Migrations- und Transformationsaktivitäten mit minimalen zentralen Abhängigkeiten zu ermöglichen. Gleichzeitig möchten Sie die zentralisierte Governance von Sicherheit und Betriebsfähigkeit für die gesamte Umgebung unterstützen.
 
 - **App-Funktionen**
 
-  - App-Migration und/oder -Transformation
+  - App-Migration und -Transformation
 
   - App-Verwaltung und -Überwachung (App-Ressourcen)
 
@@ -129,7 +128,7 @@ Die folgende Liste zeigt eine empfohlene Verteilung der Zuständigkeiten zwische
 
   - Abonnementverwaltung
 
-  - **Platform-as-Code** (Verwaltung von Vorlagen, Skripts und anderen Ressourcen)
+  - Platform-as-Code (Verwaltung von Vorlagen, Skripts und anderen Ressourcen)
 
   - Richtlinienverwaltung und -erzwingung (ganzheitlich)
 
@@ -139,7 +138,7 @@ Die folgende Liste zeigt eine empfohlene Verteilung der Zuständigkeiten zwische
 
   - Schlüsselverwaltung (zentrale Dienste)
 
-  - Netzwerkverwaltung (Netzwerke, virtuelle Netzwerkappliances und mehr)
+  - Netzwerkverwaltung (einschließlich Netzwerken und virtuellen Netzwerkgeräten)
 
   - Sicherheitsüberwachung (ganzheitlich)
 

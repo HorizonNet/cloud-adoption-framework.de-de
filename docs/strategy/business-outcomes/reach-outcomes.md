@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 400c1edef752621adbde85ee26cca2445a3367af
-ms.sourcegitcommit: d31a9043d1ae9283ed126bf118ca26d1d18d6948
+ms.openlocfilehash: 280281d28677b787e4d3dba1946f642d6df72d2b
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88040924"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88196157"
 ---
 <!-- cSpell:ignore Personalizer -->
 <!-- docsTest:ignore "global reach" -->
@@ -29,13 +29,13 @@ Bei Cloudlösungen werden die Kosten für die Globalisierung an den Cloudanbiete
 
 Die Erschließung eines neuen Markts kann während einer Transformation eines der wichtigsten Geschäftsergebnisse sein. Durch die Möglichkeit einer schnellen Bereitstellung von Ressourcen ohne längerfristige Verpflichtung in einem Markt können leitende Vertriebs- und Betriebsmitarbeiter Optionen erkunden, die in der Vergangenheit nicht einmal in Erwägung gezogen worden wären.
 
-### <a name="example"></a>Beispiel
+### <a name="manufacturing-example"></a>Beispiel für Fertigung
 
-Ein Kosmetikhersteller hat einen Trend entdeckt. Einige Produkte werden in die Region Asien-Pazifik geliefert, obwohl dort keine Vertriebsteams arbeiten. Die Mindestanforderungen an die Systeme für Außendienstmitarbeiter sind zwar niedrig, aber die Latenz verhindert eine RAS-Lösung. Der Vice President des Vertriebsteams möchte ein Experiment mit Vertriebsteams in Japan und Südkorea starten, um trotzdem von diesem Trend profitieren zu können. Da das Unternehmen bereits zur Cloud migriert ist, konnte es die erforderlichen Systeme in Japan und Südkorea innerhalb weniger Tage bereitstellen. So konnte der Vertriebsleiter den Umsatz in der Region innerhalb von drei Monaten um _x %_ steigern. Diese beiden Märkte übertreffen andere Regionen auf der Welt auch weiterhin und führen zu Vertriebschancen in der gesamten Region.
+Ein Kosmetikhersteller hat einen Trend entdeckt. Einige Produkte werden in die Region Asien-Pazifik geliefert, obwohl dort keine Vertriebsteams arbeiten. Die Mindestanforderungen an die Systeme für Außendienstmitarbeiter sind zwar niedrig, aber die Latenz verhindert eine RAS-Lösung. Der Vice President des Vertriebsteams möchte ein Experiment mit Vertriebsteams in Japan und Südkorea starten, um trotzdem von diesem Trend profitieren zu können. Da das Unternehmen bereits zur Cloud migriert ist, konnte es die erforderlichen Systeme in Japan und Südkorea innerhalb weniger Tage bereitstellen. So konnte der Vertriebsleiter den Umsatz in der Region innerhalb von drei Monaten um *x %* steigern. Diese beiden Märkte übertreffen andere Regionen auf der Welt auch weiterhin und führen zu Vertriebschancen in der gesamten Region.
 
-### <a name="example"></a>Beispiel
+### <a name="retail-example"></a>Beispiel für Einzelhandel
 
-Ein Onlinehändler, der Produkte global versendet, kann mit seinen Kunden in verschiedenen Zeitzonen und in mehreren Sprachen zusammenarbeiten. Der Einzelhändler verwendet den Azure Bot Service und verschiedene Features in Azure Cognitive Services wie beispielsweise Übersetzer, Language Understanding (LUIS), den QnA Maker und die Textanalyse. So erhalten Kunden die benötigten Informationen zum richtigen Zeitpunkt in ihrer Sprache. Der Einzelhändler nutzt die [Personalisierung](https://azure.microsoft.com/services/cognitive-services/personalizer/), um die Benutzeroberfläche und die Katalogangebote nach den regionalen Vorlieben der Kunden weiter anzupassen und die Verfügbarkeit sicherzustellen.
+Ein Onlinehändler, der Produkte global versendet, kann mit seinen Kunden in verschiedenen Zeitzonen und in mehreren Sprachen zusammenarbeiten. Der Einzelhändler verwendet den Azure Bot Service und verschiedene Features in Azure Cognitive Services wie beispielsweise Übersetzer, Language Understanding (LUIS), den QnA Maker und die Textanalyse. So erhalten Kunden die benötigten Informationen zum richtigen Zeitpunkt in ihrer Sprache. Der Einzelhändler passt die Benutzeroberfläche und die Katalogangebote nach den regionalen Vorlieben und um die Verfügbarkeit sicherzustellen mit dem Dienst [Personalisierung](https://azure.microsoft.com/services/cognitive-services/personalizer/) für seine Kunden weiter an.
 
 ## <a name="data-sovereignty"></a>Datenhoheit
 

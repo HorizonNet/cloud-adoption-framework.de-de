@@ -1,5 +1,5 @@
 ---
-title: Bestand und Transparenz in Azure
+title: Bestand und Transparenz bei der Azure-Cloudverwaltung
 description: Es wird beschrieben, was verwaltet wird (Bestand) und wie sich die verwalteten Workloads und Ressourcen im Laufe der Zeit ändern (Transparenz).
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: b3998f05afa4bd0b8e0fe972674d84318ff63ac4
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: c4103fac5729e0ae757ca89ce6ae1574119af927
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075385"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571574"
 ---
 # <a name="inventory-and-visibility-in-cloud-management"></a>Bestand und Transparenz bei der Cloudverwaltung
 
@@ -112,7 +112,7 @@ Offlineprozesse und die Kommunikation über Verpflichtungen gegenüber den Fachb
 
 ### <a name="it-service-management-itsm-integration"></a>ITSM-Integration (IT-Service-Management)
 
-Die ITSM-Integration ist oft das erste Beispiel für Maßnahmen in Bezug auf Bestand und Transparenz. Wenn Abweichungen von erwarteten Leistungsmustern auftreten, verwendet die ITSM-Integration Warnmeldungen der Cloudplattform, um Tickets in einem separaten Service-Management-Tool zum Einleiten von Abhilfemaßnahmen auszulösen. Einige Betriebsmodelle erfordern ggf. die ITSM-Integration als Aspekt der erweiterten Verwaltungsbaseline.
+Die ITSM-Integration ist oft das erste Beispiel für Maßnahmen in Bezug auf Bestand und Transparenz. Wenn Abweichungen von erwarteten Leistungsmustern auftreten, verwendet die ITSM-Integration Warnmeldungen der Cloudplattform, um Tickets in einem separaten IT-Service-Management-Tool zum Einleiten von Abhilfemaßnahmen auszulösen. Einige Betriebsmodelle erfordern ggf. die ITSM-Integration als Aspekt der erweiterten Verwaltungsbaseline.
 
 ### <a name="data-centralization"></a>Zentralisierung von Daten
 
