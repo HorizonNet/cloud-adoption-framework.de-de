@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 5e9ac42087394f532e508e5d1be6a1119c3f8b9e
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 9c103dc269de19880d179c07ecc6ca633388d3c8
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85075641"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573818"
 ---
 # <a name="get-started-build-a-cloud-strategy-team"></a>Erste Schritte: Zusammenstellen eines Cloudstrategieteams
 
@@ -25,7 +25,7 @@ Unabhängig davon, für welchen Ansatz Sie sich entscheiden, sollten Sie ein Clo
 ![Erste Schritte beim Aufbau eines Cloudeinführungsteams](../../_images/get-started/strategy-team-map.png)
 
 > [!NOTE]
-> In diesem Artikel wird ein _Strategievermittler_ beschrieben, ein wichtiger Player im Cloudeinführungsprozess. Diese Rolle wird häufig von einem Programmmanager, Architekten oder Berater übernommen. Wenn sich das Cloudstrategieteam zusammenfindet und mit seiner Arbeit beginnt, ist der Strategievermittler vorübergehend für das Erstellen von Vorgaben und das Ausrichten des Teams an den Geschäftszielen verantwortlich. Oft ist der Strategievermittler hauptverantwortlich für den Erfolg der Cloudeinführungsjourney.
+> In diesem Artikel wird ein *Strategievermittler* beschrieben, ein wichtiger Player im Cloudeinführungsprozess. Diese Rolle wird häufig von einem Programmmanager, Architekten oder Berater übernommen. Wenn sich das Cloudstrategieteam zusammenfindet und mit seiner Arbeit beginnt, ist der Strategievermittler vorübergehend für das Erstellen von Vorgaben und das Ausrichten des Teams an den Geschäftszielen verantwortlich. Oft ist der Strategievermittler hauptverantwortlich für den Erfolg der Cloudeinführungsjourney.
 
 ## <a name="step-1-determine-whether-a-cloud-strategy-team-is-needed"></a>Schritt 1: Ermitteln, ob ein Cloudstrategieteam erforderlich ist
 
@@ -55,7 +55,7 @@ Wenn einer oder alle der oben genannten Gründe Ihre bestehenden geschäftlichen
 
 ## <a name="what-if-i-dont-need-a-cloud-strategy-team"></a>Wie gehe ich vor, wenn ich kein Cloudstrategieteam benötige?
 
-Überprüfen Sie die [Funktionen für die Cloudstrategie](../../organize/cloud-strategy.md), die zur Umsetzung der Anforderungen der Cloudstrategie erforderlich sind. Nicht jede Organisation benötigt ein dediziertes oder virtuelles Team (V-Team), um ihre strategischen Anforderungen zu erfüllen. Listen Sie in der [RACI-Vorlage](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) (Responsible, Accountable, Consulted und Informed) die wichtigsten Verantwortlichkeiten in Bezug auf die Strategie auf, und bestimmen Sie für jede eine verantwortliche Person in Ihrem Team. Falls eine Person alle dieser Aufgaben übernimmt, ersetzen Sie in der RACI-Vorlage einfach „Cloudstrategie“ durch den Namen der betreffenden Person.
+Überprüfen Sie die [Funktionen für die Cloudstrategie](../../organize/cloud-strategy.md), die zur Umsetzung der Anforderungen der Cloudstrategie erforderlich sind. Nicht jede Organisation benötigt ein dediziertes oder virtuelles Team (V-Team), um ihre strategischen Anforderungen zu erfüllen. Listen Sie in der [RACI-Vorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx) (Responsible, Accountable, Consulted und Informed) die wichtigsten Verantwortlichkeiten in Bezug auf die Strategie auf, und bestimmen Sie für jede eine verantwortliche Person in Ihrem Team. Falls eine Person alle dieser Aufgaben übernimmt, ersetzen Sie in der RACI-Vorlage einfach „Cloudstrategie“ durch den Namen der betreffenden Person.
 
 ## <a name="step-2-establish-the-cloud-strategy-team"></a>Schritt 2: Zusammenstellen eines Cloudstrategieteams
 
@@ -71,7 +71,7 @@ Das Cloudstrategieteam fungiert als Anlaufstelle für die wiederkehrende Abstimm
 - Sehen Sie sich die [Funktionen der Cloudstrategie](../../organize/cloud-strategy.md) an, um sich Ideen zu holen, wer gut geeignet sein könnte.
 - Bewerten Sie den [minimalen Projektumfang](../../organize/cloud-strategy.md#minimum-scope) und die [Zielvorgaben](../../organize/cloud-strategy.md#deliverable) für diese Funktionen, um die Ausrichtung und Bandbreite jedes möglichen Teilnehmers zu überprüfen.
 - Um das richtige RACI-Diagramm auf der Grundlage Ihrer aktuellen Teamstrukturen zu erstellen, sehen Sie sich die verschiedenen [RACI-Konfigurationsbeispiele](../../organize/raci-alignment.md#strategic-alignment) an, oder wählen Sie eine der Beispielregisterkarten am unteren Rand der RACI-Vorlage aus.
-- Dokumentieren Sie die Ergebnisse in der [RACI-Vorlage](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) auf dem Arbeitsblatt `Org Alignment`.
+- Dokumentieren Sie die Ergebnisse in der [RACI-Vorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx) auf dem Arbeitsblatt `Org Alignment`.
 
 **Verantwortliche Person oder verantwortliches Team:**
 
@@ -107,7 +107,7 @@ Die Gespräche, die Sie in diesem Schritt führen, können dazu beitragen, einen
 
 **Ziele:**
 
-- Dokumentieren Sie die Beweggründe in der [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx).
+- Dokumentieren Sie die Beweggründe in der [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx).
 
 **Hinweis zur Erreichung der Ziele:**
 
@@ -136,7 +136,7 @@ Es kann einige Zeit dauern, bis sich Auswirkungen auf Geschäftsergebnisse bemer
 
 **Hinweis zur Erreichung der Ziele:**
 
-- Dokumentieren Sie die Geschäftsergebnisse in der [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx).
+- Dokumentieren Sie die Geschäftsergebnisse in der [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx).
 - [Geschäftsergebnisse](../../strategy/business-outcomes/index.md): Einige fiskalische Ergebnisse neigen dazu, extrem kostensensibel zu sein. Wenn sich die gewünschten Ergebnisse Finanzmetriken zuordnen lassen, kann es sinnvoll sein, frühzeitig in die Governancedisziplin „Cost Management“ zu investieren.
 - [Lernmetriken](../../strategy/learning-metrics.md) helfen dabei, die Lücke zwischen Geschäftsergebnissen und technischer Akzeptanz zu schließen.
 
@@ -195,4 +195,4 @@ Strategie und Planung sind wichtig. Erst wenn Sie die Funktionen zur Einführung
 
 Richten Sie Ihre Strategie an den [Cloudeinführungsfunktionen](../../organize/cloud-adoption.md) aus, indem Sie mit dem Einführungsteam oder den einzelnen Verantwortlichen für diese Funktionen zusammenarbeiten.
 
-Lernen Sie, die Verantwortlichkeiten in den Teams aufeinander abzustimmen, indem Sie eine teamübergreifende Matrix entwickeln, die die RACI-Parteien identifiziert. Laden Sie die [RACI-Tabellenvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) herunter, und passen Sie sie an.
+Lernen Sie, die Verantwortlichkeiten in den Teams aufeinander abzustimmen, indem Sie eine teamübergreifende Matrix entwickeln, die die RACI-Parteien identifiziert. Herunterladen und Ändern der [RACI-Vorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx).

@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: da60b9a2844c612f5c712f23cacabd30fbc06655
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: d0822a927afc5d316b97d227b5a2a9afec60e224
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194951"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88566678"
 ---
 <!-- cSpell:ignore MSPs -->
 
@@ -76,6 +76,14 @@ Bei einem typischen FastTrack for Azure-Einsatz hilft Microsoft dabei, die gesch
 
 Das [Azure-Migrationsprogramm (AMP)](https://azure.microsoft.com/migration/migration-program) bietet eine Mischung aus dem Erwerben technischer Qualifikationen, aus Schritt-für-Schritt-Anleitungen, kostenlosen Migrationstools und potenziellen Angeboten zur Senkung der Migrationskosten.
 Das Programm nutzt FastTrack for Azure und Azure-Lösungsanbieter, um den Kundenerfolg während der Migration zu verbessern.
+
+Sehen Sie sich dieses kurze Video an, um eine Übersicht darüber zu erhalten, wie das Azure-Migrationsprogramm Ihnen helfen kann.
+
+<!-- markdownlint-disable MD034 -->
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4D1vH]
+
+<!-- markdownlint-enable MD034 -->
 
 ### <a name="azure-support"></a>Azure-Support
 

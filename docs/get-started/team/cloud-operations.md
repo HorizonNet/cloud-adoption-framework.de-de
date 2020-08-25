@@ -1,18 +1,18 @@
 ---
 title: 'Erste Schritte: Aufbauen eines Cloudbetriebsteams'
-description: Anhand dieses Leitfadens kann ein Cloudbetriebsteam den Projektumfang sowie die Ziele und Funktionen nachvollziehen, für die es verantwortlich ist.
+description: Anhand dieses Leitfadens kann ein Cloudbetriebsteam den Projektumfang sowie die Ziele und Funktionen nachvollziehen, für die das Team verantwortlich ist.
 author: JanetCThomas
 ms.author: janet
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: ed6a3c8e0356b904a3114382b674aafbcc2f7dac
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: b609163e6e6239cc0b346842358ab83799630b02
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450406"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573852"
 ---
 # <a name="get-started-build-a-cloud-operations-team"></a>Erste Schritte: Aufbauen eines Cloudbetriebsteams
 
@@ -29,7 +29,7 @@ Sollten keine DevOps- oder Dienstanbietervereinbarungen für den Betrieb vorlieg
 **Ziele:**
 
 - Ermitteln, ob ein Cloudbetriebsteam benötigt wird.
-- Zuordnen übergreifender Zuständigkeiten für Teams, indem eine sogenannte RACI-Matrix entwickelt und damit bestimmt wird, welche Teams _verantwortlich sind (responsible), rechenschaftspflichtig sind (accountable), konsultiert werden (consulted) und zu informieren sind (informed)_ . Dokumentieren der Entscheidung und der verantwortlichen Personen in der [RACI-Vorlage](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) im Arbeitsblatt `Org Alignment`.
+- Zuordnen übergreifender Zuständigkeiten für Teams, indem eine sogenannte RACI-Matrix entwickelt und damit bestimmt wird, welche Teams *verantwortlich sind (responsible), rechenschaftspflichtig sind (accountable), konsultiert werden (consulted) und zu informieren sind (informed)* . Dokumentieren der Entscheidung und der verantwortlichen Personen in der [RACI-Vorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx) im Arbeitsblatt `Org Alignment`.
 
 **Hinweis zur Erreichung der Ziele:**
 
@@ -54,8 +54,8 @@ Bevor das Cloudbetriebsteam laufende Betriebspraktiken implementiert, ist es wic
 
 **Hinweis zur Erreichung der Ziele:**
 
-- Sehen Sie sich gemeinsam mit Mitgliedern des Cloudstrategieteams die [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx) Ihres Unternehmens an, um sich über Beweggründe des Teams und Metriken sowie über die Strategie zu informieren.
-- Sehen Sie sich gemeinsam mit Mitgliedern des Cloudeinführungsteams die [Vorlage für den Cloudeinführungsplan](../../plan/template.md) Ihres Unternehmens an, um sich mit dem Zeitplan und den Prioritäten vertraut zu machen.
+- Sehen Sie sich gemeinsam mit Mitgliedern des Cloudstrategieteams die [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) Ihres Unternehmens an, um sich über Beweggründe des Teams und Metriken sowie über die Strategie zu informieren.
+- Sehen Sie sich gemeinsam mit Mitgliedern des Cloudeinführungsteams den [Cloudeinführungsplan](../../plan/template.md) Ihres Unternehmens an, um sich mit dem Zeitplan und den Prioritäten vertraut zu machen.
 - Beginnen Sie mit der Ausarbeitung der [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx), um die betriebsbezogenen Anforderungen und Verpflichtungen des Teams für das Unternehmen nachzuvollziehen.
 
 <!-- markdownlint-disable MD033 -->
@@ -63,7 +63,7 @@ Bevor das Cloudbetriebsteam laufende Betriebspraktiken implementiert, ist es wic
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li>  Cloudbetriebsteam | <li> Cloudstrategieteam <li> Cloudeinführungsteam <li> Cloudgovernanceteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
+| <li> Cloudbetriebsteam | <li> Cloudstrategieteam <li> Cloudeinführungsteam <li> Cloudgovernanceteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
 
 ## <a name="step-3-establish-a-cadence-with-other-teams"></a>Schritt 3: Festlegen eines gemeinsamen Rhythmus mit anderen Teams
 
@@ -185,7 +185,7 @@ Wenn neue Einführungsmaßnahmen abgeschlossen werden, überträgt das Cloudeinf
 
 **Hinweis zur Erreichung der Ziele:**
 
-- Legen Sie einen Prozess für das [Durchführen des Onboardings für neue Workloads und Ressourcen](https://docs.microsoft.com/azure/azure-resource-manager/custom-providers/concepts-resource-onboarding) fest.
+- Legen Sie einen Prozess für das [Durchführen des Onboardings für neue Workloads und Ressourcen](/azure/azure-resource-manager/custom-providers/concepts-resource-onboarding) fest.
 
 <!-- markdownlint-disable MD033 -->
 
@@ -202,4 +202,4 @@ Weitere Informationen:
 - [CCoE-Funktionen (Cloud Center of Excellence, Cloudkompetenzzentrum)](../../organize/cloud-center-of-excellence.md)
 - [Antimuster in Unternehmen: Silos und Machtbereiche](../../organize/fiefdoms-silos.md)
 
-Abstimmen von Verantwortlichkeiten in den Teams, indem eine teamübergreifende Matrix entwickelt wird, die die RACI-Parteien identifiziert. Laden Sie die [RACI-Tabellenvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) herunter, und passen Sie sie an.
+Abstimmen von Verantwortlichkeiten in den Teams, indem eine teamübergreifende Matrix entwickelt wird, die die RACI-Parteien identifiziert. Herunterladen und Ändern der [RACI-Vorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx).

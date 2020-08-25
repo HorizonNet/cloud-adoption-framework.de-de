@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: ea53df3a8d349299e08ecc0681b4dd24dc71336a
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: b4e8202eb06ff3e15990a71563747036430ad459
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86448213"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574396"
 ---
 <!-- docsTest:ignore "CAF Foundation blueprint" -->
 
@@ -22,10 +22,10 @@ Mit der CAF-Basisblaupause wird keine Zielzone bereitgestellt. Stattdessen werde
 
 ## <a name="deploy-the-blueprint"></a>Bereitstellen der Blaupause
 
-Bevor Sie die CAF-Basisblaupause im Cloud Adoption Framework verwenden, machen Sie sich mit den folgenden Entwurfsprinzipien, Annahmen, Entscheidungen und Leitlinien für die Implementierung vertraut. Wenn diese Anleitung dem gewünschten Cloudeinführungsplan entspricht, kann die [CAF-Basisblaupause](https://docs.microsoft.com/azure/governance/blueprints/samples/caf-foundation) über die [Bereitstellungsschritte][deploy-sample] bereitgestellt werden.
+Bevor Sie die CAF-Basisblaupause im Cloud Adoption Framework verwenden, machen Sie sich mit den folgenden Entwurfsprinzipien, Annahmen, Entscheidungen und Leitlinien für die Implementierung vertraut. Wenn diese Anleitung dem gewünschten Cloudeinführungsplan entspricht, kann die [CAF-Basisblaupause](/azure/governance/blueprints/samples/caf-foundation) über die Bereitstellungsschritte bereitgestellt werden.
 
 > [!div class="nextstepaction"]
-> [Bereitstellen des Blaupausenbeispiels][deploy-sample]
+> [Bereitstellen des Blaupausenbeispiels](/azure/governance/blueprints/samples/caf-foundation/deploy)
 
 ## <a name="design-principles"></a>Entwurfsprinzipien
 
@@ -41,11 +41,11 @@ Diese Implementierungsoption nimmt hinsichtlich der Unternehmensregistrierung ke
 
 ### <a name="identity"></a>Identity
 
-Bei dieser Implementierungsoption wird davon ausgegangen, dass das Zielabonnement in Einklang mit [bewährten Methoden der Identitätsverwaltung](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) bereits einer Azure Active Directory-Instanz zugeordnet ist.
+Bei dieser Implementierungsoption wird davon ausgegangen, dass das Zielabonnement in Einklang mit [bewährten Methoden der Identitätsverwaltung](/azure/security/fundamentals/identity-management-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json) bereits einer Azure Active Directory-Instanz zugeordnet ist.
 
 ### <a name="network-topology-and-connectivity"></a>Netzwerktopologie und -konnektivität
 
-Bei dieser Implementierungsoption wird davon ausgegangen, dass die Zielzone bereits über eine definierte Netzwerktopologie verfügt, die den [bewährten Methoden für die Netzwerksicherheit](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) entspricht.
+Bei dieser Implementierungsoption wird davon ausgegangen, dass die Zielzone bereits über eine definierte Netzwerktopologie verfügt, die den [bewährten Methoden für die Netzwerksicherheit](/azure/security/fundamentals/network-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json) entspricht.
 
 ### <a name="resource-organization"></a>Ressourcenorganisation
 
@@ -69,7 +69,7 @@ Mit dieser Implementierung wird eine Vorgehensweise für eine ausgereifte Cost M
 Informationen zur parallelen Entwicklung der anderen Governancedisziplinen finden Sie im Abschnitt zur [Governancemethodik](../../govern/index.md). Wenn Sie die Governancedisziplin „Cost Management“ weiter verbessern möchten, finden Sie unter [Verbessern der Disziplin „Cost Management“](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices) weitere Informationen.
 
 > [!WARNING]
-> Mit der Weiterentwicklung der Governancedisziplinen ist möglicherweise ein Refactoring erforderlich. Möglicherweise ist ein Refactoring erforderlich. Insbesondere müssen Ressourcen später gegebenenfalls [in ein neues Abonnement oder eine neue Ressourcengruppe verschoben werden](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json).
+> Mit der Weiterentwicklung der Governancedisziplinen ist möglicherweise ein Refactoring erforderlich. Möglicherweise ist ein Refactoring erforderlich. Insbesondere müssen Ressourcen später gegebenenfalls [in ein neues Abonnement oder eine neue Ressourcengruppe verschoben werden](/azure/azure-resource-manager/management/move-resource-group-and-subscription?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json).
 
 ### <a name="operations-baseline"></a>Betriebsbaseline
 
@@ -78,7 +78,7 @@ Bei dieser Implementierungsoption werden keine Aspekte der Betriebsbaseline impl
 Informationen zur parallelen Entwicklung einer Betriebsbaseline finden Sie im Artikel zur [Verwaltungsmethodik](../../manage/index.md). Erwägen Sie außerdem die Bereitstellung des [Azure-Serververwaltungsleitfadens](../../manage/azure-server-management/index.md).
 
 > [!WARNING]
-> Mit der Weiterentwicklung der Betriebsbaseline ist möglicherweise ein Refactoring erforderlich. Insbesondere müssen Ressourcen später gegebenenfalls [in ein neues Abonnement oder eine neue Ressourcengruppe verschoben werden](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json).
+> Mit der Weiterentwicklung der Betriebsbaseline ist möglicherweise ein Refactoring erforderlich. Insbesondere müssen Ressourcen später gegebenenfalls [in ein neues Abonnement oder eine neue Ressourcengruppe verschoben werden](/azure/azure-resource-manager/management/move-resource-group-and-subscription?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json).
 
 ### <a name="business-continuity-and-disaster-recovery-bcdr"></a>Geschäftskontinuität und Notfallwiederherstellung (Business Continuity Disaster Recovery, BCDR)
 
@@ -95,18 +95,14 @@ Wenn diese Annahmen mit Ihren aktuellen Anforderungen in Bezug auf die Einführu
 
 ## <a name="customize-or-deploy-this-blueprint"></a>Anpassen oder Bereitstellen dieser Blaupause
 
-Erfahren Sie mehr, und laden Sie ein Referenzbeispiel der CAF-Basisblaupause für die Bereitstellung oder Anpassung von [Azure-Blaupausenbeispielen][deploy-sample] herunter.
+Erfahren Sie mehr, und laden Sie ein Referenzbeispiel der CAF-Basisblaupause für die Bereitstellung oder Anpassung der Azure-Blaupausenbeispiele herunter.
 
 > [!div class="nextstepaction"]
-> [Bereitstellen des Blaupausenbeispiels][deploy-sample]
+> [Bereitstellen des Blaupausenbeispiels](/azure/governance/blueprints/samples/caf-foundation/deploy)
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nach dem Bereitstellen Ihrer ersten Zielzone können Sie Ihre [Zielzone erweitern](../considerations/index.md).
+Nach dem Bereitstellen Ihrer ersten Zielzone können Sie Ihre Zielzone erweitern.
 
 > [!div class="nextstepaction"]
 > [Erweitern der Zielzone](../considerations/index.md)
-
-<!-- links -->
-
-[Deploy-sample]: https://docs.microsoft.com/azure/governance/blueprints/samples/caf-foundation/deploy

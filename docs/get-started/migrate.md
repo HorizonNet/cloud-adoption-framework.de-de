@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 2e20b63bed8ef337f89546049632dd2c8babf539
-ms.sourcegitcommit: 84d7bfd11329eb4c151c4c32be5bab6c91f376ed
+ms.openlocfilehash: 95c6932660e578273bab70e70ffac00bfb8cfc61
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "86233544"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569364"
 ---
 # <a name="get-started-accelerate-migration"></a>Erste Schritte: Beschleunigen der Migration
 
@@ -29,7 +29,7 @@ Verwenden Sie diesen Leitfaden, um die Anzahl an Materialien und die Prozesse zu
 
 ![Erste Schritte bei der Migration in Azure](../_images/get-started/migration-map.png)
 
-Wenn Ihr Migrationsszenario atypisch ist, können Sie eine personalisierte Bewertung der Migrationsbereitschaft Ihrer Organisation erhalten, indem Sie die [SMART-Bewertung (Strategic Migration and Readiness Tool)](https://docs.microsoft.com/assessments/?id=strategic-migration-assessment) verwenden. Verwenden Sie diese, um den Leitfaden zu identifizieren, der Ihren aktuellen Anforderungen am besten entspricht.
+Wenn Ihr Migrationsszenario atypisch ist, können Sie eine personalisierte Bewertung der Migrationsbereitschaft Ihrer Organisation erhalten, indem Sie die [SMART-Bewertung (Strategic Migration and Readiness Tool)](/assessments/?id=strategic-migration-assessment) verwenden. Verwenden Sie diese, um den Leitfaden zu identifizieren, der Ihren aktuellen Anforderungen am besten entspricht.
 
 ## <a name="get-started"></a>Erste Schritte
 
@@ -46,7 +46,7 @@ Um häufige Migrationshindernisse zu vermeiden, erstellen Sie eine klare und pr�
 
 **Ziele:**
 
-- Verwenden der [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx), um Beweggründe und gewünschte Geschäftsergebnisse aufzuzeichnen.
+- Verwenden der [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx), um Beweggründe und gewünschte Geschäftsergebnisse aufzuzeichnen.
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -64,7 +64,7 @@ Partner, Microsoft-Dienste oder verschiedene Microsoft-Programme sind verfügbar
 **Ziele:**
 
 - Einrichten der Geschäftsbedingungen oder andere vertraglichen Vereinbarungen, bevor Sie unterstützende Partner einbinden.
-- Identifizieren genehmigter Partner in der [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx).
+- Identifizieren genehmigter Partner in der [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx).
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -85,7 +85,7 @@ Ermittlung und Bewertung bieten eine tiefere Ebene der technischen Ausrichtung u
 - Rohdaten für vorhandenen Bestand.
 - Quantitative Analyse für vorhandenen Bestand, um die geschäftliche Begründung zu verfeinern.
 - Qualitative Analyse der ersten 10 Workloads.
-- Aktualisieren der geschäftlichen Begründung in der [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx).
+- Aktualisieren der geschäftlichen Begründung in der [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx).
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -102,7 +102,7 @@ Das Erstellen des Geschäftsszenarios für die Migration ist wahrscheinlich eine
 
 **Ziele:**
 
-- Verwenden der [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx), um die geschäftliche Begründung festzuhalten.
+- Verwenden der [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx), um die geschäftliche Begründung festzuhalten.
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -113,9 +113,9 @@ Das Erstellen des Geschäftsszenarios für die Migration ist wahrscheinlich eine
 
 ## <a name="step-5-create-a-migration-plan"></a>Schritt 5: Erstellen eines Migrationsplans
 
-Die Vorlage für den Cloudeinführungsplan bietet einen beschleunigten Ansatz für die Entwicklung eines Projektbacklogs. Das Backlog kann dann geändert werden, um Ermittlungsergebnisse, Rationalisierung, erforderliche Fertigkeiten und Partnerverträge widerzuspiegeln.
+Ein Cloudeinführungsplan bietet einen beschleunigten Ansatz für die Entwicklung eines Projektbacklogs. Das Backlog kann dann geändert werden, um Ermittlungsergebnisse, Rationalisierung, erforderliche Fertigkeiten und Partnerverträge widerzuspiegeln.
 
-- [Vorlage für den Cloudeinführungsplan](../plan/template.md): Bereitstellen der Basisvorlage.
+- [Cloudeinführungsplan](../plan/template.md): Definieren Sie Ihren Cloudeinführungsplan mithilfe der Basisvorlage.
 - [Workloadausrichtung](../plan/workloads.md): Definieren von Workloads im Backlog.
 - [Aufwandsausrichtung](../plan/assets.md): Richten Sie Ressourcen und Workloads im Backlog aus, um den Aufwand für priorisierte Workloads eindeutig zu definieren.
 - [Ausrichtung von Personen und Zeit](../plan/iteration-paths.md): Einrichten von Iterationen, Geschwindigkeit (Zeitaufwand der Personen) und Releases für die migrierten Workloads.
@@ -144,7 +144,7 @@ Vorhandene Mitarbeiter können eine praktische Rolle bei der Migration spielen, 
 
 **Ziele:**
 
-- Hinzufügen eines Bereitschaftsplans für Qualifikationen zur [Strategie- und Planungsvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/Microsoft-Cloud-Adoption-Framework-Strategy-and-Plan-Template.docx).
+- Hinzufügen eines Bereitschaftsplans für Qualifikationen zur [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx).
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -262,4 +262,4 @@ Das Cloud Adoption Framework ist eine Lebenszykluslösung. Es kann Ihnen dabei h
 | Cloudgovernanceteam&nbsp;&nbsp; | Verwenden Sie die [Governancemethodik](../govern/index.md), um Governanceprozesse, -richtlinien und -disziplinen weiter zu verbessern. |
 | Cloudbetriebsteam&nbsp;&nbsp; | Verwenden Sie die [Verwaltungsmethodik](../manage/index.md), um umfassendere Vorgänge in Azure bereitzustellen. |
 
-Wenn Ihr Migrationsszenario atypisch ist, können Sie eine personalisierte Bewertung der Migrationsbereitschaft Ihrer Organisation erhalten, indem Sie die [SMART-Bewertung (Strategic Migration and Readiness Tool)](https://docs.microsoft.com/assessments/?id=strategic-migration-assessment) verwenden. Basierend auf den Antworten, die Sie während der Bewertung geben, können wir Ihnen helfen, die Anleitungen zu identifizieren, die Ihren aktuellen Anforderungen am besten entsprechen.
+Wenn Ihr Migrationsszenario atypisch ist, können Sie eine personalisierte Bewertung der Migrationsbereitschaft Ihrer Organisation erhalten, indem Sie die [SMART-Bewertung (Strategic Migration and Readiness Tool)](/assessments/?id=strategic-migration-assessment) verwenden. Basierend auf den Antworten, die Sie während der Bewertung geben, können wir Ihnen helfen, die Anleitungen zu identifizieren, die Ihren aktuellen Anforderungen am besten entsprechen.

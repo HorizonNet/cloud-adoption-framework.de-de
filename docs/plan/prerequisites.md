@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 413953f6da2eece12a54aa708fb4daa466d9959d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: cfcc44f169beb177d9a2554ee28109d5235d9edc
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223404"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88194741"
 ---
 # <a name="prerequisites-for-an-effective-cloud-adoption-plan"></a>Voraussetzungen für einen effektiven Cloudeinführungsplan
 
@@ -40,7 +40,7 @@ Diese Fragen sind für die Genauigkeit des Cloudeinführungsplans von entscheide
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-[Bereitstellen der Vorlage für den Cloudeinführungsplan](./template.md) in Azure DevOps
+Definieren Sie Ihren Cloudeinführungsplan durch Bereitstellung der Vorlage für Azure DevOps Services.
 
 > [!div class="nextstepaction"]
-> [Bereitstellen der Vorlage in Azure DevOps](./template.md)
+> [Definieren Ihres Cloudeinführungsplans mithilfe der Vorlage](./template.md)

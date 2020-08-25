@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 16d808b09b0631f95445288dcf856c8aca0a0965
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 619dd5197bcea95d83b27c166e0f4238abd1a988
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83753010"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88573937"
 ---
 # <a name="get-started-understand-and-document-foundational-alignment-decisions"></a>Erste Schritte: Verstehen und Dokumentieren grundlegender Ausrichtungsentscheidungen
 
@@ -50,7 +50,7 @@ Unabhängig vom ausgewählten Cloudanbieter beginnen alle Cloudhosting- und Umge
 - [Grundlegende Konzepte](../ready/considerations/fundamental-concepts.md) helfen Ihnen, wichtige Azure-Themen zu verstehen, bevor Sie mit der Cloudeinführung beginnen.
 - Mithilfe der [Arbeitsmappe für die Betriebsverwaltung](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) und des Geschäftsausrichtungsansatzes können Sie die Workloads und Ressourcen verstehen, die an ein Cloudbetriebsteam übergeben wurden.
 - Der [Cloudeinführungsplan](../plan/plan-intro.md) bietet ein Backlog der Workloads und Ressourcen, die für die Übernahme in die Cloud vorgesehen sind.
-- Bei der [Analyse des digitalen Bestands](../digital-estate/approach.md) handelt es sich um einen Ansatz zum Dokumentieren vorhandener Workloads und Ressourcen, die für die Übernahme in die Cloud vorgesehen sind. In Azure wird der digitale Bestand am besten in einem Tool namens [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-support-matrix) dargestellt.
+- Bei der [Analyse des digitalen Bestands](../digital-estate/approach.md) handelt es sich um einen Ansatz zum Dokumentieren vorhandener Workloads und Ressourcen, die für die Übernahme in die Cloud vorgesehen sind. In Azure wird der digitale Bestand am besten in einem Tool namens [Azure Migrate](/azure/migrate/migrate-support-matrix) dargestellt.
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -89,9 +89,9 @@ Alle vorhandenen Workloads und Ressourcen müssen ordnungsgemäß benannt und in
 **Hinweis zur Erreichung der Ziele:**
 
 - Erstellen eines [Standards für Benennung und Markierung](../ready/azure-best-practices/naming-and-tagging.md).
-- Füllen Sie die [Arbeitsmappe für Benennungs- und Markierungskonventionen](https://archcenter.blob.core.windows.net/cdn/fusion/readiness/CAF%20Readiness%20Naming%20and%20Tagging%20tracking%20template.xlsx) mit Daten auf, um Entscheidungen nachzuverfolgen.
-- [Überprüfen und aktualisieren Sie vorhandene Tags in Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources).
-- [Erzwingen von Markierungsrichtlinien in Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-policies).
+- Füllen Sie die [Vorlage für die Nachverfolgung von Benennungs- und Markierungskonventionen](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/naming-and-tagging-conventions-tracking-template.xlsx) mit Daten auf, um Entscheidungen nachzuverfolgen.
+- [Überprüfen und aktualisieren Sie vorhandene Tags in Azure](/azure/azure-resource-manager/management/tag-resources).
+- [Erzwingen von Markierungsrichtlinien in Azure](/azure/azure-resource-manager/management/tag-policies).
 
 <!-- markdownlint-disable MD033 -->
 <br>
@@ -118,7 +118,7 @@ Erstellen einer Abonnementstrategie:
 - Beginnen Sie [entwurfsbedingt mit zwei Abonnements](../ready/azure-best-practices/initial-subscriptions.md). Fügen Sie grundlegende Abonnemententwürfe hinzu, um allgemeine Unternehmensanforderungen zu berücksichtigen, etwa gemeinsame Dienste oder Sandboxabonnements.
 - [Verwalten Sie mehrere Abonnements](../ready/azure-best-practices/organize-subscriptions.md), wenn zusätzliche Abonnements erforderlich sind, um den Cloudeinführungsplan zu unterstützen.
 - Richten Sie [klare Grenzen basierend auf der Portfoliohierarchie](../reference/fundamental-concepts/hierarchy-azure-tools.md#organizing-the-hierarchy-in-azure) ein.
-- [Verschieben Sie bei Bedarf Ressourcengruppen und Ressourcen zwischen Abonnements](https://docs.microsoft.com/azure/azure-resource-manager/management/move-resource-group-and-subscription), um die Organisationsstrategie einzuhalten.
+- [Verschieben Sie bei Bedarf Ressourcengruppen und Ressourcen zwischen Abonnements](/azure/azure-resource-manager/management/move-resource-group-and-subscription), um die Organisationsstrategie einzuhalten.
 
 <!-- markdownlint-disable MD033 -->
 <br>

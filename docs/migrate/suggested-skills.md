@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5da9fffe5d3367e32e5acc2d47accf2c6903c263
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 188719f2edf173d3d03ee81cdb62f582db1140b7
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450967"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572985"
 ---
 <!-- cSpell:ignore Getting Started -->
 
@@ -33,7 +33,7 @@ Die folgenden Tools können dem Team dabei helfen, Bewertungen auszuführen:
 - [Ausgewogenheit des Portfolios](../strategy/balance-the-portfolio.md): Sicherstellen von Ausgewogenheit und richtigen Investitionszuordnungen innerhalb eines Anwendungsportfolios.
 - [Erstellen einer geschäftlichen Begründung](../strategy/cloud-migration-business-case.md): Erstellen und Verstehen der geschäftlichen Begründung für die Cloudmigrationsaktivitäten.
 - [Rationalisieren der digitalen Ressourcen](../digital-estate/rationalize.md): Rationalisieren von Assets in den digitalen Ressourcen.
-- [Bewertung des Anwendungsportfolios](https://docs.microsoft.com/learn/modules/app-and-infra-migration-and-modernization): Kriterien zum Treffen von Entscheidungen in Bezug auf Migrations- oder Innovationsoptionen innerhalb des Anwendungsportfolios.
+- [Bewertung des Anwendungsportfolios](/learn/modules/app-and-infra-migration-and-modernization): Kriterien zum Treffen von Entscheidungen in Bezug auf Migrations- oder Innovationsoptionen innerhalb des Anwendungsportfolios.
 - [Bewerten und Planen der Microsoft Azure-Migration](https://www.pluralsight.com/courses/microsoft-azure-migration-assessing-planning): Ein Pluralsight-Kurs zur Unterstützung bei der Bewertung von lokalen Workloads.
 
 Während der Bewertungsprozesse entwerfen Architekten Lösungen für die einzelnen Workloads. Die folgenden Ressourcen zur Befähigung können Architekten auf diese Aufgaben vorbereiten:
@@ -46,7 +46,7 @@ Während der Bewertungsprozesse entwerfen Architekten Lösungen für die einzeln
 
 Das folgende Tutorial kann das Team auf Migrationsaktivitäten vorbereiten:
 
-- [Migrieren von lokalen Computern zu Azure](https://docs.microsoft.com/azure/site-recovery/migrate-tutorial-on-premises-azure): Verwenden von Azure Site Recovery, um VMs zu Azure migrieren.
+- [Migrieren von lokalen Computern zu Azure](/azure/site-recovery/migrate-tutorial-on-premises-azure): Verwenden von Azure Migrate zur Migration von VMs nach Azure.
 - [Rehosten von Workloads für Azure](https://www.pluralsight.com/courses/microsoft-azure-workloads-rehosting): Ein Pluralsight-Kurs, der den Teilnehmern vermittelt, wie das Rehosten von Workloads für Azure erfolgt.
 - [Migrieren von physischen und virtuellen Servern zu Azure](https://www.pluralsight.com/courses/microsoft-azure-migrating-physical-virtual-servers): Ein Pluralsight-Kurs zum Migrieren von Servern zu Azure.
 - [Importieren und Exportieren von Daten für Azure](https://www.pluralsight.com/courses/microsoft-azure-import-export-data): Ein Pluralsight-Kurs zur Datenübertragung von und zu Azure.

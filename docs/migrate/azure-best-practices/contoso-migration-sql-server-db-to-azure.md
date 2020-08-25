@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: e341378d4d363344a36cfabb3f9b5374262d9e6f
-ms.sourcegitcommit: 65e8d2fc3ef31f2bb11a50f7c7a2d1eb116a6632
+ms.openlocfilehash: f4d8e485ad75cf3d5401025031fce21865bbb722
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87254941"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88574821"
 ---
 <!-- cSpell:ignore BACPAC FILESTREAM -->
 
@@ -57,7 +57,7 @@ Das Cloudteam von Contoso hat sich folgende Ziele für die verschiedenen Migrati
 
 ## <a name="solution-design"></a>Lösungsentwurf
 
-Contoso hat bereits eine [Migrationsbewertung](https://docs.microsoft.com/azure/cloud-adoption-framework/plan/contoso-migration-assessment) für seine digitalen Ressourcen mithilfe von [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-services-overview) durchgeführt.
+Contoso hat bereits eine [Migrationsbewertung](../..//plan/contoso-migration-assessment.md) für seine digitalen Ressourcen mithilfe von [Azure Migrate](/azure/migrate/migrate-services-overview) durchgeführt.
 
 Die Bewertung ergibt mehrere Workloads, die auf mehrere Abteilungen verteilt sind. Die Gesamtgröße des Migrationsprojekts erfordert ein gesamtes Projektmanagementbüro, das die Besonderheiten der Kommunikation, der Ressourcen und der Zeitplanung verwaltet.
 
@@ -76,9 +76,9 @@ Contoso wertet den vorgeschlagen Entwurf durch Erstellen einer Liste mit Vor- un
 
 Vor der Migration muss die erforderliche Azure-Struktur vorhanden sein, damit die Verwaltungs- und Abrechnungsaspekte der Lösung unterstützt werden können.
 
-Für die Verwaltungsanforderungen wurden mehrere [Verwaltungsgruppen](https://docs.microsoft.com/azure/governance/management-groups/overview) erstellt, um die Organisationsstruktur unterstützen zu können.
+Für die Verwaltungsanforderungen wurden mehrere [Verwaltungsgruppen](/azure/governance/management-groups/overview) erstellt, um die Organisationsstruktur unterstützen zu können.
 
-Für die Abrechnungsanforderungen werden alle Azure-Ressourcen mit entsprechenden [Abrechnungstags](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources) versehen.
+Für die Abrechnungsanforderungen werden alle Azure-Ressourcen mit entsprechenden [Abrechnungstags](/azure/azure-resource-manager/management/tag-resources) versehen.
 
 ### <a name="migration-process"></a>Migrationsprozess
 
@@ -131,7 +131,7 @@ Contoso führte die folgenden Schritte aus, um die Datenbanken zu bewerten und a
 
 DMA empfiehlt Leistungs- und Zuverlässigkeitsverbesserungen für die Zielumgebung und ermöglicht es, Schema, Daten und abhängige Objekte von einem Quellserver auf einen Zielserver zu verschieben.
 
-Erfahren Sie mehr über den [Datenmigrations-Assistenten](https://docs.microsoft.com/sql/dma/dma-assesssqlonprem?view=sql-server-2017).
+Erfahren Sie mehr über den [Datenmigrations-Assistenten](/sql/dma/dma-assesssqlonprem?view=sql-server-2017).
 
 Contoso hat den Assistenten zum Ausführen der Bewertung verwendet und dann die Daten direkt in Azure Migrate hochgeladen.
 
@@ -152,13 +152,13 @@ Contoso bestimmt auf Grundlage der vorliegenden Informationen und anhand der fol
 
 | Ziel | Datenbanknutzung | Details | Onlinemigration | Offlinemigration | Max. Größe | Migrationsleitfaden |
 | --- | --- | --- | --- | ---| --- | --- |
-| Azure SQL-Datenbank (PaaS) | SQL Server (nur Daten) | Diese Datenbanken verwenden lediglich einfache Tabellen, Spalten, gespeicherte Prozeduren und Funktionen. | [Datenmigrations-Assistent](https://docs.microsoft.com/sql/dma/dma-overview), [Transaktionsreplikation](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-transactional-replication) | [BACPAC](https://docs.microsoft.com/sql/relational-databases/data-tier-applications/import-a-bacpac-file-to-create-a-new-user-database), [bcp](https://docs.microsoft.com/sql/tools/bcp-utility?view=sql-server-ver15) | 1 TiB | [Link](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql) |
-| Verwaltete Azure SQL-Instanz | SQL Server (erweiterte Features) | Diese Datenbanken verwenden Trigger und andere [erweiterte Konzepte](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-transact-sql-information#service-broker), z. B. benutzerdefinierte .NET-Typen, Service Broker usw. | [Datenmigrations-Assistent](https://docs.microsoft.com/sql/dma/dma-overview), [Transaktionsreplikation](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-transactional-replication) | [BACPAC](https://docs.microsoft.com/sql/relational-databases/data-tier-applications/import-a-bacpac-file-to-create-a-new-user-database), [bcp](https://docs.microsoft.com/sql/tools/bcp-utility?view=sql-server-ver15), [native Sicherung/Wiederherstellung](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-get-started-restore) | 2 TiB – 8 TiB | [Link](https://docs.microsoft.com/azure/dms/tutorial-sql-server-managed-instance-online) |
-| SQL Server auf Azure Virtual Machines (IaaS) | SQL Server (Drittanbieterintegrationen) | Der SQL Server muss über [nicht unterstützte SQL Managed Instance-Features](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-transact-sql-information#service-broker) (instanzübergreifende Service Broker, Kryptografieanbieter, Pufferpool, Kompatibilitätsgrade unter 100, Datenbankspiegelung, FILESTREAM, PolyBase, alles, was Zugriff auf Dateifreigaben erfordert, externe Skripts, erweiterte gespeicherte Prozeduren usw.) verfügen, oder es muss Drittanbietersoftware zur Unterstützung der Aktivitäten der Datenbank installiert sein. | [Transaktionsreplikation](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-transactional-replication) | [BACPAC](https://docs.microsoft.com/sql/relational-databases/data-tier-applications/import-a-bacpac-file-to-create-a-new-user-database), [bcp](https://docs.microsoft.com/sql/tools/bcp-utility?view=sql-server-ver15), [Momentaufnahmereplikation](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-transactional-replication), [native Sicherung/Wiederherstellung](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-get-started-restore), Konvertieren des physischen Computers in eine VM | 4 GiB – 64 TiB | [Link](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql) |
+| Azure SQL-Datenbank (PaaS) | SQL Server (nur Daten) | Diese Datenbanken verwenden lediglich einfache Tabellen, Spalten, gespeicherte Prozeduren und Funktionen. | [Datenmigrations-Assistent](/sql/dma/dma-overview), [Transaktionsreplikation](/azure/sql-database/sql-database-managed-instance-transactional-replication) | [BACPAC](/sql/relational-databases/data-tier-applications/import-a-bacpac-file-to-create-a-new-user-database), [bcp](/sql/tools/bcp-utility?view=sql-server-ver15) | 1 TiB | [Link](/azure/dms/tutorial-sql-server-to-azure-sql) |
+| Verwaltete Azure SQL-Instanz | SQL Server (erweiterte Features) | Diese Datenbanken verwenden Trigger und andere [erweiterte Konzepte](/azure/sql-database/sql-database-managed-instance-transact-sql-information#service-broker), z. B. benutzerdefinierte .NET-Typen, Service Broker usw. | [Datenmigrations-Assistent](/sql/dma/dma-overview), [Transaktionsreplikation](/azure/sql-database/sql-database-managed-instance-transactional-replication) | [BACPAC](/sql/relational-databases/data-tier-applications/import-a-bacpac-file-to-create-a-new-user-database), [bcp](/sql/tools/bcp-utility?view=sql-server-ver15), [native Sicherung/Wiederherstellung](/azure/sql-database/sql-database-managed-instance-get-started-restore) | 2 TiB – 8 TiB | [Link](/azure/dms/tutorial-sql-server-managed-instance-online) |
+| SQL Server auf Azure Virtual Machines (IaaS) | SQL Server (Drittanbieterintegrationen) | Der SQL Server muss über [nicht unterstützte SQL Managed Instance-Features](/azure/sql-database/sql-database-managed-instance-transact-sql-information#service-broker) (instanzübergreifende Service Broker, Kryptografieanbieter, Pufferpool, Kompatibilitätsgrade unter 100, Datenbankspiegelung, FILESTREAM, PolyBase, alles, was Zugriff auf Dateifreigaben erfordert, externe Skripts, erweiterte gespeicherte Prozeduren usw.) verfügen, oder es muss Drittanbietersoftware zur Unterstützung der Aktivitäten der Datenbank installiert sein. | [Transaktionsreplikation](/azure/sql-database/sql-database-managed-instance-transactional-replication) | [BACPAC](/sql/relational-databases/data-tier-applications/import-a-bacpac-file-to-create-a-new-user-database), [bcp](/sql/tools/bcp-utility?view=sql-server-ver15), [Momentaufnahmereplikation](/azure/sql-database/sql-database-managed-instance-transactional-replication), [native Sicherung/Wiederherstellung](/azure/sql-database/sql-database-managed-instance-get-started-restore), Konvertieren des physischen Computers in eine VM | 4 GiB – 64 TiB | [Link](/azure/virtual-machines/windows/sql/virtual-machines-windows-migrate-sql) |
 
-Aufgrund der großen Anzahl der Datenbanken richtete Contoso ein Projektmanagementbüro ein, das den Überblick über die einzelnen Datenbankmigrationsinstanzen behalten sollte. Jedem Unternehmens- und Anwendungsteam wurden [Zuständigkeiten und Verantwortlichkeiten](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/migration-considerations/assess/) zugewiesen.
+Aufgrund der großen Anzahl der Datenbanken richtete Contoso ein Projektmanagementbüro ein, das den Überblick über die einzelnen Datenbankmigrationsinstanzen behalten sollte. Jedem Unternehmens- und Anwendungsteam wurden [Zuständigkeiten und Verantwortlichkeiten](../..//migrate/migration-considerations/assess/index.md) zugewiesen.
 
-Außerdem führte Contoso eine [Überprüfung der Workloads auf die jeweilige Migrationsbereitschaft](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/migration-considerations/assess/evaluate) durch. Bei dieser Überprüfung wurden die Infrastruktur, die Datenbank und die Netzwerkkomponenten untersucht.
+Außerdem führte Contoso eine [Überprüfung der Workloads auf die jeweilige Migrationsbereitschaft](../..//migrate/migration-considerations/assess/evaluate.md) durch. Bei dieser Überprüfung wurden die Infrastruktur, die Datenbank und die Netzwerkkomponenten untersucht.
 
 #### <a name="step-5-test-migrations"></a>Schritt 5: Testmigrationen
 
@@ -168,7 +168,7 @@ Außerdem wurden Rollbackverfahren für die einzelnen Datenbankworkloads herausg
 
 Für die IaaS-basierten Workloads wurde vorab sämtliche erforderliche Drittanbietersoftware eingerichtet.
 
-Nach der Testmigration konnte Contoso die verschiedenen [Tools für die Kostenschätzung](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/migration-considerations/assess/estimate) von Azure verwenden, um ein genaueres Bild der zukünftigen Betriebskosten für die Migration zu erhalten.
+Nach der Testmigration konnte Contoso die verschiedenen [Tools für die Kostenschätzung](../..//migrate/migration-considerations/assess/estimate.md) von Azure verwenden, um ein genaueres Bild der zukünftigen Betriebskosten für die Migration zu erhalten.
 
 #### <a name="step-6-migration"></a>Schritt 6: Migration
 
@@ -193,21 +193,21 @@ Da die migrierten Ressourcen in Azure enthalten sind, muss Contoso die neue Infr
 
 #### <a name="security"></a>Sicherheit
 
-- Contoso muss sicherstellen, dass die neuen Datenbankworkloads in Azure geschützt sind. [Weitere Informationen](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview)
+- Contoso muss sicherstellen, dass die neuen Datenbankworkloads in Azure geschützt sind. [Weitere Informationen](/azure/sql-database/sql-database-security-overview)
 - Insbesondere sollte Contoso die Konfiguration der Firewall und des virtuellen Netzwerks überprüfen.
-- Contoso sollte [Private Link](https://docs.microsoft.com/azure/azure-sql/database/private-endpoint-overview) einrichten, damit der gesamte Datenverkehr der Datenbanken innerhalb von Azure und des lokalen Netzwerks bleibt.
-- Contoso sollte [Azure Advanced Threat Protection](https://docs.microsoft.com/azure/azure-sql/database/threat-detection-overview) für Azure SQL-Datenbank aktivieren.
+- Contoso sollte [Private Link](/azure/azure-sql/database/private-endpoint-overview) einrichten, damit der gesamte Datenverkehr der Datenbanken innerhalb von Azure und des lokalen Netzwerks bleibt.
+- Contoso sollte [Azure Advanced Threat Protection](/azure/azure-sql/database/threat-detection-overview) für Azure SQL-Datenbank aktivieren.
 
 #### <a name="backups"></a>Backups
 
 - Mithilfe der Geowiederherstellung kann sichergestellt werden, dass die Datenbanken in Azure gesichert sind. Mit dieser Funktion können Sicherungen erstellt werden, die im Fall eines regionalen Ausfalls in einer gekoppelten Region verfügbar sind.
-- **Wichtig:** Stellen Sie sicher, dass die Azure-Ressource über eine [Ressourcensperre](https://docs.microsoft.com/azure/azure-resource-manager/management/lock-resources) verfügt und nicht gelöscht werden kann. Gelöschte Server können nicht wiederhergestellt werden.
+- **Wichtig:** Stellen Sie sicher, dass die Azure-Ressource über eine [Ressourcensperre](/azure/azure-resource-manager/management/lock-resources) verfügt und nicht gelöscht werden kann. Gelöschte Server können nicht wiederhergestellt werden.
 
 #### <a name="licensing-and-cost-optimization"></a>Lizenzierung und Kostenoptimierung
 
 - Viele Azure-Datenbankworkloads können zentral hoch- oder herunterskaliert werden. Daher ist die Leistungsüberwachung von Server und Datenbanken wichtig, um sicherzustellen, dass die Anforderungen erfüllt und gleichzeitig die Kosten möglichst gering gehalten werden.
 - Sowohl für CPU als auch für Speicher können Kosten anfallen. Sie können zwischen verschiedenen Tarifen wählen. Achten Sie darauf, dass ein passender Tarif für die Datenworkloads ausgewählt ist.
-- [Pools für elastische Datenbanken](https://docs.microsoft.com/azure/sql-database/sql-database-service-tiers-dtu) müssen für Datenbanken implementiert werden, die über kompatible Ressourcenauslastungsmuster verfügen.
+- [Pools für elastische Datenbanken](/azure/sql-database/sql-database-service-tiers-dtu) müssen für Datenbanken implementiert werden, die über kompatible Ressourcenauslastungsmuster verfügen.
 - Jedes Lesereplikat wird auf Grundlage der ausgewählten Compute- und Speicheroptionen berechnet.
 - Verwenden Sie reservierte Kapazitäten, um Kosten zu sparen.
 

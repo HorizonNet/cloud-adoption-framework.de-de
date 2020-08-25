@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 620a146d3ae45703f9ed3884bd425a3a4164e726
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: e55267973f7118fe90687abbd640c15eaa6be5f6
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479601"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88194687"
 ---
 # <a name="improve-landing-zone-governance"></a>Verbessern der Governance von Zielzonen
 
@@ -37,7 +37,7 @@ Die [Govern-Methodik](../../govern/index.md) bietet einen allgemeinen Leitfaden 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Die Cloudeinführung wird sich mit jeder Welle oder Freigabe neuer Workloads weiter ausweiten. Um diesen Anforderungen immer einen Schritt voraus zu sein, wird empfohlen, dass Cloudplattformteams in regelmäßigen Abständen die [bewährten Methoden für zusätzliche Zielzonen](../azure-best-practices/index.md) überprüfen.
+Die Cloudeinführung wird sich mit jeder Welle oder Freigabe neuer Workloads weiter ausweiten. Um diesen Anforderungen immer einen Schritt voraus zu sein, sollten Cloudplattformteams in regelmäßigen Abständen die bewährten Methoden für zusätzliche Zielzonen überprüfen.
 
 > [!div class="nextstepaction"]
 > [Weitere bewährte Methoden für Zielzonen](../azure-best-practices/index.md)

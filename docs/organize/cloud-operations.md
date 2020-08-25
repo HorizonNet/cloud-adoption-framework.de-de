@@ -7,16 +7,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: a8ff734e8f29d3cfcc848fc99270aae16b73c8c5
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 5762688ddd367e6f01e7276d9d9079aaf27f56da
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755559"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569976"
 ---
 # <a name="cloud-operations-functions"></a>Cloudbetriebsfunktionen
 
-Ein Betriebsteam konzentriert sich auf die Überwachung, Reparatur sowie die Behebung von Problemen im Zusammenhang mit herkömmlichen IT-Vorgängen und -Ressourcen. In der Cloud werden viele dieser Kapitalkosten und Betriebsaktivitäten auf den Cloudanbieter übertragen, was dem IT-Betrieb die Möglichkeit eröffnet, sich zu verbessern und einen erheblichen Mehrwert zu schaffen.
+Ein Betriebsteam konzentriert sich auf die Überwachung, Reparatur sowie die Behebung von Problemen im Zusammenhang mit herkömmlichen IT-Vorgängen und -Ressourcen. In der Cloud werden viele dieser Investitionskosten und Betriebsaktivitäten auf den Cloudanbieter übertragen, was es der IT-Abteilung ermöglicht, sich weiterzuentwickeln und einen erheblichen Mehrwert zu schaffen.
 
 Die für die Bereitstellung von Cloudbetriebsfunktionen erforderlichen Qualifikationen können bereitgestellt werden durch:
 
@@ -28,10 +28,13 @@ Die für die Bereitstellung von Cloudbetriebsfunktionen erforderlichen Qualifika
 - Betriebsteams für Geschäftsanwendungen
 - DevOps-Teams
 
+> [!IMPORTANT]
+> Die für den Betrieb der Cloud zuständigen Personen oder Teams sind in der Regel dafür verantwortlich, reaktive Änderungen an der Konfiguration während der Wartung vorzunehmen. Sie sind wahrscheinlich auch für proaktive Konfigurationsänderungen zuständig, um Störungen der Betriebsabläufe zu minimieren. Je nach Cloudbetriebsmodell der Organisation können diese Änderungen über Infrastructure-as-Code, Azure Pipelines oder direkte Konfiguration im Portal bereitgestellt werden. Da das Betriebsteam wahrscheinlich über erweiterte Berechtigungen verfügen wird, ist es äußerst wichtig, dass diejenigen, die diese Rolle ausfüllen, die [bewährten Methoden der Identitäts- und Zugriffssteuerung](/azure/security/benchmarks/security-control-identity-access-control) befolgen, um unbeabsichtigten Zugriff oder Änderungen in der Produktion zu minimieren.
+
 ## <a name="preparation"></a>Vorbereitung
 
-- [Verwalten von Ressourcen in Azure](https://docs.microsoft.com/learn/paths/manage-resources-in-azure): Es wird beschrieben, wie Sie die Azure CLI und das Webportal verwenden, um cloudbasierte Ressourcen zu erstellen, zu verwalten und zu steuern.
-- [Azure-Netzwerkdienste](https://docs.microsoft.com/learn/modules/intro-to-azure-networking): Erlernen Sie die Grundlagen von Azure-Netzwerken, und erfahren Sie, wie die Resilienz verbessert und die Latenz verringert werden kann.
+- [Verwalten von Ressourcen in Azure](/learn/paths/manage-resources-in-azure/): Es wird beschrieben, wie Sie die Azure CLI und das Webportal verwenden, um cloudbasierte Ressourcen zu erstellen, zu verwalten und zu steuern.
+- [Azure-Netzwerkdienste](/learn/modules/intro-to-azure-networking/): Erlernen Sie die Grundlagen von Azure-Netzwerken, und erfahren Sie, wie die Resilienz verbessert und die Latenz verringert werden kann.
 
 Lesen Sie Folgendes:
 
@@ -77,4 +80,4 @@ Weitere Informationen:
 - Funktionen des [Cloudkompetenzzentrums (CCoE, Cloud Center of Excellence)](../organize/cloud-center-of-excellence.md).
 - [Antimuster in Unternehmen: Silos und Machtbereiche](../organize/fiefdoms-silos.md).
 
-Es wird beschrieben, wie Sie Teams übergreifend Zuständigkeiten zuordnen, indem Sie eine so genannte RACI-Matrix entwickeln und damit bestimmen, welche Teams verantwortlich sind (responsible), rechenschaftspflichtig sind (accountable), konsultiert werden (consulted) und zu informieren sind (informed). Laden Sie die [RACI-Tabellenvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) herunter, und passen Sie sie an.
+Es wird beschrieben, wie Sie Teams übergreifend Zuständigkeiten zuordnen, indem Sie eine so genannte RACI-Matrix entwickeln und damit bestimmen, welche Teams verantwortlich sind (responsible), rechenschaftspflichtig sind (accountable), konsultiert werden (consulted) und zu informieren sind (informed). Herunterladen und Ändern der [RACI-Vorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx).

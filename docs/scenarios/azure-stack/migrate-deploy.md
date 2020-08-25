@@ -7,39 +7,45 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2e29dcf36d0da76d72187fb895f6108e7a9dd2b5
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 86c1d4b7eaea3c7de15dfd4417a6bcc21d956ea8
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86452748"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569636"
 ---
 # <a name="deploy-workloads-to-azure-stack-hub"></a>Bereitstellen von Workloads in Azure Stack Hub
 
-Azure Stack bietet Kunden die Möglichkeit, eine eigene Instanz von Azure in Ihrem Rechenzentrum auszuführen. Organisationen integrieren Azure Stack in Ihre Cloudstrategie, weil sie damit Situationen bewältigen können, in denen die öffentliche Cloud nicht für sie funktioniert. Die drei häufigsten Gründe für die Verwendung von Azure Stack sind eine schlechte Netzwerkverbindung mit der öffentlichen Cloud, gesetzliche oder vertragliche Anforderungen und Back-End-Systeme, die nicht im Internet verfügbar gemacht werden können.
+Durch die Verwendung von Azure Stack kann Ihre Organisation eine eigene Instanz von Azure in ihrem Rechenzentrum betreiben. Organisationen integrieren Azure Stack in Ihre Cloudstrategie, weil sie damit Situationen bewältigen können, in denen die öffentliche Cloud nicht für sie funktioniert. Die drei häufigsten Gründe für die Verwendung von Azure Stack sind:
 
-## <a name="infrastructure-as-a-service-iaas-deployment"></a>Infrastructure-as-a-Service-Bereitstellung (IaaS)
+- Schlechte Netzwerkkonnektivität mit der öffentlichen Cloud.
+- Gesetzliche oder vertragliche Anforderungen.
+- Back-End-Systeme, die nicht mit dem Internet verbunden werden können.
 
-Die Bereitstellung in Azure Stack Hub ähnelt jeder anderen IaaS-Bereitstellung – ganz gleich, aus welchem Grund Sie sich dafür entscheiden. Viele denken bei IaaS nur an VMs, doch dies ist deutlich zu kurz gegriffen. Eine VM, die Sie in Azure oder Azure Stack bereitstellen, verfügt über ein softwaredefiniertes Netzwerk, einschließlich DNS, öffentlicher IP-Adressen und Firewallregeln (auch bezeichnet als Netzwerksicherheitsgruppen), sowie viele weitere Funktionen. Bei der VM-Bereitstellung werden auch Datenträger für Ihre VMs in softwaredefiniertem Speicher mit Azure Blob Storage erstellt.
+## <a name="infrastructure-as-a-service-deployment"></a>Infrastructure-as-a-Service-Bereitstellung
 
-Eine ausführliche Anleitung zum Bereitstellen von VMs in Azure Stack finden Sie in der [Einführung in Azure Stack Hub-VMs](https://docs.microsoft.com/azure-stack/user/azure-stack-compute-overview?view=azs-2002).
+Unabhängig vom Grund für die Infrastructure-as-a-Service-Bereitstellung (IaaS) ist die Bereitstellung in Azure Stack Hub ähnlich wie jede andere IaaS-Bereitstellung. Oft wird IaaS nur mit virtuellen Computern (VMs) in Verbindung gebracht, aber IaaS ist mehr als das. Eine VM, die Sie in Azure oder Azure Stack bereitstellen, verfügt über ein softwaredefiniertes Netzwerk, einschließlich Domain Name System, öffentlicher IP-Adressen und Firewallregeln (auch bezeichnet als Netzwerksicherheitsgruppen), sowie viele weitere Funktionen. Bei der VM-Bereitstellung werden auch Datenträger für Ihre VMs in softwaredefiniertem Speicher mit Azure Blob Storage erstellt.
 
-## <a name="platform-as-a-service-paas-deployment"></a>Platform-as-a-Service-Bereitstellung (PaaS)
+Eine ausführliche Anleitung zum Bereitstellen von VMs in Azure Stack finden Sie in der [Einführung in Azure Stack Hub-VMs](/azure-stack/user/azure-stack-compute-overview?view=azs-2002).
 
-In der Cloud werden alle PaaS-Ressourcen in einem Infrastrukturdienst ausgeführt, z. B. auf einer VM. Azure-Dienste „verschleiern“ diese Back-End-Ressourcen jedoch, sodass Sie sie nicht verwalten müssen. Die Obfuskation und Koordination dieser Infrastrukturressourcen wird von Azure Resource Manager verwaltet. Bei der Bereitstellung in Azure mit einer Azure Resource Manager-Vorlage haben Sie vielleicht einen Aspekt von Resource Manager kennen gelernt. Diese Vorlagen weisen Azure an, welche Ressourcenanbieter Sie aufrufen möchten und wie Ihre Ressourcen konfiguriert werden sollen.
+## <a name="platform-as-a-service-deployment"></a>Platform-as-a-Service-Bereitstellung
+
+In der Cloud werden alle Platform-as-a-Service-Ressourcen (PaaS) in einem Infrastrukturdienst ausgeführt, z. B. auf einer VM. Azure-Dienste „verschleiern“ diese Back-End-Ressourcen jedoch, sodass Sie sie nicht verwalten müssen. Die Obfuskation und Koordination dieser Infrastrukturressourcen wird von Azure Resource Manager verwaltet. Bei der Bereitstellung in Azure mit einer Azure Resource Manager-Vorlage haben Sie vielleicht einen Aspekt von Resource Manager kennen gelernt. Diese Vorlagen weisen Azure an, welche Ressourcenanbieter Sie aufrufen möchten und wie Ihre Ressourcen konfiguriert werden sollen.
 
 Wenn die Cloud in Ihrem Rechenzentrum ausgeführt wird, müssen Ihre Stack Hub-Administratoren zumindest grundlegend mit den Ebenen der Obfuskation vertraut sein. Bevor Ihre Benutzer oder Entwickler eine PaaS-Ressource verwenden können, muss der Azure Stack Hub-Administrator den Ressourcenanbieter über den Marketplace installieren. Diese Ressourcenanbieter ermöglichen es Ihrer Instanz von Azure Stack Hub, die Ressourcenanbieterfunktionalität von Azure in Ihrer Stack-Instanz zu replizieren. Weitere Informationen zum Bereitstellen von Azure Stack Hub-Ressourcenanbietern finden Sie in der [Blogreihe zu Azure Stack IaaS](https://azure.microsoft.com/blog/azure-stack-iaas-part-one/).
 
 ## <a name="deploy-workloads"></a>Bereitstellen von Workloads
 
-Nachdem der Azure Stack Hub-Administrator die Stack-Instanz korrekt konfiguriert hat, können Migrationen wie bei den meisten anderen Azure-Migrationsprozessen fortgesetzt werden. Im Folgenden finden Sie Links zu einigen spezifischen Migrationstypen, die Kunden häufig in Azure Stack ausführen:
+Nachdem der Azure Stack Hub-Administrator die Stack-Instanz korrekt konfiguriert hat, können Migrationen wie bei den meisten anderen Azure-Migrationsprozessen fortgesetzt werden. Durch die Verwendung von Azure Stack kann Ihr Team eine der folgenden Arten der Migration durchführen:
 
-- [Ethereum-Blockchain-Netzwerk](https://docs.microsoft.com/azure-stack/user/azure-stack-ethereum?view=azs-2002)
-- [AKS-Engine](https://docs.microsoft.com/azure-stack/user/azure-stack-kubernetes-aks-engine-overview?view=azs-2002)
-- [Azure Cognitive Services](https://docs.microsoft.com/azure-stack/user/azure-stack-solution-template-cognitive-services?view=azs-2002)
-- [C#-Web-App (ASP.NET)](https://docs.microsoft.com/azure-stack/user/azure-stack-dev-start-howto-vm-dotnet?view=azs-2002)
-- [Linux-VM](https://docs.microsoft.com/azure-stack/user/azure-stack-dev-start-howto-deploy-linux?view=azs-2002)
-- [Java-Web-App](https://docs.microsoft.com/azure-stack/user/azure-stack-dev-start-howto-vm-java?view=azs-2002)
+<!-- cSpell:ignore howto -->
+
+- [Ethereum-Blockchain-Netzwerk](/azure-stack/user/azure-stack-ethereum?view=azs-2002)
+- [AKS-Engine](/azure-stack/user/azure-stack-kubernetes-aks-engine-overview?view=azs-2002)
+- [Azure Cognitive Services](/azure-stack/user/azure-stack-solution-template-cognitive-services?view=azs-2002)
+- [C#-Web-App (ASP.NET)](/azure-stack/user/azure-stack-dev-start-howto-vm-dotnet?view=azs-2002)
+- [Linux-VM](/azure-stack/user/azure-stack-dev-start-howto-deploy-linux?view=azs-2002)
+- [Java-Web-App](/azure-stack/user/azure-stack-dev-start-howto-vm-java?view=azs-2002)
 
 ## <a name="additional-considerations-during-migration"></a>Weitere Überlegungen während der Migration
 
@@ -50,9 +56,9 @@ In den folgenden Artikeln finden Sie Informationen, die Ihrem Team bei der Migra
 - GitHub-Repository mit [Schnellstartvorlagen für Azure Stack](https://github.com/Azure/AzureStack-QuickStart-Templates)
 - GitHub-Repository mit [Schnellstartvorlagen für Azure](https://github.com/Azure/Azure-QuickStart-Templates)
 
-## <a name="next-step-integrate-this-strategy-into-your-cloud-adoption-journey"></a>Nächster Schritt: Integrieren dieser Strategie in Ihre Cloudeinführungsjourney
+## <a name="next-steps"></a>Nächste Schritte
 
-In den folgenden Artikeln finden Sie Informationen zu bestimmten Aufgaben während der Cloudeinführungsjourney.
+Anleitungen zu bestimmten Elementen der Cloudeinführungsjourney finden Sie in den folgenden Artikeln:
 
 - [Steuern von Azure Stack Hub](./govern.md)
 - [Verwalten von Azure Stack Hub](./manage.md)

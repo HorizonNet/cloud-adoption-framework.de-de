@@ -7,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: de561a28e1b6b0bf6253bcb082ded110e84572c3
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 7e8ba47fdd221ea11cca385730e25b961c0bd10f
+ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84788148"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "88194668"
 ---
 # <a name="how-to-use-the-business-outcome-template"></a>Verwenden der Vorlage für Geschäftsergebnisse
 
 Wie in der [Übersicht zu Geschäftsergebnissen](./index.md) erläutert, kann es schwierig sein, die Lücke zwischen geschäftlichen und technischen Konversationen zu schließen. Diese einfache Vorlage soll Teams dabei unterstützen, Geschäftsergebnisse einheitlich zu erfassen, die später bei der Entwicklung von Strategien zur Kundentransformation verwendet werden können.
 
-Laden Sie die [Arbeitsmappe mit der Vorlage für Geschäftsergebnisse](https://archcenter.blob.core.windows.net/cdn/business-outcome-template.xlsx) herunter, und beginnen Sie mit dem Sammeln von Ideen sowie dem Verfolgen von Geschäftsergebnissen. Lesen Sie den Rest des Artikels, um zu erfahren, wie Sie die Vorlage verwenden. Lesen Sie den Artikel über [Geschäftsergebnisse](./index.md). Dort finden Sie Ideen zu möglichen Geschäftsergebnissen, die in Gesprächen mit Führungskräften zur Sprache kommen könnten.
+Laden Sie die [Vorlage für Geschäftsergebnisse](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/strategy/business-outcome-template.xlsx) herunter, und beginnen Sie mit dem Sammeln von Ideen sowie dem Verfolgen von Geschäftsergebnissen. Lesen Sie den Rest des Artikels, um zu erfahren, wie Sie die Vorlage verwenden. Lesen Sie den Artikel über [Geschäftsergebnisse](./index.md). Dort finden Sie Ideen zu möglichen Geschäftsergebnissen, die in Gesprächen mit Führungskräften zur Sprache kommen könnten.
 
 ## <a name="use-the-business-outcome-template"></a>Verwenden der Vorlage für Geschäftsergebnisse
 
@@ -60,7 +60,7 @@ _Abbildung 3: Fünf Schwerpunktbereiche für Erkenntnis: Beteiligte, Ergebnisse,
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Informationen zur [Ausrichtung Ihrer technischen Aufgaben](../learning-metrics.md) auf sinnvolle Lernmetriken
+Informationen zur Ausrichtung Ihrer technischen Aufgaben auf sinnvolle Lernmetriken.
 
 > [!div class="nextstepaction"]
 > [Ausrichten Ihrer technischen Aufgaben](../learning-metrics.md)

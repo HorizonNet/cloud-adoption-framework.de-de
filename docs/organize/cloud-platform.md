@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: d5aa6f9625f3841890669c3ee4c5d769bd4a9d84
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: f6fafc8ed679ae068fd24d0897d4983dad06ae97
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755542"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88569993"
 ---
 # <a name="cloud-platform-functions"></a>Cloudplattformfunktionen
 
@@ -36,7 +36,7 @@ Die für die Bereitstellung von vollständigen Plattformfunktionen erforderliche
 
 - [Grundlagen der Cloudarchitektur](https://www.pluralsight.com/courses/cloud-architecture-foundations): Ein Pluralsight-Kurs zur Unterstützung bei der Entwicklung der richtigen grundlegenden Lösungen.
 - [Microsoft Azure-Architektur](https://www.pluralsight.com/courses/cloud-architecture-foundations): Ein Pluralsight-Kurs zum Einführen von Architekten in die Azure-Architektur.
-- [Azure-Netzwerkdienste](https://docs.microsoft.com/learn/modules/intro-to-azure-networking): Erlernen Sie die Grundlagen von Azure-Netzwerken, und erfahren Sie, wie die Resilienz verbessert und die Latenz verringert werden kann.
+- [Azure-Netzwerkdienste](/learn/modules/intro-to-azure-networking): Erlernen Sie die Grundlagen von Azure-Netzwerken, und erfahren Sie, wie die Resilienz verbessert und die Latenz verringert werden kann.
 
 **Lesen Sie Folgendes:**
 
@@ -76,4 +76,4 @@ Das Fachwissen über Cloudplattformen kommt in der Regel aus einem Arbeitsteam. 
 
 Wenn Ihre Cloudplattform im Lauf der Zeit besser definiert ist, kann die Abstimmung der [Cloudautomatisierungsfunktionen](./cloud-automation.md) die Einführung beschleunigen. Es kann auch helfen, bewährte Methoden zu erarbeiten und gleichzeitig die geschäftlichen und technischen Risiken zu verringern.
 
-Es wird beschrieben, wie Sie Teams übergreifend Zuständigkeiten zuordnen, indem Sie eine so genannte RACI-Matrix entwickeln und damit bestimmen, welche Teams verantwortlich sind (responsible), rechenschaftspflichtig sind (accountable), konsultiert werden (consulted) und zu informieren sind (informed). Laden Sie die [RACI-Tabellenvorlage](https://archcenter.blob.core.windows.net/cdn/fusion/management/raci-template.xlsx) herunter, und passen Sie sie an.
+Es wird beschrieben, wie Sie Teams übergreifend Zuständigkeiten zuordnen, indem Sie eine so genannte RACI-Matrix entwickeln und damit bestimmen, welche Teams verantwortlich sind (responsible), rechenschaftspflichtig sind (accountable), konsultiert werden (consulted) und zu informieren sind (informed). Herunterladen und Ändern der [RACI-Vorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx).

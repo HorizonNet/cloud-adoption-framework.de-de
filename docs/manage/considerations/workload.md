@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: ba2a227f0ee12322d7d306b1bad2ff3c1a325e26
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 94a4fd17a9c9307afb40b35f033c44ff6102b091
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84785241"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88571523"
 ---
 # <a name="workload-operations-in-cloud-management"></a>Workloadvorgänge in der Cloudverwaltung
 
@@ -94,11 +94,11 @@ Im Falle der Auflösung technischer Schulden und der automatisierten Bereinigung
 - **Verwaltung:** Operative Prozesse, die für die Ausführung eines Systems in der Produktion sorgen.
 - **Sicherheit**: Schützen von Anwendungen und Daten vor Bedrohungen.
 
-Um den Gesamtbetrieb zu verbessern, bietet das [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) einen Ansatz zur Bewertung spezifischer Workloads hinsichtlich der Einhaltung dieser Vorgaben. Berücksichtigen Sie diese Eckpfeiler sowohl für den Plattform- als auch den Workloadbetrieb.
+Um den Gesamtbetrieb zu verbessern, bietet das [Microsoft Azure Well-Architected Framework](/azure/architecture/framework) einen Ansatz zur Bewertung spezifischer Workloads hinsichtlich der Einhaltung dieser Vorgaben. Berücksichtigen Sie diese Eckpfeiler sowohl für den Plattform- als auch den Workloadbetrieb.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Wenn Sie die Verwaltungsmethodik innerhalb des Cloud Adoption Frameworks vollständig verstanden haben, sind Sie bestens gerüstet, die Cloudverwaltungsprinzipien zu implementieren. Eine Anleitung zur Umsetzung dieser Methodik in Ihrer Betriebsumgebung finden Sie unter [Cloudverwaltung im Cloud Adoption Framework](../index.md) des Einführungslebenszyklus.
+Wenn Sie die Verwaltungsmethodik innerhalb des Cloud Adoption Frameworks vollständig verstanden haben, sind Sie bestens gerüstet, die Cloudverwaltungsprinzipien zu implementieren. Erfahren Sie, wie Sie diese Methodik in Ihrer Betriebsumgebung umsetzen können.
 
 > [!div class="nextstepaction"]
 > [Anwenden dieser Methodik](../index.md)

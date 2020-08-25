@@ -7,14 +7,14 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 1f404b33b526130a3b5205d1835d5981b7d04cea
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 65290eba15bcb3a957fc4339247051c89e39c590
+ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86478819"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88572407"
 ---
-# <a name="democratize-data"></a>Demokratisieren von Daten
+# <a name="democratize-data-with-digital-invention"></a>Demokratisieren von Daten mit digitalen Innovationen
 
 Kohle, Öl und menschliches Potenzial waren während der industriellen Revolution die drei entscheidenden Ressourcen. Diese Ressourcen bildeten das Fundament für Unternehmen und bewirkten schließlich einen grundsätzlichen Wandel von Märkten und Nationen. In der digitalen Wirtschaft gibt es drei gleichermaßen wichtige Ressourcen: Daten, Geräte und menschliches Potenzial. Jede dieser Ressourcen weist ein hervorragendes Innovationspotenzial auf. In der heutigen Zeit sind bei jeder Innovationsinitiative die Daten das neue Öl.
 
@@ -34,7 +34,7 @@ Beim [Erstellen von Lösungen mit Blick auf die Kundenanforderungen](./build.md)
 
 Viele erfolgreiche Innovationen wurden als MVPs (Minimum Viable Product, Produkt mit Mindestrentabilität) gestartet, die manuelle, datengesteuerte Prozesse im Auftrag des Kunden bereitstellen. In diesem Concierge-Modell ist ein Mitarbeiter der Datenconsumer. Dieser Mitarbeiter verwendet Daten, um den Kunden zu unterstützen. Jedes Mal, wenn der Kunde die manuelle Unterstützung einbindet, kann eine Hypothese getestet und überprüft werden. Dieser Ansatz ist oft ein kostengünstiges Mittel, um eine kundenorientierte Hypothese vor hohen Investitionen in integrierte Lösungen zu testen.
 
-Mit den wichtigsten Tools für die direkte Freigabe von Daten für Datenconsumer wie [Power BI](https://docs.microsoft.com/power-bi) werden u. a. Self-Service-Berichte erstellt oder Daten verarbeitet, die in andere Umgebungen eingebettet sind.
+Mit den wichtigsten Tools für die direkte Freigabe von Daten für Datenconsumer wie [Power BI](/power-bi) werden u. a. Self-Service-Berichte erstellt oder Daten verarbeitet, die in andere Umgebungen eingebettet sind.
 
 > [!NOTE]
 > Bevor Sie Daten freigeben, sollten Sie unbedingt die folgenden Abschnitte gelesen haben. Die Freigabe von Daten erfordert möglicherweise Governance, um den Schutz für die freigegebenen Daten zu gewährleisten. Außerdem sind die Daten möglicherweise über mehrere Clouds verteilt, sodass sie zentralisiert werden müssten. Ein Großteil der Daten kann sich sogar in Anwendungen befinden, sodass vor der Freigabe eine Datensammlung notwendig ist.
@@ -46,8 +46,8 @@ Aus dem Freigeben von Daten kann schnell ein MVP resultieren, das für den Dialo
 Data Governance ist ein umfassendes Thema, das ein eigenes dediziertes Framework erfordern könnte. Der Grad an Granularität liegt nicht im Umfang des [Frameworks für die Cloudeinführung](../../index.yml). Mehrere Aspekte der Datenkontrolle sollten jedoch berücksichtigt werden, wenn die Kundenhypothese überprüft wird. Beispiel:
 
 - **Sind die freigegebenen Daten vertraulich?** Vor jeder öffentlichen Freigabe [sollten Daten klassifiziert werden](../../govern/policy-compliance/data-classification.md), um die Interessen der Kunden und des Unternehmens zu schützen.
-- **Wenn die Daten vertraulich sind, wurden sie geschützt?** Der Schutz vertraulicher Daten sollte eine Anforderung für alle demokratisierten Daten sein. Die auf das [Schützen von Datenlösungen](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions) konzentrierte Beispielworkload bietet einige Verweise zum Schützen von Daten.
-- **Sind die Daten katalogisiert?** Das Erfassen von Details zu den freigegebenen Daten unterstützt die langfristige Datenverwaltung. Tools zum Dokumentieren von Daten wie Azure Data Catalog können diesen Prozess in der Cloud erheblich vereinfachen. Anleitungen zum [Kommentieren von Daten](https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-annotate) und zum [Dokumentieren von Datenquellen](https://docs.microsoft.com/azure/data-catalog/data-catalog-how-to-documentation) können den Prozess beschleunigen.
+- **Wenn die Daten vertraulich sind, wurden sie geschützt?** Der Schutz vertraulicher Daten sollte eine Anforderung für alle demokratisierten Daten sein. Die auf das [Schützen von Datenlösungen](/azure/architecture/data-guide/scenarios/securing-data-solutions) konzentrierte Beispielworkload bietet einige Verweise zum Schützen von Daten.
+- **Sind die Daten katalogisiert?** Das Erfassen von Details zu den freigegebenen Daten unterstützt die langfristige Datenverwaltung. Tools zum Dokumentieren von Daten wie Azure Data Catalog können diesen Prozess in der Cloud erheblich vereinfachen. Anleitungen zum [Kommentieren von Daten](/azure/data-catalog/data-catalog-how-to-annotate) und zum [Dokumentieren von Datenquellen](/azure/data-catalog/data-catalog-how-to-documentation) können den Prozess beschleunigen.
 
 Wenn die Demokratisierung von Daten für eine kundenorientierte Hypothese wichtig ist, sollte die Governance von gemeinsam genutzten Daten im Freigabeplan enthalten sein. Dadurch werden Kunden, Datenconsumer und das Unternehmen geschützt.
 
@@ -60,7 +60,7 @@ Wenn die Daten in einer IT-Umgebung lückenhaft sind, können die Innovationsmö
 
 Wenn die Zentralisierung der Daten erforderlich ist, sollten Sie zunächst den entsprechenden Datenspeicher für die zentralisierten Daten definieren. Es ist ratsam, ein Data Warehouse in der Cloud einzurichten. Diese skalierbare Option bietet einen zentralen Speicherort für Ihre sämtlichen Daten. Diese Art von Lösung ist in den Optionen „Analytische Onlineverarbeitung“ (Online Analytical Processing, OLAP) oder „Big Data“ verfügbar.
 
-Die Referenzarchitekturen für [OLAP](https://docs.microsoft.com/azure/architecture/data-guide/relational-data/online-analytical-processing)- und [Big Data](https://docs.microsoft.com/azure/architecture/data-guide/big-data)-Lösungen können bei der Auswahl der geeignetsten Lösung in Azure helfen. Wenn eine Hybridlösung erforderlich ist, kann die Referenzarchitektur für das [Erweitern lokaler Datenlösungen auf die Cloud](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/hybrid-on-premises-and-cloud) auch zur Beschleunigung der Lösungsentwicklung beitragen.
+Die Referenzarchitekturen für [OLAP](/azure/architecture/data-guide/relational-data/online-analytical-processing)- und [Big Data](/azure/architecture/data-guide/big-data)-Lösungen können bei der Auswahl der geeignetsten Lösung in Azure helfen. Wenn eine Hybridlösung erforderlich ist, kann die Referenzarchitektur für das [Erweitern lokaler Datenlösungen auf die Cloud](/azure/architecture/data-guide/scenarios/hybrid-on-premises-and-cloud) auch zur Beschleunigung der Lösungsentwicklung beitragen.
 
 > [!IMPORTANT]
 > Je nach Kundenanforderung und Lösungsausrichtung ist möglicherweise ein einfacherer Ansatz ausreichend. Der Cloudarchitekt sollte das Team auffordern, kostengünstigere Lösungen zu berücksichtigen, die insbesondere während der frühen Phase der Entwicklung zu einer schnelleren Validierung der Kundenhypothese führen könnten. Im folgenden Abschnitt zum Sammeln von Daten werden einige Szenarien behandelt, die möglicherweise eine andere Lösung für Ihre Situation empfehlen.
@@ -71,15 +71,15 @@ Wenn Daten zentralisiert werden müssen, um einer Kundenanforderung gerecht zu w
 
 **Integration:** Daten, die sich in einem vorhandenen Datenspeicher befinden, können mithilfe herkömmlicher Datenverschiebungstechniken in den zentralisierten Datenspeicher integriert werden. Dies gilt insbesondere für Szenarien, in denen die Multicloud-Datenspeicherung eine Rolle spielt. Zu diesen Techniken gehört das Extrahieren der Daten aus dem vorhandenen Datenspeicher und das anschließende Laden in den zentralen Datenspeicher. An einem bestimmten Punkt in diesem Prozess werden die Daten typischerweise transformiert, sodass sie im zentralen Speicher besser verwendbar und relevant sind.
 
-Mit cloudbasierten Tools stehen diese Techniken in Form von Tools mit nutzungsabhängiger Bezahlung zur Verfügung und senken so die Hemmschwelle für den Einstieg in Datensammlung und -zentralisierung. Tools wie Azure Database Migration Service und Azure Data Factory sind zwei Beispiele. Die Referenzarchitektur für [Data Factory mit einem OLAP-Datenspeicher](https://docs.microsoft.com/azure/architecture/data-guide/relational-data/etl) ist ein Beispiel einer solchen Lösung.
+Mit cloudbasierten Tools stehen diese Techniken in Form von Tools mit nutzungsabhängiger Bezahlung zur Verfügung und senken so die Hemmschwelle für den Einstieg in Datensammlung und -zentralisierung. Tools wie Azure Database Migration Service und Azure Data Factory sind zwei Beispiele. Die Referenzarchitektur für [Data Factory mit einem OLAP-Datenspeicher](/azure/architecture/data-guide/relational-data/etl) ist ein Beispiel einer solchen Lösung.
 
 **Erfassung:** Einige Daten befinden sich nicht in einem vorhandenen Datenspeicher. Wenn diese temporären Daten eine primäre Quelle für die Innovation sind, sollten alternative Ansätze in Erwägung gezogen werden. Temporäre Daten finden Sie in einer Vielzahl von vorhandenen Quellen, z. B. Anwendungen, APIs, Datenströme, IoT-Geräte, Blockchain, Anwendungscache, Medieninhalt oder sogar Flatfiles.
 
-Diese unterschiedlichen Datenformen können Sie im Rahmen einer OLAP- oder Big Data-Lösung in einen zentralen Datenspeicher integrieren. Für frühe Iterationen von Erstellen-Messen-Lernen-Zyklen ist eine OLTP-Lösung (Online Transactional Processing) jedoch möglicherweise mehr als ausreichend, um eine Kundenhypothese zu überprüfen. OLTP-Lösungen sind nicht für alle Berichterstellungsszenarios die beste Lösung. Wenn Sie jedoch [Beim Erstellen einen Blick auf die Kundenanforderungen behalten](./build.md), sollten Sie sich mehr auf die Kundenanforderungen als auf die Entscheidungen zu den technischen Tools konzentrieren. Nachdem die Kundenhypothese bedarfsabhängig überprüft wurde, ist möglicherweise eine geeignetere Plattform erforderlich. Die Referenzarchitektur für [OLTP-Datenspeicher](https://docs.microsoft.com/azure/architecture/data-guide/relational-data/online-transaction-processing) kann bei der Ermittlung des für Ihre Lösung am besten geeigneten Datenspeichers helfen.
+Diese unterschiedlichen Datenformen können Sie im Rahmen einer OLAP- oder Big Data-Lösung in einen zentralen Datenspeicher integrieren. Für frühe Iterationen von Erstellen-Messen-Lernen-Zyklen ist eine OLTP-Lösung (Online Transactional Processing) jedoch möglicherweise mehr als ausreichend, um eine Kundenhypothese zu überprüfen. OLTP-Lösungen sind nicht für alle Berichterstellungsszenarios die beste Lösung. Wenn Sie jedoch [Beim Erstellen einen Blick auf die Kundenanforderungen behalten](./build.md), sollten Sie sich mehr auf die Kundenanforderungen als auf die Entscheidungen zu den technischen Tools konzentrieren. Nachdem die Kundenhypothese bedarfsabhängig überprüft wurde, ist möglicherweise eine geeignetere Plattform erforderlich. Die Referenzarchitektur für [OLTP-Datenspeicher](/azure/architecture/data-guide/relational-data/online-transaction-processing) kann bei der Ermittlung des für Ihre Lösung am besten geeigneten Datenspeichers helfen.
 
 **Virtualisieren:** Die Integration und Erfassung von Daten kann manchmal die Innovation bremsen. Wenn bereits eine Lösung für die Datenvirtualisierung verfügbar ist, stellt dies möglicherweise ein geeigneteren Ansatz dar. Erfassung und Integration können sowohl Speicher- als auch Entwicklungsanforderungen duplizieren, die Datenlatenz steigern, die Angriffsfläche vergrößern, Qualitätsprobleme verursachen und den Governanceaufwand erhöhen. Die Datenvirtualisierung ist eine zeitgemäße Alternative, bei der die ursprünglichen Daten an einem einzigen Ort gespeichert werden und Pass-Through- oder zwischengespeicherte Abfragen der Quelldaten erstellt werden.
 
-SQL Server 2017 und Azure SQL Data Warehouse unterstützen [PolyBase](https://docs.microsoft.com/sql/relational-databases/polybase/polybase-guide). Dies ist der in Azure am häufigsten verwendete Ansatz zur Datenvirtualisierung.
+SQL Server 2017 und Azure SQL Data Warehouse unterstützen [PolyBase](/sql/relational-databases/polybase/polybase-guide). Dies ist der in Azure am häufigsten verwendete Ansatz zur Datenvirtualisierung.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
