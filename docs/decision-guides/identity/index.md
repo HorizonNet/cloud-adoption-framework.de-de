@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: cef47631cc3fba0b6645476f5b91b330ea8c89ef
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: cbf0a58c8d7cd89937d7a49c692ab5bd633c1fc8
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574175"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88847784"
 ---
 <!-- cSpell:ignore Kerberos NTLM SAML -->
 
@@ -63,7 +63,7 @@ Azure AD ist das native IAM-System, mit dem Sie Benutzern und Gruppen den Zugri
 Für Organisationen mit einer bestehenden lokalen Active Directory-Infrastruktur ist die Verzeichnissynchronisierung oft die beste Lösung, um die bestehende Benutzer- und Zugriffsverwaltung aufrechtzuerhalten und gleichzeitig die erforderlichen IAM-Funktionen für die Verwaltung von Cloudressourcen bereitzustellen. Bei diesem Prozess werden Verzeichnisinformationen kontinuierlich zwischen Azure AD und lokalen Verzeichnisdiensten repliziert, wodurch gemeinsame Anmeldeinformationen für Benutzer und ein einheitliches Identitäts-, Rollen- und Berechtigungssystem in der gesamten Organisation ermöglicht werden.
 
 > [!NOTE]
-> Organisationen, die Office 365 eingeführt haben, haben unter Umständen bereits die [Verzeichnissynchronisierung](/office365/enterprise/set-up-directory-synchronization) zwischen ihrer lokalen Active Directory-Infrastruktur und Azure Active Directory eingerichtet.
+> Organisationen, die Microsoft 365 eingeführt haben, haben unter Umständen bereits die [Verzeichnissynchronisierung](/office365/enterprise/set-up-directory-synchronization) zwischen ihrer lokalen Active Directory-Infrastruktur und Azure Active Directory eingerichtet.
 
 **Annahmen zur Verzeichnissynchronisierung:** Für den Einsatz einer synchronisierten Identitätslösung wird Folgendes angenommen:
 

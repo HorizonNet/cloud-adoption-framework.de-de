@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 5eeb8bb94ff0de3c1d684bdfd7523657678f9d4b
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: c178c8814238829ef3904917e47c7990170f0bb1
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572067"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848209"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -37,11 +37,6 @@ In diesem Artikel werden die drei Prozesse behandelt, die zum Durchführen diese
 Für alle Verwaltungslösungen, die unter [Azure-Verwaltungstools und -dienste](./tools-services.md) beschrieben sind, muss der Log Analytics-Agent auf virtuellen Azure-Computern und lokalen Servern installiert sein. Sie können das Onboarding für Ihre Azure-VMs mit Azure Policy bedarfsabhängig durchführen. Weisen Sie eine Richtlinie zu, um sicherzustellen, dass der Agent auf Ihren Azure-VMs installiert ist und eine Verbindung mit dem richtigen Log Analytics-Arbeitsbereich besteht.
 
 Azure Policy verfügt über eine [integrierte Richtlinieninitiative](/azure/governance/policy/concepts/definition-structure#initiatives), die den Log Analytics-Agent und den [Microsoft Dependency-Agent](/azure/azure-monitor/insights/vminsights-onboard#the-microsoft-dependency-agent) umfasst, der für Azure Monitor für VMs benötigt wird.
-
-<!-- TODOBACKLOG: Add these when available.
-**Preview:** Enable Azure Monitor for virtual machine scale sets.
-**Preview:** Enable Azure Monitor for VMs.
- -->
 
 > [!NOTE]
 > Weitere Informationen zu den unterschiedlichen Agents für die Azure-Überwachung finden Sie unter [Übersicht über die Azure-Überwachungs-Agents](/azure/azure-monitor/platform/agents-overview).

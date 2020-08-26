@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 7cf77a1d6b8335d11a7e4c116ecb5463d5aee312
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 0a605d987715aee0b12c846472a6fddd1060087c
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575127"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88662471"
 ---
 <!-- docsTest:disable TODO -->
 <!-- cSpell:ignore tracsman jonor rossort NVAs iptables WAFs DDOS ITSM LLAP anycast vwan -->
@@ -315,7 +315,7 @@ In Azure Monitor gibt es zwei grundlegende Typen von Protokollen:
 Azure Monitor kann Daten aus vielen verschiedenen Quellen sammeln. Sie können sich das Überwachen von Daten für Ihre Anwendungen in Ebenen vorstellen, die von Ihrer Anwendung über ein Betriebssystem und die Dienste, auf denen sie aufbaut, bis zur Azure-Plattform selbst hinunterreichen. Azure Monitor sammelt Daten aus jeder der folgenden Schichten:
 
 - **Überwachungsdaten zu Anwendungen:** Daten zur Leistung und Funktionalität des von Ihnen geschriebenen Codes, unabhängig von seiner Plattform.
-- Überwachungsdaten zum Gast-BS: Daten zum Betriebssystem, unter dem die Anwendung ausgeführt wird. Dieses Betriebssystem kann in Azure, einer anderen Cloud oder lokal ausgeführt werden.
+- **Überwachungsdaten zum Gast-BS:** Daten zum Betriebssystem, unter dem die Anwendung ausgeführt wird. Dieses Betriebssystem kann in Azure, einer anderen Cloud oder lokal ausgeführt werden.
 - **Überwachungsdaten zur Azure-Ressource:** Daten zum Betrieb einer Azure-Ressource.
 - **Überwachungsdaten zum Azure-Abonnement:** Daten zum Betrieb und zur Verwaltung eines Azure-Abonnements sowie Daten zur Integrität und zum Betrieb von Azure selbst.
 - **Überwachungsdaten zu Azure-Mandanten:** Daten zum Betrieb von Azure-Diensten auf Mandantenebene, z. B. Azure Active Directory.

@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 238dd2621349cf396eda9ff3ff2c075f3475ced4
-ms.sourcegitcommit: d31a9043d1ae9283ed126bf118ca26d1d18d6948
+ms.openlocfilehash: c4155024eb86a709e23880f122ea09297a272550
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88040863"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848311"
 ---
 # <a name="implement-cloud-adoption-framework-enterprise-scale-landing-zones-in-azure"></a>Implementieren von Cloud Adoption Framework-Zielzonen auf Unternehmensebene in Azure
 
@@ -24,9 +24,9 @@ In der folgenden Tabelle sind Beispiele für modulare Implementierungen aufgefü
 
 | Beispielbereitstellung  | BESCHREIBUNG  | GitHub-Repository | Bereitstellen in Azure |
 |---------|---------|---------|---------|---------|---------|---------|---------|
-| Unternehmensweite Grundlage | Dies ist die empfohlene Grundlage für die unternehmensweite Einführung. | [Beispiel auf GitHub](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/wingtip/README.md) | [Beispiel in Azure bereitstellen](https://ms.portal.azure.com/?feature.customportal=false#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FEnterprise-Scale%2Fmain%2Fdocs%2Freference%2Fwingtip%2FarmTemplates%2Fes-foundation.json/createUIDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FEnterprise-Scale%2Fmain%2Fdocs%2Freference%2Fwingtip%2FarmTemplates%2Fportal-es-foundation.json) |
-| Unternehmensweites Virtual WAN | Fügen Sie ein Virtual WAN-Netzwerkmodul zur unternehmensweiten Grundlage hinzu. | [Beispiel auf GitHub](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/contoso/Readme.md) | [Beispiel in Azure bereitstellen](https://ms.portal.azure.com/?feature.customportal=false#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FEnterprise-Scale%2Fmain%2Fdocs%2Freference%2Fcontoso%2FarmTemplates%2Fes-vwan.json/createUIDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FEnterprise-Scale%2Fmain%2Fdocs%2Freference%2Fcontoso%2FarmTemplates%2Fportal-es-vwan.json) |
-| Hub-and-Spoke auf Unternehmensebene | Fügen Sie der unternehmensweiten Grundlage ein Hub-and-Spoke-Netzwerkmodul hinzu. | [Beispiel auf GitHub](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/adventureworks/README.md) | <!-- [Deploy example to Azure](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fkrnese%2FAzureDeploy%2Fmaint%2FARM%2Fdeployments%2Fe2e.json) --> In Kürze verfügbar |
+| Unternehmensweite Grundlage | Dies ist die empfohlene Grundlage für die unternehmensweite Einführung. | [Beispiel auf GitHub](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/wingtip/README.md) | [Beispiel in Azure bereitstellen](https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FEnterprise-Scale%2Fmain%2Fdocs%2Freference%2Fwingtip%2FarmTemplates%2Fes-foundation.json/createUIDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FEnterprise-Scale%2Fmain%2Fdocs%2Freference%2Fwingtip%2FarmTemplates%2Fportal-es-foundation.json) |
+| Unternehmensweites Virtual WAN | Fügen Sie ein Virtual WAN-Netzwerkmodul zur unternehmensweiten Grundlage hinzu. | [Beispiel auf GitHub](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/contoso/Readme.md) | [Beispiel in Azure bereitstellen](https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FEnterprise-Scale%2Fmain%2Fdocs%2Freference%2Fcontoso%2FarmTemplates%2Fes-vwan.json/createUIDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FEnterprise-Scale%2Fmain%2Fdocs%2Freference%2Fcontoso%2FarmTemplates%2Fportal-es-vwan.json) |
+| Hub-and-Spoke auf Unternehmensebene | Fügen Sie der unternehmensweiten Grundlage ein Hub-and-Spoke-Netzwerkmodul hinzu. | [Beispiel auf GitHub](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/adventureworks/README.md) |[Beispiel in Azure bereitstellen](https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FEnterprise-Scale%2Fmain%2Fdocs%2Freference%2Fadventureworks%2FarmTemplates%2Fes-hubspoke.json/createUIDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FEnterprise-Scale%2Fmain%2Fdocs%2Freference%2Fadventureworks%2FarmTemplates%2Fportal-es-hubspoke.json) |
 
 ## <a name="next-steps"></a>Nächste Schritte
 

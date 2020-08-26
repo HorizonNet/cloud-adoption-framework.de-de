@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: d0822a927afc5d316b97d227b5a2a9afec60e224
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 42e57362a0b4f6dff45995b81352baab5ef358a0
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88566678"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88662352"
 ---
 <!-- cSpell:ignore MSPs -->
 
@@ -59,9 +59,11 @@ Sie sind bei Ihrem Vorhaben nicht allein. Es gibt mehrere Optionen, um Ihr Team 
 ### <a name="azure-solution-providers"></a>Azure-Lösungsanbieter
 
 Microsoft Certified Solution Providers sind darauf spezialisiert, weltweit moderne Kundenlösungen auf der Grundlage von Microsoft-Technologien bereitzustellen. Optimieren Sie mit Unterstützung eines erfahrenen Partners Ihr Business in der Cloud.
+
 **[Suchen eines Cloud Solution Providers (CSP)](https://www.microsoft.com/solution-providers/home).** Ein zertifizierter CSP unterstützt Sie dabei, das Potenzial der Cloud optimal auszuschöpfen, indem er die geschäftlichen Ziele für eine Einführung der Cloud bewertet, die richtige Cloudlösung zur Erfüllung Ihrer Geschäftsanforderungen ermittelt und Ihrem Unternehmen dabei hilft, agiler und effizienter zu werden.
 
 Azure Expert Managed Services Provider (MSP) haben sich einer Überprüfung durch Dritte unterzogen, um eine höhere Stufe von Qualifikationen zu validieren, die durch zertifizierte Mitarbeiterzahlen, Kundenreferenzen, den jährlichen Verbrauch von Azure im großen Stil und andere Kriterien nachgewiesen wird.
+
 **[Partner für verwaltete Dienste suchen](https://www.microsoft.com/solution-providers/search?cacheid=16a3b49b-fef2-449d-bdf0-628008114cca).** Ein Azure-Partner für verwaltete Dienste (Managed Service Partner, MSP) unterstützt Unternehmen beim Übergang zu Azure und steht ihnen bei allen Aspekten der Cloud Journey mit Rat und Tat zur Seite. Von der Beratung über die Migration bis hin zum Prozessmanagement zeigen Cloud-MSPs Kunden die Vorteile auf, die eine Einführung der Cloud mit sich bringt. Sie sind auch eine zentrale Anlaufstelle für allgemeine Unterstützung, Bereitstellung sowie Fragen zur Abrechnung – all dies mit einem flexiblen Modell mit nutzungsbasierter Bezahlung.
 
 Parallel zur Entwicklung der Cloudeinführungsstrategie sollte das Cloudstrategieteam damit beginnen, Lösungsanbieter zu identifizieren, die als Partner bei der Umsetzung der Geschäftsziele in Frage kommen.
