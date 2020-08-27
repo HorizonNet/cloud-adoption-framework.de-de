@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: edeb9aa24b57741bb81d834384b8b5d3a01083da
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a95a843d86f793e264604806a40270993fddcc01
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574090"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88881630"
 ---
 # <a name="resource-consistency-decision-guide"></a>Leitfaden zur Entscheidungsfindung bei der Ressourcenkonsistenz
 
@@ -58,7 +58,7 @@ Um sicherzustellen, dass Governancerichtlinien bei der Erstellung von Ressourcen
 
 Durch die Kombination aus Ressourcengruppen und standardisierten Resource Manager-Vorlagen können Sie Standards dahingehend erzwingen, welche Einstellungen in einer Bereitstellung erforderlich sind und welche [Azure-Richtlinienregeln](/azure/governance/policy/overview) für die einzelnen Ressourcengruppen oder Ressourcen gelten sollen.
 
-So kann es beispielsweise erforderlich sein, dass alle in Ihrem Abonnement bereitgestellten virtuellen Computer mit einem gemeinsamen Subnetz verbunden sind, das von Ihrem zentralen IT-Team verwaltet wird. Sie können eine Standardvorlage für die Bereitstellung von Workload-VMs erstellen, um eine separate Ressourcengruppe für die Workload zu erstellen und die erforderlichen VMs in dieser bereitzustellen. Diese Ressourcengruppe weist eine Richtlinienregel auf, gemäß der nur Netzwerkschnittstellen innerhalb der Ressourcengruppe mit dem gemeinsamen Subnetz verbunden werden dürfen.
+So kann es beispielsweise erforderlich sein, dass alle virtuellen Computer, die in Ihrem Abonnement bereitgestellt werden, mit einem gemeinsamen Subnetz verbunden sind, das von Ihrem zentralen IT-Team verwaltet wird. Sie können eine Standardvorlage für die Bereitstellung von Workload-VMs erstellen, um eine separate Ressourcengruppe für die Workload zu erstellen und die erforderlichen VMs in dieser bereitzustellen. Diese Ressourcengruppe weist eine Richtlinienregel auf, gemäß der nur Netzwerkschnittstellen innerhalb der Ressourcengruppe mit dem gemeinsamen Subnetz verbunden werden dürfen.
 
 Eine ausführlichere Erläuterung der Erzwingung Ihrer Richtlinienentscheidungen innerhalb einer Cloudbereitstellung finden Sie unter [Richtlinienerzwingung](../policy-enforcement/index.md).
 

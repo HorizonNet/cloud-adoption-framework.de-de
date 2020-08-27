@@ -7,15 +7,13 @@ ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 001689cb017e6e4c86d2e79ae880aef74f78cff5
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 658966ece13b5d26e5b016fa189eacf2ce1d6f6f
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572220"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88878026"
 ---
-<!-- cSpell:ignore asabbour sabbour -->
-
 # <a name="kubernetes-in-the-cloud-adoption-framework"></a>Kubernetes im Framework für die Cloudeinführung
 
 Sehen Sie sich ein präskriptives Framework mit den Tools, Programmen und Inhalten (Best Practices, Konfigurationsvorlagen und Architekturleitfäden) an, um die Einführung von Kubernetes und cloudnativen Methoden im großen Stil zu vereinfachen.

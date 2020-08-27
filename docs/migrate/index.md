@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: seo-azure-migrate
-ms.openlocfilehash: 08a7b2dd69e9c2d5dc05a56415aa8bc1faa787ef
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: e84bba82e088c1326ecabf420866fe3ed3240660
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570418"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885965"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Cloudmigration im Cloud Adoption Framework
 
@@ -31,7 +31,7 @@ Zur Vorbereitung auf diese Phase des Cloudeinführungszyklus werden die folgende
 
 Diese Migrationsmethodik und die obigen Schritte basieren auf den folgenden Annahmen:
 
-<!-- docsTest:ignore "plan, ready, and Adopt methodologies" -->
+<!-- docsTest:casing "Plan, Ready, and Adopt methodologies" -->
 
 - Die Methodik zum Steuern von Migrationssprints steht im Einklang mit Migrationswellen oder -releases, die mithilfe der Methoden „Planung“, „Bereitschaft“ und „Einführung“ definiert werden. Innerhalb jedes Migrationssprints wird ein Batch von Workloads zur Cloud migriert.
 - Vor der Migration von Workloads wurde mindestens eine [Zielzone](../ready/index.md) identifiziert, konfiguriert und bereitgestellt, um die Anforderungen des kurzfristigen Cloudeinführungsplan zu erfüllen.

@@ -7,18 +7,18 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
-ms.openlocfilehash: 2f4b850c634c4bf47efcc6c3ffc48bf4a1d7b058
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: f7e9a1e6848726d324b486e1a54a17cf13c61558
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574124"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88881664"
 ---
 # <a name="migration-tools-decision-guide"></a>Entscheidungsleitfaden zur Wahl des Migrationstools
 
 Die für die Migration einer Anwendung zu Azure verwendeten Strategie und Tools hängen weitgehend von Ihren Geschäftsmotivationen, Technologiestrategien und Zeitplänen sowie einem tiefen Verständnis der tatsächlichen Workloads und der zu migrierenden Ressourcen (Infrastruktur, Apps und Daten) ab. Die folgende Entscheidungsstruktur dient als Leitfaden für die Auswahl der besten Tools, die auf der Grundlage von Migrationsentscheidungen verwendet werden können. Behandeln Sie diese Entscheidungsstruktur als Ausgangspunkt.
 
-Die Entscheidung für die Migration über PaaS- (Platform as a Service) oder IaaS-Technologien (Infrastructure as a Service) wird durch das Gleichgewicht zwischen Kosten, Zeit, vorhandener technischer Schulden und langfristigen Renditen bestimmt. IaaS ist oft der schnellste Weg in die Cloud mit der geringsten erforderlichen Änderung des Workloads. PaaS könnte Änderungen an Datenstrukturen oder Quellcode erfordern, bringt aber langfristig erhebliche Renditen in Form von reduzierten Betriebskosten und höherer technischer Flexibilität. Im folgenden Diagramm steht der Begriff _Modernisierung_ für die Entscheidung, eine Ressource im Rahmen der Migration zu modernisieren und die modernisierte Ressource zu einer PaaS-Plattform zu migrieren.
+Die Entscheidung für die Migration über PaaS- (Platform as a Service) oder IaaS-Technologien (Infrastructure as a Service) wird durch das Gleichgewicht zwischen Kosten, Zeit, vorhandener technischer Schulden und langfristigen Renditen bestimmt. IaaS ist oft der schnellste Weg in die Cloud mit der geringsten erforderlichen Änderung des Workloads. PaaS könnte Änderungen an Datenstrukturen oder Quellcode erfordern, bringt aber langfristig erhebliche Renditen in Form von reduzierten Betriebskosten und höherer technischer Flexibilität. Im folgenden Diagramm steht der Begriff *Modernisierung* für die Entscheidung, eine Ressource im Rahmen der Migration zu modernisieren und die modernisierte Ressource zu einer PaaS-Plattform zu migrieren.
 
 ![Beispielentscheidungsstruktur zu Migrationstools.](../../_images/migrate/migration-tools-decision-tree.png)
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 016bca5abeaed55dadfec0bdadfd0ad4a4d4f251
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 249a5bcd3fcbefc1378fd2ee0cf8757a5b85b76e
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88195404"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879794"
 ---
 # <a name="prepare-corporate-it-policy-for-the-cloud"></a>Vorbereiten der IT-Unternehmensrichtlinie für die Cloud
 
@@ -30,7 +30,7 @@ Dieser Artikel stellt einige wichtige Aktivitäten vor, mit denen Sie Ihre Unter
 Bei herkömmlichen und inkrementellen Governanceverfahren wird die Arbeitsdefinition der Governance mithilfe einer Unternehmensrichtlinie erstellt. Die meisten IT-Governanceaktionen sind darauf ausgelegt, Technologien zum Überwachen, Durchsetzen, Ausführen und Automatisieren dieser Unternehmensrichtlinien zu implementieren. Die Cloudgovernance basiert auf ähnlichen Konzepten.
 
 ![Unternehmensgovernance und Governancedisziplinen](../../_images/operational-transformation-govern-large.png)
-_Abbildung 1: Unternehmensgovernance und Governancedisziplinen_
+*Abbildung 1: Unternehmensgovernance und Governancedisziplinen*
 
 Die Abbildung zeigt die Interaktionen zwischen Geschäftsrisiko, Richtlinien und Compliance sowie Überwachung und Durchsetzung, um eine Governancestrategie aufzubauen. Im unteren Teil sehen Sie die fünf Disziplinen der Cloudgovernance zum Umsetzen Ihrer Strategie.
 

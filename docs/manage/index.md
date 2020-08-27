@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 08b75f151806d3d03441845a4acb53e17d3a748d
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 8867c16325b936b847355aba1ace2a99306bf173
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662097"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88877737"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>Cloudverwaltung im Framework für die Cloudeinführung
 
@@ -30,8 +30,6 @@ Zur Vorbereitung auf diese Phase des Cloudeinführungszyklus empfiehlt das Frame
 | <br> ![4](../_images/icons/4.png) | <br> [Erweiterte Vorgänge und Entwurfsprinzipien](./design-principles.md): Für Plattformen oder Workloads, die ein höheres Maß an Geschäftsverpflichtungen erfordern, ist möglicherweise eine umfassendere Architekturüberprüfung erforderlich, damit die Verpflichtungen in Bezug auf Resilienz und Zuverlässigkeit erfüllt werden können. |
 
 Mit den oben beschriebenen Schritten erstellen Sie Handlungsansätze, um die Verwaltungsmethoden des Frameworks für die Cloudeinführung bereitzustellen.
-
-<!-- cSpell:ignore CAF -->
 
 ![Verwalten der Methodik des Frameworks für die Cloudeinführung](../_images/manage/caf-manage.png)
 

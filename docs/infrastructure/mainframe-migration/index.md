@@ -7,14 +7,16 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 888f31f26afcbe920fe088fb513ab2f0428d7d09
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 393d91ee283646537a1a2aea59dbe0455a3ac6c6
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88195226"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884571"
 ---
-<!-- cSpell:ignore nanra njray dbspaces dbextents VSAM RACF LPARS ASSGN DLBL EXTENT LIBDEF EXEC IPLs -->
+<!-- docsTest:casing "BMC Control-M" ASSGN DLBL EXTENT LIBDEF EXEC -->
+<!-- docsTest:ignore JOB -->
+<!-- cSpell:ignore dbspaces dbextents ASSGN DLBL EXTENT LIBDEF EXEC IPLs VSAM RACF LPARs -->
 
 # <a name="mainframe-migration-overview"></a>Übersicht zur Mainframemigration
 
@@ -65,9 +67,6 @@ Für eine genauere Optimierung wird CICS häufig mit IMS/TM (früher IMS/Data Co
 Folgende Mainframevorgänge sind typisch:
 
 - **Online:** Zu den Workloads zählen Transaktionsverarbeitung, Datenbankverwaltung und Verbindungen. Sie werden häufig mithilfe von IBM DB2-, CICS- und z/OS-Connectors implementiert.
-
-<!-- docsTest:ignore "BMC Control-M" -->
-<!-- cSpell:ignore JOB ASSGN DLBL EXTENT LIBDEF EXEC -->
 
 - **Batch:** Aufträge werden ohne Eingreifen des Benutzers ausgeführt, in der Regel nach einem regelmäßigen Zeitplan, z.B. morgens an jedem Werktag. Batchaufträge können mit einem JCL-Emulator wie Micro Focus Enterprise Server oder BMC Control-M-Software auf Systemen ausgeführt werden, die auf Windows oder Linux basieren.
 

@@ -7,12 +7,12 @@ ms.date: 03/27/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 85fe35eb9cc70af231989aa6d05b7a70df3c594b
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: d0c057d690fd5824346e5b7e0188d8d1fe83f8c3
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88196258"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884979"
 ---
 # <a name="what-business-outcomes-are-associated-with-transformation-journeys"></a>Welche Geschäftsergebnisse sind mit Transformationsprozessen verbunden?
 
@@ -49,7 +49,7 @@ Das sich schnell verändernde Geschäftsumfeld von heute setzt einen hohen Grad 
 
 Zeigen Sie [Beispiele für Agilitätsergebnisse](./agility-outcomes.md) an.
 
-<!-- docsTest:ignore "global reach" -->
+<!-- docutune:ignore "global reach" -->
 
 ### <a name="reach-outcomes"></a>Reichweitenergebnisse
 

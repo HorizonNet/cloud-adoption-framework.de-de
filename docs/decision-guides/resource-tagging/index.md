@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 0dfc5ce90a6955e36477a51a286bc3c37b01687a
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 8318e2a6633221b6b94408f997b78bbca58b9595
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574073"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884588"
 ---
-<!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
-
 # <a name="resource-naming-and-tagging-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Ressourcenbenennung und -markierung
 
 Die Organisation cloudbasierter Ressourcen ist eine wichtige Aufgabe für die IT-Abteilung, sofern Sie nicht nur über einfache Bereitstellungen verfügen. Aus den folgenden Gründen sollten Sie Benennungs- und Taggingstandards zum Organisieren Ihrer Ressourcen verwenden:
@@ -27,8 +25,8 @@ Die Organisation cloudbasierter Ressourcen ist eine wichtige Aufgabe für die IT
   - [Cloudbuchhaltungsmodelle](../../strategy/cloud-accounting.md)
   - [ROI-Berechnungen](../../strategy/financial-models.md#return-on-investment)
   - [Nachverfolgung der Kosten](../../ready/azure-best-practices/track-costs.md)
-  - [Budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
-  - [Warnungen](/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
+  - [Budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
+  - [Warnungen](/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
   - [Nachverfolgung und Berichterstellung für wiederkehrende Ausgaben](../../govern/cost-management/compliance-processes.md)
   - [Optimierungen nach der Implementierung](../../govern/cost-management/discipline-improvement.md#operate-and-post-implementation)
   - [Taktiken zur Kostenoptimierung](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)
@@ -72,19 +70,15 @@ Verwenden Sie im Rahmen Ihres Planungsprozesses die folgenden Fragen, um festzus
 
 Die unten aufgeführten allgemeinen Markierungsmuster zeigen beispielhaft, wie das Markieren zum Organisieren von Cloudressourcen verwendet werden kann. Diese Muster sind nicht als exklusiv gedacht und können parallel verwendet werden, wodurch sich mehrere Möglichkeiten der Organisation von Ressourcen auf der Grundlage der Anforderungen Ihres Unternehmens ergeben.
 
-<!-- markdownlint-disable MD033 -->
-<!-- docsTest:disable -->
+<!-- cSpell:ignore catalogsearch northamerica jsmith contactalias catsearchowners businessprocess businessimpact revenueimpact -->
 
 | Markierungstyp | Beispiele | BESCHREIBUNG |
-|-----|-----|-----|
+|--|--|--|
 | Funktionen | `app` = `catalogsearch1` <br> `tier` = `web` <br> `webserver` = `apache` <br> `env` = `prod` <br> `env` = `staging` <br> `env` = `dev` | Kategorisieren Sie Ressourcen in Bezug auf ihren Zweck innerhalb einer Workload, auf die Umgebung, in der sie bereitgestellt werden, oder auf andere funktionsbezogene oder operative Details. |
 | Klassifizierung | `confidentiality` = `private` <br> `SLA` = `24hours` | Klassifiziert eine Ressource danach, wie sie verwendet wird und welche Richtlinien für sie gelten. |
 | Buchhaltung | `department` = `finance` <br> `program` = `business-initiative` <br> `region` = `northamerica` | Ermöglicht die Zuordnung einer Ressource zu bestimmten Gruppen innerhalb einer Organisation zu Abrechnungszwecken. |
 | Partnerschaft | `owner` = `jsmith` <br> `contactalias` = `catsearchowners` <br> `stakeholders` = `user1;user2;user3` | Enthält Informationen dazu, welche Personen (außerhalb der IT) mit der Ressource verknüpft oder in anderer Form von ihr betroffen sind. |
 | Zweck | `businessprocess` = `support` <br> `businessimpact` = `moderate` <br> `revenueimpact` = `high` | Richtet Ressourcen an Geschäftsfunktionen aus, um Investitionsentscheidungen besser zu unterstützen. |
-
-<!-- docsTest:enable -->
-<!-- markdownlint-enable MD033 -->
 
 ## <a name="learn-more"></a>Weitere Informationen
 

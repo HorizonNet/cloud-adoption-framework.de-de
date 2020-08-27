@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: cc7810de1100d9ab4f33973d8993824cc95beb43
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a6e8a7c5b4929c590a4e33784b9ff1f297ec31d0
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574141"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88881851"
 ---
-<!-- cSpell:ignore BYOK -->
-
 # <a name="encryption-decision-guide"></a>Leitfaden zur Entscheidungsfindung für die Verschlüsselung
 
 Das Verschlüsseln von Daten schützt vor nicht autorisiertem Zugriff. Eine ordnungsgemäß implementierte Verschlüsselung bietet zusätzliche Ebenen der Sicherheit für Ihre cloudbasierten Workloads und dient als Schutz vor Angreifern und anderen nicht autorisierten Benutzern – innerhalb und außerhalb Ihrer Organisation und Ihrer Netzwerke.
