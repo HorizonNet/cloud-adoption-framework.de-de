@@ -9,18 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d8283cc541a98ee3b6d840e405162cff012b01e6
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 5c8ea1dd6f6ad7d3824264b58bbef87b174d727a
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570282"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848192"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
 # <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>Bereitstellen von Workloads und Assets (Infrastruktur, Apps und Daten)
 
-In dieser Phase verwenden Sie die Ausgabe der Bewertungsphase, um die Migration der Umgebung einzuleiten. Dieser Leitfaden hilft Ihnen, die geeigneten Tools zu identifizieren, um den Zustand „Abgeschlossen“ zu erreichen, einschließlich nativer Tools, Tools von Drittanbietern und Projektmanagementtools.
+In dieser Phase verwenden Sie die Ausgabe der Bewertungsphase, um die Migration der Umgebung einzuleiten. Dieser Leitfaden hilft Ihnen, die geeigneten Tools zu identifizieren, um den Zustand „Abgeschlossen“ zu erreichen. Hierbei lernen Sie native Tools, Tools von Drittanbietern und Projektmanagementtools. kennen.
 
 <!-- markdownlint-disable MD025 -->
 
@@ -32,14 +32,17 @@ In den folgenden Abschnitten werden die nativen Azure-Tools beschrieben, die zur
 
 Mit Azure Migrate wird eine vereinheitlichte und erweiterbare Migrationsumgebung bereitgestellt. Azure Migrate bietet eine zentrale dedizierte Umgebung, mit der Sie Ihre Migration über die Phasen der Bewertung und Migration nach Azure verfolgen können. Azure Migrate ermöglicht Ihnen, die Tools Ihrer Wahl zu verwenden und den Fortschritt der Migration über diese Tools hinweg zu verfolgen.
 
-Azure Migrate bietet die folgenden Funktionen:
+Azure Migrate ist ein zentralisierter Hub für die Bewertung und die Migration von lokaler Infrastruktur, Anwendungen und Daten zu Azure. Er bietet die folgenden Funktionen:
 
-1. Erweiterte Bewertungs- und Migrationsfunktionen:
-    - Hyper-V-Bewertungen.
-    - Verbesserte VMware-Bewertung.
+- Einheitliche Plattform mit Bewertung, Migration und Fortschrittsverfolgung.
+- Erweiterte Bewertungs- und Migrationsfunktionen:
+    - Lokale Server, einschließlich Hyper-V und VMware.
     - Migration ohne Agents Ihrer virtuellen VMware-Computer zu Azure.
-1. Einheitliche Bewertung, Migration und Fortschrittsverfolgung.
-1. Erweiterbarer Ansatz mit ISV-Integration (z. B. Cloudamize).
+    - Datenbankmigration zu Azure SQL-Datenbank oder einer SQL Managed Instance
+    - Webanwendungen
+    - Virtual Desktop Infrastructure (VDI) zu Windows Virtual Desktop in Azure
+    - Große Datensammlungen, die Azure Data Box-Produkte verwenden
+- Erweiterbarer Ansatz mit ISV-Integration (z. B. Cloudamize).
 
 Führen Sie die folgenden Schritte aus, um eine Migration mit Azure Migrate durchzuführen:
 
@@ -49,63 +52,14 @@ Führen Sie die folgenden Schritte aus, um eine Migration mit Azure Migrate durc
 1. Wählen Sie **Bewertungstool auswählen** > **Azure Migrate: Serverbewertung** > **Weiter** aus.
 1. Wählen Sie **Überprüfen + Tools hinzufügen** aus, und überprüfen Sie die Konfiguration. Wählen Sie **Tools hinzufügen** aus, um den Auftrag zur Erstellung des Migrationsprojekts und zur Registrierung der ausgewählten Lösungen zu initiieren.
 
+> [!NOTE]
+> Eine für Ihr Szenario spezifische Anleitung finden Sie in den Tutorials und der [Dokumentation](/azure/migrate/migrate-services-overview) zu Azure Migrate.
+>
+
 #### <a name="learn-more"></a>Weitere Informationen
 
+- [Informationen zu Azure Migrate](/azure/migrate/migrate-services-overview)
 - [Azure Migrate-Tutorial: Migrieren von physischen oder virtualisierten Servern zu Azure](/azure/migrate/tutorial-migrate-physical-virtual-machines)
-
-### <a name="azure-site-recovery"></a>Azure Site Recovery
-
-Mit dem Azure Site Recovery-Dienst können Sie die Migration lokaler Ressourcen nach Azure verwalten. Außerdem können Sie mit Azure Site Recovery die Notfallwiederherstellung von lokalen Computern und Azure-VMs zwecks Business Continuity und Disaster Recovery (BCDR) verwalten und orchestrieren.
-
-Die folgenden Schritte beschreiben, wie Sie Site Recovery zur Migration verwenden:
-
-> [!TIP]
-> Abhängig von Ihrem Szenario können sich diese Schritte leicht unterscheiden. Weitere Informationen finden Sie im Artikel [Migrieren von lokalen Computern zu Azure](/azure/site-recovery/migrate-tutorial-on-premises-azure).
-
-#### <a name="prepare-azure-site-recovery-service"></a>Vorbereiten des Azure Site Recovery-Diensts
-
-1. Wählen Sie im Azure-Portal die Option **+ Ressource erstellen** > **Verwaltungstools** > **Backup und Site Recovery** aus.
-1. Wenn Sie noch keinen Wiederherstellungstresor erstellt haben, schließen Sie den Assistenten ab, um eine Ressource **Recovery Services-Tresor** zu erstellen.
-1. Wählen Sie im Menü **Ressource** die Option **Site Recovery** > **Infrastruktur vorbereiten** > **Schutzziel** aus.
-1. Wählen Sie in **Schutzziel** aus, was Sie migrieren möchten.
-    1. **VMware:** Wählen Sie **To Azure** (Zu Azure) > **Ja, mit VMware vSphere-Hypervisor**.
-    1. **Physischer Computer:** Wählen Sie **To Azure** (Zu Azure) > **Nicht virtualisiert/Andere** aus.
-    1. **Hyper-V:** Wählen Sie **To Azure** (Zu Azure) > **Ja, mit Hyper-V** aus. Wenn Hyper-V-VMs von VMM verwaltet werden, wählen Sie **Ja** aus.
-
-#### <a name="configure-migration-settings"></a>Konfigurieren von Migrationseinstellungen
-
-1. Richten Sie bei Bedarf die Quellumgebung ein.
-1. Richten Sie die Zielumgebung ein.
-    1. Wählen Sie **Infrastruktur vorbereiten** > **Ziel** und anschließend das gewünschte Azure-Abonnement aus.
-    1. Geben Sie das Ressourcen-Manager-Bereitstellungsmodell an.
-    1. Site Recovery prüft, ob Sie über ein oder mehrere kompatible Azure Storage-Konten und -Netzwerke verfügen.
-1. Richten Sie eine Replikationsrichtlinie ein.
-1. Aktivieren Sie die Replikation.
-1. Führen Sie eine Testmigration (Testfailover) aus.
-
-#### <a name="migrate-to-azure-using-failover"></a>Migrieren zu Azure mit Failover
-
-1. Wählen Sie in **Einstellungen** > **Replizierte Elemente** den Computer und dann **Failover** aus.
-1. Wählen Sie unter **Failover** einen **Wiederherstellungspunkt** für das Failover aus. Wählen Sie den letzten Wiederherstellungspunkt aus.
-1. Konfigurieren Sie alle Einstellungen für Verschlüsselungsschlüssel nach Bedarf.
-1. Wählen Sie **Computer vor Beginn des Failovers herunterfahren** aus. Site Recovery versucht, virtuelle Computer herunterzufahren, bevor das Failover ausgelöst wird. Das Failover wird auch dann fortgesetzt, wenn das Herunterfahren nicht erfolgreich ist. Der Fortschritt des Failovers wird auf der Seite „Aufträge“ angezeigt.
-1. Überprüfen Sie, ob die Azure-VM wie erwartet in Azure angezeigt wird.
-1. Wählen Sie unter **Replizierte Elemente** die VM aus und lassen Sie sie ausgewählt (oder drücken Sie die rechte Maustaste), und wählen Sie dann **Migration abschließen** aus.
-1. Führen Sie alle Schritte nach der Migration nach Bedarf aus (relevante Informationen finden Sie in diesem Handbuch).
-
-::: zone target="chromeless"
-
-::: form action="Create[#create/Microsoft.RecoveryServices]" submitText="Create a Recovery Services vault" :::
-
-::: zone-end
-
-::: zone target="docs"
-
-Weitere Informationen finden Sie unter
-
-- [Migrieren von lokalen Computern zu Azure](/azure/site-recovery/migrate-tutorial-on-premises-azure)
-
-::: zone-end
 
 ### <a name="azure-database-migration-service"></a>Azure Database Migration Service
 
@@ -151,7 +105,9 @@ Weitere Informationen finden Sie unter
 
 ### <a name="data-migration-assistant"></a>Datenmigrations-Assistent
 
-Der Datenmigrations-Assistent hilft Ihnen beim Upgrade auf eine moderne Datenplattform, indem er Kompatibilitätsprobleme erkennt, die die Datenbankfunktionalität in Ihrer neuen Version von SQL Server oder Microsoft Azure SQL-Datenbank beeinträchtigen können. DMA empfiehlt Leistungs- und Zuverlässigkeitsverbesserungen für Ihre Zielumgebung und ermöglicht es Ihnen, Ihr Schema, Ihre Daten und abhängige Objekte vom Quellserver auf Ihren Zielserver zu verschieben.
+Der Datenmigrations-Assistent (DMA) hilft Ihnen beim Upgrade auf eine moderne Datenplattform, indem er Kompatibilitätsprobleme erkennt, die die Datenbankfunktionalität in Ihrer neuen Version von SQL Server oder Microsoft Azure SQL-Datenbank beeinträchtigen können. DMA empfiehlt Leistungs- und Zuverlässigkeitsverbesserungen für Ihre Zielumgebung und ermöglicht es Ihnen, Ihr Schema, Ihre Daten und abhängige Objekte vom Quellserver auf Ihren Zielserver zu verschieben.
+
+Der Datenmigrations-Assistent ist in Azure Migrate integriert, sodass Sie den gesamten Bewertungsfortschritt im Azure Migrate-Dashboard verfolgen können. Starten Sie DMA aus Azure Migrate, indem Sie das Azure Migrate: Datenbank-Bewertungstool hinzufügen, und fügen Sie Ihre Datenbankbewertung zu Azure Migrate hinzu, indem Sie die Schaltfläche „In Azure Migrate hochladen“ in DMA auswählen.
 
 > [!NOTE]
 > Für große Migrationen (in Bezug auf Anzahl und Größe der Datenbanken) empfehlen wir Ihnen, Azure Database Migration Service zu verwenden, mit dem Datenbanken im großen Maßstab migriert werden können.
@@ -264,11 +220,11 @@ Microsoft bietet außerdem folgende Projektverwaltungstools zur Erweiterung des 
 - [Microsoft Teams](https://products.office.com/microsoft-teams): Tool für Zusammenarbeit und Kommunikation im Team. Teams integriert auch Planner und andere Tools, um die Zusammenarbeit zu verbessern.
 - [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops?view=azure-devops): Die Planungsvorlage des Frameworks für die Cloudeinführung ist zur Verwendung von Azure DevOps nicht erforderlich. Sie können den Dienst ohne die Vorlage verwenden, um Ihre Infrastruktur als Code zu verwalten, oder die Projektverwaltung mithilfe der Arbeitselemente und Boards durchführen. Mit steigender Erfahrung können Sie die CI/CD-Funktionen nutzen.
 
-Dies sind nicht die einzigen verfügbaren Tools. Viele weitere Tools von Drittanbietern sind in der Projektmanagementcommunity weit verbreitet.
+Diese Projektmanagementtools sind nicht die einzigen verfügbaren Tools. Viele weitere Tools von Drittanbietern sind in der Projektmanagementcommunity weit verbreitet.
 
 ### <a name="set-up-for-devops"></a>Setup für DevOps
 
-Die Migration in Cloudtechnologien bietet eine großartige Gelegenheit, Ihre Organisation für DevOps und CI/CD einzurichten. Selbst wenn Ihre Organisation nur Infrastruktur verwaltet, können Sie, wenn Sie beginnen, Ihre Infrastruktur als Code zu verwalten und die Branchenmuster und -praktiken für DevOps zu verwenden, Ihre Agilität durch CI/CD-Pipelines erhöhen und sich so schneller an Änderungs-, Wachstums-, Release- und sogar Wiederherstellungszenarien anpassen.
+Die Migration zu Cloudtechnologien bietet eine großartige Gelegenheit, Ihre Organisation für DevOps und CI/CD einzurichten. Selbst wenn Ihre Organisation nur Infrastruktur verwaltet, können Sie, wenn Sie beginnen, Ihre Infrastruktur als Code zu verwalten und die Branchenmuster und -praktiken für DevOps zu verwenden, Ihre Agilität durch CI/CD-Pipelines erhöhen und sich so schneller an Änderungs-, Wachstums-, Release- und sogar Wiederherstellungszenarien anpassen.
 
 Azure DevOps bietet die erforderlichen Funktionen und die Integration mit Azure, lokalen Umgebungen und sogar anderen Clouds. Weitere Informationen finden Sie unter [Azure DevOps](https://azure.microsoft.com/services/devops). Ein angeleitetes Training finden Sie unter [Schnellstart: CI/CD mit Azure DevOps](https://microsoft.github.io/PartsUnlimited/pandp/200.1x-PandP-CICDQuickstartwithVSTS.html).
 
@@ -282,4 +238,4 @@ Hier sehen Sie ein Beispiel für einen maßgeschneiderten Lernpfad auf Microsoft
 
 ## <a name="cost-management"></a>[Kostenmanagement](#tab/ManageCost)
 
-Bei der Migration von Ressourcen in Ihre Cloudumgebung ist es wichtig, eine regelmäßige Kostenanalyse durchzuführen. Dadurch können Sie unerwartete Nutzungsgebühren vermeiden, denn der Migrationsprozess stellt möglicherweise zusätzliche Nutzungsanforderungen an Ihre Dienste. Sie können zudem die Größe der Ressourcen nach Bedarf anpassen, um Kosten und Workload auszugleichen (weitere Details finden Sie im Abschnitt [Optimierung und Transformation](./optimize-and-transform.md)).
+Bei der Migration von Ressourcen in Ihre Cloudumgebung ist es wichtig, eine regelmäßige Kostenanalyse durchzuführen. Da der Migrationsprozess zusätzliche Nutzungsanforderungen an Ihre Dienste stellen kann, können Ihnen regelmäßige Kostenanalysen dabei helfen, unerwartete Nutzungsgebühren zu vermeiden. Sie können zudem die Größe der Ressourcen nach Bedarf anpassen, um Kosten und Workload auszugleichen (weitere Details finden Sie im Abschnitt [Optimierung und Transformation](./optimize-and-transform.md)).
