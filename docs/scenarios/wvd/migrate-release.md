@@ -7,12 +7,12 @@ ms.date: 07/01/2010
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 301afe5e901685b5069ec73937c86674a1eb17d1
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 2fedb2769fec0179f24c2e4e8528d20c22efb4a5
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574991"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848260"
 ---
 # <a name="windows-virtual-desktop-post-deployment"></a>Nach der Bereitstellung von Windows Virtual Desktop
 
@@ -30,7 +30,7 @@ Der Freigabevorgang für die Migration oder Bereitstellung von Windows Virtual D
 
 Nach Abschluss der Freigabe werden häufig [Protokollierung und Diagnose für einen besseren Betrieb von Windows Virtual Desktop](/azure/virtual-desktop/diagnostics-log-analytics#push-diagnostics-data-to-your-workspace) hinzugefügt. Betriebsteams integrieren außerdem im Allgemeinen die in einem Pool zusammengefassten Hosts und virtuellen Desktop-Computern in die [bewährten Methoden für die Azure-Serververwaltung](../../manage/azure-server-management/index.md), um Berichte, Patches und Konfigurationen für Business Continuity & Disaster Recovery zu verwalten.
 
-Obwohl der Freigabevorgang den Rahmen dieses Migrationsszenarios überschreitet, kann der Prozess jedoch die Notwendigkeit erkennbar machen, in nachfolgenden Durchläufen weitere Workloads zu Azure zu migrieren. Wenn Sie Office 365 oder Azure Active Directory nicht konfiguriert haben, kann sich Ihr Cloudeinführungsteam nach der Veröffentlichung der Desktopszenarien für das Onboarding für diese Dienste entscheiden. In einem Hybridbetriebsmodell können die Betriebsteams auch Intune, System Center oder andere Konfigurationsverwaltungstools integrieren, um Betrieb, Compliance und Sicherheit zu verbessern.
+Obwohl der Freigabevorgang den Rahmen dieses Migrationsszenarios überschreitet, kann der Prozess jedoch die Notwendigkeit erkennbar machen, in nachfolgenden Durchläufen weitere Workloads zu Azure zu migrieren. Wenn Sie Microsoft 365 oder Azure Active Directory nicht konfiguriert haben, kann sich Ihr Cloudeinführungsteam nach der Veröffentlichung der Desktopszenarien für das Onboarding für diese Dienste entscheiden. In einem Hybridbetriebsmodell können die Betriebsteams auch Intune, System Center oder andere Konfigurationsverwaltungstools integrieren, um Betrieb, Compliance und Sicherheit zu verbessern.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

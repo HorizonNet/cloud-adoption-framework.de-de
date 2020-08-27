@@ -3,16 +3,16 @@ title: Implementierungsoptionen für Zielzonen
 description: Bestimmen Sie, welche Implementierungsoption für Zielzonen Ihren Anforderungen am besten gerecht wird.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 06/15/2020
+ms.date: 07/07/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: fada3a1485c470e04562365fe4f0a038c121708c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 6a5aad81f1ea855434160c2bc8aefd313fca7335
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569653"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88662199"
 ---
 # <a name="landing-zone-implementation-options"></a>Implementierungsoptionen für Zielzonen
 
@@ -34,12 +34,13 @@ In der folgenden Tabelle werden einige der Implementierungsoptionen für Zielzon
 
 | Implementierungsoption | BESCHREIBUNG | Bereitstellungsgeschwindigkeit | Tiefere Entwurfsprinzipien | Anweisungen zur Bereitstellung |
 |---|---|---|---|---|
-| [Blaupause für die Zielzone der Cloud Adoption Framework-Migration](./migrate-landing-zone.md) | Stellt die Grundlage für das Migrieren von Ressourcen mit geringem Risiko dar. | Klein anfangen | [Entwurfsprinzipien](./migrate-landing-zone.md#design-principles) | [Bereitstellen](./migrate-landing-zone.md) |
-| [Blaupause für die Cloud Adoption Framework-Grundlage](./foundation-blueprint.md) | Hiermit werden die Tools hinzugefügt, die für den Einstieg in die Entwicklung einer Governance-Strategie mindestens erforderlich sind. | Klein anfangen | [Entwurfsprinzipien](./foundation-blueprint.md#design-principles) | [Bereitstellen](./foundation-blueprint.md) |
-| [CAF-Zielzone (Cloud Adoption Framework) auf Unternehmensebene](../enterprise-scale/index.md) | Stellt eine für Unternehmen geeignete Plattformgrundlage mit allen erforderlichen gemeinsamen Diensten zum Unterstützen des kompletten IT-Portfolios bereit. | Unternehmensebene | [Entwurfsprinzipien](../enterprise-scale/design-principles.md) | [Bereitstellen](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/contoso/Readme.md) |
-| [Terraform-Module für das Cloud Adoption Framework](./terraform-landing-zone.md) | Drittanbieter-Pfad für Betriebsmodelle mit mehreren Clouds. Dieser Pfad kann zunächst von Azure ausgehende Betriebsmodelle beschränken. | Klein anfangen | [Entwurfsprinzipien](./terraform-landing-zone.md#design-decisions) | [Bereitstellen](./terraform-landing-zone.md#customize-and-deploy-your-first-landing-zone) |
+| [Blaupause für die CAF-Migrationszielzone](./migrate-landing-zone.md) | Stellt die Grundlage für das Migrieren von Ressourcen mit geringem Risiko dar. | Klein anfangen | [Entwurfsprinzipien](./migrate-landing-zone.md#design-principles) | [Bereitstellen](./migrate-landing-zone.md) |
+| [CAF-Basisblaupause](./foundation-blueprint.md) | Hiermit werden die Tools hinzugefügt, die für den Einstieg in die Entwicklung einer Governance-Strategie mindestens erforderlich sind. | Klein anfangen | [Entwurfsprinzipien](./foundation-blueprint.md#design-principles) | [Bereitstellen](./foundation-blueprint.md) |
+| [CAF-Zielzone auf Unternehmensebene](../enterprise-scale/index.md) | Stellt eine für Unternehmen geeignete Plattformgrundlage mit allen erforderlichen gemeinsamen Diensten zum Unterstützen des kompletten IT-Portfolios bereit. | Unternehmensebene | [Entwurfsprinzipien](../enterprise-scale/design-principles.md) | [Bereitstellen](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/contoso/Readme.md) |
+| [CAF-Terraform-Module](./terraform-landing-zone.md) | Drittanbieter-Pfad für Betriebsmodelle mit mehreren Clouds. Dieser Pfad kann zunächst von Azure ausgehende Betriebsmodelle beschränken. | Klein anfangen | [Entwurfsprinzipien](./terraform-landing-zone.md#design-decisions) | [Bereitstellen](./terraform-landing-zone.md#customize-and-deploy-your-first-landing-zone) |
+| [Zielzonen von Partnern](./partner-landing-zone.md) | Partner, die Angebote anbieten, die sich an der Bereitschaftsmethodik des Cloud Adoption Framework orientieren, können ihre eigene angepasste Implementierungsoption bereitstellen. | Variable | [Entwurfsprinzipien](./partner-landing-zone.md) | [Einen Partner suchen](https://www.microsoft.com/azure/partners/adopt?filters=ready) |
 
-In der folgenden Tabelle werden dieselben Implementierungsoptionen aus einem etwas anderen Blickwinkel betrachtet, um Entscheidungsprozesse mit eher technischen Entscheidungen zu erleichtern.
+In der folgenden Tabelle werden einige dieser Implementierungsoptionen aus einem etwas anderen Blickwinkel betrachtet, um Entscheidungsprozesse mit eher technischen Entscheidungen zu erleichtern.
 
 | Implementierungsoption | Hub | Spoke | Bereitstellungstechnologie | Anweisungen zur Bereitstellung |
 |---|---|---|---|---|

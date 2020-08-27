@@ -1,25 +1,23 @@
 ---
 title: Erste Schritte mit dem Cloud Adoption Framework
 description: Entdecken Sie gängige Szenarien und die Journey durch das Cloud Adoption Framework, die diesen Szenarien am ehesten entspricht.
-services: cloud-adoption-framework
-ms.service: cloud-adoption-framework
-ms.topic: conceptual
 author: JanetCThomas
 ms.author: janet
 ms.date: 05/04/2020
+ms.topic: conceptual
+ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 63eb1694e24f1ef8041d2e08e2328314b273915c
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 457f0e57813cbc68a755d35b4eb3fdf639a419de
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662116"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884350"
 ---
 # <a name="get-started-with-the-cloud-adoption-framework"></a>Erste Schritte mit dem Cloud Adoption Framework
 
 Diese gängigen Szenarien bieten eine Roadmap für das Microsoft Cloud Adoption Framework für Azure. Sie können Ihnen dabei helfen, ein ausgewogenes Verhältnis zwischen Geschwindigkeit, Innovation und Kontrolle zu erzielen. Dabei profitieren Sie von einem flexiblen Ansatz, der es ermöglicht, mit einer minimal ausgestatteten Lösung zu beginnen. Diese Lösung können Sie im Laufe der Zeit weiter verbessern.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Szenario | Beschreibung |

@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 9c611e196b9bf5777181b99ef184759eb4d56bb6
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 346b4feabfbb7fefd8632ac4b3f5f81473815843
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573869"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88661995"
 ---
 # <a name="get-started-build-a-cloud-governance-team"></a>Erste Schritte: Aufstellen eines Cloudgovernanceteams
 
@@ -86,7 +86,7 @@ Die Cloudeinführung erfolgt normalerweise in mehreren Wellen bzw. Releases. Ein
 
 ## <a name="step-4-review-the-methodology"></a>Schritt 4: Überprüfen der Methodik
 
-Sehen Sie sich die Governancemethodik im Cloud Adoption Framework an, um die Bestimmung einer Zukunftsvision für Governance und die Auswahl eines funktionierenden Ansatzes zur Erreichung dieser Vision zu vereinfachen.
+Sehen Sie sich die Governancemethodik des Cloud Adoption Framework an, um die Bestimmung einer Zukunftsvision für Governance und die Auswahl eines funktionierenden Ansatzes zur Erreichung dieser Vision zu vereinfachen.
 
 **Ziele:**
 

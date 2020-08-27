@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: a57d476e20d037fad1531ee944f13722ecb3788d
-ms.sourcegitcommit: 08d6d5bda45814745fc181b0a07bcb8c415bf342
+ms.openlocfilehash: 82a6071b7c181acb7717333fcaaf97dcff174326
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373066"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88662437"
 ---
 <!-- cSpell:ignore MSPs -->
 
@@ -102,4 +102,4 @@ Microsoft Certified Solution Providers sind darauf spezialisiert, weltweit moder
 Holen Sie sich Hilfe bei Partnern, die einsatzbereite oder kundenspezifische Azure-Lösungen bieten, sowie Partnern, die Sie bei der Bereitstellung und Verwaltung dieser Lösungen unterstützen:
 
 - [Suchen eines Cloud Solution Providers (CSP)](https://www.microsoft.com/solution-providers/home). Ein zertifizierter CSP unterstützt Sie dabei, das Potenzial der Cloud optimal auszuschöpfen, indem er die geschäftlichen Ziele für eine Einführung der Cloud bewertet, die richtige Cloudlösung zur Erfüllung Ihrer Geschäftsanforderungen ermittelt und Ihrem Unternehmen dabei hilft, agiler und effizienter zu werden.
-- [Partner für verwaltete Dienste suchen](https://www.microsoft.com/solution-providers/search?cacheId=16a3b49b-fef2-449d-bdf0-628008114cca). Ein Azure-Partner für verwaltete Dienste (Managed Service Partner, MSP) unterstützt Unternehmen beim Übergang zu Azure und steht ihnen bei allen Aspekten der Cloud Journey mit Rat und Tat zur Seite. Von der Beratung über die Migration bis hin zum Prozessmanagement zeigen Cloud-MSPs Kunden die Vorteile auf, die eine Einführung der Cloud mit sich bringt. Sie sind auch eine zentrale Anlaufstelle für allgemeine Unterstützung, Bereitstellung sowie Fragen zur Abrechnung – all dies mit einem flexiblen Modell mit nutzungsbasierter Bezahlung.
+- [Suchen eines Azure Expert Managed Service Providers (MSP)](https://www.microsoft.com/azure/partners/azureexpertmsp?filters=all). MSPs (Managed Service Partner) helfen Organisationen beim Übergang zu Azure und stehen ihnen bei allen Aspekten der Cloudjourney mit Rat und Tat zur Seite. Von der Beratung über die Migration bis hin zum Prozessmanagement zeigen Cloud-MSPs Kunden die Vorteile auf, die eine Einführung der Cloud mit sich bringt. Sie sind auch eine zentrale Anlaufstelle für allgemeine Unterstützung, Bereitstellung sowie Fragen zur Abrechnung – all dies mit einem flexiblen Modell mit nutzungsbasierter Bezahlung.

@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: b609163e6e6239cc0b346842358ab83799630b02
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: eb9c57c8ddc91821eb6dcde48279cd08fbd5c3db
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573852"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88661944"
 ---
 # <a name="get-started-build-a-cloud-operations-team"></a>Erste Schritte: Aufbauen eines Cloudbetriebsteams
 
@@ -87,7 +87,7 @@ Die Cloudeinführung erfolgt normalerweise in mehreren Wellen bzw. Releases. Ein
 
 ## <a name="step-4-review-the-methodology"></a>Schritt 4: Überprüfen der Methodik
 
-Um eine Zukunftsvision für die Betriebsverwaltung und einen Arbeitsansatz zur Verwirklichung dieser Vision zu entwickeln, sollten Sie sich die Verwaltungsmethodik im Cloud Adoption Framework ansehen.
+Um eine Zukunftsvision für die Betriebsverwaltung und einen Arbeitsansatz zur Verwirklichung dieser Vision zu entwickeln, sollten Sie sich die Verwaltungsmethodik des Cloud Adoption Framework ansehen.
 
 **Ziele:**
 
@@ -95,7 +95,7 @@ Um eine Zukunftsvision für die Betriebsverwaltung und einen Arbeitsansatz zur V
 
 **Hinweis zur Erreichung der Ziele:**
 
-- Sehen Sie sich die [Verwaltungsmethodik im Cloud Adoption Framework ](../../manage/index.md) an.
+- Sehen Sie sich die [Verwaltungsmethodik des Cloud Adoption Framework ](../../manage/index.md) an.
 
 **Verantwortliches Team:**
 

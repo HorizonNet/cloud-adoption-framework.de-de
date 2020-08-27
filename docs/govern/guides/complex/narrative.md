@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a731afb2dc97384a4156f5781a7e13be40f54000
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: c1beda856259190adbfb6035d9c6bafd7d93d0d1
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86191330"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848175"
 ---
 <!-- cSpell:ignore CDO's CIO's -->
 
@@ -44,7 +44,7 @@ Aktuell befinden sich IT und Cloudbetrieb des Unternehmens in folgendem Zustand:
 - Die IT betreibt auf der ganzen Welt mehr als 20 Rechenzentren in Privatbesitz.
 - Aufgrund des natürlichen Wachstums und mehrere geografische Regionen gibt es nur wenige IT-Teams mit eindeutigen Anforderungen für Datenhoheit und Compliance für eine einzelne Geschäftseinheit innerhalb einer bestimmten geografischen Region.
 - Jedes Rechenzentrum ist über einer Reihe regionaler Mietleitungen verbunden, wodurch ein locker gekoppeltes globales WAN entsteht.
-- Die IT hat die Cloud eingeführt, indem alle E-Mail-Konten der Endbenutzer zu Office 365 migriert wurden. Diese Migration wurde vor mehr als sechs Monaten abgeschlossen. Seit damals wurden nur wenige IT-Ressourcen in der Cloud bereitgestellt.
+- Die IT hat die Cloud eingeführt, indem alle E-Mail-Konten der Endbenutzer zu Microsoft 365 migriert wurden. Diese Migration wurde vor mehr als sechs Monaten abgeschlossen. Seit damals wurden nur wenige IT-Ressourcen in der Cloud bereitgestellt.
 - Das primäre Entwicklungsteam des CDO arbeitet in einer Dev/Test-Kapazität, um die nativen Cloudfunktionen kennenzulernen.
 - Eine Unternehmenseinheit experimentiert mit Big Data in der Cloud. Das BI-Team innerhalb der IT ist an diesen Bestrebungen beteiligt.
 - Die vorhandene IT-Governancerichtlinie sieht vor, dass personenbezogene Kundeninformationen und Finanzdaten auf Ressourcen zu hosten sind, die dem Unternehmen direkt gehören. Diese Richtlinie blockiert den Einstieg in die Cloud für unternehmenskritische Anwendungen oder geschützte Daten.

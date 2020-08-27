@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e0d0019bd11bde0178f4cbcb0a99f2638edf43b2
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: f14f2cc1460fb5c19abd2ed1755966406fada1af
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88566848"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848158"
 ---
 # <a name="azure-fundamental-concepts"></a>Grundlegende Konzepte in Azure
 
@@ -27,7 +27,7 @@ Es ist hilfreich, die folgenden Definitionen zu kennen, wenn Sie mit der Einfüh
 - **Azure-Konto:** Die E-Mail-Adresse, die Sie beim Erstellen eines Azure-Abonnements angeben, ist das Azure-Konto für das Abonnement. Die Partei, die dem E-Mail-Konto zugeordnet ist, ist für die monatlichen Kosten zuständig, die durch die Ressourcen im Abonnement anfallen. Wenn Sie ein Azure-Konto erstellen, geben Sie Kontaktinformationen sowie Abrechnungsinformationen wie z.B. eine Kreditkarte an. Sie können für mehrere Abonnements dasselbe Azure-Konto (E-Mail-Adresse) verwenden. Jedes Abonnement ist nur einem Azure-Konto zugeordnet.
 - **Kontoadministrator:** Die Partei, die der E-Mail-Adresse zugeordnet ist, die zum Erstellen eines Azure-Abonnements verwendet wird. Der Kontoadministrator ist für die Begleichung aller Kosten verantwortlich, die durch die Ressourcen des Abonnements verursacht werden.
 - **Azure Active Directory (Azure AD):** Der cloudbasierte Identitäts- und Zugriffsverwaltungsdienst von Microsoft. Azure AD ermöglicht Ihren Mitarbeitern die Anmeldung und den Zugriff auf Ressourcen.
-- **Azure AD-Mandant:** Eine dedizierte und vertrauenswürdige Instanz von Azure AD. Ein Azure AD-Mandant wird automatisch erstellt, wenn sich Ihre Organisation zum ersten Mal für das Abonnement eines Microsoft-Clouddiensts wie Microsoft Azure, Microsoft Intune oder Office 365 registriert. Ein Azure-Mandant stellt eine einzelne Organisation dar.
+- **Azure AD-Mandant:** Eine dedizierte und vertrauenswürdige Instanz von Azure AD. Ein Azure AD-Mandant wird automatisch erstellt, wenn sich Ihre Organisation zum ersten Mal für das Abonnement eines Microsoft-Clouddiensts wie Microsoft Azure, Microsoft Intune oder Microsoft 365 registriert. Ein Azure-Mandant stellt eine einzelne Organisation dar.
 - **Azure AD-Verzeichnis:** Jeder Azure AD-Mandant verfügt über ein einzelnes dediziertes und vertrauenswürdiges Verzeichnis. Das Verzeichnis enthält die Benutzer, Gruppen und Apps des Mandanten. Das Verzeichnis wird zum Ausführen von Funktionen zur Identitäts- und Zugriffsverwaltung für Mandantenressourcen verwendet. Einem Verzeichnis können mehrere Abonnements zugeordnet werden, aber jedes Abonnement ist nur einem Verzeichnis zugeordnet.
 - **Ressourcengruppen**: Logische Container, in denen verwandte Ressourcen innerhalb eines Abonnements gruppiert werden. Jede Ressource kann nur in einer Ressourcengruppe vorhanden sein. Ressourcengruppen ermöglichen eine präzisere Gruppierung innerhalb eines Abonnements. Sie werden häufig zur Darstellung einer Sammlung von Ressourcen verwendet, die zur Unterstützung einer Workload, Anwendung oder bestimmten Funktion in einem Abonnement erforderlich sind.
 - **Verwaltungsgruppen**: Logische Container, die Sie für mindestens ein Abonnement verwenden. Sie können eine Hierarchie mit Verwaltungsgruppen, Abonnements, Ressourcengruppe und Ressourcen definieren, um Zugriff, Richtlinien und Compliance über Vererbung effizient zu verwalten.

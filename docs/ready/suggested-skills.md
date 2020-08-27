@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c4f8e3cb34f901699ebfa5506fe9e657a71dde6c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a45b0db36d2c587dbe126f47859e67418c3fe707
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575093"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88661706"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>Pfad für die Qualifikationsbereitschaft während der Phase „Bereitschaft“ eines Migrationspfads
 
@@ -62,7 +62,7 @@ Mit unseren [Microsoft Azure-Zertifizierungstrainings und -prüfungen](https://w
 
 Microsoft Learn ist ein neuer Lernansatz. Die Bereitschaft zu den neuen Qualifikationen und Aufgaben, die mit der Cloudeinführung verbunden sind, entsteht nicht problemlos. Microsoft Learn bietet einen lohnenderen Ansatz für praktisches Lernen, der Ihnen hilft, Ihre Ziele schneller zu erreichen. Punkte sammeln, zu höheren Stufen aufsteigen und mehr erreichen.
 
-Die folgenden Beispiele sind einige angepasste Lernpfade auf Microsoft Learn, die sich an der Bereitschaftsmethodik des Framework für die Cloudeinführung (Cloud Adoption Framework) ausrichten:
+Die folgenden Beispiele sind einige angepasste Lernpfade auf Microsoft Learn, die sich an der Bereitschaftsmethodik des Cloud Adoption Framework ausrichten:
 
 [Azure-Grundlagen](/learn/paths/azure-for-the-data-engineer): Erfahren Sie mehr über Cloud-Konzepte wie Hochverfügbarkeit, Skalierbarkeit, Elastizität, Flexibilität, Fehlertoleranz und Notfallwiederherstellung. Informieren Sie sich über die Vorteile von Cloud Computing in Azure und wie Sie damit Zeit und Geld sparen können. Vergleichen Sie grundlegende Strategien für den Übergang zur Azure-Cloud und stellen Sie diese gegenüber. Untersuchen Sie den Umfang der in Azure verfügbaren Dienste, einschließlich Compute, Netzwerk, Speicher und Sicherheit.
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9e06a96c7e7397680e26b326f02a055013ec29ee
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: 2b8de6fb4979621b70857a3cfd3dc0cec9e9f7f7
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86191789"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88661978"
 ---
 # <a name="improve-your-initial-cloud-governance-foundation"></a>Verbessern der ersten Grundlage für die Cloud Governance
 
@@ -37,7 +37,7 @@ Die folgenden bewährten Methoden können jederzeit auf die ursprüngliche Gover
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Sie können nicht nur bewährte Methoden anwenden, sondern auch die Governancemethodik im Cloud Adoption Framework an konkrete Geschäftsanforderungen anpassen. Nach Befolgung der entsprechenden Empfehlungen müssen Sie die [Unternehmensrichtlinie bewerten, um zusätzliche Anpassungsanforderungen zu verstehen](./corporate-policy.md).
+Sie können nicht nur bewährte Methoden anwenden, sondern auch die Governancemethodik des Cloud Adoption Framework an konkrete Geschäftsanforderungen anpassen. Nach Befolgung der entsprechenden Empfehlungen müssen Sie die [Unternehmensrichtlinie bewerten, um zusätzliche Anpassungsanforderungen zu verstehen](./corporate-policy.md).
 
 > [!div class="nextstepaction"]
 > [Auswerten der Unternehmensrichtlinie](./corporate-policy.md)

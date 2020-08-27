@@ -7,12 +7,12 @@ ms.date: 06/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 249424c9aea50df96c94f479c06e3ae28a0d522b
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: d64873d414656da8caadc6a60a2ddd08f850cf38
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88196279"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88662301"
 ---
 <!-- docsTest:ignore InterpretML FairLearn -->
 
@@ -24,12 +24,12 @@ Microsoft ist bestrebt, die KI-Entwicklung voranzutreiben und orientiert sich da
 
 Wenn Sie KI-Lösungen implementieren, sollten Sie bei Ihrer Lösung die folgenden Prinzipien berücksichtigen:
 
-- Fairness: KI-Systeme sollten alle Personen fair behandeln.
-- Zuverlässigkeit und Sicherheit: KI-Systeme sollten zuverlässig und sicher funktionieren.
-- Datenschutz und Sicherheit: KI-Systeme sollten sicher sein und die Privatsphäre respektieren.
-- Inklusion: KI-Systeme sollten von jedem genutzt werden können und Personen einbeziehen.
-- Transparenz: KI-Systeme sollten verständlich sein.
-- Verantwortlichkeit: Personen sollten für KI-Systeme verantwortlich sein.
+- **Fairness:** KI-Systeme sollten alle Personen fair behandeln.
+- **Zuverlässigkeit und Sicherheit:** KI-Systeme sollten zuverlässig und sicher funktionieren.
+- **Datenschutz und Sicherheit:** KI-Systeme sollten sicher sein und die Privatsphäre respektieren.
+- **Inklusion:** KI-Systeme sollten von jedem genutzt werden können und Personen einbeziehen.
+- **Transparenz:** KI-Systeme sollten verständlich sein.
+- **Zurechenbarkeit:** Personen sollten für KI-Systeme verantwortlich sein.
 
 ## <a name="establish-a-responsible-ai-strategy"></a>Etablieren einer Strategie für verantwortungsbewusste KI
 

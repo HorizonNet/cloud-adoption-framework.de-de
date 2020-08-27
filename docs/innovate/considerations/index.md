@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: bc06bdb894fc4ac3f92eab87de86abad3dc2d026
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 6036a110b393af78901ea92d0b3fe58630b983cc
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86449233"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88878077"
 ---
 # <a name="innovation-in-the-digital-economy"></a>Innovation in der digitalen Wirtschaft
 
@@ -35,7 +35,7 @@ Der folgende Abschnitt beschreibt die Formel für Innovation und die Zusagen, di
 
 ## <a name="formula-for-innovation"></a>Formel für Innovation
 
-Eine erfolgreiche Innovation ist kein Transformationsereignis mit großer Wirkung oder ein schwer fassbares, magisches Einhorn. Innovationserfolg ist eher ein Balanceakt, der sich durch eine einfache Gleichung veranschaulichen lässt: **Innovation = Erfindung + Einführung**.
+Eine erfolgreiche Innovation ist kein Transformationsereignis mit großer Wirkung oder ein schwer fassbares, magisches Einhorn. Innovationserfolg ist eher ein Balanceakt, der sich durch eine einfache Gleichung veranschaulichen lässt: **Innovation = Erfindung + Einführung**
 
 Innovation erfolgt an der Schnittmenge von Erfindung und Einführung. Echte Innovation ist das Ergebnis der langsamen Anpassung von menschlicher Erfahrung durch neue Ansätze, Prozesse und Technologien. In dieser Formel ist Erfinden gleichbedeutend mit dem Erstellen einer neuen Lösung, die einem Kundenbedarf entspricht. Umgekehrt entspricht die Einführung der Anwendung der neuen Lösung, um menschliche Verhaltensweisen und Interaktionen zu gestalten. Um das richtige Gleichgewicht zwischen Erfindung und Einführung zu finden, sind Iteration, datengesteuerte Entscheidungsfindung, konstantes Lernen und eine auf Wachstum ausgelegte Denkweise erforderlich. Außerdem sind Technologien erforderlich, die mit den unzähligen Verkaufschancen in der heutigen digitalen Gesellschaft Schritt halten können.
 
@@ -55,7 +55,7 @@ Jedes Entwicklungsteam verfügt über eine Reihe von Tools und Technologien, mit
 
 ## <a name="commitment-to-transparency"></a>Verpflichtung zur Transparenz
 
-Um die Messung bei einem Innovationsansatz zu verstehen, müssen Sie sich zunächst mit der Verpflichtung zur Transparenz vertraut machen. Innovationen können nur in einer Umgebung gedeihen, in der eine _wachstumsorientierte Denkweise_ herrscht. An der Wurzel einer wachstumsorientierten Denkweise steht der kulturelle Imperativ, aus Erfahrungen zu lernen. Erfolgreiche Innovation und kontinuierliches Lernen beginnen mit einem Engagement für Transparenz bei der Messung. Dies ist eine mutige Verpflichtung für das Cloudeinführungsteam. Diese Verpflichtung ist jedoch bedeutungslos, wenn sie nicht durch eine Verpflichtung zur Beibehaltung der Transparenz in Führungs- und Cloudstrategieteams ergänzt wird.
+Um die Messung bei einem Innovationsansatz zu verstehen, müssen Sie sich zunächst mit der Verpflichtung zur Transparenz vertraut machen. Innovationen können nur in einer Umgebung gedeihen, in der eine *wachstumsorientierte Denkweise* herrscht. An der Wurzel einer wachstumsorientierten Denkweise steht der kulturelle Imperativ, aus Erfahrungen zu lernen. Erfolgreiche Innovation und kontinuierliches Lernen beginnen mit einem Engagement für Transparenz bei der Messung. Dies ist eine mutige Verpflichtung für das Cloudeinführungsteam. Diese Verpflichtung ist jedoch bedeutungslos, wenn sie nicht durch eine Verpflichtung zur Beibehaltung der Transparenz in Führungs- und Cloudstrategieteams ergänzt wird.
 
 Transparenz ist wichtig, da das Messen der Auswirkungen für Kunden nicht die Frage nach richtig oder falsch beantwortet. Ebenso wenig sind Auswirkungsmessungen ein Indikator für die Qualität der Arbeit oder die Leistung des Einführungsteams. Stattdessen stellen sie eine Gelegenheit dar, die Anforderungen Ihrer Kunden zu verstehen und besser zu erfüllen. Ein Missbrauch von Innovationsmetriken kann diese Kultur unterdrücken. Und letztendlich führt er zu einer Manipulation von Metriken, die wiederum langfristig zu einem Scheitern der Erfindung, des unterstützenden Personals und letztendlich der Verwaltungsstruktur führt, die die Daten missbraucht hat. Führungskräfte und Mitwirkende sollten Messungen ausschließlich als eine Gelegenheit nutzen, die MVP-Lösung zu verstehen und zu verbessern.
 

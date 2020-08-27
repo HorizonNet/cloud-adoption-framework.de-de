@@ -7,14 +7,14 @@ ms.date: 07/21/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ad7a3f6af9d57c4d2ebd557c23ec5c08fa222b0a
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.openlocfilehash: caa399f50742978f20cca49fc8a8fc9f3f10b425
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88847818"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885455"
 ---
-<!-- docsTest:ignore "One Migration" -->
+<!-- docutune:ignore "One Migration" -->
 <!-- cSpell:ignore HANA -->
 
 # <a name="the-one-migration-approach-to-migrating-the-it-portfolio"></a>Ansatz der Einzelmigration für die Migration des IT-Portfolios
@@ -41,7 +41,7 @@ In jedem der vorhergehenden Migrationsszenarien werden Sie durch den gleichen gr
 
 ![Diagramm: Cloud Adoption Framework-Migrationsmodell](../_images/migrate/methodology.png)
 
-In jedem Szenario strukturieren Sie Migrationswellen, um die Releases mehrerer Workloads zu steuern. Das Erstellen eines Cloudeinführungsplans und Einrichten von Azure-Zielzonen im Rahmen der Planungs- und Bereitschaftsmethodik erleichtert Ihnen die Strukturierung Ihrer Migrationswellen.
+In jedem Szenario strukturieren Sie Migrationswellen, um die Releases mehrerer Workloads zu steuern. Das Erstellen eines Cloudeinführungsplans und das Einrichten von Azure-Zielzonen im Rahmen der Planungs- und Bereitschaftsmethodik erleichtern Ihnen die Strukturierung Ihrer Migrationswellen.
 
 Befolgen Sie während jeder Iteration die Migrationsmethodik, um Workloads zu bewerten, bereitzustellen und freizugeben. Wenn Sie diese Prozesse an die speziellen Szenarien Ihrer Organisation anpassen möchten, klicken Sie auf eines der in der Tabelle aufgeführten Migrationsszenarien, um weiterführende Informationen anzuzeigen.
 

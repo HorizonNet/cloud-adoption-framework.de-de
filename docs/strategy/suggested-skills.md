@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 8007f6c0be0d22fb68cdfaa392ddc3b9b124d0cd
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 910ccff4708ef57fe6e652bb59fa34e0d0ea74e3
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574192"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88662318"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>Pfad für die Qualifikationsbereitschaft während der Phase „Planung“ einer Migrationsreise
 
@@ -88,7 +88,7 @@ Microsoft und seine Partner bieten eine Vielzahl von Optionen für alle Zielgrup
 
 Microsoft Learn ist ein neuer Lernansatz. Die Bereitschaft zu den neuen Qualifikationen und Aufgaben, die mit der Cloudeinführung verbunden sind, entsteht nicht problemlos. Microsoft Learn bietet einen lohnenderen Ansatz für praktisches Lernen, der Ihnen hilft, Ihre Ziele schneller zu erreichen. Punkte sammeln, zu höheren Stufen aufsteigen und mehr erreichen.
 
-Hier ist ein Beispiel für einen maßgeschneiderten Lernpfad, der auf die Strategiemethodik im Cloud Adoption Framework abgestimmt ist.
+Hier ist ein Beispiel für einen maßgeschneiderten Lernpfad, der auf die Strategiemethodik des Cloud Adoption Framework abgestimmt ist.
 
 [Lernen Sie den Geschäftswert von Microsoft Azure kennen](/learn/paths/learn-business-value-of-azure): Diese Lernerfahrung zeigt Ihnen zunächst, wie die digitale Transformation und die Leistungsfähigkeit der Cloud Ihr Unternehmen verändern können. In diesem Artikel erfahren Sie, wie Microsoft Azure Cloud Services Ihr Unternehmen auf einer vertrauenswürdigen Cloudplattform unterstützen kann. Abschließend wird gezeigt, wie Sie diesen Weg für Ihr Unternehmen verwirklichen können.
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 57d0ea8b033a3a043d9243f1b9ecbcae5e9b9391
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 6112658b38a8889475ed21af13aa234fa16bd5d5
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569874"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848243"
 ---
 <!-- docsTest:disable -->
 <!-- cSpell:ignore westeurope usgovia accountlookup messagequery -->
@@ -243,6 +243,15 @@ Der folgende Abschnitt enthält einige Namensbeispiele für häufige Azure-Resso
 | Subscription                    | Account/ <br> Enterprise Agreement | \<Business Unit\>-\<Subscription type\>-\<\#\#\#\>          | <li> mktg-prod-001 <li> konzern-freigabe-001 <li> fin-client-001 |
 | Resource group                  | Subscription                       | rg-\<App or service name\>-\<Subscription type\>-\<\#\#\#\> | <li> rg-mktgsharepoint-prod-001 <li> rg-kontnachschldien-freigabe-001 <li> rg-ad-verz-dienste-freigabe-001 |
 | API Management-Dienstinstanz | Global                             | apim-\<App or service name\>                                | apim-navigator-prod                                                                                                     |
+
+> [!NOTE]
+> Die zuvor und anderswo in diesem Dokument verwendeten Beispielnamen verweisen auf eine dreistellige Zeichenauffüllung (\<\#\#\#\>). Das heißt,  mktg-prod-*001*
+>
+> Auffüllen unterstützt die Lesbarkeit für Menschen sowie das Sortieren von Ressourcen, wenn diese in einer Konfigurationsverwaltungs-Datenbank (CMDB), einem IT-Ressourcenverwaltungstool oder in herkömmlichen Buchhaltungstools verwaltet werden. Wenn die bereitgestellte Ressource als Teil eines größeren Bestands oder Portfolios von IT-Ressourcen zentral verwaltet wird, richtet sich der Ansatz des Auffüllens an Oberflächen aus, die diese Systeme zur Verwaltung des Bestands verwenden.
+>
+> Unglücklicherweise kann sich der herkömmliche Ansatz für die Ressourcenauffüllung in Infrastruktur-als-Code-Ansätzen als problematisch erweisen, bei denen möglicherweise Ressourcen basierend auf einer nicht aufgefüllten Zahl durchlaufen werden. Diese Vorgehensweise wird bei der Bereitstellung oder bei automatisierten Konfigurationsverwaltungsaufgaben häufig eingesetzt. Diese Skripts müssten routinemäßig die aufgefüllten Leerzeichen entfernen und die aufgefüllte Zahl in eine reelle Zahl konvertieren, wodurch Skriptentwicklung und Laufzeit verlangsamt werden.
+>
+> Die Methode, die Sie implementieren möchten, unterliegt Ihrer persönlichen Entscheidung. Das Auffüllen in diesem Artikel soll die Wichtigkeit der Verwendung eines konsistenten Ansatzes bei der Bestandsnummerierung veranschaulichen, nicht, welcher Ansatz überlegen ist. Bevor Sie sich für ein Zahlenschema (mit oder ohne Auffüllung) entscheiden, bewerten Sie, welche sich stärker auf langfristige Vorgänge auswirken: CMDB-/Ressourcenverwaltungslösungen oder codebasierte Bestandsverwaltung. Befolgen Sie dann konsistent die Auffülloption, die Ihren betrieblichen Anforderungen am besten entspricht. 
 
 ### <a name="example-names-networking"></a>Namensbeispiele: Netzwerk
 

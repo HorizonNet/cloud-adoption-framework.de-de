@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c5cc6e24c6e32f1bcc8289f8c5a23d542f7fff94
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: c3e6c28313353b38a160fc2881b11b07bd567376
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573512"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88880253"
 ---
 # <a name="identity-baseline-discipline-overview"></a>Übersicht über die Disziplin „Identitätsbaseline“
 
@@ -41,7 +41,7 @@ Die folgenden Schritte enthalten Beispiele und mögliche Optionen, die Sie beim 
 |--|--|
 | <br> ![Vorlagensymbol](../../_images/govern/process-template.png)   | <br> [Vorlage für die Disziplin „Identitätsbaseline“:](./template.md) Laden Sie die Vorlage zur Dokumentation einer Disziplin vom Typ „Identitätsbaseline“ herunter. |
 | <br> ![Risikosymbol](../../_images/govern/process-risks.png)         | <br> [Geschäftsrisiken:](./business-risks.md) Machen Sie sich mit den Motiven und Risiken vertraut, die häufig mit der Disziplin „Identitätsbaseline“ verbunden sind. |
-| <br> ![Metriksymbol](../../_images/govern/process-metrics.png)     | <br> [Indikatoren und Metriken:](./metrics-tolerance.md) Indikatoren, um zu verstehen, ob es der richtige Zeitpunkt ist, in die Disziplin „Identitätsbaseline“ zu investieren. |
+| <br> ![Metriksymbol](../../_images/govern/process-metrics.png)     | <br> [Indikatoren und Metriken:](./metrics-tolerance.md) Indikatoren, die Aufschluss darüber geben, ob jetzt der richtige Zeitpunkt ist, in die Disziplin „Identitätsbaseline“ zu investieren |
 | <br> ![Einhaltungssymbol](../../_images/govern/process-enforce.png)   | <br> [Prozesse zur Einhaltung von Richtlinien:](./compliance-processes.md) Empfohlene Prozesse zur Unterstützung der Richtlinieneinhaltung in der Disziplin „Identitätsbaseline“. |
 | <br> ![Einsatzreifesymbol](../../_images/govern/process-maturity.png)   | <br> [Einsatzreife:](./discipline-improvement.md) Stimmen Sie die Einsatzreife der Cloudverwaltung mit den Phasen der Cloudeinführung ab. |
 | <br> ![Toolkettensymbol](../../_images/govern/process-toolchain.png) | <br> [Toolkette:](./toolchain.md) Azure-Dienste, die zur Unterstützung der Disziplin „Identitätsbaseline“ implementiert werden können. |

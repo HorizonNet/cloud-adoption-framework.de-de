@@ -10,7 +10,7 @@ Die folgenden Entscheidungen stammen von Teams außerhalb des Cloudgovernancetea
 Die Identitätsbaseline ist der grundlegende Ausgangspunkt für die gesamte Governance. Bevor Sie versuchen, Governance anzuwenden, muss eine Identität eingerichtet werden. Die eingerichtete Identitätsstrategie wird anschließend durch die Governancelösungen erzwungen.
 In diesem Governanceleitfaden implementiert das Identitätsverwaltungsteam das Muster für die [Verzeichnissynchronisierung](~/decision-guides/identity/index.md#directory-synchronization):
 
-- RBAC wird von Azure Active Directory (Azure AD) über die Verzeichnissynchronisierung oder die Funktionalität „Dieselbe Anmeldung“ bereitgestellt, die während der Migration des Unternehmens zu Office 365 implementiert wurde. Einen Implementierungsleitfaden finden Sie unter [Referenzarchitektur für die Azure AD-Integration](/azure/architecture/reference-architectures/identity/azure-ad).
+- RBAC wird von Azure Active Directory (Azure AD) über die Verzeichnissynchronisierung oder die Funktionalität „Dieselbe Anmeldung“ bereitgestellt, die während der Migration des Unternehmens zu Microsoft 365 implementiert wurde. Einen Implementierungsleitfaden finden Sie unter [Referenzarchitektur für die Azure AD-Integration](/azure/architecture/reference-architectures/identity/azure-ad).
 - Der Azure AD-Mandanten steuert außerdem die Authentifizierung und den Zugriff für Ressourcen, die in Azure bereitgestellt werden.
 
 Im Governance-MVP erzwingt das Governanceteam die Anwendung des replizierten Mandanten über Tools für die Abonnementgovernance, die weiter unten in diesem Artikel erläutert werden. In zukünftigen Iterationen kann das Governanceteam auch umfassende Tools in Azure AD durchsetzen, um diese Funktion zu erweitern.

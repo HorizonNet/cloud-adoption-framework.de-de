@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 5db2ac236aee2a710f01d2d45a1d6477f554796c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 1927536ece343905d9371755d9af8e693b5fb9cf
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571381"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848345"
 ---
 <!-- cSpell:ignore untrust CIDR RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
 
@@ -123,7 +123,7 @@ Für die Verwendung reservierter Instanzen für bestimmte VM-Instanzen, die übe
 
 Das Erteilen und Steuern des Benutzerzugriffs auf Azure-Ressourcen mithilfe der Identitäts- und Zugriffsverwaltung ist ein wichtiger Schritt bei der Erstellung einer Azure-Infrastruktur.
 
-Contoso hat sich entschieden, das vorhandene lokale Active Directory in die Cloud zu erweitern, statt ein neues, separates System in Azure aufzubauen. Da Contoso noch nicht Office 365 verwendet, muss eine Azure AD-Instanz bereitgestellt werden. Mit Office 365 würde Contoso bereits über einen Azure AD-Mandanten sowie über ein entsprechendes Verzeichnis verfügen, das als primäre Azure AD-Instanz verwendet werden könnte.
+Contoso hat sich entschieden, das vorhandene lokale Active Directory in die Cloud zu erweitern, statt ein neues, separates System in Azure aufzubauen. Da Contoso noch nicht Microsoft 365 verwendet, muss eine Azure AD-Instanz bereitgestellt werden. Mit Microsoft 365 würde Contoso bereits über einen Azure AD-Mandanten sowie über ein entsprechendes Verzeichnis verfügen, das als primäre Azure AD-Instanz verwendet werden könnte.
 
 Weitere Informationen zu Identitätsmodellen von Microsoft 365 und zu Azure Active Directory finden Sie [hier](/office365/enterprise/about-office-365-identity). Informationen zum Zuordnen oder Hinzufügen eines Azure-Abonnements zu Ihrem Azure Active Directory-Mandanten finden Sie [hier](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
 
@@ -207,7 +207,7 @@ Zu Verwaltungszwecken erstellen sie eine zusätzliche Gruppe, die allen anderen 
 
 ### <a name="synchronize-active-directory"></a>Synchronisieren von Active Directory
 
-Contoso möchte eine gemeinsame Identität für den Zugriff auf lokale Ressourcen und Ressourcen in der Cloud bereitstellen. Zu diesem Zweck integriert das Unternehmen die lokale Active Directory-Instanz mit Azure AD. Mit diesem Modell können Benutzer und Organisationen eine einzelne Identität für den Zugriff auf lokale Anwendungen und Clouddienste wie Office 365 oder Tausende weitere Websites im Internet nutzen. Administratoren können mithilfe der Gruppen in Active Directory die [rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC)](/azure/role-based-access-control/role-assignments-portal) in Azure implementieren.
+Contoso möchte eine gemeinsame Identität für den Zugriff auf lokale Ressourcen und Ressourcen in der Cloud bereitstellen. Zu diesem Zweck integriert das Unternehmen die lokale Active Directory-Instanz mit Azure AD. Mit diesem Modell können Benutzer und Organisationen eine einzelne Identität für den Zugriff auf lokale Anwendungen und Clouddienste wie Microsoft 365 oder Tausende weitere Websites im Internet nutzen. Administratoren können mithilfe der Gruppen in Active Directory die [rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC)](/azure/role-based-access-control/role-assignments-portal) in Azure implementieren.
 
 Um die Integration zu erleichtern, verwendet Contoso das [Azure AD Connect-Tool](/azure/active-directory/connect/active-directory-aadconnect). Nach der Installation und Konfiguration auf einem Domänencontroller synchronisiert das Tool die lokalen Active Directory-Identitäten mit Azure AD.
 

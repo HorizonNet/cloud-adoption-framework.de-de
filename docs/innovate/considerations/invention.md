@@ -7,18 +7,18 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 52518647e6d1a32c9c41a6a9dfe72a15d276624c
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 3770f7ac19b48ade74b1d32ca08e7a9b9496a301
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86449216"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88662284"
 ---
 # <a name="develop-digital-inventions"></a>Entwickeln digitaler Innovationen
 
 Wie unter [Innovation in der digitalen Wirtschaft](./index.md) beschrieben, erfordert Innovation ein Gleichgewicht zwischen Erfindung neuer und Einführung vorhandener Technologien. Zur Förderung der Einführung sind Kundenfeedback und Partnerschaft erforderlich. Die im nächsten Abschnitt beschriebenen Disziplinen definieren eine Reihe von Ansätzen zur Entwicklung digitaler Erfindungen mit Schwerpunkt auf Einführung und Empathie für den Kunden. Jede der Disziplinen wird unten kurz beschrieben, und Sie finden Links zu detaillierteren Informationen zu jedem Prozess.
 
-![Innovative Methodik: Cloud Adoption Framework](../../_images/innovate/innovate-methodology.png)
+![Innovationsmethodik des Cloud Adoption Framework](../../_images/innovate/innovate-methodology.png)
 
 ## <a name="summary-of-each-discipline-of-digital-invention"></a>Übersicht über die einzelnen Disziplinen digitaler Erfindungen
 

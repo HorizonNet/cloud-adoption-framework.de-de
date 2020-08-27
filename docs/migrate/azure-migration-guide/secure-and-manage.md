@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2dbe690b10e21c06d348bf3196077fa812a043c9
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: afde995e27d37114727fafa540f0f1232c49e8b3
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570265"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848124"
 ---
 <!-- markdownlint-disable MD024 MD025 DOCSMD001 -->
 
@@ -151,7 +151,7 @@ Azure Backup ist der Azure-basierte Dienst, den Sie zum Sichern (bzw. Schützen)
 
 ## <a name="azure-site-recovery"></a>[Azure Site Recovery](#tab/siteRecovery)
 
-Weiter oben in diesem Leitfaden wurde beschrieben, wie Azure Site Recovery als Teil der Migrationsausführung verwendet werden kann. Azure Site Recovery stellt jedoch auch nach Abschluss der Migration eine wichtige Komponente in Ihrer Notfallwiederherstellungsstrategie dar.
+Azure Site Recovery stellt jedoch auch nach Abschluss der Migration eine wichtige Komponente in Ihrer Notfallwiederherstellungsstrategie dar.
 
 Der Azure Site Recovery-Dienst ermöglicht es Ihnen, virtuelle Computer und Workloads, die in einer primären Azure-Region gehostet werden, in einer Kopie in einer sekundären Region zu replizieren. Wenn es in Ihrer primären Region zu einem Ausfall kommt, können Sie ein Failover zur Kopie in der sekundären Region ausführen und von dort aus weiter auf Ihre Anwendungen und Dienste zugreifen. Sobald die primäre Kopie Ihres virtuellen Computers nach dem Ausfall wieder läuft, können Sie ein Failback ausführen.
 

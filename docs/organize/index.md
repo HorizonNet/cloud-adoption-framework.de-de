@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 92bcd305d963659ff53feca0f233c4a0c1fca312
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 6b942705282204adaa9cdb7949091341392a121a
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573104"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884911"
 ---
 # <a name="manage-organizational-alignment"></a>Verwalten der Organisationsausrichtung
 
@@ -30,13 +30,13 @@ Die folgenden Aufgaben unterstützen Sie bei der Erstellung einer Landezone für
 
 ## <a name="structure-type"></a>Strukturtyp
 
-Die folgenden Organisationsstrukturen müssen nicht unbedingt einem Organisationsdiagramm (Organigramm) zugeordnet sein. Organigramme spiegeln im Allgemeinen die Strukturen des Steuerungsmanagement wider. Umgekehrt dienen die folgenden Organisationsstrukturen zur Erfassung der Ausrichtung von Rollen und Zuständigkeiten. In einer agilen Matrixorganisation lassen sich diese Strukturen u. U. am besten als virtuelle Teams (oder V-Teams) darstellen. Es gibt keine Einschränkung, aufgrund der diese Organisationsstrukturen nicht in einem Organigramm dargestellt werden können – dies ist jedoch nicht notwendig, um ein effektives Betriebsmodell zu erstellen.
+Die folgenden Organisationsstrukturen müssen nicht unbedingt einem Organisationsdiagramm (Organigramm) zugeordnet sein. Organigramme spiegeln im Allgemeinen die Strukturen des Steuerungsmanagement wider. Umgekehrt dienen die folgenden Organisationsstrukturen zur Erfassung der Ausrichtung von Rollen und Zuständigkeiten. In einer agilen Matrixorganisation lassen sich diese Strukturen u. U. am besten als virtuelle Teams darstellen. Es gibt keine Einschränkung, aufgrund der diese Organisationsstrukturen nicht in einem Organigramm dargestellt werden können – dies ist jedoch nicht notwendig, um ein effektives Betriebsmodell zu erstellen.
 
 Im ersten Schritt der Verwaltung der Organisationsausrichtung wird bestimmt, wie die folgenden Organisationsstrukturen erfüllt werden:
 
 - **Ausrichtung des Organisationsdiagramms:** Verwaltungshierarchien, Verantwortlichkeiten der Führungskräfte und die Ausrichtung der Mitarbeiter werden an den Unternehmensstrukturen ausgerichtet.
-- **Virtuelle Teams (V-Teams):** Verwaltungsstrukturen und Organigramme bleiben unverändert. Stattdessen werden virtuelle Teams zusammengestellt und mit den erforderlichen Funktionen betraut.
-- **Gemischtes Modell:** Üblicherweise ist eine Mischung aus Organisationsdiagrammen und V-Team-Ausrichtung erforderlich, um Transformationsziele zu erreichen.
+- **Virtuelle Teams:** Verwaltungsstrukturen und Organigramme bleiben unverändert. Stattdessen werden virtuelle Teams zusammengestellt und mit den erforderlichen Funktionen betraut.
+- **Gemischtes Modell:** Üblicherweise ist eine Mischung aus Organisationsdiagrammen und Ausrichtung der virtuellen Teams erforderlich, um Transformationsziele zu erreichen.
 
 ## <a name="understand-required-cloud-functions"></a>Grundlegendes zu den erforderlichen Coudfunktionen
 

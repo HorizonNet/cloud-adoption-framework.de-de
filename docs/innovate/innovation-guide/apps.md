@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 0f4e8cc17d094efc490a16ea3f740435b97a20fe
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 5a874c26835b17e2aa30a2230af3afe79dfd6628
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568089"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848141"
 ---
 <!-- cSpell:ignore billyclaymyersmsft wimyers functionapp -->
 
@@ -199,7 +199,7 @@ Zum Konfigurieren oder Überwachen von Azure Functions-Bereitstellungen gehen Si
 
 ### <a name="serverless-solutions-azure-logic-apps"></a>Serverlose Lösungen: Azure Logic Apps
 
-Integrieren Sie Daten und Anwendungen, anstatt komplexen Integrationscode zwischen sehr unterschiedlichen Systemen zu schreiben. Erstellen Sie serverlose Workflows visuell mithilfe von Azure Logic Apps, und verwenden Sie Ihre eigenen APIs, serverlosen Funktionen oder vorkonfigurierten Software-as-a-Service-Connectors (SaaS), einschließlich Salesforce, Microsoft Office 365 und Dropbox.
+Integrieren Sie Daten und Anwendungen, anstatt komplexen Integrationscode zwischen sehr unterschiedlichen Systemen zu schreiben. Erstellen Sie serverlose Workflows visuell mithilfe von Azure Logic Apps, und verwenden Sie Ihre eigenen APIs, serverlosen Funktionen oder vorkonfigurierten Software-as-a-Service-Connectors (SaaS), einschließlich Salesforce, Microsoft 365 und Dropbox.
 
 #### <a name="action"></a>Aktion
 

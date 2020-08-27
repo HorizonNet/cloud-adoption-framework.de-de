@@ -7,18 +7,18 @@ ms.date: 07/01/2010
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d3da947c4b9c22501b21e2cd96f7ca9647f7c205
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: f2c609be969dc39a61a00ccccab6b897110a731f
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88196391"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88662395"
 ---
 # <a name="windows-virtual-desktop-planning"></a>Windows Virtual Desktop: Planung
 
 Windows Virtual Desktop und Bereitstellungsszenarien folgen derselben Migrationsmethode wie andere Migrationsaufgaben. Dieser konsistente Ansatz ermöglicht es Migrationsfactorys oder bestehenden Migrationsteams, den Prozess mit geringen Änderungen der nichttechnischen Anforderungen zu übernehmen.
 
-![Diagramm: Cloud Adoption Framework-Migrationsmethode](../../_images/migrate/methodology.png)
+![Migrationsmethodik des Cloud Adoption Framework.](../../_images/migrate/methodology.png)
 
 ## <a name="plan-your-migration"></a>Planen Ihrer Migration
 

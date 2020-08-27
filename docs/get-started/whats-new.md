@@ -7,13 +7,14 @@ ms.date: 07/21/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 998a9a5069190e710723d637b22392a03701969e
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 4d29e1512578cc3312a0f4eda32629368fb5927d
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88195703"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88661961"
 ---
+<!-- cSpell:ignore MSPs -->
 <!-- markdownlint-disable MD024 -->
 
 # <a name="whats-new-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Neuerungen beim Framework für die Einführung der Microsoft Cloud für Azure
@@ -78,7 +79,7 @@ Die vorhandenen CAF-Blaupausendefinitionen und CAF-Terraform-Module bieten Ihnen
 | [Entwurfsrichtlinie für die Unternehmensebene](../ready/enterprise-scale/design-guidelines.md) | Bewerten Sie die Richtlinien für die Unternehmensebene, ob diese den gängigen Entwurfsbereichen von Azure-Zielzonen gerecht werden. |
 | [Implementierungsrichtlinien](../ready/enterprise-scale/implementation-guidelines.md) | Untersuchen Sie die Aktivitäten, die vor dem Bereitstellen für eine Implementierung auf Unternehmensebene erforderlich sind. |
 
-Partner sind ein wichtiger Aspekt der erfolgreichen Cloudeinführung. Über das die gesamte Anleitung zum Cloudeinführungs-Framework haben wir Referenzen hinzugefügt, die verdeutlichen, welche wichtige Rolle Partner spielen und wie Kunden Partner besser einbinden können. Eine Liste der validierten CAF-Partner finden Sie unter den [Angeboten CAF-orientierter Partner](https://aka.ms/adopt/partneroffers) sowie unter [Azure Expert MSP-Partner](https://www.microsoft.com/solution-providers/search?cacheId=9c2fed4f-f9e2-42fb-8966-4c565f08f11e) und [Advanced Specialist-Partner](https://www.microsoft.com/azure/partners/advspec).
+Partner sind ein wichtiger Aspekt der erfolgreichen Cloudeinführung. Im Verlauf der gesamten Anleitung zum Cloud Adoption Framework haben wir Referenzen hinzugefügt, die verdeutlichen, welche wichtige Rolle diese Partner spielen und wie Kunden Partner besser einbinden können. Eine Liste der validierten CAF-Partner finden Sie unter den [Angeboten CAF-orientierter Partner](https://aka.ms/adopt/partneroffers) sowie unter [Azure Expert Managed Service Provider (MSPs)](https://www.microsoft.com/azure/partners/azureexpertmsp?filters=all) und [Advanced Specialist-Partner](https://www.microsoft.com/azure/partners/advspec).
 
 ## <a name="may-15-2020"></a>15. Mai 2020
 

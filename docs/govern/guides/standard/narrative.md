@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: dfbde6cb7008ce33a77afde238b2b550ec397d23
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 688c9c11e1366621769baaccdcdb335275e4712a
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83754710"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88847869"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>Governanceleitfaden für Standardunternehmen: Die Geschichte hinter der Governancestrategie
 
@@ -38,7 +38,7 @@ Das Unternehmen besitzt das folgende Geschäftsprofil:
 Aktuell befinden sich IT und Cloudbetrieb des Unternehmens in folgendem Zustand:
 
 - Die IT-Abteilung betreibt zwei gehostete Infrastrukturumgebungen. Eine Umgebung enthält Produktionsassets. Die zweite Umgebung enthält Funktionen für die Notfallwiederherstellung und einige Dev/Test-Assets. Diese Umgebungen werden von zwei verschiedenen Anbietern gehostet. Die IT bezeichnet diese beiden Rechenzentren als „Prod“ bzw. „DR“.
-- Die IT hat die Cloud eingeführt, indem alle E-Mail-Konten der Endbenutzer zu Office 365 migriert wurden. Diese Migration wurde vor sechs Monaten abgeschlossen. Es wurden nur wenige andere IT-Ressourcen in der Cloud bereitgestellt.
+- Die IT hat die Cloud eingeführt, indem alle E-Mail-Konten der Endbenutzer zu Microsoft 365 migriert wurden. Diese Migration wurde vor sechs Monaten abgeschlossen. Es wurden nur wenige andere IT-Ressourcen in der Cloud bereitgestellt.
 - Die Anwendungsentwicklungsteams arbeiten in einer Dev/Test-Funktion, um die nativen Cloudfunktionen kennenzulernen.
 - Das BI-Team (Business Intelligence) experimentiert mit Big Data in der Cloud und einer kuratierten Zusammenstellung der Daten auf neuen Plattformen.
 - Das Unternehmen hat eine nicht sehr strikt formulierte Richtlinie, dass personenbezogene Informationen von Kunden und Finanzdaten nicht in der Cloud gehostet werden dürfen, was unternehmenskritische Anwendungen in den aktuellen Bereitstellungen einschränkt.

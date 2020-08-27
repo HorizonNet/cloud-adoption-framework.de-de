@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: aae1094414c775bfbd652d681df60c0f3abab675
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 04652c401adc8b0742ee3366cbdb30f7abb9d057
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568956"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88847767"
 ---
 <!-- cSpell:ignore DPIAs -->
 
@@ -29,11 +29,11 @@ Das [Microsoft Service Trust Portal](https://servicetrust.microsoft.com) und der
 
 Diese Tools wurden entwickelt, um Organisationen bei der Erfüllung komplexer Konformitätsverpflichtungen und der Verbesserung der Funktionen zum Datenschutz bei der Auswahl und Nutzung von Microsoft Cloud-Diensten zu unterstützen.
 
-Das **Microsoft Service Trust Portal** enthält ausführliche Informationen und Tools, die Ihnen helfen, Ihre Anforderungen in Bezug auf die Nutzung von Microsoft Cloud-Diensten (einschließlich Azure, Office 365, Dynamics 365 und Windows) zu erfüllen. Das Portal ist eine zentrale Anlaufstelle für Informationen zu Sicherheit, gesetzlichen Bestimmungen, Konformität und Datenschutz in Bezug auf Microsoft Cloud. Hier veröffentlichen wir die Informationen und Ressourcen, die für die Durchführung von Self-Service-Risikobewertungen von Clouddiensten und Tools erforderlich sind. Das Portal wurde entwickelt, damit Aktivitäten zur Einhaltung gesetzlicher Bestimmungen in Azure nachverfolgt werden können, beispielsweise:
+Das **Microsoft Service Trust Portal** enthält ausführliche Informationen und Tools, die Ihnen helfen, Ihre Anforderungen in Bezug auf die Nutzung von Microsoft Cloud-Diensten (einschließlich Azure, Microsoft 365, Dynamics 365 und Windows) zu erfüllen. Das Portal ist eine zentrale Anlaufstelle für Informationen zu Sicherheit, gesetzlichen Bestimmungen, Konformität und Datenschutz in Bezug auf Microsoft Cloud. Hier veröffentlichen wir die Informationen und Ressourcen, die für die Durchführung von Self-Service-Risikobewertungen von Clouddiensten und Tools erforderlich sind. Das Portal wurde entwickelt, damit Aktivitäten zur Einhaltung gesetzlicher Bestimmungen in Azure nachverfolgt werden können, beispielsweise:
 
-- **Compliance-Manager:** Compliance-Manager ist ein workflowbasiertes Tool zur Risikobewertung im Microsoft Service Trust Portal, über das Sie die Aktivitäten Ihrer Organisation zur Einhaltung gesetzlicher Bestimmungen in Bezug auf Microsoft Cloud-Dienste, z. B. Office 365, Dynamics 365 und Azure, nachverfolgen, zuweisen und überprüfen können. Weitere Informationen finden Sie im nächsten Abschnitt.
+- **Compliance-Manager:** Compliance-Manager ist ein workflowbasiertes Tool zur Risikobewertung im Microsoft Service Trust Portal, über das Sie die Aktivitäten Ihrer Organisation zur Einhaltung gesetzlicher Bestimmungen in Bezug auf Microsoft Cloud-Dienste, z. B. Microsoft 365, Dynamics 365 und Azure, nachverfolgen, zuweisen und überprüfen können. Weitere Informationen finden Sie im nächsten Abschnitt.
 - **Vertrauensstellungsdokumente:** Drei Kategorien von Leitfäden bieten umfangreiche Ressourcen zur Beurteilung von Microsoft Cloud, Informationen zu Microsoft-Vorgängen in Bezug auf Sicherheit, Compliance und Datenschutz sowie Hinweise zur Verbesserung Ihrer Möglichkeiten zum Datenschutz. Diese Leitfäden umfassen Folgendes:
-- **Überwachungsberichte:** Mit Prüfberichten bleiben Sie im Hinblick auf die aktuellen Informationen zu Datenschutz, Sicherheit und Konformität für Microsoft Cloud-Dienste immer auf dem Laufenden. Zu diesen Informationen gehören ISO, SOC, FedRAMP und andere Prüfberichte, Bridge Letters und Material in Bezug auf unabhängige Überprüfungen von Microsoft Cloud-Diensten durch Drittanbieter, z. B. Azure, Office 365 oder Dynamics 365.
+- **Überwachungsberichte:** Mit Prüfberichten bleiben Sie im Hinblick auf die aktuellen Informationen zu Datenschutz, Sicherheit und Konformität für Microsoft Cloud-Dienste immer auf dem Laufenden. Zu diesen Informationen gehören ISO, SOC, FedRAMP und andere Prüfberichte, Bridge Letters und Material in Bezug auf unabhängige Überprüfungen von Microsoft Cloud-Diensten durch Drittanbieter, z. B. Azure, Microsoft 365 oder Dynamics 365.
 - **Leitfäden zum Datenschutz:** Leitfäden zum Datenschutz enthalten Informationen dazu, wie Ihre Daten in Microsoft Cloud-Diensten geschützt werden und wie Sie die Datensicherheit und Datenkonformität in der Cloud für Ihre Organisation verwalten können. Diese Leitfäden enthalten ausführliche Whitepaper zu Entwurf und Betrieb von Microsoft-Clouddiensten, Dokumente mit häufig gestellten Fragen, Berichte der Sicherheitsjahresbewertungen, Ergebnisse von Penetrationstests und Anweisungen zur Durchführung der Risikobewertung und Verbesserung Ihrer Möglichkeiten zum Datenschutz.
 - **Azure-Blaupause für Sicherheit und Compliance:** Blaupausen umfassen Ressourcen zum Erstellen und Starten von in der Cloud bereitgestellten Anwendungen, mit denen Sie strikte Bestimmungen und Standards einhalten können. Da Azure über mehr Zertifizierungen verfügt als jeder andere Cloudanbieter, können Sie Ihre unternehmenskritischen Workloads vertrauensvoll in Azure bereitstellen, mit Blaupausen, die Folgendes enthalten:
   - Branchenspezifische Übersicht und Anleitung.

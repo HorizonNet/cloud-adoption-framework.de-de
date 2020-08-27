@@ -7,12 +7,12 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 87b318a5bf1ece6479a7ae437083c549bf020eb5
-ms.sourcegitcommit: e5c4db8f660fa4c58d1441f0feb4cce415491dfd
+ms.openlocfilehash: d694ede067b5881bf4a35742c2a3b0e0756a89ad
+ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84942963"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88661757"
 ---
 <!-- cSpell:ignore matrixed ISVs -->
 
@@ -49,7 +49,7 @@ Wenn Unternehmen Workloads mithilfe von Matrix- oder zentralisierten Ansätzen u
 
 ![Abbildung eines IT-Portfolios mit mehreren öffentlichen und privaten Cloudplattformen](../../_images/ready/buildout-cloud-platforms.png)
 
-- **Zielzone:** Zielzonen bieten den Workloads Zugriff auf alle _grundlegenden Hilfsprogramme_ (oder gemeinsam genutzten Installationen), die von einer _Plattformumgebung_ bereitgestellt werden, die zur Unterstützung mindestens einer Workload erforderlich ist. Zielzonen sind eine so kritische Komponente in der Cloud, dass die gesamte Bereitschaftsmethodik im Cloud Adoption Framework Zielzonen gewidmet ist. Eine ausführlichere Definition finden Sie unter [Was ist eine Zielzone?](../../ready/landing-zone/index.md).
+- **Zielzone:** Zielzonen bieten den Workloads Zugriff auf alle _grundlegenden Hilfsprogramme_ (oder gemeinsam genutzten Installationen), die von einer _Plattformumgebung_ bereitgestellt werden, die zur Unterstützung mindestens einer Workload erforderlich ist. Zielzonen sind eine so kritische Komponente in der Cloud, dass die gesamte Bereitschaftsmethodik des Cloud Adoption Framework Zielzonen gewidmet ist. Eine ausführlichere Definition finden Sie unter [Was ist eine Zielzone?](../../ready/landing-zone/index.md).
 - **Grundlegende Hilfsprogramme:** Diese gemeinsamen IT-Dienste sind für den Betrieb der Workloads innerhalb des Technologie- und Geschäftsportfolios erforderlich.
 - **Plattformumgebung:** Das organisatorische Konstrukt zentralisiert grundlegende Lösungen und stellt sicher, dass diese Kontrollen für alle Zielzonen erzwungen werden.
 - **Cloudplattformen:** In Abhängigkeit von der Gesamtstrategie zur Unterstützung des gesamten _Portfolios_ benötigen Kunden möglicherweise mehrere Cloudplattformen mit unterschiedlichen Bereitstellungen der Plattformumgebung, um mehrere Regionen, Hybridlösungen oder sogar Multicloudlösungen zu verwalten.

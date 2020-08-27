@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 672e1f31e8200fc6db3772d7de4903e922017038
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 9f06cc7fed7db0cf4fafb792accc1077ea84e7a7
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573461"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88880593"
 ---
 # <a name="cloud-governance-guides"></a>Cloudgovernance-Leitfäden
 
@@ -22,8 +22,6 @@ Die direkt umsetzbaren Governanceleitfäden in diesem Abschnitt veranschaulichen
 ## <a name="review-and-adopt-cloud-governance-best-practices"></a>Überprüfen und Einführen bewährter Methoden für Cloud Governance
 
 Wählen Sie einen der folgenden Governanceleitfäden aus, um mit der Cloudeinführung zu beginnen. Jeder Leitfaden beschreibt eine Reihe von bewährten Methoden, die auf einer Reihe fiktiver Kundenerfahrungen basieren. Leser, die noch keine Erfahrung mit dem inkrementellen Ansatz des Governancemodells des Frameworks für die Cloudeinführung haben, sollten sich zunächst weiter unten mit der Einführung in die Theorie der allgemeinen Governance vertraut machen, bevor sie eine der bewährten Methoden anwenden.
-
-<!-- markdownlint-disable MD033 -->
 
 - [Standardgovernanceleitfaden:](./standard/index.md) Ein Leitfaden für die meisten Organisationen, basierend auf dem empfohlenen Modell mit zwei Abonnements, das für Bereitstellungen in mehreren Regionen konzipiert wurde, aber nicht für öffentliche Clouds und Sovereign/Government Clouds gilt.
 
@@ -35,8 +33,6 @@ Wählen Sie einen der folgenden Governanceleitfäden aus, um mit der Cloudeinfü
 > [!div class="nextstepaction"]
 > [Governanceleitfaden für komplexe Unternehmen](./complex/index.md)
 
-<!-- markdownlint-enable MD033 -->
-
 ## <a name="an-incremental-approach-to-cloud-governance"></a>Ein inkrementeller Ansatz für die Cloudgovernance
 
 ## <a name="choose-a-governance-guide"></a>Auswählen eines Governanceleitfadens
@@ -46,7 +42,7 @@ Die Leitfäden veranschaulichen, wie ein Governance-MVP implementiert wird. Von 
 Um mit einer Governancelösung zu beginnen, wählen Sie eine der beiden folgenden Optionen aus. Die Optionen basieren auf synthetisierten Kundenerfahrungen. Die Titel basieren auf der Komplexität des Unternehmens zur Vereinfachung der Navigation. Ihre Entscheidung kann komplexer sein. Die folgenden Tabellen zeigen die Unterschiede zwischen den beiden Optionen.
 
 <!-- TODO: Refactor VDC content below. -->
-<!-- docsTest:ignore "Azure Virtual Datacenter" -->
+<!-- docutune:casing "Azure Virtual Datacenter" -->
 
 > [!WARNING]
 > Ein robusterer Ausgangspunkt für die Governance kann erforderlich sein. In solchen Fällen sollten Sie die [CAF-Zielzone auf Unternehmensebene](../../ready/enterprise-scale/index.md) in Betracht ziehen. Beim Ansatz der CAF-Zielzone auf Unternehmensebene stehen Einführungsteams im Fokus, die mittelfristig (innerhalb von 24 Monaten) das Ziel haben, mehr als 1.000 Assets (Infrastruktur, Apps oder Datenassets) in der Cloud zu hosten. Die CAF-Zielzone auf Unternehmensebene ist die erste Wahl für komplexe Governanceszenarien für diese umfangreicheren Cloudeinführungsmaßnahmen.
@@ -94,7 +90,7 @@ Eine CAF-Zielzone auf Unternehmensebene stellt Ihre eigene isolierte Cloud inner
 
 Kleinere Teams können von der Architektur und den Empfehlungen der CAF-Zielzone auf Unternehmensebene profitieren. Unser Ziel ist es, die Implementierungen der CAF-Zielzone auf Unternehmensebene weiter zu optimieren, um sie benutzerfreundlicher für kleinere Teams zu gestalten. Derzeit ist dieser Ansatz darauf ausgerichtet, zentrale IT-Teams bei der Verwaltung umfangreicher Cloudumgebungen zu unterstützen.
 
-Beim Ansatz der [CAF-Zielzone auf Unternehmensebene](../../ready/enterprise-scale/index.md) stehen Einführungsteams im Fokus, die mittelfristig (innerhalb von 24 Monaten) das Ziel haben, **mehr als 1.000 Assets (Apps, Infrastruktur- oder Datenassets) in der Cloud zu hosten**.
+Beim Ansatz der [CAF-Zielzone auf Unternehmensebene](../../ready/enterprise-scale/index.md) stehen Einführungsteams im Fokus, die mittelfristig (innerhalb von 24 Monaten) das Ziel haben, **mehr als 1.000 Assets (Anwendungen, Infrastruktur oder Datenassets) in der Cloud zu hosten**.
 
 Bei Organisationen, die die folgenden Kriterien erfüllen, können Sie ebenfalls mit der [CAF-Zielzone auf Unternehmensebene](../../ready/enterprise-scale/index.md) beginnen:
 

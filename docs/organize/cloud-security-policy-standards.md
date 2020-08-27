@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: cb087faaa776110cc7b395f924446df944b33182
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: c9a141575b8978eb5f16b51b7c5139801bb0fb66
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86194237"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848294"
 ---
 # <a name="function-of-cloud-security-policy-and-standards"></a>Funktion von Cloudsicherheitsrichtlinie und -standards
 

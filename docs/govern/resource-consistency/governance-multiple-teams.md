@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 33817a6f0afc10e0415ed666855ff5818efdddf1
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: f4ed4d8d3c07827124d038bac88a2401819c078f
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573631"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848226"
 ---
 <!-- TODO: Rationalize name formats. -->
 
@@ -53,12 +53,12 @@ Um die Identitätsverwaltung für Ihr Governance-Modell entwerfen zu können, m�
 
 Bei der Identität vertraut Azure nur einem einzelnen Dienst: Azure Active Directory (Azure AD). Sie fügen Azure AD Benutzer hinzu und verwenden diese für alle oben aufgeführten Funktionen. Bevor Sie sich die Vorgehensweise zur Konfiguration von Azure AD ansehen, sollten Sie mit den privilegierten Konten vertraut sein, die zum Verwalten des Zugriffs auf diese Dienste verwendet werden.
 
-Wenn sich Ihre Organisation für ein Azure-Konto registriert hat, wurde mindestens ein Azure-**Kontobesitzer** zugewiesen. Darüber hinaus wurde ein Azure AD-**Mandant** erstellt – es sei denn, im Zusammenhang mit der Nutzung anderer Microsoft-Dienste (beispielsweise Office 365) wurde bereits ein vorhandener Mandant mit Ihrer Organisation verknüpft. Ein **globaler Administrator** mit vollständigen Berechtigungen auf dem Azure AD-Mandanten wurde während der Erstellung zugeordnet.
+Wenn sich Ihre Organisation für ein Azure-Konto registriert hat, wurde mindestens ein Azure-**Kontobesitzer** zugewiesen. Darüber hinaus wurde ein Azure AD-**Mandant** erstellt – es sei denn, im Zusammenhang mit der Nutzung anderer Microsoft-Dienste (beispielsweise Microsoft 365) wurde bereits ein vorhandener Mandant mit Ihrer Organisation verknüpft. Ein **globaler Administrator** mit vollständigen Berechtigungen auf dem Azure AD-Mandanten wurde während der Erstellung zugeordnet.
 
 Die Benutzeridentitäten für den Azure-Kontobesitzer und den globalen Azure AD-Administrator werden in einem hochgradig sicheren Identitätssystem gespeichert, das von Microsoft verwaltet wird. Der Azure-Kontobesitzer ist dazu berechtigt, Abonnements zu erstellen, zu aktualisieren und zu löschen. Der globale Azure AD-Administrator ist zur Durchführung von vielen Aktionen in Azure AD berechtigt, aber in diesem Entwurfshandbuch konzentrieren Sie sich auf das Erstellen und Löschen der Benutzeridentität.
 
 > [!NOTE]
-> Unter Umständen verfügt Ihre Organisation bereits über einen Azure AD-Mandanten, falls Ihrem Konto eine vorhandene Office 365-, Intune- oder Dynamics 365-Lizenz zugeordnet ist.
+> Unter Umständen verfügt Ihre Organisation bereits über einen Azure AD-Mandanten, falls Ihrem Konto eine vorhandene Microsoft 365-, Intune- oder Dynamics 365-Lizenz zugeordnet ist.
 
 Der Azure-Kontobesitzer verfügt über die Berechtigung zum Erstellen, Aktualisieren und Löschen von Abonnements:
 

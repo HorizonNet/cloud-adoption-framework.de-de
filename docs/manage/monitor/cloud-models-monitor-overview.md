@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: d7c7f8438c8dc4a68d7e8e46678477119975d449
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: ea6d0f9a3f3864315f3daed8011aa5e73901dea1
+ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571132"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88848090"
 ---
 <!-- cSpell:ignore Savision -->
 
@@ -97,7 +97,7 @@ Um Metriken und Protokolle von Azure-Infrastruktur- und Plattformressourcen zu s
 
 ### <a name="monitor-with-system-center-operations-manager"></a>Überwachung mit System Center Operations Manager
 
-System Center Operations Manager war ursprünglich als lokale Lösung für die Überwachung von Anwendungen, Workloads und Infrastrukturkomponenten in einer IT-Umgebung konzipiert, wurde dann jedoch mit Funktionen für die Cloudüberwachung weiterentwickelt. Die Lösung lässt sich in Azure, Office 365 und Amazon Web Services (AWS) integrieren. Das System kann diese unterschiedlichen Umgebungen mit dafür konzipierten und aktualisierten Management Packs überwachen.  
+System Center Operations Manager war ursprünglich als lokale Lösung für die Überwachung von Anwendungen, Workloads und Infrastrukturkomponenten in einer IT-Umgebung konzipiert, wurde dann jedoch mit Funktionen für die Cloudüberwachung weiterentwickelt. Die Lösung lässt sich in Azure, Microsoft 365 und Amazon Web Services (AWS) integrieren. Das System kann diese unterschiedlichen Umgebungen mit dafür konzipierten und aktualisierten Management Packs überwachen.  
 
 Sowohl Kunden, die beträchtliche Investitionen in Operations Manager getätigt haben, um eine umfassende, eng in ihre IT-Service-Management-Prozesse und -Tools integrierte Überwachung zu erzielen, als auch Kunden, die gerade erst mit der Nutzung von Azure beginnen, stellen sich verständlicherweise die folgenden Fragen:
 

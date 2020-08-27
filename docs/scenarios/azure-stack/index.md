@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 9684ad72587b1132632a53d15385e2f396311536
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 0e6732c79fc08b22765f67907f8ee8fec9659616
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575025"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885506"
 ---
 # <a name="azure-stack-a-strategic-option-for-running-azure-in-your-datacenter"></a>Azure Stack: Eine strategische Option zum Ausführen von Azure in Ihrem Rechenzentrum
 
@@ -28,7 +28,7 @@ Die Journey Ihrer Organisation kann eindeutige Vorteile aufzeigen, die die Verwe
 
 ## <a name="azure-stack-hub-in-your-strategy"></a>Azure Stack Hub in Ihrer Strategie
 
-Azure Stack Hub bietet einen alternativen Ansatz für die Migration vorhandener Anwendungen, die entweder auf physischen Servern oder auf vorhandenen Virtualisierungsplattformen ausgeführt werden. Durch die Verschiebung dieser Workloads in die Azure Stack Hub-IaaS-Umgebung profitieren Teams von reibungsloseren Vorgängen, Self-Service-Bereitstellungen, standardisierten Hardwarekonfigurationen und Azure-Konsistenz. Wenn Sie Azure Stack Hub zur Modernisierung oder zum Unterstützen von Innovationen verwenden, können Ihre Teams Ihre Anwendungen und Workloads zur optimalen Nutzung der Cloud vorbereiten.
+Azure Stack Hub bietet einen alternativen Ansatz für die Migration vorhandener Anwendungen, die entweder auf physischen Servern oder auf vorhandenen Virtualisierungsplattformen ausgeführt werden. Durch die Verschiebung dieser Workloads in eine Azure Stack Hub-IaaS-Umgebung profitieren Teams von reibungsloseren Vorgängen, Self-Service-Bereitstellungen, standardisierten Hardwarekonfigurationen und Azure-Konsistenz. Wenn Sie Azure Stack Hub zur Modernisierung oder zum Unterstützen von Innovationen verwenden, können Ihre Teams Ihre Anwendungen und Workloads zur optimalen Nutzung der Cloud vorbereiten.
 
 Die Verwendung eines einheitlichen Verfahrens für die Cloudeinführung in Azure und Azure Stack Hub bietet Ihnen die Möglichkeit, die gleichen Governance- und Betriebsmodelle auf Ressourcen in der öffentlichen Cloud und Ihrem eigenen Rechenzentrum anzuwenden. Azure Stack Hub verwendet das gleiche Azure Resource Manager-Modell wie Azure, sodass Sie eine zentrale Ansicht für Ihre Lösungen haben.
 
@@ -38,7 +38,7 @@ Es gibt einige Unterschiede zwischen Azure und Azure Stack Hub. Während manche
 
 - Azure bietet nahezu unbegrenzte Kapazität. Azure Stack Hub basiert auf physischer Hardware in Ihrem Rechenzentrum, was zu Kapazitätsbeschränkungen führt.
 - API-Versionen und Authentifizierungsmechanismen können sich zwischen Azure und Azure Stack Hub geringfügig unterscheiden.
-- Azure Stack Hub unterscheidet sich hinsichtlich des _Betreibers_ der Cloud, was sich auf die Ebene der Workloadvorgänge auswirkt.
+- Azure Stack Hub unterscheidet sich hinsichtlich des *Betreibers* der Cloud, was sich auf die Ebene der Workloadvorgänge auswirkt.
 - Berücksichtigen Sie, welchen Teil des Azure Stack Hub-Diensts der Azure Stack Hub-Operator ausführt, da dies bestimmt, ob der Kunde ein PaaS- oder SaaS-Angebot (Software-as-a-Service) aufruft.
 
 Andere Unterschiede werden in weiteren Artikeln zu Azure Stack Hub erläutert, die sich mit verschiedenen Punkten im Lebenszyklus der Cloudeinführung befassen.
