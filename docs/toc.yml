@@ -23,34 +23,40 @@ items:
             href: reference/fundamental-concepts/hosting-hierarchy.md
           - name: Azure-Hierarchieunterstützung
             href: reference/fundamental-concepts/hierarchy-azure-tools.md
-      - name: Beschleunigen der Migration
-        href: get-started/migrate.md
-      - name: Erstellen neuer Produkte und Dienste
-        href: get-started/innovate.md
-      - name: Entsperren des Umgebungsentwurfs und der Konfiguration
-        href: get-started/design-and-configuration.md
-      - name: Ermöglichen des Kundenerfolgs
-        href: get-started/enable.md
-      - name: Bereitstellen des optimalen Betriebs
-        href: get-started/operational-excellence.md
-      - name: Verwalten von Cloudkosten
-        href: get-started/manage-costs.md
-      - name: Sichern der Unternehmensumgebung
-        href: get-started/security.md
-      - name: Verbessern der Zuverlässigkeit
-        href: get-started/reliability.md
-      - name: Sicherstellen konsistenter Leistung
-        href: get-started/performance.md
-      - name: Ausrichten Ihrer Organisation
-        href: get-started/org-alignment.md
-      - name: Zusammenstellen eines Cloudstrategieteams
-        href: get-started/team/cloud-strategy.md
-      - name: Aufbauen eines Cloudeinführungsteams
-        href: get-started/team/cloud-adoption.md
-      - name: Aufstellen eines Cloudgovernanceteams
-        href: get-started/team/cloud-governance.md
-      - name: Aufbauen eines Cloudbetriebsteams
-        href: get-started/team/cloud-operations.md
+      - name: Schnellere Einführung
+        items:
+          - name: Beschleunigen der Migration
+            href: get-started/migrate.md
+          - name: Erstellen neuer Produkte und Dienste
+            href: get-started/innovate.md
+          - name: Entsperren des Umgebungsentwurfs und der Konfiguration
+            href: get-started/design-and-configuration.md
+      - name: Verbessern der Kontrollmechanismen
+        items:
+          - name: Ermöglichen des Kundenerfolgs
+            href: get-started/enable.md
+          - name: Bereitstellen des optimalen Betriebs
+            href: get-started/operational-excellence.md
+          - name: Verwalten von Cloudkosten
+            href: get-started/manage-costs.md
+          - name: Sichern der Unternehmensumgebung
+            href: get-started/security.md
+          - name: Verbessern der Zuverlässigkeit
+            href: get-started/reliability.md
+          - name: Sicherstellen konsistenter Leistung
+            href: get-started/performance.md
+      - name: Einrichten von Teams
+        items:
+          - name: Ausrichten Ihrer Organisation
+            href: get-started/org-alignment.md
+          - name: Zusammenstellen eines Cloudstrategieteams
+            href: get-started/team/cloud-strategy.md
+          - name: Aufbauen eines Cloudeinführungsteams
+            href: get-started/team/cloud-adoption.md
+          - name: Aufstellen eines Cloudgovernanceteams
+            href: get-started/team/cloud-governance.md
+          - name: Aufbauen eines Cloudbetriebsteams
+            href: get-started/team/cloud-operations.md
   - name: Strategie
     items:
       - name: Übersicht
