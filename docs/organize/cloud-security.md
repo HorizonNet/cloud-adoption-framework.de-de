@@ -7,15 +7,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 58fa0ac8b3c522318472f4adbe4ae8d28d2f8636
-ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
+ms.openlocfilehash: 1b33489f16990d7b2677e1cb128c9c2dcce0c6aa
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84813295"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885710"
 ---
-<!-- cSpell:ignore MarkSimos -->
-
 # <a name="cloud-security-functions"></a>Cloudsicherheitsfunktionen
 
 Dieser Artikel enthält eine Zusammenfassung der Organisationsfunktionen, die zur Verwaltung des Informationssicherheitsrisikos in einem Unternehmen erforderlich sind. Diese Organisationsfunktionen bilden kollektiv den menschlichen Teil eines umfassenden Cybersicherheitssystems. Jede Funktion kann von einer oder mehreren Personen ausgeführt werden, und jede Person kann abhängig von verschiedenen Faktoren, z. B. Kultur, Budget und verfügbare Ressourcen, eine oder mehrere Funktionen ausführen.

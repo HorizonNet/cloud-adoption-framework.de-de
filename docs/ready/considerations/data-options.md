@@ -7,15 +7,13 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 911a0b020ad00b042cfe2caea4d96c74451be032
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 9ad7787dd44314e0c83b55d5d799a111de021f6c
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88566831"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885064"
 ---
-<!-- cSpell:ignore HDFS -->
-
 # <a name="review-your-data-options"></a>Überprüfen Ihrer Datenoptionen
 
 Wenn Sie Ihre Landezonenumgebung für die Cloudeinführung vorbereiten, müssen Sie die Datenanforderungen für das Hosten Ihrer Workloads ermitteln. Azure-Datenbankprodukte und -dienste unterstützen viele verschiedene Szenarien und Funktionen für die Datenspeicherung. Die Konfiguration Ihrer Landezonenumgebung zur Unterstützung der Datenanforderungen richtet sich nach den governancebezogenen, technischen und betriebswirtschaftlichen Anforderungen Ihrer Workload.

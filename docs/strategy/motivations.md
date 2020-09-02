@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 73ca873b35ee676258ddb21223bebee28b427f83
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 868318e1c1e63b6459e13d9ca4d621a7e0145fbf
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572475"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885812"
 ---
 # <a name="motivations-why-are-we-moving-to-the-cloud"></a>Beweggründe: Motivationen für den Wechsel in die Cloud
 
@@ -24,11 +24,9 @@ In diesem Artikel werden einige Beweggründe für die Cloudmigration behandelt, 
 
 Unternehmenstransformationen, die durch die Cloudeinführung unterstützt werden, können von einer Reihe von Beweggründen motiviert sein. Es ist wahrscheinlich, dass mehrere Beweggründe gleichzeitig zutreffen. Das Ziel der Listen in der folgenden Tabelle ist es, einen Einblick darüber zu geben, welche Beweggründe relevant sind. Von dort aus können Sie die möglichen Auswirkungen der Beweggründe priorisieren und bewerten. In diesem Artikel wird empfohlen, dass sich Ihr Cloudeinführungsteam mit verschiedenen Führungskräften und Geschäftsführern trifft, indem es die folgende Liste verwendet, um zu verstehen, welche dieser Beweggründe von den Bemühungen zur Cloudeinführung betroffen sind.
 
-<!-- markdownlint-disable MD033 -->
-
 | Kritische Unternehmensereignisse | Migration | Innovation |
 |---|---|---|
-| Ausstieg aus Rechenzentrum <br><br> Fusionen, Übernahme oder Veräußerung <br><br> Reduzierung der Kapitalkosten <br><br> Ende des Supports für unternehmenskritische Technologien <br><br> Reaktion auf Änderungen bezüglich der Einhaltung gesetzlicher Bestimmungen <br><br> Neue Anforderungen an die Datenhoheit <br><br> Verringerung von Störungen und Verbesserung der IT-Stabilität <br><br> <br><br> | Kostenersparnis <br><br> Verringerung der Anbieter- oder technischen Komplexität <br><br> Optimierung interner Vorgänge <br><br> Erhöhen der Unternehmensflexibilität <br><br> Vorbereitung auf neue technische Funktionen und Möglichkeiten <br><br> Skalierung entsprechend den Marktanforderungen <br><br> Skalierung entsprechend den geografischen Anforderungen <br><br> Integration eines komplexen IT-Portfolios <br><br> | Vorbereitung auf neue technische Funktionen und Möglichkeiten <br><br> Entwicklung neuer technischer Funktionen und Möglichkeiten <br><br> Skalierung entsprechend den Marktanforderungen <br><br> Skalierung entsprechend den geografischen Anforderungen <br><br> Verbesserte Kundenzufriedenheit und Kundenbindung <br><br> Transformierung von Produkten oder Diensten <br><br> Revolutionieren des Markts mit neuen Produkten oder Diensten <br><br> Demokratisierung und/oder Self-Service-Umgebungen  |
+| Ausstieg aus Rechenzentrum <br><br> Fusionen, Übernahme oder Veräußerung <br><br> Reduzierung der Kapitalkosten <br><br> Ende des Supports für unternehmenskritische Technologien <br><br> Reaktion auf Änderungen bezüglich der Einhaltung gesetzlicher Bestimmungen <br><br> Neue Anforderungen an die Datenhoheit <br><br> Verringerung von Störungen und Verbesserung der IT-Stabilität <br><br> <br><br> | Kostenersparnis <br><br> Verringerung der Anbieter- oder technischen Komplexität <br><br> Optimierung interner Vorgänge <br><br> Erhöhen der Unternehmensflexibilität <br><br> Vorbereitung auf neue technische Funktionen und Möglichkeiten <br><br> Skalierung entsprechend den Marktanforderungen <br><br> Skalierung entsprechend den geografischen Anforderungen <br><br> Integration eines komplexen IT-Portfolios <br><br> | Vorbereitung auf neue technische Funktionen und Möglichkeiten <br><br> Entwicklung neuer technischer Funktionen und Möglichkeiten <br><br> Skalierung entsprechend den Marktanforderungen <br><br> Skalierung entsprechend den geografischen Anforderungen <br><br> Verbesserte Kundenzufriedenheit und Kundenbindung <br><br> Transformierung von Produkten oder Diensten <br><br> Revolutionieren des Markts mit neuen Produkten oder Diensten <br><br> Demokratisierung und/oder Self-Service-Umgebungen |
 
 ## <a name="classify-your-motivations"></a>Klassifizieren Ihrer Beweggründe
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
-ms.openlocfilehash: 9af04bd1c67c7db877552572d3fd2e7954ac5046
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 59c4e0b28d36167f34e538d28f5944cb4002b342
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570095"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885727"
 ---
 # <a name="what-is-the-microsoft-cloud-adoption-framework-for-azure"></a>Was ist das Microsoft Cloud Adoption Framework für Azure?
 
@@ -54,9 +54,9 @@ Das Framework für die Einführung der Cloud bietet technische Anleitungen für 
 
 Dieser Leitfaden betrifft Geschäft, Technologie und Kultur von Unternehmen. Die betroffenen Rollen sind beispielsweise Branchenleiter, Entscheidungsträger in Unternehmen, IT-Entscheider, Finanzabteilung, Unternehmensadministratoren, IT-Abläufe, IT-Sicherheit und -Compliance, IT-Governance, Besitzer der Workloadentwicklung und Besitzer von Workloadabläufen. Für jede Rolle wird ein eigenes Vokabular verwendet, und es gelten jeweils andere Ziele und Key Performance Indicators. Mit nur einer Art von Inhalt können nicht alle Zielgruppen effektiv erreicht werden.
 
-Hier kommt der _Cloudarchitekt_ ins Spiel. Der Cloudarchitekt dient als innovative Führungsperson und Vermittler, um diese Zielgruppen zusammenzubringen. Wir haben diese Sammlung mit Anleitungen entworfen, damit Cloudarchitekten die richtigen Gespräche mit den jeweiligen Zielgruppen führen und die Entscheidungsfindung verbessern können. Eine von der Cloud gestützte Unternehmenstransformation hängt von der Rolle des Cloudarchitekten ab, Entscheidungen im gesamten Geschäfts- und IT-Bereich anzuleiten.
+Hier kommt der *Cloudarchitekt* ins Spiel. Der Cloudarchitekt dient als innovative Führungsperson und Vermittler, um diese Zielgruppen zusammenzubringen. Wir haben diese Sammlung mit Anleitungen entworfen, damit Cloudarchitekten die richtigen Gespräche mit den jeweiligen Zielgruppen führen und die Entscheidungsfindung verbessern können. Eine von der Cloud gestützte Unternehmenstransformation hängt von der Rolle des Cloudarchitekten ab, Entscheidungen im gesamten Geschäfts- und IT-Bereich anzuleiten.
 
-Jeder Abschnitt des Frameworks für die Cloudeinführung stellt eine andere Spezialisierung oder Variante der Rolle des Cloudarchitekten dar. Diese Abschnitte schaffen auch Möglichkeiten, die Zuständigkeiten für die Cloudarchitektur auf ein Team von Cloudarchitekten zu verteilen. Der Abschnitt „Governance“ richtet sich beispielsweise an Cloudarchitekten, deren Schwerpunkt auf der Minderung technischer Risiken liegt. Einige Cloudanbieter bezeichnen diese Spezialisten als Cloudverwalter. Wir bevorzugen allerdings die Begriffe _Cloudwächter_ oder zusammenfassend _Cloudgovernanceteam_.
+Jeder Abschnitt des Frameworks für die Cloudeinführung stellt eine andere Spezialisierung oder Variante der Rolle des Cloudarchitekten dar. Diese Abschnitte schaffen auch Möglichkeiten, die Zuständigkeiten für die Cloudarchitektur auf ein Team von Cloudarchitekten zu verteilen. Der Abschnitt „Governance“ richtet sich beispielsweise an Cloudarchitekten, deren Schwerpunkt auf der Minderung technischer Risiken liegt. Einige Cloudanbieter bezeichnen diese Spezialisten als Cloudverwalter. Wir bevorzugen allerdings die Begriffe *Cloudwächter* oder zusammenfassend *Cloudgovernanceteam*.
 
 ## <a name="how-to-use-the-microsoft-cloud-adoption-framework-for-azure"></a>Verwenden des Frameworks für die Einführung der Microsoft Cloud für Azure (Microsoft Cloud Adoption Framework)
 

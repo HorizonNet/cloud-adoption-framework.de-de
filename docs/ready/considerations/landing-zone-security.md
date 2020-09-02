@@ -7,15 +7,13 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 4c3def16dacdcc24459547e5acfe4f4d81cc73a5
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: d28f849d4d264af36db8ffaf1b4c72cadc6677c0
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88566865"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885659"
 ---
-<!-- cSpell:ignore SIEM -->
-
 # <a name="improve-landing-zone-security"></a>Erhöhen der Sicherheit von Zielzonen
 
 Wenn eine Workload oder die Zielzonen, in der sie gehostet wird, den Zugriff auf vertrauliche Daten oder unternehmenskritische Systeme erfordern, ist es wichtig, die Daten und Ressourcen zu schützen. Die Verbesserung der Sicherheit von Zielzonen baut auf dem [testgesteuerten Entwicklungsansatz für Zielzonen](./test-driven-development.md) auf, indem die Zielzone erweitert oder umgestaltet wird, um den erhöhten Sicherheitsanforderungen gerecht zu werden.

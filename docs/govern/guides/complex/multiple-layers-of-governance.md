@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 7c38d394e5681de181186c3c8f04e6704b53e96e
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: ac1b362abf96009cb8b68f85fbe2e754f59018eb
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220072"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88880763"
 ---
 # <a name="governance-guide-for-complex-enterprises-multiple-layers-of-governance"></a>Governanceleitfaden für komplexe Unternehmen: Mehrere Governance-Ebenen
 
@@ -51,7 +51,7 @@ Mithilfe von Tools wie Verwaltungsgruppen kann die Unternehmens-IT eine Hierarch
 
 Der wichtige Aspekt jedes dieser Tools ist seine Fähigkeit, mehrere Blaupausen auf eine Hierarchie anzuwenden. Dadurch kann Governance zu einem mehrstufigen Prozess werden. Hier folgt ein Beispiel dieser hierarchischen Anwendung von Governance:
 
-- **Unternehmens-IT:** Die Unternehmens-IT erstellt eine Reihe von Standards und Richtlinien, die die gesamte Cloudeinführung betreffen. Dies wird in einer _Baseline_-Blaupause festgehalten. Die Unternehmens-IT besitzt dann die Hierarchie der Verwaltungsgruppen, was sicherstellt, dass eine Version der Baseline auf alle Abonnements in der Hierarchie angewendet wird.
+- **Unternehmens-IT:** Die Unternehmens-IT erstellt eine Reihe von Standards und Richtlinien, die die gesamte Cloudeinführung betreffen. Dies wird in einer *Baseline*-Blaupause festgehalten. Die Unternehmens-IT besitzt dann die Hierarchie der Verwaltungsgruppen, was sicherstellt, dass eine Version der Baseline auf alle Abonnements in der Hierarchie angewendet wird.
 - **Regionale oder Geschäftseinheits-IT:** Verschiedene IT-Teams können eine zusätzliche Governance-Ebene anwenden, indem sie ihre eigene Blaupause erstellen. Mithilfe dieser Blaupausen werden zusätzliche Richtlinien und Standards erstellt. Nach der Entwicklung kann die Unternehmens-IT diese Blaupausen auf die entsprechenden Knoten innerhalb der Verwaltungsgruppenhierarchie anwenden.
 - **Cloudeinführungsteams:** Detaillierte Entscheidungen und Implementierungen von Anwendungen oder Workloads können von den Cloudeinführungsteams im Kontext von Governanceanforderungen getroffen bzw. vorgenommen werden. Das Team kann auch zusätzliche Azure-Ressourcenkonsistenzvorlagen anfordern, um die Einführungsbemühungen zu beschleunigen.
 

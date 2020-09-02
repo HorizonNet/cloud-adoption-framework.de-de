@@ -7,15 +7,13 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d1572d7da20a1b5e1dfe642ebce3404c3482f412
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 1599c6b2e4df791e1fafd5d2c7a7b4849c11bc98
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573155"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88878298"
 ---
-<!-- cSpell:ignore deprioritize -->
-
 # <a name="empower-adoption-with-digital-invention"></a>Unterstützen der Einführung durch digitale Innovationen
 
 Der ultimative Test der Innovation ist die Reaktion des Kunden auf Ihre Erfindung. Hat sich die Hypothese als wahr erwiesen? Verwenden Kunden die Lösung? Wird sie den Anforderungen des gewünschten Prozentsatzes von Benutzern gerecht? Das Wichtigste: Kommen sie wieder? Alle diese Fragen können erst nach der Bereitstellung der MVP-Lösung (Minimum Viable Product) gestellt werden. In diesem Artikel konzentrieren wir uns auf die Disziplin der Unterstützung der Einführung.
@@ -91,7 +89,7 @@ In jeder Phase der Hypothesenvalidierung bieten Azure DevOps und [Azure Pipeline
 
 ## <a name="integrated-measurements"></a>Integrierte Messungen
 
-Beim [Messen der Auswirkungen für Kunden](./measure.md) ist es wichtig, dass Sie verstehen, wie Kunden auf Änderungen in der Lösung reagieren. Diese als _Telemetriedaten_ bezeichneten Daten bieten Einblicke in die Aktionen, die ein Benutzer (oder eine Kohorte von Benutzern) beim Arbeiten mit der Lösung durchführte. Aus diesen Daten kann einfach eine quantitative Validierung der Hypothese gewonnen werden. Diese Metriken können dann verwendet werden, um die Lösung anzupassen und differenziertere Hypothesen zu generieren. Diese subtileren Änderungen tragen dazu bei, die anfängliche Lösung in nachfolgenden Iterationen ausreifen zu lassen, sodass die Einführung schließlich bedarfsabhängig wiederholt wird.
+Beim [Messen der Auswirkungen für Kunden](./measure.md) ist es wichtig, dass Sie verstehen, wie Kunden auf Änderungen in der Lösung reagieren. Diese als *Telemetriedaten* bezeichneten Daten bieten Einblicke in die Aktionen, die ein Benutzer (oder eine Kohorte von Benutzern) beim Arbeiten mit der Lösung durchführte. Aus diesen Daten kann einfach eine quantitative Validierung der Hypothese gewonnen werden. Diese Metriken können dann verwendet werden, um die Lösung anzupassen und differenziertere Hypothesen zu generieren. Diese subtileren Änderungen tragen dazu bei, die anfängliche Lösung in nachfolgenden Iterationen ausreifen zu lassen, sodass die Einführung schließlich bedarfsabhängig wiederholt wird.
 
 In Azure bietet [Azure Monitor](/azure/azure-monitor/overview) die Tools und die Schnittstelle zum Erfassen und Überprüfen der Daten aus den Kundenerfahrungen. Sie können diese Beobachtungen und Einblicke verwenden, um den Rückstand mithilfe von [Azure Boards](/azure/devops/boards) zu verbessern.
 

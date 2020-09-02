@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 75b912d908789349fa6479f21cda6ebeed3f02ca
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 64c3b510f07f7bee7648a00615f0dc45947cb9df
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786397"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88880797"
 ---
 # <a name="governance-guide-for-complex-enterprises-best-practices-explained"></a>Governanceleitfaden für komplexe Unternehmen: Beschreibung der bewährten Methoden
 
@@ -25,7 +25,7 @@ In diesem Artikel werden die allgemeinen Strategien behandelt, die zum Erstellen
 
 Die schnelle Einführung von Governance und Unternehmensrichtlinien ist dank einiger einfacher Prinzipien und cloudbasierter Governancetools möglich. Dies sind die ersten der drei Governance-Verfahren, die in jedem Governanceprozess zur Anwendung kommen. Sämtliche Disziplinen werden weiter unten in diesem Artikel erläutert.
 
-<!--docsTest:ignore "Identity Baseline, Security Baseline, and Deployment Acceleration disciplines" -->
+<!-- docutune:casing "Identity Baseline, Security Baseline, and Deployment Acceleration disciplines" -->
 
 Als Ausgangspunkt werden in diesem Artikel die allgemeinen Strategien hinter den Disziplinen „Identitätsbaseline“, „Sicherheitsbaseline“ und „Beschleunigung der Bereitstellung“ behandelt, die zum Erstellen eines Governance-MVP erforderlich sind, der als Grundlage für jede Umsetzung dient.
 
@@ -54,13 +54,14 @@ Das Cloudgovernanceteam ist für die folgenden Entscheidungen und Implementierun
 
 Die Entscheidung über den Abonnemententwurf bestimmt, wie Azure-Abonnements strukturiert werden und wie Azure-Verwaltungsgruppen verwendet werden, um Zugriff, Richtlinien und Compliance für diese Abonnements effizient zu verwalten. Im vorliegenden Beispielfall hat das Governanceteam eine [Strategie für gemischte Abonnements](../../../decision-guides/subscriptions/index.md#mix-subscription-strategies) ausgewählt.
 
-- Wenn neue Anforderungen für Azure-Ressourcen entstehen, sollte für jede größere Geschäftseinheit in jeder geografischen Betriebsregion eine _Abteilung_ eingerichtet werden. In jeder einzelnen Abteilung sollten _Abonnements_ für jeden Anwendungsarchetyp erstellt werden.
+- Wenn neue Anforderungen für Azure-Ressourcen entstehen, sollte für jede größere Geschäftseinheit in jeder geografischen Betriebsregion eine *Abteilung* eingerichtet werden. In jeder einzelnen Abteilung sollten *Abonnements* für jeden Anwendungsarchetyp erstellt werden.
 - Ein Anwendungsarchetyp ist eine Möglichkeit, Anwendungen mit ähnlichen Anwendungen zu gruppieren. Häufige Beispiele sind:
   - Anwendungen mit geschützten Daten, verwaltete Anwendungen (z. B. HIPAA oder FedRAMP).
   - Anwendungen mit geringem Risiko.
   - Anwendungen mit lokalen Abhängigkeiten.
   - SAP- oder andere Mainframeanwendungen in Azure.
   - Anwendungen, die lokale SAP- oder Mainframeanwendungen erweitern.
+
   Jedes Unternehmen hat individuelle Anforderungen, die auf Datenklassifikationen und den Arten von Anwendungen basieren, die das Geschäft unterstützen. Die Abhängigkeitszuordnung der digitalen Infrastruktur kann bei der Definition der Anwendungsarchitekturen in einem Unternehmen helfen.
 - Im Rahmen des Abonnementdesigns sollte auf der Grundlage der obigen Punkte eine gemeinsame Namenskonvention übernommen werden.
 

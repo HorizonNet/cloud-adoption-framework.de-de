@@ -7,16 +7,16 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 082f8cfcd3cb8d0e01a49bf5a1da32b77c4050fd
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 10ff8691285bdb6db157fd1d55428167f81c1be2
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568174"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88883262"
 ---
 # <a name="predict-and-influence"></a>Vorhersagen und Beeinflussen
 
-Es gibt in der digitalen Wirtschaft zwei Klassen von Anwendungen: _historisch_ und _prädiktiv_. Viele Kundenbedürfnisse können nur mithilfe historischer Daten erfüllt werden, einschließlich Daten in nahezu Echtzeit. Die meisten Lösungen konzentrieren sich derzeit in erster Linie auf die Aggregation von Daten. Diese Daten werden verarbeitet und an den Kunden in Form einer digitalen oder Umgebungserfahrung zurückgegeben.
+Es gibt in der digitalen Wirtschaft zwei Klassen von Anwendungen: *historisch* und *prädiktiv*. Viele Kundenbedürfnisse können nur mithilfe historischer Daten erfüllt werden, einschließlich Daten in nahezu Echtzeit. Die meisten Lösungen konzentrieren sich derzeit in erster Linie auf die Aggregation von Daten. Diese Daten werden verarbeitet und an den Kunden in Form einer digitalen oder Umgebungserfahrung zurückgegeben.
 
 Da die prädiktive Modellierung immer wirtschaftlicher und leichter verfügbar wird, verlangen Kunden nach zukunftsweisenden Erfahrungen, die zu besseren Entscheidungen und Maßnahmen führen. Diese Nachfrage muss jedoch nicht zwangsläufig eine prädiktive Lösung vorschlagen. In den meisten Fällen kann eine historische Sicht genügend Daten liefern, um den Kunden in die Lage zu versetzen, selbst eine Entscheidung zu treffen.
 

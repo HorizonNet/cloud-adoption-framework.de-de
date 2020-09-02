@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: bf320d60ca9b53d72a063e17b24c498272aa19d8
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: f3d2663bdb3c057f5031eeacc79e2068c729cb89
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568446"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884486"
 ---
 # <a name="collect-data-through-the-migration-and-modernization-of-existing-data-sources"></a>Sammeln von Daten durch Migration und Modernisierung vorhandener Datenquellen
 
@@ -46,8 +46,8 @@ Bei einer Offlinemigration beginnt der Ausfall der Anwendung, wenn die Migration
 
 Es wird empfohlen, dass Sie Ihre akzeptablen Ausfallzeiten für das Geschäft festlegen und eine Offlinemigration testen. Auf diese Weise können Sie überprüfen, ob die Wiederherstellungsdauer mit der akzeptablen Ausfallzeit übereinstimmt. Wenn die Wiederherstellungsdauer inakzeptabel ist, führen Sie eine Onlinemigration durch.
 
-| `Source`  | Ziel  | Tool  | Migrationstyp | Anleitungen |
-|---|---|---|---|---|
+| `Source` | Ziel | Tool | Migrationstyp | Anleitungen |
+|--|--|--|--|--|
 | SQL Server | Azure SQL-Datenbank | Database Migration Service | Offline | [Tutorial](/azure/dms/tutorial-sql-server-to-azure-sql) |
 | SQL Server | Azure SQL-Datenbank | Database Migration Service | Online | [Tutorial](/azure/dms/tutorial-sql-server-azure-sql-online) |
 | SQL Server | Verwaltete Azure SQL-Instanz | Database Migration Service | Offline | [Tutorial](/azure/dms/tutorial-sql-server-to-managed-instance) |

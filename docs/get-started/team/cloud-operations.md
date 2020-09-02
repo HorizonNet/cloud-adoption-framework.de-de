@@ -3,16 +3,16 @@ title: 'Erste Schritte: Aufbauen eines Cloudbetriebsteams'
 description: Anhand dieses Leitfadens kann ein Cloudbetriebsteam den Projektumfang sowie die Ziele und Funktionen nachvollziehen, für die das Team verantwortlich ist.
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: eb9c57c8ddc91821eb6dcde48279cd08fbd5c3db
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 4d1ecbe31f7469cb992ab7e983a9ff4a34ef437f
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88661944"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884061"
 ---
 # <a name="get-started-build-a-cloud-operations-team"></a>Erste Schritte: Aufbauen eines Cloudbetriebsteams
 
@@ -36,7 +36,7 @@ Sollten keine DevOps- oder Dienstanbietervereinbarungen für den Betrieb vorlieg
 - [Cloudbetriebsfunktionen](../../organize/cloud-operations.md) sind unter Umständen bereits auf mehrere Einzelpersonen oder Teams verteilt. Entscheiden Sie, ob ein Cloudbetriebsteam erforderlich ist. Produktionsworkloads sind immer mit einem gewissen Betriebsaufwand verbunden.
 - Falls die langfristige Cloudeinführungsstrategie des Unternehmens über eine Zielzone in einer Cloudumgebung bereitgestellt werden kann, ist der Governance- und Betriebsaufwand ggf. so gering, dass eine einzelne Person bzw. ein einzelnes Team ausreicht. Dieses Team wird dann wahrscheinlich nicht als Cloudbetriebsteam bezeichnet, da es verschiedene Aufgaben erfüllt. Für diese Einzelperson oder dieses Team können Sie mithilfe der folgenden Anleitungen sicherstellen, dass diese wichtige Betriebsfunktion bereitgestellt werden kann.
 
-<!-- markdownlint-disable MD033 -->
+<br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
@@ -58,7 +58,6 @@ Bevor das Cloudbetriebsteam laufende Betriebspraktiken implementiert, ist es wic
 - Sehen Sie sich gemeinsam mit Mitgliedern des Cloudeinführungsteams den [Cloudeinführungsplan](../../plan/template.md) Ihres Unternehmens an, um sich mit dem Zeitplan und den Prioritäten vertraut zu machen.
 - Beginnen Sie mit der Ausarbeitung der [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx), um die betriebsbezogenen Anforderungen und Verpflichtungen des Teams für das Unternehmen nachzuvollziehen.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -78,7 +77,6 @@ Die Cloudeinführung erfolgt normalerweise in mehreren Wellen bzw. Releases. Ein
 
 - Weitere Anleitungen zur Häufigkeit von Besprechungen finden Sie im Abschnitt „Zielvorgaben“ unter [Cloudbetriebsfunktionen](../../organize/cloud-operations.md#deliverables).
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -169,7 +167,7 @@ Mit zunehmender Reife der Betriebsplanung sollte sich das Team regelmäßig mit 
 
 - Weitere Informationen finden Sie im [Leitfaden zur Verbesserung der Ressourcenkonsistenz](../../govern/guides/complex/resource-consistency-improvement.md).
 
-<!-- markdownlint-disable MD033 -->
+<br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
@@ -187,7 +185,7 @@ Wenn neue Einführungsmaßnahmen abgeschlossen werden, überträgt das Cloudeinf
 
 - Legen Sie einen Prozess für das [Durchführen des Onboardings für neue Workloads und Ressourcen](/azure/azure-resource-manager/custom-providers/concepts-resource-onboarding) fest.
 
-<!-- markdownlint-disable MD033 -->
+<br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |

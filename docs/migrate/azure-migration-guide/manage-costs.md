@@ -9,15 +9,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5e6034308a11a8347c3b5126756c6a87d3fe98c0
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 7af9971a74c33ae6994e3fde3d3496c2f2698499
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570452"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885013"
 ---
-<!-- cSpell:ignore bandersmsft -->
-
 # <a name="migration-focused-cost-control-mechanisms"></a>Auf Migration ausgerichtete Kostenkontrollmechanismen
 
 Die Cloud bewirkt einige Veränderungen in unseren Arbeitsweisen, unabhängig von unserer Rolle im Technologieteam. Kosten sind ein gutes Beispiel hierfür. In der Vergangenheit beschäftigte sich nur die Finanz- und IT-Führung mit den Kosten von IT-Ressourcen (Infrastruktur, Apps, Daten). Die Cloud befähigt nun jedes IT-Mitglied, Entscheidungen zu treffen und umzusetzen, die den Endbenutzer besser unterstützen. Mit dieser Fähigkeit kommt jedoch auch die Verantwortung, bei diesen Entscheidungen kostenbewusst zu handeln.
@@ -34,7 +32,7 @@ In diesem Artikel werden folgende Tool behandelt:
 
 Die in diesem Artikel beschriebenen Prozesse können auch eine Partnerschaft mit IT-Managern, Finanzexperten oder Branchenanwendungen erfordern.
 
-<!-- markdownlint-disable MD024 MD025 -->
+<!-- markdownlint-disable MD024 -->
 
 ## <a name="estimate-vm-costs-prior-to-migration"></a>[Schätzen der Kosten für virtuelle Computer vor der Migration](#tab/EstimateVMCosts)
 

@@ -7,15 +7,13 @@ ms.date: 04/14/2020
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.topic: article
-ms.openlocfilehash: 1f759debd007ffdf03cee1802a564a8b11927964
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 6e3cbf834111b1ce6e68354070e8266a3d1f0d9a
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575076"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885557"
 ---
-<!-- cSpell:ignore Terraform's -->
-
 # <a name="tools-and-templates"></a>Tools und Vorlagen
 
 Das Cloud Adoption Framework umfasst Tools, mit denen Sie technische Änderungen schnell implementieren können. Verwenden Sie diese Tools, Vorlagen und Bewertungen, um die Cloudeinführung zu beschleunigen. Die folgenden Ressourcen können Ihnen in den einzelnen Einführungsphasen helfen. Einige der Tools und Vorlagen können in mehreren Phasen verwendet werden.

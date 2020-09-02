@@ -7,15 +7,13 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 076248ef6fbbf119d29e159aac54aadc56d6bbc0
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 71022fd795e2cecff34c238a2e0978d3242cb037
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568531"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884554"
 ---
-<!-- cSpell:ignore Personalizer -->
-
 # <a name="what-are-ai-applications"></a>Was sind KI-Anwendungen?
 
 In Azure können Sie schneller intelligente Anwendungen mithilfe von Tools und Technologien Ihrer Wahl und integrierter KI entwickeln.
@@ -48,12 +46,12 @@ Es handelt sich dabei um APIs, SDKs und Dienste, die Entwicklern beim Erstellen 
 | [Spracheingabe](/azure/cognitive-services/speech-service/) | Der Spracherkennungsdienst erweitert Anwendungen um sprachaktivierte Features. |
 | [Sprechererkennung](/azure/cognitive-services/speaker-recognition/home "Sprechererkennungs-API") (Vorschauversion) | Die Sprechererkennungs-API stellt Algorithmen zur Sprecheridentifikation und -verifizierung zur Verfügung. |
 | [Bing-Spracheingabe](/azure/cognitive-services/speech/home) (wird eingestellt) | Die Bing-Spracheingabe-API bietet Ihnen eine einfache Möglichkeit, sprachaktivierte Features in Ihren Anwendungen zu erstellen. |
-| [Sprachübersetzung](/azure/cognitive-services/translator-speech/) (wird eingestellt) | Die Sprachübersetzung ist ein Dienst zur maschinellen Übersetzung. |
+| [Sprachübersetzung](/azure/cognitive-services/translator-speech/) (wird eingestellt) | Die Sprachübersetzung ist ein Dienst für maschinelle Übersetzungen. |
 
 ### <a name="language-apis"></a>Sprache-APIs
 
 | Dienstname | Dienstbeschreibung |
-| --- | -- |
+|--|--|
 | [Language Understanding (LUIS)](/azure/cognitive-services/luis/) | Mit dem LUIS-Dienst (Language Understanding) kann Ihre Anwendung frei formulierte Anliegen von Personen verstehen. |
 | [QnA Maker](/azure/cognitive-services/qnamaker/index "QnA Maker") | Der QnA Maker ermöglicht es Ihnen, aus Ihren teilstrukturierten Inhalten einen Frage- und Antwortdienst zu erstellen. |
 | [Textanalyse](/azure/cognitive-services/text-analytics/) | Die Textanalyse bietet die Verarbeitung von natürlicher Sprache für unformatierten Text für die Standpunktanalyse, die Schlüsselbegriffserkennung und die Sprachenerkennung. |
@@ -79,7 +77,7 @@ Cognitive Services bietet ein mehrschichtiges Sicherheitsmodell – einschließ
 
 Cognitive Services stellt Container für die Bereitstellung in der Cloud oder lokal bereit. Weitere Informationen zu Cognitive Services-Containern finden Sie [hier](/azure/cognitive-services/cognitive-services-container-support).
 
-<!-- docsTest:ignore "HIPAA BAA" "CSA STAR" -->
+<!-- docsTest:casing "HIPAA BAA" "CSA STAR" -->
 
 ### <a name="certifications-and-compliance"></a>Zertifizierungen und Compliance
 

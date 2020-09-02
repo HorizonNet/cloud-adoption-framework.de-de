@@ -7,14 +7,15 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: acd549f4ccfce0ce8ff115817e6aed1f2c12b938
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 1312ad4cac826084613ae41a8e2e61471efb876f
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568922"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88878825"
 ---
-<!-- cSpell:ignore njray nanra Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX TIP dbextents Raincode Tmax -->
+<!-- docutune:casing GDGs -->
+<!-- cSpell:ignore Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->
 
 # <a name="mainframe-application-migration"></a>Migration von Mainframeanwendungen
 
@@ -176,7 +177,7 @@ Wenn Sie eine Mainframemigration in Betracht ziehen, steht Ihnen das Partneröko
 
 Azure bietet eine bewährte, hoch verfügbare und skalierbare Infrastruktur für Systeme, die derzeit auf Mainframes ausgeführt werden. Einige Workloads können relativ einfach migriert werden. Andere Workloads, die auf älterer Systemsoftware wie z.B. CICS und IMS beruhen, können über Partnerlösungen neuen Hosts zugewiesen und im Laufe der Zeit zu Azure migriert werden. Unabhängig von Ihrer Wahl stehen Microsoft und unsere Partner Ihnen zur Verfügung, um Sie bei der Optimierung für Azure und bei der Beibehaltung der Funktionalität von Mainframesystemsoftware zu unterstützen.
 
-<!-- docsTest:ignore "IBM DB2 pureScale" -->
+<!-- docsTest:casing "IBM DB2 pureScale" -->
 
 ## <a name="learn-more"></a>Weitere Informationen
 

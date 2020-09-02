@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 25d11e5fafbf864790ae900154ca39f8b0569150
-ms.sourcegitcommit: d31a9043d1ae9283ed126bf118ca26d1d18d6948
+ms.openlocfilehash: f2746c47b99204bff629efdf60e8a9e1436168de
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88040625"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885081"
 ---
 # <a name="cloud-adoption-framework-enterprise-scale-design-principles"></a>Entwurfsprinzipien für das Cloud Adoption Framework auf Unternehmensebene
 
@@ -27,8 +27,6 @@ Abonnements sollten als Verwaltungseinheit verwendet und basierend auf den Anfor
 Für eine kontinuierliche Konformität der Plattform Ihrer Organisation und der Anwendungen, die auf dieser Plattform bereitgestellt werden, sollte Azure Policy verwendet werden. Mit dieser Lösung profitieren Anwendungsbesitzer zudem von der notwendigen Eigenständigkeit und einem sicheren, ungehinderten Pfad zur Cloud.
 
 ## <a name="single-control-and-management-plane"></a>Eine einzige Steuerungs- und Verwaltungsebene
-
-<!-- cSpell:ignore AppOps -->
 
 Eine Architektur auf Unternehmensebene sollte keine Abstraktionsschichten wie beispielsweise vom Kunden entwickelte Portale oder Werkzeuge berücksichtigen. Es sollte sowohl für die AppOps (zentral verwaltete Betriebsteams) als auch für die DevOps (dedizierte Betriebsteams für Anwendungen) eine einheitliche Erfahrung bieten. Azure bietet eine einheitliche und konsistente Steuerungsebene für alle Azure-Ressourcen und Bereitstellungskanäle, die rollenbasierten Zugriffssteuerungen und richtlinienbasierten Steuerungen unterliegen. Azure kann dazu verwendet werden, eine standardisierte Reihe von Richtlinien und Steuerelementen für die Verwaltung der gesamten Unternehmensumgebung festzulegen.
 

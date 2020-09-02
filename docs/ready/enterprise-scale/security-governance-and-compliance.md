@@ -7,16 +7,16 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a6ff92199521fdc93ae7e57c7208a990b1476a97
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: d81b17fb8429fe058856f049c7ab491e7cab504f
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572730"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884758"
 ---
 # <a name="enterprise-scale-security-governance-and-compliance"></a>Sicherheitsgovernance und Compliance auf Unternehmensebene
 
-Dieser Artikel befasst sich mit der Definition der Begriffe Verschlüsselung, Schlüsselverwaltung, Sicherheitsüberwachung und Auditrichtlinie und mit der Planung der Governance und der Plattformsicherheit. Am Ende des Artikels finden Sie eine Tabelle, in der ein Rahmenwerk beschrieben wird, um die Sicherheitsbereitschaft von Azure-Diensten in Unternehmen zu bewerten. 
+Dieser Artikel befasst sich mit der Definition der Begriffe Verschlüsselung, Schlüsselverwaltung, Sicherheitsüberwachung und Auditrichtlinie und mit der Planung der Governance und der Plattformsicherheit. Am Ende des Artikels finden Sie eine Tabelle, in der ein Rahmenwerk beschrieben wird, um die Sicherheitsbereitschaft von Azure-Diensten in Unternehmen zu bewerten.
 
 ## <a name="define-encryption-and-key-management"></a>Definieren von Verschlüsselung und Schlüsselverwaltung
 

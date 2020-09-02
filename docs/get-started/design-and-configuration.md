@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: cddaf19da87112c43ae9834aa21736488c51abb4
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 526fe646f41f76985c7a4d3ba47cd2df474949c1
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88196012"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88881256"
 ---
 # <a name="get-started-design-and-configuration"></a>Erste Schritte: Entwurf und Konfiguration
 
@@ -38,7 +38,6 @@ Eine klare und präzise Geschäftsstrategie unterstützt das Cloudplattformteam 
 - [Geschäftsergebnisse](../strategy/business-outcomes/index.md): Nachdem die Beweggründe ausgerichtet wurden, können die gewünschten Geschäftsergebnisse erfasst werden. Diese Informationen stellt klare Metriken bereit, mit denen Sie die Gesamttransformation messen können.
 - [Erstellen eines Geschäftsszenarios für die Cloudmigration](../strategy/cloud-migration-business-case.md): Nun können Sie mit der Entwicklung eines Geschäftsszenarios für die Migration mit klaren Formeln und Tools beginnen, die bei der geschäftlichen Rechtfertigung helfen können.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams | Informierte Teams |
@@ -63,7 +62,6 @@ Die Ausgabe der Bewertung des digitalen Bestands ermöglicht dem Cloudplattformt
 - [Vorhandener Systembestand](../digital-estate/inventory.md): Der erste Schritt besteht darin, sich auf der Grundlage eines programm- und datengesteuerten Ansatzes mit dem Ist-Zustand vertraut zu machen. Ermitteln und sammeln Sie Daten, um alle Bewertungsaktivitäten zu ermöglichen.
 - [Inkrementelle Rationalisierung](../digital-estate/rationalize.md#incremental-rationalization): Optimieren der Bewertungsbemühungen, um sich möglicherweise sogar zur Unterstützung des Geschäftsszenarios auf eine qualitative Analyse aller Ressourcen zu konzentrieren. Fügen Sie dann eine umfassende, qualitativ hochwertige Analyse für die ersten 10 zu migrierenden Workloads hinzu.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams | Informierte Teams |
@@ -92,7 +90,6 @@ Eine Überprüfung des kurzfristigen Cloudeinführungsplans und das Backlog unte
 - [Aufwandsausrichtung](../plan/assets.md): Richten Sie Ressourcen und Workloads im Backlog aus, um den Aufwand für priorisierte Workloads eindeutig zu definieren.
 - [Ausrichtung von Personen und Zeit](../plan/iteration-paths.md): Legen Sie Iteration, Geschwindigkeit und Releases für die migrierten Workloads fest.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams | Informierte Teams |
@@ -115,7 +112,6 @@ Anfänglich benötigt das Cloudeinführungsteam eine Zielzone, die die Anforderu
 - [Auswählen einer Zielzone](../ready/landing-zone/index.md): Verwenden Sie diesen Abschnitt, um den richtigen Ansatz für die Bereitstellung einer Zielzone basierend auf Ihrem kurzfristigen Einführungsplan zu ermitteln. Stellen Sie dann diese standardisierte Codebasis bereit.
 - [Erweitern der Zielzone](../ready/considerations/index.md): Versuchen Sie noch nicht, langfristige Governance-, Sicherheits- oder Vorgangseinschränkungen zu erfüllen, es sei denn, Sie müssen den kurzfristigen Einführungsplan unterstützen.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -141,7 +137,6 @@ Wenn diese Entscheidungen getroffen werden, fließen sie wieder in die parallel 
 - [Governance-Benchmarktool](../govern/benchmark.md): Erkennen Sie Lücken in Ihrem aktuellen Zustand, damit Sie für die Zukunft planen können.
 - [Anfängliche Governancegrundlage](../govern/guides/complex/prescriptive-guidance.md): Verstehen der Fachrichtungen Identitätsbaseline, Sicherheitsbaseline und Bereitstellungsbeschleunigung, die erforderlich sind, um ein Governance-MVP (Minimum Viable Product) zu schaffen, das als Grundlage für jede Einführung dient.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams | Zu Rate gezogene Teams |
@@ -170,7 +165,6 @@ Wenn diese Pläne erstellt werden, fließen sie wieder in die parallel stattfind
 - [Erweitern der Verwaltungsbaseline](../manage/best-practices.md)
 - [Spezifische Angaben zu erweiterten Vorgängen](../manage/design-principles.md)
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams | Zu Rate gezogene Teams |
@@ -196,7 +190,6 @@ Wenn das Cloudeinführungsteam mit den ersten Migrationen beginnt, kann das Clou
 - [Erweitern des Betriebs von Zielzonen](../ready/considerations/landing-zone-operations.md)
 - [Erweitern der Sicherheit von Zielzonen](../ready/considerations/landing-zone-security.md)
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |

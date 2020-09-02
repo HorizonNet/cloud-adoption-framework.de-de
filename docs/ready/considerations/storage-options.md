@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a5eec2f4e4b14253bba435e1acf873d38127975d
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 28c7005a7208301e89a0a4d27c9ee1bb0d84af1e
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574430"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885114"
 ---
 <!-- cSpell:ignore HDFS databox Avere HANA ACLs NetApp Isilon DFSR Cloudera -->
 
@@ -50,9 +50,8 @@ Azure verfügt über mehrere Produkte und Dienste, mit denen unterschiedliche Sp
 ### <a name="block-storage-scenarios"></a>Blockspeicherszenarien
 
 <!-- docsTest:ignore M-series -->
-<!-- markdownlint-disable MD033 -->
 
-| Szenario  | Empfohlene Azure-Dienste | Aspekte der vorgeschlagenen Dienste |
+| Szenario | Empfohlene Azure-Dienste | Aspekte der vorgeschlagenen Dienste |
 |---|---|---|
 | Ich verfüge über Bare-Metal-Server oder VMs (Hyper-V oder VMware) mit direkt angefügtem Speicher, auf denen Branchenanwendungen ausgeführt werden. | [Azure Disk Storage (SSD Premium)](/azure/virtual-machines/windows/disks-types#premium-ssd) | Für Produktionsdienste bietet die Option SSD Premium eine konsistent niedrige Latenz in Verbindung mit einem hohen IOPS-Wert und Durchsatz. |
 | Ich verfüge über Server zum Hosten von Web-Apps und mobilen Apps. | [Azure Disk Storage (SSD Standard)](/azure/virtual-machines/windows/disks-types#standard-ssd) | IOPS und Durchsatz vom Typ SSD Standard sind für CPU-gebundene Web-/App-Server in der Produktion unter Umständen ausreichend (zu geringeren Kosten als bei SSD Premium). |
@@ -112,8 +111,6 @@ Informieren Sie sich nach dem Identifizieren der Azure-Tools, die Ihre Anforderu
 | [Azure Data Box Edge](/azure/databox-online/data-box-edge-overview) | Azure Data Box Edge ist ein lokales Netzwerkgerät, mit dem Daten in und aus Azure verschoben werden. Data Box Edge verfügt über KI-fähiges Edgecomputing für die Vorverarbeitung von Daten während des Uploads. Data Box Gateway ist eine virtuelle Version des Geräts, aber mit den gleichen Datenübertragungsfunktionen. |
 | [Azure Data Box Gateway](/azure/databox-online/data-box-gateway-overview) | Azure Data Box Gateway ist eine Speicherlösung, die zum nahtlosen Übertragen von Daten in Azure dient. Data Box Gateway ist ein auf einem virtuellen Computer basierendes virtuelles Gerät, das in Ihrer virtualisierten Umgebung oder im Hypervisor bereitgestellt wird. Das virtuelle Gerät befindet sich an Ihrem Standort, und Sie beschreiben es mit den Protokollen NFS und SMB mit Daten. Das Gerät überträgt dann Ihre Daten in Azure-Blockblobs bzw. Azure-Seitenblobs oder nach Azure Files. |
 | [Avere vFXT für Azure](/azure/avere-vfxt/avere-vfxt-overview) | Avere vFXT für Azure ist eine Dateisystem-Zwischenspeicherungslösung für datenintensive HPC-Aufgaben (High Performance Computing). Hiermit können Sie Ihre Daten nach Bedarf zugänglich machen und dabei von der Skalierbarkeit des Cloud Computings profitieren. Dies gilt sogar für Daten, die auf Ihrer eigenen lokalen Hardware gespeichert sind. |
-
-<!-- markdownlint-enable MD033 -->
 
 ## <a name="data-redundancy-and-availability"></a>Datenredundanz und -verfügbarkeit
 

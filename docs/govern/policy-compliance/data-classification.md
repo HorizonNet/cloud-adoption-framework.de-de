@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 719bd1ada85fb67b29ba0dc3f93b4dbf7a243a8c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 0593b15558665d7b500d6505fd3d5e5ff4bbea42
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573223"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879828"
 ---
 # <a name="what-is-data-classification"></a>Was ist die Datenklassifizierung?
 
@@ -52,4 +52,4 @@ Versehen Sie Ressourcen mit einer definierten Datenklassifizierung.
 Lesen Sie auch den Artikel zum Schützen sensibler Daten aus dieser Artikelreihe. Der nächste Artikel enthält Informationen zum Umgang mit als vertraulich oder streng vertraulich klassifizierten Daten:
 
 > [!div class="nextstepaction"]
-> [Schützen von Datenlösungen](/azure/architecture/data-guide/scenarios/securing-data-solutions?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
+> [Schützen von Datenlösungen](/azure/architecture/data-guide/scenarios/securing-data-solutions?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)

@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: b3191d766be3996192bf1f970a11ca8d71d2a633
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 31371f8b2902295eeabf3ffb19af4e0a13c82fde
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86478683"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88883279"
 ---
 # <a name="measure-for-customer-impact"></a>Messen der Auswirkungen für Kunden
 
@@ -52,7 +52,7 @@ In den meisten Fällen verfügt ein Customer Flow über einen einfach zu definie
 3. **Lösungsschritte:** Dieser Begriff bezieht sich auf die Schritte, die erforderlich sind, um den Kunden vom anfänglichen Trigger zu einem erfolgreichen Ergebnis zu führen. Jeder Schritt erzeugt eine Lernmetrik, die auf einer Kundenentscheidung basiert, um mit dem nächsten Schritt fortzufahren.
 4. **Individuelle Cloud Adoption erreicht:** Bei der nächsten Ausführung des Triggers wird die individuelle Cloud Adoption erreicht, wenn der Kunde zur Lösung zurückkehrt, damit seine Anforderung erfüllt wird.
 5. **Indikator für Geschäftsergebnis:** Wenn sich ein Kunde auf eine Weise verhält, die zum definierten Geschäftsergebnis beiträgt, kann ein Indikator für das Geschäftsergebnis beobachtet werden.
-6. **Echte Innovation:** Wenn sowohl _Geschäftsergebnisindikatoren_ als auch _individuelle Akzeptanz_ im gewünschten Maßstab auftreten, haben Sie echte Innovationen realisiert.
+6. **Echte Innovation:** Wenn sowohl *Geschäftsergebnisindikatoren* als auch *individuelle Akzeptanz* im gewünschten Maßstab auftreten, haben Sie echte Innovationen realisiert.
 
 Jeder Schritt im Customer Flow generiert Lernmetriken. Nach jeder Iterationen (oder jedem Release) wird eine neue Version der Hypothese getestet. Gleichzeitig werden Optimierungen der Lösung getestet, um Anpassungen der Hypothese widerzuspiegeln. Wenn Kunden den vorgegebenen Pfad mit jedem einzelnen Schritt befolgen, wird eine positive Metrik erfasst. Wenn Kunden vom vorgegebenen Pfad abweichen, wird eine negative Metrik aufgezeichnet.
 
@@ -64,7 +64,7 @@ Die erste Messung beim Definieren von Lernmetriken ist die Definition der Kunden
 
 - **Experiment- oder Fokusgruppe:** Gruppierung von Kunden basierend auf ihrer Teilnahme an einem bestimmten Experiment, das dazu dient, Änderungen im Laufe der Zeit zu testen.
 - **Segment:** Gruppieren von Kunden nach der Größe des Unternehmens.
-- **Schlüsselindustrie:** Gruppieren von Kunden nach der _Schlüsselindustrie_, die Sie repräsentieren.
+- **Schlüsselindustrie:** Gruppieren von Kunden nach der *Schlüsselindustrie*, die Sie repräsentieren.
 - **Individuelle demografische Informationen:** Gruppierung basierend auf persönlichen demografischen Angaben wie Alter und physischer Standort.
 
 Diese Arten der Gruppierung helfen Ihnen beim Validieren von Lernmetriken über verschiedene Querschnitte der Kunden, die sich für eine Partnerschaft mit Ihnen während Ihrer Innovationsbemühungen entscheiden. Alle nachfolgenden Metriken sollten von einer definierbaren Kundengruppierung abgeleitet werden.

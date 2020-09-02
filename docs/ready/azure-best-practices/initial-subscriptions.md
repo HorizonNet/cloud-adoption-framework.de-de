@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 1e5105a9296ec3059c979bb0a7adc3b46aa99998
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 3eee0e1b6b7e2ceb64f180fe97984e4c39a8ea7a
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479924"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884860"
 ---
 # <a name="create-your-initial-azure-subscriptions"></a>Erstellen Ihrer anfänglichen Azure-Abonnements
 
@@ -28,7 +28,7 @@ Erstellen Sie zunächst zwei Abonnements:
 ![Ein anfängliches Abonnementmodell, das Schlüssel neben Feldern mit der Bezeichnung „Produktion“ und „Nichtproduktion“ zeigt](../../_images/ready/initial-subscription-model.png)
 _Abbildung 1: Ein anfängliches Abonnementmodell, das Schlüssel neben Feldern mit der Bezeichnung „Produktion“ und „Nichtproduktion“ zeigt_
 
-<!-- docsTest:ignore Dev/Test -->
+<!-- docsTest:casing Dev/Test -->
 
 Dieser Ansatz hat viele Vorteile:
 

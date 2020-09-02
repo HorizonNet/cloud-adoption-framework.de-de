@@ -9,20 +9,20 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: e623658907c4f6e97574e1e8c0012933a6233e8f
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: d5c1bd2c96b7154956f37960c345d2a2009fa4bc
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572900"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885948"
 ---
-<!-- cSpell:ignore laraaleite profx fsubscriptions fresource -->
+<!-- cSpell:ignore profx fsubscriptions fresource -->
 
 # <a name="organize-your-azure-resources-effectively"></a>Effizientes Organisieren Ihrer Azure-Ressourcen
 
 Die Organisation Ihrer cloudbasierten Ressourcen ist entscheidend für die Sicherung, Verwaltung und Nachverfolgung der mit Ihren Workloads verbundenen Kosten. Definieren Sie zum Organisieren Ihrer Ressourcen eine Verwaltungsgruppenhierarchie, befolgen Sie eine gut durchdachte Namenskonvention, und wenden Sie Ressourcentagging an.
 
-<!-- markdownlint-disable MD024 MD025 -->
+<!-- markdownlint-disable MD024 -->
 
 ## <a name="azure-management-groups-and-hierarchy"></a>[Azure-Verwaltungsgruppen und -Hierarchie](#tab/AzureManagementGroupsAndHierarchy)
 
@@ -161,8 +161,8 @@ Nach dem Anwenden von Tags können Sie alle Ressourcen in Ihrem Abonnement abruf
 
 Sie können Tags auch für viele andere Dinge verwenden. Sie werden häufig für folgende Aufgaben genutzt:
 
-- **Metadaten und Dokumentation**: Durch Anwenden eines Tags wie `projectowner` können Administratoren problemlos Details zu den Ressourcen anzeigen, an denen sie arbeiten.
-- **Automatisierung:** Unter Umständen verfügen Sie über regelmäßig ausgeführte Skripts, die basierend auf einem Tagwert wie `shutdowntime` oder `deprovisiondate` eine Aktion durchführen können.
+- **Metadaten und Dokumentation**: Durch Anwenden eines Tags wie `ProjectOwner` können Administratoren problemlos Details zu den Ressourcen anzeigen, an denen sie arbeiten.
+- **Automatisierung:** Unter Umständen verfügen Sie über regelmäßig ausgeführte Skripts, die basierend auf einem Tagwert wie `ShutdownTime` oder `DeprovisionDate` eine Aktion durchführen können.
 - **Kostenoptimierung:** Sie können den Teams und Mitarbeitern, die für die Kosten verantwortlich sind, Ressourcen zuweisen. In der Azure-Kostenverwaltung und -Abrechnung können Sie das Kostenstellentag als Filter anwenden, um die Gebühren basierend auf der Nutzung eines Teams oder einer Abteilung zu melden.
 
 Jede Ressource oder Ressourcengruppe kann maximal 50 Tagname-Wert-Paare aufweisen. Diese Einschränkung gilt nur für Tags, die direkt auf die Ressourcengruppe oder die Ressource angewendet werden.

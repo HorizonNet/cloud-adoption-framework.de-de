@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c9dcdb9c3ce42a0221adeb6d418f4329f471eb5d
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 0df83ebf912a171a95572df3b6be554c9db544b0
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88661927"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88881987"
 ---
 # <a name="overview-of-application-migration-examples-for-azure"></a>Übersicht über Beispiele für eine Anwendungsmigration für Azure
 
@@ -140,7 +140,7 @@ Bei dieser Reihe liegt der Schwerpunkt auf den einzelnen Migrationsszenarien, di
 
 ### <a name="demo-applications"></a>Demoanwendungen
 
-<!-- docsTest:ignore SmartHotel360 osTicket -->
+<!-- docsTest:casing SmartHotel360 osTicket -->
 
 Die in diesem Abschnitt aufgeführten Beispielartikel verwenden zwei Demoanwendungen: SmartHotel360 und osTicket.
 

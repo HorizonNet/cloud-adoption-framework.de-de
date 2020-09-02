@@ -7,14 +7,14 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 0c3df76de11883153d128fe419825a8800bc8d57
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a42f2b52d53ece4677efc240baaa9185a76614c2
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88566746"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884690"
 ---
-<!-- cSpell:ignore paas NVAs VPNs -->
+<!-- cSpell:ignore NVAs VPNs -->
 
 # <a name="review-your-network-options"></a>Überprüfen der Netzwerkoptionen
 
@@ -49,8 +49,6 @@ Die Beantwortung der folgenden Fragen zu Ihren Workloads ist hilfreich, um basie
 
 Ein Azure-Netzwerk bietet mehrere Produkte und Dienste, die verschiedene Netzwerkfunktionen bereitstellen. Im Rahmen der Entwicklung Ihres Netzwerkentwurfs können Sie Ihre Workloadanforderungen mit den Netzwerkszenarien in der folgenden Tabelle vergleichen, um die Azure-Tools oder -Dienste zu ermitteln, die Sie zum Bereitstellen dieser Netzwerkfunktionen nutzen können:
 
-<!-- markdownlint-disable MD033 -->
-
 | Szenario | Netzwerkprodukt oder -dienst |
 | --- | --- |
 | Ich benötige die Netzwerkinfrastruktur zum Verbinden sämtlicher Komponenten – von virtuellen Computern bis hin zu eingehenden VPN-Verbindungen. | [Azure Virtual Network](/azure/virtual-network) |
@@ -66,8 +64,6 @@ Ein Azure-Netzwerk bietet mehrere Produkte und Dienste, die verschiedene Netzwer
 | Ich benötige native Firewallfunktionen mit integrierter Hochverfügbarkeit, uneingeschränkter Cloudskalierbarkeit und ganz ohne Wartungsaufwand. | [Azure Firewall](/azure/firewall/overview) |
 | Ich muss Geschäftsniederlassungen, Einzelhandelsstandorte und Standorte sicher verbinden. | [Azure Virtual WAN](/azure/virtual-wan) |
 | Ich benötige einen skalierbaren Bereitstellungspunkt mit erweiterter Sicherheit für globale Webanwendungen, die auf Microservices basieren. | [Azure Front Door](/azure/frontdoor) |
-
-<!-- markdownlint-enable MD033 -->
 
 ## <a name="choose-a-networking-architecture"></a>Auswählen einer Netzwerkarchitektur
 
@@ -85,7 +81,7 @@ Die folgende Tabelle bietet einen Überblick über die wichtigsten Szenarien, di
 | Sie verfügen über eine Vielzahl von Filialstellen, die miteinander und mit Azure verbunden werden müssen.                                                                                                                                                                                                                                                                                         | [Azure Virtual WAN](/azure/virtual-wan/virtual-wan-about) |
 
 <!-- TODO: Refactor VDC content below. -->
-<!-- docsTest:ignore "Azure Virtual Datacenter" -->
+<!-- docsTest:casing "Azure Virtual Datacenter" -->
 
 ### <a name="azure-virtual-datacenter"></a>Virtuelles Azure-Rechenzentrum
 

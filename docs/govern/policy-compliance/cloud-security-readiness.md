@@ -7,15 +7,13 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 31d24872c3ed2f13d7c4bada472fb5a0b194e86c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: fe5bcc293d5d3e555c03e954487e3cc7e4c395de
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573257"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879913"
 ---
-<!-- cSpell:ignore CISO -->
-
 # <a name="ciso-cloud-readiness-guide"></a>Leitfaden für die CISO-Cloudbereitschaft
 
 Empfehlungen von Microsoft wie beispielsweise das Cloud Adoption Framework (CAF) sind nicht dafür konzipiert, die einzigartigen Sicherheitsbedingungen von Tausenden von Unternehmen zu ermitteln, die von dieser Dokumentation unterstützt werden, oder als Anleitung für diese Bedingungen zu dienen. Bei der Migration in die Cloud wird die Rolle des Chief Information Security Officer bzw. Chief Information Security Office (CISO) nicht durch Cloudtechnologien verdrängt. Ganz im Gegenteil: Der CISO und das CISO-Team sind noch besser und enger integriert. Für diese Anleitung wird vorausgesetzt, dass Sie mit CISO-Prozessen vertraut sind und diese modernisieren möchten, um eine Cloudtransformation zu ermöglichen.
@@ -38,7 +36,7 @@ Wenn Lösungen weiterentwickelt werden und PaaS- oder SaaS-Modelle (Platform-as-
 
 Kenntnisse der Cloud sind von grundlegender Bedeutung für eine [Richtlinienüberprüfung](./cloud-policy-review.md) mit wachstumsorientierter Mentalität. Die folgenden Ressourcen unterstützen CISOs dabei, den Sicherheitsstatus der Microsoft Azure-Plattform besser zu verstehen.
 
-<!-- docsTest:ignore "Security Response in the Cloud" -->
+<!-- docutune:casing "Security Response in the Cloud" -->
 
 **Ressourcen zur Sicherheitsplattform:**
 
@@ -56,7 +54,7 @@ Kenntnisse der Cloud sind von grundlegender Bedeutung für eine [Richtlinienübe
 - [Antworten für Justizbehörden](https://www.microsoft.com/trust-center/privacy)
 - [Strenge Datenschutzstandards](https://www.microsoft.com/trust-center/privacy)
 
-<!-- docsTest:ignore "Cloud Services Due Diligence Checklist" -->
+<!-- docutune:casing "Cloud Services Due Diligence Checklist" -->
 
 **Compliance**:
 

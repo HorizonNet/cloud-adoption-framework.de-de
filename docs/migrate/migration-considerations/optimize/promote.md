@@ -7,15 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9e69c9728d5ba8664a4a3bec2fc4e742662a2c5a
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 7082380e7b64160071f4304bc5ca3a4d341df24b
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84787774"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884673"
 ---
-<!-- cSpell:ignore CISO -->
-
 # <a name="what-is-required-to-promote-a-migrated-resource-to-production"></a>Was ist erforderlich, um eine migrierte Ressource in die Produktion höher zu stufen?
 
 Eine Höherstufung in die Produktion kennzeichnet den Abschluss der Migration einer Workload in die Cloud. Nachdem die Ressource und alle zugehörigen Abhängigkeiten höher gestuft wurden, wird der Produktionsdatenverkehr umgeleitet. Durch die Umleitung des Datenverkehrs werden die lokalen Ressourcen ausgesondert, sodass sie außer Betrieb genommen werden können.

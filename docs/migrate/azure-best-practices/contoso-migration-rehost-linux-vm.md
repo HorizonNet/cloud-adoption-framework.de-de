@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: e7da84f927955228b4ef9fb28fb66aa54324fa8f
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 862786173dead6832c44b5b8ecb8ba4a2b4ff4da
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574923"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88877754"
 ---
-<!-- cSpell:ignore givenscj OSTICKETWEB OSTICKETMYSQL OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc osTicket binlog systemctl NSGs distros -->
+<!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc osTicket binlog systemctl NSGs distros -->
 
 # <a name="rehost-an-on-premises-linux-application-to-azure-vms"></a>Zuweisen eines neuen Hosts für eine lokale Linux-Anwendung zu Azure-VMs
 
@@ -289,8 +289,6 @@ Das Sicherheitsteam von Contoso überprüft die VMs OSTICKETWEB und OSTICKETMYSQ
 - Das Team zieht darüber hinaus in Betracht, die Daten auf den Datenträgern des virtuellen Computers mit Azure Disk Encryption und Azure Key Vault zu schützen.
 
 Weitere Informationen finden Sie unter [Bewährte Sicherheitsmethoden für IaaS-Workloads in Azure](/azure/security/fundamentals/iaas).
-
-<!-- docsTest:ignore "Quickstart: Set" -->
 
 ### <a name="business-continuity-and-disaster-recovery"></a>Business Continuity & Disaster Recovery
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 775dea2eb2bb91a1434714b151710fbb3c96ea8d
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: a99f8ec96609c02e1bb46bd26d57aaf0ed594736
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86190480"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88881426"
 ---
 # <a name="cloud-rationalization"></a>Cloudrationalisierung
 
@@ -21,7 +21,7 @@ Cloudrationalisierung bezeichnet die Untersuchung von Ressourcen, um die bestmö
 
 ## <a name="rationalization-context"></a>Rationalisierungskontext
 
-Die in diesem Artikel aufgeführten _fünf Phasen der Rationalisierung_ sind eine großartige Möglichkeit zur Bezeichnung eines potenziellen zukünftigen Zustands für jede Workload, die als Cloudkandidat betrachtet wird. Dieser Bezeichnungsprozess sollte in den richtigen Kontext gesetzt werden, bevor Sie versuchen, eine Umgebung zu rationalisieren. Überprüfen Sie die folgenden Mythen, um diesen Kontext bereitzustellen:
+Die in diesem Artikel aufgeführten *fünf Phasen der Rationalisierung* sind eine großartige Möglichkeit zur Bezeichnung eines potenziellen zukünftigen Zustands für jede Workload, die als Cloudkandidat betrachtet wird. Dieser Bezeichnungsprozess sollte in den richtigen Kontext gesetzt werden, bevor Sie versuchen, eine Umgebung zu rationalisieren. Überprüfen Sie die folgenden Mythen, um diesen Kontext bereitzustellen:
 
 ### <a name="myth-its-easy-to-make-rationalization-decisions-early-in-the-process"></a>Mythos: Es ist einfach, Rationalisierungsentscheidungen in einem frühen Stadium des Prozesses zu treffen.
 
@@ -43,7 +43,7 @@ Die hier aufgeführten fünf Phasen der Rationalisierung beschreiben die gängig
 
 ## <a name="rehost"></a>Rehosten
 
-Auch _Lift & Shift_-Migration genannt. Beim Rehosten wird die Ressource im aktuellen Zustand zum gewählten Cloudanbieter migriert. Die Architektur bleibt dabei größtenteils unverändert.
+Auch *Lift & Shift*-Migration genannt. Beim Rehosten wird die Ressource im aktuellen Zustand zum gewählten Cloudanbieter migriert. Die Architektur bleibt dabei größtenteils unverändert.
 
 Häufige Motive können Folgendes umfassen:
 

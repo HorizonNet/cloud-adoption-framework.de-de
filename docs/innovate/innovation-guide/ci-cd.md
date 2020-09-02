@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 6341f2e227b24416000479066e63a5ebf136927c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: bd0ab336f865828a5bca971a76c3c49a8c45243a
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568072"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88883024"
 ---
 # <a name="empower-adoption"></a>Unterstützen der Einführung
 
@@ -67,9 +67,6 @@ Azure DevOps bietet erstklassige Tools für jeden Entwickler. Mit Azure-Entwickl
 
 ::: zone target="chromeless"
 
-<!-- docsTest:ignore "Azure DevOps Projects" -->
-<!-- markdownlint-disable DOCSMD001 -->
-
 #### <a name="action"></a>Aktion
 
 Zum Erstellen eines DevOps-Projekts gehen Sie folgendermaßen vor:
@@ -79,8 +76,6 @@ Zum Erstellen eines DevOps-Projekts gehen Sie folgendermaßen vor:
 3. Wählen Sie **Runtime, Framework und Dienst** aus.
 
 ::: form action="OpenBlade[#blade/HubsExtension/BrowseResource/resourceType/Microsoft.VisualStudio%2FAccount%2FProject]" submitText="Go to Azure DevOps Projects" :::
-
-<!-- markdownlint-enable DOCSMD001 -->
 
 ::: zone-end
 
@@ -117,7 +112,7 @@ Mit Azure können Ihre Entwickler cloudnative Anwendungen mithilfe moderner kano
 
 Die Förderung von Innovation für Kundenerlebnisse und Branchenanwendungen hat für jeden Unternehmensführer sehr hohe Priorität. Ganz gleich, ob Sie Web-, Mobile-, IoT- oder Mixed-Reality-Erfahrungen schaffen: Innovation ist der Schlüssel für den zukünftigen Erfolg Ihres Unternehmens. Zum Skalieren von Innovationen müssen sich Organisationen auf das Packen und Senden Ihres einzigartigen Geschäftswerts als zusammensetzbare Dienste konzentrieren, damit Partner und Mitarbeiter problemlos und effizient an der gemeinsamen Wertschöpfung teilhaben können.
 
-<!-- docsTest:ignore "spark and scale" -->
+<!-- docsTest:casing "spark and scale innovation" -->
 
 Azure verfügt über ein einzigartiges Angebot, das Ihnen hilft, Innovationen in Ihrer Organisation zu fördern und zu skalieren. Zur Innovationsförderung können professionelle Entwickler heute Anwendungen und Bausteine erstellen, die es anderen Experten in Ihrem Unternehmen ermöglichen, Anwendungen auf einer zuverlässigen Grundlage zu erstellen. Mit Azure profitieren sie von Anfang an von der Sicherheit durch ein Team von Experten und der proaktiven Compliance, der Unternehmen, Regierungen und Startups vertrauen.
 
@@ -132,6 +127,8 @@ LiveOps unterstützt auch die Humanisierung von Daten. Durch einen LiveOps-Ansat
 ### <a name="liveops-transition"></a>LiveOps-Übergang
 
 Spieleentwicklung ist ein Beispiel für eine Branche, die schon heute auf LiveOps setzt. Moderne Spiele sind Paradebeispiele für LiveOps-Anwendungen. Spiele haben eine stille Revolution durchlaufen, bei der sie sich von Verbrauchsgütern mit einer in Stunden gemessenen Lebensdauer in aktive Communitys mit einer in Jahren gemessenen Lebensdauer gewandelt haben. Mit mehr als 2 Milliarden Spielern da draußen und Zehntausenden neuer Spiele, die jedes Jahr um Aufmerksamkeit kämpfen, nutzen Spieleentwickler zunehmend LiveOps, um ihre Spielerbasis mit der Zeit besser einzubinden und zu halten. Innovation entsteht durch kontinuierliche Interaktion mit den Spielern: Inhaltsaktualisierungen, Sonderveranstaltungen, Werbeaktionen und Angebote.
+
+<!-- cSpell:ignore playfab -->
 
 ### <a name="azure-playfab"></a>Azure PlayFab
 

@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 86feba84b8bec522d887c788f4942492ffa8dce8
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 45c728b60d5aac4caf47927e0c6fa99c242a979d
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567341"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88878060"
 ---
-<!-- cSpell:ignore givenscj OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc contosoosticket osticket InnoDB binlog systemctl NSGs -->
+<!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc contosoosticket osticket InnoDB binlog systemctl NSGs -->
 
 # <a name="rehost-an-on-premises-linux-application-to-azure-vms-and-azure-database-for-mysql"></a>Zuweisen eines neuen Hosts für eine lokale Linux-App zu Azure-VMs und Azure Database for MySQL
 
@@ -417,8 +417,6 @@ Das Sicherheitsteam von Contoso überprüft die VM und die Datenbank, um möglic
 - Die Kommunikation zwischen der VM und der Datenbankinstanz ist nicht für SSL konfiguriert. SSL muss konfiguriert werden, um sicherzustellen, dass der Datenbank-Datenverkehr nicht gehackt werden kann.
 
 Weitere Informationen finden Sie unter [Bewährte Sicherheitsmethoden für IaaS-Workloads in Azure](/azure/security/fundamentals/iaas).
-
-<!-- docsTest:ignore "Quickstart: Set" -->
 
 ### <a name="business-continuity-and-disaster-recovery"></a>Business Continuity & Disaster Recovery
 

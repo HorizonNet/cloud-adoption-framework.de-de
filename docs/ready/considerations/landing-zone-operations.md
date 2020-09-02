@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3cfd48a0a8dabb9b37004c2f15c23a8ae79aa6e9
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 15271c7e74881f671715d832eb4f07e63de23063
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575161"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884826"
 ---
 # <a name="improve-landing-zone-operations"></a>Verbessern des Betriebs von Zielzonen
 
@@ -35,8 +35,6 @@ Die folgenden Links bieten bewährte Methoden zur Verbesserung des Betriebs von 
 ## <a name="four-steps-to-improve-operations-beyond-a-single-landing-zone"></a>Vier Schritte zum Verbessern der Vorgänge über eine einzelne Zielzone hinaus
 
 Die [Manage-Methodik](../../manage/index.md) bietet eine allgemeine Anleitung für den Ausbau von Operations Management-Kapazitäten (siehe [Manage-Methodik](../../manage/index.md)). Wir werden die grundlegende Struktur dieser Methodik und die folgenden Schritte aus dieser Methodik verwenden, um den Zielzonenbetrieb und den Betrieb in allen Zielzonen zu verbessern.
-
-<!-- cSpell:ignore caf -->
 
 ![Verwaltungsmethodik](../../_images/manage/caf-manage.png)
 _Abbildung 1: Die CAF-Verwaltungsmethodik_

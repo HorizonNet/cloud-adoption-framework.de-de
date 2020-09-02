@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: cb974cd5ed319dfd72a1c9342b92e9eb60a35f77
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: e6643c4116f48f11e2a07b19c44014bfc40f8677
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83754377"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879726"
 ---
 # <a name="align-your-cloud-governance-design-guide-with-corporate-policy"></a>Ausrichten Ihres Cloud Governance-Entwurfshandbuchs an der Unternehmensrichtlinie
 
@@ -23,8 +23,6 @@ Ein Entwurfshandbuch zur Cloud-Governance sollte die Architekturoptionen und Ent
 Obwohl Ihre Risikoanalyse und Richtlinienanweisungen zu einem gewissen Grad unabhängig von der Cloudplattform sein können, sollte Ihr Entwurfshandbuch plattformspezifische Implementierungsdetails für Ihre IT und Entwickler enthalten. Konzentrieren Sie sich auf die Architektur, Tools und Features Ihrer gewählten Plattform, wenn Sie Ihre Entwurfsentscheidung treffen und einen Leitfaden bereitstellen.
 
 Während Cloud-Entwurfshandbücher einige der technischen Details berücksichtigen sollten, die mit den einzelnen Infrastrukturkomponenten verbunden sind, sollen sie keine umfangreichen technischen Dokumente oder Spezifikationen sein. Stellen Sie sicher, dass Ihre Handbücher Ihre Richtlinienanweisungen behandeln, und geben Sie die Entwurfsentscheidungen in einem Format an, das für Ihre Mitarbeiter einfach zu verstehen ist und zur Referenz verwendet werden kann.
-
-<!-- markdownlint-enable MD033 -->
 
 ## <a name="use-the-actionable-governance-guides"></a>Verwenden der umsetzbaren Governanceleitfäden
 

@@ -7,14 +7,14 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 47a6503b369bc5d575f68358101c2bd04c7fa9c8
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 25bb59e5f79609536a7a1a6711c94c5ff25fdbd5
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575110"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884792"
 ---
-<!-- cSpell:ignore arnaudlh arnaul Arnaud eastasia southeastasia vCPUs lalogs tfvars NetworkMonitoring ADAssessment ADReplication AgentHealthAssessment DnsAnalytics KeyVaultAnalytics -->
+<!-- cSpell:ignore eastasia southeastasia vCPUs lalogs tfvars NetworkMonitoring ADAssessment ADReplication AgentHealthAssessment DnsAnalytics KeyVaultAnalytics -->
 
 # <a name="use-terraform-to-build-your-landing-zones"></a>Verwenden von Terraform zum Erstellen Ihrer Zielzonen
 
@@ -39,8 +39,6 @@ _Abbildung 1: Grundlegende Zielzone mit Terraform_
 
 Die bereitgestellten Komponenten und ihre Zwecke sind:
 
-<!-- markdownlint-disable MD033 -->
-
 | Komponente | Verantwortlichkeit |
 |---|---|
 | Ressourcengruppen | Kernressourcengruppen, die für die Grundlage benötigt werden |
@@ -48,8 +46,6 @@ Die bereitgestellten Komponenten und ihre Zwecke sind:
 | Diagnoseprotokollierung | Alle Vorgangsprotokolle, die für eine bestimmte Anzahl von Tagen beibehalten werden: <li> Speicherkonto <li> Event Hubs |
 | Log Analytics | Speichert die Vorgangsprotokolle. Bereitstellen allgemeiner Lösungen zum umfassenden Überprüfen der bewährten Methoden von Anwendungen: <li> NetworkMonitoring <li> AdAssessment <li> AdReplication <li> AgentHealthAssessment <li> DnsAnalytics <li> KeyVaultAnalytics |
 | Azure Security Center | Sicherheitsmetriken und -warnungen, die an E-Mailadressen und Telefonnummern gesendet werden |
-
-<!-- markdownlint-enable MD033 -->
 
 ## <a name="use-this-blueprint"></a>Verwenden dieser Blaupause
 

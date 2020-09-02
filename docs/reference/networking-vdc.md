@@ -9,15 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: reference
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 0a605d987715aee0b12c846472a6fddd1060087c
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: fed40e3b4d6c5c2aeeb63f70dcd41733e48b519e
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662471"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885676"
 ---
 <!-- docsTest:disable TODO -->
-<!-- cSpell:ignore tracsman jonor rossort NVAs iptables WAFs DDOS ITSM LLAP anycast vwan -->
+<!-- cSpell:ignore iptables DDOS ITSM LLAP anycast vwan -->
 
 # <a name="the-virtual-datacenter-a-network-perspective"></a>Das virtuelle Rechenzentrum: Eine Netzwerkperspektive
 
@@ -416,8 +416,6 @@ Ein virtuelles Rechenzentrum ist ein Ansatz, mit dem beim Migrieren von Rechenze
 
 Erfahren Sie mehr über die in diesem Dokument erläuterten Azure-Funktionen.
 
-<!-- markdownlint-disable MD033 -->
-
 :::row:::
     :::column:::
         **Netzwerkfunktionen** <br>
@@ -492,8 +490,6 @@ Erfahren Sie mehr über die in diesem Dokument erläuterten Azure-Funktionen.
         [Azure Machine Learning][machine-learning]
     :::column-end:::
 :::row-end:::
-
-<!-- markdownlint-enable MD033 -->
 
 ## <a name="next-steps"></a>Nächste Schritte
 

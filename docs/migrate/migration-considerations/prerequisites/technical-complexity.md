@@ -7,15 +7,13 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4e607d9374e2b8bffb209cbb3bddecca337ad8af
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: dace1543a65eefe68d6f4c01923784bdc40dc250
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574634"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885931"
 ---
-<!-- cSpell:ignore ITSM TOGAF -->
-
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Bereiten Sie sich auf technische Komplexität vor: Flexibles Change Management
 
 Wenn mit nur einer Codezeile die Bereitstellung eines kompletten Rechenzentrums aufgehoben und neu erstellt werden kann, können herkömmliche Verfahren nicht mehr mithalten. Die Anleitungen im Cloud Adoption Framework basieren u. a. auf Methoden wie dem IT-Service-Management (ITSM) oder dem Open Group Architecture Framework (TOGAF). Um allerdings auch bei geschäftlichen Änderungen flexibel und reaktionsfähig zu bleiben, werden diese Methoden in diesem Framework an Agile-Verfahren und DevOps-Ansätze angepasst.

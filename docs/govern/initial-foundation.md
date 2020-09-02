@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5c3dbc530ff2e1f28c0927cead3a761463295c4d
-ms.sourcegitcommit: 5d6a7610e556f7b8ca69960ba76a3adfa9203ded
+ms.openlocfilehash: b06017819e84bf24d4e82f916baddf4949112f6d
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83399618"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879998"
 ---
 # <a name="establish-an-initial-cloud-governance-foundation"></a>Einrichten einer ersten Grundlage für die Cloud Governance
 
 Das Einrichten der Cloud Governance erfordert umfassende iterative Maßnahmen. Es ist eine große Herausforderung, ein effektives Gleichgewicht zwischen Geschwindigkeit und Kontrolle zu erreichen, insbesondere bei der Ausführung früher Methoden der Cloudeinführung. Anhand der Governancerichtlinien im Framework für die Cloudeinführung (Cloud Adoption Framework) können Sie ein solches Gleichgewicht über einen agilen Ansatz bei der Einführung sicherstellen.
 
-Dieser Artikel bietet zwei Möglichkeiten, um eine erste Grundlage für die Governance zu schaffen. Beide Möglichkeiten stellen sicher, dass die Governancebeschränkungen skaliert und erweitert werden können, wenn der Einführungsplan implementiert wird und die Anforderungen klarer definiert werden. Standardmäßig nimmt die erste Grundlage eine Position der Isolierung und Kontrolle an. Zudem liegt der Schwerpunkt stärker auf der Ressourcenorganisation und weniger auf der Ressourcenkontrolle. Dieser einfache Ausgangspunkt wird als _Minimum Viable Product (MVP)_ für die Governance bezeichnet. Ziel des MVP ist es, Hindernisse für die Einrichtung einer ersten Governanceposition abzubauen und dann eine schnelle Reifung der Lösung zu ermöglichen, um eine Vielzahl konkreter Risiken zu bewältigen.
+Dieser Artikel bietet zwei Möglichkeiten, um eine erste Grundlage für die Governance zu schaffen. Beide Möglichkeiten stellen sicher, dass die Governancebeschränkungen skaliert und erweitert werden können, wenn der Einführungsplan implementiert wird und die Anforderungen klarer definiert werden. Standardmäßig nimmt die erste Grundlage eine Position der Isolierung und Kontrolle an. Zudem liegt der Schwerpunkt stärker auf der Ressourcenorganisation und weniger auf der Ressourcenkontrolle. Dieser einfache Ausgangspunkt wird als *Minimum Viable Product (MVP)* für die Governance bezeichnet. Ziel des MVP ist es, Hindernisse für die Einrichtung einer ersten Governanceposition abzubauen und dann eine schnelle Reifung der Lösung zu ermöglichen, um eine Vielzahl konkreter Risiken zu bewältigen.
 
 ## <a name="already-using-the-cloud-adoption-framework"></a>Das Cloud Adoption Framework wird bereits verwendet
 
@@ -31,8 +31,6 @@ Im Folgenden werden zwei verschiedene Beispiele für anfängliche Governancegrun
 
 - [Standardgovernanceleitfaden:](./guides/standard/index.md) Ein für die meisten Organisationen geeigneter Leitfaden auf Grundlage des empfohlenen anfänglichen Modells mit zwei Abonnements, der für Bereitstellungen in mehreren Regionen konzipiert ist, aber nicht für öffentliche Clouds und Sovereign/Government Clouds gilt.
 - [Governanceleitfaden für komplexe Unternehmen:](./guides/complex/index.md) Ein Leitfaden für Unternehmen, die über mehrere unabhängige IT-Geschäftseinheiten verwaltet werden oder öffentliche Clouds und Sovereign/Government Clouds umfassen.
-
-<!-- markdownlint-enable MD033 -->
 
 ## <a name="next-steps"></a>Nächste Schritte
 

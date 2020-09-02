@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2e8d9c1c888b7b30322f8ddcce444968e73eefc9
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 5bfabc441eb3669ed2f2681c66f48db77c1c0077
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574583"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884503"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Nachverfolgen von Kosten für Geschäftseinheiten, Umgebungen oder Projekte
 
@@ -71,7 +71,7 @@ Die generell empfohlene bewährte Methode besteht darin, ein Modell mit geringst
 
 ### <a name="roles"></a>Rollen
 
-<!-- docsTest:ignore Owner Contributor Reader "Cost Management Contributor" "Cost Management Reader" -->
+<!-- docsTest:casing Owner Contributor Reader "Cost Management Contributor" "Cost Management Reader" -->
 
 Azure Cost Management und Abrechnung unterstützt für jeden der Bereiche die folgenden integrierten Rollen:
 

@@ -7,15 +7,13 @@ ms.date: 09/22/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: c09124d6a09ee3350fb6a1b605c493a51d15bb4a
-ms.sourcegitcommit: d1d4e2bae24bb1e2ffd81e26e4e65540f26fa400
+ms.openlocfilehash: 02fd0d70cef736aa20b7aa37c777b2ca070015ae
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "84813238"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885625"
 ---
-<!-- cSpell:ignore rodend -->
-
 # <a name="azure-enterprise-scaffold-is-now-the-microsoft-cloud-adoption-framework-for-azure"></a>Das Azure-Unternehmensgerüst ist jetzt das Microsoft Cloud Adoption Framework für Azure.
 
 Das Azure-Unternehmensgerüst wurde in das Microsoft Cloud Adoption Framework für Azure integriert. Die Ziele des Unternehmensgerüsts werden nun in der [Bereitschaftsmethodik](../ready/index.md) des Cloud Adoption Framework behandelt. Der Inhalt zum Unternehmensgerüst ist veraltet.

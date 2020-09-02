@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 54c6e5d3dc292e3380fe0b51b265165b8fed3f28
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 0a5face64211b93761e567f2149ec44fd624a472
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574889"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88877992"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>Einrichten von Betriebsverwaltungsverfahren in der Cloud
 
@@ -28,8 +28,6 @@ Moderne Betriebsverwaltungslösungen schaffen eine Multi-Cloud-Sicht auf den Bet
 ## <a name="cloud-operations"></a>Cloudvorgänge
 
 Mit beiden bewährten Methoden wird auf eine künftige angestrebte Methodik für die Betriebsverwaltung hingearbeitet, wie in der folgenden Abbildung gezeigt wird:
-
-<!-- cSpell:ignore caf -->
 
 ![Verwalten der Methodik des Frameworks für die Cloudeinführung](../_images/manage/caf-manage.png)
 

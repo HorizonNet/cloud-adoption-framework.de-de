@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 7e8ba47fdd221ea11cca385730e25b961c0bd10f
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 57e0fc471a3f3d115f08383318fda789bef579d5
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88194668"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885217"
 ---
 # <a name="how-to-use-the-business-outcome-template"></a>Verwenden der Vorlage für Geschäftsergebnisse
 
@@ -30,7 +30,7 @@ In dieser Vorlage geht es bei den Geschäftsergebnissen um drei Themen:
 
 ![Geschäftsergebnisse, visualisiert als ein Haus mit Beteiligten, über Geschäftsergebnissen, über technischen Fähigkeiten](../../_images/strategy/business-outcome-house.png)
 
-_Abbildung 1: Geschäftsergebnisse, visualisiert als ein Haus mit Beteiligten, über Geschäftsergebnissen, über technischen Fähigkeiten._
+*Abbildung 1: Geschäftsergebnisse, visualisiert als ein Haus mit Beteiligten, über Geschäftsergebnissen, über technischen Fähigkeiten.*
 
 In der Vorlage für Geschäftsergebnisse geht es im Kern um vereinfachte Gespräche, in die die Beteiligten schnell einbezogen werden können, ohne zu tief in die technische Lösung einzudringen. Durch ein schnelles Verstehen und Abstimmen der für die Beteiligten wichtigen Key Performance Indicators (KPIs) und geschäftlichen Faktoren kann Ihr Team über grundsätzliche Ansätze und Transformationen nachdenken, bevor es sich mit den Implementierungsdetails befasst.
 
@@ -38,7 +38,7 @@ Ein Beispiel finden Sie in der Arbeitsmappe auf dem Arbeitsblatt „Example Outc
 
 ![Beispiel einer Vorlage für Geschäftsergebnisse](../../_images/strategy/business-outcome-template.png)
 
-_Abbildung 2: Beispiel einer Vorlage für Geschäftsergebnisse._
+*Abbildung 2: Beispiel einer Vorlage für Geschäftsergebnisse.*
 
 ## <a name="why-is-this-template-relevant"></a>Warum ist diese Vorlage relevant?
 
@@ -46,7 +46,7 @@ Erkenntnis ist ein Hauptgrundsatz einer Unternehmensarchitektur. Ist Erkenntnis 
 
 ![Fünf Schwerpunktbereiche für Erkenntnis: Beteiligte, Ergebnisse, geschäftliche Faktoren, KPIs und Fähigkeiten](../../_images/strategy/business-outcome-focus-areas.png)
 
-_Abbildung 3: Fünf Schwerpunktbereiche für Erkenntnis: Beteiligte, Ergebnisse, geschäftliche Faktoren, KPIs und Fähigkeiten._
+*Abbildung 3: Fünf Schwerpunktbereiche für Erkenntnis: Beteiligte, Ergebnisse, geschäftliche Faktoren, KPIs und Fähigkeiten.*
 
 **Beteiligte:** Wer im Unternehmen sieht wahrscheinlich den größten Wert in einem bestimmten Geschäftsergebnis? Wer wird diese Transformation am ehesten unterstützen, besonders wenn die Dinge schwierig oder zeitaufwändig werden? Wer hat den größten Anteil am Erfolg dieser Transformation? Diese Person ist ein potenziell Beteiligter.
 

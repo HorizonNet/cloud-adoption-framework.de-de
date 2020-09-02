@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: bf54d25069aa96d6b9b92c50a9beeccefbb1de3c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 9e331bc698467926e496b6a1e8c29e7fb0caf097
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568701"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882633"
 ---
 # <a name="ai-applications-and-agents"></a>KI-Anwendungen und -Agents
 
@@ -47,7 +47,7 @@ Machen Sie sich zunächst mit den verschiedenen Kategorien und Diensten in Azure
 
 Wählen Sie den Dienst aus, den Sie für das maschinelle Sehen oder Sprechen, die Spracherkennung, die Entscheidungsfindung oder die Websuche verwenden möchten. Jede Kategorie auf der Seite bietet eine Reihe von Schnellstarts, Tutorials und Schrittanleitungen für die REST-APIs oder SDKs.
 
-<!-- docsTest:ignore "Intelligent Kiosk" -->
+<!-- docsTest:casing "Intelligent Kiosk" -->
 
 Sie können auch den intelligenten Kiosk herunterladen, um diese Dienste zu erleben und an Demos zu testen.
 

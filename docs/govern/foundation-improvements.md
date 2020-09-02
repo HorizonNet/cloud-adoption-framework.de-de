@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2b8de6fb4979621b70857a3cfd3dc0cec9e9f7f7
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 86011f103fcdecb12ad1448c028453a9f229113a
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88661978"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88881052"
 ---
 # <a name="improve-your-initial-cloud-governance-foundation"></a>Verbessern der ersten Grundlage für die Cloud Governance
 

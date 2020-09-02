@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: csu
-ms.openlocfilehash: 697d1e8c57e2e4b7354b8730bbcf5e7653657000
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 7338c715015b838df95ffdfdc0f9368e70f083c2
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88193196"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885183"
 ---
-<!-- cSpell:ignore CAF -->
-
 # <a name="cloud-adoption-framework-enterprise-scale-landing-zone-architecture"></a>Cloud Adoption Framework – Architektur für Zielzonen auf Unternehmensebene
 
 Der Entwurf auf Unternehmensebene ist ein Architekturansatz und eine Referenzimplementierung, die die effektive Erstellung und Operationalisierung von Zielzonen in Azure im großen Stil ermöglicht. Er ist auf die Azure-Roadmap und das Cloud Adoption Framework für Azure abgestimmt.

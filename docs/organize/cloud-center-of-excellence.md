@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 7db178d6a17786e89d1cf273300147f54aeb1ef4
-ms.sourcegitcommit: 9b183014c7a6faffac0a1b48fdd321d9bbe640be
+ms.openlocfilehash: 2c7bf4e4703df1c524f2a7d34bf55e47cb69699b
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "85077217"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88881579"
 ---
-<!-- cSpell:ignore ccoe deprioritize -->
-
 # <a name="cloud-center-of-excellence-ccoe-functions"></a>CCoE-Funktionen (Cloud Center of Excellence, Cloudkompetenzzentrum)
 
 Die Erzielung von geschäftlicher und technischer Flexibilität ist ein wichtiges Ziel der meisten IT-Organisationen. Ein Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) ist eine Funktion, mit der eine möglichst gute Balance zwischen Geschwindigkeit und Stabilität erreicht werden soll.

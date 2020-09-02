@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: BrianBlanchard
 ms.custom: virtual-network
-ms.openlocfilehash: 8f1676c51e502b3995efc7694fe7bb7ef6932b26
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: aeb2cfd8ed273349b5ee7e1868ddd69791abedc9
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569738"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884656"
 ---
 # <a name="role-based-access-control"></a>Rollenbasierte Zugriffssteuerung
 
@@ -71,8 +71,6 @@ Die meisten Cloudumgebungen können auch von einer Zugriffssteuerungsstrategie p
 
 Die folgende Tabelle zeigt ein allgemeines Muster für die Aufteilung des IT-Zuständigkeiten in separate benutzerdefinierte Rollen:
 
-<!-- markdownlint-disable MD033 -->
-
 | Group | Allgemeiner Rollenname | Aufgaben |
 | --- | --- | --- |
 | Sicherheitsvorgänge | SecOps | Bietet eine allgemeine Sicherheitsübersicht. <br> Festlegung und Durchsetzung von Sicherheitsrichtlinien wie Verschlüsselung im Ruhezustand. <br><br> Verwaltet Verschlüsselungsschlüssel. <br><br> Verwaltet Firewallregeln. |
@@ -80,10 +78,6 @@ Die folgende Tabelle zeigt ein allgemeines Muster für die Aufteilung des IT-Zus
 | Systembetrieb | SysOps | Gibt die Optionen für die Compute- und Speicherinfrastruktur an und verwaltet die bereitgestellten Ressourcen. |
 | Entwicklung, Test und Betrieb | DevOps | Erstellt Workloadfunktionen und -anwendungen und stellt sie bereit. <br><br> Betreibt Features und Anwendungen, um Vereinbarungen zum Servicelevel und andere Qualitätsstandards einzuhalten. |
 
-<!-- markdownlint-enable MD033 -->
-
 Die Aufschlüsselung von Aktionen und Berechtigungen in diese Standardrollen ist oft für alle Ihre Anwendungen, Abonnements oder die gesamte Cloudumgebung gleich, auch wenn diese Rollen von verschiedenen Personen auf verschiedenen Ebenen ausgeführt werden. Dementsprechend können Sie einen gemeinsamen Satz von RBAC-Rollendefinitionen erstellen, die für verschiedene Bereiche innerhalb Ihrer Umgebung gelten. Benutzern und Gruppen kann dann eine gemeinsame Rolle zugewiesen werden, jedoch nur für den Bereich der Ressourcen, Ressourcengruppen, Abonnements oder Verwaltungsgruppen, für deren Verwaltung sie verantwortlich sind.
-
-<!-- cSpell:ignore NetOps SecOps " -->
 
 In einer [Hub-and-Spoke-Netzwerktopologie](../azure-best-practices/hub-spoke-network-topology.md) mit mehreren Abonnements könnten Sie z. B. einen gemeinsamen Satz von Rollendefinitionen für den Hub und alle Workloadspokes haben. Die NetOps-Rolle eines Hubabonnements kann Mitgliedern des zentralen IT-Teams der Organisation zugewiesen werden, die für die Aufrechterhaltung des Netzwerkbetriebs für gemeinsame Dienste verantwortlich sind, die von allen Workloads genutzt werden. Die NetOps-Rolle eines Workloadspokeabonnements kann dann Mitgliedern dieses spezifischen Workloadteams zugewiesen werden, sodass sie das Netzwerk innerhalb dieses Abonnements konfigurieren können, um ihre Workloadanforderungen optimal zu unterstützen. Für beide wird die gleiche Rollendefinition verwendet, aber die bereichsbasierte Zuordnungen stellen sicher, dass Benutzer nur über den Zugriff verfügen, den sie für ihre Arbeit benötigen.

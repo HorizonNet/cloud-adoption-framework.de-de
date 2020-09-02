@@ -9,25 +9,21 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-new, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 0c1dd56f5d7c5216693b726de9cb6fbf15a59b8f
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 8af5a34e368d6ffe0774e7437e2fc62e21fa3453
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574464"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885897"
 ---
-<!-- docsTest:ignore "Azure Info Hub" "Azure Charts" "Azure Weekly" -->
-<!-- cSpell:ignore jelledruyts andym endjin AzAdvertizer -->
+<!-- docsTest:casing AzAdvertizer "Azure Info Hub" "Azure Charts" "Azure Weekly" -->
+<!-- cSpell:ignore endjin AzAdvertizer -->
 
 # <a name="stay-current-with-azure"></a>Sicherstellen des aktuellen Stands von Azure
 
 Cloudplattformen wie Azure verändern sich schneller, als es viele Unternehmen gewohnt sind. Dieses Tempo beim Wandel bedeutet, dass Unternehmen ihre Mitarbeiter und Prozesse an einen neuen Rhythmus anpassen müssen. Wenn Sie Ihre Organisation dabei unterstützen, mit den Veränderungen Schritt zu halten, können Sie dabei bisweilen an Ihre Grenzen stoßen. Die in diesem Abschnitt aufgeführten Ressourcen können Sie dabei unterstützen, auf dem neuesten Stand zu bleiben.
 
-<!-- markdownlint-disable MD025 -->
-
 ## <a name="top-resources"></a>[Wichtigste Ressourcen](#tab/TopResources)
-
-<!-- markdownlint-enable MD025 -->
 
 Die folgenden Ressourcen können Ihnen dabei helfen, mit Azure auf dem Laufenden zu bleiben:
 
@@ -37,11 +33,7 @@ Die folgenden Ressourcen können Ihnen dabei helfen, mit Azure auf dem Laufenden
 - **Dienstspezifische Blogs:** Für viele Azure-Dienste werden eigene Blogs veröffentlicht, denen Sie folgen können, wenn Sie diese Dienste verwenden. Die für Sie interessanten Dienste finden Sie per Websuche.
 - **Azure Info Hub:** Im inoffiziellen [Azure Info Hub](https://azureinfohub.azurewebsites.net) werden die meisten der hier aufgeführten Ressourcen zusammengefasst. Nutzen Sie Links zu einzelnen Diensten, um ausführliche Informationen zu erhalten und dienstspezifischen Blogs zu finden. Abonnieren Sie den [RSS-Feed für den Azure Info Hub](https://azureinfohub.azurewebsites.net/Feed?serviceTitle=Azure). \*
 
-<!-- markdownlint-disable MD025 -->
-
 ## <a name="additional-resources"></a>[Weitere Ressourcen](#tab/AdditionalResources)
-
-<!-- markdownlint-enable MD025 -->
 
 Unter den folgenden Ressourcen finden Sie weitere Inhalte, die Ihnen helfen, bei Azure-Themen auf dem Laufenden zu bleiben:
 

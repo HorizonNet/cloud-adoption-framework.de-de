@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 688c9c11e1366621769baaccdcdb335275e4712a
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.openlocfilehash: 9fadb677bdf1cee392ae7f7ad8dbf4c1605ca551
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88847869"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88880389"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>Governanceleitfaden für Standardunternehmen: Die Geschichte hinter der Governancestrategie
 
@@ -30,7 +30,9 @@ In der Vergangenheit war der CIO des Unternehmens von diesen strategischen Gespr
 Das Unternehmen besitzt das folgende Geschäftsprofil:
 
 - Alle Vertriebs- und Betriebsprozesse werden in einem einzigen Land ausgeführt, es ist nur ein geringer Prozentsatz an globalen Kunden vorhanden.
+
 - Das Unternehmen wird als einzelne Geschäftseinheit geführt, wobei den einzelnen Funktionen wie Vertrieb, Marketing, Betrieb und IT Budgets zugeordnet sind.
+
 - Das Unternehmen betrachtet den größten Teil der IT als Kostenverursacher oder Kostenstelle.
 
 ## <a name="current-state"></a>Aktueller Status
@@ -38,10 +40,15 @@ Das Unternehmen besitzt das folgende Geschäftsprofil:
 Aktuell befinden sich IT und Cloudbetrieb des Unternehmens in folgendem Zustand:
 
 - Die IT-Abteilung betreibt zwei gehostete Infrastrukturumgebungen. Eine Umgebung enthält Produktionsassets. Die zweite Umgebung enthält Funktionen für die Notfallwiederherstellung und einige Dev/Test-Assets. Diese Umgebungen werden von zwei verschiedenen Anbietern gehostet. Die IT bezeichnet diese beiden Rechenzentren als „Prod“ bzw. „DR“.
+
 - Die IT hat die Cloud eingeführt, indem alle E-Mail-Konten der Endbenutzer zu Microsoft 365 migriert wurden. Diese Migration wurde vor sechs Monaten abgeschlossen. Es wurden nur wenige andere IT-Ressourcen in der Cloud bereitgestellt.
+
 - Die Anwendungsentwicklungsteams arbeiten in einer Dev/Test-Funktion, um die nativen Cloudfunktionen kennenzulernen.
+
 - Das BI-Team (Business Intelligence) experimentiert mit Big Data in der Cloud und einer kuratierten Zusammenstellung der Daten auf neuen Plattformen.
+
 - Das Unternehmen hat eine nicht sehr strikt formulierte Richtlinie, dass personenbezogene Informationen von Kunden und Finanzdaten nicht in der Cloud gehostet werden dürfen, was unternehmenskritische Anwendungen in den aktuellen Bereitstellungen einschränkt.
+
 - IT-Investitionen werden größtenteils durch Kapitalkosten gesteuert. Diese Investitionen werden jährlich geplant. In den vergangenen Jahren umfassten die Investitionen wenig mehr als die grundlegenden Wartungsanforderungen.
 
 ## <a name="future-state"></a>Zukünftiger Status
@@ -49,9 +56,11 @@ Aktuell befinden sich IT und Cloudbetrieb des Unternehmens in folgendem Zustand:
 Die folgenden Änderungen werden in den nächsten Jahren erwartet:
 
 - Der CIO überprüft die Richtlinie zu personenbezogenen Informationen und Finanzdaten, damit diese den zukünftigen Status unterstützt.
+
 - Die Teams für Anwendungsentwicklung und Business Intelligence möchten in den nächsten 24 Monaten cloudbasierte Lösungen in die Produktion bringen – basierend auf der Vision in Bezug auf Kundenbindung und neue Produkte.
-- In diesem Jahr schließt das IT-Team die Außerbetriebnahme der Workloads für die Notfallwiederherstellung im Rechenzentrum „DR“ ab, in dem 2.000 VMs in die Cloud migriert werden. Durch diese Maßnahme wird in den nächsten fünf Jahren mit Kosteneinsparungen in Höhe von 25 Mio. USD gerechnet.
-    ![Lokale Kosten im Vergleich zu Azure-Kosten zeigen eine Rendite von 25 Millionen US-Dollar in den nächsten fünf Jahren.](../../../_images/govern/calculator-small-to-medium-enterprise.png)
+
+- In diesem Jahr schließt das IT-Team die Außerbetriebnahme der Workloads für die Notfallwiederherstellung im Rechenzentrum „DR“ ab, in dem 2.000 VMs in die Cloud migriert werden. Durch diese Maßnahme wird in den nächsten fünf Jahren mit Kosteneinsparungen in Höhe von 25 Mio. USD gerechnet. ![Lokale Kosten im Vergleich zu Azure-Kosten zeigen eine Rendite von 25 Millionen US-Dollar in den nächsten fünf Jahren.](../../../_images/govern/calculator-small-to-medium-enterprise.png)
+
 - Das Unternehmen plant, einige IT-Investitionen zu ändern, indem die gebundenen Kapitalkosten als Betriebskosten innerhalb der IT umdefiniert werden. Diese Änderung ermöglicht mehr Kostenkontrolle, sodass die IT weitere geplante Aufwendungen beschleunigen kann.
 
 ## <a name="next-steps"></a>Nächste Schritte

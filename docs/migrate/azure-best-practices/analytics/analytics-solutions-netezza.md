@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a55838413812f29069b39cee7f49391eb4ac2ec3
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 4d47a5681a2c36bdaabe508e8d62c7437ebe1c87
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570809"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882531"
 ---
 <!-- cSpell:ignore Netezza Informatica Talend InMon zonemap CBTs Attunity Wherescape nzlua CBT NZPLSQL DELIM TABLENAME ORC Parquet nzsql nzunload mpp -->
 
@@ -31,8 +31,6 @@ Netezza und Azure Synapse ähneln sich insofern, als dass es sich bei beiden Pla
 Im diesem Artikel finden Sie eine Übersicht über wichtige Migrationsüberlegungen und erfahren, wie Sie in Azure Synapse eine gleichwertige oder bessere Leistung der Data Warehouse-Systeme und Data Marts erzielen, die Sie aus Netezza migriert haben. Zudem werden Probleme besprochen, die speziell bei der Migration einer vorhandenen Netezza-Umgebung auftreten können.
 
 Im Allgemeinen kann der Migrationsprozess in die Schritte untergliedert werden, die in der folgenden Tabelle aufgeführt sind:
-
-<!-- markdownlint-disable MD033 -->
 
 | Vorbereitung        | Migration                             | Nach der Migration |
 | :----------------- | :----------------------------- | :---------------- |
@@ -93,7 +91,7 @@ Beim Migrieren von Tabellen zwischen unterschiedlichen Technologien werden nur d
 
 Das Wissen, wo Leistungsoptimierungen wie Indizes in der Quellumgebung eingesetzt wurden, kann jedoch Hinweise darauf geben, an welcher Stelle in der neuen Umgebung Optimierungspotenzial besteht. Wenn bei Abfragen in der Netezza-Quellumgebung z. B. häufig Zonenzuordnungen verwendet wurden, kann es vorteilhaft sein, in der migrierten Azure Synapse-Umgebung einen nicht gruppierten Index zu erstellen. Alternativ können Zonenzuordnungen ebenfalls darauf hindeuten, dass andere native Techniken zur Leistungsoptimierung, z. B. die Tabellenreplikation, der Erstellung eines Like-for-Like-Indexes vorzuziehen sind.
 
-<!-- docsTest:ignore "NZ Toolkit" -->
+<!-- docsTest:casing "NZ Toolkit" -->
 
 ### <a name="unsupported-netezza-database-object-types"></a>Nicht unterstützte Typen von Netezza-Datenbankobjekten
 

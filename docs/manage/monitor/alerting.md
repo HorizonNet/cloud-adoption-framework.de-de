@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
 services: azure-monitor
-ms.openlocfilehash: b0f631a91523117e8acfa4a95ba446a5f87d493a
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 48a9d309e644f7232e014201781f52edbb359c1f
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571149"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88877686"
 ---
-<!-- cSpell:ignore kusto multiresource multisignal -->
+<!-- cSpell:ignore multisignal -->
 
 # <a name="cloud-monitoring-guide-alerting"></a>Leitfaden zur Cloudüberwachung: Warnungen
 
@@ -86,8 +86,6 @@ Azure Monitor bietet Unterstützung für die Integration mit anderen Überwachun
 | | Anhand von Perzentilen aus Knoten, Controllern, Containern und Pods berechnete Leistungsdaten werden in den Arbeitsbereich geschrieben. Containerprotokolle und Bestandsinformationen werden ebenfalls in den Arbeitsbereich geschrieben. | Erstellen Sie Protokollabfragewarnungen, wenn Sie basierend auf Abweichungen der gemessenen Auslastung von Clustern und Containern benachrichtigt werden möchten. Protokollabfragewarnungen können auch basierend auf Podphasen- und Statusknotenzählungen konfiguriert werden. |
 | Azure Monitor für VMs | Integritätskriterien sind in der Metrikdatenbank gespeicherte Metriken. | Warnungen werden generiert, wenn sich der Integritätsstatus von „Fehlerfrei“ in „Fehlerhaft“ ändert. Diese Warnung unterstützt nur Aktionsgruppen, die zum Senden von SMS- oder E-Mail-Benachrichtigungen konfiguriert sind. |
 | | Zuordnungsdaten und Leistungsprotokolldaten zum Gastbetriebssystem werden in den Log Analytics-Arbeitsbereich geschrieben. | Es werden Protokollabfragewarnungen erstellt. |
-
-<!-- docsTest:ignore "speed driven by cost" -->
 
 ### <a name="fastest-speed-driven-by-cost"></a>Höchste Geschwindigkeit bei gleichzeitiger Kosteneffizienz
 

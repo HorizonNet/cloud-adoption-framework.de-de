@@ -7,14 +7,14 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: cc968a5434518ada3d809fb8e22bec4c4e0e0dc2
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 276555cd06e751e82744a6b5d172e2cf9ce0acfe
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568769"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882820"
 ---
-<!-- cSpell:ignore njray nanra vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
+<!-- cSpell:ignore vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
 
 # <a name="make-the-switch-from-mainframes-to-azure"></a>Wechseln von Mainframes zu Azure
 
@@ -24,9 +24,9 @@ Dieser Abschnitt bietet einen technischen Leitfaden für den Wechsel von einer M
 
 ![Mainframe und Azure](../../_images/mainframe-migration/make-the-switch.png)
 
-<!-- docsTest:ignore "vs. vCPUs" -->
+<!-- docsTest:casing vCPUs -->
 
-## <a name="mips-and-vcpus"></a>MIPS und vCPUs
+## <a name="mips-vs-vcpus"></a>MIPS im Vergleich zu vCPUs
 
 Es gibt keine universelle Zuordnungsformel, um die Anzahl von virtuellen Prozessoren (vCPUs) zu ermitteln, die zum Ausführen von Mainframeworkloads erforderlich sind. Häufig wird jedoch die Metrik „MIPS“ (Million Instructions Per Second, Millionen Anweisungen pro Sekunde) zu vCPUs auf Azure zugeordnet. MIPS dienen zur Messung der gesamten Rechenleistung eines Mainframesystems, indem sie einen konstanten Wert für die Anzahl von Zyklen pro Sekunde für einen bestimmten Computer angeben.
 

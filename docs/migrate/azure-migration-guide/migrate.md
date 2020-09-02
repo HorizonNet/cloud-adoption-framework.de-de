@@ -9,20 +9,18 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5c8ea1dd6f6ad7d3824264b58bbef87b174d727a
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.openlocfilehash: 7363c62aa5bd6ed13fcd5db8fca92ed51ecf18f9
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88848192"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885030"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
 # <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>Bereitstellen von Workloads und Assets (Infrastruktur, Apps und Daten)
 
 In dieser Phase verwenden Sie die Ausgabe der Bewertungsphase, um die Migration der Umgebung einzuleiten. Dieser Leitfaden hilft Ihnen, die geeigneten Tools zu identifizieren, um den Zustand „Abgeschlossen“ zu erreichen. Hierbei lernen Sie native Tools, Tools von Drittanbietern und Projektmanagementtools. kennen.
-
-<!-- markdownlint-disable MD025 -->
 
 ## <a name="native-migration-tools"></a>[Native Migrationstools](#tab/Tools)
 
@@ -160,8 +158,6 @@ Das Datenmigrationstool von Azure Cosmos DB kann Daten aus verschiedenen Quelle
 Weitere Informationen finden Sie unter
 
 - [Azure Cosmos DB: Datenmigrationstool](/azure/cosmos-db/import-data)
-
-<!-- markdownlint-disable MD025 -->
 
 ## <a name="third-party-migration-tools"></a>[Migrationstool von einem Drittanbieter](#tab/third-party-tools)
 

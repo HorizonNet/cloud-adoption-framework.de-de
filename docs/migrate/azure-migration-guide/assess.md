@@ -9,18 +9,16 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 15c0b4f654607e2e150d547c52edd56e95c5fe89
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: c37a7b51de815169e450f72e0bbf99cf8fee49cf
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570503"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884639"
 ---
 # <a name="assess-workloads-and-refine-plans"></a>Bewerten von Workloads und Optimieren von Plänen
 
 Die Ressourcen in diesem Handbuch helfen Ihnen, die einzelnen Workloads zu bewerten, Annahmen über die Eignung der einzelnen Workloads für die Migration zu hinterfragen und anschließend Architekturentscheidungen zu Migrationsoptionen zu treffen.
-
-<!-- markdownlint-disable MD025 -->
 
 ## <a name="tools"></a>[Tools](#tab/Tools)
 

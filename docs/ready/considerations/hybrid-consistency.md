@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9d0817b209dd8916fcef01e40ab5c429fdb8a531
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: a5132e89cf9d20fb6cdbff1533737073ab190c3d
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479703"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885982"
 ---
 <!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers Pointnext -->
 
@@ -64,7 +64,7 @@ Azure Stack wird in zwei Bereitstellungsoptionen angeboten:
 
 Sie können Azure Stack-Initiativen beschleunigen, indem Sie das vollständige Azure-Ökosystem nutzen:
 
-<!-- docsTest:ignore "EMC Services" "Infront Consulting Group" "HPE Pointnext" -->
+<!-- docsTest:casing "EMC Services" "Infront Consulting Group" "HPE Pointnext" -->
 <!-- cSpell:ignore ISVs Bitnami DXC EMC Infront Yourhosting Revera Avanade Pulsant PWC PricewaterhouseCoopers -->
 
 - Azure stellt sicher, dass die meisten Anwendungen und Dienste, die für Azure zertifiziert sind, auch in Azure Stack funktionieren. Mehrere unabhängige Softwarehersteller (ISVs) erweitern ihre Lösungen auf Azure Stack. Zu diesen ISVs gehören Bitnami, Docker, Kemp Technologies, Pivotal Cloud Foundry, Red Hat Enterprise Linux und SUSE Linux.

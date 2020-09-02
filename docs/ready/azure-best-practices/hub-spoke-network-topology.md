@@ -9,15 +9,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 81d00bb2076c936b06b6ac7a00ef19d0b0d43565
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 2fa4f8651be0d4ee29c8bac4fcfb95326e4201c2
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574753"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884724"
 ---
-<!-- cSpell:ignore tracsman jonor rossort NVAs -->
-
 # <a name="hub-and-spoke-network-topology"></a>Hub-and-Spoke-Netzwerktopologie
 
 _Hub-and-Spoke_ ist ein Netzwerkmodell für die effiziente Verwaltung verbreiteter Kommunikations- oder Sicherheitsanforderungen. Es hilft auch dabei, Azure-Abonnementeinschränkungen zu vermeiden. Dieses Modell berücksichtigt die folgenden Punkte:

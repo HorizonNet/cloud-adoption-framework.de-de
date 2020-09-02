@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: e5407f2f78942d22c5fa07b277f600d5440ddc04
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 04cfd35b56fb345474d3d4dd5f554f5bb3eb6f5c
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214020"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884707"
 ---
 # <a name="timelines-in-a-cloud-adoption-plan"></a>Zeitpläne in einem Cloudeinführungsplan
 
@@ -30,6 +30,6 @@ Für jeden Grad der Granularität verwenden Sie den letzten Tag der Iteration al
 
 ## <a name="delivery-plans-in-azure-devops"></a>Lieferpläne in Azure DevOps
 
-<!-- docsTest:ignore "Microsoft Delivery Plans" -->
+<!-- docsTest:casing "Microsoft Delivery Plans" -->
 
 Wenn Sie Ihren Cloudeinführungsplan mit Azure DevOps verwalten, sollten Sie die [Microsoft-Erweiterung für Lieferpläne (Delivery Plans)](https://marketplace.visualstudio.com/items?itemname=ms.vss-plans) verwenden. Diese Erweiterung kann schnell eine visuelle Darstellung des Zeitplans erstellen, die auf Iterations- und Releasezuweisungen beruht.

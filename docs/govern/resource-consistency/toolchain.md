@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 55ffac53041f961757909ec80b7118d2e2118f2a
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 55238bee14d03883e94c87612f8819f92d981d01
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568990"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879131"
 ---
 # <a name="resource-consistency-tools-in-azure"></a>Ressourcenkonsistenztools in Azure
 
 [Ressourcenkonsistenz](./index.md) ist eine der [fünf Disziplinen der Cloud-Governance](../governance-disciplines.md). Dieser Disziplin konzentriert sich auf Möglichkeiten zum Einrichten von Richtlinien, die sich auf die Verwaltung des Betriebs einer Umgebung, Anwendung oder Workload beziehen. Innerhalb der fünf Disziplinen der Cloudgovernance umfasst die Disziplin „Ressourcenkonsistenz“ die Überwachung der Anwendungs-, Workload- und Ressourcenleistung. Darüber hinaus umfasst sie die Aufgaben, die zur Erfüllung von Skalierungsanforderungen erforderlich sind, sowie zur Korrektur von Leistungs-SLA-Verstößen und zur proaktiven Vermeidung von Leistungs-SLA-Verstößen durch automatisierte Korrektur.
 
-<!-- docsTest:ignore "conditional access to resources" -->
+<!-- docutune:casing "conditional access to resources" -->
 
 Im Folgenden ist eine Liste der Azure-Tools aufgeführt, die zur Ausreifung der Richtlinien und Prozesse beitragen können, die diese Disziplin unterstützen.
 
