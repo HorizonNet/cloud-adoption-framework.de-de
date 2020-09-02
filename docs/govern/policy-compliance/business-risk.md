@@ -7,12 +7,12 @@ ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 19fc139021f891eafd9c0ac8034a1f57d9f6f7d0
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: cb2b72a4356602c835013a8d6599b3d67bf301c6
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86191211"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88883313"
 ---
 # <a name="understand-business-risk-during-cloud-migration"></a>Verstehen des Geschäftsrisikos während der Cloudmigration
 
@@ -39,7 +39,7 @@ Während einer Cloudtransformation haben sowohl das Unternehmen als auch das IT-
 
 ## <a name="what-is-a-business-risk-mvp"></a>Was ist ein Geschäftsrisiko-MVP?
 
-_Minimum Viable Product (MVP)_ ist ein gängiger Ausdruck, um die kleinste Einheit einer Ressource zu definieren, die einen spürbaren Wert erzeugen kann. Bei einem Geschäftsrisiko-MVP geht das Cloudgovernanceteam zunächst davon aus, dass einige Ressourcen irgendwann in einer Cloudumgebung bereitgestellt werden. Es ist zu diesem Zeitpunkt nicht bekannt, was diese Ressourcen sind, und das Team kann sich nicht sicher sein, welche Arten von Daten für diese Ressourcen gespeichert werden.
+*Minimum Viable Product (MVP)* ist ein gängiger Ausdruck, um die kleinste Einheit einer Ressource zu definieren, die einen spürbaren Wert erzeugen kann. Bei einem Geschäftsrisiko-MVP geht das Cloudgovernanceteam zunächst davon aus, dass einige Ressourcen irgendwann in einer Cloudumgebung bereitgestellt werden. Es ist zu diesem Zeitpunkt nicht bekannt, was diese Ressourcen sind, und das Team kann sich nicht sicher sein, welche Arten von Daten für diese Ressourcen gespeichert werden.
 
 Beim Planen des Geschäftsrisikos kann das Cloudgovernanceteam für den ungünstigsten Fall vorsorgen und der Cloud jede erdenkliche Richtlinie zuordnen. Die Identifizierung aller potenziellen Geschäftsrisiken für alle Cloudnutzungsszenarien kann erheblichen Zeit- und Arbeitsaufwand erfordern, was die Implementierung von Governance für Ihre Cloudworkloads verzögern kann. Dies ist nicht empfehlenswert, aber es ist eine Option.
 
@@ -53,6 +53,7 @@ Nachfolgend sind einige grundlegende Beispiele für Geschäftsrisiken aufgeführ
 - Ressourcen, deren geöffnete Ports über das Internet zugänglich sind, könnten kompromittiert werden.
 
 Die oben aufgeführten Beispiele sollen die MVP-Geschäftsrisiken als Theorie aufstellen. Die tatsächliche Liste ist für jede Umgebung individuell.
+
 Sobald das Geschäftsrisiko-MVP eingerichtet wurde, kann die Umwandlung in [Richtlinien](./index.md) erfolgen, um die einzelnen Risiken zu mindern.
 
 ## <a name="incremental-risk-mitigation"></a>Inkrementelle Risikominderung

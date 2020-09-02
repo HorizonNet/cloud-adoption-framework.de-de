@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 78e6d199c241e9f3623cdfd3240c9fe5d8f88953
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 4ebb8dc70a373d2dd458c074689bf201d4a05f60
+ms.sourcegitcommit: 5b537035b96ae2b6879a1ea7fd46ceb64626851d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884452"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89275588"
 ---
 # <a name="azure-setup-guide-overview"></a>Azure-Einrichtungsleitfaden: Übersicht
 
@@ -31,12 +31,12 @@ Sie lernen Folgendes:
 
 > [!div class="checklist"]
 >
-> - **Organisieren von Ressourcen:** Richten Sie eine Verwaltungshierarchie ein, um Optionen für Zugriffssteuerung, Richtlinien und Konformität einheitlich auf Ressourcengruppen anzuwenden und verwandte Ressourcen mithilfe von Tags nachzuverfolgen.
-> - **Verwalten des Zugriffs:** Verwenden Sie die rollenbasierte Zugriffssteuerung, um sicherzustellen, dass Benutzer nur über die Berechtigungen verfügen, die sie wirklich benötigen.
-> - **Verwalten von Kosten und Abrechnung:** Ermitteln Sie Ihren Abonnementtyp, und machen Sie sich mit der Abrechnung sowie mit Möglichkeiten zur Kostenkontrolle vertraut.
-> - **Planen für Governance, Sicherheit und Konformität:** Erzwingen und automatisieren Sie Richtlinien und Sicherheitseinstellungen, um die geltenden rechtlichen Anforderungen zu erfüllen.
-> - **Verwenden der Überwachung und Berichterstellung:** Profitieren Sie von ressourcenübergreifender Transparenz, um Probleme finden und beheben, die Leistung optimieren oder Erkenntnisse zum Kundenverhalten gewinnen zu können.
-> - **Sicherstellen des aktuellen Stands von Azure:** Bleiben Sie bei Produktupdates auf dem Laufenden, um ein proaktives Change Management zu ermöglichen.
+> - **[Organisieren von Ressourcen:](./organize-resources.md)** Richten Sie eine Verwaltungshierarchie ein, um Optionen für Zugriffssteuerung, Richtlinien und Konformität einheitlich auf Ressourcengruppen anzuwenden und verwandte Ressourcen mithilfe von Tags nachzuverfolgen.
+> - **[Verwalten des Zugriffs:](./manage-access.md)** Verwenden Sie die rollenbasierte Zugriffssteuerung, um sicherzustellen, dass Benutzer nur über die Berechtigungen verfügen, die sie wirklich benötigen.
+> - **[Verwalten von Kosten und Abrechnung:](./manage-costs.md)** Ermitteln Sie Ihren Abonnementtyp, und machen Sie sich mit der Abrechnung sowie mit Möglichkeiten zur Kostenkontrolle vertraut.
+> - **[Planen für Governance, Sicherheit und Konformität:](./govern-org-compliance.md)** Erzwingen und automatisieren Sie Richtlinien und Sicherheitseinstellungen, um die geltenden rechtlichen Anforderungen zu erfüllen.
+> - **[Verwenden der Überwachung und Berichterstellung:](./monitoring-reporting.md)** Profitieren Sie von ressourcenübergreifender Transparenz, um Probleme finden und beheben, die Leistung optimieren oder Erkenntnisse zum Kundenverhalten gewinnen zu können.
+> - **[Sicherstellen des aktuellen Stands von Azure:](./staying-current.md)** Bleiben Sie bei Produktupdates auf dem Laufenden, um ein proaktives Change Management zu ermöglichen.
 
 ::: zone target="docs"
 
