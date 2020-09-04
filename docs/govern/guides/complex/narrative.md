@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c1beda856259190adbfb6035d9c6bafd7d93d0d1
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.openlocfilehash: 5f0d5f337fb4d961b1b584d5ab6e9985ce9dd293
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88848175"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88880729"
 ---
-<!-- cSpell:ignore CDO's CIO's -->
-
 # <a name="governance-guide-for-complex-enterprises-the-supporting-narrative"></a>Governanceleitfaden für komplexe Unternehmen: Unterstützende Geschichte
 
 Die folgende Geschichte schildert einen Anwendungsfall für die [Governance während der Journey zur Cloudeinführung eines komplexen Unternehmens](./index.md). Bevor Sie die Empfehlungen in diesem Leitfaden umsetzen, müssen Sie die Annahmen und die Logik verstehen, die in dieser Geschichte dargestellt werden. So können Sie die Governancestrategie besser auf die Journey zur Cloudeinführung in Ihrer eigenen Organisation ausrichten.
@@ -34,7 +32,9 @@ Die CIO hat innovative Ideen, die dem Unternehmen helfen können, ist jedoch zus
 Das Unternehmen besitzt das folgende Geschäftsprofil:
 
 - Vertrieb und Betrieb erstrecken sich geografisch über mehrere Bereiche mit Kunden in mehreren globalen Märkten.
+
 - Das Unternehmen ist durch eine Übernahme gewachsen und in drei Unternehmenseinheiten tätig, die auf dem Zielkundenstamm beruhen. Die Budgetierung entspricht einer komplexen Matrix für Unternehmenseinheiten und Funktionen.
+
 - Das Unternehmen betrachtet den größten Teil der IT als Kostenverursacher oder Kostenstelle.
 
 ## <a name="current-state"></a>Aktueller Status
@@ -42,13 +42,21 @@ Das Unternehmen besitzt das folgende Geschäftsprofil:
 Aktuell befinden sich IT und Cloudbetrieb des Unternehmens in folgendem Zustand:
 
 - Die IT betreibt auf der ganzen Welt mehr als 20 Rechenzentren in Privatbesitz.
+
 - Aufgrund des natürlichen Wachstums und mehrere geografische Regionen gibt es nur wenige IT-Teams mit eindeutigen Anforderungen für Datenhoheit und Compliance für eine einzelne Geschäftseinheit innerhalb einer bestimmten geografischen Region.
+
 - Jedes Rechenzentrum ist über einer Reihe regionaler Mietleitungen verbunden, wodurch ein locker gekoppeltes globales WAN entsteht.
+
 - Die IT hat die Cloud eingeführt, indem alle E-Mail-Konten der Endbenutzer zu Microsoft 365 migriert wurden. Diese Migration wurde vor mehr als sechs Monaten abgeschlossen. Seit damals wurden nur wenige IT-Ressourcen in der Cloud bereitgestellt.
+
 - Das primäre Entwicklungsteam des CDO arbeitet in einer Dev/Test-Kapazität, um die nativen Cloudfunktionen kennenzulernen.
+
 - Eine Unternehmenseinheit experimentiert mit Big Data in der Cloud. Das BI-Team innerhalb der IT ist an diesen Bestrebungen beteiligt.
+
 - Die vorhandene IT-Governancerichtlinie sieht vor, dass personenbezogene Kundeninformationen und Finanzdaten auf Ressourcen zu hosten sind, die dem Unternehmen direkt gehören. Diese Richtlinie blockiert den Einstieg in die Cloud für unternehmenskritische Anwendungen oder geschützte Daten.
+
 - IT-Investitionen werden größtenteils durch Kapitalkosten gesteuert. Diese Investitionen werden jährlich geplant und umfassen häufig Pläne für die laufende Wartung sowie festgelegte Aktualisierungszyklen von drei bis fünf Jahren, je nach Rechenzentrum.
+
 - Die meisten Investitionen in Technologie, die dem Jahresplan nicht entsprechen, werden durch Schatten-IT-Aktivitäten getätigt. Dieser Aufwand wird normalerweise von Unternehmenseinheiten verwaltet und durch die Betriebskosten der Unternehmenseinheit abgedeckt.
 
 ## <a name="future-state"></a>Zukünftiger Status
@@ -56,10 +64,15 @@ Aktuell befinden sich IT und Cloudbetrieb des Unternehmens in folgendem Zustand:
 Die folgenden Änderungen werden in den nächsten Jahren erwartet:
 
 - Die CIO leitet eine Maßnahme zum Modernisieren der Richtlinie zu personenbezogenen Informationen und Finanzdaten, um zukünftige Ziele zu unterstützen. Zwei Mitglieder des IT-Governanceteams haben Einblick in diese Bemühungen.
+
 - Der IT-Abteilungsleiter möchte die Cloudmigration als richtungsweisend verstanden wissen, um die Konsistenz und Stabilität für alle Geschäftseinheiten und geografischen Regionen zu verbessern. Der zukünftige Status muss externe Complianceanforderungen berücksichtigen, die eine Abkehr von den bestehenden Ansätzen bestimmter IT-Teams erfordern.
-- Wenn die frühen Experimente in den Bereichen App-Entwicklung und BI erfolgsversprechend sind, sollen in den nächsten 24 Monaten jeweils kleine Produktionslösungen in der Cloud freigegeben werden.
+
+- Wenn die frühen Experimente in den Bereichen „Anwendungsentwicklung“ und „BI“ erfolgsversprechend sind, sollen in den nächsten 24 Monaten jeweils kleine Produktionslösungen in der Cloud freigegeben werden.
+
 - Der CIO und der CFO haben einen Architekten und den Vice President of Infrastructure beauftragt, eine Kostenanalyse und eine Machbarkeitsstudie durchzuführen. Diese Bemühungen werden entscheiden, ob das Unternehmen in den nächsten 36 Monaten 5.000 Ressourcen in die Cloud verschieben kann und soll. Bei einer erfolgreichen Migration könnte der CIO zwei Rechenzentren aufgeben und dadurch die Kosten im Laufe des Fünf-Jahres-Plans um mehr als 100 Millionen US-Dollar senken. Wenn drei bis vier Rechenzentren ähnliche Ergebnisse erzielen können, ist das Budget wieder in den schwarzen Zahlen und ermöglicht der CIO die Unterstützung weiterer innovativer Initiativen.
-    ![Lokale Kosten im Vergleich zu Azure-Kosten zeigen eine Rendite von 100 Millionen US-Dollar in den nächsten fünf Jahren.](../../../_images/govern/calculator-enterprise.png)
+
+  ![Lokale Kosten im Vergleich zu Azure-Kosten zeigen eine Rendite von 100 Millionen US-Dollar in den nächsten fünf Jahren.](../../../_images/govern/calculator-enterprise.png)
+
 - Neben diesen Kosteneinsparungen plant das Unternehmen, die Verwaltung einiger IT-Investitionen zu ändern, indem die gebundenen Kapitalkosten als Betriebskosten innerhalb der IT umdefiniert werden. Diese Änderung ermöglicht mehr Kostenkontrolle, sodass die IT weitere geplante Aufwendungen beschleunigen kann.
 
 ## <a name="next-steps"></a>Nächste Schritte

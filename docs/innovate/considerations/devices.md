@@ -7,16 +7,16 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: b871e4d9e1c11b177fdda4abb873f63e6ba182bb
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 02448762796ad54ae49e8e411a5a21edf002aeb3
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572339"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88878179"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>Umgebungserfahrungen: Interagieren mit Geräten
 
-Im Artikel [Erstellen von Lösungen mit Blick auf die Kundenanforderungen](./build.md) wurden die drei Tests für echte Innovation erläutert: Lösen eines Kundenbedürfnisses, langfristige Kundenbindung und Skalierung für verschiedene Kundengruppen. Jeder Test Ihrer Hypothese erfordert Aufwand und Iterationen hinsichtlich des Ansatzes zur Umsetzung. Dieser Artikel bietet Einblicke in einige weitergehende Ansätze, um diesen Aufwand mittels _Umgebungserfahrungen_ zu verringern. Durch die Interaktion mit Geräten statt mit einer Anwendung kann es sein, dass sich der Kunde eher zuerst Ihrer Lösung zuwendet.
+Im Artikel [Erstellen von Lösungen mit Blick auf die Kundenanforderungen](./build.md) wurden die drei Tests für echte Innovation erläutert: Lösen eines Kundenbedürfnisses, langfristige Kundenbindung und Skalierung für verschiedene Kundengruppen. Jeder Test Ihrer Hypothese erfordert Aufwand und Iterationen hinsichtlich des Ansatzes zur Umsetzung. Dieser Artikel bietet Einblicke in einige weitergehende Ansätze, um diesen Aufwand mittels *Umgebungserfahrungen* zu verringern. Durch die Interaktion mit Geräten statt mit einer Anwendung kann es sein, dass sich der Kunde eher zuerst Ihrer Lösung zuwendet.
 
 ## <a name="ambient-experiences"></a>Umgebungserfahrungen
 
@@ -29,8 +29,6 @@ Das Leben in der digitalen Wirtschaft ist voller Ablenkungen. Wir alle werden mi
 Eine standardmäßige Weboberfläche ist die verbreitetste Anwendungsentwicklungstechnik zur Erfüllung von Kundenbedürfnissen. Bei diesem Ansatz wird davon ausgegangen, dass sich der Kunde am Computer befindet. Wenn Ihr Kunde seine Bedürfnisse stets am Laptop erfüllt, entwickeln Sie eine Webanwendung. Diese Anwendung bietet dem Kunden in diesem Szenario eine Umgebungserfahrung. Wir wissen jedoch, dass dieses Szenario in unserer aktuellen Zeit immer seltener und weniger wahrscheinlich wird.
 
 ![Umgebungserfahrungen](../../_images/innovate/ambient-experiences.png)
-
-<!-- docsTest:ignore "learning with the customer" -->
 
 Umgebungserfahrungen erfordern heutzutage in der Regel mehr als eine Webanwendung. Durch [Messungen](./measure.md) und [Lernen vom Kunden](./learn.md) kann das Verhalten, das zum Bedürfnisauslöser des Kunden führt, beobachtet, verfolgt und genutzt werden, um eine bessere Servicequalität der Umgebung zu schaffen. In der folgenden Liste werden einige Ansätze zur Einbeziehung von Umgebungslösungen in Ihre Hypothesen zusammengefasst. Weitere Details dazu finden Sie in den folgenden Abschnitten.
 
@@ -66,7 +64,7 @@ Jenseits mobiler Realität oder selbst Mixed Reality liegt die integrierte Reali
 
 Diese Erfahrung ist ideal, wenn sich eine bestimmte Art von Gerät stets in der gleichen Umgebung befindet, in der die Kundenbedürfnisse entstehen. Übliche Szenarien sind Fabrikhallen, Aufzüge und sogar Ihr Auto. Diese Art großformatiger Geräte verfügt bereits über Computeleistung. Sie können auch Daten vom Gerät selbst verwenden, um Kundenverhalten zu erkennen und diese Verhaltensweisen in die Cloud zu übertragen. Diese automatische Erfassung von Daten zum Kundenverhalten reduziert die Notwendigkeit der Dateneingabe durch einen Kunden erheblich. Darüber hinaus kann die Web-, mobile oder VR-Erfahrung als Feedbackschleife eingesetzt werden, um auszutauschen, was die Lösung für integrierte Realität gelernt hat.
 
-<!-- docsTest:ignore "advanced computer vision" -->
+<!-- docsTest:casing "advanced computer vision" -->
 
 Beispiele für integrierte Realität in Azure sind u. a.:
 
@@ -78,13 +76,13 @@ Sie können diese drei Tools zum Sammeln von Daten aus der natürlichen Umgebung
 
 ## <a name="adjusted-reality"></a>Angepasste Realität
 
-Die höchste Form der Umgebungserfahrung ist die angepasste Realität, die oft als _Umgebungsintelligenz_ bezeichnet wird. Angepasste Realität ist ein Ansatz zur Nutzung von Informationen aus Ihrer Lösung, um die Realität des Kunden zu beeinflussen, ohne dass eine direkte Interaktion mit einer Anwendung erforderlich ist. Bei diesem Ansatz ist die Anwendung, die Sie ursprünglich zum Nachweis Ihrer Hypothese entwickelt haben, möglicherweise völlig unwichtig. Stattdessen passen die Geräte in der Umgebung die Ein- und Ausgaben an, um die Bedürfnisse der Kunden zu decken.
+Die höchste Form der Umgebungserfahrung ist die angepasste Realität, die oft als *Umgebungsintelligenz* bezeichnet wird. Angepasste Realität ist ein Ansatz zur Nutzung von Informationen aus Ihrer Lösung, um die Realität des Kunden zu beeinflussen, ohne dass eine direkte Interaktion mit einer Anwendung erforderlich ist. Bei diesem Ansatz ist die Anwendung, die Sie ursprünglich zum Nachweis Ihrer Hypothese entwickelt haben, möglicherweise völlig unwichtig. Stattdessen passen die Geräte in der Umgebung die Ein- und Ausgaben an, um die Bedürfnisse der Kunden zu decken.
 
 Virtuelle Assistenten und intelligente Lautsprecher sind ein gutes Beispiel für angepasste Realität. Allein ist ein intelligenter Lautsprecher ein Beispiel für einfache integrierte Realität. Fügen Sie einer intelligenten Lautsprecherlösung aber einen intelligenten Licht- und Bewegungssensor hinzu, dann ist es ganz einfach, eine einfache Lösung zu schaffen, bei der das Licht beim Betreten eines Raums eingeschaltet wird.
 
 Fabrikhallen auf der ganzen Welt bieten zusätzliche Beispiele für angepasste Realität. In frühen Phasen integrierter Realität erkannten Sensoren von Geräten Bedingungen wie Überhitzung und warnten dann einen menschlichen Bediener über eine Anwendung. Bei der angepassten Realität ist der Kunde möglicherweise weiterhin beteiligt, aber die Feedbackschleife ist enger. In einer Fabrikhalle mit angepasster Realität erkennt ein Gerät eine Überhitzung in einer kritischen Maschine irgendwo an der Montagelinie. An anderer Stelle in der Halle verlangsamt dann ein zweites Gerät die Produktion etwas, damit die Maschine abkühlen kann. Nachdem der Vorfall behoben wurde, wird das Tempo wieder aufgenommen. In dieser Situation spielt der Kunde keine wesentliche Rolle mehr. Der Kunde verwendet Ihre Anwendung, um die Regeln festzulegen und zu verstehen, wie sich diese Regeln auf die Produktion ausgewirkt haben – er ist jedoch kein erforderlicher Teil der Feedbackschleife mehr.
 
-Die in den Dokumentationen zu [Azure IoT](/azure/iot-fundamentals), [Azure Sphere](/azure-sphere) und [Azure Kinect DK](/azure/Kinect-dk) beschriebenen Azure-Dienste könnten jeweils Komponenten einer Lösung für angepasste Realität sein. Ihre ursprüngliche Anwendungs- und Geschäftslogik dient dabei als Vermittler zwischen den Eingaben aus der Umgebung und den Änderungen, die an der physischen Umgebung vorgenommen werden müssen.
+Die in den Dokumentationen zu [Azure IoT](/azure/iot-fundamentals), [Azure Sphere](/azure-sphere) und [Azure Kinect DK](/azure/kinect-dk) beschriebenen Azure-Dienste könnten jeweils Komponenten einer Lösung für angepasste Realität sein. Ihre ursprüngliche Anwendungs- und Geschäftslogik dient dabei als Vermittler zwischen den Eingaben aus der Umgebung und den Änderungen, die an der physischen Umgebung vorgenommen werden müssen.
 
 Ein digitaler Zwilling ist ein weiteres Beispiel für angepasste Realität. Dieser Begriff bezieht sich auf eine digitale Darstellung eines physischen Geräts, das über Computer-, mobile oder Mixed Reality-Formate dargestellt wird. Im Gegensatz zu weniger komplexen 3D-Modellen spiegelt ein digitaler Zwilling Daten wider, die von einem realen Gerät in der physischen Umgebung gesammelt wurden. Diese Lösung ermöglicht dem Benutzer, mit der digitalen Darstellung auf eine Weise zu interagieren, die in der realen Welt unmöglich wäre. Bei diesem Ansatz passen physische Geräte eine Mixed Reality-Umgebung an. Die Lösung sammelt jedoch nach wie vor Daten aus einer Lösung mit integrierter Realität und nutzt diese, um die Realität der aktuellen Umgebung des Kunden zu gestalten.
 

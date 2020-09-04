@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 927c42b216ff22aa3b721c5f741e49fe089e2923
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 2e749ea3b5a1b70e0cf4cbe497ded83b857200d1
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755970"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879624"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>Einführung in die Einhaltung gesetzlicher Bestimmungen
 
@@ -27,18 +27,18 @@ Wie bei Sicherheitskontrollen sollten Organisationen sich über die Unterteilung
 
 Im Folgenden finden Sie Beschreibungen von behördlichen Vorschriften in verschiedenen Branchen und Regionen:
 
-<!-- docsTest:ignore PHI "Health Information Portability and Accountability Act" -->
+<!-- docutune:casing PHI "Health Information Portability and Accountability Act" -->
 
 ## <a name="hipaa"></a>HIPAA
 
 Eine Anwendung im US-Gesundheitswesen, die geschützte gesundheitliche Informationen (Protected Health Information, PHI) verarbeitet, unterliegt sowohl den Regeln zur Privatsphäre als auch denen zur Sicherheit im Health Information Portability and Accountability Act (HIPAA). Als Minimum ist für HIPAA wahrscheinlich erforderlich, dass ein Unternehmen im Gesundheitswesen schriftliche Zusicherungen vom Cloudanbieter erhalten muss, dass alle empfangenen oder erstellten Patientendaten sicher verwahrt werden.
 
+<!-- docutune:ignore Discover -->
 <!-- cSpell:ignore Visa Mastercard -->
-<!-- docsTest:ignore "American Express" Discover JCB QSA ISA ROC SAQ DPO GRC -->
 
 ## <a name="pci"></a>PCI
 
-Der Payment Card Industry Data Security Standard (PCI-DSS) ist ein proprietärer Informationssicherheitsstandard für Organisationen, die mit Markenkreditkarten großer Kartenschemas wie Visa, Mastercard, American Express, Discover und JCB umgehen. Der PCI-Standard wird von den Kartenmarken beauftragt und vom Payment Card Industry Security Standards Council verwaltet. Der Standard wurde erstellt, um die Kontrolle über die Daten von Karteninhabern zu verbessern und Kreditkartenbetrug zu verringern. Eine Überprüfung der Konformität wird jährlich durchgeführt – für Organisationen, die große Transaktionsvolumen verarbeiten, durch einen externen qualifizierten Sicherheitsbewerter oder einen firmenspezifischen internen Sicherheitsbewerter, der einen Konformitätsbericht erstellt, oder für Unternehmen durch einen Selbstbewertungsfragebogen.
+Der Payment Card Industry Data Security Standard (PCI-DSS) ist ein proprietärer Informationssicherheitsstandard für Organisationen, die mit Markenkreditkarten großer Kartenzahlungssysteme wie Visa, Mastercard, American Express, Discover und JCB umgehen. Der PCI-Standard wird von den Kartenmarken beauftragt und vom Payment Card Industry Security Standards Council verwaltet. Der Standard wurde erstellt, um die Kontrolle über die Daten von Karteninhabern zu verbessern und Kreditkartenbetrug zu verringern. Eine Überprüfung der Konformität wird jährlich durchgeführt – für Organisationen, die große Transaktionsvolumen verarbeiten, durch einen externen qualifizierten Sicherheitsbewerter oder einen firmenspezifischen internen Sicherheitsbewerter, der einen Konformitätsbericht erstellt, oder für Unternehmen durch einen Selbstbewertungsfragebogen.
 
 ## <a name="personal-data"></a>Personenbezogene Daten
 

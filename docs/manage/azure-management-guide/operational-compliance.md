@@ -9,14 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9323dbd07f5de6ab4ed525b6f3a54db921ac0f7d
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 96d3c5280152a9baee6b327b46262c0ebaf5b69c
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572033"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882616"
 ---
-<!-- cSpell:ignore WSUS getting started -->
+<!-- cSpell:ignore WSUS -->
 
 # <a name="operational-compliance-in-azure"></a>Betriebsbezogene Compliance in Azure
 
@@ -201,7 +201,7 @@ So veröffentlichen Sie Blaupausenartefakte für Ihr Abonnement:
 
 ::: zone target="docs"
 
-1. Wechseln Sie zu [Blaupausen: Blaupausendefinitionen](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
+1. Wechseln Sie im Azure-Portal zu [Blaupausen: Blaupausendefinitionen](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
 1. Wählen Sie die Blaupause aus, die Sie in den vorherigen Schritten erstellt haben.
 1. Überprüfen Sie die Blaupausendefinition, und wählen Sie anschließend **Blaupause veröffentlichen** aus.
 1. Geben Sie in das Feld **Version** eine Version wie „1.0“ ein.

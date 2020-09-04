@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: a2d0f8fbe4bbdca6226b555c0b8f96d9309addb6
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 99d4ed4ffd2e627eedbd2c0c78f2306b80a0a629
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88195886"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884282"
 ---
 # <a name="get-started-align-your-organization"></a>Erste Schritte: Ausrichten Ihrer Organisation
 
@@ -47,13 +47,13 @@ Nachdem Sie die Antworten auf diese Fragen dokumentiert haben, verwenden Sie [Pl
 
 Die folgenden Organisationsstrukturen müssen nicht unbedingt einem Organisationsdiagramm (Organigramm) zugeordnet sein. Organigramme spiegeln im Allgemeinen die Strukturen des Steuerungsmanagement wider. Umgekehrt dienen die folgenden Organisationsstrukturen zur Erfassung der Ausrichtung von Rollen und Zuständigkeiten.
 
-In einer agilen Matrixorganisation lassen sich diese Strukturen u. U. am besten als virtuelle Teams (oder V-Teams) darstellen. Es spricht nichts dagegen, dass V-Teams in einem Organigramm dargestellt werden, aber es ist kein formales Organigramm erforderlich, um ein effektives Betriebsmodell zu erzielen.
+In einer agilen Matrixorganisation lassen sich diese Strukturen u. U. am besten als virtuelle Teams darstellen. Es spricht nichts dagegen, dass virtuelle Teams in einem Organigramm dargestellt werden, aber es ist kein formales Organigramm erforderlich, um ein effektives Betriebsmodell zu erzielen.
 
 Ermitteln Sie, wie die folgenden Modelle zu Ihren Organisationsstrukturen passen:
 
 - **Ausrichtung des Organisationsdiagramms:** Verwaltungshierarchien, Verantwortlichkeiten der Führungskräfte und die Ausrichtung der Mitarbeiter werden an den Unternehmensstrukturen ausgerichtet.
-- **Virtuelle Teams:** Verwaltungsstrukturen und Organigramme bleiben unverändert. Stattdessen werden V-Teams zusammengestellt und mit den erforderlichen Funktionen betraut.
-- **Gemischtes Modell:** Üblicherweise ist eine Mischung aus Organisationsdiagrammen und V-Team-Ausrichtung erforderlich, um Cloudtransformationsziele zu erreichen.
+- **Virtuelle Teams:** Verwaltungsstrukturen und Organigramme bleiben unverändert. Stattdessen werden virtuelle Teams zusammengestellt und mit den erforderlichen Funktionen betraut.
+- **Gemischtes Modell:** Üblicherweise ist eine Mischung aus Organisationsdiagrammen und Ausrichtung der virtuellen Teams erforderlich, um Cloudtransformationsziele zu erreichen.
 
 ## <a name="step-4-establish-team-structures"></a>Schritt 4: Einrichten von Teamstrukturen
 

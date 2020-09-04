@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 39c19414011a55a5583a215332c699ee4d3f3b16
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 2c18dbcc59d8be0f1002000e6286b2617ed81be8
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569330"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884299"
 ---
 # <a name="get-started-deliver-operational-excellence-during-digital-transformation"></a>Erste Schritte: Bereitstellen des optimalen Betriebs während der digitalen Transformation
 
@@ -48,7 +48,6 @@ Eine klare Geschäftsstrategie ist die Grundlage für jede digitale Transformati
 - [Geschäftliche Begründung](../strategy/cloud-migration-business-case.md): Die geschäftliche Begründung dient als allgemeine Übersicht über den Gesamtfinanzplan für die Cloudeinführung. Sie kann eine gute Quelle für die anfängliche Budgetplanung darstellen.
 - [Lernmetriken](../strategy/learning-metrics.md): Um die Ausrichtung zwischen der übergreifenden Geschäftsstrategie und den eher taktischen Change Management-Plänen aufrechtzuerhalten, ist es wichtig, Lernmetriken zu erstellen. Diese Metriken sollten so entworfen werden, dass Sie den iterativen und inkrementellen Fortschritt des Plans anzeigen.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -73,10 +72,9 @@ Organisatorisches Change Management ist ein iterativer Ansatz zur subtilen Neuau
 - [Erfassen von Bestandsdaten](../digital-estate/inventory.md): Richten Sie eine Datenquelle für die Analyse des digitalen Bestands vor der Einführung ein.
 - [Bewährte Methode: Azure Migrate](../plan/contoso-migration-assessment.md): Verwenden Sie Azure Migrate, um den Bestand zu erfassen.
 - [Inkrementelle Rationalisierung](../digital-estate/rationalize.md#incremental-rationalization): Während der inkrementellen Rationalisierung identifiziert eine quantitative Analyse Cloudkandidaten zu Budgetierungszwecken.
-- [Abstimmen von Kostenmodellen und Vorhersagemodellen](../digital-estate/calculate.md): Verwenden Sie Azure Cost Management, um Kosten- und Vorhersagemodelle durch [Erstellen von Budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json) abzustimmen.
+- [Abstimmen von Kostenmodellen und Vorhersagemodellen](../digital-estate/calculate.md): Verwenden Sie Azure Cost Management und Abrechnung, um Kosten- und Vorhersagemodelle durch [Erstellen von Budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) abzustimmen.
 - [Entwickeln Ihres Cloudeinführungsplans](../plan/plan-intro.md#build-your-cloud-adoption-plan): Erstellen Sie einen Plan mit handlungsrelevanten Details zu Workloads und Ressourcen sowie zum zeitlichen Ablauf.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -102,7 +100,6 @@ Jede Welle (oder jedes „Release“ in Agile-Terminologie) stellt eine Reihe vo
 - [Bewerten von Workloads](../migrate/azure-migration-guide/assess.md?tabs=challenge-assumptions): Die Bemühungen des Cloudeinführungsteam, die aktuelle Reihe von Migrationsprioritäten zu bewerten und entsprechend zu handeln
 - [Konsens über den geschäftlichen Nutzen](../innovate/business-value.md): Die Bemühungen des Cloudeinführungsteams, bei jeder Veröffentlichung neuer Innovationen eine entsprechende Ausrichtung des Geschäftswerts sicherzustellen
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -119,7 +116,7 @@ Die zuvor genannten Schritte skizzieren einen geschäftsorientierten Ansatz zur 
 
 Optimaler Betrieb erfordert einen disziplinierten Ansatz für Zuverlässigkeit, Leistung, Sicherheit und Kostenoptimierung. Verwenden Sie die verbleibenden Anleitungen in dieser Reihe, um diese Prinzipien durch konsistente Automatisierungsansätze zu implementieren.
 
-- **Kostenoptimierung:** Kontinuierliche Optimierung der Betriebskosten unter Verwendung des Leitfadens zu den ersten Schritten mit der [Verwaltung von Unternehmenskosten](./manage-costs.md).
-- **Sicherheit**: Risikominderung durch Integration der Unternehmenssicherheit in das gesamte Portfolio unter Verwendung des Leitfadens zu den ersten Schritten mit der [Implementierung von Sicherheit im gesamten Portfolio](./security.md).
+- **Kostenoptimierung:** Kontinuierliche Optimierung der Betriebskosten unter Verwendung des Leitfadens zu den ersten Schritten mit der [Verwaltung von Unternehmenskosten](./manage-costs.md)
+- **Sicherheit**: Risikominderung durch Integration der Unternehmenssicherheit in das gesamte Portfolio unter Verwendung des Leitfadens zu den ersten Schritten mit der [Implementierung von Sicherheit im gesamten Portfolio](./security.md)
 - **Leistungsverwaltung**: Sicherstellen, dass die Leistung von IT-Ressourcen die Geschäftsprozesse unterstützt, unter Verwendung des Leitfadens zu den ersten Schritten mit der [Leistungsverwaltung im gesamten Unternehmen](./performance.md).
 - **Zuverlässigkeit:** Verbessern der Zuverlässigkeit und Reduzieren von Geschäftsunterbrechungen unter Verwendung des Leitfadens zu den ersten Schritten zum [Implementieren von Steuerungen zur Schaffung von Zuverlässigkeit](./reliability.md).

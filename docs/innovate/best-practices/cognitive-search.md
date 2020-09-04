@@ -7,16 +7,17 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: a7aff09f017bea41591028eee06f8936359388a4
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a5221713e9e6125aa134e958b2baca2e99dcadec
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568497"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884537"
 ---
 <!-- cSpell:ignore Lucene -->
 
-<!-- docsTest:ignore "Azure Search" "JFK Files" -->
+<!-- docsTest:casing "JFK Files" -->
+<!-- docsTest:ignore "Azure Search" -->
 
 # <a name="what-is-azure-cognitive-search"></a>Was ist Azure Cognitive Search?
 
@@ -61,11 +62,11 @@ Nachdem Sie einen Index definiert haben, können Sie Inhalte hochladen. Sie kön
 
 Das Pullmodell ruft Daten aus externen Datenquellen ab. Es wird durch Indexer unterstützt, die Aspekte der Datenerfassung optimieren und automatisieren, z. B. das Herstellen einer Verbindung mit Daten, Lesen und Serialisieren von Daten. [Indexer](/rest/api/searchservice/Indexer-operations) stehen für Azure Cosmos DB, Azure SQL-Datenbank, Azure Blob Storage und in einer auf einer Microsoft Azure Virtual Machines-Instanz gehosteten SQL Server-Instanz zur Verfügung. Sie können einen Indexer für bedarfsgesteuerte oder geplante Datenaktualisierung konfigurieren.
 
-Das Pushmodell wird über das SDK oder die REST-APIs bereitgestellt, die zum Senden von aktualisierten Dokumenten an einen Index verwendet werden. Sie können Daten aus praktisch jedem Dataset im JSON-Format übertragen. Weitere Informationen finden Sie unter [Hinzufügen, Aktualisieren oder Löschen von Dokumenten (Azure Cognitive Search-REST-API)](/rest/api/searchservice/addupdate-or-delete-documents), und Anleitungen zum Laden von Daten finden Sie unter [Verwenden der kognitiven Azure-Suche in einer .NET-Anwendung](/azure/search/search-howto-dotnet-sdk).
+Das Pushmodell wird über das SDK oder die REST-APIs bereitgestellt, die zum Senden von aktualisierten Dokumenten an einen Index verwendet werden. Sie können Daten aus praktisch jedem Dataset im JSON-Format übertragen. Weitere Informationen zum Laden von Daten finden Sie unter [Hinzufügen, Aktualisieren oder Löschen von Dokumenten](/rest/api/searchservice/addupdate-or-delete-documents) und [Verwenden des .NET SDK](/azure/search/search-howto-dotnet-sdk).
 
 ### <a name="step-4-search"></a>Schritt 4: Suchen,
 
-Nach dem Füllen eines Indexes können Sie über einfache HTTP-Anforderungen mit [REST-APIs](/rest/api/searchservice/Search-Documents) oder dem [.NET-SDK](/dotnet/api/microsoft.azure.search.idocumentsoperations?view=azure-dotnet) [Suchabfragen](/azure/search/search-query-overview) an Ihren Dienstendpunkt richten. Führen Sie die Schritte zum [Erstellen Ihrer ersten Suchanwendung](/azure/search/tutorial-csharp-create-first-app) aus, um eine Webseite zu erstellen und anschließend zu erweitern, die Benutzereingaben sammelt und Ergebnisse verarbeitet. Sie können auch [Postman für interaktive REST-Aufrufe](/azure/search/search-get-started-postman) oder den integrierten [Suchexplorer](/azure/search/search-explorer) im Azure-Portal verwenden, um einen vorhandenen Index abzufragen.
+Nach dem Füllen eines Indexes können Sie über einfache HTTP-Anforderungen mit [REST-APIs](/rest/api/searchservice/search-documents) oder dem [.NET-SDK](/dotnet/api/microsoft.azure.search.idocumentsoperations?view=azure-dotnet) [Suchabfragen](/azure/search/search-query-overview) an Ihren Dienstendpunkt richten. Führen Sie die Schritte zum [Erstellen Ihrer ersten Suchanwendung](/azure/search/tutorial-csharp-create-first-app) aus, um eine Webseite zu erstellen und anschließend zu erweitern, die Benutzereingaben sammelt und Ergebnisse verarbeitet. Sie können auch [Postman für interaktive REST-Aufrufe](/azure/search/search-get-started-postman) oder den integrierten [Suchexplorer](/azure/search/search-explorer) im Azure-Portal verwenden, um einen vorhandenen Index abzufragen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

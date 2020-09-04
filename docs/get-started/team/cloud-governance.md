@@ -3,16 +3,16 @@ title: 'Erste Schritte: Aufstellen eines Cloudgovernanceteams'
 description: Legen Sie für ein Governanceteam den Bereich, die Zielvorgaben und die Funktionen fest, um die erfolgreiche Durchführung von Maßnahmen für die Cloudgovernance sicherzustellen.
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: 346b4feabfbb7fefd8632ac4b3f5f81473815843
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 1df9bf9b6352f3aee42154aa5f1271fd0fb5be4d
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88661995"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884180"
 ---
 # <a name="get-started-build-a-cloud-governance-team"></a>Erste Schritte: Aufstellen eines Cloudgovernanceteams
 
@@ -34,7 +34,6 @@ Die offizielle Empfehlung für das Cloud Adoption Framework für Azure lautet, d
 - Die [Cloudgovernancefunktionen](../../organize/cloud-governance.md) sind unter Umständen bereits auf mehrere Einzelpersonen oder Teams verteilt. Ein Team mit dem Titel „Cloudgovernanceteam“ ist nicht wichtig, aber die erforderlichen Funktionen sollten einer verantwortlichen Partei oder einem Team übertragen werden.
 - Falls die langfristige Cloudeinführungsstrategie des Unternehmens über eine Zielzone in einer Cloudumgebung bereitgestellt werden kann, ist der Aufwand für die Governance- und Operationsmaßnahmen ggf. so gering, dass eine Person bzw. ein Team ausreicht. Es ist unwahrscheinlich, dass dieses Team als „Cloudgovernanceteam“ bezeichnet wird, da es zahlreiche Funktionen jenseits von Cloudgovernance erfüllt. Selbst bei diesem Team kann dieser Leitfaden zu den ersten Schritten beim Sicherstellen helfen, dass es diese wichtige Funktion der Governance bereitstellen kann.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -57,7 +56,6 @@ Bevor es Richtlinien oder automatisierte Cloudgovernance festlegt, sollte das Cl
 - Sehen Sie sich gemeinsam mit Mitgliedern des Cloudeinführungsteams den [Cloudeinführungsplan](../../plan/template.md) Ihres Unternehmens an, um sich mit dem Zeitplan und den Prioritäten vertraut zu machen.
 - Sehen Sie sich die [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx) des Operations-Teams an, um sich über die betriebsbezogenen Anforderungen und Verpflichtungen zu informieren, die für das Unternehmen gelten.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -77,7 +75,6 @@ Die Cloudeinführung erfolgt normalerweise in mehreren Wellen bzw. Releases. Ein
 
 - Weitere Informationen zur Besprechungshäufigkeit finden Sie unter [Cloudgovernancefunktionen](../../organize/cloud-governance.md#deliverable).
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -176,7 +173,6 @@ Wenn neue Einführungsmaßnahmen abgeschlossen werden, überträgt das Cloudeinf
 
 - Legen Sie einen Prozess für das [Durchführen des Onboardings für neue Workloads und Ressourcen](/azure/azure-resource-manager/custom-providers/concepts-resource-onboarding) fest.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |

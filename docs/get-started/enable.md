@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 61f1f1959e9a3e0d934e56498dd13462391d0a49
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: e79ba73affd92a932e95bdf6ed4aff5bcae0be73
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569585"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884418"
 ---
 # <a name="enable-customer-success-with-a-sound-operating-model-and-organizational-alignment"></a>Ermöglichen des Kundenerfolgs mithilfe eines solides Betriebsmodells und einer entsprechenden Organisationsausrichtung
 

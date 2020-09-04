@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 45b750b6d99bf858eaefa635aa6b16464158f412
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 86dd5776e72d4fa0d4e6ea9c3fbf510f8d0db4ad
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83220633"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88883789"
 ---
 # <a name="cost-management-discipline-improvement"></a>Verbesserung der Disziplin „Kostenmanagement“
 
@@ -23,7 +23,7 @@ Dieser Artikel beschreibt die möglichen Aufgaben, die Ihr Unternehmen zum Erste
 
 ![Vier Phasen der Einführung](../../_images/govern/adoption-phases.png)
 
-_Abbildung 1: Einführungsphasen des inkrementellen Ansatzes für die Cloudgovernance._
+*Abbildung 1: Einführungsphasen des inkrementellen Ansatzes für die Cloudgovernance.*
 
 Es ist unmöglich, die Anforderungen aller Unternehmen in einem einzigen Dokument zu berücksichtigen. Daher werden in diesem Artikel die empfohlenen mindestens auszuführenden Aktivitäten sowie Beispiele für potenzielle Aktivitäten für jede Phase des Weiterentwicklungsprozesses für die Governance beschrieben. Ziel dieser Aktivitäten ist es, Sie beim Aufbau eines [Richtlinien-MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) und bei der Einrichtung eines Frameworks für die inkrementelle Verbesserung der Richtlinie zu unterstützen. Ihr Cloudgovernanceteam muss entscheiden, wie viel in diese Aktivitäten investiert werden soll, um Ihre Funktionen für die Disziplin „Kostenmanagement“ zu verbessern.
 
@@ -107,7 +107,7 @@ Nachdem die Transformation abgeschlossen ist, müssen Governance und Betrieb wä
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nachdem Sie sich nun mit dem Konzept der Cloud-Kostenkontrolle vertraut machen, arbeiten Sie die [bewährten Methoden für Cost Management](./best-practices.md) durch, um Möglichkeiten zu finden, Ihre Gesamtausgaben zu reduzieren.
+Nachdem Sie sich nun mit dem Konzept der Cloud-Kostenkontrolle vertraut machen, arbeiten Sie die [Best Practices für die Disziplin „Cost Management“](./best-practices.md) durch, um Möglichkeiten zu finden, Ihre Gesamtausgaben zu reduzieren.
 
 > [!div class="nextstepaction"]
 > [Bewährte Methoden für Cost Management](./best-practices.md)

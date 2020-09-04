@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: a513c5727473d1e42b7fbecb6e0015aeb311fd0d
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 2165eecbbe58f11bfa76438806b8bafa27f602c7
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83755283"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885132"
 ---
 # <a name="organizational-antipatterns-silos-and-fiefdoms"></a>Antimuster in Unternehmen: Silos und Machtbereiche
 
@@ -67,7 +67,7 @@ Dieses Antimuster entsteht oft aus einer gemeinsamen Leidenschaft für eine best
 
 Für den Umgang mit IT-Silos können die folgenden Ansätze verwendet werden. Der beste Ansatz richtet sich jeweils nach der Grundursache des Widerstands.
 
-**Erstellen virtueller Teams:** Im Abschnitt zur [Bereitschaft der Organisation](./index.md) des Frameworks für die Cloudeinführung (Cloud Adoption Framework) wird eine mehrschichtige Struktur zur Integration und Definition von vier virtuellen Teams (V-Teams) beschrieben. Ein Vorteil dieser Struktur ist die organisationsweite Transparenz und Inklusion. Durch die Einführung eines [Cloudkompetenzzentrums](./cloud-center-of-excellence.md) wird ein bedeutendes ehrgeiziges Team geschaffen, an dessen Arbeit die besten Techniker beteiligt sein möchten. Auf diese Weise können neue lösungsübergreifende Zusammenhänge entstehen, die nicht durch Vorgaben des Organigramms eingeschränkt werden, und die Beteiligung der besten Techniker, die bisher Teil von IT-Silos waren, wird gefördert.
+**Erstellen virtueller Teams:** Im Abschnitt zur [Bereitschaft der Organisation](./index.md) des Frameworks für die Cloudeinführung (Cloud Adoption Framework) wird eine mehrschichtige Struktur zur Integration und Definition von vier virtuellen Teams beschrieben. Ein Vorteil dieser Struktur ist die organisationsweite Transparenz und Inklusion. Durch die Einführung eines [Cloudkompetenzzentrums](./cloud-center-of-excellence.md) wird ein bedeutendes ehrgeiziges Team geschaffen, an dessen Arbeit die besten Techniker beteiligt sein möchten. Auf diese Weise können neue lösungsübergreifende Zusammenhänge entstehen, die nicht durch Vorgaben des Organigramms eingeschränkt werden, und die Beteiligung der besten Techniker, die bisher Teil von IT-Silos waren, wird gefördert.
 
 Durch die Einführung eines [Cloudstrategieteams](./cloud-strategy.md) wird sofort Transparenz in Bezug auf IT-Beiträge geschaffen, die die Arbeit zur Einführung der Cloud betreffen. Wenn sich IT-Silos für eine Trennung einsetzen, kann diese Transparenz hilfreich dabei sein, Führungskräfte aus dem IT-Bereich und dem betriebswirtschaftlichen Bereich dazu zu motivieren, diese Widerstand leistenden Teammitglieder richtig zu unterstützen. Dieser Prozess ist eine schnelle Möglichkeit, um Projektbeteiligte einzubinden und zu unterstützen.
 

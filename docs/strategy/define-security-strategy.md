@@ -7,14 +7,14 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 7f52dfb9c58e619a4d626960ac3115575985253a
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 1c9c1447b30589a5bf1d4aaaa51b2b858b9c594f
+ms.sourcegitcommit: 5b537035b96ae2b6879a1ea7fd46ceb64626851d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572645"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89275408"
 ---
-<!-- cSpell:ignore MarkSimos NIST CISO COVID -->
+<!-- cSpell:ignore NIST CISO COVID -->
 
 # <a name="define-a-security-strategy"></a>Definieren einer Sicherheitsstrategie
 
@@ -36,7 +36,7 @@ Wenn Ihr Unternehmen Clouddienste einführt, werden die Sicherheitsteams auf zwe
 - **Sicherheit \*der\* Cloud (Sichern von Cloudressourcen):** Die Sicherheit sollte in die Planung und den Betrieb von Clouddiensten integriert werden, um sicherzustellen, dass diese zentralen Sicherheitszusicherungen bei allen Ressourcen konsistent angewandt werden.
 - **Sicherheit \*von\* der Cloud (Verwenden der Cloud zum Transformieren der Sicherheit):** Das Sicherheitsteam sollte unverzüglich mit der Planung und Erörterung beginnen, wie Cloudtechnologien zur Modernisierung von Sicherheitstools und -prozessen, insbesondere von nativ integrierten Sicherheitstools, verwendet werden können. Immer mehr Sicherheitstools werden in der Cloud gehostet und bieten Funktionen, die in einer lokalen Umgebung schwierig oder unmöglich zu realisieren sind.
 
-Viele Unternehmen beginnen damit, Cloudressourcen als zusätzliches _virtuelles Rechenzentrum_ zu behandeln, das sich sehr gut als Ausgangspunkt für die Sicherheit der Cloud eignet. Bei der Modernisierung von Unternehmen, die Sicherheit aus der Cloud nutzen, werden die meisten schnell feststellen, dass sie diesem Denkmodell entwachsen. Die Sicherung eines softwaredefinierten Rechenzentrums mithilfe von in der Cloud gehosteten Tools ermöglicht Funktionen, die über das hinausgehen, was lokale Modelle bieten können:
+Viele Unternehmen beginnen damit, Cloudressourcen als zusätzliches *virtuelles Rechenzentrum* zu behandeln, das sich sehr gut als Ausgangspunkt für die Sicherheit der Cloud eignet. Bei der Modernisierung von Unternehmen, die Sicherheit aus der Cloud nutzen, werden die meisten schnell feststellen, dass sie diesem Denkmodell entwachsen. Die Sicherung eines softwaredefinierten Rechenzentrums mithilfe von in der Cloud gehosteten Tools ermöglicht Funktionen, die über das hinausgehen, was lokale Modelle bieten können:
 
 - Schnelles Aktivieren und Skalieren von Sicherheitsfunktionen.
 - Hocheffektiver Ressourcenbestand und ordnungsgemäße Ermittlung der Sicherheitskonfiguration.
@@ -159,7 +159,7 @@ Die Entwicklung eines resilienten Sicherheitsstatus in der Cloud erfordert mehre
 Beachten Sie, dass die Verwendung des Worts *Vertrauen* im Kontext der Sicherheit verwirrend sein kann. In dieser Dokumentation wird auf zwei Arten darauf Bezug genommen, die nützliche Anwendungen dieses Konzepts veranschaulichen:
 
 - [Zero Trust](https://www.microsoft.com/security/business/zero-trust) ist ein in der Branche gebräuchlicher Begriff für einen strategischen Sicherheitsansatz, der davon ausgeht, dass ein Unternehmens- oder Intranetnetzwerk schädlich ist (nicht vertrauenswürdig) und die Sicherheit entsprechend gestaltet.
-- [Vertrauen ist gut – Kontrolle ist besser](https://wikipedia.org/wiki/trust,_but_verify) ist ein Ausdruck, der das Wesen zweier unterschiedlicher Organisationen erfasst, die trotz einiger anderer potenziell divergierender Interessen auf ein gemeinsames Ziel hinarbeiten. Damit werden viele der Nuancen der frühen Phasen der Partnerschaft mit einem kommerziellen Cloudanbieter für Organisationen prägnant erfasst.
+- [Vertrauen ist gut – Kontrolle ist besser](https://www.emazzanti.net/wp-content/uploads/2017/11/Trust-but-verify-Article-PDF.pdf) ist ein Ausdruck, der das Wesen zweier unterschiedlicher Organisationen erfasst, die trotz einiger anderer potenziell divergierender Interessen auf ein gemeinsames Ziel hinarbeiten. Damit werden viele der Nuancen der frühen Phasen der Partnerschaft mit einem kommerziellen Cloudanbieter für Organisationen prägnant erfasst.
 
 Ein Cloudanbieter und seine Methoden und Prozesse können verantwortlich sein, vertragliche und rechtliche Anforderungen zu erfüllen, und könnten Vertrauen gewinnen oder verlieren. Ein Netzwerk ist eine nicht lebendige Verbindung, die keine Konsequenzen tragen kann, wenn sie von Angreifern ausgenutzt wird (ähnlich wie Sie eine Straße oder ein Auto nicht für Kriminelle zur Verantwortung ziehen können, die diese benutzen).
 
@@ -204,7 +204,7 @@ In diesem Abschnitt werden die wichtigsten Beziehungen beschrieben, die sich auf
     Entwickler verwenden Clouddienste zunehmend auch für Folgendes:
 
     - Ausführen von Code, anstatt Apps auf virtuellen Computern (VMs) und Servern zu hosten.
-    - Bereitstellen von Anwendungsfunktionen, anstatt eigene Komponenten zu entwickeln. Dies hat zu einem _serverlosen_ Modell geführt, das bestehende Clouddienste für allgemeine Funktionen nutzt. Die Anzahl und Vielfalt der Clouddienste (und ihr Innovationstempo) hat auch die Fähigkeit der Sicherheitsteams übertroffen, die Verwendung dieser Dienste auszuwerten und zu genehmigen, sodass sie vor der Wahl stehen, den Entwicklern die Nutzung eines beliebigen Dienstes zu gestatten, zu versuchen, die Entwicklungsteams daran zu hindern, nicht genehmigte Dienste zu verwenden, oder einen besseren Weg zu finden.
+    - Bereitstellen von Anwendungsfunktionen, anstatt eigene Komponenten zu entwickeln. Dies hat zu einem *serverlosen* Modell geführt, das bestehende Clouddienste für allgemeine Funktionen nutzt. Die Anzahl und Vielfalt der Clouddienste (und ihr Innovationstempo) hat auch die Fähigkeit der Sicherheitsteams übertroffen, die Verwendung dieser Dienste auszuwerten und zu genehmigen, sodass sie vor der Wahl stehen, den Entwicklern die Nutzung eines beliebigen Dienstes zu gestatten, zu versuchen, die Entwicklungsteams daran zu hindern, nicht genehmigte Dienste zu verwenden, oder einen besseren Weg zu finden.
     - **Apps ohne Code und Power Apps:** Ein weiterer sich abzeichnender Trend ist der Einsatz von Technologien ohne Code wie Microsoft Power Apps. Diese Technologie ermöglicht es Personen ohne Programmierkenntnisse, Anwendungen zu erstellen, die Geschäftsergebnisse erzielen. Aufgrund dieser geringen Spannung und des hohen Wertpotenzials hat dieser Trend das Potenzial, schnell an Popularität zu gewinnen, und Sicherheitsexperten wären gut beraten, seine Auswirkungen schnell zu verstehen. Die Sicherheitsbemühungen sollten sich auf die Bereiche konzentrieren, in denen eine Person bei der Anwendung einen Fehler machen könnte, d. h. auf den Entwurf der Anwendungs- und Objektberechtigungen über die Bedrohungsmodellierung der Anwendungskomponenten, Interaktionen/Beziehungen und Rollenberechtigungen.
 
 - **Zwischen Entwicklern und Autoren von Open Source-Komponenten:** Die Entwickler steigern auch die Effizienz, indem sie Open Source-Komponenten und -Bibliotheken verwenden, anstatt eigene Komponenten zu entwickeln. Dies bringt einen Mehrwert durch Effizienz, führt aber auch zu Sicherheitsrisiken, indem es eine externe Abhängigkeit schafft und die Anforderung stellt, diese Komponenten ordnungsgemäß zu warten und zu patchen. Die Entwickler gehen effektiv das Risiko von Sicherheits- und anderen Fehlern ein, wenn sie diese Komponenten verwenden, und müssen sicherstellen, dass es einen Plan gibt, der diese Fehler auf demselben Niveau mindert wie Code, den sie entwickeln würden.

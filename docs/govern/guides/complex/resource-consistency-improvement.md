@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: b5bb646fd658f3b0c4393b0f68c5d449ee53db08
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 894485d38dc14d6619375c12a5154021f14f50f9
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83219970"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88880678"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-resource-consistency-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Ressourcenkonsistenz“
 
@@ -76,7 +76,7 @@ Die folgenden Änderungen an der Richtlinie verringern die neuen Risiken und ver
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>Inkrementelle Verbesserungen der bewährten Methoden
 
-In diesem Abschnitt des Artikels wird der Governance-MVP-Entwurf so verbessert, dass er neue Azure-Richtlinien und eine Implementierung von Azure Cost Management umfasst. Zusammen erfüllen diese beiden Entwurfsänderungen die neuen Richtlinienanweisungen des Unternehmens.
+In diesem Abschnitt des Artikels wird der Governance-MVP-Entwurf so verbessert, dass er neue Azure-Richtlinien und eine Implementierung von Azure Cost Management und Abrechnung umfasst. Zusammen erfüllen diese beiden Entwurfsänderungen die neuen Richtlinienanweisungen des Unternehmens.
 
 Nach den Erfahrungen mit diesem fiktiven Beispiel wird davon ausgegangen, dass die Änderungen der geschützten Daten bereits erfolgt sind. Aufbauend auf diesen bewährten Verfahren, werden in der Folge Anforderungen an die Betriebsüberwachung hinzugefügt, mit denen ein Abonnement für geschäftskritische Anwendungen vorbereitet wird.
 

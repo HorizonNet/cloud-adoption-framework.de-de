@@ -7,14 +7,14 @@ ms.date: 03/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 8da625c6805c31dc2c07c2d31815851ca7e8b3a7
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: ea215de1bb9c41536c5bf666d20b6f1b41bb5871
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572288"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882854"
 ---
-<!-- cSpell:ignore asabbour sabbour autoscaler Istio Linkerd -->
+<!-- cSpell:ignore autoscaler Istio Linkerd -->
 
 # <a name="application-development-and-deployment"></a>Anwendungsentwicklung und Bereitstellung
 
@@ -30,7 +30,7 @@ Die unten angegebene Checkliste und die Ressourcen dienen Ihnen beim Einstieg al
 > - Wie strukturieren Sie den Projektordner, um die Kubernetes-Anwendungsentwicklung zu unterstützen?
 > - Haben Sie für Ihre Anwendung den Status, die Konfiguration und die Speicheranforderungen ermittelt?
 
-<!-- docsTest:ignore "AAD Pod Identity -->
+<!-- docsTest:casing "AAD Pod Identity -->
 
 > [!div class="tdCol2BreakAll"]
 >
@@ -74,12 +74,12 @@ Nachdem sich die Anwendung nun in der Produktion befindet, stellt sich die folge
 > - Werden von Ihrer Anwendung übergreifende Anwendungsaspekte abstrahiert?
 > - Können Sie die System- und Anwendungszuverlässigkeit aufrechterhalten, während neue Features und Versionen durchlaufen werden?
 
-<!-- docsTest:ignore Consul -->
+<!-- docsTest:casing Consul -->
 
 > [!div class="tdCol2BreakAll"]
 >
 > | Checkliste  | Ressourcen                                                                                                     |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
 > | **Bereitstellen eines API-Gateways:** Ein API-Gateway dient als Einstiegspunkt für die Microservices, entkoppelt Clients von Ihren Microservices, fügt eine zusätzliche Sicherheitsebene hinzu und verringert die Komplexität Ihrer Microservices, da die Behandlung von bereichsübergreifenden Problemen entfällt.     | [Verwenden von API Management mit in Azure Kubernetes Service bereitgestellten Microservices](/azure/api-management/api-management-kubernetes) |
-> | **Bereitstellen eines Dienstnetzes:** Ein Dienstnetz verfügt für Ihre Workloads über Funktionen für die Bereiche Datenverkehrsverwaltung, Resilienz, Richtlinie, Sicherheit, sichere Identität und Einblick. Ihre Anwendung ist von diesen betriebsbezogenen Funktionen abgekoppelt, und sie werden vom Dienstnetz von der Anwendungsschicht herunter auf die Infrastrukturebene verschoben.     | [Funktionsweise&nbsp;von&nbsp;Dienstnetzen&nbsp;in&nbsp;Kubernetes&nbsp;(Video)&nbsp;](https://www.youtube.com/watch?v=izVWk7rYqWI&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=15&t=0s) <br> [Informationen zu Dienstnetzen](/azure/aks/servicemesh-about) <br> [Istio](/azure/aks/servicemesh-istio-about) <br> [Linkerd](/azure/aks/servicemesh-linkerd-about) <br> [Consul](/azure/aks/servicemesh-consul-about) |
+> | **Bereitstellen eines Dienstnetzes:** Ein Dienstnetz verfügt für Ihre Workloads über Funktionen für die Bereiche Datenverkehrsverwaltung, Resilienz, Richtlinie, Sicherheit, sichere Identität und Einblick. Ihre Anwendung ist von diesen betriebsbezogenen Funktionen abgekoppelt, und sie werden vom Dienstnetz von der Anwendungsschicht herunter auf die Infrastrukturebene verschoben. | [Funktionsweise&nbsp;von&nbsp;Dienstnetzen&nbsp;in&nbsp;Kubernetes&nbsp;(Video)&nbsp;](https://www.youtube.com/watch?v=izVWk7rYqWI&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=15&t=0s) <br> [Informationen zu Dienstnetzen](/azure/aks/servicemesh-about) <br> [Istio](/azure/aks/servicemesh-istio-about) <br> [Linkerd](/azure/aks/servicemesh-linkerd-about) <br> [Consul](/azure/aks/servicemesh-consul-about) |
 > | **Implementieren von Methoden für Websitezuverlässigkeits-Engineering (Site Reliability Engineering):** Websitezuverlässigkeits-Engineering (Site Reliability Engineering, SRE) ist ein bewährter Ansatz zur Aufrechterhaltung der entscheidenden Zuverlässigkeit von Systemen und Anwendungen, während gleichzeitig mit der vom Marketplace geforderten Geschwindigkeit Schritt gehalten wird.   | [Einführung in Site Reliability Engineering (SRE)](/learn/modules/intro-to-site-reliability-engineering) <br> [DevOps bei Microsoft: SRE für Game-Streaming](https://azure.microsoft.com/resources/devops-at-microsoft-game-streaming-sre) |

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 45ebaec6b6d0abe665fc4a038892b7f1c3a053ff
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: de3a0ef01cf3e0144a348318cbf562c60149cebb
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574600"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884843"
 ---
 # <a name="build-technical-skills"></a>Erwerben von technischen Kompetenzen
 
@@ -21,7 +21,7 @@ Die organisatorische und Umgebungsbereitschaft (technisch) können möglicherwei
 
 ## <a name="organizational-readiness-learning-paths"></a>Lernpfade für die organisatorische Bereitschaft
 
-Abhängig von den Motivationen und Geschäftsergebnissen, die mit einer Cloudeinführung verbunden sind, kann es notwendig sein, dass Führungskräfte neue Organisationsstrukturen oder virtuelle Teams (v-Teams) aufbauen, um verschiedene Funktionen zu ermöglichen. Die folgenden Artikel helfen Ihrem Unternehmen bei der Entwicklung der notwendigen Qualifikationen, um diese Teams so zu strukturieren, dass Sie die gewünschten Ergebnisse erzielen:
+Abhängig von den Motivationen und Geschäftsergebnissen, die mit einer Cloudeinführung verbunden sind, kann es notwendig sein, dass Führungskräfte neue Organisationsstrukturen oder virtuelle Teams aufbauen, um verschiedene Funktionen zu ermöglichen. Die folgenden Artikel helfen Ihrem Unternehmen bei der Entwicklung der notwendigen Qualifikationen, um diese Teams so zu strukturieren, dass Sie die gewünschten Ergebnisse erzielen:
 
 - [Ausrichten Ihrer Organisation](../get-started/org-alignment.md): Entdecken Sie Ansätze zur Einrichtung der geeigneten Organisationsstrukturen.
 - [Übungen zur Organisationsausrichtung](./index.md): Erhalten Sie eine Übersicht über die Ausrichtung und Teamstrukturen, die Ihnen helfen, bestimmte Ziele zu erreichen.

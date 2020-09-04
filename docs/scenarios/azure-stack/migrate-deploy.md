@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 86c1d4b7eaea3c7de15dfd4417a6bcc21d956ea8
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 9b1cf8600bd0160f02de9bfd4532c189008b5322
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569636"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885438"
 ---
 # <a name="deploy-workloads-to-azure-stack-hub"></a>Bereitstellen von Workloads in Azure Stack Hub
 
@@ -37,8 +37,6 @@ Wenn die Cloud in Ihrem Rechenzentrum ausgeführt wird, müssen Ihre Stack Hub-
 ## <a name="deploy-workloads"></a>Bereitstellen von Workloads
 
 Nachdem der Azure Stack Hub-Administrator die Stack-Instanz korrekt konfiguriert hat, können Migrationen wie bei den meisten anderen Azure-Migrationsprozessen fortgesetzt werden. Durch die Verwendung von Azure Stack kann Ihr Team eine der folgenden Arten der Migration durchführen:
-
-<!-- cSpell:ignore howto -->
 
 - [Ethereum-Blockchain-Netzwerk](/azure-stack/user/azure-stack-ethereum?view=azs-2002)
 - [AKS-Engine](/azure-stack/user/azure-stack-kubernetes-aks-engine-overview?view=azs-2002)

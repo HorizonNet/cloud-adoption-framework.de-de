@@ -1,6 +1,6 @@
 ---
 title: Beweggründe und Geschäftsrisiken in der Disziplin „Beschleunigung der Bereitstellung“
-description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um sich über Geschäftsrisiken der Disziplin „Beschleunigung der Bereitstellung“ zu informieren, die in der Governancestrategie verwendet werden kann.
+description: Verwenden Sie das Cloud Adoption Framework für Azure, um sich über Geschäftsrisiken der Disziplin „Beschleunigung der Bereitstellung“ zu informieren, die in der Governancestrategie verwendet werden kann.
 author: alexbuckgit
 ms.author: abuck
 ms.date: 09/17/2019
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d1f9ea9498cd47702b2c3bc359a54100f1b7c74c
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: f71def92ecf52e8dd2725ba4a89a68c5cfdf15d9
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786431"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88883619"
 ---
 # <a name="motivations-and-business-risks-in-the-deployment-acceleration-discipline"></a>Beweggründe und Geschäftsrisiken in der Disziplin „Beschleunigung der Bereitstellung“
 

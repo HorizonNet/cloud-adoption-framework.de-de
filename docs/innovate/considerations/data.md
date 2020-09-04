@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 65290eba15bcb3a957fc4339247051c89e39c590
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 5f94aed91d62007ce5b9a9555902c8e2d3c8c481
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572407"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88878281"
 ---
 # <a name="democratize-data-with-digital-invention"></a>Demokratisieren von Daten mit digitalen Innovationen
 
@@ -67,7 +67,7 @@ Die Referenzarchitekturen für [OLAP](/azure/architecture/data-guide/relational-
 
 ### <a name="collect-data"></a>Sammeln von Daten
 
-Wenn Daten zentralisiert werden müssen, um einer Kundenanforderung gerecht zu werden, müssen die Daten sehr wahrscheinlich auch aus verschiedenen Quellen gesammelt und in den zentralisierten Datenspeicher verschoben werden. Es gibt zwei primäre Formen der Datensammlung: _Integration_ und _Erfassung_.
+Wenn Daten zentralisiert werden müssen, um einer Kundenanforderung gerecht zu werden, müssen die Daten sehr wahrscheinlich auch aus verschiedenen Quellen gesammelt und in den zentralisierten Datenspeicher verschoben werden. Es gibt zwei primäre Formen der Datensammlung: *Integration* und *Erfassung*.
 
 **Integration:** Daten, die sich in einem vorhandenen Datenspeicher befinden, können mithilfe herkömmlicher Datenverschiebungstechniken in den zentralisierten Datenspeicher integriert werden. Dies gilt insbesondere für Szenarien, in denen die Multicloud-Datenspeicherung eine Rolle spielt. Zu diesen Techniken gehört das Extrahieren der Daten aus dem vorhandenen Datenspeicher und das anschließende Laden in den zentralen Datenspeicher. An einem bestimmten Punkt in diesem Prozess werden die Daten typischerweise transformiert, sodass sie im zentralen Speicher besser verwendbar und relevant sind.
 

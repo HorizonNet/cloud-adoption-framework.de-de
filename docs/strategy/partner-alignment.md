@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 42e57362a0b4f6dff45995b81352baab5ef358a0
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 50434a66069543a02151ada0d7646c1e57c52e6f
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662352"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885795"
 ---
 <!-- cSpell:ignore MSPs -->
 
@@ -46,6 +46,7 @@ Während des gesamten Lebenszyklus der Cloudeinführung benötigen die verschied
 - **Verwalten:** Unterstützung oder laufende verwaltete Dienste zum Betrieb der Cloudplattform und der in der Cloud gehosteten Workloads.
 
 Nur wenige Unternehmen verfügen über die Vielfalt an Qualifikationen, die zur Unterstützung von Strategie, Planung, Bereitschaft, Einführung, Governance und Verwaltung erforderlich sind. Häufig sind Partner und andere Unterstützungsmodelle erforderlich, um die Lücken in den Qualifikationen und Verantwortlichkeiten des Teams zu füllen.
+
 Verschiedene Partnerschaftsoptionen können dazu beitragen, die erforderlichen Qualifikationen zu entwickeln, den Personalbedarf zu erhöhen oder bestimmte Prozesse vollständig auszulagern.
 
 ## <a name="partnership-options"></a>Partnerschaftsoptionen
@@ -77,6 +78,7 @@ Bei einem typischen FastTrack for Azure-Einsatz hilft Microsoft dabei, die gesch
 ### <a name="azure-migration-program-amp"></a>Azure-Migrationsprogramm (AMP)
 
 Das [Azure-Migrationsprogramm (AMP)](https://azure.microsoft.com/migration/migration-program) bietet eine Mischung aus dem Erwerben technischer Qualifikationen, aus Schritt-für-Schritt-Anleitungen, kostenlosen Migrationstools und potenziellen Angeboten zur Senkung der Migrationskosten.
+
 Das Programm nutzt FastTrack for Azure und Azure-Lösungsanbieter, um den Kundenerfolg während der Migration zu verbessern.
 
 Sehen Sie sich dieses kurze Video an, um eine Übersicht darüber zu erhalten, wie das Azure-Migrationsprogramm Ihnen helfen kann.
@@ -94,6 +96,7 @@ Wenn Sie weitere Fragen haben oder Hilfe benötigen, [erstellen Sie eine Support
 ## <a name="shortlist-of-partner-options"></a>Auswahlliste von Partneroptionen
 
 Während der Strategieentwicklung ist es schwierig, bestimmte Anforderungen an die Partnerschaft zu definieren. Während der Entwicklung des Cloudeinführungsplans und des Qualifizierungsplans werden diese Anforderungen im Mittelpunkt stehen.
+
 Aber je nach Kultur und Reife Ihres Teams kann es möglich sein, sich für eine Partnerschaftsoption zu entscheiden, die besser auf Ihre erwarteten Anforderungen abgestimmt ist.
 
 Wählen Sie mindestens eine der oben genannten Partnerschaftsoptionen aus, um die zuerst zu untersuchenden Optionen einzugrenzen.
@@ -101,7 +104,9 @@ Wählen Sie mindestens eine der oben genannten Partnerschaftsoptionen aus, um di
 ## <a name="begin-contract-and-paperwork-reviews"></a>Beginnen mit der Überprüfung von Verträgen und Unterlagen
 
 Wenn die Auswahlliste der Optionen überprüft wird, wird es wahrscheinlich einen oder mehrere Partner geben, die sich abheben. Wenn es unter den Partnern einen klaren Spitzenreiter gibt, beginnen Sie den Prozess zur Überprüfung von Verträgen und Unterlagen mit dem Partner.
+
 Der Vertragsprozess kann einige Zeit in Anspruch nehmen. Die Überprüfung der rechtlichen Bestimmungen im Vorfeld kann ein Hindernis für ein Engagement beseitigen, wenn Ihre Teams am meisten Hilfe benötigen.
+
 Dies gilt insbesondere dann, wenn Ihr Unternehmen verlangt, dass Anbieter in eine Liste genehmigter Anbieter aufgenommen werden.
 
 ## <a name="next-steps"></a>Nächste Schritte

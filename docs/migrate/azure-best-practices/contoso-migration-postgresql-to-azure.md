@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 4b3923936052cce1ae973f779bc53ac35a1ba0c1
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 35fdbcf69fc4e86f4f785bd871082b974b1f6203
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567290"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882140"
 ---
-<!-- cSpell:ignore BYOK postgres psql dvdrental -->
+<!-- cSpell:ignore BYOK postgres psql dvdrental vpngateways -->
 
 # <a name="migrate-postgresql-databases-to-microsoft-azure"></a>Migrieren von PostgreSQL-Datenbanken zu Microsoft Azure
 
@@ -130,12 +130,10 @@ Contoso hat sich für die Verwendung von Azure Database Migration Service entsch
 
 Zur Vorbereitung wird ein virtuelles Netzwerk eingerichtet, um auf die Datenbank zuzugreifen. Zum Erstellen einer virtuellen Netzwerkverbindung mit [VPN-Gateways](/azure/vpn-gateway/vpn-gateway-about-vpngateways) stehen mehrere Methoden zur Auswahl.
 
-<!-- docsTest:ignore "Azure Database Migration Services" -->
-
 ### <a name="create-an-azure-database-migration-service-instance"></a>Erstellen einer Instanz von Azure Database Migration Service
 
 1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Ressource erstellen** aus.
-1. Suchen Sie nach **Azure Database Migration Service**, und wählen Sie den Eintrag aus.
+1. Suchen Sie nach **Azure Database Migration Services**, und wählen Sie den Eintrag aus.
 1. Wählen Sie **+ Hinzufügen**.
 1. Wählen Sie das Abonnement und die Ressourcengruppe für den Dienst aus.
 1. Geben Sie einen Namen für die Instanz ein.

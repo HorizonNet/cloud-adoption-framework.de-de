@@ -7,19 +7,25 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 619dd5197bcea95d83b27c166e0f4238abd1a988
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: e9106a89d19d06bc8c1c14290c65d9ed2387e097
+ms.sourcegitcommit: af521583b98153f7157895b7ba9de71183d437b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573937"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89176496"
 ---
 # <a name="get-started-understand-and-document-foundational-alignment-decisions"></a>Erste Schritte: Verstehen und Dokumentieren grundlegender Ausrichtungsentscheidungen
 
-Die Umstellung auf die Cloud kann eine Vielzahl von geschäftlichen, technischen und organisatorischen Vorteilen ermöglichen. Unabhängig davon, was Sie erreichen möchten, gibt es bei Ihrem Umstieg auf die Cloud einige anfängliche Entscheidungen, die von jedem beteiligten Team verstanden werden sollten. Wenn Sie diesen Leitfaden durcharbeiten, zeichnen Sie diese Entscheidungen mithilfe der [Vorlage für anfängliche Entscheidungen](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/references/initial-decisions-checklist.docx) auf. Mithilfe der Vorlage können Sie das Onboarding von Teammitgliedern, die am Cloudeinführungs-Lebenszyklus teilnehmen, schnell durchführen.
+Die Umstellung auf die Cloud kann eine Vielzahl von geschäftlichen, technischen und organisatorischen Vorteilen ermöglichen. Unabhängig davon, was Sie erreichen möchten, gibt es bei Ihrem Umstieg auf die Cloud einige anfängliche Entscheidungen, die von jedem beteiligten Team verstanden werden sollten. 
 
 > [!NOTE]
 > Wenn Sie einen der folgenden Links auswählen, gelangen Sie zum Inhaltsverzeichnis des Microsoft Cloud Adoption Frameworks für Azure und können nach grundlegenden Konzepten suchen, die Sie später verwenden, um dem Team bei der Implementierung der zugehörigen Anleitung zu helfen. Versehen Sie diese Seite mit einem Lesezeichen, um häufig zu dieser Checkliste zurückzukehren.
+
+## <a name="before-your-begin"></a>Vorbereitungen
+
+Wenn Sie diesen Leitfaden durcharbeiten, zeichnen Sie unsere grundlegenden Entscheidungen mithilfe der [Vorlage für anfängliche Entscheidungen](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/references/initial-decisions-checklist.docx) auf. Die Vorlage kann Ihnen schnell helfen, das Onboarding für Teammitglieder durchzuführen, die am Lebenszyklus der Cloudeinführung teilnehmen, indem sie verdeutlicht, wie und warum Ihre Cloudumgebung konfiguriert ist.
+
+Wenn Sie bereits eine Umgebung in Azure verwenden, kann der [CAF Governance Vizualizer](https://github.com/microsoft/CloudAdoptionFramework/tree/master/govern/AzureGovernanceVisualizer) Ihnen helfen, Ihre Dokumentation zu beschleunigen. Erhalten Sie Erkenntnisse über Richtlinien, RBAC, Blaupausen, Abonnements und mehr. Aus den gesammelten Daten bietet das Tool Transparenz für Ihre Hierarchiezuordnung, erstellt eine Mandantenübersicht und differenzierte Erkenntnisse zum Umfang von Verwaltungsgruppen und Abonnements. Das Tool ist im begleitenden Quellcoderepository des Cloud Adoption Framework zu finden: https://github.com/microsoft/CloudAdoptionFramework/tree/master/govern/AzureGovernanceVisualizer. 
 
 ## <a name="step-1-understand-how-azure-works"></a>Schritt 1: Wie funktioniert Azure?
 
@@ -52,7 +58,6 @@ Unabhängig vom ausgewählten Cloudanbieter beginnen alle Cloudhosting- und Umge
 - Der [Cloudeinführungsplan](../plan/plan-intro.md) bietet ein Backlog der Workloads und Ressourcen, die für die Übernahme in die Cloud vorgesehen sind.
 - Bei der [Analyse des digitalen Bestands](../digital-estate/approach.md) handelt es sich um einen Ansatz zum Dokumentieren vorhandener Workloads und Ressourcen, die für die Übernahme in die Cloud vorgesehen sind. In Azure wird der digitale Bestand am besten in einem Tool namens [Azure Migrate](/azure/migrate/migrate-support-matrix) dargestellt.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -71,7 +76,6 @@ Das Hosten von Ressourcen und Workload in der Cloud kann einfach sein und aus ei
 
 - Verstehen der Ebenen der [Portfoliohierarchie](../reference/fundamental-concepts/hosting-hierarchy.md), um grundlegende Begriffe abzugleichen.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -93,7 +97,6 @@ Alle vorhandenen Workloads und Ressourcen müssen ordnungsgemäß benannt und in
 - [Überprüfen und aktualisieren Sie vorhandene Tags in Azure](/azure/azure-resource-manager/management/tag-resources).
 - [Erzwingen von Markierungsrichtlinien in Azure](/azure/azure-resource-manager/management/tag-policies).
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -120,7 +123,6 @@ Erstellen einer Abonnementstrategie:
 - Richten Sie [klare Grenzen basierend auf der Portfoliohierarchie](../reference/fundamental-concepts/hierarchy-azure-tools.md#organizing-the-hierarchy-in-azure) ein.
 - [Verschieben Sie bei Bedarf Ressourcengruppen und Ressourcen zwischen Abonnements](/azure/azure-resource-manager/management/move-resource-group-and-subscription), um die Organisationsstrategie einzuhalten.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -135,14 +137,11 @@ Die Komplexität der Portfoliohierarchie hilft Ihnen, Organisationsstrukturen un
 
 - Befolgen der Leitfäden für erste Schritte für die Organisationsausrichtung basierend auf diesen Konzepten.
 
-<!-- docsTest:ignore "Get started: Align your organization" -->
-
 **Hinweis zur Erreichung der Ziele:**
 
 - Verwenden Sie die vorherigen Schritte als Leitfaden, um die [Anleitungen zur Verantwortlichkeit der Portfoliohierarchie](../reference/fundamental-concepts/hosting-hierarchy.md#hierarchy-accountability-and-guidance) auszuwerten. Ermitteln Sie, welche Funktionen möglicherweise von dedizierten Organisationen oder virtuellen Teams bereitgestellt werden müssen.
 - Verwenden Sie [Erste Schritte: Ausrichten Ihrer Organisation](./org-alignment.md), um die Anleitungen zur Verantwortlichkeit der Portfoliohierarchie auf das RACI-Diagramm (Responsible, Accountable, Consulted und Informed) anzuwenden.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |

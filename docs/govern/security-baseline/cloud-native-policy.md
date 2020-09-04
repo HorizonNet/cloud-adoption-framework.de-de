@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5b8459378a4e435bc88b5f7623d08f3f61f52f5c
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 9789d598d32647fc772cb0dadf0ed50e12bbfec6
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88195295"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879080"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Richtlinie zur cloudnativen Sicherheitsbaseline
 
@@ -71,7 +71,7 @@ Diese Funktionen sind in Azure integriert, sie erfordern jedoch jeweils Konfigur
 
 ### <a name="security-monitoring"></a>Sicherheitsüberwachung
 
-Die Sicherheitsüberwachung ist eine proaktive Strategie, bei der Ihre Ressourcen überwacht werden, um Systeme zu erkennen, die nicht den Unternehmensstandards oder bewährten Methoden entsprechen. Azure Security Center bietet eine einheitliche Sicherheitsbaseline und erweiterten Schutz vor Bedrohungen für Hybrid Cloud-Workloads. Mit Security Center können Sie Sicherheitsrichtlinien für Ihre Workloads anwenden, die Angriffsfläche für Bedrohungen verringern sowie Angriffe erkennen und darauf reagieren, beispielsweise:
+Die Sicherheitsüberwachung ist eine proaktive Strategie, bei der Ihre Ressourcen überwacht werden, um Systeme zu erkennen, die nicht den Unternehmensstandards oder bewährten Methoden entsprechen. Azure Security Center bietet eine einheitliche Sicherheitsbaseline und Azure Advanced Threat Protection für Hybrid Cloud-Workloads. Mit Security Center können Sie Sicherheitsrichtlinien für Ihre Workloads anwenden, die Angriffsfläche für Bedrohungen verringern sowie Angriffe erkennen und darauf reagieren, beispielsweise:
 
 - Einheitliche Übersicht über die Sicherheit all Ihrer lokalen und cloudbasierten Workloads mit Azure Security Center.
 - Kontinuierliche Überwachung und Sicherheitsbewertungen zum Sicherstellen der Konformität und zur Behebung aller Sicherheitsrisiken.
@@ -82,6 +82,7 @@ Die Sicherheitsüberwachung ist eine proaktive Strategie, bei der Ihre Ressource
 ### <a name="extend-cloud-native-policies"></a>Erweitern cloudnativer Richtlinien
 
 Durch die Verwendung der Cloud lassen sich einige Sicherheitsbürden verringern. Microsoft bietet physische Sicherheit für Azure-Rechenzentren und trägt zum Schutz der Cloudplattform vor Bedrohungen der Infrastruktur wie z.B. einem DDoS-Angriff bei. Da Microsoft über Tausende von Cybersicherheitsspezialisten verfügt, die sich täglich mit Sicherheitsbelangen beschäftigen, sind die Ressourcen zur Erkennung, Verhinderung oder Minderung von Cyberangriffen beträchtlich. Während sich Unternehmen früher Gedanken darüber machten, ob die Cloud sicher ist, verstehen die meisten jetzt, dass das Ausmaß der Investitionen in Mitarbeiter und spezialisierte Infrastrukturen von Anbietern wie Microsoft die Cloud sicherer macht als die meisten lokalen Rechenzentren.
+
 Durch die Verwendung der Cloud lassen sich einige Sicherheitsbürden verringern. Microsoft bietet physische Sicherheit für Azure-Rechenzentren und trägt zum Schutz der Cloudplattform vor Bedrohungen der Infrastruktur wie z.B. einem DDoS-Angriff bei. Da Microsoft über Tausende von Cybersicherheitsspezialisten verfügt, die sich täglich mit Sicherheitsbelangen beschäftigen, sind die Ressourcen zur Erkennung, Verhinderung oder Minderung von Cyberangriffen beträchtlich. Während sich Unternehmen früher Gedanken darüber machten, ob die Cloud sicher ist, verstehen die meisten jetzt, dass das Ausmaß der Investitionen in Mitarbeiter und spezialisierte Infrastrukturen von Anbietern wie Microsoft die Cloud sicherer macht als die meisten lokalen Rechenzentren.
 
 Selbst bei dieser Investition in die cloudnative Sicherheitsbaseline empfiehlt es sich, die cloudnativen Standardrichtlinien um eine Richtlinie der Sicherheitsbaseline zu erweitern. Es folgen Beispiele für erweiterte Richtlinien, die auch in einer cloudnativen Umgebung berücksichtigt werden sollten:

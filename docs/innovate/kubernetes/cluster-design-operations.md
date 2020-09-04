@@ -7,14 +7,14 @@ ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: d7351fc55f91645c79dd50e803ef8ca940beaa7c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 1b11a4f0cdc50fe97a44b2dce707f055293332db
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572237"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882599"
 ---
-<!-- cSpell:ignore asabbour sabbour autoscaler PDBs -->
+<!-- cSpell:ignore autoscaler PDBs -->
 
 # <a name="cluster-design-and-operations"></a>Clusterentwurf und Vorgänge
 
@@ -23,8 +23,6 @@ Identifizieren Sie Clusterkonfiguration und Netzwerkdesign. Gewährleisten Sie z
 ## <a name="plan-train-and-proof"></a>Planen, Trainieren und Prüfen
 
 Die unten angegebene Checkliste und die Ressourcen dienen Ihnen beim Einstieg als Hilfe zur Planung des Clusterentwurfs. Sie sollten diese Fragen beantworten können:
-
-<!-- markdownlint-disable MD033 -->
 
 > [!div class="checklist"]
 >

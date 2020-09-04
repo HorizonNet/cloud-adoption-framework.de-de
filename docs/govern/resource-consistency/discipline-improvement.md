@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3627dda9bbefbd969c7323fc4708eee509902d2c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 21f760fb9550f540b4b88f2f7ec098be7cf4307e
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573240"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879401"
 ---
 # <a name="resource-consistency-discipline-improvement"></a>Verbesserung der Disziplin „Ressourcenkonsistenz“
 
@@ -23,7 +23,7 @@ Dieser Artikel beschreibt einige potenzielle Aufgaben, die Ihr Unternehmen ausf�
 
 ![Vier Phasen der Einführung](../../_images/govern/adoption-phases.png)
 
-_Abbildung 1: Einführungsphasen des inkrementellen Ansatzes für die Cloudgovernance._
+*Abbildung 1: Einführungsphasen des inkrementellen Ansatzes für die Cloudgovernance.*
 
 Es ist unmöglich, die Anforderungen aller Unternehmen in einem einzigen Dokument zu berücksichtigen. Daher werden in diesem Artikel die empfohlenen mindestens auszuführenden Aktivitäten sowie Beispiele für potenzielle Aktivitäten für jede Phase des Weiterentwicklungsprozesses für die Governance beschrieben. Ziel dieser Aktivitäten ist es, Sie beim Aufbau eines [Richtlinien-MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) und bei der Einrichtung eines Frameworks für die inkrementelle Verbesserung der Richtlinie zu unterstützen. Ihr Cloudgovernanceteam muss entscheiden, wie viel in diese Aktivitäten investiert werden soll, um Ihre Disziplin „Ressourcenkonsistenz“ zu verbessern.
 
@@ -122,7 +122,7 @@ Nachdem die Transformation abgeschlossen ist, müssen Governance und Betrieb wä
 - Unterstützen Sie die für die Cloudeinführung und Cloudstrategie zuständigen Teams, indem Sie diese Anomalien ermitteln und beseitigen.
 - Bestimmen Sie, ob Änderungen an Ihrer Disziplin „Ressourcenkonsistenz“ für Abrechnung und SLAs erforderlich sind.
 - Werten Sie Protokollierungs- und Überwachungstools aus, um festzustellen, ob Ihre lokale, Cloudgateway- oder Hybridlösung angepasst werden muss.
-- Bestimmen Sie für Geschäftseinheiten und geografisch verteilte Gruppen, ob Ihre Organisation weitere Cloudverwaltungsfunktionen (z.B. [Azure-Verwaltungsgruppen](/azure/governance/management-groups)) erwägen sollte, um besser die zentralisierte Richtlinie anzuwenden und SLA-Anforderungen zu erfüllen.
+- Bestimmen Sie für Geschäftseinheiten und geografisch verteilte Gruppen, ob Ihre Organisation weitere Cloudverwaltungsfunktionen (z. B. [Azure-Verwaltungsgruppen](/azure/governance/management-groups)) erwägen sollte, um besser die zentralisierte Richtlinie anzuwenden und SLA-Anforderungen zu erfüllen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

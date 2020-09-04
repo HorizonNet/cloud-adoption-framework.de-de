@@ -1,6 +1,6 @@
 ---
 title: Die fünf Disziplinen der Cloud-Governance
-description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um sich über Kostenverwaltung, Bereitstellungsbeschleunigung, Identitätsbaseline, Ressourcenkonsistenz und Sicherheitsbaseline zu informieren.
+description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um sich über die Disziplinen „Cost Management“, „Bereitstellungsbeschleunigung“, „Identitätsbaseline“, „Ressourcenkonsistenz“ und „Sicherheitsbaseline“ zu informieren.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,21 +8,20 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ed31972eef3f0f4311ac8c4c112f4d287ae060c9
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 15da317061924f0c631877a7a7a0430d8e336038
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573665"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88881130"
 ---
 # <a name="the-five-disciplines-of-cloud-governance"></a>Die fünf Disziplinen der Cloud-Governance
 
-<!-- docsTest:ignore "Disciplines of Cloud Governance" "Cost Management" "Deployment Acceleration" "Identity Baseline" "Resource Consistency" "Security Baseline" -->
-<!-- markdownlint-disable MD033 -->
+<!-- docutune:casing "Disciplines of Cloud Governance" "Cost Management" "Deployment Acceleration" "Identity Baseline" "Resource Consistency" "Security Baseline" -->
 
 |  |  |
 |--|--|
-| Jede Änderung von Geschäftsprozessen oder Technologieplattformen birgt Risiken. Cloudgovernanceteams, deren Mitglieder manchmal auch als Cloudverwalter bezeichnet werden, haben die Aufgabe, diese Risiken mit minimaler Unterbrechung der Einführungs- oder Innovationsanstrengungen zu minimieren. <br><br> Das Governancemodell des Cloud Adoption Frameworks steuert diese Entscheidungen (unabhängig von der ausgewählten Cloudplattform), indem es sich auf die [Entwicklung der Unternehmensrichtlinien](./corporate-policy.md) und die [fünf Disziplinen der Cloudgovernance](#disciplines-of-cloud-governance) konzentriert. [Umsetzbare Entwurfsleitfäden](./guides/index.md) zeigen dieses Modell mithilfe von Azure-Diensten. Im Folgenden werden die Disziplinen des Governancemodells im Framework für die Cloudeinführung erläutert. | <br><br> [![Abbildung des Governancemodells des Cloud Adoption Frameworks: Unternehmensrichtlinien und Governancedusziplinen](../_images/operational-transformation-govern-thumbnail.png)](../_images/operational-transformation-govern-large.png#lightbox) <br> _Abbildung 1: Visuelle Darstellung der Unternehmensrichtlinie und der fünf Disziplinen von Cloud Governance._ |
+| Jede Änderung von Geschäftsprozessen oder Technologieplattformen birgt Risiken. Cloudgovernanceteams, deren Mitglieder manchmal auch als Cloudverwalter bezeichnet werden, haben die Aufgabe, diese Risiken mit minimaler Unterbrechung der Einführungs- oder Innovationsanstrengungen zu minimieren. <br><br> Das Governancemodell des Cloud Adoption Frameworks steuert diese Entscheidungen (unabhängig von der ausgewählten Cloudplattform), indem es sich auf die [Entwicklung der Unternehmensrichtlinien](./corporate-policy.md) und die [fünf Disziplinen der Cloudgovernance](#disciplines-of-cloud-governance) konzentriert. [Umsetzbare Entwurfsleitfäden](./guides/index.md) zeigen dieses Modell mithilfe von Azure-Diensten. Im Folgenden werden die Disziplinen des Governancemodells im Framework für die Cloudeinführung erläutert. | <br><br> [![Abbildung des Governancemodells des Cloud Adoption Frameworks: Unternehmensrichtlinien und Governancedusziplinen](../_images/operational-transformation-govern-thumbnail.png)](../_images/operational-transformation-govern-large.png#lightbox) <br> *Abbildung 1: Visuelle Darstellung der Unternehmensrichtlinie und der fünf Disziplinen von Cloud Governance.* |
 
 ## <a name="disciplines-of-cloud-governance"></a>Disziplinen von Cloud Governance
 

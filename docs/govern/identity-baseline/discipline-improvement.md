@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 433c806c241b95600fcb840353c9c14e4d1aa8e1
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a2c9f0fe0376358aa8b56bccac1f5f671ded858d
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573444"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88880219"
 ---
-<!-- cSpell:ignore offboarding preintegration -->
-
 # <a name="identity-baseline-discipline-improvement"></a>Verbesserung der Disziplin „Identitätsbaseline“
 
 Die Disziplin „Identitätsbaseline“ konzentriert sich auf Möglichkeiten zur Erstellung von Richtlinien, die die Konsistenz und Kontinuität von Benutzeridentitäten gewährleisten, unabhängig davon, welcher Cloudanbieter die Anwendung oder Workload hostet. Innerhalb der fünf Disziplinen der Cloudgovernance umfasst die Disziplin „Identitätsbaseline“ Entscheidungen in Bezug auf die [Hybrididentitätsstrategie](../../decision-guides/identity/index.md), die Auswertung und Erweiterung von Identitätsrepositorys, die Implementierung des einmaligen Anmeldens (gleiche Anmeldung), die Überprüfung und die Überwachung im Hinblick auf unbefugte Nutzung oder böswillige Akteure. In einigen Fällen kann sie auch Entscheidungen in Bezug auf Modernisierung, Konsolidierung oder Integration mehrerer Identitätsanbieter beinhalten.
@@ -25,7 +23,7 @@ Dieser Artikel beschreibt einige potenzielle Aufgaben, die Ihr Unternehmen ausf�
 
 ![Vier Phasen der Einführung](../../_images/govern/adoption-phases.png)
 
-_Abbildung 1: Einführungsphasen des inkrementellen Ansatzes für die Cloudgovernance._
+*Abbildung 1: Einführungsphasen des inkrementellen Ansatzes für die Cloudgovernance.*
 
 Es ist unmöglich, die Anforderungen aller Unternehmen in einem einzigen Dokument zu berücksichtigen. Daher werden in diesem Artikel die empfohlenen mindestens auszuführenden Aktivitäten sowie Beispiele für potenzielle Aktivitäten für jede Phase des Weiterentwicklungsprozesses für die Governance beschrieben. Ziel dieser Aktivitäten ist es, Sie beim Aufbau eines [Richtlinien-MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) und bei der Einrichtung eines Frameworks für die inkrementelle Verbesserung der Richtlinie zu unterstützen. Ihr Cloudgovernanceteam muss entscheiden, wie viel in diese Aktivitäten investiert werden soll, um Ihre Disziplin „Identitätsbaseline“ zu verbessern.
 
@@ -63,7 +61,7 @@ Für die erfolgreiche Migration einer Umgebung muss eine Reihe von technischen u
 - Ziehen Sie die Einrichtung eines Early Adopter-Programms und die Einführung für eine begrenzte Anzahl von Benutzern in Betracht.
 - Setzen Sie die Schulung der Personen und Teams fort, die von den Architekturrichtlinien am meisten betroffen sind.
 
-<!-- docsTest:ignore "seamless SSO" -->
+<!-- docutune:casing "seamless SSO" -->
 
 **Potenzielle Aktivitäten:**
 

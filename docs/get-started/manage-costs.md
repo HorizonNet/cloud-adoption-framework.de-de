@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7957cfedee535739b8d785a374e5133827b08968
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: c6351e1e6de0db3247b584d914ea3b5c5e842e68
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569466"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884333"
 ---
 # <a name="get-started-manage-cloud-costs"></a>Erste Schritte: Verwalten von Cloudkosten
 
@@ -22,18 +22,16 @@ Die Kostenoptimierung in Unternehmen umfasst jedoch noch viele andere Rollen und
 
 Governance ist der Eckpfeiler der Kostenoptimierung innerhalb jedes großen Unternehmens. Im folgenden Abschnitt wird die Kostenoptimierungsanleitung im Kontext von Governance beschrieben. Die nachfolgenden Schritte unterstützen jedes Team bei den Aktionen, die sich auf ihre Rolle bei der Kostenoptimierung beziehen. Zusammen können Sie mit diesen Schritten Ihre gesamte Organisation bei der Umstellung auf eine Kostenoptimierung unterstützen.
 
-![Erste Schritte mit Kostenverwaltung im Unternehmen](../_images/get-started/cost-map.png)
+![Erste Schritte zur Kostenoptimierung](../_images/get-started/cost-map.png)
 
 ## <a name="step-1-optimize-enterprise-costs"></a>Schritt 1: Optimieren der Unternehmenskosten
 
 Das Cloudgovernanceteam ist gut darauf vorbereitet, überhöhte oder ungeplante Ausgaben durch eine Kombination aus Leistungsüberwachung, Reduzierung der Ressourcengröße und sichere Beendigung ungenutzter Ressourcen zu bewerten und dagegen vorzugehen. Kostenoptimierung in Unternehmen beginnt mit einem gemeinsamen Teamverständnis der Tools, Prozesse und Abhängigkeiten, die erforderlich sind, um auf Kostenbelange auf Umgebungsebene klug zu reagieren.
 
-<!-- docsTest:ignore "your cost management policies" -->
-
 **Zielvorgaben:**
 
-- Implementieren sinnvoller Änderungen in der Kostenverwaltung im gesamten Unternehmen.
-- Dokumentieren der Richtlinien, Prozesse und Entwurfsleitfäden für Kostenverwaltung in der [Vorlage für Cost Management](../govern/cost-management/template.md).
+- Implementieren Sie sinnvolle Änderungen an Ihren Cost Management-Richtlinien im gesamten Unternehmen.
+- Dokumentieren der Richtlinien, Prozesse und Entwurfsleitfäden für Cost Management in der [Vorlage für Cost Management](../govern/cost-management/template.md).
 
 Diese Zielvorgabe sind das Ergebnis von einigen wiederkehrenden Aufgaben:
 
@@ -48,20 +46,19 @@ Diese Zielvorgabe sind das Ergebnis von einigen wiederkehrenden Aufgaben:
 **Hinweis zur Erreichung der Ziele:**
 
 - Stellen Sie sicher, dass alle Workloads und Ressourcen die [richtigen Benennungs- und Kennzeichnungskonventionen](../ready/azure-best-practices/naming-and-tagging.md) befolgen. [Erzwingen Sie Kennzeichnungskonventionen mithilfe von Azure Policy](/azure/governance/policy/tutorials/govern-tags) mit einem speziellen Schwerpunkt auf Tags für „Kostenstelle“ und „technischer Besitzer“.
-- Überprüfen und wenden Sie regelmäßig [bewährte Methoden](../govern/cost-management/best-practices.md) an, um Analysen und Verbesserungen im gesamten Unternehmen zu steuern. Im Folgenden finden Sie einige der wirksamsten Governancepraktiken:
+- Überprüfen und wenden Sie regelmäßig [Best Practices für Cost Management](../govern/cost-management/best-practices.md) an, um Analysen und Verbesserungen im gesamten Unternehmen zu steuern. Zu den wichtigen Governancemethoden gehören:
 
-  - Arbeiten mit [allgemeinen bewährten Methoden für Kosten](../govern/cost-management/best-practices.md), um die Größe und die Kosten zu reduzieren und nicht verwendete Computer zu beenden.
+  - Arbeiten mit [allgemeinen Best Practices für Kosten](../govern/cost-management/best-practices.md), um die Größe und die Kosten zu reduzieren und nicht verwendete Computer zu beenden.
   - Anwenden von [Hybridnutzungsvorteilen](../govern/cost-management/best-practices.md#best-practice-take-advantage-of-azure-hybrid-benefit), um die Lizenzierungskosten zu reduzieren.
   - Ausrichten von [reservierten Instanzen](../govern/cost-management/best-practices.md#best-practice-use-azure-reserved-vm-instances), um Ressourcenkosten zu senken.
   - [Überwachen der Ressourcennutzung](../govern/cost-management/best-practices.md#best-practice-monitor-resource-utilization), um Auswirkungen auf die Ressourcenleistung zu minimieren.
   - [Verringern der Kosten, die sich nicht auf die Produktion beziehen](../govern/cost-management/best-practices.md#best-practice-reduce-nonproduction-costs) durch Richtlinien zum Steuern von Nicht-Produktionsumgebungen.
-  - Reagieren auf [Empfehlungen zur Kostenoptimierung](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json).
+  - Reagieren auf [Empfehlungen zur Kostenoptimierung](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json).
 
 - Kompromisse auf Workloadebene sind möglicherweise erforderlich, um wirksame Änderungen zur Kostenoptimierung umzusetzen. [Microsoft Azure Well-Architected Framework](/azure/architecture/framework/cost/tradeoffs) und [Microsoft Azure Well-Architected Review](/assessments/?id=azure-architecture-review) können diese Gespräche mit dem technischen Besitzer einer bestimmten Workload unterstützen.
 - Sollten Sie noch nicht mit Cloudgovernance vertraut sein, verwenden Sie die Governancemethodik, um [Governancerichtlinien, -prozesse und -disziplinen](../govern/index.md) einzurichten.
 - Falls Sie noch keine Erfahrung mit der Disziplin „Cost Management“ haben, befassen Sie sich ggf. mit dem [Artikel zur Verbesserung der Kostenverwaltung](../govern/guides/complex/cost-management-improvement.md) (insbesondere mit dem [Abschnitt zur Implementierung](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)).
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -79,15 +76,14 @@ Strategische Entscheidungen wirken sich direkt auf die Kostenkontrolle aus, durc
 **Ziele:**
 
 - Erfassen Sie Beweggründe, Ergebnisse und geschäftliche Begründungen in der [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx).
-- Erstellen des ersten Budgets mit Azure Cost Management.
+- Erstellen des ersten Budgets mit Azure Cost Management und Abrechnung.
 
 **Hinweis zur Erreichung der Ziele:**
 
-- [Verstehen der Motivationen](../strategy/motivations.md). Wichtige Geschäftsereignisse und einige Migrationsgründe sind tendenziell kostensensibel, was die Wichtigkeit der Kostenkontrolle für alle nachfolgenden Maßnahmen erhöht. Andere zukunftsgerichtete Motivationen, die mit Innovation oder Wachstum durch Migration zu tun haben, können sich ggf. mehr auf den Umsatz konzentrieren. Das Verstehen von Motivationen hilft Ihnen zu verstehen, wie hoch die Priorität der Kostenverwaltung sein sollte.
+- [Verstehen der Motivationen](../strategy/motivations.md). Wichtige Geschäftsereignisse und einige Migrationsgründe sind tendenziell kostensensibel, was die Wichtigkeit der Kostenkontrolle für alle nachfolgenden Maßnahmen erhöht. Andere zukunftsgerichtete Motivationen, die mit Innovation oder Wachstum durch Migration zu tun haben, können sich ggf. mehr auf den Umsatz konzentrieren. Das Verstehen der Motivationen wird Ihnen bei der Entscheidung helfen, wie hoch die Prioritäten für Ihre Kostenverwaltung zu setzen sind.
 - [Geschäftsergebnisse](../strategy/business-outcomes/index.md). Einige fiskalische Ergebnisse neigen dazu, extrem kostenempfindlich zu sein. Wenn sich die gewünschten Ergebnisse den fiskalischen Metriken zuordnen lassen, sollten Sie sehr frühzeitig in die Governancedisziplin „Cost Management“ investieren.
 - [Geschäftliche Begründung](../strategy/cloud-migration-business-case.md). Die geschäftliche Begründung dient als allgemeine Übersicht über den Finanzplan für die Cloudeinführung. Dies ist eine gute Quelle für die anfängliche Budgetplanung.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -108,10 +104,9 @@ Der Einführungsplan bietet Klarheit bezüglich der Zeitachse der Aktivitäten w
 - [Erfassen von Bestandsdaten](../digital-estate/inventory.md). Richten Sie eine Datenquelle für die Analyse des digitalen Bestands vor der Einführung ein.
 - [Bewährte Methode: Azure Migrate](../plan/contoso-migration-assessment.md). Verwenden Sie Azure Migrate, um den Bestand zu erfassen.
 - [Inkrementelle Rationalisierung](../digital-estate/rationalize.md#incremental-rationalization). Während der inkrementellen Rationalisierung kann eine quantitative Analyse für die Zwecke der Budgeterstellung Cloudkandidaten identifizieren.
-- [Abstimmen von Kostenmodellen und Vorhersagemodellen](../digital-estate/calculate.md). Verwenden von Azure Cost Management, um Kosten- und Vorhersagemodelle durch [Erstellen von Budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json) abzustimmen.
-- [Entwickeln Ihres Cloudeinführungsplans](../plan/plan-intro.md#build-your-cloud-adoption-plan). Erstellen Sie einen Plan mit handlungsrelevanten Details zu Workloads und Ressourcen sowie zum zeitlichen Ablauf. Dieser Plan stellt die Grundlage für Ausgaben im Zeitverlauf (oder Kostenprognose) dar. _Ausgaben im Zeitverlauf_ ist die anfängliche Baseline für alle umsetzbaren Optimierungsanalysen innerhalb der Governancedisziplin „Cost Management“.
+- [Abstimmen von Kostenmodellen und Vorhersagemodellen](../digital-estate/calculate.md). Verwenden Sie Azure Cost Management und Abrechnung, um Kosten- und Vorhersagemodelle durch [Erstellen von Budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) abzustimmen.
+- [Entwickeln Ihres Cloudeinführungsplans](../plan/plan-intro.md#build-your-cloud-adoption-plan). Erstellen Sie einen Plan mit handlungsrelevanten Details zu Workloads und Ressourcen sowie zum zeitlichen Ablauf. Dieser Plan stellt die Grundlage für Ausgaben im Zeitverlauf (oder Kostenprognose) dar. *Ausgaben im Zeitverlauf* ist die anfängliche Baseline für alle umsetzbaren Optimierungsanalysen innerhalb der Governancedisziplin „Cost Management“.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -130,12 +125,11 @@ Die Bereitschaftsmethodik des Microsoft Cloud Adoption Framework für Azure konz
 **Hinweis zur Erreichung der Ziele:**
 
 - [Nachverfolgen von Kosten](../ready/azure-best-practices/track-costs.md#provide-the-right-level-of-cost-access). Einrichten einer gut verwalteten Umgebungshierarchie, Bereitstellen der richtigen Kostenzugriffsebene und Verwenden zusätzlicher Kostenverwaltungsressourcen in jeder Zielzone.
-- [Optimieren Ihrer Cloudinvestitionen](/azure/cost-management-billing/costs/cost-mgt-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json). Verstehen bewährter Methoden für die Optimierung von Investitionen.
-- [Erstellen und Verwalten von Budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json). Verstehen bewährter Methoden zum Erstellen und Verwalten von Budgets.
-- [Optimieren von Kosten mithilfe von Empfehlungen](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json). Verstehen bewährter Methoden zum Verwenden von Empfehlungen, die Kosten optimieren.
-- [Überwachen von Nutzung und Ausgaben](/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json). Verstehen von bewährten Methoden zum Überwachen von Nutzung und Ausgaben innerhalb einer Zielzone.
+- [Optimieren Ihrer Cloudinvestitionen](/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json). Verstehen bewährter Methoden für die Optimierung von Investitionen.
+- [Erstellen und Verwalten von Budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json). Verstehen bewährter Methoden zum Erstellen und Verwalten von Budgets.
+- [Optimieren von Kosten mithilfe von Empfehlungen](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json). Verstehen bewährter Methoden zum Verwenden von Empfehlungen, die Kosten optimieren.
+- [Überwachen von Nutzung und Ausgaben](/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json). Verstehen von bewährten Methoden zum Überwachen von Nutzung und Ausgaben innerhalb einer Zielzone.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -162,7 +156,6 @@ Langfristige Betriebskosten sind ein gängiges Thema in jedem Bereich von Verbes
 - [Migration](../migrate/migration-considerations/migrate/index.md) enthält einen Prozessvorschlag zur Optimierung von Ressourcen. Dieser Vorschlag bietet die Möglichkeit, den aktuell konfigurierten Status zu optimieren und durch eine optimierte Lösung zu ersetzen.
 - [Höherstufung](../migrate/migration-considerations/optimize/index.md) konzentriert sich stark auf das Testen, Ändern der Größe, Überprüfen und Freigeben migrierter Ressourcen sowie die Außerbetriebnahme von Ressourcen. Dies ist der erste klare Punkt, an dem Prognosen und Budgets anhand der tatsächlichen Leistung und Konfiguration getestet werden können.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -182,7 +175,6 @@ Innovationen und die Entwicklung neuer Produkte erfordern einen weitaus höheren
 - Verwenden von [Microsoft Azure Well-Architected Review](/assessments/?id=azure-architecture-review), um das Gleichgewicht bei Architekturentscheidungen zu verstehen.
 - Überprüfen des [Microsoft Azure Well-Architected Framework](/azure/architecture/framework), um genauere Anleitungen zur Kostenoptimierung während der Innovation zu erhalten.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -201,7 +193,6 @@ Das Einrichten einer soliden Verwaltungsbaseline hilft Ihnen, Daten zu erfassen 
 
 - [Erstellen der geschäftlichen Ausrichtung](../manage/considerations/business-alignment.md), um Klarheit in Bezug auf die Wichtigkeit von und die Bereitschaft für Resilienzinvestitionen zu erhalten.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |

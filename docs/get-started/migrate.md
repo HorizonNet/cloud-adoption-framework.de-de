@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 95c6932660e578273bab70e70ffac00bfb8cfc61
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 7fe5177de0ea21132e9c05846544e355047b7c72
+ms.sourcegitcommit: 5b537035b96ae2b6879a1ea7fd46ceb64626851d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569364"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89275391"
 ---
 # <a name="get-started-accelerate-migration"></a>Erste Schritte: Beschleunigen der Migration
 
@@ -48,7 +48,6 @@ Um häufige Migrationshindernisse zu vermeiden, erstellen Sie eine klare und pr�
 
 - Verwenden der [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx), um Beweggründe und gewünschte Geschäftsergebnisse aufzuzeichnen.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -66,7 +65,6 @@ Partner, Microsoft-Dienste oder verschiedene Microsoft-Programme sind verfügbar
 - Einrichten der Geschäftsbedingungen oder andere vertraglichen Vereinbarungen, bevor Sie unterstützende Partner einbinden.
 - Identifizieren genehmigter Partner in der [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx).
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -87,7 +85,6 @@ Ermittlung und Bewertung bieten eine tiefere Ebene der technischen Ausrichtung u
 - Qualitative Analyse der ersten 10 Workloads.
 - Aktualisieren der geschäftlichen Begründung in der [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx).
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -104,7 +101,6 @@ Das Erstellen des Geschäftsszenarios für die Migration ist wahrscheinlich eine
 
 - Verwenden der [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx), um die geschäftliche Begründung festzuhalten.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -129,7 +125,6 @@ Ein Cloudeinführungsplan bietet einen beschleunigten Ansatz für die Entwicklun
   - Mangelnde Vertrautheit mit Azure DevOps kann den Bereitstellungsvorgang verlangsamen.
   - Komplexität und Daten, die für die einzelnen Workloads verfügbar sind, können sich ebenfalls auf die Zeitplanung auswirken.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -146,7 +141,6 @@ Vorhandene Mitarbeiter können eine praktische Rolle bei der Migration spielen, 
 
 - Hinzufügen eines Bereitschaftsplans für Qualifikationen zur [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx).
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -168,7 +162,6 @@ Alle migrierten Ressourcen werden innerhalb einer Zielzone bereitgestellt. Anfä
   - Governance-, Betriebs- und Sicherheitsanforderungen für die ersten zehn Workloads können diesen Prozess verlangsamen.
   - Die eigentliche Umgestaltung der ersten Zielzone und der nachfolgenden Zielzonen dauert länger, sollte aber parallel zu den Migrationsmaßnahmen erfolgen.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -194,7 +187,6 @@ Mit jeder Iteration wird das Cloudeinführungsteam beim Migrieren von Workloads 
 
 Fortlaufende Verbesserung der Fähigkeit des Einführungsteams, Workloads zu migrieren.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -207,6 +199,7 @@ Governance ist ein wichtiger Faktor für den langfristigen Erfolg einer beliebig
 
 - [Governanceansatz](../govern/index.md): Diese Methodik beschreibt einen Prozess für Überlegungen zu Unternehmensrichtlinien und -prozessen. Dann können Sie die Fachrichtungen aufbauen, die erforderlich sind, um Governance in Ihrem gesamten Cloudunternehmen zu gewährleisten.
 - [Anfängliche Governancegrundlage](../govern/guides/complex/prescriptive-guidance.md): Verstehen der Fachrichtungen Identitätsbaseline, Sicherheitsbaseline und Bereitstellungsbeschleunigung, die erforderlich sind, um ein Governance-MVP (Minimum Viable Product) zu schaffen, das als Grundlage für jede Einführung dient.
+- [Governancebenchmark](https://aka.ms/adopt/assess/govern): Identifizieren Sie Lücken im aktuellen Zustand der Governance Ihrer Organisation. Erhalten Sie einen personalisierten Benchmarkbericht und einen zusammengestellten Leitfaden für die ersten Schritte.
 
 **Ziele:**
 
@@ -214,7 +207,6 @@ Governance ist ein wichtiger Faktor für den langfristigen Erfolg einer beliebig
 - Abschließen eines Governancebenchmarks, um zukünftige Verbesserungen zu planen.
 - Zeitplanrisiko: Die Verbesserung der Richtlinien- und Governanceimplementierung kann eine Woche bis vier weitere Wochen pro Fachrichtung hinzufügen.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -239,7 +231,6 @@ Vorgangsverwaltung ist eine weitere Voraussetzung für eine erfolgreiche Migrati
   - Überprüfen der Arbeitsmappe: Planen Sie eine Stunde pro Anwendungsbesitzer ein.
   - Schließen Sie die Microsoft Azure Well-Architected Review-Bewertung ab: Planen Sie eine Stunde pro Anwendung ein.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |

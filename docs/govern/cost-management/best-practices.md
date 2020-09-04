@@ -7,14 +7,14 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 3941eef595174139bfe29809d6fd54926c2cbea3
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: dbce6299f2a676f0ef5d529c66f95d49dcb33b05
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573784"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88883976"
 ---
-<!-- docsTest:ignore ARO -->
+<!-- docutune:casing ARO "standard HDD" -->
 
 # <a name="best-practices-for-costing-and-sizing-resources-hosted-in-azure"></a>Bewährte Methoden für die Kosten- und Größenplanung von in Azure gehosteten Ressourcen
 
@@ -71,7 +71,7 @@ Um eine Prognose für Ihre monatliche Rechnung für Azure-Ressourcen aufzustelle
 
 - **Azure-Preisrechner:** Wählen Sie die Produkte aus, die Sie schätzen möchten, z. B. virtuelle Computer (VMs) und Speicher, und geben Sie dann im Rechner Kosten ein, um eine Schätzung zu erstellen.
 
-    ![Azure-Preisrechner](../../migrate/azure-best-practices/media/migrate-best-practices-costs/pricing.png) _Azure-Preisrechner_
+    ![Azure-Preisrechner](../../migrate/azure-best-practices/media/migrate-best-practices-costs/pricing.png) *Azure-Preisrechner*
 
 - **Azure Migrate:** Um Kosten zu schätzen, müssen Sie alle Ressourcen überprüfen und berücksichtigen, die für die Ausführung Ihrer Workloads in Azure erforderlich sind. Um diese Daten zu sammeln, erstellen Sie ein Inventar Ihrer Ressourcen, einschließlich Servern, virtueller Computer, Datenbanken und Speicher. Sie können Azure Migrate verwenden, um diese Informationen zu sammeln.
   - Azure Migrate ermittelt und bewertet Ihre lokale Umgebung, um ein Inventar aufzustellen.
@@ -81,7 +81,7 @@ Um eine Prognose für Ihre monatliche Rechnung für Azure-Ressourcen aufzustelle
     - **Speicherkosten:** Azure Migrate berechnet die monatlichen Speichergesamtkosten durch Aggregieren der Speicherkosten aller virtuellen Computer in einer Bewertung. Sie können die monatlichen Speicherkosten für einen bestimmten Computer berechnen, indem Sie die monatlichen Kosten aller an den Computer angefügten Datenträger zusammenfassen.
 
     ![Azure Migrate](../../migrate/azure-best-practices/media/migrate-best-practices-costs/assess.png)
-    _Azure Migrate-Bewertung_
+    *Azure Migrate-Bewertung*
 
 **Weitere Informationen**:
 
@@ -105,7 +105,7 @@ Sie können eine Reihe von Optionen auswählen, wenn Sie virtuelle Azure-Compute
 
 - Es ist wichtig, die Preisunterschiede zwischen diesen virtuellen Computern zu verstehen sowie die langfristigen Auswirkungen auf das Budget.
 - Jeder Typ umfasst eine bestimmte Anzahl darin enthaltener VM-Serien.
-- Außerdem können Sie nach dem Auswählen einer VM innerhalb einer Serie die VM nur innerhalb dieser Serie zentral hoch- oder herunterskalieren. Eine `DS2_v2`-Instanz kann z. B. bis zu `DS4_v2` hochskaliert werden, aber sie kann nicht in eine Instanz einer anderen Serie, z. B. eine `F2s_v2`-Instanz, geändert werden.
+- Außerdem können Sie nach dem Auswählen einer VM innerhalb einer Serie die VM nur innerhalb dieser Serie zentral hoch- oder herunterskalieren. Eine `DS2_v2`-Instanz kann z. B. bis zu `DS4_v2` hochskaliert werden, aber sie kann nicht in eine Instanz einer anderen Serie, z. B. eine `F2S_v2`-Instanz, geändert werden.
 
 **Weitere Informationen**:
 
@@ -125,23 +125,17 @@ Das Optimieren und Verwalten von lokalem Speicher (SAN oder NAS) sowie der Netzw
 
 Azure bietet verschiedene Arten von Speicherdaten.
 
-<!-- markdownlint-disable MD033 -->
-
 | Datentyp | Details | Verwendung |
 | ---|---|---|
 | **Blobs** | Optimiert für die Speicherung großer Mengen von unstrukturierten Objekten wie z. B. Text- oder Binärdaten. | Zugriff auf Daten von überall her über HTTP/HTTPS. <br><br> Verwendung für Szenarios mit Streaming und wahlfreiem Zugriff. Beispielsweise um einem Browser Bilder und Dokumente direkt bereitzustellen, Video und Audio zu streamen und Sicherungs- und Notfallwiederherstellungsdaten zu speichern. |
 | **Dateien** | Verwaltete Dateifreigaben, auf die über SMB 3.0 zugegriffen wird. | Verwendung beim Migrieren lokaler Dateifreigaben sowie zur Bereitstellung von mehrfachem Zugriff und mehreren Verbindungen, um Daten abzulegen. |
 | **Datenträger** | Basierend auf Seitenblobs. <br><br> Datenträgertyp (Geschwindigkeit): HDD Standard, SSD Standard, SSD Premium oder Ultra Disks. <br><br> Datenträgerverwaltung: Nicht verwaltet (Sie verwalten Datenträgereinstellungen und Speicher) oder verwaltet (Sie wählen den Datenträgertyp aus, und Azure verwaltet diesen Datenträger für Sie). | Verwendung von Premium-Datenträgern für VMs. Verwendung von verwalteten Datenträgern für einfache Verwaltung und Skalierung. |
-| **Warteschlangen** | Speichern und Abrufen großer Mengen von Nachrichten mittels Zugriff über authentifizierte Aufrufe (HTTP oder HTTPS). | Verbinden von App-Komponenten mit asynchronem Message Queuing. |
+| **Warteschlangen** | Speichern und Abrufen großer Mengen von Nachrichten mittels Zugriff über authentifizierte Aufrufe (HTTP oder HTTPS). | Verbinden von Anwendungskomponenten mit asynchronem Message Queuing. |
 | **Tabellen** | Speichern von Tabellen. | Jetzt Teil der Azure Cosmos DB-Tabellen-API. |
-
-<!--markdownlint-enable MD033 -->
 
 ### <a name="access-tiers"></a>Zugriffsebenen
 
 Azure Storage bietet verschiedene Optionen für den Zugriff auf Blockblobdaten. Die Auswahl der richtigen Zugriffsebene hilft sicherzustellen, dass Sie Blockblobdaten auf möglichst kostengünstige Art und Weise speichern.
-
-<!-- markdownlint-disable MD033 -->
 
 | Zugriffsebene | Details | Verwendung |
 | --- | --- | --- |
@@ -149,13 +143,9 @@ Azure Storage bietet verschiedene Optionen für den Zugriff auf Blockblobdaten. 
 | **Kalte Ebene** | Geringere Speicherkosten, höhere Zugriffs- und Transaktionskosten. <br><br> Speicherung für mindestens 30 Tage. | Kurzfristige Speicherung, Daten sind verfügbar, aber Zugriff erfolgt nur selten. |
 | **Archivieren** | Verwendung für einzelne Blockblobs. <br><br> Kostengünstigste Option für Speicherung. Niedrigste Speicherkosten, höchste Zugriffs- und Transaktionskosten. | Verwenden Sie sie für Daten, die mehrere Stunden Abrufwartezeit tolerieren und sich mindestens 180 Tage lang auf der Archivspeicherebene befinden werden. |
 
-<!--markdownlint-enable MD033 -->
-
 ### <a name="storage-account-types"></a>Speicherkontotypen
 
 Azure bietet verschiedene Typen von Speicherkonten und Leistungsstufen.
-
-<!-- markdownlint-disable MD033 -->
 
 | Kontotyp | Details | Verwendung |
 | --- | --- | --- |
@@ -163,8 +153,6 @@ Azure bietet verschiedene Typen von Speicherkonten und Leistungsstufen.
 | **Stufe „Universell V2 Premium“** | Unterstützt die Blobspeicherdaten (Seitenblobs). Unterstützt die Zugriffsebenen „Heiß“, „Kalt“ und „Archiv“. ZRS wird unterstützt. <br><br> Speicherung auf SSDs. | Microsoft empfiehlt die Verwendung für alle VMs. |
 | **Universell V1** | Zugriffsebenen werden nicht unterstützt. Keine Unterstützung von ZRS. | Verwendung, wenn Anwendungen das klassische Azure-Bereitstellungsmodell benötigen. |
 | **Blob** | Spezialisiertes Speicherkonto zum Speichern unstrukturierter Objekte. Bietet nur Blockblobs und Anfügeblobs (keine Datei-, Warteschlangen-, Tabellen- oder Datenträgerspeicherdienste). Bietet dieselbe Dauerhaftigkeit, Verfügbarkeit, Skalierbarkeit und Leistung wie „Universell V2“. | Sie können in diesen Konten keine Seitenblobs und deshalb auch keine VHD-Dateien speichern. Sie können eine Zugriffsebene auf „Heiß“ oder „Kalt“ festlegen. |
-
-<!--markdownlint-enable MD033 -->
 
 ### <a name="storage-redundancy-options"></a>Redundanzoptionen für Storage
 
@@ -196,7 +184,7 @@ Sobald sich die Ressourcen im Produktionsbetrieb befinden, können Daten aggregi
 - Analysieren Sie die Daten, um eine Budgetbaseline für Azure-Ressourcengruppen und -Ressourcen zu generieren.
 - Identifizieren Sie Verwendungsmuster. Dies ermöglicht es Ihnen, die Größe von Ressourcen zu verringern und Ressourcen anzuhalten oder zu beenden, um Ihre Kosten weiter zu senken.
 
-Bewährte Methoden in diesem Abschnitt umfassen die Nutzung von Azure-Hybridvorteil und Azure Reserved Virtual Machine Instances, das Senken von Cloudausgaben für alle Abonnements, die Verwendung von Azure Cost Management für die Budgetierung und Analyse von Kosten, die Überwachung von Ressourcen und Implementierung von Budgets für Ressourcengruppen sowie die Optimierung von Überwachung, Speicher und VMs.
+Bewährte Methoden in diesem Abschnitt umfassen die Nutzung von Azure-Hybridvorteil und Azure Reserved Virtual Machine Instances, das Senken von Cloudausgaben für alle Abonnements, die Verwendung von Azure Cost Management und Abrechnung für die Budgetierung und Analyse von Kosten, die Überwachung von Ressourcen und Implementierung von Budgets für Ressourcengruppen sowie die Optimierung von Überwachung, Speicher und VMs.
 
 ## <a name="best-practice-take-advantage-of-azure-hybrid-benefit"></a>Bewährte Methode: Nutzen von Azure-Hybridvorteil
 
@@ -222,7 +210,7 @@ Wenn Sie Azure Reserved VM Instances verwenden, zahlen Sie für reservierte Inst
 - Sie können reservierte Instanzen kündigen.
 
 ![Azure Reserved Virtual Machine Instances](../../migrate/azure-best-practices/media/migrate-best-practices-costs/reserve.png)
-_Abbildung 1: Reservierte Azure-VMs._
+*Abbildung 1: Reservierte Azure-VMs.*
 
 **Weitere Informationen**:
 
@@ -234,7 +222,7 @@ _Abbildung 1: Reservierte Azure-VMs._
 
 Es ist unvermeidlich, dass Sie letztendlich mehr als ein Azure-Abonnement haben werden. Beispielsweise könnten Sie ein zusätzliches Abonnement benötigen, um Entwicklungs- und Produktionsumgebungen voneinander zu trennen, oder Sie haben möglicherweise eine Plattform, die ein separates Abonnement für jeden Client erfordert. Die Möglichkeit zu besitzen, die Berichterstellung zu Daten über alle Abonnements hinweg in einer einzelnen Plattform zusammenzufassen, ist eine wertvolle Funktion.
 
-Um dies zu erreichen, können Sie Azure Cost Management-APIs verwenden. Nachdem Sie dann Daten in eine einzelne Quelle aggregiert haben, z. B. Azure SQL, können Sie mit Tools wie Power BI die aggregierten Daten analysieren. Sie können aggregierte Abonnementberichte sowie detaillierte Berichte erstellen. Für Benutzer, die proaktive Einblicke in das Kostenmanagement benötigen, können Sie beispielsweise spezifische Sichten für Kosten erstellen, gegliedert nach Abteilung, Ressourcengruppe oder anderen Informationen. Sie müssen ihnen dazu keinen Vollzugriff auf Azure-Abrechnungsdaten gewähren.
+Um dies zu erreichen, können Sie Azure Cost Management und Abrechnung-APIs verwenden. Nachdem Sie dann Daten in einer zentralen Quelle aggregiert haben, z. B. Azure SQL-Datenbank, können Sie diese Daten mit Tools wie Power BI bearbeiten. Sie können aggregierte Abonnementberichte sowie detaillierte Berichte erstellen. Für Benutzer, die proaktive Einblicke in das Kostenmanagement benötigen, können Sie beispielsweise spezifische Sichten für Kosten erstellen, gegliedert nach Abteilung, Ressourcengruppe oder anderen Informationen. Sie müssen ihnen dazu keinen Vollzugriff auf Azure-Abrechnungsdaten gewähren.
 
 **Weitere Informationen**:
 
@@ -250,7 +238,7 @@ In Azure bezahlen Sie für die Nutzung, also wenn Ressourcen tatsächlich genutz
 - Wenn Ihre Workload beispielsweise montags bis freitags zwischen 8: 00 und 18 Uhr stark verwendet wird, außerhalb dieser Zeiten jedoch kaum, könnten Sie virtuelle Computer außerhalb der Spitzenzeiten herabstufen. Dies kann bedeuten, dass Sie VM-Größen ändern oder VM-Skalierungsgruppen zum automatischen Hoch- oder Herunterskalieren von VMs verwenden könnten.
 - Einige Unternehmen lassen VMs „schlummern“, indem Sie sie nach einem Zeitplan betreiben, der angibt, wann sie verfügbar sein sollten und wann sie nicht benötigt werden.
 - Zusätzlich zur Überwachung virtueller Computer sollten Sie weitere Netzwerkressourcen wie ExpressRoute und Gateways für virtuelle Netzwerke auf zu niedrige und zu hohe Nutzung überwachen.
-- Sie können die VM-Nutzung mithilfe von Microsoft-Tools überwachen, wie z.B. Azure Cost Management, Azure Monitor und Azure Advisor. Drittanbietertools sind ebenfalls verfügbar.
+- Sie können die VM-Nutzung mithilfe von Microsoft-Tools überwachen, wie z. B. Azure Cost Management und Abrechnung, Azure Monitor und Azure Advisor. Drittanbietertools sind ebenfalls verfügbar.
 
 **Weitere Informationen**:
 
@@ -274,9 +262,9 @@ Ziehen Sie darüber hinaus allgemeine Kosteneinsparungen für alle Nichtprodukti
 - [Automatisches Herunterfahren von VMs](/azure/cost-management-billing/manage/getting-started#consider-cost-cutting-features-like-auto-shutdown-for-vms) legt eine nächtliche Beendigungszeit für VMs fest. Durch Verwendung dieses Features werden Nicht-Produktions-VMs jede Nacht gestoppt, sodass Entwickler diese VMs neu starten müssen, wenn sie zur Fortsetzung der Entwicklungsarbeit bereit sind.
 - Ermutigen Sie Entwicklungsteams, [Azure DevTest Labs](/azure/lab-services/devtest-lab-overview) zu nutzen, um eigene Ansätze zur Kostenkontrolle zu entwickeln und Beeinträchtigungen durch die Standardzeitvorgaben für automatisches Herunterfahren im vorherigen Schritt zu vermeiden.
 
-## <a name="best-practice-use-azure-cost-management"></a>Bewährte Methode: Azure Cost Management verwenden
+## <a name="best-practice-use-azure-cost-management-and-billing"></a>Bewährte Methode: Verwenden von Azure Cost Management und Abrechnung
 
-Microsoft bietet Azure Cost Management, um Ihnen bei der Nachverfolgung Ihrer Ausgaben zu helfen:
+Microsoft bietet Azure Cost Management und Abrechnung, um Ihnen bei der Nachverfolgung Ihrer Ausgaben zu helfen:
 
 - Unterstützt Sie bei der Überwachung und Kontrolle der Azure-Ausgaben sowie bei der Optimierung der Ressourcennutzung.
 - Überprüft Ihr gesamtes Abonnement mit allen darin enthaltenen Ressourcen und gibt Empfehlungen.
@@ -284,7 +272,7 @@ Microsoft bietet Azure Cost Management, um Ihnen bei der Nachverfolgung Ihrer Au
 - Verfolgt die Ressourcennutzung und Verwaltet Cloudkosten mit einer einzigen, einheitlichen Ansicht.
 - Bietet umfassende Erkenntnisse zu Betrieb und Finanzen, um Sie bei fundierten Entscheidungen zu unterstützen.
 
-In Azure Cost Management können Sie folgende Aktionen ausführen:
+In Azure Cost Management und Abrechnung haben Sie folgende Möglichkeiten:
 
 - **Ein Budget erstellen:** Erstellen Sie ein Budget zur Wahrnehmung Ihrer finanziellen Verantwortung.
   - Sie können dabei Dienste berücksichtigen, die Sie für einen bestimmten Zeitraum verwenden oder abonnieren (monatlich, vierteljährlich, jährlich), sowie einen Bereich (Abonnements/Ressourcengruppen). Beispielsweise können Sie ein Azure-Abonnementbudget für den Zeitraum eines Monats, Quartals oder Jahres erstellen.
@@ -292,24 +280,24 @@ In Azure Cost Management können Sie folgende Aktionen ausführen:
   - Sie können E-Mail-Benachrichtigungen versenden lassen, wenn Budgetschwellenwerte erreicht werden.
   - Sie können Kostenmanagementdaten zur Analyse nach Azure Storage exportieren.
 
-    ![Anzeigen von Budgets in Azure Cost Management](../../migrate/azure-best-practices/media/migrate-best-practices-costs/budget.png)
-    _Budgets in Azure Cost Management und Abrechnung_
+    ![Anzeigen von Budgets in Azure Cost Management und Abrechnung](../../migrate/azure-best-practices/media/migrate-best-practices-costs/budget.png)
+    *Budgets in Azure Cost Management und Abrechnung*
 
 - **Eine Kostenanalyse durchführen:** Stellen Sie eine Kostenanalyse auf, um Ihre Organisationskosten zu untersuchen und zu analysieren, damit Sie besser verstehen, wie Kosten anfallen, und Ausgabentrends erkennen können.
   - Die Kostenanalyse steht EA-Benutzern zur Verfügung.
   - Sie können Kostenanalysedaten für eine Reihe von Bereichen, einschließlich nach Abteilung, Konto, Abonnement oder Ressourcengruppe, anzeigen.
   - Sie können eine Kostenanalyse abrufen, die Gesamtkosten für den aktuellen Monat und die akkumulierten täglichen Kosten anzeigt.
 
-    ![Azure Cost Management-Analyse](../../migrate/azure-best-practices/media/migrate-best-practices-costs/analysis.png)
-    _Abbildung: Azure Cost Management-Analyse._
+    ![Analyse zu Azure Cost Management und Abrechnung](../../migrate/azure-best-practices/media/migrate-best-practices-costs/analysis.png)
+    *Abbildung: Analyse zu Azure Cost Management und Abrechnung.*
 
 - **Empfehlungen abrufen:** Erhalten Sie Advisor-Empfehlungen, die Ihnen zeigen, wie Sie die Effizienz optimieren und verbessern können.
 
 **Weitere Informationen**:
 
-- Lesen Sie die [Übersicht über Azure Cost Management](/azure/cost-management/overview).
-- Erfahren Sie, wie Sie Ihre [Cloudinvestitionen mit Azure Cost Management optimieren](/azure/cost-management-billing/costs/cost-mgt-best-practices).
-- Erfahren Sie, wie Sie [Azure Cost Management-Berichte](/azure/cost-management/use-reports) verwenden.
+- Lesen Sie die [Übersicht zu Azure Cost Management und Abrechnung](/azure/cost-management/overview).
+- Erfahren Sie mehr zum [Optimieren der Cloudinvestitionen mit Azure Cost Management und Abrechnung](/azure/cost-management-billing/costs/cost-mgt-best-practices).
+- Erfahren Sie mehr über die Verwendung der [Berichte von Azure Cost Management und Abrechnung](/azure/cost-management/use-reports).
 - Sehen Sie sich ein Tutorial zum [Optimieren von Kosten mithilfe von Empfehlungen](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations) an.
 - Sehen Sie sich die [Azure Consumption-APIs](/rest/api/consumption/budgets) an.
 
@@ -371,7 +359,7 @@ Sie können einen virtuellen Computer mit Azure Automation, VM-Skalierungsgruppe
 **Weitere Informationen**:
 
 - Erfahren Sie mehr über die [vertikale automatische Skalierung](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-vertical-scale-reprovision).
-- Sehen Sie sich [Azure DevTest Labs: Planen des automatischen Starts von VMs](https://azure.microsoft.com/updates/azure-devtest-labs-schedule-vm-auto-start) an.
+- Lesen Sie [Azure DevTest Labs: Planen des automatischen Starts von VMs](https://azure.microsoft.com/updates/azure-devtest-labs-schedule-vm-auto-start).
 - Informieren Sie sich über das [Starten oder Beenden von VMs außerhalb von Nutzungszeiten in Azure Automation](/azure/automation/automation-solution-vm-management).
 - Informieren Sie sich genauer zu [Azure Advisor](/azure/advisor/advisor-overview) und dem [Toolkit zur Azure-Ressourcenoptimierung (ARO)](https://github.com/azure/azure-quickstart-templates/tree/master/azure-resource-optimization-toolkit).
 

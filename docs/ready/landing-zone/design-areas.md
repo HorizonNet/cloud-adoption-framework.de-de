@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2406e3671e6b4945a8fb87eb7ed29dbbbc0584ba
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 3c3284f9f04a57e8532c0371197e1af7802e4fca
+ms.sourcegitcommit: 5b537035b96ae2b6879a1ea7fd46ceb64626851d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88566576"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89275364"
 ---
 <!-- TODO: Refactor terms: "design area", "well-architected" -->
 
@@ -35,7 +35,7 @@ Unabhängig von der Bereitstellungsoption sollten Sie jeden Entwurfsbereich sorg
 | Ressourcenorganisation | Bei der Skalierung der Cloudeinführung haben Überlegungen zu Abonnements und zur Verwaltungsgruppenhierarchie Auswirkungen auf Governance, Vorgangsverwaltung und Einführungsmuster. | Steuern |
 | Disziplinen der Governance | Automatisieren Sie die Überwachung und Durchsetzung von Sicherheits-, Governance- und Compliance-Richtlinien. | Steuern |
 | Betriebsbaseline | Für stabile, laufende Vorgänge in der Cloud ist eine Betriebsbaseline erforderlich, um Transparenz, operative Compliance sowie Schutz- und Wiederherstellungsfunktionen zu gewährleisten. | Verwalten |
-| Geschäftskontinuität und Notfallwiederherstellung (Business Continuity Disaster Recovery, BCDR) | BCDR stellt die Grundlage für Zuverlässigkeit und schnelle Wiederherstellung dar. | Verwalten |
+| Geschäftskontinuität und Notfallwiederherstellung (Business Continuity Disaster Recovery, BCDR) | Resilienz ist der Schlüssel für das reibungslose Funktionieren von Anwendungen. BCDR ist eine wichtige Komponente der Resilienz. BCDR umfasst den Schutz von Daten durch Sicherungen und den Schutz von Anwendungen vor Ausfällen durch Notfallwiederherstellung. | Verwalten |
 | Bereitstellungsoptionen | Nutzen Sie die besten Tools und Vorlagen, um Ihre Zielzonen und die zugehörigen Ressourcen bereitzustellen. | Bereit |
 
 ## <a name="next-steps"></a>Nächste Schritte

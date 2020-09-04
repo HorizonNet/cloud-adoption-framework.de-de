@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: fdbea736019042c192a011213c908fdec589565a
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: b10d9f8a777b1adfa6dbfe2bd1b977b94d675e5d
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88194479"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884996"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>Beispiele für Finanzergebnisse
 
@@ -56,7 +56,7 @@ Cloud Computing kann die Investitionskosten für Hardware und Software, das Einr
 - **Beispiel 2:** Eine Holdinggesellschaft hat vor Kurzem ein neues Unternehmen erworben. In den Übernahmebedingungen ist festgelegt, dass die neue Entität innerhalb von sechs Monaten aus den aktuellen Datencentern entfernt werden muss. Andernfalls muss die Holdinggesellschaft ein Bußgeld in Höhe von einer Millionen US-Dollar pro Monat zahlen. Das Verschieben der digitalen Ressourcen in die Cloud über eine Cloudmigration könnte eine schnelle Außerbetriebnahme der alten Ressourcen ermöglichen.
 - **Beispiel 3:** Ein Unternehmen, das Einkommensteuerberatung für Verbraucher anbietet, verzeichnet 70 Prozent seines Jahresumsatzes in den ersten drei Monaten des Jahrs. Während des restlichen Jahrs bleiben die erheblichen IT-Investitionen des Unternehmens relativ ungenutzt. Eine Cloudmigration könnte es der IT-Abteilung ermöglichen, die erforderliche Compute-/Hostingkapazität für diese drei Monate bereitzustellen. Während der verbleibenden neun Monate könnten die IaaS-Kosten durch Verringern des Computebedarfs erheblich reduziert werden.
 
-<!-- docsTest:ignore "Ryan Sorensen" "Director of Application Development and Enterprise Architecture" 1M -->
+<!-- docutune:ignore "Ryan Sorensen" "Director of Application Development and Enterprise Architecture" 1M -->
 <!-- cSpell:ignore Coverdell Coverdell's Sorensen -->
 
 ### <a name="example-coverdell"></a>Beispiel: Coverdell

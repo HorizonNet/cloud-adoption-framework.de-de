@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 37fbe933ce03a4d0ad600033aaff522a279cd005
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 5c3d79966bf3d3477ff7b9a62f23e9bab9d7f5a8
+ms.sourcegitcommit: af521583b98153f7157895b7ba9de71183d437b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571812"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89176445"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Azure-Serververwaltungstools und -dienste
 
@@ -43,7 +43,7 @@ Wenn Sie Datenschutzstrategien erstellen, sollten Sie zunächst überlegen, Ihre
 
 Der einfachste Datenschutz sind Sicherungen. Sie sollten nicht nur Daten, sondern auch Serverkonfigurationen sichern, um den Wiederherstellungsprozess im Falle eines Serverausfalls zu beschleunigen. Die Sicherung ist ein wirksamer Mechanismus zur Handhabung versehentlicher Datenlöschung und Ransomwareangriffe. [Azure Backup](/azure/backup) kann Ihnen beim Schützen von Daten auf Azure- und lokalen Servern unter Windows oder Linux helfen. Weitere Informationen darüber, was Backup leisten kann, und Anleitungen dazu finden Sie in der [Übersicht zum Azure Backup-Dienst](/azure/backup/backup-overview).
 
-Die Wiederherstellung über eine Sicherung kann sehr lange dauern. Gemäß Branchenstandard dauert dies in der Regel einen Tag. Wenn eine Workload für Hardware- oder Rechenzentrumsausfälle eine Geschäftskontinuität erfordert, sollten Sie die Verwendung der Datenreplikation in Betracht ziehen. [Azure Site Recovery](/azure/site-recovery/site-recovery-overview) bietet eine fortlaufende Replikation Ihrer VMs – eine Lösung, die minimalen Datenverlust ermöglicht. Site Recovery unterstützt u. a. auch folgende Replikationsszenarien:
+Wenn eine Workload für Hardware- oder Rechenzentrumsausfälle eine Geschäftskontinuität in Echtzeit erfordert, sollten Sie die Verwendung der Datenreplikation in Betracht ziehen. [Azure Site Recovery](/azure/site-recovery/site-recovery-overview) bietet eine fortlaufende Replikation Ihrer VMs – eine Lösung, die minimalen Datenverlust ermöglicht. Site Recovery unterstützt u. a. auch folgende Replikationsszenarien:
 
 - Replikation von Azure-VMs zwischen zwei Azure-Regionen.
 - Replikation zwischen lokalen Servern.

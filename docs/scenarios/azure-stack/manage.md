@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 487bb83f8b9550253e856a92bbcc7eed6f5832a3
-ms.sourcegitcommit: 76edf563a08ff7dc81c3fc2dc6c8972ab3b4c55b
+ms.openlocfilehash: bac23e8fbd32e77686015f0a6a7d75649b6273b9
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88237031"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885489"
 ---
 # <a name="manage-workloads-that-run-on-azure-stack-hub"></a>Verwalten von in Azure Stack Hub ausgeführten Workloads
 
@@ -20,12 +20,12 @@ Die Vorgänge und die Verwaltung von Hybridlösungen auf öffentlichen Plattform
 
 Wie in der [Verwaltungsmethodik](../../manage/index.md) des Cloud Adoption Framework erläutert, konzentrieren sich vorgeschlagene Operations Management-Aktivitäten auf die folgenden grundlegenden Aufgaben. Dieselben Aufgaben gelten auch für die Operations Management-Teams, die Azure Stack Hub unterstützen.
 
-- **Bestand und Transparenz**: Erstellen Sie einen Ressourcenbestand in mehreren Clouds. Ermöglichen Sie Transparenz im Hinblick auf den Betriebszustand jeder einzelnen Ressource.
-- **Betriebsbezogene Compliance**: Richten Sie Kontrollen und Prozesse ein, damit jeder Zustand ordnungsgemäß konfiguriert ist und in einer gut kontrollierten Umgebung ausgeführt wird.
-- **Schutz und Wiederherstellung**: Stellen Sie sicher, dass alle verwalteten Ressourcen geschützt sind und mithilfe von Baseline-Verwaltungstools wiederhergestellt werden können.
+- **Bestand und Transparenz:** Erstellen Sie einen Ressourcenbestand in mehreren Clouds. Ermöglichen Sie Transparenz im Hinblick auf den Betriebszustand jeder einzelnen Ressource.
+- **Betriebsbezogene Compliance:** Richten Sie Kontrollen und Prozesse ein, damit jeder Zustand ordnungsgemäß konfiguriert ist und in einer gut kontrollierten Umgebung ausgeführt wird.
+- **Schutz und Wiederherstellung:** Stellen Sie sicher, dass alle verwalteten Ressourcen geschützt sind und mithilfe von Baseline-Verwaltungstools wiederhergestellt werden können.
 - **Erweiterte Baseline-Optionen:** Evaluieren Sie allgemeine Ergänzungen zur Baseline, die ggf. zur Erfüllung von Geschäftsanforderungen geeignet sind.
-- **Plattformbetrieb**: Erweitern Sie die Baseline zur Verwaltung um einen klar definierten Servicekatalog und zentral verwaltete Plattformen.
-- **Workloadbetrieb**: Erweitern Sie die Baseline zur Verwaltung um einen Fokus auf unternehmenskritische Workloads.
+- **Plattformbetrieb:** Erweitern Sie die Baseline zur Verwaltung um einen klar definierten Servicekatalog und zentral verwaltete Plattformen.
+- **Workloadbetrieb:** Erweitern Sie die Baseline zur Verwaltung um einen Fokus auf unternehmenskritische Workloads.
 
 ## <a name="considerations-for-azure-stack-hub-operations-management"></a>Überlegungen zum Operations Management mit Azure Stack Hub
 

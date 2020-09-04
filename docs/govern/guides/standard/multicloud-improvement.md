@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 360c222130341e19d4fd185cc738fa47c26e01a6
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 125a356f619c447366a32b8ba7d680ed5513b4ca
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83214530"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88880372"
 ---
-<!-- cSpell:ignore MPLS -->
-
 # <a name="standard-enterprise-governance-guide-multicloud-improvement"></a>Governanceleitfaden für Standardunternehmen: Multi-Cloud-Verbesserung
 
 Dieser Artikel führt die Geschichte durch neue Steuerungen für die Multi-Cloud-Entwicklung fort.
@@ -63,7 +61,7 @@ Die folgenden Änderungen an der Richtlinie verringern die neuen Risiken und ver
 
 ## <a name="incremental-improvement-of-governance-practices"></a>Inkrementelle Verbesserung der Governancemethoden
 
-In diesem Abschnitt des Artikels wird der Governance-MVP-Entwurf so geändert, dass er neue Azure-Richtlinien und eine Implementierung von Azure Cost Management umfasst. Zusammen erfüllen diese Entwurfsänderungen die neuen Richtlinienanweisungen des Unternehmens.
+In diesem Abschnitt des Artikels wird der Governance-MVP-Entwurf so geändert, dass er neue Azure-Richtlinien und eine Implementierung von Azure Cost Management und Abrechnung umfasst. Zusammen erfüllen diese Entwurfsänderungen die neuen Richtlinienanweisungen des Unternehmens.
 
 1. Verbinden der Netzwerke: Dieser Schritt wird von den Netzwerk- und IT-Sicherheitsteams ausgeführt, die dabei vom Cloudgovernanceteam unterstützt werden. Das Hinzufügen einer Verbindung vom MPLS-/Standleitungsanbieters in die neue Cloud schließt Netzwerke ein. Über das Hinzufügen von Routingtabellen und Firewallkonfigurationen werden der Zugriff und der Datenverkehr zwischen den Umgebungen gesteuert.
 2. Konsolidieren der Identitätsanbieter: Abhängig von den Workloads, die in der sekundären Cloud gehostet werden, gibt es mehrere Optionen für das Zusammenführen der Identitätsanbieter. Im Folgenden finden Sie einige Beispiele:
@@ -72,9 +70,9 @@ In diesem Abschnitt des Artikels wird der Governance-MVP-Entwurf so geändert, d
 3. Hinzufügen von Ressourcen zu Azure Site Recovery:
     1. Azure Site Recovery wurde von Anfang an als Hybrid Cloud- oder Multi-Cloud-Tool entwickelt.
     2. Virtuelle Computer in der sekundären Cloud können möglicherweise über dieselben Azure Site Recovery-Prozesse, die auch für lokale Ressourcen verwendet werden, geschützt werden.
-4. Fügen Sie Azure Cost Management Ressourcen hinzu.
-    1. Azure Cost Management wurde von Anfang an als Multi-Cloud-Tool entwickelt.
-    2. Virtuelle Computer in der sekundären Cloud sind bei einigen alten Cloudanbietern eventuell mit Azure Cost Management kompatibel. Es können zusätzliche Kosten anfallen.
+4. Fügen Sie Azure Cost Management und Abrechnung entsprechende Ressourcen hinzu.
+    1. Azure Cost Management und Abrechnung wurde von Anfang an als Multi-Cloud-Tool entwickelt.
+    2. Virtuelle Computer in der sekundären Cloud sind bei einigen Cloudanbietern eventuell mit Azure Cost Management und Abrechnung kompatibel. Es können zusätzliche Kosten anfallen.
 5. Hinzufügen von Ressourcen zu Azure Monitor:
     1. Azure Monitor wurde von Anfang an als ein Hybrid Cloud-Tool konzipiert.
     2. Virtuelle Computer in der sekundären Cloud sind möglicherweise mit Azure Monitor-Agents kompatibel, sodass sie für die Überwachung der Abläufe in Azure Monitor eingebunden werden können.

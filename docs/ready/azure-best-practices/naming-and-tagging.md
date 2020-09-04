@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 6112658b38a8889475ed21af13aa234fa16bd5d5
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.openlocfilehash: 01920086c75c235662b098a76afa2e8a4afc5a02
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88848243"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88877193"
 ---
 <!-- docsTest:disable -->
 <!-- cSpell:ignore westeurope usgovia accountlookup messagequery -->
@@ -234,7 +234,7 @@ Der folgende Abschnitt enthält einige Namensbeispiele für häufige Azure-Resso
 
 <!-- cSpell:ignore mktgsharepoint acctlookupsvc vmhadoop vmtest vmsharepoint vmnavigator vmsqlnode stvmstcoreeastus stvmpmcoreeastus stvmstplmeastus stvmsthadoopeastus stnavigatordata stemissionsoutput stdiag stdiagsh ssimpnavigatorprod ssimpemissionsdev dlanavigatorprod dlsnavigatorprod dlaemissionsdev dlsemissionsdev weballow rdpallow sqlallow dnsblocked cloudapp azurewebsites servicebus -->
 
-<!-- markdownlint-disable MD024 MD033 -->
+<!-- markdownlint-disable MD024 -->
 
 ### <a name="example-names-general"></a>Namensbeispiele: Allgemein
 
@@ -251,7 +251,7 @@ Der folgende Abschnitt enthält einige Namensbeispiele für häufige Azure-Resso
 >
 > Unglücklicherweise kann sich der herkömmliche Ansatz für die Ressourcenauffüllung in Infrastruktur-als-Code-Ansätzen als problematisch erweisen, bei denen möglicherweise Ressourcen basierend auf einer nicht aufgefüllten Zahl durchlaufen werden. Diese Vorgehensweise wird bei der Bereitstellung oder bei automatisierten Konfigurationsverwaltungsaufgaben häufig eingesetzt. Diese Skripts müssten routinemäßig die aufgefüllten Leerzeichen entfernen und die aufgefüllte Zahl in eine reelle Zahl konvertieren, wodurch Skriptentwicklung und Laufzeit verlangsamt werden.
 >
-> Die Methode, die Sie implementieren möchten, unterliegt Ihrer persönlichen Entscheidung. Das Auffüllen in diesem Artikel soll die Wichtigkeit der Verwendung eines konsistenten Ansatzes bei der Bestandsnummerierung veranschaulichen, nicht, welcher Ansatz überlegen ist. Bevor Sie sich für ein Zahlenschema (mit oder ohne Auffüllung) entscheiden, bewerten Sie, welche sich stärker auf langfristige Vorgänge auswirken: CMDB-/Ressourcenverwaltungslösungen oder codebasierte Bestandsverwaltung. Befolgen Sie dann konsistent die Auffülloption, die Ihren betrieblichen Anforderungen am besten entspricht. 
+> Die Methode, die Sie implementieren möchten, unterliegt Ihrer persönlichen Entscheidung. Das Auffüllen in diesem Artikel soll die Wichtigkeit der Verwendung eines konsistenten Ansatzes bei der Bestandsnummerierung veranschaulichen, nicht, welcher Ansatz überlegen ist. Bevor Sie sich für ein Zahlenschema (mit oder ohne Auffüllung) entscheiden, bewerten Sie, welche sich stärker auf langfristige Vorgänge auswirken: CMDB-/Ressourcenverwaltungslösungen oder codebasierte Bestandsverwaltung. Befolgen Sie dann konsistent die Auffülloption, die Ihren betrieblichen Anforderungen am besten entspricht.
 
 ### <a name="example-names-networking"></a>Namensbeispiele: Netzwerk
 

@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5f6ba299ad4eddd9a299aac151ad85ed31ac7a0f
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 904fd950a7d19f33d7589cc0ccff69e56026660b
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568378"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88878519"
 ---
 <!-- cSpell:ignore scikit RLlib Jupyter MLflow Kubeflow -->
 
@@ -35,7 +35,7 @@ Azure Machine Learning verfügt über alle Tools, die Entwickler und Data Scient
 - Open-Source-Frameworks, z. B. PyTorch, TensorFlow, scikit-learn und viele mehr
 - [Vertiefendes Lernen](/azure/machine-learning/how-to-use-reinforcement-learning) mit Ray RLlib
 
-Sie können sogar [MLflow zum Nachverfolgen von Metriken und Bereitstellen von Modellen](/azure/machine-learning/how-to-use-mlflow) oder [Kubeflow zum Erstellen von End-to-End-Workflowpipelines](https://www.kubeflow.org/docs/azure/) verwenden.
+Sie können sogar [MLflow zum Nachverfolgen von Metriken und Bereitstellen von Modellen](/azure/machine-learning/how-to-use-mlflow) oder [Kubeflow](https://www.kubeflow.org/docs/azure/) zum Erstellen von End-to-End-Workflowpipelines verwenden.
 
 ## <a name="build-machine-learning-models-in-python-or-r"></a>Erstellen von Machine Learning-Modellen in Python oder R
 
@@ -99,7 +99,7 @@ Erfahren Sie mehr über die Implementierung von [verantwortlichem ML](/azure/mac
 
 ## <a name="integration-with-other-services"></a>Integration in andere Dienste
 
-Azure Machine Learning funktioniert mit anderen Diensten der Azure-Plattform und lässt sich auch in Open-Source-Tools wie Git und MLFlow integrieren.
+Azure Machine Learning funktioniert mit anderen Diensten der Azure-Plattform und lässt sich auch in Open-Source-Tools wie Git und MLflow integrieren.
 
 - Computeziele wie Azure Kubernetes Service, Azure Container Instances, Azure Databricks, Azure Data Lake Analytics und Azure HDInsight. Weitere Informationen zu Computezielen finden Sie unter [Was sind Computeziele in Azure Machine Learning?](/azure/machine-learning/concept-compute-target).
 - Azure Event Grid: Weitere Informationen finden Sie unter [Nutzen von Azure Machine Learning-Ereignissen (Vorschauversion)](/azure/machine-learning/how-to-use-event-grid).

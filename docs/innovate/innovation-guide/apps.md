@@ -9,15 +9,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 5a874c26835b17e2aa30a2230af3afe79dfd6628
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.openlocfilehash: b58c0b36f954ad20c2e642e11bef35fd169e2ca1
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88848141"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88883126"
 ---
-<!-- cSpell:ignore billyclaymyersmsft wimyers functionapp -->
-
 # <a name="engage-customers-through-applications"></a>Einbinden von Kunden durch Anwendungen
 
 Innovation mit Anwendungen umfasst sowohl die Modernisierung Ihrer vorhandenen Anwendungen, die lokal gehostet werden, als auch die Erstellung von cloudnativen Anwendungen mithilfe von Containern oder serverlosen Technologien. Azure bietet PaaS-Dienste wie Azure App Service, um die vorhandenen Web- und API-Apps, die zur Bereitstellung in Azure in .NET, .NET Core, Java, Node.js, Ruby, Python oder PHP geschrieben wurden, problemlos zu modernisieren.
@@ -184,8 +182,8 @@ Ein weiterer Vorteil von Functions ist die Möglichkeit, dass die Funktionen dur
 Zum Konfigurieren oder Überwachen von Azure Functions-Bereitstellungen gehen Sie folgendermaßen vor:
 
 1. Navigieren Sie zu **Funktions-App**.
-2. Konfigurieren Sie eine neue Funktions-App: Wählen Sie **Hinzufügen** aus, und befolgen Sie die Anweisungen.
-3. Verwalten Sie bereits vorhandene Funktions-Apps: Wählen Sie in der Liste die gewünschte Funktions-App aus.
+2. Konfigurieren einer neuen Funktions-App: Wählen Sie **Hinzufügen** aus, und folgen Sie den Aufforderungen.
+3. Verwalten vorhandener Funktions-Apps: Wählen Sie die gewünschte Funktions-App aus der Liste aus.
 
 ::: zone target="chromeless"
 
@@ -206,8 +204,8 @@ Integrieren Sie Daten und Anwendungen, anstatt komplexen Integrationscode zwisch
 Zum Konfigurieren oder Überwachen von Azure Logic Apps gehen Sie folgendermaßen vor:
 
 1. Navigieren Sie zu **Logic Apps**.
-2. Konfigurieren Sie eine neue Logik-App: Wählen Sie **Hinzufügen** aus, und befolgen Sie die Anweisungen.
-3. Verwalten Sie bereits vorhandene Logik-Apps: Wählen Sie die gewünschte Logik-App aus der Liste aus.
+2. Konfigurieren einer neuen Logik-App: Wählen Sie **Hinzufügen** aus, und folgen Sie den Aufforderungen.
+3. Verwalten vorhandener Logik-Apps: Wählen Sie die gewünschte Logik-App aus der Liste aus.
 
 ::: zone target="chromeless"
 

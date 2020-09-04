@@ -1,19 +1,19 @@
 ---
 title: Strategie zur Cloudüberwachung
 description: Erfahren Sie, wie eine wirksame Strategie zur Cloudüberwachung definiert werden kann.
+services: azure-monitor
 author: mgoedtel
 ms.author: magoedte
 ms.date: 06/18/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-services: azure-monitor
-ms.openlocfilehash: 021f3c9913a09bf0b32dd5913b54cbd839ff380e
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 7849dde3a64d0f788941aa7544525e61d60e697c
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574209"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885846"
 ---
 <!-- cSpell:ignore SIEM Nagios Zabbix DIKW -->
 
@@ -191,7 +191,7 @@ Zu Lernzyklen gehört es, Überwachungsdaten und Einblicke in die Hände von Fü
 
 ![Überwachungs- und Steuerungsstrategie](./media/monitoring-strategy/monitoring-and-control-strategy.png)
 
-<!-- docsTest:ignore "Data to Information, Knowledge, and Wisdom" -->
+<!-- docutune:ignore "Data to Information, Knowledge, and Wisdom" -->
 
 <Sup>1</Sup> Die Wissenspyramide ist eine häufig genutzte Methode mit Ursprung im Wissensmanagement zum Erläutern der Möglichkeiten, mithilfe einer Komponente aus Aktionen und Entscheidungen von Zeichen, Daten, Informationen zu Wissen zu gelangen.
 
@@ -215,7 +215,7 @@ Um Ihnen zu helfen, Überwachungspläne mit der Strategie abzustimmen, nutzen Si
 |-----|---------------------|------------------|
 | 1 | Nur lokal | System Center Operations Manager. Sie setzen die Überwachung von Diensten, Infrastruktur und Netzwerken bis hin zur Anwendungsschicht in eigenen Rechenzentren ohne Cloudunterstützung fort. |
 | 2 | Von lokaler zu cloudbasierter Lösung | Sie setzen weiterhin System Center Operations Manager ein und wenden die Management Packs für Microsoft 365 und Azure an. |
-| 3 | Lokal zu/mit Cloud (kooperativ), wobei Dienste sowohl in der Cloud als auch lokal ausgeführt werden | Sie richten eine anfängliche Überwachung mit Azure Monitor ein. Sie verbinden Azure Monitor mit System Center Operations Manager und Warnungsquellen wie Zabbix oder Nagios. Sie stellen Azure Monitor-Überwachungs-Agents im Multi-Homing mit System Center Operations Manager zur gemeinsamen Überwachung bereit. |
+| 3 | Lokal zu/mit Cloud (kooperativ), wobei Dienste sowohl in der Cloud als auch lokal ausgeführt werden | Sie richten eine anfängliche Überwachung mit Azure Monitor ein. Sie verbinden Azure Monitor mit System Center Operations Manager und Warnungsquellen wie zabbix oder nagios. Sie stellen Azure Monitor-Überwachungs-Agents im Multi-Homing mit System Center Operations Manager zur gemeinsamen Überwachung bereit. |
 | 4 | Hybridmigration | Sie überwachen die Migration, z. B. von Microsoft Exchange Server zu Microsoft 365 Exchange Online. Exchange Online Service Health und Dienstnutzung, Sicherheit und Konformität – alles in Microsoft 365. Sie setzen die Überwachung von lokalem Exchange mit System Center Operations Manager schrittweise außer Betrieb, bis die Migration abgeschlossen ist. |
 | 5 | Dauerhaft hybrid | System Center Operations Manager, Azure AD, Azure Monitor, Azure Security Center, Intune und anderen. Eine Palette von Tools für verschiedene digitale Ressourcen. |
 | 6 | Cloudnativ | Azure Monitor, Azure Policy, Azure Security Center, Microsoft 365, Azure Service Health, Azure Resource Health und andere. |
@@ -234,7 +234,7 @@ Sie können Azure jetzt einsetzen, um nach und nach mit dem Verwalten aller oder
 | Integritäts- und Statusüberwachung | Sie können die langfristige Leistungsgarantie des Diensts oder der Komponente, einschließlich Servicelevel, ganzheitlich beobachten, messen, auswerten und verbessern, und zwar für alle diese Aspekte: Verfügbarkeit, Kapazität, Leistung, Sicherheit und Compliance. Ein intaktes System, ein Dienst oder eine Komponente ist online, leistungsfähig, abgesichert und konform. Die Systemüberwachung umfasst Protokolle und ist mit Integritätszuständen und Metriken in Echtzeit zustandsbehaftet. Sie bietet außerdem Trendberichte, Einblicke und Trends mit Fokus auf Dienstnutzung. |
 | Überwachung des Nutzwerts | Sie können die Qualität oder qualitativen Aspekte der Nutzenerbringung eines Systems beobachten, messen, auswerten und verbessern. Die Benutzererfahrung ist ein Typ von Anwendungsfällen in Bezug auf Überwachung. |
 | Sicherheitsüberwachung | Sie können den Schutz zur Unterstützung von Cybersicherheitsstrategien und -aufgaben wie Sicherheitsabläufe, Identität und Zugriff, Informationsschutz, Datenschutz, Bedrohungsmanagement und Compliance beobachten, messen, auswerten und verbessern. Nutzen Sie zur Überwachung Azure Security Center und Azure Sentinel sowie Microsoft 365. |
-| Kostenüberwachung | Sie können als neues primäres Ziel mit Azure Monitor und Azure Cost Management und Azure-Abrechnungsportal die Nutzung überwachen und Kosten schätzen. Die Cost Management-APIs bieten die Möglichkeit, Kosten- und Nutzungsdaten mithilfe einer mehrdimensionalen Analyse zu untersuchen. |
+| Kostenüberwachung | Sie können als neues primäres Ziel mit Azure Monitor und Azure Cost Management und Azure-Abrechnungsportal die Nutzung überwachen und Kosten schätzen. Die Azure Cost Management-APIs bieten die Möglichkeit, Kosten- und Nutzungsdaten mithilfe einer mehrdimensionalen Analyse zu untersuchen. |
 
 | Tertiäre Ziele | Ergebnis |
 |---------------------|------------------|

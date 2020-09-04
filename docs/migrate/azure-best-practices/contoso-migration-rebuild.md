@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: site-recovery
-ms.openlocfilehash: d5b4f0638c5d21dc6bd973c650699130ba30d241
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: fba3a8a7bcc9de98f9ea41e3468e5acf9ca4dc3c
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568361"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88883109"
 ---
-<!-- docsTest:ignore "Enable .NET" SmartHotel360 SmartHotel360-Backend Pet.Checker contoso-datacenter git aks PetCheckerFunction -->
+<!-- docsTest:casing "Enable .NET" SmartHotel360 SmartHotel360-Backend Pet.Checker contoso-datacenter git aks PetCheckerFunction -->
 
-<!-- cSpell:ignore givenscj SQLVM WEBVM contosohost vcenter contosodc smarthotel contososmarthotel smarthotelcontoso smarthotelpetchecker petchecker smarthotelakseus smarthotelacreus smarthotelpets kubectl contosodevops visualstudio azuredeploy cloudapp smarthotelsettingsurl appsettings -->
+<!-- cSpell:ignore SQLVM WEBVM contosohost vcenter contosodc smarthotel contososmarthotel smarthotelcontoso smarthotelpetchecker petchecker smarthotelakseus smarthotelacreus smarthotelpets kubectl contosodevops visualstudio azuredeploy cloudapp smarthotelsettingsurl appsettings -->
 
 # <a name="rebuild-an-on-premises-application-in-azure"></a>Erneutes Erstellen einer lokalen Anwendung in Azure
 
@@ -704,8 +704,8 @@ Microsoft Learn ist ein neuer Lernansatz. Die Bereitschaft zu den neuen Qualifik
 
 Hier finden Sie zwei Beispiele für maßgeschneiderte Lernpfade in Microsoft Learn, die auf die Contoso-Anwendung „SmartHotel360“ in Azure abgestimmt sind.
 
-<!--docsTest:ignore "Azure Cognitive Vision Services" -->
+<!--docsTest:casing "with the Azure Cognitive Vision Services" -->
 
 - **[Bereitstellen einer Website in Azure mithilfe von Azure App Service:](/learn/paths/deploy-a-website-with-azure-app-service)** Durch das Erstellen von Web-Apps in Azure können Sie Ihre Website leicht veröffentlichen und verwalten, ohne dass Sie mit den zugrunde liegenden Servern, Speicher oder Netzwerkressourcen arbeiten müssen. Stattdessen können Sie sich auf Ihre Websitefeatures konzentrieren und die stabile Azure-Plattform verwenden, um sicheren Zugriff auf Ihre Website zu ermöglichen.
 
-- **[Verarbeiten und Klassifizieren von Bildern mit der Bildanalyse von Azure Cognitive Services:](/learn/paths/classify-images-with-vision-services)** Azure Cognitive Services bietet vorgefertigte Funktionen, um die Funktionalität für maschinelles Sehen in Ihren Anwendungen zu aktivieren. Erfahren Sie, wie Sie die Bildanalyse von Cognitive Services verwenden, um Gesichter zu erkennen, Bilder mit Tags zu versehen und zu klassifizieren und Objekte zu identifizieren.
+- **[Verarbeiten und Klassifizieren von Bildern mit der Bildanalyse von Azure Cognitive Services](/learn/paths/classify-images-with-vision-services)** : Azure Cognitive Services bietet vorgefertigte Funktionen, um die Funktionalität für maschinelles Sehen in Ihren Anwendungen zu aktivieren. Erfahren Sie, wie Sie die Bildanalyse von Cognitive Services verwenden, um Gesichter zu erkennen, Bilder mit Tags zu versehen und zu klassifizieren und Objekte zu identifizieren.

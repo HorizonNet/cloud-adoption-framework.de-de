@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 1927536ece343905d9371755d9af8e693b5fb9cf
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.openlocfilehash: b4189711fcc062e54afb673b8a4b6973687935f2
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88848345"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882735"
 ---
 <!-- cSpell:ignore untrust CIDR RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
 
@@ -424,7 +424,7 @@ Für das Hub-Spoke-Modell von Contoso muss noch festgelegt werden, wie Datenverk
 
 Nach der Einrichtung der Netzwerk- und Routingtopologie ist Contoso jetzt bereit für die Einrichtung von Azure-Netzwerken und -Subnetzen:
 
-<!-- docsTest:ignore "class B" -->
+<!-- docsTest:casing "class-A" "class-B" -->
 
 - Contoso implementiert ein privates Netzwerk der Klasse A in Azure (`10.0.0.0/8`). Dies funktioniert aufgrund des lokalen Rechenzentrums, denn es verfügt zurzeit über einen privaten Adressraum der Klasse B (`172.160.0.0/16`). Das Unternehmen kann sicher sein, dass es keine Überschneidung zwischen Adressbereichen gibt.
 - Contoso stellt virtuelle Netzwerke sowohl in der primären als auch in der sekundären Region bereit.
@@ -591,8 +591,6 @@ _Abbildung 26: Erstellen einer direkten Verbindung mit Peering_
 Beim Bereitstellen von Ressourcen in virtuellen Netzwerken bietet sich für die Domänennamenauflösung eine Reihe von Optionen. Sie können die in Azure verfügbare Namensauflösung verwenden oder DNS-Server für die Auflösung bereitstellen. Welche Art der Namensauflösung Sie verwenden, hängt davon ab, wie die Ressourcen miteinander kommunizieren müssen. Hier finden Sie [weitere Informationen](/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances#azure-provided-name-resolution) über den Azure DNS-Dienst.
 
 Die Administratoren von Contoso haben entschieden, dass der Azure DNS-Dienst keine gute Wahl für die Hybridumgebung ist. Stattdessen werden sie die lokalen DNS-Server verwenden. Es folgen die Details:
-
-<!-- docsTest:ignore "on premises" -->
 
 - Da es sich um ein Hybridnetzwerk handelt, müssen alle lokalen VMs sowie alle Azure-VMs Namen auflösen können, damit sie ordnungsgemäß funktionieren. Dies bedeutet, dass benutzerdefinierte DNS-Einstellungen auf alle virtuellen Netzwerke angewendet werden müssen.
 - Contoso hat derzeit im Contoso-Rechenzentrum und in den Zweigniederlassungen Domänencontroller bereitgestellt. Die primären DNS-Server sind `contosodc1` (`172.16.0.10`) und `contosodc2` (`172.16.0.1`).

@@ -7,14 +7,14 @@ ms.date: 03/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f2dc11ac5145dea0fbf65aea65e74e5f2b8fe69c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 04921b668f77e00b5e8172527ca57864b2fe9a51
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572254"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88877159"
 ---
-<!-- cSpell:ignore asabbour sabbour kured -->
+<!-- cSpell:ignore kured -->
 
 # <a name="cluster-and-application-security"></a>Cluster- und Anwendungssicherheit
 
@@ -28,14 +28,11 @@ Die unten angegebene Checkliste und die Ressourcen dienen Ihnen beim Einstieg al
 >
 > - Haben Sie das Sicherheits- und Bedrohungsmodell von Kubernetes-Clustern überprüft?
 > - Ist für Ihren Cluster die rollenbasierte Zugriffssteuerung aktiviert?
-
-<!-- markdownlint-disable MD033 -->
-
 > [!div class="tdCol2BreakAll"]
 >
 > | Checkliste  | Ressourcen |
 > |------------------------------------------------------------------|-----------------------------------------------------------------|
-> | **Vertrautmachen mit dem Whitepaper zu den Sicherheitsgrundlagen:** Bei den Hauptzielen einer sicheren Kubernetes-Umgebung geht es um die Sicherstellung, dass die ausgeführten Anwendungen geschützt sind, dass die Sicherheitsprobleme schnell ermittelt und behoben werden können und dass ähnliche Probleme in Zukunft verhindert werden. | [Leitfaden für den Schutz von Kubernetes (Whitepaper)](https://clouddamcdnprodep.azureedge.net/gdc/gdc8LXmoZ/original)     |
+> | **Vertrautmachen mit dem Whitepaper zu den Sicherheitsgrundlagen.** Bei den Hauptzielen einer sicheren Kubernetes-Umgebung geht es um die Sicherstellung, dass die ausgeführten Anwendungen geschützt sind, dass die Sicherheitsprobleme schnell ermittelt und behoben werden können und dass ähnliche Probleme in Zukunft verhindert werden. | [Leitfaden für den Schutz von Kubernetes (Whitepaper)](https://clouddamcdnprodep.azureedge.net/gdc/gdc8LXmoZ/original)     |
 > | **Informieren über die Einrichtung von gehärteten Clusterknoten aus Sicherheitsgründen:** Mit einem aus Sicherheitsgründen gehärteten Hostbetriebssystem wird die Angriffsfläche reduziert und die sichere Bereitstellung von Containern ermöglicht. | [Sicherheitshärtung bei AKS-Hosts für virtuelle Computer](/azure/aks/security-hardened-vm-host-image)     |
 > | **Einrichten der rollenbasierten Zugriffssteuerung (RBAC) für Cluster:** Mit diesem Steuerungsmechanismus können Sie Benutzern oder Benutzergruppen die Berechtigung für bestimmte Aktionen (z. B. Ressourcen erstellen bzw. ändern oder Protokolle zur Workload ausgeführter Anwendungen anzeigen) zuweisen. | [Grundlegendes zur rollenbasierten Zugriffssteuerung (RBAC) in Kubernetes (Video)](https://www.youtube.com/watch?v=G3R24JSlGjY&list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT&index=12) <br> [Integrieren von Azure Active Directory in Azure Kubernetes Service](/azure/aks/azure-ad-integration) <br> [Definieren des Zugriffs auf die Kubernetes-Konfigurationsdatei in Azure Kubernetes Service (AKS) mithilfe der rollenbasierten Zugriffssteuerung von Azure](/azure/aks/control-kubeconfig-access)   |
 
@@ -48,9 +45,6 @@ Beim Vorbereiten der Anwendung für die Produktion sollten Sie einen Mindestsatz
 > - Haben Sie Netzwerksicherheitsregeln für die eingehende, ausgehende und Pod-interne Kommunikation konfiguriert?
 > - Ist Ihr Cluster für die automatische Anwendung von Sicherheitsupdates für Knoten konfiguriert?
 > - Führen Sie für Ihre Cluster- und Containerworkloads eine Lösung für Sicherheitsüberprüfungen aus?
-
-<!-- markdownlint-disable MD033 -->
-
 > [!div class="tdCol2BreakAll"]
 >
 > | Checkliste  | Ressourcen |
@@ -71,9 +65,6 @@ Nachdem sich die Anwendung nun in der Produktion befindet, stellt sich die folge
 > [!div class="checklist"]
 >
 > - Können Sie Governance- und Clusterrichtlinien bedarfsgesteuert erzwingen?
-
-<!-- markdownlint-disable MD033 -->
-
 > [!div class="tdCol2BreakAll"]
 >
 > | Checkliste  | Ressourcen |

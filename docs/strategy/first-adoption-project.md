@@ -7,18 +7,18 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 39d83a2caa61178404a87fa33abe6bef66f502ff
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.openlocfilehash: 507fdcba779f70b418e5d01a7058345967750af5
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88848328"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88877023"
 ---
 # <a name="first-cloud-adoption-project"></a>Erstes Cloudeinführungsprojekt
 
 Die Planung der Cloudeinführung ist mit einer Lernkurve und Zeitaufwand verbunden. Selbst für erfahrene Teams nimmt die richtige Planung viel Zeit in Anspruch: Zeit, um die Projektbeteiligten aufeinander abzustimmen, Zeit, um Daten zu sammeln und zu analysieren, Zeit, um langfristige Entscheidungen zu überprüfen, und Zeit, um Menschen, Prozesse und Technologien aufeinander abzustimmen. Bei den produktivsten Einführungsbemühungen wächst die Planung parallel zur Einführung weiter und verbessert sich mit jedem Release und jeder Workloadmigration in die Cloud. Es ist wichtig, den Unterschied zwischen einem Cloudeinführungsplan und einer Cloudeinführungsstrategie zu kennen. Sie benötigen eine klar definierte Strategie, um die Implementierung eines Cloudeinführungsplans zu vereinfachen und zu unterstützen.
 
-<!-- docsTest:ignore "Strategy, Plan, Ready, Adopt, and Operate phases" -->
+<!-- docutune:ignore "Strategy, Plan, Ready, Adopt, and Operate phases" -->
 
 Das Cloud Adoption Framework für Azure beschreibt die Prozesse für die Cloudeinführung und den Betrieb von Workloads, die in der Cloud gehostet werden. Für jeden Prozesse in den Phasen „ Strategie“, „Plan“, „Bereit“, „Einführung“ und „Betrieb“ müssen technischen, geschäftlichen und operativen Fähigkeiten geringfügig erweitert werden. Einige dieser Fähigkeiten können durch gezieltes Lernen erworben werden. Viele dieser Fähigkeiten werden jedoch am effektivsten durch praktische Erfahrungen erworben.
 
@@ -52,7 +52,7 @@ Zur Unterstützung der obigen Kriterien enthält diese Liste ein Beispiel für e
 
 - **Beweggründe für Innovation:** Wenn Innovationen der primäre Beweggrund sind, könnte die Erstellung einer gezielten Entwicklungs-/Testumgebung ein ideales erstes Projekt sein.
 
-<!-- docsTest:ignore "data migration services" -->
+<!-- docutune:ignore "data migration services" -->
 
 Weitere Beispiele für erste Einführungsprojekte sind unter anderem:
 

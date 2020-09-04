@@ -7,14 +7,14 @@ ms.date: 06/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: d64873d414656da8caadc6a60a2ddd08f850cf38
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: dba0ab6db022d4d2a18dc0734e37d59501eb6738
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662301"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885778"
 ---
-<!-- docsTest:ignore InterpretML FairLearn -->
+<!-- docutune:ignore InterpretML FairLearn -->
 
 # <a name="responsible-ai"></a>Verantwortungsbewusste künstliche Intelligenz
 
@@ -53,13 +53,13 @@ Diese Leitlinien helfen Ihnen dabei, potenzielle Probleme während des gesamten 
 Es gibt Tools, die Entwicklern und Data Scientists dabei helfen können, KI-Systeme zu verstehen, zu schützen und zu kontrollieren. Diese können aus einer Vielzahl von Quellen stammen, z. B. aus Azure Machine Learning, Open-Source-Projekten oder der Forschung.
 
 - **Verstehen:** KI-Systeme können sich aus verschiedensten Gründen unerwartet verhalten. Softwaretools können Ihnen dabei helfen, das Verhalten Ihrer KI-Systeme zu verstehen, damit Sie sie besser an Ihre Anforderungen anpassen können. Beispiele für diese Art von Tools sind InterpretML und Fairlearn.
-- **Schützen:** KI-Systeme basieren auf Daten. Softwaretools können Ihnen dabei helfen, diese Daten durch Gewährleistung von Datenschutz und Vertraulichkeit zu schützen. Beispiele hierfür sind das vertrauliche Computing für Machine Learning, der differenzielle Datenschutz mit WhiteNoise, die homomorphe Verschlüsselung mit SEAL und Presidio.
-- **Kontrolle**: Verantwortungsbewusste KI erfordert Governance und Kontrolle während des gesamten Entwicklungszyklus. Azure Machine Learning bietet einen Überwachungspfad für bessere Nachverfolgbarkeit, Herkunftsermittlung und Kontrolle, um gesetzliche Anforderungen zu erfüllen. Beispiele wären etwa Überwachungspfad und Nachverfolgbarkeit.
+- **Schützen:** KI-Systeme basieren auf Daten. Softwaretools können Ihnen dabei helfen, diese Daten durch Gewährleistung von Datenschutz und Vertraulichkeit zu schützen. Beispiele hierfür sind das vertrauliche Computing für Machine Learning, der differenzielle Datenschutz mit WhiteNoise, die homomorphe Verschlüsselung mit Seal und Presidio.
+- **Steuern:** Verantwortungsbewusste KI erfordert Governance und Kontrolle während des gesamten Entwicklungszyklus. Azure Machine Learning bietet einen Überwachungspfad für bessere Nachverfolgbarkeit, Herkunftsermittlung und Kontrolle, um gesetzliche Anforderungen zu erfüllen. Beispiele wären etwa Überwachungspfad und Nachverfolgbarkeit.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 Weitere Ressourcen zur Unterstützung der Entwicklung Ihrer verantwortungsbewussten Lösung finden Sie hier:
 
-- [Verantwortungsvolle KI](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1:primaryr6)
+- [Übersicht über verantwortungsvolle KI](https://www.microsoft.com/ai/responsible-ai?activetab=pivot1:primaryr6)
 - [Ressourcen für verantwortungsvolle KI](https://www.microsoft.com/ai/responsible-ai-resources)
 - [Verantwortungsvolle Bots: Zehn Richtlinien für Entwickler von Konversations-KI](https://www.microsoft.com/research/publication/responsible-bots/)

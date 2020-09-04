@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 385bfcaefd7fcb5dab78e9dd80478a0fe2c7d644
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 448e98d06a79f9683996a8db946bf52b0c8e8cdd
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569262"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884231"
 ---
 # <a name="get-started-improve-reliability-with-the-right-controls"></a>Erste Schritte: Verbessern der Zuverlässigkeit mit den richtigen Steuerungen
 
@@ -53,7 +53,6 @@ Nicht alle Workloads werden gleich erstellt. In jeder Umgebung gibt es Workloads
 - [Erweiterter Betrieb](../manage/design-principles.md): Verwenden Sie die Verwaltungsbaseline als Grundlage für Ihren Austausch über die [Geschäftsausrichtung](../manage/considerations/business-alignment.md). Die hilft Ihnen, [Wichtigkeit](../manage/considerations/criticality.md), [Geschäftsauswirkungen](../manage/considerations/impact.md) und [Betriebsverpflichtungen](../manage/considerations/commitment.md) klar zu benennen. Die Geschäftsausrichtung hilft bei der Quantifizierung und Validierung von Anforderungen für eine [erweiterte Baseline](../manage/azure-management-guide/enhanced-baseline.md), der Verwaltung spezifischer [Technologieplattformen](../manage/azure-management-guide/workload-specialization.md) oder [workloadspezifischer Vorgänge](../manage/azure-management-guide/platform-specialization.md).
 - **Durchführen einer Architekturüberprüfung:** Zum Erfüllen von Betriebsanforderungen sind möglicherweise Architekturänderungen auf Workloadebene erforderlich. [Microsoft Azure Well-Architected Framework](/azure/architecture/framework/cost/tradeoffs) und [Microsoft Azure Well-Architected Review](/assessments?id=azure-architecture-review) können diese Gespräche mit dem technischen Besitzer einer bestimmten Workload unterstützen.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -73,12 +72,11 @@ Unternehmenszuverlässigkeit erfordert eine konsistente Anwendung der Verwaltung
 
 - Stellen Sie sicher, dass alle Workloads und Ressourcen die [richtigen Benennungs- und Kennzeichnungskonventionen](../ready/azure-best-practices/naming-and-tagging.md) befolgen. [Erzwingen Sie Kennzeichnungskonventionen mithilfe von Azure Policy](/azure/governance/policy/tutorials/govern-tags) mit einem speziellen Schwerpunkt auf Tags für „Wichtigkeit“.
 - Sollten Sie noch nicht mit Cloudgovernance vertraut sein, verwenden Sie die Governancemethodik, um [Governancerichtlinien, -prozesse und -disziplinen](../govern/index.md) einzurichten.
-- Wenn Sie mit der Disziplin „Cost Management“ noch nicht vertraut sind, befolgen Sie die Anweisungen im Artikel [Cost Management-Verbesserungen](../govern/guides/complex/cost-management-improvement.md). Konzentrieren Sie sich auf den Abschnitt [Implementierung](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices).
+- Wenn Sie mit der Disziplin „Cost Management“ noch nicht vertraut sind, befolgen Sie die Anweisungen im Artikel [Verbesserung der Disziplin „Cost Management“](../govern/guides/complex/cost-management-improvement.md). Konzentrieren Sie sich auf den Abschnitt [Implementierung](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices).
 
 > [!NOTE]
 > **Schritte zum Einstieg in eine Zuverlässigkeitspartnerschaft mit anderen Teams:** Verschiedene Entscheidungen im gesamten Lebenszyklus der Cloudeinführung können einen direkten Einfluss auf die Zuverlässigkeit haben. Die folgenden Schritte unterstützen Sie bei der Gliederung der Partnerschaften und der unterstützenden Anstrengungen, die erforderlich sind, um konsistente Zuverlässigkeit im gesamten IT-Portfolio bereitzustellen.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -100,7 +98,6 @@ Strategische Entscheidungen wirken sich direkt auf die Zuverlässigkeit aus. Sie
 - [Geschäftsergebnisse](../strategy/business-outcomes/index.md): Einige fiskalische Ergebnisse neigen dazu, extrem kostensensibel zu sein. Wenn sich die gewünschten Ergebnisse den fiskalischen Metriken zuordnen lassen, sollten Sie frühzeitig in die Governancedisziplin „Cost Management“ investieren.
 - [Geschäftliche Begründung](../strategy/cloud-migration-business-case.md): Die geschäftliche Begründung dient als allgemeine Übersicht über den Gesamtfinanzplan für die Cloudeinführung. Sie kann eine gute Quelle für die anfängliche Budgetplanung darstellen.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -128,10 +125,9 @@ Wenn Sie den Einführungsplan mit der Analyse des digitalen Bestands abstimmen, 
 - [Erfassen von Bestandsdaten](../digital-estate/inventory.md): Richten Sie eine Datenquelle für die Analyse des digitalen Bestands vor der Einführung ein.
 - [Bewährte Methode: Azure Migrate:](../plan/contoso-migration-assessment.md) Verwenden Sie Azure Migrate, um den Bestand zu erfassen.
 - [Inkrementelle Rationalisierung](../digital-estate/rationalize.md#incremental-rationalization): Während der inkrementellen Rationalisierung kann eine quantitative Analyse Cloudkandidaten zu Budgetierungszwecken identifizieren.
-- [Abstimmen von Kostenmodellen und Vorhersagemodellen](../digital-estate/calculate.md): Verwenden Sie Azure Cost Management, um Kosten- und Vorhersagemodelle durch [Erstellen von Budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json) abzustimmen.
+- [Abstimmen von Kostenmodellen und Vorhersagemodellen](../digital-estate/calculate.md): Verwenden Sie Azure Cost Management und Abrechnung, um Kosten- und Vorhersagemodelle durch [Erstellen von Budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) abzustimmen.
 - [Entwickeln Ihres Cloudeinführungsplans](../plan/plan-intro.md#build-your-cloud-adoption-plan): Erstellen Sie einen Plan mit handlungsrelevanten Details zu Workloads und Ressourcen sowie zum zeitlichen Ablauf.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -151,7 +147,6 @@ Die Bereitschaftsmethodik des Cloud Adoption Framework für Azure konzentriert s
 
 - [Verbessern des Betriebs von Zielzonen](../ready/considerations/landing-zone-operations.md): Bewährte Methoden zur Verbesserung des Betriebs innerhalb einer bestimmten Zielzone.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -174,7 +169,6 @@ Langfristige Vorgänge können von den Entscheidungen beeinflusst werden, die w�
 - [Prüfliste vor der Höherstufung](../migrate/migration-considerations/optimize/ready.md)
 - [Prüfliste für Produktionsreleases](../migrate/migration-considerations/optimize/promote.md)
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |

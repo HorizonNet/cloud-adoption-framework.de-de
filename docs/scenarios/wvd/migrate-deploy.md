@@ -7,12 +7,12 @@ ms.date: 07/01/2010
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 50fea7acb50b2f14cabea51bdc9a53fecdaf1595
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: b84533bb565e43a0ddb52930f33eba21f35c8ed9
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572576"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885353"
 ---
 <!-- cSpell:ignore NTFS Logix -->
 
@@ -58,15 +58,15 @@ Für den [Anfangsbereich](#initial-scope) wird davon ausgegangen, dass Sie einen
 
 Sie können [Azure NetApp Files verwenden, um Benutzerprofile zu hosten](/azure/virtual-desktop/create-fslogix-profile-container). Dies erfordert einige zusätzliche Schritte im Bereich, einschließlich:
 
-- **Pro NetApp-Instanz**: Konfigurieren Sie NetApp-Dateien, -Volumes und Active Directory-Verbindungen.
-- **Pro Host/Persona**: Konfigurieren Sie FSLogix auf Sitzungshost-VMs.
-- **Pro Benutzer**: Weisen Sie der Hostsitzung Benutzer zu.
+- **Pro NetApp-Instanz:** Konfigurieren Sie NetApp-Dateien, -Volumes und Active Directory-Verbindungen.
+- **Pro Host/Persona:** Konfigurieren Sie FSLogix auf Sitzungshost-VMs.
+- **Pro Benutzer:** Weisen Sie der Hostsitzung Benutzer zu.
 
 Sie können auch [Azure Files verwenden, um Benutzerprofile zu hosten](/azure/virtual-desktop/create-file-share). Dies erfordert einige zusätzliche Schritte im Bereich, einschließlich:
 
-- **Pro Azure Files-Instanz**: Konfigurieren Sie das Speicherkonto, den Datenträgertyp und die Active Directory-Verbindung ([Active Directory Domain Services (AD DS) wird ebenfalls unterstützt](/azure/virtual-desktop/create-profile-container-adds)), weisen Sie einer Active Directory-Benutzergruppe die rollenbasierte Zugriffssteuerung zu, wenden Sie NTFS-Berechtigungen (New Technology File System) an, und rufen Sie den Zugriffsschlüssel für das Speicherkonto ab.
-- **Pro Host/Persona**: Konfigurieren Sie FSLogix auf Sitzungshost-VMs.
-- **Pro Benutzer**: Weisen Sie der Hostsitzung Benutzer zu.
+- **Pro Azure Files-Instanz:** Konfigurieren Sie das Speicherkonto, den Datenträgertyp und die Active Directory-Verbindung ([Active Directory Domain Services (AD DS) wird ebenfalls unterstützt](/azure/virtual-desktop/create-profile-container-adds)), weisen Sie einer Active Directory-Benutzergruppe die rollenbasierte Zugriffssteuerung zu, wenden Sie NTFS-Berechtigungen (New Technology File System) an, und rufen Sie den Zugriffsschlüssel für das Speicherkonto ab.
+- **Pro Host/Persona:** Konfigurieren Sie FSLogix auf Sitzungshost-VMs.
+- **Pro Benutzer:** Weisen Sie der Hostsitzung Benutzer zu.
 
 Die Benutzerprofile für einige Personas oder Benutzer erfordern möglicherweise auch eine Datenmigration, die die Migration bestimmter Personas verzögern kann, bis Korrekturen an den Benutzerprofilen innerhalb Ihrer lokalen Active Directory-Instanz oder auf einzelnen Benutzerdesktops vorgenommen werden können. Diese Verzögerung könnte den Bereich außerhalb des Windows Virtual Desktop-Szenarios erheblich beeinträchtigen. Nach deren Behebung können der ursprüngliche Bereich und die vorhergehenden Ansätze wieder aufgenommen werden.
 

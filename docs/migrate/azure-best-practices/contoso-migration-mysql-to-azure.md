@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 39b9d4781b5caabed5524577be9819e4544ec665
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a7fb9e0887cb5cd60ba48783b152d20f0213ba71
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567154"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882038"
 ---
 <!-- cSpell:ignore mysqldump InnoDB binlog Navicat -->
 
@@ -59,7 +59,7 @@ Verwenden von Azure Database Migration Service, um die Datenbank zu einer Azur
 ### <a name="database-considerations"></a>Überlegungen zu Datenbanken
 
 <!-- TODO: Verify GraphDBMS term -->
-<!-- docsTest:ignore ColumnStore GraphDBMS -->
+<!-- docsTest:casing ColumnStore "Graph DBMS" -->
 
 Im Rahmen des Lösungsentwurfs hat Contoso die in Azure verfügbaren Features für das Hosting der MySQL-Daten geprüft. Die folgenden Überlegungen haben dabei im Unternehmen zu der Entscheidung für Azure geführt:
 
@@ -68,7 +68,7 @@ Im Rahmen des Lösungsentwurfs hat Contoso die in Azure verfügbaren Features f�
 - Azure Database for MySQL verfügt über die erforderlichen Compliance- und Datenschutzzertifizierungen, die Contoso für seine Prüfer einhalten muss.
 - Die Verarbeitungsleistung für Berichte und Anwendung wird durch die Verwendung von Lesereplikaten verbessert.
 - Der Dienst kann mithilfe von [Azure Private Link](/azure/mysql/concepts-data-access-security-private-link) nur für den internen Netzwerkdatenverkehr (kein öffentlicher Zugriff) verfügbar gemacht werden.
-- Contoso hat entschieden, nicht zu Azure Database for MySQL zu wechseln, da möglicherweise in Zukunft das MariaDB ColumnStore- und GraphDBMS-Datenbankmodell verwendet werden soll.
+- Contoso hat entschieden, nicht zu Azure Database for MySQL zu wechseln, da möglicherweise in Zukunft das MariaDB ColumnStore- und Graph DBMS-Datenbankmodell verwendet werden soll.
 - Abgesehen von den MySQL-Features ist Contoso ein Befürworter echter Open-Source-Projekte und entscheidet sich gegen den Einsatz von MySQL.
 - Die [Bandbreite und Wartezeit](/azure/vpn-gateway/vpn-gateway-about-vpngateways) zwischen der Anwendung und der Datenbank ist je nach ausgewähltem Gateway (Azure ExpressRoute oder Site-to-Site-VPN) ausreichend.
 

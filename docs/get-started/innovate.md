@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 83086286d620f33aa2f92b2f13aa9a0e4c7b1dd2
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 2a3aaf0b2d6e77ecc652315526e6aeb56969289e
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662165"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884367"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>Erste Schritte: Beschleunigen neuer Produkt- und Dienstinnovationen in der Cloud
 
@@ -30,15 +30,12 @@ Erstellen Sie zur Vermeidung gängiger Hindernisse eine klare und prägnante Ges
 
 - Verwenden Sie die [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx), um Beweggründe und gewünschte Geschäftsergebnisse zu erfassen.
 
-<!-- docsTest:ignore "Get started: Accelerate migration" -->
-
 **Hinweis zur Erreichung der Ziele:**
 
 - [Beweggründe](../strategy/motivations.md): Der erste Schritt bei der strategischen Ausrichtung besteht darin, einen Konsens über die Beweggründe für die Innovationsbestrebungen zu erzielen. Beginnen Sie mit dem Verstehen und Kategorisieren von Beweggründen und gemeinsamen Themen der Beteiligten aus dem Geschäftsbereich und dem IT-Bereich.
 - [Geschäftsergebnisse](../strategy/business-outcomes/index.md): Nachdem die Beweggründe ausgerichtet wurden, können die gewünschten Geschäftsergebnisse erfasst werden. Diesen Informationen können Sie klare Metriken entnehmen, mit denen Sie die Gesamttransformation messen können.
 - [Ausgewogene Gestaltung des Portfolios:](../strategy/balance-the-portfolio.md) Innovation ist nicht der richtige Einführungspfad für alle Workloads. Dieser Einführungsansatz eignet sich eher für neue, benutzerdefinierte Anwendungen oder Workloads, für die eine Umstrukturierung oder vollständige Neuerstellung *erforderlich* ist. Wenn die Beweggründe stark zu Innovationen für alle Workloads tendieren, ist es wichtig, das Portfolio zu überprüfen, um sicherzustellen, dass sich mit diesen Investitionen die gewünschte Rendite erzielen lässt. Die Modernisierung bestimmter Ressourcen sowie kleinere Neuerstellungen können zwar innovativ sein, hierfür sind jedoch ggf. folgende Informationen besser geeignet: [Erste Schritte: Beschleunigen der Migration](./migrate.md).
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -58,7 +55,6 @@ Bewerten Sie in diesem ersten Durchgang für die Erstellung des Geschäftsszenar
 - [Geschäftliche Begründung](../strategy/cloud-migration-business-case.md): Vor der Bewertung der einzelnen Innovationsmöglichkeiten in der Cloud sollten Sie eine allgemeine geschäftliche Begründung erstellen, an der sich die Beteiligten im Zusammenhang mit dem allgemeinen Einführungsplan orientieren können.
 - [Konsens über den geschäftlichen Nutzen](../innovate/business-value.md): In der Anfangsphase des Prozesses lässt sich der Nutzen einer Innovation unter Umständen nicht so leicht quantifizieren. Die Übung in diesem Artikel kann dabei helfen, die Ausrichtung im Hinblick auf den geschäftlichen Nutzen einer bestimmten Innovationsbestrebung zu bewerten.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -87,7 +83,6 @@ Sollten abhängige Systeme vorhanden sein, können Sie sich bei der Ermittlung u
 - [Vorhandener Systembestand](../digital-estate/inventory.md): Der erste Schritt besteht darin, sich auf der Grundlage eines programm- und datengesteuerten Ansatzes mit dem Ist-Zustand vertraut zu machen. Ermitteln und sammeln Sie Daten, um alle Bewertungsaktivitäten zu ermöglichen.
 - [Inkrementelle Rationalisierung](../digital-estate/rationalize.md#incremental-rationalization): Optimieren der Bewertungsbemühungen, um sich möglicherweise sogar zur Unterstützung des Geschäftsszenarios auf eine qualitative Analyse aller Ressourcen zu konzentrieren. Fügen Sie dann eine umfassende qualitative Analyse für die ersten zehn Workloads hinzu.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -114,7 +109,6 @@ Wenn neue Innovationen von vorhandenen Workloads oder Ressourcen abhängig sind,
 - [Aufwandsausrichtung](../plan/assets.md): Passen Sie Ressourcen und Workloads im Rückstand an, um den Aufwand für priorisierte Workloads eindeutig zu definieren.
 - [Ausrichtung von Personen und Zeit](../plan/iteration-paths.md): Legen Sie Iteration, Geschwindigkeit und Releases für die Workloads fest.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -137,7 +131,6 @@ Diese Links helfen dem Einführungsteam dabei, den vom Cloudgovernanceteam verfo
 - [Governanceansatz](../govern/index.md): Diese Methodik beschreibt einen Prozess für Überlegungen zu Unternehmensrichtlinien und -prozessen. Dann können Sie die Fachrichtungen aufbauen, die erforderlich sind, um Governance in Ihrem gesamten Cloudunternehmen zu gewährleisten.
 - [Definieren der Unternehmensrichtlinie:](../govern/corporate-policy.md) Identifizieren und mindern Sie Geschäftsrisiken.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -159,7 +152,6 @@ Definieren Sie den Plan für langfristige operative Zuständigkeiten für die ge
 - [Spezifische Angaben zu erweiterten Vorgängen](../manage/design-principles.md): Entdecken Sie Möglichkeiten, Ihre Verwaltungsbaseline zu übertreffen.
 - Sollten erweiterte Vorgänge zur Unterstützung Ihrer betrieblichen Anforderungen erforderlich sein, bewerten Sie die [geschäftlichen Verpflichtungen](../manage/considerations/business-alignment.md), um betriebliche Zuständigkeiten für beide Teams zu bestimmen.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -184,7 +176,6 @@ Die Verwendung einer freigegebenen Zielzone bereits bei Beginn hilft Ihrem Team 
 - [Auswählen einer Zielzone](../ready/landing-zone/index.md): Ermitteln Sie anhand dieses Abschnitts den richtigen Ansatz für die Bereitstellung einer Zielzone basierend auf Ihrem Einführungsmuster. Stellen Sie dann diese standardisierte Codebasis bereit.
 - [Erweitern der Zielzone](../ready/considerations/index.md): Identifizieren Sie unabhängig vom Ausgangspunkt Lücken in der bereitgestellten Zielzone, um erforderliche Komponenten für Ressourcenorganisation, Sicherheit, Governance, Compliance und Betrieb hinzuzufügen.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -227,7 +218,6 @@ Die Bewertung dauert zwischen fünf und zehn Minuten und ermittelt die Bereitsch
 
 - Nach Abschluss der Bewertung gibt das Tool ein Ergebnis für Ihre geschätzte KI-Innovationsreife aus.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |

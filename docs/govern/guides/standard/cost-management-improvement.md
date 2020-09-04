@@ -8,20 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 44e3cb4488833b2c47d101ed6b5600872d4ccf62
-ms.sourcegitcommit: 9a84c2dfa4c3859fd7d5b1e06bbb8549ff6967fa
+ms.openlocfilehash: 496065642e8bbd212cc9cf5a24597e489b24a6ca
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83754768"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88880508"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-cost-management-discipline"></a>Governanceleitfaden für Standardunternehmen: Verbessern der Disziplin „Cost Management“
 
 Dieser Artikel führt die Geschichte fort, indem dem Governance-MVP Kostenkontrolle hinzugefügt wird.
 
 ## <a name="advancing-the-narrative"></a>Fortführen der Geschichte
-
-<!-- docsTest:ignore DR -->
 
 Die Einführung hat sich über den im Governance-MVP definierten Kostentoleranzindikator hinaus entwickelt. Das ist gut so, denn dies korrespondiert mit Migrationen aus dem Datencenter „DR“. Die Steigerung in den Ausgaben rechtfertigt jetzt den Aufwand an Zeit seitens des Cloudgovernanceteams.
 
@@ -38,7 +36,7 @@ Seit diesem Zeitpunkt haben sich einige Dinge geändert, die sich auf die Govern
 
 ### <a name="incrementally-improve-the-future-state"></a>Inkrementelles Verbessern des zukünftigen Status
 
-Die Cloudlösung soll um Kostenüberwachung und -berichterstellung erweitert werden. Die IT dient nach wie vor als Kostenverrechnungsstelle. Das bedeutet, dass die Vergütung für Clouddienste weiterhin aus der IT-Beschaffung stammt. Die Berichterstellung sollte jedoch die direkten Betriebskosten an die Funktionen binden, die die Cloudkosten verbrauchen. Dieses Modell wird als _Showback_-Modell für die Cloudbuchhaltung bezeichnet.
+Die Cloudlösung soll um Kostenüberwachung und -berichterstellung erweitert werden. Die IT dient nach wie vor als Kostenverrechnungsstelle. Das bedeutet, dass die Vergütung für Clouddienste weiterhin aus der IT-Beschaffung stammt. Die Berichterstellung sollte jedoch die direkten Betriebskosten an die Funktionen binden, die die Cloudkosten verbrauchen. Dieses Modell wird als *Showback*-Modell für die Cloudbuchhaltung bezeichnet.
 
 Die Änderungen des aktuellen und zukünftigen Status bergen neue Risiken, die neue Richtlinienanweisungen erfordern.
 
@@ -65,13 +63,13 @@ Die folgenden Änderungen an der Richtlinie verringern die neuen Risiken und ver
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>Inkrementelle Verbesserungen der bewährten Methoden
 
-In diesem Abschnitt des Artikels wird der Governance-MVP-Entwurf so geändert, dass er neue Azure-Richtlinien und eine Implementierung von Azure Cost Management umfasst. Zusammen erfüllen diese beiden Entwurfsänderungen die neuen Richtlinienanweisungen des Unternehmens.
+In diesem Abschnitt des Artikels wird der Governance-MVP-Entwurf so geändert, dass er neue Azure-Richtlinien und eine Implementierung von Azure Cost Management und Abrechnung umfasst. Zusammen erfüllen diese beiden Entwurfsänderungen die neuen Richtlinienanweisungen des Unternehmens.
 
-1. Implementieren von Azure Cost Management.
-    1. Legen Sie den richtigen Zugriffsumfang fest, um ihn an das Abonnementmuster und die Disziplin „Ressourcenkonsistenz“ anzupassen. Unter der Annahme der Angleichung an das in früheren Artikeln definierte Governance-MVP erfordert dies Zugriff des Umfangs **Registrierungskonto** für das Cloudgovernanceteam, das die Berichtserstellung auf hoher Ebene durchführt. Weitere Teams außerhalb von Governance benötigen möglicherweise Zugriff des Umfangs **Ressourcengruppe**.
-    1. Einrichten eines Budgets in Azure Cost Management.
+1. Implementieren Sie Azure Cost Management und Abrechnung.
+    1. Legen Sie den richtigen Zugriffsumfang fest, um ihn an das Abonnementmuster und die Disziplin „Ressourcenkonsistenz“ anzupassen. Unter der Annahme der Angleichung an das in früheren Artikeln definierte Governance-MVP erfordert dies Zugriff auf den **Geltungsbereich des Registrierungskontos** für das Cloudgovernanceteam, das die Berichtserstellung auf hoher Ebene durchführt. Weitere Teams außerhalb von Governance benötigen möglicherweise Zugriff auf den Geltungsbereich der **Ressourcengruppe**.
+    1. Einrichten eines Budgets in Azure Cost Management und Abrechnung.
     1. Überprüfen Sie die anfänglichen Empfehlungen, und reagieren Sie entsprechend. Nutzen Sie einen regelmäßiger Prozess zur Unterstützung der Berichterstellung.
-    1. Konfigurieren Sie die Azure Cost Management-Berichterstellung mit anfänglicher und regelmäßiger Ausführung.
+    1. Konfigurieren Sie die Berichterstellung für Azure Cost Management und Abrechnung mit anfänglicher und regelmäßiger Ausführung.
 2. Aktualisieren von Azure Policy
     1. Überwachen Sie die Tagging-, Verwaltungsgruppen-, Abonnement- und Ressourcengruppenwerte, um Abweichungen zu identifizieren.
     1. Legen Sie Optionen für die SKU-Größe fest, um die Bereitstellung auf die in der Dokumentation zur Bereitstellungsplanung aufgeführten SKUs zu beschränken.

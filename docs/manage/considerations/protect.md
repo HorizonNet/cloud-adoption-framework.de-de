@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 423c87fd351f3220710ab35ffe0bc4e6beac3a1d
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 7b924c02fa1028d7df6206a021c2c7e4a6bb8a4f
+ms.sourcegitcommit: af521583b98153f7157895b7ba9de71183d437b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223897"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89176462"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>Schutz und Wiederherstellung in der Cloudverwaltung
 
@@ -67,6 +67,8 @@ Die meisten Workloads sind teilweise von virtuellen Computern abhängig, die ver
 Jede Minute Ausfallzeit dieser virtuellen Computer kann Umsatzverlust oder eine geringere Rentabilität nach sich ziehen. Wenn sich Ausfallzeiten von virtuellen Computern direkt auf das finanzielle Ergebnis des Geschäfts auswirken, ist die RTO sehr wichtig. Durch Replikation zu einem sekundären Standort und automatisierte Wiederherstellungsprozesse lassen sich virtuelle Computer schneller wiederherstellen. Dieses Modell wird als „Hot/Warm-Wiederherstellungsmodell“ bezeichnet. Virtuelle Computer mit dem höchsten Wiederherstellungsstatus können zu einem voll funktionsfähigen sekundären Standort repliziert werden. Dieser kostenintensivere Ansatz wird als Wiederherstellungsmodell mit hoher Verfügbarkeit oder „Hot/Hot-Wiederherstellungsmodell“ bezeichnet.
 
 Jedes der eben genannten Modelle reduziert die RTO und sorgt dafür, dass Geschäftsprozessfunktionen schneller wiederhergestellt werden. Allerdings zieht jedes Modell auch deutlich höhere Cloudverwaltungskosten nach sich.
+
+Beachten Sie außerdem, dass, abgesehen von der Replikation für Hochverfügbarkeit, die Sicherungen für Szenarien wie „versehentliches Löschen“, „Datenbeschädigung“ und „Ransomwareangriffe“ aktiviert werden sollten.
 
 Weitere Informationen zu diesem Denkprozess finden Sie unter [Disziplin „Workloadbetrieb“](./workload.md).
 

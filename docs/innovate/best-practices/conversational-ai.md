@@ -7,13 +7,14 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 277d208ccdb2dda3e25994893f07c542cb3e87bf
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 1cdf730339c30f681fc1dc39cad85fcd9c8a909f
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573172"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884520"
 ---
+<!-- docsTest:casing "natural language understanding" -->
 <!-- cSpell:ignore Twilio -->
 
 # <a name="what-are-ai-agents"></a>Was sind KI-Agents?
@@ -32,8 +33,6 @@ Organisationen auf der ganzen Welt nutzen Konversations-KI, um eine effizientere
 Azure Bot Service und Bot Framework bieten integrierte Tools und Dienste, die diesen Prozess vereinfachen. Verwenden Sie Ihre bevorzugte Entwicklungsumgebung oder bevorzugten Befehlszeilentools, um Ihren Bot zu erstellen. Es sind SDKs für C#, JavaScript, TypeScript und Python verfügbar. Das SDK für Java wird derzeit entwickelt. Wir stellen Tools für unterschiedliche Phasen der Bot-Entwicklung bereit, um Sie beim Entwerfen und Erstellen von Bots zu unterstützen.
 
 ![Diagramm mit Tools für die verschiedenen Phasen der Bot-Entwicklung](../../_images/ai-bot-dev-tools.png)
-
-<!-- docsTest:ignore "natural language understanding" -->
 
 ### <a name="plan"></a>Planen
 
@@ -90,13 +89,11 @@ Verbinden Sie Ihren Bot mit Kanälen wie Facebook, Messenger, Kik, Skype, Slack,
 
 Verwenden Sie die im Azure-Portal erfassten Daten, um Möglichkeiten zur Verbesserung der Funktionen und der Leistung Ihres Bots zu ermitteln. Sie können einen Servicelevel und Instrumentierungsdaten wie Datenverkehr, Latenz und Integrationen abrufen. Analytics bieten außerdem Berichterstellung für Benutzer-, Nachrichten- und Kanaldaten auf Konversationsebene. Weitere Informationen finden Sie unter [Botanalyse](/azure/bot-service/bot-service-manage-analytics?view=azure-bot-service-4.0).
 
-<!-- docsTest:ignore "John Doe" "Jane Doe" -->
-
 ### <a name="patterns-for-common-use-cases"></a>Muster für gängige Anwendungsfälle
 
 In diesem Abschnitt finden Sie Informationen zu allgemeinen Mustern für die Implementierung einer Anwendung mit Konversations-KI:
 
-- **Wissensdatenbank:** Ein Wissensbot kann so entworfen werden, dass er Informationen zu so gut wie jedem Thema bereitstellt. So kann ein Wissensbot beispielsweise Fragen zu Veranstaltungen beantworten, etwa: „Welche Veranstaltungen zu Bots finden auf dieser Konferenz statt?“ oder „Wann findet das nächste Reggaekonzert statt?“. Ein anderer Bot beantwortet hingegen möglicherweise IT-bezogene Fragen wie „Wie aktualisiere ich mein Betriebssystem?“. Wieder ein anderer Bot beantwortet möglicherweise Fragen zu Kontakten wie „Wer ist John Doe?“. oder „Wie lautet die E-Mail-Adresse von Laura Becker?“
+- **Wissensdatenbank:** Ein Wissensbot kann so entworfen werden, dass er Informationen zu so gut wie jedem Thema bereitstellt. So kann ein Wissensbot beispielsweise Fragen zu Veranstaltungen beantworten, etwa: „Welche Veranstaltungen zu Bots finden auf dieser Konferenz statt?“ Oder „Wann findet das nächste Reggaekonzert statt?“. Ein anderer Bot beantwortet hingegen möglicherweise IT-bezogene Fragen wie „Wie aktualisiere ich mein Betriebssystem?“. Wieder ein anderer Bot beantwortet möglicherweise Fragen zu Kontakten wie „Wer ist John Doe?“. Oder „Wie lautet die E-Mail-Adresse von Jane Doe?“.
 
    Informationen zu den Entwurfselementen für Wissensbots finden Sie unter [Entwerfen von Wissensbots](/azure/bot-service/bot-service-design-pattern-knowledge-base?view=azure-bot-service-4.0).
 

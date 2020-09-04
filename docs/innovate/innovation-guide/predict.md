@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2e8a4b21fa23eef21d0330c1f89e56fd7d56814a
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 200fb15bf84ce24a88a25e0c39c35859bd8363b7
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567834"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882871"
 ---
 <!-- cSpell:ignore ONNX -->
 
@@ -39,7 +39,7 @@ Als Innovator verfügt Ihr Unternehmen über umfassende Informationen zum Gesch�
 
 Azure bietet erweiterte Machine Learning-Funktionen. Mit Azure Machine Learning können Sie Ihre Machine Learning-Modelle in der Cloud und Edge-übergreifend erstellen, trainieren und bereitstellen. Entwickeln Sie Modelle schneller mit automatisiertem maschinellen Lernen. Verwenden Sie Tools und Frameworks Ihrer Wahl, ohne darauf begrenzt zu sein.
 
-Weitere Informationen finden Sie in der [Übersicht über Azure Machine Learning](/azure/machine-learning/overview-what-is-azure-ml) und im Tutorial zu den [ersten Schritten mit dem ersten Machine Learning-Experiment](/azure/machine-learning/tutorial-1st-experiment-sdk-setup). Weitere Informationen zum Open-Source-Modellformat und zur Runtime für Machine Learning finden Sie unter [ONNX Runtime](http://onnxruntime.ai).
+Weitere Informationen finden Sie unter [Übersicht über Azure Machine Learning](/azure/machine-learning/overview-what-is-azure-ml) und [Erste Schritte mit dem ersten Machine Learning-Experiment](/azure/machine-learning/tutorial-1st-experiment-sdk-setup). Weitere Informationen zum Open-Source-Modellformat und zur Runtime für Machine Learning finden Sie unter [ONNX Runtime](http://onnxruntime.ai).
 
 <!-- markdownlint-disable MD024 -->
 

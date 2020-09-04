@@ -9,17 +9,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 6e83c1deceed6e6c49e197d88d60ea641b00b1c5
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: d6b4e20d484bb055beaf6998e9aca6f97437217c
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575229"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884469"
 ---
-<!-- cSpell:ignore tvuylsteke >
-
-<!-- markdownlint-disable MD024 MD025 -->
-
 # <a name="governance-security-and-compliance-in-azure"></a>Governance, Sicherheit und Konformität in Azure
 
 Wenn Sie Unternehmensrichtlinien festlegen und Ihre Governancestrategien planen, können Sie Tools und Dienste wie Azure Policy, Azure Blueprints und Azure Security Center verwenden, um die Governanceentscheidungen Ihres Unternehmens durchzusetzen und zu automatisieren. Verwenden Sie vor Beginn Ihrer Governanceplanung das [Governancebenchmarktool](https://cafbaseline.com), um potenzielle Lücken im Cloudgovernanceansatz Ihres Unternehmens zu identifizieren. Weitere Informationen zum Entwickeln von Governanceprozessen finden Sie in der [Governancemethodologie](../../govern/index.md).
@@ -54,9 +50,7 @@ So erstellen Sie eine Blaupause
 
 ::: zone target="docs"
 
-<!-- docsTest:ignore "Next : Artifacts" "Blueprints: Get started" "Blueprints: Blueprint definitions" -->
-
-1. Wechseln Sie zu [Blaupausen: Erste Schritte](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted).
+1. Wechseln Sie im Azure-Portal zu [Blaupausen: Erste Schritte](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted).
 1. Wählen Sie im Abschnitt **Blaupause erstellen** die Option **Erstellen** aus.
 1. Filtern Sie die Liste mit den Blaupausen, um die gewünschte Blaupause auszuwählen.
 1. Geben Sie unter **Name der Blaupause** den Namen ein, und wählen Sie anschließend den entsprechenden **Definitionsspeicherort** aus.
@@ -82,7 +76,7 @@ Veröffentlichen Sie wie folgt ein Blaupausenartefakt für Ihr Abonnement:
 
 ::: zone target="docs"
 
-1. Wechseln Sie zu [Blaupausen: Blaupausendefinitionen](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
+1. Wechseln Sie im Azure-Portal zu [Blaupausen: Blaupausendefinitionen](https://portal.azure.com/#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/Blueprints).
 1. Wählen Sie die Blaupausendefinition aus, die Sie in den vorherigen Schritten erstellt haben.
 1. Überprüfen Sie die Blaupausendefinition, und wählen Sie anschließend **Blaupause veröffentlichen** aus.
 1. Geben Sie eine **Version** (z. B. _1.0_) sowie **Änderungshinweise** an, und wählen Sie anschließend **Veröffentlichen** aus.

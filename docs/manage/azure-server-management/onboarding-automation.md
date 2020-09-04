@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 340e779abb1864a5644a96c9d1a4611b3a40415b
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: b3c32b6d6afa9b640dd379230865728fbd53c925
+ms.sourcegitcommit: af521583b98153f7157895b7ba9de71183d437b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571982"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89176479"
 ---
 # <a name="automate-onboarding"></a>Automatisieren des Onboardings
 
@@ -31,6 +31,8 @@ Die Beispieldateien veranschaulichen, wie Sie Azure PowerShell-Cmdlets verwenden
 - Aktivieren Sie die Updateverwaltung und die Änderungsnachverfolgung sowie die Inventarisierung für den Arbeitsbereich.
 
 - Führen Sie das Onboarding für virtuelle Azure-Computer unter Verwendung von Azure Policy durch. Eine Richtlinie installiert den Log Analytics- und den Microsoft Dependency-Agent auf den virtuellen Azure-Computern.
+
+- Automatisches Aktivieren von Azure Backup für VMs mit [Azure Policy](https://docs.microsoft.com/azure/backup/backup-azure-auto-enable-backup)
 
 - Führen Sie das Onboarding auf lokalen Servern durch, indem Sie den Log Analytics-Agent auf ihnen installieren.
 

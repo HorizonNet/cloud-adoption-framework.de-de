@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: aba505bea5b8bafc8a8d49a04c2a0086363d9cc4
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: b0536b627d9039f348f1c069bb1ae5ed4e4e74a6
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567868"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88882990"
 ---
 <!-- cSpell:ignore umarmohamedusman umarm Moovit -->
 
@@ -34,11 +34,7 @@ Azure-Kunden verwenden eine ständig wachsende Anzahl von vernetzten Systemen un
 > - [Azure SQL Edge](/azure/azure-sql-edge/overview)
 > - [IoT Plug & Play](/azure/iot-pnp/overview-iot-plug-and-play)
 
-<!-- markdownlint-disable MD025 -->
-
 ## <a name="global-scale-iot-service"></a>[IoT-Dienst auf globaler Ebene](#tab/IoTHub)
-
-<!-- markdownlint-enable MD025 -->
 
 Entwerfen Sie Lösungen, die eine bidirektionale Kommunikation mit IoT-Geräten im Milliardenbereich ermöglichen. Verwenden Sie integrierte Gerät-zu-Cloud-Telemetriedaten, um den Zustand Ihrer Geräte zu verstehen und Nachrichtenrouten an andere Azure-Dienste durch einfache Konfiguration zu definieren. Durch Nutzen von Nachrichten, die von der Cloud an Geräte gesendet werden, können Sie auf zuverlässige Weise Befehle und Benachrichtigungen an Ihre verbundenen Geräte senden und die Nachrichtenübermittlung mithilfe von Empfangsbestätigungen nachverfolgen. Lassen Sie das Senden von Gerätemeldungen bei Bedarf automatisch wiederholen, um zeitweilige Konnektivitätsprobleme zu überbrücken.
 
@@ -92,8 +88,6 @@ So erstellen Sie einen Azure IoT Hub Device Provisioning Service:
 
 ::: zone-end
 
-<!-- markdownlint-disable MD025 -->
-
 ## <a name="azure-digital-twins"></a>[Azure Digital Twins](#tab/DigitalTwins)
 
 Erstellen Sie wiederverwendbare, hochgradig skalierbare und raumbezogene Umgebungen, die Streamingdaten aus der physischen und der digitalen Welt miteinander verknüpfen. Verbessern Sie Ihre Kundenbindung mit umfassenden Modellen physischer Umgebungen. Generieren Sie Raumintelligenzgraphen, um die Beziehungen und Interaktionen zwischen Personen, Bereichen und Geräten zu modellieren. Fragen Sie Daten aus einem physischen Raum ab, statt von verschiedenen Sensoren.
@@ -128,8 +122,6 @@ Zum Erstellen von Azure Digital Twins gehen Sie folgendermaßen vor:
 <!-- markdownlint-enable DOCSMD001 -->
 
 ::: zone-end
-
-<!-- markdownlint-disable MD025 -->
 
 ## <a name="location-intelligence"></a>[Location Intelligence](#tab/AzureMaps)
 

@@ -7,12 +7,12 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 9672d7ba47c18202e685c18372ed1773674be069
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 2cb7faca74334538f48b1a57e3bd6b70f3983e43
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575059"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885523"
 ---
 # <a name="govern-an-azure-instance-in-your-datacenter"></a>Steuern einer Azure-Instanz in Ihrem Rechenzentrum
 

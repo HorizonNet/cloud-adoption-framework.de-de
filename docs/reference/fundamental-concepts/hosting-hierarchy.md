@@ -7,12 +7,12 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d694ede067b5881bf4a35742c2a3b0e0756a89ad
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 876465ac626d99e8a975f284f0db02ac131ea2be
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88661757"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885608"
 ---
 <!-- cSpell:ignore matrixed ISVs -->
 
@@ -60,7 +60,7 @@ Wenn Unternehmen Workloads mithilfe von Matrix- oder zentralisierten Ansätzen u
 Ein verantwortliches Team verwaltet jede Ebene der Portfoliohierarchie. Die folgende Abbildung zeigt die Zuordnung zwischen dem verantwortlichen Team und der Leitung zur Unterstützung ihrer geschäftlichen und technischen Entscheidungen und der technischen Implementierung.
 
 > [!NOTE]
-> Die in der folgenden Liste genannten Teams sind möglicherweise virtuelle Teams (v-Teams) oder Einzelpersonen. Bei einigen Varianten dieser Hierarchie können einige der verantwortlichen Teams reduziert werden, wie weiter unten in den Varianten der Verantwortlichkeit beschrieben wird.
+> Die in der folgenden Liste genannten Teams sind möglicherweise virtuelle Teams oder Einzelpersonen. Bei einigen Varianten dieser Hierarchie können einige der verantwortlichen Teams reduziert werden, wie weiter unten in den Varianten der Verantwortlichkeit beschrieben wird.
 
 ![An der Hierarchie ausgerichtete Verantwortlichkeit](../../_images/ready/hierarchy-with-roles.png)
 

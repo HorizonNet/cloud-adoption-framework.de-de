@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 93975a3064f6d7056bcbe09aad17c60d9fa2cc06
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: bfbc6924d36a4e4b77a7a23902db18826b2a811b
+ms.sourcegitcommit: 5b537035b96ae2b6879a1ea7fd46ceb64626851d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572781"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89275347"
 ---
 # <a name="enterprise-scale-business-continuity-and-disaster-recovery"></a>Business Continuity & Disaster Recovery auf Unternehmensebene
 
@@ -52,8 +52,6 @@ Berücksichtigen Sie die folgenden Faktoren:
 
   - Bandbreitenkapazitätsplanung für Azure ExpressRoute
 
-  - Gekoppelte Failoverregionen
-
   - Routing von Datenverkehr bei regionalen Ausfällen, Zonen- oder Netzwerkausfällen
 
 - Geplantes und ungeplantes Failover
@@ -70,7 +68,7 @@ Im Folgenden finden Sie bewährte Methoden für Ihren Entwurf:
 
 - Verwenden Sie Azure Site Recovery für Szenarien zur Notfallwiederherstellung von VMs von Azure zu Azure. Auf diese Weise können Sie Workloads regionsübergreifend replizieren.
 
-  Site Recovery bietet integrierte Plattformfunktionen für VM-Workloads, um das geforderte Ziel niedriger RPO/RTO-Werte per Echtzeitreplikation und Wiederherstellungsautomatisierung zu erfüllen. Zusätzlich bietet der Dienst die Möglichkeit, Wiederherstellungstestläufe ohne Auswirkung auf die Workloads in der Produktion auszuführen.
+  Site Recovery bietet integrierte Plattformfunktionen für VM-Workloads, um das geforderte Ziel niedriger RPO/RTO-Werte per Echtzeitreplikation und Wiederherstellungsautomatisierung zu erfüllen. Zusätzlich bietet der Dienst die Möglichkeit, Wiederherstellungstestläufe ohne Auswirkung auf die Workloads in der Produktion auszuführen. Sie können Azure Policy verwenden, um die Replikation zu aktivieren und auch den Schutz Ihrer VMs zu überwachen.
 
 - Verwenden Sie native PaaS-Dienstfunktionen für die Notfallwiederherstellung.
 
@@ -84,15 +82,6 @@ Im Folgenden finden Sie bewährte Methoden für Ihren Entwurf:
 
   Eine redundante hybride Netzwerkarchitektur kann bei einem Ausfall einer Azure-Region oder eines Peering-Anbieterstandorts dazu beitragen, eine unterbrechungsfreie, standortübergreifende Konnektivität zu gewährleisten.
 
-- Informationen zur Auswahl von Standorten für den Entwurf der Notfallwiederherstellung Ihrer Organisation finden Sie in den [Azure-Regionspaaren](/azure/best-practices-availability-paired-regions).
-
-- Verwenden Sie gekoppelte Azure-Regionen, wenn Sie Business Continuity und DR planen.
-
-- Azure führt geplante Systemupdates für Regionspaare nacheinander und nicht gleichzeitig aus. Dadurch lassen sich Downtime, die Auswirkungen von Fehlern und logische Ausfälle im seltenen Fall eines fehlerhaften Updates minimieren.
-
-- Bei einem weitreichenden Ausfall hat bei jedem Regionspaar die Wiederherstellung einer der Regionen Priorität. Für Anwendungen, die in Regionspaaren bereitgestellt sind, wird die priorisierte Wiederherstellung einer der Regionen garantiert. Wenn eine Anwendung in Regionen bereitgestellt wird, die nicht zu Regionspaaren gehören, kann es im schlimmsten Fall zu einer Verzögerung der Wiederherstellung kommen. Es ist möglich, dass die bevorzugte Region zuletzt wiederhergestellt wird.
-
 - Vermeiden Sie Überschneidungen bei den IP-Adressbereichen für Produktions- und DR-Standorte.
 
   Entwerfen Sie nach Möglichkeit eine Business Continuity- & DR-Netzwerkarchitektur, die eine gleichzeitige Konnektivität mit allen Standorten ermöglicht. Bei DR-Netzwerken, die auf die gleichen klassenlosen Routingblöcke zwischen Domänen zurückgreifen (z. B. bei Produktionsnetzwerken), wird ein Prozess für ein Netzwerkfailover benötigt, der bei einem Anwendungsausfall das Anwendungsfailover erschweren und verzögern kann.
-

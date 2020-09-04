@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 04f105ea9db34d1321056fc325324ed4be038f0b
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a27d3c6a889da10a4f5e1045a15921741c712c7e
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569313"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884265"
 ---
 # <a name="get-started-ensure-consistent-performance-across-a-portfolio"></a>Erste Schritte: Sicherstellen konsistenter Leistung in einem Portfolio
 
@@ -34,7 +34,7 @@ Die im Microsoft Cloud Adoption Framework für Azure beschriebene Betriebsverwal
 
 - Optimieren Sie die Verwaltungsbaseline mit automatisierten Wartungsaufgaben im Zusammenhang mit Abweichungen von Leistungserwartungen.
 - Wenn zur Erfüllung von Leistungsanforderungen workloadspezifische Datenmuster oder Architekturänderungen erforderlich sind, verwenden Sie workloadspezifische Vorgänge, um bessere Leistungsteuerung zu ermöglichen.
-- Dokumentieren von Betriebsentscheidungen im IT-Portfolio in der [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx). Im Abschnitt **Betriebscompliance** der Registerkarte **Baseline** sollten Sie sich auf Entscheidungen zur Automatisierung der Leistung konzentrieren.
+- Dokumentieren von Betriebsentscheidungen im IT-Portfolio in der [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx). Im Abschnitt `Operational Compliance` der Registerkarte `Baseline` sollten Sie sich auf Entscheidungen zur Automatisierung der Leistung konzentrieren.
 
 **Hinweis zur Erreichung der Ziele:**
 
@@ -45,7 +45,6 @@ Die im Microsoft Cloud Adoption Framework für Azure beschriebene Betriebsverwal
 > [!NOTE]
 > Verschiedene Entscheidungen im gesamten Lebenszyklus der Cloudeinführung können sich unmittelbar auf die Leistung auswirken. Die folgenden Schritte unterstützen Sie bei der Gliederung der Partnerschaften und der unterstützenden Bestrebungen, die zur Leistungserbringung im gesamten IT-Portfolio erforderlich sind.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -65,36 +64,34 @@ Im Zuge der Optimierung der Verwaltungsbaseline ist es wichtig, dass die entspre
 
 - Stellen Sie sicher, dass alle Workloads und Ressourcen die [richtigen Benennungs- und Kennzeichnungskonventionen](../ready/azure-best-practices/naming-and-tagging.md) befolgen. [Erzwingen Sie Kennzeichnungskonventionen mithilfe von Azure Policy](/azure/governance/policy/tutorials/govern-tags) mit einem speziellen Schwerpunkt auf Tags für „Wichtigkeit“.
 - Sollten Sie noch nicht mit Cloudgovernance vertraut sein, verwenden Sie die Governancemethodik, um [Governancerichtlinien, -prozesse und -disziplinen](../govern/index.md) einzurichten.
-- Falls Sie noch keine Erfahrung mit der Governancedisziplin „Cost Management“ haben, befassen Sie sich ggf. mit dem folgenden [Artikel zur Verbesserung der Kostenverwaltung](../govern/guides/complex/cost-management-improvement.md) (insbesondere mit dem [Abschnitt zur Implementierung](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)).
+- Falls Sie noch keine Erfahrung mit der Governancedisziplin „Cost Management“ haben, befassen Sie sich ggf. mit dem folgenden [Artikel zur Verbesserung der Disziplin „Cost Management“](../govern/guides/complex/cost-management-improvement.md) (insbesondere mit dem Abschnitt zur [Implementierung](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)).
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudgovernanceteam | <li> Cloudstrategieteam <li> Cloudbetriebsteam <li> Cloudkompetenzzentrum (CCoE) oder zentrales IT-Team |
+| <li> Cloudgovernanceteam | <li> Cloudstrategieteam <li> Cloudbetriebsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
 
 ## <a name="step-3-define-strategy"></a>Schritt 3: Definieren der Strategie
 
 Strategische Entscheidungen wirken sich unmittelbar auf die Leistung sowie indirekt auf den Einführungslebenszyklus und letztendlich auf langfristige Vorgänge aus. Eine klare Strategie trägt zur Verbesserung der Leistungsbestrebungen im gesamten Portfolio bei. Darüber hinaus kann das Betriebsteam dank dieser Klarheit besser nachvollziehen, für welche Workloads ein gewisses Maß an Spezialisierung und erweiterte Vorgänge erforderlich sind.
 
-**Zielvorgaben:**
+**Ziele:**
 
 - Erfassen Sie Beweggründe, Ergebnisse und geschäftliche Begründungen in der [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx).
 - Stellen Sie sicher, dass die Verwaltungsbaseline eine auf die strategische Richtung der Cloudeinführung abgestimmte betriebliche Unterstützung bietet.
 
 **Hinweis zur Erreichung der Ziele:**
 
-- [Verstehen der Beweggründe](../strategy/motivations.md): Wichtige Geschäftsereignisse und einige Migrationsgründe sind tendenziell kostensensibel, was die Wichtigkeit der Kostenkontrolle für alle späteren Maßnahmen erhöht. Andere zukunftsgerichtete Beweggründe, die mit Innovation oder Wachstum durch Migration zu tun haben, sind möglicherweise eher auf den Umsatz ausgerichtet. Wenn Sie die Beweggründe kennen, können Sie besser entscheiden, welche Priorität der Kostenverwaltung eingeräumt werden sollte.
+- [Verstehen der Beweggründe](../strategy/motivations.md): Wichtige Geschäftsereignisse und einige Migrationsgründe sind tendenziell kostensensibel, was die Wichtigkeit der Kostenkontrolle für alle späteren Maßnahmen erhöht. Andere zukunftsgerichtete Beweggründe, die mit Innovation oder Wachstum durch Migration zu tun haben, sind möglicherweise eher auf den Umsatz ausgerichtet. Das Verstehen der Motivationen kann Ihnen bei der Entscheidung helfen, wie hoch die Prioritäten für Ihre Kostenverwaltung zu setzen sind.
 - [Geschäftsergebnisse](../strategy/business-outcomes/index.md): Einige fiskalische Ergebnisse neigen dazu, extrem kostensensibel zu sein. Wenn sich die gewünschten Ergebnisse den fiskalischen Metriken zuordnen lassen, sollten Sie frühzeitig in die Governancedisziplin „Cost Management“ investieren.
 - [Geschäftliche Begründung](../strategy/cloud-migration-business-case.md): Die geschäftliche Begründung dient als allgemeine Übersicht über den Finanzplan für die Cloudeinführung. Sie kann eine gute Quelle für die anfängliche Budgetplanung darstellen.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudstrategieteam | <li> Cloudgovernanceteam <li> Cloudbetriebsteam <li> Cloudkompetenzzentrum (CCoE) oder zentrales IT-Team |
+| <li> Cloudstrategieteam | <li> Cloudgovernanceteam <li> Cloudbetriebsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
 
 ## <a name="step-4-assess-and-plan-for-workload-adoption"></a>Schritt 4: Bewerten und Planen der Workloadeinführung
 
@@ -113,10 +110,9 @@ Wenn Sie den Plan verstehen, können Sie auch das Cloudbetriebsteam in den Entwi
 - [Erfassen von Bestandsdaten](../digital-estate/inventory.md): Richten Sie eine Datenquelle für die Analyse des digitalen Bestands vor der Einführung ein.
 - [Bewährte Methode: Azure Migrate:](../plan/contoso-migration-assessment.md) Verwenden Sie Azure Migrate, um den Bestand zu erfassen.
 - [Inkrementelle Rationalisierung](../digital-estate/rationalize.md#incremental-rationalization): Verwenden Sie während der inkrementellen Rationalisierung eine quantitative Analyse, um Cloudkandidaten für Budgetierungszwecke zu identifizieren.
-- [Abstimmen von Kostenmodellen und Vorhersagemodellen](../digital-estate/calculate.md): Verwenden Sie Azure Cost Management, um Kosten- und Vorhersagemodelle durch [Erstellen von Budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json) abzustimmen.
+- [Abstimmen von Kostenmodellen und Vorhersagemodellen](../digital-estate/calculate.md): Verwenden Sie Azure Cost Management und Abrechnung, um Kosten- und Vorhersagemodelle durch [Erstellen von Budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) abzustimmen.
 - [Entwickeln Ihres Cloudeinführungsplans](../plan/plan-intro.md#build-your-cloud-adoption-plan): Erstellen Sie einen Plan mit handlungsrelevanten Details zu Workloads und Ressourcen sowie zum zeitlichen Ablauf.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -138,7 +134,6 @@ Lassen Sie sich bei der Prüfung der Zielzone auf mögliche Betriebsverbesserung
 
 - [Verbessern des Betriebs von Zielzonen](../ready/considerations/landing-zone-operations.md): Bewährte Methoden zur Verbesserung des Betriebs innerhalb einer Zielzone.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -155,13 +150,12 @@ Der langfristige Betrieb kann durch die Entscheidungen beeinflusst werden, die S
 - Überprüfen Sie die Einhaltung von Entwurfsrichtlinien und Betriebsanforderungen für Ressourcenkonsistenz.
 - Dokumentieren Sie alle erweiterten Betriebsanforderungen in der [Arbeitsmappe zum Operations Management](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/manage/opsmanagementworkbook.xlsx).
 
-**Hinweis zur Erreichung der Zielvorgaben:**
+**Hinweis zur Erreichung der Ziele:**
 
 - [Prüfliste zur Bereitschaft der Umgebung](../migrate/migration-considerations/prerequisites/planning-checklist.md)
 - [Prüfliste vor der Höherstufung](../migrate/migration-considerations/optimize/ready.md)
 - [Prüfliste für Produktionsreleases](../migrate/migration-considerations/optimize/promote.md)
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |

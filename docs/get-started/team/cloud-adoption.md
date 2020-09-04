@@ -3,16 +3,16 @@ title: 'Erste Schritte: Aufbauen eines Cloudeinführungsteams'
 description: Legen Sie zur Vorbereitung einer erfolgreichen Cloudeinführung den Aufgabenbereich, die Ziele und die Funktionen eines Cloudeinführungsteams fest.
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: 48d6bb16956f31d5581ab3f6f11d51fd55e0ba49
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 337e02f787c8ebcc18f206b4dfa87a894059262a
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573886"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88884197"
 ---
 # <a name="get-started-build-a-cloud-adoption-team"></a>Erste Schritte: Aufbauen eines Cloudeinführungsteams
 
@@ -64,7 +64,7 @@ Wenn die Cloudeinführungsbestrebung Ihres Unternehmens weit genug vorangeschrit
 - In den [Governancedisziplinen](../../govern/corporate-policy.md) werden die Arten von Kontrollen oder disziplinierten Prozessen beschrieben, die das Governanceteam wahrscheinlich implementiert hat, um eine sichere und konforme Cloudeinführung zu ermöglichen.
 - In der [Verwaltungsmethodik](../../manage/index.md) werden die Überlegungen erläutert, die in eine Cloudbetriebsbaseline einfließen, um eine grundlegende Betriebsverwaltung bereitzustellen.
 
-<!-- markdownlint-disable MD033 -->
+<br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
@@ -72,12 +72,12 @@ Wenn die Cloudeinführungsbestrebung Ihres Unternehmens weit genug vorangeschrit
 
 ## <a name="step-3-begin-your-adoption-journey"></a>Schritt 3: Starten des Einführungsprozesses
 
-Abhängig von der Art des Einführungsteams, dem Sie angehören, beginnen Sie mit einem dieser Prozesse:
+Abhängig von der Art des Einführungsteams, dem Sie angehören, beginnen Sie mit einem dieser Leitfäden:
 
 - Erste Schritte: Migrieren von Workloads zur Cloud
 - Erste Schritte: Erstellen neuer Produkte oder Dienste
 
-Diese Leitfäden zu den ersten Schritten bieten Anleitungen für verschiedene Teams, die zusammen mit den unterschiedlichen Verantwortlichkeiten und Zuständigkeiten aufgeführt werden. Orientieren Sie sich an diesen Leitfäden, um die Rolle Ihres Teams in Relation zum restlichen Prozess zu verstehen. Sie geben auch Aufschluss über den Grad der Unterstützung, die Sie innerhalb des Unternehmens erwarten können.
+Diese Leitfäden bieten Anleitungen für verschiedene Teams, die zusammen mit den unterschiedlichen Verantwortlichkeiten und Zuständigkeiten aufgeführt werden. Orientieren Sie sich an diesen Leitfäden, um die Rolle Ihres Teams in Relation zum restlichen Prozess zu verstehen. Sie geben auch Aufschluss über den Grad der Unterstützung, die Sie innerhalb des Unternehmens erwarten können.
 
 Letztendlich ist das Cloudeinführungsteam für die Umsetzung zugewiesener Migrationsbestrebungen bzw. die Entwicklung neuer Produkte verantwortlich. Unterstützende Teams müssen zwar die Durchführung der einzelnen Schritte sicherstellen, es liegt jedoch in der Verantwortung des jeweiligen Cloudeinführungsteams, dafür zu sorgen, dass das unterstützende Team die Unterstützung erhält, die es benötigt, um erfolgreich zu sein. Wenn das verantwortliche Team noch nicht vorhanden ist oder mehr Unterstützung benötigt, um seine verantwortlichen Schritte zu erfüllen, wird das Einführungsteam ermutigt, sich mit anderen Teams zusammenzuschließen, um seine Ziele zu erreichen.
 
@@ -93,7 +93,6 @@ Letztendlich ist das Cloudeinführungsteam für die Umsetzung zugewiesener Migra
 
 Alle anderen Schritte in diesen Prüflisten dienen dazu, die Verwaltbarkeit der Bestrebung zu erleichtern.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |

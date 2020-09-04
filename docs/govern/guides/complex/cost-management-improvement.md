@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5a193c9b54bac12023130b6e365f866dc8f3ca36
-ms.sourcegitcommit: bcc73d194c6d00c16ae2e3c7fb2453ac7dbf2526
+ms.openlocfilehash: b77cfb5982a06e9a3d182817010423fa01fcf2b0
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "86191653"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88880967"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-cost-management-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Cost Management“
 
@@ -31,7 +31,7 @@ In der vorherigen Phase dieser Erzählung hat das IT-Team Produktionsworkloads m
 
 Seit diesem Zeitpunkt haben sich einige Dinge geändert, die sich auf die Governance auswirken:
 
-- 5\.000 Ressourcen wurden aus den beiden zur Außerbetriebnahme gekennzeichneten Rechenzentren entfernt. Auftragswesen und IT-Sicherheit heben nun die Bereitstellung der verbleibenden physischen Ressourcen auf.
+- 5\.000 Ressourcen wurden aus den beiden zur Stilllegung markierten Rechenzentren entfernt. Auftragswesen und IT-Sicherheit heben nun die Bereitstellung der verbleibenden physischen Ressourcen auf.
 - Die Anwendungsentwicklungsteams haben CI/CD-Pipelines implementiert, um einige native Cloudanwendungen bereitzustellen, die erhebliche Auswirkungen auf das Kundenerlebnis haben.
 - Das Business Intelligence-Team hat Aggregations-, Zusammenstellungs-, Erkenntnis- und Prognoseprozesse entwickelt, die konkrete Vorteile für den Geschäftsbetrieb bringen. Diese Prognosen ermöglichen jetzt kreative neue Produkte und Dienstleistungen.
 
@@ -62,14 +62,14 @@ Die folgenden Änderungen an der Richtlinie verringern die neuen Risiken und ver
 
 ## <a name="incremental-improvement-of-the-best-practices"></a>Inkrementelle Verbesserungen der bewährten Methoden
 
-In diesem Abschnitt des Artikels wird der Governance-MVP-Entwurf so verbessert, dass er neue Azure-Richtlinien und eine Implementierung von Azure Cost Management umfasst. Zusammen erfüllen diese beiden Entwurfsänderungen die neuen Richtlinienanweisungen des Unternehmens.
+In diesem Abschnitt des Artikels wird der Governance-MVP-Entwurf so verbessert, dass er neue Azure-Richtlinien und eine Implementierung von Azure Cost Management und Abrechnung umfasst. Zusammen erfüllen diese beiden Entwurfsänderungen die neuen Richtlinienanweisungen des Unternehmens.
 
 1. Nehmen Sie Änderungen im Azure Enterprise Portal vor, um dem Abteilungsadministrator die Bereitstellung in Kanada in Rechnung zu stellen.
-2. Implementieren von Azure Cost Management.
-    1. Festlegen des richtigen Zugriffsumfangs, um ihn mit dem Abonnementmuster und dem Ressourcengruppierungsmuster abzustimmen. Unter der Annahme der Angleichung an das in früheren Artikeln definierte Governance-MVP sollte dies Zugriff im Geltungsbereich des **Registrierungskontos** für das Cloudgovernanceteam erfordern, das die Berichterstellung auf hoher Ebene durchführt. Zusätzliche Teams außerhalb der Governance, wie etwa das kanadische Beschaffungsteam, benötigen Zugriff im **Ressourcengruppenumfang**.
-    2. Einrichten eines Budgets in Azure Cost Management.
+2. Implementieren Sie Azure Cost Management und Abrechnung.
+    1. Festlegen des richtigen Zugriffsumfangs, um ihn mit dem Abonnementmuster und dem Ressourcengruppierungsmuster abzustimmen. Unter der Annahme der Angleichung an das in früheren Artikeln definierte Governance-MVP sollte dies Zugriff im **Geltungsbereich des Registrierungskontos** für das Cloudgovernanceteam erfordern, das die Berichterstellung auf hoher Ebene durchführt. Zusätzliche Teams außerhalb der Governance, wie etwa das kanadische Beschaffungsteam, benötigen Zugriff auf den **Geltungsbereich der Ressourcengruppe**.
+    2. Einrichten eines Budgets in Azure Cost Management und Abrechnung.
     3. Überprüfen Sie die anfänglichen Empfehlungen, und reagieren Sie entsprechend. Richten Sie zur Unterstützung des Berichterstellungsprozesses einen sich wiederholenden Prozess ein.
-    4. Konfigurieren Sie die Azure Cost Management-Berichterstellung mit anfänglicher und regelmäßiger Ausführung.
+    4. Konfigurieren Sie die Berichterstellung für Azure Cost Management und Abrechnung mit anfänglicher und regelmäßiger Ausführung.
 3. Aktualisieren von Azure Policy.
     1. Überwachen Sie die Tagging-, Verwaltungsgruppen-, Abonnement- und Ressourcengruppenwerte, um Abweichungen zu identifizieren.
     2. Legen Sie Optionen für die SKU-Größe fest, um die Bereitstellung auf die in der Dokumentation zur Bereitstellungsplanung aufgeführten SKUs zu beschränken.

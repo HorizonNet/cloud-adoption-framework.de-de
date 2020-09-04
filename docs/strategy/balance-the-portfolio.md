@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 7f625e71668d8dbdd37d553897720ec1ee8c28e3
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: e75d807f36d6ce7fb30de4f7104d096f243f87c4
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450984"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885251"
 ---
 # <a name="balance-the-portfolio"></a>Ausgewogenheit des Portfolios
 
@@ -22,19 +22,18 @@ Die Cloudeinführung ist ein Portfolioverwaltungsschritt, der raffiniert als tec
 
 Die Ausgewogenheit des Portfolios ist ein strategischer Aspekt. Daher ist der in diesem Artikel vorgestellte Ansatz gleichermaßen strategisch. Um die Strategie auf datengesteuerte Entscheidungen zu gründen, wird in diesem Artikel vorausgesetzt, dass der Leser die vorhandenen [digitalen Ressourcen](../digital-estate/index.md) ausgewertet oder mit diesem Prozess begonnen hat. Das Ziel dieses Ansatzes ist, die Evaluierung der Workloads zu unterstützen, um die Ausgewogenheit des Portfolios durch qualitative Fragen und Portfoliooptimierung sicherzustellen.
 
-<!-- docsTest TODO: Handle capitalization following numbers and back-ticks -->
-<!-- cSpell:ignore 2M months years datacenters improvement CSAT -->
+<!-- cSpell:ignore 2M CSAT -->
 
 ### <a name="document-business-outcomes"></a>Dokumentieren von Geschäftsergebnissen
 
 Bevor die Ausgewogenheit des Portfolios hergestellt wird, müssen die Geschäftsergebnisse, die den Cloudmigrationsaufwand bestimmen, dokumentiert und freigegeben werden. Die folgende Tabelle soll das Dokumentieren und Freigeben von Geschäftsergebnissen unterstützen. Es ist wichtig zu beachten, dass die meisten Unternehmen mehrere Ergebnisse gleichzeitig verfolgen. Ziel dieser Übung ist, die Ergebnisse zu verdeutlichen, die unmittelbar mit dem Cloudmigrationsaufwand in Zusammenhang stehen:
 
-| Ergebnis  | Gemessen an  | Zielsetzung  | Zeitrahmen  | Priorität für diesen Aufwand  |
+| Ergebnis | Gemessen an | Zielsetzung | Zeitrahmen | Priorität für diesen Aufwand |
 |---------|---------|---------|---------|---------|
 | Reduzieren der IT-Kosten     | Rechenzentrumsbudget         | Reduzieren um 2 M USD     | 12 Monate         | 1         |
 | Ausstieg aus Rechenzentrum     | Ausstieg aus Rechenzentren         | 2 Rechenzentren         | 6 Monate         | 2         |
 | Erhöhen der Unternehmensflexibilität     | Verbessern der Markteinführungszeit  | Reduzieren der Bereitstellungszeit um sechs Monate         | 2 Jahre         | 3        |
-| Verbessern der Benutzerfreundlichkeit     | Kundenzufriedenheit (CSAT)         | Verbesserung um 10%         | 12 Monate         | 4         |
+| Verbessern der Benutzerfreundlichkeit     | Kundenzufriedenheit (CSAT)         | Verbesserung um 10 %         | 12 Monate         | 4         |
 
 > [!IMPORTANT]
 > Die oben stehende Tabelle ist ein fiktives Beispiel und sollte nicht verwendet werden, um Prioritäten festlegen. In vielen Fällen wird diese Tabelle unter Umständen als Antimuster betrachtet, da Kosteneinsparungen Priorität vor Kundenfreundlichkeit haben.
@@ -60,7 +59,7 @@ Wenn die Antwort auf eine dieser Fragen „Nein“ ist, kann die Workload ein Ka
 - Kann ein Deaktivierungs- oder Außerkraftsetzungsplan für diese Workload eingerichtet werden?
 - Kann diese Workload vor dem Rechenzentrumsausstieg außer Betrieb gesetzt werden?
 
-Wenn die Antwort auf beide Fragen „Ja“ lautet, wäre es klug zu erwägen, diese Workload _nicht_ zu migrieren. Dieser Ansatz wäre hilfreich, die Ziele der Kostenreduzierung und des Rechenzentrumsausstiegs zu erfüllen.
+Wenn die Antwort auf beide Fragen „Ja“ lautet, wäre es klug zu erwägen, diese Workload *nicht* zu migrieren. Dieser Ansatz wäre hilfreich, die Ziele der Kostenreduzierung und des Rechenzentrumsausstiegs zu erfüllen.
 
 Wenn die Antwort auf eine dieser Fragen „Nein“ ist, kann es ratsam sein, einen Plan zu erstellen, wie die Workload gehostet werden kann, bis sie außer Kraft gesetzt werden kann. Dieser Plan könnte das Verschieben der Ressourcen in ein kostengünstigeres oder alternatives Rechenzentrum beinhalten, was auch den Zielen der Kostenreduzierung und des Ausstiegs aus einem Rechenzentrum entsprechen würde.
 
@@ -97,7 +96,7 @@ Während der Migration können Aktivitäten zum Herstellen der Ausgewogenheit de
 
 Portfoliorationalisierung erfordert vielfältigen technischen Aufwand. Es ist verlockend für Cloudeinführungsteams, dieser Portfoliovielfalt in Migrationsaktivitäten zu entsprechen. Unternehmensteilhaber fordern oft, dass ein einzelnes Cloudeinführungsteam das gesamte Migrationsbacklog behandelt. Das ist nur selten ein empfehlenswerter Ansatz, in vielen Fällen kann dies sogar kontraproduktiv sein.
 
-Diese unterschiedlichen Aktivitäten sollten auf zwei oder mehr Cloudeinführungsteams aufgeteilt werden. In einem Modell mit zwei Teams als Ausführungsbeispiel ist Team 1 das Migrationsteam und Team 2 das Innovationsteam. Für größere Aktivitäten könnten diese Teams weiter segmentiert werden, um andere Ansätze wie Ersetzungs-/PaaS-Aktivitäten oder geringfügige Umgestaltung zu behandeln. Im Folgenden werden die erforderlichen Fähigkeiten und Rollen zum Zuweisen eines neuen Hosts, zur Umgestaltung oder geringfügigen Umgestaltung skizziert:
+Diese unterschiedlichen Aktivitäten sollten auf zwei oder mehr Cloudeinführungsteams aufgeteilt werden. In einem Modell mit zwei Teams als Ausführungsbeispiel ist Team 1 das Migrationsteam und Team 2 das Innovationsteam. Für größere Aktivitäten könnten diese Teams weiter segmentiert werden, um andere Ansätze wie Ersetzungs-/PaaS-Aktivitäten oder geringfügige Umgestaltung zu behandeln. Im Folgenden werden die erforderlichen Fähigkeiten und Rollen zum Zuweisen eines neuen Hosts, zur Umgestaltung oder geringfügigen Umgestaltung skizziert:
 
 **Zuweisen eines neuen Hosts:** Zum Zuweisen eines neuen Hosts müssen Teammitglieder infrastrukturkonzentrierte Änderungen implementieren. In der Regel werden mithilfe eines Tools wie Azure Site Recovery VMs oder andere Ressourcen zu Azure migriert. Für diese Arbeit sind Rechenzentrumsadministratoren oder IT-Implementierer gut geeignet. Das Cloudmigrationsteam ist so gut strukturiert, dass es diese Aufgabe auf hohem Niveau ausführt. Dies ist in den meisten Szenarien der schnellste Ansatz zum Migrieren vorhandener Ressourcen.
 

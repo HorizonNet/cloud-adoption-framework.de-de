@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 47d69db490f22f5c6513f5b6e26b559026b33728
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 835092c436f442dd9126009aee64ab54424f3e79
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568684"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88878706"
 ---
 # <a name="conversational-ai"></a>Konversations-KI
 
@@ -53,7 +53,7 @@ Herunterladen und Verwenden des Bot Framework SDK und der Tools für die Bot-Ent
 Erfahren Sie, wie Sie Cognitive Services hinzufügen, um Ihren Bot noch intelligenter zu gestalten.
 
 - [Entwicklerhandbuch zum Erstellen von KI-Anwendungen](https://www.oreilly.com/library/view/a-developers-guide/9781492080619/) (E-Book)
-- [Weitere Informationen zu Cognitive Services](/azure/cognitive-services/)
+- Informieren Sie sich ausführlicher über [Cognitive Services](/azure/cognitive-services/).
 
 Erfahren Sie, wie Sie einen eigenen virtuellen Assistenten mit Bot Framework-Solution Accelerators erstellen, und wählen Sie einen allgemeinen Satz von Skills aus, z. B. Kalender, E-Mail, Point of Interest oder Aufgaben.
 

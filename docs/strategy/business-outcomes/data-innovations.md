@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 2ad4273261015dac06ef8ec9b1aa4836a3874f09
-ms.sourcegitcommit: d31a9043d1ae9283ed126bf118ca26d1d18d6948
+ms.openlocfilehash: 00755767c560285d48626b829023b44001b21c63
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88040948"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885149"
 ---
 # <a name="data-innovations"></a>Dateninnovationen
 
@@ -79,7 +79,7 @@ Anwendungsfälle, Geschäftsfälle und technologische Fortschritte unterstützen
 - Vermeiden Sie das Erstellen teurer Data Marts, die Speicher- und Datenbanksoftwarelizenzen auf lokaler Hardware nutzen. Sie können sie stattdessen in Azure Synapse Analytics erstellen. Dies trifft vor allem dann zu, wenn Ihr Data Warehouse ein Data Vault-Entwurf ist, der häufig eine größere Nachfrage nach Data Marts verursacht.
 - Vermeiden Sie die Kosten für die Analyse und das Speichern von Daten mit hoher Datengeschwindigkeit und hohem Datenvolumen auf lokaler Hardware. Wenn Sie beispielsweise von einem Computer generierte Echtzeitdaten wie Clickstreamdaten und IoT-Streamingdaten in Ihrem Data Warehouse analysieren müssen, können Sie Azure Synapse Analytics verwenden.
 - Sie können Gebühren für das Speichern von Daten auf teurer Warehousehardware im Rechenzentrum vermeiden, wenn Ihr Data Warehouse größer wird. Mit Azure Synapse Analytics können Sie Ihre Daten zu geringeren Kosten im Cloudspeicher speichern.
-  
+
 ## <a name="next-steps"></a>Nächste Schritte
 
 <!-- TODO: More detail needed here. -->

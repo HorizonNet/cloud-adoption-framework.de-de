@@ -7,18 +7,18 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0278ef7006deec80580a6f457863049452c5069d
-ms.sourcegitcommit: 76edf563a08ff7dc81c3fc2dc6c8972ab3b4c55b
+ms.openlocfilehash: 195b630b994a83a39026374f27de297b010ae024
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88236997"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885472"
 ---
 # <a name="assess-workloads-for-azure-stack-hub-migration"></a>Bewerten von Workloads für die Azure Stack Hub-Migration
 
 In diesem Artikel wird davon ausgegangen, dass Sie sich für die [Integration von Azure Stack in Ihre Cloudstrategie](./index.md) entschieden sowie einen [Plan für die Azure Stack Hub-Migration](./plan.md) entwickelt haben und dass [Ihre Umgebung für die Migration bereit ist](./ready.md).
 
-Bei der Rationalisierung der digitalen Ressourcen Ihrer Organisation im Rahmen der Planungsmethodik wurden alle Workloads ermittelt und inventarisiert, und es wurden erste Entscheidungen auf Grundlage von quantitativen Daten getroffen. Vor der Bereitstellung der einzelnen Workloads ist es wichtig, die Daten und Entscheidungen anhand von qualitativen Daten zu überprüfen.
+Bei der Rationalisierung der digitalen Ressourcen Ihrer Organisation im Rahmen der Planmethodik wurden alle Workloads ermittelt und inventarisiert, und es wurden erste Entscheidungen auf Grundlage von quantitativen Daten getroffen. Vor der Bereitstellung der einzelnen Workloads ist es wichtig, die Daten und Entscheidungen anhand von qualitativen Daten zu überprüfen.
 
 ## <a name="placement"></a>Platzierung
 

@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: cd1ecfe758fcab297440bc65dcda7da310c25ec5
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: aa0ebef4cb01fed6e55a18b215ea26add4bf93e2
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573988"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88881562"
 ---
 # <a name="software-defined-networking-hub-and-spoke"></a>Softwaredefiniertes Netzwerk: Hub-and-Spoke-Modell
 
 Im Hub-and-Spoke-Netzwerkmodell wird Ihre auf Azure basierende Cloud-Netzwerkinfrastruktur in mehreren verbundenen virtuellen Netzwerken organisiert. Mithilfe dieses Modells können Sie gängige Kommunikations- oder Sicherheitsanforderungen effizienter bewältigen und mögliche Einschränkungen des Abonnements berücksichtigen.
 
-Im Hub-and-Spoke-Modell ist der _Hub_ ein virtuelles Netzwerk, das als Zentrale für die Verwaltung externer Konnektivitäts- und Hostingdienste dient, die von mehreren Workloads genutzt werden. Die _Spokes_ sind virtuelle Netzwerke, die Workloads hosten und sich über [Peering virtueller Netzwerke](/azure/virtual-network/virtual-network-peering-overview) mit dem zentralen Hub verbinden.
+Im Hub-and-Spoke-Modell ist der *Hub* ein virtuelles Netzwerk, das als Zentrale für die Verwaltung externer Konnektivitäts- und Hostingdienste dient, die von mehreren Workloads genutzt werden. Die *Spokes* sind virtuelle Netzwerke, die Workloads hosten und sich über [Peering virtueller Netzwerke](/azure/virtual-network/virtual-network-peering-overview) mit dem zentralen Hub verbinden.
 
 Der gesamte Datenverkehr, der in die oder aus den Spoke-Netzwerken der Workload geleitet wird, wird über das Hub-Netzwerk geleitet, wo er weitergeleitet, inspiziert oder anderweitig von zentral verwalteten IT-Regeln oder -Prozessen verwaltet werden kann.
 

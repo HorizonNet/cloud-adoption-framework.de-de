@@ -1,6 +1,6 @@
 ---
 title: Metriken und Indikatoren der Risikotoleranz in der Disziplin „Ressourcenkonsistenz“
-description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um die Geschäftsrisikotoleranz im Zusammenhang mit der Disziplin „Ressourcenkonsistenz“ zu quantifizieren.
+description: Verwenden Sie das Cloud Adoption Framework für Azure, um die Geschäftsrisikotoleranz im Zusammenhang mit der Disziplin „Ressourcenkonsistenz“ zu quantifizieren.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,15 +8,13 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 8b9f0161d9ef5ebc22b50d0251713cb1a0dfcdda
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 3667bff715ed7f91f4bdabda90e87aad15751a33
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88195356"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879352"
 ---
-<!-- cSpell:ignore MTBF MTTR -->
-
 # <a name="risk-tolerance-metrics-and-indicators-in-the-resource-consistency-discipline"></a>Metriken und Indikatoren der Risikotoleranz in der Disziplin „Ressourcenkonsistenz“
 
 Lernen Sie, die Risikotoleranz von Unternehmen im Zusammenhang mit der Disziplin „Ressourcenkonsistenz“ zu quantifizieren. Indem Sie Metriken und Indikatoren definieren, können Sie ein Geschäftsszenario erstellen, um in die Ausgereiftheit dieser Disziplin zu investieren.
@@ -59,7 +57,7 @@ Legen Sie nach der Einigung auf eine Baseline minimale Benchmarks fest, die eine
 - **Trigger „Markieren (Tagging) und Benennen“.** Ein Unternehmen mit mehr als *x* Ressourcen, denen erforderliche Markierungsinformationen fehlen die Benennungsstandards nicht einhalten, sollten Investitionen in die Disziplin „Ressourcenkonsistenz“ in Erwägung ziehen, um die Optimierung dieser Standards zu unterstützen und ihre konsistente Anwendung auf in der Cloud bereitgestellte Ressourcen sicherzustellen.
 - **Trigger „Überdimensionierte Ressourcen“.** Wenn in einem Unternehmen mehr als *x %* der Ressourcen regelmäßig nur geringe Mengen ihrer verfügbaren Arbeitsspeicher-, CPU- oder Netzwerkfunktionen nutzen, wird vorgeschlagen, in die Disziplin „Ressourcenkonsistenz“ zu investieren, um die Optimierung der Ressourcennutzung für diese Elemente zu optimieren.
 - **Trigger „Unterdimensionierte Ressourcen“.** Wenn in einem Unternehmen mehr als *x %* der Ressourcen regelmäßig den größten Teil ihrer verfügbaren Arbeitsspeicher-, CPU- oder Netzwerkfunktionen erschöpfen, wird vorgeschlagen, in die Disziplin „Ressourcenkonsistenz“ zu investieren, um sicherzustellen, dass diese Objekte die notwendigen Ressourcen erhalten, die zur Verhinderung von Dienstunterbrechungen erforderlich sind.
-- **Trigger „Ressourcenalter“.** Ein Unternehmen mit mehr als *x* Ressourcen, die in mehr als _y_ Monaten nicht aktualisiert wurden, könnte von Investitionen in die Disziplin „Ressourcenkonsistenz“ profitieren, die darauf abzielt sicherzustellen, dass Ressourcen gepatcht und fehlerfrei sind, während gleichzeitig veraltete oder anderweitig nicht verwendete Ressourcen außer Betrieb genommen werden.
+- **Trigger „Ressourcenalter“.** Ein Unternehmen mit mehr als *x* Ressourcen, die in mehr als *y* Monaten nicht aktualisiert wurden, könnte von Investitionen in die Disziplin „Ressourcenkonsistenz“ profitieren, die darauf abzielt sicherzustellen, dass Ressourcen gepatcht und fehlerfrei sind, während gleichzeitig veraltete oder anderweitig nicht verwendete Ressourcen außer Betrieb genommen werden.
 - **Trigger für die Vereinbarung zum Servicelevel (SLA).** Ein Unternehmen, das seine mit externen Kunden oder internen Partnern getroffenen Vereinbarungen zum Servicelevel (SLAs) nicht einhalten kann, sollte in die Disziplin „Beschleunigung der Bereitstellung“ investieren, um die Systemausfallzeiten zu reduzieren.
 - **Trigger für die Wiederherstellungszeit.** Ein Unternehmen, das die erforderlichen Schwellenwerte für die Wiederherstellungszeit nach einem Systemausfall überschreitet, sollte in die Verbesserung der Disziplin „Beschleunigung der Bereitstellung“ und in das Systemdesign investieren, um Fehler zu reduzieren bzw. ganz zu beseitigen oder die Auswirkungen beim Ausfall einzelner Komponenten abzufedern.
 - **Trigger „VM-Integrität“.** Ein Unternehmen, in dem bei mehr als *x %* der VMs kritische Integritätsprobleme auftreten, sollte in die Disziplin „Ressourcenkonsistenz“ investieren, um Probleme zu identifizieren und die VM-Stabilität zu verbessern.

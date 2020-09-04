@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 910ccff4708ef57fe6e652bb59fa34e0d0ea74e3
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 375dcdbb63241d3bc3b1c29f9308bccbe698844c
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662318"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885761"
 ---
 # <a name="skills-readiness-path-during-the-plan-phase-of-a-migration-journey"></a>Pfad für die Qualifikationsbereitschaft während der Phase „Planung“ einer Migrationsreise
 
@@ -67,7 +67,7 @@ Während der Vorbereitungsphase schaffen die technischen Mitarbeiter eine Landez
 
 ## <a name="organizational-skills"></a>Organisationsfähigkeiten
 
-Abhängig von den Motivationen und gewünschten Geschäftsergebnissen einer Cloudeinführung kann es notwendig sein, dass Führungskräfte neue Organisationsstrukturen oder virtuelle Teams (v-Teams) aufbauen, um verschiedene Funktionen zu ermöglichen. Diese Artikel sollen Ihnen helfen, die Qualifikationen zu entwickeln, die notwendig sind, um diese Teams zu strukturieren, um die gewünschten Ergebnissen zu erzielen:
+Abhängig von den Motivationen und gewünschten Geschäftsergebnissen einer Cloudeinführung kann es notwendig sein, dass Führungskräfte neue Organisationsstrukturen oder virtuelle Teams aufbauen, um verschiedene Funktionen zu ermöglichen. Diese Artikel sollen Ihnen helfen, die Qualifikationen zu entwickeln, die notwendig sind, um diese Teams zu strukturieren, um die gewünschten Ergebnissen zu erzielen:
 
 - [Erstausrichtung der Organisation](../organize/index.md). Übersicht über die organisatorische Ausrichtung und verschiedene Teamstrukturen zum Erreichen bestimmter Ziele.
 - [Aufschlüsseln von Silos und Fiefdoms](../organize/fiefdoms-silos.md). Grundlegendes zu zwei gängigen organisatorischen Antimustern und Möglichkeiten, ein Team zur produktiven Zusammenarbeit zu führen.

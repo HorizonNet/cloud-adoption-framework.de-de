@@ -3,20 +3,20 @@ title: 'Erste Schritte: Zusammenstellen eines Cloudstrategieteams'
 description: Stellen Sie ein Cloudstrategieteam zusammen, um sicherzustellen, dass die Cloudeinführung in Übereinstimmung mit den Geschäftsergebnissen vorangetrieben wird und Sie auf eine erfolgreiche Cloudeinführungsjourney vorbereitet sind.
 author: JanetCThomas
 ms.author: janet
+ms.date: 05/15/2020
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.topic: conceptual
-ms.date: 05/15/2020
-ms.openlocfilehash: 9c103dc269de19880d179c07ecc6ca633388d3c8
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 5b23a9b0e62b59cda914a6733d15f76157c5f0eb
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573818"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88883993"
 ---
 # <a name="get-started-build-a-cloud-strategy-team"></a>Erste Schritte: Zusammenstellen eines Cloudstrategieteams
 
-Um erfolgreich zu sein, muss jede Cloudeinführungsjourney einen gewissen Grad an strategischer Planung umfassen. Dieser Leitfaden zu den ersten Schritten soll Sie beim Einrichten eines dedizierten oder virtuellen Teams (V-Team) unterstützen, das eine solide Cloudstrategie erstellen und bereitstellen kann.
+Um erfolgreich zu sein, muss jede Cloudeinführungsjourney einen gewissen Grad an strategischer Planung umfassen. Dieser Leitfaden zu den ersten Schritten soll Sie beim Einrichten eines dedizierten oder virtuellen Teams unterstützen, das eine solide Cloudstrategie erstellen und bereitstellen kann.
 
 Der erste Schritt bei dieser Journey ist die Entscheidung, ob Sie ein Strategieteam benötigen oder die vorhandenen Teammitglieder mit verteilten Zuständigkeiten eine Cloudstrategie umsetzen können.
 
@@ -39,8 +39,6 @@ Ein Cloudstrategieteam kümmert sich um erforderliche Funktionen in der Cloud, d
 
 Das Zusammenstellen eines Cloudstrategieteams ist aus den folgenden Gründen häufig erforderlich:
 
-<!-- markdownlint-disable MD033 -->
-
 | `Reason` | Überlegungen |
 |---|---|
 | **Der Umstieg auf die Cloud ist wichtig für das Unternehmen.** | <li> Die Cloudeinführung besitzt Sichtbarkeit auf Vorstandsebene. <li> Durch eine erfolgreiche Cloudeinführung werden die Marktpositionierung, die Kundenbindung oder der Umsatz verbessert. <li> Die Programme im Einführungsportfolio stehen in direktem Zusammenhang mit strategischen Geschäftsergebnissen. <li> Die Workloads im Einführungsportfolio sind von strategischer und unternehmenskritischer Bedeutung und können sich auf mehrere Geschäftseinheiten auswirken. |
@@ -55,7 +53,7 @@ Wenn einer oder alle der oben genannten Gründe Ihre bestehenden geschäftlichen
 
 ## <a name="what-if-i-dont-need-a-cloud-strategy-team"></a>Wie gehe ich vor, wenn ich kein Cloudstrategieteam benötige?
 
-Überprüfen Sie die [Funktionen für die Cloudstrategie](../../organize/cloud-strategy.md), die zur Umsetzung der Anforderungen der Cloudstrategie erforderlich sind. Nicht jede Organisation benötigt ein dediziertes oder virtuelles Team (V-Team), um ihre strategischen Anforderungen zu erfüllen. Listen Sie in der [RACI-Vorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx) (Responsible, Accountable, Consulted und Informed) die wichtigsten Verantwortlichkeiten in Bezug auf die Strategie auf, und bestimmen Sie für jede eine verantwortliche Person in Ihrem Team. Falls eine Person alle dieser Aufgaben übernimmt, ersetzen Sie in der RACI-Vorlage einfach „Cloudstrategie“ durch den Namen der betreffenden Person.
+Überprüfen Sie die [Funktionen für die Cloudstrategie](../../organize/cloud-strategy.md), die zur Umsetzung der Anforderungen der Cloudstrategie erforderlich sind. Nicht jede Organisation benötigt ein dediziertes oder virtuelles Team, um ihre strategischen Anforderungen zu erfüllen. Listen Sie in der [RACI-Vorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/organize/raci-template.xlsx) (Responsible, Accountable, Consulted und Informed) die wichtigsten Verantwortlichkeiten in Bezug auf die Strategie auf, und bestimmen Sie für jede eine verantwortliche Person in Ihrem Team. Falls eine Person alle dieser Aufgaben übernimmt, ersetzen Sie in der RACI-Vorlage einfach „Cloudstrategie“ durch den Namen der betreffenden Person.
 
 ## <a name="step-2-establish-the-cloud-strategy-team"></a>Schritt 2: Zusammenstellen eines Cloudstrategieteams
 
@@ -111,9 +109,8 @@ Die Gespräche, die Sie in diesem Schritt führen, können dazu beitragen, einen
 
 **Hinweis zur Erreichung der Ziele:**
 
-- [Verstehen der Beweggründe](../../strategy/motivations.md): Wichtige Geschäftsereignisse und einige Migrationsgründe sind tendenziell kostensensibel, was die Wichtigkeit der Kostenkontrolle für alle weiteren Bestrebungen erhöht. Andere zukunftsgerichtete Beweggründe, die mit Innovation oder Wachstum durch Migration zu tun haben, sind möglicherweise eher auf den Umsatz ausgerichtet. Das Verstehen von Motivationen hilft den Teammitgliedern zu verstehen, wie hoch die Priorität der Kostenverwaltung sein sollte.
+- [Verstehen der Beweggründe](../../strategy/motivations.md): Wichtige Geschäftsereignisse und einige Migrationsgründe sind tendenziell kostensensibel, was die Wichtigkeit der Kostenkontrolle für alle weiteren Bestrebungen erhöht. Andere zukunftsgerichtete Beweggründe, die mit Innovation oder Wachstum durch Migration zu tun haben, sind möglicherweise eher auf den Umsatz ausgerichtet. Das Verstehen der Motivationen kann Teammitgliedern bei der Entscheidung helfen, wie hoch die Prioritäten für Ihre Kostenverwaltung zu setzen sind.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
@@ -159,7 +156,7 @@ Jedes Mitglied des Strategieteams sollte gängige Mythen und Ansätze für die g
 
 - Die [geschäftliche Begründung](../../strategy/cloud-migration-business-case.md) dient als allgemeine Übersicht über den Gesamtfinanzplan für die Cloudeinführung. Sie kann eine gute Quelle für die anfängliche Budgetplanung darstellen.
 
-<!-- markdownlint-disable MD033 -->
+<br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
@@ -182,7 +179,6 @@ Nachdem das Cloudstrategieteam eine Entscheidung bezüglich der Strategie für d
 - [Inkrementelle Rationalisierung](../../digital-estate/rationalize.md): Ziehen Sie einen agilen Rationalisierungsansatz in Betracht, der spät getroffene technische Entscheidungen richtig integriert.
 - Die [fünf Phasen der Rationalisierung](../../digital-estate/5-rs-of-rationalization.md): Grundlegendes zu den verschiedenen Rationalisierungsoptionen.
 
-<!-- markdownlint-disable MD033 -->
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |

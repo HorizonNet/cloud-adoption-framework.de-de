@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 3269f6a94f0aa151f2fbfb3a78e540fef710767c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: f0031c5e239dc7d11760eee3a36597fa86c0db66
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573716"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88883687"
 ---
 # <a name="cost-management-sample-policy-statements"></a>Beispiele für Cost Management-Richtlinienanweisungen
 
@@ -39,7 +39,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine kostenb
 
 **Richtlinienanweisung:** Jede Cloudbereitstellung muss einer Abrechnungseinheit mit genehmigtem Budget und einem Mechanismus für Budgetlimits zugeordnet werden.
 
-**Entwurfsoptionen:** In Azure kann das Budget mit [Azure Cost Management](/azure/cost-management/manage-budgets) gesteuert werden.
+**Entwurfsoptionen:** In Azure kann das Budget mit [Azure Cost Management und Abrechnung](/azure/cost-management/manage-budgets) gesteuert werden.
 
 ## <a name="underutilization"></a>Unterauslastung
 
@@ -49,7 +49,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine kostenb
 
 **Entwurfsoptionen:**
 
-- In Azure kann der Vergleich zwischen geplanten Ausgaben und tatsächlichen Ausgaben über [Azure Cost Management](/azure/cost-management/quick-acm-cost-analysis) verwaltet werden.
+- In Azure kann der Vergleich zwischen geplanten Ausgaben und tatsächlichen Ausgaben über [Azure Cost Management und Abrechnung](/azure/cost-management/quick-acm-cost-analysis) verwaltet werden.
 - Es gibt mehrere Optionen für die Gruppierung von Ressourcen nach Abrechnungseinheit. In Azure muss ein [Ressourcenkonsistenzmodell](../../decision-guides/resource-consistency/index.md) in Verbindung mit dem Governanceteam ausgewählt und auf alle Ressourcen angewendet werden.
 
 ## <a name="overprovisioned-assets"></a>Überdimensionierte Ressourcen

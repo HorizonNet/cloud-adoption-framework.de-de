@@ -7,12 +7,12 @@ ms.date: 07/01/2010
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d313641025bd5cc768c3e4f99feedb768880f396
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.openlocfilehash: 3d388b1196bf103812f723ef060cc890e632760f
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88848277"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885370"
 ---
 # <a name="windows-virtual-desktop-assessment"></a>Bewertung von Windows Virtual Desktop
 
@@ -28,7 +28,7 @@ Die Voraussetzung für die Beantwortung der Fragen sind Daten. Im Rahmen der Pla
 
 Wenn Sie das Tool [Movere](/azure/migrate/migrate-services-overview#movere) zum Sammeln von Daten verwenden, verfügen Sie wahrscheinlich über die notwendigen Daten, um Personas zu entwickeln und die Fragen wie bei jedem anderen Migrationsszenario anhand von Daten in [Azure Migrate](/azure/migrate) zu beantworten.
 
-Falls Sie nicht über die erforderlichen Daten verfügen, um alle Fragen in diesem Abschnitt zu beantworten, können Sie diese in einem separaten Ermittlungsprozess mit Software von einem Drittanbieter ergänzen. Der Hersteller [Lakeside](/azure/migrate/migrate-services-overview#isv-integration) ist auch mit Azure Migrate im Abschnitt zu Migrationszielen für virtuelle Desktopinfrastruktur integriert. Der Hersteller kann Ihnen bei der Ausarbeitung eines Plans für die Windows Virtual Desktop-Bereitstellung (einschließlich Personas, Hostpools, Anwendungen und Benutzerprofilen) helfen.
+Falls Sie nicht über die erforderlichen Daten verfügen, um alle Fragen in diesem Abschnitt zu beantworten, können Sie diese in einem separaten Ermittlungsprozess mit Software von einem Drittanbieter ergänzen. Der Hersteller [lakeside](/azure/migrate/migrate-services-overview#isv-integration) ist auch mit Azure Migrate im Abschnitt zu Migrationszielen für virtuelle Desktopinfrastruktur integriert. Der Hersteller kann Ihnen bei der Ausarbeitung eines Plans für die Windows Virtual Desktop-Bereitstellung (einschließlich Personas, Hostpools, Anwendungen und Benutzerprofilen) helfen.
 
 ### <a name="user-personas"></a>Benutzerpersonas
 
@@ -36,7 +36,7 @@ Wie viele unterschiedliche Personas sind erforderlich, um alle Benutzer im Migra
 
 - **Persönliche Pools:** Sind für bestimmte Benutzergruppen dedizierte Desktops anstelle von Pools erforderlich? Beispielsweise können Anforderungen im Zusammenhang mit Sicherheit, Konformität, hoher Leistung oder Beeinträchtigung durch andere Dienste („Noisy Neighbors“) dazu führen, dass einige Benutzer dedizierte Desktops verwenden, die nicht Teil einer Poolingstrategie sind. Sie geben diese Informationen ein, indem Sie während der [Bereitstellung des Windows Virtual Desktop-Hostpools den Hostpooltyp „Persönlich“ festlegen](/azure/virtual-desktop/create-host-pools-azure-marketplace#begin-the-host-pool-setup-process).
 - **Dichte:** Benötigen bestimmte Benutzergruppen Desktopumgebungen mit geringerer Dichte? Beispielsweise lässt die größere Dichte möglicherweise nur zwei Benutzer pro vCPU (Virtual Central Processing Unit) anstelle der Annahme von sechs Benutzern pro vCPU bei niedrigerer Dichte zu. Sie geben die Dichteinformationen in den [Pooleinstellungen der Windows Virtual Desktop-Hostpoolbereitstellung](/azure/virtual-desktop/create-host-pools-azure-marketplace#begin-the-host-pool-setup-process) an.
-- **Leistung**: Benötigen bestimmte Benutzergruppen Desktopumgebungen mit höherer Leistung? Manche Benutzer benötigen beispielsweise mehr Arbeitsspeicher pro vCPU als die angenommenen 4&nbsp;GB RAM pro vCPU. Sie geben die VM-Größe in den [VM-Details der Windows Virtual Desktop-Hostpoolbereitstellung](/azure/virtual-desktop/create-host-pools-azure-marketplace#virtual-machine-details) ein.
+- **Leistung:** Benötigen bestimmte Benutzergruppen Desktopumgebungen mit höherer Leistung? Manche Benutzer benötigen beispielsweise mehr Arbeitsspeicher pro vCPU als die angenommenen 4&nbsp;GB RAM pro vCPU. Sie geben die VM-Größe in den [VM-Details der Windows Virtual Desktop-Hostpoolbereitstellung](/azure/virtual-desktop/create-host-pools-azure-marketplace#virtual-machine-details) ein.
 - **Grafikprozessor (Graphical Processing Unit, GPU):** Haben bestimmte Benutzergruppen höhere Anforderungen bezüglich der Grafikleistung? Einige Benutzer benötigen beispielsweise GPU-basierte VMs in Azure (weitere Informationen finden Sie in diesem [Leitfaden zum Konfigurieren von GPU-VMs](/azure/virtual-desktop/configure-vm-gpu)).
 - **Azure-Region:** Arbeiten bestimmte Gruppen von Betriebssystembenutzern in verschiedenen geografischen Regionen? Vor dem Konfigurieren des Hostpools sollte ein Benutzer aus jeder Region die Latenz für Verbindungen mit Azure beispielsweise mit dem [Schätzungstool](https://azure.microsoft.com/services/virtual-desktop/assessment/#estimation-tool) testen. Der Testbenutzer sollte die Azure-Region mit der geringsten Latenz und die Latenz in Millisekunden für die drei wichtigsten Azure-Regionen teilen.
 - **Geschäftsfunktionen:** Können die spezifischen Benutzergruppen nach Geschäftseinheit, Gebührencode oder Geschäftsfunktion Buckets zugeordnet werden? Eine solche Gruppierung ermöglicht die Anpassung der Betriebskosten in späteren Phasen.
@@ -65,7 +65,7 @@ Sehen Sie sich Beispiele für die Preise in den Regionen [USA, Osten](https://az
 
 ### <a name="application-groups"></a>Anwendungsgruppen
 
-Die Überprüfungen der aktuellen lokalen Umgebung mithilfe von Movere und Lakeside liefern Daten zu den Anwendungen, die auf den Desktops der Endbenutzer ausgeführt werden. Anhand dieser Daten können Sie eine Liste aller Anwendungen erstellen, die für die einzelnen Personas benötigt werden. Mithilfe der Antworten auf die folgenden Fragen können Sie Bereitstellungsiterationen für jede erforderliche Anwendung definieren:
+Die Überprüfungen der aktuellen lokalen Umgebung mithilfe von Movere und lakeside liefern Daten zu den Anwendungen, die auf den Desktops der Endbenutzer ausgeführt werden. Anhand dieser Daten können Sie eine Liste aller Anwendungen erstellen, die für die einzelnen Personas benötigt werden. Mithilfe der Antworten auf die folgenden Fragen können Sie Bereitstellungsiterationen für jede erforderliche Anwendung definieren:
 
 - Müssen Anwendungen installiert werden, damit die Persona den Desktop verwenden kann? Sofern die Persona nicht ausschließlich webbasierte Software-as-a-Service-Anwendungen verwendet, müssen Sie wahrscheinlich für jede Persona ein [benutzerdefiniertes VHD-Masterimage](/azure/virtual-desktop/set-up-customize-master-image) konfigurieren, auf dem die erforderlichen Anwendungen installiert sind.
 - Benötigt diese Persona Microsoft 365-Anwendungen? Wenn das der Fall ist, müssen Sie [Microsoft 365 einem angepassten VHD-Masterimage hinzufügen](/azure/virtual-desktop/install-office-on-wvd-master-image).

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 8d8e25dfaa7f39eb2c647fbe3a8a7c0f1d3d1fcd
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 462b365101d90688d6a3e4eb9b4be9cd4d9aa275
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568123"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88883177"
 ---
 # <a name="prepare-for-customer-feedback"></a>Vorbereiten für Kundenfeedback
 
@@ -66,7 +66,7 @@ Um die Daten zu Ihren Anwendungen anzuzeigen, navigieren Sie zum [Azure-Portal](
 
 ## <a name="quantitative-feedback-for-apis"></a>[Quantitatives Feedback für APIs](#tab/Quantitative-APIs)
 
-Die vernetzte Wirtschaft verändert die Art und Weise, in der Unternehmen Innovationen entwickeln. Märkte und Branchen werden schneller als je zuvor gestört. Störungen treten in vielen Formen auf, und Unternehmen müssen sich mit dem _Dilemma des Innovators_ auseinandersetzen: Wie kann das Tempo des Wandels festgelegt werden, ohne die laufende Geschäftsaktivität zu beeinträchtigen?
+Die vernetzte Wirtschaft verändert die Art und Weise, in der Unternehmen Innovationen entwickeln. Märkte und Branchen werden schneller als je zuvor gestört. Störungen treten in vielen Formen auf, und Unternehmen müssen sich mit dem *Dilemma des Innovators* auseinandersetzen: Wie kann das Tempo des Wandels festgelegt werden, ohne die laufende Geschäftsaktivität zu beeinträchtigen?
 
 Unternehmen verwenden extern APIs, um die Interaktion mit ihren Kunden und Partnern zu ändern. Intern verwenden sie APIs, um verschiedene Teile des Unternehmens nahtlos miteinander zu verbinden. Die API-Struktur basiert auf vier Bausteinen: soziale Netzwerke, mobile Apps, Analysen und Cloud. Anwendungen und Dienste können schnell und kostengünstig verknüpft werden, um ein erweitertes Wertversprechen zu schaffen.
 

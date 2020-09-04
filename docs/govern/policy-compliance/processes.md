@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: fac64038c805eed0566554dd42551b32f4294900
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 4eb41f087e999538dc7c5fc9366b6173926c924a
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786227"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88879675"
 ---
 # <a name="establish-policy-adherence-processes"></a>Festlegen von Prozessen zur Einhaltung von Richtlinien
 
@@ -74,13 +74,13 @@ Jeder Verletzungsauslöser sollte eine entsprechende Aktion aufweisen. Ausgelös
 
 Einige Beispiele für Auslöser und Aktionen bei Verstößen:
 
-<!-- docsTest:ignore "Cost Management" "Deployment Acceleration" "Identity Baseline" "Resource Consistency" "Security Baseline" -->
+<!-- docutune:casing "Cost Management" "Deployment Acceleration" "Identity Baseline" "Resource Consistency" "Security Baseline" -->
 
-| Cloudgovernancedisziplin | Beispielauslöser | Beispielaktion |
+| Governancedisziplin | Beispielauslöser | Beispielaktion |
 |-----------------------------|----------------|---------------|
-| Cost Management | Monatliche Cloudausgaben sind um mehr als 20 % höher als erwartet. | Benachrichtigung des Leiters der Abrechnungsabteilung, der eine Überprüfung der Ressourcennutzung beginnt. |
-| Sicherheitsbaseline | Erkennung verdächtiger Benutzeraktivitäten. | Benachrichtigung des IT-Sicherheitsteams und Deaktivierung des verdächtigen Benutzerkontos. |
-| Ressourcenkonsistenz | Die CPU-Auslastung für eine Workload übersteigt 90 %. | Benachrichtigung des IT-Betriebsteam und Aufskalieren mit zusätzlichen Ressourcen zum Verarbeiten der Last. |
+| **Cost Management** | Monatliche Cloudausgaben sind um mehr als 20 % höher als erwartet. | Benachrichtigung des Leiters der Abrechnungsabteilung, der eine Überprüfung der Ressourcennutzung beginnt. |
+| **Sicherheitsbaseline** | Erkennung verdächtiger Benutzeraktivitäten. | Benachrichtigung des IT-Sicherheitsteams und Deaktivierung des verdächtigen Benutzerkontos. |
+| **Ressourcenkonsistenz** | Die CPU-Auslastung für eine Workload übersteigt 90 %. | Benachrichtigung des IT-Betriebsteam und Aufskalieren mit zusätzlichen Ressourcen zum Verarbeiten der Last. |
 
 ## <a name="automation-of-monitoring-and-compliance"></a>Automatisierung der Überwachung und Einhaltung
 

@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: f3903361b9ce2f4fa353d5d1dc2194c0d987babd
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a2ef9ca5762622a4c1b1edca07306e5cdb2ed0e0
+ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574328"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88885285"
 ---
 # <a name="balance-competing-priorities"></a>Ausgewogenheit konkurrierender Prioritäten
 
@@ -21,8 +21,6 @@ Der Einstieg in die digitale Transformation ist für alle Beteiligten in den Ges
 Ähnlich wie bei anderen digitalen Transformationen werden auch bei der Einführung der Cloud im Laufe der Zeit konkurrierende Prioritäten deutlich. Wie auch bei anderen Transformationsarten hat die Fähigkeit, eine Ausgewogenheit zwischen diesen Prioritäten zu finden, einen erheblichen Einfluss auf die Umsetzung des Geschäftswerts. Erforderlich sind offene (und manchmal schwierige) Gespräche zwischen den Beteiligten (und teilweise auch mit einzelnen Mitwirkenden), um diese Ausgewogenheit zu erreichen.
 
 In diesem Artikel werden einige der konkurrierenden Prioritäten beschrieben, die während der Ausführung der einzelnen Methoden häufig erläutert werden. Wir hoffen, dass dieses erweiterte Wissen Sie bei den Gesprächen über die Strategien zur Einführung der Cloud unterstützt.
-
-<!-- cSpell:ignore caf -->
 
 ![Übersicht über den Lebenszyklus der Cloudeinführung](../_images/caf-overview.png)
 
@@ -73,7 +71,7 @@ Wenn die Einführungsteams die ersten Schritte zur Cloud vorbereiten, bestehen o
 
 **Mindestumfang:** Die Bereitschaftsmethodik beschreibt einen direkten Pfad von der schnellen Einführung zu langfristigen Vorgängen. Diese Vorgehensweise beginnt mit einer grundlegenden Einführung in die Tools, die das Refactoring der Umgebung ermöglichen. Basierend auf diesen Tools und Umgebungsanforderungen werden Kunden zu einer Auswahl vordefinierter Zielzonen geleitet (diese werden jeweils über die Infrastruktur als Codemodelle bereitgestellt). Dieser Code kann dann im Laufe der Cloudeinführung umgestaltet werden, um die Vorgänge, die Sicherheit und die Verwaltungsfunktionen zu verbessern.
 
-<!-- docsTest:ignore "Govern and Manage methodologies" -->
+<!-- docutune:ignore "Govern and Manage methodologies" -->
 
 **Beispiel zum erweiterten Umfang:** Für Teams, deren Einführungsplan das mittelfristige Ziel (innerhalb von 24 Monaten) vorsieht, **mehr als 1.000 Ressourcen (Apps, Infrastrukturen oder Datenressourcen) in der Cloud zu hosten,** wird eine stabilere Ansicht der Zielzonen empfohlen. In diesen Fällen sollten die Governance- und Verwaltungsmethodiken während der ersten Konversationen über die Zielzone berücksichtigt werden. Dies führt im Rahmen des Cloudeinführungsplans jedoch oft zu Verzögerungen von Wochen oder Monaten. Um die Auswirkungen auf die Geschäftsergebnisse zu minimieren, sollte das Einführungsteam tatsächliche Workloads in der Cloud parallel zur Erstellung einer ausgereiften Zielzone sowie einer zentralen Architekturlösung erstellen.
 
@@ -83,7 +81,7 @@ Während der Migration ist es üblich, dass die Einführungsteams davon ausgehen
 
 **Konkurrierende Prioritäten:**
 
-- **Zuweisen eines neuen Hosts:** Kunden gehen bei der Migration häufig von einem _Lift & Shift-Prozess_ aus, bei dem alle Ressourcen in der Cloud in ihrer aktuellen Zustandskonfiguration replizieren werden. Dies führt zu geringfügigen Abweichungen im IT-Portfolio. Diese Vorgehensweise ist auch die schnellste Möglichkeit, Ressourcen in einem vorhandenen Rechenzentrum außer Betrieb zu nehmen.
+- **Zuweisen eines neuen Hosts:** Kunden gehen bei der Migration häufig von einem *Lift & Shift-Prozess* aus, bei dem alle Ressourcen in der Cloud in ihrer aktuellen Zustandskonfiguration replizieren werden. Dies führt zu geringfügigen Abweichungen im IT-Portfolio. Diese Vorgehensweise ist auch die schnellste Möglichkeit, Ressourcen in einem vorhandenen Rechenzentrum außer Betrieb zu nehmen.
 - **Überarbeiten:** Die Modernisierung der Architektur jeder Workload maximiert den Cloudwert hinsichtlich der Kosten, Leistung und Vorgänge. Dieser Ansatz ist jedoch weitaus langsamer und erfordert häufig Zugriff auf den Quellcode der einzelnen Anwendungen.
 
 **Mindestumfang:** Verwenden Sie während der Planung in der Frühphase die Option für das erneute Hosten, und seien Sie sich dabei bewusst, dass diese Option eine anfängliche Geschäftsannahme und keine technische Entscheidung ist. Bei der Migrationsmethodik stellt das Cloudeinführungsteam dann diese Annahme für jede migrierte Workload in Frage. Diese Methodik folgt dem Ansatz „Bewertung/Migration/Förderung“ für jede Workload oder Workloadgruppe, die eine Migrationsfactory bildet. Während der Bewertungsphase wertet das Einführungsteam die technische Eignung sowie die Architektur der einzelnen Workloads aus. Diese Bewertungsmaßnahmen führen selten zu einem reinen Lift & Shift-Ansatz, da viele der Architekturkomponenten zum Zwecke von Refactoring und Modernisierung ausgewählt werden.
@@ -131,7 +129,7 @@ Das IT-Geschäftsmodell hinsichtlich der Verwaltung von Vorgängen hat sich im l
 
 ## <a name="balance-during-the-organize-phase"></a>Gleichgewicht während der Organisationsphase
 
-Die konkurrierenden Prioritäten in diesem Artikel reflektieren das Bestreben der IT, die Geschäftsanforderungen hinsichtlich Geschwindigkeit und Agilität zu erfüllen. Dieselbe Verschiebung zeigt sich auch bei Änderungen an Organigrammen (oder v-Team-Strukturen), um eine größere Unterstützung für Geschäftsergebnisse zu ermöglichen. Wenn IT-Leiter über Teamstrukturen diskutieren, werden häufig zwei konkurrierende Prioritäten angesprochen: zentralisierte Steuerung und delegierte Steuerung.
+Die konkurrierenden Prioritäten in diesem Artikel reflektieren das Bestreben der IT, die Geschäftsanforderungen hinsichtlich Geschwindigkeit und Agilität zu erfüllen. Dieselbe Verschiebung zeigt sich auch bei Änderungen an Organigrammen (oder virtuelle Team-Strukturen), um eine größere Unterstützung für Geschäftsergebnisse zu ermöglichen. Wenn IT-Leiter über Teamstrukturen diskutieren, werden häufig zwei konkurrierende Prioritäten angesprochen: zentralisierte Steuerung und delegierte Steuerung.
 
 **Konkurrierende Prioritäten:**
 
