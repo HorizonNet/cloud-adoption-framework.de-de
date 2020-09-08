@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: seo-azure-migrate
-ms.openlocfilehash: e84bba82e088c1326ecabf420866fe3ed3240660
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 56052fb7f9e4837d821637e5b7525521a7737bdb
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885965"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510344"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Cloudmigration im Cloud Adoption Framework
 
@@ -22,7 +22,7 @@ Der [Cloudeinführungsplan](../plan/index.md) jedes Unternehmens beinhaltet Work
 
 Zur Vorbereitung auf diese Phase des Cloudeinführungszyklus werden die folgenden Schritte empfohlen:
 
-|  |  |
+| <span title="Symbol">&nbsp;</span> | <span title="Beschreibung">&nbsp;</span> |
 |--|--|
 | <br> ![1](../_images/icons/1.png) | <br> [Migrieren Ihrer ersten Workload](./azure-migration-guide/index.md): Machen Sie sich mithilfe des Leitfadens zur Azure-Migration mit den nativen Azure-Tools und dem Ansatz für die Migration vertraut. |
 | <br> ![2](../_images/icons/2.png) | <br> [Migrationsszenarios](./azure-best-practices/index.md): Nutzen Sie zusätzliche Migrationstools und -ansätze für weitere Migrationsszenarien. |

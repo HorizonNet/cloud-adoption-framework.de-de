@@ -7,12 +7,12 @@ ms.date: 05/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 759ac124bed7bab6ed8bca6efff3278efbc0759d
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 74cee491548c833924ce3439b86757dc203fd0a6
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574345"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510463"
 ---
 # <a name="develop-a-cloud-adoption-plan"></a>Entwickeln eines Cloudeinführungsplans
 
@@ -20,7 +20,7 @@ Ein Cloudeinführungsplan dient dazu, die ehrgeizigen Ziele einer Cloudeinführu
 
 Die folgenden Aufgaben helfen Ihnen dabei, Ihre Technologiestrategie zu dokumentieren. Bei dieser Herangehensweise werden priorisierte Aufgaben erfasst, um die Einführung zu fördern. Danach wird der Cloudeinführungsplan mit den Metriken und Beweggründen aus der Cloudeinführungsplan in Einklang gebracht.
 
-|  |  |
+| <span title="Symbol">&nbsp;</span> | <span title="Beschreibung">&nbsp;</span> |
 |--|--|
 | <br> ![1](../_images/icons/1.png) | <br> [Digitale Ressource](../digital-estate/rationalize.md): Erfassen und rationalisieren Sie Ihre digitalen Ressourcen basierend auf Annahmen, die an den Beweggründen und Geschäftsergebnissen ausgerichtet sind. |
 | <br> ![2](../_images/icons/2.png) | <br> [Erstausrichtung der Organisation](./initial-org-alignment.md): Entwickeln Sie einen Plan für die Erstausrichtung der Organisation, um den Einführungsplan zu unterstützen. |

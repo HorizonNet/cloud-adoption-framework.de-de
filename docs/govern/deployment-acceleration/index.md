@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: d255fd0b4b7727ea72ee7219673fb91632f03568
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 1bc95e74444485a86989c38133943c7cbd7201cc
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88883534"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510395"
 ---
 # <a name="deployment-acceleration-discipline-overview"></a>Übersicht über die Disziplin der Beschleunigung der Bereitstellung
 
@@ -37,7 +37,7 @@ Umsetzbare Richtlinienanweisungen und die daraus resultierenden Architekturanfor
 
 Die folgenden Schritte helfen Ihnen dabei, Governancerichtlinien zum Steuern der Bereitstellung und Konfiguration von Ressourcen in Ihrer Cloudumgebung zu definieren.
 
-|  |  |
+| <span title="Symbol">&nbsp;</span> | <span title="Beschreibung">&nbsp;</span> |
 |--|--|
 | <br> ![Vorlagensymbol](../../_images/govern/process-template.png) | <br> [Vorlage zur Disziplin „Beschleunigung der Bereitstellung“:](./template.md) Laden Sie die Vorlage zum Dokumentieren einer Disziplin vom Typ „Beschleunigung der Bereitstellung“ herunter. |
 | <br> ![Risikosymbol](../../_images/govern/process-risks.png) | <br> [Geschäftsrisiken:](./business-risks.md) Machen Sie sich mit den Motiven und Risiken vertraut, die häufig mit der Disziplin der Beschleunigung der Bereitstellung verbunden sind.|

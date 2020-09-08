@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c3e6c28313353b38a160fc2881b11b07bd567376
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: fcd73b815150e32b2d7077ad12b1c45807d26491
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880253"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510310"
 ---
 # <a name="identity-baseline-discipline-overview"></a>Übersicht über die Disziplin „Identitätsbaseline“
 
@@ -37,7 +37,7 @@ Umsetzbare Richtlinienanweisungen und die daraus resultierenden Architekturanfor
 
 Die folgenden Schritte enthalten Beispiele und mögliche Optionen, die Sie beim Entwickeln der Disziplin „Identitätsbaseline“ berücksichtigen sollten. Verwenden Sie die einzelnen Schritte als Ausgangspunkte für Diskussionen innerhalb Ihres Cloudgovernanceteams sowie mit den beteiligten Geschäfts- und IT-Teams in Ihrer Organisation, um die Richtlinien und Prozesse auszuarbeiten, die zur Bewältigung identitätsbezogener Risiken erforderlich sind.
 
-|  |  |
+| <span title="Symbol">&nbsp;</span> | <span title="Beschreibung">&nbsp;</span> |
 |--|--|
 | <br> ![Vorlagensymbol](../../_images/govern/process-template.png)   | <br> [Vorlage für die Disziplin „Identitätsbaseline“:](./template.md) Laden Sie die Vorlage zur Dokumentation einer Disziplin vom Typ „Identitätsbaseline“ herunter. |
 | <br> ![Risikosymbol](../../_images/govern/process-risks.png)         | <br> [Geschäftsrisiken:](./business-risks.md) Machen Sie sich mit den Motiven und Risiken vertraut, die häufig mit der Disziplin „Identitätsbaseline“ verbunden sind. |

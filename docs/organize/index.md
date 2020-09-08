@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 6b942705282204adaa9cdb7949091341392a121a
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: c6f0c69b37f2f1409d0812701cb089092ae8af2d
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884911"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510531"
 ---
 # <a name="manage-organizational-alignment"></a>Verwalten der Organisationsausrichtung
 
@@ -21,7 +21,7 @@ Die Cloudeinführung ist ohne gut organisierte Teams nicht möglich. Für eine e
 
 Die folgenden Aufgaben unterstützen Sie bei der Erstellung einer Landezone für die Cloudeinführung.
 
-|  |  |
+| <span title="Symbol">&nbsp;</span> | <span title="Beschreibung">&nbsp;</span> |
 |--|--|
 | <br> ![1](../_images/icons/1.png) | <br> [Strukturtyp](#structure-type): Definieren Sie den Typ der Organisationsstruktur, die am besten zu Ihrem Betriebsmodell passt. |
 | <br> ![2](../_images/icons/2.png) | <br> [Cloudfunktionen](#understand-required-cloud-functions): Machen Sie sich mit den für die Einführung und den Betrieb der Cloud erforderlichen Cloudfunktionen vertraut. |

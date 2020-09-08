@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: ba59b5e67a9cd7a64b116852190a1428503174ee
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 4affc50cbe431b8bff780e81487f9d3611e9ecd8
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88879471"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510412"
 ---
 # <a name="resource-consistency-discipline-overview"></a>Übersicht über die Disziplin „Ressourcenkonsistenz“
 
@@ -37,7 +37,7 @@ Umsetzbare Richtlinienanweisungen und die daraus resultierenden Architekturanfor
 
 Die folgenden Schritte enthalten Beispiele und mögliche Optionen, die Sie beim Entwickeln der Disziplin „Ressourcenkonsistenz“ berücksichtigen sollten. Verwenden Sie die einzelnen Schritte als Ausgangspunkt für Diskussionen innerhalb Ihres Cloudgovernanceteams sowie mit den beteiligten Geschäfts- und IT-Teams in Ihrer Organisation, um die Richtlinien und Prozesse festzulegen, die zur Bewältigung von Risiken in Bezug auf die Disziplin „Ressourcenkonsistenz“ erforderlich sind.
 
-|  |  |
+| <span title="Symbol">&nbsp;</span> | <span title="Beschreibung">&nbsp;</span> |
 |--|--|
 | <br> ![Vorlagensymbol](../../_images/govern/process-template.png) | <br> [Vorlage für die Disziplin „Ressourcenkonsistenz“:](./template.md) Laden Sie die Vorlage zur Dokumentation einer Disziplin vom Typ „Ressourcenkonsistenz“ herunter. |
 | <br> ![Risikosymbol](../../_images/govern/process-risks.png) | <br> [Geschäftsrisiken:](./business-risks.md) Machen Sie sich mit den Motiven und Risiken vertraut, die häufig mit der Disziplin „Ressourcenkonsistenz“ verbunden sind. |

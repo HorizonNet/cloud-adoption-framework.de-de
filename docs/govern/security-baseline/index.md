@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 17b40a610bae3cd8af6b35dd8f95797c720b473f
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: d9267c51eb0237e92ed838979090926c82e69971
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88879097"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510378"
 ---
 # <a name="security-baseline-discipline-overview"></a>Übersicht über die Disziplin „Sicherheitsbaseline“
 
@@ -37,7 +37,7 @@ Umsetzbare Richtlinienanweisungen und die daraus resultierenden Architekturanfor
 
 Die folgenden Schritte enthalten Beispiele und mögliche Optionen, die Sie beim Entwickeln der Disziplin „Sicherheitsbaseline“ berücksichtigen sollten. Verwenden Sie die einzelnen Schritte als Ausgangspunkte für Diskussionen innerhalb Ihres Cloudgovernanceteams sowie mit betroffenen Geschäfts-, IT- und Sicherheitsteams in Ihrer Organisation, um die Richtlinien und Prozesse auszuarbeiten, die zur Bewältigung sicherheitsrelevanter Risiken erforderlich sind.
 
-|  |  |
+| <span title="Symbol">&nbsp;</span> | <span title="Beschreibung">&nbsp;</span> |
 |--|--|
 | <br> ![Vorlagensymbol](../../_images/govern/process-template.png) | <br> [Vorlage für die Disziplin „Sicherheitsbaseline“:](./template.md) Laden Sie die Vorlage zur Dokumentation einer Disziplin vom Typ „Sicherheitsbaseline“ herunter. |
 | <br> ![Risikosymbol](../../_images/govern/process-risks.png) | <br> [Geschäftsrisiken:](./business-risks.md) Machen Sie sich mit den Motiven und Risiken vertraut, die häufig mit der Disziplin „Sicherheitsbaseline“ verbunden sind. |

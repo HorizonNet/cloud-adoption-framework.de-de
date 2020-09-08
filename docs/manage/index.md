@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8867c16325b936b847355aba1ace2a99306bf173
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: be3c9b3781ac252e965a394e9fb35b2e91fca592
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877737"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510497"
 ---
 # <a name="cloud-management-in-the-cloud-adoption-framework"></a>Cloudverwaltung im Framework für die Cloudeinführung
 
@@ -22,7 +22,7 @@ Die Bereitstellung einer [Cloudstrategie ](../strategy/index.md) erfordert eine 
 
 Zur Vorbereitung auf diese Phase des Cloudeinführungszyklus empfiehlt das Framework die folgenden Übungen:
 
-|  |  |
+| <span title="Symbol">&nbsp;</span> | <span title="Beschreibung">&nbsp;</span> |
 |--|--|
 | <br> ![1](../_images/icons/1.png) | <br> [Einrichten einer Verwaltungsbasislinie](./azure-management-guide/index.md): Definieren Sie die wichtigen Klassifizierungen, Cloudverwaltungstools und Prozesse, die für die Bereitstellung Ihrer Mindestverpflichtung zur Betriebsverwaltung erforderlich sind. |
 | <br> ![2](../_images/icons/2.png) | <br> [Definieren von geschäftlichen Verpflichtungen](./considerations/business-alignment.md): Dokumentieren Sie die unterstützten Workloads, um betriebliche Verpflichtungen beim Unternehmen herzustellen und Investitionen für die Cloudverwaltung für jede Workload zu vereinbaren. |
