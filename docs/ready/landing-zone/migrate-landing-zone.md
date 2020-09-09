@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c85aec77b5d2e264ba6bc06fcce135125f82573e
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 3777dd0cfebba040dd42db3229a925856971947e
+ms.sourcegitcommit: 78fa714f964225cd5fc7a762e83fafe9b3f9dea1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574362"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89427823"
 ---
 # <a name="deploy-a-migration-landing-zone-in-azure"></a>Bereitstellen einer Landezone in Azure
 
@@ -62,7 +62,7 @@ Bei dieser Implementierungsoption werden keine Governancetools implementiert. Be
 Um die parallele Entwicklung von Disziplinen der Governance zu beschleunigen, sehen Sie sich die [Governancemethodik](../../govern/index.md) an, und überlegen Sie, ob Sie zusätzlich zur Blaupause für die CAF-Migrationszielzone die [Blaupause für CAF-Grundlagen](./foundation-blueprint.md) bereitstellen möchten.
 
 > [!WARNING]
-> Mit der Weiterentwicklung der Disziplinen der Governance ist möglicherweise eine Umgestaltung erforderlich. Möglicherweise ist eine Umgestaltung erforderlich. Insbesondere müssen später Ressourcen [in ein neues Abonnement oder eine neue Ressourcengruppe verschoben werden](/azure/azure-resource-manager/management/move-resource-group-and-subscription?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json).
+> Mit der Weiterentwicklung der Disziplinen der Governance ist möglicherweise eine Umgestaltung erforderlich. Insbesondere müssen später Ressourcen [in ein neues Abonnement oder eine neue Ressourcengruppe verschoben werden](/azure/azure-resource-manager/management/move-resource-group-and-subscription?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json).
 
 ### <a name="operations-baseline"></a>Betriebsbaseline
 

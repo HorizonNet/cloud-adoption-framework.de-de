@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: 137a19423a5dd780abc552feb2a68ef11d8a11d5
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: aac174a109954c04fa192e4d2d62926433d95dfc
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662267"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510582"
 ---
 # <a name="compare-common-cloud-operating-models"></a>Vergleichen gängiger Cloudbetriebsmodelle
 
@@ -54,11 +54,11 @@ Viele Teams und Einzelpersonen sind zwar für die Unterstützung verschiedener F
 
 ||Dezentralisierte betriebliche Abläufe |Zentralisierte betriebliche Abläufe  |Betriebliche Abläufe auf Unternehmensebene          |Verteilte betriebliche Abläufe|
 |---------              |---------      |---------    |---------          |---------|
-|Geschäftliche Ausrichtung|[Workloadteam](../organize/cloud-adoption.md)|[Zentrale Cloudstrategie](../organize/cloud-strategy.md)|[CCoE](../organize/cloud-center-of-excellence.md)|Variabel – [allgemeines Cloudstrategieteam bilden?](../get-started/team/cloud-strategy.md)|
-|[Cloudbetrieb](../organize/cloud-operations.md)|[Workloadteam](../organize/cloud-adoption.md)|[Zentrale IT-Abteilung](../organize/central-it.md)|[CCoE](../organize/cloud-center-of-excellence.md)|Basierend auf einer Portfolioanalyse – weitere Informationen finden Sie unter [Erstellen der Geschäftsausrichtung in der Cloudverwaltung](../manage/considerations/business-alignment.md) und [Die geschäftliche Verpflichtung in der Cloudverwaltung](../manage/considerations/commitment.md)|
-|[Cloud Governance](../organize/cloud-governance.md)|[Workloadteam](../organize/cloud-adoption.md)|[Zentrale IT-Abteilung](../organize/central-it.md)|[CCoE](../organize/cloud-center-of-excellence.md)|[Mehrere Governance-Ebenen](../govern/guides/complex/multiple-layers-of-governance.md)|
-|[Cloudsicherheit](../organize/cloud-security.md)|[Workloadteam](../organize/cloud-adoption.md)|[Security Operations Center (SOC)](../organize/cloud-security-operations-center.md)|[CCoE](../organize/cloud-center-of-excellence.md) + [SOC](../organize/cloud-security-operations-center.md)|Gemischt – weitere Informationen finden Sie unter [Definieren einer Sicherheitsstrategie](../strategy/define-security-strategy.md)|
-|[Cloudautomatisierung und DevOps](../organize/cloud-automation.md)|[Workloadteam](../organize/cloud-adoption.md)|[Zentrales IT-Team](../organize/central-it.md) oder nicht verfügbar|[CCoE](../organize/cloud-center-of-excellence.md)|Basierend auf einer Portfolioanalyse – weitere Informationen finden Sie unter [Erstellen der Geschäftsausrichtung in der Cloudverwaltung](../manage/considerations/business-alignment.md) und [Die geschäftliche Verpflichtung in der Cloudverwaltung](../manage/considerations/commitment.md)|
+|**Geschäftliche Ausrichtung**|[Workloadteam](../organize/cloud-adoption.md)|[Zentrale Cloudstrategie](../organize/cloud-strategy.md)|[CCoE](../organize/cloud-center-of-excellence.md)|Variabel – [allgemeines Cloudstrategieteam bilden?](../get-started/team/cloud-strategy.md)|
+|**[Cloudbetrieb](../organize/cloud-operations.md)**|[Workloadteam](../organize/cloud-adoption.md)|[Zentrale IT-Abteilung](../organize/central-it.md)|[CCoE](../organize/cloud-center-of-excellence.md)|Basierend auf einer Portfolioanalyse – weitere Informationen finden Sie unter [Erstellen der Geschäftsausrichtung in der Cloudverwaltung](../manage/considerations/business-alignment.md) und [Die geschäftliche Verpflichtung in der Cloudverwaltung](../manage/considerations/commitment.md)|
+|**[Cloud Governance](../organize/cloud-governance.md)**|[Workloadteam](../organize/cloud-adoption.md)|[Zentrale IT-Abteilung](../organize/central-it.md)|[CCoE](../organize/cloud-center-of-excellence.md)|[Mehrere Governance-Ebenen](../govern/guides/complex/multiple-layers-of-governance.md)|
+|**[Cloudsicherheit](../organize/cloud-security.md)**|[Workloadteam](../organize/cloud-adoption.md)|[Security Operations Center (SOC)](../organize/cloud-security-operations-center.md)|[CCoE](../organize/cloud-center-of-excellence.md) + [SOC](../organize/cloud-security-operations-center.md)|Gemischt – weitere Informationen finden Sie unter [Definieren einer Sicherheitsstrategie](../strategy/define-security-strategy.md)|
+|**[Cloudautomatisierung und DevOps](../organize/cloud-automation.md)**|[Workloadteam](../organize/cloud-adoption.md)|[Zentrales IT-Team](../organize/central-it.md) oder nicht verfügbar|[CCoE](../organize/cloud-center-of-excellence.md)|Basierend auf einer Portfolioanalyse – weitere Informationen finden Sie unter [Erstellen der Geschäftsausrichtung in der Cloudverwaltung](../manage/considerations/business-alignment.md) und [Die geschäftliche Verpflichtung in der Cloudverwaltung](../manage/considerations/commitment.md)|
 
 ### <a name="accelerate-operating-model-implementation-in-azure"></a>Beschleunigen der Implementierung von Betriebsmodellen in Azure
 

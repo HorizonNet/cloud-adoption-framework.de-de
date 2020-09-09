@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
-ms.openlocfilehash: 59c4e0b28d36167f34e538d28f5944cb4002b342
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: ffa91cb9b608db3cf92d72d2bc3b857344197f9d
+ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885727"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89510480"
 ---
 # <a name="what-is-the-microsoft-cloud-adoption-framework-for-azure"></a>Was ist das Microsoft Cloud Adoption Framework für Azure?
 
@@ -29,8 +29,8 @@ Mithilfe der bewährten Methoden des Microsoft Cloud Adoption Framework für Azu
 
 Im Cloud Adoption Framework werden bewährte Methoden für die Cloudeinführung von Microsoft-Mitarbeitern, -Partnern und -Kunden zusammengeführt. Das Framework stellt eine Reihe von Tools, Anleitungen und Inhalten bereit, die Sie bei der Entwicklung von Technologie-, Geschäfts- und Personalstrategien unterstützen, damit Sie mit Ihren Maßnahmen für die Cloudeinführung die gewünschten Geschäftsergebnisse erzielen können. Diese Anleitungen sind auf die folgenden Phasen des Lebenszyklus einer Cloudeinführung ausgerichtet, sodass Sie jederzeit problemlos auf die passenden Informationen zugreifen können.
 
-|  |  |  |  |  |
-|--|--|--|--|--|
+| <span title="Symbol">&nbsp;</span> | <span title="Beschreibung">&nbsp;</span> | <span title="Symbol">&nbsp;</span> | <span title="Beschreibung">&nbsp;</span> |
+|--|--|--|--|
 | <br> ![Strategiesymbol](./_images/icons/strategy.png) | <br> [Strategie](./strategy/index.md):&nbsp;Definieren&nbsp;der&nbsp;Geschäftsbegründung&nbsp;und der erwarteten Ergebnisse der Einführung. | <br> ![Planungssymbol](./_images/icons/plan.png) | <br> [Planung](./plan/index.md):&nbsp;Ausrichten&nbsp;umsetzbarer&nbsp;Einführungspläne&nbsp;an Geschäftsergebnissen. |
 | <br> ![Symbol „Bereit“](./_images/icons/ready.png)       | <br> [Bereit:](./ready/index.md) Hier erfahren Sie, wie Sie die Cloudumgebung für die geplanten Änderungen vorbereiten. | <br> ![Migrationssymbol](./_images/icons/adopt.png) | <br> [Migration](./migrate/index.md): Hier erfahren Sie, wie Sie bereits vorhandene Workloads migrieren und modernisieren. |
 | <br> ![Innovationssymbol](./_images/icons/innovate.png) | <br> [Innovation](./innovate/index.md): Entwickeln Sie neue cloudnative Lösungen oder Hybridlösungen. | <br> ![Symbol „Steuern“](./_images/icons/govern.png) | <br> [Steuern](./govern/index.md): Hier finden Sie Informationen zur Governance für die Umgebung und die Workloads. |
