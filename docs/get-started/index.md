@@ -1,19 +1,18 @@
 ---
 title: Erste Schritte mit dem Cloud Adoption Framework
 description: Finden Sie für Ihre Anforderungen an die Cloudeinführung den relevanten Leitfaden zu den ersten Schritten.
-services: cloud-adoption-framework
-ms.service: cloud-adoption-framework
-ms.topic: conceptual
 author: JanetCThomas
 ms.author: janet
 ms.date: 08/27/2020
+ms.topic: conceptual
+ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 8f9e67b5980c5da316285e296b8dd96d61b6d396
-ms.sourcegitcommit: af521583b98153f7157895b7ba9de71183d437b0
+ms.openlocfilehash: 5fd1702a7fc2dfbd99681c15c76906908ab54501
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "89176428"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603438"
 ---
 # <a name="get-started-with-the-cloud-adoption-framework"></a>Erste Schritte mit dem Cloud Adoption Framework
 
