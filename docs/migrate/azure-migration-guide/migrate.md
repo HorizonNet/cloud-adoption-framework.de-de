@@ -3,18 +3,18 @@ title: Migrieren von Objekten
 description: Initiieren Sie die Migration zu Azure, indem Sie die geeigneten Tools ermitteln, z. B. native Tools, Drittanbietertools und Projektmanagementtools.
 author: matticusau
 ms.author: mlavery
-ms.date: 08/08/2019
+ms.date: 09/02/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7363c62aa5bd6ed13fcd5db8fca92ed51ecf18f9
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: cd4f4c579aa2edfece69e05feb44bcd344380bf7
+ms.sourcegitcommit: ba6747b5571b342cb3c4bfaf5b96da0946ebba31
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885030"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89557042"
 ---
 <!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
 
@@ -100,6 +100,36 @@ Weitere Informationen finden Sie unter
 - [Azure-Portal: Erstellen eines Migrationsprojekts](https://portal.azure.com/#create/Microsoft.AzureMigrate)
 
 ::: zone-end
+
+### <a name="azure-app-service-migration-assistant"></a>Azure App Service-Migrations-Assistent
+
+Der Azure App Service-Migrations-Assistent ist Teil einer [größeren Anwendungssuite](https://azure.microsoft.com/services/azure-migrate/), die Organisationen bei der Migration zur Cloud unterstützt. Der Migrations-Assistent führt Benutzer auf seiner Benutzeroberfläche durch zwei Aufgaben:
+
+1. Er bewertet eine bestimmte, unter Windows Server installierte Web-App, indem er die Kompatibilität vor der Migration überprüft, um zu ermitteln, ob die Web-App unverändert zu Azure App Service migriert werden kann.
+1. Wenn die Bewertung ergibt, dass die Web-App migriert werden kann, führt der Migration Assistant die Migration durch. Sie müssen dem Migration Assistant Zugriff auf Ihr Azure-Konto gewähren sowie die zu verwendenden Ressourcengruppe, einen Namen für die Web-App und weitere Details auswählen.
+Alternativ generiert der Migrations-Assistent eine Azure Resource Manager-Vorlage, mit der Sie die Webanwendung mit mehr Automatisierung und Wiederholbarkeit migrieren können.
+
+#### <a name="migrate-a-web-app-to-azure-app-service"></a>Migrieren einer Web-App zu Azure App Service
+
+Zu Beginn des Migrationsprozesses benötigt der Migration Assistant wichtige Informationen zu Ihrem Azure-Konto.
+
+Melden Sie sich zunächst bei Ihrem Azure-Konto an, und verknüpfen Sie die Migration Assistant-Sitzung über einen eindeutigen Code mit Ihrem Konto. Wählen Sie anschließend das Abonnement, die Ressourcengruppe und den Domänennamen der Website aus. Sie können einen neuen Azure App Service-Plan zum Hosten der App erstellen oder einen vorhandenen Plan auswählen. Die Auswahl wirkt sich auf die geografische Region aus, in der Ihre App gehostet wird. Sie haben zudem die Möglichkeit, diesen Migrationsvorgang einem vorhandenen Azure Migration-Projekt zuzuordnen. Abschließend können Sie die Datenbankeinrichtung entweder überspringen oder eine Hybridverbindung einrichten, um eine Datenbankverbindung zu ermöglichen.
+
+Nachdem der Migrations-Assistent Ihre Angaben erfasst und überprüft hat, werden die benötigten Azure App Service-Ressourcen in der ausgewählten Region und Ressourcengruppe erstellt. Er komprimiert die Quelldateien der Web-App und verwendet die Azure App Service-Bereitstellungs-API, um sie bereitzustellen. Zuletzt werden Sie bei optionalen Schritten unterstützt, wie etwa dem Einrichten einer Hybridverbindung.
+
+Nachdem die App erfolgreich migriert wurde, können weitere Aufgaben erforderlich sein. Dazu kann Folgendes gehören:
+
+- Manuelles Verschieben von Anwendungseinstellungen und Verbindungszeichenfolgen in der Datei „web.config“ zu Azure App Service
+- Migrieren von Daten von einer lokalen SQL Server-Instanz zu einer Azure SQL-Datenbank
+- Einrichten eines SSL-Zertifikats
+- Einrichten von benutzerdefinierten Domänennamen
+- Einrichten von Berechtigungen in Azure Active Directory
+
+Sie können auch den Azure App Service-Hostingplan und andere Einstellungen wie automatische Skalierung und Bereitstellungsslots ändern.
+
+Weitere Informationen finden Sie unter: 
+
+[Migrieren von ASP.NET-Apps zu Azure](/learn/paths/migrate-dotnet-apps-azure)
 
 ### <a name="data-migration-assistant"></a>Datenmigrations-Assistent
 

@@ -1,18 +1,18 @@
 ---
 title: Übersicht über Azure-Serververwaltungsdienste
-description: Dieser Abschnitt des Frameworks für die Cloudeinführung für Azure stellt einen umsetzbaren Plan mit Vorgaben für die Bereitstellung von Serververwaltungsdiensten in Ihrer Umgebung bereit.
+description: Hier finden Sie Informationen zum umsetzbaren Plan im Cloud Adoption Framework, der Vorgaben für die Bereitstellung von Serververwaltungsdiensten in Ihrer Umgebung bereitstellt.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9e39f1e1589374b438009f423aadf0195837e5cb
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: d39d31dd5c8a8a280deb23be9962835bdaa318b6
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84785445"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604132"
 ---
 # <a name="overview-of-azure-server-management-services"></a>Übersicht über Azure-Serververwaltungsdienste
 

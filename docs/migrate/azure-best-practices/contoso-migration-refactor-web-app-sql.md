@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 services: azure-migrate
-ms.openlocfilehash: 3e550dafc582742a9cd0c4c83f0fbc416242bc8b
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 31e8c22d12d851c0b72e9821defdf1268d3c8110
+ms.sourcegitcommit: 78fa714f964225cd5fc7a762e83fafe9b3f9dea1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567392"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89427840"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc smarthotel SHWEB SHWCF -->
 
@@ -91,6 +91,7 @@ Contoso wertet seinen vorgeschlagenen Entwurf aus, indem das Unternehmen eine Li
 
 | Dienst | BESCHREIBUNG | Kosten |
 | --- | --- | --- |
+| [Azure App Service-Migrations-Assistent](/learn/paths/migrate-dotnet-apps-azure/) | Eine kostenlose und einfache Möglichkeit, um .NET-Webanwendungen aus der lokalen Umgebung nahtlos und mit minimalen oder sogar ganz ohne Codeänderungen zur Cloud zu migrieren. | Sie können das Tool kostenlos herunterladen. |
 | [Data Migration Assistant](/sql/dma/dma-overview?view=ssdt-18vs2017) | Contoso nutzt den Datenmigrations-Assistenten, um Kompatibilitätsprobleme zu bewerten und zu erkennen, die sich unter Umständen auf die Datenbankfunktionen in Azure auswirken. Der Datenmigrations-Assistent bewertet die Featureparität zwischen SQL-Quellen und -Zielen und empfiehlt Verbesserungen der Leistung und Zuverlässigkeit. | Sie können das Tool kostenlos herunterladen. |
 | [Azure Database Migration Service](/azure/dms/dms-overview) | Azure Database Migration Service ermöglicht die nahtlose Migration mehrerer Datenbankquellen zu Azure-Datenplattformen mit minimaler Downtime. | Informieren Sie sich über die [unterstützten Regionen](/azure/dms/dms-overview#regional-availability) und die [Preise für den Database Migration Service](https://azure.microsoft.com/pricing/details/database-migration). |
 | [Azure SQL-Datenbank](/azure/azure-sql/database/sql-database-paas-overview) | Ein intelligenter, vollständig verwalteter Dienst für relationale Clouddatenbanken. | Die Kosten basieren auf Features, Durchsatz und Größe. [Weitere Informationen](https://azure.microsoft.com/pricing/details/sql-database/managed) |
@@ -112,14 +113,24 @@ Contoso geht bei der Ausführung der Migration wie folgt vor:
 
 > [!div class="checklist"]
 >
-> - **Schritt 1: Bereitstellen einer Datenbank in Azure SQL-Datenbank**. Contoso stellt eine Azure SQL-Datenbank-Instanz bereit. Nachdem die App-Website zu Azure migriert wurde, verweist die Web-App für den WCF-Dienst auf diese Instanz.
-> - **Schritt 2: Bewerten der Datenbank**. Contoso bewertet die Datenbank für die Migration mithilfe des Datenmigrations-Assistenten und migriert sie anschließend mit Azure Database Migration Service.
-> - **Schritt 3: Bereitstellen von Web-Apps**. Contoso stellt die beiden Web-Apps bereit.
+> - **Schritt 1: Bewerten und Migrieren der Web-Apps**. Contoso verwendet den [Azure App Service-Migrations-Assistenten](https://azure.microsoft.com/migration/web-applications/), um die Kompatibilität vor der Migration zu überprüfen und die Web-Apps zu Azure App Service zu migrieren.
+> - **Schritt 2: Bereitstellen einer Datenbank in Azure SQL-Datenbank**. Contoso stellt eine Azure SQL-Datenbank-Instanz bereit. Nachdem die App-Website zu Azure migriert wurde, verweist die Web-App für den WCF-Dienst auf diese Instanz.
+> - **Schritt 3: Bewerten der Datenbank**. Contoso bewertet die Datenbank für die Migration mithilfe des Datenmigrations-Assistenten und migriert sie anschließend mit Azure Database Migration Service.
 > - **Schritt 4: Einrichten von Azure DevOps**. Contoso erstellt ein neues Azure DevOps-Projekt und importiert das Git-Repository.
 > - **Schritt 5: Konfigurieren von Verbindungszeichenfolgen**. Contoso konfiguriert Verbindungszeichenfolgen, damit die Web-App auf Webebene, die Web-App für den WCF-Dienst und die SQL-Instanz kommunizieren können.
 > - **Schritt 6: Einrichten von Build- und Releasepipelines in Azure DevOps**. Im letzten Schritt richtet Contoso Build- und Releasepipelines in Azure DevOps zum Erstellen der Anwendung ein und stellt sie in zwei separaten Web-Apps bereit.
 
-## <a name="step-1-provision-a-database-in-azure-sql-database"></a>Schritt 1: Bereitstellen einer Datenbank in Azure SQL-Datenbank
+## <a name="step-1-assess-and-migrate-the-web-apps"></a>Schritt 1: Bewerten und Migrieren der Web-Apps
+
+Contoso-Administratoren bewerten und migrieren ihre Web-App mithilfe des [Azure App Service-Migrations-Assistenten](https://azure.microsoft.com/migration/web-applications/). Bei dem Prozess orientieren sie sich am [Microsoft-Lernpfad](/learn/paths/migrate-dotnet-apps-azure/). Die Administratoren führen im Wesentlichen folgende Aktionen aus:
+
+- Sie verwenden die [Azure App Service-Migrationsbewertung](https://appmigration.microsoft.com/assessment/), um alle ggf. vorhandenen Abhängigkeiten zwischen Ihren Web-Apps auszuwerten und um mögliche Inkompatibilitäten zwischen ihren lokalen Web-Apps und der Unterstützung durch Azure App Service zu ermitteln.
+
+- Sie laden den Azure App Service-Migrations-Assistenten herunter und melden sich bei ihrem Azure-Konto an.
+
+- Sie wählen ein Abonnement, eine Ressourcengruppe und den Domänennamen der Website aus.
+
+## <a name="step-2-provision-a-database-in-azure-sql-database"></a>Schritt 2: Bereitstellen einer Datenbank in Azure SQL-Datenbank
 
 1. Die Administratoren von Contoso entscheiden sich dafür, eine Azure SQL-Datenbank-Instanz zu erstellen.
 
@@ -151,7 +162,7 @@ Contoso geht bei der Ausführung der Migration wie folgt vor:
 - [Erhalten Sie Hilfe](/azure/sql-database/sql-database-get-started-portal) bei der Bereitstellung einer SQL-Datenbank-Instanz.
 - Erfahren Sie mehr zu den [Ressourcenlimits für virtuelle Kerne](/azure/sql-database/sql-database-vcore-resource-limits-elastic-pools).
 
-## <a name="step-2-assess-the-database"></a>Schritt 2: Bewerten der Datenbank
+## <a name="step-3-assess-the-database"></a>Schritt 3: Bewerten der Datenbank
 
 Die Contoso-Administratoren bewerten die Datenbank mithilfe des Datenbankmigrations-Assistenten und migrieren sie anschließend anhand des [Tutorials: Onlinemigration von SQL Server zu einer Einzel- oder Pooldatenbank in Azure SQL-Datenbank mit DMS](/azure/dms/tutorial-sql-server-azure-sql-online) mithilfe von Azure Database Migration Service. Sie können Online-, Offline- und Hybridmigrationen (Vorschauversion) ausführen.
 
@@ -169,24 +180,6 @@ Die Administratoren gehen im Wesentlichen wie folgt vor:
   - Starten Sie die Replikation.
   - Beheben Sie alle Fehler.
   - Führen Sie den abschließenden Cutover (Systemwechsel) durch.
-
-## <a name="step-3-provision-web-apps"></a>Schritt 3: Bereitstellen von Web-Apps
-
-Nachdem die Datenbank migriert wurde, können die Administratoren von Contoso die beiden Web-Apps bereitstellen.
-
-1. Im Azure-Portal wählen sie **Web-App** aus.
-
-    ![Screenshot des Links „Web-App“ im Azure-Portal](./media/contoso-migration-refactor-web-app-sql/web-app1.png)
-
-1. Sie geben einen Namen für die Web-App an (**SHWEB-EUS2**), führen sie unter Windows aus und fügen sie der Produktionsressourcengruppe **ContosoRG** hinzu. Es wird eine neue Web-App und ein Azure App Service-Plan erstellt.
-
-    ![Screenshot des Bereichs „Web-App“ mit dem Standort „USA, Osten 2“](./media/contoso-migration-refactor-web-app-sql/web-app2.png)
-
-1. Nachdem die Web-App bereitgestellt wurde, wird der Prozess zum Erstellen einer Web-App für den WCF-Dienst (**SHWCF-EUS2**) wiederholt.
-
-    ![Screenshot des Bereichs „Web-App“ mit dem WCF-Dienst](./media/contoso-migration-refactor-web-app-sql/web-app3.png)
-
-1. Die Administratoren navigieren zu den Adressen der Anwendungen, um sicherzustellen, dass sie erfolgreich erstellt wurden.
 
 ## <a name="step-4-set-up-azure-devops"></a>Schritt 4: Einrichten von Azure DevOps
 

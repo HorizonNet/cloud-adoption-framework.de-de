@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9f06cc7fed7db0cf4fafb792accc1077ea84e7a7
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: a39440dff04e267a80fa085dfdf6c565d33762cb
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880593"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604848"
 ---
 # <a name="cloud-governance-guides"></a>Cloudgovernance-Leitfäden
 
@@ -41,14 +41,9 @@ Die Leitfäden veranschaulichen, wie ein Governance-MVP implementiert wird. Von 
 
 Um mit einer Governancelösung zu beginnen, wählen Sie eine der beiden folgenden Optionen aus. Die Optionen basieren auf synthetisierten Kundenerfahrungen. Die Titel basieren auf der Komplexität des Unternehmens zur Vereinfachung der Navigation. Ihre Entscheidung kann komplexer sein. Die folgenden Tabellen zeigen die Unterschiede zwischen den beiden Optionen.
 
-<!-- TODO: Refactor VDC content below. -->
-<!-- docutune:casing "Azure Virtual Datacenter" -->
-
 > [!WARNING]
-> Ein robusterer Ausgangspunkt für die Governance kann erforderlich sein. In solchen Fällen sollten Sie die [CAF-Zielzone auf Unternehmensebene](../../ready/enterprise-scale/index.md) in Betracht ziehen. Beim Ansatz der CAF-Zielzone auf Unternehmensebene stehen Einführungsteams im Fokus, die mittelfristig (innerhalb von 24 Monaten) das Ziel haben, mehr als 1.000 Assets (Infrastruktur, Apps oder Datenassets) in der Cloud zu hosten. Die CAF-Zielzone auf Unternehmensebene ist die erste Wahl für komplexe Governanceszenarien für diese umfangreicheren Cloudeinführungsmaßnahmen.
-
-<!-- markdownlint-disable MD028 -->
-
+> Ein robusterer Ausgangspunkt für die Governance kann erforderlich sein. In solchen Fällen sollten Sie die [CAF-Zielzone auf Unternehmensebene](../../ready/enterprise-scale/index.md) in Betracht ziehen. Bei diesem Ansatz stehen Einführungsteams im Fokus, die mittelfristig (innerhalb von 24 Monaten) das Ziel haben, mehr als 1.000 Assets (Infrastruktur, Apps oder Datenassets) in der Cloud zu hosten. Die CAF-Zielzone auf Unternehmensebene ist die typische Wahl für komplexe Governanceszenarien für umfangreiche Cloudeinführungsmaßnahmen.
+<!-- -->
 > [!NOTE]
 > Es ist unwahrscheinlich, dass ein Leitfaden vollständig auf Ihre Situation abgestimmt ist. Wählen Sie den Leitfaden aus, der Ihrer Situation am nächsten kommt, und nutzen Sie ihn als Ausgangspunkt. Im gesamten Leitfaden werden zusätzliche Informationen bereitgestellt, die Ihnen helfen, Entscheidungen an bestimmte Kriterien anzupassen.
 
@@ -68,6 +63,8 @@ Um mit einer Governancelösung zu beginnen, wählen Sie eine der beiden folgende
 | Datencenter oder Drittanbieter-Hostinganbieter | Weniger als fünf Datencenter | Mehr als fünf Datencenter |
 | Netzwerk | Kein WAN oder 1 &ndash; 2 WAN-Anbieter | Komplexes Netzwerk oder globales WAN |
 | Identity | Einzelne Gesamtstruktur, einzelne Domäne. | Komplex, mehrere Gesamtstrukturen, mehrere Domänen. |
+
+<!-- docutune:casing "Cost Management" "Security Baseline" -->
 
 ### <a name="desired-future-state-after-incremental-improvement-of-cloud-governance"></a>Gewünschter zukünftiger Zustand nach inkrementeller Verbesserung der Cloudgovernance
 

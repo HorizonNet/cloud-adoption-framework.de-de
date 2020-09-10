@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f5b066eed95a2fbe3ac17cb0b2e00cbdf5263a04
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 0b7f0baee83afa1e0765a7855b44d9da1c17eec8
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880610"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604815"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Governanceleitfaden für Standardunternehmen
 
@@ -71,9 +71,9 @@ Im MVP sind Methoden und Tools für die [Disziplin der Beschleunigung der Bereit
 
 Im Lauf der Zeit wird dieses Governance-MVP verwendet, um die Governancemethoden zu verbessern. Mit fortschreitender Einführung wächst das geschäftliche Risiko. Verschiedene Disziplinen im CAF-Governancemodell (Cloud Adoption Framework) werden zur Bewältigung dieser Risiken angepasst. Spätere Artikel dieser Reihe erläutern die schrittweise Verbesserung der Unternehmensrichtlinie, die sich auf das fiktive Unternehmen auswirkt. Diese Verbesserungen betreffen drei Disziplinen:
 
-- Kostenverwaltung, wenn die Einführung skaliert wird.
-- Sicherheitsbaseline, wenn geschützte Daten bereitgestellt werden.
-- Ressourcenkonsistenz, wenn das IT-Betriebsteam beginnt, unternehmenskritische Workloads zu unterstützen.
+- Die Disziplin „Kostenverwaltung“ herunterladen, wenn die Einführung fortschreitet
+- Die Disziplin „Sicherheitsbaseline“, wenn geschützte Daten bereitgestellt werden
+- Die Disziplin „Ressourcenkonsistenz“, wenn das IT-Betriebsteam beginnt, unternehmenskritische Workloads zu unterstützen
 
 ![Beispiel für ein inkrementelles Governance-MVP](../../../_images/govern/governance-improvement.png)
 

@@ -7,12 +7,12 @@ ms.date: 04/14/2020
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.topic: article
-ms.openlocfilehash: 6e3cbf834111b1ce6e68354070e8266a3d1f0d9a
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 01e95d7d2b8126903b4fe0bd8bbdbaa34f6fd5c6
+ms.sourcegitcommit: 78fa714f964225cd5fc7a762e83fafe9b3f9dea1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885557"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89427806"
 ---
 # <a name="tools-and-templates"></a>Tools und Vorlagen
 
@@ -56,6 +56,8 @@ Das Cloud Adoption Framework umfasst Tools, mit denen Sie technische Änderungen
 | [Vorlage für die Disziplin „Identitätsbaseline“](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/identity-baseline-discipline-template.docx) | Definieren Sie die Richtlinienanweisungen und Entwurfsleitfäden, die es Ihnen ermöglichen, dass die Cloudgovernance innerhalb Ihres Unternehmens mit Schwerpunkt auf die Identitätsanforderungen voranschreitet. |
 | [Vorlage für die Disziplin „Ressourcenkonsistenz“](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/resource-consistency-discipline-template.docx) | Definieren Sie die Richtlinienanweisungen und Entwurfsleitfäden, die es Ihnen ermöglichen, dass die Cloudgovernance innerhalb Ihres Unternehmens mit Schwerpunkt auf die Ressourcenkonsistenz voranschreitet. |
 | [Vorlage für die Disziplin „Sicherheitsbaseline“](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/security-baseline-discipline-template.docx) | Definieren Sie die Richtlinienanweisungen und Entwurfsleitfäden, die es Ihnen ermöglichen, dass die Cloudgovernance innerhalb Ihres Unternehmens mit Schwerpunkt auf die Sicherheitsbaseline voranschreitet. |
+| [Azure-Governancevisualisierung (AzGovViz)](https://github.com/JulianHayward/Azure-MG-Sub-Governance-Reporting) | AzGovViz ist ein PowerShell-Skript, das die Hierarchie der Azure-Mandantenverwaltungsgruppe bis hinunter zur Abonnementebene durchläuft. Es erfasst die wichtigsten Azure Governance-Funktionen wie Azure Policy, RBAC und Blueprints. Auf der Grundlage der gesammelten Daten gibt AzGovViz Einblicke in Ihre Hierarchiezuordnung, erstellt eine Mandantenzusammenfassung und liefert differenzierte Erkenntnisse zum Umfang von Verwaltungsgruppen und Abonnements. |
+
 
 ## <a name="manage"></a>Verwalten
 

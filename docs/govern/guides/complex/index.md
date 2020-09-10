@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 963e38ac80d67c1319486bc9cc7e15d9417806a7
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 0bf289a8c5c4bfc91fe8858c7da8045fd28ce3be
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880984"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604940"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>Governanceleitfaden für komplexe Unternehmen
 
@@ -75,10 +75,10 @@ Im MVP sind Methoden und Tools für die [Disziplin der Beschleunigung der Bereit
 
 Im Lauf der Zeit wird dieses Governance-MVP verwendet, um Governancemethoden schrittweise zu verbessern. Mit fortschreitender Einführung wächst das geschäftliche Risiko. Verschiedene Disziplinen im CAF-Governancemodell (Cloud Adoption Framework) werden zur Bewältigung dieser Risiken angepasst. Spätere Artikel dieser Reihe erläutern die Änderungen der Unternehmensrichtlinie, die sich auf das fiktive Unternehmen auswirkt. Diese Änderungen betreffen vier Disziplinen:
 
-- Identitätsbaseline, wenn Migrationsabhängigkeiten in der Lösung weiterentwickelt werden.
-- Kostenverwaltung, wenn die Einführung skaliert wird.
-- Sicherheitsbaseline, wenn geschützte Daten bereitgestellt werden.
-- Ressourcenkonsistenz, wenn das IT-Betriebsteam beginnt, unternehmenskritische Workloads zu unterstützen.
+- Die Disziplin „Identitätsbaseline“, wenn Migrationsabhängigkeiten in der Lösung weiterentwickelt werden
+- Die Disziplin „Kostenverwaltung“ herunterladen, wenn die Einführung fortschreitet
+- Die Disziplin „Sicherheitsbaseline“, wenn geschützte Daten bereitgestellt werden
+- Die Disziplin „Ressourcenkonsistenz“, wenn das IT-Betriebsteam beginnt, unternehmenskritische Workloads zu unterstützen
 
 ![Beispiel für ein inkrementelles Governance-MVP](../../../_images/govern/governance-improvement-large.png)
 
