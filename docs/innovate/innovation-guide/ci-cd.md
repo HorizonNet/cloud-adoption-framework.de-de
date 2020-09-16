@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: bd0ab336f865828a5bca971a76c3c49a8c45243a
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 98d5647062e440abbc54da1fc20d99640c9e63a5
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88883024"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604320"
 ---
 # <a name="empower-adoption"></a>Unterstützen der Einführung
 
@@ -112,7 +112,7 @@ Mit Azure können Ihre Entwickler cloudnative Anwendungen mithilfe moderner kano
 
 Die Förderung von Innovation für Kundenerlebnisse und Branchenanwendungen hat für jeden Unternehmensführer sehr hohe Priorität. Ganz gleich, ob Sie Web-, Mobile-, IoT- oder Mixed-Reality-Erfahrungen schaffen: Innovation ist der Schlüssel für den zukünftigen Erfolg Ihres Unternehmens. Zum Skalieren von Innovationen müssen sich Organisationen auf das Packen und Senden Ihres einzigartigen Geschäftswerts als zusammensetzbare Dienste konzentrieren, damit Partner und Mitarbeiter problemlos und effizient an der gemeinsamen Wertschöpfung teilhaben können.
 
-<!-- docsTest:casing "spark and scale innovation" -->
+<!-- docutune:casing "spark and scale innovation" -->
 
 Azure verfügt über ein einzigartiges Angebot, das Ihnen hilft, Innovationen in Ihrer Organisation zu fördern und zu skalieren. Zur Innovationsförderung können professionelle Entwickler heute Anwendungen und Bausteine erstellen, die es anderen Experten in Ihrem Unternehmen ermöglichen, Anwendungen auf einer zuverlässigen Grundlage zu erstellen. Mit Azure profitieren sie von Anfang an von der Sicherheit durch ein Team von Experten und der proaktiven Compliance, der Unternehmen, Regierungen und Startups vertrauen.
 

@@ -7,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1b436a38dddff3aa4451854f8d3d2c58de31fd77
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 711ad79f89cda5364daae00a7721d492dbe52a66
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662233"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605078"
 ---
 <!-- cSpell:ignore CSPs MSPs -->
 
-# <a name="understand-partnership-options"></a>Verstehen der Optionen für Partnerschaften
+# <a name="understand-partnership-and-support-options"></a>Verstehen der Optionen für Partnerschaften und Unterstützung
 
 Während eines Migrationsprojekts führt das Cloudeinführungsteam die tatsächliche Migration von Workloads zur Cloud aus. Im Gegensatz zu den zusammenarbeitsorientierten Aufgaben zur Problemlösung beim Definieren des [digitalen Eigentums](../../../digital-estate/index.md) oder beim Aufbau der grundlegenden Cloudinfrastruktur besteht die Migration eher aus einer Reihe von Aufgaben, die wiederholt ausgeführt werden müssen. Über die repetitiven Aspekte hinaus handelt es sich wahrscheinlich um Test- und Optimierungsaufgaben, die eine tief greifende Kenntnis des ausgewählten Cloudanbieters erfordern. Diese sich wiederholenden Aufgaben können manchmal am besten von einem Partner ausgeführt werden, um die Belastung der Vollzeitmitarbeiter zu reduzieren. Darüber hinaus sind Partner möglicherweise besser in der Lage, auf technisches Wissen zuzugreifen, wenn bei repetitiven Prozessen Ausführungsanomalien auftreten.
 

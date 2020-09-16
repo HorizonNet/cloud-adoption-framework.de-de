@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 868318e1c1e63b6459e13d9ca4d621a7e0145fbf
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: d9cddbe2c43339428235d580004ba5ffd232074e
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885812"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89602118"
 ---
 # <a name="motivations-why-are-we-moving-to-the-cloud"></a>Beweggründe: Motivationen für den Wechsel in die Cloud
 

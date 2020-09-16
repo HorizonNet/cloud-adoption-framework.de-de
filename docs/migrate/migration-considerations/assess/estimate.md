@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8a76d0bec6958bbed8abac2f0defe50a8233a480
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 37f7186e1d74dc9e3995bffbe775bb2111156f2a
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570231"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603641"
 ---
 # <a name="estimate-cloud-costs"></a>Schätzen der Cloudkosten
 
@@ -36,7 +36,7 @@ Diejenigen, die den traditionellen Investitionskostenansatz für die Kostenrechn
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nach dem Schätzen der Kosten kann die Migration beginnen. Es ist allerdings ratsam, vor Beginn der Migration die [Partnerschafts- und Supportoptionen](./partnership-options.md) zu überprüfen.
+Nach dem Schätzen der Kosten kann die Migration beginnen. Es ist allerdings ratsam, vor Beginn der Migration die Partnerschafts- und Supportoptionen zu überprüfen.
 
 > [!div class="nextstepaction"]
-> [Grundlegendes zu Partnerschaftsoptionen](./partnership-options.md)
+> [Verstehen der Optionen für Partnerschaften und Unterstützung](./partnership-options.md)

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 333130bd1af49833dd396351bc7feb0e7f12e48b
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 5d2bfab7d5a7cea52d249d0bd2ed386e0dbcdae4
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880916"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604917"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Identitätsbaseline“
 
@@ -24,8 +24,8 @@ In diesem Artikel wird die Lösung weiterentwickelt, indem dem Governance-MVP St
 Die geschäftliche Begründung für die Cloudmigration der zwei Rechenzentren wurde vom CFO genehmigt. Im Rahmen der technischen Machbarkeitsstudie wurden mehrere Hindernisse entdeckt:
 
 - Geschützte Daten und geschäftskritische Anwendungen machen 25 % der Workload in den beiden Rechenzentren aus. Beide lassen sich erst nach einer Modernisierung der aktuellen Governance-Richtlinien für vertrauliche personenbezogene Informationen und geschäftskritische Anwendungen lösen.
-- 7 % der Ressourcen in diesen Rechenzentren sind nicht cloudkompatibel. Sie werden vor der Ende des Rechenzentrumsvertrags in ein alternatives Rechenzentrum ausgelagert.
-- Bei 15 % der Ressourcen im Rechenzentrum (750 virtuelle Computer) besteht eine Abhängigkeit von Legacyauthentifizierung oder mehrstufiger Authentifizierung von Drittanbietern.
+- 7 % der Ressourcen in diesen Rechenzentren sind nicht cloudkompatibel. Sie werden vor der Ende des Rechenzentrumsvertrags in ein alternatives Rechenzentrum ausgelagert.
+- Bei 15 % der Ressourcen im Rechenzentrum (750 virtuelle Computer) besteht eine Abhängigkeit von Legacyauthentifizierung oder mehrstufiger Authentifizierung von Drittanbietern.
 - Die VPN-Verbindung, die bestehende Rechenzentren und Azure verbindet, bietet hinsichtlich Datenübertragungsgeschwindigkeiten oder Latenz keine ausreichende Kapazität, um die Menge der Ressourcen innerhalb der zweijährigen Frist bis zur Stilllegung des Rechenzentrums zu migrieren.
 
 Die zwei ersten Hindernisse werden parallel verwaltet. Dieser Artikel behandelt die Beseitigung des dritten und vierten Hindernisses.

@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: e75d807f36d6ce7fb30de4f7104d096f243f87c4
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 56ee70ac6d695159f2baeee50b49decd1cb08543
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885251"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605106"
 ---
 # <a name="balance-the-portfolio"></a>Ausgewogenheit des Portfolios
 
@@ -22,18 +22,18 @@ Die Cloudeinführung ist ein Portfolioverwaltungsschritt, der raffiniert als tec
 
 Die Ausgewogenheit des Portfolios ist ein strategischer Aspekt. Daher ist der in diesem Artikel vorgestellte Ansatz gleichermaßen strategisch. Um die Strategie auf datengesteuerte Entscheidungen zu gründen, wird in diesem Artikel vorausgesetzt, dass der Leser die vorhandenen [digitalen Ressourcen](../digital-estate/index.md) ausgewertet oder mit diesem Prozess begonnen hat. Das Ziel dieses Ansatzes ist, die Evaluierung der Workloads zu unterstützen, um die Ausgewogenheit des Portfolios durch qualitative Fragen und Portfoliooptimierung sicherzustellen.
 
-<!-- cSpell:ignore 2M CSAT -->
+<!-- docutune:casing 2M -->
 
 ### <a name="document-business-outcomes"></a>Dokumentieren von Geschäftsergebnissen
 
 Bevor die Ausgewogenheit des Portfolios hergestellt wird, müssen die Geschäftsergebnisse, die den Cloudmigrationsaufwand bestimmen, dokumentiert und freigegeben werden. Die folgende Tabelle soll das Dokumentieren und Freigeben von Geschäftsergebnissen unterstützen. Es ist wichtig zu beachten, dass die meisten Unternehmen mehrere Ergebnisse gleichzeitig verfolgen. Ziel dieser Übung ist, die Ergebnisse zu verdeutlichen, die unmittelbar mit dem Cloudmigrationsaufwand in Zusammenhang stehen:
 
 | Ergebnis | Gemessen an | Zielsetzung | Zeitrahmen | Priorität für diesen Aufwand |
-|---------|---------|---------|---------|---------|
-| Reduzieren der IT-Kosten     | Rechenzentrumsbudget         | Reduzieren um 2 M USD     | 12 Monate         | 1         |
-| Ausstieg aus Rechenzentrum     | Ausstieg aus Rechenzentren         | 2 Rechenzentren         | 6 Monate         | 2         |
-| Erhöhen der Unternehmensflexibilität     | Verbessern der Markteinführungszeit  | Reduzieren der Bereitstellungszeit um sechs Monate         | 2 Jahre         | 3        |
-| Verbessern der Benutzerfreundlichkeit     | Kundenzufriedenheit (CSAT)         | Verbesserung um 10 %         | 12 Monate         | 4         |
+|--|--|--|--|--|
+| Reduzieren der IT-Kosten | Rechenzentrumsbudget | Reduzieren um 2 M USD | 12 Monate | 1 |
+| Ausstieg aus Rechenzentrum | Ausstieg aus Rechenzentren | 2 Rechenzentren | 6 Monate | 2 |
+| Erhöhen der Unternehmensflexibilität | Verbessern der Markteinführungszeit | Reduzieren der Bereitstellungszeit um sechs Monate | 2 Jahre | 3 |
+| Verbessern der Benutzerfreundlichkeit | Kundenzufriedenheit (CSAT) | Verbesserung um 10% | 12 Monate | 4 |
 
 > [!IMPORTANT]
 > Die oben stehende Tabelle ist ein fiktives Beispiel und sollte nicht verwendet werden, um Prioritäten festlegen. In vielen Fällen wird diese Tabelle unter Umständen als Antimuster betrachtet, da Kosteneinsparungen Priorität vor Kundenfreundlichkeit haben.

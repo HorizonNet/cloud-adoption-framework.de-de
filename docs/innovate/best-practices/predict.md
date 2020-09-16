@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: c900c19f6d2472ca9166ed8ab856e25f9e328eee
-ms.sourcegitcommit: d31a9043d1ae9283ed126bf118ca26d1d18d6948
+ms.openlocfilehash: 34c23f025cb12564338c2c00a5926c27a54c3a5e
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88040608"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604502"
 ---
 # <a name="use-innovation-tools-to-predict-and-influence"></a>Verwenden von Innovationstools zur Vorhersage und Beeinflussung
 
@@ -29,4 +29,4 @@ Diese Art der digitalen Erfindung lässt sich durch die im Anschluss aufgeführt
 Im Inhaltsverzeichnis auf der linken Seite werden viele Artikel beschrieben. Diese Artikel helfen Ihnen bei den ersten Schritten mit den einzelnen Lösungsbereichen.
 
 > [!NOTE]
-> Mit einigen Links verlassen Sie das Cloud Adoption Framework für Azure und erhalten weitergehende Informationen.
+> Mit einigen Links verlassen Sie das Cloud Adoption Framework und erhalten weitergehende Informationen.

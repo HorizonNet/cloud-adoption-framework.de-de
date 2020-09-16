@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 71022fd795e2cecff34c238a2e0978d3242cb037
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 3d799dd4d5d1821a8d914ad5ad4daae631d65df6
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884554"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604615"
 ---
 # <a name="what-are-ai-applications"></a>Was sind KI-Anwendungen?
 
@@ -77,7 +77,7 @@ Cognitive Services bietet ein mehrschichtiges Sicherheitsmodell – einschließ
 
 Cognitive Services stellt Container für die Bereitstellung in der Cloud oder lokal bereit. Weitere Informationen zu Cognitive Services-Containern finden Sie [hier](/azure/cognitive-services/cognitive-services-container-support).
 
-<!-- docsTest:casing "HIPAA BAA" "CSA STAR" -->
+<!-- docutune:casing "HIPAA BAA" "CSA STAR" -->
 
 ### <a name="certifications-and-compliance"></a>Zertifizierungen und Compliance
 

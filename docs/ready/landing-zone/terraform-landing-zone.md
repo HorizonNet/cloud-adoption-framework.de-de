@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 25bb59e5f79609536a7a1a6711c94c5ff25fdbd5
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: dd16185c53aaa678f885508e47ef897118a5d7f3
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884792"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605182"
 ---
 <!-- cSpell:ignore eastasia southeastasia vCPUs lalogs tfvars NetworkMonitoring ADAssessment ADReplication AgentHealthAssessment DnsAnalytics KeyVaultAnalytics -->
 
@@ -194,7 +194,7 @@ security_center = {
 }
 ```
 
-## <a name="get-started"></a>Erste Schritte
+## <a name="take-action"></a>Ausführen einer Aktion
 
 Nachdem Sie die Konfiguration überprüft haben, können Sie die Konfiguration wie eine Terraform-Umgebung bereitstellen. Sie sollten den „rover“ verwenden, einen Docker-Container, der die Bereitstellung von Windows, Linux oder macOS ermöglicht. Sie können mit den [Zielzonen](https://github.com/azure/caf-terraform-landingzones) beginnen.
 

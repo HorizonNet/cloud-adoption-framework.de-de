@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 712da48bc19fa7db436b3e6fbd29fc549633ec69
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 72435c49c195c7972da348080136ab02ed2e5375
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88878536"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604451"
 ---
 # <a name="build-consensus-on-the-business-value-of-innovation"></a>Erzielen eines Konsenses zum Geschäftswert der Cloudinnovation
 
@@ -43,7 +43,7 @@ Wenn ein oder zwei Antworten auf die richtige Ausrichtung hinweisen, freuen Sie 
 
 Wenn eins der Teams in 30 Minuten keine der vier Fragen beantworten konnte, werden die Ausrichtung und die Überlegungen in den folgenden Abschnitten wahrscheinlich einen erheblichen Einfluss auf diese und andere Bemühungen haben. Lesen Sie die folgenden Abschnitte sorgfältig.
 
-<!-- docsTest:casing "Strategy, Plan, Ready, and Adopt" -->
+<!-- docutune:casing "Strategy, Plan, Ready, and Adopt" -->
 
 ## <a name="address-the-big-picture-first"></a>Zuerst das große Ganze
 

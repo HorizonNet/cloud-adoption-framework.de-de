@@ -1,19 +1,18 @@
 ---
 title: Strategie zur Cloudüberwachung
 description: Erfahren Sie, wie eine wirksame Strategie zur Cloudüberwachung definiert werden kann.
-services: azure-monitor
 author: mgoedtel
 ms.author: magoedte
 ms.date: 06/18/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7849dde3a64d0f788941aa7544525e61d60e697c
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 04f051e141ebb849bc3981d0bdf5027092a583bd
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885846"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603669"
 ---
 <!-- cSpell:ignore SIEM Nagios Zabbix DIKW -->
 
@@ -193,7 +192,7 @@ Zu Lernzyklen gehört es, Überwachungsdaten und Einblicke in die Hände von Fü
 
 <!-- docutune:ignore "Data to Information, Knowledge, and Wisdom" -->
 
-<Sup>1</Sup> Die Wissenspyramide ist eine häufig genutzte Methode mit Ursprung im Wissensmanagement zum Erläutern der Möglichkeiten, mithilfe einer Komponente aus Aktionen und Entscheidungen von Zeichen, Daten, Informationen zu Wissen zu gelangen.
+<Sup>1</sup> Die Wissenspyramide ist eine häufig genutzte Methode mit Ursprung im Wissensmanagement zum Erläutern der Möglichkeiten, mithilfe einer Komponente aus Aktionen und Entscheidungen von Zeichen, Daten, Informationen zu Wissen zu gelangen.
 
 Die Überwachung ist grundlegend für Dienste, die Sie in Azure erstellen. Ihre Strategie kann sich mit diesen vier Disziplinen der modernen Überwachung befassen, um Ihnen dabei zu helfen, ein praktikables Mindestmaß an Überwachung zu definieren und Vertrauen in die einzelnen Schritte zu gewinnen. Die Verlagerung Ihrer Fähigkeiten von reaktiv zu proaktiv und die Skalierung ihrer Reichweite auf Endbenutzer sind dabei nur ein Ziel.
 

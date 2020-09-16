@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 200fb15bf84ce24a88a25e0c39c35859bd8363b7
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 5fe9338002a8a1223ad64b81f884d70de9191161
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882871"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604292"
 ---
 <!-- cSpell:ignore ONNX -->
 
@@ -147,7 +147,7 @@ Navigieren Sie direkt zu Azure Bot Service im [Azure-Portal](https://portal.azur
 
 Verwenden Sie Azure Cognitive Search, um mögliche Erkenntnisse aus den Inhalten wie Dokumenten, Verträgen, Bildern und Medien zu ziehen. Sie können Muster und Beziehungen in Ihren Inhalten entdecken, Stimmungen verstehen und Schlüsselbegriffe extrahieren.
 
-<!-- docsTest:ignore "Azure Search" -->
+<!-- docutune:ignore "Azure Search" -->
 
 Azure Cognitive Search verwendet denselben natürlichen Sprachstapel, den auch Bing und Microsoft Office verwenden. Verbringen Sie mehr Zeit mit Innovationen und weniger Zeit mit der Verwaltung einer komplexen Cloudsuchlösung.
 
