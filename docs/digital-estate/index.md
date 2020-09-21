@@ -7,12 +7,12 @@ ms.date: 12/10/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 83ff6d27a400ac3feb94ddc28aa43793b3d28793
-ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
+ms.openlocfilehash: 102d20998da273dbcf8936be4efdc3b1faf52188
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90680973"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90774084"
 ---
 # <a name="what-is-a-digital-estate"></a>Worum handelt es sich bei digitalen Ressourcen?
 
@@ -30,11 +30,11 @@ Die Messung digitaler Ressourcen hängt von den gewünschten Geschäftsergebniss
 
 - **Datenbasierte Innovationen:** Angesichts der starken Digitalisierung des Markts ist es heutzutage schwer, ein neues Produkt oder einen neuen Dienst ohne solides Datenfundament einzuführen. Bei der cloudfähigen Dateninnovation liegt der Schwerpunkt mehr auf den Datensilos innerhalb der gesamten Organisation.
 
-- **Betriebsstabilität:** Unternehmen sind aus Effektivitätsgründen von stabilen Technologien abhängig. Dienstzuverlässigkeit und nahezu keine Downtime sind in wettbewerbsintensiven Märkten von entscheidender Bedeutung. Wenn Betriebsstabilität eine Priorität darstellt, sollte für digitale Ressourcen die positive/negative Auswirkung auf den stabilen Betrieb gemessen werden. Geschäftskontinuität, Notfallwiederherstellung und Zuverlässigkeit von Workloads und den einzelnen Ressourcen sind erforderliche Maße, wenn Betriebsstabilität eine Priorität darstellt.
+- **Betriebsstabilität:** Unternehmen sind aus Effektivitätsgründen von stabilen Technologien abhängig. Dienstzuverlässigkeit und nahezu keine Downtime sind in wettbewerbsintensiven Märkten von entscheidender Bedeutung. Wenn Betriebsstabilität eine Priorität darstellt, sollte für digitale Ressourcen die positive bzw. negative Auswirkung auf den stabilen Betrieb gemessen werden. Geschäftskontinuität, Notfallwiederherstellung und Zuverlässigkeit von Workloads und den einzelnen Ressourcen sind erforderliche Maße, wenn Betriebsstabilität eine Priorität darstellt.
 
 Wenn eine Organisation die wichtigste Form der Transformation verstanden hat, wird die Planung digitaler Ressourcen deutlich einfacher.
 
->  Jede Art von Transformation kann mit jeder der obigen Ansichten gemessen werden. In Unternehmen werden diese Transformationen häufig parallel durchgeführt. Die Unternehmensführung sollte sich jedoch unbedingt mit dem Cloudstrategieteam auf die Transformation einigen, die für den Erfolg des Unternehmens am wichtigsten ist. Dieses Verständnis bildet die Grundlage für eine gemeinsame Sprache und gemeinsame Metriken für mehrere Initiativen.
+> Jede Art von Transformation kann mit jeder der obigen Ansichten gemessen werden. In Unternehmen werden diese Transformationen häufig parallel durchgeführt. Die Unternehmensführung sollte sich jedoch unbedingt mit dem Cloudstrategieteam auf die Transformation einigen, die für den Erfolg des Unternehmens am wichtigsten ist. Dieses Verständnis bildet die Grundlage für eine gemeinsame Sprache und gemeinsame Metriken für mehrere Initiativen.
 
 ## <a name="how-can-a-financial-model-be-updated-to-reflect-the-digital-estate"></a>Wie kann ein Finanzmodell aktualisiert werden, um die digitalen Ressourcen zu berücksichtigen?
 
