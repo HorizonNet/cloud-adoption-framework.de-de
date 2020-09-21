@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: a6e8a7c5b4929c590a4e33784b9ff1f297ec31d0
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 7a36de5c776aecf947dbca6954a1d79c838c2b18
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88881851"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90774101"
 ---
 # <a name="encryption-decision-guide"></a>Leitfaden zur Entscheidungsfindung für die Verschlüsselung
 
@@ -124,7 +124,7 @@ Weitere Informationen zur Verschlüsselung und Schlüsselverwaltung in Azure fin
 - **[Übersicht über die Azure-Verschlüsselung](/azure/security/fundamentals/encryption-overview):** Eine ausführliche Beschreibung zur Verwendung der Verschlüsselung in Azure zum Schutz sowohl ruhender Daten als auch von Daten bei der Übertragung.
 - **[Azure Key Vault](/azure/key-vault/general/overview):** Key Vault ist das primäre Schlüsselverwaltungssystem zum Speichern und Verwalten von kryptografischen Schlüsseln, Geheimnissen und Zertifikaten in Azure.
 - **[Bewährte Methoden für Datensicherheit und Datenverschlüsselung in Azure](/azure/security/fundamentals/data-encryption-best-practices):** Eine Diskussion über die bewährten Methoden von Azure zur Datensicherheit und Datenverschlüsselung.
-- **[Azure Confidential Computing](https://azure.microsoft.com/solutions/confidential-compute):** Die Confidential Computing-Initiative von Azure stellt Tools und Technologien zum Erstellen von vertrauenswürdigen Ausführungsumgebungen und anderen Verschlüsselungsmechanismen zum Schützen von Daten in Gebrauch bereit.
+- **[Azure Confidential Computing](https://azure.microsoft.com/solutions/confidential-compute/):** Die Confidential Computing-Initiative von Azure stellt Tools und Technologien zum Erstellen von vertrauenswürdigen Ausführungsumgebungen und anderen Verschlüsselungsmechanismen zum Schützen von Daten in Gebrauch bereit.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

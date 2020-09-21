@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 34c8ca965ff323595b7ac0f38814168b646b3ed3
-ms.sourcegitcommit: d31a9043d1ae9283ed126bf118ca26d1d18d6948
+ms.openlocfilehash: 6a7d911677e9496119e1abcfbc97d13bd660c941
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88040812"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776413"
 ---
 # <a name="start-with-cloud-adoption-framework-enterprise-scale-landing-zones"></a>Erste Schritte mit Cloud Adoption Framework-Zielzonen auf Unternehmensebene
 
@@ -42,7 +42,7 @@ Der unternehmensweite Ansatz zum Erstellen von Zielzonen umfasst drei Assetsätz
 
 ## <a name="community"></a>Community
 
-<!-- docsTest:ignore "Cloud Solutions Unit" -->
+<!-- docutune:ignore "Cloud Solutions Unit" -->
 
 Dieser Leitfaden wird größtenteils von Microsoft-Architekten und der breit angelegten technischen Community der Cloudlösungseinheit entwickelt. Diese Community aktualisiert diesen Leitfaden regelmäßig, um die bei einer unternehmensweiten Einführung gewonnenen Erkenntnisse zu teilen.
 
