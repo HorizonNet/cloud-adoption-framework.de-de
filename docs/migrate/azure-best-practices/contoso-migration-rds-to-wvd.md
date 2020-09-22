@@ -7,15 +7,15 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-services: azure-migrate
-ms.openlocfilehash: da555c34bec26cbfb6e3edf5ac078568a8ba0ccd
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 6c4259f112c74d6f5fb7c24a0ca409e25ff68268
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882157"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89602659"
 ---
-<!-- cSpell:ignore msiexec Logix Lakeside SysTrack Robocopy UPD UPDs -->
+<!-- docutune:casing Lakeside SysTrack -->
+<!-- cSpell:ignore msiexec Logix Robocopy UPDs -->
 
 # <a name="move-on-premises-remote-desktop-services-to-azure-windows-virtual-desktop-scenario"></a>Verschieben lokaler Remotedesktopdienste zu Azure mit Windows Virtual Desktop
 
@@ -210,11 +210,9 @@ Mit dem Azure-Portal erstellt Contoso eine Windows Virtual Desktop-Umgebung für
 
     > [!NOTE]
     > In diesem Schritt kann Contoso kein neues virtuelles Netzwerk erstellt werden. Vor diesem Schritt sollte Contoso bereits ein virtuelles Netzwerk erstellt haben, das Zugriff auf Active Directory hat.
-
-   <!-- -->
-
+    <!-- -->
     > [!NOTE]
-    > In diesem Schritt kann Contoso kein Benutzerkonto verwenden, für das die mehrstufige Authentifizierung erforderlich ist. Wenn Contoso die mehrstufige Authentifizierung für seine Benutzer verwenden möchte, muss ein Dienstprinzipal erstellt werden.
+    > In diesem Schritt kann Contoso kein Benutzerkonto verwenden, für das eine mehrstufige Authentifizierung erforderlich ist. Wenn Contoso die mehrstufige Authentifizierung für seine Benutzer verwenden möchte, muss ein Dienstprinzipal erstellt werden.
 
 1. Contoso führt eine weitere Überprüfung der Windows Virtual Desktop-Einstellungen durch und erstellt die neue Umgebung gepoolter Windows Virtual Desktop-VMs.
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 44aa46e91059f461a761f56ea3f69dbfcf3383bd
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 986c2398b1bf0b00b88d853d8cec072287bd4010
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882837"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604797"
 ---
 # <a name="standard-enterprise-governance-guide-best-practices-explained"></a>Governanceleitfaden für Standardunternehmen: Beschreibung der bewährten Methoden
 
@@ -25,9 +25,7 @@ In diesem Artikel werden die allgemeinen Strategien behandelt, die zum Erstellen
 
 Die schnelle Einführung von Governance und Unternehmensrichtlinien ist dank einiger einfacher Prinzipien und cloudbasierter Governancetools möglich. Dies sind die ersten drei Disziplinen, die in jedem Governanceprozess enthalten sind. Jede Disziplin wird in diesem Artikel näher beschrieben.
 
-<!-- docutune:casing "Identity Baseline, Security Baseline, and Deployment Acceleration disciplines" -->
-
-Als Ausgangspunkt werden in diesem Artikel die allgemeinen Strategien hinter den Disziplinen „Identitätsbaseline“, „Sicherheitsbaseline“ und „Beschleunigung der Bereitstellung“ behandelt, die zum Erstellen eines Governance-MVP erforderlich sind, der als Grundlage für jede Umsetzung dient.
+Als Ausgangspunkt werden in diesem Artikel die allgemeinen Strategien für die Disziplinen „Sicherheitsbaseline“, „Identitätsbaseline“ und „Beschleunigung der Bereitstellung“ behandelt, die zum Erstellen eines Governance-MVP erforderlich sind, das die Grundlage für jede Einführung bildet.
 
 ![Beispiel für ein inkrementelles Governance-MVP](../../../_images/govern/governance-mvp.png)
 

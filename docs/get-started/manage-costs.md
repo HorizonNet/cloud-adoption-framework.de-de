@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: c6351e1e6de0db3247b584d914ea3b5c5e842e68
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 54d35e4b895961eb290de9ab151fa1332bb0bc8d
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884333"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603332"
 ---
 # <a name="get-started-manage-cloud-costs"></a>Erste Schritte: Verwalten von Cloudkosten
 
@@ -160,7 +160,7 @@ Langfristige Betriebskosten sind ein gängiges Thema in jedem Bereich von Verbes
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudeinführungsteam | <li> Cloudstrategieteam <li> Cloudgovernanceteam <li> Cloudkompetenzzentrum (CCoE) oder zentrales IT-Team |
+| <li> Cloudeinführungsteam | <li> Cloudstrategieteam <li> Cloudgovernanceteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
 
 ## <a name="step-6-drive-customer-focused-innovation"></a>Schritt 6: Fördern kundenorientierter Innovation
 
@@ -201,4 +201,4 @@ Das Einrichten einer soliden Verwaltungsbaseline hilft Ihnen, Daten zu erfassen 
 
 ## <a name="value-statement"></a>Wertaussage
 
-Das Ausführen dieser Schritte kann Sie dabei unterstützen, [eine kostenbewusste Organisation zu erstellen](../organize/cost-conscious-organization.md). Durch die Verwendung geteilter Eigentümerschaft und eines kollaborativen Fokus mit den richtigen Teams zur richtigen Zeit im Unternehmen lässt sich Kostenoptimierung einfacher umsetzen.
+Diese Schritte können zum [Aufbau einer kostenbewussten Organisation](../organize/cost-conscious-organization.md) beitragen. Vereinfachen Sie die Kostenoptimierung durch gemeinsamen Besitz und die Förderung der Zusammenarbeit mit den richtigen Teams zur richtigen Zeit.

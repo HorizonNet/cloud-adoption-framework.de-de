@@ -1,6 +1,6 @@
 ---
 title: 'Governance für Standardunternehmen: Verbessern der Disziplin „Sicherheitsbaseline“'
-description: Verwenden Sie das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure, um zu erfahren, wie Sie Sicherheitskontrollen hinzufügen, die das Verschieben geschützter Daten in die Cloud unterstützen.
+description: Verwenden Sie das Azure Cloud Adoption Framework, um zu erfahren, wie Sie Sicherheitskontrollen hinzufügen, die das Verschieben geschützter Daten in die Cloud unterstützen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 09/17/2019
@@ -8,35 +8,35 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1dfc72a3f9c972bce4da1125c334724dbf6924a2
-ms.sourcegitcommit: be346318ced14a2e8b7d9186f0f8c5edf650c90b
+ms.openlocfilehash: 538a29a0b47fdfdeeb291104ea3bff0d0f45b656
+ms.sourcegitcommit: 34346be9ec66c64d6d7ae24651adbbec1fdbf985
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "89055740"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90534203"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Governanceleitfaden für Standardunternehmen: Verbessern der Disziplin „Sicherheitsbaseline“
 
-In diesem Artikel wird die Geschichte fortgeführt. Es werden Sicherheitskontrollen hinzugefügt, die das Verschieben geschützter Daten in die Cloud unterstützen.
+In diesem Artikel wird die [Geschichte der Governancestrategie](narrative.md) fortgeführt. Es werden Sicherheitskontrollen hinzugefügt, die das Verschieben geschützter Daten in die Cloud unterstützen.
 
 ## <a name="advancing-the-narrative"></a>Fortführen der Geschichte
 
-IT- und Unternehmensführung waren mit den Ergebnissen der frühen Experimente der IT-, Anwendungsentwicklung- und BI-Teams zufrieden. Um aus diesen Experimenten konkrete Geschäftswerte zu gewinnen, müssen diese Teams in die Lage versetzt werden, geschützte Daten in Lösungen zu integrieren. Dies löst Änderungen in der Unternehmensrichtlinie aus, erfordert aber auch eine inkrementelle Verbesserung der Cloudgovernanceimplementierungen, bevor geschützte Daten in die Cloud verschoben werden können.
+IT-Abteilung und Unternehmensführung sind mit den Ergebnissen erster Experimente der IT-, Anwendungsentwicklung- und BI-Teams zufrieden. Um aus diesen Experimenten konkrete Geschäftswerte zu gewinnen, müssen diese Teams in die Lage versetzt werden, geschützte Daten in Lösungen zu integrieren. Diese Integration führt zu Änderungen an der Unternehmensrichtlinie. Sie erfordert aber auch eine Weiterentwicklung der Cloud Governance-Implementierungen, damit geschützte Daten in die Cloud verschoben werden können.
 
 ### <a name="changes-to-the-cloud-governance-team"></a>Änderungen des Cloudgovernanceteams
 
-Angesichts der Auswirkungen der sich verändernden Darstellung und der bisher geleisteten Unterstützung wird das Cloudgovernanceteam nun anders beurteilt. Die beiden Systemadministratoren, die das Team gegründet haben, gelten heute als erfahrene Cloudarchitekten. Während der Entwicklung dieser Lösung wird sich die Wahrnehmung von ihnen verschieben: von einer Cloudverwalter- zu einer Cloudwächterrolle.
+Angesichts der Auswirkungen der sich verändernden Darstellung und der bisher geleisteten Unterstützung wird das Cloudgovernanceteam nun anders beurteilt. Die beiden Systemadministratoren, die das Team gegründet haben, gelten heute als erfahrene Cloudarchitekten. Mit der Zeit werden sie weniger als Cloudverwalter, sondern eher als Cloudwächter wahrgenommen.
 
-Der Unterschied mag geringfügig erscheinen, ist aber beim Erstellen einer governancebezogenen IT-Kultur von großer Bedeutung. Ein Cloudverwalter bereinigt das Chaos, das innovative Cloudarchitekten hinterlassen haben. Die beiden Rollen besitzen eine natürliche Reibung und gegensätzliche Ziele. Auf der anderen Seite trägt ein Cloudwächter zur Sicherheit der Cloud bei, sodass andere Cloudarchitekten schneller und strukturierter arbeiten können. Darüber hinaus ist ein Cloudwächter an der Erstellung von Vorlagen beteiligt, die die Bereitstellung und Einführung beschleunigen. Dadurch wird er zu einem Innovationsbeschleuniger sowie zu einem Verteidiger der fünf Disziplinen der Cloudgovernance.
+Diese Unterscheidung mag spitzfindig erscheinen, ist bei der Entwicklung einer governancebezogenen IT-Kultur aber von großer Bedeutung. Ein Cloudverwalter bereinigt das Chaos, das innovative Cloudarchitekten hinterlassen haben. Es ist ganz natürlich, dass es zwischen diesen beiden Rollen gewisse Spannungen gibt und dass sie gegensätzliche Ziele verfolgen. Auf der anderen Seite trägt ein Cloudwächter zur Sicherheit der Cloud bei, sodass andere Cloudarchitekten schneller und strukturierter arbeiten können. Darüber hinaus arbeiten Cloudwächter an der Erstellung von Vorlagen zur Beschleunigung der Bereitstellung und Einführung. Sie setzen sich also nicht nur für die Bewahrung der fünf Disziplinen der Cloud-Governance ein, sondern treiben auch Innovationen voran.
 
 ### <a name="changes-in-the-current-state"></a>Änderungen des aktuellen Status
 
-Zu Beginn dieser Geschichte arbeiteten die Anwendungsentwicklungsteams noch mit Entwicklungs-/Testkapazität, und das BI-Team befand sich noch in der Experimentierphase. Die IT-Abteilung betrieb zwei gehostete Infrastrukturumgebungen namens `prod` und `DR`.
+Zu Beginn dieser Geschichte arbeiteten die Anwendungsentwicklungsteams noch mit Entwicklungs-/Testkapazität, und das BI-Team befand sich noch in der Experimentierphase. Von der IT-Abteilung wurden zwei gehostete Infrastrukturumgebungen („Prod“ und „DR“) betrieben.
 
 Seit diesem Zeitpunkt haben sich einige Dinge geändert, die sich auf die Governance auswirken:
 
 - Das Anwendungsentwicklungsteam hat eine CI/CD-Pipeline implementiert, um eine cloudnative Anwendung mit einer verbesserten Benutzeroberfläche bereitzustellen. Diese Anwendung interagiert noch nicht mit geschützten Daten und ist daher nicht für die Produktion bereit.
-- Das Business Intelligence-Team innerhalb der IT-Abteilung stellt aktiv Daten aus Logistik, Inventar und Drittanbieterquellen in der Cloud zusammen. Diese Daten werden verwendet, um neue Vorhersagen zu treffen, die Geschäftsprozesse beeinflussen könnten. Diese Vorhersagen und Erkenntnisse sind erst dann umsetzbar, wenn Kunden- und Finanzdaten in die Datenplattform integriert werden können.
+- Das Business Intelligence-Team innerhalb der IT-Abteilung stellt aktiv Daten aus Logistik, Inventar und Drittanbieterquellen in der Cloud zusammen. Diese Daten werden verwendet, um neue Vorhersagen zu treffen, die Geschäftsprozesse beeinflussen können. Diese Vorhersagen und Erkenntnisse sind erst dann umsetzbar, wenn Kunden- und Finanzdaten in die Datenplattform integriert werden können.
 - Das IT-Team setzt zurzeit die Pläne des CIO und CFO zur Außerbetriebnahme des DR-Rechenzentrums um. Mehr als 1.000 der 2.000 Ressourcen im DR-Datencenter wurden außer Betrieb genommen oder migriert.
 - Die lose definierten Richtlinien für personenbezogene Informationen und Finanzdaten wurden modernisiert. Die neuen Unternehmensrichtlinien sind von der Implementierung der entsprechenden Sicherheits- und Governancerichtlinien abhängig. Teams können noch nicht weiterarbeiten.
 
@@ -50,89 +50,89 @@ Die Änderungen des aktuellen und zukünftigen Status bergen neue Risiken, die n
 
 ## <a name="changes-in-tangible-risks"></a>Änderungen bei konkreten Risiken
 
-**Verletzung des Datenschutzes:** Bei Einführung einer neuen Datenplattform gibt es eine inhärente Zunahme der Haftung im Zusammenhang mit potenziellen Datenpannen. Das technische Personal zur Einführung von Cloudtechnologien ist zunehmend dafür verantwortlich, dass Lösungen implementiert werden, die dieses Risiko senken können. Eine robuste Sicherheits- und Governancestrategie muss implementiert werden, um sicherzustellen, dass dieses technische Personal dieser Verantwortung nachkommt.
+**Verletzung des Datenschutzes:** Die Einführung einer neuen Datenplattform geht mit einer inhärenten Zunahme von Pflichten im Zusammenhang mit potenziellen Datenpannen einher. Techniker, die Cloudtechnologien einführen, müssen sich verstärkt um die Implementierung von Lösungen kümmern, die dieses Risiko senken können. Eine robuste Sicherheits- und Governancestrategie muss implementiert werden, um sicherzustellen, dass dieses technische Personal dieser Verantwortung nachkommt.
 
 Dieses Unternehmensrisiko lässt sich auf einige technische Risiken erweitern:
 
-1. Unternehmenskritische Anwendungen oder geschützten Daten werden möglicherweise unbeabsichtigt bereitgestellt.
-2. Geschützte Daten könnten aufgrund falscher Verschlüsselungsentscheidungen im Speicher verfügbar gemacht werden.
-3. Nicht autorisierte Benutzer können möglicherweise auf geschützte Daten zugreifen.
-4. Ein Eindringen von außerhalb kann den Zugriff auf geschützte Daten ermöglichen.
-5. Ein Eindringen von außerhalb oder Denial-of-Service-Angriffe können zu einer Unterbrechung des Geschäftsbetriebs führen.
-6. Organisatorische Änderungen oder Personalwechsel können den unbefugten Zugriff auf geschützte Daten ermöglichen.
-7. Neue Exploits können neue Angriffs- oder Zugriffsmöglichkeiten schaffen.
-8. Inkonsistente Bereitstellungsprozesse können Sicherheitslücken herbeiführen, die zu Datenverlusten oder Unterbrechungen führen können.
-9. Konfigurationsabweichungen oder fehlende Patches können unbeabsichtigte Sicherheitslücken zur Folge haben, die zu Datenverlusten oder Unterbrechungen führen können.
+- Unternehmenskritische Anwendungen oder geschützten Daten werden möglicherweise unbeabsichtigt bereitgestellt.
+- Geschützte Daten können ggf. aufgrund von falschen Verschlüsselungsentscheidungen im Speicher offengelegt werden.
+- Nicht autorisierte Benutzer können möglicherweise auf geschützte Daten zugreifen.
+- Ein Eindringen von außerhalb kann den Zugriff auf geschützte Daten ermöglichen.
+- Ein Eindringen von außerhalb oder Denial-of-Service-Angriffe können zu einer Unterbrechung des Geschäftsbetriebs führen.
+- Organisatorische Änderungen oder Personalwechsel können den unbefugten Zugriff auf geschützte Daten ermöglichen.
+- Neue Exploits können neue Angriffs- oder Zugriffsmöglichkeiten schaffen.
+- Inkonsistente Bereitstellungsprozesse können Sicherheitslücken herbeiführen, die zu Datenverlusten oder Unterbrechungen führen können.
+- Konfigurationsabweichungen oder fehlende Patches können unbeabsichtigte Sicherheitslücken zur Folge haben, die zu Datenverlusten oder Unterbrechungen führen können.
 
-**Datenverlust:** Die neue Plattform birgt auch ein inhärentes Risiko des Datenverlusts. Die Sicherheits- und Verwaltungsstrategie sollte auch Szenarios berücksichtigen, in denen ein Datenverlust in den folgenden Szenarios auftreten kann:
+**Datenverlust:** Die neue Plattform birgt auch ein inhärentes Datenverlustrisiko. Bei der Sicherheits- und Governancestrategie müssen die folgenden Szenarien berücksichtigt werden, in denen Daten verloren gehen können:
 
-1. Unternehmenskritische Ressourcen können verloren gehen bzw. gelöscht werden.
-2. Die unternehmenskritische Ressource ist vorhanden, aber die Daten gehen durch versehentliches Löschen verloren.
-3. Die unternehmenskritische Ressource ist vorhanden, aber die Daten gehen durch einen böswilligen Administrator verloren.
+- Eine unternehmenskritische Ressource geht verloren oder wird gelöscht.
+- Eine unternehmenskritische Ressource ist vorhanden, die Daten gehen jedoch durch versehentliches Löschen verloren.
+- Eine unternehmenskritische Ressource ist vorhanden, die Daten gehen jedoch durch einen böswilligen Administrator verloren.
 
-## <a name="incremental-improvement-of-the-policy-statements"></a>Inkrementelle Verbesserungen der Richtlinienanweisungen
+## <a name="incremental-improvement-of-policy-statements"></a>Inkrementelle Verbesserung von Richtlinienanweisungen
 
 Die folgenden Änderungen an der Richtlinie verringern die neuen Risiken und vereinfachen die Implementierung. Die Liste wirkt lang, aber die Einführung dieser Richtlinien ist möglicherweise einfacher, als es den Anschein hat.
 
-1. Alle bereitgestellten Ressourcen müssen nach Wichtigkeit und Datenklassifizierung kategorisiert werden. Vor der Bereitstellung in der Cloud müssen die Klassifizierungen durch das Cloudgovernanceteam und die Besitzer der Anwendung überprüft werden.
-2. Anwendungen, die geschützte Daten speichern oder darauf zugreifen, müssen anders verwaltet werden als Anwendungen, auf die das nicht zutrifft. Zumindest müssen sie segmentiert werden, um einen unbeabsichtigten Zugriff auf geschützte Daten zu vermeiden.
-3. Alle geschützten Daten müssen im Ruhezustand verschlüsselt sein. Dies ist die Standardeinstellung für alle Azure Storage-Konten. Möglicherweise sind jedoch weitere Verschlüsselungsstrategien erforderlich, einschließlich der Verschlüsselung der Daten im Speicherkonto, der Verschlüsselung von VMs und der Verschlüsselung auf Datenbankebene bei Verwendung von SQL auf einem virtuellen Computer (TDE und Spaltenverschlüsselung).
-4. Unternehmenskritische Daten können versehentlich gelöscht werden. Um dies zu beheben und die Daten vor der Löschposition zurückzubekommen, sollte eine Strategie der Datensicherung entwickelt werden. Ein böswilliger Administrator kann die unternehmenskritischen Daten und auch deren Sicherungen löschen. Um dieses Szenario zu handhaben, sollte der Löschvorgang der Sicherungsdaten als „vorläufiges Löschen“ erfolgen, wobei solche Löschanforderungen rückgängig gemacht werden können. Azure Backup kann in diesen beiden Szenarios helfen.
-5. Erhöhte Berechtigungen in einem Segment mit geschützten Daten müssen eine Ausnahme bleiben. Solche Ausnahmen werden vom Cloudgovernanceteam erfasst und regelmäßig überwacht.
-6. Netzwerksubnetze mit geschützten Daten müssen von allen anderen Subnetzen isoliert werden. Der Netzwerkdatenverkehr zwischen Subnetzen mit geschützten Daten wird regelmäßig überwacht.
-7. Kein Subnetz mit geschützten Daten ist direkt über das öffentliche Internet oder datencenterübergreifend zugänglich. Der Zugriff auf diese Subnetze muss über zwischengeschaltete Subnetze geroutet werden. Der gesamte Zugriff auf diese Subnetze muss über eine Firewalllösung erfolgen, die Funktionen zur Paketüberprüfung und Sperrfunktionen durchführen kann.
-8. Die Anforderungen an die Netzwerkkonfiguration, die vom Sicherheitsverwaltungsteam definiert wurden, müssen mit Governancetools überwacht und durchgesetzt werden.
-9. Governancetools müssen die VM-Bereitstellung auf genehmigte Images begrenzen.
-10. Der Governanceprozess muss überprüfen, ob für unternehmenskritische Anwendungen und geschützte Daten die Sicherung, Wiederherstellung und Einhaltung von SLAs ordnungsgemäß implementiert sind.
-11. Nach Möglichkeit muss die Knotenkonfigurationsverwaltung Richtlinienanforderungen auf die Konfiguration aller Gastbetriebssysteme anwenden.
-12. Governancetools müssen durchsetzen, dass automatische Updates für alle bereitgestellten Ressourcen aktiviert sind. Verstöße müssen von Betriebsmanagementteams überprüft und in Übereinstimmung mit den Betriebsrichtlinien beseitigt werden. Ressourcen, die nicht automatisch aktualisiert werden, müssen in Prozesse einbezogen werden, die IT Operations unterstehen.
-13. Für die Erstellung neuer Abonnements oder Verwaltungsgruppen für unternehmenskritische Anwendungen oder geschützte Daten ist eine Überprüfung durch das Cloudgovernanceteam erforderlich, um sicherzustellen, dass die richtige Blaupause zugewiesen wird.
-14. Das Zugriffsmodell der geringsten Rechte wird auf alle Verwaltungsgruppen oder Abonnements angewendet, die unternehmenskritische Anwendungen oder geschützte Daten enthalten.
-15. Trends und Exploits, die mögliche Auswirkungen auf Cloudbereitstellungen haben, müssen vom Sicherheitsteam regelmäßig überprüft werden, damit Updates für in der Cloud verwendete Sicherheitsverwaltungstools bereitgestellt werden.
-16. Bereitstellungstools müssen vom Cloudgovernanceteam genehmigt werden, um eine kontinuierliche Governance für bereitgestellte Ressourcen sicherzustellen.
-17. Bereitstellungsskripts müssen in einem zentralen Repository aufbewahrt werden, das für das Cloudgovernanceteam zur regelmäßigen Überprüfung und Überwachung zugänglich ist.
-18. Governanceprozesse müssen Überwachungen zum Bereitstellungszeitpunkt und nachfolgend in regelmäßigen Zyklen umfassen, um für alle Ressourcen Konsistenz zu gewährleisten.
-19. Die Bereitstellung von Anwendungen, für die eine Kundenauthentifizierung erforderlich ist, erfordert einen genehmigten Identitätsanbieter, der mit dem primären Identitätsanbieter für interne Benutzer kompatibel ist.
-20. Cloud Governance-Prozesse müssen vierteljährliche Überprüfungen mit den Identitätsverwaltungsteams umfassen. Diese Überprüfungen können helfen, böswillige Akteure oder Nutzungsmuster zu identifizieren, die durch die Konfiguration von Cloudressourcen verhindert werden sollten.
+- Alle bereitgestellten Ressourcen müssen nach Wichtigkeit und Datenklassifizierung kategorisiert werden. Diese Klassifizierungen müssen vor der Bereitstellung in der Cloud durch das Cloudgovernanceteam und die Besitzer der Anwendung überprüft werden.
+- Anwendungen, die geschützte Daten speichern oder darauf zugreifen, müssen anders verwaltet werden als Anwendungen, auf die das nicht zutrifft. Zumindest müssen sie segmentiert werden, um einen unbeabsichtigten Zugriff auf geschützte Daten zu vermeiden.
+- Alle geschützten Daten müssen im Ruhezustand verschlüsselt sein. Diese Verschlüsselung wird standardmäßig für alle Azure Storage-Konten verwendet. Möglicherweise sind jedoch weitere Verschlüsselungsstrategien erforderlich, einschließlich der Verschlüsselung der Daten im Speicherkonto, der Verschlüsselung virtueller Computer und der Verschlüsselung auf Datenbankebene bei Verwendung von SQL auf einem virtuellen Computer (TDE und Spaltenverschlüsselung).
+- Unternehmenskritische Daten können versehentlich gelöscht werden. Sie benötigen eine Datensicherungsstrategie, die dieses Risiko abdeckt und die Wiederherstellung der Daten vor dem Löschpunkt ermöglicht. Ein böswilliger Administrator kann die unternehmenskritischen Daten und auch deren Sicherungen löschen. Aus diesem Grund sollte für Sicherungsdaten eine vorläufige Löschung verwendet werden, die wieder rückgängig gemacht werden kann. Azure Backup kann Sie bei diesen beiden Szenarien unterstützen.
+- Erhöhte Berechtigungen in einem Segment mit geschützten Daten sollten nur in Ausnahmefällen gewährt werden. Solche Ausnahmen werden vom Cloudgovernanceteam erfasst und regelmäßig überwacht.
+- Netzwerksubnetze mit geschützten Daten müssen von anderen Subnetzen isoliert werden. Der Netzwerkdatenverkehr zwischen Subnetzen mit geschützten Daten wird regelmäßig überwacht.
+- Subnetze mit geschützten Daten sollten nicht direkt über das öffentliche Internet oder über Rechenzentren hinweg zugänglich sein. Der Zugriff auf diese Subnetze muss über zwischengeschaltete Subnetze geroutet werden. Der gesamte Zugriff auf diese Subnetze muss über eine Firewalllösung erfolgen, die Funktionen zur Paketüberprüfung und Sperrfunktionen durchführen kann.
+- Die Anforderungen an die Netzwerkkonfiguration, die vom Sicherheitsverwaltungsteam definiert wurden, müssen mit Governancetools überwacht und durchgesetzt werden.
+- Governancetools müssen die VM-Bereitstellung auf genehmigte Images beschränken.
+- Der Governanceprozess muss überprüfen, ob für unternehmenskritische Anwendungen und geschützte Daten die Sicherung, Wiederherstellung und Einhaltung von SLAs ordnungsgemäß implementiert sind.
+- Nach Möglichkeit muss die Knotenkonfigurationsverwaltung Richtlinienanforderungen auf die Konfiguration aller Gastbetriebssysteme anwenden.
+- Governancetools müssen durchsetzen, dass automatische Updates für alle bereitgestellten Ressourcen aktiviert sind. Verstöße müssen von Betriebsmanagementteams überprüft und in Übereinstimmung mit den Betriebsrichtlinien beseitigt werden. Ressourcen, die nicht automatisch aktualisiert werden, müssen in IT-Betriebsprozesse einbezogen werden.
+- Für die Erstellung neuer Abonnements oder Verwaltungsgruppen für unternehmenskritische Anwendungen oder geschützte Daten ist eine Überprüfung durch das Cloudgovernanceteam erforderlich, um sicherzustellen, dass die richtige Blaupause zugewiesen wird.
+- Das Zugriffsmodell der geringsten Rechte wird auf alle Verwaltungsgruppen oder Abonnements angewendet, die unternehmenskritische Anwendungen oder geschützte Daten enthalten.
+- Trends und Exploits, die mögliche Auswirkungen auf Cloudbereitstellungen haben, müssen vom Sicherheitsteam regelmäßig überprüft werden, damit Updates für in der Cloud verwendete Sicherheitsverwaltungstools bereitgestellt werden.
+- Bereitstellungstools müssen vom Cloudgovernanceteam genehmigt werden, um eine kontinuierliche Governance für bereitgestellte Ressourcen sicherzustellen.
+- Bereitstellungsskripts müssen in einem zentralen Repository aufbewahrt werden, das für das Cloudgovernanceteam zur regelmäßigen Überprüfung und Überwachung zugänglich ist.
+- Governanceprozesse müssen Überwachungen zum Bereitstellungszeitpunkt und nachfolgend in regelmäßigen Zyklen umfassen, um für alle Ressourcen Konsistenz zu gewährleisten.
+- Die Bereitstellung von Anwendungen, für die eine Kundenauthentifizierung erforderlich ist, erfordert einen genehmigten Identitätsanbieter, der mit dem primären Identitätsanbieter für interne Benutzer kompatibel ist.
+- Cloud Governance-Prozesse müssen vierteljährliche Überprüfungen mit den Identitätsverwaltungsteams umfassen. Diese Überprüfungen können helfen, böswillige Akteure oder Nutzungsmuster zu identifizieren, die durch die Konfiguration von Cloudressourcen verhindert werden sollten.
 
 ## <a name="incremental-improvement-of-governance-practices"></a>Inkrementelle Verbesserung der Governancemethoden
 
-Der Governance-MVP-Entwurf wird so geändert, dass er neue Azure-Richtlinien und eine Implementierung von Azure Cost Management und Abrechnung umfasst. Zusammen erfüllen diese beiden Entwurfsänderungen die neuen Richtlinienanweisungen des Unternehmens.
+Der Governance-MVP-Entwurf wird so geändert, dass er neue Azure-Richtlinien und eine Implementierung der Azure-Kostenverwaltung und -Abrechnung umfasst. Zusammen erfüllen diese beiden Entwurfsänderungen die neuen Richtlinienanweisungen des Unternehmens.
 
-1. Die Netzwerk- und IT-Sicherheitsteams definieren die Netzwerkanforderungen. Das Cloudgovernanceteam unterstützt die Kommunikation.
-2. Die Identitäts- und IT-Sicherheitsteams definieren die Identitätsanforderungen und nehmen alle erforderlichen Änderungen an der lokalen Active Directory-Implementierung vor. Das Cloudgovernanceteam überprüft die Änderungen.
-3. Erstellen Sie in Azure DevOps ein Repository zur Speicherung und Versionsverwaltung für alle relevanten Azure Resource Manager-Vorlagen und Skriptkonfigurationen.
-4. Azure Recovery Services-Tresorimplementierung:
-    1. Definieren Sie einen Azure Recovery Services-Tresor für Sicherungs- und Wiederherstellungsvorgänge, und stellen Sie ihn bereit.
-    2. Erstellen Sie eine Resource Manager-Vorlage zum Erstellen eines Tresors in jedem Abonnement.
-5. Implementierung von Azure Security Center:
-    1. Konfigurieren Sie Azure Security Center für jede Verwaltungsgruppe, die Klassifizierungen geschützter Daten enthält.
-    2. Legen Sie automatische Bereitstellung standardmäßig auf „Aktiviert“ fest, um Patchingkompatibilität zu gewährleisten.
-    3. Richten Sie Sicherheitskonfigurationen von Betriebssystemen ein. Das IT-Sicherheitsteam definiert die Konfiguration.
-    4. Unterstützen Sie das IT-Sicherheitsteam bei der anfänglichen Verwendung von Security Center. Übertragen Sie die Nutzung von Security Center an das IT-Sicherheitsteam, behalten Sie jedoch den Zugriff, um die Governance kontinuierlich zu verbessern.
-    5. Erstellen Sie eine Resource Manager-Vorlage, die die erforderlichen Änderungen für die Security Center-Konfiguration in einem Abonnement widerspiegelt.
-6. Aktualisieren Sie Azure-Richtlinien für alle Abonnements:
-    1. Überprüfen und erzwingen Sie die Wichtigkeits- und Datenklassifizierung für alle Verwaltungsgruppen und Abonnements, um Abonnements mit Klassifizierungen geschützter Daten zu identifizieren.
-    2. Überwachen und erzwingen Sie die ausschließliche Verwendung genehmigter Images.
-7. Aktualisieren Sie Azure-Richtlinien für alle Abonnements, die Klassifizierungen geschützter Daten enthalten:
-    1. Überwachen und erzwingen Sie die ausschließliche Verwendung von Azure RBAC-Standardrollen.
-    2. Überwachen und erzwingen Sie die Verschlüsselung für alle Speicherkonten und Dateien im Ruhezustand auf einzelnen Knoten.
-    3. Überwachen und erzwingen Sie die Anwendung einer NSG auf alle NICs und Subnetze. Die Netzwerk- und IT-Sicherheitsteams definieren die NSG.
-    4. Überwachen und erzwingen Sie die Verwendung eines genehmigten Netzwerksubnetzes und virtuellen Netzwerks pro Netzwerkschnittstelle.
-    5. Überwachen und erzwingen Sie die Einschränkung benutzerdefinierter Routingtabellen.
-    6. Wenden Sie die integrierten Richtlinien für die Gastkonfiguration wie folgt an:
-        1. Überwachen Sie die Verwendung sicherer Kommunikationsprotokolle auf Windows-Webservern.
-        2. Überwachen Sie die korrekte Festlegung der Kennwortsicherheitseinstellungen auf Linux- und Windows-Computern.
-    7. Überprüfen Sie, ob Azure Recovery Services-Tresore im Abonnement vorhanden sind, und erzwingen Sie deren Bereitstellung.
-8. Firewallkonfiguration:
-    1. Identifizieren Sie eine Konfiguration von Azure Firewall, die die erforderlichen Sicherheitsanforderungen erfüllt. Identifizieren Sie alternativ eine kompatible Appliance eines Drittanbieters, die mit Azure kompatibel ist.
-    2. Erstellen Sie eine Resource Manager-Vorlage, um die Firewall mit den erforderlichen Konfigurationen bereitzustellen.
-9. Azure-Blaupause:
-    1. Erstellen Sie eine neue Blaupause mit dem Namen `protected-data`.
-    2. Fügen Sie die Firewall, Azure Security Center-Vorlagen und Azure Recovery Services-Tresorvorlagen zur Blaupause hinzu.
-    3. Fügen Sie die neuen Richtlinien für Abonnements geschützter Daten hinzu.
-    4. Veröffentlichen Sie die Blaupause für jede Verwaltungsgruppe, die aktuell plant, geschützte Daten zu hosten.
-    5. Wenden Sie die neue Blaupause auf jedes betroffene Abonnement zusätzlich zu den vorhandenen Blaupausen an.
+- Die Netzwerk- und IT-Sicherheitsteams definieren die Netzwerkanforderungen. Das Cloudgovernanceteam unterstützt die Kommunikation.
+- Die Identitäts- und IT-Sicherheitsteams definieren die Identitätsanforderungen und nehmen alle erforderlichen Änderungen an der lokalen Active Directory-Implementierung vor. Das Cloudgovernanceteam überprüft die Änderungen.
+- Erstellen Sie in Azure DevOps ein Repository zur Speicherung und Versionsverwaltung für alle relevanten Azure Resource Manager-Vorlagen und Skriptkonfigurationen.
+- Azure Recovery Services-Tresorimplementierung:
+    - Definieren Sie einen Azure Recovery Services-Tresor für Sicherungs- und Wiederherstellungsvorgänge, und stellen Sie ihn bereit.
+    - Erstellen Sie eine Resource Manager-Vorlage zum Erstellen eines Tresors in jedem Abonnement.
+- Implementierung von Azure Security Center:
+    - Konfigurieren Sie Azure Security Center für jede Verwaltungsgruppe, die Klassifizierungen geschützter Daten enthält.
+    - Legen Sie automatische Bereitstellung standardmäßig auf „Aktiviert“ fest, um Patchingkompatibilität zu gewährleisten.
+    - Richten Sie Sicherheitskonfigurationen von Betriebssystemen ein. Das IT-Sicherheitsteam definiert die Konfiguration.
+    - Unterstützen Sie das IT-Sicherheitsteam bei der anfänglichen Verwendung von Security Center. Übertragen Sie die Nutzung von Security Center an das IT-Sicherheitsteam, behalten Sie jedoch den Zugriff, um die Governance kontinuierlich zu verbessern.
+    - Erstellen Sie eine Resource Manager-Vorlage, die die erforderlichen Änderungen für die Security Center-Konfiguration in einem Abonnement widerspiegelt.
+- Aktualisieren Sie Azure-Richtlinien für alle Abonnements:
+    - Überprüfen und erzwingen Sie die Wichtigkeit von Daten sowie die Datenklassifizierung für alle Verwaltungsgruppen und Abonnements, um Abonnements mit Klassifizierungen geschützter Daten zu identifizieren.
+    - Überwachen und erzwingen Sie die ausschließliche Verwendung genehmigter Images.
+- Aktualisieren Sie Azure-Richtlinien für alle Abonnements, die Klassifizierungen geschützter Daten enthalten:
+    - Überwachen und erzwingen Sie die ausschließliche Verwendung von Azure RBAC-Standardrollen.
+    - Überwachen und erzwingen Sie die Verschlüsselung für alle Speicherkonten und Dateien im Ruhezustand auf einzelnen Knoten.
+    - Überwachen und erzwingen Sie die Anwendung einer NSG auf alle NICs und Subnetze. Die Netzwerk- und IT-Sicherheitsteams definieren die NSG.
+    - Überwachen und erzwingen Sie die Verwendung eines genehmigten Netzwerksubnetzes und virtuellen Netzwerks pro Netzwerkschnittstelle.
+    - Überwachen und erzwingen Sie die Einschränkung benutzerdefinierter Routingtabellen.
+    - Wenden Sie die integrierten Richtlinien für die Gastkonfiguration wie folgt an:
+        - Überwachen Sie die Verwendung sicherer Kommunikationsprotokolle auf Windows-Webservern.
+        - Überwachen Sie die korrekte Festlegung der Kennwortsicherheitseinstellungen auf Linux- und Windows-Computern.
+    - Überprüfen Sie, ob Azure Recovery Services-Tresore im Abonnement vorhanden sind, und erzwingen Sie deren Bereitstellung.
+- Firewallkonfiguration:
+    - Identifizieren Sie eine Konfiguration von Azure Firewall, die die erforderlichen Sicherheitsanforderungen erfüllt. Identifizieren Sie alternativ eine kompatible Appliance eines Drittanbieters, die mit Azure kompatibel ist.
+    - Erstellen Sie eine Resource Manager-Vorlage, um die Firewall mit den erforderlichen Konfigurationen bereitzustellen.
+- Azure-Blaupause:
+    - Erstellen Sie eine neue Blaupause namens „protected-data“.
+    - Fügen Sie der Blaupause die Firewall, Azure Security Center-Vorlagen und Azure Recovery Services-Tresorvorlagen hinzu.
+    - Fügen Sie die neuen Richtlinien für Abonnements geschützter Daten hinzu.
+    - Veröffentlichen Sie die Blaupause für jede Verwaltungsgruppe, die aktuell plant, geschützte Daten zu hosten.
+    - Wenden Sie die neue Blaupause auf die betroffenen Abonnements sowie auf vorhandene Blaupausen an.
 
 ## <a name="conclusion"></a>Zusammenfassung
 
@@ -140,7 +140,7 @@ Durch Hinzufügen der oben genannten Prozesse und Änderungen zum Governance-MVP
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Mit der Fortsetzung der Cloudeinführung und der damit verbundenen Steigerung des Geschäftswerts ändern sich auch die Risiken und Anforderungen an Cloudgovernance. Für das fiktive Unternehmen in diesem Leitfaden besteht der nächste Schritt darin, unternehmenskritische Workloads zu unterstützen. An dieser Stelle werden Steuerelemente für die Ressourcenkonsistenz benötigt.
+Mit der Fortsetzung der Cloudeinführung und der damit verbundenen Steigerung des Geschäftswerts ändern sich auch die Risiken und Anforderungen an Cloudgovernance. Für das fiktive Unternehmen in diesem Leitfaden besteht der nächste Schritt darin, unternehmenskritische Workloads zu unterstützen. An dieser Stelle werden Steuerelemente für Ressourcenkonsistenz benötigt.
 
 > [!div class="nextstepaction"]
 > [Verbessern der Disziplin „Ressourcenkonsistenz“](./resource-consistency-improvement.md)

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: a6d1c25a189ec09255da929c21e87c7b6304bd83
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: cf811e2cb16b599027bbf965005f29877c85d703
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880899"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604908"
 ---
 # <a name="governance-guide-for-complex-enterprises-initial-corporate-policy-behind-the-governance-strategy"></a>Governanceleitfaden für komplexe Unternehmen: Anfängliche Unternehmensrichtlinie hinter der Governancestrategie
 
@@ -34,10 +34,10 @@ Nach der Besprechung baten zwei Mitglieder des IT-Governanceteams um Erlaubnis, 
 
 Die aktuelle Risikotoleranz ist hoch, und das Interesse an der Investition in die Cloud-Governance ist gering. Daher fungieren die Toleranzindikatoren als Frühwarnsystem, um die Investition von Zeit und Energie auszulösen. Falls die nachfolgend aufgeführten Indikatoren festgestellt werden, ist es ratsam, die Governancestrategie weiterzuentwickeln.
 
-- **Kostenverwaltung:** Das Ausmaß der Bereitstellung übersteigt 1.000 Ressourcen in der Cloud, oder die monatlichen Ausgaben überschreiten 10.000 USD pro Monat.
-- **Identitätsbaseline:** Einbeziehung von Anwendungen mit Legacy- oder Drittanbieteranforderungen für die mehrstufige Authentifizierung.
-- **Sicherheitsbaseline:** Die Aufnahme der geschützten Daten in definierte Cloudeinführungspläne.
-- **Ressourcenkonsistenz:** Die Aufnahme der unternehmenskritischen Anwendungen in definierte Cloudeinführungspläne.
+- **Disziplin „Kostenverwaltung“:** Das Ausmaß der Bereitstellung übersteigt 1.000 Ressourcen in der Cloud, oder die monatlichen Ausgaben überschreiten 10.000 USD pro Monat.
+- **Disziplin „Identitätsbaseline“:** Einbeziehung von Anwendungen mit Legacy- oder Drittanbieteranforderungen für die mehrstufige Authentifizierung.
+- **Disziplin „Sicherheitsbaseline“:** Die Aufnahme der geschützten Daten in definierte Cloudeinführungspläne.
+- **Disziplin „Ressourcenkonsistenz“:** Die Aufnahme der unternehmenskritischen Anwendungen in definierte Cloudeinführungspläne.
 
 [!INCLUDE [policy-statements](../../../../includes/policy-statements.md)]
 

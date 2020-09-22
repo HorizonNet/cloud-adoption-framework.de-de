@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: a2ef9ca5762622a4c1b1edca07306e5cdb2ed0e0
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: fb7cebc5a5382c33d42413a84bb8fdbd7fb8bded
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885285"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605247"
 ---
 # <a name="balance-competing-priorities"></a>Ausgewogenheit konkurrierender Prioritäten
 
@@ -36,7 +36,7 @@ Zuweilen kann Unklarheit beängstigender (oder gefährlicher) sein als falsche A
 
 ## <a name="balance-during-the-strategy-phase"></a>Gleichgewicht während der Strategiephase
 
-Das Hauptziel der Strategiemethodik ist das Erreichen eines Konsens zwischen den Beteiligten. Einmal definiert, bestimmt diese ausgerichtete strategische Position das Verhalten hinsichtlich jeder Methodik. So wird sichergestellt, dass technische Entscheidungen den gewünschten Geschäftsergebnissen entsprechen. Durch die Abstimmung zwischen den Beteiligten werden für alle dieselben konkurrierenden Prioritäten geschaffen: **Geschäftliche Rechtfertigung** und **Zeit bis zur geschäftlichen Auswirkung**.
+Das Hauptziel der Strategiemethodik ist das Erreichen eines Konsens zwischen den Beteiligten. Einmal definiert, bestimmt diese ausgerichtete strategische Position das Verhalten hinsichtlich jeder Methodik. So wird sichergestellt, dass technische Entscheidungen den gewünschten Geschäftsergebnissen entsprechen. Durch die Förderung der Abstimmung zwischen den Beteiligten werden für alle die gleichen konkurrierenden Prioritäten geschaffen: **Geschäftliche Rechtfertigung** und **Zeit bis zur geschäftlichen Auswirkung**.
 
 **Konkurrierende Prioritäten:**
 
@@ -71,7 +71,7 @@ Wenn die Einführungsteams die ersten Schritte zur Cloud vorbereiten, bestehen o
 
 **Mindestumfang:** Die Bereitschaftsmethodik beschreibt einen direkten Pfad von der schnellen Einführung zu langfristigen Vorgängen. Diese Vorgehensweise beginnt mit einer grundlegenden Einführung in die Tools, die das Refactoring der Umgebung ermöglichen. Basierend auf diesen Tools und Umgebungsanforderungen werden Kunden zu einer Auswahl vordefinierter Zielzonen geleitet (diese werden jeweils über die Infrastruktur als Codemodelle bereitgestellt). Dieser Code kann dann im Laufe der Cloudeinführung umgestaltet werden, um die Vorgänge, die Sicherheit und die Verwaltungsfunktionen zu verbessern.
 
-<!-- docutune:ignore "Govern and Manage methodologies" -->
+<!-- docutune:casing "Govern and Manage methodologies" -->
 
 **Beispiel zum erweiterten Umfang:** Für Teams, deren Einführungsplan das mittelfristige Ziel (innerhalb von 24 Monaten) vorsieht, **mehr als 1.000 Ressourcen (Apps, Infrastrukturen oder Datenressourcen) in der Cloud zu hosten,** wird eine stabilere Ansicht der Zielzonen empfohlen. In diesen Fällen sollten die Governance- und Verwaltungsmethodiken während der ersten Konversationen über die Zielzone berücksichtigt werden. Dies führt im Rahmen des Cloudeinführungsplans jedoch oft zu Verzögerungen von Wochen oder Monaten. Um die Auswirkungen auf die Geschäftsergebnisse zu minimieren, sollte das Einführungsteam tatsächliche Workloads in der Cloud parallel zur Erstellung einer ausgereiften Zielzone sowie einer zentralen Architekturlösung erstellen.
 

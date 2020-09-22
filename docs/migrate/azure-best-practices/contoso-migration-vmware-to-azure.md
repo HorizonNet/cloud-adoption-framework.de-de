@@ -7,13 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-services: azure-migrate
-ms.openlocfilehash: 3472f1695f8f5405842e2d35ff86265bfbfefec1
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 7921c16e54e3684e5f2ba43555b54b68cd12c37f
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877312"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605146"
 ---
 <!-- docsTest:casing "HCX Bulk Migration" "HCX Cold Migration" -->
 
@@ -96,7 +95,7 @@ Contoso wertet seinen vorgeschlagenen Entwurf aus, indem das Unternehmen eine Li
 
 ## <a name="migration-process"></a>Migrationsprozess
 
-Contoso verwendet das VMware HCX-Tool, um seine VMs auf Azure VMware Solution umzustellen. Die virtuellen Computer werden in einer privaten Cloud von Azure VMware Solution ausgeführt. Die [Migrationsmethoden von VMware HCX](https://docs.vmware.com/en/VMware-HCX/services/user-guide/GUID-8A31731C-AA28-4714-9C23-D9E924DBB666.html) umfassen auch eine Massenmigration bzw. „kalte“ Migration. vMotion (mit oder ohne Replikationsunterstützung, Replication-assisted vMotion (RAV)) ist eine Methode, die für Workloads mit Ausführung über eine Livemigration reserviert ist.
+Contoso verwendet das VMware HCX-Tool, um seine VMs auf Azure VMware Solution umzustellen. Die virtuellen Computer werden in einer privaten Cloud von Azure VMware Solution ausgeführt. Die [Migrationsmethoden von VMware HCX](https://docs.vmware.com/en/VMware-HCX/services/user-guide/GUID-8A31731C-AA28-4714-9C23-D9E924DBB666.html) umfassen auch eine Massenmigration bzw. „kalte“ Migration. VMware vMotion oder vMotion mit Replikationsunterstützung (Replication-assisted vMotion, RAV) ist eine Methode, die für Workloads mit Ausführung über eine Livemigration reserviert ist.
 
 Das Contoso-Team führt Folgendes durch, um den Prozess abzuschließen:
 

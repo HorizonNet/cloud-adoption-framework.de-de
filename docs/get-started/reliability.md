@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 448e98d06a79f9683996a8db946bf52b0c8e8cdd
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: e276ce6c1fd03afadb757f68471684df48f6d310
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884231"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603166"
 ---
 # <a name="get-started-improve-reliability-with-the-right-controls"></a>Erste Schritte: Verbessern der Zuverlässigkeit mit den richtigen Steuerungen
 
@@ -94,7 +94,7 @@ Strategische Entscheidungen wirken sich direkt auf die Zuverlässigkeit aus. Sie
 
 **Hinweis zur Erreichung der Ziele:**
 
-- [Verstehen der Beweggründe](../strategy/motivations.md): Wichtige Geschäftsereignisse und einige Migrationsgründe sind tendenziell kostensensibel. Diese Bereiche können die Wichtigkeit der Kostenkontrolle für alle späteren Anstrengungen erhöhen. Andere zukunftsgerichtete Beweggründe, die mit Innovation oder Wachstum durch Migration zu tun haben, sind möglicherweise eher auf den Umsatz ausgerichtet. Wenn Sie die Motivationen kennen, können Sie die Kostenverwaltung einfacher priorisieren.
+- [Verstehen der Beweggründe](../strategy/motivations.md): Wichtige Geschäftsereignisse und einige Migrationsgründe sind tendenziell kostensensibel. Diese Bereiche können die Wichtigkeit der Kostenkontrolle für alle späteren Anstrengungen erhöhen. Andere zukunftsgerichtete Beweggründe, die mit Innovation oder Wachstum durch Migration zu tun haben, sind möglicherweise eher auf den Umsatz ausgerichtet. Die Kenntnis der Beweggründe ist bei der Priorisierung Ihrer Kostenverwaltung hilfreich.
 - [Geschäftsergebnisse](../strategy/business-outcomes/index.md): Einige fiskalische Ergebnisse neigen dazu, extrem kostensensibel zu sein. Wenn sich die gewünschten Ergebnisse den fiskalischen Metriken zuordnen lassen, sollten Sie frühzeitig in die Governancedisziplin „Cost Management“ investieren.
 - [Geschäftliche Begründung](../strategy/cloud-migration-business-case.md): Die geschäftliche Begründung dient als allgemeine Übersicht über den Gesamtfinanzplan für die Cloudeinführung. Sie kann eine gute Quelle für die anfängliche Budgetplanung darstellen.
 
@@ -136,7 +136,7 @@ Wenn Sie den Einführungsplan mit der Analyse des digitalen Bestands abstimmen, 
 
 ## <a name="step-5-implement-landing-zone-best-practices"></a>Schritt 5: Implementieren von bewährten Methoden für Zielzonen
 
-Die Bereitschaftsmethodik des Cloud Adoption Framework für Azure konzentriert sich stark auf die Entwicklung von Zielzonen für das Hosten von Workloads in der Cloud. Bei der Implementierung Zielzone können sich mehrere Entscheidungen auf den Betrieb auswirken. Lassen Sie sich bei der Prüfung der Zielzone auf mögliche Betriebsverbesserungen vom Cloudbetriebsteam unterstützen. Wenden Sie sich auch an das Cloudgovernanceteam, um die Richtlinien für „Ressourcenkonsistenz“ und den Entwurfsleitfaden zu verstehen, die sich möglicherweise auf den Entwurf der Zielzone auswirken.
+Die Bereitschaftsmethodik des Cloud Adoption Framework konzentriert sich stark auf die Entwicklung von Zielzonen zum Hosten von Workloads in der Cloud. Bei der Implementierung Zielzone können sich mehrere Entscheidungen auf den Betrieb auswirken. Lassen Sie sich bei der Prüfung der Zielzone auf mögliche Betriebsverbesserungen vom Cloudbetriebsteam unterstützen. Wenden Sie sich auch an das Cloudgovernanceteam, um die Richtlinien für „Ressourcenkonsistenz“ und den Entwurfsleitfaden zu verstehen, die sich möglicherweise auf den Entwurf der Zielzone auswirken.
 
 **Ziele:**
 

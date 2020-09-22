@@ -7,16 +7,16 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 63359b8b77274d2c1bb81b266dab2a2d6779713f
-ms.sourcegitcommit: 9163a60a28ffce78ceb5dc8dc4fa1b83d7f56e6d
+ms.openlocfilehash: 81e19ba4fd92aa6e3510593ef48aaa0b113a3a69
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "86450627"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89602255"
 ---
 # <a name="promotion-models-single-step-staged-or-flight"></a>Höherstufungsmodelle: „in einem Schritt“, „gestaffelt“ oder „Flight“
 
-Die Workloadmigration wird oft als eine einzelne Aktivität erläutert. In Wirklichkeit handelt es sich dabei um eine Sammlung kleinerer Aktivitäten, die die Verschiebung einer digitalen Ressource in die Cloud unterstützen. Eine der letzten Aktivitäten bei einer Migration ist die Höherstufung einer Ressource in die Produktion. Höherstufung ist der Punkt, an dem sich das Produktionssystem für Endbenutzer ändert. Dazu kann oft einfach das Netzwerkrouting geändert werden, wodurch Endbenutzer an die neue Produktionsressource weitergeleitet werden. Höherstufung ist auch der Punkt, an dem IT- oder Cloudvorgänge den Schwerpunkt betrieblicher Verwaltungsprozesse vom vorherigen Produktionssystem auf die neuen Produktionssysteme verlagern.
+Die Workloadmigration wird oft als eine einzelne Aktivität erläutert. In der Praxis handelt es sich dabei um eine Sammlung kleinerer Aktivitäten, die die Verschiebung einer digitalen Ressource in die Cloud unterstützen. Eine der letzten Aktivitäten bei einer Migration ist die Höherstufung einer Ressource in die Produktion. Höherstufung ist der Punkt, an dem sich das Produktionssystem für Endbenutzer ändert. Dazu kann oft einfach das Netzwerkrouting geändert werden, wodurch Endbenutzer an die neue Produktionsressource weitergeleitet werden. Höherstufung ist auch der Punkt, an dem IT- oder Cloudvorgänge den Schwerpunkt betrieblicher Verwaltungsprozesse vom vorherigen Produktionssystem auf die neuen Produktionssysteme verlagern.
 
 Es gibt mehrere Höherstufungsmodelle. In diesem Artikel werden drei der Modelle beschrieben, die bei Cloudmigrationen am häufigsten verwendet werden. Die Wahl eines Höherstufungsmodells ändert die Aktivitäten in den Migrations- und Optimierungsprozessen. Deshalb sollte die Entscheidung über das Höherstufungsmodell zu einem frühen Zeitpunkt in einem Release getroffen werden.
 

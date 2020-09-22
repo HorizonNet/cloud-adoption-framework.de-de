@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 5dca866a7d948caa59bba7981fc3569f7a10f47d
-ms.sourcegitcommit: 71a4f33546443d8c875265ac8fbaf3ab24ae8ab4
+ms.openlocfilehash: 7a939f9c6df449421685e8eb38c81cf2c57006b4
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86479523"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603930"
 ---
 # <a name="test-driven-development-tdd-for-landing-zones"></a>Testgesteuerte Entwicklung (TDD) für Zielzonen
 
@@ -71,7 +71,7 @@ Die Governancemethodik innerhalb des Cloud Adoption Frameworks bietet eine erzä
 - [Vorgangserweiterung](../../govern/guides/complex/resource-consistency-improvement.md#incremental-improvement-of-the-policy-statements): Beispiel für steuernde Unternehmensrichtlinien („Definition of Done“), um grundlegende Anforderungen an die Vorgangsverwaltung zu erfüllen.
 - [Kostenexpansion](../../govern/guides/complex/cost-management-improvement.md#changes-to-the-policy-statements): Beispiel für steuernde Unternehmensrichtlinien („Definition of Done“), um Anforderungen an die Kostenverwaltung zu erfüllen.
 
-Die obigen Beispiele sind einfache Beispiele, die Ihnen helfen, eine „Definition of Done“ für Ihre Zielzonen zu entwickeln. Weitere Beispielrichtlinien sind unter den einzelnen [Disziplinen von Cloudgovernance](../../govern/governance-disciplines.md) verfügbar.
+Die obigen Beispiele sind einfache Beispiele, die Ihnen helfen, eine „Definition of Done“ für Ihre Zielzonen zu entwickeln. Für die [fünf Disziplinen der Cloud Governance](../../govern/governance-disciplines.md) stehen jeweils weitere Beispielrichtlinien zur Verfügung.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

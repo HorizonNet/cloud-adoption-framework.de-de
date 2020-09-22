@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 9e4829581a642a3fab13d461c98e423a5f777f2b
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 0b82f70aa7d7e2e0e9553f586b66a6dd8673b1c5
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567443"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604070"
 ---
 # <a name="common-azure-policy-examples"></a>Allgemeine Azure Policy-Beispiele
 
@@ -71,7 +71,7 @@ Azure bietet eine große Auswahl an VM-Größen, um verschiedene Workloads zu un
 
 ### <a name="deploy-antimalware"></a>Bereitstellen von Antischadsoftware
 
-Mit dieser Richtlinie können Sie eine Microsoft _IaaSAntimalware_-Erweiterung mit einer Standardkonfiguration auf virtuellen Computern bereitstellen, die nicht durch Antischadsoftware geschützt sind.
+Mit dieser Richtlinie können Sie eine Microsoft Antimalware-Erweiterung mit einer Standardkonfiguration auf virtuellen Computern bereitstellen, die nicht durch Antischadsoftware geschützt sind.
 
 Die GUID der Richtlinie lautet `2835b622-407b-4114-9198-6f7064cbe0dc`.
 

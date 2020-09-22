@@ -7,16 +7,16 @@ ms.date: 07/07/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 71fa4ce0af8b1a33b223001e4244fe35a086358a
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 6ff7dad3524f00119b161dfc87aaa1a70a2b4e19
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88881613"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89602191"
 ---
 # <a name="evaluate-a-microsoft-partners-azure-landing-zone"></a>Evaluieren der Azure-Zielzone eines Microsoft-Partners
 
-Das Cloud Adoption Framework geht die Cloudeinführung als eine Self-Service-Aktivität an. Ziel ist es, die einzelnen Teams, die die Einführung unterstützen, durch standardisierte Ansätze zu unterstützen. In der Realität können Sie nicht davon ausgehen, dass ein Self-Service-Ansatz für alle Einführungstätigkeiten ausreichend ist.
+Das Cloud Adoption Framework geht die Cloudeinführung als eine Self-Service-Aktivität an. Ziel ist es, die einzelnen Teams, die die Einführung unterstützen, durch standardisierte Ansätze zu unterstützen. In der Praxis können Sie nicht davon ausgehen, dass ein Self-Service-Ansatz für alle Einführungsmaßnahmen ausreichend ist.
 
 Erfolgreiche Cloudeinführungsprogramme umfassen in der Regel mindestens eine Unterstützungsebene durch Drittanbieter. Viele Cloudeinführungsmaßnahmen erfordern Unterstützung durch einen Systemintegrator (SI) oder Beratungspartner, der Dienste bereitstellt, die die Cloudeinführung beschleunigen. Anbieter verwalteter Dienste (Managed Service Providers, MSPs) bieten einen dauerhaften Wert durch Unterstützung von Zielzonen und Cloudeinführung, bieten aber auch Unterstützung für die Betriebsverwaltung nach der Einführung. Darüber hinaus beteiligen erfolgreiche Cloudeinführungsmaßnahmen tendenziell einen oder mehrere unabhängige Softwareanbieter (ISV), die softwarebasierte Dienste bereitstellen, die die Cloudeinführung beschleunigen. Die umfangreichen Partnerökosysteme aus SIs, ISVs, MSPs und anderen Arten von Microsoft-Partnern haben ihre Angebote an bestimmten Methodiken im Cloud Adoption Framework ausgerichtet. Wenn sich ein Partner an der Bereitschaftsmethodik dieses Frameworks orientiert, bietet er wahrscheinlich eine eigene Implementierungsoption für Azure-Zielzonen an.
 

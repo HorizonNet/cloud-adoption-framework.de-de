@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: a99f8ec96609c02e1bb46bd26d57aaf0ed594736
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 01e9be8d8dde337dd732933b42b61f881bc2c474
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88881426"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603772"
 ---
 # <a name="cloud-rationalization"></a>Cloudrationalisierung
 
@@ -25,7 +25,7 @@ Die in diesem Artikel aufgeführten *fünf Phasen der Rationalisierung* sind ein
 
 ### <a name="myth-its-easy-to-make-rationalization-decisions-early-in-the-process"></a>Mythos: Es ist einfach, Rationalisierungsentscheidungen in einem frühen Stadium des Prozesses zu treffen.
 
- Eine genaue Rationalisierung erfordert ein fundiertes Wissen in Bezug auf die Workload und die damit verbundenen Ressourcen (Apps, VMs und Daten). Am wichtigsten ist, dass genaue Rationalisierungsentscheidungen Zeit in Anspruch nehmen. Wir empfehlen die Verwendung [eines inkrementellen Rationalisierungsprozesses](./rationalize.md#incremental-rationalization).
+ Eine korrekte Rationalisierung erfordert ein fundiertes Wissen in Bezug auf die Workload und die damit verbundenen Ressourcen (Apps, Infrastruktur und Daten). Am wichtigsten ist, dass genaue Rationalisierungsentscheidungen Zeit in Anspruch nehmen. Wir empfehlen die Verwendung [eines inkrementellen Rationalisierungsprozesses](./rationalize.md#incremental-rationalization).
 
 ### <a name="myth-cloud-adoption-has-to-wait-for-all-workloads-to-be-rationalized"></a>Mythos: Die Cloudeinführung muss darauf warten, dass alle Workloads rationalisiert sind.
 
@@ -33,7 +33,7 @@ Die Rationalisierung eines gesamten IT-Portfolios oder sogar eines einzelnen Rec
 
 ### <a name="myth-business-justification-has-to-wait-for-all-workloads-to-be-rationalized"></a>Mythos: Die geschäftliche Begründung muss warten, bis alle Workloads rationalisiert sind.
 
-Um eine geschäftliche Begründung für eine Cloudeinführung zu entwickeln, machen Sie ein paar grundlegende Annahmen auf Portfolioebene. Wenn die Beweggründe an Innovationen ausgerichtet sind, gehen Sie von einer Umstrukturierung aus. Wenn die Beweggründe an der Migration ausgerichtet sind, gehen Sie vom Rehosten aus. Diese Annahmen können den Prozess der geschäftlichen Begründung beschleunigen. Annahmen werden dann in Frage gestellt und die Budgets während der Bewertungsphase der Einführungszyklen für die einzelnen Workloads optimiert.
+Um eine geschäftliche Begründung für eine Cloudeinführung zu entwickeln, machen Sie ein paar grundlegende Annahmen auf Portfolioebene. Wenn die Beweggründe an Innovationen ausgerichtet sind, gehen Sie von einer Umstrukturierung aus. Wenn die Beweggründe an der Migration ausgerichtet sind, gehen Sie vom Rehosten aus. Diese Annahmen können den Prozess der geschäftlichen Begründung beschleunigen. Annahmen werden dann in Frage gestellt und die Budgets während der Bewertungsphase der Einführungszyklen der einzelnen Workloads optimiert.
 
 Überprüfen Sie jetzt die folgenden fünf Phasen der Rationalisierung, um sich mit dem zeitintensiven Prozess vertraut zu machen. Wählen Sie bei der Entwicklung Ihres Cloudeinführungsplans die Option aus, die am besten zu Ihren Beweggründen, Geschäftsergebnissen und der aktuellen Situation passt. Das Ziel der Rationalisierung digitaler Ressourcen ist es, Grundwerte festzulegen, und nicht die Rationalisierung sämtlicher Workloads.
 

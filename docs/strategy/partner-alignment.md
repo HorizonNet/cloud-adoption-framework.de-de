@@ -7,24 +7,24 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 50434a66069543a02151ada0d7646c1e57c52e6f
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 21124dcb5d51d47c6698f83c47ea7124db6cd2a5
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885795"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605290"
 ---
 <!-- cSpell:ignore MSPs -->
 
 # <a name="strategy-for-partner-alignment"></a>Strategie für die Partnerausrichtung
 
-Das Cloud Adoption Framework geht die Cloudeinführung als eine Self-Service-Aktivität an. Ziel ist es, die einzelnen Teams, die die Einführung unterstützen, durch standardisierte Ansätze zu fördern. In Wirklichkeit ist es nicht sicher anzunehmen, dass ein Self-Service-Ansatz für alle Einführungstätigkeiten ausreichend sein wird.
+Das Cloud Adoption Framework geht die Cloudeinführung als eine Self-Service-Aktivität an. Ziel ist es, die einzelnen Teams, die die Einführung unterstützen, durch standardisierte Ansätze zu fördern. In der Praxis können Sie nicht davon ausgehen, dass ein Self-Service-Ansatz für alle Einführungsmaßnahmen ausreichend ist.
 
 Erfolgreiche Cloudeinführungsprogramme umfassen in der Regel mindestens eine Unterstützungsebene. Einige Cloudeinführungsbemühungen erfordern möglicherweise die Unterstützung mehrerer Partner, die zusammen auf ein gemeinsames Ziel hinarbeiten.
 
 ## <a name="steps-to-align-the-partnership-strategy"></a>Schritte zur Ausrichtung der Partnerschaftsstrategie
 
-Während der frühen Strategiephasen der Einführung ist es wichtig, mit der Ausrichtung Ihrer Partnerschaftsstrategie zu beginnen. Die folgenden Schritte können dabei helfen, Hürden in späteren Phasen des Einführungslebenszyklus zu beseitigen.
+Während der Strategiephase der Einführung ist es wichtig, mit der Ausrichtung Ihrer Partnerschaftsstrategie zu beginnen. Die folgenden Schritte können dabei helfen, Hürden in späteren Phasen des Einführungslebenszyklus zu beseitigen.
 
 1. Beginnen Sie, den Bedarf an Unterstützung zu verstehen.
 1. Erwägen Sie Partnerschaftsoptionen, die Ihrer Kultur und Ihren Bedürfnissen entsprechen.

@@ -7,14 +7,14 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 50c1963289ca28618501407d583e47ee40604f4a
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 71bb643a71f984fc9eb6b6b872f7ad6cd8890a54
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88878315"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604369"
 ---
-<!--docsTest:casing "Oxford English Dictionary" -->
+<!-- docutune:casing "Oxford English Dictionary" -->
 
 # <a name="build-with-customer-empathy"></a>Erstellen von Lösungen mit Blick auf die Kundenanforderungen
 
@@ -26,7 +26,7 @@ Warum ist Empathie so wichtig? Von der ersten Veröffentlichung eines Minimum Vi
 
 ## <a name="how-to-build-with-empathy"></a>Entwickeln von Lösungen mit Empathie
 
-Planung ist naturgemäß eine Übung zur Definition von Annahmen. Je mehr wir planen, desto mehr Annahmen schleichen sich in die Grundlage einer guten Idee ein. Annahmen sind tendenziell das Produkt von Eigenempathie. Anders ausgedrückt: „Was würde ich wollen, wenn ich in dieser Position wäre?“. Mit der Erstellungsphase zu beginnen, minimiert die Zeit, in der Annahmen in eine Lösung einfließen können. Dieser Ansatz beschleunigt auch die Feedbackschleife durch echte Kunden, löst frühere Lernmöglichkeiten aus und stärkt die Empathie.
+Das Definieren von Annahmen ist ein wesentlicher Bestandteil der Planung. Je mehr wir planen, desto mehr Annahmen schleichen sich in die Grundlage einer guten Idee ein. Annahmen sind in der Regel das Produkt von Eigenempathie. Anders ausgedrückt: _Was würde ich wollen, wenn ich in dieser Position wäre?_ Mit der Erstellungsphase zu beginnen, minimiert die Zeit, in der Annahmen in eine Lösung einfließen können. Dieser Ansatz beschleunigt auch die Feedbackschleife durch echte Kunden, löst frühere Lernmöglichkeiten aus und stärkt die Empathie.
 
 > [!CAUTION]
 > Die richtige Definition dessen, was erstellt werden soll, kann schwierig sein und erfordert etwas Übung. Wenn Sie etwas zu schnell erstellen, kann es sein, dass die Lösung nicht den Kundenanforderungen entspricht. Wenn Sie zu viel Zeit mit dem Versuch verbringen, die anfänglichen Kundenbedürfnisse und -lösungsanforderungen zu verstehen, kann der Markt den Bedarf decken, bevor Sie die Chance haben, überhaupt eine Lösung zu erstellen. In beiden Szenarien kann die Lernchance deutlich verzögert oder verringert werden. Manchmal können die Daten sogar beschädigt werden.

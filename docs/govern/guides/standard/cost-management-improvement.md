@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 496065642e8bbd212cc9cf5a24597e489b24a6ca
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: c6a53233fa469bcb75d2c2478614acf9487dd2fb
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880508"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604802"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-cost-management-discipline"></a>Governanceleitfaden für Standardunternehmen: Verbessern der Disziplin „Cost Management“
 
@@ -21,7 +21,7 @@ Dieser Artikel führt die Geschichte fort, indem dem Governance-MVP Kostenkontro
 
 ## <a name="advancing-the-narrative"></a>Fortführen der Geschichte
 
-Die Einführung hat sich über den im Governance-MVP definierten Kostentoleranzindikator hinaus entwickelt. Das ist gut so, denn dies korrespondiert mit Migrationen aus dem Datencenter „DR“. Die Steigerung in den Ausgaben rechtfertigt jetzt den Aufwand an Zeit seitens des Cloudgovernanceteams.
+Die Einführung hat sich über den im Governance-MVP definierten Kostentoleranzindikator hinaus entwickelt. Das ist gut so, denn dies korrespondiert mit Migrationen aus dem Rechenzentrum „DR“. Die Steigerung in den Ausgaben rechtfertigt jetzt den Aufwand an Zeit seitens des Cloudgovernanceteams.
 
 ### <a name="changes-in-the-current-state"></a>Änderungen des aktuellen Status
 

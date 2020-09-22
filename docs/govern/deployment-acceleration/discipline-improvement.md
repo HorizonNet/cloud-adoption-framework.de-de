@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 05cb93bcb4620029bc84916e585f2e3576b6d448
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: caaf3d029ad1a1738561eb94343a39a9471cc882
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88883500"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604955"
 ---
 # <a name="deployment-acceleration-discipline-improvement"></a>Verbesserung der Disziplin „Beschleunigung der Bereitstellung“
 
@@ -21,9 +21,9 @@ Bei der Disziplin „Beschleunigung der Bereitstellung“ geht es darum, Richtli
 
 Dieser Artikel beschreibt einige potenzielle Aufgaben, die Ihr Unternehmen ausführen kann, um die Disziplin „Beschleunigung der Bereitstellung“ besser erstellen und weiterentwickeln zu können. Diese Aufgaben lassen sich in verschiedene Phasen der Implementierung einer Cloudlösung unterteilen: Planung, Erstellung, Einführung und Betrieb. Diese Phasen werden dann durchlaufen und ermöglichen die Entwicklung eines [inkrementellen Ansatzes für die Cloudgovernance](../guides/index.md#an-incremental-approach-to-cloud-governance).
 
-![Vier Phasen der Einführung](../../_images/govern/adoption-phases.png)
+![Phasen eines inkrementellen Ansatzes für die Cloudgovernance](../../_images/govern/adoption-phases.png)
 
-*Abbildung 1: Einführungsphasen des inkrementellen Ansatzes für die Cloudgovernance.*
+*Abbildung 1: Phasen eines inkrementellen Ansatzes für die Cloudgovernance*
 
 Es ist unmöglich, die Anforderungen aller Unternehmen in einem einzigen Dokument zu berücksichtigen. Daher werden in diesem Artikel die empfohlenen mindestens auszuführenden Aktivitäten sowie Beispiele für potenzielle Aktivitäten für jede Phase des Weiterentwicklungsprozesses für die Governance beschrieben. Ziel dieser Aktivitäten ist es, Sie beim Aufbau eines [Richtlinien-MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) und bei der Einrichtung eines Frameworks für die inkrementelle Verbesserung der Richtlinie zu unterstützen. Ihr Cloudgovernanceteam muss entscheiden, wie viel in diese Aktivitäten investiert werden soll, um Ihre Disziplin „Identitätsbaseline“ zu verbessern.
 

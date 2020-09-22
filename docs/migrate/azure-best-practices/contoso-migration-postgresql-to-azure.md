@@ -1,5 +1,5 @@
 ---
-title: Migrieren von PostgreSQL-Datenbanken zu Microsoft Azure
+title: Migrieren von PostgreSQL-Datenbanken zu Azure
 description: Hier erfahren Sie, wie Contoso seine lokalen PostgreSQL-Datenbanken zu Azure migriert hat.
 author: deltadan
 ms.author: abuck
@@ -7,17 +7,16 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-services: azure-migrate
-ms.openlocfilehash: 35fdbcf69fc4e86f4f785bd871082b974b1f6203
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 9f9dfee1aca21acbbf0f840b79d61501ad90c73a
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882140"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603863"
 ---
 <!-- cSpell:ignore BYOK postgres psql dvdrental vpngateways -->
 
-# <a name="migrate-postgresql-databases-to-microsoft-azure"></a>Migrieren von PostgreSQL-Datenbanken zu Microsoft Azure
+# <a name="migrate-postgresql-databases-to-azure"></a>Migrieren von PostgreSQL-Datenbanken zu Azure
 
 In diesem Artikel wird gezeigt, wie das fiktive Unternehmen Contoso die Migration seiner lokalen Open-Source-PostgreSQL-Datenbankplattform zu Azure geplant und durchgeführt hat.
 

@@ -7,16 +7,16 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 2a3aaf0b2d6e77ecc652315526e6aeb56969289e
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 560bbf233bd8648e50192037b1712382dfeeac6f
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884367"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603434"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>Erste Schritte: Beschleunigen neuer Produkt- und Dienstinnovationen in der Cloud
 
-Die Entwicklung neuer Produkte und Dienste in der Cloud erfordert eine andere Herangehensweise als die Migration. Die Innovationsmethodik des Cloud Adoption Framework für Azure etabliert einen Ansatz, der als Leitfaden für die Entwicklung neuer Produkte und Dienste dienen kann.
+Die Entwicklung neuer Produkte und Dienste in der Cloud erfordert eine andere Herangehensweise als die Migration. Die Innovationsmethodik im Cloud Adoption Framework etabliert einen Ansatz, der als Leitfaden für die Entwicklung neuer Produkte und Dienste dient.
 
 Dieser Leitfaden basiert auf den Abschnitten des Cloud Adoption Framework, die in der folgenden Abbildung hervorgehoben sind. Innovationen sind zwar weniger vorhersehbar als eine Standardmigration, passen aber dennoch in den Kontext des weiter gefassten Cloudeinführungsplans. Dieser Leitfaden kann Ihrem Unternehmen dabei helfen, die für Innovationen erforderliche Unterstützung zu bieten und eine Struktur für den Aufbau eines ausgewogenen Portfolios im Rahmen der Cloudeinführung bereitzustellen.
 

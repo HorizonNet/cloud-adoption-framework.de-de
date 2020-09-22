@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: d8674f04199a108dce424b81329697c3a25bfc03
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: bb9c39784714dfab8233598d5180d5b770b9402c
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567783"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604196"
 ---
 # <a name="platform-specialization-for-cloud-management"></a>Plattformspezialisierung für die Cloudverwaltung
 
@@ -59,7 +59,7 @@ Die Plattformspezialisierung besteht aus einer disziplinierten Ausführung der f
 
 ::: zone-end
 
-Das Verbessern des Systementwurfs ist der effektivste Ansatz zur Optimierung des Betriebs jeder gängigen Plattform. Durch Verbesserungen des Systementwurfs können die Stabilität erhöht und Betriebsunterbrechungen verringert werden. Der Entwurf einzelner Systeme wird für die Umgebungssicht nicht berücksichtigt, die das Framework für die Cloudeinführung (Cloud Adoption Framework) für Azure einnimmt.
+Das Verbessern des Systementwurfs ist der effektivste Ansatz zur Optimierung des Betriebs jeder gängigen Plattform. Durch Verbesserungen des Systementwurfs können die Stabilität erhöht und Betriebsunterbrechungen verringert werden. Der Entwurf einzelner Systeme geht über die Betrachtung der Umgebung hinaus, die im Rahmen des Cloud Adoption Framework verwendet wird.
 
 Als Ergänzung zu diesem Framework bietet das [Microsoft Azure Well-Architected Framework](/azure/architecture/framework) Grundsätze zum Verbessern einer Plattform oder einer bestimmten Workload. Der Schwerpunkt des Frameworks liegt auf der Verbesserung von fünf Säulen der Architekturexzellenz:
 

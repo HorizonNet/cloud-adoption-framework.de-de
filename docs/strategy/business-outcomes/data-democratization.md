@@ -7,12 +7,12 @@ ms.date: 05/22/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: c3df113abbd758b65bbdd81d94d90be1dccb2925
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: cb5ab9afdb8164aff0fb36c3494a40a2cc6529e0
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885200"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605133"
 ---
 # <a name="data-democratization"></a>Demokratisierung von Daten
 
@@ -26,7 +26,7 @@ Azure Synapse Analytics ist ein einzelner Dienst für nahtlose Zusammenarbeit un
 
 **Datenintegration**: *Data Engineers* nutzen eine codefreie Umgebung, um problemlos mehrere Quellen und Datentypen zu verbinden.
 
-**Big Data und maschinelles Lernen**: *Data Scientists* erstellen schnell Proofs of Concept und stellen Ressourcen nach Bedarf bereit. Dabei arbeiten sie in der Sprache ihrer Wahl (z. B. T-SQL, Python, Scala, .NET oder SparkSQL).
+**Big Data und maschinelles Lernen**: *Data Scientists* erstellen schnell Proofs of Concept und stellen Ressourcen nach Bedarf bereit. Dabei arbeiten sie in der Sprache ihrer Wahl (z. B. T-SQL, Python, Scala, .NET oder Spark SQL).
 
 **Verwaltung und Sicherheit:** *IT-Profis* schützen und verwalten Daten effizienter, setzen Datenschutzanforderungen durch und sichern den Zugriff auf Cloud- und Hybridkonfigurationen.
 

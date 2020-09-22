@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 5e5988e2a75c5cc83f7145abb91feb3492bbe4dd
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 1f315f1c07ce381043b5f338fd7602678908cb63
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575178"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89602232"
 ---
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
 
@@ -84,7 +84,13 @@ Domain Name System (DNS) ist ein kritisches Entwurfsthema in der allgemeinen Arc
 
 Die Netzwerktopologie ist ein wichtiges Element der unternehmensweiten Architektur, da sie bestimmt, wie Anwendungen miteinander kommunizieren können. In diesem Abschnitt werden Technologien und Topologieansätze für Azure-Unternehmensbereitstellungen behandelt. Der Schwerpunkt liegt auf zwei Hauptansätzen: Topologien basierend auf Azure Virtual WAN und herkömmlichen Topologien.
 
-Eine Netzwerktopologie, die auf Azure Virtual WAN basiert, ist der bevorzugte Ansatz auf Unternehmensebene für umfangreiche Bereitstellungen in mehreren Regionen, bei denen Ihre Organisation ihre globalen Standorte sowohl mit Azure als auch lokal verbinden muss. Sie sollten auch dann eine Virtual WAN-Netzwerktopologie verwenden, wenn Ihre Organisation komplett mit Azure integrierte, softwaredefinierte WAN-Bereitstellungen (SD-WAN) verwenden möchte. Virtual WAN wird Interkonnektivitätsanforderungen in großem Stil gerecht. Da es sich um einen von Microsoft verwalteten Dienst handelt, verringert er außerdem die generelle Komplexität des Netzwerks und kann zur Modernisierung des Netzwerks in Ihrer Organisation beitragen.
+Verwenden Sie eine auf Azure Virtual WAN basierende Netzwerktopologie, wenn einer der folgenden Punkte zutrifft:
+
+- Ihre Organisation möchte Ressourcen in mehreren Azure-Regionen bereitstellen und muss Ihre globalen Standorte sowohl mit Azure als auch mit der lokalen Umgebung verbinden.
+- Ihre Organisation möchte softwaredefinierte WAN-Bereitstellungen (SD-WAN) mit vollständiger Azure-Integration verwenden.
+- Sie möchten bis zu 2.000 VM-Workloads aus allen VNETs bereitstellen, die mit einem einzelnen Azure Virtual WAN-Hub verbunden sind.
+
+Virtual WAN wird Interkonnektivitätsanforderungen in großem Stil gerecht. Da es sich um einen von Microsoft verwalteten Dienst handelt, verringert er außerdem die generelle Komplexität des Netzwerks und kann zur Modernisierung des Netzwerks in Ihrer Organisation beitragen.
 
 Verwenden Sie eine traditionelle Azure-Netzwerktopologie, wenn einer der folgenden Punkte zutrifft:
 
@@ -128,6 +134,8 @@ _Abbildung 1: Virtual WAN-Netzwerktopologie._
 
 - Die Transitkonnektivität zwischen den virtuellen Netzwerken unter Virtual WAN Standard wird ermöglicht, weil auf jedem virtuellen Hub ein Router vorhanden ist. Für jeden Router eines virtuellen Hubs wird ein aggregierter Durchsatz von bis zu 50 GBit/s unterstützt.
 
+- Mit einem einzelnen Virtual WAN-Hub können bis zu 2.000 VM-Workloads aus allen VNETs verbunden werden.
+
 - Virtual WAN ist mit einer Vielzahl von [SD-WAN-Anbietern](/azure/virtual-wan/virtual-wan-locations-partners) integriert.
 
 - Viele Anbieter verwalteter Dienste bieten [verwaltete Dienste](/azure/networking/networking-partners-msp) für Virtual WAN.
@@ -142,7 +150,7 @@ _Abbildung 1: Virtual WAN-Netzwerktopologie._
 
 **Entwurfsempfehlungen:**
 
-- Es wird dringend empfohlen, Virtual WAN für neue große oder globale Netzwerkbereitstellungen in Azure zu verwenden, bei denen Sie eine globale Transitkonnektivität zwischen Azure-Regionen und lokalen Standorten benötigen. Auf diese Weise müssen Sie das transitiv Routing für Azure-Netzwerke nicht manuell einrichten.
+- Es empfiehlt sich, Virtual WAN für neue große oder globale Netzwerkbereitstellungen in Azure zu verwenden, bei denen eine globale Transitkonnektivität zwischen Azure-Regionen und lokalen Standorten benötigt wird. Auf diese Weise müssen Sie das transitiv Routing für Azure-Netzwerke nicht manuell einrichten.
 
   In der folgenden Abbildung wird ein Beispiel für eine globale Unternehmensbereitstellung mit Rechenzentren in Europa und den USA veranschaulicht. Zudem gibt es in der Bereitstellung eine große Anzahl von Zweigstellen in beiden Regionen. Die Umgebung ist global über Virtual WAN und ExpressRoute Global Reach verbunden.
 
@@ -175,6 +183,8 @@ _Abbildung 1: Virtual WAN-Netzwerktopologie._
 - Erstellen Sie Azure Virtual WAN- und Azure Firewall-Ressourcen innerhalb des Konnektivitätsabonnements.
 
 - Erstellen Sie nicht mehr als 500 virtuelle Netzwerkverbindungen pro virtuellem Virtual WAN-Hub.
+
+- Planen Sie Ihre Bereitstellung sorgfältig, und achten Sie darauf, dass sich Ihre Netzwerkarchitektur innerhalb der [Azure Virtual WAN-Grenzwerte](/azure/azure-resource-manager/management/azure-subscription-service-limits#virtual-wan-limits) bewegt.
 
 ## <a name="traditional-azure-networking-topology"></a>Herkömmliche Azure-Netzwerktopologie
 
@@ -288,7 +298,7 @@ In diesem Abschnitt wird die Netzwerktopologie erweitert, um empfohlene Modelle 
 
 **Überlegungen zum Entwurf:**
 
-- Azure ExpressRoute bietet dedizierte private Konnektivität zu Microsoft Azure IaaS- (Infrastructure-as-a-Service ) und PaaS-Funktionen (Platform-as-a-Service) von lokalen Standorten.
+- Azure ExpressRoute bietet dedizierte private Konnektivität für Azure-IaaS- und -PaaS-Funktionen (Infrastructure-as-a-Service und Platform-as-a-Service) von lokalen Standorten.
 
 - Mit Private Link können Sie die Konnektivität mit PaaS-Diensten über ExpressRoute mit privatem Peering einrichten.
 
@@ -301,11 +311,11 @@ In diesem Abschnitt wird die Netzwerktopologie erweitert, um empfohlene Modelle 
 - ExpressRoute Direct ermöglicht das Erstellen von mehreren ExpressRoute-Leitungen ohne anfallende Zusatzkosten bis zur Kapazität des ExpressRoute Direct-Ports (10 GBit/s oder 100 GBit/s). Zudem lassen sich direkte Verbindungen mit den ExpressRoute-Routern von Microsoft herstellen. Bei der 100-GBit/s-SKU beträgt die Mindestbandbreite der Leitung 5 GBit/s. Bei der 10-GBit/s-SKU beträgt die Mindestbandbreite der Leitung 1 GBit/s.
 
 <!-- cSpell:ignore prepending -->
-<!-- docsTest:ignore "AS PATH prepending -->
+<!-- docsTest:ignore "AS PATH prepending" -->
 
 **Entwurfsempfehlungen:**
 
-- Verwenden Sie ExpressRoute als hauptsächlichen Konnektivitätskanal für Verbindungen zwischen dem lokalen Netzwerk und Microsoft Azure. Sie können VPNs als Quelle für die Sicherungskonnektivität verwenden, um die Resilienz der Konnektivität zu verbessern.
+- Verwenden Sie ExpressRoute als primären Konnektivitätskanal für Verbindungen zwischen einem lokalen Netzwerk und Azure. Sie können VPNs als Quelle für die Sicherungskonnektivität verwenden, um die Resilienz der Konnektivität zu verbessern.
 
 - Verwenden Sie duale ExpressRoute-Leitungen von verschiedenen Peeringstandorten, wenn Sie eine Verbindung eines lokalen Standorts mit virtuellen Netzwerken in Azure herstellen. Durch dieses Setup werden redundante Pfade zu Azure sichergestellt, da Single Points of Failure zwischen dem lokalen Standort und Azure beseitigt werden.
 

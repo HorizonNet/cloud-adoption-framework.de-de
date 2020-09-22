@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: a27d3c6a889da10a4f5e1045a15921741c712c7e
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: b4fa68b4c796ecb0e0773e01a549df848ceaf350
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884265"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603187"
 ---
 # <a name="get-started-ensure-consistent-performance-across-a-portfolio"></a>Erste Schritte: Sicherstellen konsistenter Leistung in einem Portfolio
 
@@ -64,7 +64,7 @@ Im Zuge der Optimierung der Verwaltungsbaseline ist es wichtig, dass die entspre
 
 - Stellen Sie sicher, dass alle Workloads und Ressourcen die [richtigen Benennungs- und Kennzeichnungskonventionen](../ready/azure-best-practices/naming-and-tagging.md) befolgen. [Erzwingen Sie Kennzeichnungskonventionen mithilfe von Azure Policy](/azure/governance/policy/tutorials/govern-tags) mit einem speziellen Schwerpunkt auf Tags für „Wichtigkeit“.
 - Sollten Sie noch nicht mit Cloudgovernance vertraut sein, verwenden Sie die Governancemethodik, um [Governancerichtlinien, -prozesse und -disziplinen](../govern/index.md) einzurichten.
-- Falls Sie noch keine Erfahrung mit der Governancedisziplin „Cost Management“ haben, befassen Sie sich ggf. mit dem folgenden [Artikel zur Verbesserung der Disziplin „Cost Management“](../govern/guides/complex/cost-management-improvement.md) (insbesondere mit dem Abschnitt zur [Implementierung](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)).
+- Falls Sie noch keine Erfahrung mit der Disziplin „Kostenverwaltung“ haben, befassen Sie sich ggf. mit dem folgenden [Artikel zur Verbesserung der Disziplin „Kostenverwaltung“](../govern/guides/complex/cost-management-improvement.md) (insbesondere mit dem Abschnitt zur [Implementierung](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)).
 
 <br>
 

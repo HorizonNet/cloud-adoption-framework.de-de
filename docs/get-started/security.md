@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 96b962019314b54a60841d20e0a0b147424244ee
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: b46c3e7247cbfcae5de8b60ad77f0e727250ac52
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884248"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603122"
 ---
 # <a name="get-started-implement-security-across-the-enterprise-environment"></a>Erste Schritte: Implementieren von Sicherheit in der gesamten Unternehmensumgebung
 
@@ -149,7 +149,7 @@ Sicherheitsplanung und Planung der Cloudbereitstellung sollten nicht isoliert vo
 
 **Zielvorgaben:**
 
-- **Systemsicherheitsplan:** Ein Sicherheitsplan sollte Teil der Hauptplanungsdokumentation für die Cloud sein. Dabei kann es sich um ein Dokument handeln, das die [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx), einen detaillierten Foliensatz oder eine Projektdatei verwendet. Je nach Größe, Kultur und Standardverfahren der Organisation kann es auch eine Kombination dieser Formate sein.
+- **Systemsicherheitsplan:** Ein Sicherheitsplan sollte Teil der Hauptplanungsdokumentation für die Cloud sein. Dabei kann es sich um ein Dokument handeln, das die [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx), einen detaillierten Foliensatz oder eine Projektdatei verwendet. Je nach Größe, Kultur und Standardmethoden der Organisation kann es auch eine Kombination dieser Formate sein.
 
   Der Sicherheitsplan sollte alle diese Elemente enthalten:
 

@@ -7,13 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-services: azure-migrate
-ms.openlocfilehash: ba0d366ddd36fa8f57c0d57ca8343590fe39e124
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: a9cc63ee3c47ddb347948aa55b49212ff0775344
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877448"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89602217"
 ---
 <!-- cSpell:ignore BACPAC FILESTREAM -->
 
@@ -142,7 +141,7 @@ Anhand der jetzt in Azure Migrate hochgeladenen Informationen konnte Contoso meh
 Wenn DMA für eine Datenquelle nicht ausgeführt werden konnte, wurden die folgenden Richtlinien für die Datenbankmigrationen befolgt.
 
 > [!NOTE]
-> Im Rahmen der Bewertungsphase ermittelte Contoso verschiedene Open-Source-Datenbanken. Für deren Migrationsplanung wurde separat [dieser Anleitung](./contoso-migration-oss-db-to-azure.md) gefolgt.
+> Im Rahmen der Bewertungsphase wurden von Contoso verschiedene Open-Source-Datenbanken ermittelt. Für deren Migrationsplanung wurde separat [dieser Anleitung](./contoso-migration-oss-db-to-azure.md) gefolgt.
 
 <!-- docsTest:casing "custom .NET" -->
 

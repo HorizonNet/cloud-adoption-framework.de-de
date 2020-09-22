@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4dd78ceda692f03dac88f4d8cf68f1c2b5f780bb
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: c53332fa884d0045ac8710229e370bbdfb7a10c2
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88879539"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604740"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>Governance-Entwurf für eine einfache Workload
 
@@ -63,7 +63,7 @@ Bei der Erstellung des Abonnements ordnet der Azure-**Kontobesitzer** dem Abonne
 ![Azure-Kontobesitzer ordnet den Azure AD-Mandanten dem Abonnement zu](../../_images/govern/design/governance-1-4.png)
 *Abbildung 4: Der Azure-Kontobesitzer ordnet den Azure AD-Mandanten dem Abonnement zu.*
 
-Unter Umständen haben Sie bemerkt, dass dem Abonnement derzeit kein Benutzer zugeordnet ist. Dies bedeutet, dass keine Person über die Berechtigung zum Verwalten von Ressourcen verfügt. In Wirklichkeit ist der **Kontobesitzer** der Besitzer des Abonnements und verfügt über die Berechtigung zur Durchführung aller Aktionen für eine Ressource des Abonnements. In der Praxis ist der **Kontobesitzer** in Ihrer Organisation wahrscheinlich eher ein Mitarbeiter der Finanzabteilung und nicht dafür verantwortlich, Ressourcen zu erstellen, zu lesen, zu aktualisieren und zu löschen. Diese Aufgaben werden vom **Workloadbesitzer** übernommen. Daher müssen Sie den **Workloadbesitzer** dem Abonnement hinzufügen und Berechtigungen zuweisen.
+Unter Umständen haben Sie bemerkt, dass dem Abonnement derzeit kein Benutzer zugeordnet ist. Dies bedeutet, dass keine Person über die Berechtigung zum Verwalten von Ressourcen verfügt. In der Praxis ist der **Kontobesitzer** der Besitzer des Abonnements und verfügt über die Berechtigung zur Durchführung aller Aktionen für eine Ressource des Abonnements. In der Praxis ist der **Kontobesitzer** in Ihrer Organisation wahrscheinlich eher ein Mitarbeiter der Finanzabteilung und nicht dafür verantwortlich, Ressourcen zu erstellen, zu lesen, zu aktualisieren und zu löschen. Diese Aufgaben werden vom **Workloadbesitzer** übernommen. Daher müssen Sie den **Workloadbesitzer** dem Abonnement hinzufügen und Berechtigungen zuweisen.
 
 Da der **Kontobesitzer** derzeit der einzige Benutzer mit der Berechtigung zum Hinzufügen des **Workloadbesitzers** zum Abonnement ist, übernimmt er die Aufgabe, den **Workloadbesitzer** dem Abonnement hinzuzufügen:
 

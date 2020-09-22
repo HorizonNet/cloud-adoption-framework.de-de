@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3eee0e1b6b7e2ceb64f180fe97984e4c39a8ea7a
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 35e6806fe93607e4797bdcd20302fec09032778e
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884860"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605203"
 ---
 # <a name="create-your-initial-azure-subscriptions"></a>Erstellen Ihrer anfänglichen Azure-Abonnements
 
@@ -23,12 +23,10 @@ Beginnen Sie mit der Einführung von Azure, indem Sie eine erste Gruppe von Abon
 Erstellen Sie zunächst zwei Abonnements:
 
 - Erstellen Sie ein Azure-Abonnement, das Ihre Produktionsworkloads enthält.
-- Erstellen Sie ein zweites Abonnement, das als Nichtproduktionsumgebung (Dev/Test) verwendet werden soll. Nutzen Sie dazu ein [Angebot für Azure Dev/Test](https://azure.microsoft.com/pricing/dev-test), um die Kosten niedrig zu halten.
+- Erstellen Sie ein zweites Abonnement, das als Nichtproduktionsumgebung fungiert. Nutzen Sie dazu ein [Angebot für Azure Dev/Test](https://azure.microsoft.com/pricing/dev-test), um die Kosten niedrig zu halten.
 
 ![Ein anfängliches Abonnementmodell, das Schlüssel neben Feldern mit der Bezeichnung „Produktion“ und „Nichtproduktion“ zeigt](../../_images/ready/initial-subscription-model.png)
 _Abbildung 1: Ein anfängliches Abonnementmodell, das Schlüssel neben Feldern mit der Bezeichnung „Produktion“ und „Nichtproduktion“ zeigt_
-
-<!-- docsTest:casing Dev/Test -->
 
 Dieser Ansatz hat viele Vorteile:
 

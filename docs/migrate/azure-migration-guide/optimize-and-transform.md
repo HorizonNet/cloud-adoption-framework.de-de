@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: bf5a02b6996c5ff71d4c12041142655223c5cce8
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: ebd9decfb10f4ff0917d1c7020569a2f63777018
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884962"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605053"
 ---
 <!-- markdownlint-disable DOCSMD001 -->
 
@@ -43,7 +43,7 @@ Es folgen einige allgemeine Dienste, deren Größe Sie ändern können.
 
 ### <a name="resize-a-virtual-machine"></a>Ändern der Größe eines virtuellen Computers
 
-In Azure Migrate wird als Teil der Bewertungsphase vor der Migration eine Analyse zur richtigen Größenanpassung durchgeführt, sodass die Größe virtueller Computer, die mit diesem Tool migriert werden, wahrscheinlich bereits entsprechend Ihren Anforderungen vor der Migration angepasst ist.
+In Azure Migrate wird im Rahmen der Bewertungsphase vor der Migration eine Analyse zur richtigen Dimensionierung durchgeführt, sodass die Größe virtueller Computer, die mit diesem Tool migriert werden, wahrscheinlich bereits auf Ihre Anforderungen vor der Migration abgestimmt ist.
 
 Bei virtuellen Computern, die mit anderen Methoden erstellt oder migriert wurden, oder in Fällen, bei denen eine Anpassung Ihrer Anforderungen für virtuelle Computer nach der Migration erforderlich ist, müssen Sie die Größenanpassung der virtuellen Computer möglicherweise optimieren.
 
@@ -129,7 +129,7 @@ Sie können auch **Advisor** verwenden und die Registerkarte **Kosten** auswähl
 ::: zone target="docs"
 
 - [Tutorial: Optimieren von Kosten mithilfe von Empfehlungen](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
-- [Vermeiden unerwarteter Gebühren bei der Azure-Abrechnung und -Kostenverwaltung](/azure/billing/billing-getting-started)
+- [Vermeiden unerwarteter Gebühren mit Azure-Kostenverwaltung und -Abrechnung](/azure/billing/billing-getting-started)
 - [Schnellstart: Ermitteln und Analysieren von Kosten mit der Kostenanalyse](/azure/cost-management/quick-acm-cost-analysis)
 
 ::: zone-end

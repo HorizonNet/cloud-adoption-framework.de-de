@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 048c41f56247ff7f8878d3fdd05506ed46224768
-ms.sourcegitcommit: 070e6a60f05519705828fcc9c5770c3f9f986de5
+ms.openlocfilehash: 306435c879c4c867e7434a198ad03496b8511cef
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2020
-ms.locfileid: "83815088"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604992"
 ---
 <!-- cSpell:ignore prepurchases -->
 
@@ -25,7 +25,7 @@ In diesem Artikel werden die Gründe beschrieben, warum Kunden typischerweise ei
 
 Im Hinblick auf die Kostenkontrolle führt die Einführung der Cloud zu einem Paradigmenwechsel. Die Kostenverwaltung in einer traditionellen lokalen Welt basiert auf Aktualisierungszyklen, Rechenzentrumseinkäufen, Hostverlängerungen und Problemen der laufenden Wartung. Sie können diese Kosten prognostizieren, planen und verfeinern und mit den jährlichen Investitionsbudgets abstimmen.
 
-Bei der Kostenverwaltung im Zusammenhang mit Cloudlösungen neigen viele Unternehmen dazu, einen reaktiveren Ansatz zu verfolgen. In vielen Fällen kaufen Unternehmen im Voraus eine bestimmte Menge von Clouddiensten bzw. verpflichten sich zur deren Nutzung. Bei diesem Modell wird davon ausgegangen, dass die Maximierung von Rabatten, basierend darauf, wie viel das Unternehmen für die Ausgaben bei einem bestimmten Cloudanbieter plant, die Wahrnehmung eines proaktiven, geplanten Kostenzyklus schafft. Diese Wahrnehmung lässt sich nur dann umsetzen, wenn das Unternehmen auch ausgereifte Disziplinen für „Kostenverwaltung“ implementiert.
+Bei der Kostenverwaltung im Zusammenhang mit Cloudlösungen neigen viele Unternehmen dazu, einen reaktiveren Ansatz zu verfolgen. In vielen Fällen kaufen Unternehmen im Voraus eine bestimmte Menge von Clouddiensten bzw. verpflichten sich zur deren Nutzung. Bei diesem Modell wird davon ausgegangen, dass die Maximierung von Rabatten, basierend darauf, wie viel das Unternehmen für die Ausgaben bei einem bestimmten Cloudanbieter plant, die Wahrnehmung eines proaktiven, geplanten Kostenzyklus schafft. Diese Wahrnehmung lässt sich nur dann umsetzen, wenn das Unternehmen auch eine ausgereifte Kostenverwaltungsdisziplin implementiert.
 
 Die Cloud bietet Self-Service-Funktionen, die in herkömmlichen lokalen Rechenzentren bisher unbeachtet waren. Diese neuen Funktionen befähigen Unternehmen, agiler, weniger restriktiv und offener für die Einführung neuer Technologien zu sein. Der Nachteil der Self-Service-Funktionen besteht darin, dass Endbenutzer unwissentlich die zugewiesenen Budgets überschreiten können. Umgekehrt kann es bei denselben Benutzern zu unerwarteten Planänderungen kommen, wodurch die prognostizierte Menge an Clouddiensten nicht benötigt werden. Die Möglichkeit einer Verschiebung in beide Richtungen rechtfertigt Investitionen in eine Disziplin „Kostenverwaltung“ innerhalb des Governanceteams.
 

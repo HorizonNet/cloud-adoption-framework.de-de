@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 1df9bf9b6352f3aee42154aa5f1271fd0fb5be4d
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: e3683c652ef69b9cd327164a992966cff1ce4868
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884180"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603043"
 ---
 # <a name="get-started-build-a-cloud-governance-team"></a>Erste Schritte: Aufstellen eines Cloudgovernanceteams
 
@@ -22,7 +22,7 @@ Mit einem Cloudgovernanceteam wird sichergestellt, dass Risiken bei der Cloudein
 
 ## <a name="step-1-determine-whether-a-cloud-governance-team-is-needed"></a>Schritt 1: Ermitteln, ob ein Cloudgovernanceteam benötigt wird
 
-Die offizielle Empfehlung für das Cloud Adoption Framework für Azure lautet, dass immer ein Cloudgovernanceteam aufgestellt werden sollte. Dieses Team ist unter Umständen anfänglich sehr klein. Unabhängig von seiner Größe erfüllt es eine wichtige Funktion. Falls kein Team benötigt wird, sollten die Aufgaben, die mit [Cloudgovernancefunktionen](../../organize/cloud-governance.md) verbunden sind, einer Gruppe oder Einzelperson in einem vorhandenen Einführungsteam übertragen werden.
+Die offizielle Empfehlung für das Cloud Adoption Framework lautet, dass immer ein Cloudgovernanceteam aufgestellt werden sollte. Dieses Team kann zunächst sehr klein sein. Unabhängig von seiner Größe erfüllt es jedoch eine wichtige Funktion. Falls kein Team benötigt wird, sollten die Aufgaben, die mit [Cloudgovernancefunktionen](../../organize/cloud-governance.md) verbunden sind, einer Gruppe oder Einzelperson in einem vorhandenen Einführungsteam übertragen werden.
 
 **Ziele:**
 

@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9fadb677bdf1cee392ae7f7ad8dbf4c1605ca551
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 78468928e666d7c9db87f6b28d51fa1376fbd990
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880389"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604776"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>Governanceleitfaden für Standardunternehmen: Die Geschichte hinter der Governancestrategie
 
-Die folgende Geschichte schildert einen Anwendungsfall für die Governance während der [Journey zur Cloudeinführung eines Standardunternehmens](./index.md). Vor der Implementierung dieser Journey ist es wichtig, die Annahmen und die Logik zu verstehen, die in dieser Geschichte dargestellt werden. So können Sie die Governancestrategie besser auf die Vorgehensweise in Ihrer eigenen Organisation ausrichten.
+Die folgende Geschichte schildert einen Anwendungsfall für die Governance während der [Journey zur Cloudeinführung eines Standardunternehmens](./index.md). Vor der Implementierung dieser Journey ist es wichtig, die Annahmen und die Logik zu verstehen, die in dieser Geschichte dargestellt werden. So können Sie die Governancestrategie besser auf die Journey Ihrer Organisation ausrichten.
 
 ## <a name="back-story"></a>Hintergrund
 
@@ -39,7 +39,7 @@ Das Unternehmen besitzt das folgende Geschäftsprofil:
 
 Aktuell befinden sich IT und Cloudbetrieb des Unternehmens in folgendem Zustand:
 
-- Die IT-Abteilung betreibt zwei gehostete Infrastrukturumgebungen. Eine Umgebung enthält Produktionsassets. Die zweite Umgebung enthält Funktionen für die Notfallwiederherstellung und einige Dev/Test-Assets. Diese Umgebungen werden von zwei verschiedenen Anbietern gehostet. Die IT bezeichnet diese beiden Rechenzentren als „Prod“ bzw. „DR“.
+- Die IT-Abteilung betreibt zwei gehostete Infrastrukturumgebungen. Eine Umgebung enthält Produktionsassets. Die zweite Umgebung enthält Funktionen für die Notfallwiederherstellung und einige Dev/Test-Assets. Diese Umgebungen werden von zwei verschiedenen Anbietern gehostet. Die IT bezeichnet diese beiden Rechenzentren als _Prod_ bzw. als _DR_.
 
 - Die IT hat die Cloud eingeführt, indem alle E-Mail-Konten der Endbenutzer zu Microsoft 365 migriert wurden. Diese Migration wurde vor sechs Monaten abgeschlossen. Es wurden nur wenige andere IT-Ressourcen in der Cloud bereitgestellt.
 

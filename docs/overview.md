@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
-ms.openlocfilehash: ffa91cb9b608db3cf92d72d2bc3b857344197f9d
-ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
+ms.openlocfilehash: 1e2c1cb95e80ba5aa4926807ef505d748013e060
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89510480"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604207"
 ---
 # <a name="what-is-the-microsoft-cloud-adoption-framework-for-azure"></a>Was ist das Microsoft Cloud Adoption Framework für Azure?
 
@@ -46,7 +46,7 @@ Jede der oben genannten Methoden ist Teil eines umfassenden Cloudeinführungs-Le
 
 Die Cloud verändert grundlegend, wie Unternehmen IT-Ressourcen beschaffen, nutzen und schützen. Üblicherweise lagen Besitzrechte und Verantwortlichkeit für alle Technologieaspekte – von der Infrastruktur bis zur Software – beim Unternehmen. Nach der Umstellung auf die Cloud haben Unternehmen die Möglichkeit, Ressourcen nur dann bereitzustellen und zu nutzen, wenn diese benötigt werden. Die Cloud bietet im Hinblick auf Entwurfsoptionen zwar eine enorme Flexibilität, aber bei der Einführung von Cloudtechnologien benötigen Unternehmen eine bewährte und einheitliche Methodik. Das Framework für die Einführung der Microsoft Cloud erfüllt diese Anforderung und hilft beim Treffen von Entscheidungen beim Umstieg auf die Cloud.
 
-Der Umstieg auf die Cloud ist aber nur ein Mittel zum Zweck. Doch eine erfolgreicher Cloudeinführung beginnt lange vor der Wahl eines Cloudplattformanbieters. Sie beginnt, sobald Entscheider aus der IT und den Fachbereichen erkennen, dass die Cloud ein bestimmtes Ziel für die Unternehmenstransformations beschleunigen kann. Das Framework für die Cloudeinführung kann bei der Ausrichtung von Strategien in Bezug auf Veränderungen des Unternehmens, der Kultur und der Technik behilflich sein, um die gewünschten Geschäftsergebnisse zu erzielen.
+Der Umstieg auf die Cloud ist aber nur ein Mittel zum Zweck. Doch eine erfolgreicher Cloudeinführung beginnt lange vor der Wahl eines Cloudplattformanbieters. Sie beginnt, sobald Entscheider aus der IT und den Fachbereichen erkennen, dass die Cloud ein bestimmtes Ziel für die Unternehmenstransformations beschleunigen kann. Das Cloud Adoption Framework hilft bei der Ausrichtung von Strategien für unternehmensbezogene, kulturelle und technische Veränderungen, um die gewünschten Geschäftsergebnisse zu erzielen.
 
 Das Framework für die Einführung der Cloud bietet technische Anleitungen für Microsoft Azure. Da Unternehmenskunden möglicherweise noch mit der Auswahl des Cloudanbieters beschäftigt sind oder absichtlich eine Strategie mit mehreren Clouds verfolgen, bietet das Framework nach Möglichkeit cloudunabhängige Anleitungen für strategische Entscheidungen.
 

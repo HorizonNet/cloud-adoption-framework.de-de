@@ -1,22 +1,22 @@
 ---
-title: 'Erste Schritte: Entsperren des Umgebungsentwurfs und der Konfiguration'
-description: Erste Schritte beim Entwerfen und Konfigurieren Ihrer Cloudumgebung.
+title: 'Erste Schritte: Umgebungsentwurf und -konfiguration'
+description: Hier finden Sie eine Einführung in die Beseitigung von Blockierungen im Zusammenhang mit dem Entwurf und der Konfiguration Ihrer Cloudumgebung.
 author: JanetCThomas
 ms.author: janet
 ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 526fe646f41f76985c7a4d3ba47cd2df474949c1
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 82d216ea194e7d94091877dc1e80c2dde0d3f6d1
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88881256"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603710"
 ---
-# <a name="get-started-design-and-configuration"></a>Erste Schritte: Entwurf und Konfiguration
+# <a name="get-started-environment-design-and-configuration"></a>Erste Schritte: Umgebungsentwurf und -konfiguration
 
-Der Umgebungsentwurf und die -konfiguration sind die häufigsten Hemmnisse bei Migrations- oder innovationsorientierten Einführungsmaßnahmen. Die schnelle Implementierung eines Entwurfs, der Ihren langfristigen Einführungsplan unterstützt, kann schwierig sein. Dieser Artikel stellt einen Ansatz und eine Reihe von Schritten vor, die helfen sollen, häufige Hindernisse zu überwinden und Ihre Einführungsbemühungen zu beschleunigen.
+Umgebungsentwurf und -konfiguration sind die häufigsten Hindernisse bei migrations- oder innovationsorientierten Einführungsmaßnahmen. Die schnelle Implementierung eines Entwurfs, der Ihren langfristigen Einführungsplan unterstützt, kann schwierig sein. Dieser Artikel stellt einen Ansatz und eine Reihe hilfreicher Schritte zur Überwindung häufiger Hindernisse sowie zur Beschleunigung Ihrer Einführungsmaßnahmen vor.
 
 ![Erste Schritte bei Entwurf und Konfiguration](../_images/get-started/environment-map.png)
 
@@ -34,9 +34,9 @@ Eine klare und präzise Geschäftsstrategie unterstützt das Cloudplattformteam 
 
 **Hinweis zur Erreichung der Zielvorgaben:**
 
-- [Beweggründe](../strategy/motivations.md): Der erste Schritt bei der strategischen Ausrichtung besteht darin, einen Konsens über die Beweggründe für die Migrationsbemühungen zu erzielen. Beginnen Sie mit dem Verstehen und Kategorisieren von Beweggründen und gemeinsamen Themen verschiedener Beteiligter aus dem Geschäfts- und IT-Bereich.
-- [Geschäftsergebnisse](../strategy/business-outcomes/index.md): Nachdem die Beweggründe ausgerichtet wurden, können die gewünschten Geschäftsergebnisse erfasst werden. Diese Informationen stellt klare Metriken bereit, mit denen Sie die Gesamttransformation messen können.
-- [Erstellen eines Geschäftsszenarios für die Cloudmigration](../strategy/cloud-migration-business-case.md): Nun können Sie mit der Entwicklung eines Geschäftsszenarios für die Migration mit klaren Formeln und Tools beginnen, die bei der geschäftlichen Rechtfertigung helfen können.
+- [Grundlegendes zu geschäftlichen Beweggründen:](../strategy/motivations.md) Der erste Schritt bei der strategischen Ausrichtung besteht darin, einen Konsens über die Beweggründe für die Migrationsbemühungen zu erzielen. Beginnen Sie mit dem Verstehen und Kategorisieren von Beweggründen und gemeinsamen Themen verschiedener Beteiligter aus dem Geschäfts- und IT-Bereich.
+- [Dokumentieren von Geschäftsergebnissen](../strategy/business-outcomes/index.md): Nach der Ausrichtung der Beweggründe können Sie die gewünschten Geschäftsergebnisse erfassen. Diese Informationen stellt klare Metriken bereit, mit denen Sie die Gesamttransformation messen können.
+- [Erstellen eines Geschäftsszenarios für die Cloudmigration:](../strategy/cloud-migration-business-case.md) Beginnen Sie mit der Entwicklung eines Geschäftsszenarios für die Migration – einschließlich eines klaren Leitfadens für die Formeln und Tools, die Ihre geschäftliche Begründung unterstützen.
 
 <br>
 
@@ -129,13 +129,13 @@ Wenn diese Entscheidungen getroffen werden, fließen sie wieder in die parallel 
 - Bereitstellen einer ersten Grundlage für Governance.
 - Abschließen eines Governancebenchmarks, um zukünftige Verbesserungen zu planen.
 - Zeitachsenrisiken:
-  - Verbesserung der Richtlinien- und Governanceimplementierung kann eine Woche bis vier weitere Wochen pro Fachrichtung hinzufügen.
+  - Die Verbesserung von Richtlinien und Governanceimplementierung kann pro Disziplin bis zu vier Wochen länger dauern.
 
 **Hinweis zur Erreichung der Ziele:**
 
 - [Governanceansatz](../govern/index.md): Diese Methodik beschreibt einen Prozess für Überlegungen zu Unternehmensrichtlinien und -prozessen. Dann bauen Sie die Fachrichtungen auf, die erforderlich sind, um Governance in Ihrem gesamten Cloudunternehmen zu gewährleisten.
 - [Governance-Benchmarktool](../govern/benchmark.md): Erkennen Sie Lücken in Ihrem aktuellen Zustand, damit Sie für die Zukunft planen können.
-- [Anfängliche Governancegrundlage](../govern/guides/complex/prescriptive-guidance.md): Verstehen der Fachrichtungen Identitätsbaseline, Sicherheitsbaseline und Bereitstellungsbeschleunigung, die erforderlich sind, um ein Governance-MVP (Minimum Viable Product) zu schaffen, das als Grundlage für jede Einführung dient.
+- [Anfängliche Governancegrundlage](../govern/guides/complex/prescriptive-guidance.md): Machen Sie sich mit den Governancedisziplinen vertraut, die für die Erstellung eines Governance-MVP (Minimum Viable Product) erforderlich sind, das die Grundlage für jede Einführung bildet.
 
 <br>
 
@@ -145,9 +145,7 @@ Wenn diese Entscheidungen getroffen werden, fließen sie wieder in die parallel 
 
 ## <a name="step-6-implement-an-operations-baseline"></a>Schritt 6: Implementieren einer Betriebsbaseline
 
-Vorgangsverwaltung ist eine weitere Voraussetzung für eine erfolgreiche Migration. Eine Migration in die Cloud ohne Verständnis der laufenden Abläufe ist eine riskante Entscheidung. Parallel zur Migration sollten Sie mit der Planung für längerfristige Vorgänge beginnen.
-
-Wenn diese Pläne erstellt werden, fließen sie wieder in die parallel stattfindenden Anstrengungen des Cloudplattformteams ein.
+Eine Cloudmigration ohne Verständnis der laufenden Vorgänge ist riskant. Beginnen Sie parallel zur Migration mit der Planung einer längerfristigen Vorgangsverwaltung. Beziehen Sie diese Pläne in die parallel durchgeführten Maßnahmen des Cloudplattformteams ein.
 
 **Zielvorgaben:**
 

@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 15271c7e74881f671715d832eb4f07e63de23063
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 46c56b2518578261396588e8f142521fe8159a53
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884826"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603976"
 ---
 # <a name="improve-landing-zone-operations"></a>Verbessern des Betriebs von Zielzonen
 
@@ -37,7 +37,7 @@ Die folgenden Links bieten bewährte Methoden zur Verbesserung des Betriebs von 
 Die [Manage-Methodik](../../manage/index.md) bietet eine allgemeine Anleitung für den Ausbau von Operations Management-Kapazitäten (siehe [Manage-Methodik](../../manage/index.md)). Wir werden die grundlegende Struktur dieser Methodik und die folgenden Schritte aus dieser Methodik verwenden, um den Zielzonenbetrieb und den Betrieb in allen Zielzonen zu verbessern.
 
 ![Verwaltungsmethodik](../../_images/manage/caf-manage.png)
-_Abbildung 1: Die CAF-Verwaltungsmethodik_
+_Abbildung 1: Die Verwaltungsmethodik des Cloud Adoption Framework_
 
 1. [Einrichten einer Verwaltungsbasislinie](../../manage/azure-server-management/index.md): Eine Verwaltungsbasislinie bildet die Grundlage für das Operations Management. Der Leitfaden in diesem ersten Schritt kann auf jede beliebige Zielzone angewandt werden, um die ersten Vorgänge zu verbessern.
 2. [Definieren von geschäftlichen Verpflichtungen](../../manage/considerations/business-alignment.md): Das Verständnis der Wichtigkeit und der Auswirkungen jeder Workload innerhalb einer Zielzone wird eine „Definition of Done“ für alle laufenden Verwaltungsverbesserungen für jede Zielzone festlegen. Im Rahmen dieses Prozesses werden auch die Anforderungen an die Zuverlässigkeit, Leistung und den Betrieb der einzelnen Workloads ermittelt.

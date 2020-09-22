@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 02448762796ad54ae49e8e411a5a21edf002aeb3
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 52a00570873d4cccba052fee33845b8ad8653bbf
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88878179"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604423"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>Umgebungserfahrungen: Interagieren mit Geräten
 
@@ -64,13 +64,13 @@ Jenseits mobiler Realität oder selbst Mixed Reality liegt die integrierte Reali
 
 Diese Erfahrung ist ideal, wenn sich eine bestimmte Art von Gerät stets in der gleichen Umgebung befindet, in der die Kundenbedürfnisse entstehen. Übliche Szenarien sind Fabrikhallen, Aufzüge und sogar Ihr Auto. Diese Art großformatiger Geräte verfügt bereits über Computeleistung. Sie können auch Daten vom Gerät selbst verwenden, um Kundenverhalten zu erkennen und diese Verhaltensweisen in die Cloud zu übertragen. Diese automatische Erfassung von Daten zum Kundenverhalten reduziert die Notwendigkeit der Dateneingabe durch einen Kunden erheblich. Darüber hinaus kann die Web-, mobile oder VR-Erfahrung als Feedbackschleife eingesetzt werden, um auszutauschen, was die Lösung für integrierte Realität gelernt hat.
 
-<!-- docsTest:casing "advanced computer vision" -->
+<!-- docutune:casing "advanced computer vision" -->
 
 Beispiele für integrierte Realität in Azure sind u. a.:
 
 - [Azure IoT-Lösungen (Internet of Things, Internet der Dinge):](/azure/iot-fundamentals) Mehrere Dienste in Azure, die alle bei der Verwaltung von Geräten und dem Fluss von Daten von diesen Geräten in die Cloud und zurück zu Endbenutzern helfen
 - [Azure Sphere:](/azure-sphere) Azure Sphere ist eine Kombination aus Hardware und Software, die eine standardmäßig sichere Möglichkeit bietet, einem bestehenden Gerät zu ermöglichen, Daten zwischen sich und Azure IoT-Lösungen sicher zu übertragen
-- [Azure Kinect DK:](/azure/Kinect-dk) KI-Sensoren mit erweiterten Modellen für maschinelles Sehen und Sprache Diese Sensoren können visuelle und Audiodaten aus der unmittelbaren Umgebung erfassen und als Eingaben an Ihre Lösung übermitteln.
+- [Azure Kinect DK:](/azure/kinect-dk) KI-Sensoren mit erweiterten Modellen für maschinelles Sehen und Sprache. Diese Sensoren können visuelle und Audiodaten aus der unmittelbaren Umgebung erfassen und als Eingaben an Ihre Lösung übermitteln.
 
 Sie können diese drei Tools zum Sammeln von Daten aus der natürlichen Umgebung zum Zeitpunkt der Kundenanforderung verwenden. Anschließend kann Ihre Lösung auf diese Dateneingaben reagieren, um das Bedürfnis zu erfüllen, manchmal bevor der Kunde überhaupt weiß, dass ein Auslöser für dieses Bedürfnis entstanden ist.
 

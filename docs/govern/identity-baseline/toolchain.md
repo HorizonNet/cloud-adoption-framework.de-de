@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f1caae91280f2782a4bd4e5a3c4a8ad331dd9a03
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 835cb15479de8cc0303a7dd4c1298ab5f8e606a2
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880049"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604707"
 ---
 # <a name="identity-baseline-tools-in-azure"></a>Tools für Identitätsbaseline in Azure
 
@@ -48,7 +48,7 @@ Wenn Sie diese Methode wählen, übernimmt Azure AD die Anmeldung für Benutzer.
 
 Wenn Sie diese Methode wählen, übergibt Azure AD den Authentifizierungsprozess zur Validierung des Benutzerkennworts an ein separates vertrauenswürdiges Authentifizierungssystem, z. B. an eine lokale Instanz der Active Directory-Verbunddienste (AD FS) oder einen vertrauenswürdigen Drittanbieter von Verbunddiensten.
 
-Eine Entscheidungsstruktur, die Ihnen bei der Auswahl der besten Lösung für Ihr Unternehmen hilft, finden Sie unter [Auswählen der richtigen Authentifizierungsmethode für Azure Active Directory](/azure/active-directory/hybrid/choose-ad-authn).
+Eine Entscheidungsstruktur, die Ihnen bei der Wahl der besten Lösung für Ihr Unternehmen hilft, finden Sie unter [Auswählen der richtigen Authentifizierungsmethode für Azure Active Directory](/azure/active-directory/hybrid/choose-ad-authn).
 
 Im Folgenden finden Sie eine Tabelle der nativen Tools, die bei der Verfeinerung der Richtlinien und Prozesse beitragen können, die diese Disziplin unterstützen.
 
@@ -66,7 +66,7 @@ Im Folgenden finden Sie eine Tabelle der nativen Tools, die bei der Verfeinerung
 | Wird Windows Hello for Business unterstützt? | [Modell der schlüsselbasierten Vertrauensstellung](/windows/security/identity-protection/hello-for-business/hello-identity-verification) <br><br> [Modell der Zertifikatvertrauensstellung mit Intune](https://microscott.azurewebsites.net/2017/12/16/setting-up-windows-hello-for-business-with-intune) | [Modell der schlüsselbasierten Vertrauensstellung](/windows/security/identity-protection/hello-for-business/hello-identity-verification) <br><br> [Modell der Zertifikatvertrauensstellung mit Intune](https://microscott.azurewebsites.net/2017/12/16/setting-up-windows-hello-for-business-with-intune) | [Modell der schlüsselbasierten Vertrauensstellung](/windows/security/identity-protection/hello-for-business/hello-identity-verification) <br><br> [Modell der Zertifikatvertrauensstellung](/windows/security/identity-protection/hello-for-business/hello-key-trust-adfs) |
 | Welche Optionen gibt es für mehrstufige Authentifizierung? | [Azure Multi-Factor Authentication](/azure/multi-factor-authentication) <br><br> [Benutzerdefinierte Steuerelemente mit bedingtem Zugriff in Azure AD*](/azure/active-directory/conditional-access/controls#custom-controls-preview) | [Azure Multi-Factor Authentication](/azure/multi-factor-authentication) <br><br> [Benutzerdefinierte Steuerelemente mit bedingtem Zugriff in Azure AD*](/azure/active-directory/conditional-access/controls#custom-controls-preview) | [Azure Multi-Factor Authentication](/azure/multi-factor-authentication) <br><br> [Azure Multi-Factor Authentication-Server](/azure/active-directory/authentication/howto-mfaserver-deploy) <br><br> [Multi-Factor Authentication von Drittanbietern](/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs) <br><br> [Benutzerdefinierte Steuerelemente mit Zugriff auf Azure AD](/azure/active-directory/conditional-access/controls#custom-controls-preview) |
 | Welche Benutzerkontenstatus werden unterstützt? | Deaktivierte Konten <br> (Bis zu 30 Minuten Verzögerung) | Deaktivierte Konten <br><br> Konto gesperrt <br><br> Konto abgelaufen <br><br> Kennwort abgelaufen <br><br> Anmeldestunden | Deaktivierte Konten <br><br> Konto gesperrt <br><br> Konto abgelaufen <br><br> Kennwort abgelaufen <br><br> Anmeldestunden |
-| Welche Optionen für bedingten Zugriff auf Azure AD gibt es? | [Bedingter Zugriff auf Azure AD](/azure/active-directory/conditional-access/overview) | [Bedingter Zugriff auf Azure AD](/azure/active-directory/conditional-access/overview) | [Bedingter Zugriff auf Azure AD](/azure/active-directory/conditional-access/overview) <br><br> [AD FS-Anspruchsregeln](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) |
+| Welche Optionen stehen für bedingten Zugriff auf Azure AD zur Verfügung? | [Bedingter Zugriff auf Azure AD](/azure/active-directory/conditional-access/overview) | [Bedingter Zugriff auf Azure AD](/azure/active-directory/conditional-access/overview) | [Bedingter Zugriff auf Azure AD](/azure/active-directory/conditional-access/overview) <br><br> [AD FS-Anspruchsregeln](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) |
 | Wird Blockieren älterer Protokolle unterstützt? | [Ja](/azure/active-directory/conditional-access/concept-baseline-protection) | [Ja](/azure/active-directory/conditional-access/concept-baseline-protection) | [Ja](/windows-server/identity/ad-fs/operations/access-control-policies-w2k12) |
 | Können das Logo, das Bild und die Beschreibung auf den Anmeldeseiten angepasst werden? | [Ja, mit Azure AD Premium](/azure/active-directory/customize-branding) | [Ja, mit Azure AD Premium](/azure/active-directory/customize-branding) | [Ja](/azure/active-directory/connect/active-directory-aadconnect-federation-management#customlogo) |
 | Welche erweiterten Szenarien werden unterstützt? | [Intelligente Kennwortsperrung](/azure/active-directory/authentication/concept-sspr-howitworks) <br><br> [Berichte über kompromittierte Anmeldeinformationen](/azure/active-directory/reports-monitoring/concept-risk-events) | [Intelligente Kennwortsperrung](/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication-smart-lockout) | Authentifizierungssystem mit geringer Wartezeit für mehrere Standorte <br><br> [AD FS-Extranetsperre](/windows-server/identity/ad-fs/operations/configure-ad-fs-extranet-soft-lockout-protection) <br><br> [Integration in Identitätssysteme von Drittanbietern](/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility) |

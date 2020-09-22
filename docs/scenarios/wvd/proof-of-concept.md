@@ -7,12 +7,12 @@ ms.date: 07/01/2010
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6edca977153499d6593398303808b24f4e1e1d6b
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: b17c1703bd50f49e747a690ff9379a687a5543cf
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885302"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89605051"
 ---
 <!-- cSpell:ignore FSLogix onboards remoteapp macos -->
 
@@ -22,12 +22,12 @@ Bevor das Contoso-Team für die Cloudeinführung seine Endbenutzerdesktops berei
 
 Der folgende Ansatz für den Migrationsprozess wird vereinfacht, um eine Proof of Concept-Implementierung zu beschreiben.
 
-1. **Bewerten**: Das Team stellt Hostpools unter Verwendung der Standardgrößen virtueller Computer (VM) bereit. Bewertungsdaten helfen dem Team dabei, die erwartete Anzahl von gleichzeitigen Benutzersitzungen und die Anzahl der VMs zu identifizieren, die zur Unterstützung dieser gleichzeitigen Sitzungen erforderlich sind.
-2. **Bereitstellen**: Das Team [erstellt einen Hostpool](/azure/virtual-desktop/create-host-pools-azure-marketplace) für in Pools zusammengefasste Desktops mithilfe eines Windows 10-Katalogimages aus Azure Marketplace und der Dimensionierung aus dem Bewertungsschritt 1.
-3. **Bereitstellen**: Das Team [erstellt RemoteApp-Anwendungsgruppen](/azure/virtual-desktop/manage-app-groups#create-a-remoteapp-group) für Workloads, die bereits migriert wurden.
-4. **Bereitstellen**: Das Team [erstellt einen FSLogix-Profilcontainer](/azure/virtual-desktop/create-host-pools-user-profile) zur Speicherung von Benutzerprofilen.
-5. **Release**: Das Team testet die Leistung und Latenz von Anwendungsgruppen und bereitgestellten Desktops für eine Stichprobe von Benutzern.
-6. **Release**: Das Team führt das Onboarding seiner Endbenutzer durch, um Ihnen das Herstellen einer Verbindung über den [Windows Desktop-Client](/azure/virtual-desktop/connect-windows-7-and-10), [Webclient](/azure/virtual-desktop/connect-web), [Android-Client](/azure/virtual-desktop/connect-android), [macOS-Client](/azure/virtual-desktop/connect-macos) oder [iOS-Client](/azure/virtual-desktop/connect-ios) zu vermitteln.
+1. **Bewerten:** Das Team stellt Hostpools unter Verwendung der Standardgrößen virtueller Computer (virtual machines, VMs) bereit. Bewertungsdaten helfen dem Team dabei, die erwartete Anzahl von gleichzeitigen Benutzersitzungen und die Anzahl der VMs zu identifizieren, die zur Unterstützung dieser gleichzeitigen Sitzungen erforderlich sind.
+2. **Bereitstellen:** Das Team [erstellt einen Hostpool](/azure/virtual-desktop/create-host-pools-azure-marketplace) für in Pools zusammengefasste Desktops unter Verwendung eines Windows 10-Katalogimages aus dem Azure Marketplace und der Dimensionierung aus dem Bewertungsschritt 1.
+3. **Bereitstellen:** Das Team [erstellt RemoteApp-Anwendungsgruppen](/azure/virtual-desktop/manage-app-groups#create-a-remoteapp-group) für bereits migrierte Workloads.
+4. **Bereitstellen:** Das Team [erstellt einen FSLogix-Profilcontainer](/azure/virtual-desktop/create-host-pools-user-profile) zum Speichern von Benutzerprofilen.
+5. **Freigeben:** Das Team testet die Leistung und Wartezeit von Anwendungsgruppen und bereitgestellten Desktops für eine Stichprobe von Benutzern.
+6. **Freigeben:** Das Team führt das Onboarding seiner Endbenutzer durch, um ihnen das Herstellen einer Verbindung über den [Windows Desktop-Client](/azure/virtual-desktop/connect-windows-7-and-10), [Webclient](/azure/virtual-desktop/connect-web), [Android-Client](/azure/virtual-desktop/connect-android), [macOS-Client](/azure/virtual-desktop/connect-macos) oder [iOS-Client](/azure/virtual-desktop/connect-ios) zu vermitteln.
 
 ## <a name="assumptions"></a>Annahmen
 

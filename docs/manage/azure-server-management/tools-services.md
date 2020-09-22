@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 5c3d79966bf3d3477ff7b9a62f23e9bab9d7f5a8
-ms.sourcegitcommit: af521583b98153f7157895b7ba9de71183d437b0
+ms.openlocfilehash: d9c59cf935d122581465fa5d96ffd05bc4e39dd8
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "89176445"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604027"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Azure-Serververwaltungstools und -dienste
 
@@ -80,7 +80,7 @@ Diese Dienste sind von zentraler Bedeutung für die Unterstützung der laufenden
 
 ## <a name="govern"></a>Steuern
 
-Die Einführung und der Wechsel in die Cloud stellt neue Anforderungen an die Verwaltung. Sie erfordert ein Umdenken beim Wechsel von einer operativen Verwaltungsaufgabe hin zu Überwachung und Governance. Das Framework für die Cloudeinführung für Azure beginnt mit [Governance](../../govern/index.md). Das Framework erläutert die Migration in die Cloud, die entsprechende Vorgehensweise sowie die beteiligten Personen.
+Die Einführung und der Wechsel in die Cloud stellt neue Anforderungen an die Verwaltung. Sie erfordert ein Umdenken beim Wechsel von einer operativen Verwaltungsaufgabe hin zu Überwachung und Governance. Das Cloud Adoption Framework beginnt mit [Governance](../../govern/index.md). Das Framework erläutert die Migration in die Cloud, die entsprechende Vorgehensweise sowie die beteiligten Personen.
 
 Der Governance-Entwurf für Standardorganisationen unterscheidet sich oft von dem für komplexe Unternehmen. Weitere Informationen zu bewährten Governancemethoden für ein Standardunternehmen finden Sie im [Governanceleitfaden für Standardunternehmen](../../govern/guides/standard/index.md). Weitere Informationen zu bewährten Governancemethoden für ein komplexes Unternehmen finden Sie im [Governanceleitfaden für komplexe Unternehmen](../../govern/guides/complex/index.md).
 

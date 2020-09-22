@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 86dd5776e72d4fa0d4e6ea9c3fbf510f8d0db4ad
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: dac79c954a72aeb72002a5583dce64c85a065fb1
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88883789"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604971"
 ---
 # <a name="cost-management-discipline-improvement"></a>Verbesserung der Disziplin „Kostenmanagement“
 
@@ -21,9 +21,9 @@ Mit der Disziplin „Kostenmanagement“ wird versucht, die wichtigsten Geschäf
 
 Dieser Artikel beschreibt die möglichen Aufgaben, die Ihr Unternehmen zum Erstellen und Weiterentwickeln Ihrer Kostenmanagement-Disziplin ausführen kann. Diese Aufgaben können in Planungs-, Erstellungs-, Bereitstellungs- und Betriebsphasen der Implementierung einer Cloudlösung aufgeschlüsselt werden. Die Tasks werden dann schrittweise durchlaufen, um die Entwicklung eines [inkrementellen Ansatzes für Cloudgovernance](../guides/index.md#an-incremental-approach-to-cloud-governance) zu ermöglichen.
 
-![Vier Phasen der Einführung](../../_images/govern/adoption-phases.png)
+![Phasen eines inkrementellen Ansatzes für die Cloudgovernance](../../_images/govern/adoption-phases.png)
 
-*Abbildung 1: Einführungsphasen des inkrementellen Ansatzes für die Cloudgovernance.*
+_Abbildung 1: Phasen eines inkrementellen Ansatzes für die Cloudgovernance_
 
 Es ist unmöglich, die Anforderungen aller Unternehmen in einem einzigen Dokument zu berücksichtigen. Daher werden in diesem Artikel die empfohlenen mindestens auszuführenden Aktivitäten sowie Beispiele für potenzielle Aktivitäten für jede Phase des Weiterentwicklungsprozesses für die Governance beschrieben. Ziel dieser Aktivitäten ist es, Sie beim Aufbau eines [Richtlinien-MVP](../guides/index.md#an-incremental-approach-to-cloud-governance) und bei der Einrichtung eines Frameworks für die inkrementelle Verbesserung der Richtlinie zu unterstützen. Ihr Cloudgovernanceteam muss entscheiden, wie viel in diese Aktivitäten investiert werden soll, um Ihre Funktionen für die Disziplin „Kostenmanagement“ zu verbessern.
 
@@ -107,7 +107,7 @@ Nachdem die Transformation abgeschlossen ist, müssen Governance und Betrieb wä
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nachdem Sie sich nun mit dem Konzept der Cloud-Kostenkontrolle vertraut machen, arbeiten Sie die [Best Practices für die Disziplin „Cost Management“](./best-practices.md) durch, um Möglichkeiten zu finden, Ihre Gesamtausgaben zu reduzieren.
+Nachdem Sie sich nun mit dem Konzept der Cloud-Kostenkontrolle vertraut machen, arbeiten Sie die Best Practices für die Disziplin „Cost Management“ durch, um Möglichkeiten zu finden, Ihre Gesamtausgaben zu reduzieren.
 
 > [!div class="nextstepaction"]
-> [Bewährte Methoden für Cost Management](./best-practices.md)
+> [Bewährte Methoden für die Kosten- und Größenplanung von in Azure gehosteten Ressourcen](./best-practices.md)

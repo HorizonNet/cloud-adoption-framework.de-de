@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 41c81cd14235933e09462470cc2c93f83f79b9fb
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: f872d4cf6389efe6f956c3a8990aea818fc2c32b
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88880644"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89604863"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Sicherheitsbaseline“
 
@@ -33,7 +33,7 @@ Der Unterschied ist zwar subtil, aber beim Erstellen einer governancebezogenen I
 
 ### <a name="changes-in-the-current-state"></a>Änderungen des aktuellen Status
 
-In der vorherigen Phase dieser Geschichte hatte das Unternehmen damit begonnen, zwei Rechenzentren außer Betrieb zu nehmen. Zu diesem laufenden Prozess gehört die Migration einiger Anwendungen mit Legacyauthentifizierungsanforderungen. Dazu waren inkrementelle Verbesserungen der Identitätsbaseline erforderlich, die im [vorherigen Artikel](./identity-baseline-improvement.md) beschrieben sind.
+In der vorherigen Phase dieser Geschichte hatte das Unternehmen damit begonnen, zwei Rechenzentren außer Betrieb zu nehmen. Zu diesem laufenden Prozess gehört die Migration einiger Anwendungen mit Legacyauthentifizierungsanforderungen. Dazu waren inkrementelle Verbesserungen der Disziplin „Identitätsbaseline“ erforderlich, die im [vorherigen Artikel](./identity-baseline-improvement.md) beschrieben wurden.
 
 Seit diesem Zeitpunkt haben sich einige Dinge geändert, die sich auf die Governance auswirken:
 

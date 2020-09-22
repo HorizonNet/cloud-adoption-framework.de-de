@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 2c18dbcc59d8be0f1002000e6286b2617ed81be8
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 0654f10965c9caad10f68128c4f3e0f705606024
+ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884299"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89603200"
 ---
 # <a name="get-started-deliver-operational-excellence-during-digital-transformation"></a>Erste Schritte: Bereitstellen des optimalen Betriebs während der digitalen Transformation
 
@@ -43,7 +43,7 @@ Eine klare Geschäftsstrategie ist die Grundlage für jede digitale Transformati
 
 **Hinweis zur Erreichung der Ziele:**
 
-- [Verstehen der Beweggründe](../strategy/motivations.md): Wichtige Geschäftsereignisse und einige Migrationsgründe sind tendenziell kostensensibel. Diese Bereiche können die Wichtigkeit der Kostenkontrolle für alle späteren Anstrengungen erhöhen. Andere zukunftsgerichtete Beweggründe, die mit Innovation oder Wachstum durch Migration zu tun haben, sind möglicherweise eher auf den Umsatz ausgerichtet. Wenn Sie die Motivationen kennen, können Sie die Kostenverwaltung einfacher priorisieren.
+- [Verstehen der Beweggründe](../strategy/motivations.md): Wichtige Geschäftsereignisse und einige Migrationsgründe sind tendenziell kostensensibel. Diese Bereiche können die Wichtigkeit der Kostenkontrolle für alle späteren Anstrengungen erhöhen. Andere zukunftsgerichtete Beweggründe, die mit Innovation oder Wachstum durch Migration zu tun haben, sind möglicherweise eher auf den Umsatz ausgerichtet. Die Kenntnis der Beweggründe ist bei der Priorisierung Ihrer Kostenverwaltung hilfreich.
 - [Geschäftsergebnisse](../strategy/business-outcomes/index.md): Einige fiskalische Ergebnisse neigen dazu, extrem kostensensibel zu sein. Wenn sich die gewünschten Ergebnisse den fiskalischen Metriken zuordnen lassen, sollten Sie frühzeitig in die Governancedisziplin „Cost Management“ investieren.
 - [Geschäftliche Begründung](../strategy/cloud-migration-business-case.md): Die geschäftliche Begründung dient als allgemeine Übersicht über den Gesamtfinanzplan für die Cloudeinführung. Sie kann eine gute Quelle für die anfängliche Budgetplanung darstellen.
 - [Lernmetriken](../strategy/learning-metrics.md): Um die Ausrichtung zwischen der übergreifenden Geschäftsstrategie und den eher taktischen Change Management-Plänen aufrechtzuerhalten, ist es wichtig, Lernmetriken zu erstellen. Diese Metriken sollten so entworfen werden, dass Sie den iterativen und inkrementellen Fortschritt des Plans anzeigen.
