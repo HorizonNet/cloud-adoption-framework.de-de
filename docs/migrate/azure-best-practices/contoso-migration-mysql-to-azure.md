@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 79bc8027a035d38b9a9048a0aaba15f9cb66d3e0
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 1a331e02dcf51123fbf0c0977cf75e9dfd4bae81
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603736"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775869"
 ---
 <!-- cSpell:ignore mysqldump InnoDB binlog Navicat -->
 
@@ -58,7 +58,7 @@ Verwenden von Azure Database Migration Service, um die Datenbank zu einer Azur
 ### <a name="database-considerations"></a>Überlegungen zu Datenbanken
 
 <!-- TODO: Verify GraphDBMS term -->
-<!-- docsTest:casing ColumnStore "Graph DBMS" -->
+<!-- docutune:casing ColumnStore "Graph DBMS" -->
 
 Im Rahmen des Lösungsentwurfs hat Contoso die in Azure verfügbaren Features für das Hosting der MySQL-Daten geprüft. Die folgenden Überlegungen haben dabei im Unternehmen zu der Entscheidung für Azure geführt:
 

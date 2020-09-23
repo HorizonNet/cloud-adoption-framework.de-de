@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6cd92a5a089507fde1d770308f93d9547452389e
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: c91b6a66d176f19a24779561026fd6bd075b5dea
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602995"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775546"
 ---
 <!-- cSpell:ignore contosodev contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring smarthotelcontainer identitymaplog CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME sqlpackage SSDT azuredevopsmigration validateonly ImportType -->
 
@@ -96,7 +96,7 @@ Contoso geht bei der Migration wie folgt vor:
 - [Einführung in Azure Storage](/azure/storage/common/storage-introduction)
 - [Informationen zu Azure-Speicherkonten](/azure/storage/common/storage-create-storage-account)
 
-<!-- docsTest:casing "Server Configuration Wizard" "Configure Features Wizard" "Detach Team Project Collection Wizard" -->
+<!-- docutune:casing "Server Configuration Wizard" "Configure Features Wizard" "Detach Team Project Collection Wizard" -->
 
 ## <a name="step-2-upgrade-team-foundation-server"></a>Schritt 2: Durchführen eines Upgrades von Team Foundation Server
 
@@ -240,7 +240,7 @@ Dies ist der ausgeführte Migrationsprozess:
 1. **Ausführen eines Probeimports**. Ein Probeimport unterstützt sie beim Testen der Sammlungsmigration. Probeläufe weisen eine begrenzte Lebensdauer auf und werden daher gelöscht, bevor eine Produktionsmigration ausgeführt wird. Sie werden nach einer festgelegten Dauer automatisch gelöscht. Die nach Abschluss des Imports versendete E-Mail über die erfolgreiche Durchführung enthält einen Hinweis, der Contoso darüber informiert, wann der Probelauf gelöscht wird. Das Team berücksichtigt dies und plant entsprechend.
 1. **Abschließen der Produktionsmigration**. Nach Abschluss der Probemigration führen die Contoso-Administratoren die endgültige Migration durch, indem sie die Datei `import.json` aktualisieren und den Import wiederholen.
 
-<!-- docsTest:casing "Team Foundation Server Administration Console" -->
+<!-- docutune:casing "Team Foundation Server Administration Console" -->
 
 ### <a name="detach-the-collection"></a>Trennen der Sammlung
 

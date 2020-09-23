@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a9cc63ee3c47ddb347948aa55b49212ff0775344
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 071e6d8f33ea299dac78136f71f5bbce7badb95d
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602217"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775223"
 ---
 <!-- cSpell:ignore BACPAC FILESTREAM -->
 
@@ -107,7 +107,7 @@ Außerdem fügte Contoso seinem Azure Migrate-Projekt den Datenmigrations-Assist
 
 #### <a name="step-2-application-assessment"></a>Schritt 2: Anwendungsbewertung
 
-<!-- docsTest:casing "mainly .NET-based" "non-.NET-based" -->
+<!-- docutune:casing "mainly .NET-based" "non-.NET-based" -->
 
 Durch die Ergebnisse der Bewertung erfuhr Contoso, dass das Unternehmen hauptsächlich NET-basierte Anwendungen nutzt. Im Laufe der Jahre wurden bei verschiedenen Projekten jedoch auch andere Technologien wie PHP und Node.js verwendet. Durch von einem Anbieter erworbene Systeme wurden auch Nicht-.NET-basierte Anwendungen eingeführt. Es wurde Folgendes ermittelt:
 
@@ -143,7 +143,7 @@ Wenn DMA für eine Datenquelle nicht ausgeführt werden konnte, wurden die folge
 > [!NOTE]
 > Im Rahmen der Bewertungsphase wurden von Contoso verschiedene Open-Source-Datenbanken ermittelt. Für deren Migrationsplanung wurde separat [dieser Anleitung](./contoso-migration-oss-db-to-azure.md) gefolgt.
 
-<!-- docsTest:casing "custom .NET" -->
+<!-- docutune:casing "custom .NET" -->
 
 #### <a name="step-4-migration-planning"></a>Schritt 4: Migrationsplanung
 

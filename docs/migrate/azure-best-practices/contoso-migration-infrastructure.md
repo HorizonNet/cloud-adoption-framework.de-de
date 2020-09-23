@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b044c86618ccafbfe69106a5f3c7e7d53db68fce
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 289324ee06571715b02aeea68c93a405123bac4f
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605227"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775903"
 ---
 <!-- cSpell:ignore untrust CIDR RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
 
@@ -423,7 +423,7 @@ Für das Hub-Spoke-Modell von Contoso muss noch festgelegt werden, wie Datenverk
 
 Nach der Einrichtung der Netzwerk- und Routingtopologie ist Contoso jetzt bereit für die Einrichtung von Azure-Netzwerken und -Subnetzen:
 
-<!-- docsTest:casing "class-A" "class-B" -->
+<!-- docutune:casing "class-A" "class-B" -->
 
 - Contoso implementiert ein privates Netzwerk der Klasse A in Azure (`10.0.0.0/8`). Dies funktioniert aufgrund des lokalen Rechenzentrums, denn es verfügt zurzeit über einen privaten Adressraum der Klasse B (`172.160.0.0/16`). Das Unternehmen kann sicher sein, dass es keine Überschneidung zwischen Adressbereichen gibt.
 - Contoso stellt virtuelle Netzwerke sowohl in der primären als auch in der sekundären Region bereit.

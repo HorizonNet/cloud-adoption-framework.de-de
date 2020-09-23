@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1062228afd3eb4bc4892d9a2fb2e100f2af2a9af
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 1771e61b884cd53480fdb2d47c2805b502735d86
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885693"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776073"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -292,7 +292,7 @@ Die Verantwortung für den Schutz virtueller Netzwerke liegt zu gleichen Teilen 
 - Lesen Sie eine [Übersicht über bewährte Methoden für die Netzwerksicherheit](/azure/security/fundamentals/network-best-practices).
 - Erfahren Sie mehr über das [Entwerfen sicherer Netzwerke](/azure/virtual-network/virtual-network-vnet-plan-design-arm#security).
 
-<!-- docsTest:casing "IDS/IPS" -->
+<!-- docutune:casing "IDS/IPS" -->
 
 ## <a name="best-practice-implement-an-azure-perimeter-network"></a>Bewährte Methode: Implementieren eines Azure-Umkreisnetzwerks
 

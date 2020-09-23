@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 32c479c8e512512f7e2b1817838ab65d9be95b53
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 2b8866d90e93ace8ada24da7162f2c665a02abaa
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885574"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776447"
 ---
 # <a name="identity-and-access-management"></a>Identitäts- und Zugriffsverwaltung
 
@@ -45,7 +45,7 @@ _Abbildung 1: Identitäts- und Zugriffsverwaltung._
   - Gemeinsam genutzte Ressourcen oder jeder Aspekt der Umgebung, der eine Sicherheitsgrenze implementiert oder erzwingt, wie z. B. das Netzwerk, müssen zentral verwaltet werden. Diese Anforderung ist Teil vieler regulatorischer Bestimmungen. Sie ist die Standardmethode für jede Organisation, die Zugriff auf vertrauliche oder kritische Geschäftsressourcen gewährt oder verweigert.
   - Das Verwalten von Anwendungsressourcen, die keine Sicherheitsgrenzen oder andere Aspekte verletzen, die zur Aufrechterhaltung von Sicherheit und Compliance erforderlich sind, kann an Anwendungsteams delegiert werden. Durch die Möglichkeit für Benutzer, Ressourcen innerhalb einer sicher verwalteten Umgebung bereitzustellen, können Unternehmen die Agilitätsvorteile der Cloud ausnutzen und gleichzeitig die Verletzung kritischer Sicherheits- oder Governancegrenzen verhindern.
 
-<!-- docsTest:ignore Azure-AD-only Azure-AD-managed -->
+<!-- docutune:ignore Azure-AD-only Azure-AD-managed -->
 
 **Entwurfsempfehlungen:**
 

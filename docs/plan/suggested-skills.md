@@ -7,12 +7,12 @@ ms.date: 03/23/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: f9503d5d54605f2f02491747e414c19dbaa07519
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: b4464f127dc2df83b951940f35807fe8a1441f32
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572968"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776107"
 ---
 # <a name="get-started-on-a-skills-readiness-path"></a>Erste Schritte mit dem Pfad für die Qualifikationsbereitschaft
 
@@ -43,7 +43,7 @@ Jeder der zuvor genannten Lernpfade teilt die Lernmöglichkeiten über mehrere M
 Microsoft Learn ist ein neuer Lernansatz. Die Bereitschaft zu den neuen Qualifikationen und Aufgaben, die mit der Cloudeinführung verbunden sind, entsteht nicht problemlos. Microsoft Learn bietet einen lohnenderen Ansatz für praktisches Lernen, der Ihnen hilft, Ihre Ziele schneller zu erreichen. Punkte sammeln, zu höheren Stufen aufsteigen und mehr erreichen.
 Nachfolgend finden Sie einige Beispiele für angepasste Lernpfade auf Microsoft Learn, die sich an der Planungsmethodik des Cloud Adoption Framework ausrichten:
 
-<!-- docsTest:ignore "on premises" -->
+<!-- docutune:ignore "on premises" -->
 
 [Weiterentwickeln Ihrer DevOps-Methoden](/learn/paths/evolve-your-devops-practices): DevOps vereint Personen, Prozesse und Produkte, um wertvolle Continuous Delivery für Ihre Endbenutzer zu ermöglichen. Azure DevOps umfasst eine Reihe von Diensten, die Ihnen die erforderlichen Tools für diese Aufgaben zur Verfügung stellen. Mit Azure DevOps können Sie jede beliebige Anwendung in der Cloud oder lokal erstellen, testen und bereitstellen.
 

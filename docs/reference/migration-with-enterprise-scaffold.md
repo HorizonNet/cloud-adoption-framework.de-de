@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: f70624744e881778d9a51977a5b33931374623b9
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: ff6f659e66d843b2c0abed5c04e07f8db6e32cdd
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885642"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776345"
 ---
-<!-- docsTest:disable -->
+<!-- docutune:disable -->
 <!-- cSpell:ignore subscope ITSM Hashi -->
 
 # <a name="azure-enterprise-scaffold-prescriptive-subscription-governance"></a>Azure-Unternehmensgerüst: Präskriptive Abonnementgovernance
@@ -47,7 +47,7 @@ Das Unternehmensgerüst kann als Basis für jedes neue Abonnement in Azure fungi
 
 > [!NOTE]
 > Microsoft hat eine neue Funktion namens [Azure Blueprints](/azure/governance/blueprints/overview) in der Vorschau bereitgestellt, mit der Sie häufig genutzte Images, Vorlagen, Richtlinien und Skripts über viele Abonnements und Verwaltungsgruppen hinweg packen, verwalten und bereitstellen können. Diese Funktion dient als Brücke zwischen dem Zweck des Gerüsts als Referenzmodell und der Bereitstellung des Modells in Ihrer Organisation.
->
+
 Die folgende Abbildung zeigt die Komponenten des Gerüsts. Das Fundament ist ein gut durchdachter Plan für die Verwaltung von Hierarchien und Abonnements. Die Säulen bestehen aus Resource Manager-Richtlinien und soliden Benennungsstandards. Das restliche Gerüst besteht aus zentralen Azure-Funktionen und -Features, die eine sichere und verwaltbare Umgebung ermöglichen und für die notwendige Vernetzung sorgen.
 
 ![Unternehmensgerüst](../_images/reference/scaffold-v2.png)
@@ -344,7 +344,7 @@ Die letzte Komponente des Azure-Gerüsts ist von entscheidender Bedeutung, wenn 
 > - Ermöglichen Sie eine effektive Mikrosegmentierung innerhalb eines größeren Subnetzes, wodurch die Ausdehnung verringert und die Flexibilität erhöht wird.
 
 <!-- TODO: Refactor VDC content below. -->
-<!-- docsTest:ignore "Azure Virtual Datacenter" -->
+<!-- docutune:ignore "Azure Virtual Datacenter" -->
 
 ### <a name="azure-virtual-datacenter"></a>Virtuelles Azure-Rechenzentrum
 

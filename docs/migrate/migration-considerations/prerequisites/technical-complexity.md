@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: dace1543a65eefe68d6f4c01923784bdc40dc250
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 4f3f8971cded5008c75a3a619c330a6e35840623
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885931"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776226"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Bereiten Sie sich auf technische Komplexität vor: Flexibles Change Management
 
@@ -20,7 +20,7 @@ Wenn mit nur einer Codezeile die Bereitstellung eines kompletten Rechenzentrums 
 
 Beim Umstieg auf ein Agile-Modell mit Schwerpunkt auf Flexibilität und Iterationen werden die technische Komplexität und das Change Management anders behandelt als beim herkömmlichen Wasserfallmodell mit einer linearen Folge von Migrationsschritten. In diesem Artikel wird ein allgemeiner Ansatz für das Change Management in einem Agile-basierten Migrationsablauf beschrieben. Am Ende dieses Artikels verfügen Sie über allgemeine Kenntnisse über die Ebenen des Change Managements und die Dokumentation bei einem inkrementellen Migrationsansatz. Um basierend auf diesen Kenntnissen Agile-Methoden umzusetzen, sind weitere Schulungen und Entscheidungen erforderlich. Mit diesem Artikel sollen Cloudarchitekten auf Gespräche mit dem Projektmanagement vorbereitet werden, um diesen das allgemeine Konzept des Change Managements bei dieser Vorgehensweise zu erläutern.
 
-<!-- docsTest:ignore INVEST -->
+<!-- docutune:ignore INVEST -->
 
 ## <a name="address-technical-complexity"></a>Erläutern der technischen Komplexität
 

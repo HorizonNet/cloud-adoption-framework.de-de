@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 4aedbeddc5b8376871f73862ef4121302e2696a1
-ms.sourcegitcommit: 34346be9ec66c64d6d7ae24651adbbec1fdbf985
+ms.openlocfilehash: b7bd069dbb75b1cdaabd2aacdace68010610c12a
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90534186"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776583"
 ---
 # <a name="enterprise-scale-security-governance-and-compliance"></a>Sicherheitsgovernance und Compliance auf Unternehmensebene
 
@@ -183,7 +183,7 @@ Sie müssen einen stabile Sicherheitsstatus aufrechterhalten, wenn Sie Azure ein
 
 - Setzen Sie ggf. einen Zero-Trust-Ansatz für den Zugriff auf die Azure-Plattform um.
 
-<!-- docsTest:ignore "and conditional access" -->
+<!-- docutune:ignore "and conditional access" -->
 
 ## <a name="azure-security-benchmarks"></a>Vergleichstests für die Azure-Sicherheit
 

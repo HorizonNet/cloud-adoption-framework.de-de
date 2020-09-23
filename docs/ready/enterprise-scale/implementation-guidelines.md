@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 87edd4c65ff3dd79dd6e0fc778b9c6b9419b5ba9
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 25467593af277cf5955fc9656e23f9d01fa8926b
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572747"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776430"
 ---
 <!-- cSpell:ignore interdomain VMSS VWAN -->
 
@@ -22,7 +22,7 @@ Dieser Artikel enthält eine Beschreibung des Einstiegs in die plattformnative R
 
 Zum Implementieren der Architektur auf Unternehmensebene müssen Sie die Aktivitäten in die folgenden Kategorien unterteilen:
 
-<!-- docsTest:disable -->
+<!-- docutune:disable -->
 
 1. **Zu erfüllende Anforderungen für die Architektur auf Unternehmensebene:** Hierzu gehören Aktivitäten, die von den Azure- und Azure Active Directory-Administratoren durchgeführt werden müssen, um eine anfängliche Konfiguration einzurichten. Diese Aktivitäten sind von Natur aus sequenziell, und es handelt sich hauptsächlich um einmalige Aktivitäten.
 
@@ -30,7 +30,7 @@ Zum Implementieren der Architektur auf Unternehmensebene müssen Sie die Aktivit
 
 3. **Bereitstellen einer neuen Zielzone („Datei“ > „Neu“ > „Zielzone“):** Hierbei handelt es sich um wiederkehrende Aktivitäten, die erforderlich sind, um eine neue Zielzone zu instanziieren.
 
-<!-- docsTest:enable -->
+<!-- docutune:enable -->
 
 Für eine Operationalisierung im großen Stil müssen bei diesen Aktivitäten die IaC-Prinzipien (Infrastructure-as-Code) befolgt und mithilfe von Bereitstellungspipelines automatisiert werden.
 
@@ -185,11 +185,11 @@ In der folgenden Liste werden Richtlinien aufgeführt, die Sie verwenden können
 |--------------------------|----------------------------------------------------------------------------------------|
 | [`Deploy-VHub`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-vHUB.parameters.json) | Diese Richtlinie stellt einen virtuellen Hub, Azure Firewall und Gateways (VPN/ExpressRoute) bereit. Außerdem konfiguriert sie die Standardroute für mit Azure Firewall verbundene virtuelle Netzwerke. |
 
-<!-- docsTest:disable -->
+<!-- docutune:disable -->
 
 ## <a name="file--new--landing-zone-for-applications-and-workloads"></a>Datei > Neu > Zielzone für Anwendungen und Workloads
 
-<!-- docsTest:enable -->
+<!-- docutune:enable -->
 
 1. Erstellen Sie ein Abonnement, und verschieben Sie es unter den Verwaltungsgruppenbereich `Landing Zones`.
 

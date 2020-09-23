@@ -7,12 +7,12 @@ ms.date: 08/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 4330efe1602869e9feef8ccc7120276b17eb5373
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: a8f3afe5e08e415fc4fb08e1036dd559a66747ba
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602911"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775580"
 ---
 <!-- docutune:casing "internal Microsoft teams" OneMigrate -->
 <!-- cSpell:ignore MSPs Teradata Netezza Exadata mlops -->
@@ -217,4 +217,4 @@ Als Reaktion auf das erhaltene Feedback zur Kontinuität des Migrationsansatzes 
 | [Übersicht über die Bewertung](../migrate/migration-considerations/assess/index.md) | Es wurde eine Aktualisierung durchgeführt, um besser darzustellen, dass es bei der Bewertung in dieser Phase um die Bewertung der technischen Eignung einer bestimmten Workload und die zugehörigen Ressourcen geht. |
 | [Checkliste für die Planung](../migrate/migration-considerations/prerequisites/planning-checklist.md) | Aktualisierung zur Verdeutlichung der Wichtigkeit einer Vorgangsausrichtung während der Planung von Migrationsmaßnahmen, um nach der Migration eine gut verwaltete Workload zu erhalten. |
 
-<!-- docsTest:ignoreNextStep -->
+<!-- docutune:ignoreNextStep -->

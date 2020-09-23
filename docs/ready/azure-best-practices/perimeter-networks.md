@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 986d4d98bf663c171279f6b5bb83db1b91daf7be
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: e57bcae8f5b7b779544d6000e1fe299bf70eb4d7
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877261"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776532"
 ---
 # <a name="perimeter-networks"></a>Umkreisnetzwerke
 
@@ -91,7 +91,7 @@ Azure Front Door stellt für Ihre Anwendung einheitliche Automatisierung der Reg
 
 [Azure Application Gateway][appgw] ist ein dediziertes virtuelles Gerät, mit dem ein verwalteter Controller zur Anwendungsbereitstellung (Application Delivery Controller, ADC) bereitgestellt wird. Es bietet verschiedene Lastenausgleichsfunktionen der Ebene 7 für Ihre Anwendung.
 
-<!-- docsTest:casing "the application gateway" "single application gateway" -->
+<!-- docutune:casing "the application gateway" "single application gateway" -->
 
 Mit Azure Application Gateway können Sie die Produktivität von Webfarmen optimieren, indem Sie die CPU-intensive SSL-Beendigung an das Anwendungsgateway auslagern. Darüber hinaus werden weitere Routingfunktionen der Ebene 7 bereitgestellt. Hierzu gehören beispielsweise die Roundrobin-Verteilung des eingehenden Datenverkehrs, cookiebasierte Sitzungsaffinität, Routing auf URL-Pfadbasis und die Möglichkeit zum Hosten mehrerer Websites hinter einem einzelnen Anwendungsgateway.
 

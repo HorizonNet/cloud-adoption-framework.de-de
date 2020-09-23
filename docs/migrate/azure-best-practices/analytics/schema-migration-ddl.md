@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d48135d3ba0a47df9adc6099585a66fca887b738
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 8652d3b67e42da037dc620f74af707f05a9fdcce
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882310"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775920"
 ---
 <!-- cSpell:ignore DDLs Attunity "Attunity Replicate" "Attunity Visibility" Inmon Denodo Teradata Netezza Wherescape DMVs multinode equi Datometry -->
 
@@ -123,7 +123,7 @@ Es folgt eine alphabetische Liste der unterstützten Datentypen:
 
 <!-- TODO: Review format of this list. Are the arguments necessary for this list? -->
 
-<!-- docsTest:disable -->
+<!-- docutune:disable -->
 
 - `bigint`
 - `binary [ (n) ]`
@@ -150,7 +150,7 @@ Es folgt eine alphabetische Liste der unterstützten Datentypen:
 - `varbinary [ (n | MAX) ]`
 - `varchar [ (n | MAX) ]`
 
-<!-- docsTest:enable -->
+<!-- docutune:enable -->
 
 In der folgenden Tabelle werden gebräuchliche Datentypen, die derzeit nicht unterstützt werden, zusammen mit der empfohlenen Vorgehensweise für die Speicherung dieser Daten in Azure Synapse Analytics aufgeführt. Ausführliche Informationen für bestimmte Umgebungen wie Teradata oder Netezza finden Sie in den entsprechenden Dokumenten.
 

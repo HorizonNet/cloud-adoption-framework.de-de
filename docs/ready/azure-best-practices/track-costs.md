@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 5bfabc441eb3669ed2f2681c66f48db77c1c0077
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: f8f7cc11e89be655f736bbc50865c8e46caab48b
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884503"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776515"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Nachverfolgen von Kosten für Geschäftseinheiten, Umgebungen oder Projekte
 
@@ -71,7 +71,7 @@ Die generell empfohlene bewährte Methode besteht darin, ein Modell mit geringst
 
 ### <a name="roles"></a>Rollen
 
-<!-- docsTest:casing Owner Contributor Reader "Cost Management Contributor" "Cost Management Reader" -->
+<!-- docutune:casing Owner Contributor Reader "Cost Management Contributor" "Cost Management Reader" -->
 
 Azure Cost Management und Abrechnung unterstützt für jeden der Bereiche die folgenden integrierten Rollen:
 
@@ -126,7 +126,7 @@ Wenn Sie mit der Verwendung von Azure Cost Management und Abrechnung beginnen m�
 - [Optimieren von Kosten anhand von Empfehlungen](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations)
 - [Verwenden von Kostenwarnungen zum Überwachen von Verbrauch und Ausgaben](/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending)
 
-<!-- docsTest: "AWS Cost and Usage" -->
+<!-- docutune: "AWS Cost and Usage" -->
 
 ### <a name="use-azure-cost-management-and-billing-to-govern-aws-costs"></a>Verwenden von Azure Cost Management und Abrechnung zum Steuern von AWS-Kosten
 

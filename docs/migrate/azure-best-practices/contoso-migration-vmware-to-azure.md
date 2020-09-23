@@ -7,14 +7,14 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7921c16e54e3684e5f2ba43555b54b68cd12c37f
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 4fb22a8ac71dd7decb6111a3ad196d1e97957abe
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605146"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775342"
 ---
-<!-- docsTest:casing "HCX Bulk Migration" "HCX Cold Migration" -->
+<!-- docutune:casing "HCX Bulk Migration" "HCX Cold Migration" -->
 
 # <a name="move-on-premises-vmware-infrastructure-to-azure"></a>Verschieben einer lokalen VMware-Infrastruktur in Azure
 
@@ -193,7 +193,7 @@ Um VMware-VMs mithilfe von HCX zu Azure zu migrieren, muss das Contoso-Team die 
 
 Weitere Informationen finden Sie unter [Installieren von HCX für eine Azure-VMware-Lösung](/azure/azure-vmware/hybrid-cloud-extension-installation).
 
-<!-- docsTest:casing L2 -->
+<!-- docutune:casing L2 -->
 
 #### <a name="install-and-configure-vmware-hcx-for-the-public-cloud"></a>Installieren und Konfigurieren von VMware HCX für die öffentliche Cloud
 
