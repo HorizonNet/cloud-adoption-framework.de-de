@@ -908,7 +908,7 @@ items:
                           - name: Maschinelles Sehen in Visual Studio
                             href: /azure/cognitive-services/computer-vision/home?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
                           - name: Übersetzen von Text in Echtzeit
-                            href: /azure/cognitive-services/translator/quickstart-translate?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
+                            href: /azure/cognitive-services/translator/quickstart-translator?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
                           - name: Grundlegendes zur Stimmung bei Verwendung von LUIS
                             href: /azure/cognitive-services/luis/tutorial-publish-settings?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
                           - name: Erkennen von Spracheingaben per Mikrofon
