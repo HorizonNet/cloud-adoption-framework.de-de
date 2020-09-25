@@ -7,12 +7,12 @@ ms.date: 04/14/2020
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.topic: article
-ms.openlocfilehash: 01e95d7d2b8126903b4fe0bd8bbdbaa34f6fd5c6
-ms.sourcegitcommit: 78fa714f964225cd5fc7a762e83fafe9b3f9dea1
+ms.openlocfilehash: 5fadef56e97fa51450e6f6b80aca0ab84038b020
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89427806"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776022"
 ---
 # <a name="tools-and-templates"></a>Tools und Vorlagen
 
@@ -37,9 +37,9 @@ Das Cloud Adoption Framework umfasst Tools, mit denen Sie technische Änderungen
 
 | Resource | BESCHREIBUNG |
 |----------|-------------|
-| [Bereitschaftsprüfliste](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/ready/readiness-checklist.docx) | Verwenden Sie diese Prüfliste, um Ihre Umgebung auf die Einführung vorzubereiten, einschließlich der Vorbereitung Ihrer ersten Migrationszielzone, der Personalisierung der Blaupause und ihrer Erweiterung. |
+| [Bereitschaftscheckliste](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/ready/readiness-checklist.docx) | Verwenden Sie diese Prüfliste, um Ihre Umgebung auf die Einführung vorzubereiten, einschließlich der Vorbereitung Ihrer ersten Migrationszielzone, der Personalisierung der Blaupause und ihrer Erweiterung. |
 | [Vorlage für die Nachverfolgung der Konventionen zur Benennung und Markierung](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/naming-and-tagging-conventions-tracking-template.xlsx) | Dokumentieren Sie Entscheidungen über Benennungs- und Markierungsstandards, um Einheitlichkeit zu gewährleisten und die Zeit für das Onboarding zu verkürzen. |
-| [&nbsp;CAF-Basisblaupause&nbsp;](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone-governance) | Verwenden Sie eine einfache Implementierung einer anfänglichen Governancegrundlage, um praktische Erfahrungen mit Governancetools in Azure bereitzustellen. |
+| [CAF-Basisblaupause](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone-governance) | Verwenden Sie eine einfache Implementierung einer anfänglichen Governancegrundlage, um praktische Erfahrungen mit Governancetools in Azure bereitzustellen. |
 | [Blaupause für die CAF-Migrationszielzone](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone) | Bereitstellung und Vorbereitung auf das Hosten von Workloads, die aus einer lokalen Umgebung zu Azure migriert werden. Weitere Informationen zu dieser Blaupause finden Sie unter [Entwickeln einer Migrationszielzone](../ready/landing-zone/migrate-landing-zone.md). |
 | [Terraform-Module](../ready/landing-zone/terraform-landing-zone.md) | Open-Source-Codebasis für die Terraform-Version der CAF-Zielzonen. |
 | [Terraform-Registrierung](https://registry.terraform.io/search?q=aztfmod) | Die gefilterte Website der Terraform-Registrierung, um alle Module des Cloud Adoption Framework aufzulisten, die zum Erstellen einer Zielzone über Terraform erforderlich sind. |
@@ -49,15 +49,20 @@ Das Cloud Adoption Framework umfasst Tools, mit denen Sie technische Änderungen
 | Resource | BESCHREIBUNG |
 |----------|-------------|
 | [Bewertung des Vergleichstests für Governance](https://cafbaseline.com) | Identifizieren Sie die Lücken zwischen Ihrem derzeitigen Zustand und den geschäftlichen Prioritäten, und holen Sie sich die richtigen Ressourcen, um diese Lücken zu schließen. |
-| [&nbsp;CAF-Basisblaupause&nbsp;](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone-governance) | Dies ist eine einfache Implementierung einer anfänglichen Governancegrundlage, um praktische Erfahrungen mit Governancetools in Azure bereitzustellen. |
-| [Vorlage für Governancedisziplin](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/governance-discipline-template.docx) | Definieren Sie den grundlegenden Satz von Governanceprozessen, die zur Durchsetzung der einzelnen Governancedisziplinen verwendet werden. |
+| [CAF-Basisblaupause](https://github.com/Microsoft/CloudAdoptionFramework/tree/master/ready/migration-landing-zone-governance) | Dies ist eine einfache Implementierung einer anfänglichen Governancegrundlage, um praktische Erfahrungen mit Governancetools in Azure bereitzustellen. |
+| [Vorlage zur Governancedisziplin](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/governance-discipline-template.docx) | Definieren Sie den grundlegenden Satz von Governanceprozessen, die zur Durchsetzung der einzelnen Governancedisziplinen verwendet werden. |
 | [Vorlage zur Disziplin „Kostenverwaltung“](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/cost-management-discipline-template.docx) | Definieren Sie die Richtlinienanweisungen und Entwurfsleitfäden, die es Ihnen ermöglichen, dass die Cloudgovernance innerhalb Ihres Unternehmens mit Schwerpunkt auf das Cost Management voranschreitet. |
 | [Vorlage zur Disziplin „Beschleunigung der Bereitstellung“](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/deployment-acceleration-discipline-template.docx) | Definieren Sie die Richtlinienanweisungen und Entwurfsleitfäden, die es Ihnen ermöglichen, dass die Cloudgovernance innerhalb Ihres Unternehmens mit Schwerpunkt auf die Bereitstellungsbeschleunigung voranschreitet. |
 | [Vorlage für die Disziplin „Identitätsbaseline“](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/identity-baseline-discipline-template.docx) | Definieren Sie die Richtlinienanweisungen und Entwurfsleitfäden, die es Ihnen ermöglichen, dass die Cloudgovernance innerhalb Ihres Unternehmens mit Schwerpunkt auf die Identitätsanforderungen voranschreitet. |
 | [Vorlage für die Disziplin „Ressourcenkonsistenz“](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/resource-consistency-discipline-template.docx) | Definieren Sie die Richtlinienanweisungen und Entwurfsleitfäden, die es Ihnen ermöglichen, dass die Cloudgovernance innerhalb Ihres Unternehmens mit Schwerpunkt auf die Ressourcenkonsistenz voranschreitet. |
 | [Vorlage für die Disziplin „Sicherheitsbaseline“](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/govern/security-baseline-discipline-template.docx) | Definieren Sie die Richtlinienanweisungen und Entwurfsleitfäden, die es Ihnen ermöglichen, dass die Cloudgovernance innerhalb Ihres Unternehmens mit Schwerpunkt auf die Sicherheitsbaseline voranschreitet. |
-| [Azure-Governancevisualisierung (AzGovViz)](https://github.com/JulianHayward/Azure-MG-Sub-Governance-Reporting) | AzGovViz ist ein PowerShell-Skript, das die Hierarchie der Azure-Mandantenverwaltungsgruppe bis hinunter zur Abonnementebene durchläuft. Es erfasst die wichtigsten Azure Governance-Funktionen wie Azure Policy, RBAC und Blueprints. Auf der Grundlage der gesammelten Daten gibt AzGovViz Einblicke in Ihre Hierarchiezuordnung, erstellt eine Mandantenzusammenfassung und liefert differenzierte Erkenntnisse zum Umfang von Verwaltungsgruppen und Abonnements. |
+| [Azure Governance-Schnellansicht](https://github.com/JulianHayward/Azure-MG-Sub-Governance-Reporting) | Die Azure Governance-Schnellansicht ist ein PowerShell-Skript, das die Hierarchie der Azure-Mandantenverwaltungsgruppe bis hinunter zur Abonnementebene durchläuft. Sie erfasst Daten aus den relevantesten Azure Governance-Funktionen, z. B. Azure Policy, rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC) und Azure Blueprints. Auf Basis der gesammelten Daten zeigt die Schnellansicht Ihre Hierarchiezuordnung, erstellt eine Mandantenübersicht und bietet differenzierte Erkenntnisse zum Umfang von Verwaltungsgruppen und Abonnements. |
 
+## <a name="migrate"></a>Migrieren
+
+| Resource | BESCHREIBUNG |
+|----------|-------------|
+| [Prüfliste für die Rechenzentrumsmigration](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/migrate/datacenter-migration-discovery-checklist.docx) | In dieser Prüfliste finden Sie Informationen, die Ihnen helfen, Workloads, Server und andere Ressourcen in Ihrem Rechenzentrum zu identifizieren. Verwenden Sie diese Informationen, um Ihre Migration zu planen.
 
 ## <a name="manage"></a>Verwalten
 
