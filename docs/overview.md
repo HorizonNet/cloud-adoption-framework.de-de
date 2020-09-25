@@ -1,6 +1,6 @@
 ---
 title: Dokumentation zum Microsoft Cloud Adoption Framework für Azure
-description: Erhalten Sie Tools, Anleitungen und Berichte, die Ihnen helfen, Strategien zu entwickeln und die gewünschten Geschäftsergebnisse in allen Phasen des Lebenszyklus der Cloudeinführung voranzutreiben.
+description: Erhalten Sie Tools, Anleitungen und Berichte, die Ihnen helfen, Strategien zu entwickeln und die gewünschten Geschäftsergebnisse während Ihrer Cloudeinführung voranzutreiben.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2020
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: homepage
-ms.openlocfilehash: 1e2c1cb95e80ba5aa4926807ef505d748013e060
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: d0f6c6348a7204d7991fb2be1a739addf4afe137
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604207"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776124"
 ---
 # <a name="what-is-the-microsoft-cloud-adoption-framework-for-azure"></a>Was ist das Microsoft Cloud Adoption Framework für Azure?
 
@@ -27,7 +27,7 @@ Mithilfe der bewährten Methoden des Microsoft Cloud Adoption Framework für Azu
 
 <!-- markdownlint-enable MD034 -->
 
-Im Cloud Adoption Framework werden bewährte Methoden für die Cloudeinführung von Microsoft-Mitarbeitern, -Partnern und -Kunden zusammengeführt. Das Framework stellt eine Reihe von Tools, Anleitungen und Inhalten bereit, die Sie bei der Entwicklung von Technologie-, Geschäfts- und Personalstrategien unterstützen, damit Sie mit Ihren Maßnahmen für die Cloudeinführung die gewünschten Geschäftsergebnisse erzielen können. Diese Anleitungen sind auf die folgenden Phasen des Lebenszyklus einer Cloudeinführung ausgerichtet, sodass Sie jederzeit problemlos auf die passenden Informationen zugreifen können.
+Im Cloud Adoption Framework werden bewährte Methoden für die Cloudeinführung von Microsoft-Mitarbeitern, -Partnern und -Kunden zusammengeführt. Das Framework stellt eine Reihe von Tools, Anleitungen und Inhalten bereit, die Sie bei der Entwicklung von Technologie-, Geschäfts- und Personalstrategien unterstützen, damit Sie mit Ihren Maßnahmen für die Cloudeinführung die gewünschten Geschäftsergebnisse erzielen können. Sehen Sie sich die folgenden Anleitungen für die einzelnen Methodiken an. Sie erhalten zum richtigen Zeitpunkt mühelos Zugriff auf den richtigen Leitfaden.
 
 | <span title="Symbol">&nbsp;</span> | <span title="Beschreibung">&nbsp;</span> | <span title="Symbol">&nbsp;</span> | <span title="Beschreibung">&nbsp;</span> |
 |--|--|--|--|
@@ -62,7 +62,7 @@ Jeder Abschnitt des Frameworks für die Cloudeinführung stellt eine andere Spez
 
 Wenn Ihr Unternehmen noch nicht mit Azure vertraut ist, lesen Sie [Erste Schritte: Verstehen und Dokumentieren grundlegender Ausrichtungsentscheidungen](./get-started/cloud-concepts.md). Wenn die digitale Transformation Ihres Unternehmens die Cloud umfasst und Sie diese grundlegenden Konzepte verstehen, können Sie die einzelnen Schritte des Prozesses einfacher ausführen.
 
-<!-- docsTest:ignoreNextStep -->
+<!-- docutune:ignoreNextStep -->
 
 > [!div class="nextstepaction"]
 > [Erste Schritte](./get-started/index.md)

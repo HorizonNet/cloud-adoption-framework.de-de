@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 337e02f787c8ebcc18f206b4dfa87a894059262a
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 0d04ff202450bdc47eb80006ba58395a78dd329f
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884197"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775614"
 ---
 # <a name="get-started-build-a-cloud-adoption-team"></a>Erste Schritte: Aufbauen eines Cloudeinführungsteams
 
@@ -21,6 +21,8 @@ Cloudeinführungsteams sind das moderne Äquivalent zu technischen Implementieru
 Einige Cloudeinführungsteams konzentrieren sich ausschließlich auf die Cloudmigration, andere Teams beschäftigen sich schwerpunktmäßig mit Innovationen, die Cloudtechnologien nutzen. Einige Teams verfügen über das umfassende technische Fachwissen, das erforderlich ist, um große Implementierungsbemühungen wie eine vollständige Rechenzentrumsmigration abzuschließen, andere Teams haben einen engeren technischen Schwerpunkt.
 
 Ein kleineres Team kann zwischen Projekten wechseln, um bestimmte Ziele zu erreichen. Beispielsweise könnte sich ein Team von Datenplattformspezialisten darauf konzentrieren, bei der Konvertierung von virtuellen Computern (VMs) von SQL-Datenbank in SQL-PaaS-Instanzen zu helfen.
+
+Beim Erweitern der Cloud profitieren Kunden von einem dedizierten Team für die [Cloudplattformfunktion](../../organize/cloud-platform.md). Dieses Team beschleunigt die erfolgreiche Einführung mit automatisierter Bereitstellung und Wiederverwendung von Code. Auf eine Cloudplattformfunktion konzentrierte Personen können Infrastruktur, Anwendungsmuster, Governance und andere unterstützende Ressourcen implementieren, um Effizienz und Konsistenz zu steigern und Cloudprinzipien in Ihrer Organisation zu etablieren. Kleine Organisationen und Einführungsteams können sich kein dediziertes Cloudplattformteam leisten. Sie sollten in Ihrem Einführungsteam eine Automatisierungsfunktion einrichten, um mit dem Aufbau dieses wichtigen „Cloudmuskels“ zu beginnen.
 
 ![Erste Schritte beim Aufbau eines Cloudeinführungsteams](../../_images/get-started/adoption-team-map.png)
 

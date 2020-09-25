@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f0031c5e239dc7d11760eee3a36597fa86c0db66
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 1b2cbbcbb56a66daa67be455d8b7df2f7222c831
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88883687"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775512"
 ---
 # <a name="cost-management-sample-policy-statements"></a>Beispiele für Cost Management-Richtlinienanweisungen
 
@@ -39,7 +39,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine kostenb
 
 **Richtlinienanweisung:** Jede Cloudbereitstellung muss einer Abrechnungseinheit mit genehmigtem Budget und einem Mechanismus für Budgetlimits zugeordnet werden.
 
-**Entwurfsoptionen:** In Azure kann das Budget mit [Azure Cost Management und Abrechnung](/azure/cost-management/manage-budgets) gesteuert werden.
+**Entwurfsoptionen:** In Azure kann das Budget mit [Azure Cost Management + Billing](/azure/cost-management/manage-budgets) gesteuert werden.
 
 ## <a name="underutilization"></a>Unterauslastung
 
@@ -49,7 +49,7 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine kostenb
 
 **Entwurfsoptionen:**
 
-- In Azure kann der Vergleich zwischen geplanten Ausgaben und tatsächlichen Ausgaben über [Azure Cost Management und Abrechnung](/azure/cost-management/quick-acm-cost-analysis) verwaltet werden.
+- In Azure kann der Vergleich zwischen geplanten Ausgaben und tatsächlichen Ausgaben über [Azure Cost Management + Billing](/azure/cost-management/quick-acm-cost-analysis) verwaltet werden.
 - Es gibt mehrere Optionen für die Gruppierung von Ressourcen nach Abrechnungseinheit. In Azure muss ein [Ressourcenkonsistenzmodell](../../decision-guides/resource-consistency/index.md) in Verbindung mit dem Governanceteam ausgewählt und auf alle Ressourcen angewendet werden.
 
 ## <a name="overprovisioned-assets"></a>Überdimensionierte Ressourcen

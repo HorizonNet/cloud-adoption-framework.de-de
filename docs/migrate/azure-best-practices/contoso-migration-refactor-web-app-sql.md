@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 399f6e4d6506539c59d17670ba6f55f2df82a0c5
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 013c21eaf964d09f07122c9b6deb1b1539558541
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602876"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775750"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc smarthotel SHWEB SHWCF -->
 
@@ -121,7 +121,8 @@ Contoso geht bei der Ausführung der Migration wie folgt vor:
 
 ## <a name="step-1-assess-and-migrate-the-web-apps"></a>Schritt 1: Bewerten und Migrieren der Web-Apps
 
-Contoso-Administratoren bewerten und migrieren ihre Web-App mithilfe des [Azure App Service-Migrations-Assistenten](https://azure.microsoft.com/migration/web-applications/). Bei dem Prozess orientieren sie sich am [Microsoft-Lernpfad](/learn/paths/migrate-dotnet-apps-azure/). Die Administratoren führen im Wesentlichen folgende Aktionen aus:
+Contoso-Administratoren bewerten und migrieren ihre Web-App mithilfe des [Azure App Service-Migrations-Assistenten](https://azure.microsoft.com/migration/web-applications/). Sie orientieren sich während des Prozesses am Lernpfad zum [Migrieren von ASP.NET-Apps zu Azure](/learn/paths/migrate-dotnet-apps-azure/).
+Die Administratoren führen diese Aktionen aus:
 
 - Sie verwenden die [Azure App Service-Migrationsbewertung](https://appmigration.microsoft.com/assessment/), um alle ggf. vorhandenen Abhängigkeiten zwischen Ihren Web-Apps auszuwerten und um mögliche Inkompatibilitäten zwischen ihren lokalen Web-Apps und der Unterstützung durch Azure App Service zu ermitteln.
 

@@ -7,12 +7,12 @@ ms.date: 06/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: dba0ab6db022d4d2a18dc0734e37d59501eb6738
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: ec22d8e94f9ccd82e4b68e7d56dcb5bc032bf4f8
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885778"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776243"
 ---
 <!-- docutune:ignore InterpretML FairLearn -->
 
@@ -50,7 +50,7 @@ Diese Leitlinien helfen Ihnen dabei, potenzielle Probleme während des gesamten 
 
 ## <a name="tools-for-responsible-ai"></a>Tools für verantwortungsbewusste KI
 
-Es gibt Tools, die Entwicklern und Data Scientists dabei helfen können, KI-Systeme zu verstehen, zu schützen und zu kontrollieren. Diese können aus einer Vielzahl von Quellen stammen, z. B. aus Azure Machine Learning, Open-Source-Projekten oder der Forschung.
+Es sind Tools verfügbar, die Entwicklern und Data Scientists helfen, KI-Systeme zu verstehen, zu schützen und zu kontrollieren. Diese können aus einer Vielzahl von Quellen stammen, z. B. aus Azure Machine Learning, Open-Source-Projekten oder der Forschung.
 
 - **Verstehen:** KI-Systeme können sich aus verschiedensten Gründen unerwartet verhalten. Softwaretools können Ihnen dabei helfen, das Verhalten Ihrer KI-Systeme zu verstehen, damit Sie sie besser an Ihre Anforderungen anpassen können. Beispiele für diese Art von Tools sind InterpretML und Fairlearn.
 - **Schützen:** KI-Systeme basieren auf Daten. Softwaretools können Ihnen dabei helfen, diese Daten durch Gewährleistung von Datenschutz und Vertraulichkeit zu schützen. Beispiele hierfür sind das vertrauliche Computing für Machine Learning, der differenzielle Datenschutz mit WhiteNoise, die homomorphe Verschlüsselung mit Seal und Presidio.

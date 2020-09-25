@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
 ms.custom: governance
-ms.openlocfilehash: 01e9be8d8dde337dd732933b42b61f881bc2c474
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: e35ec6e6db843e352f05dc6904cd1245ea5bd822
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603772"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90774221"
 ---
 # <a name="cloud-rationalization"></a>Cloudrationalisierung
 
@@ -25,7 +25,7 @@ Die in diesem Artikel aufgeführten *fünf Phasen der Rationalisierung* sind ein
 
 ### <a name="myth-its-easy-to-make-rationalization-decisions-early-in-the-process"></a>Mythos: Es ist einfach, Rationalisierungsentscheidungen in einem frühen Stadium des Prozesses zu treffen.
 
- Eine korrekte Rationalisierung erfordert ein fundiertes Wissen in Bezug auf die Workload und die damit verbundenen Ressourcen (Apps, Infrastruktur und Daten). Am wichtigsten ist, dass genaue Rationalisierungsentscheidungen Zeit in Anspruch nehmen. Wir empfehlen die Verwendung [eines inkrementellen Rationalisierungsprozesses](./rationalize.md#incremental-rationalization).
+ Eine korrekte Rationalisierung erfordert ein fundiertes Wissen in Bezug auf die Workload und die damit verbundenen Ressourcen (Anwendungen, Infrastruktur und Daten). Am wichtigsten ist, dass genaue Rationalisierungsentscheidungen Zeit in Anspruch nehmen. Wir empfehlen die Verwendung [eines inkrementellen Rationalisierungsprozesses](./rationalize.md#incremental-rationalization).
 
 ### <a name="myth-cloud-adoption-has-to-wait-for-all-workloads-to-be-rationalized"></a>Mythos: Die Cloudeinführung muss darauf warten, dass alle Workloads rationalisiert sind.
 

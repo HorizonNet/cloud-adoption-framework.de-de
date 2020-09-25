@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 8a163d17a0c50d8482f3e311a4ae240f071b36c9
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 10780fef6f7df67b98d72e7cbe522565ed0c1f08
+ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574311"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90681334"
 ---
 # <a name="define-and-prioritize-workloads-for-a-cloud-adoption-plan"></a>Definieren und Priorisieren von Workloads für einen Cloudeinführungsplan
 
@@ -69,6 +69,9 @@ Nachdem die anfänglichen Prioritäten definiert und die Workloads dem Plan hinz
 | Workloadbeschreibung | Aufgabe der Workload in einem Satz |         |
 | Motivationen für den Wechsel in die Cloud | Welche Cloudeinführungsmotive betrifft diese Workload? |         |
 | Primärer Sponsor | Wer von den betroffenen Beteiligten ist der primäre Sponsor, der die zuvor genannten Motive anfordert? |         |
+| Geschäftsauswirkung | Welche geschäftlichen Auswirkungen hat diese Workload?|         |
+| Auswirkung der Anwendung | Welche Auswirkung hat diese Anwendung auf Geschäftsprozesse?|         |
+| Datenauswirkung | Welche Auswirkung haben die Daten auf das Unternehmen?|         |
 | Geschäftseinheit | Welche Geschäftseinheit ist für die Kosten dieser Workload verantwortlich? |         |
 | Geschäftsprozesse | Welche Geschäftsprozesse werden von Änderungen dieser Workload betroffen sein? |         |
 | Unternehmensteams | Welche Unternehmensteams werden von geschäftlichen Änderungen betroffen sein? |         |

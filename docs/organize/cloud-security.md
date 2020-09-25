@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 1b33489f16990d7b2677e1cb128c9c2dcce0c6aa
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 7c24e03b2727e31a673675ba62fc76a90c117e03
+ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885710"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90681273"
 ---
 # <a name="cloud-security-functions"></a>Cloudsicherheitsfunktionen
 
@@ -29,14 +29,14 @@ Das folgende Diagramm und die Dokumentation stellen eine ideale Sicht der Funkti
 Jeder der folgenden Artikel bietet Informationen zu einer der Funktionen. Jeder Artikel enthält eine Zusammenfassung der Ziele, wie sich die Funktion aufgrund der Bedrohungsumgebung oder der Änderungen an der Cloudtechnologie entwickeln kann, sowie die Beziehungen und Abhängigkeiten, die für den Erfolg entscheidend sind.
 
 - [Richtlinien und Standards](./cloud-security-policy-standards.md)
-- [Security Operations Center (SOC)](./cloud-security-operations-center.md)
+- [Sicherheitsvorgänge](./cloud-security-operations-center.md)
 - [Sicherheitsarchitektur](./cloud-security-architecture.md)
 - [Sicherheitscomplianceverwaltung](./cloud-security-compliance-management.md)
 - [Personensicherheit](./cloud-security-people.md)
 - [Anwendungssicherheit und DevSecOps](./cloud-security-application-security-devsecops.md)
 - [Datensicherheit](./cloud-security-data-security.md)
 - [Infrastruktur- und Endpunktsicherheit](./cloud-security-infrastructure-endpoint.md)
-- [Identität und Schlüssel](./cloud-security-identity-keys.md)
+- [Funktion von Identitäts- und Schlüsselverwaltung in der Cloud](./cloud-security-identity-keys.md)
 - [Threat Intelligence](./cloud-security-threat-intelligence.md)
 - [Statusverwaltung](./cloud-security-posture-management.md)
 - [Vorbereitung auf Vorfälle](./cloud-security-incident-preparation.md)

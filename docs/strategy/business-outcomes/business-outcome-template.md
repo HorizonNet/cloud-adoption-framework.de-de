@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 57e0fc471a3f3d115f08383318fda789bef579d5
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: dd10212e506550a641c01481983bc42703887f19
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885217"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90774339"
 ---
 # <a name="how-to-use-the-business-outcome-template"></a>Verwenden der Vorlage für Geschäftsergebnisse
 
@@ -54,7 +54,7 @@ Erkenntnis ist ein Hauptgrundsatz einer Unternehmensarchitektur. Ist Erkenntnis 
 
 **Geschäftliche Faktoren:** Geschäftliche Faktoren erfassen die aktuelle Herausforderung, die das Unternehmen daran hindert, die gewünschten Ergebnisse zu erzielen. Mit ihnen können auch neue Möglichkeiten erfasst werden, die das Unternehmen mit der richtigen Lösung nutzen kann. Wie würden Sie die aktuellen Herausforderungen oder die zukünftige Geschäftslage beschreiben? Welche Geschäftsfunktionen würden sich ändern, um die gewünschten Ergebnisse zu erzielen?
 
-**KPIs:** Wie wird diese Änderung gemessen? Woher weiß das Unternehmen, ob sie erfolgreich war? Wie oft wird diese KPI ausgewertet? Durch Verstehen jeder KPI werden schrittweise Änderung und experimentierende Vorgehensweise möglich.
+**KPIs:** Wie wird diese Änderung gemessen? Woher weiß das Unternehmen, ob sie erfolgreich ist? Wie oft wird diese KPI ausgewertet? Durch Verstehen jeder KPI werden schrittweise Änderung und experimentierende Vorgehensweise möglich.
 
 **Fähigkeiten:** Wie beschleunigen technische Fähigkeiten bei der Definition eines Transformationsprozesses die Realisierung des Geschäftsergebnisses? Welche Anwendungen müssen in die Transformation einbezogen werden, um die Unternehmensziele zu erreichen? Wie lassen sich verschiedene Anwendungen oder Workloads priorisieren, um Fähigkeiten geeignet zu berücksichtigen? Wie müssen Teile der Lösung erweitert oder neu strukturiert werden, um jedes der Ergebnisse zu erzielen? Können Ausführungsansätze (oder Zeitachsen) neu angeordnet werden, um Geschäftsergebnisse mit großen Auswirkungen zu priorisieren?
 

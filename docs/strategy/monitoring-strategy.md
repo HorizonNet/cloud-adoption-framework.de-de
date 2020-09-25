@@ -7,12 +7,12 @@ ms.date: 06/18/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 04f051e141ebb849bc3981d0bdf5027092a583bd
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 86bc5245ba358d8f13e232f8342937b47588c7f7
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603669"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776260"
 ---
 <!-- cSpell:ignore SIEM Nagios Zabbix DIKW -->
 
@@ -60,7 +60,7 @@ Als Experte für die Bewältigung von Aufgaben arbeiten Sie möglicherweise eng 
 
 ## <a name="high-level-modeling"></a>Erstellen eines allgemeinen Modells
 
-Da die Fachbereiche bestimmen, welche Dienste in die Cloud verlagert werden sollen, müssen Sie Ihre Ressourcen sorgfältig einsetzen. Lokal sind Sie für die Überwachung verantwortlich und haben hohe Investitionen getätigt. Beim Umstieg auf SaaS-Dienste entfällt beispielsweise nicht Ihre Verantwortung für die Überwachung. Sie entscheiden, wer Zugriff benötigt, wer Benachrichtigungen empfängt und wer einen Mindestzugriff auf Analysen braucht. [Azure Monitor](/azure/azure-monitor/) und [Azure Arc](https://azure.microsoft.com/services/azure-arc/) sind Azure-Dienste mit der Flexibilität, Überwachungsszenarien in allen vier Cloudmodellen und nicht nur Ressourcen innerhalb von Azure abzudecken. Außerdem müssen Sie, wie nachstehend gezeigt, über die üblichen Cloudmodelle hinausblicken. Wenn Sie in Ihrem Unternehmen Microsoft Office-Apps einsetzen, die von [Microsoft 365](/microsoft-365/?view=o365-worldwide)-Diensten bereitgestellt werden, müssen Sie zusätzlich zum [Azure Security Center](/azure/security-center/) die Überwachung von Sicherheit und Compliance mit Microsoft 365 einbeziehen. Dazu gehören Identitäten, Endpunktverwaltung und Geräteüberwachung außerhalb Ihres Unternehmensnetzwerks.
+Da die Fachbereiche bestimmen, welche Dienste in die Cloud verlagert werden sollen, müssen Sie Ihre Ressourcen sorgfältig einsetzen. Lokal sind Sie für die Überwachung verantwortlich und haben hohe Investitionen getätigt. Beim Umstieg auf SaaS-Dienste entfällt beispielsweise nicht Ihre Verantwortung für die Überwachung. Sie entscheiden, wer Zugriff benötigt, wer Benachrichtigungen empfängt und wer einen Mindestzugriff auf Analysen braucht. [Azure Monitor](/azure/azure-monitor/) und [Azure Arc](https://azure.microsoft.com/services/azure-arc/) sind Azure-Dienste mit der Flexibilität, Überwachungsszenarien in allen vier Cloudmodellen und nicht nur Ressourcen innerhalb von Azure abzudecken. Sie müssen, wie nachstehend gezeigt, über die üblichen Cloudmodelle hinausblicken. Wenn Sie in Ihrem Unternehmen Microsoft Office-Anwendungen einsetzen, die von [Microsoft 365](/microsoft-365/?view=o365-worldwide)-Diensten bereitgestellt werden, müssen Sie zusätzlich zum [Azure Security Center](/azure/security-center/) die Überwachung von Sicherheit und Compliance mit Microsoft 365 einbeziehen. Dazu gehören Identitäten, Endpunktverwaltung und Geräteüberwachung außerhalb Ihres Unternehmensnetzwerks.
 
 ![Diagramm von Cloudmodellen](./media/monitoring-strategy/cloud-models.png)
 
@@ -233,7 +233,7 @@ Sie können Azure jetzt einsetzen, um nach und nach mit dem Verwalten aller oder
 | Integritäts- und Statusüberwachung | Sie können die langfristige Leistungsgarantie des Diensts oder der Komponente, einschließlich Servicelevel, ganzheitlich beobachten, messen, auswerten und verbessern, und zwar für alle diese Aspekte: Verfügbarkeit, Kapazität, Leistung, Sicherheit und Compliance. Ein intaktes System, ein Dienst oder eine Komponente ist online, leistungsfähig, abgesichert und konform. Die Systemüberwachung umfasst Protokolle und ist mit Integritätszuständen und Metriken in Echtzeit zustandsbehaftet. Sie bietet außerdem Trendberichte, Einblicke und Trends mit Fokus auf Dienstnutzung. |
 | Überwachung des Nutzwerts | Sie können die Qualität oder qualitativen Aspekte der Nutzenerbringung eines Systems beobachten, messen, auswerten und verbessern. Die Benutzererfahrung ist ein Typ von Anwendungsfällen in Bezug auf Überwachung. |
 | Sicherheitsüberwachung | Sie können den Schutz zur Unterstützung von Cybersicherheitsstrategien und -aufgaben wie Sicherheitsabläufe, Identität und Zugriff, Informationsschutz, Datenschutz, Bedrohungsmanagement und Compliance beobachten, messen, auswerten und verbessern. Nutzen Sie zur Überwachung Azure Security Center und Azure Sentinel sowie Microsoft 365. |
-| Kostenüberwachung | Sie können als neues primäres Ziel mit Azure Monitor und Azure Cost Management und Azure-Abrechnungsportal die Nutzung überwachen und Kosten schätzen. Die Azure Cost Management-APIs bieten die Möglichkeit, Kosten- und Nutzungsdaten mithilfe einer mehrdimensionalen Analyse zu untersuchen. |
+| Kostenüberwachung | Sie können als neues primäres Ziel mit Azure Monitor und Azure Cost Management + Billing die Nutzung überwachen und Kosten schätzen. Die Azure Cost Management + Billing-APIs bieten die Möglichkeit, Kosten- und Nutzungsdaten mithilfe einer mehrdimensionalen Analyse zu untersuchen. |
 
 | Tertiäre Ziele | Ergebnis |
 |---------------------|------------------|

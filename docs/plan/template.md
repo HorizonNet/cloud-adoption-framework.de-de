@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 178217ef4cb3e4dc744a1c6d297ad4c8a993bcd5
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 8c5dd7d7e1b40172c6dc996bc865d72ac532f50c
+ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572917"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90681404"
 ---
 # <a name="cloud-adoption-plan-and-azure-devops"></a>Cloudeinführungsplan und Azure DevOps
 
@@ -60,7 +60,7 @@ Die übersichtlichste Darstellung des Cloudeinführungsplans stammt aus der **Ep
 
 ## <a name="align-the-cloud-adoption-plan"></a>Ausrichten des Cloudeinführungsplans
 
-Die Übersichtsseiten für die Strategie- und Planungsphasen des Lebenszyklus der Cloudeinführung verweisen jeweils auf die [Strategie- und Planvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx). Diese Vorlage organisiert die Entscheidungen und Datenpunkte, die die Vorlage für den Cloudeinführungsplan auf Ihre spezifischen Einführungspläne abstimmen. Wenn dies noch nicht geschehen ist, sollten Sie die Übungen zu [Strategie](../strategy/index.md) und [Planung](../plan/index.md) durchführen, bevor Sie Ihr neues Projekt ausrichten.
+Die Übersichtsseiten für die Strategiemethodik und die Planmethodik verweisen jeweils auf die [Strategie- und Planvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx). Diese Vorlage organisiert die Entscheidungen und Datenpunkte, die die Vorlage für den Cloudeinführungsplan auf Ihre spezifischen Einführungspläne abstimmen. Berücksichtigen Sie, vor dem Ausrichten des neuen Projekts die Übungen in der [Strategiemethodik](../strategy/index.md) und [Planmethodik](../plan/index.md) auszuführen.
 
 Die folgenden Artikel bieten Informationen zur Ausrichtung des Cloudeinführungsplans:
 

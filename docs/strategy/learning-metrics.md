@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: b7dca2e21c1cff0361451e25dbc56ba9a02bdf59
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 3f3b67433f2b41337d66ab05265e45489c49e050
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885829"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776328"
 ---
 # <a name="how-can-we-align-efforts-to-meaningful-learning-metrics"></a>Ausrichtung des Aufwands auf sinnvolle Lernmetriken
 
@@ -34,7 +34,7 @@ Vor einem Finanzbericht sollte stets der CFO oder die Finanzabteilung konsultier
 
 Innovationen bei cloudfähigen Anwendungen beziehen sich hauptsächlich auf die Benutzerfreundlichkeit und die Bereitschaft der Kunden, Produkte und Dienste des Unternehmens zu nutzen. Es dauert eine Weile, bis der Einfluss einzelner Änderungsschritte auf das Kaufverhalten von Verbrauchern oder Kunden sichtbar wird. Anwendungsinnovationszyklen sind aber in der Regel deutlich kürzer als bei anderen Formen der Transformation. Traditionell wird empfohlen, sich zunächst mit speziellen Verhaltensweisen zu beschäftigen, die Sie beeinflussen möchten, und diese als Lernmetriken zu verwenden. Bei einer E-Commerce-Anwendung könnten z. B. die Gesamteinkäufe oder Zusatzkäufe als Zielverhalten genutzt werden. Für ein Videounternehmen könnte die mit der Wiedergabe eines Videostreams verbrachte Zeit wichtig sein.
 
-Die Herausforderung bei Metriken zum Kundenverhalten besteht darin, dass sie einfach von externen Variablen beeinflusst werden können. Aus diesem Grund ist es häufig wichtig, neben Lernmetriken noch andere verwandte Statistiken einzubeziehen. Solche verwandten Statistiken können z. B. Releaserhythmus, pro Release behobene Fehler, Code Coverage für Komponententests, Anzahl der Seitenaufrufe, Seitendurchsatz, Seitenladevorgänge und andere Leistungsindikatoren für die App sein. Jede kann andere Aktivitäten oder Änderungen an der Codebasis oder der Kundenerfahrung zeigen, die dann mit allgemeineren Verhaltensmustern der Kunden abgeglichen werden können.
+Metriken für das Kundenverhalten können leicht von externen Variablen beeinflusst werden. Daher ist es häufig wichtig, verwandte Statistiken mit den Lernmetriken einzubeziehen. Solche verwandten Statistiken können z. B. Releaserhythmus, pro Release behobene Fehler, Code Coverage für Komponententests, Anzahl der Seitenaufrufe, Seitendurchsatz, Seitenladevorgänge und andere Leistungsindikatoren für die Anwendung sein. Jede kann andere Aktivitäten oder Änderungen an der Codebasis oder der Kundenerfahrung zeigen, die dann mit allgemeineren Verhaltensmustern der Kunden abgeglichen werden können.
 
 ## <a name="data-innovation"></a>Dateninnovationen
 

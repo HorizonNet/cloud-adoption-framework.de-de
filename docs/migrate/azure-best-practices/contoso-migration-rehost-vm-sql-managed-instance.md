@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: da6c543bf16434bf0228df3a1bcac163ef1fe4ab
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 546c5103489ce15f066d9856078abadc6440cef2
+ms.sourcegitcommit: 8d3a8e7211ceb94ba351914a622f293f72286039
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602598"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90988906"
 ---
 <!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless SQLMI iisreset -->
 
@@ -87,7 +87,7 @@ Contoso bewertet den vorgeschlagen Entwurf anhand einer Liste mit Vor- und Nacht
 
 | Aspekt | Details |
 | --- | --- |
-| **Vorteile** | `WEBVM` wird ohne Änderungen in Azure verlagert. Die Migration ist also sehr einfach. <br><br> Die verwaltete SQL-Instanz unterstützt die technischen Anforderungen und Ziele von Contoso. <br><br> SQL Managed Instance ermöglicht eine 100-prozentige Kompatibilität mit der aktuellen Bereitstellung von Contoso und gleichzeitig die Aussonderung von SQL Server 2008 R2 für das Unternehmen. <br><br> Contoso kann seine Investition in die Software Assurance und den Azure-Hybridvorteil für SQL Server und Windows Server nutzen. <br><br> Contoso kann Azure Database Migration Service für weitere zukünftige Migrationen nutzen. <br><br> Die verwaltete SQL-Instanz verfügt über eine integrierte Fehlertoleranz, die nicht von Contoso konfiguriert werden muss. Mit diesem Feature wird sichergestellt, dass die Datenschicht kein Single Point of Failover mehr ist. |
+| **Vorteile** | `WEBVM` wird ohne Änderungen in Azure verlagert. Die Migration ist also sehr einfach. <br><br> Die verwaltete SQL-Instanz unterstützt die technischen Anforderungen und Ziele von Contoso. <br><br> SQL Managed Instance ermöglicht eine 100-prozentige Kompatibilität mit der aktuellen Bereitstellung von Contoso und gleichzeitig die Aussonderung von SQL Server 2008 R2 für das Unternehmen. <br><br> Contoso kann seine Investition in die Software Assurance und den Azure-Hybridvorteil für SQL Server und Windows Server nutzen. <br><br> Contoso kann Azure Database Migration Service für weitere zukünftige Migrationen nutzen. <br><br> Die verwaltete SQL-Instanz verfügt über eine integrierte Fehlertoleranz, die nicht von Contoso konfiguriert werden muss. Mit diesem Feature wird sichergestellt, dass die Datenschicht kein Single Point of Failure mehr ist. |
 | **Nachteile** | Auf `WEBVM` wird Windows Server 2008 R2 ausgeführt. Obwohl dieses Betriebssystem von Azure unterstützt wird, handelt es sich nicht mehr um eine unterstützte Plattform. Weitere Informationen finden Sie unter [Supportrichtlinie für Microsoft SQL Server-Produkte](https://support.microsoft.com/help/956893). <br><br> Die Webschicht bleibt ein Single Point of Failure, weil nur `WEBVM` Dienste bereitstellt. <br><br> Contoso muss die Webschicht der Anwendung weiterhin als virtuellen Computer unterstützen, anstatt auf einen verwalteten Dienst wie Azure App Service umzustellen. <br><br> Für die Datenschicht stellt SQL Managed Instance unter Umständen nicht die beste Lösung dar, wenn Contoso das Betriebssystem oder den Datenbankserver anpassen oder Drittanbieteranwendungen mit SQL Server ausführen möchte. Eine Ausführung von SQL Server auf einer IaaS-VM könnte diese Flexibilität bieten. |
 
 ### <a name="migration-process"></a>Migrationsprozess

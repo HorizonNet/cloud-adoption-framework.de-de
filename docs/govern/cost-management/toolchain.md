@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 1e0654a74eeb9d4b53c05fdbce8ee0314828ba3a
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: bc1f69d425bac78544c8542a4e1adf1e7357e700
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88883653"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775461"
 ---
 # <a name="cost-management-tools-in-azure"></a>Cost Management-Tools in Azure
 
@@ -21,9 +21,7 @@ Die [Disziplin „Cost Management“ (Kostenverwaltung)](./index.md) ist eine de
 
 Im Folgenden ist eine Liste der nativen Azure-Tools aufgeführt, die zur Ausreifung der Richtlinien und Prozesse beitragen können, die diese Disziplin unterstützen.
 
-<!-- TODO: Content packs are deprecated. -->
-
-| Tool | [Azure portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Cost Management und Abrechnung](/azure/cost-management-billing/cost-management-billing-overview)  | [Power BI Desktop-Connector](/power-bi/connect-data/desktop-connect-azure-cost-management) | [Azure Policy](/azure/governance/policy/overview) |
+| Tool | [Azure portal](https://azure.microsoft.com/features/azure-portal)  | [Azure Cost Management + Billing](/azure/cost-management-billing/cost-management-billing-overview)  | [Power BI Desktop-Connector](/power-bi/connect-data/desktop-connect-azure-cost-management) | [Azure Policy](/azure/governance/policy/overview) |
 |---------|---------|---------|---------|---------|
 | Budgetkontrolle     | Nein         | Ja         | Nein         | Ja         |
 | Überwachen der Ausgaben für eine einzelne Ressource    | Ja         | Ja         | Ja         | Nein         |

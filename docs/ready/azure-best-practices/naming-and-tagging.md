@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 01920086c75c235662b098a76afa2e8a4afc5a02
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 45848c9291fe64398f096761d62556cf50eff106
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877193"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776549"
 ---
-<!-- docsTest:disable -->
-<!-- cSpell:ignore westeurope usgovia accountlookup messagequery -->
+<!-- docutune:disable -->
+<!-- cSpell:ignore cdnp cdne westeurope usgovia accountlookup messagequery -->
 
 # <a name="recommended-naming-and-tagging-conventions"></a>Empfohlene Namens- und Kennzeichnungskonventionen
 
@@ -83,6 +83,7 @@ Diese Liste enthält empfohlene Azure-Ressourcentypenpräfixe, die Sie verwenden
 
 | Ressourcentyp                      | Namenspräfix |
 |---------------------------------|-------------|
+| Verwaltungsgruppe                | mg-         |
 | Resource group                  | rg-         |
 | Richtliniendefinition               | policy-     |
 | API Management-Dienstinstanz | apim-       |
@@ -93,6 +94,7 @@ Diese Liste enthält empfohlene Azure-Ressourcentypenpräfixe, die Sie verwenden
 |----------------------------------|-------------|
 | Virtuelles Netzwerk                  | vnet-       |
 | Subnet                           | snet-       |
+| Peering in virtuellen Netzwerken          | peer-       |
 | Netzwerkschnittstelle (NIC)          | nic-        |
 | Öffentliche IP-Adresse                | pip-        |
 | Lastenausgleich (intern)         | lbi-        |
@@ -104,7 +106,11 @@ Diese Liste enthält empfohlene Azure-Ressourcentypenpräfixe, die Sie verwenden
 | VPN-Verbindung                   | cn-         |
 | Anwendungsgateway              | agw-        |
 | Routingtabelle                      | route-      |
+| Benutzerdefinierte Route (User Defined Route, UDR)         | udr-        |
 | Traffic Manager-Profil          | traf-       |
+| Front Door                       | fd-         |
+| CDN-Profil                      | cdnp-       |
+| CDN-Endpunkt                     | cdne-       |
 
 ### <a name="compute-and-web"></a>Compute und Web
 
@@ -115,7 +121,8 @@ Diese Liste enthält empfohlene Azure-Ressourcentypenpräfixe, die Sie verwenden
 | Verfügbarkeitsgruppe            | avail-      |
 | VM-Speicherkonto          | spvm        |
 | Vernetzter Azure Arc-Computer | arcm-       |
-| Containerinstanz          | aci-        |
+| Containerregistrierung          | cr-         |
+| Containerinstanz          | ci-         |
 | AKS-Cluster                 | aks-        |
 | Service Fabric-Cluster      | sf-         |
 | App Service-Umgebung     | ase-        |
@@ -159,7 +166,7 @@ Diese Liste enthält empfohlene Azure-Ressourcentypenpräfixe, die Sie verwenden
 
 | Ressourcentyp                      | Namenspräfix |
 |---------------------------------|-------------|
-| Azure Analysis Services-Server  | as-         |
+| Azure Analysis Services-Server  | as          |
 | Azure Databricks-Arbeitsbereich      | dbw-        |
 | Azure Stream Analytics          | asa-        |
 | Azure Data Factory              | adf-        |
@@ -238,11 +245,12 @@ Der folgende Abschnitt enthält einige Namensbeispiele für häufige Azure-Resso
 
 ### <a name="example-names-general"></a>Namensbeispiele: Allgemein
 
-| Ressourcentyp                      | `Scope`                              | Format                                                      | Beispiele                                                                                                                |
-|---------------------------------|------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| Subscription                    | Account/ <br> Enterprise Agreement | \<Business Unit\>-\<Subscription type\>-\<\#\#\#\>          | <li> mktg-prod-001 <li> konzern-freigabe-001 <li> fin-client-001 |
-| Resource group                  | Subscription                       | rg-\<App or service name\>-\<Subscription type\>-\<\#\#\#\> | <li> rg-mktgsharepoint-prod-001 <li> rg-kontnachschldien-freigabe-001 <li> rg-ad-verz-dienste-freigabe-001 |
-| API Management-Dienstinstanz | Global                             | apim-\<App or service name\>                                | apim-navigator-prod                                                                                                     |
+| Ressourcentyp                      | `Scope`                                 | Format                                                      | Beispiele                                                                                           |
+|---------------------------------|---------------------------------------|-------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| Verwaltungsgruppe                | Geschäftseinheit und/oder Umgebungstyp | mg-\<Business Unit\>\[-\<Environment type\>\]               | <li> mg-mktg <li> mg-hr <li> mg-corp-prod <li> mg-fin-client                                       |
+| Subscription                    | Account/ <br> Enterprise Agreement    | \<Business Unit\>-\<Subscription type\>-\<\#\#\#\>          | <li> mktg-prod-001 <li> konzern-freigabe-001 <li> fin-client-001                                        |
+| Resource group                  | Subscription                          | rg-\<App or service name\>-\<Subscription type\>-\<\#\#\#\> | <li> rg-mktgsharepoint-prod-001 <li> rg-kontnachschldien-freigabe-001 <li> rg-ad-verz-dienste-freigabe-001 |
+| API Management-Dienstinstanz | Global                                | apim-\<App or service name\>                                | apim-navigator-prod                                                                                |
 
 > [!NOTE]
 > Die zuvor und anderswo in diesem Dokument verwendeten Beispielnamen verweisen auf eine dreistellige Zeichenauffüllung (\<\#\#\#\>). Das heißt,  mktg-prod-*001*

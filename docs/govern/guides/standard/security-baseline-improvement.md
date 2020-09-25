@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 538a29a0b47fdfdeeb291104ea3bff0d0f45b656
-ms.sourcegitcommit: 34346be9ec66c64d6d7ae24651adbbec1fdbf985
+ms.openlocfilehash: c43b0b563292a0bafb3e4ac63ad6f757c519bf76
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90534203"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775818"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Governanceleitfaden für Standardunternehmen: Verbessern der Disziplin „Sicherheitsbaseline“
 
@@ -103,36 +103,36 @@ Der Governance-MVP-Entwurf wird so geändert, dass er neue Azure-Richtlinien und
 - Die Identitäts- und IT-Sicherheitsteams definieren die Identitätsanforderungen und nehmen alle erforderlichen Änderungen an der lokalen Active Directory-Implementierung vor. Das Cloudgovernanceteam überprüft die Änderungen.
 - Erstellen Sie in Azure DevOps ein Repository zur Speicherung und Versionsverwaltung für alle relevanten Azure Resource Manager-Vorlagen und Skriptkonfigurationen.
 - Azure Recovery Services-Tresorimplementierung:
-    - Definieren Sie einen Azure Recovery Services-Tresor für Sicherungs- und Wiederherstellungsvorgänge, und stellen Sie ihn bereit.
-    - Erstellen Sie eine Resource Manager-Vorlage zum Erstellen eines Tresors in jedem Abonnement.
+  - Definieren Sie einen Azure Recovery Services-Tresor für Sicherungs- und Wiederherstellungsvorgänge, und stellen Sie ihn bereit.
+  - Erstellen Sie eine Resource Manager-Vorlage zum Erstellen eines Tresors in jedem Abonnement.
 - Implementierung von Azure Security Center:
-    - Konfigurieren Sie Azure Security Center für jede Verwaltungsgruppe, die Klassifizierungen geschützter Daten enthält.
-    - Legen Sie automatische Bereitstellung standardmäßig auf „Aktiviert“ fest, um Patchingkompatibilität zu gewährleisten.
-    - Richten Sie Sicherheitskonfigurationen von Betriebssystemen ein. Das IT-Sicherheitsteam definiert die Konfiguration.
-    - Unterstützen Sie das IT-Sicherheitsteam bei der anfänglichen Verwendung von Security Center. Übertragen Sie die Nutzung von Security Center an das IT-Sicherheitsteam, behalten Sie jedoch den Zugriff, um die Governance kontinuierlich zu verbessern.
-    - Erstellen Sie eine Resource Manager-Vorlage, die die erforderlichen Änderungen für die Security Center-Konfiguration in einem Abonnement widerspiegelt.
+  - Konfigurieren Sie Azure Security Center für jede Verwaltungsgruppe, die Klassifizierungen geschützter Daten enthält.
+  - Legen Sie automatische Bereitstellung standardmäßig auf „Aktiviert“ fest, um Patchingkompatibilität zu gewährleisten.
+  - Richten Sie Sicherheitskonfigurationen von Betriebssystemen ein. Das IT-Sicherheitsteam definiert die Konfiguration.
+  - Unterstützen Sie das IT-Sicherheitsteam bei der anfänglichen Verwendung von Security Center. Übertragen Sie die Nutzung von Security Center an das IT-Sicherheitsteam, behalten Sie jedoch den Zugriff, um die Governance kontinuierlich zu verbessern.
+  - Erstellen Sie eine Resource Manager-Vorlage, die die erforderlichen Änderungen für die Security Center-Konfiguration in einem Abonnement widerspiegelt.
 - Aktualisieren Sie Azure-Richtlinien für alle Abonnements:
-    - Überprüfen und erzwingen Sie die Wichtigkeit von Daten sowie die Datenklassifizierung für alle Verwaltungsgruppen und Abonnements, um Abonnements mit Klassifizierungen geschützter Daten zu identifizieren.
-    - Überwachen und erzwingen Sie die ausschließliche Verwendung genehmigter Images.
+  - Überprüfen und erzwingen Sie die Wichtigkeit von Daten sowie die Datenklassifizierung für alle Verwaltungsgruppen und Abonnements, um Abonnements mit Klassifizierungen geschützter Daten zu identifizieren.
+  - Überwachen und erzwingen Sie die ausschließliche Verwendung genehmigter Images.
 - Aktualisieren Sie Azure-Richtlinien für alle Abonnements, die Klassifizierungen geschützter Daten enthalten:
-    - Überwachen und erzwingen Sie die ausschließliche Verwendung von Azure RBAC-Standardrollen.
-    - Überwachen und erzwingen Sie die Verschlüsselung für alle Speicherkonten und Dateien im Ruhezustand auf einzelnen Knoten.
-    - Überwachen und erzwingen Sie die Anwendung einer NSG auf alle NICs und Subnetze. Die Netzwerk- und IT-Sicherheitsteams definieren die NSG.
-    - Überwachen und erzwingen Sie die Verwendung eines genehmigten Netzwerksubnetzes und virtuellen Netzwerks pro Netzwerkschnittstelle.
-    - Überwachen und erzwingen Sie die Einschränkung benutzerdefinierter Routingtabellen.
-    - Wenden Sie die integrierten Richtlinien für die Gastkonfiguration wie folgt an:
-        - Überwachen Sie die Verwendung sicherer Kommunikationsprotokolle auf Windows-Webservern.
-        - Überwachen Sie die korrekte Festlegung der Kennwortsicherheitseinstellungen auf Linux- und Windows-Computern.
-    - Überprüfen Sie, ob Azure Recovery Services-Tresore im Abonnement vorhanden sind, und erzwingen Sie deren Bereitstellung.
+  - Überwachen und erzwingen Sie die ausschließliche Verwendung von Azure RBAC-Standardrollen.
+  - Überwachen und erzwingen Sie die Verschlüsselung für alle Speicherkonten und Dateien im Ruhezustand auf einzelnen Knoten.
+  - Überwachen und erzwingen Sie die Anwendung einer NSG auf alle NICs und Subnetze. Die Netzwerk- und IT-Sicherheitsteams definieren die NSG.
+  - Überwachen und erzwingen Sie die Verwendung eines genehmigten Netzwerksubnetzes und virtuellen Netzwerks pro Netzwerkschnittstelle.
+  - Überwachen und erzwingen Sie die Einschränkung benutzerdefinierter Routingtabellen.
+  - Wenden Sie die integrierten Richtlinien für die Gastkonfiguration wie folgt an:
+    - Überwachen Sie die Verwendung sicherer Kommunikationsprotokolle auf Windows-Webservern.
+    - Überwachen Sie die korrekte Festlegung der Kennwortsicherheitseinstellungen auf Linux- und Windows-Computern.
+  - Überprüfen Sie, ob Azure Recovery Services-Tresore im Abonnement vorhanden sind, und erzwingen Sie deren Bereitstellung.
 - Firewallkonfiguration:
-    - Identifizieren Sie eine Konfiguration von Azure Firewall, die die erforderlichen Sicherheitsanforderungen erfüllt. Identifizieren Sie alternativ eine kompatible Appliance eines Drittanbieters, die mit Azure kompatibel ist.
-    - Erstellen Sie eine Resource Manager-Vorlage, um die Firewall mit den erforderlichen Konfigurationen bereitzustellen.
-- Azure-Blaupause:
-    - Erstellen Sie eine neue Blaupause namens „protected-data“.
-    - Fügen Sie der Blaupause die Firewall, Azure Security Center-Vorlagen und Azure Recovery Services-Tresorvorlagen hinzu.
-    - Fügen Sie die neuen Richtlinien für Abonnements geschützter Daten hinzu.
-    - Veröffentlichen Sie die Blaupause für jede Verwaltungsgruppe, die aktuell plant, geschützte Daten zu hosten.
-    - Wenden Sie die neue Blaupause auf die betroffenen Abonnements sowie auf vorhandene Blaupausen an.
+  - Identifizieren Sie eine Konfiguration von Azure Firewall, die die erforderlichen Sicherheitsanforderungen erfüllt. Identifizieren Sie alternativ eine kompatible Appliance eines Drittanbieters, die mit Azure kompatibel ist.
+  - Erstellen Sie eine Resource Manager-Vorlage, um die Firewall mit den erforderlichen Konfigurationen bereitzustellen.
+- Azure Blueprints:
+  - Erstellen Sie eine neue Blaupause namens „protected-data“.
+  - Fügen Sie der Blaupause die Firewall, Azure Security Center-Vorlagen und Azure Recovery Services-Tresorvorlagen hinzu.
+  - Fügen Sie die neuen Richtlinien für Abonnements geschützter Daten hinzu.
+  - Veröffentlichen Sie die Blaupause für jede Verwaltungsgruppe, die aktuell plant, geschützte Daten zu hosten.
+  - Wenden Sie die neue Blaupause auf die betroffenen Abonnements sowie auf vorhandene Blaupausen an.
 
 ## <a name="conclusion"></a>Zusammenfassung
 

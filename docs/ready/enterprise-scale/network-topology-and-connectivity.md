@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 1f315f1c07ce381043b5f338fd7602678908cb63
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 9592e0007e2d9d6be5ad675573184b193bd1b9f9
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602232"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776379"
 ---
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
 
@@ -174,9 +174,9 @@ _Abbildung 1: Virtual WAN-Netzwerktopologie._
 
 - Wenn Sie Netzwerktechnologien und NVAs von Partnern bereitstellen, befolgen Sie die Anweisungen des Partners, um sicherzustellen, dass keine Konflikte mit Azure-Netzwerken auftreten.
 
-- Setzen Sie kein Transitnetzwerk auf Azure Virtual WAN auf. Virtual WAN erfüllt alle transitiven Anforderungen an die Netzwerktopologie, einschließlich der Möglichkeit zur Verwendung von Partner-NVAs.
+- Setzen Sie kein Transitnetzwerk auf Azure Virtual WAN auf. Virtual WAN erfüllt alle Anforderungen an die transitive Netzwerktopologie, einschließlich der Möglichkeit zur Verwendung von Drittanbieter-NVAs. Das Aufbauen eines Transitnetzwerks auf Azure Virtual WAN wäre redundant und würde die Komplexität erhöhen. 
 
-- Verwenden Sie keine vorhandenen lokalen Netzwerke wie MPLS (Multiprotocol Label Switching), um Azure-Ressourcen über Azure-Regionen hinweg zu verbinden. Azure-Netzwerktechnologien unterstützen die regionsübergreifende Verbindung von Azure-Ressourcen über den Microsoft-Backbone.
+- Verwenden Sie keine vorhandenen lokalen Netzwerke wie MPLS (Multiprotocol Label Switching), um Azure-Ressourcen über Azure-Regionen hinweg zu verbinden, da Azure-Netzwerktechnologien die Verbindung von Azure-Ressourcen regionsübergreifend über den Microsoft-Backbone unterstützen. Dies liegt an den Leistungs- und Betriebszeitmerkmalen des Microsoft-Backbones sowie der Vereinfachung des Routings. Dieser Vorschlag zielt auf die Leistungs- und Betriebszeitmerkmale des Microsoft-Backbones. Er unterstützt außerdem die Vereinfachung des Routings.
 
 - Informationen zu Brownfield-Szenarien, in denen Sie aus einer Hub-Spoke-Netzwerktopologie migrieren, die nicht auf Virtual WAN basiert, finden Sie unter [Migrieren zu Azure Virtual WAN](/azure/virtual-wan/migrate-from-hub-spoke-topology).
 
@@ -246,7 +246,7 @@ _Abbildung 4: Eine herkömmliche Azure-Netzwerktopologie._
 
   - Es besteht eine starke Abhängigkeit von zentralisierten NVAs und einem komplexen/präzisen Routing.
 
-- Verwenden Sie für regionale Bereitstellungen hauptsächlich die Hub-and-Spoke-Topologie. Nutzen Sie Zielzonen für virtuelle Netzwerke, die über das Peering virtueller Netzwerke mit einem zentralen virtuellen Hub-Netzwerk für die Konnektivität zwischen lokalen Standorten über ExpressRoute verbunden sind. VPN wird für die Zweigstellenkonnektivität verwendet, Spoke-to-Spoke-Konnektivität über NVAs und UDRs sichergestellt und der Schutz für ausgehenden Datenverkehr in das Internet über NVA erfolgt. Die folgende Abbildung zeigt diese Topologie.
+- Verwenden Sie für regionale Bereitstellungen hauptsächlich die Hub-and-Spoke-Topologie. Nutzen Sie Zielzonen für virtuelle Netzwerke, die über das Peering virtueller Netzwerke mit einem zentralen virtuellen Hub-Netzwerk für die Konnektivität zwischen lokalen Standorten über ExpressRoute verbunden sind. VPN wird für die Zweigstellenkonnektivität verwendet, Spoke-to-Spoke-Konnektivität über NVAs und UDRs sichergestellt und der Schutz für ausgehenden Datenverkehr in das Internet über NVA erfolgt. Die folgende Abbildung zeigt diese Topologie.  Dies ermöglicht der entsprechenden Datenverkehrskontrolle, die meisten Anforderungen an Segmentierung und Überprüfung zu erfüllen.
 
   ![Diagramm zur Hub-and-Spoke-Netzwerktopologie](./media/hub-and-spoke-topology.png)
 
@@ -288,7 +288,7 @@ _Abbildung 4: Eine herkömmliche Azure-Netzwerktopologie._
 
 - Wenn Ihr Unternehmen Hub-and-Spoke-Netzwerkarchitekturen über mehr als zwei Azure-Regionen und globale Transitkonnektivität zwischen Zielzonen benötigt, sind virtuelle Netzwerke erforderlich, die über Azure-Regionen hinweg arbeiten. Sie können diese Architektur implementieren, indem Sie eine Verbindung zwischen virtuellen Netzwerken im zentralen Hub mit globalem Peering virtueller Netzwerke herstellen und die Verwendung von UDRs und NVAs für das globale Transitrouting ermöglichen. Aufgrund der hohen Komplexität und des großen Verwaltungsaufwands wird die Bereitstellung einer globalen Transitnetzwerkarchitektur mit Virtual WAN empfohlen.
 
-- Verwenden Sie [Azure Monitor Network Insights](/azure/azure-monitor/insights/network-insights-overview) (derzeit in der Vorschauversion), um den End-to-End-Status von Ihren Netzwerken in Azure zu überwachen.
+- Verwenden Sie [Azure Monitor für Netzwerke (Vorschau)](/azure/azure-monitor/insights/network-insights-overview), um den End-to-End-Status Ihrer Netzwerke in Azure zu überwachen.
 
 - Erstellen Sie nicht mehr als 200 Peeringverbindungen pro virtuellem Netzwerk im zentralen Hub. Virtuelle Netzwerke unterstützen zwar bis zu 500 Peeringverbindungen, ExpressRoute mit privatem Peering unterstützt jedoch nur die Ankündigung von bis zu 200 Präfixen von Azure zur lokalen Umgebung.
 
@@ -309,9 +309,6 @@ In diesem Abschnitt wird die Netzwerktopologie erweitert, um empfohlene Modelle 
 - Expressroute-Global Reach ist in vielen [ExpressRoute-Peeringstandorten](/azure/expressroute/expressroute-global-reach#availability) vorhanden.
 
 - ExpressRoute Direct ermöglicht das Erstellen von mehreren ExpressRoute-Leitungen ohne anfallende Zusatzkosten bis zur Kapazität des ExpressRoute Direct-Ports (10 GBit/s oder 100 GBit/s). Zudem lassen sich direkte Verbindungen mit den ExpressRoute-Routern von Microsoft herstellen. Bei der 100-GBit/s-SKU beträgt die Mindestbandbreite der Leitung 5 GBit/s. Bei der 10-GBit/s-SKU beträgt die Mindestbandbreite der Leitung 1 GBit/s.
-
-<!-- cSpell:ignore prepending -->
-<!-- docsTest:ignore "AS PATH prepending" -->
 
 **Entwurfsempfehlungen:**
 
@@ -527,7 +524,7 @@ In vielen Branchen muss für Organisationen Datenverkehr in Azure in einem Netzw
 
 **Überlegungen zum Entwurf:**
 
-<!-- docsTest:ignore TAP -->
+<!-- docutune:ignore TAP -->
 
 - [Terminalzugangspunkt (Terminal Access Point, TAP) für virtuelle Netzwerke in Azure](/azure/virtual-network/virtual-network-tap-overview) ist als Vorschauversion verfügbar. Weitere Informationen zur Verfügbarkeit erhalten Sie bei `azurevnettap@microsoft.com`.
 

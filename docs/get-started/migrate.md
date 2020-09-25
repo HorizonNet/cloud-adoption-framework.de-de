@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: c806816f8d85e71f1b310dab0e89013e9946bc03
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: a82428e522e263a7e4610ed1b202a8bada19456e
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603311"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775665"
 ---
 # <a name="get-started-accelerate-migration"></a>Erste Schritte: Beschleunigen der Migration
 
@@ -178,7 +178,7 @@ Mithilfe von Cloudmigrationstools können alle virtuellen Computer eines Rechenz
 
 Mit jeder Iteration wird das Cloudeinführungsteam beim Migrieren von Workloads besser. Die folgenden Schritte helfen dem technischen Team dabei, seine Fähigkeiten zu verbessern:
 
-1. Migrieren Sie Ihre ersten Workloads in einem reinen IaaS-Ansatz (Infrastructure-as-a-Service) mithilfe der Tools, die im [Azure-Migrationsleitfaden](../migrate/azure-migration-guide/index.md) beschrieben werden.
+1. Migrieren Sie Ihre erste Workload in einem reinen IaaS-Ansatz (Infrastructure-as-a-Service) mithilfe der Tools, die im [Azure-Migrationsleitfaden](../migrate/azure-migration-guide/index.md) beschrieben werden.
 2. Erweitern Sie die Tooloptionen auf die Verwendung von Migration und Modernisierung mithilfe der [Migrationsbeispiele](../migrate/azure-best-practices/contoso-migration-overview.md).
 3. Entwickeln Sie Ihre technische Strategie mithilfe von umfassenderen Ansätzen, die in den [bewährten Methoden für die Azure-Cloudmigration](../migrate/azure-best-practices/index.md) beschrieben werden.
 4. Verbessern Sie Konsistenz, Zuverlässigkeit und Leistung durch einen effizienten Migrationsfactoryansatz, wie unter [Optimierungen des Migrationsvorgangs](../migrate/migration-considerations/index.md) beschrieben.
@@ -239,7 +239,7 @@ Vorgangsverwaltung ist eine weitere Voraussetzung für eine erfolgreiche Migrati
 
 ## <a name="value-statement"></a>Wertaussage
 
-Mithilfe dieser Schritte können Teams ihre Migrationsmaßnahmen durch besseres Change Management und eine bessere Ausrichtung von Beteiligten beschleunigen. Diese Schritte können den Prozess verlangsamen. Darüber hinaus tragen diese Schritte zur Beseitigung gängiger Hindernisse sowie zur schnelleren Generierung eines Geschäftswerts bei.
+Mithilfe dieser Schritte können Teams ihre Migrationsmaßnahmen durch besseres Change Management und eine bessere Ausrichtung von Beteiligten beschleunigen. Darüber hinaus tragen diese Schritte zur Beseitigung gängiger Hindernisse sowie zur schnelleren Generierung eines Geschäftswerts bei.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

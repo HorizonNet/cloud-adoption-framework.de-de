@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: b10d9f8a777b1adfa6dbfe2bd1b977b94d675e5d
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: e5a01fcc2c0afb7e61e08f60b8330ec7ebb2861f
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884996"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776294"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>Beispiele für Finanzergebnisse
 
@@ -87,7 +87,7 @@ Mit den folgenden Begriffe werden die Unterschiede zwischen Kapital- und Betrieb
 - **Kapitalkosten** (Investitionskosten) generieren über einen langen Zeitraum Nutzen. Solche Ausgaben erfolgen in der Regel einmalig und führen zum Erwerb von permanenten Vermögenswerten. Die Kosten für die Erstellung einer Anwendung können als Investitionskosten eingestuft werden.
 - **Betriebskosten** sind laufende Kosten für die Geschäftstätigkeiten. Die Nutzung von Clouddiensten in einem nutzungsbasierten Bezahlungsmodell kann als Betriebskosten eingestuft werden.
 - **Vermögenswerte** sind wirtschaftliche Ressourcen, die zum Generieren von Mehrwert dienen oder genutzt werden. Server, Data Lakes und Anwendungen können als Vermögenswerte eingestuft werden.
-- **Abschreibung** ist eine Verringerung des Werts eines Vermögenswerts im Laufe der Zeit. Von größerer Bedeutung für die Überlegungen hinsichtlich Kapitalkosten im Vergleich zu Betriebskosten ist, dass die Abschreibung die Art und Weise angibt, wie die Kosten eines Vermögenswerts über die Zeiträume verteilt werden, in denen er genutzt wird. Wenn Sie beispielsweise in diesem Jahr eine Anwendung erstellen, deren erwartete durchschnittliche Lebensdauer fünf Jahre beträgt (wie bei den meisten kommerziellen Apps), werden die Kosten für das Entwicklungsteam und die erforderlichen Tools zum Entwickeln und Bereitstellen der Codebasis gleichmäßig über fünf Jahre abgeschrieben.
+- **Abschreibung** ist eine Verringerung des Werts eines Vermögenswerts im Laufe der Zeit. Von größerer Bedeutung für die Überlegungen hinsichtlich Kapitalkosten im Vergleich zu Betriebskosten ist, dass die Abschreibung die Art und Weise angibt, wie die Kosten eines Vermögenswerts über die Zeiträume verteilt werden, in denen er genutzt wird. Wenn Sie beispielsweise in diesem Jahr eine Anwendung erstellen, deren erwartete durchschnittliche Lebensdauer jedoch fünf Jahre beträgt (wie bei den meisten kommerziellen Anwendungen), werden die Kosten für das Entwicklungsteam und die Tools zum Entwickeln und Bereitstellen der Codebasis gleichmäßig über fünf Jahre abgeschrieben.
 - **Bewertung** ist der Prozess, durch den der Wert eines Unternehmens geschätzt wird. In den meisten Branchen beruht die Bewertung auf der Fähigkeit des Unternehmens, unter Berücksichtigung der erforderlichen Betriebskosten für die Herstellung der entsprechenden Waren Umsatz und Gewinn zu generieren. In manchen Branchen – wie etwa dem Einzelhandel – oder bei Transaktionstypen wie Private Equity können Vermögenswerte und Abschreibung bei der Bewertung des Unternehmens eine wichtige Rolle spielen.
 
 Fast immer ist davon auszugehen, dass verschiedene Führungskräfte – einschließlich des CIO (Chief Information Officer) – darüber debattieren, wie das Kapital optimal genutzt werden sollte, um das Unternehmen in der gewünschten Richtung voranzubringen. Dem CIO ein Mittel an die Hand zu geben, umstrittene Kapitalkostengespräche in klare Zurechenbarkeit für Betriebskosten umzuwandeln, könnte an sich schon ein attraktives Ergebnis sein. In vielen Branchen suchen CFOs aktiv nach Möglichkeiten zur besseren Zuordnung der finanziellen Verantwortlichkeit zu den Kosten der verkauften Waren.

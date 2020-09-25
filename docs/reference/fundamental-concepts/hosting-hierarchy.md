@@ -7,12 +7,12 @@ ms.date: 04/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 876465ac626d99e8a975f284f0db02ac131ea2be
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 78cde026204d7996a18acbb8eb5da5796f2b3686
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885608"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776464"
 ---
 <!-- cSpell:ignore matrixed ISVs -->
 
@@ -49,7 +49,7 @@ Wenn Unternehmen Workloads mithilfe von Matrix- oder zentralisierten Ansätzen u
 
 ![Abbildung eines IT-Portfolios mit mehreren öffentlichen und privaten Cloudplattformen](../../_images/ready/buildout-cloud-platforms.png)
 
-- **Zielzone:** Zielzonen bieten den Workloads Zugriff auf alle _grundlegenden Hilfsprogramme_ (oder gemeinsam genutzten Installationen), die von einer _Plattformumgebung_ bereitgestellt werden, die zur Unterstützung mindestens einer Workload erforderlich ist. Zielzonen sind eine so kritische Komponente in der Cloud, dass die gesamte Bereitschaftsmethodik des Cloud Adoption Framework Zielzonen gewidmet ist. Eine ausführlichere Definition finden Sie unter [Was ist eine Zielzone?](../../ready/landing-zone/index.md).
+- **Zielzonen:** Zielzonen bieten den Workloads Zugriff auf die notwendigen _grundlegenden Hilfsprogramme_ (oder gemeinsam genutzten Installationen), die von einer _Plattformumgebung_ bereitgestellt werden, die zur Unterstützung mindestens einer Workload erforderlich ist. Zielzonen sind so kritisch in der Cloud, dass die gesamte Bereitschaftsmethodik des Cloud Adoption Framework sich auf Zielzonen konzentriert. Eine ausführlichere Definition finden Sie unter [Was ist eine Zielzone?](../../ready/landing-zone/index.md)
 - **Grundlegende Hilfsprogramme:** Diese gemeinsamen IT-Dienste sind für den Betrieb der Workloads innerhalb des Technologie- und Geschäftsportfolios erforderlich.
 - **Plattformumgebung:** Das organisatorische Konstrukt zentralisiert grundlegende Lösungen und stellt sicher, dass diese Kontrollen für alle Zielzonen erzwungen werden.
 - **Cloudplattformen:** In Abhängigkeit von der Gesamtstrategie zur Unterstützung des gesamten _Portfolios_ benötigen Kunden möglicherweise mehrere Cloudplattformen mit unterschiedlichen Bereitstellungen der Plattformumgebung, um mehrere Regionen, Hybridlösungen oder sogar Multicloudlösungen zu verwalten.
@@ -64,13 +64,13 @@ Ein verantwortliches Team verwaltet jede Ebene der Portfoliohierarchie. Die folg
 
 ![An der Hierarchie ausgerichtete Verantwortlichkeit](../../_images/ready/hierarchy-with-roles.png)
 
-<!-- docsTest:ignore "Strategy and Plan methodologies" "Migrate and Plan methodologies" "Migrate and Innovate methodologies" -->
+<!-- docutune:ignore "Strategy and Plan methodologies" "Migrate and Plan methodologies" "Migrate and Innovate methodologies" -->
 
 - **Portfolio:** Das Cloudstrategieteam und das Cloudkompetenzzentrum (CCoE) nutzen die Strategie- und Planungsmethodiken, um Entscheidungen zu steuern, die das Gesamtportfolio betreffen. Das Cloudstrategieteam ist für die Unternehmensebene der Cloudportfoliohierarchie verantwortlich. Das Cloudstrategieteam sollte auch über Entscheidungen in Bezug auf die Umgebung, Zielzonen und Workloads mit hoher Priorität informiert werden.
 - **Cloudplattformen:** Das Cloudgovernanceteam ist für die Disziplinen verantwortlich, die in Übereinstimmung mit der Governancemethodik die Konsistenz in den einzelnen Umgebungen sicherstellen. Das Cloudgovernanceteam ist für die Governance aller Ressourcen in allen Umgebungen verantwortlich. Das Cloudgovernanceteam sollte bei Änderungen, die möglicherweise eine Ausnahme erfordern, oder beim Ändern der geltenden Richtlinien konsultiert werden. Das Cloudgovernanceteam sollte auch über den Fortschritt bei der Workload- und Objekteinführung informiert werden.
 - **Zielzonen und Cloudumgebung:** Das Cloudplattformteam ist für die Entwicklung der Zielzonen und Plattformumgebungen verantwortlich, die die Einführung unterstützen. Das Cloudautomatisierungsteam ist für die Automatisierung der Entwicklung und laufenden Unterstützung dieser Zielzonen und Plattformhilfsprogrammen verantwortlich. Beide Teams verwenden die Bereitschaftsmethodik als Leitfaden für die Implementierung. Beide Teams sollten über den Fortschritt bei der Workloadeinführung und über alle Änderungen im Unternehmen oder in der Umgebung informiert werden.
-- **Workloads**: Die Einführung erfolgt auf der Workloadebene. Cloudeinführungsteams verwenden die Migrations- und Innovationsmethodiken, um skalierbare Prozesse zur Beschleunigung der Einführung einzurichten. Nachdem die Einführung abgeschlossen ist, wird der Besitz der Workloads wahrscheinlich an ein Cloudbetriebsteam übertragen, das die Verwaltungsmethodik zur Steuerung des Operations Managements verwendet. Beide Teams sollten mit der Verwendung des Azure Architecture Framework vertraut sein, um detaillierte architekturbezogene Entscheidungen zu treffen, die sich auf die von ihnen unterstützten Workloads auswirken. Beide Teams sollten über Änderungen an Zielzonen und Umgebungen informiert werden. Beide Teams können gelegentlich zu Features der Zielzone beitragen.
-- **Ressourcen**: Für die Objekte ist in der Regel das Cloudbetriebsteam zuständig. Dieses Team verwendet die Verwaltungsbaseline in der Verwaltungsmethodik, um Entscheidungen des Operations Managements zu leiten. Es sollte auch Azure Advisor und das Azure Architecture Framework nutzen, um detaillierte Änderungen an den Ressourcen und der Architektur vorzunehmen, die für die Anforderungen der Vorgänge erforderlich sind.
+- **Workloads**: Die Einführung erfolgt auf der Workloadebene. Cloudeinführungsteams verwenden die Migrations- und Innovationsmethodiken, um skalierbare Prozesse zur Beschleunigung der Einführung einzurichten. Nachdem die Einführung abgeschlossen ist, wird der Besitz der Workloads wahrscheinlich an ein Cloudbetriebsteam übertragen, das die Verwaltungsmethodik zur Steuerung des Operations Managements verwendet. Beide Teams sollten mit der Verwendung des Microsoft Azure Well-Architected Framework vertraut sein, um detaillierte architekturbezogene Entscheidungen zu treffen, die sich auf die von ihnen unterstützten Workloads auswirken. Beide Teams sollten über Änderungen an Zielzonen und Umgebungen informiert werden. Beide Teams können gelegentlich zu Features der Zielzone beitragen.
+- **Ressourcen**: Für die Objekte ist in der Regel das Cloudbetriebsteam zuständig. Dieses Team verwendet die Verwaltungsbaseline in der Verwaltungsmethodik, um Entscheidungen des Operations Managements zu leiten. Es sollte auch Azure Advisor und das Azure Well-Architected Framework nutzen, um detaillierte Änderungen an den Ressourcen und der Architektur vorzunehmen, die für die Anforderungen der Vorgänge erforderlich sind.
 
 ### <a name="accountability-variants"></a>Verantwortlichkeitsvarianten
 
@@ -126,7 +126,7 @@ Einige Unternehmen, insbesondere schnell wachsende etablierte Startups, haben ei
 
 Da die Umgebung benutzerdefinierte Lösungen hostet, könnte außerdem die DevOps-Pipeline und Berichterstellung auf Anwendungsebene den Bedarf an Betriebs- und Verwaltungsfunktionen ersetzen. Für diese Kunden ist ein reduzierter Fokus auf Betrieb, Governance oder andere unterstützende Rollen wahrscheinlich. Typisch ist auch eine stärkere Betonung der Verantwortlichkeiten der Teams für die Cloudeinführung und die Cloudautomatisierung.
 
-**Portfolioausrichtung:** Das IT-Portfolio wird sich wahrscheinlich auf Workloads und Workloadbesitzer konzentrieren, um kritische Entscheidungen zur Architektur zu fördern. Diese Teams werden wahrscheinlich mehr Wert in der Azure Architecture Framework-Anleitung während der Einführungs- und Betriebsaktivitäten finden.
+**Portfolioausrichtung:** Das IT-Portfolio wird sich wahrscheinlich auf Workloads und Workloadbesitzer konzentrieren, um kritische Entscheidungen zur Architektur zu fördern. Für diese Teams wird wahrscheinlich die Anleitung zum Azure Well-Architected Framework während der Einführungs- und Betriebsaktivitäten größeren Wert haben.
 
 **Definitionen der Grenzen:** Die logischen Grenzen, selbst auf Unternehmensebene, werden sich wahrscheinlich auf die Segmentierung von Produktions- und Nicht-Produktionsumgebungen konzentrieren. Es kann auch eine klare Segmentierung zwischen den Produkten im Softwareportfolio des Unternehmens geben. Gelegentlich kann es auch eine Segmentierung zwischen Entwicklung und gehosteten Kundeninstanzen geben.
 

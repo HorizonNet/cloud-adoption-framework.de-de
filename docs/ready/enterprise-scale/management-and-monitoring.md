@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: fc2f30287ada5572cb90aaec1e814201f751e155
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 475db193a4d712720dd5c2402eb3be43a80ac0db
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574668"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90776396"
 ---
 # <a name="management-and-monitoring"></a>Verwaltung und Überwachung
 
@@ -34,7 +34,7 @@ _Abbildung 1: Plattformverwaltung und -überwachung._
   - Betriebssystemprotokolle (z. B. Internetinformationsdienste (IIS), Ereignisablaufverfolgung für Windows und Syslog-Protokolle)
   - Ereignisse zur Ressourcenintegrität
 - Protokollieren der Sicherheitsüberwachung und Erreichen eines horizontalen Sicherheitsfokus in der gesamten Azure-Umgebung Ihrer Organisation:
-  - Mögliche Integration mit lokalen SIEM-Systemen (Security Information & Event Management) wie ServiceNow oder ArcSight
+  - Mögliche Integration mit lokalen SIEM-Systemen (Security Information & Event Management) wie qRadar oder ArcSight
   - Azure-Aktivitätsprotokolle
   - Azure Active Directory-Prüfberichte (Azure AD)
   - Azure-Diagnosedienste, -protokolle und -metriken; Azure Key Vault-Überwachungsereignisse; NSG-Datenflussprotokolle (Netzwerksicherheitsgruppen) und Ereignisprotokolle
@@ -52,11 +52,11 @@ _Abbildung 1: Plattformverwaltung und -überwachung._
 
 **Entwurfsempfehlungen:**
 
-- Verwenden Sie einen einzigen [Überwachungsprotokoll-Arbeitsbereich](/azure/azure-monitor/platform/design-logs-deployment) zum zentralen Verwalten von Plattformen, es sei denn, die rollenbasierte Zugriffssteuerung (RBAC) und Anforderungen hinsichtlich der Datenhoheit schreiben separate Arbeitsbereiche vor. Die zentralisierte Protokollierung ist entscheidend für die Transparenz, die Betriebsführungsteams benötigen. Die Zentralisierung der Protokollierung ermöglicht Berichte zu den Themen Change Management, Dienstintegrität, Konfiguration und den meisten anderen Aspekten des IT-Betriebs. Das Konvergieren in ein zentralisiertes Arbeitsbereichsmodell verringert den Verwaltungsaufwand und mindert mögliche Lücken für Einblicke.
+- Verwenden Sie einen einzigen [Überwachungsprotokoll-Arbeitsbereich](/azure/azure-monitor/platform/design-logs-deployment) zum zentralen Verwalten von Plattformen, es sei denn, die rollenbasierte Zugriffssteuerung (RBAC), Anforderungen hinsichtlich der Datenhoheit und Datenaufbewahrungsrichtlinien schreiben separate Arbeitsbereiche vor. Die zentralisierte Protokollierung ist entscheidend für die Transparenz, die Betriebsführungsteams benötigen. Die Zentralisierung der Protokollierung ermöglicht Berichte zu den Themen Change Management, Dienstintegrität, Konfiguration und den meisten anderen Aspekten des IT-Betriebs. Das Konvergieren in ein zentralisiertes Arbeitsbereichsmodell verringert den Verwaltungsaufwand und mindert mögliche Lücken für Einblicke.
 
     Im Zusammenhang mit der Architektur auf Unternehmensebene geht es bei der zentralisierten Protokollierung hauptsächlich um Plattformvorgänge. Diese Betonung schließt nicht die Verwendung desselben Arbeitsbereichs für die VM-basierte Anwendungsprotokollierung aus. Ist ein Arbeitsbereich im ressourcenbezogenen Zugriffssteuerungsmodus konfiguriert, wird präzises RBAC erzwungen, um sicherzustellen, dass App-Teams nur Zugriff auf die Protokolle für ihre Ressourcen haben. In diesem Modell profitieren App-Teams von der Nutzung der vorhandenen Plattforminfrastruktur, da sie ihren Verwaltungsaufwand reduzieren können. Für alle Nicht-Computeressourcen, wie Web-Apps oder Azure Cosmos DB-Datenbanken, können Anwendungsteams ihre eigenen Log Analytics-Arbeitsbereiche verwenden und Diagnosen und Metriken konfigurieren, die hierher weitergeleitet werden sollen.
 
-<!-- docsTest:ignore WORM -->
+<!-- docutune:ignore WORM -->
 
 - Exportieren Sie Protokolle in Azure Storage, wenn Protokolle länger als zwei Jahre aufbewahrt werden müssen. Verwenden Sie unveränderlichen Speicher mit WORM-Richtlinie (Write Once, Read Many), um Daten für einen vom Benutzer angegebenen Zeitraum festzulegen, dass sie weder gelöscht noch geändert werden können.
 - Verwenden Sie Azure Policy für Zugriffssteuerung und Erstellung von Compliance-Berichten. Mit Azure Policy können organisationsweite Einstellungen erzwungen werden, um die konsistente Richtlinieneinhaltung und die schnelle Erkennung von Verstößen sicherzustellen. Weitere Informationen finden Sie unter [Grundlegendes zu Azure Policy-Auswirkungen](/azure/governance/policy/concepts/effects).

@@ -7,16 +7,16 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: e9106a89d19d06bc8c1c14290c65d9ed2387e097
-ms.sourcegitcommit: af521583b98153f7157895b7ba9de71183d437b0
+ms.openlocfilehash: 04b34a0914ec0be193c670be005af269d0aa2d14
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "89176496"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775716"
 ---
 # <a name="get-started-understand-and-document-foundational-alignment-decisions"></a>Erste Schritte: Verstehen und Dokumentieren grundlegender Ausrichtungsentscheidungen
 
-Die Umstellung auf die Cloud kann eine Vielzahl von geschäftlichen, technischen und organisatorischen Vorteilen ermöglichen. Unabhängig davon, was Sie erreichen möchten, gibt es bei Ihrem Umstieg auf die Cloud einige anfängliche Entscheidungen, die von jedem beteiligten Team verstanden werden sollten. 
+Die Umstellung auf die Cloud kann eine Vielzahl von geschäftlichen, technischen und organisatorischen Vorteilen ermöglichen. Unabhängig davon, was Sie erreichen möchten, gibt es bei Ihrem Umstieg auf die Cloud einige anfängliche Entscheidungen, die von jedem beteiligten Team verstanden werden sollten.
 
 > [!NOTE]
 > Wenn Sie einen der folgenden Links auswählen, gelangen Sie zum Inhaltsverzeichnis des Microsoft Cloud Adoption Frameworks für Azure und können nach grundlegenden Konzepten suchen, die Sie später verwenden, um dem Team bei der Implementierung der zugehörigen Anleitung zu helfen. Versehen Sie diese Seite mit einem Lesezeichen, um häufig zu dieser Checkliste zurückzukehren.
@@ -25,7 +25,7 @@ Die Umstellung auf die Cloud kann eine Vielzahl von geschäftlichen, technischen
 
 Wenn Sie diesen Leitfaden durcharbeiten, zeichnen Sie unsere grundlegenden Entscheidungen mithilfe der [Vorlage für anfängliche Entscheidungen](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/references/initial-decisions-checklist.docx) auf. Die Vorlage kann Ihnen schnell helfen, das Onboarding für Teammitglieder durchzuführen, die am Lebenszyklus der Cloudeinführung teilnehmen, indem sie verdeutlicht, wie und warum Ihre Cloudumgebung konfiguriert ist.
 
-Wenn Sie bereits eine Umgebung in Azure verwenden, kann der [CAF Governance Vizualizer](https://github.com/microsoft/CloudAdoptionFramework/tree/master/govern/AzureGovernanceVisualizer) Ihnen helfen, Ihre Dokumentation zu beschleunigen. Erhalten Sie Erkenntnisse über Richtlinien, RBAC, Blaupausen, Abonnements und mehr. Aus den gesammelten Daten bietet das Tool Transparenz für Ihre Hierarchiezuordnung, erstellt eine Mandantenübersicht und differenzierte Erkenntnisse zum Umfang von Verwaltungsgruppen und Abonnements. Das Tool ist im begleitenden Quellcoderepository des Cloud Adoption Framework zu finden: https://github.com/microsoft/CloudAdoptionFramework/tree/master/govern/AzureGovernanceVisualizer. 
+Wenn Sie bereits eine Umgebung in Azure verwenden, kann die [Azure Governance-Schnellansicht](https://github.com/microsoft/CloudAdoptionFramework/tree/master/govern/AzureGovernanceVisualizer) Ihnen helfen, Ihre Dokumentation zu beschleunigen. Verschaffen Sie sich Einblicke in Richtlinien, rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC), Azure Blueprints, Abonnements und vieles mehr. Auf der Grundlage der gesammelten Daten bietet das Tool Einblicke in Ihre Hierarchiezuordnung, erstellt eine Mandantenzusammenfassung und liefert differenzierte Erkenntnisse zum Umfang von Verwaltungsgruppen und Abonnements. 
 
 ## <a name="step-1-understand-how-azure-works"></a>Schritt 1: Wie funktioniert Azure?
 

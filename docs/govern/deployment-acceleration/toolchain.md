@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 11ec84ecf3cebed0f70cc23898984d7e362e1dc9
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 4f274de1e47699319ca366b13ab3f812a47fe96c
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88881086"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775325"
 ---
 # <a name="deployment-acceleration-tools-in-azure"></a>Tools für die Beschleunigung der Bereitstellung in Azure
 
@@ -23,7 +23,7 @@ Cloudverwalter, -überwacher und -architekten mit Interesse an der Governance we
 
 Im Folgenden ist eine Liste der Azure-Tools aufgeführt, die zur Ausreifung der Richtlinien und Prozesse beitragen können, die diese Disziplin unterstützen.
 
-|  | [Azure Policy](/azure/governance/policy/overview) | [Azure-Verwaltungsgruppen](/azure/governance/management-groups) | [Azure Resource Manager](/azure/azure-resource-manager/management/overview) | [Azure Blueprint](/azure/governance/blueprints/overview) | [Azure Resource Graph](/azure/governance/resource-graph/overview) | [Azure Cost Management und Abrechnung](/azure/cost-management) |
+|  | [Azure Policy](/azure/governance/policy/overview) | [Azure-Verwaltungsgruppen](/azure/governance/management-groups) | [Azure Resource Manager](/azure/azure-resource-manager/management/overview) | [Azure Blueprint](/azure/governance/blueprints/overview) | [Azure Resource Graph](/azure/governance/resource-graph/overview) | [Azure Cost Management + Billing](/azure/cost-management) |
 |---------|---------|---------|---------|---------|---------|---------|
 | **Unternehmensrichtlinien implementieren**     | Ja | Nein  | Nein  | Nein | Nein | Nein |
 | **Richtlinien zwischen Abonnements anwenden**     | Erforderlich | Ja  | Nein  | Nein | Nein | Nein |

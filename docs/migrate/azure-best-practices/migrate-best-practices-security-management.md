@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5d8ecccaee60a159a9e2bf5b3a57e0194c87a9ea
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a2454acef8fdc647bfef24fc3a4b20126869f141
+ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570962"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90681448"
 ---
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
 
@@ -152,9 +152,10 @@ Azure bietet folgende Lösungen:
 
 Wenn Sie Ihre Workloads migrieren und in Azure ausführen, können Mitarbeiter mit Workloadzugriff standortunabhängig arbeiten. Ihr Sicherheitsteam sollte den Zugriff auf Ihre Azure-Mandanten und -Ressourcengruppen in regelmäßigen Abständen überprüfen. Azure bietet Lösungen für die Identitätsverwaltung und die Sicherheit der Zugriffssteuerung (z. B. die rollenbasierte Zugriffssteuerung), um Berechtigungen für den Zugriff auf Azure-Ressourcen zu autorisieren.
 
-Die rollenbasierte Zugriffssteuerung weist Zugriffsberechtigungen für Sicherheitsprinzipale zu. Sicherheitsprinzipale repräsentieren Benutzer, Gruppen (aus Benutzern), Dienstprinzipale (von Anwendungen und Diensten verwendete Identitäten) und verwaltete Identitäten (automatisch von Azure verwaltete Azure Active Directory-Identitäten).
-
-Die rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC) kann Sicherheitsprinzipalen Rollen wie Besitzer, Mitwirkender und Leser zuweisen. Das Feature kann auch Rollendefinitionen (eine Sammlung von Berechtigungen) zuweisen, um die Vorgänge zu definieren, die von den Rollen ausgeführt werden können. Die rollenbasierte Zugriffssteuerung kann auch Bereiche festlegen, die die Grenze für eine Rolle definieren. Ein Bereich kann auf verschiedenen Ebenen festgelegt werden, z. B. für Verwaltungsgruppen, Abonnements, Ressourcengruppen oder Ressourcen.
+- Die rollenbasierte Zugriffssteuerung weist Zugriffsberechtigungen für Sicherheitsprinzipale zu. Sicherheitsprinzipale repräsentieren Benutzer, Gruppen (aus Benutzern), Dienstprinzipale (von Anwendungen und Diensten verwendete Identitäten) und verwaltete Identitäten (automatisch von Azure verwaltete Azure Active Directory-Identitäten).
+- Die rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC) kann Sicherheitsprinzipalen Rollen wie Besitzer, Mitwirkender und Leser zuweisen. Das Feature kann auch Rollendefinitionen (eine Sammlung von Berechtigungen) zuweisen, um die Vorgänge zu definieren, die von den Rollen ausgeführt werden können.
+- Die rollenbasierte Zugriffssteuerung kann auch Bereiche festlegen, die die Grenze für eine Rolle definieren. Ein Bereich kann auf verschiedenen Ebenen festgelegt werden, z. B. für Verwaltungsgruppen, Abonnements, Ressourcengruppen oder Ressourcen.
+- Stellen Sie sicher, dass Administratoren mit Azure-Zugriff nur auf diejenigen Ressourcen zugreifen können, die Sie zulassen möchten. Wenn die vordefinierten Rollen in Azure nicht differenziert genug sind, können Sie benutzerdefinierte Rollen erstellen, um Zugriffsberechtigungen zu trennen und zu begrenzen.
 
 Stellen Sie sicher, dass Administratoren mit Azure-Zugriff nur auf diejenigen Ressourcen zugreifen können, die Sie zulassen möchten. Wenn die vordefinierten Rollen in Azure nicht differenziert genug sind, können Sie benutzerdefinierte Rollen erstellen, um Zugriffsberechtigungen zu trennen und zu begrenzen.
 

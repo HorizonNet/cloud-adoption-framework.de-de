@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 54d35e4b895961eb290de9ab151fa1332bb0bc8d
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: bb1c7ff3de8fae692decd61c0f939ddd21239163
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603332"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90775682"
 ---
 # <a name="get-started-manage-cloud-costs"></a>Erste Schritte: Verwalten von Cloudkosten
 
@@ -76,7 +76,7 @@ Strategische Entscheidungen wirken sich direkt auf die Kostenkontrolle aus, durc
 **Ziele:**
 
 - Erfassen Sie Beweggründe, Ergebnisse und geschäftliche Begründungen in der [Strategie- und Planungsvorlage](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx).
-- Erstellen des ersten Budgets mit Azure Cost Management und Abrechnung.
+- Erstellen des ersten Budgets mit Azure Cost Management + Billing.
 
 **Hinweis zur Erreichung der Ziele:**
 
@@ -104,7 +104,7 @@ Der Einführungsplan bietet Klarheit bezüglich der Zeitachse der Aktivitäten w
 - [Erfassen von Bestandsdaten](../digital-estate/inventory.md). Richten Sie eine Datenquelle für die Analyse des digitalen Bestands vor der Einführung ein.
 - [Bewährte Methode: Azure Migrate](../plan/contoso-migration-assessment.md). Verwenden Sie Azure Migrate, um den Bestand zu erfassen.
 - [Inkrementelle Rationalisierung](../digital-estate/rationalize.md#incremental-rationalization). Während der inkrementellen Rationalisierung kann eine quantitative Analyse für die Zwecke der Budgeterstellung Cloudkandidaten identifizieren.
-- [Abstimmen von Kostenmodellen und Vorhersagemodellen](../digital-estate/calculate.md). Verwenden Sie Azure Cost Management und Abrechnung, um Kosten- und Vorhersagemodelle durch [Erstellen von Budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) abzustimmen.
+- [Abstimmen von Kostenmodellen und Vorhersagemodellen](../digital-estate/calculate.md). Verwenden Sie Azure Cost Management + Billing, um Kosten- und Vorhersagemodelle durch [Erstellen von Budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) abzustimmen.
 - [Entwickeln Ihres Cloudeinführungsplans](../plan/plan-intro.md#build-your-cloud-adoption-plan). Erstellen Sie einen Plan mit handlungsrelevanten Details zu Workloads und Ressourcen sowie zum zeitlichen Ablauf. Dieser Plan stellt die Grundlage für Ausgaben im Zeitverlauf (oder Kostenprognose) dar. *Ausgaben im Zeitverlauf* ist die anfängliche Baseline für alle umsetzbaren Optimierungsanalysen innerhalb der Governancedisziplin „Cost Management“.
 
 <br>

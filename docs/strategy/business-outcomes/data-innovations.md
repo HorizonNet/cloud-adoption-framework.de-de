@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 00755767c560285d48626b829023b44001b21c63
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 1f7c4c88aa2daf333bbed336e00b428375553129
+ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885149"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "90774152"
 ---
 # <a name="data-innovations"></a>Dateninnovationen
 
@@ -28,7 +28,7 @@ Ein Data Warehouse-Migrationsprojekt beinhaltet viele Komponenten. Dazu gehören
 
 Sobald Sie Ihr Data Warehouse zu Azure Synapse Analytics migriert haben, haben Sie die großartige Gelegenheit, andere Technologien im analytischen Ökosystem von Microsoft zu nutzen. So können Sie Ihr Data Warehouse nicht nur modernisieren, sondern auch Erkenntnisse aus anderen analytischen Datenspeichern in Azure zusammenführen.
 
-Sie können die ETL-Verarbeitung so ausweiten, dass Daten eines beliebigen Typs in Azure Data Lake Storage erfasst werden. Mithilfe von Azure Data Factory können Sie sie nach Bedarf vorbereiten und integrieren. So werden vertrauenswürdige und allgemein verständliche Datenassets erzeugt, die von Ihrem Data Warehouse verarbeitet werden können, und auf die Data Scientists und andere Anwendungen zugreifen können. Sie können batchorientierte analytische Echtzeitpipelines erstellen. Sie können auch Machine Learning-Modelle erstellen, die so bereitgestellt werden können, dass sie im Batch, in Echtzeit und bei Bedarf als Dienst ausgeführt werden.
+Sie können die ETL-Verarbeitung so ausweiten, dass Daten eines beliebigen Typs in Azure Data Lake Storage erfasst werden. Mithilfe von Azure Data Factory können Sie sie nach Bedarf vorbereiten und integrieren. So werden vertrauenswürdige und allgemein verständliche Datenassets erzeugt, die von Ihrem Data Warehouse verarbeitet werden können, und auf die Data Scientists und andere Anwendungen zugreifen können. Sie können batchorientierte analytische Echtzeitpipelines erstellen. Sie können auch Machine Learning-Modelle erstellen, die so bereitgestellt werden können, dass sie im Batch, in Echtzeit und bei Bedarf ausgeführt werden.
 
 Außerdem können Sie PolyBase verwenden, um auch Erkenntnisse über Lösungen außerhalb Ihres Data Warehouse zu gewinnen. So vereinfachen Sie den Zugriff auf Erkenntnisse, die über mehrere zugrunde liegenden Analyseplattformen in Azure gewonnen werden. Hierzu werden ganzheitliche integrierte Sichten in einem logischen Data Warehouse erstellt, sodass Sie problemlos auf Streaming, Big Data und herkömmliche Data Warehouse-Einblicke aus BI-Tools und -Anwendungen zugreifen können.
 
