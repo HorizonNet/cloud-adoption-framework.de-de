@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: a82428e522e263a7e4610ed1b202a8bada19456e
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 3df2987e8580b283766b672f2377c3388923fe21
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775665"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108247"
 ---
 # <a name="get-started-accelerate-migration"></a>Erste Schritte: Beschleunigen der Migration
 
@@ -205,7 +205,8 @@ Governance ist ein wichtiger Faktor für den langfristigen Erfolg einer beliebig
 
 - Bereitstellen einer ersten Grundlage für Governance.
 - Abschließen eines Governancebenchmarks, um zukünftige Verbesserungen zu planen.
-- Zeitplanrisiko: Die Verbesserung der Richtlinien- und Governanceimplementierung kann eine Woche bis vier weitere Wochen pro Fachrichtung hinzufügen.
+- Zeitachsenrisiko:
+  - Die Verbesserung von Richtlinien und Governanceimplementierung kann pro Disziplin bis zu vier Wochen länger dauern.
 
 <br>
 

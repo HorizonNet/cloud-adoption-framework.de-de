@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 78468928e666d7c9db87f6b28d51fa1376fbd990
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 84df4aac039fdd0cde7c7c06fb72bd7cd918b39b
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604776"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108040"
 ---
 # <a name="standard-enterprise-governance-guide-the-narrative-behind-the-governance-strategy"></a>Governanceleitfaden für Standardunternehmen: Die Geschichte hinter der Governancestrategie
 
@@ -59,7 +59,9 @@ Die folgenden Änderungen werden in den nächsten Jahren erwartet:
 
 - Die Teams für Anwendungsentwicklung und Business Intelligence möchten in den nächsten 24 Monaten cloudbasierte Lösungen in die Produktion bringen – basierend auf der Vision in Bezug auf Kundenbindung und neue Produkte.
 
-- In diesem Jahr schließt das IT-Team die Außerbetriebnahme der Workloads für die Notfallwiederherstellung im Rechenzentrum „DR“ ab, in dem 2.000 VMs in die Cloud migriert werden. Durch diese Maßnahme wird in den nächsten fünf Jahren mit Kosteneinsparungen in Höhe von 25 Mio. USD gerechnet. ![Lokale Kosten im Vergleich zu Azure-Kosten zeigen eine Rendite von 25 Millionen US-Dollar in den nächsten fünf Jahren.](../../../_images/govern/calculator-small-to-medium-enterprise.png)
+- In diesem Jahr schließt das IT-Team die Außerbetriebnahme der Workloads für die Notfallwiederherstellung im Rechenzentrum „DR“ ab, in dem 2.000 VMs in die Cloud migriert werden. Durch diese Maßnahme wird in den nächsten fünf Jahren mit Kosteneinsparungen in Höhe von 25 Mio. USD gerechnet.
+
+  ![Lokale Kosten im Vergleich zu Azure-Kosten zeigen eine Rendite von 25 Millionen US-Dollar in den nächsten fünf Jahren.](../../../_images/govern/calculator-small-to-medium-enterprise.png)
 
 - Das Unternehmen plant, einige IT-Investitionen zu ändern, indem die gebundenen Kapitalkosten als Betriebskosten innerhalb der IT umdefiniert werden. Diese Änderung ermöglicht mehr Kostenkontrolle, sodass die IT weitere geplante Aufwendungen beschleunigen kann.
 
