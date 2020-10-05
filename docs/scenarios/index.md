@@ -7,12 +7,12 @@ ms.date: 07/21/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: caa399f50742978f20cca49fc8a8fc9f3f10b425
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: cb923e88d1bcbea21c3e38ecba7d9eda7999eff6
+ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885455"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91621483"
 ---
 <!-- docutune:ignore "One Migration" -->
 <!-- cSpell:ignore HANA -->
@@ -25,7 +25,7 @@ Sowohl Azure als auch Azure Migrate sind für das Hosting von Microsoft-Technol
 
 Das folgende Diagramm und die folgende Tabelle zeigen eine Reihe von Szenarien, die auf der gleichen iterativen Methodik für die Migration und Modernisierung beruhen.
 
-![Diagramm: Cloud Adoption Framework-Migrationsmodell](../_images/migrate/one-migrate.png)
+![Diagramm des Cloud Adoption Framework-Migrationsmodells mit den benötigten VM-, Apps-, Daten- und Hybridressourcen](../_images/migrate/one-migrate.png)
 
 | | | | |
 |---------|---------|---------|---------|
@@ -39,7 +39,7 @@ Das folgende Diagramm und die folgende Tabelle zeigen eine Reihe von Szenarien, 
 
 In jedem der vorhergehenden Migrationsszenarien werden Sie durch den gleichen grundlegenden Prozess geleitet, wenn Sie Ihre bestehenden Workloads in die Cloud verlagern, wie hier gezeigt:
 
-![Diagramm: Cloud Adoption Framework-Migrationsmodell](../_images/migrate/methodology.png)
+![Diagramm des Cloud Adoption Framework-Migrationsmodells, das die Migrationswellen und den Migrationsaufwand anzeigt](../_images/migrate/methodology.png)
 
 In jedem Szenario strukturieren Sie Migrationswellen, um die Releases mehrerer Workloads zu steuern. Das Erstellen eines Cloudeinführungsplans und das Einrichten von Azure-Zielzonen im Rahmen der Planungs- und Bereitschaftsmethodik erleichtern Ihnen die Strukturierung Ihrer Migrationswellen.
 

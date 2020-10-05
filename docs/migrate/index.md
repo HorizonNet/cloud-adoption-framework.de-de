@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: seo-azure-migrate
-ms.openlocfilehash: 5c4762e71a88f06520081ba9bcb4b382e7e1bd74
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 21fd1e6f0803ee8be10ec8dc928bb95120e3bb03
+ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776056"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91621415"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Cloudmigration im Cloud Adoption Framework
 
@@ -24,10 +24,10 @@ Zur Vorbereitung auf diese Phase des Cloudeinführungszyklus werden die folgende
 
 | <span title="Symbol">&nbsp;</span> | <span title="Beschreibung">&nbsp;</span> |
 |--|--|
-| <br> ![1](../_images/icons/1.png) | <br> [Migrieren Ihrer ersten Workload](./azure-migration-guide/index.md): Machen Sie sich mithilfe des Leitfadens zur Azure-Migration mit den nativen Azure-Tools und dem Ansatz für die Migration vertraut. |
-| <br> ![2](../_images/icons/2.png) | <br> [Migrationsszenarios](./azure-best-practices/index.md): Nutzen Sie zusätzliche Migrationstools und -ansätze für weitere Migrationsszenarien. |
-| <br> ![3](../_images/icons/3.png) | <br> [Bewährte Methoden:](./azure-best-practices/index.md) Gehen Sie allgemeine Migrationsanforderungen durch die Anwendung einheitlicher Best Practices an. |
-| <br> ![4](../_images/icons/4.png) | <br> [Prozessverbesserungen](./migration-considerations/index.md): Die Migration ist stark prozessorientiert. Nutzen Sie diese Prozessverbesserungen, um verschiedene Aspekte Ihrer Migration zu bewerten und weiterzuentwickeln und auf Veränderungen bei den Migrationsaufgaben zu reagieren. |
+| <br> :::image type="icon" source="../_images/icons/1.png"::: | <br> [Migrieren Ihrer ersten Workload](./azure-migration-guide/index.md): Machen Sie sich mithilfe des Leitfadens zur Azure-Migration mit den nativen Azure-Tools und dem Ansatz für die Migration vertraut. |
+| <br> :::image type="icon" source="../_images/icons/2.png"::: | <br> [Migrationsszenarios](./azure-best-practices/index.md): Nutzen Sie zusätzliche Migrationstools und -ansätze für weitere Migrationsszenarien. |
+| <br> :::image type="icon" source="../_images/icons/3.png"::: | <br> [Bewährte Methoden:](./azure-best-practices/index.md) Gehen Sie allgemeine Migrationsanforderungen durch die Anwendung einheitlicher Best Practices an. |
+| <br> :::image type="icon" source="../_images/icons/4.png"::: | <br> [Prozessverbesserungen](./migration-considerations/index.md): Die Migration ist stark prozessorientiert. Nutzen Sie diese Prozessverbesserungen, um verschiedene Aspekte Ihrer Migration zu bewerten und weiterzuentwickeln und auf Veränderungen bei den Migrationsaufgaben zu reagieren. |
 
 Diese Migrationsmethodik und die obigen Schritte basieren auf den folgenden Annahmen:
 

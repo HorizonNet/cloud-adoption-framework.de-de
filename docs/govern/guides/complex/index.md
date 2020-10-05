@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 0bf289a8c5c4bfc91fe8858c7da8045fd28ce3be
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 1a6bd3dc0ae4f5a2a0ef9236992cd4f5b7b186f8
+ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604940"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91621092"
 ---
 # <a name="governance-guide-for-complex-enterprises"></a>Governanceleitfaden für komplexe Unternehmen
 
@@ -69,7 +69,7 @@ Sobald dieses MVP bereitgestellt ist, können zusätzliche Ebenen der Governance
 
 Im MVP sind Methoden und Tools für die [Disziplin der Beschleunigung der Bereitstellung](../../deployment-acceleration/index.md) festgelegt, um Unternehmensrichtlinien schnell anwenden zu können. Insbesondere verwendet das MVP Azure Blueprints, Azure Policy und Azure-Verwaltungsgruppen, um einige grundlegende Unternehmensrichtlinien anzuwenden, wie in der Lösung für das fiktive Unternehmen definiert. Diese Unternehmensrichtlinien werden mithilfe von Azure Resource Manager-Vorlagen und Azure-Richtlinien angewandt, um eine kleine Baseline für Identität und Sicherheit festzulegen.
 
-![Beispiel für ein inkrementelles Governance-MVP](../../../_images/govern/governance-mvp.png)
+![Diagramm, das ein Beispiel für ein inkrementelles Governance-MVP zeigt](../../../_images/govern/governance-mvp.png)
 
 ## <a name="incremental-improvements-to-governance-practices"></a>Inkrementelle Verbesserung der Governancemethoden
 
@@ -80,7 +80,7 @@ Im Lauf der Zeit wird dieses Governance-MVP verwendet, um Governancemethoden sch
 - Die Disziplin „Sicherheitsbaseline“, wenn geschützte Daten bereitgestellt werden
 - Die Disziplin „Ressourcenkonsistenz“, wenn das IT-Betriebsteam beginnt, unternehmenskritische Workloads zu unterstützen
 
-![Beispiel für ein inkrementelles Governance-MVP](../../../_images/govern/governance-improvement-large.png)
+![Diagramm, das eine inkrementelle Verbesserung der Governancemethoden zeigt](../../../_images/govern/governance-improvement-large.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
 

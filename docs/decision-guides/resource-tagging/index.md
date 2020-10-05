@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 8318e2a6633221b6b94408f997b78bbca58b9595
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: f9ca594839cbd1e5d5ff641c81b083d30cd4481b
+ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884588"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91620837"
 ---
 # <a name="resource-naming-and-tagging-decision-guide"></a>Leitfaden zur Entscheidungsfindung für Ressourcenbenennung und -markierung
 
@@ -29,7 +29,7 @@ Die Organisation cloudbasierter Ressourcen ist eine wichtige Aufgabe für die IT
   - [Warnungen](/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
   - [Nachverfolgung und Berichterstellung für wiederkehrende Ausgaben](../../govern/cost-management/compliance-processes.md)
   - [Optimierungen nach der Implementierung](../../govern/cost-management/discipline-improvement.md#operate-and-post-implementation)
-  - [Taktiken zur Kostenoptimierung](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)
+  - [Taktiken zur Kostenoptimierung](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-best-practices)
 - **Operatives Management:** Die Transparenz von geschäftlichen Verpflichtungen und Vereinbarungen zum Servicelevel (Service Level Agreement, SLA) für das operative Managementteam ist ein wichtiger Aspekt des laufenden Betriebs. Für eine gute Verwaltung ist die Verwendung von Tags für die [Kritikalität für das Unternehmen](../../manage/considerations/criticality.md) unabdingbar.
 - **Sicherheit**: Die Klassifizierung von Daten und der Auswirkungen auf die Sicherheit ist ein wichtiger Datenpunkt für das Team, wenn Sicherheitsverletzungen oder andere Sicherheitsprobleme auftreten. Für einen sicheren Betrieb ist die Verwendung von Tags für die [Datenklassifizierung](../../govern/policy-compliance/data-classification.md) erforderlich.
 - **Governance und Einhaltung gesetzlicher Bestimmungen:** Die Aufrechthaltung der Konsistenz zwischen Ressourcen hilft Ihnen, Abweichungen von vereinbarten Richtlinien zu erkennen. In diesem [Artikel zur Grundlage für die Governance](../../govern/guides/complex/prescriptive-guidance.md#resource-tagging) wird gezeigt, wie eines der unten beschriebenen Muster bei der Bereitstellung von Governancemethoden helfen kann. Ähnliche Muster sind zum Auswerten der Einhaltung gesetzlicher Bestimmungen mithilfe von Tags verfügbar.

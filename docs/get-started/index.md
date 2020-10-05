@@ -7,12 +7,12 @@ ms.date: 08/27/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 5fba7cb05db8087d14d86cf203fd907b027e00f0
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: b04d217a426706a7eaf7826ea2b4fbcedee437fa
+ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775699"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91620872"
 ---
 # <a name="get-started-with-the-cloud-adoption-framework"></a>Erste Schritte mit dem Cloud Adoption Framework
 
@@ -41,8 +41,8 @@ Die Cloudeinführungsjourney eines Unternehmens basiert in der Regel auf einer R
 
 Die Cloudeinführung erfordert technische Änderungen, für die digitale Transformation mit der Cloud ist jedoch mehr als IT erforderlich. Verwenden Sie diese Leitfäden, um verschiedene Teams zu koordinieren und so die Migration und Innovation zu beschleunigen.
 
-|                                                                                     |                                                                                                                                |
-|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| Handbuch | BESCHREIBUNG |
+| ----- | ----------- |
 | [Sie möchten vorhandene Workloads zur Cloud migrieren.](./migrate.md)                   | Dieser Leitfaden ist ein idealer Ausgangspunkt, wenn der Schwerpunkt auf der Migration lokaler Workloads zur Cloud liegt. |
 | [Sie möchten neue Produkte und Dienste in der Cloud erstellen.](./innovate.md)             | Dieser Leitfaden hilft Ihnen dabei, sich auf die Bereitstellung innovativer Lösungen in der Cloud vorzubereiten.                                       |
 | [Sie kommen aufgrund des Designs und der Konfiguration der Umgebung nicht weiter.](./design-and-configuration.md) | Anhand dieses Leitfadens können Sie schnell eine Umgebung entwerfen und konfigurieren.                                           |
@@ -51,8 +51,8 @@ Die Cloudeinführung erfordert technische Änderungen, für die digitale Transfo
 
 Im weiteren Verlauf Ihrer Cloudeinführungsjourney kann ein solides Betriebsmodell dazu beitragen, dass kluge Entscheidungen getroffen werden. Sie sollten auch Änderungen in der Organisation in Erwägung ziehen. Diese Leitfäden können Sie bei der Koordination von Personen und der Verbesserung von Vorgängen unterstützen, um Ihr Cloudbetriebsmodell zu entwickeln.
 
-|                                                                                     |                                                                                                                                |
-|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| Handbuch | BESCHREIBUNG |
+| ----- | ----------- |
 | [Wie wird während der Cloudtransformation optimaler Betrieb gewährleistet?](./operational-excellence.md)                   | Die Schritte in diesem Leitfaden helfen dem Strategieteam dabei, organisatorische Change Management-Prozesse zu steuern, die für die Sicherstellung eines optimalen Betriebs erforderlich sind. |
 | [Wie werden Unternehmenskosten verwaltet?](./manage-costs.md)                                          | Dieser Leitfaden kann Sie dabei unterstützen, mit der Optimierung der Unternehmenskosten zu beginnen und die Kosten in der gesamten Umgebung zu verwalten.                                                                           |
 | [Wie wird die Cloudumgebung des Unternehmens konsistent geschützt?](./security.md)             | Mit diesem Leitfaden können Sie sicherstellen, dass die Sicherheitsanforderungen im gesamten Unternehmen erfüllt werden, um das Risiko von Sicherheitsverletzungen zu minimieren und die Wiederherstellung nach Sicherheitsverletzungen zu beschleunigen.                                       |
@@ -63,8 +63,8 @@ Im weiteren Verlauf Ihrer Cloudeinführungsjourney kann ein solides Betriebsmode
 
 Abhängig von Ihrer Einführungsstrategie und dem Betriebsmodell müssen Sie unter Umständen einige Teams zusammenstellen. Die Informationen in diesem Abschnitt unterstützen die neuen Teams bei den ersten Schritten.
 
-|                                                                                     |                                                                                                                                |
-|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| Handbuch | BESCHREIBUNG |
+| ----- | ----------- |
 | [Wie wird die Organisation ausgerichtet?](./org-alignment.md)                               | Dieser Leitfaden kann Ihnen bei der Einrichtung einer Organisationsstruktur helfen, die mit geeigneten Mitarbeitern besetzt ist.                               |
 | [Benötige ich ein Cloudstrategieteam?](./team/cloud-strategy.md)     | Dieses Team stellt sicher, dass die Cloudeinführungsbemühungen in Übereinstimmung mit den Geschäftsergebnissen vorangetrieben werden.                                |
 | [Was macht ein Cloudeinführungsteam?](./team/cloud-adoption.md)     | Dieses Team implementiert die im Plan beschriebenen technischen Lösungen gemäß den Governanceanforderungen.             |
