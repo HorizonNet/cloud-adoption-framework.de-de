@@ -7,16 +7,18 @@ ms.date: 09/18/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 2b3b29551d734c8c3e4d2cacc6fec0929a022258
-ms.sourcegitcommit: 8d3a8e7211ceb94ba351914a622f293f72286039
+ms.openlocfilehash: 46fe6f695b4b3e38c28e0860a15153a02a24a16a
+ms.sourcegitcommit: 899fcd5314ce2748e98c69e27c7f2e318ab27ac5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91002932"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91206227"
 ---
 # <a name="azure-security-best-practices"></a>Azure-Sicherheit – bewährte Methoden
 
 Dies sind die wichtigsten bewährten Sicherheitsmethoden, die Microsoft für Azure auf der Grundlage dessen empfiehlt, was wir von Kunden und in unseren eigenen Umgebungen gelernt haben.
+
+Eine Videopräsentation dieser bewährten Methoden finden Sie in der [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/video-hub/top-10-best-practices-for-azure-security/m-p/1698837).
 
 ## <a name="1-people-educate-teams-about-the-cloud-security-journey"></a>1. Personen: Schulen von Teams über den Weg zur Cloudsicherheit
 

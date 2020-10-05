@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: a53c0ae2673abb7aee07a4ff15b7d60adbb479a9
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: ef357abfec7180ad484c783a86341f26f66b7a59
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775563"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108241"
 ---
 <!-- docutune:casing ARO "standard HDD" -->
 
@@ -105,7 +105,7 @@ Sie können eine Reihe von Optionen auswählen, wenn Sie virtuelle Azure-Compute
 
 - Es ist wichtig, die Preisunterschiede zwischen diesen virtuellen Computern zu verstehen sowie die langfristigen Auswirkungen auf das Budget.
 - Jeder Typ umfasst eine bestimmte Anzahl darin enthaltener VM-Serien.
-- Außerdem können Sie nach dem Auswählen einer VM innerhalb einer Serie die VM nur innerhalb dieser Serie zentral hoch- oder herunterskalieren. Eine `DS2_v2`-Instanz kann z. B. bis zu `DS4_v2` hochskaliert werden, aber sie kann nicht in eine Instanz einer anderen Serie, z. B. eine `F2S_v2`-Instanz, geändert werden.
+- Außerdem können Sie, wenn Sie eine VM innerhalb einer Serie auswählen, die VM nur innerhalb dieser Serie zentral hoch- oder herunterskalieren. Eine `DS2_v2`-Instanz kann beispielsweise bis zu `DS4_v2` hochskaliert werden, aber sie kann nicht in eine Instanz einer anderen Serie, z. B. eine `F2S_v2`-Instanz, geändert werden.
 
 **Weitere Informationen**:
 
@@ -289,7 +289,7 @@ In Azure Cost Management + Billing haben Sie folgende Möglichkeiten:
   - Sie können eine Kostenanalyse abrufen, die Gesamtkosten für den aktuellen Monat und die akkumulierten täglichen Kosten anzeigt.
 
     ![Analyse von Azure Cost Management + Billing](../../migrate/azure-best-practices/media/migrate-best-practices-costs/analysis.png)
-    *Abbildung: Analyse von Azure Cost Management + Billing.*
+    *Abbildung: Analyse von Azure Cost Management + Billing*
 
 - **Empfehlungen abrufen:** Erhalten Sie Advisor-Empfehlungen, die Ihnen zeigen, wie Sie die Effizienz optimieren und verbessern können.
 

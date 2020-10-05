@@ -1,18 +1,18 @@
 ---
 title: Aufgaben nach der Bereitstellung und Freigabe von Windows Virtual Desktop
-description: Nutzen Sie das Cloud Adoption Framework für Azure, um sich mit bewährten Methoden für die Windows Virtual Desktop-Migration vertraut zu machen, mit denen Sie die Komplexität verringern und den Migrationsprozess standardisieren können.
+description: Nutzen Sie die bewährten Methoden für Cloud Adoption Framework, um sich über den Releaseprozess für die Migration oder Bereitstellung von Windows Virtual Desktop-Instanzen zu informieren.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 07/01/2010
+ms.date: 07/17/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9389d3ec80422a5e17cfb6dd5a7692e2fd932fda
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 3a1602e308b8ca2ec10a23efb054e2c84088c803
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885336"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108377"
 ---
 # <a name="windows-virtual-desktop-post-deployment"></a>Nach der Bereitstellung von Windows Virtual Desktop
 

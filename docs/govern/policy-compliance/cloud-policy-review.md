@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 077f6f36fba1b8267fecf6ce3926aa2dd9ae8e1b
-ms.sourcegitcommit: d88c1cc3597a83ab075606d040ad659ac4b33324
+ms.openlocfilehash: 8ab66a82b7677beb44fae256fade1ed1afd1173e
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84786873"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108009"
 ---
 # <a name="conduct-a-cloud-policy-review"></a>Durchführen einer Überprüfung von Cloudrichtlinien
 
@@ -45,7 +45,7 @@ Bei Ausführung einer Cloudtransformation steuern Richtlinien oft viele der Tool
 Bei jeder dieser Disziplinen besteht der Überprüfungsprozess aus folgenden Schritten:
 
 1. Überprüfung vorhandener lokaler Richtlinien im Hinblick auf die jeweilige Disziplin, wobei nach zwei wichtigen Datenpunkten gesucht wird: Legacyabhängigkeiten und identifizierte Geschäftsrisiken.
-2. Bewerten Sie die einzelnen Geschäftsrisiken, indem Sie eine einfache Frage stellen: „Ist das Geschäftsrisiko in einem Cloudmodell weiterhin vorhanden?“
+2. Bewerten Sie die einzelnen Geschäftsrisiken, indem Sie eine einfache Frage stellen: Ist das Geschäftsrisiko in einem Cloudmodell weiterhin vorhanden?
 3. Falls ja, schreiben Sie die Richtlinie um, indem Sie die erforderliche Maßnahme (nicht die technische Lösung) dokumentieren.
 4. Überprüfen Sie die aktualisierte Richtlinie zusammen mit den Cloudeinführungsteams, um mögliche technische Lösungen für die erforderliche Maßnahme zu verstehen.
 

@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c43b0b563292a0bafb3e4ac63ad6f757c519bf76
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 4809b00f7cd195646619d5ace8d7924a78e0b625
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775818"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91107844"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Governanceleitfaden für Standardunternehmen: Verbessern der Disziplin „Sicherheitsbaseline“
 
-In diesem Artikel wird die [Geschichte der Governancestrategie](narrative.md) fortgeführt. Es werden Sicherheitskontrollen hinzugefügt, die das Verschieben geschützter Daten in die Cloud unterstützen.
+In diesem Artikel wird die [Geschichte der Governancestrategie](./narrative.md) fortgeführt. Es werden Sicherheitskontrollen hinzugefügt, die das Verschieben geschützter Daten in die Cloud unterstützen.
 
 ## <a name="advancing-the-narrative"></a>Fortführen der Geschichte
 
@@ -31,7 +31,7 @@ Diese Unterscheidung mag spitzfindig erscheinen, ist bei der Entwicklung einer g
 
 ### <a name="changes-in-the-current-state"></a>Änderungen des aktuellen Status
 
-Zu Beginn dieser Geschichte arbeiteten die Anwendungsentwicklungsteams noch mit Entwicklungs-/Testkapazität, und das BI-Team befand sich noch in der Experimentierphase. Von der IT-Abteilung wurden zwei gehostete Infrastrukturumgebungen („Prod“ und „DR“) betrieben.
+Zu Beginn dieser Geschichte arbeiteten die Anwendungsentwicklungsteams noch mit Entwicklungs-/Testkapazität, und das BI-Team befand sich noch in der Experimentierphase. Von der IT-Abteilung wurden zwei gehostete Infrastrukturumgebungen („`Prod`“ und „`DR`“) betrieben.
 
 Seit diesem Zeitpunkt haben sich einige Dinge geändert, die sich auf die Governance auswirken:
 
@@ -128,8 +128,8 @@ Der Governance-MVP-Entwurf wird so geändert, dass er neue Azure-Richtlinien und
   - Identifizieren Sie eine Konfiguration von Azure Firewall, die die erforderlichen Sicherheitsanforderungen erfüllt. Identifizieren Sie alternativ eine kompatible Appliance eines Drittanbieters, die mit Azure kompatibel ist.
   - Erstellen Sie eine Resource Manager-Vorlage, um die Firewall mit den erforderlichen Konfigurationen bereitzustellen.
 - Azure Blueprints:
-  - Erstellen Sie eine neue Blaupause namens „protected-data“.
-  - Fügen Sie der Blaupause die Firewall, Azure Security Center-Vorlagen und Azure Recovery Services-Tresorvorlagen hinzu.
+  - Erstellen Sie eine neue Blaupause mit dem Namen `protected-data`.
+  - Fügen Sie der Blaupause die Azure Firewall-Vorlagen, Azure Security Center-Vorlagen und Azure Recovery Services-Tresorvorlagen hinzu.
   - Fügen Sie die neuen Richtlinien für Abonnements geschützter Daten hinzu.
   - Veröffentlichen Sie die Blaupause für jede Verwaltungsgruppe, die aktuell plant, geschützte Daten zu hosten.
   - Wenden Sie die neue Blaupause auf die betroffenen Abonnements sowie auf vorhandene Blaupausen an.

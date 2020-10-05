@@ -1,18 +1,18 @@
 ---
 title: Proof of Concept für Windows Virtual Desktop
-description: Verwenden Sie das Cloud Adoption Framework für Azure, um sich mit bewährten Methoden für die Windows Virtual Desktop-Migration vertraut zu machen, mit denen Sie die Komplexität reduzieren und den Migrationsprozess standardisieren können.
+description: Nutzen Sie das Cloud Adoption Framework, um sich mit bewährten Methoden zum Abschließen und Testen eines Proof of Concept für Windows Virtual Desktop vertraut zu machen.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 07/01/2010
+ms.date: 07/17/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b17c1703bd50f49e747a690ff9379a687a5543cf
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 4b88bd7d9954b332b3881e06afc95ab8406bbe6b
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605051"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108283"
 ---
 <!-- cSpell:ignore FSLogix onboards remoteapp macos -->
 

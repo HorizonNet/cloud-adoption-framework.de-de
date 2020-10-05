@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 0d04ff202450bdc47eb80006ba58395a78dd329f
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 7a3e3eb6feec8fde3749e3204519f1859f19b280
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775614"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108197"
 ---
 # <a name="get-started-build-a-cloud-adoption-team"></a>Erste Schritte: Aufbauen eines Cloudeinführungsteams
 
@@ -41,7 +41,7 @@ Orientieren Sie sich daher beim Aufbau eines Cloudeinführungsteams zunächst an
 
 **Ziele:**
 
-- Ermitteln Sie, welche Methodik am besten zum Team passt: die Migrationsmethodik oder die Innovationsmethodik.
+- Ermitteln Sie, ob die Migrationsmethodik oder die Innovationsmethodik besser zum Team passt.
 - Jede Methodik verfügt über ein vierstufiges Onboardingverfahren, das dem Team hilft, die Tools und Prozesse zu verstehen, die erforderlich sind, um diese Bestrebung optimal umzusetzen. Nehmen Sie sich als Team etwas Zeit, um anhand der ersten Schritte zu ermitteln, welche Tools und Szenarien Sie voraussichtlich in den ersten Iterationen benötigen.
 - Zuordnen übergreifender Zuständigkeiten für Teams, indem eine sogenannte RACI-Matrix entwickelt und damit bestimmt wird, welche Teams *verantwortlich sind (responsible), rechenschaftspflichtig sind (accountable), konsultiert werden (consulted) und zu informieren sind (informed)* . Aktualisieren Sie die [RACI-Vorlage](../../organize/raci-alignment.md) Ihres Unternehmens, damit andere besser nachvollziehen können, wer dem Team angehört und auf welche Methodik sich das Team konzentriert.
 
@@ -76,8 +76,8 @@ Wenn die Cloudeinführungsbestrebung Ihres Unternehmens weit genug vorangeschrit
 
 Abhängig von der Art des Einführungsteams, dem Sie angehören, beginnen Sie mit einem dieser Leitfäden:
 
-- Erste Schritte: Migrieren von Workloads zur Cloud
-- Erste Schritte: Erstellen neuer Produkte oder Dienste
+- [Erste Schritte: Migrieren von Workloads zur Cloud](../migrate.md)
+- [Erste Schritte: Erstellen neuer Produkte oder Dienste](../innovate.md)
 
 Diese Leitfäden bieten Anleitungen für verschiedene Teams, die zusammen mit den unterschiedlichen Verantwortlichkeiten und Zuständigkeiten aufgeführt werden. Orientieren Sie sich an diesen Leitfäden, um die Rolle Ihres Teams in Relation zum restlichen Prozess zu verstehen. Sie geben auch Aufschluss über den Grad der Unterstützung, die Sie innerhalb des Unternehmens erwarten können.
 

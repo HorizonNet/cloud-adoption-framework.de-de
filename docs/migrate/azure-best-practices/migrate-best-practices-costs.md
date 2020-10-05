@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 754653d7e15eec16aa59db834851767e8d763008
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 636de72aa1dc6b58f80c1804dfd20a1c4aefc78b
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776566"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108409"
 ---
 <!-- docutune:casing ARO -->
 
@@ -188,7 +188,7 @@ _Abbildung 3: Azure Reserved VM Instances_
 
 Die Wahrscheinlichkeit ist relativ hoch, dass Sie über mehr als ein Azure-Abonnement verfügen. Beispielsweise könnten Sie ein zusätzliches Abonnement benötigen, um Entwicklungs- und Produktionsumgebungen voneinander zu trennen, oder Sie haben möglicherweise eine Plattform, die ein separates Abonnement für jeden Client erfordert. Die Möglichkeit zu besitzen, die Berichterstellung zu Daten über alle Abonnements hinweg in einer einzelnen Plattform zusammenzufassen, ist eine wertvolle Funktion.
 
-Um dies zu erreichen, können Sie Azure Cost Management und Abrechnung-APIs verwenden. Nachdem Sie dann Daten in einer zentralen Quelle aggregiert haben, z. B. Azure SQL, können Sie diese Daten mit Tools wie Power BI bearbeiten. Sie können aggregierte Abonnementberichte sowie detaillierte Berichte erstellen. Für Benutzer, die proaktive Einblicke in das Kostenmanagement benötigen, können Sie beispielsweise spezifische Sichten für Kosten erstellen, gegliedert nach Abteilung, Ressourcengruppe oder anderen Informationen. Sie müssen ihnen dazu keinen Vollzugriff auf Azure-Abrechnungsdaten gewähren.
+Um dies zu erreichen, können Sie Azure Cost Management + Billing-APIs verwenden. Nachdem Sie dann Daten in einer zentralen Quelle aggregiert haben, z. B. Azure SQL-Datenbank, können Sie diese Daten mit Tools wie Power BI bearbeiten. Sie können aggregierte Abonnementberichte sowie detaillierte Berichte erstellen. Für Benutzer, die proaktive Einblicke in das Kostenmanagement benötigen, können Sie beispielsweise spezifische Sichten für Kosten erstellen, gegliedert nach Abteilung, Ressourcengruppe oder anderen Informationen. Sie müssen ihnen dazu keinen Vollzugriff auf Azure-Abrechnungsdaten gewähren.
 
 **Weitere Informationen**:
 
@@ -200,9 +200,9 @@ Um dies zu erreichen, können Sie Azure Cost Management und Abrechnung-APIs verw
 
 Im Anschluss an eine erfolgreiche Migration Ihrer Workloads und nach ein paar Wochen des Sammelns von Verbrauchsdaten haben Sie eine klare Vorstellung von den Kosten der Ressourcen. Parallel zur Analyse der Daten können Sie beginnen, eine Budgetbaseline für Azure-Ressourcengruppen und -Ressourcen zu generieren. Wenn Sie dann zunehmend herausfinden, wo Ihr Budget für die Cloud verbraucht wird, können Sie analysieren, wie Sie Ihre Kosten noch weiter senken können.
 
-## <a name="best-practice-use-azure-cost-management-and-billing"></a>Bewährte Methode: Verwenden von Azure Cost Management und Abrechnung
+## <a name="best-practice-use-azure-cost-management--billing"></a>Bewährte Methode: Verwenden von Azure Cost Management + Billing
 
-Microsoft stellt „Azure Cost Management und Abrechnung“ bereit, um Ihnen bei der Nachverfolgung Ihrer Ausgaben zu helfen. Dieser Dienst:
+Microsoft stellt Azure Cost Management + Billing bereit, um Ihnen bei der Nachverfolgung Ihrer Ausgaben zu helfen. Dieser Dienst:
 
 - Unterstützt Sie bei der Überwachung und Kontrolle der Azure-Ausgaben sowie bei der Optimierung der Ressourcennutzung.
 - Überprüft Ihr gesamtes Abonnement mit allen darin enthaltenen Ressourcen und gibt Empfehlungen.
@@ -210,7 +210,7 @@ Microsoft stellt „Azure Cost Management und Abrechnung“ bereit, um Ihnen bei
 - Verfolgt die Ressourcennutzung nach und ermöglicht Ihnen die Verwaltung der Cloudkosten in einer zentralen einheitlichen Ansicht.
 - Bietet umfassende Erkenntnisse zu Betrieb und Finanzen, um Sie bei fundierten Entscheidungen zu unterstützen.
 
-Mit Azure Cost Management und Abrechnung haben Sie folgende Möglichkeiten:
+Mit Azure Cost Management + Billing haben Sie folgende Möglichkeiten:
 
 - Erstellen Sie ein Budget zur Wahrnehmung Ihrer finanziellen Verantwortung.
   - Sie können dabei Dienste berücksichtigen, die Sie für einen bestimmten Zeitraum verwenden oder abonnieren (monatlich, vierteljährlich oder jährlich), sowie einen Bereich (Abonnements oder Ressourcengruppen). Beispielsweise können Sie ein Azure-Abonnementbudget für den Zeitraum eines Monats, Quartals oder Jahres erstellen.
@@ -219,7 +219,7 @@ Mit Azure Cost Management und Abrechnung haben Sie folgende Möglichkeiten:
   - Sie können Kostenmanagementdaten zur Analyse nach Azure Storage exportieren.
 
   ![Screenshot: Cost Management-Budget](./media/migrate-best-practices-costs/budget.png)
-  _Abbildung 4: Budget für Azure Cost Management und Abrechnung_
+  _Abbildung 4: Budget für Azure Cost Management + Billing_
 
 - Führen Sie eine Kostenanalyse durch, um Ihre Organisationskosten zu untersuchen und zu analysieren, damit Sie das Anfallen von Kosten besser verstehen und Ausgabentrends erkennen können.
   - Die Kostenanalyse ist für Enterprise Agreement-Benutzer verfügbar.
@@ -227,15 +227,15 @@ Mit Azure Cost Management und Abrechnung haben Sie folgende Möglichkeiten:
   - Sie können eine Kostenanalyse abrufen, die Gesamtkosten für den aktuellen Monat und die akkumulierten täglichen Kosten anzeigt.
 
   ![Screenshot: Azure Cost Management-Analyse](./media/migrate-best-practices-costs/analysis.png)
-  _Abbildung 5: Analyse von Azure Cost Management und Abrechnung_
+  _Abbildung 5: Analyse von Azure Cost Management + Billing_
 
 - Erhalten Sie Advisor-Empfehlungen, die Ihnen zeigen, wie Sie die Effizienz optimieren und verbessern können.
 
 **Weitere Informationen**:
 
-- Lesen Sie die [Übersicht zu Azure Cost Management und Abrechnung](/azure/cost-management-billing/cost-management-billing-overview).
-- Erfahren Sie, wie Sie [Cloudinvestitionen mit Azure Cost Management und Abrechnung optimieren](/azure/cost-management-billing/costs/cost-mgt-best-practices).
-- Erfahren Sie mehr über [Berichte von Azure Cost Management und Abrechnung](/azure/cost-management/use-reports).
+- Lesen Sie die [Übersicht zu Azure Cost Management + Billing](/azure/cost-management-billing/cost-management-billing-overview).
+- Erfahren Sie mehr zum [Optimieren der Cloudinvestitionen mit Azure Cost Management + Billing](/azure/cost-management-billing/costs/cost-mgt-best-practices).
+- Erfahren Sie mehr über [Berichte von Azure Cost Management + Billing](/azure/cost-management/use-reports).
 - Erhalten Sie ein [Tutorial zum Optimieren von Kosten mithilfe von Empfehlungen](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations).
 - Sehen Sie sich die [Azure Consumption-APIs](/rest/api/consumption/budgets) an.
 
@@ -245,7 +245,7 @@ In Azure bezahlen Sie für die Nutzung, also wenn Ressourcen tatsächlich genutz
 
 Bewerten Sie kontinuierlich Ihre VM-Workloads, um Baselines zu bestimmen. Wenn Ihre Workload beispielsweise montags bis freitags zwischen 8:00 und 18:00 Uhr stark genutzt wird, aber außerhalb dieser Zeiten nur sehr wenig, können Sie virtuelle Computer außerhalb der Spitzenzeiten herabstufen. Dies kann bedeuten, dass Sie VM-Größen ändern oder VM-Skalierungsgruppen zum automatischen Hoch- oder Herunterskalieren von VMs verwenden könnten. Einige Unternehmen lassen VMs „schlummern“, indem Sie sie nach einem Zeitplan betreiben, mit dem angegeben wird, wann sie verfügbar sein sollen und wann sie nicht benötigt werden.
 
-Sie können die VM-Nutzung mithilfe von Microsoft-Tools überwachen, z. B. Azure Cost Management und Abrechnung, Azure Monitor und Azure Advisor. Drittanbietertools sind ebenfalls verfügbar.
+Sie können die VM-Nutzung mithilfe von Microsoft-Tools überwachen, wie z. B. Azure Cost Management + Billing, Azure Monitor und Azure Advisor. Drittanbietertools sind ebenfalls verfügbar.
 
 > [!NOTE]
 > Zusätzlich zur Überwachung virtueller Computer sollten Sie weitere Netzwerkressourcen, z. B. Azure ExpressRoute und Gateways für virtuelle Netzwerke, auf zu niedrige und zu hohe Nutzung überwachen.
@@ -323,7 +323,7 @@ Mithilfe der Azure-Ressourcennutzungs- und -Gebührenkarten-APIs können Sie Ihr
 
 VM-Workloads werden häufig im Ist-Zustand („wie besehen“) migriert, um Ausfallzeiten zu vermeiden. VMs können häufig Aufgaben hosten, die zeitweiliger Art sind, nur kurz bzw. im Wechsel ausgeführt werden oder viele Stunden dauern. Beispiele hierfür sind VMs, die geplante Aufgaben ausführen, z. B. die Windows-Aufgabenplanung oder PowerShell-Skripts. Wenn diese Aufgaben nicht ausgeführt werden, belegen Sie dennoch eine VM und verursachen Kosten für Datenträgerspeicher.
 
-Nachdem Sie diese Arten von Aufgaben migriert und gründlich überprüft haben, können Sie dafür die Migration zu serverlosen Technologien erwägen, z. B. Azure Functions oder Batchaufträge. Mit diesen Lösungen können die Kosten gesenkt werden, und Sie müssen die VMs dann nicht mehr verwalten und warten.
+Nachdem Sie diese Arten von Aufgaben migriert und gründlich überprüft haben, können Sie dafür die Migration zu serverlosen Technologien erwägen, z. B. Azure Functions oder Azure Batch-Aufträge. Mit diesen Lösungen können die Kosten gesenkt werden, und Sie müssen die VMs dann nicht mehr verwalten und warten.
 
 **Weitere Informationen**:
 
@@ -334,5 +334,5 @@ Nachdem Sie diese Arten von Aufgaben migriert und gründlich überprüft haben, 
 
 Informieren Sie sich über weitere Best Practices:
 
-- [Bewährte Methoden](./migrate-best-practices-security-management.md) für Sicherheit und Verwaltung nach der Migration.
-- [Best Practices](./migrate-best-practices-networking.md) für Netzwerkfunktionen nach der Migration.
+- [Bewährte Methoden](./migrate-best-practices-security-management.md) für Sicherheit und Verwaltung nach der Migration
+- [Bewährte Methoden für Netzwerke](./migrate-best-practices-networking.md) nach der Migration

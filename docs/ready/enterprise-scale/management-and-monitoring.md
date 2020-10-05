@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 475db193a4d712720dd5c2402eb3be43a80ac0db
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: cf4a7d9b708f211c6b848a2ddd7672af143adc34
+ms.sourcegitcommit: 44fb6deee30fd6ffc80b5d2e66544a50e8405c73
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776396"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91492705"
 ---
 # <a name="management-and-monitoring"></a>Verwaltung und Überwachung
 
@@ -34,7 +34,7 @@ _Abbildung 1: Plattformverwaltung und -überwachung._
   - Betriebssystemprotokolle (z. B. Internetinformationsdienste (IIS), Ereignisablaufverfolgung für Windows und Syslog-Protokolle)
   - Ereignisse zur Ressourcenintegrität
 - Protokollieren der Sicherheitsüberwachung und Erreichen eines horizontalen Sicherheitsfokus in der gesamten Azure-Umgebung Ihrer Organisation:
-  - Mögliche Integration mit lokalen SIEM-Systemen (Security Information & Event Management) wie qRadar oder ArcSight
+  - Mögliche Integration mit lokalen SIEM-Systemen (Security Information & Event Management) wie ServiceNow, ArcSight oder der Onapsis-Sicherheitsplattform
   - Azure-Aktivitätsprotokolle
   - Azure Active Directory-Prüfberichte (Azure AD)
   - Azure-Diagnosedienste, -protokolle und -metriken; Azure Key Vault-Überwachungsereignisse; NSG-Datenflussprotokolle (Netzwerksicherheitsgruppen) und Ereignisprotokolle

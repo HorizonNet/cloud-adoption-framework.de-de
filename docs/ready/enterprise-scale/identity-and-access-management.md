@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2b8866d90e93ace8ada24da7162f2c665a02abaa
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: ae81d4fa9c484ec3d5e06c27deb4a9826ebfea70
+ms.sourcegitcommit: 44fb6deee30fd6ffc80b5d2e66544a50e8405c73
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776447"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91492722"
 ---
 # <a name="identity-and-access-management"></a>Identitäts- und Zugriffsverwaltung
 
@@ -62,7 +62,7 @@ _Abbildung 1: Identitäts- und Zugriffsverwaltung._
 
 | Role | Verwendung | Aktionen | Keine Aktionen |
 |---|---|---|---|
-| Besitzer der Azure-Plattform               | Verwaltung des Lebenszyklus von Verwaltungsgruppen und Abonnements                                                           | `*`                                                                                                                                                                                                                  |                                                                                                                                                                                         |
+| Azure Platform-Besitzer (d. h. integrierte Rolle „Besitzer“)               | Verwaltung des Lebenszyklus von Verwaltungsgruppen und Abonnements                                                           | `*`                                                                                                                                                                                                                  |                                                                                                                                                                                         |
 | Netzwerkverwaltung (NetOps)        | Plattformweite Verwaltung globaler Konnektivität: Virtuelle Netzwerke, UDRs, NSGs, NVAs, VPN, Azure ExpressRoute und andere            | `*/read`, `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*`                              |                                                                                                                                                                               |
 | SecOps       | Sicherheitsadministratorrolle mit horizontaler Sicht auf die gesamte Azure-Umgebung und die Bereinigungsrichtlinie von Azure Key Vault | `*/read`, `*/register/action`, `Microsoft.KeyVault/locations/deletedVaults/purge/action`, `Microsoft.Insights/alertRules/*`, `Microsoft.Authorization/policyDefinitions/*`, `Microsoft.Authorization/policyAssignments/*`, `Microsoft.Authorization/policySetDefinitions/*`, `Microsoft.PolicyInsights/*`, `Microsoft.Security/*` |                                                                            |
 | Abonnementbesitzer                 | Delegierte Rolle für Abonnementbesitzer, die von der Rolle „Abonnementbesitzer“ abgeleitet ist                                       | `*`                                                                                                                                                                                                                  | `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*` |

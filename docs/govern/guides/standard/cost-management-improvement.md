@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c6a53233fa469bcb75d2c2478614acf9487dd2fb
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 046507bea45c8a53d97d05ff9b566a3d1fb7c888
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604802"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91107952"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-cost-management-discipline"></a>Governanceleitfaden für Standardunternehmen: Verbessern der Disziplin „Cost Management“
 
@@ -61,15 +61,15 @@ Die folgenden Änderungen an der Richtlinie verringern die neuen Risiken und ver
 - Während der Bereitstellungsplanung sollten alle erforderlichen Cloudressourcen, die dem Hosten von Produktionsworkloads dienen, dokumentiert werden. Diese Dokumentation kann bei der Verfeinerung der Budgets und bei der Vorbereitung zusätzlicher Automatisierungen helfen, um den Einsatz teurerer Optionen zu vermeiden. Dabei sollten verschiedene vom Cloudanbieter angebotene Diskontierungstools, z.B. reservierte Instanzen oder Lizenzkostenreduzierungen, in Betracht gezogen werden.
 - Alle Besitzer von Anwendungen sind verpflichtet, an Schulungen zu Praktiken zur Optimierung von Workloads teilzunehmen, um die Cloudkosten besser zu kontrollieren.
 
-## <a name="incremental-improvement-of-the-best-practices"></a>Inkrementelle Verbesserungen der bewährten Methoden
+## <a name="incremental-improvement-of-best-practices"></a>Inkrementelle Verbesserungen von bewährten Methoden
 
-In diesem Abschnitt des Artikels wird der Governance-MVP-Entwurf so geändert, dass er neue Azure-Richtlinien und eine Implementierung von Azure Cost Management und Abrechnung umfasst. Zusammen erfüllen diese beiden Entwurfsänderungen die neuen Richtlinienanweisungen des Unternehmens.
+In diesem Abschnitt des Artikels wird der Governance-MVP-Entwurf so geändert, dass er neue Azure-Richtlinien und eine Implementierung von Azure Cost Management + Billing umfasst. Zusammen erfüllen diese beiden Entwurfsänderungen die neuen Richtlinienanweisungen des Unternehmens.
 
-1. Implementieren Sie Azure Cost Management und Abrechnung.
+1. Implementieren Sie Azure Cost Management + Billing.
     1. Legen Sie den richtigen Zugriffsumfang fest, um ihn an das Abonnementmuster und die Disziplin „Ressourcenkonsistenz“ anzupassen. Unter der Annahme der Angleichung an das in früheren Artikeln definierte Governance-MVP erfordert dies Zugriff auf den **Geltungsbereich des Registrierungskontos** für das Cloudgovernanceteam, das die Berichtserstellung auf hoher Ebene durchführt. Weitere Teams außerhalb von Governance benötigen möglicherweise Zugriff auf den Geltungsbereich der **Ressourcengruppe**.
-    1. Einrichten eines Budgets in Azure Cost Management und Abrechnung.
+    1. Richten Sie ein Budgets in Azure Cost Management + Billing ein.
     1. Überprüfen Sie die anfänglichen Empfehlungen, und reagieren Sie entsprechend. Nutzen Sie einen regelmäßiger Prozess zur Unterstützung der Berichterstellung.
-    1. Konfigurieren Sie die Berichterstellung für Azure Cost Management und Abrechnung mit anfänglicher und regelmäßiger Ausführung.
+    1. Konfigurieren Sie die Berichterstellung für Azure Cost Management + Billing mit anfänglicher und regelmäßiger Ausführung.
 2. Aktualisieren von Azure Policy
     1. Überwachen Sie die Tagging-, Verwaltungsgruppen-, Abonnement- und Ressourcengruppenwerte, um Abweichungen zu identifizieren.
     1. Legen Sie Optionen für die SKU-Größe fest, um die Bereitstellung auf die in der Dokumentation zur Bereitstellungsplanung aufgeführten SKUs zu beschränken.
