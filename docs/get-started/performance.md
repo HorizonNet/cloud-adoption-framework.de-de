@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 9870bf983bf7cbbfdac885c5b252c1565b9d8ce9
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 6d8e998fc9fada598a6ef718d4f052a80156ad56
+ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775631"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91621109"
 ---
 # <a name="get-started-ensure-consistent-performance-across-a-portfolio"></a>Erste Schritte: Sicherstellen konsistenter Leistung in einem Portfolio
 
@@ -64,13 +64,13 @@ Im Zuge der Optimierung der Verwaltungsbaseline ist es wichtig, dass die entspre
 
 - Stellen Sie sicher, dass alle Workloads und Ressourcen die [richtigen Benennungs- und Kennzeichnungskonventionen](../ready/azure-best-practices/naming-and-tagging.md) befolgen. [Erzwingen Sie Kennzeichnungskonventionen mithilfe von Azure Policy](/azure/governance/policy/tutorials/govern-tags) mit einem speziellen Schwerpunkt auf Tags für „Wichtigkeit“.
 - Sollten Sie noch nicht mit Cloudgovernance vertraut sein, verwenden Sie die Governancemethodik, um [Governancerichtlinien, -prozesse und -disziplinen](../govern/index.md) einzurichten.
-- Falls Sie noch keine Erfahrung mit der Disziplin „Kostenverwaltung“ haben, befassen Sie sich ggf. mit dem folgenden [Artikel zur Verbesserung der Disziplin „Kostenverwaltung“](../govern/guides/complex/cost-management-improvement.md) (insbesondere mit dem Abschnitt zur [Implementierung](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)).
+- Falls Sie noch keine Erfahrung mit der Disziplin „Kostenverwaltung“ haben, befassen Sie sich ggf. mit dem folgenden [Artikel zur Verbesserung der Disziplin „Kostenverwaltung“](../govern/guides/complex/cost-management-improvement.md) (insbesondere mit dem Abschnitt zur [Implementierung](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-best-practices)).
 
 <br>
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudgovernanceteam | <li> Cloudstrategieteam <li> Cloudbetriebsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
+| <li> Cloudgovernanceteam | <li> Cloudstrategieteam <li> Cloudbetriebsteam <li> Cloudkompetenzzentrum (CCoE) oder zentrales IT-Team |
 
 ## <a name="step-3-define-strategy"></a>Schritt 3: Definieren der Strategie
 
@@ -91,7 +91,7 @@ Strategische Entscheidungen wirken sich unmittelbar auf die Leistung sowie indir
 
 | Verantwortliches Team | Verantwortliche und unterstützende Teams |
 | --- | --- |
-| <li> Cloudstrategieteam | <li> Cloudgovernanceteam <li> Cloudbetriebsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
+| <li> Cloudstrategieteam | <li> Cloudgovernanceteam <li> Cloudbetriebsteam <li> Cloudkompetenzzentrum (CCoE) oder zentrales IT-Team |
 
 ## <a name="step-4-assess-and-plan-for-workload-adoption"></a>Schritt 4: Bewerten und Planen der Workloadeinführung
 

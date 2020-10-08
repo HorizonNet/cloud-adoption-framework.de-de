@@ -133,6 +133,12 @@ items:
             href: digital-estate/calculate.md
       - name: Erstausrichtung der Organisation
         href: plan/initial-org-alignment.md
+      - name: Plan für die Qualifikationsbereitschaft
+        items:
+          - name: Erstellen eines Bereitschaftsplans
+            href: plan/adapt-roles-skills-processes.md
+          - name: Zuordnen von Rollen und Qualifikationen
+            href: plan/suggested-skills.md
       - name: Cloudeinführungsplan
         items:
           - name: Übersicht
@@ -151,12 +157,6 @@ items:
             href: plan/iteration-paths.md
           - name: Schätzen von Zeitplänen
             href: plan/timelines.md
-      - name: Plan für die Qualifikationsbereitschaft
-        items:
-          - name: Erstellen eines Bereitschaftsplans
-            href: plan/adapt-roles-skills-processes.md
-          - name: Zuordnen von Rollen und Qualifikationen
-            href: plan/suggested-skills.md
       - name: Bewährte Methoden
         items:
           - name: Bewertung von digitalen Ressourcen in Azure
@@ -1481,6 +1481,8 @@ items:
     items:
       - name: Tools und Vorlagen
         href: reference/tools-templates.md
+      - name: Azure-Sicherheit – bewährte Methoden
+        href: ./security/security-top-10.md
       - name: Leitfaden zur Entscheidungsfindung
         items:
           - name: Übersicht
@@ -1531,8 +1533,6 @@ items:
         items:
           - name: Cloudbetriebsmodell
             href: reference/cloud-operating-model.md
-          - name: Azure-Sicherheit – bewährte Methoden
-            href: ./security/security-top-10.md
           - name: Azure-Unternehmensgerüst
             href: reference/azure-scaffold.md
           - name: 'Virtuelles Rechenzentrum (Virtual Datacenter, VDC)'

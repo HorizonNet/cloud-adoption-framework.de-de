@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: overview
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: d28f849d4d264af36db8ffaf1b4c72cadc6677c0
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 28b9271cee8f0314155bcd34d736332a5e10c1a2
+ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885659"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91621500"
 ---
 # <a name="improve-landing-zone-security"></a>Erhöhen der Sicherheit von Zielzonen
 
@@ -29,7 +29,7 @@ Die folgende Liste von Referenzarchitekturen und bewährten Methoden enthält Be
 - [Identitätsverwaltung und Zugriffssteuerung](/azure/security/fundamentals/identity-management-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json): Eine Reihe von bewährten Methoden für die Implementierung der Identität und des Zugriffs zum Sichern einer Zielzone in Azure.
 - [Methoden für die Netzwerksicherheit](/azure/security/fundamentals/network-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json): Bietet zusätzliche bewährte Methoden zum Sichern des Netzwerks.
 - [Betriebssicherheit](/azure/security/fundamentals/operational-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json) bietet bewährte Methoden zum Erhöhen der Betriebssicherheit in Azure.
-- [Disziplin „Sicherheitsbaseline“](../../govern/guides/complex/security-baseline-improvement.md#incremental-improvement-of-the-best-practices): Beispiel für die Entwicklung einer von der Governance gesteuerten Sicherheitsbaseline zur Durchsetzung von Sicherheitsanforderungen.
+- [Disziplin „Sicherheitsbaseline“](../../govern/guides/complex/security-baseline-improvement.md#incremental-improvement-of-best-practices): Beispiel für die Entwicklung einer von der Governance gesteuerten Sicherheitsbaseline zur Durchsetzung von Sicherheitsanforderungen.
 
 ## <a name="test-driven-development-cycle"></a>Testgesteuerter Entwicklungszyklus
 

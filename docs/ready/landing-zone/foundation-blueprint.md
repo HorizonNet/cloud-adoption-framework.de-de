@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 46ed8211a9206c7eed07760a0452ed97df2e5901
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: af577cea51714b43d43d7956a69422a2316aef11
+ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776311"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91621313"
 ---
 <!-- docutune:ignore "CAF Foundation blueprint" -->
 
@@ -66,7 +66,7 @@ Wenn Teams bereits weiter mit der Cloudeinführung fortgeschritten sind, finden 
 
 Mit dieser Implementierung wird eine Vorgehensweise für eine ausgereifte Cost Management-Disziplin der Governancemethodik gezeigt. Dabei wird insbesondere veranschaulicht, wie Azure Policy verwendet werden kann, um eine Zulassungsliste mit bestimmten SKUs zu erstellen. Indem Sie die Typen und Größen von Ressourcen einschränken, die in einer Zielzone bereitgestellt werden können, wird das Risiko einer Budgetüberschreitung gesenkt.
 
-Informationen zur parallelen Entwicklung der anderen Governancedisziplinen finden Sie im Abschnitt zur [Governancemethodik](../../govern/index.md). Wenn Sie die Governancedisziplin „Cost Management“ weiter verbessern möchten, finden Sie unter [Verbessern der Disziplin „Cost Management“](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices) weitere Informationen.
+Informationen zur parallelen Entwicklung der anderen Governancedisziplinen finden Sie im Abschnitt zur [Governancemethodik](../../govern/index.md). Wenn Sie die Governancedisziplin „Cost Management“ weiter verbessern möchten, finden Sie unter [Verbessern der Disziplin „Cost Management“](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-best-practices) weitere Informationen.
 
 > [!WARNING]
 > Mit der Weiterentwicklung der Governancedisziplinen ist möglicherweise ein Refactoring erforderlich. Möglicherweise ist ein Refactoring erforderlich. Insbesondere müssen Ressourcen später gegebenenfalls [in ein neues Abonnement oder eine neue Ressourcengruppe verschoben werden](/azure/azure-resource-manager/management/move-resource-group-and-subscription?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json).

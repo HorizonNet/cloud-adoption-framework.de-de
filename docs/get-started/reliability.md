@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 7ef09f13acdcc29e3314e2684a307efba788120c
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 07f9cc356aa3307898f9be94988b75781be8509b
+ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775597"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91620786"
 ---
 # <a name="get-started-improve-reliability-with-the-right-controls"></a>Erste Schritte: Verbessern der Zuverlässigkeit mit den richtigen Steuerungen
 
@@ -72,7 +72,7 @@ Unternehmenszuverlässigkeit erfordert eine konsistente Anwendung der Verwaltung
 
 - Stellen Sie sicher, dass alle Workloads und Ressourcen die [richtigen Benennungs- und Kennzeichnungskonventionen](../ready/azure-best-practices/naming-and-tagging.md) befolgen. [Erzwingen Sie Kennzeichnungskonventionen mithilfe von Azure Policy](/azure/governance/policy/tutorials/govern-tags) mit einem speziellen Schwerpunkt auf Tags für „Wichtigkeit“.
 - Sollten Sie noch nicht mit Cloudgovernance vertraut sein, verwenden Sie die Governancemethodik, um [Governancerichtlinien, -prozesse und -disziplinen](../govern/index.md) einzurichten.
-- Wenn Sie mit der Disziplin „Cost Management“ noch nicht vertraut sind, befolgen Sie die Anweisungen im Artikel [Verbesserung der Disziplin „Cost Management“](../govern/guides/complex/cost-management-improvement.md). Konzentrieren Sie sich auf den Abschnitt [Implementierung](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices).
+- Wenn Sie mit der Disziplin „Cost Management“ noch nicht vertraut sind, befolgen Sie die Anweisungen im Artikel [Verbesserung der Disziplin „Cost Management“](../govern/guides/complex/cost-management-improvement.md). Konzentrieren Sie sich auf den Abschnitt [Implementierung](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-best-practices).
 
 > [!NOTE]
 > **Schritte zum Einstieg in eine Zuverlässigkeitspartnerschaft mit anderen Teams:** Verschiedene Entscheidungen im gesamten Lebenszyklus der Cloudeinführung können einen direkten Einfluss auf die Zuverlässigkeit haben. Die folgenden Schritte unterstützen Sie bei der Gliederung der Partnerschaften und der unterstützenden Anstrengungen, die erforderlich sind, um konsistente Zuverlässigkeit im gesamten IT-Portfolio bereitzustellen.

@@ -4,15 +4,15 @@ description: Erfahren Sie mehr über die Grundlagen der Kostenverwaltung im Zusa
 author: JanetCThomas
 ms.author: janet
 ms.date: 05/15/2020
-ms.topic: guide
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: bb1c7ff3de8fae692decd61c0f939ddd21239163
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 438cd468ce8f6a55314b1fdf9edcadf3919afbcd
+ms.sourcegitcommit: 80c4b36ca931c75643b102aebe3d2b611e5bfebf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775682"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91768799"
 ---
 # <a name="get-started-manage-cloud-costs"></a>Erste Schritte: Verwalten von Cloudkosten
 
@@ -57,7 +57,7 @@ Diese Zielvorgabe sind das Ergebnis von einigen wiederkehrenden Aufgaben:
 
 - Kompromisse auf Workloadebene sind möglicherweise erforderlich, um wirksame Änderungen zur Kostenoptimierung umzusetzen. [Microsoft Azure Well-Architected Framework](/azure/architecture/framework/cost/tradeoffs) und [Microsoft Azure Well-Architected Review](/assessments/?id=azure-architecture-review) können diese Gespräche mit dem technischen Besitzer einer bestimmten Workload unterstützen.
 - Sollten Sie noch nicht mit Cloudgovernance vertraut sein, verwenden Sie die Governancemethodik, um [Governancerichtlinien, -prozesse und -disziplinen](../govern/index.md) einzurichten.
-- Falls Sie noch keine Erfahrung mit der Disziplin „Cost Management“ haben, befassen Sie sich ggf. mit dem [Artikel zur Verbesserung der Kostenverwaltung](../govern/guides/complex/cost-management-improvement.md) (insbesondere mit dem [Abschnitt zur Implementierung](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-the-best-practices)).
+- Falls Sie noch keine Erfahrung mit der Disziplin „Cost Management“ haben, befassen Sie sich ggf. mit dem [Artikel zur Verbesserung der Kostenverwaltung](../govern/guides/complex/cost-management-improvement.md) (insbesondere mit dem [Abschnitt zur Implementierung](../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-best-practices)).
 
 <br>
 
