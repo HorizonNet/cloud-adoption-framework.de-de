@@ -3,16 +3,16 @@ title: Leitfaden zur Cloudüberwachung
 description: Erfahren Sie mehr über Azure Monitor, System Center Operations Manager und die empfohlene Strategie für die Überwachung der einzelnen Cloudbereitstellungsmodelle.
 author: MGoedtel
 ms.author: magoedte
-ms.date: 07/31/2019
+ms.date: 10/05/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 48d813c75b695462f2af8434d7b41079b7c03905
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: a1f474f1146afe21508571c402a0da91ac256062
+ms.sourcegitcommit: 81246e185cee53fed591c4bafd56cde7d58e26f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602716"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91898164"
 ---
 # <a name="cloud-monitoring-guide-introduction"></a>Leitfaden zur Cloudüberwachung: Einführung
 
@@ -55,12 +55,13 @@ Dieser Artikel ist Teil einer Serie. Die folgenden Artikel sollten zusammenhäng
 
 Für die Überwachung und Verwaltung einer Vielzahl von Ressourcen, die in Azure, Ihrem Unternehmensnetzwerk oder von anderen Cloudanbietern gehostet werden, stehen einige Softwarelösungen und Dienste zur Verfügung. Sie lauten wie folgt:
 
-- System Center Operations Manager
-- Azure Monitor (enthält Log Analytics und Application Insights)
-- Azure Policy und Azure Blueprints
-- Azure-Automatisierung
-- Azure Logic Apps
-- Azure Event Hubs
+- [System Center Operations Manager](/system-center/scom/welcome)
+- [Azure Monitor](/azure-monitor/overview) (enthält Log Analytics und Application Insights)
+- [Azure Policy](/governance/policy/overview) und [Azure Blueprints](/governance/blueprints/overview)
+- [Azure Arc](/azure-arc/overview)
+- [Azure Automation](/automation/automation-intro)
+- [Azure Logic Apps](/logic-apps/logic-apps-overview)
+- [Azure Event Hubs](/event-hubs/event-hubs-about)
 
 Diese erste Version des Leitfadens behandelt unsere aktuellen Überwachungsplattformen: Azure Monitor und System Center Operations Manager. Außerdem beschreibt er die empfohlene Strategie für die Überwachung der einzelnen Cloudbereitstellungsmodelle. Der Leitfaden enthält außerdem die ersten Überwachungsempfehlungen, beginnend mit Datensammlung und Warnungen.
 
