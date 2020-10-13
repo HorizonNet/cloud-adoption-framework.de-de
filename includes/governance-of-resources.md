@@ -7,7 +7,7 @@
 
 Eine Reihe von globalen Richtlinien und RBAC-Rollen bilden eine Grundwertebene für die Durchsetzung der Governance. Um die Richtlinienanforderungen des Cloudgovernanceteams zu erfüllen, müssen zur Implementierung des Governance-MVP folgende Aufgaben ausgeführt werden:
 
-1. Ermitteln Sie die erforderlichen Azure Policy-Definitionen zur Erzwingung von Geschäftsanforderungen. Hierzu können sowohl integrierte Definitionen verwendet als auch neue benutzerdefinierte Definitionen erstellt werden.
+1. Ermitteln Sie die erforderlichen Azure Policy-Definitionen zur Erzwingung von Geschäftsanforderungen. Hierzu können sowohl integrierte Definitionen verwendet als auch neue benutzerdefinierte Definitionen erstellt werden. Um mit dem Tempo neu veröffentlichter integrierter Definitionen Schritt zu halten, gibt es einen [Atom-Feed](https://github.com/Azure/azure-policy/commits/master/built-in-policies.atom) aller Commits für integrierte Richtlinien, den Sie für einen RSS-Feed verwenden können. Alternativ können Sie unter [AzAdvertizer](https://www.azadvertizer.net/) nachsehen. 
 2. Erstellen Sie eine Blaupausendefinition unter Verwendung dieser integrierten und benutzerdefinierten Richtlinien sowie der für das Governance-MVP benötigten Rollenzuweisungen.
 3. Wenden Sie Richtlinien und Konfigurationen global an, indem Sie die Blaupausendefinition zu allen Abonnements zuweisen.
 
