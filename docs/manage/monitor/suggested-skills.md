@@ -7,12 +7,12 @@ ms.date: 08/26/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 85f3104f20f969e83f960e8ba3125b0ee56ed41e
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 2dda4bc3feaf207e2aca63b008f40beabc223bec
+ms.sourcegitcommit: 81246e185cee53fed591c4bafd56cde7d58e26f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877550"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91898113"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -61,7 +61,7 @@ Das Erlangen der erforderlichen Qualifikationen kann mit den folgenden Lernpfade
 
   - Unter [Microsoft Azure DevOps-Techniker: Optimieren von Feedbackmechanismen](https://www.pluralsight.com/courses/microsoft-azure-optimize-feedback-mechanisms) können Sie sich darauf vorbereiten, Azure Monitor, einschließlich Application Insights, für die Überwachung und Optimierung Ihrer Webanwendungen zu verwenden.
 
-  - [Erfassen und Anzeigen der Seitenladezeiten in Ihrer Azure Web-App](https://docs.microsoft.com/learn/modules/capture-page-load-times-application-insights/). Beginnen Sie mit diesem Kurs zur Verwendung von Azure Monitor Application Insights für die End-to-End-Überwachung Ihrer Anwendungskomponenten, die in Azure ausgeführt werden.
+  - [Erfassen und Anzeigen der Seitenladezeiten in Ihrer Azure Web-App](/learn/modules/capture-page-load-times-application-insights/). Beginnen Sie mit diesem Kurs zur Verwendung von Azure Monitor Application Insights für die End-to-End-Überwachung Ihrer Anwendungskomponenten, die in Azure ausgeführt werden.
   
   - Unter [Microsoft Azure-Datenbanküberwachung: Playbook](https://www.pluralsight.com/courses/microsoft-azure-database-playbook-monitoring) wird beschrieben, wie Sie die Überwachung von Azure SQL-Datenbank, Azure SQL Data Warehouse und Azure Cosmos DB implementieren und nutzen.
 
@@ -71,7 +71,7 @@ Das Erlangen der erforderlichen Qualifikationen kann mit den folgenden Lernpfade
 
 ## <a name="data-analysis"></a>Datenanalyse
 
-- Informieren Sie sich darüber, wie Sie [Protokollabfragen in Azure Monitor](https://docs.microsoft.com/learn/modules/analyze-infrastructure-with-azure-monitor-logs/) schreiben. Die Kusto-Abfragesprache ist die Hauptressource für das Schreiben von Azure Monitor-Protokollabfragen, um Protokolldaten für die erfassten Daten aus Azure und die Abhängigkeiten von Hybridressourcenanwendungen (einschließlich Liveanwendung) zu untersuchen und zu analysieren.
+- Informieren Sie sich darüber, wie Sie [Protokollabfragen in Azure Monitor](/learn/modules/analyze-infrastructure-with-azure-monitor-logs/) schreiben. Die Kusto-Abfragesprache ist die Hauptressource für das Schreiben von Azure Monitor-Protokollabfragen, um Protokolldaten für die erfassten Daten aus Azure und die Abhängigkeiten von Hybridressourcenanwendungen (einschließlich Liveanwendung) zu untersuchen und zu analysieren.
 
 - [Kusto-Abfragesprache (Kusto Query Language, KQL) für Einsteiger](https://www.pluralsight.com/courses/kusto-query-language-kql-from-scratch) ist ein umfassender Kurs, der ausführliche Beispiele für eine große Bandbreite von Anwendungsfällen und Techniken für die Protokollanalyse in Azure Monitor-Protokollen enthält.
 

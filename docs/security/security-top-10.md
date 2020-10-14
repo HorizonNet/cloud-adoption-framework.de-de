@@ -7,12 +7,12 @@ ms.date: 09/18/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
-ms.openlocfilehash: 46fe6f695b4b3e38c28e0860a15153a02a24a16a
-ms.sourcegitcommit: 899fcd5314ce2748e98c69e27c7f2e318ab27ac5
+ms.openlocfilehash: d66e0c59d7c3e55a97ae4cee7c07ea0ec4ee7a74
+ms.sourcegitcommit: 81246e185cee53fed591c4bafd56cde7d58e26f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91206227"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91898249"
 ---
 # <a name="azure-security-best-practices"></a>Azure-Sicherheit – bewährte Methoden
 
@@ -39,10 +39,10 @@ In vielerlei Hinsicht ähnelt die Umstellung auf die Cloud dem Umzug von einem E
 **Vorgehensweise**: Bieten Sie Teams den Kontext, der für eine erfolgreiche Bereitstellung und den Betrieb während des Übergangs zur Cloudumgebung erforderlich ist.
 Microsoft hat Lektionen veröffentlicht, die wir von unseren Kunden und unserer eigenen IT-Organisation bei der Migration in die Cloud gelernt haben:
 
-- Wie [Cloudsicherheitsfunktionen](/azure/cloud-adoption-framework/organize/cloud-security) sich in der Sicherheitsorganisation weiterentwickeln
-- [Entwicklung der Bedrohungsumgebung, von Rollen und digitalen Strategien](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#evolution-of-threat-environment-roles--digital-strategies-2004)
-- [Transformation von Sicherheit, Strategien, Tools und Bedrohungen](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#transformation-of-security-strategies-tools--threats-1513)
-- [Erkenntnisse von Microsoft aus der Erfahrung, eine Hyperscalecloudumgebung zu sichern](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#microsoft-security-practices-1349), die Ihnen auf dem Weg nützen können.
+- Wie [Cloudsicherheitsfunktionen](../organize/cloud-security.md) sich in der Sicherheitsorganisation weiterentwickeln
+- [Entwicklung der Bedrohungsumgebung, von Rollen und digitalen Strategien](/security/compass/microsoft-security-compass-introduction#evolution-of-threat-environment-roles--digital-strategies-2004)
+- [Transformation von Sicherheit, Strategien, Tools und Bedrohungen](/security/compass/microsoft-security-compass-introduction#transformation-of-security-strategies-tools--threats-1513)
+- [Erkenntnisse von Microsoft aus der Erfahrung, eine Hyperscalecloudumgebung zu sichern](/security/compass/microsoft-security-compass-introduction#microsoft-security-practices-1349), die Ihnen auf dem Weg nützen können.
 
 Lesen Sie auch den Vergleichstest für die Azure-Sicherheit [GS-4: Ausrichten von Organisationsrollen, Zuständigkeiten und Verantwortlichkeiten](/azure/security/benchmarks/security-controls-v2-governance-strategy#gs-3-align-organization-roles-responsibilities-and-accountabilities).
 
@@ -72,10 +72,10 @@ Darüber hinaus sollten sich Sicherheits- und IT-Technik-Manager (und häufig Pr
 Microsoft bietet umfassende Ressourcen, die technische Experten beim Sichern von Azure-Ressourcen und Berichten der Konformität unterstützen:
 
  - Azure Security
-    - AZ-500-[Lernpfad](https://docs.microsoft.com/learn/certifications/exams/az-500?tab=tab-learning-paths) (und Zertifizierung)
+    - AZ-500-[Lernpfad](/learn/certifications/exams/az-500?tab=tab-learning-paths) (und Zertifizierung)
    - [Vergleichstest für die Azure-Sicherheit (Azure Security Benchmark, ASB)](/azure/security/benchmarks/) – empfohlene bewährte Methoden und Steuerungen für die Azure-Sicherheit
      - [Sicherheitsbaselines für Azure](/azure/security/benchmarks/security-baselines-overview) – Anwendung von ASB für einzelne Azure-Dienste
-   - [Bewährte Methoden für Microsoft-Sicherheit](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction) – Videos und Dokumentation
+   - [Bewährte Methoden für Microsoft-Sicherheit](/security/compass/microsoft-security-compass-introduction) – Videos und Dokumentation
 - Azure – Compliance
    - [Tutorial: Verbessern der Einhaltung gesetzlicher Vorschriften](/azure/security-center/security-center-compliance-dashboard) – Auswertung mit Azure Security Center
  - Identitätsprotokolle und Sicherheit 
@@ -106,36 +106,36 @@ Dies sind die typischen Bereiche, in denen Sicherheitsentscheidungen erforderlic
 
 | Entscheidung         | BESCHREIBUNG           | Typisches Team  |
 | ------------- |-------------| -----|
-| Netzwerksicherheit | Konfiguration und Wartung von Azure Firewall, virtuellen Netzwerkgeräten (und zugehörigem Routing), WAFs, NSGs, ASGs usw. |    *In der Regel das Team für [Infrastruktur- und Endpunktsicherheit](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-infrastructure-endpoint) mit Konzentration auf Netzwerksicherheit*  |
-| Netzwerkverwaltung | Unternehmensweite Zuordnung zu virtuellem Netzwerk und Subnetz  | *Üblicherweise das bestehende Netzwerkbetriebsteam in der [zentralen IT-Abteilung](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it)* |
-| Serverendpunktsicherheit | Überwachen und Korrigieren der Serversicherheit (Patching, Konfiguration, Endpunktsicherheit usw.)  | *In der Regel das Team der [zentralen IT-Abteilung](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) und das Team für [Infrastruktur- und Endpunktsicherheit](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-infrastructure-endpoint) gemeinsam* |
-| Überwachung und Reaktion auf Incidents | Untersuchen und Beheben von Sicherheitsvorfällen in SIEM oder Quellkonsole (Azure Security Center, Azure AD Identity Protection usw.) | *Üblicherweise das Team für [Sicherheitsvorgänge](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-operations-center)* |
-| Richtlinienverwaltung | Festlegen von Anweisungen für die Verwendung der rollenbasierten Zugriffssteuerung (Role Based Access Control, RBAC), Azure Security Center, Administrator-Schutzstrategie und Azure Policy zum Steuern von Azure-Ressourcen | *In der Regel die Teams für [Richtlinien und Standards](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) + [Sicherheitsarchitektur](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-architecture) gemeinsam* |
-| Identitätssicherheit und -standards | Festlegen von Anweisungen für Azure AD-Verzeichnisse, PIM/PAM-Verwendung, MFA, Kennwort-/Synchronisierungskonfiguration, Anwendungsidentitätsstandards | *In der Regel die Teams für [Identitäts- und Schlüsselverwaltung](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) + [Richtlinien und Standards](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-policy-standards) + [Sicherheitsarchitektur](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-architecture) gemeinsam*  |
+| Netzwerksicherheit | Konfiguration und Wartung von Azure Firewall, virtuellen Netzwerkgeräten (und zugehörigem Routing), WAFs, NSGs, ASGs usw. |    *In der Regel das Team für [Infrastruktur- und Endpunktsicherheit](../organize/cloud-security-infrastructure-endpoint.md) mit Konzentration auf Netzwerksicherheit*  |
+| Netzwerkverwaltung | Unternehmensweite Zuordnung zu virtuellem Netzwerk und Subnetz  | *Üblicherweise das bestehende Netzwerkbetriebsteam in der [zentralen IT-Abteilung](../organize/central-it.md)* |
+| Serverendpunktsicherheit | Überwachen und Korrigieren der Serversicherheit (Patching, Konfiguration, Endpunktsicherheit usw.)  | *In der Regel das Team der [zentralen IT-Abteilung](../organize/central-it.md) und das Team für [Infrastruktur- und Endpunktsicherheit](../organize/cloud-security-infrastructure-endpoint.md) gemeinsam* |
+| Überwachung und Reaktion auf Incidents | Untersuchen und Beheben von Sicherheitsvorfällen in SIEM oder Quellkonsole (Azure Security Center, Azure AD Identity Protection usw.) | *Üblicherweise das Team für [Sicherheitsvorgänge](../organize/cloud-security-operations-center.md)* |
+| Richtlinienverwaltung | Festlegen von Anweisungen für die Verwendung der rollenbasierten Zugriffssteuerung (Role Based Access Control, RBAC), Azure Security Center, Administrator-Schutzstrategie und Azure Policy zum Steuern von Azure-Ressourcen | *In der Regel die Teams für [Richtlinien und Standards](../organize/cloud-security-policy-standards.md) + [Sicherheitsarchitektur](../organize/cloud-security-architecture.md) gemeinsam* |
+| Identitätssicherheit und -standards | Festlegen von Anweisungen für Azure AD-Verzeichnisse, PIM/PAM-Verwendung, MFA, Kennwort-/Synchronisierungskonfiguration, Anwendungsidentitätsstandards | *In der Regel die Teams für [Identitäts- und Schlüsselverwaltung](../organize/cloud-security-identity-keys.md) + [Richtlinien und Standards](../organize/cloud-security-policy-standards.md) + [Sicherheitsarchitektur](../organize/cloud-security-architecture.md) gemeinsam*  |
 
 > [!Note]
 >- Stellen Sie sicher, dass Entscheidungsträger in ihrem Bereich der Cloud über die entsprechende Ausbildung verfügen, um dieser Verantwortung gerecht zu werden.
 >- Stellen Sie sicher, dass Entscheidungen in Richtlinien und Standards dokumentiert werden, um Unterlagen bereitzustellen und die Organisation langfristig zu unterstützen.
 
-Lesen Sie auch den Vergleichstest für die Azure-Sicherheit [GS-4: Ausrichten von Organisationsrollen, Zuständigkeiten und Verantwortlichkeiten](https://docs.microsoft.com/azure/security/benchmarks/security-controls-v2-governance-strategy#gs-3-align-organization-roles-responsibilities-and-accountabilities)
+Lesen Sie auch den Vergleichstest für die Azure-Sicherheit [GS-4: Ausrichten von Organisationsrollen, Zuständigkeiten und Verantwortlichkeiten](/azure/security/benchmarks/security-controls-v2-governance-strategy#gs-3-align-organization-roles-responsibilities-and-accountabilities)
 
 ## <a name="4-process-update-incident-response-ir-processes-for-cloud"></a>4. Prozess: Aktualisieren von Prozessen für die Reaktion auf Vorfälle (Incident Response, IR) für die Cloud
 
 *Sie haben mitten in der Krise keine Zeit zur Krisenplanung.*
 
-**Was**: Aktualisieren Sie Prozesse, und bereiten Sie Analysten auf die Reaktion auf Sicherheitsvorfälle auf Ihrer Azure-Cloudplattform vor (einschließlich sämtlicher [nativer Tools zur Bedrohungserkennung](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/security#step-1-establish-essential-security-practices), die Sie übernommen haben). Aktualisieren Sie Prozesse, bereiten Sie das Team vor, und üben Sie mit simulierten Angriffen, damit es bei der Untersuchung von Vorfällen, ihrer Behebung und der Erkennung von Bedrohungen beste Leistung bietet.
+**Was**: Aktualisieren Sie Prozesse, und bereiten Sie Analysten auf die Reaktion auf Sicherheitsvorfälle auf Ihrer Azure-Cloudplattform vor (einschließlich sämtlicher [nativer Tools zur Bedrohungserkennung](../get-started/security.md#step-1-establish-essential-security-practices), die Sie übernommen haben). Aktualisieren Sie Prozesse, bereiten Sie das Team vor, und üben Sie mit simulierten Angriffen, damit es bei der Untersuchung von Vorfällen, ihrer Behebung und der Erkennung von Bedrohungen beste Leistung bietet.
 
 **Grund**: Aktive Angreifer stellen ein unmittelbares Risiko für die Organisation dar, das schnell zu einer schwer kontrollierbaren Situation werden kann, sodass Sie schnell und effektiv auf Angriffe reagieren müssen. Dieser Prozess der Reaktion auf Vorfälle (IR) muss für Ihre gesamte Infrastruktur einschließlich aller Cloudplattformen, die Unternehmensdaten, Systeme und Konten hosten, wirksam sein.
 
 Trotz Ähnlichkeiten in vielerlei Hinsicht bestehen wichtige technische Unterschiede zwischen lokalen Systemen, die vorhandene Prozesse unterbrechen können, und Cloudplattformen – in der Regel, weil Informationen in einer anderen Form verfügbar sind. Wenn es darum geht, schnell auf eine unbekannte Umgebung zu reagieren, können Sicherheitsanalysten möglicherweise auch vor Herausforderungen stehen, die sie bremsen können (insbesondere, wenn sie nur für klassische lokale Architekturen und Netzwerk-/Datenträgerforensikansätze geschult wurden).
 
-**Wer**: Die Modernisierung der IR-Prozesse wird in der Regel durch das Team für [Sicherheitsvorgänge](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-operations-center) eingeleitet, mit Unterstützung des Fachwissens anderer Gruppen.
+**Wer**: Die Modernisierung der IR-Prozesse wird in der Regel durch das Team für [Sicherheitsvorgänge](../organize/cloud-security-operations-center.md) eingeleitet, mit Unterstützung des Fachwissens anderer Gruppen.
 
 - *Förderung*: Diese Prozessmodernisierung wird in der Regel vom Direktor für Sicherheitsvorgänge oder einer entsprechenden Person gefördert.
 - *Ausführung*: Die Anpassung vorhandener Prozesse (oder ihre erstmalige Niederschrift) ist eine gemeinsame Arbeit, die die Folgenden einbezieht:  
-  - **[Sicherheitsvorgänge](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-operations-center)** : Incident Management-Team oder -Führungskräfte – leiten Aktualisierungen zur Integration wichtiger externer Projektbeteiligter, einschließlich Rechts- und Kommunikations-/Public Relations-Teams.
-  - **[Sicherheitsvorgänge](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-operations-center)** : Sicherheitsanalysten – verfügen über Fachkenntnisse zur Untersuchung und Selektierung von technischen Vorfällen.
-  - **[Zentrale IT-Abteilung](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it)** : verfügt über Fachkenntnisse zur Cloudplattform (direkt über das Cloudkompetenzzentrum oder über externe Berater).
+  - **[Sicherheitsvorgänge](../organize/cloud-security-operations-center.md)** : Incident Management-Team oder -Führungskräfte – leiten Aktualisierungen zur Integration wichtiger externer Projektbeteiligter, einschließlich Rechts- und Kommunikations-/Public Relations-Teams.
+  - **[Sicherheitsvorgänge](../organize/cloud-security-operations-center.md)** : Sicherheitsanalysten – verfügen über Fachkenntnisse zur Untersuchung und Selektierung von technischen Vorfällen.
+  - **[Zentrale IT-Abteilung](../organize/central-it.md)** : verfügt über Fachkenntnisse zur Cloudplattform (direkt über das Cloudkompetenzzentrum oder über externe Berater).
 
 **Vorgehensweise**: Aktualisieren Sie Prozesse, und bereiten Sie das Team vor, damit es weiß, was beim Auffinden eines aktiven Angreifers zu tun ist.
 
@@ -146,7 +146,7 @@ Trotz Ähnlichkeiten in vielerlei Hinsicht bestehen wichtige technische Untersch
 _**Schwerpunktbereiche**_: Obwohl viele Details in den Ressourcenlinks beschrieben werden, sollten Sie Ihre Schulungs- und Planungsmaßnahmen auf diese Schwerpunktbereiche konzentrieren:
 
 - **Modell der gemeinsamen Verantwortung und Cloudarchitekturen**: Für einen Sicherheitsanalysten ist Azure ein softwaredefiniertes Rechenzentrum, das viele Dienste bereitstellt, z. B. virtuelle Computer (vertraut) und andere, die sich stark von der lokalen Umgebung unterscheiden, wie z. B. Azure SQL Azure Functions usw., wo sich die besten Daten in den Dienstprotokollen oder den spezialisierten Diensten zur Bedrohungserkennung befinden und nicht in Protokollen für das zugrunde liegende Betriebssystem/die zugrunde liegenden VMs (die von Microsoft betrieben werden und mehreren Kunden dienen). Analysten müssen diesen Kontext verstehen und in Ihre täglichen Workflows integrieren, damit sie wissen, welche Daten zu erwarten sind, wo sie zu finden sind und in welchem Format sie vorliegen.
-- **Endpunkt-Datenquellen**: Das Abrufen von Erkenntnissen und Daten für Angriffe und Schadsoftware auf Servern, die in der Cloud gehostet werden, ist mit nativen Clouderkennungstools wie Azure Security Center und EDR-Systemen im Gegensatz zu herkömmlichen Ansätzen des direkten Datenträgerzugriffs häufig schneller, einfacher und präziser. Direkte Datenträgerforensik ist nicht nur für Szenarios verfügbar, in denen sie möglich und für rechtliche Schritte erforderlich ist ([Computerforensik in Azure](https://docs.microsoft.com/azure/architecture/example-scenario/forensics/)), sondern häufig die effizienteste Methode, um Angriffe zu erkennen und zu untersuchen.
+- **Endpunkt-Datenquellen**: Das Abrufen von Erkenntnissen und Daten für Angriffe und Schadsoftware auf Servern, die in der Cloud gehostet werden, ist mit nativen Clouderkennungstools wie Azure Security Center und EDR-Systemen im Gegensatz zu herkömmlichen Ansätzen des direkten Datenträgerzugriffs häufig schneller, einfacher und präziser. Direkte Datenträgerforensik ist nicht nur für Szenarios verfügbar, in denen sie möglich und für rechtliche Schritte erforderlich ist ([Computerforensik in Azure](/azure/architecture/example-scenario/forensics/)), sondern häufig die effizienteste Methode, um Angriffe zu erkennen und zu untersuchen.
 - **Netzwerk- und Identitätsdatenquellen**: Viele Funktionen von Cloudplattformen verwenden die Identität in erster Linie für die Zugriffssteuerung, etwa für den Zugriff auf das Azure-Portal (auch wenn weitgehend Netzwerkzugriffssteuerungen eingesetzt werden). Dies erfordert, dass Analysten ein Verständnis der Cloudidentitätsprotokolle entwickeln, um ein umfassendes Bild der Angreiferaktivität (und legitimer Benutzeraktivität) zur Untersuchung und Behebung von Vorfällen erhalten. Identitätsverzeichnisse und -protokolle unterscheiden sich auch von der lokalen Umgebung, da sie in der Regel auf SAML-, OAuth- und OIDC- sowie Cloudverzeichnissen statt auf LDAP, Kerberos, NTLM und Active Directory basieren, die häufig lokal anzutreffen sind.
 - **Praktische Übungen**: Simulierte Angriffe und Antworten können den Aufbau eines „Muskelgedächtnisses“ der Organisation und der technischen Bereitschaft Ihrer Sicherheitsanalysten, Bedrohungserkenner, Incident Manager und anderer Projektbeteiligte in Ihrer Organisation fördern. Das Lernen in der Praxis und die Anpassung ist ein natürlicher Bestandteil der Reaktion auf Vorfälle, aber Sie sollten minimieren, was Sie in einer Krise lernen müssen.
 
@@ -156,14 +156,14 @@ _**Schwerpunktbereiche**_: Obwohl viele Details in den Ressourcenlinks beschrieb
 - Anleitung zum [Entwickeln Ihres eigenen Prozesses für die Reaktion auf Sicherheitsvorfälle](https://msrc-blog.microsoft.com/2019/07/01/inside-the-msrc-building-your-own-security-incident-response-process/)
 - [Protokollierung und Warnung in Azure](/azure/security/fundamentals/log-audit)
 - Bewährte Methoden für Microsoft-Sicherheit
-  - [Transformation von Sicherheit, Strategien, Tools und Bedrohungen](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#transformation-of-security-strategies-tools--threats-1513)
-  - [Sicherheitsvorgänge](https://docs.microsoft.com/security/compass/security-operations-videos-and-decks)
+  - [Transformation von Sicherheit, Strategien, Tools und Bedrohungen](/security/compass/microsoft-security-compass-introduction#transformation-of-security-strategies-tools--threats-1513)
+  - [Sicherheitsvorgänge](/security/compass/security-operations-videos-and-decks)
 - Erkenntnisse von Microsoft aus dem Operationszentrum für Cyberabwehr (Cyber Defense Operations Center, CDOC)
   - [Insgesamt gelernte Lektionen](https://www.microsoft.com/security/blog/2019/02/21/lessons-learned-from-the-microsoft-soc-part-1-organization/)
   - [Vorfalluntersuchung](https://www.microsoft.com/security/blog/2019/12/23/ciso-series-lessons-learned-from-the-microsoft-soc-part-3b-a-day-in-the-life/)
   - [Vorfallbehebung](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/)
 
-Lesen Sie auch den Vergleichstest für die Azure-Sicherheit [IR-1: Vorbereitung – Aktualisieren des Prozesses zur Reaktion auf Vorfälle für Azure](https://docs.microsoft.com/azure/security/benchmarks/security-controls-v2-incident-response#ir-1-preparation--update-incident-response-process-for-azure).
+Lesen Sie auch den Vergleichstest für die Azure-Sicherheit [IR-1: Vorbereitung – Aktualisieren des Prozesses zur Reaktion auf Vorfälle für Azure](/azure/security/benchmarks/security-controls-v2-incident-response#ir-1-preparation--update-incident-response-process-for-azure).
 
 ## <a name="5-process-establish-security-posture-management"></a>5. Prozess: Einrichten der Sicherheitsstatusverwaltung
 
@@ -180,16 +180,16 @@ Lesen Sie auch den Vergleichstest für die Azure-Sicherheit [IR-1: Vorbereitung 
 
 Das softwaredefinierte Wesen von Cloudrechenzentren ermöglicht die kontinuierliche Überwachung von Sicherheitsrisiken (Softwaresicherheitsanfälligkeiten, Sicherheitsfehlkonfigurationen usw.) mit umfangreicher Ressourceninstrumentierung. Mit der Geschwindigkeit, mit der Entwickler und IT-Teams virtuelle Computer, Datenbanken und andere Ressourcen bereitstellen können, entsteht auch das Bedürfnis, sicherzustellen, dass die Ressourcen sicher konfiguriert und aktiv überwacht werden.
 
-Diese neuen Funktionen bieten neue Möglichkeiten, aber damit ihr Wert erkannt wird, muss die Verantwortlichkeit für ihre Verwendung zugewiesen werden. Bei der konsistenten Ausführung für sich schnell entwickelnde Cloudvorgänge müssen auch die menschlichen Prozesse so einfach und automatisiert wie möglich bleiben. Weitere Informationen finden Sie in [Prinzipien für den Sicherheitsentwurf](https://docs.microsoft.com/azure/architecture/framework/security/security-principles) unter „Fördern der Einfachheit“.
+Diese neuen Funktionen bieten neue Möglichkeiten, aber damit ihr Wert erkannt wird, muss die Verantwortlichkeit für ihre Verwendung zugewiesen werden. Bei der konsistenten Ausführung für sich schnell entwickelnde Cloudvorgänge müssen auch die menschlichen Prozesse so einfach und automatisiert wie möglich bleiben. Weitere Informationen finden Sie in [Prinzipien für den Sicherheitsentwurf](/azure/architecture/framework/security/security-principles) unter „Fördern der Einfachheit“.
 
 > [!Note]
  >Das Ziel der Vereinfachung und Automatisierung ist nicht, Aufträge loszuwerden, sondern Menschen die Belastung sich wiederholender Aufgaben abzunehmen, damit sie sich auf höherwertigere menschliche Aktivitäten wie das Engagement in IT- und DevOps-Teams und deren Schulung konzentrieren können.
 
 **Wer**: Dies ist in der Regel in zwei Gruppen von Zuständigkeiten unterteilt:
 
-- **[Sicherheitsstatusverwaltung](/azure/cloud-adoption-framework/organize/cloud-security-posture-management)** : Diese neuere Funktion ist oft eine Weiterentwicklung vorhandener Sicherheitsrisikoverwaltungs- oder Governancefunktionen. Dies umfasst das Überwachen des gesamten Sicherheitsstatus mithilfe von Secure Score von Azure Security Center und anderer Datenquellen, die aktive Zusammenarbeit mit Ressourcenbesitzern, um Risiken zu verringern, und das Melden von Risiken an die Führungskräfte im Sicherheitsbereich.
+- **[Sicherheitsstatusverwaltung](../organize/cloud-security-posture-management.md)** : Diese neuere Funktion ist oft eine Weiterentwicklung vorhandener Sicherheitsrisikoverwaltungs- oder Governancefunktionen. Dies umfasst das Überwachen des gesamten Sicherheitsstatus mithilfe von Secure Score von Azure Security Center und anderer Datenquellen, die aktive Zusammenarbeit mit Ressourcenbesitzern, um Risiken zu verringern, und das Melden von Risiken an die Führungskräfte im Sicherheitsbereich.
 - **Wiederherstellung der Sicherheit**: Weisen Sie die Verantwortung für die Behebung dieser Risiken den Teams zu, die für die Verwaltung dieser Ressourcen zuständig sind.
-Dies sollten entweder die DevOps-Teams sein, die ihre eigenen Anwendungsressourcen verwalten, oder die technologiespezifischen Teams in der **[zentralen IT-Abteilung](/azure/cloud-adoption-framework/organize/central-it)** :
+Dies sollten entweder die DevOps-Teams sein, die ihre eigenen Anwendungsressourcen verwalten, oder die technologiespezifischen Teams in der **[zentralen IT-Abteilung](../organize/central-it.md)** :
 
   - _**Compute- und App-Ressourcen:**_
     - **App Services**: Anwendungsentwicklungs-/Sicherheitsteam(s)
@@ -212,14 +212,14 @@ Dies sollten entweder die DevOps-Teams sein, die ihre eigenen Anwendungsressourc
 > [!IMPORTANT]
 > Die Erläuterungen, warum welche Ressourcen wie gesichert werden, sind häufig für verschiedene Ressourcentypen und Anwendungen ähnlich, aber es ist wichtig, dass Sie sie mit dem in Zusammenhang bringen, was die einzelnen Teams bereits wissen und sie beschäftigt. Sicherheitsteams sollten vertrauenswürdige Ratgeber und Partner ihrer IT- und DevOps-Kollegen sein und diesen Teams zum Erfolg verhelfen.  
 
-**Tools**: [Secure Score](https://docs.microsoft.com/azure/security-center/security-center-secure-score) in Azure Security Center bietet für eine Vielzahl von Ressourcen in Azure eine Bewertung der wichtigsten Sicherheitsinformationen. Dies sollte Ihr Ausgangspunkt bei der Statusverwaltung sein, der durch benutzerdefinierte Azure-Richtlinien und andere Mechanismen nach Bedarf ergänzt werden kann.
+**Tools**: [Secure Score](/azure/security-center/security-center-secure-score) in Azure Security Center bietet für eine Vielzahl von Ressourcen in Azure eine Bewertung der wichtigsten Sicherheitsinformationen. Dies sollte Ihr Ausgangspunkt bei der Statusverwaltung sein, der durch benutzerdefinierte Azure-Richtlinien und andere Mechanismen nach Bedarf ergänzt werden kann.
 
 **Häufigkeit**: Richten Sie ein Intervall (in der Regel monatlich) ein, um die Azure-Sicherheitsbewertung zu prüfen und Initiativen mit bestimmten Optimierungszielen zu planen. Die Häufigkeit kann bei Bedarf gesteigert werden.
 
 > [!Tip]
  > Machen Sie vielleicht aus der Aktivität ein Spiel, um das Engagement zu steigern, indem Sie z. B. unterhaltsame Wettbewerbe veranstalten und Preisen für die DevOps-Teams in Aussicht stellen, die ihre Bewertung am meisten steigern.
 
-Lesen Sie auch den Vergleichstest für die Azure-Sicherheit [GS-3: Definieren der Strategie für die Sicherheitsstatusverwaltung](https://docs.microsoft.com/azure/security/benchmarks/security-controls-v2-governance-strategy#gs-2-define-security-posture-management-strategy).
+Lesen Sie auch den Vergleichstest für die Azure-Sicherheit [GS-3: Definieren der Strategie für die Sicherheitsstatusverwaltung](/azure/security/benchmarks/security-controls-v2-governance-strategy#gs-2-define-security-posture-management-strategy).
 
 ## <a name="6-technology-require-passwordless-or-multi-factor-authentication-mfa"></a>6. Technologie: Kennwortlose oder mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) fordern
 
@@ -229,27 +229,27 @@ Lesen Sie auch den Vergleichstest für die Azure-Sicherheit [GS-3: Definieren de
 
 **Grund**: Ebenso wie die einfachen Haustürschlüssel das Haus nicht vor einem modernen Einbrecher schützen, können Kennwörter keine Konten vor häufigen Angriffe schützen, wie sie heutzutage vorkommen. Technische Details werden unter [Your Pa$$word doesn't matter](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/your-pa-word-doesn-t-matter/ba-p/731984) (Ihr Ke$$wort spielt keine Rolle) beschrieben.
 
-MFA war zwar einmal ein mühseliger zusätzlicher Schritt, aber heute verbessern kennwortlose Ansätze die Anmeldeerfahrung mithilfe biometrischer Ansätze wie der Gesichtserkennung in Windows Hello und auf mobilen Geräten (wo Sie sich weder ein Kennwort merken noch es eingeben müssen). Darüber hinaus erinnern sich Zero Trust-Ansätze an vertrauenswürdige Geräte, was die Aufforderung zu lästigen Out-of-Band-MFA-Aktionen reduziert (siehe [Anmeldehäufigkeit von Benutzern](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime#user-sign-in-frequency)).
+MFA war zwar einmal ein mühseliger zusätzlicher Schritt, aber heute verbessern kennwortlose Ansätze die Anmeldeerfahrung mithilfe biometrischer Ansätze wie der Gesichtserkennung in Windows Hello und auf mobilen Geräten (wo Sie sich weder ein Kennwort merken noch es eingeben müssen). Darüber hinaus erinnern sich Zero Trust-Ansätze an vertrauenswürdige Geräte, was die Aufforderung zu lästigen Out-of-Band-MFA-Aktionen reduziert (siehe [Anmeldehäufigkeit von Benutzern](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime#user-sign-in-frequency)).
 
-**Wer**: Die Kennwort- und MFA-Initiative wird in der Regel von [Identitäts- und Schlüsselverwaltung](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) und/oder [Sicherheitsarchitektur](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-architecture) geleitet.
+**Wer**: Die Kennwort- und MFA-Initiative wird in der Regel von [Identitäts- und Schlüsselverwaltung](../organize/cloud-security-identity-keys.md) und/oder [Sicherheitsarchitektur](../organize/cloud-security-architecture.md) geleitet.
 
 - *Förderung*: Dies wird in der Regel von CISO, CIO oder vom Director of Identity gefördert.
 - *Ausführung*: Dies ist eine gemeinsame Arbeit, die die Folgenden einbezieht:
-  - Das [Richtlinien und Standards](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-policy-standards)-Team stellt klare Anforderungen auf.
-  - [Identitäts- und Schlüsselverwaltung](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) oder [zentrale IT-Abteilung](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it) implementieren die Richtlinie.
-  - Die [Sicherheitskonformitätsverwaltung](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-compliance-management) überwacht die Einhaltung.
+  - Das [Richtlinien und Standards](../organize/cloud-security-policy-standards.md)-Team stellt klare Anforderungen auf.
+  - [Identitäts- und Schlüsselverwaltung](../organize/cloud-security-identity-keys.md) oder [zentrale IT-Abteilung](../organize/central-it.md) implementieren die Richtlinie.
+  - Die [Sicherheitskonformitätsverwaltung](../organize/cloud-security-compliance-management.md) überwacht die Einhaltung.
 
 **Vorgehensweise**: Implementieren Sie die kennwortlose oder MFA-Authentifizierung, schulen Sie Administratoren (bei Bedarf) in ihrer Verwendung, und fordern Sie Administratoren mit geschriebenen Richtlinien zur Einhaltung auf. Dies kann durch eine oder mehrere der folgenden Technologien erreicht werden:
 
-- [Kennwortlos (Windows Hello)](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification)
-- [Kennwortlos (Authenticator-App)](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-phone-sign-in)
-- [Azure Multifactor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-userstates)
+- [Kennwortlos (Windows Hello)](/windows/security/identity-protection/hello-for-business/hello-identity-verification)
+- [Kennwortlos (Authenticator-App)](/azure/active-directory/authentication/howto-authentication-phone-sign-in)
+- [Azure Multifactor Authentication](/azure/active-directory/authentication/howto-mfa-userstates)
 - Drittanbieter-MFA-Lösung
 
 > [!Note]
 > Da die MFA auf SMS-Basis nun mit relativ kleinem Aufwand von Angreifern umgangen werden kann, konzentrieren Sie sich auf kennwortlose und stärkere MFA.
 
-Lesen Sie auch den Vergleichstest für die Azure-Sicherheit [ID-4: Verwenden stärkerer Authentifizierungssteuerungen für den gesamten Azure Active Directory-basierten Zugriff](https://docs.microsoft.com/azure/security/benchmarks/security-controls-v2-identity-management#id-4-use-strong-authentication-controls-for-all-azure-active-directory-based-access).
+Lesen Sie auch den Vergleichstest für die Azure-Sicherheit [ID-4: Verwenden stärkerer Authentifizierungssteuerungen für den gesamten Azure Active Directory-basierten Zugriff](/azure/security/benchmarks/security-controls-v2-identity-management#id-4-use-strong-authentication-controls-for-all-azure-active-directory-based-access).
 
 ## <a name="7-technology-integrate-native-firewall-and-network-security"></a>7. Technologie: Integrieren von nativer Firewall und Netzwerksicherheit
 
@@ -257,7 +257,7 @@ Lesen Sie auch den Vergleichstest für die Azure-Sicherheit [ID-4: Verwenden st�
 
 **Was**: Vereinfachen Sie Ihre Netzwerksicherheitsstrategie und -wartung, indem Sie Azure Firewall, Azure Web App Firewall (WAF) und Entschärfung verteilter Denial-of-Service-Angriffe (Distributed Denial of Service, DDoS) in Ihren Ansatz zur Netzwerksicherheit integrieren.
 
-**Grund**: Die Vereinfachung ist wichtig für die Sicherheit, da dadurch die Wahrscheinlichkeit des Auftretens von Risiken durch Verwirrung, Fehlkonfigurationen und andere menschliche Fehler reduziert wird. Weitere Informationen finden Sie in [Prinzipien für den Sicherheitsentwurf](https://docs.microsoft.com/azure/architecture/framework/security/security-principles) unter „Fördern der Einfachheit“.
+**Grund**: Die Vereinfachung ist wichtig für die Sicherheit, da dadurch die Wahrscheinlichkeit des Auftretens von Risiken durch Verwirrung, Fehlkonfigurationen und andere menschliche Fehler reduziert wird. Weitere Informationen finden Sie in [Prinzipien für den Sicherheitsentwurf](/azure/architecture/framework/security/security-principles) unter „Fördern der Einfachheit“.
 
 Firewalls und WAFs sind wichtige grundlegende Sicherheitssteuerungen zum Schutz von Anwendungen vor schädlichem Datenverkehr, aber deren Einrichtung und Wartung können komplex sein und in beträchtlichem Maße Zeit und Aufmerksamkeit des Sicherheitsteams beanspruchen (ähnlich dem Hinzufügen angepasster Zusatzteile zu einem Auto). Die nativen Azure-Funktionen können Implementierung und Betrieb von Firewalls, Web Application Firewalls, Entschärfung verteilter Denial-of-Service-Angriffe (DDoS) und mehr vereinfachen.
 
@@ -267,8 +267,8 @@ Auf diese Weise kann Ihr Team Zeit finden, sich mit höherwertigen Sicherheitsau
 
 - *Förderung*: Dieses Update der Netzwerksicherheitsstrategie wird in der Regel von den Führungskräften im Sicherheitsbereich und/oder IT-Führungskräften gefördert.
 - *Ausführung*: Die Integration dieser Komponenten in Ihre Cloudnetzwerk-Sicherheitsstrategie ist eine gemeinsame Arbeit, die die Folgenden einbezieht:  
-  - **[Sicherheitsarchitektur](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-architecture)** : Richten Sie die Cloudnetzwerk-Sicherheitsarchitektur mit Cloudnetzwerk- und Cloudnetzwerksicherheits-Leads ein.
-  - **Cloudnetzwerkleads** ([Zentrale IT-Abteilung](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it)) + **Cloudnetzwerksicherheits-Leads** ([Infrastruktursicherheits-Team](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-infrastructure-endpoint))
+  - **[Sicherheitsarchitektur](../organize/cloud-security-architecture.md)** : Richten Sie die Cloudnetzwerk-Sicherheitsarchitektur mit Cloudnetzwerk- und Cloudnetzwerksicherheits-Leads ein.
+  - **Cloudnetzwerkleads** ([Zentrale IT-Abteilung](../organize/central-it.md)) + **Cloudnetzwerksicherheits-Leads** ([Infrastruktursicherheits-Team](../organize/cloud-security-infrastructure-endpoint.md))
     - Einrichten der Cloudnetzwerksicherheits-Architektur mit Sicherheitsarchitekten
     - Konfigurieren von Firewall-, NSG- und WAF-Funktionen und Arbeiten an WAF-Regeln mit Anwendungsarchitekten
   - **Anwendungsarchitekten**: Arbeiten mit der Netzwerksicherheit zum Erstellen und Verfeinern von WAF-Regelsätzen und DDoS-Konfigurationen, um die Anwendung ohne Unterbrechung der Verfügbarkeit zu schützen.
@@ -301,20 +301,20 @@ Es ist schwierig, hohe Bedrohungen mithilfe vorhandener Tools und Ansätze zu er
 
 Mit diesen nativen Lösungen können sich Teams für Sicherheitsvorgänge auch auf die Untersuchung und Behebung von Vorfällen konzentrieren, anstatt Zeit damit zu verschwenden, zu versuchen, Warnungen aus unbekannten Protokolldaten zu erstellen, Tools zu integrieren und Wartungsaufgaben durchzuführen.
 
-**Wer**: Dies wird in der Regel durch das Team für [Sicherheitsvorgänge](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-operations-center) gesteuert.
+**Wer**: Dies wird in der Regel durch das Team für [Sicherheitsvorgänge](../organize/cloud-security-operations-center.md) gesteuert.
 
 - *Förderung*: Dies wird in der Regel vom Direktor für Sicherheitsvorgänge (oder einer entsprechenden Person) gefördert.
 - *Ausführung*: Die Integration der nativen Bedrohungserkennung ist eine gemeinsame Arbeit, die die Folgenden einbezieht:
-  - **[Sicherheitsvorgänge](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-operations-center)** : Integrieren Sie Warnungen in SIEM- und Vorfalluntersuchungsprozesse, schulen Sie Analysten in Cloudwarnungen und deren Bedeutung und in der Verwendung der nativen Cloudtools.
-  - **[Vorbereitung auf Vorfälle](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-incident-preparation)** : Integrieren Sie Cloudvorfälle in praktische Übungen, und stellen Sie sicher, dass praktische Übungen durchgeführt werden, um die Teambereitschaft zu fördern.
-  - **[Threat Intelligence](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-threat-intelligence)** : Erforschen und integrieren Sie Informationen zu Cloudangriffen, um Teams mit Kontext und Intelligenz zu informieren.
-  - **[Sicherheitsarchitektur](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-architecture)** : Integrieren Sie native Tools in die Dokumentation zur Sicherheitsarchitektur.
-  - **[Richtlinien und Standards](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-policy-standards)** : Legen Sie Standards und Richtlinien für die Aktivierung nativer Tools in der gesamten Organisation fest. Überwachen Sie die Einhaltung.
-  - **[Infrastruktur und Endpunkt](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-infrastructure-endpoint)**  /  **[Zentrale IT-Abteilung](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it)** : Konfigurieren und aktivieren Sie Erkennungen und integrieren Sie sie als Codelösungen in Automatisierung und Infrastruktur.
+  - **[Sicherheitsvorgänge](../organize/cloud-security-operations-center.md)** : Integrieren Sie Warnungen in SIEM- und Vorfalluntersuchungsprozesse, schulen Sie Analysten in Cloudwarnungen und deren Bedeutung und in der Verwendung der nativen Cloudtools.
+  - **[Vorbereitung auf Vorfälle](../organize/cloud-security-incident-preparation.md)** : Integrieren Sie Cloudvorfälle in praktische Übungen, und stellen Sie sicher, dass praktische Übungen durchgeführt werden, um die Teambereitschaft zu fördern.
+  - **[Threat Intelligence](../organize/cloud-security-threat-intelligence.md)** : Erforschen und integrieren Sie Informationen zu Cloudangriffen, um Teams mit Kontext und Intelligenz zu informieren.
+  - **[Sicherheitsarchitektur](../organize/cloud-security-architecture.md)** : Integrieren Sie native Tools in die Dokumentation zur Sicherheitsarchitektur.
+  - **[Richtlinien und Standards](../organize/cloud-security-policy-standards.md)** : Legen Sie Standards und Richtlinien für die Aktivierung nativer Tools in der gesamten Organisation fest. Überwachen Sie die Einhaltung.
+  - **[Infrastruktur und Endpunkt](../organize/cloud-security-infrastructure-endpoint.md)**  /  **[Zentrale IT-Abteilung](../organize/central-it.md)** : Konfigurieren und aktivieren Sie Erkennungen und integrieren Sie sie als Codelösungen in Automatisierung und Infrastruktur.
 
-**Vorgehensweise**: Aktivieren Sie die [Bedrohungserkennung in Azure Security Center](https://docs.microsoft.com/azure/security-center/threat-protection) für alle Ressourcen, die Sie verwenden, und lassen Sie die einzelnen Teams diese wie oben beschrieben in ihre Prozesse integrieren.
+**Vorgehensweise**: Aktivieren Sie die [Bedrohungserkennung in Azure Security Center](/azure/security-center/threat-protection) für alle Ressourcen, die Sie verwenden, und lassen Sie die einzelnen Teams diese wie oben beschrieben in ihre Prozesse integrieren.
 
-Lesen Sie auch den Vergleichstest für die Azure-Sicherheit [LT-1: Aktivieren der Bedrohungserkennung für Azure-Ressourcen](https://docs.microsoft.com/azure/security/benchmarks/security-controls-v2-logging-threat-detection#lt-1-enable-threat-detection-for-azure-resources).
+Lesen Sie auch den Vergleichstest für die Azure-Sicherheit [LT-1: Aktivieren der Bedrohungserkennung für Azure-Ressourcen](/azure/security/benchmarks/security-controls-v2-logging-threat-detection#lt-1-enable-threat-detection-for-azure-resources).
 
 ## <a name="9-architecture-standardize-on-a-single-directory-and-identity"></a>9. Architektur: Standardisieren eines einzelnen Verzeichnisses und einer einzelnen Identität
 
@@ -323,7 +323,7 @@ Lesen Sie auch den Vergleichstest für die Azure-Sicherheit [LT-1: Aktivieren de
 **Was**: Standardisieren Sie ein einzelnes Azure AD-Verzeichnis und eine einzelne Identität für jede Anwendung und jeden Benutzer in Azure (für alle Unternehmensidentitätsfunktionen).
 
 > [!Note]
->Diese bewährte Vorgehensweise bezieht sich speziell auf Unternehmensressourcen. Verwenden Sie für Partnerkonten [Azure AD B2B](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b), damit Sie keine Konten in Ihrem Verzeichnis erstellen und verwalten müssen. Verwenden Sie [Azure AD B2C](https://docs.microsoft.com/azure/active-directory-b2c/), um Kunden-/Bürgerkonten zu verwalten.
+>Diese bewährte Vorgehensweise bezieht sich speziell auf Unternehmensressourcen. Verwenden Sie für Partnerkonten [Azure AD B2B](/azure/active-directory/external-identities/what-is-b2b), damit Sie keine Konten in Ihrem Verzeichnis erstellen und verwalten müssen. Verwenden Sie [Azure AD B2C](/azure/active-directory-b2c/), um Kunden-/Bürgerkonten zu verwalten.
 
 **Grund**: Mehrere Konten und Identitätsverzeichnisse sorgen für unnötige Friktionen und Verwirrung in täglichen Workflows für Produktivitätsbenutzer, Entwickler, IT- und Identitätsadministratoren, Sicherheitsanalysten und andere Rollen.
 
@@ -331,14 +331,14 @@ Das Verwalten mehrerer Konten und Verzeichnisse schafft auch einen Anreiz für s
 
 Obwohl es manchmal einfacher erscheint, schnell ein benutzerdefiniertes Verzeichnis (basierend auf LDAP usw.) für eine bestimmte Anwendung oder Arbeitsauslastung zu erstellen, fallen dadurch viel mehr Integrations- und Wartungsaufgaben für Einrichtung und Verwaltung an. Dies ähnelt in vielerlei Hinsicht der Entscheidung, einen zusätzlichen Azure-Mandanten einzurichten oder eine zusätzliche lokale Active Directory-Gesamtstruktur, statt die im Unternehmen vorhandene zu verwenden. Weitere Informationen finden Sie auch in [Prinzipien für den Sicherheitsentwurf](/azure/architecture/framework/security/security-principles) unter „Fördern der Einfachheit“.
 
-**Wer**: Dies ist häufig ein teamübergreifender Aufwand, der durch [Sicherheitsarchitektur](/azure/cloud-adoption-framework/organize/cloud-security-architecture)- oder [Identitäts- und Schlüsselverwaltungs](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys)-Teams gesteuert wird.
+**Wer**: Dies ist häufig ein teamübergreifender Aufwand, der durch [Sicherheitsarchitektur](../organize/cloud-security-architecture.md)- oder [Identitäts- und Schlüsselverwaltungs](../organize/cloud-security-identity-keys.md)-Teams gesteuert wird.
 
-- *Förderung*: Dies wird in der Regel durch [Identitäts- und Schlüsselverwaltung](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) und [Sicherheitsarchitektur](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/cloud-security-architecture) gefördert (obwohl einige Organisationen möglicherweise eine Förderung durch CISO oder CIO benötigen).
+- *Förderung*: Dies wird in der Regel durch [Identitäts- und Schlüsselverwaltung](../organize/cloud-security-identity-keys.md) und [Sicherheitsarchitektur](../organize/cloud-security-architecture.md) gefördert (obwohl einige Organisationen möglicherweise eine Förderung durch CISO oder CIO benötigen).
 - *Ausführung*: Dies ist eine gemeinsame Arbeit, die die Folgenden einbezieht:
-  -  **[Sicherheitsarchitektur](/azure/cloud-adoption-framework/organize/cloud-security-architecture)** : Wird in Dokumente und Diagramme zu Sicherheit und IT-Architektur integriert
-  - **[Richtlinien und Standards](/azure/cloud-adoption-framework/organize/cloud-security-policy-standards)** : Dokumentieren der Richtlinie und Überwachung auf Einhaltung
-  - **[Identitäts- und Schlüsselverwaltung](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys)** oder **[Zentrale IT-Abteilung](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it)** , um die Richtlinie durch Aktivieren von Funktionen und Unterstützen von Entwicklern mit Konten, Schulungen usw. zu implementieren.
-  - **Anwendungsentwickler** und/oder **[Zentrale IT-Abteilung](/azure/cloud-adoption-framework/organize/central-it)** : Verwenden von Identitäten in Anwendungen und Azure-Dienstkonfigurationen (Zuständigkeiten variieren basierend auf der Stufe der DevOps-Einführung)
+  -  **[Sicherheitsarchitektur](../organize/cloud-security-architecture.md)** : Wird in Dokumente und Diagramme zu Sicherheit und IT-Architektur integriert
+  - **[Richtlinien und Standards](../organize/cloud-security-policy-standards.md)** : Dokumentieren der Richtlinie und Überwachung auf Einhaltung
+  - **[Identitäts- und Schlüsselverwaltung](../organize/cloud-security-identity-keys.md)** oder **[Zentrale IT-Abteilung](../organize/central-it.md)** , um die Richtlinie durch Aktivieren von Funktionen und Unterstützen von Entwicklern mit Konten, Schulungen usw. zu implementieren.
+  - **Anwendungsentwickler** und/oder **[Zentrale IT-Abteilung](../organize/central-it.md)** : Verwenden von Identitäten in Anwendungen und Azure-Dienstkonfigurationen (Zuständigkeiten variieren basierend auf der Stufe der DevOps-Einführung)
 
 **Vorgehensweise**: Verfolgen Sie einen pragmatischen Ansatz, der mit den neuen „Greenfield“-Funktionen beginnt (heute wachsend), und bereinigen Sie dann Herausforderungen mit dem „Brownfield“ vorhandener Anwendungen und Dienste als Folgeaufgabe:
 
@@ -368,14 +368,14 @@ Lesen Sie auch den Vergleichstest für die Azure-Sicherheit [ID-1: Standardisier
 
 Die identitätsbasierte Authentifizierung überwindet viele dieser Herausforderungen mit ausgereiften Funktionen für Geheimnisrotation, Lebenszyklusverwaltung, administrative Delegierung und vieles mehr.
 
-**Wer**: Dies ist häufig ein teamübergreifender Aufwand, der durch [Sicherheitsarchitektur](/azure/cloud-adoption-framework/organize/cloud-security-architecture)- oder [Identitäts- und Schlüsselverwaltungs](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys)-Teams gesteuert wird.
+**Wer**: Dies ist häufig ein teamübergreifender Aufwand, der durch [Sicherheitsarchitektur](../organize/cloud-security-architecture.md)- oder [Identitäts- und Schlüsselverwaltungs](../organize/cloud-security-identity-keys.md)-Teams gesteuert wird.
 
-- *Förderung*: Dies wird in der Regel durch [Sicherheitsarchitektur](/azure/cloud-adoption-framework/organize/cloud-security-architecture) oder [Identitäts- und Schlüsselverwaltung](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys) gefördert (obwohl einige Organisationen möglicherweise eine Förderung durch CISO oder CIO benötigen).
+- *Förderung*: Dies wird in der Regel durch [Sicherheitsarchitektur](../organize/cloud-security-architecture.md) oder [Identitäts- und Schlüsselverwaltung](../organize/cloud-security-identity-keys.md) gefördert (obwohl einige Organisationen möglicherweise eine Förderung durch CISO oder CIO benötigen).
 - *Ausführung*: Dies ist eine gemeinsame Arbeit, die die Folgenden einbezieht:
-  - **[Sicherheitsarchitektur](/azure/cloud-adoption-framework/organize/cloud-security-architecture)** : Wird in Dokumente und Diagramme zu Sicherheit und IT-Architektur integriert
-  - **[Richtlinien und Standards](/azure/cloud-adoption-framework/organize/cloud-security-policy-standards)** : Dokumentieren der Richtlinie und Überwachung auf Einhaltung
-  - **[Identitäts- und Schlüsselverwaltung](/azure/cloud-adoption-framework/organize/cloud-security-identity-keys)** oder **[Zentrale IT-Abteilung](https://docs.microsoft.com/azure/cloud-adoption-framework/organize/central-it)** , um die Richtlinie durch Aktivieren von Funktionen und Unterstützen von Entwicklern mit Konten, Schulungen usw. zu implementieren.
-  - **App-Entwickler** und/oder **[Zentrale IT-Abteilung](/azure/cloud-adoption-framework/organize/central-it)** : Verwenden von Identitäten in Anwendungen und Azure-Dienstkonfigurationen (Zuständigkeiten variieren basierend auf der Stufe der DevOps-Einführung)
+  - **[Sicherheitsarchitektur](../organize/cloud-security-architecture.md)** : Wird in Dokumente und Diagramme zu Sicherheit und IT-Architektur integriert
+  - **[Richtlinien und Standards](../organize/cloud-security-policy-standards.md)** : Dokumentieren der Richtlinie und Überwachung auf Einhaltung
+  - **[Identitäts- und Schlüsselverwaltung](../organize/cloud-security-identity-keys.md)** oder **[Zentrale IT-Abteilung](../organize/central-it.md)** , um die Richtlinie durch Aktivieren von Funktionen und Unterstützen von Entwicklern mit Konten, Schulungen usw. zu implementieren.
+  - **App-Entwickler** und/oder **[Zentrale IT-Abteilung](../organize/central-it.md)** : Verwenden von Identitäten in Anwendungen und Azure-Dienstkonfigurationen (Zuständigkeiten variieren basierend auf der Stufe der DevOps-Einführung)
 
 **Vorgehensweise**: Die Verwendung der identitätsbasierten Authentifizierung in der Organisation als Präferenz und Gewohnheit zu etablieren, setzt die Befolgung eines Prozesses und Aktivierung einer Technologie voraus.
 
@@ -388,7 +388,7 @@ Die identitätsbasierte Authentifizierung überwindet viele dieser Herausforderu
 
 **Die Technologien:** Verwenden Sie für Konten, die nicht für Personen, sondern z. B. für Dienste oder Automatisierung bestimmt sind, [verwaltete Identitäten](/azure/active-directory/managed-identities-azure-resources/overview). Verwaltete Identitäten in Azure können sich bei Azure-Diensten und -Ressourcen authentifizieren, die die Azure AD-Authentifizierung unterstützen. Die Authentifizierung wird durch vordefinierte Zugriffszuweisungsregeln aktiviert, sodass hart codierte Anmeldeinformationen im Quellcode oder in Konfigurationsdateien vermieden werden.
 
-Für Dienste, die keine verwalteten Identitäten unterstützen, können Sie stattdessen mit Azure AD [Dienstprinzipale](/azure/active-directory/develop/app-objects-and-service-principals) mit eingeschränkten Berechtigungen auf Ressourcenebene erstellen. Sie sollten Dienstprinzipale mit Zertifikatanmeldeinformationen und Fallback auf geheime Clientschlüssel konfigurieren. In beiden Fällen kann [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/overview) in Verbindung mit verwalteten Azure-Identitäten verwendet werden, damit die Laufzeitumgebung (z. B. eine Azure-Funktion) die Anmeldeinformationen aus dem Schlüsseltresor abrufen kann.
+Für Dienste, die keine verwalteten Identitäten unterstützen, können Sie stattdessen mit Azure AD [Dienstprinzipale](/azure/active-directory/develop/app-objects-and-service-principals) mit eingeschränkten Berechtigungen auf Ressourcenebene erstellen. Sie sollten Dienstprinzipale mit Zertifikatanmeldeinformationen und Fallback auf geheime Clientschlüssel konfigurieren. In beiden Fällen kann [Azure Key Vault](/azure/key-vault/general/overview) in Verbindung mit verwalteten Azure-Identitäten verwendet werden, damit die Laufzeitumgebung (z. B. eine Azure-Funktion) die Anmeldeinformationen aus dem Schlüsseltresor abrufen kann.
 
 Lesen Sie auch den Vergleichstest für die Azure-Sicherheit [ID-2: Sicheres und automatisches Verwalten von Anwendungsidentitäten](/azure/security/benchmarks/security-controls-v2-identity-management#id-2-manage-application-identities-securely-and-automatically).
 
@@ -408,13 +408,13 @@ Ein Beispiel dafür, das sich in vielen Organisationen konsistent abgespielt hat
 
 In Organisationen, in denen dies geschieht, erleben Teams häufig Konflikte wegen Firewallausnahmen, was sich sowohl auf die Sicherheit (Ausnahmen werden normalerweise genehmigt) als auch die Produktivität (die Bereitstellung wird für wichtige Anwendungsfunktionen verlangsamt) negativ auswirkt.
 
-Wenngleich die Sicherheit durch Erzwingen kritischer Überlegungen eine heilsame Friktion bewirken kann, schafft dieser Konflikt nur eine kontraproduktive Friktion, die das Erreichen von Zielen erschwert. Weitere Informationen finden Sie unter *Das richtige Niveau der Sicherheitsfriktion* unter [Definieren einer Sicherheitsstrategie](/azure/cloud-adoption-framework/strategy/define-security-strategy#modernize-your-security-strategy).
+Wenngleich die Sicherheit durch Erzwingen kritischer Überlegungen eine heilsame Friktion bewirken kann, schafft dieser Konflikt nur eine kontraproduktive Friktion, die das Erreichen von Zielen erschwert. Weitere Informationen finden Sie unter *Das richtige Niveau der Sicherheitsfriktion* unter [Definieren einer Sicherheitsstrategie](../strategy/define-security-strategy.md#modernize-your-security-strategy).
 
 **Wer**:
 - *Förderung*: Die in der Regel von CIO, CISO und CTO gemeinsam (häufig mit Unterstützung einiger allgemeiner Elemente durch die Unternehmensführung) geförderte und von Vertretern der einzelnen Teams verfochtene vereinheitlichte Strategie.
 - *Ausführung*: Die Sicherheitsstrategie muss von allen Benutzern implementiert werden. Daher sollte sie Input von allen Teams integrieren, um Verantwortung, Buy-In und Erfolgswahrscheinlichkeit zu erhöhen.
-  - **[Sicherheitsarchitektur](/azure/cloud-adoption-framework/organize/cloud-security-architecture)** : Bestimmt den Aufwand für das Erstellen der Sicherheitsstrategie und daraus resultierender Architektur, das aktive Sammeln von Feedback von Teams und das Dokumentieren in Präsentationen, Dokumenten und Diagrammen für die verschiedenen Zielgruppen.
-   - **[Richtlinien und Standards](/azure/cloud-adoption-framework/organize/cloud-security-policy-standards)** : Erfasst die entsprechenden Elemente in Standards und Richtlinien und überwacht dann die Einhaltung.
+  - **[Sicherheitsarchitektur](../organize/cloud-security-architecture.md)** : Bestimmt den Aufwand für das Erstellen der Sicherheitsstrategie und daraus resultierender Architektur, das aktive Sammeln von Feedback von Teams und das Dokumentieren in Präsentationen, Dokumenten und Diagrammen für die verschiedenen Zielgruppen.
+   - **[Richtlinien und Standards](../organize/cloud-security-policy-standards.md)** : Erfasst die entsprechenden Elemente in Standards und Richtlinien und überwacht dann die Einhaltung.
   - **Alle technischen IT- und Sicherheitsteams**: Stellen Inputanforderungen auf, richten daran die Unternehmensstrategie aus und implementieren sie.
    - **Anwendungsbesitzer und -entwickler**: Lesen und verstehen die Strategiedokumentation, die für sie relevant ist (idealerweise die auf ihre Rolle zugeschnittenen Richtlinien).
 
@@ -427,11 +427,11 @@ Erstellen und implementieren einer Sicherheitsstrategie für die Cloud, die den 
 - **Stabil, aber flexibel**: Strategien sollten relativ konsistent und stabil bleiben, aber die Architekturen und die Dokumentation müssen möglicherweise geändert werden, um Klarheit zu schaffen und die dynamische Natur der Cloud zu berücksichtigen. Beispielsweise würde das Herausfiltern von schädlichem externem Datenverkehr auch dann ein strategischer Imperativ bleiben, wenn Sie von der Verwendung einer Drittanbieterfirewall der nächsten Generation zur Azure-Firewall wechseln und Diagramme/Anleitungen für die Vorgehensweise anpassen würden.
 - **Beginnen Sie mit Segmentierung**: Im Rahmen der Einführung in die Cloud befassen sich Ihre Teams mit vielen großen und kleinen Strategiethemen, aber Sie müssen irgendwo anfangen. Sie sollten die Sicherheitsstrategie mit der Segmentierung von Unternehmensressourcen beginnen, da es sich hierbei um eine grundlegende Entscheidung handelt, die sich zu einem späteren Zeitpunkt nur schwer ändern ließe und sowohl geschäftlichen Input als auch viele technische Teams erfordert.
 
-Microsoft hat eine Anleitung zum Anwenden einer Segmentierungsstrategie auf Azure in [diesem Video](https://docs.microsoft.com/security/compass/microsoft-security-compass-introduction#azure-components-and-reference-model-2151) und Dokumente zur [Unternehmenssegmentierung](https://docs.microsoft.com/security/compass/governance#enterprise-segmentation-strategy) und zum [Ausrichten der Netzwerksicherheit daran](https://docs.microsoft.com/security/compass/network-security-containment#align-network-segmentation-with-enterprise-segmentation-strategy) veröffentlicht.
+Microsoft hat eine Anleitung zum Anwenden einer Segmentierungsstrategie auf Azure in [diesem Video](/security/compass/microsoft-security-compass-introduction#azure-components-and-reference-model-2151) und Dokumente zur [Unternehmenssegmentierung](/security/compass/governance#enterprise-segmentation-strategy) und zum [Ausrichten der Netzwerksicherheit daran](/security/compass/network-security-containment#align-network-segmentation-with-enterprise-segmentation-strategy) veröffentlicht.
 
 Das Cloud Adoption Framework enthält Anleitungen, die Ihre Teams bei Folgendem unterstützen:
 
-- **[Zusammenstellen eines Cloudstrategieteams](/azure/cloud-adoption-framework/get-started/team/cloud-strategy)** : Im Idealfall sollte die Sicherheit in eine vorhandene Cloudstrategie integriert werden.
-- **[Erstellen oder Modernisieren einer Sicherheitsstrategie](/azure/cloud-adoption-framework/strategy/define-security-strategy)** : Um Geschäfts- und Sicherheitsziele in der aktuellen Ära von Clouddiensten und modernen Bedrohungen zu erfüllen.
+- **[Zusammenstellen eines Cloudstrategieteams](../get-started/team/cloud-strategy.md)** : Im Idealfall sollte die Sicherheit in eine vorhandene Cloudstrategie integriert werden.
+- **[Erstellen oder Modernisieren einer Sicherheitsstrategie](../strategy/define-security-strategy.md)** : Um Geschäfts- und Sicherheitsziele in der aktuellen Ära von Clouddiensten und modernen Bedrohungen zu erfüllen.
 
 Lesen Sie auch den Vergleichstest für die Azure-Sicherheit [Governance und Strategie](/azure/security/benchmarks/security-controls-v2-governance-strategy).

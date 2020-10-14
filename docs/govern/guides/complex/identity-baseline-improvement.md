@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 5d2bfab7d5a7cea52d249d0bd2ed386e0dbcdae4
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 1df1e0ae58572beac799f43304018672c9231c47
+ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604917"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91108144"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-identity-baseline-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Identitätsbaseline“
 
@@ -69,7 +69,7 @@ Die folgenden Änderungen an der Richtlinie verringern die neuen Risiken und ver
 - Zwischen dem Cloudanbieter und dem Telekommunikationsanbieter des Unternehmens sollte eine private Hochgeschwindigkeitsverbindung eingerichtet werden, die den Cloudanbieter mit dem globalen Rechenzentrumsnetzwerk verbindet.
 - Solange keine ausreichenden Sicherheitsanforderungen implementiert sind, darf kein eingehender öffentlicher Verkehr auf Unternehmensressourcen zugreifen, die in der Cloud gehostet sind. Alle Ports von Quellen außerhalb des globalen WANs sind blockiert.
 
-## <a name="incremental-improvement-of-the-best-practices"></a>Inkrementelle Verbesserungen der bewährten Methoden
+## <a name="incremental-improvement-of-best-practices"></a>Inkrementelle Verbesserungen von bewährten Methoden
 
 Der Governance-MVP-Entwurf wird so geändert, dass er neue Azure-Richtlinien und eine Implementierung von Active Directory auf einem virtuellen Computer umfasst. Zusammen erfüllen diese beiden Entwurfsänderungen die neuen Richtlinienanweisungen des Unternehmens.
 
@@ -80,7 +80,7 @@ Dies sind die neuen Best Practices:
     1. Definieren Sie eine Netzwerksicherheitsgruppe, um externen Datenverkehr zu blockieren und internen Datenverkehr zuzulassen.
     2. Stellen Sie zwei virtuelle Active Directory-Computer als Paar mit Lastenausgleich auf der Grundlage eines Golden Image bereit. Beim ersten Start führt dieses Image ein PowerShell-Skript aus, um den Domänenbeitritt und die Registrierung bei den Domänendiensten vorzunehmen. Weitere Informationen finden Sie unter [Erweitern von Active Directory Domain Services (AD DS) auf Azure](/azure/architecture/reference-architectures/identity/adds-extend-domain).
 - Azure Policy: Wenden Sie die NSG auf alle Ressourcen an.
-- Azure-Blaupause:
+- Azure Blueprints:
     1. Erstellen Sie eine Blaupause mit dem Namen `active-directory-virtual-machines`.
     2. Fügen Sie der Blaupause jede der Active Directory-Vorlagen und -Richtlinien hinzu.
     3. Veröffentlichen Sie die Blaupause in jeder betroffenen Verwaltungsgruppe.
