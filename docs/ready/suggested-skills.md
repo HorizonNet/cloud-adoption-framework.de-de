@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a45b0db36d2c587dbe126f47859e67418c3fe707
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 6e16c72b6703c3ddaa3db1a7f5d712571a62063f
+ms.sourcegitcommit: becf7868250fe159be940aa93f6f8f84bdbc27c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88661706"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92003915"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>Pfad für die Qualifikationsbereitschaft während der Phase „Bereitschaft“ eines Migrationspfads
 
@@ -62,11 +62,11 @@ Mit unseren [Microsoft Azure-Zertifizierungstrainings und -prüfungen](https://w
 
 Microsoft Learn ist ein neuer Lernansatz. Die Bereitschaft zu den neuen Qualifikationen und Aufgaben, die mit der Cloudeinführung verbunden sind, entsteht nicht problemlos. Microsoft Learn bietet einen lohnenderen Ansatz für praktisches Lernen, der Ihnen hilft, Ihre Ziele schneller zu erreichen. Punkte sammeln, zu höheren Stufen aufsteigen und mehr erreichen.
 
-Die folgenden Beispiele sind einige angepasste Lernpfade auf Microsoft Learn, die sich an der Bereitschaftsmethodik des Cloud Adoption Framework ausrichten:
+Die folgenden Beispiele sind einige angepasste Lernpfade auf Microsoft Learn, die sich an der Bereitschaftsmethodik des Cloud Adoption Framework orientieren:
 
-[Azure-Grundlagen](/learn/paths/azure-for-the-data-engineer): Erfahren Sie mehr über Cloud-Konzepte wie Hochverfügbarkeit, Skalierbarkeit, Elastizität, Flexibilität, Fehlertoleranz und Notfallwiederherstellung. Informieren Sie sich über die Vorteile von Cloud Computing in Azure und wie Sie damit Zeit und Geld sparen können. Vergleichen Sie grundlegende Strategien für den Übergang zur Azure-Cloud und stellen Sie diese gegenüber. Untersuchen Sie den Umfang der in Azure verfügbaren Dienste, einschließlich Compute, Netzwerk, Speicher und Sicherheit.
+[Azure-Grundlagen](/learn/paths/azure-fundamentals): Erfahren Sie mehr über Cloud-Konzepte wie Hochverfügbarkeit, Skalierbarkeit, Elastizität, Flexibilität, Fehlertoleranz und Notfallwiederherstellung. Informieren Sie sich über die Vorteile von Cloud Computing in Azure und wie Sie damit Zeit und Geld sparen können. Vergleichen Sie grundlegende Strategien für den Übergang zur Azure-Cloud und stellen Sie diese gegenüber. Untersuchen Sie den Umfang der in Azure verfügbaren Dienste, einschließlich Compute, Netzwerk, Speicher und Sicherheit.
 
-[Verwalten von Ressourcen in Azure](/learn/paths/azure-for-the-data-engineer): Es wird beschrieben, wie Sie die Azure-Befehlszeile und das Webportal verwenden, um cloudbasierte Ressourcen zu erstellen, zu verwalten und zu steuern.
+[Verwalten von Ressourcen in Azure](/learn/paths/control-and-organize-with-azure-resource-manager): Es wird beschrieben, wie Sie die Azure-Befehlszeile und das Webportal verwenden, um cloudbasierte Ressourcen zu erstellen, zu verwalten und zu steuern.
 
 [Verwalten von Infrastrukturressourcen in Azure](/learn/paths/administer-infrastructure-resources-in-azure): Erfahren Sie, wie Sie Ressourcen virtueller Computer erstellen, verwalten, schützen und skalieren.
 
