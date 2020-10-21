@@ -7,12 +7,12 @@ ms.date: 05/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 6e16c72b6703c3ddaa3db1a7f5d712571a62063f
-ms.sourcegitcommit: becf7868250fe159be940aa93f6f8f84bdbc27c6
+ms.openlocfilehash: d1c30e7d2fdc98aedb61e6c7abd403fd482c74f4
+ms.sourcegitcommit: 1b28a7c6e966c6e0b69304ebb4b11d218c1891e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92003915"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92253428"
 ---
 # <a name="skills-readiness-path-during-the-ready-phase-of-a-migration-journey"></a>Pfad für die Qualifikationsbereitschaft während der Phase „Bereitschaft“ eines Migrationspfads
 
@@ -66,7 +66,7 @@ Die folgenden Beispiele sind einige angepasste Lernpfade auf Microsoft Learn, di
 
 [Azure-Grundlagen](/learn/paths/azure-fundamentals): Erfahren Sie mehr über Cloud-Konzepte wie Hochverfügbarkeit, Skalierbarkeit, Elastizität, Flexibilität, Fehlertoleranz und Notfallwiederherstellung. Informieren Sie sich über die Vorteile von Cloud Computing in Azure und wie Sie damit Zeit und Geld sparen können. Vergleichen Sie grundlegende Strategien für den Übergang zur Azure-Cloud und stellen Sie diese gegenüber. Untersuchen Sie den Umfang der in Azure verfügbaren Dienste, einschließlich Compute, Netzwerk, Speicher und Sicherheit.
 
-[Verwalten von Ressourcen in Azure](/learn/paths/control-and-organize-with-azure-resource-manager): Es wird beschrieben, wie Sie die Azure-Befehlszeile und das Webportal verwenden, um cloudbasierte Ressourcen zu erstellen, zu verwalten und zu steuern.
+[Verwalten von Ressourcen in Azure](/learn/modules/control-and-organize-with-azure-resource-manager): Es wird beschrieben, wie Sie die Azure-Befehlszeile und das Webportal verwenden, um cloudbasierte Ressourcen zu erstellen, zu verwalten und zu steuern.
 
 [Verwalten von Infrastrukturressourcen in Azure](/learn/paths/administer-infrastructure-resources-in-azure): Erfahren Sie, wie Sie Ressourcen virtueller Computer erstellen, verwalten, schützen und skalieren.
 
