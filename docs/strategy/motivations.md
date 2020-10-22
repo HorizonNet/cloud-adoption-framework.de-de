@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: f76231e6ecbe657d07eedaa7eb6a8b803af8fbc5
-ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
+ms.openlocfilehash: 82cfad675b99e158ad743c629032c2d9b4b4044a
+ms.sourcegitcommit: 501c2d458b34ae5e38984c682852835309a25b4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90681328"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91952351"
 ---
 # <a name="motivations-why-are-we-moving-to-the-cloud"></a>Beweggründe: Motivationen für den Wechsel in die Cloud
 
@@ -26,7 +26,7 @@ Unternehmenstransformationen, die durch die Cloudeinführung unterstützt werden
 
 | Kritische Unternehmensereignisse | Migration | Innovation |
 |---|---|---|
-| Ausstieg aus Rechenzentrum <br><br> Fusionen, Übernahme oder Veräußerung <br><br> Reduzierung der Kapitalkosten <br><br> Ende des Supports für unternehmenskritische Technologien <br><br> Reaktion auf Änderungen bezüglich der Einhaltung gesetzlicher Bestimmungen <br><br> Neue Anforderungen an die Datenhoheit <br><br> Verringerung von Störungen und Verbesserung der IT-Stabilität <br><br> <br><br> | Kostenersparnis <br><br> Verringerung der Anbieter- oder technischen Komplexität <br><br> Optimierung interner Vorgänge <br><br> Erhöhen der Unternehmensflexibilität <br><br> Vorbereitung auf neue technische Funktionen und Möglichkeiten <br><br> Skalierung entsprechend den Marktanforderungen <br><br> Skalierung entsprechend den geografischen Anforderungen <br><br> Integration eines komplexen IT-Portfolios <br><br> | Vorbereitung auf neue technische Funktionen und Möglichkeiten <br><br> Entwicklung neuer technischer Funktionen und Möglichkeiten <br><br> Skalierung entsprechend den Marktanforderungen <br><br> Skalierung entsprechend den geografischen Anforderungen <br><br> Verbesserte Kundenzufriedenheit und Kundenbindung <br><br> Transformierung von Produkten oder Diensten <br><br> Revolutionieren des Markts mit neuen Produkten oder Diensten <br><br> Demokratisierung und/oder Self-Service-Umgebungen |
+| Ausstieg aus Rechenzentrum <br><br> Fusionen, Übernahme oder Veräußerung <br><br> Reduzierung der Kapitalkosten <br><br> Ende des Supports für unternehmenskritische Technologien <br><br> Reaktion auf Änderungen bezüglich der Einhaltung gesetzlicher Bestimmungen <br><br> Neue Anforderungen an die Datenhoheit <br><br> Verringerung von Störungen und Verbesserung der IT-Stabilität <br><br>Verbesserung der CO²-Bilanz <br><br> | Kostenersparnis <br><br> Verringerung der Anbieter- oder technischen Komplexität <br><br> Optimierung interner Vorgänge <br><br> Erhöhen der Unternehmensflexibilität <br><br> Vorbereitung auf neue technische Funktionen und Möglichkeiten <br><br> Skalierung entsprechend den Marktanforderungen <br><br> Skalierung entsprechend den geografischen Anforderungen <br><br> Integration eines komplexen IT-Portfolios <br><br> | Vorbereitung auf neue technische Funktionen und Möglichkeiten <br><br> Entwicklung neuer technischer Funktionen und Möglichkeiten <br><br> Skalierung entsprechend den Marktanforderungen <br><br> Skalierung entsprechend den geografischen Anforderungen <br><br> Verbesserte Kundenzufriedenheit und Kundenbindung <br><br> Transformierung von Produkten oder Diensten <br><br> Revolutionieren des Markts mit neuen Produkten oder Diensten <br><br> Demokratisierung und/oder Self-Service-Umgebungen |
 
 ## <a name="classify-your-motivations"></a>Klassifizieren Ihrer Beweggründe
 

@@ -1,7 +1,6 @@
 ---
 title: Cloudmigration
 description: Bereiten Sie sich mithilfe eines iterativen Prozesses zur Bewertung, Migration, Optimierung, Sicherung und Verwaltung von Workloads auf eine erfolgreiche Migration zu Azure vor.
-keywords: Azure-Cloudmigration, Cloudeinführung, zu Azure migrieren, Lift & Shift, Migrationswellen, Migrationsplanung, Migrationsmethodik, Cloud-Migrationsframework
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/04/2020
@@ -9,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: seo-azure-migrate
-ms.openlocfilehash: 21fd1e6f0803ee8be10ec8dc928bb95120e3bb03
-ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
+ms.openlocfilehash: 8549f6719acdc13e32f005f085c1e99ec1d53b7d
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91621415"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334917"
 ---
 # <a name="cloud-migration-in-the-cloud-adoption-framework"></a>Cloudmigration im Cloud Adoption Framework
 
