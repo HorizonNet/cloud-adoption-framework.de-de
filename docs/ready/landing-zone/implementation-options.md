@@ -7,12 +7,12 @@ ms.date: 07/07/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 6a5aad81f1ea855434160c2bc8aefd313fca7335
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: 14cd74e53a0b007c59b26abe4044111ee2add7d5
+ms.sourcegitcommit: 1b28a7c6e966c6e0b69304ebb4b11d218c1891e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88662199"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "92253400"
 ---
 # <a name="landing-zone-implementation-options"></a>Implementierungsoptionen für Zielzonen
 
@@ -36,7 +36,9 @@ In der folgenden Tabelle werden einige der Implementierungsoptionen für Zielzon
 |---|---|---|---|---|
 | [Blaupause für die CAF-Migrationszielzone](./migrate-landing-zone.md) | Stellt die Grundlage für das Migrieren von Ressourcen mit geringem Risiko dar. | Klein anfangen | [Entwurfsprinzipien](./migrate-landing-zone.md#design-principles) | [Bereitstellen](./migrate-landing-zone.md) |
 | [CAF-Basisblaupause](./foundation-blueprint.md) | Hiermit werden die Tools hinzugefügt, die für den Einstieg in die Entwicklung einer Governance-Strategie mindestens erforderlich sind. | Klein anfangen | [Entwurfsprinzipien](./foundation-blueprint.md#design-principles) | [Bereitstellen](./foundation-blueprint.md) |
-| [CAF-Zielzone auf Unternehmensebene](../enterprise-scale/index.md) | Stellt eine für Unternehmen geeignete Plattformgrundlage mit allen erforderlichen gemeinsamen Diensten zum Unterstützen des kompletten IT-Portfolios bereit. | Unternehmensebene | [Entwurfsprinzipien](../enterprise-scale/design-principles.md) | [Bereitstellen](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/contoso/Readme.md) |
+| [CAF-Zielzonen auf Unternehmensniveau (Hybridkonnektivität mit vWan)](../enterprise-scale/index.md) | Stellt eine für Unternehmen geeignete Plattformgrundlage mit allen erforderlichen gemeinsamen Diensten zum Unterstützen des kompletten IT-Portfolios bereit, einschließlich Hybridkonnektivität (VWAN). | Unternehmensebene | [Entwurfsprinzipien](../enterprise-scale/design-principles.md) | [Bereitstellen](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/contoso/Readme.md) |
+| [CAF-Zielzonen auf Unternehmensniveau (Hybridkonnektivität mit „Hub-and-Spoke“)](../enterprise-scale/index.md) | Stellt eine für Unternehmen geeignete Plattformgrundlage mit allen erforderlichen gemeinsamen Diensten zum Unterstützen des kompletten IT-Portfolios bereit, einschließlich Hybridkonnektivität (Hub-and-Spoke). | Unternehmensebene | [Entwurfsprinzipien](../enterprise-scale/design-principles.md) | [Bereitstellen](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/adventureworks/README.md) |
+| [CAF-Zielzone auf Unternehmensebene](../enterprise-scale/index.md) | Stellt eine für Unternehmen geeignete Plattformgrundlage mit allen erforderlichen gemeinsamen Diensten zum Unterstützen des kompletten IT-Portfolios bereit, wobei die Konnektivität später bei Bedarf hinzugefügt werden kann. | Unternehmensebene | [Entwurfsprinzipien](../enterprise-scale/design-principles.md) | [Bereitstellen](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/wingtip/README.md) |
 | [CAF-Terraform-Module](./terraform-landing-zone.md) | Drittanbieter-Pfad für Betriebsmodelle mit mehreren Clouds. Dieser Pfad kann zunächst von Azure ausgehende Betriebsmodelle beschränken. | Klein anfangen | [Entwurfsprinzipien](./terraform-landing-zone.md#design-decisions) | [Bereitstellen](./terraform-landing-zone.md#customize-and-deploy-your-first-landing-zone) |
 | [Zielzonen von Partnern](./partner-landing-zone.md) | Partner, die Angebote anbieten, die sich an der Bereitschaftsmethodik des Cloud Adoption Framework orientieren, können ihre eigene angepasste Implementierungsoption bereitstellen. | Variable | [Entwurfsprinzipien](./partner-landing-zone.md) | [Einen Partner suchen](https://www.microsoft.com/azure/partners/adopt?filters=ready) |
 

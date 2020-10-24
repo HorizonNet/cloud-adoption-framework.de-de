@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 9592e0007e2d9d6be5ad675573184b193bd1b9f9
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 444fe8d597c895aa969a966cb4d659673451198c
+ms.sourcegitcommit: 9d8165354a38f84d0b271b2ce4928f7042e24163
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776379"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91851697"
 ---
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
 
@@ -94,12 +94,12 @@ Virtual WAN wird Interkonnektivitätsanforderungen in großem Stil gerecht. Da e
 
 Verwenden Sie eine traditionelle Azure-Netzwerktopologie, wenn einer der folgenden Punkte zutrifft:
 
-- Ihre Organisation beabsichtigt, Ressourcen nur in einigen Azure-Regionen bereitzustellen.
-- Sie benötigen kein globales verbundenes Netzwerk.
+- Ihre Organisation beabsichtigt, Ressourcen über verschiedene Azure-Regionen bereitzustellen.
+- Sie können globales VNet-Peering verwenden, um virtuelle Netzwerke über Azure-Regionen hinweg zu verbinden.
 - Sie verfügen über eine geringe Anzahl von Remote- oder Zweigstellenstandorten pro Region. Das heißt, Sie benötigen weniger als 30 IP-Sicherheitstunnel (IPsec).
 - Sie benötigen vollständige Kontrolle und Granularität für die manuelle Konfiguration Ihres Azure-Netzwerks.
 
-Diese herkömmliche Topologie hilft Ihnen, ein sicheres Netzwerkfundament in Azure zu erstellen.
+Eine traditionelle Netzwerktopologie hilft Ihnen beim Aufbau Erstellen eines sicheren, groß angelegten Netzwerks in Azure.
 
 ## <a name="virtual-wan-network-topology-microsoft-managed"></a>Virtual WAN-Netzwerktopologie (von Microsoft verwaltet)
 
@@ -162,6 +162,8 @@ _Abbildung 1: Virtual WAN-Netzwerktopologie._
 
 - Verbinden Sie Virtual WAN-Hubs mit lokalen Rechenzentren mithilfe von ExpressRoute.
 
+- Stellen Sie erforderliche freigegebene Dienste, wie DNS-Server, in einer dedizierten Zielzone bereit. Erforderliche freigegebene Ressourcen können nicht auf einem Azure Virtual WAN-Hub bereitgestellt werden.
+
 - Verbinden Sie Zweigstellen und Remotestandorte über ein Site-to-Site-VPN mit dem nächstgelegenen Virtual WAN-Hub, oder aktivieren Sie die Zweigstellenkonnektivität mit Virtual WAN über eine SD-WAN-Partnerlösung.
 
 - Verbinden Sie Benutzer mit dem Virtual WAN-Hub über ein Point-to-Site-VPN.
@@ -174,7 +176,7 @@ _Abbildung 1: Virtual WAN-Netzwerktopologie._
 
 - Wenn Sie Netzwerktechnologien und NVAs von Partnern bereitstellen, befolgen Sie die Anweisungen des Partners, um sicherzustellen, dass keine Konflikte mit Azure-Netzwerken auftreten.
 
-- Setzen Sie kein Transitnetzwerk auf Azure Virtual WAN auf. Virtual WAN erfüllt alle Anforderungen an die transitive Netzwerktopologie, einschließlich der Möglichkeit zur Verwendung von Drittanbieter-NVAs. Das Aufbauen eines Transitnetzwerks auf Azure Virtual WAN wäre redundant und würde die Komplexität erhöhen. 
+- Setzen Sie kein Transitnetzwerk auf Azure Virtual WAN auf. Virtual WAN erfüllt Anforderungen an die transitive Netzwerktopologie, wie z. B. die Möglichkeit zur Verwendung von Drittanbieter-NVAs. Das Aufbauen eines Transitnetzwerks auf Azure Virtual WAN wäre redundant und würde die Komplexität erhöhen. 
 
 - Verwenden Sie keine vorhandenen lokalen Netzwerke wie MPLS (Multiprotocol Label Switching), um Azure-Ressourcen über Azure-Regionen hinweg zu verbinden, da Azure-Netzwerktechnologien die Verbindung von Azure-Ressourcen regionsübergreifend über den Microsoft-Backbone unterstützen. Dies liegt an den Leistungs- und Betriebszeitmerkmalen des Microsoft-Backbones sowie der Vereinfachung des Routings. Dieser Vorschlag zielt auf die Leistungs- und Betriebszeitmerkmale des Microsoft-Backbones. Er unterstützt außerdem die Vereinfachung des Routings.
 
@@ -191,6 +193,8 @@ _Abbildung 1: Virtual WAN-Netzwerktopologie._
 Virtual WAN bietet zwar eine große Bandbreite an leistungsstarken Funktionen, in manchen Fällen kann jedoch ein herkömmlicher Azure-Netzwerkansatz optimal sein:
 
 - Wenn kein globales transitives Netzwerk über mehrere Azure-Regionen oder Standorte hinweg erforderlich ist. Ein Beispiel hierfür ist eine Zweigstelle in der USA, die mit einem virtuellen Netzwerk in Europa verbunden werden muss.
+
+- Wenn Sie ein globales Netzwerk über mehrere Azure-Regionen hinweg bereitstellen müssen und globales VNet-Peering verwenden können, um virtuelle Netzwerke über Regionen hinweg zu verbinden.
 
 - Wenn keine Notwendigkeit besteht, eine Verbindung mit einer großen Anzahl von Remotestandorten über VPN oder die Integration mit einer SD-WAN-Lösung herzustellen.
 
@@ -236,15 +240,15 @@ _Abbildung 4: Eine herkömmliche Azure-Netzwerktopologie._
 
   - Die Grenze für den Datenverkehr in einer Azure-Bereitstellung liegt innerhalb einer Azure-Region.
 
-  - Eine Netzwerkarchitektur überspannt bis zu zwei Azure-Regionen, und die Transitkonnektivität zwischen virtuellen Netzwerken für Zielzonen ist daher in verschiedenen Regionen erforderlich.
-
   - Eine Netzwerkarchitektur, die mehrere Azure-Regionen umfasst, wobei keine Transitkonnektivität zwischen virtuellen Netzwerken für Zielzonen in verschiedenen Regionen benötigt wird.
+
+  - Eine Netzwerkarchitektur erstreckt sich über mehrere Azure-Regionen, und globales VNet-Peering verwendet werden, um virtuelle Netzwerke über Azure-Regionen hinweg zu verbinden.
 
   - Transitkonnektivität zwischen VPN- und ExpressRoute-Verbindungen ist nicht erforderlich.
 
   - Der Hauptkanal für die Konnektivität zwischen lokalen Standorten ist ExpressRoute, und die Anzahl der VPN-Verbindungen pro VPN-Gateway ist kleiner als 30.
 
-  - Es besteht eine starke Abhängigkeit von zentralisierten NVAs und einem komplexen/präzisen Routing.
+  - Es besteht eine Abhängigkeit von zentralisierten NVAs und einem differenzierten Routing.
 
 - Verwenden Sie für regionale Bereitstellungen hauptsächlich die Hub-and-Spoke-Topologie. Nutzen Sie Zielzonen für virtuelle Netzwerke, die über das Peering virtueller Netzwerke mit einem zentralen virtuellen Hub-Netzwerk für die Konnektivität zwischen lokalen Standorten über ExpressRoute verbunden sind. VPN wird für die Zweigstellenkonnektivität verwendet, Spoke-to-Spoke-Konnektivität über NVAs und UDRs sichergestellt und der Schutz für ausgehenden Datenverkehr in das Internet über NVA erfolgt. Die folgende Abbildung zeigt diese Topologie.  Dies ermöglicht der entsprechenden Datenverkehrskontrolle, die meisten Anforderungen an Segmentierung und Überprüfung zu erfüllen.
 
@@ -255,7 +259,9 @@ _Abbildung 4: Eine herkömmliche Azure-Netzwerktopologie._
 - Verwenden Sie die Topologie mehrerer virtueller Netzwerke, die an mehrere ExpressRoute-Leitungen angeschlossen sind, wenn eine der folgenden Bedingungen zutrifft:
 
   - Sie benötigen eine hohe Isolationsebene.
+
   - Sie benötigen eine dedizierte ExpressRoute-Bandbreite für bestimmte Geschäftseinheiten.
+
   - Die maximale Anzahl von Verbindungen pro ExpressRoute-Gateway (bis zu vier) wurde erreicht.
   
   Die folgende Abbildung zeigt diese Topologie.
@@ -271,7 +277,9 @@ _Abbildung 4: Eine herkömmliche Azure-Netzwerktopologie._
 - Wenn Sie Partnernetzwerktechnologien oder NVAs bereitstellen, befolgen Sie die Anweisungen des Partneranbieters, um Folgendes sicherzustellen:
 
   - Der Anbieter unterstützt die Bereitstellung.
+
   - Die Anweisungen beziehen sich auf Hochverfügbarkeit und maximale Leistung.
+
   - Es gibt keine in Konflikt stehenden Konfigurationen mit Azure-Netzwerken vorhanden.
 
 - Stellen Sie keine L7-Eingangs-NVAs (wie Azure Application Gateway) als gemeinsamer Dienst im virtuellen Netzwerk für den zentralen Hub bereit. Stattdessen stellen Sie diese in der jeweiligen Zielzone zusammen mit der App bereit.
@@ -286,7 +294,7 @@ _Abbildung 4: Eine herkömmliche Azure-Netzwerktopologie._
   
   _Abbildung 7: Zielzonen-Konnektivitätsentwurf._
 
-- Wenn Ihr Unternehmen Hub-and-Spoke-Netzwerkarchitekturen über mehr als zwei Azure-Regionen und globale Transitkonnektivität zwischen Zielzonen benötigt, sind virtuelle Netzwerke erforderlich, die über Azure-Regionen hinweg arbeiten. Sie können diese Architektur implementieren, indem Sie eine Verbindung zwischen virtuellen Netzwerken im zentralen Hub mit globalem Peering virtueller Netzwerke herstellen und die Verwendung von UDRs und NVAs für das globale Transitrouting ermöglichen. Aufgrund der hohen Komplexität und des großen Verwaltungsaufwands wird die Bereitstellung einer globalen Transitnetzwerkarchitektur mit Virtual WAN empfohlen.
+- Wenn Ihr Unternehmen Hub-and-Spoke-Netzwerkarchitekturen über mehr als zwei Azure-Regionen und globale Transitkonnektivität zwischen Zielzonen benötigt, sind virtuelle Netzwerke erforderlich, die über Azure-Regionen hinweg arbeiten. Sie können diese Architektur implementieren, indem Sie eine Verbindung zwischen virtuellen Netzwerken im zentralen Hub mit globalem Peering virtueller Netzwerke herstellen und die Verwendung von UDRs und NVAs für das globale Transitrouting ermöglichen. Aufgrund der hohen Komplexität und des großen Verwaltungsaufwands wird die Überprüfung einer globalen Transitnetzwerkarchitektur mit Virtual WAN empfohlen.
 
 - Verwenden Sie [Azure Monitor für Netzwerke (Vorschau)](/azure/azure-monitor/insights/network-insights-overview), um den End-to-End-Status Ihrer Netzwerke in Azure zu überwachen.
 

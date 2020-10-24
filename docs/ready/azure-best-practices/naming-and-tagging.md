@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 45848c9291fe64398f096761d62556cf50eff106
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 3885de0ac0ce8340162173806a1686a4bc409ecb
+ms.sourcegitcommit: 65b2476d07d4c224d279ac59f7e7f2868bba219c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776549"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136350"
 ---
 <!-- docutune:disable -->
 <!-- cSpell:ignore cdnp cdne westeurope usgovia accountlookup messagequery -->
@@ -21,6 +21,8 @@ ms.locfileid: "90776549"
 # <a name="recommended-naming-and-tagging-conventions"></a>Empfohlene Namens- und Kennzeichnungskonventionen
 
 Organisieren Sie Ihre Cloudressourcen so, dass das operative Management und die Buchhaltungsanforderungen unterstützt werden. Gut definierte Namens- und Kennzeichnungskonventionen für Metadaten ermöglichen das schnelle Finden und Verwalten von Ressourcen. Diese Konventionen helfen auch dabei, Cloudnutzungskosten mithilfe von Mechanismen zur Rückbuchung und verbrauchsbasierter Kostenzuteilung an Geschäftsteams auszurichten.
+
+Die genaue Darstellung und Benennung von Ressourcen ist für Sicherheitszwecke von entscheidender Bedeutung. Im Falle eines Sicherheitsvorfalls ist die schnelle Identifizierung der betroffenen Systeme, der potenziellen geschäftlichen Auswirkungen und der Art und Weise, wie sie verwendet werden, entscheidend für gute Risikoentscheidungen. Sicherheitsdienste wie [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-introduction) und [Azure Sentinel](https://docs.microsoft.com/azure/sentinel) verweisen auf Ressourcen und deren zugehörige Protokollierungs-/Warnungsinformationen nach Ressourcennamen.
 
 Azure definiert [Benennungsregeln und -einschränkungen für Azure-Ressourcen](/azure/azure-resource-manager/management/resource-name-rules). Dieser Leitfaden enthält detaillierte Empfehlungen zur Unterstützung der Enterprise Cloud-Einführung.
 
@@ -87,6 +89,7 @@ Diese Liste enthält empfohlene Azure-Ressourcentypenpräfixe, die Sie verwenden
 | Resource group                  | rg-         |
 | Richtliniendefinition               | policy-     |
 | API Management-Dienstinstanz | apim-       |
+| Verwaltete Identität                | id-         |
 
 ### <a name="networking"></a>Netzwerk
 
@@ -149,10 +152,11 @@ Diese Liste enthält empfohlene Azure-Ressourcentypenpräfixe, die Sie verwenden
 
 ### <a name="storage"></a>Storage
 
-| Ressourcentyp       | Namenspräfix |
-|------------------|-------------|
-| Speicherkonto  | st          |
-| Azure StorSimple | ssimp       |
+| Ressourcentyp               | Namenspräfix |
+|--------------------------|-------------|
+| Speicherkonto          | st          |
+| Azure StorSimple         | ssimp       |
+| Azure Container Registry | acr         |
 
 ### <a name="ai-and-machine-learning"></a>KI und maschinelles Lernen
 
@@ -251,6 +255,7 @@ Der folgende Abschnitt enthält einige Namensbeispiele für häufige Azure-Resso
 | Subscription                    | Account/ <br> Enterprise Agreement    | \<Business Unit\>-\<Subscription type\>-\<\#\#\#\>          | <li> mktg-prod-001 <li> konzern-freigabe-001 <li> fin-client-001                                        |
 | Resource group                  | Subscription                          | rg-\<App or service name\>-\<Subscription type\>-\<\#\#\#\> | <li> rg-mktgsharepoint-prod-001 <li> rg-kontnachschldien-freigabe-001 <li> rg-ad-verz-dienste-freigabe-001 |
 | API Management-Dienstinstanz | Global                                | apim-\<App or service name\>                                | apim-navigator-prod                                                                                |
+| Verwaltete Identität                | Ressourcengruppe                        | id-\<App or service name\>                                  | id-appcn-keda-prod-eus-001                                                                         |
 
 > [!NOTE]
 > Die zuvor und anderswo in diesem Dokument verwendeten Beispielnamen verweisen auf eine dreistellige Zeichenauffüllung (\<\#\#\#\>). Das heißt,  mktg-prod-*001*
@@ -310,6 +315,7 @@ Der folgende Abschnitt enthält einige Namensbeispiele für häufige Azure-Resso
 | Speicherkonto (allgemeine Nutzung)     | Global | st\<storage name\>\<\#\#\#\>                                                  | <li> stnavigatordaten001 <li> stemissionenausgabe001 |
 | Speicherkonto (Diagnoseprotokolle) | Global | stdiag\<first 2 letters of subscription name and number\>\<region\>\<\#\#\#\> | <li> stdiagsh001usaosten2001 <li> stdiagsh001usawesten001 |
 | Azure StorSimple                  | Global | ssimp\<App Name\>\<Environment\>                                              | <li> ssimpnavigatorprod <li> ssimpemissionenentw |
+| Azure Container Registry          | Global | acr\<App Name\>\<Environment\>\<\#\#\#\>                                      | <li> acrnavigatorprod001 |
 
 ### <a name="example-names-ai-and-machine-learning"></a>Namensbeispiele: KI und Machine Learning
 

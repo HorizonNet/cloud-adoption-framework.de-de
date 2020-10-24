@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b7bd069dbb75b1cdaabd2aacdace68010610c12a
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 0bb3f450e91aa9963fc13b6e90a460321a8a55b4
+ms.sourcegitcommit: 81246e185cee53fed591c4bafd56cde7d58e26f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776583"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91898220"
 ---
 # <a name="enterprise-scale-security-governance-and-compliance"></a>Sicherheitsgovernance und Compliance auf Unternehmensebene
 
@@ -175,7 +175,7 @@ Sie müssen einen stabile Sicherheitsstatus aufrechterhalten, wenn Sie Azure ein
 
 - Entwickeln Sie einen Plan zum Erstellen einer Zulassungsliste für die Sicherheit, um die Sicherheitskonfiguration, Überwachung und Warnungen von Diensten sowie deren Integration in bestehende Systeme zu beurteilen.
 
-- Legen Sie vor dem Erstellen einer Zulassungsliste für Azure-Dienste einen Incident-Response-Plan fest.
+- Legen Sie einen Plan zur Reaktion auf Vorfälle fest, bevor Sie Azure-Dienste für die Produktion zulassen.
 
 - Nutzen Sie Azure AD-Berichtsfunktionen zum Generieren von Überwachungsberichten zur Zugriffssteuerung.
 
@@ -191,8 +191,8 @@ Der Azure Security-Vergleichstest enthält eine Sammlung von wirkungsvollen Sich
 
 In der Dokumentation zum Azure Security-Vergleichstest werden Sicherheitskontrollen und Dienstempfehlungen angegeben.
 
-- [Sicherheitskontrollelement](https://docs.microsoft.com/azure/security/benchmarks/overview): Die Empfehlungen des Azure Security-Vergleichstests werden nach Sicherheitskontrollelementen kategorisiert. Sicherheitskontrollelemente stellen von Anbietern unabhängige allgemeine Sicherheitsanforderungen dar, wie z. B. Netzwerksicherheit und Datenschutz. Jedes Sicherheitskontrollelement enthält eine Reihe von Sicherheitsempfehlungen und Anweisungen, mit denen Sie diese Empfehlungen implementieren können.
-- [Sicherheitsempfehlungen](https://docs.microsoft.com/azure/security/benchmarks/security-baselines-overview): Wenn verfügbar, enthalten die Empfehlungen des Vergleichstests für Azure-Dienste auch Empfehlungen des Azure Security-Vergleichstests, die speziell auf diesen Dienst zugeschnitten sind.
+- [Sicherheitskontrollelement](/azure/security/benchmarks/overview): Die Empfehlungen des Azure Security-Vergleichstests werden nach Sicherheitskontrollelementen kategorisiert. Sicherheitskontrollelemente stellen von Anbietern unabhängige allgemeine Sicherheitsanforderungen dar, wie z. B. Netzwerksicherheit und Datenschutz. Jedes Sicherheitskontrollelement enthält eine Reihe von Sicherheitsempfehlungen und Anweisungen, mit denen Sie diese Empfehlungen implementieren können.
+- [Sicherheitsempfehlungen](/azure/security/benchmarks/security-baselines-overview): Wenn verfügbar, enthalten die Empfehlungen des Vergleichstests für Azure-Dienste auch Empfehlungen des Azure Security-Vergleichstests, die speziell auf diesen Dienst zugeschnitten sind.
 
 ## <a name="service-enablement-framework"></a>Dienstaktivierungsframework
 
