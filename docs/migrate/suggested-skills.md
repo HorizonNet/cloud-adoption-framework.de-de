@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 635fed255982b7e25fcf8755380ab4a10de9d8e4
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 0595d0ce6573d9dabed538aa39999ed6803e5842
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885863"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334883"
 ---
 # <a name="skills-readiness-for-cloud-migration"></a>Vorliegen der Fähigkeiten für die Migration zur Cloud
 
@@ -31,8 +31,8 @@ Die folgenden Tools können dem Team dabei helfen, Bewertungen auszuführen:
 - [Ausgewogenheit des Portfolios](../strategy/balance-the-portfolio.md): Sicherstellen von Ausgewogenheit und richtigen Investitionszuordnungen innerhalb eines Anwendungsportfolios.
 - [Erstellen einer geschäftlichen Begründung](../strategy/cloud-migration-business-case.md): Erstellen und Verstehen der geschäftlichen Begründung für die Cloudmigrationsaktivitäten.
 - [Rationalisieren der digitalen Ressourcen](../digital-estate/rationalize.md): Rationalisieren von Assets in den digitalen Ressourcen.
-- [Bewertung des Anwendungsportfolios](/learn/modules/app-and-infra-migration-and-modernization): Kriterien zum Treffen von Entscheidungen in Bezug auf Migrations- oder Innovationsoptionen innerhalb des Anwendungsportfolios.
-- [Bewerten und Planen der Microsoft Azure-Migration](https://www.pluralsight.com/courses/microsoft-azure-migration-assessing-planning): Ein Pluralsight-Kurs zur Unterstützung bei der Bewertung von lokalen Workloads.
+- [Bewertung des Anwendungsportfolios](/learn/modules/app-and-infra-migration-and-modernization/): Kriterien zum Treffen von Entscheidungen in Bezug auf Migrations- oder Innovationsoptionen innerhalb des Anwendungsportfolios.
+- [Bewerten und Planen der Microsoft Azure-Migration](https://www.pluralsight.com/courses/microsoft-azure-migration-assessing-planning-update): Ein Pluralsight-Kurs zur Unterstützung bei der Bewertung von lokalen Workloads.
 
 Während der Bewertungsprozesse entwerfen Architekten Lösungen für die einzelnen Workloads. Die folgenden Ressourcen zur Befähigung können Architekten auf diese Aufgaben vorbereiten:
 

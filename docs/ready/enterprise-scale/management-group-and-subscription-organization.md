@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a3f72d69220d30ac319ffa5c0aa1d266a8b568a3
-ms.sourcegitcommit: 1b28a7c6e966c6e0b69304ebb4b11d218c1891e5
+ms.openlocfilehash: 1f7b046abd13df1d4d16d6deb7315b6e620ac3c3
+ms.sourcegitcommit: 84696bcaf2fa7187b7db0ee38b83b9fdd78cee07
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92253440"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92494185"
 ---
 # <a name="management-group-and-subscription-organization"></a>Organisation von Verwaltungsgruppen und Abonnements
 
@@ -38,7 +38,7 @@ Verwaltungsgruppenstrukturen innerhalb eines Azure AD-Mandanten (Azure Active Di
 - Erstellen Sie Verwaltungsgruppen unter der Verwaltungsgruppe auf der Stammebene, um die Typen von Workloads (Archetyp) darzustellen, die Sie hosten sowie diejenigen, die auf den jeweiligen Sicherheits-, Compliance-, Konnektivitäts- und Funktionsanforderungen basieren. Mithilfe dieser Gruppierungsstruktur können Sie Azure-Richtlinien auf Verwaltungsgruppenebene für alle Workloads anwenden, die die gleichen Einstellungen für Sicherheit, Compliance, Konnektivität und Features benötigen.
 - Verwenden Sie Ressourcentags, die über Azure Policy erzwungen oder angefügt werden können, um die Verwaltungsgruppenhierarchie abzufragen und horizontal zu durchsuchen. Anschließend können Sie Ressourcen für die Suche gruppieren, ohne dass Sie eine komplexe Verwaltungsgruppenhierarchie verwenden müssen.
 - Erstellen Sie eine Sandbox-Verwaltungsgruppe der obersten Ebene, um Benutzern das sofortige Experimentieren mit Azure zu gestatten. Benutzer können dann mit Ressourcen experimentieren, die möglicherweise noch nicht in Produktionsumgebungen zugelassen werden. Die Sandbox bietet Isolation von Ihren Entwicklungs-, Test- und Produktionsumgebungen.
-  - Weitere Anleitungen zur Sandbox-Verwaltungsgruppe der obersten Ebene finden Sie in den [Richtlinien für die Implementierung](/docs/ready/enterprise-scale/implementation-guidelines.md).
+  - Weitere Anleitungen zur Sandbox-Verwaltungsgruppe der obersten Ebene finden Sie in den [Richtlinien für die Implementierung](./implementation-guidelines.md#sandbox-governance-guidance).
 - Verwenden Sie einen dedizierten Dienstprinzipalnamen (SPN), um Verwaltungsvorgänge für Verwaltungsgruppen, Verwaltungsvorgänge für Abonnements und die Rollenzuweisung auszuführen. Mithilfe eines SPNs wird die Anzahl der Benutzer mit erhöhten Berechtigungen reduziert und die Richtlinien der geringstmöglichen Berechtigungen werden eingehalten.
 - Weisen Sie die Rolle `User Access Administrator` der rollenbasierten Zugriffssteuerung von Azure der Stammverwaltungsgruppe (`/`) zu, um dem SPN den zuvor genannten Zugriff auf der Stammebene zu gewähren. Nachdem dem SPN Berechtigungen erteilt wurden, kann die Rolle `User Access Administrator` sicher entfernt werden. Dadurch ist nur der SPN Teil der Rolle `User Access Administrator`.
 - Weisen Sie die Berechtigung `Contributor` dem zuvor erwähnten SPN im Bereich der Stammverwaltungsgruppe (`/`) zu, die Vorgänge auf der Mandantenebene zulässt. Mit dieser Berechtigungsstufe wird sichergestellt, dass der SPN zum Bereitstellen und Verwalten von Ressourcen für ein beliebiges Abonnement in Ihrer Organisation verwendet werden kann.

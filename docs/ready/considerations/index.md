@@ -4,15 +4,15 @@ description: Verwenden Sie das Cloud Adoption Framework für Azure, um zu erfahr
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2020
-ms.topic: overview
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: a5bda49e04da5febf7bc2564f250ca4686c172cc
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a83c21117388acee16d8b814d974dea280628320
+ms.sourcegitcommit: 6aa14b15efc9bd351b75f8a3d7ebbac3d575275b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88575195"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92689995"
 ---
 # <a name="expand-your-landing-zone"></a>Erweitern der Zielzone
 
@@ -37,7 +37,7 @@ Zur Anpassung an die Methoden des Cloud Adoption Framework werden die oben genan
 - Sicherheitserweiterungen: Fügen Sie **Sicherheitskonfigurationen** hinzu, um den Schutz vertraulicher Daten und kritischer Systeme zu verbessern.
 
 > [!WARNING]
-> Einführungsteams, die mittelfristig (innerhalb von 24 Monaten) das Ziel haben, **mehr als 1.000 Ressourcen (Apps, Infrastruktur oder Datenressourcen) in der Cloud zu hosten**, sollten jede dieser Erweiterungen schon in den frühen Phasen ihrer Cloudeinführungsjourney in Erwägung ziehen. Bei allen anderen Einführungsmustern können Erweiterungen der Zielzone als parallele Iteration durchgeführt werden, um frühzeitig geschäftliche Erfolge zu erzielen.
+> Einführungsteams, die mittelfristig (innerhalb von 24 Monaten) das Ziel haben, **mehr als 1.000 Ressourcen (Apps, Infrastruktur oder Datenressourcen) in der Cloud zu hosten** , sollten jede dieser Erweiterungen schon in den frühen Phasen ihrer Cloudeinführungsjourney in Erwägung ziehen. Bei allen anderen Einführungsmustern können Erweiterungen der Zielzone als parallele Iteration durchgeführt werden, um frühzeitig geschäftliche Erfolge zu erzielen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

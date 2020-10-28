@@ -4,15 +4,15 @@ description: Erhöhen der Sicherheit von Zielzonen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2020
-ms.topic: overview
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 28b9271cee8f0314155bcd34d736332a5e10c1a2
-ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
+ms.openlocfilehash: f2cd1f500b248f4568e572eac4ea82cce11af285
+ms.sourcegitcommit: 6aa14b15efc9bd351b75f8a3d7ebbac3d575275b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91621500"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92689979"
 ---
 # <a name="improve-landing-zone-security"></a>Erhöhen der Sicherheit von Zielzonen
 

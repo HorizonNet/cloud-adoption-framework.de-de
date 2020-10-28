@@ -4,15 +4,15 @@ description: Informationen zum Prozess zum Refactoring von Zielzonen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/15/2020
-ms.topic: overview
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 7f4982669209f52f597411c036ad4d669afcb98f
-ms.sourcegitcommit: 12fa4597633ca8e04efbae7d0bd7526d3581618e
+ms.openlocfilehash: b3e806c6e0c926f60069bf308c29a54c0cf78c92
+ms.sourcegitcommit: 6aa14b15efc9bd351b75f8a3d7ebbac3d575275b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88661859"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92690052"
 ---
 # <a name="refactor-landing-zones"></a>Umgestalten von Zielzonen
 
@@ -52,7 +52,7 @@ _Abbildung 3: Zu spätes Handeln als häufiges Hindernis_
 Um diese allgemeinen Hindernisse zu vermeiden, schlagen wir einen iterativen Ansatz vor, der auf einem gut strukturierten Plan zur Einführung der Cloud basiert, der die Lernmöglichkeiten maximiert und die Zeit bis zum Geschäftserfolg minimiert. Refactoring und parallele Anstrengungen sind für diesen Ansatz von entscheidender Bedeutung.
 
 > [!WARNING]
-> Einführungsteams, die mittelfristig (innerhalb von 24 Monaten) das Ziel haben, **mehr als 1.000 Assets (Apps, Infrastruktur oder Datenassets) in der Cloud zu hosten**, werden mit einem Refactoringansatz höchstwahrscheinlich nicht erfolgreich sein. Die Lernkurve ist zu steil und der Zeitrahmen zu knapp bemessen, um einen organischen Ansatz für die Erlangung von Qualifikationen zu ermöglichen. Ein vollständigerer Ausgangspunkt, der weniger Anpassungen erfordert, ist ein besserer Weg, um Ihre Ziele zu erreichen. Ihre Implementierungspartner werden Sie wahrscheinlich durch einen besseren Ansatz führen können.
+> Einführungsteams, die mittelfristig (innerhalb von 24 Monaten) das Ziel haben, **mehr als 1.000 Assets (Apps, Infrastruktur oder Datenassets) in der Cloud zu hosten** , werden mit einem Refactoringansatz höchstwahrscheinlich nicht erfolgreich sein. Die Lernkurve ist zu steil und der Zeitrahmen zu knapp bemessen, um einen organischen Ansatz für die Erlangung von Qualifikationen zu ermöglichen. Ein vollständigerer Ausgangspunkt, der weniger Anpassungen erfordert, ist ein besserer Weg, um Ihre Ziele zu erreichen. Ihre Implementierungspartner werden Sie wahrscheinlich durch einen besseren Ansatz führen können.
 
 Der Rest dieses Artikels konzentriert sich auf einige wesentliche Einschränkungen, die einen Refactoringansatz bei gleichzeitiger Risikominimierung ermöglichen können.
 

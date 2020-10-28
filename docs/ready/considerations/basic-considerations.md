@@ -4,15 +4,15 @@ description: Verwenden Sie das Framework für die Cloudeinführung für Azure, u
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 04/09/2020
-ms.topic: overview
+ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 37f99b3d42232b830edede242ac89602561bf7ff
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: a1c2c54f450918314582516d22427c1101dba396
+ms.sourcegitcommit: 6aa14b15efc9bd351b75f8a3d7ebbac3d575275b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572866"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92689959"
 ---
 # <a name="landing-zone-considerations"></a>Überlegungen zu Landezonen
 

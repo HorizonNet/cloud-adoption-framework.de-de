@@ -633,6 +633,8 @@ items:
                     href: scenarios/azure-stack/migrate-deploy.md
                   - name: Steuern
                     href: scenarios/azure-stack/govern.md
+                  - name: Verwalten
+                    href: scenarios/azure-stack/manage.md
               - name: Analytics-Lösungen
                 items:
                   - name: Übersicht
