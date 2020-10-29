@@ -1,20 +1,20 @@
 ---
 title: Datendefinitionssprachen für die Schemamigration
-description: Verwenden Sie Azure Synapse Analytics-Features, um Anforderungen hinsichtlich Hochverfügbarkeit und Notfallwiederherstellung zu erfüllen.
+description: Hier werden Entwurfsaspekte und Leistungsoptionen für Datendefinitionssprachen erläutert, die für die Schemamigration zu Azure Synapse Analytics relevant sind.
 author: v-hanki
 ms.author: brblanch
 ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8652d3b67e42da037dc620f74af707f05a9fdcce
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: eebd659ad0dc0455c481e0f5b82a84fafa960c9e
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775920"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334747"
 ---
-<!-- cSpell:ignore DDLs Attunity "Attunity Replicate" "Attunity Visibility" Inmon Denodo Teradata Netezza Wherescape DMVs multinode equi Datometry -->
+<!-- cSpell:ignore DDLs Attunity "Attunity Replicate" "Attunity Visibility" Inmon Denodo DMVs multinode equi Datometry -->
 
 # <a name="data-definition-languages-for-schema-migration"></a>Datendefinitionssprachen für die Schemamigration
 
@@ -79,7 +79,7 @@ Sie können das vorhandene System in mehrere Schichten migrieren (z. B. in eine
 
 Wenn Sie diesen oder einen ähnlichen Ansatz verwenden können, wird die Anzahl der zu migrierenden Tabellen reduziert. Einige Prozesse werden möglicherweise vereinfacht oder überflüssig, wodurch die Arbeitsauslastung für die Migration weiter reduziert wird. Die Anwendbarkeit dieser Ansätze hängt vom jeweiligen Anwendungsfall ab. Das allgemeine Prinzip ist jedoch, nach Möglichkeit die Features und Funktionen des Azure-Ökosystems zu verwenden, um die Arbeitsauslastung für die Migration zu reduzieren und eine kosteneffiziente Zielumgebung zu erstellen. Das gilt auch für andere Features wie Sicherung, Wiederherstellung, Workflowverwaltung und Workflowüberwachung.
 
-Es stehen außerdem Produkte und Dienste von Microsoft-Partnern zur Verfügung, die bei der Data-Warehouse-Migration helfen und in einigen Fällen Teile des Prozesses automatisieren. Wenn das vorhandene System ein ETL-Produkt eines Drittanbieters beinhaltet, unterstützt es Azure Synapse Analytics als Zielumgebung möglicherweise bereits. Die vorhandenen ETL-Workflows können an das neue Data-Warehouse-Ziel von Azure SQL umgeleitet werden.
+Es stehen außerdem Produkte und Dienste von Microsoft-Partnern zur Verfügung, die bei der Data-Warehouse-Migration helfen und in einigen Fällen Teile des Prozesses automatisieren. Wenn das vorhandene System ein ETL-Produkt eines Drittanbieters beinhaltet, unterstützt es Azure Synapse Analytics als Zielumgebung möglicherweise bereits. Die vorhandenen ETL-Workflows können an das neue Data Warehouse-Ziel umgeleitet werden.
 
 ### <a name="data-marts-physical-or-virtual"></a>Data Marts: physisch oder virtuell
 
@@ -156,17 +156,17 @@ In der folgenden Tabelle werden gebräuchliche Datentypen, die derzeit nicht unt
 
 | Nicht unterstützte Datentypen | Problemumgehung |
 |--|--|
-| `geometry`              | `varbinary`                                                       |
-| `geography`             | `varbinary`                                                       |
-| `hierarchyid`           | `nvarchar(4000)`                                                  |
-| `image`                 | `varbinary`                                                       |
-| `text`                  | `varchar`                                                         |
-| `ntext`                 | `nvarchar`                                                        |
-| `sql_variant`           | Unterteilen der Spalte in mehrere Spalten mit starker Typisierung                |
-| `table`                 | Konvertieren in temporäre Tabellen                                     |
-| `timestamp`             | Anpassen des Codes für die Verwendung von `datetime2` und `CURRENT_TIMESTAMP`-Funktion |
-| `xml`                   | `varchar`                                                         |
-| Benutzerdefinierter Typ     | Rückkonvertieren in nativen Datentyp (wenn möglich)              |
+| `geometry` | `varbinary` |
+| `geography` | `varbinary` |
+| `hierarchyid` | `nvarchar(4000)` |
+| `image` | `varbinary` |
+| `text` | `varchar` |
+| `ntext` | `nvarchar` |
+| `sql_variant` | Unterteilen der Spalte in mehrere Spalten mit starker Typisierung |
+| `table` | Konvertieren in temporäre Tabellen |
+| `timestamp` | Anpassen des Codes für die Verwendung von `datetime2` und `CURRENT_TIMESTAMP`-Funktion |
+| `xml` | `varchar` |
+| Benutzerdefinierter Typ | Rückkonvertieren in nativen Datentyp (wenn möglich) |
 
 #### <a name="potential-data-issues"></a>Mögliche Datenprobleme
 
@@ -183,7 +183,7 @@ Testen Sie gründlich, ob diese zu den gewünschten Ergebnissen in der Zielumgeb
 
 Ein Migrationsdurchlauf ist ein guter Zeitpunkt, um aktuelle Datendefinitionen zu überprüfen und zu rationalisieren. Sie können diese Aufgaben durch SQL-Abfragen automatisieren, um den maximalen numerischen Wert oder die maximale Zeichenlänge innerhalb eines Datenfelds zu suchen und das Ergebnis mit dem Datentyp zu vergleichen.
 
-Im Allgemeinen empfiehlt es sich, die definierte Gesamtzeilenlänge für eine Tabelle zu minimieren. Die beste Abfrageleistung erzielen Sie, indem Sie wie beschrieben den kleinsten Datentyp für jede Spalte verwenden. Der empfohlene Ansatz zum Laden von Daten aus externen Tabellen in Azure Synapse Analytics besteht in der Verwendung des Hilfsprogramms PolyBase, das eine definierte Zeilenlänge von maximal 1 MB unterstützt. PolyBase lädt nur Tabellen, deren Zeilen kleiner als 1 MB sind. Andernfalls müssen Sie das Programm zum Massenkopieren verwenden.
+Im Allgemeinen empfiehlt es sich, die definierte Gesamtzeilenlänge für eine Tabelle zu minimieren. Die beste Abfrageleistung erzielen Sie, indem Sie wie beschrieben den kleinsten Datentyp für jede Spalte verwenden. Der empfohlene Ansatz zum Laden von Daten aus externen Tabellen in Azure Synapse Analytics besteht in der Verwendung des Hilfsprogramms PolyBase, das eine definierte Zeilenlänge von maximal 1 MB unterstützt. PolyBase lädt nur Tabellen, deren Zeilen kleiner als 1 MB sind, und Sie müssen stattdessen [bcp](/sql/tools/bcp-utility?view=sql-server-ver15) verwenden.
 
 Für eine möglichst effiziente Joinausführung sollten Sie die Spalten auf beiden Seiten des Joins mit denselben Datentyp definieren. Wenn der Schlüssel einer Dimensionstabelle als `SMALLINT` definiert ist, sollten die entsprechenden Verweisspalten in Faktentabellen, die diese Dimension verwenden, ebenfalls als `SMALLINT` definiert werden.
 
@@ -273,7 +273,7 @@ Indizes werden automatisch erstellt, wenn `UNIQUE`- oder `PRIMARY KEY`-Einschrä
 
 #### <a name="clustered-columnstore-index"></a>Gruppierter Columnstore-Index
 
-Gruppierte Columnstore-Indizes sind die Standardindizierungsoption in Azure Synapse Analytics. Sie bieten die beste Komprimierungs- und Abfrageleistung für große Tabellen. Bei kleineren Tabellen (weniger als 60 Millionen Zeilen) sind diese Indizes nicht effizient. Daher sollten Sie die HEAP-Option verwenden. Ein Heap oder eine temporäre Tabelle kann ebenso auch effizienter sein, wenn die Daten in einer Tabelle temporär und Teil eines ETL- oder ELT-Prozesses sind.
+Gruppierte Columnstore-Indizes sind die Standardindizierungsoption in Azure Synapse Analytics. Sie bieten die beste Komprimierungs- und Abfrageleistung für große Tabellen. Bei kleineren Tabellen (weniger als 60 Millionen Zeilen) sind diese Indizes nicht effizient. Daher sollten Sie die `HEAP`-Option verwenden. Ein Heap oder eine temporäre Tabelle kann ebenso auch effizienter sein, wenn die Daten in einer Tabelle temporär und Teil eines ETL- oder ELT-Prozesses sind.
 
 #### <a name="clustered-index"></a>Gruppierter Index
 

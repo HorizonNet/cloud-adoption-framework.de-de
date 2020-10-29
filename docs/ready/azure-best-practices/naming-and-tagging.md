@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 3885de0ac0ce8340162173806a1686a4bc409ecb
-ms.sourcegitcommit: 65b2476d07d4c224d279ac59f7e7f2868bba219c
+ms.openlocfilehash: 18551e264163ebc8342da9c92c7a438fd1163cf9
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136350"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334866"
 ---
 <!-- docutune:disable -->
-<!-- cSpell:ignore cdnp cdne westeurope usgovia accountlookup messagequery -->
+<!-- cSpell:ignore appcs arck cdnp cdne osdisk westeurope usgovia accountlookup messagequery -->
 
 # <a name="recommended-naming-and-tagging-conventions"></a>Empfohlene Namens- und Kennzeichnungskonventionen
 
@@ -107,6 +107,7 @@ Diese Liste enthält empfohlene Azure-Ressourcentypenpräfixe, die Sie verwenden
 | Lokales Netzwerkgateway            | lgw-        |
 | Gateway des virtuellen Netzwerks          | vgw-        |
 | VPN-Verbindung                   | cn-         |
+| ExpressRoute-Verbindung             | erc-        |
 | Anwendungsgateway              | agw-        |
 | Routingtabelle                      | route-      |
 | Benutzerdefinierte Route (User Defined Route, UDR)         | udr-        |
@@ -117,24 +118,27 @@ Diese Liste enthält empfohlene Azure-Ressourcentypenpräfixe, die Sie verwenden
 
 ### <a name="compute-and-web"></a>Compute und Web
 
-| Ressourcentyp                  | Namenspräfix |
-|-----------------------------|-------------|
-| Virtueller Computer             | vm          |
-| VM-Skalierungsgruppe   | vmss-       |
-| Verfügbarkeitsgruppe            | avail-      |
-| VM-Speicherkonto          | spvm        |
-| Vernetzter Azure Arc-Computer | arcm-       |
-| Containerregistrierung          | cr-         |
-| Containerinstanz          | ci-         |
-| AKS-Cluster                 | aks-        |
-| Service Fabric-Cluster      | sf-         |
-| App Service-Umgebung     | ase-        |
-| App Service-Plan            | plan-       |
-| Web-App                     | app-        |
-| Funktionen-App                | func-       |
-| Clouddienst               | cld-        |
-| Notification Hubs           | ntf-        |
-| Notification Hubs-Namespace | ntfns-      |
+| Ressourcentyp | Namenspräfix |
+|--|--|
+| Virtueller Computer | vm |
+| VM-Skalierungsgruppe | vmss- |
+| Verfügbarkeitsgruppe | avail- |
+| Verwalteter Datenträger (Betriebssystem) | osdisk |
+| Verwalteter Datenträger (Daten) | disk |
+| VM-Speicherkonto | spvm |
+| Server mit Azure Arc-Unterstützung: | arcs- |
+| Kubernetes-Cluster mit Azure Arc-Unterstützung | arck |
+| Containerregistrierung | cr |
+| Containerinstanz | ci- |
+| AKS-Cluster | aks- |
+| Service Fabric-Cluster | sf- |
+| App Service-Umgebung | ase- |
+| App Service-Plan | plan- |
+| Web-App | app- |
+| Funktionen-App | func- |
+| Clouddienst | cld- |
+| Notification Hubs | ntf- |
+| Notification Hubs-Namespace | ntfns- |
 
 ### <a name="databases"></a>Datenbanken
 
@@ -168,43 +172,36 @@ Diese Liste enthält empfohlene Azure-Ressourcentypenpräfixe, die Sie verwenden
 
 ### <a name="analytics-and-iot"></a>Analytics und IoT
 
-| Ressourcentyp                      | Namenspräfix |
-|---------------------------------|-------------|
-| Azure Analysis Services-Server  | as          |
-| Azure Databricks-Arbeitsbereich      | dbw-        |
-| Azure Stream Analytics          | asa-        |
-| Azure Data Factory              | adf-        |
-| Data Lake Store-Konto         | dls         |
-| Data Lake Analytics-Konto     | dla         |
-| Event Hub                       | evh-        |
-| HDInsight: Hadoop-Cluster      | hadoop-     |
-| HDInsight: HBase-Cluster       | hbase-      |
-| HDInsight: Kafka-Cluster       | kafka-      |
-| HDInsight: Spark-Cluster       | spark-      |
-| HDInsight: Storm-Cluster       | storm-      |
-| HDInsight: ML Services-Cluster | mls-        |
-| IoT Hub                         | iot-        |
-| Power BI Embedded               | pbi-        |
+| Ressourcentyp                       | Namenspräfix | |---------------------------------_|-------------| | Azure Analysis Services-Server   | as          | | Azure Databricks-Arbeitsbereich       | dbw-        | | Azure Stream Analytics           | asa-        | | Azure Data Explorer-Cluster      | dec         | | Azure Data Factory               | adf-        | | Data Lake Store-Konto          | dls         | | Data Lake Analytics-Konto      | dla         | | Event Hub                        | evh-        | | HDInsight – Hadoop-Cluster       | hadoop-     | | HDInsight – HBase-Cluster        | hbase-      | | HDInsight – Kafka-Cluster        | kafka-      | | HDInsight – Spark-Cluster        | spark-      | | HDInsight – Storm-Cluster        | storm-      | | HDInsight – ML Services-Cluster  | mls-        | | IoT Hub                          | iot-        | | Power BI Embedded                | pbi-        | | Time Series Insights-Umgebung | tsi-        |
+
+### <a name="developer-tools"></a>Entwicklertools
+
+| Ressourcentyp | Namenspräfix |
+|---|---|
+| App Configuration-Speicher | appcs- |
 
 ### <a name="integration"></a>Integration
 
-| Ressourcentyp        | Namenspräfix |
-|-------------------|-------------|
-| Logik-Apps        | logic-      |
-| Service Bus       | sb-         |
-| Service Bus-Warteschlange | sbw-        |
-| Service Bus-Topic | sbt-        |
+| Ressourcentyp          | Namenspräfix |
+|---------------------|-------------|
+| Integrationskonto | ia-         |
+| Logik-Apps          | logic-      |
+| Service Bus         | sb-         |
+| Service Bus-Warteschlange   | sbw-        |
+| Service Bus-Topic   | sbt-        |
 
 ### <a name="management-and-governance"></a>Verwaltung und Governance
 
-| Ressourcentyp              | Namenspräfix |
-|-------------------------|-------------|
-| Blaupause               | bp-         |
-| Blaupausenzuweisung    | bpa-        |
-| Schlüsseltresor               | kv-         |
-| Log Analytics-Arbeitsbereich | log-        |
-| Application Insights    | appi-       |
-| Recovery Services-Tresor | rsv-        |
+| Ressourcentyp | Namenspräfix |
+|--|--|
+| Automation-Konto | aa- |
+| Azure Monitor-Aktionsgruppe | ag- |
+| Blaupause | bp- |
+| Blaupausenzuweisung | bpa- |
+| Schlüsseltresor | kv- |
+| Log Analytics-Arbeitsbereich | log- |
+| Application Insights | appi- |
+| Recovery Services-Tresor | rsv- |
 
 ### <a name="migration"></a>Migration
 
@@ -227,14 +224,14 @@ Welche Tags Sie für Ressourcen anwenden und welche Tags erforderlich oder optio
 | Anwendungsname          | Der Name der Anwendung, des Diensts oder der Workload, mit der die Ressource verknüpft ist.                                                                                                                                       | _ApplicationName_ | _{Anwendungsname}_                                               |
 | Name der genehmigenden Person             | Die Person, die für das Genehmigen der Kosten zuständig ist, die mit dieser Ressource verbunden sind.                                                                                                                                                     | _Approver_        | _{E-Mail}_                                                  |
 | Erforderliches/genehmigtes Budget  | Der Geldbetrag, der für diese Anwendung, diesen Dienst oder diese Workload zugeordnet ist.                                                                                                                                                          | _BudgetAmount_    | _{\$}_                                                     |
-| Geschäftseinheit             | Oberste Abteilung Ihres Unternehmens, die Besitzer des Abonnements oder der Workload ist, zu dem oder der die Ressource gehört. In kleineren Unternehmen kann dieses Tag ein einzelnes Organisations- oder freigegebenes Element des Unternehmens auf oberster Ebene darstellen. | _BusinessUnit_    | _FINANZEN_, _MARKETING_, _{Produktname}_ , _CORP_, _FREIGABE_ |
+| Geschäftseinheit             | Oberste Abteilung Ihres Unternehmens, die Besitzer des Abonnements oder der Workload ist, zu dem oder der die Ressource gehört. In kleineren Unternehmen kann dieses Tag ein einzelnes Organisations- oder freigegebenes Element des Unternehmens auf oberster Ebene darstellen. | _BusinessUnit_    | _FINANZEN_ , _MARKETING_ , _{Produktname}_ , _CORP_ , _FREIGABE_ |
 | Kostenstelle               | Buchhaltungskostenstelle, die dieser Ressource zugeordnet ist.                                                                                                                                                                | _CostCenter_      | _{Zahl}_                                                 |
-| Notfallwiederherstellung         | Geschäftliche Bedeutung der Anwendung, Workload oder dieses Diensts.                                                                                                                                                       | _DR_              | _Unternehmenskritisch_, _Kritisch_, _Unverzichtbar_                |
+| Notfallwiederherstellung         | Geschäftliche Bedeutung der Anwendung, Workload oder dieses Diensts.                                                                                                                                                       | _DR_              | _Unternehmenskritisch_ , _Kritisch_ , _Unverzichtbar_                |
 | Enddatum des Projekts   | Datum, zu dem die Deaktivierung der Anwendung, Workload oder dieses Diensts geplant ist.                                                                                                                                         | _EndDate_         | _{Datum}_                                                   |
-| Environment               | Bereitstellungsumgebung der Anwendung, Workload oder dieses Diensts.                                                                                                                                                     | _Env_             | _Prod_, _Entw_, _QA_, _Stage_, _Test_                       |
+| Environment               | Bereitstellungsumgebung der Anwendung, Workload oder dieses Diensts.                                                                                                                                                     | _Env_             | _Prod_ , _Entw_ , _QA_ , _Stage_ , _Test_                       |
 | Name des Besitzers                | Besitzer der Anwendung, der Workload oder des Diensts.                                                                                                                                                                      | _Besitzer_           | _{E-Mail}_                                                  |
 | Name der anfordernden Person            | Der Benutzer, der die Erstellung dieser Anwendung angefordert hat.                                                                                                                                                                 | _Name der anfordernden Person_       | _{E-Mail}_                                                  |
-| Dienstklasse             | Vereinbarung zum Servicelevel der Anwendung, der Workload oder des Diensts.                                                                                                                                              | _ServiceClass_    | _Dev_, _Bronze_, _Silver_, _Gold_                          |
+| Dienstklasse             | Vereinbarung zum Servicelevel der Anwendung, der Workload oder des Diensts.                                                                                                                                              | _ServiceClass_    | _Dev_ , _Bronze_ , _Silver_ , _Gold_                          |
 | Startdatum des Projekts | Datum, zu dem die Anwendung, Workload oder dieser Dienst erstmalig bereitgestellt wurde.                                                                                                                                                  | _StartDate_       | _{Datum}_                                                   |
 
 ## <a name="example-names"></a>Namensbeispiele
@@ -243,7 +240,7 @@ Der folgende Abschnitt enthält einige Namensbeispiele für häufige Azure-Resso
 
 <!-- TODO: Use tick marks for names. -->
 
-<!-- cSpell:ignore mktgsharepoint acctlookupsvc vmhadoop vmtest vmsharepoint vmnavigator vmsqlnode stvmstcoreeastus stvmpmcoreeastus stvmstplmeastus stvmsthadoopeastus stnavigatordata stemissionsoutput stdiag stdiagsh ssimpnavigatorprod ssimpemissionsdev dlanavigatorprod dlsnavigatorprod dlaemissionsdev dlsemissionsdev weballow rdpallow sqlallow dnsblocked cloudapp azurewebsites servicebus -->
+<!-- cSpell:ignore mktgsharepoint acctlookupsvc vmhadoop vmtest vmsharepoint vmnavigator vmsqlnode stvmstcoreeastus stvmpmcoreeastus stvmstplmeastus stvmsthadoopeastus stnavigatordata stemissionsoutput stdiag stdiagsh ssimpnavigatorprod ssimpemissionsdev dlanavigatorprod dlsnavigatorprod dlaemissionsdev dlsemissionsdev weballow rdpallow sqlallow dnsblocked cloudapp azurewebsites servicebus appcn keda acrnavigatorprod -->
 
 <!-- markdownlint-disable MD024 -->
 
@@ -258,7 +255,7 @@ Der folgende Abschnitt enthält einige Namensbeispiele für häufige Azure-Resso
 | Verwaltete Identität                | Ressourcengruppe                        | id-\<App or service name\>                                  | id-appcn-keda-prod-eus-001                                                                         |
 
 > [!NOTE]
-> Die zuvor und anderswo in diesem Dokument verwendeten Beispielnamen verweisen auf eine dreistellige Zeichenauffüllung (\<\#\#\#\>). Das heißt,  mktg-prod-*001*
+> Die zuvor und anderswo in diesem Dokument verwendeten Beispielnamen verweisen auf eine dreistellige Zeichenauffüllung (\<\#\#\#\>). Das heißt,  mktg-prod- *001*
 >
 > Auffüllen unterstützt die Lesbarkeit für Menschen sowie das Sortieren von Ressourcen, wenn diese in einer Konfigurationsverwaltungs-Datenbank (CMDB), einem IT-Ressourcenverwaltungstool oder in herkömmlichen Buchhaltungstools verwaltet werden. Wenn die bereitgestellte Ressource als Teil eines größeren Bestands oder Portfolios von IT-Ressourcen zentral verwaltet wird, richtet sich der Ansatz des Auffüllens an Oberflächen aus, die diese Systeme zur Verwaltung des Bestands verwenden.
 >

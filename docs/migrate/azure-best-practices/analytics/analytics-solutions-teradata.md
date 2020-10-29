@@ -7,25 +7,26 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: dca1d095eccc473445c602f679f475f44c19f1b5
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 7df0db259902f3b840c21138e111f06ab492aca4
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882327"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334798"
 ---
-<!-- cSpell:ignore DATEADD DATEDIFF Attunity Teradata Inmon NUSI Informatica Talend BTEQ FASTEXPORT QUALIFY ORC Parquet "Parallel Data Transporter" "Attunity Replicate" -->
+<!-- cSpell:ignore DATEADD DATEDIFF Inmon NUSI Informatica Talend BTEQ FASTEXPORT QUALIFY ORC Parquet "Parallel Data Transporter" Attunity "Qlik Replicate" -->
 
 # <a name="azure-synapse-analytics-solutions-and-migration-for-teradata"></a>Azure Synapse Analytics-Lösungen und Migrieren von Teradata
 
-Viele Organisationen sind bereit, kostenintensive Data Warehouse-Aufgaben wie die Infrastrukturwartung und die Plattformentwicklung an einen Cloudanbieter abzugeben. Unternehmen erwägen jetzt, innovative Cloud-, Infrastructure-as-a-Service- und Platform-as-a-Service-Angebote in neueren Umgebungen wie Azure zu nutzen.  
+Viele Organisationen sind bereit, kostenintensive Data Warehouse-Aufgaben wie die Infrastrukturwartung und die Plattformentwicklung an einen Cloudanbieter abzugeben. Unternehmen erwägen jetzt, innovative Cloud-, Infrastructure-as-a-Service- und Platform-as-a-Service-Angebote in neueren Umgebungen wie Azure zu nutzen.
 
-Azure Synapse Analytics ist ein unbegrenzter Analysedienst, der Data Warehousing für Unternehmen mit Big Data-Analysen vereint. Er ermöglicht flexible Datenabfragen nach Ihren Vorstellungen und im großen Stil mithilfe von serverlosen On-Demand-Ressourcen oder bereitgestellten Ressourcen. In diesem Artikel erfahren Sie, wie Sie die Migration von einem Teradata-Legacysystem zu Azure Synapse planen.
+
+Azure Synapse Analytics ist ein unbegrenzter Analysedienst, der Data Warehousing auf Unternehmensniveau mit Big Data-Analysen vereint. Er ermöglicht flexible Datenabfragen nach Ihren Vorstellungen und im großen Stil mithilfe von serverlosen On-Demand-Ressourcen oder bereitgestellten Ressourcen. In diesem Artikel erfahren Sie, wie Sie die Migration von einem Teradata-Legacysystem zu Azure Synapse planen.
 
 Teradata und Azure Synapse ähneln sich insofern, als dass es sich bei beiden Plattformen um SQL-Datenbanken handelt, die für die massive Parallelverarbeitung konzipiert wurden, um eine hohe Abfrageleistung für große Datenmengen zu erzielen. Dennoch weisen Sie einige grundlegende Unterschiede auf:
 
-- Legacysysteme von Teradata werden lokal installiert und verwenden proprietäre Hardware. Azure Synapse ist hingegen cloudbasiert und basiert auf Azure-Speicher- und Computeressourcen.
-- Ein Upgrade einer Teradata-Konfiguration ist eine umfangreiche Aufgabe, die zusätzliche physische Hardware und eine potenziell langwierige Neukonfiguration oder das Sichern und Neuladen der Datenbank erfordert. In Azure Synapse sind Speicher- und Computeressourcen voneinander getrennt, sodass Sie dank der elastischen Skalierbarkeit von Azure problemlos zentral hoch- oder herunterskalieren können.
+- Legacysysteme von Teradata werden lokal installiert und verwenden proprietäre Hardware. Azure Synapse ist hingegen cloudbasiert und basiert auf Azure-Computeressourcen und -Speicherressourcen.
+- Ein Upgrade einer Teradata-Konfiguration ist eine umfangreiche Aufgabe, die zusätzliche physische Hardware und eine potenziell langwierige Neukonfiguration oder das Sichern und Neuladen der Datenbank erfordert. In Azure Synapse sind Compute- und Speicherressourcen voneinander getrennt, sodass Sie dank der elastischen Skalierbarkeit von Azure problemlos zentral hoch- oder herunterskalieren können.
 - Da kein physisches System mehr unterstützt werden muss, kann Azure Synapse nach Bedarf angehalten oder in der Größe angepasst werden, um die Ressourcennutzung und die Kosten zu senken. Mit Azure haben Sie Zugriff auf eine weltweit verfügbare, äußerst sichere und skalierbare Cloudumgebung, die nicht nur Azure Synapse sondern auch ein Ökosystems aus unterstützenden Tools und Funktionen beinhaltet.
 
 Im diesem Artikel finden Sie eine Übersicht über wichtige Migrationsüberlegungen und erfahren, wie Sie in Azure Synapse eine gleichwertige oder bessere Leistung der Data Warehouse-Systeme und Data Marts erzielen, die Sie aus Teradata migriert haben. Zudem werden Probleme besprochen, die speziell bei der Migration einer vorhandenen Teradata-Umgebung auftreten können.
@@ -48,7 +49,7 @@ Teradata-Legacyumgebungen wurden meist im Laufe der Zeit auf mehrere Themenberei
 
 Üblicherweise handelt es sich bei den Bereichen, die diese Ziele unterstützen und sich daher für die erste Migration einer Teradata-Umgebung eignen, um Fachgebiete, in denen anstelle einer OLTP-Workload eine Power BI-Workload oder Analyseworkload implementiert wird. Das Datenmodell dieser Workload sollte auch ohne größere Änderungen migrierbar sein. Es sollte sich also z. B. um ein Stern- oder Schneeflockenschema handeln.
 
-Zudem muss das bei der ersten Migration verwendete Datenvolumen groß genug sein, um die Funktionen und Vorteile der Azure Synapse-Umgebung innerhalb kurzer Zeit zu veranschaulichen. Die üblicherweise für diese Anforderungen passende Größe liegt bei 1 bis 10 Terabyte (TB).
+Zudem muss das bei der ersten Migration verwendete Datenvolumen groß genug sein, um die Funktionen und Vorteile der Azure Synapse-Umgebung innerhalb kurzer Zeit zu veranschaulichen. Die üblicherweise für diese Anforderungen passende Größe liegt bei 1–10 Terabyte (TB).
 
 Eine Vorgehensweise bei der ersten Migration, die die Risiken und die Implementierungszeit minimiert, besteht in der Beschränkung der Migration auf Data Marts. Ein gutes Beispiel für Teradata ist der OLAP-Datenbankteil eines Teradata-Data Warehouse. Dieser Ansatz ist empfehlenswert, da der Migrationsumfang eingegrenzt wird und die Migration häufig in kurzer Zeit durchführbar ist.
 
@@ -62,7 +63,7 @@ Unabhängig von den Treibern und dem ausgewählten Migrationsumfang stehen Ihnen
 
   Dieser Ansatz eignet sich gut für vorhandene Teradata-Umgebungen, in denen ein einzelner Data Mart migriert werden soll, und für Szenarios, in denen die Daten bereits in einem gut durchdachten Stern- oder Schneeflockenschema vorliegen. Dieser Migrationstyp ist ebenfalls gut geeignet, wenn der Wechsel in eine modernere Cloudumgebung unter Zeit- und Kostendruck stattfindet.
 
-- **Mehrstufiger Ansatz unter Einbindung von Änderungen:** Wenn Ihr Legacywarehouse im Laufe der Zeit weiterentwickelt wurde, müssen Sie das Data Warehouse möglicherweise überarbeiten, um die erforderliche Leistung aufrechtzuerhalten oder neue Datenquellen wie IoT-Streams zu unterstützen. Im Rahmen dieser Überarbeitung kann beispielsweise eine Migration zu Azure Synapse durchgeführt werden, um von den bekannten Vorteilen einer skalierbaren Cloudumgebung zu profitieren. Im Zuge dessen muss unter Umständen das zugrunde liegende Datenmodell geändert werden, z. B. durch Verschieben eines Inmon-Modells in einen Azure-Datentresor.
+- **Mehrstufiger Ansatz unter Einbindung von Änderungen:** Wenn Ihr Legacywarehouse im Laufe der Zeit weiterentwickelt wurde, müssen Sie das Data Warehouse möglicherweise überarbeiten, um die erforderliche Leistung aufrechtzuerhalten oder neue Datenquellen wie IoT-Streams zu unterstützen. Im Rahmen dieser Überarbeitung kann beispielsweise eine Migration zu Azure Synapse durchgeführt werden, um von den bekannten Vorteilen einer skalierbaren Cloudumgebung zu profitieren. Dieser Prozess kann das Ändern des zugrunde liegenden Datenmodells wie das Verschieben eines Inmon-Modells in Azure Data Vault beinhalten.
 
   Es wird jedoch empfohlen, das bestehende Datenmodell bei der ersten Migration unverändert zu Azure zu verschieben. Anschließend können Sie sich die Leistung und Flexibilität der Azure-Dienste zunutze machen und die Änderungen ohne Auswirkungen auf das Quellsystem umsetzen.
 
@@ -74,7 +75,7 @@ Dieser Ansatz hat mehrere Vorteile:
 
 - Nach der ersten Replikation von Daten wird das Quellsystem von weiteren Migrationsaufgaben nicht weiter beeinträchtigt.
 - Vertraute Teradata-Schnittstellen, -Tools und -Hilfsprogramme sind in der Azure-Umgebung verfügbar.
-- Nach der Migration auf die Azure-Umgebung gibt es keine potenziellen Probleme mehr mit der Verfügbarkeit von Netzwerkbandbreite zwischen dem lokalen Quellsystem und dem Cloudzielsystem.
+- Nach der Migration zur Azure-Umgebung gibt es keine potenziellen Probleme mehr mit der Verfügbarkeit von Netzwerkbandbreite zwischen dem lokalen Quellsystem und dem Cloudzielsystem.
 - Tools wie Azure Data Factory können effizient Hilfsprogramme wie Teradata Parallel Transporter aufrufen, um Daten schnell und einfach zu migrieren.
 - Der Migrationsprozess wird vollständig in der Azure-Umgebung orchestriert und gesteuert.
 
@@ -84,7 +85,7 @@ Es ist sinnvoll, die Migration mithilfe der Funktionen der Azure-Umgebung zu aut
 
 Azure Data Factory ist ein cloudbasierter Datenintegrationsdienst. Er ermöglicht Ihnen das Erstellen datengesteuerter Workflows in der Cloud, um die Datenverschiebung und -transformation zu orchestrieren und zu automatisieren. Data Factory-Pipelines können Daten aus unterschiedlichen Datenspeichern erfassen. Dann können diese die Daten mithilfe von Compute Services wie Azure HDInsight für Apache Hadoop und Apache Spark, Azure Data Lake Analytics und Azure Machine Learning verarbeiten und transformieren.
 
-Beginnen Sie mit dem Erstellen von Metadaten, die die zu migrierenden Datentabellen mit ihren Speicherorten auflisten. Verwenden Sie dann Data Factory-Funktionen, um den Migrationsprozess zu verwalten.
+Beginnen Sie mit dem Erstellen von Metadaten, die die zu migrierenden Datentabellen zusammen mit ihren Speicherorten auflisten. Verwenden Sie dann Data Factory-Funktionen, um den Migrationsprozess zu verwalten.
 
 ## <a name="design-differences-between-teradata-and-azure-synapse"></a>Entwurfsunterschiede zwischen Teradata und Azure Synapse
 
@@ -92,7 +93,7 @@ Bei der Planung einer Migration von einer Teradata-Legacyumgebung zu Azure Synap
 
 ### <a name="multiple-databases-vs-a-single-database-and-schemas"></a>Mehrere Datenbanken im Vergleich zu einem Singleton und Schemas
 
-In einer Teradata-Umgebung werden verschiedene Teile der Gesamtumgebung unter Umständen auf mehreren separaten Datenbanken bereitgestellt. Beispielsweise kann eine separate Datenbank für die Datenerfassung und Stagingtabellen vorhanden sein, eine Datenbank für zentrale Warehouse-Tabellen und eine weitere Datenbank für Data Marts (manchmal auch als *semantische Ebene* bezeichnet). Die Verarbeitung von separaten Datenbanken als ETL-/ELT-Pipelines in Azure Synapse erfordert möglicherweise die Implementierung von datenbankübergreifenden Verknüpfungen und die Verschiebung von Daten zwischen den separaten Datenbanken.
+In einer Teradata-Umgebung werden verschiedene Teile der Gesamtumgebung unter Umständen auf mehreren separaten Datenbanken bereitgestellt. Beispielsweise kann eine separate Datenbank für die Datenerfassung und Stagingtabellen vorhanden sein, eine Datenbank für zentrale Warehouse-Tabellen und eine weitere Datenbank für Data Marts (manchmal auch als _semantische Ebene_ bezeichnet). Die Verarbeitung von separaten Datenbanken als ETL-/ELT-Pipelines in Azure Synapse erfordert möglicherweise die Implementierung von datenbankübergreifenden Verknüpfungen und die Verschiebung von Daten zwischen den separaten Datenbanken.
 
 Die Azure Synapse-Umgebung verfügt über ein Singleton. Tabellen werden mithilfe von Schemas in logisch getrennte Gruppen unterteilt. Es wird empfohlen, die separaten Datenbanken, die Sie von Teradata migrieren, mithilfe von mehreren Schemas in Azure Synapse zu imitieren.
 
@@ -187,7 +188,7 @@ Nachstehend sind weitere Informationen zur Migration von Funktionen, gespeichert
 
   Teradata stellt Sprache für gespeicherte Prozeduren zum Erstellen gespeicherter Prozeduren bereit. Azure Synapse unterstützt gespeicherte Prozeduren mithilfe von T-SQL. Wenn Sie gespeicherte Prozeduren zu Azure Synapse migrieren, müssen Sie diese in T-SQL neu programmieren.
 
-- **Trigger**: Trigger können nicht in Azure Synapse erstellt werden, aber Sie können Trigger in Data Factory implementieren.
+- **Trigger:** Trigger können nicht in Azure Synapse erstellt werden, aber Sie können Trigger in Data Factory implementieren.
 
 - **Sequenzen:** Azure Synapse-Sequenzen werden ähnlich wie in Teradata behandelt. Verwenden Sie `IDENTITY`-Spalten oder SQL-Code, um die nächste Sequenznummer in einer Reihe zu erstellen.
 
@@ -199,7 +200,7 @@ Berücksichtigen Sie die folgenden Informationen bei der Planung der Metadaten- 
 
   Die Informationen, die die aktuellen Tabellen- und Sichtdefinitionen angeben, werden in den Systemkatalogtabellen verwaltet. Systemkatalogtabellen sind die beste Quelle für diese Informationen, weil sie mit hoher Wahrscheinlichkeit auf dem neuesten Stand und vollständig sind. Die benutzerseitig verwaltete Dokumentation ist möglicherweise nicht mit den aktuellen Tabellendefinitionen synchron.
 
-  Sie können auf die Informationen über Sichten im Katalog zugreifen, z. B. `DBC.ColumnsV`. Sie können auch Sichten verwenden, um die entsprechenden `CREATE TABLE`-DDL-Anweisungen (Datendefinitionssprache) für die entsprechenden Tabellen in Azure Synapse zu generieren.  
+  Sie können auf die Informationen über Sichten im Katalog zugreifen, z. B. `DBC.ColumnsV`. Sie können auch Sichten verwenden, um die entsprechenden `CREATE TABLE`-DDL-Anweisungen (Datendefinitionssprache) für die entsprechenden Tabellen in Azure Synapse zu generieren.
 
   Migrations- und ETL-Tools von Drittanbietern nutzen die Informationen im Katalog auch, um das gleiche Ergebnis zu erzielen.
 
@@ -207,9 +208,9 @@ Berücksichtigen Sie die folgenden Informationen bei der Planung der Metadaten- 
 
   Migrieren Sie die Rohdaten mit Teradata-Standardhilfsprogrammen wie `BTEQ` und `FASTEXPORT` aus vorhandenen Teradata-Tabellen. Bei einer Migration müssen die Daten stets so effizient wie möglich extrahiert werden. Der für neuere Versionen von Teradata empfohlene Ansatz ist die Verwendung von Teradata Parallel Transporter, einem Hilfsprogramm, das mehrere parallele `FASTEXPORT`-Datenströme verwendet, um den besten Durchsatz zu erzielen.
 
-  Teradata Parallel Transporter kann direkt von Data Factory aufgerufen werden. Diese Vorgehensweise wird für die Verwaltung des Datenmigrationsprozesses empfohlen, unabhängig davon, ob die Teradata-Instanz lokal oder in eine VM in der Azure-Umgebung kopiert wurde, wie zuvor beschrieben.  
+  Teradata Parallel Transporter kann direkt von Data Factory aufgerufen werden. Diese Vorgehensweise wird für die Verwaltung des Datenmigrationsprozesses empfohlen, unabhängig davon, ob die Teradata-Instanz lokal oder in eine VM in der Azure-Umgebung kopiert wurde, wie zuvor beschrieben.
 
-  Empfohlene Datenformate für die extrahierten Daten sind *durch Trennzeichen getrennte Textdateien* (auch CSV-Dateien genannt) oder ORC- (Optimized Row Columnar) oder Parquet-Dateien.
+  Empfohlene Datenformate für die extrahierten Daten sind _durch Trennzeichen getrennte Textdateien_ (auch CSV-Dateien genannt) oder ORC- (Optimized Row Columnar) oder Parquet-Dateien.
 
 Weitere Informationen zum Migrieren von Daten und ETL aus einer Teradata-Umgebung finden Sie in der Teradata-Dokumentation.
 
@@ -217,7 +218,7 @@ Weitere Informationen zum Migrieren von Daten und ETL aus einer Teradata-Umgebun
 
 In Bezug auf die Optimierung bestehen gewisse Unterschiede zwischen den Plattformen. In der folgenden Übersicht der Empfehlungen zur Leistungsoptimierung werden spezifische Unterschiede zwischen Teradata und Azure Synapse sowie Migrationsalternativen hervorgehoben:
 
-- **Optionen für die Datenverteilung:**  In Azure können Sie die Datenverteilungsmethoden für einzelne Tabellen festlegen. Der Zweck dieser Funktionalität besteht darin, die Datenmenge zu reduzieren, die zwischen den Verarbeitungsknoten ausgetauscht wird, wenn eine Abfrage ausgeführt wird.  
+- **Optionen für die Datenverteilung:** In Azure können Sie die Datenverteilungsmethoden für einzelne Tabellen festlegen. Der Zweck dieser Funktionalität besteht darin, die Datenmenge zu reduzieren, die zwischen den Verarbeitungsknoten ausgetauscht wird, wenn eine Abfrage ausgeführt wird.
 
   Bei Verknüpfungen großer Tabellen miteinander wird durch die Hashverteilung von einer Tabelle oder (idealerweise beiden) in den Joinspalten sichergestellt, dass die Joinverarbeitung lokal ausgeführt werden kann, da sich die zu verknüpfenden Datenzeilen bereits auf demselben Verarbeitungsknoten befinden.
 

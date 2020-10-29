@@ -7,14 +7,14 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 289324ee06571715b02aeea68c93a405123bac4f
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 7aba1b915bf1cff47e26407940c871496cd640be
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775903"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334934"
 ---
-<!-- cSpell:ignore untrust CIDR RRAS CONTOSODC sysvol ITIL NSGs ASGs -->
+<!-- cSpell:ignore untrust CIDR RRAS CONTOSODC SYSVOL ITIL NSGs ASGs -->
 
 # <a name="deploy-a-migration-infrastructure"></a>Bereitstellen einer Migrationsinfrastruktur
 
@@ -41,10 +41,10 @@ Bevor die Migration zu Azure erfolgen kann, muss Contoso zunächst eine Azure-In
 
 Bevor mit der Überprüfung der Infrastruktur begonnen wird, sollten Sie einige Hintergrundinformationen zu den relevanten Azure-Funktionen lesen:
 
-- Für den Erwerb des Zugriffs auf Azure stehen mehrere Optionen zur Verfügung. Hierzu zählen beispielsweise Abonnements mit nutzungsbasierter Zahlung, ein Microsoft Enterprise Agreement (EA), eine Lizenzierung nach dem Open License-Verfahren von Microsoft-Handelspartnern oder der Kauf bei Microsoft-Partnern im Rahmen des CSP-Programms (Cloud Solution Provider). Erfahren Sie mehr über [Kaufoptionen](https://azure.microsoft.com/pricing/purchase-options), und lesen Sie, wie [Azure-Abonnements organisiert sind](https://azure.microsoft.com/blog/organizing-subscriptions-and-resource-groups-within-the-enterprise).
+- Für den Erwerb des Zugriffs auf Azure stehen mehrere Optionen zur Verfügung. Hierzu zählen beispielsweise Abonnements mit nutzungsbasierter Zahlung, ein Microsoft Enterprise Agreement (EA), eine Lizenzierung nach dem Open License-Verfahren von Microsoft-Handelspartnern oder der Kauf bei Microsoft-Partnern im Rahmen des CSP-Programms (Cloud Solution Provider). Erfahren Sie mehr über [Kaufoptionen](https://azure.microsoft.com/pricing/purchase-options/), und lesen Sie, wie [Azure-Abonnements organisiert sind](https://azure.microsoft.com/blog/organizing-subscriptions-and-resource-groups-within-the-enterprise/).
 - Verschaffen Sie sich einen Überblick über die [Identitäts- und Zugriffsverwaltung](https://www.microsoft.com/security/business/identity) in Azure. Informieren Sie sich über [Azure Active Directory (Azure AD) und das Erweitern einer lokalen Active Directory-Instanz in die Cloud](/azure/active-directory/fundamentals/active-directory-whatis).
-- Azure bietet eine robuste Netzwerkinfrastruktur mit Optionen für Hybridverbindungen. Verschaffen Sie sich einen Überblick über [Netzwerke und Netzwerkzugriffssteuerung](/azure/security/security-network-overview).
-- Lesen Sie die [Einführung in die Azure-Sicherheit](/azure/security/fundamentals/overview), und erfahren Sie, wie Sie einen Plan für [Azure Governance](/azure/governance) erstellen.
+- Azure bietet eine robuste Netzwerkinfrastruktur mit Optionen für Hybridverbindungen. Verschaffen Sie sich einen Überblick über [Netzwerke und Netzwerkzugriffssteuerung](/azure/security/fundamentals/network-overview).
+- Lesen Sie die [Einführung in die Azure-Sicherheit](/azure/security/fundamentals/overview), und erfahren Sie, wie Sie einen Plan für [Azure Governance](/azure/governance/) erstellen.
 
 ## <a name="on-premises-architecture"></a>Lokale Architektur
 
@@ -68,7 +68,7 @@ Contoso muss entscheiden, wie Azure erworben werden soll und wie Abonnements ver
 
 ### <a name="buy-azure"></a>Kauf von Azure
 
-Contoso registriert sich für ein [Enterprise Agreement](https://azure.microsoft.com/pricing/enterprise-agreement). Diese Vereinbarung sieht eine Vorauszahlung für Azure vor, für die Contoso Vorteile wie flexible Abrechnungsoptionen und optimierte Preise erhält.
+Contoso registriert sich für ein [Enterprise Agreement](https://azure.microsoft.com/overview/sales-number/). Diese Vereinbarung sieht eine Vorauszahlung für Azure vor, für die Contoso Vorteile wie flexible Abrechnungsoptionen und optimierte Preise erhält.
 
 Es folgen die Details:
 
@@ -81,17 +81,17 @@ Es folgen die Details:
 
 Nach dem Erwerb von Azure muss Contoso herausfinden, wie die Azure-Abonnements verwaltet werden sollen. Contoso verfügt über ein EA und kann somit beliebig viele Azure-Abonnements erstellen. Eine Azure Enterprise Agreement-Registrierung definiert, wie ein Unternehmen Azure-Dienste modelliert und verwendet und legt eine Kernstruktur für die Governance fest.
 
-Als Erstes hat Contoso eine Struktur für die Registrierung definiert (ein so genanntes *Unternehmensgerüst*). Contoso hat das [Azure-Unternehmensgerüst](/azure/azure-resource-manager/resource-manager-subscription-governance) verwendet, um ein Gerüst zu entwerfen.
+Als Erstes hat Contoso eine Struktur für die Registrierung definiert (ein so genanntes _Unternehmensgerüst_ ). Contoso hat das [Azure-Unternehmensgerüst](/azure/cloud-adoption-framework/reference/azure-scaffold) verwendet, um ein Gerüst zu entwerfen.
 
 Für den Augenblick hat sich Contoso für eine funktionale Abonnementverwaltung entschieden:
 
 - Das Unternehmen setzt eine zentrale IT-Abteilung ein, die auch die Kontrolle über das Azure-Budget hat. Diese Gruppe hält als einzige Abonnements.
 - Contoso plant, dieses Modell später zu erweitern, sodass weitere Gruppen im Unternehmen als Abteilungen in die Registrierungshierarchie integriert werden können.
 - Innerhalb der IT-Abteilung hat Contoso zwei Abonnements strukturiert: `Production` und `Development`.
-- Wenn Contoso zukünftig zusätzliche Abonnements benötigt, muss das Unternehmen auch den Zugriff, die Richtlinien und die Konformität für diese Abonnements verwalten. Hierzu führt Contoso [Azure-Verwaltungsgruppen](/azure/azure-resource-manager/management-groups-overview) als zusätzliche Ebene über Abonnements ein.
+- Wenn Contoso zukünftig zusätzliche Abonnements benötigt, muss das Unternehmen auch den Zugriff, die Richtlinien und die Konformität für diese Abonnements verwalten. Hierzu führt Contoso [Azure-Verwaltungsgruppen](/azure/governance/management-groups/overview) als zusätzliche Ebene über Abonnements ein.
 
 ![Diagramm: Unternehmenshierarchie](./media/contoso-migration-infrastructure/enterprise-structure.png)
-  
+
 _Abbildung 2: Unternehmenshierarchie_
 
 ### <a name="examine-licensing"></a>Untersuchen der Lizenzierung
@@ -102,11 +102,11 @@ Nach der Konfiguration der Abonnements kann sich Contoso mit der Microsoft-Lizen
 
 Standardimages von in Azure bereitgestellten VMs beinhalten eine Lizenz, und die Softwarenutzung wird Contoso pro Minute in Rechnung gestellt. Contoso ist jedoch seit langem Microsoft-Kunde und hat EAs und Lizenzen im Open License-Programm mit Software Assurance genutzt.
 
-Der Azure-Hybridvorteil stellt eine kostengünstige Migrationsmethode dar. Er ermöglicht Contoso Einsparungen bei Azure-VMs und SQL Server-Workloads durch Umwandlung oder Wiederverwendung von Lizenzen der Windows Server Datacenter- und Standard-Editionen, die durch die Software Assurance (SA) abgedeckt sind. Dadurch kann Contoso einen niedriger angesetzten Computesatz für VMs und SQL Server bezahlen. Weitere Informationen finden Sie unter [Azure-Hybridvorteil](https://azure.microsoft.com/pricing/hybrid-benefit).
+Der Azure-Hybridvorteil stellt eine kostengünstige Migrationsmethode dar. Er ermöglicht Contoso Einsparungen bei Azure-VMs und SQL Server-Workloads durch Umwandlung oder Wiederverwendung von Lizenzen der Windows Server Datacenter- und Standard-Editionen, die durch die Software Assurance (SA) abgedeckt sind. Dadurch kann Contoso einen niedriger angesetzten Computesatz für VMs und SQL Server bezahlen. Weitere Informationen finden Sie unter [Azure-Hybridvorteil](https://azure.microsoft.com/pricing/hybrid-benefit/).
 
 #### <a name="license-mobility"></a>Lizenzmobilität
 
-License Mobility durch Software Assurance bietet Kunden wie Contoso, die einen Microsoft-Volumenlizenzvertrag abgeschlossen haben, die Flexibilität, qualifizierte Serveranwendungen mit aktiver SA in Azure bereitzustellen. Hierdurch entfällt die Notwendigkeit zum Kauf neuer Lizenzen. Ohne anfallende Mobilitätsgebühren können die vorhandenen Lizenzen auf einfache Weise in Azure bereitgestellt werden. Weitere Informationen finden Sie unter [Lizenzmobilität durch Software Assurance für Azure](https://azure.microsoft.com/pricing/license-mobility).
+License Mobility durch Software Assurance bietet Kunden wie Contoso, die einen Microsoft-Volumenlizenzvertrag abgeschlossen haben, die Flexibilität, qualifizierte Serveranwendungen mit aktiver SA in Azure bereitzustellen. Hierdurch entfällt die Notwendigkeit zum Kauf neuer Lizenzen. Ohne anfallende Mobilitätsgebühren können die vorhandenen Lizenzen auf einfache Weise in Azure bereitgestellt werden. Weitere Informationen finden Sie unter [Lizenzmobilität durch Software Assurance für Azure](https://azure.microsoft.com/pricing/license-mobility/).
 
 #### <a name="reserved-instances-for-predictable-workloads"></a>Reservierte Instanzen für vorhersehbare Workloads
 
@@ -116,7 +116,7 @@ Vorhersehbare Workloads müssen bei ausgeführten VMs jederzeit verfügbar sein.
 
 _Abbildung 3: Azure Reserved Virtual Machine Instances_
 
-Für die Verwendung reservierter Instanzen für bestimmte VM-Instanzen, die über längere Zeiträume hinweg benötigt werden, kann Contoso im Gegenzug sowohl einen Rabatt als auch priorisierte Kapazität erhalten. Durch die Verwendung von [Azure Reserved Virtual Machine Instances](https://azure.microsoft.com/pricing/reserved-vm-instances) in Kombination mit dem Azure-Hybridvorteil kann Contoso gegenüber der regulären nutzungsbasierten Bezahlung bis zu 82 Prozent sparen (Stand April 2018).
+Für die Verwendung reservierter Instanzen für bestimmte VM-Instanzen, die über längere Zeiträume hinweg benötigt werden, kann Contoso im Gegenzug sowohl einen Rabatt als auch priorisierte Kapazität erhalten. Durch die Verwendung von [Azure Reserved Virtual Machine Instances](https://azure.microsoft.com/pricing/reserved-vm-instances/) in Kombination mit dem Azure-Hybridvorteil kann Contoso gegenüber der regulären nutzungsbasierten Bezahlung bis zu 82 Prozent sparen (Stand April 2018).
 
 ## <a name="step-2-manage-hybrid-identity"></a>Schritt 2: Verwalten von Hybrididentitäten
 
@@ -124,13 +124,13 @@ Das Erteilen und Steuern des Benutzerzugriffs auf Azure-Ressourcen mithilfe der 
 
 Contoso hat sich entschieden, das vorhandene lokale Active Directory in die Cloud zu erweitern, statt ein neues, separates System in Azure aufzubauen. Da Contoso noch nicht Microsoft 365 verwendet, muss eine Azure AD-Instanz bereitgestellt werden. Mit Microsoft 365 würde Contoso bereits über einen Azure AD-Mandanten sowie über ein entsprechendes Verzeichnis verfügen, das als primäre Azure AD-Instanz verwendet werden könnte.
 
-Weitere Informationen zu Identitätsmodellen von Microsoft 365 und zu Azure Active Directory finden Sie [hier](/office365/enterprise/about-office-365-identity). Informationen zum Zuordnen oder Hinzufügen eines Azure-Abonnements zu Ihrem Azure Active Directory-Mandanten finden Sie [hier](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
+Weitere Informationen zu Identitätsmodellen von Microsoft 365 und zu Azure Active Directory finden Sie [hier](/microsoft-365/enterprise/about-microsoft-365-identity?view=o365-worldwide). Informationen zum Zuordnen oder Hinzufügen eines Azure-Abonnements zu Ihrem Azure Active Directory-Mandanten finden Sie [hier](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
 
 ### <a name="create-an-azure-ad-directory"></a>Erstellen eines Azure AD-Verzeichnisses
 
 Contoso verwendet die Azure AD Free-Edition, die in Azure-Abonnements enthalten ist. Die Administratoren von Contoso erstellen ein Azure AD-Verzeichnis:
 
-1. Im [Azure-Portal](https://portal.azure.com) navigieren sie zu **Ressource erstellen** > **Identität** > **Azure Active Directory**.
+1. Im [Azure-Portal](https://portal.azure.com) navigieren sie zu **Ressource erstellen** > **Identität** > **Azure Active Directory** .
 
 1. Sie geben in **Verzeichnis erstellen** einen Namen für das Verzeichnis, einen Anfangsdomänennamen und die Region an, in der das Verzeichnis erstellt werden soll.
 
@@ -153,7 +153,7 @@ Für die Einrichtung eines benutzerdefinierten Domänennamens müssen die Admini
     - Sie notieren sich in der Liste **Benutzerdefinierte Domänennamen** die DNS-Informationen zu dem Namen. Das Unternehmen verwendet einen MX-Eintrag.
     - Die Administratoren benötigen Zugriff auf den Namenserver. Sie melden sich bei der Domäne `contoso.com` an und erstellen mithilfe der notierten Informationen einen neuen MX-Eintrag für den von Azure AD bereitgestellten DNS-Eintrag.
 
-3. Nachdem die DNS-Einträge weitergegeben wurden, klicken sie in den Domänendetails auf **Überprüfen**, um den benutzerdefinierten Domänennamen zu überprüfen.
+3. Nachdem die DNS-Einträge weitergegeben wurden, klicken sie in den Domänendetails auf **Überprüfen** , um den benutzerdefinierten Domänennamen zu überprüfen.
 
     ![Screenshot: Auswahl für das Azure Active Directory-DNS](./media/contoso-migration-infrastructure/azure-ad-dns.png)
 
@@ -167,8 +167,7 @@ Nachdem das Azure AD-Verzeichnis nun eingerichtet ist, müssen die Administrator
 
 Azure-Ressourcengruppen fassen Azure-Ressourcen zu Gruppen zusammen. Mithilfe einer Ressourcengruppen-ID kann Azure Vorgänge für Ressourcen in der betreffenden Gruppe ausführen.
 
-Ein Azure-Abonnement kann mehrere Ressourcengruppen enthalten.
-Eine Ressourcengruppe ist nur in einem Abonnement vorhanden. Außerdem kann eine einzelne Ressourcengruppe über mehrere Ressourcen verfügen. Eine Ressource gehört jeweils nur einer Ressourcengruppe an.
+Ein Azure-Abonnement kann mehrere Ressourcengruppen enthalten. Eine Ressourcengruppe ist nur in einem Abonnement vorhanden. Außerdem kann eine einzelne Ressourcengruppe über mehrere Ressourcen verfügen. Eine Ressource gehört jeweils nur einer Ressourcengruppe an.
 
 Die Administratoren von Contoso richten Azure-Ressourcengruppen wie in der folgenden Tabelle gezeigt ein.
 
@@ -208,7 +207,7 @@ Zu Verwaltungszwecken erstellen sie eine zusätzliche Gruppe, die allen anderen 
 
 Contoso möchte eine gemeinsame Identität für den Zugriff auf lokale Ressourcen und Ressourcen in der Cloud bereitstellen. Zu diesem Zweck integriert das Unternehmen die lokale Active Directory-Instanz mit Azure AD. Mit diesem Modell können Benutzer und Organisationen eine einzelne Identität für den Zugriff auf lokale Anwendungen und Clouddienste wie Microsoft 365 oder Tausende weitere Websites im Internet nutzen. Administratoren können mithilfe der Gruppen in Active Directory die [rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC)](/azure/role-based-access-control/role-assignments-portal) in Azure implementieren.
 
-Um die Integration zu erleichtern, verwendet Contoso das [Azure AD Connect-Tool](/azure/active-directory/connect/active-directory-aadconnect). Nach der Installation und Konfiguration auf einem Domänencontroller synchronisiert das Tool die lokalen Active Directory-Identitäten mit Azure AD.
+Um die Integration zu erleichtern, verwendet Contoso das [Azure AD Connect-Tool](/azure/active-directory/hybrid/whatis-hybrid-identity). Nach der Installation und Konfiguration auf einem Domänencontroller synchronisiert das Tool die lokalen Active Directory-Identitäten mit Azure AD.
 
 ### <a name="download-the-tool"></a>Herunterladen des Tools
 
@@ -218,7 +217,7 @@ Um die Integration zu erleichtern, verwendet Contoso das [Azure AD Connect-Tool]
 
     _Abbildung 8: Herunterladen von Azure AD Connect_
 
-2. Die Administratoren starten die Installation von `AzureADConnect.msi` über die **Express-Einstellungen**. Dies ist die gebräuchlichste Installation, die für Topologien mit einer einzelnen Gesamtstruktur und mit Synchronisierung von Kennworthashes zur Authentifizierung verwendet werden kann.
+2. Die Administratoren starten die Installation von `AzureADConnect.msi` über die **Express-Einstellungen** . Dies ist die gebräuchlichste Installation, die für Topologien mit einer einzelnen Gesamtstruktur und mit Synchronisierung von Kennworthashes zur Authentifizierung verwendet werden kann.
 
     ![Screenshot: Azure AD Connect-Assistent](./media/contoso-migration-infrastructure/ad-connect-wiz1.png)
 
@@ -234,13 +233,13 @@ Um die Integration zu erleichtern, verwendet Contoso das [Azure AD Connect-Tool]
 
     ![Screenshot: Seite „Mit AD DS verbinden“ im Azure AD Connect-Assistenten](./media/contoso-migration-infrastructure/ad-connect-wiz3.png)
 
-    _Abbildung 11: Azure AD Connect-Assistent: Herstellen einer Verbindung mit AD DS_
+    _Abbildung 11: Azure AD Connect-Assistent: Herstellen einer Verbindung mit AD DS_
 
 5. In **Bereit zur Konfiguration** wählen sie **Starten Sie den Synchronisierungsvorgang, nachdem die Konfiguration abgeschlossen wurde** aus, um die Synchronisierung sofort zu starten. Anschließend führen sie die Installation durch.
 
     Beachten Sie Folgendes:
 
-    - Contoso hat eine direkte Verbindung mit Azure. Wenn sich Ihre lokale Active Directory-Instanz hinter einem Proxy befindet, sollten Sie den Artikel [Problembehebung bei Azure AD-Konnektivitätsproblemen](/azure/active-directory/connect/active-directory-aadconnect-troubleshoot-connectivity) lesen.
+    - Contoso hat eine direkte Verbindung mit Azure. Wenn sich Ihre lokale Active Directory-Instanz hinter einem Proxy befindet, sollten Sie den Artikel [Problembehebung bei Azure AD-Konnektivitätsproblemen](/azure/active-directory/hybrid/tshoot-connect-connectivity) lesen.
 
     - Nach der ersten Synchronisierung werden lokale Active Directory-Objekte im Azure AD-Verzeichnis sichtbar.
 
@@ -277,12 +276,12 @@ Azure-Ressourcen werden in Regionen bereitgestellt. Regionen sind wiederum in Ge
 
 Eine Region besteht aus mehreren Rechenzentren. Diese Rechenzentren werden innerhalb eines durch Latenz definierten Umkreises bereitgestellt und sind über ein dediziertes regionales Netzwerk mit geringer Latenz verbunden.
 
-Jede Azure-Region ist zwecks Ausfallsicherheit mit einer anderen Region gepaart. Lesen Sie mehr über [Azure-Regionen](https://azure.microsoft.com/global-infrastructure/regions), und verstehen Sie, [wie Regionen gepaart werden](/azure/best-practices-availability-paired-regions).
+Jede Azure-Region ist zwecks Ausfallsicherheit mit einer anderen Region gepaart. Lesen Sie mehr über [Azure-Regionen](https://azure.microsoft.com/global-infrastructure/geographies/), und verstehen Sie, [wie Regionen gepaart werden](/azure/best-practices-availability-paired-regions).
 
 Contoso hat sich aus den folgenden Gründen für `East US 2` (mit Standort in Virginia) als primäre Region und für `Central US` (mit Standort in Iowa) als sekundäre Region entschieden:
 
 - Das Contoso-Rechenzentrum befindet sich in New York, und die Latenz zum nächstgelegenen Rechenzentrum wurde berücksichtigt.
-- `East US 2` bietet alle Dienste und Produkte, die Contoso benötigt. Es sind nicht in allen Azure-Regionen dieselben Produkte und Dienste verfügbar. Weitere Informationen finden Sie unter [Verfügbare Produkte nach Region](https://azure.microsoft.com/global-infrastructure/services).
+- `East US 2` bietet alle Dienste und Produkte, die Contoso benötigt. Es sind nicht in allen Azure-Regionen dieselben Produkte und Dienste verfügbar. Weitere Informationen finden Sie unter [Verfügbare Produkte nach Region](https://azure.microsoft.com/global-infrastructure/services/).
 - `Central US` ist die gepaarte Region für `East US 2` in Azure.
 
 Bei der Planung der Hybridumgebung muss sich Contoso überlegen, wie Ausfallsicherheit und eine Strategie zur Notfallwiederherstellung im Regionsentwurf verwirklicht werden können. Die einfachste Lösung ist eine Bereitstellung in einer einzelnen Region, in der Resilienz mit Azure-Plattformfeatures wie Fehlerdomänen und Regionspaaren gewährleistet wird. Die komplizierteste Lösung wäre eine vollständige Aktiv/Aktiv-Architektur, in der die Clouddienste und die Datenbank in zwei unterschiedlichen Regionen bereitgestellt und von dort aus an Benutzer ausgeliefert werden.
@@ -299,7 +298,7 @@ Fehlerdomänen stellen zugrundeliegende Hardware mit einer gemeinsamen Stromquel
 
 Updatedomänen stellen zugrunde liegende Hardware dar, die gleichzeitig gewartet oder neu gestartet werden kann. Mithilfe von Verfügbarkeitsgruppen werden VMs auch auf mehrere Updatedomänen verteilt. So kann sichergestellt werden, dass mindestens eine Instanz ununterbrochen ausgeführt wird.
 
-Contoso wird Verfügbarkeitsgruppen immer dann implementieren, wenn VM-Workloads Hochverfügbarkeit erfordern. Weitere Informationen finden Sie unter [Verwalten der Verfügbarkeit virtueller Windows-Computer in Azure](/azure/virtual-machines/windows/manage-availability).
+Contoso wird Verfügbarkeitsgruppen immer dann implementieren, wenn VM-Workloads Hochverfügbarkeit erfordern. Weitere Informationen finden Sie unter [Verwalten der Verfügbarkeit virtueller Windows-Computer in Azure](/azure/virtual-machines/manage-availability).
 
 #### <a name="availability-zones"></a>Verfügbarkeitszonen
 
@@ -345,7 +344,7 @@ Nach der Ausarbeitung des Regionskonzepts kann sich Contoso der Netzwerkstrategi
 
 ### <a name="plan-hybrid-network-connectivity"></a>Planen der Hybridnetzwerk-Konnektivität
 
-Contoso hat eine [Reihe von Architekturen](/azure/architecture/reference-architectures/hybrid-networking) für das Hybridnetzwerk zwischen Azure und dem lokalen Datencenter in Erwägung gezogen. Weitere Informationen finden Sie unter [Auswählen einer Lösung zum Herstellen einer Verbindung zwischen einem lokalen Netzwerk und Azure](/azure/architecture/reference-architectures/hybrid-networking/considerations).
+Contoso hat [verschiedene Architekturen für das Hybridnetzwerk](/azure/architecture/reference-architectures/hybrid-networking/) zwischen Azure und dem lokalen Rechenzentrum in Erwägung gezogen. Weitere Informationen finden Sie unter [Auswählen einer Lösung zum Herstellen einer Verbindung zwischen einem lokalen Netzwerk und Azure](/azure/architecture/reference-architectures/hybrid-networking/).
 
 Zur Erinnerung: Die lokale Netzwerkinfrastruktur von Contoso besteht zurzeit aus dem Rechenzentrum in New York und lokalen Niederlassungen im Osten der USA. Alle Standorte verfügen über eine Internetverbindung auf Unternehmensniveau. Jede dieser Niederlassungen ist mit dem Rechenzentrum durch einen IPsec-VPN-Tunnel über das Internet verbunden.
 
@@ -357,8 +356,8 @@ Hier sehen Sie, für welche Implementierung von Hybridkonnektivität sich Contos
 
 1. Einrichtung einer neuen Site-to-Site-VPN-Verbindung zwischen dem Contoso-Rechenzentrum in New York und den beiden Azure-Regionen `East US 2` und `Central US`
 2. Datenverkehr aus den Niederlassungen, die virtuelle Netzwerke in Azure als Ziel haben, wird durch das Contoso-Hauptrechenzentrum geleitet.
-3. Beim Hochskalieren der Azure-Bereitstellung richtet Contoso eine Azure ExpressRoute-Verbindung zwischen dem Rechenzentrum und den Azure-Regionen ein. Contoso behält die VPN-Site-to-Site-Verbindung dann nur noch für Failoverzwecke bei.
-    - Erfahren Sie mehr über die [Wahl zwischen einer VPN- und einer ExpressRoute-Hybridlösung](/azure/architecture/reference-architectures/hybrid-networking/considerations).
+3. Beim Hochskalieren der Azure-Bereitstellung richtet Contoso eine Azure ExpressRoute-Verbindung zwischen dem Rechenzentrum und den Azure-Regionen ein. Contoso behält die Site-to-Site-VPN-Verbindung dann nur noch für Failoverzwecke bei.
+    - Erfahren Sie mehr über die [Wahl zwischen einer VPN- und einer ExpressRoute-Hybridlösung](/azure/architecture/reference-architectures/hybrid-networking/).
     - Überprüfen Sie [ExpressRoute-Standorte und -Unterstützung](/azure/expressroute/expressroute-locations-providers).
 
 **Nur VPN:**
@@ -417,7 +416,7 @@ Für das Hub-Spoke-Modell von Contoso muss noch festgelegt werden, wie Datenverk
   - Eingehender Datenverkehr über Site-to-Site-VPN oder ExpressRoute trifft auf die öffentliche IP-Adresse des Azure-VPN-Gateways.
   - Der Datenverkehr wird durch die Firewall geroutet und unterliegt den Firewallregeln.
   - Nach dem Anwenden von Firewallregeln wird der Datenverkehr an einen internen Lastenausgleich (Standard-SKU) im vertrauenswürdigen Subnetz der internen Zone weitergeleitet.
-  - Aus dem vertrauenswürdigen Subnetz ausgehender Datenverkehr, der über VPN an das lokale Rechenzentrum gesendet wird, wird über die Firewall weitergeleitet. Die Regeln werden angewendet, bevor der Datenverkehr über die VPN-Site-to-Site-Verbindung übertragen wird.
+  - Aus dem vertrauenswürdigen Subnetz ausgehender Datenverkehr, der über VPN an das lokale Rechenzentrum gesendet wird, wird über die Firewall weitergeleitet. Die Regeln werden angewendet, bevor der Datenverkehr über die Site-to-Site-VPN-Verbindung übertragen wird.
 
 ### <a name="design-and-set-up-azure-networks"></a>Entwerfen und Einrichten von Azure-Netzwerken
 
@@ -434,11 +433,14 @@ Nach der Einrichtung der Netzwerk- und Routingtopologie ist Contoso jetzt bereit
 `East US 2` ist die primäre Region, die Contoso zum Bereitstellen von Ressourcen und Diensten verwenden wird. Contoso entwirft Netzwerke in dieser Region auf folgende Weise:
 
 - **Hub:** Das virtuelle Hubnetzwerk in `East US 2` gilt als primäre Verbindung zum lokalen Rechenzentrum.
+
 - **Virtuelle Netzwerke:** Mithilfe der virtuellen Spokenetzwerke in `East US 2` können bei Bedarf Workloads isoliert werden. Neben dem virtuellen Hubnetzwerk richtet Contoso zwei virtuelle Spokenetzwerke in `East US 2` ein:
+
   - `VNET-DEV-EUS2`. Dieses virtuelle Netzwerk dient als voll funktionsfähiges Netzwerk für Entwicklungsprojekte des Dev/Test-Teams. Es soll als Pilotbereich für die Produktion fungieren und baut in seiner Funktion auf der Produktionsinfrastruktur auf.
+
   - `VNET-PROD-EUS2`. Azure-IaaS-Produktionskomponenten befinden sich in diesem Netzwerk.
-  
   Jedes virtuelle Netzwerk verfügt über einen eigenen, eindeutigen Adressraum ohne Überlappung. Das Ziel ist es, das Routing ohne Netzwerkadressenübersetzung (Network Address Translation, NAT) zu konfigurieren.
+
 - **Subnetze:** Jedes Netzwerk enthält jeweils ein Subnetz für die einzelnen Logikschichten. Für jedes Subnetz im Produktionsnetzwerk ist ein entsprechendes Subnetz im virtuellen Entwicklungsnetzwerk vorhanden. Darüber hinaus enthält das Produktionsnetzwerk ein Subnetz für Domänencontroller.
 
 In der folgenden Tabelle werden die virtuellen Netzwerke in `East US 2` zusammengefasst.
@@ -470,7 +472,7 @@ Das Dev-Team verwendet das virtuelle Entwicklungsnetzwerk für Pilotprojekte in 
 | Subnet | CIDR | Adressen | In Subnetz |
 | --- | --- | --- | --- |
 | `DEV-FE-EUS2` | `10.245.16.0/22` | 1019 | Front-Ends/Webschicht-VMs |
-| `DEV-APP-EUS2` | `10.245.20.0/22` | 1019 | App-Schicht-VMs |
+| `DEV-APP-EUS2` | `10.245.20.0/22` | 1019 | Anwendungsschicht-VMs |
 | `DEV-DB-EUS2` | `10.245.24.0/23` | 507 | Datenbank-VMs |
 
 #### <a name="subnets-in-the-east-us-2-production-network-vnet-prod-eus2"></a>Subnetze im Produktionsnetzwerk `East US 2` (`VNET-PROD-EUS2`)
@@ -480,7 +482,7 @@ Azure-IaaS-Komponenten befinden sich im Produktionsnetzwerk. Jede Logikschicht v
 | Subnetz | CIDR | Adressen | In Subnetz |
 | --- | --- | --- | --- |
 | `PROD-FE-EUS2` | `10.245.32.0/22` | 1019 | Front-Ends/Webschicht-VMs |
-| `PROD-APP-EUS2` | `10.245.36.0/22` | 1019 | App-Schicht-VMs |
+| `PROD-APP-EUS2` | `10.245.36.0/22` | 1019 | Anwendungsschicht-VMs |
 | `PROD-DB-EUS2` | `10.245.40.0/23` | 507 | Datenbank-VMs |
 | `PROD-DC-EUS2` | `10.245.42.0/24` | 251 | Domänencontroller-VMs |
 
@@ -493,11 +495,13 @@ _Abbildung 20: Hubnetzwerkarchitektur_
 `Central US` ist die sekundäre Region von Contoso. Die Netzwerkarchitektur wird von Contoso innerhalb dieser Region wie folgt gestaltet:
 
 - **Hub:** Das virtuelle Hubnetzwerk in `Central US` gilt als sekundärer Verbindungspunkt zum lokalen Rechenzentrum. Mit dem virtuellen Spokenetzwerk in `Central US` können Workloads bei Bedarf isoliert werden, die getrennt von anderen Spokes verwaltet werden.
+
 - **Virtuelle Netzwerke:** Contoso richtet zwei virtuelle Netzwerke in `Central US` ein:
   - `VNET-PROD-CUS`: Hierbei handelt es sich um ein Produktionsnetzwerk, das als sekundärer Hub angesehen werden kann.
   - `VNET-ASR-CUS`: In diesem virtuellen Netzwerk werden nach einem Failover von der lokalen Infrastruktur VMs erstellt. Alternativ werden dort Azure-VMs ausgeführt, für die ein Failover von der primären in die sekundäre Region durchgeführt wurde. Dieses Netzwerk ähnelt den Produktionsnetzwerken, verfügt aber über keine Domänencontroller.
-  
+
   Jedes virtuelle Netzwerk in der Region besitzt einen eigenen Adressraum ohne Überlappungen. Contoso konfiguriert das Routing ohne NAT.
+
 - **Subnetze:** Das Design der Subnetze ähnelt der in `East US 2`.
 
 In der folgenden Tabelle werden die virtuellen Netzwerke in `Central US` zusammengefasst.
@@ -529,7 +533,7 @@ Neben dem Produktionsnetzwerk in der primären Region (`East US 2`) ist auch ein
 | Subnetz | CIDR | Adressen | In Subnetz |
 | --- | --- | --- | --- |
 | `PROD-FE-CUS` | `10.255.32.0/22` | 1019 | Front-Ends/Webschicht-VMs |
-| `PROD-APP-CUS` | `10.255.36.0/22` | 1019 | App-Schicht-VMs |
+| `PROD-APP-CUS` | `10.255.36.0/22` | 1019 | Anwendungsschicht-VMs |
 | `PROD-DB-CUS` | `10.255.40.0/23` | 507 | Datenbank-VMs |
 | `PROD-DC-CUS` | `10.255.42.0/24` | 251 | Domänencontroller-VMs |
 
@@ -537,12 +541,12 @@ Neben dem Produktionsnetzwerk in der primären Region (`East US 2`) ist auch ein
 
 Das Netzwerk `VNET-ASR-CUS` wird für das Failover zwischen Regionen verwendet. Für Replikation und Failover bei Azure-VMs zwischen den Regionen wird Site Recovery verwendet. Es fungiert darüber hinaus als Contoso-Rechenzentrum mit Azure-Anbindung für geschützte Workloads, die lokal ausgeführt werden, bei einer Notfallwiederherstellung jedoch ein Failover zu Azure ausführen.
 
-Bei `VNET-ASR-CUS` handelt es sich um dasselbe einfache Subnetz wie das virtuelle Produktionsnetzwerk in der Region „USA, Osten 2“, das jedoch ohne ein Subnetz für den Domänencontroller auskommt.
+Bei `VNET-ASR-CUS` handelt es sich um dasselbe einfache Subnetz wie das virtuelle Produktionsnetzwerk in `East US 2`, das jedoch ohne ein Subnetz für den Domänencontroller auskommt.
 
 | Subnet | CIDR | Adressen | In Subnetz |
 | --- | --- | --- | --- |
 | `ASR-FE-CUS` | `10.255.16.0/22` | 1019 | Front-Ends/Webschicht-VMs |
-| `ASR-APP-CUS` | `10.255.20.0/22` | 1019 | App-Schicht-VMs |
+| `ASR-APP-CUS` | `10.255.20.0/22` | 1019 | Anwendungsschicht-VMs |
 | `ASR-DB-CUS` | `10.255.24.0/23` | 507 | Datenbank-VMs |
 
 ![Diagramm: Hubnetzwerkarchitektur](./media/contoso-migration-infrastructure/azure-networks-cus.png)
@@ -653,7 +657,7 @@ Nach der Aktualisierung der Netzwerkeinstellungen sind die Administratoren von C
 
     _Abbildung 32: Hinzufügen der Serverrolle_
 
-8. Nachdem die VM als Domänencontroller konfiguriert und neu gestartet wurde, wird der DNS-Manager geöffnet und der Azure DNS-Resolver für die Weiterleitung konfiguriert. Dies erlaubt dem DC die Weiterleitung von DNS-Abfragen, die er nicht auflösen kann, an das Azure-DNS.
+8. Nachdem die VM als Domänencontroller konfiguriert und neu gestartet wurde, wird der DNS-Manager geöffnet und der Azure DNS-Resolver für die Weiterleitung konfiguriert. Dies erlaubt dem DC die Weiterleitung von DNS-Abfragen, die er nicht auflösen kann, an das Azure-DNS.
 
     ![Screenshot: Konfiguration des DNS-Resolvers für die Weiterleitung](./media/contoso-migration-infrastructure/dns-forwarder.png)
 
@@ -692,7 +696,7 @@ _Abbildung 37: Das Active Directory-Verwaltungscenter_
 
 ## <a name="step-5-plan-for-governance"></a>Schritt 5: Planen der Governance
 
-Azure stellt übergreifend in den Diensten und auf der Azure-Plattform eine Reihe von Governance-Steuerelementen zur Verfügung. Weitere Informationen finden Sie in den [Azure-Governanceoptionen](/azure/security/governance-in-azure).
+Azure stellt übergreifend in den Diensten und auf der Azure-Plattform eine Reihe von Governance-Steuerelementen zur Verfügung. Weitere Informationen finden Sie in den [Azure-Governanceoptionen](/azure/governance/).
 
 Bei der Konfiguration der Identitäts- und Zugriffssteuerung hat Contoso bereits mit der Implementierung einiger Governance- und Sicherheitsaspekte begonnen. Allgemein gibt es drei Bereiche, die berücksichtigt werden müssen:
 
@@ -712,7 +716,7 @@ Contoso möchte mit zwei Richtlinien beginnen: Eine Richtlinie soll sicherstelle
 
 Contoso verwendet die integrierte Richtliniendefinition **Zulässige Standorte** zum Einschränken von Ressourcenregionen.
 
-1. Wählen Sie im Azure-Portal **Alle Dienste** aus, und suchen Sie nach **Richtlinie**.
+1. Wählen Sie im Azure-Portal **Alle Dienste** aus, und suchen Sie nach **Richtlinie** .
 2. Wählen Sie **Zuweisungen** > **Richtlinie zuweisen** aus.
 3. Wählen Sie in der Liste der Richtlinien **Zulässige Standorte** aus.
 4. Legen Sie **Bereich** auf den Namen des Azure-Abonnements fest, und wählen Sie die zwei Regionen in der Zulassungsliste aus.
@@ -740,14 +744,15 @@ _Abbildung 40: Eine SKU-Richtlinie_
 Richtlinien treten sofort in Kraft, und Contoso kann Ressourcen auf Konformität überprüfen. Wählen Sie im Azure-Portal den Link **Compliance** aus. Das Compliance-Dashboard wird angezeigt. Sie können einen Drilldown ausführen, um weitere Details zu erhalten.
 
 ![Screenshot: Compliancedashboard](./media/contoso-migration-infrastructure/policy-compliance.png)
-  
+
+
 _Abbildung 41: Richtlinienkonformität_
 
 ### <a name="set-up-locks"></a>Einrichten von Sperren
 
 Contoso hat lange das ITIL-Framework für die Verwaltung seiner Systeme verwendet. Einer der wichtigsten Aspekte des Frameworks ist die Änderungssteuerung, und Contoso möchte sicherstellen, dass auch eine Änderungssteuerung in der Azure-Bereitstellung implementiert wird.
 
-Contoso [sperrt Ressourcen](/azure/azure-resource-manager/resource-group-lock-resources). Alle Produktions- oder Failoverkomponenten müssen Teil einer Ressourcengruppe sein, die über eine Schreibschutzsperre verfügt. Dies bedeutet, dass die Sperre zum Ändern oder Löschen von Produktionselementen von einem autorisierten Benutzer entfernt werden muss. Produktionsfremde Ressourcengruppen werden mit einer Sperre vom Typ `CanNotDelete` versehen. Damit können autorisierte Benutzer eine Ressource lesen oder ändern, sie jedoch nicht löschen.
+Contoso [sperrt Ressourcen](/azure/azure-resource-manager/management/lock-resources). Alle Produktions- oder Failoverkomponenten müssen Teil einer Ressourcengruppe sein, die über eine Schreibschutzsperre verfügt. Dies bedeutet, dass die Sperre zum Ändern oder Löschen von Produktionselementen von einem autorisierten Benutzer entfernt werden muss. Produktionsfremde Ressourcengruppen werden mit einer Sperre vom Typ `CanNotDelete` versehen. Damit können autorisierte Benutzer eine Ressource lesen oder ändern, sie jedoch nicht löschen.
 
 ### <a name="set-up-tagging"></a>Einrichten des Tagging
 
@@ -775,12 +780,12 @@ Nach der Tagerstellung erstellt Contoso neue Richtliniendefinitionen und -zuweis
 
 ## <a name="step-6-consider-security"></a>Schritt 6: Planen der Sicherheit
 
-Sicherheit ist in der Cloud entscheidend, und Azure bietet eine große Bandbreite an Sicherheitstools und -funktionen. Diese unterstützen Sie bei der Erstellung sicherer Lösungen auf der sicheren Azure-Plattform. Unter [Vertrauen Sie Ihrer Cloud](https://azure.microsoft.com/overview/trusted-cloud) erfahren Sie mehr über das Thema Sicherheit in Azure.
+Sicherheit ist in der Cloud entscheidend, und Azure bietet eine große Bandbreite an Sicherheitstools und -funktionen. Diese unterstützen Sie bei der Erstellung sicherer Lösungen auf der sicheren Azure-Plattform. Unter [Vertrauen Sie Ihrer Cloud](https://azure.microsoft.com/overview/trusted-cloud/) erfahren Sie mehr über das Thema Sicherheit in Azure.
 
 Für Contoso ist eine Reihe von Hauptaspekten zu berücksichtigen:
 
-- [Azure Security Center](/azure/security-center/security-center-intro) bietet einheitliche Funktionen für die Sicherheitsverwaltung und Azure Advanced Threat Protection für Hybrid Cloud-Workloads. Hiermit können Sie Sicherheitsrichtlinien auf Ihre Workloads anwenden, die Angriffsfläche für Bedrohungen verringern sowie Angriffe erkennen und darauf reagieren.
-- Eine [Netzwerksicherheitsgruppe (NSG)](/azure/virtual-network/security-overview) filtert den Netzwerkdatenverkehr anhand einer Liste von Sicherheitsregeln, die den Netzwerkdatenverkehr zu Ressourcen, die mit virtuellen Azure-Netzwerken verbunden sind, zulassen oder blockieren.
+- [Azure Security Center](/azure/security-center/security-center-introduction) bietet einheitliche Funktionen für die Sicherheitsverwaltung und Azure Advanced Threat Protection für Hybrid Cloud-Workloads. Hiermit können Sie Sicherheitsrichtlinien auf Ihre Workloads anwenden, die Angriffsfläche für Bedrohungen verringern sowie Angriffe erkennen und darauf reagieren.
+- Eine [Netzwerksicherheitsgruppe (NSG)](/azure/virtual-network/network-security-groups-overview) filtert den Netzwerkdatenverkehr anhand einer Liste von Sicherheitsregeln, die den Netzwerkdatenverkehr zu Ressourcen, die mit virtuellen Netzwerken in Azure verbunden sind, zulassen oder blockieren.
 - [Azure Disk Encryption](/azure/security/fundamentals/encryption-atrest) unterstützt Sie bei der Verschlüsselung der Datenträger Ihrer Windows- und Linux-IaaS-VMs.
 
 ### <a name="work-with-the-azure-security-center"></a>Arbeiten mit dem Azure Security Center

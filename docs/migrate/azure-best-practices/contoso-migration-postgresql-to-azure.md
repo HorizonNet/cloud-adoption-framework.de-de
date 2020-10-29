@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 9f9dfee1aca21acbbf0f840b79d61501ad90c73a
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 6dca1ce7cbd13630207ba04a8298769263145e67
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603863"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334645"
 ---
 <!-- cSpell:ignore BYOK postgres psql dvdrental vpngateways -->
 
@@ -48,7 +48,7 @@ Nachdem die Ziele und Anforderungen formuliert wurden, entwirft und prüft Conto
 
 ### <a name="current-environment"></a>Aktuelle Umgebung
 
-PostgreSQL 9.6.7 wird auf einem physischen Linux-Computer (`sql-pg-01.contoso.com`) im Rechenzentrum von Contoso ausgeführt. Contoso verfügt bereits über ein Azure-Abonnement mit einem virtuellen Site-to-Site-Gateway zum lokalen Netzwerk des Rechenzentrums.
+PostgreSQL 9.6.7 wird auf einem physischen Linux-Computer (`sql-pg-01.contoso.com`) im Rechenzentrum von Contoso ausgeführt. Contoso verfügt bereits über ein Azure-Abonnement mit einem Site-to-Site-VPN-Gateway zum lokalen Netzwerk des Rechenzentrums.
 
 ### <a name="proposed-solution"></a>Vorgeschlagene Lösung
 
@@ -94,7 +94,7 @@ Bevor Contoso seine PostgreSQL-Datenbanken migrieren kann, muss sichergestellt s
 
 Es werden nur Migrationen zur gleichen oder einer höheren Version unterstützt. Beispielsweise wird die Migration von PostgreSQL 9.5 zu Azure Database for PostgreSQL 9.6 oder 10 unterstützt, aber nicht die Migration von PostgreSQL 11 zu PostgreSQL 9.6.
 
-Microsoft strebt in Azure Database for PostgreSQL (Einzelserver) die Unterstützung von _n-2_-Versionen der PostgreSQL-Engine an. Das bedeutet, dass die aktuelle Hauptversion in Azure (_n_) und die beiden vorherigen Hauptversionen ( _-2_) unterstützt werden.
+Microsoft strebt in Azure Database for PostgreSQL (Einzelserver) die Unterstützung von _n-2_ -Versionen der PostgreSQL-Engine an. Das bedeutet, dass die aktuelle Hauptversion in Azure ( _n_ ) und die beiden vorherigen Hauptversionen ( _-2_ ) unterstützt werden.
 
 Aktuelle Informationen zu unterstützten Versionen finden Sie unter [Unterstützte PostgreSQL-Hauptversionen](/azure/postgresql/concepts-supported-versions).
 
@@ -129,22 +129,24 @@ Contoso hat sich für die Verwendung von Azure Database Migration Service entsch
 
 Zur Vorbereitung wird ein virtuelles Netzwerk eingerichtet, um auf die Datenbank zuzugreifen. Zum Erstellen einer virtuellen Netzwerkverbindung mit [VPN-Gateways](/azure/vpn-gateway/vpn-gateway-about-vpngateways) stehen mehrere Methoden zur Auswahl.
 
+<!-- docutune:ignore "Azure Database Migration Services" -->
+
 ### <a name="create-an-azure-database-migration-service-instance"></a>Erstellen einer Instanz von Azure Database Migration Service
 
 1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Ressource erstellen** aus.
-1. Suchen Sie nach **Azure Database Migration Services**, und wählen Sie den Eintrag aus.
-1. Wählen Sie **+ Hinzufügen**.
+1. Suchen Sie nach **Azure Database Migration Services** , und wählen Sie den Eintrag aus.
+1. Wählen Sie **+ Hinzufügen** .
 1. Wählen Sie das Abonnement und die Ressourcengruppe für den Dienst aus.
 1. Geben Sie einen Namen für die Instanz ein.
 1. Wählen Sie den Standort aus, der dem Contoso-Rechenzentrum oder dem VPN-Gateway am nächsten ist.
 1. Wählen Sie als Dienstmodus **Azure** aus.
 1. Wählen Sie einen Tarif.
-1. Klicken Sie auf **Überprüfen + erstellen**.
+1. Klicken Sie auf **Überprüfen + erstellen** .
 
     ![Screenshot des Bildschirms zum Erstellen des Migrationsdiensts](./media/contoso-migration-postgresql-to-azure/azure_migration_service_create.png)
     _Abbildung 3: Überprüfen und erstellen_
 
-1. Klicken Sie auf **Erstellen**.
+1. Klicken Sie auf **Erstellen** .
 
 ### <a name="create-an-azure-database-for-postgresql-instance"></a>Erstellen einer Azure Database for PostgreSQL-Instanz
 
@@ -212,12 +214,12 @@ Zur Vorbereitung wird ein virtuelles Netzwerk eingerichtet, um auf die Datenbank
     ![Screenshot: Auswählen von Zielinformationen](./media/contoso-migration-postgresql-to-azure/azure_migration_service_target.png)
     _Abbildung 7: Auswählen der Zielinformationen_
 
-1. Wählen Sie die zu migrierenden Datenbanken aus. Das Schema für jede Datenbank sollte zuvor migriert worden sein. Klicken Sie dann auf **Speichern**.
+1. Wählen Sie die zu migrierenden Datenbanken aus. Das Schema für jede Datenbank sollte zuvor migriert worden sein. Klicken Sie dann auf **Speichern** .
 
     ![Screenshot: Auswählen von Datenbanken](./media/contoso-migration-postgresql-to-azure/azure_migration_service_db.png)
     _Abbildung 8: Auswählen von Datenbanken_
 
-1. Konfigurieren Sie die erweiterten Einstellungen, und wählen Sie anschließend **Speichern**.
+1. Konfigurieren Sie die erweiterten Einstellungen, und wählen Sie anschließend **Speichern** .
 
     ![Screenshot: Konfigurieren erweiterter Einstellungen](./media/contoso-migration-postgresql-to-azure/azure_migration_service_advanced.png)
     _Abbildung 9: Konfigurieren der erweiterten Einstellungen_
@@ -234,7 +236,7 @@ Zur Vorbereitung wird ein virtuelles Netzwerk eingerichtet, um auf die Datenbank
     _Abbildung 11: Überwachen der Migration, um die Übernahme zu starten_
 
 1. Beenden Sie alle Transaktionen vom Quellserver.
-1. Aktivieren Sie das Kontrollkästchen **Bestätigen**, und wählen Sie dann **Anwenden** aus.
+1. Aktivieren Sie das Kontrollkästchen **Bestätigen** , und wählen Sie dann **Anwenden** aus.
 
     ![Screenshot: Ausführen der Übernahme](./media/contoso-migration-postgresql-to-azure/azure_migration_service_cutover.png)
     _Abbildung 12: Ausführen der Übernahme_

@@ -7,14 +7,16 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f69eac9136a43dbc5790c969fc10e3b0d8057d5a
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 18c79fc5639588e4af3a75daf2e77fe39a6287cb
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775937"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334815"
 ---
-<!-- cSpell:ignore Netezza Informatica Talend InMon zonemap CBTs Attunity Wherescape nzlua CBT NZPLSQL DELIM TABLENAME ORC Parquet nzsql nzunload mpp -->
+<!-- docutune:casing Informatica Talend Inmon Attunity Qlik nzLua CBT CBTs NZPLSQL DELIM TABLENAME ORC Parquet nzsql nzunload mpp -->
+
+<!-- cSpell:ignore Informatica Talend Qlik CBTs NZPLSQL CHARINDEX DATEDIFF DELIM STRPOS TABLENAME nzsql nzunload zonemap -->
 
 # <a name="azure-synapse-analytics-solutions-and-migration-for-netezza"></a>Azure Synapse Analytics-Lösungen und Migrieren von Netezza
 
@@ -22,9 +24,9 @@ Da IBM die Unterstützung für Netezza einstellt, erwägen viele Unternehmen, di
 
 Azure Synapse Analytics ist ein unbegrenzter Analysedienst, der Data Warehousing auf Unternehmensniveau mit Big Data-Analysen vereint. Er ermöglicht flexible Datenabfragen nach Ihren Vorstellungen und im großen Stil mithilfe von serverlosen On-Demand-Ressourcen oder bereitgestellten Ressourcen. In diesem Artikel erfahren Sie, wie Sie die Migration von einem Netezza-Legacysystem zu Azure Synapse planen.
 
-Netezza und Azure Synapse ähneln sich insofern, als dass es sich bei beiden Plattformen um SQL-Datenbanken handelt, die für die massive Parallelverarbeitung konzipiert wurden, um eine hohe Abfrageleistung für große Datenmengen zu erzielen. Dennoch unterscheiden sie sich in drei zentralen Aspekten:
+Netezza und Azure Synapse ähneln sich insofern, als dass es sich bei beiden Plattformen um SQL-Datenbanken handelt, die für die massive Parallelverarbeitung konzipiert wurden, um eine hohe Abfrageleistung für große Datenmengen zu erzielen. Dennoch unterscheiden sie sich in zentralen Aspekten:
 
-- Legacysysteme von Netezza werden lokal installiert und verwenden proprietäre Hardware. Azure Synapse ist hingegen cloudbasiert und basiert auf Azure-Speicher- und Computeressourcen.
+- Legacysysteme von Netezza werden lokal installiert und verwenden proprietäre Hardware. Azure Synapse ist hingegen cloudbasiert und basiert auf Azure-Computeressourcen und -Speicherressourcen.
 - Ein Upgrade einer Netezza-Konfiguration ist eine umfangreiche Aufgabe, die zusätzliche physische Hardware und eine potenziell langwierige Neukonfiguration oder das Sichern und Neuladen der Datenbank erfordert. In Azure Synapse sind die Speicher- und Computeressourcen getrennt. Dank der elastischen Skalierbarkeit von Azure können Sie flexibel hoch- und herunterskalieren.
 - Da kein physisches System mehr unterstützt werden muss, kann Azure Synapse nach Bedarf angehalten oder in der Größe angepasst werden, um die Ressourcennutzung und die Kosten zu senken. Mit Azure haben Sie Zugriff auf eine weltweit verfügbare, äußerst sichere und skalierbare Cloudumgebung, die nicht nur Azure Synapse sondern auch ein Ökosystems aus unterstützenden Tools und Funktionen beinhaltet.
 
@@ -60,7 +62,7 @@ Unabhängig von den Treibern und dem ausgewählten Migrationsumfang stehen Ihnen
 
   Dieser Ansatz eignet sich gut für vorhandene Teradata-Umgebungen, in denen ein einzelner Data Mart migriert werden soll, und für Szenarios, in denen die Daten bereits in einem gut durchdachten Stern- oder Schneeflockenschema vorliegen. Dieser Migrationstyp ist ebenfalls gut geeignet, wenn der Wechsel in eine modernere Cloudumgebung unter Zeit- und Kostendruck stattfindet.
 
-- **Mehrstufiger Ansatz unter Einbindung von Änderungen:** Wenn ein Legacywarehouse im Laufe der Zeit weiterentwickelt wurde, müssen Sie das Data Warehouse möglicherweise überarbeiten, um die erforderliche Leistung aufrechtzuerhalten oder neue Datenquellen wie IoT-Streams zu unterstützen. Im Rahmen dieser Überarbeitung kann beispielsweise eine Migration zu Azure Synapse durchgeführt werden, um von den bekannten Vorteilen einer skalierbaren Cloudumgebung zu profitieren. Im Zuge dessen muss unter Umständen das zugrunde liegende Datenmodell geändert werden, z. B. durch Verschieben eines Inmon-Modells in einen Azure-Datentresor.
+- **Mehrstufiger Ansatz unter Einbindung von Änderungen:** Wenn ein Legacywarehouse im Laufe der Zeit weiterentwickelt wurde, müssen Sie das Data Warehouse möglicherweise überarbeiten, um die erforderliche Leistung aufrechtzuerhalten oder neue Datenquellen wie IoT-Streams zu unterstützen. Im Rahmen dieser Überarbeitung kann beispielsweise eine Migration zu Azure Synapse durchgeführt werden, um von den bekannten Vorteilen einer skalierbaren Cloudumgebung zu profitieren. Dieser Prozess kann das Ändern des zugrunde liegenden Datenmodells wie das Verschieben eines Inmon-Modells in Azure Data Vault beinhalten.
 
   Es wird jedoch empfohlen, das bestehende Datenmodell bei der ersten Migration unverändert zu Azure zu verschieben. Anschließend können Sie sich die Leistung und Flexibilität der Azure-Dienste zunutze machen und die Änderungen ohne Auswirkungen auf das Quellsystem umsetzen.
 
@@ -102,12 +104,12 @@ In Netezza werden einige Datenbankobjekte implementiert, die in Azure Synapse ni
   - `INTEGER`-Spalten mit einer Länge von höchstens 8 Byte
   - Temporale Spalten, einschließlich `DATE`, `TIME` und `TIMESTAMP`
   - `CHAR`-Spalten, wenn diese Teil einer materialisierten Sicht und der `ORDER BY`-Klausel sind
-  
+
   Mit dem Hilfsprogramm „nz_zonemap“ können Sie herausfinden, welche Spalten über Zonenzuordnungen verfügen. Das Hilfsprogramm ist Teil des NZ-Toolkits.
 
   In Azure Synapse werden keine Zonenzuordnungen verwendet. Es ist jedoch möglich, ähnliche Ergebnisse mit benutzerdefinierten Indextypen oder Partitionierungen zu erzielen.
 
-- **Gruppierte Basistabellen:** Die häufigste gruppierte Basistabelle in Netezza ist die Faktentabelle, die Milliarden von Datensätzen enthält. Das Scannen einer sehr großen Tabelle erfordert eine hohe Verarbeitungszeit, da ein vollständiger Tabellenscan erforderlich sein könnte, um relevante Datensätze zu erhalten. Durch das Organisieren von Datensätzen in restriktiven gruppierten Basistabellen können Datensätze in Netezza in derselben oder nahe gelegenen Erweiterungen gruppiert werden. Bei diesem Vorgang werden auch Zonenzuordnungen erstellt, die die Leistung durch eine Verkleinerung der zu scannenden Datenmenge verbessern.
+- **Gruppierte Basistabellen (Clustered Base Tables, CBT):** Die häufigste gruppierte Basistabelle in Netezza ist die Faktentabelle, die Milliarden von Datensätzen enthält. Das Scannen einer sehr großen Tabelle erfordert eine hohe Verarbeitungszeit, da ein vollständiger Tabellenscan erforderlich sein könnte, um relevante Datensätze zu erhalten. Durch das Organisieren von Datensätzen in restriktiven gruppierten Basistabellen können Datensätze in Netezza in derselben oder nahe gelegenen Erweiterungen gruppiert werden. Bei diesem Vorgang werden auch Zonenzuordnungen erstellt, die die Leistung durch eine Verkleinerung der zu scannenden Datenmenge verbessern.
 
   In Azure Synapse können Sie ein ähnliches Ergebnis durch Partitionierungen oder durch die Verwendung anderer Indextypen erzielen.
 
@@ -119,7 +121,7 @@ In Netezza werden einige Datenbankobjekte implementiert, die in Azure Synapse ni
 
   Einige Drittanbieter bieten Tools und Dienste an, mit denen Migrationstasks automatisiert werden können, einschließlich der Datentypzuordnung. Wenn in der Netezza-Umgebung bereits ein ETL-Tool von Drittanbietern wie Informatica oder Talend verwendet wird, können Sie damit alle erforderlichen Datentransformationen implementieren.
 
-- **Syntax der SQL-Datenbearbeitungssprache:** Zwischen der Syntax der SQL-Datenbearbeitungssprache von Netezza SQL und Azure Synapse bestehen einige Unterschiede, die Sie beachten sollten.
+- **Syntax der SQL-Datenbearbeitungssprache (DML):** Zwischen der Syntax der SQL-Datenbearbeitungssprache von Netezza SQL und Azure Synapse bestehen einige Unterschiede, die Sie beachten sollten.
 
   Nachstehend finden Sie eine Übersicht über die wichtigsten Funktionen und die Unterschiede:
 
@@ -133,9 +135,7 @@ In Netezza werden einige Datenbankobjekte implementiert, die in Azure Synapse ni
 
     `SELECT CHARINDEX('def', 'abcdef') ...`
 
-  - `AGE`: Netezza unterstützt den `AGE`-Operator, um das Intervall zwischen zwei temporalen Werten zu ermitteln, z. B. zwischen Zeitstempeln und Datumsangaben.
-  
-     Dies ist ein Beispiel aus Netezza:
+  - `AGE`: Netezza unterstützt den `AGE`-Operator, um das Intervall zwischen zwei temporalen Werten zu ermitteln, z. B. zwischen Zeitstempeln und Datumsangaben. Beispiel:
 
     `SELECT AGE ('23-03-1956', '01-01-2019') FROM ...`
 
@@ -174,20 +174,20 @@ Berücksichtigen Sie die folgenden Informationen bei der Planung der Metadaten- 
 - **Generieren von DDL-Anweisungen (Data Definition Language, Datendefinitionssprache):** Vorhandene `CREATE TABLE`- und `CREATE VIEW`-Skripts in Netezza können bearbeitet werden, um die entsprechenden Definitionen zu erstellen (bei Bedarf mit geänderten Datentypen, wie zuvor beschrieben). Diese Aufgabe umfasst in der Regel das Entfernen oder Ändern von Netezza-spezifischen Klauseln, z. B. `ORGANIZE ON`.
 
   In Netezza werden die Informationen, die die aktuellen Tabellen- und Sichtdefinitionen angeben, in den Systemkatalogtabellen verwaltet. Systemkatalogtabellen sind die beste Quelle für diese Informationen, weil sie mit hoher Wahrscheinlichkeit auf dem neuesten Stand und vollständig sind. Die benutzerseitig verwaltete Dokumentation ist möglicherweise nicht mit den aktuellen Tabellendefinitionen synchron.
-  
-  Sie können mithilfe eines Hilfsprogramms wie „nz_ddl_table“ in Netezza auf Systemkatalogtabellen zugreifen. Mithilfe dieser Tabellen können Sie `CREATE TABLE`-DDL-Anweisungen generieren, die Sie dann für die entsprechenden Tabellen in Azure Synapse bearbeiten können. Migrations- und ETL-Tools von Drittanbietern verwenden dieselben Kataloginformationen, um dasselbe Ergebnis zu erzielen.
+
+Sie können mithilfe eines Hilfsprogramms wie „nz_ddl_table“ in Netezza auf Systemkatalogtabellen zugreifen. Mithilfe dieser Tabellen können Sie `CREATE TABLE`-DDL-Anweisungen generieren, die Sie dann für die entsprechenden Tabellen in Azure Synapse bearbeiten können. Migrations- und ETL-Tools von Drittanbietern verwenden dieselben Kataloginformationen, um dasselbe Ergebnis zu erzielen.
 
 - **Datenextraktion:** Mithilfe von standardmäßig verfügbaren Netezza-Hilfsprogrammen wie „nzsql“ und „nzunload“ sowie mithilfe von externen Tabellen können Sie Rohdaten extrahieren, um diese aus einer vorhandenen Netezza-Tabelle in eine durch Trennzeichen getrennte Flatfile zu migrieren. Komprimieren Sie die Dateien mithilfe von gzip, und nutzen Sie anschließend AzCopy oder einen Azure-Datentransportdienst wie Azure Data Box, um die Dateien in Azure Blob Storage hochzuladen.
 
   Während einer Migration müssen Daten so effizient wie möglich extrahiert werden. In Bezug auf Netezza wird empfohlen, externe Tabellen zu verwenden, weil dies die schnellste Methode ist. Sie können mehrere Extraktionen parallel ausführen, um den Durchsatz der Datenextraktion zu maximieren.
-  
-  Im Folgenden finden Sie ein einfaches Beispiel für die Extraktion einer externen Tabelle:
+
+Im Folgenden finden Sie ein einfaches Beispiel für die Extraktion einer externen Tabelle:
 
   `CREATE EXTERNAL TABLE '/tmp/export_tab1.CSV' USING (DELIM ',') AS SELECT * from <TABLE-NAME>;`
 
    Wenn Ihre Netzwerkbandbreite ausreichend hoch ist, können Sie Daten mit Azure Data Factory-Prozessen, mit einer Datenmigration über einen Drittanbieter oder mit ETL-Produkten direkt aus einem lokalen Netezza-System in Azure Synapse-Tabellen oder einen Azure-Datenspeicher extrahieren.
 
-   Empfohlene Datenformate für die extrahierten Daten sind *durch Trennzeichen getrennte Textdateien* (auch CSV-Dateien genannt) oder ORC- oder Parquet-Dateien (Optimized Row Columnar).
+   Empfohlene Datenformate für die extrahierten Daten sind _durch Trennzeichen getrennte Textdateien_ (auch CSV-Dateien genannt) oder ORC- oder Parquet-Dateien (Optimized Row Columnar).
 
 Ausführlichere Informationen zum Migrieren von Daten und ETL-Prozessen aus einer Netezza-Umgebung finden Sie in der Netezza-Dokumentation über ETL-Prozesse und das Laden bei der Datenmigration.
 

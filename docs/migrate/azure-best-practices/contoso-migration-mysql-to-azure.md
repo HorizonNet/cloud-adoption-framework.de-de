@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 1a331e02dcf51123fbf0c0977cf75e9dfd4bae81
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 76e323de345cdb9d1c03edaedbbf72b5fa441da1
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775869"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334662"
 ---
 <!-- cSpell:ignore mysqldump InnoDB binlog Navicat -->
 
@@ -57,9 +57,6 @@ Verwenden von Azure Database Migration Service, um die Datenbank zu einer Azur
 
 ### <a name="database-considerations"></a>Überlegungen zu Datenbanken
 
-<!-- TODO: Verify GraphDBMS term -->
-<!-- docutune:casing ColumnStore "Graph DBMS" -->
-
 Im Rahmen des Lösungsentwurfs hat Contoso die in Azure verfügbaren Features für das Hosting der MySQL-Daten geprüft. Die folgenden Überlegungen haben dabei im Unternehmen zu der Entscheidung für Azure geführt:
 
 - Ähnlich wie Azure SQL-Datenbank unterstützt auch Azure Database for MySQL [Firewallregeln](/azure/mysql/concepts-firewall-rules).
@@ -67,7 +64,7 @@ Im Rahmen des Lösungsentwurfs hat Contoso die in Azure verfügbaren Features f�
 - Azure Database for MySQL verfügt über die erforderlichen Compliance- und Datenschutzzertifizierungen, die Contoso für seine Prüfer einhalten muss.
 - Die Verarbeitungsleistung für Berichte und Anwendung wird durch die Verwendung von Lesereplikaten verbessert.
 - Der Dienst kann mithilfe von [Azure Private Link](/azure/mysql/concepts-data-access-security-private-link) nur für den internen Netzwerkdatenverkehr (kein öffentlicher Zugriff) verfügbar gemacht werden.
-- Contoso hat entschieden, nicht zu Azure Database for MySQL zu wechseln, da möglicherweise in Zukunft das MariaDB ColumnStore- und Graph DBMS-Datenbankmodell verwendet werden soll.
+- Contoso hat entschieden, nicht zu Azure Database for MySQL zu wechseln, da in Zukunft möglicherweise das MariaDB ColumnStore- und Graph-Datenbankmodell verwendet werden soll.
 - Abgesehen von den MySQL-Features ist Contoso ein Befürworter echter Open-Source-Projekte und entscheidet sich gegen den Einsatz von MySQL.
 - Die [Bandbreite und Wartezeit](/azure/vpn-gateway/vpn-gateway-about-vpngateways) zwischen der Anwendung und der Datenbank ist je nach ausgewähltem Gateway (Azure ExpressRoute oder Site-to-Site-VPN) ausreichend.
 
@@ -93,9 +90,9 @@ Bevor Sie die MySQL-Datenbanken migrieren können, müssen Sie sicherstellen, da
 
 #### <a name="supported-versions"></a>Unterstützte Versionen
 
-MySQL verwendet das Schema X.Y.Z für die Versionsverwaltung. Beispiel: X ist die Hauptversion, Y die Nebenversion und Z die Patchversion.
+MySQL verwendet das Schema _x.y.z_ für die Versionsverwaltung. _x_ steht dabei für die Hauptversion, _y_ für die Nebenversion und _z_ für die Patchversion.
 
-Azure unterstützt derzeit 10.2.25 und 10.3.16.
+Azure unterstützt derzeit die MySQL-Versionen 10.2.25 und 10.3.16.
 
 Upgrades für Patchupdates werden von Azure automatisch verwaltet. Beispiele sind 10.2.21 bis 10.2.23. Upgrades von Neben- und Hauptversionen werden nicht unterstützt. Ein Upgrade von MySQL 10.2 auf MySQL 10.3 wird beispielsweise nicht unterstützt. Wenn Sie von 10.2 auf 10.3 upgraden möchten, führen Sie eine Sicherung und dann die Wiederherstellung auf einem Server aus, der mit der neuen Engine-Version erstellt wurde.
 
@@ -117,7 +114,7 @@ Zusammenfassend müssen die folgenden Aufgaben durchgeführt werden:
 
 - Sicherstellen, dass alle Voraussetzungen für die Migration erfüllt sind:
   - Die Version der Quelle des MySQL-Datenbankservers muss mit der Version übereinstimmen, die von Azure Database for MySQL unterstützt wird. Azure Database for MySQL unterstützt die MySQL Community Edition, die InnoDB-Speicher-Engine sowie die Migration zwischen Quellen und Zielen mit derselben Version.
-  - Aktivieren Sie die binäre Protokollierung in `my.ini` (Windows) oder `my.cnf` (Unix). Wenn die binäre Protokollierung nicht aktiviert wird, führt dies zu folgendem Fehler im Migrations-Assistenten: „Fehler bei der binären Protokollierung. Die Variable binlog_row_image weist den Wert 'minimal' auf. Ändern Sie diesen in 'full'.“ Weitere Informationen finden Sie auf der [MySQL-Website](https://go.microsoft.com/fwlink/?linkid=873009`).
+  - Aktivieren Sie die binäre Protokollierung in `my.ini` (Windows) oder `my.cnf` (Unix). Wenn die binäre Protokollierung nicht aktiviert wird, führt dies zu folgendem Fehler im Migrations-Assistenten: „Fehler bei der binären Protokollierung. Die Variable binlog_row_image weist den Wert 'minimal' auf. Ändern Sie diesen in 'full'.“ Weitere Informationen finden Sie in der [MySQL-Dokumentation](https://dev.mysql.com/doc/refman/5.7/en/replication-options-binary-log.html).
   - Der Benutzer muss über die `ReplicationAdmin`-Rolle verfügen.
   - Migrieren Sie die Datenbankschemas ohne Fremdschlüssel und Trigger.
 - Erstellen Sie ein virtuelles Netzwerk, das über ExpressRoute oder VPN mit Ihrem lokalen Netzwerk verbunden ist.
@@ -159,7 +156,7 @@ Contoso muss Folgendes durchführen:
 
 ### <a name="backups"></a>Backups
 
-Mithilfe der Geowiederherstellung sicherstellen, dass die Azure Database for MySQL-Instanzen gesichert sind. Auf diese Weise können im Falle eines regionalen Ausfalls Sicherungen in Regionspaaren verwendet werden.
+Mithilfe der Geowiederherstellung kann sichergestellt werden, dass die Azure Database for MySQL-Instanzen gesichert sind, sodass Sicherungen im Falle eines regionalen Ausfalls in einer gekoppelten Region verwendet werden können.
 
 > [!IMPORTANT]
 > Stellen Sie sicher, dass die Azure Database for MySQL-Ressource über eine Ressourcensperre verfügt und nicht gelöscht werden kann. Gelöschte Server können nicht wiederhergestellt werden.

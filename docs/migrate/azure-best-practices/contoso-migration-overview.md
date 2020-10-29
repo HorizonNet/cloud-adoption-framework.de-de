@@ -7,16 +7,16 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6b790b9c8f99fb3f2a7bf55757792d019b3dfdb3
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 5490fe413db98fcccab94905e70d0ac601da9f5e
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775359"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334628"
 ---
 # <a name="overview-of-application-migration-examples-for-azure"></a>Übersicht über Beispiele für eine Anwendungsmigration für Azure
 
-Dieser Abschnitt des Cloud Adoption Framework für Azure enthält Beispiele für mehrere gängige Migrationsszenarien und zeigt, wie Sie lokale Infrastrukturen zu [Microsoft Azure](https://azure.microsoft.com/overview/what-is-azure) migrieren können.
+Dieser Abschnitt des Cloud Adoption Framework für Azure enthält Beispiele für mehrere gängige Migrationsszenarien und zeigt, wie Sie lokale Infrastrukturen zu [Microsoft Azure](https://azure.microsoft.com/overview/what-is-azure/) migrieren können.
 
 ## <a name="introduction"></a>Einführung
 
@@ -36,10 +36,10 @@ Die Strategien für die Migration zur Cloud lassen sich grob in vier Muster unte
 
 | Muster | Definition | Verwendung |
 | --- | --- | --- |
-| **Zuweisen eines neuen Hosts** | Diese Option wird häufig als Lift & Shift-Migration bezeichnet und erfordert keine Codeänderungen. Damit können Sie Ihrer vorhandenen Anwendungen schnell zu Azure migrieren. Die einzelnen Anwendungen werden jeweils unverändert migriert, um von den Vorteilen der Cloud zu profitieren und gleichzeitig die mit Codeänderungen verbundenen Risiken und Kosten zu vermeiden. | Wenn Sie Anwendungen schnell in die Cloud verschieben müssen. <br><br> Wenn Sie eine Anwendung verschieben möchten, ohne sie zu ändern. <br><br> Wenn Ihre Anwendungen so konzipiert sind, dass sie nach der Migration die [Azure-IaaS](https://azure.microsoft.com/overview/what-is-iaas)-Skalierbarkeit (Infrastructure-as-a-Service) nutzen können. <br><br> Wenn Anwendungen für Ihr Unternehmen wichtig sind, aber Anwendungsfunktionen nicht sofort geändert werden müssen. |
-| **Umgestalten** | Die häufig als „Umpacken“ bezeichnete Umgestaltung erfordert nur minimale Änderungen der Anwendungen, sodass sie eine Verbindung mit [Azure-PaaS](https://azure.microsoft.com/overview/what-is-paas) (Platform-as-a-Service) herstellen und Cloudangebote nutzen können. <br><br> Sie könnten Ihre vorhandenen Anwendungen beispielsweise zu Azure App Service oder Azure Kubernetes Service (AKS) migrieren. <br><br> Alternativ könnten Sie relationale und nicht relationale Datenbanken für Azure SQL Managed Instance, Azure Database for MySQL, Azure Database for PostgreSQL und Azure Cosmos DB umgestalten. | Wenn Ihre Anwendung einfach zum Arbeiten in Azure umgepackt werden kann. <br><br> Wenn Sie innovative, von Azure bereitgestellte DevOps-Methoden anwenden möchten oder erwägen, DevOps mit einer Containerstrategie für Workloads zu verwenden. <br><br> Für die Umgestaltung müssen Sie die Portabilität Ihrer vorhandenen Codebasis und das verfügbare Entwicklungs-Know-how berücksichtigen. |
+| **Zuweisen eines neuen Hosts** | Diese Option wird häufig als Lift & Shift-Migration bezeichnet und erfordert keine Codeänderungen. Damit können Sie Ihrer vorhandenen Anwendungen schnell zu Azure migrieren. Die einzelnen Anwendungen werden jeweils unverändert migriert, um von den Vorteilen der Cloud zu profitieren und gleichzeitig die mit Codeänderungen verbundenen Risiken und Kosten zu vermeiden. | Wenn Sie Anwendungen schnell in die Cloud verschieben müssen. <br><br> Wenn Sie eine Anwendung verschieben möchten, ohne sie zu ändern. <br><br> Wenn Ihre Anwendungen so konzipiert sind, dass sie nach der Migration die [Azure-IaaS](https://azure.microsoft.com/overview/what-is-iaas/)-Skalierbarkeit (Infrastructure-as-a-Service) nutzen können. <br><br> Wenn Anwendungen für Ihr Unternehmen wichtig sind, aber Anwendungsfunktionen nicht sofort geändert werden müssen. |
+| **Umgestalten** | Die häufig als „Umpacken“ bezeichnete Umgestaltung erfordert nur minimale Änderungen der Anwendungen, sodass sie eine Verbindung mit [Azure-PaaS](https://azure.microsoft.com/overview/what-is-paas/) (Platform-as-a-Service) herstellen und Cloudangebote nutzen können. <br><br> Sie könnten Ihre vorhandenen Anwendungen beispielsweise zu Azure App Service oder Azure Kubernetes Service (AKS) migrieren. <br><br> Alternativ könnten Sie relationale und nicht relationale Datenbanken für Azure SQL Managed Instance, Azure Database for MySQL, Azure Database for PostgreSQL und Azure Cosmos DB umgestalten. | Wenn Ihre Anwendung einfach zum Arbeiten in Azure umgepackt werden kann. <br><br> Wenn Sie innovative, von Azure bereitgestellte DevOps-Methoden anwenden möchten oder erwägen, DevOps mit einer Containerstrategie für Workloads zu verwenden. <br><br> Für die Umgestaltung müssen Sie die Portabilität Ihrer vorhandenen Codebasis und das verfügbare Entwicklungs-Know-how berücksichtigen. |
 | **Überarbeiten** | Beim Überarbeiten für die Migration liegt der Fokus auf dem Ändern und Erweitern von Anwendungsfunktionalität und Codebasis, um die Anwendungsarchitektur für die Cloudskalierbarkeit zu optimieren. <br><br> Sie könnten z.B. eine monolithische Anwendung in eine Gruppe von Microservices unterteilen, die zusammenarbeiten und einfach zu skalieren sind. <br><br> Sie können auch relationale und nicht relationale Datenbanken zu einer vollständig verwalteten Datenbanklösung wie SQL Managed Instance, Azure Database for MySQL, Azure Database for PostgreSQL und Azure Cosmos DB umstrukturieren. | Wenn Ihre Anwendungen eine größere Überarbeitung benötigen, um neue Funktionen zu integrieren oder effektiv auf einer Cloudplattform zu funktionieren. <br><br> Wenn Sie vorhandene Anwendungsinvestitionen nutzen, Skalierbarkeitsanforderungen erfüllen, innovative DevOps-Methoden anwenden und die Verwendung virtueller Computer minimieren möchten. |
-| **Neuerstellen** | Das Neuerstellen geht einen Schritt weiter, da eine Anwendung in diesem Fall unter Verwendung von Azure-Cloudtechnologien von Grund auf neu erstellt wird. <br><br> Sie könnten beispielsweise Greenfield-Anwendungen mit [nativen Cloudtechnologien](https://azure.microsoft.com/overview/cloudnative) wie Azure Functions, Azure KI, SQL Managed Instance und Azure Cosmos DB erstellen. | Wenn Sie schnelle Entwicklung wünschen und Funktionalität sowie Lebensdauer vorhandener Anwendungen eingeschränkt sind. <br><br> Wenn Sie bereit sind, Business-Innovation (einschließlich von Azure bereitgestellter DevOps-Methoden) voran zu treiben, neue Anwendungen mit nativen Cloudtechnologien zu erstellen und die Weiterentwicklungen in KI, Blockchain und IoT zu nutzen. |
+| **Neuerstellen** | Das Neuerstellen geht einen Schritt weiter, da eine Anwendung in diesem Fall unter Verwendung von Azure-Cloudtechnologien von Grund auf neu erstellt wird. <br><br> Sie könnten beispielsweise Greenfield-Anwendungen mit [nativen Cloudtechnologien](https://azure.microsoft.com/overview/cloudnative/) wie Azure Functions, Azure KI, SQL Managed Instance und Azure Cosmos DB erstellen. | Wenn Sie schnelle Entwicklung wünschen und Funktionalität sowie Lebensdauer vorhandener Anwendungen eingeschränkt sind. <br><br> Wenn Sie bereit sind, Business-Innovation (einschließlich von Azure bereitgestellter DevOps-Methoden) voran zu treiben, neue Anwendungen mit nativen Cloudtechnologien zu erstellen und die Weiterentwicklungen in KI, Blockchain und IoT zu nutzen. |
 
 ## <a name="migration-example-articles"></a>Artikel mit Migrationsbeispielen
 
@@ -103,7 +103,7 @@ Bei dieser Reihe liegt der Schwerpunkt auf den einzelnen Migrationsszenarien, di
 
 | Artikel | Details |
 | --- | --- |
-| [Umgestalten einer Windows-Anwendung mithilfe von App Service und SQL-Datenbank](./contoso-migration-refactor-web-app-sql.md) | Dieses Beispiel zeigt, wie Sie eine lokale Windows-basierte Anwendung zu einer Azure-Web-App migrieren und die Anwendungsdatenbank mithilfe von [Database Migration Service](/azure/dms/dms-overview) zu einer Azure SQL Server-Instanz migrieren. |
+| [Umgestalten einer Windows-Anwendung mithilfe von App Service und SQL-Datenbank](./contoso-migration-refactor-web-app-sql.md) | Dieses Beispiel zeigt, wie Sie eine lokale Windows-basierte Anwendung zu einer Azure-Web-App migrieren und die Anwendungsdatenbank mithilfe von [Database Migration Service](/azure/dms/dms-overview) zu einer Azure SQL-Datenbank-Serverinstanz migrieren. |
 | [Umgestalten einer lokalen Anwendung zu einer Azure App Service-Web-App und einer Instanz von SQL Managed Instance](./contoso-migration-refactor-web-app-sql-managed-instance.md) | Dieses Beispiel zeigt, wie Sie eine lokale Windows-basierte Anwendung zu einer Azure-Web-App migrieren und die Anwendungsdatenbank mithilfe von [Database Migration Service](/azure/dms/dms-overview) zu SQL Managed Instance migrieren. |
 | [Umgestalten einer Linux-Anwendung für mehrere Regionen mit Azure App Service, Traffic Manager und Azure Database for MySQL](./contoso-migration-refactor-linux-app-service-mysql.md) | Dieses Beispiel zeigt, wie Sie eine lokale Linux-basierte Anwendung per Traffic Manager zu einer Azure-Web-App in mehreren Azure-Regionen migrieren, um sie für Continuous Delivery in GitHub zu integrieren. Die Anwendungsdatenbank wird zu einer Azure Database for MySQL-Instanz migriert. |
 | [Neuerstellen einer Anwendung in Azure](./contoso-migration-rebuild.md) | Dieser Artikel enthält ein Beispiel für die Neuerstellung einer lokalen Anwendung unter Verwendung einer Reihe von Azure-Funktionen und verwalteten Diensten. Hierzu zählen App Service, AKS, Azure Functions, Azure Cognitive Services und Azure Cosmos DB. |
@@ -113,18 +113,18 @@ Bei dieser Reihe liegt der Schwerpunkt auf den einzelnen Migrationsszenarien, di
 
 | Artikel | Details |
 | --- | --- |
-| [SAP-Migrationshandbuch](https://azure.microsoft.com/resources/sap-on-azure-implementation-guide) | Hier finden Sie praktische Anleitungen zum Verschieben Ihrer lokalen SAP-Workloads in die Cloud. |
-| [Migrieren von SAP-Anwendungen zu Azure](https://azure.microsoft.com/resources/migrating-sap-applications-to-azure) | Whitepaper und Roadmap für Ihre SAP-Cloudmigration. |
-| [Migrationsmethoden für SAP in Azure](https://azure.microsoft.com/resources/migration-methodologies-for-sap-on-azure) | Übersicht über verschiedene Migrationsoptionen zum Verschieben von SAP-Anwendungen in Azure. |
+| [SAP-Migrationshandbuch](https://azure.microsoft.com/resources/sap-on-azure-implementation-guide/) | Hier finden Sie praktische Anleitungen zum Verschieben Ihrer lokalen SAP-Workloads in die Cloud. |
+| [Migrieren von SAP-Anwendungen zu Azure](https://azure.microsoft.com/resources/migrating-sap-applications-to-azure/) | Whitepaper und Roadmap für Ihre SAP-Cloudmigration. |
+| [Migrationsmethoden für SAP in Azure](https://azure.microsoft.com/resources/migration-methodologies-for-sap-on-azure/) | Übersicht über verschiedene Migrationsoptionen zum Verschieben von SAP-Anwendungen in Azure. |
 
 ### <a name="specialized-workloads"></a>Spezialisierte Workloads
 
 | Artikel | Details |
 | --- | --- |
 | [Verschieben einer lokalen VMware-Infrastruktur in Azure](./contoso-migration-vmware-to-azure.md) | Dieser Artikel enthält ein Beispiel für das Verschieben lokaler virtueller VMware-Computer in Azure mithilfe von Azure VMware Solution. |
-| [Azure NetApp Files](https://azure.microsoft.com/services/netapp) | Unternehmensdateispeicher unterstützt von NetApp. Ausführen von Linux- und Windows-Dateiworkloads in Azure. |
-| [Oracle in Azure](https://azure.microsoft.com/solutions/oracle) | Ausführen Ihrer Oracle-Datenbank und Unternehmensanwendungen in Azure und Oracle Cloud. |
-| [Cray in Azure](https://azure.microsoft.com/solutions/high-performance-computing/cray) | High Performance Computing mit Cray in Azure. Ein dedizierter Supercomputer in Ihrem virtuellen Netzwerk. |
+| [Azure NetApp Files](https://azure.microsoft.com/services/netapp/) | Unternehmensdateispeicher unterstützt von NetApp. Ausführen von Linux- und Windows-Dateiworkloads in Azure. |
+| [Oracle in Azure](https://azure.microsoft.com/solutions/oracle/) | Ausführen Ihrer Oracle-Datenbanken und Unternehmensanwendungen in Azure und Oracle Cloud Infrastructure |
+| [Cray in Azure](https://azure.microsoft.com/solutions/high-performance-computing/cray/) | High Performance Computing mit Cray in Azure. Ein dedizierter Supercomputer in Ihrem virtuellen Netzwerk. |
 
 ### <a name="vdi"></a>VDI
 
@@ -140,10 +140,8 @@ Bei dieser Reihe liegt der Schwerpunkt auf den einzelnen Migrationsszenarien, di
 
 ### <a name="demo-applications"></a>Demoanwendungen
 
-<!-- docutune:casing SmartHotel360 osTicket -->
-
 Die in diesem Abschnitt aufgeführten Beispielartikel verwenden zwei Demoanwendungen: SmartHotel360 und osTicket.
 
-**SmartHotel360**: Diese Testanwendung wurde von Microsoft für die Verwendung mit Azure entwickelt. Sie wird als Open-Source-Anwendung bereitgestellt und kann von [GitHub](https://github.com/Microsoft/SmartHotel360) heruntergeladen werden. Es ist eine ASP.NET-Anwendung, die mit einer SQL Server-Datenbank verbunden ist. In den in diesen Artikeln beschriebenen Szenarien wird die aktuelle Version dieser Anwendung auf zwei VMware-VMs mit Windows Server 2008 R2 und SQL Server 2008 R2 bereitgestellt. Diese Anwendungs-VMs werden lokal gehostet und von vCenter Server verwaltet.
+**SmartHotel360** : Diese Testanwendung wurde von Microsoft für die Verwendung mit Azure entwickelt. Sie wird unter einer Open-Source-Lizenz bereitgestellt und kann von [GitHub](https://github.com/Microsoft/SmartHotel360) heruntergeladen werden. Es ist eine ASP.NET-Anwendung, die mit einer SQL Server-Datenbank verbunden ist. In den in diesen Artikeln beschriebenen Szenarien wird die aktuelle Version dieser Anwendung auf zwei VMware-VMs mit Windows Server 2008 R2 und SQL Server 2008 R2 bereitgestellt. Diese Anwendungs-VMs werden lokal gehostet und von vCenter Server verwaltet.
 
-**osTicket**: Diese Open-Source-Anwendung für Service Desk-Tickets läuft unter Linux. Sie können es von [GitHub](https://github.com/osTicket/osTicket) herunterladen. In den in diesen Artikeln beschriebenen Szenarien wird die aktuelle Version dieser Anwendung lokal auf zwei VMware-VMs mit Ubuntu 16.04 LTS unter Verwendung von Apache 2, PHP 7.0 und MySQL 5.7 bereitgestellt.
+**osTicket** : Diese Open-Source-Anwendung für Service Desk-Tickets läuft unter Linux. Sie können es von [GitHub](https://github.com/osTicket/osTicket) herunterladen. In den in diesen Artikeln beschriebenen Szenarien wird die aktuelle Version dieser Anwendung lokal auf zwei VMware-VMs mit Ubuntu 16.04 LTS unter Verwendung von Apache 2, PHP 7.0 und MySQL 5.7 bereitgestellt.

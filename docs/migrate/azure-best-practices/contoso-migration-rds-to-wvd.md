@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 30340f9dfcacfb3aafe2dfeee5cbad21b6f75110
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 3102bbef6c856dd5fdb7a814b74f03dc40b1363a
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775835"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334713"
 ---
 <!-- docutune:casing Lakeside SysTrack -->
 <!-- cSpell:ignore msiexec Logix Robocopy UPDs -->
@@ -161,7 +161,7 @@ Contoso stellt den Windows Virtual Desktop-Dienst in der Azure-Region `East US 2
 1. Contoso stellt eine Verbindung zwischen Azure Migrate und Lakeside her und akzeptiert alle angeforderten Berechtigungen.
 
    ![Screenshot mit der Anmeldung zum Herstellen einer Verbindung zwischen Azure und Lakeside](./media/contoso-migration-rds-to-wvd/lakeside-login.png)
-   _Abbildung 8: Herstellen einer Verbindung zwischen Azure Migrate und Lakeside._
+   _Abbildung 8: Herstellen einer Verbindung zwischen Azure und Lakeside_
 
 1. Contoso fährt mit dem Lakeside-Tool fort, um einen neuen Mandanten zu erstellen und mit der Bewertung seiner aktuellen lokalen RDS-Umgebung zu beginnen. Vom Dashboard aus kann Contoso auf das Bereitstellungshandbuch zugreifen, den Bewertungsclient herunterladen, um ihn in der aktuellen Umgebung bereitzustellen, und die von diesen Agents gesammelten Daten überprüfen.
 
@@ -201,7 +201,7 @@ Mit dem Azure-Portal erstellt Contoso eine Windows Virtual Desktop-Umgebung für
 
    - Contoso konfiguriert den virtuellen Computer und wählt eine benutzerdefinierte Größe aus, indem es **Größe ändern** auswählt oder die Standardeinstellung verwendet.
    - Windows Virtual Desktop wird als VM-Namenspräfix für diese in einem Pool zusammengefassten Desktops ausgewählt.
-   - Da Contoso die gepoolten Server erstellt, um die neue Windows 10-Multisessionfunktion für die VM-Einstellungen zu verwenden, behalten Sie die Einstellung **Katalog** für die Bildquelle bei. Mit dieser Option kann Contoso das Windows 10 Enterprise-Multisessionimage für die virtuellen Computer auswählen.
+   - Da Contoso die gepoolten Server erstellt, um die neue Windows 10 Enterprise-Multisessionfunktion für die VM-Einstellungen zu verwenden, behalten Sie die Einstellung **Katalog** für die Bildquelle bei. Mit dieser Option kann Contoso das Windows 10 Enterprise-Multisessionimage für die virtuellen Computer auswählen.
    - Basierend auf den Personas der Benutzer aus der Lakeside-Bewertung legt Contoso die Gesamtanzahl der Benutzer auf **150** fest.
    - Andere Einstellungen betreffen den Datenträgertyp, ein AD-Domänenbeitritt-UPN-Feld, ein Administratorkennwort, einen optionalen OE-Pfad, dem Computer hinzugefügt werden, das virtuelle Netzwerk und ein Subnetz zum Hinzufügen von Servern.
 
@@ -302,7 +302,7 @@ Für die Business Continuity & Disaster Recovery (BCDR) sichert Contoso die Date
 ### <a name="licensing-and-cost-optimization"></a>Lizenzierung und Kostenoptimierung
 
 - [Microsoft 365-Lizenzen](https://azure.microsoft.com/pricing/details/virtual-desktop/) werden für die Desktop-Bereitstellungen verwendet.
-- Contoso aktiviert [Azure Cost Management und das Azure-Abrechnungsportal](/azure/cost-management-billing/cost-management-billing-overview), um die Überwachung und Verwaltung der Azure-Ressourcen zu unterstützen.
+- Contoso aktiviert [Azure Cost Management + Billing](/azure/cost-management-billing/cost-management-billing-overview), um die Überwachung und Verwaltung der Azure-Ressourcen zu unterstützen.
 - Contoso verfügt über eine Lizenzierung für die virtuellen Computer und nutzt den Azure-Hybridvorteil für Anwendungsserver. Contoso wird die vorhandenen virtuellen Azure-Computer konvertieren, um von diesen Preisen zu profitieren.
 
 ## <a name="conclusion"></a>Zusammenfassung

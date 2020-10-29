@@ -7,14 +7,14 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 650b41a6f27c4343422f0d185f2f3255b5f7a42d
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: a96c4afaa31a7cc399cee0e249e04348623e847d
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605030"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334679"
 ---
-<!-- cSpell:ignore  mysqldump Navicat phpMyAdmin -->
+<!-- cSpell:ignore mysqldump -->
 
 # <a name="migrate-mariadb-databases-to-azure"></a>Migrieren von MariaDB-Datenbanken zu Azure
 
@@ -22,10 +22,10 @@ In diesem Artikel wird gezeigt, wie das fiktive Unternehmen Contoso die Migratio
 
 Contoso verwendet aus folgenden Gründen MariaDB anstelle von MySQL:
 
-- Unzählige Speicher-Engines.
+- Zahlreiche Optionen für Speicher-Engines
 - Cache- und Indexleistung.
 - Open-Source-Unterstützung mit Features und Erweiterungen.
-- Analytics ColumnStore-Unterstützung.
+- ColumnStore-Speicher-Engine für Analyseworkloads
 
 Das Migrationsziel des Unternehmens ist es, MariaDB weiterhin zu verwenden, ohne sich Gedanken über die Verwaltung der dafür benötigten Umgebung zu machen.
 
@@ -75,7 +75,7 @@ Im Rahmen des Lösungsentwurfs hat Contoso die in Azure verfügbaren Features f�
 - Azure Database for MariaDB verfügt über die erforderlichen Compliance- und Datenschutzzertifizierungen, die Contoso für seine Prüfer einhalten muss.
 - Die Verarbeitungsleistung für Berichte und Anwendung wird durch die Verwendung von Lesereplikaten verbessert.
 - Der Dienst kann mithilfe von [Azure Private Link](/azure/mariadb/concepts-data-access-security-private-link) nur für den internen Netzwerkdatenverkehr (kein öffentlicher Zugriff) verfügbar gemacht werden.
-- Contoso hat entschieden, nicht zu Azure Database for MySQL zu wechseln, da möglicherweise in Zukunft das MariaDB ColumnStore- und GraphDBMS-Datenbankmodell verwendet werden soll.
+- Contoso hat entschieden, nicht zu Azure Database for MySQL zu wechseln, da möglicherweise in Zukunft das MariaDB ColumnStore- und Graph-Datenbankmodell verwendet werden soll.
 - Die [Bandbreite und Wartezeit](/azure/vpn-gateway/vpn-gateway-about-vpngateways) zwischen der Anwendung und der Datenbank ist je nach ausgewähltem Gateway (Azure ExpressRoute oder Site-to-Site-VPN) ausreichend.
 
 ### <a name="solution-review"></a>Überprüfung der Lösung
@@ -135,18 +135,18 @@ Contoso hat zum Migrieren seiner Datenbanken die folgenden Schritte ausgeführt.
     ![Screenshot zeigt eine neue MariaDB-Instanz in Azure.](./media/contoso-migration-mariadb-to-azure/azure-mariadb-create.png)
     _Abbildung 4: Neue MariaDB-Instanz in Azure_
 
-  - Klicken Sie auf **Erstellen**.
+  - Klicken Sie auf **Erstellen** .
   - Wählen Sie Ihr Abonnement und die Ressourcengruppe aus.
   - Wählen Sie einen Servernamen und einen Standort aus.
   - Wählen Sie Ihre Zielversion aus (10.2 oder 10.3).
   - Wählen Sie Compute und Speicher aus.
   - Geben Sie einen Administratorbenutzername und ein Kennwort ein.
-  - Klicken Sie auf **Überprüfen + erstellen**.
+  - Klicken Sie auf **Überprüfen + erstellen** .
 
     ![Screenshot zeigt den Bildschirm zum Erstellen des MariaDB-Servers.](./media/contoso-migration-mariadb-to-azure/azure_mariadb_create.png)
     _Abbildung 5: Überprüfen und Erstellen_
 
-  - Klicken Sie auf **Erstellen**.
+  - Klicken Sie auf **Erstellen** .
   - Notieren Sie sich den Serverhostnamen, den Benutzernamen und das Kennwort.
   - Wählen Sie **Verbindungssicherheit** aus.
   - Wählen Sie **Client-IP hinzufügen** aus (die IP-Adresse, von der aus Sie die Datenbank wiederherstellen).
@@ -193,10 +193,10 @@ Contoso muss Folgendes durchführen:
 
 ### <a name="backups"></a>Backups
 
-Mithilfe der Geowiederherstellung kann sichergestellt werden, dass die Azure Database for MariaDB-Datenbanken gesichert sind. Auf diese Weise können im Falle eines regionalen Ausfalls Sicherungen in Regionspaaren verwendet werden.
+Mithilfe der Geowiederherstellung sicherstellen, dass die Azure Database for MariaDB-Instanzen gesichert sind. Auf diese Weise können im Falle eines regionalen Ausfalls Sicherungen in Regionspaaren verwendet werden.
 
 > [!IMPORTANT]
-> Stellen Sie sicher, dass die Azure Database for MariaDB-Ressource über eine [Ressourcensperre](/azure/azure-resource-manager/management/lock-resources) verfügt und nicht gelöscht werden kann. Gelöschte Server können nicht wiederhergestellt werden.
+> Stellen Sie sicher, dass die Azure Database for MariaDB-Instanz über eine [Ressourcensperre](/azure/azure-resource-manager/management/lock-resources) verfügt und nicht gelöscht werden kann. Gelöschte Server können nicht wiederhergestellt werden.
 
 ### <a name="licensing-and-cost-optimization"></a>Lizenzierung und Kostenoptimierung
 

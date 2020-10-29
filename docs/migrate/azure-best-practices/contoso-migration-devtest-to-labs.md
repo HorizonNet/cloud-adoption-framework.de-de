@@ -7,12 +7,12 @@ ms.date: 07/1/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d608aa4bd7128f469c8eb6f8a1d100e001d2287b
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: ba0d19a7c6dd050e5580c1ef701cc63ed0debda4
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605159"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334764"
 ---
 # <a name="migrate-a-devtest-environment-to-azure-devtest-labs"></a>Migrieren einer Dev/Test-Umgebung zu Azure DevTest Labs
 
@@ -24,7 +24,7 @@ Beim Verschieben der Dev/Test-Umgebung in Azure stehen Contoso mehrere Optionen 
 
 | Migrationsoptionen | Ergebnis |
 | --- | --- |
-| [Azure Migrate](/azure/migrate/migrate-services-overview) | [Bewerten](/azure/migrate/tutorial-assess-vmware) und [Migrieren](/azure/migrate/tutorial-migrate-vmware) lokaler VMs <br><br> Ausführen von Entwicklungs-/Testservern mithilfe von Azure-IaaS (Infrastructure-as-a-Service) <br><br> Verwalten von VMs mit [Azure Resource Manager](https://azure.microsoft.com/features/resource-manager/) |
+| [Azure Migrate](/azure/migrate/migrate-services-overview) | [Bewerten](/azure/migrate/tutorial-assess-vmware-azure-vm) und [Migrieren](/azure/migrate/tutorial-migrate-vmware) lokaler VMs <br><br> Ausführen von Entwicklungs-/Testservern mithilfe von Azure-IaaS (Infrastructure-as-a-Service) <br><br> Verwalten von VMs mit [Azure Resource Manager](https://azure.microsoft.com/features/resource-manager/) |
 | [DevTest Labs](/azure/devtest-labs/devtest-lab-overview) | Schnelles Bereitstellen von Entwicklungs- und Testumgebungen: <br><br> Minimieren von Verlusten durch Kontingente und Richtlinien <br><br> Festlegen von automatisiertem Herunterfahren zum Minimieren von Kosten <br><br> Erstellen von Windows- und Linux-Umgebungen |
 
 > [!NOTE]
@@ -40,12 +40,12 @@ Das Führungsteam für die Entwicklung hat festgelegt, was mit dieser Migration 
 - Einsparen von Kosten durch das Verschieben aller Dev/Test-Umgebungen aus dem Rechenzentrum und durch das Verzichten auf den Kauf von Hardware zum Entwickeln von Software.
 
 > [!NOTE]
-> Contoso nutzt dabei das [Abonnementangebot „Dev/Test Pay-As-You-Go“](https://azure.microsoft.com/offers/ms-azr-0023p) für seine Umgebungen. Jeder aktive Visual Studio-Abonnent im Team kann die Microsoft-Software, die im Abonnement für Azure Virtual Machines enthalten ist, ohne zusätzliche Kosten für Dev/Test verwenden. Contoso zahlt nur die Linux-Rate für die von ihm ausgeführten VMs. Das schließt VMs mit SQL Server, SharePoint Server oder anderer Software ein, die normalerweise mit einer höheren Rate abgerechnet wird.
+> Contoso nutzt dabei das [Abonnementangebot „Dev/Test Pay-As-You-Go“](https://azure.microsoft.com/offers/ms-azr-0023p/) für seine Umgebungen. Jeder aktive Visual Studio-Abonnent im Team kann die Microsoft-Software, die im Abonnement für Azure Virtual Machines enthalten ist, ohne zusätzliche Kosten für Dev/Test verwenden. Contoso zahlt nur die Linux-Rate für die von ihm ausgeführten VMs. Das schließt VMs mit SQL Server, SharePoint Server oder anderer Software ein, die normalerweise mit einer höheren Rate abgerechnet wird.
 
 <!-- -->
 
 > [!NOTE]
-> Azure-Kunden mit einem Enterprise Agreement profitieren auch vom [Azure Dev/Test-Abonnementangebot](https://azure.microsoft.com/offers/ms-azr-0148p). Weitere Informationen zum Erstellen eines Azure Dev/Test-Abonnements mithilfe des Enterprise Agreement-Portals finden Sie in diesem [Video](https://channel9.msdn.com/blogs/ea.azure.com/enabling-and-creating-ea-devtest-subscriptions-through-the-ea-portal).
+> Azure-Kunden mit einem Enterprise Agreement profitieren auch vom [Azure Dev/Test-Abonnementangebot](https://azure.microsoft.com/offers/ms-azr-0148p/). Weitere Informationen zum Erstellen eines Azure Dev/Test-Abonnements mithilfe des Enterprise Agreement-Portals finden Sie in diesem [Video](https://channel9.msdn.com/blogs/ea.azure.com/enabling-and-creating-ea-devtest-subscriptions-through-the-ea-portal).
 
 ## <a name="migration-goals"></a>Migrationsziele
 
@@ -69,7 +69,7 @@ Nachdem die Ziele und Anforderungen formuliert wurden, entwirft und prüft Conto
 
 ### <a name="proposed-architecture"></a>Vorgeschlagene Architektur
 
-- Contoso verwendet ein [Azure Dev/Test-Abonnement](https://azure.microsoft.com/offers/ms-azr-0023p) zum Reduzieren der Kosten für Azure-Ressourcen. Dieses Abonnement bietet auch in Bezug auf VMs erhebliche Einsparungen, für die keine Lizenzgebühren für Microsoft-Software anfallen.
+- Contoso verwendet ein [Azure Dev/Test-Abonnement](https://azure.microsoft.com/offers/ms-azr-0023p/) zum Reduzieren der Kosten für Azure-Ressourcen. Dieses Abonnement bietet auch in Bezug auf VMs erhebliche Einsparungen, für die keine Lizenzgebühren für Microsoft-Software anfallen.
 - Contoso verwendet DevTest Labs zum Verwalten der Umgebungen. Neue VMs werden in DevTest Labs erstellt, um den Umstieg auf neue Tools für die Entwicklung und Tests in der Cloud zu unterstützen.
 - Die lokalen Dev/Test-VMs von Contoso im Rechenzentrum werden nach Abschluss der Migration außer Betrieb gesetzt.
 - Entwickler und Tester können für ihre Arbeitsstationen auf Windows Virtual Desktop zugreifen.
@@ -100,7 +100,7 @@ Mit DevTest Labs migriert Contoso seine Entwicklungsanwendungs- und Datenbank-VM
 - Contoso verwendet schon die [Azure-Infrastruktur](./contoso-migration-infrastructure.md) einschließlich des virtuellen Entwicklungsnetzwerks.
 - Wenn alles vorbereitet ist, wird DevTest Labs von Contoso bereitgestellt und konfiguriert.
 - Contoso konfiguriert das virtuelle Entwicklungsnetzwerk, weist eine Ressourcengruppe zu und legt Rechtlinien fest.
-- Für Remotearbeiten erstellt Contoso für Entwickler virtuelle Windows-Desktops.
+- Für Remotearbeiten erstellt Contoso für Entwickler Windows Virtual Desktop-Instanzen.
 - Contoso erstellt VMs für Entwicklungs- und Migrationsdatenbanken in DevTest Labs.
 
 ![Diagramm, das den Migrationsprozess veranschaulicht.](./media/contoso-migration-devtest-to-labs/migration-process-devtest-labs.png)
@@ -113,7 +113,7 @@ Für die Ausführung dieses Szenarios benötigt Contoso Folgendes.
 
 | Requirements (Anforderungen) | Details |
 | --- | --- |
-| **Azure Dev/Test-Abonnement** | Contoso erstellt ein [Azure Dev/Test-Abonnement](https://azure.microsoft.com/offers/ms-azr-0023p), um die Kosten um bis zu 80 Prozent zu reduzieren. <br><br> Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/free) erstellen. <br><br> Wenn Sie ein kostenloses Konto erstellen, sind Sie der Administrator Ihres Abonnements und können alle Aktionen durchführen. <br><br> Falls Sie ein vorhandenes Abonnement verwenden, aber nicht der Administrator sind, arbeiten Sie mit dem Administrator zusammen, damit er Ihnen Berechtigungen vom Typ „Besitzer“ oder „Mitwirkender“ zuweist. <br><br> Wenn Sie detailliertere Berechtigungen benötigen, lesen Sie [diesen Artikel](/azure/site-recovery/site-recovery-role-based-linked-access-control). |
+| **Azure Dev/Test-Abonnement** | Contoso erstellt ein [Azure Dev/Test-Abonnement](https://azure.microsoft.com/offers/ms-azr-0023p/), um die Kosten um bis zu 80 Prozent zu reduzieren. <br><br> Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/free/) erstellen. <br><br> Wenn Sie ein kostenloses Konto erstellen, sind Sie der Administrator Ihres Abonnements und können alle Aktionen durchführen. <br><br> Falls Sie ein vorhandenes Abonnement verwenden, aber nicht der Administrator sind, arbeiten Sie mit dem Administrator zusammen, damit er Ihnen Berechtigungen vom Typ „Besitzer“ oder „Mitwirkender“ zuweist. <br><br> Wenn Sie detailliertere Berechtigungen benötigen, lesen Sie [diesen Artikel](/azure/site-recovery/site-recovery-role-based-linked-access-control). |
 | **Azure-Infrastruktur** | [Weitere Informationen](./contoso-migration-infrastructure.md) zur Vorgehensweise von Contoso beim Einrichten einer Azure-Infrastruktur. |
 
 ## <a name="scenario-steps"></a>Szenarioschritte
@@ -133,7 +133,7 @@ Zunächst müssen Contoso-Administratoren über das Azure Dev/Test-Angebot ein n
 
 Das Unternehmen geht bei der Einrichtung dieser Komponenten wie folgt vor:
 
-Die Administratoren folgen dem Link zum [Azure Dev/Test-Abonnementangebot](https://azure.microsoft.com/offers/ms-azr-0023p) und stellen ein neues Abonnement bereit, wodurch das Unternehmen in Bezug auf seine Systeme bis zu 80 Prozent einsparen kann. Dieses Angebot ermöglicht Contoso, Windows 10-Images in Azure für Dev/Test-Vorgänge auszuführen. Das Unternehmen erhält Zugriff auf [Windows Virtual Desktop](/azure/virtual-desktop/overview), um die Verwaltungsfunktionen der Remoteentwickler zu vereinfachen.
+Die Administratoren folgen dem Link zum [Azure Dev/Test-Abonnementangebot](https://azure.microsoft.com/offers/ms-azr-0023p/) und stellen ein neues Abonnement bereit, wodurch das Unternehmen in Bezug auf seine Systeme bis zu 80 Prozent einsparen kann. Dieses Angebot ermöglicht Contoso, Windows 10-Images in Azure für Dev/Test-Vorgänge auszuführen. Das Unternehmen erhält Zugriff auf [Windows Virtual Desktop](/azure/virtual-desktop/overview), um die Verwaltungsfunktionen der Remoteentwickler zu vereinfachen.
 
 ![Screenshot eines Dev/Test-Angebots mit nutzungsbasierter Bezahlung mit der Schaltfläche „Aktivieren“.](./media/contoso-migration-devtest-to-labs/devtest-subscription.png)
 
@@ -157,7 +157,7 @@ Wenn die DevTest Labs-Instanz erstellt ist, führt ein Contoso-Mitarbeiter folge
 
       _Abbildung 5: DevTest Labs-Instanz: Konfiguration und Richtlinien_
 
-   2. Ein Contoso-Mitarbeiter wählt **Virtuelle Netzwerke** >  **+ Hinzufügen**, **vnet-dev-eus2** und anschließend **Speichern** aus. So kann das virtuelle Entwicklungsnetzwerk für VM-Bereitstellungen verwendet werden. Auch während der Bereitstellung der DevTest Labs-Instanz wurde ein virtuelles Netzwerk erstellt.
+   2. Ein Contoso-Mitarbeiter wählt **Virtuelle Netzwerke** >  **+ Hinzufügen** , `vnet-dev-eus2` und anschließend **Speichern** aus. So kann das virtuelle Entwicklungsnetzwerk für VM-Bereitstellungen verwendet werden. Auch während der Bereitstellung der DevTest Labs-Instanz wurde ein virtuelles Netzwerk erstellt.
 
       ![Screenshot der Auswahlmöglichkeiten zum Hinzufügen des virtuellen Netzwerks.](./media/contoso-migration-devtest-to-labs/vnets.png)
 
@@ -204,7 +204,7 @@ Wenn die DevTest Labs-Instanz erstellt ist, führt ein Contoso-Mitarbeiter folge
 
 ## <a name="step-3-create-windows-10-enterprise-multi-session-virtual-desktops-for-developers-to-use-from-remote-locations"></a>Schritt 3: Erstellen von virtuellen Windows 10 Enterprise-Desktops mit mehreren Sitzungen für die Remotearbeit von Entwicklern
 
-Contoso muss eine Windows Virtual Desktop-Instanz für Remoteentwickler erstellen.
+Contoso muss eine Windows Virtual Desktop-Basis für Remoteentwickler erstellen.
 
 1. Ein Contoso-Mitarbeiter wählt **Alle virtuellen Computer** >  **+ Hinzufügen** und eine Windows 10 Enterprise-Multisitzungsbasis für eine VM aus.
 
@@ -236,7 +236,7 @@ Wenn DevTest Labs konfiguriert ist und die Remoteentwicklerarbeitsstation ausgef
 
 1. Contoso erstellt Formeln (wiederverwendbare Basen) für Anwendungs- und Datenbank-VMs und stellt Anwendungs- und Datenbank-VMs mithilfe der Formeln bereit.
 
-   Ein Contoso-Mitarbeiter wählt **Formeln** >  **+ Hinzufügen** und dann eine **Windows Server 2012 R2 Datacenter**-Basis aus.
+   Ein Contoso-Mitarbeiter wählt **Formeln** >  **+ Hinzufügen** und dann eine **Windows Server 2012 R2 Datacenter** -Basis aus.
 
    ![Screenshot der Auswahl einer Windows 2012 R2-Basis.](./media/contoso-migration-devtest-to-labs/windows-2012-base.png)
 
@@ -251,7 +251,7 @@ Wenn DevTest Labs konfiguriert ist und die Remoteentwicklerarbeitsstation ausgef
 1. Um die Datenbank-VM-Formel zu erstellen, befolgt Contoso die gleichen grundlegenden Schritte. Dieses Mal wird ein SQL Server 2012-Image für die Basis ausgewählt.
 
    ![Screenshot der Auswahl einer SQL Server 2012 R2-Basis.](./media/contoso-migration-devtest-to-labs/sql-2012-base.png)
-  
+
    _Abbildung 18: SQL Server 2012-Image_
 
 1. Contoso konfiguriert die Formel mit der Größe und den Artefakten. Die Artefakte schließen SQL Server Management Studio ein, das für diese Datenbankentwicklungs-VM-Formel erforderlich ist.
@@ -260,7 +260,7 @@ Wenn DevTest Labs konfiguriert ist und die Remoteentwicklerarbeitsstation ausgef
 
    _Abbildung 19: SQL 2020 R2-Basiskonfiguration_
 
-   Informieren Sie sich über die Verwendung von [Formeln](/azure/lab-services/devtest-lab-manage-formulas) mit DevTest Labs.
+   Informieren Sie sich über die [Verwendung von Formeln mit Azure DevTest Labs](/azure/devtest-labs/devtest-lab-manage-formulas).
 
 1. Contoso hat jetzt die Formeln auf Windows-Basis erstellt, die von den Entwicklern für Anwendungen und Datenbanken verwendet werden.
 
@@ -321,7 +321,7 @@ Das Sicherheitsteam von Contoso überprüft die Azure-VMs auf eventuell vorhande
 
 - Contoso stellt sicher, dass alle Azure-Entwicklungsressourcen mithilfe dieses Dev/Test-Abonnements erstellt werden, um 80 Prozent zu sparen.
 - Die Budgets für alle DevTest Labs-Instanzen und die Richtlinien für die VMs werden überprüft, um sicherzustellen, dass die Kostenvorgaben eingehalten werden und keine versehentliche Überbereitstellung erfolgt.
-- Contoso aktiviert [Azure Cost Management und das Azure-Abrechnungsportal](/azure/cost-management-billing/cost-management-billing-overview), um die Überwachung und Verwaltung der Azure-Ressourcen zu unterstützen.
+- Contoso aktiviert [Azure Cost Management + Billing](/azure/cost-management-billing/cost-management-billing-overview), um die Überwachung und Verwaltung der Azure-Ressourcen zu unterstützen.
 
 ## <a name="conclusion"></a>Zusammenfassung
 
@@ -329,4 +329,4 @@ In diesem Artikel hat Contoso seine Entwicklungsumgebungen in DevTest Labs verla
 
 **Benötigen Sie weitere Hilfe?**
 
-[Erstellen Sie jetzt eine DevTest Labs-Instanz](/azure/lab-services/devtest-lab-create-lab) in Ihrem Abonnement, und informieren Sie sich über die Verwendung von [DevTest Labs für Entwickler](/azure/lab-services/devtest-lab-developer-lab).
+[Erstellen Sie jetzt eine DevTest Labs-Instanz](/azure/devtest-labs/devtest-lab-create-lab) in Ihrem Abonnement, und informieren Sie sich über die Verwendung von [DevTest Labs für Entwickler](/azure/devtest-labs/devtest-lab-developer-lab).

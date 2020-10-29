@@ -7,14 +7,14 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d907e2234338fa2f00776c2d9df7a58e78986393
-ms.sourcegitcommit: 949b87bad28d32df84df190160089f01826f3a31
+ms.openlocfilehash: 86a9c5e6af016ea6cc907a3f08b372c780e8bc31
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88193979"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334832"
 ---
-<!-- cSpell:ignore Netezza Teradata Exadata Giga GigaOM MPP -->
+<!-- cSpell:ignore Giga -->
 
 # <a name="azure-synapse-analytics-solutions"></a>Azure Synapse Analytics-Lösungen
 
@@ -24,9 +24,9 @@ Viele Organisationen sind bereit, kostenintensive Aufgaben wie die Infrastruktur
 
 ![Entwurf und Leistung für Teradata-Migrationen](../../../_images/analytics/analytics-solutions-overview.png)
 
-Dank Techniken wie Massively Parallel Processing (MPP) und dem automatischen In-Memory-Caching bietet Azure Synapse Analytics eine erstklassige Leistungsfähigkeit für relationale Datenbanken. Die Ergebnisse dieses Ansatzes können anhand von unabhängigen Benchmarks überprüft werden. Ein solcher Benchmark wurde beispielsweise kürzlich von [GigaOM](https://gigaom.com) durchgeführt, um Azure Synapse mit anderen gängigen cloudbasierten Data Warehouse-Angeboten zu vergleichen.
+Dank Techniken wie Massively Parallel Processing (MPP) und dem automatischen In-Memory-Caching bietet Azure Synapse Analytics eine erstklassige Leistungsfähigkeit für relationale Datenbanken. Die Ergebnisse dieses Ansatzes können anhand von unabhängigen Benchmarks überprüft werden. Ein solcher Benchmark wurde beispielsweise kürzlich von [GigaOm](https://gigaom.com) durchgeführt, um Azure Synapse mit anderen gängigen cloudbasierten Data Warehouse-Angeboten zu vergleichen.
 
-Organisationen, die bereits zu Synapse Analytics migriert haben, profitieren von zahlreichen Vorteilen. Hierzu zählt beispielsweise Folgendes:
+Organisationen, die bereits zu Azure Synapse Analytics migriert haben, profitieren von zahlreichen Vorteilen. Hierzu zählt beispielsweise Folgendes:
 
 - verbesserte Leistung und besseres Preis-Leistungs-Verhältnis
 - Höhere Flexibilität und schnellere Amortisierung

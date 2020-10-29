@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6579a5f4f699b3a5880076cb125b3faaea5b0c4b
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 1dcff70eaf185d59592682bdb61d777bf7dd0795
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603681"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334611"
 ---
 # <a name="migrate-open-source-databases-to-azure"></a>Migration von Open-Source-Datenbanken zu Azure
 
@@ -60,7 +60,7 @@ Contoso bewertet den vorgeschlagen Entwurf anhand einer Liste mit Vor- und Nacht
 
 | Aspekt | Details |
 | --- | --- |
-| **Vorteile** | Azure stellt eine zentralisierte Benutzeroberfläche für die Datenbankworkloads bereit. <br><br> Die Kosten können über Azure Cost Management und das Azure-Abrechnungsportal überwacht werden. <br><br> Dank der Azure-Abrechnungs-APIs ist eine Abrechnung mit verbrauchsbasierter Kostenzuteilung einfach durchzuführen. <br><br> Die Server- und Softwareverwaltung kann auf die IaaS-basierten Umgebungen reduziert werden. |
+| **Vorteile** | Azure stellt eine zentralisierte Benutzeroberfläche für die Datenbankworkloads bereit. <br><br> Die Kosten können über Azure Cost Management + Billing überwacht werden. <br><br> Dank der Azure-Abrechnungs-APIs ist eine Abrechnung mit verbrauchsbasierter Kostenzuteilung einfach durchzuführen. <br><br> Die Server- und Softwareverwaltung kann auf die IaaS-basierten Umgebungen reduziert werden. |
 | **Nachteile** | Aufgrund der Anforderung IaaS-basierter VMs muss die Software auf diesen Computern weiterhin verwaltet werden. |
 
 ### <a name="budget-and-management"></a>Budget und Verwaltung
@@ -91,7 +91,7 @@ Datenmigrationen folgen einem Standardmuster, das wiederholt werden kann. Dazu g
 
 #### <a name="step-1-discovery"></a>Schritt 1: Ermittlung
 
-Contoso hat Azure Migrate verwendet, um die Abhängigkeiten in der Contoso-Umgebung offenzulegen. Mithilfe von Azure Migrate können Anwendungskomponenten in Windows- und Linux-Systemen automatisch erkannt und die Kommunikation zwischen Diensten zugeordnet werden. Mithilfe von Azure Migrate wurden auch die Verbindungen zwischen Contoso-Servern, Prozessen, der Wartezeit zwischen eingehenden und ausgehenden Verbindungen und Ports in der über TCP verbundenen Architektur offengelegt. Contoso musste einfach nur [Microsoft Monitoring Agent](/azure/log-analytics/log-analytics-agent-windows) und den [Microsoft Dependency-Agent](/azure/azure-monitor/insights/vminsights-enable-hybrid-cloud#install-the-dependency-agent-on-windows) installieren.
+Contoso hat Azure Migrate verwendet, um die Abhängigkeiten in der Contoso-Umgebung offenzulegen. Mithilfe von Azure Migrate können Anwendungskomponenten in Windows- und Linux-Systemen automatisch erkannt und die Kommunikation zwischen Diensten zugeordnet werden. Mithilfe von Azure Migrate wurden auch die Verbindungen zwischen Contoso-Servern, Prozessen, der Wartezeit zwischen eingehenden und ausgehenden Verbindungen und Ports in der über TCP verbundenen Architektur offengelegt. Contoso musste einfach nur [Microsoft Monitoring Agent](/azure/azure-monitor/platform/agent-windows) und den [Microsoft Dependency-Agent](/azure/azure-monitor/insights/vminsights-enable-hybrid#install-the-dependency-agent-on-windows) installieren.
 
 Contoso konnte mehr als 300 Datenbankinstanzen identifizieren, die migriert werden müssen. Von diesen Instanzen können etwa 40 Prozent zu PaaS-basierten Diensten verschoben werden. Die verbleibenden 60 Prozent der Instanzen müssen zu einem IaaS-basierten Ansatz mit einer VM verschoben werden, die die entsprechende Datenbanksoftware ausführt.
 
@@ -145,7 +145,7 @@ Da die migrierten Ressourcen in Azure enthalten sind, muss Contoso seine neue In
 
 Contoso muss Folgendes durchführen:
 
-- Sicherstellen, dass die neuen Datenbankworkloads in Azure geschützt sind. Weitere Informationen finden Sie unter [Übersicht über die Sicherheitsfunktionen von Azure SQL-Datenbank und SQL Managed Instance](/azure/sql-database/sql-database-security-overview).
+- Sicherstellen, dass die neuen Datenbankworkloads in Azure geschützt sind. Weitere Informationen finden Sie unter [Übersicht über die Sicherheitsfunktionen von Azure SQL-Datenbank und SQL Managed Instance](/azure/azure-sql/database/security-overview).
 - Die Konfiguration der Firewall und des virtuellen Netzwerks überprüfen.
 - Contoso sollte Azure Private Link einrichten, damit der gesamte Datenverkehr der Datenbanken innerhalb von Azure und des lokalen Netzwerks bleibt.
 - Contoso sollte Azure Advanced Threat Protection aktivieren.
@@ -155,7 +155,7 @@ Contoso muss Folgendes durchführen:
 Mithilfe der Geowiederherstellung kann sichergestellt werden, dass die Datenbanken in Azure gesichert sind. Auf diese Weise können im Falle eines regionalen Ausfalls Sicherungen in Regionspaaren verwendet werden.
 
 > [!IMPORTANT]
->Stellen Sie sicher, dass die Azure-Ressource über eine [Ressourcensperre](/azure/azure-resource-manager/management/lock-resources) verfügt und nicht gelöscht werden kann. Gelöschte Server können nicht wiederhergestellt werden.
+> Stellen Sie sicher, dass die Azure-Ressource über eine [Ressourcensperre](/azure/azure-resource-manager/management/lock-resources) verfügt und nicht gelöscht werden kann. Gelöschte Server können nicht wiederhergestellt werden.
 
 #### <a name="licensing-and-cost-optimization"></a>Lizenzierung und Kostenoptimierung
 

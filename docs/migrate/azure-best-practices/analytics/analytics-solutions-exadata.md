@@ -7,22 +7,22 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 0c89967ac5cb815ad771e6a9ee70cad2f97056db
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 6498aa455b196a8648902f42c22131c146ef48d6
+ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570826"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334849"
 ---
 <!-- cSpell:ignore Exadata SSMA -->
 
 # <a name="azure-synapse-analytics-solutions-and-migration-for-an-oracle-data-warehouse"></a>Azure Synapse Analytics-Lösungen und Migration für ein Oracle-Data Warehouse
 
-Ein Oracle-Data Warehouse-Schema unterscheidet sich in mehrfacher Hinsicht von Azure Synapse Analytics. Zu den Unterschieden gehören Datenbanken, Datentypen und eine Reihe von Oracle-Datenbankobjekttypen, die in Azure Synapse nicht unterstützt werden.
+Ein Oracle-Data Warehouse-Schema unterscheidet sich in mehrfacher Hinsicht von Azure Synapse Analytics. Zu den Unterschieden gehören Datenbanken, Datentypen und eine Reihe von Oracle Database-Objekttypen, die in Azure Synapse nicht unterstützt werden.
 
 Wie bei anderen Datenbankmanagementsystemen auch, werden Sie bei der Migration eines Oracle-Data Warehouse zu Azure Synapse feststellen, dass Oracle über mehrere, separate Datenbanken und Azure Synapse nur über eine Datenbank verfügt. Möglicherweise müssen Sie eine neue Benennungskonvention (z. B. eine Verkettung von Oracle-Schemanamen und -Tabellennamen) verwenden, um Tabellen und Sichten aus der Stagingdatenbank, aus der Produktionsdatenbank und aus den Data Mart-Datenbanken Ihres Oracle-Data Warehouse zu Azure Synapse zu migrieren.
 
-In Azure Synapse werden mehrere Oracle-Datenbankobjekte nicht unterstützt. Zu den Datenbankobjekten, die in Azure Synapse nicht unterstützt werden, gehören Oracle-Bitmapindizes, funktionsbasierte Indizes, Domänenindizes, Oracle-Clustertabellen, Trigger auf Zeilenebene, benutzerdefinierte Datentypen und gespeicherte PL/SQL-Prozeduren. Diese Objekte können durch Abfragen verschiedener Oracle-Systemkatalogtabellen und -sichten ermittelt werden. In einigen Fällen können Sie Problemumgehungen verwenden. In Azure Synapse können Sie z. B. die Partitionierung oder andere Indextypen verwendet werden, um die nicht unterstützten Indextypen in Oracle zu umgehen. Möglicherweise können Sie anstelle von gruppierten Oracle-Tabellen auch materialisierte Sichten verwenden, und mit Migrationstools wie SQL Server Migration Assistant für Oracle kann zumindest ein Teil von PL/SQL übersetzt werden.
+In Azure Synapse werden mehrere Oracle Database-Objekte nicht unterstützt. Zu den Datenbankobjekten, die in Azure Synapse nicht unterstützt werden, gehören Oracle-Bitmapindizes, funktionsbasierte Indizes, Domänenindizes, Oracle-Clustertabellen, Trigger auf Zeilenebene, benutzerdefinierte Datentypen und gespeicherte PL/SQL-Prozeduren. Diese Objekte können durch Abfragen verschiedener Oracle-Systemkatalogtabellen und -sichten ermittelt werden. In einigen Fällen können Sie Problemumgehungen verwenden. In Azure Synapse können Sie z. B. die Partitionierung oder andere Indextypen verwendet werden, um die nicht unterstützten Indextypen in Oracle zu umgehen. Möglicherweise können Sie anstelle von gruppierten Oracle-Tabellen auch materialisierte Sichten verwenden, und mit Migrationstools wie SQL Server Migration Assistant für Oracle kann zumindest ein Teil von PL/SQL übersetzt werden.
 
 Wenn Sie ein Oracle-Data Warehouse-Schema migrieren, müssen Sie auch Datentypunterschiede in Spalten berücksichtigen. Die Spalten in Ihrem Oracle-Data Warehouse- und Data Mart-Schema, für die keine Zuordnung zu Datentypen in Azure Synapse vorhanden ist, können durch Abfragen des Oracle-Katalogs ermittelt werden. Für einige dieser Fälle können Sie eine Umgehungslösung verwenden.
 
