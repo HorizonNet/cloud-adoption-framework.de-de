@@ -131,6 +131,8 @@ items:
             href: digital-estate/rationalize.md
           - name: Abstimmen von Kostenmodellen für die Kostenprognose
             href: digital-estate/calculate.md
+          - name: Messen von Geschäftsergebnissen mit AppDynamics
+            href: digital-estate/app-dynamics.md
       - name: Erstausrichtung der Organisation
         href: plan/initial-org-alignment.md
       - name: Plan für die Qualifikationsbereitschaft
