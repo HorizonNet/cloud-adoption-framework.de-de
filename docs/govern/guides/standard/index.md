@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: dd8b8e0c900b9e7332b4ecd25b163b25f9019e6d
-ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
+ms.openlocfilehash: 1433cc71badaf67bde7575753ec1149a7ee39349
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91620735"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93283228"
 ---
 # <a name="standard-enterprise-governance-guide"></a>Governanceleitfaden für Standardunternehmen
 
@@ -41,7 +41,7 @@ Jede Anwendung sollte im richtigen Bereich der Verwaltungsgruppen-, Abonnement- 
 1. Eine Verwaltungsgruppe für jeden Typ von Umgebung (z. B. Produktion, Entwicklung und Test)
 2. Zwei Abonnements, eins für die Produktionsworkloads und eins für Nichtproduktionsworkloads
 3. [Konsistente Benennung](../../../ready/azure-best-practices/naming-and-tagging.md) sollte auf jeder Ebene dieser Gruppierungshierarchie angewendet werden.
-4. Bei der Ressourcengruppenbereitstellung muss der Lebenszyklus der Inhalte berücksichtigt werden: Alle Inhalte, die gemeinsam entwickelt, verwaltet und ausgemustert werden, gehören zusammen. Weitere Informationen zu bewährten Methoden für Ressourcengruppen finden Sie [hier](../../../decision-guides/resource-consistency/index.md).
+4. Bei der Ressourcengruppenbereitstellung muss der Lebenszyklus der Inhalte berücksichtigt werden: Alle Inhalte, die gemeinsam entwickelt, verwaltet und ausgemustert werden, gehören zusammen. Weitere Informationen zu bewährten Methoden für Ressourcengruppen finden Sie im [Leitfaden zur Entscheidungsfindung bei der Ressourcenkonsistenz](../../../decision-guides/resource-consistency/index.md).
 5. Die [Regionswahl](../../../migrate/azure-best-practices/multiple-regions.md) ist äußerst wichtig und muss berücksichtigt werden, damit sowohl Netzwerk- und Überwachungsfunktionen für Failover-/Failbackvorgänge als auch die [erforderlichen SKUs in den bevorzugten Regionen](https://azure.microsoft.com/global-infrastructure/services) zur Verfügung stehen.
 
 Dies ist ein Beispiel für die Anwendung dieses Musters:
