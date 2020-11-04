@@ -1530,7 +1530,7 @@ items:
           - name: Microsoft Azure Well-Architected Framework für die Workloadarchitektur
             href: /azure/architecture/framework
           - name: Dokumentation für die Produktimplementierung
-            href: null
+            href: /
           - name: Erlernen der Entwicklung von Qualifikationen
             href: /learn
           - name: Bewertungen zum Personalisieren von Anleitungen
