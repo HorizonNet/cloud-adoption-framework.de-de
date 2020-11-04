@@ -7,12 +7,12 @@ ms.date: 10/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: e33e3e8129229229bfd3737d85032af8b33ae09a
-ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
+ms.openlocfilehash: 1a5e1db58b3818b4b17e67ebd6465e956eade0d8
+ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334390"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "93024486"
 ---
 <!-- cSpell:ignore Savision -->
 
@@ -155,7 +155,7 @@ Eine Migration zur Cloud stellt Sie zwar vor einige Herausforderungen, bietet ab
 
 - Überwachen Sie die hybride Infrastruktur und die hybriden Anwendungen über eine einfache oder mehrschichtige Architektur, in der Komponenten von Azure, anderen Cloudanbietern und Ihrem Unternehmensnetzwerk gehostet werden. Diese Komponenten können mindestens eine VM, mehrere VMs in einer Verfügbarkeitsgruppe oder VM-Skalierungsgruppe oder eine containerbasierte Anwendung umfassen, die in einer in Windows Server- oder Linux-Containern ausgeführten AKS-Instanz (Azure Kubernetes Service) bereitgestellt ist.
 
-- Verwenden Sie [Azure Arc](/azure-arc/overview), um die Server, virtuellen Computer, Kubernetes-Cluster und Datenbanken in Ihrer Umgebung so für die Verwaltung vorzubereiten, als würden sie in Azure ausgeführt. Azure Arc bietet konsistente Inventarisierung, Verwaltung, Governance und Sicherheit mit vertrauten Azure-Diensten und Verwaltungsfunktionen.
+- Verwenden Sie [Azure Arc](/azure/azure-arc/overview), um die Server, virtuellen Computer, Kubernetes-Cluster und Datenbanken in Ihrer Umgebung so für die Verwaltung vorzubereiten, als würden sie in Azure ausgeführt. Azure Arc bietet konsistente Inventarisierung, Verwaltung, Governance und Sicherheit mit vertrauten Azure-Diensten und Verwaltungsfunktionen.
 
 - Aktivieren Sie Azure Monitor für VMs und Container sowie Application Insights, um Probleme zwischen Infrastruktur und Anwendungen zu erkennen und zu diagnostizieren. Um eine genauere Analyse und Korrelation der Daten durchzuführen, die von den die Anwendung unterstützenden Komponenten oder Abhängigkeiten gesammelt werden, müssen Sie Azure Monitor-Protokolle verwenden.
 

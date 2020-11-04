@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 96d3c5280152a9baee6b327b46262c0ebaf5b69c
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 2064586262b4a0023b21fa63115245d24f346cf1
+ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88882616"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "93024503"
 ---
 <!-- cSpell:ignore WSUS -->
 
@@ -53,7 +53,7 @@ Verwenden Sie für Computer, die mit der Updateverwaltung verwaltet werden, die 
 - Azure Automation Hybrid Runbook Worker.
 - Microsoft Update oder Windows Server Update Services (WSUS) für Windows-Computer.
 
-Weitere Informationen finden Sie unter [Updateverwaltungslösung](/azure/automation/automation-update-management).
+Weitere Informationen finden Sie unter [Updateverwaltungslösung](/azure/automation/update-management/overview).
 
 > [!WARNING]
 > Bevor Sie die Updateverwaltung verwenden, müssen Sie virtuelle Computer oder ein ganzes Abonnement in Log Analytics und Azure Automation integrieren.
@@ -72,7 +72,7 @@ So wenden Sie eine Richtlinie auf eine Ressourcengruppe an:
 1. Wechseln Sie zu [Azure Automation](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts).
 1. Wählen Sie **Automation-Konten** und dann eines der aufgeführten Konten aus.
 1. Wechseln Sie zu **Konfigurationsverwaltung**.
-1. **Inventar**, **Change Management** und **State Configuration** können zum Steuern des Zustands und der betriebsbezogenen Compliance der verwalteten VMs verwendet werden.
+1. **Inventar** , **Change Management** und **State Configuration** können zum Steuern des Zustands und der betriebsbezogenen Compliance der verwalteten VMs verwendet werden.
 
 ::: zone target="chromeless"
 

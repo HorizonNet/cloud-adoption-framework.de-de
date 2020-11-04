@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e93f231d0b5749edc6216cf0338fd66931410673
-ms.sourcegitcommit: 523d3b21cab320294f54b661abf85874af9f5e9a
+ms.openlocfilehash: 078ac0e661b946d9fb493dff0b1d2ee087777726
+ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92178970"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "93024605"
 ---
 <!-- cSpell:ignore interdomain VMSS VWAN -->
 
@@ -82,9 +82,9 @@ Allerdings müssen für diese Abonnements in der Hierarchie der Sandbox-Verwaltu
 
   | Name                  |     BESCHREIBUNG                                                                                     | Hinweise zur Zuweisung |
   |-----------------------|-----------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-  | [`Deny-VNET-Peering-Cross-Subscription`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deny-VNET-Peering-Cross-Subscription.parameters.json) | Verhindert, dass VNET-Peeringverbindungen zu anderen VNETs außerhalb des Abonnements erstellt werden. | Stellen Sie sicher, dass diese Richtlinie nur der Bereichsebene der Sandbox-Verwaltungsgruppenhierarchie zugewiesen wird. |
+  | [`Deny-VNET-Peering-Cross-Subscription`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState) | Verhindert, dass VNET-Peeringverbindungen zu anderen VNETs außerhalb des Abonnements erstellt werden. | Stellen Sie sicher, dass diese Richtlinie nur der Bereichsebene der Sandbox-Verwaltungsgruppenhierarchie zugewiesen wird. |
   | [`Denied-Resources`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyAssignments-Denied-Resources.parameters.json)           | Ressourcen, deren Erstellung in den Sandbox-Abonnements verweigert wird. Dadurch wird verhindert, dass Hybridverbindungsressourcen erstellt werden *z. B. VPN/ExpressRoute/VirtualWAN* | Wählen Sie bei der Zuweisung dieser Richtlinie die folgenden Ressourcen aus, um die Erstellung folgender Komponenten zu verweigern: VPN-Gateways: `microsoft.network/vpngateways`, P2S-Gateways: `microsoft.network/p2svpngateways`, virtuelle WANs: `microsoft.network/virtualwans`, virtuelle WAN-Hubs: `microsoft.network/virtualhubs`, ExpressRoute-Leitungen: `microsoft.network/expressroutecircuits`, ExpressRoute-Gateways: `microsoft.network/expressroutegateways`, ExpressRoute-Ports: `microsoft.network/expressrouteports`, ExpressRoute-Querverbindungen: `microsoft.network/expressroutecrossconnections` und lokale Netzwerkgateways: `microsoft.network/localnetworkgateways`. | 
-  | [`Deploy-Budget-Sandbox`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyDefinitions-Deploy-Budget-Sandbox.parameters.json) | Stellt sicher, dass für jedes Sandbox-Abonnement ein Budget vorhanden ist und E-Mail-Warnungen aktiviert sind. Das Budget erhält den Namen `default-sandbox-budget` in jedem Abonnement. | Wenn die Standardwerte der Parameter während der Zuweisung der Richtlinie nicht geändert werden, wird ein Budget (`default-sandbox-budget`) mit einem Währungsschwellenwert von 1000 erstellt und bei 90% und 100% des Budgetschwellenwerts eine E-Mail-Warnung an die Eigentümer und Mitwirkenden des Abonnements (basierend auf der RBAC-Rollenzuweisung) gesendet. |
+  | [`Deploy-Budget-Sandbox`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState) | Stellt sicher, dass für jedes Sandbox-Abonnement ein Budget vorhanden ist und E-Mail-Warnungen aktiviert sind. Das Budget erhält den Namen `default-sandbox-budget` in jedem Abonnement. | Wenn die Standardwerte der Parameter während der Zuweisung der Richtlinie nicht geändert werden, wird ein Budget (`default-sandbox-budget`) mit einem Währungsschwellenwert von 1000 erstellt und bei 90% und 100% des Budgetschwellenwerts eine E-Mail-Warnung an die Eigentümer und Mitwirkenden des Abonnements (basierend auf der RBAC-Rollenzuweisung) gesendet. |
 
 ### <a name="global-networking-and-connectivity"></a>Globale Netzwerke und Konnektivität
 

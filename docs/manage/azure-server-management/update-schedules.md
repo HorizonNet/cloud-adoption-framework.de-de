@@ -7,18 +7,18 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c418233559d93b59a468caa24fe43984184898ec
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: ea11a54dcf3fe9d60dea4fd980f82b608bed3a0a
+ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574940"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "93024452"
 ---
 # <a name="create-update-schedules"></a>Erstellen von Zeitplänen für Updates
 
 Sie können Zeitpläne für Updates über das Azure-Portal oder die neuen PowerShell-Cmdlet-Module verwalten.
 
-Informationen zum Erstellen eines Zeitplans für Updates über das Azure-Portal finden Sie unter [Planen einer Updatebereitstellung](/azure/automation/automation-tutorial-update-management#schedule-an-update-deployment).
+Informationen zum Erstellen eines Zeitplans für Updates über das Azure-Portal finden Sie unter [Planen einer Updatebereitstellung](/azure/automation/update-management/deploy-updates#schedule-an-update-deployment).
 
 Das Modul `Az.Automation` unterstützt jetzt die Konfiguration der Updateverwaltung mit Azure PowerShell. Die [Version 1.7.0](https://www.powershellgallery.com/packages/Az/1.7.0) des Moduls bietet Unterstützung für das Cmdlet [New-AzAutomationUpdateManagementAzureQuery](/powershell/module/az.automation/new-azautomationupdatemanagementazurequery?view=azps-1.7.0). Mit diesem Cmdlet können Sie Tags, Speicherort und gespeicherte Suchen verwenden, um Zeitpläne für Updates für eine flexible Gruppe von Computern zu konfigurieren.
 

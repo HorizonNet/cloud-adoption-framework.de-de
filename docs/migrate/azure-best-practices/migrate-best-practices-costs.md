@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 636de72aa1dc6b58f80c1804dfd20a1c4aefc78b
-ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
+ms.openlocfilehash: 2b71028c33fcab389bff9925f0ffc93f85fbff64
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91108409"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93283400"
 ---
 <!-- docutune:casing ARO -->
 
@@ -62,11 +62,11 @@ Um eine Prognose für Ihre monatliche Rechnung für migrierte Workloads aufzuste
     ![Screenshot: Azure Migrate](./media/migrate-best-practices-costs/assess.png)
     _Abbildung 2: Azure Migrate-Bewertung_
 
-**Weitere Informationen**:
+**Weitere Informationen** :
 
-- [Verwenden](https://azure.microsoft.com/pricing/calculator) des Azure-Preisrechners.
+- Verwenden Sie den [Azure-Preisrechner](https://azure.microsoft.com/pricing/calculator).
 - Sehen Sie sich die [Übersicht zu Azure Migrate](/azure/migrate/migrate-services-overview) an.
-- [Lesen von Informationen zu](/azure/migrate/concepts-assessment-calculation) Azure Migrate-Bewertungen.
+- Lesen Sie Informationen zu [Azure Migrate-Bewertungen](/azure/migrate/concepts-assessment-calculation).
 - Erfahren Sie mehr über [Azure Database Migration Service](/azure/dms/dms-overview).
 
 ## <a name="best-practice-right-size-vms"></a>Bewährte Methode: Richtige Größe von virtuellen Computern anpassen
@@ -86,7 +86,7 @@ Sie können eine Reihe von Optionen auswählen, wenn Sie virtuelle Azure-Compute
 - Jeder Typ umfasst eine bestimmte Anzahl darin enthaltener VM-Serien.
 - Außerdem können Sie, wenn Sie eine VM innerhalb einer Serie auswählen, die VM nur innerhalb dieser Serie zentral hoch- oder herunterskalieren. Eine `DS2_v2`-Instanz kann beispielsweise bis zu `DS4_v2` hochskaliert werden, aber sie kann nicht in eine Instanz einer anderen Serie, z. B. eine `F2s_v2`-Instanz, geändert werden.
 
-**Weitere Informationen**:
+**Weitere Informationen** :
 
 - Erfahren Sie mehr zu [VM-Typen und -Größenanpassung](/azure/virtual-machines/windows/sizes) sowie zur Zuordnung von Größen zu Typen.
 - Planen Sie [Größen für VM-Instanzen](/azure/cloud-services/cloud-services-sizes-specs).
@@ -144,7 +144,7 @@ Speicherkonten können verschiedene Arten von Redundanz für Resilienz und Hochv
 | **Georedundanter Speicher (GRS)** | Schützt vor dem Ausfall einer vollständigen Region, indem Daten in einer sekundären Region repliziert werden, die mehrere hundert Kilometer vom primären Speicherort der Quelldaten entfernt ist. Ermöglicht eine Dauerhaftigkeit von mindestens 99,99999999999999 Prozent (16 Neunen) für Objekte innerhalb eines bestimmten Jahrs. | Replikatdaten sind nur verfügbar, wenn Microsoft ein Failover in die sekundäre Region initiiert. Kommt es zu einem Failover, sind Lese- und Schreibzugriff verfügbar. |
 | **Georedundanter Speicher mit Lesezugriff (RA-GRS)** | Ähnlich wie GRS. Ermöglicht eine Dauerhaftigkeit von mindestens 99,99999999999999 Prozent (16 Neunen) für Objekte innerhalb eines bestimmten Jahrs. | Ermöglicht außerdem 99,99 Prozent Leseverfügbarkeit, indem Lesezugriff aus der zweiten für GRS verwendeten Region zugelassen wird. |
 
-**Weitere Informationen**:
+**Weitere Informationen** :
 
 - Sehen Sie sich die [Preise für Azure Storage](https://azure.microsoft.com/pricing/details/storage) an.
 - Informieren Sie sich über [Azure Import/Export](/azure/storage/common/storage-import-export-service).
@@ -158,7 +158,7 @@ Speicherkonten können verschiedene Arten von Redundanz für Resilienz und Hochv
 
 Ein Portfolio, mit dem lokale Microsoft-Software mit Azure integriert wird, kann für Sie zu Wettbewerbs- und Kostenvorteilen führen. Wenn Sie zurzeit eine Betriebssystem- oder anderweitige Softwarelizenzierung über Software Assurance besitzen, können Sie diese Lizenzen mit in die Cloud nehmen, um den Azure-Hybridvorteil zu nutzen.
 
-**Weitere Informationen**:
+**Weitere Informationen** :
 
 - [Werfen Sie einen Blick auf](https://azure.microsoft.com/pricing/hybrid-benefit) den Einsparungsrechner für Azure-Hybridvorteil.
 - Weitere Informationen zu [Azure-Hybridvorteil für Windows Server](https://azure.microsoft.com/pricing/hybrid-benefit).
@@ -178,7 +178,7 @@ Bei Verwendung von Azure Reserved VM Instances zahlen Sie für VM-Instanzen 1 J
 ![Screenshot: Vergleich von nutzungsbasierter Bezahlung und Azure-Hybridvorteil mit reservierten Instanzen](./media/migrate-best-practices-costs/reserve.png)
 _Abbildung 3: Azure Reserved VM Instances_
 
-**Weitere Informationen**:
+**Weitere Informationen** :
 
 - Informieren Sie sich zu [Azure-Reservierungen](/azure/cost-management-billing/reservations/save-compute-costs-reservations).
 - Lesen Sie [Azure Reserved VM Instances: Häufig gestellte Fragen](https://azure.microsoft.com/pricing/reserved-vm-instances/#faq)
@@ -190,7 +190,7 @@ Die Wahrscheinlichkeit ist relativ hoch, dass Sie über mehr als ein Azure-Abonn
 
 Um dies zu erreichen, können Sie Azure Cost Management + Billing-APIs verwenden. Nachdem Sie dann Daten in einer zentralen Quelle aggregiert haben, z. B. Azure SQL-Datenbank, können Sie diese Daten mit Tools wie Power BI bearbeiten. Sie können aggregierte Abonnementberichte sowie detaillierte Berichte erstellen. Für Benutzer, die proaktive Einblicke in das Kostenmanagement benötigen, können Sie beispielsweise spezifische Sichten für Kosten erstellen, gegliedert nach Abteilung, Ressourcengruppe oder anderen Informationen. Sie müssen ihnen dazu keinen Vollzugriff auf Azure-Abrechnungsdaten gewähren.
 
-**Weitere Informationen**:
+**Weitere Informationen** :
 
 - Lesen Sie die [Übersicht über Azure-Nutzungs-APIs](/azure/billing/billing-consumption-api-overview).
 - Erfahren Sie mehr über das [Herstellen einer Verbindung mit Azure Consumption Insights in Power BI Desktop](/power-bi/desktop-connect-azure-consumption-insights).
@@ -231,7 +231,7 @@ Mit Azure Cost Management + Billing haben Sie folgende Möglichkeiten:
 
 - Erhalten Sie Advisor-Empfehlungen, die Ihnen zeigen, wie Sie die Effizienz optimieren und verbessern können.
 
-**Weitere Informationen**:
+**Weitere Informationen** :
 
 - Lesen Sie die [Übersicht zu Azure Cost Management + Billing](/azure/cost-management-billing/cost-management-billing-overview).
 - Erfahren Sie mehr zum [Optimieren der Cloudinvestitionen mit Azure Cost Management + Billing](/azure/cost-management-billing/costs/cost-mgt-best-practices).
@@ -250,7 +250,7 @@ Sie können die VM-Nutzung mithilfe von Microsoft-Tools überwachen, wie z. B. 
 > [!NOTE]
 > Zusätzlich zur Überwachung virtueller Computer sollten Sie weitere Netzwerkressourcen, z. B. Azure ExpressRoute und Gateways für virtuelle Netzwerke, auf zu niedrige und zu hohe Nutzung überwachen.
 
-**Weitere Informationen**:
+**Weitere Informationen** :
 
 - Lesen Sie Übersichten über [Azure Monitor](/azure/azure-monitor/overview) und [Azure Advisor](/azure/advisor/advisor-overview).
 - [Erhalten Sie Azure Advisor-Empfehlungen zu Kosten](/azure/advisor/advisor-cost-recommendations).
@@ -261,7 +261,7 @@ Sie können die VM-Nutzung mithilfe von Microsoft-Tools überwachen, wie z. B. 
 
 Häufig kann es nützlich sein, Kostengrenzen an Ressourcengruppen auszurichten. Ein Ressourcengruppenbudget hilft Ihnen bei der Nachverfolgung der zu einer Ressourcengruppe gehörigen Kosten. Sie können Warnungen auslösen und viele verschiedene Playbooks ausführen, wenn Sie Ihr Budget erreichen oder überschreiten.
 
-**Weitere Informationen**:
+**Weitere Informationen** :
 
 - Informieren Sie sich über das [Verwalten von Kosten mit Azure-Budgets](/azure/billing/billing-cost-management-budget-scenario).
 - Sehen Sie sich ein Tutorial zum [Erstellen und Verwalten eines Azure-Budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets) an.
@@ -276,7 +276,7 @@ Wenn Sie Ressourcen in Azure verschieben und die Diagnoseprotokollierung für si
 - Sie sollten sorgfältig abwägen zwischen der Optimierung Ihrer Kosten für die Protokollspeicherung und der Aufbewahrung der erforderlichen Protokolldaten.
 - Wir empfehlen Ihnen, die Protokollierung sofort nach Abschluss einer Migration zu bewerten und einzurichten, damit Sie kein Geld für die Aufbewahrung unwichtiger Protokolle aufwenden.
 
-**Weitere Informationen**:
+**Weitere Informationen** :
 
 - Erfahren Sie mehr über das [Überwachen der Nutzung und der geschätzten Kosten](/azure/azure-monitor/platform/usage-estimated-costs).
 
@@ -289,7 +289,7 @@ Das Identifizieren und Verschieben veralteter Daten in kostengünstigere Speiche
 - Profitieren Sie von Zugriffsebenen für „Allgemeinen v2“-Speicher, indem Sie weniger wichtige Daten von der heißen Speicherebene zur kalten bzw. „Archiv“-Speicherebene verschieben.
 - Verwenden Sie StorSimple zur Unterstützung beim Verschieben veralteter Daten, die auf benutzerdefinierten Richtlinien basieren.
 
-**Weitere Informationen**:
+**Weitere Informationen** :
 
 - Informieren Sie sich genauer zu [Zugriffsebenen](/azure/storage/blobs/storage-blob-storage-tiers).
 - Lesen Sie die [Übersicht über StorSimple](/azure/azure-monitor/overview).
@@ -301,7 +301,7 @@ Das Hauptziel für die Ausführung einer VM in der Cloud ist die Maximierung von
 
 Sie können einen virtuellen Computer mit Azure Automation, VM-Skalierungsgruppen, automatischem Herunterfahren und Skript- oder Drittanbieterlösungen optimieren.
 
-**Weitere Informationen**:
+**Weitere Informationen** :
 
 - Erfahren Sie mehr über die [vertikale automatische Skalierung](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-vertical-scale-reprovision).
 - [Planen des automatischen Starts einer VM](https://azure.microsoft.com/updates/azure-devtest-labs-schedule-vm-auto-start).
@@ -314,7 +314,7 @@ Azure bietet eine REST-API, die Zugriff auf die Abrechnungsinformationen Ihres M
 
 Mithilfe der Azure-Ressourcennutzungs- und -Gebührenkarten-APIs können Sie Ihre Kosten genau vorhersagen und verwalten. Die APIs werden als Ressourcenanbieter implementiert und sind in den APIs enthalten, die von Azure Resource Manager verfügbar gemacht werden.
 
-**Weitere Informationen**:
+**Weitere Informationen** :
 
 - Informieren Sie sich über die [Azure-API für Budgets](/rest/api/consumption/budgets).
 - Gewinnen Sie Erkenntnisse zur Nutzung mit den [Azure-Abrechnungs-APIs](/azure/billing/billing-usage-rate-card-overview).
@@ -325,7 +325,7 @@ VM-Workloads werden häufig im Ist-Zustand („wie besehen“) migriert, um Ausf
 
 Nachdem Sie diese Arten von Aufgaben migriert und gründlich überprüft haben, können Sie dafür die Migration zu serverlosen Technologien erwägen, z. B. Azure Functions oder Azure Batch-Aufträge. Mit diesen Lösungen können die Kosten gesenkt werden, und Sie müssen die VMs dann nicht mehr verwalten und warten.
 
-**Weitere Informationen**:
+**Weitere Informationen** :
 
 - Informationen zu [Azure Functions](https://azure.microsoft.com/services/functions).
 - Informationen zu [Azure Batch](https://azure.microsoft.com/services/batch).

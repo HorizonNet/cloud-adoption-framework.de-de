@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 65dc5c6830fd5e68c9c8a23c5b796eea18f21c3c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 1b8389e4869383be2ed03600e904a2f982d8a237
+ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571999"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "93024520"
 ---
 # <a name="enable-server-management-services-on-a-single-vm-for-evaluation"></a>Aktivieren von Serververwaltungsdiensten auf einem einzelnen virtuellen Computer zur Auswertung
 
@@ -29,7 +29,7 @@ Das Onboarding einzelner virtueller Computer (VMs) in die Azure-Serververwaltung
 
 Weitere Informationen zum Onboarding dieser Lösungen auf einzelnen virtuellen Computern finden Sie unter:
 
-- [Integrieren von Lösungen für die Updateverwaltung, Änderungsnachverfolgung und den Bestand von einem virtuellen Azure-Computer](/azure/automation/automation-onboard-solutions-from-vm)
+- [Integrieren von Lösungen für die Updateverwaltung, Änderungsnachverfolgung und den Bestand von einem virtuellen Azure-Computer](/azure/automation/change-tracking/manage-inventory-vms)
 - [Onboarding der Azure-Überwachung für VMs](/azure/azure-monitor/insights/vminsights-enable-single-vm)
 
 ## <a name="next-steps"></a>Nächste Schritte

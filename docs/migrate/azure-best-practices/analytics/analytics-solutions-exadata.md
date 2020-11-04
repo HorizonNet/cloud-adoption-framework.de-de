@@ -7,15 +7,13 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 6498aa455b196a8648902f42c22131c146ef48d6
-ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
+ms.openlocfilehash: b4425cfe78253f4fbbe1db910ef9635a19f114d4
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334849"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93283263"
 ---
-<!-- cSpell:ignore Exadata SSMA -->
-
 # <a name="azure-synapse-analytics-solutions-and-migration-for-an-oracle-data-warehouse"></a>Azure Synapse Analytics-Lösungen und Migration für ein Oracle-Data Warehouse
 
 Ein Oracle-Data Warehouse-Schema unterscheidet sich in mehrfacher Hinsicht von Azure Synapse Analytics. Zu den Unterschieden gehören Datenbanken, Datentypen und eine Reihe von Oracle Database-Objekttypen, die in Azure Synapse nicht unterstützt werden.

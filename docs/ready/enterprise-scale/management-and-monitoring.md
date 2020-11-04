@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: cf4a7d9b708f211c6b848a2ddd7672af143adc34
-ms.sourcegitcommit: 44fb6deee30fd6ffc80b5d2e66544a50e8405c73
+ms.openlocfilehash: 605b0041ed4cfab683b031b46a5f8f3a769063b2
+ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91492705"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "93024554"
 ---
 # <a name="management-and-monitoring"></a>Verwaltung und Überwachung
 
@@ -61,7 +61,7 @@ _Abbildung 1: Plattformverwaltung und -überwachung._
 - Exportieren Sie Protokolle in Azure Storage, wenn Protokolle länger als zwei Jahre aufbewahrt werden müssen. Verwenden Sie unveränderlichen Speicher mit WORM-Richtlinie (Write Once, Read Many), um Daten für einen vom Benutzer angegebenen Zeitraum festzulegen, dass sie weder gelöscht noch geändert werden können.
 - Verwenden Sie Azure Policy für Zugriffssteuerung und Erstellung von Compliance-Berichten. Mit Azure Policy können organisationsweite Einstellungen erzwungen werden, um die konsistente Richtlinieneinhaltung und die schnelle Erkennung von Verstößen sicherzustellen. Weitere Informationen finden Sie unter [Grundlegendes zu Azure Policy-Auswirkungen](/azure/governance/policy/concepts/effects).
 - Überwachen Sie VM-Konfigurationsdrifts auf Gastsystemen mit Azure Policy. Wenn Sie [Gastkonfiguration](/azure/governance/policy/concepts/guest-configuration)-Überwachungsfunktionen über Richtlinien aktivieren, können App-Team-Workloads Funktionen direkt mit geringem Aufwand nutzen.
-- Verwenden Sie die [Updateverwaltung in Azure Automation](/azure/automation/automation-update-management) als langfristigen Patchingmechanismus für Windows- und Linux-VMs. Durch die Erzwingung von Konfigurationen für die Updateverwaltung mithilfe von Richtlinien wird sichergestellt, dass alle VMs von der Patchverwaltung erfasst werden und dass Anwendungsteams die Patchbereitstellung für ihre VMs verwalten können. Zudem sind für das zentrale IT-Team Sichtbarkeit und Erzwingung für alle VMs sichergestellt.
+- Verwenden Sie die [Updateverwaltung in Azure Automation](/azure/automation/update-management/overview) als langfristigen Patchingmechanismus für Windows- und Linux-VMs. Durch die Erzwingung von Konfigurationen für die Updateverwaltung mithilfe von Richtlinien wird sichergestellt, dass alle VMs von der Patchverwaltung erfasst werden und dass Anwendungsteams die Patchbereitstellung für ihre VMs verwalten können. Zudem sind für das zentrale IT-Team Sichtbarkeit und Erzwingung für alle VMs sichergestellt.
 - Verwenden Sie Network Watcher, um den Datenverkehrsfluss über [Network Watcher-NSG-Datenflussprotokolle v2](/azure/network-watcher/network-watcher-nsg-flow-logging-overview) proaktiv zu überwachen. [Traffic Analytics](/azure/network-watcher/traffic-analytics) analysiert NSG-Datenflussprotokolle, um umfassende Einblicke in den IP-Datenverkehr in einem virtuellen Netzwerk zu erhalten und wichtige Informationen für die effektive Verwaltung und Überwachung bereitzustellen. Traffic Analytics liefert Informationen wie die folgenden: Hosts und Anwendungsprotokolle mit der meisten Kommunikation, Hostpaare mit der meisten gemeinsamen Kommunikation, erlaubter/blockierter Datenverkehr, ein-/ausgehender Datenverkehr, offene Internetports, die Regeln, die am meisten blockieren, die Datenverkehrsverteilung nach Azure-Rechenzentrum, virtuelles Netzwerk, Subnetze oder nicht autorisierte Netzwerke.
 - Verhindern Sie mit Ressourcensperren ein versehentliches Löschen kritischer freigegebener Ressourcen.
 - Verwenden Sie [Verweigerungsrichtlinien](/azure/governance/policy/concepts/effects#deny), um Azure AD RBAC-Zuweisungen zu ergänzen. Mit Verweigerungsrichtlinien wird verhindert, dass Ressourcen bereitgestellt und konfiguriert werden, die nicht den definierten Standards entsprechen. Dazu wird verhindert, dass die Anforderung an den Ressourcenanbieter gesendet wird. Durch die Kombination von Verweigerungsrichtlinien und RBAC-Zuweisungen wird sichergestellt, dass die geeigneten Überwachungsmechanismen implementiert werden, um zu erzwingen, *wer* Ressourcen bereitstellen und konfigurieren kann und *welche* Ressourcen bereitgestellt und konfiguriert werden können.

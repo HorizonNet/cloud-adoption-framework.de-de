@@ -9,15 +9,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: cd4f4c579aa2edfece69e05feb44bcd344380bf7
-ms.sourcegitcommit: ba6747b5571b342cb3c4bfaf5b96da0946ebba31
+ms.openlocfilehash: 1a52864576b7965a10a2fb7a4f3ea773cd4979c9
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89557042"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93282929"
 ---
-<!-- cSpell:ignore Cloudamize agentless uncontained SSMA Carbonite Movere -->
-
 # <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>Bereitstellen von Workloads und Assets (Infrastruktur, Apps und Daten)
 
 In dieser Phase verwenden Sie die Ausgabe der Bewertungsphase, um die Migration der Umgebung einzuleiten. Dieser Leitfaden hilft Ihnen, die geeigneten Tools zu identifizieren, um den Zustand „Abgeschlossen“ zu erreichen. Hierbei lernen Sie native Tools, Tools von Drittanbietern und Projektmanagementtools. kennen.
@@ -45,7 +43,7 @@ Azure Migrate ist ein zentralisierter Hub für die Bewertung und die Migration v
 Führen Sie die folgenden Schritte aus, um eine Migration mit Azure Migrate durchzuführen:
 
 1. Suchen Sie unter **Alle Dienste** nach Azure Migrate. Wählen Sie **Azure Migrate** aus, um den Vorgang fortzusetzen.
-1. Wählen Sie **Tool hinzufügen**, um Ihr Migrationsprojekt zu starten.
+1. Wählen Sie **Tool hinzufügen** , um Ihr Migrationsprojekt zu starten.
 1. Wählen Sie das Abonnement, die Ressourcengruppe und die Geografie aus, für die die Migration durchgeführt werden soll.
 1. Wählen Sie **Bewertungstool auswählen** > **Azure Migrate: Serverbewertung** > **Weiter** aus.
 1. Wählen Sie **Überprüfen + Tools hinzufügen** aus, und überprüfen Sie die Konfiguration. Wählen Sie **Tools hinzufügen** aus, um den Auftrag zur Erstellung des Migrationsprojekts und zur Registrierung der ausgewählten Lösungen zu initiieren.
@@ -173,9 +171,9 @@ Der Assistent für Datenbankexperimente (DEA) ist eine neue A/B-Testlösung für
 
 Der Assistent für Datenbankexperimente enthält die folgenden Workflowaktivitäten:
 
-- **Erfassen**: Der erste Schritt des SQL Server-A/B-Tests ist die Erfassung einer Ablaufverfolgung auf Ihrem Quellserver. Der Quellserver ist normalerweise der Produktionsserver.
-- **Wiedergeben**: Im zweiten Schritt des SQL Server-A/B-Tests wird die erfasste Ablaufverfolgungsdatei auf Ihren Zielservern wiedergegeben. Anschließend werden umfangreiche Ablaufverfolgungen aus den Wiedergaben zur Analyse gesammelt.
-- **Analyse**: Der letzte Schritt besteht darin, einen Analysebericht unter Verwendung der Wiedergabeablaufverfolgungen zu generieren. Anhand des Analyseberichts erhalten Sie wertvolle Einblicke in die Auswirkungen der vorgeschlagenen Änderung auf die Leistung.
+- **Erfassen** : Der erste Schritt des SQL Server-A/B-Tests ist die Erfassung einer Ablaufverfolgung auf Ihrem Quellserver. Der Quellserver ist normalerweise der Produktionsserver.
+- **Wiedergeben** : Im zweiten Schritt des SQL Server-A/B-Tests wird die erfasste Ablaufverfolgungsdatei auf Ihren Zielservern wiedergegeben. Anschließend werden umfangreiche Ablaufverfolgungen aus den Wiedergaben zur Analyse gesammelt.
+- **Analyse** : Der letzte Schritt besteht darin, einen Analysebericht unter Verwendung der Wiedergabeablaufverfolgungen zu generieren. Anhand des Analyseberichts erhalten Sie wertvolle Einblicke in die Auswirkungen der vorgeschlagenen Änderung auf die Leistung.
 
 Weitere Informationen finden Sie unter
 
