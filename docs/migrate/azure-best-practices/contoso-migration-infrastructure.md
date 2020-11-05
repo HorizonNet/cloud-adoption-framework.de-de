@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7aba1b915bf1cff47e26407940c871496cd640be
-ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
+ms.openlocfilehash: 3f531866d23bf684a7127df0bf8777c0d23add59
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334934"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93283414"
 ---
 <!-- cSpell:ignore untrust CIDR RRAS CONTOSODC SYSVOL ITIL NSGs ASGs -->
 
@@ -130,7 +130,7 @@ Weitere Informationen zu Identitätsmodellen von Microsoft 365 und zu Azure Act
 
 Contoso verwendet die Azure AD Free-Edition, die in Azure-Abonnements enthalten ist. Die Administratoren von Contoso erstellen ein Azure AD-Verzeichnis:
 
-1. Im [Azure-Portal](https://portal.azure.com) navigieren sie zu **Ressource erstellen** > **Identität** > **Azure Active Directory** .
+1. Im [Azure-Portal](https://portal.azure.com) navigieren sie zu **Ressource erstellen** > **Identität** > **Azure Active Directory**.
 
 1. Sie geben in **Verzeichnis erstellen** einen Namen für das Verzeichnis, einen Anfangsdomänennamen und die Region an, in der das Verzeichnis erstellt werden soll.
 
@@ -143,7 +143,7 @@ Contoso verwendet die Azure AD Free-Edition, die in Azure-Abonnements enthalten 
 
 ### <a name="add-the-domain-name"></a>Hinzufügen des Domänennamens
 
-Die Administratoren bei Contoso müssen den Standarddomänennamen als benutzerdefinierten Domänennamen zu Azure AD hinzufügen, um diesen verwenden zu können. Diese Option ermöglicht es ihnen, vertraute Benutzernamen zuzuweisen. Beispielsweise kann sich ein Benutzer mit der E-Mail-Adresse `billg@contoso.com`, anstelle von `billg@contosomigration.microsoft.com` anmelden.
+Die Administratoren bei Contoso müssen den Standarddomänennamen als benutzerdefinierten Domänennamen zu Azure AD hinzufügen, um diesen verwenden zu können. Diese Option ermöglicht es ihnen, vertraute Benutzernamen zuzuweisen. Beispielsweise kann sich ein Benutzer mit der E-Mail-Adresse `billg@contoso.com`, anstelle von `billg@contosomigration.onmicrosoft.com` anmelden.
 
 Für die Einrichtung eines benutzerdefinierten Domänennamens müssen die Administratoren den Namen zum Verzeichnis hinzufügen, einen DNS-Eintrag einfügen und den Namen in Azure AD bestätigen.
 
@@ -217,7 +217,7 @@ Um die Integration zu erleichtern, verwendet Contoso das [Azure AD Connect-Tool]
 
     _Abbildung 8: Herunterladen von Azure AD Connect_
 
-2. Die Administratoren starten die Installation von `AzureADConnect.msi` über die **Express-Einstellungen** . Dies ist die gebräuchlichste Installation, die für Topologien mit einer einzelnen Gesamtstruktur und mit Synchronisierung von Kennworthashes zur Authentifizierung verwendet werden kann.
+2. Die Administratoren starten die Installation von `AzureADConnect.msi` über die **Express-Einstellungen**. Dies ist die gebräuchlichste Installation, die für Topologien mit einer einzelnen Gesamtstruktur und mit Synchronisierung von Kennworthashes zur Authentifizierung verwendet werden kann.
 
     ![Screenshot: Azure AD Connect-Assistent](./media/contoso-migration-infrastructure/ad-connect-wiz1.png)
 
@@ -708,7 +708,7 @@ Bei der Konfiguration der Identitäts- und Zugriffssteuerung hat Contoso bereits
 
 Der Dienst „Azure Policy“ führt eine Bewertung von Ressourcen durch, indem er überprüft, welche nicht mit den Richtliniendefinitionen konform sind. So kann beispielsweise eine Richtlinie vorhanden sein, die nur bestimmte Arten von virtuellen Computern zulässt oder ein bestimmtes Tag für Ressourcen erfordert.
 
-Richtlinien legen eine Richtliniendefinition fest, und die Richtlinienzuweisung gibt den Umfang an, in dem eine Richtlinie angewendet werden soll. Der Umfang kann von einer Verwaltungsgruppe bis zu einer Ressourcengruppe reichen. [Weitere Informationen](/azure/governance/policy/tutorials/create-and-manage) zum Erstellen und Verwalten von Richtlinien.
+Richtlinien legen eine Richtliniendefinition fest, und die Richtlinienzuweisung gibt den Umfang an, in dem eine Richtlinie angewendet werden soll. Der Umfang kann von einer Verwaltungsgruppe bis zu einer Ressourcengruppe reichen. Erfahren Sie, wie Sie [Richtlinien erstellen und verwalten](/azure/governance/policy/tutorials/create-and-manage).
 
 Contoso möchte mit zwei Richtlinien beginnen: Eine Richtlinie soll sicherstellen, dass Ressourcen nur in den Regionen `East US 2` und `Central US` bereitgestellt werden können. Eine Richtlinie soll die VM-SKUs auf ausschließlich genehmigte SKUs beschränken. Die Absicht dahinter ist, den Einsatz von teuren VM-SKUs zu verhindern.
 
@@ -716,7 +716,7 @@ Contoso möchte mit zwei Richtlinien beginnen: Eine Richtlinie soll sicherstelle
 
 Contoso verwendet die integrierte Richtliniendefinition **Zulässige Standorte** zum Einschränken von Ressourcenregionen.
 
-1. Wählen Sie im Azure-Portal **Alle Dienste** aus, und suchen Sie nach **Richtlinie** .
+1. Wählen Sie im Azure-Portal **Alle Dienste** aus, und suchen Sie nach **Richtlinie**.
 2. Wählen Sie **Zuweisungen** > **Richtlinie zuweisen** aus.
 3. Wählen Sie in der Liste der Richtlinien **Zulässige Standorte** aus.
 4. Legen Sie **Bereich** auf den Namen des Azure-Abonnements fest, und wählen Sie die zwei Regionen in der Zulassungsliste aus.
@@ -744,7 +744,6 @@ _Abbildung 40: Eine SKU-Richtlinie_
 Richtlinien treten sofort in Kraft, und Contoso kann Ressourcen auf Konformität überprüfen. Wählen Sie im Azure-Portal den Link **Compliance** aus. Das Compliance-Dashboard wird angezeigt. Sie können einen Drilldown ausführen, um weitere Details zu erhalten.
 
 ![Screenshot: Compliancedashboard](./media/contoso-migration-infrastructure/policy-compliance.png)
-
 
 _Abbildung 41: Richtlinienkonformität_
 

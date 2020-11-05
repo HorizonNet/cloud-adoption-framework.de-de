@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 18551e264163ebc8342da9c92c7a438fd1163cf9
-ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
+ms.openlocfilehash: 87dfb5ed9a579d85b4ab26b92ad67ad145df8258
+ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334866"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "93024622"
 ---
 <!-- docutune:disable -->
 <!-- cSpell:ignore appcs arck cdnp cdne osdisk westeurope usgovia accountlookup messagequery -->
@@ -93,28 +93,29 @@ Diese Liste enthält empfohlene Azure-Ressourcentypenpräfixe, die Sie verwenden
 
 ### <a name="networking"></a>Netzwerk
 
-| Ressourcentyp                       | Namenspräfix |
-|----------------------------------|-------------|
-| Virtuelles Netzwerk                  | vnet-       |
-| Subnet                           | snet-       |
-| Peering in virtuellen Netzwerken          | peer-       |
-| Netzwerkschnittstelle (NIC)          | nic-        |
-| Öffentliche IP-Adresse                | pip-        |
-| Lastenausgleich (intern)         | lbi-        |
-| Lastenausgleich (extern)         | lbe-        |
-| Netzwerksicherheitsgruppe (NSG)     | nsg-        |
-| Anwendungssicherheitsgruppe (ASG) | asg-        |
-| Lokales Netzwerkgateway            | lgw-        |
-| Gateway des virtuellen Netzwerks          | vgw-        |
-| VPN-Verbindung                   | cn-         |
-| ExpressRoute-Verbindung             | erc-        |
-| Anwendungsgateway              | agw-        |
-| Routingtabelle                      | route-      |
-| Benutzerdefinierte Route (User Defined Route, UDR)         | udr-        |
-| Traffic Manager-Profil          | traf-       |
-| Front Door                       | fd-         |
-| CDN-Profil                      | cdnp-       |
-| CDN-Endpunkt                     | cdne-       |
+| Ressourcentyp                            | Namenspräfix |
+|---------------------------------------|-------------|
+| Virtuelles Netzwerk                       | vnet-       |
+| Subnet                                | snet-       |
+| Peering in virtuellen Netzwerken               | peer-       |
+| Netzwerkschnittstelle (NIC)               | nic-        |
+| Öffentliche IP-Adresse                     | pip-        |
+| Lastenausgleich (intern)              | lbi-        |
+| Lastenausgleich (extern)              | lbe-        |
+| Netzwerksicherheitsgruppe (NSG)          | nsg-        |
+| Anwendungssicherheitsgruppe (ASG)      | asg-        |
+| Lokales Netzwerkgateway                 | lgw-        |
+| Gateway des virtuellen Netzwerks               | vgw-        |
+| VPN-Verbindung                        | cn-         |
+| ExpressRoute-Verbindung                  | erc-        |
+| Anwendungsgateway                   | agw-        |
+| Routingtabelle                           | route-      |
+| Benutzerdefinierte Route (User Defined Route, UDR)              | udr-        |
+| Traffic Manager-Profil               | traf-       |
+| Front Door                            | fd-         |
+| CDN-Profil                           | cdnp-       |
+| CDN-Endpunkt                          | cdne-       |
+| Web Application Firewall-Richtlinie (WAF) | waf         |
 
 ### <a name="compute-and-web"></a>Compute und Web
 
@@ -153,6 +154,7 @@ Diese Liste enthält empfohlene Azure-Ressourcentypenpräfixe, die Sie verwenden
 | Azure SQL Data Warehouse       | sqldw-      |
 | Azure Synapse Analytics        | syn-        |
 | SQL Server Stretch Database    | sqlstrdb-   |
+| Verwaltete SQL-Instanz           | sqlmi-      |
 
 ### <a name="storage"></a>Storage
 

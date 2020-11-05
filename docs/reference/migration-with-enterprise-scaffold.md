@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ROBOTS: NOINDEX
-ms.openlocfilehash: ff6f659e66d843b2c0abed5c04e07f8db6e32cdd
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 29c4ed2fa786d9c697ba14adcc92c73e93bb4b73
+ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776345"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "93024571"
 ---
 <!-- docutune:disable -->
 <!-- cSpell:ignore subscope ITSM Hashi -->
@@ -78,7 +78,7 @@ Die drei allgemeinen Muster für EA-Registrierungen sind:
 
   ![Das auf geografischen Regionen basierende Muster](../_images/reference/geographic.png)
 
-Jedes dieser Muster hat seine Vorteile, Organisationen nutzen aber zunehmend das Muster der **Unternehmenseinheiten**, da dieses sowohl Flexibilität beim Erstellen eines Kostenmodells für die Organisation auch eine große Bandbreite an Steuerungsmöglichkeiten bietet. Die Microsoft-Unternehmensgruppe „Core Engineering and Operations“ hat eine effektive Teilmenge des auf **Unternehmenseinheiten** basierenden Musters erstellt. Die Hierarchieebenen hierbei sind **Federal**, **State** und **Local**. Weitere Informationen finden Sie unter [Organisieren Ihrer Abonnements und Ressourcengruppen](../ready/azure-best-practices/organize-subscriptions.md).
+Jedes dieser Muster hat seine Vorteile, Organisationen nutzen aber zunehmend das Muster der **Unternehmenseinheiten** , da dieses sowohl Flexibilität beim Erstellen eines Kostenmodells für die Organisation auch eine große Bandbreite an Steuerungsmöglichkeiten bietet. Die Microsoft-Unternehmensgruppe „Core Engineering and Operations“ hat eine effektive Teilmenge des auf **Unternehmenseinheiten** basierenden Musters erstellt. Die Hierarchieebenen hierbei sind **Federal** , **State** und **Local**. Weitere Informationen finden Sie unter [Organisieren Ihrer Abonnements und Ressourcengruppen](../ready/azure-best-practices/organize-subscriptions.md).
 
 ### <a name="azure-management-groups"></a>Azure-Verwaltungsgruppen
 
@@ -218,7 +218,7 @@ Das AzSK umfasst eine Vielzahl von Tools, Skripts und Informationen, die ein wic
 
 ### <a name="azure-update-management"></a>Azure-Updateverwaltung
 
-Eine der wichtigsten Aufgaben bei der Sicherung Ihrer Umgebung ist Folgendes: Sie müssen sicherstellen, dass immer die neuesten Patches auf Ihre Server aufgespielt werden. Es gibt verschiedene Tools für diesen Zweck. Azure bietet die [Azure-Updateverwaltung](/azure/automation/automation-update-management) für die Identifikation und das Rollout wichtiger Betriebssystempatches. Die Updateverwaltung nutzt dazu Azure Automation (dieser Dienst wird weiter unten in diesem Leitfaden im Abschnitt [Automatisieren](#automate) erläutert).
+Eine der wichtigsten Aufgaben bei der Sicherung Ihrer Umgebung ist Folgendes: Sie müssen sicherstellen, dass immer die neuesten Patches auf Ihre Server aufgespielt werden. Es gibt verschiedene Tools für diesen Zweck. Azure bietet die [Azure-Updateverwaltung](/azure/automation/update-management/overview) für die Identifikation und das Rollout wichtiger Betriebssystempatches. Die Updateverwaltung nutzt dazu Azure Automation (dieser Dienst wird weiter unten in diesem Leitfaden im Abschnitt [Automatisieren](#automate) erläutert).
 
 ## <a name="monitor-and-alerts"></a>Überwachung und Warnungen
 
@@ -228,9 +228,9 @@ Das Sammeln und Analysieren von Telemetriedaten, die Einblicke in die Aktivität
 - **Metriken** sind Zahlendaten, die von einer Ressource ausgegeben werden und die Leistung und Integrität einer Ressource beschreiben.
 - **Diagnoseprotokolle** werden von einem Azure-Dienst ausgegeben und stellen umfangreiche und in kurzen Abständen erfasste Daten zum Betrieb dieses Diensts bereit.
 
-Sie können diese Daten auf verschiedenen Ebenen betrachten und Aktionen daraus ableiten, und die Daten werden kontinuierlich verbessert. Azure bietet **gemeinsam genutzte**, **grundlegende** und **tiefgreifende** Überwachungsfunktionen für Azure-Ressourcen durch die in der Abbildung unten gezeigten Dienste.
+Sie können diese Daten auf verschiedenen Ebenen betrachten und Aktionen daraus ableiten, und die Daten werden kontinuierlich verbessert. Azure bietet **gemeinsam genutzte** , **grundlegende** und **tiefgreifende** Überwachungsfunktionen für Azure-Ressourcen durch die in der Abbildung unten gezeigten Dienste.
 
-![Überwachung](../_images/reference/monitoring.png)
+![Diagramm, das die umfassende Anwendungsüberwachung, die umfassende Infrastrukturüberwachung, Kernüberwachung und gemeinsam genutzte Funktionen darstellt.](../_images/reference/monitoring.png)
 
 ### <a name="shared-capabilities"></a>Gemeinsam genutzte Funktionen
 
@@ -248,7 +248,7 @@ Sie können diese Daten auf verschiedenen Ebenen betrachten und Aktionen daraus 
 
 - **Azure Service Health:** Azure Service Health erkennt Probleme bei Azure-Diensten, die sich auf Ihre Anwendungen auswirken können, und unterstützt Sie bei der Planung von Wartungsfenstern.
 
-- **Aktivitätsprotokoll:** Im Aktivitätsprotokoll werden sämtliche Vorgänge beschrieben, die für Ressourcen in Ihren Abonnements ausgeführt wurden. Sie erhalten ein Überwachungsprotokoll, mit dem Sie das _Was_, _Wer_ und _Wann_ aller Erstellungs-, Aktualisierungs- und Löschvorgänge in Ressourcen ermitteln können. Aktivitätsprotokollereignisse werden auf der Plattform gespeichert und sind 90 Tage verfügbar. Sie können Aktivitätsprotokolle in Log Analytics einspeisen, um eine längere Beibehaltungsdauer sowie tiefgreifendere Abfragen und Analysen über mehrere Ressourcen hinweg zu erzielen.
+- **Aktivitätsprotokoll:** Im Aktivitätsprotokoll werden sämtliche Vorgänge beschrieben, die für Ressourcen in Ihren Abonnements ausgeführt wurden. Sie erhalten ein Überwachungsprotokoll, mit dem Sie das _Was_ , _Wer_ und _Wann_ aller Erstellungs-, Aktualisierungs- und Löschvorgänge in Ressourcen ermitteln können. Aktivitätsprotokollereignisse werden auf der Plattform gespeichert und sind 90 Tage verfügbar. Sie können Aktivitätsprotokolle in Log Analytics einspeisen, um eine längere Beibehaltungsdauer sowie tiefgreifendere Abfragen und Analysen über mehrere Ressourcen hinweg zu erzielen.
 
 ### <a name="deep-application-monitoring"></a>Umfassende Anwendungsüberwachung
 
@@ -305,9 +305,9 @@ Einer der vielen Aspekte, mit denen sich der Reifegrad von Organisationen bemess
 
 Ihnen steht eine Vielzahl von Tools zur Verfügung – von Erstanbietertools wie Azure Automation, Event Grid und Azure CLI bis hin zu einer umfangreichen Menge an Drittanbietertools wie Terraform, Jenkins, Chef und Puppet. Zu den wichtigsten Automatisierungstools gehören Azure Automation, Event Grid und die Azure Cloud Shell.
 
-- **Azure Automation**: Mit dieser cloudbasierten Funktion können Sie Runbooks erstellen (in PowerShell oder Python) und damit Prozesse automatisieren, Ressourcen konfigurieren und sogar Patches aufspielen. [Azure Automation](/azure/automation/automation-intro) bietet eine umfangreiche Palette an plattformübergreifenden Funktionen, die von großer Bedeutung für Ihre Bereitstellung sind, aber aufgrund ihrer Vielzahl hier nicht im Detail erläutert werden können.
-- **Event Grid**: Dabei handelt es sich um ein vollständig verwaltetes Ereignisroutingsystem, mit dem Sie auf Ereignisse in Ihrer Azure-Umgebung reagieren können. So wie Azure Automation das Bindegewebe weit entwickelter Cloudorganisationen ist, stellt [Event Grid](/azure/event-grid) das Bindegewebe einer guten Automatisierungslösung dar. Mit Event Grid können Sie eine einfache serverlose Aktion erstellen, die bei jeder Erstellung einer neuen Ressource eine E-Mail an einen Administrator sendet und diese Ressource in einer Datenbank protokolliert. Event Grid kann Sie auch benachrichtigen, wenn eine Ressource gelöscht wurde, und das Element aus der Datenbank entfernen.
-- **Azure Cloud Shell**: Dies ist eine interaktive, browserbasierte [Shell](/azure/cloud-shell/overview) für die Verwaltung von Ressourcen in Azure. Sie stellt eine vollständige Umgebung für PowerShell oder Bash bereit, die nach Bedarf gestartet (und für Sie verwaltet) wird, sodass Sie eine konsistente Umgebung erhalten, in der Sie Ihre Skripts ausführen können. Die Azure Cloud Shell bietet Zugriff auf weitere wichtige und bereits installierte Tools zum Automatisieren Ihrer Umgebung: [Azure CLI](/cli/azure/get-started-with-azure-cli?view=azure-cli-latest), [Terraform](/azure/virtual-machines/linux/terraform-install-configure) sowie eine ständig wachsende Liste zusätzlicher [Tools](https://azure.microsoft.com/updates/cloud-shell-new-cli-tools-and-font-size-selection), mit denen Sie Container, Datenbanken (sqlcmd) und vieles mehr verwalten können.
+- **Azure Automation** : Mit dieser cloudbasierten Funktion können Sie Runbooks erstellen (in PowerShell oder Python) und damit Prozesse automatisieren, Ressourcen konfigurieren und sogar Patches aufspielen. [Azure Automation](/azure/automation/automation-intro) bietet eine umfangreiche Palette an plattformübergreifenden Funktionen, die von großer Bedeutung für Ihre Bereitstellung sind, aber aufgrund ihrer Vielzahl hier nicht im Detail erläutert werden können.
+- **Event Grid** : Dabei handelt es sich um ein vollständig verwaltetes Ereignisroutingsystem, mit dem Sie auf Ereignisse in Ihrer Azure-Umgebung reagieren können. So wie Azure Automation das Bindegewebe weit entwickelter Cloudorganisationen ist, stellt [Event Grid](/azure/event-grid) das Bindegewebe einer guten Automatisierungslösung dar. Mit Event Grid können Sie eine einfache serverlose Aktion erstellen, die bei jeder Erstellung einer neuen Ressource eine E-Mail an einen Administrator sendet und diese Ressource in einer Datenbank protokolliert. Event Grid kann Sie auch benachrichtigen, wenn eine Ressource gelöscht wurde, und das Element aus der Datenbank entfernen.
+- **Azure Cloud Shell** : Dies ist eine interaktive, browserbasierte [Shell](/azure/cloud-shell/overview) für die Verwaltung von Ressourcen in Azure. Sie stellt eine vollständige Umgebung für PowerShell oder Bash bereit, die nach Bedarf gestartet (und für Sie verwaltet) wird, sodass Sie eine konsistente Umgebung erhalten, in der Sie Ihre Skripts ausführen können. Die Azure Cloud Shell bietet Zugriff auf weitere wichtige und bereits installierte Tools zum Automatisieren Ihrer Umgebung: [Azure CLI](/cli/azure/get-started-with-azure-cli?view=azure-cli-latest), [Terraform](/azure/virtual-machines/linux/terraform-install-configure) sowie eine ständig wachsende Liste zusätzlicher [Tools](https://azure.microsoft.com/updates/cloud-shell-new-cli-tools-and-font-size-selection), mit denen Sie Container, Datenbanken (sqlcmd) und vieles mehr verwalten können.
 
 Die Automatisierung ist ein Vollzeitjob und wird sehr schnell zu einer der wichtigsten operativen Aufgaben in Ihrem Cloudteam. Organisationen, die die Automatisierung in den Vordergrund stellen, sind erfolgreicher bei der Verwendung von Azure:
 

@@ -3,16 +3,16 @@ title: Geschäftsergebnisse von Transformationsprozessen
 description: Nutzen Sie das Framework für die Cloudeinführung für Azure, um die mit Cloudtransformationen verbundenen Geschäftsergebnisse zu verstehen.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 03/27/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: d0c057d690fd5824346e5b7e0188d8d1fe83f8c3
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 88cdc53fcc9fafc42c09a6cec7d509307c4fb73e
+ms.sourcegitcommit: 03f2c9cffc25690dcc5f8215f894e898d0f4ad0e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884979"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344039"
 ---
 # <a name="what-business-outcomes-are-associated-with-transformation-journeys"></a>Welche Geschäftsergebnisse sind mit Transformationsprozessen verbunden?
 
@@ -30,6 +30,7 @@ Nachfolgend sind einige Geschäftsergebnisse aufgeführt, die häufig Gespräche
 - **Marketing:** Gewinnen und binden Sie Kunden, bauen Sie einen guten Ruf auf.
 - **Vertrieb:** Steigern Sie den Umsatz, verbessern Sie den Lebenszykluswert Ihrer Kunden.
 - **Personalverwaltung:** Binden, gewinnen und stärken Sie Ihre Mitarbeiter.
+- **Führungskräfte:** Erfüllen der Anforderungen an das Marktwachstum und Metriken zur Umweltverträglichkeit
 
 ## <a name="sample-outcomes-by-category"></a>Beispielergebnisse nach Kategorien
 
@@ -68,6 +69,12 @@ Erfahren Sie mehr über [Kundenbindungsergebnisse](./engagement-outcomes.md).
 Leistung und Zuverlässigkeit werden vorausgesetzt. Wenn einer der beiden Faktoren ins Stocken gerät, kann der Imageverlust unangenehm und nachhaltig sein.
 
 Erfahren Sie mehr über [Leistungsergebnisse](./performance-outcomes.md).
+
+### <a name="sustainability-goals"></a>Nachhaltigkeitsziele
+
+Organisationen sprechen immer häufiger über Umwelt- und Nachhaltigkeitsziele.
+
+Erfahren Sie mehr über [Nachhaltigkeitsziele](./sustainability.md).
 
 Jedes der in den obigen Kategorien aufgeführten Geschäftsergebnisse kann dazu beitragen, ein zielgerichtetes Gespräch zwischen den Mitgliedern der Teams aus dem betriebswirtschaftlichen und technischen Bereich zu ermöglichen. Sie sollten die Gespräche aber nicht auf diese generischen Beispiele beschränken. Das Verständnis der spezifischen Bedürfnisse Ihres eigenen Unternehmens und die Entwicklung von entsprechenden Ergebnissen maximiert den Wert einer Cloudtransformation.
 

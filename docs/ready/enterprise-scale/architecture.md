@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: csu
-ms.openlocfilehash: 7338c715015b838df95ffdfdc0f9368e70f083c2
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: c23bfed62f42e5f6a6d811f0c962d1ace846665b
+ms.sourcegitcommit: c8979feb0efeb54dcef7a0b5e4084ae37016020a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885183"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93066519"
 ---
 # <a name="cloud-adoption-framework-enterprise-scale-landing-zone-architecture"></a>Cloud Adoption Framework – Architektur für Zielzonen auf Unternehmensebene
 
@@ -25,17 +25,9 @@ Die Architektur für Cloud Adoption Framework-Zielzonen auf Unternehmensniveau s
 
 Nicht alle Unternehmen verwenden Azure gleich, sodass die Architektur für Cloud Adoption Framework-Zielzonen auf Unternehmensniveau von Kunde zu Kunde unterschiedlich ist. Basierend auf den technischen Überlegungen und Entwurfsempfehlungen in diesem Leitfaden müssen Sie je nach Szenario Ihrer Organisation daher unterschiedliche Faktoren gegeneinander abwägen. Gewisse Abweichungen werden erwartet. Wenn Sie jedoch die wichtigsten Empfehlungen befolgen, ebnet die resultierende Zielarchitektur für Ihre Organisation den Weg für eine nachhaltigere Skalierung.
 
-## <a name="landing-zone-expanded-definition"></a>Zielzone: Erweiterte Definition
+## <a name="landing-zone-in-enterprise-scale"></a>Zielzone auf Unternehmensebene
 
-Unter [Überlegungen zu Zielzonen](../../ready/considerations/index.md) finden Sie eine detaillierte Definition des Begriffs _Zielzone_. Für Unternehmen, die eine Cloud Adoption Framework-Zielzone auf Unternehmensniveau implementieren möchten, ist jedoch eine noch genauere Definition erforderlich.
-
-- **Bereich:** Bei Cloud Adoption Framework-Zielzonen auf Unternehmensniveau wird der Umfang von Zielzonen erheblich erweitert, um die Migration von Anwendungen und Greenfieldentwicklung auf Unternehmensniveau in Azure zu unterstützen. Durch diese Erweiterung lassen sich Entwürfe über das gesamte IT-Portfolio des Kunden hinweg skalieren und gehen damit weit über einen kurzfristigen Cloudeinführungsplan hinaus.
-
-- **Refactoring:** Zur Unterstützung eines umfassenden IT-Portfolios auf Unternehmensebene können eine große Anzahl von Abonnements erforderlich sein. Im Cloud Adoption Framework wird zunächst ein häufiges Refactoring befürwortet. Vor der Bereitstellung der zehnten Produktionsworkload in der Cloud sollte jedoch eine Stabilisierung erfolgt sein. Wenn Sie mit einem Unternehmensportfolio arbeiten, lassen sich im Handumdrehen zehn Anwendungen bereitstellen. Ein Refactoring wird dadurch jedoch unpraktisch. Stattdessen sollte ein zentrales IT-Team oder Cloudkompetenzzentrum bei der ersten Veröffentlichung eine vollständigere Zielzone bereitstellen.
-
-- **Ziel:** Um eine zu große Anzahl von Abonnements zu vermeiden, sollten Sie einheitliche Zielzonen verwenden, die auf einer Abonnementstrategie für Anwendungsarchetypen basieren. Erweitern Sie die Definition von erforderlichen Komponenten, um die Governance- und Complianceanforderungen eines cloudfähigen Unternehmens besser zu erfüllen. Eine Übersicht finden Sie in Abbildung 1.
-
-- **Primärer Zweck:** Mit eingeschränkten Refaktoringmöglichkeiten und einer sorgfältig definierten Abonnementstrategie lassen sich die Zielzonen des Kunden schneller weiterentwickeln und ausbauen. Mit den Cloud Adoption Framework-Zielzonen auf Unternehmensniveau wird der primäre Zweck der Zielzone erweitert und der Fokus auf Aspekte wie Governance, Compliance, Sicherheit und Betriebsmanagement gelegt. Jeder dieser Bereiche wird bei der ersten Veröffentlichung der Zielzone und der unterstützenden gemeinsamen Dienste berücksichtigt.
+Azure-Zielzonen sind das Ergebnis einer Azure-Umgebung mit mehreren Abonnements, in der Skalierbarkeit, Sicherheit, Governance, Netzwerke und Identität berücksichtigt werden. Azure-Zielzonen ermöglichen die Anwendungsmigration und Greenfield-Entwicklung auf Unternehmensniveau in Azure. Diese Zonen berücksichtigen alle Plattformressourcen, die zur Unterstützung des Anwendungsportfolios des Kunden erforderlich sind, und unterscheiden nicht zwischen Infrastructure-as-a-Service oder Platform-as-a-Service.
 
 Vor dem Bau neuer Häuser wird zum Beispiel zunächst die Verfügbarkeit von Wasser-, Gas- und Stromleitungen sichergestellt. Im vorliegenden Kontext werden die Netzwerk-, Identitäts- und Zugriffsverwaltung sowie die Richtlinien, Verwaltung und Überwachung als gemeinsame Versorgungsdienste betrachtet, die für eine optimierte Anwendungsmigration verfügbar sein müssen, bevor der Vorgang gestartet wird.
 
@@ -43,35 +35,35 @@ Vor dem Bau neuer Häuser wird zum Beispiel zunächst die Verfügbarkeit von Was
 
 _Abbildung 1: Zielzonenaufbau._
 
-## <a name="expanded-list-of-requisite-components"></a>Erweiterte Liste der erforderlichen Komponenten
+## <a name="high-level-architecture"></a>Grundlegende Architektur
 
-In der folgenden Liste wird diese Abbildung einer Zielzone erweitert. Dort werden die wichtigsten technischen Konstrukte beschrieben, die im Kontext der Kundenanforderungen entworfen und entwickelt werden müssen, um konforme technische Zielzonenumgebungen zu erstellen und eine erfolgreiche Azure-Einführung zu ermöglichen.
+Eine Architektur in der Größenordnung eines Unternehmens wird durch eine Reihe von Entwurfsüberlegungen und -empfehlungen aus acht [kritischen Entwurfsbereichen](./design-guidelines.md) definiert, wobei zwei Netzwerktopologien empfohlen werden: eine Architektur auf Unternehmensniveau, die auf einer Azure Virtual WAN-Netzwerktopologie basiert (in Abbildung 2 abgebildet), oder basierend auf einer herkömmlichen Azure-Netzwerktopologie, die auf der Hub-and-Spoke-Architektur basiert (zu sehen in Abbildung 3).   
 
-- **Identitäts- und Zugriffsverwaltung**: Sowohl für die Server- als auch für die Benutzerauthentifizierung muss eine Azure Active Directory-Implementierung entworfen und integriert werden. Um eine Trennung der Aufgabenbereiche und Berechtigungen für den Betrieb und die Verwaltung der Plattform zu erzwingen, muss die ressourcenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC) modelliert und bereitgestellt werden. Für einen sicheren Zugriff auf Ressourcen und die Unterstützung von Vorgängen wie Rotation und Wiederherstellung muss eine Schlüsselverwaltungslösung entworfen und bereitgestellt werden. Abschließend werden Anwendungsbesitzern Zugriffsrollen auf Steuerungs- und Datenebene zugewiesen, um Ressourcen eigenständig erstellen und verwalten zu können.
+[![Diagramm, das eine Architektur für Cloud Adoption Framework-Zielzonen auf Unternehmensniveau, basierend auf einer Azure Virtual WAN-Netzwerktopologie, zeigt.](./media/ns-arch-inline.png)](./media/ns-arch-expanded.png#lightbox)
 
-- **Richtlinienverwaltung**: Auf der Azure-Zielplattform müssen ganzheitliche, zielzonenspezifische Richtlinien bestimmt, beschrieben, erstellt und bereitgestellt werden, mit denen unternehmens- und branchenspezifische sowie regulatorische Kontrollen implementiert werden. Mithilfe von Richtlinien sollte die Konformität von Anwendungen und zugrunde liegender Ressourcen ohne Abstraktion oder Verwaltungsfunktion sichergestellt werden.
+_Abbildung 2: Eine Architektur für Cloud Adoption Framework-Zielzonen auf Unternehmensniveau, basierend auf einer Azure Virtual WAN-Netzwerktopologie._
 
-- **Verwaltung und Überwachung**: Es müssen ganzheitliche (horizontale) Funktionen für Ressourcenüberwachung und Warnungen auf Plattformebene entworfen, bereitgestellt und integriert werden. Operative Aufgaben wie das Patchen und Durchführen von Sicherungen müssen ebenfalls definiert und optimiert werden. Sicherheitsvorgänge sowie Funktionen für Überwachung und Protokollierung müssen entworfen und sowohl mit Azure-Ressourcen als auch mit vorhandenen lokalen Systemen integriert werden. Sämtliche Aktivitätsprotokolle für Abonnements, in denen ressourcenübergreifende Vorgänge auf der Steuerungsebene erfasst werden, sollten in Log Analytics gestreamt werden, damit sie in Übereinstimmung mit RBAC-Berechtigungen abgefragt und analysiert werden können.
+[![Diagramm: Architektur für Cloud Adoption Framework-Zielzonen auf Unternehmensniveau](./media/ns-arch-cust-inline.png)](./media/ns-arch-cust-expanded.png#lightbox)
 
-- **Netzwerktopologie und -konnektivität**: Die End-to-End-Netzwerktopologie muss Azure-Regionen und lokale Umgebungen umfassen, um eine lückenlose Konnektivität zwischen Plattformbereitstellungen sicherzustellen. Erforderliche Dienste und Ressourcen (z. B. Firewalls und virtuelle Netzwerkgeräte) müssen so bestimmt, bereitgestellt und konfiguriert werden, dass sämtliche Sicherheitsanforderungen erfüllt sind.
+_Abbildung 3: Eine Architektur für Cloud Adoption Framework-Zielzonen auf Unternehmensniveau, basierend auf einer herkömmlichen Azure-Netzwerktopologie._
 
-- **Infrastruktur gemeinsamer Dienste**: Zentral gesteuerte, jedoch verteilt bereitgestellte Dienste wie Domänencontroller müssen so entworfen, konfiguriert und erstellt werden, dass Anwendungsteams erforderliche und gemeinsame Dienste und Ressourcen nutzen und integrieren können. Nicht alle traditionellen und gemeinsam genutzten lokalen Dienste sollten in der Cloud bereitgestellt werden. Dateifreigaben und Hardwaresicherheitsmodule sollten z. B. als Ressourcen auf Anwendungsebene betrachtet werden, die native Azure-Dienste nutzen.
+Laden Sie die PDF-Dateien herunter, die die Diagramme der Architektur auf Unternehmensniveau enthalten, basierend auf der [Virtual WAN](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/enterprise-scale-architecture.pdf)-Netzwerktopologie oder einer herkömmlichen Azure-Netzwerktopologie, basierend auf der [Hub-and-Spoke](https://github.com/microsoft/CloudAdoptionFramework/raw/master/ready/enterprise-scale-architecture-cust.pdf)-Architektur.
 
-- **DevOps**: Um eine sichere, wiederholbare und einheitliche Bereitstellung von Infrastructure-as-Code-Artefakten sicherzustellen, muss eine umfassende DevOps-Lösung mit zuverlässigen Verfahren für den Softwareentwicklungslebenszyklus entworfen, erstellt und bereitgestellt werden. Diese Artefakte müssen unter Verwendung von dedizierten Pipelines für Integration, Veröffentlichung und Bereitstellung, die eine umfassende, zuverlässige Quellcodeverwaltung und Nachverfolgbarkeit bieten, entwickelt, getestet und bereitgestellt werden.
+In den Abbildungen 2 und 3 finden Sie Verweise auf die kritischen Entwurfsbereiche auf Unternehmensniveau, die mit den Buchstaben A bis I gekennzeichnet sind:
 
-Zusätzlich zu den hier aufgeführten Aspekten müssen bei Entwurf, Konfiguration, Bereitstellung und Integration der einzelnen Zielzonen die kritischen Anforderungen Ihrer Organisation im Zusammenhang mit folgenden Faktoren erfüllt werden:
+![Der Buchstabe A](./media/a.png) [Enterprise Agreement-Registrierung (EA) und Azure Active Directory-Mandanten](./enterprise-enrollment-and-azure-ad-tenants.md). Eine Enterprise Agreement-Registrierung (EA) stellt die Geschäftsbeziehung zwischen Microsoft und der Art und Weise dar, wie Ihre Organisation Azure verwendet. Sie bildet die Grundlage für die Abrechnung für alle Ihre Abonnements und wirkt sich auf die Verwaltung Ihrer digitalen Ressourcen aus. Ihre EA-Registrierung wird über ein Azure-Unternehmensportal verwaltet. Eine Registrierung bildet häufig die Hierarchie einer Organisation ab, zu der die Abteilungen, Konten und Abonnements gehören. Ein Azure AD-Mandant bietet Identitäts- und Zugriffsverwaltung, die ein wichtiger Bestandteil Ihres Sicherheitsstatus ist. Ein Azure AD-Mandant stellt sicher, dass authentifizierte und autorisierte Benutzer nur auf die Ressourcen zugreifen können, für die sie über Zugriffsberechtigungen verfügen.
 
-- Geschäftskontinuität und Notfallwiederherstellung auf Plattform- und Anwendungsebene
-- Dienstverwaltung, z. B. Reaktion auf Incidents und Support
-- Einem Dienstkatalog (z. B. einer Konfigurationsverwaltungsdatenbank)
+![Der Buchstabe B](./media/b.png) [Identitäts- und Zugriffsverwaltung](./identity-and-access-management.md). Sowohl für die Server- als auch für die Benutzerauthentifizierung muss eine Azure Active Directory-Implementierung entworfen und integriert werden. Um eine Trennung der Aufgabenbereiche und Berechtigungen für den Betrieb und die Verwaltung der Plattform zu erzwingen, muss die ressourcenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC) modelliert und bereitgestellt werden. Für einen sicheren Zugriff auf Ressourcen und die Unterstützung von Vorgängen wie Rotation und Wiederherstellung muss eine Schlüsselverwaltungslösung entworfen und bereitgestellt werden. Abschließend werden Anwendungsbesitzern Zugriffsrollen auf Steuerungs- und Datenebene zugewiesen, um Ressourcen eigenständig erstellen und verwalten zu können.
 
-## <a name="high-level-architecture"></a>Allgemeine Architektur
+![Der Buchstabe C](./media/c.png) [Verwaltungsgruppen- und Abonnementorganisation](./management-group-and-subscription-organization.md). Verwaltungsgruppenstrukturen innerhalb eines Azure AD-Mandanten (Azure Active Directory) unterstützen Organisationszuordnung und sind sorgfältig zu durchdenken, wenn eine Organisation die Azure-Einführung in großem Umfang plant. Abonnements sind eine Einheit für die Verwaltung, Abrechnung und Skalierung in Azure. Sie spielen eine wichtige Rolle bei der Entwicklung für Azure im großen Stil. Dieser kritische Entwurfsbereich unterstützt Sie beim Erfassen von Abonnementanforderungen und Entwerfen von Zielabonnements anhand wichtiger Faktoren. Zu diesen Faktoren gehören die Art von Umgebung, das Besitzer- und Governancemodell, die Organisationsstruktur sowie Anwendungsportfolios.
 
-[![Diagramm: Architektur für Cloud Adoption Framework-Zielzonen auf Unternehmensniveau](./media/ns-arch-inline.png)](./media/ns-arch-expanded.png#lightbox)
+![Der Buchstabe C](./media/d.png) [Verwaltung und Überwachung](./management-and-monitoring.md). Eine ganzheitliche (horizontale) Ressourcenüberwachung und entsprechende Warnungen müssen auf Plattformebene entworfen, bereitgestellt und integriert werden. Operative Aufgaben wie das Patchen und Durchführen von Sicherungen müssen ebenfalls definiert und optimiert werden. Sicherheitsvorgänge sowie Funktionen für Überwachung und Protokollierung müssen entworfen und sowohl mit Azure-Ressourcen als auch mit vorhandenen lokalen Systemen integriert werden. Sämtliche Aktivitätsprotokolle für Abonnements, in denen ressourcenübergreifende Vorgänge auf der Steuerungsebene erfasst werden, sollten in Log Analytics gestreamt werden, damit sie in Übereinstimmung mit RBAC-Berechtigungen abgefragt und analysiert werden können.
 
-_Abbildung 2: Architektur für Cloud Adoption Framework-Zielzonen auf Unternehmensniveau_
+![Der Buchstabe E](./media/e.png) [Netzwerktopologie und Konnektivität](./network-topology-and-connectivity.md). Die End-to-End-Netzwerktopologie muss Azure-Regionen und lokale Umgebungen umfassen, um eine lückenlose Konnektivität zwischen Plattformbereitstellungen sicherzustellen. Erforderliche Dienste und Ressourcen (z. B. Firewalls und virtuelle Netzwerkgeräte) müssen so bestimmt, bereitgestellt und konfiguriert werden, dass sämtliche Sicherheitsanforderungen erfüllt sind.
 
-Laden Sie die [PDF-Datei](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/enterprise-scale-architecture.pdf) herunter, die dieses Architekturdiagramm enthält.
+![Der Buchstabe F](./media/f.png), ![Der Buchstabe G](./media/g.png), ![Der Buchstabe H](./media/h.png) [Business Continuity & Disaster Recovery (Geschäftskontinuität und Notfallwiederherstellung)](./business-continuity-and-disaster-recovery.md) und [Sicherheit, Governance und Compliance](./security-governance-and-compliance.md). Auf der Azure-Zielplattform müssen ganzheitliche, zielzonenspezifische Richtlinien bestimmt, beschrieben, erstellt und bereitgestellt werden, mit denen unternehmens- und branchenspezifische sowie regulatorische Kontrollen implementiert werden. Mithilfe von Richtlinien sollte die Konformität von Anwendungen und zugrunde liegender Ressourcen ohne Abstraktion oder Verwaltungsfunktion sichergestellt werden.
+
+![Der Buchstabe I](./media/i.png) [Plattformautomatisierung und DevOps](platform-automation-and-devops.md). Um eine sichere, wiederholbare und einheitliche Bereitstellung von Infrastructure-as-Code-Artefakten sicherzustellen, muss eine umfassende DevOps-Lösung mit zuverlässigen Verfahren für den Softwareentwicklungslebenszyklus entworfen, erstellt und bereitgestellt werden. Diese Artefakte müssen unter Verwendung von dedizierten Pipelines für Integration, Veröffentlichung und Bereitstellung, die eine umfassende, zuverlässige Quellcodeverwaltung und Nachverfolgbarkeit bieten, entwickelt, getestet und bereitgestellt werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

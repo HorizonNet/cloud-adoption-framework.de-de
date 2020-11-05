@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c178c8814238829ef3904917e47c7990170f0bb1
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.openlocfilehash: 114c366cd01ae28a60e9d9a7fa25f1cfe9f83b72
+ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88848209"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "93024537"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -47,19 +47,19 @@ So weisen Sie die im vorherigen Abschnitt beschriebenen Richtlinien zu
 
 1. Navigieren Sie im Azure-Portal zu **Richtlinie** > **Zuweisungen** > **Initiative zuweisen**.
 
-    ![Screenshot: Benutzeroberfläche für Richtlinien im Portal](./media/onboarding-at-scale1.png)
+    ![Screenshot der Richtlinienschnittstelle des Portals mit den aufgerufenen Optionen „Zuweisungen“ und „Initiative zuweisen“.](./media/onboarding-at-scale1.png)
 
 2. Legen Sie auf der Seite **Richtlinie zuweisen** den **Bereich** fest, indem Sie die Auslassungspunkte (...) und dann entweder eine Verwaltungsgruppe oder ein Abonnement auswählen. Wählen Sie optional eine Ressourcengruppe aus. Wählen Sie anschließend unten auf der Seite **Bereich** die Option **Auswählen**. Mit dem Bereich wird bestimmt, welchen Ressourcen bzw. welcher Ressourcengruppe die Richtlinie zugewiesen wird.
 
 3. Wählen Sie die Auslassungspunkte ( **...** ) neben der Option **Richtliniendefinition** aus, um die Liste mit den verfügbaren Definitionen zu öffnen. Sie können die Initiativendefinition filtern, indem Sie im Feld **Suche** den Suchbegriff **Azure Monitor** eingeben:
 
-    ![Screenshot: Benutzeroberfläche für Richtlinien im Portal](./media/onboarding-at-scale2.png)
+    ![Screenshot der Initiativendefinition „Azure Monitor für V M aktivieren“.](./media/onboarding-at-scale2.png)
 
 4. Der **Zuweisungsname** wird automatisch mit dem ausgewählten Richtliniennamen gefüllt, kann aber geändert werden. Sie können auch eine optionale Beschreibung hinzufügen, um weitere Informationen zu dieser Richtlinienzuweisung anzugeben. Das Feld **Zugewiesen von** wird abhängig vom angemeldeten Benutzer automatisch ausgefüllt. Dieses Feld ist optional und unterstützt benutzerdefinierte Werte.
 
 5. Wählen Sie für diese Richtlinie die Option **Log Analytics-Arbeitsbereich** für die Zuordnung des Log Analytics-Agents.
 
-    ![Screenshot: Benutzeroberfläche für Richtlinien im Portal](./media/onboarding-at-scale3.png)
+    ![Screenshot der Log Analytics-Arbeitsbereichsoption.](./media/onboarding-at-scale3.png)
 
 6. Aktivieren Sie das Kontrollkästchen **Speicherort der verwalteten Identität**. Wenn diese Richtlinie den Typ [`DeployIfNotExists`](/azure/governance/policy/concepts/effects#deployifnotexists) aufweist, ist für die Bereitstellung der Richtlinie eine verwaltete Identität erforderlich. Im Portal wird das Konto gemäß der Auswahl des Kontrollkästchens erstellt.
 
@@ -82,9 +82,9 @@ Zur Aktivierung von Lösungen müssen Sie den Log Analytics-Arbeitsbereich konfi
 
 ### <a name="update-management"></a>Updateverwaltung
 
-Für die Lösungen für Updateverwaltung, Änderungsnachverfolgung und Bestand sind sowohl ein Log Analytics-Arbeitsbereich als auch ein Automation-Konto erforderlich. Um sicherzustellen, dass diese Ressourcen richtig konfiguriert sind, empfehlen wir Ihnen, das Onboarding über Ihr Automation-Konto durchzuführen. Weitere Informationen finden Sie unter [Integrieren von Lösungen für die Updateverwaltung, Änderungsnachverfolgung und den Bestand](/azure/automation/automation-onboard-solutions-from-automation-account).
+Für die Lösungen für Updateverwaltung, Änderungsnachverfolgung und Bestand sind sowohl ein Log Analytics-Arbeitsbereich als auch ein Automation-Konto erforderlich. Um sicherzustellen, dass diese Ressourcen richtig konfiguriert sind, empfehlen wir Ihnen, das Onboarding über Ihr Automation-Konto durchzuführen. Weitere Informationen finden Sie unter [Integrieren von Lösungen für die Updateverwaltung, Änderungsnachverfolgung und den Bestand](/azure/automation/change-tracking/manage-change-tracking).
 
-Wir empfehlen Ihnen, die Lösung für die Updateverwaltung für alle Server zu aktivieren. Die Updateverwaltung ist für Azure-VMs und lokale Server kostenlos. Wenn Sie die Updateverwaltung über Ihr Automation-Konto aktivieren, wird im Arbeitsbereich eine [Bereichskonfiguration](/azure/automation/automation-onboard-solutions-from-automation-account#scope-configuration) erstellt. Aktualisieren Sie den Bereich manuell, um Computer einzubeziehen, die durch den Updateverwaltungsdienst abgedeckt sind.
+Wir empfehlen Ihnen, die Lösung für die Updateverwaltung für alle Server zu aktivieren. Die Updateverwaltung ist für Azure-VMs und lokale Server kostenlos. Wenn Sie die Updateverwaltung über Ihr Automation-Konto aktivieren, wird im Arbeitsbereich eine [Bereichskonfiguration](/azure/automation/change-tracking/manage-change-tracking) erstellt. Aktualisieren Sie den Bereich manuell, um Computer einzubeziehen, die durch den Updateverwaltungsdienst abgedeckt sind.
 
 Um Ihre vorhandenen und zukünftigen Server abzudecken, müssen Sie die Bereichskonfiguration entfernen. Zeigen Sie dazu Ihr Automation-Konto im Azure-Portal an. Wählen Sie **Updateverwaltung** > **Computer verwalten** > **Auf allen verfügbaren und zukünftigen Computern aktivieren** aus. Durch diese Einstellung kann die Updateverwaltung für alle Azure-VMs verwendet werden, für die eine Verbindung mit dem Arbeitsbereich besteht.
 
@@ -92,7 +92,7 @@ Um Ihre vorhandenen und zukünftigen Server abzudecken, müssen Sie die Bereichs
 
 ### <a name="change-tracking-and-inventory-solutions"></a>Lösungen für Änderungsnachverfolgung und Bestand
 
-Für das Onboarding der Lösungen für die Änderungsnachverfolgung und den Bestand befolgen Sie dieselben Schritte wie für die Updateverwaltung. Weitere Informationen zum Onboarding dieser Lösungen über Ihr Automation-Konto finden Sie unter [Integrieren von Lösungen für die Updateverwaltung, Änderungsnachverfolgung und den Bestand](/azure/automation/automation-onboard-solutions-from-automation-account).
+Für das Onboarding der Lösungen für die Änderungsnachverfolgung und den Bestand befolgen Sie dieselben Schritte wie für die Updateverwaltung. Weitere Informationen zum Onboarding dieser Lösungen über Ihr Automation-Konto finden Sie unter [Integrieren von Lösungen für die Updateverwaltung, Änderungsnachverfolgung und den Bestand](/azure/automation/change-tracking/manage-change-tracking).
 
 Die Lösung für die Änderungsnachverfolgung ist für Azure-VMs kostenlos und kostet für lokale Server monatlich 6 USD pro Knoten. Mit diesen Kosten sind die Bereiche Änderungsnachverfolgung, Bestand und Desired State Configuration abgedeckt. Falls Sie nur bestimmte lokale Server registrieren möchten, können Sie diese Server einbinden. Wir empfehlen Ihnen, das Onboarding für Ihre gesamten Produktionsserver durchzuführen.
 
@@ -137,9 +137,9 @@ Das [Azure-Aktivitätsprotokoll](/azure/azure-monitor/platform/activity-logs-ove
 
 So implementieren Sie diese Lösung
 
-1. Öffnen Sie im Azure-Portal die Option **Alle Dienste**, und wählen Sie anschließend **Verwaltung + Governance** > **Lösungen** aus.
+1. Öffnen Sie im Azure-Portal die Option **Alle Dienste** , und wählen Sie anschließend **Verwaltung + Governance** > **Lösungen** aus.
 2. Wählen Sie in der Ansicht **Lösungen** die Option **Hinzufügen** aus.
-3. Suchen Sie nach **Aktivitätsprotokollanalyse**, und wählen Sie diese Option aus.
+3. Suchen Sie nach **Aktivitätsprotokollanalyse** , und wählen Sie diese Option aus.
 4. Klicken Sie auf **Erstellen**.
 
 Sie müssen den **Arbeitsbereichsnamen** des Arbeitsbereichs eingeben, den Sie im vorherigen Abschnitt beim Aktivieren der Lösung erstellt haben.
@@ -150,7 +150,7 @@ Die Lösung „Azure Log Analytics-Agent-Integritätsdiagnose“ informiert Sie 
 
 So implementieren Sie diese Lösung
 
-1. Öffnen Sie im Azure-Portal die Option **Alle Dienste**, und wählen Sie anschließend **Verwaltung + Governance** > **Lösungen** aus.
+1. Öffnen Sie im Azure-Portal die Option **Alle Dienste** , und wählen Sie anschließend **Verwaltung + Governance** > **Lösungen** aus.
 2. Wählen Sie in der Ansicht **Lösungen** die Option **Hinzufügen** aus.
 3. Suchen Sie nach **Azure Log Analytics-Agent-Integritätsdiagnose** , und wählen Sie diese Option aus.
 4. Klicken Sie auf **Erstellen**.
@@ -165,9 +165,9 @@ Mit der Lösung für die Antischadsoftwarebewertung können Sie Server identifiz
 
 So implementieren Sie diese Lösung
 
-1. Öffnen Sie im Azure-Portal die Option **Alle Dienste**, und wählen Sie anschließend **Verwaltung + Governance** > **Lösungen** aus.
+1. Öffnen Sie im Azure-Portal die Option **Alle Dienste** , und wählen Sie anschließend **Verwaltung + Governance** > **Lösungen** aus.
 2. Wählen Sie in der Ansicht **Lösungen** die Option **Hinzufügen** aus.
-3. Suchen Sie nach **Antischadsoftwarebewertung**, und wählen Sie diese Option aus.
+3. Suchen Sie nach **Antischadsoftwarebewertung** , und wählen Sie diese Option aus.
 4. Klicken Sie auf **Erstellen**.
 
 Sie müssen den **Arbeitsbereichsnamen** des Arbeitsbereichs eingeben, den Sie im vorherigen Abschnitt beim Aktivieren der Lösung erstellt haben.
@@ -188,7 +188,7 @@ Führen Sie die folgenden Schritte aus, um den Free-Tarif für Azure Security Ce
 2. Wählen Sie unter **RICHTLINIE UND KONFORMITÄT** die Option **Sicherheitsrichtlinie** aus.
 3. Suchen Sie die Log Analytics-Arbeitsbereichsressource, die Sie im rechten Bereich erstellt haben.
 4. Wählen Sie für diesen Arbeitsbereich die Option **Einstellungen bearbeiten** aus.
-5. Wählen Sie **Tarif**aus.
+5. Wählen Sie **Tarif** aus.
 6. Wählen Sie die Option **Free**.
 7. Wählen Sie **Speichern** aus.
 

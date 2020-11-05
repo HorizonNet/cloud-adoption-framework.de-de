@@ -7,12 +7,12 @@ ms.date: 07/1/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ba0d19a7c6dd050e5580c1ef701cc63ed0debda4
-ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
+ms.openlocfilehash: 68941187e45d393ac21e00027a7b54998625597a
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334764"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93283365"
 ---
 # <a name="migrate-a-devtest-environment-to-azure-devtest-labs"></a>Migrieren einer Dev/Test-Umgebung zu Azure DevTest Labs
 
@@ -45,7 +45,7 @@ Das Führungsteam für die Entwicklung hat festgelegt, was mit dieser Migration 
 <!-- -->
 
 > [!NOTE]
-> Azure-Kunden mit einem Enterprise Agreement profitieren auch vom [Azure Dev/Test-Abonnementangebot](https://azure.microsoft.com/offers/ms-azr-0148p/). Weitere Informationen zum Erstellen eines Azure Dev/Test-Abonnements mithilfe des Enterprise Agreement-Portals finden Sie in diesem [Video](https://channel9.msdn.com/blogs/ea.azure.com/enabling-and-creating-ea-devtest-subscriptions-through-the-ea-portal).
+> Azure-Kunden mit einem Enterprise Agreement profitieren auch vom [Azure Dev/Test-Abonnementangebot](https://azure.microsoft.com/offers/ms-azr-0148p/). Weitere Informationen finden Sie im Video zum [Aktivieren und Erstellen von EA-Dev/Test-Abonnements über das EA-Portal](https://channel9.msdn.com/blogs/ea.azure.com/enabling-and-creating-ea-devtest-subscriptions-through-the-ea-portal).
 
 ## <a name="migration-goals"></a>Migrationsziele
 
@@ -113,8 +113,8 @@ Für die Ausführung dieses Szenarios benötigt Contoso Folgendes.
 
 | Requirements (Anforderungen) | Details |
 | --- | --- |
-| **Azure Dev/Test-Abonnement** | Contoso erstellt ein [Azure Dev/Test-Abonnement](https://azure.microsoft.com/offers/ms-azr-0023p/), um die Kosten um bis zu 80 Prozent zu reduzieren. <br><br> Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/free/) erstellen. <br><br> Wenn Sie ein kostenloses Konto erstellen, sind Sie der Administrator Ihres Abonnements und können alle Aktionen durchführen. <br><br> Falls Sie ein vorhandenes Abonnement verwenden, aber nicht der Administrator sind, arbeiten Sie mit dem Administrator zusammen, damit er Ihnen Berechtigungen vom Typ „Besitzer“ oder „Mitwirkender“ zuweist. <br><br> Wenn Sie detailliertere Berechtigungen benötigen, lesen Sie [diesen Artikel](/azure/site-recovery/site-recovery-role-based-linked-access-control). |
-| **Azure-Infrastruktur** | [Weitere Informationen](./contoso-migration-infrastructure.md) zur Vorgehensweise von Contoso beim Einrichten einer Azure-Infrastruktur. |
+| **Azure Dev/Test-Abonnement** | Contoso erstellt ein [Azure Dev/Test-Abonnement](https://azure.microsoft.com/offers/ms-azr-0023p/), um die Kosten um bis zu 80 Prozent zu reduzieren. <br><br> Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/free/) erstellen. <br><br> Wenn Sie ein kostenloses Konto erstellen, sind Sie der Administrator Ihres Abonnements und können alle Aktionen durchführen. <br><br> Falls Sie ein vorhandenes Abonnement verwenden, aber nicht der Administrator sind, arbeiten Sie mit dem Administrator zusammen, damit er Ihnen Berechtigungen vom Typ „Besitzer“ oder „Mitwirkender“ zuweist. <br><br> Falls Sie präzisere Berechtigungen benötigen, helfen Ihnen die Informationen unter [Verwalten des Site Recovery-Zugriffs mit rollenbasierter Zugriffssteuerung von Azure](/azure/site-recovery/site-recovery-role-based-linked-access-control) weiter. |
+| **Azure-Infrastruktur** | Informieren Sie sich, wie Contoso eine [Azure-Infrastruktur einrichtet](./contoso-migration-infrastructure.md). |
 
 ## <a name="scenario-steps"></a>Szenarioschritte
 

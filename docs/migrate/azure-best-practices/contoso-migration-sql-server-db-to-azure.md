@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 071e6d8f33ea299dac78136f71f5bbce7badb95d
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: fc9be8cfc1f51e35e0eb2dbb7270c818276c7767
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775223"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93283246"
 ---
 <!-- cSpell:ignore BACPAC FILESTREAM -->
 
@@ -36,7 +36,7 @@ Das IT-Führungsteam arbeitet eng mit Geschäftspartnern zusammen, um die Gesch�
 
 - **Flexibilität steigern:** Die Contoso-IT-Abteilung muss schneller auf die Unternehmensanforderungen reagieren. Die IT-Experten müssen schneller reagieren als die Änderungen im Marketplace geschehen, um den Erfolg in einer globalen Wirtschaft zu garantieren. Es darf nicht im Weg stehen oder zum Geschäftshindernis werden.
 
-- **Skalierung**: Da das Unternehmen erfolgreich wächst, muss die Contoso-IT Systeme bereitstellen, die mit der gleichen Geschwindigkeit wachsen können. Es gibt mehrere ältere Hardwareumgebungen, für die kein Upgrade mehr durchgeführt werden kann und deren Support abgelaufen ist oder kurz vor dem Ende steht.
+- **Skalierung** : Da das Unternehmen erfolgreich wächst, muss die Contoso-IT Systeme bereitstellen, die mit der gleichen Geschwindigkeit wachsen können. Es gibt mehrere ältere Hardwareumgebungen, für die kein Upgrade mehr durchgeführt werden kann und deren Support abgelaufen ist oder kurz vor dem Ende steht.
 
 - **Kosten:** Geschäftsinhaber und Anwendungsbesitzer möchten sicher sein, dass im Vergleich zur lokalen Ausführung der Anwendungen keine hohen Cloudkosten auf sie zukommen.
 
@@ -141,7 +141,7 @@ Anhand der jetzt in Azure Migrate hochgeladenen Informationen konnte Contoso meh
 Wenn DMA für eine Datenquelle nicht ausgeführt werden konnte, wurden die folgenden Richtlinien für die Datenbankmigrationen befolgt.
 
 > [!NOTE]
-> Im Rahmen der Bewertungsphase wurden von Contoso verschiedene Open-Source-Datenbanken ermittelt. Für deren Migrationsplanung wurde separat [dieser Anleitung](./contoso-migration-oss-db-to-azure.md) gefolgt.
+> Im Rahmen der Bewertungsphase wurden von Contoso verschiedene Open-Source-Datenbanken ermittelt. Für deren Migrationsplanung wurde separat [Migration von Open-Source-Datenbanken zu Azure](./contoso-migration-oss-db-to-azure.md) gefolgt.
 
 <!-- docutune:casing "custom .NET" -->
 

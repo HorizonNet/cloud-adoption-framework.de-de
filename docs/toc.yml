@@ -81,10 +81,14 @@ items:
             href: strategy/business-outcomes/engagement-outcomes.md
           - name: Leistungsergebnisse
             href: strategy/business-outcomes/performance-outcomes.md
+          - name: Nachhaltigkeitsergebnisse
+            href: strategy/business-outcomes/sustainability.md
           - name: Vorlage für Geschäftsergebnisse
             href: strategy/business-outcomes/business-outcome-template.md
           - name: Ausrichten des Aufwands auf Lernmetriken
             href: strategy/learning-metrics.md
+          - name: Ziele und wichtige Ergebnisse
+            href: strategy/business-outcomes/okr.md
       - name: Geschäftliche Begründung
         items:
           - name: Erstellen einer geschäftlichen Begründung

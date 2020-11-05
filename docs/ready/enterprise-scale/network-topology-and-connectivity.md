@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 444fe8d597c895aa969a966cb4d659673451198c
-ms.sourcegitcommit: 9d8165354a38f84d0b271b2ce4928f7042e24163
+ms.openlocfilehash: 49af307d23c997692def763772eb87d37f5b5c70
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91851697"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93283392"
 ---
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
 
@@ -176,7 +176,7 @@ _Abbildung 1: Virtual WAN-Netzwerktopologie._
 
 - Wenn Sie Netzwerktechnologien und NVAs von Partnern bereitstellen, befolgen Sie die Anweisungen des Partners, um sicherzustellen, dass keine Konflikte mit Azure-Netzwerken auftreten.
 
-- Setzen Sie kein Transitnetzwerk auf Azure Virtual WAN auf. Virtual WAN erfüllt Anforderungen an die transitive Netzwerktopologie, wie z. B. die Möglichkeit zur Verwendung von Drittanbieter-NVAs. Das Aufbauen eines Transitnetzwerks auf Azure Virtual WAN wäre redundant und würde die Komplexität erhöhen. 
+- Setzen Sie kein Transitnetzwerk auf Azure Virtual WAN auf. Virtual WAN erfüllt Anforderungen an die transitive Netzwerktopologie, wie z. B. die Möglichkeit zur Verwendung von Drittanbieter-NVAs. Das Aufbauen eines Transitnetzwerks auf Azure Virtual WAN wäre redundant und würde die Komplexität erhöhen.
 
 - Verwenden Sie keine vorhandenen lokalen Netzwerke wie MPLS (Multiprotocol Label Switching), um Azure-Ressourcen über Azure-Regionen hinweg zu verbinden, da Azure-Netzwerktechnologien die Verbindung von Azure-Ressourcen regionsübergreifend über den Microsoft-Backbone unterstützen. Dies liegt an den Leistungs- und Betriebszeitmerkmalen des Microsoft-Backbones sowie der Vereinfachung des Routings. Dieser Vorschlag zielt auf die Leistungs- und Betriebszeitmerkmale des Microsoft-Backbones. Er unterstützt außerdem die Vereinfachung des Routings.
 
@@ -501,9 +501,11 @@ In diesem Abschnitt werden wichtige Empfehlungen zum Einrichten der Netzwerkvers
 
 - Bei Verwendung von ExpressRoute mit privatem Peering wird Datenverkehr derzeit nicht verschlüsselt.
 
+- Konfigurieren einer Site-to-Site-VPN-Verbindung über privates ExpressRoute-Peering befindet sich jetzt in der [Vorschauphase](https://docs.microsoft.com/azure/vpn-gateway/site-to-site-vpn-private-peering).
+
 - Sie können die Verschlüsselung [Media Access Control Security (MACsec)](/azure/expressroute/expressroute-howto-MACsec) auf ExpressRoute Direct anwenden, um eine Netzwerkverschlüsselung zu erreichen.
 
-- Azure bietet derzeit keine native Verschlüsselung über globales Peering virtueller Netzwerke an. Wenn Sie heute Verschlüsselung zwischen Azure-Regionen benötigen, können Sie virtuelle Netzwerke mithilfe von VPN-Gateways anstatt über globales Peering virtueller Netzwerke verbinden.
+- Wenn Azure-Datenverkehr zwischen Rechenzentren (außerhalb physischer Grenzen, die nicht von Microsoft oder im Auftrag von Microsoft kontrolliert werden) bewegt wird, wird auf der zugrunde liegenden Netzwerkhardware eine [MACsec-Verschlüsselung der Sicherungsschicht](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview#encryption-of-data-in-transit) verwendet. Dies gilt für VNET-Peeringdatenverkehr.
 
 **Entwurfsempfehlungen:**
 
@@ -515,14 +517,15 @@ _Abbildung 8: Verschlüsselungsabläufe._
 
 - Konfigurieren Sie bei Verwendung von ExpressRoute Direct [MACsec](/azure/expressroute/expressroute-howto-MACsec), um Datenverkehr auf Ebene 2 zwischen den Routern Ihrer Organisation und MSEE zu verschlüsseln. Dies wird im Diagramm in Datenfluss `B` veranschaulicht.
 
-- Für Virtual WAN-Szenarios, bei denen MACsec keine Option ist (z. B. keine Verwendung von ExpressRoute Direct), verwenden Sie ein Virtual WAN-Gateway, um IPsec-Tunnel über privates ExpressRoute-Peering einzurichten. Dies wird im Diagramm in Datenfluss `C` veranschaulicht.
+- Für Virtual WAN-Szenarios, bei denen MACsec keine Option darstellt (z. B. keine Verwendung von ExpressRoute Direct), verwenden Sie ein Virtual WAN-VPN-Gateway, um [IPsec-Tunnel über privates ExpressRoute-Peering](https://docs.microsoft.com/azure/virtual-wan/vpn-over-expressroute) einzurichten. Dies wird im Diagramm in Datenfluss `C` veranschaulicht.
 
 - Bei Szenarios ohne Virtual WAN, in denen MACsec keine Option ist (z. B. keine Verwendung von ExpressRoute Direct), gibt es nur die folgenden Optionen:
   
   - Verwenden Sie Partner-NVAs, um IPsec-Tunnel über das private ExpressRoute-Peering einzurichten.
   - Richten Sie mit Microsoft-Peering einen VPN-Tunnel über ExpressRoute ein.
+  - Evaluieren Sie die Funktion zum Konfigurieren einer Site-to-Site-VPN-Verbindung über privates ExpressRoute-Peering ([in Vorschauphase](https://docs.microsoft.com/azure/vpn-gateway/site-to-site-vpn-private-peering)).
 
-- Wenn Datenverkehr zwischen Azure-Regionen verschlüsselt werden muss, nutzen Sie VPN-Gateways, um virtuelle Netzwerke regionsübergreifend zu verbinden.
+- Wenn Datenverkehr zwischen Azure-Regionen verschlüsselt werden muss, nutzen Sie globales VNet-Peering, um virtuelle Netzwerke regionsübergreifend zu verbinden.
 
 - Wenn native Azure-Lösungen (wie in den Datenflüssen `B` und `C` im Diagramm dargestellt) Ihren Anforderungen nicht entsprechen, verwenden Sie Partner-NVAs in Azure, um den Datenverkehr über das private ExpressRoute-Peering zu verschlüsseln.
 

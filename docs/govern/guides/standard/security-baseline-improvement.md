@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 4809b00f7cd195646619d5ace8d7924a78e0b625
-ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
+ms.openlocfilehash: fb16286bdab9bedc4d9f14670060ebbe5c19ac0f
+ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91107844"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93282930"
 ---
 # <a name="standard-enterprise-governance-guide-improve-the-security-baseline-discipline"></a>Governanceleitfaden für Standardunternehmen: Verbessern der Disziplin „Sicherheitsbaseline“
 
@@ -125,7 +125,7 @@ Der Governance-MVP-Entwurf wird so geändert, dass er neue Azure-Richtlinien und
     - Überwachen Sie die korrekte Festlegung der Kennwortsicherheitseinstellungen auf Linux- und Windows-Computern.
   - Überprüfen Sie, ob Azure Recovery Services-Tresore im Abonnement vorhanden sind, und erzwingen Sie deren Bereitstellung.
 - Firewallkonfiguration:
-  - Identifizieren Sie eine Konfiguration von Azure Firewall, die die erforderlichen Sicherheitsanforderungen erfüllt. Identifizieren Sie alternativ eine kompatible Appliance eines Drittanbieters, die mit Azure kompatibel ist.
+  - Identifizieren Sie eine Konfiguration von Azure Firewall, die die erforderlichen Sicherheitsanforderungen erfüllt. Identifizieren Sie alternativ eine kompatible Appliance eines Drittanbieters, die mit Azure kompatibel ist. Der Vergleichstest für die Azure-Sicherheit bietet zusätzliche Informationen zur [Netzwerksicherheitsstrategie](https://docs.microsoft.com/azure/security/benchmarks/security-controls-v2-governance-strategy#gs-5-define-network-security-strategy) und zu [Firewallkonfigurationen für die Unterstützung Ihrer Sicherheitsstrategie](https://docs.microsoft.com/azure/security/benchmarks/security-controls-v2-network-security#ns-4-protect-applications-and-services-from-external-network-attacks).
   - Erstellen Sie eine Resource Manager-Vorlage, um die Firewall mit den erforderlichen Konfigurationen bereitzustellen.
 - Azure Blueprints:
   - Erstellen Sie eine neue Blaupause mit dem Namen `protected-data`.
