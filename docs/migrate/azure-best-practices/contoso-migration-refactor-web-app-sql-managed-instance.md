@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 8376662dc14b1766a7948b851f4ac45aec862bd8
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: e022bafd67489695a5c99b6e0a2a115f213d1bad
+ms.sourcegitcommit: 8bd82ade858bf8095672842bd6469deae7616bbf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775852"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "94333686"
 ---
 <!-- cSpell:ignore contoso's contosohost vcenter contosodc smarthotel SQLMI SHWCF SHWEB -->
 
@@ -78,7 +78,7 @@ Contoso wertet seinen vorgeschlagenen Entwurf aus, indem das Unternehmen eine Li
 
 | Aspekt | Details |
 | --- | --- |
-| **Vorteile** | Der Code der SmartHotel360-App erfordert für die Migration zu Azure keine Änderungen. <br><br> Contoso kann seine Investition in die Software Assurance mit dem Azure-Hybridvorteil für SQL Server und Windows Server nutzen. <br><br> Nach der Migration muss Windows Server 2008 R2 nicht unterstützt werden. Weitere Informationen finden Sie in der [Microsoft Lifecycle-Richtlinie](https://aka.ms/lifecycle). <br><br> Contoso kann die Webebene der Anwendung mit mehreren Instanzen konfigurieren, sodass sie kein Single Point of Failure mehr ist. <br><br> Die Datenbank ist nicht mehr auf das veraltete SQL Server 2008 R2 angewiesen. <br><br> Die verwaltete SQL-Instanz unterstützt die technischen Anforderungen und Ziele von Contoso. <br><br> SQL Managed Instance bietet eine 100-prozentige Kompatibilität mit der aktuellen Bereitstellung und ermöglicht gleichzeitig die Abschaffung von SQL Server 2008 R2. <br><br> Contoso kann seine Investition in die Software Assurance mit dem Azure-Hybridvorteil für sowohl SQL Server als auch Windows Server nutzen. <br><br> Azure Database Migration Service kann für weitere Migrationen in der Zukunft genutzt werden. <br><br> Die verwaltete Instanz bietet integrierte Fehlertoleranz, die nicht von Contoso konfiguriert werden muss. Dadurch wird sichergestellt, dass die Datenschicht kein Single Point of Failover mehr ist. |
+| **Vorteile** | Der Code der SmartHotel360-App erfordert für die Migration zu Azure keine Änderungen. <br><br> Contoso kann seine Investition in die Software Assurance mit dem Azure-Hybridvorteil für SQL Server und Windows Server nutzen. <br><br> Nach der Migration muss Windows Server 2008 R2 nicht unterstützt werden. Weitere Informationen finden Sie in der [Microsoft Lifecycle-Richtlinie](/lifecycle/). <br><br> Contoso kann die Webebene der Anwendung mit mehreren Instanzen konfigurieren, sodass sie kein Single Point of Failure mehr ist. <br><br> Die Datenbank ist nicht mehr auf das veraltete SQL Server 2008 R2 angewiesen. <br><br> Die verwaltete SQL-Instanz unterstützt die technischen Anforderungen und Ziele von Contoso. <br><br> SQL Managed Instance bietet eine 100-prozentige Kompatibilität mit der aktuellen Bereitstellung und ermöglicht gleichzeitig die Abschaffung von SQL Server 2008 R2. <br><br> Contoso kann seine Investition in die Software Assurance mit dem Azure-Hybridvorteil für sowohl SQL Server als auch Windows Server nutzen. <br><br> Azure Database Migration Service kann für weitere Migrationen in der Zukunft genutzt werden. <br><br> Die verwaltete Instanz bietet integrierte Fehlertoleranz, die nicht von Contoso konfiguriert werden muss. Dadurch wird sichergestellt, dass die Datenschicht kein Single Point of Failover mehr ist. |
 | **Nachteile** | Azure App Service unterstützt nur eine Anwendungsbereitstellung für jede Web-App. Das bedeutet, dass zwei Web-Apps bereitgestellt werden müssen, eine für die Website und eine für den WCF-Dienst. <br><br> Für die Datenschicht stellt SQL Managed Instance möglicherweise nicht die beste Lösung dar, wenn Contoso das Betriebssystem oder den Datenbankserver anpassen oder Drittanbieteranwendungen mit SQL Server ausführen möchte. Eine Ausführung von SQL Server auf einer IaaS-VM könnte diese Flexibilität bieten. |
 
 ## <a name="proposed-architecture"></a>Vorgeschlagene Architektur
@@ -331,7 +331,7 @@ Als Nächstes konfigurieren die Contoso-Administratoren Azure DevOps für die Du
 
     ![Screenshot des Phasennamens der WCF-Web-App](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline9.png)
 
-1. Sie klicken unter den Phasen auf **1 Auftrag, 1 Aufgabe**, um die Bereitstellung des WCF-Diensts zu konfigurieren.
+1. Sie klicken unter den Phasen auf **1 Auftrag, 1 Aufgabe** , um die Bereitstellung des WCF-Diensts zu konfigurieren.
 
     ![Screenshot der Option „1 Auftrag, 1 Aufgabe“](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline10.png)
 
@@ -339,7 +339,7 @@ Als Nächstes konfigurieren die Contoso-Administratoren Azure DevOps für die Du
 
      ![Screenshot: Auswählen des App-Dienstnamens](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline11.png)
 
-1. In der Pipeline wählen sie **Artefakte**, anschließend **+ Artefakt hinzufügen** und dann **Build** als Quelltyp aus und erstellen anschließend mit der Pipeline `ContosoSmarthotel360Refactor`.
+1. In der Pipeline wählen sie **Artefakte** , anschließend **+ Artefakt hinzufügen** und dann **Build** als Quelltyp aus und erstellen anschließend mit der Pipeline `ContosoSmarthotel360Refactor`.
 
      ![Screenshot der Schaltfläche „Build“ im Bereich „Artefakt hinzufügen“](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline12.png)
 
@@ -355,7 +355,7 @@ Als Nächstes konfigurieren die Contoso-Administratoren Azure DevOps für die Du
 
     ![Screenshot der Option zum Auswählen von „Azure App Service bereitstellen“](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline15.png)
 
-1. Unter **Datei oder Ordner suchen** erweitern sie den **Ablageordner**, wählen die Datei `SmartHotel.Registration.Wcf.zip` aus, die während der Erstellung erstellt wurde, und klicken anschließend auf **Speichern**.
+1. Unter **Datei oder Ordner suchen** erweitern sie den **Ablageordner** , wählen die Datei `SmartHotel.Registration.Wcf.zip` aus, die während der Erstellung erstellt wurde, und klicken anschließend auf **Speichern**.
 
     ![Screenshot des Bereichs „Datei oder Ordner suchen“ zum Auswählen der WCF-Datei](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline16.png)
 
@@ -363,7 +363,7 @@ Als Nächstes konfigurieren die Contoso-Administratoren Azure DevOps für die Du
 
     ![Screenshot des Links „1 Auftrag, 1 Aufgabe“ zum Hinzufügen einer Umgebung](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline17.png)
 
-1. Anschließend wiederholen sie den Prozess zum Veröffentlichen der Web-App-Datei (*SmartHotel.Registration.Web.zip*), um die Web-App zu korrigieren, und wählen anschließend **Speichern** aus.
+1. Anschließend wiederholen sie den Prozess zum Veröffentlichen der Web-App-Datei ( *SmartHotel.Registration.Web.zip* ), um die Web-App zu korrigieren, und wählen anschließend **Speichern** aus.
 
     ![Screenshot des Bereichs „Datei oder Ordner suchen“ zum Auswählen der WEB-Datei](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline18.png)
 
@@ -371,11 +371,11 @@ Als Nächstes konfigurieren die Contoso-Administratoren Azure DevOps für die Du
 
      ![Screenshot der Zusammenfassung der Releasepipeline](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline19.png)
 
-1. Sie navigieren zurück zu **Build**, wählen **Trigger**aus und aktivieren anschließend das Kontrollkästchen **Continuous Integration aktivieren**. Diese Aktion aktiviert die Pipeline. Wenn also Änderungen am Code committet werden, erfolgt ein vollständiger Build mit Release.
+1. Sie navigieren zurück zu **Build** , wählen **Trigger** aus und aktivieren anschließend das Kontrollkästchen **Continuous Integration aktivieren**. Diese Aktion aktiviert die Pipeline. Wenn also Änderungen am Code committet werden, erfolgt ein vollständiger Build mit Release.
 
     ![Screenshot mit dem hervorgehobenen Kontrollkästchen „Continuous Integration aktivieren“](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline20.png)
 
-1. Sie klicken auf **Speichern und in Warteschlange einreihen**, um die vollständige Pipeline auszuführen. Ein neuer Build wird ausgelöst, der wiederum das erste Release der App in Azure App Service erstellt.
+1. Sie klicken auf **Speichern und in Warteschlange einreihen** , um die vollständige Pipeline auszuführen. Ein neuer Build wird ausgelöst, der wiederum das erste Release der App in Azure App Service erstellt.
 
     ![Screenshot der Schaltfläche „Save & Queue“ (Speichern und in Warteschlange stellen)](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline21.png)
 

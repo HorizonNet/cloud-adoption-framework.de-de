@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 013c21eaf964d09f07122c9b6deb1b1539558541
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 47ccbee2a3f140a4abc1471896496b83c6de8f43
+ms.sourcegitcommit: 8bd82ade858bf8095672842bd6469deae7616bbf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775750"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "94333676"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc smarthotel SHWEB SHWCF -->
 
@@ -72,7 +72,7 @@ Contoso wertet seinen vorgeschlagenen Entwurf aus, indem das Unternehmen eine Li
 
 | Aspekt | Details |
 | --- | --- |
-| **Vorteile** | Der Code der SmartHotel360-App erfordert für die Migration zu Azure keine Änderungen. <br><br> Contoso kann seine Investition in die Software Assurance mit dem Azure-Hybridvorteil für SQL Server und Windows Server nutzen. <br><br> Nach der Migration muss Windows Server 2008 R2 nicht unterstützt werden. Weitere Informationen finden Sie in der [Microsoft Lifecycle-Richtlinie](https://aka.ms/lifecycle). <br><br> Contoso kann die Webebene der Anwendung mit mehreren Instanzen konfigurieren, sodass sie kein Single Point of Failure mehr ist. <br><br> Die Datenbank ist nicht mehr auf das veraltete SQL Server 2008 R2 angewiesen. <br><br> SQL-Datenbank unterstützt die technischen Anforderungen. Contoso hat die lokale Datenbank mithilfe des Datenmigrations-Assistenten bewertet und festgestellt, dass sie kompatibel ist. <br><br> Azure SQL-Datenbank verfügt über eine integrierte Fehlertoleranz, die Contoso nicht einrichten muss. Dadurch wird sichergestellt, dass die Datenschicht kein Single Point of Failover mehr ist. <br><br> Wenn Contoso Azure Database Migration Service für die Migration der Datenbank verwendet, verfügt das Unternehmen über die entsprechende Infrastruktur für die Migration umfangreicher Datenbanken. |
+| **Vorteile** | Der Code der SmartHotel360-App erfordert für die Migration zu Azure keine Änderungen. <br><br> Contoso kann seine Investition in die Software Assurance mit dem Azure-Hybridvorteil für SQL Server und Windows Server nutzen. <br><br> Nach der Migration muss Windows Server 2008 R2 nicht unterstützt werden. Weitere Informationen finden Sie in der [Microsoft Lifecycle-Richtlinie](/lifecycle/). <br><br> Contoso kann die Webebene der Anwendung mit mehreren Instanzen konfigurieren, sodass sie kein Single Point of Failure mehr ist. <br><br> Die Datenbank ist nicht mehr auf das veraltete SQL Server 2008 R2 angewiesen. <br><br> SQL-Datenbank unterstützt die technischen Anforderungen. Contoso hat die lokale Datenbank mithilfe des Datenmigrations-Assistenten bewertet und festgestellt, dass sie kompatibel ist. <br><br> Azure SQL-Datenbank verfügt über eine integrierte Fehlertoleranz, die Contoso nicht einrichten muss. Dadurch wird sichergestellt, dass die Datenschicht kein Single Point of Failover mehr ist. <br><br> Wenn Contoso Azure Database Migration Service für die Migration der Datenbank verwendet, verfügt das Unternehmen über die entsprechende Infrastruktur für die Migration umfangreicher Datenbanken. |
 | **Nachteile** | Azure App Service unterstützt nur eine Anwendungsbereitstellung für jede Web-App. Dies bedeutet, dass zwei Web-Apps bereitgestellt werden müssen, eine für die Website und eine für den WCF-Dienst. |
 
 ## <a name="proposed-architecture"></a>Vorgeschlagene Architektur
@@ -140,7 +140,7 @@ Die Administratoren führen diese Aktionen aus:
 
     ![Screenshot der Details der SQL-Datenbankinstanz](./media/contoso-migration-refactor-web-app-sql/provision-sql2.png)
 
-1. Das Unternehmen richtet eine neue SQL Server-Instanz, **sql-smarthotel-eus2**, in der primären Region ein.
+1. Das Unternehmen richtet eine neue SQL Server-Instanz, **sql-smarthotel-eus2** , in der primären Region ein.
 
     ![Screenshot der neuen SQL Server-Instanz](./media/contoso-migration-refactor-web-app-sql/provision-sql3.png)
 
@@ -263,7 +263,7 @@ Als Nächstes konfigurieren die Contoso-Administratoren Azure DevOps für die Du
 
     ![Screenshot des Phasennamens der WCF-Web-App](./media/contoso-migration-refactor-web-app-sql/pipeline9.png)
 
-1. Sie klicken unter den Phasen auf **1 Auftrag, 1 Aufgabe**, um die Bereitstellung des WCF-Diensts zu konfigurieren.
+1. Sie klicken unter den Phasen auf **1 Auftrag, 1 Aufgabe** , um die Bereitstellung des WCF-Diensts zu konfigurieren.
 
     ![Screenshot der Option „1 Auftrag, 1 Aufgabe“](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline10.png)
 
@@ -287,7 +287,7 @@ Als Nächstes konfigurieren die Contoso-Administratoren Azure DevOps für die Du
 
     ![Screenshot der Option zum Auswählen von „Azure App Service bereitstellen“](./media/contoso-migration-refactor-web-app-sql/pipeline15.png)
 
-1. Unter **Datei oder Ordner suchen** erweitern sie den **Ablageordner**, wählen die Datei *SmartHotel.Registration.Wcf.zip* aus, die während der Erstellung erstellt wurde, und klicken anschließend auf **Speichern**.
+1. Unter **Datei oder Ordner suchen** erweitern sie den **Ablageordner** , wählen die Datei *SmartHotel.Registration.Wcf.zip* aus, die während der Erstellung erstellt wurde, und klicken anschließend auf **Speichern**.
 
     ![Screenshot des Bereichs „Datei oder Ordner suchen“ zum Auswählen der WCF-Datei](./media/contoso-migration-refactor-web-app-sql/pipeline16.png)
 
@@ -303,7 +303,7 @@ Als Nächstes konfigurieren die Contoso-Administratoren Azure DevOps für die Du
 
      ![Screenshot der Zusammenfassung der Releasepipeline](./media/contoso-migration-refactor-web-app-sql/pipeline19.png)
 
-1. Sie navigieren zurück zu **Build**, wählen **Trigger**aus und aktivieren anschließend das Kontrollkästchen **Continuous Integration aktivieren**. Diese Aktion aktiviert die Pipeline. Wenn also Änderungen am Code committet werden, erfolgt ein vollständiger Build mit Release.
+1. Sie navigieren zurück zu **Build** , wählen **Trigger** aus und aktivieren anschließend das Kontrollkästchen **Continuous Integration aktivieren**. Diese Aktion aktiviert die Pipeline. Wenn also Änderungen am Code committet werden, erfolgt ein vollständiger Build mit Release.
 
     ![Screenshot mit dem hervorgehobenen Kontrollkästchen „Continuous Integration aktivieren“](./media/contoso-migration-refactor-web-app-sql/pipeline20.png)
 

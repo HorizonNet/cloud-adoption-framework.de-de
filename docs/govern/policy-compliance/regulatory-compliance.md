@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 2e749ea3b5a1b70e0cf4cbe497ded83b857200d1
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: d6f5aa596b1012732669224a03472c40e07d347d
+ms.sourcegitcommit: 8bd82ade858bf8095672842bd6469deae7616bbf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88879624"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "94333575"
 ---
 # <a name="introduction-to-regulatory-compliance"></a>Einführung in die Einhaltung gesetzlicher Bestimmungen
 
-Dies ist ein einführender Artikel zur Einhaltung gesetzlicher Bestimmungen, der nicht für die Implementierung einer Compliancestrategie vorgesehen ist. Ausführlichere Informationen zu [Azure-Complianceangeboten](https://aka.ms/allcompliance) sind im [Microsoft Trust Center](https://www.microsoft.com/trust-center) verfügbar. Alle heruntergeladenen Dokumente sind zudem für bestimmte Azure-Kunden über das [Microsoft Service Trust-Portal](https://servicetrust.microsoft.com) verfügbar.
+Dies ist ein einführender Artikel zur Einhaltung gesetzlicher Bestimmungen, der nicht für die Implementierung einer Compliancestrategie vorgesehen ist. Ausführlichere Informationen zu [Azure-Complianceangeboten](/microsoft-365/compliance/offering-home) sind im [Microsoft Trust Center](https://www.microsoft.com/trust-center) verfügbar. Alle heruntergeladenen Dokumente sind zudem für bestimmte Azure-Kunden über das [Microsoft Service Trust-Portal](https://servicetrust.microsoft.com) verfügbar.
 
 Die Einhaltung von Vorschriften bezieht sich auf die Disziplin und den Prozess, mit dem sichergestellt wird, dass ein Unternehmen die Gesetze befolgt, die von den Regierungsstellen in ihrer Region durchgesetzt werden, oder die Regeln, die durch freiwillig übernommene Industriestandards erforderlich sind. Im Rahmen der Einhaltung gesetzlicher Bestimmungen in der IT überwachen Personen oder Prozesse Unternehmenssysteme, um Verletzungen der durch geltende Gesetze, Bestimmungen und Standards festgelegten Richtlinien und Verfahren zu erkennen und zu verhindern. Dies betrifft wiederum einen großen Bereich von Überwachungs- und Erzwingungsprozessen. Je nach Branche und Region können sich diese Prozesse langwierig und komplex gestalten.
 

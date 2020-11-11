@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 9aa123f458258a8fbb666345006661332701f12d
-ms.sourcegitcommit: 014fe718162573f02d41bdc151a7302f02ca777b
+ms.openlocfilehash: 06e01a4356fec567641829f797be01702b7d509b
+ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90832891"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94432685"
 ---
 # <a name="hub-and-spoke-network-topology"></a>Hub-and-Spoke-Netzwerktopologie
 
@@ -30,7 +30,7 @@ Kleinere Cloudumgebungen profitieren möglicherweise nicht von der zusätzlichen
 > Die Website für Azure-Referenzarchitekturen enthält Beispielvorlagen, die Sie als Grundlage für die Implementierung Ihrer eigenen Hub-and-Spoke-Netzwerke verwenden können:
 >
 > - [Implementieren einer Hub-and-Spoke-Netzwerktopologie in Azure](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
-> - [Implementieren einer Hub-and-Spoke-Netzwerktopologie mit gemeinsamen Diensten in Azure](/azure/architecture/reference-architectures/hybrid-networking/shared-services)
+> - [Implementieren einer Hub-and-Spoke-Netzwerktopologie mit gemeinsamen Diensten in Azure](/azure/architecture/reference-architectures/hybrid-networking/#hub-spoke-network-topology)
 
 ## <a name="overview"></a>Übersicht
 
