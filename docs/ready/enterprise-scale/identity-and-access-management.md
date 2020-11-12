@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: ae81d4fa9c484ec3d5e06c27deb4a9826ebfea70
-ms.sourcegitcommit: 44fb6deee30fd6ffc80b5d2e66544a50e8405c73
+ms.openlocfilehash: e3876da051b363db5bc674a0b1159c525828fc71
+ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91492722"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94432668"
 ---
 # <a name="identity-and-access-management"></a>Identitäts- und Zugriffsverwaltung
 
@@ -66,12 +66,12 @@ _Abbildung 1: Identitäts- und Zugriffsverwaltung._
 | Netzwerkverwaltung (NetOps)        | Plattformweite Verwaltung globaler Konnektivität: Virtuelle Netzwerke, UDRs, NSGs, NVAs, VPN, Azure ExpressRoute und andere            | `*/read`, `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*`                              |                                                                                                                                                                               |
 | SecOps       | Sicherheitsadministratorrolle mit horizontaler Sicht auf die gesamte Azure-Umgebung und die Bereinigungsrichtlinie von Azure Key Vault | `*/read`, `*/register/action`, `Microsoft.KeyVault/locations/deletedVaults/purge/action`, `Microsoft.Insights/alertRules/*`, `Microsoft.Authorization/policyDefinitions/*`, `Microsoft.Authorization/policyAssignments/*`, `Microsoft.Authorization/policySetDefinitions/*`, `Microsoft.PolicyInsights/*`, `Microsoft.Security/*` |                                                                            |
 | Abonnementbesitzer                 | Delegierte Rolle für Abonnementbesitzer, die von der Rolle „Abonnementbesitzer“ abgeleitet ist                                       | `*`                                                                                                                                                                                                                  | `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*` |
-| Anwendungsbesitzer (DevOps/AppOps) | Die dem Anwendungs-/Betriebsteam auf Ressourcengruppenebene zugewiesene Rolle „Mitwirkender“                                 |                                                                                                                                                                                                                    | `Microsoft.Network/publicIPAddresses/write`, `Microsoft.Network/virtualNetworks/write`, `Microsoft.KeyVault/locations/deletedVaults/purge/action`                                         |
+| Anwendungsbesitzer (DevOps/AppOps) | Die dem Anwendungs-/Betriebsteam auf Ressourcengruppenebene zugewiesene Rolle „Mitwirkender“                                 | `*`                                                                                                                                                                                                                   | `Microsoft.Authorization/*/write`, `Microsoft.Network/publicIPAddresses/write`, `Microsoft.Network/virtualNetworks/write`, `Microsoft.KeyVault/locations/deletedVaults/purge/action`                                         |
 
 - Nutzen Sie den JIT-Zugriff (Just-in-Time) von Azure Security Center für alle IaaS-Ressourcen (Infrastructure-as-a-Service), um Schutz auf Netzwerkebene für den kurzlebigen Zugriff von Benutzern auf IaaS-VMs zu aktivieren.
 - Nutzen Sie mit Azure AD verwaltete Identitäten für Azure-Ressourcen, um eine Authentifizierung auf Basis von Benutzernamen und Kennwörtern zu vermeiden. Da viele Sicherheitsverletzungen bei Ressourcen in öffentlichen Clouds ihren Ursprung im Diebstahl von Anmeldeinformationen haben, die in Code oder andere Textquellen eingebettet sind, verringert die Erzwingung verwalteter Identitäten für den programmgesteuerten Zugriff das Risiko dieser Form von Diebstahl erheblich.
 - Nutzen Sie privilegierte Identitäten für Automatisierungsrunbooks, die erhöhte Zugriffsberechtigungen erfordern. Automatisierte Workflows, die kritische Sicherheitsgrenzen verletzen, müssen mithilfe derselben Tools und Richtlinien geregelt werden, die auch für Benutzer mit gleichwertigen Berechtigungen gelten.
-- Fügen Sie Azure-Ressourcenbereichen keine Benutzer direkt hinzu. Dieser Mangel an zentralisierter Verwaltung erhöht den Verwaltungsaufwand erheblich, der erforderlich ist, um unautorisierten Zugriff auf geschützte Daten zu verhindern.
+- Fügen Sie Azure-Ressourcenbereichen keine Benutzer direkt hinzu. Fügen Sie stattdessen Benutzer zu definierten Rollen hinzu, die dann wiederum Ressourcenbereichen zugewiesen werden. Mit direkten Benutzerzuweisungen wird eine zentralisierte Verwaltung umgangen, wodurch sich der Verwaltungsaufwand erheblich erhöht, der erforderlich ist, um unautorisierten Zugriff auf geschützte Daten zu verhindern.
 
 ### <a name="plan-for-authentication-inside-a-landing-zone"></a>Planen der Authentifizierung innerhalb einer Zielzone
 

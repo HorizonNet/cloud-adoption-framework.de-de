@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 9789d598d32647fc772cb0dadf0ed50e12bbfec6
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 8102fbe541a69da1b2e43dd73fd981d67e9e1688
+ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88879080"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94432617"
 ---
 # <a name="cloud-native-security-baseline-policy"></a>Richtlinie zur cloudnativen Sicherheitsbaseline
 
-Die [Disziplin „Sicherheitsbaseline“](./index.md) ist eine der [fünf Disziplinen der Cloudgovernance](../governance-disciplines.md). Bei dieser Disziplin geht es um allgemeine Sicherheitsthemen, z. B. den Schutz des Netzwerks, von digitalen Ressourcen und von Daten. Wie im [Leitfaden zur Richtlinienüberprüfung](../policy-compliance/cloud-policy-review.md) erläutert, umfasst das Cloud Adoption Framework drei Ebenen von Beispielrichtlinien: cloudnative, Unternehmens- und cloudentwurfsprinzipien-konforme Richtlinien für jede der einzelnen Disziplinen. In diesem Artikel wird die cloudnative Beispielrichtlinie für die Disziplin der Sicherheitsbaseline beschrieben.
+Die [Disziplin „Sicherheitsbaseline“](./index.md) ist eine der [fünf Disziplinen der Cloudgovernance](../governance-disciplines.md). Bei dieser Disziplin geht es um allgemeine Sicherheitsthemen, z. B. den Schutz des Netzwerks, von digitalen Ressourcen und von Daten. In diesem Artikel wird eine cloudnative Beispielrichtlinie für die Disziplin der Sicherheitsbaseline beschrieben.
 
 > [!NOTE]
 > Microsoft ist nicht in der Lage, Unternehmens- oder IT-Richtlinien vorzuschreiben. Dieser Artikel unterstützt Sie bei den Vorbereitungen für eine interne Richtlinienüberprüfung. Es wird davon ausgegangen, dass diese Beispielrichtlinie vor ihrer Verwendung erweitert, überprüft und in Bezug auf Ihre Unternehmensrichtlinie getestet wird. Die Beispielrichtlinie sollte nicht ohne Anpassungen verwendet werden.
