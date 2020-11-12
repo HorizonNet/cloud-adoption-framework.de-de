@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ceb8fcff6417754f27d9d1c9f32469f58f88f4aa
-ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
+ms.openlocfilehash: 522c3824c52550664d1656970ca2f9881dbe86d1
+ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93283342"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94432719"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -47,8 +47,9 @@ Der für die einzelnen virtuellen Netzwerke zugewiesene Adressraum darf nicht gr
 Weitere Tipps für die Planung:
 
 - Der Adressraum virtueller Netzwerke darf sich nicht mit lokalen Netzwerkbereichen überschneiden.
-- Verwenden Sie nicht die Netzwerkadressenübersetzung (Network Address Translation, NAT).
-- Adressüberschneidungen können dazu führen, dass mit Netzwerken keine Verbindung hergestellt werden kann und dass das Routing nicht ordnungsgemäß funktioniert. Wenn sich Netzwerke überschneiden, muss das Netzwerk neu gestaltet oder die NAT verwendet werden.
+- Adressüberschneidungen können dazu führen, dass mit Netzwerken keine Verbindung hergestellt werden kann und dass das Routing nicht ordnungsgemäß funktioniert. 
+- Wenn sich Netzwerke überschneiden, muss das Netzwerk neu entworfen werden.
+- Wenn Sie das Netzwerk auf keinen Fall neu entwerfen können, kann die Netzwerkadressenübersetzung (NAT) hilfreich sein. Sie sollte allerdings vermieden bzw. so wenig wie möglich verwendet werden.
 
 **Weitere Informationen** :
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: csu
-ms.openlocfilehash: c23bfed62f42e5f6a6d811f0c962d1ace846665b
-ms.sourcegitcommit: c8979feb0efeb54dcef7a0b5e4084ae37016020a
+ms.openlocfilehash: 276556467a2741cfb12d2c79049c33b31e5a421f
+ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93066519"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94432702"
 ---
 # <a name="cloud-adoption-framework-enterprise-scale-landing-zone-architecture"></a>Cloud Adoption Framework – Architektur für Zielzonen auf Unternehmensebene
 
@@ -41,11 +41,11 @@ Eine Architektur in der Größenordnung eines Unternehmens wird durch eine Reihe
 
 [![Diagramm, das eine Architektur für Cloud Adoption Framework-Zielzonen auf Unternehmensniveau, basierend auf einer Azure Virtual WAN-Netzwerktopologie, zeigt.](./media/ns-arch-inline.png)](./media/ns-arch-expanded.png#lightbox)
 
-_Abbildung 2: Eine Architektur für Cloud Adoption Framework-Zielzonen auf Unternehmensniveau, basierend auf einer Azure Virtual WAN-Netzwerktopologie._
+_Abbildung 2: Eine Architektur für Cloud Adoption Framework-Zielzonen auf Unternehmensniveau, basierend auf einer Azure Virtual WAN-Netzwerktopologie. Beachten Sie, dass das Konnektivitätsabonnement einen VWAN-Hub verwendet._
 
 [![Diagramm: Architektur für Cloud Adoption Framework-Zielzonen auf Unternehmensniveau](./media/ns-arch-cust-inline.png)](./media/ns-arch-cust-expanded.png#lightbox)
 
-_Abbildung 3: Eine Architektur für Cloud Adoption Framework-Zielzonen auf Unternehmensniveau, basierend auf einer herkömmlichen Azure-Netzwerktopologie._
+_Abbildung 3: Eine Architektur für Cloud Adoption Framework-Zielzonen auf Unternehmensniveau, basierend auf einer herkömmlichen Azure-Netzwerktopologie. Beachten Sie, dass das Konnektivitätsabonnement eine Hub-VNet verwendet._
 
 Laden Sie die PDF-Dateien herunter, die die Diagramme der Architektur auf Unternehmensniveau enthalten, basierend auf der [Virtual WAN](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/enterprise-scale-architecture.pdf)-Netzwerktopologie oder einer herkömmlichen Azure-Netzwerktopologie, basierend auf der [Hub-and-Spoke](https://github.com/microsoft/CloudAdoptionFramework/raw/master/ready/enterprise-scale-architecture-cust.pdf)-Architektur.
 

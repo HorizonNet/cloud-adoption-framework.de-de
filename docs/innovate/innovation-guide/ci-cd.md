@@ -1,20 +1,20 @@
 ---
 title: 'Azure-Innovation: Unterstützen der Einführung'
 description: Helfen Sie Entwicklern dabei, produktiv zu sein, fördern Sie eine sichere globale Zusammenarbeit, und beseitigen Sie Hindernisse für die Skalierung von Innovationen in Azure.
-author: absheik
-ms.author: absheik
+author: BrianBlanchard
+ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 98d5647062e440abbc54da1fc20d99640c9e63a5
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 9faf59eff7bba1a8c82abbfc263fa160aa593086
+ms.sourcegitcommit: 8e5b670151cc8da0934037e23a1ef1609c6b2cc2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604320"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94378867"
 ---
 # <a name="empower-adoption"></a>Unterstützen der Einführung
 
@@ -95,6 +95,7 @@ Für Innovationen verwenden viele Entwickler Open-Source-Code. 80 bis 90 Prozent
 
 ### <a name="learn-more"></a>Weitere Informationen
 
+- [Open-Source beginnt auf GitHub](https://azure.microsoft.com/en-in/products/github/)
 - [Open-Source in Azure](https://azure.microsoft.com/overview/choose-azure-opensource)
 - [Microsoft Teams](/MicrosoftTeams/teams-overview)
 

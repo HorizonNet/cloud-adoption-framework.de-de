@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: csu
-ms.openlocfilehash: 543a119bb6f89db76bf1fb68197721a3efe5b0fc
-ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
+ms.openlocfilehash: ded26770595abe0d416f55923f59a70a8568bff7
+ms.sourcegitcommit: 8e5b670151cc8da0934037e23a1ef1609c6b2cc2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93283025"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94378884"
 ---
 # <a name="transition-existing-azure-environments-to-enterprise-scale"></a>Übertragen bestehender Azure-Umgebungen auf Unternehmensniveau
 
@@ -34,7 +34,7 @@ Um zu verstehen, welche Verschiebungsstrategie Sie verwenden sollten, werden nac
 
 ## <a name="subscription-move"></a>Abonnementverschiebung
 
-Häufige Anwendungsfälle für das Verschieben von Abonnements sind in erster Linie: 1) Organisieren von Abonnements in Verwaltungsgruppen und 2) Übertragen von Abonnements in einen neuen Azure Active Directory-Mandanten. In diesem Abschnitt konzentrieren wir uns auf das Verschieben von Abonnements in Verwaltungsgruppen, da die Übertragung auf einen neuen Mandanten hauptsächlich zum [Übertragen des Abrechnungsbesitzes](https://docs.microsoft.com/azure/cost-management-billing/manage/billing-subscription-transfer) dient.
+Häufige Anwendungsfälle für das Verschieben von Abonnements sind das Organisieren von Abonnements in Verwaltungsgruppen oder das Übertragen von Abonnements in einen neuen Azure Active Directory-Mandanten. Das Verschieben von Abonnements im Unternehmensumfang konzentriert sich auf das Verschieben von Abonnements in Verwaltungsgruppen. Das Verschieben eines Abonnements in einen neuen Mandanten dient hauptsächlich der [Übertragung des Abrechnungsbesitzes](https://docs.microsoft.com/azure/cost-management-billing/manage/billing-subscription-transfer). 
 
 ### <a name="rbac-requirements"></a>RBAC-Anforderungen
 

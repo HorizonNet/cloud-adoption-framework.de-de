@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: f872d4cf6389efe6f956c3a8990aea818fc2c32b
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 4384d404142ccd87587f693804e6b1ec37c734df
+ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604863"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94432566"
 ---
 # <a name="governance-guide-for-complex-enterprises-improve-the-security-baseline-discipline"></a>Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Sicherheitsbaseline“
 
@@ -57,80 +57,78 @@ Seit diesem Zeitpunkt haben sich einige Dinge geändert, die sich auf die Govern
 Dieses Geschäftsrisiko lässt sich auf eine Reihe von technischen Risiken ausweiten:
 
 1. Unternehmenskritische Anwendungen oder geschützten Daten werden möglicherweise unbeabsichtigt bereitgestellt.
-2. Geschützte Daten könnten aufgrund falscher Verschlüsselungsentscheidungen im Speicher verfügbar gemacht werden.
-3. Nicht autorisierte Benutzer können möglicherweise auf geschützte Daten zugreifen.
-4. Ein Eindringen von außerhalb kann den Zugriff auf geschützte Daten ermöglichen.
-5. Ein Eindringen von außerhalb oder Denial-of-Service-Angriffe können zu einer Unterbrechung des Geschäftsbetriebs führen.
-6. Organisatorische Änderungen oder Personalwechsel können den unbefugten Zugriff auf geschützte Daten ermöglichen.
-7. Neue Exploits schaffen Möglichkeiten für Eindringlinge oder für unbefugten Zugriff.
-8. Inkonsistente Bereitstellungsprozesse können Sicherheitslücken verursachen, die zu Datenverlusten oder Unterbrechungen führen können.
-9. Konfigurationsabweichungen oder fehlende Patches können unbeabsichtigte Sicherheitslücken zur Folge haben, die zu Datenverlusten oder Unterbrechungen führen können.
-10. Verschiedenartige Edge-Geräte können die Kosten für den Netzwerkbetrieb erhöhen.
-11. Verschiedenartige Gerätekonfigurationen können zu Fehlern in der Konfiguration und zur Gefährdung der Sicherheit führen.
-12. Das Team für Cybersicherheit besteht darauf, dass durch das Generieren von Verschlüsselungsschlüsseln auf der Plattform eines einzigen Cloudanbieters das Risiko einer Anbieterabhängigkeit besteht. Auch wenn diese Sorge unbegründet ist, wurde dies vom Team vorerst akzeptiert.
+1. Geschützte Daten könnten aufgrund falscher Verschlüsselungsentscheidungen im Speicher verfügbar gemacht werden.
+1. Nicht autorisierte Benutzer können möglicherweise auf geschützte Daten zugreifen.
+1. Ein Eindringen von außerhalb kann den Zugriff auf geschützte Daten ermöglichen.
+1. Ein Eindringen von außerhalb oder Denial-of-Service-Angriffe können zu einer Unterbrechung des Geschäftsbetriebs führen.
+1. Organisatorische Änderungen oder Personalwechsel können den unbefugten Zugriff auf geschützte Daten ermöglichen.
+1. Neue Exploits schaffen Möglichkeiten für Eindringlinge oder für unbefugten Zugriff.
+1. Inkonsistente Bereitstellungsprozesse können Sicherheitslücken verursachen, die zu Datenverlusten oder Unterbrechungen führen können.
+1. Konfigurationsabweichungen oder fehlende Patches können unbeabsichtigte Sicherheitslücken zur Folge haben, die zu Datenverlusten oder Unterbrechungen führen können.
+1. Verschiedenartige Edge-Geräte können die Kosten für den Netzwerkbetrieb erhöhen.
+1. Verschiedenartige Gerätekonfigurationen können zu Fehlern in der Konfiguration und zur Gefährdung der Sicherheit führen.
+1. Das Team für Cybersicherheit besteht darauf, dass durch das Generieren von Verschlüsselungsschlüsseln auf der Plattform eines einzigen Cloudanbieters das Risiko einer Anbieterabhängigkeit besteht. Auch wenn diese Sorge unbegründet ist, wurde dies vom Team vorerst akzeptiert.
 
 ## <a name="incremental-improvement-of-the-policy-statements"></a>Inkrementelle Verbesserungen der Richtlinienanweisungen
 
 Die folgenden Änderungen an der Richtlinie verringern die neuen Risiken und vereinfachen die Implementierung. Die Liste wirkt lang, aber die Einführung dieser Richtlinien ist möglicherweise einfacher, als es den Anschein hat.
 
 1. Alle bereitgestellten Ressourcen müssen nach Wichtigkeit und Datenklassifizierung kategorisiert werden. Vor der Bereitstellung in der Cloud müssen die Klassifizierungen durch das Cloudgovernanceteam und die Anwendung überprüft werden.
-2. Anwendungen, die geschützte Daten speichern oder darauf zugreifen, müssen anders verwaltet werden als Anwendungen, auf die das nicht zutrifft. Zumindest müssen sie segmentiert werden, um einen unbeabsichtigten Zugriff auf geschützte Daten zu vermeiden.
-3. Alle geschützten Daten müssen im Ruhezustand verschlüsselt sein.
-4. Erhöhte Berechtigungen in einem Segment mit geschützten Daten müssen eine Ausnahme bleiben. Solche Ausnahmen werden vom Cloudgovernanceteam erfasst und regelmäßig überwacht.
-5. Netzwerksubnetze mit geschützten Daten müssen von allen anderen Subnetzen isoliert werden. Der Netzwerkdatenverkehr zwischen Subnetzen mit geschützten Daten wird regelmäßig überwacht.
-6. Kein Subnetz mit geschützten Daten ist direkt über das öffentliche Internet oder datencenterübergreifend zugänglich. Der Zugriff auf diese Subnetze muss über zwischengeschaltete Subnetze geroutet werden. Der gesamte Zugriff auf diese Subnetze muss über eine Firewalllösung erfolgen, die Funktionen zur Paketüberprüfung und Sperrfunktionen durchführen kann.
-7. Die Anforderungen an die Netzwerkkonfiguration, die vom Sicherheitsverwaltungsteam definiert wurden, müssen mit Governancetools überwacht und durchgesetzt werden.
-8. Governancetools müssen die VM-Bereitstellung auf genehmigte Images begrenzen.
-9. Nach Möglichkeit muss die Knotenkonfigurationsverwaltung Richtlinienanforderungen auf die Konfiguration aller Gastbetriebssysteme anwenden. Die Knotenkonfigurationsverwaltung muss die vorhandene Investition in das Gruppenrichtlinienobjekt (Group Policy Object, GPO) für die Ressourcenkonfiguration berücksichtigen.
-10. Governancetools überwachen die Aktivierung automatischer Updates für alle bereitgestellten Assets. Nach Möglichkeit werden automatische Updates durchgesetzt. Wenn sie nicht durch Tools erzwungen werden, müssen Verstöße auf Knotenebene von Betriebsmanagementteams überprüft und in Übereinstimmung mit den Betriebsrichtlinien beseitigt werden. Ressourcen, die nicht automatisch aktualisiert werden, müssen in Prozesse einbezogen werden, die IT Operations unterstehen.
-11. Für die Erstellung neuer Abonnements oder Verwaltungsgruppen für unternehmenskritische Anwendungen oder geschützte Daten ist eine Überprüfung durch das Cloudgovernanceteam erforderlich, um eine angemessene Blaupausenzuweisung sicherzustellen.
-12. Das Zugriffsmodell der geringsten Rechte wird auf alle Abonnements angewendet, die unternehmenskritische Anwendungen oder geschützte Daten enthalten.
-13. Der Cloudanbieter muss Verschlüsselungsschlüssel integrieren können, die von der vorhandenen lokalen Lösung verwaltet werden.
-14. Der Cloudanbieter muss die vorhandene Lösung für Edge-Geräte und alle erforderlichen Konfigurationen zum Schutz öffentlich zugänglicher Netzwerkgrenzen unterstützen können.
-15. Der Cloudanbieter muss eine freigegebene Verbindung mit dem globalen WAN unterstützen können, bei der die Datenübertragung über die vorhandene Edge-Gerätelösung geroutet wird.
-16. Trends und Exploits, die Auswirkungen auf Cloudbereitstellungen haben könnten, müssen vom Sicherheitsteam regelmäßig überprüft werden, damit Updates für in der Cloud verwendete Sicherheitsbaselinetools bereitgestellt werden können.
-17. Bereitstellungstools müssen vom Cloudgovernanceteam genehmigt werden, um eine kontinuierliche Governance für bereitgestellte Ressourcen sicherzustellen.
-18. Bereitstellungsskripts müssen in einem zentralen Repository aufbewahrt werden, das für das Cloudgovernanceteam zur regelmäßigen Überprüfung und Überwachung zugänglich ist.
-19. Governanceprozesse müssen Überwachungen zum Bereitstellungszeitpunkt und nachfolgend in regelmäßigen Zyklen umfassen, um für alle Ressourcen Konsistenz zu gewährleisten.
-20. Die Bereitstellung von Anwendungen, für die eine Kundenauthentifizierung erforderlich ist, erfordert einen genehmigten Identitätsanbieter, der mit dem primären Identitätsanbieter für interne Benutzer kompatibel ist.
-21. Cloudgovernanceprozesse müssen vierteljährliche Überprüfungen durch Identitätsbaselineteams umfassen, um böswillige Akteure oder Nutzungsmuster identifizieren zu können, die durch die Cloudressourcenkonfiguration verhindert werden sollten.
+1. Anwendungen, die geschützte Daten speichern oder darauf zugreifen, müssen anders verwaltet werden als Anwendungen, auf die das nicht zutrifft. Zumindest müssen sie segmentiert werden, um einen unbeabsichtigten Zugriff auf geschützte Daten zu vermeiden.
+1. Alle geschützten Daten müssen im Ruhezustand verschlüsselt sein.
+1. Erhöhte Berechtigungen in einem Segment mit geschützten Daten müssen eine Ausnahme bleiben. Solche Ausnahmen werden vom Cloudgovernanceteam erfasst und regelmäßig überwacht.
+1. Netzwerksubnetze mit geschützten Daten müssen von allen anderen Subnetzen isoliert werden. Der Netzwerkdatenverkehr zwischen Subnetzen mit geschützten Daten wird regelmäßig überwacht.
+1. Kein Subnetz mit geschützten Daten ist direkt über das öffentliche Internet oder datencenterübergreifend zugänglich. Der Zugriff auf diese Subnetze muss über zwischengeschaltete Subnetze geroutet werden. Der gesamte Zugriff auf diese Subnetze muss über eine Firewalllösung erfolgen, die Funktionen zur Paketüberprüfung und Sperrfunktionen durchführen kann.
+1. Die Anforderungen an die Netzwerkkonfiguration, die vom Sicherheitsverwaltungsteam definiert wurden, müssen mit Governancetools überwacht und durchgesetzt werden.
+1. Governancetools müssen die VM-Bereitstellung auf genehmigte Images begrenzen.
+1. Nach Möglichkeit muss die Knotenkonfigurationsverwaltung Richtlinienanforderungen auf die Konfiguration aller Gastbetriebssysteme anwenden. Die Knotenkonfigurationsverwaltung muss die vorhandene Investition in das Gruppenrichtlinienobjekt (Group Policy Object, GPO) für die Ressourcenkonfiguration berücksichtigen.
+1. Governancetools überwachen die Aktivierung automatischer Updates für alle bereitgestellten Assets. Nach Möglichkeit werden automatische Updates durchgesetzt. Wenn sie nicht durch Tools erzwungen werden, müssen Verstöße auf Knotenebene von Betriebsmanagementteams überprüft und in Übereinstimmung mit den Betriebsrichtlinien beseitigt werden. Ressourcen, die nicht automatisch aktualisiert werden, müssen in Prozesse einbezogen werden, die IT Operations unterstehen.
+1. Für die Erstellung neuer Abonnements oder Verwaltungsgruppen für unternehmenskritische Anwendungen oder geschützte Daten ist eine Überprüfung durch das Cloudgovernanceteam erforderlich, um eine angemessene Blaupausenzuweisung sicherzustellen.
+1. Das Zugriffsmodell der geringsten Rechte wird auf alle Abonnements angewendet, die unternehmenskritische Anwendungen oder geschützte Daten enthalten.
+1. Der Cloudanbieter muss Verschlüsselungsschlüssel integrieren können, die von der vorhandenen lokalen Lösung verwaltet werden.
+1. Der Cloudanbieter muss die vorhandene Lösung für Edge-Geräte und alle erforderlichen Konfigurationen zum Schutz öffentlich zugänglicher Netzwerkgrenzen unterstützen können.
+1. Der Cloudanbieter muss eine freigegebene Verbindung mit dem globalen WAN unterstützen können, bei der die Datenübertragung über die vorhandene Edge-Gerätelösung geroutet wird.
+1. Trends und Exploits, die Auswirkungen auf Cloudbereitstellungen haben könnten, müssen vom Sicherheitsteam regelmäßig überprüft werden, damit Updates für in der Cloud verwendete Sicherheitsbaselinetools bereitgestellt werden können.
+1. Bereitstellungstools müssen vom Cloudgovernanceteam genehmigt werden, um eine kontinuierliche Governance für bereitgestellte Ressourcen sicherzustellen. 18. Bereitstellungsskripts müssen in einem zentralen Repository aufbewahrt werden, das für das Cloudgovernanceteam zur regelmäßigen Überprüfung und Überwachung zugänglich ist.
+1. Governanceprozesse müssen Überwachungen zum Bereitstellungszeitpunkt und nachfolgend in regelmäßigen Zyklen umfassen, um für alle Ressourcen Konsistenz zu gewährleisten.
+1. Die Bereitstellung von Anwendungen, für die eine Kundenauthentifizierung erforderlich ist, erfordert einen genehmigten Identitätsanbieter, der mit dem primären Identitätsanbieter für interne Benutzer kompatibel ist. 1. Cloudgovernanceprozesse müssen vierteljährliche Überprüfungen durch Identitätsbaselineteams umfassen, um böswillige Akteure oder Nutzungsmuster identifizieren zu können, die durch die Cloudressourcenkonfiguration verhindert werden sollten.
 
-## <a name="incremental-improvement-of-the-best-practices"></a>Inkrementelle Verbesserungen der bewährten Methoden
+## <a name="incremental-improvement-of-best-practices"></a>Inkrementelle Verbesserungen von bewährten Methoden
 
-In diesem Abschnitt wird der Governance-MVP-Entwurf so geändert, dass er neue Azure-Richtlinien und eine Implementierung von Azure Cost Management und Abrechnung umfasst. Zusammen erfüllen diese beiden Entwurfsänderungen die neuen Richtlinienanweisungen des Unternehmens.
+In diesem Abschnitt wird der Governance-MVP-Entwurf so geändert, dass er neue Azure-Richtlinien und eine Implementierung von Azure Cost Management + Billing umfasst. Zusammen erfüllen diese beiden Entwurfsänderungen die neuen Richtlinienanweisungen des Unternehmens.
 
 Die neuen bewährten Methoden lassen sich in zwei Kategorien unterteilen: Unternehmens-IT (Hub) und Cloudeinführung (Spoke).
 
-**Einrichten eines Hub-and-Spoke-Abonnements für die Unternehmens-IT zum Zentralisieren der Sicherheitsbaseline:** In dieser bewährten Methode wird die vorhandene Governancekapazität von einer [Hub-and-Spoke-Topologie mit Shared Services](/azure/architecture/reference-architectures/hybrid-networking/shared-services) umschlossen, mit einigen wichtigen Ergänzungen des Cloudgovernanceteams.
+**Einrichten eines Hub-and-Spoke-Abonnements für die Unternehmens-IT zum Zentralisieren der Sicherheitsbaseline:** In dieser bewährten Methode wird die vorhandene Governancekapazität von einer [Hub-and-Spoke-Topologie mit Shared Services](/azure/architecture/reference-architectures/hybrid-networking/#hub-spoke-network-topology) umschlossen, mit einigen wichtigen Ergänzungen des Cloudgovernanceteams.
 
 1. Azure DevOps-Repository. Erstellen Sie in Azure DevOps ein Repository zur Speicherung und Versionsverwaltung für alle relevanten Azure Resource Manager-Vorlagen und Skriptkonfigurationen.
-2. Hub-and-Spoke-Vorlage:
-    1. Die Anleitung in der [Hub-and-Spoke-Topologie mit Shared Services](/azure/architecture/reference-architectures/hybrid-networking/shared-services) kann zum Generieren von Resource Manager-Vorlagen für die Ressourcen verwendet werden, die in einem Unternehmens-IT-Hub erforderlich sind.
-    2. Mit diesen Vorlagen kann diese Struktur im Rahmen einer zentralen Governancestrategie wiederholbar gemacht werden.
-    3. Zusätzlich zur aktuellen Referenzarchitektur wird empfohlen, eine NSG-Vorlage zu erstellen, die alle Anforderungen zu Portsperren oder Zulassungslisten für das virtuelle Netzwerk erfasst, das die Firewall hosten soll. Diese Netzwerksicherheitsgruppe unterscheidet sich von früheren Gruppen, da sie die erste Netzwerksicherheitsgruppe ist, die öffentlichen Datenverkehr in ein virtuelles Netzwerk zulässt.
-3. Erstellen von Azure-Richtlinien. Erstellen Sie eine Richtlinie namens `hub NSG enforcement`, um die Konfiguration der Netzwerksicherheitsgruppe zu erzwingen, die einem in diesem Abonnement erstellten virtuellen Netzwerk zugewiesen ist. Wenden Sie die integrierten Richtlinien für die Gastkonfiguration wie folgt an:
+1. Hub-and-Spoke-Vorlage:
+    1. Die Anleitung in der [Hub-and-Spoke-Topologie mit Shared Services](/azure/architecture/reference-architectures/hybrid-networking/#hub-spoke-network-topology) kann zum Generieren von Resource Manager-Vorlagen für die Ressourcen verwendet werden, die in einem Unternehmens-IT-Hub erforderlich sind.
+    1. Mit diesen Vorlagen kann diese Struktur im Rahmen einer zentralen Governancestrategie wiederholbar gemacht werden.
+    1. Zusätzlich zur aktuellen Referenzarchitektur wird empfohlen, eine NSG-Vorlage zu erstellen, die alle Anforderungen zu Portsperren oder Zulassungslisten für das virtuelle Netzwerk erfasst, das die Firewall hosten soll. Diese Netzwerksicherheitsgruppe unterscheidet sich von früheren Gruppen, da sie die erste Netzwerksicherheitsgruppe ist, die öffentlichen Datenverkehr in ein virtuelles Netzwerk zulässt.
+1. Erstellen von Azure-Richtlinien. Erstellen Sie eine Richtlinie namens `hub NSG enforcement`, um die Konfiguration der Netzwerksicherheitsgruppe zu erzwingen, die einem in diesem Abonnement erstellten virtuellen Netzwerk zugewiesen ist. Wenden Sie die integrierten Richtlinien für die Gastkonfiguration wie folgt an:
     1. Überwachen Sie die Verwendung sicherer Kommunikationsprotokolle auf Windows-Webservern.
-    2. Überwachen Sie die korrekte Festlegung der Kennwortsicherheitseinstellungen auf Linux- und Windows-Computern.
-4. Erstellen Sie die Unternehmens-IT-Blaupause.
+    1. Überwachen Sie die korrekte Festlegung der Kennwortsicherheitseinstellungen auf Linux- und Windows-Computern.
+1. Erstellen Sie die Unternehmens-IT-Blaupause.
     1. Erstellen Sie eine Azure-Blaupause namens `corporate-it-subscription`.
-    2. Fügen Sie die Hub-and-Spoke-Vorlagen und die `hub NSG enforcement`-Richtlinie hinzu.
-5. Erweitern der anfänglichen Verwaltungsgruppenhierarchie.
+    1. Fügen Sie die Hub-and-Spoke-Vorlagen und die `hub NSG enforcement`-Richtlinie hinzu.
+1. Erweitern der anfänglichen Verwaltungsgruppenhierarchie.
     1. Für jede Verwaltungsgruppe, die Unterstützung für geschützte Daten angefordert hat, bietet die Blaupause `corporate-it-subscription-blueprint` eine beschleunigte Hublösung.
-    2. Da Verwaltungsgruppen in diesem fiktiven Beispiel neben einer Geschäftseinheitshierarchie auch eine regionale Hierarchie umfassen, wird diese Blaupause in jeder Region bereitgestellt.
-    3. Erstellen Sie für jede Region in der Verwaltungsgruppenhierarchie ein Abonnement namens `corporate IT subscription`.
-    4. Wenden Sie die Blaupause `corporate-it-subscription-blueprint` auf die einzelnen regionalen Instanzen an.
-    5. Dadurch wird für jede Geschäftseinheit in jeder Region ein Hub eingerichtet. Hinweis: Weitere Kosteneinsparungen könnten durch die gemeinsame Nutzung von Hubs durch die Geschäftseinheiten in jeder Region erzielt werden.
-6. Integrieren von Gruppenrichtlinienobjekten (GPO) über DSC (Desired State Configuration):
+    1. Da Verwaltungsgruppen in diesem fiktiven Beispiel neben einer Geschäftseinheitshierarchie auch eine regionale Hierarchie umfassen, wird diese Blaupause in jeder Region bereitgestellt.
+    1. Erstellen Sie für jede Region in der Verwaltungsgruppenhierarchie ein Abonnement namens `corporate IT subscription`.
+    1. Wenden Sie die Blaupause `corporate-it-subscription-blueprint` auf die einzelnen regionalen Instanzen an.
+    1. Dadurch wird für jede Geschäftseinheit in jeder Region ein Hub eingerichtet. Hinweis: Weitere Kosteneinsparungen könnten durch die gemeinsame Nutzung von Hubs durch die Geschäftseinheiten in jeder Region erzielt werden.
+1. Integrieren von Gruppenrichtlinienobjekten (GPO) über DSC (Desired State Configuration):
     1. Konvertieren eines GPO in DSC. Das [Projekt zur Microsoft-Baselineverwaltung](https://github.com/microsoft/baselinemanagement) auf GitHub kann diese Aufgabe beschleunigen. Stellen Sie sicher, dass DSC im Repository parallel zu den Resource Manager-Vorlagen gespeichert wird.
-    2. Stellen Sie Azure Automation State Configuration für alle Instanzen des Unternehmens-IT-Abonnements bereit. Mit Azure Automation kann DSC auf virtuelle Computer angewendet werden, die in unterstützten Abonnements innerhalb der Verwaltungsgruppe bereitgestellt werden.
-    3. In der aktuellen Roadmap ist die Aktivierung benutzerdefinierter Gastkonfigurationsrichtlinien als Ziel festgelegt. Wenn dieses Feature veröffentlicht wird, ist die Verwendung von Azure Automation in dieser bewährten Methode nicht mehr erforderlich.
+    1. Stellen Sie Azure Automation State Configuration für alle Instanzen des Unternehmens-IT-Abonnements bereit. Mit Azure Automation kann DSC auf virtuelle Computer angewendet werden, die in unterstützten Abonnements innerhalb der Verwaltungsgruppe bereitgestellt werden.
+    1. In der aktuellen Roadmap ist die Aktivierung benutzerdefinierter Gastkonfigurationsrichtlinien als Ziel festgelegt. Wenn dieses Feature veröffentlicht wird, ist die Verwendung von Azure Automation in dieser bewährten Methode nicht mehr erforderlich.
 
 **Anwenden zusätzlicher Governance auf ein Cloudeinführungsabonnement (Spoke):** Aufbauend auf dem `corporate IT subscription` können geringfügige Änderungen am Governance-MVP, die auf die einzelnen Abonnements zur Unterstützung von Anwendungsarchetypen angewendet werden, für eine schnelle Verbesserung sorgen.
 
 In früheren iterativen Änderungen der bewährten Methoden haben wir Netzwerksicherheitsgruppen so definiert, dass sie den öffentlichen Verkehr blockieren und den internen Verkehr zulassen. Darüber hinaus wurden durch die Azure-Blaupause vorübergehend DMZ- und Active Directory-Funktionen erstellt. Im Rahmen dieser Iteration werden wir diese Ressourcen ein wenig anpassen und so eine neue Version der Azure-Blaupause erstellen.
 
 1. Vorlage zum Netzwerkpeering. Mit dieser Vorlage wird das virtuelle Netzwerk in den einzelnen Abonnements mit dem virtuellen Hub-Netzwerk im Unternehmens-IT-Abonnement gekoppelt.
-    1. Die Referenzarchitektur aus dem vorherigen Abschnitt ([Hub-and-Spoke-Topologie mit Shared Services](/azure/architecture/reference-architectures/hybrid-networking/shared-services)) generierte eine Resource Manager-Vorlage für das Aktivieren des Peerings virtueller Netzwerke.
+    1. Die Referenzarchitektur aus dem vorherigen Abschnitt ([Hub-and-Spoke-Topologie mit Shared Services](/azure/architecture/reference-architectures/hybrid-networking/#hub-spoke-network-topology)) generierte eine Resource Manager-Vorlage für das Aktivieren des Peerings virtueller Netzwerke.
     2. Diese Vorlage kann als Anleitung zum Ändern der DMZ-Vorlage aus der vorherigen Governanceiteration verwendet werden.
     3. Jetzt fügen wir dem virtuellen DMZ-Netzwerk, das zuvor per VPN mit dem lokalen Edge-Gerät verbunden war, das Peering virtueller Netzwerke hinzu.
     4. Sie sollten das VPN außerdem aus dieser Vorlage entfernen und sicherstellen, dass kein Datenverkehr direkt an das lokale Rechenzentrum weitergeleitet wird, ohne das Unternehmens-IT-Abonnement und die Firewalllösung zu durchlaufen. Dieses VPN kann auch als Failoververbindung im Fall eines ExpressRoute-Verbindungsausfalls festgelegt werden.

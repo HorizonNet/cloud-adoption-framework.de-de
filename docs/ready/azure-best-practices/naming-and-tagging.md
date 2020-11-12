@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 87dfb5ed9a579d85b4ab26b92ad67ad145df8258
-ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
+ms.openlocfilehash: 9c1377bfed389d435403f9f72dd6ac4e48ed8ee8
+ms.sourcegitcommit: 8e5b670151cc8da0934037e23a1ef1609c6b2cc2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "93024622"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94378935"
 ---
 <!-- docutune:disable -->
 <!-- cSpell:ignore appcs arck cdnp cdne osdisk westeurope usgovia accountlookup messagequery -->
@@ -271,7 +271,7 @@ Der folgende Abschnitt enthält einige Namensbeispiele für häufige Azure-Resso
 |------------------------------|-----------------|----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | Virtuelles Netzwerk              | Resource group  | vnet-\<Subscription type\>-\<Region\>-\<\#\#\#\>                     | <li> vnet-freigabe-usaosten2-001 <li> vnet-prod-usawesten-001 <li> vnet-client-usaosten2-001 |
 | Subnet                       | Virtuelles Netzwerk | snet-\<subscription\>-\<subregion\>-\<\#\#\#\>                       | <li> snet-freigabe-usaosten2-001 <li> snet-prod-usawesten-001 <li> snet-client-usaosten2-001 |
-| Netzwerkschnittstelle (NIC)      | Resource group  | nic-\<\#\#\>-\<vm name\>-\<subscription\>\<\#\#\#\>                   | <li> nic-01-dc1-freigabe-001 <li> nic-02-vmhadoop1-prod-001 <li> nic-02-vmtest1-client-001 |
+| Netzwerkschnittstelle (NIC)      | Resource group  | nic-\<\#\#\>-\<vm name\>-\<subscription\>-\<\#\#\#\>                   | <li> nic-01-dc1-freigabe-001 <li> nic-02-vmhadoop1-prod-001 <li> nic-02-vmtest1-client-001 |
 | Öffentliche IP-Adresse            | Resource group  | pip-\<vm name or app name\>-\<Environment\>-\<subregion\>-\<\#\#\#\> | <li> pip-dc1-freigabe-usaosten2-001 <li> pip-hadoop-prod-usawesten-001 |
 | Load Balancer                | Resource group  | lb-\<app name or role\>\<Environment\>\<\#\#\#\>                     | <li> lb-navigator-prod-001 <li> lb-sharepoint-entw-001 |
 | Netzwerksicherheitsgruppe (NSG) | Subnetz oder NIC   | nsg-\<policy name or app name\>-\<\#\#\#\>                           | <li> nsg-weberlaub-001 <li> nsg-rdperlaub-001 <li> nsg-sqlerlaub-001 <li> nsg-dnsblocked-001 |
