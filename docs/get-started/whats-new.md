@@ -3,25 +3,51 @@ title: Neues
 description: Enthält Informationen zu kürzlich durchgeführten Updates für das Framework für die Einführung der Microsoft Cloud (Microsoft Cloud Adoption Framework) für Azure.
 author: JanetCThomas
 ms.author: janet
-ms.date: 08/25/2020
+ms.date: 10/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: a8f3afe5e08e415fc4fb08e1036dd559a66747ba
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 8303e9e10f96360f5db48d9248d518c6d397802d
+ms.sourcegitcommit: 03f2c9cffc25690dcc5f8215f894e898d0f4ad0e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775580"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344056"
 ---
-<!-- docutune:casing "internal Microsoft teams" OneMigrate -->
-<!-- cSpell:ignore MSPs Teradata Netezza Exadata mlops -->
+<!-- docutune:casing "Getting Started module" "internal Microsoft teams" OneMigrate -->
 
 # <a name="whats-new-in-the-microsoft-cloud-adoption-framework-for-azure"></a>Neuerungen beim Framework für die Einführung der Microsoft Cloud für Azure
 
 Hier ist eine Liste mit den Änderungen angegeben, die kürzlich am Framework für die Cloudeinführung vorgenommen wurden.
 
 Dieses Framework wurde in Zusammenarbeit mit Kunden, Partnern und internen Microsoft-Teams entwickelt. Neuer und aktualisierter Inhalt wird veröffentlicht, sobald er verfügbar ist. Mit diesen Releases können Sie die Anleitung zusammen mit uns testen, überprüfen und optimieren. Wir laden Sie ein, als Partner gemeinsam mit uns das Cloud Adoption Framework zu entwickeln.
+
+## <a name="october-2020"></a>Oktober 2020
+
+Die Updates dieses Monats umfassen inkrementelle Verbesserungen im gesamten Cloud Adoption Framework und den unterstützenden Webressourcen.
+
+Unsere größten Investitionen konzentrieren sich auf den Ausbau der Microsoft Learn-Module, um die Anwendung des Cloud Adoption Frameworks zu beschleunigen. Diesen Monat haben wir die unten aufgeführten Module veröffentlicht. Beachten Sie, dass das Modul „Erste Schritte“ unsere erste Anleitung bereitstellt, die sich an einer Schlüsselbranche orientiert, indem ein Einzelhandelskunde (Tailwind Traders) eingeführt wird, den wir durch alle der kommenden Hauptmethodenmodule begleiten werden.
+
+| Modul | BESCHREIBUNG |
+|---|---|
+| [Übersichtsmodul](/learn/modules/microsoft-cloud-adoption-framework-for-azure/) | Einführung in das Framework auf Einsteigerniveau. |
+| [Modul „Erste Schritte“](/learn/modules/cloud-adoption-framework-getting-started/) | Einführung in die Leitfäden für die ersten Schritte, um die Anwendung der geeigneten Methoden zum Überwinden bestimmter Blockaden zu beschleunigen. |
+| [Azure-Zielzonen](/learn/modules/cloud-adoption-framework-ready/) | Bevor Sie Ihre Cloudumgebung ausbauen, sollten Sie Ihre Betriebsanforderungen verstehen und das am besten geeignete Azure-Zielzonenprodukt auswählen, das Ihnen den Einstieg erleichtert. |
+| [Erstellen einer Architektur auf Unternehmensebene](/learn/paths/enterprise-scale-architecture/) | Erstellen Sie Zielzonen im großen Stil, indem Sie einen Satz von Prinzipien für das Entwerfen auf Unternehmensebene, Referenzarchitekturen und Referenzimplementierungen befolgen. Vier Module zum Erstellen eines einzelnen Lernpfads zum Erfolg. |
+
+Wir haben außerdem die geschäftlichen Ergebnisse so erweitert, dass ihnen eine Reihe von gängigen geschäftlichen Motivationen und Ansätzen gemeinsam ist, die sich im Marketplace nach COVID entwickeln.
+
+| Artikel | BESCHREIBUNG |
+|---|---|
+| [Beispiele für Nachhaltigkeitsergebnisse](../strategy/business-outcomes/sustainability.md) | Erfahren Sie, wie Cloud Computing Ihnen dabei helfen kann, die CO2-Emissionen zu reduzieren, Ressourcen effizienter zu nutzen und Ihren ökologischen Fußabdruck zu verkleinern. |
+| [Messen von Geschäftsergebnissen mit Zielen und wichtigen Ergebnissen (OKRs)](../strategy/business-outcomes/okr.md) | Erfahren Sie, wie Sie OKRs zum Messen von Geschäftsergebnissen verwenden. |
+| [Messen von Geschäftsergebnissen mit AppDynamics](../digital-estate/app-dynamics.md) | Das Verstehen der Leistung und Benutzererfahrung einer Anwendung ist von wesentlicher Bedeutung für die Messung von Geschäftsergebnissen. Erfahren Sie, wie AppDynamics für die meisten Anwendungsfälle geschäftliche Erkenntnisse liefern kann. |
+| [Cost Management-Update: Spot-VMs](../govern/cost-management/best-practices.md#best-practice-reduce-nonproduction-costs) | Die Verwendung von Spot-VMs in Nichtproduktionsumgebungen ist eine schnell aufkommende Praxis, um die Kosten in solchen vorhandenen Umgebungen weiter zu reduzieren. „Ich verfüge bereits über eine funktionierende Umgebung. Wie kann ich die Entwurfsprinzipien für die Unternehmensebene anwenden?“ Hierbei kann der neue Artikel zum Übergang zur Unternehmensebene helfen. |
+
+| Artikel | BESCHREIBUNG |
+|---|---|
+| [Übertragen bestehender Azure-Umgebungen auf Unternehmensebene](../ready/enterprise-scale/transition.md) | Dieser Artikel hilft Organisationen, den richtigen Weg für die Übertragung bestehender Azure-Umgebung auf Unternehmensebene zu finden. |
+| [Cloud Adoption Framework – Architektur für Zielzonen auf Unternehmensebene](../ready/enterprise-scale/architecture.md) | Dieser Artikel wurde aktualisiert und enthält nun ein allgemeines Diagramm für eine Zielzonenarchitektur auf Unternehmensebene, die auf der Hub-and-Spoke-Netzwerktopologie basiert, sowie Aktualisierungen, um die kritischen Entwurfsbereiche für eine Zielzonenarchitektur auf Unternehmensebene zu beschreiben und Querverweise dafür. |
 
 ## <a name="august-25-2020"></a>25. August 2020
 
