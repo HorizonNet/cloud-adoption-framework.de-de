@@ -7,12 +7,12 @@ ms.date: 06/24/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 3dc4b921e8c2ffc1dd020274b9f6dbe53e700507
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 4a0d6d857481b3c3bbd73d44a81ff5fe72e4a3fd
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605219"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712084"
 ---
 <!-- cSpell:ignore Informatica gzipped Attunity -->
 
@@ -90,8 +90,7 @@ Zusätzlich zur Vorbereitung Ihres Migrationsteams für die Zielumgebung und ein
 - Microsoft Azure ExpressRoute zur direkten Übertragung komprimierter Daten zu Azure
 - Dateiexport zu Azure Data Box
 
-Die Hauptfaktoren, die beeinflussen, welche dieser Optionen ausgewählt wird, sind die Größe des Datenvolumes (in Terabyte) und die Netzwerkgeschwindigkeit (in MBit/s). Es muss berechnet werden, wie lange die Migration von Daten über das Netzwerk dauern würde. Dabei muss bedacht werden, dass die Daten in Ihrem Data Warehouse möglicherweise komprimiert sind und für den Export dekomprimiert werden müssen. Eine solche Situation kann die Datenübertragung verlangsamen. Wenn Daten über eine der oben erwähnten Methoden verschoben werden, können sie danach über Gzip wieder komprimiert werden. PolyBase kann über Gzip komprimierte Daten direkt verarbeiten.
-Große Datenvolumes werden wahrscheinlicher über Azure Data Box migriert, wenn es zu lange dauern würde, die Daten zu verschieben.
+Die Hauptfaktoren, die beeinflussen, welche dieser Optionen ausgewählt wird, sind die Größe des Datenvolumes (in Terabyte) und die Netzwerkgeschwindigkeit (in MBit/s). Es muss berechnet werden, wie lange die Migration von Daten über das Netzwerk dauern würde. Dabei muss bedacht werden, dass die Daten in Ihrem Data Warehouse möglicherweise komprimiert sind und für den Export dekomprimiert werden müssen. Eine solche Situation kann die Datenübertragung verlangsamen. Wenn Daten über eine der oben erwähnten Methoden verschoben werden, können sie danach über Gzip wieder komprimiert werden. PolyBase kann über Gzip komprimierte Daten direkt verarbeiten. Große Datenvolumes werden wahrscheinlicher über Azure Data Box migriert, wenn es zu lange dauern würde, die Daten zu verschieben.
 
 Außerdem muss eine selbstgehostete Integration-Runtime-Software in Ihrem Rechenzentrum installiert werden, damit die Migration fortgesetzt werden kann und Azure Data Factory die Ausführung der Datenexporte aus Ihrem vorhandenen Data Warehouse in Azure steuern kann. Angesichts dieser Anforderungen sollten Sie erforderliche Genehmigungsprozesse frühzeitig anstoßen, um Verzögerungen insgesamt auszuschließen, wenn formelle Genehmigungen für die Umsetzung der Migration erforderlich sind.
 

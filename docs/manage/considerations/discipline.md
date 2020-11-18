@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: bc9ae42f65f67d1f770de2ef53607937d811e735
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: ff95510b54d8c82036f7cae5ec5f70809489672d
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571608"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713563"
 ---
 # <a name="management-leveling-across-cloud-management-disciplines"></a>Verwaltungsebenen in den verschiedenen Cloudverwaltungsdisziplinen
 
@@ -34,8 +34,7 @@ Erwägen Sie als Ausgangspunkt die Festlegung der Verwaltungsebenen, die im vorh
 
 Unternehmen können auch [Funktionen, die mit einer oder mehreren dieser Verwaltungsebenen in Zusammenhang stehen, an einen Dienstanbieter auslagern](https://aka.ms/adopt/partneroffers). Diese Dienstanbieter können mit [Azure Lighthouse](/azure/lighthouse/overview) mehr Genauigkeit und Transparenz bieten.
 
-In den verbleibenden Artikeln dieser Reihe werden Prozesse beschrieben, die in jeder dieser Disziplinen gebräuchlich sind.
-Gleichzeitig finden Sie im [Azure-Verwaltungsleitfaden](../azure-management-guide/index.md) eine Beschreibung der Tools, die diese Prozesse unterstützen können. Wenn Sie Unterstützung beim Aufbau Ihrer Verwaltungsbaseline benötigen, lesen Sie zunächst den Azure-Verwaltungsleitfaden. Nachdem Sie die Baseline festgelegt haben, können Sie sie mit den Informationen in dieser Artikelreihe und den dazugehörigen bewährten Methoden erweitern und weitere Ebenen der Verwaltungsunterstützung definieren.
+In den verbleibenden Artikeln dieser Reihe werden Prozesse beschrieben, die in jeder dieser Disziplinen gebräuchlich sind. Gleichzeitig finden Sie im [Azure-Verwaltungsleitfaden](../azure-management-guide/index.md) eine Beschreibung der Tools, die diese Prozesse unterstützen können. Wenn Sie Unterstützung beim Aufbau Ihrer Verwaltungsbaseline benötigen, lesen Sie zunächst den Azure-Verwaltungsleitfaden. Nachdem Sie die Baseline festgelegt haben, können Sie sie mit den Informationen in dieser Artikelreihe und den dazugehörigen bewährten Methoden erweitern und weitere Ebenen der Verwaltungsunterstützung definieren.
 
 ## <a name="cloud-management-disciplines"></a>Cloudverwaltungsdisziplinen
 

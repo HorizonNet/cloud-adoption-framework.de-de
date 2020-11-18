@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a8826b82e9ec3aa503e79e0aa5345a3a494a2bef
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 7a37a812964bb595e426341d002a0e326d86013e
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567545"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712050"
 ---
 <!-- cSpell:ignore HKEY kusto -->
 
@@ -39,7 +39,7 @@ Sie können auch eine Warnung für Änderungen an Dateien hinzufügen, die Sie n
 ![Screenshot des Log Analytics-Abfrage-Editors im Azure-Portal](./media/change-tracking2.png)
 
 Diese Abfrage sucht nach Änderungen am Inhalt von Dateien, deren Pfad das Wort „hosts“ enthält. Sie können auch nach einer bestimmten Datei suchen, indem Sie den Pfadparameter ändern. (Beispiel: `FileSystemPath ==  "c:\\windows\\system32\\drivers\\etc\\hosts"`.)
-  
+
 Nachdem die Abfrage die Ergebnisse zurückgegeben hat, wählen Sie **Neue Warnungsregel** aus, um den Editor für Warnungsregeln zu öffnen. Sie können diesen Editor auch über Azure Monitor im Azure-Portal erreichen.
 
 Überprüfen Sie die Abfrage im Editor für Warnungsregeln, und ändern Sie bei Bedarf die Warnungslogik. In diesem Fall soll die Warnung ausgelöst werden, wenn Änderungen an einem Computer in der Umgebung festgestellt werden.

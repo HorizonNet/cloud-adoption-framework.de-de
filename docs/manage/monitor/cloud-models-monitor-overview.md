@@ -7,12 +7,12 @@ ms.date: 10/20/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 1a5e1db58b3818b4b17e67ebd6465e956eade0d8
-ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
+ms.openlocfilehash: d4cc0d02eda6c22164496295b57519be50c507a3
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "93024486"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94711710"
 ---
 <!-- cSpell:ignore Savision -->
 
@@ -96,7 +96,7 @@ Um Metriken und Protokolle von Azure-Infrastruktur- und Plattformressourcen zu s
 
 ### <a name="monitor-with-system-center-operations-manager"></a>Überwachung mit System Center Operations Manager
 
-System Center Operations Manager war ursprünglich als lokale Lösung für die Überwachung von Anwendungen, Workloads und Infrastrukturkomponenten in einer IT-Umgebung konzipiert, wurde dann jedoch mit Funktionen für die Cloudüberwachung weiterentwickelt. Die Lösung lässt sich in Azure, Microsoft 365 und Amazon Web Services (AWS) integrieren. Das System kann diese unterschiedlichen Umgebungen mit dafür konzipierten und aktualisierten Management Packs überwachen.  
+System Center Operations Manager war ursprünglich als lokale Lösung für die Überwachung von Anwendungen, Workloads und Infrastrukturkomponenten in einer IT-Umgebung konzipiert, wurde dann jedoch mit Funktionen für die Cloudüberwachung weiterentwickelt. Die Lösung lässt sich in Azure, Microsoft 365 und Amazon Web Services (AWS) integrieren. Das System kann diese unterschiedlichen Umgebungen mit dafür konzipierten und aktualisierten Management Packs überwachen.
 
 Sowohl Kunden, die beträchtliche Investitionen in Operations Manager getätigt haben, um eine umfassende, eng in ihre IT-Service-Management-Prozesse und -Tools integrierte Überwachung zu erzielen, als auch Kunden, die gerade erst mit der Nutzung von Azure beginnen, stellen sich verständlicherweise die folgenden Fragen:
 
@@ -120,7 +120,7 @@ Auf Anwendungsebene bietet Operations Manager grundlegende Funktionen zur Überw
 
 Sie sollten für jede Webanwendung, auf die von einer externen Seite aus zugegriffen werden kann, eine Art synthetischer Transaktion aktivieren, die als [Verfügbarkeitsüberwachung](/azure/azure-monitor/app/monitor-web-app-availability) bezeichnet wird. Es ist wichtig zu wissen, ob Ihre Anwendung oder ein kritischer HTTP-/HTTPS-Endpunkt, auf den sich die Anwendung stützt, verfügbar und reaktionsfähig ist. Mit der Verfügbarkeitsüberwachung von Application Insights können Sie die Tests in mehreren Azure-Rechenzentren durchführen und erhalten so einen Einblick in die Integrität Ihrer Anwendung aus globaler Perspektive.
 
-Operations Manager kann zwar in Azure gehostete Ressourcen überwachen, aber Azure Monitor bietet einige Vorteile, da die Stärken von Azure Monitor die Beschränkungen von Operations Manager aufheben und eine stabile Grundlage für die Unterstützung der Migration von Operations Manager bilden können. Im Folgenden beleuchten wir diese Stärken und Schwächen im Einzelnen und bieten Empfehlungen für die Integration von Azure Monitor in die Überwachungsstrategie für Ihre Hybridumgebung.  
+Operations Manager kann zwar in Azure gehostete Ressourcen überwachen, aber Azure Monitor bietet einige Vorteile, da die Stärken von Azure Monitor die Beschränkungen von Operations Manager aufheben und eine stabile Grundlage für die Unterstützung der Migration von Operations Manager bilden können. Im Folgenden beleuchten wir diese Stärken und Schwächen im Einzelnen und bieten Empfehlungen für die Integration von Azure Monitor in die Überwachungsstrategie für Ihre Hybridumgebung.
 
 #### <a name="disadvantages-of-using-operations-manager-by-itself"></a>Nachteile der alleinigen Nutzung von Operations Manager
 
@@ -163,7 +163,7 @@ Eine Migration zur Cloud stellt Sie zwar vor einige Herausforderungen, bietet ab
 
 - Definieren Sie eine Bibliothek mit Abfragen sowie Dashboards, um die Anforderungen der verschiedenen Personas in der IT-Organisation zu unterstützen.
 
-- Definieren Sie Standards und Methoden für die Überwachung zwischen den Hybrid- und Cloudressourcen, eine Überwachungsbaseline für jede Ressource, Warnungsschwellenwerte usw.  
+- Definieren Sie Standards und Methoden für die Überwachung zwischen den Hybrid- und Cloudressourcen, eine Überwachungsbaseline für jede Ressource, Warnungsschwellenwerte usw.
 
 - Konfigurieren Sie rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC), um Benutzern und Gruppen nur den Zugriff zu gewähren, den sie zum Überwachen von Daten aus den von ihnen verwalteten Ressourcen benötigen.
 

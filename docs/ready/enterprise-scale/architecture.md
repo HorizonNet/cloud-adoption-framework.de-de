@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: csu
-ms.openlocfilehash: 276556467a2741cfb12d2c79049c33b31e5a421f
-ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
+ms.openlocfilehash: 44276ffabbae39cd5a75c0ea2de501aefd0c42f0
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94432702"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713053"
 ---
 # <a name="cloud-adoption-framework-enterprise-scale-landing-zone-architecture"></a>Cloud Adoption Framework – Architektur für Zielzonen auf Unternehmensebene
 
@@ -37,7 +37,7 @@ _Abbildung 1: Zielzonenaufbau._
 
 ## <a name="high-level-architecture"></a>Grundlegende Architektur
 
-Eine Architektur in der Größenordnung eines Unternehmens wird durch eine Reihe von Entwurfsüberlegungen und -empfehlungen aus acht [kritischen Entwurfsbereichen](./design-guidelines.md) definiert, wobei zwei Netzwerktopologien empfohlen werden: eine Architektur auf Unternehmensniveau, die auf einer Azure Virtual WAN-Netzwerktopologie basiert (in Abbildung 2 abgebildet), oder basierend auf einer herkömmlichen Azure-Netzwerktopologie, die auf der Hub-and-Spoke-Architektur basiert (zu sehen in Abbildung 3).   
+Eine Architektur in der Größenordnung eines Unternehmens wird durch eine Reihe von Entwurfsüberlegungen und -empfehlungen aus acht [kritischen Entwurfsbereichen](./design-guidelines.md) definiert, wobei zwei Netzwerktopologien empfohlen werden: eine Architektur auf Unternehmensniveau, die auf einer Azure Virtual WAN-Netzwerktopologie basiert (in Abbildung 2 abgebildet), oder basierend auf einer herkömmlichen Azure-Netzwerktopologie, die auf der Hub-and-Spoke-Architektur basiert (zu sehen in Abbildung 3).
 
 [![Diagramm, das eine Architektur für Cloud Adoption Framework-Zielzonen auf Unternehmensniveau, basierend auf einer Azure Virtual WAN-Netzwerktopologie, zeigt.](./media/ns-arch-inline.png)](./media/ns-arch-expanded.png#lightbox)
 

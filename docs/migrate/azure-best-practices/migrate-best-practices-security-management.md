@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 42bb7e66f9b9c997babf3f0e40fcf8145cd849f7
-ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
+ms.openlocfilehash: 2e020b1284fedf8ea6fdf45d46ab2d14fa8ea49d
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93283440"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712713"
 ---
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
 
@@ -59,7 +59,7 @@ Zusätzlich zu Bewertungen und Empfehlungen stellt Azure Security Center weitere
   - Probleme auf VMs treten nicht nur nach der Installation von Software auf. Die Änderung einer Systemdatei kann auch zum Ausfall oder zur Leistungsbeeinträchtigung eines virtuellen Computers führen. Die Überwachung der Dateiintegrität untersucht Systemdateien und Registrierungseinstellungen auf Änderungen und benachrichtigt Sie, wenn ein Element aktualisiert wurde.
   - Security Center empfiehlt die Dateien, die Sie überwachen sollten.
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Weitere Informationen zu [Azure Security Center](/azure/security-center/security-center-intro)
 - Weitere Informationen zum Just-In-Time-Zugriff für virtuelle Computer finden Sie [hier](/azure/security-center/security-center-just-in-time).
@@ -93,7 +93,7 @@ Im Gegensatz zum IaaS-Konzept, bei dem Sie Ihre eigenen virtuellen Computer und 
   - TDE ermöglicht die Ausführung von Verschlüsselungsaktivitäten ohne Änderungen auf der Anwendungsebene.
   - TDE kann von Microsoft bereitgestellte Verschlüsselungsschlüssel oder Ihren eigenen Schlüssel (Bring Your Own Key, BYOK) verwenden.
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Weitere Informationen zu [Azure Disk Encryption für virtuelle Computer und VM-Skalierungsgruppen](/azure/security/fundamentals/azure-disk-encryption-vms-vmss).
 - Aktivieren von [Azure Disk Encryption für virtuelle Windows-Computer](/azure/virtual-machines/windows/disk-encryption-overview).
@@ -113,7 +113,7 @@ Insbesondere auf älteren virtuellen Computern, die zu Azure migriert wurden, is
   ![Screenshot: Antischadsoftware für virtuelle Computer](./media/migrate-best-practices-security-management/antimalware.png)
   _Abbildung 1: Antischadsoftware für virtuelle Computer_
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Informationen zu Microsoft Antimalware für Azure finden Sie [hier](/azure/security/fundamentals/antimalware).
 
@@ -141,7 +141,7 @@ Azure bietet folgende Lösungen:
   ![Diagramm: Azure Key Vault und sichere Web-Apps](./media/migrate-best-practices-security-management/web-apps.png)
   _Abbildung 2: Azure Key Vault_
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Lesen Sie die [Übersicht über Azure Key Vault](/azure/key-vault/general/overview).
 - Erfahren Sie mehr über [Web Application Firewall](/azure/application-gateway/waf-overview).
@@ -162,7 +162,7 @@ Stellen Sie sicher, dass Administratoren mit Azure-Zugriff nur auf diejenigen Re
   ![Screenshot: Zugriffssteuerung](./media/migrate-best-practices-security-management/subscription.png)
   _Abbildung 3: Zugriffssteuerung_
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Weitere Informationen finden Sie unter [Rollenbasierte Zugriffssteuerung von Azure (RBAC)](/azure/role-based-access-control/overview).
 - Erfahren Sie, wie Sie den Zugriff über [die rollenbasierte Zugriffssteuerung und das Azure-Portal](/azure/role-based-access-control/role-assignments-portal) verwalten.
@@ -180,7 +180,7 @@ Azure Active Directory (Azure AD) stellt Aktivitätsprotokolle bereit, die in A
   ![Screenshot: Azure AD-Benutzer und -gruppen](./media/migrate-best-practices-security-management/azure-ad.png)
   _Abbildung 4: Azure AD-Benutzer und -Gruppen_
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Erfahren Sie mehr über [Azure AD-Aktivitätsprotokolle in Azure Monitor](/azure/active-directory/reports-monitoring/concept-activity-logs-azure-monitor).
 - Erfahren Sie, wie Sie [Aktivitätsberichte im Azure AD-Portal überwachen](/azure/active-directory/reports-monitoring/concept-audit-logs).
@@ -215,10 +215,9 @@ Verwenden Sie aussagekräftige Namen für Ihre Ressourcengruppen, die Administra
 Wenn Sie Ihre lokale Active Directory-Instanz über Azure AD Connect mit Azure AD synchronisieren, empfiehlt es sich gegebenenfalls, die Namen der lokalen Sicherheitsgruppen an die Namen der Ressourcengruppen in Azure anzupassen.
 
   ![Screenshot: Ressourcengruppennamen](./media/migrate-best-practices-security-management/naming.png)
-  
   _Abbildung 5: Ressourcengruppennamen_
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Erfahren Sie mehr über [Empfohlene Benennungskonventionen](../../ready/azure-best-practices/naming-and-tagging.md).
 
@@ -227,10 +226,9 @@ Wenn Sie Ihre lokale Active Directory-Instanz über Azure AD Connect mit Azure
 Niemand möchte, dass eine Ressourcengruppe verschwindet, weil sie versehentlich gelöscht wurde. Wir empfehlen die Implementierung von Löschsperren, um dies zu verhindern.
 
   ![Screenshot: Löschsperren](./media/migrate-best-practices-security-management/locks.png)
-
   _Abbildung 6: Löschsperren_
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Erfahren Sie mehr über das [Sperren von Ressourcen, um unerwartete Änderungen zu verhindern](/azure/azure-resource-manager/resource-group-lock-resources).
 
@@ -243,7 +241,7 @@ Ein Abonnementbesitzer hat Zugriff auf alle Ressourcengruppen und Ressourcen in 
   - Fassen Sie Ressourcen mit ähnlichem Lebenszyklus zusammen. Im Idealfall sollte es nicht notwendig sein, eine Ressource zu verschieben, wenn Sie eine vollständige Ressourcengruppe löschen müssen.
   - Ressourcen, die eine Funktion oder Workload unterstützen, sollten zur Vereinfachung der Verwaltung gruppiert werden.
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Erfahren Sie mehr über das [Organisieren von Abonnements und Ressourcengruppen](https://azure.microsoft.com/blog/organizing-subscriptions-and-resource-groups-within-the-enterprise).
 
@@ -260,7 +258,7 @@ Häufig bietet die alleinige Verwendung eines Ressourcengruppennamens für Resso
   ![Screenshot: Markieren](./media/migrate-best-practices-security-management/tagging.png)
   _Abbildung 7: Markieren_
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Erfahren Sie mehr über [Markierungen und Tageinschränkungen](/azure/azure-resource-manager/management/tag-resources).
 - Sehen Sie sich [PowerShell- und CLI-Beispiele für das Einrichten von Tags und das Anwenden von Tags von einer Ressourcengruppe auf die zugehörigen Ressourcen](/azure/azure-resource-manager/management/tag-resources#powershell) an.
@@ -273,7 +271,7 @@ Genau wie eine Blaupause, mit der Ingenieure oder Architekten die Entwurfsparame
 - Verwenden Sie Blaupausen, um die Bereitstellung von Ressourcengruppen, Azure Resource Manager-Vorlagen sowie Richtlinien- und Rollenzuweisungen zu orchestrieren.
 - Speichern Sie Blaupausen in einem global verteilten Dienst: Azure Cosmos DB. Blaupausenobjekte werden in mehreren Azure-Regionen repliziert. Die Replikation sorgt für kurze Wartezeiten, Hochverfügbarkeit und konsistenten Zugriff auf Blaupausen – unabhängig von der Region, in der Ressourcen durch eine Blaupause bereitgestellt werden.
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - [Erfahren Sie mehr](/azure/governance/blueprints/overview) über Blaupausen.
 - Sehen Sie sich ein [Beispiel für eine Blaupause zum Beschleunigen von KI im Gesundheitswesen](https://azure.microsoft.com/blog/customizing-azure-blueprints-to-accelerate-ai-in-healthcare) an.
@@ -284,7 +282,7 @@ Das Erstellen sicherer, skalierbarer und verwaltbarer Workloads in Azure kann ei
 
 Die Referenzarchitekturen sind nach Szenario sortiert. Sie enthalten Best Practices und Ratschläge zu Verwaltung, Verfügbarkeit, Skalierbarkeit und Sicherheit. Die App Service-Umgebung stellt eine vollständig isolierte und dedizierte Umgebung bereit, in der Anwendungen wie Windows- und Linux-Web-Apps, Docker-Container, mobile Apps und Funktionen ausgeführt werden können. App Service ergänzt Ihre Anwendung um leistungsfähige Azure-Features, z.B. Sicherheit, Lastenausgleich, automatische Skalierung und automatisierte Verwaltung. Sie können auch die Vorteile der DevOps-Funktionen des Diensts nutzen, z.B. Continuous Deployment über Azure DevOps und GitHub, Paketverwaltung, Stagingumgebungen, benutzerdefinierte Domäne und SSL-Zertifikate. App Service ist hilfreich bei Anwendungen, die Isolierung und sicheren Netzwerkzugriff erfordern, sowie für solche Anwendungen, die eine große Menge an Arbeitsspeicher sowie weitere skalierbare Ressourcen nutzen.
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Erfahren Sie mehr über [Azure-Referenzarchitekturen](/azure/architecture/reference-architectures).
 - Sehen Sie sich [Azure-Beispielszenarien](/azure/architecture/example-scenario) an.
@@ -304,7 +302,7 @@ Das folgende Diagramm zeigt anhand eines Beispiels das Erstellen einer Hierarchi
   ![Diagramm: Verwaltungsgruppen](./media/migrate-best-practices-security-management/management-groups.png)
   _Abbildung 8: Verwaltungsgruppen_
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Erfahren Sie mehr über das [Organisieren von Ressourcen in Verwaltungsgruppen](/azure/governance/management-groups).
 
@@ -317,14 +315,14 @@ Azure Policy bewertet Ihre Ressourcen und sucht nach Ressourcen, die nicht mit I
   ![Screenshot: Azure Policy](./media/migrate-best-practices-security-management/policy.png)
   _Abbildung 9: Azure Policy_
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Lesen Sie die [Übersicht über Azure Policy](/azure/governance/policy/overview).
 - Erfahren Sie mehr über das [Erstellen und Verwalten von Richtlinien zum Durchsetzen der Konformität](/azure/governance/policy/tutorials/create-and-manage).
 
 ## <a name="best-practice-implement-a-bcdr-strategy"></a>Bewährte Methode: Implementieren einer BCDR-Strategie
 
-Die Planung von Business Continuity & Disaster Recovery (BCDR) ist eine wichtige Aufgabe, die im Rahmen der Azure-Migrationsplanung durchgeführt werden sollte. Rechtlich gesehen enthalten Ihre Verträge möglicherweise eine Klausel zu *höherer Gewalt* , die Sie bei unabwendbaren Ereignissen wie Wirbelstürmen oder Erdbeben von Verpflichtungen entbindet. Sie haben aber auch Verpflichtungen in der Hinsicht, dass Sie die Ausführung und bei Bedarf die Wiederherstellung von Diensten in einem Notfall sicherstellen müssen. Die Fähigkeit, diese Verpflichtungen zu erfüllen, kann über die Zukunft Ihres Unternehmens entscheiden.
+Die Planung von Business Continuity & Disaster Recovery (BCDR) ist eine wichtige Aufgabe, die im Rahmen der Azure-Migrationsplanung durchgeführt werden sollte. Rechtlich gesehen enthalten Ihre Verträge möglicherweise eine Klausel zu *höherer Gewalt*, die Sie bei unabwendbaren Ereignissen wie Wirbelstürmen oder Erdbeben von Verpflichtungen entbindet. Sie haben aber auch Verpflichtungen in der Hinsicht, dass Sie die Ausführung und bei Bedarf die Wiederherstellung von Diensten in einem Notfall sicherstellen müssen. Die Fähigkeit, diese Verpflichtungen zu erfüllen, kann über die Zukunft Ihres Unternehmens entscheiden.
 
 Allgemein gesagt muss Ihre BCDR-Strategie Folgendes berücksichtigen:
 
@@ -362,7 +360,7 @@ Zur Gewährleistung der Sicherheit werden Daten von Azure Backup bei der Übertr
 ![Screenshot: Azure Backup](./media/migrate-best-practices-security-management/iaas-backup.png)
 _Abbildung 10: Azure Backup_
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Weitere Informationen zu [Azure Backup](/azure/backup/backup-overview)
 - Planen Sie eine [Sicherungsinfrastruktur für Azure-VMs](/azure/backup/backup-azure-vms-introduction).
@@ -373,7 +371,7 @@ Azure-VMs werden als Seitenblobs in Azure Storage gespeichert. Momentaufnahmen e
 
 Sie können ein vollständiges Blob kopieren oder eine inkrementelle Momentaufnahmekopie verwenden, um nur Deltaänderungen zu kopieren und den Speicherplatz zu reduzieren. Als zusätzliche Vorsichtsmaßnahme können Sie das vorläufige Löschen für Blobspeicherkonten aktivieren. Ist dieses Feature aktiviert, wird ein Blob nicht sofort gelöscht, sondern zum Löschen markiert. Während des Übergangszeitraums kann das Blob wiederhergestellt werden.
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Erfahren Sie mehr über [Azure-Blobspeicher](/azure/storage/blobs/storage-blobs-introduction).
 - Erfahren Sie, wie Sie eine [Blobmomentaufnahme erstellen](/azure/storage/blobs/storage-blob-snapshots).
@@ -398,7 +396,7 @@ Von Site Recovery werden virtuelle Computer aus einer primären Azure-Region in 
   ![Diagramm: Azure Site Recovery](./media/migrate-best-practices-security-management/site-recovery.png)
   _Abbildung 11: Site Recovery_
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Sehen Sie sich [Notfallwiederherstellungsszenarien für Azure-VMs](/azure/virtual-machines/virtual-machines-disaster-recovery-guidance) an.
 - Erfahren Sie, wie Sie die [Notfallwiederherstellung für eine Azure-VM nach der Migration einrichten](/azure/site-recovery/azure-to-azure-replicate-after-migration).
@@ -416,7 +414,7 @@ Verwaltete Azure-Datenträger vereinfachen die Datenträgerverwaltung bei Azure 
   ![Diagramm: Verwaltete Datenträger](./media/migrate-best-practices-security-management/managed-disks.png)
   _Abbildung 12: Verwaltete Datenträger_
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Lesen Sie die [Übersicht über verwaltete Datenträger](/azure/virtual-machines/windows/managed-disks-overview).
 - Erfahren Sie mehr über das [Konvertieren von Datenträgern in verwaltete Datenträger](/azure/virtual-machines/windows/convert-unmanaged-to-managed-disks).
@@ -437,7 +435,7 @@ Für diese beiden Fälle gibt es unterschiedliche Lösungen, aber Sie müssen in
   ![Screenshot: Azure Monitor](./media/migrate-best-practices-security-management/monitor.png)
   _Abbildung 13: Azure Monitor_
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Weitere Informationen finden Sie unter [Azure Monitor](/azure/azure-monitor/overview).
 - [Informieren Sie sich über Best Practices](/azure/architecture/best-practices/monitoring) für die Überwachung und Diagnose.
@@ -453,7 +451,7 @@ Wenn Sie die Diagnoseprotokollierung aktivieren, verfügt jede Ressource über e
 ![Screenshot: Diagnoseprotokollierung](./media/migrate-best-practices-security-management/diagnostics.png)
 _Abbildung 14: Diagnoseprotokollierung_
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Erfahren Sie mehr über das [Erfassen und Nutzen von Protokolldaten](/azure/azure-monitor/platform/platform-logs-overview).
 - Erfahren Sie, was für die [Diagnoseprotokollierung](/azure/azure-monitor/platform/diagnostic-logs-schema) unterstützt wird.
@@ -470,7 +468,7 @@ Wenn die Diagnoseprotokollierung für Azure-Ressourcen aktiviert ist, können Si
   ![Screenshot: Warnungen](./media/migrate-best-practices-security-management/alerts.png)
   _Abbildung 15: Warnungen_
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Erfahren Sie mehr über [Warnungen](/azure/azure-monitor/platform/alerts-overview).
 - Informieren Sie sich über [Sicherheitsplaybooks, die auf Security Center-Warnungen reagieren](/azure/security-center/security-center-playbooks).
@@ -485,7 +483,7 @@ Das Azure-Portal ist eine webbasierte einheitliche Konsole zum Erstellen, Verwal
   ![Screenshot: Azure-Dashboard](./media/migrate-best-practices-security-management/dashboard.png)
   _Abbildung 16: Azure-Dashboard_
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Erfahren Sie, wie Sie ein [Dashboard erstellen](/azure/azure-portal/azure-portal-dashboards).
 - Erfahren Sie mehr über die [Dashboardstruktur](/azure/azure-portal/azure-portal-dashboards-structure).
@@ -500,7 +498,7 @@ Sie müssen zu einem bestimmten Zeitpunkt mit Ihrem Supportteam oder den Microso
   ![Screenshot: Supportpläne](./media/migrate-best-practices-security-management/support.png)
   _Abbildung 17: Supportpläne_
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Lesen Sie eine [Übersicht über Azure-Supportpläne](https://azure.microsoft.com/support/options).
 - Erfahren Sie mehr über [Vereinbarungen zum Servicelevel (SLAs)](https://azure.microsoft.com/support/legal/sla).
@@ -517,7 +515,7 @@ Azure-VMs immer mit den neuesten Betriebssystem- und Softwareupdates auf dem neu
   ![Diagramm: VM-Updates](./media/migrate-best-practices-security-management/updates.png)
   _Abbildung 18: Updates_
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Erfahren Sie mehr über die [Updateverwaltung in Azure](/azure/automation/update-management/overview).
 - Erfahren Sie, wie Sie [Configuration Manager in die Updateverwaltung integrieren](/azure/automation/oms-solution-updatemgmt-sccmintegration).
@@ -541,7 +539,7 @@ Azure bietet in Azure Automation eine Lösung für die Änderungsnachverfolgung:
   ![Screenshot: Change Management](./media/migrate-best-practices-security-management/change.png)
   _Abbildung 19: Change Management_
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Erfahren Sie mehr über die [Änderungsnachverfolgung](/azure/automation/automation-change-tracking).
 - Erfahren Sie mehr über [Azure Automation-Funktionen](/azure/automation/automation-intro).

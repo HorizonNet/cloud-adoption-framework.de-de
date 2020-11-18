@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 0ebab543a39440190d530b6e7e68b441e49ff017
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 6895f8a68b76c378bec14b49896dec8bd0320ca8
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776175"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713818"
 ---
 <!-- cSpell:ignore NVAs VPNs -->
 
@@ -98,6 +98,6 @@ Bei Organisationen, die die folgenden Kriterien erfüllen, können Sie ebenfalls
 
 Sehen Sie sich im Rahmen der Entwicklung Ihres Netzwerkentwurfs die folgenden Artikel an:
 
-- [Planen virtueller Netzwerke](/azure/virtual-network/virtual-network-vnet-plan-design-arm?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json). Erfahren Sie, wie Sie virtuelle Netzwerke basierend auf Ihren Anforderungen in Bezug auf Isolierung, Verbindung und Standort planen.
-- [Bewährte Methoden für die Netzwerksicherheit in Azure](/azure/security/fundamentals/network-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json). Erfahren Sie mehr über bewährte Azure-Methoden, mit denen Sie Ihre Netzwerksicherheit verbessern können.
-- [Bewährte Methoden für Netzwerke bei der Migration von Workloads zu Azure](/azure/migrate/migrate-best-practices-networking?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json). Rufen Sie zusätzliche Informationen zum Implementieren von Azure-Netzwerkfunktionen zur Unterstützung von IaaS- und PaaS-basierten Workloads ab.
+- [Planen virtueller Netzwerke](/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json). Erfahren Sie, wie Sie virtuelle Netzwerke basierend auf Ihren Anforderungen in Bezug auf Isolierung, Verbindung und Standort planen.
+- [Bewährte Methoden für die Netzwerksicherheit in Azure](/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json). Erfahren Sie mehr über bewährte Azure-Methoden, mit denen Sie Ihre Netzwerksicherheit verbessern können.
+- [Bewährte Methoden für Netzwerke bei der Migration von Workloads zu Azure](/azure/migrate/migrate-best-practices-networking?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json). Rufen Sie zusätzliche Informationen zum Implementieren von Azure-Netzwerkfunktionen zur Unterstützung von IaaS- und PaaS-basierten Workloads ab.

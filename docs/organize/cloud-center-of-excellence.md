@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 2c7bf4e4703df1c524f2a7d34bf55e47cb69699b
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 8e4e1b48d98abb456b3adb68c6fd5aa556fc1b7d
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88881579"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712458"
 ---
 # <a name="cloud-center-of-excellence-ccoe-functions"></a>CCoE-Funktionen (Cloud Center of Excellence, Cloudkompetenzzentrum)
 

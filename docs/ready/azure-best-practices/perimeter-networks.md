@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: e57bcae8f5b7b779544d6000e1fe299bf70eb4d7
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: ae5506d6d09289b2c41cd5ece887b2ec5692c267
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776532"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712849"
 ---
 # <a name="perimeter-networks"></a>Umkreisnetzwerke
 
@@ -36,7 +36,7 @@ Umkreisnetzwerken nutzen die folgenden Azure-Funktionen und -Dienste:
 > Azure-Referenzarchitekturen bieten Beispielvorlagen, die Sie für die Implementierung Ihrer eigenen Umkreisnetzwerke verwenden können:
 >
 > - [Implementieren eines Umkreisnetzwerks zwischen Azure und Ihrem lokalen Rechenzentrum](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)
-> - [Implementieren eines Umkreisnetzwerks zwischen Azure und dem Internet](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
+> - [Implementieren eines Umkreisnetzwerks zwischen Azure und dem Internet](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
 
 Normalerweise sind Ihr zentrales IT-Team und die und Sicherheitsteams für die Anforderungendefinition und den Betrieb Ihrer Umkreisnetzwerke verantwortlich.
 

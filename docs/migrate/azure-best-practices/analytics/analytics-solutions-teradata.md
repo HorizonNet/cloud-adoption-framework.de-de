@@ -7,19 +7,18 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7df0db259902f3b840c21138e111f06ab492aca4
-ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
+ms.openlocfilehash: 7ed45f10e54ddfb4bac090dd9815e61b503b6003
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334798"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713376"
 ---
 <!-- cSpell:ignore DATEADD DATEDIFF Inmon NUSI Informatica Talend BTEQ FASTEXPORT QUALIFY ORC Parquet "Parallel Data Transporter" Attunity "Qlik Replicate" -->
 
 # <a name="azure-synapse-analytics-solutions-and-migration-for-teradata"></a>Azure Synapse Analytics-Lösungen und Migrieren von Teradata
 
 Viele Organisationen sind bereit, kostenintensive Data Warehouse-Aufgaben wie die Infrastrukturwartung und die Plattformentwicklung an einen Cloudanbieter abzugeben. Unternehmen erwägen jetzt, innovative Cloud-, Infrastructure-as-a-Service- und Platform-as-a-Service-Angebote in neueren Umgebungen wie Azure zu nutzen.
-
 
 Azure Synapse Analytics ist ein unbegrenzter Analysedienst, der Data Warehousing auf Unternehmensniveau mit Big Data-Analysen vereint. Er ermöglicht flexible Datenabfragen nach Ihren Vorstellungen und im großen Stil mithilfe von serverlosen On-Demand-Ressourcen oder bereitgestellten Ressourcen. In diesem Artikel erfahren Sie, wie Sie die Migration von einem Teradata-Legacysystem zu Azure Synapse planen.
 

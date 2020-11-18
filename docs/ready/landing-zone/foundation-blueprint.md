@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: af577cea51714b43d43d7956a69422a2316aef11
-ms.sourcegitcommit: 670dd77efe02ed20275732248e0fa2aae2196805
+ms.openlocfilehash: bb8d2a7d77bb4ad6cc8ab0f3a391e7aeaa1a4fdd
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91621313"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713869"
 ---
 <!-- docutune:ignore "CAF Foundation blueprint" -->
 
@@ -41,11 +41,11 @@ Diese Implementierungsoption nimmt hinsichtlich der Unternehmensregistrierung ke
 
 ### <a name="identity"></a>Identity
 
-Bei dieser Implementierungsoption wird davon ausgegangen, dass das Zielabonnement in Einklang mit [bewährten Methoden der Identitätsverwaltung](/azure/security/fundamentals/identity-management-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json) bereits einer Azure Active Directory-Instanz zugeordnet ist.
+Bei dieser Implementierungsoption wird davon ausgegangen, dass das Zielabonnement in Einklang mit [bewährten Methoden der Identitätsverwaltung](/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) bereits einer Azure Active Directory-Instanz zugeordnet ist.
 
 ### <a name="network-topology-and-connectivity"></a>Netzwerktopologie und -konnektivität
 
-Bei dieser Implementierungsoption wird davon ausgegangen, dass die Zielzone bereits über eine definierte Netzwerktopologie verfügt, die den [bewährten Methoden für die Netzwerksicherheit](/azure/security/fundamentals/network-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json) entspricht.
+Bei dieser Implementierungsoption wird davon ausgegangen, dass die Zielzone bereits über eine definierte Netzwerktopologie verfügt, die den [bewährten Methoden für die Netzwerksicherheit](/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) entspricht.
 
 ### <a name="resource-organization"></a>Ressourcenorganisation
 
@@ -69,7 +69,7 @@ Mit dieser Implementierung wird eine Vorgehensweise für eine ausgereifte Cost M
 Informationen zur parallelen Entwicklung der anderen Governancedisziplinen finden Sie im Abschnitt zur [Governancemethodik](../../govern/index.md). Wenn Sie die Governancedisziplin „Cost Management“ weiter verbessern möchten, finden Sie unter [Verbessern der Disziplin „Cost Management“](../../govern/guides/complex/cost-management-improvement.md#incremental-improvement-of-best-practices) weitere Informationen.
 
 > [!WARNING]
-> Mit der Weiterentwicklung der Governancedisziplinen ist möglicherweise ein Refactoring erforderlich. Möglicherweise ist ein Refactoring erforderlich. Insbesondere müssen Ressourcen später gegebenenfalls [in ein neues Abonnement oder eine neue Ressourcengruppe verschoben werden](/azure/azure-resource-manager/management/move-resource-group-and-subscription?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json).
+> Mit der Weiterentwicklung der Governancedisziplinen ist möglicherweise ein Refactoring erforderlich. Möglicherweise ist ein Refactoring erforderlich. Insbesondere müssen Ressourcen später gegebenenfalls [in ein neues Abonnement oder eine neue Ressourcengruppe verschoben werden](/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json).
 
 ### <a name="operations-baseline"></a>Betriebsbaseline
 
@@ -78,7 +78,7 @@ Bei dieser Implementierungsoption werden keine Aspekte der Betriebsbaseline impl
 Informationen zur parallelen Entwicklung einer Betriebsbaseline finden Sie im Artikel zur [Verwaltungsmethodik](../../manage/index.md). Erwägen Sie außerdem die Bereitstellung des [Azure-Serververwaltungsleitfadens](../../manage/azure-server-management/index.md).
 
 > [!WARNING]
-> Mit der Weiterentwicklung der Betriebsbaseline ist möglicherweise ein Refactoring erforderlich. Insbesondere müssen Ressourcen später gegebenenfalls [in ein neues Abonnement oder eine neue Ressourcengruppe verschoben werden](/azure/azure-resource-manager/management/move-resource-group-and-subscription?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json).
+> Mit der Weiterentwicklung der Betriebsbaseline ist möglicherweise ein Refactoring erforderlich. Insbesondere müssen Ressourcen später gegebenenfalls [in ein neues Abonnement oder eine neue Ressourcengruppe verschoben werden](/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json).
 
 ### <a name="business-continuity-and-disaster-recovery-bcdr"></a>Geschäftskontinuität und Notfallwiederherstellung (Business Continuity Disaster Recovery, BCDR)
 

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 560bbf233bd8648e50192037b1712382dfeeac6f
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: c902bed3b665aac6ca41c5881a239a1efe6d2787
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89603434"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713733"
 ---
 # <a name="get-started-accelerate-new-product-and-service-innovation-in-the-cloud"></a>Erste Schritte: Beschleunigen neuer Produkt- und Dienstinnovationen in der Cloud
 
@@ -235,7 +235,7 @@ Das Cloud Adoption Framework ist eine Lebenszykluslösung. Es kann Ihnen dabei h
 Die folgenden Teams können die nächsten Schritte ausführen, um ihre Anstrengungen noch weiter zu optimieren. Diese parallelen Prozesse sind nicht linear und sollten nicht als Hindernisse betrachtet werden. Stattdessen handelt es sich jeweils um einen parallelen Wertstrom, der dazu beiträgt, die allgemeine Bereitschaft Ihres Unternehmens für die Cloud zu verbessern.
 
 | Team | Nächste Iteration |
-|---|---|
+|--|--|
 | Cloudeinführungsteam&nbsp;&nbsp; | [Prozessverbesserungen](../innovate/considerations/index.md) bieten Einblicke in die Ansätze zur Bereitstellung von Innovationen, die für Kunden relevant sind und die Einführung attraktiv machen. |
 | Cloudstrategieteam&nbsp;&nbsp; | Die [Strategiemethodik](../strategy/index.md) und die [Planungsmethodik](../plan/index.md) sind iterative Prozesse, die sich mit dem Einführungsplan weiterentwickeln. Kehren Sie zu diesen Übersichtsseiten zurück, und führen Sie Ihre geschäftlichen und technischen Strategien weiter aus. |
 | Cloudplattformteam&nbsp;&nbsp; | Kehren Sie zur [Bereitschaftsmethodik](../ready/index.md) zurück, um die gesamte Cloudplattform, die die Migration oder andere Einführungsmaßnahmen unterstützt, weiter voranzutreiben. |

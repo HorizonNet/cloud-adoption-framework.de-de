@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 04b34a0914ec0be193c670be005af269d0aa2d14
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: c8006f3b83fa4dd07f25c49b02294084c435d13a
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775716"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713784"
 ---
 # <a name="get-started-understand-and-document-foundational-alignment-decisions"></a>Erste Schritte: Verstehen und Dokumentieren grundlegender Ausrichtungsentscheidungen
 
@@ -25,7 +25,7 @@ Die Umstellung auf die Cloud kann eine Vielzahl von geschäftlichen, technischen
 
 Wenn Sie diesen Leitfaden durcharbeiten, zeichnen Sie unsere grundlegenden Entscheidungen mithilfe der [Vorlage für anfängliche Entscheidungen](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/references/initial-decisions-checklist.docx) auf. Die Vorlage kann Ihnen schnell helfen, das Onboarding für Teammitglieder durchzuführen, die am Lebenszyklus der Cloudeinführung teilnehmen, indem sie verdeutlicht, wie und warum Ihre Cloudumgebung konfiguriert ist.
 
-Wenn Sie bereits eine Umgebung in Azure verwenden, kann die [Azure Governance-Schnellansicht](https://github.com/microsoft/CloudAdoptionFramework/tree/master/govern/AzureGovernanceVisualizer) Ihnen helfen, Ihre Dokumentation zu beschleunigen. Verschaffen Sie sich Einblicke in Richtlinien, rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC), Azure Blueprints, Abonnements und vieles mehr. Auf der Grundlage der gesammelten Daten bietet das Tool Einblicke in Ihre Hierarchiezuordnung, erstellt eine Mandantenzusammenfassung und liefert differenzierte Erkenntnisse zum Umfang von Verwaltungsgruppen und Abonnements. 
+Wenn Sie bereits eine Umgebung in Azure verwenden, kann die [Azure Governance-Schnellansicht](https://github.com/microsoft/CloudAdoptionFramework/tree/master/govern/AzureGovernanceVisualizer) Ihnen helfen, Ihre Dokumentation zu beschleunigen. Verschaffen Sie sich Einblicke in Richtlinien, rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC), Azure Blueprints, Abonnements und vieles mehr. Auf der Grundlage der gesammelten Daten bietet das Tool Einblicke in Ihre Hierarchiezuordnung, erstellt eine Mandantenzusammenfassung und liefert differenzierte Erkenntnisse zum Umfang von Verwaltungsgruppen und Abonnements.
 
 ## <a name="step-1-understand-how-azure-works"></a>Schritt 1: Wie funktioniert Azure?
 

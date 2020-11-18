@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d239d3bab6e2c799f7b896c4a9f38584d75bb783
-ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
+ms.openlocfilehash: af6ed897f86978058f83e5c6c6dc600f10fd7072
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94432736"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713614"
 ---
 <!-- cSpell:ignore untrust CIDR RRAS CONTOSODC SYSVOL ITIL NSGs ASGs -->
 
@@ -81,7 +81,7 @@ Es folgen die Details:
 
 Nach dem Erwerb von Azure muss Contoso herausfinden, wie die Azure-Abonnements verwaltet werden sollen. Contoso verfügt über ein EA und kann somit beliebig viele Azure-Abonnements erstellen. Eine Azure Enterprise Agreement-Registrierung definiert, wie ein Unternehmen Azure-Dienste modelliert und verwendet und legt eine Kernstruktur für die Governance fest.
 
-Als Erstes hat Contoso eine Struktur für die Registrierung definiert (ein so genanntes _Unternehmensgerüst_ ). Contoso hat das [Azure-Unternehmensgerüst](/azure/cloud-adoption-framework/reference/azure-scaffold) verwendet, um ein Gerüst zu entwerfen.
+Als Erstes hat Contoso eine Struktur für die Registrierung definiert (ein so genanntes _Unternehmensgerüst_). Contoso hat das [Azure-Unternehmensgerüst](/azure/cloud-adoption-framework/reference/azure-scaffold) verwendet, um ein Gerüst zu entwerfen.
 
 Für den Augenblick hat sich Contoso für eine funktionale Abonnementverwaltung entschieden:
 
@@ -153,7 +153,7 @@ Für die Einrichtung eines benutzerdefinierten Domänennamens müssen die Admini
     - Sie notieren sich in der Liste **Benutzerdefinierte Domänennamen** die DNS-Informationen zu dem Namen. Das Unternehmen verwendet einen MX-Eintrag.
     - Die Administratoren benötigen Zugriff auf den Namenserver. Sie melden sich bei der Domäne `contoso.com` an und erstellen mithilfe der notierten Informationen einen neuen MX-Eintrag für den von Azure AD bereitgestellten DNS-Eintrag.
 
-3. Nachdem die DNS-Einträge weitergegeben wurden, klicken sie in den Domänendetails auf **Überprüfen** , um den benutzerdefinierten Domänennamen zu überprüfen.
+3. Nachdem die DNS-Einträge weitergegeben wurden, klicken sie in den Domänendetails auf **Überprüfen**, um den benutzerdefinierten Domänennamen zu überprüfen.
 
     ![Screenshot: Auswahl für das Azure Active Directory-DNS](./media/contoso-migration-infrastructure/azure-ad-dns.png)
 
@@ -439,6 +439,7 @@ Nach der Einrichtung der Netzwerk- und Routingtopologie ist Contoso jetzt bereit
   - `VNET-DEV-EUS2`. Dieses virtuelle Netzwerk dient als voll funktionsfähiges Netzwerk für Entwicklungsprojekte des Dev/Test-Teams. Es soll als Pilotbereich für die Produktion fungieren und baut in seiner Funktion auf der Produktionsinfrastruktur auf.
 
   - `VNET-PROD-EUS2`. Azure-IaaS-Produktionskomponenten befinden sich in diesem Netzwerk.
+
   Jedes virtuelle Netzwerk verfügt über einen eigenen, eindeutigen Adressraum ohne Überlappung. Das Ziel ist es, das Routing ohne Netzwerkadressenübersetzung (Network Address Translation, NAT) zu konfigurieren.
 
 - **Subnetze:** Jedes Netzwerk enthält jeweils ein Subnetz für die einzelnen Logikschichten. Für jedes Subnetz im Produktionsnetzwerk ist ein entsprechendes Subnetz im virtuellen Entwicklungsnetzwerk vorhanden. Darüber hinaus enthält das Produktionsnetzwerk ein Subnetz für Domänencontroller.

@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 80b172f5c81ec5ee9dfe60d7a5a4845341a96c40
-ms.sourcegitcommit: 6aa14b15efc9bd351b75f8a3d7ebbac3d575275b
+ms.openlocfilehash: 572e14e1b5fb06662e37eeb16566f69cb0372a55
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92690027"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713886"
 ---
 # <a name="improve-landing-zone-operations"></a>Verbessern des Betriebs von Zielzonen
 
@@ -27,10 +27,10 @@ Die folgenden Links bieten bewährte Methoden zur Verbesserung des Betriebs von 
 - [Zentralisieren von Verwaltungsvorgängen](../../manage/centralize-operations.md): Verwenden Sie Azure Lighthouse, um das Operations Management für mehrere Azure-Mandanten zu zentralisieren.
 - [Einrichten einer Überprüfung der Einsatztauglichkeit](../../manage/operational-fitness-review.md): Überprüfen Sie eine Umgebung auf Einsatztauglichkeit.
 - Bewährte Methoden für Workload-spezifische Vorgänge:
-  - [Checkliste für Resilienz](/azure/architecture/checklist/resiliency-per-service?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
-  - [Fehlermodusanalyse](/azure/architecture/resiliency/failure-mode-analysis?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
-  - [Wiederherstellung nach einer regionsweiten Dienstunterbrechung](/azure/architecture/resiliency/recovery-loss-azure-region?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
-  - [Wiederherstellung nach Datenbeschädigung oder unbeabsichtigtem Löschen](/azure/architecture/framework/resiliency/data-management?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json)
+  - [Checkliste für Resilienz](/azure/architecture/checklist/resiliency-per-service?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
+  - [Fehlermodusanalyse](/azure/architecture/resiliency/failure-mode-analysis?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
+  - [Wiederherstellung nach einer regionsweiten Dienstunterbrechung](/azure/architecture/resiliency/recovery-loss-azure-region?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
+  - [Wiederherstellung nach Datenbeschädigung oder unbeabsichtigtem Löschen](/azure/architecture/framework/resiliency/data-management?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
 
 ## <a name="four-steps-to-improve-operations-beyond-a-single-landing-zone"></a>Vier Schritte zum Verbessern der Vorgänge über eine einzelne Zielzone hinaus
 

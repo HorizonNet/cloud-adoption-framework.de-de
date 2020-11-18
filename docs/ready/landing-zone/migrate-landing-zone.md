@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3777dd0cfebba040dd42db3229a925856971947e
-ms.sourcegitcommit: 78fa714f964225cd5fc7a762e83fafe9b3f9dea1
+ms.openlocfilehash: 44da9c340b8fba44927469f368281b8671d88be4
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89427823"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713852"
 ---
 # <a name="deploy-a-migration-landing-zone-in-azure"></a>Bereitstellen einer Landezone in Azure
 
@@ -41,11 +41,11 @@ Diese Implementierungsoption nimmt hinsichtlich der Unternehmensregistrierung ke
 
 ### <a name="identity"></a>Identity
 
-Bei dieser Implementierungsoption wird davon ausgegangen, dass das Zielabonnement in Einklang mit [bewährten Methoden der Identitätsverwaltung](/azure/security/fundamentals/identity-management-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json) bereits einer Azure Active Directory-Instanz zugeordnet ist.
+Bei dieser Implementierungsoption wird davon ausgegangen, dass das Zielabonnement in Einklang mit [bewährten Methoden der Identitätsverwaltung](/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) bereits einer Azure Active Directory-Instanz zugeordnet ist.
 
 ### <a name="network-topology-and-connectivity"></a>Netzwerktopologie und -konnektivität
 
-Bei dieser Implementierungsoption wird ein virtuelles Netzwerk mit Subnetzen für Gateway, Firewall, Jumpbox und Zielzone erstellt. In der nächsten Iteration befolgt das Team den [Leitfaden für Entscheidungen zum Netzwerkentwurf](../considerations/networking-options.md), um in Einklang mit [bewährten Methoden der Netzwerksicherheit](/azure/security/fundamentals/network-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json) die geeignete Form von Konnektivität zwischen dem Gatewaysubnetz und anderen Netzwerken zu implementieren.
+Bei dieser Implementierungsoption wird ein virtuelles Netzwerk mit Subnetzen für Gateway, Firewall, Jumpbox und Zielzone erstellt. In der nächsten Iteration befolgt das Team den [Leitfaden für Entscheidungen zum Netzwerkentwurf](../considerations/networking-options.md), um in Einklang mit [bewährten Methoden der Netzwerksicherheit](/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) die geeignete Form von Konnektivität zwischen dem Gatewaysubnetz und anderen Netzwerken zu implementieren.
 
 ### <a name="resource-organization"></a>Ressourcenorganisation
 
@@ -62,16 +62,16 @@ Bei dieser Implementierungsoption werden keine Governancetools implementiert. Be
 Um die parallele Entwicklung von Disziplinen der Governance zu beschleunigen, sehen Sie sich die [Governancemethodik](../../govern/index.md) an, und überlegen Sie, ob Sie zusätzlich zur Blaupause für die CAF-Migrationszielzone die [Blaupause für CAF-Grundlagen](./foundation-blueprint.md) bereitstellen möchten.
 
 > [!WARNING]
-> Mit der Weiterentwicklung der Disziplinen der Governance ist möglicherweise eine Umgestaltung erforderlich. Insbesondere müssen später Ressourcen [in ein neues Abonnement oder eine neue Ressourcengruppe verschoben werden](/azure/azure-resource-manager/management/move-resource-group-and-subscription?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json).
+> Mit der Weiterentwicklung der Disziplinen der Governance ist möglicherweise eine Umgestaltung erforderlich. Insbesondere müssen Ressourcen später gegebenenfalls [in ein neues Abonnement oder eine neue Ressourcengruppe verschoben werden](/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json).
 
 ### <a name="operations-baseline"></a>Betriebsbaseline
 
-Bei dieser Implementierungsoption werden keine Vorgänge implementiert. Bei fehlender definierter Betriebsbaseline sollte diese Zielzone nicht für unternehmenskritische Workloads oder vertrauliche Daten verwendet werden. Es wird davon ausgegangen, dass diese Zielzone für eine begrenzte Produktionsbereitstellung verwendet wird, um Lern-, Iterations- und Entwicklungszwecke des allgemeinen Betriebsmodells parallel zu diesen frühen Phasen der Migration zu initiieren.
+Bei dieser Implementierungsoption werden keine Vorgänge implementiert. Bei fehlender definierter Betriebsbaseline sollte diese Zielzone nicht für unternehmenskritische Workloads oder vertrauliche Daten verwendet werden. Es wird davon ausgegangen, dass diese Zielzone für eine eingeschränkte Produktionsbereitstellung verwendet wird, um sich parallel zu diesen anfänglichen Migrationsschritten mit dem allgemeinen Betriebsmodell vertraut zu machen und dieses weiterzuentwickeln.
 
-Wenn Sie die parallele Entwicklung einer Betriebsbaseline beschleunigen möchten, sehen Sie sich die [Manage-Methodik](../../manage/index.md) an, und überlegen Sie, ob Sie den [Azure-Serververwaltungsleitfaden](../../manage/azure-server-management/index.md) bereitstellen möchten.
+Informationen zur parallelen Entwicklung einer Betriebsbaseline finden Sie im Artikel zur [Verwaltungsmethodik](../../manage/index.md). Erwägen Sie außerdem die Bereitstellung des [Azure-Serververwaltungsleitfadens](../../manage/azure-server-management/index.md).
 
 > [!WARNING]
-> Mit der Weiterentwicklung der Betriebsbaseline ist möglicherweise eine Umgestaltung erforderlich. Insbesondere müssen später Ressourcen [in ein neues Abonnement oder eine neue Ressourcengruppe verschoben werden](/azure/azure-resource-manager/management/move-resource-group-and-subscription?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json).
+> Mit der Weiterentwicklung der Betriebsbaseline ist möglicherweise ein Refactoring erforderlich. Insbesondere müssen Ressourcen später gegebenenfalls [in ein neues Abonnement oder eine neue Ressourcengruppe verschoben werden](/azure/azure-resource-manager/management/move-resource-group-and-subscription?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json).
 
 ### <a name="business-continuity-and-disaster-recovery-bcdr"></a>Geschäftskontinuität und Notfallwiederherstellung (Business Continuity Disaster Recovery, BCDR)
 
@@ -98,7 +98,7 @@ Die folgenden Entscheidungen werden in der Blaupause für die Landezone widerges
 | Migrationstools              | Azure Site Recovery wird bereitgestellt, und ein Azure Migrate-Projekt wird erstellt.                | [Entscheidungsleitfaden zur Wahl von Migrationstools](../../decision-guides/migrate-decision-guide/index.md)                                                                                                                                                                                               |
 | Protokollierung und Überwachung       | Ein Operational Insights-Arbeitsbereich und ein Speicherkonto für die Diagnose werden bereitgestellt.                |                                                                                                                                                                                                                                                                                       |
 | Netzwerk                      | Es wird ein virtuelles Netzwerk mit Subnetzen für Gateway, Firewall, Jumpbox und Landezone erstellt.  | [Netzwerkentscheidungen](../considerations/networking-options.md)                                                                                                                                                                                                                       |
-| Identity                     | Es wird angenommen, dass das Abonnement bereits einer Azure Active Directory-Instanz zugeordnet ist. | [Bewährte Methoden für die Identitätsverwaltung](/azure/security/fundamentals/identity-management-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json) |
+| Identity                     | Es wird angenommen, dass das Abonnement bereits einer Azure Active Directory-Instanz zugeordnet ist. | [Bewährte Methoden für die Identitätsverwaltung](/azure/security/fundamentals/identity-management-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) |
 | Richtlinie                       | Bei dieser Blaupause wird derzeit davon ausgegangen, dass keine Azure-Richtlinien angewendet werden müssen.                        |                                                                                                                                                                                                                                                                                       |
 | Abonnemententwurf          | N/V: Wurde für ein einzelnes Produktionsabonnement entworfen.                                              | [Erstellen der anfänglichen Abonnements](../azure-best-practices/initial-subscriptions.md)                                                                                                                                                                                                      |
 | Ressourcengruppen              | N/V: Wurde für ein einzelnes Produktionsabonnement entworfen.                                              | [Skalieren von Abonnements](../azure-best-practices/scale-subscriptions.md)                                                                                                                                                                                                                 |

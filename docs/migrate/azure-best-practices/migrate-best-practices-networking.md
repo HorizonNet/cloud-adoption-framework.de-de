@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 522c3824c52550664d1656970ca2f9881dbe86d1
-ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
+ms.openlocfilehash: fd02f8755ebd44f7f3e3444772c76bc4357c7071
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94432719"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712883"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -47,11 +47,11 @@ Der für die einzelnen virtuellen Netzwerke zugewiesene Adressraum darf nicht gr
 Weitere Tipps für die Planung:
 
 - Der Adressraum virtueller Netzwerke darf sich nicht mit lokalen Netzwerkbereichen überschneiden.
-- Adressüberschneidungen können dazu führen, dass mit Netzwerken keine Verbindung hergestellt werden kann und dass das Routing nicht ordnungsgemäß funktioniert. 
+- Adressüberschneidungen können dazu führen, dass mit Netzwerken keine Verbindung hergestellt werden kann und dass das Routing nicht ordnungsgemäß funktioniert.
 - Wenn sich Netzwerke überschneiden, muss das Netzwerk neu entworfen werden.
 - Wenn Sie das Netzwerk auf keinen Fall neu entwerfen können, kann die Netzwerkadressenübersetzung (NAT) hilfreich sein. Sie sollte allerdings vermieden bzw. so wenig wie möglich verwendet werden.
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Lesen Sie die [Übersicht über Azure Virtual Network](/azure/virtual-network/virtual-networks-overview).
 - Sehen Sie sich die [häufig gestellten Fragen zu Azure Virtual Network](/azure/virtual-network/virtual-networks-faq) an.
@@ -59,8 +59,7 @@ Weitere Tipps für die Planung:
 
 ## <a name="best-practice-implement-a-hub-and-spoke-network-topology"></a>Bewährte Methode: Implementieren einer Hub-and-Spoke-Netzwerktopologie
 
-Eine Hub-and-Spoke-Netzwerktopologie dient zur Isolation von Workloads, während Dienste wie Identität und Sicherheit gemeinsam verwendet werden. Der Hub ist ein virtuelles Azure-Netzwerk, das als zentraler Konnektivitätspunkt fungiert.
-Die Spokes sind virtuelle Netzwerke, die mit dem virtuellen Hubnetzwerk unter Verwendung von Peering eine Verbindung herstellen. Gemeinsame Dienste werden im Hub bereitgestellt, während einzelne Workloads als Spokes bereitgestellt werden.
+Eine Hub-and-Spoke-Netzwerktopologie dient zur Isolation von Workloads, während Dienste wie Identität und Sicherheit gemeinsam verwendet werden. Der Hub ist ein virtuelles Azure-Netzwerk, das als zentraler Konnektivitätspunkt fungiert. Die Spokes sind virtuelle Netzwerke, die mit dem virtuellen Hubnetzwerk unter Verwendung von Peering eine Verbindung herstellen. Gemeinsame Dienste werden im Hub bereitgestellt, während einzelne Workloads als Spokes bereitgestellt werden.
 
 Beachten Sie Folgendes:
 
@@ -72,7 +71,7 @@ Beachten Sie Folgendes:
 ![Diagramm einer Hub-and-Spoke-Topologie](./media/migrate-best-practices-networking/hub-spoke.png)
 _Abbildung 1: Hub-and-Spoke-Topologie_
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Machen Sie sich mit einer [Hub-and-Spoke-Topologie](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke) vertraut.
 - Erhalten Sie Netzwerkempfehlungen für die Ausführung von [Windows-VMs](/azure/architecture/reference-architectures/n-tier/windows-vm) und [Linux-VMs](/azure/architecture/reference-architectures/n-tier/linux-vm).
@@ -99,7 +98,7 @@ Die Tabelle enthält ein Beispiel für ein virtuelles Netzwerk mit einem (in Sub
 | `DEV-APP-EUS2` | `10.245.20.0/22` | 1019 | App-Schicht-VMs |
 | `DEV-DB-EUS2` | `10.245.24.0/23` | 507 | Datenbank-VMs |
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Erfahren Sie mehr über das [Entwerfen von Subnetzen](/azure/virtual-network/virtual-network-vnet-plan-design-arm#segmentation).
 - Erfahren Sie, wie ein fiktives Unternehmen (Contoso) [seine Netzwerkinfrastruktur für die Migration vorbereitet hat](/azure/migrate/contoso-migration-infrastructure).
@@ -120,7 +119,7 @@ Von Azure wird standardmäßig ein DNS-Server hinzugefügt, wenn Sie ein virtuel
     ![Screenshot: Hinzufügen von DNS-Servern für ein virtuelles Netzwerk](./media/migrate-best-practices-networking/dns2.png)
     _Abbildung 2: DNS-Server für ein virtuelles Netzwerk_
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Erfahren Sie mehr über die [Namensauflösung, wenn Sie einen eigenen DNS-Server verwenden](/azure/migrate/contoso-migration-infrastructure).
 - Erfahren Sie mehr über [DNS-Benennungsregeln und -Einschränkungen](../../ready/azure-best-practices/naming-and-tagging.md).
@@ -146,7 +145,7 @@ Im Anschluss folgen einige weitere Punkte, die bei der Einrichtung von Verfügba
 
     ![Diagramm: Azure Load Balancer Standard](./media/migrate-best-practices-networking/load-balancer.png) _Abbildung 4: Lastenausgleich_
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Lesen Sie die [Übersicht über Verfügbarkeitszonen](/azure/availability-zones/az-overview).
 
@@ -154,10 +153,10 @@ Im Anschluss folgen einige weitere Punkte, die bei der Einrichtung von Verfügba
 
 Für eine erfolgreiche Migration ist es wichtig, eine Verbindung zwischen lokalen Unternehmensnetzwerke mit Azure herzustellen. Dadurch entsteht eine Always On-Verbindung, die als Hybridcloudnetzwerk bezeichnet wird. In diesem Netzwerk werden den Unternehmensbenutzern Dienste aus der Azure-Cloud bereitgestellt. Es gibt zwei Optionen zum Erstellen dieser Art von Netzwerk:
 
-- **Site-to-Site-VPN** : Sie erstellen eine Site-to-Site-Verbindung zwischen Ihrem kompatiblen lokalen VPN-Gerät und einem Azure-VPN-Gateway, das in einem virtuellen Netzwerk bereitgestellt wird. Jede autorisierte lokale Ressource kann auf virtuelle Netzwerke zugreifen. Die Site-to-Site-Kommunikation wird durch einen verschlüsselten Tunnel über das Internet gesendet.
+- **Site-to-Site-VPN**: Sie erstellen eine Site-to-Site-Verbindung zwischen Ihrem kompatiblen lokalen VPN-Gerät und einem Azure-VPN-Gateway, das in einem virtuellen Netzwerk bereitgestellt wird. Jede autorisierte lokale Ressource kann auf virtuelle Netzwerke zugreifen. Die Site-to-Site-Kommunikation wird durch einen verschlüsselten Tunnel über das Internet gesendet.
 - **Azure ExpressRoute:** Sie stellen eine Azure ExpressRoute-Verbindung zwischen Ihrem lokalen Netzwerk und Azure über einen ExpressRoute-Partner her. Diese Verbindung ist privat, und der Datenverkehr wird nicht über das Internet geleitet.
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Erfahren Sie mehr über [Hybridcloudnetzwerke](/azure/architecture/reference-architectures/hybrid-networking/vpn).
 
@@ -191,7 +190,7 @@ Beim Einrichten eines Site-to-Site-VPN gilt Folgendes:
 ![Diagramm: Site-to-Site-VPN](./media/migrate-best-practices-networking/vpn.png)
 _Abbildung 5: Site-to-Site-VPN_
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Informieren Sie sich über [kompatible lokale VPN-Geräte](/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
 - Lesen Sie die [Übersicht über Azure-VPN-Gateways](/azure/vpn-gateway/vpn-gateway-about-vpngateways).
@@ -210,7 +209,7 @@ Wenn Sie ein VPN-Gateway in Azure erstellen, müssen Sie ein spezielles Subnetz 
 - Stellen Sie bei Verwendung des Azure-Gatewaysubnetzes keine virtuellen Computer oder anderen Geräte (beispielsweise Azure Application Gateway) im Gatewaysubnetz bereit.
 - Weisen Sie diesem Subnetz keine Netzwerksicherheitsgruppe (NSG) zu. Dadurch würde die Funktion des Gateways beendet.
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - [Verwenden Sie dieses Tool](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed), um Ihren IP-Adressraum zu ermitteln.
 
@@ -222,7 +221,7 @@ Bei Verwendung mehrerer VPN-Verbindungen bietet der Azure Virtual WAN-Netzwerkd
 - Die Nutzung von Geräten eines bevorzugten Anbieters ermöglicht eine einfache Verwendung, Konnektivität und Konfigurationsverwaltung.
 - Im integrierten Azure Virtual WAN-Dashboard können Sie umgehend Erkenntnisse zur Problembehandlung gewinnen, um Zeit zu sparen. Zudem können Sie auf einfache Weise umfangreiche Site-to-Site-Verbindungen überwachen.
 
-**Weitere Informationen** : Erfahren Sie mehr über [Azure Virtual WAN](/azure/virtual-wan/virtual-wan-about).
+**Weitere Informationen**: Erfahren Sie mehr über [Azure Virtual WAN](/azure/virtual-wan/virtual-wan-about).
 
 ### <a name="best-practice-implement-expressroute-for-mission-critical-connections"></a>Bewährte Methode: Implementieren von ExpressRoute für unternehmenskritische Verbindungen
 
@@ -236,7 +235,7 @@ Mit dem Azure ExpressRoute-Dienst erweitern Sie Ihre lokale Infrastruktur in di
 
 Für die Bereitstellung von ExpressRoute-Verbindungen ist in der Regel ein ExpressRoute-Dienstanbieter erforderlich. Zum schnellen Einstieg wird zunächst üblicherweise eine Site-to-Site-VPN-Verbindung verwendet, um eine Verbindung zwischen dem virtuellen Rechenzentrum und lokalen Ressourcen herzustellen. Danach wird dann eine Migration zu einer ExpressRoute-Verbindung durchgeführt, wenn eine physische Verbindung mit Ihrem Dienstanbieter eingerichtet wurde.
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Sehen Sie sich eine [Übersicht](/azure/expressroute/expressroute-introduction) über ExpressRoute an.
 - Informieren Sie sich über [ExpressRoute Direct](/azure/expressroute/expressroute-erdirect-about).
@@ -280,7 +279,7 @@ Um das Routing für beide Niederlassungen optimieren zu können, müssen Sie wis
 ![Diagramm: VPN mit Routenpfad über die korrekte Leitung](./media/migrate-best-practices-networking/bgp2.png)
 _Abbildung 7: Optimierte Verbindung über BGP-Communitys_
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Erfahren Sie mehr über das [Optimieren des Routings](/azure/expressroute/expressroute-optimize-routing).
 
@@ -288,7 +287,7 @@ _Abbildung 7: Optimierte Verbindung über BGP-Communitys_
 
 Die Verantwortung für den Schutz virtueller Netzwerke liegt zu gleichen Teilen bei Microsoft und bei Ihnen. Microsoft bietet viele Netzwerkfeatures und Dienste, die zum Schutz der Ressourcen dienen. Bei der Gestaltung der Sicherheit für virtuelle Netzwerke empfiehlt es sich, ein Umkreisnetzwerk zu implementieren, Filter und Sicherheitsgruppen zu verwenden, den Zugriff auf Ressourcen und IP-Adressen zu schützen sowie einen Angriffsschutz zu implementieren.
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Lesen Sie eine [Übersicht über bewährte Methoden für die Netzwerksicherheit](/azure/security/fundamentals/network-best-practices).
 - Erfahren Sie mehr über das [Entwerfen sicherer Netzwerke](/azure/virtual-network/virtual-network-vnet-plan-design-arm#security).
@@ -312,7 +311,7 @@ Hier sehen Sie ein Beispiel für ein Umkreisnetzwerk mit einem einzelnen Subnetz
 ![Diagramm: Bereitstellung eines Azure Virtual Network-Umkreisnetzwerks](./media/migrate-best-practices-networking/perimeter.png)
 _Abbildung 8: Bereitstellung eines Umkreisnetzwerks_
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Erfahren Sie mehr über die [Bereitstellung eines Umkreisnetzwerks zwischen Azure und Ihrem lokalen Rechenzentrum](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz).
 
@@ -346,13 +345,13 @@ Ein Diensttag steht für eine Gruppe von IP-Adresspräfixen. Durch Verwendung ei
 
 Diensttags ersparen Ihnen die manuelle Arbeit beim Zuweisen einer Regel zu Gruppen von Azure-Diensten. Wenn Sie beispielsweise einem Subnetz mit Webservern den Zugriff auf Azure SQL-Datenbank ermöglichen möchten, können Sie eine Ausgangsregel für Port 1433 erstellen und das Diensttag **Sql** verwenden.
 
-- Dieses **Sql** -Tag gibt die Adresspräfixe der Azure SQL-Datenbank- und Azure SQL Data Warehouse-Dienste an.
+- Dieses **Sql**-Tag gibt die Adresspräfixe der Azure SQL-Datenbank- und Azure SQL Data Warehouse-Dienste an.
 - Wenn Sie **Sql** als Wert angeben, wird der Datenverkehr für SQL zugelassen oder verweigert.
 - Falls Sie den Zugriff auf **Sql** nur für eine bestimmte Region zulassen möchten, können Sie die betreffende Region angeben. Wenn Sie den Zugriff auf Azure SQL-Datenbank beispielsweise nur für die Region „USA, Osten“ zulassen möchten, können Sie **Sql.EastUS** für das Diensttag angeben.
 - Das Tag steht für den Dienst, aber nicht für bestimmte Instanzen des Diensts. Beispielsweise steht das Tag für den Azure SQL-Datenbank-Dienst, aber nicht für eine bestimmte SQL-Datenbank oder einen bestimmten SQL-Server.
-- Alle Adresspräfixe, für die dieses Tag steht, werden auch durch das **Internet** -Tag repräsentiert.
+- Alle Adresspräfixe, für die dieses Tag steht, werden auch durch das **Internet**-Tag repräsentiert.
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Lesen Sie Informationen zu [Netzwerksicherheitsgruppen (NSGs)](/azure/virtual-network/security-overview).
 - Informieren Sie sich über [die für NSGs verfügbaren Diensttags](/azure/virtual-network/security-overview#service-tags).
@@ -387,7 +386,7 @@ In unserem Beispiel gehört jede Netzwerkschnittstelle nur einer Anwendungssiche
 
 Regeln, in denen eine Anwendungssicherheitsgruppe als Quelle oder Ziel angegeben ist, werden nur auf Netzwerkschnittstellen angewendet, bei denen es sich um Mitglieder der Anwendungssicherheitsgruppe handelt. Wenn die Netzwerkschnittstelle keiner Anwendungssicherheitsgruppe angehört, wird die Regel nicht auf die Netzwerkschnittstelle angewendet, auch wenn die Netzwerksicherheitsgruppe dem Subnetz zugeordnet ist.
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Informieren Sie sich über [Anwendungssicherheitsgruppen](/azure/virtual-network/security-overview#application-security-groups).
 
@@ -402,7 +401,7 @@ Durch VNET-Dienstendpunkte werden Ihr privater VNET-Adressraum und die Identitä
 ![Diagramm: Dienstendpunkte](./media/migrate-best-practices-networking/endpoint.png)
 _Abbildung 10: Dienstendpunkte_
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Informieren Sie sich über [VNET-Dienstendpunkte](/azure/virtual-network/virtual-network-service-endpoints-overview).
 
@@ -418,7 +417,7 @@ _Abbildung 10: Dienstendpunkte_
   - Standard-Remoteverwaltungsports wie SSH (22) und RDP (3389) sollten wie alle übrigen Ports mithilfe von NSGs auf „Verweigern“ festgelegt werden.
 - Eine bessere Methode besteht darin, virtuelle Computer hinter Azure Load Balancer oder Azure Application Gateway zu platzieren. Wenn anschließend Zugriff auf Remoteverwaltungsports benötigt wird, können Sie Just-In-Time-VM-Zugriff im Azure Security Center verwenden.
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - [Öffentliche IP-Adressen in Azure](/azure/virtual-network/virtual-network-ip-addresses-overview-arm#public-ip-addresses)
 - [Verwalten des Zugriffs auf virtuelle Computer mithilfe des Just-In-Time-Features](/azure/security-center/security-center-just-in-time)
@@ -444,7 +443,7 @@ Im Anschluss folgen einige Punkte, die beachtet werden müssen, wenn Sie den Die
   - Sie können ein FQDN-Tag verwenden, um den erforderlichen ausgehenden Netzwerkdatenverkehr über die Firewall zuzulassen.
 - Um beispielsweise den Netzwerkdatenverkehr von Windows Update manuell über Ihre Firewall zuzulassen, müssen Sie mehrere Anwendungsregeln erstellen. Mit FQDN-Tags erstellen Sie eine Anwendungsregel und schließen das Windows Update-Tag ein. Wenn diese Regel festgelegt wurde, kann der Netzwerkdatenverkehr an Microsoft Windows Update-Endpunkte über Ihre Firewall verlaufen.
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Lesen Sie die [Übersicht über Azure Firewall](/azure/firewall/overview).
 - Erfahren Sie mehr über [FQDN-Tags in Azure Firewall](/azure/firewall/fqdn-tags).
@@ -464,7 +463,7 @@ Im Anschluss folgen einige zusätzliche Hinweise zur WAF:
 - Sie können WAF-Regeln und Regelgruppen an Ihre Anwendungsanforderungen anpassen.
 - Es empfiehlt sich, eine WAF vor jeder Anwendung zu verwenden, auf die über das Web zugegriffen werden kann. Dies gilt auch für Anwendungen auf virtuellen Azure-Computern oder in Azure App Service.
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Erfahren Sie mehr über die [WAF](/azure/application-gateway/waf-overview).
 - Informieren Sie sich über [WAF-Einschränkungen und -Ausschlüsse](/azure/application-gateway/application-gateway-waf-configuration).
@@ -485,7 +484,7 @@ Im Anschluss finden Sie einige weitere Details:
   - Datenflussprotokolle werden im JSON-Format geschrieben.
   - Datenflussprotokolle geben Aufschluss über regelspezifische aus- und eingehende Datenflüsse sowie über die Netzwerkschnittstelle (NIC) für den Datenfluss. Des Weiteren enthalten sie 5-Tupel-Informationen zum Datenfluss (Quell-/Ziel-IP-Adresse, Quell-/Zielport, Protokoll) sowie Informationen dazu, ob der Datenverkehr zugelassen oder verweigert wurde.
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Lesen Sie die [Übersicht über Network Watcher](/azure/network-watcher).
 - Erfahren Sie mehr über [NSG-Datenflussprotokolle](/azure/network-watcher/network-watcher-nsg-flow-logging-overview).
@@ -510,7 +509,7 @@ Im Hub wird das Umkreisnetzwerk (mit Zugriff auf das Internet) für gewöhnlich 
 
 Es wird empfohlen, eine Gruppe von Azure-Firewalls (oder virtuellen Netzwerkappliances) für Datenverkehr aus dem Internet zu verwenden und eine andere für Datenverkehr mit lokalem Ursprung. Die Verwendung einer einzigen Gruppe von Firewalls für den gesamten Datenverkehr stellt ein Sicherheitsrisiko dar, da sie keinen wirksamen Sicherheitsbereich zwischen den beiden Arten von Netzwerkdatenverkehr bietet. Separate Firewallebenen vereinfachen die Überprüfung von Sicherheitsregeln und ermöglichen eine eindeutige Zuordnung von Regeln zu eingehenden Netzwerkanforderungen.
 
-**Weitere Informationen** :
+**Weitere Informationen**:
 
 - Informieren Sie sich über die [Verwendung virtueller Netzwerkappliances in einem virtuellen Azure-Netzwerk](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz).
 

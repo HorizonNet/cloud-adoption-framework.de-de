@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 3c3284f9f04a57e8532c0371197e1af7802e4fca
-ms.sourcegitcommit: 5b537035b96ae2b6879a1ea7fd46ceb64626851d
+ms.openlocfilehash: c5b98dd3259ed69ead71bd1d0a49f4f4384cfdb4
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89275364"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713903"
 ---
 <!-- TODO: Refactor terms: "design area", "well-architected" -->
 
@@ -21,7 +21,7 @@ ms.locfileid: "89275364"
 Jede Implementierungsoption für eine Azure-Zielzone bietet einen Bereitstellungsansatz und definierte Entwurfsprinzipien. Lesen vor dem Auswählen einer Implementierungsoption diesen Artikel, um sich mit diesen Entwurfsbereichen vertraut zu machen, die in der folgenden Tabelle aufgelistet sind.
 
 > [!NOTE]
-> Diese Entwurfsbereiche beschreiben, was Sie vor der Bereitstellung einer Zielzone in Betracht ziehen sollten. Verwenden Sie es als einfache Referenz. Informationen zu Entwurfsprinzipien und umsetzbaren Schritten für die Bereitstellung finden Sie in den [Implementierungsoptionen für Zielzonen](./implementation-options.md).  
+> Diese Entwurfsbereiche beschreiben, was Sie vor der Bereitstellung einer Zielzone in Betracht ziehen sollten. Verwenden Sie es als einfache Referenz. Informationen zu Entwurfsprinzipien und umsetzbaren Schritten für die Bereitstellung finden Sie in den [Implementierungsoptionen für Zielzonen](./implementation-options.md).
 
 ## <a name="design-areas"></a>Entwurfsbereiche
 

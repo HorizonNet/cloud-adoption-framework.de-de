@@ -7,12 +7,12 @@ ms.date: 10/17/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: eb0b5b529bd649ee398631f528ffaa7c79470bad
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: c849d4a2a798f0738844352e916fda97b35441a5
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570877"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713478"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Einrichten einer Überprüfung der Einsatztauglichkeit
 
@@ -127,11 +127,7 @@ Passen Sie die Details des Prozesses und der Besprechung so an, dass sie Ihre sp
   - Effiziente Leistung
   - Zuverlässigkeit
   - Sicherheit
-- [Zehn Entwurfsprinzipien für Azure-Anwendungen](/azure/architecture/guide/design-principles).
-    Befolgen Sie die folgenden Entwurfsprinzipien, um die Skalierbarkeit, Resilienz und Verwaltbarkeit Ihrer Anwendung zu optimieren.
-- [Entwerfen robuster Anwendungen für Azure](/azure/architecture/resiliency).
-    Erstellen und pflegen Sie zuverlässige Systeme mit einem strukturierten Ansatz für die Lebensdauer einer Anwendung – vom Entwurf und der Implementierung über die Bereitstellung bis zum Betrieb.
-- [Cloudentwurfsmuster](/azure/architecture/patterns).
-    Verwenden Sie Entwurfsmuster, um Anwendungen anhand der Säulen der Architekturexzellenz zu erstellen.
-- [Azure Advisor:](/azure/advisor)
-    Azure Advisor bietet basierend auf Ihrer Nutzung und Ihren Konfigurationen personalisierte Empfehlungen zum Optimieren Ihrer Ressourcen im Hinblick auf Hochverfügbarkeit, Sicherheit, Leistung und Kosten.
+- [Zehn Entwurfsprinzipien für Azure-Anwendungen](/azure/architecture/guide/design-principles). Befolgen Sie die folgenden Entwurfsprinzipien, um die Skalierbarkeit, Resilienz und Verwaltbarkeit Ihrer Anwendung zu optimieren.
+- [Entwerfen robuster Anwendungen für Azure](/azure/architecture/resiliency). Erstellen und pflegen Sie zuverlässige Systeme mit einem strukturierten Ansatz für die Lebensdauer einer Anwendung – vom Entwurf und der Implementierung über die Bereitstellung bis zum Betrieb.
+- [Cloudentwurfsmuster](/azure/architecture/patterns). Verwenden Sie Entwurfsmuster, um Anwendungen anhand der Säulen der Architekturexzellenz zu erstellen.
+- [Azure Advisor:](/azure/advisor) Azure Advisor bietet basierend auf Ihrer Nutzung und Ihren Konfigurationen personalisierte Empfehlungen zum Optimieren Ihrer Ressourcen im Hinblick auf Hochverfügbarkeit, Sicherheit, Leistung und Kosten.
