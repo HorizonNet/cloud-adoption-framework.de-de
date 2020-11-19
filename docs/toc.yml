@@ -399,7 +399,7 @@ items:
                     href: migrate/azure-best-practices/contoso-migration-rehost-vm-sql-ag.md
               - name: Linux- und Open-Source-Datenbanken
                 items:
-                  - name: Migrieren von Open-Source-Datenbanken zu Azure
+                  - name: Migration von Open-Source-Datenbanken zu Azure
                     href: migrate/azure-best-practices/contoso-migration-oss-db-to-azure.md
                   - name: Migrieren von MySQL zu Azure
                     href: migrate/azure-best-practices/contoso-migration-mysql-to-azure.md
@@ -411,6 +411,24 @@ items:
                     href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm.md
                   - name: Zuweisen eines neuen Hosts für eine Linux-App auf virtuellen Azure-Computern und Azure Database for MySQL
                     href: migrate/azure-best-practices/contoso-migration-rehost-linux-vm-mysql.md
+              - name: Open-Source-Plattformen
+                items:
+                  - name: Moodle-Migration
+                    items:
+                      - name: Übersicht
+                        href: scenarios/lamp/moodle/index.md
+                      - name: Voraussetzungen
+                        href: scenarios/lamp/moodle/migration-pre.md
+                      - name: Architektur und Vorlage
+                        href: scenarios/lamp/moodle/migration-arch.md
+                      - name: Ressourcenbeschreibung
+                        href: scenarios/lamp/moodle/migration-resources.md
+                      - name: Schritte bei der Migration
+                        href: scenarios/lamp/moodle/migration-start.md
+                      - name: Konfiguration der Azure-Infrastruktur
+                        href: scenarios/lamp/moodle/azure-infra-config.md
+                      - name: Nach der Migration
+                        href: scenarios/lamp/moodle/migration-post.md
               - name: Dev/Test-Workloads
                 items:
                   - name: Migrieren von Dev/Test-Umgebungen zu Azure IaaS

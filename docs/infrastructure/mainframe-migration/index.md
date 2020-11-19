@@ -7,22 +7,22 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b8471417e115f1f5c6f6c9bc4ccfe8187d5c41eb
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: cf30852204f3ce6b5911787e79beb99a072b6ba3
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775784"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712594"
 ---
-<!-- docutune:casing "BMC Control-M" ASSGN DLBL EXTENT LIBDEF EXEC -->
-<!-- docutune:ignore JOB -->
+<!-- docutune:casing "BMC Control-M" ASSGN DLBL EXTENT LIBDEF EXEC TWS-OPC CA-SAR IMS/TM IMS/DC "IMS/Data Communications" "Micro Focus Server Enterprise Edition" VSE -->
+<!-- docutune:ignore JOB Natural SPOOL -->
 <!-- cSpell:ignore dbspaces dbextents ASSGN DLBL EXTENT LIBDEF EXEC IPLs VSAM RACF LPARs -->
 
 # <a name="mainframe-migration-overview"></a>Übersicht zur Mainframemigration
 
 Viele Unternehmen und Organisationen profitieren davon, einige oder alle ihrer Mainframeworkloads, -anwendungen und -datenbanken in die Cloud zu verschieben. Azure bietet mainframeähnliche Funktionen im Cloudmaßstab ohne viele der mit Mainframes assoziierten Nachteile.
 
-Der Begriff „Mainframe“ bezieht sich im Allgemeinen auf ein Großrechnersystem, der Großteil der derzeit eingesetzten Mainframes sind jedoch IBM System Z-Server oder IBM-Plug-kompatible Systeme unter MVS, DOS, VSE, OS/390 oder z/OS. Mainframesysteme werden weiterhin in zahlreichen Branchen verwendet, um wichtige Informationssysteme auszuführen, und sie haben einen Platz in hochspezifischen Szenarien, z.B. in transaktionsintensiven großen IT-Umgebungen mit hohem Datenvolumen.
+Der Begriff _Mainframe_ bezieht sich im Allgemeinen auf ein Großrechnersystem, der Großteil der derzeit eingesetzten Mainframes sind jedoch IBM System Z-Server oder IBM-Plug-kompatible Systeme unter MVS, DOS, VSE, OS/390 oder z/OS. Mainframesysteme werden weiterhin in zahlreichen Branchen verwendet, um wichtige Informationssysteme auszuführen, und sie haben einen Platz in hochspezifischen Szenarien, z.B. in transaktionsintensiven großen IT-Umgebungen mit hohem Datenvolumen.
 
 Mit der Migration in die Cloud können Unternehmen ihre Infrastruktur modernisieren. Mit Clouddiensten können Sie Mainframeanwendungen, und den Wert, den sie bieten, als Workload verfügbar machen, wenn Ihre Organisation sie benötigt. Viele Workloads können mit nur geringfügigen Änderungen am Code, z.B. Aktualisieren der Namen der Datenbanken, in Azure übertragen werden. Sie können komplexere Workloads in Phasen migrieren.
 
@@ -50,7 +50,7 @@ Eine typische IBM-Mainframearchitektur umfasst diese gemeinsamen Komponenten:
 
 - **Code:** Zu den von Mainframes verwendeten Programmiersprachen zählen COBOL, Fortran, PL/I und Natural. Job Control Language (JCL) wird zur Arbeit mit z/OS verwendet.
 
-- **Datenbankebene:** Ein allgemeines relationales Datenbank-Managementsystem (Database Management System, DBMS) für z/OS ist IBM DD2. Es verwaltet als _dbspaces_ bezeichnete Datenstrukturen, die eine oder mehrere Tabellen enthalten und Speicherpools von physischen Datasets namens _dbextents_ zugewiesen sind. Zwei wichtige Datenbankkomponenten sind das Verzeichnis, das Datenspeicherorte in den Speicherpools identifiziert, und das Protokoll, das eine Aufzeichnung der an der Datenbank ausgeführten Vorgänge enthält. Verschiedene Flatfiledatenformate werden unterstützt. DB2 für z/OS verwendet in der Regel VSAM-Datasets (Virtual Storage Access Method, Methode des virtuellen Speicherzugriffs) zum Speichern der Daten.
+- **Datenbankebene:** Ein allgemeines Managementsystem für relationale Datenbanken (Database Management System, DBMS) für z/OS ist IBM DB2. Es verwaltet als _dbspaces_ bezeichnete Datenstrukturen, die eine oder mehrere Tabellen enthalten und Speicherpools von physischen Datasets namens _dbextents_ zugewiesen sind. Zwei wichtige Datenbankkomponenten sind das Verzeichnis, das Datenspeicherorte in den Speicherpools identifiziert, und das Protokoll, das eine Aufzeichnung der an der Datenbank ausgeführten Vorgänge enthält. Verschiedene Flatfiledatenformate werden unterstützt. DB2 für z/OS verwendet in der Regel VSAM-Datasets (Virtual Storage Access Method, Methode des virtuellen Speicherzugriffs) zum Speichern der Daten.
 
 - **Verwaltungsschicht:** IBM-Mainframes enthalten Planungssoftware wie TWS-OPC, Tools für die Druck- und Ausgabeverwaltung wie CA-SAR und SPOOL sowie ein Quellcodeverwaltungssystem. Die sichere Zugriffssteuerung für z/OS wird von der Resource Access Control Facility (RACF) behandelt. Ein Datenbank-Manager ermöglicht den Zugriff auf Daten in der Datenbank und wird in einer eigenen Partition in einer z/OS-Umgebung ausgeführt.
 
@@ -60,7 +60,7 @@ Eine typische IBM-Mainframearchitektur umfasst diese gemeinsamen Komponenten:
 
 IBM-Systeme verwenden eine Transaktionsüberwachung wie CICS, um alle Aspekte einer Geschäftstransaktion nachzuverfolgen und zu verwalten. CICS verwaltet die gemeinsame Nutzung von Ressourcen, die Integrität von Daten und die Priorisierung der Ausführung. CICS autorisiert Benutzer, weist Ressourcen zu und übergibt Datenbankanforderungen mittels der Anwendung an einen Datenbank-Manager, z.B. IBM DB2.
 
-Für eine genauere Optimierung wird CICS häufig mit IMS/TM (früher IMS/Data Communications oder IMS/DC) verwendet. IMS wurde entwickelt, um die Datenredundanz zu verringern, indem nur eine einzige Kopie der Daten beibehalten wird. Es ergänzt CICS als Transaktionsüberwachung, indem der Status während des Prozesses beibehalten wird und Geschäftsfunktionen in einem Datenspeicher aufgezeichnet werden.
+Für eine genauere Optimierung wird CICS häufig mit IMS/TM (früher IMS/Data Communications bzw. IMS/DC) verwendet. IMS wurde entwickelt, um die Datenredundanz zu verringern, indem nur eine einzige Kopie der Daten beibehalten wird. Es ergänzt CICS als Transaktionsüberwachung, indem der Status während des Prozesses beibehalten wird und Geschäftsfunktionen in einem Datenspeicher aufgezeichnet werden.
 
 ## <a name="mainframe-operations"></a>Mainframevorgänge
 
@@ -68,7 +68,7 @@ Folgende Mainframevorgänge sind typisch:
 
 - **Online:** Zu den Workloads zählen Transaktionsverarbeitung, Datenbankverwaltung und Verbindungen. Sie werden häufig mithilfe von IBM DB2-, CICS- und z/OS-Connectors implementiert.
 
-- **Batch:** Aufträge werden ohne Eingreifen des Benutzers ausgeführt, in der Regel nach einem regelmäßigen Zeitplan, z.B. morgens an jedem Werktag. Batchaufträge können mit einem JCL-Emulator wie Micro Focus Enterprise Server oder BMC Control-M-Software auf Systemen ausgeführt werden, die auf Windows oder Linux basieren.
+- **Batch:** Aufträge werden ohne Eingreifen des Benutzers ausgeführt, in der Regel nach einem regelmäßigen Zeitplan, z.B. morgens an jedem Werktag. Batchaufträge können mit einem JCL-Emulator wie Micro Focus Server Enterprise Edition oder BMC Control-M-Software auf Systemen ausgeführt werden, die auf Windows oder Linux basieren.
 
 - **Job Control Language (JCL):** Geben Sie die erforderlichen Ressourcen zum Verarbeiten von Batchaufträgen an. JCL überträgt diese Informationen über eine Reihe von Auftragssteuerungsanweisungen auf z/OS. Grundlegendes JCL enthält sechs Typen von Anweisungen: JOB, ASSGN, DLBL, EXTENT, LIBDEF und EXEC. Ein Auftrag kann mehrere EXEC-Anweisungen (Schritte) enthalten, und jeder Schritt kann mehrere LIBDEF-, ASSGN-, DLBL- und EXTENT-Anweisungen aufweisen.
 
