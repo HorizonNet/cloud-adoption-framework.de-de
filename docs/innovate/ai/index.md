@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: b138145f7cc513d3d039438a5a4318c19c30d7b4
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 75e2e1cd11f41f44cdb2327f3ce9022c0e642888
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604636"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94881009"
 ---
 <!-- docutune:casing InterpretML FairLearn -->
 
@@ -26,7 +26,7 @@ Die Liste der erforderlichen Aktionen ist nach Rollen in Kategorien zusammengefa
 
 Machen Sie zur Vorbereitung auf diese Phase des Cloudeinführungszyklus die folgenden Übungen:
 
-- [Entwicklung, Bereitstellung und Verwaltung von Machine Learning-Modellen:](https://azure.microsoft.com/overview/ai-platform/dev-resources/) Sehen Sie sich Muster und Vorgehensweisen zum Entwickeln Ihrer eigenen Machine Learning-Modelle an, einschließlich MLOps, automatisierter Machine Learning- (AutoML) und verantwortungsbewusster ML-Lerntools wie InterpretML und FairLearn.
+- [Entwicklung, Bereitstellung und Verwaltung von Machine Learning-Modellen:](https://azure.microsoft.com/overview/ai-platform/dev-resources/) Sehen Sie sich Muster und Vorgehensweisen zum Entwickeln Ihrer eigenen Machine Learning-Modelle an, einschließlich MLOps, Tools für automatisiertes maschinelles Lernen (AutoML) und verantwortungsbewusster ML-Lerntools wie InterpretML und FairLearn.
 - [Hinzufügen von domänenspezifischen KI-Modellen zu Ihren Anwendungen:](https://www.oreilly.com/library/view/building-intelligent-apps/9781492058632/) Hier erhalten Sie Informationen zu bewährten Methoden für das Hinzufügen von KI-Funktionen zu Ihren Anwendungen mit Cognitive Services. Außerdem erfahren Sie mehr über die wichtigsten Szenarien, die von diesen Diensten unterstützt werden.
 - [Erstellen Ihrer eigenen interaktiven KI-Lösung](https://www.oreilly.com/library/view/a-developers-guide/9781492080619/): Hier erfahren Sie, wie Sie Ihren eigenen virtuellen Assistenten erstellen – eine interaktive KI-Anwendung, die Sprache und Text versteht, große Mengen von Informationen erkennt und intelligent antwortet.
 - [Erstellen von KI-basierten Knowledge Mining-Lösungen:](https://azure.microsoft.com/resources/a-developers-guide-to-building-ai-driven-knowledge-mining-solutions/) Hier erfahren Sie, wie Sie mit Knowledge Mining strukturierte Daten aus ihren unstrukturierten Inhalten extrahieren und verwertbare Informationen aus den vielen Daten Ihrer Organisation gewinnen.
