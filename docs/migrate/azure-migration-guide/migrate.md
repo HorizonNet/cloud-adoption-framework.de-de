@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 1a52864576b7965a10a2fb7a4f3ea773cd4979c9
-ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
+ms.openlocfilehash: 2abab02b5d73bd69b33c8124fb4500129e97e545
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93282929"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712424"
 ---
 # <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>Bereitstellen von Workloads und Assets (Infrastruktur, Apps und Daten)
 
@@ -32,18 +32,18 @@ Azure Migrate ist ein zentralisierter Hub für die Bewertung und die Migration v
 
 - Einheitliche Plattform mit Bewertung, Migration und Fortschrittsverfolgung.
 - Erweiterte Bewertungs- und Migrationsfunktionen:
-    - Lokale Server, einschließlich Hyper-V und VMware.
-    - Migration ohne Agents Ihrer virtuellen VMware-Computer zu Azure.
-    - Datenbankmigration zu Azure SQL-Datenbank oder einer SQL Managed Instance
-    - Webanwendungen
-    - Virtual Desktop Infrastructure (VDI) zu Windows Virtual Desktop in Azure
-    - Große Datensammlungen, die Azure Data Box-Produkte verwenden
+  - Lokale Server, einschließlich Hyper-V und VMware.
+  - Migration ohne Agents Ihrer virtuellen VMware-Computer zu Azure.
+  - Datenbankmigration zu Azure SQL-Datenbank oder einer SQL Managed Instance
+  - Webanwendungen
+  - Virtual Desktop Infrastructure (VDI) zu Windows Virtual Desktop in Azure
+  - Große Datensammlungen, die Azure Data Box-Produkte verwenden
 - Erweiterbarer Ansatz mit ISV-Integration (z. B. Cloudamize).
 
 Führen Sie die folgenden Schritte aus, um eine Migration mit Azure Migrate durchzuführen:
 
 1. Suchen Sie unter **Alle Dienste** nach Azure Migrate. Wählen Sie **Azure Migrate** aus, um den Vorgang fortzusetzen.
-1. Wählen Sie **Tool hinzufügen** , um Ihr Migrationsprojekt zu starten.
+1. Wählen Sie **Tool hinzufügen**, um Ihr Migrationsprojekt zu starten.
 1. Wählen Sie das Abonnement, die Ressourcengruppe und die Geografie aus, für die die Migration durchgeführt werden soll.
 1. Wählen Sie **Bewertungstool auswählen** > **Azure Migrate: Serverbewertung** > **Weiter** aus.
 1. Wählen Sie **Überprüfen + Tools hinzufügen** aus, und überprüfen Sie die Konfiguration. Wählen Sie **Tools hinzufügen** aus, um den Auftrag zur Erstellung des Migrationsprojekts und zur Registrierung der ausgewählten Lösungen zu initiieren.
@@ -105,6 +105,7 @@ Der Azure App Service-Migrations-Assistent ist Teil einer [größeren Anwendun
 
 1. Er bewertet eine bestimmte, unter Windows Server installierte Web-App, indem er die Kompatibilität vor der Migration überprüft, um zu ermitteln, ob die Web-App unverändert zu Azure App Service migriert werden kann.
 1. Wenn die Bewertung ergibt, dass die Web-App migriert werden kann, führt der Migration Assistant die Migration durch. Sie müssen dem Migration Assistant Zugriff auf Ihr Azure-Konto gewähren sowie die zu verwendenden Ressourcengruppe, einen Namen für die Web-App und weitere Details auswählen.
+
 Alternativ generiert der Migrations-Assistent eine Azure Resource Manager-Vorlage, mit der Sie die Webanwendung mit mehr Automatisierung und Wiederholbarkeit migrieren können.
 
 #### <a name="migrate-a-web-app-to-azure-app-service"></a>Migrieren einer Web-App zu Azure App Service
@@ -125,7 +126,7 @@ Nachdem die App erfolgreich migriert wurde, können weitere Aufgaben erforderlic
 
 Sie können auch den Azure App Service-Hostingplan und andere Einstellungen wie automatische Skalierung und Bereitstellungsslots ändern.
 
-Weitere Informationen finden Sie unter: 
+Weitere Informationen finden Sie unter:
 
 [Migrieren von ASP.NET-Apps zu Azure](/learn/paths/migrate-dotnet-apps-azure)
 
@@ -171,9 +172,9 @@ Der Assistent für Datenbankexperimente (DEA) ist eine neue A/B-Testlösung für
 
 Der Assistent für Datenbankexperimente enthält die folgenden Workflowaktivitäten:
 
-- **Erfassen** : Der erste Schritt des SQL Server-A/B-Tests ist die Erfassung einer Ablaufverfolgung auf Ihrem Quellserver. Der Quellserver ist normalerweise der Produktionsserver.
-- **Wiedergeben** : Im zweiten Schritt des SQL Server-A/B-Tests wird die erfasste Ablaufverfolgungsdatei auf Ihren Zielservern wiedergegeben. Anschließend werden umfangreiche Ablaufverfolgungen aus den Wiedergaben zur Analyse gesammelt.
-- **Analyse** : Der letzte Schritt besteht darin, einen Analysebericht unter Verwendung der Wiedergabeablaufverfolgungen zu generieren. Anhand des Analyseberichts erhalten Sie wertvolle Einblicke in die Auswirkungen der vorgeschlagenen Änderung auf die Leistung.
+- **Erfassen**: Der erste Schritt des SQL Server-A/B-Tests ist die Erfassung einer Ablaufverfolgung auf Ihrem Quellserver. Der Quellserver ist normalerweise der Produktionsserver.
+- **Wiedergeben**: Im zweiten Schritt des SQL Server-A/B-Tests wird die erfasste Ablaufverfolgungsdatei auf Ihren Zielservern wiedergegeben. Anschließend werden umfangreiche Ablaufverfolgungen aus den Wiedergaben zur Analyse gesammelt.
+- **Analyse**: Der letzte Schritt besteht darin, einen Analysebericht unter Verwendung der Wiedergabeablaufverfolgungen zu generieren. Anhand des Analyseberichts erhalten Sie wertvolle Einblicke in die Auswirkungen der vorgeschlagenen Änderung auf die Leistung.
 
 Weitere Informationen finden Sie unter
 

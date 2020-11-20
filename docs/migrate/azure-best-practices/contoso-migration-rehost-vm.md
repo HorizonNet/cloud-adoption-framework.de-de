@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d1eb881a8ebffad2fb9981539685d782972bda94
-ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
+ms.openlocfilehash: ada5194d581384ee6d1632e6d6088fb3f8f03fd4
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93283280"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713223"
 ---
 <!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless -->
 
@@ -91,7 +91,7 @@ Contoso migriert das Anwendungs-Front-End und die Datenbank-VMs zu virtuellen Az
 
 | Dienst | BESCHREIBUNG | Kosten |
 | --- | --- | --- |
-| [Azure Migrate: Servermigration](/azure/migrate/contoso-migration-rehost-vm) | Der Dienst orchestriert und verwaltet die Migration von lokalen Anwendungen und Workloads und von VM-Instanzen für Amazon Web Services (AWS)/Google Cloud Platform (GCP). | Während der Replikation in Azure fallen Gebühren für Azure Storage an. Azure-VMs werden erstellt und verursachen Gebühren, wenn die Migration erfolgt und die VMs in Azure ausgeführt werden. Informieren Sie sich über die [Gebühren und Preise](https://azure.microsoft.com/pricing/details/azure-migrate).  |
+| [Azure Migrate: Servermigration](/azure/migrate/contoso-migration-rehost-vm) | Der Dienst orchestriert und verwaltet die Migration von lokalen Anwendungen und Workloads sowie von VM-Instanzen für Amazon Web Services (AWS) und Google Cloud Platform (GCP). | Während der Replikation in Azure fallen Gebühren für Azure Storage an. Azure-VMs werden erstellt und verursachen Gebühren, wenn die Migration erfolgt und die VMs in Azure ausgeführt werden. Informieren Sie sich über die [Gebühren und Preise](https://azure.microsoft.com/pricing/details/azure-migrate).  |
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -187,7 +187,7 @@ Bevor die Contoso-Administratoren eine Migration zu Azure durchführen können, 
 
 Nachdem die Ermittlung abgeschlossen ist, können sie mit der Replikation von VMware-VMs in Azure beginnen.
 
-1. Wechseln Sie im Azure Migrate-Projekt zu **Server** > **Azure Migrate- Servermigration** ). Wählen Sie dann **Replizieren** aus.
+1. Wechseln Sie im Azure Migrate-Projekt zu **Server** > **Azure Migrate- Servermigration**). Wählen Sie dann **Replizieren** aus.
 
     ![Screenshot: Auswahlmöglichkeiten für die Replikation virtueller Computer](./media/contoso-migration-rehost-vm/select-replicate.png)
 

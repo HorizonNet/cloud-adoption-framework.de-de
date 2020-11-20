@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5f8b0d2a1f834b82adf47ef7f965315caf8ae1b8
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: df3ca412e1cf405a0927e13e5c030da66f4a0e53
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567766"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713631"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc OSTICKETWEB OSTICKETMYSQL osTicket contosoosticket trafficmanager InnoDB binlog DBHOST DBUSER CNAME -->
 
@@ -26,9 +26,9 @@ Die in diesem Beispiel verwendete Service Desk-Anwendung osTicket wird als Open-
 
 Das IT-Führungsteam hat in enger Zusammenarbeit mit Geschäftspartnern seine Ziele festgelegt:
 
-- **Unternehmenswachstum:** Contoso wächst und erschließt neue Märkte. Das Unternehmen benötigt zusätzliche Kundendienstmitarbeiter.
-- **Skalierung:** Bei einer Anwendung für Hunderttausende oder Millionen von Mandanten sind Ansätze mit gemeinsamer Datenbanknutzung vorteilhaft, z.B. Die Lösung soll erstellt werden, damit Contoso beim Ausbau der Geschäftsbereiche weitere Kundendienstmitarbeiter einstellen kann.
-- **Verbessern der Resilienz:** In der Vergangenheit waren nur interne Benutzer von Problemen mit dem System betroffen. Beim neuen Geschäftsmodell wirken sich diese auch auf externe Benutzer aus, und Contoso muss sicherstellen, dass die Anwendung jederzeit verfügbar ist.
+- **Unternehmenswachstum.** Contoso wächst und erschließt neue Märkte. Das Unternehmen benötigt zusätzliche Kundendienstmitarbeiter.
+- **Skalierung.** Die Lösung soll erstellt werden, damit Contoso beim Ausbau der Geschäftsbereiche weitere Kundendienstmitarbeiter einstellen kann.
+- **Verbesserte Resilienz:** In der Vergangenheit waren nur interne Benutzer von Problemen mit dem System betroffen. Beim neuen Geschäftsmodell wirken sich diese auch auf externe Benutzer aus, und Contoso muss sicherstellen, dass die Anwendung jederzeit verfügbar ist.
 
 ## <a name="migration-goals"></a>Migrationsziele
 
@@ -200,17 +200,23 @@ Die Administratoren von Contoso migrieren die Datenbank mithilfe von Azure Datab
 Contoso geht im Wesentlichen wie folgt vor:
 
 - Das Unternehmen stellt sicher, dass alle Voraussetzungen für die Migration erfüllt sind:
-  - Die Version der MySQL-Datenbankserverquelle muss der von Azure Database for MySQL unterstützten Version entsprechen. Azure Database for MySQL unterstützt die MySQL Community Edition, die InnoDB-Speicher-Engine sowie die Migration zwischen Quellen und Zielen mit derselben Version.  
-  - Es aktiviert die binäre Protokollierung in `my.ini` (Windows) oder `my.cnf` (Unix). Andernfalls tritt im Migrations-Assistenten der folgende Fehler auf:  
+  - Die Version der MySQL-Datenbankserverquelle muss der von Azure Database for MySQL unterstützten Version entsprechen. Azure Database for MySQL unterstützt die MySQL Community Edition, die InnoDB-Speicher-Engine sowie die Migration zwischen Quellen und Zielen mit derselben Version.
+
+  - Es aktiviert die binäre Protokollierung in `my.ini` (Windows) oder `my.cnf` (Unix). Andernfalls tritt im Migrations-Assistenten der folgende Fehler auf:
 
     „Fehler bei der binären Protokollierung. Die Variable "binlog_row_image" weist den Wert "minimal" auf. Ändern Sie diesen in "full". Weitere Informationen finden Sie unter `https://go.microsoft.com/fwlink/?linkid=873009`.“
 
-  - Der Benutzer muss über die Rolle `ReplicationAdmin` verfügen.  
-  - Migrieren Sie die Datenbankschemas ohne Fremdschlüssel und Trigger.  
-- Sie erstellen ein virtuelles privates Netzwerk (VPN), das über ExpressRoute oder VPN mit dem lokalen Netzwerk verbunden ist.  
-- Sie erstellen eine Azure Database Migration Service-Instanz mit einer Premium-SKU, die mit dem virtuellen Netzwerk verbunden ist.  
-- Sie vergewissern sich, dass Azure Database Migration Service über das virtuelle Netzwerk auf die MySQL-Datenbank zugreifen kann. Dazu gehört auch, sicherzustellen, dass alle eingehenden Ports von Azure zu MySQL auf der virtuellen Netzwerkebene, dem Netzwerk-VPN und dem Computer, auf dem MySQL gehostet ist, zugelassen werden.  
-- Sie führen das Database Migration Service-Tool aus und führen anschließend die folgenden Schritte durch:  
+  - Der Benutzer muss über die Rolle `ReplicationAdmin` verfügen.
+
+  - Migrieren Sie die Datenbankschemas ohne Fremdschlüssel und Trigger.
+
+- Sie erstellen ein virtuelles privates Netzwerk (VPN), das über ExpressRoute oder VPN mit dem lokalen Netzwerk verbunden ist.
+
+- Sie erstellen eine Azure Database Migration Service-Instanz mit einer Premium-SKU, die mit dem virtuellen Netzwerk verbunden ist.
+
+- Sie vergewissern sich, dass Azure Database Migration Service über das virtuelle Netzwerk auf die MySQL-Datenbank zugreifen kann. Dazu gehört auch, sicherzustellen, dass alle eingehenden Ports von Azure zu MySQL auf der virtuellen Netzwerkebene, dem Netzwerk-VPN und dem Computer, auf dem MySQL gehostet ist, zugelassen werden.
+
+- Sie führen das Database Migration Service-Tool aus und führen anschließend die folgenden Schritte durch:
 
   a. Sie erstellen auf der Grundlage der Premium-SKU ein Migrationsprojekt.
 
@@ -276,7 +282,7 @@ Contoso geht im Wesentlichen wie folgt vor:
 
     ![Screenshot des Azure-Portals, in dem wiederhergestellte Daten angezeigt werden](./media/contoso-migration-refactor-linux-app-service-mysql/workbench5.png)
 
-    ![Screenshot des Azure-Portals, in dem wiederhergestellte Daten angezeigt werden](./media/contoso-migration-refactor-linux-app-service-mysql/workbench6.png)
+    ![Screenshot des Blatts „Meine SQL-Datenbanken“ mit einem Pfeil, der auf die osticket-Datenbank zeigt.](./media/contoso-migration-refactor-linux-app-service-mysql/workbench6.png)
 
 8. Die Administratoren aktualisieren die Datenbankinformationen in den Web-Apps. In der MySQL-Instanz wird **Verbindungszeichenfolge** geöffnet.
 

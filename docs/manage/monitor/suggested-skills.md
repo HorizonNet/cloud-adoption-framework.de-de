@@ -7,12 +7,12 @@ ms.date: 08/26/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ab6b3c853f02154ea38a1c0a4a7d642ea7e8eb75
-ms.sourcegitcommit: 8bd82ade858bf8095672842bd6469deae7616bbf
+ms.openlocfilehash: 2040be11d1c64e002ee304e8638ced855d7973e5
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "94333642"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713495"
 ---
 <!-- cSpell:ignore kusto ITIL -->
 
@@ -20,7 +20,7 @@ ms.locfileid: "94333642"
 
 Das Ziel der Phase „Planung“ Ihrer Migrationsjourney besteht darin, die notwendigen Pläne für die Implementierung zu entwickeln. In den Plänen muss auch festgelegt werden, wie Sie diese Workloads abarbeiten, bevor die Umstellung bzw. die Freigabe für die Produktion erfolgt (und nicht danach). Die Beteiligten im Unternehmen erwarten nützliche Dienste, die ohne Störungen funktionieren. IT-Mitarbeiter merken, dass sie neue Qualifikationen erwerben und sich anpassen müssen, damit sie die integrierten Azure-Dienste sicher verwenden können, um Ressourcen in Azure und in Hybridumgebungen effektiv zu überwachen.
 
-Das Erlangen der erforderlichen Qualifikationen kann mit den folgenden Lernpfaden beschleunigt werden. Diese sind so organisiert, dass mit dem Erlernen der Grundlagen begonnen wird, und dann eine Verzweigung in drei primäre Themenbereiche erfolgt: Infrastruktur, Anwendung und Datenanalyse.  
+Das Erlangen der erforderlichen Qualifikationen kann mit den folgenden Lernpfaden beschleunigt werden. Diese sind so organisiert, dass mit dem Erlernen der Grundlagen begonnen wird, und dann eine Verzweigung in drei primäre Themenbereiche erfolgt: Infrastruktur, Anwendung und Datenanalyse.
 
 ## <a name="fundamentals"></a>Grundlagen
 
@@ -62,7 +62,7 @@ Das Erlangen der erforderlichen Qualifikationen kann mit den folgenden Lernpfade
   - Unter [Microsoft Azure DevOps-Techniker: Optimieren von Feedbackmechanismen](https://www.pluralsight.com/courses/microsoft-azure-optimize-feedback-mechanisms) können Sie sich darauf vorbereiten, Azure Monitor, einschließlich Application Insights, für die Überwachung und Optimierung Ihrer Webanwendungen zu verwenden.
 
   - [Erfassen und Anzeigen der Seitenladezeiten in Ihrer Azure Web-App](/learn/modules/capture-page-load-times-application-insights/). Beginnen Sie mit diesem Kurs zur Verwendung von Azure Monitor Application Insights für die End-to-End-Überwachung Ihrer Anwendungskomponenten, die in Azure ausgeführt werden.
-  
+
   - Unter [Microsoft Azure-Datenbanküberwachung: Playbook](https://www.pluralsight.com/courses/microsoft-azure-database-playbook-monitoring) wird beschrieben, wie Sie die Überwachung von Azure SQL-Datenbank, Azure SQL Data Warehouse und Azure Cosmos DB implementieren und nutzen.
 
   - In dem Kurs [Instrumentieren von Anwendungen mit Azure Monitor Application Insights](https://app.pluralsight.com/library/courses/microsoft-azure-application-insights-web-application-instrument) wird ausführlich beschrieben, wie Sie das Application Insights SDK zum Sammeln von Telemetriedaten und Ereignissen einer App mit Angular- und Node.js-Komponenten verwenden.
@@ -91,7 +91,7 @@ Mit unseren [Azure-Zertifizierungstrainings und -prüfungen](https://www.microso
 
 Die Hybrid Cloud-Umgebung bedeutet für die IT-Abteilung, dass nicht definierte Rollen, Zuständigkeiten und Aktivitäten bewältigt werden müssen. Organisationen müssen die Umstellung auf moderne Dienstverwaltungsverfahren vollziehen, z. B. in Bezug auf Agile- und DevOps-Methodiken, um die Transformations- und Optimierungsanforderungen heutiger Unternehmen schneller und effizienter erfüllen zu können.
 
-Im Rahmen der Migration zu einer Cloudüberwachungsplattform muss das IT-Team, das im Unternehmen für die Verwaltung der Überwachung zuständig ist, für flexible Schulungs- und Beteiligungsmöglichkeiten in Bezug auf DevOps-Aktivitäten sorgen. Hierbei kommt auch die _Dev_ -Komponente von DevOps ins Spiel. Die üblichen Anforderungen werden in organisierte flexible Anforderungen umgewandelt, um minimal ausgestattete Überwachungslösungen bereitzustellen, die iterativ optimiert werden und die Bedürfnisse des Unternehmens erfüllen. Verknüpfen Sie Ihr Azure DevOps Server-Projekt mit einem GitHub Enterprise-Server-Repository, um die Verwaltung der iterativen Überwachungslösungspakete und anderer zugehöriger Materialien per Quellcodeverwaltung zu ermöglichen. Hierdurch wird eine Verknüpfung zwischen GitHub-Commits und Pull Requests für Arbeitselemente hergestellt. Sie können GitHub Enterprise für die Entwicklung verwenden, um Continuous Integration/Deployment zu Überwachungszwecken zu unterstützen, während Sie Azure Boards nutzen, um Ihre Arbeit zu planen und nachzuverfolgen.
+Im Rahmen der Migration zu einer Cloudüberwachungsplattform muss das IT-Team, das im Unternehmen für die Verwaltung der Überwachung zuständig ist, für flexible Schulungs- und Beteiligungsmöglichkeiten in Bezug auf DevOps-Aktivitäten sorgen. Hierbei kommt auch die _Dev_-Komponente von DevOps ins Spiel. Die üblichen Anforderungen werden in organisierte flexible Anforderungen umgewandelt, um minimal ausgestattete Überwachungslösungen bereitzustellen, die iterativ optimiert werden und die Bedürfnisse des Unternehmens erfüllen. Verknüpfen Sie Ihr Azure DevOps Server-Projekt mit einem GitHub Enterprise-Server-Repository, um die Verwaltung der iterativen Überwachungslösungspakete und anderer zugehöriger Materialien per Quellcodeverwaltung zu ermöglichen. Hierdurch wird eine Verknüpfung zwischen GitHub-Commits und Pull Requests für Arbeitselemente hergestellt. Sie können GitHub Enterprise für die Entwicklung verwenden, um Continuous Integration/Deployment zu Überwachungszwecken zu unterstützen, während Sie Azure Boards nutzen, um Ihre Arbeit zu planen und nachzuverfolgen.
 
 Weitere Informationen finden Sie in den folgenden Artikeln:
 

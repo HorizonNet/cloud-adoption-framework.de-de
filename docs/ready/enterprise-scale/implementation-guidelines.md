@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 078ac0e661b946d9fb493dff0b1d2ee087777726
-ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
+ms.openlocfilehash: cb053e2a62bb1451b2044291f6851fc20d4e1333
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "93024605"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713665"
 ---
 <!-- cSpell:ignore interdomain VMSS VWAN -->
 
@@ -74,7 +74,7 @@ In den folgenden Abschnitten werden die Schritte zum Abschließen dieser Aktivit
 
 Wie unter [wichtigen Entwurfsbereich „Organisation von Verwaltungsgruppen und Abonnements“](./management-group-and-subscription-organization.md) ausführlich beschrieben, sollte für Abonnements innerhalb der Hierarchie der Sandbox-Verwaltungsgruppe ein Ansatz mit weniger restriktiven Richtlinien verwendet werden. Da diese Abonnements von Benutzern innerhalb des Unternehmens zum Experimentieren und zum Entwickeln von Innovationen mit Azure-Produkten und -Diensten verwendet werden sollten, die in Ihrer Zielzonenhierarchie möglicherweise noch nicht erlaubt sind, sollte geprüft werden, ob ihre Ideen/Konzepte funktionieren, bevor sie in eine formale Entwicklungsumgebung überführt werden.
 
-Allerdings müssen für diese Abonnements in der Hierarchie der Sandbox-Verwaltungsgruppe noch einige Schutzmaßnahmen angewendet werden, um sicherzustellen, dass sie nur in der richtigen Weise verwendet werden, z. B. für Innovation, Test neuer Azure-Dienste/-Produkte/-Features, Prüfung der Ideenfindung. 
+Allerdings müssen für diese Abonnements in der Hierarchie der Sandbox-Verwaltungsgruppe noch einige Schutzmaßnahmen angewendet werden, um sicherzustellen, dass sie ordnungsgemäß verwendet werden, z. B. für Innovation, Experimente mit neuen Azure-Diensten und -Features sowie der Prüfung von Ideen.
 
 **Daher empfehlen wir Folgendes:**
 
@@ -83,7 +83,7 @@ Allerdings müssen für diese Abonnements in der Hierarchie der Sandbox-Verwaltu
   | Name                  |     BESCHREIBUNG                                                                                     | Hinweise zur Zuweisung |
   |-----------------------|-----------------------------------------------------------------------------------------------|--------------------------------------------------------------|
   | [`Deny-VNET-Peering-Cross-Subscription`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState) | Verhindert, dass VNET-Peeringverbindungen zu anderen VNETs außerhalb des Abonnements erstellt werden. | Stellen Sie sicher, dass diese Richtlinie nur der Bereichsebene der Sandbox-Verwaltungsgruppenhierarchie zugewiesen wird. |
-  | [`Denied-Resources`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyAssignments-Denied-Resources.parameters.json)           | Ressourcen, deren Erstellung in den Sandbox-Abonnements verweigert wird. Dadurch wird verhindert, dass Hybridverbindungsressourcen erstellt werden *z. B. VPN/ExpressRoute/VirtualWAN* | Wählen Sie bei der Zuweisung dieser Richtlinie die folgenden Ressourcen aus, um die Erstellung folgender Komponenten zu verweigern: VPN-Gateways: `microsoft.network/vpngateways`, P2S-Gateways: `microsoft.network/p2svpngateways`, virtuelle WANs: `microsoft.network/virtualwans`, virtuelle WAN-Hubs: `microsoft.network/virtualhubs`, ExpressRoute-Leitungen: `microsoft.network/expressroutecircuits`, ExpressRoute-Gateways: `microsoft.network/expressroutegateways`, ExpressRoute-Ports: `microsoft.network/expressrouteports`, ExpressRoute-Querverbindungen: `microsoft.network/expressroutecrossconnections` und lokale Netzwerkgateways: `microsoft.network/localnetworkgateways`. | 
+  | [`Denied-Resources`](https://github.com/Azure/Enterprise-Scale/blob/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState/Microsoft.Authorization_policyAssignments-Denied-Resources.parameters.json)           | Ressourcen, deren Erstellung in den Sandbox-Abonnements verweigert wird. Dadurch wird verhindert, dass Hybridverbindungsressourcen erstellt werden *z. B. VPN/ExpressRoute/VirtualWAN* | Wählen Sie bei der Zuweisung dieser Richtlinie die folgenden Ressourcen aus, um die Erstellung folgender Komponenten zu verweigern: VPN-Gateways: `microsoft.network/vpngateways`, P2S-Gateways: `microsoft.network/p2svpngateways`, virtuelle WANs: `microsoft.network/virtualwans`, virtuelle WAN-Hubs: `microsoft.network/virtualhubs`, ExpressRoute-Leitungen: `microsoft.network/expressroutecircuits`, ExpressRoute-Gateways: `microsoft.network/expressroutegateways`, ExpressRoute-Ports: `microsoft.network/expressrouteports`, ExpressRoute-Querverbindungen: `microsoft.network/expressroutecrossconnections` und lokale Netzwerkgateways: `microsoft.network/localnetworkgateways`. |
   | [`Deploy-Budget-Sandbox`](https://github.com/Azure/Enterprise-Scale/tree/main/azopsreference/3fc1081d-6105-4e19-b60c-1ec1252cf560%20(3fc1081d-6105-4e19-b60c-1ec1252cf560)/contoso%20(contoso)/.AzState) | Stellt sicher, dass für jedes Sandbox-Abonnement ein Budget vorhanden ist und E-Mail-Warnungen aktiviert sind. Das Budget erhält den Namen `default-sandbox-budget` in jedem Abonnement. | Wenn die Standardwerte der Parameter während der Zuweisung der Richtlinie nicht geändert werden, wird ein Budget (`default-sandbox-budget`) mit einem Währungsschwellenwert von 1000 erstellt und bei 90% und 100% des Budgetschwellenwerts eine E-Mail-Warnung an die Eigentümer und Mitwirkenden des Abonnements (basierend auf der RBAC-Rollenzuweisung) gesendet. |
 
 ### <a name="global-networking-and-connectivity"></a>Globale Netzwerke und Konnektivität

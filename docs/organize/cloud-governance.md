@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 719e3e6dc9c1b8bffad940ff781a49c357246691
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: e0072ca4e2c1606024c992088fe38618498b2625
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776498"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712305"
 ---
 <!-- docutune:ignore IS -->
 
@@ -77,7 +77,8 @@ Je umfangreicher die Einführung wird, desto schwieriger ist es möglicherweise 
 ## <a name="next-steps"></a>Nächste Schritte
 
 Einige große Organisationen verfügen über dedizierte Teams speziell für die IT-Governance. Diese Teams sind auf das Risikomanagement für das gesamte IT-Portfolio spezialisiert. Wenn diese Teams vorhanden sind, können die folgenden Entwicklungsmodelle beschleunigt werden. Für das für IT-Governance zuständige Team ist es aber ratsam, sich über das Cloudgovernancemodell zu informieren, um zu verstehen, wie sich die Governance in der Cloud etwas verschiebt. Wesentliche Artikel behandeln das Erweitern der Unternehmensrichtlinie auf die Cloud sowie „Die fünf Disziplinen der Cloudgovernance“.
-Keine Governance: Es kommt häufig vor, dass Organisationen die Umstellung auf die Cloud ohne klare Planung für die Governance durchführen. Nach kurzer Zeit führen dann Bedenken in Bezug auf Sicherheit, Kosten, Skalierung und Abläufe zu Diskussionen über ein Governancemodell sowie über Personal für die Prozesse, die für dieses Modell erforderlich sind. Ein wichtiger erster Schritt besteht immer darin, mit dieser Diskussion zu beginnen, bevor es zu diesen Bedenken kommt. Auf diese Weise kann das Antimuster „Keine Governance“ vermieden werden. Der Abschnitt zum Definieren der Unternehmensrichtlinie enthält Informationen zu dieser Diskussion.
+
+**Keine Governance:** Organisationen stellten häufig auf die Cloud um, ohne eine klare Planung für die Governance durchzuführen. Nach kurzer Zeit führen dann Bedenken in Bezug auf Sicherheit, Kosten, Skalierung und Abläufe zu Diskussionen über ein Governancemodell sowie über Personal für die Prozesse, die für dieses Modell erforderlich sind. Ein wichtiger erster Schritt besteht immer darin, mit dieser Diskussion zu beginnen, bevor es zu diesen Bedenken kommt. Auf diese Weise kann das Antimuster „Keine Governance“ vermieden werden. Der Abschnitt zum Definieren der Unternehmensrichtlinie enthält Informationen zu dieser Diskussion.
 
 **Blockade der Governance:** Wenn Bedenken in Bezug auf Sicherheit, Kosten, Skalierung und Abläufe nicht beachtet werden, kann es passieren, dass Projekte und Geschäftsziele blockiert werden. Ohne richtige Governance entstehen Zweifel, Unsicherheiten und sogar Ängste bei Projektbeteiligten und Technikern. Verhindern Sie dies, indem Sie rechtzeitig Maßnahmen ergreifen. Die beiden Governanceleitfäden im Framework für die Cloudeinführung (Cloud Adoption Framework) dienen Ihnen als Hilfe beim Festlegen von ersten einschränkenden Richtlinien, um Angst, Unsicherheit und Zweifel zu reduzieren und die Governance im Laufe der Zeit weiterzuentwickeln. Sie können zwischen dem Leitfaden für komplexe Unternehmen und dem Standardunternehmensleitfaden wählen.
 
@@ -92,6 +93,7 @@ Ein weiterer grundlegender Unterschied zwischen einem Cloudverwalter und einem f
 **Cloudwächter:** Wenn sich die Governancemethoden verfestigen und von den Teams für die Cloudeinführung akzeptiert werden, kommt es zu einer geringfügigen Änderung der Rolle von Cloudarchitekten, die auf Governanceänderungen spezialisiert sind. Dies gilt auch für die Rolle des Teams für die Cloudgovernance. Meist fallen die besser entwickelten Methoden anderen Experten auf, die dann dazu beitragen können, den durch Governanceimplementierungen erzielten Schutz zu stärken.
 
 Der Unterschied ist zwar subtil, aber beim Erstellen einer governancebezogenen IT-Kultur von entscheidender Bedeutung. Ein Cloudverwaltungsberechtigter räumt das Chaos auf, das von innovativen Cloudarchitekten hinterlassen wird, und zwischen den beiden Rollen gibt es natürliche Reibung und gegensätzliche Ziele. Ein Cloudwächter hält die Cloud sicher, damit andere Cloudarchitekten mit weniger Chaos schneller vorankommen.
+
 Cloudwächter beginnen mit der Nutzung von anspruchsvolleren Governanceansätzen, um die Plattformbereitstellung zu beschleunigen und Teams beim eigenständigen Erfüllen ihrer Anforderungen an die Umgebung zu unterstützen, damit sie schneller vorankommen. Beispiele für diese anspruchsvolleren Funktionen sind in den inkrementellen Verbesserungen des Governance-MVP enthalten, z. B. in der Verbesserung der Sicherheitsbaseline.
 
 **Cloudbeschleuniger:** Cloudwächter und Cloudverwalter nutzen auf natürliche Weise Skripts und Governancetools, mit denen die Bereitstellung von Umgebungen, Plattformen oder auch Komponenten verschiedener Anwendungen beschleunigt wird. Die Aufbereitung und Freigabe dieser Skripts zusätzlich zu den zentralen Governanceaufgaben verschafft diesen Architekten viel Respekt im gesamten IT-Bereich.

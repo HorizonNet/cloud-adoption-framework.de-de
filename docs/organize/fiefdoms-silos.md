@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 2165eecbbe58f11bfa76438806b8bafa27f602c7
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 58167ace28964504758e9705c344b9af320146fb
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885132"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712254"
 ---
 # <a name="organizational-antipatterns-silos-and-fiefdoms"></a>Antimuster in Unternehmen: Silos und Machtbereiche
 

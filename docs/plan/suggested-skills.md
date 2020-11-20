@@ -7,12 +7,12 @@ ms.date: 03/23/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: b4464f127dc2df83b951940f35807fe8a1441f32
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 448de153e3c696ef3b0a988095da1760014d66c3
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776107"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712067"
 ---
 # <a name="get-started-on-a-skills-readiness-path"></a>Erste Schritte mit dem Pfad für die Qualifikationsbereitschaft
 
@@ -41,7 +41,8 @@ Jeder der zuvor genannten Lernpfade teilt die Lernmöglichkeiten über mehrere M
 ## <a name="microsoft-learn"></a>Microsoft Learn
 
 Microsoft Learn ist ein neuer Lernansatz. Die Bereitschaft zu den neuen Qualifikationen und Aufgaben, die mit der Cloudeinführung verbunden sind, entsteht nicht problemlos. Microsoft Learn bietet einen lohnenderen Ansatz für praktisches Lernen, der Ihnen hilft, Ihre Ziele schneller zu erreichen. Punkte sammeln, zu höheren Stufen aufsteigen und mehr erreichen.
-Nachfolgend finden Sie einige Beispiele für angepasste Lernpfade auf Microsoft Learn, die sich an der Planungsmethodik des Cloud Adoption Framework ausrichten:
+
+Beispiele für angepasste Lernpfade auf Microsoft Learn, die sich an der Planungsmethodik des Cloud Adoption Framework ausrichten:
 
 <!-- docutune:ignore "on premises" -->
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: da9e6f7964169406633329b80addcaab1f4c2f67
-ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
+ms.openlocfilehash: 081c1b4b49ab82472b406c0d9d69566cc20dcd13
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91108332"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713138"
 ---
 <!-- TODO: Rationalize name formats. -->
 
@@ -60,13 +60,13 @@ Die Benutzeridentitäten für den Azure-Kontobesitzer und den globalen Azure AD-
 
 Der Azure-Kontobesitzer verfügt über die Berechtigung zum Erstellen, Aktualisieren und Löschen von Abonnements:
 
-![Azure-Konto mit einem Azure-Kontobesitzer und einem globalem Azure AD-Administrator](../../_images/govern/design/governance-3-0.png)
-_Abbildung 1: Azure-Konto mit einem Azure-Kontobesitzer und einem globalem Azure AD-Administrator._
+![Ein Diagramm, das ein Azure-Konto mit einem Azure-Kontobesitzer und einem globalen Azure AD-Administrator zeigt.](../../_images/govern/design/governance-3-0.png)
+_Abbildung 1: Azure-Konto mit einem Azure-Kontobesitzer und einem globalem Azure AD-Administrator._
 
 Der globale Azure AD-**Administrator** verfügt über die Berechtigung zum Erstellen von Benutzerkonten:
 
-![Azure-Konto mit einem Azure-Kontobesitzer und einem globalem Azure AD-Administrator](../../_images/govern/design/governance-3-0a.png)
-_Abbildung 2: Der globale Azure AD-Administrator erstellt die erforderlichen Benutzerkonten im Mandanten._
+![Ein Diagramm, das zeigt, wie der globale Azure AD-Administrator die erforderlichen Benutzerkonten im Mandanten erstellt.](../../_images/govern/design/governance-3-0a.png)
+_Abbildung 2: Der globale Azure AD-Administrator erstellt die erforderlichen Benutzerkonten im Mandanten._
 
 Die ersten beiden Konten, **App1-Workloadbesitzer** und **App2-Workloadbesitzer**, sind jeweils einer Person in Ihrer Organisation zugeordnet, die für die Verwaltung einer Workload zuständig ist. Das Konto für den **Netzwerkbetrieb** befindet sich im Besitz der Person, die für die Ressourcen der freigegebenen Infrastruktur verantwortlich ist. Das Konto für den **Abonnementbesitzer** ist der Person zugeordnet, die für den Besitz von Abonnements verantwortlich ist.
 
@@ -107,7 +107,7 @@ _Abbildung 3: Ein Abonnement mit einem Dienstadministrator, dem die integrierte 
 
 An diesem Punkt ist jeder Workloadbesitzer in seiner eigenen Ressourcengruppe isoliert. Kein Workloadbesitzer oder dessen Teammitglieder verfügen über Verwaltungszugriff auf die Ressourcen in einer anderen Ressourcengruppe.
 
-![Abonnement mit Ressourcengruppen A und B](../../_images/govern/design/governance-2-10.png) Abbildung 4: Ein Abonnement mit zwei Workloadbesitzern, isoliert in ihrer eigenen Ressourcengruppe
+![Ein Diagramm, das ein Abonnement mit Ressourcengruppen A und B zeigt.](../../_images/govern/design/governance-2-10.png) Abbildung 4: Ein Abonnement mit zwei Workloadbesitzern, isoliert in ihrer eigenen Ressourcengruppe
 
 Dieses Modell ist ein Modell mit geringstmöglichen Rechten. Jedem Benutzer wird jeweils die richtige Berechtigung für den richtigen Ressourcenverwaltungsbereich zugewiesen.
 
@@ -120,15 +120,15 @@ Wir sehen uns nun das zweite Beispiel an, bei dem die Anzahl von Aufgaben reduzi
   ![Workloadbesitzer A erstellt Ressourcengruppe A](../../_images/govern/design/governance-2-12.png)
 1. Mit der integrierten Rolle „Besitzer“ wird **Workloadbesitzer A** die Berechtigung zum Verwalten des Zugriffs auf die Ressourcengruppe gewährt. **Workloadbesitzer A** fügt zwei **Mitwirkende für die Workload** hinzu und weist ihnen jeweils die integrierte Rolle „Leser“ zu.
   ![Workloadbesitzer A fügt Mitwirkende der Workload hinzu](../../_images/govern/design/governance-2-13.png)
-1. Nun fügt der **Dienstadministrator** den **Workloadbesitzer B** dem Abonnement mit der integrierten Rolle „Besitzer“ hinzu.
-  ![Dienstadministrator fügt Workloadbesitzer A dem Abonnement hinzu](../../_images/govern/design/governance-2-14.png)
+1. Der **Dienstadministrator** fügt nun den **Workloadbesitzer B** dem Abonnement mit der integrierten Rolle „Besitzer“ hinzu.
+  ![Dienstadministrator fügt Workloadbesitzer B dem Abonnement hinzu](../../_images/govern/design/governance-2-14.png)
 1. **Workloadbesitzer B** erstellt die **Ressourcengruppe B** und wird standardmäßig hinzugefügt. **Workloadbesitzer B** erbt wieder die integrierte Rolle „Besitzer“ aus dem Abonnementbereich.
   ![Workloadbesitzer B erstellt Ressourcengruppe B](../../_images/govern/design/governance-2-15.png)
 
 Beachten Sie bei diesem Modell Folgendes: Der **Dienstadministrator** hat weniger Aktionen als im ersten Beispiel durchgeführt, da der Verwaltungszugriff an die einzelnen Workloadbesitzer delegiert wurde.
 
-![Abonnement mit Ressourcengruppen A und B](../../_images/govern/design/governance-2-16.png)
-_Abbildung 5: Ein Abonnement mit einem Dienstadministrator und zwei Workloadbesitzern, denen jeweils die integrierte Rolle „Besitzer“ zugewiesen ist_
+![Ein Diagramm, das einen Dienstadministrator und zwei Workloadbesitzer für die Ressourcengruppen A und B zeigt.](../../_images/govern/design/governance-2-16.png)
+_Abbildung 5: Ein Abonnement mit einem Dienstadministrator und zwei Workloadbesitzern, denen jeweils die integrierte Rolle „Besitzer“ zugewiesen ist._
 
 Da sowohl **Workloadbesitzer A** als auch **Workloadbesitzer B** im Abonnementbereich der integrierten Rolle „Besitzer“ zugewiesen sind, haben sie jeweils die integrierte Rolle „Besitzer“ für die Ressourcengruppe des anderen geerbt. Sie haben also nicht nur Vollzugriff auf die Ressourcen des anderen, sondern können auch den Verwaltungszugriff auf die Ressourcengruppen des jeweils anderen delegieren. Beispiel: **Workloadbesitzer B** verfügt über Rechte zum Hinzufügen von anderen Benutzern zu **Ressourcengruppe A** und kann diesen Benutzern beliebige Rollen zuweisen, einschließlich der integrierten Rolle „Besitzer“.
 
@@ -176,15 +176,15 @@ Wir beginnen, indem wir die erste Option auswerten. Sie verwenden das Berechtigu
 1. Zwei weitere Ressourcengruppen werden bereitgestellt. Die erste hat den Namen `prod-rg`. Diese Ressourcengruppe ist auf die Umgebung für die Produktion ausgerichtet. Die zweite Ressourcengruppe hat den Namen `dev-rg` und ist auf die Umgebung für die Entwicklung ausgerichtet. Alle Ressourcen, die Produktionsworkloads zugeordnet sind, werden in der Umgebung für die Produktion bereitgestellt, und alle Ressourcen, die Entwicklungsworkloads zugeordnet sind, werden in der Umgebung für die Entwicklung bereitgestellt. In diesem Beispiel stellen Sie nur jeweils zwei Workloads für diese beiden Umgebungen bereit, sodass die Diensteinschränkungen für Azure-Abonnements hier nicht berührt werden. Berücksichtigen Sie, dass für jede Ressourcengruppe ein Grenzwert von 800 Ressourcen pro Ressourcengruppe gilt. Wenn Sie damit fortfahren, jeder Ressourcengruppe Workloads hinzuzufügen, erreichen Sie letztendlich diesen Grenzwert.
   ![Erstellen von Ressourcengruppen](../../_images/govern/design/governance-3-2.png)
 1. Der erste **Workloadbesitzer** sendet eine Anforderung an den **Dienstadministrator des Abonnements** und wird den einzelnen Ressourcengruppen der Umgebung für die Entwicklung und Produktion mit der Rolle **Mitwirkender** hinzugefügt. Wie bereits beschrieben, kann der Benutzer mit der Rolle **Mitwirkender** alle Vorgänge durchführen, mit Ausnahme der Zuweisung einer Rolle zu einem anderen Benutzer. Der erste **Workloadbesitzer** kann jetzt die Ressourcen erstellen, die seiner Workload zugeordnet sind.
-  ![Hinzufügen von Mitwirkenden](../../_images/govern/design/governance-3-3.png)
+  ![Ein Diagramm, das den ersten Workloadbesitzer beim Erstellen virtueller Netzwerke und beim Anwenden der Umgebung sowie von „Verwaltet von“-Tags auf alle Ressourcen zeigt.](../../_images/govern/design/governance-3-3.png)
 1. Der erste **Workloadbesitzer** erstellt ein virtuelles Netzwerk in den beiden Ressourcengruppen mit jeweils einem VM-Paar. Der erste **Workloadbesitzer** wendet die Tags `environment` und `managedBy` auf alle Ressourcen an. Beachten Sie, dass laut Zähler für die Diensteinschränkung in Azure jetzt noch 997 weitere virtuelle Netzwerke zulässig sind.
   ![Erstellen von virtuellen Netzwerken](../../_images/govern/design/governance-3-4.png)
 1. Keines der virtuellen Netzwerke verfügt nach der Erstellung über eine Verbindung mit der lokalen Umgebung. Bei diesem Architekturtyp muss für jedes virtuelle Netzwerk ein Peering mit dem `hub-vnet` in der Umgebung **Freigegebene Infrastruktur** eingerichtet werden. Beim VNet-Peering wird eine Verbindung zwischen zwei separaten virtuellen Netzwerken hergestellt, sodass dazwischen Netzwerkdatenverkehr fließen kann. Beachten Sie, dass das VNet-Peering nicht automatisch transitiv ist. Ein Peering muss jeweils in beiden virtuellen Netzwerken angegeben werden, für die die Verbindung hergestellt wird. Falls nur für eines der virtuellen Netzwerke ein Peering angegeben ist, dann ist die Verbindung unvollständig. Um diesen Effekt darzustellen, gibt der erste **Workloadbesitzer** ein Peering zwischen `prod-vnet` und `hub-vnet` an. Das erste Peering wird erstellt, aber es fließt kein Datenverkehr, da das entsprechende Peering von `hub-vnet` zu `prod-vnet` noch nicht angegeben wurde. Der erste **Workloadbesitzer** wendet sich an den Benutzer für den **Netzwerkbetrieb** und fordert das Gegenstück für die Peeringverbindung an.
-  ![Erstellen einer Peeringverbindung](../../_images/govern/design/governance-3-5.png)
+  ![Diagramm, das die Erstellung einer Peeringverbindung zeigt.](../../_images/govern/design/governance-3-5.png)
 1. Der Benutzer für den **Netzwerkbetrieb** überprüft die Anforderung, genehmigt sie und gibt dann das Peering in den Einstellungen für das `hub-vnet` an. Die Erstellung der Peeringverbindung ist jetzt abgeschlossen, und der Netzwerkdatenverkehr fließt zwischen den beiden virtuellen Netzwerken.
-  ![Erstellen einer Peeringverbindung](../../_images/govern/design/governance-3-6.png)
+  ![Ein Diagramm, das die Genehmigung der Anforderung und die Angabe der Peeringeinstellungen zeigt.](../../_images/govern/design/governance-3-6.png)
 1. Nun sendet ein zweiter **Workloadbesitzer** eine Anforderung an den **Dienstadministrator des Abonnements** und wird den vorhandenen Ressourcengruppen der Umgebungen für die **Produktion** und **Entwicklung** mit der Rolle **Mitwirkender** hinzugefügt. Der zweite **Workloadbesitzer** verfügt in allen Ressourcengruppen jeweils über dieselben Berechtigungen für alle Ressourcen wie der erste **Workloadbesitzer**.
-  ![Hinzufügen von Mitwirkenden](../../_images/govern/design/governance-3-7.png)
+  ![Ein Diagramm, das zeigt, wie der zweite Workloadbesitzer den Ressourcengruppen hinzugefügt wird.](../../_images/govern/design/governance-3-7.png)
 1. Der zweite **Workloadbesitzer** erstellt ein Subnetz im virtuellen Netzwerk `prod-vnet` und fügt dann zwei virtuelle Computer hinzu. Der zweite **Workloadbesitzer** wendet die Tags `environment` und `managedBy` auf die einzelnen Ressourcen an.
   ![Erstellen von Subnetzen](../../_images/govern/design/governance-3-8.png)
 
@@ -199,15 +199,15 @@ Dies bedeutet, dass der **App2-Workloadbesitzer** dazu berechtigt war, sein eige
 Als Nächstes sehen wir uns ein einzelnes Abonnement mit mehreren Ressourcengruppen für unterschiedliche Umgebungen und Workloads an. Beachten Sie, dass die Ressourcen für die einzelnen Umgebungen im vorherigen Beispiel leicht identifizierbar waren, da sie sich in derselben Ressourcengruppe befunden haben. Nachdem diese Gruppierung nun nicht mehr vorhanden ist, müssen Sie eine Namenskonvention für Ressourcengruppen nutzen, um diese Funktionalität bereitzustellen.
 
 1. Die Ressourcen für die **freigegebene Infrastruktur** verfügen bei diesem Modell weiterhin über eine separate Ressourcengruppe. Hier ändert sich also nichts. Für jede Workload sind zwei Ressourcengruppen erforderlich: jeweils eine für die Umgebung für die **Entwicklung** und die **Produktion**. Für die erste Workload erstellt das **Abonnementbesitzer**-Konto zwei Ressourcengruppen. Sie heißen `app1-prod-rg` und `app1-dev-rg`. Wie bereits beschrieben, wird für die Ressourcen mit dieser Namenskonvention angegeben, dass sie der ersten Workload `app1` und entweder der Umgebung **Entwicklung** oder **Produktion** zugeordnet sind. Das **Abonnementbesitzer**-Konto fügt den **App1-Workloadbesitzer** der Ressourcengruppe mit der Rolle **Mitwirkender** hinzu.
-  ![Hinzufügen von Mitwirkenden](../../_images/govern/design/governance-3-12.png)
+  ![Ein Diagramm, das das Hinzufügen der Ressourcengruppen „App 1 prod r g“ und „App 1 dev r g“ zeigt.](../../_images/govern/design/governance-3-12.png)
 2. Ähnlich wie im ersten Beispiel stellt der **App1-Workloadbesitzer** ein virtuelles Netzwerk mit dem Namen `app1-prod-vnet` in der Umgebung für die **Produktion** und ein weiteres mit dem Namen `app1-dev-vnet` in der Umgebung für die **Entwicklung** bereit. Der **App1-Workloadbesitzer** sendet eine Anforderung an den Benutzer für den **Netzwerkbetrieb**, um eine Peeringverbindung zu erstellen. Beachten Sie Folgendes: Der **App1-Workloadbesitzer** fügt die gleichen Tags wie im ersten Beispiel hinzu, und der Grenzwertzähler wurde auf 997 virtuelle Netzwerke verringert, die für das Abonnement verbleiben.
-  ![Erstellen einer Peeringverbindung](../../_images/govern/design/governance-3-13.png)
+  ![Ein Diagramm, das die Bereitstellung der virtuellen Netzwerke „App 1 prod v net“ und „App 1 dev v net“ zeigt.](../../_images/govern/design/governance-3-13.png)
 3. Das **Abonnementbesitzer**-Konto erstellt jetzt zwei Ressourcengruppen für den **App2-Workloadbesitzer**. Es werden die gleichen Konventionen wie für den **App1-Workloadbesitzer** befolgt, und die Ressourcengruppen erhalten die Namen `app2-prod-rg` und `app2-dev-rg`. Das **Abonnementbesitzer**-Konto fügt den **App2-Workloadbesitzer** den einzelnen Ressourcengruppen mit der Rolle **Mitwirkender** hinzu.
-  ![Hinzufügen von Mitwirkenden](../../_images/govern/design/governance-3-14.png)
+  ![Ein Diagramm, das das Hinzufügen der Ressourcengruppen „App 2 prod r g“ und „App 2 dev r g“ zeigt.](../../_images/govern/design/governance-3-14.png)
 4. Das **App2-Workloadbesitzer**-Konto stellt virtuelle Netzwerke und virtuelle Computer für die Ressourcengruppen mit den gleichen Namenskonventionen bereit. Tags werden hinzugefügt, und der Grenzwertzähler wurde auf 995 virtuelle Netzwerke verringert, die für das Abonnement verbleiben.
   ![Bereitstellen von virtuellen Netzwerken und VMs](../../_images/govern/design/governance-3-15.png)
 5. Das **App2-Workloadbesitzer**-Konto sendet eine Anforderung an den **Benutzer für den Netzwerkbetrieb**, um für `app2-prod-vnet` das Peering mit `hub-vnet` herzustellen. Der Benutzer für den **Netzwerkbetrieb** erstellt die Peeringverbindung.
-  ![Erstellen einer Peeringverbindung](../../_images/govern/design/governance-3-16.png)
+  ![Ein Diagramm, das das Peering des „App 2 prod v net“ mit dem „Hub v net“ zeigt.](../../_images/govern/design/governance-3-16.png)
 
 Das sich ergebende Verwaltungsmodell ähnelt dem Modell aus dem ersten Beispiel, aber es gibt auch einige wichtige Unterschiede:
 
@@ -220,11 +220,11 @@ Wir sehen uns jetzt ein Modell für die Ressourcenverwaltung an, bei dem mehrere
 
 1. Bei diesem Modell gibt es drei Abonnements: **Freigegebene Infrastruktur**, **Produktion** und **Entwicklung**. Für diese drei Abonnements ist jeweils ein Abonnementbesitzer erforderlich, und in dem einfachen Beispiel verwenden Sie für alle drei das gleiche Benutzerkonto. Die Ressourcen für **Freigegebene Infrastruktur** werden auf ähnliche Weise wie in den ersten beiden Beispielen weiter oben verwaltet. Die erste Workload wird der Ressourcengruppe `app1-rg` in der Umgebung **Produktion** und der Ressourcengruppe gleichen Namens in der Umgebung **Entwicklung** zugeordnet. Das **App1-Workloadbesitzer**-Konto wird den Ressourcengruppen jeweils mit der Rolle **Mitwirkender** hinzugefügt.
 
-    ![Hinzufügen von Mitwirkenden](../../_images/govern/design/governance-3-17.png)
+    ![Ein Diagramm, das zeigt, wie die freigegebenen Infrastrukturressourcen verwaltet werden.](../../_images/govern/design/governance-3-17.png)
 
 2. Wie in den obigen Beispielen auch, erstellt der **App1-Workloadbesitzer** die Ressourcen und fordert die Peeringverbindung mit dem virtuellen Netzwerk **Freigegebene Infrastruktur** an. Da **App1-Workloadbesitzer**-Konto fügt nur das Tag `managedBy` hinzu, da das Tag `environment` nicht mehr benötigt wird. Die Ressourcen für die einzelnen Umgebungen sind jetzt also unter demselben **Abonnement** gruppiert, und das Tag `environment` ist überflüssig. Der Grenzwertzähler wird auf 999 verbleibende virtuelle Netzwerke verringert.
 
-    ![Erstellen einer Peeringverbindung](../../_images/govern/design/governance-3-18.png)
+    ![Ein Diagramm, das zeigt, dass die Ressourcen für die einzelnen Umgebungen jetzt im selben Abonnement gruppiert sind.](../../_images/govern/design/governance-3-18.png)
 
 3. Abschließend wiederholt das **Abonnementbesitzer**-Konto den Prozess für die zweite Workload und fügt die Ressourcengruppen mit dem **App2-Workloadbesitzer** in der Rolle **Mitwirkender** hinzu. Der Grenzwertzähler für die einzelnen Umgebungsabonnements wird auf 998 verbleibende virtuelle Netzwerke verringert.
 

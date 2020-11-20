@@ -1,23 +1,22 @@
 ---
 title: MLOps mit Azure Machine Learning
-description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um sich mit den verschiedenen Übergängen vertraut zu machen, die erfolgen müssen, um die cloudbasierte Betriebsverwaltung zu ermöglichen.
+description: Informationen zu Prinzipen und Methoden von Machine Learning-Vorgängen (MLOps), die die Effizienz von Workflows wie Continuous Integration, Zustellung und Bereitstellung steigern.
 author: v-hanki
 ms.author: janet
 ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 4cbc51385cec6ccde4eaa500a7c62425d5e060a4
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: ab0841311b1f532b9a79269f1fd91650de5c6378
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571302"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94711727"
 ---
 # <a name="machine-learning-operations-with-azure-machine-learning"></a>Machine Learning-Vorgänge mit Azure Machine Learning
 
-Machine Learning-Vorgänge (MLOps) basieren auf den DevOps-Prinzipien und -Methoden, die die Effizienz von Workflows wie fortlaufende Integration, Zustellung und Bereitstellung steigern.
-MLOps wendet diese Prinzipien auf den Machine Learning-Prozess mit folgendem Ziel an:
+Machine Learning-Vorgänge (MLOps) basieren auf den DevOps-Prinzipien und -Methoden, die die Effizienz von Workflows wie fortlaufende Integration, Zustellung und Bereitstellung steigern. MLOps wendet diese Prinzipien auf den Machine Learning-Prozess mit folgendem Ziel an:
 
 - Schneller experimentieren und Modelle entwickeln.
 - Schnellere Bereitstellung von Modellen für die Produktion.
@@ -25,13 +24,13 @@ MLOps wendet diese Prinzipien auf den Machine Learning-Prozess mit folgendem Zie
 
 Azure Machine Learning bietet die folgenden MLOps-Features:
 
-- **Erstellen reproduzierbarer Pipelines**. Mit Machine Learning-Pipelines können Sie wiederholbare und wiederverwendbare Schritte für Ihre Datenaufbereitungs-, Trainings- und Bewertungsprozesse definieren.
-- **Erstellen Sie wiederverwendbare Softwareumgebungen**  für das Training und die Bereitstellung von Modellen.
-- **Registrieren, Verpacken und Bereitstellen von Modellen von überall aus**. Sie können die zugehörigen Metadaten nachverfolgen, die für die Verwendung des Modells erforderlich sind.
-- **Erfassung der Governancedaten für den End-to-End-Lebenszyklus**. Die protokollierten Informationen können umfassen, wer die Modelle veröffentlicht, warum Änderungen vorgenommen wurden und wann die Modelle bereitgestellt oder in der Produktionsumgebung verwendet wurden.
-- **Benachrichtigen und Warnen bei Ereignissen im Lebenszyklus**. Beispielsweise können Sie Warnungen für die Durchführung von Experimenten, die Registrierung und Implementierung von Modellen sowie die Erkennung von Datendrift abrufen.
-- **Überwachen von Anwendungen auf betriebliche und Machine Learning-Probleme**. Vergleichen Sie Modelleingaben zwischen Trainings- und Rückschlussphase, untersuchen Sie modellspezifische Metriken, und stellen Sie Überwachungsfunktionen und Warnungen für Ihre Machine Learning-Infrastruktur bereit.
-- **Automatisieren des End-to-End-Machine Learning-Lebenszyklus mit Azure Machine Learning und Azure Pipelines**. Mithilfe von Pipelines können Sie Modelle regelmäßig aktualisieren, neue Modelle testen und fortlaufende Rollouts von neuen Machine Learning-Modellen zusätzlich zu Ihren anderen Anwendungen und Diensten durchführen.
+- **Erstellen reproduzierbarer Pipelines.** Mit Machine Learning-Pipelines können Sie wiederholbare und wiederverwendbare Schritte für Ihre Datenaufbereitungs-, Trainings- und Bewertungsprozesse definieren.
+- **Erstellen Sie wiederverwendbare Softwareumgebungen** für das Training und die Bereitstellung von Modellen.
+- **Registrieren, Verpacken und Bereitstellen von Modellen von überall aus.** Sie können die zugehörigen Metadaten nachverfolgen, die für die Verwendung des Modells erforderlich sind.
+- **Erfassung der Governancedaten für den End-to-End-Lebenszyklus.** Die protokollierten Informationen können umfassen, wer die Modelle veröffentlicht, warum Änderungen vorgenommen wurden und wann die Modelle bereitgestellt oder in der Produktionsumgebung verwendet wurden.
+- **Benachrichtigen und Warnen bei Ereignissen im Lebenszyklus.** Beispielsweise können Sie Warnungen für die Durchführung von Experimenten, die Registrierung und Implementierung von Modellen sowie die Erkennung von Datendrift abrufen.
+- **Überwachen von Anwendungen auf betriebliche und Machine Learning-Probleme.** Vergleichen Sie Modelleingaben zwischen Trainings- und Rückschlussphase, untersuchen Sie modellspezifische Metriken, und stellen Sie Überwachungsfunktionen und Warnungen für Ihre Machine Learning-Infrastruktur bereit.
+- **Automatisieren des End-to-End-Machine Learning-Lebenszyklus mit Azure Machine Learning und Azure Pipelines.** Mithilfe von Pipelines können Sie Modelle regelmäßig aktualisieren, neue Modelle testen und fortlaufende Rollouts von neuen Machine Learning-Modellen zusätzlich zu Ihren anderen Anwendungen und Diensten durchführen.
 
 ## <a name="best-practices-for-mlops-with-azure-machine-learning"></a>Bewährte Methoden für MLOps mit Azure Machine Learning
 

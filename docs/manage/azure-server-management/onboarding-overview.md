@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: de26df188d2e6e240b07abde8c284bf57cb232db
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: c77548023e11be6984051c1d002d5198b0649a42
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84992844"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94711795"
 ---
 # <a name="phase-2-onboarding-azure-server-management-services"></a>Phase 2: Onboarding für Azure-Serververwaltungsdienste
 
@@ -25,9 +25,9 @@ Nachdem Sie mit den [Tools](./tools-services.md) und der [Planung](./prerequisit
 
 Dieser Abschnitt im Leitfaden behandelt die folgenden Onboardingprozesse sowohl für virtuelle Azure-Computer als auch für lokale Server:
 
-- **Aktivieren von Verwaltungsdiensten auf einem einzelnen virtuellen Computer zur Auswertung über das Portal**. Verwenden Sie diesen Prozess, um sich mit den Azure-Serververwaltungsdiensten vertraut zu machen.
-- **Konfigurieren von Verwaltungsdiensten für ein Abonnement über das Portal**. Dieser Prozess hilft Ihnen, die Azure-Umgebung so zu konfigurieren, dass alle neu bereitgestellten virtuellen Computer automatisch Verwaltungsdienste nutzen. Verwenden Sie diesen Ansatz, wenn Sie die Azure-Portalumgebung den Skripts und Befehlszeilen vorziehen.
-- **Konfigurieren von Verwaltungsdiensten für ein Abonnement über Azure Automation**. Dieser Prozess ist vollständig automatisiert. Erstellen Sie einfach ein Abonnement und die Skripts konfigurieren die Umgebung so, dass sie Verwaltungsdienste für alle neu bereitgestellten virtuellen Computer verwenden. Verwenden Sie diesen Ansatz, wenn Sie mit der Verwendung von PowerShell-Skripts und Azure Resource Manager-Vorlagen vertraut sind oder deren Verwendung erlernen möchten.
+- **Aktivieren von Verwaltungsdiensten auf einem einzelnen virtuellen Computer zur Auswertung über das Portal.** Verwenden Sie diesen Prozess, um sich mit den Azure-Serververwaltungsdiensten vertraut zu machen.
+- **Konfigurieren von Verwaltungsdiensten für ein Abonnement über das Portal.** Dieser Prozess hilft Ihnen, die Azure-Umgebung so zu konfigurieren, dass alle neu bereitgestellten virtuellen Computer automatisch Verwaltungsdienste nutzen. Verwenden Sie diesen Ansatz, wenn Sie die Azure-Portalumgebung den Skripts und Befehlszeilen vorziehen.
+- **Konfigurieren von Verwaltungsdiensten für ein Abonnement über Azure Automation.** Dieser Prozess ist vollständig automatisiert. Erstellen Sie einfach ein Abonnement und die Skripts konfigurieren die Umgebung so, dass sie Verwaltungsdienste für alle neu bereitgestellten virtuellen Computer verwenden. Verwenden Sie diesen Ansatz, wenn Sie mit der Verwendung von PowerShell-Skripts und Azure Resource Manager-Vorlagen vertraut sind oder deren Verwendung erlernen möchten.
 
 Die Verfahren für die einzelnen Ansätze sind unterschiedlich.
 

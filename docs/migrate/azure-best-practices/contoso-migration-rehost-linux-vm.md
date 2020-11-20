@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e18fabf06701de03b2ec012cbe85e658071fda5e
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 4738ff138df700047cffb478518d40a8aa6d4ff0
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89602463"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713257"
 ---
 <!-- cSpell:ignore OSTICKETWEB OSTICKETMYSQL OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc osTicket binlog systemctl NSGs distros -->
 
@@ -85,7 +85,7 @@ Contoso wird den Migrationsprozess wie folgt abschließen:
 
 | Dienst | BESCHREIBUNG | Kosten |
 | --- | --- | --- |
-| [Azure Migrate: Servermigration](/azure/migrate/contoso-migration-rehost-linux-vm) | Der Dienst orchestriert und verwaltet die Migration von Ihren lokalen Anwendungen und Workloads und von VM-Instanzen für Amazon Web Services (AWS)/Google Cloud Platform (GCP). | Während der Replikation in Azure fallen Gebühren für Azure Storage an. Es werden Azure-VMs erstellt, und Gebühren fallen an, sobald die Migration erfolgt. Informieren Sie sich über die [Gebühren und Preise](https://azure.microsoft.com/pricing/details/azure-migrate). |
+| [Azure Migrate: Servermigration](/azure/migrate/contoso-migration-rehost-linux-vm) | Der Dienst orchestriert und verwaltet die Migration von Ihren lokalen Anwendungen und Workloads sowie von VM-Instanzen für Amazon Web Services (AWS) und Google Cloud Platform (GCP). | Während der Replikation in Azure fallen Gebühren für Azure Storage an. Es werden Azure-VMs erstellt, und Gebühren fallen an, sobald die Migration erfolgt. Informieren Sie sich über die [Gebühren und Preise](https://azure.microsoft.com/pricing/details/azure-migrate). |
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -175,8 +175,8 @@ Nachdem die Ermittlung abgeschlossen ist, beginnen sie mit der Replikation von V
 
 7. Wählen Sie unter **Azure-Hybridvorteil**
 
-    - die Option **Nein** aus, falls Sie den Azure-Hybridvorteil nicht anwenden möchten. Wählen Sie **Weiter**aus.
-    - Wählen Sie **Ja** aus, wenn Sie über Windows Server-Computer verfügen, die durch aktive Software Assurance- oder Windows Server-Abonnements abgedeckt sind, und den Vorteil auf die zu migrierenden Computer anwenden möchten. Wählen Sie **Weiter**aus.
+    - die Option **Nein** aus, falls Sie den Azure-Hybridvorteil nicht anwenden möchten. Wählen Sie **Weiter** aus.
+    - Wählen Sie **Ja** aus, wenn Sie über Windows Server-Computer verfügen, die durch aktive Software Assurance- oder Windows Server-Abonnements abgedeckt sind, und den Vorteil auf die zu migrierenden Computer anwenden möchten. Wählen Sie **Weiter** aus.
 
 8. Überprüfen Sie unter **Compute** den VM-Namen, die Größe, den Typ des Betriebssystemdatenträgers und die Verfügbarkeitsgruppe. Die VMs müssen die [Azure-Anforderungen](/azure/migrate/migrate-support-matrix-vmware#vmware-requirements) erfüllen.
 

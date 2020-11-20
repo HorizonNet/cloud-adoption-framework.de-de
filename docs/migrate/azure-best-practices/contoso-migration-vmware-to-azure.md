@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4fb22a8ac71dd7decb6111a3ad196d1e97957abe
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: f68fe3adc1807926ab97ebbcf0b47f5eab960f8f
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775342"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713293"
 ---
 <!-- docutune:casing "HCX Bulk Migration" "HCX Cold Migration" -->
 
@@ -31,11 +31,11 @@ In diesem Artikel wird Azure VMware Solution von Contoso verwendet, um eine pri
 
 Das IT-Team von Contoso definiert in enger Zusammenarbeit mit Geschäftspartnern die geschäftlichen Faktoren, die für eine VMware-Migration zu Azure sprechen. Diese Treiber können Folgendes umfassen:
 
-- **Verlegung oder Schließung von Rechenzentren**: Nahtlose Migration von VMware-basierten Workloads, wenn vorhandene Rechenzentren konsolidiert oder außer Betrieb genommen werden.
-- **Notfallwiederherstellung und Geschäftskontinuität**: Verwendung eines in Azure bereitgestellten VMware-Stapels als primären oder sekundären Standort für die bedarfsgesteuerte Notfallwiederherstellung für die lokale Rechenzentrumsinfrastruktur.
-- **Anwendungsmodernisierung**: Nutzung des Azure-Ökosystems zum Modernisieren der Anwendungen von Contoso, ohne VMware-basierte Umgebungen neu erstellen zu müssen.
-- **Implementieren von DevOps**: Nutzung von Azure DevOps-Toolketten in VMware-Umgebungen und Modernisierung von Anwendungen mit der selbst gewählten Geschwindigkeit.
-- **Sicherstellen der Betriebskontinuität**: Erneute Bereitstellung von vSphere-basierten Anwendungen in Azure ohne Hypervisorkonvertierungen und Refactoring von Anwendungen. Erweiterte Unterstützung für ältere Anwendungen, die unter Windows und SQL Server ausgeführt werden.
+- **Verlegung oder Schließung von Rechenzentren:** Nahtlose Migration von VMware-basierten Workloads, wenn vorhandene Rechenzentren konsolidiert oder außer Betrieb genommen werden.
+- **Notfallwiederherstellung und Business Continuity:** Verwendung eines in Azure bereitgestellten VMware-Stapels als primären oder sekundären Standort für die bedarfsgesteuerte Notfallwiederherstellung für die lokale Rechenzentrumsinfrastruktur.
+- **Anwendungsmodernisierung:** Nutzung des Azure-Ökosystems zum Modernisieren der Anwendungen von Contoso, ohne VMware-basierte Umgebungen neu erstellen zu müssen.
+- **Implementieren von DevOps:** Nutzung von Azure DevOps-Toolketten in VMware-Umgebungen und Modernisierung von Anwendungen mit der selbst gewählten Geschwindigkeit.
+- **Sicherstellen der Betriebskontinuität:** Erneute Bereitstellung von vSphere-basierten Anwendungen in Azure ohne Hypervisorkonvertierungen und Refactoring von Anwendungen. Erweiterte Unterstützung für ältere Anwendungen, die unter Windows und SQL Server ausgeführt werden.
 
 ## <a name="goals-for-migrating-vmware-on-premises-to-vmware-in-the-cloud"></a>Ziele für die Migration von VMware aus der lokalen Umgebung zu VMware in der Cloud
 

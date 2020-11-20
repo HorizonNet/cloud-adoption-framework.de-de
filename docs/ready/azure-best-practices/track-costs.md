@@ -7,12 +7,12 @@ ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f8f7cc11e89be655f736bbc50865c8e46caab48b
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 91a3b4b81bfa9e0847e5f44736e918e145d97d22
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776515"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712951"
 ---
 # <a name="track-costs-across-business-units-environments-or-projects"></a>Nachverfolgen von Kosten für Geschäftseinheiten, Umgebungen oder Projekte
 
@@ -71,7 +71,7 @@ Die generell empfohlene bewährte Methode besteht darin, ein Modell mit geringst
 
 ### <a name="roles"></a>Rollen
 
-<!-- docutune:casing Owner Contributor Reader "Cost Management Contributor" "Cost Management Reader" -->
+<!-- docutune:casing Owner Contributor Reader -->
 
 Azure Cost Management und Abrechnung unterstützt für jeden der Bereiche die folgenden integrierten Rollen:
 
@@ -117,7 +117,7 @@ Azure Cost Management und Abrechnung ist ein gut dokumentiertes Tool zum Festleg
 
 ### <a name="get-started-with-azure-cost-management-and-billing"></a>Erste Schritte mit Azure Cost Management und Abrechnung
 
-Wenn Sie mit der Verwendung von Azure Cost Management und Abrechnung beginnen möchten, lesen Sie [Optimieren der Cloudinvestitionen mit Azure Cost Management und Abrechnung](/azure/cost-management-billing/costs/cost-mgt-best-practices?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json).
+Wenn Sie mit der Verwendung von Azure Cost Management und Abrechnung beginnen möchten, lesen Sie [Optimieren der Cloudinvestitionen mit Azure Cost Management und Abrechnung](/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json).
 
 ### <a name="use-azure-cost-management-and-billing"></a>Verwenden von Azure Cost Management und Abrechnung
 

@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: csu
-ms.openlocfilehash: ded26770595abe0d416f55923f59a70a8568bff7
-ms.sourcegitcommit: 8e5b670151cc8da0934037e23a1ef1609c6b2cc2
+ms.openlocfilehash: 928ba549faee14142aeb8bd12b796bdc3bf6307a
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94378884"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713920"
 ---
 # <a name="transition-existing-azure-environments-to-enterprise-scale"></a>Übertragen bestehender Azure-Umgebungen auf Unternehmensniveau
 
-Wir sind uns bewusst, dass die meisten Organisationen über einen bestehenden Fußabdruck in Azure, ein oder mehrere Abonnements und möglicherweise eine bestehende Struktur eigener Verwaltungsgruppen verfügen. Je nach ihren anfänglichen Geschäftsanforderungen und -szenarien wurden möglicherweise Azure-Ressourcen wie z. B. hybride Konnektivität (z. B. mit Site-to-Site-VPN und/oder ExpressRoute) bereitgestellt.  
+Wir sind uns bewusst, dass die meisten Organisationen über einen bestehenden Fußabdruck in Azure, ein oder mehrere Abonnements und möglicherweise eine bestehende Struktur eigener Verwaltungsgruppen verfügen. Je nach ihren anfänglichen Geschäftsanforderungen und -szenarien wurden möglicherweise Azure-Ressourcen wie z. B. hybride Konnektivität (z. B. mit Site-to-Site-VPN und/oder ExpressRoute) bereitgestellt.
 
 Dieser Artikel hilft Organisationen, den richtigen Weg für die Übertragung bestehender Azure-Umgebung auf Unternehmensniveau zu finden. In diesem Artikel werden auch Überlegungen zur Verschiebung von Ressourcen in Azure (z. B. Verschieben eines Abonnements aus einer bestehenden Verwaltungsgruppe in eine andere Verwaltungsgruppe) beschrieben, die Ihnen bei der Bewertung und Planung der Übertragung Ihrer bestehenden Azure-Umgebung in Zielzonen auf Unternehmensniveau helfen.
 
@@ -28,13 +28,13 @@ Einige Ressourcen in Azure können nach der Erstellung verschoben werden, und es
 | Bereich | Destination | Vorteile | Nachteile |
 |--|--|--|--|
 | Ressourcen in Ressourcengruppen | Können in eine neue Ressourcengruppe in demselben oder einem anderen Abonnement verschoben werden  | Ermöglicht das Ändern der Ressourcenkomposition in einer Ressourcengruppe nach der Bereitstellung | – Wird nicht von allen Ressourcentypen unterstützt <br> – Für einige Ressourcentypen gelten bestimmte Einschränkungen oder Anforderungen <br> – Die Ressourcen-IDs werden aktualisiert und wirken sich auf die vorhandene Überwachung, auf Warnungen und Vorgänge auf der Steuerungsebene aus <br> – Ressourcengruppen sind während der Dauer der Verschiebung gesperrt <br> – Erfordert die Bewertung der Richtlinien und RBAC-Vorgänge vor und nach dem Verschieben |
-| Abonnements in einem Mandanten  | Können in verschiedene Verwaltungsgruppen und verschiedene Mandanten verschoben werden | Keine Auswirkung auf vorhandene Ressourcen innerhalb des Abonnements, da keine Ressourcen-IDs geändert werden | Bewertung der Richtlinien und RBAC-Vorgänge vor und nach dem Verschieben erforderlich |
+| Abonnements in einem Mandanten  | Können in verschiedene Verwaltungsgruppen und verschiedene Mandanten verschoben werden | Keine Auswirkung auf vorhandene Ressourcen innerhalb des Abonnements, da keine Ressourcen-ID-Werte geändert werden | Bewertung der Richtlinien und RBAC-Vorgänge vor und nach dem Verschieben erforderlich |
 
 Um zu verstehen, welche Verschiebungsstrategie Sie verwenden sollten, werden nachfolgend Beispiele für beide Strategien erläutert:
 
 ## <a name="subscription-move"></a>Abonnementverschiebung
 
-Häufige Anwendungsfälle für das Verschieben von Abonnements sind das Organisieren von Abonnements in Verwaltungsgruppen oder das Übertragen von Abonnements in einen neuen Azure Active Directory-Mandanten. Das Verschieben von Abonnements im Unternehmensumfang konzentriert sich auf das Verschieben von Abonnements in Verwaltungsgruppen. Das Verschieben eines Abonnements in einen neuen Mandanten dient hauptsächlich der [Übertragung des Abrechnungsbesitzes](https://docs.microsoft.com/azure/cost-management-billing/manage/billing-subscription-transfer). 
+Häufige Anwendungsfälle für das Verschieben von Abonnements sind das Organisieren von Abonnements in Verwaltungsgruppen oder das Übertragen von Abonnements in einen neuen Azure Active Directory-Mandanten. Das Verschieben von Abonnements im Unternehmensumfang konzentriert sich auf das Verschieben von Abonnements in Verwaltungsgruppen. Das Verschieben eines Abonnements in einen neuen Mandanten dient hauptsächlich der [Übertragung des Abrechnungsbesitzes](/azure/cost-management-billing/manage/billing-subscription-transfer).
 
 ### <a name="rbac-requirements"></a>RBAC-Anforderungen
 
@@ -66,7 +66,7 @@ Wenn Sie eine Ressourcenverschiebung durchführen, sind sowohl die Quell- als au
 
 ### <a name="before-you-move-resources"></a>Vor dem Verschieben von Ressourcen
 
-Vor einem Verschiebungsvorgang müssen Sie sicherstellen, dass die [Ressourcen im Bereich unterstützt werden](https://docs.microsoft.com/azure/azure-resource-manager/management/move-support-resources) und ihre Anforderungen und Abhängigkeiten bewerten. Das Verschieben eines virtuellen Peeringnetzwerks erfordert zum Beispiel, dass Sie das Peering des virtuellen Netzwerks zunächst deaktivieren und nach Abschluss des Verschiebevorgangs wieder aktivieren. Diese Deaktivieren/Reaktivieren-Abhängigkeit erfordert die Planung im Vorfeld, um die Auswirkungen auf vorhandene Workloads zu verstehen, die mit Ihren virtuellen Netzwerken verbunden sein können.
+Vor einem Verschiebungsvorgang müssen Sie sicherstellen, dass die [Ressourcen im Bereich unterstützt werden](/azure/azure-resource-manager/management/move-support-resources) und ihre Anforderungen und Abhängigkeiten bewerten. Das Verschieben eines virtuellen Peeringnetzwerks erfordert zum Beispiel, dass Sie das Peering des virtuellen Netzwerks zunächst deaktivieren und nach Abschluss des Verschiebevorgangs wieder aktivieren. Diese Deaktivieren/Reaktivieren-Abhängigkeit erfordert die Planung im Vorfeld, um die Auswirkungen auf vorhandene Workloads zu verstehen, die mit Ihren virtuellen Netzwerken verbunden sein können.
 
 ### <a name="post-move-operation"></a>Vorgang nach dem Verschieben
 

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2bb9a42a911e1a635c3b0c1e6d1b1585feb8cc5b
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 7662a72505d34db4f488b64dd18374eead09ceb6
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775240"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713087"
 ---
 <!-- docutune:casing Hanu Scalr ARO POC Y/N None/Some/Severe Rehost/Refactor/Rearchitect/Rebuild -->
 
@@ -162,8 +162,8 @@ Contoso verwendet Azure Migrate folgendermaßen:
 
 - In vCenter werden virtuelle Computer in Ordnern organisiert. Dies erleichtert Administratoren die Arbeit, wenn sie eine Bewertung für virtuelle Computer in einem bestimmten Ordner ausführen.
 - Contoso bewertet Abhängigkeiten zwischen Computern. Zu diesem Zweck müssen auf den VMs, die bewertet werden sollen, Agents installiert werden.
-  
-  Contoso verwendet automatisierte Skripts, um die erforderlichen Windows- oder Linux-Agents zu installieren. Mithilfe dieser Skripts kann Contoso eine Pushinstallation auf VMs innerhalb eines vCenter-Ordners ausführen.
+
+Contoso verwendet automatisierte Skripts, um die erforderlichen Windows- oder Linux-Agents zu installieren. Mithilfe dieser Skripts kann Contoso eine Pushinstallation auf VMs innerhalb eines vCenter-Ordners ausführen.
 
 #### <a name="database-tools"></a>Datenbanktools
 
@@ -329,7 +329,7 @@ Contoso verlässt sich auf Azure Security Center, um eine einheitliche Sicherhei
 
 Security Center bietet umfassende Einblicke in die Sicherheit von Cloudanwendungen in Azure sowie Kontrolle darüber. Contoso kann Bedrohungen frühzeitig erkennen und Maßnahmen ergreifen, um gegen sie vorzugehen. Außerdem kann das Unternehmen mithilfe des adaptiven Bedrohungsschutzes Risiken reduzieren.
 
-[Erfahren Sie mehr](https://azure.microsoft.com/services/security-center) über Security Center.
+Erfahren Sie mehr über [Security Center](https://azure.microsoft.com/services/security-center).
 
 ### <a name="monitoring"></a>Überwachung
 

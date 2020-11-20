@@ -1,5 +1,5 @@
 ---
-title: Migrieren von Apps von Mainframes zu Azure
+title: Migrieren von Anwendungen von Mainframes zu Azure
 description: Hier finden Sie eine technische Anleitung für den Umstieg von einer Mainframeplattform auf Azure mit Hyperscalecomputing und -speicher in einer auf Hochverfügbarkeit ausgelegten Umgebung.
 author: njray
 ms.author: v-nanra
@@ -7,13 +7,14 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 29e2e0c50fd201dd1bc0bd4498fd8351257dae02
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 609bbc646858368ee22b0a0aba00850dd659a00e
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775767"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712611"
 ---
+<!-- docutune:casing "Table 4" "Parallel Sysplex" CF Assembler "Demystifying Mainframe-to-Azure Migration" "ROSCOE Programming Facility" "RPF" "CA Librarian" CA-Panvalet -->
 <!-- cSpell:ignore vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
 
 # <a name="make-the-switch-from-mainframes-to-azure"></a>Wechseln von Mainframes zu Azure
@@ -32,7 +33,7 @@ Es gibt keine universelle Zuordnungsformel, um die Anzahl von virtuellen Prozess
 
 Eine kleine Organisation benötigt vielleicht weniger als 500 MIPS, wohingegen eine große Organisation in der Regel über 5.000 MIPS verwendet. Bei Kosten von 1.000 USD pro MIPS gibt eine große Organisation für die Bereitstellung einer Infrastruktur mit 5.000 MIPS etwa 5 Mio. USD pro Jahr aus. Die geschätzten jährlichen Kosten für eine typische Azure-Bereitstellung dieser Größenordnung betragen etwa ein Zehntel der Kosten für eine MIPS-Infrastruktur. Weitere Details dazu finden Sie im Whitepaper [Demystifying Mainframe-to-Azure Migration](https://azure.microsoft.com/resources/demystifying-mainframe-to-azure-migration) (Beseitigen von Irrtümern in Bezug auf die Migration von Mainframesystemen zu Azure) in Tabelle 4.
 
-Die exakte Berechnung des Verhältnisses von MIPS zu vCPUs bei Azure richtet sich nach dem CPU-Typ und der genauen Workload, die Sie ausführen möchten. Benchmarkstudien bieten jedoch eine gute Grundlage, um die Anzahl und Art der vCPUs zu schätzen, die Sie benötigen werden. Eine kürzlich in Zusammenarbeit mit HPE durchgeführte Benchmarkstudie mit einer z/OS-Referenzarchitektur ergab folgende Schätzungen:
+Die exakte Berechnung des Verhältnisses von MIPS zu vCPUs bei Azure richtet sich nach dem CPU-Typ und der genauen Workload, die Sie ausführen möchten. Benchmarkstudien bieten jedoch eine gute Grundlage, um die Anzahl und Art der vCPUs zu schätzen, die Sie benötigen werden. Eine kürzlich durchgeführte HPE zRef-Benchmarkstudie ergab folgende Schätzungen:
 
 - 288 MIPS pro auf HP ProLiant-Servern ausgeführtem Intel-basiertem Kern für Onlineaufträge (CICS, Customer Information Control System).
 
@@ -51,7 +52,7 @@ Im Vergleich dazu bietet Azure SLAs (Service Level Agreements, Vereinbarungen zu
 
 Azure sorgt für zusätzliche Verfügbarkeit durch Replizieren von Daten von mehreren Speichergeräten – entweder lokal oder in anderen geografischen Regionen. Sollte ein Ausfall in Azure auftreten, können Computeressourcen entweder auf lokaler oder auf regionaler Ebene auf die replizierten Daten zugreifen.
 
-Wenn Sie Azure-PaaS-Ressourcen (Platform-as-a-Service) wie [Azure SQL-Datenbank](/azure/sql-database/sql-database-technical-overview) und [Azure Cosmos-Datenbank](/azure/cosmos-db/introduction) verwenden, kann Azure automatisch ein Failover ausführen. Bei Verwendung von Azure-IaaS (Infrastructure-as-a-Service) wird das Failover von bestimmten Systemfunktionen ausgeführt, z.B. von Always On-Features, Failoverclusterinstanzen und Verfügbarkeitsgruppen in SQL Server.
+Wenn Sie Azure-PaaS-Ressourcen (Platform-as-a-Service) wie [Azure SQL-Datenbank](/azure/sql-database/sql-database-technical-overview) und [Azure Cosmos DB](/azure/cosmos-db/introduction) verwenden, kann Azure automatisch ein Failover ausführen. Bei Verwendung von Azure-IaaS (Infrastructure-as-a-Service) wird das Failover von bestimmten Systemfunktionen ausgeführt, z.B. von Always On-Features, Failoverclusterinstanzen und Verfügbarkeitsgruppen in SQL Server.
 
 ## <a name="scalability"></a>Skalierbarkeit
 

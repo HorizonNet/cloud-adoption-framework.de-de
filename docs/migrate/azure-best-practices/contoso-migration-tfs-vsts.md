@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: c91b6a66d176f19a24779561026fd6bd075b5dea
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: df88116b3e3041e68a183fa1586dede6e36ac63c
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775546"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713512"
 ---
 <!-- cSpell:ignore contosodev contosodevmigration contosomigration onmicrosoft visualstudio sourceconnectionstring smarthotelcontainer identitymaplog CONTOSOTFS DACPAC SQLDB SQLSERVERNAME INSTANCENAME sqlpackage SSDT azuredevopsmigration validateonly ImportType -->
 
@@ -24,7 +24,7 @@ In diesem Artikel wird gezeigt, wie das fiktive Unternehmen Contoso seine lokale
 
 Das IT-Führungsteam von Contoso arbeitet eng mit den jeweiligen Geschäftspartnern zusammen, um zukünftige Ziele zu identifizieren. Die Partner haben sich nicht im Detail mit Entwicklungstools und -technologien befasst, das Team hat jedoch die folgenden Punkte zusammengefasst:
 
-- **Software**: Unabhängig vom Kerngeschäft handelt es sich bei allen Unternehmen nun um Softwareunternehmen, einschließlich Contoso. Die Unternehmensführung ist interessiert daran, wie die IT das Unternehmen bei neuen Vorgehensweisen für Benutzer und neuen Erfahrungen seiner Kunden unterstützen kann.
+- **Software:** Unabhängig vom Kerngeschäft handelt es sich bei allen Unternehmen nun um Softwareunternehmen, einschließlich Contoso. Die Unternehmensführung ist interessiert daran, wie die IT das Unternehmen bei neuen Vorgehensweisen für Benutzer und neuen Erfahrungen seiner Kunden unterstützen kann.
 - **Effizienz**: Contoso muss Prozesse optimieren und unnötige Verfahren für Entwickler und Benutzer entfernen. So kann das Unternehmen im Hinblick auf die Anforderungen der Kunden effizienter Ergebnisse liefern. Das Unternehmen benötigt eine schnell agierende IT, die weder Zeit noch Geld verschwendet.
 - **Flexibilität**: Die IT-Abteilung von Contoso muss schneller auf geschäftliche Anforderungen reagieren, um in einer globalen Wirtschaft erfolgreich zu sein. Sie muss in der Lage sein, schneller auf Änderungen auf dem Markt zu reagieren. Die IT darf nicht im Weg stehen oder zum Geschäftshindernis werden.
 
@@ -129,7 +129,7 @@ Das Upgrade wird wie folgt durchgeführt:
      ![Screenshot des Product Backlog-Bereichs zum Überprüfen der Team Foundation Server-Installation](./media/contoso-migration-tfs-vsts/upgrade5.png)
 
 > [!NOTE]
-> Einige Team Foundation Server-Upgrades müssen den Featurekonfigurations-Assistenten ausführen, wenn das Upgrade abgeschlossen ist. [Weitere Informationen](/azure/devops/reference/configure-features-after-upgrade?utm_campaign=vstsdataimportguide&utm_medium=guide&utm_source=ms&view=vsts)
+> Einige Team Foundation Server-Upgrades müssen den Featurekonfigurations-Assistenten ausführen, wenn das Upgrade abgeschlossen ist. [Weitere Informationen](/azure/devops/reference/configure-features-after-upgrade?view=vsts)
 
 **Benötigen Sie weitere Hilfe?**
 
@@ -169,7 +169,7 @@ Die Contoso-Administratoren führen das Team Foundation Server-Migrationstool f�
 
 1. Die Administratoren geben im angezeigten Azure AD-Anmeldefenster die Anmeldeinformationen eines globalen Administratorbenutzers ein.
 
-     ![Screenshot des Azure AD-Anmeldefensters mit Administratoranmeldeinformationen](./media/contoso-migration-tfs-vsts/collection8.png)
+     ![Screenshot des Azure AD-Anmeldefensters mit Administratoranmeldeinformationen.](./media/contoso-migration-tfs-vsts/collection8.png)
 
 1. Die Überprüfung ist bestanden, was vom Tool bestätigt wird.
 
@@ -192,7 +192,7 @@ Nach Abschluss der Überprüfung können die Contoso-Administratoren mithilfe de
 
 1. Eine Azure AD-Anmeldeseite wird angezeigt, und die Administratoren geben die Anmeldeinformationen eines globalen Administratorbenutzers ein.
 
-    ![Screenshot des Azure AD-Anmeldefensters mit Administratoranmeldeinformationen](./media/contoso-migration-tfs-vsts/prep2.png)
+    ![Screenshot des Azure AD-Anmeldefensters mit in das Textfeld „Benutzer“ eingegebenen Administratoranmeldeinformationen.](./media/contoso-migration-tfs-vsts/prep2.png)
 
 1. Die Vorbereitung ist abgeschlossen, und das Tool meldet, dass die Importdateien erfolgreich generiert wurden.
 
@@ -335,8 +335,8 @@ In einem vorherigen Schritt haben die Contoso-Administratoren einen Teil der Imp
 
 Sie öffnen die Datei *import.json* und füllen die folgenden Felder aus:
 
-- **Standort**: Sie geben den Speicherort des SAS-Schlüssels ein, der oben generiert wurde.
-- **Dacpac:** Sie geben den Namen der DACPAC-Datei ein, die zuvor in das Speicherkonto hochgeladen wurde, einschließlich der Erweiterung *.dacpac*.
+- **Standort:** Sie geben den Speicherort des SAS-Schlüssels ein, der oben generiert wurde.
+- **DACPAC:** Sie geben den Namen der DACPAC-Datei ein, die zuvor in das Speicherkonto hochgeladen wurde, einschließlich der Erweiterung *.dacpac*.
 - **ImportType:** Sie geben **DryRun** ein.
 
 ![Screenshot der Datei „import.json mit ausgefüllten Feldern](./media/contoso-migration-tfs-vsts/import1.png)
@@ -374,7 +374,7 @@ Die Contoso-Administratoren führen eine Probemigration durch, um sicherzustelle
 
 1. Das Azure AD-Anmeldefenster wird geöffnet. Die Contoso-Administratoren melden sich bei Azure AD mit Administratorberechtigungen an.
 
-    ![Screenshot des Azure AD-Anmeldefensters in Visual Studio](./media/contoso-migration-tfs-vsts/test5.png)
+    ![Screenshot des Azure AD-Anmeldefensters in Visual Studio.](./media/contoso-migration-tfs-vsts/test5.png)
 
     Eine Meldung wird angezeigt mit dem Hinweis, dass der Import erfolgreich gestartet wurde.
 
@@ -419,7 +419,7 @@ Wenn der Probelauf abgeschlossen ist, fahren die Contoso-Administratoren mit der
 
 1. Im Azure AD-Anmeldefenster geben die Administratoren eine Contoso-Administratoranmeldung an.
 
-    ![Screenshot des Azure AD-Anmeldefensters in Visual Studio](./media/contoso-migration-tfs-vsts/full3.png)
+    ![Screenshot des Azure AD-Anmeldebildschirms in Visual Studio.](./media/contoso-migration-tfs-vsts/full3.png)
 
     Eine Meldung wird angezeigt mit dem Hinweis, dass der Import erfolgreich gestartet wurde.
 

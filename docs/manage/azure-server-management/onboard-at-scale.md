@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 114c366cd01ae28a60e9d9a7fa25f1cfe9f83b72
-ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
+ms.openlocfilehash: daa24a986e768187f02799d9abe6c5c7ce2e6799
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "93024537"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94711812"
 ---
 <!-- cSpell:ignore VMUUID kusto -->
 
@@ -137,9 +137,9 @@ Das [Azure-Aktivitätsprotokoll](/azure/azure-monitor/platform/activity-logs-ove
 
 So implementieren Sie diese Lösung
 
-1. Öffnen Sie im Azure-Portal die Option **Alle Dienste** , und wählen Sie anschließend **Verwaltung + Governance** > **Lösungen** aus.
+1. Öffnen Sie im Azure-Portal die Option **Alle Dienste**, und wählen Sie anschließend **Verwaltung + Governance** > **Lösungen** aus.
 2. Wählen Sie in der Ansicht **Lösungen** die Option **Hinzufügen** aus.
-3. Suchen Sie nach **Aktivitätsprotokollanalyse** , und wählen Sie diese Option aus.
+3. Suchen Sie nach **Aktivitätsprotokollanalyse**, und wählen Sie diese Option aus.
 4. Klicken Sie auf **Erstellen**.
 
 Sie müssen den **Arbeitsbereichsnamen** des Arbeitsbereichs eingeben, den Sie im vorherigen Abschnitt beim Aktivieren der Lösung erstellt haben.
@@ -150,7 +150,7 @@ Die Lösung „Azure Log Analytics-Agent-Integritätsdiagnose“ informiert Sie 
 
 So implementieren Sie diese Lösung
 
-1. Öffnen Sie im Azure-Portal die Option **Alle Dienste** , und wählen Sie anschließend **Verwaltung + Governance** > **Lösungen** aus.
+1. Öffnen Sie im Azure-Portal die Option **Alle Dienste**, und wählen Sie anschließend **Verwaltung + Governance** > **Lösungen** aus.
 2. Wählen Sie in der Ansicht **Lösungen** die Option **Hinzufügen** aus.
 3. Suchen Sie nach **Azure Log Analytics-Agent-Integritätsdiagnose** , und wählen Sie diese Option aus.
 4. Klicken Sie auf **Erstellen**.
@@ -165,9 +165,9 @@ Mit der Lösung für die Antischadsoftwarebewertung können Sie Server identifiz
 
 So implementieren Sie diese Lösung
 
-1. Öffnen Sie im Azure-Portal die Option **Alle Dienste** , und wählen Sie anschließend **Verwaltung + Governance** > **Lösungen** aus.
+1. Öffnen Sie im Azure-Portal die Option **Alle Dienste**, und wählen Sie anschließend **Verwaltung + Governance** > **Lösungen** aus.
 2. Wählen Sie in der Ansicht **Lösungen** die Option **Hinzufügen** aus.
-3. Suchen Sie nach **Antischadsoftwarebewertung** , und wählen Sie diese Option aus.
+3. Suchen Sie nach **Antischadsoftwarebewertung**, und wählen Sie diese Option aus.
 4. Klicken Sie auf **Erstellen**.
 
 Sie müssen den **Arbeitsbereichsnamen** des Arbeitsbereichs eingeben, den Sie im vorherigen Abschnitt beim Aktivieren der Lösung erstellt haben.

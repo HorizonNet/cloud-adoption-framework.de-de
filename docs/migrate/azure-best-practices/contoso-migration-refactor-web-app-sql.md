@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 47ccbee2a3f140a4abc1471896496b83c6de8f43
-ms.sourcegitcommit: 8bd82ade858bf8095672842bd6469deae7616bbf
+ms.openlocfilehash: addfab1821faadae120fc5dbd2e1af1caabe15d2
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "94333676"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713529"
 ---
 <!-- cSpell:ignore WEBVM SQLVM contosohost vcenter contosodc smarthotel SHWEB SHWCF -->
 
@@ -26,11 +26,11 @@ Die in diesem Beispiel verwendete Anwendung „SmartHotel360“ wird als Open-So
 
 Das IT-Führungsteam von Contoso hat eng mit den Geschäftspartnern zusammengearbeitet, um zu verstehen, was sie mit dieser Migration erreichen möchten:
 
-- **Unternehmenswachstum**. Contoso wächst, und damit steigt die Last auf seinen lokalen Systeme und Infrastrukturen.
-- **Steigern der Effizienz**. Contoso muss unnötige Verfahren beseitigen und Prozesse für Entwickler und Benutzer optimieren. Die IT-Abteilung muss schnell sein, weder Geld noch Zeit verschwenden, und Kundenanforderungen schneller bearbeiten.
-- **Steigern der Flexibilität**. Die IT-Abteilung von Contoso muss schneller auf geschäftliche Anforderungen reagieren, um in einer globalen Wirtschaft erfolgreich zu sein. Sie muss in der Lage sein, schneller auf Änderungen auf dem Markt zu reagieren. Die IT darf nicht im Weg stehen oder zum Geschäftshindernis werden.
-- **Skalierung:** Bei einer Anwendung für Hunderttausende oder Millionen von Mandanten sind Ansätze mit gemeinsamer Datenbanknutzung vorteilhaft, z.B. Da das Unternehmen erfolgreich wächst, muss die Contoso-IT Systeme bereitstellen, die mit der gleichen Geschwindigkeit wachsen können.
-- **Senken der Kosten:** Contoso möchte die Lizenzierungskosten minimieren.
+- **Unternehmenswachstum.** Contoso wächst, und damit steigt die Last auf seinen lokalen Systeme und Infrastrukturen.
+- **Effizienzsteigerung.** Contoso muss unnötige Verfahren beseitigen und Prozesse für Entwickler und Benutzer optimieren. Die IT-Abteilung muss schnell sein, weder Geld noch Zeit verschwenden, und Kundenanforderungen schneller bearbeiten.
+- **Steigerung der Flexibilität.** Die IT-Abteilung von Contoso muss schneller auf geschäftliche Anforderungen reagieren, um in einer globalen Wirtschaft erfolgreich zu sein. Sie muss in der Lage sein, schneller auf Änderungen auf dem Markt zu reagieren. Die IT darf nicht im Weg stehen oder zum Geschäftshindernis werden.
+- **Skalierung.** Da das Unternehmen erfolgreich wächst, muss die Contoso-IT Systeme bereitstellen, die mit der gleichen Geschwindigkeit wachsen können.
+- **Senken Sie Kosten.** Contoso möchte die Lizenzierungskosten minimieren.
 
 ## <a name="migration-goals"></a>Migrationsziele
 
@@ -121,8 +121,7 @@ Contoso geht bei der Ausführung der Migration wie folgt vor:
 
 ## <a name="step-1-assess-and-migrate-the-web-apps"></a>Schritt 1: Bewerten und Migrieren der Web-Apps
 
-Contoso-Administratoren bewerten und migrieren ihre Web-App mithilfe des [Azure App Service-Migrations-Assistenten](https://azure.microsoft.com/migration/web-applications/). Sie orientieren sich während des Prozesses am Lernpfad zum [Migrieren von ASP.NET-Apps zu Azure](/learn/paths/migrate-dotnet-apps-azure/).
-Die Administratoren führen diese Aktionen aus:
+Contoso-Administratoren bewerten und migrieren ihre Web-App mithilfe des [Azure App Service-Migrations-Assistenten](https://azure.microsoft.com/migration/web-applications/). Sie orientieren sich während des Prozesses am Lernpfad zum [Migrieren von ASP.NET-Apps zu Azure](/learn/paths/migrate-dotnet-apps-azure/). Die Administratoren führen diese Aktionen aus:
 
 - Sie verwenden die [Azure App Service-Migrationsbewertung](https://appmigration.microsoft.com/assessment/), um alle ggf. vorhandenen Abhängigkeiten zwischen Ihren Web-Apps auszuwerten und um mögliche Inkompatibilitäten zwischen ihren lokalen Web-Apps und der Unterstützung durch Azure App Service zu ermitteln.
 
@@ -140,7 +139,7 @@ Die Administratoren führen diese Aktionen aus:
 
     ![Screenshot der Details der SQL-Datenbankinstanz](./media/contoso-migration-refactor-web-app-sql/provision-sql2.png)
 
-1. Das Unternehmen richtet eine neue SQL Server-Instanz, **sql-smarthotel-eus2** , in der primären Region ein.
+1. Das Unternehmen richtet eine neue SQL Server-Instanz, **sql-smarthotel-eus2**, in der primären Region ein.
 
     ![Screenshot der neuen SQL Server-Instanz](./media/contoso-migration-refactor-web-app-sql/provision-sql3.png)
 
@@ -263,7 +262,7 @@ Als Nächstes konfigurieren die Contoso-Administratoren Azure DevOps für die Du
 
     ![Screenshot des Phasennamens der WCF-Web-App](./media/contoso-migration-refactor-web-app-sql/pipeline9.png)
 
-1. Sie klicken unter den Phasen auf **1 Auftrag, 1 Aufgabe** , um die Bereitstellung des WCF-Diensts zu konfigurieren.
+1. Sie klicken unter den Phasen auf **1 Auftrag, 1 Aufgabe**, um die Bereitstellung des WCF-Diensts zu konfigurieren.
 
     ![Screenshot der Option „1 Auftrag, 1 Aufgabe“](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline10.png)
 
@@ -287,7 +286,7 @@ Als Nächstes konfigurieren die Contoso-Administratoren Azure DevOps für die Du
 
     ![Screenshot der Option zum Auswählen von „Azure App Service bereitstellen“](./media/contoso-migration-refactor-web-app-sql/pipeline15.png)
 
-1. Unter **Datei oder Ordner suchen** erweitern sie den **Ablageordner** , wählen die Datei *SmartHotel.Registration.Wcf.zip* aus, die während der Erstellung erstellt wurde, und klicken anschließend auf **Speichern**.
+1. Unter **Datei oder Ordner suchen** erweitern sie den **Ablageordner**, wählen die Datei *SmartHotel.Registration.Wcf.zip* aus, die während der Erstellung erstellt wurde, und klicken anschließend auf **Speichern**.
 
     ![Screenshot des Bereichs „Datei oder Ordner suchen“ zum Auswählen der WCF-Datei](./media/contoso-migration-refactor-web-app-sql/pipeline16.png)
 
@@ -303,7 +302,7 @@ Als Nächstes konfigurieren die Contoso-Administratoren Azure DevOps für die Du
 
      ![Screenshot der Zusammenfassung der Releasepipeline](./media/contoso-migration-refactor-web-app-sql/pipeline19.png)
 
-1. Sie navigieren zurück zu **Build** , wählen **Trigger** aus und aktivieren anschließend das Kontrollkästchen **Continuous Integration aktivieren**. Diese Aktion aktiviert die Pipeline. Wenn also Änderungen am Code committet werden, erfolgt ein vollständiger Build mit Release.
+1. Sie navigieren zurück zu **Build**, wählen **Trigger** aus und aktivieren anschließend das Kontrollkästchen **Continuous Integration aktivieren**. Diese Aktion aktiviert die Pipeline. Wenn also Änderungen am Code committet werden, erfolgt ein vollständiger Build mit Release.
 
     ![Screenshot mit dem hervorgehobenen Kontrollkästchen „Continuous Integration aktivieren“](./media/contoso-migration-refactor-web-app-sql/pipeline20.png)
 
@@ -342,7 +341,7 @@ Nachdem die Ressourcen nun zu Azure migriert wurden, muss Contoso die neue Infra
 ### <a name="backups"></a>Backups
 
 - Das Team von Contoso überprüft die Sicherungsanforderungen für Azure SQL-Datenbank. [Weitere Informationen](/azure/sql-database/sql-database-automated-backups)
-- Es muss sich auch über die Verwaltung von Sicherungen und Wiederherstellungen in SQL-Datenbank informieren. [Erfahren Sie mehr über automatische Sicherungen.](/azure/sql-database/sql-database-automated-backups)
+- Es muss sich auch über die Verwaltung von Sicherungen und Wiederherstellungen in SQL-Datenbank informieren. Erfahren Sie mehr über [automatische Sicherungen](/azure/sql-database/sql-database-automated-backups).
 - Das Unternehmen muss die Implementierung von Failovergruppen berücksichtigen, um ein regionales Failover für die Datenbank bereitzustellen. [Weitere Informationen](/azure/sql-database/sql-database-geo-replication-overview)
 - Es muss hinsichtlich der Resilienz die Bereitstellung der Web-App in der Hauptregion (`East US 2`) und der sekundären Region (`Central US`) in Erwägung ziehen. Das Team könnte den Traffic Manager konfigurieren, um ein Failover während regionaler Ausfälle sicherzustellen.
 

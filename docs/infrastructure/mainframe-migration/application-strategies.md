@@ -1,5 +1,5 @@
 ---
-title: Migrationsstrategien für Mainframe-Apps
+title: Migrationsstrategien für Mainframeanwendungen
 description: Hier finden Sie Informationen zu Strategien wie Zuweisung eines neuen Hosts, Außerbetriebnahme, Neuerstellung oder Austausch von Anwendungen, um sie aus Mainframeumgebungen zu Azure zu migrieren.
 author: njray
 ms.author: v-nanra
@@ -7,14 +7,14 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2a9f188a49becd5c9f0d8156488a3456aa93fee8
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 5c76356277f6ae911b2994dac0d6bcb66bcdd112
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775801"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94712638"
 ---
-<!-- docutune:casing GDGs -->
+<!-- docutune:casing GDGs "GT Software" "NTT Data" -->
 <!-- cSpell:ignore Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->
 
 # <a name="mainframe-application-migration"></a>Migration von Mainframeanwendungen
@@ -31,7 +31,7 @@ Die Anwendungsmigration umfasst üblicherweise eine oder mehrere der folgenden S
 
 - **Neu erstellen:** Einige Organisationen entscheiden sich dazu, Programme mithilfe moderner Techniken vollständig umzuschreiben. Angesichts der zusätzlichen Kosten und Komplexität dieses Ansatzes ist er nicht so verbreitet wie ein Lift & Shift-Ansatz. Nach dieser Art der Migration ist es häufig sinnvoll, Module und Code mithilfe von Codetransformations-Engines zu ersetzen.
 
-- **Ersetzen:** Bei diesem Ansatz wird die Mainframefunktionalität durch entsprechende Features in der Cloud ersetzt. Software-as-a-Service (SaaS) ist eine Möglichkeit, bei der eine speziell für Unternehmensbelange erstellte Lösung verwendet wird, darunter Finanzen, Personalwesen, Fertigung oder Unternehmensressourcenplanung. Darüber hinaus stehen jetzt viele branchenspezifische Apps zur Verfügung, um Probleme zu lösen, die zuvor durch benutzerdefinierte Mainframelösungen gelöst wurden.
+- **Ersetzen:** Bei diesem Ansatz wird die Mainframefunktionalität durch entsprechende Features in der Cloud ersetzt. Software-as-a-Service (SaaS) ist eine Möglichkeit, bei der eine speziell für Unternehmensbelange erstellte Lösung verwendet wird, darunter Finanzen, Personalwesen, Fertigung oder Unternehmensressourcenplanung. Darüber hinaus stehen jetzt viele branchenspezifische Anwendungen zur Verfügung, um Probleme zu lösen, die zuvor durch benutzerdefinierte Mainframelösungen gelöst wurden.
 
 Planen Sie als Erstes die Workloads, die Sie zuerst migrieren möchten, und ermitteln Sie dann die Anforderungen für das Verschieben der zugehörigen Anwendungen, älteren Codebasen und Datenbanken.
 
@@ -69,9 +69,9 @@ In Azure werden Emulationsumgebungen verwendet, um den TP-Manager und die Batcha
 
 Die Funktionalität für Bildschirmverarbeitung und Formulareinträge wird häufig über Webserver implementiert, die mit Datenbank-APIs wie ADO, ODBC und JDBC für den Datenzugriff und Transaktionen kombiniert werden können. Die genaue Zusammenstellung zu verwendender Azure-IaaS-Komponenten hängt vom bevorzugten Betriebssystem ab. Beispiel:
 
-- Windows-basierte virtuelle Computer: Internet Information Server (IIS) zusammen mit ASP.NET für Bildschirmverarbeitung und Geschäftslogik. Verwenden Sie ADO.NET für Datenzugriff und Transaktionen.
+- **Windows-basierte virtuelle Computer:** Internet Information Server (IIS) zusammen mit ASP.NET für Bildschirmverarbeitung und Geschäftslogik. Verwenden Sie ADO.NET für Datenzugriff und Transaktionen.
 
-- Linux-basierte virtuelle Computer: Die Java-basierten Anwendungsserver, die zur Verfügung stehen, z.B. Apache Tomcat für die Bildschirmverarbeitung und Java-basierte Geschäftsfunktionen. Verwenden Sie JDBC für Datenzugriff und Transaktionen.
+- **Linux-basierte virtuelle Computer:** Die Java-basierten Anwendungsserver, die zur Verfügung stehen, z.B. Apache Tomcat für die Bildschirmverarbeitung und Java-basierte Geschäftsfunktionen. Verwenden Sie JDBC für Datenzugriff und Transaktionen.
 
 ## <a name="migrate-batch-workloads-to-azure"></a>Migrieren von Batchworkloads zu Azure
 
@@ -115,14 +115,14 @@ Die verteilten Architekturen der Cloud basieren auf einem anderen Satz aus Entwi
 
 | Komponente        | Azure-Optionen                                                                                                                                  |
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| z/OS             | Windows, Linux oder UNIX                                                                                                                      |
+| z/OS             | Windows, Linux oder Unix                                                                                                                      |
 | CICS             | Von Micro Focus, Oracle, GT Software (Fujitsu), TmaxSoft, Raincode und NTT Data angebotene oder über Kubernetes neu generierte Azure-Dienste |
 | IMS              | Von Micro Focus und Oracle angebotene Azure-Dienste                                                                                  |
 | Assembler        | Azure-Dienste von Raincode und TmaxSoft bzw. COBOL, C oder Java oder Zuordnung zu Betriebssystemfunktionen               |
 | JCL              | JCL, PowerShell oder andere Skripterstellungstools                                                                                                   |
 | COBOL            | COBOL, C oder Java                                                                                                                            |
 | Natural          | Natural, COBOL, C oder Java                                                                                                                  |
-| FORTRAN und PL/I | FORTRAN, PL/I, COBOL, C oder Java                                                                                                           |
+| Fortran und PL/I | Fortran, PL/I, COBOL, C oder Java                                                                                                           |
 | REXX und PL/I    | REXX, PowerShell oder andere Skripterstellungstools                                                                                                  |
 
 ## <a name="migrate-databases-and-data"></a>Migrieren von Datenbanken und Daten
@@ -133,7 +133,7 @@ Beispielsweise können Sie die Migration durchführen, wenn in der Mainframedate
 
 - IBM DB2 oder IMS-Datenbank: Verwenden Sie Azure SQL-Datenbank, SQL Server, DB2 LUW oder Oracle Database in Azure.
 
-- VSAM- und andere Flatfiles: Verwenden Sie ISAM-Flatfiles (indizierte sequenzielle Zugriffsmethode) für Azure SQL, SQL Server, DB2 LUW oder Oracle.
+- VSAM- und andere Flatfiles: Verwenden Sie ISAM-Flatfiles (indizierte sequenzielle Zugriffsmethode) für Azure SQL-Datenbank, SQL Server, DB2 LUW oder Oracle.
 
 - GDGs (Generation Date Groups): Migrieren Sie zu Dateien in Azure, die eine Namenskonvention und Dateinamenerweiterungen sowie eine ähnliche Funktionalität wie GDGs bereitstellen.
 
@@ -153,7 +153,7 @@ Die Datenbankmigration umfasst außerdem folgende Komponenten:
 
 Allgemein formuliert werden Mainframes hochskaliert, während die Cloud aufskaliert wird. Um die Skalierung und den Durchsatz von Mainframeanwendungen unter Azure zu optimieren, müssen Sie wissen, wie Mainframes Anwendungen trennen und isolieren können. Ein z/OS-Mainframe verwendet ein Feature namens LPARs (logische Partitionen), um die Ressourcen für eine bestimmte Anwendung auf einer einzelnen Instanz zu isolieren und zu verwalten.
 
-Ein Mainframe kann beispielsweise eine logische Partition (LPAR) für eine CICS-Region mit zugeordneten COBOL-Programmen und eine separate LPAR für DB2 verwenden. Zusätzliche LPARs werden häufig für die Entwicklungs-, Test- und Stagingumgebungen eingesetzt.
+Beispielsweise kann ein Mainframe eine LPAR für eine CICS-Region mit zugeordneten COBOL-Programmen und eine separate LPAR für eine DB2 verwenden. Zusätzliche LPARs werden häufig für die Entwicklungs-, Test- und Stagingumgebungen eingesetzt.
 
 In Azure ist es eher üblich, zu diesen Zwecken separate virtuelle Computer zu verwenden. Azure-Architekturen stellen in der Regel VMs für die Logikschicht, einen separaten Satz von VMs für die Datenschicht, einen weiteren Satz für die Entwicklung usw. bereit. Jede Verarbeitungsebene kann über den am besten geeigneten VM-Typ und über die Features für die jeweilige Umgebung optimiert werden.
 
@@ -176,8 +176,6 @@ Eine Möglichkeit ist beispielsweise [Microsoft Host Integration Server](/host-i
 Wenn Sie eine Mainframemigration in Betracht ziehen, steht Ihnen das Partnerökosystem zur Seite.
 
 Azure bietet eine bewährte, hoch verfügbare und skalierbare Infrastruktur für Systeme, die derzeit auf Mainframes ausgeführt werden. Einige Workloads können relativ einfach migriert werden. Andere Workloads, die auf älterer Systemsoftware wie z.B. CICS und IMS beruhen, können über Partnerlösungen neuen Hosts zugewiesen und im Laufe der Zeit zu Azure migriert werden. Unabhängig von Ihrer Wahl stehen Microsoft und unsere Partner Ihnen zur Verfügung, um Sie bei der Optimierung für Azure und bei der Beibehaltung der Funktionalität von Mainframesystemsoftware zu unterstützen.
-
-<!-- docutune:casing "IBM DB2 pureScale" -->
 
 ## <a name="learn-more"></a>Weitere Informationen
 

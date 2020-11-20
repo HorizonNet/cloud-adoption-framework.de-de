@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: e022bafd67489695a5c99b6e0a2a115f213d1bad
-ms.sourcegitcommit: 8bd82ade858bf8095672842bd6469deae7616bbf
+ms.openlocfilehash: 0f4b2042c5f2dcbd8ab9b0553a86d29ae1ff1b73
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "94333686"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713461"
 ---
 <!-- cSpell:ignore contoso's contosohost vcenter contosodc smarthotel SQLMI SHWCF SHWEB -->
 
@@ -26,11 +26,11 @@ Die in diesem Beispiel verwendete Anwendung „SmartHotel360“ wird als Open-So
 
 Das IT-Führungsteam von Contoso hat eng mit den Geschäftspartnern zusammengearbeitet, um zu verstehen, was sie mit dieser Migration erreichen möchten:
 
-- **Unternehmenswachstum**. Contoso wächst, und damit steigt die Last auf seinen lokalen Systeme und Infrastrukturen.
-- **Steigern der Effizienz**. Contoso muss unnötige Verfahren beseitigen und Prozesse für Entwickler und Benutzer optimieren. Die IT-Abteilung muss schnell sein, weder Geld noch Zeit verschwenden, und Kundenanforderungen schneller bearbeiten.
-- **Steigern der Flexibilität**. Die Contoso-IT-Abteilung muss schneller auf die Unternehmensanforderungen reagieren. Sie muss schneller reagieren können, als sich die Gegebenheiten des Markts ändern, damit das Unternehmen auf dem globalen Markt Erfolg hat. Ihre Reaktionszeit darf nicht im Weg stehen oder zum Geschäftshindernis werden.
-- **Skalierung:** Bei einer Anwendung für Hunderttausende oder Millionen von Mandanten sind Ansätze mit gemeinsamer Datenbanknutzung vorteilhaft, z.B. Da das Unternehmen erfolgreich wächst, muss die Contoso-IT Systeme bereitstellen, die mit der gleichen Geschwindigkeit wachsen können.
-- **Senken der Kosten:** Contoso möchte die Lizenzierungskosten minimieren.
+- **Unternehmenswachstum.** Contoso wächst, und damit steigt die Last auf seinen lokalen Systeme und Infrastrukturen.
+- **Effizienzsteigerung.** Contoso muss unnötige Verfahren beseitigen und Prozesse für Entwickler und Benutzer optimieren. Die IT-Abteilung muss schnell sein, weder Geld noch Zeit verschwenden, und Kundenanforderungen schneller bearbeiten.
+- **Steigerung der Flexibilität.** Die Contoso-IT-Abteilung muss schneller auf die Unternehmensanforderungen reagieren. Sie muss schneller reagieren können, als sich die Gegebenheiten des Markts ändern, damit das Unternehmen auf dem globalen Markt Erfolg hat. Ihre Reaktionszeit darf nicht im Weg stehen oder zum Geschäftshindernis werden.
+- **Skalierung.** Da das Unternehmen erfolgreich wächst, muss die Contoso-IT Systeme bereitstellen, die mit der gleichen Geschwindigkeit wachsen können.
+- **Senken Sie Kosten.** Contoso möchte die Lizenzierungskosten minimieren.
 
 ## <a name="migration-goals"></a>Migrationsziele
 
@@ -126,8 +126,7 @@ Contoso geht bei der Ausführung der Migration wie folgt vor:
 
 ## <a name="step-1-assess-and-migrate-the-web-apps"></a>Schritt 1: Bewerten und Migrieren der Web-Apps
 
-Contoso-Administratoren bewerten und migrieren ihre Web-App mithilfe des [Azure App Service-Migrations-Assistenten](https://azure.microsoft.com/migration/web-applications/). Bei dem Prozess orientieren sie sich am [Microsoft-Lernpfad](/learn/paths/migrate-dotnet-apps-azure/).
-Die Administratoren führen im Wesentlichen folgende Aktionen aus:
+Contoso-Administratoren bewerten und migrieren ihre Web-App mithilfe des [Azure App Service-Migrations-Assistenten](https://azure.microsoft.com/migration/web-applications/). Bei dem Prozess orientieren sie sich am [Microsoft-Lernpfad](/learn/paths/migrate-dotnet-apps-azure/). Die Administratoren führen im Wesentlichen folgende Aktionen aus:
 
 - Sie verwenden die [Azure App Service-Migrationsbewertung](https://appmigration.microsoft.com/assessment/), um alle ggf. vorhandenen Abhängigkeiten zwischen Ihren Web-Apps auszuwerten und um mögliche Inkompatibilitäten zwischen ihren lokalen Web-Apps und der Unterstützung durch Azure App Service zu ermitteln.
 
@@ -162,16 +161,20 @@ Die Contoso-Administratoren richten das virtuelle Netzwerk folgendermaßen ein:
 
 1. Nach der Bereitstellung des virtuellen Netzwerks und der Subnetze wird das folgende Netzwerkpeering eingerichtet:
 
-    - Peering zwischen `VNET-SQLMI-EUS2` und `VNET-HUB-EUS2` (das virtuelle Hubnetzwerk für `East US 2`)  
+    - Peering zwischen `VNET-SQLMI-EUS2` und `VNET-HUB-EUS2` (das virtuelle Hubnetzwerk für `East US 2`)
+
     - Peering zwischen `VNET-SQLMI-EUS2` und `VNET-PROD-EUS2` (das Produktionsnetzwerk)
 
       ![Screenshot der Peernetzwerke](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-peering.png)
 
 1. Es werden benutzerdefinierte DNS-Einstellungen festgelegt. Die DNS-Einstellungen verweisen zuerst auf den Azure-Domänencontroller von Contoso. Das Azure DNS ist der sekundäre Verweis. Die Azure-Domänencontroller von Contoso befinden sich an den folgenden Orten:
 
-    - Im Subnetz „PROD-DC-EUS2“ des Produktionsnetzwerks (VNET-PROD-EUS2) in der Region „USA, Osten 2“.  
-    - Adresse von `CONTOSODC3`: `10.245.42.4`  
-    - Adresse von `CONTOSODC4`: `10.245.42.5`  
+    - Im Subnetz „PROD-DC-EUS2“ des Produktionsnetzwerks (VNET-PROD-EUS2) in der Region „USA, Osten 2“.
+
+    - Adresse von `CONTOSODC3`: `10.245.42.4`
+
+    - Adresse von `CONTOSODC4`: `10.245.42.5`
+
     - Azure DNS-Auflösung: `168.63.129.16`
 
     ![Screenshot der Liste der Netzwerk-DNS-Server](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-dns.png)
@@ -222,7 +225,8 @@ Jetzt können die Administratoren von Contoso eine verwaltete SQL-Instanz bereit
     ![Screenshot des Bereichs „Verwaltete SQL-Instanz“](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-create.png)
 
     Nach der Bereitstellung der verwalteten Instanz werden zwei neue Ressourcen in der Ressourcengruppe „ContosoRG“ angezeigt:
-    - Die neue verwaltete SQL-Instanz  
+    - Die neue verwaltete SQL-Instanz
+
     - Ein virtueller Cluster, falls Contoso über mehrere verwaltete Instanzen verfügt
 
       ![Screenshot der neuen Ressource in der Ressourcengruppe „ContosoRG“](./media/contoso-migration-rehost-vm-sql-managed-instance/mi-resources.png)
@@ -331,7 +335,7 @@ Als Nächstes konfigurieren die Contoso-Administratoren Azure DevOps für die Du
 
     ![Screenshot des Phasennamens der WCF-Web-App](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline9.png)
 
-1. Sie klicken unter den Phasen auf **1 Auftrag, 1 Aufgabe** , um die Bereitstellung des WCF-Diensts zu konfigurieren.
+1. Sie klicken unter den Phasen auf **1 Auftrag, 1 Aufgabe**, um die Bereitstellung des WCF-Diensts zu konfigurieren.
 
     ![Screenshot der Option „1 Auftrag, 1 Aufgabe“](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline10.png)
 
@@ -339,7 +343,7 @@ Als Nächstes konfigurieren die Contoso-Administratoren Azure DevOps für die Du
 
      ![Screenshot: Auswählen des App-Dienstnamens](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline11.png)
 
-1. In der Pipeline wählen sie **Artefakte** , anschließend **+ Artefakt hinzufügen** und dann **Build** als Quelltyp aus und erstellen anschließend mit der Pipeline `ContosoSmarthotel360Refactor`.
+1. In der Pipeline wählen sie **Artefakte**, anschließend **+ Artefakt hinzufügen** und dann **Build** als Quelltyp aus und erstellen anschließend mit der Pipeline `ContosoSmarthotel360Refactor`.
 
      ![Screenshot der Schaltfläche „Build“ im Bereich „Artefakt hinzufügen“](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline12.png)
 
@@ -355,7 +359,7 @@ Als Nächstes konfigurieren die Contoso-Administratoren Azure DevOps für die Du
 
     ![Screenshot der Option zum Auswählen von „Azure App Service bereitstellen“](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline15.png)
 
-1. Unter **Datei oder Ordner suchen** erweitern sie den **Ablageordner** , wählen die Datei `SmartHotel.Registration.Wcf.zip` aus, die während der Erstellung erstellt wurde, und klicken anschließend auf **Speichern**.
+1. Unter **Datei oder Ordner suchen** erweitern sie den **Ablageordner**, wählen die Datei `SmartHotel.Registration.Wcf.zip` aus, die während der Erstellung erstellt wurde, und klicken anschließend auf **Speichern**.
 
     ![Screenshot des Bereichs „Datei oder Ordner suchen“ zum Auswählen der WCF-Datei](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline16.png)
 
@@ -363,7 +367,7 @@ Als Nächstes konfigurieren die Contoso-Administratoren Azure DevOps für die Du
 
     ![Screenshot des Links „1 Auftrag, 1 Aufgabe“ zum Hinzufügen einer Umgebung](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline17.png)
 
-1. Anschließend wiederholen sie den Prozess zum Veröffentlichen der Web-App-Datei ( *SmartHotel.Registration.Web.zip* ), um die Web-App zu korrigieren, und wählen anschließend **Speichern** aus.
+1. Anschließend wiederholen sie den Prozess zum Veröffentlichen der Web-App-Datei (*SmartHotel.Registration.Web.zip*), um die Web-App zu korrigieren, und wählen anschließend **Speichern** aus.
 
     ![Screenshot des Bereichs „Datei oder Ordner suchen“ zum Auswählen der WEB-Datei](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline18.png)
 
@@ -371,11 +375,11 @@ Als Nächstes konfigurieren die Contoso-Administratoren Azure DevOps für die Du
 
      ![Screenshot der Zusammenfassung der Releasepipeline](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline19.png)
 
-1. Sie navigieren zurück zu **Build** , wählen **Trigger** aus und aktivieren anschließend das Kontrollkästchen **Continuous Integration aktivieren**. Diese Aktion aktiviert die Pipeline. Wenn also Änderungen am Code committet werden, erfolgt ein vollständiger Build mit Release.
+1. Sie navigieren zurück zu **Build**, wählen **Trigger** aus und aktivieren anschließend das Kontrollkästchen **Continuous Integration aktivieren**. Diese Aktion aktiviert die Pipeline. Wenn also Änderungen am Code committet werden, erfolgt ein vollständiger Build mit Release.
 
     ![Screenshot mit dem hervorgehobenen Kontrollkästchen „Continuous Integration aktivieren“](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline20.png)
 
-1. Sie klicken auf **Speichern und in Warteschlange einreihen** , um die vollständige Pipeline auszuführen. Ein neuer Build wird ausgelöst, der wiederum das erste Release der App in Azure App Service erstellt.
+1. Sie klicken auf **Speichern und in Warteschlange einreihen**, um die vollständige Pipeline auszuführen. Ein neuer Build wird ausgelöst, der wiederum das erste Release der App in Azure App Service erstellt.
 
     ![Screenshot der Schaltfläche „Save & Queue“ (Speichern und in Warteschlange stellen)](./media/contoso-migration-refactor-web-app-sql-managed-instance/pipeline21.png)
 
@@ -410,7 +414,7 @@ Nachdem die Ressourcen nun zu Azure migriert wurden, muss Contoso die neue Infra
 ### <a name="backups"></a>Backups
 
 - Das Contoso-Team muss die Sicherungsanforderungen für die Datenbank in Azure SQL Managed Instance überprüfen. [Weitere Informationen](/azure/sql-database/sql-database-automated-backups)
-- Es muss sich auch über die Verwaltung von Sicherungen und Wiederherstellungen in SQL-Datenbank informieren. [Erfahren Sie mehr über automatische Sicherungen.](/azure/sql-database/sql-database-automated-backups)
+- Es muss sich auch über die Verwaltung von Sicherungen und Wiederherstellungen in SQL-Datenbank informieren. Erfahren Sie mehr über [automatische Sicherungen](/azure/sql-database/sql-database-automated-backups).
 - Das Unternehmen muss die Implementierung von Failovergruppen berücksichtigen, um ein regionales Failover für die Datenbank bereitzustellen. [Weitere Informationen](/azure/sql-database/sql-database-geo-replication-overview)
 - Es muss hinsichtlich der Resilienz die Bereitstellung der Web-App in der Hauptregion (`East US 2`) und der sekundären Region (`Central US`) in Erwägung ziehen. Das Team könnte den Traffic Manager konfigurieren, um ein Failover während regionaler Ausfälle sicherzustellen.
 

@@ -7,13 +7,15 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: 1c9a2faf35a2137e5dd04c23a8cb49c6dd02f5b5
-ms.sourcegitcommit: 4da8118cdac560b795d2d413974c85c49b3189fa
+ms.openlocfilehash: e22f93f7a375431684002904ade30982ab460b23
+ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90681001"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94713767"
 ---
+<!-- docutune:casing IR -->
+
 # <a name="get-started-implement-security-across-the-enterprise-environment"></a>Erste Schritte: Implementieren von Sicherheit in der gesamten Unternehmensumgebung
 
 Sicherheit trägt dazu bei, die Vertraulichkeit, Integrität und Verfügbarkeit für ein Unternehmen zu gewährleisten. Sicherheitsmaßnahmen konzentrieren sich in erster Linie auf den Schutz vor potenziellen Auswirkungen auf Vorgänge, die durch interne und externe böswillige und unbeabsichtigte Handlungen verursacht werden.
@@ -38,44 +40,36 @@ Verwenden Sie diese Schritte zum Planen und Ausführen Ihrer Strategie zur Siche
 
 ## <a name="step-1-establish-essential-security-practices"></a>Schritt 1: Einrichten wichtiger Sicherheitsverfahren
 
-Sicherheit in der Cloud beginnt mit soliden Praktiken. Unabhängig davon, ob Sie bereits in der Cloud arbeiten oder eine zukünftige Einführung planen, ist es wichtig, schnell grundlegende Sicherheitspraktiken einzurichten.
+Sicherheit in der Cloud beginnt mit der Anwendung der wichtigsten Sicherheitsmethoden auf die Personen-, Prozess- und Technologieelemente Ihres Systems. Außerdem sind einige architektonische Entscheidungen von grundlegender Bedeutung und können später nur noch sehr schwer geändert werden, weshalb sie sorgfältig angewendet werden sollten.
 
-Zusätzlich zur Erfüllung aller expliziten gesetzlichen Complianceanforderungen empfehlen wir die folgenden Schritte, um die größten Sicherheitsherausforderungen anzugehen, mit denen die meisten Unternehmen beim Umstieg auf die Cloud konfrontiert sind.
+Unabhängig davon, ob Sie bereits in der Cloud arbeiten oder eine zukünftige Einführung planen, empfiehlt es sich, dass Sie diese 11 wesentlichen Sicherheitsmethoden verwenden (zusätzlich zur Erfüllung aller expliziten behördlichen Complianceanforderungen).
 
-**Zielvorgaben und unterstützende Anleitungen:**
+<!-- markdownlint-disable MD029 -->
 
-- **Technisch:** Mindern von Hauptrisiken und Erhöhen der Sichtbarkeit und Kontrolle von Ressourcen durch die Aktivierung von kennwortloser oder mehrstufiger Authentifizierung für Administratoren und durch Aktivieren des Bedrohungsschutzes für Cloudressourcen.
+**Personen**:
 
-  - [Kennwortlose oder mehrstufige Authentifizierung für Administratoren](/azure/architecture/framework/security/critical-impact-accounts#passwordless-or-multi-factor-authentication-for-admins)
-  - [Sicherheitsvorgänge](/azure/architecture/framework/security/security-operations) und [Bedrohungsschutz in Azure Security Center](/azure/security-center/threat-protection)
+1. [Schulen von Teams über den Weg zur Cloudsicherheit](../security/security-top-10.md#1-people-educate-teams-about-the-cloud-security-journey)
+2. [Schulen der Teams in Cloudsicherheitstechnologie](../security/security-top-10.md#2-people-educate-teams-on-cloud-security-technology)
 
-- **Vorgehensweise:** Ermöglichen schneller Sicherheitsentscheidungen und kontinuierlicher Verbesserung durch die Zuweisung von Sicherheitsrollen und -verantwortlichkeiten und durch die Einrichtung eines Prozesses zur Reaktion auf Incidents.
+**Vorgehensweise:**
 
-  - [Klare Verantwortlichkeiten](/azure/architecture/framework/security/governance#clear-lines-of-responsibility), [Zuweisen von Berechtigungen zum Verwalten der Umgebung](/azure/architecture/framework/security/governance#assign-privileges-for-managing-the-environment) und Operationalisieren von Sicherheitsbewertungen <!-- TODO: Improve this and add link to AAF article -->
-  - Sicherheitsrollen und Zuständigkeiten <!-- TODO: add link to bookmark -->
-  - [Referenzleitfaden für die Reaktion auf Vorfälle](https://aka.ms/irrg)
+3. [Zuweisen von Verantwortlichkeit für Cloudsicherheitsentscheidungen](../security/security-top-10.md#3-process-assign-accountability-for-cloud-security-decisions)
+4. [Aktualisieren von Prozessen für die Reaktion auf Vorfälle (Incident Response, IR) für die Cloud](../security/security-top-10.md#4-process-update-incident-response-ir-processes-for-cloud)
+5. [Einrichten der Sicherheitsstatusverwaltung](../security/security-top-10.md#5-process-establish-security-posture-management)
 
-- **Personen**: Bereitstellung von Schulungen, Tools und Zugangsmöglichkeiten für Sicherheitsteams, die für eine erfolgreiche Bereitstellung und den Betrieb während des Übergangs zur Cloudumgebung erforderlich sind.
+**Technologie:**
 
-  - **Informieren aller Beteiligten über Konzepte**, wie sich Cloud und Cloudsicherheit weiterentwickeln:
-    - [Entwicklung der Bedrohungsumgebung, von Rollen und digitalen Strategien](/security/compass/microsoft-security-compass-introduction#evolution-of-threat-environment-roles--digital-strategies-2004)
-    - [Transformation von Sicherheit, Strategien, Tools und Bedrohungen](/security/compass/microsoft-security-compass-introduction#transformation-of-security-strategies-tools--threats-1513)
-  - **Schulen technischer Mitarbeiter** bezüglich technischer Details der Cloudsicherheitsfunktionen für die verwendeten Plattformen. Microsoft bietet umfassende [Azure-Sicherheitsdokumentation](/azure/security).
+6. [Kennwortlose oder mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) fordern](../security/security-top-10.md#6-technology-require-passwordless-or-multi-factor-authentication-mfa)
+7. [Integrieren von nativer Firewall und Netzwerksicherheit](../security/security-top-10.md#7-technology-integrate-native-firewall-and-network-security)
+8. [Integrieren der nativen Bedrohungserkennung](../security/security-top-10.md#8-technology-integrate-native-threat-detection)
 
-- **Langfristige architektonische Entscheidungen:** Einrichten einer langfristigen Grundlage, um die richtigen Entscheidungen zu treffen. Es ist schwierig und teuer, diese Grundlage später zu ändern.
+**Grundlegende Architekturentscheidungen:**
 
-  - [Aufbau einer Unternehmenssegmentierungsstrategie und Anpassung der technischen Architekturen an diese Strategie (Netzwerksegmentierung, Identitätssegmentierung usw.)](/azure/architecture/framework/security/network-security-containment#align-network-segmentation-with-enterprise-segmentation-strategy)
-  - [Einzelnes Unternehmensverzeichnis](/azure/architecture/framework/security/design-identity#use-a-single-enterprise-directory)
-  - [Authentifizierungsstrategie für Dienste](/azure/architecture/framework/security/applications-services#prefer-identity-authentication-over-keys)
-  - [Berechtigungszuweisungsstrategie](/azure/architecture/framework/security/critical-impact-accounts#avoid-granular-and-custom-permissions)
+9. [Standardisieren eines einzelnen Verzeichnisses und einer einzelnen Identität](../security/security-top-10.md#9-architecture-standardize-on-a-single-directory-and-identity)
+10. [Verwenden der identitätsbasierten Zugriffssteuerung (anstelle von Schlüsseln)](../security/security-top-10.md#10-architecture-use-identity-based-access-control-instead-of-keys)
+11. [Einrichten einer einzelnen vereinheitlichten Sicherheitsstrategie](../security/security-top-10.md#11-architecture-establish-a-single-unified-security-strategy)
 
-<br>
-
-| Verantwortliches Team | Verantwortliche und unterstützende Teams |
-| --- | --- |
-| <li> Cloudsicherheitsteam <br><br><br> | <li> Cloudstrategieteam <li> Cloudeinführungsteam <li> Cloudkompetenzzentrum (Cloud Center of Excellence, CCoE) oder zentrale IT-Abteilung |
-
-In diesem ersten Schritt sollten die Governanceteams auch damit beginnen, die Schaffung von Sicherheitsgrundlinien zu koordinieren, die in allen Umgebungen überwacht, verwaltet und durchgesetzt werden können. Weitere Anleitungen zu dieser Einrichtung finden Sie später in Schritt 4.
+<!-- markdownlint-enable MD029 -->
 
 > [!NOTE]
 > Jede Organisation sollte ihre eigenen Mindeststandards definieren. Der Risikostatus und die anschließende Risikotoleranz können je nach Branche, Kultur und anderen Faktoren stark variieren. Beispielsweise könnte eine Bank selbst bei einem geringfügigen Angriff auf ein Testsystem eine mögliche Rufschädigung nicht tolerieren. Einige Organisationen würden dieses Risiko gerne in Kauf nehmen, wenn dadurch ihre digitale Transformation um drei bis sechs Monate beschleunigt würde.
