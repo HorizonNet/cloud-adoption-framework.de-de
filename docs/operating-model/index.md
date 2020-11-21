@@ -8,19 +8,19 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: ef99de4a051c07fe88ca93286c86208867cde88c
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 395c7533ed08982add6b4d6e309fb54257326947
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776277"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995788"
 ---
 <!-- docutune:casing GRC -->
 <!-- cspell:ignore reimagine -->
 
 # <a name="understand-cloud-operating-models"></a>Grundlegendes zu Cloudbetriebsmodellen
 
-Die Cloudeinführung ist eine gute Gelegenheit, um sich noch einmal mit dem Betrieb von Technologiesystemen zu befassen. In dieser Artikelreihe werden Cloudbetriebsmodelle und die Aspekte erläutert, die sich auf Ihre Cloudeinführungsstrategie auswirken. Aber zunächst soll der Begriff *Cloudbetriebsmodell* verdeutlicht werden.
+Die Cloudeinführung ist eine gute Gelegenheit, um sich noch einmal mit dem Betrieb von Technologiesystemen zu befassen. In dieser Artikelreihe werden Cloudbetriebsmodelle und die Aspekte erläutert, die sich auf Ihre Cloudeinführungsstrategie auswirken. Aber zunächst soll der Begriff _Cloudbetriebsmodell_ verdeutlicht werden.
 
 ## <a name="define-your-operating-model"></a>Definieren Ihres Betriebsmodells
 
@@ -28,7 +28,7 @@ Bevor Sie Ihre Cloudarchitektur bereitstellen, müssen Sie wissen, wie Sie den C
 
 ## <a name="what-is-an-operating-model"></a>Was ist ein Betriebsmodell?
 
-Als es noch keine Cloudtechnologien gab, haben Technologieteams Betriebsmodelle erstellt, um die Vorteile zu definieren, die Technologie für das Unternehmen hat. IT-Betriebsmodelle von Unternehmen umfassen eine Reihe von Faktoren. Einige sind jedoch immer konsistent: *Ausrichtung auf die Geschäftsstrategie, Strukturierung des Personals, Change Management (oder Einführungsprozesse), Betriebsverwaltung, Governance/Compliance und Sicherheit*. Jeder Faktor ist für den langfristigen Technologiebetrieb entscheidend.
+Als es noch keine Cloudtechnologien gab, haben Technologieteams Betriebsmodelle erstellt, um die Vorteile zu definieren, die Technologie für das Unternehmen hat. IT-Betriebsmodelle von Unternehmen umfassen eine Reihe von Faktoren. Einige sind jedoch immer konsistent: _Ausrichtung auf die Geschäftsstrategie, Strukturierung des Personals, Change Management (oder Einführungsprozesse), Betriebsverwaltung, Governance/Compliance und Sicherheit_. Jeder Faktor ist für den langfristigen Technologiebetrieb entscheidend.
 
 Wird der Technologiebetrieb in die Cloud verlagert, sind diese wichtigen Prozesse zwar weiterhin relevant, verändern sich aber wahrscheinlich auf die eine oder andere Weise. Aktuelle Betriebsmodelle konzentrieren sich stark auf physische Ressourcen an physischen Standorten, die größtenteils über Investitionszyklen finanziert werden. Diese Ressourcen dienen zur Unterstützung der Workloads, die das Unternehmen benötigt, um den Geschäftsbetrieb aufrechtzuerhalten. Bei den meisten Betriebsmodellen hat die Stabilität der Workloads Priorität. Hierzu wird in die Stabilität der zugrunde liegenden physischen Ressourcen investiert.
 
@@ -38,7 +38,7 @@ Redundanz im Hardwarestapel ist ein kontinuierlicher Zyklus. Physische Hardware 
 
 Die Verlagerung Ihres Betriebsmodell in die Cloud bedeutet, dass sich die gleichen Personen und Prozesse auf eine höhere Betriebsebene konzentrieren können. Wenn sich Ihre Mitarbeiter nicht mehr auf die Uptime von Servern konzentrieren, ändern sich ihre Erfolgsmetriken. Wenn die Sicherheit nicht mehr von den vier Wänden eines Rechenzentrums abhängt, ändert sich Ihr Bedrohungsprofil. Wenn die Beschaffung kein Innovationshindernis mehr darstellt, ändert sich auch die Geschwindigkeit des Change Managements.
 
-Ein *Cloudbetriebsmodell* ist die Gesamtheit von Prozessen und Prozeduren, die definieren, wie Sie Technologie in der Cloud betreiben möchten.
+Ein _Cloudbetriebsmodell_ ist die Gesamtheit von Prozessen und Prozeduren, die definieren, wie Sie Technologie in der Cloud betreiben möchten.
 
 ## <a name="purpose-of-a-cloud-operating-model"></a>Zweck eines Cloudbetriebsmodells
 
