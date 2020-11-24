@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 474795bae8a185915ad1b3983ea0d1cf28c99e89
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 160bda1bc1c77f871cc8c9b21ccb092001e2d930
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712033"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997402"
 ---
 # <a name="best-practices-for-azure-readiness"></a>Bewährte Methoden für die Azure-Bereitschaft
 
@@ -61,8 +61,8 @@ Entwerfen Sie Ihre Identitäts- und Zugriffssteuerungsinfrastruktur, um die Sich
 ## <a name="cost-management"></a>Kostenverwaltung
 
 - [Nachverfolgen von Kosten für Geschäftseinheiten, Umgebungen und Projekte](./track-costs.md). Hier finden Sie bewährte Methoden für die Erstellung sinnvoller Mechanismen zur Kostennachverfolgung.
-- [Optimieren der Cloudinvestitionen mit Azure Cost Management und Abrechnung](/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) Hier erfahren Sie, wie Sie eine Strategie für die Kostenverwaltung implementieren und welche Tools zur Bewältigung von Herausforderungen im Zusammenhang mit Kosten zur Verfügung stehen.
-- [Erstellen und Verwalten von Budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json). Hier erfahren Sie, wie Sie mit Azure Cost Management und Abrechnung Budgets erstellen und verwalten.
-- [Exportieren von Kostendaten](/azure/cost-management-billing/costs/tutorial-export-acm-data?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json). Hier erfahren Sie, wie Sie mit Azure Cost Management und Abrechnung Kostendaten exportieren.
-- [Optimieren von Kosten anhand von Empfehlungen](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json). Hier erfahren Sie, wie Sie mithilfe von Azure Cost Management und Abrechnung und Azure Advisor nicht ausgelastete Ressourcen erkennen, um Kosten zu senken.
-- [Verwenden von Kostenwarnungen zum Überwachen von Verbrauch und Ausgaben](/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json). Hier erfahren Sie, wie Sie Ihre Azure-Nutzung und Ihre Ausgaben mithilfe von Azure Cost Management- und Abrechnungwarnungen überwachen.
+- [Optimieren der Cloudinvestitionen mit Azure Cost Management + Billing:](/azure/cost-management-billing/costs/cost-mgt-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json) Hier erfahren Sie, wie Sie eine Strategie für die Kostenverwaltung implementieren und welche Tools zur Bewältigung von Herausforderungen im Zusammenhang mit Kosten zur Verfügung stehen.
+- [Erstellen und Verwalten von Budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json). Hier erfahren Sie, wie Sie mit Azure Cost Management + Billing Budgets erstellen und verwalten.
+- [Exportieren von Kostendaten](/azure/cost-management-billing/costs/tutorial-export-acm-data?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json). Hier erfahren Sie, wie Sie mit Azure Cost Management + Billing Kostendaten exportieren.
+- [Optimieren von Kosten anhand von Empfehlungen](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json). Hier erfahren Sie, wie Sie mithilfe von Azure Cost Management + Billing und Azure Advisor nicht ausgelastete Ressourcen erkennen, um Kosten zu senken.
+- [Verwenden von Kostenwarnungen zum Überwachen von Verbrauch und Ausgaben](/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json). Hier erfahren Sie, wie Sie Ihre Azure-Nutzung und Ihre Ausgaben mithilfe der Warnungen von Azure Cost Management + Billing überwachen.
