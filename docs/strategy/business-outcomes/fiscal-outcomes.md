@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: e5a01fcc2c0afb7e61e08f60b8330ec7ebb2861f
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 6fe8d8c358681b7281c8f2eaba4239b4b9bb0969
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776294"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996875"
 ---
 # <a name="examples-of-fiscal-outcomes"></a>Beispiele für Finanzergebnisse
 
@@ -40,7 +40,7 @@ Die Cloud bietet die Möglichkeit, neue Produkte für Kunden anzubieten oder vor
 
 Dank globaler Skalierbarkeit und digitaler Reichweite bietet die Cloud Unternehmen die Möglichkeit, den mit bestehenden Umsatzquellen erzielten Umsatz zu steigern. Häufig ist diese Art von Ergebnis auf eine Abstimmung mit der Vertriebs- oder Marketingleitung zurückzuführen.
 
-- **Beispiel:** Ein Unternehmen, das Widgets verkauft, könnte mehr Widgets verkaufen, wenn die Vertriebsmitarbeiter sicher auf den digitalen Katalog und die Lagerbestände des Unternehmens zugreifen könnten. Leider sind diese Daten nur im ERP-System des Unternehmens verfügbar, auf das nur über ein mit dem Netzwerk verbundenes Gerät zugegriffen werden kann. Durch das Erstellen einer mit dem ERP-System verbundenen Dienstfassade und das Verfügbarmachen der Katalogliste und nicht sensiblen Bestandsmengen in einer Anwendung in der Cloud könnten die Vertriebsmitarbeiter vor Ort beim Kunden auf die von ihnen benötigten Daten zugreifen. Die Erweiterung des lokalen Active Directory mit Azure Active Directory (Azure AD) und die Integration des rollenbasierten Zugriffs in die Anwendung würde es dem Unternehmen ermöglichen, den Schutz der Daten sicherzustellen. Dieses einfache Projekt könnte den Umsatz für eine vorhandene Produktlinie um *x %* steigern.
+- **Beispiel:** Ein Unternehmen, das Widgets verkauft, könnte mehr Widgets verkaufen, wenn die Vertriebsmitarbeiter sicher auf den digitalen Katalog und die Lagerbestände des Unternehmens zugreifen könnten. Leider sind diese Daten nur im ERP-System des Unternehmens verfügbar, auf das nur über ein mit dem Netzwerk verbundenes Gerät zugegriffen werden kann. Durch das Erstellen einer mit dem ERP-System verbundenen Dienstfassade und das Verfügbarmachen der Katalogliste und nicht sensiblen Bestandsmengen in einer Anwendung in der Cloud könnten die Vertriebsmitarbeiter vor Ort beim Kunden auf die von ihnen benötigten Daten zugreifen. Die Erweiterung des lokalen Active Directory mit Azure Active Directory (Azure AD) und die Integration des rollenbasierten Zugriffs in die Anwendung würde es dem Unternehmen ermöglichen, den Schutz der Daten sicherzustellen. Dieses einfache Projekt könnte den Umsatz für eine vorhandene Produktlinie um _x %_ steigern.
 
 ### <a name="profit-increases"></a>Gewinnsteigerungen
 

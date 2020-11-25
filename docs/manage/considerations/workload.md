@@ -7,20 +7,18 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 683f551ca61da0acbd80dd8e670fd4bb0a620ee6
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: a79c9e158bddacacce13730b017352c9f2e027a9
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90775954"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996348"
 ---
 # <a name="workload-operations-in-cloud-management"></a>Workloadvorgänge in der Cloudverwaltung
 
 Einige Workloads sind für den Erfolg des Unternehmens wichtig. Für diese Workloads reicht eine Verwaltungsbaseline nicht aus, um die erforderlichen Geschäftsverpflichtungen für die Cloudverwaltung zu erfüllen. Möglicherweise reicht der Plattformbetrieb nicht einmal aus, um Geschäftsverpflichtungen zu erfüllen. Diese äußerst wichtige Teilmenge von Workloads erfordert eine spezielle Konzentration auf die Workloadfunktionen und ihre Unterstützung.
 
 Im Gegenzug kann die Investition in Workloadvorgänge zu einer verbesserten Leistung, geringeren Risiken bei Unterbrechung des Geschäftsbetriebs und einer schnelleren Wiederherstellung führen, wenn Systemfehler auftreten. In diesem Artikel wird ein Ansatz erläutert, wie Sie in den fortlaufenden Betrieb dieser Workloads mit hoher Priorität investieren, um bessere Geschäftsverpflichtungen zu erzielen.
-
-<!-- docutune:disable Pareto -->
 
 ## <a name="when-to-invest-in-workload-operations"></a>Wann sollten Sie in Workloadvorgänge investieren?
 

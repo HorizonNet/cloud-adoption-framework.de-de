@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 2404a99fcc1dc46700b92026bc4eef8bc146a2a8
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 2a512e745150c5bb5af258bed38ba6aee1da4f9e
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572441"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880992"
 ---
 # <a name="tools-to-democratize-data-in-azure"></a>Tools zum Demokratisieren von Daten in Azure
 
@@ -57,7 +57,7 @@ In Azure werden häufig die folgenden Tools genutzt, um digitale Erfindungen in 
 - [SQL Server Stretch Database](/sql/sql-server/stretch-database)
 - [Azure StorSimple](/azure/storsimple)
 - [Azure Files](/azure/storage/files)
-- [Azure-Dateisynchronisierung](/azure/storage/files/storage-sync-files-planning)
+- [Azure-Dateisynchronisierung ](/azure/storage/files/storage-sync-files-planning)
 - [PolyBase](/sql/relational-databases/polybase)
 
 Wenn die Erfindung für eine Einführung in größerem Maßstab bereit ist, erfordern alle Aspekte jeder Lösung eine Verfeinerung und technische Reife. In diesem Fall werden wahrscheinlich weitere dieser Dienste erforderlich sein. Verwenden Sie das Inhaltsverzeichnis auf der linken Seite für die Anleitung zu den Azure-Tools, die für Ihren Prozess zum Testen der Hypothese relevant sind.

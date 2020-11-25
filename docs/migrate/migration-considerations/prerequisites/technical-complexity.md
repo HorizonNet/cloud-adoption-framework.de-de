@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4f3f8971cded5008c75a3a619c330a6e35840623
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: b6ec6b88d68cbf57dd940abf3998bac5fcbafaa3
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776226"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995940"
 ---
 # <a name="prepare-for-technical-complexity-agile-change-management"></a>Bereiten Sie sich auf technische Komplexität vor: Flexibles Change Management
 
@@ -28,7 +28,7 @@ Wenn technische Systeme geändert werden, können Komplexität und gegenseitige 
 
 ## <a name="invest-in-workloads"></a>INVEST-Modell bei Workloads
 
-Der Begriff _Workload_ taucht im Cloud Adoption Framework immer wieder auf. Eine Workload ist eine Einheit von Anwendungsfunktionalität, die zur Cloud migriert werden kann. Dabei kann es sich um eine einzelne Anwendung, eine Anwendungsebene oder eine Sammlung einer Anwendung handeln. Die Definition ist flexibel und kann während der verschiedenen Phasen der Migration variieren. Im Cloud Adoption Framework wird zur Definition einer Workload der Begriff *INVEST* verwendet.
+Der Begriff _Workload_ taucht im Cloud Adoption Framework immer wieder auf. Eine Workload ist eine Einheit von Anwendungsfunktionalität, die zur Cloud migriert werden kann. Dabei kann es sich um eine einzelne Anwendung, eine Anwendungsebene oder eine Sammlung einer Anwendung handeln. Die Definition ist flexibel und kann während der verschiedenen Phasen der Migration variieren. Im Cloud Adoption Framework wird zur Definition einer Workload der Begriff _INVEST_ verwendet.
 
 INVEST ist ein allgemeines Akronym bei vielen Agile-Verfahren, um User Storys oder Product Backlog Items zu schreiben, bei denen es sich jeweils um Ausgabeeinheiten von Agile-Projektverwaltungstools handelt. Die messbare Einheit der Ausgabe einer Migration ist eine migrierte Workload. Im Cloud Adoption Framework wird das Akronym INVEST etwas anders verwendet, um Workloads zu definieren:
 
@@ -101,7 +101,7 @@ Das Cloudeinführungsteam stellt in einem einzelnen Sprint oder einer Iteration 
 
 ### <a name="large-or-complex-sprint-structures"></a>Strukturen für große oder komplexe Sprints
 
-Bei einer kleinen Migration mit einem eigenständigen Migrationsteam kann ein einzelner Sprint alle vier Phasen der Migration für eine einzelne Workload umfassen (*Bewerten*, *Migrieren*, *Optimieren* sowie *Schützen und Verwalten*). Häufiger wird jedoch jeder dieser Prozesse von mehreren Teams mit unterschiedlichen Arbeitselementen für zahlreiche Sprints ausgeführt. Je nach Art der Aufgabe, Aufwand und Rollen können diese Sprints unterschiedliche Formen annehmen.
+Bei einer kleinen Migration mit einem eigenständigen Migrationsteam kann ein einzelner Sprint alle vier Phasen der Migration für eine einzelne Workload umfassen (_Bewerten_, _Migrieren_, _Optimieren_ sowie _Schützen und Verwalten_). Häufiger wird jedoch jeder dieser Prozesse von mehreren Teams mit unterschiedlichen Arbeitselementen für zahlreiche Sprints ausgeführt. Je nach Art der Aufgabe, Aufwand und Rollen können diese Sprints unterschiedliche Formen annehmen.
 
 - **Migrationsfactory:** Umfangreiche Migrationsvorgänge erfordern in einigen Fällen einen Ansatz, der einer Factory im Ausführungsmodell ähnelt. Bei diesem Modell wird den verschiedenen Teams die Ausführung eines spezifischen Migrationsprozesses (oder einer Teilmenge des Prozesses) zugeordnet. Nach Abschluss des Vorgangs wird das Ergebnis des Sprints eines Teams in das Backlog des nächsten Teams übernommen. Dies ist ein effizienter Ansatz für umfangreiche Migrationsvorgänge für das Rehosting vieler großer Workloads mit Tausenden virtuellen Computern, die die Phasen Bewertung, Architektur, Korrektur und Migration durchlaufen. Damit dieser Ansatz funktioniert, ist jedoch unbedingt eine neue homogene Umgebung mit optimierten Change Management- und Genehmigungsprozessen erforderlich.
 - **Migrationswellen:** Eine weitere Möglichkeit, die auch bei großen Migrationsvorgängen funktioniert, ist ein Wellenmodell. Bei diesem Modell ist die Arbeitsaufteilung nicht annähernd so klar. Die Teams übernehmen selbst die Ausführung von Migrationsprozessen für einzelne Workloads. Damit ändert sich jedoch die Art jedes Sprints. In einem Sprint kann das Team die Aufgaben für die Bewertung und Architektur abschließen. In einem weiteren Sprint könnte es den Migrationsvorgang beenden. Der Schwerpunkt eines weiteren Sprints könnte auf der Optimierung und dem Produktionsrelease liegen. Bei diesem Ansatz kann ein Kernteam die Übersicht über alle Workloads und die erforderlichen Prozesse behalten. Wenn Sie diesen Ansatz verfolgen, könnten die Vielfalt der Fähigkeiten und die unterschiedlichen Kontexte möglicherweise die Geschwindigkeit des Teams und damit den gesamten Migrationsprozess verlangsamen. Darüber hinaus können Hürden bei Genehmigungszyklen zu beträchtlichen Verzögerungen führen. Es ist bei diesem Modell wichtig, die Optionen im Releasebacklog im Blick zu behalten, damit das Team auch in Sperrzeiten weiterarbeitet. Außerdem ist es wichtig, die Teammitglieder untereinander zu schulen und sicherzustellen, dass die Fähigkeiten auch für den jeweiligen Sprint angemessen sind.

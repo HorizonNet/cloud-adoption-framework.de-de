@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: adf762a9c813b68905f0930670111a949565d55a
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 183c2a8ef8df5f72c51820c7a8ac7d593805f866
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885234"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94994393"
 ---
 # <a name="examples-of-agility-outcomes"></a>Beispiele für Agilitätsergebnisse
 
@@ -32,7 +32,7 @@ Bei allen Bemühungen zu cloudfähigen Innovationen ist die Zeit bis zur Marktei
 
 - **Beispiel 1:** Die europäische Abteilung einer in den USA ansässigen Firma muss zur Einhaltung der DSGVO-Vorschriften die Kundendaten in einer Datenbank für die eigenen Geschäfte in Großbritannien schützen. Ihre vorhandene Version von SQL Server unterstützt die erforderliche Sicherheit auf Zeilenebene nicht. Ein direktes Upgrade würde zu viele Unterbrechungen bedeuten. Durch die Verwendung von Azure SQL-Datenbank für Replikation und Upgrade der Datenbank implementiert der Kunde die erforderlichen Compliancemaßnahmen innerhalb weniger Wochen.
 
-- **Beispiel 2:** Ein Logistikunternehmen hat ein bisher nicht bedientes Marktsegment gefunden, benötigt aber eine neue Version der eigenen Flagship-Anwendung, um in dieses vorzudringen. Ein größerer Mitbewerber hat dies ebenfalls erkannt. Durch eine cloudfähige Anwendungsinnovation begeistert das Unternehmen die Kunden und ist durch einen DevOps-Entwicklungsansatz in der Lage, den langsameren und älteren Konkurrenten um *x* Monate zu schlagen. Dieser Sprung beim Markteinstieg sichert den Kundenstamm.
+- **Beispiel 2:** Ein Logistikunternehmen hat ein bisher nicht bedientes Marktsegment gefunden, benötigt aber eine neue Version der eigenen Flagship-Anwendung, um in dieses vorzudringen. Ein größerer Mitbewerber hat dies ebenfalls erkannt. Durch eine cloudfähige Anwendungsinnovation begeistert das Unternehmen die Kunden und ist durch einen DevOps-Entwicklungsansatz in der Lage, den langsameren und älteren Konkurrenten um _x_ Monate zu schlagen. Dieser Sprung beim Markteinstieg sichert den Kundenstamm.
 
 <!-- docutune:ignore "Jamey Shiels" "Vice President of Digital Experience" "Aurora Health Care" -->
 

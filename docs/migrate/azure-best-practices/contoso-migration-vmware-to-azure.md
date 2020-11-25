@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f68fe3adc1807926ab97ebbcf0b47f5eab960f8f
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 4c2e35b3401d4a4eaeb534befee9e33c4b1a83df
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713293"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996417"
 ---
 <!-- docutune:casing "HCX Bulk Migration" "HCX Cold Migration" -->
 
@@ -155,7 +155,7 @@ Informationen zur Erstellung einer privaten Cloud von Azure VMware Solution find
 
     ![Screenshot: Bereich im Azure-Portal zum Erstellen einer privaten Cloud von Azure VMware Solution](./media/contoso-migration-vmware-to-azure/create-private-cloud.png)
 
-1. Das Team vergewissert sich, dass die Bereitstellung der privaten Cloud von Azure VMware Solution abgeschlossen ist, indem es in der Ressourcengruppe die Ressource für die private Cloud auswählt. Als Status wird *Erfolgreich* angezeigt.
+1. Das Team vergewissert sich, dass die Bereitstellung der privaten Cloud von Azure VMware Solution abgeschlossen ist, indem es in der Ressourcengruppe die Ressource für die private Cloud auswählt. Als Status wird **Erfolgreich** angezeigt.
 
     ![Screenshot: Seite mit privater Cloud von Azure VMware Solution und Anzeige der erfolgreichen Bereitstellung](./media/contoso-migration-vmware-to-azure/validate-deployment.png)
 
@@ -168,7 +168,7 @@ Weitere Informationen finden Sie unter [Tutorial: Konfigurieren des Netzwerks f�
 1. Das Contoso-Team erstellt zunächst ein virtuelles Netzwerk mit einem Gatewaysubnetz.
 
     > [!IMPORTANT]
-    > Das Team muss einen Adressraum verwenden, der sich *nicht* mit dem beim Erstellen der privaten Cloud verwendeten Adressraum überlappt.
+    > Das Team muss einen Adressraum verwenden, der sich _nicht_ mit dem beim Erstellen der privaten Cloud verwendeten Adressraum überlappt.
 
 1. Das Team erstellt das ExpressRoute-VPN-Gateway und achtet dabei auf die Auswahl der richtigen SKU und wählt anschließend die Option **Bewerten + erstellen** aus.
 

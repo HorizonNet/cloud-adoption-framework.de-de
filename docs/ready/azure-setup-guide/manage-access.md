@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 87f5f5a21aba0035c6348e2a9d8e8621dedd0117
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: bf9414422e1ad9671fab21ea11c8e5744463dccd
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884435"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995277"
 ---
 # <a name="manage-access-to-your-azure-environment-with-role-based-access-control"></a>Verwalten des Zugriffs auf Ihre Azure-Umgebung per rollenbasierter Zugriffssteuerung
 

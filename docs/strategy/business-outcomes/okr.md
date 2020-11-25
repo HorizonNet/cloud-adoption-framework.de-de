@@ -7,14 +7,15 @@ ms.date: 10/21/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 92e193bd14969ad45cb717f22a5ffd10a5dca661
-ms.sourcegitcommit: 03f2c9cffc25690dcc5f8215f894e898d0f4ad0e
+ms.custom: think-tank
+ms.openlocfilehash: 0be8841fb83d2c00fb10a86bb103880ee59b7e7a
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93352137"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95447199"
 ---
-<!--docutune:casing WorkBoard -->
+<!-- docutune:casing WorkBoard -->
 
 # <a name="measure-business-outcomes-using-objectives-and-key-results-okrs"></a>Messen von Geschäftsergebnissen mithilfe von Zielen und wichtigen Ergebnissen (OKRs)
 
@@ -28,7 +29,7 @@ Moderne Betriebe erfordern moderne Möglichkeiten, um Geschäftsergebnisse zu me
 
 Viele Organisationen haben begonnen, Ziele und wichtige Ergebnisse (OKRs) einzuführen. OKRs haben sich bewährt als Treiber der Ausrichtung in komplexen Arbeitsumgebungen, als Förder von Innovationen sowie bei der Unterstützung von Personen, sich auf das Wesentliche zu konzentrieren. Die beiden Komponenten, aus denen OKRs bestehen, sind ein Ziel und wichtige Ergebnisse für dieses Ziel. Ein Ziel ist eine formulierte Absicht: Was versucht das Team zu erreichen, und warum ist dies wichtig? Wichtige Ergebnisse sind spezifische Ergebnisse, mit denen die Auswirkungen auf das Ziel verfolgt werden.
 
-**Ziel** : Klarheit und Absicht.
+**Ziel**: Klarheit und Absicht.
 
 **Wichtige Ergebnisse:** Maße für Erfolg innerhalb eines Quartals.
 
@@ -72,7 +73,7 @@ Hier sehen Sie ein paar Beispiele für OKRs:
 1. Zunahme um 12 % bei der Bindung von Kursteilnehmern, gemessen durch interne Systeme.
 1. Zufriedenheit von 95 % auf Grundlage vierteljährlicher Umfragen bei Erziehungsberechtigten.
 
-**Ziel 2** : Aufbau einer Technologieplattform, die jede Person in unserem Unternehmen bei Innovation und Kreativität unterstützt.
+**Ziel 2**: Aufbau einer Technologieplattform, die jede Person in unserem Unternehmen bei Innovation und Kreativität unterstützt.
 
 **Wichtige Ergebnisse:**
 
@@ -80,7 +81,7 @@ Hier sehen Sie ein paar Beispiele für OKRs:
 1. Jedes Team mit mindestens zwei Mitgliedern verwendet die Microsoft Power Platform.
 1. Aufnehmen neuer Cloudtechnologien wie Datenanalysen und Machine Learning in alle an Kunden gerichtete Anwendungen.
 
-**Ziel 3** : Transformieren unseres Ansatzes von vertriebsgesteuert zu datengesteuert.
+**Ziel 3**: Transformieren unseres Ansatzes von vertriebsgesteuert zu datengesteuert.
 
 **Wichtige Ergebnisse:**
 
@@ -102,7 +103,7 @@ Fünf Schritte können Ihrer Organisation dabei helfen, mit OKRs weiterzukommen:
 
 **Schritt 5: Verbessern:** Fahren Sie beständig mit der Verbesserung, Überprüfung und dem Überdenken fort, wie Sie innerhalb der Organisation die Vernetzung weiter vorantreiben können. OKRs in Tabellen können nützlich sein, aber eine Organisation kann am meisten davon profitieren, dass sich alle an der Erfüllung der Ziele beteiligen und Erkenntnisse aus den angepassten Daten gewinnen.
 
-Wenden Sie sich an [WorkBoard](https://appsource.microsoft.com/en-us/marketplace/co-sell/SOL-31525-NGJ?debug=true%2F%3FignoreAutoSignIn%3Dtrue&tab=Overview), um anzufangen.
+Wenden Sie sich an [WorkBoard](https://appsource.microsoft.com/en-us/marketplace/co-sell/SOL-31525-NGJ), um anzufangen.
 
 > [!div class="nextstepaction"]
 > [Ausrichten von Bemühungen für Lernmetriken](../learning-metrics.md)

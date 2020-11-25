@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 71bb643a71f984fc9eb6b6b872f7ad6cd8890a54
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 36987a60f7dcf5144623338074991678f60ccf36
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604369"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880907"
 ---
 <!-- docutune:casing "Oxford English Dictionary" -->
 
@@ -20,7 +20,7 @@ ms.locfileid: "89604369"
 
 „Not macht erfinderisch“. Dieses Sprichwort verdeutlicht die Unverwüstlichkeit des menschlichen Geistes und unseren natürlichen Erfindungsdrang. Wie im Oxford English Dictionary erläutert wird: „Wenn der Bedarf für etwas zwingend erforderlich wird, ist man gezwungen, Wege zu finden, dieses Ziel umzusetzen oder zu erreichen“. Nur wenige würden diese universellen Wahrheiten über Erfindungsreichtum leugnen. Wie unter [Innovation in der digitalen Wirtschaft](./index.md) beschrieben, erfordert jedoch Innovation ein Gleichgewicht zwischen Erfindung neuer und Einführung vorhandener Technologien.
 
-In Fortführung dieser Analogie stammen Innovationen aus einem größeren Bereich. *Kundenanforderungen sind ein wichtiger treibender Faktor für Innovationen.* Die Entwicklung einer Lösung, die Innovationen vorantreibt, erfordert einen berechtigten Kundenbedarf, der den Kunden dazu bewegt, zurückzukehren, um kritische Herausforderungen zu lösen. Diese Lösungen basieren auf den Bedürfnissen eines Kunden und nicht auf seinen Wünschen oder Launen. Um seine wahren Bedürfnisse zu ermitteln, beginnen wir mit Empathie – einem tiefen Verständnis für die Erfahrungen des Kunden. Empathie ist eine unterentwickelte soziale Kompetenz bei vielen Engineers, Produktmanagern und sogar Führungskräften. Glücklicherweise haben die vielfältigen Interaktionen und das rasante Tempo bei der Entwicklung der Rolle des Cloudarchitekten bereits den Anstoß dazu gegeben, dieses Einfühlungsvermögen zu entwickeln.
+In Fortführung dieser Analogie stammen Innovationen aus einem größeren Bereich. _Kundenanforderungen sind ein wichtiger treibender Faktor für Innovationen._ Die Entwicklung einer Lösung, die Innovationen vorantreibt, erfordert einen berechtigten Kundenbedarf, der den Kunden dazu bewegt, zurückzukehren, um kritische Herausforderungen zu lösen. Diese Lösungen basieren auf den Bedürfnissen eines Kunden und nicht auf seinen Wünschen oder Launen. Um seine wahren Bedürfnisse zu ermitteln, beginnen wir mit Empathie – einem tiefen Verständnis für die Erfahrungen des Kunden. Empathie ist eine unterentwickelte soziale Kompetenz bei vielen Engineers, Produktmanagern und sogar Führungskräften. Glücklicherweise haben die vielfältigen Interaktionen und das rasante Tempo bei der Entwicklung der Rolle des Cloudarchitekten bereits den Anstoß dazu gegeben, dieses Einfühlungsvermögen zu entwickeln.
 
 Warum ist Empathie so wichtig? Von der ersten Veröffentlichung eines Minimum Viable Product (MVP) bis hin zur allgemeinen Verfügbarkeit einer marktgerechten Lösung hilft uns die Kundenempathie, die Erfahrungen des Kunden zu verstehen und zu teilen. Empathie hilft uns dabei, eine bessere Lösung zu entwickeln. Noch wichtiger ist, dass Empathie uns besser positioniert, Lösungen zu erfinden, die die Übernahme von Technologien fördern. In einer digitalen Wirtschaft können diejenigen, die am ehesten bereit sind, sich in die Kundenbedürfnisse einzufühlen, eine bessere Zukunft erschaffen, die den Markt neu definiert und anführt.
 

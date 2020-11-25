@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 9faf59eff7bba1a8c82abbfc263fa160aa593086
-ms.sourcegitcommit: 8e5b670151cc8da0934037e23a1ef1609c6b2cc2
+ms.openlocfilehash: 3f77b3f9667661f2e554f0e94050ee4bc29f0c3d
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94378867"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880822"
 ---
 # <a name="empower-adoption"></a>Unterstützen der Einführung
 
@@ -93,9 +93,11 @@ GitHub, die größte Entwicklercommunity weltweit, ist das Herzstück der Open-S
 
 Für Innovationen verwenden viele Entwickler Open-Source-Code. 80 bis 90 Prozent der neuen Anwendungsentwicklung beginnt mit Open-Source-Code. Bei Open-Source geht es nicht nur um Code. Es geht auch darum, dass sich Communitys und Entwickler auf der ganzen Welt vernetzen. Durch die Nutzung eines offenen Entwicklungsmodells mit GitHub können Teams innovativ sein und zusammenarbeiten, Sicherheitsrisiken frühzeitig erkennen und fachliches Talent entdecken. Entwicklungsteams von Unternehmen können GitHub-Repositorys in Microsoft Teams und Azure integrieren. Teams ist die einzige Lösung, die Chats, Sprache und Zusammenarbeit mit der Leistungsfähigkeit von Microsoft Office-Anwendungen, Meetings und Workflows von Geschäftsprozessen auf einer einzelnen Benutzeroberfläche vereint. Es ist der Dreh- und Angelpunkt für Teamarbeit und Innovation.
 
+<!-- docutune:ignore "Open source starts" "Open source on Azure" -->
+
 ### <a name="learn-more"></a>Weitere Informationen
 
-- [Open-Source beginnt auf GitHub](https://azure.microsoft.com/en-in/products/github/)
+- [Open-Source beginnt auf GitHub](https://azure.microsoft.com/products/github/)
 - [Open-Source in Azure](https://azure.microsoft.com/overview/choose-azure-opensource)
 - [Microsoft Teams](/MicrosoftTeams/teams-overview)
 

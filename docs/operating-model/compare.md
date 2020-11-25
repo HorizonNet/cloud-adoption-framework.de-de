@@ -8,16 +8,16 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
 ms.custom: operating-model
-ms.openlocfilehash: aac174a109954c04fa192e4d2d62926433d95dfc
-ms.sourcegitcommit: 26bde9cb5de37383bdfbd682b3676fbcc584081c
+ms.openlocfilehash: f4942f91b5ac265679a8cfb6545be9b81d459550
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89510582"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995923"
 ---
 # <a name="compare-common-cloud-operating-models"></a>Vergleichen gängiger Cloudbetriebsmodelle
 
-Betriebsmodelle sind basierend auf aktuellen Anforderungen und Einschränkungen einzigartig und spezifisch für das Unternehmen, das sie jeweils unterstützen. Diese Einzigartigkeit soll jedoch nicht bedeuten, dass Betriebsmodelle nicht *generalisierbar* wären. Es gibt mehrere gängige Muster für Betriebsmodelle für Kunden. In diesem Artikel erhalten Sie einen Überblick über die vier häufigsten Muster.
+Betriebsmodelle sind basierend auf aktuellen Anforderungen und Einschränkungen einzigartig und spezifisch für das Unternehmen, das sie jeweils unterstützen. Diese Einzigartigkeit soll jedoch nicht bedeuten, dass Betriebsmodelle nicht _generalisierbar_ wären. Es gibt mehrere gängige Muster für Betriebsmodelle für Kunden. In diesem Artikel erhalten Sie einen Überblick über die vier häufigsten Muster.
 
 ## <a name="operating-model-comparison"></a>Vergleich der Betriebsmodelle
 

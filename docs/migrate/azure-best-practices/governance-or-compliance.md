@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: f38e8de88c38ef27ca6148bd5ff61c1dfdbc1b7e
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 8449ccec7252e35f0ed113c3d9c7cb29de792716
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574804"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996178"
 ---
 # <a name="governance-or-compliance-strategy"></a>Strategie für Governance bzw. Compliance
 
@@ -30,7 +30,7 @@ Die Konfiguration der grundlegenden Azure-Umgebung kann sich erheblich ändern, 
 
 **ISO 27001-Blaupausen für die Compliance:** Wenn Ihre Organisation ISO-Compliancestandards einhalten muss, kann das [Blaupausenbeispiel „ISO 27001: Gemeinsame Dienste“](/azure/governance/blueprints/samples/iso27001-shared) als effektiveres MVP fungieren. Durch die Blaupause können umfassendere Governanceeinschränkungen bereits frühzeitig im iterativen Prozess zu generiert werden. Das [Blaupausenbeispiel „ISO 27001: App Service-Umgebungs-/SQL-Datenbank-Workload“](/azure/governance/blueprints/samples/iso27001-ase-sql-workload) baut auf der Blaupause für gemeinsame Dienste auf, um Kontrollen zuzuordnen und eine allgemeine Architektur für eine Anwendungsumgebung bereitzustellen.
 
-**CAF-Zielzone (Cloud Adoption Framework) auf Unternehmensebene:** Es kann sein, dass Sie einen robusteren Ausgangspunkt für die Governance benötigen. In diesem Fall können Sie ggf. die [CAF-Zielzonen auf Unternehmensebene](../../ready/enterprise-scale/index.md) verwenden. Bei der CAF-Zielzone (Cloud Adoption Framework) auf Unternehmensebene stehen Einführungsteams im Fokus, die mittelfristig (innerhalb von 24 Monaten) das Ziel haben, mehr als 1.000 Assets (Anwendungen, Infrastruktur oder Datenassets) in der Cloud zu hosten. Die CAF-Zielzone auf Unternehmensebene ist die *erste Wahl* für komplexe Governanceszenarien für diese umfangreicheren Cloudeinführungsmaßnahmen.
+**CAF-Zielzone (Cloud Adoption Framework) auf Unternehmensebene:** Es kann sein, dass Sie einen robusteren Ausgangspunkt für die Governance benötigen. In diesem Fall können Sie ggf. die [CAF-Zielzonen auf Unternehmensebene](../../ready/enterprise-scale/index.md) verwenden. Bei der CAF-Zielzone (Cloud Adoption Framework) auf Unternehmensebene stehen Einführungsteams im Fokus, die mittelfristig (innerhalb von 24 Monaten) das Ziel haben, mehr als 1.000 Assets (Anwendungen, Infrastruktur oder Datenassets) in der Cloud zu hosten. Die CAF-Zielzone auf Unternehmensebene ist die erste Wahl für komplexe Governanceszenarien für diese umfangreicheren Cloudeinführungsmaßnahmen.
 
 ### <a name="partnership-option-to-complete-prerequisites"></a>Partnerschaften zum Erfüllen von Voraussetzungen
 

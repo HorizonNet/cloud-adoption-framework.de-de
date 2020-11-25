@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 7ed45f10e54ddfb4bac090dd9815e61b503b6003
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: f81930fc3fd90a83cfb3a175d744639cdd0290dd
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713376"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996297"
 ---
 <!-- cSpell:ignore DATEADD DATEDIFF Inmon NUSI Informatica Talend BTEQ FASTEXPORT QUALIFY ORC Parquet "Parallel Data Transporter" Attunity "Qlik Replicate" -->
 
@@ -221,7 +221,7 @@ In Bezug auf die Optimierung bestehen gewisse Unterschiede zwischen den Plattfor
 
   Bei Verknüpfungen großer Tabellen miteinander wird durch die Hashverteilung von einer Tabelle oder (idealerweise beiden) in den Joinspalten sichergestellt, dass die Joinverarbeitung lokal ausgeführt werden kann, da sich die zu verknüpfenden Datenzeilen bereits auf demselben Verarbeitungsknoten befinden.
 
-  Azure Synapse sieht eine zusätzliche Methode vor, um kleine und große Tabellen in einem Sternschemamodell lokal zu verknüpfen (oft als *Verknüpfung zwischen einer Dimensions- und einer Faktentabelle* bezeichnet). Sie replizieren die kleinere Tabelle auf allen Knoten. Dies stellt sicher, dass jeder Wert des Verknüpfungsschlüssels für die größere Tabelle eine übereinstimmende Dimensionszeile enthält, die lokal verfügbar ist. Der Mehraufwand für die Replikation der Dimensionstabelle ist relativ gering, sofern die Tabellen nicht groß sind. Andernfalls wäre die Verwendung einer Hashverteilung (wie zuvor beschrieben) vorzuziehen.
+  Azure Synapse sieht eine zusätzliche Methode vor, um kleine und große Tabellen in einem Sternschemamodell lokal zu verknüpfen (oft als _Verknüpfung zwischen einer Dimensions- und einer Faktentabelle_ bezeichnet). Sie replizieren die kleinere Tabelle auf allen Knoten. Dies stellt sicher, dass jeder Wert des Verknüpfungsschlüssels für die größere Tabelle eine übereinstimmende Dimensionszeile enthält, die lokal verfügbar ist. Der Mehraufwand für die Replikation der Dimensionstabelle ist relativ gering, sofern die Tabellen nicht groß sind. Andernfalls wäre die Verwendung einer Hashverteilung (wie zuvor beschrieben) vorzuziehen.
 
 - **Datenindizierung:** Azure Synapse bietet verschiedene Indizierungsoptionen. Diese unterscheiden sich jedoch in der Funktionsweise und der Nutzung von Indizierungsoptionen in Teradata. Weitere Informationen zu den Indizierungsoptionen in Azure Synapse finden Sie unter [Entwurfstabellen in einem Azure Synapse-Pool](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-overview).
 

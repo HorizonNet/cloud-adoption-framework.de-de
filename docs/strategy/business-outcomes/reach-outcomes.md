@@ -7,19 +7,19 @@ ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 8bbc1126e8f86aed11121e857fe7372559b4ba68
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 9471b396885c3eb3e29d4e5c9892cf572c8f6f5c
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884605"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996858"
 ---
 <!-- cSpell:ignore Personalizer -->
 <!-- docutune:ignore "global reach" -->
 
 # <a name="examples-of-global-reach-outcomes"></a>Beispiele für globale Reichweitenergebnisse
 
-Wie bereits in den [Geschäftsergebnissen](./index.md) beschrieben, können mehrere mögliche Geschäftsergebnisse als Grundlage für Unterhaltungen zur Transformationsjourney mit dem Unternehmen dienen. In diesem Artikel konzentrieren wir uns auf eine gängige Geschäftskennzahl: Reichweite. *Reichweite* ist ein präziser Begriff, der sich in diesem Fall auf die Globalisierungsstrategie eines Unternehmens bezieht. Kenntnisse der Globalisierungsstrategie des Unternehmens helfen Ihnen dabei, die Geschäftsergebnisse als Ziel der Transformationsjourney eines Unternehmens zu formulieren.
+Wie bereits in den [Geschäftsergebnissen](./index.md) beschrieben, können mehrere mögliche Geschäftsergebnisse als Grundlage für Unterhaltungen zur Transformationsjourney mit dem Unternehmen dienen. In diesem Artikel konzentrieren wir uns auf eine gängige Geschäftskennzahl: Reichweite. _Reichweite_ ist ein präziser Begriff, der sich in diesem Fall auf die Globalisierungsstrategie eines Unternehmens bezieht. Kenntnisse der Globalisierungsstrategie des Unternehmens helfen Ihnen dabei, die Geschäftsergebnisse als Ziel der Transformationsjourney eines Unternehmens zu formulieren.
 
 Fortune 500-Unternehmen und kleinere Unternehmen fokussieren sich seit mehr als drei Jahrzehnten auf die Globalisierung von Diensten und Kunden, und die meisten Unternehmen sind wahrscheinlich am globalen Handel beteiligt, da die Globalisierung weiterhin im Fokus steht. Das Hosting von Rechenzentren auf der ganzen Welt kann mehr als 80 Prozent des jährlichen IT-Budgets beanspruchen, und große Netzwerke, die private Leitungen zum Verbinden dieser Rechenzentren verwenden, können Millionen von Dollar pro Jahr Kosten. Die Unterstützung globaler Geschäfte ist daher schwierig und teuer.
 
@@ -31,7 +31,7 @@ Die Erschließung eines neuen Markts kann während einer Transformation eines de
 
 ### <a name="manufacturing-example"></a>Beispiel für Fertigung
 
-Ein Kosmetikhersteller hat einen Trend entdeckt. Einige Produkte werden in die Region Asien-Pazifik geliefert, obwohl dort keine Vertriebsteams arbeiten. Die Mindestanforderungen an die Systeme für Außendienstmitarbeiter sind zwar niedrig, aber die Latenz verhindert eine RAS-Lösung. Der Vice President des Vertriebsteams möchte ein Experiment mit Vertriebsteams in Japan und Südkorea starten, um trotzdem von diesem Trend profitieren zu können. Da das Unternehmen bereits zur Cloud migriert ist, konnte es die erforderlichen Systeme in Japan und Südkorea innerhalb weniger Tage bereitstellen. So konnte der Vertriebsleiter den Umsatz in der Region innerhalb von drei Monaten um *x %* steigern. Diese beiden Märkte übertreffen andere Regionen auf der Welt auch weiterhin und führen zu Vertriebschancen in der gesamten Region.
+Ein Kosmetikhersteller hat einen Trend entdeckt. Einige Produkte werden in die Region Asien-Pazifik geliefert, obwohl dort keine Vertriebsteams arbeiten. Die Mindestanforderungen an die Systeme für Außendienstmitarbeiter sind zwar niedrig, aber die Latenz verhindert eine RAS-Lösung. Der Vice President des Vertriebsteams möchte ein Experiment mit Vertriebsteams in Japan und Südkorea starten, um trotzdem von diesem Trend profitieren zu können. Da das Unternehmen bereits zur Cloud migriert ist, konnte es die erforderlichen Systeme in Japan und Südkorea innerhalb weniger Tage bereitstellen. So konnte der Vertriebsleiter den Umsatz in der Region innerhalb von drei Monaten um _x %_ steigern. Diese beiden Märkte übertreffen andere Regionen auf der Welt auch weiterhin und führen zu Vertriebschancen in der gesamten Region.
 
 ### <a name="retail-example"></a>Beispiel für Einzelhandel
 

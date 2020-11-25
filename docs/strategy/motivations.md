@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 82cfad675b99e158ad743c629032c2d9b4b4044a
-ms.sourcegitcommit: 501c2d458b34ae5e38984c682852835309a25b4d
+ms.openlocfilehash: a1db0c34175e692d17d9061212ed2f35e929a83e
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91952351"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94994512"
 ---
 # <a name="motivations-why-are-we-moving-to-the-cloud"></a>Beweggründe: Motivationen für den Wechsel in die Cloud
 
@@ -42,11 +42,11 @@ Um eine klügere Entscheidungsfindung sicherzustellen, sollten alle Beteiligten 
 
 ## <a name="motivation-driven-strategies"></a>Motivationsorientierte Strategien
 
-In diesem Abschnitt werden die Beweggründe für *Migration* und *Innovation* sowie die zugehörigen Strategien hervorgehoben.
+In diesem Abschnitt werden die Beweggründe für _Migration_ und _Innovation_ sowie die zugehörigen Strategien hervorgehoben.
 
 ### <a name="migration"></a>Migration
 
-Die Beweggründe für *Migration* weiter oben in der Liste „Beweggründe“ sind die häufigsten (aber nicht unbedingt die wichtigsten) Gründe für einen Wechsel in die Cloud. Diese Ergebnisse sind wichtig, aber sie werden am effektivsten für den Umstieg auf andere, nützlichere Weltbilder genutzt. Dieser wichtige erste Schritt für die Cloudeinführung wird häufig als *Cloudmigration* bezeichnet. Das Framework bezieht sich auf die Strategie zum Ausführen einer Cloudmigration mit dem Begriff [Migrieren](../get-started/migrate.md).
+Die Beweggründe für _Migration_ weiter oben in der Liste „Beweggründe“ sind die häufigsten (aber nicht unbedingt die wichtigsten) Gründe für einen Wechsel in die Cloud. Diese Ergebnisse sind wichtig, aber sie werden am effektivsten für den Umstieg auf andere, nützlichere Weltbilder genutzt. Dieser wichtige erste Schritt für die Cloudeinführung wird häufig als _Cloudmigration_ bezeichnet. Das Framework bezieht sich auf die Strategie zum Ausführen einer Cloudmigration mit dem Begriff [Migrieren](../get-started/migrate.md).
 
 Einige Beweggründe passen gut zu einer Migrationsstrategie. Die Motive am Listenanfang werden wahrscheinlich deutlich weniger geschäftliche Auswirkungen haben als die am Listenende.
 
@@ -60,7 +60,7 @@ Einige Beweggründe passen gut zu einer Migrationsstrategie. Die Motive am Liste
 
 ### <a name="innovation"></a>Innovation
 
-Daten sind die neue Ware. Moderne Anwendungen sind die Lieferkette, die die Daten in verschiedene Umgebungen weiterleitet. Auf dem heutigen Geschäftsmarkt findet man nur sehr schwer transformative Produkte oder Dienste, deren Grundlage nicht Daten, Erkenntnisse und Kundenerfahrungen bilden. Die Beweggründe, die weiter unten in der Liste *Innovation* aufgeführt sind, beziehen sich auf eine Technologiestrategie, die in diesem Framework als [innovative Methodik](../get-started/innovate.md) bezeichnet wird.
+Daten sind die neue Ware. Moderne Anwendungen sind die Lieferkette, die die Daten in verschiedene Umgebungen weiterleitet. Auf dem heutigen Geschäftsmarkt findet man nur sehr schwer transformative Produkte oder Dienste, deren Grundlage nicht Daten, Erkenntnisse und Kundenerfahrungen bilden. Die Beweggründe, die weiter unten in der Liste _Innovation_ aufgeführt sind, beziehen sich auf eine Technologiestrategie, die in diesem Framework als [innovative Methodik](../get-started/innovate.md) bezeichnet wird.
 
 Die folgende Liste enthält Beweggründe, die dafür sorgen, dass sich eine IT-Organisation mehr auf eine Innovations- als auf eine Migrationsstrategie konzentriert.
 

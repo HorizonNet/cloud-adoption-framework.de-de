@@ -7,12 +7,13 @@ ms.date: 09/18/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 171fdfc896ec0669a010be9a9afb33175b5210a6
-ms.sourcegitcommit: c8979feb0efeb54dcef7a0b5e4084ae37016020a
+ms.custom: think-tank
+ms.openlocfilehash: 502dba2d970f46d8e929755a9c05be270724f501
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93122096"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95447097"
 ---
 <!-- docutune:casing "Movie Tickets Online" -->
 

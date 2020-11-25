@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.custom: organize
-ms.openlocfilehash: 693afd1c149890e4552a0eec27ce21b29acd189e
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 98439b597d658c870e05f52956f1cbe9399b437d
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712237"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995366"
 ---
 # <a name="build-technical-skills"></a>Erwerben von technischen Kompetenzen
 

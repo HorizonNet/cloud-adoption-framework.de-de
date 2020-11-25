@@ -7,12 +7,13 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: f268e1a91f70b3cfb114e8769ef6cea66077eee3
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.custom: think-tank
+ms.openlocfilehash: f3174a439376cbb23f1446a1bdca30f77e613363
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604567"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95446826"
 ---
 <!-- docutune:casing "natural language understanding" -->
 <!-- cSpell:ignore Twilio -->
@@ -59,7 +60,7 @@ Ihr Bot ist ein Webdienst, der eine Konversationsoberfläche implementiert und m
 
 Im Rahmen von Azure Bot Service und Bot Framework stehen zusätzliche Komponenten zur Verfügung, mit denen Sie die Funktionalität Ihres Bots erweitern können.
 
-| Funktion | BESCHREIBUNG | Link |
+| Funktion | Beschreibung | Link |
 | --- | --- | --- |
 | Hinzufügen der Verarbeitung natürlicher Sprache | Ermöglichen Sie es Ihrem Bot, natürliche Sprache zu verstehen, Rechtschreibfehler zu erkennen, Sprachfunktionen zu verwenden sowie die Absichten des Benutzers zu erkennen. | Verwenden von [LUIS](/azure/bot-service/bot-builder-howto-v4-luis?view=azure-bot-service-4.0) (Language Understanding Intelligent Service) |
 | Beantworten von Fragen | Fügen Sie eine Wissensdatenbank hinzu, um Fragen von Benutzern auf natürlichere, mit einer Unterhaltung vergleichbare Weise zu beantworten. | Verwenden von [QnA Maker](/azure/bot-service/bot-builder-howto-qna?view=azure-bot-service-4.0) |

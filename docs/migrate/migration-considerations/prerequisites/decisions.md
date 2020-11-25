@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 42f72ce30d4995f7e8dd79202c01f8fecea1986a
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.openlocfilehash: 06cd833f95e3c0403371141cfaaf6ef171065085
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88848362"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995906"
 ---
 <!-- cSpell:ignore migrateable -->
 
@@ -77,7 +77,7 @@ Häufig ist ein zwingendes und zeitkritisches Geschäftsereignis der Grund für 
 Dokumentieren Sie vor dem Fortfahren die folgenden Annahmen, und teilen Sie diese dem Cloudstrategieteam und den Cloudeinführungsteams mit:
 
 - Geschäftsergebnisse.
-- Rollen, die für die Migrationsprozesse *Bewerten*, *Migrieren*, *Optimieren* und *Sichern und Verwalten* dokumentiert und präzisiert sind.
+- Rollen, die für die Migrationsprozesse _Bewerten_, _Migrieren_, _Optimieren_ und _Sichern und Verwalten_ dokumentiert und präzisiert sind.
 - Definition of Done, separat für diese Migrationsprozesse dokumentiert und optimiert.
 - Aufwandstyp.
 - Aufwandsumfang.

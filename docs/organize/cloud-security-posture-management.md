@@ -7,14 +7,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 05/15/2020
-ms.openlocfilehash: 3f36b60a37a8e7d86ead4c0171e109f350bf0ecc
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 96bb73571c0f876f90f2e3132cb8751232bae653
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877125"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996314"
 ---
-<!--docsTest:casing TVM -->
+<!-- docsTest:casing TVM -->
 
 # <a name="function-of-cloud-security-posture-management"></a>Funktion der Verwaltung des Cloudsicherheitsstatus
 

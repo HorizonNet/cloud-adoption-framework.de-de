@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 9c1377bfed389d435403f9f72dd6ac4e48ed8ee8
-ms.sourcegitcommit: 8e5b670151cc8da0934037e23a1ef1609c6b2cc2
+ms.openlocfilehash: 48e429673c3921a91e441abde7d14c3d9df7400f
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94378935"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997385"
 ---
 <!-- docutune:disable -->
 <!-- cSpell:ignore appcs arck cdnp cdne osdisk westeurope usgovia accountlookup messagequery -->
@@ -22,7 +22,7 @@ ms.locfileid: "94378935"
 
 Organisieren Sie Ihre Cloudressourcen so, dass das operative Management und die Buchhaltungsanforderungen unterstützt werden. Gut definierte Namens- und Kennzeichnungskonventionen für Metadaten ermöglichen das schnelle Finden und Verwalten von Ressourcen. Diese Konventionen helfen auch dabei, Cloudnutzungskosten mithilfe von Mechanismen zur Rückbuchung und verbrauchsbasierter Kostenzuteilung an Geschäftsteams auszurichten.
 
-Die genaue Darstellung und Benennung von Ressourcen ist für Sicherheitszwecke von entscheidender Bedeutung. Im Falle eines Sicherheitsvorfalls ist die schnelle Identifizierung der betroffenen Systeme, der potenziellen geschäftlichen Auswirkungen und der Art und Weise, wie sie verwendet werden, entscheidend für gute Risikoentscheidungen. Sicherheitsdienste wie [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-introduction) und [Azure Sentinel](https://docs.microsoft.com/azure/sentinel) verweisen auf Ressourcen und deren zugehörige Protokollierungs-/Warnungsinformationen nach Ressourcennamen.
+Die genaue Darstellung und Benennung von Ressourcen ist für Sicherheitszwecke von entscheidender Bedeutung. Im Falle eines Sicherheitsvorfalls ist die schnelle Identifizierung der betroffenen Systeme, der potenziellen geschäftlichen Auswirkungen und der Art und Weise, wie sie verwendet werden, entscheidend für gute Risikoentscheidungen. Sicherheitsdienste wie [Azure Security Center](/azure/security-center/security-center-introduction) und [Azure Sentinel](/azure/sentinel) verweisen auf Ressourcen und deren zugehörige Protokollierungs-/Warnungsinformationen nach Ressourcennamen.
 
 Azure definiert [Benennungsregeln und -einschränkungen für Azure-Ressourcen](/azure/azure-resource-manager/management/resource-name-rules). Dieser Leitfaden enthält detaillierte Empfehlungen zur Unterstützung der Enterprise Cloud-Einführung.
 
@@ -226,14 +226,14 @@ Welche Tags Sie für Ressourcen anwenden und welche Tags erforderlich oder optio
 | Anwendungsname          | Der Name der Anwendung, des Diensts oder der Workload, mit der die Ressource verknüpft ist.                                                                                                                                       | _ApplicationName_ | _{Anwendungsname}_                                               |
 | Name der genehmigenden Person             | Die Person, die für das Genehmigen der Kosten zuständig ist, die mit dieser Ressource verbunden sind.                                                                                                                                                     | _Approver_        | _{E-Mail}_                                                  |
 | Erforderliches/genehmigtes Budget  | Der Geldbetrag, der für diese Anwendung, diesen Dienst oder diese Workload zugeordnet ist.                                                                                                                                                          | _BudgetAmount_    | _{\$}_                                                     |
-| Geschäftseinheit             | Oberste Abteilung Ihres Unternehmens, die Besitzer des Abonnements oder der Workload ist, zu dem oder der die Ressource gehört. In kleineren Unternehmen kann dieses Tag ein einzelnes Organisations- oder freigegebenes Element des Unternehmens auf oberster Ebene darstellen. | _BusinessUnit_    | _FINANZEN_ , _MARKETING_ , _{Produktname}_ , _CORP_ , _FREIGABE_ |
+| Geschäftseinheit             | Oberste Abteilung Ihres Unternehmens, die Besitzer des Abonnements oder der Workload ist, zu dem oder der die Ressource gehört. In kleineren Unternehmen kann dieses Tag ein einzelnes Organisations- oder freigegebenes Element des Unternehmens auf oberster Ebene darstellen. | _BusinessUnit_    | _FINANZEN_, _MARKETING_, _{Produktname}_ , _CORP_, _FREIGABE_ |
 | Kostenstelle               | Buchhaltungskostenstelle, die dieser Ressource zugeordnet ist.                                                                                                                                                                | _CostCenter_      | _{Zahl}_                                                 |
-| Notfallwiederherstellung         | Geschäftliche Bedeutung der Anwendung, Workload oder dieses Diensts.                                                                                                                                                       | _DR_              | _Unternehmenskritisch_ , _Kritisch_ , _Unverzichtbar_                |
+| Notfallwiederherstellung         | Geschäftliche Bedeutung der Anwendung, Workload oder dieses Diensts.                                                                                                                                                       | _DR_              | _Unternehmenskritisch_, _Kritisch_, _Unverzichtbar_                |
 | Enddatum des Projekts   | Datum, zu dem die Deaktivierung der Anwendung, Workload oder dieses Diensts geplant ist.                                                                                                                                         | _EndDate_         | _{Datum}_                                                   |
-| Environment               | Bereitstellungsumgebung der Anwendung, Workload oder dieses Diensts.                                                                                                                                                     | _Env_             | _Prod_ , _Entw_ , _QA_ , _Stage_ , _Test_                       |
+| Environment               | Bereitstellungsumgebung der Anwendung, Workload oder dieses Diensts.                                                                                                                                                     | _Env_             | _Prod_, _Entw_, _QA_, _Stage_, _Test_                       |
 | Name des Besitzers                | Besitzer der Anwendung, der Workload oder des Diensts.                                                                                                                                                                      | _Besitzer_           | _{E-Mail}_                                                  |
 | Name der anfordernden Person            | Der Benutzer, der die Erstellung dieser Anwendung angefordert hat.                                                                                                                                                                 | _Name der anfordernden Person_       | _{E-Mail}_                                                  |
-| Dienstklasse             | Vereinbarung zum Servicelevel der Anwendung, der Workload oder des Diensts.                                                                                                                                              | _ServiceClass_    | _Dev_ , _Bronze_ , _Silver_ , _Gold_                          |
+| Dienstklasse             | Vereinbarung zum Servicelevel der Anwendung, der Workload oder des Diensts.                                                                                                                                              | _ServiceClass_    | _Dev_, _Bronze_, _Silver_, _Gold_                          |
 | Startdatum des Projekts | Datum, zu dem die Anwendung, Workload oder dieser Dienst erstmalig bereitgestellt wurde.                                                                                                                                                  | _StartDate_       | _{Datum}_                                                   |
 
 ## <a name="example-names"></a>Namensbeispiele
@@ -257,7 +257,7 @@ Der folgende Abschnitt enthält einige Namensbeispiele für häufige Azure-Resso
 | Verwaltete Identität                | Ressourcengruppe                        | id-\<App or service name\>                                  | id-appcn-keda-prod-eus-001                                                                         |
 
 > [!NOTE]
-> Die zuvor und anderswo in diesem Dokument verwendeten Beispielnamen verweisen auf eine dreistellige Zeichenauffüllung (\<\#\#\#\>). Das heißt,  mktg-prod- *001*
+> Die zuvor und anderswo in diesem Dokument verwendeten Beispielnamen verweisen auf eine dreistellige Zeichenauffüllung (\<\#\#\#\>). Das heißt, mktg-prod-*001*
 >
 > Auffüllen unterstützt die Lesbarkeit für Menschen sowie das Sortieren von Ressourcen, wenn diese in einer Konfigurationsverwaltungs-Datenbank (CMDB), einem IT-Ressourcenverwaltungstool oder in herkömmlichen Buchhaltungstools verwaltet werden. Wenn die bereitgestellte Ressource als Teil eines größeren Bestands oder Portfolios von IT-Ressourcen zentral verwaltet wird, richtet sich der Ansatz des Auffüllens an Oberflächen aus, die diese Systeme zur Verwaltung des Bestands verwenden.
 >

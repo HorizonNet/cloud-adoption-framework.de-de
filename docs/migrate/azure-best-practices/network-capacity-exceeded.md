@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: d742d6528f4128ef8609a97620b6bcb9703aa60c
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 3429f0a47e5d8ed3d5bc88ea95e46df112646d84
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88570554"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996909"
 ---
 <!-- cSpell:ignore HDFS databox VHDX -->
 
@@ -55,7 +55,7 @@ Die verfügbare Kapazität wird anschließend mit den Speicheranforderungen alle
 > [!IMPORTANT]
 > Nach Abschluss der Analyse müssen Sie möglicherweise den Releaseplan aktualisieren, sodass die für den Versand, die Wiederherstellung und die Synchronisierung der offline zu übertragenden Ressourcen benötigte Zeit berücksichtigt wird.
 
-**Abweichungsanalyse:** Überprüfen Sie alle offline zu übertragenden Ressourcen auf Speicher- und Konfigurationsabweichungen. Die *Speicherabweichung* ist der Umfang der Änderung des zugrunde liegenden Speichers im zeitlichen Verlauf. Die *Konfigurationsabweichung* ist die Änderung der Konfiguration der Ressource im zeitlichen Verlauf. Abweichungen zwischen dem Zeitpunkt, zu dem der Speicher kopiert wird, und dem Zeitpunkt, zu dem die Ressource höher gestuft wird in die Produktion, gehen möglicherweise verloren. Wenn diese Abweichung in der migrierten Ressource berücksichtigt werden soll, ist eine Synchronisierung zwischen der lokalen Ressource und der migrierten Ressource erforderlich. Diesen Hinweis sollten Sie zur Berücksichtigung bei der Durchführung der Migration kennzeichnen.
+**Abweichungsanalyse:** Überprüfen Sie alle offline zu übertragenden Ressourcen auf Speicher- und Konfigurationsabweichungen. Die _Speicherabweichung_ ist der Umfang der Änderung des zugrunde liegenden Speichers im zeitlichen Verlauf. Die _Konfigurationsabweichung_ ist die Änderung der Konfiguration der Ressource im zeitlichen Verlauf. Abweichungen zwischen dem Zeitpunkt, zu dem der Speicher kopiert wird, und dem Zeitpunkt, zu dem die Ressource höher gestuft wird in die Produktion, gehen möglicherweise verloren. Wenn diese Abweichung in der migrierten Ressource berücksichtigt werden soll, ist eine Synchronisierung zwischen der lokalen Ressource und der migrierten Ressource erforderlich. Diesen Hinweis sollten Sie zur Berücksichtigung bei der Durchführung der Migration kennzeichnen.
 
 ## <a name="migration-process-changes"></a>Änderungen für den Migrationsprozess
 
