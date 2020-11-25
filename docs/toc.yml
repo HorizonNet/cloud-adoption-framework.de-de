@@ -416,7 +416,7 @@ items:
                   - name: Moodle-Migration
                     items:
                       - name: Übersicht
-                        href: scenarios/lamp/moodle/index.md
+                        href: scenarios/lamp/moodle/migration-overview.md
                       - name: Voraussetzungen
                         href: scenarios/lamp/moodle/migration-pre.md
                       - name: Architektur und Vorlage
