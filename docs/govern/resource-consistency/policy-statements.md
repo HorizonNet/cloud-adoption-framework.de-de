@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c8fd183115c17f1f26087af99dd5c8578885845a
-ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
+ms.openlocfilehash: c1228c5622b06d448fc283d29619f3184d79027d
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "93024435"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94881060"
 ---
 # <a name="resource-consistency-sample-policy-statements"></a>Beispiele für Richtlinienanweisungen der Ressourcenkonsistenz
 
@@ -54,7 +54,9 @@ Die folgende Beispielrichtlinienanweisungen beziehen sich auf allgemeine Geschä
 
 **Richtlinienanweisung:** Governancetools müssen erzwingen, dass automatische Updates für alle bereitgestellten VMs aktiviert sind. Verstöße müssen von Betriebsmanagementteams überprüft und in Übereinstimmung mit den Betriebsrichtlinien beseitigt werden. Ressourcen, die nicht automatisch aktualisiert werden, müssen in Prozesse einbezogen werden, die IT Operations unterstehen.
 
-**Potenzielle Entwurfsoptionen:** Für in Azure gehostete VMs können Sie konsistente Updateverwaltung bereitstellen, indem Sie die [Updateverwaltungslösung in Azure Automation](/azure/automation/update-management/overview) verwenden.
+<!-- docutune:ignore "consistent update management" -->
+
+**Potenzielle Entwurfsoptionen:** Für in Azure gehostete VMs können konsistente Updateverwaltung bereitstellen, indem Sie die [Updateverwaltungslösung in Azure Automation](/azure/automation/update-management/overview) verwenden.
 
 ## <a name="deployment-compliance"></a>Bereitstellungscompliance
 
