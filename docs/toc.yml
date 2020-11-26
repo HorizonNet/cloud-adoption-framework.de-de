@@ -417,17 +417,19 @@ items:
                     items:
                       - name: Übersicht
                         href: scenarios/lamp/moodle/migration-overview.md
-                      - name: Voraussetzungen
+                      - name: Vorbereiten der Moodle-Migration
                         href: scenarios/lamp/moodle/migration-pre.md
                       - name: Architektur und Vorlage
                         href: scenarios/lamp/moodle/migration-arch.md
-                      - name: Ressourcenbeschreibung
+                      - name: Moodle-Migrationsressourcen
                         href: scenarios/lamp/moodle/migration-resources.md
+                      - name: Verbindung mit dem Gateway für virtuelle Netzwerke
+                        href: scenarios/lamp/moodle/vpn-gateway.md
                       - name: Schritte bei der Migration
                         href: scenarios/lamp/moodle/migration-start.md
-                      - name: Konfiguration der Azure-Infrastruktur
+                      - name: Einrichten von Moodle-Workerknoten
                         href: scenarios/lamp/moodle/azure-infra-config.md
-                      - name: Nach der Migration
+                      - name: Nachverfolgung der Moodle-Migration
                         href: scenarios/lamp/moodle/migration-post.md
               - name: Dev/Test-Workloads
                 items:
