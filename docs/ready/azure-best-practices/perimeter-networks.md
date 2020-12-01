@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: ae5506d6d09289b2c41cd5ece887b2ec5692c267
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 3071c65925a4d96740be8f7314538b60b0559142
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712849"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997368"
 ---
 # <a name="perimeter-networks"></a>Umkreisnetzwerke
 
@@ -38,7 +38,7 @@ Umkreisnetzwerken nutzen die folgenden Azure-Funktionen und -Dienste:
 > - [Implementieren eines Umkreisnetzwerks zwischen Azure und Ihrem lokalen Rechenzentrum](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)
 > - [Implementieren eines Umkreisnetzwerks zwischen Azure und dem Internet](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json)
 
-Normalerweise sind Ihr zentrales IT-Team und die und Sicherheitsteams für die Anforderungendefinition und den Betrieb Ihrer Umkreisnetzwerke verantwortlich.
+Normalerweise sind Ihr zentrales IT-Team und Ihre Sicherheitsteams für die Definition der Anforderungen und den Betrieb Ihrer Umkreisnetzwerke verantwortlich.
 
 ![Beispiel für eine Hub-and-Spoke-Netzwerktopologie](../../_images/azure-best-practices/network-high-level-perimeter-networks.png)
 _Abbildung 1: Beispiel für eine Hub-and-Spoke-Netzwerktopologie_

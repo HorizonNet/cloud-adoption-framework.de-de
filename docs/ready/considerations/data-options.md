@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 9ad7787dd44314e0c83b55d5d799a111de021f6c
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 5008cd58cc8c15291671a02b269891b6278d0470
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885064"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997283"
 ---
 # <a name="review-your-data-options"></a>Überprüfen Ihrer Datenoptionen
 
@@ -38,8 +38,8 @@ Die Beantwortung der folgenden Fragen zu Ihren Workloads ist hilfreich, um basie
 - **Verwenden Ihre Workloads Dokument- oder Graphdaten?** [Azure Cosmos DB](/azure/cosmos-db/introduction) ist ein Datenbankdienst mit mehreren Modellen, der eine Vielzahl von Datentypen und APIs unterstützt. Azure Cosmos DB bietet auch Funktionen für Dokument- und Graphdatenbanken.
 - **Verwenden Ihre Workloads Spaltenfamiliendaten?** [Apache HBase in Azure HDInsight](/azure/hdinsight/hbase/apache-hbase-overview) basiert auf Apache Hadoop. Apache HBase unterstützt große Mengen von unstrukturierten und halbstrukturierten Daten in einer schemalosen Datenbank, die nach Spaltenfamilien organisiert ist.
 - **Werden für Ihre Workloads Datenanalysefunktionen mit hoher Kapazität benötigt?** Sie können [Azure SQL Data Warehouse](/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is) zum effektiven Speichern und Abfragen von strukturierten Daten im Petabytebereich verwenden. Für unstrukturierte Big Data-Workloads können Sie [Azure Data Lake](https://azure.microsoft.com/solutions/data-lake) zum Speichern und Analysieren von Dateien im Petabytebereich und von Billionen von Objekten verwenden.
-- **Werden für Ihre Workloads Suchmaschinenfunktionen benötigt?** Sie können [Azure Search](/azure/search/search-what-is-azure-search) zum Erstellen cloudbasierter Suchindizes mit KI-Erweiterung verwenden, die in Ihre Anwendungen integriert werden können.
-- **Verwenden Ihre Workloads Zeitreihendaten?** [Azure Time Series Insights](/azure/time-series-insights/time-series-insights-overview) ist zum Speichern, Visualisieren und Abfragen großer Mengen von Zeitreihendaten ausgelegt, z. B. der von IoT-Geräten generierten Daten.
+- **Werden für Ihre Workloads Suchmaschinenfunktionen benötigt?** Sie können [Azure Cognitive Search](/azure/search/search-what-is-azure-search) zum Erstellen cloudbasierter Suchindizes mit KI-Erweiterung, die in Ihre Anwendungen integriert werden können.
+- **Verwenden Ihre Workloads Zeitreihendaten?** [Azure Time Series Insights](/azure/time-series-insights/time-series-insights-overview) ist zum Speichern, Visualisieren und Abfragen großer Mengen von Zeitreihendaten ausgelegt, z.B. der von IoT-Geräten generierten Daten.
 
 > [!NOTE]
 > Weitere Informationen zum Bewerten von Datenbankoptionen für die einzelnen Anwendungen oder Dienste finden Sie im [Leitfaden zur Azure-Anwendungsarchitektur](/azure/architecture/guide/technology-choices/data-store-comparison).
@@ -54,7 +54,7 @@ In der folgenden Tabelle sind einige häufige Anforderungen für Nutzungsszenari
 | Ich benötige eine vollständig verwaltete relationale Datenbank, die sich schnell einrichten und im laufenden Betrieb skalieren lässt und integrierte Funktionen für Intelligence und Sicherheit umfasst. | [Azure SQL-Datenbank](/azure/sql-database/sql-database-technical-overview) |
 | Ich benötige eine vollständig verwaltete, skalierbare relationale MySQL-Datenbank mit integrierter Hochverfügbarkeit und Sicherheit ohne Zusatzkosten. | [Azure Database for MySQL](/azure/mysql/overview) |
 | Ich benötige eine vollständig verwaltete, skalierbare relationale PostgreSQL-Datenbank mit integrierter Hochverfügbarkeit und Sicherheit ohne Zusatzkosten. | [Azure-Datenbank für PostgreSQL](/azure/postgresql/overview) |
-| Ich plane das Hosten von SQL Server-Unternehmens-Apps in der Cloud mit vollständiger Kontrolle des Serverbetriebssystems. | [SQL Server auf virtuellen Computern](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview) |
+| Ich plane das Hosten von SQL Server-Unternehmensanwendungen in der Cloud mit vollständiger Kontrolle des Serverbetriebssystems. | [SQL Server auf virtuellen Computern](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview) |
 | Ich benötige ein vollständig verwaltetes, elastisches Data Warehouse mit Sicherheit auf allen Ebenen ohne Zusatzkosten. | [Azure SQL Data Warehouse](/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is) |
 | Ich benötige Data Lake Storage-Ressourcen, die Hadoop-Cluster oder HDFS-Daten unterstützen können. | [Azure Data Lake](https://azure.microsoft.com/solutions/data-lake) |
 | Ich benötige hohen Durchsatz und konsistenten Zugriff mit niedriger Latenz für meine Daten, um schnelle und skalierbare Anwendungen zu unterstützen. | [Azure Cache for Redis](/azure/azure-cache-for-redis/cache-overview) |

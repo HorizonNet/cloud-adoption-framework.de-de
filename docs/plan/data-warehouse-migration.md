@@ -7,12 +7,12 @@ ms.date: 06/24/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 4a0d6d857481b3c3bbd73d44a81ff5fe72e4a3fd
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 4797f40f4353367a99ef68800becf23127c0c203
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712084"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997453"
 ---
 <!-- cSpell:ignore Informatica gzipped Attunity -->
 
@@ -35,7 +35,7 @@ Damit die Data-Warehouse-Migration problemlos fortgesetzt werden kann, sollte in
 - Ihre Migrationsstrategie
 - Vermeidung von Risiken im Migrationsprojekt zur Vermeidung von Verzögerungen und Nacharbeiten
 - Ihr vorhandenes Data-Warehouse-System, seine Architektur, sein Schema, die Datenvolumes, Datenflüsse und betrieblichen Abhängigkeiten
-- Unterschiede zwischen Datenbank-Managementsystemen für Ihr vorhandenes Data Warehouse und Azure Synapse, z. B. Datentypen, SQL-Funktionen, Logik und weitere Überlegungen
+- Unterschiede zwischen Ihrem vorhandenen Datenbank-Managementsystem für Data Warehouse und Azure Synapse, z. B. Datentypen, SQL-Funktionen, Logik und weitere Überlegungen
 - Inhalte der Migration und Prioritäten
 - Migrationsaufgaben, Ansätze, Reihenfolge und Fristen
 - Steuerung der Migration
@@ -66,7 +66,7 @@ Zu den wichtigsten Rollen eines Migrationsprojekts gehören die folgenden:
 - Datenbankadministrator (vorhandenes Datenbank-Managementsystem für ein Data Warehouse und Azure Synapse)
 - Entwickler von Datenmodellen
 - ETL-Entwickler
-- Experten für Datenvirtualisierungen (z. B. Datenbankadministrator)
+- Experten für Datenvirtualisierungen (möglicherweise ein Datenbankadministrator)
 - Entwickler für Tests
 - Business Analysts (für Tests von Abfragen, Berichten und Analysen von Business Intelligence-Tools)
 
@@ -78,7 +78,7 @@ In Bezug auf erforderliche Fähigkeiten spielt Fachwissen bei der Data-Warehouse
 
 ### <a name="assessing-your-existing-data-warehouse"></a>Bewerten Ihres vorhandenen Data Warehouse
 
-Ein weiterer Bestandteil der Vorbereitungen für eine Migration ist es, Ihr vorhandenes Data Warehouse vollständig zu bewerten, um ein umfassendes Verständnis für die Architektur, die Datenspeicher, Schemas, Geschäftslogik, Datenflüsse und die verwendeten Funktionen eines Datenbank-Managementsystems, die Vorgänge im Data Warehouse und die Abhängigkeiten zu erlangen. Je mehr Verständnis hier erlangt werden kann, desto besser. Ein detailliertes Verständnis der Funktionsweise des Systems erleichtert die Kommunikation und Information aller Beteiligten.
+Ein weiterer Bestandteil der Vorbereitungen für eine Migration ist es, Ihr vorhandenes Data Warehouse vollständig zu bewerten, um ein umfassendes Verständnis für die Architektur, Datenspeicher, Schemas, Geschäftslogik, Datenflüsse, verwendeten Funktionen eines Datenbank-Managementsystems, Vorgänge im Data Warehouse und Abhängigkeiten zu erlangen. Je mehr Verständnis hier erlangt werden kann, desto besser. Ein detailliertes Verständnis der Funktionsweise des Systems erleichtert die Kommunikation und Information aller Beteiligten.
 
 Der Zweck einer Bewertung besteht nicht nur in einem detaillierten Verständnis dafür, wie das Migrationsteam gegenwärtig aufgestellt ist, sondern auch dafür, Stärken und Schwächen in dieser Aufstellung zu erkennen. Das Ergebnis einer Bewertung Ihres aktuellen Data Warehouse kann sich deshalb auf Ihre Migrationsstrategie auswirken, im Sinne einer Verschiebung zu einer größer angelegten Migration. Wenn als Ergebnis einer Bewertung beispielsweise festgehalten wird, dass die Lebensdauer Ihres Data Warehouse beinahe abgelaufen ist, sollte die Strategie eindeutig so ausgerichtet werden, dass die Datenmigration in ein neu entworfenes Data Warehouse bei Azure Synapse erfolgt, anstatt nur kleinere Verschiebungen vorzunehmen.
 
@@ -126,7 +126,7 @@ Beispiele für Typen von Zielen und Metriken:
 
 #### <a name="operate-with-better-availability-and-service-levels"></a>Betrieb mit höherer Verfügbarkeit und bessere Servicelevel
 
-- Vereinbarungen zum Servicelevel (SLAs)
+- Vereinbarungen zum Servicelevel
 - Hochverfügbarkeit
 
 #### <a name="improve-productively"></a>Gesteigerte Produktivität
@@ -181,7 +181,7 @@ Zur Data-Warehouse-Migration zu Azure Synapse gehören Aufgaben, die durchgefüh
 
 Das Problem dabei ist, dass die Verwaltung dieser Aufgaben kompliziert werden kann, wenn Skripts und Hilfsprogramme entwickelt, getestet und unabhängig voneinander sowohl lokal als auch in Azure-Umgebungen ausgeführt werden. Dies führt insbesondere dann zu zusätzlicher Komplexität, wenn Versionskontrolle, Testverwaltung und Migrationsausführung nicht koordiniert werden.
 
-Sie sollten diese Komplexität vermeiden und sie über eine zentrale Stelle steuern, z. B. über ein Quellcodeverwaltungsrepository, um Änderungen von der Entwicklung bis hin zu Tests und in der Produktion zu verwalten. Zur Migrationsausführung gehören Aufgaben, die lokal, im Netzwerk und in Azure ausgeführt werden müssen. Da Azure Synapse die Zielumgebung ist, vereinfacht das Steuern der Migrationsausführung in Azure die Verwaltung. Verwenden Sie Azure Data Factory (ADF), um eine Pipeline für die Migrationssteuerung zu erstellen, mit der Sie die Ausführung sowohl lokal als auch in Azure steuern können. Dies führt zu Automatisierung und senkt die Fehleranfälligkeit. ADF kann als Tool für die Migrationsorchestrierung verwendet werden, nicht nur als Tool für die Datenintegration auf Unternehmensebene.
+Sie sollten diese Komplexität vermeiden und sie über eine zentrale Stelle steuern, z. B. über ein Quellcodeverwaltungsrepository, um Änderungen von der Entwicklung bis hin zu Tests und in der Produktion zu verwalten. Zur Migrationsausführung gehören Aufgaben, die lokal, im Netzwerk und in Azure ausgeführt werden müssen. Da Azure Synapse die Zielumgebung ist, vereinfacht das Steuern der Migrationsausführung in Azure die Verwaltung. Verwenden Sie Azure Data Factory, um eine Pipeline für die Migrationssteuerung zu erstellen, mit der Sie die Ausführung sowohl lokal als auch in Azure steuern können. Dies führt zu Automatisierung und senkt die Fehleranfälligkeit. Azure Data Factory kann als Tool für die Migrationsorchestrierung verwendet werden, nicht nur als Tool für die Datenintegration für Unternehmen.
 
 Weitere Möglichkeiten, die von Microsoft-Partnern über Azure angeboten werden, mit denen die Migration gesteuert werden kann, sind Tools für die Data-Warehouse-Automatisierung, mit denen die Migration automatisiert werden kann. Anbieter wie WhereScape und Attunity sind Beispiele hierfür. Die meisten dieser Automatisierungstools basieren auf einem Lift & Shift-Migrationsansatz. Auch dann kann es aber Szenarios geben, die von solchen Tools nicht unterstützt werden, z. B. gespeicherte Prozeduren. Diese Produkte sowie einige andere finden Sie in einem eigenen Leitfaden, in dem der Fokus auf Tools von Drittanbietern liegt, die Sie bei der Migration zu Azure Synapse unterstützen.
 
@@ -225,7 +225,7 @@ Ein weiterer entscheidender Faktor für eine Data-Warehouse-Migration ist es, m�
 
 Der Zweck hiervon besteht darin, die Abhängigkeit zwischen Benutzern im Unternehmen, die Self-Service-BI-Tools nutzen, und dem physischen Schema des zugrunde liegenden Data Warehouse und der zugrunde liegenden Data Marts aufzuheben, die migriert werden sollen. Durch Einführung der Datenvirtualisierung können sämtliche Änderungen an Schemas, die während der Data-Warehouse- und Data-Mart-Migration zu Azure Synapse vorgenommen wurden (z. B. Leistungsverbesserungen), für Benutzer im Unternehmen ausgeblendet werden, da diese nur auf virtuelle Tabellen auf der Virtualisierungsebene der Daten zugreifen. Wenn strukturelle Änderungen erforderlich sind, müssen so nur die Zuordnungen zwischen dem Data Warehouse oder Data Marts und entsprechenden virtuellen Tabellen geändert werden, sodass diese Änderungen und die Migration selbst für Benutzer gar nicht auffällt.
 
-- Vorhandene Tabellen, die nie genutzt wurden, sollten Sie vor der Data-Warehouse-Migration archivieren, da es wenig Sinn ergibt, nicht verwendete Tabellen zu migrieren. Eine Möglichkeit dafür ist es, die ungenutzten Daten in Azure Blob Storage oder Azure Data Lake zu archivieren und externe Tabellen in Azure Synapse zu erstellen, damit die Daten weiterhin online sind.
+- Vorhandene Tabellen, die nie genutzt wurden, sollten Sie vor der Data-Warehouse-Migration archivieren, da es wenig Sinn ergibt, nicht verwendete Tabellen zu migrieren. Eine Möglichkeit dafür besteht darin, die ungenutzten Daten in Azure Blob Storage oder Azure Data Lake Storage zu archivieren und externe Tabellen in Azure Synapse zu erstellen, damit die Daten weiterhin online sind.
 - Ziehen Sie die Möglichkeit in Betracht, eine VM in Azure mit einer Entwicklungsversion (die in der Regel kostenfrei ist) des vorhandenen Legacy-Datenbank-Managementsystems für das Data Warehouse einzuführen, das auf dieser VM ausgeführt wird. So können Sie vorhandene Data-Warehouse-Schemas schnell auf die VM verschieben. Von dort können sie dann zu Azure Synapse verschoben werden. Dies lässt sich vollständig in der Azure-Cloud umsetzen.
 - Definieren Sie eine Reihenfolge und Abhängigkeiten für die Migration.
 - Sorgen Sie dafür, dass Ihr Infrastruktur- und Betriebsteam auf die Migration Ihrer Daten in das Migrationsprojekt so frühzeitig wie möglich vorbereitet ist.
@@ -235,4 +235,4 @@ Der Zweck hiervon besteht darin, die Abhängigkeit zwischen Benutzern im Unterne
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Weitere Informationen zu Data-Warehouse-Migrationen erhalten Sie in einem virtuellen [Workshop zur Cloud-Data-Warehouse-Modernisierung in Azure](https://now.informatica.com/Microsoft_CDW_Workshops.html) von Informatica.
+Weitere Informationen zu Data Warehouse-Migrationen erhalten Sie in einem virtuellen [Workshop zur Cloud-Data Warehouse-Modernisierung in Azure](https://now.informatica.com/Microsoft_CDW_Workshops.html) von Informatica.

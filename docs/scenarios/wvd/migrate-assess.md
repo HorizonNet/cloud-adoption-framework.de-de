@@ -7,12 +7,12 @@ ms.date: 07/17/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: b85900e887122b20c7dc776ac74deb12dad93220
-ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
+ms.openlocfilehash: f489c9230a26c149c7d44b9eb0ba0631a757c0ef
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91108422"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997011"
 ---
 # <a name="windows-virtual-desktop-assessment"></a>Bewertung von Windows Virtual Desktop
 
@@ -52,7 +52,7 @@ Durch die mit den vorherigen Fragen ermittelten Unterschiede zeichnen sich erste
 | Leistung | Niedrig | Hohe Arbeitsspeicherauslastung | Niedrig |
 | GPU | – | Erforderlich | NICHT ZUTREFFEND |
 | Azure-Region | Nordamerika | Europa, Westen | Nordamerika |
-| Benutzeranzahl | 1000 | 50 | 20 |
+| Benutzeranzahl | 1\.000 | 50 | 20 |
 | Sitzungsanzahl | 200 | 50 | 10 |
 
 Für jede Persona oder Benutzergruppe mit unterschiedlichen Geschäftsfunktionen und technischen Anforderungen ist eine eigene Hostpoolkonfiguration erforderlich.
@@ -69,7 +69,7 @@ Die Überprüfungen der aktuellen lokalen Umgebung mithilfe von Movere und lakes
 
 - Müssen Anwendungen installiert werden, damit die Persona den Desktop verwenden kann? Sofern die Persona nicht ausschließlich webbasierte Software-as-a-Service-Anwendungen verwendet, müssen Sie wahrscheinlich für jede Persona ein [benutzerdefiniertes VHD-Masterimage](/azure/virtual-desktop/set-up-customize-master-image) konfigurieren, auf dem die erforderlichen Anwendungen installiert sind.
 - Benötigt diese Persona Microsoft 365-Anwendungen? Wenn das der Fall ist, müssen Sie [Microsoft 365 einem angepassten VHD-Masterimage hinzufügen](/azure/virtual-desktop/install-office-on-wvd-master-image).
-- Ist die Anwendung mit Windows&nbsp;10 mit mehreren Sitzungen kompatibel? Wenn eine Anwendung nicht kompatibel ist, ist möglicherweise ein [persönlicher Pool](/azure/virtual-desktop/configure-host-pool-personal-desktop-assignment-type) erforderlich, um das benutzerdefinierte VHD-Image auszuführen. Der Dienst [Desktop App Assure](/fasttrack/win-10-app-assure-assistance-offered) bietet Unterstützung bei Problemen mit der Kompatibilität von Anwendungen und Windows Virtual Desktop.
+- Ist die Anwendung mit Windows&nbsp;10 Enterprise mit mehreren Sitzungen kompatibel? Wenn eine Anwendung nicht kompatibel ist, ist möglicherweise ein [persönlicher Pool](/azure/virtual-desktop/configure-host-pool-personal-desktop-assignment-type) erforderlich, um das benutzerdefinierte VHD-Image auszuführen. Der Dienst [Desktop App Assure](/fasttrack/win-10-app-assure-assistance-offered) bietet Unterstützung bei Problemen mit der Kompatibilität von Anwendungen und Windows Virtual Desktop.
 - Werden unternehmenskritische Anwendungen voraussichtlich von der Latenz zwischen dem der Windows Virtual Desktop-Instanz und den Back-End-Systemen beeinträchtigt? Wenn das der Fall ist, sollten Sie die Back-End-Systeme, die die Anwendung unterstützen, ggf. zu Azure migrieren.
 
 Die Antworten auf diese Fragen setzen möglicherweise voraus, dass die Wartung der Desktopimages oder unterstützenden Anwendungskomponenten schon vor der Desktopmigration oder -bereitstellung im Plan berücksichtigt wird.

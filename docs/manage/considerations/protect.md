@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7b924c02fa1028d7df6206a021c2c7e4a6bb8a4f
-ms.sourcegitcommit: af521583b98153f7157895b7ba9de71183d437b0
+ms.openlocfilehash: 71c155ccb75091681bd760fda794279c73f948c9
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "89176462"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879649"
 ---
 # <a name="protect-and-recover-in-cloud-management"></a>Schutz und Wiederherstellung in der Cloudverwaltung
 
@@ -30,7 +30,7 @@ Als Mindestanforderung sollte für jede Ressource, die eine bestimmte Workload u
 
 ### <a name="recovery-time-objectives-rto"></a>Recovery Time Objective (RTO)
 
-Wenn der Ernstfall eintritt, ist die RTO (Recovery Time Objective) die Zeitspanne, die benötigt wird, um ein beliebiges System auf seinen Zustand vor dem Ausfall wiederherzustellen. Dies umfasst für jede Workload die Zeit, die notwendig ist, um eine Mindestfunktionalität für die VMs und Apps wiederherzustellen. Dazu gehört auch die Zeit, die notwendig ist, um die von den Anwendungen benötigten Daten wiederherzustellen.
+Wenn der Ernstfall eintritt, ist die RTO (Recovery Time Objective) die Zeitspanne, die benötigt wird, um ein beliebiges System auf seinen Zustand vor dem Ausfall wiederherzustellen. Dies umfasst für jede Workload die Zeit, die für die Wiederherstellung der Mindestfunktionalität für die VMs und Anwendungen notwendig ist. Dazu gehört auch die Zeit, die notwendig ist, um die von den Anwendungen benötigten Daten wiederherzustellen.
 
 Aus geschäftlicher Sicht stellt die RTO den Zeitraum dar, in dem der Geschäftsprozess außer Betrieb ist. Bei unternehmenskritischen Workloads sollte diese Variable relativ niedrig sein, damit die Geschäftsprozesse schnell fortgesetzt werden können. Bei Workloads mit geringerer Priorität hat eine Standard-RTO möglicherweise keine nennenswerten Auswirkungen auf die Gesamtleistung des Unternehmens.
 
@@ -58,7 +58,7 @@ Daten sind die wohl wertvollste Ressource in der digitalen Wirtschaft. Die Fähi
 
 Bevor Cloudverwaltungsteams Plattformvorgänge implementieren, unterstützen sie häufig verbesserte Vorgänge für PaaS-Datenplattformen (Platform-as-a-Service). Es ist zum Beispiel für ein Cloudverwaltungsteam problemlos möglich, häufigere Sicherungsvorgänge oder regionsübergreifende Replikationsvorgänge für Azure SQL-Datenbank- oder Azure Cosmos DB-Lösungen durchzusetzen. So kann das Entwicklungsteam die RPO einfach durch Modernisierung seiner Datenplattformen verbessern.
 
-Weitere Informationen zu diesem Denkprozess finden Sie unter [Disziplin „Plattformbetrieb“](./platform.md).
+Weitere Informationen zu diesen Überlegungen finden Sie unter [Disziplin „Plattformbetrieb“](./platform.md).
 
 ### <a name="protect-and-recover-vms"></a>Schutz und Wiederherstellung von VMs
 
@@ -70,7 +70,7 @@ Jedes der eben genannten Modelle reduziert die RTO und sorgt dafür, dass Gesch�
 
 Beachten Sie außerdem, dass, abgesehen von der Replikation für Hochverfügbarkeit, die Sicherungen für Szenarien wie „versehentliches Löschen“, „Datenbeschädigung“ und „Ransomwareangriffe“ aktiviert werden sollten.
 
-Weitere Informationen zu diesem Denkprozess finden Sie unter [Disziplin „Workloadbetrieb“](./workload.md).
+Weitere Informationen zu diesen Überlegungen finden Sie unter [Disziplin „Workloadbetrieb“](./workload.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

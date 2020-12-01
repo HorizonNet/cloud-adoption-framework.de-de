@@ -7,12 +7,12 @@ ms.date: 04/14/2020
 ms.service: cloud-adoption-framework
 ms.subservice: reference
 ms.topic: article
-ms.openlocfilehash: 5fadef56e97fa51450e6f6b80aca0ab84038b020
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 975a848cbc2afe9ded2d0dea56b69717f796c5d3
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776022"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879173"
 ---
 # <a name="tools-and-templates"></a>Tools und Vorlagen
 
@@ -32,6 +32,8 @@ Das Cloud Adoption Framework umfasst Tools, mit denen Sie technische Änderungen
 | [Cloud Journey Tracker](/assessments/?id=cloud-journey-tracker&mode=pre-assessment) | Identifizieren Sie Ihren Cloudeinführungspfad basierend auf den Anforderungen Ihres Unternehmens. |
 | [Strategie-&nbsp;und&nbsp;Planvorlage&nbsp;](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) | Dokumentieren Sie Entscheidungen, während Sie Ihre Strategie und den Plan für die Cloudeinführung umsetzen. |
 | [Generator für den Cloudeinführungsplan](../plan/template.md) | Standardisieren Sie Prozesse, indem Sie ein Backlog für [Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards) unter Verwendung einer Vorlage bereitstellen. |
+| [Verwenden der ADO-Vorlage für die Strategiedefinition, Planung, Bereitmachung und Steuerung (Strategy-Plan-Ready-Govern)](https://azuredevopsdemogenerator.azurewebsites.net/?name=strategyplan) | Standardisieren Sie Prozesse, indem Sie ein Backlog für [Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards) unter Verwendung einer Vorlage bereitstellen. |  
+
 
 ## <a name="ready"></a>Bereit
 
@@ -63,6 +65,7 @@ Das Cloud Adoption Framework umfasst Tools, mit denen Sie technische Änderungen
 | Resource | BESCHREIBUNG |
 |----------|-------------|
 | [Prüfliste für die Rechenzentrumsmigration](https://raw.githubusercontent.com/Microsoft/CloudAdoptionFramework/master/migrate/datacenter-migration-discovery-checklist.docx) | In dieser Prüfliste finden Sie Informationen, die Ihnen helfen, Workloads, Server und andere Ressourcen in Ihrem Rechenzentrum zu identifizieren. Verwenden Sie diese Informationen, um Ihre Migration zu planen.
+| [Migrationsvorlagen](https://aka.ms/adopt/plan/generator) | Im Azure DevOps-Generator wurden eine Reihe von Vorlagen erstellt, mit denen Sie Ihre Projekte optimieren können. Es wurden Vorlagen für [WVD](https://azuredevopsdemogenerator.azurewebsites.net/?name=wvdmigration), die [Servermigration](https://azuredevopsdemogenerator.azurewebsites.net/?name=servermigration), die [SQL-Migration](https://azuredevopsdemogenerator.azurewebsites.net/?name=sqlmigration) und [AKS-Bereitstellungen](https://azuredevopsdemogenerator.azurewebsites.net/?name=cafaks) erstellt.
 
 ## <a name="manage"></a>Verwalten
 

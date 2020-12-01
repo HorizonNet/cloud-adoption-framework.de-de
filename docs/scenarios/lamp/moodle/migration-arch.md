@@ -1,77 +1,97 @@
 ---
-title: Moodle-Migrationsaufgaben, -architektur und -vorlage
-description: Erfahren Sie mehr über die Aufgabe und Architektur sowie die Vorlage, die an einer Moodle-Migration beteiligt sind.
+title: Architektur und Vorlagen für die Moodle-Migration
+description: Hier erfahren Sie mehr über die ARM-Vorlagen (Azure Resource Manager) für die Bereitstellung der Azure-Infrastruktur für Moodle sowie die Bereitstellung oder Bearbeitung dieser Vorlagen.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 11/06/2020
+ms.date: 11/23/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: f3e5d88e894289e615ac0573d6c640832b8ed028
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 9d49871341d58d6a9198c9751ed5ed3541b97cca
+ms.sourcegitcommit: 1d7b16eb710bed397280fb8f862912c78f2254ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94714886"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95812358"
 ---
-# <a name="moodle-migration-tasks-architecture-and-template"></a>Moodle-Migrationsaufgaben, -architektur und -vorlage
+# <a name="moodle-migration-architecture-and-templates"></a>Architektur und Vorlagen für die Moodle-Migration
 
-## <a name="moodle-migration-task-outline"></a>Übersicht der Moodle-Migrationsaufgabe
+Die Moodle-Migration umfasst die folgenden Aufgaben:
 
-Moodle-Migrationen umfassen die folgenden Aufgaben:
+1. Bereitstellen der Azure-Infrastruktur mit ARM-Vorlagen (Azure Resource Manager)
+1. [Herunterladen und Installieren von AzCopy](migration-start.md#download-and-install-azcopy-on-the-controller-vm)
+1. [Kopieren des Moodle-Sicherungsarchivs auf die Controller-VM-Instanz](migration-start.md#copy-the-archive-to-the-controller-vm) bei der Azure Resource Manager-Bereitstellung
+1. [Migrieren der Moodle-Anwendung und -Konfiguration](migration-start.md#import-the-moodle-database-to-azure)
+1. [Einrichten der Moodle-Controllerinstanz und der Workerknoten](azure-infra-config.md)
+1. [Konfigurieren von PHP und des Webservers](azure-infra-config.md)
 
-- Bereitstellen der Azure-Architektur mit Azure Resource Manager-Vorlagen
-- Herunterladen und Installieren von AzCopy
-- Kopieren des Sicherungsarchivs aus der Azure Resource Manager-Bereitstellung auf die virtuelle Computerinstanz des Controllers
-- Migration von Moodle-Anwendung und -Konfiguration
-- Einrichten der Moodle-Controllerinstanz und der Workerknoten
-- Konfigurieren von PHP und des Webservers.
+In diesem Artikel werden die Azure-Infrastrukturoptionen für Moodle beschrieben, und es wird erläutert, wie Sie die gewünschten Azure-Ressourcen mithilfe der von Ihnen gewählten ARM-Vorlagen bereitstellen.
 
-## <a name="deploy-azure-infrastructure-with-azure-resource-manager-templates"></a>Bereitstellen der Azure-Architektur mit Azure Resource Manager-Vorlagen
+## <a name="azure-infrastructure"></a>Azure-Infrastruktur
 
-- Wenn Sie eine Azure Resource Manager-Vorlage verwenden, um die Infrastruktur in Azure bereitzustellen, stehen Ihnen einige Optionen zur Verfügung. Das folgende Diagramm bietet eine Übersicht der Infrastrukturressourcen.
+Das folgende Diagramm zeigt eine Übersicht über die Azure-Infrastrukturressourcen für Moodle:
 
-![Azure-Infrastrukturressourcen.](images/architecture.png)
+![Diagramm mit Azure-Infrastrukturressourcen](images/architecture.png)
 
-Eine vollständig konfigurierbare Bereitstellung bietet mehr Flexibilität und Auswahlmöglichkeiten für Bereitstellungen. Eine vordefinierte Bereitstellungsgröße verwendet eine von vier vordefinierten Moodle-Größen. Die vier vordefinierten Vorlagenoptionen sind Minimal, Klein-bis-Mittel, Groß und Maximal. Sie sind im [Moodle GitHub-Repository](https://github.com/Azure/Moodle) verfügbar.
+## <a name="arm-template-options"></a>ARM-Vorlagenoptionen
 
-- [Minimal](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-minimal.json): Diese Bereitstellung verwendet NFS, MySQL und kleinere Web-Front-End-VM-SKUs mit automatischer Skalierung (ein virtueller Kern), die schnellere Bereitstellungszeiten bieten (weniger als 30 Minuten) und aktuell nur zwei virtuelle Computer erfordern, die in ein kostenloses Azure-Testabonnement passen.
+Sie können entweder eine vollständig konfigurierbare ARM-Vorlage oder eine von mehreren vordefinierten ARM-Vorlagen verwenden, um Moodle-Ressourcen in Azure bereitzustellen. Eine vollständig konfigurierbare Bereitstellung bietet Ihnen am meisten Flexibilität und Auswahlmöglichkeiten für die Bereitstellung. Die vollständig konfigurierbare Vorlage sowie die vordefinierten Vorlagen finden Sie im [Moodle-GitHub-Repository](https://github.com/Azure/Moodle).
 
-- [Klein-bis-Mittel](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-small2mid-noha.json): Unterstützt bis zu 1.000 gleichzeitige Benutzer. Diese Bereitstellung verwendet NFS (keine Hochverfügbarkeit) und MySQL (acht virtuelle Kerne) ohne andere Optionen wie elastische Suche oder Redis Cache.
+Eine vordefinierte Bereitstellungsvorlage verwendet eine von vier vordefinierten Moodle-Größen: minimal, klein bis mittel, groß oder maximal.
 
-- [Groß (Hochverfügbarkeit)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-large-ha.json): Unterstützt mehr als 2.000 gleichzeitige Benutzer. Diese Bereitstellung verwendet Azure Files, MySQL (16 virtuelle Kerne) und Redis Cache ohne andere Optionen wie elastische Suche.
+- Bei einer *minimalen Bereitstellung* sind nur zwei virtuelle Computer (VMs) erforderlich, sodass sie mit einem kostenlosen Azure-Testabonnement verwendet werden kann. Bei dieser Bereitstellung werden das Network File System (NFS), MySQL und eine kleinere automatisch skalierende Web-Front-End-VM-SKU mit einem virtuellen Kern verwendet. Diese Vorlage verfügt über eine schnelle Bereitstellungszeit von weniger als 30 Minuten.
+  
+  [![Schaltfläche, die die ARM-Vorlage für eine minimale Moodle-Bereitstellung startet](images/deploy-to-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-minimal.json)
 
-- [Maximum](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-maximal.json): Diese maximale Bereitstellung verwendet Azure Files, MySQL mit der höchsten SKU, Redis Cache, elastische Suche (drei virtuelle Computer) und große Speichergrößen (sowohl Datenträger als auch Datenbanken).
+- Bei einer *kleinen bis mittleren Bereitstellung* werden bis zu 1.000 gleichzeitige Benutzer unterstützt. Bei dieser Bereitstellung werden das NFS ohne Hochverfügbarkeit und MySQL auf acht virtuellen Kernen verwendet. Diese Bereitstellung umfasst keine Optionen wie Elasticsearch oder Redis Cache.
+  
+  [![Schaltfläche, die die ARM-Vorlage für eine kleine bis mittlere Moodle-Bereitstellung startet](images/deploy-to-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-small2mid-noha.json)
 
-Wählen Sie **Start** aus, um eine der vordefinierten Vorlagen bereitzustellen. Hierdurch gelangen Sie zum Azure-Portal, wo Sie obligatorische Felder wie **Abonnement**, **Ressourcengruppen**, [**SSH-Schlüssel**](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) und **Region** eintragen müssen.
+- Bei einer *großen Bereitstellung mit Hochverfügbarkeit* werden mehr als 2.000 gleichzeitige Benutzer unterstützt. Diese Bereitstellung verwendet Azure Files, MySQL mit 16 virtuellen Kernen und Redis Cache ohne andere Optionen wie Elasticsearch.
+  
+  [![Schaltfläche, die die ARM-Vorlage für eine große Moodle-Bereitstellung mit Hochverfügbarkeit startet](images/deploy-to-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-large-ha.json)
 
-![Benutzerdefinierte Bereitstellung: Stellen Sie aus einer benutzerdefinierten Vorlage bereit.](images/custom-deployment.png)
+- Bei einer *maximalen* Bereitstellung werden Azure Files, MySQL mit der höchsten SKU, Redis Cache, Elasticsearch auf drei VMs und große Speichergrößen sowohl für Datenträger als auch für Datenbanken verwendet.
+  
+  [![Schaltfläche, die die ARM-Vorlage für eine maximale Moodle-Bereitstellung startet](images/deploy-to-azure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FMoodle%2Fmaster%2Fazuredeploy-maximal.json)
 
-Mit den obigen vordefinierten Vorlagen werden die Standardversionen bereitgestellt.
+## <a name="deploy-the-template"></a>Bereitstellen der Vorlage
 
-```bash
-Ubuntu: 18.04-LTS
-PHP: 7.4
-Moodle: 3.8
-```
+So stellen Sie eine der vordefinierten ARM-Vorlagen bereit:
 
-Wenn die PHP- und Moodle-Versionen gegenüber der lokalen Version im Rückstand sind, aktualisieren Sie die Versionen mit den folgenden Schritten:
+1. Klicken Sie im vorherigen Abschnitt auf die Schaltfläche **Deploy to Azure** (In Azure bereitstellen) für die gewünschte Bereitstellung. Dadurch gelangen Sie zum Azure-Portal.
+   
+1. Füllen Sie im Azure-Portal auf der Seite **Benutzerdefinierte Bereitstellung** die Pflichtfelder **Abonnement**, **Ressourcengruppe**, **Region** und **Öffentlicher SSH-Schlüssel** aus. Weitere Informationen zum Hinzufügen des SSH-Schlüssels finden Sie unter [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) (Generieren eines neuen SSH-Schlüssels und Hinzufügen dieses Schlüssels zu ssh-agent).
+   
+   :::image type="content" source="images/custom-deployment.png" alt-text="Screenshot: Bildschirm „Benutzerdefinierte Bereitstellung“ in Azure für eine ARM-Vorlage für die Moodle-Bereitstellung" border="false":::
+   
+1. Klicken Sie auf **Überprüfen + erstellen**.
 
-- Wählen Sie auf der Seite **Benutzerdefinierte Bereitstellung** die Option **Vorlage bearbeiten** aus.
+### <a name="edit-the-template"></a>Bearbeiten der Vorlage
 
-![Vorlage bearbeiten: Bearbeiten Sie Ihre Azure Resource Manager-Vorlage.](images/edit-template.png)
+Die vordefinierten ARM-Vorlagen stellen die folgenden Standardsoftwareversionen bereit:
 
-- Fügen Sie im Abschnitt **Ressourcen** dem Block **Parameter** die Moodle- und PHT-Versionen hinzu.
+- Ubuntu: 18.04 LTS
+- PHP: 7.4
+- Moodle: 3.8
 
-    ```json
-    "phpVersion":       { "value": "7.2" },
-    "moodleVersion":    { "value": "MOODLE_38_STABLE"}
-    ```
+Wenn es sich bei Ihrer lokalen PHP- und Moodle-Version nicht um die obige handelt, führen Sie die folgenden Schritte aus, um die Versionen in den Vorlagen entsprechend zu aktualisieren:
 
-- Für Moodle 3.9 sollte der Wert `MOODLE_39_STABLE` sein.
+1. Klicken Sie im Azure-Portal auf der Seite **Benutzerdefinierte Bereitstellung** für die ARM-Vorlage auf die Option **Vorlage bearbeiten**.
+   
+1. Fügen Sie im Abschnitt **resources** der Vorlage unter **parameters** Parameter für Ihre Moodle- und PHP-Version hinzu.
 
-- Wählen Sie **Speichern**, um Ihre Änderungen zu speichern.
+   ```json
+   "phpVersion":       { "value": "7.2" },
+   "moodleVersion":    { "value": "MOODLE_38_STABLE"}
+   ```
+   
+   Für Moodle 3.9 sollte der Wert für `moodleVersion` beispielsweise `MOODLE_39_STABLE` sein.
+   
+   :::image type="content" source="images/edit-template.png" alt-text="Screenshot: Seite „Vorlage bearbeiten“ für eine ARM-Vorlage für die Bereitstellung von Moodle" border="false":::
+   
+1. Wählen Sie **Speichern** aus.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Fahren Sie mit [Moodle-Migrationsressourcen](./migration-resources.md) fort, wo Sie weitere Informationen zum Moodle-Migrationsprozess finden.
+Weitere Informationen zu den Ressourcen, die mit der ARM-Vorlage in Azure bereitgestellt werden, finden Sie unter [Moodle-Migrationsressourcen](migration-resources.md).

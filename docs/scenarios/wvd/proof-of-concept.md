@@ -7,12 +7,12 @@ ms.date: 07/17/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4b88bd7d9954b332b3881e06afc95ab8406bbe6b
-ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
+ms.openlocfilehash: d43eafcc0ce5a0d85488c38e31b79c48d74de613
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91108283"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996994"
 ---
 <!-- cSpell:ignore FSLogix onboards remoteapp macos -->
 
@@ -40,7 +40,7 @@ Es ist unwahrscheinlich, dass sich alle folgenden Annahmen bei einer Unternehmen
 - Alle Benutzer können das Windows&nbsp;10 Enterprise-Image mit mehreren Sitzungen aus Azure Marketplace verwenden.
 - Alle Benutzerprofile werden entweder zu Azure Files, Azure NetApp Files oder zu einem VM-basierten Speicherdienst für die FSLogix-Profilcontainer migriert.
 - Alle Benutzer können durch eine gemeinsame Persona mit einer Dichte von sechs Benutzern pro virtueller CPU (vCPU) und 4&nbsp;Gigabyte (GB) RAM beschrieben werden, [wie in den Größenempfehlungen für virtuelle Computer](/windows-server/remote/remote-desktop-services/virtual-machine-recs#multi-session-recommendations) angegeben.
-- Alle Workloads sind mit Windows&nbsp;10-Mehrfachsitzungen kompatibel.
+- Alle Workloads sind mit Windows&nbsp;10 Enterprise mit mehreren Sitzungen kompatibel.
 - Die Wartezeit zwischen den virtuellen Desktops und den Anwendungsgruppen ist für die Verwendung in der Produktion akzeptabel.
 
 Das Team verwendet zum Berechnen der Kosten für das Windows Virtual Desktop-Szenario basierend auf der Proof of Concept-Konfigurationsreferenz den Preisrechner für [USA, Osten](https://azure.com/e/448606254c9a44f88798892bb8e0ef3c), [Europa, Westen](https://azure.com/e/61a376d5f5a641e8ac31d1884ade9e55)oder [Asien, Südosten](https://azure.com/e/7cf555068922461587d0aa99a476f926).

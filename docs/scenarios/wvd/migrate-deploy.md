@@ -7,12 +7,12 @@ ms.date: 07/17/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 99f7bc2f33e3aa5eec08ca0d5b9cca5f85e55063
-ms.sourcegitcommit: c2249056464d748a6ce15c82cb35a9f164d8f661
+ms.openlocfilehash: b6034f20eb29473217fca39aff18fe96476b8fcb
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91108390"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94994376"
 ---
 <!-- cSpell:ignore NTFS Logix -->
 
@@ -46,7 +46,7 @@ Wenn die zugewiesene Azure-Zielzone nicht Ihre Anforderungen erfüllt, sollte de
 
 ### <a name="application-and-desktop-considerations"></a>Überlegungen zu Anwendungen und Desktops
 
-Bei einigen Personas besteht möglicherweise eine Abhängigkeit von Legacylösungen, die nicht mit Windows&nbsp;10 Multi-Session kompatibel sind. Dann sind für diese Personas möglicherweise dedizierte Desktops erforderlich. Diese Abhängigkeit wird unter Umständen erst bei der Bereitstellung oder beim Testen entdeckt.
+Bei einigen Personas besteht möglicherweise eine Abhängigkeit von Legacylösungen, die nicht mit Windows&nbsp;10 Enterprise mit mehreren Sitzungen kompatibel sind. Dann sind für diese Personas möglicherweise dedizierte Desktops erforderlich. Diese Abhängigkeit wird unter Umständen erst bei der Bereitstellung oder beim Testen entdeckt.
 
 Wenn sie erst spät im Prozess entdeckt werden, sollten zukünftige Iterationen der Modernisierung oder Migration der Legacyanwendung zugewiesen werden. Dadurch werden die langfristigen Kosten für die Desktopdarstellung gesenkt. Diese zukünftigen Iterationen sollten unter Berücksichtigung der Auswirkungen auf die Preise durch die Modernisierung im Vergleich zu den zusätzlichen Kosten priorisiert und durchgeführt werden, die durch dedizierte Desktops entstehen. Um Pipelineunterbrechungen und die Realisierung von Geschäftsergebnissen zu vermeiden, sollte diese Priorisierung die aktuellen Iterationen nicht beeinträchtigen.
 

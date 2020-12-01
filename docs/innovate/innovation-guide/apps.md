@@ -1,6 +1,6 @@
 ---
 title: 'Azure-Innovation: Interagieren über Anwendungen'
-description: Hier finden Sie Informationen zu Azure-Diensten, mit denen Sie ganz einfach Ihre vorhandenen Web- und API-Apps modernisieren und cloudnative Apps erstellen können.
+description: In diesem Artikel erfahren Sie mehr über Azure-Dienste, die Sie dabei unterstützen, Ihre vorhandenen Web- und API-Apps mühelos zu modernisieren und cloudnative Anwendungen zu erstellen.
 author: billyclaymyersmsft
 ms.author: wimyers
 ms.date: 10/17/2019
@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b58c0b36f954ad20c2e642e11bef35fd169e2ca1
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 922a123fe13b268548e2b51ffcc9d42c05d9c64a
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88883126"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880839"
 ---
 # <a name="engage-customers-through-applications"></a>Einbinden von Kunden durch Anwendungen
 
@@ -163,7 +163,7 @@ So konfigurieren oder überwachen Sie einen AKS-Dienst
 
 ### <a name="serverless-solutions"></a>Serverlose Lösungen
 
-Erstellen Sie cloudnative Apps mithilfe einer vollständig verwalteten Plattform, die die Skalierung, Verfügbarkeit und Leistung für Sie verwaltet, ohne dass Sie Infrastruktur bereitstellen und verwalten müssen. Vorteile serverloser Lösungen von Azure sind unter anderem:
+Erstellen Sie cloudnative Anwendungen mithilfe einer vollständig verwalteten Plattform, die die Skalierung, Verfügbarkeit und Leistung für Sie verwaltet, ohne dass Sie Infrastruktur bereitstellen und verwalten müssen. Vorteile serverloser Lösungen von Azure sind unter anderem:
 
 - Höhere Entwicklergeschwindigkeit.
 - Optimieren der Teamleistung.

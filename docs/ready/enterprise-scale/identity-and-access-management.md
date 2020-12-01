@@ -7,12 +7,13 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: e3876da051b363db5bc674a0b1159c525828fc71
-ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
+ms.custom: think-tank
+ms.openlocfilehash: 464e20686a9e61157f350491c97396345fe9ad95
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94432668"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95447352"
 ---
 # <a name="identity-and-access-management"></a>Identitäts- und Zugriffsverwaltung
 
@@ -51,7 +52,7 @@ _Abbildung 1: Identitäts- und Zugriffsverwaltung._
 
 - Verwenden Sie nach Möglichkeit Azure AD [RBAC](/azure/role-based-access-control/overview), um den Zugriff auf Ressourcen auf Datenebene zu verwalten. Beispiele sind Azure Key Vault, ein Speicherkonto oder eine SQL-Datenbank.
 - Stellen Sie für alle Benutzer mit Zugriffsrechten für Azure-Umgebungen über Azure AD Richtlinien für bedingten Zugriff bereit. Dadurch steht ein weiterer Mechanismus zur Verfügung, um eine kontrollierte Azure-Umgebung vor unberechtigtem Zugriff zu schützen.
-- Erzwingen Sie für alle Benutzer mit Zugriffsrechten für die Azure-Umgebungen eine mehrstufige Authentifizierung (MFA). Die Erzwingung von MFA ist ein Erfordernis vieler Complianceframeworks. Sie senkt das Risiko des Diebstahls von Anmeldeinformationen und des nicht autorisierten Zugriffs erheblich.
+- Erzwingen Sie für alle Benutzer mit Zugriffsrechten für die Azure-Umgebungen eine mehrstufige Authentifizierung. Die Erzwingung der mehrstufigen Authentifizierung ist eine Anforderung vieler Complianceframeworks. Sie senkt das Risiko des Diebstahls von Anmeldeinformationen und des nicht autorisierten Zugriffs erheblich.
 - Setzen Sie [Azure AD Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure) ein, um einen ständigen Zugriff zu unterbinden und das Prinzip der geringsten Rechte umzusetzen. Ordnen Sie die Rollen Ihrer Organisation dem erforderlichen Mindestzugriff zu. Azure AD PIM kann entweder als Erweiterung vorhandener Tools und Prozesse dienen, wie beschrieben native Azure-Tools nutzen oder beides nach Bedarf nutzen.
 - Verwenden Sie in Azure AD PIM beim Gewähren von Zugriff auf Ressourcen für Ressourcen auf Azure-Steuerungsebene reine Azure AD-Gruppen.
   - Fügen Sie lokale Gruppen zur reinen Azure AD-Gruppe hinzu, wenn bereits ein Gruppenverwaltungssystem vorhanden ist.
@@ -62,10 +63,10 @@ _Abbildung 1: Identitäts- und Zugriffsverwaltung._
 
 | Role | Verwendung | Aktionen | Keine Aktionen |
 |---|---|---|---|
-| Azure Platform-Besitzer (d. h. integrierte Rolle „Besitzer“)               | Verwaltung des Lebenszyklus von Verwaltungsgruppen und Abonnements                                                           | `*`                                                                                                                                                                                                                  |                                                                                                                                                                                         |
-| Netzwerkverwaltung (NetOps)        | Plattformweite Verwaltung globaler Konnektivität: Virtuelle Netzwerke, UDRs, NSGs, NVAs, VPN, Azure ExpressRoute und andere            | `*/read`, `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*`                              |                                                                                                                                                                               |
+| Azure-Plattformbesitzer (z. B. integrierte Rolle „Besitzer“)               | Verwaltung des Lebenszyklus von Verwaltungsgruppen und Abonnements                                                           | `*`                                                                                                                                                                                                                  |                                                                                                                                                                                         |
+| Netzwerkverwaltung (NetOps)        | Plattformweite globale Konnektivitätsverwaltung: virtuelle Netzwerke, UDRs, NSGs, NVAs, VPN, Azure ExpressRoute und andere            | `*/read`, `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*`                              |                                                                                                                                                                               |
 | SecOps       | Sicherheitsadministratorrolle mit horizontaler Sicht auf die gesamte Azure-Umgebung und die Bereinigungsrichtlinie von Azure Key Vault | `*/read`, `*/register/action`, `Microsoft.KeyVault/locations/deletedVaults/purge/action`, `Microsoft.Insights/alertRules/*`, `Microsoft.Authorization/policyDefinitions/*`, `Microsoft.Authorization/policyAssignments/*`, `Microsoft.Authorization/policySetDefinitions/*`, `Microsoft.PolicyInsights/*`, `Microsoft.Security/*` |                                                                            |
-| Abonnementbesitzer                 | Delegierte Rolle für Abonnementbesitzer, die von der Rolle „Abonnementbesitzer“ abgeleitet ist                                       | `*`                                                                                                                                                                                                                  | `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*` |
+| Abonnementbesitzer                 | Delegierte Rolle für Abonnementbesitzer, die von der Rolle „Besitzer“ für das Abonnement abgeleitet ist                                       | `*`                                                                                                                                                                                                                  | `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*` |
 | Anwendungsbesitzer (DevOps/AppOps) | Die dem Anwendungs-/Betriebsteam auf Ressourcengruppenebene zugewiesene Rolle „Mitwirkender“                                 | `*`                                                                                                                                                                                                                   | `Microsoft.Authorization/*/write`, `Microsoft.Network/publicIPAddresses/write`, `Microsoft.Network/virtualNetworks/write`, `Microsoft.KeyVault/locations/deletedVaults/purge/action`                                         |
 
 - Nutzen Sie den JIT-Zugriff (Just-in-Time) von Azure Security Center für alle IaaS-Ressourcen (Infrastructure-as-a-Service), um Schutz auf Netzwerkebene für den kurzlebigen Zugriff von Benutzern auf IaaS-VMs zu aktivieren.
@@ -75,7 +76,7 @@ _Abbildung 1: Identitäts- und Zugriffsverwaltung._
 
 ### <a name="plan-for-authentication-inside-a-landing-zone"></a>Planen der Authentifizierung innerhalb einer Zielzone
 
-Eine wichtige Entwurfsentscheidung, die eine Organisation bei der Einführung von Azure treffen muss, ist, ob die bestehende lokale Identitätsdomäne auf Azure ausgedehnt oder ob eine ganz neue Domäne eingerichtet werden soll. Die Anforderungen an die Authentifizierung innerhalb der Zielzone müssen sorgfältig geprüft und in Pläne zur Bereitstellung von Active Directory Domain Services (AD DS) unter Windows Server, Azure AD Domain Services (Azure AD DS) oder beider Dienste eingebunden werden. Die meisten Azure-Umgebungen nutzen mindestens Azure AD für die Authentifizierung bei der Azure-Fabric und lokale AD DS-Hostauthentifizierung und -Gruppenrichtlinienverwaltung.
+Eine wichtige Entwurfsentscheidung, die eine Organisation bei der Einführung von Azure treffen muss, ist, ob die bestehende lokale Identitätsdomäne auf Azure ausgedehnt oder ob eine ganz neue Domäne eingerichtet werden soll. Authentifizierungsanforderungen innerhalb der Zielzone sollten sorgfältig bewertet und in Bereitstellungspläne für Active Directory Domain Services (AD DS) in Windows Server, für Azure AD Domain Services (Azure AD DS) oder für beide Dienste integriert werden. Die meisten Azure-Umgebungen nutzen mindestens Azure AD für die Authentifizierung bei der Azure-Fabric und lokale AD DS-Hostauthentifizierung und -Gruppenrichtlinienverwaltung.
 
 **Überlegungen zum Entwurf:**
 
@@ -87,8 +88,8 @@ Eine wichtige Entwurfsentscheidung, die eine Organisation bei der Einführung vo
 - Arbeiten Sie mit zentralisierten und delegierten Zuständigkeiten für die Verwaltung innerhalb der Zielzone bereitgestellter Ressourcen basierend auf Rollen- und Sicherheitsanforderungen.
 - Privilegierte Vorgänge wie die Erstellung von Dienstprinzipalobjekten, die Registrierung von Anwendungen in Azure AD und der Bezug von und der Umgang mit Zertifikaten oder Platzhalterzertifikaten erfordern besondere Genehmigungen. Berücksichtigen Sie, welche Benutzer mit solchen Anforderungen umgehen werden und wie sie ihre Konten mit der erforderlichen Sorgfalt sichern und überwachen können.
 - Wenn es in einer Organisation ein Szenario gibt, in dem auf eine Anwendung mit integrierter Windows-Authentifizierung remote über Azure AD zugegriffen werden muss, sollten Sie [Azure AD-Anwendungsproxy](/azure/active-directory/manage-apps/application-proxy) verwenden.
-- Es besteht ein Unterschied zwischen Azure AD, Azure AD DS und AD DS, das unter Windows Server ausgeführt wird. Beurteilen Sie Ihre Anwendungsbedürfnisse, und ermitteln und dokumentieren Sie den jeweils verwendeten Authentifizierungsanbieter. Planen Sie für alle Anwendungen entsprechend.
-- Beurteilen Sie die Kompatibilität von Workloads für AD DS unter Windows Server und für Azure AD DS.
+- Es besteht ein Unterschied zwischen Azure AD, Azure AD DS und dem unter Windows Server ausgeführten Dienst AD DS. Beurteilen Sie Ihre Anwendungsbedürfnisse, und ermitteln und dokumentieren Sie den jeweils verwendeten Authentifizierungsanbieter. Planen Sie für alle Anwendungen entsprechend.
+- Werten Sie die Kompatibilität von Workloads für AD DS unter Windows Server und für Azure AD DS aus.
 - Stellen Sie sicher, dass Ihr Netzwerkentwurf Ressourcen, die AD DS unter Windows Server für die lokale Authentifizierung und Verwaltung benötigen, den Zugriff auf die entsprechenden Domänencontroller erlaubt.
   - Erwägen Sie für AD DS unter Windows Server Umgebungen mit gemeinsamen Diensten, die eine lokale Authentifizierung und Hostverwaltung im Kontext eines größeren unternehmensweiten Netzwerks bieten.
 - Stellen Sie Azure AD DS innerhalb der primären Region bereit, da dieser Dienst nur in ein Abonnement aufgenommen werden kann.

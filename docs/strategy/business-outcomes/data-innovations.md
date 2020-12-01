@@ -22,7 +22,7 @@ Viele Unternehmen möchten ihr vorhandenes Data Warehouse in die Cloud migrieren
 - Es muss keine Infrastruktur verwaltet werden.
 - Es kann zu einer sicheren, skalierbaren und kostengünstigen Cloudlösung gewechselt werden.
 
-Der cloudnative Azur-Dienst mit nutzungsbasierter Bezahlung namens Azure Synapse Analytics stellt ein analytisches Datenbankverwaltungssystem für Organisationen zur Verfügung. Azure-Technologien helfen Ihnen, Ihr Data Warehouse nach der Migration zu modernisieren und Ihre analytischen Funktionen zu erweitern, um einen neuen Geschäftswert zu erzielen.
+Der cloudnative Azure-Dienst mit nutzungsbasierter Bezahlung namens Azure Synapse Analytics stellt ein analytisches Datenbankverwaltungssystem für Organisationen zur Verfügung. Azure-Technologien helfen Ihnen, Ihr Data Warehouse nach der Migration zu modernisieren und Ihre analytischen Funktionen zu erweitern, um einen neuen Geschäftswert zu erzielen.
 
 Ein Data Warehouse-Migrationsprojekt beinhaltet viele Komponenten. Dazu gehören Schemas, Daten, ETL-Pipelines (Extrahieren, Transformieren und Laden), Autorisierungsberechtigungen, Benutzer, semantische Zugriffsebenen des BI-Tools und analytische Anwendungen.
 

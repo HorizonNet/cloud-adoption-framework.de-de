@@ -1,18 +1,18 @@
 ---
 title: Interagieren mit Geräten über digitale Innovationen
-description: Hier finden Sie Informationen zu weiterführenden Ansätzen für die Verringerung des Innovationsaufwands durch Kundeninteraktion über Umgebungserfahrungen und Ambient Devices anstatt über Apps.
+description: Hier finden Sie Informationen zu weiterführenden Ansätzen für die Verringerung des Innovationsaufwands durch Kundeninteraktion über Umgebungserfahrungen und Geräten anstatt über Anwendungen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 52a00570873d4cccba052fee33845b8ad8653bbf
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: a29dd4b3c23299e8666172cf974a200bffba3ba6
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604423"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880873"
 ---
 # <a name="ambient-experiences-interact-with-devices"></a>Umgebungserfahrungen: Interagieren mit Geräten
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: e82727e6d8f90ecf3681ff8a85096088b4a6de70
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 7d1059721ea4bcc466f2ecfd30a28a0ff24b6c9c
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572186"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880720"
 ---
 # <a name="inventory-and-visibility-in-azure"></a>Bestand und Transparenz in Azure
 
@@ -31,7 +31,7 @@ In der folgenden Tabelle wird für jede Umgebung auf Unternehmensniveau der empf
 | Überwachen der Integrität von Azure-Diensten | Azure Service Health | Integrität, Leistung und Diagnose für Dienste, die in Azure ausgeführt werden |
 | Zentralisierung von Protokollen | Log Analytics | Zentrale Protokollierung für jegliche Transparenzzwecke |
 | Zentralisierung der Überwachung | Azure Monitor | Zentrale Überwachung von Betriebsdaten und Trends |
-| Nachverfolgen von Bestand und Änderungen für virtuelle Computer | Azure-Änderungsnachverfolgung und Bestand | Bestandsaufnahme von VMs und Überwachen von Änderungen auf Ebene des Gastbetriebssystems |
+| Nachverfolgen von Bestand und Änderungen für virtuelle Computer | Änderungsnachverfolgung und Bestand | Bestandsaufnahme von VMs und Überwachen von Änderungen auf Ebene des Gastbetriebssystems |
 | Abonnementüberwachung | Azure-Aktivitätsprotokoll | Überwachen von Änderungen auf Abonnementebene |
 | Überwachung des Gastbetriebssystems | Azure Monitor für VMs | Überwachen von Änderungen und der Leistung von VMs |
 | Netzwerküberwachung | Azure Network Watcher | Überwachen von Netzwerkänderungen und -leistung |
@@ -179,8 +179,8 @@ Es gibt zwei Ansätze für das Onboarding:
 
 Jeder Artikel erläutert die Schritte zum Onboarding der folgenden Lösungen:
 
-- Updateverwaltung
-- Änderungsnachverfolgung und Bestand
+- Lösung für die Updateverwaltung
+- Lösung für Änderungsnachverfolgung und Bestand
 - Azure-Aktivitätsprotokoll
 - Azure Log Analytics-Agent-Integritätsdiagnose
 - Antischadsoftwarebewertung

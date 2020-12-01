@@ -7,12 +7,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: organize
 ms.topic: conceptual
 ms.date: 07/14/2020
-ms.openlocfilehash: 1ded8b088d866bcb8d00f14dbe6286266313f63e
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: a0231d05fdb05a89499f253fa4564faf286ca1ef
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712322"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995651"
 ---
 # <a name="cloud-data-functions"></a>Clouddatenfunktionen
 
@@ -57,7 +57,7 @@ Mithilfe von Azure Synapse Analytics können Data Scientists innerhalb weniger M
 
 ## <a name="business-analysts"></a>Business Analysts
 
-Diese Teams erstellen und verwenden Dashboards, Berichte und andere Formen der Datenvisualisierung, um schnelle Erkenntnisse über den Betrieb zu gewinnen. Häufig verfügt jede branchenspezifische Abteilung über dedizierte Business Analysts, die Informationen und Analysen aus spezialisierten Anwendungen sammeln und verpacken. Diese spezialisierten Apps können für Kreditkarten, Einzelhandelsbanking, kommerzielles Banking, Finanzverwaltung, Marketing und andere Organisationen sein.
+Diese Teams erstellen und verwenden Dashboards, Berichte und andere Formen der Datenvisualisierung, um schnelle Erkenntnisse über den Betrieb zu gewinnen. Häufig verfügt jede branchenspezifische Abteilung über dedizierte Business Analysts, die Informationen und Analysen aus spezialisierten Anwendungen sammeln und verpacken. Diese spezialisierten Anwendungen können für Kreditkarten, Einzelhandelsbanking, kommerzielles Banking, Finanzverwaltung, Marketing und andere Organisationen konzipiert sein.
 
 Mithilfe von Azure Synapse Analytics können Business Analysts sicher auf Datasets zugreifen und mithilfe von Power BI Dashboards erstellen. Sie können Daten auch innerhalb und außerhalb der eigenen Organisation über Azure Data Share sicher freigeben.
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: ebd9decfb10f4ff0917d1c7020569a2f63777018
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: c5cd50b0f0dbaaa215f4c7c88e6f482d57027243
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605053"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996637"
 ---
 <!-- markdownlint-disable DOCSMD001 -->
 
@@ -102,7 +102,7 @@ Partner können die Nutzung über das Partner Center überprüfen.
 
 Es ist wichtig, eine kontinuierliche Kostenanalyse und -überprüfung durchzuführen. Dadurch können Sie die Größe von Ressourcen nach Bedarf anpassen, um Kosten und Workload auszugleichen.
 
-Azure Cost Management und Abrechnung unterbreitet Ihnen mithilfe von Azure Advisor Empfehlungen zur Kostenoptimierung Azure Advisor zeigt Ihnen Möglichkeiten der Optimierung und Steigerung der Effizienz auf, indem ungenutzte oder nicht ausreichend genutzte Ressourcen ermittelt werden.
+Azure Cost Management + Billing unterbreitet Ihnen mithilfe von Azure Advisor Empfehlungen zur Kostenoptimierung. Azure Advisor zeigt Ihnen Möglichkeiten der Optimierung und Steigerung der Effizienz auf, indem ungenutzte oder nicht ausreichend genutzte Ressourcen ermittelt werden.
 
 1. Wählen Sie **Kostenverwaltung + Abrechnung** aus.
 1. Wählen Sie **Ratgeberempfehlungen** und die Registerkarte **Kosten** aus.

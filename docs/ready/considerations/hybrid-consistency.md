@@ -7,12 +7,12 @@ ms.date: 12/27/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: dee8a0552db02a070d4832a0da885469a02ecf11
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 53a958fad2f4cbbdd8184fc13c5102fd0ca6041d
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776192"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997266"
 ---
 <!-- cSpell:ignore ISVs Bitnami Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers Pointnext -->
 
@@ -41,7 +41,7 @@ Hier finden Sie einige Beispiele für diese Komponenten aus Sicht von Azure:
 - Azure Active Directory (Azure AD) arbeitet mit dem lokalen Azure Directory zusammen, um allen Benutzern eine einheitliche Identität bereitzustellen. SSO für lokale und cloudbasierte Anwendungen macht es Benutzern einfach, sicher auf die Anwendungen und Ressourcen zuzugreifen, die sie benötigen. Administratoren können Sicherheits- und Governance-Kontrollen verwalten und besitzen ferner die Flexibilität, Berechtigungen anpassen zu können, ohne die Benutzererfahrung zu beeinträchtigen.
 - Azure bietet integrierte Verwaltungs- und Sicherheitsdienste für die Cloud- und die lokale Infrastruktur. Diese Dienste umfassen einen integrierten Satz von Tools, die zum Überwachen, Konfigurieren und Schützen von Hybrid Clouds verwendet werden. Dieser umfassende Ansatz bei der Verwaltung hilft insbesondere bei realen Problemen, denen Organisationen gegenüber stehen, die eine Hybrid Cloud-Lösung in Betracht ziehen.
 - Azure Hybrid Cloud stellt Tools bereit, die einen sicheren, nahtlosen und effizienten Zugriff auf sämtliche Daten gewährleisten. Azure-Datendienste sorgen in Kombination mit Microsoft SQL Server für eine konsistente Datenplattform. Ein konsistentes Hybrid Cloud-Modell ermöglicht Benutzern das Arbeiten mit sowohl Betriebs- als auch analytischen Daten. Dieselben Dienste werden lokal und in der Cloud für Data Warehousing, Datenanalyse und Datenvisualisierung bereitgestellt.
-- Azure-Clouddienste und ein lokaler Azure Stack ermöglichen einheitliche Vorgehensweisen bei Entwicklung und DevOps. Konsistenz in der Cloud und lokal vor Ort bedeutet, dass Ihr DevOps-Team Anwendungen erstellen kann, die in beiden Umgebungen ausgeführt und problemlos am richtigen Standort bereitgestellt werden können. Sie können Vorlagen auch in der Hybridlösung wiederverwenden und so DevOps-Prozesse noch weiter vereinfachen.
+- Azure Cloud Services in Kombination mit einer lokalen Azure Stack-Instanz ermöglicht vereinheitlichte Entwicklung und DevOps. Konsistenz in der Cloud und lokal vor Ort bedeutet, dass Ihr DevOps-Team Anwendungen erstellen kann, die in beiden Umgebungen ausgeführt und problemlos am richtigen Standort bereitgestellt werden können. Sie können Vorlagen auch in der Hybridlösung wiederverwenden und so DevOps-Prozesse noch weiter vereinfachen.
 
 ## <a name="azure-stack-in-a-hybrid-cloud-environment"></a>Azure Stack in einer Hybrid Cloud-Umgebung
 
@@ -64,8 +64,8 @@ Azure Stack wird in zwei Bereitstellungsoptionen angeboten:
 
 Sie können Azure Stack-Initiativen beschleunigen, indem Sie das vollständige Azure-Ökosystem nutzen:
 
-<!-- docutune:casing "EMC Services" "Infront Consulting Group" "HPE Pointnext" -->
-<!-- cSpell:ignore ISVs Bitnami DXC EMC Infront Yourhosting Revera Avanade Pulsant PWC PricewaterhouseCoopers -->
+<!-- docutune:casing ISVs Bitnami DXC EMC Infront Yourhosting Revera Avanade Pulsant PWC PricewaterhouseCoopers Tieto NTT "Kemp Technologies" "Pivotal Cloud Foundry" -->
+<!-- cSpell:ignore ISVs Bitnami Infront Kemp Yourhosting Revera Avanade Pulsant PricewaterhouseCoopers Tieto -->
 
 - Azure stellt sicher, dass die meisten Anwendungen und Dienste, die für Azure zertifiziert sind, auch in Azure Stack funktionieren. Mehrere unabhängige Softwarehersteller (ISVs) erweitern ihre Lösungen auf Azure Stack. Zu diesen ISVs gehören Bitnami, Docker, Kemp Technologies, Pivotal Cloud Foundry, Red Hat Enterprise Linux und SUSE Linux.
 - Sie können Azure Stack wahlweise als einen vollständig verwalteten Dienst bereitstellen und betreiben. Mehrere Partner werden in Kürze Angebote für verwaltete Dienste in Azure und Azure Stack anbieten. Zu diesen Partnern gehören Tieto, Yourhosting, Revera, Pulsant und NTT. Diese Partner liefern verwaltete Dienste für Azure durch das Cloud Solution Provider-Programm (CSP). Sie erweitern ihre Angebote um die Einbeziehung von Hybridlösungen.

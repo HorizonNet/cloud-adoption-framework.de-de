@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: ab3b3e0d4012113e2b132c8df1e0bfe89758252d
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 68b85c0269fb5ecc4f042e2e73ebe1aecfe8058f
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94711693"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995294"
 ---
+<!-- docutune:casing "Blueprints: Blueprint definitions" "Blueprints: Get started" -->
+
 # <a name="governance-security-and-compliance-in-azure"></a>Governance, Sicherheit und Konformität in Azure
 
 Wenn Sie Unternehmensrichtlinien festlegen und Ihre Governancestrategien planen, können Sie Tools und Dienste wie Azure Policy, Azure Blueprints und Azure Security Center verwenden, um die Governanceentscheidungen Ihres Unternehmens durchzusetzen und zu automatisieren. Verwenden Sie vor Beginn Ihrer Governanceplanung das [Governancebenchmarktool](https://cafbaseline.com), um potenzielle Lücken im Cloudgovernanceansatz Ihres Unternehmens zu identifizieren. Weitere Informationen zum Entwickeln von Governanceprozessen finden Sie in der [Governancemethodologie](../../govern/index.md).
@@ -41,7 +43,7 @@ So erstellen Sie eine Blaupause
 1. Wählen Sie im Abschnitt **Blaupause erstellen** die Option **Erstellen** aus.
 1. Filtern Sie die Liste mit den Blaupausen, um die gewünschte Blaupause auszuwählen.
 1. Geben Sie unter **Name der Blaupause** den Namen ein, und wählen Sie anschließend den entsprechenden **Definitionsspeicherort** aus.
-1. Wählen Sie **Weiter: Artefakte >>** aus, und sehen Sie sich anschließend die in der Blaupause enthaltenen Artefakte an.
+1. Wählen Sie **Weiter: Artefakte** aus, und überprüfen Sie dann die in der Blaupause enthaltenen Artefakte.
 1. Wähen Sie **Entwurf speichern** aus.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted]" submitText="Create a blueprint" :::
@@ -54,7 +56,7 @@ So erstellen Sie eine Blaupause
 1. Wählen Sie im Abschnitt **Blaupause erstellen** die Option **Erstellen** aus.
 1. Filtern Sie die Liste mit den Blaupausen, um die gewünschte Blaupause auszuwählen.
 1. Geben Sie unter **Name der Blaupause** den Namen ein, und wählen Sie anschließend den entsprechenden **Definitionsspeicherort** aus.
-1. Wählen Sie **Weiter: Artefakte >>** aus, und sehen Sie sich anschließend die in der Blaupause enthaltenen Artefakte an.
+1. Wählen Sie **Weiter: Artefakte** aus, und überprüfen Sie dann die in der Blaupause enthaltenen Artefakte.
 1. Wähen Sie **Entwurf speichern** aus.
 
 ::: zone-end

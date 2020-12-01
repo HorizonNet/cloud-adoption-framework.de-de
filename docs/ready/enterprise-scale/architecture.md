@@ -7,13 +7,13 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.custom: csu
-ms.openlocfilehash: 44276ffabbae39cd5a75c0ea2de501aefd0c42f0
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.custom: csu, think-tank
+ms.openlocfilehash: a86439fe71235542a9e5b8f9ce66a364db5004a7
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713053"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95447335"
 ---
 # <a name="cloud-adoption-framework-enterprise-scale-landing-zone-architecture"></a>Cloud Adoption Framework – Architektur für Zielzonen auf Unternehmensebene
 
@@ -25,7 +25,7 @@ Die Architektur für Cloud Adoption Framework-Zielzonen auf Unternehmensniveau s
 
 Nicht alle Unternehmen verwenden Azure gleich, sodass die Architektur für Cloud Adoption Framework-Zielzonen auf Unternehmensniveau von Kunde zu Kunde unterschiedlich ist. Basierend auf den technischen Überlegungen und Entwurfsempfehlungen in diesem Leitfaden müssen Sie je nach Szenario Ihrer Organisation daher unterschiedliche Faktoren gegeneinander abwägen. Gewisse Abweichungen werden erwartet. Wenn Sie jedoch die wichtigsten Empfehlungen befolgen, ebnet die resultierende Zielarchitektur für Ihre Organisation den Weg für eine nachhaltigere Skalierung.
 
-## <a name="landing-zone-in-enterprise-scale"></a>Zielzone auf Unternehmensebene
+## <a name="landing-zone-in-enterprise-scale"></a>Zielzone auf Unternehmensniveau
 
 Azure-Zielzonen sind das Ergebnis einer Azure-Umgebung mit mehreren Abonnements, in der Skalierbarkeit, Sicherheit, Governance, Netzwerke und Identität berücksichtigt werden. Azure-Zielzonen ermöglichen die Anwendungsmigration und Greenfield-Entwicklung auf Unternehmensniveau in Azure. Diese Zonen berücksichtigen alle Plattformressourcen, die zur Unterstützung des Anwendungsportfolios des Kunden erforderlich sind, und unterscheiden nicht zwischen Infrastructure-as-a-Service oder Platform-as-a-Service.
 
@@ -37,21 +37,21 @@ _Abbildung 1: Zielzonenaufbau._
 
 ## <a name="high-level-architecture"></a>Grundlegende Architektur
 
-Eine Architektur in der Größenordnung eines Unternehmens wird durch eine Reihe von Entwurfsüberlegungen und -empfehlungen aus acht [kritischen Entwurfsbereichen](./design-guidelines.md) definiert, wobei zwei Netzwerktopologien empfohlen werden: eine Architektur auf Unternehmensniveau, die auf einer Azure Virtual WAN-Netzwerktopologie basiert (in Abbildung 2 abgebildet), oder basierend auf einer herkömmlichen Azure-Netzwerktopologie, die auf der Hub-and-Spoke-Architektur basiert (zu sehen in Abbildung 3).
+Eine Architektur auf Unternehmensniveau wird durch eine Reihe von Entwurfsüberlegungen und -empfehlungen aus acht [wichtigen Entwurfsbereichen](./design-guidelines.md) definiert, wobei zwei Netzwerktopologien empfohlen werden: eine Architektur auf Unternehmensniveau, die auf einer Azure Virtual WAN-Netzwerktopologie basiert (in Abbildung 2 dargestellt), oder eine, die auf einer herkömmlichen Azure-Netzwerktopologie basiert, der eine Hub-and-Spoke-Architektur zugrunde liegt (in Abbildung 3 dargestellt).
 
 [![Diagramm, das eine Architektur für Cloud Adoption Framework-Zielzonen auf Unternehmensniveau, basierend auf einer Azure Virtual WAN-Netzwerktopologie, zeigt.](./media/ns-arch-inline.png)](./media/ns-arch-expanded.png#lightbox)
 
-_Abbildung 2: Eine Architektur für Cloud Adoption Framework-Zielzonen auf Unternehmensniveau, basierend auf einer Azure Virtual WAN-Netzwerktopologie. Beachten Sie, dass das Konnektivitätsabonnement einen VWAN-Hub verwendet._
+_Abbildung 2: Eine Architektur für Cloud Adoption Framework-Zielzonen auf Unternehmensniveau, basierend auf einer Azure Virtual WAN-Netzwerktopologie. Beachten Sie, dass das Konnektivitätsabonnement einen Virtual WAN-Hub verwendet._
 
 [![Diagramm: Architektur für Cloud Adoption Framework-Zielzonen auf Unternehmensniveau](./media/ns-arch-cust-inline.png)](./media/ns-arch-cust-expanded.png#lightbox)
 
-_Abbildung 3: Eine Architektur für Cloud Adoption Framework-Zielzonen auf Unternehmensniveau, basierend auf einer herkömmlichen Azure-Netzwerktopologie. Beachten Sie, dass das Konnektivitätsabonnement eine Hub-VNet verwendet._
+_Abbildung 3: Eine Architektur für Cloud Adoption Framework-Zielzonen auf Unternehmensniveau, basierend auf einer herkömmlichen Azure-Netzwerktopologie. Beachten Sie, dass das Konnektivitätsabonnement ein Hub-VNet verwendet._
 
-Laden Sie die PDF-Dateien herunter, die die Diagramme der Architektur auf Unternehmensniveau enthalten, basierend auf der [Virtual WAN](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/enterprise-scale-architecture.pdf)-Netzwerktopologie oder einer herkömmlichen Azure-Netzwerktopologie, basierend auf der [Hub-and-Spoke](https://github.com/microsoft/CloudAdoptionFramework/raw/master/ready/enterprise-scale-architecture-cust.pdf)-Architektur.
+Laden Sie die PDF- oder Visio-Dateien herunter, die die Diagramme für die Architektur auf Unternehmensniveau basierend auf der [Virtual WAN-Netzwerktopologie (PDF)](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/ready/enterprise-scale-architecture.pdf) oder einer herkömmlichen Azure-Netzwerktopologie mit der [Hub-and-Spoke-Architektur (PDF)](https://github.com/microsoft/CloudAdoptionFramework/raw/master/ready/enterprise-scale-architecture-cust.pdf) als Grundlage enthalten. Eine Visio-Datei, die sowohl das Diagramm für Virtual WAN als auch das für die Hub-and-Spoke-Architektur enthält, kann als [Visio-Diagramm (VSDX)](https://github.com/microsoft/CloudAdoptionFramework/raw/master/ready/enterprise-scale-architecture.vsdx) heruntergeladen werden.
 
-In den Abbildungen 2 und 3 finden Sie Verweise auf die kritischen Entwurfsbereiche auf Unternehmensniveau, die mit den Buchstaben A bis I gekennzeichnet sind:
+In Abbildung 2 und 3 finden Sie Verweise auf die wichtigen Entwurfsbereiche auf Unternehmensniveau, die mit den Buchstaben A bis I gekennzeichnet sind:
 
-![Der Buchstabe A](./media/a.png) [Enterprise Agreement-Registrierung (EA) und Azure Active Directory-Mandanten](./enterprise-enrollment-and-azure-ad-tenants.md). Eine Enterprise Agreement-Registrierung (EA) stellt die Geschäftsbeziehung zwischen Microsoft und der Art und Weise dar, wie Ihre Organisation Azure verwendet. Sie bildet die Grundlage für die Abrechnung für alle Ihre Abonnements und wirkt sich auf die Verwaltung Ihrer digitalen Ressourcen aus. Ihre EA-Registrierung wird über ein Azure-Unternehmensportal verwaltet. Eine Registrierung bildet häufig die Hierarchie einer Organisation ab, zu der die Abteilungen, Konten und Abonnements gehören. Ein Azure AD-Mandant bietet Identitäts- und Zugriffsverwaltung, die ein wichtiger Bestandteil Ihres Sicherheitsstatus ist. Ein Azure AD-Mandant stellt sicher, dass authentifizierte und autorisierte Benutzer nur auf die Ressourcen zugreifen können, für die sie über Zugriffsberechtigungen verfügen.
+![Der Buchstabe A](./media/a.png) [Enterprise Agreement-Registrierung (EA) und Azure Active Directory-Mandanten](./enterprise-enrollment-and-azure-ad-tenants.md). Eine Enterprise Agreement-Registrierung (EA) stellt die Geschäftsbeziehung zwischen Microsoft und der Art und Weise dar, wie Ihre Organisation Azure verwendet. Sie bildet die Grundlage für die Abrechnung für alle Ihre Abonnements und wirkt sich auf die Verwaltung Ihrer digitalen Ressourcen aus. Ihre EA-Registrierung wird über das Azure EA Portal verwaltet. Eine Registrierung bildet häufig die Hierarchie einer Organisation ab, zu der die Abteilungen, Konten und Abonnements gehören. Ein Azure AD-Mandant bietet Identitäts- und Zugriffsverwaltung, die ein wichtiger Bestandteil Ihres Sicherheitsstatus ist. Ein Azure AD-Mandant stellt sicher, dass authentifizierte und autorisierte Benutzer nur auf die Ressourcen zugreifen können, für die sie über Zugriffsberechtigungen verfügen.
 
 ![Der Buchstabe B](./media/b.png) [Identitäts- und Zugriffsverwaltung](./identity-and-access-management.md). Sowohl für die Server- als auch für die Benutzerauthentifizierung muss eine Azure Active Directory-Implementierung entworfen und integriert werden. Um eine Trennung der Aufgabenbereiche und Berechtigungen für den Betrieb und die Verwaltung der Plattform zu erzwingen, muss die ressourcenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC) modelliert und bereitgestellt werden. Für einen sicheren Zugriff auf Ressourcen und die Unterstützung von Vorgängen wie Rotation und Wiederherstellung muss eine Schlüsselverwaltungslösung entworfen und bereitgestellt werden. Abschließend werden Anwendungsbesitzern Zugriffsrollen auf Steuerungs- und Datenebene zugewiesen, um Ressourcen eigenständig erstellen und verwalten zu können.
 

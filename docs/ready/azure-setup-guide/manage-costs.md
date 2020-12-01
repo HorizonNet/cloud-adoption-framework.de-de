@@ -9,22 +9,22 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: 230d5d4927033fe93650b19c152b8db3ab4b70f8
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: d072897e93cb0f368a2c61c69d9fd7d8822389fe
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884401"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997334"
 ---
 # <a name="manage-costs-and-billing-for-your-azure-resources"></a>Verwalten von Kosten und Abrechnung für Ihre Azure-Ressourcen
 
-Die Kostenverwaltung ist der Prozess, bei dem Sie die Kosten Ihrer Geschäftstätigkeit effektiv planen und steuern. Kostenverwaltungsaufgaben werden in der Regel durch die Finanz-, Management- und App-Teams ausgeführt. Azure Cost Management und Abrechnung kann Ihnen helfen, Ihre Planung unter Berücksichtigung der Kosten durchzuführen. Zudem können damit Kosten effektiv analysiert und Maßnahmen zum Optimieren der Cloudausgaben ergriffen werden.
+Die Kostenverwaltung ist der Prozess, bei dem Sie die Kosten Ihrer Geschäftstätigkeit effektiv planen und steuern. Kostenverwaltungsaufgaben werden in der Regel durch die Finanz-, Management- und Anwendungsteams ausgeführt. Azure Cost Management + Billing Ihnen bei Ihrer Planung unter Berücksichtigung der Kosten helfen. Zudem können damit Kosten effektiv analysiert und Maßnahmen zum Optimieren der Cloudausgaben ergriffen werden.
 
 Weitere Informationen zur Integration von Verwaltungsprozessen für die Cloudkosten in Ihrem Unternehmen finden Sie im Artikel des Cloud Adoption Framework zum [Nachverfolgen der Kosten in Geschäftseinheiten, Umgebungen oder Projekten](../azure-best-practices/track-costs.md).
 
-## <a name="manage-your-costs-with-azure-cost-management-and-billing"></a>Verwalten Ihrer Kosten mit Azure Cost Management und Abrechnung
+## <a name="manage-your-costs-with-azure-cost-management--billing"></a>Verwalten Ihrer Kosten mit Azure Cost Management + Billing
 
-Azure Cost Management und Abrechnung bietet verschiedene Funktionen für die Kostenprognose und -verwaltung:
+Azure Cost Management + Billing bietet verschiedene Funktionen für die Kostenprognose und -verwaltung:
 
 - Die Funktion **Cloudkosten analysieren** unterstützt Sie dabei, Ihre Kosten zu untersuchen und zu analysieren. Sie können aggregierte Kosten für Ihr Konto oder kumulierte Kosten im Zeitverlauf anzeigen.
 - Mit der Funktion **Mit Budgets überwachen** können Sie ein Budget erstellen und anschließend Warnungen konfigurieren, um eine Benachrichtigung zu erhalten, bevor das Budget überschritten wird.
@@ -66,7 +66,7 @@ So zeigen Sie Ihre Supportanfragen und deren Status an:
 
 Weitere Informationen finden Sie unter:
 
-- [Dokumentation zu Azure Cost Management und Abrechnung](/azure/billing)
+- [Dokumentation zur Azure-Kostenverwaltung und -Abrechnung](/azure/billing)
 - [Cloud Adoption Framework: Nachverfolgen von Kosten für Geschäftseinheiten, Umgebungen oder Projekte](../azure-best-practices/track-costs.md)
 - [Cloud Adoption Framework: Disziplin „Cost Management“](../../govern/cost-management/index.md)
 

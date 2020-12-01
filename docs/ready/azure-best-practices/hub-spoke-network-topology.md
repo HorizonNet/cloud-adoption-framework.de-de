@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: rossort
 ms.custom: virtual-network
-ms.openlocfilehash: 234662ed55a71c11512b2ed9c25903158a090e95
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: c37cc134ff40f1b0d158498db9d3c7375ac320a9
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712118"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995372"
 ---
 # <a name="hub-and-spoke-network-topology"></a>Hub-and-Spoke-Netzwerktopologie
 

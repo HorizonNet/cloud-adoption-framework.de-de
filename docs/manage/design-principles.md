@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 8b0d8896e6805a90aed940262236a8a4a3949cb6
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: e271f4da4b4cb5f4dc93f5e67793d0c0531957b6
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571540"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879547"
 ---
 # <a name="apply-design-principles-and-advanced-operations"></a>Umsetzen von Entwurfsprinzipien und erweiterten Vorgängen
 
@@ -62,7 +62,7 @@ Die natürliche Abstimmung von Rollen in einem CCoE wird wie folgt dargestellt:
 - Die Cloudverwaltung stellt die Verwaltungsbaseline zentral bereit und unterstützt die Nutzung des Dienstkatalogs.
 - Allerdings trägt der Geschäftsbereich (in Form eines geschäftsbereichsorientierten DevOps- oder Cloudeinführungsteams) die Verantwortung für die täglichen auf Workloads, Pipelines oder Leistung bezogenen Abläufe.
 
-Bei der Koordination von Verwaltungsbereichen können Modelle mit zentralem IT-Team und CCoE bei minimalem kulturellem Wandel im Allgemeinen auf der Plattformspezialisierung aufsetzen. Das Aufsetzen auf der Workloadspezialisierung könnte für Teams in einem zentralen IT-Team etwas komplexer sein.
+Bei der Koordinierung von Verwaltungsbereichen können Modelle mit einem zentralen IT-Team und CCoE bei minimalem kulturellem Wandel im Allgemeinen eine Plattformspezialisierung herbeiführen. Das Aufsetzen auf der Workloadspezialisierung könnte für Teams in einem zentralen IT-Team etwas komplexer sein.
 
 ## <a name="management-specialization-processes"></a>Verwaltungsspezialisierungsprozesse
 
@@ -77,7 +77,7 @@ Im Rahmen jeder Spezialisierung erfolgt der folgende vierstufige Prozess in eine
 
 Das Verbessern des Systementwurfs ist der effektivste Ansatz zur Optimierung des Betriebs jeder gängigen Plattform. Verbesserungen des Systementwurfs können die Stabilität erhöhen und Betriebsunterbrechungen verringern. Der Entwurf einzelner Systeme wird für die Umgebungssicht nicht berücksichtigt, die das Framework für die Cloudeinführung (Cloud Adoption Framework) einnimmt.
 
-Als Ergänzung zu diesem Framework bietet das [Microsoft Azure Well-Architected Framework](/azure/architecture/framework) Grundsätze zum Verbessern einer Plattform oder einer bestimmten Workload. Der Schwerpunkt des Frameworks liegt auf der Verbesserung von fünf Säulen der Architekturexzellenz:
+Als Ergänzung zu diesem Framework bietet das [Microsoft Azure Well-Architected Framework](/azure/architecture/framework) Richtlinien für die Qualitätsverbesserung einer Plattform oder bestimmten Workload. Das Framework konzentriert sich bei den Verbesserungen auf die fünf Säulen einer erstklassigen Architektur:
 
 - **Kostenoptimierung:** Verwalten der Kosten zur Maximierung des erzielten Werts.
 - **Betriebliche Exzellenz:** Verfolgen der operativen Prozesse, die für die Ausführung eines Systems in der Produktion sorgen.

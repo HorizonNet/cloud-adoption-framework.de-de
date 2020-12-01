@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: 081c1b4b49ab82472b406c0d9d69566cc20dcd13
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 0ef7c38fe9deedd45f0c8c9c902e852d671f8cf8
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713138"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94881111"
 ---
 <!-- TODO: Rationalize name formats. -->
 
@@ -76,13 +76,13 @@ Nachdem Sie nun über ein Identitätssystem und sowie über Benutzerkonten verf�
 
 Es gibt noch eine andere Anforderung: Die Ressourcen, die den einzelnen Workloads zugeordnet sind, sollen voneinander isoliert werden, sodass kein Workloadbesitzer über Verwaltungszugriff auf Workloads verfügt, für die er nicht zuständig ist. Außerdem darf dieses Modell nur mit integrierten Rollen für die rollenbasierte Zugriffssteuerung von Azure implementiert werden.
 
-Jede RBAC-Rolle wird in Azure in einem von drei Bereichen angewendet: **Abonnement**, **Ressourcengruppe** und dann für eine einzelne **Ressource**. Rollen werden an untergeordnete Bereiche vererbt. Wenn ein Benutzer beispielsweise auf Abonnementebene der [integrierten Rolle „Besitzer“](/azure/role-based-access-control/built-in-roles#owner) zugewiesen ist, wird diese Rolle dem Benutzer auch auf Ebene der Ressourcengruppe und der einzelnen Ressource zugewiesen, sofern dies nicht außer Kraft gesetzt wird.
+Jede RBAC-Rolle wird in Azure in einem von drei Bereichen angewendet: **Abonnement**, **Ressourcengruppe** und dann für eine einzelne **Ressource**. Rollen werden an untergeordnete Bereiche vererbt. Wenn ein Benutzer beispielsweise auf Abonnementebene der [integrierten Rolle „Besitzer“](/azure/role-based-access-control/built-in-roles#owner) zugewiesen ist, wird diese Rolle dem Benutzer auch auf Ebene der Ressourcengruppe und einzelner Ressourcen zugewiesen, sofern dies nicht außer Kraft gesetzt wird.
 
-Zum Erstellen eines Modells für den Zugriff mit der geringsten Berechtigung müssen Sie entscheiden, welche Aktionen ein bestimmter Typ von Benutzer für diese drei Bereiche jeweils durchführen darf. Es besteht beispielsweise die Anforderung, dass ein Workloadbesitzer nur über die Berechtigung zum Verwalten des Zugriffs auf die Ressourcen verfügen darf, die seiner Workload zugeordnet sind. Wenn Sie die integrierte Rolle „Besitzer“ im Abonnementbereich zuweisen, verfügt jeder Workloadbesitzer über Verwaltungszugriff auf alle Workloads.
+Zum Erstellen eines Modells für den Zugriff mit der geringsten Berechtigung müssen Sie entscheiden, welche Aktionen ein bestimmter Typ von Benutzer für diese drei Bereiche jeweils durchführen darf. Es besteht beispielsweise die Anforderung, dass ein Workloadbesitzer nur über die Berechtigung zum Verwalten des Zugriffs auf die Ressourcen verfügen darf, die seiner Workload zugeordnet sind. Wenn Sie die integrierte Rolle „Besitzer“ im Abonnementumfang zuweisen, verfügt jeder Workloadbesitzer über Verwaltungszugriff auf alle Workloads.
 
 Wir sehen uns zwei Beispiele für Berechtigungsmodelle an, um dieses Konzept etwas besser zu verstehen. Im ersten Beispiel vertraut das Modell bei der Erstellung von Ressourcengruppen nur dem Dienstadministrator. Im zweiten Beispiel weist das Modell jedem Workloadbesitzer im Abonnementbereich die integrierte Rolle „Besitzer“ zu.
 
-In beiden Beispielen wird einem Dienstadministrator des Abonnements die integrierte Rolle „Besitzer“ im Abonnementbereich zugewiesen. Wir erinnern uns, dass mit der integrierte Rolle „Besitzer“ alle Berechtigungen gewährt werden, einschließlich des Zugriffs auf Ressourcen.
+In beiden Beispielen wird einem Dienstadministrator des Abonnements die integrierte Rolle „Besitzer“ im Abonnementbereich zugewiesen. Denken Sie daran, dass mit der integrierten Rolle „Besitzer“ alle Berechtigungen gewährt werden, einschließlich der Verwaltung des Zugriffs auf Ressourcen.
 
 ![Dienstadministrator des Abonnements mit Rolle „Besitzer“](../../_images/govern/design/governance-2-1.png)
 _Abbildung 3: Ein Abonnement mit einem Dienstadministrator, dem die integrierte Rolle „Besitzer“ zugewiesen ist._
@@ -115,14 +115,14 @@ Bedenken Sie, dass jede Aufgabe in diesem Beispiel vom **Dienstadministrator** d
 
 Wir sehen uns nun das zweite Beispiel an, bei dem die Anzahl von Aufgaben reduziert wird, die vom **Dienstadministrator** durchgeführt werden.
 
-1. Bei diesem Modell wird **Workloadbesitzer A** die integrierte Rolle „Besitzer“ für den Abonnementbereich zugewiesen, damit er seine eigene Ressourcengruppe erstellen kann: **Ressourcengruppe A**. ![Dienstadministrator fügt Workloadbesitzer A dem Abonnement hinzu](../../_images/govern/design/governance-2-11.png)
+1. Bei diesem Modell wird **Workloadbesitzer A** die integrierte Rolle „Besitzer“ im Abonnementumfang zugewiesen, damit er seine eigene Ressourcengruppe erstellen kann: **Ressourcengruppe A**. ![Dienstadministrator fügt Workloadbesitzer A dem Abonnement hinzu](../../_images/govern/design/governance-2-11.png)
 1. Beim Erstellen von **Ressourcengruppe A** wird **Workloadbesitzer A** standardmäßig hinzugefügt und erbt die integrierte Rolle „Besitzer“ vom Abonnementbereich.
   ![Workloadbesitzer A erstellt Ressourcengruppe A](../../_images/govern/design/governance-2-12.png)
 1. Mit der integrierten Rolle „Besitzer“ wird **Workloadbesitzer A** die Berechtigung zum Verwalten des Zugriffs auf die Ressourcengruppe gewährt. **Workloadbesitzer A** fügt zwei **Mitwirkende für die Workload** hinzu und weist ihnen jeweils die integrierte Rolle „Leser“ zu.
   ![Workloadbesitzer A fügt Mitwirkende der Workload hinzu](../../_images/govern/design/governance-2-13.png)
-1. Der **Dienstadministrator** fügt nun den **Workloadbesitzer B** dem Abonnement mit der integrierten Rolle „Besitzer“ hinzu.
+1. Der **Dienstadministrator** fügt nun den **Workloadbesitzer B** mit der integrierten Rolle „Besitzer“ zum Abonnement hinzu.
   ![Dienstadministrator fügt Workloadbesitzer B dem Abonnement hinzu](../../_images/govern/design/governance-2-14.png)
-1. **Workloadbesitzer B** erstellt die **Ressourcengruppe B** und wird standardmäßig hinzugefügt. **Workloadbesitzer B** erbt wieder die integrierte Rolle „Besitzer“ aus dem Abonnementbereich.
+1. **Workloadbesitzer B** erstellt die **Ressourcengruppe B** und wird standardmäßig hinzugefügt. **Workloadbesitzer B** erbt wieder die integrierte Rolle „Besitzer“ aus dem Abonnementumfang.
   ![Workloadbesitzer B erstellt Ressourcengruppe B](../../_images/govern/design/governance-2-15.png)
 
 Beachten Sie bei diesem Modell Folgendes: Der **Dienstadministrator** hat weniger Aktionen als im ersten Beispiel durchgeführt, da der Verwaltungszugriff an die einzelnen Workloadbesitzer delegiert wurde.
@@ -130,7 +130,7 @@ Beachten Sie bei diesem Modell Folgendes: Der **Dienstadministrator** hat wenige
 ![Ein Diagramm, das einen Dienstadministrator und zwei Workloadbesitzer für die Ressourcengruppen A und B zeigt.](../../_images/govern/design/governance-2-16.png)
 _Abbildung 5: Ein Abonnement mit einem Dienstadministrator und zwei Workloadbesitzern, denen jeweils die integrierte Rolle „Besitzer“ zugewiesen ist._
 
-Da sowohl **Workloadbesitzer A** als auch **Workloadbesitzer B** im Abonnementbereich der integrierten Rolle „Besitzer“ zugewiesen sind, haben sie jeweils die integrierte Rolle „Besitzer“ für die Ressourcengruppe des anderen geerbt. Sie haben also nicht nur Vollzugriff auf die Ressourcen des anderen, sondern können auch den Verwaltungszugriff auf die Ressourcengruppen des jeweils anderen delegieren. Beispiel: **Workloadbesitzer B** verfügt über Rechte zum Hinzufügen von anderen Benutzern zu **Ressourcengruppe A** und kann diesen Benutzern beliebige Rollen zuweisen, einschließlich der integrierten Rolle „Besitzer“.
+Da sowohl **Workloadbesitzer A** als auch **Workloadbesitzer B** im Abonnementumfang der integrierten Rolle „Besitzer“ zugewiesen sind, haben sie jeweils die integrierte Rolle „Besitzer“ für die Ressourcengruppe des anderen geerbt. Sie haben also nicht nur Vollzugriff auf die Ressourcen des anderen, sondern können auch den Verwaltungszugriff auf die Ressourcengruppen des jeweils anderen delegieren. Beispiel: **Workloadbesitzer B** verfügt über Rechte zum Hinzufügen von anderen Benutzern zu **Ressourcengruppe A** und kann diesen Benutzern beliebige Rollen zuweisen, einschließlich der integrierten Rolle „Besitzer“.
 
 Wenn Sie die Beispiele jeweils mit den Anforderungen vergleichen, sehen Sie, dass bei beiden Beispielen ein einzelner vertrauenswürdiger Benutzer im Abonnementbereich mit der Berechtigung zum Gewähren von Ressourcenzugriffsrechten für die beiden Workloadbesitzer unterstützt wird. Standardmäßig hatten die beiden Workloadbesitzer keinen Zugriff auf die Ressourcenverwaltung und mussten den **Dienstadministrator** bitten, ihnen explizit Berechtigungen zuzuweisen. Nur im ersten Beispiel wird die Anforderung unterstützt, dass die den Workloads zugeordneten Ressourcen voneinander isoliert sind, damit kein Workloadbesitzer Zugriff auf die Ressourcen anderer Workloads hat.
 

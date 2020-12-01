@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 52a09591b5c7dcaaa5aa60495dce84eb8c646a76
-ms.sourcegitcommit: 6aa14b15efc9bd351b75f8a3d7ebbac3d575275b
+ms.openlocfilehash: f841854558e297c61645c518d1d42cf415b3124b
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92689946"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997249"
 ---
 # <a name="improve-landing-zone-governance"></a>Verbessern der Governance von Zielzonen
 
@@ -20,7 +20,7 @@ Die Governance der Zielzone ist die kleinste Einheit der Gesamtgovernance. Die E
 
 ## <a name="landing-zone-governance-best-practices"></a>Bewährte Methoden für die Governance von Zielzonen
 
-- **Anfängliche Zielgovernance:** Der Artikel zur Einrichtung einer [anfänglichen Governancegrundlage](../../govern/guides/complex/index.md) unterstützt Sie dabei, die ersten Zielzonen mit anfänglichen Governancetools auszustatten. Diese Methoden werden bei der Skalierung von Einführung und Governance sowie bei der Implementierung eines soliden Cost Managements helfen. Dieses Ansatz beginnt mit: Ressourcenorganisation, Richtliniendefinitionen, RBAC-Rollen und Blaupausendefinitionen.
+- **Anfängliche Governance für Zielzonen:** Der Artikel zur Einrichtung einer [anfänglichen Governancegrundlage](../../govern/guides/complex/index.md) unterstützt Sie dabei, die ersten Zielzonen mit anfänglichen Governancetools auszustatten. Diese Methoden werden bei der Skalierung von Einführung und Governance sowie bei der Implementierung eines soliden Cost Managements helfen. Dieses Ansatz beginnt mit: Ressourcenorganisation, Richtliniendefinitionen, RBAC-Rollen und Blaupausendefinitionen.
 - **[Standards für Benennung und Kennzeichnung](../azure-best-practices/naming-and-tagging.md):** Stellen Sie eine konsistente Benennung und Markierung sicher, die die Grundlage für die Einführung solider Governancemethoden bilden.
 - **[Nachverfolgen von Kosten für Workloads](../azure-best-practices/track-costs.md):** Beginnen Sie mit der Nachverfolgung der Kosten in Ihrer ersten Zielzone. Bewerten Sie, wie Sie die Konsistenz über mehrere Workloads und Rollen hinweg anwenden werden.
 - **[Skalieren mit mehreren Abonnements](../azure-best-practices/scale-subscriptions.md):** Bewerten Sie, wie diese und andere Zielzonen skaliert werden, wenn mehrere Abonnements zur Voraussetzung werden.

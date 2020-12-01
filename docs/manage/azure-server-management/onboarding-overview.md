@@ -1,18 +1,18 @@
 ---
 title: Onboarding für Azure-Serververwaltungsdienste
-description: Enthält eine Beschreibung des Onboardings für Azure-Serververwaltungsdienste mit Informationen für virtuelle Azure-Computer und lokale Server.
+description: Dieser Artikel befasst sich mit dem Onboarding von Azure-Serververwaltungsdiensten und enthält Informationen für virtuelle Computer in Azure und auf lokalen Servern.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c77548023e11be6984051c1d002d5198b0649a42
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 0b3fc5f2e6d1cf32155ac954ef34b411c00239a4
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94711795"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880329"
 ---
 # <a name="phase-2-onboarding-azure-server-management-services"></a>Phase 2: Onboarding für Azure-Serververwaltungsdienste
 
@@ -23,7 +23,7 @@ Nachdem Sie mit den [Tools](./tools-services.md) und der [Planung](./prerequisit
 
 ## <a name="onboarding-processes"></a>Onboardingprozesse
 
-Dieser Abschnitt im Leitfaden behandelt die folgenden Onboardingprozesse sowohl für virtuelle Azure-Computer als auch für lokale Server:
+Dieser Abschnitt der Anleitung befasst sich mit den folgenden Onboardingprozessen für virtuelle Computer in Azure oder auf lokalen Servern:
 
 - **Aktivieren von Verwaltungsdiensten auf einem einzelnen virtuellen Computer zur Auswertung über das Portal.** Verwenden Sie diesen Prozess, um sich mit den Azure-Serververwaltungsdiensten vertraut zu machen.
 - **Konfigurieren von Verwaltungsdiensten für ein Abonnement über das Portal.** Dieser Prozess hilft Ihnen, die Azure-Umgebung so zu konfigurieren, dass alle neu bereitgestellten virtuellen Computer automatisch Verwaltungsdienste nutzen. Verwenden Sie diesen Ansatz, wenn Sie die Azure-Portalumgebung den Skripts und Befehlszeilen vorziehen.

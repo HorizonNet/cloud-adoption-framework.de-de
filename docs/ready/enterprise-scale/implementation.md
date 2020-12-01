@@ -7,12 +7,13 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: c4155024eb86a709e23880f122ea09297a272550
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.custom: think-tank
+ms.openlocfilehash: ea900edf52de19b8340f43db1a48218780969652
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88848311"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95447284"
 ---
 # <a name="implement-cloud-adoption-framework-enterprise-scale-landing-zones-in-azure"></a>Implementieren von Cloud Adoption Framework-Zielzonen auf Unternehmensebene in Azure
 
@@ -30,4 +31,4 @@ In der folgenden Tabelle sind Beispiele für modulare Implementierungen aufgefü
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Diese Beispiele bieten eine einfache Bereitstellungsoption zur Unterstützung des kontinuierlichen Lernens für den unternehmensweiten Ansatz. Bevor Sie diese Beispiele in einer Produktionsversion auf Unternehmensebene nutzen, sollten Sie sich zunächst die [Architektur auf Unternehmensebene](./architecture.md) ansehen.
+Diese Beispiele bieten eine einfache Bereitstellungsoption zur Unterstützung des kontinuierlichen Lernens für den unternehmensweiten Ansatz. Bevor Sie diese Beispiele in einer Produktionsversion auf Unternehmensniveau verwenden, sollten Sie sich zunächst die [Architektur auf Unternehmensniveau](./architecture.md) ansehen.

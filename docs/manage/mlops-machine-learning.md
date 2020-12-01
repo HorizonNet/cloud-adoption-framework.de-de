@@ -1,22 +1,22 @@
 ---
 title: MLOps mit Azure Machine Learning
-description: Informationen zu Prinzipen und Methoden von Machine Learning-Vorgängen (MLOps), die die Effizienz von Workflows wie Continuous Integration, Zustellung und Bereitstellung steigern.
+description: In diesem Artikel erfahren Sie mehr über die Prinzipien und Methoden von Machine-Learning-Vorgängen (MLOps), die die Effizienz von Workflows wie Continuous Integration, der Zustellung und der Bereitstellung steigern.
 author: v-hanki
 ms.author: janet
 ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: ab0841311b1f532b9a79269f1fd91650de5c6378
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: aa4a7983868af3250ac85cb700ce828cec3fe008
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94711727"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879479"
 ---
-# <a name="machine-learning-operations-with-azure-machine-learning"></a>Machine Learning-Vorgänge mit Azure Machine Learning
+# <a name="machine-learning-operations-with-azure-machine-learning"></a>Machine-Learning-Vorgänge mit Azure Machine Learning
 
-Machine Learning-Vorgänge (MLOps) basieren auf den DevOps-Prinzipien und -Methoden, die die Effizienz von Workflows wie fortlaufende Integration, Zustellung und Bereitstellung steigern. MLOps wendet diese Prinzipien auf den Machine Learning-Prozess mit folgendem Ziel an:
+Machine-Learning-Vorgänge (Machine Learning Operations, MLOps) basieren auf den DevOps-Prinzipien und -Methoden, die die Effizienz von Workflows wie Continuous Integration, der Zustellung und der Bereitstellung steigern. MLOps wendet diese Prinzipien auf den Machine Learning-Prozess mit folgendem Ziel an:
 
 - Schneller experimentieren und Modelle entwickeln.
 - Schnellere Bereitstellung von Modellen für die Produktion.
@@ -39,10 +39,10 @@ Modelle unterscheiden sich von Code, da sie eine natürliche Lebensdauer haben u
 MLOps mit Azure unterstützt Sie bei folgenden Vorgängen:
 
 - Erstellen Sie reproduzierbare Modelle und wiederverwendbare Trainingspipelines.
-- Vereinfachen Sie die Paketerstellung, Validierung und Bereitstellung von Modellen für die Qualitätslenkung und A/B-Tests.
+- Vereinfachen der Paketerstellung, Überprüfung und Bereitstellung von Modellen für die Qualitätslenkung und A/B-Tests
 - Erklären und beobachten Sie das Modellverhalten, und automatisieren Sie den Prozess für das erneute Trainieren.
 
-MLOps verbessert die Qualität und Konsistenz ihrer Machine Learning-Lösungen. Informationen zur Verwendung von Azure Machine Learning zum Verwalten des Lebenszyklus Ihrer Modelle finden Sie unter [MLOps: Verwaltung, Bereitstellung und Überwachung von Modellen mit Azure Machine Learning](/azure/machine-learning/concept-model-management-and-deployment).
+MLOps verbessert die Qualität und Konsistenz ihrer Machine Learning-Lösungen. Weitere Informationen zur Verwaltung des Lebenszyklus Ihrer Modelle mit Azure Machine Learning finden Sie unter [MLOps: Modellverwaltung, -bereitstellung und -überwachung mit Azure Machine Learning](/azure/machine-learning/concept-model-management-and-deployment).
 
 ## <a name="next-steps"></a>Nächste Schritte
 
@@ -50,7 +50,7 @@ Weitere Informationen finden Sie in den folgenden Ressourcen:
 
 - [MLOps: Verwaltung, Bereitstellung und Überwachung von Modellen mit Azure Machine Learning](/azure/machine-learning/concept-model-management-and-deployment)
 - [Bereitstellen von Modellen mit Azure Machine Learning](/azure/machine-learning/how-to-deploy-and-where)
-- Tutorial: [Bereitstellen eines Bildklassifizierungsmodells in Azure Container Instances](/azure/machine-learning/tutorial-deploy-models-with-aml)
+- Tutorial: [Bereitstellen eines Imageklassifizierungsmodells in Azure Container Instances](/azure/machine-learning/tutorial-deploy-models-with-aml)
 - [Repository mit End-to-End-Beispielen für MLOps](https://github.com/microsoft/MLOps)
 - [CI/CD von Machine Learning-Modellen mit Azure Pipelines](/azure/devops/pipelines/targets/azure-machine-learning?tabs=yaml&view=azure-devops)
 - Erstellen von Clients, die ein [bereitgestelltes Modell nutzen](/azure/machine-learning/how-to-consume-web-service)

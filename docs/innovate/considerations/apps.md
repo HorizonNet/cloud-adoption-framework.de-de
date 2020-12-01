@@ -1,18 +1,18 @@
 ---
 title: Interagieren über Apps für digitale Innovationen
-description: Hier erfahren Sie, wie Sie App-Lösungen erstellen, um Daten zu strukturieren und Umgebungen zu schaffen, die das Interesse von Kunden wecken und Innovationen unterstützen.
+description: Hier erfahren Sie, wie Sie Anwendungslösungen erstellen, um Daten zu strukturieren und Umgebungen zu schaffen, die das Interesse von Kunden wecken und Innovationen unterstützen.
 author: BrianBlanchard
 ms.author: brblanch
 ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 2b6bcc51e0cdbb7d7b326b385dfbe41e8b3ed856
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: c3886327dcb809d28253ed978dde970b0fecb8af
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568259"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880958"
 ---
 # <a name="engage-via-applications"></a>Interagieren über Apps
 

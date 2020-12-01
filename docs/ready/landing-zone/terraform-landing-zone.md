@@ -7,12 +7,12 @@ ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: dd16185c53aaa678f885508e47ef897118a5d7f3
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 1aeb06a9e103365ad5cbcfd9e23055fa47f00eb7
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605182"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94994784"
 ---
 <!-- cSpell:ignore eastasia southeastasia vCPUs lalogs tfvars NetworkMonitoring ADAssessment ADReplication AgentHealthAssessment DnsAnalytics KeyVaultAnalytics -->
 
@@ -34,6 +34,8 @@ In der ersten Zielzone werden die folgenden Komponenten in Ihrem Abonnement bere
 
 ![Grundlegende Zielzone mit Terraform](../../_images/ready/foundations-terraform-landing-zone.png)
 _Abbildung 1: Grundlegende Zielzone mit Terraform_
+
+<!-- docutune:casing NetworkMonitoring AdAssessment AdReplication AgentHealthAssessment DnsAnalytics KeyVaultAnalytics -->
 
 ## <a name="capabilities"></a>Funktionen
 
@@ -149,7 +151,7 @@ tags_hub = {
 }
 ```
 
-Anschließend geben wir den Log Analytics-Namen und eine Reihe von Lösungen an, die die Bereitstellung analysieren. Hier haben wir Netzwerküberwachung, Active Directory-Bewertung und -Replikation, DNS-Analyse und Key Vault-Analyse beibehalten.
+Anschließend geben wir den Log Analytics-Namen und eine Reihe von Lösungen an, die die Bereitstellung analysieren. Hier wurden Netzwerküberwachung, Active Directory-Bewertung und -Replikation, DNS-Analyse und Key Vault-Analyse beibehalten.
 
 ```hcl
 

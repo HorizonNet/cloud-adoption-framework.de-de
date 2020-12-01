@@ -7,13 +7,17 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 9143a4df4de8e720529f3bf88d835f9e507e245f
-ms.sourcegitcommit: 2c949c44008161e50b91ffd3f01f6bf32da2d4d2
+ms.custom: think-tank
+ms.openlocfilehash: d05426ff488c726c6f152eb9a8fe6e5e5d1dfbe4
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94432651"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95447115"
 ---
+<!-- cSpell:ignore FIPS SIEM majeure NSGs -->
+<!-- docutune:casing "FIPS 140-2 Level" "Patch and update management" "SOC2 Trust Service Principles and Criteria" -->
+
 # <a name="enterprise-scale-security-governance-and-compliance"></a>Sicherheitsgovernance und Compliance auf Unternehmensebene
 
 Dieser Artikel befasst sich mit der Definition der Begriffe Verschlüsselung, Schlüsselverwaltung, Sicherheitsüberwachung und Auditrichtlinie und mit der Planung der Governance und der Plattformsicherheit. Am Ende des Artikels finden Sie eine Tabelle, in der ein Rahmenwerk beschrieben wird, um die Sicherheitsbereitschaft von Azure-Diensten in Unternehmen zu bewerten.
@@ -30,9 +34,7 @@ Die Verschlüsselung ist ein wichtiger Schritt zur Gewährleistung von Datenschu
 
 - Sie können je nach Bedarf anwendungs- und workloadspezifische Geheimnisse und gemeinsam genutzte Schlüssel isolieren ([Zugriffssteuerung](/azure/key-vault/general/best-practices)).
 
-<!-- cSpell:ignore FIPS -->
-
-- Sie können Premium-SKUs optimieren, für die durch Hardwaresicherheitsmodule geschützte Schlüssel erforderlich sind. Die zugrunde liegenden Hardwaresicherheitsmodule (HSMs) sind konform mit FIPS 140-2 Level 2. Verwalten Sie ein dediziertes Azure-HSM für die Compliance mit FIPS 140-2 Level 3 unter Berücksichtigung der unterstützten Szenarios.
+- Sie können Premium-SKUs optimieren, für die durch Hardwaresicherheitsmodule geschützte Schlüssel erforderlich sind. Die zugrunde liegenden Hardwaresicherheitsmodule (HSMs) sind konform mit FIPS 140-2 Level 2. Verwalten Sie ein dediziertes Azure-HSM für die Konformität mit FIPS 140-2 Level 3 unter Berücksichtigung der unterstützten Szenarios.
 
 - Schlüsselrotation und Ablauf von Geheimnissen.
 
@@ -95,7 +97,7 @@ Governance stellt Mechanismen und Prozesse zum Beibehalten der Kontrolle über I
 
 - Machen Sie sich mit den Grenzen von Azure Policy vertraut, wie z. B. die Beschränkung von Definitionen auf einen beliebigen Umfang: [Richtliniengrenzen](/azure/azure-resource-manager/management/azure-subscription-service-limits).
 
-- Informieren Sie sich über gesetzliche Compliancerichtlinien. Diese können Vorschriften wie Health Insurance Portability and Accountability Act, Payment Card Industry (PCI), Data Security Standards und Service Organizational Control Trust Service-Prinzipien und -Kriterien sein.
+- Informieren Sie sich über gesetzliche Compliancerichtlinien. Hierzu gehören möglicherweise unter anderem der HIPAA, der PCI-DSS und die SOC2 Trust Services Principles and Criteria.
 
 ### <a name="design-recommendations"></a>Entwurfsempfehlungen
 
@@ -111,7 +113,7 @@ Governance stellt Mechanismen und Prozesse zum Beibehalten der Kontrolle über I
 
 - Nutzen Sie nach Möglichkeit integrierte Richtlinien, um den betrieblichen Aufwand zu minimieren.
 
-- Weisen Sie die in der Richtlinie integrierte Rolle „Mitwirkender“ einem bestimmten Bereich zu, um Governance auf Anwendungsebene zu ermöglichen.
+- Weisen Sie die in Policy integrierte Rolle „Mitwirkender“ einem bestimmten Bereich zu, um Governance auf Anwendungsebene zu ermöglichen.
 
 - Beschränken Sie die Anzahl der Azure Policy-Zuweisungen, die im Bereich der Stammverwaltungsgruppe vorgenommen werden, um eine Verwaltung durch Ausschlüsse in vererbten Bereichen zu vermeiden.
 
@@ -141,11 +143,11 @@ Unternehmen benötigen Einblicke in die Vorgänge innerhalb ihres Cloudbestands.
 
 - Nutzen Sie Azure AD-Berichtsfunktionen zum Generieren von Überwachungsberichten zur Zugriffssteuerung.
 
-- Exportieren Sie Azure-Aktivitätsprotokolle für die langfristige Datenaufbewahrung in Azure Monitor Logs. Exportieren Sie sie in Azure Storage, falls eine langfristige Aufbewahrung von über zwei Jahren erforderlich ist.
+- Exportieren Sie Azure-Aktivitätsprotokolle für die langfristige Datenaufbewahrung nach Azure Monitor Logs. Exportieren Sie sie in Azure Storage, falls eine langfristige Aufbewahrung von über zwei Jahren erforderlich ist.
 
 - Aktivieren Sie Security Center Standard für alle Abonnements, und verwenden Sie Azure Policy, um die Compliance sicherzustellen.
 
-- Überwachen Sie Abweichungen bei Patches des Basisbetriebssystems mittels Azure Monitor Logs und Azure Security Center.
+- Überwachen Sie Abweichungen bei Patches des Basisbetriebssystems mit Azure Monitor Logs und Azure Security Center.
 
 - Nutzen Sie Azure-Richtlinien zur automatischen Bereitstellung von Softwarekonfigurationen mithilfe von VM-Erweiterungen und zur Erzwingung einer konformen VM-Basiskonfiguration.
 
@@ -185,14 +187,14 @@ Sie müssen einen stabile Sicherheitsstatus aufrechterhalten, wenn Sie Azure ein
 
 <!-- docutune:ignore "and conditional access" -->
 
-## <a name="azure-security-benchmarks"></a>Vergleichstests für die Azure-Sicherheit
+## <a name="azure-security-benchmark"></a>Vergleichstest für die Azure-Sicherheit
 
 Der Azure Security-Vergleichstest enthält eine Sammlung von wirkungsvollen Sicherheitsempfehlungen, mit denen Sie den Großteil der von Ihnen in Azure genutzten Dienste sichern können. Sie können diese Empfehlungen als „allgemein“ oder „organisatorisch“ betrachten, da sie auf die meisten Azure-Dienste anwendbar sind. Die Empfehlungen des Azure Security-Vergleichstest werden anschließend für jeden Azure-Service angepasst. Diese individuelle Anleitung ist dann in den Artikeln über die Dienstempfehlungen enthalten.
 
 In der Dokumentation zum Azure Security-Vergleichstest werden Sicherheitskontrollen und Dienstempfehlungen angegeben.
 
-- [Sicherheitskontrollelement](/azure/security/benchmarks/overview): Die Empfehlungen des Azure Security-Vergleichstests werden nach Sicherheitskontrollelementen kategorisiert. Sicherheitskontrollelemente stellen von Anbietern unabhängige allgemeine Sicherheitsanforderungen dar, wie z. B. Netzwerksicherheit und Datenschutz. Jedes Sicherheitskontrollelement enthält eine Reihe von Sicherheitsempfehlungen und Anweisungen, mit denen Sie diese Empfehlungen implementieren können.
-- [Sicherheitsempfehlungen](/azure/security/benchmarks/security-baselines-overview): Wenn verfügbar, enthalten die Empfehlungen des Vergleichstests für Azure-Dienste auch Empfehlungen des Azure Security-Vergleichstests, die speziell auf diesen Dienst zugeschnitten sind.
+- [Sicherheitskontrollelemente:](/azure/security/benchmarks/overview) Die Empfehlungen des Azure Security-Vergleichstests werden nach Sicherheitskontrollelementen kategorisiert. Sicherheitskontrollelemente stellen von Anbietern unabhängige allgemeine Sicherheitsanforderungen dar, wie z. B. Netzwerksicherheit und Datenschutz. Jedes Sicherheitskontrollelement enthält eine Reihe von Sicherheitsempfehlungen und Anweisungen, mit denen Sie diese Empfehlungen implementieren können.
+- [Dienstempfehlungen](/azure/security/benchmarks/security-baselines-overview): Wenn verfügbar, enthalten die Empfehlungen des Vergleichstests für Azure-Dienste auch Empfehlungen des Azure Security-Vergleichstests, die speziell auf diesen Dienst zugeschnitten sind.
 
 ## <a name="service-enablement-framework"></a>Dienstaktivierungsframework
 

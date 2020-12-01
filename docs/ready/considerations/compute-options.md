@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 4c1b598eb8e027947a218ef558c1827878fa5f68
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: d70160082c0c195167272cb9623cc619fde1ee63
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574243"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995209"
 ---
 # <a name="review-your-compute-options"></a>Überprüfen Ihrer Computeoptionen
 
@@ -38,7 +38,7 @@ Die Beantwortung der folgenden Fragen zu Ihren Workloads ist hilfreich, um basie
 - **Wenn Sie bestehende Workloads migrieren, können diese dann die Vorteile moderner Cloudtechnologien nutzen?** Zum Migrieren von lokalen Workloads ist eine Analyse erforderlich. Können Sie vorhandene Anwendungen und Dienste auf einfache Weise optimieren, um moderne Cloudtechnologien zu nutzen, oder funktioniert für Ihre Workloads ein Ansatz per Lift & Shift besser?
 - **Können Ihre Anwendungen oder Dienste Container nutzen?** Wenn sich Ihre Anwendungen gut für ein containerisiertes Hosting eignen, können Sie die Vorteile der Ressourceneffizienz, Skalierbarkeit und Orchestrierung nutzen, die von [Containerdiensten in Azure](https://azure.microsoft.com/product-categories/containers) bereitgestellt werden. Sowohl [verwaltete Azure-Datenträger](/azure/virtual-machines/windows/managed-disks-overview) als auch [Azure Files](/azure/storage/files/storage-files-introduction) können für die permanente Speicherung in containerisierten Anwendungen verwendet werden.
 - **Sind Ihre Anwendungen web- oder API-basiert, und verwenden sie PHP, ASP.NET, Node.js oder ähnliche Technologien?** Web-Apps können für verwaltete [App Service](/azure/app-service/overview)-Instanzen bereitgestellt werden, sodass keine virtuelle Computer für Hostingzwecke verwaltet werden müssen.
-- **Benötigen Sie die volle Kontrolle über das Betriebssystem und die Hostingumgebung Ihrer Workload?** Wenn Sie die Hostingumgebung, einschließlich Betriebssystem, Datenträger, lokal ausgeführte Software und andere Konfigurationen, steuern müssen, können Sie für das Hosting Ihrer Anwendungen und Dienste [Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines) verwenden. Zusätzlich zur Auswahl der Größen und Leistungsstufen Ihres virtuellen Computers wirken sich Ihre Entscheidungen hinsichtlich des Speichers virtueller Datenträger auf die Leistung und SLAs aus, die mit ihren IaaS-Workloads (Infrastructure-as-a-Service) in Zusammenhang stehen. Weitere Informationen finden Sie in der Dokumentation zu [Azure Disk Storage](/azure/virtual-machines/windows/managed-disks-overview).
+- **Benötigen Sie die volle Kontrolle über das Betriebssystem und die Hostingumgebung Ihrer Workload?** Wenn Sie die Hostingumgebung, einschließlich Betriebssystem, Datenträger, lokal ausgeführte Software und andere Konfigurationen, steuern müssen, können Sie für das Hosting Ihrer Anwendungen und Dienste [Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines) verwenden. Zusätzlich zur Auswahl der VM-Größen und Leistungsstufen wirken sich Ihre Entscheidungen hinsichtlich des Speichers virtueller Datenträger auf die Leistung und SLAs aus, die mit ihren IaaS-Workloads (Infrastructure-as-a-Service) in Zusammenhang stehen. Weitere Informationen finden Sie in der Dokumentation zu [Azure Disk Storage](/azure/virtual-machines/windows/managed-disks-overview).
 - **Umfasst ihre Workload HPC-Funktionen (High Performance Computing)?** [Azure Batch](/azure/batch/batch-technical-overview) ermöglicht eine Auftragsplanung und automatische Skalierung von Computeressourcen, sodass Sie problemlos umfangreiche parallele und HPC-Anwendungen in der Cloud ausführen können.
 - **Werden Ihre Anwendungen eine Microservicesarchitektur verwenden?** Anwendungen, die eine Microservicearchitektur verwenden, können die Vorteile mehrerer optimierter Computetechnologien nutzen. Unabhängige, ereignisgesteuerte Workloads können mit [Azure Functions](/azure/azure-functions/functions-overview) skalierbare, serverlose Anwendungen erstellen, die keine Infrastruktur benötigen. Für Anwendungen, die mehr Kontrolle über die Umgebung erfordern, in der Microservices ausgeführt werden, können Sie Containerdienste wie [Azure Container Instances](/azure/container-instances/container-instances-overview), [Azure Kubernetes Service](/azure/aks/intro-kubernetes) und [Azure Service Fabric](/azure/service-fabric/service-fabric-overview) verwenden.
 
@@ -54,12 +54,12 @@ In der folgenden Tabelle sind einige häufige Nutzungsszenarien und die empfohle
 | Ich muss virtuelle Linux- und Windows-Computer innerhalb weniger Sekunden mit den gewünschten Konfigurationen bereitstellen. | [Dokumentation zu virtuellen Computern](https://azure.microsoft.com/services/virtual-machines) |
 | Ich muss Hochverfügbarkeit durch automatische Skalierung von Tausenden von VMs in wenigen Minuten erzielen. | [Skalierungsgruppen für virtuelle Computer](https://azure.microsoft.com/services/virtual-machine-scale-sets) |
 | Ich möchte die Bereitstellung, die Verwaltung und den Betrieb von Kubernetes vereinfachen. | [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service) |
-| Ich muss die App-Entwicklung durch eine ereignisgesteuerte, serverlose Architektur beschleunigen. | [Azure-Funktionen](https://azure.microsoft.com/services/functions) |
+| Ich muss die Anwendungsentwicklung durch eine ereignisgesteuerte, serverlose Architektur beschleunigen. | [Azure-Funktionen](https://azure.microsoft.com/services/functions) |
 | Ich muss Microservices entwickeln und Container unter Windows oder Linux orchestrieren. | [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric) |
-| Ich möchte schnell Cloud-Apps für Web- und mobile Anwendungen mit einer vollständig verwalteten Plattform erstellen. | [Azure App Service](https://azure.microsoft.com/services/app-service) |
-| Ich möchte App-Containern erstellen und diese Container auf einfache Weise mit einem einzigen Befehl ausführen. | [Azure Container Instances](https://azure.microsoft.com/services/container-instances) |
+| Ich möchte schnell Cloudanwendungen für das Web und für Mobilgeräte mit einer vollständig verwalteten Plattform erstellen. | [Azure App Service](https://azure.microsoft.com/services/app-service) |
+| Ich möchte Containeranwendungen erstellen und diese Container auf einfache Weise mit einem einzigen Befehl ausführen. | [Azure Container Instances](https://azure.microsoft.com/services/container-instances) |
 | Ich benötige eine cloudbasierte Auftragsplanung und Computeverwaltung mit der Möglichkeit, eine Skalierung auf Dutzende, Hunderte oder Tausende von virtuellen Computern auszuführen. | [Azure Batch](https://azure.microsoft.com/services/batch) |
-| Ich muss hochverfügbare, skalierbare Cloudanwendungen und APIs erstellen, mit denen ich mich auf Apps anstatt auf die Hardware konzentrieren kann. | [Azure Cloud Services](https://azure.microsoft.com/services/cloud-services) |
+| Ich muss hochverfügbare, skalierbare Cloudanwendungen und APIs erstellen, mit denen ich mich auf Anwendungen anstatt auf die Hardware konzentrieren kann. | [Azure Cloud Services](https://azure.microsoft.com/services/cloud-services) |
 
 ## <a name="regional-availability"></a>Regionale Verfügbarkeit
 

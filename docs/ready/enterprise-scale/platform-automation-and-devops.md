@@ -7,13 +7,16 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 9235a7039ea7c95cd330481700898915e42dc3bb
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.custom: think-tank
+ms.openlocfilehash: 8e6e052c86964ae11d32a491c36d5ee4e1457e0d
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713648"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95447267"
 ---
+<!-- docutune:casing PlatformOps AppDevOps AppDataOps AppSecOps -->
+
 # <a name="platform-automation-and-devops"></a>Plattformautomatisierung und DevOps
 
 ![Diagramm: Plattformautomatisierung und DevOps](./media/DevOps.png)
@@ -34,7 +37,7 @@ Viele traditionelle Modelle für den IT-Betrieb sind nicht mit der Cloud kompati
 
 - Sie können interne und externe DevOps-Rollen und -Funktionen aus einer Vielzahl von Quellen zusammenstellen, die der Strategie Ihrer Organisation entsprechen.
 
-- Für einige Legacy-Apps verfügt das zugehörige App-Team möglicherweise nicht über die technischen Ressourcen, die für die Anpassung an eine DevOps-Strategie erforderlich sind.
+- Für einige Legacyanwendungen verfügt das zugehörige Anwendungsteam möglicherweise nicht über die Entwicklungsressourcen, die für die Anpassung an eine DevOps-Strategie erforderlich sind.
 
 <!-- cSpell:ignore PlatformOps SecOps NetOps AppDevOps AppDataOps AppSecOps -->
 
@@ -68,59 +71,59 @@ Richten Sie ein funktionsübergreifendes DevOps Plattformteam ein, um Ihre unter
 
   - Netzwerkverwaltung (ganzheitlich)
 
-- **AppDevOps.** Ermöglicht App-Besitzern das Erstellen und Verwalten von App-Ressourcen über ein DevOps-Modell. Die folgende Liste zeigt die empfohlenen DevOps-Rollen für Anwendungsteams:
+- **AppDevOps.** Ermöglichen Sie Anwendungsbesitzern das Erstellen und Verwalten von Anwendungsressourcen über ein DevOps-Modell. Die folgende Liste zeigt die empfohlenen DevOps-Rollen für Anwendungsteams:
 
-  - App-Migration oder -Transformation
+  - Anwendungsmigration oder -transformation
 
-  - App-Verwaltung und -Überwachung
+  - Anwendungsverwaltung und -überwachung
 
-  - RBAC (App-Ressourcen)
+  - RBAC (Anwendungsressourcen)
 
-  - Sicherheitsüberwachung (App-Ressourcen)
+  - Sicherheitsüberwachung (Anwendungsressourcen)
 
-  - Kostenverwaltung (App-Ressourcen)
+  - Kostenverwaltung (Anwendungsressourcen)
 
-  - Netzwerkverwaltung (App-Ressourcen)
+  - Netzwerkverwaltung (Anwendungsressourcen)
 
-  - In einigen Fällen möchten Sie AppDevOps vielleicht in differenziertere Rollen aufteilen, z. B. AppDataOps für die Datenbankverwaltung oder AppSecOps für sicherheitsrelevantere Apps.
+  - In einigen Fällen sollten Sie AppDevOps in differenziertere Rollen unterteilen, z. B. AppDataOps für die Datenbankverwaltung oder AppSecOps für sicherheitsrelevantere Anwendungen.
 
-  - Stellen Sie eine zentrale App-DevOps-Funktion zur Unterstützung von Apps bereit, für die weder DevOps-Fähigkeiten vorhanden sind noch ein Geschäftsfall vorliegt, um diese Fähigkeiten bereitzustellen (z. B. Legacy-Apps mit minimalem Entwicklungsbedarf).
+  - Stellen Sie eine zentrale Anwendungs-DevOps-Funktion zur Unterstützung von Anwendungen bereit, für die weder DevOps-Funktionen vorhanden sind noch ein Geschäftsszenario vorliegt, um diese Funktionen bereitzustellen (z. B. Legacyanwendungen mit minimalen Entwicklungsfunktionen).
 
   - Verwenden Sie einen richtliniengestützten Ansatz mit klaren RBAC-Grenzen, um über Anwendungsteams hinweg Konsistenz und Sicherheit zu erzwingen. So wird sichergestellt, dass durch eine Kombination von RBAC-Zuweisungen und Azure Policy ein Ansatz der geringsten Rechte verfolgt wird und die Workloads jederzeit mit den Azure Policy-Zuweisungen konform sind.
 
   - Für eine beschleunigte Einführung von Azure sollte das zentrale Plattformteam einen gemeinsamen Satz mit Vorlagen und Bibliotheken erstellen, auf die die Anwendungsteams zurückgreifen können. Beispielsweise kann ein funktionsübergreifender Leitfaden dazu beitragen, Migrationen durch Fachbereichskompetenz zu unterstützen und eine Ausrichtung auf die gesamte Zielarchitektur auf Unternehmensebene zu gewährleisten.
 
-  - Beschränken Sie die Anwendungsteams nicht auf die Verwendung zentraler Artefakte oder Ansätze, da dies ihre Flexibilität einschränkt. Sie können konsistente Baselinekonfigurationen über einen richtliniengesteuerten Infrastrukturansatz und RBAC-Zuweisungen erzwingen. Dadurch wird sichergestellt, dass App-Teams (Geschäftseinheiten) flexibel genug sind, um Innovationen voranzutreiben, während gleichzeitig ein vordefinierter Satz mit Vorlagen genutzt wird.
+  - Beschränken Sie die Anwendungsteams nicht auf die Verwendung zentraler Artefakte oder Ansätze, da dies ihre Flexibilität einschränkt. Sie können konsistente Baselinekonfigurationen über einen richtliniengesteuerten Infrastrukturansatz und RBAC-Zuweisungen erzwingen. Dadurch wird sichergestellt, dass Anwendungsteams (Geschäftseinheiten) flexibel genug für Innovationen sind, gleichzeitig aber eine vordefinierte Reihe von Vorlagen nutzen können.
 
-  - Zwingen Sie die Anwendungsteams nicht, einen zentralen Prozess oder eine zentrale Bereitstellungspipeline für die Instanziierung oder Verwaltung von App-Ressourcen zu verwenden. Bestehende Teams, die bereits eine DevOps-Pipeline für die App-Bereitstellung nutzen, sollten weiterhin dieselben Tools einsetzen können. Denken Sie daran, dass Sie weiterhin Azure Policy nutzen können, um Leitlinien festzulegen – unabhängig davon, wie Ressourcen in Azure eingesetzt werden.
+  - Zwingen Sie die Anwendungsteams nicht, einen zentralen Prozess oder eine zentrale Bereitstellungspipeline für die Instanziierung oder Verwaltung von Anwendungsressourcen zu verwenden. Bestehende Teams, die bereits eine DevOps-Pipeline für die Anwendungsbereitstellung verwenden, sollten weiterhin dieselben Tools einsetzen können. Denken Sie daran, dass Sie dennoch Azure Policy nutzen können, um Schutzrichtlinien festzulegen – unabhängig davon, wie Ressourcen in Azure bereitgestellt werden.
 
 ## <a name="define-central-and-federated-responsibilities"></a>Definieren von zentralen und dezentralen Zuständigkeiten
 
-Die Verteilung von Rollen, Zuständigkeiten und Vertrauensbeziehungen zwischen zentralen IT-Teams und App-Teams ist von entscheidender Bedeutung für die operativen Veränderungen, die Ihre Organisation bei der Einführung der Cloud im großen Stil durchlaufen müssen.
+Die Verteilung von Rollen, Zuständigkeiten und Vertrauensbeziehungen zwischen den zentralen IT-Teams und Anwendungsteams ist von entscheidender Bedeutung für die operativen Veränderungen, die Ihre Organisation bei der Einführung der Cloud im großen Stil durchlaufen muss.
 
 ### <a name="design-considerations"></a>Überlegungen zum Entwurf
 
-Die zentralen Teams sind bestrebt, die vollständige Kontrolle zu behalten, während App-Besitzer versuchen, die Agilität zu maximieren. Die Balance zwischen diesen Zielen kann erheblichen Einfluss auf den Erfolg der Migration haben.
+Die zentralen Teams möchten die vollständige Kontrolle behalten, während Anwendungsbesitzer die Flexibilität maximieren möchten. Die Balance zwischen diesen Zielen kann erheblichen Einfluss auf den Erfolg der Migration haben.
 
 ### <a name="design-recommendations"></a>Entwurfsempfehlungen
 
 Die folgende Liste enthält eine empfohlene Verteilung der Zuständigkeiten zwischen dem zentralen IT-Team und den Anwendungsteams. Sie sind bestrebt, Migrations- und Transformationsaktivitäten mit minimalen zentralen Abhängigkeiten zu ermöglichen. Gleichzeitig möchten Sie die zentralisierte Governance von Sicherheit und Betriebsfähigkeit für die gesamte Umgebung unterstützen.
 
-- **App-Funktionen**
+- **Anwendungsfunktionen**
 
-  - App-Migration und -Transformation
+  - Anwendungsmigration und -transformation
 
-  - App-Verwaltung und -Überwachung (App-Ressourcen)
+  - Anwendungsverwaltung und -überwachung (Anwendungsressourcen)
 
-  - Schlüsselverwaltung (App-Schlüssel)
+  - Schlüsselverwaltung (Anwendungsschlüssel)
 
-  - RBAC (App-Ressourcen)
+  - RBAC (Anwendungsressourcen)
 
-  - Sicherheitsüberwachung (App-Ressourcen)
+  - Sicherheitsüberwachung (Anwendungsressourcen)
 
-  - Kostenverwaltung (App-Ressourcen)
+  - Kostenverwaltung (Anwendungsressourcen)
 
-  - Netzwerkverwaltung (App-Ressourcen)
+  - Netzwerkverwaltung (Anwendungsressourcen)
 
 - **Zentrale Funktionen**
 

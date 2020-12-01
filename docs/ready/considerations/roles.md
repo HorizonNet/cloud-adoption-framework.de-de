@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 manager: BrianBlanchard
 ms.custom: virtual-network
-ms.openlocfilehash: aeb2cfd8ed273349b5ee7e1868ddd69791abedc9
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 081d8ccc5cce83cb93e1043d0aef8b8bbff8433b
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88884656"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997215"
 ---
 # <a name="role-based-access-control"></a>Rollenbasierte Zugriffssteuerung
 
@@ -50,7 +50,7 @@ Azure bietet eine Vielzahl integrierter Rollendefinitionen mit drei Kernrollen f
 Ausgehend von diesen grundlegenden Zugriffsebenen bieten zusätzliche integrierte Rollen detailliertere Steuerungsmöglichkeiten für den Zugriff auf bestimmte Ressourcentypen oder Azure-Funktionen. Beispielsweise können Sie den Zugriff auf virtuelle Computer mithilfe der folgenden integrierten Rollen verwalten:
 
 - Mit der Rolle [Anmeldeinformationen des VM-Administrators](/azure/role-based-access-control/built-in-roles#virtual-machine-administrator-login) können Sie virtuelle Computer im Portal anzeigen und sich als `administrator` anmelden.
-- Die Rolle [Mitwirkender für virtuelle Computer](/azure/role-based-access-control/built-in-roles#virtual-machine-contributor) ermöglicht Ihnen das Verwalten von virtuellen Computern, aber nicht den Zugriff darauf oder auf das virtuelle Netzwerk oder das Speicherkonto, mit dem sie verbunden sind.
+- Die Rolle [Mitwirkender für virtuelle Computer](/azure/role-based-access-control/built-in-roles#virtual-machine-contributor) ermöglicht Ihnen das Verwalten von virtuellen Computern, aber nicht den Zugriff auf diese sowie auf das virtuelle Netzwerk oder das Speicherkonto, mit dem sie verbunden sind.
 - Die Rolle [Anmeldeinformationen für VM-Benutzer](/azure/role-based-access-control/built-in-roles#virtual-machine-user-login) kann virtuelle Computer im Portal anzeigen und sich als normaler Benutzer anmelden.
 
 Ein weiteres Beispiel für die Verwendung integrierter Rollen zur Verwaltung des Zugriffs auf bestimmte Funktionen finden Sie in der Diskussion über die Steuerung des Zugriffs auf Kostenverfolgungsfunktionen unter [Nachverfolgen von Kosten für Geschäftseinheiten, Umgebungen oder Projekte](../azure-best-practices/track-costs.md#provide-the-right-level-of-cost-access).

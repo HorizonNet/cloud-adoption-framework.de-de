@@ -7,13 +7,14 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 2e020b1284fedf8ea6fdf45d46ab2d14fa8ea49d
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 35f078aeb04c6fda78470e33e27f332f67bdaeee
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712713"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997470"
 ---
+<!-- docutune:casing "Update Management" -->
 <!-- cSpell:ignore FIPS SIEM majeure NSGs -->
 
 # <a name="best-practices-to-secure-and-manage-workloads-migrated-to-azure"></a>Bewährte Methoden zum Sichern und Verwalten von Workloads, die zu Azure migriert werden
@@ -99,14 +100,14 @@ Im Gegensatz zum IaaS-Konzept, bei dem Sie Ihre eigenen virtuellen Computer und 
 - Aktivieren von [Azure Disk Encryption für virtuelle Windows-Computer](/azure/virtual-machines/windows/disk-encryption-overview).
 - Erfahren Sie mehr über die [Azure Storage-Verschlüsselung für ruhende Daten](/azure/storage/common/storage-service-encryption).
 - Lesen Sie die [Übersicht über Always Encrypted](/azure/sql-database/sql-database-always-encrypted-azure-key-vault).
-- Lesen Sie über die [transparente Datenverschlüsselung für SQL-Datenbank und Azure Synapse](/azure/sql-database/transparent-data-encryption-azure-sql).
-- Erfahren Sie mehr zur [transparenten Azure SQL-Datenverschlüsselung mithilfe eines kundenseitig verwalteten Schlüssels](/azure/sql-database/transparent-data-encryption-byok-azure-sql).
+- Lesen Sie über [Transparent Data Encryption für SQL-Datenbank und Azure Synapse](/azure/sql-database/transparent-data-encryption-azure-sql).
+- Erfahren Sie mehr über [Transparent Data Encryption für Azure SQL-Datenbank mit einem kundenseitig verwalteten Schlüssel](/azure/sql-database/transparent-data-encryption-byok-azure-sql).
 
 ## <a name="best-practice-protect-vms-with-antimalware"></a>Bewährte Methode: Schützen von VMs mit Antischadsoftware
 
 Insbesondere auf älteren virtuellen Computern, die zu Azure migriert wurden, ist unter Umständen nicht die richtige Antischadsoftware installiert. Azure bietet eine kostenlose Endpunktlösung, mit der Sie VMs vor Viren, Spyware und anderer Schadsoftware schützen können.
 
-- Microsoft Antimalware für Azure Cloud Services und Virtual Machines generiert Warnungen, wenn bekannte schädliche oder unerwünschte Software versucht, sich selbst zu installieren.
+- Microsoft Antimalware für Azure Cloud Services und virtuelle Computer generiert Warnungen, wenn bekannte schädliche oder unerwünschte Software versucht, sich selbst zu installieren.
 - Es handelt sich um eine Lösung mit einem einzelnen Agent, die ohne Benutzereingriff im Hintergrund ausgeführt wird.
 - In Azure Security Center können Sie ganz einfach diejenigen VMs identifizieren, auf denen kein Endpunktschutz ausgeführt wird, und bei Bedarf Microsoft Antimalware installieren.
 
@@ -237,7 +238,7 @@ Niemand möchte, dass eine Ressourcengruppe verschwindet, weil sie versehentlich
 Ein Abonnementbesitzer hat Zugriff auf alle Ressourcengruppen und Ressourcen in Ihrem Abonnement.
 
 - Fügen Sie dieser wertvollen Zuweisung nur wenige Benutzer hinzu. Sie müssen die Auswirkungen dieser Art von Berechtigungen genau kennen, um für die Sicherheit und Stabilität Ihrer Umgebung zu sorgen.
-- Stellen Sie sicher, dass Sie Ressourcen in geeigneten Ressourcengruppe platzieren:
+- Stellen Sie sicher, dass Sie Ressourcen in geeigneten Ressourcengruppen platzieren:
   - Fassen Sie Ressourcen mit ähnlichem Lebenszyklus zusammen. Im Idealfall sollte es nicht notwendig sein, eine Ressource zu verschieben, wenn Sie eine vollständige Ressourcengruppe löschen müssen.
   - Ressourcen, die eine Funktion oder Workload unterstützen, sollten zur Vereinfachung der Verwaltung gruppiert werden.
 
@@ -322,7 +323,7 @@ Azure Policy bewertet Ihre Ressourcen und sucht nach Ressourcen, die nicht mit I
 
 ## <a name="best-practice-implement-a-bcdr-strategy"></a>Bewährte Methode: Implementieren einer BCDR-Strategie
 
-Die Planung von Business Continuity & Disaster Recovery (BCDR) ist eine wichtige Aufgabe, die im Rahmen der Azure-Migrationsplanung durchgeführt werden sollte. Rechtlich gesehen enthalten Ihre Verträge möglicherweise eine Klausel zu *höherer Gewalt*, die Sie bei unabwendbaren Ereignissen wie Wirbelstürmen oder Erdbeben von Verpflichtungen entbindet. Sie haben aber auch Verpflichtungen in der Hinsicht, dass Sie die Ausführung und bei Bedarf die Wiederherstellung von Diensten in einem Notfall sicherstellen müssen. Die Fähigkeit, diese Verpflichtungen zu erfüllen, kann über die Zukunft Ihres Unternehmens entscheiden.
+Die Planung von Business Continuity & Disaster Recovery (BCDR) ist eine wichtige Aufgabe, die im Rahmen der Azure-Migrationsplanung durchgeführt werden sollte. Rechtlich gesehen enthalten Ihre Verträge möglicherweise eine Klausel zu _höherer Gewalt_, die Sie bei unabwendbaren Ereignissen wie Wirbelstürmen oder Erdbeben von Verpflichtungen entbindet. Sie haben aber auch Verpflichtungen in der Hinsicht, dass Sie die Ausführung und bei Bedarf die Wiederherstellung von Diensten in einem Notfall sicherstellen müssen. Die Fähigkeit, diese Verpflichtungen zu erfüllen, kann über die Zukunft Ihres Unternehmens entscheiden.
 
 Allgemein gesagt muss Ihre BCDR-Strategie Folgendes berücksichtigen:
 
@@ -347,13 +348,13 @@ Ziehen Sie für Workloads, die auf Azure-IaaS-VMs ausgeführt werden, folgende S
 
 #### <a name="azure-backup"></a>Azure Backup
 
-Azure Backup erstellt Datenwiederherstellungspunkte, die in Azure Storage gespeichert werden. Azure Backup kann Azure-VM-Datenträger und Azure File Storage (Vorschau) sichern. Azure Files stellt Dateifreigaben in der Cloud bereit, auf die mittels Server Message Block zugegriffen werden kann.
+Azure Backup erstellt Datenwiederherstellungspunkte, die in Azure Storage gespeichert werden. Azure Backup kann Azure-VM-Datenträger und Azure File Storage (Vorschau) sichern. Azure Files stellt Dateifreigaben in der Cloud bereit, die über den Server Message Block (SMB) zugänglich sind.
 
 Virtuelle Computer können mithilfe von Azure Backup wie folgt gesichert werden:
 
-- **Direkte Sicherung aus VM-Einstellungen:** Sie können VMs mit Azure Backup direkt über die VM-Optionen im Azure-Portal sichern. Sie können eine VM einmal täglich sichern und den VM-Datenträger bei Bedarf wiederherstellen. Von Azure Backup werden App-bezogene Datenmomentaufnahmen erstellt. Auf dem virtuellen Computer wird kein Agent installiert.
-- **Direkte Sicherung in einem Recovery Services-Tresor:** Sie können Ihre IaaS-VMs durch Bereitstellen eines Azure Backup-Recovery Services-Tresors sichern. Dies bietet einen einzelnen Speicherort zum Nachverfolgen und Verwalten von Sicherungen und ermöglicht differenzierte Sicherungs- und Wiederherstellungsoptionen. Die Sicherung erfolgt bis zu dreimal am Tag auf Datei- und Ordnerebene. Sie ist nicht App-bezogen, und Linux wird nicht unterstützt. Installieren Sie den MARS-Agent (Microsoft Azure Recovery Services) auf jedem virtuellen Computer, den Sie mit dieser Methode sichern möchten.
-- **Schützen von VMs mit Azure Backup Server.** Azure Backup Server ist kostenlos in Azure Backup enthalten. VMs werden im lokalen Azure Backup Server-Speicher gesichert. Danach wird Azure Backup Server in einem Tresor in Azure gesichert. Backup ist App-bezogen und bietet differenzierte Optionen für die Häufigkeit und Vermerkdauer von Sicherungen. Sie können Sicherungen auf Anwendungsebene z. B. für SQL Server oder SharePoint ausführen.
+- **Direkte Sicherung aus VM-Einstellungen:** Sie können VMs mit Azure Backup direkt über die VM-Optionen im Azure-Portal sichern. Sie können eine VM einmal täglich sichern und den VM-Datenträger bei Bedarf wiederherstellen. Azure Backup erstellt anwendungsabhängige Datenmomentaufnahmen, und es wird kein Agent auf der VM installiert.
+- **Direkte Sicherung in einem Recovery Services-Tresor:** Sie können Ihre IaaS-VMs durch Bereitstellen eines Azure Backup-Recovery Services-Tresors sichern. Dies bietet einen einzelnen Speicherort zum Nachverfolgen und Verwalten von Sicherungen und ermöglicht differenzierte Sicherungs- und Wiederherstellungsoptionen. Die Sicherung erfolgt bis zu dreimal am Tag auf Datei- und Ordnerebene. Sie ist nicht anwendungsabhängig, und Linux wird nicht unterstützt. Installieren Sie den MARS-Agent (Microsoft Azure Recovery Services) auf jeder VM, die Sie mit dieser Methode sichern möchten.
+- **Schützen von VMs mit Azure Backup Server.** Azure Backup Server ist kostenlos in Azure Backup enthalten. VMs werden im lokalen Azure Backup Server-Speicher gesichert. Danach wird Azure Backup Server in einem Tresor in Azure gesichert. Azure Backup ist anwendungsabhängig und bietet vollständige Granularität für die Häufigkeit und Aufbewahrung von Sicherungen. Sie können Sicherungen auf Anwendungsebene z. B. für SQL Server oder SharePoint ausführen.
 
 Zur Gewährleistung der Sicherheit werden Daten von Azure Backup bei der Übertragung mit AES-256 verschlüsselt. Die Daten werden per HTTPS an Azure gesendet. Gesicherte ruhende Daten in Azure werden mit [Azure Storage-Verschlüsselung](/azure/storage/common/storage-service-encryption) verschlüsselt.
 
@@ -429,7 +430,7 @@ Sie haben Ihre Workloads möglicherweise aufgrund der enormen Skalierungsfunktio
 
 Für diese beiden Fälle gibt es unterschiedliche Lösungen, aber Sie müssen in beiden Fällen wissen, was passiert. Dazu dient die Überwachung der Nutzung und Leistung.
 
-- Azure Monitor unterstützt Sie dabei, diese Metriken zu ermitteln und mit Warnungen, automatischer Skalierung, Event Hubs und Logik-Apps darauf zu reagieren.
+- Azure Monitor unterstützt Sie dabei, diese Metriken zu ermitteln und mithilfe von Warnungen, automatischer Skalierung, Event Hubs und Logik-Apps auf diese zu reagieren.
 - Darüber hinaus können Sie Ihre SIEM-Drittanbieteranwendung integrieren, um die Azure-Protokolle auf Überprüfungs- und Leistungsereignisse zu überwachen.
 
   ![Screenshot: Azure Monitor](./media/migrate-best-practices-security-management/monitor.png)
@@ -507,7 +508,7 @@ Sie müssen zu einem bestimmten Zeitpunkt mit Ihrem Supportteam oder den Microso
 
 Azure-VMs immer mit den neuesten Betriebssystem- und Softwareupdates auf dem neuesten Stand zu halten, ist eine gewaltige Aufgabe. Die Fähigkeit, alle virtuellen Computer sowie die erforderlichen Updates zu ermitteln und diese Updates automatisch zu pushen, ist äußerst wertvoll.
 
-- Betriebssystemupdates können mithilfe der Updateverwaltung in Azure Automation verwaltet werden. Das gilt für Windows- und Linux-Computer, die in Azure, lokal oder bei anderen Cloudanbietern bereitgestellt werden.
+- Sie können die Lösung „Updateverwaltung“ in Azure Automation zum Verwalten von Betriebssystemupdates verwenden. Das gilt für Windows- und Linux-Computer, die in Azure, lokal oder bei anderen Cloudanbietern bereitgestellt werden.
 - Verwenden Sie die Updateverwaltung auch, um schnell den Status der verfügbaren Updates auf allen Agent-Computern auszuwerten und die Installation der Updates zu verwalten.
 - Sie können die Updateverwaltung für virtuelle Computer direkt in einem Azure Automation-Konto aktivieren. Sie können auch eine einzelne VM über die VM-Seite im Azure-Portal aktualisieren.
 - Darüber hinaus können virtuelle Azure-Computer bei System Center Configuration Manager registriert werden. Danach können Sie die Configuration Manager-Workload zu Azure migrieren und Berichterstellung und Softwareupdates über eine einzelne Webschnittstelle abwickeln.
@@ -518,7 +519,7 @@ Azure-VMs immer mit den neuesten Betriebssystem- und Softwareupdates auf dem neu
 **Weitere Informationen**:
 
 - Erfahren Sie mehr über die [Updateverwaltung in Azure](/azure/automation/update-management/overview).
-- Erfahren Sie, wie Sie [Configuration Manager in die Updateverwaltung integrieren](/azure/automation/oms-solution-updatemgmt-sccmintegration).
+- Erfahren Sie mehr über die [Integration von Configuration Manager mit der Lösung „Updateverwaltung“](/azure/automation/oms-solution-updatemgmt-sccmintegration).
 - [Häufig gestellte Fragen](/sccm/core/understand/configuration-manager-on-azure) zu Configuration Manager in Azure.
 
 ## <a name="implement-a-change-management-process"></a>Implementieren eines Change Management-Prozesses

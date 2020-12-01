@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: fb7cebc5a5382c33d42413a84bb8fdbd7fb8bded
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 46e17eed32ecfab14671fd59358c86bd3909311d
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605247"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94994427"
 ---
 # <a name="balance-competing-priorities"></a>Ausgewogenheit konkurrierender Prioritäten
 
@@ -73,7 +73,7 @@ Wenn die Einführungsteams die ersten Schritte zur Cloud vorbereiten, bestehen o
 
 <!-- docutune:casing "Govern and Manage methodologies" -->
 
-**Beispiel zum erweiterten Umfang:** Für Teams, deren Einführungsplan das mittelfristige Ziel (innerhalb von 24 Monaten) vorsieht, **mehr als 1.000 Ressourcen (Apps, Infrastrukturen oder Datenressourcen) in der Cloud zu hosten,** wird eine stabilere Ansicht der Zielzonen empfohlen. In diesen Fällen sollten die Governance- und Verwaltungsmethodiken während der ersten Konversationen über die Zielzone berücksichtigt werden. Dies führt im Rahmen des Cloudeinführungsplans jedoch oft zu Verzögerungen von Wochen oder Monaten. Um die Auswirkungen auf die Geschäftsergebnisse zu minimieren, sollte das Einführungsteam tatsächliche Workloads in der Cloud parallel zur Erstellung einer ausgereiften Zielzone sowie einer zentralen Architekturlösung erstellen.
+**Beispiel zum erweiterten Umfang:** Für Teams, deren Einführungsplan ein mittelfristiges Ziel (innerhalb von 24 Monaten) vorsieht, **mehr als 1.000 Ressourcen (Anwendungen, Infrastrukturen oder Datenressourcen) in der Cloud** zu hosten, wird eine stabilere Ansicht der Zielzonen empfohlen. In diesen Fällen sollten die Governance- und Verwaltungsmethodiken während der ersten Konversationen über die Zielzone berücksichtigt werden. Dies führt im Rahmen des Cloudeinführungsplans jedoch oft zu Verzögerungen von Wochen oder Monaten. Um die Auswirkungen auf die Geschäftsergebnisse zu minimieren, sollte das Einführungsteam tatsächliche Workloads in der Cloud parallel zur Erstellung einer ausgereiften Zielzone sowie einer zentralen Architekturlösung erstellen.
 
 ## <a name="balance-during-the-migrate-phase"></a>Gleichgewicht während der Migrationsphase
 
@@ -81,7 +81,7 @@ Während der Migration ist es üblich, dass die Einführungsteams davon ausgehen
 
 **Konkurrierende Prioritäten:**
 
-- **Zuweisen eines neuen Hosts:** Kunden gehen bei der Migration häufig von einem *Lift & Shift-Prozess* aus, bei dem alle Ressourcen in der Cloud in ihrer aktuellen Zustandskonfiguration replizieren werden. Dies führt zu geringfügigen Abweichungen im IT-Portfolio. Diese Vorgehensweise ist auch die schnellste Möglichkeit, Ressourcen in einem vorhandenen Rechenzentrum außer Betrieb zu nehmen.
+- **Zuweisen eines neuen Hosts:** Kunden gehen bei der Migration häufig von einem _Lift & Shift-Prozess_ aus, bei dem alle Ressourcen in der Cloud in ihrer aktuellen Zustandskonfiguration replizieren werden. Dies führt zu geringfügigen Abweichungen im IT-Portfolio. Diese Vorgehensweise ist auch die schnellste Möglichkeit, Ressourcen in einem vorhandenen Rechenzentrum außer Betrieb zu nehmen.
 - **Überarbeiten:** Die Modernisierung der Architektur jeder Workload maximiert den Cloudwert hinsichtlich der Kosten, Leistung und Vorgänge. Dieser Ansatz ist jedoch weitaus langsamer und erfordert häufig Zugriff auf den Quellcode der einzelnen Anwendungen.
 
 **Mindestumfang:** Verwenden Sie während der Planung in der Frühphase die Option für das erneute Hosten, und seien Sie sich dabei bewusst, dass diese Option eine anfängliche Geschäftsannahme und keine technische Entscheidung ist. Bei der Migrationsmethodik stellt das Cloudeinführungsteam dann diese Annahme für jede migrierte Workload in Frage. Diese Methodik folgt dem Ansatz „Bewertung/Migration/Förderung“ für jede Workload oder Workloadgruppe, die eine Migrationsfactory bildet. Während der Bewertungsphase wertet das Einführungsteam die technische Eignung sowie die Architektur der einzelnen Workloads aus. Diese Bewertungsmaßnahmen führen selten zu einem reinen Lift & Shift-Ansatz, da viele der Architekturkomponenten zum Zwecke von Refactoring und Modernisierung ausgewählt werden.

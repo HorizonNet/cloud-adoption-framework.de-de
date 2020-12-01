@@ -7,12 +7,12 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 5c76356277f6ae911b2994dac0d6bcb66bcdd112
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 53587e37babffe0dc7e6c722643d4bafda646ff3
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712638"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94881043"
 ---
 <!-- docutune:casing GDGs "GT Software" "NTT Data" -->
 <!-- cSpell:ignore Attunity Codit DRDA ISAM ISQL LPARS VSAM ODBC JDBC GDGs REXX dbextents Raincode Tmax -->
@@ -37,7 +37,7 @@ Planen Sie als Erstes die Workloads, die Sie zuerst migrieren möchten, und ermi
 
 ## <a name="mainframe-emulation-in-azure"></a>Mainframe-Emulation in Azure
 
-Azure-Clouddienste können herkömmliche Mainframe-Umgebungen emulieren, sodass Sie vorhandenen Mainframecode und zugehörige Anwendungen weiterverwenden können. Zu den allgemeinen Serverkomponenten, die Sie emulieren können, gehören OLTP- (Onlinetransaktionsverarbeitung), Batch- und Datenerfassungssysteme.
+Azure-Dienste können herkömmliche Mainframe-Umgebungen emulieren, sodass Sie vorhandenen Mainframecode und zugehörige Anwendungen weiterverwenden können. Zu den allgemeinen Serverkomponenten, die Sie emulieren können, gehören OLTP- (Onlinetransaktionsverarbeitung), Batch- und Datenerfassungssysteme.
 
 ### <a name="oltp-systems"></a>OLTP-Systeme
 

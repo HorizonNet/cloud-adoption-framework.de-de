@@ -7,12 +7,12 @@ ms.date: 06/18/2020
 ms.topic: guide
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 86bc5245ba358d8f13e232f8342937b47588c7f7
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 8b940ff5e1ffa4eeb07ffb7011faa09d24079676
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90776260"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996824"
 ---
 <!-- cSpell:ignore SIEM Nagios Zabbix DIKW -->
 
@@ -66,7 +66,7 @@ Da die Fachbereiche bestimmen, welche Dienste in die Cloud verlagert werden soll
 
 ## <a name="monitoring-informs-strategy"></a>Überwachung beeinflusst Strategie
 
-Überlegen Sie, wo die Fähigkeit zur frühzeitigen Überwachung die *Strategie*  beeinflusst. Viele Entscheidungen hängen von frühen Überwachungsdaten ab, um eine Roadmap für Kompetenzen zu erstellen, die begrenzte Ressourcen lenkt und Vertrauen schafft. Strategien brauchen auch praktische Beiträge aus der Überwachung der Aktivierung von Diensten.
+Überlegen Sie, wo die Fähigkeit zur frühzeitigen Überwachung die _Strategie_  beeinflusst. Viele Entscheidungen hängen von frühen Überwachungsdaten ab, um eine Roadmap für Kompetenzen zu erstellen, die begrenzte Ressourcen lenkt und Vertrauen schafft. Strategien brauchen auch praktische Beiträge aus der Überwachung der Aktivierung von Diensten.
 
 Bedenken Sie die Rolle, die Überwachung bei Strategien zum schrittweisen Schützen und Absichern des digitalen Bestands spielt:
 
@@ -140,15 +140,15 @@ Ziehen Sie in Ihrem Governanceplan eine zentrale Richtlinie für die Bedeutung v
 
 ## <a name="formulate-initiatives"></a>Formulieren von Initiativen
 
-Als Überwachungsexperte oder Systemadministrator haben Sie festgestellt, dass die Cloudüberwachung schneller und einfacher einzurichten ist, was zu kostengünstigen Demos oder Nutzennachweisen führt. Um den Hang, im Demomodus zu verbleiben, zu überwinden, müssen Sie mit der Strategie in ständigem Kontakt bleiben und in der Lage sein, auf die Produktion ausgerichtete Überwachungspläne umzusetzen. Da die Strategie mit vielen Unsicherheiten und Unbekannten behaftet ist, werden Sie nicht alle Überwachungsanforderungen im Voraus kennen. Entscheiden Sie daher über die erste Reihe von Einführungsplänen auf Grundlage dessen, was für die Fachbereiche und IT-Leitung minimal realisierbar ist. Sie können dies eine Kernfähigkeit nennen, *die erforderlich ist, um den Weg einzuschlagen*. Es folgen zwei Beispiele für Initiativen, um die Dinge in Gang zu bringen:
+Als Überwachungsexperte oder Systemadministrator haben Sie festgestellt, dass die Cloudüberwachung schneller und einfacher einzurichten ist, was zu kostengünstigen Demos oder Nutzennachweisen führt. Um den Hang, im Demomodus zu verbleiben, zu überwinden, müssen Sie mit der Strategie in ständigem Kontakt bleiben und in der Lage sein, auf die Produktion ausgerichtete Überwachungspläne umzusetzen. Da die Strategie mit vielen Unsicherheiten und Unbekannten behaftet ist, werden Sie nicht alle Überwachungsanforderungen im Voraus kennen. Entscheiden Sie daher über die erste Reihe von Einführungsplänen auf Grundlage dessen, was für die Fachbereiche und IT-Leitung minimal realisierbar ist. Sie können dies als Kernfunktion bezeichnen, _die erforderlich ist, um die Journey zu beginnen_. Es folgen zwei Beispiele für Initiativen, um die Dinge in Gang zu bringen:
 
-- Initiative 1: *Um Vielfalt und Komplexität unserer derzeitigen Investitionen in die Überwachung zu verringern, investieren wir zunächst in den Aufbau einer Kernfähigkeit, die Azure Monitor nutzt, da die gleichen Fähigkeiten und die gleiche Bereitschaft auch für andere Bereiche der Cloudüberwachung gelten.*
+- **Initiative 1:** Zum Reduzieren der Vielfalt und Komplexität der derzeitigen Investitionen in die Überwachung wird zunächst in den Aufbau einer Kernfunktion mit Azure Monitor investiert, da die gleichen Fähigkeiten und die gleiche Bereitschaft für andere Bereiche der Cloudüberwachung gelten.
 
-- Initiative 2: *Um zu entscheiden, wie wir unsere Lizenzpläne für den Identitäts-, Zugriffs- und allgemeinen Informationsschutz nutzen, werden wir den Abteilungen für Sicherheit und Datenschutz helfen, eine frühzeitige Aktivitätsüberwachung von Benutzern und Inhalten bei der Migration in die Cloud einzurichten. Dabei werden wir Fragen zu Klassifizierungsbezeichnungen, Verhinderung von Datenverlust, Verschlüsselung und Aufbewahrungsrichtlinien klären.*
+- **Initiative 2:** Damit entschieden werden kann, wie die Lizenzpläne für den Schutz von Identitäten, Zugriff und allgemeinen Informationen verwendet werden, werden die Abteilungen für Sicherheit und Datenschutz dabei unterstützt, frühzeitige Aktivitätsüberwachung für Benutzer und Inhalten bei der Migration zur Cloud einzurichten. Dadurch sollen Fragen zu Klassifizierungsbezeichnungen, Schutz vor Datenverlust, Verschlüsselung und Aufbewahrungsrichtlinien geklärt werden.
 
 ### <a name="consider-scale"></a>Maßstab
 
-Berücksichtigen Sie den Maßstab in Ihrer Strategie und wer *Überwachung als Code* definieren und standardisieren wird. Ihre Organisation sollte planen, standardisierte Lösungen unter Nutzung einer Kombination von Tools wie den folgenden zu entwickeln:
+Berücksichtigen Sie den Maßstab in Ihrer Strategie und wer _Überwachung als Code_ definieren und standardisieren wird. Ihre Organisation sollte planen, standardisierte Lösungen unter Nutzung einer Kombination von Tools wie den folgenden zu entwickeln:
 
 - Azure Resource Manager-Vorlagen.
 - Definitionen und Richtlinien für die Azure Policy-Überwachungsinitiative.
@@ -261,7 +261,7 @@ Nehmen Sie in Ihre Strategie und Ihr Betriebsmodell auf, wie Sie Überwachungspl
 
 ## <a name="establish-minimum-governance"></a>Festlegen minimaler Governance
 
-Legen Sie so früh wie möglich fest, wie Sie Ihre Investitionen in die Cloudüberwachung regeln möchten. Denken Sie daran, dass Azure Monitor ein *Mandantendienst* mit Einblick in Verwaltungsgruppen und Abonnements ist und Benutzer mit der rollenbasierten Zugriffssteuerung von Azure in ihren Aktionen eingeschränkt werden können.
+Legen Sie so früh wie möglich fest, wie Sie Ihre Investitionen in die Cloudüberwachung regeln möchten. Denken Sie daran, dass Azure Monitor ein _Mandantendienst_ mit Einblick in Verwaltungsgruppen und Abonnements ist und Benutzer mit der rollenbasierten Zugriffssteuerung von Azure in ihren Aktionen eingeschränkt werden können.
 
 Legen Sie in Azure-Zugriffsberechtigungen entsprechend der jeweiligen Rolle und Zuständigkeit fest. Es wird empfohlen, den Zugriff auf die Rolle `Reader` für Überwachungsbenutzer so früh wie möglich festzulegen und dann festzulegen, wem die Rolle `Contributor` gewährt wird.
 

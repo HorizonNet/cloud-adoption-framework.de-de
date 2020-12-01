@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: a015370bdbc90440606b8089a4c644cad3b853c1
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 9e096fce40e00f66ce02bf2a98ff50f324f80b8b
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571846"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880193"
 ---
 # <a name="set-up-basic-alerts"></a>Einrichten einfacher Warnungen
 
@@ -34,7 +34,9 @@ Ausführliche Informationen zum manuellen Erstellen und Verwalten von Warnungen 
 
 ## <a name="automated-deployment-of-recommended-alerts"></a>Automatisierte Bereitstellung empfohlener Warnungen
 
-In diesem Leitfaden wird empfohlen, einen Satz von 15 Warnungen für die Überwachung der grundlegenden Infrastruktur zu erstellen. Sie finden die Bereitstellungsskripts im [GitHub-Repository – Azure-Warnungstoolkit](https://github.com/Microsoft/manageability-toolkits).
+<!-- docutune:casing "Alert Toolkit" -->
+
+In diesem Leitfaden wird empfohlen, einen Satz von 15 Warnungen für die Überwachung der grundlegenden Infrastruktur zu erstellen. Sie finden die Bereitstellungsskripts im GitHub-Repository [Warnungstoolkit](https://github.com/Microsoft/manageability-toolkits).
 
 Dieses Paket erstellt Warnungen für:
 
@@ -45,7 +47,7 @@ Dieses Paket erstellt Warnungen für:
 - Beschädigte Dateisysteme
 - Allgemeine Hardwarefehler
 
-Das Paket verwendet als Beispiel Serverhardware von HP. Ändern Sie die Einstellungen in der zugehörigen Konfigurationsdatei, um Ihre OEM-Hardware widerzuspiegeln. Sie können der Konfigurationsdatei auch weitere Leistungsindikatoren hinzufügen. Führen Sie zum Bereitstellen des Pakets die Datei „New-CoreAlerts.ps1“ aus.
+Das Paket verwendet als Beispiel HPE-Serverhardware. Ändern Sie die Einstellungen in der zugehörigen Konfigurationsdatei, um Ihre OEM-Hardware widerzuspiegeln. Sie können der Konfigurationsdatei auch weitere Leistungsindikatoren hinzufügen. Führen Sie zum Bereitstellen des Pakets die Datei `New-CoreAlerts.ps1` aus.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

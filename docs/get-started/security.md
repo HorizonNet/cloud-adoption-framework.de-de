@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: overview
-ms.openlocfilehash: e22f93f7a375431684002904ade30982ab460b23
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 2f5c389180909031b002f836d83489411ac13b1e
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713767"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94994461"
 ---
 <!-- docutune:casing IR -->
 
@@ -54,7 +54,7 @@ Unabhängig davon, ob Sie bereits in der Cloud arbeiten oder eine zukünftige Ei
 **Vorgehensweise:**
 
 3. [Zuweisen von Verantwortlichkeit für Cloudsicherheitsentscheidungen](../security/security-top-10.md#3-process-assign-accountability-for-cloud-security-decisions)
-4. [Aktualisieren von Prozessen für die Reaktion auf Vorfälle (Incident Response, IR) für die Cloud](../security/security-top-10.md#4-process-update-incident-response-ir-processes-for-cloud)
+4. [Aktualisieren von Prozessen für die Reaktion auf Vorfälle für die Cloud](../security/security-top-10.md#4-process-update-incident-response-processes-for-cloud)
 5. [Einrichten der Sicherheitsstatusverwaltung](../security/security-top-10.md#5-process-establish-security-posture-management)
 
 **Technologie:**

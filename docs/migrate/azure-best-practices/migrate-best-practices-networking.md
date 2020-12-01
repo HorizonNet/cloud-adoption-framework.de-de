@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fd02f8755ebd44f7f3e3444772c76bc4357c7071
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: deb75877c22c1e813c99b876da0d6aa8d64bd184
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712883"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996246"
 ---
 <!-- cSpell:ignore NSGs CIDR FQDNs BGP's ACLs WAFs -->
 
@@ -36,7 +36,7 @@ Azure bietet virtuelle Netzwerke mit folgenden Funktionen:
 - Verbindungen zwischen virtuellen Netzwerken können mittels Peering virtueller Netzwerke hergestellt werden. Verbundene virtuelle Netzwerke können sich in der gleichen Region oder in unterschiedlichen Regionen befinden. Somit kann von Ressourcen in einem virtuellen Netzwerk eine Verbindung mit Ressourcen in anderen virtuellen Netzwerken hergestellt werden.
 - Azure leitet Datenverkehr standardmäßig zwischen Subnetzen innerhalb eines virtuellen Netzwerks, verbundenen virtuellen Netzwerken, lokalen Netzwerken und dem Internet weiter.
 
-Überlegen Sie sich bei der Planung Ihrer VNET-Topologie, wie Sie die IP-Adressräume anordnen, ein Hub-and-Spoke-Netzwerk implementieren, virtuelle Netzwerke in Subnetze segmentieren, DNS einrichten und Azure-Verfügbarkeitszonen implementieren möchten.
+Überlegen Sie sich bei der Planung Ihrer VNET-Topologie, wie Sie die IP-Adressräume anordnen, eine Hub-and-Spoke-Netzwerktopologie implementieren, virtuelle Netzwerke in Subnetze segmentieren, DNS einrichten und Azure-Verfügbarkeitszonen implementieren möchten.
 
 ## <a name="best-practice-plan-ip-addressing"></a>Bewährte Methode: Planen der IP-Adressierung
 
@@ -57,23 +57,23 @@ Weitere Tipps für die Planung:
 - Sehen Sie sich die [häufig gestellten Fragen zu Azure Virtual Network](/azure/virtual-network/virtual-networks-faq) an.
 - Erfahren Sie mehr über [Grenzwerte für Azure-Netzwerke](/azure/azure-resource-manager/management/azure-subscription-service-limits).
 
-## <a name="best-practice-implement-a-hub-and-spoke-network-topology"></a>Bewährte Methode: Implementieren einer Hub-and-Spoke-Netzwerktopologie
+## <a name="best-practice-implement-a-hub-and-spoke-network-topology"></a>Bewährte Methode: Implementieren einer Hub-Spoke-Netzwerktopologie
 
 Eine Hub-and-Spoke-Netzwerktopologie dient zur Isolation von Workloads, während Dienste wie Identität und Sicherheit gemeinsam verwendet werden. Der Hub ist ein virtuelles Azure-Netzwerk, das als zentraler Konnektivitätspunkt fungiert. Die Spokes sind virtuelle Netzwerke, die mit dem virtuellen Hubnetzwerk unter Verwendung von Peering eine Verbindung herstellen. Gemeinsame Dienste werden im Hub bereitgestellt, während einzelne Workloads als Spokes bereitgestellt werden.
 
 Beachten Sie Folgendes:
 
-- Durch die Implementierung einer Hub-and-Spoke-Topologie in Azure werden allgemeine Dienste wie etwa Verbindungen mit lokalen Netzwerken, Firewalls und die Isolation zwischen virtuellen Netzwerken zentralisiert. Das virtuelle Hubnetzwerk stellt einen zentralen Konnektivitätspunkt für lokale Netzwerke und einen Ort zum Hosten von Diensten bereit, die von in virtuellen Spoke-Netzwerken gehosteten Workloads genutzt werden.
-- Hub-and-Spoke-Konfigurationen kommen in der Regel in größeren Unternehmen zum Einsatz. Für kleinere Netzwerke sollte ein einfacherer Entwurf in Betracht gezogen werden, um Kosten zu sparen und die Komplexität zu verringern.
+- Durch die Implementierung einer Hub-and-Spoke-Topologie in Azure werden allgemeine Dienste wie Verbindungen mit lokalen Netzwerken, Firewalls und die Isolation zwischen virtuellen Netzwerken zentralisiert. Das virtuelle Hubnetzwerk stellt einen zentralen Konnektivitätspunkt für lokale Netzwerke und einen Ort zum Hosten von Diensten bereit, die von in virtuellen Spoke-Netzwerken gehosteten Workloads genutzt werden.
+- Eine Hub-Spoke-Konfiguration wird in der Regel von größeren Unternehmen eingesetzt. Für kleinere Netzwerke sollte ein einfacherer Entwurf in Betracht gezogen werden, um Kosten zu sparen und die Komplexität zu verringern.
 - Virtuelle Spoke-Netzwerke können zur Isolation von Workloads verwendet werden, wobei die einzelnen Spokes jeweils separat verwaltet werden. Jede Workload kann mehrere Ebenen und mehrere Subnetze umfassen, die mit Azure-Lastenausgleichsmodulen verbunden sind.
-- Virtuelle Hub-and-Spoke-Netzwerke können in verschiedenen Ressourcengruppen und sogar in verschiedenen Abonnements implementiert werden. Wenn Sie eine Peerverbindung zwischen virtuellen Netzwerken in verschiedenen Abonnements herstellen, können die Abonnements demselben oder einem anderen Azure AD-Mandanten (Azure Active Directory) zugeordnet sein. Dies ermöglicht nicht nur eine dezentralisierte Verwaltung der einzelnen Workloads, sondern auch die gemeinsame Nutzung von Diensten im Hub-VNET.
+- Sie können virtuelle Hub-and-Spoke-Netzwerke in verschiedenen Ressourcengruppen und sogar in verschiedenen Abonnements implementieren. Wenn Sie eine Peerverbindung zwischen virtuellen Netzwerken in verschiedenen Abonnements herstellen, können die Abonnements demselben oder einem anderen Azure AD-Mandanten (Azure Active Directory) zugeordnet sein. Dies ermöglicht nicht nur eine dezentralisierte Verwaltung der einzelnen Workloads, sondern auch die gemeinsame Nutzung von Diensten im Hub-VNET.
 
 ![Diagramm einer Hub-and-Spoke-Topologie](./media/migrate-best-practices-networking/hub-spoke.png)
 _Abbildung 1: Hub-and-Spoke-Topologie_
 
 **Weitere Informationen**:
 
-- Machen Sie sich mit einer [Hub-and-Spoke-Topologie](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke) vertraut.
+- Erfahren Sie mehr über eine [Hub-Spoke-Topologie](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke).
 - Erhalten Sie Netzwerkempfehlungen für die Ausführung von [Windows-VMs](/azure/architecture/reference-architectures/n-tier/windows-vm) und [Linux-VMs](/azure/architecture/reference-architectures/n-tier/linux-vm).
 - Erfahren Sie mehr zum [Peering virtueller Netzwerke](/azure/virtual-network/virtual-network-peering-overview).
 
@@ -95,7 +95,7 @@ Die Tabelle enthält ein Beispiel für ein virtuelles Netzwerk mit einem (in Sub
 | Subnet | CIDR | Adressen | Verwendung |
 | --- | --- | --- | --- |
 | `DEV-FE-EUS2` | `10.245.16.0/22` | 1019 | Front-End- oder Webschicht-VMs |
-| `DEV-APP-EUS2` | `10.245.20.0/22` | 1019 | App-Schicht-VMs |
+| `DEV-APP-EUS2` | `10.245.20.0/22` | 1019 | Anwendungsschicht-VMs |
 | `DEV-DB-EUS2` | `10.245.24.0/23` | 507 | Datenbank-VMs |
 
 **Weitere Informationen**:
@@ -141,9 +141,9 @@ Im Anschluss folgen einige weitere Punkte, die bei der Einrichtung von Verfügba
 - Planen und integrieren Sie Hochverfügbarkeit in Ihre Migrationsarchitektur, indem Sie Ihre Compute-, Speicher-, Netzwerk- und Datenressourcen in eine Zone aufnehmen und in anderen Zonen replizieren. Azure-Dienste, die Verfügbarkeitszonen unterstützen, können in zwei Kategorien unterteilt werden:
   - **Zonendienste:** Sie ordnen eine Ressource einer bestimmten Zone – z B. VMs, verwalteten Datenträgern oder IP-Adressen – zu.
   - **Zonenredundante Dienste:** Die Ressource wird zonenübergreifend automatisch repliziert, z. B. zonenredundanter Speicher oder Azure SQL-Datenbank.
-- Sie können eine Azure Load Balancer Standard-Instanz mit Internetworkloads oder Logikschichten bereitstellen, um für zonale Fehlertoleranz zu sorgen.
+- Sie können eine Azure Load Balancer-Standardinstanz mit Workloads mit Internetzugriff oder Anwendungsebenen bereitstellen, um zonale Fehlertoleranz bereitzustellen.
 
-    ![Diagramm: Azure Load Balancer Standard](./media/migrate-best-practices-networking/load-balancer.png) _Abbildung 4: Lastenausgleich_
+    ![Diagramm: Standardlastenausgleich](./media/migrate-best-practices-networking/load-balancer.png) _Abbildung 4: Lastenausgleich_
 
 **Weitere Informationen**:
 
@@ -153,7 +153,7 @@ Im Anschluss folgen einige weitere Punkte, die bei der Einrichtung von Verfügba
 
 Für eine erfolgreiche Migration ist es wichtig, eine Verbindung zwischen lokalen Unternehmensnetzwerke mit Azure herzustellen. Dadurch entsteht eine Always On-Verbindung, die als Hybridcloudnetzwerk bezeichnet wird. In diesem Netzwerk werden den Unternehmensbenutzern Dienste aus der Azure-Cloud bereitgestellt. Es gibt zwei Optionen zum Erstellen dieser Art von Netzwerk:
 
-- **Site-to-Site-VPN**: Sie erstellen eine Site-to-Site-Verbindung zwischen Ihrem kompatiblen lokalen VPN-Gerät und einem Azure-VPN-Gateway, das in einem virtuellen Netzwerk bereitgestellt wird. Jede autorisierte lokale Ressource kann auf virtuelle Netzwerke zugreifen. Die Site-to-Site-Kommunikation wird durch einen verschlüsselten Tunnel über das Internet gesendet.
+- **Site-to-Site-VPN:** Sie stellen eine Site-to-Site-VPN-Verbindung zwischen Ihrem kompatiblen lokalen VPN-Gerät und einem Azure-VPN-Gateway her, das in einem virtuellen Netzwerk bereitgestellt wird. Jede autorisierte lokale Ressource kann auf virtuelle Netzwerke zugreifen. Die Site-to-Site-Kommunikation wird durch einen verschlüsselten Tunnel über das Internet gesendet.
 - **Azure ExpressRoute:** Sie stellen eine Azure ExpressRoute-Verbindung zwischen Ihrem lokalen Netzwerk und Azure über einen ExpressRoute-Partner her. Diese Verbindung ist privat, und der Datenverkehr wird nicht über das Internet geleitet.
 
 **Weitere Informationen**:
@@ -165,7 +165,7 @@ Für eine erfolgreiche Migration ist es wichtig, eine Verbindung zwischen lokale
 Zum Implementieren eines Site-to-Site-VPN richten Sie ein VPN-Gateway in Azure ein.
 
 - Ein VPN-Gateway ist eine spezifische Art eines Gateways für ein virtuelles Netzwerk. Es sendet verschlüsselten Datenverkehr zwischen einem virtuellen Azure-Netzwerk und einem lokalen Standort über das öffentliche Internet.
-- Ein VPN-Gateway kann aber auch verschlüsselten Datenverkehr zwischen virtuellen Azure-Netzwerken über das Microsoft-Netzwerk senden.
+- Ein VPN-Gateway kann auch verschlüsselten Datenverkehr zwischen virtuellen Netzwerken in Azure über das Microsoft-Netzwerk senden.
 - Ein virtuelles Netzwerk kann jeweils nur über ein einzelnes VPN-Gateway verfügen.
 - Sie können mehrere Verbindungen mit dem gleichen VPN-Gateway herstellen. Wenn Sie mehrere Verbindungen herstellen, wird die für das Gateway zur Verfügung stehende Bandbreite auf alle VPN-Tunnel aufgeteilt.
 
@@ -175,7 +175,7 @@ Jedes Azure-VPN-Gateway umfasst zwei Instanzen in einer Aktiv-Standby-Konfigurat
 - Der Wechsel verursacht eine kurze Unterbrechung.
 - Bei der geplanten Wartung sollte die Konnektivität innerhalb von 10 bis 15 Sekunden wiederhergestellt werden.
 - Bei ungeplanten Problemen dauert die Verbindungswiederherstellung länger – schlimmstenfalls bis zu anderthalb Minuten.
-- Point-to-Site-VPN-Clientverbindungen mit dem Gateway werden getrennt, und Benutzer müssen von Clientcomputern aus erneut eine Verbindung herstellen.
+- Point-to-Site-VPN-Clientverbindungen mit dem Gateway werden getrennt, und Benutzer müssen die Verbindung von Clientcomputern aus wiederherstellen.
 
 Beim Einrichten eines Site-to-Site-VPN gilt Folgendes:
 
@@ -233,7 +233,7 @@ Mit dem Azure ExpressRoute-Dienst erweitern Sie Ihre lokale Infrastruktur in di
 - Mit ExpressRoute Direct können Sie bei höherem Bandbreitenbedarf eine direkte 100 GBit/s-Verbindung mit Microsoft-Routern herstellen.
 - ExpressRoute verwendet BGP zum Austauschen von Routen zwischen lokalen Netzwerken, Azure-Instanzen und öffentlichen Microsoft-Adressen.
 
-Für die Bereitstellung von ExpressRoute-Verbindungen ist in der Regel ein ExpressRoute-Dienstanbieter erforderlich. Zum schnellen Einstieg wird zunächst üblicherweise eine Site-to-Site-VPN-Verbindung verwendet, um eine Verbindung zwischen dem virtuellen Rechenzentrum und lokalen Ressourcen herzustellen. Danach wird dann eine Migration zu einer ExpressRoute-Verbindung durchgeführt, wenn eine physische Verbindung mit Ihrem Dienstanbieter eingerichtet wurde.
+Für die Bereitstellung von ExpressRoute-Verbindungen ist in der Regel ein ExpressRoute-Dienstanbieter erforderlich. Zum schnellen Einstieg wird üblicherweise zunächst eine Site-to-Site-VPN-Verbindung verwendet, um eine Verbindung zwischen dem virtuellen Rechenzentrum und den lokalen Ressourcen herzustellen. Danach wird dann eine Migration zu einer ExpressRoute-Verbindung durchgeführt, wenn eine physische Verbindung mit Ihrem Dienstanbieter eingerichtet wurde.
 
 **Weitere Informationen**:
 
@@ -503,7 +503,7 @@ Im Hub wird das Umkreisnetzwerk (mit Zugriff auf das Internet) für gewöhnlich 
 
 | Firewalltyp | Details |
 | --- | --- |
-| WAFs | Web-Anwendungen sind üblich und weisen häufig Sicherheitsrisiken und Exploits auf. WAFs sind für die Erkennung von Angriffen auf Webanwendungen (HTTP/HTTPS) konzipiert. Verglichen mit herkömmlichen Firewalls weisen WAFs einen Satz von bestimmten Features auf, um den internen Webserver vor Bedrohungen zu schützen. |
+| WAFs | Web-Anwendungen sind üblich und weisen häufig Sicherheitsrisiken und Exploits auf. WAFs sind für die Erkennung von Angriffen auf Webanwendungen (HTTP/HTTPS) konzipiert. Im Gegensatz zu herkömmlichen Firewalls weisen WAFs bestimmte Features auf, die den internen Webserver vor Bedrohungen schützen. |
 | Azure Firewall | Azure Firewall verwendet genau wie NVA-Firewallfarmen einen allgemeinen Verwaltungsmechanismus und eine Gruppe von Sicherheitsregeln, um in Spoke-Netzwerken gehostete Workloads zu schützen. Darüber hinaus hilft Azure Firewall dabei, den Zugriff auf lokale Netzwerke zu steuern. Azure Firewall verfügt über integrierte Skalierbarkeit. |
 | Firewalls mit virtuellen Netzwerkappliances | NVA-Firewallfarmen verfügen genau wie Azure Firewall über einen allgemeinen Verwaltungsmechanismus und eine Gruppe von Sicherheitsregeln, um in Spoke-Netzwerken gehostete Workloads zu schützen. Darüber hinaus helfen NVA-Firewalls dabei, den Zugriff auf lokale Netzwerke zu steuern. Firewalls mit virtuellen Netzwerkappliances können manuell hinter einem Lastenausgleich skaliert werden. <br><br> Eine Firewallfarm mit virtuellen Netzwerkappliances verfügt über weniger spezialisierte Software als ein WAF, muss aber einen umfassenderen Anwendungsbereich filtern und alle Arten von ein- oder ausgehendem Datenverkehr überprüfen. |
 
@@ -511,7 +511,7 @@ Es wird empfohlen, eine Gruppe von Azure-Firewalls (oder virtuellen Netzwerkappl
 
 **Weitere Informationen**:
 
-- Informieren Sie sich über die [Verwendung virtueller Netzwerkappliances in einem virtuellen Azure-Netzwerk](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz).
+- Erfahren Sie mehr über die [Verwendung von virtuellen Netzwerkappliances in einem virtuellen Azure-Netzwerk](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

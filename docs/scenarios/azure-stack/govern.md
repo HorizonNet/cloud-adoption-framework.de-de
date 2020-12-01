@@ -7,18 +7,18 @@ ms.date: 05/19/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
-ms.openlocfilehash: 2cb7faca74334538f48b1a57e3bd6b70f3983e43
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 117b21cde2fccbb1e823986d91528cca0dfa21f7
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885523"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94994699"
 ---
 # <a name="govern-an-azure-instance-in-your-datacenter"></a>Steuern einer Azure-Instanz in Ihrem Rechenzentrum
 
-Das öffentliche und private Cloudplattformen übergreifende Steuern von Hybridlösungen steigert die Komplexität. Da Azure Stack Hub Ihre eigene, in Ihrem Rechenzentrum ausgeführte private Instanz von Azure ist, wird diese Komplexität zwangsläufig reduziert.
+Das öffentliche und private Cloudplattformen übergreifende Steuern von Hybridlösungen steigert die Komplexität. Da es sich bei Ihrer Azure Stack Hub-Bereitstellung um Ihre eigene private Instanz von Azure handelt, die in Ihrem Rechenzentrum ausgeführt wird, wird diese Komplexität grundsätzlich reduziert.
 
-Die Geschäftsprozesse, Disziplinen und viele der bewährten Methoden, die im Artikel [Governance für die Einführung der Microsoft Cloud für Azure (Microsoft Cloud Adoption Framework)](../../govern/index.md) erläutert werden, können weiterhin auf die hybride Governance mit Azure Stack Hub angewendet werden. Viele cloudnative Tools, die in der öffentlichen Cloudversion von Azure verwendet werden, können auch in Ihrem Azure Stack Hub verwendet werden.
+Die Geschäftsprozesse, Disziplinen und viele der bewährten Methoden, die im Artikel [Governance für die Einführung der Microsoft Cloud für Azure (Microsoft Cloud Adoption Framework)](../../govern/index.md) erläutert werden, können weiterhin auf die hybride Governance mit Azure Stack Hub angewendet werden. Viele cloudnative Tools, die in der öffentlichen Cloudversion von Azure verwendet werden, können auch in Ihrer Azure Stack Hub-Bereitstellung verwendet werden.
 
 ## <a name="azure-stack-hub-governance-considerations"></a>Überlegungen zur Azure Stack Hub-Governance
 

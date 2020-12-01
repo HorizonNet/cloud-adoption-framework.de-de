@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7af9971a74c33ae6994e3fde3d3496c2f2698499
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 1625157c39a3a1cb158f4fae7cc849081a3b10fb
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885013"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996688"
 ---
 # <a name="migration-focused-cost-control-mechanisms"></a>Auf Migration ausgerichtete Kostenkontrollmechanismen
 
@@ -27,7 +27,7 @@ In diesem Artikel werden folgende Tool behandelt:
 > - Azure Migrate
 > - Azure-Preisrechner
 > - Azure-Gesamtkostenrechner
-> - Azure Cost Management und Azure-Abrechnungsportal
+> - Azure-Kostenverwaltung und Abrechnung
 > - Azure Advisor
 
 Die in diesem Artikel beschriebenen Prozesse können auch eine Partnerschaft mit IT-Managern, Finanzexperten oder Branchenanwendungen erfordern.
@@ -87,13 +87,13 @@ Die folgenden Schritte stellen Kostenempfehlungen für Ressourcen (Infrastruktur
 2. Das Advisor-Dashboard zeigt eine Zusammenfassung Ihrer Empfehlungen für alle ausgewählten Abonnements an. Sie können mithilfe der Abonnementfilter-Dropdownliste die Abonnements auswählen, für die Empfehlungen angezeigt werden sollen.
 3. Klicken Sie auf die Registerkarte **Kosten**, um Empfehlungen zu Kosten anzuzeigen.
 
-### <a name="azure-cost-management-and-billing"></a>Azure Cost Management und Azure-Abrechnungsportal
+### <a name="azure-cost-management--billing"></a>Azure-Kostenverwaltung und Abrechnung
 
-Azure Cost Management und das Azure-Abrechnungsportal bieten eine ganzheitlichere Sicht auf die Ausgabengewohnheiten einschließlich einer detaillierten Sicht auf Kosten- und Ausgabentrends im Laufe der Zeit. Bei großen oder komplexen Migrationen kann diese Sicht die notwendigen Erkenntnisse liefern, um umfassende, weitreichende Kostenverwaltungsentscheidungen zu treffen.
+Azure Cost Management + Billing kann eine ganzheitlichere Ansicht des Ausgabenverhaltens, einschließlich einer ausführlichen Ansicht der Kosten- und Ausgabentrends über Zeit bereitstellen. Bei großen oder komplexen Migrationen kann diese Sicht die notwendigen Erkenntnisse liefern, um umfassende, weitreichende Kostenverwaltungsentscheidungen zu treffen.
 
-**Voraussetzungen:** Beim Rest dieser Registerkarte wird davon ausgegangen, dass der Leser das Setup von Azure Cost Management und des Azure-Abrechnungsportals während der Fertigstellung des Leitfadens für die Azure-Einrichtung abgeschlossen hat. Weitere Informationen zum Konfigurieren von Azure Cost Management und des Azure-Abrechnungsportals finden Sie unter [Verwalten von Kosten und Abrechnung für Azure-Ressourcen](../../ready/azure-setup-guide/manage-costs.md) im Azure-Einrichtungsleitfaden. Sobald die Daten gefüllt wurden, führen Sie die nächsten Schritte aus, um die monatlichen Kosten basierend auf den gesammelten Daten zu schätzen.
+**Voraussetzungen:** Beim Rest dieser Registerkarte wird davon ausgegangen, dass der Leser das Setup von Azure Cost Management + Billing während der Fertigstellung des Leitfadens für die Azure-Einrichtung abgeschlossen hat. Weitere Informationen zum Konfigurieren von Azure Cost Management + Billing finden Sie unter [Verwalten von Kosten und Abrechnung für Azure-Ressourcen](../../ready/azure-setup-guide/manage-costs.md) im Azure-Einrichtungsleitfaden. Sobald die Daten gefüllt wurden, führen Sie die nächsten Schritte aus, um die monatlichen Kosten basierend auf den gesammelten Daten zu schätzen.
 
-Mit den folgenden Schritten werden die Kostenanalysedaten von Azure Cost Management und des Azure-Abrechnungsportals für Ihre Abonnements geladen:
+Mit den folgenden Schritten werden die Kostenanalysedaten von Azure Cost Management + Billing für Ihre Abonnements geladen:
 
 1. Navigieren Sie im Portal zu **Cost Management + Abrechnung**. Sollte **Kostenverwaltung + Abrechnung** im linken Bereich nicht angezeigt werden, klicken Sie auf **Alle Dienste**. Wählen Sie im Dienstmenübereich unter **Überwachung und Verwaltung** die Option **Kostenverwaltung + Abrechnung** aus.
 2. Klicken Sie auf dem Blatt **Kostenverwaltung + Abrechnung** im linken Navigationsbereich auf **Kostenverwaltung**, um mit der Analyse und Optimierung der Cloudkosten zu beginnen.
@@ -106,7 +106,7 @@ Anhand dieser Analyse können Sie die Gesamtkosten, das Budget (falls vorhanden)
 
 - Einen umfassenderen Plan zur Kostenverwaltung für eine größere Anzahl von Ressourcen (Infrastruktur, Apps und Daten) bietet das [Governancemodell für das Framework für die Cloudeinführung (Cloud Adoption Framework)](../../govern/guides/index.md). Informationen hierzu finden Sie unter [Übersicht über die Disziplin „Kostenverwaltung“](../../govern/cost-management/index.md) und [Governanceleitfaden für komplexe Unternehmen: Verbessern der Disziplin „Cost Management“](../../govern/guides/complex/cost-management-improvement.md).
 - Weitere Informationen zu Azure Advisor finden Sie unter [Reduzieren der Dienstkosten mit Azure Advisor](/azure/advisor/advisor-cost-recommendations).
-- Weitere Informationen zu Azure Cost Management und dem Azure-Abrechnungsportal finden Sie unter [Verstehen von und Arbeiten mit Bereichen](/azure/cost-management/understand-work-scopes) und [Schnellstart: Ermitteln und Analysieren von Kosten mit der Kostenanalyse](/azure/cost-management/quick-acm-cost-analysis).
+- Weitere Informationen über Azure Cost Management + Billing finden Sie unter [Verstehen von und Arbeiten mit Bereichen](/azure/cost-management/understand-work-scopes) und [Ermitteln und Analysieren von Kosten mit der Kostenanalyse](/azure/cost-management/quick-acm-cost-analysis).
 
 ## <a name="tips-and-tricks-to-optimize-costs"></a>[Tipps und Tricks zur Kostenoptimierung](#tab/TipsTricks)
 

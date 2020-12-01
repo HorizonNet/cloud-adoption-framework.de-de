@@ -7,12 +7,12 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 18c79fc5639588e4af3a75daf2e77fe39a6287cb
-ms.sourcegitcommit: c1d6c1c777475f92a3f8be6def84f1779648a55c
+ms.openlocfilehash: 792f71c94d9ed16d134d444da8b467983ae9b5a8
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334815"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996331"
 ---
 <!-- docutune:casing Informatica Talend Inmon Attunity Qlik nzLua CBT CBTs NZPLSQL DELIM TABLENAME ORC Parquet nzsql nzunload mpp -->
 
@@ -78,7 +78,7 @@ Bei der Planung einer Migration von einer Netezza-Legacyumgebung zu Azure Synaps
 
 ### <a name="multiple-databases-vs-a-single-database-and-schemas"></a>Mehrere Datenbanken im Vergleich zu einem Singleton und Schemas
 
-In einer Netezza-Umgebung werden verschiedene Teile der Gesamtumgebung unter Umständen auf mehreren separaten Datenbanken bereitgestellt. Beispielsweise kann eine separate Datenbank für die Datenerfassung und Stagingtabellen vorhanden sein, eine Datenbank für zentrale Warehouse-Tabellen und eine weitere Datenbank für Data Marts (manchmal auch als *semantische Ebene* bezeichnet). Die Verarbeitung von separaten Datenbanken als ETL-/ELT-Pipelines in Azure Synapse erfordert möglicherweise die Implementierung von datenbankübergreifenden Verknüpfungen und die Verschiebung von Daten zwischen den separaten Datenbanken.
+In einer Netezza-Umgebung werden verschiedene Teile der Gesamtumgebung unter Umständen auf mehreren separaten Datenbanken bereitgestellt. Zum Beispiel verfügen Sie möglicherweise über eine separate Datenbank für die Datenerfassung und Stagingtabellen, eine Datenbank für zentrale Warehouse-Tabellen und eine weitere Datenbank für Data Marts, die manchmal auch als _semantische Ebene_ bezeichnet wird. Die Verarbeitung von separaten Datenbanken als ETL-/ELT-Pipelines in Azure Synapse erfordert möglicherweise die Implementierung von datenbankübergreifenden Verknüpfungen und die Verschiebung von Daten zwischen den separaten Datenbanken.
 
 Die Azure Synapse-Umgebung verfügt über ein Singleton. Tabellen werden mithilfe von Schemas in logisch getrennte Gruppen unterteilt. Es wird empfohlen, die separaten Datenbanken, die Sie von Netezza migrieren, mithilfe von mehreren Schemas in der Azure Synapse-Zielumgebung zu imitieren. Falls Sie in der Netezza-Umgebung Schemas verwendet haben, müssen Sie möglicherweise die Namenskonvention ändern, um die vorhandenen Netezza-Tabellen und -Sichten in die neue Umgebung verschieben zu können. Sie können beispielsweise die vorhandenen Netezza-Schema- und -Tabellennamen mit dem neuen Azure Synapse-Tabellennamen verketten und mithilfe der Schemanamen die Namen der ursprünglichen separaten Datenbanken in der neuen Umgebung beibehalten.
 
@@ -206,7 +206,7 @@ In Bezug auf die Optimierung bestehen gewisse Unterschiede zwischen den Plattfor
 
 - **Optionen für die Datenverteilung:** Sie können sowohl in Netezza als auch in Azure Synapse mit einer `CREATE TABLE`-Anweisung eine Verteilungsdefinition angeben. Verwenden Sie `DISTRIBUTE ON` für Netezza und `DISTRIBUTION =` für Azure Synapse.
 
-   Azure Synapse sieht eine zusätzliche Methode vor, um kleine und große Tabellen in einem Sternschemamodell lokal zu verknüpfen. Dies wird oft als *Verknüpfung zwischen einer Dimensions- und einer Faktentabelle* bezeichnet. Bei diesem Vorgang wird die kleinere Dimensionstabelle auf allen Knoten repliziert. Dies stellt sicher, dass jeder Wert des Verknüpfungsschlüssels für die größere Tabelle eine übereinstimmende Dimensionszeile enthält, die lokal verfügbar ist. Der Mehraufwand für die Replikation der Dimensionstabelle ist relativ gering, sofern die Tabellen nicht groß sind. Andernfalls wäre die Verwendung einer Hashverteilung (wie zuvor beschrieben) vorzuziehen.
+   Azure Synapse sieht eine zusätzliche Methode vor, um kleine und große Tabellen in einem Sternschemamodell lokal zu verknüpfen. Dies wird oft als _Verknüpfung zwischen einer Dimensions- und einer Faktentabelle_ bezeichnet. Bei diesem Vorgang wird die kleinere Dimensionstabelle auf allen Knoten repliziert. Dies stellt sicher, dass jeder Wert des Verknüpfungsschlüssels für die größere Tabelle eine übereinstimmende Dimensionszeile enthält, die lokal verfügbar ist. Der Mehraufwand für die Replikation der Dimensionstabelle ist relativ gering, sofern die Tabellen nicht groß sind. Andernfalls wäre die Verwendung einer Hashverteilung (wie zuvor beschrieben) vorzuziehen.
 
 - **Datenindizierung:** Azure Synapse bietet verschiedene benutzerdefinierbare Indizierungsoptionen. Diese unterscheiden sich jedoch in der Funktionsweise und der Nutzung von den systemseitig verwalteten Zonenzuordnungen in Netezza. Weitere Informationen zu den Indizierungsoptionen in Azure Synapse finden Sie unter [Indextabellen in einem Azure Synapse-SQL-Pool](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-index).
 

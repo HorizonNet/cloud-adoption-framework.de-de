@@ -7,12 +7,12 @@ ms.date: 5/19/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 4668d9a35d51f40322946f239e5d66373d83d144
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 16a9a7c0bd33503bc9ae9f0bf37a7dca4faa87e3
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88573002"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996603"
 ---
 # <a name="benchmark-and-resize-cloud-assets"></a>Benchmarking und Größenänderung von Cloudressourcen
 
@@ -31,15 +31,15 @@ Wann sollte eine Ressource optimiert werden – während oder nach der Migration
 
 Verwenden Sie während der Migration fundierte Vermutungen, und experimentieren Sie mit der Größe. Für eine echte Ressourcenoptimierung sind jedoch Daten erforderlich, die auf der tatsächlichen Leistung in einer Cloudumgebung basieren. Damit eine echte Optimierung stattfinden kann, muss das IT-Team zunächst Methoden zur Überwachung von Leistung und Ressourcennutzung implementieren.
 
-## <a name="benchmark-and-optimize-with-azure-cost-management-and-billing"></a>Benchmarking und Optimierung mit Azure Cost Management und Abrechnung
+## <a name="benchmark-and-optimize-with-azure-cost-management--billing"></a>Benchmarking und Optimierung mit Azure Cost Management + Billing
 
-[Azure Cost Management und Abrechnung](/azure/cost-management-billing/cost-management-billing-overview) verwaltet Cloudausgaben mit Transparenz und Genauigkeit. Dieser Dienst sorgt für Überwachung, Benchmarking, Zuteilung und Optimierung von Cloudkosten.
+[Azure Cost Management + Billing](/azure/cost-management-billing/cost-management-billing-overview) verwaltet Cloudausgaben mit Transparenz und Genauigkeit. Dieser Dienst sorgt für Überwachung, Benchmarking, Zuteilung und Optimierung von Cloudkosten.
 
 Verlaufsdaten können beim Verwalten von Kosten helfen, indem Nutzung und Kosten im zeitlichen Verlauf analysiert werden, um Trends zu erkennen, die dann zur Prognose zukünftiger Ausgaben verwendet werden. Die Kostenverwaltung enthält ebenfalls nützliche projizierte Kostenberichte. Die Kostenzuteilung verwaltet Kosten, indem diese basierend auf Tagrichtlinien analysiert werden. Verwenden Sie die Kostenzuteilung für Showback und die verbrauchsbasierte Kostenzuteilung, um die Ressourcennutzung und die zugehörigen Kosten anzuzeigen und das Nutzungsverhalten zu beeinflussen oder diese Mandantenkunden in Rechnung zu stellen. Die Zugriffssteuerung unterstützt Sie beim Verwalten der Kosten, indem sichergestellt wird, dass Benutzer und Teams nur auf die Cost Management-Daten zugreifen können, die sie benötigen. Warnungen unterstützen Sie beim Verwalten der Kosten durch eine automatische Benachrichtigung, wenn ungewöhnliche Ausgaben oder eine Budgetüberschreitung auftreten. Durch Warnungen können auch andere Beteiligte automatisch über Anomalien bei den Ausgaben und das Risiko einer Budgetüberschreitung benachrichtigt werden. Verschiedene Berichte unterstützen Warnungen, die auf dem Budget und auf Kostenschwellenwerten basieren.
 
 ## <a name="improve-efficiency"></a>Verbessern der Effizienz
 
-Mit Cost Management und Abrechnung können Sie die optimale Nutzung virtueller Computer bestimmen, virtuelle Computer im Leerlauf identifizieren oder virtuelle Computer im Leerlauf und nicht angefügte Datenträger entfernen. Erstellen Sie mithilfe der Informationen in den Berichten zu Größenempfehlungen und Ineffizienzen einen Plan, um die Größe von virtuellen Computern im Leerlauf zu reduzieren oder diese zu entfernen.
+Mit Azure Cost Management + Billing können Sie die optimale Nutzung virtueller Computer bestimmen, sich im Leerlauf befindende virtuelle Computer identifizieren oder inaktive virtuelle Computer und nicht angefügte Datenträger entfernen. Erstellen Sie mithilfe der Informationen in den Berichten zu Größenempfehlungen und Ineffizienzen einen Plan, um die Größe von virtuellen Computern im Leerlauf zu reduzieren oder diese zu entfernen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

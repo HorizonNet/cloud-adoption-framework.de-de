@@ -7,12 +7,12 @@ ms.date: 09/27/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: fce6da886e8b4336a1c9d61a8ed2e4455ac6200b
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 6814fb5ecfb91068979226ebf0163ea6d54ec3eb
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877805"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880040"
 ---
 # <a name="centralize-management-operations"></a>Zentralisieren von Verwaltungsvorgängen
 
@@ -29,7 +29,7 @@ Falls eine mehrinstanzenfähige Architektur benötigt wird, bietet [Azure Lighth
 
 Angenommen, Ihre Organisation verfügt über einen einzelnen Mandanten, `Tenant A`. Die Organisation beschafft dann zwei weitere Mandanten, `Tenant B` und `Tenant C`, die aus geschäftlichen Gründen separat verwaltet werden müssen.
 
-Ihre Organisation möchte auf allen Mandanten die gleichen Richtliniendefinitionen, Sicherungsmethoden und Sicherheitsprozesse verwenden. Da Sie bereits über Benutzer verfügen (einschließlich Benutzergruppen und Dienstprinzipalen), die für die Durchführung dieser Aufgaben auf Mandant A zuständig sind, können Sie für alle Abonnements auf Mandant B und Mandant C das Onboarding durchführen, damit die gleichen Benutzer von Mandant A diese Aufgaben erledigen können. Mandant A wird dann zum Verwaltungsmandanten für Mandant B und Mandant C.
+Ihre Organisation möchte auf allen Mandanten die gleichen Richtliniendefinitionen, Sicherungsmethoden und Sicherheitsprozesse verwenden. Da Sie bereits über Benutzer verfügen (einschließlich Benutzergruppen und Dienstprinzipalen), die für die Durchführung dieser Aufgaben auf `Tenant A` zuständig sind, können Sie für alle Abonnements auf `Tenant B` und `Tenant C` das Onboarding durchführen, damit die gleichen Benutzer von `Tenant A` diese Aufgaben erledigen können. `Tenant A` wird dann zum Verwaltungsmandanten für `Tenant B` und `Tenant C`.
 
 ![Benutzer von Mandant A verwalten Ressourcen auf Mandant B und Mandant C](../_images/manage/enterprise-azure-lighthouse.jpg)
 

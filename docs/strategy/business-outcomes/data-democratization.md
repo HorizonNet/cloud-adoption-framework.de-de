@@ -7,12 +7,12 @@ ms.date: 05/22/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 81beb5d31a39b6c61c4d9c26649cd55a9c86b16b
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: b62e9ac5cc9da4facd68d4d1715bd57ecdd991c6
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90774254"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94994410"
 ---
 # <a name="data-democratization"></a>Demokratisierung von Daten
 
@@ -22,15 +22,15 @@ Ein Unternehmen, das Dateninnovationen und einen modernen Datenbestand nutzt, ka
 
 Azure Synapse Analytics ist ein einzelner Dienst für nahtlose Zusammenarbeit und schnelleren Erkenntnisgewinn. Damit Sie diesen Dienst besser verstehen, sollten Sie sich zunächst mit den verschiedenen Rollen und Fertigkeiten im Zusammenhang mit einem typischen Datenbestand befassen:
 
-**Data Warehousing**: *Datenbankadministratoren* unterstützen die Verwaltung von Data Lakes und Data Warehouses, wobei Workloads intelligent optimiert und Daten automatisch gesichert werden.
+**Data Warehousing**: _Datenbankadministratoren_ unterstützen die Verwaltung von Data Lakes und Data Warehouses, wobei Workloads intelligent optimiert und Daten automatisch gesichert werden.
 
-**Datenintegration**: *Data Engineers* nutzen eine codefreie Umgebung, um problemlos mehrere Quellen und Datentypen zu verbinden.
+**Datenintegration**: _Data Engineers_ nutzen eine codefreie Umgebung, um problemlos mehrere Quellen und Datentypen zu verbinden.
 
-**Big Data und maschinelles Lernen**: *Data Scientists* erstellen schnell Proofs of Concept und stellen Ressourcen nach Bedarf bereit. Dabei arbeiten sie in der Sprache ihrer Wahl (z. B. T-SQL, Python, Scala, .NET oder Spark SQL).
+**Big Data und maschinelles Lernen:** _Data Scientists_ erstellen schnell Proofs of Concept und stellen Ressourcen nach Bedarf bereit. Dabei arbeiten sie in der Sprache ihrer Wahl (z. B. T-SQL, Python, Scala, .NET oder Spark SQL).
 
-**Verwaltung und Sicherheit:** *IT-Profis* schützen und verwalten Daten effizienter, setzen Datenschutzanforderungen durch und sichern den Zugriff auf Cloud- und Hybridkonfigurationen.
+**Verwaltung und Sicherheit:** _IT-Profis_ schützen und verwalten Daten effizienter, setzen Datenschutzanforderungen durch und sichern den Zugriff auf Cloud- und Hybridkonfigurationen.
 
-**Business Intelligence**: *Business Analysts* greifen sicher auf Datasets zu, erstellen Dashboards und geben Daten innerhalb und außerhalb ihrer Organisation frei.
+**Business Intelligence**: _Business Analysts_ greifen sicher auf Datasets zu, erstellen Dashboards und geben Daten innerhalb und außerhalb ihrer Organisation frei.
 
 Das folgende Diagramm zeigt ein Beispiel für eine klassische Data-Warehouse-Architektur. Hier werden bekannte strukturierte Daten aus wichtigen Transaktionsverarbeitungssystemen extrahiert und in einen Stagingbereich kopiert. Dort werden sie bereinigt, transformiert und in Produktionstabellen in einem Data Warehouse integriert. Häufig werden hier historische Transaktionsdaten für mehrere Jahre inkrementell gespeichert. So werden die Daten zur Verfügung gestellt, die erforderlich sind, um Änderungen beim Umsatz, dem Kaufverhalten von Kunden und der Kundensegmentierung im zeitlichen Verlauf zu verstehen. Ebenfalls bereitgestellt werden eine jährliche Finanzberichterstattung und -analyse als Hilfe bei der Entscheidungsfindung.
 

@@ -7,12 +7,13 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8d40df91ae7eb3fc9ed3c651859ecc01b62f5afc
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.custom: think-tank
+ms.openlocfilehash: 06ff80acc1da04697fbf42ef0e50ac9768a79e94
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713937"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95447216"
 ---
 # <a name="management-group-and-subscription-organization"></a>Organisation von Verwaltungsgruppen und Abonnements
 
@@ -53,7 +54,7 @@ Abonnements sind eine Einheit für die Verwaltung, Abrechnung und Skalierung in 
 
 **Überlegungen zum Entwurf:**
 
-- Abonnements fungieren beim Zuweisen von Azure-Richtlinien als Grenzen. Beispielsweise erfordern sichere Workloads wie z. B. PCI-Workloads (Payment Card Industry) in der Regel zusätzliche Richtlinien, um Compliance zu erreichen. Anstatt eine Verwaltungsgruppe zum Gruppieren von Workloads zu verwenden, die PCI-Compliance erfordern, können Sie die gleiche Abgrenzung auch mit einem Abonnement erzielen. Auf diese Weise wird sichergestellt, dass bei einer kleinen Anzahl von Abonnements nicht zu viele Verwaltungsgruppen vorhanden sind.
+- Abonnements fungieren beim Zuweisen von Azure-Richtlinien als Grenzen. Sichere Workloads wie Payment Card Industry-Workloads (PCI) erfordern beispielsweise in der Regel zusätzliche Richtlinien, um Compliance herzustellen. Anstatt eine Verwaltungsgruppe zum Gruppieren von Workloads zu verwenden, die PCI-Compliance erfordern, können Sie die gleiche Abgrenzung auch mit einem Abonnement erzielen. Auf diese Weise wird sichergestellt, dass bei einer kleinen Anzahl von Abonnements nicht zu viele Verwaltungsgruppen vorhanden sind.
 - Abonnements dienen als Skalierungseinheit, sodass Komponenten-Workloads innerhalb der [Abonnementgrenzen](/azure/azure-subscription-service-limits) der Plattform skaliert werden können. Überdenken Sie während der Workload-Entwurfssitzungen unbedingt Ressourcengrenzwerte für Abonnements.
 - Abonnements stellen eine Verwaltungsgrenze für Governance und Isolation bereit, wodurch eine klare Trennung von Zuständigkeiten geschaffen wird.
 - Es gibt einen manuellen Prozess (zukünftige Automatisierung ist geplant), mit dem ein Azure AD-Mandant so eingeschränkt werden kann, dass er nur Enterprise Agreement-Registrierungsabonnements (EA) verwendet. Dieser Prozess verhindert die Erstellung von Microsoft Developer Network-Abonnements im Rahmen der Stammverwaltungsgruppe.
@@ -74,7 +75,7 @@ Abonnements sind eine Einheit für die Verwaltung, Abrechnung und Skalierung in 
 - Richten Sie ein dediziertes Verwaltungsabonnement in der Verwaltungsgruppe `Platform` zur Unterstützung globaler Verwaltungsfunktionen ein, z. B. Azure Monitor Log Analytics-Arbeitsbereiche und Azure Automation-Runbooks.
 - Richten Sie bei Bedarf ein dediziertes Identitätsabonnement in der Verwaltungsgruppe `Platform` ein, um Windows Server Active Directory-Domänencontroller zu hosten.
 - Richten Sie ein dediziertes Konnektivitätsabonnement in der Verwaltungsgruppe `Platform` ein, um einen Azure Virtual WAN-Hub, privates DNS (Domain Name System), ExpressRoute-Verbindung und andere Netzwerkressourcen zu hosten. Mit einem dedizierten Abonnement wird sichergestellt, dass alle grundlegenden Netzwerkressourcen zusammen abgerechnet und von anderen Workloads isoliert werden.
-- Vermeiden Sie ein starres Abonnementmodell, und entscheiden Sie sich beim Gruppieren von Abonnements im gesamten Unternehmen stattdessen für eine Reihe flexibler Kriterien. Mithilfe dieser Flexibilität wird sichergestellt, dass Sie angesichts von Änderungen der Struktur und der Workloadkomposition Ihrer Organisation neue Abonnementgruppen erstellen können, anstatt festgelegte vorhandene Abonnements zu verwenden. Eine Größe eignet sich nicht für alle Abonnements. Was für eine Geschäftseinheit funktioniert, funktioniert womöglich nicht für eine andere. Einige Apps können gemeinsam im gleichen Zielzonenabonnement vorhanden sein, während andere womöglich ihr eigenes Abonnement erfordern.
+- Vermeiden Sie ein starres Abonnementmodell, und entscheiden Sie sich beim Gruppieren von Abonnements im gesamten Unternehmen stattdessen für eine Reihe flexibler Kriterien. Mithilfe dieser Flexibilität wird sichergestellt, dass Sie angesichts von Änderungen der Struktur und der Workloadkomposition Ihrer Organisation neue Abonnementgruppen erstellen können, anstatt festgelegte vorhandene Abonnements zu verwenden. Eine Größe eignet sich nicht für alle Abonnements. Was für eine Geschäftseinheit funktioniert, funktioniert womöglich nicht für eine andere. Einige Anwendungen können innerhalb des gleichen Zielzonenabonnements gleichzeitig vorhanden sein, während andere unter Umständen ein eigenes Abonnement erfordern.
 
 ## <a name="configure-subscription-quota-and-capacity"></a>Konfigurieren von Abonnementkontingent und -kapazität
 
@@ -106,5 +107,5 @@ Die Kostentransparenz für eine technische Umgebung ist eine entscheidende Verwa
 
 **Entwurfsempfehlungen:**
 
-- Verwenden Sie Azure Cost Management und die Abrechnung für die Kostenaggregation. Stellen Sie diese den Anwendungsbesitzern zur Verfügung.
+- Verwenden Sie Azure Cost Management + Billing für die Kostenaggregation. Stellen Sie diese den Anwendungsbesitzern zur Verfügung.
 - Verwenden Sie Azure-Ressourcentags zum Kategorisieren und Gruppieren von Kosten. Indem Sie Tags verwenden, können Sie einen Mechanismus der verbrauchsbasierten Kostenzuteilung für Workloads nutzen, die ein Abonnement gemeinsam nutzen, oder für eine bestimmte Workload, die sich über mehrere Abonnements erstreckt.

@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: f14f2cc1460fb5c19abd2ed1755966406fada1af
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.openlocfilehash: 603b4351eb312fd95726ca2539c2bcbca4a64c9b
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88848158"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995124"
 ---
 # <a name="azure-fundamental-concepts"></a>Grundlegende Konzepte in Azure
 
@@ -28,7 +28,7 @@ Es ist hilfreich, die folgenden Definitionen zu kennen, wenn Sie mit der Einfüh
 - **Kontoadministrator:** Die Partei, die der E-Mail-Adresse zugeordnet ist, die zum Erstellen eines Azure-Abonnements verwendet wird. Der Kontoadministrator ist für die Begleichung aller Kosten verantwortlich, die durch die Ressourcen des Abonnements verursacht werden.
 - **Azure Active Directory (Azure AD):** Der cloudbasierte Identitäts- und Zugriffsverwaltungsdienst von Microsoft. Azure AD ermöglicht Ihren Mitarbeitern die Anmeldung und den Zugriff auf Ressourcen.
 - **Azure AD-Mandant:** Eine dedizierte und vertrauenswürdige Instanz von Azure AD. Ein Azure AD-Mandant wird automatisch erstellt, wenn sich Ihre Organisation zum ersten Mal für das Abonnement eines Microsoft-Clouddiensts wie Microsoft Azure, Microsoft Intune oder Microsoft 365 registriert. Ein Azure-Mandant stellt eine einzelne Organisation dar.
-- **Azure AD-Verzeichnis:** Jeder Azure AD-Mandant verfügt über ein einzelnes dediziertes und vertrauenswürdiges Verzeichnis. Das Verzeichnis enthält die Benutzer, Gruppen und Apps des Mandanten. Das Verzeichnis wird zum Ausführen von Funktionen zur Identitäts- und Zugriffsverwaltung für Mandantenressourcen verwendet. Einem Verzeichnis können mehrere Abonnements zugeordnet werden, aber jedes Abonnement ist nur einem Verzeichnis zugeordnet.
+- **Azure AD-Verzeichnis:** Jeder Azure AD-Mandant verfügt über ein einzelnes dediziertes und vertrauenswürdiges Verzeichnis. Das Verzeichnis enthält die Benutzer, Gruppen und Anwendungen des Mandanten. Das Verzeichnis wird zum Ausführen von Funktionen zur Identitäts- und Zugriffsverwaltung für Mandantenressourcen verwendet. Einem Verzeichnis können mehrere Abonnements zugeordnet werden, aber jedes Abonnement ist nur einem Verzeichnis zugeordnet.
 - **Ressourcengruppen**: Logische Container, in denen verwandte Ressourcen innerhalb eines Abonnements gruppiert werden. Jede Ressource kann nur in einer Ressourcengruppe vorhanden sein. Ressourcengruppen ermöglichen eine präzisere Gruppierung innerhalb eines Abonnements. Sie werden häufig zur Darstellung einer Sammlung von Ressourcen verwendet, die zur Unterstützung einer Workload, Anwendung oder bestimmten Funktion in einem Abonnement erforderlich sind.
 - **Verwaltungsgruppen**: Logische Container, die Sie für mindestens ein Abonnement verwenden. Sie können eine Hierarchie mit Verwaltungsgruppen, Abonnements, Ressourcengruppe und Ressourcen definieren, um Zugriff, Richtlinien und Compliance über Vererbung effizient zu verwalten.
 - **Region:** Eine Reihe von Azure-Datencentern, die innerhalb eines durch Latenzzeiten definierten Umkreises bereitgestellt werden. Die Datencenter sind über ein dediziertes, regionales Netzwerk mit geringer Latenz verbunden. Die meisten Azure-Ressourcen werden in einer bestimmten Azure-Region ausgeführt.
@@ -62,7 +62,7 @@ Azure definiert drei Arten von Rollen für die Verwaltung von Abonnements, Ident
 
 Die Kontoadministratorrolle für ein Azure-Abonnement wird dem E-Mail-Konto zugewiesen, das zum Erstellen des Azure-Abonnements verwendet wird. Der Kontoadministrator ist der Besitzer des Abonnements, an den die Abrechnung erfolgt. Der Kontoadministrator kann über das Azure-Portal [Abonnementadministratoren verwalten](/azure/cost-management-billing/manage/add-change-subscription-administrator).
 
-Standardmäßig wird die Dienstadministratorrolle für ein Abonnement auch dem E-Mail-Konto zugewiesen, das zum Erstellen des Azure-Abonnements verwendet wird. Der Dienstadministrator verfügt über Berechtigungen für das Abonnement, die einem RBAC-basierten Besitzer entsprechen. Der Dienstadministrator besitzt außerdem Vollzugriff auf das Azure-Portal. Der Kontoadministrator kann den Dienstadministrator in ein anderes E-Mail-Konto ändern.
+Standardmäßig wird die Dienstadministratorrolle für ein Abonnement auch dem E-Mail-Konto zugewiesen, das zum Erstellen des Azure-Abonnements verwendet wird. Der Dienstadministrator verfügt über Berechtigungen für das Abonnement, die einer RBAC-basierten Besitzerrolle entsprechen. Der Dienstadministrator besitzt außerdem Vollzugriff auf das Azure-Portal. Der Kontoadministrator kann den Dienstadministrator in ein anderes E-Mail-Konto ändern.
 
 Wenn Sie ein Azure-Abonnement erstellen, können Sie es einem vorhandenen Azure AD-Mandanten zuordnen. Andernfalls wird ein neuer Azure AD-Mandant mit einem zugehörigen Verzeichnis erstellt. Die Rolle des globalen Administrators im Azure AD-Verzeichnis wird dem E-Mail-Konto zugewiesen, das zum Erstellen des Azure AD-Abonnements verwendet wird.
 

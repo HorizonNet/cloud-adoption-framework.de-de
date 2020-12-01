@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 0a5face64211b93761e567f2149ec44fd624a472
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 0f1ea685d03bad74ef59c4baad5dc983e1ef9f73
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877992"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880176"
 ---
 # <a name="establish-operational-management-practices-in-the-cloud"></a>Einrichten von Betriebsverwaltungsverfahren in der Cloud
 
@@ -41,6 +41,6 @@ Mit beiden bewährten Methoden wird auf eine künftige angestrebte Methodik für
 - **Plattformbetrieb:** Alle IT-Umgebungen umfassen eine Reihe von gemeinsam genutzten Plattformen. Diese Plattformen können Datenspeicher wie SQL Server oder Azure HDInsight beinhalten. Andere gängige Plattformen sind Containerlösungen wie Azure Kubernetes Service (AKS). Unabhängig von den Plattformen liegt der Schwerpunkt bezüglich des Reifegrads des Plattformbetriebs auf der Anpassung von Vorgängen basierend darauf, wie die gemeinsam genutzten Plattformen bereitgestellt, konfiguriert und durch Workloads genutzt werden.
 - **Workloadbetrieb:** Auf der höchsten Stufe der betrieblichen Reife können Cloudbetriebsteams Vorgänge für kritische Workloads optimieren. Bei diesen Workloads können verfügbare Daten zur Automatisierung der Problembehandlung, der Größenanpassung oder des Schutzes von Workloads auf der Grundlage ihrer Auslastung genutzt werden.
 
-Zusätzliche Anleitungen wie der [Entwurf eines Überprüfungsframeworks (Codename: Cloudentwurfsprinzipien)](/azure/architecture/framework/resiliency/overview) können dabei helfen, detaillierte architekturbezogene Entscheidungen zu jeder Workload innerhalb der zuvor beschriebenen Disziplinen zu treffen.
+Zusätzliche Anleitungen, beispielsweise zu [Microsoft Azure Well-Architected Framework​](/azure/architecture/framework/), unterstützen Sie bei der ausführlichen Entscheidungsfindung hinsichtlich der Architektur einer jeden Workload innerhalb der zuvor beschriebenen Disziplinen.
 
 Dieser Abschnitt des Cloud Adoption Framework baut auf jedem der vorhergehenden Themen auf, um einen ausgereiften Cloudbetrieb in Ihrem Unternehmen zu fördern.

@@ -7,26 +7,27 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 8deee8d727fea6fd1f8f1ee43027cf72919871d2
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.custom: think-tank
+ms.openlocfilehash: 7de0cbcf8a29e81578fa477b05b66adb558b5802
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88574685"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95447233"
 ---
 # <a name="enterprise-agreement-enrollment-and-azure-active-directory-tenants"></a>Enterprise Agreement-Registrierung und Azure Active Directory-Mandanten
 
 ## <a name="plan-for-enterprise-enrollment"></a>Plan für die Unternehmensregistrierung
 
-Eine Enterprise Agreement-Registrierung (EA) stellt die Geschäftsbeziehung zwischen Microsoft und der Art und Weise dar, wie Ihre Organisation Azure verwendet. Sie bildet die Grundlage für die Abrechnung für alle Ihre Abonnements und wirkt sich auf die Verwaltung Ihrer digitalen Ressourcen aus. Ihre EA-Registrierung wird über ein Azure-Unternehmensportal verwaltet. Eine Registrierung bildet häufig die Hierarchie einer Organisation ab, zu der die Abteilungen, Konten und Abonnements gehören. Diese Hierarchie stellt Kostenerfassungsgruppen innerhalb einer Organisation dar.
+Eine Enterprise Agreement-Registrierung (EA) stellt die Geschäftsbeziehung zwischen Microsoft und der Art und Weise dar, wie Ihre Organisation Azure verwendet. Sie bildet die Grundlage für die Abrechnung für alle Ihre Abonnements und wirkt sich auf die Verwaltung Ihrer digitalen Ressourcen aus. Ihre EA-Registrierung wird über das Azure EA Portal verwaltet. Eine Registrierung bildet häufig die Hierarchie einer Organisation ab, zu der die Abteilungen, Konten und Abonnements gehören. Diese Hierarchie stellt Kostenerfassungsgruppen innerhalb einer Organisation dar.
 
 ![Abbildung der Azure EA-Hierarchien](./media/ea.png)
 
 _Abbildung 1: Eine Azure EA-Registrierungshierarchie._
 
 - Abteilungen helfen dabei, Kosten in logische Gruppen aufzuteilen und anschließend auf Abteilungsebene ein Budget oder ein Kontingent festzulegen. Das Kontingent wird nicht fest erzwungen und wird für Berichtserstellungszwecke verwendet.
-- Konten sind Organisationseinheiten im Azure Enterprise Portal. Sie können zum Verwalten von Abonnements und das Zugreifen auf Berichte verwendet werden.
-- Abonnements sind die kleinste Einheit im Azure Enterprise-Portal. Dabei handelt es sich um Container für Azure-Dienste, die vom Dienstadministrator verwaltet werden. Hier stellt Ihre Organisation Azure-Dienste bereit.
+- Bei Konten handelt es sich um Organisationseinheiten des Azure EA-Portals. Sie können zum Verwalten von Abonnements und das Zugreifen auf Berichte verwendet werden.
+- Abonnements sind die kleinsten Einheiten im Azure EA-Portal. Dabei handelt es sich um Container für Azure-Dienste, die vom Dienstadministrator verwaltet werden. Hier stellt Ihre Organisation Azure-Dienste bereit.
 - Über EA-Registrierungsrollen sind Benutzer mit ihrer funktionalen Rolle verknüpft. Die folgenden Rollen sind vorhanden:
   - Unternehmensadministrator
   - Abteilungsadministrator
@@ -39,20 +40,20 @@ _Abbildung 1: Eine Azure EA-Registrierungshierarchie._
 - Die Registrierung stellt eine hierarchische Organisationsstruktur bereit, mit der die Verwaltung von Abonnements gesteuert wird.
 - Mehrere Umgebungen können auf EA-Kontoebene getrennt werden, um die ganzheitliche Abgrenzung zu unterstützen.
 - Einer einzelnen Registrierung können mehrere Administratoren zugewiesen werden.
-- Jedes Abonnement muss ein Kontobesitzer zugeordnet sein.
-- Jeder Kontobesitzer wird zum Abonnementbesitzer für alle Abonnements, die unter dem betreffenden Konto bereitgestellt werden.
+- Jedem Abonnement muss ein Kontobesitzer zugeordnet sein.
+- Jeder Kontobesitzer wird zum Abonnementbesitzer für alle Abonnements, die in dem betreffenden Konto bereitgestellt werden.
 - Ein Abonnement kann jeweils nur zu einem Konto gehören.
 - Ein Abonnement kann entsprechend bestimmten Kriterien gesperrt werden.
 
 **Entwurfsempfehlungen:**
 
 - Verwenden Sie für alle Kontotypen nur den Authentifizierungstyp `Work or school account`. Vermeiden Sie die Verwendung des Kontotyps `Microsoft account (MSA)`.
-- Richten Sie die Kontakt-E-Mail-Adresse für Benachrichtigungen ein, um sicherzustellen, dass Benachrichtigungen an das entsprechenden Gruppenpostfach gesendet werden.
+- Richten Sie die Kontakt-E-Mail-Adresse für Benachrichtigungen ein, um sicherzustellen, dass Benachrichtigungen an das richtige Gruppenpostfach gesendet werden.
 - Weisen Sie jedem Konto ein Budget zu, und richten Sie eine Warnung für das betreffende Budget ein.
 - Eine Organisation kann über eine Vielzahl von Strukturen verfügen (z. B. nach Funktionen, Abteilungen, geografischer Verteilung, Matrix oder Teamstruktur). Verwenden Sie die Organisationsstruktur, um Ihre Organisationsstruktur auf Ihre Registrierungshierarchie abzubilden.
 - Erstellen Sie eine neue Abteilung für IT, wenn Geschäftsbereiche über unabhängige IT-Funktionen verfügen.
 - Beschränken und minimieren Sie die Anzahl der Kontobesitzer innerhalb der Registrierung, um die Verbreitung von Administratorzugriff auf Abonnements und zugehörige Azure-Ressourcen zu vermeiden.
-- Wenn mehrere Azure AD-Mandanten (Azure Active Directory) verwendet werden, vergewissern Sie sich, dass der Kontobesitzer dem Mandanten zugeordnet ist, in dem auch die Abonnements für das Konto bereitgestellt sind.
+- Wenn mehrere Azure AD-Mandanten (Azure Active Directory) verwendet werden, vergewissern Sie sich, dass der Kontobesitzer dem Mandanten zugeordnet ist, in dem auch die Abonnements für das Konto bereitgestellt werden.
 - Richten Sie Enterprise Dev/Test- und Produktionsumgebungen auf EA-Kontoebene ein, um die ganzheitliche Abgrenzung zu fördern.
 - Ignorieren Sie keine E-Mails mit Benachrichtigungen, die an die E-Mail-Adresse des Benachrichtigungskontos gesendet werden. Microsoft sendet wichtige EA-weite Mitteilungen an dieses Konto.
 - Ein EA-Konto darf in Azure AD nicht verschoben oder umbenannt werden.

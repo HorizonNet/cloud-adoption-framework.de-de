@@ -7,13 +7,15 @@ ms.date: 06/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 838ef802195d5d3dc56d7df415db8a58486e83e0
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.custom: think-tank
+ms.openlocfilehash: 81ab318f69a67baa00a9e55c230e8fb443354ae7
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713682"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95446860"
 ---
+<!-- docutune:casing "Azure VPN Gateway" L7 -->
 <!-- cSpell:ignore autoregistration BGPs MACsec MPLS MSEE onprem privatelink VPNs -->
 
 # <a name="network-topology-and-connectivity"></a>Netzwerktopologie und -konnektivität
@@ -68,7 +70,7 @@ Domain Name System (DNS) ist ein kritisches Entwurfsthema in der allgemeinen Arc
 
 - Für Umgebungen, in denen lediglich die Namensauflösung in Azure erforderlich ist, verwenden Sie privates Azure-DNS für die Auflösung. Erstellen Sie eine delegierte Zone für die Namensauflösung (z. B. `azure.contoso.com`).
 
-- Für Umgebungen, in denen die Namensauflösung in Azure und in der lokalen Umgebung erforderlich ist, verwenden Sie die vorhandene DNS-Infrastruktur (z. B. in Active Directory integriertes DNS). Diese muss auf mindestens zwei Azure-VMs bereitgestellt sein. Konfigurieren Sie DNS-Einstellungen in virtuellen Netzwerken, um diese DNS-Server dann zu verwenden.
+- Verwenden Sie für Umgebungen, in denen eine Namensauflösung in Azure und in der lokalen Umgebung erforderlich ist, die auf mindestens zwei virtuellen Computern (VMs) bereitgestellte vorhandene DNS-Infrastruktur (z. B. in Active Directory integriertes DNS). Konfigurieren Sie DNS-Einstellungen in virtuellen Netzwerken, um diese DNS-Server dann zu verwenden.
 
 - Sie können weiterhin eine Azure-Zone mit privatem DNS mit den virtuellen Netzwerken verknüpfen und DNS-Server als Hybrid-Konfliktlöser mit bedingter Weiterleitung an lokale DNS-Namen (z. B. `onprem.contoso.com`) mit lokalen DNS-Servern verwenden. Sie haben die Möglichkeit, lokale Server mit bedingten Weiterleitungen an Konfliktlöser-VMs in Azure für die Zone mit privatem Azure-DNS (z. B. `azure.contoso.com`) zu konfigurieren.
 
@@ -126,11 +128,11 @@ _Abbildung 1: Virtual WAN-Netzwerktopologie._
 
 - Virtual WAN erhöht das Limit von bis zu 200 Präfixen, die von Azure zu lokalen Umgebungen angeboten werden, über privates ExpressRoute-Peering auf 10.000 Präfixe pro Virtual WAN-Hub. Das Limit von 10.000 Präfixen schließt auch Site-to-Site-VPN-und Point-to-Site-VPN ein.
 
-- Transitive Konnektivität zwischen Netzwerken (innerhalb einer Region und zwischen Regionen) liegt jetzt in der allgemeinen Verfügbarkeit (GA) vor.
+- Transitive Konnektivität zwischen Netzwerken (innerhalb einer Region und regionsübergreifend) ist jetzt allgemein verfügbar.
 
-- Hub-zu-Hub-Verbindungen von Virtual WAN liegen jetzt in der GA vor.
+- Konnektivität zwischen Hubs ist in Virtual WAN jetzt allgemein verfügbar.
 
-- Die Transitkonnektivität zwischen den virtuellen Netzwerken unter Virtual WAN Standard wird ermöglicht, weil auf jedem virtuellen Hub ein Router vorhanden ist. Für jeden Router eines virtuellen Hubs wird ein aggregierter Durchsatz von bis zu 50 GBit/s unterstützt.
+- Die Transitkonnektivität zwischen den virtuellen Netzwerken in Virtual WAN Standard wird dadurch ermöglicht, dass in jedem virtuellen Hub ein Router vorhanden ist. Für jeden Router eines virtuellen Hubs wird ein aggregierter Durchsatz von bis zu 50 GBit/s unterstützt.
 
 - Mit einem einzelnen Virtual WAN-Hub können bis zu 2.000 VM-Workloads aus allen VNETs verbunden werden.
 
@@ -142,7 +144,7 @@ _Abbildung 1: Virtual WAN-Netzwerktopologie._
 
 - ExpressRoute-Leitungen mit dem Premium-Add-On sind erforderlich. Sie sollten von einem ExpressRoute Global Reach-Standort stammen.
 
-- Azure Firewall Manager, der jetzt in der GA vorliegt, ermöglicht das Bereitstellen von Azure Firewall im Virtual WAN-Hub.
+- Azure Firewall Manager (jetzt allgemein verfügbar) ermöglicht das Bereitstellen von Azure Firewall im Virtual WAN-Hub.
 
 - Virtual WAN-Hub-to-Hub-Datenverkehr über Azure Firewall wird derzeit nicht unterstützt. Verwenden Sie als Alternative die nativen Routingfunktionen für die Hub-zu-Hub-Übertragung in Virtual WAN. Verwenden Sie Netzwerksicherheitsgruppen (NSGs), um den Datenverkehr von virtuellen Netzwerken zwischen Hubs zuzulassen oder zu blockieren.
 
@@ -163,7 +165,7 @@ _Abbildung 1: Virtual WAN-Netzwerktopologie._
 
 - Verbinden Sie Zweigstellen und Remotestandorte über ein Site-to-Site-VPN mit dem nächstgelegenen Virtual WAN-Hub, oder aktivieren Sie die Zweigstellenkonnektivität mit Virtual WAN über eine SD-WAN-Partnerlösung.
 
-- Verbinden Sie Benutzer mit dem Virtual WAN-Hub über ein Point-to-Site-VPN.
+- Verbinden Sie Benutzer über ein Point-to-Site-VPN mit dem Virtual WAN-Hub.
 
 - Befolgen Sie das Prinzip „Datenverkehr in Azure verbleibt in Azure“, sodass die Kommunikation über Ressourcen in Azure über das Microsoft-Backbone-Netzwerk erfolgt, auch wenn sich die Ressourcen in unterschiedlichen Regionen befinden.
 
@@ -213,13 +215,13 @@ _Abbildung 4: Eine herkömmliche Azure-Netzwerktopologie._
 
 - Über ExpressRoute-Leitungen können Verbindungen zwischen virtuellen Netzwerken innerhalb derselben geopolitischen Region hergestellt werden; auch das Premium-Add-On kann für die Konnektivität zwischen geopolitischen Regionen verwendet werden. Beachten Sie Folgendes:
 
-  - Datenverkehr zwischen Netzwerken kann eine längere Wartezeit zur Folge haben, da Datenverkehr die MSEE-Router (Microsoft Enterprise Edge) mühsam durchlaufen muss.
+  - Bei Datenverkehr zwischen Netzwerken kann es zu einer höheren Latenz kommen, da der Datenverkehr die MSEE-Router (Microsoft Enterprise Edge) durchlaufen muss.
 
   - Die Bandbreite ist auf die ExpressRoute-Gateway-SKU beschränkt.
 
   - Sie müssen weiterhin UDRs bereitstellen und verwalten, wenn Sie Datenverkehr zwischen virtuellen Netzwerken untersuchen und protokollieren müssen.
 
-- VPN-Gateways mit BGP (Border Gateway Protocol) sind innerhalb von Azure und lokal transitiv, werden jedoch nicht über ExpressRoute-Gateways übertragen.
+- VPN-Gateways mit BGP (Border Gateway Protocol) sind innerhalb von Azure und lokal transitiv, verwenden für die Übertragung jedoch keine ExpressRoute-Gateways.
 
 - Wenn mehrere ExpressRoute-Leitungen mit demselben virtuellen Netzwerk verbunden sind, muss mit Verbindungsgewichtungen und BGP-Techniken ein optimaler Pfad für den Datenverkehr zwischen lokalen Standorten und Azure sichergestellt werden. Weitere Informationen finden Sie unter [Optimieren von ExpressRoute-Routing](/azure/expressroute/expressroute-optimize-routing).
 
@@ -229,7 +231,7 @@ _Abbildung 4: Eine herkömmliche Azure-Netzwerktopologie._
 
 - Während die maximale Anzahl von Peeringverbindungen zwischen virtuellen Netzwerken pro virtuellem Netzwerk 500 beträgt, beläuft sich die maximale Anzahl von Routen, die von Azure zu lokalen Standorten über privates ExpressRoute-Peering angekündigt werden können, auf 200.
 
-- Der maximale aggregierte Durchsatz eines VPN-Gateways beträgt 10 GBit/s. Es werden bis zu 30 Standort-zu-Standort- oder Netzwerk-zu-Netzwerk-Tunnel unterstützt.
+- Der maximale aggregierte Durchsatz eines VPN-Gateways beträgt 10 GBit/s. Es werden bis zu 30 Tunnel zwischen Standorten oder Netzwerken unterstützt.
 
 **Entwurfsempfehlungen:**
 
@@ -350,7 +352,7 @@ Aufbauen auf den vorigen Abschnitten zur Konnektivität werden in diesem Abschni
 
   - Die Einschleusung von virtuellen Netzwerken ermöglicht dedizierte private Bereitstellungen für unterstützte Dienste. Der Datenverkehr auf der Verwaltungsebene fließt jedoch über öffentliche IP-Adressen.
 
-  - [Private Link](/azure/private-link/private-endpoint-overview#private-link-resource) bietet über private IP-Adressen dedizierten Zugriff auf Azure PaaS-Instanzen bzw. benutzerdefinierte Dienste hinter einem Azure Load Balancer-Standard.
+  - [Private Link](/azure/private-link/private-endpoint-overview#private-link-resource) bietet über private IP-Adressen dedizierten Zugriff auf Azure-PaaS-Instanzen bzw. benutzerdefinierte Dienste hinter einer Azure Load Balancer-Instanz mit der Ebene Standard.
 
   - VNET-Dienstendpunkte bieten aus ausgewählten Subnetzen Zugriff auf der Dienstebene auf ausgewählte PaaS-Dienste.
 
@@ -382,7 +384,7 @@ In diesem Abschnitt werden empfohlene Konnektivitätsmodelle für die eingehende
 
 **Überlegungen zum Entwurf:**
 
-- Native Azure-Netzwerksicherheitsdienste wie Azure Firewall, Azure Web Application Firewall (WAF) auf Azure Application Gateway und Azure Front Door Service sind vollständig verwaltete Dienste. Sie verursachen also keine Betriebs- und Verwaltungskosten im Zusammenhang mit Infrastrukturbereitstellungen, die bei der Skalierung komplex werden können.
+- Für Azure native Netzwerksicherheitsdienste wie Azure Firewall, Azure Web Application Firewall (WAF) für Azure Application Gateway und Azure Front Door sind vollständig verwaltete Dienste. Sie verursachen also keine Betriebs- und Verwaltungskosten im Zusammenhang mit Infrastrukturbereitstellungen, die bei der Skalierung komplex werden können.
 
 - Die Architektur auf Unternehmensebene ist vollständig kompatibel mit Partner-NVAs, wenn Ihre Organisation die Verwendung von NVAs bevorzugt oder native Dienste den konkreten Anforderungen Ihrer Organisation nicht gerecht werden.
 
@@ -396,7 +398,7 @@ In diesem Abschnitt werden empfohlene Konnektivitätsmodelle für die eingehende
 
   - Filtern von Ost-West-Datenverkehr (falls von Ihrer Organisation gefordert)
 
-- Verwenden Sie Firewall Manager mit Virtual WAN, um Azure-Firewalls für Virtual WAN-Hubs oder in virtuellen Netzwerken im Hub bereitzustellen und zu verwalten. Firewall Manager liegt jetzt sowohl für Virtual WAN als auch für normale virtuelle Netzwerke in der GA vor.
+- Verwenden Sie Firewall Manager mit Virtual WAN, um Azure-Firewalls für Virtual WAN-Hubs oder in virtuellen Netzwerken im Hub bereitzustellen und zu verwalten. Firewall Manager ist jetzt sowohl für Virtual WAN als auch für normale virtuelle Netzwerke allgemein verfügbar.
 
 - Erstellen Sie eine globale Azure Firewall-Richtlinie, um den Sicherheitsstatus in der globalen Netzwerkumgebung zu steuern, und weisen Sie sie allen Azure Firewall-Instanzen zu. Erfüllen Sie anhand präziser Richtlinien die Anforderungen bestimmter Regionen, indem Sie inkrementelle Firewall-Richtlinien über die rollenbasierte Zugriffssteuerung an lokale Sicherheitsteams delegieren.
 
@@ -404,9 +406,9 @@ In diesem Abschnitt werden empfohlene Konnektivitätsmodelle für die eingehende
 
 - Verwenden Sie WAF in einem virtuellen Netzwerk in einer Zielzonen zum Schützen eingehenden HTTP/S-Datenverkehrs aus dem Internet.
 
-- Verwenden Sie Azure Front Door Service- und WAF-Richtlinien, um über Azure-Regionen hinweg globalen Schutz für eingehende HTTP/S-Verbindungen mit einer Zielzone bereitzustellen.
+- Verwenden Sie Azure Front Door- und WAF-Richtlinien, um über Azure-Regionen hinweg globalen Schutz für eingehende HTTP/S-Verbindungen mit einer Zielzone bereitzustellen.
 
-- Wenn Sie Azure Front Door Service und Azure Application Gateway zum Schutz von HTTP/S-Apps nutzen, verwenden Sie WAF-Richtlinien in Azure Front Door Service. Sperren Sie Azure Application Gateway, um nur Datenverkehr von Azure Front Door Service zu empfangen.
+- Wenn Sie Azure Front Door und Azure Application Gateway zum Schutz von HTTP/S-Apps nutzen, verwenden Sie WAF-Richtlinien in Azure Front Door. Sperren Sie Azure Application Gateway, um nur Datenverkehr von Azure Front Door zu empfangen.
 
 - Wenn Partner-NVAs zum Schützen und Filtern von Ost-West- oder Süd-Nord-Datenverkehr benötigt werden:
 
@@ -429,7 +431,7 @@ Dieser Abschnitt enthält wichtige Empfehlungen zum Bereitstellen von internen u
 
 - Azure Application Gateway ermöglicht die sichere Bereitstellung von HTTP/S-Apps auf regionaler Ebene.
 
-- Azure Front Door Service ermöglicht die sichere Bereitstellung von hochverfügbaren HTTP/S-Apps über Azure-Regionen hinweg.
+- Front Door ermöglicht die sichere Bereitstellung von hochverfügbaren HTTP/S-Apps in mehreren Azure-Regionen.
 
 - Azure Traffic Manager ermöglicht die Bereitstellung von globalen Apps.
 
@@ -445,9 +447,9 @@ Dieser Abschnitt enthält wichtige Empfehlungen zum Bereitstellen von internen u
 
 - Verwenden Sie für alle öffentlichen IP-Adressen in einer Zielzone einen DDoS-Standardschutzplan.
 
-- Verwenden Sie Azure Front Door Service mit WAF-Richtlinien, um globale HTTP/S-Apps, die sich über Azure-Regionen erstrecken, bereitzustellen und zu schützen.
+- Verwenden Sie Azure Front Door mit WAF-Richtlinien, um globale HTTP/S-Apps, die mehrere Azure-Regionen umfassen, bereitzustellen und zu schützen.
 
-- Wenn Sie Azure Front Door Service und Application Gateway zum Schutz von HTTP/S-Apps nutzen, verwenden Sie WAF-Richtlinien in Azure Front Door Service. Sperren Sie Application Gateway, um nur Datenverkehr von Azure Front Door Service zu empfangen.
+- Wenn Sie Front Door und Application Gateway zum Schutz von HTTP/S-Apps nutzen, verwenden Sie WAF-Richtlinien in Front Door. Sperren Sie Application Gateway, um nur Datenverkehr von Front Door zu empfangen.
 
 - Mithilfe von Traffic Manager können Sie globale Apps bereitstellen, die andere Protokolle als HTTP/S umfassen.
 
@@ -463,19 +465,19 @@ In diesem Abschnitt werden wichtige Empfehlungen für die Bereitstellung höchst
 
 - Netzwerksicherheitsgruppen können Azure-Diensttags verwenden, um die Konnektivität mit Azure PaaS-Diensten zu ermöglichen.
 
-- App-Sicherheitsgruppen bieten keinen Schutz zwischen virtuellen Netzwerken.
+- Anwendungssicherheitsgruppen sind nicht netzwerkübergreifend und bieten auch keinen Schutz für mehrere virtuelle Netzwerke.
 
 - NSG-Datenflussprotokolle werden nun durch Azure Resource Manager-Vorlagen unterstützt.
 
 **Entwurfsempfehlungen:**
 
-- Delegieren Sie die Subnetzerstellung an den Zielzonenbesitzer. Dadurch kann dieser festlegen, wie Workloads über Subnetze segmentiert werden (z. B. ein einziges großes Subnetz, mehrschichtige App oder in das Netzwerk integrierte App). Das Plattformteam kann mithilfe von Azure Policy sicherstellen, dass Subnetzen mit Richtlinien vom Typ „Immer verweigern“ immer ein NSG mit bestimmten Regeln (z. B. eingehenden SSH oder RDP aus dem Internet verweigern oder Datenverkehr zwischen Zielzonen zulassen/blockieren) zugeordnet ist.
+- Delegieren Sie die Subnetzerstellung an den Zielzonenbesitzer. Dadurch kann dieser festlegen, wie Workloads über Subnetze segmentiert werden (z. B. ein einziges großes Subnetz, mehrschichtige Anwendung oder in das Netzwerk integrierte Anwendung). Das Plattformteam kann mithilfe von Azure Policy sicherstellen, dass Subnetzen mit Richtlinien vom Typ „Immer verweigern“ immer ein NSG mit bestimmten Regeln (z. B. eingehenden SSH oder RDP aus dem Internet verweigern oder Datenverkehr zwischen Zielzonen zulassen/blockieren) zugeordnet ist.
 
 - Verwenden Sie NSGs, um den subnetzübergreifenden Datenverkehr sowie den plattformübergreifenden Ost-West-Datenverkehr (Datenverkehr zwischen Zielzonen) zu schützen.
 
-- Das App-Team muss mit App-Sicherheitsgruppen auf Subnetzebenen-NSGs mehrschichtige VMs in der Zielzone schützen.
+- Das Anwendungsteam sollte mithilfe von Anwendungssicherheitsgruppen für die NSGs auf Subnetzebene mehrschichtige VMs in der Zielzone schützen.
 
-- Verwenden Sie NSGs und App-Sicherheitsgruppen zum Mikrosegmentieren von Datenverkehr in der Zielzone, filtern Sie Datenverkehrsströme nach Möglichkeit nicht mit einer zentralen NVA.
+- Verwenden Sie NSGs und Anwendungssicherheitsgruppen zum Mikrosegmentieren von Datenverkehr in der Zielzone, und filtern Sie Datenverkehr nach Möglichkeit nicht mit einem zentralen NVA.
 
 - Aktivieren Sie NSG-Datenflussprotokolle und speisen Sie diese in Traffic Analytics ein, um Erkenntnisse zu internen und externen Datenverkehrsflüssen zu gewinnen.
 
@@ -495,11 +497,11 @@ In diesem Abschnitt werden wichtige Empfehlungen zum Einrichten der Netzwerkvers
 
 - Bei Verwendung von ExpressRoute mit privatem Peering wird Datenverkehr derzeit nicht verschlüsselt.
 
-- Konfigurieren einer Site-to-Site-VPN-Verbindung über privates ExpressRoute-Peering befindet sich jetzt in der [Vorschauphase](/azure/vpn-gateway/site-to-site-vpn-private-peering).
+- Das Konfigurieren einer Site-to-Site-VPN-Verbindung über privates ExpressRoute-Peering befindet sich jetzt in der [Vorschau](/azure/vpn-gateway/site-to-site-vpn-private-peering).
 
 - Sie können die Verschlüsselung [Media Access Control Security (MACsec)](/azure/expressroute/expressroute-howto-MACsec) auf ExpressRoute Direct anwenden, um eine Netzwerkverschlüsselung zu erreichen.
 
-- Wenn Azure-Datenverkehr zwischen Rechenzentren (außerhalb physischer Grenzen, die nicht von Microsoft oder im Auftrag von Microsoft kontrolliert werden) bewegt wird, wird auf der zugrunde liegenden Netzwerkhardware eine [MACsec-Verschlüsselung der Sicherungsschicht](/azure/security/fundamentals/encryption-overview#encryption-of-data-in-transit) verwendet. Dies gilt für VNET-Peeringdatenverkehr.
+- Wenn Azure-Datenverkehr zwischen Rechenzentren (außerhalb physischer Grenzen, die nicht von Microsoft oder im Auftrag von Microsoft kontrolliert werden) fließt, wird auf der zugrunde liegenden Netzwerkhardware eine [MACsec-Verschlüsselung für die Sicherungsschicht](/azure/security/fundamentals/encryption-overview#encryption-of-data-in-transit) verwendet. Dies gilt für VNET-Peeringdatenverkehr.
 
 **Entwurfsempfehlungen:**
 
@@ -519,7 +521,7 @@ _Abbildung 8: Verschlüsselungsabläufe._
   - Richten Sie mit Microsoft-Peering einen VPN-Tunnel über ExpressRoute ein.
   - Evaluieren Sie die Funktion zum Konfigurieren einer Site-to-Site-VPN-Verbindung über privates ExpressRoute-Peering ([in Vorschauphase](/azure/vpn-gateway/site-to-site-vpn-private-peering)).
 
-- Wenn Datenverkehr zwischen Azure-Regionen verschlüsselt werden muss, nutzen Sie globales VNet-Peering, um virtuelle Netzwerke regionsübergreifend zu verbinden.
+- Wenn Datenverkehr zwischen Azure-Regionen verschlüsselt werden muss, verwenden Sie globales VNet-Peering, um virtuelle Netzwerke regionsübergreifend zu verbinden.
 
 - Wenn native Azure-Lösungen (wie in den Datenflüssen `B` und `C` im Diagramm dargestellt) Ihren Anforderungen nicht entsprechen, verwenden Sie Partner-NVAs in Azure, um den Datenverkehr über das private ExpressRoute-Peering zu verschlüsseln.
 
@@ -531,7 +533,7 @@ In vielen Branchen muss für Organisationen Datenverkehr in Azure in einem Netzw
 
 <!-- docutune:ignore TAP -->
 
-- [Terminalzugangspunkt (Terminal Access Point, TAP) für virtuelle Netzwerke in Azure](/azure/virtual-network/virtual-network-tap-overview) ist als Vorschauversion verfügbar. Weitere Informationen zur Verfügbarkeit erhalten Sie bei `azurevnettap@microsoft.com`.
+- Der [Terminalzugangspunkt (Terminal Access Point, TAP) für Azure Virtual Network](/azure/virtual-network/virtual-network-tap-overview) befindet sich in der Vorschau. Weitere Informationen zur Verfügbarkeit erhalten Sie bei `azurevnettap@microsoft.com`.
 
 - Die Paketerfassung in Azure Network Watcher ist generell verfügbar, Erfassungen sind jedoch auf einen maximalen Zeitraum von fünf Stunden beschränkt.
 
@@ -541,7 +543,7 @@ Ziehen Sie als Alternative zum TAP für virtuelle Azure-Netzwerke die folgenden 
 
 - Verwenden Sie das Network Watcher-Paket trotz des beschränkten Erfassungszeitraums.
 
-- Evaluieren Sie, ob die neueste Version der NSG-Datenflussprotokolle die von Ihnen benötigte Detailtiefe bietet.
+- Überprüfen Sie, ob die neueste Version der NSG-Datenflussprotokolle die von Ihnen benötigte Detailtiefe bietet.
 
 - Verwenden Sie Partnerlösungen für Szenarios, die eine umfassende Paketuntersuchung erfordern.
 

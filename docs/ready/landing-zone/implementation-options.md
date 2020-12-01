@@ -7,12 +7,12 @@ ms.date: 07/07/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 14cd74e53a0b007c59b26abe4044111ee2add7d5
-ms.sourcegitcommit: 1b28a7c6e966c6e0b69304ebb4b11d218c1891e5
+ms.openlocfilehash: 980d714bc5394161dd064032fae4b3fa6ea579d6
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92253400"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997113"
 ---
 # <a name="landing-zone-implementation-options"></a>Implementierungsoptionen für Zielzonen
 
@@ -36,8 +36,8 @@ In der folgenden Tabelle werden einige der Implementierungsoptionen für Zielzon
 |---|---|---|---|---|
 | [Blaupause für die CAF-Migrationszielzone](./migrate-landing-zone.md) | Stellt die Grundlage für das Migrieren von Ressourcen mit geringem Risiko dar. | Klein anfangen | [Entwurfsprinzipien](./migrate-landing-zone.md#design-principles) | [Bereitstellen](./migrate-landing-zone.md) |
 | [CAF-Basisblaupause](./foundation-blueprint.md) | Hiermit werden die Tools hinzugefügt, die für den Einstieg in die Entwicklung einer Governance-Strategie mindestens erforderlich sind. | Klein anfangen | [Entwurfsprinzipien](./foundation-blueprint.md#design-principles) | [Bereitstellen](./foundation-blueprint.md) |
-| [CAF-Zielzonen auf Unternehmensniveau (Hybridkonnektivität mit vWan)](../enterprise-scale/index.md) | Stellt eine für Unternehmen geeignete Plattformgrundlage mit allen erforderlichen gemeinsamen Diensten zum Unterstützen des kompletten IT-Portfolios bereit, einschließlich Hybridkonnektivität (VWAN). | Unternehmensebene | [Entwurfsprinzipien](../enterprise-scale/design-principles.md) | [Bereitstellen](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/contoso/Readme.md) |
-| [CAF-Zielzonen auf Unternehmensniveau (Hybridkonnektivität mit „Hub-and-Spoke“)](../enterprise-scale/index.md) | Stellt eine für Unternehmen geeignete Plattformgrundlage mit allen erforderlichen gemeinsamen Diensten zum Unterstützen des kompletten IT-Portfolios bereit, einschließlich Hybridkonnektivität (Hub-and-Spoke). | Unternehmensebene | [Entwurfsprinzipien](../enterprise-scale/design-principles.md) | [Bereitstellen](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/adventureworks/README.md) |
+| [CAF-Zielzone auf Unternehmensniveau (Hybridkonnektivität mit Virtual WAN)](../enterprise-scale/index.md) | Stellt eine für Unternehmen geeignete Plattformgrundlage mit allen erforderlichen gemeinsamen Diensten zur Unterstützung des gesamten IT-Portfolios bereit, einschließlich Hybridkonnektivität (Virtual WAN) | Unternehmensebene | [Entwurfsprinzipien](../enterprise-scale/design-principles.md) | [Bereitstellen](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/contoso/Readme.md) |
+| [CAF-Zielzone auf Unternehmensniveau (Hybridkonnektivität mit Hub-and-Spoke-Architektur)](../enterprise-scale/index.md) | Stellt eine für Unternehmen geeignete Plattformgrundlage mit allen erforderlichen gemeinsamen Diensten zur Unterstützung des gesamten IT-Portfolios bereit, einschließlich Hybridkonnektivität (Hub-and-Spoke-Architektur) | Unternehmensebene | [Entwurfsprinzipien](../enterprise-scale/design-principles.md) | [Bereitstellen](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/adventureworks/README.md) |
 | [CAF-Zielzone auf Unternehmensebene](../enterprise-scale/index.md) | Stellt eine für Unternehmen geeignete Plattformgrundlage mit allen erforderlichen gemeinsamen Diensten zum Unterstützen des kompletten IT-Portfolios bereit, wobei die Konnektivität später bei Bedarf hinzugefügt werden kann. | Unternehmensebene | [Entwurfsprinzipien](../enterprise-scale/design-principles.md) | [Bereitstellen](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/wingtip/README.md) |
 | [CAF-Terraform-Module](./terraform-landing-zone.md) | Drittanbieter-Pfad für Betriebsmodelle mit mehreren Clouds. Dieser Pfad kann zunächst von Azure ausgehende Betriebsmodelle beschränken. | Klein anfangen | [Entwurfsprinzipien](./terraform-landing-zone.md#design-decisions) | [Bereitstellen](./terraform-landing-zone.md#customize-and-deploy-your-first-landing-zone) |
 | [Zielzonen von Partnern](./partner-landing-zone.md) | Partner, die Angebote anbieten, die sich an der Bereitschaftsmethodik des Cloud Adoption Framework orientieren, können ihre eigene angepasste Implementierungsoption bereitstellen. | Variable | [Entwurfsprinzipien](./partner-landing-zone.md) | [Einen Partner suchen](https://www.microsoft.com/azure/partners/adopt?filters=ready) |
@@ -47,8 +47,8 @@ In der folgenden Tabelle werden einige dieser Implementierungsoptionen aus einem
 | Implementierungsoption | Hub | Spoke | Bereitstellungstechnologie | Anweisungen zur Bereitstellung |
 |---|---|---|---|---|
 | [CAF-Zielzone (Cloud Adoption Framework) auf Unternehmensebene](../enterprise-scale/index.md) | Enthalten  | Enthalten | Azure Resource Manager-Vorlagen, Azure-Portal, Azure Policy und GitHub | [Bereitstellen](../enterprise-scale/implementation-guidelines.md) |
-| [Blaupause für die Zielzone der Cloud Adoption Framework-Migration](./migrate-landing-zone.md) | Refactoring erforderlich | Enthalten | Azure Resource Manager-Vorlagen, Azure-Portal und Azure Blueprints | [Bereitstellen](./migrate-landing-zone.md) |
-| [Terraform-Module für das Cloud Adoption Framework](./terraform-landing-zone.md)  | Im Modul für virtuelle Rechenzentren enthalten | Enthalten | Terraform | [Bereitstellen](./terraform-landing-zone.md#customize-and-deploy-your-first-landing-zone) |
+| [Blaupause für die CAF-Migrationszielzone](./migrate-landing-zone.md) | Refactoring erforderlich | Enthalten | Azure Resource Manager-Vorlagen, Azure-Portal und Azure Blueprints | [Bereitstellen](./migrate-landing-zone.md) |
+| [CAF-Terraform-Module](./terraform-landing-zone.md)  | Im Modul für virtuelle Rechenzentren enthalten | Enthalten | Terraform | [Bereitstellen](./terraform-landing-zone.md#customize-and-deploy-your-first-landing-zone) |
 
 ## <a name="next-steps"></a>Nächste Schritte
 

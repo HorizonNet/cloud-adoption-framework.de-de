@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: fasttrack-edit, AQC, setup
 ms.localizationpriority: high
-ms.openlocfilehash: d5c1bd2c96b7154956f37960c345d2a2009fa4bc
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: d188e053feaf3deba964c72e495c6f3987c47f75
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88885948"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995227"
 ---
 <!-- cSpell:ignore profx fsubscriptions fresource -->
 
@@ -163,7 +163,7 @@ Sie können Tags auch für viele andere Dinge verwenden. Sie werden häufig für
 
 - **Metadaten und Dokumentation**: Durch Anwenden eines Tags wie `ProjectOwner` können Administratoren problemlos Details zu den Ressourcen anzeigen, an denen sie arbeiten.
 - **Automatisierung:** Unter Umständen verfügen Sie über regelmäßig ausgeführte Skripts, die basierend auf einem Tagwert wie `ShutdownTime` oder `DeprovisionDate` eine Aktion durchführen können.
-- **Kostenoptimierung:** Sie können den Teams und Mitarbeitern, die für die Kosten verantwortlich sind, Ressourcen zuweisen. In der Azure-Kostenverwaltung und -Abrechnung können Sie das Kostenstellentag als Filter anwenden, um die Gebühren basierend auf der Nutzung eines Teams oder einer Abteilung zu melden.
+- **Kostenoptimierung:** Sie können den Teams und Mitarbeitern, die für die Kosten verantwortlich sind, Ressourcen zuweisen. In Azure Cost Management + Billing können Sie das Kostenstellentag als Filter anwenden, um die Gebühren basierend auf der Nutzung eines Teams oder einer Abteilung zu melden.
 
 Jede Ressource oder Ressourcengruppe kann maximal 50 Tagname-Wert-Paare aufweisen. Diese Einschränkung gilt nur für Tags, die direkt auf die Ressourcengruppe oder die Ressource angewendet werden.
 

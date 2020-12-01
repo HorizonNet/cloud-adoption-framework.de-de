@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: migrate
 ms.custom: fasttrack-new, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2abab02b5d73bd69b33c8124fb4500129e97e545
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 63f9d6997f1ab8c554a89fd6927408fc2b76a7b1
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712424"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94995957"
 ---
 # <a name="deploy-workloads-and-assets-infrastructure-apps-and-data"></a>Bereitstellen von Workloads und Assets (Infrastruktur, Apps und Daten)
 
@@ -75,10 +75,11 @@ Wenn Sie Azure Database Migration Service zum ersten Mal verwenden, müssen Sie 
 
 ::: zone-end
 
+<!-- docutune:casing "Create Migration Service wizard" -->
 Nach der Registrierung des Ressourcenanbieters können Sie eine Azure Database Migration Service-Instanz erstellen.
 
 1. Wählen Sie **+ Ressource erstellen** aus, und suchen Sie im Marketplace nach **Azure Database Migration Service**.
-1. Schließen Sie den Assistenten „Migrationsdienst erstellen“ ab, und wählen Sie anschließend **Erstellen** aus.
+1. Schließen Sie den Assistenten „Migrationsdienst erstellen“ ab, und klicken Sie anschließend auf **Erstellen**.
 
 Der Dienst ist jetzt bereit, die unterstützten Quelldatenbanken auf Zielplattformen wie SQL Server, MySQL, PostgreSQL oder MongoDB zu migrieren.
 
@@ -112,14 +113,14 @@ Alternativ generiert der Migrations-Assistent eine Azure Resource Manager-Vorl
 
 Zu Beginn des Migrationsprozesses benötigt der Migration Assistant wichtige Informationen zu Ihrem Azure-Konto.
 
-Melden Sie sich zunächst bei Ihrem Azure-Konto an, und verknüpfen Sie die Migration Assistant-Sitzung über einen eindeutigen Code mit Ihrem Konto. Wählen Sie anschließend das Abonnement, die Ressourcengruppe und den Domänennamen der Website aus. Sie können einen neuen Azure App Service-Plan zum Hosten der App erstellen oder einen vorhandenen Plan auswählen. Die Auswahl wirkt sich auf die geografische Region aus, in der Ihre App gehostet wird. Sie haben zudem die Möglichkeit, diesen Migrationsvorgang einem vorhandenen Azure Migration-Projekt zuzuordnen. Abschließend können Sie die Datenbankeinrichtung entweder überspringen oder eine Hybridverbindung einrichten, um eine Datenbankverbindung zu ermöglichen.
+Melden Sie sich zunächst bei Ihrem Azure-Konto an, und verknüpfen Sie die Migration Assistant-Sitzung über einen eindeutigen Code mit Ihrem Konto. Wählen Sie anschließend das Abonnement, die Ressourcengruppe und den Domänennamen der Website aus. Sie können einen neuen Azure App Service-Plan zum Hosten der Web-App erstellen oder einen vorhandenen Plan auswählen. Die Auswahl wirkt sich darauf aus, in welcher geografischen Region Ihre Web-App gehostet wird. Sie haben zudem die Möglichkeit, diesen Migrationsvorgang einem vorhandenen Azure Migration-Projekt zuzuordnen. Abschließend können Sie die Datenbankeinrichtung entweder überspringen oder eine Hybridverbindung einrichten, um eine Datenbankverbindung zu ermöglichen.
 
 Nachdem der Migrations-Assistent Ihre Angaben erfasst und überprüft hat, werden die benötigten Azure App Service-Ressourcen in der ausgewählten Region und Ressourcengruppe erstellt. Er komprimiert die Quelldateien der Web-App und verwendet die Azure App Service-Bereitstellungs-API, um sie bereitzustellen. Zuletzt werden Sie bei optionalen Schritten unterstützt, wie etwa dem Einrichten einer Hybridverbindung.
 
 Nachdem die App erfolgreich migriert wurde, können weitere Aufgaben erforderlich sein. Dazu kann Folgendes gehören:
 
 - Manuelles Verschieben von Anwendungseinstellungen und Verbindungszeichenfolgen in der Datei „web.config“ zu Azure App Service
-- Migrieren von Daten von einer lokalen SQL Server-Instanz zu einer Azure SQL-Datenbank
+- Migrieren von Daten aus einer lokalen SQL Server-Instanz zu einer Azure SQL-Datenbank-Instanz
 - Einrichten eines SSL-Zertifikats
 - Einrichten von benutzerdefinierten Domänennamen
 - Einrichten von Berechtigungen in Azure Active Directory
@@ -128,13 +129,13 @@ Sie können auch den Azure App Service-Hostingplan und andere Einstellungen wi
 
 Weitere Informationen finden Sie unter:
 
-[Migrieren von ASP.NET-Apps zu Azure](/learn/paths/migrate-dotnet-apps-azure)
+[Migrieren von ASP.NET-Anwendungen zu Azure](/learn/paths/migrate-dotnet-apps-azure)
 
 ### <a name="data-migration-assistant"></a>Datenmigrations-Assistent
 
 Der Datenmigrations-Assistent (DMA) hilft Ihnen beim Upgrade auf eine moderne Datenplattform, indem er Kompatibilitätsprobleme erkennt, die die Datenbankfunktionalität in Ihrer neuen Version von SQL Server oder Microsoft Azure SQL-Datenbank beeinträchtigen können. DMA empfiehlt Leistungs- und Zuverlässigkeitsverbesserungen für Ihre Zielumgebung und ermöglicht es Ihnen, Ihr Schema, Ihre Daten und abhängige Objekte vom Quellserver auf Ihren Zielserver zu verschieben.
 
-Der Datenmigrations-Assistent ist in Azure Migrate integriert, sodass Sie den gesamten Bewertungsfortschritt im Azure Migrate-Dashboard verfolgen können. Starten Sie DMA aus Azure Migrate, indem Sie das Azure Migrate: Datenbank-Bewertungstool hinzufügen, und fügen Sie Ihre Datenbankbewertung zu Azure Migrate hinzu, indem Sie die Schaltfläche „In Azure Migrate hochladen“ in DMA auswählen.
+Der Datenmigrations-Assistent ist in Azure Migrate integriert, sodass Sie den gesamten Bewertungsfortschritt im Azure Migrate-Dashboard verfolgen können. Starten Sie den Datenmigrations-Assistent über Azure Migrate, indem Sie das Tool „Azure Migrate: database assessment“ (Azure Migrate: Datenbankbewertung) hinzufügen, und fügen Sie dann Ihre Datenbankbewertung zu Azure Migrate hinzu, indem Sie im Datenmigrations-Assistenten auf **In Azure Migrate hochladen** klicken.
 
 > [!NOTE]
 > Für große Migrationen (in Bezug auf Anzahl und Größe der Datenbanken) empfehlen wir Ihnen, Azure Database Migration Service zu verwenden, mit dem Datenbanken im großen Maßstab migriert werden können.
@@ -160,7 +161,7 @@ Weitere Informationen und ausführliche Verwendungsschritte finden Sie unter:
 
 ### <a name="sql-server-migration-assistant"></a>SQL Server Migration Assistant
 
-Microsoft SQL Server Migration Assistant (SSMA) ist ein Tool zur Automatisierung der Datenbankmigration von Microsoft Access, DB2, MySQL, Oracle und SAP ASE zu SQL Server. Das allgemeine Konzept besteht in der Erfassung, Bewertung und Überprüfung mit diesen Tools. Aufgrund der unterschiedlichen Prozesse für die einzelnen Quellsysteme empfehlen wir Ihnen, die detaillierte [Dokumentation zu SQL Server Migration Assistant](/sql/ssma/sql-server-migration-assistant) zu lesen.
+Microsoft SQL Server Migration Assistant (SSMA) ist ein Tool für die Automatisierung der Datenbankmigration von Microsoft Access, DB2, MySQL, Oracle und SAP ASE zu SQL Server. Das allgemeine Konzept besteht in der Erfassung, Bewertung und Überprüfung mit diesen Tools. Aufgrund der unterschiedlichen Prozesse für die einzelnen Quellsysteme empfehlen wir Ihnen, die detaillierte [Dokumentation zu SQL Server Migration Assistant](/sql/ssma/sql-server-migration-assistant) zu lesen.
 
 Weitere Informationen finden Sie unter
 

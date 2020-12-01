@@ -9,15 +9,13 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: b30aa8ab692f9cb88302075d42d70af405c4dd94
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: fa57d16b874c32fda3fc874e82d32c0e1a42c708
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88572271"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880890"
 ---
-<!-- cSpell:ignore ITSMC -->
-
 # <a name="enhanced-management-baseline-in-azure"></a>Optimierte Verwaltungsbaseline in Azure
 
 In den ersten drei Disziplinen der Cloudverwaltung wird eine Verwaltungsbaseline beschrieben. In den vorangehenden Artikeln dieses Leitfadens wurde ein MVP (Minimum Viable Product) für Cloudverwaltungsdienste erläutert, das als Verwaltungsbaseline bezeichnet wird. Dieser Artikel beschreibt einige allgemeine Verbesserungen der Baseline.
@@ -45,6 +43,8 @@ Möglicherweise ist jedoch eine größere Verpflichtung für das Unternehmen erf
 
 Workload- und Plattformbetrieb erfordern Änderungen von Entwurfs- und Architekturprinzipien. Diese Änderungen können Zeit in Anspruch nehmen und zu erhöhten Betriebskosten führen. Um die Anzahl der Workloads zu reduzieren, die solche Investitionen erfordern, kann eine optimierte Verwaltungsbaseline eine ausreichende Verbesserung zur Erfüllung geschäftlicher Verpflichtungen bewirken.
 
+<!-- docutune:casing "IT Service Management" "IT Service Management Connector" ITSMC "Free and Standard" -->
+
 In dieser Tabelle werden einige Prozesse, Tools und potenzielle Auswirkungen beschrieben, die in den optimierten Verwaltungsbaselines der Kunden üblich sind.
 
 | Disziplin  | Prozess  | Tool | Potenzielle Auswirkung | Weitere Informationen |
@@ -54,7 +54,7 @@ In dieser Tabelle werden einige Prozesse, Tools und potenzielle Auswirkungen bes
 | Betriebsbezogene Compliance | Betriebsautomatisierung | Azure-Automatisierung | Durch automatisierte betriebsbezogene Compliance können Sie auf Änderungen schneller und präziser reagieren. | In den folgenden Abschnitten finden Sie weitere Informationen |
 | Betriebsbezogene Compliance | Leistungsautomatisierung | Azure-Automatisierung | Automatisieren Sie die betriebliche Compliance mit Leistungserwartungen, um allgemeine ressourcenspezifische Probleme mit der Skalierung oder Größenanpassung zu lösen. | In den folgenden Abschnitten finden Sie weitere Informationen |
 | Betriebsbezogene Compliance | Multicloudvorgänge | Azure Automation – Hybrid Runbook Worker | Automatisieren Sie Vorgänge in mehreren Clouds. | [Übersicht über Hybrid Runbook Worker](/azure/automation/automation-hybrid-runbook-worker) |
-| Betriebsbezogene Compliance | Gastautomatisierung |  Konfigurieren des gewünschten Zustands (Desired State Configuration, DSC) | Durch die codebasierte Konfiguration von Gastbetriebssystemen können Fehler und Konfigurationsabweichungen verringert werden. | [Übersicht über DSC](/powershell/scripting/dsc/overview/overview) |
+| Betriebsbezogene Compliance | Gastautomatisierung | Konfigurieren des gewünschten Zustands (Desired State Configuration, DSC) | Durch die codebasierte Konfiguration von Gastbetriebssystemen können Fehler und Konfigurationsabweichungen verringert werden. | [Übersicht über DSC](/powershell/scripting/dsc/overview/overview) |
 | Schutz und Wiederherstellung | Benachrichtigung bei Sicherheitsverletzungen | Azure Security Center | Durch Erweitern des Schutzes können Wiederherstellungstrigger bei Sicherheitsverletzungen einbezogen werden. | In den folgenden Abschnitten finden Sie weitere Informationen |
 
 ::: zone target="docs"

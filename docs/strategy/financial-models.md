@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
 ms.custom: governance
-ms.openlocfilehash: 42e1e6ef830aa0f5bdc9eadf6346f2a360c19e53
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 5280611c88caa3aa2ebb70f615eae8e7b5ff73e4
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88877057"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94994444"
 ---
 # <a name="create-a-financial-model-for-cloud-transformation"></a>Erstellen eines Finanzmodells für die Cloudtransformation
 
@@ -57,7 +57,7 @@ Informationen zu Abschreibungen erhalten Sie bei Ihrem CFO bzw. von Ihrer Finanz
 
 Wenn beim Erwerb einer Ressource Kapital investiert wird, kann diese Investition für finanzielle oder steuerliche Zwecke genutzt werden, um sich für die zu erwartende Lebensdauer der Ressource Vorteile zu verschaffen. Einige Unternehmen betrachten Abschreibungen als Steuervorteil. Andere sehen sie als zwingende, ständige Ausgaben an, die anderen wiederkehrenden Ausgaben im IT-Jahresbudget ähneln.
 
-Wenden Sie sich an Ihre Finanzabteilung, um zu ermitteln, ob ein Verzicht auf Abschreibungen möglich ist und sich dadurch eine positive Auswirkung auf die Kostendeltawerte ergibt.
+Wenden Sie sich an Ihre Finanzabteilung, um zu ermitteln, ob ein Verzicht auf Abschreibungen möglich ist und sich dadurch eine positive Auswirkung auf das Kostendelta ergibt.
 
 ### <a name="physical-asset-recovery"></a>Kostendeckung für physische Ressourcen
 

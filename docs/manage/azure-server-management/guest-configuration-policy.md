@@ -1,5 +1,5 @@
 ---
-title: Gastkonfigurationsrichtlinie
+title: 'Azure Policy: Gastkonfigurationserweiterung'
 description: Verwenden Sie das Framework für die Cloudeinführung für Azure, um zu erfahren, wie Sie mit der Erweiterung für die Gastkonfiguration von Azure Policy Konfigurationseinstellungen eines virtuellen Azure-Computers überprüfen.
 author: BrianBlanchard
 ms.author: brblanch
@@ -7,25 +7,25 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 63e50e0cec7066d92474362cec249a0536b002a6
-ms.sourcegitcommit: 8b5fdb68127c24133429b4288f6bf9004a1d1253
+ms.openlocfilehash: fa9fde30b2c2a015f090523a7cc92b3337afd47a
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88848107"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880482"
 ---
-# <a name="guest-configuration-policy"></a>Gastkonfigurationsrichtlinie
+# <a name="azure-policy-guest-configuration-extension"></a>Azure Policy: Gastkonfigurationserweiterung
 
-Sie können mit der Erweiterung für die [Gastkonfiguration](/azure/governance/policy/concepts/guest-configuration) von Azure Policy Konfigurationseinstellungen in einem virtuellen Computer überprüfen. Die Gastkonfiguration wird derzeit nur auf virtuellen Azure-Computern unterstützt.
+Sie können mit der [Gastkonfigurationserweiterung von Azure Policy](/azure/governance/policy/concepts/guest-configuration) Konfigurationseinstellungen in einer VM (virtueller Computer) überprüfen. Die Gastkonfiguration wird derzeit nur auf Azure-VMs unterstützt.
 
-Um die Liste der Gastkonfigurationsrichtlinien zu finden, suchen Sie nach der Kategorie „Gastkonfiguration“ auf der Portalseite von Azure Policy. Oder führen Sie dieses Cmdlet in einem PowerShell-Fenster aus, um die Liste zu finden:
+Suchen Sie auf der Azure Policy-Portalseite nach **Gastkonfiguration**, oder führen Sie das folgende Cmdlet in einem PowerShell-Fenster aus, um die Liste der Gastkonfigurationsrichtlinien zu finden:
 
 ```powershell
 Get-AzPolicySetDefinition | where-object {$_.Properties.metadata.category -eq "Guest Configuration"}
 ```
 
 > [!NOTE]
-> Die Funktionalität der Gastkonfiguration wird regelmäßig aktualisiert, um zusätzliche Richtliniensätze zu unterstützen. Überprüfen Sie regelmäßig auf neue unterstützte Richtlinien und bewerten Sie, ob sie nützlich sind.
+> Die Gastkonfigurationsfunktionalität wird regelmäßig aktualisiert, um weitere Richtlinien zu unterstützen. Überprüfen Sie regelmäßig auf neue unterstützte Richtlinien und bewerten Sie, ob sie nützlich sind.
 
 ## <a name="deployment"></a>Bereitstellung
 

@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: b3e806c6e0c926f60069bf308c29a54c0cf78c92
-ms.sourcegitcommit: 6aa14b15efc9bd351b75f8a3d7ebbac3d575275b
+ms.openlocfilehash: 4369a61349622def7733101f59db166fd175d29c
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92690052"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997096"
 ---
 # <a name="refactor-landing-zones"></a>Umgestalten von Zielzonen
 
@@ -36,7 +36,7 @@ Es bedurfte Jahre und erheblicher Anstrengungen, um den aktuellen Stand hinsicht
 ![Häufiges Hindernis: Zu frühes Handeln](../../_images/ready/blocker-act-too-soon.png)
 _Abbildung 2: Zu frühes Handeln als häufiges Hindernis_
 
-In der obigen Abbildung hat der Kunde ein Ziel von 100 Workloads, die in der Cloud ausgeführt werden. Dazu stellt der Kunde wahrscheinlich seine erste Workload und dann ungefähr die ersten zehn Workloads bereit, bevor er für die Veröffentlichung einer Workload in der Produktion bereit ist. Schließlich werden sie das Ziel des Einführungsplans erreichen und über ein robustes Portfolio in der Cloud verfügen. Das rote *x* in der Abbildung zeigt jedoch, wo Kunden häufig nicht weiterkommen. Das Warten auf eine vollständige Ausrichtung kann die erste Workload um Wochen, Monate oder sogar Jahre verzögern.
+In der obigen Abbildung hat der Kunde ein Ziel von 100 Workloads, die in der Cloud ausgeführt werden. Dazu stellt der Kunde wahrscheinlich seine erste Workload und dann ungefähr die ersten zehn Workloads bereit, bevor er für die Veröffentlichung einer Workload in der Produktion bereit ist. Schließlich werden sie das Ziel des Einführungsplans erreichen und über ein robustes Portfolio in der Cloud verfügen. Das rote _X_ in der Abbildung zeigt jedoch, wo Kunden häufig nicht weiterkommen. Das Warten auf eine vollständige Ausrichtung kann die erste Workload um Wochen, Monate oder sogar Jahre verzögern.
 
 ### <a name="blocker-acting-too-late"></a>Hindernis: Zu spätes Handeln
 
@@ -52,7 +52,7 @@ _Abbildung 3: Zu spätes Handeln als häufiges Hindernis_
 Um diese allgemeinen Hindernisse zu vermeiden, schlagen wir einen iterativen Ansatz vor, der auf einem gut strukturierten Plan zur Einführung der Cloud basiert, der die Lernmöglichkeiten maximiert und die Zeit bis zum Geschäftserfolg minimiert. Refactoring und parallele Anstrengungen sind für diesen Ansatz von entscheidender Bedeutung.
 
 > [!WARNING]
-> Einführungsteams, die mittelfristig (innerhalb von 24 Monaten) das Ziel haben, **mehr als 1.000 Assets (Apps, Infrastruktur oder Datenassets) in der Cloud zu hosten** , werden mit einem Refactoringansatz höchstwahrscheinlich nicht erfolgreich sein. Die Lernkurve ist zu steil und der Zeitrahmen zu knapp bemessen, um einen organischen Ansatz für die Erlangung von Qualifikationen zu ermöglichen. Ein vollständigerer Ausgangspunkt, der weniger Anpassungen erfordert, ist ein besserer Weg, um Ihre Ziele zu erreichen. Ihre Implementierungspartner werden Sie wahrscheinlich durch einen besseren Ansatz führen können.
+> Einführungsteams, die mittelfristig (innerhalb von 24 Monaten) das Ziel haben, **mehr als 1.000 Ressourcen (Anwendungen, Infrastrukturen oder Datenressourcen) in der Cloud zu hosten**, werden mit einem Refactoringansatz höchstwahrscheinlich nicht erfolgreich sein. Die Lernkurve ist zu steil und der Zeitrahmen zu knapp bemessen, um einen organischen Ansatz für die Erlangung von Qualifikationen zu ermöglichen. Ein vollständigerer Ausgangspunkt, der weniger Anpassungen erfordert, ist ein besserer Weg, um Ihre Ziele zu erreichen. Ihre Implementierungspartner werden Sie wahrscheinlich durch einen besseren Ansatz führen können.
 
 Der Rest dieses Artikels konzentriert sich auf einige wesentliche Einschränkungen, die einen Refactoringansatz bei gleichzeitiger Risikominimierung ermöglichen können.
 
@@ -103,12 +103,12 @@ In diesem Beispiel ermöglichen die oben genannten vereinbarten Bedingungen dem 
 
 ## <a name="meeting-long-term-requirements-while-refactoring"></a>Erfüllen langfristiger Anforderungen beim Refactoring
 
-Der Abschnitt der Ready-Methode über die Erweiterung Ihrer Zielzone wird Ihnen helfen, sich auf die längerfristigen Anforderungen einzustellen. Während das Cloudeinführungsteam gemäß seinem Einführungsplan voranschreitet, lesen Sie [Erweitern Ihrer Zielzone](../considerations/index.md) als Orientierungshilfe bei der Entscheidungsfindung und beim Refactoring entsprechend den wechselnden Anforderungen der verschiedenen Teams.
+Der Abschnitt der Ready-Methode über die Erweiterung Ihrer Zielzone wird Ihnen helfen, sich auf die längerfristigen Anforderungen einzustellen. Während das Cloudeinführungsteam gemäß seinem Einführungsplan voranschreitet, lesen Sie [Erweitern Ihrer Zielzone](../considerations/index.md) als Orientierungshilfe für die Entscheidungsfindung und das Refactoring entsprechend den wechselnden Anforderungen der verschiedenen Teams.
 
 ![Parallele Iteration der Zielzone](../../_images/ready/refactor-methodologies.png)
 _Abbildung 5: Weiterführende Methoden zur Unterstützung einer parallelen Iteration der Zielzone_
 
-Jeder Unterabschnitt von [Erweitern Ihrer Zielzone](../considerations/index.md) weist auf eine der in der obigen Abbildung dargestellten Ergänzungen hin. Über diese grundlegenden Ergänzungen hinaus werden die tiefer gehenden Methoden (z. B. Governance oder Verwaltung) dieses Frameworks dazu beitragen, über grundlegende Änderungen der Zielzone hinauszugehen und langfristige Regelungen umzusetzen.
+Jeder Unterabschnitt von [Erweitern Ihrer Zielzone](../considerations/index.md) ist einer der in der obigen Abbildung skizzierten Ergänzungen zugeordnet. Über diese grundlegenden Ergänzungen hinaus werden die tiefer gehenden Methoden (z. B. Governance oder Verwaltung) dieses Frameworks dazu beitragen, über grundlegende Änderungen der Zielzone hinauszugehen und langfristige Regelungen umzusetzen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

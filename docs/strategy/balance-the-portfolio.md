@@ -7,12 +7,12 @@ ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: strategy
-ms.openlocfilehash: 56ee70ac6d695159f2baeee50b49decd1cb08543
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 3dcf0e180deabab8657e44d483e379318aa7f5f8
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605106"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94996960"
 ---
 # <a name="balance-the-portfolio"></a>Ausgewogenheit des Portfolios
 
@@ -54,12 +54,12 @@ Im Interesse eines ausgewogenen Portfolios und um Entscheidungen zur Außerkraft
 - Ist der Endbenutzer-Datenverkehr konsistent, oder wächst er?
 - Wird diese Workload von jetzt an 12 Monate vom Unternehmen benötigt?
 
-Wenn die Antwort auf eine dieser Fragen „Nein“ ist, kann die Workload ein Kandidat für die Deaktivierung werden. Wenn das Deaktivierungspotenzial vom App-Besitzer bestätigt wird, ist es wohl nicht sinnvoll, die Workload zu migrieren. Hier kommen ein paar Qualifizierungsfragen auf:
+Wenn die Antwort auf eine dieser Fragen „Nein“ ist, kann die Workload ein Kandidat für die Deaktivierung werden. Wenn das Deaktivierungspotenzial vom Anwendungsbesitzer bestätigt wird, ist eine Migration der Workload womöglich nicht sinnvoll. Hier kommen ein paar Qualifizierungsfragen auf:
 
 - Kann ein Deaktivierungs- oder Außerkraftsetzungsplan für diese Workload eingerichtet werden?
 - Kann diese Workload vor dem Rechenzentrumsausstieg außer Betrieb gesetzt werden?
 
-Wenn die Antwort auf beide Fragen „Ja“ lautet, wäre es klug zu erwägen, diese Workload *nicht* zu migrieren. Dieser Ansatz wäre hilfreich, die Ziele der Kostenreduzierung und des Rechenzentrumsausstiegs zu erfüllen.
+Wenn die Antwort auf beide Fragen „Ja“ lautet, wäre es klug zu erwägen, diese Workload **nicht** zu migrieren. Dieser Ansatz wäre hilfreich, die Ziele der Kostenreduzierung und des Rechenzentrumsausstiegs zu erfüllen.
 
 Wenn die Antwort auf eine dieser Fragen „Nein“ ist, kann es ratsam sein, einen Plan zu erstellen, wie die Workload gehostet werden kann, bis sie außer Kraft gesetzt werden kann. Dieser Plan könnte das Verschieben der Ressourcen in ein kostengünstigeres oder alternatives Rechenzentrum beinhalten, was auch den Zielen der Kostenreduzierung und des Ausstiegs aus einem Rechenzentrum entsprechen würde.
 
@@ -85,7 +85,7 @@ Um die Komplexität zu reduzieren, sollten Sie einen herkömmlichen Ansatz zur P
   - Wenn eine Workload mit einer PaaS-Lösung ersetzt werden könnte, könnte sie vollständig aus dem Migrationsbacklog entfernt werden. Mindestens würde eine zusätzliche Sorgfaltspflicht, zwischen Zuweisen eines neuen Hosts und Ersetzen zu entscheiden, als Aufgabe hinzugefügt, die vorübergehend die Priorität der Workload im Migrationsbacklog verringern würde.
   - Wenn eine Workload einer Entwicklungsverbesserung unterzogen wird (oder werden sollte), passt sie am besten in ein Umgestaltungs-/Überarbeitungs-/Neuerstellungsmodell. Da Innovation und Migration unterschiedliche technische Fähigkeiten erfordern, sollten Anwendungen, die einem Umgestaltungs-/Überarbeitungs-/Neuerstellungsansatz entsprechen, über ein Innovationsbacklog statt über ein Migrationsbacklog verwaltet werden.
   - Wenn eine Workload Teil einer Downstreaminnovation ist, kann es sinnvoll sein, die Datenplattform umzugestalten, aber die Anwendungsschichten als Kandidaten für das Zuweisen eines neuen Hosts zu belassen. Eine geringfügige Umgestaltung der Datenplattform einer Workload kann oft in einem Migrations- oder Innovationsbacklog behandelt werden. Dieses Rationalisierungsergebnis kann zu detaillierteren Arbeitselementen im Backlog führen, aber ansonsten keine Prioritäten ändern.
-  - Wenn eine Workload nicht strategisch, aber mit modernen, cloudbasierten Anwendungshostingplattformen kompatibel ist, kann es möglicherweise besser sein, eine geringfügige Umgestaltung der Anwendung durchzuführen, um sie als moderne App bereitzustellen. Dies kann durch Verringern der gesamten IaaS- und BS-Lizenzierungsanforderungen der Migration zur Cloud zu den gesamten Einsparungen beitragen.
+  - Wenn eine Workload nicht strategisch, aber mit modernen, cloudbasierten Anwendungshostingplattformen kompatibel ist, kann es möglicherweise besser sein, ein geringfügiges Refactoring der Anwendung durchzuführen, um sie als moderne Anwendung bereitzustellen. Dies kann durch Verringern der gesamten IaaS- und BS-Lizenzierungsanforderungen der Migration zur Cloud zu den gesamten Einsparungen beitragen.
   - Wenn eine Workload eine Drittanbieteranwendung ist und die Daten dieser Workload nicht für die Verwendung in einer Downstreaminnovation eingeplant sind, kann es das Beste sein, sie als Option zum Zuweisen eines neuen Hosts im Backlog zu belassen.
 
 Die für die einzelnen Workloads durchgeführten qualitativen Analysen sollten sich nicht auf diese Fragen beschränken, sind jedoch wegweisend für eine Konversation, die das Behandeln der Komplexität eines nicht ausgewogenen Portfolios betrifft.
@@ -100,9 +100,9 @@ Diese unterschiedlichen Aktivitäten sollten auf zwei oder mehr Cloudeinführung
 
 **Zuweisen eines neuen Hosts:** Zum Zuweisen eines neuen Hosts müssen Teammitglieder infrastrukturkonzentrierte Änderungen implementieren. In der Regel werden mithilfe eines Tools wie Azure Site Recovery VMs oder andere Ressourcen zu Azure migriert. Für diese Arbeit sind Rechenzentrumsadministratoren oder IT-Implementierer gut geeignet. Das Cloudmigrationsteam ist so gut strukturiert, dass es diese Aufgabe auf hohem Niveau ausführt. Dies ist in den meisten Szenarien der schnellste Ansatz zum Migrieren vorhandener Ressourcen.
 
-**Refactoring:** Beim Umgestalten müssen Teammitglieder Quellcode ändern, die Architektur einer Anwendung ändern oder neue Clouddienste einführen. In der Regel würden für diese Aktivitäten Entwicklungstools wie Visual Studio und Bereitstellungspipelinetools wie Azure DevOps verwendet, um modernisierte Anwendungen erneut in Azure bereitzustellen. Für diese Arbeit sind Anwendungsentwicklungsrollen oder DevOps-Pipelineentwicklungsrollen gut geeignet. Das Cloudinnovationsteam ist für diese Aufgabe am besten strukturiert. Es kann länger dauern, bei diesem Ansatz vorhandene Ressourcen mit Cloudressourcen zu ersetzen, aber die Apps können cloudnative Funktionen nutzen.
+**Refactoring:** Beim Umgestalten müssen Teammitglieder Quellcode ändern, die Architektur einer Anwendung ändern oder neue Clouddienste einführen. In der Regel würden für diese Aktivitäten Entwicklungstools wie Visual Studio und Bereitstellungspipelinetools wie Azure DevOps verwendet, um modernisierte Anwendungen erneut in Azure bereitzustellen. Für diese Arbeit sind Anwendungsentwicklungsrollen oder DevOps-Pipelineentwicklungsrollen gut geeignet. Das Cloudinnovationsteam ist für diese Aufgabe am besten strukturiert. Es kann länger dauern, bei diesem Ansatz vorhandene Ressourcen mit Cloudressourcen zu ersetzen, aber die Anwendungen können cloudnative Funktionen nutzen.
 
-**Geringfügige Umgestaltung:** Einige Anwendungen können mit geringfügiger Umgestaltung auf Daten- oder Anwendungsebene aktualisiert werden. Dabei müssen Teammitglieder Daten für cloudbasierte Datenplattformen bereitstellen oder geringfügige Konfigurationsänderungen an der Anwendung vornehmen. Dies erfordert möglicherweise gewisse Unterstützung von fachlichen Ansprechpartnern für Daten- oder Anwendungsentwicklung. Allerdings ähnelt diese Arbeit der, die IT-Implementierer durchführen, wenn sie Drittanbieter-Apps bereitstellen. Diese Arbeit kann problemlos vom Cloudmigrationsteam oder Cloudstrategieteam ausgeführt werden. Diese Aktivität ist zwar nicht annähernd so schnell wie eine Migration mit Zuweisen eines neuen Hosts, benötigt jedoch weniger Zeit als Umgestaltungsaktivitäten.
+**Geringfügige Umgestaltung:** Einige Anwendungen können mit geringfügiger Umgestaltung auf Daten- oder Anwendungsebene aktualisiert werden. Dabei müssen Teammitglieder Daten für cloudbasierte Datenplattformen bereitstellen oder geringfügige Konfigurationsänderungen an der Anwendung vornehmen. Dies erfordert möglicherweise gewisse Unterstützung von fachlichen Ansprechpartnern für Daten- oder Anwendungsentwicklung. Allerdings ähnelt diese Arbeit der, die IT-Implementierer durchführen, wenn sie Drittanbieteranwendungen bereitstellen. Diese Arbeit kann problemlos vom Cloudmigrationsteam oder Cloudstrategieteam ausgeführt werden. Diese Aktivität ist zwar nicht annähernd so schnell wie eine Migration mit Zuweisen eines neuen Hosts, benötigt jedoch weniger Zeit als Umgestaltungsaktivitäten.
 
 Während der Migration sollten Aktivitäten wie oben beschrieben in drei Methoden aufgeteilt werden, und diese Aktivitäten werden vom entsprechenden Team in entsprechender Iteration ausgeführt. Obwohl Sie das Portfolio diversifizieren sollten, müssen Sie auch sicherstellen, dass der Aufwand sehr fokussiert und getrennt bleibt.
 

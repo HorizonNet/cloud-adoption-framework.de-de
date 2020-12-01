@@ -7,12 +7,12 @@ ms.date: 05/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 2aa6cd6c81dfa7f4d6719851622c75ab462031f4
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 8640ea8c6e9e346502382c329f506ab5b933b609
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713835"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997232"
 ---
 # <a name="improve-landing-zone-security"></a>Erhöhen der Sicherheit von Zielzonen
 

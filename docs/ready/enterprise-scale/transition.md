@@ -7,19 +7,21 @@ ms.date: 10/15/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.custom: csu
-ms.openlocfilehash: 928ba549faee14142aeb8bd12b796bdc3bf6307a
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.custom: csu, think-tank
+ms.openlocfilehash: d97bde1bb38d9d3a0050bcbc38b99f541316c170
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713920"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95447149"
 ---
-# <a name="transition-existing-azure-environments-to-enterprise-scale"></a>Übertragen bestehender Azure-Umgebungen auf Unternehmensniveau
+<!-- docutune:casing resourceType resourceTypes resourceId resourceIds -->
+
+# <a name="transition-existing-azure-environments-to-enterprise-scale"></a>Übertragen bestehender Azure-Umgebungen in eine Bereitstellung auf Unternehmensniveau
 
 Wir sind uns bewusst, dass die meisten Organisationen über einen bestehenden Fußabdruck in Azure, ein oder mehrere Abonnements und möglicherweise eine bestehende Struktur eigener Verwaltungsgruppen verfügen. Je nach ihren anfänglichen Geschäftsanforderungen und -szenarien wurden möglicherweise Azure-Ressourcen wie z. B. hybride Konnektivität (z. B. mit Site-to-Site-VPN und/oder ExpressRoute) bereitgestellt.
 
-Dieser Artikel hilft Organisationen, den richtigen Weg für die Übertragung bestehender Azure-Umgebung auf Unternehmensniveau zu finden. In diesem Artikel werden auch Überlegungen zur Verschiebung von Ressourcen in Azure (z. B. Verschieben eines Abonnements aus einer bestehenden Verwaltungsgruppe in eine andere Verwaltungsgruppe) beschrieben, die Ihnen bei der Bewertung und Planung der Übertragung Ihrer bestehenden Azure-Umgebung in Zielzonen auf Unternehmensniveau helfen.
+Dieser Artikel hilft Organisationen, den richtigen Weg für die Übertragung bestehender Azure-Umgebung auf Unternehmensebene zu finden. In diesem Artikel werden auch Überlegungen zur Verschiebung von Ressourcen in Azure (z. B. Verschieben eines Abonnements aus einer bestehenden Verwaltungsgruppe in eine andere Verwaltungsgruppe) beschrieben, die Ihnen bei der Bewertung und Planung der Übertragung Ihrer bestehenden Azure-Umgebung in Zielzonen auf Unternehmensniveau helfen.
 
 ## <a name="moving-resources-in-azure"></a>Verschieben von Ressourcen in Azure
 
@@ -38,9 +40,9 @@ Häufige Anwendungsfälle für das Verschieben von Abonnements sind das Organisi
 
 ### <a name="rbac-requirements"></a>RBAC-Anforderungen
 
-Um ein Abonnement vor einer Verschiebung zu bewerten, ist es wichtig, dass der Benutzer über die erforderlichen RBAC-Berechtigungen, z. B. als Eigentümer des Abonnements (direkte Rollenzuweisung) sowie die Schreibberechtigung für die Zielverwaltungsgruppe verfügt (integrierte Rollen, die dies unterstützen, sind „Besitzer“, „Mitwirkender“, „Verwaltungsgruppenmitwirkender“).
+Bei der Bewertung eines Abonnements vor einer Verschiebung ist wichtig, dass der Benutzer über die erforderlichen RBAC-Berechtigungen verfügt, z. B. als Besitzer des Abonnements (direkte Rollenzuweisung), sowie über Schreibberechtigung für die Zielverwaltungsgruppe (integrierte Rollen, die dies unterstützen, sind „Besitzer“, „Mitwirkender“ und „Verwaltungsgruppenmitwirkender“).
 
-Wenn der Benutzer Berechtigungen als „Besitzer“ für das Abonnement von einer vorhandenen Verwaltungsgruppe geerbt hat, kann das Abonnement nur in die Verwaltungsgruppe verschoben werden, für die dem Benutzer die Rolle „Besitzer“ zugewiesen wurde.
+Wenn der Benutzer die Berechtigungen der Rolle „Besitzer“ für das Abonnement von einer vorhandenen Verwaltungsgruppe geerbt hat, kann das Abonnement nur in die Verwaltungsgruppe verschoben werden, für die dem Benutzer die Rolle „Besitzer“ zugewiesen wurde.
 
 ### <a name="policy"></a>Richtlinie
 
@@ -60,7 +62,7 @@ Sobald die Abonnements in eine Verwaltungsgruppe mit vorhandener RBAC und besteh
 
 ## <a name="resource-move"></a>Ressourcenverschiebung
 
-Die primären Anwendungsfälle für die Durchführung einer Ressourcenverschiebung sind die Konsolidierung von Ressourcen in derselben Ressourcengruppe, wenn sie denselben Lebenszyklus aufweisen, oder die Verschiebung von Ressourcen in ein anderes Abonnement aufgrund von Kosten, Eigentumsverhältnissen oder RBAC-Anforderungen.
+Die primären Anwendungsfälle für eine Verschiebung von Ressourcen sind die Konsolidierung von Ressourcen in derselben Ressourcengruppe, wenn sie über den gleichen Lebenszyklus verfügen, oder die Verschiebung von Ressourcen in ein anderes Abonnement aufgrund von Kosten, Besitz oder RBAC-Anforderungen.
 
 Wenn Sie eine Ressourcenverschiebung durchführen, sind sowohl die Quell- als auch die Zielressourcengruppe während des Verschiebungsvorgangs gesperrt (diese Sperre wirkt sich nicht auf die Ressourcen in der Ressourcengruppe aus), d. h. Sie können Ressourcen in den Ressourcengruppen nicht hinzufügen, aktualisieren oder löschen. Durch das Verschieben einer Ressource wird der Speicherort der Ressource nicht geändert.
 

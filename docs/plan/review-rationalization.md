@@ -7,12 +7,12 @@ ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 113ecc375bfe76ed1772aca2f24b8fe37d5f8f17
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: e40a568f92276d3089ec2e8c1324710e82029245
+ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89605263"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997436"
 ---
 # <a name="review-rationalization-decisions"></a>Überprüfen der Rationalisierungsentscheidungen
 
@@ -42,7 +42,7 @@ Wenn die Antwort auf eine dieser Fragen „Ja“ lautet, sollte das Team erwäge
 
 ## <a name="migration-indicators"></a>Migrationsindikatoren
 
-Die Migration ist eine schnellere und kostengünstigere Methode zur Einführung der Cloud. Sie nutzt dabei aber keine Möglichkeiten zur Innovation aus. Bevor Sie in Innovationen investieren, beantworten Sie die folgenden Fragen. Sie können Ihnen dabei helfen zu bestimmen, ob ein Migrationsmodell für eine Workload besser anwendbar ist.
+Die Migration ist eine schnellere und kostengünstigere Methode zur Einführung der Cloud. Sie nutzt dabei aber keine Möglichkeiten zur Innovation aus. Bevor Sie in Innovationen investieren, beantworten Sie die folgenden Fragen. Diese unterstützen Sie dabei, zu ermitteln, ob sich ein Migrationsmodell für eine Workload eignet.
 
 - Ist der Quellcode, der in dieser Anwendung verwendet wird, stabil? Gehen Sie davon au, dass der Code während des gesamten Zeitraums dieses Releasezyklus stabil und unverändert bleibt?
 - Unterstützt diese Workload zum aktuellen Zeitpunkt Geschäftsprozesse in der Produktion? Ist dies während des gesamten Zeitraums dieses Releasezyklus der Fall?

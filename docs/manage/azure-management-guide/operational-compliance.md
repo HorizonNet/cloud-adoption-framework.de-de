@@ -9,13 +9,14 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 2064586262b4a0023b21fa63115245d24f346cf1
-ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
+ms.openlocfilehash: 2ea6f481fbbd8cea4f6ebc1c9c930a34eb840c04
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "93024503"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880703"
 ---
+<!-- docutune:casing "Update Management" "Guest Configuration" "Blueprints: Getting started" "Blueprints: Blueprint definitions" MMA -->
 <!-- cSpell:ignore WSUS -->
 
 # <a name="operational-compliance-in-azure"></a>Betriebsbezogene Compliance in Azure
@@ -30,7 +31,7 @@ In dieser Tabelle wird für jede Umgebung auf Unternehmensniveau der empfohlene 
 
 | Prozess | Tool | Zweck |
 |---|---|---|
-| Patchverwaltung | Updateverwaltung | Verwaltung und Zeitplanung von Updates |
+| Patchverwaltung | Azure Automation-Updateverwaltung | Verwaltung und Zeitplanung von Updates |
 | Durchsetzung von Richtlinien | Azure Policy | Richtliniendurchsetzung zum Sicherstellen der Compliance von Umgebung und Gastsystemen |
 | Umgebungskonfiguration | Azure Blueprint | Automatisierte Compliance für Kerndienste |
 | Ressourcenkonfiguration | Desired State Configuration | Automatisierte Konfiguration für das Gastbetriebssystem und einige Aspekte der Umgebung |
@@ -46,14 +47,14 @@ In dieser Tabelle wird für jede Umgebung auf Unternehmensniveau der empfohlene 
 
 ::: zone-end
 
-Verwenden Sie für Computer, die mit der Updateverwaltung verwaltet werden, die folgenden Konfigurationen, um Bewertungen und Updatebereitstellungen durchzuführen:
+Computer, die von der Lösung „Updateverwaltung“ für Azure Automation verwaltet werden, verwenden die folgenden Konfigurationen für die Bewertung und Aktualisierung von Bereitstellungen:
 
 - Microsoft Monitoring Agent (MMA) für Windows oder Linux.
 - PowerShell Desired State Configuration (DSC) für Linux.
 - Azure Automation Hybrid Runbook Worker.
 - Microsoft Update oder Windows Server Update Services (WSUS) für Windows-Computer.
 
-Weitere Informationen finden Sie unter [Updateverwaltungslösung](/azure/automation/update-management/overview).
+Weitere Informationen finden Sie unter [Updateverwaltungslösung für Azure Automation](/azure/automation/update-management/overview).
 
 > [!WARNING]
 > Bevor Sie die Updateverwaltung verwenden, müssen Sie virtuelle Computer oder ein ganzes Abonnement in Log Analytics und Azure Automation integrieren.
@@ -72,7 +73,7 @@ So wenden Sie eine Richtlinie auf eine Ressourcengruppe an:
 1. Wechseln Sie zu [Azure Automation](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Automation%2FAutomationAccounts).
 1. Wählen Sie **Automation-Konten** und dann eines der aufgeführten Konten aus.
 1. Wechseln Sie zu **Konfigurationsverwaltung**.
-1. **Inventar** , **Change Management** und **State Configuration** können zum Steuern des Zustands und der betriebsbezogenen Compliance der verwalteten VMs verwendet werden.
+1. **Inventar**, **Change Management** und **State Configuration** können zum Steuern des Zustands und der betriebsbezogenen Compliance der verwalteten VMs verwendet werden.
 
 ::: zone target="chromeless"
 
@@ -163,7 +164,7 @@ So erstellen Sie eine Blaupause
 1. Filtern Sie die Liste mit den Blaupausen, um die gewünschte Blaupause auszuwählen.
 1. Geben Sie im Feld **Name der Blaupause** den Namen der Blaupause ein.
 1. Wählen Sie **Speicherort der Definition** und dann den entsprechenden Speicherort aus.
-1. Wählen Sie **Weiter: Artefakte >>** , und sehen Sie sich die Artefakte an, die in der Blaupause enthalten sind.
+1. Wählen Sie **Weiter: Artefakte** aus, und überprüfen Sie dann die in der Blaupause enthaltenen Artefakte.
 1. Wähen Sie **Entwurf speichern** aus.
 
 ::: form action="OpenBlade[#blade/Microsoft_Azure_Policy/BlueprintsMenuBlade/GetStarted]" submitText="Create a blueprint" :::
@@ -177,7 +178,7 @@ So erstellen Sie eine Blaupause
 1. Filtern Sie die Liste mit den Blaupausen, um die gewünschte Blaupause auszuwählen.
 1. Geben Sie im Feld **Name der Blaupause** den Namen der Blaupause ein.
 1. Wählen Sie **Speicherort der Definition** und dann den entsprechenden Speicherort aus.
-1. Wählen Sie **Weiter: Artefakte >>** , und sehen Sie sich die Artefakte an, die in der Blaupause enthalten sind.
+1. Wählen Sie **Weiter: Artefakte** aus, und überprüfen Sie dann die in der Blaupause enthaltenen Artefakte.
 1. Wähen Sie **Entwurf speichern** aus.
 
 ::: zone-end

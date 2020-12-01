@@ -7,12 +7,13 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 3fb28e0f68a5eddaff094a3f16640689cad48769
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.custom: think-tank
+ms.openlocfilehash: 8b2cb606ded625dfcfecc5e8168f38d45ac01c2d
+ms.sourcegitcommit: d957bfc1fa8dc81168ce9c7d801a8dca6254c6eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88568548"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95446724"
 ---
 <!-- cSpell:ignore scikit RLlib ONNX Jupyter -->
 
@@ -49,7 +50,7 @@ Gängige Szenarios für Machine-Learning-Lösungen sind:
   - [Klassifizieren von Bildern mit scikit-learn](/azure/machine-learning/tutorial-train-models-with-aml)
   - [Tutorial: Erstellen einer Azure Machine Learning-Pipeline für die Batchbewertung](/azure/machine-learning/tutorial-pipeline-batch-scoring-classification)
 
-- **Sehen Sie sich die Videotutorials an**, um mehr über die Vorteile von Machine Learning wie die Modellerstellung ohne Code, MLOps, ONNX Runtime, Modellinterpretierbarkeit und -transparenz und mehr zu erfahren.
+- **Sehen Sie sich die Videotutorials an**, um mehr über die Vorteile von Machine Learning zu erfahren, z. B. die Modellerstellung ohne Code, MLOps (Machine Learning Operations), ONNX Runtime, Modellinterpretierbarkeit und -transparenz.
 
   - [Neuerungen in Machine Learning](https://channel9.msdn.com/Shows/AI-Show/Allup-Azure-ML)
   - [Verwenden von AutoML zur Modellerstellung](https://aka.ms/automlvideo)
