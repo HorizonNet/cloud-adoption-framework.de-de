@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 7e913c5143b7f276c3457deb7a92cc7bfeeff11d
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: b57eb90f5cee020b2eb58026a886f4082c992fa6
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713580"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880601"
 ---
+<!-- docutune:ignore "provide advanced threat protection" -->
+
 # <a name="protect-and-recover-in-azure"></a>Schutz und Wiederherstellung in Azure
 
 _Schutz und Wiederherstellung_ repräsentieren die dritte und letzte Disziplin in einer Baseline zur Cloudverwaltung.
@@ -44,9 +46,9 @@ In dieser Tabelle wird für jede Umgebung auf Unternehmensniveau der empfohlene 
 
 Mit Azure Backup können Sie Ihre Daten in der Microsoft-Cloud sichern, schützen und wiederherstellen. Azure Backup ersetzt Ihre vorhandene lokale bzw. standortexterne Sicherungslösung durch eine cloudbasierte Lösung. Diese neue Lösung ist zuverlässig, sicher und kostengünstig. Azure Backup kann auch dazu beitragen, lokale Ressourcen durch eine einheitliche Lösung zu schützen und wiederherzustellen.
 
-Für Daten, die in Azure vorhanden sind, bietet Azure Backup verschiedene Schutzebenen. Beispiel: Für die Sicherung wichtiger Teile der Cloudinfrastruktur wie Azure Virtual Machines und Azure Files bietet es [Azure Virtual Machine-Sicherung](/azure/backup/backup-azure-vms-introduction) und [Azure Files-Sicherung](/azure/backup/azure-file-share-backup-overview). Für kritischere Komponenten wie Datenbanken, die unter Azure Virtual Machines ausgeführt werden, bietet es dedizierte Lösungen zur Datenbanksicherung für [MS SQL](/azure/backup/backup-azure-sql-database) und [SAP HANA](/azure/backup/sap-hana-db-about) mit weitaus niedrigerem RPO-Wert.
+Für Daten, die in Azure vorhanden sind, bietet Azure Backup verschiedene Schutzebenen. Für die Sicherung von wichtigen Teilen der Cloudinfrastruktur wie Azure Virtual Machines und Azure Files bietet der Dienst z. B. die [Azure Virtual Machine-Sicherung](/azure/backup/backup-azure-vms-introduction) und die [Azure Files-Sicherung](/azure/backup/azure-file-share-backup-overview). Für kritischere Komponenten wie Datenbanken, die in Azure Virtual Machines ausgeführt werden, bietet Azure Backup dedizierte Lösungen zur Datenbanksicherung für [MS SQL](/azure/backup/backup-azure-sql-database) und [SAP HANA](/azure/backup/sap-hana-db-about) mit einer weitaus niedrigeren RPO.
 
-Um einen Eindruck zu erhalten, wie einfach die Aktivierung der Sicherung mit Azure Backup ist, werfen Sie einen Blick auf den folgenden Abschnitt zur Aktivierung der Sicherung für Azure Virtual Machines.
+Wenn Sie wissen möchten, wie einfach Sicherungen mit Azure Backup konfiguriert werden können, werfen Sie einen Blick auf den folgenden Abschnitt zur Aktivierung der Sicherung für Azure Virtual Machines.
 
 ### <a name="enable-backup-for-an-azure-vm"></a>Aktivieren der Sicherung für eine Azure-VM
 
@@ -66,7 +68,7 @@ Um einen Eindruck zu erhalten, wie einfach die Aktivierung der Sicherung mit Azu
 
 ::: zone target="docs"
 
-Weitere Informationen über Azure Backup und sein vielfältiges Angebot finden Sie in dieser [Übersicht](/azure/backup/backup-overview).
+Weitere Informationen zu Azure Backup finden Sie unter [Übersicht über Azure Backup](/azure/backup/backup-overview).
 
 ## <a name="azure-site-recovery"></a>Azure Site Recovery
 

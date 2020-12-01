@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 54096b19fe5e72083818cb69a74c1d30694803ae
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: d6abda70a359a464d213888989425893d88e9b72
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571642"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879972"
 ---
 # <a name="business-commitment-in-cloud-management"></a>Die geschäftliche Verpflichtung in der Cloudverwaltung
 
@@ -93,7 +93,7 @@ Der nächste Datenpunkt, der erforderlich ist, um eine Verpflichtung einzugehen,
 
 ## <a name="calculate-loss-avoidance-roi"></a>Berechnen des ROI bei Verlustvermeidung
 
-Beim Berechnen der relativen Rendite der Betriebsverwaltungskosten sollte das für Cloudvorgänge verantwortliche IT-Team die zuvor genannten Voraussetzungen erfüllen und von einer minimalen Verwaltungsebene für alle Workloads ausgehen.
+Beim Berechnen der relativen Rendite der Betriebsverwaltungskosten sollte das für die Cloud verantwortliche IT-Team dafür sorgen, dass die zuvor genannten Voraussetzungen erfüllt sind, und für alle Workloads von einer minimalen Verwaltungsebene ausgehen.
 
 Die nächste Verpflichtung ist die Akzeptanz der Kosten, die mit dem Baselineverwaltungsangebot verbunden sind, durch das Unternehmen.
 
@@ -114,9 +114,9 @@ In den folgenden Berechnungen werden Formeln erläutert, die Ihnen dabei helfen,
 
 ### <a name="estimate-outage-hours-per-year"></a>Geschätzter Ausfall (Stunden pro Jahr)
 
-„Composite SLA“ (zusammengesetzte SLA) ist die Vereinbarung zum Service Level, die auf der Bereitstellung der einzelnen Ressourcen in der Workload basiert. Dieses Feld steuert den _geschätzten Ausfall_ (in der Arbeitsmappe mit `Est. Outage` bezeichnet). Um den geschätzten Ausfall in Stunden pro Jahr zu berechnen, ohne die Arbeitsmappe zu verwenden, wenden Sie die folgende Formel an:
+„Composite SLA“ (zusammengesetzte SLA) ist die Vereinbarung zum Service Level, die auf der Bereitstellung der einzelnen Ressourcen in der Workload basiert. Dieses Feld steuert den _geschätzten Ausfall_ (in der Arbeitsmappe mit `Est.Outage` bezeichnet). Um den geschätzten Ausfall in Stunden pro Jahr zu berechnen, ohne die Arbeitsmappe zu verwenden, wenden Sie die folgende Formel an:
 
-> _Geschätzter Ausfall = (1 - Prozentsatz der zusammengesetzten SLA) &#215; Anzahl von Stunden pro Jahr_
+> _Geschätzter Ausfall = (1 – Prozentsatz der zusammengesetzten SLA) &#215; Anzahl von Stunden pro Jahr_
 
 In der Arbeitsmappe wird der Standardwert von _8.760 Stunden pro Jahr_ verwendet.
 
@@ -124,7 +124,7 @@ In der Arbeitsmappe wird der Standardwert von _8.760 Stunden pro Jahr_ verwendet
 
 Die _standardmäßigen Auswirkungen von Datenverlust_ (in der Arbeitsmappe mit `Standard Impact` bezeichnet) prognostizieren die finanziellen Auswirkungen eines Ausfalls, vorausgesetzt, dass die Vorhersage des _geschätzten Ausfalls_ korrekt ist. Um diese Vorhersage ohne Verwendung der Arbeitsmappe zu berechnen, wenden Sie die folgende Formel an:
 
-> _Standardmäßige Auswirkung = geschätzter Ausfall bei drei Neunen der Betriebszeit &#215; Zeit-Wert-Auswirkung_
+> _Standardauswirkung = geschätzter Ausfall bei einer Betriebszeit der Verfügbarkeitsklasse 3 (drei Neunen) &#215; zeitliche Auswirkung_
 
 Dies dient als Grundlage für die Kosten, wenn die Geschäftsbeteiligten entscheiden, in eine höhere Verwaltungsebene zu investieren.
 
@@ -132,7 +132,7 @@ Dies dient als Grundlage für die Kosten, wenn die Geschäftsbeteiligten entsche
 
 Die _Auswirkung der zusammengesetzten SLA_ (in der Arbeitsmappe mit `Commitment level impact` bezeichnet) stellt die aktualisierten fiskalischen Auswirkungen dar, basierend auf den Änderungen der Betriebszeit-SLA. Anhand dieser Berechnung können Sie die projizierten finanziellen Auswirkungen beider Optionen vergleichen. Um diese vorhergesagte Auswirkung ohne die Arbeitsmappe zu berechnen, wenden Sie die folgende Formel an:
 
-> _Auswirkung der zusammengesetzten SLA = geschätzter Ausfall &#215; Zeit-Wert-Auswirkung_
+> _Auswirkung der zusammengesetzten SLA = geschätzter Ausfall &#215; zeitliche Auswirkung_
 
 Der Wert stellt die potenziellen Verluste dar, die durch die geänderte Verpflichtungsebene und die neue zusammengesetzte SLA vermieden werden sollen.
 
@@ -144,7 +144,7 @@ _Comparison basis_ (Vergleichsbasis) wertet „Standard Impact“ und „Composi
 
 Wenn die Kosten für die Verwaltung einer Workload die potenziellen Verluste überschreiten, ist die in der Cloudverwaltung vorgeschlagene Investition möglicherweise nicht rentabel. Beachten Sie zum Vergleichen der _Rendite bei Verlustvermeidung_ die Spalte mit der Bezeichnung _Annual ROI****_ (jährlicher ROI). Um diese Spalte selbst zu berechnen, verwenden Sie die folgende Formel:
 
-> _Rendite bei Verlustvermeidung = (Vergleichsbasis - (monatliche Kosten &#215; 12)) &#247; (monatliche Kosten &#215; 12))_
+> _Rendite bei Verlustvermeidung = (Vergleichsbasis – (monatliche Kosten &#215; 12)) &#247; (monatliche Kosten &#215; 12))_
 
 Wenn keine weiteren weichen Kostenfaktoren berücksichtigt werden müssen, kann dieser Vergleich schnell zeigen, ob eine höhere Investition in Cloudbetrieb, Resilienz, Zuverlässigkeit oder andere Bereiche erfolgen sollte.
 

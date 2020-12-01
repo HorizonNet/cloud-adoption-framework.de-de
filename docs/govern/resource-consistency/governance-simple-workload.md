@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: govern
 ms.custom: governance
-ms.openlocfilehash: c53332fa884d0045ac8710229e370bbdfb7a10c2
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 2b352f24bfd2d38caa6b494d3952c02c9bbaf26b
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604740"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94881094"
 ---
 # <a name="governance-design-for-a-simple-workload"></a>Governance-Entwurf für eine einfache Workload
 
@@ -87,16 +87,16 @@ Die nächste Ebene des Verwaltungsbereichs ist die Ebene **Ressourcengruppe**. E
 Zur Verdeutlichung sehen wir uns an, was passiert, wenn der **Workloadbesitzer** eine Ressourcengruppe erstellt:
 
 ![**Workloadbesitzer** erstellt eine Ressourcengruppe](../../_images/govern/design/governance-1-7.png)
-*Abbildung 7: Der Workloadbesitzer erstellt eine Ressourcengruppe und erbt die integrierte Rolle „Besitzer“ für den Ressourcengruppenbereich.*
+*Abbildung 7: Der Workloadbesitzer erstellt eine Ressourcengruppe und erbt die integrierte Rolle „Besitzer“ für den Geltungsbereich der Ressourcengruppe.*
 
 Mit der integrierten Rolle **Besitzer** werden für den **Workloadbesitzer** wiederum alle Berechtigungen für den Ressourcengruppenbereich gewährt. Wie bereits beschrieben, wird diese Rolle von der Abonnementebene geerbt. Wenn diesem Benutzer für diesen Bereich eine andere Rolle zugewiesen wird, gilt dies nur für den Bereich.
 
 Die niedrigste Ebene des Verwaltungsbereichs ist die Ebene **Ressource**. Vorgänge, die auf Ressourcenebene durchgeführt werden, gelten nur für die Ressource selbst. Die Berechtigungen der Ressourcenebene werden auch vom Ressourcengruppenbereich geerbt. Wir können uns beispielsweise ansehen, was passiert, wenn der **Workloadbesitzer** in der Ressourcengruppe ein [virtuelles Netzwerk](/azure/virtual-network/virtual-networks-overview) bereitstellt:
 
 ![**Workloadbesitzer** erstellt eine Ressource](../../_images/govern/design/governance-1-8.png)
-*Abbildung 8: Der Workloadbesitzer erstellt eine Ressource und erbt die integrierte Rolle „Besitzer“ für den Ressourcenbereich.*
+*Abbildung 8: Der Workloadbesitzer erstellt eine Ressource und erbt die integrierte Rolle „Besitzer“ für den Geltungsbereich der Ressource.*
 
-Der **Workloadbesitzer** erbt die Rolle „Besitzer“ für den Ressourcenbereich. Dies bedeutet, dass der Workloadbesitzer über alle Berechtigungen für das virtuelle Netzwerk verfügt.
+Der **Workloadbesitzer** erbt die Rolle „Besitzer“ für den Geltungsbereich der Ressource. Dies bedeutet, dass der Workloadbesitzer über alle Berechtigungen für das virtuelle Netzwerk verfügt.
 
 ## <a name="implement-the-basic-resource-access-management-model"></a>Implementieren des grundlegenden Modells für die Ressourcenzugriffsverwaltung
 

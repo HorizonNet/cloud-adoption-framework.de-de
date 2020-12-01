@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: fc9be8cfc1f51e35e0eb2dbb7270c818276c7767
-ms.sourcegitcommit: fbfd66dab002b549d3e9cbf1b7efa0099d0b7700
+ms.openlocfilehash: 733216e9e8a4bca165c1bc73a1fd1870ecba8d3a
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93283246"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879224"
 ---
 <!-- cSpell:ignore BACPAC FILESTREAM -->
 
@@ -36,7 +36,7 @@ Das IT-Führungsteam arbeitet eng mit Geschäftspartnern zusammen, um die Gesch�
 
 - **Flexibilität steigern:** Die Contoso-IT-Abteilung muss schneller auf die Unternehmensanforderungen reagieren. Die IT-Experten müssen schneller reagieren als die Änderungen im Marketplace geschehen, um den Erfolg in einer globalen Wirtschaft zu garantieren. Es darf nicht im Weg stehen oder zum Geschäftshindernis werden.
 
-- **Skalierung** : Da das Unternehmen erfolgreich wächst, muss die Contoso-IT Systeme bereitstellen, die mit der gleichen Geschwindigkeit wachsen können. Es gibt mehrere ältere Hardwareumgebungen, für die kein Upgrade mehr durchgeführt werden kann und deren Support abgelaufen ist oder kurz vor dem Ende steht.
+- **Skalierung**: Da das Unternehmen erfolgreich wächst, muss die Contoso-IT Systeme bereitstellen, die mit der gleichen Geschwindigkeit wachsen können. Es gibt mehrere ältere Hardwareumgebungen, für die kein Upgrade mehr durchgeführt werden kann und deren Support abgelaufen ist oder kurz vor dem Ende steht.
 
 - **Kosten:** Geschäftsinhaber und Anwendungsbesitzer möchten sicher sein, dass im Vergleich zur lokalen Ausführung der Anwendungen keine hohen Cloudkosten auf sie zukommen.
 
@@ -212,4 +212,5 @@ Da die migrierten Ressourcen in Azure enthalten sind, muss Contoso die neue Infr
 
 ## <a name="conclusion"></a>Zusammenfassung
 
-In diesem Artikel wurde gezeigt, wie Contoso seine Microsoft SQL Server-Workloads bewertet hat und die Migration zu Azure geplant und ausgeführt hat.
+In diesem Artikel wurde gezeigt, wie Contoso seine Microsoft SQL Server-Workloads bewertet hat und die Migration zu Azure geplant und ausgeführt hat.  
+Außerdem wurde ein Azure DevOps-Projekt für Ihre SQL-Migration entwickelt. Das Projekt wurde am Cloud Adoption Framework ausgerichtet. Es führt Sie Schritt für Schritt durch die wichtigsten erforderlichen Entscheidungen. [Klicken Sie hier](https://azuredevopsdemogenerator.azurewebsites.net/?name=sqlmigration), um zum Azure DevOps-Projekt zu gelangen. 

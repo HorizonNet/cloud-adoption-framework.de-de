@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: innovate
-ms.openlocfilehash: 5f94aed91d62007ce5b9a9555902c8e2d3c8c481
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 3139662b0ef42661dc85d64a44294c3ac1bce09e
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88878281"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880924"
 ---
 # <a name="democratize-data-with-digital-invention"></a>Demokratisieren von Daten mit digitalen Innovationen
 

@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 4acfe75b2499d782946a89471e9ae61c4c868dbc
-ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
+ms.openlocfilehash: ee6f351f35914f326dc1864bd92114ef9edf917e
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "93024469"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880142"
 ---
 # <a name="azure-server-management-tools-and-services"></a>Azure-Serververwaltungstools und -dienste
 
@@ -41,7 +41,7 @@ Zum Schutz Ihrer Daten müssen Sicherung, Hochverfügbarkeit, Verschlüsselung, 
 
 Wenn Sie Datenschutzstrategien erstellen, sollten Sie zunächst überlegen, Ihre Workloadanwendungen in ihre verschiedenen Ebenen aufzuteilen. Dieser Ansatz hilft, da jede Ebene in der Regel einen eigenen, individuellen Schutzplan erfordert. Weitere Informationen über das Entwerfen von robusten Anwendungen finden Sie unter [Entwerfen robuster Anwendungen für Azure](/azure/architecture/resiliency).
 
-Der einfachste Datenschutz sind Sicherungen. Sie sollten nicht nur Daten, sondern auch Serverkonfigurationen sichern, um den Wiederherstellungsprozess im Falle eines Serverausfalls zu beschleunigen. Die Sicherung ist ein wirksamer Mechanismus zur Handhabung versehentlicher Datenlöschung und Ransomwareangriffe. [Azure Backup](/azure/backup) kann Ihnen beim Schützen von Daten auf Azure- und lokalen Servern unter Windows oder Linux helfen. Weitere Informationen darüber, was Backup leisten kann, und Anleitungen dazu finden Sie in der [Übersicht zum Azure Backup-Dienst](/azure/backup/backup-overview).
+Der einfachste Datenschutz sind Sicherungen. Sie sollten nicht nur Daten, sondern auch Serverkonfigurationen sichern, um den Wiederherstellungsprozess im Falle eines Serverausfalls zu beschleunigen. Die Sicherung ist ein wirksamer Mechanismus zur Handhabung versehentlicher Datenlöschung und Ransomwareangriffe. [Azure Backup](/azure/backup) kann Ihnen beim Schützen von Daten auf Azure- und lokalen Servern unter Windows oder Linux helfen. Weitere Informationen darüber, was Azure Backup leisten kann, und Anleitungen dazu finden Sie in der [Übersicht zum Azure Backup-Dienst](/azure/backup/backup-overview).
 
 Wenn eine Workload für Hardware- oder Rechenzentrumsausfälle eine Geschäftskontinuität in Echtzeit erfordert, sollten Sie die Verwendung der Datenreplikation in Betracht ziehen. [Azure Site Recovery](/azure/site-recovery/site-recovery-overview) bietet eine fortlaufende Replikation Ihrer VMs – eine Lösung, die minimalen Datenverlust ermöglicht. Site Recovery unterstützt u. a. auch folgende Replikationsszenarien:
 
@@ -57,7 +57,7 @@ Für Ihre Dateiserverdaten ist die [Azure-Dateisynchronisierung](/azure/storage/
 
 [Azure Monitor](/azure/azure-monitor/overview) bietet einen Überblick über verschiedene Ressourcen, wie Anwendungen, Container und virtuelle Computer. Außerdem werden Daten aus mehreren Quellen erfasst:
 
-- [Azure Monitor für VMs](/azure/azure-monitor/insights/vminsights-overview) bietet eine detaillierte Darstellung der Integrität der virtuellen Computer, von Leistungstrends und Abhängigkeiten. Der Dienst überwacht die Integrität der Betriebssysteme für Ihre virtuellen Azure-Computer, VM-Skalierungsgruppen sowie der Computer in Ihrer lokalen Umgebung.
+- [Azure Monitor für VMs](/azure/azure-monitor/insights/vminsights-overview) bietet eine detaillierte Darstellung der Integrität der virtuellen Computer, von Leistungstrends und Abhängigkeiten. Der Dienst überwacht die Integrität der Betriebssysteme Ihrer Azure-VMs, VM-Skalierungsgruppen sowie der Computer in Ihrer lokalen Umgebung.
 - [Log Analytics](/azure/azure-monitor/log-query/log-query-overview) ist ein Feature von Azure Monitor. Die Rolle von Log Analytics ist ein wesentlicher Bestandteil der Azure-Verwaltungsfunktionen. Es dient als Datenspeicher für die Protokollanalyse und für viele andere Azure-Dienste. Es bietet eine umfangreiche Abfragesprache und eine Analyse-Engine, die Ihnen Einblicke in den Betrieb Ihrer Anwendungen und Ressourcen gibt.
 - Das [Azure-Aktivitätsprotokoll](/azure/azure-monitor/platform/activity-logs-overview) ist ebenfalls ein Feature von Azure Monitor. Hiermit können Sie Erkenntnisse zu Ereignissen auf Abonnementebene gewinnen, die in Azure eintreten.
 
@@ -75,7 +75,7 @@ Diese Dienste sind von zentraler Bedeutung für die Unterstützung der laufenden
 
 - Die [Updateverwaltung](/azure/automation/update-management/overview) automatisiert die Bereitstellung von Patches in Ihrer Umgebung, einschließlich der Bereitstellung auf Betriebssysteminstanzen, die außerhalb von Azure ausgeführt werden. Sie unterstützt sowohl Windows- als auch Linux-Betriebssysteme und verfolgt wichtige Schwachstellen und Nichtkonformitäten im Betriebssystem, die durch fehlende Patches verursacht werden.
 - [Änderungsnachverfolgung und Bestand](/azure/automation/change-tracking) bietet einen Einblick in die Software, die in Ihrer Umgebung ausgeführt wird, und hebt alle aufgetretenen Änderungen hevor.
-- [Azure Automation](/azure/automation/automation-intro) bietet die Möglichkeit, Python- und PowerShell-Skripte oder Runbooks auszuführen, um Aufgaben in Ihrer Umgebung zu automatisieren. Wenn Sie die Automatisierung mit dem [Hybrid Runbook Worker](/azure/automation/automation-hybrid-runbook-worker) verwenden, können Sie Ihre Runbooks außerdem auf lokale Ressourcen erweitern.
+- [Azure Automation](/azure/automation/automation-intro) bietet die Möglichkeit, Python- und PowerShell-Skripte oder Runbooks auszuführen, um Aufgaben in Ihrer Umgebung zu automatisieren. Wenn Sie Azure Automation mit dem [Hybrid Runbook Worker](/azure/automation/automation-hybrid-runbook-worker) verwenden, können Sie Ihre Runbooks außerdem auf lokale Ressourcen erweitern.
 - [Azure Automation State Configuration](/azure/automation/automation-dsc-overview) bietet die Möglichkeit, PowerShell DSC-Konfigurationen (Desired State Configuration) direkt aus Azure zu pushen. Mit DSC können Sie auch Konfigurationen für Gastbetriebssysteme und Workloads überwachen und beibehalten.
 
 ## <a name="govern"></a>Steuern
@@ -98,12 +98,12 @@ Informationen über die Preisgestaltung für Azure-Verwaltungsdienste finden Sie
 
 - [Azure Automation](https://azure.microsoft.com/pricing/details/automation), einschließlich:
   - Desired State Configuration
-  - Azure-Updateverwaltungsdienst
-  - Azure-Dienste für Änderungsnachverfolgung und Bestand
+  - Lösung für die Updateverwaltung
+  - Lösung für Änderungsnachverfolgung und Bestand
 
 - [Azure Policy](https://azure.microsoft.com/pricing/details/azure-policy)
 
 - [Azure-Dateisynchronisierungsdienst](https://azure.microsoft.com/pricing/details/storage/blobs)
 
 > [!NOTE]
-> Die Lösung für die Azure-Updateverwaltung ist kostenlos, es fallen jedoch geringe Kosten für die Datenerfassung an. Als Faustregel gilt, dass die ersten 5 GB pro Monat der Datenerfassung kostenlos sind. Wir beobachten im Allgemeinen, dass jeder Computer etwa 25 MB pro Monat verbraucht. So sind etwa 200 Computer pro Monat kostenlos abgedeckt. Multiplizieren Sie für weitere Server die Anzahl zusätzlicher Server mit 25 MB pro Monat. Multiplizieren Sie dann das Ergebnis mit dem Speicherpreis für den zusätzlichen Speicher, den Sie benötigen. Informationen zu Kosten finden Sie unter [Übersicht über die Preise für Azure Storage](https://azure.microsoft.com/pricing/details/storage). Jeder zusätzliche Server sollte in der Regel einen nominalen Einfluss auf die Kosten haben.
+> Die Lösung für die Azure-Updateverwaltung ist kostenlos, es fallen jedoch geringe Kosten für die Datenerfassung an. Als Faustregel gilt, dass die ersten 5 GB pro Monat der Datenerfassung kostenlos sind. Wir beobachten im Allgemeinen, dass jeder Computer etwa 25 MB pro Monat verbraucht. So sind etwa 200 Computer pro Monat kostenlos abgedeckt. Multiplizieren Sie für weitere Server die Anzahl zusätzlicher Server mit 25 MB pro Monat. Multiplizieren Sie dann das Ergebnis mit dem Speicherpreis für den zusätzlichen Speicher, den Sie benötigen. Informationen zu den Kosten finden Sie unter [Preise für Azure Storage](https://azure.microsoft.com/pricing/details/storage). Jeder zusätzliche Server sollte in der Regel einen nominalen Einfluss auf die Kosten haben.

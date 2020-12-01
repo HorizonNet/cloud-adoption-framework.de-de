@@ -7,12 +7,12 @@ ms.date: 08/05/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: b49425113e135549413c86ba9f12ee380b8cef27
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 449f1fbe966059ff6647fef114637068f7e897ac
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604008"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879462"
 ---
 <!-- cSpell:ignore multisignal -->
 
@@ -98,7 +98,7 @@ Allerdings gibt es einige wichtige Hinweise zu dieser Regel.
 
 - Die günstigste Option, die jedoch eine Erfassungslatenz aufweist, ist das Senden an einen Log Analytics-Arbeitsbereich. Die Ausführung des Log Analytics-Agents auf der VM ist die beste Möglichkeit, alle Gastbetriebssystemmetriken und Protokolldaten im Arbeitsbereich abzurufen.
 
-- Auch das Senden zur Speicherung als Metrik und Protokoll in Azure Monitor ist möglich, indem sowohl die Diagnoseerweiterung als auch der Log Analytics-Agent auf derselben VM ausgeführt werden. Sie können dann schnell Warnungen auslösen, aber die Gastbetriebssystemdaten auch in komplexeren Abfragen kombiniert mit anderen Telemetrieanwendungen verwenden.
+- Sie können die Daten senden, damit diese als Metrik und Protokoll in Azure Monitor gespeichert werden, indem sowohl die Erweiterung „Azure-Diagnose“ als auch den Log Analytics-Agent auf derselben VM ausgeführt werden. Sie können dann schnell Warnungen auslösen, aber die Gastbetriebssystemdaten auch in komplexeren Abfragen kombiniert mit anderen Telemetrieanwendungen verwenden.
 
 **Importieren von lokalen Daten**: Wenn Sie versuchen, Abfragen über lokale und Azure-Computer hinweg zu stellen und zu überwachen, können Sie mit dem Log Analytics-Agent Daten des Gastbetriebssystems erfassen. Sie können dann ein Feature namens [Protokolle zu Metriken](/azure/azure-monitor/platform/alerts-metric-logs) verwenden, um diese Metriken in Azure Monitor zu erfassen und zu speichern. Bei dieser Methode wird ein Teil des Erfassungsvorgangs in Azure Monitor-Protokollen umgangen, und die Daten sind deshalb früher verfügbar.
 
@@ -125,4 +125,4 @@ Beachten Sie unbedingt die [Einschränkungen zur Anzahl der Warnungen, die Sie e
 
 ### <a name="best-query-experience"></a>Optimales Abfrageverhalten
 
-Wenn Sie nach Trends in Ihrem gesamten Datenbestand suchen, ist es sinnvoll, sämtliche Ihrer Daten in Azure-Protokolle zu importieren – es sei denn, die Daten befinden sich bereits in Application Insights. Sie können Abfragen über beide Arbeitsbereiche hinweg erstellen, deshalb ist eine Verschiebung von Daten zwischen diesen Tools nicht erforderlich. Sie können außerdem Aktivitätsprotokoll- und Azure Service Health-Daten in Ihren Log Analytics-Arbeitsbereich importieren. Sie bezahlen für diese Erfassung und Speicherung, aber alle Ihre Daten werden zur Analyse und Abfrage an einem Ort gesammelt. Dieser Ansatz gibt Ihnen auch die Möglichkeit, komplexe Abfragebedingungen zu erstellen und bei diesen zu warnen.
+Wenn Sie nach Trends in Ihrem gesamten Datenbestand suchen, ist es sinnvoll, alle Ihre Daten in Azure Monitor-Protokolle zu importieren – es sei denn, die Daten befinden sich bereits in Application Insights. Sie können Abfragen über beide Arbeitsbereiche hinweg erstellen, deshalb ist eine Verschiebung von Daten zwischen diesen Tools nicht erforderlich. Sie können außerdem Aktivitätsprotokoll- und Azure Service Health-Daten in Ihren Log Analytics-Arbeitsbereich importieren. Sie bezahlen für diese Erfassung und Speicherung, aber alle Ihre Daten werden zur Analyse und Abfrage an einem Ort gesammelt. Dieser Ansatz gibt Ihnen auch die Möglichkeit, komplexe Abfragebedingungen zu erstellen und bei diesen zu warnen.

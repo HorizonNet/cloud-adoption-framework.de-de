@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: ada5194d581384ee6d1632e6d6088fb3f8f03fd4
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 1275997c3ca3e2da4947dff20e063e18cd907e9f
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713223"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879445"
 ---
 <!-- cSpell:ignore WEBVM SQLVM OSTICKETWEB OSTICKETMYSQL contosohost vcenter contosodc NSGs agentless -->
 
@@ -308,3 +308,4 @@ Contoso aktiviert [Azure Cost Management und das Azure-Abrechnungsportal](/azure
 ## <a name="conclusion"></a>Zusammenfassung
 
 In diesem Artikel wurde von Contoso für die Anwendung SmartHotel360 ein neuer Host in Azure zugewiesen. Die Administratoren migrierten die Anwendungs-VMs mithilfe des „Tools zur Azure- Servermigration“ kommunizieren kann.
+Eine Anleitung zum Abschließen eines ähnlichen Projekts in Ihrer Umgebung finden Sie in der Azure DevOps-Projektvorlage für ein [Servermigrationsprojekt](https://azuredevopsdemogenerator.azurewebsites.net/?name=servermigration). 

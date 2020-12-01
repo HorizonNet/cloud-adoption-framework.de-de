@@ -9,13 +9,15 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: bb9c39784714dfab8233598d5180d5b770b9402c
-ms.sourcegitcommit: 8b82889dca0091f3cc64116f998a3a878943c6a1
+ms.openlocfilehash: 2b575e6a6606f5d0a32695e2deb3b4f833ca6466
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89604196"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880635"
 ---
+<!-- docutune:casing "SQL Server Health Check" -->
+
 # <a name="platform-specialization-for-cloud-management"></a>Plattformspezialisierung für die Cloudverwaltung
 
 Ähnlich wie bei der optimierten Verwaltungsbaseline ist die Plattformspezialisierung eine Erweiterung, die über die Standardverwaltungsbaseline hinausgeht. Die folgende Abbildung und Liste zeigen die Möglichkeiten zum Erweitern der Verwaltungsbaseline. In diesem Artikel werden die Plattformspezialisierungsoptionen behandelt.
@@ -61,7 +63,7 @@ Die Plattformspezialisierung besteht aus einer disziplinierten Ausführung der f
 
 Das Verbessern des Systementwurfs ist der effektivste Ansatz zur Optimierung des Betriebs jeder gängigen Plattform. Durch Verbesserungen des Systementwurfs können die Stabilität erhöht und Betriebsunterbrechungen verringert werden. Der Entwurf einzelner Systeme geht über die Betrachtung der Umgebung hinaus, die im Rahmen des Cloud Adoption Framework verwendet wird.
 
-Als Ergänzung zu diesem Framework bietet das [Microsoft Azure Well-Architected Framework](/azure/architecture/framework) Grundsätze zum Verbessern einer Plattform oder einer bestimmten Workload. Der Schwerpunkt des Frameworks liegt auf der Verbesserung von fünf Säulen der Architekturexzellenz:
+Als Ergänzung zu diesem Framework bietet das [Microsoft Azure Well-Architected Framework](/azure/architecture/framework) Richtlinien für die Qualitätsverbesserung einer Plattform oder bestimmten Workload. Das Framework konzentriert sich bei den Verbesserungen auf die fünf Säulen einer erstklassigen Architektur:
 
 - **Kostenoptimierung:** Verwalten der Kosten zur Maximierung des erzielten Werts.
 - **Betriebliche Exzellenz:** Verfolgen der operativen Prozesse, die für die Ausführung eines Systems in der Produktion sorgen.

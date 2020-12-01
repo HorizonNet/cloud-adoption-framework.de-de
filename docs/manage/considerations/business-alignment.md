@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 1c1a2bbdb6665246563f9514b55784f48114dee9
-ms.sourcegitcommit: 2794cab8eb925103ae22babc704d89f7f7d4f6f4
+ms.openlocfilehash: 9b2d610942615c3f86e9e5cc0dbbb194d8192293
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "84992843"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879989"
 ---
 # <a name="create-business-alignment-in-cloud-management"></a>Erstellen der Geschäftsausrichtung in der Cloudverwaltung
 
@@ -29,7 +29,7 @@ Glücklicherweise schaffen die Prozesse zur Entwicklung einer Cloud Adoption-Str
 - **[Verpflichtung](./commitment.md):** Entwickeln echter Partnerschaften durch Erstellen und Dokumentieren von Vereinbarungen mit den Fachbereichen.
 
 > [!NOTE]
-> Diesen Begriffen liegen klassische IT-Begriffe wie SLA, RTO und RPO zugrunde. Die Zuordnung bestimmte Geschäfts- und IT-Begriffe wird im Artikel [Verpflichtung](./commitment.md) ausführlicher behandelt.
+> Diesen Begriffen liegen klassische IT-Begriffe wie SLA, RTO und RPO zugrunde. Weitere Informationen zum Zuordnen bestimmter Geschäfts- und IT-Anforderungen finden Sie unter [Unternehmerische Entscheidungen bei der Cloudverwaltung](./commitment.md).
 
 ## <a name="operations-management-workbook"></a>Arbeitsmappe zum Operations Management
 

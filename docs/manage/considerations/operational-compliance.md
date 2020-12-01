@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: dc22c00d9470209f4442f1b9c4a194b8b1fdb417
-ms.sourcegitcommit: 60d8b863d431b5d7c005f2f14488620b6c4c49be
+ms.openlocfilehash: 5e2bdbc808b6360691c39f4d124cd3dd7ede6c75
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83223931"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879734"
 ---
 # <a name="operational-compliance-in-cloud-management"></a>Betriebsbezogene Compliance in der Cloudverwaltung
 
@@ -30,7 +30,7 @@ Die Einhaltung betriebsbezogener Zusagen erfordert Analysen, Automatisierung und
 
 ### <a name="resource-consistency"></a>Ressourcenkonsistenz
 
-Der effektivste Schritt, den ein Cloudverwaltungsteam unternehmen kann, um die betriebsbezogene Compliance sicherzustellen, besteht darin, Konsistenz bei der Organisation und Kennzeichnung von Ressourcen herzustellen. Wenn Ressourcen konsistent organisiert und gekennzeichnet werden, lassen sich alle anderen operativen Aufgaben leichter bewältigen. Weitere Informationen zur Ressourcenkonsistenz finden Sie in der [Governancemethodik](../../govern/index.md). Insbesondere sollten die [Artikel zu den ersten Grundlagen für die Governance](../../govern/initial-foundation.md) überprüft werden, um zu erfahren, wie mit der Entwicklung von Ressourcenkonsistenz begonnen werden kann.
+Der effektivste Schritt, den ein Cloudverwaltungsteam unternehmen kann, um die betriebsbezogene Compliance sicherzustellen, besteht darin, Konsistenz bei der Organisation und Kennzeichnung von Ressourcen herzustellen. Wenn Ressourcen konsistent organisiert und gekennzeichnet werden, lassen sich alle anderen operativen Aufgaben leichter bewältigen. Weitere Informationen zur Ressourcenkonsistenz finden Sie in der [Governancemethodologie](../../govern/index.md). Insbesondere sollten die [Artikel zu den ersten Grundlagen für die Governance](../../govern/initial-foundation.md) überprüft werden, um zu erfahren, wie mit der Entwicklung von Ressourcenkonsistenz begonnen werden kann.
 
 ### <a name="environment-consistency"></a>Umgebungskonsistenz
 
@@ -45,6 +45,8 @@ Wenn Inkonsistenzen entdeckt werden, lassen sich einige durch Konsistenz bei Upd
 ### <a name="update-consistency"></a>Konsistenz bei Updates
 
 Stabilität im Ansatz kann zu stabileren Vorgängen führen. Dennoch sind bei Cloudverwaltungsprozessen immer wieder Änderungen erforderlich. Insbesondere sind regelmäßige Patches und Leistungsänderungen unabdingbar, um Unterbrechungen zu reduzieren und die Kosten zu senken.
+
+<!-- docutune:ignore "a cloud management methodology" -->
 
 Einer der vielen Vorteile einer ausgereiften Cloudverwaltungsmethodik besteht darin, sich auf die Stabilisierung und Steuerung notwendiger Änderungen zu konzentrieren.
 

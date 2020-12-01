@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c4103fac5729e0ae757ca89ce6ae1574119af927
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: e28906443deddf21b4058a07ff4af7c66f5bed3f
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571574"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879768"
 ---
 # <a name="inventory-and-visibility-in-cloud-management"></a>Bestand und Transparenz bei der Cloudverwaltung
 
@@ -62,7 +62,7 @@ Wenn niemand weiß, dass eine Ressource existiert, ist es schwierig, sie zu verw
 
 ### <a name="central-logging"></a>Zentrale Protokollierung
 
-Die zentralisierte Protokollierung ist entscheidend für die Transparenz, die von den Betriebsführungsteams Tag für Tag benötigt wird. Für alle in der Cloud bereitgestellten Ressourcen sollten Protokolle an einem zentralen Ort gespeichert werden. In Azure ist Log Analytics der zentrale Speicherort. Die Zentralisierung der Protokollierung ermöglicht Berichte zu den Themen Change Management, Dienstintegrität, Konfiguration und den meisten anderen Aspekten des IT-Betriebs.
+Die zentralisierte Protokollierung ist entscheidend für die Transparenz, die von den Betriebsführungsteams Tag für Tag benötigt wird. Für alle in der Cloud bereitgestellten Ressourcen sollten Protokolle an einem zentralen Ort gespeichert werden. In Azure ist Log Analytics dieser zentrale Speicherort. Die Zentralisierung der Protokollierung ermöglicht Berichte zu den Themen Change Management, Dienstintegrität, Konfiguration und den meisten anderen Aspekten des IT-Betriebs.
 
 Das Erzwingen der konsequenten Nutzung der zentralen Protokollierung ist der erste Schritt zum Einrichten wiederholbarer Vorgänge. Die Erzwingung kann durch die Unternehmensrichtlinie erreicht werden. Wenn möglich, sollte die Erzwingung jedoch automatisiert werden, um Einheitlichkeit zu gewährleisten.
 
@@ -75,6 +75,8 @@ Das Erzwingen der konsequenten Nutzung der zentralen Protokollierung ist der ers
 Verpflichtungen gegenüber den Fachbereichen bei Cloudverwaltung werden von Daten gesteuert. Um Verpflichtungen ordnungsgemäß einzuhalten, muss das Cloudbetriebsteam zunächst die Telemetriedaten hinsichtlich Stabilität, Leistung und Betrieb der Workload sowie der Ressourcen zur Unterstützung der Workload verstehen.
 
 Die aktuelle Integrität und der Betrieb von Netzwerk, DNS, Betriebssystemen und anderen grundlegenden Aspekten der IT-Umgebung sind kritische Datenpunkte, die in die allgemeine Integrität jeder Workload einfließen.
+
+<!-- docutune:ignore "cloud management methodology" "service management integration" -->
 
 ## <a name="processes"></a>Prozesse
 
@@ -104,7 +106,7 @@ Unabhängig von der Cloudplattform kommen die fünf Komponenten in Bezug auf Bes
 
 ### <a name="share-visibility"></a>Teilen der Transparenz
 
-Daten ohne entsprechende Maßnahmen bringen wenig Nutzen. Die Cloudverwaltung kann über cloudbasierte Tools und Prozesse hinausgehen. Um umfassendere Prozesse zu unterstützen, muss eine Baseline für die Cloudverwaltung möglicherweise um Berichterstellung, Integration von IT-Service-Management oder Datenzentralisierung erweitert werden. Die Cloudverwaltung muss in verschiedenen Phasen auf dem Weg zur betrieblichen Reife möglicherweise einen oder mehrere der folgenden Punkte berücksichtigen.
+Daten ohne entsprechende Maßnahmen bringen wenig Nutzen. Die Cloudverwaltung kann über cloudbasierte Tools und Prozesse hinausgehen. Zur Unterstützung von umfassenderen Prozessen muss eine Baseline für die Cloudverwaltung möglicherweise erweitert werden, sodass sie auch die Berichterstellung, die IT-Service-Management-Integration oder die Datenzentralisierung abdeckt. Die Cloudverwaltung muss in verschiedenen Phasen auf dem Weg zur betrieblichen Reife möglicherweise einen oder mehrere der folgenden Punkte berücksichtigen.
 
 ### <a name="report"></a>Bericht
 

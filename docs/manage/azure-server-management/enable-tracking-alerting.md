@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 7a37a812964bb595e426341d002a0e326d86013e
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: a94062dad8e600431319b976fef4d728be290f8b
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712050"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880584"
 ---
 <!-- cSpell:ignore HKEY kusto -->
 
@@ -20,17 +20,17 @@ ms.locfileid: "94712050"
 
 Azure-Änderungsnachverfolgung und Bestand bietet Warnungen zum Konfigurationszustand Ihrer Hybridumgebung und zu Änderungen an dieser Umgebung. Es kann wichtige Änderungen an Dateien, Diensten, Software und der Registrierung melden, die sich auf Ihre bereitgestellten Server auswirken könnten.
 
-Standardmäßig überwacht der Azure Automation-Inventarisierungsdienst keine Dateien oder Registrierungseinstellungen. Die Lösung enthält eine Liste von Registrierungsschlüsseln, die für die Überwachung empfohlen werden. Um diese Liste anzuzeigen, wechseln Sie zu Ihrem Automation-Konto im Azure-Portal, und wählen Sie anschließend **Bestand** > **Einstellungen bearbeiten** aus.
+Standardmäßig überwacht der Azure Automation-Inventarisierungsdienst keine Dateien oder Registrierungseinstellungen. Die Lösung enthält eine Liste von Registrierungsschlüsseln, die für die Überwachung empfohlen werden. Wechseln Sie zum Anzeigen dieser Liste zu Ihrem Automation-Konto im Azure-Portal, und klicken Sie auf **Inventur** > **Einstellungen bearbeiten**.
 
 ![Screenshot der Ansicht des Automation-Bestands im Azure-Portal](./media/change-tracking1.png)
 
 Weitere Informationen zu den einzelnen Registrierungsschlüsseln finden Sie unter [Änderungsnachverfolgung für Registrierungsschlüssel](/azure/automation/automation-change-tracking#registry-key-change-tracking). Wählen Sie einen beliebigen Schlüssel zur Auswertung aus und aktivieren Sie ihn dann. Die Einstellung wird auf alle virtuellen Computer angewendet, die im aktuellen Arbeitsbereich aktiviert sind.
 
-Sie können den Dienst auch verwenden, um wichtige Dateiänderungen zu verfolgen. Sie können z. B. die Datei „C:\windows\system32\drivers\etc\hosts“ nachverfolgen, da sie vom Betriebssystem zum Zuordnen von Hostnamen und IP-Adressen verwendet wird. Änderungen an dieser Datei können zu Konnektivitätsproblemen führen oder den Datenverkehr zu gefährlichen Websites umleiten.
+Sie können den Dienst auch verwenden, um wichtige Dateiänderungen zu verfolgen. Sie können z. B. die Datei `C:\windows\system32\drivers\etc\hosts` nachverfolgen, da das Betriebssystem damit Hostnamen und IP-Adressen zuordnet. Änderungen an dieser Datei können zu Konnektivitätsproblemen führen oder den Datenverkehr zu gefährlichen Websites umleiten.
 
 Um das Nachverfolgen von Dateiinhalten für die Datei „hosts“ zu aktivieren, führen Sie die Schritte unter [Aktivieren der Nachverfolgung von Dateiinhalten](/azure/automation/change-tracking-file-contents#enable-file-content-tracking) aus.
 
-Sie können auch eine Warnung für Änderungen an Dateien hinzufügen, die Sie nachverfolgen. Nehmen Sie z. B. an, dass Sie eine Warnung für Änderungen an der Datei „hosts“ festlegen möchten. Wählen Sie **Log Analytics** in der Befehlsleiste oder die Protokollsuche für den verknüpften Log Analytics-Arbeitsbereich aus. Verwenden Sie in Log Analytics die folgende Abfrage, um nach Änderungen an der Datei „hosts“ zu suchen:
+Sie können auch eine Warnung für Änderungen an Dateien hinzufügen, die Sie nachverfolgen. Sie sollten z. B. eine Warnung für Änderungen an der Datei „hosts“ festlegen. Klicken Sie dazu in der Befehlsleiste auf **Log Analytics** oder auf **Protokollsuche** für den verknüpften Log Analytics-Arbeitsbereich. Verwenden Sie in Log Analytics die folgende Abfrage, um nach Änderungen an der Datei „hosts“ zu suchen:
 
   ```kusto
   ConfigurationChange | where FieldsChanged contains "FileContentChecksum" and FileSystemPath contains "hosts"

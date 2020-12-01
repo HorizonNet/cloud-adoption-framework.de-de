@@ -7,12 +7,12 @@ ms.date: 05/10/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: ea11a54dcf3fe9d60dea4fd980f82b608bed3a0a
-ms.sourcegitcommit: 826f2a3f0353bb711917e99d9a17f6198fb41ada
+ms.openlocfilehash: 597a972a6dc4fb56d3c045ee497918342f43e5c2
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "93024452"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880108"
 ---
 # <a name="create-update-schedules"></a>Erstellen von Zeitplänen für Updates
 

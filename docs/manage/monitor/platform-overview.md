@@ -7,13 +7,14 @@ ms.date: 07/31/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: 228601766d4c580b73df2e78540833c05ff00924
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 635c313fe61f801ff453ef4a3a1d5e38cb3a014e
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713546"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879275"
 ---
+<!-- docutune:casing "Squared Up" -->
 <!-- cSpell:ignore opsman ITSM -->
 
 # <a name="cloud-monitoring-guide-monitoring-platforms-overview"></a>Leitfaden zur Cloudüberwachung: Übersicht über Überwachungsplattformen
@@ -26,15 +27,15 @@ Dieser Artikel bietet eine allgemeine Übersicht über unsere Überwachungsplatt
 
 ## <a name="the-story-of-system-center-operations-manager"></a>Die Geschichte von System Center Operations Manager
 
-Im Jahr 2000 sind wir mit Microsoft Operations Manager 2000 in den Bereich Operations Management eingestiegen. Im Jahr 2007 haben wir eine überarbeitete Version des Produkts, System Center Operations Manager, auf den Markt gebracht. Sie bot mehr als nur die einfache Überwachung eines Windows-Servers und konzentrierte sich auf die stabile End-to-End-Überwachung von Diensten und Anwendungen, einschließlich heterogene Plattformen, Netzwerkgeräte und anderen Anwendungs- und Dienstabhängigkeiten. Es handelt sich um eine etablierte, unternehmensweite Überwachungsplattform für lokale Umgebungen, die in dieser Branche in derselben Klasse wie IBM Tivoli oder HP Operations Manager angeordnet ist. Sie ist gewachsen, um die Überwachung von Compute- und Plattformressourcen zu unterstützen, die in Azure, Amazon Web Services (AWS) und unter anderen Cloudanbietern ausgeführt werden.
+Im Jahr 2000 sind wir mit Microsoft Operations Manager 2000 in den Bereich Operations Management eingestiegen. Im Jahr 2007 haben wir eine überarbeitete Version des Produkts, System Center Operations Manager, auf den Markt gebracht. Darin wurde mehr geboten als eine einfache Überwachung von Windows Server und ein Fokus auf die stabile und umfassende Überwachung von Diensten und Anwendungen gelegt, einschließlich heterogener Plattformen, Netzwerkgeräte und anderer Anwendungs- und Dienstabhängigkeiten. Es handelt sich um eine etablierte, unternehmensweite Überwachungsplattform für lokale Umgebungen, die in dieser Branche in derselben Klasse wie IBM Tivoli oder HP Operations Manager angeordnet ist. Sie ist gewachsen, um die Überwachung von Compute- und Plattformressourcen zu unterstützen, die in Azure, Amazon Web Services (AWS) und unter anderen Cloudanbietern ausgeführt werden.
 
 ## <a name="the-story-of-azure-monitor"></a>Die Geschichte von Azure Monitor
 
 Als Azure 2010 auf den Markt kam, wurden Clouddienste mit dem Azure-Diagnose-Agent überwacht, mit dem Diagnosedaten von Azure Ressourcen erfasst werden konnten. Diese Funktion galt als allgemeines Überwachungstool und nicht als Überwachungsplattform für Unternehmen.
 
-Application Insights wurde eingeführt, um den Änderungen in der Branche, d.h. der zunehmenden Nutzung von Clouddiensten, mobilen und IoT-Geräten sowie von DevOps-Verfahren Rechnung zu tragen. Es wuchs von der Anwendungsleistungsüberwachung in Operations Manager zu einem Dienst in Azure, der eine umfassende Überwachung von in vielfältigen Sprachen geschriebenen Webanwendungen ermöglicht. In 2015 wurde die Vorschauversion von Application Insights für Visual Studio angekündigt, und der spätere Name lautete einfach Application Insights. Der Dienst sammelt Informationen zur Anwendungsleistung, zu Anforderungen und Ausnahmen sowie Ablaufverfolgungen.
+Application Insights wurde eingeführt, um den Änderungen in der Branche, d.h. der zunehmenden Nutzung von Clouddiensten, mobilen und IoT-Geräten sowie von DevOps-Verfahren Rechnung zu tragen. Im Laufe der Zeit wuchs Application Insights von einer Überwachung der Anwendungsleistung in Operations Manager zu einem Azure-Dienst, der eine umfassende Überwachung von Webanwendungen ermöglicht, die in verschiedenen Sprachen geschrieben wurden. In 2015 wurde die Vorschauversion von Application Insights für Visual Studio angekündigt, und der spätere Name lautete einfach Application Insights. Der Dienst sammelt Informationen zur Anwendungsleistung, zu Anforderungen und Ausnahmen sowie Ablaufverfolgungen.
 
-2015 wurde von Azure Operational Insights allgemein zur Verfügung gestellt. Dieser Dienst umfasste den Analysedienst Log Analytics, der Daten von Computern in Azure, in lokalen Umgebungen oder anderen Cloudumgebungen sammelte und durchsuchte und außerdem mit System Center Operations Manager verbunden war. Es wurden Intelligence Packs mit verschiedenen vorkonfigurierten Verwaltungs- und Überwachungskonfigurationen angeboten, die eine Sammlung von Abfrage- und Analyselogik, Visualisierungen und Datenerfassungsregeln für Szenarien wie Sicherheitsüberwachung, Integritätsbewertungen und die Verwaltung von Warnungen umfassten. Azure Operational Insights wurde später in Log Analytics umbenannt.
+2015 wurde von Azure Operational Insights allgemein zur Verfügung gestellt. Dieser Dienst umfasste den Dienst „Log Analytics“, der Daten von Computern sammelte und durchsuchte, die in Azure, in lokalen Umgebungen oder in anderen Cloudumgebungen ausgeführt wurden und mit System Center Operations Manager verbunden waren. Es wurden Intelligence Packs mit verschiedenen vorkonfigurierten Verwaltungs- und Überwachungskonfigurationen angeboten, die eine Sammlung von Abfrage- und Analyselogik, Visualisierungen und Datenerfassungsregeln für Szenarien wie Sicherheitsüberwachung, Integritätsbewertungen und die Verwaltung von Warnungen umfassten. Azure Operational Insights wurde später in Log Analytics umbenannt.
 
 Im Jahr 2016 wurde die Vorschau von Azure Monitor auf der Konferenz Microsoft Ignite vorgestellt. Es bot ein einheitliches Framework zum Erfassen von Plattformmetriken und Ressourcendiagnoseprotokollen sowie Aktivitätsprotokollereignissen auf Abonnementebene von jedem Azure-Dienst, der das Framework nutzt. Bisher verfügte jeder Azure-Dienst über eine eigene Überwachungsmethode.
 
@@ -47,9 +48,11 @@ Auf der Ignite-Konferenz im Jahr 2018 gaben wir dann bekannt, dass die Marke Azu
 
 - **Azure Network Watcher** für die Überwachung, Diagnose und Anzeige von Metriken für Ressourcen in einem virtuellen Netzwerk.
 
+<!-- docutune:casing "Operational Insights" -->
+
 ## <a name="the-story-of-operations-management-suite-oms"></a>Die Geschichte von Operations Management Suite (OMS)
 
-Operations Management Suite (OMS) war von 2015 bis April 2018 eine Bündelung der folgenden Azure-Verwaltungsdienste zu Lizenzzwecken:
+Von 2015 bis April 2018 bündelte die Operations Management Suite (OMS) zu Lizenzzwecken die folgenden Azure-Verwaltungsdienste:
 
 - Application Insights
 - Azure-Automatisierung
@@ -105,7 +108,7 @@ Da die Überwachungseinstellungen voneinander und von den einzelnen Datenquellen
 
 #### <a name="data-sources"></a>Datenquellen
 
-Azure Monitor sammelt Daten aus einer Vielzahl von Quellen, einschließlich der Azure-Infrastruktur und Plattformressourcen, Agents auf Windows- und Linux-Computern und Überwachungsdaten aus dem Azure-Speicher. Jeder REST-Client kann Protokolldaten über eine API in Azure Monitor schreiben, und Sie können benutzerdefinierte Metriken für Ihre Webanwendungen definieren. Einige Metrikdaten können je nach Verwendung an verschiedene Speicherorte weitergeleitet werden. Sie können die Daten z.B. für eine „schnellstmögliche“ Warnung oder für eine langfristige Trendanalyse verwenden, die in Verbindung mit anderen Protokolldaten gesucht wird.
+Azure Monitor sammelt Daten aus einer Vielzahl von Quellen, einschließlich der Azure-Infrastruktur und -Plattformressourcen, Agents auf Windows- und Linux-Computern sowie in Azure Storage gesammelte Überwachungsdaten. Jeder REST-Client kann Protokolldaten über eine API in Azure Monitor schreiben, und Sie können benutzerdefinierte Metriken für Ihre Webanwendungen definieren. Einige Metrikdaten können je nach Verwendung an verschiedene Speicherorte weitergeleitet werden. Sie können die Daten z.B. für eine „schnellstmögliche“ Warnung oder für eine langfristige Trendanalyse verwenden, die in Verbindung mit anderen Protokolldaten gesucht wird.
 
 #### <a name="monitoring-solutions-and-insights"></a>Überwachungslösungen und Insights
 
@@ -149,7 +152,7 @@ Operations Manager bietet vier grundlegende Möglichkeiten, Daten nach der Erfas
 
 - **Berichte**: Ermöglichen es Ihnen, die im Operations Manager Data Warehouse gespeicherten historischen Daten zusammenzufassen. Sie können die Daten anpassen, auf denen Sichten und Berichte basieren. Es gibt jedoch keine Funktion, mit der eine komplexe oder interaktive Analyse der gesammelten Daten möglich ist.
 
-- **Operations Manager-Befehlsshell**: Erweitert Windows PowerShell um eine zusätzliche Reihe von Cmdlets und kann die erfassten Daten abfragen und visualisieren. Dazu zählen Diagramme und andere Visualisierungen, nativ mit PowerShell oder mit der HTML-basierten Webkonsole von Operations Manager.
+- **Operations Manager-Befehlsshell:** Erweitert Windows PowerShell um eine zusätzliche Reihe von Cmdlets und kann die erfassten Daten abfragen und visualisieren. Dazu zählen Diagramme und andere Visualisierungen, nativ mit PowerShell oder mit der HTML-basierten Webkonsole von Operations Manager.
 
 ### <a name="azure-monitor"></a>Azure Monitor
 
@@ -191,7 +194,7 @@ Das Operations Manager SDK ermöglicht es Operations Manager, sich in Überwachu
 
 ### <a name="azure-monitor"></a>Azure Monitor
 
-Azure Monitor sammelt Metriken und Protokolle von Azure-Ressourcen mit wenig bis gar keiner Konfiguration. Überwachungslösungen fügen Logik für die Überwachung einer Anwendung oder eines Diensts hinzu, arbeiten aber weiterhin innerhalb der Standardprotokollabfragen und Ansichten in Monitor. Analyseanwendungen wie Application Insights und Azure Monitor für VMs nutzen die Monitor-Plattform zur Datensammlung und -verarbeitung. Außerdem bieten Sie zusätzliche Tools für die Visualisierung und Analyse der Daten. Mithilfe der wichtigsten Funktionen von Monitor, z. B. Protokollabfragen und Warnungen, können Sie die von Insights gesammelten Daten mit anderen Daten kombinieren.
+Azure Monitor sammelt Metriken und Protokolle von Azure-Ressourcen mit wenig bis gar keiner Konfiguration. Überwachungslösungen fügen Logik für die Überwachung einer Anwendung oder eines Dienstes hinzu, operieren aber weiterhin innerhalb der Standardprotokollabfragen und Ansichten in Azure Monitor. Überwachungsanwendungen wie Application Insights und Azure Monitor für VMs nutzen die Azure Monitor-Plattform zur Datensammlung und -verarbeitung. Außerdem bieten Sie zusätzliche Tools für die Visualisierung und Analyse der Daten. Mithilfe der wichtigsten Features von Azure Monitor, wie z. B. Protokollabfragen und Warnungen, können Sie die von Überwachungsanwendungen gesammelten Daten mit anderen Daten kombinieren.
 
 Monitor unterstützt mehrere Methoden, um Überwachungs- oder Verwaltungsdaten von Azure oder externen Ressourcen zu sammeln. Sie können dann Daten aus den Metrik- oder Protokollspeichern extrahieren und an Ihre ITSM- oder Überwachungstools weiterleiten. Sie können auch administrative Aufgaben mithilfe der Azure Monitor-Rest-API ausführen.
 

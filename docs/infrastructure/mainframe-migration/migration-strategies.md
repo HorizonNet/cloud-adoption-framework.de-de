@@ -7,12 +7,12 @@ ms.date: 12/26/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: migrate
-ms.openlocfilehash: 609bbc646858368ee22b0a0aba00850dd659a00e
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 11c95d186383db736f87010db821e3fd0e2340a7
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94712611"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94881026"
 ---
 <!-- docutune:casing "Table 4" "Parallel Sysplex" CF Assembler "Demystifying Mainframe-to-Azure Migration" "ROSCOE Programming Facility" "RPF" "CA Librarian" CA-Panvalet -->
 <!-- cSpell:ignore vCPUs Proliant Sysplex IPLs DASDs LPARs ISPF Panvalet -->
@@ -35,7 +35,7 @@ Eine kleine Organisation benötigt vielleicht weniger als 500 MIPS, wohingegen e
 
 Die exakte Berechnung des Verhältnisses von MIPS zu vCPUs bei Azure richtet sich nach dem CPU-Typ und der genauen Workload, die Sie ausführen möchten. Benchmarkstudien bieten jedoch eine gute Grundlage, um die Anzahl und Art der vCPUs zu schätzen, die Sie benötigen werden. Eine kürzlich durchgeführte HPE zRef-Benchmarkstudie ergab folgende Schätzungen:
 
-- 288 MIPS pro auf HP ProLiant-Servern ausgeführtem Intel-basiertem Kern für Onlineaufträge (CICS, Customer Information Control System).
+- 288 MIPS pro auf HP ProLiant-Servern ausgeführtem, Intel-basiertem Kern für Onlineaufträge (CICS).
 
 - 170 MIPS pro Intel-Kern für COBOL-Batchaufträge.
 

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: innovate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 462b365101d90688d6a3e4eb9b4be9cd4d9aa275
-ms.sourcegitcommit: 07d56209d56ee199dd148dbac59671cbb57880c0
+ms.openlocfilehash: 24b31b27bf660229187caeea15881fe99722202a
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88883177"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880856"
 ---
 # <a name="prepare-for-customer-feedback"></a>Vorbereiten für Kundenfeedback
 
@@ -25,7 +25,7 @@ Beim Erstellen einer innovativen neuen Lösung geht es nicht darum, dem Benutzer
 - **Quantitative Tests (Testen von Feedback):** Dieses Feedback misst die Aktionen, die wir erwarten.
 - **Qualitative Tests (Kundenfeedback):** Dieses Feedback informiert uns, was diese Metriken aus Sicht des Kunden bedeuten.
 
-Bevor Sie Feedbackschleifen integrieren, benötigen Sie ein freigegebenes Repository für Ihre Lösung. Ein zentralisiertes Repository bietet die Möglichkeit, das gesamte Feedback zu Ihrem Projekt aufzuzeichnen und darauf zu reagieren. [GitHub](https://github.com) ist der zentrale Aufbewahrungsort für Open Source-Software. Dies ist auch eine der am häufigsten verwendeten Plattformen für das Hosting des Quellcoderepositorys für kommerziell entwickelte Anwendungen. Der Artikel zum [Erstellen von GitHub-Repositorys](/azure/devops/pipelines/repos/github?tabs=yaml&view=azure-devops) kann Ihnen bei den ersten Schritten mit Ihrem Repository helfen.
+Bevor Sie Feedbackschleifen integrieren, benötigen Sie ein freigegebenes Repository für Ihre Lösung. Ein zentralisiertes Repository bietet die Möglichkeit, das gesamte Feedback zu Ihrem Projekt aufzuzeichnen und darauf zu reagieren. [GitHub](https://github.com) ist die beliebteste Anlaufstelle für Open-Source-Software. Dies ist auch eine der am häufigsten verwendeten Plattformen für das Hosting des Quellcoderepositorys für kommerziell entwickelte Anwendungen. Der Artikel zum [Erstellen von GitHub-Repositorys](/azure/devops/pipelines/repos/github?tabs=yaml&view=azure-devops) kann Ihnen bei den ersten Schritten mit Ihrem Repository helfen.
 
 Jedes der folgenden Tools in Azure kann in Projekte integriert werden, die in GitHub gehostet werden (oder ist mit ihnen kompatibel):
 

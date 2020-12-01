@@ -878,7 +878,7 @@ items:
                   - name: Steuern von Daten
                     items:
                       - name: Klassifizieren von Daten
-                        href: govern/policy-compliance/data-classification.md
+                        href: innovate/best-practices/data-classification.md
                       - name: Schützen von Daten
                         href: /azure/architecture/data-guide/scenarios/securing-data-solutions?bc=%2fazure%2fcloud-adoption-framework%2f_bread%2ftoc.json&toc=%2fazure%2fcloud-adoption-framework%2ftoc.json
                       - name: Kommentieren von Daten mit Data Catalog

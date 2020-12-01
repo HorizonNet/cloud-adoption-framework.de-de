@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: ff95510b54d8c82036f7cae5ec5f70809489672d
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 836d917401f8676727f5db593c0d2f67284e3bcd
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713563"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879943"
 ---
 # <a name="management-leveling-across-cloud-management-disciplines"></a>Verwaltungsebenen in den verschiedenen Cloudverwaltungsdisziplinen
 
@@ -26,9 +26,9 @@ Da die Workloads in Ihrem IT-Portfolio variieren, ist es unwahrscheinlich, dass 
 
 Erwägen Sie als Ausgangspunkt die Festlegung der Verwaltungsebenen, die im vorhergehenden Diagramm dargestellt und in der folgenden Liste vorgeschlagen sind:
 
-- **Verwaltungsbaseline**: Eine Baseline für die Cloudverwaltung (oder Verwaltungsbaseline) ist ein definierter Satz von Tools, Prozessen und konsistenten Preisen, der die Grundlage für die gesamte Cloudverwaltung in Azure bildet. Um eine Baseline für die Cloudverwaltung zu erstellen und zu ermitteln, welche Tools in das Baselineangebot für Ihr Unternehmen aufgenommen werden sollen, überprüfen Sie die Liste im Abschnitt „Cloudverwaltungsdisziplinen“.
+- **Verwaltungsbaseline**: Eine Baseline für die Cloudverwaltung (oder Verwaltungsbaseline) ist ein definierter Satz von Tools, Prozessen und konsistenten Preisen, der die Grundlage für die gesamte Cloudverwaltung in Azure bildet. Wenn Sie eine Baseline für die Cloudverwaltung erstellen und ermitteln möchten, welche Tools in das Baselineangebot für Ihr Unternehmen aufgenommen werden sollen, überprüfen Sie die Liste im Abschnitt „Cloudverwaltungsdisziplinen“.
 - **Erweiterte Baseline**: Für einige Workloads können Erweiterungen der Baseline erforderlich sein, die nicht unbedingt spezifisch für eine einzelne Plattform oder Workload sind. Obwohl diese Erweiterungen nicht für jede Workload kostengünstig sind, sollte es für jede Workload einheitliche Prozesse, Tools und Lösungen geben, die die Kosten für die zusätzliche Unterstützung der Verwaltung rechtfertigen können.
-- **Plattformspezialisierung:** In einer bestimmten Umgebung werden einige gängige Plattformen von einer Vielzahl von Workloads verwendet. Diese allgemeine Gemeinsamkeit hinsichtlich der Architektur bleibt auch dann bestehen, wenn Unternehmen die Cloud einführen. Die Plattformspezialisierung ist eine gehobene Verwaltungsebene, die das Fachwissen zu Daten und Architekturen anwendet, um die Betriebsverwaltung auf einer höheren Ebene zu gewährleisten. Beispiele für die Plattformspezialisierung sind spezifische Verwaltungsfunktionen für SQL Server, Container, Active Directory oder andere Dienste, die durch konsistente, wiederholbare Prozesse, Tools und Architekturen besser verwaltet werden können.
+- **Plattformspezialisierung:** In einer bestimmten Umgebung werden einige gängige Plattformen von einer Vielzahl von Workloads verwendet. Diese allgemeine Gemeinsamkeit hinsichtlich der Architektur bleibt auch dann bestehen, wenn Unternehmen die Cloud einführen. Die Plattformspezialisierung ist eine gehobene Verwaltungsebene, die das Fachwissen zu Daten und Architekturen anwendet, um die Betriebsverwaltung auf einer höheren Ebene zu gewährleisten. Zu den Beispielen für die Plattformspezialisierung zählen SQL Server-spezifische Verwaltungsfunktionen, Container, Active Directory oder andere Dienste, die durch konsistente, wiederholbare Prozesse, Tools und Architekturen besser verwaltet werden können.
 - **Workloadspezialisierung:** Für wirklich unternehmenskritischen Workloads kann es aus Kostengründen sinnvoll sein, viel tiefer in die Verwaltung dieser Workloads einzusteigen. Die Workloadspezialisierung wendet Workloadtelemetriedaten an, um weiterführende Ansätze für die tägliche Verwaltung zu bestimmen. Aus diesen Daten lassen sich oft Automatisierungs-, Bereitstellungs- und Entwurfsverbesserungen ableiten, die zu mehr Stabilität, Zuverlässigkeit und Ausfallsicherheit führen, als dies mit einer reinen Betriebsverwaltung möglich ist.
 - **Nicht unterstützt**: Ebenso wichtig ist es, gemeinsame Verwaltungsprozesse zu kommunizieren, bei denen Workloads, die als nicht unterstützt oder nicht unternehmenskritisch eingestuft werden, nicht über Cloudverwaltungsdisziplinen bereitgestellt werden.
 

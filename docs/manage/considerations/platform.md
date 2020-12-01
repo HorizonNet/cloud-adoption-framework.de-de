@@ -7,12 +7,12 @@ ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: b642a66e1180e6d777b28d721c7bd18b277e9996
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 30c07aa131b31ea6e410afc6dfa6cc10adac041c
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88571557"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879751"
 ---
 # <a name="platform-operations-in-cloud-management"></a>Plattformbetrieb in der Cloudverwaltung
 
@@ -20,7 +20,7 @@ Eine Cloudverwaltungs-Baseline, die sich über [Bestand und Transparenz](./inven
 
 Eine schnelle Analyse der Ressourcen im IT-Portfolio zeigt Muster der unterstützten Workloads auf. Innerhalb dieser Workloads gibt es gemeinsame Plattformen. Abhängig von den bisherigen IT-bezogenen Entscheidungen im Unternehmen können diese Plattformen sehr unterschiedlich sein.
 
-In einigen Organisationen besteht eine starke Abhängigkeit von SQL Server, Oracle oder anderen Open-Source-Datenplattformen. In anderen Unternehmen können die Gemeinsamkeiten sich auf die Hostingplattformen für virtuelle Computer (VMs) oder Container beziehen. In wieder anderen Fällen besteht möglicherweise eine Abhängigkeit von Anwendungen oder ERP-Systemen (Enterprise Resource Planning) wie SAP, Oracle oder anderen.
+In einigen Organisationen besteht eine starke Abhängigkeit von SQL Server, Oracle oder anderen Open-Source-Datenplattformen. In anderen Unternehmen können die Gemeinsamkeiten sich auf die Hostingplattformen für virtuelle Computer (VMs) oder Container beziehen. In wieder anderen Fällen besteht möglicherweise eine allgemeine Abhängigkeit von Anwendungen oder Enterprise-Resource-Planning-Systemen (ERP) wie SAP oder Oracle.
 
 Das Verständnis dieser Gemeinsamkeiten ermöglicht es dem Cloudverwaltungsteam, sich für diese priorisierten Plattformen auf ein höheres Maß an Support zu spezialisieren.
 
@@ -71,7 +71,7 @@ In den meisten Szenarien sind die Kosten für die bessere Einhaltung von Verwalt
 
 Wenn Daten in einer herkömmlichen IaaS-Lösung (Infrastructure as a Service) gehostet werden, kann der Aufwand für die Verbesserung von RPO und RTO erheblich höher sein. Doch der Wunsch der Beteiligten aus den Fachbereichen, Verwaltungsverpflichtungen besser zu erfüllen, wird selten von einer Entscheidung von PaaS im Vergleich zu IaaS beeinflusst. Wenn überhaupt, kann ein Verständnis der grundlegenden Unterschiede bei der Architektur die Fachbereiche dazu veranlassen, nach PaaS-Lösungen oder Verpflichtungen zu fragen, die dem entsprechen, was für PaaS-Lösungen möglich ist. Die Modernisierung von IaaS-Datenplattformen sollte beim Plattformbetrieb als erster Schritt in Betracht gezogen werden.
 
-Wenn eine Modernisierung nicht möglich ist, priorisieren Cloudverwaltungsteams üblicherweise IaaS-basierte Datenplattformen als ersten erforderlichen Dienst im Dienstkatalog. Indem den Geschäftsbereichen die Wahl zwischen eigenständigen Datenservern und gruppierten, hochverfügbaren Datenlösungen zur Verfügung gestellt wird, wird das Gespräch über die Verpflichtung gegenüber den Fachbereichen wesentlich erleichtert. Ein grundlegendes Verständnis der betrieblichen Verbesserungen und der gestiegenen Kosten wird die Fachbereiche in die Lage versetzen, die beste Entscheidung über die Geschäftsprozesse und die unterstützenden Workloads zu treffen.
+Wenn eine Modernisierung nicht möglich ist, priorisieren Cloudverwaltungsteams üblicherweise IaaS-basierte Datenplattformen als ersten erforderlichen Dienst im Dienstkatalog. Indem den Geschäftsbereichen die Wahl zwischen eigenständigen Datenservern und gruppierten, hochverfügbaren Datenlösungen zur Verfügung gestellt wird, wird das Gespräch über die Verpflichtung gegenüber den Fachbereichen wesentlich erleichtert. Ein grundlegendes Verständnis der betrieblichen Verbesserungen und der gestiegenen Kosten hilft dem Unternehmen, die beste Entscheidung über die Geschäftsprozesse und die unterstützenden Workloads zu treffen.
 
 ### <a name="other-common-platform-operations"></a>Andere gängige Plattformbetriebsabläufe
 

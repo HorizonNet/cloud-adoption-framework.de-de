@@ -7,12 +7,12 @@ ms.date: 10/17/2018
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: operate
-ms.openlocfilehash: c849d4a2a798f0738844352e916fda97b35441a5
-ms.sourcegitcommit: a7eb2f6c4465527cca2d479edbfc9d93d1e44bf1
+ms.openlocfilehash: 70bc3bfe59756d78364e7f6b24306d3969907935
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94713478"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94879240"
 ---
 # <a name="establish-an-operational-fitness-review"></a>Einrichten einer Überprüfung der Einsatztauglichkeit
 
@@ -44,7 +44,7 @@ Während dieses Vorgangs liegt der Schwerpunkt häufig auf den Features des Dien
 
 Im Gegensatz dazu beziehen sich die _nicht funktionalen_ Anforderungen auf Eigenschaften wie die [Verfügbarkeit](/azure/architecture/checklist/availability), [Resilienz](/azure/architecture/resiliency) und [Skalierbarkeit](/azure/architecture/framework/scalability/performance-efficiency) des Diensts. Diese Eigenschaften unterscheiden sich von den funktionalen Anforderungen, da sie die endgültige Funktion eines bestimmten Features im Dienst nicht direkt beeinflussen. Diese nicht funktionalen Anforderungen beziehen sich jedoch auf die Leistung und Kontinuität des Diensts.
 
-Sie können einige nicht funktionale Anforderungen in Form einer Vereinbarung zum Servicelevel (SLA) festlegen. Beispielsweise können Sie die Dienstkontinuität als Prozentsatz der Verfügbarkeit ausdrücken: „99,99 Prozent der Zeit verfügbar“. Andere nicht funktionale Anforderungen können schwieriger zu definieren sein und sich mit zunehmendem Produktionsbedarf ändern. So könnte beispielsweise ein verbraucherorientierter Dienst nach einem Popularitätsschub mit unerwarteten Durchsatzanforderungen konfrontiert werden.
+Sie können einige nicht funktionale Anforderungen in Form einer Vereinbarung zum Servicelevel (SLA) festlegen. Sie können die Dienstkontinuität beispielsweise als Verfügbarkeit in Prozent ausdrücken: „99,99 % der Zeit verfügbar“. Andere nicht funktionale Anforderungen können schwieriger zu definieren sein und sich mit zunehmendem Produktionsbedarf ändern. So könnte beispielsweise ein verbraucherorientierter Dienst nach einem Popularitätsschub mit unerwarteten Durchsatzanforderungen konfrontiert werden.
 
 > [!NOTE]
 > Weitere Informationen zu den Anforderungen an die Resilienz finden Sie unter [Entwerfen zuverlässiger Azure-Anwendungen](/azure/architecture/reliability#define-requirements). Dieser Artikel enthält Erläuterungen zu Konzepten wie RPO (Recovery Point Objective), RTO (Recovery Time Objective) und SLA.

@@ -9,12 +9,12 @@ ms.service: cloud-adoption-framework
 ms.subservice: operate
 ms.custom: fasttrack-edit, AQC
 ms.localizationpriority: high
-ms.openlocfilehash: 24fcb5842f6151ac6beba8820391078bd64d3050
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 2c36c8cb1b82d0e0228486aa3d748de7db36d56c
+ms.sourcegitcommit: 412b945b3492ff3667c74627524dad354f3a9b85
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88567528"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94880567"
 ---
 # <a name="workload-specialization-for-cloud-management"></a>Workloadspezialisierung für die Cloudverwaltung
 
@@ -51,7 +51,7 @@ Um einen klar strukturierten Workloadbetrieb zu ermöglichen, sind genauere Anga
 
 | Anforderung                          | Tool                 | Zweck                                                                                |
 | ------------------------------------ | -------------------- | -------------------------------------------------------------------------------------- |
-| Anwendungsüberwachung               | Application Insights | Überwachung und Diagnose für Apps                                                    |
+| Anwendungsüberwachung               | Application Insights | Überwachung und Diagnose für Anwendungen                                                    |
 | Leistung, Verfügbarkeit und Nutzung | Application Insights | Erweiterte Anwendungsüberwachung mit Anwendungsdashboard, Verbundzuordnungen, Nutzung und Ablaufverfolgung |
 
 ### <a name="deploy-application-insights"></a>Bereitstellen von Application Insights
