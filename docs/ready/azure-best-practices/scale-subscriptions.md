@@ -7,12 +7,12 @@ ms.date: 05/20/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
-ms.openlocfilehash: 29ae946d7ed18e84733e805d6d08dab3ea45bbd0
-ms.sourcegitcommit: 011525720bd9e2d9bcf03a76f371c4fc68092c45
+ms.openlocfilehash: 5599c735c9dbb5acd876ea020435a11d72565ca4
+ms.sourcegitcommit: bd6104aaa0e0145dcb0f577107d2792bc5b48790
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88569772"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96038600"
 ---
 # <a name="create-additional-subscriptions-to-scale-your-azure-environment"></a>Erstellen zusätzlicher Abonnements zum Skalieren Ihrer Azure-Umgebung
 
@@ -54,7 +54,7 @@ Wenn Ihr Abonnementmodell wächst, entscheiden Sie vielleicht, dass einige Resso
 - Bestimmen Sie, wer für das Erstellen neuer Abonnements zuständig sein soll.
 - Entscheiden Sie, welche Ressourcentypen standardmäßig in einem Abonnement enthalten sein sollen.
 - Entscheiden Sie, wie alle Standardabonnements aussehen sollen. Zu den Überlegungen zählen RBAC-Zugriff, Richtlinien, Tags und Infrastrukturressourcen.
-- Wenn möglich, [erstellen Sie neue Abonnements programmgesteuert](/azure/azure-resource-manager/management/programmatically-create-subscription) über einen Dienstprinzipal. Sie müssen [dem Dienstprinzipal die Berechtigung erteilen](/azure/azure-resource-manager/grant-access-to-create-subscription), Abonnements zu erstellen. Definieren Sie eine Sicherheitsgruppe, die neue Abonnements über einen automatisierten Workflow anfordern kann.
+- Wenn möglich, [erstellen Sie neue Abonnements programmgesteuert](/azure/cost-management-billing/manage/programmatically-create-subscription-preview) über einen Dienstprinzipal. Sie müssen [dem Dienstprinzipal die Berechtigung erteilen](/azure/azure-resource-manager/grant-access-to-create-subscription), Abonnements zu erstellen. Definieren Sie eine Sicherheitsgruppe, die neue Abonnements über einen automatisierten Workflow anfordern kann.
 - Wenn Sie ES-Kunde (Enterprise Agreement) sind, bitten Sie den Azure-Support, die Erstellung von Nicht-EA-Abonnements für Ihre Organisation zu sperren.
 
 ## <a name="next-steps"></a>Nächste Schritte
