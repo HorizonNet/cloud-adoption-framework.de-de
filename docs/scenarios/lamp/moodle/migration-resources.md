@@ -3,16 +3,16 @@ title: Moodle-Migrationsressourcen
 description: Hier erfahren Sie mehr über die Ressourcen, die bei einer Moodle-Migration in Azure erstellt werden. Dies sind z. B. eine Azure Virtual Network-Instanz, eine Netzwerksicherheitsgruppe und ein Subnetz.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 11/06/2020
+ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: cffcac0ca8b06608971637ed75aac1ba9cb3eff3
-ms.sourcegitcommit: 1d7b16eb710bed397280fb8f862912c78f2254ee
+ms.openlocfilehash: b42253b69dfaca4ca411e2de20b2527d58cb81ff
+ms.sourcegitcommit: 18f3ee8fcd8838f649cb25de1387b516aa23a5a0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95812165"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96327830"
 ---
 # <a name="moodle-migration-resources"></a>Moodle-Migrationsressourcen
 

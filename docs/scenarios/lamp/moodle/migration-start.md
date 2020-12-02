@@ -3,16 +3,16 @@ title: Manuelle Schritte für die Migration von Moodle
 description: Mithilfe der in diesem Artikel beschriebenen Schritte können Sie das lokale Sicherungsarchiv von Moodle in Azure-Ressourcen importieren und die Moodle-Anwendung konfigurieren.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 11/23/2020
+ms.date: 11/30/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: plan
-ms.openlocfilehash: 95c030bfb0d87a960d7ac158c82cc09a8bed5d95
-ms.sourcegitcommit: 1d7b16eb710bed397280fb8f862912c78f2254ee
+ms.openlocfilehash: cecf6cca999c07a138572b9f9f32f1872d45213a
+ms.sourcegitcommit: 18f3ee8fcd8838f649cb25de1387b516aa23a5a0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95812223"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96327863"
 ---
 # <a name="moodle-manual-migration-steps"></a>Manuelle Schritte für die Migration von Moodle
 

@@ -3,21 +3,18 @@ title: Empfohlene Namens- und Kennzeichnungskonventionen
 description: Enthält detaillierte Empfehlungen zur Benennung von Ressourcen und zur Kennzeichnung, die speziell auf die Unterstützung der Enterprise Cloud-Einführung ausgerichtet sind.
 author: BrianBlanchard
 ms.author: brblanch
-ms.date: 03/05/2020
+ms.date: 11/12/2020
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: ready
 ms.custom: readiness, fasttrack-edit
-ms.openlocfilehash: 48e429673c3921a91e441abde7d14c3d9df7400f
-ms.sourcegitcommit: 57b757759b676a22f13311640b8856557df36581
+ms.openlocfilehash: c96e043cd483600a54da3b8e1174458d2ce01b45
+ms.sourcegitcommit: 18f3ee8fcd8838f649cb25de1387b516aa23a5a0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997385"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96327813"
 ---
-<!-- docutune:disable -->
-<!-- cSpell:ignore appcs arck cdnp cdne osdisk westeurope usgovia accountlookup messagequery -->
-
 # <a name="recommended-naming-and-tagging-conventions"></a>Empfohlene Namens- und Kennzeichnungskonventionen
 
 Organisieren Sie Ihre Cloudressourcen so, dass das operative Management und die Buchhaltungsanforderungen unterstützt werden. Gut definierte Namens- und Kennzeichnungskonventionen für Metadaten ermöglichen das schnelle Finden und Verwalten von Ressourcen. Diese Konventionen helfen auch dabei, Cloudnutzungskosten mithilfe von Mechanismen zur Rückbuchung und verbrauchsbasierter Kostenzuteilung an Geschäftsteams auszurichten.
