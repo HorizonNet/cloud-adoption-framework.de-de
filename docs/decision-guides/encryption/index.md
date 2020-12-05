@@ -1,19 +1,19 @@
 ---
 title: Leitfaden zur Entscheidungsfindung für die Verschlüsselung
 description: Implementieren Sie eine Verschlüsselungsrichtlinie (einen Kerndienst bei der Azure-Migration), die zusätzliche Sicherheitsebenen für Ihre cloudbasierten Workloads und Daten bereitstellt.
-author: rotycenh
+author: alexbuckgit
 ms.author: abuck
 ms.date: 02/11/2019
 ms.topic: conceptual
 ms.service: cloud-adoption-framework
 ms.subservice: decision-guide
 ms.custom: governance
-ms.openlocfilehash: 7a36de5c776aecf947dbca6954a1d79c838c2b18
-ms.sourcegitcommit: 4e12d2417f646c72abf9fa7959faebc3abee99d8
+ms.openlocfilehash: 7917768760eec85e4992bda3e11c892b275f9652
+ms.sourcegitcommit: d19b0fc9ef37bf1060fe7595cd2be1612a43ea4a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "90774101"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96605505"
 ---
 # <a name="encryption-decision-guide"></a>Leitfaden zur Entscheidungsfindung für die Verschlüsselung
 
