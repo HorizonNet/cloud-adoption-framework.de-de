@@ -171,7 +171,25 @@ Diese Liste enthält empfohlene Azure-Ressourcentypenpräfixe, die Sie verwenden
 
 ### <a name="analytics-and-iot"></a>Analytics und IoT
 
-| Ressourcentyp                       | Namenspräfix | |---------------------------------_|-------------| | Azure Analysis Services-Server   | as          | | Azure Databricks-Arbeitsbereich       | dbw-        | | Azure Stream Analytics           | asa-        | | Azure Data Explorer-Cluster      | dec         | | Azure Data Factory               | adf-        | | Data Lake Store-Konto          | dls         | | Data Lake Analytics-Konto      | dla         | | Event Hub                        | evh-        | | HDInsight – Hadoop-Cluster       | hadoop-     | | HDInsight – HBase-Cluster        | hbase-      | | HDInsight – Kafka-Cluster        | kafka-      | | HDInsight – Spark-Cluster        | spark-      | | HDInsight – Storm-Cluster        | storm-      | | HDInsight – ML Services-Cluster  | mls-        | | IoT Hub                          | iot-        | | Power BI Embedded                | pbi-        | | Time Series Insights-Umgebung | tsi-        |
+| Ressourcentyp                    | Namenspräfix |
+|----------------------------------|--------------|
+| Azure Analysis Services-Server   | as-          |
+| Azure Databricks-Arbeitsbereich  | dbw-         |
+| Azure Stream Analytics           | asa-         |
+| Azure Data Explorer-Cluster      | dec-         |
+| Azure Data Factory               | adf-         |
+| Data Lake Store-Konto            | dls-         |
+| Data Lake Analytics-Konto        | dla-         |
+| Event Hub                        | evh-         |
+| HDInsight – Hadoop-Cluster       | hadoop-      |
+| HDInsight – HBase-Cluster        | hbase-       |
+| HDInsight – Kafka-Cluster        | kafka-       |
+| HDInsight – Spark-Cluster        | spark-       |
+| HDInsight – Storm-Cluster        | storm-       |
+| HDInsight – ML Services-Cluster  | mls-         |
+| IoT Hub                          | iot-         |
+| Power BI Embedded                | pbi-         |
+| Time Series Insights-Umgebung    | tsi-         |
 
 ### <a name="developer-tools"></a>Entwicklertools
 
